@@ -3954,10 +3954,12 @@ static void SetMonTypeIcons(void)
         {
             SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].types[1], 160, 48, SPRITE_ARR_ID_TYPE + 1);
             SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 1, FALSE);
+            SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].attribute, 200, 48, SPRITE_ARR_ID_TYPE + 2);
         }
         else
         {
             SetSpriteInvisibility(SPRITE_ARR_ID_TYPE + 1, TRUE);
+            SetTypeSpritePosAndPal(gSpeciesInfo[summary->species].attribute, 160, 48, SPRITE_ARR_ID_TYPE + 2);
         }
         if (P_SHOW_TERA_TYPE >= GEN_9)
         {

@@ -237,7 +237,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 45,
         .baseSpAttack  = 70,
         .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_LIGHT),
+        .types = MON_TYPES(TYPE_LIGHT, TYPE_FIRE),
+        .attribute = TYPE_VACCINE,
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 62 : 65,
         .evYield_SpAttack = 1,
@@ -699,6 +700,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpAttack  = 30,
         .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_DARK),
+        .attribute = TYPE_VACCINE,
         .catchRate = 255,
     #if P_UPDATED_EXP_YIELDS >= GEN_7
         .expYield = 56,

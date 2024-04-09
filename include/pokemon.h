@@ -358,6 +358,7 @@ struct SpeciesInfo /*0x8C*/
  /* 0x04 */ u8 baseSpAttack;
  /* 0x05 */ u8 baseSpDefense;
  /* 0x06 */ u8 types[2];
+            u8 attribute;
  /* 0x08 */ u8 catchRate;
  /* 0x09 */ u8 padding1;
  /* 0x0A */ u16 expYield; // expYield was changed from u8 to u16 for the new Exp System.
