@@ -324,6 +324,7 @@ struct BattlePokemon
     /*0x22*/ u8 type1;
     /*0x23*/ u8 type2;
     /*0x24*/ u8 type3;
+             u8 attribute;
     /*0x25*/ u8 pp[MAX_MON_MOVES];
     /*0x29*/ u16 hp;
     /*0x2B*/ u8 level;

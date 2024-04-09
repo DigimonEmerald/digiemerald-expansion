@@ -8850,6 +8850,8 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
     || AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_WATER_SPORT, 0)))
         modifier = uq4_12_multiply(modifier, UQ_4_12(B_SPORT_DMG_REDUCTION >= GEN_5 ? 0.23 : 0.5));
 
+
+
     // attacker's abilities
     switch (atkAbility)
     {
@@ -9816,6 +9818,13 @@ static inline s32 DoMoveDamageCalcVars(u32 move, u32 battlerAtk, u32 battlerDef,
     DAMAGE_APPLY_MODIFIER(GetWeatherDamageModifier(battlerAtk, move, moveType, holdEffectAtk, holdEffectDef, weather));
     DAMAGE_APPLY_MODIFIER(GetCriticalModifier(isCrit));
     DAMAGE_APPLY_MODIFIER(GetGlaiveRushModifier(battlerDef));
+
+    if (gBattleMons[battlerAtk].attribute == TYPE_VACCINE && gBattleMons[battlerDef].attribute == TYPE_VIRUS)
+        dmg = dmg * 15 / 10;
+    if (gBattleMons[battlerAtk].attribute == TYPE_VIRUS && gBattleMons[battlerDef].attribute == TYPE_DATA)
+        dmg = dmg * 15 / 10;
+    if (gBattleMons[battlerAtk].attribute == TYPE_DATA && gBattleMons[battlerDef].attribute == TYPE_VACCINE)
+        dmg = dmg * 15 / 10;
 
     if (randomFactor)
     {
@@ -11016,6 +11025,7 @@ void CopyMonAbilityAndTypesToBattleMon(u32 battler, struct Pokemon *mon)
     gBattleMons[battler].type1 = gSpeciesInfo[gBattleMons[battler].species].types[0];
     gBattleMons[battler].type2 = gSpeciesInfo[gBattleMons[battler].species].types[1];
     gBattleMons[battler].type3 = TYPE_MYSTERY;
+    gBattleMons[battler].attribute = gSpeciesInfo[gBattleMons[battler].species].attribute;
 }
 
 void RecalcBattlerStats(u32 battler, struct Pokemon *mon)
