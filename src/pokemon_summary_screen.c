@@ -891,6 +891,30 @@ static const union AnimCmd sSpriteAnim_TypeFairy[] = {
     ANIMCMD_FRAME(TYPE_FAIRY * 8, 0, FALSE, FALSE),
     ANIMCMD_END
 };
+static const union AnimCmd sSpriteAnim_TypeLight[] = {
+    ANIMCMD_FRAME(TYPE_LIGHT * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeVaccne[] = {
+    ANIMCMD_FRAME(TYPE_VACCINE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeVirus[] = {
+    ANIMCMD_FRAME(TYPE_VIRUS * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeData[] = {
+    ANIMCMD_FRAME(TYPE_DATA * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeFree[] = {
+    ANIMCMD_FRAME(TYPE_FREE * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TypeUknown[] = {
+    ANIMCMD_FRAME(TYPE_UKNOWN * 8, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
 static const union AnimCmd sSpriteAnim_CategoryCool[] = {
     ANIMCMD_FRAME((CONTEST_CATEGORY_COOL + NUMBER_OF_MON_TYPES) * 8, 0, FALSE, FALSE),
     ANIMCMD_END
@@ -931,6 +955,12 @@ static const union AnimCmd *const sSpriteAnimTable_MoveTypes[NUMBER_OF_MON_TYPES
     sSpriteAnim_TypeDragon,
     sSpriteAnim_TypeDark,
     sSpriteAnim_TypeFairy,
+    sSpriteAnim_TypeLight,
+    sSpriteAnim_TypeVaccne,
+    sSpriteAnim_TypeVirus,
+    sSpriteAnim_TypeData,
+    sSpriteAnim_TypeFree,
+    sSpriteAnim_TypeUknown,
     sSpriteAnim_CategoryCool,
     sSpriteAnim_CategoryBeauty,
     sSpriteAnim_CategoryCute,
