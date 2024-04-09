@@ -608,7 +608,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_VACCINE] =
     {
-        .name = _("Vaccine"),
+        .name = _("Vax"),
         .generic = _("a VACCINE move"),
         .palette = 14,
         .zMove = MOVE_TWINKLE_TACKLE,
@@ -672,7 +672,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_UKNOWN] =
     {
-        .name = _("Unknown"),
+        .name = _("Uknown"),
         .generic = _("an Unknown move"),
         .palette = 14,
         .zMove = MOVE_TWINKLE_TACKLE,

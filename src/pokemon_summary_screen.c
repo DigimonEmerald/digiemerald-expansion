@@ -911,7 +911,7 @@ static const union AnimCmd sSpriteAnim_TypeFree[] = {
     ANIMCMD_FRAME(TYPE_FREE * 8, 0, FALSE, FALSE),
     ANIMCMD_END
 };
-static const union AnimCmd sSpriteAnim_TypeUknown[] = {
+static const union AnimCmd sSpriteAnim_TypeUnknown[] = {
     ANIMCMD_FRAME(TYPE_UKNOWN * 8, 0, FALSE, FALSE),
     ANIMCMD_END
 };
@@ -960,7 +960,7 @@ static const union AnimCmd *const sSpriteAnimTable_MoveTypes[NUMBER_OF_MON_TYPES
     sSpriteAnim_TypeVirus,
     sSpriteAnim_TypeData,
     sSpriteAnim_TypeFree,
-    sSpriteAnim_TypeUknown,
+    sSpriteAnim_TypeUnknown,
     sSpriteAnim_CategoryCool,
     sSpriteAnim_CategoryBeauty,
     sSpriteAnim_CategoryCute,
