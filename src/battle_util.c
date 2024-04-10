@@ -2348,6 +2348,7 @@ enum
     ENDTURN_SYRUP_BOMB,
     ENDTURN_DYNAMAX,
     ENDTURN_SEA_OF_FIRE_DAMAGE,
+    ENDTURN_CONVERTED,
     ENDTURN_BATTLER_COUNT
 };
 
@@ -2941,6 +2942,17 @@ u8 DoBattlerEndTurnEffects(void)
                 BtlController_EmitStatusAnimation(battler, BUFFER_A, FALSE, STATUS1_BURN);
                 MarkBattlerForControllerExec(battler);
                 BattleScriptExecute(BattleScript_HurtByTheSeaOfFire);
+                effect++;
+            }
+            gBattleStruct->turnEffectsTracker++;
+            break;
+        case ENDTURN_CONVERTED:
+            if ((gBattleMons[battler].status1 & STATUS1_CONVERTED) && gBattleMons[battler].hp != 0)
+            {
+                gBattleMoveDamage = gBattleMons[battler].maxHP / 8;
+                if (gBattleMoveDamage == 0)
+                    gBattleMoveDamage = 1;
+                BattleScriptExecute(BattleScript_BurnTurnDmg);
                 effect++;
             }
             gBattleStruct->turnEffectsTracker++;
