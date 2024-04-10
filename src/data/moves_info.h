@@ -3181,7 +3181,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "that never miss."),
         .effect = EFFECT_HIT,
         .power = 60,
-        .type = TYPE_NORMAL,
+        .type = TYPE_LIGHT,
         .accuracy = 0,
         .pp = 20,
         .target = MOVE_TARGET_BOTH,
@@ -3649,7 +3649,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "light that cuts accuracy."),
         .effect = EFFECT_ACCURACY_DOWN,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_LIGHT,
         .accuracy = B_UPDATED_MOVE_DATA >= GEN_4 ? 100 : 70,
         .pp = 20,
         .target = MOVE_TARGET_SELECTED,
@@ -19850,6 +19850,32 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .category = DAMAGE_CATEGORY_STATUS,
         .zMove = { .effect = Z_EFFECT_ATK_UP_1 },
         .magicCoatAffected = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+    },
+
+    [MOVE_HOLY_BEAM] =
+    {
+        .name = COMPOUND_STRING("Holy Beam"),
+        .description = COMPOUND_STRING(
+            "Focuses holy power into a\n"
+            "beam that may convert."),
+        .effect = EFFECT_HIT,
+        .power = 95,
+        .type = TYPE_LIGHT,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            // The following effect is also relevant in battle_pike.c
+            // If you cherry-pick this to use something other than the config, make sure to update it there too
+            .moveEffect = MOVE_EFFECT_CONVERTED,
+            .chance = 10,
+        }),
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
