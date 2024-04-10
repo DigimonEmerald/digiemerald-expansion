@@ -877,7 +877,8 @@ gBattleAnims_Moves::
 	.4byte Move_MALIGNANT_CHAIN
 	.4byte Move_PROPHECY
 	.4byte Move_BLESSING
-	.4byte MOVE_HOLY_BEAM
+	.4byte Move_HOLY_BEAM
+	.4byte Move_DRAGLESS_SPIKER
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -17891,7 +17892,8 @@ Move_SUPERCELL_SLAM::
 Move_MALIGNANT_CHAIN::
 Move_PROPHECY::
 Move_BLESSING::
-MOVE_HOLY_BEAM::
+Move_HOLY_BEAM::
+Move_DRAGLESS_SPIKER::
 	end @to do
 
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@

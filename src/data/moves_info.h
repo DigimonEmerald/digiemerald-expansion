@@ -19881,6 +19881,28 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
     },
+
+    [MOVE_DRAGLESS_SPIKER] =
+    {
+        .name = HANDLE_EXPANDED_MOVE_NAME("Drglss Spikr", "Dragless Spiker"),
+        .description = COMPOUND_STRING(
+            "Bisects the enemy with its.\n"
+            "claws. High Crit Ratio."),
+        .effect = EFFECT_HIT,
+        .power = 60,
+        .type = TYPE_STEEL,
+        .accuracy = 90,
+        .criticalHitStage = 1,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .slicingMove = TRUE,
+        .contestEffect = CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL,
+        .contestCategory = CONTEST_CATEGORY_COOL,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0}
+    },
     
 
     // Z-Moves
