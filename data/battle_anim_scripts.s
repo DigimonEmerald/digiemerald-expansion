@@ -882,6 +882,7 @@ gBattleAnims_Moves::
 	.4byte Move_ELECTRO_SHOCKER
 	.4byte Move_HORN_BUSTER
 	.4byte Move_GIGA_SCISSOR
+	.4byte Move_PEPPER_BREATH
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -17900,6 +17901,7 @@ Move_DRAGLESS_SPIKER::
 Move_ELECTRO_SHOCKER::
 Move_HORN_BUSTER::
 Move_GIGA_SCISSOR::
+Move_PEPPER_BREATH::
 	end @to do
 
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
