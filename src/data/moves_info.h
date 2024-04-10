@@ -20213,6 +20213,31 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestComboStarterId = 0,
         .contestComboMoves = {0}
     },
+
+    [MOVE_SAINT_HEAL] =
+    {
+        .name = COMPOUND_STRING("Saint Heal"),
+        .description = COMPOUND_STRING(
+            "Restores self and allies\n"
+            "through a field of holy power."),
+        .effect = EFFECT_JUNGLE_HEALING,
+        .power = 0,
+        .type = TYPE_LIGHT,
+        .accuracy = 0,
+        .pp = 10,
+        .target = MOVE_TARGET_USER,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .ignoresProtect = TRUE,
+        .ignoresSubstitute = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .healingMove = TRUE,
+        .metronomeBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+    },
     
 
     // Z-Moves
