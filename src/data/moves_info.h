@@ -19812,6 +19812,29 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         }),
     },
 
+    [MOVE_PROPHECY] =
+    {
+        .name = COMPOUND_STRING("PROPHECY"),
+        .description = COMPOUND_STRING(
+            "Prophesies a holy\n"
+            "attack 2 turns later."),
+        .power = 80,
+        .effect = EFFECT_FUTURE_SIGHT,
+        .type = TYPE_LIGHT,
+        .accuracy = 90,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .ignoresProtect = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+    },
+    
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {
@@ -21070,5 +21093,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .argument = MAX_EFFECT_BYPASS_PROTECT, //EFFECT TODO
     },
+
+    
 
 };
