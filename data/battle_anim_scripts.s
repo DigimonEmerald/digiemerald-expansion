@@ -889,6 +889,7 @@ gBattleAnims_Moves::
 	.4byte Move_SHOCK_QUILL
 	.4byte Move_STUN_STINGER
 	.4byte Move_HOLY_SHOOT
+	.4byte Move_CORONA_FLAME
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -17914,6 +17915,7 @@ Move_DASH_DOUBLE_CLAW::
 Move_SHOCK_QUILL::
 Move_STUN_STINGER::
 Move_HOLY_SHOOT::
+Move_CORONA_FLAME::
 	end @to do
 
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
