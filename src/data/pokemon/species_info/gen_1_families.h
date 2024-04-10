@@ -343,10 +343,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Botamon)
         .levelUpLearnset = sBotamonLevelUpLearnset,
         .teachableLearnset = sBotamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_CHARMELEON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_CHIBICKMON}),
     },
 
-    [SPECIES_CHARMELEON] =
+    [SPECIES_CHIBICKMON] =
     {
         .baseHP        = 58,
         .baseAttack    = 64,
@@ -366,9 +366,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_SOLAR_POWER },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Charmeleon"),
-        .cryId = CRY_CHARMELEON,
-        .natDexNum = NATIONAL_DEX_CHARMELEON,
+        .speciesName = _("Chibickmon"),
+        .cryId = CRY_CHIBICKMON,
+        .natDexNum = NATIONAL_DEX_CHIBICKMON,
         .categoryName = _("Flame"),
         .height = 11,
         .weight = 190,
@@ -381,26 +381,26 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 9,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Charmeleon,
+        .frontPic = gMonFrontPic_Chibickmon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Charmeleon,
+        .frontAnimFrames = sAnims_Chibickmon,
         .frontAnimId = ANIM_BACK_AND_LUNGE,
-        .backPic = gMonBackPic_Charmeleon,
+        .backPic = gMonBackPic_Chibickmon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Charmeleon,
-        .shinyPalette = gMonShinyPalette_Charmeleon,
-        .iconSprite = gMonIcon_Charmeleon,
+        .palette = gMonPalette_Chibickmon,
+        .shinyPalette = gMonShinyPalette_Chibickmon,
+        .iconSprite = gMonIcon_Chibickmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Charmeleon)
-        .levelUpLearnset = sCharmeleonLevelUpLearnset,
-        .teachableLearnset = sCharmeleonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CHARIZARD}),
+        FOOTPRINT(Chibickmon)
+        .levelUpLearnset = sChibickmonLevelUpLearnset,
+        .teachableLearnset = sChibickmonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CHIBOMON}),
     },
 
-    [SPECIES_CHARIZARD] =
+    [SPECIES_CHIBOMON] =
     {
         .baseHP        = 78,
         .baseAttack    = 84,
@@ -425,14 +425,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_SOLAR_POWER },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Charizard"),
-        .cryId = CRY_CHARIZARD,
-        .natDexNum = NATIONAL_DEX_CHARIZARD,
+        .speciesName = _("Chibomon"),
+        .cryId = CRY_CHIBOMON,
+        .natDexNum = NATIONAL_DEX_CHIBOMON,
         .categoryName = _("Flame"),
         .height = 17,
         .weight = 905,
         .description = COMPOUND_STRING(
-            "A Charizard flies about in search of\n"
+            "A Chibomon flies about in search of\n"
             "strong opponents. It breathes intense\n"
             "flames that can melt any material. However,\n"
             "it will never torch a weaker foe."),
@@ -440,28 +440,28 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 1,
         .trainerScale = 302,
         .trainerOffset = 3,
-        .frontPic = gMonFrontPic_Charizard,
+        .frontPic = gMonFrontPic_Chibomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Charizard,
+        .frontAnimFrames = sAnims_Chibomon,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Charizard,
+        .backPic = gMonBackPic_Chibomon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_Charizard,
-        .shinyPalette = gMonShinyPalette_Charizard,
-        .iconSprite = gMonIcon_Charizard,
+        .palette = gMonPalette_Chibomon,
+        .shinyPalette = gMonShinyPalette_Chibomon,
+        .iconSprite = gMonIcon_Chibomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Charizard)
-        .levelUpLearnset = sCharizardLevelUpLearnset,
-        .teachableLearnset = sCharizardTeachableLearnset,
-        .formSpeciesIdTable = sCharizardFormSpeciesIdTable,
-        .formChangeTable = sCharizardFormChangeTable,
+        FOOTPRINT(Chibomon)
+        .levelUpLearnset = sChibomonLevelUpLearnset,
+        .teachableLearnset = sChibomonTeachableLearnset,
+        .formSpeciesIdTable = sChibomonFormSpeciesIdTable,
+        .formChangeTable = sChibomonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_CHARIZARD_MEGA_X] =
+    [SPECIES_CHIBOMON_MEGA_X] =
     {
         .baseHP        = 78,
         .baseAttack    = 130,
@@ -480,9 +480,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Charizard"),
-        .cryId = CRY_CHARIZARD_MEGA_X,
-        .natDexNum = NATIONAL_DEX_CHARIZARD,
+        .speciesName = _("Chibomon"),
+        .cryId = CRY_CHIBOMON_MEGA_X,
+        .natDexNum = NATIONAL_DEX_CHIBOMON,
         .categoryName = _("Flame"),
         .height = 17,
         .weight = 1105,
@@ -494,28 +494,28 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 1,
         .trainerScale = 302,
         .trainerOffset = 3,
-        .frontPic = gMonFrontPic_CharizardMegaX,
+        .frontPic = gMonFrontPic_ChibomonMegaX,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_CharizardMegaX,
+        .frontAnimFrames = sAnims_ChibomonMegaX,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_CharizardMegaX,
+        .backPic = gMonBackPic_ChibomonMegaX,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
-        .palette = gMonPalette_CharizardMegaX,
-        .shinyPalette = gMonShinyPalette_CharizardMegaX,
-        .iconSprite = gMonIcon_CharizardMegaX,
+        .palette = gMonPalette_ChibomonMegaX,
+        .shinyPalette = gMonShinyPalette_ChibomonMegaX,
+        .iconSprite = gMonIcon_ChibomonMegaX,
         .iconPalIndex = 0,
-        FOOTPRINT(Charizard)
+        FOOTPRINT(Chibomon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sCharizardLevelUpLearnset,
-        .teachableLearnset = sCharizardTeachableLearnset,
-        .formSpeciesIdTable = sCharizardFormSpeciesIdTable,
-        .formChangeTable = sCharizardFormChangeTable,
+        .levelUpLearnset = sChibomonLevelUpLearnset,
+        .teachableLearnset = sChibomonTeachableLearnset,
+        .formSpeciesIdTable = sChibomonFormSpeciesIdTable,
+        .formChangeTable = sChibomonFormChangeTable,
     },
 
-    [SPECIES_CHARIZARD_MEGA_Y] =
+    [SPECIES_CHIBOMON_MEGA_Y] =
     {
         .baseHP        = 78,
         .baseAttack    = 104,
@@ -534,9 +534,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_DROUGHT, ABILITY_DROUGHT, ABILITY_DROUGHT },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Charizard"),
-        .cryId = CRY_CHARIZARD_MEGA_Y,
-        .natDexNum = NATIONAL_DEX_CHARIZARD,
+        .speciesName = _("Chibomon"),
+        .cryId = CRY_CHIBOMON_MEGA_Y,
+        .natDexNum = NATIONAL_DEX_CHIBOMON,
         .categoryName = _("Flame"),
         .height = 17,
         .weight = 1005,
@@ -549,30 +549,30 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 1,
         .trainerScale = 302,
         .trainerOffset = 3,
-        .frontPic = gMonFrontPic_CharizardMegaY,
+        .frontPic = gMonFrontPic_ChibomonMegaY,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_CharizardMegaY,
+        .frontAnimFrames = sAnims_ChibomonMegaY,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_CharizardMegaY,
+        .backPic = gMonBackPic_ChibomonMegaY,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_CharizardMegaY,
-        .shinyPalette = gMonShinyPalette_CharizardMegaY,
-        .iconSprite = gMonIcon_CharizardMegaY,
+        .palette = gMonPalette_ChibomonMegaY,
+        .shinyPalette = gMonShinyPalette_ChibomonMegaY,
+        .iconSprite = gMonIcon_ChibomonMegaY,
         .iconPalIndex = 0,
-        FOOTPRINT(Charizard)
+        FOOTPRINT(Chibomon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sCharizardLevelUpLearnset,
-        .teachableLearnset = sCharizardTeachableLearnset,
-        .formSpeciesIdTable = sCharizardFormSpeciesIdTable,
-        .formChangeTable = sCharizardFormChangeTable,
+        .levelUpLearnset = sChibomonLevelUpLearnset,
+        .teachableLearnset = sChibomonTeachableLearnset,
+        .formSpeciesIdTable = sChibomonFormSpeciesIdTable,
+        .formChangeTable = sChibomonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_CHARIZARD_GIGANTAMAX] =
+    [SPECIES_CHIBOMON_GIGANTAMAX] =
     {
         .baseHP        = 78,
         .baseAttack    = 84,
@@ -591,46 +591,46 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_SOLAR_POWER },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Charizard"),
-        .cryId = CRY_CHARIZARD,
-        .natDexNum = NATIONAL_DEX_CHARIZARD,
+        .speciesName = _("Chibomon"),
+        .cryId = CRY_CHIBOMON,
+        .natDexNum = NATIONAL_DEX_CHIBOMON,
         .categoryName = _("Flame"),
         .height = 280,
         .weight = 0,
         .description = COMPOUND_STRING(
             "The flame inside its body burns\n"
             "hotter than 3,600 degrees Fahrenheit.\n"
-            "When Charizard roars, that\n"
+            "When Chibomon roars, that\n"
             "temperature climbs even higher."),
         .pokemonScale = 256,
         .pokemonOffset = 1,
         .trainerScale = 302,
         .trainerOffset = 3,
-        .frontPic = gMonFrontPic_CharizardGigantamax,
+        .frontPic = gMonFrontPic_ChibomonGigantamax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_CharizardGigantamax,
+        .frontAnimFrames = sAnims_ChibomonGigantamax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_CharizardGigantamax,
+        .backPic = gMonBackPic_ChibomonGigantamax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_CharizardGigantamax,
-        .shinyPalette = gMonShinyPalette_CharizardGigantamax,
-        .iconSprite = gMonIcon_CharizardGigantamax,
+        .palette = gMonPalette_ChibomonGigantamax,
+        .shinyPalette = gMonShinyPalette_ChibomonGigantamax,
+        .iconSprite = gMonIcon_ChibomonGigantamax,
         .iconPalIndex = 0,
-        FOOTPRINT(Charizard)
+        FOOTPRINT(Chibomon)
         .isGigantamax = TRUE,
-        .levelUpLearnset = sCharizardLevelUpLearnset,
-        .teachableLearnset = sCharizardTeachableLearnset,
-        .formSpeciesIdTable = sCharizardFormSpeciesIdTable,
-        .formChangeTable = sCharizardFormChangeTable,
+        .levelUpLearnset = sChibomonLevelUpLearnset,
+        .teachableLearnset = sChibomonTeachableLearnset,
+        .formSpeciesIdTable = sChibomonFormSpeciesIdTable,
+        .formChangeTable = sChibomonFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_BOTAMON
 
-#if P_FAMILY_SQUIRTLE
-    [SPECIES_SQUIRTLE] =
+#if P_FAMILY_CONOMON
+    [SPECIES_CONOMON] =
     {
         .baseHP        = 44,
         .baseAttack    = 48,
@@ -649,9 +649,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_RAIN_DISH },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Squirtle"),
-        .cryId = CRY_SQUIRTLE,
-        .natDexNum = NATIONAL_DEX_SQUIRTLE,
+        .speciesName = _("Conomon"),
+        .cryId = CRY_CONOMON,
+        .natDexNum = NATIONAL_DEX_CONOMON,
         .categoryName = _("Tiny Turtle"),
         .height = 5,
         .weight = 90,
@@ -659,31 +659,31 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "Its shell is not just for protection.\n"
             "Its rounded shape and the grooves on its\n"
             "surface minimize resistance in water,\n"
-            "enabling Squirtle to swim at high speeds."),
+            "enabling Conomon to swim at high speeds."),
         .pokemonScale = 412,
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Squirtle,
+        .frontPic = gMonFrontPic_Conomon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Squirtle,
+        .frontAnimFrames = sAnims_Conomon,
         .frontAnimId = ANIM_V_JUMPS_BIG,
-        .backPic = gMonBackPic_Squirtle,
+        .backPic = gMonBackPic_Conomon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Squirtle,
-        .shinyPalette = gMonShinyPalette_Squirtle,
-        .iconSprite = gMonIcon_Squirtle,
+        .palette = gMonPalette_Conomon,
+        .shinyPalette = gMonShinyPalette_Conomon,
+        .iconSprite = gMonIcon_Conomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Squirtle)
-        .levelUpLearnset = sSquirtleLevelUpLearnset,
-        .teachableLearnset = sSquirtleTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_WARTORTLE}),
+        FOOTPRINT(Conomon)
+        .levelUpLearnset = sConomonLevelUpLearnset,
+        .teachableLearnset = sConomonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_COTSUCOMON}),
     },
 
-    [SPECIES_WARTORTLE] =
+    [SPECIES_COTSUCOMON] =
     {
         .baseHP        = 59,
         .baseAttack    = 63,
@@ -703,9 +703,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_RAIN_DISH },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Wartortle"),
-        .cryId = CRY_WARTORTLE,
-        .natDexNum = NATIONAL_DEX_WARTORTLE,
+        .speciesName = _("Cotsucomon"),
+        .cryId = CRY_COTSUCOMON,
+        .natDexNum = NATIONAL_DEX_COTSUCOMON,
         .categoryName = _("Turtle"),
         .height = 10,
         .weight = 225,
@@ -718,26 +718,26 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Wartortle,
+        .frontPic = gMonFrontPic_Cotsucomon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Wartortle,
+        .frontAnimFrames = sAnims_Cotsucomon,
         .frontAnimId = ANIM_SHRINK_GROW,
-        .backPic = gMonBackPic_Wartortle,
+        .backPic = gMonBackPic_Cotsucomon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Wartortle,
-        .shinyPalette = gMonShinyPalette_Wartortle,
-        .iconSprite = gMonIcon_Wartortle,
+        .palette = gMonPalette_Cotsucomon,
+        .shinyPalette = gMonShinyPalette_Cotsucomon,
+        .iconSprite = gMonIcon_Cotsucomon,
         .iconPalIndex = 2,
-        FOOTPRINT(Wartortle)
-        .levelUpLearnset = sWartortleLevelUpLearnset,
-        .teachableLearnset = sWartortleTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_BLASTOISE}),
+        FOOTPRINT(Cotsucomon)
+        .levelUpLearnset = sCotsucomonLevelUpLearnset,
+        .teachableLearnset = sCotsucomonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CURIMON}),
     },
 
-    [SPECIES_BLASTOISE] =
+    [SPECIES_CURIMON] =
     {
         .baseHP        = 79,
         .baseAttack    = 83,
@@ -762,9 +762,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_RAIN_DISH },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Blastoise"),
-        .cryId = CRY_BLASTOISE,
-        .natDexNum = NATIONAL_DEX_BLASTOISE,
+        .speciesName = _("Curimon"),
+        .cryId = CRY_CURIMON,
+        .natDexNum = NATIONAL_DEX_CURIMON,
         .categoryName = _("Shellfish"),
         .height = 16,
         .weight = 855,
@@ -777,29 +777,29 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = -1,
         .trainerScale = 293,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_Blastoise,
+        .frontPic = gMonFrontPic_Curimon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Blastoise,
+        .frontAnimFrames = sAnims_Curimon,
         .frontAnimId = ANIM_V_SHAKE_TWICE,
         .frontAnimDelay = 20,
-        .backPic = gMonBackPic_Blastoise,
+        .backPic = gMonBackPic_Curimon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
-        .palette = gMonPalette_Blastoise,
-        .shinyPalette = gMonShinyPalette_Blastoise,
-        .iconSprite = gMonIcon_Blastoise,
+        .palette = gMonPalette_Curimon,
+        .shinyPalette = gMonShinyPalette_Curimon,
+        .iconSprite = gMonIcon_Curimon,
         .iconPalIndex = 2,
-        FOOTPRINT(Blastoise)
-        .levelUpLearnset = sBlastoiseLevelUpLearnset,
-        .teachableLearnset = sBlastoiseTeachableLearnset,
-        .formSpeciesIdTable = sBlastoiseFormSpeciesIdTable,
-        .formChangeTable = sBlastoiseFormChangeTable,
+        FOOTPRINT(Curimon)
+        .levelUpLearnset = sCurimonLevelUpLearnset,
+        .teachableLearnset = sCurimonTeachableLearnset,
+        .formSpeciesIdTable = sCurimonFormSpeciesIdTable,
+        .formChangeTable = sCurimonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_BLASTOISE_MEGA] =
+    [SPECIES_CURIMON_MEGA] =
     {
         .baseHP        = 79,
         .baseAttack    = 103,
@@ -818,9 +818,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_MEGA_LAUNCHER, ABILITY_MEGA_LAUNCHER, ABILITY_MEGA_LAUNCHER },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Blastoise"),
-        .cryId = CRY_BLASTOISE_MEGA,
-        .natDexNum = NATIONAL_DEX_BLASTOISE,
+        .speciesName = _("Curimon"),
+        .cryId = CRY_CURIMON_MEGA,
+        .natDexNum = NATIONAL_DEX_CURIMON,
         .categoryName = _("Shellfish"),
         .height = 16,
         .weight = 1011,
@@ -833,30 +833,30 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = -1,
         .trainerScale = 293,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_BlastoiseMega,
+        .frontPic = gMonFrontPic_CurimonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_BlastoiseMega,
+        .frontAnimFrames = sAnims_CurimonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_BlastoiseMega,
+        .backPic = gMonBackPic_CurimonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
-        .palette = gMonPalette_BlastoiseMega,
-        .shinyPalette = gMonShinyPalette_BlastoiseMega,
-        .iconSprite = gMonIcon_BlastoiseMega,
+        .palette = gMonPalette_CurimonMega,
+        .shinyPalette = gMonShinyPalette_CurimonMega,
+        .iconSprite = gMonIcon_CurimonMega,
         .iconPalIndex = 2,
-        FOOTPRINT(Blastoise)
+        FOOTPRINT(Curimon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sBlastoiseLevelUpLearnset,
-        .teachableLearnset = sBlastoiseTeachableLearnset,
-        .formSpeciesIdTable = sBlastoiseFormSpeciesIdTable,
-        .formChangeTable = sBlastoiseFormChangeTable,
+        .levelUpLearnset = sCurimonLevelUpLearnset,
+        .teachableLearnset = sCurimonTeachableLearnset,
+        .formSpeciesIdTable = sCurimonFormSpeciesIdTable,
+        .formChangeTable = sCurimonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_BLASTOISE_GIGANTAMAX] =
+    [SPECIES_CURIMON_GIGANTAMAX] =
     {
         .baseHP        = 79,
         .baseAttack    = 83,
@@ -875,9 +875,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_RAIN_DISH },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Blastoise"),
-        .cryId = CRY_BLASTOISE,
-        .natDexNum = NATIONAL_DEX_BLASTOISE,
+        .speciesName = _("Curimon"),
+        .cryId = CRY_CURIMON,
+        .natDexNum = NATIONAL_DEX_CURIMON,
         .categoryName = _("Shellfish"),
         .height = 250,
         .weight = 0,
@@ -890,31 +890,31 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = -1,
         .trainerScale = 293,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_BlastoiseGigantamax,
+        .frontPic = gMonFrontPic_CurimonGigantamax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_BlastoiseGigantamax,
+        .frontAnimFrames = sAnims_CurimonGigantamax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_BlastoiseGigantamax,
+        .backPic = gMonBackPic_CurimonGigantamax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 5,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_BlastoiseGigantamax,
-        .shinyPalette = gMonShinyPalette_BlastoiseGigantamax,
-        .iconSprite = gMonIcon_BlastoiseGigantamax,
+        .palette = gMonPalette_CurimonGigantamax,
+        .shinyPalette = gMonShinyPalette_CurimonGigantamax,
+        .iconSprite = gMonIcon_CurimonGigantamax,
         .iconPalIndex = 0,
-        FOOTPRINT(Blastoise)
+        FOOTPRINT(Curimon)
         .isGigantamax = TRUE,
-        .levelUpLearnset = sBlastoiseLevelUpLearnset,
-        .teachableLearnset = sBlastoiseTeachableLearnset,
-        .formSpeciesIdTable = sBlastoiseFormSpeciesIdTable,
-        .formChangeTable = sBlastoiseFormChangeTable,
+        .levelUpLearnset = sCurimonLevelUpLearnset,
+        .teachableLearnset = sCurimonTeachableLearnset,
+        .formSpeciesIdTable = sCurimonFormSpeciesIdTable,
+        .formChangeTable = sCurimonFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_SQUIRTLE
+#endif //P_FAMILY_CONOMON
 
-#if P_FAMILY_CATERPIE
-    [SPECIES_CATERPIE] =
+#if P_FAMILY_DATIRIMON
+    [SPECIES_DATIRIMON] =
     {
         .baseHP        = 45,
         .baseAttack    = 30,
@@ -933,9 +933,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SHIELD_DUST, ABILITY_NONE, ABILITY_RUN_AWAY },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Caterpie"),
-        .cryId = CRY_CATERPIE,
-        .natDexNum = NATIONAL_DEX_CATERPIE,
+        .speciesName = _("Datirimon"),
+        .cryId = CRY_DATIRIMON,
+        .natDexNum = NATIONAL_DEX_DATIRIMON,
         .categoryName = _("Worm"),
         .height = 3,
         .weight = 29,
@@ -948,27 +948,27 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 22,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Caterpie,
+        .frontPic = gMonFrontPic_Datirimon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Caterpie,
+        .frontAnimFrames = sAnims_Datirimon,
         .frontAnimId = ANIM_SWING_CONCAVE,
-        .backPic = gMonBackPic_Caterpie,
+        .backPic = gMonBackPic_Datirimon,
         .backPicSize = MON_COORDS_SIZE(48, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Caterpie,
-        .shinyPalette = gMonShinyPalette_Caterpie,
-        .iconSprite = gMonIcon_Caterpie,
+        .palette = gMonPalette_Datirimon,
+        .shinyPalette = gMonShinyPalette_Datirimon,
+        .iconSprite = gMonIcon_Datirimon,
         .iconPalIndex = 1,
-        FOOTPRINT(Caterpie)
+        FOOTPRINT(Datirimon)
         .tmIlliterate = TRUE,
-        .levelUpLearnset = sCaterpieLevelUpLearnset,
-        .teachableLearnset = sCaterpieTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 7, SPECIES_METAPOD}),
+        .levelUpLearnset = sDatirimonLevelUpLearnset,
+        .teachableLearnset = sDatirimonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 7, SPECIES_DODOMON}),
     },
 
-    [SPECIES_METAPOD] =
+    [SPECIES_DODOMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 20,
@@ -987,38 +987,38 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Metapod"),
-        .cryId = CRY_METAPOD,
-        .natDexNum = NATIONAL_DEX_METAPOD,
+        .speciesName = _("Dodomon"),
+        .cryId = CRY_DODOMON,
+        .natDexNum = NATIONAL_DEX_DODOMON,
         .categoryName = _("Cocoon"),
         .height = 7,
         .weight = 99,
         .description = COMPOUND_STRING(
             "Its shell is as hard as an iron slab.\n"
-            "A Metapod does not move very much\n"
+            "A Dodomon does not move very much\n"
             "because it is preparing its soft innards\n"
             "for evolution inside the shell."),
         .pokemonScale = 350,
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Metapod,
+        .frontPic = gMonFrontPic_Dodomon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Metapod,
+        .frontAnimFrames = sAnims_Dodomon,
         .frontAnimId = ANIM_SWING_CONCAVE,
-        .backPic = gMonBackPic_Metapod,
+        .backPic = gMonBackPic_Dodomon,
         .backPicSize = MON_COORDS_SIZE(40, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Metapod,
-        .shinyPalette = gMonShinyPalette_Metapod,
-        .iconSprite = gMonIcon_Metapod,
+        .palette = gMonPalette_Dodomon,
+        .shinyPalette = gMonShinyPalette_Dodomon,
+        .iconSprite = gMonIcon_Dodomon,
         .iconPalIndex = 1,
-        FOOTPRINT(Metapod)
+        FOOTPRINT(Dodomon)
         .tmIlliterate = TRUE,
-        .levelUpLearnset = sMetapodLevelUpLearnset,
-        .teachableLearnset = sMetapodTeachableLearnset,
+        .levelUpLearnset = sDodomonLevelUpLearnset,
+        .teachableLearnset = sDodomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_BUTTERFREE}),
     },
 
@@ -1152,7 +1152,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sButterfreeFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_CATERPIE
+#endif //P_FAMILY_DATIRIMON
 
 #if P_FAMILY_WEEDLE
     [SPECIES_WEEDLE] =

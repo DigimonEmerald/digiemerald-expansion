@@ -65,7 +65,7 @@ static const union AnimCmd sAnim_Botamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Charmeleon_1[] =
+static const union AnimCmd sAnim_Chibickmon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 25),
@@ -73,7 +73,7 @@ static const union AnimCmd sAnim_Charmeleon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Charizard_1[] =
+static const union AnimCmd sAnim_Chibomon_1[] =
 {
     ANIMCMD_FRAME(1, 20),
     ANIMCMD_FRAME(0, 10),
@@ -81,20 +81,20 @@ static const union AnimCmd sAnim_Charizard_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(CharizardMegaX);
+PLACEHOLDER_ANIM_SINGLE_FRAME(ChibomonMegaX);
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(CharizardMegaY);
+PLACEHOLDER_ANIM_SINGLE_FRAME(ChibomonMegaY);
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GIGANTAMAX_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(CharizardGigantamax);
+PLACEHOLDER_ANIM_SINGLE_FRAME(ChibomonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_BOTAMON
 
-#if P_FAMILY_SQUIRTLE
-static const union AnimCmd sAnim_Squirtle_1[] =
+#if P_FAMILY_CONOMON
+static const union AnimCmd sAnim_Conomon_1[] =
 {
     ANIMCMD_FRAME(1, 11),
     ANIMCMD_FRAME(0, 11),
@@ -103,7 +103,7 @@ static const union AnimCmd sAnim_Squirtle_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Wartortle_1[] =
+static const union AnimCmd sAnim_Cotsucomon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 20),
@@ -111,7 +111,7 @@ static const union AnimCmd sAnim_Wartortle_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Blastoise_1[] =
+static const union AnimCmd sAnim_Curimon_1[] =
 {
     ANIMCMD_FRAME(1, 20),
     ANIMCMD_FRAME(0, 20),
@@ -121,16 +121,16 @@ static const union AnimCmd sAnim_Blastoise_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(BlastoiseMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(CurimonMega);
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GIGANTAMAX_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(BlastoiseGigantamax);
+PLACEHOLDER_ANIM_SINGLE_FRAME(CurimonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_SQUIRTLE
+#endif //P_FAMILY_CONOMON
 
-#if P_FAMILY_CATERPIE
-static const union AnimCmd sAnim_Caterpie_1[] =
+#if P_FAMILY_DATIRIMON
+static const union AnimCmd sAnim_Datirimon_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 15),
@@ -143,7 +143,7 @@ static const union AnimCmd sAnim_Caterpie_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Metapod_1[] =
+static const union AnimCmd sAnim_Dodomon_1[] =
 {
     ANIMCMD_FRAME(1, 45),
     ANIMCMD_FRAME(0, 5),
@@ -171,7 +171,7 @@ static const union AnimCmd sAnim_Butterfree_1[] =
 #if P_GIGANTAMAX_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(ButterfreeGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_CATERPIE
+#endif //P_FAMILY_DATIRIMON
 
 #if P_FAMILY_WEEDLE
 static const union AnimCmd sAnim_Weedle_1[] =
@@ -10166,35 +10166,35 @@ SINGLE_ANIMATION(BommonGigantamax);
 #endif //P_FAMILY_ARGOMON_F
 #if P_FAMILY_BOTAMON
 SINGLE_ANIMATION(Botamon);
-SINGLE_ANIMATION(Charmeleon);
-SINGLE_ANIMATION(Charizard);
+SINGLE_ANIMATION(Chibickmon);
+SINGLE_ANIMATION(Chibomon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(CharizardMegaX);
-SINGLE_ANIMATION(CharizardMegaY);
+SINGLE_ANIMATION(ChibomonMegaX);
+SINGLE_ANIMATION(ChibomonMegaY);
 #endif //P_MEGA_EVOLUTIONS
 #if P_GIGANTAMAX_FORMS
-SINGLE_ANIMATION(CharizardGigantamax);
+SINGLE_ANIMATION(ChibomonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_BOTAMON
-#if P_FAMILY_SQUIRTLE
-SINGLE_ANIMATION(Squirtle);
-SINGLE_ANIMATION(Wartortle);
-SINGLE_ANIMATION(Blastoise);
+#if P_FAMILY_CONOMON
+SINGLE_ANIMATION(Conomon);
+SINGLE_ANIMATION(Cotsucomon);
+SINGLE_ANIMATION(Curimon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(BlastoiseMega);
+SINGLE_ANIMATION(CurimonMega);
 #endif //P_MEGA_EVOLUTIONS
 #if P_GIGANTAMAX_FORMS
-SINGLE_ANIMATION(BlastoiseGigantamax);
+SINGLE_ANIMATION(CurimonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_SQUIRTLE
-#if P_FAMILY_CATERPIE
-SINGLE_ANIMATION(Caterpie);
-SINGLE_ANIMATION(Metapod);
+#endif //P_FAMILY_CONOMON
+#if P_FAMILY_DATIRIMON
+SINGLE_ANIMATION(Datirimon);
+SINGLE_ANIMATION(Dodomon);
 SINGLE_ANIMATION(Butterfree);
 #if P_GIGANTAMAX_FORMS
 SINGLE_ANIMATION(ButterfreeGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_CATERPIE
+#endif //P_FAMILY_DATIRIMON
 #if P_FAMILY_WEEDLE
 SINGLE_ANIMATION(Weedle);
 SINGLE_ANIMATION(Kakuna);

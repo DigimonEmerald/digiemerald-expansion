@@ -8,31 +8,31 @@ static const u16 sBommonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_ARGOMON_F
 
 #if P_FAMILY_BOTAMON
-static const u16 sCharizardFormSpeciesIdTable[] = {
-    SPECIES_CHARIZARD,
-    SPECIES_CHARIZARD_MEGA_X,
-    SPECIES_CHARIZARD_MEGA_Y,
-    SPECIES_CHARIZARD_GIGANTAMAX,
+static const u16 sChibomonFormSpeciesIdTable[] = {
+    SPECIES_CHIBOMON,
+    SPECIES_CHIBOMON_MEGA_X,
+    SPECIES_CHIBOMON_MEGA_Y,
+    SPECIES_CHIBOMON_GIGANTAMAX,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_BOTAMON
 
-#if P_FAMILY_SQUIRTLE
-static const u16 sBlastoiseFormSpeciesIdTable[] = {
-    SPECIES_BLASTOISE,
-    SPECIES_BLASTOISE_MEGA,
-    SPECIES_BLASTOISE_GIGANTAMAX,
+#if P_FAMILY_CONOMON
+static const u16 sCurimonFormSpeciesIdTable[] = {
+    SPECIES_CURIMON,
+    SPECIES_CURIMON_MEGA,
+    SPECIES_CURIMON_GIGANTAMAX,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_SQUIRTLE
+#endif //P_FAMILY_CONOMON
 
-#if P_FAMILY_CATERPIE
+#if P_FAMILY_DATIRIMON
 static const u16 sButterfreeFormSpeciesIdTable[] = {
     SPECIES_BUTTERFREE,
     SPECIES_BUTTERFREE_GIGANTAMAX,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_CATERPIE
+#endif //P_FAMILY_DATIRIMON
 
 #if P_FAMILY_WEEDLE
 static const u16 sBeedrillFormSpeciesIdTable[] = {

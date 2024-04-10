@@ -54,15 +54,15 @@ WILD_BATTLE_TEST("Embargo doesn't block held item effects that affect experience
 
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Level(20); Item(item); }
-        OPPONENT(SPECIES_CATERPIE) { Level(10); HP(1); }
+        OPPONENT(SPECIES_DATIRIMON) { Level(10); HP(1); }
         ASSUME(gItemsInfo[ITEM_LUCKY_EGG].holdEffect == HOLD_EFFECT_LUCKY_EGG);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBARGO); MOVE(player, MOVE_SCRATCH); }
     } SCENE {
-        MESSAGE("Wild Caterpie used Embargo!");
+        MESSAGE("Wild Datirimon used Embargo!");
         MESSAGE("Wobbuffet can't use items anymore!");
         MESSAGE("Wobbuffet used Scratch!");
-        MESSAGE("Wild Caterpie fainted!");
+        MESSAGE("Wild Datirimon fainted!");
         EXPERIENCE_BAR(player, captureGainedExp: &results[i].exp);
     } FINALLY {
         EXPECT_MUL_EQ(results[1].exp, Q_4_12(1.5), results[0].exp);
@@ -75,22 +75,22 @@ WILD_BATTLE_TEST("Embargo doesn't block held item effects that affect effort val
 
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_POWER_WEIGHT); }
-        OPPONENT(SPECIES_CATERPIE) { HP(1); }
+        OPPONENT(SPECIES_DATIRIMON) { HP(1); }
         ASSUME(gItemsInfo[ITEM_POWER_WEIGHT].holdEffect == HOLD_EFFECT_POWER_ITEM);
         ASSUME(gItemsInfo[ITEM_POWER_WEIGHT].holdEffectParam == 8);
         ASSUME(gItemsInfo[ITEM_POWER_WEIGHT].secondaryId == STAT_HP);
-        ASSUME(gSpeciesInfo[SPECIES_CATERPIE].evYield_HP == 1);
+        ASSUME(gSpeciesInfo[SPECIES_DATIRIMON].evYield_HP == 1);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBARGO); MOVE(player, MOVE_SCRATCH); }
     } SCENE {
         // Turn 1
-        MESSAGE("Wild Caterpie used Embargo!");
+        MESSAGE("Wild Datirimon used Embargo!");
         MESSAGE("Wobbuffet can't use items anymore!");
         // Turn 2
         MESSAGE("Wobbuffet used Scratch!");
-        MESSAGE("Wild Caterpie fainted!");
+        MESSAGE("Wild Datirimon fainted!");
     } THEN {
-        finalHPEVAmount = (GetMonData(&PLAYER_PARTY[0], MON_DATA_HP_EV) + gItemsInfo[ITEM_POWER_WEIGHT].holdEffectParam + gSpeciesInfo[SPECIES_CATERPIE].evYield_HP);
+        finalHPEVAmount = (GetMonData(&PLAYER_PARTY[0], MON_DATA_HP_EV) + gItemsInfo[ITEM_POWER_WEIGHT].holdEffectParam + gSpeciesInfo[SPECIES_DATIRIMON].evYield_HP);
         EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_HP_EV), finalHPEVAmount);
     }
 }
@@ -338,7 +338,7 @@ SINGLE_BATTLE_TEST("Embargo doesn't prevent Mega Evolution")
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_CHARIZARD) { Item(ITEM_CHARIZARDITE_Y); };
+        OPPONENT(SPECIES_CHIBOMON) { Item(ITEM_CHIBOMONITE_Y); };
     } WHEN {
         TURN { MOVE(player, MOVE_EMBARGO); }
         TURN { MOVE(opponent, MOVE_BATON_PASS); SEND_OUT(opponent, 1); }
@@ -350,11 +350,11 @@ SINGLE_BATTLE_TEST("Embargo doesn't prevent Mega Evolution")
         // Turn 2
         MESSAGE("Foe Wobbuffet used Baton Pass!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BATON_PASS, opponent);
-        MESSAGE("2 sent out Charizard!");
+        MESSAGE("2 sent out Chibomon!");
         // Turn 3
-        MESSAGE("Foe Charizard's CharizarditeY is reacting to 2's Mega Ring!");
+        MESSAGE("Foe Chibomon's ChibomoniteY is reacting to 2's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponent);
-        MESSAGE("Foe Charizard has Mega Evolved into Mega Charizard!");
+        MESSAGE("Foe Chibomon has Mega Evolved into Mega Chibomon!");
     }
 }
 

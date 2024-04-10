@@ -85,7 +85,7 @@ static const struct LevelUpMove sBotamonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sCharmeleonLevelUpLearnset[] = {
+static const struct LevelUpMove sChibickmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
@@ -101,7 +101,7 @@ static const struct LevelUpMove sCharmeleonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sCharizardLevelUpLearnset[] = {
+static const struct LevelUpMove sChibomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_AIR_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_AIR_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_DRAGON_CLAW),
@@ -122,8 +122,8 @@ static const struct LevelUpMove sCharizardLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_BOTAMON
 
-#if P_FAMILY_SQUIRTLE
-static const struct LevelUpMove sSquirtleLevelUpLearnset[] = {
+#if P_FAMILY_CONOMON
+static const struct LevelUpMove sConomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 3, MOVE_WATER_GUN),
@@ -141,7 +141,7 @@ static const struct LevelUpMove sSquirtleLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sWartortleLevelUpLearnset[] = {
+static const struct LevelUpMove sCotsucomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
@@ -159,7 +159,7 @@ static const struct LevelUpMove sWartortleLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sBlastoiseLevelUpLearnset[] = {
+static const struct LevelUpMove sCurimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_FLASH_CANNON),
     LEVEL_UP_MOVE( 1, MOVE_FLASH_CANNON),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
@@ -178,17 +178,17 @@ static const struct LevelUpMove sBlastoiseLevelUpLearnset[] = {
     LEVEL_UP_MOVE(56, MOVE_SKULL_BASH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SQUIRTLE
+#endif //P_FAMILY_CONOMON
 
-#if P_FAMILY_CATERPIE
-static const struct LevelUpMove sCaterpieLevelUpLearnset[] = {
+#if P_FAMILY_DATIRIMON
+static const struct LevelUpMove sDatirimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_STRING_SHOT),
     LEVEL_UP_MOVE( 9, MOVE_BUG_BITE),
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sMetapodLevelUpLearnset[] = {
+static const struct LevelUpMove sDodomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_END
@@ -216,7 +216,7 @@ static const struct LevelUpMove sButterfreeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_QUIVER_DANCE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CATERPIE
+#endif //P_FAMILY_DATIRIMON
 
 #if P_FAMILY_WEEDLE
 static const struct LevelUpMove sWeedleLevelUpLearnset[] = {

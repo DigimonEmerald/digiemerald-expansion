@@ -109,11 +109,11 @@ SINGLE_BATTLE_TEST("Scald shouldn't burn a Water-type Pokémon")
 #endif
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_SQUIRTLE].types[0] == TYPE_WATER);
+        ASSUME(gSpeciesInfo[SPECIES_CONOMON].types[0] == TYPE_WATER);
         ASSUME(MoveHasAdditionalEffect(MOVE_SCALD, MOVE_EFFECT_BURN) == TRUE);
         ASSUME(gMovesInfo[MOVE_SCALD].type == TYPE_WATER);
-        PLAYER(SPECIES_SQUIRTLE);
-        OPPONENT(SPECIES_SQUIRTLE);
+        PLAYER(SPECIES_CONOMON);
+        OPPONENT(SPECIES_CONOMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SCALD); }
     } SCENE {

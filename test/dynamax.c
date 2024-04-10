@@ -1040,7 +1040,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Befuddle paralyzes, poisons, or sleeps both 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_G_MAX_BEFUDDLE].argument == MAX_EFFECT_EFFECT_SPORE_FOES);
         PLAYER(SPECIES_BUTTERFREE) { GigantamaxFactor(TRUE); }
-        PLAYER(SPECIES_CATERPIE);
+        PLAYER(SPECIES_DATIRIMON);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -1199,7 +1199,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Wildfire sets a field effect that damages no
     s16 damage;
     GIVEN {
         ASSUME(gMovesInfo[MOVE_G_MAX_WILDFIRE].argument == MAX_EFFECT_WILDFIRE);
-        PLAYER(SPECIES_CHARIZARD) { GigantamaxFactor(TRUE); }
+        PLAYER(SPECIES_CHIBOMON) { GigantamaxFactor(TRUE); }
         PLAYER(SPECIES_BOTAMON);
         OPPONENT(SPECIES_WOBBUFFET) { HP(600); MaxHP(600); }
         OPPONENT(SPECIES_WYNAUT);
@@ -1212,7 +1212,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Wildfire sets a field effect that damages no
         TURN { }
     } SCENE {
         // turn 1
-        MESSAGE("Charizard used G-Max Wildfire!");
+        MESSAGE("Chibomon used G-Max Wildfire!");
         MESSAGE("The opposing team was surrounded by flames!");
         MESSAGE("Foe Wobbuffet is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentLeft, captureDamage: &damage);

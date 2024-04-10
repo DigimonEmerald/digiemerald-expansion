@@ -412,57 +412,57 @@ Cry_Botamon::
 	.incbin "sound/direct_sound_samples/cries/botamon.bin"
 
 	.align 2
-Cry_Charmeleon::
-	.incbin "sound/direct_sound_samples/cries/charmeleon.bin"
+Cry_Chibickmon::
+	.incbin "sound/direct_sound_samples/cries/chibickmon.bin"
 
 	.align 2
-Cry_Charizard::
-	.incbin "sound/direct_sound_samples/cries/charizard.bin"
+Cry_Chibomon::
+	.incbin "sound/direct_sound_samples/cries/chibomon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_CharizardMegaX::
-	.incbin "sound/direct_sound_samples/cries/charizard_mega_x.bin"
+Cry_ChibomonMegaX::
+	.incbin "sound/direct_sound_samples/cries/chibomon_mega_x.bin"
 
 	.align 2
-Cry_CharizardMegaY::
-	.incbin "sound/direct_sound_samples/cries/charizard_mega_y.bin"
+Cry_ChibomonMegaY::
+	.incbin "sound/direct_sound_samples/cries/chibomon_mega_y.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BOTAMON
 
-.if P_FAMILY_SQUIRTLE == TRUE
+.if P_FAMILY_CONOMON == TRUE
 	.align 2
-Cry_Squirtle::
-	.incbin "sound/direct_sound_samples/cries/squirtle.bin"
+Cry_Conomon::
+	.incbin "sound/direct_sound_samples/cries/conomon.bin"
 
 	.align 2
-Cry_Wartortle::
-	.incbin "sound/direct_sound_samples/cries/wartortle.bin"
+Cry_Cotsucomon::
+	.incbin "sound/direct_sound_samples/cries/cotsucomon.bin"
 
 	.align 2
-Cry_Blastoise::
-	.incbin "sound/direct_sound_samples/cries/blastoise.bin"
+Cry_Curimon::
+	.incbin "sound/direct_sound_samples/cries/curimon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_BlastoiseMega::
-	.incbin "sound/direct_sound_samples/cries/blastoise_mega.bin"
+Cry_CurimonMega::
+	.incbin "sound/direct_sound_samples/cries/curimon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SQUIRTLE
+.endif @ P_FAMILY_CONOMON
 
-.if P_FAMILY_CATERPIE == TRUE
+.if P_FAMILY_DATIRIMON == TRUE
 	.align 2
-Cry_Caterpie::
-	.incbin "sound/direct_sound_samples/cries/caterpie.bin"
+Cry_Datirimon::
+	.incbin "sound/direct_sound_samples/cries/datirimon.bin"
 
 	.align 2
-Cry_Metapod::
-	.incbin "sound/direct_sound_samples/cries/metapod.bin"
+Cry_Dodomon::
+	.incbin "sound/direct_sound_samples/cries/dodomon.bin"
 
 	.align 2
 Cry_Butterfree::
 	.incbin "sound/direct_sound_samples/cries/butterfree.bin"
-.endif @ P_FAMILY_CATERPIE
+.endif @ P_FAMILY_DATIRIMON
 
 .if P_FAMILY_WEEDLE == TRUE
 	.align 2

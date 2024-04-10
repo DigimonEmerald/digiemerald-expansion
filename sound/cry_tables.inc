@@ -10,26 +10,26 @@ gCryTable::
 .endif @ P_FAMILY_ARGOMON_F
 .if P_FAMILY_BOTAMON == TRUE
 	cry Cry_Botamon
-	cry Cry_Charmeleon
-	cry Cry_Charizard
+	cry Cry_Chibickmon
+	cry Cry_Chibomon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_CharizardMegaX
-	cry Cry_CharizardMegaY
+	cry Cry_ChibomonMegaX
+	cry Cry_ChibomonMegaY
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BOTAMON
-.if P_FAMILY_SQUIRTLE == TRUE
-	cry Cry_Squirtle
-	cry Cry_Wartortle
-	cry Cry_Blastoise
+.if P_FAMILY_CONOMON == TRUE
+	cry Cry_Conomon
+	cry Cry_Cotsucomon
+	cry Cry_Curimon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_BlastoiseMega
+	cry Cry_CurimonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SQUIRTLE
-.if P_FAMILY_CATERPIE == TRUE
-	cry Cry_Caterpie
-	cry Cry_Metapod
+.endif @ P_FAMILY_CONOMON
+.if P_FAMILY_DATIRIMON == TRUE
+	cry Cry_Datirimon
+	cry Cry_Dodomon
 	cry Cry_Butterfree
-.endif @ P_FAMILY_CATERPIE
+.endif @ P_FAMILY_DATIRIMON
 .if P_FAMILY_WEEDLE == TRUE
 	cry Cry_Weedle
 	cry Cry_Kakuna
@@ -2436,26 +2436,26 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_ARGOMON_F
 .if P_FAMILY_BOTAMON == TRUE
 	cry_reverse Cry_Botamon
-	cry_reverse Cry_Charmeleon
-	cry_reverse Cry_Charizard
+	cry_reverse Cry_Chibickmon
+	cry_reverse Cry_Chibomon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_CharizardMegaX
-	cry_reverse Cry_CharizardMegaY
+	cry_reverse Cry_ChibomonMegaX
+	cry_reverse Cry_ChibomonMegaY
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BOTAMON
-.if P_FAMILY_SQUIRTLE == TRUE
-	cry_reverse Cry_Squirtle
-	cry_reverse Cry_Wartortle
-	cry_reverse Cry_Blastoise
+.if P_FAMILY_CONOMON == TRUE
+	cry_reverse Cry_Conomon
+	cry_reverse Cry_Cotsucomon
+	cry_reverse Cry_Curimon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_BlastoiseMega
+	cry_reverse Cry_CurimonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SQUIRTLE
-.if P_FAMILY_CATERPIE == TRUE
-	cry_reverse Cry_Caterpie
-	cry_reverse Cry_Metapod
+.endif @ P_FAMILY_CONOMON
+.if P_FAMILY_DATIRIMON == TRUE
+	cry_reverse Cry_Datirimon
+	cry_reverse Cry_Dodomon
 	cry_reverse Cry_Butterfree
-.endif @ P_FAMILY_CATERPIE
+.endif @ P_FAMILY_DATIRIMON
 .if P_FAMILY_WEEDLE == TRUE
 	cry_reverse Cry_Weedle
 	cry_reverse Cry_Kakuna

@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Roar switches the target with a random non-fainted replaceme
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_ARGOMON_F);
         OPPONENT(SPECIES_BOTAMON);
-        OPPONENT(SPECIES_SQUIRTLE) { HP(0); }
+        OPPONENT(SPECIES_CONOMON) { HP(0); }
     } WHEN {
         TURN { MOVE(player, MOVE_ROAR); }
     } SCENE {
@@ -33,7 +33,7 @@ DOUBLE_BATTLE_TEST("Roar switches the target with a random non-battler, non-fain
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_ARGOMON_F);
         OPPONENT(SPECIES_BOTAMON);
-        OPPONENT(SPECIES_SQUIRTLE) { HP(0); }
+        OPPONENT(SPECIES_CONOMON) { HP(0); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ROAR, target: opponentRight); }
     } SCENE {

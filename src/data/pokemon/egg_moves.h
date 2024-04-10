@@ -42,8 +42,8 @@ const u16 gEggMoves[] = {
         MOVE_AIR_CUTTER),
 #endif //P_FAMILY_BOTAMON
 
-#if P_FAMILY_SQUIRTLE
-    egg_moves(SQUIRTLE,
+#if P_FAMILY_CONOMON
+    egg_moves(CONOMON,
         MOVE_MIRROR_COAT,
         MOVE_HAZE,
         MOVE_MIST,
@@ -60,7 +60,7 @@ const u16 gEggMoves[] = {
         MOVE_BRINE,
         MOVE_DRAGON_PULSE,
         MOVE_AURA_SPHERE),
-#endif //P_FAMILY_SQUIRTLE
+#endif //P_FAMILY_CONOMON
 
 #if P_FAMILY_PIDGEY
     egg_moves(PIDGEY,

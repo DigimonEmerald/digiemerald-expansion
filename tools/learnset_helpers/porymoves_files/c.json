@@ -353,7 +353,7 @@
       "MOVE_FLAMETHROWER"
     ]
   },
-  "CHARMELEON": {
+  "CHIBICKMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -443,7 +443,7 @@
       "MOVE_FLAMETHROWER"
     ]
   },
-  "CHARIZARD": {
+  "CHIBOMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -547,7 +547,7 @@
       "MOVE_FLAMETHROWER"
     ]
   },
-  "SQUIRTLE": {
+  "CONOMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -638,7 +638,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "WARTORTLE": {
+  "COTSUCOMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -737,7 +737,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "BLASTOISE": {
+  "CURIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -843,7 +843,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "CATERPIE": {
+  "DATIRIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -859,7 +859,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "METAPOD": {
+  "DODOMON": {
     "LevelMoves": [
       {
         "Level": 1,
