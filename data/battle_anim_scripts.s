@@ -894,6 +894,7 @@ gBattleAnims_Moves::
 	.4byte Move_CELESTIAL_CROSS
 	.4byte Move_BUBBLE_SPIT
 	.4byte Move_SAINT_HEAL
+	.4byte Move_PETIT_HEAL
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -17924,6 +17925,7 @@ Move_GRAND_CROSS::
 Move_CELESTIAL_CROSS::
 Move_BUBBLE_SPIT::
 Move_SAINT_HEAL::
+Move_PETIT_HEAL::
 	end @to do
 
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@

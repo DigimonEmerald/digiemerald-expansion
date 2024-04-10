@@ -20238,6 +20238,31 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestComboStarterId = 0,
         .contestComboMoves = {0},
     },
+
+    [MOVE_PETIT_HEAL] =
+    {
+        .name = COMPOUND_STRING("Petit Heal"),
+        .description = COMPOUND_STRING(
+            "Heal a target by applying a\n"
+            "quick data-patch."),
+        .effect = EFFECT_HEAL_PULSE,
+        .power = 0,
+        .type = TYPE_DATA,
+        .accuracy = 0,
+        .pp = 20,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_RESET_STATS },
+        .magicCoatAffected = TRUE,
+        .mirrorMoveBanned = TRUE,
+        .healingMove = TRUE,
+        .pulseMove = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_SMART,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0}
+    },
     
 
     // Z-Moves
