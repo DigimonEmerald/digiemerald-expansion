@@ -20089,8 +20089,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Stun Stinger"),
         .description = COMPOUND_STRING(
-            "The user skewers the foe its\n"
-            "quills. Lowers SP. DEF."),
+            "The user skewers the foe with\n"
+            "its quills. Lowers SP. DEF."),
         .effect = EFFECT_HIT,
         .power = 60,
         .type = TYPE_ELECTRIC,
@@ -20104,6 +20104,26 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             .moveEffect = MOVE_EFFECT_SP_DEF_MINUS_1,
             .chance = 40,
         }),
+        .contestEffect = CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0}
+    },
+
+    [MOVE_HOLY_SHOOT] =
+    {
+        .name = COMPOUND_STRING("Holy Shoot"),
+        .description = COMPOUND_STRING(
+            "The user causes an explosion\n"
+            "with a small ball of light"),
+        .effect = EFFECT_HIT,
+        .power = 40,
+        .type = TYPE_LIGHT,
+        .accuracy = 100,
+        .pp = 35,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
         .contestEffect = CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
         .contestComboStarterId = 0,
