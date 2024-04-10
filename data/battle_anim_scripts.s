@@ -886,6 +886,7 @@ gBattleAnims_Moves::
 	.4byte Move_BLUE_BLASTER
 	.4byte Move_GAO_RUSH
 	.4byte Move_DASH_DOUBLE_CLAW
+	.4byte Move_SHOCK_QUILL
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -17908,6 +17909,7 @@ Move_PEPPER_BREATH::
 Move_BLUE_BLASTER::
 Move_GAO_RUSH::
 Move_DASH_DOUBLE_CLAW::
+Move_SHOCK_QUILL::
 	end @to do
 
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@

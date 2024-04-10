@@ -20064,6 +20064,26 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestComboStarterId = 0,
         .contestComboMoves = {0}
     },
+
+    [MOVE_SHOCK_QUILL] =
+    {
+        .name = COMPOUND_STRING("Shock Quill"),
+        .description = COMPOUND_STRING(
+            "The user repeatedly fires\n"
+            "electrified quills 2-5 times."),
+        .effect = EFFECT_MULTI_HIT,
+        .power = 18,
+        .type = TYPE_ELECTRIC,
+        .accuracy = 90,
+        .pp = 20,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .contestEffect = CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0}
+    },
     
 
     // Z-Moves
