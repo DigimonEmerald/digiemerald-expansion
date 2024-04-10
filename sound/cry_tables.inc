@@ -1,13 +1,13 @@
 	.align 2
 gCryTable::
-.if P_FAMILY_BULBASAUR == TRUE
-	cry Cry_Bulbasaur
+.if P_FAMILY_ARGOMON_F == TRUE
+	cry Cry_Argomon_f
 	cry Cry_Ivysaur
 	cry Cry_Venusaur
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_VenusaurMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BULBASAUR
+.endif @ P_FAMILY_ARGOMON_F
 .if P_FAMILY_CHARMANDER == TRUE
 	cry Cry_Charmander
 	cry Cry_Charmeleon
@@ -2426,14 +2426,14 @@ gCryTable::
 
 	.align 2
 gCryTable_Reverse::
-.if P_FAMILY_BULBASAUR == TRUE
-	cry_reverse Cry_Bulbasaur
+.if P_FAMILY_ARGOMON_F == TRUE
+	cry_reverse Cry_Argomon_f
 	cry_reverse Cry_Ivysaur
 	cry_reverse Cry_Venusaur
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_VenusaurMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BULBASAUR
+.endif @ P_FAMILY_ARGOMON_F
 .if P_FAMILY_CHARMANDER == TRUE
 	cry_reverse Cry_Charmander
 	cry_reverse Cry_Charmeleon

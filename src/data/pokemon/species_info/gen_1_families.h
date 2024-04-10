@@ -3,8 +3,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 {
 #endif
 
-#if P_FAMILY_BULBASAUR
-    [SPECIES_BULBASAUR] =
+#if P_FAMILY_ARGOMON_F
+    [SPECIES_ARGOMON_F] =
     {
         .baseHP        = 45,
         .baseAttack    = 49,
@@ -23,14 +23,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_CHLOROPHYLL },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Bulbasaur"),
-        .cryId = CRY_BULBASAUR,
-        .natDexNum = NATIONAL_DEX_BULBASAUR,
+        .speciesName = _("Argomon_f"),
+        .cryId = CRY_ARGOMON_F,
+        .natDexNum = NATIONAL_DEX_ARGOMON_F,
         .categoryName = _("Seed"),
         .height = 7,
         .weight = 69,
         .description = COMPOUND_STRING(
-            "Bulbasaur can be seen napping in bright\n"
+            "Argomon_f can be seen napping in bright\n"
             "sunlight. There is a seed on its back.\n"
             "By soaking up the sun's rays, the seed\n"
             "grows progressively larger."),
@@ -38,22 +38,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Bulbasaur,
+        .frontPic = gMonFrontPic_Argomon_f,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Bulbasaur,
+        .frontAnimFrames = sAnims_Argomon_f,
         .frontAnimId = ANIM_V_JUMPS_H_JUMPS,
-        .backPic = gMonBackPic_Bulbasaur,
+        .backPic = gMonBackPic_Argomon_f,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Bulbasaur,
-        .shinyPalette = gMonShinyPalette_Bulbasaur,
-        .iconSprite = gMonIcon_Bulbasaur,
+        .palette = gMonPalette_Argomon_f,
+        .shinyPalette = gMonShinyPalette_Argomon_f,
+        .iconSprite = gMonIcon_Argomon_f,
         .iconPalIndex = 4,
-        FOOTPRINT(Bulbasaur)
-        .levelUpLearnset = sBulbasaurLevelUpLearnset,
-        .teachableLearnset = sBulbasaurTeachableLearnset,
+        FOOTPRINT(Argomon_f)
+        .levelUpLearnset = sArgomon_fLevelUpLearnset,
+        .teachableLearnset = sArgomon_fTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_IVYSAUR}),
     },
 
@@ -290,7 +290,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sVenusaurFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_BULBASAUR
+#endif //P_FAMILY_ARGOMON_F
 
 #if P_FAMILY_CHARMANDER
     [SPECIES_CHARMANDER] =

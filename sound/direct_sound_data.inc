@@ -386,10 +386,10 @@ DirectSoundWaveData_unknown_16::
 DirectSoundWaveData_unknown_17::
 	.incbin "sound/direct_sound_samples/unknown_17.bin"
 
-.if P_FAMILY_BULBASAUR == TRUE
+.if P_FAMILY_ARGOMON_F == TRUE
 	.align 2
-Cry_Bulbasaur::
-	.incbin "sound/direct_sound_samples/cries/bulbasaur.bin"
+Cry_Argomon_f::
+	.incbin "sound/direct_sound_samples/cries/argomon_f.bin"
 
 	.align 2
 Cry_Ivysaur::
@@ -404,7 +404,7 @@ Cry_Venusaur::
 Cry_VenusaurMega::
 	.incbin "sound/direct_sound_samples/cries/venusaur_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BULBASAUR
+.endif @ P_FAMILY_ARGOMON_F
 
 .if P_FAMILY_CHARMANDER == TRUE
 	.align 2

@@ -22,8 +22,8 @@ static const union AnimCmd sAnim_None_1[] =
     ANIMCMD_END,
 };
 
-#if P_FAMILY_BULBASAUR
-static const union AnimCmd sAnim_Bulbasaur_1[] =
+#if P_FAMILY_ARGOMON_F
+static const union AnimCmd sAnim_Argomon_f_1[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_FRAME(1, 30),
@@ -54,7 +54,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(VenusaurMega);
 #if P_GIGANTAMAX_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(VenusaurGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_BULBASAUR
+#endif //P_FAMILY_ARGOMON_F
 
 #if P_FAMILY_CHARMANDER
 static const union AnimCmd sAnim_Charmander_1[] =
@@ -10153,8 +10153,8 @@ static const union AnimCmd *const sAnims_##name[] = \
 
 
 SINGLE_ANIMATION(None);
-#if P_FAMILY_BULBASAUR
-SINGLE_ANIMATION(Bulbasaur);
+#if P_FAMILY_ARGOMON_F
+SINGLE_ANIMATION(Argomon_f);
 SINGLE_ANIMATION(Ivysaur);
 SINGLE_ANIMATION(Venusaur);
 #if P_MEGA_EVOLUTIONS
@@ -10163,7 +10163,7 @@ SINGLE_ANIMATION(VenusaurMega);
 #if P_GIGANTAMAX_FORMS
 SINGLE_ANIMATION(VenusaurGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_BULBASAUR
+#endif //P_FAMILY_ARGOMON_F
 #if P_FAMILY_CHARMANDER
 SINGLE_ANIMATION(Charmander);
 SINGLE_ANIMATION(Charmeleon);

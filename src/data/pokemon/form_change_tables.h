@@ -1,10 +1,10 @@
-#if P_FAMILY_BULBASAUR
+#if P_FAMILY_ARGOMON_F
 static const struct FormChange sVenusaurFormChangeTable[] = {
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_VENUSAUR_MEGA, ITEM_VENUSAURITE},
     {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_VENUSAUR_GIGANTAMAX},
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_BULBASAUR
+#endif //P_FAMILY_ARGOMON_F
 
 #if P_FAMILY_CHARMANDER
 static const struct FormChange sCharizardFormChangeTable[] = {

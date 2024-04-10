@@ -112,8 +112,8 @@ static const u16 sNoneTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-#if P_FAMILY_BULBASAUR
-static const u16 sBulbasaurTeachableLearnset[] = {
+#if P_FAMILY_ARGOMON_F
+static const u16 sArgomon_fTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,
@@ -212,7 +212,7 @@ static const u16 sVenusaurTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BULBASAUR
+#endif //P_FAMILY_ARGOMON_F
 
 #if P_FAMILY_CHARMANDER
 static const u16 sCharmanderTeachableLearnset[] = {

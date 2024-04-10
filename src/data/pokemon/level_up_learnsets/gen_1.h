@@ -6,8 +6,8 @@ static const struct LevelUpMove sNoneLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-#if P_FAMILY_BULBASAUR
-static const struct LevelUpMove sBulbasaurLevelUpLearnset[] = {
+#if P_FAMILY_ARGOMON_F
+static const struct LevelUpMove sArgomon_fLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 7, MOVE_LEECH_SEED),
@@ -48,7 +48,7 @@ static const struct LevelUpMove sVenusaurLevelUpLearnset[] = {
     LEVEL_UP_MOVE(65, MOVE_SOLAR_BEAM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_BULBASAUR
+#endif //P_FAMILY_ARGOMON_F
 
 #if P_FAMILY_CHARMANDER
 static const struct LevelUpMove sCharmanderLevelUpLearnset[] = {
