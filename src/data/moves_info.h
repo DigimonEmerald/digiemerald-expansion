@@ -20149,6 +20149,26 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestComboStarterId = 0,
         .contestComboMoves = {0}
     },
+
+    [MOVE_GRAND_CROSS] =
+    {
+        .name = COMPOUND_STRING("Grand Cross"),
+        .description = COMPOUND_STRING(
+            "The user administers order\n"
+            "with a holy blade"),
+        .effect = EFFECT_HIT,
+        .power = 80,
+        .type = TYPE_LIGHT,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .contestEffect = CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0}
+    },
     
 
     // Z-Moves
