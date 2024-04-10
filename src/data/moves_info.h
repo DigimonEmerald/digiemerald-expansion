@@ -20169,6 +20169,30 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestComboStarterId = 0,
         .contestComboMoves = {0}
     },
+
+    [MOVE_CELESTIAL_CROSS] =
+    {
+        .name = HANDLE_EXPANDED_MOVE_NAME("Celstl Cross", "Celestial Cross"),
+        .description = COMPOUND_STRING(
+            "The user passes judgement with\n"
+            "with a holy sword. Converts for"),
+        .effect = EFFECT_HIT,
+        .power = 100,
+        .type = TYPE_LIGHT,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_CONVERTED,
+            .chance = 30,
+        }),
+        .contestEffect = CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0}
+    },
     
 
     // Z-Moves

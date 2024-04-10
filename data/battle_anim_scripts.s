@@ -891,6 +891,7 @@ gBattleAnims_Moves::
 	.4byte Move_HOLY_SHOOT
 	.4byte Move_CORONA_FLAME
 	.4byte Move_GRAND_CROSS
+	.4byte Move_CELESTIAL_CROSS
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -17918,6 +17919,7 @@ Move_STUN_STINGER::
 Move_HOLY_SHOOT::
 Move_CORONA_FLAME::
 Move_GRAND_CROSS::
+Move_CELESTIAL_CROSS::
 	end @to do
 
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
