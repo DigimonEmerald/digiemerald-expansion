@@ -273,7 +273,7 @@ DOUBLE_BATTLE_TEST("Pledge moves get same attack type bonus from partner", s16 d
     u32 species;
 
     PARAMETRIZE { species = SPECIES_WOBBUFFET; }
-    PARAMETRIZE { species = SPECIES_CHARMANDER; }
+    PARAMETRIZE { species = SPECIES_BOTAMON; }
 
     GIVEN {
         PLAYER(species) { Speed(4); }

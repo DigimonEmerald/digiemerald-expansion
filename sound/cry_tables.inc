@@ -8,15 +8,15 @@ gCryTable::
 	cry Cry_BommonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_ARGOMON_F
-.if P_FAMILY_CHARMANDER == TRUE
-	cry Cry_Charmander
+.if P_FAMILY_BOTAMON == TRUE
+	cry Cry_Botamon
 	cry Cry_Charmeleon
 	cry Cry_Charizard
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_CharizardMegaX
 	cry Cry_CharizardMegaY
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_CHARMANDER
+.endif @ P_FAMILY_BOTAMON
 .if P_FAMILY_SQUIRTLE == TRUE
 	cry Cry_Squirtle
 	cry Cry_Wartortle
@@ -2434,15 +2434,15 @@ gCryTable_Reverse::
 	cry_reverse Cry_BommonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_ARGOMON_F
-.if P_FAMILY_CHARMANDER == TRUE
-	cry_reverse Cry_Charmander
+.if P_FAMILY_BOTAMON == TRUE
+	cry_reverse Cry_Botamon
 	cry_reverse Cry_Charmeleon
 	cry_reverse Cry_Charizard
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_CharizardMegaX
 	cry_reverse Cry_CharizardMegaY
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_CHARMANDER
+.endif @ P_FAMILY_BOTAMON
 .if P_FAMILY_SQUIRTLE == TRUE
 	cry_reverse Cry_Squirtle
 	cry_reverse Cry_Wartortle

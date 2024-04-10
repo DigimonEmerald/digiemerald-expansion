@@ -7,7 +7,7 @@ static const u16 sBommonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_ARGOMON_F
 
-#if P_FAMILY_CHARMANDER
+#if P_FAMILY_BOTAMON
 static const u16 sCharizardFormSpeciesIdTable[] = {
     SPECIES_CHARIZARD,
     SPECIES_CHARIZARD_MEGA_X,
@@ -15,7 +15,7 @@ static const u16 sCharizardFormSpeciesIdTable[] = {
     SPECIES_CHARIZARD_GIGANTAMAX,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_CHARMANDER
+#endif //P_FAMILY_BOTAMON
 
 #if P_FAMILY_SQUIRTLE
 static const u16 sBlastoiseFormSpeciesIdTable[] = {

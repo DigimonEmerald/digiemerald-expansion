@@ -406,10 +406,10 @@ Cry_BommonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_ARGOMON_F
 
-.if P_FAMILY_CHARMANDER == TRUE
+.if P_FAMILY_BOTAMON == TRUE
 	.align 2
-Cry_Charmander::
-	.incbin "sound/direct_sound_samples/cries/charmander.bin"
+Cry_Botamon::
+	.incbin "sound/direct_sound_samples/cries/botamon.bin"
 
 	.align 2
 Cry_Charmeleon::
@@ -428,7 +428,7 @@ Cry_CharizardMegaX::
 Cry_CharizardMegaY::
 	.incbin "sound/direct_sound_samples/cries/charizard_mega_y.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_CHARMANDER
+.endif @ P_FAMILY_BOTAMON
 
 .if P_FAMILY_SQUIRTLE == TRUE
 	.align 2

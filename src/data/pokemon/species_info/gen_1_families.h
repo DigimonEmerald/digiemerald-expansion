@@ -292,8 +292,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_ARGOMON_F
 
-#if P_FAMILY_CHARMANDER
-    [SPECIES_CHARMANDER] =
+#if P_FAMILY_BOTAMON
+    [SPECIES_BOTAMON] =
     {
         .baseHP        = 39,
         .baseAttack    = 52,
@@ -312,37 +312,37 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_SOLAR_POWER },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Charmander"),
-        .cryId = CRY_CHARMANDER,
-        .natDexNum = NATIONAL_DEX_CHARMANDER,
+        .speciesName = _("Botamon"),
+        .cryId = CRY_BOTAMON,
+        .natDexNum = NATIONAL_DEX_BOTAMON,
         .categoryName = _("Lizard"),
         .height = 6,
         .weight = 85,
         .description = COMPOUND_STRING(
             "The flame that burns at the tip of its\n"
             "tail is an indication of its emotions.\n"
-            "The flame wavers when Charmander is\n"
+            "The flame wavers when Botamon is\n"
             "happy, and blazes when it is enraged."),
         .pokemonScale = 444,
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Charmander,
+        .frontPic = gMonFrontPic_Botamon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Charmander,
+        .frontAnimFrames = sAnims_Botamon,
         .frontAnimId = ANIM_V_JUMPS_SMALL,
-        .backPic = gMonBackPic_Charmander,
+        .backPic = gMonBackPic_Botamon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Charmander,
-        .shinyPalette = gMonShinyPalette_Charmander,
-        .iconSprite = gMonIcon_Charmander,
+        .palette = gMonPalette_Botamon,
+        .shinyPalette = gMonShinyPalette_Botamon,
+        .iconSprite = gMonIcon_Botamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Charmander)
-        .levelUpLearnset = sCharmanderLevelUpLearnset,
-        .teachableLearnset = sCharmanderTeachableLearnset,
+        FOOTPRINT(Botamon)
+        .levelUpLearnset = sBotamonLevelUpLearnset,
+        .teachableLearnset = sBotamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_CHARMELEON}),
     },
 
@@ -627,7 +627,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sCharizardFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_CHARMANDER
+#endif //P_FAMILY_BOTAMON
 
 #if P_FAMILY_SQUIRTLE
     [SPECIES_SQUIRTLE] =

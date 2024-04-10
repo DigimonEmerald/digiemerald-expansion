@@ -6,14 +6,14 @@ static const struct FormChange sBommonFormChangeTable[] = {
 };
 #endif //P_FAMILY_ARGOMON_F
 
-#if P_FAMILY_CHARMANDER
+#if P_FAMILY_BOTAMON
 static const struct FormChange sCharizardFormChangeTable[] = {
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_CHARIZARD_MEGA_X, ITEM_CHARIZARDITE_X},
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_CHARIZARD_MEGA_Y, ITEM_CHARIZARDITE_Y},
     {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_CHARIZARD_GIGANTAMAX},
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_CHARMANDER
+#endif //P_FAMILY_BOTAMON
 
 #if P_FAMILY_SQUIRTLE
 static const struct FormChange sBlastoiseFormChangeTable[] = {

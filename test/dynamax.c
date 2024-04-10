@@ -1200,7 +1200,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Wildfire sets a field effect that damages no
     GIVEN {
         ASSUME(gMovesInfo[MOVE_G_MAX_WILDFIRE].argument == MAX_EFFECT_WILDFIRE);
         PLAYER(SPECIES_CHARIZARD) { GigantamaxFactor(TRUE); }
-        PLAYER(SPECIES_CHARMANDER);
+        PLAYER(SPECIES_BOTAMON);
         OPPONENT(SPECIES_WOBBUFFET) { HP(600); MaxHP(600); }
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_ARCANINE);

@@ -50,8 +50,8 @@ static const struct LevelUpMove sBommonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_ARGOMON_F
 
-#if P_FAMILY_CHARMANDER
-static const struct LevelUpMove sCharmanderLevelUpLearnset[] = {
+#if P_FAMILY_BOTAMON
+static const struct LevelUpMove sBotamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 9, MOVE_EMBER),
@@ -89,7 +89,7 @@ static const struct LevelUpMove sCharizardLevelUpLearnset[] = {
     LEVEL_UP_MOVE(55, MOVE_FIRE_SPIN),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CHARMANDER
+#endif //P_FAMILY_BOTAMON
 
 #if P_FAMILY_SQUIRTLE
 static const struct LevelUpMove sSquirtleLevelUpLearnset[] = {

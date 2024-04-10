@@ -56,8 +56,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(BommonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_ARGOMON_F
 
-#if P_FAMILY_CHARMANDER
-static const union AnimCmd sAnim_Charmander_1[] =
+#if P_FAMILY_BOTAMON
+static const union AnimCmd sAnim_Botamon_1[] =
 {
     ANIMCMD_FRAME(0, 2),
     ANIMCMD_FRAME(1, 46),
@@ -91,7 +91,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(CharizardMegaY);
 #if P_GIGANTAMAX_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(CharizardGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_CHARMANDER
+#endif //P_FAMILY_BOTAMON
 
 #if P_FAMILY_SQUIRTLE
 static const union AnimCmd sAnim_Squirtle_1[] =
@@ -10164,8 +10164,8 @@ SINGLE_ANIMATION(BommonMega);
 SINGLE_ANIMATION(BommonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_ARGOMON_F
-#if P_FAMILY_CHARMANDER
-SINGLE_ANIMATION(Charmander);
+#if P_FAMILY_BOTAMON
+SINGLE_ANIMATION(Botamon);
 SINGLE_ANIMATION(Charmeleon);
 SINGLE_ANIMATION(Charizard);
 #if P_MEGA_EVOLUTIONS
@@ -10175,7 +10175,7 @@ SINGLE_ANIMATION(CharizardMegaY);
 #if P_GIGANTAMAX_FORMS
 SINGLE_ANIMATION(CharizardGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_CHARMANDER
+#endif //P_FAMILY_BOTAMON
 #if P_FAMILY_SQUIRTLE
 SINGLE_ANIMATION(Squirtle);
 SINGLE_ANIMATION(Wartortle);

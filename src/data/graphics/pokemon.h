@@ -55,14 +55,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_ARGOMON_F
 
-#if P_FAMILY_CHARMANDER
-    const u32 gMonFrontPic_Charmander[] = INCBIN_U32("graphics/pokemon/charmander/anim_front.4bpp.lz");
-    const u32 gMonPalette_Charmander[] = INCBIN_U32("graphics/pokemon/charmander/normal.gbapal.lz");
-    const u32 gMonBackPic_Charmander[] = INCBIN_U32("graphics/pokemon/charmander/back.4bpp.lz");
-    const u32 gMonShinyPalette_Charmander[] = INCBIN_U32("graphics/pokemon/charmander/shiny.gbapal.lz");
-    const u8 gMonIcon_Charmander[] = INCBIN_U8("graphics/pokemon/charmander/icon.4bpp");
+#if P_FAMILY_BOTAMON
+    const u32 gMonFrontPic_Botamon[] = INCBIN_U32("graphics/pokemon/botamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Botamon[] = INCBIN_U32("graphics/pokemon/botamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Botamon[] = INCBIN_U32("graphics/pokemon/botamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Botamon[] = INCBIN_U32("graphics/pokemon/botamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Botamon[] = INCBIN_U8("graphics/pokemon/botamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Charmander[] = INCBIN_U8("graphics/pokemon/charmander/footprint.1bpp");
+    const u8 gMonFootprint_Botamon[] = INCBIN_U8("graphics/pokemon/botamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Charmeleon[] = INCBIN_U32("graphics/pokemon/charmeleon/anim_front.4bpp.lz");
@@ -104,7 +104,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_CharizardGigantamax[] = INCBIN_U32("graphics/pokemon/charizard/gigantamax/shiny.gbapal.lz");
     const u8 gMonIcon_CharizardGigantamax[] = INCBIN_U8("graphics/pokemon/charizard/gigantamax/icon.4bpp");
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_CHARMANDER
+#endif //P_FAMILY_BOTAMON
 
 #if P_FAMILY_SQUIRTLE
     const u32 gMonFrontPic_Squirtle[] = INCBIN_U32("graphics/pokemon/squirtle/anim_front.4bpp.lz");

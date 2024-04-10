@@ -54,7 +54,7 @@
 
 // To disable specific families, replace P_GEN_x_POKEMON with FALSE.
 #define P_FAMILY_ARGOMON_F               P_GEN_1_POKEMON
-#define P_FAMILY_CHARMANDER              P_GEN_1_POKEMON
+#define P_FAMILY_BOTAMON              P_GEN_1_POKEMON
 #define P_FAMILY_SQUIRTLE                P_GEN_1_POKEMON
 #define P_FAMILY_CATERPIE                P_GEN_1_POKEMON
 #define P_FAMILY_WEEDLE                  P_GEN_1_POKEMON

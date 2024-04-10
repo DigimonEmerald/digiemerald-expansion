@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Dragon Tail switches the target with a random non-fainted re
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_ARGOMON_F);
-        OPPONENT(SPECIES_CHARMANDER);
+        OPPONENT(SPECIES_BOTAMON);
         OPPONENT(SPECIES_SQUIRTLE) { HP(0); }
     } WHEN {
         TURN { MOVE(player, MOVE_DRAGON_TAIL); }
@@ -33,7 +33,7 @@ DOUBLE_BATTLE_TEST("Dragon Tail switches the target with a random non-battler, n
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_ARGOMON_F);
-        OPPONENT(SPECIES_CHARMANDER);
+        OPPONENT(SPECIES_BOTAMON);
         OPPONENT(SPECIES_SQUIRTLE) { HP(0); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_DRAGON_TAIL, target: opponentRight); }
