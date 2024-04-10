@@ -20084,6 +20084,31 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestComboStarterId = 0,
         .contestComboMoves = {0}
     },
+
+    [MOVE_STUN_STINGER] =
+    {
+        .name = COMPOUND_STRING("Stun Stinger"),
+        .description = COMPOUND_STRING(
+            "The user skewers the foe its\n"
+            "quills. Lowers SP. DEF."),
+        .effect = EFFECT_HIT,
+        .power = 60,
+        .type = TYPE_ELECTRIC,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_SP_DEF_MINUS_1,
+            .chance = 40,
+        }),
+        .contestEffect = CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0}
+    },
     
 
     // Z-Moves
