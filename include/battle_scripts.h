@@ -827,6 +827,5 @@ extern const u8 BattleScript_EffectUpperHand[];
 extern const u8 BattleScript_EffectTidyUp[];
 extern const u8 BattleScript_EffectBlessing[];
 extern const u8 BattleScript_MoveEffectConverted[];
-extern const u8 BattleScript_ConvertedTurnDmg[];
 
 #endif // GUARD_BATTLE_SCRIPTS_H

@@ -3069,6 +3069,25 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                 gMoveResultFlags |= MOVE_RESULT_DOESNT_AFFECT_FOE;
             }
             break;
+        case STATUS1_CONVERTED:
+            if (IS_BATTLER_OF_TYPE(gEffectBattler, TYPE_DARK))
+            {
+                BattleScriptPush(gBattlescriptCurrInstr + 1);
+                gBattlescriptCurrInstr = BattleScript_BRNPrevention;
+
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STATUS_HAD_NO_EFFECT;
+                RESET_RETURN
+            }
+            if (IS_BATTLER_OF_TYPE(gEffectBattler, TYPE_LIGHT))
+            {
+                BattleScriptPush(gBattlescriptCurrInstr + 1);
+                gBattlescriptCurrInstr = BattleScript_BRNPrevention;
+
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STATUS_HAD_NO_EFFECT;
+                RESET_RETURN
+            }
+            statusChanged = TRUE;
+            break;
         case STATUS1_FROSTBITE:
             if (B_STATUS_TYPE_IMMUNITY == GEN_1)
             {
@@ -3508,25 +3527,6 @@ void SetMoveEffect(bool32 primary, bool32 certain)
                     gLockedMoves[gEffectBattler] = gCurrentMove;
                     gBattleMons[gEffectBattler].status2 |= STATUS2_LOCK_CONFUSE_TURN(RandomUniform(RNG_RAMPAGE_TURNS, 2, 3));
                 }
-                break;
-            case STATUS1_CONVERTED:
-                if (IS_BATTLER_OF_TYPE(gEffectBattler, TYPE_DARK))
-                {
-                    BattleScriptPush(gBattlescriptCurrInstr + 1);
-                    gBattlescriptCurrInstr = BattleScript_BRNPrevention;
-
-                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STATUS_HAD_NO_EFFECT;
-                    RESET_RETURN
-                }
-                if (IS_BATTLER_OF_TYPE(gEffectBattler, TYPE_LIGHT))
-                {
-                    BattleScriptPush(gBattlescriptCurrInstr + 1);
-                    gBattlescriptCurrInstr = BattleScript_BRNPrevention;
-
-                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STATUS_HAD_NO_EFFECT;
-                    RESET_RETURN
-                }
-                statusChanged = TRUE;
                 break;
             case MOVE_EFFECT_SP_ATK_TWO_DOWN: // Overheat
                 if (!NoAliveMonsForEitherParty())

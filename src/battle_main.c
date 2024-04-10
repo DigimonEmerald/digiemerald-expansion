@@ -5098,6 +5098,7 @@ u32 GetBattlerTotalSpeedStatArgs(u32 battler, u32 ability, u32 holdEffect)
 
     if (gBattleMons[battler].status1 & STATUS1_CONVERTED && ability != ABILITY_QUICK_FEET)
         speed /= 2;
+        
     if (gSideStatuses[GetBattlerSide(battler)] & SIDE_STATUS_SWAMP)
         speed /= 4;
 

@@ -9966,12 +9966,9 @@ BattleScript_EffectBlessing::
 	attackanimation
 	waitanimation
 	seteffectprimary MOVE_EFFECT_CONVERTED
+	resultmessage
+	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
-
-BattleScript_ConvertedTurnDmg::
-    printstring STRINGID_PKMNHURTBYBURN
-    waitmessage B_WAIT_TIME_LONG
-    goto BattleScript_DoStatusTurnDmg
 
 BattleScript_MoveEffectConverted::
 	statusanimation BS_EFFECT_BATTLER
