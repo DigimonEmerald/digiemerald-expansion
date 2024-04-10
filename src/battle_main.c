@@ -590,6 +590,102 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
         //.teraShard = ITEM_FAIRY_TERA_SHARD,
         //.arceusForm = SPECIES_ARCEUS_FAIRY,
     },
+    [TYPE_LIGHT] =
+    {
+        .name = _("Light"),
+        .generic = _("a LIGHT move"),
+        .palette = 13,
+        .zMove = MOVE_TWINKLE_TACKLE,
+        .maxMove = MOVE_MAX_STARFALL,
+        //.enhanceItem = ITEM_FAIRY_FEATHER,
+        //.berry = ITEM_ROSELI_BERRY,
+        //.gem = ITEM_FAIRY_GEM,
+        //.zCrystal = ITEM_FAIRIUM_Z,
+        //.plate = ITEM_PIXIE_PLATE,
+        //.memory = ITEM_FAIRY_MEMORY,
+        //.teraShard = ITEM_FAIRY_TERA_SHARD,
+        //.arceusForm = SPECIES_ARCEUS_FAIRY,
+    },
+    [TYPE_VACCINE] =
+    {
+        .name = _("Vax"),
+        .generic = _("a VACCINE move"),
+        .palette = 14,
+        .zMove = MOVE_TWINKLE_TACKLE,
+        .maxMove = MOVE_MAX_STARFALL,
+        //.enhanceItem = ITEM_FAIRY_FEATHER,
+        //.berry = ITEM_ROSELI_BERRY,
+        //.gem = ITEM_FAIRY_GEM,
+        //.zCrystal = ITEM_FAIRIUM_Z,
+        //.plate = ITEM_PIXIE_PLATE,
+        //.memory = ITEM_FAIRY_MEMORY,
+        //.teraShard = ITEM_FAIRY_TERA_SHARD,
+        //.arceusForm = SPECIES_ARCEUS_FAIRY,
+    },
+    [TYPE_VIRUS] =
+    {
+        .name = _("virus"),
+        .generic = _("a VIRUS move"),
+        .palette = 14,
+        .zMove = MOVE_TWINKLE_TACKLE,
+        .maxMove = MOVE_MAX_STARFALL,
+        //.enhanceItem = ITEM_FAIRY_FEATHER,
+        //.berry = ITEM_ROSELI_BERRY,
+        //.gem = ITEM_FAIRY_GEM,
+        //.zCrystal = ITEM_FAIRIUM_Z,
+        //.plate = ITEM_PIXIE_PLATE,
+        //.memory = ITEM_FAIRY_MEMORY,
+        //.teraShard = ITEM_FAIRY_TERA_SHARD,
+        //.arceusForm = SPECIES_ARCEUS_FAIRY,
+    },
+    [TYPE_DATA] =
+    {
+        .name = _("Data"),
+        .generic = _("a DATA move"),
+        .palette = 14,
+        .zMove = MOVE_TWINKLE_TACKLE,
+        .maxMove = MOVE_MAX_STARFALL,
+        //.enhanceItem = ITEM_FAIRY_FEATHER,
+        //.berry = ITEM_ROSELI_BERRY,
+        //.gem = ITEM_FAIRY_GEM,
+        //.zCrystal = ITEM_FAIRIUM_Z,
+        //.plate = ITEM_PIXIE_PLATE,
+        //.memory = ITEM_FAIRY_MEMORY,
+        //.teraShard = ITEM_FAIRY_TERA_SHARD,
+        //.arceusForm = SPECIES_ARCEUS_FAIRY,
+    },
+    [TYPE_FREE] =
+    {
+        .name = _("Free"),
+        .generic = _("a FREE move"),
+        .palette = 14,
+        .zMove = MOVE_TWINKLE_TACKLE,
+        .maxMove = MOVE_MAX_STARFALL,
+        //.enhanceItem = ITEM_FAIRY_FEATHER,
+        //.berry = ITEM_ROSELI_BERRY,
+        //.gem = ITEM_FAIRY_GEM,
+        //.zCrystal = ITEM_FAIRIUM_Z,
+        //.plate = ITEM_PIXIE_PLATE,
+        //.memory = ITEM_FAIRY_MEMORY,
+        //.teraShard = ITEM_FAIRY_TERA_SHARD,
+        //.arceusForm = SPECIES_ARCEUS_FAIRY,
+    },
+    [TYPE_UKNOWN] =
+    {
+        .name = _("Uknown"),
+        .generic = _("an Unknown move"),
+        .palette = 14,
+        .zMove = MOVE_TWINKLE_TACKLE,
+        .maxMove = MOVE_MAX_STARFALL,
+        //.enhanceItem = ITEM_FAIRY_FEATHER,
+        //.berry = ITEM_ROSELI_BERRY,
+        //.gem = ITEM_FAIRY_GEM,
+        //.zCrystal = ITEM_FAIRIUM_Z,
+        //.plate = ITEM_PIXIE_PLATE,
+        //.memory = ITEM_FAIRY_MEMORY,
+        //.teraShard = ITEM_FAIRY_TERA_SHARD,
+        //.arceusForm = SPECIES_ARCEUS_FAIRY,
+    },
     /*
     [TYPE_STELLAR] =
     {
@@ -3627,6 +3723,7 @@ const u8* FaintClearSetData(u32 battler)
     gBattleMons[battler].type1 = gSpeciesInfo[gBattleMons[battler].species].types[0];
     gBattleMons[battler].type2 = gSpeciesInfo[gBattleMons[battler].species].types[1];
     gBattleMons[battler].type3 = TYPE_MYSTERY;
+    gBattleMons[battler].attribute = gSpeciesInfo[gBattleMons[battler].species].attribute;
 
     Ai_UpdateFaintData(battler);
     TryBattleFormChange(battler, FORM_CHANGE_FAINT);
@@ -3729,6 +3826,7 @@ static void DoBattleIntro(void)
                 memcpy(&gBattleMons[battler], &gBattleResources->bufferB[battler][4], sizeof(struct BattlePokemon));
                 gBattleMons[battler].type1 = gSpeciesInfo[gBattleMons[battler].species].types[0];
                 gBattleMons[battler].type2 = gSpeciesInfo[gBattleMons[battler].species].types[1];
+                gBattleMons[battler].attribute = gSpeciesInfo[gBattleMons[battler].species].attribute;
                 gBattleMons[battler].type3 = TYPE_MYSTERY;
                 gBattleMons[battler].ability = GetAbilityBySpecies(gBattleMons[battler].species, gBattleMons[battler].abilityNum);
                 gBattleStruct->hpOnSwitchout[GetBattlerSide(battler)] = gBattleMons[battler].hp;
