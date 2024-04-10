@@ -1019,20 +1019,20 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sDodomonLevelUpLearnset,
         .teachableLearnset = sDodomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_BUTTERFREE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_DOKIMON}),
     },
 
 #if P_UPDATED_EXP_YIELDS >= GEN_8
-    #define BUTTERFREE_EXP_YIELD 198
+    #define DOKIMON_EXP_YIELD 198
 #elif P_UPDATED_EXP_YIELDS >= GEN_7
-    #define BUTTERFREE_EXP_YIELD 178
+    #define DOKIMON_EXP_YIELD 178
 #elif P_UPDATED_EXP_YIELDS >= GEN_5
-    #define BUTTERFREE_EXP_YIELD 173
+    #define DOKIMON_EXP_YIELD 173
 #else
-    #define BUTTERFREE_EXP_YIELD 160
+    #define DOKIMON_EXP_YIELD 160
 #endif
 
-    [SPECIES_BUTTERFREE] =
+    [SPECIES_DOKIMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 45,
@@ -1042,7 +1042,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
         .catchRate = 45,
-        .expYield = BUTTERFREE_EXP_YIELD,
+        .expYield = DOKIMON_EXP_YIELD,
         .evYield_SpAttack = 2,
         .evYield_SpDefense = 1,
         .itemRare = ITEM_SILVER_POWDER,
@@ -1053,9 +1053,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_COMPOUND_EYES, ABILITY_NONE, ABILITY_TINTED_LENS },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Butterfree"),
-        .cryId = CRY_BUTTERFREE,
-        .natDexNum = NATIONAL_DEX_BUTTERFREE,
+        .speciesName = _("Dokimon"),
+        .cryId = CRY_DOKIMON,
+        .natDexNum = NATIONAL_DEX_DOKIMON,
         .categoryName = _("Butterfly"),
         .height = 11,
         .weight = 320,
@@ -1068,33 +1068,33 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 2,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Butterfree,
-        .frontPicFemale = gMonFrontPic_ButterfreeF,
+        .frontPic = gMonFrontPic_Dokimon,
+        .frontPicFemale = gMonFrontPic_DokimonF,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Butterfree,
+        .frontAnimFrames = sAnims_Dokimon,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 12,
-        .backPic = gMonBackPic_Butterfree,
-        .backPicFemale = gMonBackPic_ButterfreeF,
+        .backPic = gMonBackPic_Dokimon,
+        .backPicFemale = gMonBackPic_DokimonF,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Butterfree,
-        .shinyPalette = gMonShinyPalette_Butterfree,
-        .iconSprite = gMonIcon_Butterfree,
+        .palette = gMonPalette_Dokimon,
+        .shinyPalette = gMonShinyPalette_Dokimon,
+        .iconSprite = gMonIcon_Dokimon,
         .iconPalIndex = 0,
-        FOOTPRINT(Butterfree)
-        .levelUpLearnset = sButterfreeLevelUpLearnset,
-        .teachableLearnset = sButterfreeTeachableLearnset,
-        .formSpeciesIdTable = sButterfreeFormSpeciesIdTable,
-        .formChangeTable = sButterfreeFormChangeTable,
+        FOOTPRINT(Dokimon)
+        .levelUpLearnset = sDokimonLevelUpLearnset,
+        .teachableLearnset = sDokimonTeachableLearnset,
+        .formSpeciesIdTable = sDokimonFormSpeciesIdTable,
+        .formChangeTable = sDokimonFormChangeTable,
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_BUTTERFREE_GIGANTAMAX] =
+    [SPECIES_DOKIMON_GIGANTAMAX] =
     {
         .baseHP        = 60,
         .baseAttack    = 45,
@@ -1104,7 +1104,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
         .catchRate = 45,
-        .expYield = BUTTERFREE_EXP_YIELD,
+        .expYield = DOKIMON_EXP_YIELD,
         .evYield_SpAttack = 2,
         .evYield_SpDefense = 1,
         .itemRare = ITEM_SILVER_POWDER,
@@ -1115,9 +1115,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_COMPOUND_EYES, ABILITY_NONE, ABILITY_TINTED_LENS },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Butterfree"),
-        .cryId = CRY_BUTTERFREE,
-        .natDexNum = NATIONAL_DEX_BUTTERFREE,
+        .speciesName = _("Dokimon"),
+        .cryId = CRY_DOKIMON,
+        .natDexNum = NATIONAL_DEX_DOKIMON,
         .categoryName = _("Butterfly"),
         .height = 170,
         .weight = 0,
@@ -1130,32 +1130,32 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 2,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_ButterfreeGigantamax,
+        .frontPic = gMonFrontPic_DokimonGigantamax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_ButterfreeGigantamax,
+        .frontAnimFrames = sAnims_DokimonGigantamax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 7,
-        .backPic = gMonBackPic_ButterfreeGigantamax,
+        .backPic = gMonBackPic_DokimonGigantamax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_ButterfreeGigantamax,
-        .shinyPalette = gMonShinyPalette_ButterfreeGigantamax,
-        .iconSprite = gMonIcon_ButterfreeGigantamax,
+        .palette = gMonPalette_DokimonGigantamax,
+        .shinyPalette = gMonShinyPalette_DokimonGigantamax,
+        .iconSprite = gMonIcon_DokimonGigantamax,
         .iconPalIndex = 0,
-        FOOTPRINT(Butterfree)
+        FOOTPRINT(Dokimon)
         .isGigantamax = TRUE,
-        .levelUpLearnset = sButterfreeLevelUpLearnset,
-        .teachableLearnset = sButterfreeTeachableLearnset,
-        .formSpeciesIdTable = sButterfreeFormSpeciesIdTable,
-        .formChangeTable = sButterfreeFormChangeTable,
+        .levelUpLearnset = sDokimonLevelUpLearnset,
+        .teachableLearnset = sDokimonTeachableLearnset,
+        .formSpeciesIdTable = sDokimonFormSpeciesIdTable,
+        .formChangeTable = sDokimonFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_DATIRIMON
 
-#if P_FAMILY_WEEDLE
-    [SPECIES_WEEDLE] =
+#if P_FAMILY_FUFUMON
+    [SPECIES_FUFUMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 35,
@@ -1174,14 +1174,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SHIELD_DUST, ABILITY_NONE, ABILITY_RUN_AWAY },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Weedle"),
-        .cryId = CRY_WEEDLE,
-        .natDexNum = NATIONAL_DEX_WEEDLE,
+        .speciesName = _("Fufumon"),
+        .cryId = CRY_FUFUMON,
+        .natDexNum = NATIONAL_DEX_FUFUMON,
         .categoryName = _("Hairy Bug"),
         .height = 3,
         .weight = 32,
         .description = COMPOUND_STRING(
-            "A Weedle has an extremely acute sense\n"
+            "A Fufumon has an extremely acute sense\n"
             "of smell. It distinguishes its favorite\n"
             "kinds of leaves from those it dislikes by\n"
             "sniffing with its big red nose."),
@@ -1189,28 +1189,28 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 22,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Weedle,
+        .frontPic = gMonFrontPic_Fufumon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Weedle,
+        .frontAnimFrames = sAnims_Fufumon,
         .frontAnimId = ANIM_H_SLIDE_SLOW,
         .frontAnimDelay = 10,
-        .backPic = gMonBackPic_Weedle,
+        .backPic = gMonBackPic_Fufumon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Weedle,
-        .shinyPalette = gMonShinyPalette_Weedle,
-        .iconSprite = gMonIcon_Weedle,
+        .palette = gMonPalette_Fufumon,
+        .shinyPalette = gMonShinyPalette_Fufumon,
+        .iconSprite = gMonIcon_Fufumon,
         .iconPalIndex = 2,
-        FOOTPRINT(Weedle)
+        FOOTPRINT(Fufumon)
         .tmIlliterate = TRUE,
-        .levelUpLearnset = sWeedleLevelUpLearnset,
-        .teachableLearnset = sWeedleTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 7, SPECIES_KAKUNA}),
+        .levelUpLearnset = sFufumonLevelUpLearnset,
+        .teachableLearnset = sFufumonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 7, SPECIES_JYARIMON}),
     },
 
-    [SPECIES_KAKUNA] =
+    [SPECIES_JYARIMON] =
     {
         .baseHP        = 45,
         .baseAttack    = 25,
@@ -1229,9 +1229,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Kakuna"),
-        .cryId = CRY_KAKUNA,
-        .natDexNum = NATIONAL_DEX_KAKUNA,
+        .speciesName = _("Jyarimon"),
+        .cryId = CRY_JYARIMON,
+        .natDexNum = NATIONAL_DEX_JYARIMON,
         .categoryName = _("Cocoon"),
         .height = 6,
         .weight = 100,
@@ -1244,24 +1244,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Kakuna,
+        .frontPic = gMonFrontPic_Jyarimon,
         .frontPicSize = MON_COORDS_SIZE(24, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Kakuna,
+        .frontAnimFrames = sAnims_Jyarimon,
         .frontAnimId = ANIM_GLOW_ORANGE,
         .frontAnimDelay = 20,
-        .backPic = gMonBackPic_Kakuna,
+        .backPic = gMonBackPic_Jyarimon,
         .backPicSize = MON_COORDS_SIZE(32, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Kakuna,
-        .shinyPalette = gMonShinyPalette_Kakuna,
-        .iconSprite = gMonIcon_Kakuna,
+        .palette = gMonPalette_Jyarimon,
+        .shinyPalette = gMonShinyPalette_Jyarimon,
+        .iconSprite = gMonIcon_Jyarimon,
         .iconPalIndex = 2,
-        FOOTPRINT(Kakuna)
+        FOOTPRINT(Jyarimon)
         .tmIlliterate = TRUE,
-        .levelUpLearnset = sKakunaLevelUpLearnset,
-        .teachableLearnset = sKakunaTeachableLearnset,
+        .levelUpLearnset = sJyarimonLevelUpLearnset,
+        .teachableLearnset = sJyarimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_BEEDRILL}),
     },
 
@@ -1391,7 +1391,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sBeedrillFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_WEEDLE
+#endif //P_FAMILY_FUFUMON
 
 #if P_FAMILY_PIDGEY
     [SPECIES_PIDGEY] =

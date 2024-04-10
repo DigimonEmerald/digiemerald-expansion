@@ -4,13 +4,13 @@
 #define FRONTIER_MON_SUNKERN        0
 #define FRONTIER_MON_AZURILL        1
 #define FRONTIER_MON_DATIRIMON       2
-#define FRONTIER_MON_WEEDLE         3
+#define FRONTIER_MON_FUFUMON         3
 #define FRONTIER_MON_WURMPLE        4
 #define FRONTIER_MON_RALTS          5
 #define FRONTIER_MON_MAGIKARP       6
 #define FRONTIER_MON_FEEBAS         7
 #define FRONTIER_MON_DODOMON        8
-#define FRONTIER_MON_KAKUNA         9
+#define FRONTIER_MON_JYARIMON         9
 #define FRONTIER_MON_PICHU          10
 #define FRONTIER_MON_SILCOON        11
 #define FRONTIER_MON_CASCOON        12
@@ -154,7 +154,7 @@
 #define FRONTIER_MON_NOSEPASS       150
 #define FRONTIER_MON_CORSOLA        151
 #define FRONTIER_MON_MAWILE         152
-#define FRONTIER_MON_BUTTERFREE     153
+#define FRONTIER_MON_DOKIMON     153
 #define FRONTIER_MON_BEEDRILL       154
 #define FRONTIER_MON_POLIWHIRL      155
 #define FRONTIER_MON_ONIX           156

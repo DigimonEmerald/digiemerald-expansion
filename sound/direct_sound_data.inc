@@ -460,18 +460,18 @@ Cry_Dodomon::
 	.incbin "sound/direct_sound_samples/cries/dodomon.bin"
 
 	.align 2
-Cry_Butterfree::
-	.incbin "sound/direct_sound_samples/cries/butterfree.bin"
+Cry_Dokimon::
+	.incbin "sound/direct_sound_samples/cries/dokimon.bin"
 .endif @ P_FAMILY_DATIRIMON
 
-.if P_FAMILY_WEEDLE == TRUE
+.if P_FAMILY_FUFUMON == TRUE
 	.align 2
-Cry_Weedle::
-	.incbin "sound/direct_sound_samples/cries/weedle.bin"
+Cry_Fufumon::
+	.incbin "sound/direct_sound_samples/cries/fufumon.bin"
 
 	.align 2
-Cry_Kakuna::
-	.incbin "sound/direct_sound_samples/cries/kakuna.bin"
+Cry_Jyarimon::
+	.incbin "sound/direct_sound_samples/cries/jyarimon.bin"
 
 	.align 2
 Cry_Beedrill::
@@ -482,7 +482,7 @@ Cry_Beedrill::
 Cry_BeedrillMega::
 	.incbin "sound/direct_sound_samples/cries/beedrill_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_WEEDLE
+.endif @ P_FAMILY_FUFUMON
 
 .if P_FAMILY_PIDGEY == TRUE
 	.align 2

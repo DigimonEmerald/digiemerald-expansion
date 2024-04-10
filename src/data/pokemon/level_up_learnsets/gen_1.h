@@ -145,7 +145,7 @@ static const struct LevelUpMove sDodomonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sButterfreeLevelUpLearnset[] = {
+static const struct LevelUpMove sDokimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE(10, MOVE_CONFUSION),
     LEVEL_UP_MOVE(13, MOVE_POISON_POWDER),
@@ -159,14 +159,14 @@ static const struct LevelUpMove sButterfreeLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_DATIRIMON
 
-#if P_FAMILY_WEEDLE
-static const struct LevelUpMove sWeedleLevelUpLearnset[] = {
+#if P_FAMILY_FUFUMON
+static const struct LevelUpMove sFufumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_STRING_SHOT),
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sKakunaLevelUpLearnset[] = {
+static const struct LevelUpMove sJyarimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_END
 };
@@ -181,7 +181,7 @@ static const struct LevelUpMove sBeedrillLevelUpLearnset[] = {
     LEVEL_UP_MOVE(35, MOVE_AGILITY),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_WEEDLE
+#endif //P_FAMILY_FUFUMON
 
 #if P_FAMILY_PIDGEY
 static const struct LevelUpMove sPidgeyLevelUpLearnset[] = {

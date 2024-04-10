@@ -501,7 +501,7 @@ static const u16 sDodomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sButterfreeTeachableLearnset[] = {
+static const u16 sDokimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
@@ -533,12 +533,12 @@ static const u16 sButterfreeTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DATIRIMON
 
-#if P_FAMILY_WEEDLE
-static const u16 sWeedleTeachableLearnset[] = {
+#if P_FAMILY_FUFUMON
+static const u16 sFufumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sKakunaTeachableLearnset[] = {
+static const u16 sJyarimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
@@ -571,7 +571,7 @@ static const u16 sBeedrillTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_WEEDLE
+#endif //P_FAMILY_FUFUMON
 
 #if P_FAMILY_PIDGEY
 static const u16 sPidgeyTeachableLearnset[] = {

@@ -28,16 +28,16 @@ gCryTable::
 .if P_FAMILY_DATIRIMON == TRUE
 	cry Cry_Datirimon
 	cry Cry_Dodomon
-	cry Cry_Butterfree
+	cry Cry_Dokimon
 .endif @ P_FAMILY_DATIRIMON
-.if P_FAMILY_WEEDLE == TRUE
-	cry Cry_Weedle
-	cry Cry_Kakuna
+.if P_FAMILY_FUFUMON == TRUE
+	cry Cry_Fufumon
+	cry Cry_Jyarimon
 	cry Cry_Beedrill
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_BeedrillMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_WEEDLE
+.endif @ P_FAMILY_FUFUMON
 .if P_FAMILY_PIDGEY == TRUE
 	cry Cry_Pidgey
 	cry Cry_Pidgeotto
@@ -2454,16 +2454,16 @@ gCryTable_Reverse::
 .if P_FAMILY_DATIRIMON == TRUE
 	cry_reverse Cry_Datirimon
 	cry_reverse Cry_Dodomon
-	cry_reverse Cry_Butterfree
+	cry_reverse Cry_Dokimon
 .endif @ P_FAMILY_DATIRIMON
-.if P_FAMILY_WEEDLE == TRUE
-	cry_reverse Cry_Weedle
-	cry_reverse Cry_Kakuna
+.if P_FAMILY_FUFUMON == TRUE
+	cry_reverse Cry_Fufumon
+	cry_reverse Cry_Jyarimon
 	cry_reverse Cry_Beedrill
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_BeedrillMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_WEEDLE
+.endif @ P_FAMILY_FUFUMON
 .if P_FAMILY_PIDGEY == TRUE
 	cry_reverse Cry_Pidgey
 	cry_reverse Cry_Pidgeotto

@@ -150,7 +150,7 @@ static const union AnimCmd sAnim_Dodomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Butterfree_1[] =
+static const union AnimCmd sAnim_Dokimon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 5),
@@ -169,12 +169,12 @@ static const union AnimCmd sAnim_Butterfree_1[] =
 };
 
 #if P_GIGANTAMAX_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(ButterfreeGigantamax);
+PLACEHOLDER_ANIM_SINGLE_FRAME(DokimonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_DATIRIMON
 
-#if P_FAMILY_WEEDLE
-static const union AnimCmd sAnim_Weedle_1[] =
+#if P_FAMILY_FUFUMON
+static const union AnimCmd sAnim_Fufumon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 15),
@@ -186,7 +186,7 @@ static const union AnimCmd sAnim_Weedle_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Kakuna_1[] =
+static const union AnimCmd sAnim_Jyarimon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 5),
@@ -217,7 +217,7 @@ static const union AnimCmd sAnim_Beedrill_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(BeedrillMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_WEEDLE
+#endif //P_FAMILY_FUFUMON
 
 #if P_FAMILY_PIDGEY
 static const union AnimCmd sAnim_Pidgey_1[] =
@@ -10190,19 +10190,19 @@ SINGLE_ANIMATION(CurimonGigantamax);
 #if P_FAMILY_DATIRIMON
 SINGLE_ANIMATION(Datirimon);
 SINGLE_ANIMATION(Dodomon);
-SINGLE_ANIMATION(Butterfree);
+SINGLE_ANIMATION(Dokimon);
 #if P_GIGANTAMAX_FORMS
-SINGLE_ANIMATION(ButterfreeGigantamax);
+SINGLE_ANIMATION(DokimonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_DATIRIMON
-#if P_FAMILY_WEEDLE
-SINGLE_ANIMATION(Weedle);
-SINGLE_ANIMATION(Kakuna);
+#if P_FAMILY_FUFUMON
+SINGLE_ANIMATION(Fufumon);
+SINGLE_ANIMATION(Jyarimon);
 SINGLE_ANIMATION(Beedrill);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(BeedrillMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_WEEDLE
+#endif //P_FAMILY_FUFUMON
 #if P_FAMILY_PIDGEY
 SINGLE_ANIMATION(Pidgey);
 SINGLE_ANIMATION(Pidgeotto);

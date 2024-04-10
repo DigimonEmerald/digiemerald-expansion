@@ -13,9 +13,9 @@
 #define SPECIES_CURIMON                               9
 #define SPECIES_DATIRIMON                                10
 #define SPECIES_DODOMON                                 11
-#define SPECIES_BUTTERFREE                              12
-#define SPECIES_WEEDLE                                  13
-#define SPECIES_KAKUNA                                  14
+#define SPECIES_DOKIMON                              12
+#define SPECIES_FUFUMON                                  13
+#define SPECIES_JYARIMON                                  14
 #define SPECIES_BEEDRILL                                15
 #define SPECIES_PIDGEY                                  16
 #define SPECIES_PIDGEOTTO                               17
@@ -1596,7 +1596,7 @@
 #define SPECIES_BOMMON_GIGANTAMAX                     1489
 #define SPECIES_CURIMON_GIGANTAMAX                    1490
 #define SPECIES_CHIBOMON_GIGANTAMAX                    1491
-#define SPECIES_BUTTERFREE_GIGANTAMAX                   1492
+#define SPECIES_DOKIMON_GIGANTAMAX                   1492
 #define SPECIES_PIKACHU_GIGANTAMAX                      1493
 #define SPECIES_MEOWTH_GIGANTAMAX                       1494
 #define SPECIES_MACHAMP_GIGANTAMAX                      1495

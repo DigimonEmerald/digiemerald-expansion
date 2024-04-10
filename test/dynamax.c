@@ -1039,7 +1039,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Befuddle paralyzes, poisons, or sleeps both 
     PARAMETRIZE { statusAnim = B_ANIM_STATUS_SLP; rng = STATUS1_SLEEP; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_G_MAX_BEFUDDLE].argument == MAX_EFFECT_EFFECT_SPORE_FOES);
-        PLAYER(SPECIES_BUTTERFREE) { GigantamaxFactor(TRUE); }
+        PLAYER(SPECIES_DOKIMON) { GigantamaxFactor(TRUE); }
         PLAYER(SPECIES_DATIRIMON);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
@@ -1047,7 +1047,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Befuddle paralyzes, poisons, or sleeps both 
         TURN { MOVE(playerLeft, MOVE_BUG_BITE, target: opponentLeft, dynamax: TRUE,
                WITH_RNG(RNG_G_MAX_BEFUDDLE, rng)); }
     } SCENE {
-        MESSAGE("Butterfree used G-Max Befuddle!");
+        MESSAGE("Dokimon used G-Max Befuddle!");
         // opponent left
         ANIMATION(ANIM_TYPE_STATUS, statusAnim, opponentLeft);
         if (statusAnim == B_ANIM_STATUS_PSN) {

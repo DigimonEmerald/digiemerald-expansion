@@ -1184,7 +1184,7 @@
       "MOVE_IRON_DEFENSE"
     ]
   },
-  "BUTTERFREE": {
+  "DOKIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1298,7 +1298,7 @@
       "MOVE_TWISTER"
     ]
   },
-  "WEEDLE": {
+  "FUFUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1318,7 +1318,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "KAKUNA": {
+  "JYARIMON": {
     "LevelMoves": [
       {
         "Level": 1,

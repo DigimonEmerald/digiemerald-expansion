@@ -1219,7 +1219,7 @@
       "MOVE_STRING_SHOT"
     ]
   },
-  "BUTTERFREE": {
+  "DOKIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1335,7 +1335,7 @@
       "MOVE_TWISTER"
     ]
   },
-  "WEEDLE": {
+  "FUFUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1358,7 +1358,7 @@
       "MOVE_STRING_SHOT"
     ]
   },
-  "KAKUNA": {
+  "JYARIMON": {
     "LevelMoves": [
       {
         "Level": 1,

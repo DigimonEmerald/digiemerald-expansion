@@ -1209,7 +1209,7 @@
       "MOVE_IRON_DEFENSE"
     ]
   },
-  "BUTTERFREE": {
+  "DOKIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1328,7 +1328,7 @@
       "MOVE_TAILWIND"
     ]
   },
-  "WEEDLE": {
+  "FUFUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1351,7 +1351,7 @@
       "MOVE_ELECTROWEB"
     ]
   },
-  "KAKUNA": {
+  "JYARIMON": {
     "LevelMoves": [
       {
         "Level": 1,

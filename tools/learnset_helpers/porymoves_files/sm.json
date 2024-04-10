@@ -1144,7 +1144,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "BUTTERFREE": {
+  "DOKIMON": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -1263,7 +1263,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "WEEDLE": {
+  "FUFUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -1283,7 +1283,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "KAKUNA": {
+  "JYARIMON": {
     "LevelMoves": [
       {
         "Level": 0,

@@ -24,19 +24,19 @@ static const struct FormChange sCurimonFormChangeTable[] = {
 #endif //P_FAMILY_CONOMON
 
 #if P_FAMILY_DATIRIMON
-static const struct FormChange sButterfreeFormChangeTable[] =
+static const struct FormChange sDokimonFormChangeTable[] =
 {
-    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_BUTTERFREE_GIGANTAMAX},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_DOKIMON_GIGANTAMAX},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_DATIRIMON
 
-#if P_FAMILY_WEEDLE
+#if P_FAMILY_FUFUMON
 static const struct FormChange sBeedrillFormChangeTable[] = {
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BEEDRILL_MEGA, ITEM_BEEDRILLITE},
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_WEEDLE
+#endif //P_FAMILY_FUFUMON
 
 #if P_FAMILY_PIDGEY
 static const struct FormChange sPidgeotFormChangeTable[] = {

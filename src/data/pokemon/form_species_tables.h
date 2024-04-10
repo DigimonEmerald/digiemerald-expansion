@@ -27,20 +27,20 @@ static const u16 sCurimonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_CONOMON
 
 #if P_FAMILY_DATIRIMON
-static const u16 sButterfreeFormSpeciesIdTable[] = {
-    SPECIES_BUTTERFREE,
-    SPECIES_BUTTERFREE_GIGANTAMAX,
+static const u16 sDokimonFormSpeciesIdTable[] = {
+    SPECIES_DOKIMON,
+    SPECIES_DOKIMON_GIGANTAMAX,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_DATIRIMON
 
-#if P_FAMILY_WEEDLE
+#if P_FAMILY_FUFUMON
 static const u16 sBeedrillFormSpeciesIdTable[] = {
     SPECIES_BEEDRILL,
     SPECIES_BEEDRILL_MEGA,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_WEEDLE
+#endif //P_FAMILY_FUFUMON
 
 #if P_FAMILY_PIDGEY
 static const u16 sPidgeotFormSpeciesIdTable[] = {

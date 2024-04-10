@@ -112,7 +112,7 @@ DOUBLE_BATTLE_TEST("Sticky Web has correct interactions with Mirror Armor - the 
         PLAYER(SPECIES_BOTAMON);
         PLAYER(SPECIES_CORVIKNIGHT) { Ability(ABILITY_MIRROR_ARMOR); Item(ITEM_IRON_BALL); } // Iron Ball, so that flying type Corviknight is affected by Sticky Web.
         OPPONENT(SPECIES_DATIRIMON);
-        OPPONENT(SPECIES_WEEDLE);
+        OPPONENT(SPECIES_FUFUMON);
     } WHEN {
         TURN { MOVE(BATTLER_OPPONENT, MOVE_STICKY_WEB); }
         TURN { MOVE(BATTLER_PLAYER, MOVE_STICKY_WEB); }
@@ -130,7 +130,7 @@ DOUBLE_BATTLE_TEST("Sticky Web has correct interactions with Mirror Armor - the 
         if (opponentSetUpper == 0) {
             MESSAGE("Foe Datirimon's Speed fell!");
         } else {
-            MESSAGE("Foe Weedle's Speed fell!");
+            MESSAGE("Foe Fufumon's Speed fell!");
         }
     }
 }
@@ -151,7 +151,7 @@ DOUBLE_BATTLE_TEST("Sticky Web has correct interactions with Mirror Armor - no o
         PLAYER(SPECIES_BOTAMON) { Speed(speedPlayer); }
         PLAYER(SPECIES_CORVIKNIGHT) { Ability(ABILITY_MIRROR_ARMOR); Item(ITEM_IRON_BALL); Speed(speedOpponent); } // Iron Ball, so that flying type Corviknight is affected by Sticky Web.
         OPPONENT(SPECIES_DATIRIMON) { Speed(speedOpponent); }
-        OPPONENT(SPECIES_WEEDLE) { Speed(speedOpponent); }
+        OPPONENT(SPECIES_FUFUMON) { Speed(speedOpponent); }
         OPPONENT(SPECIES_PIDGEY) { Speed(speedOpponent); } // Flying type,so not affected by Sticky Web.
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_STICKY_WEB); MOVE(playerRight, MOVE_STICKY_WEB); }
@@ -196,7 +196,7 @@ DOUBLE_BATTLE_TEST("Sticky Web has correct interactions with Mirror Armor - no o
         PLAYER(SPECIES_BOTAMON) {Speed(5); }
         PLAYER(SPECIES_CORVIKNIGHT) {Ability(ABILITY_MIRROR_ARMOR); Item(ITEM_IRON_BALL); Speed(5); } // Iron Ball, so that flying type Corviknight is affected by Sticky Web.
         OPPONENT(SPECIES_DATIRIMON) {Speed(7); }
-        OPPONENT(SPECIES_WEEDLE) {Speed(7); }
+        OPPONENT(SPECIES_FUFUMON) {Speed(7); }
         if (hasReplacement) {
             OPPONENT(SPECIES_PIDGEY) {Speed(7); }
         }
