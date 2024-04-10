@@ -54,10 +54,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Argomon_f)
         .levelUpLearnset = sArgomon_fLevelUpLearnset,
         .teachableLearnset = sArgomon_fTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_IVYSAUR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_BOMBMON}),
     },
 
-    [SPECIES_IVYSAUR] =
+    [SPECIES_BOMBMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 62,
@@ -77,14 +77,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_CHLOROPHYLL },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Ivysaur"),
-        .cryId = CRY_IVYSAUR,
-        .natDexNum = NATIONAL_DEX_IVYSAUR,
+        .speciesName = _("Bombmon"),
+        .cryId = CRY_BOMBMON,
+        .natDexNum = NATIONAL_DEX_BOMBMON,
         .categoryName = _("Seed"),
         .height = 10,
         .weight = 130,
         .description = COMPOUND_STRING(
-            "To support its bulb, Ivysaur's legs\n"
+            "To support its bulb, Bombmon's legs\n"
             "grow sturdy. If it spends more time lying in\n"
             "the sunlight, the bud will soon bloom into\n"
             "a large flower."),
@@ -92,26 +92,26 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Ivysaur,
+        .frontPic = gMonFrontPic_Bombmon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Ivysaur,
+        .frontAnimFrames = sAnims_Bombmon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Ivysaur,
+        .backPic = gMonBackPic_Bombmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Ivysaur,
-        .shinyPalette = gMonShinyPalette_Ivysaur,
-        .iconSprite = gMonIcon_Ivysaur,
+        .palette = gMonPalette_Bombmon,
+        .shinyPalette = gMonShinyPalette_Bombmon,
+        .iconSprite = gMonIcon_Bombmon,
         .iconPalIndex = 4,
-        FOOTPRINT(Ivysaur)
-        .levelUpLearnset = sIvysaurLevelUpLearnset,
-        .teachableLearnset = sIvysaurTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_VENUSAUR}),
+        FOOTPRINT(Bombmon)
+        .levelUpLearnset = sBombmonLevelUpLearnset,
+        .teachableLearnset = sBombmonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_BOMMON}),
     },
 
-    [SPECIES_VENUSAUR] =
+    [SPECIES_BOMMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 82,
@@ -137,14 +137,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_CHLOROPHYLL },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Venusaur"),
-        .cryId = CRY_VENUSAUR,
-        .natDexNum = NATIONAL_DEX_VENUSAUR,
+        .speciesName = _("Bommon"),
+        .cryId = CRY_BOMMON,
+        .natDexNum = NATIONAL_DEX_BOMMON,
         .categoryName = _("Seed"),
         .height = 20,
         .weight = 1000,
         .description = COMPOUND_STRING(
-            "Venusaur's flower is said to take on vivid\n"
+            "Bommon's flower is said to take on vivid\n"
             "colors if it gets plenty of nutrition and\n"
             "sunlight. The flower's aroma soothes the\n"
             "emotions of people."),
@@ -152,32 +152,32 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 388,
         .trainerOffset = 6,
-        .frontPic = gMonFrontPic_Venusaur,
-        .frontPicFemale = gMonFrontPic_VenusaurF,
+        .frontPic = gMonFrontPic_Bommon,
+        .frontPicFemale = gMonFrontPic_BommonF,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_Venusaur,
+        .frontAnimFrames = sAnims_Bommon,
         .frontAnimId = ANIM_ROTATE_UP_SLAM_DOWN,
-        .backPic = gMonBackPic_Venusaur,
-        .backPicFemale = gMonBackPic_VenusaurF,
+        .backPic = gMonBackPic_Bommon,
+        .backPicFemale = gMonBackPic_BommonF,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_H_SHAKE,
-        .palette = gMonPalette_Venusaur,
-        .shinyPalette = gMonShinyPalette_Venusaur,
-        .iconSprite = gMonIcon_Venusaur,
+        .palette = gMonPalette_Bommon,
+        .shinyPalette = gMonShinyPalette_Bommon,
+        .iconSprite = gMonIcon_Bommon,
         .iconPalIndex = 4,
-        FOOTPRINT(Venusaur)
-        .levelUpLearnset = sVenusaurLevelUpLearnset,
-        .teachableLearnset = sVenusaurTeachableLearnset,
-        .formSpeciesIdTable = sVenusaurFormSpeciesIdTable,
-        .formChangeTable = sVenusaurFormChangeTable,
+        FOOTPRINT(Bommon)
+        .levelUpLearnset = sBommonLevelUpLearnset,
+        .teachableLearnset = sBommonTeachableLearnset,
+        .formSpeciesIdTable = sBommonFormSpeciesIdTable,
+        .formChangeTable = sBommonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_VENUSAUR_MEGA] =
+    [SPECIES_BOMMON_MEGA] =
     {
         .baseHP        = 80,
         .baseAttack    = 100,
@@ -197,9 +197,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
         .abilities = { ABILITY_THICK_FAT, ABILITY_THICK_FAT, ABILITY_THICK_FAT },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Venusaur"),
-        .cryId = CRY_VENUSAUR_MEGA,
-        .natDexNum = NATIONAL_DEX_VENUSAUR,
+        .speciesName = _("Bommon"),
+        .cryId = CRY_BOMMON_MEGA,
+        .natDexNum = NATIONAL_DEX_BOMMON,
         .categoryName = _("Seed"),
         .height = 24,
         .weight = 1555,
@@ -211,30 +211,30 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 388,
         .trainerOffset = 6,
-        .frontPic = gMonFrontPic_VenusaurMega,
+        .frontPic = gMonFrontPic_BommonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_VenusaurMega,
+        .frontAnimFrames = sAnims_BommonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_VenusaurMega,
+        .backPic = gMonBackPic_BommonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_GREEN,
-        .palette = gMonPalette_VenusaurMega,
-        .shinyPalette = gMonShinyPalette_VenusaurMega,
-        .iconSprite = gMonIcon_VenusaurMega,
+        .palette = gMonPalette_BommonMega,
+        .shinyPalette = gMonShinyPalette_BommonMega,
+        .iconSprite = gMonIcon_BommonMega,
         .iconPalIndex = 4,
-        FOOTPRINT(Venusaur)
+        FOOTPRINT(Bommon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sVenusaurLevelUpLearnset,
-        .teachableLearnset = sVenusaurTeachableLearnset,
-        .formSpeciesIdTable = sVenusaurFormSpeciesIdTable,
-        .formChangeTable = sVenusaurFormChangeTable,
+        .levelUpLearnset = sBommonLevelUpLearnset,
+        .teachableLearnset = sBommonTeachableLearnset,
+        .formSpeciesIdTable = sBommonFormSpeciesIdTable,
+        .formChangeTable = sBommonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_VENUSAUR_GIGANTAMAX] =
+    [SPECIES_BOMMON_GIGANTAMAX] =
     {
         .baseHP        = 80,
         .baseAttack    = 82,
@@ -254,9 +254,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_CHLOROPHYLL },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Venusaur"),
-        .cryId = CRY_VENUSAUR,
-        .natDexNum = NATIONAL_DEX_VENUSAUR,
+        .speciesName = _("Bommon"),
+        .cryId = CRY_BOMMON,
+        .natDexNum = NATIONAL_DEX_BOMMON,
         .categoryName = _("Seed"),
         .height = 240,
         .weight = 0,
@@ -269,25 +269,25 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 388,
         .trainerOffset = 6,
-        .frontPic = gMonFrontPic_VenusaurGigantamax,
+        .frontPic = gMonFrontPic_BommonGigantamax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_VenusaurGigantamax,
+        .frontAnimFrames = sAnims_BommonGigantamax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_VenusaurGigantamax,
+        .backPic = gMonBackPic_BommonGigantamax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 11,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_VenusaurGigantamax,
-        .shinyPalette = gMonShinyPalette_VenusaurGigantamax,
-        .iconSprite = gMonIcon_VenusaurGigantamax,
+        .palette = gMonPalette_BommonGigantamax,
+        .shinyPalette = gMonShinyPalette_BommonGigantamax,
+        .iconSprite = gMonIcon_BommonGigantamax,
         .iconPalIndex = 0,
-        FOOTPRINT(Venusaur)
+        FOOTPRINT(Bommon)
         .isGigantamax = TRUE,
-        .levelUpLearnset = sVenusaurLevelUpLearnset,
-        .teachableLearnset = sVenusaurTeachableLearnset,
-        .formSpeciesIdTable = sVenusaurFormSpeciesIdTable,
-        .formChangeTable = sVenusaurFormChangeTable,
+        .levelUpLearnset = sBommonLevelUpLearnset,
+        .teachableLearnset = sBommonTeachableLearnset,
+        .formSpeciesIdTable = sBommonFormSpeciesIdTable,
+        .formChangeTable = sBommonFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_ARGOMON_F

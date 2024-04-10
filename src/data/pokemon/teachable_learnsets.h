@@ -145,7 +145,7 @@ static const u16 sArgomon_fTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sIvysaurTeachableLearnset[] = {
+static const u16 sBombmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,
@@ -178,7 +178,7 @@ static const u16 sIvysaurTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sVenusaurTeachableLearnset[] = {
+static const u16 sBommonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,

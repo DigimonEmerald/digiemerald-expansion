@@ -110,7 +110,7 @@
       "MOVE_GRASSY_GLIDE"
     ]
   },
-  "IVYSAUR": {
+  "BOMBMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -221,7 +221,7 @@
       "MOVE_GRASSY_GLIDE"
     ]
   },
-  "VENUSAUR": {
+  "BOMMON": {
     "LevelMoves": [
       {
         "Level": 0,

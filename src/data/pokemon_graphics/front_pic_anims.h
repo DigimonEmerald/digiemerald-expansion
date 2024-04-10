@@ -31,7 +31,7 @@ static const union AnimCmd sAnim_Argomon_f_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Ivysaur_1[] =
+static const union AnimCmd sAnim_Bombmon_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 36),
@@ -39,7 +39,7 @@ static const union AnimCmd sAnim_Ivysaur_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Venusaur_1[] =
+static const union AnimCmd sAnim_Bommon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 25),
@@ -48,11 +48,11 @@ static const union AnimCmd sAnim_Venusaur_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(VenusaurMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(BommonMega);
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GIGANTAMAX_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(VenusaurGigantamax);
+PLACEHOLDER_ANIM_SINGLE_FRAME(BommonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_ARGOMON_F
 
@@ -10155,13 +10155,13 @@ static const union AnimCmd *const sAnims_##name[] = \
 SINGLE_ANIMATION(None);
 #if P_FAMILY_ARGOMON_F
 SINGLE_ANIMATION(Argomon_f);
-SINGLE_ANIMATION(Ivysaur);
-SINGLE_ANIMATION(Venusaur);
+SINGLE_ANIMATION(Bombmon);
+SINGLE_ANIMATION(Bommon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(VenusaurMega);
+SINGLE_ANIMATION(BommonMega);
 #endif //P_MEGA_EVOLUTIONS
 #if P_GIGANTAMAX_FORMS
-SINGLE_ANIMATION(VenusaurGigantamax);
+SINGLE_ANIMATION(BommonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_ARGOMON_F
 #if P_FAMILY_CHARMANDER

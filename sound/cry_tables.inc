@@ -2,10 +2,10 @@
 gCryTable::
 .if P_FAMILY_ARGOMON_F == TRUE
 	cry Cry_Argomon_f
-	cry Cry_Ivysaur
-	cry Cry_Venusaur
+	cry Cry_Bombmon
+	cry Cry_Bommon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_VenusaurMega
+	cry Cry_BommonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_ARGOMON_F
 .if P_FAMILY_CHARMANDER == TRUE
@@ -2428,10 +2428,10 @@ gCryTable::
 gCryTable_Reverse::
 .if P_FAMILY_ARGOMON_F == TRUE
 	cry_reverse Cry_Argomon_f
-	cry_reverse Cry_Ivysaur
-	cry_reverse Cry_Venusaur
+	cry_reverse Cry_Bombmon
+	cry_reverse Cry_Bommon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_VenusaurMega
+	cry_reverse Cry_BommonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_ARGOMON_F
 .if P_FAMILY_CHARMANDER == TRUE

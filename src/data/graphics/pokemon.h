@@ -17,41 +17,41 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Argomon_f[] = INCBIN_U8("graphics/pokemon/argomon_f/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Ivysaur[] = INCBIN_U32("graphics/pokemon/ivysaur/anim_front.4bpp.lz");
-    const u32 gMonPalette_Ivysaur[] = INCBIN_U32("graphics/pokemon/ivysaur/normal.gbapal.lz");
-    const u32 gMonBackPic_Ivysaur[] = INCBIN_U32("graphics/pokemon/ivysaur/back.4bpp.lz");
-    const u32 gMonShinyPalette_Ivysaur[] = INCBIN_U32("graphics/pokemon/ivysaur/shiny.gbapal.lz");
-    const u8 gMonIcon_Ivysaur[] = INCBIN_U8("graphics/pokemon/ivysaur/icon.4bpp");
+    const u32 gMonFrontPic_Bombmon[] = INCBIN_U32("graphics/pokemon/bombmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Bombmon[] = INCBIN_U32("graphics/pokemon/bombmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Bombmon[] = INCBIN_U32("graphics/pokemon/bombmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Bombmon[] = INCBIN_U32("graphics/pokemon/bombmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Bombmon[] = INCBIN_U8("graphics/pokemon/bombmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Ivysaur[] = INCBIN_U8("graphics/pokemon/ivysaur/footprint.1bpp");
+    const u8 gMonFootprint_Bombmon[] = INCBIN_U8("graphics/pokemon/bombmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Venusaur[] = INCBIN_U32("graphics/pokemon/venusaur/anim_front.4bpp.lz");
-    const u32 gMonPalette_Venusaur[] = INCBIN_U32("graphics/pokemon/venusaur/normal.gbapal.lz");
-    const u32 gMonBackPic_Venusaur[] = INCBIN_U32("graphics/pokemon/venusaur/back.4bpp.lz");
-    const u32 gMonShinyPalette_Venusaur[] = INCBIN_U32("graphics/pokemon/venusaur/shiny.gbapal.lz");
-    const u8 gMonIcon_Venusaur[] = INCBIN_U8("graphics/pokemon/venusaur/icon.4bpp");
+    const u32 gMonFrontPic_Bommon[] = INCBIN_U32("graphics/pokemon/bommon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Bommon[] = INCBIN_U32("graphics/pokemon/bommon/normal.gbapal.lz");
+    const u32 gMonBackPic_Bommon[] = INCBIN_U32("graphics/pokemon/bommon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Bommon[] = INCBIN_U32("graphics/pokemon/bommon/shiny.gbapal.lz");
+    const u8 gMonIcon_Bommon[] = INCBIN_U8("graphics/pokemon/bommon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Venusaur[] = INCBIN_U8("graphics/pokemon/venusaur/footprint.1bpp");
+    const u8 gMonFootprint_Bommon[] = INCBIN_U8("graphics/pokemon/bommon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_VenusaurF[] = INCBIN_U32("graphics/pokemon/venusaur/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_VenusaurF[] = INCBIN_U32("graphics/pokemon/venusaur/backf.4bpp.lz");
+    const u32 gMonFrontPic_BommonF[] = INCBIN_U32("graphics/pokemon/bommon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_BommonF[] = INCBIN_U32("graphics/pokemon/bommon/backf.4bpp.lz");
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_VenusaurMega[] = INCBIN_U32("graphics/pokemon/venusaur/mega/front.4bpp.lz");
-    const u32 gMonPalette_VenusaurMega[] = INCBIN_U32("graphics/pokemon/venusaur/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_VenusaurMega[] = INCBIN_U32("graphics/pokemon/venusaur/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_VenusaurMega[] = INCBIN_U32("graphics/pokemon/venusaur/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_VenusaurMega[] = INCBIN_U8("graphics/pokemon/venusaur/mega/icon.4bpp");
+    const u32 gMonFrontPic_BommonMega[] = INCBIN_U32("graphics/pokemon/bommon/mega/front.4bpp.lz");
+    const u32 gMonPalette_BommonMega[] = INCBIN_U32("graphics/pokemon/bommon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_BommonMega[] = INCBIN_U32("graphics/pokemon/bommon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_BommonMega[] = INCBIN_U32("graphics/pokemon/bommon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_BommonMega[] = INCBIN_U8("graphics/pokemon/bommon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GIGANTAMAX_FORMS
-    const u32 gMonFrontPic_VenusaurGigantamax[] = INCBIN_U32("graphics/pokemon/venusaur/gigantamax/front.4bpp.lz");
-    const u32 gMonBackPic_VenusaurGigantamax[] = INCBIN_U32("graphics/pokemon/venusaur/gigantamax/back.4bpp.lz");
-    const u32 gMonPalette_VenusaurGigantamax[] = INCBIN_U32("graphics/pokemon/venusaur/gigantamax/normal.gbapal.lz");
-    const u32 gMonShinyPalette_VenusaurGigantamax[] = INCBIN_U32("graphics/pokemon/venusaur/gigantamax/shiny.gbapal.lz");
-    const u8 gMonIcon_VenusaurGigantamax[] = INCBIN_U8("graphics/pokemon/venusaur/gigantamax/icon.4bpp");
+    const u32 gMonFrontPic_BommonGigantamax[] = INCBIN_U32("graphics/pokemon/bommon/gigantamax/front.4bpp.lz");
+    const u32 gMonBackPic_BommonGigantamax[] = INCBIN_U32("graphics/pokemon/bommon/gigantamax/back.4bpp.lz");
+    const u32 gMonPalette_BommonGigantamax[] = INCBIN_U32("graphics/pokemon/bommon/gigantamax/normal.gbapal.lz");
+    const u32 gMonShinyPalette_BommonGigantamax[] = INCBIN_U32("graphics/pokemon/bommon/gigantamax/shiny.gbapal.lz");
+    const u8 gMonIcon_BommonGigantamax[] = INCBIN_U8("graphics/pokemon/bommon/gigantamax/icon.4bpp");
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_ARGOMON_F
 

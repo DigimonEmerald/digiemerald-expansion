@@ -392,17 +392,17 @@ Cry_Argomon_f::
 	.incbin "sound/direct_sound_samples/cries/argomon_f.bin"
 
 	.align 2
-Cry_Ivysaur::
-	.incbin "sound/direct_sound_samples/cries/ivysaur.bin"
+Cry_Bombmon::
+	.incbin "sound/direct_sound_samples/cries/bombmon.bin"
 
 	.align 2
-Cry_Venusaur::
-	.incbin "sound/direct_sound_samples/cries/venusaur.bin"
+Cry_Bommon::
+	.incbin "sound/direct_sound_samples/cries/bommon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_VenusaurMega::
-	.incbin "sound/direct_sound_samples/cries/venusaur_mega.bin"
+Cry_BommonMega::
+	.incbin "sound/direct_sound_samples/cries/bommon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_ARGOMON_F
 

@@ -1,8 +1,8 @@
 #if P_FAMILY_ARGOMON_F
-static const u16 sVenusaurFormSpeciesIdTable[] = {
-    SPECIES_VENUSAUR,
-    SPECIES_VENUSAUR_MEGA,
-    SPECIES_VENUSAUR_GIGANTAMAX,
+static const u16 sBommonFormSpeciesIdTable[] = {
+    SPECIES_BOMMON,
+    SPECIES_BOMMON_MEGA,
+    SPECIES_BOMMON_GIGANTAMAX,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_ARGOMON_F

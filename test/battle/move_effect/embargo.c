@@ -299,11 +299,11 @@ SINGLE_BATTLE_TEST("Embargo disables the effect of the Memory items on the move 
     PARAMETRIZE{ heldItem = ITEM_FIRE_MEMORY; }
     GIVEN {
         PLAYER(SPECIES_SILVALLY) { Item(heldItem); };
-        OPPONENT(SPECIES_VENUSAUR);
+        OPPONENT(SPECIES_BOMMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBARGO); MOVE(player, MOVE_MULTI_ATTACK); }
     } SCENE {
-        MESSAGE("Foe Venusaur used Embargo!");
+        MESSAGE("Foe Bommon used Embargo!");
         MESSAGE("Silvally can't use items anymore!");
         MESSAGE("Silvally used Multi-Attack!");
         HP_BAR(opponent, captureDamage: &results[i].damage);
