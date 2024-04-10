@@ -19814,7 +19814,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_PROPHECY] =
     {
-        .name = COMPOUND_STRING("PROPHECY"),
+        .name = COMPOUND_STRING("Prophecy"),
         .description = COMPOUND_STRING(
             "Prophesies a holy\n"
             "attack 2 turns later."),
@@ -19828,6 +19828,28 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .category = DAMAGE_CATEGORY_SPECIAL,
         .ignoresProtect = TRUE,
         .mirrorMoveBanned = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+    },
+
+    [MOVE_BLESSING] =
+    {
+        .name = COMPOUND_STRING("Blessing"),
+        .description = COMPOUND_STRING(
+            "Blesses the opposing Digimon\n"
+            "converting it."),
+        .effect = EFFECT_WILL_O_WISP,
+        .power = 0,
+        .type = TYPE_LIGHT,
+        .accuracy = 75,
+        .pp = 15,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_STATUS,
+        .zMove = { .effect = Z_EFFECT_ATK_UP_1 },
+        .magicCoatAffected = TRUE,
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
