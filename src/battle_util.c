@@ -2947,9 +2947,10 @@ u8 DoBattlerEndTurnEffects(void)
             gBattleStruct->turnEffectsTracker++;
             break;
         case ENDTURN_CONVERTED:
-            if ((gBattleMons[battler].status1 & STATUS1_CONVERTED) && gBattleMons[battler].hp != 0)
+            if ((gBattleMons[battler].status1 & STATUS1_CONVERTED)
+                && gBattleMons[battler].hp != 0)
             {
-                gBattleMoveDamage = gBattleMons[battler].maxHP / 8;
+                gBattleMoveDamage = gBattleMons[battler].maxHP / 16;
                 if (gBattleMoveDamage == 0)
                     gBattleMoveDamage = 1;
                 BattleScriptExecute(BattleScript_BurnTurnDmg);
