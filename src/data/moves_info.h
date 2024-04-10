@@ -19840,7 +19840,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .description = COMPOUND_STRING(
             "Blesses the opposing Digimon\n"
             "converting it."),
-        .effect = EFFECT_WILL_O_WISP,
+        .effect = EFFECT_BLESSING,
         .power = 0,
         .type = TYPE_LIGHT,
         .accuracy = 75,
