@@ -2308,7 +2308,7 @@ static const u16 sBudmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDugtrioTeachableLearnset[] = {
+static const u16 sBukamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CUT,
@@ -2365,7 +2365,7 @@ static const u16 sBudmonAlolanTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDugtrioAlolanTeachableLearnset[] = {
+static const u16 sBukamonAlolanTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DIG,

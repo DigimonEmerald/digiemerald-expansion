@@ -766,7 +766,7 @@ static const union AnimCmd sAnim_Budmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Dugtrio_1[] =
+static const union AnimCmd sAnim_Bukamon_1[] =
 {
     ANIMCMD_FRAME(1, 35),
     ANIMCMD_FRAME(0, 10),
@@ -783,7 +783,7 @@ static const union AnimCmd sAnim_Dugtrio_1[] =
 
 #if P_ALOLAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(BudmonAlolan);
-PLACEHOLDER_ANIM_SINGLE_FRAME(DugtrioAlolan);
+PLACEHOLDER_ANIM_SINGLE_FRAME(BukamonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_BUDMON
 
@@ -10322,10 +10322,10 @@ SINGLE_ANIMATION(Bosamon);
 #endif //P_FAMILY_BIBIMON
 #if P_FAMILY_BUDMON
 SINGLE_ANIMATION(Budmon);
-SINGLE_ANIMATION(Dugtrio);
+SINGLE_ANIMATION(Bukamon);
 #if P_ALOLAN_FORMS
 SINGLE_ANIMATION(BudmonAlolan);
-SINGLE_ANIMATION(DugtrioAlolan);
+SINGLE_ANIMATION(BukamonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_BUDMON
 #if P_FAMILY_MEOWTH

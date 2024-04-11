@@ -52,7 +52,7 @@
 #define SPECIES_BIBIMON                                 48
 #define SPECIES_BOSAMON                                49
 #define SPECIES_BUDMON                                 50
-#define SPECIES_DUGTRIO                                 51
+#define SPECIES_BUKAMON                                 51
 #define SPECIES_MEOWTH                                  52
 #define SPECIES_PERSIAN                                 53
 #define SPECIES_PSYDUCK                                 54
@@ -1022,7 +1022,7 @@
 #define SPECIES_RELEMON_ALOLAN                           961
 #define SPECIES_SAKUMON_ALOLAN                        962
 #define SPECIES_BUDMON_ALOLAN                          963
-#define SPECIES_DUGTRIO_ALOLAN                          964
+#define SPECIES_BUKAMON_ALOLAN                          964
 #define SPECIES_MEOWTH_ALOLAN                           965
 #define SPECIES_PERSIAN_ALOLAN                          966
 #define SPECIES_GEODUDE_ALOLAN                          967

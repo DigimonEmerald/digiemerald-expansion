@@ -120,7 +120,7 @@ gCryTable::
 .endif @ P_FAMILY_BIBIMON
 .if P_FAMILY_BUDMON == TRUE
 	cry Cry_Budmon
-	cry Cry_Dugtrio
+	cry Cry_Bukamon
 .endif @ P_FAMILY_BUDMON
 .if P_FAMILY_MEOWTH == TRUE
 	cry Cry_Meowth
@@ -2546,7 +2546,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_BIBIMON
 .if P_FAMILY_BUDMON == TRUE
 	cry_reverse Cry_Budmon
-	cry_reverse Cry_Dugtrio
+	cry_reverse Cry_Bukamon
 .endif @ P_FAMILY_BUDMON
 .if P_FAMILY_MEOWTH == TRUE
 	cry_reverse Cry_Meowth

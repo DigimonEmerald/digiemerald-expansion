@@ -4092,7 +4092,7 @@
     ],
     "TutorMoves": []
   },
-  "DUGTRIO": {
+  "BUKAMON": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -78376,7 +78376,7 @@
       "MOVE_STEEL_BEAM"
     ]
   },
-  "DUGTRIO_ALOLAN": {
+  "BUKAMON_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 0,

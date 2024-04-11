@@ -5087,14 +5087,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_FAMILY_BUDMON
 
 #if P_UPDATED_EXP_YIELDS >= GEN_7
-    #define DUGTRIO_EXP_YIELD 149
+    #define BUKAMON_EXP_YIELD 149
 #elif P_UPDATED_EXP_YIELDS >= GEN_5
-    #define DUGTRIO_EXP_YIELD 142
+    #define BUKAMON_EXP_YIELD 142
 #else
-    #define DUGTRIO_EXP_YIELD 153
+    #define BUKAMON_EXP_YIELD 153
 #endif
 
-#define DUGTRIO_ATTACK (P_UPDATED_STATS >= GEN_7 ? 100 : 80)
+#define BUKAMON_ATTACK (P_UPDATED_STATS >= GEN_7 ? 100 : 80)
 
     [SPECIES_BUDMON] =
     {
@@ -5149,20 +5149,20 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sBudmonLevelUpLearnset,
         .teachableLearnset = sBudmonTeachableLearnset,
         .formSpeciesIdTable = sBudmonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_DUGTRIO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_BUKAMON}),
     },
 
-    [SPECIES_DUGTRIO] =
+    [SPECIES_BUKAMON] =
     {
         .baseHP        = 35,
-        .baseAttack    = DUGTRIO_ATTACK,
+        .baseAttack    = BUKAMON_ATTACK,
         .baseDefense   = 50,
         .baseSpeed     = 120,
         .baseSpAttack  = 50,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_GROUND),
         .catchRate = 50,
-        .expYield = DUGTRIO_EXP_YIELD,
+        .expYield = BUKAMON_EXP_YIELD,
         .evYield_Speed = 2,
         .itemRare = ITEM_SOFT_SAND,
         .genderRatio = PERCENT_FEMALE(50),
@@ -5172,9 +5172,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SAND_VEIL, ABILITY_ARENA_TRAP, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Dugtrio"),
-        .cryId = CRY_DUGTRIO,
-        .natDexNum = NATIONAL_DEX_DUGTRIO,
+        .speciesName = _("Bukamon"),
+        .cryId = CRY_BUKAMON,
+        .natDexNum = NATIONAL_DEX_BUKAMON,
         .categoryName = _("Mole"),
         .height = 7,
         .weight = 333,
@@ -5187,24 +5187,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Dugtrio,
+        .frontPic = gMonFrontPic_Bukamon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Dugtrio,
+        .frontAnimFrames = sAnims_Bukamon,
         .frontAnimId = ANIM_H_SHAKE_SLOW,
         .frontAnimDelay = 35,
-        .backPic = gMonBackPic_Dugtrio,
+        .backPic = gMonBackPic_Bukamon,
         .backPicSize = MON_COORDS_SIZE(48, 32),
         .backPicYOffset = 17,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Dugtrio,
-        .shinyPalette = gMonShinyPalette_Dugtrio,
-        .iconSprite = gMonIcon_Dugtrio,
+        .palette = gMonPalette_Bukamon,
+        .shinyPalette = gMonShinyPalette_Bukamon,
+        .iconSprite = gMonIcon_Bukamon,
         .iconPalIndex = 2,
-        FOOTPRINT(Dugtrio)
-        .levelUpLearnset = sDugtrioLevelUpLearnset,
-        .teachableLearnset = sDugtrioTeachableLearnset,
-        .formSpeciesIdTable = sDugtrioFormSpeciesIdTable,
+        FOOTPRINT(Bukamon)
+        .levelUpLearnset = sBukamonLevelUpLearnset,
+        .teachableLearnset = sBukamonTeachableLearnset,
+        .formSpeciesIdTable = sBukamonFormSpeciesIdTable,
     },
 
 #if P_ALOLAN_FORMS
@@ -5261,20 +5261,20 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sBudmonAlolanLevelUpLearnset,
         .teachableLearnset = sBudmonAlolanTeachableLearnset,
         .formSpeciesIdTable = sBudmonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_DUGTRIO_ALOLAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_BUKAMON_ALOLAN}),
     },
 
-    [SPECIES_DUGTRIO_ALOLAN] =
+    [SPECIES_BUKAMON_ALOLAN] =
     {
         .baseHP        = 35,
-        .baseAttack    = DUGTRIO_ATTACK,
+        .baseAttack    = BUKAMON_ATTACK,
         .baseDefense   = 60,
         .baseSpeed     = 110,
         .baseSpAttack  = 50,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_GROUND, TYPE_STEEL),
         .catchRate = 50,
-        .expYield = DUGTRIO_EXP_YIELD,
+        .expYield = BUKAMON_EXP_YIELD,
         .evYield_Speed = 2,
         .itemRare = ITEM_SOFT_SAND,
         .genderRatio = PERCENT_FEMALE(50),
@@ -5285,9 +5285,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_SAND_VEIL, ABILITY_TANGLING_HAIR, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
-        .speciesName = _("Dugtrio"),
-        .cryId = CRY_DUGTRIO,
-        .natDexNum = NATIONAL_DEX_DUGTRIO,
+        .speciesName = _("Bukamon"),
+        .cryId = CRY_BUKAMON,
+        .natDexNum = NATIONAL_DEX_BUKAMON,
         .categoryName = _("Mole"),
         .height = 7,
         .weight = 666,
@@ -5300,24 +5300,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_DugtrioAlolan,
+        .frontPic = gMonFrontPic_BukamonAlolan,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_DugtrioAlolan,
+        .frontAnimFrames = sAnims_BukamonAlolan,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_DugtrioAlolan,
+        .backPic = gMonBackPic_BukamonAlolan,
         .backPicSize = MON_COORDS_SIZE(64, 32),
         .backPicYOffset = 17,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_DugtrioAlolan,
-        .shinyPalette = gMonShinyPalette_DugtrioAlolan,
-        .iconSprite = gMonIcon_DugtrioAlolan,
+        .palette = gMonPalette_BukamonAlolan,
+        .shinyPalette = gMonShinyPalette_BukamonAlolan,
+        .iconSprite = gMonIcon_BukamonAlolan,
         .iconPalIndex = 2,
-        FOOTPRINT(Dugtrio)
+        FOOTPRINT(Bukamon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sDugtrioAlolanLevelUpLearnset,
-        .teachableLearnset = sDugtrioAlolanTeachableLearnset,
-        .formSpeciesIdTable = sDugtrioFormSpeciesIdTable,
+        .levelUpLearnset = sBukamonAlolanLevelUpLearnset,
+        .teachableLearnset = sBukamonAlolanTeachableLearnset,
+        .formSpeciesIdTable = sBukamonFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_BUDMON

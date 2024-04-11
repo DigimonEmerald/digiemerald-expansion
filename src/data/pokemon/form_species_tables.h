@@ -137,9 +137,9 @@ static const u16 sBudmonFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
-static const u16 sDugtrioFormSpeciesIdTable[] = {
-    SPECIES_DUGTRIO,
-    SPECIES_DUGTRIO_ALOLAN,
+static const u16 sBukamonFormSpeciesIdTable[] = {
+    SPECIES_BUKAMON,
+    SPECIES_BUKAMON_ALOLAN,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_BUDMON
