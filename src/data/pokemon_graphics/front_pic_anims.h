@@ -1005,8 +1005,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(KozenimonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_KOKOMON
 
-#if P_FAMILY_BELLSPROUT
-static const union AnimCmd sAnim_Bellsprout_1[] =
+#if P_FAMILY_KYAROMON
+static const union AnimCmd sAnim_Kyaromon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 25),
@@ -1037,7 +1037,7 @@ static const union AnimCmd sAnim_Victreebel_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_BELLSPROUT
+#endif //P_FAMILY_KYAROMON
 
 #if P_FAMILY_TENTACOOL
 static const union AnimCmd sAnim_Tentacool_1[] =
@@ -10386,11 +10386,11 @@ SINGLE_ANIMATION(Kozenimon);
 SINGLE_ANIMATION(KozenimonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_KOKOMON
-#if P_FAMILY_BELLSPROUT
-SINGLE_ANIMATION(Bellsprout);
+#if P_FAMILY_KYAROMON
+SINGLE_ANIMATION(Kyaromon);
 SINGLE_ANIMATION(Weepinbell);
 SINGLE_ANIMATION(Victreebel);
-#endif //P_FAMILY_BELLSPROUT
+#endif //P_FAMILY_KYAROMON
 #if P_FAMILY_TENTACOOL
 SINGLE_ANIMATION(Tentacool);
 SINGLE_ANIMATION(Tentacruel);

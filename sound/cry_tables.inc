@@ -165,11 +165,11 @@ gCryTable::
 	cry Cry_Koromon
 	cry Cry_Kozenimon
 .endif @ P_FAMILY_KOKOMON
-.if P_FAMILY_BELLSPROUT == TRUE
-	cry Cry_Bellsprout
+.if P_FAMILY_KYAROMON == TRUE
+	cry Cry_Kyaromon
 	cry Cry_Weepinbell
 	cry Cry_Victreebel
-.endif @ P_FAMILY_BELLSPROUT
+.endif @ P_FAMILY_KYAROMON
 .if P_FAMILY_TENTACOOL == TRUE
 	cry Cry_Tentacool
 	cry Cry_Tentacruel
@@ -2591,11 +2591,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Koromon
 	cry_reverse Cry_Kozenimon
 .endif @ P_FAMILY_KOKOMON
-.if P_FAMILY_BELLSPROUT == TRUE
-	cry_reverse Cry_Bellsprout
+.if P_FAMILY_KYAROMON == TRUE
+	cry_reverse Cry_Kyaromon
 	cry_reverse Cry_Weepinbell
 	cry_reverse Cry_Victreebel
-.endif @ P_FAMILY_BELLSPROUT
+.endif @ P_FAMILY_KYAROMON
 .if P_FAMILY_TENTACOOL == TRUE
 	cry_reverse Cry_Tentacool
 	cry_reverse Cry_Tentacruel

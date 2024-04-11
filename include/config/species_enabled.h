@@ -80,7 +80,7 @@
 #define P_FAMILY_GUMMYMON                 P_GEN_1_POKEMON
 #define P_FAMILY_HOPMON                    P_GEN_1_POKEMON
 #define P_FAMILY_KOKOMON                  P_GEN_1_POKEMON
-#define P_FAMILY_BELLSPROUT              P_GEN_1_POKEMON
+#define P_FAMILY_KYAROMON              P_GEN_1_POKEMON
 #define P_FAMILY_TENTACOOL               P_GEN_1_POKEMON
 #define P_FAMILY_GEODUDE                 P_GEN_1_POKEMON
 #define P_FAMILY_PONYTA                  P_GEN_1_POKEMON

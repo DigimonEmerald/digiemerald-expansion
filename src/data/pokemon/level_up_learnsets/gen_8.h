@@ -1796,8 +1796,8 @@ static const struct LevelUpMove sKozenimonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_KOKOMON
 
-#if P_FAMILY_BELLSPROUT
-static const struct LevelUpMove sBellsproutLevelUpLearnset[] = {
+#if P_FAMILY_KYAROMON
+static const struct LevelUpMove sKyaromonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_VINE_WHIP),
     LEVEL_UP_MOVE( 7, MOVE_GROWTH),
     LEVEL_UP_MOVE(11, MOVE_WRAP),
@@ -1856,7 +1856,7 @@ static const struct LevelUpMove sVictreebelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_LEAF_BLADE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_BELLSPROUT
+#endif //P_FAMILY_KYAROMON
 
 #if P_FAMILY_TENTACOOL
 static const struct LevelUpMove sTentacoolLevelUpLearnset[] = {

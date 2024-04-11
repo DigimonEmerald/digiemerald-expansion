@@ -3405,8 +3405,8 @@ static const u16 sKozenimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_KOKOMON
 
-#if P_FAMILY_BELLSPROUT
-static const u16 sBellsproutTeachableLearnset[] = {
+#if P_FAMILY_KYAROMON
+static const u16 sKyaromonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,
@@ -3485,7 +3485,7 @@ static const u16 sVictreebelTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BELLSPROUT
+#endif //P_FAMILY_KYAROMON
 
 #if P_FAMILY_TENTACOOL
 static const u16 sTentacoolTeachableLearnset[] = {

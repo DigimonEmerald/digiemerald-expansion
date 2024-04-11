@@ -1109,14 +1109,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_KOKOMON
 
-#if P_FAMILY_BELLSPROUT
-    const u32 gMonFrontPic_Bellsprout[] = INCBIN_U32("graphics/pokemon/bellsprout/anim_front.4bpp.lz");
-    const u32 gMonPalette_Bellsprout[] = INCBIN_U32("graphics/pokemon/bellsprout/normal.gbapal.lz");
-    const u32 gMonBackPic_Bellsprout[] = INCBIN_U32("graphics/pokemon/bellsprout/back.4bpp.lz");
-    const u32 gMonShinyPalette_Bellsprout[] = INCBIN_U32("graphics/pokemon/bellsprout/shiny.gbapal.lz");
-    const u8 gMonIcon_Bellsprout[] = INCBIN_U8("graphics/pokemon/bellsprout/icon.4bpp");
+#if P_FAMILY_KYAROMON
+    const u32 gMonFrontPic_Kyaromon[] = INCBIN_U32("graphics/pokemon/kyaromon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Kyaromon[] = INCBIN_U32("graphics/pokemon/kyaromon/normal.gbapal.lz");
+    const u32 gMonBackPic_Kyaromon[] = INCBIN_U32("graphics/pokemon/kyaromon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Kyaromon[] = INCBIN_U32("graphics/pokemon/kyaromon/shiny.gbapal.lz");
+    const u8 gMonIcon_Kyaromon[] = INCBIN_U8("graphics/pokemon/kyaromon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Bellsprout[] = INCBIN_U8("graphics/pokemon/bellsprout/footprint.1bpp");
+    const u8 gMonFootprint_Kyaromon[] = INCBIN_U8("graphics/pokemon/kyaromon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Weepinbell[] = INCBIN_U32("graphics/pokemon/weepinbell/anim_front.4bpp.lz");
@@ -1136,7 +1136,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Victreebel[] = INCBIN_U8("graphics/pokemon/victreebel/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_BELLSPROUT
+#endif //P_FAMILY_KYAROMON
 
 #if P_FAMILY_TENTACOOL
     const u32 gMonFrontPic_Tentacool[] = INCBIN_U32("graphics/pokemon/tentacool/anim_front.4bpp.lz");

@@ -801,10 +801,10 @@ Cry_Kozenimon::
 	.incbin "sound/direct_sound_samples/cries/kozenimon.bin"
 .endif @ P_FAMILY_KOKOMON
 
-.if P_FAMILY_BELLSPROUT == TRUE
+.if P_FAMILY_KYAROMON == TRUE
 	.align 2
-Cry_Bellsprout::
-	.incbin "sound/direct_sound_samples/cries/bellsprout.bin"
+Cry_Kyaromon::
+	.incbin "sound/direct_sound_samples/cries/kyaromon.bin"
 
 	.align 2
 Cry_Weepinbell::
@@ -813,7 +813,7 @@ Cry_Weepinbell::
 	.align 2
 Cry_Victreebel::
 	.incbin "sound/direct_sound_samples/cries/victreebel.bin"
-.endif @ P_FAMILY_BELLSPROUT
+.endif @ P_FAMILY_KYAROMON
 
 .if P_FAMILY_TENTACOOL == TRUE
 	.align 2

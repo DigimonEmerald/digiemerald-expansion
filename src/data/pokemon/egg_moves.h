@@ -545,8 +545,8 @@ const u16 gEggMoves[] = {
         MOVE_QUICK_GUARD),
 #endif //P_FAMILY_KOKOMON
 
-#if P_FAMILY_BELLSPROUT
-    egg_moves(BELLSPROUT,
+#if P_FAMILY_KYAROMON
+    egg_moves(KYAROMON,
         MOVE_ENCORE,
         MOVE_SYNTHESIS,
         MOVE_LEECH_LIFE,
@@ -563,7 +563,7 @@ const u16 gEggMoves[] = {
         MOVE_ACID_SPRAY,
         MOVE_BELCH,
         MOVE_STRENGTH_SAP),
-#endif //P_FAMILY_BELLSPROUT
+#endif //P_FAMILY_KYAROMON
 
 #if P_FAMILY_TENTACOOL
     egg_moves(TENTACOOL,

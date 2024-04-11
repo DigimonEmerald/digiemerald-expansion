@@ -6938,8 +6938,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_KOKOMON
 
-#if P_FAMILY_BELLSPROUT
-    [SPECIES_BELLSPROUT] =
+#if P_FAMILY_KYAROMON
+    [SPECIES_KYAROMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 75,
@@ -6958,14 +6958,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_NONE, ABILITY_GLUTTONY },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Bellsprout"),
-        .cryId = CRY_BELLSPROUT,
-        .natDexNum = NATIONAL_DEX_BELLSPROUT,
+        .speciesName = _("Kyaromon"),
+        .cryId = CRY_KYAROMON,
+        .natDexNum = NATIONAL_DEX_KYAROMON,
         .categoryName = _("Flower"),
         .height = 7,
         .weight = 40,
         .description = COMPOUND_STRING(
-            "A Bellsprout's thin and flexible body lets\n"
+            "A Kyaromon's thin and flexible body lets\n"
             "it bend and sway to avoid any attack,\n"
             "however strong it may be. From its mouth,\n"
             "it leaks a fluid that melts even iron."),
@@ -6973,22 +6973,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 16,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Bellsprout,
+        .frontPic = gMonFrontPic_Kyaromon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Bellsprout,
+        .frontAnimFrames = sAnims_Kyaromon,
         .frontAnimId = ANIM_H_JUMPS,
-        .backPic = gMonBackPic_Bellsprout,
+        .backPic = gMonBackPic_Kyaromon,
         .backPicSize = MON_COORDS_SIZE(40, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Bellsprout,
-        .shinyPalette = gMonShinyPalette_Bellsprout,
-        .iconSprite = gMonIcon_Bellsprout,
+        .palette = gMonPalette_Kyaromon,
+        .shinyPalette = gMonShinyPalette_Kyaromon,
+        .iconSprite = gMonIcon_Kyaromon,
         .iconPalIndex = 1,
-        FOOTPRINT(Bellsprout)
-        .levelUpLearnset = sBellsproutLevelUpLearnset,
-        .teachableLearnset = sBellsproutTeachableLearnset,
+        FOOTPRINT(Kyaromon)
+        .levelUpLearnset = sKyaromonLevelUpLearnset,
+        .teachableLearnset = sKyaromonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_WEEPINBELL}),
     },
 
@@ -7105,7 +7105,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sVictreebelLevelUpLearnset,
         .teachableLearnset = sVictreebelTeachableLearnset,
     },
-#endif //P_FAMILY_BELLSPROUT
+#endif //P_FAMILY_KYAROMON
 
 #if P_FAMILY_TENTACOOL
     [SPECIES_TENTACOOL] =
