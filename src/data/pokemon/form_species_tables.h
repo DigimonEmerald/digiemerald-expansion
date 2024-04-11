@@ -217,9 +217,9 @@ static const u16 sNegamonFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
-static const u16 sRapidashFormSpeciesIdTable[] = {
-    SPECIES_RAPIDASH,
-    SPECIES_RAPIDASH_GALARIAN,
+static const u16 sNyaromonFormSpeciesIdTable[] = {
+    SPECIES_NYAROMON,
+    SPECIES_NYAROMON_GALARIAN,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_NEGAMON

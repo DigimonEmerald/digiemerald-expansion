@@ -2824,7 +2824,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                         },
                                     [4] =
                                         {
-                                            .species = SPECIES_RAPIDASH,
+                                            .species = SPECIES_NYAROMON,
                                             .heldItem = ITEM_KINGS_ROCK,
                                             .moves = {MOVE_FIRE_BLAST, MOVE_BOUNCE, MOVE_QUICK_ATTACK, MOVE_SUNNY_DAY},
                                             .speedEV = 255,
@@ -2838,7 +2838,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 1,
                                             .personality = 0xF,
-                                            .nickname = _("RAPIDASH"),
+                                            .nickname = _("NYAROMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [5] =

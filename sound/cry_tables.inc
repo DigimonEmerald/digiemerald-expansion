@@ -181,7 +181,7 @@ gCryTable::
 .endif @ P_FAMILY_MONIMON
 .if P_FAMILY_NEGAMON == TRUE
 	cry Cry_Negamon
-	cry Cry_Rapidash
+	cry Cry_Nyaromon
 .endif @ P_FAMILY_NEGAMON
 .if P_FAMILY_SLOWPOKE == TRUE
 	cry Cry_Slowpoke
@@ -2607,7 +2607,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_MONIMON
 .if P_FAMILY_NEGAMON == TRUE
 	cry_reverse Cry_Negamon
-	cry_reverse Cry_Rapidash
+	cry_reverse Cry_Nyaromon
 .endif @ P_FAMILY_NEGAMON
 .if P_FAMILY_SLOWPOKE == TRUE
 	cry_reverse Cry_Slowpoke

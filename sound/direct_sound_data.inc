@@ -845,8 +845,8 @@ Cry_Negamon::
 	.incbin "sound/direct_sound_samples/cries/negamon.bin"
 
 	.align 2
-Cry_Rapidash::
-	.incbin "sound/direct_sound_samples/cries/rapidash.bin"
+Cry_Nyaromon::
+	.incbin "sound/direct_sound_samples/cries/nyaromon.bin"
 .endif @ P_FAMILY_NEGAMON
 
 .if P_FAMILY_SLOWPOKE == TRUE

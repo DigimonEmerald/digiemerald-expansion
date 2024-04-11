@@ -7629,10 +7629,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sNegamonLevelUpLearnset,
         .teachableLearnset = sNegamonTeachableLearnset,
         .formSpeciesIdTable = sNegamonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_RAPIDASH}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_NYAROMON}),
     },
 
-    [SPECIES_RAPIDASH] =
+    [SPECIES_NYAROMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 100,
@@ -7651,38 +7651,38 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_RUN_AWAY, ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Rapidash"),
-        .cryId = CRY_RAPIDASH,
-        .natDexNum = NATIONAL_DEX_RAPIDASH,
+        .speciesName = _("Nyaromon"),
+        .cryId = CRY_NYAROMON,
+        .natDexNum = NATIONAL_DEX_NYAROMON,
         .categoryName = _("Fire Horse"),
         .height = 17,
         .weight = 950,
         .description = COMPOUND_STRING(
             "It usually canters casually in the fields\n"
-            "and plains. But once a Rapidash turns\n"
+            "and plains. But once a Nyaromon turns\n"
             "serious, its fiery manes flare and blaze\n"
             "as it gallops its way up to 150 mph."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 289,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Rapidash,
+        .frontPic = gMonFrontPic_Nyaromon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Rapidash,
+        .frontAnimFrames = sAnims_Nyaromon,
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Rapidash,
+        .backPic = gMonBackPic_Nyaromon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Rapidash,
-        .shinyPalette = gMonShinyPalette_Rapidash,
-        .iconSprite = gMonIcon_Rapidash,
+        .palette = gMonPalette_Nyaromon,
+        .shinyPalette = gMonShinyPalette_Nyaromon,
+        .iconSprite = gMonIcon_Nyaromon,
         .iconPalIndex = 3,
-        FOOTPRINT(Rapidash)
-        .levelUpLearnset = sRapidashLevelUpLearnset,
-        .teachableLearnset = sRapidashTeachableLearnset,
-        .formSpeciesIdTable = sRapidashFormSpeciesIdTable,
+        FOOTPRINT(Nyaromon)
+        .levelUpLearnset = sNyaromonLevelUpLearnset,
+        .teachableLearnset = sNyaromonTeachableLearnset,
+        .formSpeciesIdTable = sNyaromonFormSpeciesIdTable,
     },
 
 #if P_GALARIAN_FORMS
@@ -7738,10 +7738,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sNegamonGalarianLevelUpLearnset,
         .teachableLearnset = sNegamonGalarianTeachableLearnset,
         .formSpeciesIdTable = sNegamonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_RAPIDASH_GALARIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_NYAROMON_GALARIAN}),
     },
 
-    [SPECIES_RAPIDASH_GALARIAN] =
+    [SPECIES_NYAROMON_GALARIAN] =
     {
         .baseHP        = 65,
         .baseAttack    = 100,
@@ -7760,9 +7760,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_RUN_AWAY, ABILITY_PASTEL_VEIL, ABILITY_ANTICIPATION },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Rapidash"),
-        .cryId = CRY_RAPIDASH,
-        .natDexNum = NATIONAL_DEX_RAPIDASH,
+        .speciesName = _("Nyaromon"),
+        .cryId = CRY_NYAROMON,
+        .natDexNum = NATIONAL_DEX_NYAROMON,
         .categoryName = _("Unique Horn"),
         .height = 17,
         .weight = 800,
@@ -7775,24 +7775,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 289,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_RapidashGalarian,
+        .frontPic = gMonFrontPic_NyaromonGalarian,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_RapidashGalarian,
+        .frontAnimFrames = sAnims_NyaromonGalarian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_RapidashGalarian,
+        .backPic = gMonBackPic_NyaromonGalarian,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_RapidashGalarian,
-        .shinyPalette = gMonShinyPalette_RapidashGalarian,
-        .iconSprite = gMonIcon_RapidashGalarian,
+        .palette = gMonPalette_NyaromonGalarian,
+        .shinyPalette = gMonShinyPalette_NyaromonGalarian,
+        .iconSprite = gMonIcon_NyaromonGalarian,
         .iconPalIndex = 2,
-        FOOTPRINT(Rapidash)
+        FOOTPRINT(Nyaromon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sRapidashGalarianLevelUpLearnset,
-        .teachableLearnset = sRapidashGalarianTeachableLearnset,
-        .formSpeciesIdTable = sRapidashFormSpeciesIdTable,
+        .levelUpLearnset = sNyaromonGalarianLevelUpLearnset,
+        .teachableLearnset = sNyaromonGalarianTeachableLearnset,
+        .formSpeciesIdTable = sNyaromonFormSpeciesIdTable,
     },
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_NEGAMON

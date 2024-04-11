@@ -244,7 +244,7 @@ SINGLE_BATTLE_TEST("Recoil damage is not applied if target was protected")
         ASSUME(gMovesInfo[MOVE_HEAD_SMASH].recoil > 0);
         ASSUME(gMovesInfo[MOVE_TAKE_DOWN].recoil > 0);
         ASSUME(gMovesInfo[MOVE_DOUBLE_EDGE].recoil > 0);
-        PLAYER(SPECIES_RAPIDASH);
+        PLAYER(SPECIES_NYAROMON);
         OPPONENT(SPECIES_BEAUTIFLY);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); MOVE(player, MOVE_TACKLE); }
@@ -253,14 +253,14 @@ SINGLE_BATTLE_TEST("Recoil damage is not applied if target was protected")
     } SCENE {
         // 1st turn
         MESSAGE("Foe Beautifly used Tackle!");
-        MESSAGE("Rapidash used Tackle!");
+        MESSAGE("Nyaromon used Tackle!");
         // 2nd turn
         ANIMATION(ANIM_TYPE_MOVE, protectMove, opponent);
         MESSAGE("Foe Beautifly protected itself!");
-        // MESSAGE("Rapidash used recoilMove!");
+        // MESSAGE("Nyaromon used recoilMove!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, recoilMove, player);
-            MESSAGE("Rapidash is hit with recoil!");
+            MESSAGE("Nyaromon is hit with recoil!");
         }
     }
 }
@@ -279,7 +279,7 @@ SINGLE_BATTLE_TEST("Multi-hit moves don't hit a protected target and fail only o
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_ARM_THRUST].effect == EFFECT_MULTI_HIT);
-        PLAYER(SPECIES_RAPIDASH);
+        PLAYER(SPECIES_NYAROMON);
         OPPONENT(SPECIES_BEAUTIFLY);
     } WHEN {
         TURN { MOVE(opponent, move); MOVE(player, MOVE_ARM_THRUST); }
@@ -287,7 +287,7 @@ SINGLE_BATTLE_TEST("Multi-hit moves don't hit a protected target and fail only o
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
         MESSAGE("Foe Beautifly protected itself!");
-        MESSAGE("Rapidash used Arm Thrust!");
+        MESSAGE("Nyaromon used Arm Thrust!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_ARM_THRUST, player);
         MESSAGE("Foe Beautifly protected itself!");
         // Each effect happens only once.

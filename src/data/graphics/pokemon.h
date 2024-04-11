@@ -1217,13 +1217,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Negamon[] = INCBIN_U8("graphics/pokemon/negamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Rapidash[] = INCBIN_U32("graphics/pokemon/rapidash/anim_front.4bpp.lz");
-    const u32 gMonPalette_Rapidash[] = INCBIN_U32("graphics/pokemon/rapidash/normal.gbapal.lz");
-    const u32 gMonBackPic_Rapidash[] = INCBIN_U32("graphics/pokemon/rapidash/back.4bpp.lz");
-    const u32 gMonShinyPalette_Rapidash[] = INCBIN_U32("graphics/pokemon/rapidash/shiny.gbapal.lz");
-    const u8 gMonIcon_Rapidash[] = INCBIN_U8("graphics/pokemon/rapidash/icon.4bpp");
+    const u32 gMonFrontPic_Nyaromon[] = INCBIN_U32("graphics/pokemon/nyaromon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Nyaromon[] = INCBIN_U32("graphics/pokemon/nyaromon/normal.gbapal.lz");
+    const u32 gMonBackPic_Nyaromon[] = INCBIN_U32("graphics/pokemon/nyaromon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Nyaromon[] = INCBIN_U32("graphics/pokemon/nyaromon/shiny.gbapal.lz");
+    const u8 gMonIcon_Nyaromon[] = INCBIN_U8("graphics/pokemon/nyaromon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Rapidash[] = INCBIN_U8("graphics/pokemon/rapidash/footprint.1bpp");
+    const u8 gMonFootprint_Nyaromon[] = INCBIN_U8("graphics/pokemon/nyaromon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GALARIAN_FORMS
@@ -1233,11 +1233,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_NegamonGalarian[] = INCBIN_U32("graphics/pokemon/negamon/galarian/shiny.gbapal.lz");
     const u8 gMonIcon_NegamonGalarian[] = INCBIN_U8("graphics/pokemon/negamon/galarian/icon.4bpp");
 
-    const u32 gMonFrontPic_RapidashGalarian[] = INCBIN_U32("graphics/pokemon/rapidash/galarian/front.4bpp.lz");
-    const u32 gMonPalette_RapidashGalarian[] = INCBIN_U32("graphics/pokemon/rapidash/galarian/normal.gbapal.lz");
-    const u32 gMonBackPic_RapidashGalarian[] = INCBIN_U32("graphics/pokemon/rapidash/galarian/back.4bpp.lz");
-    const u32 gMonShinyPalette_RapidashGalarian[] = INCBIN_U32("graphics/pokemon/rapidash/galarian/shiny.gbapal.lz");
-    const u8 gMonIcon_RapidashGalarian[] = INCBIN_U8("graphics/pokemon/rapidash/galarian/icon.4bpp");
+    const u32 gMonFrontPic_NyaromonGalarian[] = INCBIN_U32("graphics/pokemon/nyaromon/galarian/front.4bpp.lz");
+    const u32 gMonPalette_NyaromonGalarian[] = INCBIN_U32("graphics/pokemon/nyaromon/galarian/normal.gbapal.lz");
+    const u32 gMonBackPic_NyaromonGalarian[] = INCBIN_U32("graphics/pokemon/nyaromon/galarian/back.4bpp.lz");
+    const u32 gMonShinyPalette_NyaromonGalarian[] = INCBIN_U32("graphics/pokemon/nyaromon/galarian/shiny.gbapal.lz");
+    const u8 gMonIcon_NyaromonGalarian[] = INCBIN_U8("graphics/pokemon/nyaromon/galarian/icon.4bpp");
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_NEGAMON
 

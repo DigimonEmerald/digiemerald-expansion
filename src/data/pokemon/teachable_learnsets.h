@@ -3826,7 +3826,7 @@ static const u16 sNegamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sRapidashTeachableLearnset[] = {
+static const u16 sNyaromonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
@@ -3873,7 +3873,7 @@ static const u16 sNegamonGalarianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sRapidashGalarianTeachableLearnset[] = {
+static const u16 sNyaromonGalarianTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_FACADE,

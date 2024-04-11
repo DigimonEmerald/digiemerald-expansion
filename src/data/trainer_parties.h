@@ -10226,7 +10226,7 @@ static const struct TrainerMon sParty_Flannery4[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 46,
-    .species = SPECIES_RAPIDASH,
+    .species = SPECIES_NYAROMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_FLAMETHROWER, MOVE_ATTRACT, MOVE_SOLAR_BEAM, MOVE_BOUNCE}
     },
@@ -10271,7 +10271,7 @@ static const struct TrainerMon sParty_Flannery5[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 51,
-    .species = SPECIES_RAPIDASH,
+    .species = SPECIES_NYAROMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_FLAMETHROWER, MOVE_ATTRACT, MOVE_SOLAR_BEAM, MOVE_BOUNCE}
     },

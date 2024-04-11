@@ -1105,7 +1105,7 @@ static const union AnimCmd sAnim_Negamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Rapidash_1[] =
+static const union AnimCmd sAnim_Nyaromon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 40),
@@ -1115,7 +1115,7 @@ static const union AnimCmd sAnim_Rapidash_1[] =
 
 #if P_GALARIAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(NegamonGalarian);
-PLACEHOLDER_ANIM_SINGLE_FRAME(RapidashGalarian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(NyaromonGalarian);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_NEGAMON
 
@@ -10407,10 +10407,10 @@ SINGLE_ANIMATION(MotimonAlolan);
 #endif //P_FAMILY_MONIMON
 #if P_FAMILY_NEGAMON
 SINGLE_ANIMATION(Negamon);
-SINGLE_ANIMATION(Rapidash);
+SINGLE_ANIMATION(Nyaromon);
 #if P_GALARIAN_FORMS
 SINGLE_ANIMATION(NegamonGalarian);
-SINGLE_ANIMATION(RapidashGalarian);
+SINGLE_ANIMATION(NyaromonGalarian);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_NEGAMON
 #if P_FAMILY_SLOWPOKE
