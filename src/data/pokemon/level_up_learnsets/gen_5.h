@@ -2236,8 +2236,8 @@ static const struct LevelUpMove sSirfetchdLevelUpLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PINAMON
 
-#if P_FAMILY_DODUO
-static const struct LevelUpMove sDoduoLevelUpLearnset[] = {
+#if P_FAMILY_POROMON
+static const struct LevelUpMove sPoromonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 5, MOVE_QUICK_ATTACK),
@@ -2273,7 +2273,7 @@ static const struct LevelUpMove sDodrioLevelUpLearnset[] = {
     LEVEL_UP_MOVE(60, MOVE_THRASH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_DODUO
+#endif //P_FAMILY_POROMON
 
 #if P_FAMILY_SEEL
 static const struct LevelUpMove sSeelLevelUpLearnset[] = {

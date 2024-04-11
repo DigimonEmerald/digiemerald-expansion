@@ -1361,18 +1361,18 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PINAMON
 
-#if P_FAMILY_DODUO
-    const u32 gMonFrontPic_Doduo[] = INCBIN_U32("graphics/pokemon/doduo/anim_front.4bpp.lz");
-    const u32 gMonPalette_Doduo[] = INCBIN_U32("graphics/pokemon/doduo/normal.gbapal.lz");
-    const u32 gMonBackPic_Doduo[] = INCBIN_U32("graphics/pokemon/doduo/back.4bpp.lz");
-    const u32 gMonShinyPalette_Doduo[] = INCBIN_U32("graphics/pokemon/doduo/shiny.gbapal.lz");
-    const u8 gMonIcon_Doduo[] = INCBIN_U8("graphics/pokemon/doduo/icon.4bpp");
+#if P_FAMILY_POROMON
+    const u32 gMonFrontPic_Poromon[] = INCBIN_U32("graphics/pokemon/poromon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Poromon[] = INCBIN_U32("graphics/pokemon/poromon/normal.gbapal.lz");
+    const u32 gMonBackPic_Poromon[] = INCBIN_U32("graphics/pokemon/poromon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Poromon[] = INCBIN_U32("graphics/pokemon/poromon/shiny.gbapal.lz");
+    const u8 gMonIcon_Poromon[] = INCBIN_U8("graphics/pokemon/poromon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Doduo[] = INCBIN_U8("graphics/pokemon/doduo/footprint.1bpp");
+    const u8 gMonFootprint_Poromon[] = INCBIN_U8("graphics/pokemon/poromon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_DoduoF[] = INCBIN_U32("graphics/pokemon/doduo/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_DoduoF[] = INCBIN_U32("graphics/pokemon/doduo/backf.4bpp.lz");
+    const u32 gMonFrontPic_PoromonF[] = INCBIN_U32("graphics/pokemon/poromon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_PoromonF[] = INCBIN_U32("graphics/pokemon/poromon/backf.4bpp.lz");
 
     const u32 gMonFrontPic_Dodrio[] = INCBIN_U32("graphics/pokemon/dodrio/anim_front.4bpp.lz");
     const u32 gMonPalette_Dodrio[] = INCBIN_U32("graphics/pokemon/dodrio/normal.gbapal.lz");
@@ -1385,7 +1385,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
     const u32 gMonFrontPic_DodrioF[] = INCBIN_U32("graphics/pokemon/dodrio/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_DodrioF[] = INCBIN_U32("graphics/pokemon/dodrio/backf.4bpp.lz");
-#endif //P_FAMILY_DODUO
+#endif //P_FAMILY_POROMON
 
 #if P_FAMILY_SEEL
     const u32 gMonFrontPic_Seel[] = INCBIN_U32("graphics/pokemon/seel/anim_front.4bpp.lz");

@@ -209,10 +209,10 @@ gCryTable::
 	cry Cry_Sirfetchd
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_PINAMON
-.if P_FAMILY_DODUO == TRUE
-	cry Cry_Doduo
+.if P_FAMILY_POROMON == TRUE
+	cry Cry_Poromon
 	cry Cry_Dodrio
-.endif @ P_FAMILY_DODUO
+.endif @ P_FAMILY_POROMON
 .if P_FAMILY_SEEL == TRUE
 	cry Cry_Seel
 	cry Cry_Dewgong
@@ -2635,10 +2635,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Sirfetchd
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_PINAMON
-.if P_FAMILY_DODUO == TRUE
-	cry_reverse Cry_Doduo
+.if P_FAMILY_POROMON == TRUE
+	cry_reverse Cry_Poromon
 	cry_reverse Cry_Dodrio
-.endif @ P_FAMILY_DODUO
+.endif @ P_FAMILY_POROMON
 .if P_FAMILY_SEEL == TRUE
 	cry_reverse Cry_Seel
 	cry_reverse Cry_Dewgong

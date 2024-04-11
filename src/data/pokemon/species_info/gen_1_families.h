@@ -8546,8 +8546,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PINAMON
 
-#if P_FAMILY_DODUO
-    [SPECIES_DODUO] =
+#if P_FAMILY_POROMON
+    [SPECIES_POROMON] =
     {
         .baseHP        = 35,
         .baseAttack    = 85,
@@ -8567,9 +8567,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_RUN_AWAY, ABILITY_EARLY_BIRD, ABILITY_TANGLED_FEET },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Doduo"),
-        .cryId = CRY_DODUO,
-        .natDexNum = NATIONAL_DEX_DODUO,
+        .speciesName = _("Poromon"),
+        .cryId = CRY_POROMON,
+        .natDexNum = NATIONAL_DEX_POROMON,
         .categoryName = _("Twin Bird"),
         .height = 14,
         .weight = 392,
@@ -8582,26 +8582,26 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 3,
         .trainerScale = 257,
         .trainerOffset = -1,
-        .frontPic = gMonFrontPic_Doduo,
-        .frontPicFemale = gMonFrontPic_DoduoF,
+        .frontPic = gMonFrontPic_Poromon,
+        .frontPicFemale = gMonFrontPic_PoromonF,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Doduo,
+        .frontAnimFrames = sAnims_Poromon,
         .frontAnimId = ANIM_H_SHAKE_SLOW,
-        .backPic = gMonBackPic_Doduo,
-        .backPicFemale = gMonBackPic_DoduoF,
+        .backPic = gMonBackPic_Poromon,
+        .backPicFemale = gMonBackPic_PoromonF,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Doduo,
-        .shinyPalette = gMonShinyPalette_Doduo,
-        .iconSprite = gMonIcon_Doduo,
+        .palette = gMonPalette_Poromon,
+        .shinyPalette = gMonShinyPalette_Poromon,
+        .iconSprite = gMonIcon_Poromon,
         .iconPalIndex = 2,
-        FOOTPRINT(Doduo)
-        .levelUpLearnset = sDoduoLevelUpLearnset,
-        .teachableLearnset = sDoduoTeachableLearnset,
+        FOOTPRINT(Poromon)
+        .levelUpLearnset = sPoromonLevelUpLearnset,
+        .teachableLearnset = sPoromonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_DODRIO}),
     },
 
@@ -8667,7 +8667,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sDodrioLevelUpLearnset,
         .teachableLearnset = sDodrioTeachableLearnset,
     },
-#endif //P_FAMILY_DODUO
+#endif //P_FAMILY_POROMON
 
 #if P_FAMILY_SEEL
     [SPECIES_SEEL] =

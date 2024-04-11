@@ -1218,8 +1218,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Sirfetchd);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PINAMON
 
-#if P_FAMILY_DODUO
-static const union AnimCmd sAnim_Doduo_1[] =
+#if P_FAMILY_POROMON
+static const union AnimCmd sAnim_Poromon_1[] =
 {
     ANIMCMD_FRAME(0, 18),
     ANIMCMD_FRAME(1, 18),
@@ -1240,7 +1240,7 @@ static const union AnimCmd sAnim_Dodrio_1[] =
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_DODUO
+#endif //P_FAMILY_POROMON
 
 #if P_FAMILY_SEEL
 static const union AnimCmd sAnim_Seel_1[] =
@@ -10444,10 +10444,10 @@ SINGLE_ANIMATION(PinamonGalarian);
 SINGLE_ANIMATION(Sirfetchd);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PINAMON
-#if P_FAMILY_DODUO
-SINGLE_ANIMATION(Doduo);
+#if P_FAMILY_POROMON
+SINGLE_ANIMATION(Poromon);
 SINGLE_ANIMATION(Dodrio);
-#endif //P_FAMILY_DODUO
+#endif //P_FAMILY_POROMON
 #if P_FAMILY_SEEL
 SINGLE_ANIMATION(Seel);
 SINGLE_ANIMATION(Dewgong);

@@ -905,15 +905,15 @@ Cry_Sirfetchd::
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_PINAMON
 
-.if P_FAMILY_DODUO == TRUE
+.if P_FAMILY_POROMON == TRUE
 	.align 2
-Cry_Doduo::
-	.incbin "sound/direct_sound_samples/cries/doduo.bin"
+Cry_Poromon::
+	.incbin "sound/direct_sound_samples/cries/poromon.bin"
 
 	.align 2
 Cry_Dodrio::
 	.incbin "sound/direct_sound_samples/cries/dodrio.bin"
-.endif @ P_FAMILY_DODUO
+.endif @ P_FAMILY_POROMON
 
 .if P_FAMILY_SEEL == TRUE
 	.align 2

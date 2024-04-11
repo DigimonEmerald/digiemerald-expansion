@@ -87,7 +87,7 @@
 #define P_FAMILY_PAGUMON                P_GEN_1_POKEMON
 #define P_FAMILY_PICKMON_WHITE               P_GEN_1_POKEMON
 #define P_FAMILY_PINAMON               P_GEN_1_POKEMON
-#define P_FAMILY_DODUO                   P_GEN_1_POKEMON
+#define P_FAMILY_POROMON                   P_GEN_1_POKEMON
 #define P_FAMILY_SEEL                    P_GEN_1_POKEMON
 #define P_FAMILY_GRIMER                  P_GEN_1_POKEMON
 #define P_FAMILY_SHELLDER                P_GEN_1_POKEMON

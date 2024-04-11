@@ -4362,8 +4362,8 @@ static const u16 sSirfetchdTeachableLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PINAMON
 
-#if P_FAMILY_DODUO
-static const u16 sDoduoTeachableLearnset[] = {
+#if P_FAMILY_POROMON
+static const u16 sPoromonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
@@ -4417,7 +4417,7 @@ static const u16 sDodrioTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DODUO
+#endif //P_FAMILY_POROMON
 
 #if P_FAMILY_SEEL
 static const u16 sSeelTeachableLearnset[] = {

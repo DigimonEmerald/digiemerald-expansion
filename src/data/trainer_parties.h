@@ -4632,7 +4632,7 @@ static const struct TrainerMon sParty_Abigail5[] = {
 static const struct TrainerMon sParty_Dylan1[] = {
     {
     .lvl = 17,
-    .species = SPECIES_DODUO,
+    .species = SPECIES_POROMON,
     }
 };
 
@@ -4640,7 +4640,7 @@ static const struct TrainerMon sParty_Dylan2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 28,
-    .species = SPECIES_DODUO,
+    .species = SPECIES_POROMON,
     }
 };
 
@@ -4648,7 +4648,7 @@ static const struct TrainerMon sParty_Dylan3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 31,
-    .species = SPECIES_DODUO,
+    .species = SPECIES_POROMON,
     }
 };
 
@@ -4671,7 +4671,7 @@ static const struct TrainerMon sParty_Dylan5[] = {
 static const struct TrainerMon sParty_Maria1[] = {
     {
     .lvl = 17,
-    .species = SPECIES_DODUO,
+    .species = SPECIES_POROMON,
     }
 };
 
@@ -4679,7 +4679,7 @@ static const struct TrainerMon sParty_Maria2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 28,
-    .species = SPECIES_DODUO,
+    .species = SPECIES_POROMON,
     }
 };
 
@@ -4687,7 +4687,7 @@ static const struct TrainerMon sParty_Maria3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 31,
-    .species = SPECIES_DODUO,
+    .species = SPECIES_POROMON,
     }
 };
 
@@ -4984,7 +4984,7 @@ static const struct TrainerMon sParty_Jared[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 27,
-    .species = SPECIES_DODUO,
+    .species = SPECIES_POROMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -5021,7 +5021,7 @@ static const struct TrainerMon sParty_Edwardo[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 29,
-    .species = SPECIES_DODUO,
+    .species = SPECIES_POROMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -9416,7 +9416,7 @@ static const struct TrainerMon sParty_Shayla[] = {
 static const struct TrainerMon sParty_Kyra[] = {
     {
     .lvl = 26,
-    .species = SPECIES_DODUO,
+    .species = SPECIES_POROMON,
     },
     {
     .lvl = 26,
@@ -9493,7 +9493,7 @@ static const struct TrainerMon sParty_Johnson[] = {
 static const struct TrainerMon sParty_Melina[] = {
     {
     .lvl = 17,
-    .species = SPECIES_DODUO,
+    .species = SPECIES_POROMON,
     }
 };
 

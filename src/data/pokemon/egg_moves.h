@@ -690,8 +690,8 @@ const u16 gEggMoves[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PINAMON
 
-#if P_FAMILY_DODUO
-    egg_moves(DODUO,
+#if P_FAMILY_POROMON
+    egg_moves(POROMON,
         MOVE_QUICK_ATTACK,
         MOVE_SUPERSONIC,
         MOVE_HAZE,
@@ -702,7 +702,7 @@ const u16 gEggMoves[] = {
         MOVE_BRAVE_BIRD,
         MOVE_NATURAL_GIFT,
         MOVE_ASSURANCE),
-#endif //P_FAMILY_DODUO
+#endif //P_FAMILY_POROMON
 
 #if P_FAMILY_SEEL
     egg_moves(SEEL,
