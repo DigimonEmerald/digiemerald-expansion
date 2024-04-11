@@ -911,13 +911,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Chicchimon[] = INCBIN_U8("graphics/pokemon/chicchimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Golduck[] = INCBIN_U32("graphics/pokemon/golduck/anim_front.4bpp.lz");
-    const u32 gMonPalette_Golduck[] = INCBIN_U32("graphics/pokemon/golduck/normal.gbapal.lz");
-    const u32 gMonBackPic_Golduck[] = INCBIN_U32("graphics/pokemon/golduck/back.4bpp.lz");
-    const u32 gMonShinyPalette_Golduck[] = INCBIN_U32("graphics/pokemon/golduck/shiny.gbapal.lz");
-    const u8 gMonIcon_Golduck[] = INCBIN_U8("graphics/pokemon/golduck/icon.4bpp");
+    const u32 gMonFrontPic_Demmeramon[] = INCBIN_U32("graphics/pokemon/demmeramon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Demmeramon[] = INCBIN_U32("graphics/pokemon/demmeramon/normal.gbapal.lz");
+    const u32 gMonBackPic_Demmeramon[] = INCBIN_U32("graphics/pokemon/demmeramon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Demmeramon[] = INCBIN_U32("graphics/pokemon/demmeramon/shiny.gbapal.lz");
+    const u8 gMonIcon_Demmeramon[] = INCBIN_U8("graphics/pokemon/demmeramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Golduck[] = INCBIN_U8("graphics/pokemon/golduck/footprint.1bpp");
+    const u8 gMonFootprint_Demmeramon[] = INCBIN_U8("graphics/pokemon/demmeramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_CHICCHIMON
 

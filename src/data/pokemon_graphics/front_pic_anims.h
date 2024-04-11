@@ -832,7 +832,7 @@ static const union AnimCmd sAnim_Chicchimon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Golduck_1[] =
+static const union AnimCmd sAnim_Demmeramon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -10345,7 +10345,7 @@ SINGLE_ANIMATION(CalumonGigantamax);
 #endif //P_FAMILY_CALUMON
 #if P_FAMILY_CHICCHIMON
 SINGLE_ANIMATION(Chicchimon);
-SINGLE_ANIMATION(Golduck);
+SINGLE_ANIMATION(Demmeramon);
 #endif //P_FAMILY_CHICCHIMON
 #if P_FAMILY_MANKEY
 SINGLE_ANIMATION(Mankey);

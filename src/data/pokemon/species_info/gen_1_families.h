@@ -5766,10 +5766,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Chicchimon)
         .levelUpLearnset = sChicchimonLevelUpLearnset,
         .teachableLearnset = sChicchimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_GOLDUCK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_DEMMERAMON}),
     },
 
-    [SPECIES_GOLDUCK] =
+    [SPECIES_DEMMERAMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 82,
@@ -5788,14 +5788,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
         .abilities = { ABILITY_DAMP, ABILITY_CLOUD_NINE, ABILITY_SWIFT_SWIM },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Golduck"),
-        .cryId = CRY_GOLDUCK,
-        .natDexNum = NATIONAL_DEX_GOLDUCK,
+        .speciesName = _("Demmeramon"),
+        .cryId = CRY_DEMMERAMON,
+        .natDexNum = NATIONAL_DEX_DEMMERAMON,
         .categoryName = _("Duck"),
         .height = 17,
         .weight = 766,
         .description = COMPOUND_STRING(
-            "A Golduck is an adept swimmer.\n"
+            "A Demmeramon is an adept swimmer.\n"
             "It sometimes joins competitive swimmers\n"
             "in training. It uses psychic powers when\n"
             "its forehead shimmers with light."),
@@ -5803,22 +5803,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 1,
         .trainerScale = 273,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Golduck,
+        .frontPic = gMonFrontPic_Demmeramon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Golduck,
+        .frontAnimFrames = sAnims_Demmeramon,
         .frontAnimId = ANIM_H_SHAKE_SLOW,
-        .backPic = gMonBackPic_Golduck,
+        .backPic = gMonBackPic_Demmeramon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Golduck,
-        .shinyPalette = gMonShinyPalette_Golduck,
-        .iconSprite = gMonIcon_Golduck,
+        .palette = gMonPalette_Demmeramon,
+        .shinyPalette = gMonShinyPalette_Demmeramon,
+        .iconSprite = gMonIcon_Demmeramon,
         .iconPalIndex = 0,
-        FOOTPRINT(Golduck)
-        .levelUpLearnset = sGolduckLevelUpLearnset,
-        .teachableLearnset = sGolduckTeachableLearnset,
+        FOOTPRINT(Demmeramon)
+        .levelUpLearnset = sDemmeramonLevelUpLearnset,
+        .teachableLearnset = sDemmeramonTeachableLearnset,
     },
 #endif //P_FAMILY_CHICCHIMON
 

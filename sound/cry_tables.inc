@@ -131,7 +131,7 @@ gCryTable::
 .endif @ P_FAMILY_CALUMON
 .if P_FAMILY_CHICCHIMON == TRUE
 	cry Cry_Chicchimon
-	cry Cry_Golduck
+	cry Cry_Demmeramon
 .endif @ P_FAMILY_CHICCHIMON
 .if P_FAMILY_MANKEY == TRUE
 	cry Cry_Mankey
@@ -2557,7 +2557,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_CALUMON
 .if P_FAMILY_CHICCHIMON == TRUE
 	cry_reverse Cry_Chicchimon
-	cry_reverse Cry_Golduck
+	cry_reverse Cry_Demmeramon
 .endif @ P_FAMILY_CHICCHIMON
 .if P_FAMILY_MANKEY == TRUE
 	cry_reverse Cry_Mankey
