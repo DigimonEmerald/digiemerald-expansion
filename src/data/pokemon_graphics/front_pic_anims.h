@@ -956,7 +956,7 @@ static const union AnimCmd sAnim_Kakkinmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Alakazam_1[] =
+static const union AnimCmd sAnim_Kapurimon_1[] =
 {
     ANIMCMD_FRAME(0, 9),
     ANIMCMD_FRAME(1, 54),
@@ -965,7 +965,7 @@ static const union AnimCmd sAnim_Alakazam_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(AlakazamMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(KapurimonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HOPMON
 
@@ -10373,9 +10373,9 @@ SINGLE_ANIMATION(Politoed);
 #if P_FAMILY_HOPMON
 SINGLE_ANIMATION(Hopmon);
 SINGLE_ANIMATION(Kakkinmon);
-SINGLE_ANIMATION(Alakazam);
+SINGLE_ANIMATION(Kapurimon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(AlakazamMega);
+SINGLE_ANIMATION(KapurimonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HOPMON
 #if P_FAMILY_MACHOP

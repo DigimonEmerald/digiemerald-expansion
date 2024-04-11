@@ -6567,20 +6567,20 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Kakkinmon)
         .levelUpLearnset = sKakkinmonLevelUpLearnset,
         .teachableLearnset = sKakkinmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_ALAKAZAM},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_ALAKAZAM}),
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_KAPURIMON},
+                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_KAPURIMON}),
     },
 
-#define ALAKAZAM_SP_DEF (P_UPDATED_STATS >= GEN_6 ? 95 : 85)
+#define KAPURIMON_SP_DEF (P_UPDATED_STATS >= GEN_6 ? 95 : 85)
 
-    [SPECIES_ALAKAZAM] =
+    [SPECIES_KAPURIMON] =
     {
         .baseHP        = 55,
         .baseAttack    = 50,
         .baseDefense   = 45,
         .baseSpeed     = 120,
         .baseSpAttack  = 135,
-        .baseSpDefense = ALAKAZAM_SP_DEF,
+        .baseSpDefense = KAPURIMON_SP_DEF,
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 50,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -6601,54 +6601,54 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_SYNCHRONIZE, ABILITY_INNER_FOCUS, ABILITY_MAGIC_GUARD },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Alakazam"),
-        .cryId = CRY_ALAKAZAM,
-        .natDexNum = NATIONAL_DEX_ALAKAZAM,
+        .speciesName = _("Kapurimon"),
+        .cryId = CRY_KAPURIMON,
+        .natDexNum = NATIONAL_DEX_KAPURIMON,
         .categoryName = _("Psi"),
         .height = 15,
         .weight = 480,
         .description = COMPOUND_STRING(
             "While it has strong psychic abilities and\n"
-            "high intelligence, an Alakazam's muscles\n"
+            "high intelligence, an Kapurimon's muscles\n"
             "are very weak. It uses psychic power to\n"
             "move its body."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Alakazam,
-        .frontPicFemale = gMonFrontPic_AlakazamF,
+        .frontPic = gMonFrontPic_Kapurimon,
+        .frontPicFemale = gMonFrontPic_KapurimonF,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Alakazam,
+        .frontAnimFrames = sAnims_Kapurimon,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Alakazam,
-        .backPicFemale = gMonBackPic_AlakazamF,
+        .backPic = gMonBackPic_Kapurimon,
+        .backPicFemale = gMonBackPic_KapurimonF,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_GROW_STUTTER,
-        .palette = gMonPalette_Alakazam,
-        .shinyPalette = gMonShinyPalette_Alakazam,
-        .iconSprite = gMonIcon_Alakazam,
+        .palette = gMonPalette_Kapurimon,
+        .shinyPalette = gMonShinyPalette_Kapurimon,
+        .iconSprite = gMonIcon_Kapurimon,
         .iconPalIndex = 2,
-        FOOTPRINT(Alakazam)
-        .levelUpLearnset = sAlakazamLevelUpLearnset,
-        .teachableLearnset = sAlakazamTeachableLearnset,
-        .formSpeciesIdTable = sAlakazamFormSpeciesIdTable,
-        .formChangeTable = sAlakazamFormChangeTable,
+        FOOTPRINT(Kapurimon)
+        .levelUpLearnset = sKapurimonLevelUpLearnset,
+        .teachableLearnset = sKapurimonTeachableLearnset,
+        .formSpeciesIdTable = sKapurimonFormSpeciesIdTable,
+        .formChangeTable = sKapurimonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_ALAKAZAM_MEGA] =
+    [SPECIES_KAPURIMON_MEGA] =
     {
         .baseHP        = 55,
         .baseAttack    = 50,
         .baseDefense   = 65,
         .baseSpeed     = 150,
         .baseSpAttack  = 175,
-        .baseSpDefense = ALAKAZAM_SP_DEF + 10,
+        .baseSpDefense = KAPURIMON_SP_DEF + 10,
         .types = MON_TYPES(TYPE_PSYCHIC),
         .catchRate = 50,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
@@ -6661,40 +6661,40 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_TRACE, ABILITY_TRACE, ABILITY_TRACE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Alakazam"),
-        .cryId = CRY_ALAKAZAM_MEGA,
-        .natDexNum = NATIONAL_DEX_ALAKAZAM,
+        .speciesName = _("Kapurimon"),
+        .cryId = CRY_KAPURIMON_MEGA,
+        .natDexNum = NATIONAL_DEX_KAPURIMON,
         .categoryName = _("Psi"),
         .height = 12,
         .weight = 480,
         .description = COMPOUND_STRING(
-            "Having traded away its muscles, Alakazam's\n"
+            "Having traded away its muscles, Kapurimon's\n"
             "true power has been unleashed. With its\n"
             "psychic powers, it can foresee all things."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_AlakazamMega,
+        .frontPic = gMonFrontPic_KapurimonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_AlakazamMega,
+        .frontAnimFrames = sAnims_KapurimonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 7,
-        .backPic = gMonBackPic_AlakazamMega,
+        .backPic = gMonBackPic_KapurimonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_GROW_STUTTER,
-        .palette = gMonPalette_AlakazamMega,
-        .shinyPalette = gMonShinyPalette_AlakazamMega,
-        .iconSprite = gMonIcon_AlakazamMega,
+        .palette = gMonPalette_KapurimonMega,
+        .shinyPalette = gMonShinyPalette_KapurimonMega,
+        .iconSprite = gMonIcon_KapurimonMega,
         .iconPalIndex = 2,
-        FOOTPRINT(Alakazam)
+        FOOTPRINT(Kapurimon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sAlakazamLevelUpLearnset,
-        .teachableLearnset = sAlakazamTeachableLearnset,
-        .formSpeciesIdTable = sAlakazamFormSpeciesIdTable,
-        .formChangeTable = sAlakazamFormChangeTable,
+        .levelUpLearnset = sKapurimonLevelUpLearnset,
+        .teachableLearnset = sKapurimonTeachableLearnset,
+        .formSpeciesIdTable = sKapurimonFormSpeciesIdTable,
+        .formChangeTable = sKapurimonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HOPMON

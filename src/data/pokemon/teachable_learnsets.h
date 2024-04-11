@@ -3230,7 +3230,7 @@ static const u16 sKakkinmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sAlakazamTeachableLearnset[] = {
+static const u16 sKapurimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DIG,

@@ -777,13 +777,13 @@ Cry_Kakkinmon::
 	.incbin "sound/direct_sound_samples/cries/kakkinmon.bin"
 
 	.align 2
-Cry_Alakazam::
-	.incbin "sound/direct_sound_samples/cries/alakazam.bin"
+Cry_Kapurimon::
+	.incbin "sound/direct_sound_samples/cries/kapurimon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_AlakazamMega::
-	.incbin "sound/direct_sound_samples/cries/alakazam_mega.bin"
+Cry_KapurimonMega::
+	.incbin "sound/direct_sound_samples/cries/kapurimon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HOPMON
 

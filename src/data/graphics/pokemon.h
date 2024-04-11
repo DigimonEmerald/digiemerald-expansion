@@ -1051,24 +1051,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_KakkinmonF[] = INCBIN_U32("graphics/pokemon/kakkinmon/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_KakkinmonF[] = INCBIN_U32("graphics/pokemon/kakkinmon/backf.4bpp.lz");
 
-    const u32 gMonFrontPic_Alakazam[] = INCBIN_U32("graphics/pokemon/alakazam/anim_front.4bpp.lz");
-    const u32 gMonPalette_Alakazam[] = INCBIN_U32("graphics/pokemon/alakazam/normal.gbapal.lz");
-    const u32 gMonBackPic_Alakazam[] = INCBIN_U32("graphics/pokemon/alakazam/back.4bpp.lz");
-    const u32 gMonShinyPalette_Alakazam[] = INCBIN_U32("graphics/pokemon/alakazam/shiny.gbapal.lz");
-    const u8 gMonIcon_Alakazam[] = INCBIN_U8("graphics/pokemon/alakazam/icon.4bpp");
+    const u32 gMonFrontPic_Kapurimon[] = INCBIN_U32("graphics/pokemon/kapurimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Kapurimon[] = INCBIN_U32("graphics/pokemon/kapurimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Kapurimon[] = INCBIN_U32("graphics/pokemon/kapurimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Kapurimon[] = INCBIN_U32("graphics/pokemon/kapurimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Kapurimon[] = INCBIN_U8("graphics/pokemon/kapurimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Alakazam[] = INCBIN_U8("graphics/pokemon/alakazam/footprint.1bpp");
+    const u8 gMonFootprint_Kapurimon[] = INCBIN_U8("graphics/pokemon/kapurimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_AlakazamF[] = INCBIN_U32("graphics/pokemon/alakazam/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_AlakazamF[] = INCBIN_U32("graphics/pokemon/alakazam/backf.4bpp.lz");
+    const u32 gMonFrontPic_KapurimonF[] = INCBIN_U32("graphics/pokemon/kapurimon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_KapurimonF[] = INCBIN_U32("graphics/pokemon/kapurimon/backf.4bpp.lz");
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_AlakazamMega[] = INCBIN_U32("graphics/pokemon/alakazam/mega/front.4bpp.lz");
-    const u32 gMonPalette_AlakazamMega[] = INCBIN_U32("graphics/pokemon/alakazam/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_AlakazamMega[] = INCBIN_U32("graphics/pokemon/alakazam/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_AlakazamMega[] = INCBIN_U32("graphics/pokemon/alakazam/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_AlakazamMega[] = INCBIN_U8("graphics/pokemon/alakazam/mega/icon.4bpp");
+    const u32 gMonFrontPic_KapurimonMega[] = INCBIN_U32("graphics/pokemon/kapurimon/mega/front.4bpp.lz");
+    const u32 gMonPalette_KapurimonMega[] = INCBIN_U32("graphics/pokemon/kapurimon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_KapurimonMega[] = INCBIN_U32("graphics/pokemon/kapurimon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_KapurimonMega[] = INCBIN_U32("graphics/pokemon/kapurimon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_KapurimonMega[] = INCBIN_U8("graphics/pokemon/kapurimon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HOPMON
 

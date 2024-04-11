@@ -66,7 +66,7 @@
 #define SPECIES_HIYARIMON                               62
 #define SPECIES_HOPMON                                    63
 #define SPECIES_KAKKINMON                                 64
-#define SPECIES_ALAKAZAM                                65
+#define SPECIES_KAPURIMON                                65
 #define SPECIES_MACHOP                                  66
 #define SPECIES_MACHOKE                                 67
 #define SPECIES_MACHAMP                                 68
@@ -970,7 +970,7 @@
 #define SPECIES_CURIMON_MEGA                          909
 #define SPECIES_KEEMON_MEGA                           910
 #define SPECIES_LEAFMON_MEGA                            911
-#define SPECIES_ALAKAZAM_MEGA                           912
+#define SPECIES_KAPURIMON_MEGA                           912
 #define SPECIES_SLOWBRO_MEGA                            913
 #define SPECIES_GENGAR_MEGA                             914
 #define SPECIES_KANGASKHAN_MEGA                         915
