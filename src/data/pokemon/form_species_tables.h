@@ -153,9 +153,9 @@ static const u16 sCalumonFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
-static const u16 sPersianFormSpeciesIdTable[] = {
-    SPECIES_PERSIAN,
-    SPECIES_PERSIAN_ALOLAN,
+static const u16 sChapmonFormSpeciesIdTable[] = {
+    SPECIES_CHAPMON,
+    SPECIES_CHAPMON_ALOLAN,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_CALUMON

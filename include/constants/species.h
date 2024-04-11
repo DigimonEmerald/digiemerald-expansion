@@ -54,7 +54,7 @@
 #define SPECIES_BUDMON                                 50
 #define SPECIES_BUKAMON                                 51
 #define SPECIES_CALUMON                                  52
-#define SPECIES_PERSIAN                                 53
+#define SPECIES_CHAPMON                                 53
 #define SPECIES_PSYDUCK                                 54
 #define SPECIES_GOLDUCK                                 55
 #define SPECIES_MANKEY                                  56
@@ -1024,7 +1024,7 @@
 #define SPECIES_BUDMON_ALOLAN                          963
 #define SPECIES_BUKAMON_ALOLAN                          964
 #define SPECIES_CALUMON_ALOLAN                           965
-#define SPECIES_PERSIAN_ALOLAN                          966
+#define SPECIES_CHAPMON_ALOLAN                          966
 #define SPECIES_GEODUDE_ALOLAN                          967
 #define SPECIES_GRAVELER_ALOLAN                         968
 #define SPECIES_GOLEM_ALOLAN                            969

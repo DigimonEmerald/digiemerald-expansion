@@ -5377,10 +5377,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sCalumonTeachableLearnset,
         .formSpeciesIdTable = sCalumonFormSpeciesIdTable,
         .formChangeTable = sCalumonFormChangeTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PERSIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_CHAPMON}),
     },
 
-    [SPECIES_PERSIAN] =
+    [SPECIES_CHAPMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 70,
@@ -5400,14 +5400,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_LIMBER, ABILITY_TECHNICIAN, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Persian"),
-        .cryId = CRY_PERSIAN,
-        .natDexNum = NATIONAL_DEX_PERSIAN,
+        .speciesName = _("Chapmon"),
+        .cryId = CRY_CHAPMON,
+        .natDexNum = NATIONAL_DEX_CHAPMON,
         .categoryName = _("Classy Cat"),
         .height = 10,
         .weight = 320,
         .description = COMPOUND_STRING(
-            "A Persian's six bold whiskers sense air\n"
+            "A Chapmon's six bold whiskers sense air\n"
             "movements to determine what is in its\n"
             "vicinity. It becomes docile if grabbed\n"
             "by the whiskers."),
@@ -5415,24 +5415,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Persian,
+        .frontPic = gMonFrontPic_Chapmon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Persian,
+        .frontAnimFrames = sAnims_Chapmon,
         .frontAnimId = ANIM_V_STRETCH,
         .frontAnimDelay = 20,
-        .backPic = gMonBackPic_Persian,
+        .backPic = gMonBackPic_Chapmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Persian,
-        .shinyPalette = gMonShinyPalette_Persian,
-        .iconSprite = gMonIcon_Persian,
+        .palette = gMonPalette_Chapmon,
+        .shinyPalette = gMonShinyPalette_Chapmon,
+        .iconSprite = gMonIcon_Chapmon,
         .iconPalIndex = 1,
-        FOOTPRINT(Persian)
-        .levelUpLearnset = sPersianLevelUpLearnset,
-        .teachableLearnset = sPersianTeachableLearnset,
-        .formSpeciesIdTable = sPersianFormSpeciesIdTable,
+        FOOTPRINT(Chapmon)
+        .levelUpLearnset = sChapmonLevelUpLearnset,
+        .teachableLearnset = sChapmonTeachableLearnset,
+        .formSpeciesIdTable = sChapmonFormSpeciesIdTable,
     },
 
 #if P_ALOLAN_FORMS
@@ -5489,10 +5489,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sCalumonAlolanLevelUpLearnset,
         .teachableLearnset = sCalumonAlolanTeachableLearnset,
         .formSpeciesIdTable = sCalumonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_PERSIAN_ALOLAN}),
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_CHAPMON_ALOLAN}),
     },
 
-    [SPECIES_PERSIAN_ALOLAN] =
+    [SPECIES_CHAPMON_ALOLAN] =
     {
         .baseHP        = 65,
         .baseAttack    = 60,
@@ -5512,9 +5512,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_FUR_COAT, ABILITY_TECHNICIAN, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Persian"),
-        .cryId = CRY_PERSIAN,
-        .natDexNum = NATIONAL_DEX_PERSIAN,
+        .speciesName = _("Chapmon"),
+        .cryId = CRY_CHAPMON,
+        .natDexNum = NATIONAL_DEX_CHAPMON,
         .categoryName = _("Classy Cat"),
         .height = 11,
         .weight = 330,
@@ -5527,24 +5527,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_PersianAlolan,
+        .frontPic = gMonFrontPic_ChapmonAlolan,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_PersianAlolan,
+        .frontAnimFrames = sAnims_ChapmonAlolan,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_PersianAlolan,
+        .backPic = gMonBackPic_ChapmonAlolan,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 8,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_PersianAlolan,
-        .shinyPalette = gMonShinyPalette_PersianAlolan,
-        .iconSprite = gMonIcon_PersianAlolan,
+        .palette = gMonPalette_ChapmonAlolan,
+        .shinyPalette = gMonShinyPalette_ChapmonAlolan,
+        .iconSprite = gMonIcon_ChapmonAlolan,
         .iconPalIndex = 2,
-        FOOTPRINT(Persian)
+        FOOTPRINT(Chapmon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sPersianAlolanLevelUpLearnset,
-        .teachableLearnset = sPersianAlolanTeachableLearnset,
-        .formSpeciesIdTable = sPersianFormSpeciesIdTable,
+        .levelUpLearnset = sChapmonAlolanLevelUpLearnset,
+        .teachableLearnset = sChapmonAlolanTeachableLearnset,
+        .formSpeciesIdTable = sChapmonFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
 

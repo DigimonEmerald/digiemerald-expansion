@@ -2435,7 +2435,7 @@ static const u16 sCalumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sPersianTeachableLearnset[] = {
+static const u16 sChapmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CUT,
@@ -2512,7 +2512,7 @@ static const u16 sCalumonAlolanTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sPersianAlolanTeachableLearnset[] = {
+static const u16 sChapmonAlolanTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DIG,

@@ -6285,7 +6285,7 @@
       "MOVE_WATER_PULSE"
     ]
   },
-  "PERSIAN": {
+  "CHAPMON": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -105717,7 +105717,7 @@
       "MOVE_WATER_PULSE"
     ]
   },
-  "PERSIAN_ALOLAN": {
+  "CHAPMON_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 0,

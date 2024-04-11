@@ -124,7 +124,7 @@ gCryTable::
 .endif @ P_FAMILY_BUDMON
 .if P_FAMILY_CALUMON == TRUE
 	cry Cry_Calumon
-	cry Cry_Persian
+	cry Cry_Chapmon
 .if P_GALARIAN_FORMS == TRUE
 	cry Cry_Perrserker
 .endif @ P_GALARIAN_FORMS
@@ -2550,7 +2550,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_BUDMON
 .if P_FAMILY_CALUMON == TRUE
 	cry_reverse Cry_Calumon
-	cry_reverse Cry_Persian
+	cry_reverse Cry_Chapmon
 .if P_GALARIAN_FORMS == TRUE
 	cry_reverse Cry_Perrserker
 .endif @ P_GALARIAN_FORMS

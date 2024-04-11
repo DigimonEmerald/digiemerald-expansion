@@ -4321,7 +4321,7 @@
     ],
     "TutorMoves": []
   },
-  "PERSIAN": {
+  "CHAPMON": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -78611,7 +78611,7 @@
     ],
     "TutorMoves": []
   },
-  "PERSIAN_ALOLAN": {
+  "CHAPMON_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 0,

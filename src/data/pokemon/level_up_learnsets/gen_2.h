@@ -923,7 +923,7 @@ static const struct LevelUpMove sCalumonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sPersianLevelUpLearnset[] = {
+static const struct LevelUpMove sChapmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_BITE),
@@ -957,7 +957,7 @@ static const struct LevelUpMove sCalumonAlolanLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sPersianAlolanLevelUpLearnset[] = {
+static const struct LevelUpMove sChapmonAlolanLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SWIFT),
     LEVEL_UP_MOVE( 1, MOVE_SWIFT),
     LEVEL_UP_MOVE( 1, MOVE_QUASH),

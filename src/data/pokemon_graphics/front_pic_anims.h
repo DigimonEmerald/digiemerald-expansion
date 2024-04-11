@@ -799,7 +799,7 @@ static const union AnimCmd sAnim_Calumon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Persian_1[] =
+static const union AnimCmd sAnim_Chapmon_1[] =
 {
     ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(0, 20),
@@ -808,7 +808,7 @@ static const union AnimCmd sAnim_Persian_1[] =
 
 #if P_ALOLAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(CalumonAlolan);
-PLACEHOLDER_ANIM_SINGLE_FRAME(PersianAlolan);
+PLACEHOLDER_ANIM_SINGLE_FRAME(ChapmonAlolan);
 #endif //P_ALOLAN_FORMS
 
 #if P_GALARIAN_FORMS
@@ -10330,10 +10330,10 @@ SINGLE_ANIMATION(BukamonAlolan);
 #endif //P_FAMILY_BUDMON
 #if P_FAMILY_CALUMON
 SINGLE_ANIMATION(Calumon);
-SINGLE_ANIMATION(Persian);
+SINGLE_ANIMATION(Chapmon);
 #if P_ALOLAN_FORMS
 SINGLE_ANIMATION(CalumonAlolan);
-SINGLE_ANIMATION(PersianAlolan);
+SINGLE_ANIMATION(ChapmonAlolan);
 #endif //P_ALOLAN_FORMS
 #if P_GALARIAN_FORMS
 SINGLE_ANIMATION(CalumonGalarian);

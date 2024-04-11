@@ -852,13 +852,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Calumon[] = INCBIN_U8("graphics/pokemon/calumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Persian[] = INCBIN_U32("graphics/pokemon/persian/anim_front.4bpp.lz");
-    const u32 gMonPalette_Persian[] = INCBIN_U32("graphics/pokemon/persian/normal.gbapal.lz");
-    const u32 gMonBackPic_Persian[] = INCBIN_U32("graphics/pokemon/persian/back.4bpp.lz");
-    const u32 gMonShinyPalette_Persian[] = INCBIN_U32("graphics/pokemon/persian/shiny.gbapal.lz");
-    const u8 gMonIcon_Persian[] = INCBIN_U8("graphics/pokemon/persian/icon.4bpp");
+    const u32 gMonFrontPic_Chapmon[] = INCBIN_U32("graphics/pokemon/chapmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Chapmon[] = INCBIN_U32("graphics/pokemon/chapmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Chapmon[] = INCBIN_U32("graphics/pokemon/chapmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Chapmon[] = INCBIN_U32("graphics/pokemon/chapmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Chapmon[] = INCBIN_U8("graphics/pokemon/chapmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Persian[] = INCBIN_U8("graphics/pokemon/persian/footprint.1bpp");
+    const u8 gMonFootprint_Chapmon[] = INCBIN_U8("graphics/pokemon/chapmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_ALOLAN_FORMS
@@ -868,11 +868,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_CalumonAlolan[] = INCBIN_U32("graphics/pokemon/calumon/alolan/shiny.gbapal.lz");
     const u8 gMonIcon_CalumonAlolan[] = INCBIN_U8("graphics/pokemon/calumon/alolan/icon.4bpp");
 
-    const u32 gMonFrontPic_PersianAlolan[] = INCBIN_U32("graphics/pokemon/persian/alolan/front.4bpp.lz");
-    const u32 gMonPalette_PersianAlolan[] = INCBIN_U32("graphics/pokemon/persian/alolan/normal.gbapal.lz");
-    const u32 gMonBackPic_PersianAlolan[] = INCBIN_U32("graphics/pokemon/persian/alolan/back.4bpp.lz");
-    const u32 gMonShinyPalette_PersianAlolan[] = INCBIN_U32("graphics/pokemon/persian/alolan/shiny.gbapal.lz");
-    const u8 gMonIcon_PersianAlolan[] = INCBIN_U8("graphics/pokemon/persian/alolan/icon.4bpp");
+    const u32 gMonFrontPic_ChapmonAlolan[] = INCBIN_U32("graphics/pokemon/chapmon/alolan/front.4bpp.lz");
+    const u32 gMonPalette_ChapmonAlolan[] = INCBIN_U32("graphics/pokemon/chapmon/alolan/normal.gbapal.lz");
+    const u32 gMonBackPic_ChapmonAlolan[] = INCBIN_U32("graphics/pokemon/chapmon/alolan/back.4bpp.lz");
+    const u32 gMonShinyPalette_ChapmonAlolan[] = INCBIN_U32("graphics/pokemon/chapmon/alolan/shiny.gbapal.lz");
+    const u8 gMonIcon_ChapmonAlolan[] = INCBIN_U8("graphics/pokemon/chapmon/alolan/icon.4bpp");
 #endif //P_ALOLAN_FORMS
 
 #if P_GALARIAN_FORMS
