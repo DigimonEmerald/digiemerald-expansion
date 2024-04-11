@@ -86,7 +86,7 @@ gCryTable::
 .endif @ P_FAMILY_PUYOMON
 .if P_FAMILY_RELEMON == TRUE
 	cry Cry_Relemon
-	cry Cry_Ninetales
+	cry Cry_Sakumon
 .endif @ P_FAMILY_RELEMON
 .if P_FAMILY_JIGGLYPUFF == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
@@ -2512,7 +2512,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_PUYOMON
 .if P_FAMILY_RELEMON == TRUE
 	cry_reverse Cry_Relemon
-	cry_reverse Cry_Ninetales
+	cry_reverse Cry_Sakumon
 .endif @ P_FAMILY_RELEMON
 .if P_FAMILY_JIGGLYPUFF == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE

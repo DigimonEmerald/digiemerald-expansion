@@ -512,7 +512,7 @@ static const union AnimCmd sAnim_Relemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Ninetales_1[] =
+static const union AnimCmd sAnim_Sakumon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -524,7 +524,7 @@ static const union AnimCmd sAnim_Ninetales_1[] =
 
 #if P_ALOLAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(RelemonAlolan);
-PLACEHOLDER_ANIM_SINGLE_FRAME(NinetalesAlolan);
+PLACEHOLDER_ANIM_SINGLE_FRAME(SakumonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_RELEMON
 
@@ -10284,10 +10284,10 @@ SINGLE_ANIMATION(Pyonmon);
 #endif //P_FAMILY_PUYOMON
 #if P_FAMILY_RELEMON
 SINGLE_ANIMATION(Relemon);
-SINGLE_ANIMATION(Ninetales);
+SINGLE_ANIMATION(Sakumon);
 #if P_ALOLAN_FORMS
 SINGLE_ANIMATION(RelemonAlolan);
-SINGLE_ANIMATION(NinetalesAlolan);
+SINGLE_ANIMATION(SakumonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_RELEMON
 #if P_FAMILY_JIGGLYPUFF

@@ -811,7 +811,7 @@ static const struct LevelUpMove sRelemonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sNinetalesLevelUpLearnset[] = {
+static const struct LevelUpMove sSakumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_IMPRISON),
     LEVEL_UP_MOVE( 1, MOVE_NASTY_PLOT),
     LEVEL_UP_MOVE( 1, MOVE_FLAMETHROWER),
@@ -846,7 +846,7 @@ static const struct LevelUpMove sRelemonAlolanLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sNinetalesAlolanLevelUpLearnset[] = {
+static const struct LevelUpMove sSakumonAlolanLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_DAZZLING_GLEAM),
     LEVEL_UP_MOVE( 1, MOVE_DAZZLING_GLEAM),
     LEVEL_UP_MOVE( 1, MOVE_IMPRISON),

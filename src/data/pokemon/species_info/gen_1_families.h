@@ -4083,10 +4083,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sRelemonLevelUpLearnset,
         .teachableLearnset = sRelemonTeachableLearnset,
         .formSpeciesIdTable = sRelemonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_NINETALES}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_SAKUMON}),
     },
 
-    [SPECIES_NINETALES] =
+    [SPECIES_SAKUMON] =
     {
         .baseHP        = 73,
         .baseAttack    = 76,
@@ -4107,38 +4107,38 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_DROUGHT },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Ninetales"),
-        .cryId = CRY_NINETALES,
-        .natDexNum = NATIONAL_DEX_NINETALES,
+        .speciesName = _("Sakumon"),
+        .cryId = CRY_SAKUMON,
+        .natDexNum = NATIONAL_DEX_SAKUMON,
         .categoryName = _("Fox"),
         .height = 11,
         .weight = 199,
         .description = COMPOUND_STRING(
             "It has long been said that each of the\n"
             "nine tails embody an enchanted power.\n"
-            "A long-lived Ninetales will have fur that\n"
+            "A long-lived Sakumon will have fur that\n"
             "shines like gold."),
         .pokemonScale = 339,
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Ninetales,
+        .frontPic = gMonFrontPic_Sakumon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_Ninetales,
+        .frontAnimFrames = sAnims_Sakumon,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Ninetales,
+        .backPic = gMonBackPic_Sakumon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Ninetales,
-        .shinyPalette = gMonShinyPalette_Ninetales,
-        .iconSprite = gMonIcon_Ninetales,
+        .palette = gMonPalette_Sakumon,
+        .shinyPalette = gMonShinyPalette_Sakumon,
+        .iconSprite = gMonIcon_Sakumon,
         .iconPalIndex = 3,
-        FOOTPRINT(Ninetales)
-        .levelUpLearnset = sNinetalesLevelUpLearnset,
-        .teachableLearnset = sNinetalesTeachableLearnset,
-        .formSpeciesIdTable = sNinetalesFormSpeciesIdTable,
+        FOOTPRINT(Sakumon)
+        .levelUpLearnset = sSakumonLevelUpLearnset,
+        .teachableLearnset = sSakumonTeachableLearnset,
+        .formSpeciesIdTable = sSakumonFormSpeciesIdTable,
     },
 
 #if P_ALOLAN_FORMS
@@ -4195,10 +4195,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sRelemonAlolanLevelUpLearnset,
         .teachableLearnset = sRelemonAlolanTeachableLearnset,
         .formSpeciesIdTable = sRelemonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ICE_STONE, SPECIES_NINETALES_ALOLAN}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ICE_STONE, SPECIES_SAKUMON_ALOLAN}),
     },
 
-    [SPECIES_NINETALES_ALOLAN] =
+    [SPECIES_SAKUMON_ALOLAN] =
     {
         .baseHP        = 73,
         .baseAttack    = 67,
@@ -4219,9 +4219,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SNOW_CLOAK, ABILITY_NONE, ABILITY_SNOW_WARNING },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Ninetales"),
-        .cryId = CRY_NINETALES,
-        .natDexNum = NATIONAL_DEX_NINETALES,
+        .speciesName = _("Sakumon"),
+        .cryId = CRY_SAKUMON,
+        .natDexNum = NATIONAL_DEX_SAKUMON,
         .categoryName = _("Fox"),
         .height = 11,
         .weight = 199,
@@ -4234,24 +4234,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_NinetalesAlolan,
+        .frontPic = gMonFrontPic_SakumonAlolan,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_NinetalesAlolan,
+        .frontAnimFrames = sAnims_SakumonAlolan,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_NinetalesAlolan,
+        .backPic = gMonBackPic_SakumonAlolan,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_NinetalesAlolan,
-        .shinyPalette = gMonShinyPalette_NinetalesAlolan,
-        .iconSprite = gMonIcon_NinetalesAlolan,
+        .palette = gMonPalette_SakumonAlolan,
+        .shinyPalette = gMonShinyPalette_SakumonAlolan,
+        .iconSprite = gMonIcon_SakumonAlolan,
         .iconPalIndex = 2,
-        FOOTPRINT(Ninetales)
+        FOOTPRINT(Sakumon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sNinetalesAlolanLevelUpLearnset,
-        .teachableLearnset = sNinetalesAlolanTeachableLearnset,
-        .formSpeciesIdTable = sNinetalesFormSpeciesIdTable,
+        .levelUpLearnset = sSakumonAlolanLevelUpLearnset,
+        .teachableLearnset = sSakumonAlolanTeachableLearnset,
+        .formSpeciesIdTable = sSakumonFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_RELEMON

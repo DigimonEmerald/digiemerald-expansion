@@ -1146,7 +1146,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [4] =
                     {
-                        .species = SPECIES_NINETALES,
+                        .species = SPECIES_SAKUMON,
                         .heldItem = ITEM_SALAC_BERRY,
                         .moves = {MOVE_OVERHEAT, MOVE_QUICK_ATTACK, MOVE_SPITE, MOVE_TAIL_WHIP},
                         .hpEV = 6,
@@ -1161,7 +1161,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 15,
                         .abilityNum = 0,
                         .personality = 0xD7,
-                        .nickname = _("NINETALES"),
+                        .nickname = _("SAKUMON"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                     [5] =
@@ -4215,7 +4215,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [4] =
                                         {
-                                            .species = SPECIES_NINETALES,
+                                            .species = SPECIES_SAKUMON,
                                             .heldItem = ITEM_WHITE_HERB,
                                             .moves = {MOVE_OVERHEAT, MOVE_CONFUSE_RAY, MOVE_WILL_O_WISP, MOVE_ATTRACT},
                                             .hpEV = 6,
@@ -4230,7 +4230,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0xD2,
-                                            .nickname = _("NINETALES"),
+                                            .nickname = _("SAKUMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [5] =
@@ -4639,7 +4639,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [4] =
                                         {
-                                            .species = SPECIES_NINETALES,
+                                            .species = SPECIES_SAKUMON,
                                             .heldItem = ITEM_WHITE_HERB,
                                             .moves = {MOVE_IMPRISON, MOVE_PROTECT, MOVE_OVERHEAT, MOVE_CONFUSE_RAY},
                                             .speedEV = 255,
@@ -4653,7 +4653,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0xF,
-                                            .nickname = _("NINETALES"),
+                                            .nickname = _("SAKUMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [5] =

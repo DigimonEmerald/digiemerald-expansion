@@ -39,7 +39,7 @@
 #define SPECIES_PUYOMON                                35
 #define SPECIES_PYONMON                                36
 #define SPECIES_RELEMON                                  37
-#define SPECIES_NINETALES                               38
+#define SPECIES_SAKUMON                               38
 #define SPECIES_JIGGLYPUFF                              39
 #define SPECIES_WIGGLYTUFF                              40
 #define SPECIES_ZUBAT                                   41
@@ -1020,7 +1020,7 @@
 #define SPECIES_POPOMON_ALOLAN                        959
 #define SPECIES_POYOMON_ALOLAN                        960
 #define SPECIES_RELEMON_ALOLAN                           961
-#define SPECIES_NINETALES_ALOLAN                        962
+#define SPECIES_SAKUMON_ALOLAN                        962
 #define SPECIES_DIGLETT_ALOLAN                          963
 #define SPECIES_DUGTRIO_ALOLAN                          964
 #define SPECIES_MEOWTH_ALOLAN                           965

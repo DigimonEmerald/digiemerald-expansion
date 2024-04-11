@@ -123,9 +123,9 @@ static const u16 sRelemonFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
-static const u16 sNinetalesFormSpeciesIdTable[] = {
-    SPECIES_NINETALES,
-    SPECIES_NINETALES_ALOLAN,
+static const u16 sSakumonFormSpeciesIdTable[] = {
+    SPECIES_SAKUMON,
+    SPECIES_SAKUMON_ALOLAN,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_RELEMON

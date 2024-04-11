@@ -1698,7 +1698,7 @@ static const u16 sRelemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sNinetalesTeachableLearnset[] = {
+static const u16 sSakumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DIG,
@@ -1759,7 +1759,7 @@ static const u16 sRelemonAlolanTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sNinetalesAlolanTeachableLearnset[] = {
+static const u16 sSakumonAlolanTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,

@@ -630,13 +630,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Relemon[] = INCBIN_U8("graphics/pokemon/relemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Ninetales[] = INCBIN_U32("graphics/pokemon/ninetales/anim_front.4bpp.lz");
-    const u32 gMonPalette_Ninetales[] = INCBIN_U32("graphics/pokemon/ninetales/normal.gbapal.lz");
-    const u32 gMonBackPic_Ninetales[] = INCBIN_U32("graphics/pokemon/ninetales/back.4bpp.lz");
-    const u32 gMonShinyPalette_Ninetales[] = INCBIN_U32("graphics/pokemon/ninetales/shiny.gbapal.lz");
-    const u8 gMonIcon_Ninetales[] = INCBIN_U8("graphics/pokemon/ninetales/icon.4bpp");
+    const u32 gMonFrontPic_Sakumon[] = INCBIN_U32("graphics/pokemon/sakumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Sakumon[] = INCBIN_U32("graphics/pokemon/sakumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Sakumon[] = INCBIN_U32("graphics/pokemon/sakumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Sakumon[] = INCBIN_U32("graphics/pokemon/sakumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Sakumon[] = INCBIN_U8("graphics/pokemon/sakumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Ninetales[] = INCBIN_U8("graphics/pokemon/ninetales/footprint.1bpp");
+    const u8 gMonFootprint_Sakumon[] = INCBIN_U8("graphics/pokemon/sakumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_ALOLAN_FORMS
@@ -646,11 +646,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_RelemonAlolan[] = INCBIN_U32("graphics/pokemon/relemon/alolan/shiny.gbapal.lz");
     const u8 gMonIcon_RelemonAlolan[] = INCBIN_U8("graphics/pokemon/relemon/alolan/icon.4bpp");
 
-    const u32 gMonFrontPic_NinetalesAlolan[] = INCBIN_U32("graphics/pokemon/ninetales/alolan/front.4bpp.lz");
-    const u32 gMonPalette_NinetalesAlolan[] = INCBIN_U32("graphics/pokemon/ninetales/alolan/normal.gbapal.lz");
-    const u32 gMonBackPic_NinetalesAlolan[] = INCBIN_U32("graphics/pokemon/ninetales/alolan/back.4bpp.lz");
-    const u32 gMonShinyPalette_NinetalesAlolan[] = INCBIN_U32("graphics/pokemon/ninetales/alolan/shiny.gbapal.lz");
-    const u8 gMonIcon_NinetalesAlolan[] = INCBIN_U8("graphics/pokemon/ninetales/alolan/icon.4bpp");
+    const u32 gMonFrontPic_SakumonAlolan[] = INCBIN_U32("graphics/pokemon/sakumon/alolan/front.4bpp.lz");
+    const u32 gMonPalette_SakumonAlolan[] = INCBIN_U32("graphics/pokemon/sakumon/alolan/normal.gbapal.lz");
+    const u32 gMonBackPic_SakumonAlolan[] = INCBIN_U32("graphics/pokemon/sakumon/alolan/back.4bpp.lz");
+    const u32 gMonShinyPalette_SakumonAlolan[] = INCBIN_U32("graphics/pokemon/sakumon/alolan/shiny.gbapal.lz");
+    const u8 gMonIcon_SakumonAlolan[] = INCBIN_U8("graphics/pokemon/sakumon/alolan/icon.4bpp");
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_RELEMON
 
