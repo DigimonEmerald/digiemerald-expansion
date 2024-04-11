@@ -52,7 +52,7 @@ SINGLE_BATTLE_TEST("Eject Button will not activate under Substitute")
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_RAICHU) { Item(ITEM_EJECT_BUTTON); }
+        OPPONENT(SPECIES_PICHIMON) { Item(ITEM_EJECT_BUTTON); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN {
@@ -61,12 +61,12 @@ SINGLE_BATTLE_TEST("Eject Button will not activate under Substitute")
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SUBSTITUTE, opponent);
-        MESSAGE("Foe Raichu made a SUBSTITUTE!");
+        MESSAGE("Foe Pichimon made a SUBSTITUTE!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        MESSAGE("The SUBSTITUTE took damage for Foe Raichu!");
+        MESSAGE("The SUBSTITUTE took damage for Foe Pichimon!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-            MESSAGE("Foe Raichu is switched out with the Eject Button!");
+            MESSAGE("Foe Pichimon is switched out with the Eject Button!");
         }
     }
 }
@@ -93,7 +93,7 @@ SINGLE_BATTLE_TEST("Eject Button is not blocked by trapping abilities or moves")
 SINGLE_BATTLE_TEST("Eject Button is not triggered after the mon loses Eject Button")
 {
     GIVEN {
-        PLAYER(SPECIES_RAICHU);
+        PLAYER(SPECIES_PICHIMON);
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_BUTTON); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {

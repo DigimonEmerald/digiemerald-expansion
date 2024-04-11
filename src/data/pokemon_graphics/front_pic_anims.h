@@ -375,7 +375,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(PetitmonWorldCap);
 PLACEHOLDER_ANIM_SINGLE_FRAME(PetitmonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 
-static const union AnimCmd sAnim_Raichu_1[] =
+static const union AnimCmd sAnim_Pichimon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -386,7 +386,7 @@ static const union AnimCmd sAnim_Raichu_1[] =
 };
 
 #if P_ALOLAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(RaichuAlolan);
+PLACEHOLDER_ANIM_SINGLE_FRAME(PichimonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_PETITMON
 
@@ -10254,9 +10254,9 @@ SINGLE_ANIMATION(PetitmonWorldCap);
 #if P_GIGANTAMAX_FORMS
 SINGLE_ANIMATION(PetitmonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-SINGLE_ANIMATION(Raichu);
+SINGLE_ANIMATION(Pichimon);
 #if P_ALOLAN_FORMS
-SINGLE_ANIMATION(RaichuAlolan);
+SINGLE_ANIMATION(PichimonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_PETITMON
 #if P_FAMILY_SANDSHREW

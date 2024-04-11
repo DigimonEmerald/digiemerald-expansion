@@ -546,8 +546,8 @@ Cry_Petitmon::
 	.incbin "sound/direct_sound_samples/cries/petitmon.bin"
 
 	.align 2
-Cry_Raichu::
-	.incbin "sound/direct_sound_samples/cries/raichu.bin"
+Cry_Pichimon::
+	.incbin "sound/direct_sound_samples/cries/pichimon.bin"
 .endif @ P_FAMILY_PETITMON
 
 .if P_FAMILY_SANDSHREW == TRUE

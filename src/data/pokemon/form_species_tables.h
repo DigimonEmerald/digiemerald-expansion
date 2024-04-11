@@ -95,9 +95,9 @@ static const u16 sPetitmonFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
-static const u16 sRaichuFormSpeciesIdTable[] = {
-    SPECIES_RAICHU,
-    SPECIES_RAICHU_ALOLAN,
+static const u16 sPichimonFormSpeciesIdTable[] = {
+    SPECIES_PICHIMON,
+    SPECIES_PICHIMON_ALOLAN,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_PETITMON

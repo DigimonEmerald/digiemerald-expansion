@@ -2298,8 +2298,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sPetitmonTeachableLearnset,
         .formSpeciesIdTable = sPetitmonFormSpeciesIdTable,
         .formChangeTable = sPetitmonFormChangeTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
-                                {EVO_NONE, 0, SPECIES_RAICHU_ALOLAN}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_PICHIMON},
+                                {EVO_NONE, 0, SPECIES_PICHIMON_ALOLAN}),
     },
 
 #if P_COSPLAY_PETITMON_FORMS
@@ -3163,29 +3163,29 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sPetitmonFormSpeciesIdTable,
     },
 
-#define RAICHU_SPEED (P_UPDATED_STATS >= GEN_6 ? 110 : 100)
+#define PICHIMON_SPEED (P_UPDATED_STATS >= GEN_6 ? 110 : 100)
 
 #if P_UPDATED_EXP_YIELDS >= GEN_8
-    #define RAICHU_EXP_YIELD 243
+    #define PICHIMON_EXP_YIELD 243
 #elif P_UPDATED_EXP_YIELDS >= GEN_7
-    #define RAICHU_EXP_YIELD 218
+    #define PICHIMON_EXP_YIELD 218
 #elif P_UPDATED_EXP_YIELDS >= GEN_5
-    #define RAICHU_EXP_YIELD 214
+    #define PICHIMON_EXP_YIELD 214
 #else
-    #define RAICHU_EXP_YIELD 122
+    #define PICHIMON_EXP_YIELD 122
 #endif
 
-    [SPECIES_RAICHU] =
+    [SPECIES_PICHIMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 90,
         .baseDefense   = 55,
-        .baseSpeed     = RAICHU_SPEED,
+        .baseSpeed     = PICHIMON_SPEED,
         .baseSpAttack  = 90,
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 75,
-        .expYield = RAICHU_EXP_YIELD,
+        .expYield = PICHIMON_EXP_YIELD,
         .evYield_Speed = 3,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 10,
@@ -3194,9 +3194,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
         .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Raichu"),
-        .cryId = CRY_RAICHU,
-        .natDexNum = NATIONAL_DEX_RAICHU,
+        .speciesName = _("Pichimon"),
+        .cryId = CRY_PICHIMON,
+        .natDexNum = NATIONAL_DEX_PICHIMON,
         .categoryName = _("Mouse"),
         .height = 8,
         .weight = 300,
@@ -3209,39 +3209,39 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Raichu,
-        .frontPicFemale = gMonFrontPic_RaichuF,
+        .frontPic = gMonFrontPic_Pichimon,
+        .frontPicFemale = gMonFrontPic_PichimonF,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_Raichu,
+        .frontAnimFrames = sAnims_Pichimon,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Raichu,
+        .backPic = gMonBackPic_Pichimon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
-        .palette = gMonPalette_Raichu,
-        .shinyPalette = gMonShinyPalette_Raichu,
-        .iconSprite = gMonIcon_Raichu,
+        .palette = gMonPalette_Pichimon,
+        .shinyPalette = gMonShinyPalette_Pichimon,
+        .iconSprite = gMonIcon_Pichimon,
         .iconPalIndex = 0,
-        FOOTPRINT(Raichu)
-        .levelUpLearnset = sRaichuLevelUpLearnset,
-        .teachableLearnset = sRaichuTeachableLearnset,
-        .formSpeciesIdTable = sRaichuFormSpeciesIdTable,
+        FOOTPRINT(Pichimon)
+        .levelUpLearnset = sPichimonLevelUpLearnset,
+        .teachableLearnset = sPichimonTeachableLearnset,
+        .formSpeciesIdTable = sPichimonFormSpeciesIdTable,
     },
 
 #if P_ALOLAN_FORMS
-    [SPECIES_RAICHU_ALOLAN] =
+    [SPECIES_PICHIMON_ALOLAN] =
     {
         .baseHP        = 60,
         .baseAttack    = 85,
         .baseDefense   = 50,
-        .baseSpeed     = RAICHU_SPEED,
+        .baseSpeed     = PICHIMON_SPEED,
         .baseSpAttack  = 95,
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_PSYCHIC),
         .catchRate = 75,
-        .expYield = RAICHU_EXP_YIELD,
+        .expYield = PICHIMON_EXP_YIELD,
         .evYield_Speed = 3,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 10,
@@ -3250,9 +3250,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
         .abilities = { ABILITY_SURGE_SURFER, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Raichu"),
-        .cryId = CRY_RAICHU,
-        .natDexNum = NATIONAL_DEX_RAICHU,
+        .speciesName = _("Pichimon"),
+        .cryId = CRY_PICHIMON,
+        .natDexNum = NATIONAL_DEX_PICHIMON,
         .categoryName = _("Mouse"),
         .height = 7,
         .weight = 210,
@@ -3265,25 +3265,25 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_RaichuAlolan,
+        .frontPic = gMonFrontPic_PichimonAlolan,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_RaichuAlolan,
+        .frontAnimFrames = sAnims_PichimonAlolan,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 4,
-        .backPic = gMonBackPic_RaichuAlolan,
+        .backPic = gMonBackPic_PichimonAlolan,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_RaichuAlolan,
-        .shinyPalette = gMonShinyPalette_RaichuAlolan,
-        .iconSprite = gMonIcon_RaichuAlolan,
+        .palette = gMonPalette_PichimonAlolan,
+        .shinyPalette = gMonShinyPalette_PichimonAlolan,
+        .iconSprite = gMonIcon_PichimonAlolan,
         .iconPalIndex = 2,
-        FOOTPRINT(Raichu)
+        FOOTPRINT(Pichimon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sRaichuAlolanLevelUpLearnset,
-        .teachableLearnset = sRaichuAlolanTeachableLearnset,
-        .formSpeciesIdTable = sRaichuFormSpeciesIdTable,
+        .levelUpLearnset = sPichimonAlolanLevelUpLearnset,
+        .teachableLearnset = sPichimonAlolanTeachableLearnset,
+        .formSpeciesIdTable = sPichimonFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_PETITMON

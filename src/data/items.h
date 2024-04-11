@@ -6131,7 +6131,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
             "Upgrade Alolan\n"
-            "Raichu's Thunder-\n"
+            "Pichimon's Thunder-\n"
             "bolt into a Z-Move."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

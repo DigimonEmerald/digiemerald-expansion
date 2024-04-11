@@ -479,23 +479,23 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
         const u8 gMonIcon_PetitmonPartnerF[] = INCBIN_U8("graphics/pokemon/petitmon/partner/iconf.4bpp");
     #endif
 
-    const u32 gMonFrontPic_Raichu[] = INCBIN_U32("graphics/pokemon/raichu/anim_front.4bpp.lz");
-    const u32 gMonPalette_Raichu[] = INCBIN_U32("graphics/pokemon/raichu/normal.gbapal.lz");
-    const u32 gMonBackPic_Raichu[] = INCBIN_U32("graphics/pokemon/raichu/back.4bpp.lz");
-    const u32 gMonShinyPalette_Raichu[] = INCBIN_U32("graphics/pokemon/raichu/shiny.gbapal.lz");
-    const u8 gMonIcon_Raichu[] = INCBIN_U8("graphics/pokemon/raichu/icon.4bpp");
+    const u32 gMonFrontPic_Pichimon[] = INCBIN_U32("graphics/pokemon/pichimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Pichimon[] = INCBIN_U32("graphics/pokemon/pichimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Pichimon[] = INCBIN_U32("graphics/pokemon/pichimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Pichimon[] = INCBIN_U32("graphics/pokemon/pichimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Pichimon[] = INCBIN_U8("graphics/pokemon/pichimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Raichu[] = INCBIN_U8("graphics/pokemon/raichu/footprint.1bpp");
+    const u8 gMonFootprint_Pichimon[] = INCBIN_U8("graphics/pokemon/pichimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_RaichuF[] = INCBIN_U32("graphics/pokemon/raichu/anim_frontf.4bpp.lz");
+    const u32 gMonFrontPic_PichimonF[] = INCBIN_U32("graphics/pokemon/pichimon/anim_frontf.4bpp.lz");
 
 #if P_ALOLAN_FORMS
-    const u32 gMonFrontPic_RaichuAlolan[] = INCBIN_U32("graphics/pokemon/raichu/alolan/front.4bpp.lz");
-    const u32 gMonPalette_RaichuAlolan[] = INCBIN_U32("graphics/pokemon/raichu/alolan/normal.gbapal.lz");
-    const u32 gMonBackPic_RaichuAlolan[] = INCBIN_U32("graphics/pokemon/raichu/alolan/back.4bpp.lz");
-    const u32 gMonShinyPalette_RaichuAlolan[] = INCBIN_U32("graphics/pokemon/raichu/alolan/shiny.gbapal.lz");
-    const u8 gMonIcon_RaichuAlolan[] = INCBIN_U8("graphics/pokemon/raichu/alolan/icon.4bpp");
+    const u32 gMonFrontPic_PichimonAlolan[] = INCBIN_U32("graphics/pokemon/pichimon/alolan/front.4bpp.lz");
+    const u32 gMonPalette_PichimonAlolan[] = INCBIN_U32("graphics/pokemon/pichimon/alolan/normal.gbapal.lz");
+    const u32 gMonBackPic_PichimonAlolan[] = INCBIN_U32("graphics/pokemon/pichimon/alolan/back.4bpp.lz");
+    const u32 gMonShinyPalette_PichimonAlolan[] = INCBIN_U32("graphics/pokemon/pichimon/alolan/shiny.gbapal.lz");
+    const u8 gMonIcon_PichimonAlolan[] = INCBIN_U8("graphics/pokemon/pichimon/alolan/icon.4bpp");
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_PETITMON
 

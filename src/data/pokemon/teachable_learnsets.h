@@ -985,7 +985,7 @@ static const u16 sPetitmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sRaichuTeachableLearnset[] = {
+static const u16 sPichimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
@@ -1031,7 +1031,7 @@ static const u16 sRaichuTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sRaichuAlolanTeachableLearnset[] = {
+static const u16 sPichimonAlolanTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,

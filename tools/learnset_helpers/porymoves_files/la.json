@@ -220,7 +220,7 @@
       "MOVE_WILD_CHARGE"
     ]
   },
-  "RAICHU": {
+  "PICHIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -16644,7 +16644,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "RAICHU_ALOLAN": {
+  "PICHIMON_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 1,

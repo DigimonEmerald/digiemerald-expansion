@@ -27,7 +27,7 @@
 #define SPECIES_PAFUMON                                   23
 #define SPECIES_PAOMON                                   24
 #define SPECIES_PETITMON                                 25
-#define SPECIES_RAICHU                                  26
+#define SPECIES_PICHIMON                                  26
 #define SPECIES_SANDSHREW                               27
 #define SPECIES_SANDSLASH                               28
 #define SPECIES_NIDORAN_F                               29
@@ -1016,7 +1016,7 @@
 #define SPECIES_GROUDON_PRIMAL                          955
 #define SPECIES_CHOROMON_ALOLAN                          956
 #define SPECIES_MOKUMON_ALOLAN                         957
-#define SPECIES_RAICHU_ALOLAN                           958
+#define SPECIES_PICHIMON_ALOLAN                           958
 #define SPECIES_SANDSHREW_ALOLAN                        959
 #define SPECIES_SANDSLASH_ALOLAN                        960
 #define SPECIES_VULPIX_ALOLAN                           961

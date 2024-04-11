@@ -63,7 +63,7 @@ gCryTable::
 	cry Cry_Pichu
 .endif @ P_GEN_2_CROSS_EVOS
 	cry Cry_Petitmon
-	cry Cry_Raichu
+	cry Cry_Pichimon
 .endif @ P_FAMILY_PETITMON
 .if P_FAMILY_SANDSHREW == TRUE
 	cry Cry_Sandshrew
@@ -2489,7 +2489,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Pichu
 .endif @ P_GEN_2_CROSS_EVOS
 	cry_reverse Cry_Petitmon
-	cry_reverse Cry_Raichu
+	cry_reverse Cry_Pichimon
 .endif @ P_FAMILY_PETITMON
 .if P_FAMILY_SANDSHREW == TRUE
 	cry_reverse Cry_Sandshrew

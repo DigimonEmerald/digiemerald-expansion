@@ -2792,7 +2792,7 @@
       "MOVE_VOLT_TACKLE"
     ]
   },
-  "RAICHU": {
+  "PICHIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -104687,7 +104687,7 @@
       "MOVE_ZEN_HEADBUTT"
     ]
   },
-  "RAICHU_ALOLAN": {
+  "PICHIMON_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 0,
