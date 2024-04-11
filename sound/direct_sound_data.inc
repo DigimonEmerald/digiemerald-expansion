@@ -634,8 +634,8 @@ Cry_Icebotamon::
 	.incbin "sound/direct_sound_samples/cries/icebotamon.bin"
 
 	.align 2
-Cry_Golbat::
-	.incbin "sound/direct_sound_samples/cries/golbat.bin"
+Cry_Yuramon::
+	.incbin "sound/direct_sound_samples/cries/yuramon.bin"
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2

@@ -1989,7 +1989,7 @@ static const u16 sIcebotamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGolbatTeachableLearnset[] = {
+static const u16 sYuramonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,

@@ -581,7 +581,7 @@ static const union AnimCmd sAnim_Icebotamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Golbat_1[] =
+static const union AnimCmd sAnim_Yuramon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 5),
@@ -10299,7 +10299,7 @@ SINGLE_ANIMATION(Tsubumon);
 #endif //P_FAMILY_SANDMON
 #if P_FAMILY_ICEBOTAMON
 SINGLE_ANIMATION(Icebotamon);
-SINGLE_ANIMATION(Golbat);
+SINGLE_ANIMATION(Yuramon);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Crobat);
 #endif //P_GEN_2_CROSS_EVOS

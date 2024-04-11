@@ -97,7 +97,7 @@ gCryTable::
 .endif @ P_FAMILY_SANDMON
 .if P_FAMILY_ICEBOTAMON == TRUE
 	cry Cry_Icebotamon
-	cry Cry_Golbat
+	cry Cry_Yuramon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Crobat
 .endif @ P_GEN_2_CROSS_EVOS
@@ -2523,7 +2523,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_SANDMON
 .if P_FAMILY_ICEBOTAMON == TRUE
 	cry_reverse Cry_Icebotamon
-	cry_reverse Cry_Golbat
+	cry_reverse Cry_Yuramon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Crobat
 .endif @ P_GEN_2_CROSS_EVOS

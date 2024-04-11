@@ -698,17 +698,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_IcebotamonF[] = INCBIN_U32("graphics/pokemon/icebotamon/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_IcebotamonF[] = INCBIN_U32("graphics/pokemon/icebotamon/backf.4bpp.lz");
 
-    const u32 gMonFrontPic_Golbat[] = INCBIN_U32("graphics/pokemon/golbat/anim_front.4bpp.lz");
-    const u32 gMonPalette_Golbat[] = INCBIN_U32("graphics/pokemon/golbat/normal.gbapal.lz");
-    const u32 gMonBackPic_Golbat[] = INCBIN_U32("graphics/pokemon/golbat/back.4bpp.lz");
-    const u32 gMonShinyPalette_Golbat[] = INCBIN_U32("graphics/pokemon/golbat/shiny.gbapal.lz");
-    const u8 gMonIcon_Golbat[] = INCBIN_U8("graphics/pokemon/golbat/icon.4bpp");
+    const u32 gMonFrontPic_Yuramon[] = INCBIN_U32("graphics/pokemon/yuramon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Yuramon[] = INCBIN_U32("graphics/pokemon/yuramon/normal.gbapal.lz");
+    const u32 gMonBackPic_Yuramon[] = INCBIN_U32("graphics/pokemon/yuramon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Yuramon[] = INCBIN_U32("graphics/pokemon/yuramon/shiny.gbapal.lz");
+    const u8 gMonIcon_Yuramon[] = INCBIN_U8("graphics/pokemon/yuramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Golbat[] = INCBIN_U8("graphics/pokemon/golbat/footprint.1bpp");
+    const u8 gMonFootprint_Yuramon[] = INCBIN_U8("graphics/pokemon/yuramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_GolbatF[] = INCBIN_U32("graphics/pokemon/golbat/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_GolbatF[] = INCBIN_U32("graphics/pokemon/golbat/backf.4bpp.lz");
+    const u32 gMonFrontPic_YuramonF[] = INCBIN_U32("graphics/pokemon/yuramon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_YuramonF[] = INCBIN_U32("graphics/pokemon/yuramon/backf.4bpp.lz");
 
 #if P_GEN_2_CROSS_EVOS
     const u32 gMonFrontPic_Crobat[] = INCBIN_U32("graphics/pokemon/crobat/anim_front.4bpp.lz");
