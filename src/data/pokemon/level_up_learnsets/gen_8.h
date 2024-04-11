@@ -1546,8 +1546,8 @@ static const struct LevelUpMove sAnnihilapeLevelUpLearnset[] = {
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_DEMIVEEMON
 
-#if P_FAMILY_GROWLITHE
-static const struct LevelUpMove sGrowlitheLevelUpLearnset[] = {
+#if P_FAMILY_FRIMON
+static const struct LevelUpMove sFrimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 4, MOVE_HOWL),
@@ -1591,7 +1591,7 @@ static const struct LevelUpMove sArcanineLevelUpLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const struct LevelUpMove sGrowlitheHisuianLevelUpLearnset[] = {
+static const struct LevelUpMove sFrimonHisuianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 5, MOVE_EMBER),
     LEVEL_UP_MOVE( 9, MOVE_BITE),
@@ -1616,7 +1616,7 @@ static const struct LevelUpMove sArcanineHisuianLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_GROWLITHE
+#endif //P_FAMILY_FRIMON
 
 #if P_FAMILY_POLIWAG
 static const struct LevelUpMove sPoliwagLevelUpLearnset[] = {

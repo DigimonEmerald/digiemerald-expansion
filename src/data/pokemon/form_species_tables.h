@@ -160,10 +160,10 @@ static const u16 sChapmonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_CALUMON
 
-#if P_FAMILY_GROWLITHE
-static const u16 sGrowlitheFormSpeciesIdTable[] = {
-    SPECIES_GROWLITHE,
-    SPECIES_GROWLITHE_HISUIAN,
+#if P_FAMILY_FRIMON
+static const u16 sFrimonFormSpeciesIdTable[] = {
+    SPECIES_FRIMON,
+    SPECIES_FRIMON_HISUIAN,
     FORM_SPECIES_END,
 };
 
@@ -172,7 +172,7 @@ static const u16 sArcanineFormSpeciesIdTable[] = {
     SPECIES_ARCANINE_HISUIAN,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_GROWLITHE
+#endif //P_FAMILY_FRIMON
 
 #if P_FAMILY_ABRA
 static const u16 sAlakazamFormSpeciesIdTable[] = {

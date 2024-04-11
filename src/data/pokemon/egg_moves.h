@@ -474,8 +474,8 @@ const u16 gEggMoves[] = {
         MOVE_POWER_TRIP),
 #endif //P_FAMILY_DEMIVEEMON
 
-#if P_FAMILY_GROWLITHE
-    egg_moves(GROWLITHE,
+#if P_FAMILY_FRIMON
+    egg_moves(FRIMON,
         MOVE_BODY_SLAM,
         MOVE_CRUNCH,
         MOVE_THRASH,
@@ -490,7 +490,7 @@ const u16 gEggMoves[] = {
         MOVE_DOUBLE_KICK,
         MOVE_CLOSE_COMBAT,
         MOVE_BURN_UP),
-#endif //P_FAMILY_GROWLITHE
+#endif //P_FAMILY_FRIMON
 
 #if P_FAMILY_POLIWAG
     egg_moves(POLIWAG,

@@ -59,7 +59,7 @@
 #define SPECIES_DEMMERAMON                                 55
 #define SPECIES_DEMIVEEMON                                  56
 #define SPECIES_DORIMON                                57
-#define SPECIES_GROWLITHE                               58
+#define SPECIES_FRIMON                               58
 #define SPECIES_ARCANINE                                59
 #define SPECIES_POLIWAG                                 60
 #define SPECIES_POLIWHIRL                               61
@@ -1054,7 +1054,7 @@
 #define SPECIES_STUNFISK_GALARIAN                       992
 
 //Hisuian Forms
-#define SPECIES_GROWLITHE_HISUIAN                       993
+#define SPECIES_FRIMON_HISUIAN                       993
 #define SPECIES_ARCANINE_HISUIAN                        994
 #define SPECIES_VOLTORB_HISUIAN                         995
 #define SPECIES_ELECTRODE_HISUIAN                       996

@@ -140,10 +140,10 @@ gCryTable::
 	cry Cry_Annihilape
 .endif @ P_GEN_9_CROSS_EVOS
 .endif @ P_FAMILY_DEMIVEEMON
-.if P_FAMILY_GROWLITHE == TRUE
-	cry Cry_Growlithe
+.if P_FAMILY_FRIMON == TRUE
+	cry Cry_Frimon
 	cry Cry_Arcanine
-.endif @ P_FAMILY_GROWLITHE
+.endif @ P_FAMILY_FRIMON
 .if P_FAMILY_POLIWAG == TRUE
 	cry Cry_Poliwag
 	cry Cry_Poliwhirl
@@ -2566,10 +2566,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Annihilape
 .endif @ P_GEN_9_CROSS_EVOS
 .endif @ P_FAMILY_DEMIVEEMON
-.if P_FAMILY_GROWLITHE == TRUE
-	cry_reverse Cry_Growlithe
+.if P_FAMILY_FRIMON == TRUE
+	cry_reverse Cry_Frimon
 	cry_reverse Cry_Arcanine
-.endif @ P_FAMILY_GROWLITHE
+.endif @ P_FAMILY_FRIMON
 .if P_FAMILY_POLIWAG == TRUE
 	cry_reverse Cry_Poliwag
 	cry_reverse Cry_Poliwhirl

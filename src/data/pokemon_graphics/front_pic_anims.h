@@ -872,8 +872,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Annihilape);
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_DEMIVEEMON
 
-#if P_FAMILY_GROWLITHE
-static const union AnimCmd sAnim_Growlithe_1[] =
+#if P_FAMILY_FRIMON
+static const union AnimCmd sAnim_Frimon_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 8),
@@ -892,10 +892,10 @@ static const union AnimCmd sAnim_Arcanine_1[] =
 };
 
 #if P_HISUIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(GrowlitheHisuian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(FrimonHisuian);
 PLACEHOLDER_ANIM_SINGLE_FRAME(ArcanineHisuian);
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_GROWLITHE
+#endif //P_FAMILY_FRIMON
 
 #if P_FAMILY_POLIWAG
 static const union AnimCmd sAnim_Poliwag_1[] =
@@ -10354,14 +10354,14 @@ SINGLE_ANIMATION(Dorimon);
 SINGLE_ANIMATION(Annihilape);
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_DEMIVEEMON
-#if P_FAMILY_GROWLITHE
-SINGLE_ANIMATION(Growlithe);
+#if P_FAMILY_FRIMON
+SINGLE_ANIMATION(Frimon);
 SINGLE_ANIMATION(Arcanine);
 #if P_HISUIAN_FORMS
-SINGLE_ANIMATION(GrowlitheHisuian);
+SINGLE_ANIMATION(FrimonHisuian);
 SINGLE_ANIMATION(ArcanineHisuian);
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_GROWLITHE
+#endif //P_FAMILY_FRIMON
 #if P_FAMILY_POLIWAG
 SINGLE_ANIMATION(Poliwag);
 SINGLE_ANIMATION(Poliwhirl);

@@ -737,15 +737,15 @@ Cry_Annihilape::
 .endif @ P_GEN_9_CROSS_EVOS
 .endif @ P_FAMILY_DEMIVEEMON
 
-.if P_FAMILY_GROWLITHE == TRUE
+.if P_FAMILY_FRIMON == TRUE
 	.align 2
-Cry_Growlithe::
-	.incbin "sound/direct_sound_samples/cries/growlithe.bin"
+Cry_Frimon::
+	.incbin "sound/direct_sound_samples/cries/frimon.bin"
 
 	.align 2
 Cry_Arcanine::
 	.incbin "sound/direct_sound_samples/cries/arcanine.bin"
-.endif @ P_FAMILY_GROWLITHE
+.endif @ P_FAMILY_FRIMON
 
 .if P_FAMILY_POLIWAG == TRUE
 	.align 2

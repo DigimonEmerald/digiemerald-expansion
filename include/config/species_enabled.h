@@ -76,7 +76,7 @@
 #define P_FAMILY_CALUMON                  P_GEN_1_POKEMON
 #define P_FAMILY_CHICCHIMON                 P_GEN_1_POKEMON
 #define P_FAMILY_DEMIVEEMON                  P_GEN_1_POKEMON
-#define P_FAMILY_GROWLITHE               P_GEN_1_POKEMON
+#define P_FAMILY_FRIMON               P_GEN_1_POKEMON
 #define P_FAMILY_POLIWAG                 P_GEN_1_POKEMON
 #define P_FAMILY_ABRA                    P_GEN_1_POKEMON
 #define P_FAMILY_MACHOP                  P_GEN_1_POKEMON

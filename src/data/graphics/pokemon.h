@@ -952,14 +952,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_DEMIVEEMON
 
-#if P_FAMILY_GROWLITHE
-    const u32 gMonFrontPic_Growlithe[] = INCBIN_U32("graphics/pokemon/growlithe/anim_front.4bpp.lz");
-    const u32 gMonPalette_Growlithe[] = INCBIN_U32("graphics/pokemon/growlithe/normal.gbapal.lz");
-    const u32 gMonBackPic_Growlithe[] = INCBIN_U32("graphics/pokemon/growlithe/back.4bpp.lz");
-    const u32 gMonShinyPalette_Growlithe[] = INCBIN_U32("graphics/pokemon/growlithe/shiny.gbapal.lz");
-    const u8 gMonIcon_Growlithe[] = INCBIN_U8("graphics/pokemon/growlithe/icon.4bpp");
+#if P_FAMILY_FRIMON
+    const u32 gMonFrontPic_Frimon[] = INCBIN_U32("graphics/pokemon/frimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Frimon[] = INCBIN_U32("graphics/pokemon/frimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Frimon[] = INCBIN_U32("graphics/pokemon/frimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Frimon[] = INCBIN_U32("graphics/pokemon/frimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Frimon[] = INCBIN_U8("graphics/pokemon/frimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Growlithe[] = INCBIN_U8("graphics/pokemon/growlithe/footprint.1bpp");
+    const u8 gMonFootprint_Frimon[] = INCBIN_U8("graphics/pokemon/frimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Arcanine[] = INCBIN_U32("graphics/pokemon/arcanine/anim_front.4bpp.lz");
@@ -972,11 +972,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
 #if P_HISUIAN_FORMS
-    const u32 gMonFrontPic_GrowlitheHisuian[] = INCBIN_U32("graphics/pokemon/growlithe/hisuian/front.4bpp.lz");
-    const u32 gMonPalette_GrowlitheHisuian[] = INCBIN_U32("graphics/pokemon/growlithe/hisuian/normal.gbapal.lz");
-    const u32 gMonBackPic_GrowlitheHisuian[] = INCBIN_U32("graphics/pokemon/growlithe/hisuian/back.4bpp.lz");
-    const u32 gMonShinyPalette_GrowlitheHisuian[] = INCBIN_U32("graphics/pokemon/growlithe/hisuian/shiny.gbapal.lz");
-    const u8 gMonIcon_GrowlitheHisuian[] = INCBIN_U8("graphics/pokemon/growlithe/hisuian/icon.4bpp");
+    const u32 gMonFrontPic_FrimonHisuian[] = INCBIN_U32("graphics/pokemon/frimon/hisuian/front.4bpp.lz");
+    const u32 gMonPalette_FrimonHisuian[] = INCBIN_U32("graphics/pokemon/frimon/hisuian/normal.gbapal.lz");
+    const u32 gMonBackPic_FrimonHisuian[] = INCBIN_U32("graphics/pokemon/frimon/hisuian/back.4bpp.lz");
+    const u32 gMonShinyPalette_FrimonHisuian[] = INCBIN_U32("graphics/pokemon/frimon/hisuian/shiny.gbapal.lz");
+    const u8 gMonIcon_FrimonHisuian[] = INCBIN_U8("graphics/pokemon/frimon/hisuian/icon.4bpp");
 
     const u32 gMonFrontPic_ArcanineHisuian[] = INCBIN_U32("graphics/pokemon/arcanine/hisuian/front.4bpp.lz");
     const u32 gMonPalette_ArcanineHisuian[] = INCBIN_U32("graphics/pokemon/arcanine/hisuian/normal.gbapal.lz");
@@ -984,7 +984,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_ArcanineHisuian[] = INCBIN_U32("graphics/pokemon/arcanine/hisuian/shiny.gbapal.lz");
     const u8 gMonIcon_ArcanineHisuian[] = INCBIN_U8("graphics/pokemon/arcanine/hisuian/icon.4bpp");
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_GROWLITHE
+#endif //P_FAMILY_FRIMON
 
 #if P_FAMILY_POLIWAG
     const u32 gMonFrontPic_Poliwag[] = INCBIN_U32("graphics/pokemon/poliwag/anim_front.4bpp.lz");

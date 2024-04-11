@@ -5985,8 +5985,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_DEMIVEEMON
 
-#if P_FAMILY_GROWLITHE
-    [SPECIES_GROWLITHE] =
+#if P_FAMILY_FRIMON
+    [SPECIES_FRIMON] =
     {
         .baseHP        = 55,
         .baseAttack    = 70,
@@ -6005,9 +6005,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_FLASH_FIRE, ABILITY_JUSTIFIED },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Growlithe"),
-        .cryId = CRY_GROWLITHE,
-        .natDexNum = NATIONAL_DEX_GROWLITHE,
+        .speciesName = _("Frimon"),
+        .cryId = CRY_FRIMON,
+        .natDexNum = NATIONAL_DEX_FRIMON,
         .categoryName = _("Puppy"),
         .height = 7,
         .weight = 190,
@@ -6020,24 +6020,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 14,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Growlithe,
+        .frontPic = gMonFrontPic_Frimon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Growlithe,
+        .frontAnimFrames = sAnims_Frimon,
         .frontAnimId = ANIM_V_STRETCH,
         .frontAnimDelay = 30,
-        .backPic = gMonBackPic_Growlithe,
+        .backPic = gMonBackPic_Frimon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Growlithe,
-        .shinyPalette = gMonShinyPalette_Growlithe,
-        .iconSprite = gMonIcon_Growlithe,
+        .palette = gMonPalette_Frimon,
+        .shinyPalette = gMonShinyPalette_Frimon,
+        .iconSprite = gMonIcon_Frimon,
         .iconPalIndex = 3,
-        FOOTPRINT(Growlithe)
-        .levelUpLearnset = sGrowlitheLevelUpLearnset,
-        .teachableLearnset = sGrowlitheTeachableLearnset,
-        .formSpeciesIdTable = sGrowlitheFormSpeciesIdTable,
+        FOOTPRINT(Frimon)
+        .levelUpLearnset = sFrimonLevelUpLearnset,
+        .teachableLearnset = sFrimonTeachableLearnset,
+        .formSpeciesIdTable = sFrimonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ARCANINE}),
     },
 
@@ -6096,7 +6096,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_HISUIAN_FORMS
-    [SPECIES_GROWLITHE_HISUIAN] =
+    [SPECIES_FRIMON_HISUIAN] =
     {
         .baseHP        = 60,
         .baseAttack    = 75,
@@ -6115,9 +6115,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_FLASH_FIRE, ABILITY_ROCK_HEAD },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Growlithe"),
-        .cryId = CRY_GROWLITHE,
-        .natDexNum = NATIONAL_DEX_GROWLITHE,
+        .speciesName = _("Frimon"),
+        .cryId = CRY_FRIMON,
+        .natDexNum = NATIONAL_DEX_FRIMON,
         .categoryName = _("Scout"),
         .height = 8,
         .weight = 227,
@@ -6130,24 +6130,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 14,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_GrowlitheHisuian,
+        .frontPic = gMonFrontPic_FrimonHisuian,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_GrowlitheHisuian,
+        .frontAnimFrames = sAnims_FrimonHisuian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_GrowlitheHisuian,
+        .backPic = gMonBackPic_FrimonHisuian,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 8,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_GrowlitheHisuian,
-        .shinyPalette = gMonShinyPalette_GrowlitheHisuian,
-        .iconSprite = gMonIcon_GrowlitheHisuian,
+        .palette = gMonPalette_FrimonHisuian,
+        .shinyPalette = gMonShinyPalette_FrimonHisuian,
+        .iconSprite = gMonIcon_FrimonHisuian,
         .iconPalIndex = 0,
-        FOOTPRINT(Growlithe)
+        FOOTPRINT(Frimon)
         .isHisuianForm = TRUE,
-        .levelUpLearnset = sGrowlitheHisuianLevelUpLearnset,
-        .teachableLearnset = sGrowlitheHisuianTeachableLearnset,
-        .formSpeciesIdTable = sGrowlitheFormSpeciesIdTable,
+        .levelUpLearnset = sFrimonHisuianLevelUpLearnset,
+        .teachableLearnset = sFrimonHisuianTeachableLearnset,
+        .formSpeciesIdTable = sFrimonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ARCANINE_HISUIAN}),
     },
 
@@ -6205,7 +6205,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sArcanineFormSpeciesIdTable,
     },
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_GROWLITHE
+#endif //P_FAMILY_FRIMON
 
 #if P_FAMILY_POLIWAG
     [SPECIES_POLIWAG] =

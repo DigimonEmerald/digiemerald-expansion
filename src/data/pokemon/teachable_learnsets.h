@@ -2844,8 +2844,8 @@ static const u16 sAnnihilapeTeachableLearnset[] = {
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_DEMIVEEMON
 
-#if P_FAMILY_GROWLITHE
-static const u16 sGrowlitheTeachableLearnset[] = {
+#if P_FAMILY_FRIMON
+static const u16 sFrimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DIG,
@@ -2910,7 +2910,7 @@ static const u16 sArcanineTeachableLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const u16 sGrowlitheHisuianTeachableLearnset[] = {
+static const u16 sFrimonHisuianTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_DIG,
     MOVE_FACADE,
@@ -2961,7 +2961,7 @@ static const u16 sArcanineHisuianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_GROWLITHE
+#endif //P_FAMILY_FRIMON
 
 #if P_FAMILY_POLIWAG
 static const u16 sPoliwagTeachableLearnset[] = {
