@@ -1014,7 +1014,7 @@ static const union AnimCmd sAnim_Kyaromon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Weepinbell_1[] =
+static const union AnimCmd sAnim_Kyokyomon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 25),
@@ -10388,7 +10388,7 @@ SINGLE_ANIMATION(KozenimonGigantamax);
 #endif //P_FAMILY_KOKOMON
 #if P_FAMILY_KYAROMON
 SINGLE_ANIMATION(Kyaromon);
-SINGLE_ANIMATION(Weepinbell);
+SINGLE_ANIMATION(Kyokyomon);
 SINGLE_ANIMATION(Victreebel);
 #endif //P_FAMILY_KYAROMON
 #if P_FAMILY_TENTACOOL

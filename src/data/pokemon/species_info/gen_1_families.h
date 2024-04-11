@@ -6989,10 +6989,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Kyaromon)
         .levelUpLearnset = sKyaromonLevelUpLearnset,
         .teachableLearnset = sKyaromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_WEEPINBELL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_KYOKYOMON}),
     },
 
-    [SPECIES_WEEPINBELL] =
+    [SPECIES_KYOKYOMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 90,
@@ -7011,14 +7011,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_NONE, ABILITY_GLUTTONY },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Weepinbell"),
-        .cryId = CRY_WEEPINBELL,
-        .natDexNum = NATIONAL_DEX_WEEPINBELL,
+        .speciesName = _("Kyokyomon"),
+        .cryId = CRY_KYOKYOMON,
+        .natDexNum = NATIONAL_DEX_KYOKYOMON,
         .categoryName = _("Flycatcher"),
         .height = 10,
         .weight = 64,
         .description = COMPOUND_STRING(
-            "At night, a Weepinbell hangs on to a tree\n"
+            "At night, a Kyokyomon hangs on to a tree\n"
             "branch with its hooked rear and sleeps.\n"
             "If it moves around in its sleep, it may\n"
             "wake up to find itself on the ground."),
@@ -7026,23 +7026,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Weepinbell,
+        .frontPic = gMonFrontPic_Kyokyomon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Weepinbell,
+        .frontAnimFrames = sAnims_Kyokyomon,
         .frontAnimId = ANIM_SWING_CONVEX,
         .frontAnimDelay = 3,
-        .backPic = gMonBackPic_Weepinbell,
+        .backPic = gMonBackPic_Kyokyomon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Weepinbell,
-        .shinyPalette = gMonShinyPalette_Weepinbell,
-        .iconSprite = gMonIcon_Weepinbell,
+        .palette = gMonPalette_Kyokyomon,
+        .shinyPalette = gMonShinyPalette_Kyokyomon,
+        .iconSprite = gMonIcon_Kyokyomon,
         .iconPalIndex = 1,
-        FOOTPRINT(Weepinbell)
-        .levelUpLearnset = sWeepinbellLevelUpLearnset,
-        .teachableLearnset = sWeepinbellTeachableLearnset,
+        FOOTPRINT(Kyokyomon)
+        .levelUpLearnset = sKyokyomonLevelUpLearnset,
+        .teachableLearnset = sKyokyomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_VICTREEBEL}),
     },
 

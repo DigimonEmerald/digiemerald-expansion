@@ -167,7 +167,7 @@ gCryTable::
 .endif @ P_FAMILY_KOKOMON
 .if P_FAMILY_KYAROMON == TRUE
 	cry Cry_Kyaromon
-	cry Cry_Weepinbell
+	cry Cry_Kyokyomon
 	cry Cry_Victreebel
 .endif @ P_FAMILY_KYAROMON
 .if P_FAMILY_TENTACOOL == TRUE
@@ -2593,7 +2593,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_KOKOMON
 .if P_FAMILY_KYAROMON == TRUE
 	cry_reverse Cry_Kyaromon
-	cry_reverse Cry_Weepinbell
+	cry_reverse Cry_Kyokyomon
 	cry_reverse Cry_Victreebel
 .endif @ P_FAMILY_KYAROMON
 .if P_FAMILY_TENTACOOL == TRUE
