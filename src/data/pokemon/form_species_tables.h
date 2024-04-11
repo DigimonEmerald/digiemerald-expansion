@@ -255,10 +255,10 @@ static const u16 sPinamonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_PINAMON
 
-#if P_FAMILY_GRIMER
-static const u16 sGrimerFormSpeciesIdTable[] = {
-    SPECIES_GRIMER,
-    SPECIES_GRIMER_ALOLAN,
+#if P_FAMILY_SAKUTTOMON
+static const u16 sSakuttomonFormSpeciesIdTable[] = {
+    SPECIES_SAKUTTOMON,
+    SPECIES_SAKUTTOMON_ALOLAN,
     FORM_SPECIES_END,
 };
 
@@ -267,7 +267,7 @@ static const u16 sMukFormSpeciesIdTable[] = {
     SPECIES_MUK_ALOLAN,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_GRIMER
+#endif //P_FAMILY_SAKUTTOMON
 
 #if P_FAMILY_GASTLY
 static const u16 sGengarFormSpeciesIdTable[] = {

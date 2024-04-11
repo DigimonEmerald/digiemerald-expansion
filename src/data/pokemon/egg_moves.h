@@ -725,8 +725,8 @@ const u16 gEggMoves[] = {
         MOVE_ENTRAINMENT),
 #endif //P_FAMILY_PUSURIMON
 
-#if P_FAMILY_GRIMER
-    egg_moves(GRIMER,
+#if P_FAMILY_SAKUTTOMON
+    egg_moves(SAKUTTOMON,
         MOVE_HAZE,
         MOVE_MEAN_LOOK,
         MOVE_LICK,
@@ -741,7 +741,7 @@ const u16 gEggMoves[] = {
         MOVE_ACID_SPRAY,
         MOVE_POWER_UP_PUNCH),
 #if P_ALOLAN_FORMS
-    egg_moves(GRIMER_ALOLAN,
+    egg_moves(SAKUTTOMON_ALOLAN,
         MOVE_ASSURANCE,
         MOVE_CLEAR_SMOG,
         MOVE_CURSE,
@@ -756,7 +756,7 @@ const u16 gEggMoves[] = {
         MOVE_STOCKPILE,
         MOVE_SWALLOW),
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_GRIMER
+#endif //P_FAMILY_SAKUTTOMON
 
 #if P_FAMILY_SHELLDER
     egg_moves(SHELLDER,

@@ -4480,8 +4480,8 @@ static const u16 sPuyoyomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_PUSURIMON
 
-#if P_FAMILY_GRIMER
-static const u16 sGrimerTeachableLearnset[] = {
+#if P_FAMILY_SAKUTTOMON
+static const u16 sSakuttomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -4567,7 +4567,7 @@ static const u16 sMukTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sGrimerAlolanTeachableLearnset[] = {
+static const u16 sSakuttomonAlolanTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
@@ -4650,7 +4650,7 @@ static const u16 sMukAlolanTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_GRIMER
+#endif //P_FAMILY_SAKUTTOMON
 
 #if P_FAMILY_SHELLDER
 static const u16 sShellderTeachableLearnset[] = {

@@ -8776,8 +8776,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_PUSURIMON
 
-#if P_FAMILY_GRIMER
-    [SPECIES_GRIMER] =
+#if P_FAMILY_SAKUTTOMON
+    [SPECIES_SAKUTTOMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 80,
@@ -8797,38 +8797,38 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_STENCH, ABILITY_STICKY_HOLD, ABILITY_POISON_TOUCH },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Grimer"),
-        .cryId = CRY_GRIMER,
-        .natDexNum = NATIONAL_DEX_GRIMER,
+        .speciesName = _("Sakuttomon"),
+        .cryId = CRY_SAKUTTOMON,
+        .natDexNum = NATIONAL_DEX_SAKUTTOMON,
         .categoryName = _("Sludge"),
         .height = 9,
         .weight = 300,
         .description = COMPOUND_STRING(
             "Born from polluted sludge in the sea,\n"
-            "Grimer's favorite food is anything filthy.\n"
+            "Sakuttomon's favorite food is anything filthy.\n"
             "They feed on wastewater pumped out from\n"
             "factories."),
         .pokemonScale = 258,
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Grimer,
+        .frontPic = gMonFrontPic_Sakuttomon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Grimer,
+        .frontAnimFrames = sAnims_Sakuttomon,
         .frontAnimId = ANIM_H_SLIDE_SLOW,
-        .backPic = gMonBackPic_Grimer,
+        .backPic = gMonBackPic_Sakuttomon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Grimer,
-        .shinyPalette = gMonShinyPalette_Grimer,
-        .iconSprite = gMonIcon_Grimer,
+        .palette = gMonPalette_Sakuttomon,
+        .shinyPalette = gMonShinyPalette_Sakuttomon,
+        .iconSprite = gMonIcon_Sakuttomon,
         .iconPalIndex = 2,
-        FOOTPRINT(Grimer)
-        .levelUpLearnset = sGrimerLevelUpLearnset,
-        .teachableLearnset = sGrimerTeachableLearnset,
-        .formSpeciesIdTable = sGrimerFormSpeciesIdTable,
+        FOOTPRINT(Sakuttomon)
+        .levelUpLearnset = sSakuttomonLevelUpLearnset,
+        .teachableLearnset = sSakuttomonTeachableLearnset,
+        .formSpeciesIdTable = sSakuttomonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_MUK}),
     },
 
@@ -8889,7 +8889,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_ALOLAN_FORMS
-    [SPECIES_GRIMER_ALOLAN] =
+    [SPECIES_SAKUTTOMON_ALOLAN] =
     {
         .baseHP        = 80,
         .baseAttack    = 80,
@@ -8909,39 +8909,39 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_POISON_TOUCH, ABILITY_GLUTTONY, ABILITY_POWER_OF_ALCHEMY },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Grimer"),
-        .cryId = CRY_GRIMER,
-        .natDexNum = NATIONAL_DEX_GRIMER,
+        .speciesName = _("Sakuttomon"),
+        .cryId = CRY_SAKUTTOMON,
+        .natDexNum = NATIONAL_DEX_SAKUTTOMON,
         .categoryName = _("Sludge"),
         .height = 7,
         .weight = 420,
         .description = COMPOUND_STRING(
             "There are a hundred or so of them living\n"
             "in Alola's waste-disposal site. They're all\n"
-            "hard workers who eat a lot of trash. Grimer\n"
+            "hard workers who eat a lot of trash. Sakuttomon\n"
             "seems to relish any and all kinds of trash."),
         .pokemonScale = 258,
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_GrimerAlolan,
+        .frontPic = gMonFrontPic_SakuttomonAlolan,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_GrimerAlolan,
+        .frontAnimFrames = sAnims_SakuttomonAlolan,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_GrimerAlolan,
+        .backPic = gMonBackPic_SakuttomonAlolan,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 14,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_GrimerAlolan,
-        .shinyPalette = gMonShinyPalette_GrimerAlolan,
-        .iconSprite = gMonIcon_GrimerAlolan,
+        .palette = gMonPalette_SakuttomonAlolan,
+        .shinyPalette = gMonShinyPalette_SakuttomonAlolan,
+        .iconSprite = gMonIcon_SakuttomonAlolan,
         .iconPalIndex = 1,
-        FOOTPRINT(Grimer)
+        FOOTPRINT(Sakuttomon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sGrimerAlolanLevelUpLearnset,
-        .teachableLearnset = sGrimerAlolanTeachableLearnset,
-        .formSpeciesIdTable = sGrimerFormSpeciesIdTable,
+        .levelUpLearnset = sSakuttomonAlolanLevelUpLearnset,
+        .teachableLearnset = sSakuttomonAlolanTeachableLearnset,
+        .formSpeciesIdTable = sSakuttomonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_MUK_ALOLAN}),
     },
 
@@ -9002,7 +9002,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sMukFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_GRIMER
+#endif //P_FAMILY_SAKUTTOMON
 
 #if P_FAMILY_SHELLDER
     [SPECIES_SHELLDER] =

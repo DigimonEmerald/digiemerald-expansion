@@ -89,7 +89,7 @@
 #define P_FAMILY_PINAMON               P_GEN_1_POKEMON
 #define P_FAMILY_POROMON                   P_GEN_1_POKEMON
 #define P_FAMILY_PUSURIMON                    P_GEN_1_POKEMON
-#define P_FAMILY_GRIMER                  P_GEN_1_POKEMON
+#define P_FAMILY_SAKUTTOMON                  P_GEN_1_POKEMON
 #define P_FAMILY_SHELLDER                P_GEN_1_POKEMON
 #define P_FAMILY_GASTLY                  P_GEN_1_POKEMON
 #define P_FAMILY_ONIX                    P_GEN_1_POKEMON

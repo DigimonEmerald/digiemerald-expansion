@@ -1924,8 +1924,8 @@ static const struct LevelUpMove sPuyoyomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_PUSURIMON
 
-#if P_FAMILY_GRIMER
-static const struct LevelUpMove sGrimerLevelUpLearnset[] = {
+#if P_FAMILY_SAKUTTOMON
+static const struct LevelUpMove sSakuttomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_GAS),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 4, MOVE_HARDEN),
@@ -1955,7 +1955,7 @@ static const struct LevelUpMove sMukLevelUpLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const struct LevelUpMove sGrimerAlolanLevelUpLearnset[] = {
+static const struct LevelUpMove sSakuttomonAlolanLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_POISON_GAS),
     LEVEL_UP_MOVE( 4, MOVE_HARDEN),
@@ -1999,7 +1999,7 @@ static const struct LevelUpMove sMukAlolanLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_GRIMER
+#endif //P_FAMILY_SAKUTTOMON
 
 #if P_FAMILY_SHELLDER
 static const struct LevelUpMove sShellderLevelUpLearnset[] = {

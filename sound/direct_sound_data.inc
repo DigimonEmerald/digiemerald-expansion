@@ -925,15 +925,15 @@ Cry_Puyoyomon::
 	.incbin "sound/direct_sound_samples/cries/puyoyomon.bin"
 .endif @ P_FAMILY_PUSURIMON
 
-.if P_FAMILY_GRIMER == TRUE
+.if P_FAMILY_SAKUTTOMON == TRUE
 	.align 2
-Cry_Grimer::
-	.incbin "sound/direct_sound_samples/cries/grimer.bin"
+Cry_Sakuttomon::
+	.incbin "sound/direct_sound_samples/cries/sakuttomon.bin"
 
 	.align 2
 Cry_Muk::
 	.incbin "sound/direct_sound_samples/cries/muk.bin"
-.endif @ P_FAMILY_GRIMER
+.endif @ P_FAMILY_SAKUTTOMON
 
 .if P_FAMILY_SHELLDER == TRUE
 	.align 2

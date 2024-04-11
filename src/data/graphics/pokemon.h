@@ -1407,14 +1407,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_PUSURIMON
 
-#if P_FAMILY_GRIMER
-    const u32 gMonFrontPic_Grimer[] = INCBIN_U32("graphics/pokemon/grimer/anim_front.4bpp.lz");
-    const u32 gMonPalette_Grimer[] = INCBIN_U32("graphics/pokemon/grimer/normal.gbapal.lz");
-    const u32 gMonBackPic_Grimer[] = INCBIN_U32("graphics/pokemon/grimer/back.4bpp.lz");
-    const u32 gMonShinyPalette_Grimer[] = INCBIN_U32("graphics/pokemon/grimer/shiny.gbapal.lz");
-    const u8 gMonIcon_Grimer[] = INCBIN_U8("graphics/pokemon/grimer/icon.4bpp");
+#if P_FAMILY_SAKUTTOMON
+    const u32 gMonFrontPic_Sakuttomon[] = INCBIN_U32("graphics/pokemon/sakuttomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Sakuttomon[] = INCBIN_U32("graphics/pokemon/sakuttomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Sakuttomon[] = INCBIN_U32("graphics/pokemon/sakuttomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Sakuttomon[] = INCBIN_U32("graphics/pokemon/sakuttomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Sakuttomon[] = INCBIN_U8("graphics/pokemon/sakuttomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Grimer[] = INCBIN_U8("graphics/pokemon/grimer/footprint.1bpp");
+    const u8 gMonFootprint_Sakuttomon[] = INCBIN_U8("graphics/pokemon/sakuttomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Muk[] = INCBIN_U32("graphics/pokemon/muk/anim_front.4bpp.lz");
@@ -1427,11 +1427,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
 #if P_ALOLAN_FORMS
-    const u32 gMonFrontPic_GrimerAlolan[] = INCBIN_U32("graphics/pokemon/grimer/alolan/front.4bpp.lz");
-    const u32 gMonPalette_GrimerAlolan[] = INCBIN_U32("graphics/pokemon/grimer/alolan/normal.gbapal.lz");
-    const u32 gMonBackPic_GrimerAlolan[] = INCBIN_U32("graphics/pokemon/grimer/alolan/back.4bpp.lz");
-    const u32 gMonShinyPalette_GrimerAlolan[] = INCBIN_U32("graphics/pokemon/grimer/alolan/shiny.gbapal.lz");
-    const u8 gMonIcon_GrimerAlolan[] = INCBIN_U8("graphics/pokemon/grimer/alolan/icon.4bpp");
+    const u32 gMonFrontPic_SakuttomonAlolan[] = INCBIN_U32("graphics/pokemon/sakuttomon/alolan/front.4bpp.lz");
+    const u32 gMonPalette_SakuttomonAlolan[] = INCBIN_U32("graphics/pokemon/sakuttomon/alolan/normal.gbapal.lz");
+    const u32 gMonBackPic_SakuttomonAlolan[] = INCBIN_U32("graphics/pokemon/sakuttomon/alolan/back.4bpp.lz");
+    const u32 gMonShinyPalette_SakuttomonAlolan[] = INCBIN_U32("graphics/pokemon/sakuttomon/alolan/shiny.gbapal.lz");
+    const u8 gMonIcon_SakuttomonAlolan[] = INCBIN_U8("graphics/pokemon/sakuttomon/alolan/icon.4bpp");
 
     const u32 gMonFrontPic_MukAlolan[] = INCBIN_U32("graphics/pokemon/muk/alolan/front.4bpp.lz");
     const u32 gMonPalette_MukAlolan[] = INCBIN_U32("graphics/pokemon/muk/alolan/normal.gbapal.lz");
@@ -1439,7 +1439,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_MukAlolan[] = INCBIN_U32("graphics/pokemon/muk/alolan/shiny.gbapal.lz");
     const u8 gMonIcon_MukAlolan[] = INCBIN_U8("graphics/pokemon/muk/alolan/icon.4bpp");
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_GRIMER
+#endif //P_FAMILY_SAKUTTOMON
 
 #if P_FAMILY_SHELLDER
     const u32 gMonFrontPic_Shellder[] = INCBIN_U32("graphics/pokemon/shellder/anim_front.4bpp.lz");

@@ -1261,8 +1261,8 @@ static const union AnimCmd sAnim_Puyoyomon_1[] =
 };
 #endif //P_FAMILY_PUSURIMON
 
-#if P_FAMILY_GRIMER
-static const union AnimCmd sAnim_Grimer_1[] =
+#if P_FAMILY_SAKUTTOMON
+static const union AnimCmd sAnim_Sakuttomon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -1283,10 +1283,10 @@ static const union AnimCmd sAnim_Muk_1[] =
 };
 
 #if P_ALOLAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(GrimerAlolan);
+PLACEHOLDER_ANIM_SINGLE_FRAME(SakuttomonAlolan);
 PLACEHOLDER_ANIM_SINGLE_FRAME(MukAlolan);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_GRIMER
+#endif //P_FAMILY_SAKUTTOMON
 
 #if P_FAMILY_SHELLDER
 static const union AnimCmd sAnim_Shellder_1[] =
@@ -10452,14 +10452,14 @@ SINGLE_ANIMATION(Puroromon);
 SINGLE_ANIMATION(Pusurimon);
 SINGLE_ANIMATION(Puyoyomon);
 #endif //P_FAMILY_PUSURIMON
-#if P_FAMILY_GRIMER
-SINGLE_ANIMATION(Grimer);
+#if P_FAMILY_SAKUTTOMON
+SINGLE_ANIMATION(Sakuttomon);
 SINGLE_ANIMATION(Muk);
 #if P_ALOLAN_FORMS
-SINGLE_ANIMATION(GrimerAlolan);
+SINGLE_ANIMATION(SakuttomonAlolan);
 SINGLE_ANIMATION(MukAlolan);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_GRIMER
+#endif //P_FAMILY_SAKUTTOMON
 #if P_FAMILY_SHELLDER
 SINGLE_ANIMATION(Shellder);
 SINGLE_ANIMATION(Cloyster);
