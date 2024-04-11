@@ -704,8 +704,8 @@ const u16 gEggMoves[] = {
         MOVE_ASSURANCE),
 #endif //P_FAMILY_POROMON
 
-#if P_FAMILY_SEEL
-    egg_moves(SEEL,
+#if P_FAMILY_PUSURIMON
+    egg_moves(PUSURIMON,
         MOVE_LICK,
         MOVE_PERISH_SONG,
         MOVE_DISABLE,
@@ -723,7 +723,7 @@ const u16 gEggMoves[] = {
         MOVE_SLEEP_TALK,
         MOVE_BELCH,
         MOVE_ENTRAINMENT),
-#endif //P_FAMILY_SEEL
+#endif //P_FAMILY_PUSURIMON
 
 #if P_FAMILY_GRIMER
     egg_moves(GRIMER,

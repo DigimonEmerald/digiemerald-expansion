@@ -915,15 +915,15 @@ Cry_Puroromon::
 	.incbin "sound/direct_sound_samples/cries/puroromon.bin"
 .endif @ P_FAMILY_POROMON
 
-.if P_FAMILY_SEEL == TRUE
+.if P_FAMILY_PUSURIMON == TRUE
 	.align 2
-Cry_Seel::
-	.incbin "sound/direct_sound_samples/cries/seel.bin"
+Cry_Pusurimon::
+	.incbin "sound/direct_sound_samples/cries/pusurimon.bin"
 
 	.align 2
 Cry_Dewgong::
 	.incbin "sound/direct_sound_samples/cries/dewgong.bin"
-.endif @ P_FAMILY_SEEL
+.endif @ P_FAMILY_PUSURIMON
 
 .if P_FAMILY_GRIMER == TRUE
 	.align 2

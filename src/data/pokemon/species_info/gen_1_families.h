@@ -8669,8 +8669,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_POROMON
 
-#if P_FAMILY_SEEL
-    [SPECIES_SEEL] =
+#if P_FAMILY_PUSURIMON
+    [SPECIES_PUSURIMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 45,
@@ -8689,14 +8689,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
         .abilities = { ABILITY_THICK_FAT, ABILITY_HYDRATION, ABILITY_ICE_BODY },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Seel"),
-        .cryId = CRY_SEEL,
-        .natDexNum = NATIONAL_DEX_SEEL,
+        .speciesName = _("Pusurimon"),
+        .cryId = CRY_PUSURIMON,
+        .natDexNum = NATIONAL_DEX_PUSURIMON,
         .categoryName = _("Sea Lion"),
         .height = 11,
         .weight = 900,
         .description = COMPOUND_STRING(
-            "Seel hunt for prey in frigid, ice-covered\n"
+            "Pusurimon hunt for prey in frigid, ice-covered\n"
             "seas. When it needs to breathe, it punches\n"
             "a hole through the ice with the sharply\n"
             "protruding section of its head."),
@@ -8704,22 +8704,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Seel,
+        .frontPic = gMonFrontPic_Pusurimon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Seel,
+        .frontAnimFrames = sAnims_Pusurimon,
         .frontAnimId = ANIM_H_SLIDE_SLOW,
-        .backPic = gMonBackPic_Seel,
+        .backPic = gMonBackPic_Pusurimon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Seel,
-        .shinyPalette = gMonShinyPalette_Seel,
-        .iconSprite = gMonIcon_Seel,
+        .palette = gMonPalette_Pusurimon,
+        .shinyPalette = gMonShinyPalette_Pusurimon,
+        .iconSprite = gMonIcon_Pusurimon,
         .iconPalIndex = 0,
-        FOOTPRINT(Seel)
-        .levelUpLearnset = sSeelLevelUpLearnset,
-        .teachableLearnset = sSeelTeachableLearnset,
+        FOOTPRINT(Pusurimon)
+        .levelUpLearnset = sPusurimonLevelUpLearnset,
+        .teachableLearnset = sPusurimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_DEWGONG}),
     },
 
@@ -8774,7 +8774,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sDewgongLevelUpLearnset,
         .teachableLearnset = sDewgongTeachableLearnset,
     },
-#endif //P_FAMILY_SEEL
+#endif //P_FAMILY_PUSURIMON
 
 #if P_FAMILY_GRIMER
     [SPECIES_GRIMER] =

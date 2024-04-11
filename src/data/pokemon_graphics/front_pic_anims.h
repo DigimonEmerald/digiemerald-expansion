@@ -1242,8 +1242,8 @@ static const union AnimCmd sAnim_Puroromon_1[] =
 };
 #endif //P_FAMILY_POROMON
 
-#if P_FAMILY_SEEL
-static const union AnimCmd sAnim_Seel_1[] =
+#if P_FAMILY_PUSURIMON
+static const union AnimCmd sAnim_Pusurimon_1[] =
 {
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 20),
@@ -1259,7 +1259,7 @@ static const union AnimCmd sAnim_Dewgong_1[] =
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SEEL
+#endif //P_FAMILY_PUSURIMON
 
 #if P_FAMILY_GRIMER
 static const union AnimCmd sAnim_Grimer_1[] =
@@ -10448,10 +10448,10 @@ SINGLE_ANIMATION(Sirfetchd);
 SINGLE_ANIMATION(Poromon);
 SINGLE_ANIMATION(Puroromon);
 #endif //P_FAMILY_POROMON
-#if P_FAMILY_SEEL
-SINGLE_ANIMATION(Seel);
+#if P_FAMILY_PUSURIMON
+SINGLE_ANIMATION(Pusurimon);
 SINGLE_ANIMATION(Dewgong);
-#endif //P_FAMILY_SEEL
+#endif //P_FAMILY_PUSURIMON
 #if P_FAMILY_GRIMER
 SINGLE_ANIMATION(Grimer);
 SINGLE_ANIMATION(Muk);

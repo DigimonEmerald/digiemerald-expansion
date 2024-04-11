@@ -1387,14 +1387,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonBackPic_PuroromonF[] = INCBIN_U32("graphics/pokemon/puroromon/backf.4bpp.lz");
 #endif //P_FAMILY_POROMON
 
-#if P_FAMILY_SEEL
-    const u32 gMonFrontPic_Seel[] = INCBIN_U32("graphics/pokemon/seel/anim_front.4bpp.lz");
-    const u32 gMonPalette_Seel[] = INCBIN_U32("graphics/pokemon/seel/normal.gbapal.lz");
-    const u32 gMonBackPic_Seel[] = INCBIN_U32("graphics/pokemon/seel/back.4bpp.lz");
-    const u32 gMonShinyPalette_Seel[] = INCBIN_U32("graphics/pokemon/seel/shiny.gbapal.lz");
-    const u8 gMonIcon_Seel[] = INCBIN_U8("graphics/pokemon/seel/icon.4bpp");
+#if P_FAMILY_PUSURIMON
+    const u32 gMonFrontPic_Pusurimon[] = INCBIN_U32("graphics/pokemon/pusurimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Pusurimon[] = INCBIN_U32("graphics/pokemon/pusurimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Pusurimon[] = INCBIN_U32("graphics/pokemon/pusurimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Pusurimon[] = INCBIN_U32("graphics/pokemon/pusurimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Pusurimon[] = INCBIN_U8("graphics/pokemon/pusurimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Seel[] = INCBIN_U8("graphics/pokemon/seel/footprint.1bpp");
+    const u8 gMonFootprint_Pusurimon[] = INCBIN_U8("graphics/pokemon/pusurimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Dewgong[] = INCBIN_U32("graphics/pokemon/dewgong/anim_front.4bpp.lz");
@@ -1405,7 +1405,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Dewgong[] = INCBIN_U8("graphics/pokemon/dewgong/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_SEEL
+#endif //P_FAMILY_PUSURIMON
 
 #if P_FAMILY_GRIMER
     const u32 gMonFrontPic_Grimer[] = INCBIN_U32("graphics/pokemon/grimer/anim_front.4bpp.lz");

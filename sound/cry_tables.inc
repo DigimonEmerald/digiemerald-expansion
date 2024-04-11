@@ -213,10 +213,10 @@ gCryTable::
 	cry Cry_Poromon
 	cry Cry_Puroromon
 .endif @ P_FAMILY_POROMON
-.if P_FAMILY_SEEL == TRUE
-	cry Cry_Seel
+.if P_FAMILY_PUSURIMON == TRUE
+	cry Cry_Pusurimon
 	cry Cry_Dewgong
-.endif @ P_FAMILY_SEEL
+.endif @ P_FAMILY_PUSURIMON
 .if P_FAMILY_GRIMER == TRUE
 	cry Cry_Grimer
 	cry Cry_Muk
@@ -2639,10 +2639,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Poromon
 	cry_reverse Cry_Puroromon
 .endif @ P_FAMILY_POROMON
-.if P_FAMILY_SEEL == TRUE
-	cry_reverse Cry_Seel
+.if P_FAMILY_PUSURIMON == TRUE
+	cry_reverse Cry_Pusurimon
 	cry_reverse Cry_Dewgong
-.endif @ P_FAMILY_SEEL
+.endif @ P_FAMILY_PUSURIMON
 .if P_FAMILY_GRIMER == TRUE
 	cry_reverse Cry_Grimer
 	cry_reverse Cry_Muk
