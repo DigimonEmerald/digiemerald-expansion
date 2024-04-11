@@ -120,8 +120,8 @@ const u16 gEggMoves[] = {
         MOVE_RAZOR_WIND),
 #endif //P_FAMILY_NYOKIMON
 
-#if P_FAMILY_EKANS
-    egg_moves(EKANS,
+#if P_FAMILY_PAFUMON
+    egg_moves(PAFUMON,
         MOVE_PURSUIT,
         MOVE_SLAM,
         MOVE_SPITE,
@@ -134,7 +134,7 @@ const u16 gEggMoves[] = {
         MOVE_IRON_TAIL,
         MOVE_SUCKER_PUNCH,
         MOVE_SNATCH),
-#endif //P_FAMILY_EKANS
+#endif //P_FAMILY_PAFUMON
 
 #if P_FAMILY_PIKACHU
 #if P_GEN_2_CROSS_EVOS

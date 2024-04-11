@@ -54,10 +54,10 @@ gCryTable::
 	cry Cry_Nyokimon
 	cry Cry_Pabumon
 .endif @ P_FAMILY_NYOKIMON
-.if P_FAMILY_EKANS == TRUE
-	cry Cry_Ekans
+.if P_FAMILY_PAFUMON == TRUE
+	cry Cry_Pafumon
 	cry Cry_Arbok
-.endif @ P_FAMILY_EKANS
+.endif @ P_FAMILY_PAFUMON
 .if P_FAMILY_PIKACHU == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Pichu
@@ -2480,10 +2480,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Nyokimon
 	cry_reverse Cry_Pabumon
 .endif @ P_FAMILY_NYOKIMON
-.if P_FAMILY_EKANS == TRUE
-	cry_reverse Cry_Ekans
+.if P_FAMILY_PAFUMON == TRUE
+	cry_reverse Cry_Pafumon
 	cry_reverse Cry_Arbok
-.endif @ P_FAMILY_EKANS
+.endif @ P_FAMILY_PAFUMON
 .if P_FAMILY_PIKACHU == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Pichu

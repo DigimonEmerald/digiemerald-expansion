@@ -325,14 +325,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_NYOKIMON
 
-#if P_FAMILY_EKANS
-    const u32 gMonFrontPic_Ekans[] = INCBIN_U32("graphics/pokemon/ekans/anim_front.4bpp.lz");
-    const u32 gMonPalette_Ekans[] = INCBIN_U32("graphics/pokemon/ekans/normal.gbapal.lz");
-    const u32 gMonBackPic_Ekans[] = INCBIN_U32("graphics/pokemon/ekans/back.4bpp.lz");
-    const u32 gMonShinyPalette_Ekans[] = INCBIN_U32("graphics/pokemon/ekans/shiny.gbapal.lz");
-    const u8 gMonIcon_Ekans[] = INCBIN_U8("graphics/pokemon/ekans/icon.4bpp");
+#if P_FAMILY_PAFUMON
+    const u32 gMonFrontPic_Pafumon[] = INCBIN_U32("graphics/pokemon/pafumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Pafumon[] = INCBIN_U32("graphics/pokemon/pafumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Pafumon[] = INCBIN_U32("graphics/pokemon/pafumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Pafumon[] = INCBIN_U32("graphics/pokemon/pafumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Pafumon[] = INCBIN_U8("graphics/pokemon/pafumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Ekans[] = INCBIN_U8("graphics/pokemon/ekans/footprint.1bpp");
+    const u8 gMonFootprint_Pafumon[] = INCBIN_U8("graphics/pokemon/pafumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Arbok[] = INCBIN_U32("graphics/pokemon/arbok/anim_front.4bpp.lz");
@@ -343,7 +343,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Arbok[] = INCBIN_U8("graphics/pokemon/arbok/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_EKANS
+#endif //P_FAMILY_PAFUMON
 
 #if P_FAMILY_PIKACHU
 #if P_GEN_2_CROSS_EVOS

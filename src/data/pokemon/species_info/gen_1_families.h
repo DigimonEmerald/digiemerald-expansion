@@ -2014,8 +2014,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_NYOKIMON
 
-#if P_FAMILY_EKANS
-    [SPECIES_EKANS] =
+#if P_FAMILY_PAFUMON
+    [SPECIES_PAFUMON] =
     {
         .baseHP        = 35,
         .baseAttack    = 60,
@@ -2034,14 +2034,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_SHED_SKIN, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Ekans"),
-        .cryId = CRY_EKANS,
-        .natDexNum = NATIONAL_DEX_EKANS,
+        .speciesName = _("Pafumon"),
+        .cryId = CRY_PAFUMON,
+        .natDexNum = NATIONAL_DEX_PAFUMON,
         .categoryName = _("Snake"),
         .height = 20,
         .weight = 69,
         .description = COMPOUND_STRING(
-            "An Ekans curls itself up in a spiral while\n"
+            "An Pafumon curls itself up in a spiral while\n"
             "it rests. This position allows it to quickly\n"
             "respond to an enemy from any direction\n"
             "with a threat from its upraised head."),
@@ -2049,23 +2049,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Ekans,
+        .frontPic = gMonFrontPic_Pafumon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Ekans,
+        .frontAnimFrames = sAnims_Pafumon,
         .frontAnimId = ANIM_V_STRETCH,
         .frontAnimDelay = 30,
-        .backPic = gMonBackPic_Ekans,
+        .backPic = gMonBackPic_Pafumon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Ekans,
-        .shinyPalette = gMonShinyPalette_Ekans,
-        .iconSprite = gMonIcon_Ekans,
+        .palette = gMonPalette_Pafumon,
+        .shinyPalette = gMonShinyPalette_Pafumon,
+        .iconSprite = gMonIcon_Pafumon,
         .iconPalIndex = 2,
-        FOOTPRINT(Ekans)
-        .levelUpLearnset = sEkansLevelUpLearnset,
-        .teachableLearnset = sEkansTeachableLearnset,
+        FOOTPRINT(Pafumon)
+        .levelUpLearnset = sPafumonLevelUpLearnset,
+        .teachableLearnset = sPafumonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_ARBOK}),
     },
 
@@ -2126,7 +2126,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sArbokLevelUpLearnset,
         .teachableLearnset = sArbokTeachableLearnset,
     },
-#endif //P_FAMILY_EKANS
+#endif //P_FAMILY_PAFUMON
 
 #if P_FAMILY_PIKACHU
 #if P_GEN_2_CROSS_EVOS

@@ -357,8 +357,8 @@ static const struct LevelUpMove sPabumonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_NYOKIMON
 
-#if P_FAMILY_EKANS
-static const struct LevelUpMove sEkansLevelUpLearnset[] = {
+#if P_FAMILY_PAFUMON
+static const struct LevelUpMove sPafumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WRAP),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 8, MOVE_POISON_STING),
@@ -389,7 +389,7 @@ static const struct LevelUpMove sArbokLevelUpLearnset[] = {
     LEVEL_UP_MOVE(56, MOVE_HAZE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_EKANS
+#endif //P_FAMILY_PAFUMON
 
 #if P_FAMILY_PIKACHU
 #if P_GEN_2_CROSS_EVOS

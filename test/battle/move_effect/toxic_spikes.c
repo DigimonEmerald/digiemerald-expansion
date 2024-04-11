@@ -157,13 +157,13 @@ SINGLE_BATTLE_TEST("Toxic Spikes are removed by grounded Poison-type Pokémon on
     u32 item = ITEM_NONE;
     u32 move = MOVE_CELEBRATE;
     bool32 grounded;
-    PARAMETRIZE { species = SPECIES_EKANS; grounded = TRUE; }
+    PARAMETRIZE { species = SPECIES_PAFUMON; grounded = TRUE; }
     PARAMETRIZE { species = SPECIES_ZUBAT; grounded = FALSE; }
     PARAMETRIZE { species = SPECIES_ZUBAT; item = ITEM_IRON_BALL; grounded = TRUE; }
     PARAMETRIZE { species = SPECIES_ZUBAT; move = MOVE_GRAVITY; grounded = TRUE; }
     PARAMETRIZE { species = SPECIES_ZUBAT; move = MOVE_INGRAIN; grounded = TRUE; }
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_EKANS].types[0] == TYPE_POISON);
+        ASSUME(gSpeciesInfo[SPECIES_PAFUMON].types[0] == TYPE_POISON);
         ASSUME(gSpeciesInfo[SPECIES_ZUBAT].types[0] == TYPE_POISON);
         ASSUME(gSpeciesInfo[SPECIES_ZUBAT].types[1] == TYPE_FLYING);
         PLAYER(SPECIES_WOBBUFFET);
@@ -194,10 +194,10 @@ SINGLE_BATTLE_TEST("Toxic Spikes are removed by Poison-type Pokémon affected by
 {
     KNOWN_FAILING;
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_EKANS].types[0] == TYPE_POISON);
+        ASSUME(gSpeciesInfo[SPECIES_PAFUMON].types[0] == TYPE_POISON);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_EKANS);
+        OPPONENT(SPECIES_PAFUMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_MAGNET_RISE); }
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); MOVE(opponent, MOVE_BATON_PASS); SEND_OUT(opponent, 1); }

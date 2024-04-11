@@ -307,8 +307,8 @@ static const union AnimCmd sAnim_Pabumon_1[] =
 };
 #endif //P_FAMILY_NYOKIMON
 
-#if P_FAMILY_EKANS
-static const union AnimCmd sAnim_Ekans_1[] =
+#if P_FAMILY_PAFUMON
+static const union AnimCmd sAnim_Pafumon_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 8),
@@ -326,7 +326,7 @@ static const union AnimCmd sAnim_Arbok_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_EKANS
+#endif //P_FAMILY_PAFUMON
 
 #if P_FAMILY_PIKACHU
 #if P_GEN_2_CROSS_EVOS
@@ -10223,10 +10223,10 @@ SINGLE_ANIMATION(MokumonAlolan);
 SINGLE_ANIMATION(Nyokimon);
 SINGLE_ANIMATION(Pabumon);
 #endif //P_FAMILY_NYOKIMON
-#if P_FAMILY_EKANS
-SINGLE_ANIMATION(Ekans);
+#if P_FAMILY_PAFUMON
+SINGLE_ANIMATION(Pafumon);
 SINGLE_ANIMATION(Arbok);
-#endif //P_FAMILY_EKANS
+#endif //P_FAMILY_PAFUMON
 #if P_FAMILY_PIKACHU
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Pichu);

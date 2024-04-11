@@ -524,15 +524,15 @@ Cry_Pabumon::
 	.incbin "sound/direct_sound_samples/cries/pabumon.bin"
 .endif @ P_FAMILY_NYOKIMON
 
-.if P_FAMILY_EKANS == TRUE
+.if P_FAMILY_PAFUMON == TRUE
 	.align 2
-Cry_Ekans::
-	.incbin "sound/direct_sound_samples/cries/ekans.bin"
+Cry_Pafumon::
+	.incbin "sound/direct_sound_samples/cries/pafumon.bin"
 
 	.align 2
 Cry_Arbok::
 	.incbin "sound/direct_sound_samples/cries/arbok.bin"
-.endif @ P_FAMILY_EKANS
+.endif @ P_FAMILY_PAFUMON
 
 .if P_FAMILY_PIKACHU == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE

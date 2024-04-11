@@ -841,8 +841,8 @@ static const u16 sPabumonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_NYOKIMON
 
-#if P_FAMILY_EKANS
-static const u16 sEkansTeachableLearnset[] = {
+#if P_FAMILY_PAFUMON
+static const u16 sPafumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -902,7 +902,7 @@ static const u16 sArbokTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_EKANS
+#endif //P_FAMILY_PAFUMON
 
 #if P_FAMILY_PIKACHU
 #if P_GEN_2_CROSS_EVOS
