@@ -967,7 +967,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "ARCANINE": {
+  "GIGIMON": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -17784,7 +17784,7 @@
       "MOVE_WILD_CHARGE"
     ]
   },
-  "ARCANINE_HISUIAN": {
+  "GIGIMON_HISUIAN": {
     "LevelMoves": [
       {
         "Level": 1,

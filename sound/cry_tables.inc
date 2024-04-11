@@ -142,7 +142,7 @@ gCryTable::
 .endif @ P_FAMILY_DEMIVEEMON
 .if P_FAMILY_FRIMON == TRUE
 	cry Cry_Frimon
-	cry Cry_Arcanine
+	cry Cry_Gigimon
 .endif @ P_FAMILY_FRIMON
 .if P_FAMILY_POLIWAG == TRUE
 	cry Cry_Poliwag
@@ -2568,7 +2568,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_DEMIVEEMON
 .if P_FAMILY_FRIMON == TRUE
 	cry_reverse Cry_Frimon
-	cry_reverse Cry_Arcanine
+	cry_reverse Cry_Gigimon
 .endif @ P_FAMILY_FRIMON
 .if P_FAMILY_POLIWAG == TRUE
 	cry_reverse Cry_Poliwag

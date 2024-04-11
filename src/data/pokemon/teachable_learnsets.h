@@ -2876,7 +2876,7 @@ static const u16 sFrimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sArcanineTeachableLearnset[] = {
+static const u16 sGigimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DIG,
@@ -2934,7 +2934,7 @@ static const u16 sFrimonHisuianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sArcanineHisuianTeachableLearnset[] = {
+static const u16 sGigimonHisuianTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_DIG,
     MOVE_FACADE,

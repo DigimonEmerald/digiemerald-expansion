@@ -884,7 +884,7 @@ static const union AnimCmd sAnim_Frimon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Arcanine_1[] =
+static const union AnimCmd sAnim_Gigimon_1[] =
 {
     ANIMCMD_FRAME(1, 38),
     ANIMCMD_FRAME(0, 1),
@@ -893,7 +893,7 @@ static const union AnimCmd sAnim_Arcanine_1[] =
 
 #if P_HISUIAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(FrimonHisuian);
-PLACEHOLDER_ANIM_SINGLE_FRAME(ArcanineHisuian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(GigimonHisuian);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FRIMON
 
@@ -10356,10 +10356,10 @@ SINGLE_ANIMATION(Annihilape);
 #endif //P_FAMILY_DEMIVEEMON
 #if P_FAMILY_FRIMON
 SINGLE_ANIMATION(Frimon);
-SINGLE_ANIMATION(Arcanine);
+SINGLE_ANIMATION(Gigimon);
 #if P_HISUIAN_FORMS
 SINGLE_ANIMATION(FrimonHisuian);
-SINGLE_ANIMATION(ArcanineHisuian);
+SINGLE_ANIMATION(GigimonHisuian);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FRIMON
 #if P_FAMILY_POLIWAG

@@ -743,8 +743,8 @@ Cry_Frimon::
 	.incbin "sound/direct_sound_samples/cries/frimon.bin"
 
 	.align 2
-Cry_Arcanine::
-	.incbin "sound/direct_sound_samples/cries/arcanine.bin"
+Cry_Gigimon::
+	.incbin "sound/direct_sound_samples/cries/gigimon.bin"
 .endif @ P_FAMILY_FRIMON
 
 .if P_FAMILY_POLIWAG == TRUE

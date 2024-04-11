@@ -167,9 +167,9 @@ static const u16 sFrimonFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
-static const u16 sArcanineFormSpeciesIdTable[] = {
-    SPECIES_ARCANINE,
-    SPECIES_ARCANINE_HISUIAN,
+static const u16 sGigimonFormSpeciesIdTable[] = {
+    SPECIES_GIGIMON,
+    SPECIES_GIGIMON_HISUIAN,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_FRIMON
