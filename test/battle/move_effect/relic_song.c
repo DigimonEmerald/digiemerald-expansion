@@ -147,7 +147,7 @@ SINGLE_BATTLE_TEST("Relic Song loses the form-changing effect with Sheer Force")
 {
     GIVEN {
         PLAYER(SPECIES_MELOETTA_ARIA);
-        OPPONENT(SPECIES_NIDOKING) { Ability(ABILITY_SHEER_FORCE); }
+        OPPONENT(SPECIES_PUWAMON) { Ability(ABILITY_SHEER_FORCE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SKILL_SWAP); MOVE(player, MOVE_RELIC_SONG); }
     } SCENE {

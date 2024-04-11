@@ -582,8 +582,8 @@ Cry_Puttimon::
 	.incbin "sound/direct_sound_samples/cries/puttimon.bin"
 
 	.align 2
-Cry_Nidoking::
-	.incbin "sound/direct_sound_samples/cries/nidoking.bin"
+Cry_Puwamon::
+	.incbin "sound/direct_sound_samples/cries/puwamon.bin"
 .endif @ P_FAMILY_NIDORAN
 
 .if P_FAMILY_CLEFAIRY == TRUE

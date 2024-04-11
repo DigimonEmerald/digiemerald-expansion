@@ -462,7 +462,7 @@ static const union AnimCmd sAnim_Puttimon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Nidoking_1[] =
+static const union AnimCmd sAnim_Puwamon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 15),
@@ -10273,7 +10273,7 @@ SINGLE_ANIMATION(Pupumon);
 SINGLE_ANIMATION(Pururumon);
 SINGLE_ANIMATION(Pusumon);
 SINGLE_ANIMATION(Puttimon);
-SINGLE_ANIMATION(Nidoking);
+SINGLE_ANIMATION(Puwamon);
 #endif //P_FAMILY_NIDORAN
 #if P_FAMILY_CLEFAIRY
 #if P_GEN_2_CROSS_EVOS

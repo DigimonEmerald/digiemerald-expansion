@@ -3783,10 +3783,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Puttimon)
         .levelUpLearnset = sPuttimonLevelUpLearnset,
         .teachableLearnset = sPuttimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_NIDOKING}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_PUWAMON}),
     },
 
-    [SPECIES_NIDOKING] =
+    [SPECIES_PUWAMON] =
     {
         .baseHP        = 81,
         .baseAttack    = P_UPDATED_STATS >= GEN_6 ? 102 : 92,
@@ -3813,14 +3813,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
         .abilities = { ABILITY_POISON_POINT, ABILITY_RIVALRY, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Nidoking"),
-        .cryId = CRY_NIDOKING,
-        .natDexNum = NATIONAL_DEX_NIDOKING,
+        .speciesName = _("Puwamon"),
+        .cryId = CRY_PUWAMON,
+        .natDexNum = NATIONAL_DEX_PUWAMON,
         .categoryName = _("Drill"),
         .height = 14,
         .weight = 620,
         .description = COMPOUND_STRING(
-            "A Nidoking's thick tail packs enormously\n"
+            "A Puwamon's thick tail packs enormously\n"
             "destructive power capable of toppling\n"
             "a metal transmission tower. Once it goes\n"
             "on a rampage, there is no stopping it."),
@@ -3828,23 +3828,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Nidoking,
+        .frontPic = gMonFrontPic_Puwamon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Nidoking,
+        .frontAnimFrames = sAnims_Puwamon,
         .frontAnimId = ANIM_H_SHAKE,
         .frontAnimDelay = 25,
-        .backPic = gMonBackPic_Nidoking,
+        .backPic = gMonBackPic_Puwamon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Nidoking,
-        .shinyPalette = gMonShinyPalette_Nidoking,
-        .iconSprite = gMonIcon_Nidoking,
+        .palette = gMonPalette_Puwamon,
+        .shinyPalette = gMonShinyPalette_Puwamon,
+        .iconSprite = gMonIcon_Puwamon,
         .iconPalIndex = 2,
-        FOOTPRINT(Nidoking)
-        .levelUpLearnset = sNidokingLevelUpLearnset,
-        .teachableLearnset = sNidokingTeachableLearnset,
+        FOOTPRINT(Puwamon)
+        .levelUpLearnset = sPuwamonLevelUpLearnset,
+        .teachableLearnset = sPuwamonTeachableLearnset,
     },
 #endif //P_FAMILY_NIDORAN
 

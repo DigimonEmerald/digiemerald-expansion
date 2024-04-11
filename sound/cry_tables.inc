@@ -75,7 +75,7 @@ gCryTable::
 	cry Cry_Pururumon
 	cry Cry_Pusumon
 	cry Cry_Puttimon
-	cry Cry_Nidoking
+	cry Cry_Puwamon
 .endif @ P_FAMILY_NIDORAN
 .if P_FAMILY_CLEFAIRY == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
@@ -2501,7 +2501,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Pururumon
 	cry_reverse Cry_Pusumon
 	cry_reverse Cry_Puttimon
-	cry_reverse Cry_Nidoking
+	cry_reverse Cry_Puwamon
 .endif @ P_FAMILY_NIDORAN
 .if P_FAMILY_CLEFAIRY == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
