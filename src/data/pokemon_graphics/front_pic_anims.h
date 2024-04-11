@@ -1039,8 +1039,8 @@ static const union AnimCmd sAnim_Kyupimon_1[] =
 };
 #endif //P_FAMILY_KYAROMON
 
-#if P_FAMILY_TENTACOOL
-static const union AnimCmd sAnim_Tentacool_1[] =
+#if P_FAMILY_MINOMON
+static const union AnimCmd sAnim_Minomon_1[] =
 {
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_FRAME(1, 15),
@@ -1059,7 +1059,7 @@ static const union AnimCmd sAnim_Tentacruel_1[] =
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_TENTACOOL
+#endif //P_FAMILY_MINOMON
 
 #if P_FAMILY_GEODUDE
 static const union AnimCmd sAnim_Geodude_1[] =
@@ -10391,10 +10391,10 @@ SINGLE_ANIMATION(Kyaromon);
 SINGLE_ANIMATION(Kyokyomon);
 SINGLE_ANIMATION(Kyupimon);
 #endif //P_FAMILY_KYAROMON
-#if P_FAMILY_TENTACOOL
-SINGLE_ANIMATION(Tentacool);
+#if P_FAMILY_MINOMON
+SINGLE_ANIMATION(Minomon);
 SINGLE_ANIMATION(Tentacruel);
-#endif //P_FAMILY_TENTACOOL
+#endif //P_FAMILY_MINOMON
 #if P_FAMILY_GEODUDE
 SINGLE_ANIMATION(Geodude);
 SINGLE_ANIMATION(Graveler);

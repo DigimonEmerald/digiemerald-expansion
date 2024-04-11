@@ -815,15 +815,15 @@ Cry_Kyupimon::
 	.incbin "sound/direct_sound_samples/cries/kyupimon.bin"
 .endif @ P_FAMILY_KYAROMON
 
-.if P_FAMILY_TENTACOOL == TRUE
+.if P_FAMILY_MINOMON == TRUE
 	.align 2
-Cry_Tentacool::
-	.incbin "sound/direct_sound_samples/cries/tentacool.bin"
+Cry_Minomon::
+	.incbin "sound/direct_sound_samples/cries/minomon.bin"
 
 	.align 2
 Cry_Tentacruel::
 	.incbin "sound/direct_sound_samples/cries/tentacruel.bin"
-.endif @ P_FAMILY_TENTACOOL
+.endif @ P_FAMILY_MINOMON
 
 .if P_FAMILY_GEODUDE == TRUE
 	.align 2

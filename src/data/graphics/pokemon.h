@@ -1138,14 +1138,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_KYAROMON
 
-#if P_FAMILY_TENTACOOL
-    const u32 gMonFrontPic_Tentacool[] = INCBIN_U32("graphics/pokemon/tentacool/anim_front.4bpp.lz");
-    const u32 gMonPalette_Tentacool[] = INCBIN_U32("graphics/pokemon/tentacool/normal.gbapal.lz");
-    const u32 gMonBackPic_Tentacool[] = INCBIN_U32("graphics/pokemon/tentacool/back.4bpp.lz");
-    const u32 gMonShinyPalette_Tentacool[] = INCBIN_U32("graphics/pokemon/tentacool/shiny.gbapal.lz");
-    const u8 gMonIcon_Tentacool[] = INCBIN_U8("graphics/pokemon/tentacool/icon.4bpp");
+#if P_FAMILY_MINOMON
+    const u32 gMonFrontPic_Minomon[] = INCBIN_U32("graphics/pokemon/minomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Minomon[] = INCBIN_U32("graphics/pokemon/minomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Minomon[] = INCBIN_U32("graphics/pokemon/minomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Minomon[] = INCBIN_U32("graphics/pokemon/minomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Minomon[] = INCBIN_U8("graphics/pokemon/minomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Tentacool[] = INCBIN_U8("graphics/pokemon/tentacool/footprint.1bpp");
+    const u8 gMonFootprint_Minomon[] = INCBIN_U8("graphics/pokemon/minomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Tentacruel[] = INCBIN_U32("graphics/pokemon/tentacruel/anim_front.4bpp.lz");
@@ -1156,7 +1156,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Tentacruel[] = INCBIN_U8("graphics/pokemon/tentacruel/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_TENTACOOL
+#endif //P_FAMILY_MINOMON
 
 #if P_FAMILY_GEODUDE
     const u32 gMonFrontPic_Geodude[] = INCBIN_U32("graphics/pokemon/geodude/anim_front.4bpp.lz");

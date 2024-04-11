@@ -7107,8 +7107,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_KYAROMON
 
-#if P_FAMILY_TENTACOOL
-    [SPECIES_TENTACOOL] =
+#if P_FAMILY_MINOMON
+    [SPECIES_MINOMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 40,
@@ -7128,9 +7128,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
         .abilities = { ABILITY_CLEAR_BODY, ABILITY_LIQUID_OOZE, ABILITY_RAIN_DISH },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Tentacool"),
-        .cryId = CRY_TENTACOOL,
-        .natDexNum = NATIONAL_DEX_TENTACOOL,
+        .speciesName = _("Minomon"),
+        .cryId = CRY_MINOMON,
+        .natDexNum = NATIONAL_DEX_MINOMON,
         .categoryName = _("Jellyfish"),
         .height = 9,
         .weight = 455,
@@ -7143,22 +7143,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Tentacool,
+        .frontPic = gMonFrontPic_Minomon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Tentacool,
+        .frontAnimFrames = sAnims_Minomon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Tentacool,
+        .backPic = gMonBackPic_Minomon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Tentacool,
-        .shinyPalette = gMonShinyPalette_Tentacool,
-        .iconSprite = gMonIcon_Tentacool,
+        .palette = gMonPalette_Minomon,
+        .shinyPalette = gMonShinyPalette_Minomon,
+        .iconSprite = gMonIcon_Minomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Tentacool)
-        .levelUpLearnset = sTentacoolLevelUpLearnset,
-        .teachableLearnset = sTentacoolTeachableLearnset,
+        FOOTPRINT(Minomon)
+        .levelUpLearnset = sMinomonLevelUpLearnset,
+        .teachableLearnset = sMinomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_TENTACRUEL}),
     },
 
@@ -7214,7 +7214,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sTentacruelLevelUpLearnset,
         .teachableLearnset = sTentacruelTeachableLearnset,
     },
-#endif //P_FAMILY_TENTACOOL
+#endif //P_FAMILY_MINOMON
 
 #if P_FAMILY_GEODUDE
 

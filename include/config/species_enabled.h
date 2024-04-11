@@ -81,7 +81,7 @@
 #define P_FAMILY_HOPMON                    P_GEN_1_POKEMON
 #define P_FAMILY_KOKOMON                  P_GEN_1_POKEMON
 #define P_FAMILY_KYAROMON              P_GEN_1_POKEMON
-#define P_FAMILY_TENTACOOL               P_GEN_1_POKEMON
+#define P_FAMILY_MINOMON               P_GEN_1_POKEMON
 #define P_FAMILY_GEODUDE                 P_GEN_1_POKEMON
 #define P_FAMILY_PONYTA                  P_GEN_1_POKEMON
 #define P_FAMILY_SLOWPOKE                P_GEN_1_POKEMON

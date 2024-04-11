@@ -170,10 +170,10 @@ gCryTable::
 	cry Cry_Kyokyomon
 	cry Cry_Kyupimon
 .endif @ P_FAMILY_KYAROMON
-.if P_FAMILY_TENTACOOL == TRUE
-	cry Cry_Tentacool
+.if P_FAMILY_MINOMON == TRUE
+	cry Cry_Minomon
 	cry Cry_Tentacruel
-.endif @ P_FAMILY_TENTACOOL
+.endif @ P_FAMILY_MINOMON
 .if P_FAMILY_GEODUDE == TRUE
 	cry Cry_Geodude
 	cry Cry_Graveler
@@ -2596,10 +2596,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Kyokyomon
 	cry_reverse Cry_Kyupimon
 .endif @ P_FAMILY_KYAROMON
-.if P_FAMILY_TENTACOOL == TRUE
-	cry_reverse Cry_Tentacool
+.if P_FAMILY_MINOMON == TRUE
+	cry_reverse Cry_Minomon
 	cry_reverse Cry_Tentacruel
-.endif @ P_FAMILY_TENTACOOL
+.endif @ P_FAMILY_MINOMON
 .if P_FAMILY_GEODUDE == TRUE
 	cry_reverse Cry_Geodude
 	cry_reverse Cry_Graveler

@@ -565,8 +565,8 @@ const u16 gEggMoves[] = {
         MOVE_STRENGTH_SAP),
 #endif //P_FAMILY_KYAROMON
 
-#if P_FAMILY_TENTACOOL
-    egg_moves(TENTACOOL,
+#if P_FAMILY_MINOMON
+    egg_moves(MINOMON,
         MOVE_AURORA_BEAM,
         MOVE_MIRROR_COAT,
         MOVE_RAPID_SPIN,
@@ -578,7 +578,7 @@ const u16 gEggMoves[] = {
         MOVE_BUBBLE,
         MOVE_AQUA_RING,
         MOVE_TICKLE),
-#endif //P_FAMILY_TENTACOOL
+#endif //P_FAMILY_MINOMON
 
 #if P_FAMILY_GEODUDE
     egg_moves(GEODUDE,

@@ -1781,8 +1781,8 @@ static const struct LevelUpMove sKyupimonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_KYAROMON
 
-#if P_FAMILY_TENTACOOL
-static const struct LevelUpMove sTentacoolLevelUpLearnset[] = {
+#if P_FAMILY_MINOMON
+static const struct LevelUpMove sMinomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 4, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE( 7, MOVE_CONSTRICT),
@@ -1828,7 +1828,7 @@ static const struct LevelUpMove sTentacruelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(56, MOVE_WRING_OUT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_TENTACOOL
+#endif //P_FAMILY_MINOMON
 
 #if P_FAMILY_GEODUDE
 static const struct LevelUpMove sGeodudeLevelUpLearnset[] = {

@@ -332,7 +332,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -367,7 +367,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -377,7 +377,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -575,7 +575,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -610,7 +610,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -620,7 +620,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -729,7 +729,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -764,7 +764,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -774,7 +774,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -1612,7 +1612,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -1647,7 +1647,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -1657,7 +1657,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -1701,7 +1701,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -1736,7 +1736,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -1746,7 +1746,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -2307,22 +2307,22 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 30,
@@ -2342,7 +2342,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -2352,22 +2352,22 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 30,
@@ -2787,7 +2787,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -2822,7 +2822,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -2832,7 +2832,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -2876,7 +2876,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -2911,7 +2911,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -2921,7 +2921,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -2965,7 +2965,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3000,7 +3000,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3010,7 +3010,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3054,7 +3054,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3089,7 +3089,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3099,7 +3099,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3208,7 +3208,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3243,7 +3243,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3253,7 +3253,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3431,7 +3431,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3466,7 +3466,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3476,7 +3476,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3739,7 +3739,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3774,7 +3774,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3784,7 +3784,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3828,7 +3828,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3863,7 +3863,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3873,7 +3873,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -3982,7 +3982,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -4017,7 +4017,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -4027,7 +4027,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -4623,7 +4623,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -4658,7 +4658,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -4668,7 +4668,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -4712,7 +4712,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -4747,7 +4747,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -4757,7 +4757,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -4801,7 +4801,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -4836,7 +4836,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -4846,7 +4846,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -4890,7 +4890,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -4925,7 +4925,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -4979,7 +4979,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5014,7 +5014,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5024,7 +5024,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5133,7 +5133,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5168,7 +5168,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5178,7 +5178,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5222,7 +5222,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5257,7 +5257,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5267,7 +5267,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5311,7 +5311,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5346,7 +5346,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5356,7 +5356,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5400,7 +5400,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5435,7 +5435,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5445,7 +5445,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5489,7 +5489,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5524,7 +5524,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5534,7 +5534,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5578,22 +5578,22 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 30,
@@ -5613,7 +5613,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -5623,22 +5623,22 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 30,
@@ -6077,7 +6077,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 5,
@@ -6112,7 +6112,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -6122,7 +6122,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -6231,7 +6231,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 5,
@@ -6266,7 +6266,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -6276,7 +6276,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -6389,7 +6389,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 5,
@@ -6424,7 +6424,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -6434,7 +6434,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8217,7 +8217,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 5,
@@ -8252,7 +8252,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8262,7 +8262,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8371,7 +8371,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 5,
@@ -8406,7 +8406,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8416,7 +8416,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8460,7 +8460,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8495,7 +8495,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8505,7 +8505,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8549,7 +8549,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8584,7 +8584,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8594,7 +8594,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8638,7 +8638,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8673,7 +8673,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8683,7 +8683,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8727,7 +8727,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8762,7 +8762,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8772,7 +8772,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8816,7 +8816,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8851,7 +8851,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8861,7 +8861,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8905,7 +8905,7 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -8940,7 +8940,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,
@@ -9290,7 +9290,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MINOMON"
               },
               {
                 "min_level": 10,

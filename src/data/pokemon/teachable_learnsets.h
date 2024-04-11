@@ -3487,8 +3487,8 @@ static const u16 sKyupimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_KYAROMON
 
-#if P_FAMILY_TENTACOOL
-static const u16 sTentacoolTeachableLearnset[] = {
+#if P_FAMILY_MINOMON
+static const u16 sMinomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CUT,
@@ -3552,7 +3552,7 @@ static const u16 sTentacruelTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TENTACOOL
+#endif //P_FAMILY_MINOMON
 
 #if P_FAMILY_GEODUDE
 static const u16 sGeodudeTeachableLearnset[] = {

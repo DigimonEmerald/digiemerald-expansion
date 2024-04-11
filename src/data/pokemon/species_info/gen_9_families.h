@@ -2543,7 +2543,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 9,
         .weight = 330,
         .description = COMPOUND_STRING(
-            "Though it looks like Tentacool,\n"
+            "Though it looks like Minomon,\n"
             "Toedscool is a completely different\n"
             "species. Its legs may be thin, but it\n"
             "can run at a speed of 30 mph."),
