@@ -1321,7 +1321,7 @@ static const union AnimCmd sAnim_Tokomon_x_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Haunter_1[] =
+static const union AnimCmd sAnim_Torballmon_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 15),
@@ -10466,7 +10466,7 @@ SINGLE_ANIMATION(Tokomon);
 #endif //P_FAMILY_TANEMON
 #if P_FAMILY_TOKOMON_X
 SINGLE_ANIMATION(Tokomon_x);
-SINGLE_ANIMATION(Haunter);
+SINGLE_ANIMATION(Torballmon);
 SINGLE_ANIMATION(Gengar);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(GengarMega);

@@ -9168,10 +9168,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Tokomon_x)
         .levelUpLearnset = sTokomon_xLevelUpLearnset,
         .teachableLearnset = sTokomon_xTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_HAUNTER}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_TORBALLMON}),
     },
 
-    [SPECIES_HAUNTER] =
+    [SPECIES_TORBALLMON] =
     {
         .baseHP        = 45,
         .baseAttack    = 50,
@@ -9190,14 +9190,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Haunter"),
-        .cryId = CRY_HAUNTER,
-        .natDexNum = NATIONAL_DEX_HAUNTER,
+        .speciesName = _("Torballmon"),
+        .cryId = CRY_TORBALLMON,
+        .natDexNum = NATIONAL_DEX_TORBALLMON,
         .categoryName = _("Gas"),
         .height = 16,
         .weight = 1,
         .description = COMPOUND_STRING(
-            "If a Haunter beckons you while it is\n"
+            "If a Torballmon beckons you while it is\n"
             "floating in darkness, don't approach it.\n"
             "This Pokémon will try to lick you with its\n"
             "tongue and steal your life away."),
@@ -9205,24 +9205,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 2,
         .trainerScale = 293,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_Haunter,
+        .frontPic = gMonFrontPic_Torballmon,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Haunter,
+        .frontAnimFrames = sAnims_Torballmon,
         .frontAnimId = ANIM_FLICKER_INCREASING,
         .frontAnimDelay = 23,
         .enemyMonElevation = 14,
-        .backPic = gMonBackPic_Haunter,
+        .backPic = gMonBackPic_Torballmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Haunter,
-        .shinyPalette = gMonShinyPalette_Haunter,
-        .iconSprite = gMonIcon_Haunter,
+        .palette = gMonPalette_Torballmon,
+        .shinyPalette = gMonShinyPalette_Torballmon,
+        .iconSprite = gMonIcon_Torballmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Haunter)
-        .levelUpLearnset = sHaunterLevelUpLearnset,
-        .teachableLearnset = sHaunterTeachableLearnset,
+        FOOTPRINT(Torballmon)
+        .levelUpLearnset = sTorballmonLevelUpLearnset,
+        .teachableLearnset = sTorballmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GENGAR},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GENGAR}),
     },

@@ -4747,7 +4747,7 @@ static const u16 sTokomon_xTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sHaunterTeachableLearnset[] = {
+static const u16 sTorballmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,

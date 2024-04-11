@@ -1829,7 +1829,7 @@ static const struct LevelUpMove sTokomon_xLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sHaunterLevelUpLearnset[] = {
+static const struct LevelUpMove sTorballmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LICK),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE( 1, MOVE_NIGHT_SHADE),

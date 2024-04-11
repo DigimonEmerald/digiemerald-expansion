@@ -1471,13 +1471,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Tokomon_x[] = INCBIN_U8("graphics/pokemon/tokomon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Haunter[] = INCBIN_U32("graphics/pokemon/haunter/anim_front.4bpp.lz");
-    const u32 gMonPalette_Haunter[] = INCBIN_U32("graphics/pokemon/haunter/normal.gbapal.lz");
-    const u32 gMonBackPic_Haunter[] = INCBIN_U32("graphics/pokemon/haunter/back.4bpp.lz");
-    const u32 gMonShinyPalette_Haunter[] = INCBIN_U32("graphics/pokemon/haunter/shiny.gbapal.lz");
-    const u8 gMonIcon_Haunter[] = INCBIN_U8("graphics/pokemon/haunter/icon.4bpp");
+    const u32 gMonFrontPic_Torballmon[] = INCBIN_U32("graphics/pokemon/torballmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Torballmon[] = INCBIN_U32("graphics/pokemon/torballmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Torballmon[] = INCBIN_U32("graphics/pokemon/torballmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Torballmon[] = INCBIN_U32("graphics/pokemon/torballmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Torballmon[] = INCBIN_U8("graphics/pokemon/torballmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Haunter[] = INCBIN_U8("graphics/pokemon/haunter/footprint.1bpp");
+    const u8 gMonFootprint_Torballmon[] = INCBIN_U8("graphics/pokemon/torballmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Gengar[] = INCBIN_U32("graphics/pokemon/gengar/anim_front.4bpp.lz");
