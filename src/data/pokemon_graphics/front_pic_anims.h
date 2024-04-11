@@ -1373,8 +1373,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(SteelixMega);
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_TSUNOMON
 
-#if P_FAMILY_DROWZEE
-static const union AnimCmd sAnim_Drowzee_1[] =
+#if P_FAMILY_TUMBLEMON
+static const union AnimCmd sAnim_Tumblemon_1[] =
 {
     ANIMCMD_FRAME(1, 12),
     ANIMCMD_FRAME(0, 12),
@@ -1396,7 +1396,7 @@ static const union AnimCmd sAnim_Hypno_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_DROWZEE
+#endif //P_FAMILY_TUMBLEMON
 
 #if P_FAMILY_KRABBY
 static const union AnimCmd sAnim_Krabby_1[] =
@@ -10484,10 +10484,10 @@ SINGLE_ANIMATION(SteelixMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_TSUNOMON
-#if P_FAMILY_DROWZEE
-SINGLE_ANIMATION(Drowzee);
+#if P_FAMILY_TUMBLEMON
+SINGLE_ANIMATION(Tumblemon);
 SINGLE_ANIMATION(Hypno);
-#endif //P_FAMILY_DROWZEE
+#endif //P_FAMILY_TUMBLEMON
 #if P_FAMILY_KRABBY
 SINGLE_ANIMATION(Krabby);
 SINGLE_ANIMATION(Kingler);

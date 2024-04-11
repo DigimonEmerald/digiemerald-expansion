@@ -4903,8 +4903,8 @@ static const u16 sSteelixTeachableLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_TSUNOMON
 
-#if P_FAMILY_DROWZEE
-static const u16 sDrowzeeTeachableLearnset[] = {
+#if P_FAMILY_TUMBLEMON
+static const u16 sTumblemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
@@ -4994,7 +4994,7 @@ static const u16 sHypnoTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DROWZEE
+#endif //P_FAMILY_TUMBLEMON
 
 #if P_FAMILY_KRABBY
 static const u16 sKrabbyTeachableLearnset[] = {

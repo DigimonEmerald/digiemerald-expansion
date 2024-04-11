@@ -1539,14 +1539,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_TSUNOMON
 
-#if P_FAMILY_DROWZEE
-    const u32 gMonFrontPic_Drowzee[] = INCBIN_U32("graphics/pokemon/drowzee/anim_front.4bpp.lz");
-    const u32 gMonPalette_Drowzee[] = INCBIN_U32("graphics/pokemon/drowzee/normal.gbapal.lz");
-    const u32 gMonBackPic_Drowzee[] = INCBIN_U32("graphics/pokemon/drowzee/back.4bpp.lz");
-    const u32 gMonShinyPalette_Drowzee[] = INCBIN_U32("graphics/pokemon/drowzee/shiny.gbapal.lz");
-    const u8 gMonIcon_Drowzee[] = INCBIN_U8("graphics/pokemon/drowzee/icon.4bpp");
+#if P_FAMILY_TUMBLEMON
+    const u32 gMonFrontPic_Tumblemon[] = INCBIN_U32("graphics/pokemon/tumblemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Tumblemon[] = INCBIN_U32("graphics/pokemon/tumblemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Tumblemon[] = INCBIN_U32("graphics/pokemon/tumblemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Tumblemon[] = INCBIN_U32("graphics/pokemon/tumblemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Tumblemon[] = INCBIN_U8("graphics/pokemon/tumblemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Drowzee[] = INCBIN_U8("graphics/pokemon/drowzee/footprint.1bpp");
+    const u8 gMonFootprint_Tumblemon[] = INCBIN_U8("graphics/pokemon/tumblemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Hypno[] = INCBIN_U32("graphics/pokemon/hypno/anim_front.4bpp.lz");
@@ -1560,7 +1560,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
     const u32 gMonFrontPic_HypnoF[] = INCBIN_U32("graphics/pokemon/hypno/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_HypnoF[] = INCBIN_U32("graphics/pokemon/hypno/backf.4bpp.lz");
-#endif //P_FAMILY_DROWZEE
+#endif //P_FAMILY_TUMBLEMON
 
 #if P_FAMILY_KRABBY
     const u32 gMonFrontPic_Krabby[] = INCBIN_U32("graphics/pokemon/krabby/anim_front.4bpp.lz");

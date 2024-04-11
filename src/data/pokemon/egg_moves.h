@@ -805,8 +805,8 @@ const u16 gEggMoves[] = {
         MOVE_WIDE_GUARD),
 #endif //P_FAMILY_TSUNOMON
 
-#if P_FAMILY_DROWZEE
-    egg_moves(DROWZEE,
+#if P_FAMILY_TUMBLEMON
+    egg_moves(TUMBLEMON,
         MOVE_BARRIER,
         MOVE_ASSIST,
         MOVE_ROLE_PLAY,
@@ -821,7 +821,7 @@ const u16 gEggMoves[] = {
         MOVE_SKILL_SWAP,
         MOVE_POWER_SPLIT,
         MOVE_PSYCHIC_TERRAIN),
-#endif //P_FAMILY_DROWZEE
+#endif //P_FAMILY_TUMBLEMON
 
 #if P_FAMILY_KRABBY
     egg_moves(KRABBY,

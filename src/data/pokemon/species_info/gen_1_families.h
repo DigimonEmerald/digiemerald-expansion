@@ -9581,8 +9581,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_TSUNOMON
 
-#if P_FAMILY_DROWZEE
-    [SPECIES_DROWZEE] =
+#if P_FAMILY_TUMBLEMON
+    [SPECIES_TUMBLEMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 48,
@@ -9601,38 +9601,38 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_INSOMNIA, ABILITY_FOREWARN, ABILITY_INNER_FOCUS },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Drowzee"),
-        .cryId = CRY_DROWZEE,
-        .natDexNum = NATIONAL_DEX_DROWZEE,
+        .speciesName = _("Tumblemon"),
+        .cryId = CRY_TUMBLEMON,
+        .natDexNum = NATIONAL_DEX_TUMBLEMON,
         .categoryName = _("Hypnosis"),
         .height = 10,
         .weight = 324,
         .description = COMPOUND_STRING(
             "If your nose becomes itchy while you are\n"
-            "sleeping, it's a sure sign that a Drowzee is\n"
+            "sleeping, it's a sure sign that a Tumblemon is\n"
             "standing above your pillow and trying to\n"
             "eat your dream through your nostrils."),
         .pokemonScale = 274,
         .pokemonOffset = 6,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Drowzee,
+        .frontPic = gMonFrontPic_Tumblemon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Drowzee,
+        .frontAnimFrames = sAnims_Tumblemon,
         .frontAnimId = ANIM_V_STRETCH,
         .frontAnimDelay = 48,
-        .backPic = gMonBackPic_Drowzee,
+        .backPic = gMonBackPic_Tumblemon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Drowzee,
-        .shinyPalette = gMonShinyPalette_Drowzee,
-        .iconSprite = gMonIcon_Drowzee,
+        .palette = gMonPalette_Tumblemon,
+        .shinyPalette = gMonShinyPalette_Tumblemon,
+        .iconSprite = gMonIcon_Tumblemon,
         .iconPalIndex = 2,
-        FOOTPRINT(Drowzee)
-        .levelUpLearnset = sDrowzeeLevelUpLearnset,
-        .teachableLearnset = sDrowzeeTeachableLearnset,
+        FOOTPRINT(Tumblemon)
+        .levelUpLearnset = sTumblemonLevelUpLearnset,
+        .teachableLearnset = sTumblemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_HYPNO}),
     },
 
@@ -9692,7 +9692,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sHypnoLevelUpLearnset,
         .teachableLearnset = sHypnoTeachableLearnset,
     },
-#endif //P_FAMILY_DROWZEE
+#endif //P_FAMILY_TUMBLEMON
 
 #if P_FAMILY_KRABBY
     [SPECIES_KRABBY] =

@@ -93,7 +93,7 @@
 #define P_FAMILY_TANEMON                P_GEN_1_POKEMON
 #define P_FAMILY_TOKOMON_X                  P_GEN_1_POKEMON
 #define P_FAMILY_TSUNOMON                    P_GEN_1_POKEMON
-#define P_FAMILY_DROWZEE                 P_GEN_1_POKEMON
+#define P_FAMILY_TUMBLEMON                 P_GEN_1_POKEMON
 #define P_FAMILY_KRABBY                  P_GEN_1_POKEMON
 #define P_FAMILY_VOLTORB                 P_GEN_1_POKEMON
 #define P_FAMILY_EXEGGCUTE               P_GEN_1_POKEMON

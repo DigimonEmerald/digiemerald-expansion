@@ -242,10 +242,10 @@ gCryTable::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_TSUNOMON
-.if P_FAMILY_DROWZEE == TRUE
-	cry Cry_Drowzee
+.if P_FAMILY_TUMBLEMON == TRUE
+	cry Cry_Tumblemon
 	cry Cry_Hypno
-.endif @ P_FAMILY_DROWZEE
+.endif @ P_FAMILY_TUMBLEMON
 .if P_FAMILY_KRABBY == TRUE
 	cry Cry_Krabby
 	cry Cry_Kingler
@@ -2668,10 +2668,10 @@ gCryTable_Reverse::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_TSUNOMON
-.if P_FAMILY_DROWZEE == TRUE
-	cry_reverse Cry_Drowzee
+.if P_FAMILY_TUMBLEMON == TRUE
+	cry_reverse Cry_Tumblemon
 	cry_reverse Cry_Hypno
-.endif @ P_FAMILY_DROWZEE
+.endif @ P_FAMILY_TUMBLEMON
 .if P_FAMILY_KRABBY == TRUE
 	cry_reverse Cry_Krabby
 	cry_reverse Cry_Kingler

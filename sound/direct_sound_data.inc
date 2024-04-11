@@ -983,15 +983,15 @@ Cry_SteelixMega::
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_TSUNOMON
 
-.if P_FAMILY_DROWZEE == TRUE
+.if P_FAMILY_TUMBLEMON == TRUE
 	.align 2
-Cry_Drowzee::
-	.incbin "sound/direct_sound_samples/cries/drowzee.bin"
+Cry_Tumblemon::
+	.incbin "sound/direct_sound_samples/cries/tumblemon.bin"
 
 	.align 2
 Cry_Hypno::
 	.incbin "sound/direct_sound_samples/cries/hypno.bin"
-.endif @ P_FAMILY_DROWZEE
+.endif @ P_FAMILY_TUMBLEMON
 
 .if P_FAMILY_KRABBY == TRUE
 	.align 2

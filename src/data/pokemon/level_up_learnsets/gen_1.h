@@ -1876,8 +1876,8 @@ static const struct LevelUpMove sSteelixLevelUpLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_TSUNOMON
 
-#if P_FAMILY_DROWZEE
-static const struct LevelUpMove sDrowzeeLevelUpLearnset[] = {
+#if P_FAMILY_TUMBLEMON
+static const struct LevelUpMove sTumblemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
     LEVEL_UP_MOVE(12, MOVE_DISABLE),
@@ -1902,7 +1902,7 @@ static const struct LevelUpMove sHypnoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_MEDITATE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_DROWZEE
+#endif //P_FAMILY_TUMBLEMON
 
 #if P_FAMILY_KRABBY
 static const struct LevelUpMove sKrabbyLevelUpLearnset[] = {
