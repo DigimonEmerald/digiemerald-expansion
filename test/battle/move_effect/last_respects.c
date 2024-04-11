@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Last Respects power is multiplied by the amount of fainted m
     PARAMETRIZE { faintCount = 2; }
     GIVEN {
         PLAYER(SPECIES_GOLEM); // Not Wobbuffet to omit type effectiveness
-        PLAYER(SPECIES_GEODUDE);
+        PLAYER(SPECIES_MONIMON);
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_LEPPA_BERRY); Moves(MOVE_RECYCLE, MOVE_NONE, MOVE_NONE, MOVE_NONE); }
     } WHEN {
         for (j = 0; j < faintCount; j++)
@@ -45,7 +45,7 @@ SINGLE_BATTLE_TEST("Last Respects power is multiplied by the amount of fainted m
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_LEPPA_BERRY); Moves(MOVE_RECYCLE, MOVE_NONE, MOVE_NONE, MOVE_NONE); }
         OPPONENT(SPECIES_GOLEM); // Not Wobbuffet to omit type effectiveness
-        OPPONENT(SPECIES_GEODUDE);
+        OPPONENT(SPECIES_MONIMON);
     } WHEN {
         for (j = 0; j < faintCount; j++)
         {

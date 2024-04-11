@@ -1731,8 +1731,8 @@ static const struct LevelUpMove sMissimonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_MINOMON
 
-#if P_FAMILY_GEODUDE
-static const struct LevelUpMove sGeodudeLevelUpLearnset[] = {
+#if P_FAMILY_MONIMON
+static const struct LevelUpMove sMonimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 4, MOVE_MUD_SPORT),
@@ -1798,7 +1798,7 @@ static const struct LevelUpMove sGolemLevelUpLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const struct LevelUpMove sGeodudeAlolanLevelUpLearnset[] = {
+static const struct LevelUpMove sMonimonAlolanLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 4, MOVE_CHARGE),
@@ -1864,7 +1864,7 @@ static const struct LevelUpMove sGolemAlolanLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_GEODUDE
+#endif //P_FAMILY_MONIMON
 
 #if P_FAMILY_PONYTA
 static const struct LevelUpMove sPonytaLevelUpLearnset[] = {

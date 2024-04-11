@@ -7216,14 +7216,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_MINOMON
 
-#if P_FAMILY_GEODUDE
+#if P_FAMILY_MONIMON
 
 #if P_UPDATED_EXP_YIELDS >= GEN_5
-    #define GEODUDE_EXP_YIELD 60
+    #define MONIMON_EXP_YIELD 60
 #elif P_UPDATED_EXP_YIELDS >= GEN_4
-    #define GEODUDE_EXP_YIELD 73
+    #define MONIMON_EXP_YIELD 73
 #else
-    #define GEODUDE_EXP_YIELD 86
+    #define MONIMON_EXP_YIELD 86
 #endif
 
 #define GOLEM_ATTACK (P_UPDATED_STATS >= GEN_6 ? 120 : 110)
@@ -7238,7 +7238,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     #define GOLEM_EXP_YIELD 177
 #endif
 
-    [SPECIES_GEODUDE] =
+    [SPECIES_MONIMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 80,
@@ -7248,7 +7248,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_ROCK, TYPE_GROUND),
         .catchRate = 255,
-        .expYield = GEODUDE_EXP_YIELD,
+        .expYield = MONIMON_EXP_YIELD,
         .evYield_Defense = 1,
         .itemRare = ITEM_EVERSTONE,
         .genderRatio = PERCENT_FEMALE(50),
@@ -7258,9 +7258,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_SAND_VEIL },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Geodude"),
-        .cryId = CRY_GEODUDE,
-        .natDexNum = NATIONAL_DEX_GEODUDE,
+        .speciesName = _("Monimon"),
+        .cryId = CRY_MONIMON,
+        .natDexNum = NATIONAL_DEX_MONIMON,
         .categoryName = _("Rock"),
         .height = 4,
         .weight = 200,
@@ -7273,24 +7273,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Geodude,
+        .frontPic = gMonFrontPic_Monimon,
         .frontPicSize = MON_COORDS_SIZE(64, 32),
         .frontPicYOffset = 19,
-        .frontAnimFrames = sAnims_Geodude,
+        .frontAnimFrames = sAnims_Monimon,
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL,
         .enemyMonElevation = 10,
-        .backPic = gMonBackPic_Geodude,
+        .backPic = gMonBackPic_Monimon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Geodude,
-        .shinyPalette = gMonShinyPalette_Geodude,
-        .iconSprite = gMonIcon_Geodude,
+        .palette = gMonPalette_Monimon,
+        .shinyPalette = gMonShinyPalette_Monimon,
+        .iconSprite = gMonIcon_Monimon,
         .iconPalIndex = 1,
-        FOOTPRINT(Geodude)
-        .levelUpLearnset = sGeodudeLevelUpLearnset,
-        .teachableLearnset = sGeodudeTeachableLearnset,
-        .formSpeciesIdTable = sGeodudeFormSpeciesIdTable,
+        FOOTPRINT(Monimon)
+        .levelUpLearnset = sMonimonLevelUpLearnset,
+        .teachableLearnset = sMonimonTeachableLearnset,
+        .formSpeciesIdTable = sMonimonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_GRAVELER}),
     },
 
@@ -7405,7 +7405,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_ALOLAN_FORMS
-    [SPECIES_GEODUDE_ALOLAN] =
+    [SPECIES_MONIMON_ALOLAN] =
     {
         .baseHP        = 40,
         .baseAttack    = 80,
@@ -7415,7 +7415,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_ROCK, TYPE_ELECTRIC),
         .catchRate = 255,
-        .expYield = GEODUDE_EXP_YIELD,
+        .expYield = MONIMON_EXP_YIELD,
         .evYield_Defense = 1,
         .itemRare = ITEM_CELL_BATTERY,
         .genderRatio = PERCENT_FEMALE(50),
@@ -7425,9 +7425,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_MAGNET_PULL, ABILITY_STURDY, ABILITY_GALVANIZE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Geodude"),
-        .cryId = CRY_GEODUDE,
-        .natDexNum = NATIONAL_DEX_GEODUDE,
+        .speciesName = _("Monimon"),
+        .cryId = CRY_MONIMON,
+        .natDexNum = NATIONAL_DEX_MONIMON,
         .categoryName = _("Rock"),
         .height = 4,
         .weight = 203,
@@ -7440,25 +7440,25 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_GeodudeAlolan,
+        .frontPic = gMonFrontPic_MonimonAlolan,
         .frontPicSize = MON_COORDS_SIZE(48, 32),
         .frontPicYOffset = 17,
-        .frontAnimFrames = sAnims_GeodudeAlolan,
+        .frontAnimFrames = sAnims_MonimonAlolan,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 16,
-        .backPic = gMonBackPic_GeodudeAlolan,
+        .backPic = gMonBackPic_MonimonAlolan,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 13,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_GeodudeAlolan,
-        .shinyPalette = gMonShinyPalette_GeodudeAlolan,
-        .iconSprite = gMonIcon_GeodudeAlolan,
+        .palette = gMonPalette_MonimonAlolan,
+        .shinyPalette = gMonShinyPalette_MonimonAlolan,
+        .iconSprite = gMonIcon_MonimonAlolan,
         .iconPalIndex = 2,
-        FOOTPRINT(Geodude)
+        FOOTPRINT(Monimon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sGeodudeAlolanLevelUpLearnset,
-        .teachableLearnset = sGeodudeAlolanTeachableLearnset,
-        .formSpeciesIdTable = sGeodudeFormSpeciesIdTable,
+        .levelUpLearnset = sMonimonAlolanLevelUpLearnset,
+        .teachableLearnset = sMonimonAlolanTeachableLearnset,
+        .formSpeciesIdTable = sMonimonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_GRAVELER_ALOLAN}),
     },
 
@@ -7574,7 +7574,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sGolemFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_GEODUDE
+#endif //P_FAMILY_MONIMON
 
 #if P_FAMILY_PONYTA
     [SPECIES_PONYTA] =
@@ -11146,7 +11146,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "It can launch a rock held in its hand\n"
             "like a missile by tightening and then\n"
             "expanding its muscles instantaneously.\n"
-            "Geodude are shot at rare times."),
+            "Monimon are shot at rare times."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 369,

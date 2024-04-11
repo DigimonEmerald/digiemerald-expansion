@@ -3554,8 +3554,8 @@ static const u16 sMissimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_MINOMON
 
-#if P_FAMILY_GEODUDE
-static const u16 sGeodudeTeachableLearnset[] = {
+#if P_FAMILY_MONIMON
+static const u16 sMonimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
@@ -3677,7 +3677,7 @@ static const u16 sGolemTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sGeodudeAlolanTeachableLearnset[] = {
+static const u16 sMonimonAlolanTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
@@ -3798,7 +3798,7 @@ static const u16 sGolemAlolanTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_GEODUDE
+#endif //P_FAMILY_MONIMON
 
 #if P_FAMILY_PONYTA
 static const u16 sPonytaTeachableLearnset[] = {

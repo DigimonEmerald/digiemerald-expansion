@@ -913,27 +913,27 @@
               {
                 "min_level": 10,
                 "max_level": 15,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 15,
                 "max_level": 20,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 15,
                 "max_level": 20,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 15,
                 "max_level": 20,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               }
             ]
           },
@@ -1235,27 +1235,27 @@
               {
                 "min_level": 10,
                 "max_level": 15,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 15,
                 "max_level": 20,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 15,
                 "max_level": 20,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 15,
                 "max_level": 20,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               }
             ]
           },
@@ -1968,22 +1968,22 @@
               {
                 "min_level": 7,
                 "max_level": 7,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 6,
                 "max_level": 6,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 9,
                 "max_level": 9,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               }
             ]
           }
@@ -2461,7 +2461,7 @@
               {
                 "min_level": 10,
                 "max_level": 15,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 10,
@@ -2471,17 +2471,17 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 15,
                 "max_level": 20,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 15,
                 "max_level": 20,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               }
             ]
           }
@@ -7111,27 +7111,27 @@
               {
                 "min_level": 10,
                 "max_level": 15,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 15,
                 "max_level": 20,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               }
             ]
           }
@@ -7369,7 +7369,7 @@
               {
                 "min_level": 30,
                 "max_level": 40,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 35,
@@ -9735,7 +9735,7 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 28,
@@ -9745,7 +9745,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
@@ -9755,17 +9755,17 @@
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
@@ -9804,7 +9804,7 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 28,
@@ -9814,7 +9814,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
@@ -9824,17 +9824,17 @@
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
@@ -9873,7 +9873,7 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 28,
@@ -9883,7 +9883,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
@@ -9893,17 +9893,17 @@
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
@@ -9942,7 +9942,7 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 28,
@@ -9952,7 +9952,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
@@ -9962,17 +9962,17 @@
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
@@ -10011,7 +10011,7 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 28,
@@ -10021,7 +10021,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
@@ -10031,17 +10031,17 @@
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
@@ -10080,7 +10080,7 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 28,
@@ -10090,7 +10090,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
@@ -10100,17 +10100,17 @@
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
@@ -10149,7 +10149,7 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 28,
@@ -10159,7 +10159,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
@@ -10169,17 +10169,17 @@
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
@@ -10218,7 +10218,7 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 28,
@@ -10228,7 +10228,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
@@ -10238,17 +10238,17 @@
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MONIMON"
               },
               {
                 "min_level": 30,

@@ -369,7 +369,7 @@
  * of the description must match too, e.g.
  *     // ABILITY_POPUP followed by a MESSAGE
  *     ABILITY_POPUP(player, ABILITY_STURDY);
- *     MESSAGE("Geodude was protected by Sturdy!");
+ *     MESSAGE("Monimon was protected by Sturdy!");
  *
  * ABILITY_POPUP(battler, [ability])
  * Causes the test to fail if the battler's ability pop-up is not shown.

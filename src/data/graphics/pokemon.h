@@ -1158,14 +1158,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_MINOMON
 
-#if P_FAMILY_GEODUDE
-    const u32 gMonFrontPic_Geodude[] = INCBIN_U32("graphics/pokemon/geodude/anim_front.4bpp.lz");
-    const u32 gMonPalette_Geodude[] = INCBIN_U32("graphics/pokemon/geodude/normal.gbapal.lz");
-    const u32 gMonBackPic_Geodude[] = INCBIN_U32("graphics/pokemon/geodude/back.4bpp.lz");
-    const u32 gMonShinyPalette_Geodude[] = INCBIN_U32("graphics/pokemon/geodude/shiny.gbapal.lz");
-    const u8 gMonIcon_Geodude[] = INCBIN_U8("graphics/pokemon/geodude/icon.4bpp");
+#if P_FAMILY_MONIMON
+    const u32 gMonFrontPic_Monimon[] = INCBIN_U32("graphics/pokemon/monimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Monimon[] = INCBIN_U32("graphics/pokemon/monimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Monimon[] = INCBIN_U32("graphics/pokemon/monimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Monimon[] = INCBIN_U32("graphics/pokemon/monimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Monimon[] = INCBIN_U8("graphics/pokemon/monimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Geodude[] = INCBIN_U8("graphics/pokemon/geodude/footprint.1bpp");
+    const u8 gMonFootprint_Monimon[] = INCBIN_U8("graphics/pokemon/monimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Graveler[] = INCBIN_U32("graphics/pokemon/graveler/anim_front.4bpp.lz");
@@ -1187,11 +1187,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
 #if P_ALOLAN_FORMS
-    const u32 gMonFrontPic_GeodudeAlolan[] = INCBIN_U32("graphics/pokemon/geodude/alolan/front.4bpp.lz");
-    const u32 gMonPalette_GeodudeAlolan[] = INCBIN_U32("graphics/pokemon/geodude/alolan/normal.gbapal.lz");
-    const u32 gMonBackPic_GeodudeAlolan[] = INCBIN_U32("graphics/pokemon/geodude/alolan/back.4bpp.lz");
-    const u32 gMonShinyPalette_GeodudeAlolan[] = INCBIN_U32("graphics/pokemon/geodude/alolan/shiny.gbapal.lz");
-    const u8 gMonIcon_GeodudeAlolan[] = INCBIN_U8("graphics/pokemon/geodude/alolan/icon.4bpp");
+    const u32 gMonFrontPic_MonimonAlolan[] = INCBIN_U32("graphics/pokemon/monimon/alolan/front.4bpp.lz");
+    const u32 gMonPalette_MonimonAlolan[] = INCBIN_U32("graphics/pokemon/monimon/alolan/normal.gbapal.lz");
+    const u32 gMonBackPic_MonimonAlolan[] = INCBIN_U32("graphics/pokemon/monimon/alolan/back.4bpp.lz");
+    const u32 gMonShinyPalette_MonimonAlolan[] = INCBIN_U32("graphics/pokemon/monimon/alolan/shiny.gbapal.lz");
+    const u8 gMonIcon_MonimonAlolan[] = INCBIN_U8("graphics/pokemon/monimon/alolan/icon.4bpp");
 
     const u32 gMonFrontPic_GravelerAlolan[] = INCBIN_U32("graphics/pokemon/graveler/alolan/front.4bpp.lz");
     const u32 gMonPalette_GravelerAlolan[] = INCBIN_U32("graphics/pokemon/graveler/alolan/normal.gbapal.lz");
@@ -1205,7 +1205,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_GolemAlolan[] = INCBIN_U32("graphics/pokemon/golem/alolan/shiny.gbapal.lz");
     const u8 gMonIcon_GolemAlolan[] = INCBIN_U8("graphics/pokemon/golem/alolan/icon.4bpp");
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_GEODUDE
+#endif //P_FAMILY_MONIMON
 
 #if P_FAMILY_PONYTA
     const u32 gMonFrontPic_Ponyta[] = INCBIN_U32("graphics/pokemon/ponyta/anim_front.4bpp.lz");

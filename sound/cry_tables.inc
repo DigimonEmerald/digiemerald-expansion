@@ -174,11 +174,11 @@ gCryTable::
 	cry Cry_Minomon
 	cry Cry_Missimon
 .endif @ P_FAMILY_MINOMON
-.if P_FAMILY_GEODUDE == TRUE
-	cry Cry_Geodude
+.if P_FAMILY_MONIMON == TRUE
+	cry Cry_Monimon
 	cry Cry_Graveler
 	cry Cry_Golem
-.endif @ P_FAMILY_GEODUDE
+.endif @ P_FAMILY_MONIMON
 .if P_FAMILY_PONYTA == TRUE
 	cry Cry_Ponyta
 	cry Cry_Rapidash
@@ -2600,11 +2600,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Minomon
 	cry_reverse Cry_Missimon
 .endif @ P_FAMILY_MINOMON
-.if P_FAMILY_GEODUDE == TRUE
-	cry_reverse Cry_Geodude
+.if P_FAMILY_MONIMON == TRUE
+	cry_reverse Cry_Monimon
 	cry_reverse Cry_Graveler
 	cry_reverse Cry_Golem
-.endif @ P_FAMILY_GEODUDE
+.endif @ P_FAMILY_MONIMON
 .if P_FAMILY_PONYTA == TRUE
 	cry_reverse Cry_Ponyta
 	cry_reverse Cry_Rapidash

@@ -1061,8 +1061,8 @@ static const union AnimCmd sAnim_Missimon_1[] =
 };
 #endif //P_FAMILY_MINOMON
 
-#if P_FAMILY_GEODUDE
-static const union AnimCmd sAnim_Geodude_1[] =
+#if P_FAMILY_MONIMON
+static const union AnimCmd sAnim_Monimon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 36),
@@ -1091,11 +1091,11 @@ static const union AnimCmd sAnim_Golem_1[] =
 };
 
 #if P_ALOLAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(GeodudeAlolan);
+PLACEHOLDER_ANIM_SINGLE_FRAME(MonimonAlolan);
 PLACEHOLDER_ANIM_SINGLE_FRAME(GravelerAlolan);
 PLACEHOLDER_ANIM_SINGLE_FRAME(GolemAlolan);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_GEODUDE
+#endif //P_FAMILY_MONIMON
 
 #if P_FAMILY_PONYTA
 static const union AnimCmd sAnim_Ponyta_1[] =
@@ -10395,16 +10395,16 @@ SINGLE_ANIMATION(Kyupimon);
 SINGLE_ANIMATION(Minomon);
 SINGLE_ANIMATION(Missimon);
 #endif //P_FAMILY_MINOMON
-#if P_FAMILY_GEODUDE
-SINGLE_ANIMATION(Geodude);
+#if P_FAMILY_MONIMON
+SINGLE_ANIMATION(Monimon);
 SINGLE_ANIMATION(Graveler);
 SINGLE_ANIMATION(Golem);
 #if P_ALOLAN_FORMS
-SINGLE_ANIMATION(GeodudeAlolan);
+SINGLE_ANIMATION(MonimonAlolan);
 SINGLE_ANIMATION(GravelerAlolan);
 SINGLE_ANIMATION(GolemAlolan);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_GEODUDE
+#endif //P_FAMILY_MONIMON
 #if P_FAMILY_PONYTA
 SINGLE_ANIMATION(Ponyta);
 SINGLE_ANIMATION(Rapidash);

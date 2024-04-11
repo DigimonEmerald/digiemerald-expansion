@@ -825,10 +825,10 @@ Cry_Missimon::
 	.incbin "sound/direct_sound_samples/cries/missimon.bin"
 .endif @ P_FAMILY_MINOMON
 
-.if P_FAMILY_GEODUDE == TRUE
+.if P_FAMILY_MONIMON == TRUE
 	.align 2
-Cry_Geodude::
-	.incbin "sound/direct_sound_samples/cries/geodude.bin"
+Cry_Monimon::
+	.incbin "sound/direct_sound_samples/cries/monimon.bin"
 
 	.align 2
 Cry_Graveler::
@@ -837,7 +837,7 @@ Cry_Graveler::
 	.align 2
 Cry_Golem::
 	.incbin "sound/direct_sound_samples/cries/golem.bin"
-.endif @ P_FAMILY_GEODUDE
+.endif @ P_FAMILY_MONIMON
 
 .if P_FAMILY_PONYTA == TRUE
 	.align 2

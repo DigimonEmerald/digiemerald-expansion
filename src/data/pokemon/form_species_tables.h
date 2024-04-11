@@ -190,10 +190,10 @@ static const u16 sKozenimonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_KOKOMON
 
-#if P_FAMILY_GEODUDE
-static const u16 sGeodudeFormSpeciesIdTable[] = {
-    SPECIES_GEODUDE,
-    SPECIES_GEODUDE_ALOLAN,
+#if P_FAMILY_MONIMON
+static const u16 sMonimonFormSpeciesIdTable[] = {
+    SPECIES_MONIMON,
+    SPECIES_MONIMON_ALOLAN,
     FORM_SPECIES_END,
 };
 
@@ -208,7 +208,7 @@ static const u16 sGolemFormSpeciesIdTable[] = {
     SPECIES_GOLEM_ALOLAN,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_GEODUDE
+#endif //P_FAMILY_MONIMON
 
 #if P_FAMILY_PONYTA
 static const u16 sPonytaFormSpeciesIdTable[] = {

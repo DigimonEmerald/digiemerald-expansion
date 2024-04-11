@@ -9115,7 +9115,7 @@
       "MOVE_WATER_PULSE"
     ]
   },
-  "GEODUDE": {
+  "MONIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -105887,7 +105887,7 @@
       "MOVE_WATER_PULSE"
     ]
   },
-  "GEODUDE_ALOLAN": {
+  "MONIMON_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 1,

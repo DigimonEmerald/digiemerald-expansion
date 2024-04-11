@@ -580,8 +580,8 @@ const u16 gEggMoves[] = {
         MOVE_TICKLE),
 #endif //P_FAMILY_MINOMON
 
-#if P_FAMILY_GEODUDE
-    egg_moves(GEODUDE,
+#if P_FAMILY_MONIMON
+    egg_moves(MONIMON,
         MOVE_MEGA_PUNCH,
         MOVE_BLOCK,
         MOVE_HAMMER_ARM,
@@ -593,7 +593,7 @@ const u16 gEggMoves[] = {
         MOVE_AUTOTOMIZE,
         MOVE_WIDE_GUARD),
 #if P_ALOLAN_FORMS
-    egg_moves(GEODUDE_ALOLAN,
+    egg_moves(MONIMON_ALOLAN,
         MOVE_AUTOTOMIZE,
         MOVE_BLOCK,
         MOVE_COUNTER,
@@ -605,7 +605,7 @@ const u16 gEggMoves[] = {
         MOVE_SCREECH,
         MOVE_WIDE_GUARD),
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_GEODUDE
+#endif //P_FAMILY_MONIMON
 
 #if P_FAMILY_PONYTA
     egg_moves(PONYTA,

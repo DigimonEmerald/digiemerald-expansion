@@ -5238,7 +5238,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "GEODUDE": {
+  "MONIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -12116,7 +12116,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "GEODUDE_ALOLAN": {
+  "MONIMON_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 1,

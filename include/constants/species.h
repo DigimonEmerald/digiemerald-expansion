@@ -75,7 +75,7 @@
 #define SPECIES_KYUPIMON                              71
 #define SPECIES_MINOMON                               72
 #define SPECIES_MISSIMON                              73
-#define SPECIES_GEODUDE                                 74
+#define SPECIES_MONIMON                                 74
 #define SPECIES_GRAVELER                                75
 #define SPECIES_GOLEM                                   76
 #define SPECIES_PONYTA                                  77
@@ -1025,7 +1025,7 @@
 #define SPECIES_BUKAMON_ALOLAN                          964
 #define SPECIES_CALUMON_ALOLAN                           965
 #define SPECIES_CHAPMON_ALOLAN                          966
-#define SPECIES_GEODUDE_ALOLAN                          967
+#define SPECIES_MONIMON_ALOLAN                          967
 #define SPECIES_GRAVELER_ALOLAN                         968
 #define SPECIES_GOLEM_ALOLAN                            969
 #define SPECIES_GRIMER_ALOLAN                           970
