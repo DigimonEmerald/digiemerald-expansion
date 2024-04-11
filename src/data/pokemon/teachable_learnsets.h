@@ -1960,8 +1960,8 @@ static const u16 sTsubumonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SANDMON
 
-#if P_FAMILY_ZUBAT
-static const u16 sZubatTeachableLearnset[] = {
+#if P_FAMILY_ICEBOTAMON
+static const u16 sIcebotamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
@@ -2048,7 +2048,7 @@ static const u16 sCrobatTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ZUBAT
+#endif //P_FAMILY_ICEBOTAMON
 
 #if P_FAMILY_ODDISH
 static const u16 sOddishTeachableLearnset[] = {

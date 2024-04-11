@@ -685,18 +685,18 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_SANDMON
 
-#if P_FAMILY_ZUBAT
-    const u32 gMonFrontPic_Zubat[] = INCBIN_U32("graphics/pokemon/zubat/anim_front.4bpp.lz");
-    const u32 gMonPalette_Zubat[] = INCBIN_U32("graphics/pokemon/zubat/normal.gbapal.lz");
-    const u32 gMonBackPic_Zubat[] = INCBIN_U32("graphics/pokemon/zubat/back.4bpp.lz");
-    const u32 gMonShinyPalette_Zubat[] = INCBIN_U32("graphics/pokemon/zubat/shiny.gbapal.lz");
-    const u8 gMonIcon_Zubat[] = INCBIN_U8("graphics/pokemon/zubat/icon.4bpp");
+#if P_FAMILY_ICEBOTAMON
+    const u32 gMonFrontPic_Icebotamon[] = INCBIN_U32("graphics/pokemon/icebotamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Icebotamon[] = INCBIN_U32("graphics/pokemon/icebotamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Icebotamon[] = INCBIN_U32("graphics/pokemon/icebotamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Icebotamon[] = INCBIN_U32("graphics/pokemon/icebotamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Icebotamon[] = INCBIN_U8("graphics/pokemon/icebotamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Zubat[] = INCBIN_U8("graphics/pokemon/zubat/footprint.1bpp");
+    const u8 gMonFootprint_Icebotamon[] = INCBIN_U8("graphics/pokemon/icebotamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_ZubatF[] = INCBIN_U32("graphics/pokemon/zubat/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_ZubatF[] = INCBIN_U32("graphics/pokemon/zubat/backf.4bpp.lz");
+    const u32 gMonFrontPic_IcebotamonF[] = INCBIN_U32("graphics/pokemon/icebotamon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_IcebotamonF[] = INCBIN_U32("graphics/pokemon/icebotamon/backf.4bpp.lz");
 
     const u32 gMonFrontPic_Golbat[] = INCBIN_U32("graphics/pokemon/golbat/anim_front.4bpp.lz");
     const u32 gMonPalette_Golbat[] = INCBIN_U32("graphics/pokemon/golbat/normal.gbapal.lz");
@@ -720,7 +720,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Crobat[] = INCBIN_U8("graphics/pokemon/crobat/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ZUBAT
+#endif //P_FAMILY_ICEBOTAMON
 
 #if P_FAMILY_ODDISH
     const u32 gMonFrontPic_Oddish[] = INCBIN_U32("graphics/pokemon/oddish/anim_front.4bpp.lz");

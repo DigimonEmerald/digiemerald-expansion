@@ -628,10 +628,10 @@ Cry_Tsubumon::
 	.incbin "sound/direct_sound_samples/cries/tsubumon.bin"
 .endif @ P_FAMILY_SANDMON
 
-.if P_FAMILY_ZUBAT == TRUE
+.if P_FAMILY_ICEBOTAMON == TRUE
 	.align 2
-Cry_Zubat::
-	.incbin "sound/direct_sound_samples/cries/zubat.bin"
+Cry_Icebotamon::
+	.incbin "sound/direct_sound_samples/cries/icebotamon.bin"
 
 	.align 2
 Cry_Golbat::
@@ -642,7 +642,7 @@ Cry_Golbat::
 Cry_Crobat::
 	.incbin "sound/direct_sound_samples/cries/crobat.bin"
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_ZUBAT
+.endif @ P_FAMILY_ICEBOTAMON
 
 .if P_FAMILY_ODDISH == TRUE
 	.align 2

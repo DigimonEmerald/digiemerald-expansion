@@ -297,8 +297,8 @@ const u16 gEggMoves[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_SANDMON
 
-#if P_FAMILY_ZUBAT
-    egg_moves(ZUBAT,
+#if P_FAMILY_ICEBOTAMON
+    egg_moves(ICEBOTAMON,
         MOVE_QUICK_ATTACK,
         MOVE_PURSUIT,
         MOVE_FEINT_ATTACK,
@@ -313,7 +313,7 @@ const u16 gEggMoves[] = {
         MOVE_STEEL_WING,
         MOVE_DEFOG,
         MOVE_VENOM_DRENCH),
-#endif //P_FAMILY_ZUBAT
+#endif //P_FAMILY_ICEBOTAMON
 
 #if P_FAMILY_ODDISH
     egg_moves(ODDISH,

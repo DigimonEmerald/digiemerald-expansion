@@ -4437,8 +4437,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_SANDMON
 
-#if P_FAMILY_ZUBAT
-    [SPECIES_ZUBAT] =
+#if P_FAMILY_ICEBOTAMON
+    [SPECIES_ICEBOTAMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 45,
@@ -4457,9 +4457,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_NONE, ABILITY_INFILTRATOR },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Zubat"),
-        .cryId = CRY_ZUBAT,
-        .natDexNum = NATIONAL_DEX_ZUBAT,
+        .speciesName = _("Icebotamon"),
+        .cryId = CRY_ICEBOTAMON,
+        .natDexNum = NATIONAL_DEX_ICEBOTAMON,
         .categoryName = _("Bat"),
         .height = 8,
         .weight = 75,
@@ -4472,27 +4472,27 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = -5,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Zubat,
-        .frontPicFemale = gMonFrontPic_ZubatF,
+        .frontPic = gMonFrontPic_Icebotamon,
+        .frontPicFemale = gMonFrontPic_IcebotamonF,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 16,
-        .frontAnimFrames = sAnims_Zubat,
+        .frontAnimFrames = sAnims_Icebotamon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 16,
-        .backPic = gMonBackPic_Zubat,
-        .backPicFemale = gMonBackPic_ZubatF,
+        .backPic = gMonBackPic_Icebotamon,
+        .backPicFemale = gMonBackPic_IcebotamonF,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Zubat,
-        .shinyPalette = gMonShinyPalette_Zubat,
-        .iconSprite = gMonIcon_Zubat,
+        .palette = gMonPalette_Icebotamon,
+        .shinyPalette = gMonShinyPalette_Icebotamon,
+        .iconSprite = gMonIcon_Icebotamon,
         .iconPalIndex = 2,
-        FOOTPRINT(Zubat)
-        .levelUpLearnset = sZubatLevelUpLearnset,
-        .teachableLearnset = sZubatTeachableLearnset,
+        FOOTPRINT(Icebotamon)
+        .levelUpLearnset = sIcebotamonLevelUpLearnset,
+        .teachableLearnset = sIcebotamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_GOLBAT}),
     },
 
@@ -4614,7 +4614,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sCrobatTeachableLearnset,
     },
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ZUBAT
+#endif //P_FAMILY_ICEBOTAMON
 
 #if P_FAMILY_ODDISH
     [SPECIES_ODDISH] =

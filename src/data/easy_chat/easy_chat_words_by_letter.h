@@ -1962,8 +1962,8 @@ const u16 gEasyChatWordsByLetter_Z[] = {
     EC_POKEMON_NATIONAL(ZAPDOS),
     EC_POKEMON(ZIGZAGOON),
     DOUBLE_SPECIES_NAME
-    EC_POKEMON(ZUBAT),
-    EC_POKEMON_NATIONAL(ZUBAT),
+    EC_POKEMON(ICEBOTAMON),
+    EC_POKEMON_NATIONAL(ICEBOTAMON),
 };
 
 const u16 gEasyChatWordsByLetter_UnusedJapaneseHi[] = {

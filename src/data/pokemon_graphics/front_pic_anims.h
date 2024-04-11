@@ -562,8 +562,8 @@ static const union AnimCmd sAnim_Tsubumon_1[] =
 };
 #endif //P_FAMILY_SANDMON
 
-#if P_FAMILY_ZUBAT
-static const union AnimCmd sAnim_Zubat_1[] =
+#if P_FAMILY_ICEBOTAMON
+static const union AnimCmd sAnim_Icebotamon_1[] =
 {
     ANIMCMD_FRAME(0, 3),
     ANIMCMD_FRAME(1, 3),
@@ -628,7 +628,7 @@ static const union AnimCmd sAnim_Crobat_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ZUBAT
+#endif //P_FAMILY_ICEBOTAMON
 
 #if P_FAMILY_ODDISH
 static const union AnimCmd sAnim_Oddish_1[] =
@@ -10297,13 +10297,13 @@ SINGLE_ANIMATION(Igglybuff);
 SINGLE_ANIMATION(Sandmon);
 SINGLE_ANIMATION(Tsubumon);
 #endif //P_FAMILY_SANDMON
-#if P_FAMILY_ZUBAT
-SINGLE_ANIMATION(Zubat);
+#if P_FAMILY_ICEBOTAMON
+SINGLE_ANIMATION(Icebotamon);
 SINGLE_ANIMATION(Golbat);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Crobat);
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ZUBAT
+#endif //P_FAMILY_ICEBOTAMON
 #if P_FAMILY_ODDISH
 SINGLE_ANIMATION(Oddish);
 SINGLE_ANIMATION(Gloom);

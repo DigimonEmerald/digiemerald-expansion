@@ -640,8 +640,8 @@ static const struct LevelUpMove sTsubumonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_SANDMON
 
-#if P_FAMILY_ZUBAT
-static const struct LevelUpMove sZubatLevelUpLearnset[] = {
+#if P_FAMILY_ICEBOTAMON
+static const struct LevelUpMove sIcebotamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEECH_LIFE),
     LEVEL_UP_MOVE(10, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE(15, MOVE_BITE),
@@ -677,7 +677,7 @@ static const struct LevelUpMove sCrobatLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ZUBAT
+#endif //P_FAMILY_ICEBOTAMON
 
 #if P_FAMILY_ODDISH
 static const struct LevelUpMove sOddishLevelUpLearnset[] = {

@@ -68,7 +68,7 @@
 #define P_FAMILY_PUYOMON                P_GEN_1_POKEMON
 #define P_FAMILY_RELEMON                  P_GEN_1_POKEMON
 #define P_FAMILY_SANDMON              P_GEN_1_POKEMON
-#define P_FAMILY_ZUBAT                   P_GEN_1_POKEMON
+#define P_FAMILY_ICEBOTAMON                   P_GEN_1_POKEMON
 #define P_FAMILY_ODDISH                  P_GEN_1_POKEMON
 #define P_FAMILY_PARAS                   P_GEN_1_POKEMON
 #define P_FAMILY_VENONAT                 P_GEN_1_POKEMON
