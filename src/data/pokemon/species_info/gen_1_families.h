@@ -8720,10 +8720,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Pusurimon)
         .levelUpLearnset = sPusurimonLevelUpLearnset,
         .teachableLearnset = sPusurimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_DEWGONG}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_PUYOYOMON}),
     },
 
-    [SPECIES_DEWGONG] =
+    [SPECIES_PUYOYOMON] =
     {
         .baseHP        = 90,
         .baseAttack    = 70,
@@ -8742,9 +8742,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
         .abilities = { ABILITY_THICK_FAT, ABILITY_HYDRATION, ABILITY_ICE_BODY },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Dewgong"),
-        .cryId = CRY_DEWGONG,
-        .natDexNum = NATIONAL_DEX_DEWGONG,
+        .speciesName = _("Puyoyomon"),
+        .cryId = CRY_PUYOYOMON,
+        .natDexNum = NATIONAL_DEX_PUYOYOMON,
         .categoryName = _("Sea Lion"),
         .height = 17,
         .weight = 1200,
@@ -8757,22 +8757,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 275,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Dewgong,
+        .frontPic = gMonFrontPic_Puyoyomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Dewgong,
+        .frontAnimFrames = sAnims_Puyoyomon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Dewgong,
+        .backPic = gMonBackPic_Puyoyomon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Dewgong,
-        .shinyPalette = gMonShinyPalette_Dewgong,
-        .iconSprite = gMonIcon_Dewgong,
+        .palette = gMonPalette_Puyoyomon,
+        .shinyPalette = gMonShinyPalette_Puyoyomon,
+        .iconSprite = gMonIcon_Puyoyomon,
         .iconPalIndex = 2,
-        FOOTPRINT(Dewgong)
-        .levelUpLearnset = sDewgongLevelUpLearnset,
-        .teachableLearnset = sDewgongTeachableLearnset,
+        FOOTPRINT(Puyoyomon)
+        .levelUpLearnset = sPuyoyomonLevelUpLearnset,
+        .teachableLearnset = sPuyoyomonTeachableLearnset,
     },
 #endif //P_FAMILY_PUSURIMON
 

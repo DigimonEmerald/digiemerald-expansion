@@ -2443,7 +2443,7 @@ static const struct LevelUpMove sPusurimonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sDewgongLevelUpLearnset[] = {
+static const struct LevelUpMove sPuyoyomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SHEER_COLD),
     LEVEL_UP_MOVE( 1, MOVE_SHEER_COLD),
     LEVEL_UP_MOVE( 1, MOVE_HEADBUTT),

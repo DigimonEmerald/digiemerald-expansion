@@ -215,7 +215,7 @@ gCryTable::
 .endif @ P_FAMILY_POROMON
 .if P_FAMILY_PUSURIMON == TRUE
 	cry Cry_Pusurimon
-	cry Cry_Dewgong
+	cry Cry_Puyoyomon
 .endif @ P_FAMILY_PUSURIMON
 .if P_FAMILY_GRIMER == TRUE
 	cry Cry_Grimer
@@ -2641,7 +2641,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_POROMON
 .if P_FAMILY_PUSURIMON == TRUE
 	cry_reverse Cry_Pusurimon
-	cry_reverse Cry_Dewgong
+	cry_reverse Cry_Puyoyomon
 .endif @ P_FAMILY_PUSURIMON
 .if P_FAMILY_GRIMER == TRUE
 	cry_reverse Cry_Grimer

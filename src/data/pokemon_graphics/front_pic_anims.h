@@ -1252,7 +1252,7 @@ static const union AnimCmd sAnim_Pusurimon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Dewgong_1[] =
+static const union AnimCmd sAnim_Puyoyomon_1[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_FRAME(1, 30),
@@ -10450,7 +10450,7 @@ SINGLE_ANIMATION(Puroromon);
 #endif //P_FAMILY_POROMON
 #if P_FAMILY_PUSURIMON
 SINGLE_ANIMATION(Pusurimon);
-SINGLE_ANIMATION(Dewgong);
+SINGLE_ANIMATION(Puyoyomon);
 #endif //P_FAMILY_PUSURIMON
 #if P_FAMILY_GRIMER
 SINGLE_ANIMATION(Grimer);

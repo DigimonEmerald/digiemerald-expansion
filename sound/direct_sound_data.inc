@@ -921,8 +921,8 @@ Cry_Pusurimon::
 	.incbin "sound/direct_sound_samples/cries/pusurimon.bin"
 
 	.align 2
-Cry_Dewgong::
-	.incbin "sound/direct_sound_samples/cries/dewgong.bin"
+Cry_Puyoyomon::
+	.incbin "sound/direct_sound_samples/cries/puyoyomon.bin"
 .endif @ P_FAMILY_PUSURIMON
 
 .if P_FAMILY_GRIMER == TRUE
