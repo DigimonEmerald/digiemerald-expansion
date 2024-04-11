@@ -3964,10 +3964,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Puyomon)
         .levelUpLearnset = sPuyomonLevelUpLearnset,
         .teachableLearnset = sPuyomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_CLEFABLE}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_PYONMON}),
     },
 
-    [SPECIES_CLEFABLE] =
+    [SPECIES_PYONMON] =
     {
         .baseHP        = 95,
         .baseAttack    = 70,
@@ -3996,14 +3996,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_CUTE_CHARM, ABILITY_MAGIC_GUARD, ABILITY_UNAWARE },
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
-        .speciesName = _("Clefable"),
-        .cryId = CRY_CLEFABLE,
-        .natDexNum = NATIONAL_DEX_CLEFABLE,
+        .speciesName = _("Pyonmon"),
+        .cryId = CRY_PYONMON,
+        .natDexNum = NATIONAL_DEX_PYONMON,
         .categoryName = _("Fairy"),
         .height = 13,
         .weight = 400,
         .description = COMPOUND_STRING(
-            "A Clefable uses its wings to skip lightly \n"
+            "A Pyonmon uses its wings to skip lightly \n"
             "as if it were flying. Its bouncy step\n"
             "lets it even walk on water. On quiet,\n"
             "moonlit nights, it strolls on lakes."),
@@ -4011,22 +4011,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 5,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Clefable,
+        .frontPic = gMonFrontPic_Pyonmon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Clefable,
+        .frontAnimFrames = sAnims_Pyonmon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Clefable,
+        .backPic = gMonBackPic_Pyonmon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Clefable,
-        .shinyPalette = gMonShinyPalette_Clefable,
-        .iconSprite = gMonIcon_Clefable,
+        .palette = gMonPalette_Pyonmon,
+        .shinyPalette = gMonShinyPalette_Pyonmon,
+        .iconSprite = gMonIcon_Pyonmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Clefable)
-        .levelUpLearnset = sClefableLevelUpLearnset,
-        .teachableLearnset = sClefableTeachableLearnset,
+        FOOTPRINT(Pyonmon)
+        .levelUpLearnset = sPyonmonLevelUpLearnset,
+        .teachableLearnset = sPyonmonTeachableLearnset,
     },
 #endif //P_FAMILY_PUYOMON
 

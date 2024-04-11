@@ -82,7 +82,7 @@ gCryTable::
 	cry Cry_Cleffa
 .endif @ P_GEN_2_CROSS_EVOS
 	cry Cry_Puyomon
-	cry Cry_Clefable
+	cry Cry_Pyonmon
 .endif @ P_FAMILY_PUYOMON
 .if P_FAMILY_VULPIX == TRUE
 	cry Cry_Vulpix
@@ -2508,7 +2508,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Cleffa
 .endif @ P_GEN_2_CROSS_EVOS
 	cry_reverse Cry_Puyomon
-	cry_reverse Cry_Clefable
+	cry_reverse Cry_Pyonmon
 .endif @ P_FAMILY_PUYOMON
 .if P_FAMILY_VULPIX == TRUE
 	cry_reverse Cry_Vulpix

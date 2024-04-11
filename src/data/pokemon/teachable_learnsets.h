@@ -1607,7 +1607,7 @@ static const u16 sPuyomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sClefableTeachableLearnset[] = {
+static const u16 sPyonmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,

@@ -492,7 +492,7 @@ static const union AnimCmd sAnim_Puyomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Clefable_1[] =
+static const union AnimCmd sAnim_Pyonmon_1[] =
 {
     ANIMCMD_FRAME(0, 16),
     ANIMCMD_FRAME(1, 48),
@@ -10280,7 +10280,7 @@ SINGLE_ANIMATION(Puwamon);
 SINGLE_ANIMATION(Cleffa);
 #endif //P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Puyomon);
-SINGLE_ANIMATION(Clefable);
+SINGLE_ANIMATION(Pyonmon);
 #endif //P_FAMILY_PUYOMON
 #if P_FAMILY_VULPIX
 SINGLE_ANIMATION(Vulpix);
