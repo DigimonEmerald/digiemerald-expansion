@@ -670,8 +670,8 @@ Cry_Argomon_it::
 	.incbin "sound/direct_sound_samples/cries/argomon_it.bin"
 
 	.align 2
-Cry_Babymon::
-	.incbin "sound/direct_sound_samples/cries/babymon.bin"
+Cry_Babydmon::
+	.incbin "sound/direct_sound_samples/cries/babydmon.bin"
 .endif @ P_FAMILY_ARGOMON_IT
 
 .if P_FAMILY_BIBIMON == TRUE
@@ -767,10 +767,10 @@ Cry_Politoed::
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_GUMMYMON
 
-.if P_FAMILY_ABRA == TRUE
+.if P_FAMILY_HOPMON == TRUE
 	.align 2
-Cry_Abra::
-	.incbin "sound/direct_sound_samples/cries/abra.bin"
+Cry_Hopmon::
+	.incbin "sound/direct_sound_samples/cries/hopmon.bin"
 
 	.align 2
 Cry_Kadabra::
@@ -785,7 +785,7 @@ Cry_Alakazam::
 Cry_AlakazamMega::
 	.incbin "sound/direct_sound_samples/cries/alakazam_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_ABRA
+.endif @ P_FAMILY_HOPMON
 
 .if P_FAMILY_MACHOP == TRUE
 	.align 2

@@ -705,7 +705,7 @@ static const union AnimCmd sAnim_Argomon_it_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Babymon_1[] =
+static const union AnimCmd sAnim_Babydmon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -937,8 +937,8 @@ static const union AnimCmd sAnim_Politoed_1[] =
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_GUMMYMON
 
-#if P_FAMILY_ABRA
-static const union AnimCmd sAnim_Abra_1[] =
+#if P_FAMILY_HOPMON
+static const union AnimCmd sAnim_Hopmon_1[] =
 {
     ANIMCMD_FRAME(0, 7),
     ANIMCMD_FRAME(1, 21),
@@ -967,7 +967,7 @@ static const union AnimCmd sAnim_Alakazam_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(AlakazamMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_ABRA
+#endif //P_FAMILY_HOPMON
 
 #if P_FAMILY_MACHOP
 static const union AnimCmd sAnim_Machop_1[] =
@@ -10314,7 +10314,7 @@ SINGLE_ANIMATION(Bellossom);
 #endif //P_FAMILY_ZERIMON
 #if P_FAMILY_ARGOMON_IT
 SINGLE_ANIMATION(Argomon_it);
-SINGLE_ANIMATION(Babymon);
+SINGLE_ANIMATION(Babydmon);
 #endif //P_FAMILY_ARGOMON_IT
 #if P_FAMILY_BIBIMON
 SINGLE_ANIMATION(Bibimon);
@@ -10370,14 +10370,14 @@ SINGLE_ANIMATION(Hiyarimon);
 SINGLE_ANIMATION(Politoed);
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_GUMMYMON
-#if P_FAMILY_ABRA
-SINGLE_ANIMATION(Abra);
+#if P_FAMILY_HOPMON
+SINGLE_ANIMATION(Hopmon);
 SINGLE_ANIMATION(Kadabra);
 SINGLE_ANIMATION(Alakazam);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(AlakazamMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_ABRA
+#endif //P_FAMILY_HOPMON
 #if P_FAMILY_MACHOP
 SINGLE_ANIMATION(Machop);
 SINGLE_ANIMATION(Machoke);

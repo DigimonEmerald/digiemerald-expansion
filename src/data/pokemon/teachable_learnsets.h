@@ -2188,7 +2188,7 @@ static const u16 sArgomon_itTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBabymonTeachableLearnset[] = {
+static const u16 sBabydmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -3136,8 +3136,8 @@ static const u16 sPolitoedTeachableLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_GUMMYMON
 
-#if P_FAMILY_ABRA
-static const u16 sAbraTeachableLearnset[] = {
+#if P_FAMILY_HOPMON
+static const u16 sHopmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
@@ -3277,7 +3277,7 @@ static const u16 sAlakazamTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ABRA
+#endif //P_FAMILY_HOPMON
 
 #if P_FAMILY_MACHOP
 static const u16 sMachopTeachableLearnset[] = {

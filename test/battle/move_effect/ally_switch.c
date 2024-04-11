@@ -46,7 +46,7 @@ DOUBLE_BATTLE_TEST("Ally Switch changes the position of battlers")
         PLAYER(SPECIES_WOBBUFFET) { Speed(5); } // Wobb is playerLeft, but it'll be Wynaut after Ally Switch
         PLAYER(SPECIES_WYNAUT) { Speed(4); }
         OPPONENT(SPECIES_KADABRA) { Speed(3); }
-        OPPONENT(SPECIES_ABRA) { Speed(2); }
+        OPPONENT(SPECIES_HOPMON) { Speed(2); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(opponentLeft, MOVE_SCREECH, target:playerLeft); MOVE(opponentRight, MOVE_SCREECH, target:playerLeft); }
     } SCENE {
@@ -58,7 +58,7 @@ DOUBLE_BATTLE_TEST("Ally Switch changes the position of battlers")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
         MESSAGE("Wynaut's Defense harshly fell!");
 
-        MESSAGE("Foe Abra used Screech!");
+        MESSAGE("Foe Hopmon used Screech!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
         MESSAGE("Wynaut's Defense harshly fell!");
     } THEN {
@@ -76,7 +76,7 @@ DOUBLE_BATTLE_TEST("Ally Switch does not redirect the target of Snipe Shot")
         PLAYER(SPECIES_WOBBUFFET); // Wobb is playerLeft, but it'll be Wynaut after Ally Switch
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_KADABRA);
-        OPPONENT(SPECIES_ABRA);
+        OPPONENT(SPECIES_HOPMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(opponentLeft, MOVE_SNIPE_SHOT, target:playerLeft); } // Kadabra targets Wobb and Snipe Shot ignores Ally Switch position change.
     } SCENE {
@@ -101,7 +101,7 @@ DOUBLE_BATTLE_TEST("Ally Switch does not redirect moves done by pokemon with Sta
         PLAYER(SPECIES_WOBBUFFET); // Wobb is playerLeft, but it'll be Wynaut after Ally Switch
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_KADABRA) { Ability(ability); }
-        OPPONENT(SPECIES_ABRA);
+        OPPONENT(SPECIES_HOPMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(opponentLeft, MOVE_TACKLE, target:playerRight); } // Kadabra targets playerRight Wynaut.
     } SCENE {
@@ -129,7 +129,7 @@ DOUBLE_BATTLE_TEST("Ally Switch has no effect on parnter's chosen move")
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WYNAUT) { Moves(MOVE_TACKLE, MOVE_POUND, MOVE_CELEBRATE, MOVE_SCRATCH); }
         OPPONENT(SPECIES_KADABRA);
-        OPPONENT(SPECIES_ABRA);
+        OPPONENT(SPECIES_HOPMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(playerRight, chosenMove, target:chosenTarget); }
     } SCENE {
@@ -154,7 +154,7 @@ DOUBLE_BATTLE_TEST("Ally Switch - move fails if the target was ally which change
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_KADABRA);
-        OPPONENT(SPECIES_ABRA);
+        OPPONENT(SPECIES_HOPMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(playerRight, move, target:playerLeft); }
     } SCENE {
@@ -179,7 +179,7 @@ DOUBLE_BATTLE_TEST("Acupressure works after ally used Ally Switch")
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_KADABRA);
-        OPPONENT(SPECIES_ABRA);
+        OPPONENT(SPECIES_HOPMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(playerRight, MOVE_ACUPRESSURE, target:battlerTarget); }
     } SCENE {

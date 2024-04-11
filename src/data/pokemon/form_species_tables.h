@@ -174,13 +174,13 @@ static const u16 sGigimonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_FRIMON
 
-#if P_FAMILY_ABRA
+#if P_FAMILY_HOPMON
 static const u16 sAlakazamFormSpeciesIdTable[] = {
     SPECIES_ALAKAZAM,
     SPECIES_ALAKAZAM_MEGA,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_ABRA
+#endif //P_FAMILY_HOPMON
 
 #if P_FAMILY_MACHOP
 static const u16 sMachampFormSpeciesIdTable[] = {

@@ -5523,7 +5523,7 @@
       "MOVE_WORRY_SEED"
     ]
   },
-  "BABYMON": {
+  "BABYDMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -7634,7 +7634,7 @@
       "MOVE_WATER_PULSE"
     ]
   },
-  "ABRA": {
+  "HOPMON": {
     "LevelMoves": [
       {
         "Level": 1,

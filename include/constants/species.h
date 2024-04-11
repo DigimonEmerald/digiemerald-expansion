@@ -48,7 +48,7 @@
 #define SPECIES_ZURUMON                                   44
 #define SPECIES_ARCADIAMON_IT                               45
 #define SPECIES_ARGOMON_IT                                   46
-#define SPECIES_BABYMON                                47
+#define SPECIES_BABYDMON                                47
 #define SPECIES_BIBIMON                                 48
 #define SPECIES_BOSAMON                                49
 #define SPECIES_BUDMON                                 50
@@ -64,7 +64,7 @@
 #define SPECIES_GUMMYMON                                 60
 #define SPECIES_GURIMON                               61
 #define SPECIES_HIYARIMON                               62
-#define SPECIES_ABRA                                    63
+#define SPECIES_HOPMON                                    63
 #define SPECIES_KADABRA                                 64
 #define SPECIES_ALAKAZAM                                65
 #define SPECIES_MACHOP                                  66

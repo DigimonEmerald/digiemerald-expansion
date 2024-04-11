@@ -112,7 +112,7 @@ gCryTable::
 .endif @ P_FAMILY_ZERIMON
 .if P_FAMILY_ARGOMON_IT == TRUE
 	cry Cry_Argomon_it
-	cry Cry_Babymon
+	cry Cry_Babydmon
 .endif @ P_FAMILY_ARGOMON_IT
 .if P_FAMILY_BIBIMON == TRUE
 	cry Cry_Bibimon
@@ -152,14 +152,14 @@ gCryTable::
 	cry Cry_Politoed
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_GUMMYMON
-.if P_FAMILY_ABRA == TRUE
-	cry Cry_Abra
+.if P_FAMILY_HOPMON == TRUE
+	cry Cry_Hopmon
 	cry Cry_Kadabra
 	cry Cry_Alakazam
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_AlakazamMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_ABRA
+.endif @ P_FAMILY_HOPMON
 .if P_FAMILY_MACHOP == TRUE
 	cry Cry_Machop
 	cry Cry_Machoke
@@ -2538,7 +2538,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_ZERIMON
 .if P_FAMILY_ARGOMON_IT == TRUE
 	cry_reverse Cry_Argomon_it
-	cry_reverse Cry_Babymon
+	cry_reverse Cry_Babydmon
 .endif @ P_FAMILY_ARGOMON_IT
 .if P_FAMILY_BIBIMON == TRUE
 	cry_reverse Cry_Bibimon
@@ -2578,14 +2578,14 @@ gCryTable_Reverse::
 	cry_reverse Cry_Politoed
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_GUMMYMON
-.if P_FAMILY_ABRA == TRUE
-	cry_reverse Cry_Abra
+.if P_FAMILY_HOPMON == TRUE
+	cry_reverse Cry_Hopmon
 	cry_reverse Cry_Kadabra
 	cry_reverse Cry_Alakazam
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_AlakazamMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_ABRA
+.endif @ P_FAMILY_HOPMON
 .if P_FAMILY_MACHOP == TRUE
 	cry_reverse Cry_Machop
 	cry_reverse Cry_Machoke

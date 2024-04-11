@@ -509,8 +509,8 @@ const u16 gEggMoves[] = {
         MOVE_WATER_PULSE),
 #endif //P_FAMILY_GUMMYMON
 
-#if P_FAMILY_ABRA
-    egg_moves(ABRA,
+#if P_FAMILY_HOPMON
+    egg_moves(HOPMON,
         MOVE_ENCORE,
         MOVE_BARRIER,
         MOVE_KNOCK_OFF,
@@ -524,7 +524,7 @@ const u16 gEggMoves[] = {
         MOVE_PSYCHO_SHIFT,
         MOVE_ALLY_SWITCH,
         MOVE_PSYCHIC_TERRAIN),
-#endif //P_FAMILY_ABRA
+#endif //P_FAMILY_HOPMON
 
 #if P_FAMILY_MACHOP
     egg_moves(MACHOP,

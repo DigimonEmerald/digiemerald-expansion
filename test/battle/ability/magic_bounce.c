@@ -61,7 +61,7 @@ DOUBLE_BATTLE_TEST("Magic Bounce bounces back moves hitting both foes at two foe
     GIVEN {
         ASSUME(gMovesInfo[MOVE_LEER].effect == EFFECT_DEFENSE_DOWN);
         ASSUME(gMovesInfo[MOVE_LEER].target == MOVE_TARGET_BOTH);
-        PLAYER(SPECIES_ABRA);
+        PLAYER(SPECIES_HOPMON);
         PLAYER(SPECIES_KADABRA);
         OPPONENT(SPECIES_ESPEON) { Ability(ABILITY_MAGIC_BOUNCE); }
         OPPONENT(SPECIES_WYNAUT);
@@ -70,10 +70,10 @@ DOUBLE_BATTLE_TEST("Magic Bounce bounces back moves hitting both foes at two foe
     } SCENE {
         ABILITY_POPUP(opponentLeft, ABILITY_MAGIC_BOUNCE);
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_LEER, playerLeft);
-        MESSAGE("Abra's Leer was bounced back by Foe Espeon's Magic Bounce!");
+        MESSAGE("Hopmon's Leer was bounced back by Foe Espeon's Magic Bounce!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_LEER, opponentLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-        MESSAGE("Abra's Defense fell!");
+        MESSAGE("Hopmon's Defense fell!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
         MESSAGE("Kadabra's Defense fell!");
         // Also check if second original target gets hit by Leer as this was once bugged

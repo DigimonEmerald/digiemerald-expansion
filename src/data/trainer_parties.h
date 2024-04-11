@@ -2733,7 +2733,7 @@ static const struct TrainerMon sParty_Jeffrey5[] = {
 static const struct TrainerMon sParty_Edward[] = {
     {
     .lvl = 15,
-    .species = SPECIES_ABRA,
+    .species = SPECIES_HOPMON,
     .moves = {MOVE_HIDDEN_POWER, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     }
 };
@@ -2850,7 +2850,7 @@ static const struct TrainerMon sParty_Cameron5[] = {
 static const struct TrainerMon sParty_Jaclyn[] = {
     {
     .lvl = 16,
-    .species = SPECIES_ABRA,
+    .species = SPECIES_HOPMON,
     .moves = {MOVE_HIDDEN_POWER, MOVE_NONE, MOVE_NONE, MOVE_NONE}
     }
 };

@@ -64,7 +64,7 @@ DOUBLE_BATTLE_TEST("Intimidate doesn't activate on an empty field in a double ba
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET) { HP(1); }
         PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); }
-        PLAYER(SPECIES_ABRA);
+        PLAYER(SPECIES_HOPMON);
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
         OPPONENT(SPECIES_PAOMON) { Ability(ABILITY_INTIMIDATE); }
@@ -79,7 +79,7 @@ DOUBLE_BATTLE_TEST("Intimidate doesn't activate on an empty field in a double ba
 
         MESSAGE("Go! Pafumon!");
         MESSAGE("2 sent out Paomon!");
-        MESSAGE("Go! Abra!");
+        MESSAGE("Go! Hopmon!");
         MESSAGE("2 sent out Wynaut!");
 
         NONE_OF {
@@ -93,7 +93,7 @@ DOUBLE_BATTLE_TEST("Intimidate doesn't activate on an empty field in a double ba
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
             MESSAGE("Foe Paomon's Intimidate cuts Pafumon's attack!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-            MESSAGE("Foe Paomon's Intimidate cuts Abra's attack!");
+            MESSAGE("Foe Paomon's Intimidate cuts Hopmon's attack!");
         }
     }
 }

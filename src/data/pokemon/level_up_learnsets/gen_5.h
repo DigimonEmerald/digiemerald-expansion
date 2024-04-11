@@ -1008,7 +1008,7 @@ static const struct LevelUpMove sArgomon_itLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sBabymonLevelUpLearnset[] = {
+static const struct LevelUpMove sBabydmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CROSS_POISON),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_STUN_SPORE),
@@ -1527,8 +1527,8 @@ static const struct LevelUpMove sPolitoedLevelUpLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_GUMMYMON
 
-#if P_FAMILY_ABRA
-static const struct LevelUpMove sAbraLevelUpLearnset[] = {
+#if P_FAMILY_HOPMON
+static const struct LevelUpMove sHopmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TELEPORT),
     LEVEL_UP_END
 };
@@ -1572,7 +1572,7 @@ static const struct LevelUpMove sAlakazamLevelUpLearnset[] = {
     LEVEL_UP_MOVE(52, MOVE_TRICK),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_ABRA
+#endif //P_FAMILY_HOPMON
 
 #if P_FAMILY_MACHOP
 static const struct LevelUpMove sMachopLevelUpLearnset[] = {

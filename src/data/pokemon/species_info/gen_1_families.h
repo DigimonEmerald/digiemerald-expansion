@@ -4913,10 +4913,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Argomon_it)
         .levelUpLearnset = sArgomon_itLevelUpLearnset,
         .teachableLearnset = sArgomon_itTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_BABYMON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_BABYDMON}),
     },
 
-    [SPECIES_BABYMON] =
+    [SPECIES_BABYDMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 95,
@@ -4938,14 +4938,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_GRASS),
         .abilities = { ABILITY_EFFECT_SPORE, ABILITY_DRY_SKIN, ABILITY_DAMP },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Babymon"),
-        .cryId = CRY_BABYMON,
-        .natDexNum = NATIONAL_DEX_BABYMON,
+        .speciesName = _("Babydmon"),
+        .cryId = CRY_BABYDMON,
+        .natDexNum = NATIONAL_DEX_BABYDMON,
         .categoryName = _("Mushroom"),
         .height = 10,
         .weight = 295,
         .description = COMPOUND_STRING(
-            "Babymon are known to infest the roots of\n"
+            "Babydmon are known to infest the roots of\n"
             "large trees en masse and drain nutrients.\n"
             "When an infested tree dies, they move\n"
             "onto another tree all at once."),
@@ -4953,23 +4953,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Babymon,
+        .frontPic = gMonFrontPic_Babydmon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Babymon,
+        .frontAnimFrames = sAnims_Babydmon,
         .frontAnimId = ANIM_H_SHAKE,
         .frontAnimDelay = 45,
-        .backPic = gMonBackPic_Babymon,
+        .backPic = gMonBackPic_Babydmon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_H_SHAKE,
-        .palette = gMonPalette_Babymon,
-        .shinyPalette = gMonShinyPalette_Babymon,
-        .iconSprite = gMonIcon_Babymon,
+        .palette = gMonPalette_Babydmon,
+        .shinyPalette = gMonShinyPalette_Babydmon,
+        .iconSprite = gMonIcon_Babydmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Babymon)
-        .levelUpLearnset = sBabymonLevelUpLearnset,
-        .teachableLearnset = sBabymonTeachableLearnset,
+        FOOTPRINT(Babydmon)
+        .levelUpLearnset = sBabydmonLevelUpLearnset,
+        .teachableLearnset = sBabydmonTeachableLearnset,
     },
 #endif //P_FAMILY_ARGOMON_IT
 
@@ -6450,8 +6450,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_GUMMYMON
 
-#if P_FAMILY_ABRA
-    [SPECIES_ABRA] =
+#if P_FAMILY_HOPMON
+    [SPECIES_HOPMON] =
     {
         .baseHP        = 25,
         .baseAttack    = 20,
@@ -6477,9 +6477,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_SYNCHRONIZE, ABILITY_INNER_FOCUS, ABILITY_MAGIC_GUARD },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Abra"),
-        .cryId = CRY_ABRA,
-        .natDexNum = NATIONAL_DEX_ABRA,
+        .speciesName = _("Hopmon"),
+        .cryId = CRY_HOPMON,
+        .natDexNum = NATIONAL_DEX_HOPMON,
         .categoryName = _("Psi"),
         .height = 9,
         .weight = 195,
@@ -6492,22 +6492,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 14,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Abra,
+        .frontPic = gMonFrontPic_Hopmon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Abra,
+        .frontAnimFrames = sAnims_Hopmon,
         .frontAnimId = ANIM_H_VIBRATE,
-        .backPic = gMonBackPic_Abra,
+        .backPic = gMonBackPic_Hopmon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Abra,
-        .shinyPalette = gMonShinyPalette_Abra,
-        .iconSprite = gMonIcon_Abra,
+        .palette = gMonPalette_Hopmon,
+        .shinyPalette = gMonShinyPalette_Hopmon,
+        .iconSprite = gMonIcon_Hopmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Abra)
-        .levelUpLearnset = sAbraLevelUpLearnset,
-        .teachableLearnset = sAbraTeachableLearnset,
+        FOOTPRINT(Hopmon)
+        .levelUpLearnset = sHopmonLevelUpLearnset,
+        .teachableLearnset = sHopmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_KADABRA}),
     },
 
@@ -6697,7 +6697,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sAlakazamFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_ABRA
+#endif //P_FAMILY_HOPMON
 
 #if P_FAMILY_MACHOP
     [SPECIES_MACHOP] =

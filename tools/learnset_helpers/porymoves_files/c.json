@@ -3396,7 +3396,7 @@
     ],
     "TutorMoves": []
   },
-  "BABYMON": {
+  "BABYDMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4690,7 +4690,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "ABRA": {
+  "HOPMON": {
     "LevelMoves": [
       {
         "Level": 1,

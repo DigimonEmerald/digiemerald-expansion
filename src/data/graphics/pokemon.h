@@ -778,13 +778,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Argomon_it[] = INCBIN_U8("graphics/pokemon/argomon_it/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Babymon[] = INCBIN_U32("graphics/pokemon/babymon/anim_front.4bpp.lz");
-    const u32 gMonPalette_Babymon[] = INCBIN_U32("graphics/pokemon/babymon/normal.gbapal.lz");
-    const u32 gMonBackPic_Babymon[] = INCBIN_U32("graphics/pokemon/babymon/back.4bpp.lz");
-    const u32 gMonShinyPalette_Babymon[] = INCBIN_U32("graphics/pokemon/babymon/shiny.gbapal.lz");
-    const u8 gMonIcon_Babymon[] = INCBIN_U8("graphics/pokemon/babymon/icon.4bpp");
+    const u32 gMonFrontPic_Babydmon[] = INCBIN_U32("graphics/pokemon/babydmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Babydmon[] = INCBIN_U32("graphics/pokemon/babydmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Babydmon[] = INCBIN_U32("graphics/pokemon/babydmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Babydmon[] = INCBIN_U32("graphics/pokemon/babydmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Babydmon[] = INCBIN_U8("graphics/pokemon/babydmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Babymon[] = INCBIN_U8("graphics/pokemon/babymon/footprint.1bpp");
+    const u8 gMonFootprint_Babydmon[] = INCBIN_U8("graphics/pokemon/babydmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_ARGOMON_IT
 
@@ -1029,14 +1029,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_GUMMYMON
 
-#if P_FAMILY_ABRA
-    const u32 gMonFrontPic_Abra[] = INCBIN_U32("graphics/pokemon/abra/anim_front.4bpp.lz");
-    const u32 gMonPalette_Abra[] = INCBIN_U32("graphics/pokemon/abra/normal.gbapal.lz");
-    const u32 gMonBackPic_Abra[] = INCBIN_U32("graphics/pokemon/abra/back.4bpp.lz");
-    const u32 gMonShinyPalette_Abra[] = INCBIN_U32("graphics/pokemon/abra/shiny.gbapal.lz");
-    const u8 gMonIcon_Abra[] = INCBIN_U8("graphics/pokemon/abra/icon.4bpp");
+#if P_FAMILY_HOPMON
+    const u32 gMonFrontPic_Hopmon[] = INCBIN_U32("graphics/pokemon/hopmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Hopmon[] = INCBIN_U32("graphics/pokemon/hopmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Hopmon[] = INCBIN_U32("graphics/pokemon/hopmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Hopmon[] = INCBIN_U32("graphics/pokemon/hopmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Hopmon[] = INCBIN_U8("graphics/pokemon/hopmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Abra[] = INCBIN_U8("graphics/pokemon/abra/footprint.1bpp");
+    const u8 gMonFootprint_Hopmon[] = INCBIN_U8("graphics/pokemon/hopmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Kadabra[] = INCBIN_U32("graphics/pokemon/kadabra/anim_front.4bpp.lz");
@@ -1070,7 +1070,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_AlakazamMega[] = INCBIN_U32("graphics/pokemon/alakazam/mega/shiny.gbapal.lz");
     const u8 gMonIcon_AlakazamMega[] = INCBIN_U8("graphics/pokemon/alakazam/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_ABRA
+#endif //P_FAMILY_HOPMON
 
 #if P_FAMILY_MACHOP
     const u32 gMonFrontPic_Machop[] = INCBIN_U32("graphics/pokemon/machop/anim_front.4bpp.lz");
