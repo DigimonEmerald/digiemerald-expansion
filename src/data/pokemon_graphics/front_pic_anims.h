@@ -1385,7 +1385,7 @@ static const union AnimCmd sAnim_Tumblemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Hypno_1[] =
+static const union AnimCmd sAnim_Upamon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -10486,7 +10486,7 @@ SINGLE_ANIMATION(SteelixMega);
 #endif //P_FAMILY_TSUNOMON
 #if P_FAMILY_TUMBLEMON
 SINGLE_ANIMATION(Tumblemon);
-SINGLE_ANIMATION(Hypno);
+SINGLE_ANIMATION(Upamon);
 #endif //P_FAMILY_TUMBLEMON
 #if P_FAMILY_KRABBY
 SINGLE_ANIMATION(Krabby);

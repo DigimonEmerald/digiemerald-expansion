@@ -1549,17 +1549,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Tumblemon[] = INCBIN_U8("graphics/pokemon/tumblemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Hypno[] = INCBIN_U32("graphics/pokemon/hypno/anim_front.4bpp.lz");
-    const u32 gMonPalette_Hypno[] = INCBIN_U32("graphics/pokemon/hypno/normal.gbapal.lz");
-    const u32 gMonBackPic_Hypno[] = INCBIN_U32("graphics/pokemon/hypno/back.4bpp.lz");
-    const u32 gMonShinyPalette_Hypno[] = INCBIN_U32("graphics/pokemon/hypno/shiny.gbapal.lz");
-    const u8 gMonIcon_Hypno[] = INCBIN_U8("graphics/pokemon/hypno/icon.4bpp");
+    const u32 gMonFrontPic_Upamon[] = INCBIN_U32("graphics/pokemon/upamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Upamon[] = INCBIN_U32("graphics/pokemon/upamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Upamon[] = INCBIN_U32("graphics/pokemon/upamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Upamon[] = INCBIN_U32("graphics/pokemon/upamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Upamon[] = INCBIN_U8("graphics/pokemon/upamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Hypno[] = INCBIN_U8("graphics/pokemon/hypno/footprint.1bpp");
+    const u8 gMonFootprint_Upamon[] = INCBIN_U8("graphics/pokemon/upamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_HypnoF[] = INCBIN_U32("graphics/pokemon/hypno/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_HypnoF[] = INCBIN_U32("graphics/pokemon/hypno/backf.4bpp.lz");
+    const u32 gMonFrontPic_UpamonF[] = INCBIN_U32("graphics/pokemon/upamon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_UpamonF[] = INCBIN_U32("graphics/pokemon/upamon/backf.4bpp.lz");
 #endif //P_FAMILY_TUMBLEMON
 
 #if P_FAMILY_KRABBY

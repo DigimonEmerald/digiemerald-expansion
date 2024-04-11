@@ -4949,7 +4949,7 @@ static const u16 sTumblemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sHypnoTeachableLearnset[] = {
+static const u16 sUpamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,

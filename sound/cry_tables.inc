@@ -244,7 +244,7 @@ gCryTable::
 .endif @ P_FAMILY_TSUNOMON
 .if P_FAMILY_TUMBLEMON == TRUE
 	cry Cry_Tumblemon
-	cry Cry_Hypno
+	cry Cry_Upamon
 .endif @ P_FAMILY_TUMBLEMON
 .if P_FAMILY_KRABBY == TRUE
 	cry Cry_Krabby
@@ -2670,7 +2670,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_TSUNOMON
 .if P_FAMILY_TUMBLEMON == TRUE
 	cry_reverse Cry_Tumblemon
-	cry_reverse Cry_Hypno
+	cry_reverse Cry_Upamon
 .endif @ P_FAMILY_TUMBLEMON
 .if P_FAMILY_KRABBY == TRUE
 	cry_reverse Cry_Krabby

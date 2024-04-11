@@ -989,8 +989,8 @@ Cry_Tumblemon::
 	.incbin "sound/direct_sound_samples/cries/tumblemon.bin"
 
 	.align 2
-Cry_Hypno::
-	.incbin "sound/direct_sound_samples/cries/hypno.bin"
+Cry_Upamon::
+	.incbin "sound/direct_sound_samples/cries/upamon.bin"
 .endif @ P_FAMILY_TUMBLEMON
 
 .if P_FAMILY_KRABBY == TRUE

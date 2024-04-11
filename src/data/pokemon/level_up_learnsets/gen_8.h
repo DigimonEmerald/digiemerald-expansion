@@ -2757,7 +2757,7 @@ static const struct LevelUpMove sTumblemonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sHypnoLevelUpLearnset[] = {
+static const struct LevelUpMove sUpamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FUTURE_SIGHT),
     LEVEL_UP_MOVE( 1, MOVE_NASTY_PLOT),
     LEVEL_UP_MOVE( 1, MOVE_SWITCHEROO),

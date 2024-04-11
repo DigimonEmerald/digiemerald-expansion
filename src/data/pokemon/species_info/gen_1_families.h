@@ -9633,10 +9633,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Tumblemon)
         .levelUpLearnset = sTumblemonLevelUpLearnset,
         .teachableLearnset = sTumblemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_HYPNO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_UPAMON}),
     },
 
-    [SPECIES_HYPNO] =
+    [SPECIES_UPAMON] =
     {
         .baseHP        = 85,
         .baseAttack    = 73,
@@ -9655,42 +9655,42 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_INSOMNIA, ABILITY_FOREWARN, ABILITY_INNER_FOCUS },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Hypno"),
-        .cryId = CRY_HYPNO,
-        .natDexNum = NATIONAL_DEX_HYPNO,
+        .speciesName = _("Upamon"),
+        .cryId = CRY_UPAMON,
+        .natDexNum = NATIONAL_DEX_UPAMON,
         .categoryName = _("Hypnosis"),
         .height = 16,
         .weight = 756,
         .description = COMPOUND_STRING(
             "The arcing movement and glitter of the\n"
-            "pendulum in a Hypno's hand lull the foe\n"
+            "pendulum in a Upamon's hand lull the foe\n"
             "into deep hypnosis. While searching for\n"
             "prey, it polishes the pendulum."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Hypno,
-        .frontPicFemale = gMonFrontPic_HypnoF,
+        .frontPic = gMonFrontPic_Upamon,
+        .frontPicFemale = gMonFrontPic_UpamonF,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_Hypno,
+        .frontAnimFrames = sAnims_Upamon,
         .frontAnimId = ANIM_GROW_VIBRATE,
         .frontAnimDelay = 40,
-        .backPic = gMonBackPic_Hypno,
-        .backPicFemale = gMonBackPic_HypnoF,
+        .backPic = gMonBackPic_Upamon,
+        .backPicFemale = gMonBackPic_UpamonF,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Hypno,
-        .shinyPalette = gMonShinyPalette_Hypno,
-        .iconSprite = gMonIcon_Hypno,
+        .palette = gMonPalette_Upamon,
+        .shinyPalette = gMonShinyPalette_Upamon,
+        .iconSprite = gMonIcon_Upamon,
         .iconPalIndex = 2,
-        FOOTPRINT(Hypno)
-        .levelUpLearnset = sHypnoLevelUpLearnset,
-        .teachableLearnset = sHypnoTeachableLearnset,
+        FOOTPRINT(Upamon)
+        .levelUpLearnset = sUpamonLevelUpLearnset,
+        .teachableLearnset = sUpamonTeachableLearnset,
     },
 #endif //P_FAMILY_TUMBLEMON
 
