@@ -931,13 +931,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Demiveemon[] = INCBIN_U8("graphics/pokemon/demiveemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Primeape[] = INCBIN_U32("graphics/pokemon/primeape/anim_front.4bpp.lz");
-    const u32 gMonPalette_Primeape[] = INCBIN_U32("graphics/pokemon/primeape/normal.gbapal.lz");
-    const u32 gMonBackPic_Primeape[] = INCBIN_U32("graphics/pokemon/primeape/back.4bpp.lz");
-    const u32 gMonShinyPalette_Primeape[] = INCBIN_U32("graphics/pokemon/primeape/shiny.gbapal.lz");
-    const u8 gMonIcon_Primeape[] = INCBIN_U8("graphics/pokemon/primeape/icon.4bpp");
+    const u32 gMonFrontPic_Dorimon[] = INCBIN_U32("graphics/pokemon/dorimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Dorimon[] = INCBIN_U32("graphics/pokemon/dorimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Dorimon[] = INCBIN_U32("graphics/pokemon/dorimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Dorimon[] = INCBIN_U32("graphics/pokemon/dorimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Dorimon[] = INCBIN_U8("graphics/pokemon/dorimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Primeape[] = INCBIN_U8("graphics/pokemon/primeape/footprint.1bpp");
+    const u8 gMonFootprint_Dorimon[] = INCBIN_U8("graphics/pokemon/dorimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_9_CROSS_EVOS

@@ -2758,7 +2758,7 @@ static const u16 sDemiveemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sPrimeapeTeachableLearnset[] = {
+static const u16 sDorimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,

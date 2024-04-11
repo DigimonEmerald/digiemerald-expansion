@@ -135,7 +135,7 @@ gCryTable::
 .endif @ P_FAMILY_CHICCHIMON
 .if P_FAMILY_DEMIVEEMON == TRUE
 	cry Cry_Demiveemon
-	cry Cry_Primeape
+	cry Cry_Dorimon
 .if P_GEN_9_CROSS_EVOS == TRUE
 	cry Cry_Annihilape
 .endif @ P_GEN_9_CROSS_EVOS
@@ -2561,7 +2561,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_CHICCHIMON
 .if P_FAMILY_DEMIVEEMON == TRUE
 	cry_reverse Cry_Demiveemon
-	cry_reverse Cry_Primeape
+	cry_reverse Cry_Dorimon
 .if P_GEN_9_CROSS_EVOS == TRUE
 	cry_reverse Cry_Annihilape
 .endif @ P_GEN_9_CROSS_EVOS

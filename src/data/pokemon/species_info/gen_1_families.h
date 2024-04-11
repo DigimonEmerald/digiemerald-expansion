@@ -5874,10 +5874,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Demiveemon)
         .levelUpLearnset = sDemiveemonLevelUpLearnset,
         .teachableLearnset = sDemiveemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PRIMEAPE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_DORIMON}),
     },
 
-    [SPECIES_PRIMEAPE] =
+    [SPECIES_DORIMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 105,
@@ -5896,9 +5896,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_VITAL_SPIRIT, ABILITY_ANGER_POINT, ABILITY_DEFIANT },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Primeape"),
-        .cryId = CRY_PRIMEAPE,
-        .natDexNum = NATIONAL_DEX_PRIMEAPE,
+        .speciesName = _("Dorimon"),
+        .cryId = CRY_DORIMON,
+        .natDexNum = NATIONAL_DEX_DORIMON,
         .categoryName = _("Pig Monkey"),
         .height = 10,
         .weight = 320,
@@ -5911,22 +5911,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Primeape,
+        .frontPic = gMonFrontPic_Dorimon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Primeape,
+        .frontAnimFrames = sAnims_Dorimon,
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
-        .backPic = gMonBackPic_Primeape,
+        .backPic = gMonBackPic_Dorimon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Primeape,
-        .shinyPalette = gMonShinyPalette_Primeape,
-        .iconSprite = gMonIcon_Primeape,
+        .palette = gMonPalette_Dorimon,
+        .shinyPalette = gMonShinyPalette_Dorimon,
+        .iconSprite = gMonIcon_Dorimon,
         .iconPalIndex = 2,
-        FOOTPRINT(Primeape)
-        .levelUpLearnset = sPrimeapeLevelUpLearnset,
-        .teachableLearnset = sPrimeapeTeachableLearnset,
+        FOOTPRINT(Dorimon)
+        .levelUpLearnset = sDorimonLevelUpLearnset,
+        .teachableLearnset = sDorimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL_MOVE_TWENTY_TIMES, MOVE_RAGE_FIST, SPECIES_ANNIHILAPE}),
     },
 

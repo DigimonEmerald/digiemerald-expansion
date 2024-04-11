@@ -1300,7 +1300,7 @@ static const struct LevelUpMove sDemiveemonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sPrimeapeLevelUpLearnset[] = {
+static const struct LevelUpMove sDorimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FLING),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),

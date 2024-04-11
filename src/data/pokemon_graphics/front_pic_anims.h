@@ -855,7 +855,7 @@ static const union AnimCmd sAnim_Demiveemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Primeape_1[] =
+static const union AnimCmd sAnim_Dorimon_1[] =
 {
     ANIMCMD_FRAME(0, 14),
     ANIMCMD_FRAME(1, 14),
@@ -10349,7 +10349,7 @@ SINGLE_ANIMATION(Demmeramon);
 #endif //P_FAMILY_CHICCHIMON
 #if P_FAMILY_DEMIVEEMON
 SINGLE_ANIMATION(Demiveemon);
-SINGLE_ANIMATION(Primeape);
+SINGLE_ANIMATION(Dorimon);
 #if P_GEN_9_CROSS_EVOS
 SINGLE_ANIMATION(Annihilape);
 #endif //P_GEN_9_CROSS_EVOS
