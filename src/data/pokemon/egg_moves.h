@@ -839,8 +839,8 @@ const u16 gEggMoves[] = {
         MOVE_ALLY_SWITCH),
 #endif //P_FAMILY_VIXIMON
 
-#if P_FAMILY_EXEGGCUTE
-    egg_moves(EXEGGCUTE,
+#if P_FAMILY_YOKOMON
+    egg_moves(YOKOMON,
         MOVE_SYNTHESIS,
         MOVE_MOONLIGHT,
         MOVE_ANCIENT_POWER,
@@ -855,7 +855,7 @@ const u16 gEggMoves[] = {
         MOVE_NATURAL_GIFT,
         MOVE_BLOCK,
         MOVE_GRASSY_TERRAIN),
-#endif //P_FAMILY_EXEGGCUTE
+#endif //P_FAMILY_YOKOMON
 
 #if P_FAMILY_CUBONE
     egg_moves(CUBONE,

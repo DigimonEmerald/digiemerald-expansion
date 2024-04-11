@@ -5177,8 +5177,8 @@ static const u16 sYaamonHisuianTeachableLearnset[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_XIAOMON
 
-#if P_FAMILY_EXEGGCUTE
-static const u16 sExeggcuteTeachableLearnset[] = {
+#if P_FAMILY_YOKOMON
+static const u16 sYokomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_DOUBLE_TEAM,
@@ -5283,7 +5283,7 @@ static const u16 sExeggutorAlolanTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_EXEGGCUTE
+#endif //P_FAMILY_YOKOMON
 
 #if P_FAMILY_CUBONE
 static const u16 sCuboneTeachableLearnset[] = {

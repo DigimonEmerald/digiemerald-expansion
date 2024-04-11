@@ -254,10 +254,10 @@ gCryTable::
 	cry Cry_Xiaomon
 	cry Cry_Yaamon
 .endif @ P_FAMILY_XIAOMON
-.if P_FAMILY_EXEGGCUTE == TRUE
-	cry Cry_Exeggcute
+.if P_FAMILY_YOKOMON == TRUE
+	cry Cry_Yokomon
 	cry Cry_Exeggutor
-.endif @ P_FAMILY_EXEGGCUTE
+.endif @ P_FAMILY_YOKOMON
 .if P_FAMILY_CUBONE == TRUE
 	cry Cry_Cubone
 	cry Cry_Marowak
@@ -2680,10 +2680,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Xiaomon
 	cry_reverse Cry_Yaamon
 .endif @ P_FAMILY_XIAOMON
-.if P_FAMILY_EXEGGCUTE == TRUE
-	cry_reverse Cry_Exeggcute
+.if P_FAMILY_YOKOMON == TRUE
+	cry_reverse Cry_Yokomon
 	cry_reverse Cry_Exeggutor
-.endif @ P_FAMILY_EXEGGCUTE
+.endif @ P_FAMILY_YOKOMON
 .if P_FAMILY_CUBONE == TRUE
 	cry_reverse Cry_Cubone
 	cry_reverse Cry_Marowak

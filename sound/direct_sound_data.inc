@@ -1013,15 +1013,15 @@ Cry_Yaamon::
 	.incbin "sound/direct_sound_samples/cries/yaamon.bin"
 .endif @ P_FAMILY_XIAOMON
 
-.if P_FAMILY_EXEGGCUTE == TRUE
+.if P_FAMILY_YOKOMON == TRUE
 	.align 2
-Cry_Exeggcute::
-	.incbin "sound/direct_sound_samples/cries/exeggcute.bin"
+Cry_Yokomon::
+	.incbin "sound/direct_sound_samples/cries/yokomon.bin"
 
 	.align 2
 Cry_Exeggutor::
 	.incbin "sound/direct_sound_samples/cries/exeggutor.bin"
-.endif @ P_FAMILY_EXEGGCUTE
+.endif @ P_FAMILY_YOKOMON
 
 .if P_FAMILY_CUBONE == TRUE
 	.align 2

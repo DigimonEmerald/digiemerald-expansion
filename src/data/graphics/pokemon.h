@@ -1624,14 +1624,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_XIAOMON
 
-#if P_FAMILY_EXEGGCUTE
-    const u32 gMonFrontPic_Exeggcute[] = INCBIN_U32("graphics/pokemon/exeggcute/anim_front.4bpp.lz");
-    const u32 gMonPalette_Exeggcute[] = INCBIN_U32("graphics/pokemon/exeggcute/normal.gbapal.lz");
-    const u32 gMonBackPic_Exeggcute[] = INCBIN_U32("graphics/pokemon/exeggcute/back.4bpp.lz");
-    const u32 gMonShinyPalette_Exeggcute[] = INCBIN_U32("graphics/pokemon/exeggcute/shiny.gbapal.lz");
-    const u8 gMonIcon_Exeggcute[] = INCBIN_U8("graphics/pokemon/exeggcute/icon.4bpp");
+#if P_FAMILY_YOKOMON
+    const u32 gMonFrontPic_Yokomon[] = INCBIN_U32("graphics/pokemon/yokomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Yokomon[] = INCBIN_U32("graphics/pokemon/yokomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Yokomon[] = INCBIN_U32("graphics/pokemon/yokomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Yokomon[] = INCBIN_U32("graphics/pokemon/yokomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Yokomon[] = INCBIN_U8("graphics/pokemon/yokomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Exeggcute[] = INCBIN_U8("graphics/pokemon/exeggcute/footprint.1bpp");
+    const u8 gMonFootprint_Yokomon[] = INCBIN_U8("graphics/pokemon/yokomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Exeggutor[] = INCBIN_U32("graphics/pokemon/exeggutor/anim_front.4bpp.lz");
@@ -1650,7 +1650,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_ExeggutorAlolan[] = INCBIN_U32("graphics/pokemon/exeggutor/alolan/shiny.gbapal.lz");
     const u8 gMonIcon_ExeggutorAlolan[] = INCBIN_U8("graphics/pokemon/exeggutor/alolan/icon.4bpp");
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_EXEGGCUTE
+#endif //P_FAMILY_YOKOMON
 
 #if P_FAMILY_CUBONE
     const u32 gMonFrontPic_Cubone[] = INCBIN_U32("graphics/pokemon/cubone/anim_front.4bpp.lz");

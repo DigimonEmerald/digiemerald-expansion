@@ -10091,8 +10091,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_XIAOMON
 
-#if P_FAMILY_EXEGGCUTE
-    [SPECIES_EXEGGCUTE] =
+#if P_FAMILY_YOKOMON
+    [SPECIES_YOKOMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 40,
@@ -10112,9 +10112,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_NONE, ABILITY_HARVEST },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Exeggcute"),
-        .cryId = CRY_EXEGGCUTE,
-        .natDexNum = NATIONAL_DEX_EXEGGCUTE,
+        .speciesName = _("Yokomon"),
+        .cryId = CRY_YOKOMON,
+        .natDexNum = NATIONAL_DEX_YOKOMON,
         .categoryName = _("Egg"),
         .height = 4,
         .weight = 25,
@@ -10127,22 +10127,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = -4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Exeggcute,
+        .frontPic = gMonFrontPic_Yokomon,
         .frontPicSize = MON_COORDS_SIZE(56, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Exeggcute,
+        .frontAnimFrames = sAnims_Yokomon,
         .frontAnimId = ANIM_H_SLIDE_SLOW,
-        .backPic = gMonBackPic_Exeggcute,
+        .backPic = gMonBackPic_Yokomon,
         .backPicSize = MON_COORDS_SIZE(64, 32),
         .backPicYOffset = 18,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Exeggcute,
-        .shinyPalette = gMonShinyPalette_Exeggcute,
-        .iconSprite = gMonIcon_Exeggcute,
+        .palette = gMonPalette_Yokomon,
+        .shinyPalette = gMonShinyPalette_Yokomon,
+        .iconSprite = gMonIcon_Yokomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Exeggcute)
-        .levelUpLearnset = sExeggcuteLevelUpLearnset,
-        .teachableLearnset = sExeggcuteTeachableLearnset,
+        FOOTPRINT(Yokomon)
+        .levelUpLearnset = sYokomonLevelUpLearnset,
+        .teachableLearnset = sYokomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_EXEGGUTOR},
                                 {EVO_NONE, 0, SPECIES_EXEGGUTOR_ALOLAN}),
     },
@@ -10186,7 +10186,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "Originally from the tropics, Exeggutor's\n"
             "heads grow larger from exposure to strong\n"
             "sunlight. It is said that when the heads\n"
-            "fall, they group to form an Exeggcute."),
+            "fall, they group to form an Yokomon."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 309,
@@ -10265,7 +10265,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sExeggutorFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_EXEGGCUTE
+#endif //P_FAMILY_YOKOMON
 
 #if P_FAMILY_CUBONE
     [SPECIES_CUBONE] =

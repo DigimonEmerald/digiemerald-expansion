@@ -310,13 +310,13 @@ static const u16 sYaamonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_XIAOMON
 
-#if P_FAMILY_EXEGGCUTE
+#if P_FAMILY_YOKOMON
 static const u16 sExeggutorFormSpeciesIdTable[] = {
     SPECIES_EXEGGUTOR,
     SPECIES_EXEGGUTOR_ALOLAN,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_EXEGGCUTE
+#endif //P_FAMILY_YOKOMON
 
 #if P_FAMILY_CUBONE
 static const u16 sMarowakFormSpeciesIdTable[] = {

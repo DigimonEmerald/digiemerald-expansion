@@ -1448,8 +1448,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(YaamonHisuian);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_XIAOMON
 
-#if P_FAMILY_EXEGGCUTE
-static const union AnimCmd sAnim_Exeggcute_1[] =
+#if P_FAMILY_YOKOMON
+static const union AnimCmd sAnim_Yokomon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -1473,7 +1473,7 @@ static const union AnimCmd sAnim_Exeggutor_1[] =
 #if P_ALOLAN_FORMS
 PLACEHOLDER_ANIM_TWO_FRAMES(ExeggutorAlolan);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_EXEGGCUTE
+#endif //P_FAMILY_YOKOMON
 
 #if P_FAMILY_CUBONE
 static const union AnimCmd sAnim_Cubone_1[] =
@@ -10503,13 +10503,13 @@ SINGLE_ANIMATION(XiaomonHisuian);
 SINGLE_ANIMATION(YaamonHisuian);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_XIAOMON
-#if P_FAMILY_EXEGGCUTE
-SINGLE_ANIMATION(Exeggcute);
+#if P_FAMILY_YOKOMON
+SINGLE_ANIMATION(Yokomon);
 SINGLE_ANIMATION(Exeggutor);
 #if P_ALOLAN_FORMS
 SINGLE_ANIMATION(ExeggutorAlolan);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_EXEGGCUTE
+#endif //P_FAMILY_YOKOMON
 #if P_FAMILY_CUBONE
 SINGLE_ANIMATION(Cubone);
 SINGLE_ANIMATION(Marowak);
