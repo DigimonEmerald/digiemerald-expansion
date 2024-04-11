@@ -11,7 +11,7 @@ const u8 gPichuPokedexText[] = _(
     "accidentally. It gets better at holding\n"
     "power as it grows older.");
 
-const u8 gPikachuPokedexText[] = _(
+const u8 gPetitmonPokedexText[] = _(
     "It stores electricity in the electric sacs\n"
     "on its cheeks. When it releases pent-up\n"
     "energy in a burst, the electric power is\n"

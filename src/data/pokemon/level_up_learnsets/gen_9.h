@@ -486,7 +486,7 @@ static const struct LevelUpMove sPaomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_PAFUMON
 
-#if P_FAMILY_PIKACHU
+#if P_FAMILY_PETITMON
 #if P_GEN_2_CROSS_EVOS
 static const struct LevelUpMove sPichuLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
@@ -500,7 +500,7 @@ static const struct LevelUpMove sPichuLevelUpLearnset[] = {
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const struct LevelUpMove sPikachuLevelUpLearnset[] = {
+static const struct LevelUpMove sPetitmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_NUZZLE),
     LEVEL_UP_MOVE( 1, MOVE_NASTY_PLOT),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
@@ -575,7 +575,7 @@ static const struct LevelUpMove sRaichuAlolanLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_PIKACHU
+#endif //P_FAMILY_PETITMON
 
 #if P_FAMILY_SANDSHREW
 static const struct LevelUpMove sSandshrewLevelUpLearnset[] = {

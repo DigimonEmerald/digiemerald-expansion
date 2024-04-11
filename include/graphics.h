@@ -3146,7 +3146,7 @@ extern const u16 gSlotMachineReelTimeMachine_Pal[];
 extern const u16 gSlotMachineMisc_Pal[];
 extern const u16 gSlotMachineReelTimeExplosion_Pal[];
 extern const u16 gSlotMachineDigitalDisplay_Pal[];
-extern const u16 gSlotMachineReelTimePikachu_Pal[];
+extern const u16 gSlotMachineReelTimePetitmon_Pal[];
 
 extern const u32 gBattleAnimBgTilemap_Sandstorm[];
 extern const u32 gBattleAnimBgImage_Sandstorm[];

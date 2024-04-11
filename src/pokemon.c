@@ -288,7 +288,7 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(VULPIX),
     HOENN_TO_NATIONAL(NINETALES),
     HOENN_TO_NATIONAL(PICHU),
-    HOENN_TO_NATIONAL(PIKACHU),
+    HOENN_TO_NATIONAL(PETITMON),
     HOENN_TO_NATIONAL(RAICHU),
     HOENN_TO_NATIONAL(PSYDUCK),
     HOENN_TO_NATIONAL(GOLDUCK),
@@ -4495,7 +4495,7 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
         break;
     }
 
-    // Pikachu, Meowth, and Eevee cannot evolve if they have the
+    // Petitmon, Meowth, and Eevee cannot evolve if they have the
     // Gigantamax Factor. We assume that is because their evolutions
     // do not have a Gigantamax Form.
     if (GetMonData(mon, MON_DATA_GIGANTAMAX_FACTOR, NULL)

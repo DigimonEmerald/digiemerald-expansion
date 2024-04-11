@@ -16189,7 +16189,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = COMPOUND_STRING("Pika Papow"),
         .description = COMPOUND_STRING(
-            "Pikachu's love increases its\n"
+            "Petitmon's love increases its\n"
             "power. It never misses."),
         .effect = EFFECT_RETURN,
         .power = 1,

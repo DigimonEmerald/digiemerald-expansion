@@ -136,7 +136,7 @@ const u16 gEggMoves[] = {
         MOVE_SNATCH),
 #endif //P_FAMILY_PAFUMON
 
-#if P_FAMILY_PIKACHU
+#if P_FAMILY_PETITMON
 #if P_GEN_2_CROSS_EVOS
     egg_moves(PICHU,
         MOVE_REVERSAL,
@@ -156,7 +156,7 @@ const u16 gEggMoves[] = {
         MOVE_DISARMING_VOICE,
         MOVE_ELECTRIC_TERRAIN),
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_PIKACHU
+#endif //P_FAMILY_PETITMON
 
 #if P_FAMILY_SANDSHREW
     egg_moves(SANDSHREW,

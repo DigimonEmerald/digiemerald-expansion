@@ -205,7 +205,7 @@ SINGLE_BATTLE_TEST("Teatime triggers Lightning Rod if it has been affected by El
     PARAMETRIZE { move = MOVE_PLASMA_FISTS; item = ITEM_NONE; }
 
     GIVEN {
-        PLAYER(SPECIES_PIKACHU) { Ability(ABILITY_LIGHTNING_ROD); Item(item); }
+        PLAYER(SPECIES_PETITMON) { Ability(ABILITY_LIGHTNING_ROD); Item(item); }
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_LIECHI_BERRY); }
     } WHEN {
         TURN {
@@ -218,14 +218,14 @@ SINGLE_BATTLE_TEST("Teatime triggers Lightning Rod if it has been affected by El
         if (shouldTriggerAbility)
         {
             ABILITY_POPUP(player, ABILITY_LIGHTNING_ROD);
-            MESSAGE("Pikachu's Sp. Atk rose!");
-            NOT MESSAGE("Using Liechi Berry, the Attack of Pikachu rose!");
+            MESSAGE("Petitmon's Sp. Atk rose!");
+            NOT MESSAGE("Using Liechi Berry, the Attack of Petitmon rose!");
         } else {
             NONE_OF {
                 ABILITY_POPUP(player, ABILITY_LIGHTNING_ROD);
-                MESSAGE("Pikachu's Sp. Atk rose!");
+                MESSAGE("Petitmon's Sp. Atk rose!");
             }
-            MESSAGE("Using Liechi Berry, the Attack of Pikachu rose!");
+            MESSAGE("Using Liechi Berry, the Attack of Petitmon rose!");
         }
         MESSAGE("Using Liechi Berry, the Attack of Foe Wobbuffet rose!");
     }

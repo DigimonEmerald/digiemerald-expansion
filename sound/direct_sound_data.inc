@@ -534,7 +534,7 @@ Cry_Paomon::
 	.incbin "sound/direct_sound_samples/cries/paomon.bin"
 .endif @ P_FAMILY_PAFUMON
 
-.if P_FAMILY_PIKACHU == TRUE
+.if P_FAMILY_PETITMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
 Cry_Pichu::
@@ -542,13 +542,13 @@ Cry_Pichu::
 .endif @ P_GEN_2_CROSS_EVOS
 
 	.align 2
-Cry_Pikachu::
-	.incbin "sound/direct_sound_samples/cries/pikachu.bin"
+Cry_Petitmon::
+	.incbin "sound/direct_sound_samples/cries/petitmon.bin"
 
 	.align 2
 Cry_Raichu::
 	.incbin "sound/direct_sound_samples/cries/raichu.bin"
-.endif @ P_FAMILY_PIKACHU
+.endif @ P_FAMILY_PETITMON
 
 .if P_FAMILY_SANDSHREW == TRUE
 	.align 2

@@ -2702,7 +2702,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .weight = 180,
         .description = COMPOUND_STRING(
             "This Cramorant has accidentally\n"
-            "gotten a Pikachu lodged in its gullet.\n"
+            "gotten a Petitmon lodged in its gullet.\n"
             "Cramorant is choking a little, but it\n"
             "isn't really bothered."),
         .pokemonScale = 366,

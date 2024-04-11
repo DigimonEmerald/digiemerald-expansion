@@ -3,7 +3,7 @@
 
 // Modifying the latest generation WILL change the saveblock due to Dex flags and will require a new save file.
 // Generations of Pokémon are defined by the first member introduced,
-// so Pikachu depends on the Gen 1 setting despite Pichu being the lowest member of the evolution tree.
+// so Petitmon depends on the Gen 1 setting despite Pichu being the lowest member of the evolution tree.
 // Eg: If P_GEN_2_POKEMON is set to FALSE, all members of the Sneasel Family will be disabled
 // (Sneasel + Hisuian, Weavile and Sneasler).
 #define P_GEN_1_POKEMON                  TRUE // Generation 1 Pokémon (RGBY)
@@ -37,9 +37,9 @@
 #define P_PALDEAN_FORMS                  P_REGIONAL_FORMS
 
 // Big groups of forms that aren't always desired when choosing families.
-#define P_PIKACHU_EXTRA_FORMS            TRUE
-#define P_COSPLAY_PIKACHU_FORMS          P_PIKACHU_EXTRA_FORMS
-#define P_CAP_PIKACHU_FORMS              P_PIKACHU_EXTRA_FORMS
+#define P_PETITMON_EXTRA_FORMS            TRUE
+#define P_COSPLAY_PETITMON_FORMS          P_PETITMON_EXTRA_FORMS
+#define P_CAP_PETITMON_FORMS              P_PETITMON_EXTRA_FORMS
 
 // Cross-generation evolutions. Includes pre-evolutions.
 #define P_CROSS_GENERATION_EVOS          TRUE
@@ -62,7 +62,7 @@
 #define P_FAMILY_CHOROMON                 P_GEN_1_POKEMON
 #define P_FAMILY_NYOKIMON                 P_GEN_1_POKEMON
 #define P_FAMILY_PAFUMON                   P_GEN_1_POKEMON
-#define P_FAMILY_PIKACHU                 P_GEN_1_POKEMON
+#define P_FAMILY_PETITMON                 P_GEN_1_POKEMON
 #define P_FAMILY_SANDSHREW               P_GEN_1_POKEMON
 #define P_FAMILY_NIDORAN                 P_GEN_1_POKEMON
 #define P_FAMILY_CLEFAIRY                P_GEN_1_POKEMON

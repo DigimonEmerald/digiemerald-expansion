@@ -904,7 +904,7 @@ static const u16 sPaomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_PAFUMON
 
-#if P_FAMILY_PIKACHU
+#if P_FAMILY_PETITMON
 #if P_GEN_2_CROSS_EVOS
 static const u16 sPichuTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -942,7 +942,7 @@ static const u16 sPichuTeachableLearnset[] = {
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const u16 sPikachuTeachableLearnset[] = {
+static const u16 sPetitmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
@@ -1070,7 +1070,7 @@ static const u16 sRaichuAlolanTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_PIKACHU
+#endif //P_FAMILY_PETITMON
 
 #if P_FAMILY_SANDSHREW
 static const u16 sSandshrewTeachableLearnset[] = {

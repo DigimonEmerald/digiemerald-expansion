@@ -58,13 +58,13 @@ gCryTable::
 	cry Cry_Pafumon
 	cry Cry_Paomon
 .endif @ P_FAMILY_PAFUMON
-.if P_FAMILY_PIKACHU == TRUE
+.if P_FAMILY_PETITMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Pichu
 .endif @ P_GEN_2_CROSS_EVOS
-	cry Cry_Pikachu
+	cry Cry_Petitmon
 	cry Cry_Raichu
-.endif @ P_FAMILY_PIKACHU
+.endif @ P_FAMILY_PETITMON
 .if P_FAMILY_SANDSHREW == TRUE
 	cry Cry_Sandshrew
 	cry Cry_Sandslash
@@ -2484,13 +2484,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Pafumon
 	cry_reverse Cry_Paomon
 .endif @ P_FAMILY_PAFUMON
-.if P_FAMILY_PIKACHU == TRUE
+.if P_FAMILY_PETITMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Pichu
 .endif @ P_GEN_2_CROSS_EVOS
-	cry_reverse Cry_Pikachu
+	cry_reverse Cry_Petitmon
 	cry_reverse Cry_Raichu
-.endif @ P_FAMILY_PIKACHU
+.endif @ P_FAMILY_PETITMON
 .if P_FAMILY_SANDSHREW == TRUE
 	cry_reverse Cry_Sandshrew
 	cry_reverse Cry_Sandslash

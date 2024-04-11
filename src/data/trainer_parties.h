@@ -3808,7 +3808,7 @@ static const struct TrainerMon sParty_Victoria[] = {
 static const struct TrainerMon sParty_Vanessa[] = {
     {
     .lvl = 30,
-    .species = SPECIES_PIKACHU,
+    .species = SPECIES_PETITMON,
     .heldItem = ITEM_ORAN_BERRY
     }
 };
@@ -10015,7 +10015,7 @@ static const struct TrainerMon sParty_Wattson3[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 39,
-    .species = SPECIES_PIKACHU,
+    .species = SPECIES_PETITMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_THUNDER, MOVE_SLAM, MOVE_RAIN_DANCE, MOVE_SHOCK_WAVE}
     },

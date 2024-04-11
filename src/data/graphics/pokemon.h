@@ -345,7 +345,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_PAFUMON
 
-#if P_FAMILY_PIKACHU
+#if P_FAMILY_PETITMON
 #if P_GEN_2_CROSS_EVOS
     const u32 gMonFrontPic_Pichu[] = INCBIN_U32("graphics/pokemon/pichu/anim_front.4bpp.lz");
     const u32 gMonPalette_Pichu[] = INCBIN_U32("graphics/pokemon/pichu/normal.gbapal.lz");
@@ -363,120 +363,120 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonIcon_PichuSpikyEared[] = INCBIN_U8("graphics/pokemon/pichu/spiky_eared/icon.4bpp");
 #endif //P_GEN_2_CROSS_EVOS
 
-    const u32 gMonFrontPic_Pikachu[] = INCBIN_U32("graphics/pokemon/pikachu/anim_front.4bpp.lz");
-    const u32 gMonPalette_Pikachu[] = INCBIN_U32("graphics/pokemon/pikachu/normal.gbapal.lz");
-    const u32 gMonBackPic_Pikachu[] = INCBIN_U32("graphics/pokemon/pikachu/back.4bpp.lz");
-    const u32 gMonShinyPalette_Pikachu[] = INCBIN_U32("graphics/pokemon/pikachu/shiny.gbapal.lz");
-    const u8 gMonIcon_Pikachu[] = INCBIN_U8("graphics/pokemon/pikachu/icon.4bpp");
+    const u32 gMonFrontPic_Petitmon[] = INCBIN_U32("graphics/pokemon/petitmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Petitmon[] = INCBIN_U32("graphics/pokemon/petitmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Petitmon[] = INCBIN_U32("graphics/pokemon/petitmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Petitmon[] = INCBIN_U32("graphics/pokemon/petitmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Petitmon[] = INCBIN_U8("graphics/pokemon/petitmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Pikachu[] = INCBIN_U8("graphics/pokemon/pikachu/footprint.1bpp");
+    const u8 gMonFootprint_Petitmon[] = INCBIN_U8("graphics/pokemon/petitmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_PikachuF[] = INCBIN_U32("graphics/pokemon/pikachu/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_PikachuF[] = INCBIN_U32("graphics/pokemon/pikachu/backf.4bpp.lz");
+    const u32 gMonFrontPic_PetitmonF[] = INCBIN_U32("graphics/pokemon/petitmon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_PetitmonF[] = INCBIN_U32("graphics/pokemon/petitmon/backf.4bpp.lz");
 #if P_CUSTOM_GENDER_DIFF_ICONS
-    const u8 gMonIcon_PikachuF[] = INCBIN_U8("graphics/pokemon/pikachu/iconf.4bpp");
+    const u8 gMonIcon_PetitmonF[] = INCBIN_U8("graphics/pokemon/petitmon/iconf.4bpp");
 #endif
 
-#if P_COSPLAY_PIKACHU_FORMS
-    const u32 gMonFrontPic_PikachuCosplay[] = INCBIN_U32("graphics/pokemon/pikachu/cosplay/front.4bpp.lz");
-    const u32 gMonPalette_PikachuCosplay[] = INCBIN_U32("graphics/pokemon/pikachu/cosplay/normal.gbapal.lz");
-    const u32 gMonBackPic_PikachuCosplay[] = INCBIN_U32("graphics/pokemon/pikachu/cosplay/back.4bpp.lz");
-    const u32 gMonShinyPalette_PikachuCosplay[] = INCBIN_U32("graphics/pokemon/pikachu/cosplay/shiny.gbapal.lz");
-    const u8 gMonIcon_PikachuCosplay[] = INCBIN_U8("graphics/pokemon/pikachu/cosplay/icon.4bpp");
+#if P_COSPLAY_PETITMON_FORMS
+    const u32 gMonFrontPic_PetitmonCosplay[] = INCBIN_U32("graphics/pokemon/petitmon/cosplay/front.4bpp.lz");
+    const u32 gMonPalette_PetitmonCosplay[] = INCBIN_U32("graphics/pokemon/petitmon/cosplay/normal.gbapal.lz");
+    const u32 gMonBackPic_PetitmonCosplay[] = INCBIN_U32("graphics/pokemon/petitmon/cosplay/back.4bpp.lz");
+    const u32 gMonShinyPalette_PetitmonCosplay[] = INCBIN_U32("graphics/pokemon/petitmon/cosplay/shiny.gbapal.lz");
+    const u8 gMonIcon_PetitmonCosplay[] = INCBIN_U8("graphics/pokemon/petitmon/cosplay/icon.4bpp");
 
-    const u32 gMonFrontPic_PikachuRockStar[] = INCBIN_U32("graphics/pokemon/pikachu/rock_star/front.4bpp.lz");
-    const u32 gMonPalette_PikachuRockStar[] = INCBIN_U32("graphics/pokemon/pikachu/rock_star/normal.gbapal.lz");
-    const u32 gMonBackPic_PikachuRockStar[] = INCBIN_U32("graphics/pokemon/pikachu/rock_star/back.4bpp.lz");
-    const u32 gMonShinyPalette_PikachuRockStar[] = INCBIN_U32("graphics/pokemon/pikachu/rock_star/shiny.gbapal.lz");
-    const u8 gMonIcon_PikachuRockStar[] = INCBIN_U8("graphics/pokemon/pikachu/rock_star/icon.4bpp");
+    const u32 gMonFrontPic_PetitmonRockStar[] = INCBIN_U32("graphics/pokemon/petitmon/rock_star/front.4bpp.lz");
+    const u32 gMonPalette_PetitmonRockStar[] = INCBIN_U32("graphics/pokemon/petitmon/rock_star/normal.gbapal.lz");
+    const u32 gMonBackPic_PetitmonRockStar[] = INCBIN_U32("graphics/pokemon/petitmon/rock_star/back.4bpp.lz");
+    const u32 gMonShinyPalette_PetitmonRockStar[] = INCBIN_U32("graphics/pokemon/petitmon/rock_star/shiny.gbapal.lz");
+    const u8 gMonIcon_PetitmonRockStar[] = INCBIN_U8("graphics/pokemon/petitmon/rock_star/icon.4bpp");
 
-    const u32 gMonFrontPic_PikachuBelle[] = INCBIN_U32("graphics/pokemon/pikachu/belle/front.4bpp.lz");
-    const u32 gMonPalette_PikachuBelle[] = INCBIN_U32("graphics/pokemon/pikachu/belle/normal.gbapal.lz");
-    const u32 gMonBackPic_PikachuBelle[] = INCBIN_U32("graphics/pokemon/pikachu/belle/back.4bpp.lz");
-    const u32 gMonShinyPalette_PikachuBelle[] = INCBIN_U32("graphics/pokemon/pikachu/belle/shiny.gbapal.lz");
-    const u8 gMonIcon_PikachuBelle[] = INCBIN_U8("graphics/pokemon/pikachu/belle/icon.4bpp");
+    const u32 gMonFrontPic_PetitmonBelle[] = INCBIN_U32("graphics/pokemon/petitmon/belle/front.4bpp.lz");
+    const u32 gMonPalette_PetitmonBelle[] = INCBIN_U32("graphics/pokemon/petitmon/belle/normal.gbapal.lz");
+    const u32 gMonBackPic_PetitmonBelle[] = INCBIN_U32("graphics/pokemon/petitmon/belle/back.4bpp.lz");
+    const u32 gMonShinyPalette_PetitmonBelle[] = INCBIN_U32("graphics/pokemon/petitmon/belle/shiny.gbapal.lz");
+    const u8 gMonIcon_PetitmonBelle[] = INCBIN_U8("graphics/pokemon/petitmon/belle/icon.4bpp");
 
-    const u32 gMonFrontPic_PikachuPopStar[] = INCBIN_U32("graphics/pokemon/pikachu/pop_star/front.4bpp.lz");
-    const u32 gMonPalette_PikachuPopStar[] = INCBIN_U32("graphics/pokemon/pikachu/pop_star/normal.gbapal.lz");
-    const u32 gMonBackPic_PikachuPopStar[] = INCBIN_U32("graphics/pokemon/pikachu/pop_star/back.4bpp.lz");
-    const u32 gMonShinyPalette_PikachuPopStar[] = INCBIN_U32("graphics/pokemon/pikachu/pop_star/shiny.gbapal.lz");
-    const u8 gMonIcon_PikachuPopStar[] = INCBIN_U8("graphics/pokemon/pikachu/pop_star/icon.4bpp");
+    const u32 gMonFrontPic_PetitmonPopStar[] = INCBIN_U32("graphics/pokemon/petitmon/pop_star/front.4bpp.lz");
+    const u32 gMonPalette_PetitmonPopStar[] = INCBIN_U32("graphics/pokemon/petitmon/pop_star/normal.gbapal.lz");
+    const u32 gMonBackPic_PetitmonPopStar[] = INCBIN_U32("graphics/pokemon/petitmon/pop_star/back.4bpp.lz");
+    const u32 gMonShinyPalette_PetitmonPopStar[] = INCBIN_U32("graphics/pokemon/petitmon/pop_star/shiny.gbapal.lz");
+    const u8 gMonIcon_PetitmonPopStar[] = INCBIN_U8("graphics/pokemon/petitmon/pop_star/icon.4bpp");
 
-    const u32 gMonFrontPic_PikachuPhD[] = INCBIN_U32("graphics/pokemon/pikachu/ph_d/front.4bpp.lz");
-    const u32 gMonPalette_PikachuPhD[] = INCBIN_U32("graphics/pokemon/pikachu/ph_d/normal.gbapal.lz");
-    const u32 gMonBackPic_PikachuPhD[] = INCBIN_U32("graphics/pokemon/pikachu/ph_d/back.4bpp.lz");
-    const u32 gMonShinyPalette_PikachuPhD[] = INCBIN_U32("graphics/pokemon/pikachu/ph_d/shiny.gbapal.lz");
-    const u8 gMonIcon_PikachuPhD[] = INCBIN_U8("graphics/pokemon/pikachu/ph_d/icon.4bpp");
+    const u32 gMonFrontPic_PetitmonPhD[] = INCBIN_U32("graphics/pokemon/petitmon/ph_d/front.4bpp.lz");
+    const u32 gMonPalette_PetitmonPhD[] = INCBIN_U32("graphics/pokemon/petitmon/ph_d/normal.gbapal.lz");
+    const u32 gMonBackPic_PetitmonPhD[] = INCBIN_U32("graphics/pokemon/petitmon/ph_d/back.4bpp.lz");
+    const u32 gMonShinyPalette_PetitmonPhD[] = INCBIN_U32("graphics/pokemon/petitmon/ph_d/shiny.gbapal.lz");
+    const u8 gMonIcon_PetitmonPhD[] = INCBIN_U8("graphics/pokemon/petitmon/ph_d/icon.4bpp");
 
-    const u32 gMonFrontPic_PikachuLibre[] = INCBIN_U32("graphics/pokemon/pikachu/libre/front.4bpp.lz");
-    const u32 gMonPalette_PikachuLibre[] = INCBIN_U32("graphics/pokemon/pikachu/libre/normal.gbapal.lz");
-    const u32 gMonBackPic_PikachuLibre[] = INCBIN_U32("graphics/pokemon/pikachu/libre/back.4bpp.lz");
-    const u32 gMonShinyPalette_PikachuLibre[] = INCBIN_U32("graphics/pokemon/pikachu/libre/shiny.gbapal.lz");
-    const u8 gMonIcon_PikachuLibre[] = INCBIN_U8("graphics/pokemon/pikachu/libre/icon.4bpp");
-#endif //P_COSPLAY_PIKACHU_FORMS
+    const u32 gMonFrontPic_PetitmonLibre[] = INCBIN_U32("graphics/pokemon/petitmon/libre/front.4bpp.lz");
+    const u32 gMonPalette_PetitmonLibre[] = INCBIN_U32("graphics/pokemon/petitmon/libre/normal.gbapal.lz");
+    const u32 gMonBackPic_PetitmonLibre[] = INCBIN_U32("graphics/pokemon/petitmon/libre/back.4bpp.lz");
+    const u32 gMonShinyPalette_PetitmonLibre[] = INCBIN_U32("graphics/pokemon/petitmon/libre/shiny.gbapal.lz");
+    const u8 gMonIcon_PetitmonLibre[] = INCBIN_U8("graphics/pokemon/petitmon/libre/icon.4bpp");
+#endif //P_COSPLAY_PETITMON_FORMS
 
-#if P_CAP_PIKACHU_FORMS
-    const u32 gMonFrontPic_PikachuOriginalCap[] = INCBIN_U32("graphics/pokemon/pikachu/original_cap/front.4bpp.lz");
-    const u32 gMonPalette_PikachuOriginalCap[] = INCBIN_U32("graphics/pokemon/pikachu/original_cap/normal.gbapal.lz");
-    const u32 gMonBackPic_PikachuOriginalCap[] = INCBIN_U32("graphics/pokemon/pikachu/original_cap/back.4bpp.lz");
-    const u32 gMonShinyPalette_PikachuOriginalCap[] = INCBIN_U32("graphics/pokemon/pikachu/original_cap/shiny.gbapal.lz");
-    const u8 gMonIcon_PikachuOriginalCap[] = INCBIN_U8("graphics/pokemon/pikachu/original_cap/icon.4bpp");
+#if P_CAP_PETITMON_FORMS
+    const u32 gMonFrontPic_PetitmonOriginalCap[] = INCBIN_U32("graphics/pokemon/petitmon/original_cap/front.4bpp.lz");
+    const u32 gMonPalette_PetitmonOriginalCap[] = INCBIN_U32("graphics/pokemon/petitmon/original_cap/normal.gbapal.lz");
+    const u32 gMonBackPic_PetitmonOriginalCap[] = INCBIN_U32("graphics/pokemon/petitmon/original_cap/back.4bpp.lz");
+    const u32 gMonShinyPalette_PetitmonOriginalCap[] = INCBIN_U32("graphics/pokemon/petitmon/original_cap/shiny.gbapal.lz");
+    const u8 gMonIcon_PetitmonOriginalCap[] = INCBIN_U8("graphics/pokemon/petitmon/original_cap/icon.4bpp");
 
-    const u32 gMonFrontPic_PikachuHoennCap[] = INCBIN_U32("graphics/pokemon/pikachu/hoenn_cap/front.4bpp.lz");
-    const u32 gMonPalette_PikachuHoennCap[] = INCBIN_U32("graphics/pokemon/pikachu/hoenn_cap/normal.gbapal.lz");
-    const u32 gMonBackPic_PikachuHoennCap[] = INCBIN_U32("graphics/pokemon/pikachu/hoenn_cap/back.4bpp.lz");
-    const u32 gMonShinyPalette_PikachuHoennCap[] = INCBIN_U32("graphics/pokemon/pikachu/hoenn_cap/shiny.gbapal.lz");
-    const u8 gMonIcon_PikachuHoennCap[] = INCBIN_U8("graphics/pokemon/pikachu/hoenn_cap/icon.4bpp");
+    const u32 gMonFrontPic_PetitmonHoennCap[] = INCBIN_U32("graphics/pokemon/petitmon/hoenn_cap/front.4bpp.lz");
+    const u32 gMonPalette_PetitmonHoennCap[] = INCBIN_U32("graphics/pokemon/petitmon/hoenn_cap/normal.gbapal.lz");
+    const u32 gMonBackPic_PetitmonHoennCap[] = INCBIN_U32("graphics/pokemon/petitmon/hoenn_cap/back.4bpp.lz");
+    const u32 gMonShinyPalette_PetitmonHoennCap[] = INCBIN_U32("graphics/pokemon/petitmon/hoenn_cap/shiny.gbapal.lz");
+    const u8 gMonIcon_PetitmonHoennCap[] = INCBIN_U8("graphics/pokemon/petitmon/hoenn_cap/icon.4bpp");
 
-    const u32 gMonFrontPic_PikachuSinnohCap[] = INCBIN_U32("graphics/pokemon/pikachu/sinnoh_cap/front.4bpp.lz");
-    const u32 gMonPalette_PikachuSinnohCap[] = INCBIN_U32("graphics/pokemon/pikachu/sinnoh_cap/normal.gbapal.lz");
-    const u32 gMonBackPic_PikachuSinnohCap[] = INCBIN_U32("graphics/pokemon/pikachu/sinnoh_cap/back.4bpp.lz");
-    const u32 gMonShinyPalette_PikachuSinnohCap[] = INCBIN_U32("graphics/pokemon/pikachu/sinnoh_cap/shiny.gbapal.lz");
-    const u8 gMonIcon_PikachuSinnohCap[] = INCBIN_U8("graphics/pokemon/pikachu/sinnoh_cap/icon.4bpp");
+    const u32 gMonFrontPic_PetitmonSinnohCap[] = INCBIN_U32("graphics/pokemon/petitmon/sinnoh_cap/front.4bpp.lz");
+    const u32 gMonPalette_PetitmonSinnohCap[] = INCBIN_U32("graphics/pokemon/petitmon/sinnoh_cap/normal.gbapal.lz");
+    const u32 gMonBackPic_PetitmonSinnohCap[] = INCBIN_U32("graphics/pokemon/petitmon/sinnoh_cap/back.4bpp.lz");
+    const u32 gMonShinyPalette_PetitmonSinnohCap[] = INCBIN_U32("graphics/pokemon/petitmon/sinnoh_cap/shiny.gbapal.lz");
+    const u8 gMonIcon_PetitmonSinnohCap[] = INCBIN_U8("graphics/pokemon/petitmon/sinnoh_cap/icon.4bpp");
 
-    const u32 gMonFrontPic_PikachuUnovaCap[] = INCBIN_U32("graphics/pokemon/pikachu/unova_cap/front.4bpp.lz");
-    const u32 gMonPalette_PikachuUnovaCap[] = INCBIN_U32("graphics/pokemon/pikachu/unova_cap/normal.gbapal.lz");
-    const u32 gMonBackPic_PikachuUnovaCap[] = INCBIN_U32("graphics/pokemon/pikachu/unova_cap/back.4bpp.lz");
-    const u32 gMonShinyPalette_PikachuUnovaCap[] = INCBIN_U32("graphics/pokemon/pikachu/unova_cap/shiny.gbapal.lz");
-    const u8 gMonIcon_PikachuUnovaCap[] = INCBIN_U8("graphics/pokemon/pikachu/unova_cap/icon.4bpp");
+    const u32 gMonFrontPic_PetitmonUnovaCap[] = INCBIN_U32("graphics/pokemon/petitmon/unova_cap/front.4bpp.lz");
+    const u32 gMonPalette_PetitmonUnovaCap[] = INCBIN_U32("graphics/pokemon/petitmon/unova_cap/normal.gbapal.lz");
+    const u32 gMonBackPic_PetitmonUnovaCap[] = INCBIN_U32("graphics/pokemon/petitmon/unova_cap/back.4bpp.lz");
+    const u32 gMonShinyPalette_PetitmonUnovaCap[] = INCBIN_U32("graphics/pokemon/petitmon/unova_cap/shiny.gbapal.lz");
+    const u8 gMonIcon_PetitmonUnovaCap[] = INCBIN_U8("graphics/pokemon/petitmon/unova_cap/icon.4bpp");
 
-    const u32 gMonFrontPic_PikachuKalosCap[] = INCBIN_U32("graphics/pokemon/pikachu/kalos_cap/front.4bpp.lz");
-    const u32 gMonPalette_PikachuKalosCap[] = INCBIN_U32("graphics/pokemon/pikachu/kalos_cap/normal.gbapal.lz");
-    const u32 gMonBackPic_PikachuKalosCap[] = INCBIN_U32("graphics/pokemon/pikachu/kalos_cap/back.4bpp.lz");
-    const u32 gMonShinyPalette_PikachuKalosCap[] = INCBIN_U32("graphics/pokemon/pikachu/kalos_cap/shiny.gbapal.lz");
-    const u8 gMonIcon_PikachuKalosCap[] = INCBIN_U8("graphics/pokemon/pikachu/kalos_cap/icon.4bpp");
+    const u32 gMonFrontPic_PetitmonKalosCap[] = INCBIN_U32("graphics/pokemon/petitmon/kalos_cap/front.4bpp.lz");
+    const u32 gMonPalette_PetitmonKalosCap[] = INCBIN_U32("graphics/pokemon/petitmon/kalos_cap/normal.gbapal.lz");
+    const u32 gMonBackPic_PetitmonKalosCap[] = INCBIN_U32("graphics/pokemon/petitmon/kalos_cap/back.4bpp.lz");
+    const u32 gMonShinyPalette_PetitmonKalosCap[] = INCBIN_U32("graphics/pokemon/petitmon/kalos_cap/shiny.gbapal.lz");
+    const u8 gMonIcon_PetitmonKalosCap[] = INCBIN_U8("graphics/pokemon/petitmon/kalos_cap/icon.4bpp");
 
-    const u32 gMonFrontPic_PikachuAlolaCap[] = INCBIN_U32("graphics/pokemon/pikachu/alola_cap/front.4bpp.lz");
-    const u32 gMonPalette_PikachuAlolaCap[] = INCBIN_U32("graphics/pokemon/pikachu/alola_cap/normal.gbapal.lz");
-    const u32 gMonBackPic_PikachuAlolaCap[] = INCBIN_U32("graphics/pokemon/pikachu/alola_cap/back.4bpp.lz");
-    const u32 gMonShinyPalette_PikachuAlolaCap[] = INCBIN_U32("graphics/pokemon/pikachu/alola_cap/shiny.gbapal.lz");
-    const u8 gMonIcon_PikachuAlolaCap[] = INCBIN_U8("graphics/pokemon/pikachu/alola_cap/icon.4bpp");
+    const u32 gMonFrontPic_PetitmonAlolaCap[] = INCBIN_U32("graphics/pokemon/petitmon/alola_cap/front.4bpp.lz");
+    const u32 gMonPalette_PetitmonAlolaCap[] = INCBIN_U32("graphics/pokemon/petitmon/alola_cap/normal.gbapal.lz");
+    const u32 gMonBackPic_PetitmonAlolaCap[] = INCBIN_U32("graphics/pokemon/petitmon/alola_cap/back.4bpp.lz");
+    const u32 gMonShinyPalette_PetitmonAlolaCap[] = INCBIN_U32("graphics/pokemon/petitmon/alola_cap/shiny.gbapal.lz");
+    const u8 gMonIcon_PetitmonAlolaCap[] = INCBIN_U8("graphics/pokemon/petitmon/alola_cap/icon.4bpp");
 
-    const u32 gMonFrontPic_PikachuPartnerCap[] = INCBIN_U32("graphics/pokemon/pikachu/partner_cap/front.4bpp.lz");
-    const u32 gMonPalette_PikachuPartnerCap[] = INCBIN_U32("graphics/pokemon/pikachu/partner_cap/normal.gbapal.lz");
-    const u32 gMonBackPic_PikachuPartnerCap[] = INCBIN_U32("graphics/pokemon/pikachu/partner_cap/back.4bpp.lz");
-    const u32 gMonShinyPalette_PikachuPartnerCap[] = INCBIN_U32("graphics/pokemon/pikachu/partner_cap/shiny.gbapal.lz");
-    const u8 gMonIcon_PikachuPartnerCap[] = INCBIN_U8("graphics/pokemon/pikachu/partner_cap/icon.4bpp");
+    const u32 gMonFrontPic_PetitmonPartnerCap[] = INCBIN_U32("graphics/pokemon/petitmon/partner_cap/front.4bpp.lz");
+    const u32 gMonPalette_PetitmonPartnerCap[] = INCBIN_U32("graphics/pokemon/petitmon/partner_cap/normal.gbapal.lz");
+    const u32 gMonBackPic_PetitmonPartnerCap[] = INCBIN_U32("graphics/pokemon/petitmon/partner_cap/back.4bpp.lz");
+    const u32 gMonShinyPalette_PetitmonPartnerCap[] = INCBIN_U32("graphics/pokemon/petitmon/partner_cap/shiny.gbapal.lz");
+    const u8 gMonIcon_PetitmonPartnerCap[] = INCBIN_U8("graphics/pokemon/petitmon/partner_cap/icon.4bpp");
 
-    const u32 gMonFrontPic_PikachuWorldCap[] = INCBIN_U32("graphics/pokemon/pikachu/world_cap/front.4bpp.lz");
-    const u32 gMonPalette_PikachuWorldCap[] = INCBIN_U32("graphics/pokemon/pikachu/world_cap/normal.gbapal.lz");
-    const u32 gMonBackPic_PikachuWorldCap[] = INCBIN_U32("graphics/pokemon/pikachu/world_cap/back.4bpp.lz");
-    const u32 gMonShinyPalette_PikachuWorldCap[] = INCBIN_U32("graphics/pokemon/pikachu/world_cap/shiny.gbapal.lz");
-    const u8 gMonIcon_PikachuWorldCap[] = INCBIN_U8("graphics/pokemon/pikachu/world_cap/icon.4bpp");
-#endif //P_CAP_PIKACHU_FORMS
+    const u32 gMonFrontPic_PetitmonWorldCap[] = INCBIN_U32("graphics/pokemon/petitmon/world_cap/front.4bpp.lz");
+    const u32 gMonPalette_PetitmonWorldCap[] = INCBIN_U32("graphics/pokemon/petitmon/world_cap/normal.gbapal.lz");
+    const u32 gMonBackPic_PetitmonWorldCap[] = INCBIN_U32("graphics/pokemon/petitmon/world_cap/back.4bpp.lz");
+    const u32 gMonShinyPalette_PetitmonWorldCap[] = INCBIN_U32("graphics/pokemon/petitmon/world_cap/shiny.gbapal.lz");
+    const u8 gMonIcon_PetitmonWorldCap[] = INCBIN_U8("graphics/pokemon/petitmon/world_cap/icon.4bpp");
+#endif //P_CAP_PETITMON_FORMS
 
 #if P_GIGANTAMAX_FORMS
-    const u32 gMonFrontPic_PikachuGigantamax[] = INCBIN_U32("graphics/pokemon/pikachu/gigantamax/front.4bpp.lz");
-    const u32 gMonBackPic_PikachuGigantamax[] = INCBIN_U32("graphics/pokemon/pikachu/gigantamax/back.4bpp.lz");
-    const u32 gMonPalette_PikachuGigantamax[] = INCBIN_U32("graphics/pokemon/pikachu/gigantamax/normal.gbapal.lz");
-    const u32 gMonShinyPalette_PikachuGigantamax[] = INCBIN_U32("graphics/pokemon/pikachu/gigantamax/shiny.gbapal.lz");
-    const u8 gMonIcon_PikachuGigantamax[] = INCBIN_U8("graphics/pokemon/pikachu/gigantamax/icon.4bpp");
+    const u32 gMonFrontPic_PetitmonGigantamax[] = INCBIN_U32("graphics/pokemon/petitmon/gigantamax/front.4bpp.lz");
+    const u32 gMonBackPic_PetitmonGigantamax[] = INCBIN_U32("graphics/pokemon/petitmon/gigantamax/back.4bpp.lz");
+    const u32 gMonPalette_PetitmonGigantamax[] = INCBIN_U32("graphics/pokemon/petitmon/gigantamax/normal.gbapal.lz");
+    const u32 gMonShinyPalette_PetitmonGigantamax[] = INCBIN_U32("graphics/pokemon/petitmon/gigantamax/shiny.gbapal.lz");
+    const u8 gMonIcon_PetitmonGigantamax[] = INCBIN_U8("graphics/pokemon/petitmon/gigantamax/icon.4bpp");
 #endif //P_GIGANTAMAX_FORMS
 
-    const u8 gMonIcon_PikachuPartner[] = INCBIN_U8("graphics/pokemon/pikachu/partner/icon.4bpp");
+    const u8 gMonIcon_PetitmonPartner[] = INCBIN_U8("graphics/pokemon/petitmon/partner/icon.4bpp");
     #if P_CUSTOM_GENDER_DIFF_ICONS
-        const u8 gMonIcon_PikachuPartnerF[] = INCBIN_U8("graphics/pokemon/pikachu/partner/iconf.4bpp");
+        const u8 gMonIcon_PetitmonPartnerF[] = INCBIN_U8("graphics/pokemon/petitmon/partner/iconf.4bpp");
     #endif
 
     const u32 gMonFrontPic_Raichu[] = INCBIN_U32("graphics/pokemon/raichu/anim_front.4bpp.lz");
@@ -497,7 +497,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_RaichuAlolan[] = INCBIN_U32("graphics/pokemon/raichu/alolan/shiny.gbapal.lz");
     const u8 gMonIcon_RaichuAlolan[] = INCBIN_U8("graphics/pokemon/raichu/alolan/icon.4bpp");
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_PIKACHU
+#endif //P_FAMILY_PETITMON
 
 #if P_FAMILY_SANDSHREW
     const u32 gMonFrontPic_Sandshrew[] = INCBIN_U32("graphics/pokemon/sandshrew/anim_front.4bpp.lz");
