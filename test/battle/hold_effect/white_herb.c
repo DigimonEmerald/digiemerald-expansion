@@ -191,7 +191,7 @@ SINGLE_BATTLE_TEST("White Herb has correct interactions with Intimidate triggere
     u16 ability;
 
     PARAMETRIZE { species = SPECIES_IGGLYBUFF; ability = ABILITY_COMPETITIVE; }
-    PARAMETRIZE { species = SPECIES_MANKEY; ability = ABILITY_DEFIANT; }
+    PARAMETRIZE { species = SPECIES_DEMIVEEMON; ability = ABILITY_DEFIANT; }
 
     GIVEN {
         PLAYER(species) { Ability(ability); Item(ITEM_WHITE_HERB); }

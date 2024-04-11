@@ -2710,8 +2710,8 @@ static const u16 sDemmeramonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_CHICCHIMON
 
-#if P_FAMILY_MANKEY
-static const u16 sMankeyTeachableLearnset[] = {
+#if P_FAMILY_DEMIVEEMON
+static const u16 sDemiveemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -2842,7 +2842,7 @@ static const u16 sAnnihilapeTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_9_CROSS_EVOS
-#endif //P_FAMILY_MANKEY
+#endif //P_FAMILY_DEMIVEEMON
 
 #if P_FAMILY_GROWLITHE
 static const u16 sGrowlitheTeachableLearnset[] = {

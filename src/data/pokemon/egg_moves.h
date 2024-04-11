@@ -457,8 +457,8 @@ const u16 gEggMoves[] = {
         MOVE_CLEAR_SMOG),
 #endif //P_FAMILY_CHICCHIMON
 
-#if P_FAMILY_MANKEY
-    egg_moves(MANKEY,
+#if P_FAMILY_DEMIVEEMON
+    egg_moves(DEMIVEEMON,
         MOVE_FORESIGHT,
         MOVE_MEDITATE,
         MOVE_COUNTER,
@@ -472,7 +472,7 @@ const u16 gEggMoves[] = {
         MOVE_SLEEP_TALK,
         MOVE_NIGHT_SLASH,
         MOVE_POWER_TRIP),
-#endif //P_FAMILY_MANKEY
+#endif //P_FAMILY_DEMIVEEMON
 
 #if P_FAMILY_GROWLITHE
     egg_moves(GROWLITHE,

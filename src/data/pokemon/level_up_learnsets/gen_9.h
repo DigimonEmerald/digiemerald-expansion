@@ -1452,8 +1452,8 @@ static const struct LevelUpMove sDemmeramonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_CHICCHIMON
 
-#if P_FAMILY_MANKEY
-static const struct LevelUpMove sMankeyLevelUpLearnset[] = {
+#if P_FAMILY_DEMIVEEMON
+static const struct LevelUpMove sDemiveemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
@@ -1518,7 +1518,7 @@ static const struct LevelUpMove sAnnihilapeLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_9_CROSS_EVOS
-#endif //P_FAMILY_MANKEY
+#endif //P_FAMILY_DEMIVEEMON
 
 #if P_FAMILY_GROWLITHE
 static const struct LevelUpMove sGrowlitheLevelUpLearnset[] = {

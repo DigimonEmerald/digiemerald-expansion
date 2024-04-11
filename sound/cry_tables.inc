@@ -133,13 +133,13 @@ gCryTable::
 	cry Cry_Chicchimon
 	cry Cry_Demmeramon
 .endif @ P_FAMILY_CHICCHIMON
-.if P_FAMILY_MANKEY == TRUE
-	cry Cry_Mankey
+.if P_FAMILY_DEMIVEEMON == TRUE
+	cry Cry_Demiveemon
 	cry Cry_Primeape
 .if P_GEN_9_CROSS_EVOS == TRUE
 	cry Cry_Annihilape
 .endif @ P_GEN_9_CROSS_EVOS
-.endif @ P_FAMILY_MANKEY
+.endif @ P_FAMILY_DEMIVEEMON
 .if P_FAMILY_GROWLITHE == TRUE
 	cry Cry_Growlithe
 	cry Cry_Arcanine
@@ -2559,13 +2559,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Chicchimon
 	cry_reverse Cry_Demmeramon
 .endif @ P_FAMILY_CHICCHIMON
-.if P_FAMILY_MANKEY == TRUE
-	cry_reverse Cry_Mankey
+.if P_FAMILY_DEMIVEEMON == TRUE
+	cry_reverse Cry_Demiveemon
 	cry_reverse Cry_Primeape
 .if P_GEN_9_CROSS_EVOS == TRUE
 	cry_reverse Cry_Annihilape
 .endif @ P_GEN_9_CROSS_EVOS
-.endif @ P_FAMILY_MANKEY
+.endif @ P_FAMILY_DEMIVEEMON
 .if P_FAMILY_GROWLITHE == TRUE
 	cry_reverse Cry_Growlithe
 	cry_reverse Cry_Arcanine

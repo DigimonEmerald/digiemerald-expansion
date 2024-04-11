@@ -5822,8 +5822,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_CHICCHIMON
 
-#if P_FAMILY_MANKEY
-    [SPECIES_MANKEY] =
+#if P_FAMILY_DEMIVEEMON
+    [SPECIES_DEMIVEEMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 80,
@@ -5842,9 +5842,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_VITAL_SPIRIT, ABILITY_ANGER_POINT, ABILITY_DEFIANT },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Mankey"),
-        .cryId = CRY_MANKEY,
-        .natDexNum = NATIONAL_DEX_MANKEY,
+        .speciesName = _("Demiveemon"),
+        .cryId = CRY_DEMIVEEMON,
+        .natDexNum = NATIONAL_DEX_DEMIVEEMON,
         .categoryName = _("Pig Monkey"),
         .height = 5,
         .weight = 280,
@@ -5857,23 +5857,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Mankey,
+        .frontPic = gMonFrontPic_Demiveemon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Mankey,
+        .frontAnimFrames = sAnims_Demiveemon,
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
         .frontAnimDelay = 20,
-        .backPic = gMonBackPic_Mankey,
+        .backPic = gMonBackPic_Demiveemon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Mankey,
-        .shinyPalette = gMonShinyPalette_Mankey,
-        .iconSprite = gMonIcon_Mankey,
+        .palette = gMonPalette_Demiveemon,
+        .shinyPalette = gMonShinyPalette_Demiveemon,
+        .iconSprite = gMonIcon_Demiveemon,
         .iconPalIndex = 1,
-        FOOTPRINT(Mankey)
-        .levelUpLearnset = sMankeyLevelUpLearnset,
-        .teachableLearnset = sMankeyTeachableLearnset,
+        FOOTPRINT(Demiveemon)
+        .levelUpLearnset = sDemiveemonLevelUpLearnset,
+        .teachableLearnset = sDemiveemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PRIMEAPE}),
     },
 
@@ -5983,7 +5983,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sAnnihilapeTeachableLearnset,
     },
 #endif //P_GEN_9_CROSS_EVOS
-#endif //P_FAMILY_MANKEY
+#endif //P_FAMILY_DEMIVEEMON
 
 #if P_FAMILY_GROWLITHE
     [SPECIES_GROWLITHE] =

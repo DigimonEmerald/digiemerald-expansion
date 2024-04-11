@@ -721,10 +721,10 @@ Cry_Demmeramon::
 	.incbin "sound/direct_sound_samples/cries/demmeramon.bin"
 .endif @ P_FAMILY_CHICCHIMON
 
-.if P_FAMILY_MANKEY == TRUE
+.if P_FAMILY_DEMIVEEMON == TRUE
 	.align 2
-Cry_Mankey::
-	.incbin "sound/direct_sound_samples/cries/mankey.bin"
+Cry_Demiveemon::
+	.incbin "sound/direct_sound_samples/cries/demiveemon.bin"
 
 	.align 2
 Cry_Primeape::
@@ -735,7 +735,7 @@ Cry_Primeape::
 Cry_Annihilape::
 	.incbin "sound/direct_sound_samples/cries/annihilape.bin"
 .endif @ P_GEN_9_CROSS_EVOS
-.endif @ P_FAMILY_MANKEY
+.endif @ P_FAMILY_DEMIVEEMON
 
 .if P_FAMILY_GROWLITHE == TRUE
 	.align 2

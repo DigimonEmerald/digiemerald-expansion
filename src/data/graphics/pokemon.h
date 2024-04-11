@@ -921,14 +921,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_CHICCHIMON
 
-#if P_FAMILY_MANKEY
-    const u32 gMonFrontPic_Mankey[] = INCBIN_U32("graphics/pokemon/mankey/anim_front.4bpp.lz");
-    const u32 gMonPalette_Mankey[] = INCBIN_U32("graphics/pokemon/mankey/normal.gbapal.lz");
-    const u32 gMonBackPic_Mankey[] = INCBIN_U32("graphics/pokemon/mankey/back.4bpp.lz");
-    const u32 gMonShinyPalette_Mankey[] = INCBIN_U32("graphics/pokemon/mankey/shiny.gbapal.lz");
-    const u8 gMonIcon_Mankey[] = INCBIN_U8("graphics/pokemon/mankey/icon.4bpp");
+#if P_FAMILY_DEMIVEEMON
+    const u32 gMonFrontPic_Demiveemon[] = INCBIN_U32("graphics/pokemon/demiveemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Demiveemon[] = INCBIN_U32("graphics/pokemon/demiveemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Demiveemon[] = INCBIN_U32("graphics/pokemon/demiveemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Demiveemon[] = INCBIN_U32("graphics/pokemon/demiveemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Demiveemon[] = INCBIN_U8("graphics/pokemon/demiveemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Mankey[] = INCBIN_U8("graphics/pokemon/mankey/footprint.1bpp");
+    const u8 gMonFootprint_Demiveemon[] = INCBIN_U8("graphics/pokemon/demiveemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Primeape[] = INCBIN_U32("graphics/pokemon/primeape/anim_front.4bpp.lz");
@@ -950,7 +950,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     // const u8 gMonFootprint_Annihilape[] = INCBIN_U8("graphics/pokemon/annihilape/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_9_CROSS_EVOS
-#endif //P_FAMILY_MANKEY
+#endif //P_FAMILY_DEMIVEEMON
 
 #if P_FAMILY_GROWLITHE
     const u32 gMonFrontPic_Growlithe[] = INCBIN_U32("graphics/pokemon/growlithe/anim_front.4bpp.lz");

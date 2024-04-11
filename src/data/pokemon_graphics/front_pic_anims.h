@@ -843,8 +843,8 @@ static const union AnimCmd sAnim_Demmeramon_1[] =
 };
 #endif //P_FAMILY_CHICCHIMON
 
-#if P_FAMILY_MANKEY
-static const union AnimCmd sAnim_Mankey_1[] =
+#if P_FAMILY_DEMIVEEMON
+static const union AnimCmd sAnim_Demiveemon_1[] =
 {
     ANIMCMD_FRAME(1, 5),
     ANIMCMD_FRAME(0, 5),
@@ -870,7 +870,7 @@ static const union AnimCmd sAnim_Primeape_1[] =
 #if P_GEN_9_CROSS_EVOS
 PLACEHOLDER_ANIM_SINGLE_FRAME(Annihilape);
 #endif //P_GEN_9_CROSS_EVOS
-#endif //P_FAMILY_MANKEY
+#endif //P_FAMILY_DEMIVEEMON
 
 #if P_FAMILY_GROWLITHE
 static const union AnimCmd sAnim_Growlithe_1[] =
@@ -10347,13 +10347,13 @@ SINGLE_ANIMATION(CalumonGigantamax);
 SINGLE_ANIMATION(Chicchimon);
 SINGLE_ANIMATION(Demmeramon);
 #endif //P_FAMILY_CHICCHIMON
-#if P_FAMILY_MANKEY
-SINGLE_ANIMATION(Mankey);
+#if P_FAMILY_DEMIVEEMON
+SINGLE_ANIMATION(Demiveemon);
 SINGLE_ANIMATION(Primeape);
 #if P_GEN_9_CROSS_EVOS
 SINGLE_ANIMATION(Annihilape);
 #endif //P_GEN_9_CROSS_EVOS
-#endif //P_FAMILY_MANKEY
+#endif //P_FAMILY_DEMIVEEMON
 #if P_FAMILY_GROWLITHE
 SINGLE_ANIMATION(Growlithe);
 SINGLE_ANIMATION(Arcanine);
