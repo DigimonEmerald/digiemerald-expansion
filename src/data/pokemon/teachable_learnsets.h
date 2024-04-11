@@ -2154,8 +2154,8 @@ static const u16 sBellossomTeachableLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ZERIMON
 
-#if P_FAMILY_PARAS
-static const u16 sParasTeachableLearnset[] = {
+#if P_FAMILY_ARGOMON_IT
+static const u16 sArgomon_itTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -2221,7 +2221,7 @@ static const u16 sParasectTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PARAS
+#endif //P_FAMILY_ARGOMON_IT
 
 #if P_FAMILY_VENONAT
 static const u16 sVenonatTeachableLearnset[] = {

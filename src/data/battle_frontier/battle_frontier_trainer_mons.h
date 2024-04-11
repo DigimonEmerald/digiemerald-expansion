@@ -48,7 +48,7 @@
     FRONTIER_MON_MAREEP,        \
     FRONTIER_MON_MEDITITE,      \
     FRONTIER_MON_SLAKOTH,       \
-    FRONTIER_MON_PARAS,         \
+    FRONTIER_MON_ARGOMON_IT,         \
     FRONTIER_MON_PAFUMON,         \
     FRONTIER_MON_DITTO,         \
     FRONTIER_MON_BARBOACH,      \
@@ -438,7 +438,7 @@
     FRONTIER_MON_LEDYBA,        \
     FRONTIER_MON_NINCADA,       \
     FRONTIER_MON_SURSKIT,       \
-    FRONTIER_MON_PARAS,         \
+    FRONTIER_MON_ARGOMON_IT,         \
     FRONTIER_MON_PINECO,        \
     FRONTIER_MON_TRAPINCH,      \
     FRONTIER_MON_VENONAT,       \
@@ -467,7 +467,7 @@
     FRONTIER_MON_LEDYBA,        \
     FRONTIER_MON_NINCADA,       \
     FRONTIER_MON_SURSKIT,       \
-    FRONTIER_MON_PARAS,         \
+    FRONTIER_MON_ARGOMON_IT,         \
     FRONTIER_MON_PINECO,        \
     FRONTIER_MON_TRAPINCH,      \
     FRONTIER_MON_VENONAT,       \
@@ -497,7 +497,7 @@
     FRONTIER_MON_PUNIMON,     \
     FRONTIER_MON_KIRLIA,        \
     FRONTIER_MON_MEDITITE,      \
-    FRONTIER_MON_PARAS,         \
+    FRONTIER_MON_ARGOMON_IT,         \
     FRONTIER_MON_PAFUMON,         \
     FRONTIER_MON_PINECO,        \
     FRONTIER_MON_TRAPINCH,      \
@@ -542,7 +542,7 @@
     FRONTIER_MON_LEDYBA,        \
     FRONTIER_MON_NINCADA,       \
     FRONTIER_MON_SURSKIT,       \
-    FRONTIER_MON_PARAS,         \
+    FRONTIER_MON_ARGOMON_IT,         \
     FRONTIER_MON_PINECO,        \
     FRONTIER_MON_TRAPINCH,      \
     FRONTIER_MON_SHROOMISH,     \
@@ -642,7 +642,7 @@
     FRONTIER_MON_WYNAUT,        \
     FRONTIER_MON_KIRLIA,        \
     FRONTIER_MON_MEDITITE,      \
-    FRONTIER_MON_PARAS,         \
+    FRONTIER_MON_ARGOMON_IT,         \
     FRONTIER_MON_SHROOMISH,     \
     FRONTIER_MON_BELLSPROUT,    \
     FRONTIER_MON_BALTOY,        \

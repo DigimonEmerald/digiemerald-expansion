@@ -683,8 +683,8 @@ static const union AnimCmd sAnim_Bellossom_1[] =
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ZERIMON
 
-#if P_FAMILY_PARAS
-static const union AnimCmd sAnim_Paras_1[] =
+#if P_FAMILY_ARGOMON_IT
+static const union AnimCmd sAnim_Argomon_it_1[] =
 {
     ANIMCMD_FRAME(1, 5),
     ANIMCMD_FRAME(0, 5),
@@ -715,7 +715,7 @@ static const union AnimCmd sAnim_Parasect_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_PARAS
+#endif //P_FAMILY_ARGOMON_IT
 
 #if P_FAMILY_VENONAT
 static const union AnimCmd sAnim_Venonat_1[] =
@@ -10312,10 +10312,10 @@ SINGLE_ANIMATION(Arcadiamon_it);
 SINGLE_ANIMATION(Bellossom);
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ZERIMON
-#if P_FAMILY_PARAS
-SINGLE_ANIMATION(Paras);
+#if P_FAMILY_ARGOMON_IT
+SINGLE_ANIMATION(Argomon_it);
 SINGLE_ANIMATION(Parasect);
-#endif //P_FAMILY_PARAS
+#endif //P_FAMILY_ARGOMON_IT
 #if P_FAMILY_VENONAT
 SINGLE_ANIMATION(Venonat);
 SINGLE_ANIMATION(Venomoth);

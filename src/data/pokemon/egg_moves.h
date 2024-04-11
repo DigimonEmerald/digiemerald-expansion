@@ -330,8 +330,8 @@ const u16 gEggMoves[] = {
         MOVE_STRENGTH_SAP),
 #endif //P_FAMILY_ZERIMON
 
-#if P_FAMILY_PARAS
-    egg_moves(PARAS,
+#if P_FAMILY_ARGOMON_IT
+    egg_moves(ARGOMON_IT,
         MOVE_SCREECH,
         MOVE_COUNTER,
         MOVE_PSYBEAM,
@@ -349,7 +349,7 @@ const u16 gEggMoves[] = {
         MOVE_ROTOTILLER,
         MOVE_FELL_STINGER,
         MOVE_GRASSY_TERRAIN),
-#endif //P_FAMILY_PARAS
+#endif //P_FAMILY_ARGOMON_IT
 
 #if P_FAMILY_VENONAT
     egg_moves(VENONAT,

@@ -664,15 +664,15 @@ Cry_Bellossom::
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_ZERIMON
 
-.if P_FAMILY_PARAS == TRUE
+.if P_FAMILY_ARGOMON_IT == TRUE
 	.align 2
-Cry_Paras::
-	.incbin "sound/direct_sound_samples/cries/paras.bin"
+Cry_Argomon_it::
+	.incbin "sound/direct_sound_samples/cries/argomon_it.bin"
 
 	.align 2
 Cry_Parasect::
 	.incbin "sound/direct_sound_samples/cries/parasect.bin"
-.endif @ P_FAMILY_PARAS
+.endif @ P_FAMILY_ARGOMON_IT
 
 .if P_FAMILY_VENONAT == TRUE
 	.align 2

@@ -768,14 +768,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ZERIMON
 
-#if P_FAMILY_PARAS
-    const u32 gMonFrontPic_Paras[] = INCBIN_U32("graphics/pokemon/paras/anim_front.4bpp.lz");
-    const u32 gMonPalette_Paras[] = INCBIN_U32("graphics/pokemon/paras/normal.gbapal.lz");
-    const u32 gMonBackPic_Paras[] = INCBIN_U32("graphics/pokemon/paras/back.4bpp.lz");
-    const u32 gMonShinyPalette_Paras[] = INCBIN_U32("graphics/pokemon/paras/shiny.gbapal.lz");
-    const u8 gMonIcon_Paras[] = INCBIN_U8("graphics/pokemon/paras/icon.4bpp");
+#if P_FAMILY_ARGOMON_IT
+    const u32 gMonFrontPic_Argomon_it[] = INCBIN_U32("graphics/pokemon/argomon_it/anim_front.4bpp.lz");
+    const u32 gMonPalette_Argomon_it[] = INCBIN_U32("graphics/pokemon/argomon_it/normal.gbapal.lz");
+    const u32 gMonBackPic_Argomon_it[] = INCBIN_U32("graphics/pokemon/argomon_it/back.4bpp.lz");
+    const u32 gMonShinyPalette_Argomon_it[] = INCBIN_U32("graphics/pokemon/argomon_it/shiny.gbapal.lz");
+    const u8 gMonIcon_Argomon_it[] = INCBIN_U8("graphics/pokemon/argomon_it/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Paras[] = INCBIN_U8("graphics/pokemon/paras/footprint.1bpp");
+    const u8 gMonFootprint_Argomon_it[] = INCBIN_U8("graphics/pokemon/argomon_it/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Parasect[] = INCBIN_U32("graphics/pokemon/parasect/anim_front.4bpp.lz");
@@ -786,7 +786,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Parasect[] = INCBIN_U8("graphics/pokemon/parasect/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_PARAS
+#endif //P_FAMILY_ARGOMON_IT
 
 #if P_FAMILY_VENONAT
     const u32 gMonFrontPic_Venonat[] = INCBIN_U32("graphics/pokemon/venonat/anim_front.4bpp.lz");

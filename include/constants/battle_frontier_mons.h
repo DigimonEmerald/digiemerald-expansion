@@ -53,7 +53,7 @@
 #define FRONTIER_MON_MAREEP         49
 #define FRONTIER_MON_MEDITITE       50
 #define FRONTIER_MON_SLAKOTH        51
-#define FRONTIER_MON_PARAS          52
+#define FRONTIER_MON_ARGOMON_IT          52
 #define FRONTIER_MON_PAFUMON          53
 #define FRONTIER_MON_DITTO          54
 #define FRONTIER_MON_BARBOACH       55

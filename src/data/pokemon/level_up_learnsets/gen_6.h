@@ -1032,8 +1032,8 @@ static const struct LevelUpMove sBellossomLevelUpLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ZERIMON
 
-#if P_FAMILY_PARAS
-static const struct LevelUpMove sParasLevelUpLearnset[] = {
+#if P_FAMILY_ARGOMON_IT
+static const struct LevelUpMove sArgomon_itLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 6, MOVE_STUN_SPORE),
     LEVEL_UP_MOVE( 6, MOVE_POISON_POWDER),
@@ -1068,7 +1068,7 @@ static const struct LevelUpMove sParasectLevelUpLearnset[] = {
     LEVEL_UP_MOVE(66, MOVE_X_SCISSOR),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_PARAS
+#endif //P_FAMILY_ARGOMON_IT
 
 #if P_FAMILY_VENONAT
 static const struct LevelUpMove sVenonatLevelUpLearnset[] = {

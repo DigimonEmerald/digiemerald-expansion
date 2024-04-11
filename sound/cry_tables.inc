@@ -110,10 +110,10 @@ gCryTable::
 	cry Cry_Bellossom
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_ZERIMON
-.if P_FAMILY_PARAS == TRUE
-	cry Cry_Paras
+.if P_FAMILY_ARGOMON_IT == TRUE
+	cry Cry_Argomon_it
 	cry Cry_Parasect
-.endif @ P_FAMILY_PARAS
+.endif @ P_FAMILY_ARGOMON_IT
 .if P_FAMILY_VENONAT == TRUE
 	cry Cry_Venonat
 	cry Cry_Venomoth
@@ -2536,10 +2536,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Bellossom
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_ZERIMON
-.if P_FAMILY_PARAS == TRUE
-	cry_reverse Cry_Paras
+.if P_FAMILY_ARGOMON_IT == TRUE
+	cry_reverse Cry_Argomon_it
 	cry_reverse Cry_Parasect
-.endif @ P_FAMILY_PARAS
+.endif @ P_FAMILY_ARGOMON_IT
 .if P_FAMILY_VENONAT == TRUE
 	cry_reverse Cry_Venonat
 	cry_reverse Cry_Venomoth

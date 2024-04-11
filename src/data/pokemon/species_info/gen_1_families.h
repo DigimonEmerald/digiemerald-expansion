@@ -23,7 +23,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_CHLOROPHYLL },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Argomon_f"),
+        .speciesName = _("Argomon"),
         .cryId = CRY_ARGOMON_F,
         .natDexNum = NATIONAL_DEX_ARGOMON_F,
         .categoryName = _("Seed"),
@@ -4758,7 +4758,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_NONE, ABILITY_EFFECT_SPORE },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Arcadiamon_it"),
+        .speciesName = _("Arcadiamon"),
         .cryId = CRY_ARCADIAMON_IT,
         .natDexNum = NATIONAL_DEX_ARCADIAMON_IT,
         .categoryName = _("Flower"),
@@ -4859,8 +4859,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ZERIMON
 
-#if P_FAMILY_PARAS
-    [SPECIES_PARAS] =
+#if P_FAMILY_ARGOMON_IT
+    [SPECIES_ARGOMON_IT] =
     {
         .baseHP        = 35,
         .baseAttack    = 70,
@@ -4881,14 +4881,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_GRASS),
         .abilities = { ABILITY_EFFECT_SPORE, ABILITY_DRY_SKIN, ABILITY_DAMP },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Paras"),
-        .cryId = CRY_PARAS,
-        .natDexNum = NATIONAL_DEX_PARAS,
+        .speciesName = _("Argomon"),
+        .cryId = CRY_ARGOMON_IT,
+        .natDexNum = NATIONAL_DEX_ARGOMON_IT,
         .categoryName = _("Mushroom"),
         .height = 3,
         .weight = 54,
         .description = COMPOUND_STRING(
-            "A Paras has parasitic tochukaso\n"
+            "A Argomon_it has argomon_ititic tochukaso\n"
             "mushrooms growing on its back. They grow\n"
             "by drawing nutrients from the host. They\n"
             "are valued as a medicine for long life."),
@@ -4896,23 +4896,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 22,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Paras,
+        .frontPic = gMonFrontPic_Argomon_it,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 15,
-        .frontAnimFrames = sAnims_Paras,
+        .frontAnimFrames = sAnims_Argomon_it,
         .frontAnimId = ANIM_H_SLIDE_SLOW,
         .frontAnimDelay = 10,
-        .backPic = gMonBackPic_Paras,
+        .backPic = gMonBackPic_Argomon_it,
         .backPicSize = MON_COORDS_SIZE(64, 32),
         .backPicYOffset = 18,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Paras,
-        .shinyPalette = gMonShinyPalette_Paras,
-        .iconSprite = gMonIcon_Paras,
+        .palette = gMonPalette_Argomon_it,
+        .shinyPalette = gMonShinyPalette_Argomon_it,
+        .iconSprite = gMonIcon_Argomon_it,
         .iconPalIndex = 0,
-        FOOTPRINT(Paras)
-        .levelUpLearnset = sParasLevelUpLearnset,
-        .teachableLearnset = sParasTeachableLearnset,
+        FOOTPRINT(Argomon_it)
+        .levelUpLearnset = sArgomon_itLevelUpLearnset,
+        .teachableLearnset = sArgomon_itTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_PARASECT}),
     },
 
@@ -4971,7 +4971,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sParasectLevelUpLearnset,
         .teachableLearnset = sParasectTeachableLearnset,
     },
-#endif //P_FAMILY_PARAS
+#endif //P_FAMILY_ARGOMON_IT
 
 #if P_FAMILY_VENONAT
     [SPECIES_VENONAT] =
