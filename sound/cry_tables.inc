@@ -185,12 +185,12 @@ gCryTable::
 .endif @ P_FAMILY_NEGAMON
 .if P_FAMILY_PAGUMON == TRUE
 	cry Cry_Pagumon
-	cry Cry_Slowbro
+	cry Cry_Pickmon_silver
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Slowking
 .endif @ P_GEN_2_CROSS_EVOS
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_SlowbroMega
+	cry Cry_Pickmon_silverMega
 .endif @ P_MEGA_EVOLUTIONS
 .if P_GALARIAN_FORMS == TRUE
 	cry Cry_PagumonGalarian
@@ -2611,12 +2611,12 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_NEGAMON
 .if P_FAMILY_PAGUMON == TRUE
 	cry_reverse Cry_Pagumon
-	cry_reverse Cry_Slowbro
+	cry_reverse Cry_Pickmon_silver
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Slowking
 .endif @ P_GEN_2_CROSS_EVOS
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_SlowbroMega
+	cry_reverse Cry_Pickmon_silverMega
 .endif @ P_MEGA_EVOLUTIONS
 .if P_GALARIAN_FORMS == TRUE
 	cry_reverse Cry_PagumonGalarian

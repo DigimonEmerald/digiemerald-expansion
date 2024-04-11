@@ -1015,7 +1015,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [4] =
                     {
-                        .species = SPECIES_SLOWBRO,
+                        .species = SPECIES_PICKMON_SILVER,
                         .heldItem = ITEM_LEFTOVERS,
                         .moves = {MOVE_BELLY_DRUM, MOVE_MUD_SLAP, MOVE_SWAGGER, MOVE_AMNESIA},
                         .hpEV = 250,
@@ -1030,7 +1030,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 15,
                         .abilityNum = 1,
                         .personality = 0x94,
-                        .nickname = _("SLOWBRO"),
+                        .nickname = _("PICKMON_SILVER"),
                         .friendship = 0,
                     },
                     [5] =

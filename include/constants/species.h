@@ -81,7 +81,7 @@
 #define SPECIES_NEGAMON                                  77
 #define SPECIES_NYAROMON                                78
 #define SPECIES_PAGUMON                                79
-#define SPECIES_SLOWBRO                                 80
+#define SPECIES_PICKMON_SILVER                                 80
 #define SPECIES_MAGNEMITE                               81
 #define SPECIES_MAGNETON                                82
 #define SPECIES_FARFETCHD                               83
@@ -971,7 +971,7 @@
 #define SPECIES_KEEMON_MEGA                           910
 #define SPECIES_LEAFMON_MEGA                            911
 #define SPECIES_KAPURIMON_MEGA                           912
-#define SPECIES_SLOWBRO_MEGA                            913
+#define SPECIES_PICKMON_SILVER_MEGA                            913
 #define SPECIES_GENGAR_MEGA                             914
 #define SPECIES_KANGASKHAN_MEGA                         915
 #define SPECIES_PINSIR_MEGA                             916
@@ -1036,7 +1036,7 @@
 #define SPECIES_NEGAMON_GALARIAN                         975
 #define SPECIES_NYAROMON_GALARIAN                       976
 #define SPECIES_PAGUMON_GALARIAN                       977
-#define SPECIES_SLOWBRO_GALARIAN                        978
+#define SPECIES_PICKMON_SILVER_GALARIAN                        978
 #define SPECIES_FARFETCHD_GALARIAN                      979
 #define SPECIES_WEEZING_GALARIAN                        980
 #define SPECIES_MR_MIME_GALARIAN                        981

@@ -1251,13 +1251,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Pagumon[] = INCBIN_U8("graphics/pokemon/pagumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Slowbro[] = INCBIN_U32("graphics/pokemon/slowbro/anim_front.4bpp.lz");
-    const u32 gMonPalette_Slowbro[] = INCBIN_U32("graphics/pokemon/slowbro/normal.gbapal.lz");
-    const u32 gMonBackPic_Slowbro[] = INCBIN_U32("graphics/pokemon/slowbro/back.4bpp.lz");
-    const u32 gMonShinyPalette_Slowbro[] = INCBIN_U32("graphics/pokemon/slowbro/shiny.gbapal.lz");
-    const u8 gMonIcon_Slowbro[] = INCBIN_U8("graphics/pokemon/slowbro/icon.4bpp");
+    const u32 gMonFrontPic_Pickmon_silver[] = INCBIN_U32("graphics/pokemon/pickmon_silver/anim_front.4bpp.lz");
+    const u32 gMonPalette_Pickmon_silver[] = INCBIN_U32("graphics/pokemon/pickmon_silver/normal.gbapal.lz");
+    const u32 gMonBackPic_Pickmon_silver[] = INCBIN_U32("graphics/pokemon/pickmon_silver/back.4bpp.lz");
+    const u32 gMonShinyPalette_Pickmon_silver[] = INCBIN_U32("graphics/pokemon/pickmon_silver/shiny.gbapal.lz");
+    const u8 gMonIcon_Pickmon_silver[] = INCBIN_U8("graphics/pokemon/pickmon_silver/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Slowbro[] = INCBIN_U8("graphics/pokemon/slowbro/footprint.1bpp");
+    const u8 gMonFootprint_Pickmon_silver[] = INCBIN_U8("graphics/pokemon/pickmon_silver/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_2_CROSS_EVOS
@@ -1272,11 +1272,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_2_CROSS_EVOS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_SlowbroMega[] = INCBIN_U32("graphics/pokemon/slowbro/mega/front.4bpp.lz");
-    const u32 gMonPalette_SlowbroMega[] = INCBIN_U32("graphics/pokemon/slowbro/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_SlowbroMega[] = INCBIN_U32("graphics/pokemon/slowbro/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_SlowbroMega[] = INCBIN_U32("graphics/pokemon/slowbro/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_SlowbroMega[] = INCBIN_U8("graphics/pokemon/slowbro/mega/icon.4bpp");
+    const u32 gMonFrontPic_Pickmon_silverMega[] = INCBIN_U32("graphics/pokemon/pickmon_silver/mega/front.4bpp.lz");
+    const u32 gMonPalette_Pickmon_silverMega[] = INCBIN_U32("graphics/pokemon/pickmon_silver/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_Pickmon_silverMega[] = INCBIN_U32("graphics/pokemon/pickmon_silver/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_Pickmon_silverMega[] = INCBIN_U32("graphics/pokemon/pickmon_silver/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_Pickmon_silverMega[] = INCBIN_U8("graphics/pokemon/pickmon_silver/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GALARIAN_FORMS
@@ -1286,11 +1286,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_PagumonGalarian[] = INCBIN_U32("graphics/pokemon/pagumon/galarian/shiny.gbapal.lz");
     const u8 gMonIcon_PagumonGalarian[] = INCBIN_U8("graphics/pokemon/pagumon/galarian/icon.4bpp");
 
-    const u32 gMonFrontPic_SlowbroGalarian[] = INCBIN_U32("graphics/pokemon/slowbro/galarian/front.4bpp.lz");
-    const u32 gMonPalette_SlowbroGalarian[] = INCBIN_U32("graphics/pokemon/slowbro/galarian/normal.gbapal.lz");
-    const u32 gMonBackPic_SlowbroGalarian[] = INCBIN_U32("graphics/pokemon/slowbro/galarian/back.4bpp.lz");
-    const u32 gMonShinyPalette_SlowbroGalarian[] = INCBIN_U32("graphics/pokemon/slowbro/galarian/shiny.gbapal.lz");
-    const u8 gMonIcon_SlowbroGalarian[] = INCBIN_U8("graphics/pokemon/slowbro/galarian/icon.4bpp");
+    const u32 gMonFrontPic_Pickmon_silverGalarian[] = INCBIN_U32("graphics/pokemon/pickmon_silver/galarian/front.4bpp.lz");
+    const u32 gMonPalette_Pickmon_silverGalarian[] = INCBIN_U32("graphics/pokemon/pickmon_silver/galarian/normal.gbapal.lz");
+    const u32 gMonBackPic_Pickmon_silverGalarian[] = INCBIN_U32("graphics/pokemon/pickmon_silver/galarian/back.4bpp.lz");
+    const u32 gMonShinyPalette_Pickmon_silverGalarian[] = INCBIN_U32("graphics/pokemon/pickmon_silver/galarian/shiny.gbapal.lz");
+    const u8 gMonIcon_Pickmon_silverGalarian[] = INCBIN_U8("graphics/pokemon/pickmon_silver/galarian/icon.4bpp");
 
 #if P_GEN_2_CROSS_EVOS
     const u32 gMonFrontPic_SlowkingGalarian[] = INCBIN_U32("graphics/pokemon/slowking/galarian/front.4bpp.lz");

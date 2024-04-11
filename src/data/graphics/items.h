@@ -835,8 +835,8 @@ const u32 gItemIconPalette_Leafmonite[] = INCBIN_U32("graphics/items/icon_palett
 const u32 gItemIcon_Alakazite[] = INCBIN_U32("graphics/items/icons/alakazite.4bpp.lz");
 const u32 gItemIconPalette_Alakazite[] = INCBIN_U32("graphics/items/icon_palettes/alakazite.gbapal.lz");
 
-const u32 gItemIcon_Slowbronite[] = INCBIN_U32("graphics/items/icons/slowbronite.4bpp.lz");
-const u32 gItemIconPalette_Slowbronite[] = INCBIN_U32("graphics/items/icon_palettes/slowbronite.gbapal.lz");
+const u32 gItemIcon_Pickmon_silvernite[] = INCBIN_U32("graphics/items/icons/pickmon_silvernite.4bpp.lz");
+const u32 gItemIconPalette_Pickmon_silvernite[] = INCBIN_U32("graphics/items/icon_palettes/pickmon_silvernite.gbapal.lz");
 
 const u32 gItemIcon_Gengarite[] = INCBIN_U32("graphics/items/icons/gengarite.4bpp.lz");
 const u32 gItemIconPalette_Gengarite[] = INCBIN_U32("graphics/items/icon_palettes/gengarite.gbapal.lz");

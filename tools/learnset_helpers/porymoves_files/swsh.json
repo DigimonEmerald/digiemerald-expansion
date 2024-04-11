@@ -6569,7 +6569,7 @@
     ],
     "TutorMoves": []
   },
-  "SLOWBRO": {
+  "PICKMON_SILVER": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -79522,7 +79522,7 @@
       "MOVE_EXPANDING_FORCE"
     ]
   },
-  "SLOWBRO_GALARIAN": {
+  "PICKMON_SILVER_GALARIAN": {
     "LevelMoves": [
       {
         "Level": 0,

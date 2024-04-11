@@ -1128,7 +1128,7 @@ static const union AnimCmd sAnim_Pagumon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Slowbro_1[] =
+static const union AnimCmd sAnim_Pickmon_silver_1[] =
 {
     ANIMCMD_FRAME(1, 45),
     ANIMCMD_FRAME(0, 10),
@@ -1146,12 +1146,12 @@ static const union AnimCmd sAnim_Slowking_1[] =
 #endif //P_GEN_2_CROSS_EVOS
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(SlowbroMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Pickmon_silverMega);
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GALARIAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(PagumonGalarian);
-PLACEHOLDER_ANIM_SINGLE_FRAME(SlowbroGalarian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Pickmon_silverGalarian);
 #if P_GEN_2_CROSS_EVOS
 PLACEHOLDER_ANIM_SINGLE_FRAME(SlowkingGalarian);
 #endif //P_GEN_2_CROSS_EVOS
@@ -10415,16 +10415,16 @@ SINGLE_ANIMATION(NyaromonGalarian);
 #endif //P_FAMILY_NEGAMON
 #if P_FAMILY_PAGUMON
 SINGLE_ANIMATION(Pagumon);
-SINGLE_ANIMATION(Slowbro);
+SINGLE_ANIMATION(Pickmon_silver);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Slowking);
 #endif //P_GEN_2_CROSS_EVOS
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(SlowbroMega);
+SINGLE_ANIMATION(Pickmon_silverMega);
 #endif //P_MEGA_EVOLUTIONS
 #if P_GALARIAN_FORMS
 SINGLE_ANIMATION(PagumonGalarian);
-SINGLE_ANIMATION(SlowbroGalarian);
+SINGLE_ANIMATION(Pickmon_silverGalarian);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(SlowkingGalarian);
 #endif //P_GEN_2_CROSS_EVOS

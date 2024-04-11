@@ -4756,14 +4756,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_SLOWBRONITE] =
+    [ITEM_PICKMON_SILVERNITE] =
     {
-        .name = _("Slowbronite"),
+        .name = _("Pickmon_silvernite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Slowbro to Mega\n"
+            "Pickmon_silver to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

@@ -2071,7 +2071,7 @@ static const struct LevelUpMove sPagumonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sSlowbroLevelUpLearnset[] = {
+static const struct LevelUpMove sPickmon_silverLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_WITHDRAW),
     LEVEL_UP_MOVE( 1, MOVE_WITHDRAW),
     LEVEL_UP_MOVE( 1, MOVE_HEAL_PULSE),
@@ -2142,7 +2142,7 @@ static const struct LevelUpMove sPagumonGalarianLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sSlowbroGalarianLevelUpLearnset[] = {
+static const struct LevelUpMove sPickmon_silverGalarianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SHELL_SIDE_ARM),
     LEVEL_UP_MOVE( 1, MOVE_SHELL_SIDE_ARM),
     LEVEL_UP_MOVE( 1, MOVE_WITHDRAW),

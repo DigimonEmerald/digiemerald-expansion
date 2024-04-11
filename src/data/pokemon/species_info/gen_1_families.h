@@ -7850,12 +7850,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPagumonLevelUpLearnset,
         .teachableLearnset = sPagumonTeachableLearnset,
         .formSpeciesIdTable = sPagumonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_SLOWBRO},
+        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_PICKMON_SILVER},
                                 {EVO_TRADE_ITEM, ITEM_KINGS_ROCK, SPECIES_SLOWKING},
                                 {EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_SLOWKING}),
     },
 
-    [SPECIES_SLOWBRO] =
+    [SPECIES_PICKMON_SILVER] =
     {
         .baseHP        = 95,
         .baseAttack    = 75,
@@ -7875,9 +7875,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_OWN_TEMPO, ABILITY_REGENERATOR },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Slowbro"),
-        .cryId = CRY_SLOWBRO,
-        .natDexNum = NATIONAL_DEX_SLOWBRO,
+        .speciesName = _("Pickmon_silver"),
+        .cryId = CRY_PICKMON_SILVER,
+        .natDexNum = NATIONAL_DEX_PICKMON_SILVER,
         .categoryName = _("Hermit Crab"),
         .height = 16,
         .weight = 785,
@@ -7890,24 +7890,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 6,
         .trainerScale = 296,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_Slowbro,
+        .frontPic = gMonFrontPic_Pickmon_silver,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Slowbro,
+        .frontAnimFrames = sAnims_Pickmon_silver,
         .frontAnimId = ANIM_H_STRETCH,
-        .backPic = gMonBackPic_Slowbro,
+        .backPic = gMonBackPic_Pickmon_silver,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Slowbro,
-        .shinyPalette = gMonShinyPalette_Slowbro,
-        .iconSprite = gMonIcon_Slowbro,
+        .palette = gMonPalette_Pickmon_silver,
+        .shinyPalette = gMonShinyPalette_Pickmon_silver,
+        .iconSprite = gMonIcon_Pickmon_silver,
         .iconPalIndex = 0,
-        FOOTPRINT(Slowbro)
-        .levelUpLearnset = sSlowbroLevelUpLearnset,
-        .teachableLearnset = sSlowbroTeachableLearnset,
-        .formSpeciesIdTable = sSlowbroFormSpeciesIdTable,
-        .formChangeTable = sSlowbroFormChangeTable,
+        FOOTPRINT(Pickmon_silver)
+        .levelUpLearnset = sPickmon_silverLevelUpLearnset,
+        .teachableLearnset = sPickmon_silverTeachableLearnset,
+        .formSpeciesIdTable = sPickmon_silverFormSpeciesIdTable,
+        .formChangeTable = sPickmon_silverFormChangeTable,
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -7967,7 +7967,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_2_CROSS_EVOS
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_SLOWBRO_MEGA] =
+    [SPECIES_PICKMON_SILVER_MEGA] =
     {
         .baseHP        = 95,
         .baseAttack    = 75,
@@ -7987,9 +7987,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_SHELL_ARMOR, ABILITY_SHELL_ARMOR, ABILITY_SHELL_ARMOR },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Slowbro"),
-        .cryId = CRY_SLOWBRO,
-        .natDexNum = NATIONAL_DEX_SLOWBRO,
+        .speciesName = _("Pickmon_silver"),
+        .cryId = CRY_PICKMON_SILVER,
+        .natDexNum = NATIONAL_DEX_PICKMON_SILVER,
         .categoryName = _("Hermit Crab"),
         .height = 20,
         .weight = 1200,
@@ -8002,25 +8002,25 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 6,
         .trainerScale = 296,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_SlowbroMega,
+        .frontPic = gMonFrontPic_Pickmon_silverMega,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SlowbroMega,
+        .frontAnimFrames = sAnims_Pickmon_silverMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_SlowbroMega,
+        .backPic = gMonBackPic_Pickmon_silverMega,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_SlowbroMega,
-        .shinyPalette = gMonShinyPalette_SlowbroMega,
-        .iconSprite = gMonIcon_SlowbroMega,
+        .palette = gMonPalette_Pickmon_silverMega,
+        .shinyPalette = gMonShinyPalette_Pickmon_silverMega,
+        .iconSprite = gMonIcon_Pickmon_silverMega,
         .iconPalIndex = 0,
-        FOOTPRINT(Slowbro)
+        FOOTPRINT(Pickmon_silver)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sSlowbroLevelUpLearnset,
-        .teachableLearnset = sSlowbroTeachableLearnset,
-        .formSpeciesIdTable = sSlowbroFormSpeciesIdTable,
-        .formChangeTable = sSlowbroFormChangeTable,
+        .levelUpLearnset = sPickmon_silverLevelUpLearnset,
+        .teachableLearnset = sPickmon_silverTeachableLearnset,
+        .formSpeciesIdTable = sPickmon_silverFormSpeciesIdTable,
+        .formChangeTable = sPickmon_silverFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 
@@ -8077,11 +8077,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPagumonGalarianLevelUpLearnset,
         .teachableLearnset = sPagumonGalarianTeachableLearnset,
         .formSpeciesIdTable = sPagumonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_GALARICA_CUFF, SPECIES_SLOWBRO_GALARIAN},
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_GALARICA_CUFF, SPECIES_PICKMON_SILVER_GALARIAN},
                                 {EVO_ITEM, ITEM_GALARICA_WREATH, SPECIES_SLOWKING_GALARIAN}),
     },
 
-    [SPECIES_SLOWBRO_GALARIAN] =
+    [SPECIES_PICKMON_SILVER_GALARIAN] =
     {
         .baseHP        = 95,
         .baseAttack    = 100,
@@ -8101,39 +8101,39 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_QUICK_DRAW, ABILITY_OWN_TEMPO, ABILITY_REGENERATOR },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Slowbro"),
-        .cryId = CRY_SLOWBRO,
-        .natDexNum = NATIONAL_DEX_SLOWBRO,
+        .speciesName = _("Pickmon_silver"),
+        .cryId = CRY_PICKMON_SILVER,
+        .natDexNum = NATIONAL_DEX_PICKMON_SILVER,
         .categoryName = _("Hermit Crab"),
         .height = 16,
         .weight = 705,
         .description = COMPOUND_STRING(
             "A Shellder bite set off a chemical reaction\n"
-            "with the spices inside Slowbro's body,\n"
-            "causing Slowbro to become a\n"
+            "with the spices inside Pickmon_silver's body,\n"
+            "causing Pickmon_silver to become a\n"
             "Poison-type Pokémon."),
         .pokemonScale = 256,
         .pokemonOffset = 6,
         .trainerScale = 296,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_SlowbroGalarian,
+        .frontPic = gMonFrontPic_Pickmon_silverGalarian,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_SlowbroGalarian,
+        .frontAnimFrames = sAnims_Pickmon_silverGalarian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_SlowbroGalarian,
+        .backPic = gMonBackPic_Pickmon_silverGalarian,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_SlowbroGalarian,
-        .shinyPalette = gMonShinyPalette_SlowbroGalarian,
-        .iconSprite = gMonIcon_SlowbroGalarian,
+        .palette = gMonPalette_Pickmon_silverGalarian,
+        .shinyPalette = gMonShinyPalette_Pickmon_silverGalarian,
+        .iconSprite = gMonIcon_Pickmon_silverGalarian,
         .iconPalIndex = 0,
-        FOOTPRINT(Slowbro)
+        FOOTPRINT(Pickmon_silver)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sSlowbroGalarianLevelUpLearnset,
-        .teachableLearnset = sSlowbroGalarianTeachableLearnset,
-        .formSpeciesIdTable = sSlowbroFormSpeciesIdTable,
+        .levelUpLearnset = sPickmon_silverGalarianLevelUpLearnset,
+        .teachableLearnset = sPickmon_silverGalarianTeachableLearnset,
+        .formSpeciesIdTable = sPickmon_silverFormSpeciesIdTable,
     },
 
 #if P_GEN_2_CROSS_EVOS

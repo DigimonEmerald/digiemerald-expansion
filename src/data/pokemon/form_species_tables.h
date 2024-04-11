@@ -231,10 +231,10 @@ static const u16 sPagumonFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
-static const u16 sSlowbroFormSpeciesIdTable[] = {
-    SPECIES_SLOWBRO,
-    SPECIES_SLOWBRO_MEGA,
-    SPECIES_SLOWBRO_GALARIAN,
+static const u16 sPickmon_silverFormSpeciesIdTable[] = {
+    SPECIES_PICKMON_SILVER,
+    SPECIES_PICKMON_SILVER_MEGA,
+    SPECIES_PICKMON_SILVER_GALARIAN,
     FORM_SPECIES_END,
 };
 

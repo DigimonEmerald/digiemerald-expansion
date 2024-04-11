@@ -3942,7 +3942,7 @@ static const u16 sPagumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSlowbroTeachableLearnset[] = {
+static const u16 sPickmon_silverTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -4100,7 +4100,7 @@ static const u16 sPagumonGalarianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSlowbroGalarianTeachableLearnset[] = {
+static const u16 sPickmon_silverGalarianTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,

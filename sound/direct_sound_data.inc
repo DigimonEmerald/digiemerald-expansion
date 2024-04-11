@@ -855,8 +855,8 @@ Cry_Pagumon::
 	.incbin "sound/direct_sound_samples/cries/pagumon.bin"
 
 	.align 2
-Cry_Slowbro::
-	.incbin "sound/direct_sound_samples/cries/slowbro.bin"
+Cry_Pickmon_silver::
+	.incbin "sound/direct_sound_samples/cries/pickmon_silver.bin"
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
@@ -865,8 +865,8 @@ Cry_Slowking::
 .endif @ P_GEN_2_CROSS_EVOS
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_SlowbroMega::
-	.incbin "sound/direct_sound_samples/cries/slowbro_mega.bin"
+Cry_Pickmon_silverMega::
+	.incbin "sound/direct_sound_samples/cries/pickmon_silver_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .if P_GALARIAN_FORMS == TRUE
 	.align 2
