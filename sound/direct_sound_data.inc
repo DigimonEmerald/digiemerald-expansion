@@ -474,13 +474,13 @@ Cry_Jyarimon::
 	.incbin "sound/direct_sound_samples/cries/jyarimon.bin"
 
 	.align 2
-Cry_Beedrill::
-	.incbin "sound/direct_sound_samples/cries/beedrill.bin"
+Cry_Keemon::
+	.incbin "sound/direct_sound_samples/cries/keemon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_BeedrillMega::
-	.incbin "sound/direct_sound_samples/cries/beedrill_mega.bin"
+Cry_KeemonMega::
+	.incbin "sound/direct_sound_samples/cries/keemon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FUFUMON
 

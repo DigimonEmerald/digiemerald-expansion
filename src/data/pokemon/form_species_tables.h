@@ -35,9 +35,9 @@ static const u16 sDokimonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_DATIRIMON
 
 #if P_FAMILY_FUFUMON
-static const u16 sBeedrillFormSpeciesIdTable[] = {
-    SPECIES_BEEDRILL,
-    SPECIES_BEEDRILL_MEGA,
+static const u16 sKeemonFormSpeciesIdTable[] = {
+    SPECIES_KEEMON,
+    SPECIES_KEEMON_MEGA,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_FUFUMON

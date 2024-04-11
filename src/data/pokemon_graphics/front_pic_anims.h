@@ -202,7 +202,7 @@ static const union AnimCmd sAnim_Jyarimon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Beedrill_1[] =
+static const union AnimCmd sAnim_Keemon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 35),
@@ -215,7 +215,7 @@ static const union AnimCmd sAnim_Beedrill_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(BeedrillMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(KeemonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FUFUMON
 
@@ -10198,9 +10198,9 @@ SINGLE_ANIMATION(DokimonGigantamax);
 #if P_FAMILY_FUFUMON
 SINGLE_ANIMATION(Fufumon);
 SINGLE_ANIMATION(Jyarimon);
-SINGLE_ANIMATION(Beedrill);
+SINGLE_ANIMATION(Keemon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(BeedrillMega);
+SINGLE_ANIMATION(KeemonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FUFUMON
 #if P_FAMILY_PIDGEY

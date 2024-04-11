@@ -1262,15 +1262,15 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sJyarimonLevelUpLearnset,
         .teachableLearnset = sJyarimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_BEEDRILL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_KEEMON}),
     },
 
-#define BEEDRILL_ATTACK (P_UPDATED_STATS >= GEN_6 ? 90 : 80)
+#define KEEMON_ATTACK (P_UPDATED_STATS >= GEN_6 ? 90 : 80)
 
-    [SPECIES_BEEDRILL] =
+    [SPECIES_KEEMON] =
     {
         .baseHP        = 65,
-        .baseAttack    = BEEDRILL_ATTACK,
+        .baseAttack    = KEEMON_ATTACK,
         .baseDefense   = 40,
         .baseSpeed     = 75,
         .baseSpAttack  = 45,
@@ -1296,14 +1296,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SWARM, ABILITY_NONE, ABILITY_SNIPER },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Beedrill"),
-        .cryId = CRY_BEEDRILL,
-        .natDexNum = NATIONAL_DEX_BEEDRILL,
+        .speciesName = _("Keemon"),
+        .cryId = CRY_KEEMON,
+        .natDexNum = NATIONAL_DEX_KEEMON,
         .categoryName = _("Poison Bee"),
         .height = 10,
         .weight = 295,
         .description = COMPOUND_STRING(
-            "A Beedrill is extremely territorial.\n"
+            "A Keemon is extremely territorial.\n"
             "For safety reasons, no one should ever\n"
             "approach its nest. If angered, they will\n"
             "attack in a swarm."),
@@ -1311,32 +1311,32 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 2,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Beedrill,
+        .frontPic = gMonFrontPic_Keemon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_Beedrill,
+        .frontAnimFrames = sAnims_Keemon,
         .frontAnimId = ANIM_ZIGZAG_SLOW,
         .enemyMonElevation = 9,
-        .backPic = gMonBackPic_Beedrill,
+        .backPic = gMonBackPic_Keemon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Beedrill,
-        .shinyPalette = gMonShinyPalette_Beedrill,
-        .iconSprite = gMonIcon_Beedrill,
+        .palette = gMonPalette_Keemon,
+        .shinyPalette = gMonShinyPalette_Keemon,
+        .iconSprite = gMonIcon_Keemon,
         .iconPalIndex = 2,
-        FOOTPRINT(Beedrill)
-        .levelUpLearnset = sBeedrillLevelUpLearnset,
-        .teachableLearnset = sBeedrillTeachableLearnset,
-        .formSpeciesIdTable = sBeedrillFormSpeciesIdTable,
-        .formChangeTable = sBeedrillFormChangeTable,
+        FOOTPRINT(Keemon)
+        .levelUpLearnset = sKeemonLevelUpLearnset,
+        .teachableLearnset = sKeemonTeachableLearnset,
+        .formSpeciesIdTable = sKeemonFormSpeciesIdTable,
+        .formChangeTable = sKeemonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_BEEDRILL_MEGA] =
+    [SPECIES_KEEMON_MEGA] =
     {
         .baseHP        = 65,
-        .baseAttack    = BEEDRILL_ATTACK + 60,
+        .baseAttack    = KEEMON_ATTACK + 60,
         .baseDefense   = 40,
         .baseSpeed     = 145,
         .baseSpAttack  = 15,
@@ -1354,9 +1354,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_ADAPTABILITY, ABILITY_ADAPTABILITY, ABILITY_ADAPTABILITY },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Beedrill"),
-        .cryId = CRY_BEEDRILL_MEGA,
-        .natDexNum = NATIONAL_DEX_BEEDRILL,
+        .speciesName = _("Keemon"),
+        .cryId = CRY_KEEMON_MEGA,
+        .natDexNum = NATIONAL_DEX_KEEMON,
         .categoryName = _("Poison Bee"),
         .height = 14,
         .weight = 405,
@@ -1369,26 +1369,26 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 2,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_BeedrillMega,
+        .frontPic = gMonFrontPic_KeemonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_BeedrillMega,
+        .frontAnimFrames = sAnims_KeemonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 5,
-        .backPic = gMonBackPic_BeedrillMega,
+        .backPic = gMonBackPic_KeemonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_BeedrillMega,
-        .shinyPalette = gMonShinyPalette_BeedrillMega,
-        .iconSprite = gMonIcon_BeedrillMega,
+        .palette = gMonPalette_KeemonMega,
+        .shinyPalette = gMonShinyPalette_KeemonMega,
+        .iconSprite = gMonIcon_KeemonMega,
         .iconPalIndex = 2,
-        FOOTPRINT(Beedrill)
+        FOOTPRINT(Keemon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sBeedrillLevelUpLearnset,
-        .teachableLearnset = sBeedrillTeachableLearnset,
-        .formSpeciesIdTable = sBeedrillFormSpeciesIdTable,
-        .formChangeTable = sBeedrillFormChangeTable,
+        .levelUpLearnset = sKeemonLevelUpLearnset,
+        .teachableLearnset = sKeemonTeachableLearnset,
+        .formSpeciesIdTable = sKeemonFormSpeciesIdTable,
+        .formChangeTable = sKeemonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FUFUMON

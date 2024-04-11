@@ -99,7 +99,7 @@ SINGLE_BATTLE_TEST("U-turn switches the user out after Ice Face activates")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_U_TURN].category == DAMAGE_CATEGORY_PHYSICAL);
-        PLAYER(SPECIES_BEEDRILL);
+        PLAYER(SPECIES_KEEMON);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_EISCUE) { Ability(ABILITY_ICE_FACE); }
     } WHEN {

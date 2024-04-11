@@ -16,7 +16,7 @@
 #define SPECIES_DOKIMON                              12
 #define SPECIES_FUFUMON                                  13
 #define SPECIES_JYARIMON                                  14
-#define SPECIES_BEEDRILL                                15
+#define SPECIES_KEEMON                                15
 #define SPECIES_PIDGEY                                  16
 #define SPECIES_PIDGEOTTO                               17
 #define SPECIES_PIDGEOT                                 18
@@ -968,7 +968,7 @@
 #define SPECIES_CHIBOMON_MEGA_X                        907
 #define SPECIES_CHIBOMON_MEGA_Y                        908
 #define SPECIES_CURIMON_MEGA                          909
-#define SPECIES_BEEDRILL_MEGA                           910
+#define SPECIES_KEEMON_MEGA                           910
 #define SPECIES_PIDGEOT_MEGA                            911
 #define SPECIES_ALAKAZAM_MEGA                           912
 #define SPECIES_SLOWBRO_MEGA                            913

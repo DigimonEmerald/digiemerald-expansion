@@ -210,21 +210,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Jyarimon[] = INCBIN_U8("graphics/pokemon/jyarimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Beedrill[] = INCBIN_U32("graphics/pokemon/beedrill/anim_front.4bpp.lz");
-    const u32 gMonPalette_Beedrill[] = INCBIN_U32("graphics/pokemon/beedrill/normal.gbapal.lz");
-    const u32 gMonBackPic_Beedrill[] = INCBIN_U32("graphics/pokemon/beedrill/back.4bpp.lz");
-    const u32 gMonShinyPalette_Beedrill[] = INCBIN_U32("graphics/pokemon/beedrill/shiny.gbapal.lz");
-    const u8 gMonIcon_Beedrill[] = INCBIN_U8("graphics/pokemon/beedrill/icon.4bpp");
+    const u32 gMonFrontPic_Keemon[] = INCBIN_U32("graphics/pokemon/keemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Keemon[] = INCBIN_U32("graphics/pokemon/keemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Keemon[] = INCBIN_U32("graphics/pokemon/keemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Keemon[] = INCBIN_U32("graphics/pokemon/keemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Keemon[] = INCBIN_U8("graphics/pokemon/keemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Beedrill[] = INCBIN_U8("graphics/pokemon/beedrill/footprint.1bpp");
+    const u8 gMonFootprint_Keemon[] = INCBIN_U8("graphics/pokemon/keemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_BeedrillMega[] = INCBIN_U32("graphics/pokemon/beedrill/mega/front.4bpp.lz");
-    const u32 gMonPalette_BeedrillMega[] = INCBIN_U32("graphics/pokemon/beedrill/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_BeedrillMega[] = INCBIN_U32("graphics/pokemon/beedrill/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_BeedrillMega[] = INCBIN_U32("graphics/pokemon/beedrill/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_BeedrillMega[] = INCBIN_U8("graphics/pokemon/beedrill/mega/icon.4bpp");
+    const u32 gMonFrontPic_KeemonMega[] = INCBIN_U32("graphics/pokemon/keemon/mega/front.4bpp.lz");
+    const u32 gMonPalette_KeemonMega[] = INCBIN_U32("graphics/pokemon/keemon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_KeemonMega[] = INCBIN_U32("graphics/pokemon/keemon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_KeemonMega[] = INCBIN_U32("graphics/pokemon/keemon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_KeemonMega[] = INCBIN_U8("graphics/pokemon/keemon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FUFUMON
 

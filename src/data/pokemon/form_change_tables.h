@@ -32,8 +32,8 @@ static const struct FormChange sDokimonFormChangeTable[] =
 #endif //P_FAMILY_DATIRIMON
 
 #if P_FAMILY_FUFUMON
-static const struct FormChange sBeedrillFormChangeTable[] = {
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BEEDRILL_MEGA, ITEM_BEEDRILLITE},
+static const struct FormChange sKeemonFormChangeTable[] = {
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_KEEMON_MEGA, ITEM_KEEMONITE},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_FUFUMON
