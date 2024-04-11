@@ -5084,7 +5084,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_BIBIMON
 
-#if P_FAMILY_DIGLETT
+#if P_FAMILY_BUDMON
 
 #if P_UPDATED_EXP_YIELDS >= GEN_7
     #define DUGTRIO_EXP_YIELD 149
@@ -5096,7 +5096,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
 #define DUGTRIO_ATTACK (P_UPDATED_STATS >= GEN_7 ? 100 : 80)
 
-    [SPECIES_DIGLETT] =
+    [SPECIES_BUDMON] =
     {
         .baseHP        = 10,
         .baseAttack    = 55,
@@ -5116,14 +5116,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SAND_VEIL, ABILITY_ARENA_TRAP, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Diglett"),
-        .cryId = CRY_DIGLETT,
-        .natDexNum = NATIONAL_DEX_DIGLETT,
+        .speciesName = _("Budmon"),
+        .cryId = CRY_BUDMON,
+        .natDexNum = NATIONAL_DEX_BUDMON,
         .categoryName = _("Mole"),
         .height = 2,
         .weight = 8,
         .description = COMPOUND_STRING(
-            "Diglett are raised in most farms.\n"
+            "Budmon are raised in most farms.\n"
             "The reason is simple--wherever they\n"
             "burrow, the soil is left perfectly tilled\n"
             "for growing delicious crops."),
@@ -5131,24 +5131,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 25,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Diglett,
+        .frontPic = gMonFrontPic_Budmon,
         .frontPicSize = MON_COORDS_SIZE(32, 32),
         .frontPicYOffset = 17,
-        .frontAnimFrames = sAnims_Diglett,
+        .frontAnimFrames = sAnims_Budmon,
         .frontAnimId = ANIM_V_SHAKE,
         .frontAnimDelay = 25,
-        .backPic = gMonBackPic_Diglett,
+        .backPic = gMonBackPic_Budmon,
         .backPicSize = MON_COORDS_SIZE(40, 40),
         .backPicYOffset = 14,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Diglett,
-        .shinyPalette = gMonShinyPalette_Diglett,
-        .iconSprite = gMonIcon_Diglett,
+        .palette = gMonPalette_Budmon,
+        .shinyPalette = gMonShinyPalette_Budmon,
+        .iconSprite = gMonIcon_Budmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Diglett)
-        .levelUpLearnset = sDiglettLevelUpLearnset,
-        .teachableLearnset = sDiglettTeachableLearnset,
-        .formSpeciesIdTable = sDiglettFormSpeciesIdTable,
+        FOOTPRINT(Budmon)
+        .levelUpLearnset = sBudmonLevelUpLearnset,
+        .teachableLearnset = sBudmonTeachableLearnset,
+        .formSpeciesIdTable = sBudmonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_DUGTRIO}),
     },
 
@@ -5208,7 +5208,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_ALOLAN_FORMS
-    [SPECIES_DIGLETT_ALOLAN] =
+    [SPECIES_BUDMON_ALOLAN] =
     {
         .baseHP        = 10,
         .baseAttack    = 55,
@@ -5228,9 +5228,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SAND_VEIL, ABILITY_TANGLING_HAIR, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Diglett"),
-        .cryId = CRY_DIGLETT,
-        .natDexNum = NATIONAL_DEX_DIGLETT,
+        .speciesName = _("Budmon"),
+        .cryId = CRY_BUDMON,
+        .natDexNum = NATIONAL_DEX_BUDMON,
         .categoryName = _("Mole"),
         .height = 2,
         .weight = 10,
@@ -5243,24 +5243,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 25,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_DiglettAlolan,
+        .frontPic = gMonFrontPic_BudmonAlolan,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = 19,
-        .frontAnimFrames = sAnims_DiglettAlolan,
+        .frontAnimFrames = sAnims_BudmonAlolan,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_DiglettAlolan,
+        .backPic = gMonBackPic_BudmonAlolan,
         .backPicSize = MON_COORDS_SIZE(40, 48),
         .backPicYOffset = 14,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_DiglettAlolan,
-        .shinyPalette = gMonShinyPalette_DiglettAlolan,
-        .iconSprite = gMonIcon_DiglettAlolan,
+        .palette = gMonPalette_BudmonAlolan,
+        .shinyPalette = gMonShinyPalette_BudmonAlolan,
+        .iconSprite = gMonIcon_BudmonAlolan,
         .iconPalIndex = 2,
-        FOOTPRINT(Diglett)
+        FOOTPRINT(Budmon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sDiglettAlolanLevelUpLearnset,
-        .teachableLearnset = sDiglettAlolanTeachableLearnset,
-        .formSpeciesIdTable = sDiglettFormSpeciesIdTable,
+        .levelUpLearnset = sBudmonAlolanLevelUpLearnset,
+        .teachableLearnset = sBudmonAlolanTeachableLearnset,
+        .formSpeciesIdTable = sBudmonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_DUGTRIO_ALOLAN}),
     },
 
@@ -5320,7 +5320,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sDugtrioFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_DIGLETT
+#endif //P_FAMILY_BUDMON
 
 #if P_FAMILY_MEOWTH
     [SPECIES_MEOWTH] =

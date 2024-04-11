@@ -2278,8 +2278,8 @@ static const u16 sBosamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BIBIMON
 
-#if P_FAMILY_DIGLETT
-static const u16 sDiglettTeachableLearnset[] = {
+#if P_FAMILY_BUDMON
+static const u16 sBudmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CUT,
@@ -2339,7 +2339,7 @@ static const u16 sDugtrioTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sDiglettAlolanTeachableLearnset[] = {
+static const u16 sBudmonAlolanTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DIG,
@@ -2393,7 +2393,7 @@ static const u16 sDugtrioAlolanTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_DIGLETT
+#endif //P_FAMILY_BUDMON
 
 #if P_FAMILY_MEOWTH
 static const u16 sMeowthTeachableLearnset[] = {

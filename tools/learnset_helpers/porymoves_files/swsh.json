@@ -3994,7 +3994,7 @@
       "MOVE_CORROSIVE_GAS"
     ]
   },
-  "DIGLETT": {
+  "BUDMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -78272,7 +78272,7 @@
     ],
     "TutorMoves": []
   },
-  "DIGLETT_ALOLAN": {
+  "BUDMON_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 1,

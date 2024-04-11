@@ -366,8 +366,8 @@ const u16 gEggMoves[] = {
         MOVE_RAGE_POWDER),
 #endif //P_FAMILY_BIBIMON
 
-#if P_FAMILY_DIGLETT
-    egg_moves(DIGLETT,
+#if P_FAMILY_BUDMON
+    egg_moves(BUDMON,
         MOVE_FEINT_ATTACK,
         MOVE_SCREECH,
         MOVE_ANCIENT_POWER,
@@ -382,7 +382,7 @@ const u16 gEggMoves[] = {
         MOVE_FINAL_GAMBIT,
         MOVE_MEMENTO),
 #if P_ALOLAN_FORMS
-    egg_moves(DIGLETT_ALOLAN,
+    egg_moves(BUDMON_ALOLAN,
         MOVE_ANCIENT_POWER,
         MOVE_BEAT_UP,
         MOVE_ENDURE,
@@ -395,7 +395,7 @@ const u16 gEggMoves[] = {
         MOVE_REVERSAL,
         MOVE_THRASH),
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_DIGLETT
+#endif //P_FAMILY_BUDMON
 
 #if P_FAMILY_MEOWTH
     egg_moves(MEOWTH,

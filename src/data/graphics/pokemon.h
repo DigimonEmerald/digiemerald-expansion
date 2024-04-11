@@ -808,14 +808,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_BIBIMON
 
-#if P_FAMILY_DIGLETT
-    const u32 gMonFrontPic_Diglett[] = INCBIN_U32("graphics/pokemon/diglett/anim_front.4bpp.lz");
-    const u32 gMonPalette_Diglett[] = INCBIN_U32("graphics/pokemon/diglett/normal.gbapal.lz");
-    const u32 gMonBackPic_Diglett[] = INCBIN_U32("graphics/pokemon/diglett/back.4bpp.lz");
-    const u32 gMonShinyPalette_Diglett[] = INCBIN_U32("graphics/pokemon/diglett/shiny.gbapal.lz");
-    const u8 gMonIcon_Diglett[] = INCBIN_U8("graphics/pokemon/diglett/icon.4bpp");
+#if P_FAMILY_BUDMON
+    const u32 gMonFrontPic_Budmon[] = INCBIN_U32("graphics/pokemon/budmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Budmon[] = INCBIN_U32("graphics/pokemon/budmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Budmon[] = INCBIN_U32("graphics/pokemon/budmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Budmon[] = INCBIN_U32("graphics/pokemon/budmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Budmon[] = INCBIN_U8("graphics/pokemon/budmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Diglett[] = INCBIN_U8("graphics/pokemon/diglett/footprint.1bpp");
+    const u8 gMonFootprint_Budmon[] = INCBIN_U8("graphics/pokemon/budmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Dugtrio[] = INCBIN_U32("graphics/pokemon/dugtrio/anim_front.4bpp.lz");
@@ -828,11 +828,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
 #if P_ALOLAN_FORMS
-    const u32 gMonFrontPic_DiglettAlolan[] = INCBIN_U32("graphics/pokemon/diglett/alolan/front.4bpp.lz");
-    const u32 gMonPalette_DiglettAlolan[] = INCBIN_U32("graphics/pokemon/diglett/alolan/normal.gbapal.lz");
-    const u32 gMonBackPic_DiglettAlolan[] = INCBIN_U32("graphics/pokemon/diglett/alolan/back.4bpp.lz");
-    const u32 gMonShinyPalette_DiglettAlolan[] = INCBIN_U32("graphics/pokemon/diglett/alolan/shiny.gbapal.lz");
-    const u8 gMonIcon_DiglettAlolan[] = INCBIN_U8("graphics/pokemon/diglett/alolan/icon.4bpp");
+    const u32 gMonFrontPic_BudmonAlolan[] = INCBIN_U32("graphics/pokemon/budmon/alolan/front.4bpp.lz");
+    const u32 gMonPalette_BudmonAlolan[] = INCBIN_U32("graphics/pokemon/budmon/alolan/normal.gbapal.lz");
+    const u32 gMonBackPic_BudmonAlolan[] = INCBIN_U32("graphics/pokemon/budmon/alolan/back.4bpp.lz");
+    const u32 gMonShinyPalette_BudmonAlolan[] = INCBIN_U32("graphics/pokemon/budmon/alolan/shiny.gbapal.lz");
+    const u8 gMonIcon_BudmonAlolan[] = INCBIN_U8("graphics/pokemon/budmon/alolan/icon.4bpp");
 
     const u32 gMonFrontPic_DugtrioAlolan[] = INCBIN_U32("graphics/pokemon/dugtrio/alolan/front.4bpp.lz");
     const u32 gMonPalette_DugtrioAlolan[] = INCBIN_U32("graphics/pokemon/dugtrio/alolan/normal.gbapal.lz");
@@ -840,7 +840,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_DugtrioAlolan[] = INCBIN_U32("graphics/pokemon/dugtrio/alolan/shiny.gbapal.lz");
     const u8 gMonIcon_DugtrioAlolan[] = INCBIN_U8("graphics/pokemon/dugtrio/alolan/icon.4bpp");
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_DIGLETT
+#endif //P_FAMILY_BUDMON
 
 #if P_FAMILY_MEOWTH
     const u32 gMonFrontPic_Meowth[] = INCBIN_U32("graphics/pokemon/meowth/anim_front.4bpp.lz");

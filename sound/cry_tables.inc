@@ -118,10 +118,10 @@ gCryTable::
 	cry Cry_Bibimon
 	cry Cry_Bosamon
 .endif @ P_FAMILY_BIBIMON
-.if P_FAMILY_DIGLETT == TRUE
-	cry Cry_Diglett
+.if P_FAMILY_BUDMON == TRUE
+	cry Cry_Budmon
 	cry Cry_Dugtrio
-.endif @ P_FAMILY_DIGLETT
+.endif @ P_FAMILY_BUDMON
 .if P_FAMILY_MEOWTH == TRUE
 	cry Cry_Meowth
 	cry Cry_Persian
@@ -2544,10 +2544,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Bibimon
 	cry_reverse Cry_Bosamon
 .endif @ P_FAMILY_BIBIMON
-.if P_FAMILY_DIGLETT == TRUE
-	cry_reverse Cry_Diglett
+.if P_FAMILY_BUDMON == TRUE
+	cry_reverse Cry_Budmon
 	cry_reverse Cry_Dugtrio
-.endif @ P_FAMILY_DIGLETT
+.endif @ P_FAMILY_BUDMON
 .if P_FAMILY_MEOWTH == TRUE
 	cry_reverse Cry_Meowth
 	cry_reverse Cry_Persian

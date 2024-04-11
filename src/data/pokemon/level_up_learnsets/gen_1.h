@@ -781,8 +781,8 @@ static const struct LevelUpMove sBosamonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_BIBIMON
 
-#if P_FAMILY_DIGLETT
-static const struct LevelUpMove sDiglettLevelUpLearnset[] = {
+#if P_FAMILY_BUDMON
+static const struct LevelUpMove sBudmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE(15, MOVE_GROWL),
     LEVEL_UP_MOVE(19, MOVE_DIG),
@@ -805,7 +805,7 @@ static const struct LevelUpMove sDugtrioLevelUpLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const struct LevelUpMove sDiglettAlolanLevelUpLearnset[] = {
+static const struct LevelUpMove sBudmonAlolanLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_METAL_CLAW),
     LEVEL_UP_MOVE( 4, MOVE_GROWL),
@@ -847,7 +847,7 @@ static const struct LevelUpMove sDugtrioAlolanLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_DIGLETT
+#endif //P_FAMILY_BUDMON
 
 #if P_FAMILY_MEOWTH
 static const struct LevelUpMove sMeowthLevelUpLearnset[] = {

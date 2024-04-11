@@ -5908,7 +5908,7 @@
       "MOVE_ZEN_HEADBUTT"
     ]
   },
-  "DIGLETT": {
+  "BUDMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -105331,7 +105331,7 @@
       "MOVE_ZEN_HEADBUTT"
     ]
   },
-  "DIGLETT_ALOLAN": {
+  "BUDMON_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 1,

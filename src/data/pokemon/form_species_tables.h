@@ -130,10 +130,10 @@ static const u16 sSakumonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_RELEMON
 
-#if P_FAMILY_DIGLETT
-static const u16 sDiglettFormSpeciesIdTable[] = {
-    SPECIES_DIGLETT,
-    SPECIES_DIGLETT_ALOLAN,
+#if P_FAMILY_BUDMON
+static const u16 sBudmonFormSpeciesIdTable[] = {
+    SPECIES_BUDMON,
+    SPECIES_BUDMON_ALOLAN,
     FORM_SPECIES_END,
 };
 
@@ -142,7 +142,7 @@ static const u16 sDugtrioFormSpeciesIdTable[] = {
     SPECIES_DUGTRIO_ALOLAN,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_DIGLETT
+#endif //P_FAMILY_BUDMON
 
 #if P_FAMILY_MEOWTH
 static const u16 sMeowthFormSpeciesIdTable[] = {

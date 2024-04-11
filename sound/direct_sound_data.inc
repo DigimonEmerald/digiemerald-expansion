@@ -684,15 +684,15 @@ Cry_Bosamon::
 	.incbin "sound/direct_sound_samples/cries/bosamon.bin"
 .endif @ P_FAMILY_BIBIMON
 
-.if P_FAMILY_DIGLETT == TRUE
+.if P_FAMILY_BUDMON == TRUE
 	.align 2
-Cry_Diglett::
-	.incbin "sound/direct_sound_samples/cries/diglett.bin"
+Cry_Budmon::
+	.incbin "sound/direct_sound_samples/cries/budmon.bin"
 
 	.align 2
 Cry_Dugtrio::
 	.incbin "sound/direct_sound_samples/cries/dugtrio.bin"
-.endif @ P_FAMILY_DIGLETT
+.endif @ P_FAMILY_BUDMON
 
 .if P_FAMILY_MEOWTH == TRUE
 	.align 2

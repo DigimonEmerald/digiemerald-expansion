@@ -757,8 +757,8 @@ static const union AnimCmd sAnim_Bosamon_1[] =
 };
 #endif //P_FAMILY_BIBIMON
 
-#if P_FAMILY_DIGLETT
-static const union AnimCmd sAnim_Diglett_1[] =
+#if P_FAMILY_BUDMON
+static const union AnimCmd sAnim_Budmon_1[] =
 {
     ANIMCMD_FRAME(0, 25),
     ANIMCMD_FRAME(1, 35),
@@ -782,10 +782,10 @@ static const union AnimCmd sAnim_Dugtrio_1[] =
 };
 
 #if P_ALOLAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(DiglettAlolan);
+PLACEHOLDER_ANIM_SINGLE_FRAME(BudmonAlolan);
 PLACEHOLDER_ANIM_SINGLE_FRAME(DugtrioAlolan);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_DIGLETT
+#endif //P_FAMILY_BUDMON
 
 #if P_FAMILY_MEOWTH
 static const union AnimCmd sAnim_Meowth_1[] =
@@ -10320,14 +10320,14 @@ SINGLE_ANIMATION(Babymon);
 SINGLE_ANIMATION(Bibimon);
 SINGLE_ANIMATION(Bosamon);
 #endif //P_FAMILY_BIBIMON
-#if P_FAMILY_DIGLETT
-SINGLE_ANIMATION(Diglett);
+#if P_FAMILY_BUDMON
+SINGLE_ANIMATION(Budmon);
 SINGLE_ANIMATION(Dugtrio);
 #if P_ALOLAN_FORMS
-SINGLE_ANIMATION(DiglettAlolan);
+SINGLE_ANIMATION(BudmonAlolan);
 SINGLE_ANIMATION(DugtrioAlolan);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_DIGLETT
+#endif //P_FAMILY_BUDMON
 #if P_FAMILY_MEOWTH
 SINGLE_ANIMATION(Meowth);
 SINGLE_ANIMATION(Persian);
