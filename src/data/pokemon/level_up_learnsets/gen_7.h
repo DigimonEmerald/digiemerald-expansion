@@ -2280,8 +2280,8 @@ static const struct LevelUpMove sMagnezoneLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_PICKMON_WHITE
 
-#if P_FAMILY_FARFETCHD
-static const struct LevelUpMove sFarfetchdLevelUpLearnset[] = {
+#if P_FAMILY_PINAMON
+static const struct LevelUpMove sPinamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BRAVE_BIRD),
     LEVEL_UP_MOVE( 1, MOVE_POISON_JAB),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
@@ -2305,7 +2305,7 @@ static const struct LevelUpMove sFarfetchdLevelUpLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const struct LevelUpMove sFarfetchdGalarianLevelUpLearnset[] = {
+static const struct LevelUpMove sPinamonGalarianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 5, MOVE_LEER),
@@ -2347,7 +2347,7 @@ static const struct LevelUpMove sSirfetchdLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_FARFETCHD
+#endif //P_FAMILY_PINAMON
 
 #if P_FAMILY_DODUO
 static const struct LevelUpMove sDoduoLevelUpLearnset[] = {

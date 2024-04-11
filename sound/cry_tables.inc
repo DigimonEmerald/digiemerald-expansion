@@ -203,12 +203,12 @@ gCryTable::
 	cry Cry_Magnezone
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_PICKMON_WHITE
-.if P_FAMILY_FARFETCHD == TRUE
-	cry Cry_Farfetchd
+.if P_FAMILY_PINAMON == TRUE
+	cry Cry_Pinamon
 .if P_GALARIAN_FORMS == TRUE
 	cry Cry_Sirfetchd
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_FARFETCHD
+.endif @ P_FAMILY_PINAMON
 .if P_FAMILY_DODUO == TRUE
 	cry Cry_Doduo
 	cry Cry_Dodrio
@@ -2629,12 +2629,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Magnezone
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_PICKMON_WHITE
-.if P_FAMILY_FARFETCHD == TRUE
-	cry_reverse Cry_Farfetchd
+.if P_FAMILY_PINAMON == TRUE
+	cry_reverse Cry_Pinamon
 .if P_GALARIAN_FORMS == TRUE
 	cry_reverse Cry_Sirfetchd
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_FARFETCHD
+.endif @ P_FAMILY_PINAMON
 .if P_FAMILY_DODUO == TRUE
 	cry_reverse Cry_Doduo
 	cry_reverse Cry_Dodrio

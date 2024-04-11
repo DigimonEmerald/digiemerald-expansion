@@ -1194,8 +1194,8 @@ static const union AnimCmd sAnim_Magnezone_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_PICKMON_WHITE
 
-#if P_FAMILY_FARFETCHD
-static const union AnimCmd sAnim_Farfetchd_1[] =
+#if P_FAMILY_PINAMON
+static const union AnimCmd sAnim_Pinamon_1[] =
 {
     ANIMCMD_FRAME(1, 5),
     ANIMCMD_FRAME(0, 5),
@@ -1213,10 +1213,10 @@ static const union AnimCmd sAnim_Farfetchd_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(FarfetchdGalarian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(PinamonGalarian);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Sirfetchd);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_FARFETCHD
+#endif //P_FAMILY_PINAMON
 
 #if P_FAMILY_DODUO
 static const union AnimCmd sAnim_Doduo_1[] =
@@ -10437,13 +10437,13 @@ SINGLE_ANIMATION(Pickmon_red);
 SINGLE_ANIMATION(Magnezone);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_PICKMON_WHITE
-#if P_FAMILY_FARFETCHD
-SINGLE_ANIMATION(Farfetchd);
+#if P_FAMILY_PINAMON
+SINGLE_ANIMATION(Pinamon);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(FarfetchdGalarian);
+SINGLE_ANIMATION(PinamonGalarian);
 SINGLE_ANIMATION(Sirfetchd);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_FARFETCHD
+#endif //P_FAMILY_PINAMON
 #if P_FAMILY_DODUO
 SINGLE_ANIMATION(Doduo);
 SINGLE_ANIMATION(Dodrio);

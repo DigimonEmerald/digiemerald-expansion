@@ -4289,8 +4289,8 @@ static const u16 sMagnezoneTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_PICKMON_WHITE
 
-#if P_FAMILY_FARFETCHD
-static const u16 sFarfetchdTeachableLearnset[] = {
+#if P_FAMILY_PINAMON
+static const u16 sPinamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CUT,
@@ -4320,7 +4320,7 @@ static const u16 sFarfetchdTeachableLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const u16 sFarfetchdGalarianTeachableLearnset[] = {
+static const u16 sPinamonGalarianTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_FACADE,
@@ -4360,7 +4360,7 @@ static const u16 sSirfetchdTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_FARFETCHD
+#endif //P_FAMILY_PINAMON
 
 #if P_FAMILY_DODUO
 static const u16 sDoduoTeachableLearnset[] = {

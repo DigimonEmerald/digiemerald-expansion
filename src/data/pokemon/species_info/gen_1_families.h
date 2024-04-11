@@ -8369,28 +8369,28 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_PICKMON_WHITE
 
-#if P_FAMILY_FARFETCHD
-#define FARFETCHD_ATTACK (P_UPDATED_STATS >= GEN_7 ? 90 : 65)
+#if P_FAMILY_PINAMON
+#define PINAMON_ATTACK (P_UPDATED_STATS >= GEN_7 ? 90 : 65)
 
 #if P_UPDATED_EXP_YIELDS >= GEN_7
-    #define FARFETCHD_EXP_YIELD 132
+    #define PINAMON_EXP_YIELD 132
 #elif P_UPDATED_EXP_YIELDS >= GEN_5
-    #define FARFETCHD_EXP_YIELD 123
+    #define PINAMON_EXP_YIELD 123
 #else
-    #define FARFETCHD_EXP_YIELD 94
+    #define PINAMON_EXP_YIELD 94
 #endif
 
-    [SPECIES_FARFETCHD] =
+    [SPECIES_PINAMON] =
     {
         .baseHP        = 52,
-        .baseAttack    = FARFETCHD_ATTACK,
+        .baseAttack    = PINAMON_ATTACK,
         .baseDefense   = 55,
         .baseSpeed     = 60,
         .baseSpAttack  = 58,
         .baseSpDefense = 62,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
         .catchRate = 45,
-        .expYield = FARFETCHD_EXP_YIELD,
+        .expYield = PINAMON_EXP_YIELD,
         .evYield_Attack = 1,
         .itemRare = ITEM_LEEK,
         .genderRatio = PERCENT_FEMALE(50),
@@ -8400,9 +8400,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_FIELD),
         .abilities = { ABILITY_KEEN_EYE, ABILITY_INNER_FOCUS, ABILITY_DEFIANT },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Farfetch'd"),
-        .cryId = CRY_FARFETCHD,
-        .natDexNum = NATIONAL_DEX_FARFETCHD,
+        .speciesName = _("Pinamon"),
+        .cryId = CRY_PINAMON,
+        .natDexNum = NATIONAL_DEX_PINAMON,
         .categoryName = _("Wild Duck"),
         .height = 8,
         .weight = 150,
@@ -8415,37 +8415,37 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 2,
         .trainerScale = 293,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_Farfetchd,
+        .frontPic = gMonFrontPic_Pinamon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Farfetchd,
+        .frontAnimFrames = sAnims_Pinamon,
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL,
-        .backPic = gMonBackPic_Farfetchd,
+        .backPic = gMonBackPic_Pinamon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Farfetchd,
-        .shinyPalette = gMonShinyPalette_Farfetchd,
-        .iconSprite = gMonIcon_Farfetchd,
+        .palette = gMonPalette_Pinamon,
+        .shinyPalette = gMonShinyPalette_Pinamon,
+        .iconSprite = gMonIcon_Pinamon,
         .iconPalIndex = 1,
-        FOOTPRINT(Farfetchd)
-        .levelUpLearnset = sFarfetchdLevelUpLearnset,
-        .teachableLearnset = sFarfetchdTeachableLearnset,
-        .formSpeciesIdTable = sFarfetchdFormSpeciesIdTable,
+        FOOTPRINT(Pinamon)
+        .levelUpLearnset = sPinamonLevelUpLearnset,
+        .teachableLearnset = sPinamonTeachableLearnset,
+        .formSpeciesIdTable = sPinamonFormSpeciesIdTable,
     },
 
 #if P_GALARIAN_FORMS
-    [SPECIES_FARFETCHD_GALARIAN] =
+    [SPECIES_PINAMON_GALARIAN] =
     {
         .baseHP        = 52,
-        .baseAttack    = FARFETCHD_ATTACK + 5,
+        .baseAttack    = PINAMON_ATTACK + 5,
         .baseDefense   = 55,
         .baseSpeed     = 55,
         .baseSpAttack  = 58,
         .baseSpDefense = 62,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 45,
-        .expYield = FARFETCHD_EXP_YIELD,
+        .expYield = PINAMON_EXP_YIELD,
         .evYield_Attack = 1,
         .itemCommon = ITEM_LEEK,
         .genderRatio = PERCENT_FEMALE(50),
@@ -8455,39 +8455,39 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_FIELD),
         .abilities = { ABILITY_STEADFAST, ABILITY_NONE, ABILITY_SCRAPPY },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Farfetch'd"),
-        .cryId = CRY_FARFETCHD,
-        .natDexNum = NATIONAL_DEX_FARFETCHD,
+        .speciesName = _("Pinamon"),
+        .cryId = CRY_PINAMON,
+        .natDexNum = NATIONAL_DEX_PINAMON,
         .categoryName = _("Wild Duck"),
         .height = 8,
         .weight = 420,
         .description = COMPOUND_STRING(
             "The stalks of leeks are thicker and longer\n"
-            "in the Galar region. Brave Farfetch'd\n"
+            "in the Galar region. Brave Pinamon\n"
             "warriors that adapted to these stalks\n"
             "took on a unique form."),
         .pokemonScale = 330,
         .pokemonOffset = 2,
         .trainerScale = 293,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_FarfetchdGalarian,
+        .frontPic = gMonFrontPic_PinamonGalarian,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_FarfetchdGalarian,
+        .frontAnimFrames = sAnims_PinamonGalarian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_FarfetchdGalarian,
+        .backPic = gMonBackPic_PinamonGalarian,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 8,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_FarfetchdGalarian,
-        .shinyPalette = gMonShinyPalette_FarfetchdGalarian,
-        .iconSprite = gMonIcon_FarfetchdGalarian,
+        .palette = gMonPalette_PinamonGalarian,
+        .shinyPalette = gMonShinyPalette_PinamonGalarian,
+        .iconSprite = gMonIcon_PinamonGalarian,
         .iconPalIndex = 1,
-        FOOTPRINT(Farfetchd)
+        FOOTPRINT(Pinamon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sFarfetchdGalarianLevelUpLearnset,
-        .teachableLearnset = sFarfetchdGalarianTeachableLearnset,
-        .formSpeciesIdTable = sFarfetchdFormSpeciesIdTable,
+        .levelUpLearnset = sPinamonGalarianLevelUpLearnset,
+        .teachableLearnset = sPinamonGalarianTeachableLearnset,
+        .formSpeciesIdTable = sPinamonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_CRITICAL_HITS, 3, SPECIES_SIRFETCHD}),
     },
 
@@ -8518,7 +8518,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 8,
         .weight = 1170,
         .description = COMPOUND_STRING(
-            "Only Farfetch'd that have survived many\n"
+            "Only Pinamon that have survived many\n"
             "battles can attain this evolution. When\n"
             "this Pokémon's leek withers, it will\n"
             "retire from combat."),
@@ -8544,7 +8544,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sSirfetchdTeachableLearnset,
     },
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_FARFETCHD
+#endif //P_FAMILY_PINAMON
 
 #if P_FAMILY_DODUO
     [SPECIES_DODUO] =

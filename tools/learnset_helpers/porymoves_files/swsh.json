@@ -6931,7 +6931,7 @@
       "MOVE_RISING_VOLTAGE"
     ]
   },
-  "FARFETCHD": {
+  "PINAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -79690,7 +79690,7 @@
       "MOVE_EXPANDING_FORCE"
     ]
   },
-  "FARFETCHD_GALARIAN": {
+  "PINAMON_GALARIAN": {
     "LevelMoves": [
       {
         "Level": 1,

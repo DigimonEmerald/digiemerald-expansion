@@ -654,8 +654,8 @@ const u16 gEggMoves[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PAGUMON
 
-#if P_FAMILY_FARFETCHD
-    egg_moves(FARFETCHD,
+#if P_FAMILY_PINAMON
+    egg_moves(PINAMON,
         MOVE_STEEL_WING,
         MOVE_FORESIGHT,
         MOVE_MIRROR_MOVE,
@@ -675,7 +675,7 @@ const u16 gEggMoves[] = {
         MOVE_FIRST_IMPRESSION,
         MOVE_FINAL_GAMBIT),
 #if P_GALARIAN_FORMS
-    egg_moves(FARFETCHD_GALARIAN,
+    egg_moves(PINAMON_GALARIAN,
         MOVE_COUNTER,
         MOVE_QUICK_ATTACK,
         MOVE_FLAIL,
@@ -688,7 +688,7 @@ const u16 gEggMoves[] = {
         MOVE_FEINT,
         MOVE_SKY_ATTACK),
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_FARFETCHD
+#endif //P_FAMILY_PINAMON
 
 #if P_FAMILY_DODUO
     egg_moves(DODUO,

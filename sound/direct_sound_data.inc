@@ -892,10 +892,10 @@ Cry_Magnezone::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_PICKMON_WHITE
 
-.if P_FAMILY_FARFETCHD == TRUE
+.if P_FAMILY_PINAMON == TRUE
 	.align 2
-Cry_Farfetchd::
-	.incbin "sound/direct_sound_samples/cries/farfetchd.bin"
+Cry_Pinamon::
+	.incbin "sound/direct_sound_samples/cries/pinamon.bin"
 
 .if P_GALARIAN_FORMS == TRUE
 	.align 2
@@ -903,7 +903,7 @@ Cry_Sirfetchd::
 	.incbin "sound/direct_sound_samples/cries/sirfetchd.bin"
 
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_FARFETCHD
+.endif @ P_FAMILY_PINAMON
 
 .if P_FAMILY_DODUO == TRUE
 	.align 2

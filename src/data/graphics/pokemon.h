@@ -1333,22 +1333,22 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_PICKMON_WHITE
 
-#if P_FAMILY_FARFETCHD
-    const u32 gMonFrontPic_Farfetchd[] = INCBIN_U32("graphics/pokemon/farfetchd/anim_front.4bpp.lz");
-    const u32 gMonPalette_Farfetchd[] = INCBIN_U32("graphics/pokemon/farfetchd/normal.gbapal.lz");
-    const u32 gMonBackPic_Farfetchd[] = INCBIN_U32("graphics/pokemon/farfetchd/back.4bpp.lz");
-    const u32 gMonShinyPalette_Farfetchd[] = INCBIN_U32("graphics/pokemon/farfetchd/shiny.gbapal.lz");
-    const u8 gMonIcon_Farfetchd[] = INCBIN_U8("graphics/pokemon/farfetchd/icon.4bpp");
+#if P_FAMILY_PINAMON
+    const u32 gMonFrontPic_Pinamon[] = INCBIN_U32("graphics/pokemon/pinamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Pinamon[] = INCBIN_U32("graphics/pokemon/pinamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Pinamon[] = INCBIN_U32("graphics/pokemon/pinamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Pinamon[] = INCBIN_U32("graphics/pokemon/pinamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Pinamon[] = INCBIN_U8("graphics/pokemon/pinamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Farfetchd[] = INCBIN_U8("graphics/pokemon/farfetchd/footprint.1bpp");
+    const u8 gMonFootprint_Pinamon[] = INCBIN_U8("graphics/pokemon/pinamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GALARIAN_FORMS
-    const u32 gMonFrontPic_FarfetchdGalarian[] = INCBIN_U32("graphics/pokemon/farfetchd/galarian/front.4bpp.lz");
-    const u32 gMonPalette_FarfetchdGalarian[] = INCBIN_U32("graphics/pokemon/farfetchd/galarian/normal.gbapal.lz");
-    const u32 gMonBackPic_FarfetchdGalarian[] = INCBIN_U32("graphics/pokemon/farfetchd/galarian/back.4bpp.lz");
-    const u32 gMonShinyPalette_FarfetchdGalarian[] = INCBIN_U32("graphics/pokemon/farfetchd/galarian/shiny.gbapal.lz");
-    const u8 gMonIcon_FarfetchdGalarian[] = INCBIN_U8("graphics/pokemon/farfetchd/galarian/icon.4bpp");
+    const u32 gMonFrontPic_PinamonGalarian[] = INCBIN_U32("graphics/pokemon/pinamon/galarian/front.4bpp.lz");
+    const u32 gMonPalette_PinamonGalarian[] = INCBIN_U32("graphics/pokemon/pinamon/galarian/normal.gbapal.lz");
+    const u32 gMonBackPic_PinamonGalarian[] = INCBIN_U32("graphics/pokemon/pinamon/galarian/back.4bpp.lz");
+    const u32 gMonShinyPalette_PinamonGalarian[] = INCBIN_U32("graphics/pokemon/pinamon/galarian/shiny.gbapal.lz");
+    const u8 gMonIcon_PinamonGalarian[] = INCBIN_U8("graphics/pokemon/pinamon/galarian/icon.4bpp");
 
     const u32 gMonFrontPic_Sirfetchd[] = INCBIN_U32("graphics/pokemon/sirfetchd/front.4bpp.lz");
     const u32 gMonPalette_Sirfetchd[] = INCBIN_U32("graphics/pokemon/sirfetchd/normal.gbapal.lz");
@@ -1359,7 +1359,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Sirfetchd[] = INCBIN_U8("graphics/pokemon/sirfetchd/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_FARFETCHD
+#endif //P_FAMILY_PINAMON
 
 #if P_FAMILY_DODUO
     const u32 gMonFrontPic_Doduo[] = INCBIN_U32("graphics/pokemon/doduo/anim_front.4bpp.lz");

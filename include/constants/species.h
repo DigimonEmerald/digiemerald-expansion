@@ -84,7 +84,7 @@
 #define SPECIES_PICKMON_SILVER                                 80
 #define SPECIES_PICKMON_WHITE                               81
 #define SPECIES_PICKMON_RED                                82
-#define SPECIES_FARFETCHD                               83
+#define SPECIES_PINAMON                               83
 #define SPECIES_DODUO                                   84
 #define SPECIES_DODRIO                                  85
 #define SPECIES_SEEL                                    86
@@ -1037,7 +1037,7 @@
 #define SPECIES_NYAROMON_GALARIAN                       976
 #define SPECIES_PAGUMON_GALARIAN                       977
 #define SPECIES_PICKMON_SILVER_GALARIAN                        978
-#define SPECIES_FARFETCHD_GALARIAN                      979
+#define SPECIES_PINAMON_GALARIAN                      979
 #define SPECIES_WEEZING_GALARIAN                        980
 #define SPECIES_MR_MIME_GALARIAN                        981
 #define SPECIES_ARTICUNO_GALARIAN                       982
