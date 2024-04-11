@@ -7576,8 +7576,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_MONIMON
 
-#if P_FAMILY_PONYTA
-    [SPECIES_PONYTA] =
+#if P_FAMILY_NEGAMON
+    [SPECIES_NEGAMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 85,
@@ -7596,14 +7596,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_RUN_AWAY, ABILITY_FLASH_FIRE, ABILITY_FLAME_BODY },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Ponyta"),
-        .cryId = CRY_PONYTA,
-        .natDexNum = NATIONAL_DEX_PONYTA,
+        .speciesName = _("Negamon"),
+        .cryId = CRY_NEGAMON,
+        .natDexNum = NATIONAL_DEX_NEGAMON,
         .categoryName = _("Fire Horse"),
         .height = 10,
         .weight = 300,
         .description = COMPOUND_STRING(
-            "A Ponyta is very weak at birth. It can\n"
+            "A Negamon is very weak at birth. It can\n"
             "barely stand up. Its legs become stronger\n"
             "as it stumbles and falls while trying to\n"
             "keep up with its parent."),
@@ -7611,24 +7611,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Ponyta,
+        .frontPic = gMonFrontPic_Negamon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Ponyta,
+        .frontAnimFrames = sAnims_Negamon,
         .frontAnimId = ANIM_V_SHAKE,
         .frontAnimDelay = 10,
-        .backPic = gMonBackPic_Ponyta,
+        .backPic = gMonBackPic_Negamon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_Ponyta,
-        .shinyPalette = gMonShinyPalette_Ponyta,
-        .iconSprite = gMonIcon_Ponyta,
+        .palette = gMonPalette_Negamon,
+        .shinyPalette = gMonShinyPalette_Negamon,
+        .iconSprite = gMonIcon_Negamon,
         .iconPalIndex = 3,
-        FOOTPRINT(Ponyta)
-        .levelUpLearnset = sPonytaLevelUpLearnset,
-        .teachableLearnset = sPonytaTeachableLearnset,
-        .formSpeciesIdTable = sPonytaFormSpeciesIdTable,
+        FOOTPRINT(Negamon)
+        .levelUpLearnset = sNegamonLevelUpLearnset,
+        .teachableLearnset = sNegamonTeachableLearnset,
+        .formSpeciesIdTable = sNegamonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_RAPIDASH}),
     },
 
@@ -7686,7 +7686,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_GALARIAN_FORMS
-    [SPECIES_PONYTA_GALARIAN] =
+    [SPECIES_NEGAMON_GALARIAN] =
     {
         .baseHP        = 50,
         .baseAttack    = 85,
@@ -7705,9 +7705,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_RUN_AWAY, ABILITY_PASTEL_VEIL, ABILITY_ANTICIPATION },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Ponyta"),
-        .cryId = CRY_PONYTA,
-        .natDexNum = NATIONAL_DEX_PONYTA,
+        .speciesName = _("Negamon"),
+        .cryId = CRY_NEGAMON,
+        .natDexNum = NATIONAL_DEX_NEGAMON,
         .categoryName = _("Unique Horn"),
         .height = 8,
         .weight = 240,
@@ -7720,24 +7720,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_PonytaGalarian,
+        .frontPic = gMonFrontPic_NegamonGalarian,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_PonytaGalarian,
+        .frontAnimFrames = sAnims_NegamonGalarian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_PonytaGalarian,
+        .backPic = gMonBackPic_NegamonGalarian,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_PonytaGalarian,
-        .shinyPalette = gMonShinyPalette_PonytaGalarian,
-        .iconSprite = gMonIcon_PonytaGalarian,
+        .palette = gMonPalette_NegamonGalarian,
+        .shinyPalette = gMonShinyPalette_NegamonGalarian,
+        .iconSprite = gMonIcon_NegamonGalarian,
         .iconPalIndex = 2,
-        FOOTPRINT(Ponyta)
+        FOOTPRINT(Negamon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sPonytaGalarianLevelUpLearnset,
-        .teachableLearnset = sPonytaGalarianTeachableLearnset,
-        .formSpeciesIdTable = sPonytaFormSpeciesIdTable,
+        .levelUpLearnset = sNegamonGalarianLevelUpLearnset,
+        .teachableLearnset = sNegamonGalarianTeachableLearnset,
+        .formSpeciesIdTable = sNegamonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_RAPIDASH_GALARIAN}),
     },
 
@@ -7795,7 +7795,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sRapidashFormSpeciesIdTable,
     },
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_PONYTA
+#endif //P_FAMILY_NEGAMON
 
 #if P_FAMILY_SLOWPOKE
     [SPECIES_SLOWPOKE] =

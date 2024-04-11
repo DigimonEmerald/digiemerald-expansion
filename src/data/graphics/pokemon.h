@@ -1207,14 +1207,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_MONIMON
 
-#if P_FAMILY_PONYTA
-    const u32 gMonFrontPic_Ponyta[] = INCBIN_U32("graphics/pokemon/ponyta/anim_front.4bpp.lz");
-    const u32 gMonPalette_Ponyta[] = INCBIN_U32("graphics/pokemon/ponyta/normal.gbapal.lz");
-    const u32 gMonBackPic_Ponyta[] = INCBIN_U32("graphics/pokemon/ponyta/back.4bpp.lz");
-    const u32 gMonShinyPalette_Ponyta[] = INCBIN_U32("graphics/pokemon/ponyta/shiny.gbapal.lz");
-    const u8 gMonIcon_Ponyta[] = INCBIN_U8("graphics/pokemon/ponyta/icon.4bpp");
+#if P_FAMILY_NEGAMON
+    const u32 gMonFrontPic_Negamon[] = INCBIN_U32("graphics/pokemon/negamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Negamon[] = INCBIN_U32("graphics/pokemon/negamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Negamon[] = INCBIN_U32("graphics/pokemon/negamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Negamon[] = INCBIN_U32("graphics/pokemon/negamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Negamon[] = INCBIN_U8("graphics/pokemon/negamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Ponyta[] = INCBIN_U8("graphics/pokemon/ponyta/footprint.1bpp");
+    const u8 gMonFootprint_Negamon[] = INCBIN_U8("graphics/pokemon/negamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Rapidash[] = INCBIN_U32("graphics/pokemon/rapidash/anim_front.4bpp.lz");
@@ -1227,11 +1227,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
 #if P_GALARIAN_FORMS
-    const u32 gMonFrontPic_PonytaGalarian[] = INCBIN_U32("graphics/pokemon/ponyta/galarian/front.4bpp.lz");
-    const u32 gMonPalette_PonytaGalarian[] = INCBIN_U32("graphics/pokemon/ponyta/galarian/normal.gbapal.lz");
-    const u32 gMonBackPic_PonytaGalarian[] = INCBIN_U32("graphics/pokemon/ponyta/galarian/back.4bpp.lz");
-    const u32 gMonShinyPalette_PonytaGalarian[] = INCBIN_U32("graphics/pokemon/ponyta/galarian/shiny.gbapal.lz");
-    const u8 gMonIcon_PonytaGalarian[] = INCBIN_U8("graphics/pokemon/ponyta/galarian/icon.4bpp");
+    const u32 gMonFrontPic_NegamonGalarian[] = INCBIN_U32("graphics/pokemon/negamon/galarian/front.4bpp.lz");
+    const u32 gMonPalette_NegamonGalarian[] = INCBIN_U32("graphics/pokemon/negamon/galarian/normal.gbapal.lz");
+    const u32 gMonBackPic_NegamonGalarian[] = INCBIN_U32("graphics/pokemon/negamon/galarian/back.4bpp.lz");
+    const u32 gMonShinyPalette_NegamonGalarian[] = INCBIN_U32("graphics/pokemon/negamon/galarian/shiny.gbapal.lz");
+    const u8 gMonIcon_NegamonGalarian[] = INCBIN_U8("graphics/pokemon/negamon/galarian/icon.4bpp");
 
     const u32 gMonFrontPic_RapidashGalarian[] = INCBIN_U32("graphics/pokemon/rapidash/galarian/front.4bpp.lz");
     const u32 gMonPalette_RapidashGalarian[] = INCBIN_U32("graphics/pokemon/rapidash/galarian/normal.gbapal.lz");
@@ -1239,7 +1239,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_RapidashGalarian[] = INCBIN_U32("graphics/pokemon/rapidash/galarian/shiny.gbapal.lz");
     const u8 gMonIcon_RapidashGalarian[] = INCBIN_U8("graphics/pokemon/rapidash/galarian/icon.4bpp");
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_PONYTA
+#endif //P_FAMILY_NEGAMON
 
 #if P_FAMILY_SLOWPOKE
     const u32 gMonFrontPic_Slowpoke[] = INCBIN_U32("graphics/pokemon/slowpoke/anim_front.4bpp.lz");

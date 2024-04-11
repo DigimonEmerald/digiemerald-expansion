@@ -3800,8 +3800,8 @@ static const u16 sMotimonAlolanTeachableLearnset[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_MONIMON
 
-#if P_FAMILY_PONYTA
-static const u16 sPonytaTeachableLearnset[] = {
+#if P_FAMILY_NEGAMON
+static const u16 sNegamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
@@ -3854,7 +3854,7 @@ static const u16 sRapidashTeachableLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const u16 sPonytaGalarianTeachableLearnset[] = {
+static const u16 sNegamonGalarianTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_FACADE,
@@ -3894,7 +3894,7 @@ static const u16 sRapidashGalarianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_PONYTA
+#endif //P_FAMILY_NEGAMON
 
 #if P_FAMILY_SLOWPOKE
 static const u16 sSlowpokeTeachableLearnset[] = {

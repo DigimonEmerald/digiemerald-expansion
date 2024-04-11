@@ -6207,7 +6207,7 @@
       "MOVE_CORROSIVE_GAS"
     ]
   },
-  "PONYTA": {
+  "NEGAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -79158,7 +79158,7 @@
       "MOVE_LASH_OUT"
     ]
   },
-  "PONYTA_GALARIAN": {
+  "NEGAMON_GALARIAN": {
     "LevelMoves": [
       {
         "Level": 1,

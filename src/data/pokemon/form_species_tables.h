@@ -210,10 +210,10 @@ static const u16 sMotimonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_MONIMON
 
-#if P_FAMILY_PONYTA
-static const u16 sPonytaFormSpeciesIdTable[] = {
-    SPECIES_PONYTA,
-    SPECIES_PONYTA_GALARIAN,
+#if P_FAMILY_NEGAMON
+static const u16 sNegamonFormSpeciesIdTable[] = {
+    SPECIES_NEGAMON,
+    SPECIES_NEGAMON_GALARIAN,
     FORM_SPECIES_END,
 };
 
@@ -222,7 +222,7 @@ static const u16 sRapidashFormSpeciesIdTable[] = {
     SPECIES_RAPIDASH_GALARIAN,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_PONYTA
+#endif //P_FAMILY_NEGAMON
 
 #if P_FAMILY_SLOWPOKE
 static const u16 sSlowpokeFormSpeciesIdTable[] = {

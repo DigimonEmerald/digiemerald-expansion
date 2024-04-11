@@ -607,8 +607,8 @@ const u16 gEggMoves[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_MONIMON
 
-#if P_FAMILY_PONYTA
-    egg_moves(PONYTA,
+#if P_FAMILY_NEGAMON
+    egg_moves(NEGAMON,
         MOVE_FLAME_WHEEL,
         MOVE_THRASH,
         MOVE_DOUBLE_KICK,
@@ -622,7 +622,7 @@ const u16 gEggMoves[] = {
         MOVE_ALLY_SWITCH,
         MOVE_HIGH_HORSEPOWER),
 #if P_GALARIAN_FORMS
-    egg_moves(PONYTA_GALARIAN,
+    egg_moves(NEGAMON_GALARIAN,
         MOVE_THRASH,
         MOVE_DOUBLE_KICK,
         MOVE_HYPNOSIS,
@@ -630,7 +630,7 @@ const u16 gEggMoves[] = {
         MOVE_HORN_DRILL,
         MOVE_MORNING_SUN),
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_PONYTA
+#endif //P_FAMILY_NEGAMON
 
 #if P_FAMILY_SLOWPOKE
     egg_moves(SLOWPOKE,

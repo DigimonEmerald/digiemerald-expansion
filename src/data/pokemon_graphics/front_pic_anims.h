@@ -1097,8 +1097,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(MotimonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_MONIMON
 
-#if P_FAMILY_PONYTA
-static const union AnimCmd sAnim_Ponyta_1[] =
+#if P_FAMILY_NEGAMON
+static const union AnimCmd sAnim_Negamon_1[] =
 {
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 5),
@@ -1114,10 +1114,10 @@ static const union AnimCmd sAnim_Rapidash_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(PonytaGalarian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(NegamonGalarian);
 PLACEHOLDER_ANIM_SINGLE_FRAME(RapidashGalarian);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_PONYTA
+#endif //P_FAMILY_NEGAMON
 
 #if P_FAMILY_SLOWPOKE
 static const union AnimCmd sAnim_Slowpoke_1[] =
@@ -10405,14 +10405,14 @@ SINGLE_ANIMATION(MoonmonAlolan);
 SINGLE_ANIMATION(MotimonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_MONIMON
-#if P_FAMILY_PONYTA
-SINGLE_ANIMATION(Ponyta);
+#if P_FAMILY_NEGAMON
+SINGLE_ANIMATION(Negamon);
 SINGLE_ANIMATION(Rapidash);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(PonytaGalarian);
+SINGLE_ANIMATION(NegamonGalarian);
 SINGLE_ANIMATION(RapidashGalarian);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_PONYTA
+#endif //P_FAMILY_NEGAMON
 #if P_FAMILY_SLOWPOKE
 SINGLE_ANIMATION(Slowpoke);
 SINGLE_ANIMATION(Slowbro);

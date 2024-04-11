@@ -179,10 +179,10 @@ gCryTable::
 	cry Cry_Moonmon
 	cry Cry_Motimon
 .endif @ P_FAMILY_MONIMON
-.if P_FAMILY_PONYTA == TRUE
-	cry Cry_Ponyta
+.if P_FAMILY_NEGAMON == TRUE
+	cry Cry_Negamon
 	cry Cry_Rapidash
-.endif @ P_FAMILY_PONYTA
+.endif @ P_FAMILY_NEGAMON
 .if P_FAMILY_SLOWPOKE == TRUE
 	cry Cry_Slowpoke
 	cry Cry_Slowbro
@@ -2605,10 +2605,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Moonmon
 	cry_reverse Cry_Motimon
 .endif @ P_FAMILY_MONIMON
-.if P_FAMILY_PONYTA == TRUE
-	cry_reverse Cry_Ponyta
+.if P_FAMILY_NEGAMON == TRUE
+	cry_reverse Cry_Negamon
 	cry_reverse Cry_Rapidash
-.endif @ P_FAMILY_PONYTA
+.endif @ P_FAMILY_NEGAMON
 .if P_FAMILY_SLOWPOKE == TRUE
 	cry_reverse Cry_Slowpoke
 	cry_reverse Cry_Slowbro

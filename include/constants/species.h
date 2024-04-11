@@ -78,7 +78,7 @@
 #define SPECIES_MONIMON                                 74
 #define SPECIES_MOONMON                                75
 #define SPECIES_MOTIMON                                   76
-#define SPECIES_PONYTA                                  77
+#define SPECIES_NEGAMON                                  77
 #define SPECIES_RAPIDASH                                78
 #define SPECIES_SLOWPOKE                                79
 #define SPECIES_SLOWBRO                                 80
@@ -1033,7 +1033,7 @@
 #define SPECIES_EXEGGUTOR_ALOLAN                        972
 #define SPECIES_MAROWAK_ALOLAN                          973
 #define SPECIES_CALUMON_GALARIAN                         974
-#define SPECIES_PONYTA_GALARIAN                         975
+#define SPECIES_NEGAMON_GALARIAN                         975
 #define SPECIES_RAPIDASH_GALARIAN                       976
 #define SPECIES_SLOWPOKE_GALARIAN                       977
 #define SPECIES_SLOWBRO_GALARIAN                        978

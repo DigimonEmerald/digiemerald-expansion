@@ -839,15 +839,15 @@ Cry_Motimon::
 	.incbin "sound/direct_sound_samples/cries/motimon.bin"
 .endif @ P_FAMILY_MONIMON
 
-.if P_FAMILY_PONYTA == TRUE
+.if P_FAMILY_NEGAMON == TRUE
 	.align 2
-Cry_Ponyta::
-	.incbin "sound/direct_sound_samples/cries/ponyta.bin"
+Cry_Negamon::
+	.incbin "sound/direct_sound_samples/cries/negamon.bin"
 
 	.align 2
 Cry_Rapidash::
 	.incbin "sound/direct_sound_samples/cries/rapidash.bin"
-.endif @ P_FAMILY_PONYTA
+.endif @ P_FAMILY_NEGAMON
 
 .if P_FAMILY_SLOWPOKE == TRUE
 	.align 2
