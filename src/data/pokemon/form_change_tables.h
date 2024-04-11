@@ -53,13 +53,13 @@ static const struct FormChange sPetitmonFormChangeTable[] =
 };
 #endif //P_FAMILY_PETITMON
 
-#if P_FAMILY_MEOWTH
-static const struct FormChange sMeowthFormChangeTable[] =
+#if P_FAMILY_CALUMON
+static const struct FormChange sCalumonFormChangeTable[] =
 {
-    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_MEOWTH_GIGANTAMAX},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_CALUMON_GIGANTAMAX},
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_MEOWTH
+#endif //P_FAMILY_CALUMON
 
 #if P_FAMILY_ABRA
 static const struct FormChange sAlakazamFormChangeTable[] = {

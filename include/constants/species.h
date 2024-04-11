@@ -53,7 +53,7 @@
 #define SPECIES_BOSAMON                                49
 #define SPECIES_BUDMON                                 50
 #define SPECIES_BUKAMON                                 51
-#define SPECIES_MEOWTH                                  52
+#define SPECIES_CALUMON                                  52
 #define SPECIES_PERSIAN                                 53
 #define SPECIES_PSYDUCK                                 54
 #define SPECIES_GOLDUCK                                 55
@@ -1023,7 +1023,7 @@
 #define SPECIES_SAKUMON_ALOLAN                        962
 #define SPECIES_BUDMON_ALOLAN                          963
 #define SPECIES_BUKAMON_ALOLAN                          964
-#define SPECIES_MEOWTH_ALOLAN                           965
+#define SPECIES_CALUMON_ALOLAN                           965
 #define SPECIES_PERSIAN_ALOLAN                          966
 #define SPECIES_GEODUDE_ALOLAN                          967
 #define SPECIES_GRAVELER_ALOLAN                         968
@@ -1032,7 +1032,7 @@
 #define SPECIES_MUK_ALOLAN                              971
 #define SPECIES_EXEGGUTOR_ALOLAN                        972
 #define SPECIES_MAROWAK_ALOLAN                          973
-#define SPECIES_MEOWTH_GALARIAN                         974
+#define SPECIES_CALUMON_GALARIAN                         974
 #define SPECIES_PONYTA_GALARIAN                         975
 #define SPECIES_RAPIDASH_GALARIAN                       976
 #define SPECIES_SLOWPOKE_GALARIAN                       977
@@ -1598,7 +1598,7 @@
 #define SPECIES_CHIBOMON_GIGANTAMAX                    1491
 #define SPECIES_DOKIMON_GIGANTAMAX                   1492
 #define SPECIES_PETITMON_GIGANTAMAX                      1493
-#define SPECIES_MEOWTH_GIGANTAMAX                       1494
+#define SPECIES_CALUMON_GIGANTAMAX                       1494
 #define SPECIES_MACHAMP_GIGANTAMAX                      1495
 #define SPECIES_GENGAR_GIGANTAMAX                       1496
 #define SPECIES_KINGLER_GIGANTAMAX                      1497

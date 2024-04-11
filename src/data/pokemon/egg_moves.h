@@ -397,8 +397,8 @@ const u16 gEggMoves[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_BUDMON
 
-#if P_FAMILY_MEOWTH
-    egg_moves(MEOWTH,
+#if P_FAMILY_CALUMON
+    egg_moves(CALUMON,
         MOVE_SPITE,
         MOVE_CHARM,
         MOVE_HYPNOSIS,
@@ -413,7 +413,7 @@ const u16 gEggMoves[] = {
         MOVE_IRON_TAIL,
         MOVE_FOUL_PLAY),
 #if P_ALOLAN_FORMS
-    egg_moves(MEOWTH_ALOLAN,
+    egg_moves(CALUMON_ALOLAN,
         MOVE_AMNESIA,
         MOVE_ASSIST,
         MOVE_CHARM,
@@ -428,7 +428,7 @@ const u16 gEggMoves[] = {
         MOVE_SPITE),
 #endif //P_ALOLAN_FORMS
 #if P_GALARIAN_FORMS
-    egg_moves(MEOWTH_GALARIAN,
+    egg_moves(CALUMON_GALARIAN,
         MOVE_SPITE,
         MOVE_DOUBLE_EDGE,
         MOVE_CURSE,
@@ -436,7 +436,7 @@ const u16 gEggMoves[] = {
         MOVE_NIGHT_SLASH,
         MOVE_COVET),
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_MEOWTH
+#endif //P_FAMILY_CALUMON
 
 #if P_FAMILY_PSYDUCK
     egg_moves(PSYDUCK,

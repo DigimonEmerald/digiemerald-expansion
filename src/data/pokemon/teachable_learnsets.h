@@ -2395,8 +2395,8 @@ static const u16 sBukamonAlolanTeachableLearnset[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_BUDMON
 
-#if P_FAMILY_MEOWTH
-static const u16 sMeowthTeachableLearnset[] = {
+#if P_FAMILY_CALUMON
+static const u16 sCalumonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CUT,
@@ -2477,7 +2477,7 @@ static const u16 sPersianTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sMeowthAlolanTeachableLearnset[] = {
+static const u16 sCalumonAlolanTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DIG,
@@ -2551,7 +2551,7 @@ static const u16 sPersianAlolanTeachableLearnset[] = {
 #endif //P_ALOLAN_FORMS
 
 #if P_GALARIAN_FORMS
-static const u16 sMeowthGalarianTeachableLearnset[] = {
+static const u16 sCalumonGalarianTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -2606,7 +2606,7 @@ static const u16 sPerrserkerTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_MEOWTH
+#endif //P_FAMILY_CALUMON
 
 #if P_FAMILY_PSYDUCK
 static const u16 sPsyduckTeachableLearnset[] = {

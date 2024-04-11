@@ -787,8 +787,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(BukamonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_BUDMON
 
-#if P_FAMILY_MEOWTH
-static const union AnimCmd sAnim_Meowth_1[] =
+#if P_FAMILY_CALUMON
+static const union AnimCmd sAnim_Calumon_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 8),
@@ -807,19 +807,19 @@ static const union AnimCmd sAnim_Persian_1[] =
 };
 
 #if P_ALOLAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(MeowthAlolan);
+PLACEHOLDER_ANIM_SINGLE_FRAME(CalumonAlolan);
 PLACEHOLDER_ANIM_SINGLE_FRAME(PersianAlolan);
 #endif //P_ALOLAN_FORMS
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(MeowthGalarian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(CalumonGalarian);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Perrserker);
 #endif //P_GALARIAN_FORMS
 
 #if P_GIGANTAMAX_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(MeowthGigantamax);
+PLACEHOLDER_ANIM_SINGLE_FRAME(CalumonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_MEOWTH
+#endif //P_FAMILY_CALUMON
 
 #if P_FAMILY_PSYDUCK
 static const union AnimCmd sAnim_Psyduck_1[] =
@@ -10328,21 +10328,21 @@ SINGLE_ANIMATION(BudmonAlolan);
 SINGLE_ANIMATION(BukamonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_BUDMON
-#if P_FAMILY_MEOWTH
-SINGLE_ANIMATION(Meowth);
+#if P_FAMILY_CALUMON
+SINGLE_ANIMATION(Calumon);
 SINGLE_ANIMATION(Persian);
 #if P_ALOLAN_FORMS
-SINGLE_ANIMATION(MeowthAlolan);
+SINGLE_ANIMATION(CalumonAlolan);
 SINGLE_ANIMATION(PersianAlolan);
 #endif //P_ALOLAN_FORMS
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(MeowthGalarian);
+SINGLE_ANIMATION(CalumonGalarian);
 SINGLE_ANIMATION(Perrserker);
 #endif //P_GALARIAN_FORMS
 #if P_GIGANTAMAX_FORMS
-SINGLE_ANIMATION(MeowthGigantamax);
+SINGLE_ANIMATION(CalumonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_MEOWTH
+#endif //P_FAMILY_CALUMON
 #if P_FAMILY_PSYDUCK
 SINGLE_ANIMATION(Psyduck);
 SINGLE_ANIMATION(Golduck);

@@ -73,7 +73,7 @@
 #define P_FAMILY_ARGOMON_IT                   P_GEN_1_POKEMON
 #define P_FAMILY_BIBIMON                 P_GEN_1_POKEMON
 #define P_FAMILY_BUDMON                 P_GEN_1_POKEMON
-#define P_FAMILY_MEOWTH                  P_GEN_1_POKEMON
+#define P_FAMILY_CALUMON                  P_GEN_1_POKEMON
 #define P_FAMILY_PSYDUCK                 P_GEN_1_POKEMON
 #define P_FAMILY_MANKEY                  P_GEN_1_POKEMON
 #define P_FAMILY_GROWLITHE               P_GEN_1_POKEMON

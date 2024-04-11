@@ -122,13 +122,13 @@ gCryTable::
 	cry Cry_Budmon
 	cry Cry_Bukamon
 .endif @ P_FAMILY_BUDMON
-.if P_FAMILY_MEOWTH == TRUE
-	cry Cry_Meowth
+.if P_FAMILY_CALUMON == TRUE
+	cry Cry_Calumon
 	cry Cry_Persian
 .if P_GALARIAN_FORMS == TRUE
 	cry Cry_Perrserker
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_MEOWTH
+.endif @ P_FAMILY_CALUMON
 .if P_FAMILY_PSYDUCK == TRUE
 	cry Cry_Psyduck
 	cry Cry_Golduck
@@ -2548,13 +2548,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Budmon
 	cry_reverse Cry_Bukamon
 .endif @ P_FAMILY_BUDMON
-.if P_FAMILY_MEOWTH == TRUE
-	cry_reverse Cry_Meowth
+.if P_FAMILY_CALUMON == TRUE
+	cry_reverse Cry_Calumon
 	cry_reverse Cry_Persian
 .if P_GALARIAN_FORMS == TRUE
 	cry_reverse Cry_Perrserker
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_MEOWTH
+.endif @ P_FAMILY_CALUMON
 .if P_FAMILY_PSYDUCK == TRUE
 	cry_reverse Cry_Psyduck
 	cry_reverse Cry_Golduck

@@ -842,14 +842,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_BUDMON
 
-#if P_FAMILY_MEOWTH
-    const u32 gMonFrontPic_Meowth[] = INCBIN_U32("graphics/pokemon/meowth/anim_front.4bpp.lz");
-    const u32 gMonPalette_Meowth[] = INCBIN_U32("graphics/pokemon/meowth/normal.gbapal.lz");
-    const u32 gMonBackPic_Meowth[] = INCBIN_U32("graphics/pokemon/meowth/back.4bpp.lz");
-    const u32 gMonShinyPalette_Meowth[] = INCBIN_U32("graphics/pokemon/meowth/shiny.gbapal.lz");
-    const u8 gMonIcon_Meowth[] = INCBIN_U8("graphics/pokemon/meowth/icon.4bpp");
+#if P_FAMILY_CALUMON
+    const u32 gMonFrontPic_Calumon[] = INCBIN_U32("graphics/pokemon/calumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Calumon[] = INCBIN_U32("graphics/pokemon/calumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Calumon[] = INCBIN_U32("graphics/pokemon/calumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Calumon[] = INCBIN_U32("graphics/pokemon/calumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Calumon[] = INCBIN_U8("graphics/pokemon/calumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Meowth[] = INCBIN_U8("graphics/pokemon/meowth/footprint.1bpp");
+    const u8 gMonFootprint_Calumon[] = INCBIN_U8("graphics/pokemon/calumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Persian[] = INCBIN_U32("graphics/pokemon/persian/anim_front.4bpp.lz");
@@ -862,11 +862,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
 #if P_ALOLAN_FORMS
-    const u32 gMonFrontPic_MeowthAlolan[] = INCBIN_U32("graphics/pokemon/meowth/alolan/front.4bpp.lz");
-    const u32 gMonPalette_MeowthAlolan[] = INCBIN_U32("graphics/pokemon/meowth/alolan/normal.gbapal.lz");
-    const u32 gMonBackPic_MeowthAlolan[] = INCBIN_U32("graphics/pokemon/meowth/alolan/back.4bpp.lz");
-    const u32 gMonShinyPalette_MeowthAlolan[] = INCBIN_U32("graphics/pokemon/meowth/alolan/shiny.gbapal.lz");
-    const u8 gMonIcon_MeowthAlolan[] = INCBIN_U8("graphics/pokemon/meowth/alolan/icon.4bpp");
+    const u32 gMonFrontPic_CalumonAlolan[] = INCBIN_U32("graphics/pokemon/calumon/alolan/front.4bpp.lz");
+    const u32 gMonPalette_CalumonAlolan[] = INCBIN_U32("graphics/pokemon/calumon/alolan/normal.gbapal.lz");
+    const u32 gMonBackPic_CalumonAlolan[] = INCBIN_U32("graphics/pokemon/calumon/alolan/back.4bpp.lz");
+    const u32 gMonShinyPalette_CalumonAlolan[] = INCBIN_U32("graphics/pokemon/calumon/alolan/shiny.gbapal.lz");
+    const u8 gMonIcon_CalumonAlolan[] = INCBIN_U8("graphics/pokemon/calumon/alolan/icon.4bpp");
 
     const u32 gMonFrontPic_PersianAlolan[] = INCBIN_U32("graphics/pokemon/persian/alolan/front.4bpp.lz");
     const u32 gMonPalette_PersianAlolan[] = INCBIN_U32("graphics/pokemon/persian/alolan/normal.gbapal.lz");
@@ -876,11 +876,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_ALOLAN_FORMS
 
 #if P_GALARIAN_FORMS
-    const u32 gMonFrontPic_MeowthGalarian[] = INCBIN_U32("graphics/pokemon/meowth/galarian/front.4bpp.lz");
-    const u32 gMonPalette_MeowthGalarian[] = INCBIN_U32("graphics/pokemon/meowth/galarian/normal.gbapal.lz");
-    const u32 gMonBackPic_MeowthGalarian[] = INCBIN_U32("graphics/pokemon/meowth/galarian/back.4bpp.lz");
-    const u32 gMonShinyPalette_MeowthGalarian[] = INCBIN_U32("graphics/pokemon/meowth/galarian/shiny.gbapal.lz");
-    const u8 gMonIcon_MeowthGalarian[] = INCBIN_U8("graphics/pokemon/meowth/galarian/icon.4bpp");
+    const u32 gMonFrontPic_CalumonGalarian[] = INCBIN_U32("graphics/pokemon/calumon/galarian/front.4bpp.lz");
+    const u32 gMonPalette_CalumonGalarian[] = INCBIN_U32("graphics/pokemon/calumon/galarian/normal.gbapal.lz");
+    const u32 gMonBackPic_CalumonGalarian[] = INCBIN_U32("graphics/pokemon/calumon/galarian/back.4bpp.lz");
+    const u32 gMonShinyPalette_CalumonGalarian[] = INCBIN_U32("graphics/pokemon/calumon/galarian/shiny.gbapal.lz");
+    const u8 gMonIcon_CalumonGalarian[] = INCBIN_U8("graphics/pokemon/calumon/galarian/icon.4bpp");
 
     const u32 gMonFrontPic_Perrserker[] = INCBIN_U32("graphics/pokemon/perrserker/front.4bpp.lz");
     const u32 gMonPalette_Perrserker[] = INCBIN_U32("graphics/pokemon/perrserker/normal.gbapal.lz");
@@ -893,13 +893,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GALARIAN_FORMS
 
 #if P_GIGANTAMAX_FORMS
-    const u32 gMonFrontPic_MeowthGigantamax[] = INCBIN_U32("graphics/pokemon/meowth/gigantamax/front.4bpp.lz");
-    const u32 gMonBackPic_MeowthGigantamax[] = INCBIN_U32("graphics/pokemon/meowth/gigantamax/back.4bpp.lz");
-    const u32 gMonPalette_MeowthGigantamax[] = INCBIN_U32("graphics/pokemon/meowth/gigantamax/normal.gbapal.lz");
-    const u32 gMonShinyPalette_MeowthGigantamax[] = INCBIN_U32("graphics/pokemon/meowth/gigantamax/shiny.gbapal.lz");
-    const u8 gMonIcon_MeowthGigantamax[] = INCBIN_U8("graphics/pokemon/meowth/gigantamax/icon.4bpp");
+    const u32 gMonFrontPic_CalumonGigantamax[] = INCBIN_U32("graphics/pokemon/calumon/gigantamax/front.4bpp.lz");
+    const u32 gMonBackPic_CalumonGigantamax[] = INCBIN_U32("graphics/pokemon/calumon/gigantamax/back.4bpp.lz");
+    const u32 gMonPalette_CalumonGigantamax[] = INCBIN_U32("graphics/pokemon/calumon/gigantamax/normal.gbapal.lz");
+    const u32 gMonShinyPalette_CalumonGigantamax[] = INCBIN_U32("graphics/pokemon/calumon/gigantamax/shiny.gbapal.lz");
+    const u8 gMonIcon_CalumonGigantamax[] = INCBIN_U8("graphics/pokemon/calumon/gigantamax/icon.4bpp");
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_MEOWTH
+#endif //P_FAMILY_CALUMON
 
 #if P_FAMILY_PSYDUCK
     const u32 gMonFrontPic_Psyduck[] = INCBIN_U32("graphics/pokemon/psyduck/anim_front.4bpp.lz");

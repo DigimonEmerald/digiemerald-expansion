@@ -694,10 +694,10 @@ Cry_Bukamon::
 	.incbin "sound/direct_sound_samples/cries/bukamon.bin"
 .endif @ P_FAMILY_BUDMON
 
-.if P_FAMILY_MEOWTH == TRUE
+.if P_FAMILY_CALUMON == TRUE
 	.align 2
-Cry_Meowth::
-	.incbin "sound/direct_sound_samples/cries/meowth.bin"
+Cry_Calumon::
+	.incbin "sound/direct_sound_samples/cries/calumon.bin"
 
 	.align 2
 Cry_Persian::
@@ -709,7 +709,7 @@ Cry_Perrserker::
 	.incbin "sound/direct_sound_samples/cries/perrserker.bin"
 
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_MEOWTH
+.endif @ P_FAMILY_CALUMON
 
 .if P_FAMILY_PSYDUCK == TRUE
 	.align 2

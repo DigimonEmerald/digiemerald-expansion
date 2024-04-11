@@ -4213,7 +4213,7 @@
     ],
     "TutorMoves": []
   },
-  "MEOWTH": {
+  "CALUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -78503,7 +78503,7 @@
       "MOVE_STEEL_BEAM"
     ]
   },
-  "MEOWTH_ALOLAN": {
+  "CALUMON_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -79045,7 +79045,7 @@
     ],
     "TutorMoves": []
   },
-  "MEOWTH_GALARIAN": {
+  "CALUMON_GALARIAN": {
     "LevelMoves": [
       {
         "Level": 1,

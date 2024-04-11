@@ -144,12 +144,12 @@ static const u16 sBukamonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_BUDMON
 
-#if P_FAMILY_MEOWTH
-static const u16 sMeowthFormSpeciesIdTable[] = {
-    SPECIES_MEOWTH,
-    SPECIES_MEOWTH_ALOLAN,
-    SPECIES_MEOWTH_GALARIAN,
-    SPECIES_MEOWTH_GIGANTAMAX,
+#if P_FAMILY_CALUMON
+static const u16 sCalumonFormSpeciesIdTable[] = {
+    SPECIES_CALUMON,
+    SPECIES_CALUMON_ALOLAN,
+    SPECIES_CALUMON_GALARIAN,
+    SPECIES_CALUMON_GIGANTAMAX,
     FORM_SPECIES_END,
 };
 
@@ -158,7 +158,7 @@ static const u16 sPersianFormSpeciesIdTable[] = {
     SPECIES_PERSIAN_ALOLAN,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_MEOWTH
+#endif //P_FAMILY_CALUMON
 
 #if P_FAMILY_GROWLITHE
 static const u16 sGrowlitheFormSpeciesIdTable[] = {

@@ -5322,8 +5322,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_BUDMON
 
-#if P_FAMILY_MEOWTH
-    [SPECIES_MEOWTH] =
+#if P_FAMILY_CALUMON
+    [SPECIES_CALUMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 45,
@@ -5343,14 +5343,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_PICKUP, ABILITY_TECHNICIAN, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Meowth"),
-        .cryId = CRY_MEOWTH,
-        .natDexNum = NATIONAL_DEX_MEOWTH,
+        .speciesName = _("Calumon"),
+        .cryId = CRY_CALUMON,
+        .natDexNum = NATIONAL_DEX_CALUMON,
         .categoryName = _("Scratch Cat"),
         .height = 4,
         .weight = 42,
         .description = COMPOUND_STRING(
-            "Meowth withdraw their sharp claws into\n"
+            "Calumon withdraw their sharp claws into\n"
             "their paws to silently sneak about.\n"
             "For some reason, this Pokémon loves\n"
             "shiny coins that glitter with light."),
@@ -5358,25 +5358,25 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Meowth,
+        .frontPic = gMonFrontPic_Calumon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Meowth,
+        .frontAnimFrames = sAnims_Calumon,
         .frontAnimId = ANIM_V_JUMPS_SMALL,
         .frontAnimDelay = 40,
-        .backPic = gMonBackPic_Meowth,
+        .backPic = gMonBackPic_Calumon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Meowth,
-        .shinyPalette = gMonShinyPalette_Meowth,
-        .iconSprite = gMonIcon_Meowth,
+        .palette = gMonPalette_Calumon,
+        .shinyPalette = gMonShinyPalette_Calumon,
+        .iconSprite = gMonIcon_Calumon,
         .iconPalIndex = 1,
-        FOOTPRINT(Meowth)
-        .levelUpLearnset = sMeowthLevelUpLearnset,
-        .teachableLearnset = sMeowthTeachableLearnset,
-        .formSpeciesIdTable = sMeowthFormSpeciesIdTable,
-        .formChangeTable = sMeowthFormChangeTable,
+        FOOTPRINT(Calumon)
+        .levelUpLearnset = sCalumonLevelUpLearnset,
+        .teachableLearnset = sCalumonTeachableLearnset,
+        .formSpeciesIdTable = sCalumonFormSpeciesIdTable,
+        .formChangeTable = sCalumonFormChangeTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PERSIAN}),
     },
 
@@ -5436,7 +5436,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_ALOLAN_FORMS
-    [SPECIES_MEOWTH_ALOLAN] =
+    [SPECIES_CALUMON_ALOLAN] =
     {
         .baseHP        = 40,
         .baseAttack    = 35,
@@ -5456,9 +5456,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_PICKUP, ABILITY_TECHNICIAN, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Meowth"),
-        .cryId = CRY_MEOWTH,
-        .natDexNum = NATIONAL_DEX_MEOWTH,
+        .speciesName = _("Calumon"),
+        .cryId = CRY_CALUMON,
+        .natDexNum = NATIONAL_DEX_CALUMON,
         .categoryName = _("Scratch Cat"),
         .height = 4,
         .weight = 42,
@@ -5471,24 +5471,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_MeowthAlolan,
+        .frontPic = gMonFrontPic_CalumonAlolan,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_MeowthAlolan,
+        .frontAnimFrames = sAnims_CalumonAlolan,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_MeowthAlolan,
+        .backPic = gMonBackPic_CalumonAlolan,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_MeowthAlolan,
-        .shinyPalette = gMonShinyPalette_MeowthAlolan,
-        .iconSprite = gMonIcon_MeowthAlolan,
+        .palette = gMonPalette_CalumonAlolan,
+        .shinyPalette = gMonShinyPalette_CalumonAlolan,
+        .iconSprite = gMonIcon_CalumonAlolan,
         .iconPalIndex = 2,
-        FOOTPRINT(Meowth)
+        FOOTPRINT(Calumon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sMeowthAlolanLevelUpLearnset,
-        .teachableLearnset = sMeowthAlolanTeachableLearnset,
-        .formSpeciesIdTable = sMeowthFormSpeciesIdTable,
+        .levelUpLearnset = sCalumonAlolanLevelUpLearnset,
+        .teachableLearnset = sCalumonAlolanTeachableLearnset,
+        .formSpeciesIdTable = sCalumonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_PERSIAN_ALOLAN}),
     },
 
@@ -5549,7 +5549,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_ALOLAN_FORMS
 
 #if P_GALARIAN_FORMS
-    [SPECIES_MEOWTH_GALARIAN] =
+    [SPECIES_CALUMON_GALARIAN] =
     {
         .baseHP        = 50,
         .baseAttack    = 65,
@@ -5568,9 +5568,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_PICKUP, ABILITY_TOUGH_CLAWS, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Meowth"),
-        .cryId = CRY_MEOWTH,
-        .natDexNum = NATIONAL_DEX_MEOWTH,
+        .speciesName = _("Calumon"),
+        .cryId = CRY_CALUMON,
+        .natDexNum = NATIONAL_DEX_CALUMON,
         .categoryName = _("Scratch Cat"),
         .height = 4,
         .weight = 75,
@@ -5578,29 +5578,29 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "Living with a savage, seafaring people has\n"
             "hardened its body so much that parts of it\n"
             "turned to iron. Darker coins are harder\n"
-            "and garner more respect among Meowth."),
+            "and garner more respect among Calumon."),
         .pokemonScale = 480,
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_MeowthGalarian,
+        .frontPic = gMonFrontPic_CalumonGalarian,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_MeowthGalarian,
+        .frontAnimFrames = sAnims_CalumonGalarian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_MeowthGalarian,
+        .backPic = gMonBackPic_CalumonGalarian,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 8,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_MeowthGalarian,
-        .shinyPalette = gMonShinyPalette_MeowthGalarian,
-        .iconSprite = gMonIcon_MeowthGalarian,
+        .palette = gMonPalette_CalumonGalarian,
+        .shinyPalette = gMonShinyPalette_CalumonGalarian,
+        .iconSprite = gMonIcon_CalumonGalarian,
         .iconPalIndex = 0,
-        FOOTPRINT(Meowth)
+        FOOTPRINT(Calumon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sMeowthGalarianLevelUpLearnset,
-        .teachableLearnset = sMeowthGalarianTeachableLearnset,
-        .formSpeciesIdTable = sMeowthFormSpeciesIdTable,
+        .levelUpLearnset = sCalumonGalarianLevelUpLearnset,
+        .teachableLearnset = sCalumonGalarianTeachableLearnset,
+        .formSpeciesIdTable = sCalumonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PERRSERKER}),
     },
 
@@ -5657,7 +5657,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GALARIAN_FORMS
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_MEOWTH_GIGANTAMAX] =
+    [SPECIES_CALUMON_GIGANTAMAX] =
     {
         .baseHP        = 40,
         .baseAttack    = 45,
@@ -5677,9 +5677,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_PICKUP, ABILITY_TECHNICIAN, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Meowth"),
-        .cryId = CRY_MEOWTH,
-        .natDexNum = NATIONAL_DEX_MEOWTH,
+        .speciesName = _("Calumon"),
+        .cryId = CRY_CALUMON,
+        .natDexNum = NATIONAL_DEX_CALUMON,
         .categoryName = _("Scratch Cat"),
         .height = 330,
         .weight = 0,
@@ -5692,28 +5692,28 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_MeowthGigantamax,
+        .frontPic = gMonFrontPic_CalumonGigantamax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_MeowthGigantamax,
+        .frontAnimFrames = sAnims_CalumonGigantamax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_MeowthGigantamax,
+        .backPic = gMonBackPic_CalumonGigantamax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 5,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_MeowthGigantamax,
-        .shinyPalette = gMonShinyPalette_MeowthGigantamax,
-        .iconSprite = gMonIcon_MeowthGigantamax,
+        .palette = gMonPalette_CalumonGigantamax,
+        .shinyPalette = gMonShinyPalette_CalumonGigantamax,
+        .iconSprite = gMonIcon_CalumonGigantamax,
         .iconPalIndex = 1,
-        FOOTPRINT(Meowth)
+        FOOTPRINT(Calumon)
         .isGigantamax = TRUE,
-        .levelUpLearnset = sMeowthLevelUpLearnset,
-        .teachableLearnset = sMeowthTeachableLearnset,
-        .formSpeciesIdTable = sMeowthFormSpeciesIdTable,
-        .formChangeTable = sMeowthFormChangeTable,
+        .levelUpLearnset = sCalumonLevelUpLearnset,
+        .teachableLearnset = sCalumonTeachableLearnset,
+        .formSpeciesIdTable = sCalumonFormSpeciesIdTable,
+        .formChangeTable = sCalumonFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_MEOWTH
+#endif //P_FAMILY_CALUMON
 
 #if P_FAMILY_PSYDUCK
     [SPECIES_PSYDUCK] =

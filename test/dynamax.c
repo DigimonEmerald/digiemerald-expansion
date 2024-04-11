@@ -1083,14 +1083,14 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Gold Rush confuses both opponents and genera
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_G_MAX_GOLD_RUSH].argument == MAX_EFFECT_CONFUSE_FOES_PAY_DAY);
-        PLAYER(SPECIES_MEOWTH) { GigantamaxFactor(TRUE); }
+        PLAYER(SPECIES_CALUMON) { GigantamaxFactor(TRUE); }
         PLAYER(SPECIES_PERSIAN);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft, dynamax: TRUE); }
     } SCENE {
-        MESSAGE("Meowth used G-Max Gold Rush!");
+        MESSAGE("Calumon used G-Max Gold Rush!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, opponentLeft);
         MESSAGE("Foe Wobbuffet became confused!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, opponentRight);

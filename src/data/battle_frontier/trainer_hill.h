@@ -3041,7 +3041,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                         },
                                     [1] =
                                         {
-                                            .species = SPECIES_MEOWTH,
+                                            .species = SPECIES_CALUMON,
                                             .heldItem = ITEM_QUICK_CLAW,
                                             .moves = {MOVE_PAY_DAY, MOVE_NONE, MOVE_NONE, MOVE_NONE},
                                             .hpEV = 252,
@@ -3056,7 +3056,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                             .spDefenseIV = 5,
                                             .abilityNum = 0,
                                             .personality = 0xD,
-                                            .nickname = _("MEOWTH"),
+                                            .nickname = _("CALUMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [2] =
