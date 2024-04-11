@@ -4198,8 +4198,8 @@ static const u16 sSlowkingGalarianTeachableLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PAGUMON
 
-#if P_FAMILY_MAGNEMITE
-static const u16 sMagnemiteTeachableLearnset[] = {
+#if P_FAMILY_PICKMON_WHITE
+static const u16 sPickmon_whiteTeachableLearnset[] = {
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
     MOVE_FLASH,
@@ -4287,7 +4287,7 @@ static const u16 sMagnezoneTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MAGNEMITE
+#endif //P_FAMILY_PICKMON_WHITE
 
 #if P_FAMILY_FARFETCHD
 static const u16 sFarfetchdTeachableLearnset[] = {

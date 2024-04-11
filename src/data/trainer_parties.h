@@ -542,7 +542,7 @@ static const struct TrainerMon sParty_GabbyAndTy1[] = {
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 17,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     },
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -555,7 +555,7 @@ static const struct TrainerMon sParty_GabbyAndTy2[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 27,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     },
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -2222,7 +2222,7 @@ static const struct TrainerMon sParty_Shawn[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 17,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     }
 };
 
@@ -2240,7 +2240,7 @@ static const struct TrainerMon sParty_Fernando1[] = {
 static const struct TrainerMon sParty_Dalton1[] = {
     {
     .lvl = 15,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     },
     {
     .lvl = 15,
@@ -2252,7 +2252,7 @@ static const struct TrainerMon sParty_Dalton2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 25,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     },
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -2262,7 +2262,7 @@ static const struct TrainerMon sParty_Dalton2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 25,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     }
 };
 
@@ -2270,7 +2270,7 @@ static const struct TrainerMon sParty_Dalton3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 28,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     },
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -2280,7 +2280,7 @@ static const struct TrainerMon sParty_Dalton3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 28,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     }
 };
 
@@ -4519,25 +4519,25 @@ static const struct TrainerMon sParty_Jacob[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 14,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     }
 };
 
 static const struct TrainerMon sParty_Anthony[] = {
     {
     .lvl = 14,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     },
     {
     .lvl = 14,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     }
 };
 
 static const struct TrainerMon sParty_Benjamin1[] = {
     {
     .lvl = 16,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     }
 };
 
@@ -4545,7 +4545,7 @@ static const struct TrainerMon sParty_Benjamin2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 30,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     }
 };
 
@@ -4553,7 +4553,7 @@ static const struct TrainerMon sParty_Benjamin3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 33,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     }
 };
 
@@ -4576,7 +4576,7 @@ static const struct TrainerMon sParty_Benjamin5[] = {
 static const struct TrainerMon sParty_Abigail1[] = {
     {
     .lvl = 16,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     }
 };
 
@@ -4584,12 +4584,12 @@ static const struct TrainerMon sParty_Jasmine[] = {
     {
     .iv = TRAINER_PARTY_IVS(9, 9, 9, 9, 9, 9),
     .lvl = 14,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     },
     {
     .iv = TRAINER_PARTY_IVS(9, 9, 9, 9, 9, 9),
     .lvl = 14,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     },
     {
     .lvl = 6,
@@ -4601,7 +4601,7 @@ static const struct TrainerMon sParty_Abigail2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 28,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     }
 };
 
@@ -4609,7 +4609,7 @@ static const struct TrainerMon sParty_Abigail3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 31,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     }
 };
 
@@ -7196,7 +7196,7 @@ static const struct TrainerMon sParty_Catherine5[] = {
 static const struct TrainerMon sParty_Julio[] = {
     {
     .lvl = 21,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     }
 };
 
@@ -8963,7 +8963,7 @@ static const struct TrainerMon sParty_Joseph[] = {
 static const struct TrainerMon sParty_Alyssa[] = {
     {
     .lvl = 15,
-    .species = SPECIES_MAGNEMITE,
+    .species = SPECIES_PICKMON_WHITE,
     }
 };
 

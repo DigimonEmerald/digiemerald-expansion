@@ -1158,8 +1158,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(SlowkingGalarian);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PAGUMON
 
-#if P_FAMILY_MAGNEMITE
-static const union AnimCmd sAnim_Magnemite_1[] =
+#if P_FAMILY_PICKMON_WHITE
+static const union AnimCmd sAnim_Pickmon_white_1[] =
 {
     ANIMCMD_FRAME(0, 28),
     ANIMCMD_FRAME(1, 28),
@@ -1192,7 +1192,7 @@ static const union AnimCmd sAnim_Magnezone_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MAGNEMITE
+#endif //P_FAMILY_PICKMON_WHITE
 
 #if P_FAMILY_FARFETCHD
 static const union AnimCmd sAnim_Farfetchd_1[] =
@@ -10430,13 +10430,13 @@ SINGLE_ANIMATION(SlowkingGalarian);
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PAGUMON
-#if P_FAMILY_MAGNEMITE
-SINGLE_ANIMATION(Magnemite);
+#if P_FAMILY_PICKMON_WHITE
+SINGLE_ANIMATION(Pickmon_white);
 SINGLE_ANIMATION(Magneton);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Magnezone);
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MAGNEMITE
+#endif //P_FAMILY_PICKMON_WHITE
 #if P_FAMILY_FARFETCHD
 SINGLE_ANIMATION(Farfetchd);
 #if P_GALARIAN_FORMS

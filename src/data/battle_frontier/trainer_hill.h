@@ -2191,7 +2191,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                 {
                                     [0] =
                                         {
-                                            .species = SPECIES_MAGNEMITE,
+                                            .species = SPECIES_PICKMON_WHITE,
                                             .heldItem = ITEM_MAGNET,
                                             .moves = {MOVE_THUNDER, MOVE_ZAP_CANNON, MOVE_SPARK, MOVE_THUNDER_SHOCK},
                                             .hpEV = 6,
@@ -2206,7 +2206,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 0,
                                             .personality = 0x8C,
-                                            .nickname = _("MAGNEMITE"),
+                                            .nickname = _("PICKMON_WHITE"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [1] =

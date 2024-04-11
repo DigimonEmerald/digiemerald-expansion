@@ -8194,8 +8194,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PAGUMON
 
-#if P_FAMILY_MAGNEMITE
-    [SPECIES_MAGNEMITE] =
+#if P_FAMILY_PICKMON_WHITE
+    [SPECIES_PICKMON_WHITE] =
     {
         .baseHP        = 25,
         .baseAttack    = 35,
@@ -8215,9 +8215,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_MAGNET_PULL, ABILITY_STURDY, ABILITY_ANALYTIC },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Magnemite"),
-        .cryId = CRY_MAGNEMITE,
-        .natDexNum = NATIONAL_DEX_MAGNEMITE,
+        .speciesName = _("Pickmon_white"),
+        .cryId = CRY_PICKMON_WHITE,
+        .natDexNum = NATIONAL_DEX_PICKMON_WHITE,
         .categoryName = _("Magnet"),
         .height = 3,
         .weight = 60,
@@ -8230,23 +8230,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = -9,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Magnemite,
+        .frontPic = gMonFrontPic_Pickmon_white,
         .frontPicSize = MON_COORDS_SIZE(48, 32),
         .frontPicYOffset = 20,
-        .frontAnimFrames = sAnims_Magnemite,
+        .frontAnimFrames = sAnims_Pickmon_white,
         .frontAnimId = ANIM_TUMBLING_FRONT_FLIP_TWICE,
         .enemyMonElevation = 17,
-        .backPic = gMonBackPic_Magnemite,
+        .backPic = gMonBackPic_Pickmon_white,
         .backPicSize = MON_COORDS_SIZE(48, 40),
         .backPicYOffset = 15,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Magnemite,
-        .shinyPalette = gMonShinyPalette_Magnemite,
-        .iconSprite = gMonIcon_Magnemite,
+        .palette = gMonPalette_Pickmon_white,
+        .shinyPalette = gMonShinyPalette_Pickmon_white,
+        .iconSprite = gMonIcon_Pickmon_white,
         .iconPalIndex = 0,
-        FOOTPRINT(Magnemite)
-        .levelUpLearnset = sMagnemiteLevelUpLearnset,
-        .teachableLearnset = sMagnemiteTeachableLearnset,
+        FOOTPRINT(Pickmon_white)
+        .levelUpLearnset = sPickmon_whiteLevelUpLearnset,
+        .teachableLearnset = sPickmon_whiteTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_MAGNETON}),
     },
 
@@ -8277,7 +8277,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 10,
         .weight = 600,
         .description = COMPOUND_STRING(
-            "It is actually three Magnemite linked\n"
+            "It is actually three Pickmon_white linked\n"
             "by magnetism. It generates powerful radio\n"
             "waves that raise temperatures by 3.6\n"
             "degrees F within a 3,300-foot radius."),
@@ -8367,7 +8367,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sMagnezoneTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MAGNEMITE
+#endif //P_FAMILY_PICKMON_WHITE
 
 #if P_FAMILY_FARFETCHD
 #define FARFETCHD_ATTACK (P_UPDATED_STATS >= GEN_7 ? 90 : 65)

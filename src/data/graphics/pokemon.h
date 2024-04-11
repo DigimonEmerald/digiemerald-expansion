@@ -1302,14 +1302,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PAGUMON
 
-#if P_FAMILY_MAGNEMITE
-    const u32 gMonFrontPic_Magnemite[] = INCBIN_U32("graphics/pokemon/magnemite/anim_front.4bpp.lz");
-    const u32 gMonPalette_Magnemite[] = INCBIN_U32("graphics/pokemon/magnemite/normal.gbapal.lz");
-    const u32 gMonBackPic_Magnemite[] = INCBIN_U32("graphics/pokemon/magnemite/back.4bpp.lz");
-    const u32 gMonShinyPalette_Magnemite[] = INCBIN_U32("graphics/pokemon/magnemite/shiny.gbapal.lz");
-    const u8 gMonIcon_Magnemite[] = INCBIN_U8("graphics/pokemon/magnemite/icon.4bpp");
+#if P_FAMILY_PICKMON_WHITE
+    const u32 gMonFrontPic_Pickmon_white[] = INCBIN_U32("graphics/pokemon/pickmon_white/anim_front.4bpp.lz");
+    const u32 gMonPalette_Pickmon_white[] = INCBIN_U32("graphics/pokemon/pickmon_white/normal.gbapal.lz");
+    const u32 gMonBackPic_Pickmon_white[] = INCBIN_U32("graphics/pokemon/pickmon_white/back.4bpp.lz");
+    const u32 gMonShinyPalette_Pickmon_white[] = INCBIN_U32("graphics/pokemon/pickmon_white/shiny.gbapal.lz");
+    const u8 gMonIcon_Pickmon_white[] = INCBIN_U8("graphics/pokemon/pickmon_white/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Magnemite[] = INCBIN_U8("graphics/pokemon/magnemite/footprint.1bpp");
+    const u8 gMonFootprint_Pickmon_white[] = INCBIN_U8("graphics/pokemon/pickmon_white/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Magneton[] = INCBIN_U32("graphics/pokemon/magneton/anim_front.4bpp.lz");
@@ -1331,7 +1331,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Magnezone[] = INCBIN_U8("graphics/pokemon/magnezone/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MAGNEMITE
+#endif //P_FAMILY_PICKMON_WHITE
 
 #if P_FAMILY_FARFETCHD
     const u32 gMonFrontPic_Farfetchd[] = INCBIN_U32("graphics/pokemon/farfetchd/anim_front.4bpp.lz");

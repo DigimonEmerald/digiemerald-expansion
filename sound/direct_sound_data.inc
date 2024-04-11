@@ -876,10 +876,10 @@ Cry_PagumonGalarian::
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_PAGUMON
 
-.if P_FAMILY_MAGNEMITE == TRUE
+.if P_FAMILY_PICKMON_WHITE == TRUE
 	.align 2
-Cry_Magnemite::
-	.incbin "sound/direct_sound_samples/cries/magnemite.bin"
+Cry_Pickmon_white::
+	.incbin "sound/direct_sound_samples/cries/pickmon_white.bin"
 
 	.align 2
 Cry_Magneton::
@@ -890,7 +890,7 @@ Cry_Magneton::
 Cry_Magnezone::
 	.incbin "sound/direct_sound_samples/cries/magnezone.bin"
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_MAGNEMITE
+.endif @ P_FAMILY_PICKMON_WHITE
 
 .if P_FAMILY_FARFETCHD == TRUE
 	.align 2

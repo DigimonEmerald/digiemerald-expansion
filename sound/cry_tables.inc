@@ -196,13 +196,13 @@ gCryTable::
 	cry Cry_PagumonGalarian
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_PAGUMON
-.if P_FAMILY_MAGNEMITE == TRUE
-	cry Cry_Magnemite
+.if P_FAMILY_PICKMON_WHITE == TRUE
+	cry Cry_Pickmon_white
 	cry Cry_Magneton
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Magnezone
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_MAGNEMITE
+.endif @ P_FAMILY_PICKMON_WHITE
 .if P_FAMILY_FARFETCHD == TRUE
 	cry Cry_Farfetchd
 .if P_GALARIAN_FORMS == TRUE
@@ -2622,13 +2622,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_PagumonGalarian
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_PAGUMON
-.if P_FAMILY_MAGNEMITE == TRUE
-	cry_reverse Cry_Magnemite
+.if P_FAMILY_PICKMON_WHITE == TRUE
+	cry_reverse Cry_Pickmon_white
 	cry_reverse Cry_Magneton
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Magnezone
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_MAGNEMITE
+.endif @ P_FAMILY_PICKMON_WHITE
 .if P_FAMILY_FARFETCHD == TRUE
 	cry_reverse Cry_Farfetchd
 .if P_GALARIAN_FORMS == TRUE
