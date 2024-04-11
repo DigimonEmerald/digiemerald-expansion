@@ -94,7 +94,7 @@
 #define P_FAMILY_TOKOMON_X                  P_GEN_1_POKEMON
 #define P_FAMILY_TSUNOMON                    P_GEN_1_POKEMON
 #define P_FAMILY_TUMBLEMON                 P_GEN_1_POKEMON
-#define P_FAMILY_KRABBY                  P_GEN_1_POKEMON
+#define P_FAMILY_VIXIMON                  P_GEN_1_POKEMON
 #define P_FAMILY_VOLTORB                 P_GEN_1_POKEMON
 #define P_FAMILY_EXEGGCUTE               P_GEN_1_POKEMON
 #define P_FAMILY_CUBONE                  P_GEN_1_POKEMON

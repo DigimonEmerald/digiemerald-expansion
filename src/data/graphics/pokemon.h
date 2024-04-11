@@ -1562,14 +1562,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonBackPic_UpamonF[] = INCBIN_U32("graphics/pokemon/upamon/backf.4bpp.lz");
 #endif //P_FAMILY_TUMBLEMON
 
-#if P_FAMILY_KRABBY
-    const u32 gMonFrontPic_Krabby[] = INCBIN_U32("graphics/pokemon/krabby/anim_front.4bpp.lz");
-    const u32 gMonPalette_Krabby[] = INCBIN_U32("graphics/pokemon/krabby/normal.gbapal.lz");
-    const u32 gMonBackPic_Krabby[] = INCBIN_U32("graphics/pokemon/krabby/back.4bpp.lz");
-    const u32 gMonShinyPalette_Krabby[] = INCBIN_U32("graphics/pokemon/krabby/shiny.gbapal.lz");
-    const u8 gMonIcon_Krabby[] = INCBIN_U8("graphics/pokemon/krabby/icon.4bpp");
+#if P_FAMILY_VIXIMON
+    const u32 gMonFrontPic_Viximon[] = INCBIN_U32("graphics/pokemon/viximon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Viximon[] = INCBIN_U32("graphics/pokemon/viximon/normal.gbapal.lz");
+    const u32 gMonBackPic_Viximon[] = INCBIN_U32("graphics/pokemon/viximon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Viximon[] = INCBIN_U32("graphics/pokemon/viximon/shiny.gbapal.lz");
+    const u8 gMonIcon_Viximon[] = INCBIN_U8("graphics/pokemon/viximon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Krabby[] = INCBIN_U8("graphics/pokemon/krabby/footprint.1bpp");
+    const u8 gMonFootprint_Viximon[] = INCBIN_U8("graphics/pokemon/viximon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Kingler[] = INCBIN_U32("graphics/pokemon/kingler/anim_front.4bpp.lz");
@@ -1588,7 +1588,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_KinglerGigantamax[] = INCBIN_U32("graphics/pokemon/kingler/gigantamax/shiny.gbapal.lz");
     const u8 gMonIcon_KinglerGigantamax[] = INCBIN_U8("graphics/pokemon/kingler/gigantamax/icon.4bpp");
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_KRABBY
+#endif //P_FAMILY_VIXIMON
 
 #if P_FAMILY_VOLTORB
     const u32 gMonFrontPic_Voltorb[] = INCBIN_U32("graphics/pokemon/voltorb/anim_front.4bpp.lz");

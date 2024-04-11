@@ -993,15 +993,15 @@ Cry_Upamon::
 	.incbin "sound/direct_sound_samples/cries/upamon.bin"
 .endif @ P_FAMILY_TUMBLEMON
 
-.if P_FAMILY_KRABBY == TRUE
+.if P_FAMILY_VIXIMON == TRUE
 	.align 2
-Cry_Krabby::
-	.incbin "sound/direct_sound_samples/cries/krabby.bin"
+Cry_Viximon::
+	.incbin "sound/direct_sound_samples/cries/viximon.bin"
 
 	.align 2
 Cry_Kingler::
 	.incbin "sound/direct_sound_samples/cries/kingler.bin"
-.endif @ P_FAMILY_KRABBY
+.endif @ P_FAMILY_VIXIMON
 
 .if P_FAMILY_VOLTORB == TRUE
 	.align 2

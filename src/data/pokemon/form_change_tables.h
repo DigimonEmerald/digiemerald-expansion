@@ -100,13 +100,13 @@ static const struct FormChange sSteelixFormChangeTable[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_TSUNOMON
 
-#if P_FAMILY_KRABBY
+#if P_FAMILY_VIXIMON
 static const struct FormChange sKinglerFormChangeTable[] =
 {
     {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_KINGLER_GIGANTAMAX},
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_KRABBY
+#endif //P_FAMILY_VIXIMON
 
 #if P_FAMILY_KANGASKHAN
 static const struct FormChange sKangaskhanFormChangeTable[] = {

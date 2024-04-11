@@ -823,8 +823,8 @@ const u16 gEggMoves[] = {
         MOVE_PSYCHIC_TERRAIN),
 #endif //P_FAMILY_TUMBLEMON
 
-#if P_FAMILY_KRABBY
-    egg_moves(KRABBY,
+#if P_FAMILY_VIXIMON
+    egg_moves(VIXIMON,
         MOVE_HAZE,
         MOVE_AMNESIA,
         MOVE_FLAIL,
@@ -837,7 +837,7 @@ const u16 gEggMoves[] = {
         MOVE_CHIP_AWAY,
         MOVE_BIDE,
         MOVE_ALLY_SWITCH),
-#endif //P_FAMILY_KRABBY
+#endif //P_FAMILY_VIXIMON
 
 #if P_FAMILY_EXEGGCUTE
     egg_moves(EXEGGCUTE,

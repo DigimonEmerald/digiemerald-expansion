@@ -1398,8 +1398,8 @@ static const union AnimCmd sAnim_Upamon_1[] =
 };
 #endif //P_FAMILY_TUMBLEMON
 
-#if P_FAMILY_KRABBY
-static const union AnimCmd sAnim_Krabby_1[] =
+#if P_FAMILY_VIXIMON
+static const union AnimCmd sAnim_Viximon_1[] =
 {
     ANIMCMD_FRAME(1, 16),
     ANIMCMD_FRAME(0, 16),
@@ -1420,7 +1420,7 @@ static const union AnimCmd sAnim_Kingler_1[] =
 #if P_GIGANTAMAX_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(KinglerGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_KRABBY
+#endif //P_FAMILY_VIXIMON
 
 #if P_FAMILY_VOLTORB
 static const union AnimCmd sAnim_Voltorb_1[] =
@@ -10488,13 +10488,13 @@ SINGLE_ANIMATION(SteelixMega);
 SINGLE_ANIMATION(Tumblemon);
 SINGLE_ANIMATION(Upamon);
 #endif //P_FAMILY_TUMBLEMON
-#if P_FAMILY_KRABBY
-SINGLE_ANIMATION(Krabby);
+#if P_FAMILY_VIXIMON
+SINGLE_ANIMATION(Viximon);
 SINGLE_ANIMATION(Kingler);
 #if P_GIGANTAMAX_FORMS
 SINGLE_ANIMATION(KinglerGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_KRABBY
+#endif //P_FAMILY_VIXIMON
 #if P_FAMILY_VOLTORB
 SINGLE_ANIMATION(Voltorb);
 SINGLE_ANIMATION(Electrode);

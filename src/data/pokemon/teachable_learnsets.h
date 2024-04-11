@@ -4996,8 +4996,8 @@ static const u16 sUpamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_TUMBLEMON
 
-#if P_FAMILY_KRABBY
-static const u16 sKrabbyTeachableLearnset[] = {
+#if P_FAMILY_VIXIMON
+static const u16 sViximonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
@@ -5067,7 +5067,7 @@ static const u16 sKinglerTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_KRABBY
+#endif //P_FAMILY_VIXIMON
 
 #if P_FAMILY_VOLTORB
 static const u16 sVoltorbTeachableLearnset[] = {

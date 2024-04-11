@@ -246,10 +246,10 @@ gCryTable::
 	cry Cry_Tumblemon
 	cry Cry_Upamon
 .endif @ P_FAMILY_TUMBLEMON
-.if P_FAMILY_KRABBY == TRUE
-	cry Cry_Krabby
+.if P_FAMILY_VIXIMON == TRUE
+	cry Cry_Viximon
 	cry Cry_Kingler
-.endif @ P_FAMILY_KRABBY
+.endif @ P_FAMILY_VIXIMON
 .if P_FAMILY_VOLTORB == TRUE
 	cry Cry_Voltorb
 	cry Cry_Electrode
@@ -2672,10 +2672,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Tumblemon
 	cry_reverse Cry_Upamon
 .endif @ P_FAMILY_TUMBLEMON
-.if P_FAMILY_KRABBY == TRUE
-	cry_reverse Cry_Krabby
+.if P_FAMILY_VIXIMON == TRUE
+	cry_reverse Cry_Viximon
 	cry_reverse Cry_Kingler
-.endif @ P_FAMILY_KRABBY
+.endif @ P_FAMILY_VIXIMON
 .if P_FAMILY_VOLTORB == TRUE
 	cry_reverse Cry_Voltorb
 	cry_reverse Cry_Electrode

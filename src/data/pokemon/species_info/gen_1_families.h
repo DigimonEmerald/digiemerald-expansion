@@ -9694,8 +9694,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_TUMBLEMON
 
-#if P_FAMILY_KRABBY
-    [SPECIES_KRABBY] =
+#if P_FAMILY_VIXIMON
+    [SPECIES_VIXIMON] =
     {
         .baseHP        = 30,
         .baseAttack    = 105,
@@ -9714,14 +9714,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
         .abilities = { ABILITY_HYPER_CUTTER, ABILITY_SHELL_ARMOR, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Krabby"),
-        .cryId = CRY_KRABBY,
-        .natDexNum = NATIONAL_DEX_KRABBY,
+        .speciesName = _("Viximon"),
+        .cryId = CRY_VIXIMON,
+        .natDexNum = NATIONAL_DEX_VIXIMON,
         .categoryName = _("River Crab"),
         .height = 4,
         .weight = 65,
         .description = COMPOUND_STRING(
-            "Krabby live in holes dug into beaches.\n"
+            "Viximon live in holes dug into beaches.\n"
             "On sandy shores with little in the way\n"
             "of food, they can be seen squabbling with\n"
             "each other over territory."),
@@ -9729,22 +9729,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Krabby,
+        .frontPic = gMonFrontPic_Viximon,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Krabby,
+        .frontAnimFrames = sAnims_Viximon,
         .frontAnimId = ANIM_H_SLIDE_SLOW,
-        .backPic = gMonBackPic_Krabby,
+        .backPic = gMonBackPic_Viximon,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 15,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Krabby,
-        .shinyPalette = gMonShinyPalette_Krabby,
-        .iconSprite = gMonIcon_Krabby,
+        .palette = gMonPalette_Viximon,
+        .shinyPalette = gMonShinyPalette_Viximon,
+        .iconSprite = gMonIcon_Viximon,
         .iconPalIndex = 0,
-        FOOTPRINT(Krabby)
-        .levelUpLearnset = sKrabbyLevelUpLearnset,
-        .teachableLearnset = sKrabbyTeachableLearnset,
+        FOOTPRINT(Viximon)
+        .levelUpLearnset = sViximonLevelUpLearnset,
+        .teachableLearnset = sViximonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_KINGLER}),
     },
 
@@ -9861,7 +9861,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sKinglerFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_KRABBY
+#endif //P_FAMILY_VIXIMON
 
 #if P_FAMILY_VOLTORB
 #if P_UPDATED_EXP_YIELDS >= GEN_7

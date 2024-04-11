@@ -288,13 +288,13 @@ static const u16 sSteelixFormSpeciesIdTable[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_TSUNOMON
 
-#if P_FAMILY_KRABBY
+#if P_FAMILY_VIXIMON
 static const u16 sKinglerFormSpeciesIdTable[] = {
     SPECIES_KINGLER,
     SPECIES_KINGLER_GIGANTAMAX,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_KRABBY
+#endif //P_FAMILY_VIXIMON
 
 #if P_FAMILY_VOLTORB
 static const u16 sVoltorbFormSpeciesIdTable[] = {
