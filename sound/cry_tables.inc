@@ -114,10 +114,10 @@ gCryTable::
 	cry Cry_Argomon_it
 	cry Cry_Babymon
 .endif @ P_FAMILY_ARGOMON_IT
-.if P_FAMILY_VENONAT == TRUE
-	cry Cry_Venonat
+.if P_FAMILY_BIBIMON == TRUE
+	cry Cry_Bibimon
 	cry Cry_Venomoth
-.endif @ P_FAMILY_VENONAT
+.endif @ P_FAMILY_BIBIMON
 .if P_FAMILY_DIGLETT == TRUE
 	cry Cry_Diglett
 	cry Cry_Dugtrio
@@ -2540,10 +2540,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Argomon_it
 	cry_reverse Cry_Babymon
 .endif @ P_FAMILY_ARGOMON_IT
-.if P_FAMILY_VENONAT == TRUE
-	cry_reverse Cry_Venonat
+.if P_FAMILY_BIBIMON == TRUE
+	cry_reverse Cry_Bibimon
 	cry_reverse Cry_Venomoth
-.endif @ P_FAMILY_VENONAT
+.endif @ P_FAMILY_BIBIMON
 .if P_FAMILY_DIGLETT == TRUE
 	cry_reverse Cry_Diglett
 	cry_reverse Cry_Dugtrio

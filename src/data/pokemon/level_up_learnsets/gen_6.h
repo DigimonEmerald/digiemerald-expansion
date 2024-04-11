@@ -1070,8 +1070,8 @@ static const struct LevelUpMove sBabymonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_ARGOMON_IT
 
-#if P_FAMILY_VENONAT
-static const struct LevelUpMove sVenonatLevelUpLearnset[] = {
+#if P_FAMILY_BIBIMON
+static const struct LevelUpMove sBibimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_DISABLE),
     LEVEL_UP_MOVE( 1, MOVE_FORESIGHT),
@@ -1113,7 +1113,7 @@ static const struct LevelUpMove sVenomothLevelUpLearnset[] = {
     LEVEL_UP_MOVE(63, MOVE_QUIVER_DANCE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_VENONAT
+#endif //P_FAMILY_BIBIMON
 
 #if P_FAMILY_DIGLETT
 static const struct LevelUpMove sDiglettLevelUpLearnset[] = {

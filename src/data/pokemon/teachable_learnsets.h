@@ -2223,8 +2223,8 @@ static const u16 sBabymonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_ARGOMON_IT
 
-#if P_FAMILY_VENONAT
-static const u16 sVenonatTeachableLearnset[] = {
+#if P_FAMILY_BIBIMON
+static const u16 sBibimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
@@ -2276,7 +2276,7 @@ static const u16 sVenomothTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_VENONAT
+#endif //P_FAMILY_BIBIMON
 
 #if P_FAMILY_DIGLETT
 static const u16 sDiglettTeachableLearnset[] = {

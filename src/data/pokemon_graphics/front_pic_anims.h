@@ -717,8 +717,8 @@ static const union AnimCmd sAnim_Babymon_1[] =
 };
 #endif //P_FAMILY_ARGOMON_IT
 
-#if P_FAMILY_VENONAT
-static const union AnimCmd sAnim_Venonat_1[] =
+#if P_FAMILY_BIBIMON
+static const union AnimCmd sAnim_Bibimon_1[] =
 {
     ANIMCMD_FRAME(1, 5),
     ANIMCMD_FRAME(0, 5),
@@ -755,7 +755,7 @@ static const union AnimCmd sAnim_Venomoth_1[] =
     ANIMCMD_FRAME(0, 4),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_VENONAT
+#endif //P_FAMILY_BIBIMON
 
 #if P_FAMILY_DIGLETT
 static const union AnimCmd sAnim_Diglett_1[] =
@@ -10316,10 +10316,10 @@ SINGLE_ANIMATION(Bellossom);
 SINGLE_ANIMATION(Argomon_it);
 SINGLE_ANIMATION(Babymon);
 #endif //P_FAMILY_ARGOMON_IT
-#if P_FAMILY_VENONAT
-SINGLE_ANIMATION(Venonat);
+#if P_FAMILY_BIBIMON
+SINGLE_ANIMATION(Bibimon);
 SINGLE_ANIMATION(Venomoth);
-#endif //P_FAMILY_VENONAT
+#endif //P_FAMILY_BIBIMON
 #if P_FAMILY_DIGLETT
 SINGLE_ANIMATION(Diglett);
 SINGLE_ANIMATION(Dugtrio);

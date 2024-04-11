@@ -71,7 +71,7 @@
 #define P_FAMILY_ICEBOTAMON                   P_GEN_1_POKEMON
 #define P_FAMILY_ZERIMON                  P_GEN_1_POKEMON
 #define P_FAMILY_ARGOMON_IT                   P_GEN_1_POKEMON
-#define P_FAMILY_VENONAT                 P_GEN_1_POKEMON
+#define P_FAMILY_BIBIMON                 P_GEN_1_POKEMON
 #define P_FAMILY_DIGLETT                 P_GEN_1_POKEMON
 #define P_FAMILY_MEOWTH                  P_GEN_1_POKEMON
 #define P_FAMILY_PSYDUCK                 P_GEN_1_POKEMON

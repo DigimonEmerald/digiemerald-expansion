@@ -351,8 +351,8 @@ const u16 gEggMoves[] = {
         MOVE_GRASSY_TERRAIN),
 #endif //P_FAMILY_ARGOMON_IT
 
-#if P_FAMILY_VENONAT
-    egg_moves(VENONAT,
+#if P_FAMILY_BIBIMON
+    egg_moves(BIBIMON,
         MOVE_BATON_PASS,
         MOVE_SCREECH,
         MOVE_GIGA_DRAIN,
@@ -364,7 +364,7 @@ const u16 gEggMoves[] = {
         MOVE_SECRET_POWER,
         MOVE_SKILL_SWAP,
         MOVE_RAGE_POWDER),
-#endif //P_FAMILY_VENONAT
+#endif //P_FAMILY_BIBIMON
 
 #if P_FAMILY_DIGLETT
     egg_moves(DIGLETT,

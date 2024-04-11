@@ -674,15 +674,15 @@ Cry_Babymon::
 	.incbin "sound/direct_sound_samples/cries/babymon.bin"
 .endif @ P_FAMILY_ARGOMON_IT
 
-.if P_FAMILY_VENONAT == TRUE
+.if P_FAMILY_BIBIMON == TRUE
 	.align 2
-Cry_Venonat::
-	.incbin "sound/direct_sound_samples/cries/venonat.bin"
+Cry_Bibimon::
+	.incbin "sound/direct_sound_samples/cries/bibimon.bin"
 
 	.align 2
 Cry_Venomoth::
 	.incbin "sound/direct_sound_samples/cries/venomoth.bin"
-.endif @ P_FAMILY_VENONAT
+.endif @ P_FAMILY_BIBIMON
 
 .if P_FAMILY_DIGLETT == TRUE
 	.align 2

@@ -788,14 +788,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_ARGOMON_IT
 
-#if P_FAMILY_VENONAT
-    const u32 gMonFrontPic_Venonat[] = INCBIN_U32("graphics/pokemon/venonat/anim_front.4bpp.lz");
-    const u32 gMonPalette_Venonat[] = INCBIN_U32("graphics/pokemon/venonat/normal.gbapal.lz");
-    const u32 gMonBackPic_Venonat[] = INCBIN_U32("graphics/pokemon/venonat/back.4bpp.lz");
-    const u32 gMonShinyPalette_Venonat[] = INCBIN_U32("graphics/pokemon/venonat/shiny.gbapal.lz");
-    const u8 gMonIcon_Venonat[] = INCBIN_U8("graphics/pokemon/venonat/icon.4bpp");
+#if P_FAMILY_BIBIMON
+    const u32 gMonFrontPic_Bibimon[] = INCBIN_U32("graphics/pokemon/bibimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Bibimon[] = INCBIN_U32("graphics/pokemon/bibimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Bibimon[] = INCBIN_U32("graphics/pokemon/bibimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Bibimon[] = INCBIN_U32("graphics/pokemon/bibimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Bibimon[] = INCBIN_U8("graphics/pokemon/bibimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Venonat[] = INCBIN_U8("graphics/pokemon/venonat/footprint.1bpp");
+    const u8 gMonFootprint_Bibimon[] = INCBIN_U8("graphics/pokemon/bibimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Venomoth[] = INCBIN_U32("graphics/pokemon/venomoth/anim_front.4bpp.lz");
@@ -806,7 +806,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Venomoth[] = INCBIN_U8("graphics/pokemon/venomoth/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_VENONAT
+#endif //P_FAMILY_BIBIMON
 
 #if P_FAMILY_DIGLETT
     const u32 gMonFrontPic_Diglett[] = INCBIN_U32("graphics/pokemon/diglett/anim_front.4bpp.lz");

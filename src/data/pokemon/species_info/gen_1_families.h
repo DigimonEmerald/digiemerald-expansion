@@ -4973,8 +4973,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_ARGOMON_IT
 
-#if P_FAMILY_VENONAT
-    [SPECIES_VENONAT] =
+#if P_FAMILY_BIBIMON
+    [SPECIES_BIBIMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 55,
@@ -4993,9 +4993,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_COMPOUND_EYES, ABILITY_TINTED_LENS, ABILITY_RUN_AWAY },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Venonat"),
-        .cryId = CRY_VENONAT,
-        .natDexNum = NATIONAL_DEX_VENONAT,
+        .speciesName = _("Bibimon"),
+        .cryId = CRY_BIBIMON,
+        .natDexNum = NATIONAL_DEX_BIBIMON,
         .categoryName = _("Insect"),
         .height = 10,
         .weight = 300,
@@ -5008,23 +5008,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = -1,
-        .frontPic = gMonFrontPic_Venonat,
+        .frontPic = gMonFrontPic_Bibimon,
         .frontPicSize = MON_COORDS_SIZE(40, 56),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Venonat,
+        .frontAnimFrames = sAnims_Bibimon,
         .frontAnimId = ANIM_V_JUMPS_H_JUMPS,
         .frontAnimDelay = 20,
-        .backPic = gMonBackPic_Venonat,
+        .backPic = gMonBackPic_Bibimon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Venonat,
-        .shinyPalette = gMonShinyPalette_Venonat,
-        .iconSprite = gMonIcon_Venonat,
+        .palette = gMonPalette_Bibimon,
+        .shinyPalette = gMonShinyPalette_Bibimon,
+        .iconSprite = gMonIcon_Bibimon,
         .iconPalIndex = 2,
-        FOOTPRINT(Venonat)
-        .levelUpLearnset = sVenonatLevelUpLearnset,
-        .teachableLearnset = sVenonatTeachableLearnset,
+        FOOTPRINT(Bibimon)
+        .levelUpLearnset = sBibimonLevelUpLearnset,
+        .teachableLearnset = sBibimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_VENOMOTH}),
     },
 
@@ -5082,7 +5082,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sVenomothLevelUpLearnset,
         .teachableLearnset = sVenomothTeachableLearnset,
     },
-#endif //P_FAMILY_VENONAT
+#endif //P_FAMILY_BIBIMON
 
 #if P_FAMILY_DIGLETT
 
