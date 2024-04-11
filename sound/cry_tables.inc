@@ -154,7 +154,7 @@ gCryTable::
 .endif @ P_FAMILY_GUMMYMON
 .if P_FAMILY_HOPMON == TRUE
 	cry Cry_Hopmon
-	cry Cry_Kadabra
+	cry Cry_Kakkinmon
 	cry Cry_Alakazam
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_AlakazamMega
@@ -2580,7 +2580,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_GUMMYMON
 .if P_FAMILY_HOPMON == TRUE
 	cry_reverse Cry_Hopmon
-	cry_reverse Cry_Kadabra
+	cry_reverse Cry_Kakkinmon
 	cry_reverse Cry_Alakazam
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_AlakazamMega

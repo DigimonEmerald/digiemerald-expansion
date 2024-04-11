@@ -948,7 +948,7 @@ static const union AnimCmd sAnim_Hopmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Kadabra_1[] =
+static const union AnimCmd sAnim_Kakkinmon_1[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 45),
@@ -10372,7 +10372,7 @@ SINGLE_ANIMATION(Politoed);
 #endif //P_FAMILY_GUMMYMON
 #if P_FAMILY_HOPMON
 SINGLE_ANIMATION(Hopmon);
-SINGLE_ANIMATION(Kadabra);
+SINGLE_ANIMATION(Kakkinmon);
 SINGLE_ANIMATION(Alakazam);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(AlakazamMega);

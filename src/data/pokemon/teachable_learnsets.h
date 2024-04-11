@@ -3183,7 +3183,7 @@ static const u16 sHopmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sKadabraTeachableLearnset[] = {
+static const u16 sKakkinmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DIG,

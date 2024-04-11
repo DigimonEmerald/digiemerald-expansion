@@ -154,7 +154,7 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(VIGOROTH),
     HOENN_TO_NATIONAL(SLAKING),
     HOENN_TO_NATIONAL(HOPMON),
-    HOENN_TO_NATIONAL(KADABRA),
+    HOENN_TO_NATIONAL(KAKKINMON),
     HOENN_TO_NATIONAL(ALAKAZAM),
     HOENN_TO_NATIONAL(NINCADA),
     HOENN_TO_NATIONAL(NINJASK),
@@ -4146,7 +4146,7 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
     // Prevent evolution with Everstone, unless we're just viewing the party menu with an evolution item
     if (holdEffect == HOLD_EFFECT_PREVENT_EVOLVE
         && mode != EVO_MODE_ITEM_CHECK
-        && (P_KADABRA_EVERSTONE < GEN_4 || species != SPECIES_KADABRA))
+        && (P_KAKKINMON_EVERSTONE < GEN_4 || species != SPECIES_KAKKINMON))
         return SPECIES_NONE;
 
     switch (mode)

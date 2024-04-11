@@ -6508,10 +6508,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Hopmon)
         .levelUpLearnset = sHopmonLevelUpLearnset,
         .teachableLearnset = sHopmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_KADABRA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_KAKKINMON}),
     },
 
-    [SPECIES_KADABRA] =
+    [SPECIES_KAKKINMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 35,
@@ -6532,41 +6532,41 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_SYNCHRONIZE, ABILITY_INNER_FOCUS, ABILITY_MAGIC_GUARD },
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
-        .speciesName = _("Kadabra"),
-        .cryId = CRY_KADABRA,
-        .natDexNum = NATIONAL_DEX_KADABRA,
+        .speciesName = _("Kakkinmon"),
+        .cryId = CRY_KAKKINMON,
+        .natDexNum = NATIONAL_DEX_KAKKINMON,
         .categoryName = _("Psi"),
         .height = 13,
         .weight = 565,
         .description = COMPOUND_STRING(
             "It is rumored that a boy with psychic\n"
             "abilities suddenly transformed into\n"
-            "Kadabra while he was assisting research\n"
+            "Kakkinmon while he was assisting research\n"
             "into extrasensory powers."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Kadabra,
-        .frontPicFemale = gMonFrontPic_KadabraF,
+        .frontPic = gMonFrontPic_Kakkinmon,
+        .frontPicFemale = gMonFrontPic_KakkinmonF,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_Kadabra,
+        .frontAnimFrames = sAnims_Kakkinmon,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Kadabra,
-        .backPicFemale = gMonBackPic_KadabraF,
+        .backPic = gMonBackPic_Kakkinmon,
+        .backPicFemale = gMonBackPic_KakkinmonF,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Kadabra,
-        .shinyPalette = gMonShinyPalette_Kadabra,
-        .iconSprite = gMonIcon_Kadabra,
+        .palette = gMonPalette_Kakkinmon,
+        .shinyPalette = gMonShinyPalette_Kakkinmon,
+        .iconSprite = gMonIcon_Kakkinmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Kadabra)
-        .levelUpLearnset = sKadabraLevelUpLearnset,
-        .teachableLearnset = sKadabraTeachableLearnset,
+        FOOTPRINT(Kakkinmon)
+        .levelUpLearnset = sKakkinmonLevelUpLearnset,
+        .teachableLearnset = sKakkinmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_ALAKAZAM},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_ALAKAZAM}),
     },

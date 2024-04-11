@@ -89,7 +89,7 @@ DOUBLE_BATTLE_TEST("Corrosive Gas destroys foes and ally's items if they have on
         PLAYER(SPECIES_WOBBUFFET) {Item(itemPlayerLeft);}
         PLAYER(SPECIES_WYNAUT) {Item(ITEM_SITRUS_BERRY);}
         OPPONENT(SPECIES_HOPMON) {Item(itemOpponentLeft);}
-        OPPONENT(SPECIES_KADABRA) {Item(itemOpponentRight);}
+        OPPONENT(SPECIES_KAKKINMON) {Item(itemOpponentRight);}
     } WHEN {
         TURN { MOVE(playerRight, MOVE_CORROSIVE_GAS); }
     } SCENE {
@@ -105,9 +105,9 @@ DOUBLE_BATTLE_TEST("Corrosive Gas destroys foes and ally's items if they have on
             MESSAGE("It had no effect on Foe Hopmon!");
         }
         if (itemOpponentRight == ITEM_CHESTO_BERRY) {
-            MESSAGE("Wynaut corroded Foe Kadabra's Chesto Berry!");
+            MESSAGE("Wynaut corroded Foe Kakkinmon's Chesto Berry!");
         } else {
-            MESSAGE("It had no effect on Foe Kadabra!");
+            MESSAGE("It had no effect on Foe Kakkinmon!");
         }
 
     } THEN {

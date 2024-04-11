@@ -1698,7 +1698,7 @@ static const struct LevelUpMove sHopmonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sKadabraLevelUpLearnset[] = {
+static const struct LevelUpMove sKakkinmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 1, MOVE_KINESIS),

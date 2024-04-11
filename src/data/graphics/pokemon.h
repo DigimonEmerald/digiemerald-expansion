@@ -1039,17 +1039,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Hopmon[] = INCBIN_U8("graphics/pokemon/hopmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Kadabra[] = INCBIN_U32("graphics/pokemon/kadabra/anim_front.4bpp.lz");
-    const u32 gMonPalette_Kadabra[] = INCBIN_U32("graphics/pokemon/kadabra/normal.gbapal.lz");
-    const u32 gMonBackPic_Kadabra[] = INCBIN_U32("graphics/pokemon/kadabra/back.4bpp.lz");
-    const u32 gMonShinyPalette_Kadabra[] = INCBIN_U32("graphics/pokemon/kadabra/shiny.gbapal.lz");
-    const u8 gMonIcon_Kadabra[] = INCBIN_U8("graphics/pokemon/kadabra/icon.4bpp");
+    const u32 gMonFrontPic_Kakkinmon[] = INCBIN_U32("graphics/pokemon/kakkinmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Kakkinmon[] = INCBIN_U32("graphics/pokemon/kakkinmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Kakkinmon[] = INCBIN_U32("graphics/pokemon/kakkinmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Kakkinmon[] = INCBIN_U32("graphics/pokemon/kakkinmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Kakkinmon[] = INCBIN_U8("graphics/pokemon/kakkinmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Kadabra[] = INCBIN_U8("graphics/pokemon/kadabra/footprint.1bpp");
+    const u8 gMonFootprint_Kakkinmon[] = INCBIN_U8("graphics/pokemon/kakkinmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_KadabraF[] = INCBIN_U32("graphics/pokemon/kadabra/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_KadabraF[] = INCBIN_U32("graphics/pokemon/kadabra/backf.4bpp.lz");
+    const u32 gMonFrontPic_KakkinmonF[] = INCBIN_U32("graphics/pokemon/kakkinmon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_KakkinmonF[] = INCBIN_U32("graphics/pokemon/kakkinmon/backf.4bpp.lz");
 
     const u32 gMonFrontPic_Alakazam[] = INCBIN_U32("graphics/pokemon/alakazam/anim_front.4bpp.lz");
     const u32 gMonPalette_Alakazam[] = INCBIN_U32("graphics/pokemon/alakazam/normal.gbapal.lz");
