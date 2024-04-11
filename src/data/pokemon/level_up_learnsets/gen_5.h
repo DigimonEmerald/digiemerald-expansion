@@ -1465,8 +1465,8 @@ static const struct LevelUpMove sGigimonHisuianLevelUpLearnset[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FRIMON
 
-#if P_FAMILY_POLIWAG
-static const struct LevelUpMove sPoliwagLevelUpLearnset[] = {
+#if P_FAMILY_GUMMYMON
+static const struct LevelUpMove sGummymonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WATER_SPORT),
     LEVEL_UP_MOVE( 5, MOVE_BUBBLE),
     LEVEL_UP_MOVE( 8, MOVE_HYPNOSIS),
@@ -1525,7 +1525,7 @@ static const struct LevelUpMove sPolitoedLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_POLIWAG
+#endif //P_FAMILY_GUMMYMON
 
 #if P_FAMILY_ABRA
 static const struct LevelUpMove sAbraLevelUpLearnset[] = {

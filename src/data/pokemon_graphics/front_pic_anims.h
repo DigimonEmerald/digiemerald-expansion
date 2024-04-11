@@ -897,8 +897,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(GigimonHisuian);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FRIMON
 
-#if P_FAMILY_POLIWAG
-static const union AnimCmd sAnim_Poliwag_1[] =
+#if P_FAMILY_GUMMYMON
+static const union AnimCmd sAnim_Gummymon_1[] =
 {
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_FRAME(1, 10),
@@ -935,7 +935,7 @@ static const union AnimCmd sAnim_Politoed_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_POLIWAG
+#endif //P_FAMILY_GUMMYMON
 
 #if P_FAMILY_ABRA
 static const union AnimCmd sAnim_Abra_1[] =
@@ -10362,14 +10362,14 @@ SINGLE_ANIMATION(FrimonHisuian);
 SINGLE_ANIMATION(GigimonHisuian);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FRIMON
-#if P_FAMILY_POLIWAG
-SINGLE_ANIMATION(Poliwag);
+#if P_FAMILY_GUMMYMON
+SINGLE_ANIMATION(Gummymon);
 SINGLE_ANIMATION(Poliwhirl);
 SINGLE_ANIMATION(Poliwrath);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Politoed);
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_POLIWAG
+#endif //P_FAMILY_GUMMYMON
 #if P_FAMILY_ABRA
 SINGLE_ANIMATION(Abra);
 SINGLE_ANIMATION(Kadabra);

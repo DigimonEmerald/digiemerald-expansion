@@ -492,8 +492,8 @@ const u16 gEggMoves[] = {
         MOVE_BURN_UP),
 #endif //P_FAMILY_FRIMON
 
-#if P_FAMILY_POLIWAG
-    egg_moves(POLIWAG,
+#if P_FAMILY_GUMMYMON
+    egg_moves(GUMMYMON,
         MOVE_MIST,
         MOVE_SPLASH,
         MOVE_BUBBLE_BEAM,
@@ -507,7 +507,7 @@ const u16 gEggMoves[] = {
         MOVE_ENCORE,
         MOVE_ENDURE,
         MOVE_WATER_PULSE),
-#endif //P_FAMILY_POLIWAG
+#endif //P_FAMILY_GUMMYMON
 
 #if P_FAMILY_ABRA
     egg_moves(ABRA,

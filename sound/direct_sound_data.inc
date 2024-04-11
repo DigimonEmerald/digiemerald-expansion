@@ -747,10 +747,10 @@ Cry_Gigimon::
 	.incbin "sound/direct_sound_samples/cries/gigimon.bin"
 .endif @ P_FAMILY_FRIMON
 
-.if P_FAMILY_POLIWAG == TRUE
+.if P_FAMILY_GUMMYMON == TRUE
 	.align 2
-Cry_Poliwag::
-	.incbin "sound/direct_sound_samples/cries/poliwag.bin"
+Cry_Gummymon::
+	.incbin "sound/direct_sound_samples/cries/gummymon.bin"
 
 	.align 2
 Cry_Poliwhirl::
@@ -765,7 +765,7 @@ Cry_Poliwrath::
 Cry_Politoed::
 	.incbin "sound/direct_sound_samples/cries/politoed.bin"
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_POLIWAG
+.endif @ P_FAMILY_GUMMYMON
 
 .if P_FAMILY_ABRA == TRUE
 	.align 2

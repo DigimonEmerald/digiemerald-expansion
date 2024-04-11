@@ -2963,8 +2963,8 @@ static const u16 sGigimonHisuianTeachableLearnset[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FRIMON
 
-#if P_FAMILY_POLIWAG
-static const u16 sPoliwagTeachableLearnset[] = {
+#if P_FAMILY_GUMMYMON
+static const u16 sGummymonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIG,
@@ -3134,7 +3134,7 @@ static const u16 sPolitoedTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_POLIWAG
+#endif //P_FAMILY_GUMMYMON
 
 #if P_FAMILY_ABRA
 static const u16 sAbraTeachableLearnset[] = {

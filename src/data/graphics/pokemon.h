@@ -986,14 +986,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FRIMON
 
-#if P_FAMILY_POLIWAG
-    const u32 gMonFrontPic_Poliwag[] = INCBIN_U32("graphics/pokemon/poliwag/anim_front.4bpp.lz");
-    const u32 gMonPalette_Poliwag[] = INCBIN_U32("graphics/pokemon/poliwag/normal.gbapal.lz");
-    const u32 gMonBackPic_Poliwag[] = INCBIN_U32("graphics/pokemon/poliwag/back.4bpp.lz");
-    const u32 gMonShinyPalette_Poliwag[] = INCBIN_U32("graphics/pokemon/poliwag/shiny.gbapal.lz");
-    const u8 gMonIcon_Poliwag[] = INCBIN_U8("graphics/pokemon/poliwag/icon.4bpp");
+#if P_FAMILY_GUMMYMON
+    const u32 gMonFrontPic_Gummymon[] = INCBIN_U32("graphics/pokemon/gummymon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gummymon[] = INCBIN_U32("graphics/pokemon/gummymon/normal.gbapal.lz");
+    const u32 gMonBackPic_Gummymon[] = INCBIN_U32("graphics/pokemon/gummymon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gummymon[] = INCBIN_U32("graphics/pokemon/gummymon/shiny.gbapal.lz");
+    const u8 gMonIcon_Gummymon[] = INCBIN_U8("graphics/pokemon/gummymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Poliwag[] = INCBIN_U8("graphics/pokemon/poliwag/footprint.1bpp");
+    const u8 gMonFootprint_Gummymon[] = INCBIN_U8("graphics/pokemon/gummymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Poliwhirl[] = INCBIN_U32("graphics/pokemon/poliwhirl/anim_front.4bpp.lz");
@@ -1027,7 +1027,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_PolitoedF[] = INCBIN_U32("graphics/pokemon/politoed/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_PolitoedF[] = INCBIN_U32("graphics/pokemon/politoed/backf.4bpp.lz");
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_POLIWAG
+#endif //P_FAMILY_GUMMYMON
 
 #if P_FAMILY_ABRA
     const u32 gMonFrontPic_Abra[] = INCBIN_U32("graphics/pokemon/abra/anim_front.4bpp.lz");

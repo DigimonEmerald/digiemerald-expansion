@@ -6207,8 +6207,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FRIMON
 
-#if P_FAMILY_POLIWAG
-    [SPECIES_POLIWAG] =
+#if P_FAMILY_GUMMYMON
+    [SPECIES_GUMMYMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 50,
@@ -6228,9 +6228,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_WATER_ABSORB, ABILITY_DAMP, ABILITY_SWIFT_SWIM },
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = TRUE,
-        .speciesName = _("Poliwag"),
-        .cryId = CRY_POLIWAG,
-        .natDexNum = NATIONAL_DEX_POLIWAG,
+        .speciesName = _("Gummymon"),
+        .cryId = CRY_GUMMYMON,
+        .natDexNum = NATIONAL_DEX_GUMMYMON,
         .categoryName = _("Tadpole"),
         .height = 6,
         .weight = 124,
@@ -6243,22 +6243,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Poliwag,
+        .frontPic = gMonFrontPic_Gummymon,
         .frontPicSize = MON_COORDS_SIZE(64, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Poliwag,
+        .frontAnimFrames = sAnims_Gummymon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Poliwag,
+        .backPic = gMonBackPic_Gummymon,
         .backPicSize = MON_COORDS_SIZE(48, 32),
         .backPicYOffset = 18,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Poliwag,
-        .shinyPalette = gMonShinyPalette_Poliwag,
-        .iconSprite = gMonIcon_Poliwag,
+        .palette = gMonPalette_Gummymon,
+        .shinyPalette = gMonShinyPalette_Gummymon,
+        .iconSprite = gMonIcon_Gummymon,
         .iconPalIndex = 0,
-        FOOTPRINT(Poliwag)
-        .levelUpLearnset = sPoliwagLevelUpLearnset,
-        .teachableLearnset = sPoliwagTeachableLearnset,
+        FOOTPRINT(Gummymon)
+        .levelUpLearnset = sGummymonLevelUpLearnset,
+        .teachableLearnset = sGummymonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_POLIWHIRL}),
     },
 
@@ -6448,7 +6448,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sPolitoedTeachableLearnset,
     },
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_POLIWAG
+#endif //P_FAMILY_GUMMYMON
 
 #if P_FAMILY_ABRA
     [SPECIES_ABRA] =

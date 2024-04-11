@@ -144,14 +144,14 @@ gCryTable::
 	cry Cry_Frimon
 	cry Cry_Gigimon
 .endif @ P_FAMILY_FRIMON
-.if P_FAMILY_POLIWAG == TRUE
-	cry Cry_Poliwag
+.if P_FAMILY_GUMMYMON == TRUE
+	cry Cry_Gummymon
 	cry Cry_Poliwhirl
 	cry Cry_Poliwrath
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Politoed
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_POLIWAG
+.endif @ P_FAMILY_GUMMYMON
 .if P_FAMILY_ABRA == TRUE
 	cry Cry_Abra
 	cry Cry_Kadabra
@@ -2570,14 +2570,14 @@ gCryTable_Reverse::
 	cry_reverse Cry_Frimon
 	cry_reverse Cry_Gigimon
 .endif @ P_FAMILY_FRIMON
-.if P_FAMILY_POLIWAG == TRUE
-	cry_reverse Cry_Poliwag
+.if P_FAMILY_GUMMYMON == TRUE
+	cry_reverse Cry_Gummymon
 	cry_reverse Cry_Poliwhirl
 	cry_reverse Cry_Poliwrath
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Politoed
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_POLIWAG
+.endif @ P_FAMILY_GUMMYMON
 .if P_FAMILY_ABRA == TRUE
 	cry_reverse Cry_Abra
 	cry_reverse Cry_Kadabra
