@@ -3730,10 +3730,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Pusumon)
         .levelUpLearnset = sPusumonLevelUpLearnset,
         .teachableLearnset = sPusumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_NIDORINO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_PUTTIMON}),
     },
 
-    [SPECIES_NIDORINO] =
+    [SPECIES_PUTTIMON] =
     {
         .baseHP        = 61,
         .baseAttack    = 72,
@@ -3752,9 +3752,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
         .abilities = { ABILITY_POISON_POINT, ABILITY_RIVALRY, ABILITY_HUSTLE },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Nidorino"),
-        .cryId = CRY_NIDORINO,
-        .natDexNum = NATIONAL_DEX_NIDORINO,
+        .speciesName = _("Puttimon"),
+        .cryId = CRY_PUTTIMON,
+        .natDexNum = NATIONAL_DEX_PUTTIMON,
         .categoryName = _("Poison Pin"),
         .height = 9,
         .weight = 195,
@@ -3767,22 +3767,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Nidorino,
+        .frontPic = gMonFrontPic_Puttimon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Nidorino,
+        .frontAnimFrames = sAnims_Puttimon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Nidorino,
+        .backPic = gMonBackPic_Puttimon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Nidorino,
-        .shinyPalette = gMonShinyPalette_Nidorino,
-        .iconSprite = gMonIcon_Nidorino,
+        .palette = gMonPalette_Puttimon,
+        .shinyPalette = gMonShinyPalette_Puttimon,
+        .iconSprite = gMonIcon_Puttimon,
         .iconPalIndex = 2,
-        FOOTPRINT(Nidorino)
-        .levelUpLearnset = sNidorinoLevelUpLearnset,
-        .teachableLearnset = sNidorinoTeachableLearnset,
+        FOOTPRINT(Puttimon)
+        .levelUpLearnset = sPuttimonLevelUpLearnset,
+        .teachableLearnset = sPuttimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_NIDOKING}),
     },
 

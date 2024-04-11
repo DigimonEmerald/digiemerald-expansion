@@ -1403,7 +1403,7 @@ static const u16 sPusumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sNidorinoTeachableLearnset[] = {
+static const u16 sPuttimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CUT,
