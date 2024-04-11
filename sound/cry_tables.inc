@@ -65,10 +65,10 @@ gCryTable::
 	cry Cry_Petitmon
 	cry Cry_Pichimon
 .endif @ P_FAMILY_PETITMON
-.if P_FAMILY_SANDSHREW == TRUE
-	cry Cry_Sandshrew
+.if P_FAMILY_POPOMON == TRUE
+	cry Cry_Popomon
 	cry Cry_Sandslash
-.endif @ P_FAMILY_SANDSHREW
+.endif @ P_FAMILY_POPOMON
 .if P_FAMILY_NIDORAN == TRUE
 	cry Cry_NidoranF
 	cry Cry_Nidorina
@@ -2491,10 +2491,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Petitmon
 	cry_reverse Cry_Pichimon
 .endif @ P_FAMILY_PETITMON
-.if P_FAMILY_SANDSHREW == TRUE
-	cry_reverse Cry_Sandshrew
+.if P_FAMILY_POPOMON == TRUE
+	cry_reverse Cry_Popomon
 	cry_reverse Cry_Sandslash
-.endif @ P_FAMILY_SANDSHREW
+.endif @ P_FAMILY_POPOMON
 .if P_FAMILY_NIDORAN == TRUE
 	cry_reverse Cry_NidoranF
 	cry_reverse Cry_Nidorina

@@ -233,7 +233,7 @@ DOUBLE_BATTLE_TEST("Roost suppresses the user's not-yet-aquired Flying-type this
         PLAYER(SPECIES_KECLEON) { Speed(40); HP(150); Ability(ABILITY_COLOR_CHANGE); }
         PLAYER(SPECIES_WOBBUFFET) { Speed(10); }
         OPPONENT(SPECIES_KETOMON) { Speed(30); }
-        OPPONENT(SPECIES_SANDSHREW) { Speed(20); }
+        OPPONENT(SPECIES_POPOMON) { Speed(20); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ROOST);
                MOVE(opponentLeft, MOVE_GUST, target: playerLeft);
@@ -245,7 +245,7 @@ DOUBLE_BATTLE_TEST("Roost suppresses the user's not-yet-aquired Flying-type this
         MESSAGE("Foe Ketomon used Gust!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GUST, opponentLeft);
         MESSAGE("Kecleon's Color Change made it the Flying type!");
-        MESSAGE("Foe Sandshrew used Earthquake!");
+        MESSAGE("Foe Popomon used Earthquake!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponentRight);
         MESSAGE("Kecleon's Color Change made it the Ground type!");
     }

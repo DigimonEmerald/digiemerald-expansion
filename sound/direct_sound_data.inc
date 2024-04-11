@@ -550,15 +550,15 @@ Cry_Pichimon::
 	.incbin "sound/direct_sound_samples/cries/pichimon.bin"
 .endif @ P_FAMILY_PETITMON
 
-.if P_FAMILY_SANDSHREW == TRUE
+.if P_FAMILY_POPOMON == TRUE
 	.align 2
-Cry_Sandshrew::
-	.incbin "sound/direct_sound_samples/cries/sandshrew.bin"
+Cry_Popomon::
+	.incbin "sound/direct_sound_samples/cries/popomon.bin"
 
 	.align 2
 Cry_Sandslash::
 	.incbin "sound/direct_sound_samples/cries/sandslash.bin"
-.endif @ P_FAMILY_SANDSHREW
+.endif @ P_FAMILY_POPOMON
 
 .if P_FAMILY_NIDORAN == TRUE
 	.align 2

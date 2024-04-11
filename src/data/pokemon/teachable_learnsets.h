@@ -1072,8 +1072,8 @@ static const u16 sPichimonAlolanTeachableLearnset[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_PETITMON
 
-#if P_FAMILY_SANDSHREW
-static const u16 sSandshrewTeachableLearnset[] = {
+#if P_FAMILY_POPOMON
+static const u16 sPopomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -1155,7 +1155,7 @@ static const u16 sSandslashTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sSandshrewAlolanTeachableLearnset[] = {
+static const u16 sPopomonAlolanTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -1234,7 +1234,7 @@ static const u16 sSandslashAlolanTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_SANDSHREW
+#endif //P_FAMILY_POPOMON
 
 #if P_FAMILY_NIDORAN
 static const u16 sNidoranFTeachableLearnset[] = {

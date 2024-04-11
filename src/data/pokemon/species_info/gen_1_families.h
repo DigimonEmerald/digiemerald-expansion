@@ -3288,8 +3288,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_PETITMON
 
-#if P_FAMILY_SANDSHREW
-    [SPECIES_SANDSHREW] =
+#if P_FAMILY_POPOMON
+    [SPECIES_POPOMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 75,
@@ -3309,9 +3309,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SAND_VEIL, ABILITY_NONE, ABILITY_SAND_RUSH },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Sandshrew"),
-        .cryId = CRY_SANDSHREW,
-        .natDexNum = NATIONAL_DEX_SANDSHREW,
+        .speciesName = _("Popomon"),
+        .cryId = CRY_POPOMON,
+        .natDexNum = NATIONAL_DEX_POPOMON,
         .categoryName = _("Mouse"),
         .height = 6,
         .weight = 120,
@@ -3324,23 +3324,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Sandshrew,
+        .frontPic = gMonFrontPic_Popomon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Sandshrew,
+        .frontAnimFrames = sAnims_Popomon,
         .frontAnimId = ANIM_SWING_CONCAVE_FAST_SHORT,
-        .backPic = gMonBackPic_Sandshrew,
+        .backPic = gMonBackPic_Popomon,
         .backPicSize = MON_COORDS_SIZE(48, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Sandshrew,
-        .shinyPalette = gMonShinyPalette_Sandshrew,
-        .iconSprite = gMonIcon_Sandshrew,
+        .palette = gMonPalette_Popomon,
+        .shinyPalette = gMonShinyPalette_Popomon,
+        .iconSprite = gMonIcon_Popomon,
         .iconPalIndex = 2,
-        FOOTPRINT(Sandshrew)
-        .levelUpLearnset = sSandshrewLevelUpLearnset,
-        .teachableLearnset = sSandshrewTeachableLearnset,
-        .formSpeciesIdTable = sSandshrewFormSpeciesIdTable,
+        FOOTPRINT(Popomon)
+        .levelUpLearnset = sPopomonLevelUpLearnset,
+        .teachableLearnset = sPopomonTeachableLearnset,
+        .formSpeciesIdTable = sPopomonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_SANDSLASH}),
     },
 
@@ -3399,7 +3399,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_ALOLAN_FORMS
-    [SPECIES_SANDSHREW_ALOLAN] =
+    [SPECIES_POPOMON_ALOLAN] =
     {
         .baseHP        = 50,
         .baseAttack    = 75,
@@ -3419,9 +3419,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SNOW_CLOAK, ABILITY_NONE, ABILITY_SLUSH_RUSH },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Sandshrew"),
-        .cryId = CRY_SANDSHREW,
-        .natDexNum = NATIONAL_DEX_SANDSHREW,
+        .speciesName = _("Popomon"),
+        .cryId = CRY_POPOMON,
+        .natDexNum = NATIONAL_DEX_POPOMON,
         .categoryName = _("Mouse"),
         .height = 7,
         .weight = 400,
@@ -3434,24 +3434,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_SandshrewAlolan,
+        .frontPic = gMonFrontPic_PopomonAlolan,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_SandshrewAlolan,
+        .frontAnimFrames = sAnims_PopomonAlolan,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_SandshrewAlolan,
+        .backPic = gMonBackPic_PopomonAlolan,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 13,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_SandshrewAlolan,
-        .shinyPalette = gMonShinyPalette_SandshrewAlolan,
-        .iconSprite = gMonIcon_SandshrewAlolan,
+        .palette = gMonPalette_PopomonAlolan,
+        .shinyPalette = gMonShinyPalette_PopomonAlolan,
+        .iconSprite = gMonIcon_PopomonAlolan,
         .iconPalIndex = 0,
-        FOOTPRINT(Sandshrew)
+        FOOTPRINT(Popomon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sSandshrewAlolanLevelUpLearnset,
-        .teachableLearnset = sSandshrewAlolanTeachableLearnset,
-        .formSpeciesIdTable = sSandshrewFormSpeciesIdTable,
+        .levelUpLearnset = sPopomonAlolanLevelUpLearnset,
+        .teachableLearnset = sPopomonAlolanTeachableLearnset,
+        .formSpeciesIdTable = sPopomonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_ICE_STONE, SPECIES_SANDSLASH_ALOLAN}),
     },
 
@@ -3510,7 +3510,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sSandslashFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_SANDSHREW
+#endif //P_FAMILY_POPOMON
 
 #if P_FAMILY_NIDORAN
     [SPECIES_NIDORAN_F] =

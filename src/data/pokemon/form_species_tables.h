@@ -102,10 +102,10 @@ static const u16 sPichimonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_PETITMON
 
-#if P_FAMILY_SANDSHREW
-static const u16 sSandshrewFormSpeciesIdTable[] = {
-    SPECIES_SANDSHREW,
-    SPECIES_SANDSHREW_ALOLAN,
+#if P_FAMILY_POPOMON
+static const u16 sPopomonFormSpeciesIdTable[] = {
+    SPECIES_POPOMON,
+    SPECIES_POPOMON_ALOLAN,
     FORM_SPECIES_END,
 };
 
@@ -114,7 +114,7 @@ static const u16 sSandslashFormSpeciesIdTable[] = {
     SPECIES_SANDSLASH_ALOLAN,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_SANDSHREW
+#endif //P_FAMILY_POPOMON
 
 #if P_FAMILY_VULPIX
 static const u16 sVulpixFormSpeciesIdTable[] = {

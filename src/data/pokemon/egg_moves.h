@@ -158,8 +158,8 @@ const u16 gEggMoves[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_PETITMON
 
-#if P_FAMILY_SANDSHREW
-    egg_moves(SANDSHREW,
+#if P_FAMILY_POPOMON
+    egg_moves(POPOMON,
         MOVE_FLAIL,
         MOVE_COUNTER,
         MOVE_RAPID_SPIN,
@@ -173,7 +173,7 @@ const u16 gEggMoves[] = {
         MOVE_ROTOTILLER,
         MOVE_HONE_CLAWS),
 #if P_ALOLAN_FORMS
-    egg_moves(SANDSHREW_ALOLAN,
+    egg_moves(POPOMON_ALOLAN,
         MOVE_AMNESIA,
         MOVE_CHIP_AWAY,
         MOVE_COUNTER,
@@ -187,7 +187,7 @@ const u16 gEggMoves[] = {
         MOVE_METAL_CLAW,
         MOVE_NIGHT_SLASH),
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_SANDSHREW
+#endif //P_FAMILY_POPOMON
 
 #if P_FAMILY_NIDORAN
     egg_moves(NIDORAN_F,

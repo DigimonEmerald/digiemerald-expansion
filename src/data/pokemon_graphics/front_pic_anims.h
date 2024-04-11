@@ -390,8 +390,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(PichimonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_PETITMON
 
-#if P_FAMILY_SANDSHREW
-static const union AnimCmd sAnim_Sandshrew_1[] =
+#if P_FAMILY_POPOMON
+static const union AnimCmd sAnim_Popomon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -412,10 +412,10 @@ static const union AnimCmd sAnim_Sandslash_1[] =
 };
 
 #if P_ALOLAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(SandshrewAlolan);
+PLACEHOLDER_ANIM_SINGLE_FRAME(PopomonAlolan);
 PLACEHOLDER_ANIM_SINGLE_FRAME(SandslashAlolan);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_SANDSHREW
+#endif //P_FAMILY_POPOMON
 
 #if P_FAMILY_NIDORAN
 static const union AnimCmd sAnim_NidoranF_1[] =
@@ -10259,14 +10259,14 @@ SINGLE_ANIMATION(Pichimon);
 SINGLE_ANIMATION(PichimonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_PETITMON
-#if P_FAMILY_SANDSHREW
-SINGLE_ANIMATION(Sandshrew);
+#if P_FAMILY_POPOMON
+SINGLE_ANIMATION(Popomon);
 SINGLE_ANIMATION(Sandslash);
 #if P_ALOLAN_FORMS
-SINGLE_ANIMATION(SandshrewAlolan);
+SINGLE_ANIMATION(PopomonAlolan);
 SINGLE_ANIMATION(SandslashAlolan);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_SANDSHREW
+#endif //P_FAMILY_POPOMON
 #if P_FAMILY_NIDORAN
 SINGLE_ANIMATION(NidoranF);
 SINGLE_ANIMATION(Nidorina);

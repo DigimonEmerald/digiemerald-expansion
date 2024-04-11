@@ -499,14 +499,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_PETITMON
 
-#if P_FAMILY_SANDSHREW
-    const u32 gMonFrontPic_Sandshrew[] = INCBIN_U32("graphics/pokemon/sandshrew/anim_front.4bpp.lz");
-    const u32 gMonPalette_Sandshrew[] = INCBIN_U32("graphics/pokemon/sandshrew/normal.gbapal.lz");
-    const u32 gMonBackPic_Sandshrew[] = INCBIN_U32("graphics/pokemon/sandshrew/back.4bpp.lz");
-    const u32 gMonShinyPalette_Sandshrew[] = INCBIN_U32("graphics/pokemon/sandshrew/shiny.gbapal.lz");
-    const u8 gMonIcon_Sandshrew[] = INCBIN_U8("graphics/pokemon/sandshrew/icon.4bpp");
+#if P_FAMILY_POPOMON
+    const u32 gMonFrontPic_Popomon[] = INCBIN_U32("graphics/pokemon/popomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Popomon[] = INCBIN_U32("graphics/pokemon/popomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Popomon[] = INCBIN_U32("graphics/pokemon/popomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Popomon[] = INCBIN_U32("graphics/pokemon/popomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Popomon[] = INCBIN_U8("graphics/pokemon/popomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Sandshrew[] = INCBIN_U8("graphics/pokemon/sandshrew/footprint.1bpp");
+    const u8 gMonFootprint_Popomon[] = INCBIN_U8("graphics/pokemon/popomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Sandslash[] = INCBIN_U32("graphics/pokemon/sandslash/anim_front.4bpp.lz");
@@ -519,11 +519,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
 #if P_ALOLAN_FORMS
-    const u32 gMonFrontPic_SandshrewAlolan[] = INCBIN_U32("graphics/pokemon/sandshrew/alolan/front.4bpp.lz");
-    const u32 gMonPalette_SandshrewAlolan[] = INCBIN_U32("graphics/pokemon/sandshrew/alolan/normal.gbapal.lz");
-    const u32 gMonBackPic_SandshrewAlolan[] = INCBIN_U32("graphics/pokemon/sandshrew/alolan/back.4bpp.lz");
-    const u32 gMonShinyPalette_SandshrewAlolan[] = INCBIN_U32("graphics/pokemon/sandshrew/alolan/shiny.gbapal.lz");
-    const u8 gMonIcon_SandshrewAlolan[] = INCBIN_U8("graphics/pokemon/sandshrew/alolan/icon.4bpp");
+    const u32 gMonFrontPic_PopomonAlolan[] = INCBIN_U32("graphics/pokemon/popomon/alolan/front.4bpp.lz");
+    const u32 gMonPalette_PopomonAlolan[] = INCBIN_U32("graphics/pokemon/popomon/alolan/normal.gbapal.lz");
+    const u32 gMonBackPic_PopomonAlolan[] = INCBIN_U32("graphics/pokemon/popomon/alolan/back.4bpp.lz");
+    const u32 gMonShinyPalette_PopomonAlolan[] = INCBIN_U32("graphics/pokemon/popomon/alolan/shiny.gbapal.lz");
+    const u8 gMonIcon_PopomonAlolan[] = INCBIN_U8("graphics/pokemon/popomon/alolan/icon.4bpp");
 
     const u32 gMonFrontPic_SandslashAlolan[] = INCBIN_U32("graphics/pokemon/sandslash/alolan/front.4bpp.lz");
     const u32 gMonPalette_SandslashAlolan[] = INCBIN_U32("graphics/pokemon/sandslash/alolan/normal.gbapal.lz");
@@ -531,7 +531,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_SandslashAlolan[] = INCBIN_U32("graphics/pokemon/sandslash/alolan/shiny.gbapal.lz");
     const u8 gMonIcon_SandslashAlolan[] = INCBIN_U8("graphics/pokemon/sandslash/alolan/icon.4bpp");
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_SANDSHREW
+#endif //P_FAMILY_POPOMON
 
 #if P_FAMILY_NIDORAN
     const u32 gMonFrontPic_NidoranF[] = INCBIN_U32("graphics/pokemon/nidoran_f/anim_front.4bpp.lz");
