@@ -418,7 +418,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(PoyomonAlolan);
 #endif //P_FAMILY_POPOMON
 
 #if P_FAMILY_NIDORAN
-static const union AnimCmd sAnim_NidoranF_1[] =
+static const union AnimCmd sAnim_Punimon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 5),
@@ -10268,7 +10268,7 @@ SINGLE_ANIMATION(PoyomonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_POPOMON
 #if P_FAMILY_NIDORAN
-SINGLE_ANIMATION(NidoranF);
+SINGLE_ANIMATION(Punimon);
 SINGLE_ANIMATION(Nidorina);
 SINGLE_ANIMATION(Nidoqueen);
 SINGLE_ANIMATION(NidoranM);

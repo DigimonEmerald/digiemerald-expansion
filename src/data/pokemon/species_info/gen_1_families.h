@@ -3513,7 +3513,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_FAMILY_POPOMON
 
 #if P_FAMILY_NIDORAN
-    [SPECIES_NIDORAN_F] =
+    [SPECIES_PUNIMON] =
     {
         .baseHP        = 55,
         .baseAttack    = 47,
@@ -3533,8 +3533,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_POISON_POINT, ABILITY_RIVALRY, ABILITY_HUSTLE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Nidoran♀"),
-        .cryId = CRY_NIDORAN_F,
-        .natDexNum = NATIONAL_DEX_NIDORAN_F,
+        .cryId = CRY_PUNIMON,
+        .natDexNum = NATIONAL_DEX_PUNIMON,
         .categoryName = _("Poison Pin"),
         .height = 4,
         .weight = 70,
@@ -3547,23 +3547,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 21,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_NidoranF,
+        .frontPic = gMonFrontPic_Punimon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_NidoranF,
+        .frontAnimFrames = sAnims_Punimon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .frontAnimDelay = 28,
-        .backPic = gMonBackPic_NidoranF,
+        .backPic = gMonBackPic_Punimon,
         .backPicSize = MON_COORDS_SIZE(48, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_NidoranF,
-        .shinyPalette = gMonShinyPalette_NidoranF,
-        .iconSprite = gMonIcon_NidoranF,
+        .palette = gMonPalette_Punimon,
+        .shinyPalette = gMonShinyPalette_Punimon,
+        .iconSprite = gMonIcon_Punimon,
         .iconPalIndex = 0,
-        FOOTPRINT(NidoranF)
-        .levelUpLearnset = sNidoranFLevelUpLearnset,
-        .teachableLearnset = sNidoranFTeachableLearnset,
+        FOOTPRINT(Punimon)
+        .levelUpLearnset = sPunimonLevelUpLearnset,
+        .teachableLearnset = sPunimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_NIDORINA}),
     },
 

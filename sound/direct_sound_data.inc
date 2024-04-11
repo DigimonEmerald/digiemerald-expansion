@@ -562,8 +562,8 @@ Cry_Poyomon::
 
 .if P_FAMILY_NIDORAN == TRUE
 	.align 2
-Cry_NidoranF::
-	.incbin "sound/direct_sound_samples/cries/nidoran_f.bin"
+Cry_Punimon::
+	.incbin "sound/direct_sound_samples/cries/punimon.bin"
 
 	.align 2
 Cry_Nidorina::

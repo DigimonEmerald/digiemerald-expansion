@@ -675,7 +675,7 @@ static const struct LevelUpMove sPoyomonAlolanLevelUpLearnset[] = {
 #endif //P_FAMILY_POPOMON
 
 #if P_FAMILY_NIDORAN
-static const struct LevelUpMove sNidoranFLevelUpLearnset[] = {
+static const struct LevelUpMove sPunimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 5, MOVE_SCRATCH),

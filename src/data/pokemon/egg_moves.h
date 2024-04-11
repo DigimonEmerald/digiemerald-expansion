@@ -190,7 +190,7 @@ const u16 gEggMoves[] = {
 #endif //P_FAMILY_POPOMON
 
 #if P_FAMILY_NIDORAN
-    egg_moves(NIDORAN_F,
+    egg_moves(PUNIMON,
         MOVE_SUPERSONIC,
         MOVE_DISABLE,
         MOVE_TAKE_DOWN,

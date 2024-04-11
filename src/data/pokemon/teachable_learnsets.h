@@ -1237,7 +1237,7 @@ static const u16 sPoyomonAlolanTeachableLearnset[] = {
 #endif //P_FAMILY_POPOMON
 
 #if P_FAMILY_NIDORAN
-static const u16 sNidoranFTeachableLearnset[] = {
+static const u16 sPunimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,

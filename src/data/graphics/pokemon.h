@@ -534,13 +534,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FAMILY_POPOMON
 
 #if P_FAMILY_NIDORAN
-    const u32 gMonFrontPic_NidoranF[] = INCBIN_U32("graphics/pokemon/nidoran_f/anim_front.4bpp.lz");
-    const u32 gMonPalette_NidoranF[] = INCBIN_U32("graphics/pokemon/nidoran_f/normal.gbapal.lz");
-    const u32 gMonBackPic_NidoranF[] = INCBIN_U32("graphics/pokemon/nidoran_f/back.4bpp.lz");
-    const u32 gMonShinyPalette_NidoranF[] = INCBIN_U32("graphics/pokemon/nidoran_f/shiny.gbapal.lz");
-    const u8 gMonIcon_NidoranF[] = INCBIN_U8("graphics/pokemon/nidoran_f/icon.4bpp");
+    const u32 gMonFrontPic_Punimon[] = INCBIN_U32("graphics/pokemon/punimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Punimon[] = INCBIN_U32("graphics/pokemon/punimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Punimon[] = INCBIN_U32("graphics/pokemon/punimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Punimon[] = INCBIN_U32("graphics/pokemon/punimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Punimon[] = INCBIN_U8("graphics/pokemon/punimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_NidoranF[] = INCBIN_U8("graphics/pokemon/nidoran_f/footprint.1bpp");
+    const u8 gMonFootprint_Punimon[] = INCBIN_U8("graphics/pokemon/punimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Nidorina[] = INCBIN_U32("graphics/pokemon/nidorina/anim_front.4bpp.lz");
