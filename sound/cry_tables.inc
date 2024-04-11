@@ -71,7 +71,7 @@ gCryTable::
 .endif @ P_FAMILY_POPOMON
 .if P_FAMILY_NIDORAN == TRUE
 	cry Cry_Punimon
-	cry Cry_Nidorina
+	cry Cry_Pupumon
 	cry Cry_Nidoqueen
 	cry Cry_NidoranM
 	cry Cry_Nidorino
@@ -2497,7 +2497,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_POPOMON
 .if P_FAMILY_NIDORAN == TRUE
 	cry_reverse Cry_Punimon
-	cry_reverse Cry_Nidorina
+	cry_reverse Cry_Pupumon
 	cry_reverse Cry_Nidoqueen
 	cry_reverse Cry_NidoranM
 	cry_reverse Cry_Nidorino
