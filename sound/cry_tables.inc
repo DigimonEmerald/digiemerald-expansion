@@ -146,7 +146,7 @@ gCryTable::
 .endif @ P_FAMILY_FRIMON
 .if P_FAMILY_GUMMYMON == TRUE
 	cry Cry_Gummymon
-	cry Cry_Poliwhirl
+	cry Cry_Gurimon
 	cry Cry_Poliwrath
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Politoed
@@ -2572,7 +2572,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_FRIMON
 .if P_FAMILY_GUMMYMON == TRUE
 	cry_reverse Cry_Gummymon
-	cry_reverse Cry_Poliwhirl
+	cry_reverse Cry_Gurimon
 	cry_reverse Cry_Poliwrath
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Politoed

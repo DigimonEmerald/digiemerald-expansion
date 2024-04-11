@@ -996,13 +996,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Gummymon[] = INCBIN_U8("graphics/pokemon/gummymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Poliwhirl[] = INCBIN_U32("graphics/pokemon/poliwhirl/anim_front.4bpp.lz");
-    const u32 gMonPalette_Poliwhirl[] = INCBIN_U32("graphics/pokemon/poliwhirl/normal.gbapal.lz");
-    const u32 gMonBackPic_Poliwhirl[] = INCBIN_U32("graphics/pokemon/poliwhirl/back.4bpp.lz");
-    const u32 gMonShinyPalette_Poliwhirl[] = INCBIN_U32("graphics/pokemon/poliwhirl/shiny.gbapal.lz");
-    const u8 gMonIcon_Poliwhirl[] = INCBIN_U8("graphics/pokemon/poliwhirl/icon.4bpp");
+    const u32 gMonFrontPic_Gurimon[] = INCBIN_U32("graphics/pokemon/gurimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gurimon[] = INCBIN_U32("graphics/pokemon/gurimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Gurimon[] = INCBIN_U32("graphics/pokemon/gurimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gurimon[] = INCBIN_U32("graphics/pokemon/gurimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Gurimon[] = INCBIN_U8("graphics/pokemon/gurimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Poliwhirl[] = INCBIN_U8("graphics/pokemon/poliwhirl/footprint.1bpp");
+    const u8 gMonFootprint_Gurimon[] = INCBIN_U8("graphics/pokemon/gurimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Poliwrath[] = INCBIN_U32("graphics/pokemon/poliwrath/anim_front.4bpp.lz");

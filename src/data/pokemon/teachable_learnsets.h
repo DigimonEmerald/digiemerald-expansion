@@ -2996,7 +2996,7 @@ static const u16 sGummymonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sPoliwhirlTeachableLearnset[] = {
+static const u16 sGurimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,

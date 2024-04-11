@@ -906,7 +906,7 @@ static const union AnimCmd sAnim_Gummymon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Poliwhirl_1[] =
+static const union AnimCmd sAnim_Gurimon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 25),
@@ -10364,7 +10364,7 @@ SINGLE_ANIMATION(GigimonHisuian);
 #endif //P_FAMILY_FRIMON
 #if P_FAMILY_GUMMYMON
 SINGLE_ANIMATION(Gummymon);
-SINGLE_ANIMATION(Poliwhirl);
+SINGLE_ANIMATION(Gurimon);
 SINGLE_ANIMATION(Poliwrath);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Politoed);
