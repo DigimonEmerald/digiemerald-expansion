@@ -1803,7 +1803,7 @@ static const struct LevelUpMove sMinomonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sTentacruelLevelUpLearnset[] = {
+static const struct LevelUpMove sMissimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_REFLECT_TYPE),
     LEVEL_UP_MOVE( 1, MOVE_WRING_OUT),
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),

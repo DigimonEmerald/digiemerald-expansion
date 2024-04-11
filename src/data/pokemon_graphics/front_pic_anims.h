@@ -1050,7 +1050,7 @@ static const union AnimCmd sAnim_Minomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Tentacruel_1[] =
+static const union AnimCmd sAnim_Missimon_1[] =
 {
     ANIMCMD_FRAME(0, 19),
     ANIMCMD_FRAME(1, 35),
@@ -10393,7 +10393,7 @@ SINGLE_ANIMATION(Kyupimon);
 #endif //P_FAMILY_KYAROMON
 #if P_FAMILY_MINOMON
 SINGLE_ANIMATION(Minomon);
-SINGLE_ANIMATION(Tentacruel);
+SINGLE_ANIMATION(Missimon);
 #endif //P_FAMILY_MINOMON
 #if P_FAMILY_GEODUDE
 SINGLE_ANIMATION(Geodude);

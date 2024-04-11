@@ -172,7 +172,7 @@ gCryTable::
 .endif @ P_FAMILY_KYAROMON
 .if P_FAMILY_MINOMON == TRUE
 	cry Cry_Minomon
-	cry Cry_Tentacruel
+	cry Cry_Missimon
 .endif @ P_FAMILY_MINOMON
 .if P_FAMILY_GEODUDE == TRUE
 	cry Cry_Geodude
@@ -2598,7 +2598,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_KYAROMON
 .if P_FAMILY_MINOMON == TRUE
 	cry_reverse Cry_Minomon
-	cry_reverse Cry_Tentacruel
+	cry_reverse Cry_Missimon
 .endif @ P_FAMILY_MINOMON
 .if P_FAMILY_GEODUDE == TRUE
 	cry_reverse Cry_Geodude

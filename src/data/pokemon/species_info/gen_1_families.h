@@ -7159,10 +7159,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Minomon)
         .levelUpLearnset = sMinomonLevelUpLearnset,
         .teachableLearnset = sMinomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_TENTACRUEL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_MISSIMON}),
     },
 
-    [SPECIES_TENTACRUEL] =
+    [SPECIES_MISSIMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 70,
@@ -7182,9 +7182,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
         .abilities = { ABILITY_CLEAR_BODY, ABILITY_LIQUID_OOZE, ABILITY_RAIN_DISH },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Tentacruel"),
-        .cryId = CRY_TENTACRUEL,
-        .natDexNum = NATIONAL_DEX_TENTACRUEL,
+        .speciesName = _("Missimon"),
+        .cryId = CRY_MISSIMON,
+        .natDexNum = NATIONAL_DEX_MISSIMON,
         .categoryName = _("Jellyfish"),
         .height = 16,
         .weight = 550,
@@ -7197,22 +7197,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 312,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Tentacruel,
+        .frontPic = gMonFrontPic_Missimon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Tentacruel,
+        .frontAnimFrames = sAnims_Missimon,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
-        .backPic = gMonBackPic_Tentacruel,
+        .backPic = gMonBackPic_Missimon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Tentacruel,
-        .shinyPalette = gMonShinyPalette_Tentacruel,
-        .iconSprite = gMonIcon_Tentacruel,
+        .palette = gMonPalette_Missimon,
+        .shinyPalette = gMonShinyPalette_Missimon,
+        .iconSprite = gMonIcon_Missimon,
         .iconPalIndex = 0,
-        FOOTPRINT(Tentacruel)
-        .levelUpLearnset = sTentacruelLevelUpLearnset,
-        .teachableLearnset = sTentacruelTeachableLearnset,
+        FOOTPRINT(Missimon)
+        .levelUpLearnset = sMissimonLevelUpLearnset,
+        .teachableLearnset = sMissimonTeachableLearnset,
     },
 #endif //P_FAMILY_MINOMON
 

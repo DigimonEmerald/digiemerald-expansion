@@ -3520,7 +3520,7 @@ static const u16 sMinomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sTentacruelTeachableLearnset[] = {
+static const u16 sMissimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CUT,
