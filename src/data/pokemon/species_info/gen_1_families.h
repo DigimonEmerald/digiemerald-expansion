@@ -4371,10 +4371,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Sandmon)
         .levelUpLearnset = sSandmonLevelUpLearnset,
         .teachableLearnset = sSandmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_WIGGLYTUFF}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_TSUBUMON}),
     },
 
-    [SPECIES_WIGGLYTUFF] =
+    [SPECIES_TSUBUMON] =
     {
         .baseHP        = 140,
         .baseAttack    = 70,
@@ -4403,37 +4403,37 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_CUTE_CHARM, ABILITY_COMPETITIVE, ABILITY_FRISK },
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
-        .speciesName = _("Wigglytuff"),
-        .cryId = CRY_WIGGLYTUFF,
-        .natDexNum = NATIONAL_DEX_WIGGLYTUFF,
+        .speciesName = _("Tsubumon"),
+        .cryId = CRY_TSUBUMON,
+        .natDexNum = NATIONAL_DEX_TSUBUMON,
         .categoryName = _("Balloon"),
         .height = 10,
         .weight = 120,
         .description = COMPOUND_STRING(
             "Its fur is the ultimate in luxuriousness.\n"
-            "Sleeping alongside a Wigglytuff is simply\n"
+            "Sleeping alongside a Tsubumon is simply\n"
             "divine. Its body expands seemingly without\n"
             "end when it inhales."),
         .pokemonScale = 328,
         .pokemonOffset = 11,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Wigglytuff,
+        .frontPic = gMonFrontPic_Tsubumon,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Wigglytuff,
+        .frontAnimFrames = sAnims_Tsubumon,
         .frontAnimId = ANIM_H_JUMPS,
-        .backPic = gMonBackPic_Wigglytuff,
+        .backPic = gMonBackPic_Tsubumon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_GROW,
-        .palette = gMonPalette_Wigglytuff,
-        .shinyPalette = gMonShinyPalette_Wigglytuff,
-        .iconSprite = gMonIcon_Wigglytuff,
+        .palette = gMonPalette_Tsubumon,
+        .shinyPalette = gMonShinyPalette_Tsubumon,
+        .iconSprite = gMonIcon_Tsubumon,
         .iconPalIndex = 0,
-        FOOTPRINT(Wigglytuff)
-        .levelUpLearnset = sWigglytuffLevelUpLearnset,
-        .teachableLearnset = sWigglytuffTeachableLearnset,
+        FOOTPRINT(Tsubumon)
+        .levelUpLearnset = sTsubumonLevelUpLearnset,
+        .teachableLearnset = sTsubumonTeachableLearnset,
     },
 #endif //P_FAMILY_SANDMON
 

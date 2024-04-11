@@ -93,7 +93,7 @@ gCryTable::
 	cry Cry_Igglybuff
 .endif @ P_GEN_2_CROSS_EVOS
 	cry Cry_Sandmon
-	cry Cry_Wigglytuff
+	cry Cry_Tsubumon
 .endif @ P_FAMILY_SANDMON
 .if P_FAMILY_ZUBAT == TRUE
 	cry Cry_Zubat
@@ -2519,7 +2519,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Igglybuff
 .endif @ P_GEN_2_CROSS_EVOS
 	cry_reverse Cry_Sandmon
-	cry_reverse Cry_Wigglytuff
+	cry_reverse Cry_Tsubumon
 .endif @ P_FAMILY_SANDMON
 .if P_FAMILY_ZUBAT == TRUE
 	cry_reverse Cry_Zubat

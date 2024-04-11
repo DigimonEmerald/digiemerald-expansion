@@ -551,7 +551,7 @@ static const union AnimCmd sAnim_Sandmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Wigglytuff_1[] =
+static const union AnimCmd sAnim_Tsubumon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -10295,7 +10295,7 @@ SINGLE_ANIMATION(SakumonAlolan);
 SINGLE_ANIMATION(Igglybuff);
 #endif //P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Sandmon);
-SINGLE_ANIMATION(Wigglytuff);
+SINGLE_ANIMATION(Tsubumon);
 #endif //P_FAMILY_SANDMON
 #if P_FAMILY_ZUBAT
 SINGLE_ANIMATION(Zubat);

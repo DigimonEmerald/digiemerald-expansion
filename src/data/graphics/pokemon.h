@@ -675,13 +675,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Sandmon[] = INCBIN_U8("graphics/pokemon/sandmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Wigglytuff[] = INCBIN_U32("graphics/pokemon/wigglytuff/anim_front.4bpp.lz");
-    const u32 gMonPalette_Wigglytuff[] = INCBIN_U32("graphics/pokemon/wigglytuff/normal.gbapal.lz");
-    const u32 gMonBackPic_Wigglytuff[] = INCBIN_U32("graphics/pokemon/wigglytuff/back.4bpp.lz");
-    const u32 gMonShinyPalette_Wigglytuff[] = INCBIN_U32("graphics/pokemon/wigglytuff/shiny.gbapal.lz");
-    const u8 gMonIcon_Wigglytuff[] = INCBIN_U8("graphics/pokemon/wigglytuff/icon.4bpp");
+    const u32 gMonFrontPic_Tsubumon[] = INCBIN_U32("graphics/pokemon/tsubumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Tsubumon[] = INCBIN_U32("graphics/pokemon/tsubumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Tsubumon[] = INCBIN_U32("graphics/pokemon/tsubumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Tsubumon[] = INCBIN_U32("graphics/pokemon/tsubumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Tsubumon[] = INCBIN_U8("graphics/pokemon/tsubumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Wigglytuff[] = INCBIN_U8("graphics/pokemon/wigglytuff/footprint.1bpp");
+    const u8 gMonFootprint_Tsubumon[] = INCBIN_U8("graphics/pokemon/tsubumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_SANDMON
 
