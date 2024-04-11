@@ -219,8 +219,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(KeemonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FUFUMON
 
-#if P_FAMILY_PIDGEY
-static const union AnimCmd sAnim_Pidgey_1[] =
+#if P_FAMILY_KETOMON
+static const union AnimCmd sAnim_Ketomon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 25),
@@ -248,7 +248,7 @@ static const union AnimCmd sAnim_Pidgeot_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(PidgeotMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_PIDGEY
+#endif //P_FAMILY_KETOMON
 
 #if P_FAMILY_RATTATA
 static const union AnimCmd sAnim_Rattata_1[] =
@@ -10203,14 +10203,14 @@ SINGLE_ANIMATION(Keemon);
 SINGLE_ANIMATION(KeemonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FUFUMON
-#if P_FAMILY_PIDGEY
-SINGLE_ANIMATION(Pidgey);
+#if P_FAMILY_KETOMON
+SINGLE_ANIMATION(Ketomon);
 SINGLE_ANIMATION(Pidgeotto);
 SINGLE_ANIMATION(Pidgeot);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(PidgeotMega);
 #endif
-#endif //P_FAMILY_PIDGEY
+#endif //P_FAMILY_KETOMON
 #if P_FAMILY_RATTATA
 SINGLE_ANIMATION(Rattata);
 SINGLE_ANIMATION(Raticate);

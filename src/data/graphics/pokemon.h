@@ -228,14 +228,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FUFUMON
 
-#if P_FAMILY_PIDGEY
-    const u32 gMonFrontPic_Pidgey[] = INCBIN_U32("graphics/pokemon/pidgey/anim_front.4bpp.lz");
-    const u32 gMonPalette_Pidgey[] = INCBIN_U32("graphics/pokemon/pidgey/normal.gbapal.lz");
-    const u32 gMonBackPic_Pidgey[] = INCBIN_U32("graphics/pokemon/pidgey/back.4bpp.lz");
-    const u32 gMonShinyPalette_Pidgey[] = INCBIN_U32("graphics/pokemon/pidgey/shiny.gbapal.lz");
-    const u8 gMonIcon_Pidgey[] = INCBIN_U8("graphics/pokemon/pidgey/icon.4bpp");
+#if P_FAMILY_KETOMON
+    const u32 gMonFrontPic_Ketomon[] = INCBIN_U32("graphics/pokemon/ketomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Ketomon[] = INCBIN_U32("graphics/pokemon/ketomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Ketomon[] = INCBIN_U32("graphics/pokemon/ketomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Ketomon[] = INCBIN_U32("graphics/pokemon/ketomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Ketomon[] = INCBIN_U8("graphics/pokemon/ketomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Pidgey[] = INCBIN_U8("graphics/pokemon/pidgey/footprint.1bpp");
+    const u8 gMonFootprint_Ketomon[] = INCBIN_U8("graphics/pokemon/ketomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Pidgeotto[] = INCBIN_U32("graphics/pokemon/pidgeotto/anim_front.4bpp.lz");
@@ -263,7 +263,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_PidgeotMega[] = INCBIN_U32("graphics/pokemon/pidgeot/mega/shiny.gbapal.lz");
     const u8 gMonIcon_PidgeotMega[] = INCBIN_U8("graphics/pokemon/pidgeot/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_PIDGEY
+#endif //P_FAMILY_KETOMON
 
 #if P_FAMILY_RATTATA
     const u32 gMonFrontPic_Rattata[] = INCBIN_U32("graphics/pokemon/rattata/anim_front.4bpp.lz");

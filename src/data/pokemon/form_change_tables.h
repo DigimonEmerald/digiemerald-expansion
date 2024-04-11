@@ -38,12 +38,12 @@ static const struct FormChange sKeemonFormChangeTable[] = {
 };
 #endif //P_FAMILY_FUFUMON
 
-#if P_FAMILY_PIDGEY
+#if P_FAMILY_KETOMON
 static const struct FormChange sPidgeotFormChangeTable[] = {
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_PIDGEOT_MEGA, ITEM_PIDGEOTITE},
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_PIDGEY
+#endif //P_FAMILY_KETOMON
 
 #if P_FAMILY_PIKACHU
 static const struct FormChange sPikachuFormChangeTable[] =

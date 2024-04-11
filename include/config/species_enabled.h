@@ -58,7 +58,7 @@
 #define P_FAMILY_CONOMON                P_GEN_1_POKEMON
 #define P_FAMILY_DATIRIMON                P_GEN_1_POKEMON
 #define P_FAMILY_FUFUMON                  P_GEN_1_POKEMON
-#define P_FAMILY_PIDGEY                  P_GEN_1_POKEMON
+#define P_FAMILY_KETOMON                  P_GEN_1_POKEMON
 #define P_FAMILY_RATTATA                 P_GEN_1_POKEMON
 #define P_FAMILY_SPEAROW                 P_GEN_1_POKEMON
 #define P_FAMILY_EKANS                   P_GEN_1_POKEMON

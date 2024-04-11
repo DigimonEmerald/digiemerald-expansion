@@ -573,8 +573,8 @@ static const u16 sKeemonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_FUFUMON
 
-#if P_FAMILY_PIDGEY
-static const u16 sPidgeyTeachableLearnset[] = {
+#if P_FAMILY_KETOMON
+static const u16 sKetomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
@@ -646,7 +646,7 @@ static const u16 sPidgeotTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PIDGEY
+#endif //P_FAMILY_KETOMON
 
 #if P_FAMILY_RATTATA
 static const u16 sRattataTeachableLearnset[] = {

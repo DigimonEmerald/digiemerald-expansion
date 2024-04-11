@@ -183,8 +183,8 @@ static const struct LevelUpMove sKeemonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_FUFUMON
 
-#if P_FAMILY_PIDGEY
-static const struct LevelUpMove sPidgeyLevelUpLearnset[] = {
+#if P_FAMILY_KETOMON
+static const struct LevelUpMove sKetomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GUST),
     LEVEL_UP_MOVE( 5, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(12, MOVE_QUICK_ATTACK),
@@ -219,7 +219,7 @@ static const struct LevelUpMove sPidgeotLevelUpLearnset[] = {
     LEVEL_UP_MOVE(54, MOVE_MIRROR_MOVE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_PIDGEY
+#endif //P_FAMILY_KETOMON
 
 #if P_FAMILY_RATTATA
 static const struct LevelUpMove sRattataLevelUpLearnset[] = {

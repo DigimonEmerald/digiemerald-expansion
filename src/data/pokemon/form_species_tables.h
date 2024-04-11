@@ -42,13 +42,13 @@ static const u16 sKeemonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_FUFUMON
 
-#if P_FAMILY_PIDGEY
+#if P_FAMILY_KETOMON
 static const u16 sPidgeotFormSpeciesIdTable[] = {
     SPECIES_PIDGEOT,
     SPECIES_PIDGEOT_MEGA,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_PIDGEY
+#endif //P_FAMILY_KETOMON
 
 #if P_FAMILY_RATTATA
 static const u16 sRattataFormSpeciesIdTable[] = {

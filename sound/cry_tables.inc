@@ -38,14 +38,14 @@ gCryTable::
 	cry Cry_KeemonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FUFUMON
-.if P_FAMILY_PIDGEY == TRUE
-	cry Cry_Pidgey
+.if P_FAMILY_KETOMON == TRUE
+	cry Cry_Ketomon
 	cry Cry_Pidgeotto
 	cry Cry_Pidgeot
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_PidgeotMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_PIDGEY
+.endif @ P_FAMILY_KETOMON
 .if P_FAMILY_RATTATA == TRUE
 	cry Cry_Rattata
 	cry Cry_Raticate
@@ -2464,14 +2464,14 @@ gCryTable_Reverse::
 	cry_reverse Cry_KeemonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FUFUMON
-.if P_FAMILY_PIDGEY == TRUE
-	cry_reverse Cry_Pidgey
+.if P_FAMILY_KETOMON == TRUE
+	cry_reverse Cry_Ketomon
 	cry_reverse Cry_Pidgeotto
 	cry_reverse Cry_Pidgeot
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_PidgeotMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_PIDGEY
+.endif @ P_FAMILY_KETOMON
 .if P_FAMILY_RATTATA == TRUE
 	cry_reverse Cry_Rattata
 	cry_reverse Cry_Raticate

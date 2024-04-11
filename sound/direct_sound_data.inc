@@ -484,10 +484,10 @@ Cry_KeemonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FUFUMON
 
-.if P_FAMILY_PIDGEY == TRUE
+.if P_FAMILY_KETOMON == TRUE
 	.align 2
-Cry_Pidgey::
-	.incbin "sound/direct_sound_samples/cries/pidgey.bin"
+Cry_Ketomon::
+	.incbin "sound/direct_sound_samples/cries/ketomon.bin"
 
 	.align 2
 Cry_Pidgeotto::
@@ -502,7 +502,7 @@ Cry_Pidgeot::
 Cry_PidgeotMega::
 	.incbin "sound/direct_sound_samples/cries/pidgeot_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_PIDGEY
+.endif @ P_FAMILY_KETOMON
 
 .if P_FAMILY_RATTATA == TRUE
 	.align 2

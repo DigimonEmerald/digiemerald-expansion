@@ -152,7 +152,7 @@ DOUBLE_BATTLE_TEST("Sticky Web has correct interactions with Mirror Armor - no o
         PLAYER(SPECIES_CORVIKNIGHT) { Ability(ABILITY_MIRROR_ARMOR); Item(ITEM_IRON_BALL); Speed(speedOpponent); } // Iron Ball, so that flying type Corviknight is affected by Sticky Web.
         OPPONENT(SPECIES_DATIRIMON) { Speed(speedOpponent); }
         OPPONENT(SPECIES_FUFUMON) { Speed(speedOpponent); }
-        OPPONENT(SPECIES_PIDGEY) { Speed(speedOpponent); } // Flying type,so not affected by Sticky Web.
+        OPPONENT(SPECIES_KETOMON) { Speed(speedOpponent); } // Flying type,so not affected by Sticky Web.
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_STICKY_WEB); MOVE(playerRight, MOVE_STICKY_WEB); }
         TURN { SWITCH(opponentLeft, 2); }
@@ -198,7 +198,7 @@ DOUBLE_BATTLE_TEST("Sticky Web has correct interactions with Mirror Armor - no o
         OPPONENT(SPECIES_DATIRIMON) {Speed(7); }
         OPPONENT(SPECIES_FUFUMON) {Speed(7); }
         if (hasReplacement) {
-            OPPONENT(SPECIES_PIDGEY) {Speed(7); }
+            OPPONENT(SPECIES_KETOMON) {Speed(7); }
         }
 
     } WHEN {
@@ -216,7 +216,7 @@ DOUBLE_BATTLE_TEST("Sticky Web has correct interactions with Mirror Armor - no o
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MEMENTO, opponentLeft);
         MESSAGE("Foe Datirimon fainted!");
         if (hasReplacement) {
-            MESSAGE("2 sent out Pidgey!");
+            MESSAGE("2 sent out Ketomon!");
         }
 
         MESSAGE("Go! Corviknigh!");

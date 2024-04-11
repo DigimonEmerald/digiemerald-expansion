@@ -80,11 +80,11 @@ DOUBLE_BATTLE_TEST("Parental Bond does not convert multi-target moves into a two
     GIVEN {
         ASSUME(gMovesInfo[MOVE_EARTHQUAKE].strikeCount < 2);
         ASSUME(gMovesInfo[MOVE_EARTHQUAKE].target == MOVE_TARGET_FOES_AND_ALLY);
-        ASSUME(gSpeciesInfo[SPECIES_PIDGEY].types[1] == TYPE_FLYING);
+        ASSUME(gSpeciesInfo[SPECIES_KETOMON].types[1] == TYPE_FLYING);
         PLAYER(SPECIES_KANGASKHAN) { Item(ITEM_KANGASKHANITE); }
-        PLAYER(SPECIES_PIDGEY);
+        PLAYER(SPECIES_KETOMON);
         OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_PIDGEY);
+        OPPONENT(SPECIES_KETOMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EARTHQUAKE, megaEvolve: TRUE); MOVE(playerRight, MOVE_CELEBRATE); MOVE(opponentLeft, MOVE_CELEBRATE); MOVE(opponentRight, MOVE_CELEBRATE); }
     } SCENE {
@@ -93,8 +93,8 @@ DOUBLE_BATTLE_TEST("Parental Bond does not convert multi-target moves into a two
         MESSAGE("Kangaskhan has Mega Evolved into Mega Kangaskhan!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, playerLeft);
         HP_BAR(opponentLeft);
-        MESSAGE("It doesn't affect Pidgey…");
-        MESSAGE("It doesn't affect Foe Pidgey…");
+        MESSAGE("It doesn't affect Ketomon…");
+        MESSAGE("It doesn't affect Foe Ketomon…");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentRight);

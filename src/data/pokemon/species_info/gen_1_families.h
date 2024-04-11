@@ -1393,8 +1393,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FUFUMON
 
-#if P_FAMILY_PIDGEY
-    [SPECIES_PIDGEY] =
+#if P_FAMILY_KETOMON
+    [SPECIES_KETOMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 45,
@@ -1413,9 +1413,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_KEEN_EYE, ABILITY_TANGLED_FEET, ABILITY_BIG_PECKS },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Pidgey"),
-        .cryId = CRY_PIDGEY,
-        .natDexNum = NATIONAL_DEX_PIDGEY,
+        .speciesName = _("Ketomon"),
+        .cryId = CRY_KETOMON,
+        .natDexNum = NATIONAL_DEX_KETOMON,
         .categoryName = _("Tiny Bird"),
         .height = 3,
         .weight = 18,
@@ -1428,22 +1428,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = -3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Pidgey,
+        .frontPic = gMonFrontPic_Ketomon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Pidgey,
+        .frontAnimFrames = sAnims_Ketomon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Pidgey,
+        .backPic = gMonBackPic_Ketomon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Pidgey,
-        .shinyPalette = gMonShinyPalette_Pidgey,
-        .iconSprite = gMonIcon_Pidgey,
+        .palette = gMonPalette_Ketomon,
+        .shinyPalette = gMonShinyPalette_Ketomon,
+        .iconSprite = gMonIcon_Ketomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Pidgey)
-        .levelUpLearnset = sPidgeyLevelUpLearnset,
-        .teachableLearnset = sPidgeyTeachableLearnset,
+        FOOTPRINT(Ketomon)
+        .levelUpLearnset = sKetomonLevelUpLearnset,
+        .teachableLearnset = sKetomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_PIDGEOTTO}),
     },
 
@@ -1622,7 +1622,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sPidgeotFormChangeTable,
     },
 #endif
-#endif //P_FAMILY_PIDGEY
+#endif //P_FAMILY_KETOMON
 
 #if P_FAMILY_RATTATA
     [SPECIES_RATTATA] =
