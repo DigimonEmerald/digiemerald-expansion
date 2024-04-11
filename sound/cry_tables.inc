@@ -177,7 +177,7 @@ gCryTable::
 .if P_FAMILY_MONIMON == TRUE
 	cry Cry_Monimon
 	cry Cry_Moonmon
-	cry Cry_Golem
+	cry Cry_Motimon
 .endif @ P_FAMILY_MONIMON
 .if P_FAMILY_PONYTA == TRUE
 	cry Cry_Ponyta
@@ -2603,7 +2603,7 @@ gCryTable_Reverse::
 .if P_FAMILY_MONIMON == TRUE
 	cry_reverse Cry_Monimon
 	cry_reverse Cry_Moonmon
-	cry_reverse Cry_Golem
+	cry_reverse Cry_Motimon
 .endif @ P_FAMILY_MONIMON
 .if P_FAMILY_PONYTA == TRUE
 	cry_reverse Cry_Ponyta

@@ -203,9 +203,9 @@ static const u16 sMoonmonFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
-static const u16 sGolemFormSpeciesIdTable[] = {
-    SPECIES_GOLEM,
-    SPECIES_GOLEM_ALOLAN,
+static const u16 sMotimonFormSpeciesIdTable[] = {
+    SPECIES_MOTIMON,
+    SPECIES_MOTIMON_ALOLAN,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_MONIMON

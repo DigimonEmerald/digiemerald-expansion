@@ -5396,7 +5396,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "GOLEM": {
+  "MOTIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -12280,7 +12280,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "GOLEM_ALOLAN": {
+  "MOTIMON_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 1,

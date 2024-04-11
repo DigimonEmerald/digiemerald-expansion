@@ -3633,7 +3633,7 @@ static const u16 sMoonmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGolemTeachableLearnset[] = {
+static const u16 sMotimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
@@ -3755,7 +3755,7 @@ static const u16 sMoonmonAlolanTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGolemAlolanTeachableLearnset[] = {
+static const u16 sMotimonAlolanTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,

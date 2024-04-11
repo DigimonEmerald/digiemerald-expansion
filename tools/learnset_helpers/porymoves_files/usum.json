@@ -9372,7 +9372,7 @@
       "MOVE_THUNDER_PUNCH"
     ]
   },
-  "GOLEM": {
+  "MOTIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -106160,7 +106160,7 @@
       "MOVE_THUNDER_PUNCH"
     ]
   },
-  "GOLEM_ALOLAN": {
+  "MOTIMON_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 1,

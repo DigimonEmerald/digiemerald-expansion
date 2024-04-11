@@ -77,7 +77,7 @@
 #define SPECIES_MISSIMON                              73
 #define SPECIES_MONIMON                                 74
 #define SPECIES_MOONMON                                75
-#define SPECIES_GOLEM                                   76
+#define SPECIES_MOTIMON                                   76
 #define SPECIES_PONYTA                                  77
 #define SPECIES_RAPIDASH                                78
 #define SPECIES_SLOWPOKE                                79
@@ -1027,7 +1027,7 @@
 #define SPECIES_CHAPMON_ALOLAN                          966
 #define SPECIES_MONIMON_ALOLAN                          967
 #define SPECIES_MOONMON_ALOLAN                         968
-#define SPECIES_GOLEM_ALOLAN                            969
+#define SPECIES_MOTIMON_ALOLAN                            969
 #define SPECIES_GRIMER_ALOLAN                           970
 #define SPECIES_MUK_ALOLAN                              971
 #define SPECIES_EXEGGUTOR_ALOLAN                        972

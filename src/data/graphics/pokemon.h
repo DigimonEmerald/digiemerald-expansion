@@ -1177,13 +1177,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Moonmon[] = INCBIN_U8("graphics/pokemon/moonmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Golem[] = INCBIN_U32("graphics/pokemon/golem/anim_front.4bpp.lz");
-    const u32 gMonPalette_Golem[] = INCBIN_U32("graphics/pokemon/golem/normal.gbapal.lz");
-    const u32 gMonBackPic_Golem[] = INCBIN_U32("graphics/pokemon/golem/back.4bpp.lz");
-    const u32 gMonShinyPalette_Golem[] = INCBIN_U32("graphics/pokemon/golem/shiny.gbapal.lz");
-    const u8 gMonIcon_Golem[] = INCBIN_U8("graphics/pokemon/golem/icon.4bpp");
+    const u32 gMonFrontPic_Motimon[] = INCBIN_U32("graphics/pokemon/motimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Motimon[] = INCBIN_U32("graphics/pokemon/motimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Motimon[] = INCBIN_U32("graphics/pokemon/motimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Motimon[] = INCBIN_U32("graphics/pokemon/motimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Motimon[] = INCBIN_U8("graphics/pokemon/motimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Golem[] = INCBIN_U8("graphics/pokemon/golem/footprint.1bpp");
+    const u8 gMonFootprint_Motimon[] = INCBIN_U8("graphics/pokemon/motimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_ALOLAN_FORMS
@@ -1199,11 +1199,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_MoonmonAlolan[] = INCBIN_U32("graphics/pokemon/moonmon/alolan/shiny.gbapal.lz");
     const u8 gMonIcon_MoonmonAlolan[] = INCBIN_U8("graphics/pokemon/moonmon/alolan/icon.4bpp");
 
-    const u32 gMonFrontPic_GolemAlolan[] = INCBIN_U32("graphics/pokemon/golem/alolan/front.4bpp.lz");
-    const u32 gMonPalette_GolemAlolan[] = INCBIN_U32("graphics/pokemon/golem/alolan/normal.gbapal.lz");
-    const u32 gMonBackPic_GolemAlolan[] = INCBIN_U32("graphics/pokemon/golem/alolan/back.4bpp.lz");
-    const u32 gMonShinyPalette_GolemAlolan[] = INCBIN_U32("graphics/pokemon/golem/alolan/shiny.gbapal.lz");
-    const u8 gMonIcon_GolemAlolan[] = INCBIN_U8("graphics/pokemon/golem/alolan/icon.4bpp");
+    const u32 gMonFrontPic_MotimonAlolan[] = INCBIN_U32("graphics/pokemon/motimon/alolan/front.4bpp.lz");
+    const u32 gMonPalette_MotimonAlolan[] = INCBIN_U32("graphics/pokemon/motimon/alolan/normal.gbapal.lz");
+    const u32 gMonBackPic_MotimonAlolan[] = INCBIN_U32("graphics/pokemon/motimon/alolan/back.4bpp.lz");
+    const u32 gMonShinyPalette_MotimonAlolan[] = INCBIN_U32("graphics/pokemon/motimon/alolan/shiny.gbapal.lz");
+    const u8 gMonIcon_MotimonAlolan[] = INCBIN_U8("graphics/pokemon/motimon/alolan/icon.4bpp");
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_MONIMON
 

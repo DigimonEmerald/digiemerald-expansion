@@ -7226,16 +7226,16 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     #define MONIMON_EXP_YIELD 86
 #endif
 
-#define GOLEM_ATTACK (P_UPDATED_STATS >= GEN_6 ? 120 : 110)
+#define MOTIMON_ATTACK (P_UPDATED_STATS >= GEN_6 ? 120 : 110)
 
 #if P_UPDATED_EXP_YIELDS >= GEN_8
-    #define GOLEM_EXP_YIELD 248
+    #define MOTIMON_EXP_YIELD 248
 #elif P_UPDATED_EXP_YIELDS >= GEN_7
-    #define GOLEM_EXP_YIELD 223
+    #define MOTIMON_EXP_YIELD 223
 #elif P_UPDATED_EXP_YIELDS >= GEN_5
-    #define GOLEM_EXP_YIELD 218
+    #define MOTIMON_EXP_YIELD 218
 #else
-    #define GOLEM_EXP_YIELD 177
+    #define MOTIMON_EXP_YIELD 177
 #endif
 
     [SPECIES_MONIMON] =
@@ -7346,21 +7346,21 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sMoonmonLevelUpLearnset,
         .teachableLearnset = sMoonmonTeachableLearnset,
         .formSpeciesIdTable = sMoonmonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOLEM},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOLEM}),
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_MOTIMON},
+                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_MOTIMON}),
     },
 
-    [SPECIES_GOLEM] =
+    [SPECIES_MOTIMON] =
     {
         .baseHP        = 80,
-        .baseAttack    = GOLEM_ATTACK,
+        .baseAttack    = MOTIMON_ATTACK,
         .baseDefense   = 130,
         .baseSpeed     = 45,
         .baseSpAttack  = 55,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_ROCK, TYPE_GROUND),
         .catchRate = 45,
-        .expYield = GOLEM_EXP_YIELD,
+        .expYield = MOTIMON_EXP_YIELD,
         .evYield_Defense = 3,
         .itemRare = ITEM_EVERSTONE,
         .genderRatio = PERCENT_FEMALE(50),
@@ -7370,9 +7370,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_SAND_VEIL },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Golem"),
-        .cryId = CRY_GOLEM,
-        .natDexNum = NATIONAL_DEX_GOLEM,
+        .speciesName = _("Motimon"),
+        .cryId = CRY_MOTIMON,
+        .natDexNum = NATIONAL_DEX_MOTIMON,
         .categoryName = _("Megaton"),
         .height = 14,
         .weight = 3000,
@@ -7385,23 +7385,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 3,
         .trainerScale = 296,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_Golem,
+        .frontPic = gMonFrontPic_Motimon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Golem,
+        .frontAnimFrames = sAnims_Motimon,
         .frontAnimId = ANIM_ROTATE_UP_SLAM_DOWN,
-        .backPic = gMonBackPic_Golem,
+        .backPic = gMonBackPic_Motimon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_H_SHAKE,
-        .palette = gMonPalette_Golem,
-        .shinyPalette = gMonShinyPalette_Golem,
-        .iconSprite = gMonIcon_Golem,
+        .palette = gMonPalette_Motimon,
+        .shinyPalette = gMonShinyPalette_Motimon,
+        .iconSprite = gMonIcon_Motimon,
         .iconPalIndex = 2,
-        FOOTPRINT(Golem)
-        .levelUpLearnset = sGolemLevelUpLearnset,
-        .teachableLearnset = sGolemTeachableLearnset,
-        .formSpeciesIdTable = sGolemFormSpeciesIdTable,
+        FOOTPRINT(Motimon)
+        .levelUpLearnset = sMotimonLevelUpLearnset,
+        .teachableLearnset = sMotimonTeachableLearnset,
+        .formSpeciesIdTable = sMotimonFormSpeciesIdTable,
     },
 
 #if P_ALOLAN_FORMS
@@ -7515,21 +7515,21 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sMoonmonAlolanLevelUpLearnset,
         .teachableLearnset = sMoonmonAlolanTeachableLearnset,
         .formSpeciesIdTable = sMoonmonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GOLEM_ALOLAN},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GOLEM_ALOLAN}),
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_MOTIMON_ALOLAN},
+                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_MOTIMON_ALOLAN}),
     },
 
-    [SPECIES_GOLEM_ALOLAN] =
+    [SPECIES_MOTIMON_ALOLAN] =
     {
         .baseHP        = 80,
-        .baseAttack    = GOLEM_ATTACK,
+        .baseAttack    = MOTIMON_ATTACK,
         .baseDefense   = 130,
         .baseSpeed     = 45,
         .baseSpAttack  = 55,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_ROCK, TYPE_ELECTRIC),
         .catchRate = 45,
-        .expYield = GOLEM_EXP_YIELD,
+        .expYield = MOTIMON_EXP_YIELD,
         .evYield_Defense = 3,
         .itemCommon = ITEM_CELL_BATTERY,
         .genderRatio = PERCENT_FEMALE(50),
@@ -7539,9 +7539,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_MAGNET_PULL, ABILITY_STURDY, ABILITY_GALVANIZE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Golem"),
-        .cryId = CRY_GOLEM,
-        .natDexNum = NATIONAL_DEX_GOLEM,
+        .speciesName = _("Motimon"),
+        .cryId = CRY_MOTIMON,
+        .natDexNum = NATIONAL_DEX_MOTIMON,
         .categoryName = _("Megaton"),
         .height = 17,
         .weight = 3160,
@@ -7554,24 +7554,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 3,
         .trainerScale = 296,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_GolemAlolan,
+        .frontPic = gMonFrontPic_MotimonAlolan,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_GolemAlolan,
+        .frontAnimFrames = sAnims_MotimonAlolan,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_GolemAlolan,
+        .backPic = gMonBackPic_MotimonAlolan,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 13,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_GolemAlolan,
-        .shinyPalette = gMonShinyPalette_GolemAlolan,
-        .iconSprite = gMonIcon_GolemAlolan,
+        .palette = gMonPalette_MotimonAlolan,
+        .shinyPalette = gMonShinyPalette_MotimonAlolan,
+        .iconSprite = gMonIcon_MotimonAlolan,
         .iconPalIndex = 2,
-        FOOTPRINT(Golem)
+        FOOTPRINT(Motimon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sGolemAlolanLevelUpLearnset,
-        .teachableLearnset = sGolemAlolanTeachableLearnset,
-        .formSpeciesIdTable = sGolemFormSpeciesIdTable,
+        .levelUpLearnset = sMotimonAlolanLevelUpLearnset,
+        .teachableLearnset = sMotimonAlolanTeachableLearnset,
+        .formSpeciesIdTable = sMotimonFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_MONIMON
