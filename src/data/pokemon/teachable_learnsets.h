@@ -4227,7 +4227,7 @@ static const u16 sPickmon_whiteTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sMagnetonTeachableLearnset[] = {
+static const u16 sPickmon_redTeachableLearnset[] = {
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
     MOVE_FLASH,

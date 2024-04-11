@@ -4645,7 +4645,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 23,
         .weight = 600,
         .description = COMPOUND_STRING(
-            "It slightly resembles a Magneton\n"
+            "It slightly resembles a Pickmon_red\n"
             "that lived for 10,000 years and was\n"
             "featured in an article in a\n"
             "paranormal magazine."),

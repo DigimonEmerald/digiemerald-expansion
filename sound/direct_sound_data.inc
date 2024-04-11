@@ -882,8 +882,8 @@ Cry_Pickmon_white::
 	.incbin "sound/direct_sound_samples/cries/pickmon_white.bin"
 
 	.align 2
-Cry_Magneton::
-	.incbin "sound/direct_sound_samples/cries/magneton.bin"
+Cry_Pickmon_red::
+	.incbin "sound/direct_sound_samples/cries/pickmon_red.bin"
 
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2

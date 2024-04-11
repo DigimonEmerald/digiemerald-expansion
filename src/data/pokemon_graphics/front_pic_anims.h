@@ -1169,7 +1169,7 @@ static const union AnimCmd sAnim_Pickmon_white_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Magneton_1[] =
+static const union AnimCmd sAnim_Pickmon_red_1[] =
 {
     ANIMCMD_FRAME(0, 14),
     ANIMCMD_FRAME(1, 14),
@@ -10432,7 +10432,7 @@ SINGLE_ANIMATION(SlowkingGalarian);
 #endif //P_FAMILY_PAGUMON
 #if P_FAMILY_PICKMON_WHITE
 SINGLE_ANIMATION(Pickmon_white);
-SINGLE_ANIMATION(Magneton);
+SINGLE_ANIMATION(Pickmon_red);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Magnezone);
 #endif //P_GEN_4_CROSS_EVOS

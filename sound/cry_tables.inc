@@ -198,7 +198,7 @@ gCryTable::
 .endif @ P_FAMILY_PAGUMON
 .if P_FAMILY_PICKMON_WHITE == TRUE
 	cry Cry_Pickmon_white
-	cry Cry_Magneton
+	cry Cry_Pickmon_red
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Magnezone
 .endif @ P_GEN_4_CROSS_EVOS
@@ -2624,7 +2624,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_PAGUMON
 .if P_FAMILY_PICKMON_WHITE == TRUE
 	cry_reverse Cry_Pickmon_white
-	cry_reverse Cry_Magneton
+	cry_reverse Cry_Pickmon_red
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Magnezone
 .endif @ P_GEN_4_CROSS_EVOS
