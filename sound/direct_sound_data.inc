@@ -945,10 +945,10 @@ Cry_Tokomon::
 	.incbin "sound/direct_sound_samples/cries/tokomon.bin"
 .endif @ P_FAMILY_TANEMON
 
-.if P_FAMILY_GASTLY == TRUE
+.if P_FAMILY_TOKOMON_X == TRUE
 	.align 2
-Cry_Gastly::
-	.incbin "sound/direct_sound_samples/cries/gastly.bin"
+Cry_Tokomon_x::
+	.incbin "sound/direct_sound_samples/cries/tokomon_x.bin"
 
 	.align 2
 Cry_Haunter::
@@ -963,7 +963,7 @@ Cry_Gengar::
 Cry_GengarMega::
 	.incbin "sound/direct_sound_samples/cries/gengar_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_GASTLY
+.endif @ P_FAMILY_TOKOMON_X
 
 .if P_FAMILY_ONIX == TRUE
 	.align 2

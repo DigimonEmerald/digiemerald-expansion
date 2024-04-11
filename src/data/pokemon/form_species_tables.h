@@ -269,14 +269,14 @@ static const u16 sSunmonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_SAKUTTOMON
 
-#if P_FAMILY_GASTLY
+#if P_FAMILY_TOKOMON_X
 static const u16 sGengarFormSpeciesIdTable[] = {
     SPECIES_GENGAR,
     SPECIES_GENGAR_MEGA,
     SPECIES_GENGAR_GIGANTAMAX,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_GASTLY
+#endif //P_FAMILY_TOKOMON_X
 
 #if P_FAMILY_ONIX
 #if P_GEN_2_CROSS_EVOS

@@ -83,13 +83,13 @@ static const struct FormChange sPickmon_silverFormChangeTable[] = {
 };
 #endif //P_FAMILY_PAGUMON
 
-#if P_FAMILY_GASTLY
+#if P_FAMILY_TOKOMON_X
 static const struct FormChange sGengarFormChangeTable[] = {
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_GENGAR_MEGA, ITEM_GENGARITE},
     {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_GENGAR_GIGANTAMAX},
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_GASTLY
+#endif //P_FAMILY_TOKOMON_X
 
 #if P_FAMILY_ONIX
 #if P_GEN_2_CROSS_EVOS

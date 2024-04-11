@@ -225,14 +225,14 @@ gCryTable::
 	cry Cry_Tanemon
 	cry Cry_Tokomon
 .endif @ P_FAMILY_TANEMON
-.if P_FAMILY_GASTLY == TRUE
-	cry Cry_Gastly
+.if P_FAMILY_TOKOMON_X == TRUE
+	cry Cry_Tokomon_x
 	cry Cry_Haunter
 	cry Cry_Gengar
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_GengarMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_GASTLY
+.endif @ P_FAMILY_TOKOMON_X
 .if P_FAMILY_ONIX == TRUE
 	cry Cry_Onix
 .if P_GEN_2_CROSS_EVOS == TRUE
@@ -2651,14 +2651,14 @@ gCryTable_Reverse::
 	cry_reverse Cry_Tanemon
 	cry_reverse Cry_Tokomon
 .endif @ P_FAMILY_TANEMON
-.if P_FAMILY_GASTLY == TRUE
-	cry_reverse Cry_Gastly
+.if P_FAMILY_TOKOMON_X == TRUE
+	cry_reverse Cry_Tokomon_x
 	cry_reverse Cry_Haunter
 	cry_reverse Cry_Gengar
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_GengarMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_GASTLY
+.endif @ P_FAMILY_TOKOMON_X
 .if P_FAMILY_ONIX == TRUE
 	cry_reverse Cry_Onix
 .if P_GEN_2_CROSS_EVOS == TRUE

@@ -4712,8 +4712,8 @@ static const u16 sTokomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_TANEMON
 
-#if P_FAMILY_GASTLY
-static const u16 sGastlyTeachableLearnset[] = {
+#if P_FAMILY_TOKOMON_X
+static const u16 sTokomon_xTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
@@ -4829,7 +4829,7 @@ static const u16 sGengarTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_GASTLY
+#endif //P_FAMILY_TOKOMON_X
 
 #if P_FAMILY_ONIX
 static const u16 sOnixTeachableLearnset[] = {

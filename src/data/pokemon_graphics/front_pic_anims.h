@@ -1308,8 +1308,8 @@ static const union AnimCmd sAnim_Tokomon_1[] =
 };
 #endif //P_FAMILY_TANEMON
 
-#if P_FAMILY_GASTLY
-static const union AnimCmd sAnim_Gastly_1[] =
+#if P_FAMILY_TOKOMON_X
+static const union AnimCmd sAnim_Tokomon_x_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 18),
@@ -1346,7 +1346,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(GengarMega);
 #if P_GIGANTAMAX_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(GengarGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_GASTLY
+#endif //P_FAMILY_TOKOMON_X
 
 #if P_FAMILY_ONIX
 static const union AnimCmd sAnim_Onix_1[] =
@@ -10464,8 +10464,8 @@ SINGLE_ANIMATION(SunmonAlolan);
 SINGLE_ANIMATION(Tanemon);
 SINGLE_ANIMATION(Tokomon);
 #endif //P_FAMILY_TANEMON
-#if P_FAMILY_GASTLY
-SINGLE_ANIMATION(Gastly);
+#if P_FAMILY_TOKOMON_X
+SINGLE_ANIMATION(Tokomon_x);
 SINGLE_ANIMATION(Haunter);
 SINGLE_ANIMATION(Gengar);
 #if P_MEGA_EVOLUTIONS
@@ -10474,7 +10474,7 @@ SINGLE_ANIMATION(GengarMega);
 #if P_GIGANTAMAX_FORMS
 SINGLE_ANIMATION(GengarGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_GASTLY
+#endif //P_FAMILY_TOKOMON_X
 #if P_FAMILY_ONIX
 SINGLE_ANIMATION(Onix);
 #if P_GEN_2_CROSS_EVOS

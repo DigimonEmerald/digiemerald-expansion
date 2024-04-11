@@ -9116,8 +9116,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_TANEMON
 
-#if P_FAMILY_GASTLY
-    [SPECIES_GASTLY] =
+#if P_FAMILY_TOKOMON_X
+    [SPECIES_TOKOMON_X] =
     {
         .baseHP        = 30,
         .baseAttack    = 35,
@@ -9136,14 +9136,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Gastly"),
-        .cryId = CRY_GASTLY,
-        .natDexNum = NATIONAL_DEX_GASTLY,
+        .speciesName = _("Tokomon_x"),
+        .cryId = CRY_TOKOMON_X,
+        .natDexNum = NATIONAL_DEX_TOKOMON_X,
         .categoryName = _("Gas"),
         .height = 13,
         .weight = 1,
         .description = COMPOUND_STRING(
-            "When exposed to a strong wind, a Gastly's\n"
+            "When exposed to a strong wind, a Tokomon_x's\n"
             "gaseous body quickly dwindles away.\n"
             "They cluster under the eaves of houses\n"
             "to escape the ravages of wind."),
@@ -9151,23 +9151,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Gastly,
+        .frontPic = gMonFrontPic_Tokomon_x,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Gastly,
+        .frontAnimFrames = sAnims_Tokomon_x,
         .frontAnimId = ANIM_SHRINK_GROW,
         .enemyMonElevation = 13,
-        .backPic = gMonBackPic_Gastly,
+        .backPic = gMonBackPic_Tokomon_x,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Gastly,
-        .shinyPalette = gMonShinyPalette_Gastly,
-        .iconSprite = gMonIcon_Gastly,
+        .palette = gMonPalette_Tokomon_x,
+        .shinyPalette = gMonShinyPalette_Tokomon_x,
+        .iconSprite = gMonIcon_Tokomon_x,
         .iconPalIndex = 2,
-        FOOTPRINT(Gastly)
-        .levelUpLearnset = sGastlyLevelUpLearnset,
-        .teachableLearnset = sGastlyTeachableLearnset,
+        FOOTPRINT(Tokomon_x)
+        .levelUpLearnset = sTokomon_xLevelUpLearnset,
+        .teachableLearnset = sTokomon_xTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_HAUNTER}),
     },
 
@@ -9403,7 +9403,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sGengarFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_GASTLY
+#endif //P_FAMILY_TOKOMON_X
 
 #if P_FAMILY_ONIX
     [SPECIES_ONIX] =

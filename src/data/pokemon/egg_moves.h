@@ -774,8 +774,8 @@ const u16 gEggMoves[] = {
         MOVE_TWINEEDLE),
 #endif //P_FAMILY_TANEMON
 
-#if P_FAMILY_GASTLY
-    egg_moves(GASTLY,
+#if P_FAMILY_TOKOMON_X
+    egg_moves(TOKOMON_X,
         MOVE_PSYWAVE,
         MOVE_PERISH_SONG,
         MOVE_HAZE,
@@ -789,7 +789,7 @@ const u16 gEggMoves[] = {
         MOVE_CLEAR_SMOG,
         MOVE_SMOG,
         MOVE_REFLECT_TYPE),
-#endif //P_FAMILY_GASTLY
+#endif //P_FAMILY_TOKOMON_X
 
 #if P_FAMILY_ONIX
     egg_moves(ONIX,

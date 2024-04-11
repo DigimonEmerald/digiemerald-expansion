@@ -1461,14 +1461,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_TANEMON
 
-#if P_FAMILY_GASTLY
-    const u32 gMonFrontPic_Gastly[] = INCBIN_U32("graphics/pokemon/gastly/anim_front.4bpp.lz");
-    const u32 gMonPalette_Gastly[] = INCBIN_U32("graphics/pokemon/gastly/normal.gbapal.lz");
-    const u32 gMonBackPic_Gastly[] = INCBIN_U32("graphics/pokemon/gastly/back.4bpp.lz");
-    const u32 gMonShinyPalette_Gastly[] = INCBIN_U32("graphics/pokemon/gastly/shiny.gbapal.lz");
-    const u8 gMonIcon_Gastly[] = INCBIN_U8("graphics/pokemon/gastly/icon.4bpp");
+#if P_FAMILY_TOKOMON_X
+    const u32 gMonFrontPic_Tokomon_x[] = INCBIN_U32("graphics/pokemon/tokomon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Tokomon_x[] = INCBIN_U32("graphics/pokemon/tokomon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Tokomon_x[] = INCBIN_U32("graphics/pokemon/tokomon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Tokomon_x[] = INCBIN_U32("graphics/pokemon/tokomon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Tokomon_x[] = INCBIN_U8("graphics/pokemon/tokomon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Gastly[] = INCBIN_U8("graphics/pokemon/gastly/footprint.1bpp");
+    const u8 gMonFootprint_Tokomon_x[] = INCBIN_U8("graphics/pokemon/tokomon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Haunter[] = INCBIN_U32("graphics/pokemon/haunter/anim_front.4bpp.lz");
@@ -1504,7 +1504,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_GengarGigantamax[] = INCBIN_U32("graphics/pokemon/gengar/gigantamax/shiny.gbapal.lz");
     const u8 gMonIcon_GengarGigantamax[] = INCBIN_U8("graphics/pokemon/gengar/gigantamax/icon.4bpp");
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_GASTLY
+#endif //P_FAMILY_TOKOMON_X
 
 #if P_FAMILY_ONIX
     const u32 gMonFrontPic_Onix[] = INCBIN_U32("graphics/pokemon/onix/anim_front.4bpp.lz");

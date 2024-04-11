@@ -2597,8 +2597,8 @@ static const struct LevelUpMove sTokomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_TANEMON
 
-#if P_FAMILY_GASTLY
-static const struct LevelUpMove sGastlyLevelUpLearnset[] = {
+#if P_FAMILY_TOKOMON_X
+static const struct LevelUpMove sTokomon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE( 1, MOVE_LICK),
     LEVEL_UP_MOVE( 4, MOVE_HYPNOSIS),
@@ -2655,7 +2655,7 @@ static const struct LevelUpMove sGengarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(60, MOVE_DREAM_EATER),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_GASTLY
+#endif //P_FAMILY_TOKOMON_X
 
 #if P_FAMILY_ONIX
 static const struct LevelUpMove sOnixLevelUpLearnset[] = {

@@ -91,7 +91,7 @@
 #define P_FAMILY_PUSURIMON                    P_GEN_1_POKEMON
 #define P_FAMILY_SAKUTTOMON                  P_GEN_1_POKEMON
 #define P_FAMILY_TANEMON                P_GEN_1_POKEMON
-#define P_FAMILY_GASTLY                  P_GEN_1_POKEMON
+#define P_FAMILY_TOKOMON_X                  P_GEN_1_POKEMON
 #define P_FAMILY_ONIX                    P_GEN_1_POKEMON
 #define P_FAMILY_DROWZEE                 P_GEN_1_POKEMON
 #define P_FAMILY_KRABBY                  P_GEN_1_POKEMON

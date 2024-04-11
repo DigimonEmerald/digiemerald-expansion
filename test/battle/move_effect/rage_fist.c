@@ -231,7 +231,7 @@ SINGLE_BATTLE_TEST("Rage Fist base power is not increased if move had no affect"
     s16 timesGotHit[2];
 
     GIVEN {
-        PLAYER(SPECIES_GASTLY);
+        PLAYER(SPECIES_TOKOMON_X);
         OPPONENT(SPECIES_REGIROCK);
     } WHEN {
         for (turns = 0; turns < 2; turns++) {
@@ -242,7 +242,7 @@ SINGLE_BATTLE_TEST("Rage Fist base power is not increased if move had no affect"
             ANIMATION(ANIM_TYPE_MOVE, MOVE_RAGE_FIST, player);
             HP_BAR(opponent, captureDamage: &timesGotHit[turns]);
             MESSAGE("Foe Regirock used Tackle!");
-            MESSAGE("It doesn't affect Gastly…");
+            MESSAGE("It doesn't affect Tokomon_x…");
         }
     } THEN {
         EXPECT_EQ(timesGotHit[0], timesGotHit[1]);
