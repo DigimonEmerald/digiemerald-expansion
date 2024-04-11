@@ -2188,7 +2188,7 @@ static const u16 sArgomon_itTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sParasectTeachableLearnset[] = {
+static const u16 sBabymonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,

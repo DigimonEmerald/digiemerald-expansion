@@ -4913,10 +4913,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Argomon_it)
         .levelUpLearnset = sArgomon_itLevelUpLearnset,
         .teachableLearnset = sArgomon_itTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_PARASECT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_BABYMON}),
     },
 
-    [SPECIES_PARASECT] =
+    [SPECIES_BABYMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 95,
@@ -4938,14 +4938,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_GRASS),
         .abilities = { ABILITY_EFFECT_SPORE, ABILITY_DRY_SKIN, ABILITY_DAMP },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Parasect"),
-        .cryId = CRY_PARASECT,
-        .natDexNum = NATIONAL_DEX_PARASECT,
+        .speciesName = _("Babymon"),
+        .cryId = CRY_BABYMON,
+        .natDexNum = NATIONAL_DEX_BABYMON,
         .categoryName = _("Mushroom"),
         .height = 10,
         .weight = 295,
         .description = COMPOUND_STRING(
-            "Parasect are known to infest the roots of\n"
+            "Babymon are known to infest the roots of\n"
             "large trees en masse and drain nutrients.\n"
             "When an infested tree dies, they move\n"
             "onto another tree all at once."),
@@ -4953,23 +4953,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Parasect,
+        .frontPic = gMonFrontPic_Babymon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Parasect,
+        .frontAnimFrames = sAnims_Babymon,
         .frontAnimId = ANIM_H_SHAKE,
         .frontAnimDelay = 45,
-        .backPic = gMonBackPic_Parasect,
+        .backPic = gMonBackPic_Babymon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_H_SHAKE,
-        .palette = gMonPalette_Parasect,
-        .shinyPalette = gMonShinyPalette_Parasect,
-        .iconSprite = gMonIcon_Parasect,
+        .palette = gMonPalette_Babymon,
+        .shinyPalette = gMonShinyPalette_Babymon,
+        .iconSprite = gMonIcon_Babymon,
         .iconPalIndex = 0,
-        FOOTPRINT(Parasect)
-        .levelUpLearnset = sParasectLevelUpLearnset,
-        .teachableLearnset = sParasectTeachableLearnset,
+        FOOTPRINT(Babymon)
+        .levelUpLearnset = sBabymonLevelUpLearnset,
+        .teachableLearnset = sBabymonTeachableLearnset,
     },
 #endif //P_FAMILY_ARGOMON_IT
 

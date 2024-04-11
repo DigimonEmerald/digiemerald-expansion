@@ -705,7 +705,7 @@ static const union AnimCmd sAnim_Argomon_it_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Parasect_1[] =
+static const union AnimCmd sAnim_Babymon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -10314,7 +10314,7 @@ SINGLE_ANIMATION(Bellossom);
 #endif //P_FAMILY_ZERIMON
 #if P_FAMILY_ARGOMON_IT
 SINGLE_ANIMATION(Argomon_it);
-SINGLE_ANIMATION(Parasect);
+SINGLE_ANIMATION(Babymon);
 #endif //P_FAMILY_ARGOMON_IT
 #if P_FAMILY_VENONAT
 SINGLE_ANIMATION(Venonat);

@@ -48,7 +48,7 @@
 #define SPECIES_ZURUMON                                   44
 #define SPECIES_ARCADIAMON_IT                               45
 #define SPECIES_ARGOMON_IT                                   46
-#define SPECIES_PARASECT                                47
+#define SPECIES_BABYMON                                47
 #define SPECIES_VENONAT                                 48
 #define SPECIES_VENOMOTH                                49
 #define SPECIES_DIGLETT                                 50

@@ -670,8 +670,8 @@ Cry_Argomon_it::
 	.incbin "sound/direct_sound_samples/cries/argomon_it.bin"
 
 	.align 2
-Cry_Parasect::
-	.incbin "sound/direct_sound_samples/cries/parasect.bin"
+Cry_Babymon::
+	.incbin "sound/direct_sound_samples/cries/babymon.bin"
 .endif @ P_FAMILY_ARGOMON_IT
 
 .if P_FAMILY_VENONAT == TRUE

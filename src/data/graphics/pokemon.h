@@ -778,13 +778,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Argomon_it[] = INCBIN_U8("graphics/pokemon/argomon_it/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Parasect[] = INCBIN_U32("graphics/pokemon/parasect/anim_front.4bpp.lz");
-    const u32 gMonPalette_Parasect[] = INCBIN_U32("graphics/pokemon/parasect/normal.gbapal.lz");
-    const u32 gMonBackPic_Parasect[] = INCBIN_U32("graphics/pokemon/parasect/back.4bpp.lz");
-    const u32 gMonShinyPalette_Parasect[] = INCBIN_U32("graphics/pokemon/parasect/shiny.gbapal.lz");
-    const u8 gMonIcon_Parasect[] = INCBIN_U8("graphics/pokemon/parasect/icon.4bpp");
+    const u32 gMonFrontPic_Babymon[] = INCBIN_U32("graphics/pokemon/babymon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Babymon[] = INCBIN_U32("graphics/pokemon/babymon/normal.gbapal.lz");
+    const u32 gMonBackPic_Babymon[] = INCBIN_U32("graphics/pokemon/babymon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Babymon[] = INCBIN_U32("graphics/pokemon/babymon/shiny.gbapal.lz");
+    const u8 gMonIcon_Babymon[] = INCBIN_U8("graphics/pokemon/babymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Parasect[] = INCBIN_U8("graphics/pokemon/parasect/footprint.1bpp");
+    const u8 gMonFootprint_Babymon[] = INCBIN_U8("graphics/pokemon/babymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_ARGOMON_IT
 

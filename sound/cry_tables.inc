@@ -112,7 +112,7 @@ gCryTable::
 .endif @ P_FAMILY_ZERIMON
 .if P_FAMILY_ARGOMON_IT == TRUE
 	cry Cry_Argomon_it
-	cry Cry_Parasect
+	cry Cry_Babymon
 .endif @ P_FAMILY_ARGOMON_IT
 .if P_FAMILY_VENONAT == TRUE
 	cry Cry_Venonat
@@ -2538,7 +2538,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_ZERIMON
 .if P_FAMILY_ARGOMON_IT == TRUE
 	cry_reverse Cry_Argomon_it
-	cry_reverse Cry_Parasect
+	cry_reverse Cry_Babymon
 .endif @ P_FAMILY_ARGOMON_IT
 .if P_FAMILY_VENONAT == TRUE
 	cry_reverse Cry_Venonat
