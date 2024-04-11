@@ -3458,7 +3458,7 @@ static const u16 sKyokyomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sVictreebelTeachableLearnset[] = {
+static const u16 sKyupimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,

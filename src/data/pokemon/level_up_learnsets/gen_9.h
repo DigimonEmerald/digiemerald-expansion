@@ -1822,7 +1822,7 @@ static const struct LevelUpMove sKyokyomonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sVictreebelLevelUpLearnset[] = {
+static const struct LevelUpMove sKyupimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_LEAF_TORNADO),
     LEVEL_UP_MOVE( 1, MOVE_LEAF_TORNADO),
     LEVEL_UP_MOVE( 1, MOVE_STOCKPILE),

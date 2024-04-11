@@ -1600,7 +1600,7 @@ static const struct LevelUpMove sKyokyomonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sVictreebelLevelUpLearnset[] = {
+static const struct LevelUpMove sKyupimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_STOCKPILE),
     LEVEL_UP_MOVE( 1, MOVE_SWALLOW),
     LEVEL_UP_MOVE( 1, MOVE_SPIT_UP),

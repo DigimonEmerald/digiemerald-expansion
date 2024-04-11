@@ -7043,10 +7043,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Kyokyomon)
         .levelUpLearnset = sKyokyomonLevelUpLearnset,
         .teachableLearnset = sKyokyomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_VICTREEBEL}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_KYUPIMON}),
     },
 
-    [SPECIES_VICTREEBEL] =
+    [SPECIES_KYUPIMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 105,
@@ -7073,9 +7073,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_NONE, ABILITY_GLUTTONY },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Victreebel"),
-        .cryId = CRY_VICTREEBEL,
-        .natDexNum = NATIONAL_DEX_VICTREEBEL,
+        .speciesName = _("Kyupimon"),
+        .cryId = CRY_KYUPIMON,
+        .natDexNum = NATIONAL_DEX_KYUPIMON,
         .categoryName = _("Flycatcher"),
         .height = 17,
         .weight = 155,
@@ -7088,22 +7088,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 1,
         .trainerScale = 312,
         .trainerOffset = 3,
-        .frontPic = gMonFrontPic_Victreebel,
+        .frontPic = gMonFrontPic_Kyupimon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Victreebel,
+        .frontAnimFrames = sAnims_Kyupimon,
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
-        .backPic = gMonBackPic_Victreebel,
+        .backPic = gMonBackPic_Kyupimon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Victreebel,
-        .shinyPalette = gMonShinyPalette_Victreebel,
-        .iconSprite = gMonIcon_Victreebel,
+        .palette = gMonPalette_Kyupimon,
+        .shinyPalette = gMonShinyPalette_Kyupimon,
+        .iconSprite = gMonIcon_Kyupimon,
         .iconPalIndex = 1,
-        FOOTPRINT(Victreebel)
-        .levelUpLearnset = sVictreebelLevelUpLearnset,
-        .teachableLearnset = sVictreebelTeachableLearnset,
+        FOOTPRINT(Kyupimon)
+        .levelUpLearnset = sKyupimonLevelUpLearnset,
+        .teachableLearnset = sKyupimonTeachableLearnset,
     },
 #endif //P_FAMILY_KYAROMON
 
