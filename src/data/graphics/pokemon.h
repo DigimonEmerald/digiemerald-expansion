@@ -732,17 +732,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Zerimon[] = INCBIN_U8("graphics/pokemon/zerimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Gloom[] = INCBIN_U32("graphics/pokemon/gloom/anim_front.4bpp.lz");
-    const u32 gMonPalette_Gloom[] = INCBIN_U32("graphics/pokemon/gloom/normal.gbapal.lz");
-    const u32 gMonBackPic_Gloom[] = INCBIN_U32("graphics/pokemon/gloom/back.4bpp.lz");
-    const u32 gMonShinyPalette_Gloom[] = INCBIN_U32("graphics/pokemon/gloom/shiny.gbapal.lz");
-    const u8 gMonIcon_Gloom[] = INCBIN_U8("graphics/pokemon/gloom/icon.4bpp");
+    const u32 gMonFrontPic_Zurumon[] = INCBIN_U32("graphics/pokemon/zurumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Zurumon[] = INCBIN_U32("graphics/pokemon/zurumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Zurumon[] = INCBIN_U32("graphics/pokemon/zurumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Zurumon[] = INCBIN_U32("graphics/pokemon/zurumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Zurumon[] = INCBIN_U8("graphics/pokemon/zurumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Gloom[] = INCBIN_U8("graphics/pokemon/gloom/footprint.1bpp");
+    const u8 gMonFootprint_Zurumon[] = INCBIN_U8("graphics/pokemon/zurumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_GloomF[] = INCBIN_U32("graphics/pokemon/gloom/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_GloomF[] = INCBIN_U32("graphics/pokemon/gloom/backf.4bpp.lz");
+    const u32 gMonFrontPic_ZurumonF[] = INCBIN_U32("graphics/pokemon/zurumon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_ZurumonF[] = INCBIN_U32("graphics/pokemon/zurumon/backf.4bpp.lz");
 
     const u32 gMonFrontPic_Vileplume[] = INCBIN_U32("graphics/pokemon/vileplume/anim_front.4bpp.lz");
     const u32 gMonPalette_Vileplume[] = INCBIN_U32("graphics/pokemon/vileplume/normal.gbapal.lz");

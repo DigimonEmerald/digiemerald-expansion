@@ -643,7 +643,7 @@ static const union AnimCmd sAnim_Zerimon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Gloom_1[] =
+static const union AnimCmd sAnim_Zurumon_1[] =
 {
     ANIMCMD_FRAME(0, 21),
     ANIMCMD_FRAME(1, 45),
@@ -10306,7 +10306,7 @@ SINGLE_ANIMATION(Crobat);
 #endif //P_FAMILY_ICEBOTAMON
 #if P_FAMILY_ZERIMON
 SINGLE_ANIMATION(Zerimon);
-SINGLE_ANIMATION(Gloom);
+SINGLE_ANIMATION(Zurumon);
 SINGLE_ANIMATION(Vileplume);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Bellossom);

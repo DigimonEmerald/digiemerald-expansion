@@ -2075,7 +2075,7 @@ static const u16 sZerimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGloomTeachableLearnset[] = {
+static const u16 sZurumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,
