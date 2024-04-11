@@ -4389,7 +4389,7 @@ static const u16 sPoromonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDodrioTeachableLearnset[] = {
+static const u16 sPuroromonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,

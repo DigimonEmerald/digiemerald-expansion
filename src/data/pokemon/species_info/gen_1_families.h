@@ -8602,10 +8602,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Poromon)
         .levelUpLearnset = sPoromonLevelUpLearnset,
         .teachableLearnset = sPoromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_DODRIO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_PUROROMON}),
     },
 
-    [SPECIES_DODRIO] =
+    [SPECIES_PUROROMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 110,
@@ -8631,9 +8631,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_RUN_AWAY, ABILITY_EARLY_BIRD, ABILITY_TANGLED_FEET },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Dodrio"),
-        .cryId = CRY_DODRIO,
-        .natDexNum = NATIONAL_DEX_DODRIO,
+        .speciesName = _("Puroromon"),
+        .cryId = CRY_PUROROMON,
+        .natDexNum = NATIONAL_DEX_PUROROMON,
         .categoryName = _("Triple Bird"),
         .height = 18,
         .weight = 852,
@@ -8646,26 +8646,26 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 268,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Dodrio,
-        .frontPicFemale = gMonFrontPic_DodrioF,
+        .frontPic = gMonFrontPic_Puroromon,
+        .frontPicFemale = gMonFrontPic_PuroromonF,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Dodrio,
+        .frontAnimFrames = sAnims_Puroromon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Dodrio,
-        .backPicFemale = gMonBackPic_DodrioF,
+        .backPic = gMonBackPic_Puroromon,
+        .backPicFemale = gMonBackPic_PuroromonF,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Dodrio,
-        .shinyPalette = gMonShinyPalette_Dodrio,
-        .iconSprite = gMonIcon_Dodrio,
+        .palette = gMonPalette_Puroromon,
+        .shinyPalette = gMonShinyPalette_Puroromon,
+        .iconSprite = gMonIcon_Puroromon,
         .iconPalIndex = 2,
-        FOOTPRINT(Dodrio)
-        .levelUpLearnset = sDodrioLevelUpLearnset,
-        .teachableLearnset = sDodrioTeachableLearnset,
+        FOOTPRINT(Puroromon)
+        .levelUpLearnset = sPuroromonLevelUpLearnset,
+        .teachableLearnset = sPuroromonTeachableLearnset,
     },
 #endif //P_FAMILY_POROMON
 

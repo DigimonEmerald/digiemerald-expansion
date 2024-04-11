@@ -1229,7 +1229,7 @@ static const union AnimCmd sAnim_Poromon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Dodrio_1[] =
+static const union AnimCmd sAnim_Puroromon_1[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 12),
@@ -10446,7 +10446,7 @@ SINGLE_ANIMATION(Sirfetchd);
 #endif //P_FAMILY_PINAMON
 #if P_FAMILY_POROMON
 SINGLE_ANIMATION(Poromon);
-SINGLE_ANIMATION(Dodrio);
+SINGLE_ANIMATION(Puroromon);
 #endif //P_FAMILY_POROMON
 #if P_FAMILY_SEEL
 SINGLE_ANIMATION(Seel);

@@ -11290,7 +11290,7 @@ bool8 IsMonBannedFromSkyBattles(u16 species)
         case SPECIES_NYOKIMON:
         case SPECIES_PINAMON:
         case SPECIES_POROMON:
-        case SPECIES_DODRIO:
+        case SPECIES_PUROROMON:
         case SPECIES_HOOTHOOT:
         case SPECIES_NATU:
         case SPECIES_MURKROW:

@@ -1374,17 +1374,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_PoromonF[] = INCBIN_U32("graphics/pokemon/poromon/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_PoromonF[] = INCBIN_U32("graphics/pokemon/poromon/backf.4bpp.lz");
 
-    const u32 gMonFrontPic_Dodrio[] = INCBIN_U32("graphics/pokemon/dodrio/anim_front.4bpp.lz");
-    const u32 gMonPalette_Dodrio[] = INCBIN_U32("graphics/pokemon/dodrio/normal.gbapal.lz");
-    const u32 gMonBackPic_Dodrio[] = INCBIN_U32("graphics/pokemon/dodrio/back.4bpp.lz");
-    const u32 gMonShinyPalette_Dodrio[] = INCBIN_U32("graphics/pokemon/dodrio/shiny.gbapal.lz");
-    const u8 gMonIcon_Dodrio[] = INCBIN_U8("graphics/pokemon/dodrio/icon.4bpp");
+    const u32 gMonFrontPic_Puroromon[] = INCBIN_U32("graphics/pokemon/puroromon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Puroromon[] = INCBIN_U32("graphics/pokemon/puroromon/normal.gbapal.lz");
+    const u32 gMonBackPic_Puroromon[] = INCBIN_U32("graphics/pokemon/puroromon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Puroromon[] = INCBIN_U32("graphics/pokemon/puroromon/shiny.gbapal.lz");
+    const u8 gMonIcon_Puroromon[] = INCBIN_U8("graphics/pokemon/puroromon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Dodrio[] = INCBIN_U8("graphics/pokemon/dodrio/footprint.1bpp");
+    const u8 gMonFootprint_Puroromon[] = INCBIN_U8("graphics/pokemon/puroromon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_DodrioF[] = INCBIN_U32("graphics/pokemon/dodrio/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_DodrioF[] = INCBIN_U32("graphics/pokemon/dodrio/backf.4bpp.lz");
+    const u32 gMonFrontPic_PuroromonF[] = INCBIN_U32("graphics/pokemon/puroromon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_PuroromonF[] = INCBIN_U32("graphics/pokemon/puroromon/backf.4bpp.lz");
 #endif //P_FAMILY_POROMON
 
 #if P_FAMILY_SEEL
