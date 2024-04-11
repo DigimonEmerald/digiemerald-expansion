@@ -1788,7 +1788,7 @@ const struct ContestPokemon gContestOpponents[] =
         .otId = CONTEST_AI_TRAINER_ID,
     },
     [CONTEST_OPPONENT_EMILIO] = {
-        .species = SPECIES_MACHOKE,
+        .species = SPECIES_KOROMON,
         .nickname = _("CHOKEM"),
         .trainerName = _("EMILIO"),
         .trainerGfxId = OBJ_EVENT_GFX_SCHOOL_KID_M,

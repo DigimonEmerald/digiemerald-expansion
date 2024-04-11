@@ -1082,13 +1082,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Kokomon[] = INCBIN_U8("graphics/pokemon/kokomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Machoke[] = INCBIN_U32("graphics/pokemon/machoke/anim_front.4bpp.lz");
-    const u32 gMonPalette_Machoke[] = INCBIN_U32("graphics/pokemon/machoke/normal.gbapal.lz");
-    const u32 gMonBackPic_Machoke[] = INCBIN_U32("graphics/pokemon/machoke/back.4bpp.lz");
-    const u32 gMonShinyPalette_Machoke[] = INCBIN_U32("graphics/pokemon/machoke/shiny.gbapal.lz");
-    const u8 gMonIcon_Machoke[] = INCBIN_U8("graphics/pokemon/machoke/icon.4bpp");
+    const u32 gMonFrontPic_Koromon[] = INCBIN_U32("graphics/pokemon/koromon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Koromon[] = INCBIN_U32("graphics/pokemon/koromon/normal.gbapal.lz");
+    const u32 gMonBackPic_Koromon[] = INCBIN_U32("graphics/pokemon/koromon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Koromon[] = INCBIN_U32("graphics/pokemon/koromon/shiny.gbapal.lz");
+    const u8 gMonIcon_Koromon[] = INCBIN_U8("graphics/pokemon/koromon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Machoke[] = INCBIN_U8("graphics/pokemon/machoke/footprint.1bpp");
+    const u8 gMonFootprint_Koromon[] = INCBIN_U8("graphics/pokemon/koromon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Machamp[] = INCBIN_U32("graphics/pokemon/machamp/anim_front.4bpp.lz");

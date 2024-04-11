@@ -980,7 +980,7 @@ static const union AnimCmd sAnim_Kokomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Machoke_1[] =
+static const union AnimCmd sAnim_Koromon_1[] =
 {
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_FRAME(1, 44),
@@ -10380,7 +10380,7 @@ SINGLE_ANIMATION(KapurimonMega);
 #endif //P_FAMILY_HOPMON
 #if P_FAMILY_KOKOMON
 SINGLE_ANIMATION(Kokomon);
-SINGLE_ANIMATION(Machoke);
+SINGLE_ANIMATION(Koromon);
 SINGLE_ANIMATION(Machamp);
 #if P_GIGANTAMAX_FORMS
 SINGLE_ANIMATION(MachampGigantamax);

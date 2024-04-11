@@ -1182,7 +1182,7 @@ static const struct LevelUpMove sKokomonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sMachokeLevelUpLearnset[] = {
+static const struct LevelUpMove sKoromonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_KARATE_CHOP),
     LEVEL_UP_MOVE( 1, MOVE_LOW_KICK),
     LEVEL_UP_MOVE( 1, MOVE_LEER),

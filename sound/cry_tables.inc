@@ -162,7 +162,7 @@ gCryTable::
 .endif @ P_FAMILY_HOPMON
 .if P_FAMILY_KOKOMON == TRUE
 	cry Cry_Kokomon
-	cry Cry_Machoke
+	cry Cry_Koromon
 	cry Cry_Machamp
 .endif @ P_FAMILY_KOKOMON
 .if P_FAMILY_BELLSPROUT == TRUE
@@ -2588,7 +2588,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_HOPMON
 .if P_FAMILY_KOKOMON == TRUE
 	cry_reverse Cry_Kokomon
-	cry_reverse Cry_Machoke
+	cry_reverse Cry_Koromon
 	cry_reverse Cry_Machamp
 .endif @ P_FAMILY_KOKOMON
 .if P_FAMILY_BELLSPROUT == TRUE

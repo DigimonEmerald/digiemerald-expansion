@@ -265,7 +265,7 @@ static const struct TrainerMon sParty_Fredrick[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 30,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -2052,7 +2052,7 @@ static const struct TrainerMon sParty_Hitoshi[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 32,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -2073,7 +2073,7 @@ static const struct TrainerMon sParty_Koichi[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 28,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -2089,7 +2089,7 @@ static const struct TrainerMon sParty_Nob2[] = {
     {
     .iv = TRAINER_PARTY_IVS(13, 13, 13, 13, 13, 13),
     .lvl = 27,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -2102,7 +2102,7 @@ static const struct TrainerMon sParty_Nob3[] = {
     {
     .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
     .lvl = 29,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -2115,12 +2115,12 @@ static const struct TrainerMon sParty_Nob4[] = {
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
     .lvl = 31,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
     .lvl = 31,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -2134,13 +2134,13 @@ static const struct TrainerMon sParty_Nob5[] = {
     {
     .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),
     .lvl = 33,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     .heldItem = ITEM_NONE
     },
     {
     .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),
     .lvl = 33,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     .heldItem = ITEM_NONE
     },
     {
@@ -2160,7 +2160,7 @@ static const struct TrainerMon sParty_Yuji[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 26,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -6053,7 +6053,7 @@ static const struct TrainerMon sParty_Ernest1[] = {
     },
     {
     .lvl = 33,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -6079,7 +6079,7 @@ static const struct TrainerMon sParty_Phillip[] = {
     },
     {
     .lvl = 44,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -6094,7 +6094,7 @@ static const struct TrainerMon sParty_Leonard[] = {
     },
     {
     .lvl = 43,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -6105,7 +6105,7 @@ static const struct TrainerMon sParty_Duncan[] = {
     },
     {
     .lvl = 25,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -6123,7 +6123,7 @@ static const struct TrainerMon sParty_Ernest2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 36,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -6141,7 +6141,7 @@ static const struct TrainerMon sParty_Ernest3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 39,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -6159,7 +6159,7 @@ static const struct TrainerMon sParty_Ernest4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 42,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -6172,7 +6172,7 @@ static const struct TrainerMon sParty_Ernest5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 45,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -6244,7 +6244,7 @@ static const struct TrainerMon sParty_Kelvin[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 33,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -8616,7 +8616,7 @@ static const struct TrainerMon sParty_Ruben[] = {
 static const struct TrainerMon sParty_Koji1[] = {
     {
     .lvl = 34,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -11204,7 +11204,7 @@ static const struct TrainerMon sParty_Cory5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 36,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -11284,12 +11284,12 @@ static const struct TrainerMon sParty_Koji2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 37,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 37,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -11302,12 +11302,12 @@ static const struct TrainerMon sParty_Koji3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 39,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 39,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -11320,12 +11320,12 @@ static const struct TrainerMon sParty_Koji4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 41,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 41,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     }
 };
 
@@ -11539,7 +11539,7 @@ static const struct TrainerMon sParty_Sawyer5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 33,
-    .species = SPECIES_MACHOKE,
+    .species = SPECIES_KOROMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),

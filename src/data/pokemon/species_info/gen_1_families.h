@@ -6757,10 +6757,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Kokomon)
         .levelUpLearnset = sKokomonLevelUpLearnset,
         .teachableLearnset = sKokomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MACHOKE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_KOROMON}),
     },
 
-    [SPECIES_MACHOKE] =
+    [SPECIES_KOROMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 100,
@@ -6781,14 +6781,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_GUTS, ABILITY_NO_GUARD, ABILITY_STEADFAST },
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = TRUE,
-        .speciesName = _("Machoke"),
-        .cryId = CRY_MACHOKE,
-        .natDexNum = NATIONAL_DEX_MACHOKE,
+        .speciesName = _("Koromon"),
+        .cryId = CRY_KOROMON,
+        .natDexNum = NATIONAL_DEX_KOROMON,
         .categoryName = _("Superpower"),
         .height = 15,
         .weight = 705,
         .description = COMPOUND_STRING(
-            "A belt is worn by a Machoke to keep its\n"
+            "A belt is worn by a Koromon to keep its\n"
             "overwhelming power under control.\n"
             "Because it is so dangerous, no one has\n"
             "ever removed the belt."),
@@ -6796,22 +6796,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 9,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Machoke,
+        .frontPic = gMonFrontPic_Koromon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Machoke,
+        .frontAnimFrames = sAnims_Koromon,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Machoke,
+        .backPic = gMonBackPic_Koromon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Machoke,
-        .shinyPalette = gMonShinyPalette_Machoke,
-        .iconSprite = gMonIcon_Machoke,
+        .palette = gMonPalette_Koromon,
+        .shinyPalette = gMonShinyPalette_Koromon,
+        .iconSprite = gMonIcon_Koromon,
         .iconPalIndex = 2,
-        FOOTPRINT(Machoke)
-        .levelUpLearnset = sMachokeLevelUpLearnset,
-        .teachableLearnset = sMachokeTeachableLearnset,
+        FOOTPRINT(Koromon)
+        .levelUpLearnset = sKoromonLevelUpLearnset,
+        .teachableLearnset = sKoromonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_MACHAMP},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_MACHAMP}),
     },
