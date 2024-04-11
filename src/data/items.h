@@ -4758,7 +4758,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_PICKMON_SILVERNITE] =
     {
-        .name = _("Pickmon_silvernite"),
+        .name = _("Pickmonnite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
