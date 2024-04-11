@@ -228,7 +228,7 @@ static const union AnimCmd sAnim_Ketomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Pidgeotto_1[] =
+static const union AnimCmd sAnim_Kuramon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 10),
@@ -10205,7 +10205,7 @@ SINGLE_ANIMATION(KeemonMega);
 #endif //P_FAMILY_FUFUMON
 #if P_FAMILY_KETOMON
 SINGLE_ANIMATION(Ketomon);
-SINGLE_ANIMATION(Pidgeotto);
+SINGLE_ANIMATION(Kuramon);
 SINGLE_ANIMATION(Pidgeot);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(PidgeotMega);

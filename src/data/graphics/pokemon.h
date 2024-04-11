@@ -238,13 +238,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Ketomon[] = INCBIN_U8("graphics/pokemon/ketomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Pidgeotto[] = INCBIN_U32("graphics/pokemon/pidgeotto/anim_front.4bpp.lz");
-    const u32 gMonPalette_Pidgeotto[] = INCBIN_U32("graphics/pokemon/pidgeotto/normal.gbapal.lz");
-    const u32 gMonBackPic_Pidgeotto[] = INCBIN_U32("graphics/pokemon/pidgeotto/back.4bpp.lz");
-    const u32 gMonShinyPalette_Pidgeotto[] = INCBIN_U32("graphics/pokemon/pidgeotto/shiny.gbapal.lz");
-    const u8 gMonIcon_Pidgeotto[] = INCBIN_U8("graphics/pokemon/pidgeotto/icon.4bpp");
+    const u32 gMonFrontPic_Kuramon[] = INCBIN_U32("graphics/pokemon/kuramon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Kuramon[] = INCBIN_U32("graphics/pokemon/kuramon/normal.gbapal.lz");
+    const u32 gMonBackPic_Kuramon[] = INCBIN_U32("graphics/pokemon/kuramon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Kuramon[] = INCBIN_U32("graphics/pokemon/kuramon/shiny.gbapal.lz");
+    const u8 gMonIcon_Kuramon[] = INCBIN_U8("graphics/pokemon/kuramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Pidgeotto[] = INCBIN_U8("graphics/pokemon/pidgeotto/footprint.1bpp");
+    const u8 gMonFootprint_Kuramon[] = INCBIN_U8("graphics/pokemon/kuramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Pidgeot[] = INCBIN_U32("graphics/pokemon/pidgeot/anim_front.4bpp.lz");

@@ -40,7 +40,7 @@ gCryTable::
 .endif @ P_FAMILY_FUFUMON
 .if P_FAMILY_KETOMON == TRUE
 	cry Cry_Ketomon
-	cry Cry_Pidgeotto
+	cry Cry_Kuramon
 	cry Cry_Pidgeot
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_PidgeotMega
@@ -2466,7 +2466,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_FUFUMON
 .if P_FAMILY_KETOMON == TRUE
 	cry_reverse Cry_Ketomon
-	cry_reverse Cry_Pidgeotto
+	cry_reverse Cry_Kuramon
 	cry_reverse Cry_Pidgeot
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_PidgeotMega

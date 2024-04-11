@@ -1444,10 +1444,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Ketomon)
         .levelUpLearnset = sKetomonLevelUpLearnset,
         .teachableLearnset = sKetomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_PIDGEOTTO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_KURAMON}),
     },
 
-    [SPECIES_PIDGEOTTO] =
+    [SPECIES_KURAMON] =
     {
         .baseHP        = 63,
         .baseAttack    = 60,
@@ -1466,9 +1466,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_KEEN_EYE, ABILITY_TANGLED_FEET, ABILITY_BIG_PECKS },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Pidgeotto"),
-        .cryId = CRY_PIDGEOTTO,
-        .natDexNum = NATIONAL_DEX_PIDGEOTTO,
+        .speciesName = _("Kuramon"),
+        .cryId = CRY_KURAMON,
+        .natDexNum = NATIONAL_DEX_KURAMON,
         .categoryName = _("Bird"),
         .height = 11,
         .weight = 300,
@@ -1481,23 +1481,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Pidgeotto,
+        .frontPic = gMonFrontPic_Kuramon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Pidgeotto,
+        .frontAnimFrames = sAnims_Kuramon,
         .frontAnimId = ANIM_V_STRETCH,
         .frontAnimDelay = 25,
-        .backPic = gMonBackPic_Pidgeotto,
+        .backPic = gMonBackPic_Kuramon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Pidgeotto,
-        .shinyPalette = gMonShinyPalette_Pidgeotto,
-        .iconSprite = gMonIcon_Pidgeotto,
+        .palette = gMonPalette_Kuramon,
+        .shinyPalette = gMonShinyPalette_Kuramon,
+        .iconSprite = gMonIcon_Kuramon,
         .iconPalIndex = 0,
-        FOOTPRINT(Pidgeotto)
-        .levelUpLearnset = sPidgeottoLevelUpLearnset,
-        .teachableLearnset = sPidgeottoTeachableLearnset,
+        FOOTPRINT(Kuramon)
+        .levelUpLearnset = sKuramonLevelUpLearnset,
+        .teachableLearnset = sKuramonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_PIDGEOT}),
     },
 
