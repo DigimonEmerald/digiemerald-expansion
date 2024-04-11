@@ -9405,8 +9405,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_TOKOMON_X
 
-#if P_FAMILY_ONIX
-    [SPECIES_ONIX] =
+#if P_FAMILY_TSUNOMON
+    [SPECIES_TSUNOMON] =
     {
         .baseHP        = 35,
         .baseAttack    = 45,
@@ -9425,37 +9425,37 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_WEAK_ARMOR },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Onix"),
-        .cryId = CRY_ONIX,
-        .natDexNum = NATIONAL_DEX_ONIX,
+        .speciesName = _("Tsunomon"),
+        .cryId = CRY_TSUNOMON,
+        .natDexNum = NATIONAL_DEX_TSUNOMON,
         .categoryName = _("Rock Snake"),
         .height = 88,
         .weight = 2100,
         .description = COMPOUND_STRING(
             "There is a magnet in its brain that\n"
-            "prevents an Onix from losing direction\n"
+            "prevents an Tsunomon from losing direction\n"
             "while tunneling. As it grows older, its body\n"
             "becomes steadily rounder and smoother."),
         .pokemonScale = 256,
         .pokemonOffset = 1,
         .trainerScale = 515,
         .trainerOffset = 14,
-        .frontPic = gMonFrontPic_Onix,
+        .frontPic = gMonFrontPic_Tsunomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_Onix,
+        .frontAnimFrames = sAnims_Tsunomon,
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Onix,
+        .backPic = gMonBackPic_Tsunomon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Onix,
-        .shinyPalette = gMonShinyPalette_Onix,
-        .iconSprite = gMonIcon_Onix,
+        .palette = gMonPalette_Tsunomon,
+        .shinyPalette = gMonShinyPalette_Tsunomon,
+        .iconSprite = gMonIcon_Tsunomon,
         .iconPalIndex = 2,
-        FOOTPRINT(Onix)
-        .levelUpLearnset = sOnixLevelUpLearnset,
-        .teachableLearnset = sOnixTeachableLearnset,
+        FOOTPRINT(Tsunomon)
+        .levelUpLearnset = sTsunomonLevelUpLearnset,
+        .teachableLearnset = sTsunomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_METAL_COAT, SPECIES_STEELIX},
                                 {EVO_ITEM, ITEM_METAL_COAT, SPECIES_STEELIX}),
     },
@@ -9489,7 +9489,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .weight = 4000,
         .description = COMPOUND_STRING(
             "Steelix live even further underground\n"
-            "than Onix. This Pokémon is known to dig\n"
+            "than Tsunomon. This Pokémon is known to dig\n"
             "toward the earth's core, reaching a depth\n"
             "of over six-tenths of a mile underground."),
         .pokemonScale = 256,
@@ -9579,7 +9579,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ONIX
+#endif //P_FAMILY_TSUNOMON
 
 #if P_FAMILY_DROWZEE
     [SPECIES_DROWZEE] =

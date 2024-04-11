@@ -1506,14 +1506,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_TOKOMON_X
 
-#if P_FAMILY_ONIX
-    const u32 gMonFrontPic_Onix[] = INCBIN_U32("graphics/pokemon/onix/anim_front.4bpp.lz");
-    const u32 gMonPalette_Onix[] = INCBIN_U32("graphics/pokemon/onix/normal.gbapal.lz");
-    const u32 gMonBackPic_Onix[] = INCBIN_U32("graphics/pokemon/onix/back.4bpp.lz");
-    const u32 gMonShinyPalette_Onix[] = INCBIN_U32("graphics/pokemon/onix/shiny.gbapal.lz");
-    const u8 gMonIcon_Onix[] = INCBIN_U8("graphics/pokemon/onix/icon.4bpp");
+#if P_FAMILY_TSUNOMON
+    const u32 gMonFrontPic_Tsunomon[] = INCBIN_U32("graphics/pokemon/tsunomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Tsunomon[] = INCBIN_U32("graphics/pokemon/tsunomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Tsunomon[] = INCBIN_U32("graphics/pokemon/tsunomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Tsunomon[] = INCBIN_U32("graphics/pokemon/tsunomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Tsunomon[] = INCBIN_U8("graphics/pokemon/tsunomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Onix[] = INCBIN_U8("graphics/pokemon/onix/footprint.1bpp");
+    const u8 gMonFootprint_Tsunomon[] = INCBIN_U8("graphics/pokemon/tsunomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_2_CROSS_EVOS
@@ -1537,7 +1537,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonIcon_SteelixMega[] = INCBIN_U8("graphics/pokemon/steelix/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ONIX
+#endif //P_FAMILY_TSUNOMON
 
 #if P_FAMILY_DROWZEE
     const u32 gMonFrontPic_Drowzee[] = INCBIN_U32("graphics/pokemon/drowzee/anim_front.4bpp.lz");

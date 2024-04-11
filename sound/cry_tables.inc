@@ -233,15 +233,15 @@ gCryTable::
 	cry Cry_TsumemonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TOKOMON_X
-.if P_FAMILY_ONIX == TRUE
-	cry Cry_Onix
+.if P_FAMILY_TSUNOMON == TRUE
+	cry Cry_Tsunomon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Steelix
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_SteelixMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_ONIX
+.endif @ P_FAMILY_TSUNOMON
 .if P_FAMILY_DROWZEE == TRUE
 	cry Cry_Drowzee
 	cry Cry_Hypno
@@ -2659,15 +2659,15 @@ gCryTable_Reverse::
 	cry_reverse Cry_TsumemonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TOKOMON_X
-.if P_FAMILY_ONIX == TRUE
-	cry_reverse Cry_Onix
+.if P_FAMILY_TSUNOMON == TRUE
+	cry_reverse Cry_Tsunomon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Steelix
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_SteelixMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_ONIX
+.endif @ P_FAMILY_TSUNOMON
 .if P_FAMILY_DROWZEE == TRUE
 	cry_reverse Cry_Drowzee
 	cry_reverse Cry_Hypno

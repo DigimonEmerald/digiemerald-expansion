@@ -4831,8 +4831,8 @@ static const u16 sTsumemonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_TOKOMON_X
 
-#if P_FAMILY_ONIX
-static const u16 sOnixTeachableLearnset[] = {
+#if P_FAMILY_TSUNOMON
+static const u16 sTsunomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -4901,7 +4901,7 @@ static const u16 sSteelixTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ONIX
+#endif //P_FAMILY_TSUNOMON
 
 #if P_FAMILY_DROWZEE
 static const u16 sDrowzeeTeachableLearnset[] = {

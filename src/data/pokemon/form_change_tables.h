@@ -91,14 +91,14 @@ static const struct FormChange sTsumemonFormChangeTable[] = {
 };
 #endif //P_FAMILY_TOKOMON_X
 
-#if P_FAMILY_ONIX
+#if P_FAMILY_TSUNOMON
 #if P_GEN_2_CROSS_EVOS
 static const struct FormChange sSteelixFormChangeTable[] = {
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_STEELIX_MEGA, ITEM_STEELIXITE},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ONIX
+#endif //P_FAMILY_TSUNOMON
 
 #if P_FAMILY_KRABBY
 static const struct FormChange sKinglerFormChangeTable[] =

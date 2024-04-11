@@ -965,10 +965,10 @@ Cry_TsumemonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TOKOMON_X
 
-.if P_FAMILY_ONIX == TRUE
+.if P_FAMILY_TSUNOMON == TRUE
 	.align 2
-Cry_Onix::
-	.incbin "sound/direct_sound_samples/cries/onix.bin"
+Cry_Tsunomon::
+	.incbin "sound/direct_sound_samples/cries/tsunomon.bin"
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
@@ -981,7 +981,7 @@ Cry_SteelixMega::
 	.incbin "sound/direct_sound_samples/cries/steelix_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_ONIX
+.endif @ P_FAMILY_TSUNOMON
 
 .if P_FAMILY_DROWZEE == TRUE
 	.align 2

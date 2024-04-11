@@ -1348,8 +1348,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(TsumemonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_TOKOMON_X
 
-#if P_FAMILY_ONIX
-static const union AnimCmd sAnim_Onix_1[] =
+#if P_FAMILY_TSUNOMON
+static const union AnimCmd sAnim_Tsunomon_1[] =
 {
     ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(0, 30),
@@ -1371,7 +1371,7 @@ static const union AnimCmd sAnim_Steelix_1[] =
 PLACEHOLDER_ANIM_SINGLE_FRAME(SteelixMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ONIX
+#endif //P_FAMILY_TSUNOMON
 
 #if P_FAMILY_DROWZEE
 static const union AnimCmd sAnim_Drowzee_1[] =
@@ -10475,15 +10475,15 @@ SINGLE_ANIMATION(TsumemonMega);
 SINGLE_ANIMATION(TsumemonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_TOKOMON_X
-#if P_FAMILY_ONIX
-SINGLE_ANIMATION(Onix);
+#if P_FAMILY_TSUNOMON
+SINGLE_ANIMATION(Tsunomon);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Steelix);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(SteelixMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ONIX
+#endif //P_FAMILY_TSUNOMON
 #if P_FAMILY_DROWZEE
 SINGLE_ANIMATION(Drowzee);
 SINGLE_ANIMATION(Hypno);

@@ -278,7 +278,7 @@ static const u16 sTsumemonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_TOKOMON_X
 
-#if P_FAMILY_ONIX
+#if P_FAMILY_TSUNOMON
 #if P_GEN_2_CROSS_EVOS
 static const u16 sSteelixFormSpeciesIdTable[] = {
     SPECIES_STEELIX,
@@ -286,7 +286,7 @@ static const u16 sSteelixFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ONIX
+#endif //P_FAMILY_TSUNOMON
 
 #if P_FAMILY_KRABBY
 static const u16 sKinglerFormSpeciesIdTable[] = {

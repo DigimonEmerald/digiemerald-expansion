@@ -2070,8 +2070,8 @@ static const struct LevelUpMove sTsumemonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_TOKOMON_X
 
-#if P_FAMILY_ONIX
-static const struct LevelUpMove sOnixLevelUpLearnset[] = {
+#if P_FAMILY_TSUNOMON
+static const struct LevelUpMove sTsunomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_SCREECH),
     LEVEL_UP_MOVE( 9, MOVE_BIND),
@@ -2102,7 +2102,7 @@ static const struct LevelUpMove sSteelixLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ONIX
+#endif //P_FAMILY_TSUNOMON
 
 #if P_FAMILY_DROWZEE
 static const struct LevelUpMove sDrowzeeLevelUpLearnset[] = {

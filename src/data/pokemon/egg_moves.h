@@ -791,8 +791,8 @@ const u16 gEggMoves[] = {
         MOVE_REFLECT_TYPE),
 #endif //P_FAMILY_TOKOMON_X
 
-#if P_FAMILY_ONIX
-    egg_moves(ONIX,
+#if P_FAMILY_TSUNOMON
+    egg_moves(TSUNOMON,
         MOVE_FLAIL,
         MOVE_BLOCK,
         MOVE_DEFENSE_CURL,
@@ -803,7 +803,7 @@ const u16 gEggMoves[] = {
         MOVE_STEALTH_ROCK,
         MOVE_ROTOTILLER,
         MOVE_WIDE_GUARD),
-#endif //P_FAMILY_ONIX
+#endif //P_FAMILY_TSUNOMON
 
 #if P_FAMILY_DROWZEE
     egg_moves(DROWZEE,
