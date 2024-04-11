@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Intimidate (opponent) lowers player's attack after switch ou
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_ARBOK) { Ability(ability); }
+        OPPONENT(SPECIES_PAOMON) { Ability(ability); }
     } WHEN {
         TURN { SWITCH(opponent, 1); }
         TURN { MOVE(player, MOVE_TACKLE); }
@@ -23,7 +23,7 @@ SINGLE_BATTLE_TEST("Intimidate (opponent) lowers player's attack after switch ou
         {
             ABILITY_POPUP(opponent, ABILITY_INTIMIDATE);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-            MESSAGE("Foe Arbok's Intimidate cuts Wobbuffet's attack!");
+            MESSAGE("Foe Paomon's Intimidate cuts Wobbuffet's attack!");
         }
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
@@ -39,7 +39,7 @@ SINGLE_BATTLE_TEST("Intimidate (opponent) lowers player's attack after KO", s16 
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Speed(2); }
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); Speed(1); }
-        OPPONENT(SPECIES_ARBOK) { Ability(ability); Speed(1); }
+        OPPONENT(SPECIES_PAOMON) { Ability(ability); Speed(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); SEND_OUT(opponent, 1); }
         TURN { MOVE(player, MOVE_TACKLE); }
@@ -49,7 +49,7 @@ SINGLE_BATTLE_TEST("Intimidate (opponent) lowers player's attack after KO", s16 
         {
             ABILITY_POPUP(opponent, ABILITY_INTIMIDATE);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-            MESSAGE("Foe Arbok's Intimidate cuts Wobbuffet's attack!");
+            MESSAGE("Foe Paomon's Intimidate cuts Wobbuffet's attack!");
         }
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
@@ -67,7 +67,7 @@ DOUBLE_BATTLE_TEST("Intimidate doesn't activate on an empty field in a double ba
         PLAYER(SPECIES_ABRA);
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_ARBOK) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_PAOMON) { Ability(ABILITY_INTIMIDATE); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EXPLOSION); SEND_OUT(playerLeft, 2); SEND_OUT(opponentLeft, 2); SEND_OUT(playerRight, 3); SEND_OUT(opponentRight, 3); }
@@ -78,22 +78,22 @@ DOUBLE_BATTLE_TEST("Intimidate doesn't activate on an empty field in a double ba
         // Everyone faints.
 
         MESSAGE("Go! Pafumon!");
-        MESSAGE("2 sent out Arbok!");
+        MESSAGE("2 sent out Paomon!");
         MESSAGE("Go! Abra!");
         MESSAGE("2 sent out Wynaut!");
 
         NONE_OF {
             ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-            MESSAGE("Pafumon's Intimidate cuts Foe Arbok's attack!");
+            MESSAGE("Pafumon's Intimidate cuts Foe Paomon's attack!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
             MESSAGE("Pafumon's Intimidate cuts Foe Wynaut's attack!");
 
             ABILITY_POPUP(opponentLeft, ABILITY_INTIMIDATE);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-            MESSAGE("Foe Arbok's Intimidate cuts Pafumon's attack!");
+            MESSAGE("Foe Paomon's Intimidate cuts Pafumon's attack!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-            MESSAGE("Foe Arbok's Intimidate cuts Abra's attack!");
+            MESSAGE("Foe Paomon's Intimidate cuts Abra's attack!");
         }
     }
 }

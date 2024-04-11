@@ -319,7 +319,7 @@ static const union AnimCmd sAnim_Pafumon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Arbok_1[] =
+static const union AnimCmd sAnim_Paomon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 35),
@@ -10225,7 +10225,7 @@ SINGLE_ANIMATION(Pabumon);
 #endif //P_FAMILY_NYOKIMON
 #if P_FAMILY_PAFUMON
 SINGLE_ANIMATION(Pafumon);
-SINGLE_ANIMATION(Arbok);
+SINGLE_ANIMATION(Paomon);
 #endif //P_FAMILY_PAFUMON
 #if P_FAMILY_PIKACHU
 #if P_GEN_2_CROSS_EVOS

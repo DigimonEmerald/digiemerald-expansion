@@ -56,7 +56,7 @@ gCryTable::
 .endif @ P_FAMILY_NYOKIMON
 .if P_FAMILY_PAFUMON == TRUE
 	cry Cry_Pafumon
-	cry Cry_Arbok
+	cry Cry_Paomon
 .endif @ P_FAMILY_PAFUMON
 .if P_FAMILY_PIKACHU == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
@@ -2482,7 +2482,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_NYOKIMON
 .if P_FAMILY_PAFUMON == TRUE
 	cry_reverse Cry_Pafumon
-	cry_reverse Cry_Arbok
+	cry_reverse Cry_Paomon
 .endif @ P_FAMILY_PAFUMON
 .if P_FAMILY_PIKACHU == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE

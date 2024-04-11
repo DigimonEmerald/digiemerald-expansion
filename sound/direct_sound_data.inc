@@ -530,8 +530,8 @@ Cry_Pafumon::
 	.incbin "sound/direct_sound_samples/cries/pafumon.bin"
 
 	.align 2
-Cry_Arbok::
-	.incbin "sound/direct_sound_samples/cries/arbok.bin"
+Cry_Paomon::
+	.incbin "sound/direct_sound_samples/cries/paomon.bin"
 .endif @ P_FAMILY_PAFUMON
 
 .if P_FAMILY_PIKACHU == TRUE

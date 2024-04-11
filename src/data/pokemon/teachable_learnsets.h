@@ -872,7 +872,7 @@ static const u16 sPafumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sArbokTeachableLearnset[] = {
+static const u16 sPaomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,

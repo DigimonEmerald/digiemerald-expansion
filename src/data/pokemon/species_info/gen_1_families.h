@@ -2066,10 +2066,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Pafumon)
         .levelUpLearnset = sPafumonLevelUpLearnset,
         .teachableLearnset = sPafumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_ARBOK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_PAOMON}),
     },
 
-    [SPECIES_ARBOK] =
+    [SPECIES_PAOMON] =
     {
         .baseHP        = 60,
         .baseAttack    = P_UPDATED_STATS >= GEN_7 ? 95 : 85,
@@ -2094,9 +2094,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_SHED_SKIN, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Arbok"),
-        .cryId = CRY_ARBOK,
-        .natDexNum = NATIONAL_DEX_ARBOK,
+        .speciesName = _("Paomon"),
+        .cryId = CRY_PAOMON,
+        .natDexNum = NATIONAL_DEX_PAOMON,
         .categoryName = _("Cobra"),
         .height = 35,
         .weight = 650,
@@ -2109,22 +2109,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 296,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_Arbok,
+        .frontPic = gMonFrontPic_Paomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_Arbok,
+        .frontAnimFrames = sAnims_Paomon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Arbok,
+        .backPic = gMonBackPic_Paomon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Arbok,
-        .shinyPalette = gMonShinyPalette_Arbok,
-        .iconSprite = gMonIcon_Arbok,
+        .palette = gMonPalette_Paomon,
+        .shinyPalette = gMonShinyPalette_Paomon,
+        .iconSprite = gMonIcon_Paomon,
         .iconPalIndex = 2,
-        FOOTPRINT(Arbok)
-        .levelUpLearnset = sArbokLevelUpLearnset,
-        .teachableLearnset = sArbokTeachableLearnset,
+        FOOTPRINT(Paomon)
+        .levelUpLearnset = sPaomonLevelUpLearnset,
+        .teachableLearnset = sPaomonTeachableLearnset,
     },
 #endif //P_FAMILY_PAFUMON
 
