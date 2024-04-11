@@ -57,10 +57,10 @@ static const u16 sChoromonFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
-static const u16 sRaticateFormSpeciesIdTable[] = {
-    SPECIES_RATICATE,
-    SPECIES_RATICATE_ALOLAN,
-    SPECIES_RATICATE_ALOLAN_TOTEM,
+static const u16 sMokumonFormSpeciesIdTable[] = {
+    SPECIES_MOKUMON,
+    SPECIES_MOKUMON_ALOLAN,
+    SPECIES_MOKUMON_ALOLAN_TOTEM,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_CHOROMON

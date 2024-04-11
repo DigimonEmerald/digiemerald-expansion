@@ -510,8 +510,8 @@ Cry_Choromon::
 	.incbin "sound/direct_sound_samples/cries/choromon.bin"
 
 	.align 2
-Cry_Raticate::
-	.incbin "sound/direct_sound_samples/cries/raticate.bin"
+Cry_Mokumon::
+	.incbin "sound/direct_sound_samples/cries/mokumon.bin"
 .endif @ P_FAMILY_CHOROMON
 
 .if P_FAMILY_SPEAROW == TRUE

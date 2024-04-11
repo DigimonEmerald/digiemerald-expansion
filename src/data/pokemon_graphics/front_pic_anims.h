@@ -260,7 +260,7 @@ static const union AnimCmd sAnim_Choromon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Raticate_1[] =
+static const union AnimCmd sAnim_Mokumon_1[] =
 {
     ANIMCMD_FRAME(1, 5),
     ANIMCMD_FRAME(0, 5),
@@ -279,7 +279,7 @@ static const union AnimCmd sAnim_Raticate_1[] =
 
 #if P_ALOLAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(ChoromonAlolan);
-PLACEHOLDER_ANIM_SINGLE_FRAME(RaticateAlolan);
+PLACEHOLDER_ANIM_SINGLE_FRAME(MokumonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_CHOROMON
 
@@ -10213,10 +10213,10 @@ SINGLE_ANIMATION(LeafmonMega);
 #endif //P_FAMILY_KETOMON
 #if P_FAMILY_CHOROMON
 SINGLE_ANIMATION(Choromon);
-SINGLE_ANIMATION(Raticate);
+SINGLE_ANIMATION(Mokumon);
 #if P_ALOLAN_FORMS
 SINGLE_ANIMATION(ChoromonAlolan);
-SINGLE_ANIMATION(RaticateAlolan);
+SINGLE_ANIMATION(MokumonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_CHOROMON
 #if P_FAMILY_SPEAROW

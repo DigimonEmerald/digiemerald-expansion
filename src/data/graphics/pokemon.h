@@ -278,17 +278,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_ChoromonF[] = INCBIN_U32("graphics/pokemon/choromon/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_ChoromonF[] = INCBIN_U32("graphics/pokemon/choromon/backf.4bpp.lz");
 
-    const u32 gMonFrontPic_Raticate[] = INCBIN_U32("graphics/pokemon/raticate/anim_front.4bpp.lz");
-    const u32 gMonPalette_Raticate[] = INCBIN_U32("graphics/pokemon/raticate/normal.gbapal.lz");
-    const u32 gMonBackPic_Raticate[] = INCBIN_U32("graphics/pokemon/raticate/back.4bpp.lz");
-    const u32 gMonShinyPalette_Raticate[] = INCBIN_U32("graphics/pokemon/raticate/shiny.gbapal.lz");
-    const u8 gMonIcon_Raticate[] = INCBIN_U8("graphics/pokemon/raticate/icon.4bpp");
+    const u32 gMonFrontPic_Mokumon[] = INCBIN_U32("graphics/pokemon/mokumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Mokumon[] = INCBIN_U32("graphics/pokemon/mokumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Mokumon[] = INCBIN_U32("graphics/pokemon/mokumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Mokumon[] = INCBIN_U32("graphics/pokemon/mokumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Mokumon[] = INCBIN_U8("graphics/pokemon/mokumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Raticate[] = INCBIN_U8("graphics/pokemon/raticate/footprint.1bpp");
+    const u8 gMonFootprint_Mokumon[] = INCBIN_U8("graphics/pokemon/mokumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_RaticateF[] = INCBIN_U32("graphics/pokemon/raticate/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_RaticateF[] = INCBIN_U32("graphics/pokemon/raticate/backf.4bpp.lz");
+    const u32 gMonFrontPic_MokumonF[] = INCBIN_U32("graphics/pokemon/mokumon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_MokumonF[] = INCBIN_U32("graphics/pokemon/mokumon/backf.4bpp.lz");
 
 #if P_ALOLAN_FORMS
     const u32 gMonFrontPic_ChoromonAlolan[] = INCBIN_U32("graphics/pokemon/choromon/alolan/front.4bpp.lz");
@@ -297,11 +297,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_ChoromonAlolan[] = INCBIN_U32("graphics/pokemon/choromon/alolan/shiny.gbapal.lz");
     const u8 gMonIcon_ChoromonAlolan[] = INCBIN_U8("graphics/pokemon/choromon/alolan/icon.4bpp");
 
-    const u32 gMonFrontPic_RaticateAlolan[] = INCBIN_U32("graphics/pokemon/raticate/alolan/front.4bpp.lz");
-    const u32 gMonPalette_RaticateAlolan[] = INCBIN_U32("graphics/pokemon/raticate/alolan/normal.gbapal.lz");
-    const u32 gMonBackPic_RaticateAlolan[] = INCBIN_U32("graphics/pokemon/raticate/alolan/back.4bpp.lz");
-    const u32 gMonShinyPalette_RaticateAlolan[] = INCBIN_U32("graphics/pokemon/raticate/alolan/shiny.gbapal.lz");
-    const u8 gMonIcon_RaticateAlolan[] = INCBIN_U8("graphics/pokemon/raticate/alolan/icon.4bpp");
+    const u32 gMonFrontPic_MokumonAlolan[] = INCBIN_U32("graphics/pokemon/mokumon/alolan/front.4bpp.lz");
+    const u32 gMonPalette_MokumonAlolan[] = INCBIN_U32("graphics/pokemon/mokumon/alolan/normal.gbapal.lz");
+    const u32 gMonBackPic_MokumonAlolan[] = INCBIN_U32("graphics/pokemon/mokumon/alolan/back.4bpp.lz");
+    const u32 gMonShinyPalette_MokumonAlolan[] = INCBIN_U32("graphics/pokemon/mokumon/alolan/shiny.gbapal.lz");
+    const u8 gMonIcon_MokumonAlolan[] = INCBIN_U8("graphics/pokemon/mokumon/alolan/icon.4bpp");
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_CHOROMON
 

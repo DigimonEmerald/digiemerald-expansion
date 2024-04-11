@@ -21,7 +21,7 @@
 #define SPECIES_KURAMON                               17
 #define SPECIES_LEAFMON                                 18
 #define SPECIES_CHOROMON                                 19
-#define SPECIES_RATICATE                                20
+#define SPECIES_MOKUMON                                20
 #define SPECIES_SPEAROW                                 21
 #define SPECIES_FEAROW                                  22
 #define SPECIES_EKANS                                   23
@@ -1015,7 +1015,7 @@
 #define SPECIES_KYOGRE_PRIMAL                           954
 #define SPECIES_GROUDON_PRIMAL                          955
 #define SPECIES_CHOROMON_ALOLAN                          956
-#define SPECIES_RATICATE_ALOLAN                         957
+#define SPECIES_MOKUMON_ALOLAN                         957
 #define SPECIES_RAICHU_ALOLAN                           958
 #define SPECIES_SANDSHREW_ALOLAN                        959
 #define SPECIES_SANDSLASH_ALOLAN                        960
@@ -1579,7 +1579,7 @@
 #define SPECIES_SPEWPA_JUNGLE                           1473
 #define SPECIES_SPEWPA_FANCY                            1474
 #define SPECIES_SPEWPA_POKE_BALL                        1475
-#define SPECIES_RATICATE_ALOLAN_TOTEM                   1476
+#define SPECIES_MOKUMON_ALOLAN_TOTEM                   1476
 #define SPECIES_GUMSHOOS_TOTEM                          1477
 #define SPECIES_VIKAVOLT_TOTEM                          1478
 #define SPECIES_LURANTIS_TOTEM                          1479

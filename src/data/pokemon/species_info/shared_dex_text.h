@@ -1,5 +1,5 @@
 // Gen 1 families
-const u8 gRaticateAlolanPokedexText[] = _(
+const u8 gMokumonAlolanPokedexText[] = _(
     "It forms a group of Choromon, which it \n"
     "assumes command of. Each group\n"
     "has its own territory, and disputes\n"
