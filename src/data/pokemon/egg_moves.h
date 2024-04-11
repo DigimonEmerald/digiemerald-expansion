@@ -105,8 +105,8 @@ const u16 gEggMoves[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_CHOROMON
 
-#if P_FAMILY_SPEAROW
-    egg_moves(SPEAROW,
+#if P_FAMILY_NYOKIMON
+    egg_moves(NYOKIMON,
         MOVE_FEINT_ATTACK,
         MOVE_SCARY_FACE,
         MOVE_QUICK_ATTACK,
@@ -118,7 +118,7 @@ const u16 gEggMoves[] = {
         MOVE_FEATHER_DANCE,
         MOVE_STEEL_WING,
         MOVE_RAZOR_WIND),
-#endif //P_FAMILY_SPEAROW
+#endif //P_FAMILY_NYOKIMON
 
 #if P_FAMILY_EKANS
     egg_moves(EKANS,

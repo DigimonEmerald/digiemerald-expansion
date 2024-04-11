@@ -283,8 +283,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(MokumonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_CHOROMON
 
-#if P_FAMILY_SPEAROW
-static const union AnimCmd sAnim_Spearow_1[] =
+#if P_FAMILY_NYOKIMON
+static const union AnimCmd sAnim_Nyokimon_1[] =
 {
     ANIMCMD_FRAME(1, 11),
     ANIMCMD_FRAME(0, 11),
@@ -305,7 +305,7 @@ static const union AnimCmd sAnim_Fearow_1[] =
     ANIMCMD_FRAME(0, 7),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SPEAROW
+#endif //P_FAMILY_NYOKIMON
 
 #if P_FAMILY_EKANS
 static const union AnimCmd sAnim_Ekans_1[] =
@@ -10219,10 +10219,10 @@ SINGLE_ANIMATION(ChoromonAlolan);
 SINGLE_ANIMATION(MokumonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_CHOROMON
-#if P_FAMILY_SPEAROW
-SINGLE_ANIMATION(Spearow);
+#if P_FAMILY_NYOKIMON
+SINGLE_ANIMATION(Nyokimon);
 SINGLE_ANIMATION(Fearow);
-#endif //P_FAMILY_SPEAROW
+#endif //P_FAMILY_NYOKIMON
 #if P_FAMILY_EKANS
 SINGLE_ANIMATION(Ekans);
 SINGLE_ANIMATION(Arbok);

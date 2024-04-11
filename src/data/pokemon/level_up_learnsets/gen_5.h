@@ -397,8 +397,8 @@ static const struct LevelUpMove sMokumonAlolanLevelUpLearnset[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_CHOROMON
 
-#if P_FAMILY_SPEAROW
-static const struct LevelUpMove sSpearowLevelUpLearnset[] = {
+#if P_FAMILY_NYOKIMON
+static const struct LevelUpMove sNyokimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 5, MOVE_LEER),
@@ -431,7 +431,7 @@ static const struct LevelUpMove sFearowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(53, MOVE_DRILL_RUN),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SPEAROW
+#endif //P_FAMILY_NYOKIMON
 
 #if P_FAMILY_EKANS
 static const struct LevelUpMove sEkansLevelUpLearnset[] = {

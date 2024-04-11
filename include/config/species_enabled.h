@@ -60,7 +60,7 @@
 #define P_FAMILY_FUFUMON                  P_GEN_1_POKEMON
 #define P_FAMILY_KETOMON                  P_GEN_1_POKEMON
 #define P_FAMILY_CHOROMON                 P_GEN_1_POKEMON
-#define P_FAMILY_SPEAROW                 P_GEN_1_POKEMON
+#define P_FAMILY_NYOKIMON                 P_GEN_1_POKEMON
 #define P_FAMILY_EKANS                   P_GEN_1_POKEMON
 #define P_FAMILY_PIKACHU                 P_GEN_1_POKEMON
 #define P_FAMILY_SANDSHREW               P_GEN_1_POKEMON

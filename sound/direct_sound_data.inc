@@ -514,15 +514,15 @@ Cry_Mokumon::
 	.incbin "sound/direct_sound_samples/cries/mokumon.bin"
 .endif @ P_FAMILY_CHOROMON
 
-.if P_FAMILY_SPEAROW == TRUE
+.if P_FAMILY_NYOKIMON == TRUE
 	.align 2
-Cry_Spearow::
-	.incbin "sound/direct_sound_samples/cries/spearow.bin"
+Cry_Nyokimon::
+	.incbin "sound/direct_sound_samples/cries/nyokimon.bin"
 
 	.align 2
 Cry_Fearow::
 	.incbin "sound/direct_sound_samples/cries/fearow.bin"
-.endif @ P_FAMILY_SPEAROW
+.endif @ P_FAMILY_NYOKIMON
 
 .if P_FAMILY_EKANS == TRUE
 	.align 2

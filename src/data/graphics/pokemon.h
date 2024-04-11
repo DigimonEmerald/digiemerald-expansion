@@ -305,14 +305,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_CHOROMON
 
-#if P_FAMILY_SPEAROW
-    const u32 gMonFrontPic_Spearow[] = INCBIN_U32("graphics/pokemon/spearow/anim_front.4bpp.lz");
-    const u32 gMonPalette_Spearow[] = INCBIN_U32("graphics/pokemon/spearow/normal.gbapal.lz");
-    const u32 gMonBackPic_Spearow[] = INCBIN_U32("graphics/pokemon/spearow/back.4bpp.lz");
-    const u32 gMonShinyPalette_Spearow[] = INCBIN_U32("graphics/pokemon/spearow/shiny.gbapal.lz");
-    const u8 gMonIcon_Spearow[] = INCBIN_U8("graphics/pokemon/spearow/icon.4bpp");
+#if P_FAMILY_NYOKIMON
+    const u32 gMonFrontPic_Nyokimon[] = INCBIN_U32("graphics/pokemon/nyokimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Nyokimon[] = INCBIN_U32("graphics/pokemon/nyokimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Nyokimon[] = INCBIN_U32("graphics/pokemon/nyokimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Nyokimon[] = INCBIN_U32("graphics/pokemon/nyokimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Nyokimon[] = INCBIN_U8("graphics/pokemon/nyokimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Spearow[] = INCBIN_U8("graphics/pokemon/spearow/footprint.1bpp");
+    const u8 gMonFootprint_Nyokimon[] = INCBIN_U8("graphics/pokemon/nyokimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Fearow[] = INCBIN_U32("graphics/pokemon/fearow/anim_front.4bpp.lz");
@@ -323,7 +323,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Fearow[] = INCBIN_U8("graphics/pokemon/fearow/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_SPEAROW
+#endif //P_FAMILY_NYOKIMON
 
 #if P_FAMILY_EKANS
     const u32 gMonFrontPic_Ekans[] = INCBIN_U32("graphics/pokemon/ekans/anim_front.4bpp.lz");

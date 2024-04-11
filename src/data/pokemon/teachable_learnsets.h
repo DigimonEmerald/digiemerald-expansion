@@ -792,8 +792,8 @@ static const u16 sMokumonAlolanTeachableLearnset[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_CHOROMON
 
-#if P_FAMILY_SPEAROW
-static const u16 sSpearowTeachableLearnset[] = {
+#if P_FAMILY_NYOKIMON
+static const u16 sNyokimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
@@ -839,7 +839,7 @@ static const u16 sFearowTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SPEAROW
+#endif //P_FAMILY_NYOKIMON
 
 #if P_FAMILY_EKANS
 static const u16 sEkansTeachableLearnset[] = {

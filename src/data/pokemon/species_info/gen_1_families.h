@@ -1903,8 +1903,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_CHOROMON
 
-#if P_FAMILY_SPEAROW
-    [SPECIES_SPEAROW] =
+#if P_FAMILY_NYOKIMON
+    [SPECIES_NYOKIMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 60,
@@ -1924,9 +1924,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_KEEN_EYE, ABILITY_NONE, ABILITY_SNIPER },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Spearow"),
-        .cryId = CRY_SPEAROW,
-        .natDexNum = NATIONAL_DEX_SPEAROW,
+        .speciesName = _("Nyokimon"),
+        .cryId = CRY_NYOKIMON,
+        .natDexNum = NATIONAL_DEX_NYOKIMON,
         .categoryName = _("Tiny Bird"),
         .height = 3,
         .weight = 20,
@@ -1939,22 +1939,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 22,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Spearow,
+        .frontPic = gMonFrontPic_Nyokimon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Spearow,
+        .frontAnimFrames = sAnims_Nyokimon,
         .frontAnimId = ANIM_V_JUMPS_SMALL,
-        .backPic = gMonBackPic_Spearow,
+        .backPic = gMonBackPic_Nyokimon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Spearow,
-        .shinyPalette = gMonShinyPalette_Spearow,
-        .iconSprite = gMonIcon_Spearow,
+        .palette = gMonPalette_Nyokimon,
+        .shinyPalette = gMonShinyPalette_Nyokimon,
+        .iconSprite = gMonIcon_Nyokimon,
         .iconPalIndex = 0,
-        FOOTPRINT(Spearow)
-        .levelUpLearnset = sSpearowLevelUpLearnset,
-        .teachableLearnset = sSpearowTeachableLearnset,
+        FOOTPRINT(Nyokimon)
+        .levelUpLearnset = sNyokimonLevelUpLearnset,
+        .teachableLearnset = sNyokimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_FEAROW}),
     },
 
@@ -2012,7 +2012,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sFearowLevelUpLearnset,
         .teachableLearnset = sFearowTeachableLearnset,
     },
-#endif //P_FAMILY_SPEAROW
+#endif //P_FAMILY_NYOKIMON
 
 #if P_FAMILY_EKANS
     [SPECIES_EKANS] =

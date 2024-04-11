@@ -50,10 +50,10 @@ gCryTable::
 	cry Cry_Choromon
 	cry Cry_Mokumon
 .endif @ P_FAMILY_CHOROMON
-.if P_FAMILY_SPEAROW == TRUE
-	cry Cry_Spearow
+.if P_FAMILY_NYOKIMON == TRUE
+	cry Cry_Nyokimon
 	cry Cry_Fearow
-.endif @ P_FAMILY_SPEAROW
+.endif @ P_FAMILY_NYOKIMON
 .if P_FAMILY_EKANS == TRUE
 	cry Cry_Ekans
 	cry Cry_Arbok
@@ -2476,10 +2476,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Choromon
 	cry_reverse Cry_Mokumon
 .endif @ P_FAMILY_CHOROMON
-.if P_FAMILY_SPEAROW == TRUE
-	cry_reverse Cry_Spearow
+.if P_FAMILY_NYOKIMON == TRUE
+	cry_reverse Cry_Nyokimon
 	cry_reverse Cry_Fearow
-.endif @ P_FAMILY_SPEAROW
+.endif @ P_FAMILY_NYOKIMON
 .if P_FAMILY_EKANS == TRUE
 	cry_reverse Cry_Ekans
 	cry_reverse Cry_Arbok
