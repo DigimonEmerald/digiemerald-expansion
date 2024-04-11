@@ -1005,13 +1005,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Gurimon[] = INCBIN_U8("graphics/pokemon/gurimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Poliwrath[] = INCBIN_U32("graphics/pokemon/poliwrath/anim_front.4bpp.lz");
-    const u32 gMonPalette_Poliwrath[] = INCBIN_U32("graphics/pokemon/poliwrath/normal.gbapal.lz");
-    const u32 gMonBackPic_Poliwrath[] = INCBIN_U32("graphics/pokemon/poliwrath/back.4bpp.lz");
-    const u32 gMonShinyPalette_Poliwrath[] = INCBIN_U32("graphics/pokemon/poliwrath/shiny.gbapal.lz");
-    const u8 gMonIcon_Poliwrath[] = INCBIN_U8("graphics/pokemon/poliwrath/icon.4bpp");
+    const u32 gMonFrontPic_Hiyarimon[] = INCBIN_U32("graphics/pokemon/hiyarimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Hiyarimon[] = INCBIN_U32("graphics/pokemon/hiyarimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Hiyarimon[] = INCBIN_U32("graphics/pokemon/hiyarimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Hiyarimon[] = INCBIN_U32("graphics/pokemon/hiyarimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Hiyarimon[] = INCBIN_U8("graphics/pokemon/hiyarimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Poliwrath[] = INCBIN_U8("graphics/pokemon/poliwrath/footprint.1bpp");
+    const u8 gMonFootprint_Hiyarimon[] = INCBIN_U8("graphics/pokemon/hiyarimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_2_CROSS_EVOS

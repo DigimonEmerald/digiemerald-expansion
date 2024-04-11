@@ -757,8 +757,8 @@ Cry_Gurimon::
 	.incbin "sound/direct_sound_samples/cries/gurimon.bin"
 
 	.align 2
-Cry_Poliwrath::
-	.incbin "sound/direct_sound_samples/cries/poliwrath.bin"
+Cry_Hiyarimon::
+	.incbin "sound/direct_sound_samples/cries/hiyarimon.bin"
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2

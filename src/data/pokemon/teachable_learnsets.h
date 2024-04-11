@@ -3039,7 +3039,7 @@ static const u16 sGurimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sPoliwrathTeachableLearnset[] = {
+static const u16 sHiyarimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,

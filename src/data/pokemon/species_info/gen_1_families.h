@@ -6315,12 +6315,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Gurimon)
         .levelUpLearnset = sGurimonLevelUpLearnset,
         .teachableLearnset = sGurimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_POLIWRATH},
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_HIYARIMON},
                                 {EVO_TRADE_ITEM, ITEM_KINGS_ROCK, SPECIES_POLITOED},
                                 {EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_POLITOED}),
     },
 
-    [SPECIES_POLIWRATH] =
+    [SPECIES_HIYARIMON] =
     {
         .baseHP        = 90,
         .baseAttack    = P_UPDATED_STATS >= GEN_6 ? 95 : 85,
@@ -6349,9 +6349,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_WATER_ABSORB, ABILITY_DAMP, ABILITY_SWIFT_SWIM },
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = TRUE,
-        .speciesName = _("Poliwrath"),
-        .cryId = CRY_POLIWRATH,
-        .natDexNum = NATIONAL_DEX_POLIWRATH,
+        .speciesName = _("Hiyarimon"),
+        .cryId = CRY_HIYARIMON,
+        .natDexNum = NATIONAL_DEX_HIYARIMON,
         .categoryName = _("Tadpole"),
         .height = 13,
         .weight = 540,
@@ -6364,22 +6364,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 6,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Poliwrath,
+        .frontPic = gMonFrontPic_Hiyarimon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Poliwrath,
+        .frontAnimFrames = sAnims_Hiyarimon,
         .frontAnimId = ANIM_V_SHAKE_TWICE,
-        .backPic = gMonBackPic_Poliwrath,
+        .backPic = gMonBackPic_Hiyarimon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Poliwrath,
-        .shinyPalette = gMonShinyPalette_Poliwrath,
-        .iconSprite = gMonIcon_Poliwrath,
+        .palette = gMonPalette_Hiyarimon,
+        .shinyPalette = gMonShinyPalette_Hiyarimon,
+        .iconSprite = gMonIcon_Hiyarimon,
         .iconPalIndex = 0,
-        FOOTPRINT(Poliwrath)
-        .levelUpLearnset = sPoliwrathLevelUpLearnset,
-        .teachableLearnset = sPoliwrathTeachableLearnset,
+        FOOTPRINT(Hiyarimon)
+        .levelUpLearnset = sHiyarimonLevelUpLearnset,
+        .teachableLearnset = sHiyarimonTeachableLearnset,
     },
 
 #if P_GEN_2_CROSS_EVOS

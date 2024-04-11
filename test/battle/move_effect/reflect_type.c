@@ -90,11 +90,11 @@ SINGLE_BATTLE_TEST("Reflect Type does not affect Pokémon with no types")
 {
     ASSUME(gSpeciesInfo[SPECIES_GIGIMON].types[0] == TYPE_FIRE);
     ASSUME(gSpeciesInfo[SPECIES_GIGIMON].types[1] == TYPE_FIRE);
-    ASSUME(gSpeciesInfo[SPECIES_POLIWRATH].types[0] == TYPE_WATER);
-    ASSUME(gSpeciesInfo[SPECIES_POLIWRATH].types[1] == TYPE_FIGHTING);
+    ASSUME(gSpeciesInfo[SPECIES_HIYARIMON].types[0] == TYPE_WATER);
+    ASSUME(gSpeciesInfo[SPECIES_HIYARIMON].types[1] == TYPE_FIGHTING);
     GIVEN {
         PLAYER(SPECIES_GIGIMON);
-        OPPONENT(SPECIES_POLIWRATH);
+        OPPONENT(SPECIES_HIYARIMON);
     } WHEN {
         TURN { MOVE(player, MOVE_BURN_UP); MOVE(opponent, MOVE_REFLECT_TYPE); }
     } SCENE {
@@ -102,7 +102,7 @@ SINGLE_BATTLE_TEST("Reflect Type does not affect Pokémon with no types")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BURN_UP, player);
         HP_BAR(opponent);
         MESSAGE("Gigimon burned itself out!");
-        MESSAGE("Foe Poliwrath used Reflect Type!");
+        MESSAGE("Foe Hiyarimon used Reflect Type!");
         MESSAGE("But it failed!");
     }
 }
@@ -111,17 +111,17 @@ SINGLE_BATTLE_TEST("Reflect Type copies a target's dual types")
 {
     ASSUME(gSpeciesInfo[SPECIES_GIGIMON].types[0] == TYPE_FIRE);
     ASSUME(gSpeciesInfo[SPECIES_GIGIMON].types[1] == TYPE_FIRE);
-    ASSUME(gSpeciesInfo[SPECIES_POLIWRATH].types[0] == TYPE_WATER);
-    ASSUME(gSpeciesInfo[SPECIES_POLIWRATH].types[1] == TYPE_FIGHTING);
+    ASSUME(gSpeciesInfo[SPECIES_HIYARIMON].types[0] == TYPE_WATER);
+    ASSUME(gSpeciesInfo[SPECIES_HIYARIMON].types[1] == TYPE_FIGHTING);
     GIVEN {
         PLAYER(SPECIES_GIGIMON);
-        OPPONENT(SPECIES_POLIWRATH);
+        OPPONENT(SPECIES_HIYARIMON);
     } WHEN {
         TURN { MOVE(player, MOVE_REFLECT_TYPE); }
     } SCENE {
         MESSAGE("Gigimon used Reflect Type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, player);
-        MESSAGE("Gigimon's type changed to match the Foe Poliwrath's!");
+        MESSAGE("Gigimon's type changed to match the Foe Hiyarimon's!");
     } THEN {
         EXPECT_EQ(player->type1, TYPE_WATER);
         EXPECT_EQ(player->type2, TYPE_FIGHTING);
