@@ -102,7 +102,7 @@
 #define SPECIES_VIXIMON                                  98
 #define SPECIES_WANYAMON                                 99
 #define SPECIES_XIAOMON                                 100
-#define SPECIES_ELECTRODE                               101
+#define SPECIES_YAAMON                               101
 #define SPECIES_EXEGGCUTE                               102
 #define SPECIES_EXEGGUTOR                               103
 #define SPECIES_CUBONE                                  104
@@ -1057,7 +1057,7 @@
 #define SPECIES_FRIMON_HISUIAN                       993
 #define SPECIES_GIGIMON_HISUIAN                        994
 #define SPECIES_XIAOMON_HISUIAN                         995
-#define SPECIES_ELECTRODE_HISUIAN                       996
+#define SPECIES_YAAMON_HISUIAN                       996
 #define SPECIES_TYPHLOSION_HISUIAN                      997
 #define SPECIES_QWILFISH_HISUIAN                        998
 #define SPECIES_SNEASEL_HISUIAN                         999

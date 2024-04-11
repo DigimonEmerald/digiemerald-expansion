@@ -252,7 +252,7 @@ gCryTable::
 .endif @ P_FAMILY_VIXIMON
 .if P_FAMILY_XIAOMON == TRUE
 	cry Cry_Xiaomon
-	cry Cry_Electrode
+	cry Cry_Yaamon
 .endif @ P_FAMILY_XIAOMON
 .if P_FAMILY_EXEGGCUTE == TRUE
 	cry Cry_Exeggcute
@@ -2678,7 +2678,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_VIXIMON
 .if P_FAMILY_XIAOMON == TRUE
 	cry_reverse Cry_Xiaomon
-	cry_reverse Cry_Electrode
+	cry_reverse Cry_Yaamon
 .endif @ P_FAMILY_XIAOMON
 .if P_FAMILY_EXEGGCUTE == TRUE
 	cry_reverse Cry_Exeggcute

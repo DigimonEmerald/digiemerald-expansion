@@ -9865,11 +9865,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
 #if P_FAMILY_XIAOMON
 #if P_UPDATED_EXP_YIELDS >= GEN_7
-    #define ELECTRODE_EXP_YIELD 172
+    #define YAAMON_EXP_YIELD 172
 #elif P_UPDATED_EXP_YIELDS >= GEN_5
-    #define ELECTRODE_EXP_YIELD 168
+    #define YAAMON_EXP_YIELD 168
 #else
-    #define ELECTRODE_EXP_YIELD 150
+    #define YAAMON_EXP_YIELD 150
 #endif
 
     [SPECIES_XIAOMON] =
@@ -9923,10 +9923,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sXiaomonLevelUpLearnset,
         .teachableLearnset = sXiaomonTeachableLearnset,
         .formSpeciesIdTable = sXiaomonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ELECTRODE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_YAAMON}),
     },
 
-    [SPECIES_ELECTRODE] =
+    [SPECIES_YAAMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 50,
@@ -9936,7 +9936,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 60,
-        .expYield = ELECTRODE_EXP_YIELD,
+        .expYield = YAAMON_EXP_YIELD,
         .evYield_Speed = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
@@ -9945,9 +9945,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_SOUNDPROOF, ABILITY_STATIC, ABILITY_AFTERMATH },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Electrode"),
-        .cryId = CRY_ELECTRODE,
-        .natDexNum = NATIONAL_DEX_ELECTRODE,
+        .speciesName = _("Yaamon"),
+        .cryId = CRY_YAAMON,
+        .natDexNum = NATIONAL_DEX_YAAMON,
         .categoryName = _("Ball"),
         .height = 12,
         .weight = 666,
@@ -9960,23 +9960,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Electrode,
+        .frontPic = gMonFrontPic_Yaamon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Electrode,
+        .frontAnimFrames = sAnims_Yaamon,
         .frontAnimId = ANIM_SHRINK_GROW_VIBRATE_SLOW,
-        .backPic = gMonBackPic_Electrode,
+        .backPic = gMonBackPic_Yaamon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Electrode,
-        .shinyPalette = gMonShinyPalette_Electrode,
-        .iconSprite = gMonIcon_Electrode,
+        .palette = gMonPalette_Yaamon,
+        .shinyPalette = gMonShinyPalette_Yaamon,
+        .iconSprite = gMonIcon_Yaamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Electrode)
-        .levelUpLearnset = sElectrodeLevelUpLearnset,
-        .teachableLearnset = sElectrodeTeachableLearnset,
-        .formSpeciesIdTable = sElectrodeFormSpeciesIdTable,
+        FOOTPRINT(Yaamon)
+        .levelUpLearnset = sYaamonLevelUpLearnset,
+        .teachableLearnset = sYaamonTeachableLearnset,
+        .formSpeciesIdTable = sYaamonFormSpeciesIdTable,
     },
 
 #if P_HISUIAN_FORMS
@@ -10032,10 +10032,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sXiaomonHisuianLevelUpLearnset,
         .teachableLearnset = sXiaomonHisuianTeachableLearnset,
         .formSpeciesIdTable = sXiaomonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_ELECTRODE_HISUIAN}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_YAAMON_HISUIAN}),
     },
 
-    [SPECIES_ELECTRODE_HISUIAN] =
+    [SPECIES_YAAMON_HISUIAN] =
     {
         .baseHP        = 60,
         .baseAttack    = 50,
@@ -10045,7 +10045,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_ELECTRIC, TYPE_GRASS),
         .catchRate = 60,
-        .expYield = ELECTRODE_EXP_YIELD,
+        .expYield = YAAMON_EXP_YIELD,
         .evYield_Speed = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
@@ -10054,9 +10054,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_SOUNDPROOF, ABILITY_STATIC, ABILITY_AFTERMATH },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Electrode"),
-        .cryId = CRY_ELECTRODE,
-        .natDexNum = NATIONAL_DEX_ELECTRODE,
+        .speciesName = _("Yaamon"),
+        .cryId = CRY_YAAMON,
+        .natDexNum = NATIONAL_DEX_YAAMON,
         .categoryName = _("Sphere"),
         .height = 12,
         .weight = 710,
@@ -10069,24 +10069,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_ElectrodeHisuian,
+        .frontPic = gMonFrontPic_YaamonHisuian,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_ElectrodeHisuian,
+        .frontAnimFrames = sAnims_YaamonHisuian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_ElectrodeHisuian,
+        .backPic = gMonBackPic_YaamonHisuian,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 7,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_ElectrodeHisuian,
-        .shinyPalette = gMonShinyPalette_ElectrodeHisuian,
-        .iconSprite = gMonIcon_ElectrodeHisuian,
+        .palette = gMonPalette_YaamonHisuian,
+        .shinyPalette = gMonShinyPalette_YaamonHisuian,
+        .iconSprite = gMonIcon_YaamonHisuian,
         .iconPalIndex = 1,
-        FOOTPRINT(Electrode)
+        FOOTPRINT(Yaamon)
         .isHisuianForm = TRUE,
-        .levelUpLearnset = sElectrodeHisuianLevelUpLearnset,
-        .teachableLearnset = sElectrodeHisuianTeachableLearnset,
-        .formSpeciesIdTable = sElectrodeFormSpeciesIdTable,
+        .levelUpLearnset = sYaamonHisuianLevelUpLearnset,
+        .teachableLearnset = sYaamonHisuianTeachableLearnset,
+        .formSpeciesIdTable = sYaamonFormSpeciesIdTable,
     },
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_XIAOMON

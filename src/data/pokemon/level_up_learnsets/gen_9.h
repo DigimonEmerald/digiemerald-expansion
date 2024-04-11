@@ -2812,7 +2812,7 @@ static const struct LevelUpMove sXiaomonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sElectrodeLevelUpLearnset[] = {
+static const struct LevelUpMove sYaamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_EERIE_IMPULSE),
     LEVEL_UP_MOVE( 1, MOVE_CHARGE),
     LEVEL_UP_MOVE( 1, MOVE_MAGNETIC_FLUX),
@@ -2856,7 +2856,7 @@ static const struct LevelUpMove sXiaomonHisuianLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sElectrodeHisuianLevelUpLearnset[] = {
+static const struct LevelUpMove sYaamonHisuianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_CHLOROBLAST),
     LEVEL_UP_MOVE( 1, MOVE_CHARGE),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),

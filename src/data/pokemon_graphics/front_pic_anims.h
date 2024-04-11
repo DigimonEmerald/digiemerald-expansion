@@ -1433,7 +1433,7 @@ static const union AnimCmd sAnim_Xiaomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Electrode_1[] =
+static const union AnimCmd sAnim_Yaamon_1[] =
 {
     ANIMCMD_FRAME(0, 14),
     ANIMCMD_FRAME(1, 34),
@@ -1444,7 +1444,7 @@ static const union AnimCmd sAnim_Electrode_1[] =
 
 #if P_HISUIAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(XiaomonHisuian);
-PLACEHOLDER_ANIM_SINGLE_FRAME(ElectrodeHisuian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(YaamonHisuian);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_XIAOMON
 
@@ -10497,10 +10497,10 @@ SINGLE_ANIMATION(WanyamonGigantamax);
 #endif //P_FAMILY_VIXIMON
 #if P_FAMILY_XIAOMON
 SINGLE_ANIMATION(Xiaomon);
-SINGLE_ANIMATION(Electrode);
+SINGLE_ANIMATION(Yaamon);
 #if P_HISUIAN_FORMS
 SINGLE_ANIMATION(XiaomonHisuian);
-SINGLE_ANIMATION(ElectrodeHisuian);
+SINGLE_ANIMATION(YaamonHisuian);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_XIAOMON
 #if P_FAMILY_EXEGGCUTE

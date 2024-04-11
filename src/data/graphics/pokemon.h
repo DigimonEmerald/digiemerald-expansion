@@ -1600,13 +1600,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Xiaomon[] = INCBIN_U8("graphics/pokemon/xiaomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Electrode[] = INCBIN_U32("graphics/pokemon/electrode/anim_front.4bpp.lz");
-    const u32 gMonPalette_Electrode[] = INCBIN_U32("graphics/pokemon/electrode/normal.gbapal.lz");
-    const u32 gMonBackPic_Electrode[] = INCBIN_U32("graphics/pokemon/electrode/back.4bpp.lz");
-    const u32 gMonShinyPalette_Electrode[] = INCBIN_U32("graphics/pokemon/electrode/shiny.gbapal.lz");
-    const u8 gMonIcon_Electrode[] = INCBIN_U8("graphics/pokemon/electrode/icon.4bpp");
+    const u32 gMonFrontPic_Yaamon[] = INCBIN_U32("graphics/pokemon/yaamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Yaamon[] = INCBIN_U32("graphics/pokemon/yaamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Yaamon[] = INCBIN_U32("graphics/pokemon/yaamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Yaamon[] = INCBIN_U32("graphics/pokemon/yaamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Yaamon[] = INCBIN_U8("graphics/pokemon/yaamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Electrode[] = INCBIN_U8("graphics/pokemon/electrode/footprint.1bpp");
+    const u8 gMonFootprint_Yaamon[] = INCBIN_U8("graphics/pokemon/yaamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_HISUIAN_FORMS
@@ -1616,11 +1616,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_XiaomonHisuian[] = INCBIN_U32("graphics/pokemon/xiaomon/hisuian/shiny.gbapal.lz");
     const u8 gMonIcon_XiaomonHisuian[] = INCBIN_U8("graphics/pokemon/xiaomon/hisuian/icon.4bpp");
 
-    const u32 gMonFrontPic_ElectrodeHisuian[] = INCBIN_U32("graphics/pokemon/electrode/hisuian/front.4bpp.lz");
-    const u32 gMonPalette_ElectrodeHisuian[] = INCBIN_U32("graphics/pokemon/electrode/hisuian/normal.gbapal.lz");
-    const u32 gMonBackPic_ElectrodeHisuian[] = INCBIN_U32("graphics/pokemon/electrode/hisuian/back.4bpp.lz");
-    const u32 gMonShinyPalette_ElectrodeHisuian[] = INCBIN_U32("graphics/pokemon/electrode/hisuian/shiny.gbapal.lz");
-    const u8 gMonIcon_ElectrodeHisuian[] = INCBIN_U8("graphics/pokemon/electrode/hisuian/icon.4bpp");
+    const u32 gMonFrontPic_YaamonHisuian[] = INCBIN_U32("graphics/pokemon/yaamon/hisuian/front.4bpp.lz");
+    const u32 gMonPalette_YaamonHisuian[] = INCBIN_U32("graphics/pokemon/yaamon/hisuian/normal.gbapal.lz");
+    const u32 gMonBackPic_YaamonHisuian[] = INCBIN_U32("graphics/pokemon/yaamon/hisuian/back.4bpp.lz");
+    const u32 gMonShinyPalette_YaamonHisuian[] = INCBIN_U32("graphics/pokemon/yaamon/hisuian/shiny.gbapal.lz");
+    const u8 gMonIcon_YaamonHisuian[] = INCBIN_U8("graphics/pokemon/yaamon/hisuian/icon.4bpp");
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_XIAOMON
 

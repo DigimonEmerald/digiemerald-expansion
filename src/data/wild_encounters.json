@@ -3347,7 +3347,7 @@
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_ELECTRODE"
+                "species": "SPECIES_YAAMON"
               },
               {
                 "min_level": 26,
@@ -12025,22 +12025,22 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ELECTRODE"
+                "species": "SPECIES_YAAMON"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ELECTRODE"
+                "species": "SPECIES_YAAMON"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ELECTRODE"
+                "species": "SPECIES_YAAMON"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ELECTRODE"
+                "species": "SPECIES_YAAMON"
               },
               {
                 "min_level": 5,
@@ -12055,12 +12055,12 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ELECTRODE"
+                "species": "SPECIES_YAAMON"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_ELECTRODE"
+                "species": "SPECIES_YAAMON"
               },
               {
                 "min_level": 5,

@@ -2572,7 +2572,7 @@ const struct ContestPokemon gContestOpponents[] =
         .otId = CONTEST_AI_TRAINER_ID,
     },
     [CONTEST_OPPONENT_SASHA] = {
-        .species = SPECIES_ELECTRODE,
+        .species = SPECIES_YAAMON,
         .nickname = _("RODLECT"),
         .trainerName = _("SASHA"),
         .trainerGfxId = OBJ_EVENT_GFX_TWIN,

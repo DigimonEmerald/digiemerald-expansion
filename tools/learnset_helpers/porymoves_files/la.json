@@ -2103,7 +2103,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "ELECTRODE": {
+  "YAAMON": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -17896,7 +17896,7 @@
       "MOVE_WILD_CHARGE"
     ]
   },
-  "ELECTRODE_HISUIAN": {
+  "YAAMON_HISUIAN": {
     "LevelMoves": [
       {
         "Level": 1,

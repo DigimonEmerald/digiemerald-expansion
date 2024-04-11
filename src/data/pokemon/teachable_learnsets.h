@@ -5098,7 +5098,7 @@ static const u16 sXiaomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sElectrodeTeachableLearnset[] = {
+static const u16 sYaamonTeachableLearnset[] = {
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
     MOVE_FLASH,
@@ -5151,7 +5151,7 @@ static const u16 sXiaomonHisuianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sElectrodeHisuianTeachableLearnset[] = {
+static const u16 sYaamonHisuianTeachableLearnset[] = {
     MOVE_BULLET_SEED,
     MOVE_FACADE,
     MOVE_GIGA_DRAIN,

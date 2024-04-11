@@ -303,9 +303,9 @@ static const u16 sXiaomonFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
-static const u16 sElectrodeFormSpeciesIdTable[] = {
-    SPECIES_ELECTRODE,
-    SPECIES_ELECTRODE_HISUIAN,
+static const u16 sYaamonFormSpeciesIdTable[] = {
+    SPECIES_YAAMON,
+    SPECIES_YAAMON_HISUIAN,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_XIAOMON
