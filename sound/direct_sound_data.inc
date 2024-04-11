@@ -935,15 +935,15 @@ Cry_Sunmon::
 	.incbin "sound/direct_sound_samples/cries/sunmon.bin"
 .endif @ P_FAMILY_SAKUTTOMON
 
-.if P_FAMILY_SHELLDER == TRUE
+.if P_FAMILY_TANEMON == TRUE
 	.align 2
-Cry_Shellder::
-	.incbin "sound/direct_sound_samples/cries/shellder.bin"
+Cry_Tanemon::
+	.incbin "sound/direct_sound_samples/cries/tanemon.bin"
 
 	.align 2
 Cry_Cloyster::
 	.incbin "sound/direct_sound_samples/cries/cloyster.bin"
-.endif @ P_FAMILY_SHELLDER
+.endif @ P_FAMILY_TANEMON
 
 .if P_FAMILY_GASTLY == TRUE
 	.align 2

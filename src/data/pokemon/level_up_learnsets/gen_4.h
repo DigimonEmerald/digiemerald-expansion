@@ -2299,8 +2299,8 @@ static const struct LevelUpMove sSunmonAlolanLevelUpLearnset[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_SAKUTTOMON
 
-#if P_FAMILY_SHELLDER
-static const struct LevelUpMove sShellderLevelUpLearnset[] = {
+#if P_FAMILY_TANEMON
+static const struct LevelUpMove sTanemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 4, MOVE_WITHDRAW),
     LEVEL_UP_MOVE( 8, MOVE_SUPERSONIC),
@@ -2327,7 +2327,7 @@ static const struct LevelUpMove sCloysterLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_SPIKE_CANNON),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SHELLDER
+#endif //P_FAMILY_TANEMON
 
 #if P_FAMILY_GASTLY
 static const struct LevelUpMove sGastlyLevelUpLearnset[] = {

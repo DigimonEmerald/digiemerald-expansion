@@ -1288,8 +1288,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(SunmonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_SAKUTTOMON
 
-#if P_FAMILY_SHELLDER
-static const union AnimCmd sAnim_Shellder_1[] =
+#if P_FAMILY_TANEMON
+static const union AnimCmd sAnim_Tanemon_1[] =
 {
     ANIMCMD_FRAME(1, 5),
     ANIMCMD_FRAME(0, 5),
@@ -1306,7 +1306,7 @@ static const union AnimCmd sAnim_Cloyster_1[] =
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SHELLDER
+#endif //P_FAMILY_TANEMON
 
 #if P_FAMILY_GASTLY
 static const union AnimCmd sAnim_Gastly_1[] =
@@ -10460,10 +10460,10 @@ SINGLE_ANIMATION(SakuttomonAlolan);
 SINGLE_ANIMATION(SunmonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_SAKUTTOMON
-#if P_FAMILY_SHELLDER
-SINGLE_ANIMATION(Shellder);
+#if P_FAMILY_TANEMON
+SINGLE_ANIMATION(Tanemon);
 SINGLE_ANIMATION(Cloyster);
-#endif //P_FAMILY_SHELLDER
+#endif //P_FAMILY_TANEMON
 #if P_FAMILY_GASTLY
 SINGLE_ANIMATION(Gastly);
 SINGLE_ANIMATION(Haunter);

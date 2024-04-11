@@ -221,10 +221,10 @@ gCryTable::
 	cry Cry_Sakuttomon
 	cry Cry_Sunmon
 .endif @ P_FAMILY_SAKUTTOMON
-.if P_FAMILY_SHELLDER == TRUE
-	cry Cry_Shellder
+.if P_FAMILY_TANEMON == TRUE
+	cry Cry_Tanemon
 	cry Cry_Cloyster
-.endif @ P_FAMILY_SHELLDER
+.endif @ P_FAMILY_TANEMON
 .if P_FAMILY_GASTLY == TRUE
 	cry Cry_Gastly
 	cry Cry_Haunter
@@ -2647,10 +2647,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Sakuttomon
 	cry_reverse Cry_Sunmon
 .endif @ P_FAMILY_SAKUTTOMON
-.if P_FAMILY_SHELLDER == TRUE
-	cry_reverse Cry_Shellder
+.if P_FAMILY_TANEMON == TRUE
+	cry_reverse Cry_Tanemon
 	cry_reverse Cry_Cloyster
-.endif @ P_FAMILY_SHELLDER
+.endif @ P_FAMILY_TANEMON
 .if P_FAMILY_GASTLY == TRUE
 	cry_reverse Cry_Gastly
 	cry_reverse Cry_Haunter

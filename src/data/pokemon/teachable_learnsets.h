@@ -4652,8 +4652,8 @@ static const u16 sSunmonAlolanTeachableLearnset[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_SAKUTTOMON
 
-#if P_FAMILY_SHELLDER
-static const u16 sShellderTeachableLearnset[] = {
+#if P_FAMILY_TANEMON
+static const u16 sTanemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -4710,7 +4710,7 @@ static const u16 sCloysterTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SHELLDER
+#endif //P_FAMILY_TANEMON
 
 #if P_FAMILY_GASTLY
 static const u16 sGastlyTeachableLearnset[] = {

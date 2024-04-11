@@ -1441,14 +1441,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_SAKUTTOMON
 
-#if P_FAMILY_SHELLDER
-    const u32 gMonFrontPic_Shellder[] = INCBIN_U32("graphics/pokemon/shellder/anim_front.4bpp.lz");
-    const u32 gMonPalette_Shellder[] = INCBIN_U32("graphics/pokemon/shellder/normal.gbapal.lz");
-    const u32 gMonBackPic_Shellder[] = INCBIN_U32("graphics/pokemon/shellder/back.4bpp.lz");
-    const u32 gMonShinyPalette_Shellder[] = INCBIN_U32("graphics/pokemon/shellder/shiny.gbapal.lz");
-    const u8 gMonIcon_Shellder[] = INCBIN_U8("graphics/pokemon/shellder/icon.4bpp");
+#if P_FAMILY_TANEMON
+    const u32 gMonFrontPic_Tanemon[] = INCBIN_U32("graphics/pokemon/tanemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Tanemon[] = INCBIN_U32("graphics/pokemon/tanemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Tanemon[] = INCBIN_U32("graphics/pokemon/tanemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Tanemon[] = INCBIN_U32("graphics/pokemon/tanemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Tanemon[] = INCBIN_U8("graphics/pokemon/tanemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Shellder[] = INCBIN_U8("graphics/pokemon/shellder/footprint.1bpp");
+    const u8 gMonFootprint_Tanemon[] = INCBIN_U8("graphics/pokemon/tanemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Cloyster[] = INCBIN_U32("graphics/pokemon/cloyster/anim_front.4bpp.lz");
@@ -1459,7 +1459,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Cloyster[] = INCBIN_U8("graphics/pokemon/cloyster/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_SHELLDER
+#endif //P_FAMILY_TANEMON
 
 #if P_FAMILY_GASTLY
     const u32 gMonFrontPic_Gastly[] = INCBIN_U32("graphics/pokemon/gastly/anim_front.4bpp.lz");

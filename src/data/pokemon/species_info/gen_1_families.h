@@ -7882,7 +7882,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 16,
         .weight = 785,
         .description = COMPOUND_STRING(
-            "Its tail has a Shellder firmly attached\n"
+            "Its tail has a Tanemon firmly attached\n"
             "with a bite. As a result, the tail can't be\n"
             "used for fishing anymore. This forces it\n"
             "to reluctantly swim and catch prey."),
@@ -7941,7 +7941,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "It undertakes research every day to\n"
             "solve the mysteries of the world.\n"
             "However, it apparently forgets everything\n"
-            "if the Shellder on its head comes off."),
+            "if the Tanemon on its head comes off."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 309,
@@ -7995,7 +7995,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .weight = 1200,
         .description = COMPOUND_STRING(
             "When bathed in the energy of Mega\n"
-            "Evolution, Shellder converts into\n"
+            "Evolution, Tanemon converts into\n"
             "impregnable armor. There is virtually no\n"
             "change in Pagumon."),
         .pokemonScale = 256,
@@ -8108,7 +8108,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 16,
         .weight = 705,
         .description = COMPOUND_STRING(
-            "A Shellder bite set off a chemical reaction\n"
+            "A Tanemon bite set off a chemical reaction\n"
             "with the spices inside Pickmon_silver's body,\n"
             "causing Pickmon_silver to become a\n"
             "Poison-type Pokémon."),
@@ -8164,8 +8164,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .weight = 795,
         .description = COMPOUND_STRING(
             "A combination of toxins and the shock of\n"
-            "evolving has increased Shellder's\n"
-            "intelligence to the point that Shellder\n"
+            "evolving has increased Tanemon's\n"
+            "intelligence to the point that Tanemon\n"
             "now controls Slowking."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
@@ -9004,8 +9004,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_SAKUTTOMON
 
-#if P_FAMILY_SHELLDER
-    [SPECIES_SHELLDER] =
+#if P_FAMILY_TANEMON
+    [SPECIES_TANEMON] =
     {
         .baseHP        = 30,
         .baseAttack    = 65,
@@ -9026,9 +9026,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
         .abilities = { ABILITY_SHELL_ARMOR, ABILITY_SKILL_LINK, ABILITY_OVERCOAT },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Shellder"),
-        .cryId = CRY_SHELLDER,
-        .natDexNum = NATIONAL_DEX_SHELLDER,
+        .speciesName = _("Tanemon"),
+        .cryId = CRY_TANEMON,
+        .natDexNum = NATIONAL_DEX_TANEMON,
         .categoryName = _("Bivalve"),
         .height = 3,
         .weight = 40,
@@ -9041,23 +9041,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 24,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Shellder,
+        .frontPic = gMonFrontPic_Tanemon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Shellder,
+        .frontAnimFrames = sAnims_Tanemon,
         .frontAnimId = ANIM_TWIST,
         .frontAnimDelay = 20,
-        .backPic = gMonBackPic_Shellder,
+        .backPic = gMonBackPic_Tanemon,
         .backPicSize = MON_COORDS_SIZE(48, 24),
         .backPicYOffset = 21,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Shellder,
-        .shinyPalette = gMonShinyPalette_Shellder,
-        .iconSprite = gMonIcon_Shellder,
+        .palette = gMonPalette_Tanemon,
+        .shinyPalette = gMonShinyPalette_Tanemon,
+        .iconSprite = gMonIcon_Tanemon,
         .iconPalIndex = 2,
-        FOOTPRINT(Shellder)
-        .levelUpLearnset = sShellderLevelUpLearnset,
-        .teachableLearnset = sShellderTeachableLearnset,
+        FOOTPRINT(Tanemon)
+        .levelUpLearnset = sTanemonLevelUpLearnset,
+        .teachableLearnset = sTanemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_CLOYSTER}),
     },
 
@@ -9114,7 +9114,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sCloysterLevelUpLearnset,
         .teachableLearnset = sCloysterTeachableLearnset,
     },
-#endif //P_FAMILY_SHELLDER
+#endif //P_FAMILY_TANEMON
 
 #if P_FAMILY_GASTLY
     [SPECIES_GASTLY] =

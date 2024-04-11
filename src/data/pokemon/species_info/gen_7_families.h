@@ -4129,7 +4129,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .description = COMPOUND_STRING(
             "It stuns its prey with its psychic powers\n"
             "and then grinds them to mush with its\n"
-            "strong teeth. Even Shellder's shell is no\n"
+            "strong teeth. Even Tanemon's shell is no\n"
             "match for it."),
         .pokemonScale = 338,
         .pokemonOffset = 8,

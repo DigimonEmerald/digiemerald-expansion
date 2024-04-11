@@ -758,8 +758,8 @@ const u16 gEggMoves[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_SAKUTTOMON
 
-#if P_FAMILY_SHELLDER
-    egg_moves(SHELLDER,
+#if P_FAMILY_TANEMON
+    egg_moves(TANEMON,
         MOVE_BUBBLE_BEAM,
         MOVE_TAKE_DOWN,
         MOVE_BARRIER,
@@ -772,7 +772,7 @@ const u16 gEggMoves[] = {
         MOVE_AQUA_RING,
         MOVE_AVALANCHE,
         MOVE_TWINEEDLE),
-#endif //P_FAMILY_SHELLDER
+#endif //P_FAMILY_TANEMON
 
 #if P_FAMILY_GASTLY
     egg_moves(GASTLY,

@@ -63,11 +63,11 @@ SINGLE_BATTLE_TEST("Sap Sipper blocks multi-hit grass type moves")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_BULLET_SEED].effect == EFFECT_MULTI_HIT);
         PLAYER(SPECIES_MARILL) { Ability(ABILITY_SAP_SIPPER); }
-        OPPONENT(SPECIES_SHELLDER) { Ability(ABILITY_SKILL_LINK); }
+        OPPONENT(SPECIES_TANEMON) { Ability(ABILITY_SKILL_LINK); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_BULLET_SEED); }
     } SCENE {
-        MESSAGE("Foe Shellder used Bullet Seed!");
+        MESSAGE("Foe Tanemon used Bullet Seed!");
         ABILITY_POPUP(player, ABILITY_SAP_SIPPER);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         MESSAGE("Marill's Attack rose!");
