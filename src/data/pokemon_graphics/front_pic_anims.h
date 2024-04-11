@@ -238,7 +238,7 @@ static const union AnimCmd sAnim_Kuramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Pidgeot_1[] =
+static const union AnimCmd sAnim_Leafmon_1[] =
 {
     ANIMCMD_FRAME(1, 20),
     ANIMCMD_FRAME(0, 10),
@@ -246,7 +246,7 @@ static const union AnimCmd sAnim_Pidgeot_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(PidgeotMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(LeafmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_KETOMON
 
@@ -10206,9 +10206,9 @@ SINGLE_ANIMATION(KeemonMega);
 #if P_FAMILY_KETOMON
 SINGLE_ANIMATION(Ketomon);
 SINGLE_ANIMATION(Kuramon);
-SINGLE_ANIMATION(Pidgeot);
+SINGLE_ANIMATION(Leafmon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(PidgeotMega);
+SINGLE_ANIMATION(LeafmonMega);
 #endif
 #endif //P_FAMILY_KETOMON
 #if P_FAMILY_RATTATA

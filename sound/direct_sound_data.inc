@@ -494,13 +494,13 @@ Cry_Kuramon::
 	.incbin "sound/direct_sound_samples/cries/kuramon.bin"
 
 	.align 2
-Cry_Pidgeot::
-	.incbin "sound/direct_sound_samples/cries/pidgeot.bin"
+Cry_Leafmon::
+	.incbin "sound/direct_sound_samples/cries/leafmon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_PidgeotMega::
-	.incbin "sound/direct_sound_samples/cries/pidgeot_mega.bin"
+Cry_LeafmonMega::
+	.incbin "sound/direct_sound_samples/cries/leafmon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_KETOMON
 

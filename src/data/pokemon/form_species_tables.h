@@ -43,9 +43,9 @@ static const u16 sKeemonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_FUFUMON
 
 #if P_FAMILY_KETOMON
-static const u16 sPidgeotFormSpeciesIdTable[] = {
-    SPECIES_PIDGEOT,
-    SPECIES_PIDGEOT_MEGA,
+static const u16 sLeafmonFormSpeciesIdTable[] = {
+    SPECIES_LEAFMON,
+    SPECIES_LEAFMON_MEGA,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_KETOMON

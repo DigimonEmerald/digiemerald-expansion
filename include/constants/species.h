@@ -19,7 +19,7 @@
 #define SPECIES_KEEMON                                15
 #define SPECIES_KETOMON                                  16
 #define SPECIES_KURAMON                               17
-#define SPECIES_PIDGEOT                                 18
+#define SPECIES_LEAFMON                                 18
 #define SPECIES_RATTATA                                 19
 #define SPECIES_RATICATE                                20
 #define SPECIES_SPEAROW                                 21
@@ -969,7 +969,7 @@
 #define SPECIES_CHIBOMON_MEGA_Y                        908
 #define SPECIES_CURIMON_MEGA                          909
 #define SPECIES_KEEMON_MEGA                           910
-#define SPECIES_PIDGEOT_MEGA                            911
+#define SPECIES_LEAFMON_MEGA                            911
 #define SPECIES_ALAKAZAM_MEGA                           912
 #define SPECIES_SLOWBRO_MEGA                            913
 #define SPECIES_GENGAR_MEGA                             914

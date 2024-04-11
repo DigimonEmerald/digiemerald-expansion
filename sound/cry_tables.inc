@@ -41,9 +41,9 @@ gCryTable::
 .if P_FAMILY_KETOMON == TRUE
 	cry Cry_Ketomon
 	cry Cry_Kuramon
-	cry Cry_Pidgeot
+	cry Cry_Leafmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_PidgeotMega
+	cry Cry_LeafmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_KETOMON
 .if P_FAMILY_RATTATA == TRUE
@@ -2467,9 +2467,9 @@ gCryTable_Reverse::
 .if P_FAMILY_KETOMON == TRUE
 	cry_reverse Cry_Ketomon
 	cry_reverse Cry_Kuramon
-	cry_reverse Cry_Pidgeot
+	cry_reverse Cry_Leafmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_PidgeotMega
+	cry_reverse Cry_LeafmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_KETOMON
 .if P_FAMILY_RATTATA == TRUE

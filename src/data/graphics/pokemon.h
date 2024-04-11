@@ -247,21 +247,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Kuramon[] = INCBIN_U8("graphics/pokemon/kuramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Pidgeot[] = INCBIN_U32("graphics/pokemon/pidgeot/anim_front.4bpp.lz");
-    const u32 gMonPalette_Pidgeot[] = INCBIN_U32("graphics/pokemon/pidgeot/normal.gbapal.lz");
-    const u32 gMonBackPic_Pidgeot[] = INCBIN_U32("graphics/pokemon/pidgeot/back.4bpp.lz");
-    const u32 gMonShinyPalette_Pidgeot[] = INCBIN_U32("graphics/pokemon/pidgeot/shiny.gbapal.lz");
-    const u8 gMonIcon_Pidgeot[] = INCBIN_U8("graphics/pokemon/pidgeot/icon.4bpp");
+    const u32 gMonFrontPic_Leafmon[] = INCBIN_U32("graphics/pokemon/leafmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Leafmon[] = INCBIN_U32("graphics/pokemon/leafmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Leafmon[] = INCBIN_U32("graphics/pokemon/leafmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Leafmon[] = INCBIN_U32("graphics/pokemon/leafmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Leafmon[] = INCBIN_U8("graphics/pokemon/leafmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Pidgeot[] = INCBIN_U8("graphics/pokemon/pidgeot/footprint.1bpp");
+    const u8 gMonFootprint_Leafmon[] = INCBIN_U8("graphics/pokemon/leafmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_PidgeotMega[] = INCBIN_U32("graphics/pokemon/pidgeot/mega/front.4bpp.lz");
-    const u32 gMonPalette_PidgeotMega[] = INCBIN_U32("graphics/pokemon/pidgeot/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_PidgeotMega[] = INCBIN_U32("graphics/pokemon/pidgeot/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_PidgeotMega[] = INCBIN_U32("graphics/pokemon/pidgeot/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_PidgeotMega[] = INCBIN_U8("graphics/pokemon/pidgeot/mega/icon.4bpp");
+    const u32 gMonFrontPic_LeafmonMega[] = INCBIN_U32("graphics/pokemon/leafmon/mega/front.4bpp.lz");
+    const u32 gMonPalette_LeafmonMega[] = INCBIN_U32("graphics/pokemon/leafmon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_LeafmonMega[] = INCBIN_U32("graphics/pokemon/leafmon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_LeafmonMega[] = INCBIN_U32("graphics/pokemon/leafmon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_LeafmonMega[] = INCBIN_U8("graphics/pokemon/leafmon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_KETOMON
 
