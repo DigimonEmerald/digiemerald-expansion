@@ -1072,14 +1072,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HOPMON
 
-#if P_FAMILY_MACHOP
-    const u32 gMonFrontPic_Machop[] = INCBIN_U32("graphics/pokemon/machop/anim_front.4bpp.lz");
-    const u32 gMonPalette_Machop[] = INCBIN_U32("graphics/pokemon/machop/normal.gbapal.lz");
-    const u32 gMonBackPic_Machop[] = INCBIN_U32("graphics/pokemon/machop/back.4bpp.lz");
-    const u32 gMonShinyPalette_Machop[] = INCBIN_U32("graphics/pokemon/machop/shiny.gbapal.lz");
-    const u8 gMonIcon_Machop[] = INCBIN_U8("graphics/pokemon/machop/icon.4bpp");
+#if P_FAMILY_KOKOMON
+    const u32 gMonFrontPic_Kokomon[] = INCBIN_U32("graphics/pokemon/kokomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Kokomon[] = INCBIN_U32("graphics/pokemon/kokomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Kokomon[] = INCBIN_U32("graphics/pokemon/kokomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Kokomon[] = INCBIN_U32("graphics/pokemon/kokomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Kokomon[] = INCBIN_U8("graphics/pokemon/kokomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Machop[] = INCBIN_U8("graphics/pokemon/machop/footprint.1bpp");
+    const u8 gMonFootprint_Kokomon[] = INCBIN_U8("graphics/pokemon/kokomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Machoke[] = INCBIN_U32("graphics/pokemon/machoke/anim_front.4bpp.lz");
@@ -1107,7 +1107,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_MachampGigantamax[] = INCBIN_U32("graphics/pokemon/machamp/gigantamax/shiny.gbapal.lz");
     const u8 gMonIcon_MachampGigantamax[] = INCBIN_U8("graphics/pokemon/machamp/gigantamax/icon.4bpp");
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_MACHOP
+#endif //P_FAMILY_KOKOMON
 
 #if P_FAMILY_BELLSPROUT
     const u32 gMonFrontPic_Bellsprout[] = INCBIN_U32("graphics/pokemon/bellsprout/anim_front.4bpp.lz");

@@ -3279,8 +3279,8 @@ static const u16 sKapurimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_HOPMON
 
-#if P_FAMILY_MACHOP
-static const u16 sMachopTeachableLearnset[] = {
+#if P_FAMILY_KOKOMON
+static const u16 sKokomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -3403,7 +3403,7 @@ static const u16 sMachampTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MACHOP
+#endif //P_FAMILY_KOKOMON
 
 #if P_FAMILY_BELLSPROUT
 static const u16 sBellsproutTeachableLearnset[] = {

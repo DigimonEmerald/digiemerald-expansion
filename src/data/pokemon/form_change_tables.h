@@ -68,13 +68,13 @@ static const struct FormChange sKapurimonFormChangeTable[] = {
 };
 #endif //P_FAMILY_HOPMON
 
-#if P_FAMILY_MACHOP
+#if P_FAMILY_KOKOMON
 static const struct FormChange sMachampFormChangeTable[] =
 {
     {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_MACHAMP_GIGANTAMAX},
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_MACHOP
+#endif //P_FAMILY_KOKOMON
 
 #if P_FAMILY_SLOWPOKE
 static const struct FormChange sSlowbroFormChangeTable[] = {

@@ -6699,8 +6699,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HOPMON
 
-#if P_FAMILY_MACHOP
-    [SPECIES_MACHOP] =
+#if P_FAMILY_KOKOMON
+    [SPECIES_KOKOMON] =
     {
         .baseHP        = 70,
         .baseAttack    = 80,
@@ -6726,9 +6726,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_GUTS, ABILITY_NO_GUARD, ABILITY_STEADFAST },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Machop"),
-        .cryId = CRY_MACHOP,
-        .natDexNum = NATIONAL_DEX_MACHOP,
+        .speciesName = _("Kokomon"),
+        .cryId = CRY_KOKOMON,
+        .natDexNum = NATIONAL_DEX_KOKOMON,
         .categoryName = _("Superpower"),
         .height = 8,
         .weight = 195,
@@ -6741,22 +6741,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 14,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Machop,
+        .frontPic = gMonFrontPic_Kokomon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Machop,
+        .frontAnimFrames = sAnims_Kokomon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Machop,
+        .backPic = gMonBackPic_Kokomon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Machop,
-        .shinyPalette = gMonShinyPalette_Machop,
-        .iconSprite = gMonIcon_Machop,
+        .palette = gMonPalette_Kokomon,
+        .shinyPalette = gMonShinyPalette_Kokomon,
+        .iconSprite = gMonIcon_Kokomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Machop)
-        .levelUpLearnset = sMachopLevelUpLearnset,
-        .teachableLearnset = sMachopTeachableLearnset,
+        FOOTPRINT(Kokomon)
+        .levelUpLearnset = sKokomonLevelUpLearnset,
+        .teachableLearnset = sKokomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MACHOKE}),
     },
 
@@ -6936,7 +6936,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sMachampFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_MACHOP
+#endif //P_FAMILY_KOKOMON
 
 #if P_FAMILY_BELLSPROUT
     [SPECIES_BELLSPROUT] =

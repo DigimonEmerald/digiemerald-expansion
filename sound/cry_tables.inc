@@ -160,11 +160,11 @@ gCryTable::
 	cry Cry_KapurimonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HOPMON
-.if P_FAMILY_MACHOP == TRUE
-	cry Cry_Machop
+.if P_FAMILY_KOKOMON == TRUE
+	cry Cry_Kokomon
 	cry Cry_Machoke
 	cry Cry_Machamp
-.endif @ P_FAMILY_MACHOP
+.endif @ P_FAMILY_KOKOMON
 .if P_FAMILY_BELLSPROUT == TRUE
 	cry Cry_Bellsprout
 	cry Cry_Weepinbell
@@ -2586,11 +2586,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_KapurimonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HOPMON
-.if P_FAMILY_MACHOP == TRUE
-	cry_reverse Cry_Machop
+.if P_FAMILY_KOKOMON == TRUE
+	cry_reverse Cry_Kokomon
 	cry_reverse Cry_Machoke
 	cry_reverse Cry_Machamp
-.endif @ P_FAMILY_MACHOP
+.endif @ P_FAMILY_KOKOMON
 .if P_FAMILY_BELLSPROUT == TRUE
 	cry_reverse Cry_Bellsprout
 	cry_reverse Cry_Weepinbell

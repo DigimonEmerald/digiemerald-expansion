@@ -526,8 +526,8 @@ const u16 gEggMoves[] = {
         MOVE_PSYCHIC_TERRAIN),
 #endif //P_FAMILY_HOPMON
 
-#if P_FAMILY_MACHOP
-    egg_moves(MACHOP,
+#if P_FAMILY_KOKOMON
+    egg_moves(KOKOMON,
         MOVE_MEDITATE,
         MOVE_ROLLING_KICK,
         MOVE_ENCORE,
@@ -543,7 +543,7 @@ const u16 gEggMoves[] = {
         MOVE_KNOCK_OFF,
         MOVE_TICKLE,
         MOVE_QUICK_GUARD),
-#endif //P_FAMILY_MACHOP
+#endif //P_FAMILY_KOKOMON
 
 #if P_FAMILY_BELLSPROUT
     egg_moves(BELLSPROUT,

@@ -969,8 +969,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(KapurimonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HOPMON
 
-#if P_FAMILY_MACHOP
-static const union AnimCmd sAnim_Machop_1[] =
+#if P_FAMILY_KOKOMON
+static const union AnimCmd sAnim_Kokomon_1[] =
 {
     ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(1, 15),
@@ -1003,7 +1003,7 @@ static const union AnimCmd sAnim_Machamp_1[] =
 #if P_GIGANTAMAX_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(MachampGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_MACHOP
+#endif //P_FAMILY_KOKOMON
 
 #if P_FAMILY_BELLSPROUT
 static const union AnimCmd sAnim_Bellsprout_1[] =
@@ -10378,14 +10378,14 @@ SINGLE_ANIMATION(Kapurimon);
 SINGLE_ANIMATION(KapurimonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HOPMON
-#if P_FAMILY_MACHOP
-SINGLE_ANIMATION(Machop);
+#if P_FAMILY_KOKOMON
+SINGLE_ANIMATION(Kokomon);
 SINGLE_ANIMATION(Machoke);
 SINGLE_ANIMATION(Machamp);
 #if P_GIGANTAMAX_FORMS
 SINGLE_ANIMATION(MachampGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_MACHOP
+#endif //P_FAMILY_KOKOMON
 #if P_FAMILY_BELLSPROUT
 SINGLE_ANIMATION(Bellsprout);
 SINGLE_ANIMATION(Weepinbell);

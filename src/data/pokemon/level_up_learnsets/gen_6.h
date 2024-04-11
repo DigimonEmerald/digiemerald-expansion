@@ -1621,8 +1621,8 @@ static const struct LevelUpMove sKapurimonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_HOPMON
 
-#if P_FAMILY_MACHOP
-static const struct LevelUpMove sMachopLevelUpLearnset[] = {
+#if P_FAMILY_KOKOMON
+static const struct LevelUpMove sKokomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LOW_KICK),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 3, MOVE_FOCUS_ENERGY),
@@ -1689,7 +1689,7 @@ static const struct LevelUpMove sMachampLevelUpLearnset[] = {
     LEVEL_UP_MOVE(57, MOVE_DYNAMIC_PUNCH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_MACHOP
+#endif //P_FAMILY_KOKOMON
 
 #if P_FAMILY_BELLSPROUT
 static const struct LevelUpMove sBellsproutLevelUpLearnset[] = {

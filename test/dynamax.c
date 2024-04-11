@@ -1367,7 +1367,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Chi Strike boosts allies' crit chance")
         ASSUME(B_CRIT_CHANCE >= GEN_6);
         ASSUME(gMovesInfo[MOVE_G_MAX_CHI_STRIKE].argument == MAX_EFFECT_CRIT_PLUS);
         PLAYER(SPECIES_MACHAMP) { GigantamaxFactor(TRUE); }
-        PLAYER(SPECIES_MACHOP);
+        PLAYER(SPECIES_KOKOMON);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -1383,10 +1383,10 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Chi Strike boosts allies' crit chance")
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
             MESSAGE("Machamp is getting pumped!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-            MESSAGE("Machop is getting pumped!");
+            MESSAGE("Kokomon is getting pumped!");
         }
         // turn 4
-        MESSAGE("Machop used Tackle!"); // Machop is at +5 crit stages
+        MESSAGE("Kokomon used Tackle!"); // Kokomon is at +5 crit stages
         MESSAGE("A critical hit!");
     }
 }

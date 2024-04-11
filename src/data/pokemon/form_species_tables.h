@@ -182,13 +182,13 @@ static const u16 sKapurimonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_HOPMON
 
-#if P_FAMILY_MACHOP
+#if P_FAMILY_KOKOMON
 static const u16 sMachampFormSpeciesIdTable[] = {
     SPECIES_MACHAMP,
     SPECIES_MACHAMP_GIGANTAMAX,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_MACHOP
+#endif //P_FAMILY_KOKOMON
 
 #if P_FAMILY_GEODUDE
 static const u16 sGeodudeFormSpeciesIdTable[] = {

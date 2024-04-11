@@ -787,10 +787,10 @@ Cry_KapurimonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HOPMON
 
-.if P_FAMILY_MACHOP == TRUE
+.if P_FAMILY_KOKOMON == TRUE
 	.align 2
-Cry_Machop::
-	.incbin "sound/direct_sound_samples/cries/machop.bin"
+Cry_Kokomon::
+	.incbin "sound/direct_sound_samples/cries/kokomon.bin"
 
 	.align 2
 Cry_Machoke::
@@ -799,7 +799,7 @@ Cry_Machoke::
 	.align 2
 Cry_Machamp::
 	.incbin "sound/direct_sound_samples/cries/machamp.bin"
-.endif @ P_FAMILY_MACHOP
+.endif @ P_FAMILY_KOKOMON
 
 .if P_FAMILY_BELLSPROUT == TRUE
 	.align 2
