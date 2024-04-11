@@ -315,13 +315,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Nyokimon[] = INCBIN_U8("graphics/pokemon/nyokimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Fearow[] = INCBIN_U32("graphics/pokemon/fearow/anim_front.4bpp.lz");
-    const u32 gMonPalette_Fearow[] = INCBIN_U32("graphics/pokemon/fearow/normal.gbapal.lz");
-    const u32 gMonBackPic_Fearow[] = INCBIN_U32("graphics/pokemon/fearow/back.4bpp.lz");
-    const u32 gMonShinyPalette_Fearow[] = INCBIN_U32("graphics/pokemon/fearow/shiny.gbapal.lz");
-    const u8 gMonIcon_Fearow[] = INCBIN_U8("graphics/pokemon/fearow/icon.4bpp");
+    const u32 gMonFrontPic_Pabumon[] = INCBIN_U32("graphics/pokemon/pabumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Pabumon[] = INCBIN_U32("graphics/pokemon/pabumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Pabumon[] = INCBIN_U32("graphics/pokemon/pabumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Pabumon[] = INCBIN_U32("graphics/pokemon/pabumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Pabumon[] = INCBIN_U8("graphics/pokemon/pabumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Fearow[] = INCBIN_U8("graphics/pokemon/fearow/footprint.1bpp");
+    const u8 gMonFootprint_Pabumon[] = INCBIN_U8("graphics/pokemon/pabumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_NYOKIMON
 

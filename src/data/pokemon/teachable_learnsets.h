@@ -816,7 +816,7 @@ static const u16 sNyokimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFearowTeachableLearnset[] = {
+static const u16 sPabumonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,

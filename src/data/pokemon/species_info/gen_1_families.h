@@ -1955,10 +1955,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Nyokimon)
         .levelUpLearnset = sNyokimonLevelUpLearnset,
         .teachableLearnset = sNyokimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_FEAROW}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_PABUMON}),
     },
 
-    [SPECIES_FEAROW] =
+    [SPECIES_PABUMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 90,
@@ -1978,9 +1978,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_KEEN_EYE, ABILITY_NONE, ABILITY_SNIPER },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Fearow"),
-        .cryId = CRY_FEAROW,
-        .natDexNum = NATIONAL_DEX_FEAROW,
+        .speciesName = _("Pabumon"),
+        .cryId = CRY_PABUMON,
+        .natDexNum = NATIONAL_DEX_PABUMON,
         .categoryName = _("Beak"),
         .height = 12,
         .weight = 380,
@@ -1993,24 +1993,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 1,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Fearow,
+        .frontPic = gMonFrontPic_Pabumon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Fearow,
+        .frontAnimFrames = sAnims_Pabumon,
         .frontAnimId = ANIM_FIGURE_8,
         .frontAnimDelay = 2,
         .enemyMonElevation = 6,
-        .backPic = gMonBackPic_Fearow,
+        .backPic = gMonBackPic_Pabumon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Fearow,
-        .shinyPalette = gMonShinyPalette_Fearow,
-        .iconSprite = gMonIcon_Fearow,
+        .palette = gMonPalette_Pabumon,
+        .shinyPalette = gMonShinyPalette_Pabumon,
+        .iconSprite = gMonIcon_Pabumon,
         .iconPalIndex = 0,
-        FOOTPRINT(Fearow)
-        .levelUpLearnset = sFearowLevelUpLearnset,
-        .teachableLearnset = sFearowTeachableLearnset,
+        FOOTPRINT(Pabumon)
+        .levelUpLearnset = sPabumonLevelUpLearnset,
+        .teachableLearnset = sPabumonTeachableLearnset,
     },
 #endif //P_FAMILY_NYOKIMON
 

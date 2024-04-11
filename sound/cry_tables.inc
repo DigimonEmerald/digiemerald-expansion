@@ -52,7 +52,7 @@ gCryTable::
 .endif @ P_FAMILY_CHOROMON
 .if P_FAMILY_NYOKIMON == TRUE
 	cry Cry_Nyokimon
-	cry Cry_Fearow
+	cry Cry_Pabumon
 .endif @ P_FAMILY_NYOKIMON
 .if P_FAMILY_EKANS == TRUE
 	cry Cry_Ekans
@@ -2478,7 +2478,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_CHOROMON
 .if P_FAMILY_NYOKIMON == TRUE
 	cry_reverse Cry_Nyokimon
-	cry_reverse Cry_Fearow
+	cry_reverse Cry_Pabumon
 .endif @ P_FAMILY_NYOKIMON
 .if P_FAMILY_EKANS == TRUE
 	cry_reverse Cry_Ekans

@@ -293,7 +293,7 @@ static const union AnimCmd sAnim_Nyokimon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Fearow_1[] =
+static const union AnimCmd sAnim_Pabumon_1[] =
 {
     ANIMCMD_FRAME(1, 7),
     ANIMCMD_FRAME(0, 7),
@@ -10221,7 +10221,7 @@ SINGLE_ANIMATION(MokumonAlolan);
 #endif //P_FAMILY_CHOROMON
 #if P_FAMILY_NYOKIMON
 SINGLE_ANIMATION(Nyokimon);
-SINGLE_ANIMATION(Fearow);
+SINGLE_ANIMATION(Pabumon);
 #endif //P_FAMILY_NYOKIMON
 #if P_FAMILY_EKANS
 SINGLE_ANIMATION(Ekans);
