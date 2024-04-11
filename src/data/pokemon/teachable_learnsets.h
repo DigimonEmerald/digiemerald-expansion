@@ -5069,8 +5069,8 @@ static const u16 sWanyamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_VIXIMON
 
-#if P_FAMILY_VOLTORB
-static const u16 sVoltorbTeachableLearnset[] = {
+#if P_FAMILY_XIAOMON
+static const u16 sXiaomonTeachableLearnset[] = {
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
     MOVE_FLASH,
@@ -5128,7 +5128,7 @@ static const u16 sElectrodeTeachableLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const u16 sVoltorbHisuianTeachableLearnset[] = {
+static const u16 sXiaomonHisuianTeachableLearnset[] = {
     MOVE_BULLET_SEED,
     MOVE_FACADE,
     MOVE_GIGA_DRAIN,
@@ -5175,7 +5175,7 @@ static const u16 sElectrodeHisuianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_VOLTORB
+#endif //P_FAMILY_XIAOMON
 
 #if P_FAMILY_EXEGGCUTE
 static const u16 sExeggcuteTeachableLearnset[] = {

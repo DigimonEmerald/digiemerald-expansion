@@ -1590,14 +1590,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_VIXIMON
 
-#if P_FAMILY_VOLTORB
-    const u32 gMonFrontPic_Voltorb[] = INCBIN_U32("graphics/pokemon/voltorb/anim_front.4bpp.lz");
-    const u32 gMonPalette_Voltorb[] = INCBIN_U32("graphics/pokemon/voltorb/normal.gbapal.lz");
-    const u32 gMonBackPic_Voltorb[] = INCBIN_U32("graphics/pokemon/voltorb/back.4bpp.lz");
-    const u32 gMonShinyPalette_Voltorb[] = INCBIN_U32("graphics/pokemon/voltorb/shiny.gbapal.lz");
-    const u8 gMonIcon_Voltorb[] = INCBIN_U8("graphics/pokemon/voltorb/icon.4bpp");
+#if P_FAMILY_XIAOMON
+    const u32 gMonFrontPic_Xiaomon[] = INCBIN_U32("graphics/pokemon/xiaomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Xiaomon[] = INCBIN_U32("graphics/pokemon/xiaomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Xiaomon[] = INCBIN_U32("graphics/pokemon/xiaomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Xiaomon[] = INCBIN_U32("graphics/pokemon/xiaomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Xiaomon[] = INCBIN_U8("graphics/pokemon/xiaomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Voltorb[] = INCBIN_U8("graphics/pokemon/voltorb/footprint.1bpp");
+    const u8 gMonFootprint_Xiaomon[] = INCBIN_U8("graphics/pokemon/xiaomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Electrode[] = INCBIN_U32("graphics/pokemon/electrode/anim_front.4bpp.lz");
@@ -1610,11 +1610,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
 #if P_HISUIAN_FORMS
-    const u32 gMonFrontPic_VoltorbHisuian[] = INCBIN_U32("graphics/pokemon/voltorb/hisuian/front.4bpp.lz");
-    const u32 gMonPalette_VoltorbHisuian[] = INCBIN_U32("graphics/pokemon/voltorb/hisuian/normal.gbapal.lz");
-    const u32 gMonBackPic_VoltorbHisuian[] = INCBIN_U32("graphics/pokemon/voltorb/hisuian/back.4bpp.lz");
-    const u32 gMonShinyPalette_VoltorbHisuian[] = INCBIN_U32("graphics/pokemon/voltorb/hisuian/shiny.gbapal.lz");
-    const u8 gMonIcon_VoltorbHisuian[] = INCBIN_U8("graphics/pokemon/voltorb/hisuian/icon.4bpp");
+    const u32 gMonFrontPic_XiaomonHisuian[] = INCBIN_U32("graphics/pokemon/xiaomon/hisuian/front.4bpp.lz");
+    const u32 gMonPalette_XiaomonHisuian[] = INCBIN_U32("graphics/pokemon/xiaomon/hisuian/normal.gbapal.lz");
+    const u32 gMonBackPic_XiaomonHisuian[] = INCBIN_U32("graphics/pokemon/xiaomon/hisuian/back.4bpp.lz");
+    const u32 gMonShinyPalette_XiaomonHisuian[] = INCBIN_U32("graphics/pokemon/xiaomon/hisuian/shiny.gbapal.lz");
+    const u8 gMonIcon_XiaomonHisuian[] = INCBIN_U8("graphics/pokemon/xiaomon/hisuian/icon.4bpp");
 
     const u32 gMonFrontPic_ElectrodeHisuian[] = INCBIN_U32("graphics/pokemon/electrode/hisuian/front.4bpp.lz");
     const u32 gMonPalette_ElectrodeHisuian[] = INCBIN_U32("graphics/pokemon/electrode/hisuian/normal.gbapal.lz");
@@ -1622,7 +1622,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_ElectrodeHisuian[] = INCBIN_U32("graphics/pokemon/electrode/hisuian/shiny.gbapal.lz");
     const u8 gMonIcon_ElectrodeHisuian[] = INCBIN_U8("graphics/pokemon/electrode/hisuian/icon.4bpp");
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_VOLTORB
+#endif //P_FAMILY_XIAOMON
 
 #if P_FAMILY_EXEGGCUTE
     const u32 gMonFrontPic_Exeggcute[] = INCBIN_U32("graphics/pokemon/exeggcute/anim_front.4bpp.lz");

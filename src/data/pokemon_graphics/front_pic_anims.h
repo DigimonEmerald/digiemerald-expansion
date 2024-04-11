@@ -1422,8 +1422,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(WanyamonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_VIXIMON
 
-#if P_FAMILY_VOLTORB
-static const union AnimCmd sAnim_Voltorb_1[] =
+#if P_FAMILY_XIAOMON
+static const union AnimCmd sAnim_Xiaomon_1[] =
 {
     ANIMCMD_FRAME(0, 4),
     ANIMCMD_FRAME(1, 25),
@@ -1443,10 +1443,10 @@ static const union AnimCmd sAnim_Electrode_1[] =
 };
 
 #if P_HISUIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(VoltorbHisuian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(XiaomonHisuian);
 PLACEHOLDER_ANIM_SINGLE_FRAME(ElectrodeHisuian);
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_VOLTORB
+#endif //P_FAMILY_XIAOMON
 
 #if P_FAMILY_EXEGGCUTE
 static const union AnimCmd sAnim_Exeggcute_1[] =
@@ -10495,14 +10495,14 @@ SINGLE_ANIMATION(Wanyamon);
 SINGLE_ANIMATION(WanyamonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_VIXIMON
-#if P_FAMILY_VOLTORB
-SINGLE_ANIMATION(Voltorb);
+#if P_FAMILY_XIAOMON
+SINGLE_ANIMATION(Xiaomon);
 SINGLE_ANIMATION(Electrode);
 #if P_HISUIAN_FORMS
-SINGLE_ANIMATION(VoltorbHisuian);
+SINGLE_ANIMATION(XiaomonHisuian);
 SINGLE_ANIMATION(ElectrodeHisuian);
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_VOLTORB
+#endif //P_FAMILY_XIAOMON
 #if P_FAMILY_EXEGGCUTE
 SINGLE_ANIMATION(Exeggcute);
 SINGLE_ANIMATION(Exeggutor);

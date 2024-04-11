@@ -101,7 +101,7 @@
 #define SPECIES_UPAMON                                   97
 #define SPECIES_VIXIMON                                  98
 #define SPECIES_WANYAMON                                 99
-#define SPECIES_VOLTORB                                 100
+#define SPECIES_XIAOMON                                 100
 #define SPECIES_ELECTRODE                               101
 #define SPECIES_EXEGGCUTE                               102
 #define SPECIES_EXEGGUTOR                               103
@@ -1056,7 +1056,7 @@
 //Hisuian Forms
 #define SPECIES_FRIMON_HISUIAN                       993
 #define SPECIES_GIGIMON_HISUIAN                        994
-#define SPECIES_VOLTORB_HISUIAN                         995
+#define SPECIES_XIAOMON_HISUIAN                         995
 #define SPECIES_ELECTRODE_HISUIAN                       996
 #define SPECIES_TYPHLOSION_HISUIAN                      997
 #define SPECIES_QWILFISH_HISUIAN                        998

@@ -2521,8 +2521,8 @@ static const struct LevelUpMove sWanyamonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_VIXIMON
 
-#if P_FAMILY_VOLTORB
-static const struct LevelUpMove sVoltorbLevelUpLearnset[] = {
+#if P_FAMILY_XIAOMON
+static const struct LevelUpMove sXiaomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CHARGE),
     LEVEL_UP_MOVE( 5, MOVE_TACKLE),
     LEVEL_UP_MOVE( 8, MOVE_SONIC_BOOM),
@@ -2562,7 +2562,7 @@ static const struct LevelUpMove sElectrodeLevelUpLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const struct LevelUpMove sVoltorbHisuianLevelUpLearnset[] = {
+static const struct LevelUpMove sXiaomonHisuianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
     LEVEL_UP_MOVE( 5, MOVE_TACKLE),
     LEVEL_UP_MOVE( 9, MOVE_THUNDER_WAVE),
@@ -2587,7 +2587,7 @@ static const struct LevelUpMove sElectrodeHisuianLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_VOLTORB
+#endif //P_FAMILY_XIAOMON
 
 #if P_FAMILY_EXEGGCUTE
 static const struct LevelUpMove sExeggcuteLevelUpLearnset[] = {

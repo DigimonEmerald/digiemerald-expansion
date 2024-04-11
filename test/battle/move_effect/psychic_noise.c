@@ -30,12 +30,12 @@ SINGLE_BATTLE_TEST("Psychic Noise is blocked by Soundproof")
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_VOLTORB) { HP(1); Ability(ABILITY_SOUNDPROOF); }
+        OPPONENT(SPECIES_XIAOMON) { HP(1); Ability(ABILITY_SOUNDPROOF); }
     } WHEN {
         TURN { MOVE(player, MOVE_PSYCHIC_NOISE); MOVE(opponent, MOVE_RECOVER); }
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_SOUNDPROOF);
-        MESSAGE("Foe Voltorb's Soundproof blocks PsychicNoise!");
+        MESSAGE("Foe Xiaomon's Soundproof blocks PsychicNoise!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_RECOVER, opponent);
     }
 }

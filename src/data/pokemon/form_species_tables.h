@@ -296,10 +296,10 @@ static const u16 sWanyamonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_VIXIMON
 
-#if P_FAMILY_VOLTORB
-static const u16 sVoltorbFormSpeciesIdTable[] = {
-    SPECIES_VOLTORB,
-    SPECIES_VOLTORB_HISUIAN,
+#if P_FAMILY_XIAOMON
+static const u16 sXiaomonFormSpeciesIdTable[] = {
+    SPECIES_XIAOMON,
+    SPECIES_XIAOMON_HISUIAN,
     FORM_SPECIES_END,
 };
 
@@ -308,7 +308,7 @@ static const u16 sElectrodeFormSpeciesIdTable[] = {
     SPECIES_ELECTRODE_HISUIAN,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_VOLTORB
+#endif //P_FAMILY_XIAOMON
 
 #if P_FAMILY_EXEGGCUTE
 static const u16 sExeggutorFormSpeciesIdTable[] = {

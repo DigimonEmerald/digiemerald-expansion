@@ -9863,7 +9863,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_VIXIMON
 
-#if P_FAMILY_VOLTORB
+#if P_FAMILY_XIAOMON
 #if P_UPDATED_EXP_YIELDS >= GEN_7
     #define ELECTRODE_EXP_YIELD 172
 #elif P_UPDATED_EXP_YIELDS >= GEN_5
@@ -9872,7 +9872,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     #define ELECTRODE_EXP_YIELD 150
 #endif
 
-    [SPECIES_VOLTORB] =
+    [SPECIES_XIAOMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 30,
@@ -9891,9 +9891,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_SOUNDPROOF, ABILITY_STATIC, ABILITY_AFTERMATH },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Voltorb"),
-        .cryId = CRY_VOLTORB,
-        .natDexNum = NATIONAL_DEX_VOLTORB,
+        .speciesName = _("Xiaomon"),
+        .cryId = CRY_XIAOMON,
+        .natDexNum = NATIONAL_DEX_XIAOMON,
         .categoryName = _("Ball"),
         .height = 5,
         .weight = 104,
@@ -9906,23 +9906,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = -8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Voltorb,
+        .frontPic = gMonFrontPic_Xiaomon,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = 15,
-        .frontAnimFrames = sAnims_Voltorb,
+        .frontAnimFrames = sAnims_Xiaomon,
         .frontAnimId = ANIM_SWING_CONCAVE,
-        .backPic = gMonBackPic_Voltorb,
+        .backPic = gMonBackPic_Xiaomon,
         .backPicSize = MON_COORDS_SIZE(48, 40),
         .backPicYOffset = 14,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Voltorb,
-        .shinyPalette = gMonShinyPalette_Voltorb,
-        .iconSprite = gMonIcon_Voltorb,
+        .palette = gMonPalette_Xiaomon,
+        .shinyPalette = gMonShinyPalette_Xiaomon,
+        .iconSprite = gMonIcon_Xiaomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Voltorb)
-        .levelUpLearnset = sVoltorbLevelUpLearnset,
-        .teachableLearnset = sVoltorbTeachableLearnset,
-        .formSpeciesIdTable = sVoltorbFormSpeciesIdTable,
+        FOOTPRINT(Xiaomon)
+        .levelUpLearnset = sXiaomonLevelUpLearnset,
+        .teachableLearnset = sXiaomonTeachableLearnset,
+        .formSpeciesIdTable = sXiaomonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ELECTRODE}),
     },
 
@@ -9980,7 +9980,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_HISUIAN_FORMS
-    [SPECIES_VOLTORB_HISUIAN] =
+    [SPECIES_XIAOMON_HISUIAN] =
     {
         .baseHP        = 40,
         .baseAttack    = 30,
@@ -9999,9 +9999,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_SOUNDPROOF, ABILITY_STATIC, ABILITY_AFTERMATH },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Voltorb"),
-        .cryId = CRY_VOLTORB,
-        .natDexNum = NATIONAL_DEX_VOLTORB,
+        .speciesName = _("Xiaomon"),
+        .cryId = CRY_XIAOMON,
+        .natDexNum = NATIONAL_DEX_XIAOMON,
         .categoryName = _("Sphere"),
         .height = 5,
         .weight = 130,
@@ -10014,24 +10014,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = -8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_VoltorbHisuian,
+        .frontPic = gMonFrontPic_XiaomonHisuian,
         .frontPicSize = MON_COORDS_SIZE(32, 32),
         .frontPicYOffset = 17,
-        .frontAnimFrames = sAnims_VoltorbHisuian,
+        .frontAnimFrames = sAnims_XiaomonHisuian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_VoltorbHisuian,
+        .backPic = gMonBackPic_XiaomonHisuian,
         .backPicSize = MON_COORDS_SIZE(48, 32),
         .backPicYOffset = 10,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_VoltorbHisuian,
-        .shinyPalette = gMonShinyPalette_VoltorbHisuian,
-        .iconSprite = gMonIcon_VoltorbHisuian,
+        .palette = gMonPalette_XiaomonHisuian,
+        .shinyPalette = gMonShinyPalette_XiaomonHisuian,
+        .iconSprite = gMonIcon_XiaomonHisuian,
         .iconPalIndex = 0,
-        FOOTPRINT(Voltorb)
+        FOOTPRINT(Xiaomon)
         .isHisuianForm = TRUE,
-        .levelUpLearnset = sVoltorbHisuianLevelUpLearnset,
-        .teachableLearnset = sVoltorbHisuianTeachableLearnset,
-        .formSpeciesIdTable = sVoltorbFormSpeciesIdTable,
+        .levelUpLearnset = sXiaomonHisuianLevelUpLearnset,
+        .teachableLearnset = sXiaomonHisuianTeachableLearnset,
+        .formSpeciesIdTable = sXiaomonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_ELECTRODE_HISUIAN}),
     },
 
@@ -10089,7 +10089,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sElectrodeFormSpeciesIdTable,
     },
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_VOLTORB
+#endif //P_FAMILY_XIAOMON
 
 #if P_FAMILY_EXEGGCUTE
     [SPECIES_EXEGGCUTE] =

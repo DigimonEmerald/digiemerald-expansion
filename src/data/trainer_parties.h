@@ -2190,7 +2190,7 @@ static const struct TrainerMon sParty_Kirk[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 17,
-    .species = SPECIES_VOLTORB,
+    .species = SPECIES_XIAOMON,
     .moves = {MOVE_CHARGE, MOVE_SHOCK_WAVE, MOVE_SCREECH, MOVE_NONE}
     }
 };
@@ -2217,7 +2217,7 @@ static const struct TrainerMon sParty_Shawn[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 17,
-    .species = SPECIES_VOLTORB,
+    .species = SPECIES_XIAOMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -3256,7 +3256,7 @@ static const struct TrainerMon sParty_Wattson1[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 20,
-    .species = SPECIES_VOLTORB,
+    .species = SPECIES_XIAOMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_ROLLOUT, MOVE_SPARK, MOVE_SELF_DESTRUCT, MOVE_SHOCK_WAVE}
     },
@@ -4509,12 +4509,12 @@ static const struct TrainerMon sParty_Jacob[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 6,
-    .species = SPECIES_VOLTORB,
+    .species = SPECIES_XIAOMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 6,
-    .species = SPECIES_VOLTORB,
+    .species = SPECIES_XIAOMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -4593,7 +4593,7 @@ static const struct TrainerMon sParty_Jasmine[] = {
     },
     {
     .lvl = 6,
-    .species = SPECIES_VOLTORB,
+    .species = SPECIES_XIAOMON,
     }
 };
 
@@ -8956,7 +8956,7 @@ static const struct TrainerMon sParty_Joseph[] = {
     },
     {
     .lvl = 14,
-    .species = SPECIES_VOLTORB,
+    .species = SPECIES_XIAOMON,
     }
 };
 
@@ -8971,7 +8971,7 @@ static const struct TrainerMon sParty_Marcos[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 15,
-    .species = SPECIES_VOLTORB,
+    .species = SPECIES_XIAOMON,
     }
 };
 

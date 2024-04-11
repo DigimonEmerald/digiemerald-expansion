@@ -62,7 +62,7 @@ SINGLE_BATTLE_TEST("Damp prevents damage from aftermath")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].makesContact);
         PLAYER(SPECIES_ARGOMON_IT) { Ability(ABILITY_DAMP); }
-        OPPONENT(SPECIES_VOLTORB) { Ability(ABILITY_AFTERMATH); HP(1); }
+        OPPONENT(SPECIES_XIAOMON) { Ability(ABILITY_AFTERMATH); HP(1); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); SEND_OUT(opponent, 1); }

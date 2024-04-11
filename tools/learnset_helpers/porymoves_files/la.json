@@ -2096,7 +2096,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "VOLTORB": {
+  "XIAOMON": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -17847,7 +17847,7 @@
       "MOVE_WILD_CHARGE"
     ]
   },
-  "VOLTORB_HISUIAN": {
+  "XIAOMON_HISUIAN": {
     "LevelMoves": [
       {
         "Level": 1,

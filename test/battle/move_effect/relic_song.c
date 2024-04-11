@@ -27,12 +27,12 @@ SINGLE_BATTLE_TEST("Relic Song is prevented by Soundproof")
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_VOLTORB) { Ability(ABILITY_SOUNDPROOF); }
+        OPPONENT(SPECIES_XIAOMON) { Ability(ABILITY_SOUNDPROOF); }
     } WHEN {
         TURN { MOVE(player, MOVE_RELIC_SONG); }
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_SOUNDPROOF);
-        MESSAGE("Foe Voltorb's Soundproof blocks Relic Song!");
+        MESSAGE("Foe Xiaomon's Soundproof blocks Relic Song!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_RELIC_SONG, player);
             HP_BAR(opponent);

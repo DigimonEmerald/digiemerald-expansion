@@ -1003,15 +1003,15 @@ Cry_Wanyamon::
 	.incbin "sound/direct_sound_samples/cries/wanyamon.bin"
 .endif @ P_FAMILY_VIXIMON
 
-.if P_FAMILY_VOLTORB == TRUE
+.if P_FAMILY_XIAOMON == TRUE
 	.align 2
-Cry_Voltorb::
-	.incbin "sound/direct_sound_samples/cries/voltorb.bin"
+Cry_Xiaomon::
+	.incbin "sound/direct_sound_samples/cries/xiaomon.bin"
 
 	.align 2
 Cry_Electrode::
 	.incbin "sound/direct_sound_samples/cries/electrode.bin"
-.endif @ P_FAMILY_VOLTORB
+.endif @ P_FAMILY_XIAOMON
 
 .if P_FAMILY_EXEGGCUTE == TRUE
 	.align 2

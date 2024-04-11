@@ -250,10 +250,10 @@ gCryTable::
 	cry Cry_Viximon
 	cry Cry_Wanyamon
 .endif @ P_FAMILY_VIXIMON
-.if P_FAMILY_VOLTORB == TRUE
-	cry Cry_Voltorb
+.if P_FAMILY_XIAOMON == TRUE
+	cry Cry_Xiaomon
 	cry Cry_Electrode
-.endif @ P_FAMILY_VOLTORB
+.endif @ P_FAMILY_XIAOMON
 .if P_FAMILY_EXEGGCUTE == TRUE
 	cry Cry_Exeggcute
 	cry Cry_Exeggutor
@@ -2676,10 +2676,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Viximon
 	cry_reverse Cry_Wanyamon
 .endif @ P_FAMILY_VIXIMON
-.if P_FAMILY_VOLTORB == TRUE
-	cry_reverse Cry_Voltorb
+.if P_FAMILY_XIAOMON == TRUE
+	cry_reverse Cry_Xiaomon
 	cry_reverse Cry_Electrode
-.endif @ P_FAMILY_VOLTORB
+.endif @ P_FAMILY_XIAOMON
 .if P_FAMILY_EXEGGCUTE == TRUE
 	cry_reverse Cry_Exeggcute
 	cry_reverse Cry_Exeggutor
