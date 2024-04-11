@@ -250,8 +250,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(LeafmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_KETOMON
 
-#if P_FAMILY_RATTATA
-static const union AnimCmd sAnim_Rattata_1[] =
+#if P_FAMILY_CHOROMON
+static const union AnimCmd sAnim_Choromon_1[] =
 {
     ANIMCMD_FRAME(1, 11),
     ANIMCMD_FRAME(0, 11),
@@ -278,10 +278,10 @@ static const union AnimCmd sAnim_Raticate_1[] =
 };
 
 #if P_ALOLAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(RattataAlolan);
+PLACEHOLDER_ANIM_SINGLE_FRAME(ChoromonAlolan);
 PLACEHOLDER_ANIM_SINGLE_FRAME(RaticateAlolan);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_RATTATA
+#endif //P_FAMILY_CHOROMON
 
 #if P_FAMILY_SPEAROW
 static const union AnimCmd sAnim_Spearow_1[] =
@@ -10211,14 +10211,14 @@ SINGLE_ANIMATION(Leafmon);
 SINGLE_ANIMATION(LeafmonMega);
 #endif
 #endif //P_FAMILY_KETOMON
-#if P_FAMILY_RATTATA
-SINGLE_ANIMATION(Rattata);
+#if P_FAMILY_CHOROMON
+SINGLE_ANIMATION(Choromon);
 SINGLE_ANIMATION(Raticate);
 #if P_ALOLAN_FORMS
-SINGLE_ANIMATION(RattataAlolan);
+SINGLE_ANIMATION(ChoromonAlolan);
 SINGLE_ANIMATION(RaticateAlolan);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_RATTATA
+#endif //P_FAMILY_CHOROMON
 #if P_FAMILY_SPEAROW
 SINGLE_ANIMATION(Spearow);
 SINGLE_ANIMATION(Fearow);

@@ -504,15 +504,15 @@ Cry_LeafmonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_KETOMON
 
-.if P_FAMILY_RATTATA == TRUE
+.if P_FAMILY_CHOROMON == TRUE
 	.align 2
-Cry_Rattata::
-	.incbin "sound/direct_sound_samples/cries/rattata.bin"
+Cry_Choromon::
+	.incbin "sound/direct_sound_samples/cries/choromon.bin"
 
 	.align 2
 Cry_Raticate::
 	.incbin "sound/direct_sound_samples/cries/raticate.bin"
-.endif @ P_FAMILY_RATTATA
+.endif @ P_FAMILY_CHOROMON
 
 .if P_FAMILY_SPEAROW == TRUE
 	.align 2

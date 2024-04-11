@@ -1624,8 +1624,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif
 #endif //P_FAMILY_KETOMON
 
-#if P_FAMILY_RATTATA
-    [SPECIES_RATTATA] =
+#if P_FAMILY_CHOROMON
+    [SPECIES_CHOROMON] =
     {
         .baseHP        = 30,
         .baseAttack    = 56,
@@ -1644,14 +1644,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_RUN_AWAY, ABILITY_GUTS, ABILITY_HUSTLE },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Rattata"),
-        .cryId = CRY_RATTATA,
-        .natDexNum = NATIONAL_DEX_RATTATA,
+        .speciesName = _("Choromon"),
+        .cryId = CRY_CHOROMON,
+        .natDexNum = NATIONAL_DEX_CHOROMON,
         .categoryName = _("Mouse"),
         .height = 3,
         .weight = 35,
         .description = COMPOUND_STRING(
-            "A Rattata is cautious in the extreme.\n"
+            "A Choromon is cautious in the extreme.\n"
             "Even while it is asleep, it constantly\n"
             "moves its ears and listens for danger.\n"
             "It will make its nest anywhere."),
@@ -1659,27 +1659,27 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 21,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Rattata,
-        .frontPicFemale = gMonFrontPic_RattataF,
+        .frontPic = gMonFrontPic_Choromon,
+        .frontPicFemale = gMonFrontPic_ChoromonF,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicSizeFemale = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Rattata,
+        .frontAnimFrames = sAnims_Choromon,
         .frontAnimId = ANIM_H_JUMPS,
-        .backPic = gMonBackPic_Rattata,
-        .backPicFemale = gMonBackPic_RattataF,
+        .backPic = gMonBackPic_Choromon,
+        .backPicFemale = gMonBackPic_ChoromonF,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Rattata,
-        .shinyPalette = gMonShinyPalette_Rattata,
-        .iconSprite = gMonIcon_Rattata,
+        .palette = gMonPalette_Choromon,
+        .shinyPalette = gMonShinyPalette_Choromon,
+        .iconSprite = gMonIcon_Choromon,
         .iconPalIndex = 2,
-        FOOTPRINT(Rattata)
-        .levelUpLearnset = sRattataLevelUpLearnset,
-        .teachableLearnset = sRattataTeachableLearnset,
-        .formSpeciesIdTable = sRattataFormSpeciesIdTable,
+        FOOTPRINT(Choromon)
+        .levelUpLearnset = sChoromonLevelUpLearnset,
+        .teachableLearnset = sChoromonTeachableLearnset,
+        .formSpeciesIdTable = sChoromonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_RATICATE}),
     },
 
@@ -1741,7 +1741,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_ALOLAN_FORMS
-    [SPECIES_RATTATA_ALOLAN] =
+    [SPECIES_CHOROMON_ALOLAN] =
     {
         .baseHP        = 30,
         .baseAttack    = 56,
@@ -1761,9 +1761,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_GLUTTONY, ABILITY_HUSTLE, ABILITY_THICK_FAT },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Rattata"),
-        .cryId = CRY_RATTATA,
-        .natDexNum = NATIONAL_DEX_RATTATA,
+        .speciesName = _("Choromon"),
+        .cryId = CRY_CHOROMON,
+        .natDexNum = NATIONAL_DEX_CHOROMON,
         .categoryName = _("Mouse"),
         .height = 3,
         .weight = 38,
@@ -1776,24 +1776,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 21,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_RattataAlolan,
+        .frontPic = gMonFrontPic_ChoromonAlolan,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_RattataAlolan,
+        .frontAnimFrames = sAnims_ChoromonAlolan,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_RattataAlolan,
+        .backPic = gMonBackPic_ChoromonAlolan,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_RattataAlolan,
-        .shinyPalette = gMonShinyPalette_RattataAlolan,
-        .iconSprite = gMonIcon_RattataAlolan,
+        .palette = gMonPalette_ChoromonAlolan,
+        .shinyPalette = gMonShinyPalette_ChoromonAlolan,
+        .iconSprite = gMonIcon_ChoromonAlolan,
         .iconPalIndex = 2,
-        FOOTPRINT(Rattata)
+        FOOTPRINT(Choromon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sRattataAlolanLevelUpLearnset,
-        .teachableLearnset = sRattataAlolanTeachableLearnset,
-        .formSpeciesIdTable = sRattataFormSpeciesIdTable,
+        .levelUpLearnset = sChoromonAlolanLevelUpLearnset,
+        .teachableLearnset = sChoromonAlolanTeachableLearnset,
+        .formSpeciesIdTable = sChoromonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL_NIGHT, 20, SPECIES_RATICATE_ALOLAN},
                                 {EVO_NONE, 0, SPECIES_RATICATE_ALOLAN_TOTEM}),
     },
@@ -1901,7 +1901,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sRaticateFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_RATTATA
+#endif //P_FAMILY_CHOROMON
 
 #if P_FAMILY_SPEAROW
     [SPECIES_SPEAROW] =

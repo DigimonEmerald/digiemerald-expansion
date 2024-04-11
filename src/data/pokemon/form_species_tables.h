@@ -50,10 +50,10 @@ static const u16 sLeafmonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_KETOMON
 
-#if P_FAMILY_RATTATA
-static const u16 sRattataFormSpeciesIdTable[] = {
-    SPECIES_RATTATA,
-    SPECIES_RATTATA_ALOLAN,
+#if P_FAMILY_CHOROMON
+static const u16 sChoromonFormSpeciesIdTable[] = {
+    SPECIES_CHOROMON,
+    SPECIES_CHOROMON_ALOLAN,
     FORM_SPECIES_END,
 };
 
@@ -63,7 +63,7 @@ static const u16 sRaticateFormSpeciesIdTable[] = {
     SPECIES_RATICATE_ALOLAN_TOTEM,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_RATTATA
+#endif //P_FAMILY_CHOROMON
 
 #if P_FAMILY_PIKACHU
 #if P_GEN_2_CROSS_EVOS

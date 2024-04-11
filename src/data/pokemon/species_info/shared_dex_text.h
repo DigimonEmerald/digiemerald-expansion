@@ -1,6 +1,6 @@
 // Gen 1 families
 const u8 gRaticateAlolanPokedexText[] = _(
-    "It forms a group of Rattata, which it \n"
+    "It forms a group of Choromon, which it \n"
     "assumes command of. Each group\n"
     "has its own territory, and disputes\n"
     "over food happen often.");

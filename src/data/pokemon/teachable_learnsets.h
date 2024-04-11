@@ -648,8 +648,8 @@ static const u16 sLeafmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_KETOMON
 
-#if P_FAMILY_RATTATA
-static const u16 sRattataTeachableLearnset[] = {
+#if P_FAMILY_CHOROMON
+static const u16 sChoromonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CUT,
@@ -728,7 +728,7 @@ static const u16 sRaticateTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sRattataAlolanTeachableLearnset[] = {
+static const u16 sChoromonAlolanTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIG,
@@ -790,7 +790,7 @@ static const u16 sRaticateAlolanTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_RATTATA
+#endif //P_FAMILY_CHOROMON
 
 #if P_FAMILY_SPEAROW
 static const u16 sSpearowTeachableLearnset[] = {

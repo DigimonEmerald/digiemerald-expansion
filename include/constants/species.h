@@ -20,7 +20,7 @@
 #define SPECIES_KETOMON                                  16
 #define SPECIES_KURAMON                               17
 #define SPECIES_LEAFMON                                 18
-#define SPECIES_RATTATA                                 19
+#define SPECIES_CHOROMON                                 19
 #define SPECIES_RATICATE                                20
 #define SPECIES_SPEAROW                                 21
 #define SPECIES_FEAROW                                  22
@@ -1014,7 +1014,7 @@
 #define SPECIES_RAYQUAZA_MEGA                           953
 #define SPECIES_KYOGRE_PRIMAL                           954
 #define SPECIES_GROUDON_PRIMAL                          955
-#define SPECIES_RATTATA_ALOLAN                          956
+#define SPECIES_CHOROMON_ALOLAN                          956
 #define SPECIES_RATICATE_ALOLAN                         957
 #define SPECIES_RAICHU_ALOLAN                           958
 #define SPECIES_SANDSHREW_ALOLAN                        959

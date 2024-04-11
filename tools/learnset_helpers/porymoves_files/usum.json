@@ -1873,7 +1873,7 @@
       "MOVE_UPROAR"
     ]
   },
-  "RATTATA": {
+  "CHOROMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -104427,7 +104427,7 @@
       "MOVE_THUNDER_PUNCH"
     ]
   },
-  "RATTATA_ALOLAN": {
+  "CHOROMON_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 1,

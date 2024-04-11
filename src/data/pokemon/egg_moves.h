@@ -75,8 +75,8 @@ const u16 gEggMoves[] = {
         MOVE_DEFOG),
 #endif //P_FAMILY_KETOMON
 
-#if P_FAMILY_RATTATA
-    egg_moves(RATTATA,
+#if P_FAMILY_CHOROMON
+    egg_moves(CHOROMON,
         MOVE_SCREECH,
         MOVE_FLAME_WHEEL,
         MOVE_FURY_SWIPES,
@@ -90,7 +90,7 @@ const u16 gEggMoves[] = {
         MOVE_FINAL_GAMBIT),
 
 #if P_ALOLAN_FORMS
-    egg_moves(RATTATA_ALOLAN,
+    egg_moves(CHOROMON_ALOLAN,
         MOVE_COUNTER,
         MOVE_FINAL_GAMBIT,
         MOVE_FURY_SWIPES,
@@ -103,7 +103,7 @@ const u16 gEggMoves[] = {
         MOVE_SWITCHEROO,
         MOVE_UPROAR),
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_RATTATA
+#endif //P_FAMILY_CHOROMON
 
 #if P_FAMILY_SPEAROW
     egg_moves(SPEAROW,

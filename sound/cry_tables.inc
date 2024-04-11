@@ -46,10 +46,10 @@ gCryTable::
 	cry Cry_LeafmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_KETOMON
-.if P_FAMILY_RATTATA == TRUE
-	cry Cry_Rattata
+.if P_FAMILY_CHOROMON == TRUE
+	cry Cry_Choromon
 	cry Cry_Raticate
-.endif @ P_FAMILY_RATTATA
+.endif @ P_FAMILY_CHOROMON
 .if P_FAMILY_SPEAROW == TRUE
 	cry Cry_Spearow
 	cry Cry_Fearow
@@ -2472,10 +2472,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_LeafmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_KETOMON
-.if P_FAMILY_RATTATA == TRUE
-	cry_reverse Cry_Rattata
+.if P_FAMILY_CHOROMON == TRUE
+	cry_reverse Cry_Choromon
 	cry_reverse Cry_Raticate
-.endif @ P_FAMILY_RATTATA
+.endif @ P_FAMILY_CHOROMON
 .if P_FAMILY_SPEAROW == TRUE
 	cry_reverse Cry_Spearow
 	cry_reverse Cry_Fearow
