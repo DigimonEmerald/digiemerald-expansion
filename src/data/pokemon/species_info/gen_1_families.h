@@ -3680,7 +3680,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sPururumonTeachableLearnset,
     },
 
-    [SPECIES_NIDORAN_M] =
+    [SPECIES_PUSUMON] =
     {
         .baseHP        = 46,
         .baseAttack    = 57,
@@ -3700,8 +3700,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_POISON_POINT, ABILITY_RIVALRY, ABILITY_HUSTLE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Nidoran♂"),
-        .cryId = CRY_NIDORAN_M,
-        .natDexNum = NATIONAL_DEX_NIDORAN_M,
+        .cryId = CRY_PUSUMON,
+        .natDexNum = NATIONAL_DEX_PUSUMON,
         .categoryName = _("Poison Pin"),
         .height = 5,
         .weight = 90,
@@ -3714,22 +3714,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_NidoranM,
+        .frontPic = gMonFrontPic_Pusumon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_NidoranM,
+        .frontAnimFrames = sAnims_Pusumon,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_NidoranM,
+        .backPic = gMonBackPic_Pusumon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_NidoranM,
-        .shinyPalette = gMonShinyPalette_NidoranM,
-        .iconSprite = gMonIcon_NidoranM,
+        .palette = gMonPalette_Pusumon,
+        .shinyPalette = gMonShinyPalette_Pusumon,
+        .iconSprite = gMonIcon_Pusumon,
         .iconPalIndex = 2,
-        FOOTPRINT(NidoranM)
-        .levelUpLearnset = sNidoranMLevelUpLearnset,
-        .teachableLearnset = sNidoranMTeachableLearnset,
+        FOOTPRINT(Pusumon)
+        .levelUpLearnset = sPusumonLevelUpLearnset,
+        .teachableLearnset = sPusumonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_NIDORINO}),
     },
 

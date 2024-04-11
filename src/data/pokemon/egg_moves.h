@@ -206,7 +206,7 @@ const u16 gEggMoves[] = {
         MOVE_CHIP_AWAY,
         MOVE_VENOM_DRENCH),
 
-    egg_moves(NIDORAN_M,
+    egg_moves(PUSUMON,
         MOVE_COUNTER,
         MOVE_DISABLE,
         MOVE_SUPERSONIC,
