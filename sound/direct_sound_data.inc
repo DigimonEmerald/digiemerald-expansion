@@ -612,7 +612,7 @@ Cry_Sakumon::
 	.incbin "sound/direct_sound_samples/cries/sakumon.bin"
 .endif @ P_FAMILY_RELEMON
 
-.if P_FAMILY_JIGGLYPUFF == TRUE
+.if P_FAMILY_SANDMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
 Cry_Igglybuff::
@@ -620,13 +620,13 @@ Cry_Igglybuff::
 .endif @ P_GEN_2_CROSS_EVOS
 
 	.align 2
-Cry_Jigglypuff::
-	.incbin "sound/direct_sound_samples/cries/jigglypuff.bin"
+Cry_Sandmon::
+	.incbin "sound/direct_sound_samples/cries/sandmon.bin"
 
 	.align 2
 Cry_Wigglytuff::
 	.incbin "sound/direct_sound_samples/cries/wigglytuff.bin"
-.endif @ P_FAMILY_JIGGLYPUFF
+.endif @ P_FAMILY_SANDMON
 
 .if P_FAMILY_ZUBAT == TRUE
 	.align 2

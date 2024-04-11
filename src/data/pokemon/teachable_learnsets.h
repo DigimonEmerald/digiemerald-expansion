@@ -1793,7 +1793,7 @@ static const u16 sSakumonAlolanTeachableLearnset[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_RELEMON
 
-#if P_FAMILY_JIGGLYPUFF
+#if P_FAMILY_SANDMON
 #if P_GEN_2_CROSS_EVOS
 static const u16 sIgglybuffTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -1838,7 +1838,7 @@ static const u16 sIgglybuffTeachableLearnset[] = {
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const u16 sJigglypuffTeachableLearnset[] = {
+static const u16 sSandmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
@@ -1958,7 +1958,7 @@ static const u16 sWigglytuffTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_JIGGLYPUFF
+#endif //P_FAMILY_SANDMON
 
 #if P_FAMILY_ZUBAT
 static const u16 sZubatTeachableLearnset[] = {

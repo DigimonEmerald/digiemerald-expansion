@@ -88,13 +88,13 @@ gCryTable::
 	cry Cry_Relemon
 	cry Cry_Sakumon
 .endif @ P_FAMILY_RELEMON
-.if P_FAMILY_JIGGLYPUFF == TRUE
+.if P_FAMILY_SANDMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Igglybuff
 .endif @ P_GEN_2_CROSS_EVOS
-	cry Cry_Jigglypuff
+	cry Cry_Sandmon
 	cry Cry_Wigglytuff
-.endif @ P_FAMILY_JIGGLYPUFF
+.endif @ P_FAMILY_SANDMON
 .if P_FAMILY_ZUBAT == TRUE
 	cry Cry_Zubat
 	cry Cry_Golbat
@@ -2514,13 +2514,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Relemon
 	cry_reverse Cry_Sakumon
 .endif @ P_FAMILY_RELEMON
-.if P_FAMILY_JIGGLYPUFF == TRUE
+.if P_FAMILY_SANDMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Igglybuff
 .endif @ P_GEN_2_CROSS_EVOS
-	cry_reverse Cry_Jigglypuff
+	cry_reverse Cry_Sandmon
 	cry_reverse Cry_Wigglytuff
-.endif @ P_FAMILY_JIGGLYPUFF
+.endif @ P_FAMILY_SANDMON
 .if P_FAMILY_ZUBAT == TRUE
 	cry_reverse Cry_Zubat
 	cry_reverse Cry_Golbat

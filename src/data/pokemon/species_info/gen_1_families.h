@@ -4256,11 +4256,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_RELEMON
 
-#if P_FAMILY_JIGGLYPUFF
+#if P_FAMILY_SANDMON
 #if P_UPDATED_TYPES >= GEN_6
-    #define JIGGLYPUFF_FAMILY_TYPES { TYPE_NORMAL, TYPE_FAIRY}
+    #define SANDMON_FAMILY_TYPES { TYPE_NORMAL, TYPE_FAIRY}
 #else
-    #define JIGGLYPUFF_FAMILY_TYPES { TYPE_NORMAL, TYPE_NORMAL}
+    #define SANDMON_FAMILY_TYPES { TYPE_NORMAL, TYPE_NORMAL}
 #endif
 
 #if P_GEN_2_CROSS_EVOS
@@ -4272,7 +4272,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 15,
         .baseSpAttack  = 40,
         .baseSpDefense = 20,
-        .types = JIGGLYPUFF_FAMILY_TYPES,
+        .types = SANDMON_FAMILY_TYPES,
         .catchRate = 170,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 42 : 39,
         .evYield_HP = 1,
@@ -4315,11 +4315,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Igglybuff)
         .levelUpLearnset = sIgglybuffLevelUpLearnset,
         .teachableLearnset = sIgglybuffTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_JIGGLYPUFF}),
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_SANDMON}),
     },
 #endif //P_GEN_2_CROSS_EVOS
 
-    [SPECIES_JIGGLYPUFF] =
+    [SPECIES_SANDMON] =
     {
         .baseHP        = 115,
         .baseAttack    = 45,
@@ -4327,7 +4327,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 45,
         .baseSpDefense = 25,
-        .types = JIGGLYPUFF_FAMILY_TYPES,
+        .types = SANDMON_FAMILY_TYPES,
         .catchRate = 170,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 95 : 76,
         .evYield_HP = 2,
@@ -4340,37 +4340,37 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_CUTE_CHARM, ABILITY_COMPETITIVE, ABILITY_FRIEND_GUARD },
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
-        .speciesName = _("Jigglypuff"),
-        .cryId = CRY_JIGGLYPUFF,
-        .natDexNum = NATIONAL_DEX_JIGGLYPUFF,
+        .speciesName = _("Sandmon"),
+        .cryId = CRY_SANDMON,
+        .natDexNum = NATIONAL_DEX_SANDMON,
         .categoryName = _("Balloon"),
         .height = 5,
         .weight = 55,
         .description = COMPOUND_STRING(
             "Nothing can avoid falling asleep hearing a\n"
-            "Jigglypuff's song. The sound waves of its\n"
+            "Sandmon's song. The sound waves of its\n"
             "singing voice match the brain waves of\n"
             "someone in a deep sleep."),
         .pokemonScale = 433,
         .pokemonOffset = 2,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Jigglypuff,
+        .frontPic = gMonFrontPic_Sandmon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Jigglypuff,
+        .frontAnimFrames = sAnims_Sandmon,
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL,
-        .backPic = gMonBackPic_Jigglypuff,
+        .backPic = gMonBackPic_Sandmon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Jigglypuff,
-        .shinyPalette = gMonShinyPalette_Jigglypuff,
-        .iconSprite = gMonIcon_Jigglypuff,
+        .palette = gMonPalette_Sandmon,
+        .shinyPalette = gMonShinyPalette_Sandmon,
+        .iconSprite = gMonIcon_Sandmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Jigglypuff)
-        .levelUpLearnset = sJigglypuffLevelUpLearnset,
-        .teachableLearnset = sJigglypuffTeachableLearnset,
+        FOOTPRINT(Sandmon)
+        .levelUpLearnset = sSandmonLevelUpLearnset,
+        .teachableLearnset = sSandmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_WIGGLYTUFF}),
     },
 
@@ -4382,7 +4382,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 45,
         .baseSpAttack  = P_UPDATED_STATS >= GEN_6 ? 85 : 75,
         .baseSpDefense = 50,
-        .types = JIGGLYPUFF_FAMILY_TYPES,
+        .types = SANDMON_FAMILY_TYPES,
         .catchRate = 50,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 218,
@@ -4435,7 +4435,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sWigglytuffLevelUpLearnset,
         .teachableLearnset = sWigglytuffTeachableLearnset,
     },
-#endif //P_FAMILY_JIGGLYPUFF
+#endif //P_FAMILY_SANDMON
 
 #if P_FAMILY_ZUBAT
     [SPECIES_ZUBAT] =

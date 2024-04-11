@@ -528,7 +528,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(SakumonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_RELEMON
 
-#if P_FAMILY_JIGGLYPUFF
+#if P_FAMILY_SANDMON
 #if P_GEN_2_CROSS_EVOS
 static const union AnimCmd sAnim_Igglybuff_1[] =
 {
@@ -541,7 +541,7 @@ static const union AnimCmd sAnim_Igglybuff_1[] =
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const union AnimCmd sAnim_Jigglypuff_1[] =
+static const union AnimCmd sAnim_Sandmon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -560,7 +560,7 @@ static const union AnimCmd sAnim_Wigglytuff_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_JIGGLYPUFF
+#endif //P_FAMILY_SANDMON
 
 #if P_FAMILY_ZUBAT
 static const union AnimCmd sAnim_Zubat_1[] =
@@ -10290,13 +10290,13 @@ SINGLE_ANIMATION(RelemonAlolan);
 SINGLE_ANIMATION(SakumonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_RELEMON
-#if P_FAMILY_JIGGLYPUFF
+#if P_FAMILY_SANDMON
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Igglybuff);
 #endif //P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Jigglypuff);
+SINGLE_ANIMATION(Sandmon);
 SINGLE_ANIMATION(Wigglytuff);
-#endif //P_FAMILY_JIGGLYPUFF
+#endif //P_FAMILY_SANDMON
 #if P_FAMILY_ZUBAT
 SINGLE_ANIMATION(Zubat);
 SINGLE_ANIMATION(Golbat);

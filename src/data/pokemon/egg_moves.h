@@ -278,7 +278,7 @@ const u16 gEggMoves[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_RELEMON
 
-#if P_FAMILY_JIGGLYPUFF
+#if P_FAMILY_SANDMON
 #if P_GEN_2_CROSS_EVOS
     egg_moves(IGGLYBUFF,
         MOVE_PERISH_SONG,
@@ -295,7 +295,7 @@ const u16 gEggMoves[] = {
         MOVE_MISTY_TERRAIN,
         MOVE_HEAL_PULSE),
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_JIGGLYPUFF
+#endif //P_FAMILY_SANDMON
 
 #if P_FAMILY_ZUBAT
     egg_moves(ZUBAT,

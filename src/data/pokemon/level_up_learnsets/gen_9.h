@@ -934,7 +934,7 @@ static const struct LevelUpMove sSakumonAlolanLevelUpLearnset[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_RELEMON
 
-#if P_FAMILY_JIGGLYPUFF
+#if P_FAMILY_SANDMON
 #if P_GEN_2_CROSS_EVOS
 static const struct LevelUpMove sIgglybuffLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
@@ -949,7 +949,7 @@ static const struct LevelUpMove sIgglybuffLevelUpLearnset[] = {
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const struct LevelUpMove sJigglypuffLevelUpLearnset[] = {
+static const struct LevelUpMove sSandmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_COPYCAT),
     LEVEL_UP_MOVE( 1, MOVE_SWEET_KISS),
@@ -997,7 +997,7 @@ static const struct LevelUpMove sWigglytuffLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 5, MOVE_PLAY_ROUGH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_JIGGLYPUFF
+#endif //P_FAMILY_SANDMON
 
 #if P_FAMILY_ZUBAT
 static const struct LevelUpMove sZubatLevelUpLearnset[] = {

@@ -654,7 +654,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_RELEMON
 
-#if P_FAMILY_JIGGLYPUFF
+#if P_FAMILY_SANDMON
 #if P_GEN_2_CROSS_EVOS
     const u32 gMonFrontPic_Igglybuff[] = INCBIN_U32("graphics/pokemon/igglybuff/anim_front.4bpp.lz");
     const u32 gMonPalette_Igglybuff[] = INCBIN_U32("graphics/pokemon/igglybuff/normal.gbapal.lz");
@@ -666,13 +666,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
 
-    const u32 gMonFrontPic_Jigglypuff[] = INCBIN_U32("graphics/pokemon/jigglypuff/anim_front.4bpp.lz");
-    const u32 gMonPalette_Jigglypuff[] = INCBIN_U32("graphics/pokemon/jigglypuff/normal.gbapal.lz");
-    const u32 gMonBackPic_Jigglypuff[] = INCBIN_U32("graphics/pokemon/jigglypuff/back.4bpp.lz");
-    const u32 gMonShinyPalette_Jigglypuff[] = INCBIN_U32("graphics/pokemon/jigglypuff/shiny.gbapal.lz");
-    const u8 gMonIcon_Jigglypuff[] = INCBIN_U8("graphics/pokemon/jigglypuff/icon.4bpp");
+    const u32 gMonFrontPic_Sandmon[] = INCBIN_U32("graphics/pokemon/sandmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Sandmon[] = INCBIN_U32("graphics/pokemon/sandmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Sandmon[] = INCBIN_U32("graphics/pokemon/sandmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Sandmon[] = INCBIN_U32("graphics/pokemon/sandmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Sandmon[] = INCBIN_U8("graphics/pokemon/sandmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Jigglypuff[] = INCBIN_U8("graphics/pokemon/jigglypuff/footprint.1bpp");
+    const u8 gMonFootprint_Sandmon[] = INCBIN_U8("graphics/pokemon/sandmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Wigglytuff[] = INCBIN_U32("graphics/pokemon/wigglytuff/anim_front.4bpp.lz");
@@ -683,7 +683,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Wigglytuff[] = INCBIN_U8("graphics/pokemon/wigglytuff/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_JIGGLYPUFF
+#endif //P_FAMILY_SANDMON
 
 #if P_FAMILY_ZUBAT
     const u32 gMonFrontPic_Zubat[] = INCBIN_U32("graphics/pokemon/zubat/anim_front.4bpp.lz");
