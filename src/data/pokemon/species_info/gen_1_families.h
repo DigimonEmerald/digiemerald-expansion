@@ -4726,11 +4726,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Zurumon)
         .levelUpLearnset = sZurumonLevelUpLearnset,
         .teachableLearnset = sZurumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_VILEPLUME},
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_ARCADIAMON_IT},
                                 {EVO_ITEM, ITEM_SUN_STONE, SPECIES_BELLOSSOM}),
     },
 
-    [SPECIES_VILEPLUME] =
+    [SPECIES_ARCADIAMON_IT] =
     {
         .baseHP        = 75,
         .baseAttack    = 80,
@@ -4758,41 +4758,41 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_NONE, ABILITY_EFFECT_SPORE },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Vileplume"),
-        .cryId = CRY_VILEPLUME,
-        .natDexNum = NATIONAL_DEX_VILEPLUME,
+        .speciesName = _("Arcadiamon_it"),
+        .cryId = CRY_ARCADIAMON_IT,
+        .natDexNum = NATIONAL_DEX_ARCADIAMON_IT,
         .categoryName = _("Flower"),
         .height = 12,
         .weight = 186,
         .description = COMPOUND_STRING(
             "In seasons when it produces more pollen,\n"
-            "the air around a Vileplume turns yellow\n"
+            "the air around a Arcadiamon_it turns yellow\n"
             "with the powder as it walks. The pollen is\n"
             "highly toxic and causes paralysis."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Vileplume,
-        .frontPicFemale = gMonFrontPic_VileplumeF,
+        .frontPic = gMonFrontPic_Arcadiamon_it,
+        .frontPicFemale = gMonFrontPic_Arcadiamon_itF,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Vileplume,
+        .frontAnimFrames = sAnims_Arcadiamon_it,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Vileplume,
-        .backPicFemale = gMonBackPic_VileplumeF,
+        .backPic = gMonBackPic_Arcadiamon_it,
+        .backPicFemale = gMonBackPic_Arcadiamon_itF,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Vileplume,
-        .shinyPalette = gMonShinyPalette_Vileplume,
-        .iconSprite = gMonIcon_Vileplume,
+        .palette = gMonPalette_Arcadiamon_it,
+        .shinyPalette = gMonShinyPalette_Arcadiamon_it,
+        .iconSprite = gMonIcon_Arcadiamon_it,
         .iconPalIndex = 0,
-        FOOTPRINT(Vileplume)
-        .levelUpLearnset = sVileplumeLevelUpLearnset,
-        .teachableLearnset = sVileplumeTeachableLearnset,
+        FOOTPRINT(Arcadiamon_it)
+        .levelUpLearnset = sArcadiamon_itLevelUpLearnset,
+        .teachableLearnset = sArcadiamon_itTeachableLearnset,
     },
 
 #if P_GEN_2_CROSS_EVOS

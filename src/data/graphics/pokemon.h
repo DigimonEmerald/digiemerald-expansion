@@ -744,17 +744,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_ZurumonF[] = INCBIN_U32("graphics/pokemon/zurumon/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_ZurumonF[] = INCBIN_U32("graphics/pokemon/zurumon/backf.4bpp.lz");
 
-    const u32 gMonFrontPic_Vileplume[] = INCBIN_U32("graphics/pokemon/vileplume/anim_front.4bpp.lz");
-    const u32 gMonPalette_Vileplume[] = INCBIN_U32("graphics/pokemon/vileplume/normal.gbapal.lz");
-    const u32 gMonBackPic_Vileplume[] = INCBIN_U32("graphics/pokemon/vileplume/back.4bpp.lz");
-    const u32 gMonShinyPalette_Vileplume[] = INCBIN_U32("graphics/pokemon/vileplume/shiny.gbapal.lz");
-    const u8 gMonIcon_Vileplume[] = INCBIN_U8("graphics/pokemon/vileplume/icon.4bpp");
+    const u32 gMonFrontPic_Arcadiamon_it[] = INCBIN_U32("graphics/pokemon/arcadiamon_it/anim_front.4bpp.lz");
+    const u32 gMonPalette_Arcadiamon_it[] = INCBIN_U32("graphics/pokemon/arcadiamon_it/normal.gbapal.lz");
+    const u32 gMonBackPic_Arcadiamon_it[] = INCBIN_U32("graphics/pokemon/arcadiamon_it/back.4bpp.lz");
+    const u32 gMonShinyPalette_Arcadiamon_it[] = INCBIN_U32("graphics/pokemon/arcadiamon_it/shiny.gbapal.lz");
+    const u8 gMonIcon_Arcadiamon_it[] = INCBIN_U8("graphics/pokemon/arcadiamon_it/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Vileplume[] = INCBIN_U8("graphics/pokemon/vileplume/footprint.1bpp");
+    const u8 gMonFootprint_Arcadiamon_it[] = INCBIN_U8("graphics/pokemon/arcadiamon_it/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_VileplumeF[] = INCBIN_U32("graphics/pokemon/vileplume/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_VileplumeF[] = INCBIN_U32("graphics/pokemon/vileplume/backf.4bpp.lz");
+    const u32 gMonFrontPic_Arcadiamon_itF[] = INCBIN_U32("graphics/pokemon/arcadiamon_it/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_Arcadiamon_itF[] = INCBIN_U32("graphics/pokemon/arcadiamon_it/backf.4bpp.lz");
 
 #if P_GEN_2_CROSS_EVOS
     const u32 gMonFrontPic_Bellossom[] = INCBIN_U32("graphics/pokemon/bellossom/anim_front.4bpp.lz");

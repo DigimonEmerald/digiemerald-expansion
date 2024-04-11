@@ -105,7 +105,7 @@ gCryTable::
 .if P_FAMILY_ZERIMON == TRUE
 	cry Cry_Zerimon
 	cry Cry_Zurumon
-	cry Cry_Vileplume
+	cry Cry_Arcadiamon_it
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Bellossom
 .endif @ P_GEN_2_CROSS_EVOS
@@ -2531,7 +2531,7 @@ gCryTable_Reverse::
 .if P_FAMILY_ZERIMON == TRUE
 	cry_reverse Cry_Zerimon
 	cry_reverse Cry_Zurumon
-	cry_reverse Cry_Vileplume
+	cry_reverse Cry_Arcadiamon_it
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Bellossom
 .endif @ P_GEN_2_CROSS_EVOS

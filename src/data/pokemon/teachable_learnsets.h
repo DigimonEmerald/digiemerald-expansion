@@ -2099,7 +2099,7 @@ static const u16 sZurumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sVileplumeTeachableLearnset[] = {
+static const u16 sArcadiamon_itTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,
