@@ -6812,19 +6812,19 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Koromon)
         .levelUpLearnset = sKoromonLevelUpLearnset,
         .teachableLearnset = sKoromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_MACHAMP},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_MACHAMP}),
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_KOZENIMON},
+                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_KOZENIMON}),
     },
 
 #if P_UPDATED_EXP_YIELDS >= GEN_8
-    #define MACHAMP_EXP_YIELD 253
+    #define KOZENIMON_EXP_YIELD 253
 #elif P_UPDATED_EXP_YIELDS >= GEN_5
-    #define MACHAMP_EXP_YIELD 227
+    #define KOZENIMON_EXP_YIELD 227
 #else
-    #define MACHAMP_EXP_YIELD 193
+    #define KOZENIMON_EXP_YIELD 193
 #endif
 
-    [SPECIES_MACHAMP] =
+    [SPECIES_KOZENIMON] =
     {
         .baseHP        = 90,
         .baseAttack    = 130,
@@ -6834,7 +6834,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 45,
-        .expYield = MACHAMP_EXP_YIELD,
+        .expYield = KOZENIMON_EXP_YIELD,
         .evYield_Attack = 3,
         .itemRare = ITEM_FOCUS_BAND,
         .genderRatio = PERCENT_FEMALE(25),
@@ -6844,9 +6844,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_GUTS, ABILITY_NO_GUARD, ABILITY_STEADFAST },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Machamp"),
-        .cryId = CRY_MACHAMP,
-        .natDexNum = NATIONAL_DEX_MACHAMP,
+        .speciesName = _("Kozenimon"),
+        .cryId = CRY_KOZENIMON,
+        .natDexNum = NATIONAL_DEX_KOZENIMON,
         .categoryName = _("Superpower"),
         .height = 16,
         .weight = 1300,
@@ -6859,28 +6859,28 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 1,
         .trainerScale = 269,
         .trainerOffset = -1,
-        .frontPic = gMonFrontPic_Machamp,
+        .frontPic = gMonFrontPic_Kozenimon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Machamp,
+        .frontAnimFrames = sAnims_Kozenimon,
         .frontAnimId = ANIM_H_JUMPS,
-        .backPic = gMonBackPic_Machamp,
+        .backPic = gMonBackPic_Kozenimon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Machamp,
-        .shinyPalette = gMonShinyPalette_Machamp,
-        .iconSprite = gMonIcon_Machamp,
+        .palette = gMonPalette_Kozenimon,
+        .shinyPalette = gMonShinyPalette_Kozenimon,
+        .iconSprite = gMonIcon_Kozenimon,
         .iconPalIndex = 0,
-        FOOTPRINT(Machamp)
-        .levelUpLearnset = sMachampLevelUpLearnset,
-        .teachableLearnset = sMachampTeachableLearnset,
-        .formSpeciesIdTable = sMachampFormSpeciesIdTable,
-        .formChangeTable = sMachampFormChangeTable,
+        FOOTPRINT(Kozenimon)
+        .levelUpLearnset = sKozenimonLevelUpLearnset,
+        .teachableLearnset = sKozenimonTeachableLearnset,
+        .formSpeciesIdTable = sKozenimonFormSpeciesIdTable,
+        .formChangeTable = sKozenimonFormChangeTable,
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_MACHAMP_GIGANTAMAX] =
+    [SPECIES_KOZENIMON_GIGANTAMAX] =
     {
         .baseHP        = 90,
         .baseAttack    = 130,
@@ -6890,7 +6890,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 45,
-        .expYield = MACHAMP_EXP_YIELD,
+        .expYield = KOZENIMON_EXP_YIELD,
         .evYield_Attack = 3,
         .itemRare = ITEM_FOCUS_BAND,
         .genderRatio = PERCENT_FEMALE(25),
@@ -6900,9 +6900,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_GUTS, ABILITY_NO_GUARD, ABILITY_STEADFAST },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Machamp"),
-        .cryId = CRY_MACHAMP,
-        .natDexNum = NATIONAL_DEX_MACHAMP,
+        .speciesName = _("Kozenimon"),
+        .cryId = CRY_KOZENIMON,
+        .natDexNum = NATIONAL_DEX_KOZENIMON,
         .categoryName = _("Superpower"),
         .height = 250,
         .weight = 0,
@@ -6915,25 +6915,25 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 1,
         .trainerScale = 269,
         .trainerOffset = -1,
-        .frontPic = gMonFrontPic_MachampGigantamax,
+        .frontPic = gMonFrontPic_KozenimonGigantamax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_MachampGigantamax,
+        .frontAnimFrames = sAnims_KozenimonGigantamax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_MachampGigantamax,
+        .backPic = gMonBackPic_KozenimonGigantamax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_MachampGigantamax,
-        .shinyPalette = gMonShinyPalette_MachampGigantamax,
-        .iconSprite = gMonIcon_MachampGigantamax,
+        .palette = gMonPalette_KozenimonGigantamax,
+        .shinyPalette = gMonShinyPalette_KozenimonGigantamax,
+        .iconSprite = gMonIcon_KozenimonGigantamax,
         .iconPalIndex = 0,
-        FOOTPRINT(Machamp)
+        FOOTPRINT(Kozenimon)
         .isGigantamax = TRUE,
-        .levelUpLearnset = sMachampLevelUpLearnset,
-        .teachableLearnset = sMachampTeachableLearnset,
-        .formSpeciesIdTable = sMachampFormSpeciesIdTable,
-        .formChangeTable = sMachampFormChangeTable,
+        .levelUpLearnset = sKozenimonLevelUpLearnset,
+        .teachableLearnset = sKozenimonTeachableLearnset,
+        .formSpeciesIdTable = sKozenimonFormSpeciesIdTable,
+        .formChangeTable = sKozenimonFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_KOKOMON

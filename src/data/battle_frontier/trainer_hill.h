@@ -4023,7 +4023,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [1] =
                                         {
-                                            .species = SPECIES_MACHAMP,
+                                            .species = SPECIES_KOZENIMON,
                                             .heldItem = ITEM_LEFTOVERS,
                                             .moves = {MOVE_LOW_KICK, MOVE_ROCK_SLIDE, MOVE_FACADE, MOVE_ATTRACT},
                                             .hpEV = 252,
@@ -4038,7 +4038,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x3,
-                                            .nickname = _("MACHAMP"),
+                                            .nickname = _("KOZENIMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [2] =

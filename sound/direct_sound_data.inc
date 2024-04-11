@@ -797,8 +797,8 @@ Cry_Koromon::
 	.incbin "sound/direct_sound_samples/cries/koromon.bin"
 
 	.align 2
-Cry_Machamp::
-	.incbin "sound/direct_sound_samples/cries/machamp.bin"
+Cry_Kozenimon::
+	.incbin "sound/direct_sound_samples/cries/kozenimon.bin"
 .endif @ P_FAMILY_KOKOMON
 
 .if P_FAMILY_BELLSPROUT == TRUE

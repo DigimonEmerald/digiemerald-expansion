@@ -3948,7 +3948,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .description = COMPOUND_STRING(
             "With the hair wrapped around its body\n"
             "helping to enhance its muscles, this\n"
-            "Pokémon can overwhelm even Machamp."),
+            "Pokémon can overwhelm even Kozenimon."),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,

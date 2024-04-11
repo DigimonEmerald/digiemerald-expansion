@@ -69,9 +69,9 @@ static const struct FormChange sKapurimonFormChangeTable[] = {
 #endif //P_FAMILY_HOPMON
 
 #if P_FAMILY_KOKOMON
-static const struct FormChange sMachampFormChangeTable[] =
+static const struct FormChange sKozenimonFormChangeTable[] =
 {
-    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_MACHAMP_GIGANTAMAX},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_KOZENIMON_GIGANTAMAX},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_KOKOMON

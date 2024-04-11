@@ -91,12 +91,12 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon cannot be hit by OHKO moves")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_FISSURE].effect == EFFECT_OHKO);
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_MACHAMP) { Ability(ABILITY_NO_GUARD); }
+        OPPONENT(SPECIES_KOZENIMON) { Ability(ABILITY_NO_GUARD); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE, dynamax: TRUE); MOVE(opponent, MOVE_FISSURE); }
     } SCENE {
         MESSAGE("Wobbuffet used Max Strike!");
-        MESSAGE("Foe Machamp used Fissure!");
+        MESSAGE("Foe Kozenimon used Fissure!");
         MESSAGE("Wobbuffet is unaffected!");
         NONE_OF { HP_BAR(player); }
     }
@@ -1366,7 +1366,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Chi Strike boosts allies' crit chance")
     GIVEN {
         ASSUME(B_CRIT_CHANCE >= GEN_6);
         ASSUME(gMovesInfo[MOVE_G_MAX_CHI_STRIKE].argument == MAX_EFFECT_CRIT_PLUS);
-        PLAYER(SPECIES_MACHAMP) { GigantamaxFactor(TRUE); }
+        PLAYER(SPECIES_KOZENIMON) { GigantamaxFactor(TRUE); }
         PLAYER(SPECIES_KOKOMON);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
@@ -1379,9 +1379,9 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Chi Strike boosts allies' crit chance")
     } SCENE {
         // turn 1 - 3
         for (j = 0; j < 3; ++j) {
-            MESSAGE("Machamp used G-Max Chi Strike!");
+            MESSAGE("Kozenimon used G-Max Chi Strike!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-            MESSAGE("Machamp is getting pumped!");
+            MESSAGE("Kozenimon is getting pumped!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
             MESSAGE("Kokomon is getting pumped!");
         }

@@ -183,9 +183,9 @@ static const u16 sKapurimonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_HOPMON
 
 #if P_FAMILY_KOKOMON
-static const u16 sMachampFormSpeciesIdTable[] = {
-    SPECIES_MACHAMP,
-    SPECIES_MACHAMP_GIGANTAMAX,
+static const u16 sKozenimonFormSpeciesIdTable[] = {
+    SPECIES_KOZENIMON,
+    SPECIES_KOZENIMON_GIGANTAMAX,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_KOKOMON

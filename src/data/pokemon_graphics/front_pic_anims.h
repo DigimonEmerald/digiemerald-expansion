@@ -988,7 +988,7 @@ static const union AnimCmd sAnim_Koromon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Machamp_1[] =
+static const union AnimCmd sAnim_Kozenimon_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 11),
@@ -1001,7 +1001,7 @@ static const union AnimCmd sAnim_Machamp_1[] =
 };
 
 #if P_GIGANTAMAX_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(MachampGigantamax);
+PLACEHOLDER_ANIM_SINGLE_FRAME(KozenimonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_KOKOMON
 
@@ -10381,9 +10381,9 @@ SINGLE_ANIMATION(KapurimonMega);
 #if P_FAMILY_KOKOMON
 SINGLE_ANIMATION(Kokomon);
 SINGLE_ANIMATION(Koromon);
-SINGLE_ANIMATION(Machamp);
+SINGLE_ANIMATION(Kozenimon);
 #if P_GIGANTAMAX_FORMS
-SINGLE_ANIMATION(MachampGigantamax);
+SINGLE_ANIMATION(KozenimonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_KOKOMON
 #if P_FAMILY_BELLSPROUT

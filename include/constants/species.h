@@ -69,7 +69,7 @@
 #define SPECIES_KAPURIMON                                65
 #define SPECIES_KOKOMON                                  66
 #define SPECIES_KOROMON                                 67
-#define SPECIES_MACHAMP                                 68
+#define SPECIES_KOZENIMON                                 68
 #define SPECIES_BELLSPROUT                              69
 #define SPECIES_WEEPINBELL                              70
 #define SPECIES_VICTREEBEL                              71
@@ -1599,7 +1599,7 @@
 #define SPECIES_DOKIMON_GIGANTAMAX                   1492
 #define SPECIES_PETITMON_GIGANTAMAX                      1493
 #define SPECIES_CALUMON_GIGANTAMAX                       1494
-#define SPECIES_MACHAMP_GIGANTAMAX                      1495
+#define SPECIES_KOZENIMON_GIGANTAMAX                      1495
 #define SPECIES_GENGAR_GIGANTAMAX                       1496
 #define SPECIES_KINGLER_GIGANTAMAX                      1497
 #define SPECIES_LAPRAS_GIGANTAMAX                       1498

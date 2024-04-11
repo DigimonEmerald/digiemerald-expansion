@@ -3362,7 +3362,7 @@ static const u16 sKoromonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sMachampTeachableLearnset[] = {
+static const u16 sKozenimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,

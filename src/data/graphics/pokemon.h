@@ -1091,21 +1091,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Koromon[] = INCBIN_U8("graphics/pokemon/koromon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Machamp[] = INCBIN_U32("graphics/pokemon/machamp/anim_front.4bpp.lz");
-    const u32 gMonPalette_Machamp[] = INCBIN_U32("graphics/pokemon/machamp/normal.gbapal.lz");
-    const u32 gMonBackPic_Machamp[] = INCBIN_U32("graphics/pokemon/machamp/back.4bpp.lz");
-    const u32 gMonShinyPalette_Machamp[] = INCBIN_U32("graphics/pokemon/machamp/shiny.gbapal.lz");
-    const u8 gMonIcon_Machamp[] = INCBIN_U8("graphics/pokemon/machamp/icon.4bpp");
+    const u32 gMonFrontPic_Kozenimon[] = INCBIN_U32("graphics/pokemon/kozenimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Kozenimon[] = INCBIN_U32("graphics/pokemon/kozenimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Kozenimon[] = INCBIN_U32("graphics/pokemon/kozenimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Kozenimon[] = INCBIN_U32("graphics/pokemon/kozenimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Kozenimon[] = INCBIN_U8("graphics/pokemon/kozenimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Machamp[] = INCBIN_U8("graphics/pokemon/machamp/footprint.1bpp");
+    const u8 gMonFootprint_Kozenimon[] = INCBIN_U8("graphics/pokemon/kozenimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GIGANTAMAX_FORMS
-    const u32 gMonFrontPic_MachampGigantamax[] = INCBIN_U32("graphics/pokemon/machamp/gigantamax/front.4bpp.lz");
-    const u32 gMonBackPic_MachampGigantamax[] = INCBIN_U32("graphics/pokemon/machamp/gigantamax/back.4bpp.lz");
-    const u32 gMonPalette_MachampGigantamax[] = INCBIN_U32("graphics/pokemon/machamp/gigantamax/normal.gbapal.lz");
-    const u32 gMonShinyPalette_MachampGigantamax[] = INCBIN_U32("graphics/pokemon/machamp/gigantamax/shiny.gbapal.lz");
-    const u8 gMonIcon_MachampGigantamax[] = INCBIN_U8("graphics/pokemon/machamp/gigantamax/icon.4bpp");
+    const u32 gMonFrontPic_KozenimonGigantamax[] = INCBIN_U32("graphics/pokemon/kozenimon/gigantamax/front.4bpp.lz");
+    const u32 gMonBackPic_KozenimonGigantamax[] = INCBIN_U32("graphics/pokemon/kozenimon/gigantamax/back.4bpp.lz");
+    const u32 gMonPalette_KozenimonGigantamax[] = INCBIN_U32("graphics/pokemon/kozenimon/gigantamax/normal.gbapal.lz");
+    const u32 gMonShinyPalette_KozenimonGigantamax[] = INCBIN_U32("graphics/pokemon/kozenimon/gigantamax/shiny.gbapal.lz");
+    const u8 gMonIcon_KozenimonGigantamax[] = INCBIN_U8("graphics/pokemon/kozenimon/gigantamax/icon.4bpp");
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_KOKOMON
 
