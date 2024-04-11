@@ -586,7 +586,7 @@ Cry_Puwamon::
 	.incbin "sound/direct_sound_samples/cries/puwamon.bin"
 .endif @ P_FAMILY_NIDORAN
 
-.if P_FAMILY_CLEFAIRY == TRUE
+.if P_FAMILY_PUYOMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
 Cry_Cleffa::
@@ -594,13 +594,13 @@ Cry_Cleffa::
 .endif @ P_GEN_2_CROSS_EVOS
 
 	.align 2
-Cry_Clefairy::
-	.incbin "sound/direct_sound_samples/cries/clefairy.bin"
+Cry_Puyomon::
+	.incbin "sound/direct_sound_samples/cries/puyomon.bin"
 
 	.align 2
 Cry_Clefable::
 	.incbin "sound/direct_sound_samples/cries/clefable.bin"
-.endif @ P_FAMILY_CLEFAIRY
+.endif @ P_FAMILY_PUYOMON
 
 .if P_FAMILY_VULPIX == TRUE
 	.align 2

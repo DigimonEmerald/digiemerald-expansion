@@ -472,7 +472,7 @@ static const union AnimCmd sAnim_Puwamon_1[] =
 };
 #endif //P_FAMILY_NIDORAN
 
-#if P_FAMILY_CLEFAIRY
+#if P_FAMILY_PUYOMON
 #if P_GEN_2_CROSS_EVOS
 static const union AnimCmd sAnim_Cleffa_1[] =
 {
@@ -484,7 +484,7 @@ static const union AnimCmd sAnim_Cleffa_1[] =
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const union AnimCmd sAnim_Clefairy_1[] =
+static const union AnimCmd sAnim_Puyomon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -499,7 +499,7 @@ static const union AnimCmd sAnim_Clefable_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_CLEFAIRY
+#endif //P_FAMILY_PUYOMON
 
 #if P_FAMILY_VULPIX
 static const union AnimCmd sAnim_Vulpix_1[] =
@@ -10275,13 +10275,13 @@ SINGLE_ANIMATION(Pusumon);
 SINGLE_ANIMATION(Puttimon);
 SINGLE_ANIMATION(Puwamon);
 #endif //P_FAMILY_NIDORAN
-#if P_FAMILY_CLEFAIRY
+#if P_FAMILY_PUYOMON
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Cleffa);
 #endif //P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Clefairy);
+SINGLE_ANIMATION(Puyomon);
 SINGLE_ANIMATION(Clefable);
-#endif //P_FAMILY_CLEFAIRY
+#endif //P_FAMILY_PUYOMON
 #if P_FAMILY_VULPIX
 SINGLE_ANIMATION(Vulpix);
 SINGLE_ANIMATION(Ninetales);

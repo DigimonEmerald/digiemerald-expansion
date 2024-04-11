@@ -3848,11 +3848,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_NIDORAN
 
-#if P_FAMILY_CLEFAIRY
+#if P_FAMILY_PUYOMON
 #if P_UPDATED_TYPES >= GEN_6
-    #define CLEFAIRY_FAMILY_TYPES { TYPE_FAIRY, TYPE_FAIRY }
+    #define PUYOMON_FAMILY_TYPES { TYPE_FAIRY, TYPE_FAIRY }
 #else
-    #define CLEFAIRY_FAMILY_TYPES { TYPE_NORMAL, TYPE_NORMAL }
+    #define PUYOMON_FAMILY_TYPES { TYPE_NORMAL, TYPE_NORMAL }
 #endif
 
 #if P_GEN_2_CROSS_EVOS
@@ -3864,7 +3864,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 15,
         .baseSpAttack  = 45,
         .baseSpDefense = 55,
-        .types = CLEFAIRY_FAMILY_TYPES,
+        .types = PUYOMON_FAMILY_TYPES,
         .catchRate = 150,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 44 : 37,
         .evYield_SpDefense = 1,
@@ -3908,11 +3908,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Cleffa)
         .levelUpLearnset = sCleffaLevelUpLearnset,
         .teachableLearnset = sCleffaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_CLEFAIRY}),
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_PUYOMON}),
     },
 #endif //P_GEN_2_CROSS_EVOS
 
-    [SPECIES_CLEFAIRY] =
+    [SPECIES_PUYOMON] =
     {
         .baseHP        = 70,
         .baseAttack    = 45,
@@ -3920,7 +3920,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 35,
         .baseSpAttack  = 60,
         .baseSpDefense = 65,
-        .types = CLEFAIRY_FAMILY_TYPES,
+        .types = PUYOMON_FAMILY_TYPES,
         .catchRate = 150,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 113 : 68,
         .evYield_HP = 2,
@@ -3933,37 +3933,37 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_CUTE_CHARM, ABILITY_MAGIC_GUARD, ABILITY_FRIEND_GUARD },
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
-        .speciesName = _("Clefairy"),
-        .cryId = CRY_CLEFAIRY,
-        .natDexNum = NATIONAL_DEX_CLEFAIRY,
+        .speciesName = _("Puyomon"),
+        .cryId = CRY_PUYOMON,
+        .natDexNum = NATIONAL_DEX_PUYOMON,
         .categoryName = _("Fairy"),
         .height = 6,
         .weight = 75,
         .description = COMPOUND_STRING(
             "On every night of a full moon, they come\n"
             "out to play. When dawn arrives, the tired\n"
-            "Clefairy go to sleep nestled up against\n"
+            "Puyomon go to sleep nestled up against\n"
             "each other in deep and quiet mountains."),
         .pokemonScale = 441,
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Clefairy,
+        .frontPic = gMonFrontPic_Puyomon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Clefairy,
+        .frontAnimFrames = sAnims_Puyomon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Clefairy,
+        .backPic = gMonBackPic_Puyomon,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 14,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Clefairy,
-        .shinyPalette = gMonShinyPalette_Clefairy,
-        .iconSprite = gMonIcon_Clefairy,
+        .palette = gMonPalette_Puyomon,
+        .shinyPalette = gMonShinyPalette_Puyomon,
+        .iconSprite = gMonIcon_Puyomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Clefairy)
-        .levelUpLearnset = sClefairyLevelUpLearnset,
-        .teachableLearnset = sClefairyTeachableLearnset,
+        FOOTPRINT(Puyomon)
+        .levelUpLearnset = sPuyomonLevelUpLearnset,
+        .teachableLearnset = sPuyomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_CLEFABLE}),
     },
 
@@ -3975,7 +3975,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 60,
         .baseSpAttack  = P_UPDATED_STATS >= GEN_6 ? 95 : 85,
         .baseSpDefense = 90,
-        .types = CLEFAIRY_FAMILY_TYPES,
+        .types = PUYOMON_FAMILY_TYPES,
         .catchRate = 25,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 242,
@@ -4028,7 +4028,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sClefableLevelUpLearnset,
         .teachableLearnset = sClefableTeachableLearnset,
     },
-#endif //P_FAMILY_CLEFAIRY
+#endif //P_FAMILY_PUYOMON
 
 #if P_FAMILY_VULPIX
     [SPECIES_VULPIX] =

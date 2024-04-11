@@ -782,7 +782,7 @@ static const struct LevelUpMove sPuwamonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_NIDORAN
 
-#if P_FAMILY_CLEFAIRY
+#if P_FAMILY_PUYOMON
 #if P_GEN_2_CROSS_EVOS
 static const struct LevelUpMove sCleffaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -797,7 +797,7 @@ static const struct LevelUpMove sCleffaLevelUpLearnset[] = {
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const struct LevelUpMove sClefairyLevelUpLearnset[] = {
+static const struct LevelUpMove sPuyomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SING),
     LEVEL_UP_MOVE( 1, MOVE_SWEET_KISS),
     LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
@@ -848,7 +848,7 @@ static const struct LevelUpMove sClefableLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CLEFAIRY
+#endif //P_FAMILY_PUYOMON
 
 #if P_FAMILY_VULPIX
 static const struct LevelUpMove sVulpixLevelUpLearnset[] = {

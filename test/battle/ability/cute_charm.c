@@ -10,7 +10,7 @@ SINGLE_BATTLE_TEST("Cute Charm inflicts infatuation on contact")
         ASSUME(gMovesInfo[MOVE_TACKLE].makesContact);
         ASSUME(!gMovesInfo[MOVE_SWIFT].makesContact);
         PLAYER(SPECIES_WOBBUFFET) { Gender(MON_MALE); }
-        OPPONENT(SPECIES_CLEFAIRY) { Gender(MON_FEMALE); Ability(ABILITY_CUTE_CHARM); }
+        OPPONENT(SPECIES_PUYOMON) { Gender(MON_FEMALE); Ability(ABILITY_CUTE_CHARM); }
     } WHEN {
         TURN { MOVE(player, move); }
         TURN { MOVE(player, move); }
@@ -18,14 +18,14 @@ SINGLE_BATTLE_TEST("Cute Charm inflicts infatuation on contact")
         if (gMovesInfo[move].makesContact) {
             ABILITY_POPUP(opponent, ABILITY_CUTE_CHARM);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_INFATUATION, player);
-            MESSAGE("Foe Clefairy's Cute Charm infatuated Wobbuffet!");
-            MESSAGE("Wobbuffet is in love with Foe Clefairy!");
+            MESSAGE("Foe Puyomon's Cute Charm infatuated Wobbuffet!");
+            MESSAGE("Wobbuffet is in love with Foe Puyomon!");
         } else {
             NONE_OF {
                 ABILITY_POPUP(opponent, ABILITY_CUTE_CHARM);
                 ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_INFATUATION, player);
-                MESSAGE("Foe Clefairy's Cute Charm infatuated Wobbuffet!");
-                MESSAGE("Wobbuffet is in love with Foe Clefairy!");
+                MESSAGE("Foe Puyomon's Cute Charm infatuated Wobbuffet!");
+                MESSAGE("Wobbuffet is in love with Foe Puyomon!");
             }
         }
     }
@@ -35,7 +35,7 @@ SINGLE_BATTLE_TEST("Cute Charm cannot infatuate same gender")
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Gender(MON_MALE); }
-        OPPONENT(SPECIES_CLEFAIRY) { Gender(MON_MALE); Ability(ABILITY_CUTE_CHARM); }
+        OPPONENT(SPECIES_PUYOMON) { Gender(MON_MALE); Ability(ABILITY_CUTE_CHARM); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
         TURN { MOVE(player, MOVE_TACKLE); }

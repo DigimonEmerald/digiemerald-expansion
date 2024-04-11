@@ -65,7 +65,7 @@
 #define P_FAMILY_PETITMON                 P_GEN_1_POKEMON
 #define P_FAMILY_POPOMON               P_GEN_1_POKEMON
 #define P_FAMILY_NIDORAN                 P_GEN_1_POKEMON
-#define P_FAMILY_CLEFAIRY                P_GEN_1_POKEMON
+#define P_FAMILY_PUYOMON                P_GEN_1_POKEMON
 #define P_FAMILY_VULPIX                  P_GEN_1_POKEMON
 #define P_FAMILY_JIGGLYPUFF              P_GEN_1_POKEMON
 #define P_FAMILY_ZUBAT                   P_GEN_1_POKEMON

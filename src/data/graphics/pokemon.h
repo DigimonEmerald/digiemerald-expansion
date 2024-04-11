@@ -589,7 +589,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_NIDORAN
 
-#if P_FAMILY_CLEFAIRY
+#if P_FAMILY_PUYOMON
 #if P_GEN_2_CROSS_EVOS
     const u32 gMonFrontPic_Cleffa[] = INCBIN_U32("graphics/pokemon/cleffa/anim_front.4bpp.lz");
     const u32 gMonPalette_Cleffa[] = INCBIN_U32("graphics/pokemon/cleffa/normal.gbapal.lz");
@@ -601,13 +601,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
 
-    const u32 gMonFrontPic_Clefairy[] = INCBIN_U32("graphics/pokemon/clefairy/anim_front.4bpp.lz");
-    const u32 gMonPalette_Clefairy[] = INCBIN_U32("graphics/pokemon/clefairy/normal.gbapal.lz");
-    const u32 gMonBackPic_Clefairy[] = INCBIN_U32("graphics/pokemon/clefairy/back.4bpp.lz");
-    const u32 gMonShinyPalette_Clefairy[] = INCBIN_U32("graphics/pokemon/clefairy/shiny.gbapal.lz");
-    const u8 gMonIcon_Clefairy[] = INCBIN_U8("graphics/pokemon/clefairy/icon.4bpp");
+    const u32 gMonFrontPic_Puyomon[] = INCBIN_U32("graphics/pokemon/puyomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Puyomon[] = INCBIN_U32("graphics/pokemon/puyomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Puyomon[] = INCBIN_U32("graphics/pokemon/puyomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Puyomon[] = INCBIN_U32("graphics/pokemon/puyomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Puyomon[] = INCBIN_U8("graphics/pokemon/puyomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Clefairy[] = INCBIN_U8("graphics/pokemon/clefairy/footprint.1bpp");
+    const u8 gMonFootprint_Puyomon[] = INCBIN_U8("graphics/pokemon/puyomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Clefable[] = INCBIN_U32("graphics/pokemon/clefable/anim_front.4bpp.lz");
@@ -618,7 +618,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Clefable[] = INCBIN_U8("graphics/pokemon/clefable/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_CLEFAIRY
+#endif //P_FAMILY_PUYOMON
 
 #if P_FAMILY_VULPIX
     const u32 gMonFrontPic_Vulpix[] = INCBIN_U32("graphics/pokemon/vulpix/anim_front.4bpp.lz");

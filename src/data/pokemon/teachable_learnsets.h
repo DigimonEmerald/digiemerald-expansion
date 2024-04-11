@@ -1497,7 +1497,7 @@ static const u16 sPuwamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_NIDORAN
 
-#if P_FAMILY_CLEFAIRY
+#if P_FAMILY_PUYOMON
 #if P_GEN_2_CROSS_EVOS
 static const u16 sCleffaTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -1546,7 +1546,7 @@ static const u16 sCleffaTeachableLearnset[] = {
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const u16 sClefairyTeachableLearnset[] = {
+static const u16 sPuyomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
@@ -1668,7 +1668,7 @@ static const u16 sClefableTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CLEFAIRY
+#endif //P_FAMILY_PUYOMON
 
 #if P_FAMILY_VULPIX
 static const u16 sVulpixTeachableLearnset[] = {

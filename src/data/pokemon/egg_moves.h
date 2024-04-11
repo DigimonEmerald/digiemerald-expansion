@@ -223,7 +223,7 @@ const u16 gEggMoves[] = {
         MOVE_VENOM_DRENCH),
 #endif //P_FAMILY_NIDORAN
 
-#if P_FAMILY_CLEFAIRY
+#if P_FAMILY_PUYOMON
 #if P_GEN_2_CROSS_EVOS
     egg_moves(CLEFFA,
         MOVE_PRESENT,
@@ -241,7 +241,7 @@ const u16 gEggMoves[] = {
         MOVE_MISTY_TERRAIN,
         MOVE_HEAL_PULSE),
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_CLEFAIRY
+#endif //P_FAMILY_PUYOMON
 
 #if P_FAMILY_VULPIX
     egg_moves(VULPIX,
