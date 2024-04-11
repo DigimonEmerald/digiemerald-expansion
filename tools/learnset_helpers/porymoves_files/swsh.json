@@ -1682,7 +1682,7 @@
     ],
     "TutorMoves": []
   },
-  "SANDSLASH": {
+  "POYOMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -77873,7 +77873,7 @@
       "MOVE_STEEL_BEAM"
     ]
   },
-  "SANDSLASH_ALOLAN": {
+  "POYOMON_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 0,

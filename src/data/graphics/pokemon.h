@@ -509,13 +509,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Popomon[] = INCBIN_U8("graphics/pokemon/popomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Sandslash[] = INCBIN_U32("graphics/pokemon/sandslash/anim_front.4bpp.lz");
-    const u32 gMonPalette_Sandslash[] = INCBIN_U32("graphics/pokemon/sandslash/normal.gbapal.lz");
-    const u32 gMonBackPic_Sandslash[] = INCBIN_U32("graphics/pokemon/sandslash/back.4bpp.lz");
-    const u32 gMonShinyPalette_Sandslash[] = INCBIN_U32("graphics/pokemon/sandslash/shiny.gbapal.lz");
-    const u8 gMonIcon_Sandslash[] = INCBIN_U8("graphics/pokemon/sandslash/icon.4bpp");
+    const u32 gMonFrontPic_Poyomon[] = INCBIN_U32("graphics/pokemon/poyomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Poyomon[] = INCBIN_U32("graphics/pokemon/poyomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Poyomon[] = INCBIN_U32("graphics/pokemon/poyomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Poyomon[] = INCBIN_U32("graphics/pokemon/poyomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Poyomon[] = INCBIN_U8("graphics/pokemon/poyomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Sandslash[] = INCBIN_U8("graphics/pokemon/sandslash/footprint.1bpp");
+    const u8 gMonFootprint_Poyomon[] = INCBIN_U8("graphics/pokemon/poyomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_ALOLAN_FORMS
@@ -525,11 +525,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_PopomonAlolan[] = INCBIN_U32("graphics/pokemon/popomon/alolan/shiny.gbapal.lz");
     const u8 gMonIcon_PopomonAlolan[] = INCBIN_U8("graphics/pokemon/popomon/alolan/icon.4bpp");
 
-    const u32 gMonFrontPic_SandslashAlolan[] = INCBIN_U32("graphics/pokemon/sandslash/alolan/front.4bpp.lz");
-    const u32 gMonPalette_SandslashAlolan[] = INCBIN_U32("graphics/pokemon/sandslash/alolan/normal.gbapal.lz");
-    const u32 gMonBackPic_SandslashAlolan[] = INCBIN_U32("graphics/pokemon/sandslash/alolan/back.4bpp.lz");
-    const u32 gMonShinyPalette_SandslashAlolan[] = INCBIN_U32("graphics/pokemon/sandslash/alolan/shiny.gbapal.lz");
-    const u8 gMonIcon_SandslashAlolan[] = INCBIN_U8("graphics/pokemon/sandslash/alolan/icon.4bpp");
+    const u32 gMonFrontPic_PoyomonAlolan[] = INCBIN_U32("graphics/pokemon/poyomon/alolan/front.4bpp.lz");
+    const u32 gMonPalette_PoyomonAlolan[] = INCBIN_U32("graphics/pokemon/poyomon/alolan/normal.gbapal.lz");
+    const u32 gMonBackPic_PoyomonAlolan[] = INCBIN_U32("graphics/pokemon/poyomon/alolan/back.4bpp.lz");
+    const u32 gMonShinyPalette_PoyomonAlolan[] = INCBIN_U32("graphics/pokemon/poyomon/alolan/shiny.gbapal.lz");
+    const u8 gMonIcon_PoyomonAlolan[] = INCBIN_U8("graphics/pokemon/poyomon/alolan/icon.4bpp");
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_POPOMON
 

@@ -556,8 +556,8 @@ Cry_Popomon::
 	.incbin "sound/direct_sound_samples/cries/popomon.bin"
 
 	.align 2
-Cry_Sandslash::
-	.incbin "sound/direct_sound_samples/cries/sandslash.bin"
+Cry_Poyomon::
+	.incbin "sound/direct_sound_samples/cries/poyomon.bin"
 .endif @ P_FAMILY_POPOMON
 
 .if P_FAMILY_NIDORAN == TRUE

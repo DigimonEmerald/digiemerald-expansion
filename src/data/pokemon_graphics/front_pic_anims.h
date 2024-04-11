@@ -401,7 +401,7 @@ static const union AnimCmd sAnim_Popomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Sandslash_1[] =
+static const union AnimCmd sAnim_Poyomon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -413,7 +413,7 @@ static const union AnimCmd sAnim_Sandslash_1[] =
 
 #if P_ALOLAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(PopomonAlolan);
-PLACEHOLDER_ANIM_SINGLE_FRAME(SandslashAlolan);
+PLACEHOLDER_ANIM_SINGLE_FRAME(PoyomonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_POPOMON
 
@@ -10261,10 +10261,10 @@ SINGLE_ANIMATION(PichimonAlolan);
 #endif //P_FAMILY_PETITMON
 #if P_FAMILY_POPOMON
 SINGLE_ANIMATION(Popomon);
-SINGLE_ANIMATION(Sandslash);
+SINGLE_ANIMATION(Poyomon);
 #if P_ALOLAN_FORMS
 SINGLE_ANIMATION(PopomonAlolan);
-SINGLE_ANIMATION(SandslashAlolan);
+SINGLE_ANIMATION(PoyomonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_POPOMON
 #if P_FAMILY_NIDORAN

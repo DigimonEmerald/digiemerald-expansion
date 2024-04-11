@@ -3341,10 +3341,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPopomonLevelUpLearnset,
         .teachableLearnset = sPopomonTeachableLearnset,
         .formSpeciesIdTable = sPopomonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_SANDSLASH}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_POYOMON}),
     },
 
-    [SPECIES_SANDSLASH] =
+    [SPECIES_POYOMON] =
     {
         .baseHP        = 75,
         .baseAttack    = 100,
@@ -3364,9 +3364,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SAND_VEIL, ABILITY_NONE, ABILITY_SAND_RUSH },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Sandslash"),
-        .cryId = CRY_SANDSLASH,
-        .natDexNum = NATIONAL_DEX_SANDSLASH,
+        .speciesName = _("Poyomon"),
+        .cryId = CRY_POYOMON,
+        .natDexNum = NATIONAL_DEX_POYOMON,
         .categoryName = _("Mouse"),
         .height = 10,
         .weight = 295,
@@ -3379,23 +3379,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 11,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Sandslash,
+        .frontPic = gMonFrontPic_Poyomon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Sandslash,
+        .frontAnimFrames = sAnims_Poyomon,
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Sandslash,
+        .backPic = gMonBackPic_Poyomon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Sandslash,
-        .shinyPalette = gMonShinyPalette_Sandslash,
-        .iconSprite = gMonIcon_Sandslash,
+        .palette = gMonPalette_Poyomon,
+        .shinyPalette = gMonShinyPalette_Poyomon,
+        .iconSprite = gMonIcon_Poyomon,
         .iconPalIndex = 2,
-        FOOTPRINT(Sandslash)
-        .levelUpLearnset = sSandslashLevelUpLearnset,
-        .teachableLearnset = sSandslashTeachableLearnset,
-        .formSpeciesIdTable = sSandslashFormSpeciesIdTable,
+        FOOTPRINT(Poyomon)
+        .levelUpLearnset = sPoyomonLevelUpLearnset,
+        .teachableLearnset = sPoyomonTeachableLearnset,
+        .formSpeciesIdTable = sPoyomonFormSpeciesIdTable,
     },
 
 #if P_ALOLAN_FORMS
@@ -3452,10 +3452,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPopomonAlolanLevelUpLearnset,
         .teachableLearnset = sPopomonAlolanTeachableLearnset,
         .formSpeciesIdTable = sPopomonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ICE_STONE, SPECIES_SANDSLASH_ALOLAN}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ICE_STONE, SPECIES_POYOMON_ALOLAN}),
     },
 
-    [SPECIES_SANDSLASH_ALOLAN] =
+    [SPECIES_POYOMON_ALOLAN] =
     {
         .baseHP        = 75,
         .baseAttack    = 100,
@@ -3475,39 +3475,39 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SNOW_CLOAK, ABILITY_NONE, ABILITY_SLUSH_RUSH },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Sandslash"),
-        .cryId = CRY_SANDSLASH,
-        .natDexNum = NATIONAL_DEX_SANDSLASH,
+        .speciesName = _("Poyomon"),
+        .cryId = CRY_POYOMON,
+        .natDexNum = NATIONAL_DEX_POYOMON,
         .categoryName = _("Mouse"),
         .height = 12,
         .weight = 550,
         .description = COMPOUND_STRING(
             "It uses large, hooked claws to cut a path\n"
             "through deep snow as it runs.\n"
-            "On snowy mountains, this Sandslash\n"
+            "On snowy mountains, this Poyomon\n"
             "is faster than any other Pokémon."),
         .pokemonScale = 341,
         .pokemonOffset = 11,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_SandslashAlolan,
+        .frontPic = gMonFrontPic_PoyomonAlolan,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_SandslashAlolan,
+        .frontAnimFrames = sAnims_PoyomonAlolan,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_SandslashAlolan,
+        .backPic = gMonBackPic_PoyomonAlolan,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_SandslashAlolan,
-        .shinyPalette = gMonShinyPalette_SandslashAlolan,
-        .iconSprite = gMonIcon_SandslashAlolan,
+        .palette = gMonPalette_PoyomonAlolan,
+        .shinyPalette = gMonShinyPalette_PoyomonAlolan,
+        .iconSprite = gMonIcon_PoyomonAlolan,
         .iconPalIndex = 0,
-        FOOTPRINT(Sandslash)
+        FOOTPRINT(Poyomon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sSandslashAlolanLevelUpLearnset,
-        .teachableLearnset = sSandslashAlolanTeachableLearnset,
-        .formSpeciesIdTable = sSandslashFormSpeciesIdTable,
+        .levelUpLearnset = sPoyomonAlolanLevelUpLearnset,
+        .teachableLearnset = sPoyomonAlolanTeachableLearnset,
+        .formSpeciesIdTable = sPoyomonFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_POPOMON

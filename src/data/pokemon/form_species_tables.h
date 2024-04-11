@@ -109,9 +109,9 @@ static const u16 sPopomonFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
-static const u16 sSandslashFormSpeciesIdTable[] = {
-    SPECIES_SANDSLASH,
-    SPECIES_SANDSLASH_ALOLAN,
+static const u16 sPoyomonFormSpeciesIdTable[] = {
+    SPECIES_POYOMON,
+    SPECIES_POYOMON_ALOLAN,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_POPOMON
