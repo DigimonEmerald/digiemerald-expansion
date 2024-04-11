@@ -3617,10 +3617,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Pupumon)
         .levelUpLearnset = sPupumonLevelUpLearnset,
         .teachableLearnset = sPupumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_NIDOQUEEN}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_PURURUMON}),
     },
 
-    [SPECIES_NIDOQUEEN] =
+    [SPECIES_PURURUMON] =
     {
         .baseHP        = 90,
         .baseAttack    = P_UPDATED_STATS >= GEN_6 ? 92 : 82,
@@ -3647,9 +3647,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_POISON_POINT, ABILITY_RIVALRY, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Nidoqueen"),
-        .cryId = CRY_NIDOQUEEN,
-        .natDexNum = NATIONAL_DEX_NIDOQUEEN,
+        .speciesName = _("Pururumon"),
+        .cryId = CRY_PURURUMON,
+        .natDexNum = NATIONAL_DEX_PURURUMON,
         .categoryName = _("Drill"),
         .height = 13,
         .weight = 600,
@@ -3662,22 +3662,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Nidoqueen,
+        .frontPic = gMonFrontPic_Pururumon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Nidoqueen,
+        .frontAnimFrames = sAnims_Pururumon,
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Nidoqueen,
+        .backPic = gMonBackPic_Pururumon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Nidoqueen,
-        .shinyPalette = gMonShinyPalette_Nidoqueen,
-        .iconSprite = gMonIcon_Nidoqueen,
+        .palette = gMonPalette_Pururumon,
+        .shinyPalette = gMonShinyPalette_Pururumon,
+        .iconSprite = gMonIcon_Pururumon,
         .iconPalIndex = 2,
-        FOOTPRINT(Nidoqueen)
-        .levelUpLearnset = sNidoqueenLevelUpLearnset,
-        .teachableLearnset = sNidoqueenTeachableLearnset,
+        FOOTPRINT(Pururumon)
+        .levelUpLearnset = sPururumonLevelUpLearnset,
+        .teachableLearnset = sPururumonTeachableLearnset,
     },
 
     [SPECIES_NIDORAN_M] =
