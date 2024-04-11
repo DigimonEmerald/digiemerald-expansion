@@ -1298,7 +1298,7 @@ static const union AnimCmd sAnim_Tanemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Cloyster_1[] =
+static const union AnimCmd sAnim_Tokomon_1[] =
 {
     ANIMCMD_FRAME(1, 32),
     ANIMCMD_FRAME(0, 14),
@@ -10462,7 +10462,7 @@ SINGLE_ANIMATION(SunmonAlolan);
 #endif //P_FAMILY_SAKUTTOMON
 #if P_FAMILY_TANEMON
 SINGLE_ANIMATION(Tanemon);
-SINGLE_ANIMATION(Cloyster);
+SINGLE_ANIMATION(Tokomon);
 #endif //P_FAMILY_TANEMON
 #if P_FAMILY_GASTLY
 SINGLE_ANIMATION(Gastly);

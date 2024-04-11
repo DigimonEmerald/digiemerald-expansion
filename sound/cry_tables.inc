@@ -223,7 +223,7 @@ gCryTable::
 .endif @ P_FAMILY_SAKUTTOMON
 .if P_FAMILY_TANEMON == TRUE
 	cry Cry_Tanemon
-	cry Cry_Cloyster
+	cry Cry_Tokomon
 .endif @ P_FAMILY_TANEMON
 .if P_FAMILY_GASTLY == TRUE
 	cry Cry_Gastly
@@ -2649,7 +2649,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_SAKUTTOMON
 .if P_FAMILY_TANEMON == TRUE
 	cry_reverse Cry_Tanemon
-	cry_reverse Cry_Cloyster
+	cry_reverse Cry_Tokomon
 .endif @ P_FAMILY_TANEMON
 .if P_FAMILY_GASTLY == TRUE
 	cry_reverse Cry_Gastly

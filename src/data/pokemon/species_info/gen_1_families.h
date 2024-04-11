@@ -9058,10 +9058,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Tanemon)
         .levelUpLearnset = sTanemonLevelUpLearnset,
         .teachableLearnset = sTanemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_CLOYSTER}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_TOKOMON}),
     },
 
-    [SPECIES_CLOYSTER] =
+    [SPECIES_TOKOMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 95,
@@ -9082,37 +9082,37 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
         .abilities = { ABILITY_SHELL_ARMOR, ABILITY_SKILL_LINK, ABILITY_OVERCOAT },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Cloyster"),
-        .cryId = CRY_CLOYSTER,
-        .natDexNum = NATIONAL_DEX_CLOYSTER,
+        .speciesName = _("Tokomon"),
+        .cryId = CRY_TOKOMON,
+        .natDexNum = NATIONAL_DEX_TOKOMON,
         .categoryName = _("Bivalve"),
         .height = 15,
         .weight = 1325,
         .description = COMPOUND_STRING(
             "It swims in the sea by swallowing water,\n"
             "then jetting it out toward the rear.\n"
-            "The Cloyster shoots spikes from its\n"
+            "The Tokomon shoots spikes from its\n"
             "shell using the same system."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 269,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Cloyster,
+        .frontPic = gMonFrontPic_Tokomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_Cloyster,
+        .frontAnimFrames = sAnims_Tokomon,
         .frontAnimId = ANIM_V_SHAKE_TWICE,
-        .backPic = gMonBackPic_Cloyster,
+        .backPic = gMonBackPic_Tokomon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Cloyster,
-        .shinyPalette = gMonShinyPalette_Cloyster,
-        .iconSprite = gMonIcon_Cloyster,
+        .palette = gMonPalette_Tokomon,
+        .shinyPalette = gMonShinyPalette_Tokomon,
+        .iconSprite = gMonIcon_Tokomon,
         .iconPalIndex = 2,
-        FOOTPRINT(Cloyster)
-        .levelUpLearnset = sCloysterLevelUpLearnset,
-        .teachableLearnset = sCloysterTeachableLearnset,
+        FOOTPRINT(Tokomon)
+        .levelUpLearnset = sTokomonLevelUpLearnset,
+        .teachableLearnset = sTokomonTeachableLearnset,
     },
 #endif //P_FAMILY_TANEMON
 

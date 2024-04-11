@@ -941,8 +941,8 @@ Cry_Tanemon::
 	.incbin "sound/direct_sound_samples/cries/tanemon.bin"
 
 	.align 2
-Cry_Cloyster::
-	.incbin "sound/direct_sound_samples/cries/cloyster.bin"
+Cry_Tokomon::
+	.incbin "sound/direct_sound_samples/cries/tokomon.bin"
 .endif @ P_FAMILY_TANEMON
 
 .if P_FAMILY_GASTLY == TRUE

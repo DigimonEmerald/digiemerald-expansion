@@ -1451,13 +1451,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Tanemon[] = INCBIN_U8("graphics/pokemon/tanemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Cloyster[] = INCBIN_U32("graphics/pokemon/cloyster/anim_front.4bpp.lz");
-    const u32 gMonPalette_Cloyster[] = INCBIN_U32("graphics/pokemon/cloyster/normal.gbapal.lz");
-    const u32 gMonBackPic_Cloyster[] = INCBIN_U32("graphics/pokemon/cloyster/back.4bpp.lz");
-    const u32 gMonShinyPalette_Cloyster[] = INCBIN_U32("graphics/pokemon/cloyster/shiny.gbapal.lz");
-    const u8 gMonIcon_Cloyster[] = INCBIN_U8("graphics/pokemon/cloyster/icon.4bpp");
+    const u32 gMonFrontPic_Tokomon[] = INCBIN_U32("graphics/pokemon/tokomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Tokomon[] = INCBIN_U32("graphics/pokemon/tokomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Tokomon[] = INCBIN_U32("graphics/pokemon/tokomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Tokomon[] = INCBIN_U32("graphics/pokemon/tokomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Tokomon[] = INCBIN_U8("graphics/pokemon/tokomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Cloyster[] = INCBIN_U8("graphics/pokemon/cloyster/footprint.1bpp");
+    const u8 gMonFootprint_Tokomon[] = INCBIN_U8("graphics/pokemon/tokomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_TANEMON
 
