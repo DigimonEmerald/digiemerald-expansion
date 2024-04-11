@@ -711,15 +711,15 @@ Cry_Perrserker::
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_CALUMON
 
-.if P_FAMILY_PSYDUCK == TRUE
+.if P_FAMILY_CHICCHIMON == TRUE
 	.align 2
-Cry_Psyduck::
-	.incbin "sound/direct_sound_samples/cries/psyduck.bin"
+Cry_Chicchimon::
+	.incbin "sound/direct_sound_samples/cries/chicchimon.bin"
 
 	.align 2
 Cry_Golduck::
 	.incbin "sound/direct_sound_samples/cries/golduck.bin"
-.endif @ P_FAMILY_PSYDUCK
+.endif @ P_FAMILY_CHICCHIMON
 
 .if P_FAMILY_MANKEY == TRUE
 	.align 2

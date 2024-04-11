@@ -901,14 +901,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_CALUMON
 
-#if P_FAMILY_PSYDUCK
-    const u32 gMonFrontPic_Psyduck[] = INCBIN_U32("graphics/pokemon/psyduck/anim_front.4bpp.lz");
-    const u32 gMonPalette_Psyduck[] = INCBIN_U32("graphics/pokemon/psyduck/normal.gbapal.lz");
-    const u32 gMonBackPic_Psyduck[] = INCBIN_U32("graphics/pokemon/psyduck/back.4bpp.lz");
-    const u32 gMonShinyPalette_Psyduck[] = INCBIN_U32("graphics/pokemon/psyduck/shiny.gbapal.lz");
-    const u8 gMonIcon_Psyduck[] = INCBIN_U8("graphics/pokemon/psyduck/icon.4bpp");
+#if P_FAMILY_CHICCHIMON
+    const u32 gMonFrontPic_Chicchimon[] = INCBIN_U32("graphics/pokemon/chicchimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Chicchimon[] = INCBIN_U32("graphics/pokemon/chicchimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Chicchimon[] = INCBIN_U32("graphics/pokemon/chicchimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Chicchimon[] = INCBIN_U32("graphics/pokemon/chicchimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Chicchimon[] = INCBIN_U8("graphics/pokemon/chicchimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Psyduck[] = INCBIN_U8("graphics/pokemon/psyduck/footprint.1bpp");
+    const u8 gMonFootprint_Chicchimon[] = INCBIN_U8("graphics/pokemon/chicchimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Golduck[] = INCBIN_U32("graphics/pokemon/golduck/anim_front.4bpp.lz");
@@ -919,7 +919,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Golduck[] = INCBIN_U8("graphics/pokemon/golduck/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_PSYDUCK
+#endif //P_FAMILY_CHICCHIMON
 
 #if P_FAMILY_MANKEY
     const u32 gMonFrontPic_Mankey[] = INCBIN_U32("graphics/pokemon/mankey/anim_front.4bpp.lz");

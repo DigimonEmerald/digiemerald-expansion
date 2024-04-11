@@ -821,8 +821,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(CalumonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_CALUMON
 
-#if P_FAMILY_PSYDUCK
-static const union AnimCmd sAnim_Psyduck_1[] =
+#if P_FAMILY_CHICCHIMON
+static const union AnimCmd sAnim_Chicchimon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -841,7 +841,7 @@ static const union AnimCmd sAnim_Golduck_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_PSYDUCK
+#endif //P_FAMILY_CHICCHIMON
 
 #if P_FAMILY_MANKEY
 static const union AnimCmd sAnim_Mankey_1[] =
@@ -10343,10 +10343,10 @@ SINGLE_ANIMATION(Perrserker);
 SINGLE_ANIMATION(CalumonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_CALUMON
-#if P_FAMILY_PSYDUCK
-SINGLE_ANIMATION(Psyduck);
+#if P_FAMILY_CHICCHIMON
+SINGLE_ANIMATION(Chicchimon);
 SINGLE_ANIMATION(Golduck);
-#endif //P_FAMILY_PSYDUCK
+#endif //P_FAMILY_CHICCHIMON
 #if P_FAMILY_MANKEY
 SINGLE_ANIMATION(Mankey);
 SINGLE_ANIMATION(Primeape);

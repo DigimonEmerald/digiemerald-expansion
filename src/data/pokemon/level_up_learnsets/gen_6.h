@@ -1336,8 +1336,8 @@ static const struct LevelUpMove sPerrserkerLevelUpLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_CALUMON
 
-#if P_FAMILY_PSYDUCK
-static const struct LevelUpMove sPsyduckLevelUpLearnset[] = {
+#if P_FAMILY_CHICCHIMON
+static const struct LevelUpMove sChicchimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WATER_SPORT),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 4, MOVE_TAIL_WHIP),
@@ -1379,7 +1379,7 @@ static const struct LevelUpMove sGolduckLevelUpLearnset[] = {
     LEVEL_UP_MOVE(60, MOVE_WONDER_ROOM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_PSYDUCK
+#endif //P_FAMILY_CHICCHIMON
 
 #if P_FAMILY_MANKEY
 static const struct LevelUpMove sMankeyLevelUpLearnset[] = {

@@ -5715,8 +5715,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_CALUMON
 
-#if P_FAMILY_PSYDUCK
-    [SPECIES_PSYDUCK] =
+#if P_FAMILY_CHICCHIMON
+    [SPECIES_CHICCHIMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 52,
@@ -5735,9 +5735,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
         .abilities = { ABILITY_DAMP, ABILITY_CLOUD_NINE, ABILITY_SWIFT_SWIM },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Psyduck"),
-        .cryId = CRY_PSYDUCK,
-        .natDexNum = NATIONAL_DEX_PSYDUCK,
+        .speciesName = _("Chicchimon"),
+        .cryId = CRY_CHICCHIMON,
+        .natDexNum = NATIONAL_DEX_CHICCHIMON,
         .categoryName = _("Duck"),
         .height = 8,
         .weight = 196,
@@ -5750,22 +5750,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Psyduck,
+        .frontPic = gMonFrontPic_Chicchimon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Psyduck,
+        .frontAnimFrames = sAnims_Chicchimon,
         .frontAnimId = ANIM_V_JUMPS_H_JUMPS,
-        .backPic = gMonBackPic_Psyduck,
+        .backPic = gMonBackPic_Chicchimon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Psyduck,
-        .shinyPalette = gMonShinyPalette_Psyduck,
-        .iconSprite = gMonIcon_Psyduck,
+        .palette = gMonPalette_Chicchimon,
+        .shinyPalette = gMonShinyPalette_Chicchimon,
+        .iconSprite = gMonIcon_Chicchimon,
         .iconPalIndex = 1,
-        FOOTPRINT(Psyduck)
-        .levelUpLearnset = sPsyduckLevelUpLearnset,
-        .teachableLearnset = sPsyduckTeachableLearnset,
+        FOOTPRINT(Chicchimon)
+        .levelUpLearnset = sChicchimonLevelUpLearnset,
+        .teachableLearnset = sChicchimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_GOLDUCK}),
     },
 
@@ -5820,7 +5820,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sGolduckLevelUpLearnset,
         .teachableLearnset = sGolduckTeachableLearnset,
     },
-#endif //P_FAMILY_PSYDUCK
+#endif //P_FAMILY_CHICCHIMON
 
 #if P_FAMILY_MANKEY
     [SPECIES_MANKEY] =

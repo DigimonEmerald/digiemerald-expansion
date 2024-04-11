@@ -2608,8 +2608,8 @@ static const u16 sPerrserkerTeachableLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_CALUMON
 
-#if P_FAMILY_PSYDUCK
-static const u16 sPsyduckTeachableLearnset[] = {
+#if P_FAMILY_CHICCHIMON
+static const u16 sChicchimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -2708,7 +2708,7 @@ static const u16 sGolduckTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PSYDUCK
+#endif //P_FAMILY_CHICCHIMON
 
 #if P_FAMILY_MANKEY
 static const u16 sMankeyTeachableLearnset[] = {

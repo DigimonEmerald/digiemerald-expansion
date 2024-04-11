@@ -438,8 +438,8 @@ const u16 gEggMoves[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_CALUMON
 
-#if P_FAMILY_PSYDUCK
-    egg_moves(PSYDUCK,
+#if P_FAMILY_CHICCHIMON
+    egg_moves(CHICCHIMON,
         MOVE_HYPNOSIS,
         MOVE_PSYBEAM,
         MOVE_FORESIGHT,
@@ -455,7 +455,7 @@ const u16 gEggMoves[] = {
         MOVE_SYNCHRONOISE,
         MOVE_SIMPLE_BEAM,
         MOVE_CLEAR_SMOG),
-#endif //P_FAMILY_PSYDUCK
+#endif //P_FAMILY_CHICCHIMON
 
 #if P_FAMILY_MANKEY
     egg_moves(MANKEY,
