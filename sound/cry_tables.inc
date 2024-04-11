@@ -248,7 +248,7 @@ gCryTable::
 .endif @ P_FAMILY_TUMBLEMON
 .if P_FAMILY_VIXIMON == TRUE
 	cry Cry_Viximon
-	cry Cry_Kingler
+	cry Cry_Wanyamon
 .endif @ P_FAMILY_VIXIMON
 .if P_FAMILY_VOLTORB == TRUE
 	cry Cry_Voltorb
@@ -2674,7 +2674,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_TUMBLEMON
 .if P_FAMILY_VIXIMON == TRUE
 	cry_reverse Cry_Viximon
-	cry_reverse Cry_Kingler
+	cry_reverse Cry_Wanyamon
 .endif @ P_FAMILY_VIXIMON
 .if P_FAMILY_VOLTORB == TRUE
 	cry_reverse Cry_Voltorb

@@ -1410,7 +1410,7 @@ static const union AnimCmd sAnim_Viximon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Kingler_1[] =
+static const union AnimCmd sAnim_Wanyamon_1[] =
 {
     ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(0, 14),
@@ -1418,7 +1418,7 @@ static const union AnimCmd sAnim_Kingler_1[] =
 };
 
 #if P_GIGANTAMAX_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(KinglerGigantamax);
+PLACEHOLDER_ANIM_SINGLE_FRAME(WanyamonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_VIXIMON
 
@@ -10490,9 +10490,9 @@ SINGLE_ANIMATION(Upamon);
 #endif //P_FAMILY_TUMBLEMON
 #if P_FAMILY_VIXIMON
 SINGLE_ANIMATION(Viximon);
-SINGLE_ANIMATION(Kingler);
+SINGLE_ANIMATION(Wanyamon);
 #if P_GIGANTAMAX_FORMS
-SINGLE_ANIMATION(KinglerGigantamax);
+SINGLE_ANIMATION(WanyamonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_VIXIMON
 #if P_FAMILY_VOLTORB

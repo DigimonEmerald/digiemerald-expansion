@@ -999,8 +999,8 @@ Cry_Viximon::
 	.incbin "sound/direct_sound_samples/cries/viximon.bin"
 
 	.align 2
-Cry_Kingler::
-	.incbin "sound/direct_sound_samples/cries/kingler.bin"
+Cry_Wanyamon::
+	.incbin "sound/direct_sound_samples/cries/wanyamon.bin"
 .endif @ P_FAMILY_VIXIMON
 
 .if P_FAMILY_VOLTORB == TRUE

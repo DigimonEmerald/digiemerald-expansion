@@ -5032,7 +5032,7 @@ static const u16 sViximonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sKinglerTeachableLearnset[] = {
+static const u16 sWanyamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,

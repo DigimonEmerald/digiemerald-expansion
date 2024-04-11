@@ -1572,21 +1572,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Viximon[] = INCBIN_U8("graphics/pokemon/viximon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Kingler[] = INCBIN_U32("graphics/pokemon/kingler/anim_front.4bpp.lz");
-    const u32 gMonPalette_Kingler[] = INCBIN_U32("graphics/pokemon/kingler/normal.gbapal.lz");
-    const u32 gMonBackPic_Kingler[] = INCBIN_U32("graphics/pokemon/kingler/back.4bpp.lz");
-    const u32 gMonShinyPalette_Kingler[] = INCBIN_U32("graphics/pokemon/kingler/shiny.gbapal.lz");
-    const u8 gMonIcon_Kingler[] = INCBIN_U8("graphics/pokemon/kingler/icon.4bpp");
+    const u32 gMonFrontPic_Wanyamon[] = INCBIN_U32("graphics/pokemon/wanyamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Wanyamon[] = INCBIN_U32("graphics/pokemon/wanyamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Wanyamon[] = INCBIN_U32("graphics/pokemon/wanyamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Wanyamon[] = INCBIN_U32("graphics/pokemon/wanyamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Wanyamon[] = INCBIN_U8("graphics/pokemon/wanyamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Kingler[] = INCBIN_U8("graphics/pokemon/kingler/footprint.1bpp");
+    const u8 gMonFootprint_Wanyamon[] = INCBIN_U8("graphics/pokemon/wanyamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GIGANTAMAX_FORMS
-    const u32 gMonFrontPic_KinglerGigantamax[] = INCBIN_U32("graphics/pokemon/kingler/gigantamax/front.4bpp.lz");
-    const u32 gMonBackPic_KinglerGigantamax[] = INCBIN_U32("graphics/pokemon/kingler/gigantamax/back.4bpp.lz");
-    const u32 gMonPalette_KinglerGigantamax[] = INCBIN_U32("graphics/pokemon/kingler/gigantamax/normal.gbapal.lz");
-    const u32 gMonShinyPalette_KinglerGigantamax[] = INCBIN_U32("graphics/pokemon/kingler/gigantamax/shiny.gbapal.lz");
-    const u8 gMonIcon_KinglerGigantamax[] = INCBIN_U8("graphics/pokemon/kingler/gigantamax/icon.4bpp");
+    const u32 gMonFrontPic_WanyamonGigantamax[] = INCBIN_U32("graphics/pokemon/wanyamon/gigantamax/front.4bpp.lz");
+    const u32 gMonBackPic_WanyamonGigantamax[] = INCBIN_U32("graphics/pokemon/wanyamon/gigantamax/back.4bpp.lz");
+    const u32 gMonPalette_WanyamonGigantamax[] = INCBIN_U32("graphics/pokemon/wanyamon/gigantamax/normal.gbapal.lz");
+    const u32 gMonShinyPalette_WanyamonGigantamax[] = INCBIN_U32("graphics/pokemon/wanyamon/gigantamax/shiny.gbapal.lz");
+    const u8 gMonIcon_WanyamonGigantamax[] = INCBIN_U8("graphics/pokemon/wanyamon/gigantamax/icon.4bpp");
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_VIXIMON
 

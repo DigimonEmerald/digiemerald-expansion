@@ -100,7 +100,7 @@
 #define SPECIES_TUMBLEMON                                 96
 #define SPECIES_UPAMON                                   97
 #define SPECIES_VIXIMON                                  98
-#define SPECIES_KINGLER                                 99
+#define SPECIES_WANYAMON                                 99
 #define SPECIES_VOLTORB                                 100
 #define SPECIES_ELECTRODE                               101
 #define SPECIES_EXEGGCUTE                               102
@@ -1601,7 +1601,7 @@
 #define SPECIES_CALUMON_GIGANTAMAX                       1494
 #define SPECIES_KOZENIMON_GIGANTAMAX                      1495
 #define SPECIES_TSUMEMON_GIGANTAMAX                       1496
-#define SPECIES_KINGLER_GIGANTAMAX                      1497
+#define SPECIES_WANYAMON_GIGANTAMAX                      1497
 #define SPECIES_LAPRAS_GIGANTAMAX                       1498
 #define SPECIES_EEVEE_GIGANTAMAX                        1499
 #define SPECIES_SNORLAX_GIGANTAMAX                      1500
