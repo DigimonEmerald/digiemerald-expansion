@@ -5,14 +5,14 @@ SINGLE_BATTLE_TEST("Oblivious prevents Infatuation")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_ATTRACT].effect == EFFECT_ATTRACT);
-        PLAYER(SPECIES_SLOWPOKE) { Ability(ABILITY_OBLIVIOUS); Gender(MON_MALE); }
+        PLAYER(SPECIES_PAGUMON) { Ability(ABILITY_OBLIVIOUS); Gender(MON_MALE); }
         OPPONENT(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_ATTRACT); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_OBLIVIOUS);
         NONE_OF { ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_INFATUATION, player); }
-        MESSAGE("It doesn't affect Slowpoke…");
+        MESSAGE("It doesn't affect Pagumon…");
     }
 }
 
@@ -20,14 +20,14 @@ SINGLE_BATTLE_TEST("Oblivious prevents Captivate")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_CAPTIVATE].effect == EFFECT_CAPTIVATE);
-        PLAYER(SPECIES_SLOWPOKE) { Ability(ABILITY_OBLIVIOUS); Gender(MON_MALE); }
+        PLAYER(SPECIES_PAGUMON) { Ability(ABILITY_OBLIVIOUS); Gender(MON_MALE); }
         OPPONENT(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_ATTRACT); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_OBLIVIOUS);
         NONE_OF { ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player); }
-        MESSAGE("It doesn't affect Slowpoke…");
+        MESSAGE("It doesn't affect Pagumon…");
     }
 }
 
@@ -36,7 +36,7 @@ SINGLE_BATTLE_TEST("Oblivious prevents Taunt")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TAUNT].effect == EFFECT_TAUNT);
         ASSUME(B_OBLIVIOUS_TAUNT >= GEN_6);
-        PLAYER(SPECIES_SLOWPOKE) { Ability(ABILITY_OBLIVIOUS); }
+        PLAYER(SPECIES_PAGUMON) { Ability(ABILITY_OBLIVIOUS); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TAUNT); }
@@ -44,7 +44,7 @@ SINGLE_BATTLE_TEST("Oblivious prevents Taunt")
     } SCENE {
         ABILITY_POPUP(player, ABILITY_OBLIVIOUS);
         NONE_OF { ANIMATION(ANIM_TYPE_MOVE, MOVE_TAUNT, opponent); }
-        MESSAGE("It doesn't affect Slowpoke…");
+        MESSAGE("It doesn't affect Pagumon…");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
     }
@@ -54,7 +54,7 @@ SINGLE_BATTLE_TEST("Oblivious prevents Intimidate")
 {
     GIVEN {
         ASSUME(B_UPDATED_INTIMIDATE >= GEN_8);
-        PLAYER(SPECIES_SLOWPOKE) { Ability(ABILITY_OBLIVIOUS); }
+        PLAYER(SPECIES_PAGUMON) { Ability(ABILITY_OBLIVIOUS); }
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
@@ -63,6 +63,6 @@ SINGLE_BATTLE_TEST("Oblivious prevents Intimidate")
         ABILITY_POPUP(opponent, ABILITY_INTIMIDATE);
         ABILITY_POPUP(player, ABILITY_OBLIVIOUS);
         NONE_OF { ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player); }
-        MESSAGE("Slowpoke's Oblivious prevents stat loss!");
+        MESSAGE("Pagumon's Oblivious prevents stat loss!");
     }
 }

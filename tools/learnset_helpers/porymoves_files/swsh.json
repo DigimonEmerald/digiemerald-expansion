@@ -6435,7 +6435,7 @@
     ],
     "TutorMoves": []
   },
-  "SLOWPOKE": {
+  "PAGUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -79385,7 +79385,7 @@
       "MOVE_EXPANDING_FORCE"
     ]
   },
-  "SLOWPOKE_GALARIAN": {
+  "PAGUMON_GALARIAN": {
     "LevelMoves": [
       {
         "Level": 1,

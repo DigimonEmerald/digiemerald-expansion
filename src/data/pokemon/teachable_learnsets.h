@@ -3896,8 +3896,8 @@ static const u16 sNyaromonGalarianTeachableLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_NEGAMON
 
-#if P_FAMILY_SLOWPOKE
-static const u16 sSlowpokeTeachableLearnset[] = {
+#if P_FAMILY_PAGUMON
+static const u16 sPagumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,
@@ -4064,7 +4064,7 @@ static const u16 sSlowkingTeachableLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 
 #if P_GALARIAN_FORMS
-static const u16 sSlowpokeGalarianTeachableLearnset[] = {
+static const u16 sPagumonGalarianTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,
@@ -4196,7 +4196,7 @@ static const u16 sSlowkingGalarianTeachableLearnset[] = {
 };
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_SLOWPOKE
+#endif //P_FAMILY_PAGUMON
 
 #if P_FAMILY_MAGNEMITE
 static const u16 sMagnemiteTeachableLearnset[] = {

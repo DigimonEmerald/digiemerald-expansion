@@ -80,7 +80,7 @@
 #define SPECIES_MOTIMON                                   76
 #define SPECIES_NEGAMON                                  77
 #define SPECIES_NYAROMON                                78
-#define SPECIES_SLOWPOKE                                79
+#define SPECIES_PAGUMON                                79
 #define SPECIES_SLOWBRO                                 80
 #define SPECIES_MAGNEMITE                               81
 #define SPECIES_MAGNETON                                82
@@ -1035,7 +1035,7 @@
 #define SPECIES_CALUMON_GALARIAN                         974
 #define SPECIES_NEGAMON_GALARIAN                         975
 #define SPECIES_NYAROMON_GALARIAN                       976
-#define SPECIES_SLOWPOKE_GALARIAN                       977
+#define SPECIES_PAGUMON_GALARIAN                       977
 #define SPECIES_SLOWBRO_GALARIAN                        978
 #define SPECIES_FARFETCHD_GALARIAN                      979
 #define SPECIES_WEEZING_GALARIAN                        980

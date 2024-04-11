@@ -1241,14 +1241,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_NEGAMON
 
-#if P_FAMILY_SLOWPOKE
-    const u32 gMonFrontPic_Slowpoke[] = INCBIN_U32("graphics/pokemon/slowpoke/anim_front.4bpp.lz");
-    const u32 gMonPalette_Slowpoke[] = INCBIN_U32("graphics/pokemon/slowpoke/normal.gbapal.lz");
-    const u32 gMonBackPic_Slowpoke[] = INCBIN_U32("graphics/pokemon/slowpoke/back.4bpp.lz");
-    const u32 gMonShinyPalette_Slowpoke[] = INCBIN_U32("graphics/pokemon/slowpoke/shiny.gbapal.lz");
-    const u8 gMonIcon_Slowpoke[] = INCBIN_U8("graphics/pokemon/slowpoke/icon.4bpp");
+#if P_FAMILY_PAGUMON
+    const u32 gMonFrontPic_Pagumon[] = INCBIN_U32("graphics/pokemon/pagumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Pagumon[] = INCBIN_U32("graphics/pokemon/pagumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Pagumon[] = INCBIN_U32("graphics/pokemon/pagumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Pagumon[] = INCBIN_U32("graphics/pokemon/pagumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Pagumon[] = INCBIN_U8("graphics/pokemon/pagumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Slowpoke[] = INCBIN_U8("graphics/pokemon/slowpoke/footprint.1bpp");
+    const u8 gMonFootprint_Pagumon[] = INCBIN_U8("graphics/pokemon/pagumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Slowbro[] = INCBIN_U32("graphics/pokemon/slowbro/anim_front.4bpp.lz");
@@ -1280,11 +1280,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GALARIAN_FORMS
-    const u32 gMonFrontPic_SlowpokeGalarian[] = INCBIN_U32("graphics/pokemon/slowpoke/galarian/front.4bpp.lz");
-    const u32 gMonPalette_SlowpokeGalarian[] = INCBIN_U32("graphics/pokemon/slowpoke/galarian/normal.gbapal.lz");
-    const u32 gMonBackPic_SlowpokeGalarian[] = INCBIN_U32("graphics/pokemon/slowpoke/galarian/back.4bpp.lz");
-    const u32 gMonShinyPalette_SlowpokeGalarian[] = INCBIN_U32("graphics/pokemon/slowpoke/galarian/shiny.gbapal.lz");
-    const u8 gMonIcon_SlowpokeGalarian[] = INCBIN_U8("graphics/pokemon/slowpoke/galarian/icon.4bpp");
+    const u32 gMonFrontPic_PagumonGalarian[] = INCBIN_U32("graphics/pokemon/pagumon/galarian/front.4bpp.lz");
+    const u32 gMonPalette_PagumonGalarian[] = INCBIN_U32("graphics/pokemon/pagumon/galarian/normal.gbapal.lz");
+    const u32 gMonBackPic_PagumonGalarian[] = INCBIN_U32("graphics/pokemon/pagumon/galarian/back.4bpp.lz");
+    const u32 gMonShinyPalette_PagumonGalarian[] = INCBIN_U32("graphics/pokemon/pagumon/galarian/shiny.gbapal.lz");
+    const u8 gMonIcon_PagumonGalarian[] = INCBIN_U8("graphics/pokemon/pagumon/galarian/icon.4bpp");
 
     const u32 gMonFrontPic_SlowbroGalarian[] = INCBIN_U32("graphics/pokemon/slowbro/galarian/front.4bpp.lz");
     const u32 gMonPalette_SlowbroGalarian[] = INCBIN_U32("graphics/pokemon/slowbro/galarian/normal.gbapal.lz");
@@ -1300,7 +1300,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonIcon_SlowkingGalarian[] = INCBIN_U8("graphics/pokemon/slowking/galarian/icon.4bpp");
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_SLOWPOKE
+#endif //P_FAMILY_PAGUMON
 
 #if P_FAMILY_MAGNEMITE
     const u32 gMonFrontPic_Magnemite[] = INCBIN_U32("graphics/pokemon/magnemite/anim_front.4bpp.lz");

@@ -183,8 +183,8 @@ gCryTable::
 	cry Cry_Negamon
 	cry Cry_Nyaromon
 .endif @ P_FAMILY_NEGAMON
-.if P_FAMILY_SLOWPOKE == TRUE
-	cry Cry_Slowpoke
+.if P_FAMILY_PAGUMON == TRUE
+	cry Cry_Pagumon
 	cry Cry_Slowbro
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Slowking
@@ -193,9 +193,9 @@ gCryTable::
 	cry Cry_SlowbroMega
 .endif @ P_MEGA_EVOLUTIONS
 .if P_GALARIAN_FORMS == TRUE
-	cry Cry_SlowpokeGalarian
+	cry Cry_PagumonGalarian
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_SLOWPOKE
+.endif @ P_FAMILY_PAGUMON
 .if P_FAMILY_MAGNEMITE == TRUE
 	cry Cry_Magnemite
 	cry Cry_Magneton
@@ -2609,8 +2609,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Negamon
 	cry_reverse Cry_Nyaromon
 .endif @ P_FAMILY_NEGAMON
-.if P_FAMILY_SLOWPOKE == TRUE
-	cry_reverse Cry_Slowpoke
+.if P_FAMILY_PAGUMON == TRUE
+	cry_reverse Cry_Pagumon
 	cry_reverse Cry_Slowbro
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Slowking
@@ -2619,9 +2619,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_SlowbroMega
 .endif @ P_MEGA_EVOLUTIONS
 .if P_GALARIAN_FORMS == TRUE
-	cry_reverse Cry_SlowpokeGalarian
+	cry_reverse Cry_PagumonGalarian
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_SLOWPOKE
+.endif @ P_FAMILY_PAGUMON
 .if P_FAMILY_MAGNEMITE == TRUE
 	cry_reverse Cry_Magnemite
 	cry_reverse Cry_Magneton

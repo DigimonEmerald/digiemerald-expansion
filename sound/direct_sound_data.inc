@@ -849,10 +849,10 @@ Cry_Nyaromon::
 	.incbin "sound/direct_sound_samples/cries/nyaromon.bin"
 .endif @ P_FAMILY_NEGAMON
 
-.if P_FAMILY_SLOWPOKE == TRUE
+.if P_FAMILY_PAGUMON == TRUE
 	.align 2
-Cry_Slowpoke::
-	.incbin "sound/direct_sound_samples/cries/slowpoke.bin"
+Cry_Pagumon::
+	.incbin "sound/direct_sound_samples/cries/pagumon.bin"
 
 	.align 2
 Cry_Slowbro::
@@ -870,11 +870,11 @@ Cry_SlowbroMega::
 .endif @ P_MEGA_EVOLUTIONS
 .if P_GALARIAN_FORMS == TRUE
 	.align 2
-Cry_SlowpokeGalarian::
-	.incbin "sound/direct_sound_samples/cries/slowpoke_galarian.bin"
+Cry_PagumonGalarian::
+	.incbin "sound/direct_sound_samples/cries/pagumon_galarian.bin"
 
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_SLOWPOKE
+.endif @ P_FAMILY_PAGUMON
 
 .if P_FAMILY_MAGNEMITE == TRUE
 	.align 2

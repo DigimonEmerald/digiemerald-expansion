@@ -7797,8 +7797,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_NEGAMON
 
-#if P_FAMILY_SLOWPOKE
-    [SPECIES_SLOWPOKE] =
+#if P_FAMILY_PAGUMON
+    [SPECIES_PAGUMON] =
     {
         .baseHP        = 90,
         .baseAttack    = 65,
@@ -7818,9 +7818,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_OWN_TEMPO, ABILITY_REGENERATOR },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Slowpoke"),
-        .cryId = CRY_SLOWPOKE,
-        .natDexNum = NATIONAL_DEX_SLOWPOKE,
+        .speciesName = _("Pagumon"),
+        .cryId = CRY_PAGUMON,
+        .natDexNum = NATIONAL_DEX_PAGUMON,
         .categoryName = _("Dopey"),
         .height = 12,
         .weight = 360,
@@ -7833,23 +7833,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Slowpoke,
+        .frontPic = gMonFrontPic_Pagumon,
         .frontPicSize = MON_COORDS_SIZE(64, 32),
         .frontPicYOffset = 16,
-        .frontAnimFrames = sAnims_Slowpoke,
+        .frontAnimFrames = sAnims_Pagumon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Slowpoke,
+        .backPic = gMonBackPic_Pagumon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Slowpoke,
-        .shinyPalette = gMonShinyPalette_Slowpoke,
-        .iconSprite = gMonIcon_Slowpoke,
+        .palette = gMonPalette_Pagumon,
+        .shinyPalette = gMonShinyPalette_Pagumon,
+        .iconSprite = gMonIcon_Pagumon,
         .iconPalIndex = 0,
-        FOOTPRINT(Slowpoke)
-        .levelUpLearnset = sSlowpokeLevelUpLearnset,
-        .teachableLearnset = sSlowpokeTeachableLearnset,
-        .formSpeciesIdTable = sSlowpokeFormSpeciesIdTable,
+        FOOTPRINT(Pagumon)
+        .levelUpLearnset = sPagumonLevelUpLearnset,
+        .teachableLearnset = sPagumonTeachableLearnset,
+        .formSpeciesIdTable = sPagumonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_SLOWBRO},
                                 {EVO_TRADE_ITEM, ITEM_KINGS_ROCK, SPECIES_SLOWKING},
                                 {EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_SLOWKING}),
@@ -7997,7 +7997,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "When bathed in the energy of Mega\n"
             "Evolution, Shellder converts into\n"
             "impregnable armor. There is virtually no\n"
-            "change in Slowpoke."),
+            "change in Pagumon."),
         .pokemonScale = 256,
         .pokemonOffset = 6,
         .trainerScale = 296,
@@ -8025,7 +8025,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GALARIAN_FORMS
-    [SPECIES_SLOWPOKE_GALARIAN] =
+    [SPECIES_PAGUMON_GALARIAN] =
     {
         .baseHP        = 90,
         .baseAttack    = 65,
@@ -8044,39 +8044,39 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_GLUTTONY, ABILITY_OWN_TEMPO, ABILITY_REGENERATOR },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Slowpoke"),
-        .cryId = CRY_SLOWPOKE_GALARIAN,
-        .natDexNum = NATIONAL_DEX_SLOWPOKE,
+        .speciesName = _("Pagumon"),
+        .cryId = CRY_PAGUMON_GALARIAN,
+        .natDexNum = NATIONAL_DEX_PAGUMON,
         .categoryName = _("Dopey"),
         .height = 12,
         .weight = 360,
         .description = COMPOUND_STRING(
             "Although it is normally zoned out, its\n"
             "expression abruptly sharpens on occasion.\n"
-            "The cause seems to lie in Slowpoke's diet,\n"
+            "The cause seems to lie in Pagumon's diet,\n"
             "which also give their tails a spicy flavor."),
         .pokemonScale = 256,
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_SlowpokeGalarian,
+        .frontPic = gMonFrontPic_PagumonGalarian,
         .frontPicSize = MON_COORDS_SIZE(56, 32),
         .frontPicYOffset = 19,
-        .frontAnimFrames = sAnims_SlowpokeGalarian,
+        .frontAnimFrames = sAnims_PagumonGalarian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_SlowpokeGalarian,
+        .backPic = gMonBackPic_PagumonGalarian,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 13,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_SlowpokeGalarian,
-        .shinyPalette = gMonShinyPalette_SlowpokeGalarian,
-        .iconSprite = gMonIcon_SlowpokeGalarian,
+        .palette = gMonPalette_PagumonGalarian,
+        .shinyPalette = gMonShinyPalette_PagumonGalarian,
+        .iconSprite = gMonIcon_PagumonGalarian,
         .iconPalIndex = 1,
-        FOOTPRINT(Slowpoke)
+        FOOTPRINT(Pagumon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sSlowpokeGalarianLevelUpLearnset,
-        .teachableLearnset = sSlowpokeGalarianTeachableLearnset,
-        .formSpeciesIdTable = sSlowpokeFormSpeciesIdTable,
+        .levelUpLearnset = sPagumonGalarianLevelUpLearnset,
+        .teachableLearnset = sPagumonGalarianTeachableLearnset,
+        .formSpeciesIdTable = sPagumonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_GALARICA_CUFF, SPECIES_SLOWBRO_GALARIAN},
                                 {EVO_ITEM, ITEM_GALARICA_WREATH, SPECIES_SLOWKING_GALARIAN}),
     },
@@ -8192,7 +8192,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_SLOWPOKE
+#endif //P_FAMILY_PAGUMON
 
 #if P_FAMILY_MAGNEMITE
     [SPECIES_MAGNEMITE] =

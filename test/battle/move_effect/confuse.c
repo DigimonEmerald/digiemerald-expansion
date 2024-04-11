@@ -24,7 +24,7 @@ SINGLE_BATTLE_TEST("Teeter Dance confusion is blocked by Own Tempo")
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_SLOWPOKE) { Ability(ABILITY_OWN_TEMPO); }
+        OPPONENT(SPECIES_PAGUMON) { Ability(ABILITY_OWN_TEMPO); }
     } WHEN {
         TURN { MOVE(player, MOVE_TEETER_DANCE); }
     } SCENE {

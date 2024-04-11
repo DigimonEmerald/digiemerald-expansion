@@ -1449,8 +1449,8 @@ static const struct LevelUpMove sNyaromonGalarianLevelUpLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_NEGAMON
 
-#if P_FAMILY_SLOWPOKE
-static const struct LevelUpMove sSlowpokeLevelUpLearnset[] = {
+#if P_FAMILY_PAGUMON
+static const struct LevelUpMove sPagumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE(18, MOVE_DISABLE),
     LEVEL_UP_MOVE(22, MOVE_HEADBUTT),
@@ -1491,7 +1491,7 @@ static const struct LevelUpMove sSlowkingLevelUpLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 
 #if P_GALARIAN_FORMS
-static const struct LevelUpMove sSlowpokeGalarianLevelUpLearnset[] = {
+static const struct LevelUpMove sPagumonGalarianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_CURSE),
     LEVEL_UP_MOVE( 3, MOVE_GROWL),
@@ -1564,7 +1564,7 @@ static const struct LevelUpMove sSlowkingGalarianLevelUpLearnset[] = {
 };
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_SLOWPOKE
+#endif //P_FAMILY_PAGUMON
 
 #if P_FAMILY_MAGNEMITE
 static const struct LevelUpMove sMagnemiteLevelUpLearnset[] = {

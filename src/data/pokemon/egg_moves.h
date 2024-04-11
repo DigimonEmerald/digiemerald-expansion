@@ -632,8 +632,8 @@ const u16 gEggMoves[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_NEGAMON
 
-#if P_FAMILY_SLOWPOKE
-    egg_moves(SLOWPOKE,
+#if P_FAMILY_PAGUMON
+    egg_moves(PAGUMON,
         MOVE_BELLY_DRUM,
         MOVE_FUTURE_SIGHT,
         MOVE_STOMP,
@@ -646,13 +646,13 @@ const u16 gEggMoves[] = {
         MOVE_WONDER_ROOM,
         MOVE_BELCH),
 #if P_GALARIAN_FORMS
-    egg_moves(SLOWPOKE_GALARIAN,
+    egg_moves(PAGUMON_GALARIAN,
         MOVE_BELCH,
         MOVE_BELLY_DRUM,
         MOVE_BLOCK,
         MOVE_STOMP),
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_SLOWPOKE
+#endif //P_FAMILY_PAGUMON
 
 #if P_FAMILY_FARFETCHD
     egg_moves(FARFETCHD,

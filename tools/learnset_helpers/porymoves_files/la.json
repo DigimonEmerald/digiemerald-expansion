@@ -1687,7 +1687,7 @@
       "MOVE_WILD_CHARGE"
     ]
   },
-  "SLOWPOKE": {
+  "PAGUMON": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -17155,7 +17155,7 @@
       "MOVE_WILD_CHARGE"
     ]
   },
-  "SLOWPOKE_GALARIAN": {
+  "PAGUMON_GALARIAN": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],

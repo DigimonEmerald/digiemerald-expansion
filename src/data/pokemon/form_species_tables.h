@@ -224,10 +224,10 @@ static const u16 sNyaromonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_NEGAMON
 
-#if P_FAMILY_SLOWPOKE
-static const u16 sSlowpokeFormSpeciesIdTable[] = {
-    SPECIES_SLOWPOKE,
-    SPECIES_SLOWPOKE_GALARIAN,
+#if P_FAMILY_PAGUMON
+static const u16 sPagumonFormSpeciesIdTable[] = {
+    SPECIES_PAGUMON,
+    SPECIES_PAGUMON_GALARIAN,
     FORM_SPECIES_END,
 };
 
@@ -245,7 +245,7 @@ static const u16 sSlowkingFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_SLOWPOKE
+#endif //P_FAMILY_PAGUMON
 
 #if P_FAMILY_FARFETCHD
 static const u16 sFarfetchdFormSpeciesIdTable[] = {

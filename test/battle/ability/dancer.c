@@ -42,7 +42,7 @@ DOUBLE_BATTLE_TEST("Dancer can copy Teeter Dance and confuse both opposing targe
         PLAYER(SPECIES_WOBBUFFET)
         PLAYER(SPECIES_WYNAUT)
         OPPONENT(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); Item(ITEM_LUM_BERRY); }
-        OPPONENT(SPECIES_SLOWPOKE) { Ability(ABILITY_OWN_TEMPO); }
+        OPPONENT(SPECIES_PAGUMON) { Ability(ABILITY_OWN_TEMPO); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TEETER_DANCE); }
     } SCENE {
