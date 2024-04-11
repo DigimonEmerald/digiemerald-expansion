@@ -958,7 +958,7 @@ static const struct TrainerMon sParty_Owen[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 42,
-    .species = SPECIES_GRAVELER,
+    .species = SPECIES_MOONMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -1043,7 +1043,7 @@ static const struct TrainerMon sParty_Warren[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 33,
-    .species = SPECIES_GRAVELER,
+    .species = SPECIES_MOONMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -7923,7 +7923,7 @@ static const struct TrainerMon sParty_Alan[] = {
     },
     {
     .lvl = 22,
-    .species = SPECIES_GRAVELER,
+    .species = SPECIES_MOONMON,
     }
 };
 
@@ -8000,7 +8000,7 @@ static const struct TrainerMon sParty_Trent2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 24,
-    .species = SPECIES_GRAVELER,
+    .species = SPECIES_MOONMON,
     }
 };
 
@@ -8018,12 +8018,12 @@ static const struct TrainerMon sParty_Trent3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 27,
-    .species = SPECIES_GRAVELER,
+    .species = SPECIES_MOONMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 27,
-    .species = SPECIES_GRAVELER,
+    .species = SPECIES_MOONMON,
     }
 };
 
@@ -8036,17 +8036,17 @@ static const struct TrainerMon sParty_Trent4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 30,
-    .species = SPECIES_GRAVELER,
+    .species = SPECIES_MOONMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 30,
-    .species = SPECIES_GRAVELER,
+    .species = SPECIES_MOONMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 30,
-    .species = SPECIES_GRAVELER,
+    .species = SPECIES_MOONMON,
     }
 };
 
@@ -8054,17 +8054,17 @@ static const struct TrainerMon sParty_Trent5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 33,
-    .species = SPECIES_GRAVELER,
+    .species = SPECIES_MOONMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 33,
-    .species = SPECIES_GRAVELER,
+    .species = SPECIES_MOONMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 33,
-    .species = SPECIES_GRAVELER,
+    .species = SPECIES_MOONMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -8696,7 +8696,7 @@ static const struct TrainerMon sParty_TyraAndIvy[] = {
     },
     {
     .lvl = 20,
-    .species = SPECIES_GRAVELER,
+    .species = SPECIES_MOONMON,
     .moves = {MOVE_DEFENSE_CURL, MOVE_ROLLOUT, MOVE_MUD_SPORT, MOVE_ROCK_THROW}
     }
 };
@@ -11513,7 +11513,7 @@ static const struct TrainerMon sParty_Sawyer3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 28,
-    .species = SPECIES_GRAVELER,
+    .species = SPECIES_MOONMON,
     }
 };
 
@@ -11531,7 +11531,7 @@ static const struct TrainerMon sParty_Sawyer4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 30,
-    .species = SPECIES_GRAVELER,
+    .species = SPECIES_MOONMON,
     }
 };
 

@@ -1070,7 +1070,7 @@ static const union AnimCmd sAnim_Monimon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Graveler_1[] =
+static const union AnimCmd sAnim_Moonmon_1[] =
 {
     ANIMCMD_FRAME(0, 16),
     ANIMCMD_FRAME(1, 16),
@@ -1092,7 +1092,7 @@ static const union AnimCmd sAnim_Golem_1[] =
 
 #if P_ALOLAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(MonimonAlolan);
-PLACEHOLDER_ANIM_SINGLE_FRAME(GravelerAlolan);
+PLACEHOLDER_ANIM_SINGLE_FRAME(MoonmonAlolan);
 PLACEHOLDER_ANIM_SINGLE_FRAME(GolemAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_MONIMON
@@ -10397,11 +10397,11 @@ SINGLE_ANIMATION(Missimon);
 #endif //P_FAMILY_MINOMON
 #if P_FAMILY_MONIMON
 SINGLE_ANIMATION(Monimon);
-SINGLE_ANIMATION(Graveler);
+SINGLE_ANIMATION(Moonmon);
 SINGLE_ANIMATION(Golem);
 #if P_ALOLAN_FORMS
 SINGLE_ANIMATION(MonimonAlolan);
-SINGLE_ANIMATION(GravelerAlolan);
+SINGLE_ANIMATION(MoonmonAlolan);
 SINGLE_ANIMATION(GolemAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_MONIMON

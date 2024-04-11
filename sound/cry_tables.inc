@@ -176,7 +176,7 @@ gCryTable::
 .endif @ P_FAMILY_MINOMON
 .if P_FAMILY_MONIMON == TRUE
 	cry Cry_Monimon
-	cry Cry_Graveler
+	cry Cry_Moonmon
 	cry Cry_Golem
 .endif @ P_FAMILY_MONIMON
 .if P_FAMILY_PONYTA == TRUE
@@ -2602,7 +2602,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_MINOMON
 .if P_FAMILY_MONIMON == TRUE
 	cry_reverse Cry_Monimon
-	cry_reverse Cry_Graveler
+	cry_reverse Cry_Moonmon
 	cry_reverse Cry_Golem
 .endif @ P_FAMILY_MONIMON
 .if P_FAMILY_PONYTA == TRUE

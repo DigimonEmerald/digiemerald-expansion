@@ -197,9 +197,9 @@ static const u16 sMonimonFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
-static const u16 sGravelerFormSpeciesIdTable[] = {
-    SPECIES_GRAVELER,
-    SPECIES_GRAVELER_ALOLAN,
+static const u16 sMoonmonFormSpeciesIdTable[] = {
+    SPECIES_MOONMON,
+    SPECIES_MOONMON_ALOLAN,
     FORM_SPECIES_END,
 };
 
