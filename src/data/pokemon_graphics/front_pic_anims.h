@@ -630,8 +630,8 @@ static const union AnimCmd sAnim_Crobat_1[] =
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ICEBOTAMON
 
-#if P_FAMILY_ODDISH
-static const union AnimCmd sAnim_Oddish_1[] =
+#if P_FAMILY_ZERIMON
+static const union AnimCmd sAnim_Zerimon_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 11),
@@ -681,7 +681,7 @@ static const union AnimCmd sAnim_Bellossom_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ODDISH
+#endif //P_FAMILY_ZERIMON
 
 #if P_FAMILY_PARAS
 static const union AnimCmd sAnim_Paras_1[] =
@@ -10304,14 +10304,14 @@ SINGLE_ANIMATION(Yuramon);
 SINGLE_ANIMATION(Crobat);
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ICEBOTAMON
-#if P_FAMILY_ODDISH
-SINGLE_ANIMATION(Oddish);
+#if P_FAMILY_ZERIMON
+SINGLE_ANIMATION(Zerimon);
 SINGLE_ANIMATION(Gloom);
 SINGLE_ANIMATION(Vileplume);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Bellossom);
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ODDISH
+#endif //P_FAMILY_ZERIMON
 #if P_FAMILY_PARAS
 SINGLE_ANIMATION(Paras);
 SINGLE_ANIMATION(Parasect);

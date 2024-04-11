@@ -77,10 +77,10 @@
  * As a second example, to manually test that Stun Spore does not effect
  * Grass-types you might:
  * 1. Put a Wobbuffet that knows Stun Spore in your party.
- * 2. Battle a wild Oddish.
+ * 2. Battle a wild Zerimon.
  * 3. Use Stun Spore.
  * 4. Check that the move animation does not play.
- * 5. Check that a "It doesn't affect Foe Oddish…" message is shown.
+ * 5. Check that a "It doesn't affect Foe Zerimon…" message is shown.
  *
  * This can again be translated as follows:
  *
@@ -88,19 +88,19 @@
  *   {
  *       GIVEN {
  *           ASSUME(gMovesInfo[MOVE_STUN_SPORE].powderMove);
- *           ASSUME(gSpeciesInfo[SPECIES_ODDISH].types[0] == TYPE_GRASS);
- *           PLAYER(SPECIES_ODDISH); // 1.
- *           OPPONENT(SPECIES_ODDISH); // 2.
+ *           ASSUME(gSpeciesInfo[SPECIES_ZERIMON].types[0] == TYPE_GRASS);
+ *           PLAYER(SPECIES_ZERIMON); // 1.
+ *           OPPONENT(SPECIES_ZERIMON); // 2.
  *       } WHEN {
  *           TURN { MOVE(player, MOVE_STUN_SPORE); } // 3.
  *       } SCENE {
  *           NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_STUN_SPORE, player); // 4.
- *           MESSAGE("It doesn't affect Foe Oddish…"); // 5.
+ *           MESSAGE("It doesn't affect Foe Zerimon…"); // 5.
  *       }
  *   }
  *
  * The ASSUMEs are documenting the reasons why Stun Spore does not
- * affect Oddish, namely that Stun Spore is a powder move, and Oddish
+ * affect Zerimon, namely that Stun Spore is a powder move, and Zerimon
  * is a Grass-type. These ASSUMEs function similarly to the ones in
  * ASSUMPTIONS but apply only to the one test.
  *
@@ -110,7 +110,7 @@
  * together this says "The doesn't affect message is shown, and the Stun
  * Spore animation does not play at any time before that". Normally you
  * would only test one or the other, or even better, just
- * NOT STATUS_ICON(opponent, paralysis: TRUE); to say that Oddish was
+ * NOT STATUS_ICON(opponent, paralysis: TRUE); to say that Zerimon was
  * not paralyzed without specifying the exact outputs which led to that.
  *
  * As a final example, to test that Meditate works you might:

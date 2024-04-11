@@ -4616,8 +4616,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ICEBOTAMON
 
-#if P_FAMILY_ODDISH
-    [SPECIES_ODDISH] =
+#if P_FAMILY_ZERIMON
+    [SPECIES_ZERIMON] =
     {
         .baseHP        = 45,
         .baseAttack    = 50,
@@ -4637,9 +4637,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_NONE, ABILITY_RUN_AWAY },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Oddish"),
-        .cryId = CRY_ODDISH,
-        .natDexNum = NATIONAL_DEX_ODDISH,
+        .speciesName = _("Zerimon"),
+        .cryId = CRY_ZERIMON,
+        .natDexNum = NATIONAL_DEX_ZERIMON,
         .categoryName = _("Weed"),
         .height = 5,
         .weight = 54,
@@ -4652,22 +4652,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Oddish,
+        .frontPic = gMonFrontPic_Zerimon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 15,
-        .frontAnimFrames = sAnims_Oddish,
+        .frontAnimFrames = sAnims_Zerimon,
         .frontAnimId = ANIM_V_JUMPS_H_JUMPS,
-        .backPic = gMonBackPic_Oddish,
+        .backPic = gMonBackPic_Zerimon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Oddish,
-        .shinyPalette = gMonShinyPalette_Oddish,
-        .iconSprite = gMonIcon_Oddish,
+        .palette = gMonPalette_Zerimon,
+        .shinyPalette = gMonShinyPalette_Zerimon,
+        .iconSprite = gMonIcon_Zerimon,
         .iconPalIndex = 4,
-        FOOTPRINT(Oddish)
-        .levelUpLearnset = sOddishLevelUpLearnset,
-        .teachableLearnset = sOddishTeachableLearnset,
+        FOOTPRINT(Zerimon)
+        .levelUpLearnset = sZerimonLevelUpLearnset,
+        .teachableLearnset = sZerimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_GLOOM}),
     },
 
@@ -4857,7 +4857,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sBellossomTeachableLearnset,
     },
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ODDISH
+#endif //P_FAMILY_ZERIMON
 
 #if P_FAMILY_PARAS
     [SPECIES_PARAS] =

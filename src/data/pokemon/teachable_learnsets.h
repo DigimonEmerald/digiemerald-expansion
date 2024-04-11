@@ -2050,8 +2050,8 @@ static const u16 sCrobatTeachableLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ICEBOTAMON
 
-#if P_FAMILY_ODDISH
-static const u16 sOddishTeachableLearnset[] = {
+#if P_FAMILY_ZERIMON
+static const u16 sZerimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,
@@ -2152,7 +2152,7 @@ static const u16 sBellossomTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ODDISH
+#endif //P_FAMILY_ZERIMON
 
 #if P_FAMILY_PARAS
 static const u16 sParasTeachableLearnset[] = {

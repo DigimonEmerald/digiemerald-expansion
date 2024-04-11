@@ -315,8 +315,8 @@ const u16 gEggMoves[] = {
         MOVE_VENOM_DRENCH),
 #endif //P_FAMILY_ICEBOTAMON
 
-#if P_FAMILY_ODDISH
-    egg_moves(ODDISH,
+#if P_FAMILY_ZERIMON
+    egg_moves(ZERIMON,
         MOVE_RAZOR_LEAF,
         MOVE_FLAIL,
         MOVE_SYNTHESIS,
@@ -328,7 +328,7 @@ const u16 gEggMoves[] = {
         MOVE_NATURE_POWER,
         MOVE_AFTER_YOU,
         MOVE_STRENGTH_SAP),
-#endif //P_FAMILY_ODDISH
+#endif //P_FAMILY_ZERIMON
 
 #if P_FAMILY_PARAS
     egg_moves(PARAS,

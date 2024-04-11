@@ -644,10 +644,10 @@ Cry_Crobat::
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_ICEBOTAMON
 
-.if P_FAMILY_ODDISH == TRUE
+.if P_FAMILY_ZERIMON == TRUE
 	.align 2
-Cry_Oddish::
-	.incbin "sound/direct_sound_samples/cries/oddish.bin"
+Cry_Zerimon::
+	.incbin "sound/direct_sound_samples/cries/zerimon.bin"
 
 	.align 2
 Cry_Gloom::
@@ -662,7 +662,7 @@ Cry_Vileplume::
 Cry_Bellossom::
 	.incbin "sound/direct_sound_samples/cries/bellossom.bin"
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_ODDISH
+.endif @ P_FAMILY_ZERIMON
 
 .if P_FAMILY_PARAS == TRUE
 	.align 2
