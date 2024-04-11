@@ -788,7 +788,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                 {
                     [0] =
                     {
-                        .species = SPECIES_VULPIX,
+                        .species = SPECIES_RELEMON,
                         .heldItem = ITEM_LUM_BERRY,
                         .moves = {MOVE_WILL_O_WISP, MOVE_CONFUSE_RAY, MOVE_TAIL_WHIP, MOVE_OVERHEAT},
                         .hpEV = 252,
@@ -803,7 +803,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 15,
                         .abilityNum = 0,
                         .personality = 0xF,
-                        .nickname = _("VULPIX"),
+                        .nickname = _("RELEMON"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                     [1] =

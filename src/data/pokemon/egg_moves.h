@@ -243,8 +243,8 @@ const u16 gEggMoves[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_PUYOMON
 
-#if P_FAMILY_VULPIX
-    egg_moves(VULPIX,
+#if P_FAMILY_RELEMON
+    egg_moves(RELEMON,
         MOVE_FEINT_ATTACK,
         MOVE_HYPNOSIS,
         MOVE_FLAIL,
@@ -260,7 +260,7 @@ const u16 gEggMoves[] = {
         MOVE_TAIL_SLAP,
         MOVE_CAPTIVATE),
 #if P_ALOLAN_FORMS
-    egg_moves(VULPIX_ALOLAN,
+    egg_moves(RELEMON_ALOLAN,
         MOVE_AGILITY,
         MOVE_CHARM,
         MOVE_DISABLE,
@@ -276,7 +276,7 @@ const u16 gEggMoves[] = {
         MOVE_SECRET_POWER,
         MOVE_TAIL_SLAP),
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_VULPIX
+#endif //P_FAMILY_RELEMON
 
 #if P_FAMILY_JIGGLYPUFF
 #if P_GEN_2_CROSS_EVOS

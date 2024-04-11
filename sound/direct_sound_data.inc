@@ -602,15 +602,15 @@ Cry_Pyonmon::
 	.incbin "sound/direct_sound_samples/cries/pyonmon.bin"
 .endif @ P_FAMILY_PUYOMON
 
-.if P_FAMILY_VULPIX == TRUE
+.if P_FAMILY_RELEMON == TRUE
 	.align 2
-Cry_Vulpix::
-	.incbin "sound/direct_sound_samples/cries/vulpix.bin"
+Cry_Relemon::
+	.incbin "sound/direct_sound_samples/cries/relemon.bin"
 
 	.align 2
 Cry_Ninetales::
 	.incbin "sound/direct_sound_samples/cries/ninetales.bin"
-.endif @ P_FAMILY_VULPIX
+.endif @ P_FAMILY_RELEMON
 
 .if P_FAMILY_JIGGLYPUFF == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE

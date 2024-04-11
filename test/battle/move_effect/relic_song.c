@@ -43,7 +43,7 @@ SINGLE_BATTLE_TEST("Relic Song is prevented by Soundproof")
 SINGLE_BATTLE_TEST("Relic Song will become a Water-type move when used by a Pokémon with the Ability Liquid Voice")
 {
     GIVEN {
-        PLAYER(SPECIES_VULPIX);
+        PLAYER(SPECIES_RELEMON);
         OPPONENT(SPECIES_POPPLIO) { Ability(ABILITY_LIQUID_VOICE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_RELIC_SONG); }

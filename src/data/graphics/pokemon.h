@@ -620,14 +620,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_PUYOMON
 
-#if P_FAMILY_VULPIX
-    const u32 gMonFrontPic_Vulpix[] = INCBIN_U32("graphics/pokemon/vulpix/anim_front.4bpp.lz");
-    const u32 gMonPalette_Vulpix[] = INCBIN_U32("graphics/pokemon/vulpix/normal.gbapal.lz");
-    const u32 gMonBackPic_Vulpix[] = INCBIN_U32("graphics/pokemon/vulpix/back.4bpp.lz");
-    const u32 gMonShinyPalette_Vulpix[] = INCBIN_U32("graphics/pokemon/vulpix/shiny.gbapal.lz");
-    const u8 gMonIcon_Vulpix[] = INCBIN_U8("graphics/pokemon/vulpix/icon.4bpp");
+#if P_FAMILY_RELEMON
+    const u32 gMonFrontPic_Relemon[] = INCBIN_U32("graphics/pokemon/relemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Relemon[] = INCBIN_U32("graphics/pokemon/relemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Relemon[] = INCBIN_U32("graphics/pokemon/relemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Relemon[] = INCBIN_U32("graphics/pokemon/relemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Relemon[] = INCBIN_U8("graphics/pokemon/relemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Vulpix[] = INCBIN_U8("graphics/pokemon/vulpix/footprint.1bpp");
+    const u8 gMonFootprint_Relemon[] = INCBIN_U8("graphics/pokemon/relemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Ninetales[] = INCBIN_U32("graphics/pokemon/ninetales/anim_front.4bpp.lz");
@@ -640,11 +640,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
 #if P_ALOLAN_FORMS
-    const u32 gMonFrontPic_VulpixAlolan[] = INCBIN_U32("graphics/pokemon/vulpix/alolan/front.4bpp.lz");
-    const u32 gMonPalette_VulpixAlolan[] = INCBIN_U32("graphics/pokemon/vulpix/alolan/normal.gbapal.lz");
-    const u32 gMonBackPic_VulpixAlolan[] = INCBIN_U32("graphics/pokemon/vulpix/alolan/back.4bpp.lz");
-    const u32 gMonShinyPalette_VulpixAlolan[] = INCBIN_U32("graphics/pokemon/vulpix/alolan/shiny.gbapal.lz");
-    const u8 gMonIcon_VulpixAlolan[] = INCBIN_U8("graphics/pokemon/vulpix/alolan/icon.4bpp");
+    const u32 gMonFrontPic_RelemonAlolan[] = INCBIN_U32("graphics/pokemon/relemon/alolan/front.4bpp.lz");
+    const u32 gMonPalette_RelemonAlolan[] = INCBIN_U32("graphics/pokemon/relemon/alolan/normal.gbapal.lz");
+    const u32 gMonBackPic_RelemonAlolan[] = INCBIN_U32("graphics/pokemon/relemon/alolan/back.4bpp.lz");
+    const u32 gMonShinyPalette_RelemonAlolan[] = INCBIN_U32("graphics/pokemon/relemon/alolan/shiny.gbapal.lz");
+    const u8 gMonIcon_RelemonAlolan[] = INCBIN_U8("graphics/pokemon/relemon/alolan/icon.4bpp");
 
     const u32 gMonFrontPic_NinetalesAlolan[] = INCBIN_U32("graphics/pokemon/ninetales/alolan/front.4bpp.lz");
     const u32 gMonPalette_NinetalesAlolan[] = INCBIN_U32("graphics/pokemon/ninetales/alolan/normal.gbapal.lz");
@@ -652,7 +652,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_NinetalesAlolan[] = INCBIN_U32("graphics/pokemon/ninetales/alolan/shiny.gbapal.lz");
     const u8 gMonIcon_NinetalesAlolan[] = INCBIN_U8("graphics/pokemon/ninetales/alolan/icon.4bpp");
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_VULPIX
+#endif //P_FAMILY_RELEMON
 
 #if P_FAMILY_JIGGLYPUFF
 #if P_GEN_2_CROSS_EVOS

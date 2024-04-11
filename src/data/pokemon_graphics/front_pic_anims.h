@@ -501,8 +501,8 @@ static const union AnimCmd sAnim_Pyonmon_1[] =
 };
 #endif //P_FAMILY_PUYOMON
 
-#if P_FAMILY_VULPIX
-static const union AnimCmd sAnim_Vulpix_1[] =
+#if P_FAMILY_RELEMON
+static const union AnimCmd sAnim_Relemon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -523,10 +523,10 @@ static const union AnimCmd sAnim_Ninetales_1[] =
 };
 
 #if P_ALOLAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(VulpixAlolan);
+PLACEHOLDER_ANIM_SINGLE_FRAME(RelemonAlolan);
 PLACEHOLDER_ANIM_SINGLE_FRAME(NinetalesAlolan);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_VULPIX
+#endif //P_FAMILY_RELEMON
 
 #if P_FAMILY_JIGGLYPUFF
 #if P_GEN_2_CROSS_EVOS
@@ -10282,14 +10282,14 @@ SINGLE_ANIMATION(Cleffa);
 SINGLE_ANIMATION(Puyomon);
 SINGLE_ANIMATION(Pyonmon);
 #endif //P_FAMILY_PUYOMON
-#if P_FAMILY_VULPIX
-SINGLE_ANIMATION(Vulpix);
+#if P_FAMILY_RELEMON
+SINGLE_ANIMATION(Relemon);
 SINGLE_ANIMATION(Ninetales);
 #if P_ALOLAN_FORMS
-SINGLE_ANIMATION(VulpixAlolan);
+SINGLE_ANIMATION(RelemonAlolan);
 SINGLE_ANIMATION(NinetalesAlolan);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_VULPIX
+#endif //P_FAMILY_RELEMON
 #if P_FAMILY_JIGGLYPUFF
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Igglybuff);

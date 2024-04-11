@@ -1813,8 +1813,8 @@ const u16 gEasyChatWordsByLetter_V[] = {
     EC_POKEMON_NATIONAL(VOLTORB),
     EC_WORD_VORACIOUS,
     DOUBLE_SPECIES_NAME
-    EC_POKEMON(VULPIX),
-    EC_POKEMON_NATIONAL(VULPIX),
+    EC_POKEMON(RELEMON),
+    EC_POKEMON_NATIONAL(RELEMON),
 };
 
 const u16 gEasyChatWordsByLetter_W[] = {
@@ -2523,8 +2523,8 @@ const u16 gEasyChatWordsByLetter_UnusedJapaneseRe[] = {
 const u16 gEasyChatWordsByLetter_UnusedJapaneseRo[] = {
     EC_MOVE2(SKULL_BASH),
     DOUBLE_SPECIES_NAME
-    EC_POKEMON_NATIONAL(VULPIX),
-    EC_POKEMON(VULPIX),
+    EC_POKEMON_NATIONAL(RELEMON),
+    EC_POKEMON(RELEMON),
     EC_POKEMON(ROSELIA),
     EC_MOVE2(LOCK_ON),
     EC_MOVE2(ROCK_BLAST),

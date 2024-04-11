@@ -1670,8 +1670,8 @@ static const u16 sPyonmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_PUYOMON
 
-#if P_FAMILY_VULPIX
-static const u16 sVulpixTeachableLearnset[] = {
+#if P_FAMILY_RELEMON
+static const u16 sRelemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -1731,7 +1731,7 @@ static const u16 sNinetalesTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sVulpixAlolanTeachableLearnset[] = {
+static const u16 sRelemonAlolanTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIG,
@@ -1791,7 +1791,7 @@ static const u16 sNinetalesAlolanTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_VULPIX
+#endif //P_FAMILY_RELEMON
 
 #if P_FAMILY_JIGGLYPUFF
 #if P_GEN_2_CROSS_EVOS

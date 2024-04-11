@@ -4030,8 +4030,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_PUYOMON
 
-#if P_FAMILY_VULPIX
-    [SPECIES_VULPIX] =
+#if P_FAMILY_RELEMON
+    [SPECIES_RELEMON] =
     {
         .baseHP        = 38,
         .baseAttack    = 41,
@@ -4051,9 +4051,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_DROUGHT },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Vulpix"),
-        .cryId = CRY_VULPIX,
-        .natDexNum = NATIONAL_DEX_VULPIX,
+        .speciesName = _("Relemon"),
+        .cryId = CRY_RELEMON,
+        .natDexNum = NATIONAL_DEX_RELEMON,
         .categoryName = _("Fox"),
         .height = 6,
         .weight = 99,
@@ -4066,23 +4066,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Vulpix,
+        .frontPic = gMonFrontPic_Relemon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Vulpix,
+        .frontAnimFrames = sAnims_Relemon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Vulpix,
+        .backPic = gMonBackPic_Relemon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Vulpix,
-        .shinyPalette = gMonShinyPalette_Vulpix,
-        .iconSprite = gMonIcon_Vulpix,
+        .palette = gMonPalette_Relemon,
+        .shinyPalette = gMonShinyPalette_Relemon,
+        .iconSprite = gMonIcon_Relemon,
         .iconPalIndex = 5,
-        FOOTPRINT(Vulpix)
-        .levelUpLearnset = sVulpixLevelUpLearnset,
-        .teachableLearnset = sVulpixTeachableLearnset,
-        .formSpeciesIdTable = sVulpixFormSpeciesIdTable,
+        FOOTPRINT(Relemon)
+        .levelUpLearnset = sRelemonLevelUpLearnset,
+        .teachableLearnset = sRelemonTeachableLearnset,
+        .formSpeciesIdTable = sRelemonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_NINETALES}),
     },
 
@@ -4142,7 +4142,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_ALOLAN_FORMS
-    [SPECIES_VULPIX_ALOLAN] =
+    [SPECIES_RELEMON_ALOLAN] =
     {
         .baseHP        = 38,
         .baseAttack    = 41,
@@ -4162,9 +4162,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SNOW_CLOAK, ABILITY_NONE, ABILITY_SNOW_WARNING },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Vulpix"),
-        .cryId = CRY_VULPIX,
-        .natDexNum = NATIONAL_DEX_VULPIX,
+        .speciesName = _("Relemon"),
+        .cryId = CRY_RELEMON,
+        .natDexNum = NATIONAL_DEX_RELEMON,
         .categoryName = _("Fox"),
         .height = 6,
         .weight = 99,
@@ -4177,24 +4177,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_VulpixAlolan,
+        .frontPic = gMonFrontPic_RelemonAlolan,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_VulpixAlolan,
+        .frontAnimFrames = sAnims_RelemonAlolan,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_VulpixAlolan,
+        .backPic = gMonBackPic_RelemonAlolan,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_VulpixAlolan,
-        .shinyPalette = gMonShinyPalette_VulpixAlolan,
-        .iconSprite = gMonIcon_VulpixAlolan,
+        .palette = gMonPalette_RelemonAlolan,
+        .shinyPalette = gMonShinyPalette_RelemonAlolan,
+        .iconSprite = gMonIcon_RelemonAlolan,
         .iconPalIndex = 2,
-        FOOTPRINT(Vulpix)
+        FOOTPRINT(Relemon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sVulpixAlolanLevelUpLearnset,
-        .teachableLearnset = sVulpixAlolanTeachableLearnset,
-        .formSpeciesIdTable = sVulpixFormSpeciesIdTable,
+        .levelUpLearnset = sRelemonAlolanLevelUpLearnset,
+        .teachableLearnset = sRelemonAlolanTeachableLearnset,
+        .formSpeciesIdTable = sRelemonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_ICE_STONE, SPECIES_NINETALES_ALOLAN}),
     },
 
@@ -4254,7 +4254,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sNinetalesFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_VULPIX
+#endif //P_FAMILY_RELEMON
 
 #if P_FAMILY_JIGGLYPUFF
 #if P_UPDATED_TYPES >= GEN_6

@@ -116,10 +116,10 @@ static const u16 sPoyomonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_POPOMON
 
-#if P_FAMILY_VULPIX
-static const u16 sVulpixFormSpeciesIdTable[] = {
-    SPECIES_VULPIX,
-    SPECIES_VULPIX_ALOLAN,
+#if P_FAMILY_RELEMON
+static const u16 sRelemonFormSpeciesIdTable[] = {
+    SPECIES_RELEMON,
+    SPECIES_RELEMON_ALOLAN,
     FORM_SPECIES_END,
 };
 
@@ -128,7 +128,7 @@ static const u16 sNinetalesFormSpeciesIdTable[] = {
     SPECIES_NINETALES_ALOLAN,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_VULPIX
+#endif //P_FAMILY_RELEMON
 
 #if P_FAMILY_DIGLETT
 static const u16 sDiglettFormSpeciesIdTable[] = {

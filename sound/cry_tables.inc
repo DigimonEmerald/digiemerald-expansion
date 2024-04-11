@@ -84,10 +84,10 @@ gCryTable::
 	cry Cry_Puyomon
 	cry Cry_Pyonmon
 .endif @ P_FAMILY_PUYOMON
-.if P_FAMILY_VULPIX == TRUE
-	cry Cry_Vulpix
+.if P_FAMILY_RELEMON == TRUE
+	cry Cry_Relemon
 	cry Cry_Ninetales
-.endif @ P_FAMILY_VULPIX
+.endif @ P_FAMILY_RELEMON
 .if P_FAMILY_JIGGLYPUFF == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Igglybuff
@@ -2510,10 +2510,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Puyomon
 	cry_reverse Cry_Pyonmon
 .endif @ P_FAMILY_PUYOMON
-.if P_FAMILY_VULPIX == TRUE
-	cry_reverse Cry_Vulpix
+.if P_FAMILY_RELEMON == TRUE
+	cry_reverse Cry_Relemon
 	cry_reverse Cry_Ninetales
-.endif @ P_FAMILY_VULPIX
+.endif @ P_FAMILY_RELEMON
 .if P_FAMILY_JIGGLYPUFF == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Igglybuff

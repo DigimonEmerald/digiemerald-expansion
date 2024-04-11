@@ -548,8 +548,8 @@ static const struct LevelUpMove sPyonmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_PUYOMON
 
-#if P_FAMILY_VULPIX
-static const struct LevelUpMove sVulpixLevelUpLearnset[] = {
+#if P_FAMILY_RELEMON
+static const struct LevelUpMove sRelemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE(16, MOVE_QUICK_ATTACK),
@@ -569,7 +569,7 @@ static const struct LevelUpMove sNinetalesLevelUpLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const struct LevelUpMove sVulpixAlolanLevelUpLearnset[] = {
+static const struct LevelUpMove sRelemonAlolanLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE( 4, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 7, MOVE_ROAR),
@@ -605,7 +605,7 @@ static const struct LevelUpMove sNinetalesAlolanLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_VULPIX
+#endif //P_FAMILY_RELEMON
 
 #if P_FAMILY_JIGGLYPUFF
 #if P_GEN_2_CROSS_EVOS
