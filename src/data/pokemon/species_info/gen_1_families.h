@@ -5025,10 +5025,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Bibimon)
         .levelUpLearnset = sBibimonLevelUpLearnset,
         .teachableLearnset = sBibimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_VENOMOTH}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_BOSAMON}),
     },
 
-    [SPECIES_VENOMOTH] =
+    [SPECIES_BOSAMON] =
     {
         .baseHP        = 70,
         .baseAttack    = 65,
@@ -5049,14 +5049,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SHIELD_DUST, ABILITY_TINTED_LENS, ABILITY_WONDER_SKIN },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Venomoth"),
-        .cryId = CRY_VENOMOTH,
-        .natDexNum = NATIONAL_DEX_VENOMOTH,
+        .speciesName = _("Bosamon"),
+        .cryId = CRY_BOSAMON,
+        .natDexNum = NATIONAL_DEX_BOSAMON,
         .categoryName = _("Poison Moth"),
         .height = 15,
         .weight = 125,
         .description = COMPOUND_STRING(
-            "Venomoth are nocturnal--they are only\n"
+            "Bosamon are nocturnal--they are only\n"
             "active at night. Their favorite prey are\n"
             "insects that gather around streetlights,\n"
             "attracted by the light in the darkness."),
@@ -5064,23 +5064,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 2,
         .trainerScale = 256,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Venomoth,
+        .frontPic = gMonFrontPic_Bosamon,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Venomoth,
+        .frontAnimFrames = sAnims_Bosamon,
         .frontAnimId = ANIM_ZIGZAG_SLOW,
         .enemyMonElevation = 16,
-        .backPic = gMonBackPic_Venomoth,
+        .backPic = gMonBackPic_Bosamon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Venomoth,
-        .shinyPalette = gMonShinyPalette_Venomoth,
-        .iconSprite = gMonIcon_Venomoth,
+        .palette = gMonPalette_Bosamon,
+        .shinyPalette = gMonShinyPalette_Bosamon,
+        .iconSprite = gMonIcon_Bosamon,
         .iconPalIndex = 2,
-        FOOTPRINT(Venomoth)
-        .levelUpLearnset = sVenomothLevelUpLearnset,
-        .teachableLearnset = sVenomothTeachableLearnset,
+        FOOTPRINT(Bosamon)
+        .levelUpLearnset = sBosamonLevelUpLearnset,
+        .teachableLearnset = sBosamonTeachableLearnset,
     },
 #endif //P_FAMILY_BIBIMON
 

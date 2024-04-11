@@ -798,13 +798,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Bibimon[] = INCBIN_U8("graphics/pokemon/bibimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Venomoth[] = INCBIN_U32("graphics/pokemon/venomoth/anim_front.4bpp.lz");
-    const u32 gMonPalette_Venomoth[] = INCBIN_U32("graphics/pokemon/venomoth/normal.gbapal.lz");
-    const u32 gMonBackPic_Venomoth[] = INCBIN_U32("graphics/pokemon/venomoth/back.4bpp.lz");
-    const u32 gMonShinyPalette_Venomoth[] = INCBIN_U32("graphics/pokemon/venomoth/shiny.gbapal.lz");
-    const u8 gMonIcon_Venomoth[] = INCBIN_U8("graphics/pokemon/venomoth/icon.4bpp");
+    const u32 gMonFrontPic_Bosamon[] = INCBIN_U32("graphics/pokemon/bosamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Bosamon[] = INCBIN_U32("graphics/pokemon/bosamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Bosamon[] = INCBIN_U32("graphics/pokemon/bosamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Bosamon[] = INCBIN_U32("graphics/pokemon/bosamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Bosamon[] = INCBIN_U8("graphics/pokemon/bosamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Venomoth[] = INCBIN_U8("graphics/pokemon/venomoth/footprint.1bpp");
+    const u8 gMonFootprint_Bosamon[] = INCBIN_U8("graphics/pokemon/bosamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_BIBIMON
 

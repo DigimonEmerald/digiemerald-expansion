@@ -2249,7 +2249,7 @@ static const u16 sBibimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sVenomothTeachableLearnset[] = {
+static const u16 sBosamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,

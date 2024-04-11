@@ -680,8 +680,8 @@ Cry_Bibimon::
 	.incbin "sound/direct_sound_samples/cries/bibimon.bin"
 
 	.align 2
-Cry_Venomoth::
-	.incbin "sound/direct_sound_samples/cries/venomoth.bin"
+Cry_Bosamon::
+	.incbin "sound/direct_sound_samples/cries/bosamon.bin"
 .endif @ P_FAMILY_BIBIMON
 
 .if P_FAMILY_DIGLETT == TRUE

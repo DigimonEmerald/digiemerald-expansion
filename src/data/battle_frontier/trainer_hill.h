@@ -1291,7 +1291,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [4] =
                     {
-                        .species = SPECIES_VENOMOTH,
+                        .species = SPECIES_BOSAMON,
                         .heldItem = ITEM_BRIGHT_POWDER,
                         .moves = {MOVE_SKILL_SWAP, MOVE_SIGNAL_BEAM, MOVE_SLEEP_POWDER, MOVE_TOXIC},
                         .attackEV = 255,
@@ -1305,7 +1305,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 5,
                         .abilityNum = 0,
                         .personality = 0x80,
-                        .nickname = _("VENOMOTH"),
+                        .nickname = _("BOSAMON"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                     [5] =

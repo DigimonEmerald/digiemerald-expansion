@@ -116,7 +116,7 @@ gCryTable::
 .endif @ P_FAMILY_ARGOMON_IT
 .if P_FAMILY_BIBIMON == TRUE
 	cry Cry_Bibimon
-	cry Cry_Venomoth
+	cry Cry_Bosamon
 .endif @ P_FAMILY_BIBIMON
 .if P_FAMILY_DIGLETT == TRUE
 	cry Cry_Diglett
@@ -2542,7 +2542,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_ARGOMON_IT
 .if P_FAMILY_BIBIMON == TRUE
 	cry_reverse Cry_Bibimon
-	cry_reverse Cry_Venomoth
+	cry_reverse Cry_Bosamon
 .endif @ P_FAMILY_BIBIMON
 .if P_FAMILY_DIGLETT == TRUE
 	cry_reverse Cry_Diglett
