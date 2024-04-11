@@ -4521,7 +4521,7 @@ static const u16 sSakuttomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sMukTeachableLearnset[] = {
+static const u16 sSunmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
@@ -4608,7 +4608,7 @@ static const u16 sSakuttomonAlolanTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sMukAlolanTeachableLearnset[] = {
+static const u16 sSunmonAlolanTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,

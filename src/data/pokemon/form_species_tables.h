@@ -262,9 +262,9 @@ static const u16 sSakuttomonFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
-static const u16 sMukFormSpeciesIdTable[] = {
-    SPECIES_MUK,
-    SPECIES_MUK_ALOLAN,
+static const u16 sSunmonFormSpeciesIdTable[] = {
+    SPECIES_SUNMON,
+    SPECIES_SUNMON_ALOLAN,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_SAKUTTOMON

@@ -1272,7 +1272,7 @@ static const union AnimCmd sAnim_Sakuttomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Muk_1[] =
+static const union AnimCmd sAnim_Sunmon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -1284,7 +1284,7 @@ static const union AnimCmd sAnim_Muk_1[] =
 
 #if P_ALOLAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(SakuttomonAlolan);
-PLACEHOLDER_ANIM_SINGLE_FRAME(MukAlolan);
+PLACEHOLDER_ANIM_SINGLE_FRAME(SunmonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_SAKUTTOMON
 
@@ -10454,10 +10454,10 @@ SINGLE_ANIMATION(Puyoyomon);
 #endif //P_FAMILY_PUSURIMON
 #if P_FAMILY_SAKUTTOMON
 SINGLE_ANIMATION(Sakuttomon);
-SINGLE_ANIMATION(Muk);
+SINGLE_ANIMATION(Sunmon);
 #if P_ALOLAN_FORMS
 SINGLE_ANIMATION(SakuttomonAlolan);
-SINGLE_ANIMATION(MukAlolan);
+SINGLE_ANIMATION(SunmonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_SAKUTTOMON
 #if P_FAMILY_SHELLDER

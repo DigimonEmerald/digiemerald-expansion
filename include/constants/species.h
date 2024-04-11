@@ -90,7 +90,7 @@
 #define SPECIES_PUSURIMON                                    86
 #define SPECIES_PUYOYOMON                                 87
 #define SPECIES_SAKUTTOMON                                  88
-#define SPECIES_MUK                                     89
+#define SPECIES_SUNMON                                     89
 #define SPECIES_SHELLDER                                90
 #define SPECIES_CLOYSTER                                91
 #define SPECIES_GASTLY                                  92
@@ -1029,7 +1029,7 @@
 #define SPECIES_MOONMON_ALOLAN                         968
 #define SPECIES_MOTIMON_ALOLAN                            969
 #define SPECIES_SAKUTTOMON_ALOLAN                           970
-#define SPECIES_MUK_ALOLAN                              971
+#define SPECIES_SUNMON_ALOLAN                              971
 #define SPECIES_EXEGGUTOR_ALOLAN                        972
 #define SPECIES_MAROWAK_ALOLAN                          973
 #define SPECIES_CALUMON_GALARIAN                         974

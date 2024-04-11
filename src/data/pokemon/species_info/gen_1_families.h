@@ -8829,10 +8829,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sSakuttomonLevelUpLearnset,
         .teachableLearnset = sSakuttomonTeachableLearnset,
         .formSpeciesIdTable = sSakuttomonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_MUK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_SUNMON}),
     },
 
-    [SPECIES_MUK] =
+    [SPECIES_SUNMON] =
     {
         .baseHP        = 105,
         .baseAttack    = 105,
@@ -8853,39 +8853,39 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_STENCH, ABILITY_STICKY_HOLD, ABILITY_POISON_TOUCH },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Muk"),
-        .cryId = CRY_MUK,
-        .natDexNum = NATIONAL_DEX_MUK,
+        .speciesName = _("Sunmon"),
+        .cryId = CRY_SUNMON,
+        .natDexNum = NATIONAL_DEX_SUNMON,
         .categoryName = _("Sludge"),
         .height = 12,
         .weight = 300,
         .description = COMPOUND_STRING(
             "It prefers warm and humid habitats.\n"
             "In the summertime, the toxic substances\n"
-            "in its body intensify, making Muk reek like\n"
+            "in its body intensify, making Sunmon reek like\n"
             "putrid kitchen garbage."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Muk,
+        .frontPic = gMonFrontPic_Sunmon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Muk,
+        .frontAnimFrames = sAnims_Sunmon,
         .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
         .frontAnimDelay = 45,
-        .backPic = gMonBackPic_Muk,
+        .backPic = gMonBackPic_Sunmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_H_STRETCH,
-        .palette = gMonPalette_Muk,
-        .shinyPalette = gMonShinyPalette_Muk,
-        .iconSprite = gMonIcon_Muk,
+        .palette = gMonPalette_Sunmon,
+        .shinyPalette = gMonShinyPalette_Sunmon,
+        .iconSprite = gMonIcon_Sunmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Muk)
-        .levelUpLearnset = sMukLevelUpLearnset,
-        .teachableLearnset = sMukTeachableLearnset,
-        .formSpeciesIdTable = sMukFormSpeciesIdTable,
+        FOOTPRINT(Sunmon)
+        .levelUpLearnset = sSunmonLevelUpLearnset,
+        .teachableLearnset = sSunmonTeachableLearnset,
+        .formSpeciesIdTable = sSunmonFormSpeciesIdTable,
     },
 
 #if P_ALOLAN_FORMS
@@ -8942,10 +8942,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sSakuttomonAlolanLevelUpLearnset,
         .teachableLearnset = sSakuttomonAlolanTeachableLearnset,
         .formSpeciesIdTable = sSakuttomonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_MUK_ALOLAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_SUNMON_ALOLAN}),
     },
 
-    [SPECIES_MUK_ALOLAN] =
+    [SPECIES_SUNMON_ALOLAN] =
     {
         .baseHP        = 105,
         .baseAttack    = 105,
@@ -8967,9 +8967,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_POISON_TOUCH, ABILITY_GLUTTONY, ABILITY_POWER_OF_ALCHEMY },
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
-        .speciesName = _("Muk"),
-        .cryId = CRY_MUK,
-        .natDexNum = NATIONAL_DEX_MUK,
+        .speciesName = _("Sunmon"),
+        .cryId = CRY_SUNMON,
+        .natDexNum = NATIONAL_DEX_SUNMON,
         .categoryName = _("Sludge"),
         .height = 10,
         .weight = 520,
@@ -8982,24 +8982,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 2,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_MukAlolan,
+        .frontPic = gMonFrontPic_SunmonAlolan,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_MukAlolan,
+        .frontAnimFrames = sAnims_SunmonAlolan,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_MukAlolan,
+        .backPic = gMonBackPic_SunmonAlolan,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_MukAlolan,
-        .shinyPalette = gMonShinyPalette_MukAlolan,
-        .iconSprite = gMonIcon_MukAlolan,
+        .palette = gMonPalette_SunmonAlolan,
+        .shinyPalette = gMonShinyPalette_SunmonAlolan,
+        .iconSprite = gMonIcon_SunmonAlolan,
         .iconPalIndex = 0,
-        FOOTPRINT(Muk)
+        FOOTPRINT(Sunmon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sMukAlolanLevelUpLearnset,
-        .teachableLearnset = sMukAlolanTeachableLearnset,
-        .formSpeciesIdTable = sMukFormSpeciesIdTable,
+        .levelUpLearnset = sSunmonAlolanLevelUpLearnset,
+        .teachableLearnset = sSunmonAlolanTeachableLearnset,
+        .formSpeciesIdTable = sSunmonFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_SAKUTTOMON

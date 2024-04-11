@@ -219,7 +219,7 @@ gCryTable::
 .endif @ P_FAMILY_PUSURIMON
 .if P_FAMILY_SAKUTTOMON == TRUE
 	cry Cry_Sakuttomon
-	cry Cry_Muk
+	cry Cry_Sunmon
 .endif @ P_FAMILY_SAKUTTOMON
 .if P_FAMILY_SHELLDER == TRUE
 	cry Cry_Shellder
@@ -2645,7 +2645,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_PUSURIMON
 .if P_FAMILY_SAKUTTOMON == TRUE
 	cry_reverse Cry_Sakuttomon
-	cry_reverse Cry_Muk
+	cry_reverse Cry_Sunmon
 .endif @ P_FAMILY_SAKUTTOMON
 .if P_FAMILY_SHELLDER == TRUE
 	cry_reverse Cry_Shellder

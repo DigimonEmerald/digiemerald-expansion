@@ -11138,7 +11138,7 @@
       "MOVE_THUNDER_PUNCH"
     ]
   },
-  "MUK": {
+  "SUNMON": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -106456,7 +106456,7 @@
       "MOVE_THUNDER_PUNCH"
     ]
   },
-  "MUK_ALOLAN": {
+  "SUNMON_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 0,
