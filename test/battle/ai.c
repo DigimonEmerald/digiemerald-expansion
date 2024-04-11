@@ -756,14 +756,14 @@ AI_DOUBLE_BATTLE_TEST("AI will not try to switch for the same pokemon for 2 spot
         PLAYER(SPECIES_CHOROMON);
         PLAYER(SPECIES_CHOROMON);
         // No moves to damage player.
-        OPPONENT(SPECIES_GENGAR) { Moves(MOVE_SHADOW_BALL); }
+        OPPONENT(SPECIES_TSUMEMON) { Moves(MOVE_SHADOW_BALL); }
         OPPONENT(SPECIES_TORBALLMON) { Moves(MOVE_SHADOW_BALL); }
-        OPPONENT(SPECIES_GENGAR) { Moves(MOVE_SHADOW_BALL); }
+        OPPONENT(SPECIES_TSUMEMON) { Moves(MOVE_SHADOW_BALL); }
         OPPONENT(SPECIES_MOKUMON) { Moves(MOVE_HEADBUTT); }
     } WHEN {
         TURN { EXPECT_SWITCH(opponentLeft, 3); };
     } SCENE {
-        MESSAGE("{PKMN} TRAINER LEAF withdrew Gengar!");
+        MESSAGE("{PKMN} TRAINER LEAF withdrew Tsumemon!");
         MESSAGE("{PKMN} TRAINER LEAF sent out Mokumon!");
         NONE_OF {
             MESSAGE("{PKMN} TRAINER LEAF withdrew Torballmon!");

@@ -3916,7 +3916,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [3] =
                                         {
-                                            .species = SPECIES_GENGAR,
+                                            .species = SPECIES_TSUMEMON,
                                             .heldItem = ITEM_LUM_BERRY,
                                             .moves = {MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH},
                                             .hpEV = 6,
@@ -3931,7 +3931,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0xF,
-                                            .nickname = _("GENGAR"),
+                                            .nickname = _("TSUMEMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [4] =
@@ -4382,7 +4382,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [5] =
                                         {
-                                            .species = SPECIES_GENGAR,
+                                            .species = SPECIES_TSUMEMON,
                                             .heldItem = ITEM_FOCUS_BAND,
                                             .moves = {MOVE_CONFUSE_RAY, MOVE_MEAN_LOOK, MOVE_GIGA_DRAIN, MOVE_WILL_O_WISP},
                                             .hpEV = 252,
@@ -4397,7 +4397,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x14,
-                                            .nickname = _("GENGAR"),
+                                            .nickname = _("TSUMEMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                 },
@@ -4708,7 +4708,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [1] =
                                         {
-                                            .species = SPECIES_GENGAR,
+                                            .species = SPECIES_TSUMEMON,
                                             .heldItem = ITEM_LUM_BERRY,
                                             .moves = {MOVE_PSYCHIC, MOVE_GIGA_DRAIN, MOVE_WILL_O_WISP, MOVE_DESTINY_BOND},
                                             .speedEV = 255,
@@ -4722,7 +4722,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x8C,
-                                            .nickname = _("GENGAR"),
+                                            .nickname = _("TSUMEMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [2] =
@@ -4746,7 +4746,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [3] =
                                         {
-                                            .species = SPECIES_GENGAR,
+                                            .species = SPECIES_TSUMEMON,
                                             .heldItem = ITEM_SALAC_BERRY,
                                             .moves = {MOVE_EXPLOSION, MOVE_MEAN_LOOK, MOVE_SHADOW_BALL, MOVE_CONFUSE_RAY},
                                             .attackEV = 255,
@@ -4760,7 +4760,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x3,
-                                            .nickname = _("GENGAR"),
+                                            .nickname = _("TSUMEMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [4] =

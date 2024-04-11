@@ -1838,7 +1838,7 @@ static const struct LevelUpMove sTorballmonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sGengarLevelUpLearnset[] = {
+static const struct LevelUpMove sTsumemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LICK),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE( 1, MOVE_NIGHT_SHADE),

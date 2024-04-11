@@ -1331,7 +1331,7 @@ static const union AnimCmd sAnim_Torballmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Gengar_1[] =
+static const union AnimCmd sAnim_Tsumemon_1[] =
 {
     ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(1, 40),
@@ -1340,11 +1340,11 @@ static const union AnimCmd sAnim_Gengar_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(GengarMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(TsumemonMega);
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GIGANTAMAX_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(GengarGigantamax);
+PLACEHOLDER_ANIM_SINGLE_FRAME(TsumemonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_TOKOMON_X
 
@@ -10467,12 +10467,12 @@ SINGLE_ANIMATION(Tokomon);
 #if P_FAMILY_TOKOMON_X
 SINGLE_ANIMATION(Tokomon_x);
 SINGLE_ANIMATION(Torballmon);
-SINGLE_ANIMATION(Gengar);
+SINGLE_ANIMATION(Tsumemon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(GengarMega);
+SINGLE_ANIMATION(TsumemonMega);
 #endif //P_MEGA_EVOLUTIONS
 #if P_GIGANTAMAX_FORMS
-SINGLE_ANIMATION(GengarGigantamax);
+SINGLE_ANIMATION(TsumemonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_TOKOMON_X
 #if P_FAMILY_ONIX

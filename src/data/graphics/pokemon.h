@@ -1480,29 +1480,29 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Torballmon[] = INCBIN_U8("graphics/pokemon/torballmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Gengar[] = INCBIN_U32("graphics/pokemon/gengar/anim_front.4bpp.lz");
-    const u32 gMonPalette_Gengar[] = INCBIN_U32("graphics/pokemon/gengar/normal.gbapal.lz");
-    const u32 gMonBackPic_Gengar[] = INCBIN_U32("graphics/pokemon/gengar/back.4bpp.lz");
-    const u32 gMonShinyPalette_Gengar[] = INCBIN_U32("graphics/pokemon/gengar/shiny.gbapal.lz");
-    const u8 gMonIcon_Gengar[] = INCBIN_U8("graphics/pokemon/gengar/icon.4bpp");
+    const u32 gMonFrontPic_Tsumemon[] = INCBIN_U32("graphics/pokemon/tsumemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Tsumemon[] = INCBIN_U32("graphics/pokemon/tsumemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Tsumemon[] = INCBIN_U32("graphics/pokemon/tsumemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Tsumemon[] = INCBIN_U32("graphics/pokemon/tsumemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Tsumemon[] = INCBIN_U8("graphics/pokemon/tsumemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Gengar[] = INCBIN_U8("graphics/pokemon/gengar/footprint.1bpp");
+    const u8 gMonFootprint_Tsumemon[] = INCBIN_U8("graphics/pokemon/tsumemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_GengarMega[] = INCBIN_U32("graphics/pokemon/gengar/mega/front.4bpp.lz");
-    const u32 gMonPalette_GengarMega[] = INCBIN_U32("graphics/pokemon/gengar/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_GengarMega[] = INCBIN_U32("graphics/pokemon/gengar/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_GengarMega[] = INCBIN_U32("graphics/pokemon/gengar/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_GengarMega[] = INCBIN_U8("graphics/pokemon/gengar/mega/icon.4bpp");
+    const u32 gMonFrontPic_TsumemonMega[] = INCBIN_U32("graphics/pokemon/tsumemon/mega/front.4bpp.lz");
+    const u32 gMonPalette_TsumemonMega[] = INCBIN_U32("graphics/pokemon/tsumemon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_TsumemonMega[] = INCBIN_U32("graphics/pokemon/tsumemon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_TsumemonMega[] = INCBIN_U32("graphics/pokemon/tsumemon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_TsumemonMega[] = INCBIN_U8("graphics/pokemon/tsumemon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GIGANTAMAX_FORMS
-    const u32 gMonFrontPic_GengarGigantamax[] = INCBIN_U32("graphics/pokemon/gengar/gigantamax/front.4bpp.lz");
-    const u32 gMonBackPic_GengarGigantamax[] = INCBIN_U32("graphics/pokemon/gengar/gigantamax/back.4bpp.lz");
-    const u32 gMonPalette_GengarGigantamax[] = INCBIN_U32("graphics/pokemon/gengar/gigantamax/normal.gbapal.lz");
-    const u32 gMonShinyPalette_GengarGigantamax[] = INCBIN_U32("graphics/pokemon/gengar/gigantamax/shiny.gbapal.lz");
-    const u8 gMonIcon_GengarGigantamax[] = INCBIN_U8("graphics/pokemon/gengar/gigantamax/icon.4bpp");
+    const u32 gMonFrontPic_TsumemonGigantamax[] = INCBIN_U32("graphics/pokemon/tsumemon/gigantamax/front.4bpp.lz");
+    const u32 gMonBackPic_TsumemonGigantamax[] = INCBIN_U32("graphics/pokemon/tsumemon/gigantamax/back.4bpp.lz");
+    const u32 gMonPalette_TsumemonGigantamax[] = INCBIN_U32("graphics/pokemon/tsumemon/gigantamax/normal.gbapal.lz");
+    const u32 gMonShinyPalette_TsumemonGigantamax[] = INCBIN_U32("graphics/pokemon/tsumemon/gigantamax/shiny.gbapal.lz");
+    const u8 gMonIcon_TsumemonGigantamax[] = INCBIN_U8("graphics/pokemon/tsumemon/gigantamax/icon.4bpp");
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_TOKOMON_X
 

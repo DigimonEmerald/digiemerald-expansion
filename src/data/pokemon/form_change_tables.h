@@ -84,9 +84,9 @@ static const struct FormChange sPickmon_silverFormChangeTable[] = {
 #endif //P_FAMILY_PAGUMON
 
 #if P_FAMILY_TOKOMON_X
-static const struct FormChange sGengarFormChangeTable[] = {
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_GENGAR_MEGA, ITEM_GENGARITE},
-    {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_GENGAR_GIGANTAMAX},
+static const struct FormChange sTsumemonFormChangeTable[] = {
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_TSUMEMON_MEGA, ITEM_TSUMEMONITE},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX,             SPECIES_TSUMEMON_GIGANTAMAX},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_TOKOMON_X

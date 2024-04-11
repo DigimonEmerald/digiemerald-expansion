@@ -1143,14 +1143,14 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Terror traps both opponents")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_G_MAX_TERROR].argument == MAX_EFFECT_MEAN_LOOK);
-        PLAYER(SPECIES_GENGAR) { GigantamaxFactor(TRUE); }
+        PLAYER(SPECIES_TSUMEMON) { GigantamaxFactor(TRUE); }
         PLAYER(SPECIES_TOKOMON_X);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_LICK, target: opponentLeft, dynamax: TRUE); }
     } SCENE {
-        MESSAGE("Gengar used G-Max Terror!");
+        MESSAGE("Tsumemon used G-Max Terror!");
         MESSAGE("Foe Wobbuffet can't escape now!");
         MESSAGE("Foe Wobbuffet can't escape now!");
     } THEN { // Can't find good way to test trapping

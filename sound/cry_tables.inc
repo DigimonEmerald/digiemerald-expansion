@@ -228,9 +228,9 @@ gCryTable::
 .if P_FAMILY_TOKOMON_X == TRUE
 	cry Cry_Tokomon_x
 	cry Cry_Torballmon
-	cry Cry_Gengar
+	cry Cry_Tsumemon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_GengarMega
+	cry Cry_TsumemonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TOKOMON_X
 .if P_FAMILY_ONIX == TRUE
@@ -2654,9 +2654,9 @@ gCryTable_Reverse::
 .if P_FAMILY_TOKOMON_X == TRUE
 	cry_reverse Cry_Tokomon_x
 	cry_reverse Cry_Torballmon
-	cry_reverse Cry_Gengar
+	cry_reverse Cry_Tsumemon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_GengarMega
+	cry_reverse Cry_TsumemonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TOKOMON_X
 .if P_FAMILY_ONIX == TRUE

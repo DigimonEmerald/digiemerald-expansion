@@ -955,13 +955,13 @@ Cry_Torballmon::
 	.incbin "sound/direct_sound_samples/cries/torballmon.bin"
 
 	.align 2
-Cry_Gengar::
-	.incbin "sound/direct_sound_samples/cries/gengar.bin"
+Cry_Tsumemon::
+	.incbin "sound/direct_sound_samples/cries/tsumemon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_GengarMega::
-	.incbin "sound/direct_sound_samples/cries/gengar_mega.bin"
+Cry_TsumemonMega::
+	.incbin "sound/direct_sound_samples/cries/tsumemon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TOKOMON_X
 

@@ -4782,7 +4782,7 @@ static const u16 sTorballmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGengarTeachableLearnset[] = {
+static const u16 sTsumemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DOUBLE_TEAM,

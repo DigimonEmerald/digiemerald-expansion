@@ -9223,17 +9223,17 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Torballmon)
         .levelUpLearnset = sTorballmonLevelUpLearnset,
         .teachableLearnset = sTorballmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GENGAR},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GENGAR}),
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_TSUMEMON},
+                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_TSUMEMON}),
     },
 
 #if P_UPDATED_ABILITIES >= GEN_7
-#define GENGAR_ABILITIES {ABILITY_CURSED_BODY, ABILITY_NONE}
+#define TSUMEMON_ABILITIES {ABILITY_CURSED_BODY, ABILITY_NONE}
 #else
-#define GENGAR_ABILITIES {ABILITY_LEVITATE, ABILITY_NONE}
+#define TSUMEMON_ABILITIES {ABILITY_LEVITATE, ABILITY_NONE}
 #endif
 
-    [SPECIES_GENGAR] =
+    [SPECIES_TSUMEMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 65,
@@ -9256,44 +9256,44 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = GENGAR_ABILITIES,
+        .abilities = TSUMEMON_ABILITIES,
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Gengar"),
-        .natDexNum = NATIONAL_DEX_GENGAR,
+        .speciesName = _("Tsumemon"),
+        .natDexNum = NATIONAL_DEX_TSUMEMON,
         .categoryName = _("Shadow"),
         .height = 15,
         .weight = 405,
         .description = COMPOUND_STRING(
             "Deep in the night, your shadow cast by\n"
             "a streetlight may suddenly overtake you.\n"
-            "It is actually a Gengar running past\n"
+            "It is actually a Tsumemon running past\n"
             "you, pretending to be your shadow."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 302,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_Gengar,
+        .frontPic = gMonFrontPic_Tsumemon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Gengar,
+        .frontAnimFrames = sAnims_Tsumemon,
         .frontAnimId = ANIM_GROW_IN_STAGES,
-        .backPic = gMonBackPic_Gengar,
+        .backPic = gMonBackPic_Tsumemon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Gengar,
-        .shinyPalette = gMonShinyPalette_Gengar,
-        .iconSprite = gMonIcon_Gengar,
+        .palette = gMonPalette_Tsumemon,
+        .shinyPalette = gMonShinyPalette_Tsumemon,
+        .iconSprite = gMonIcon_Tsumemon,
         .iconPalIndex = 2,
-        FOOTPRINT(Gengar)
-        .levelUpLearnset = sGengarLevelUpLearnset,
-        .teachableLearnset = sGengarTeachableLearnset,
-        .formSpeciesIdTable = sGengarFormSpeciesIdTable,
-        .formChangeTable = sGengarFormChangeTable,
+        FOOTPRINT(Tsumemon)
+        .levelUpLearnset = sTsumemonLevelUpLearnset,
+        .teachableLearnset = sTsumemonTeachableLearnset,
+        .formSpeciesIdTable = sTsumemonFormSpeciesIdTable,
+        .formChangeTable = sTsumemonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_GENGAR_MEGA] =
+    [SPECIES_TSUMEMON_MEGA] =
     {
         .baseHP        = 60,
         .baseAttack    = 65,
@@ -9312,13 +9312,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_SHADOW_TAG, ABILITY_SHADOW_TAG, ABILITY_SHADOW_TAG },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Gengar"),
-        .natDexNum = NATIONAL_DEX_GENGAR,
+        .speciesName = _("Tsumemon"),
+        .natDexNum = NATIONAL_DEX_TSUMEMON,
         .categoryName = _("Shadow"),
         .height = 14,
         .weight = 405,
         .description = COMPOUND_STRING(
-            "Gengar's relationships are warped. It\n"
+            "Tsumemon's relationships are warped. It\n"
             "tries to take the lives of anyone and\n"
             "everyone. It will even try to curse the\n"
             "Trainer who is its master!"),
@@ -9326,30 +9326,30 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 2,
         .trainerScale = 302,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_GengarMega,
+        .frontPic = gMonFrontPic_TsumemonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_GengarMega,
+        .frontAnimFrames = sAnims_TsumemonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_GengarMega,
+        .backPic = gMonBackPic_TsumemonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_GengarMega,
-        .shinyPalette = gMonShinyPalette_GengarMega,
-        .iconSprite = gMonIcon_GengarMega,
+        .palette = gMonPalette_TsumemonMega,
+        .shinyPalette = gMonShinyPalette_TsumemonMega,
+        .iconSprite = gMonIcon_TsumemonMega,
         .iconPalIndex = 2,
-        FOOTPRINT(Gengar)
+        FOOTPRINT(Tsumemon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sGengarLevelUpLearnset,
-        .teachableLearnset = sGengarTeachableLearnset,
-        .formSpeciesIdTable = sGengarFormSpeciesIdTable,
-        .formChangeTable = sGengarFormChangeTable,
+        .levelUpLearnset = sTsumemonLevelUpLearnset,
+        .teachableLearnset = sTsumemonTeachableLearnset,
+        .formSpeciesIdTable = sTsumemonFormSpeciesIdTable,
+        .formChangeTable = sTsumemonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_GENGAR_GIGANTAMAX] =
+    [SPECIES_TSUMEMON_GIGANTAMAX] =
     {
         .baseHP        = 60,
         .baseAttack    = 65,
@@ -9366,10 +9366,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = GENGAR_ABILITIES,
+        .abilities = TSUMEMON_ABILITIES,
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Gengar"),
-        .natDexNum = NATIONAL_DEX_GENGAR,
+        .speciesName = _("Tsumemon"),
+        .natDexNum = NATIONAL_DEX_TSUMEMON,
         .categoryName = _("Shadow"),
         .height = 200,
         .weight = 0,
@@ -9382,25 +9382,25 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 2,
         .trainerScale = 302,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_GengarGigantamax,
+        .frontPic = gMonFrontPic_TsumemonGigantamax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_GengarGigantamax,
+        .frontAnimFrames = sAnims_TsumemonGigantamax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_GengarGigantamax,
+        .backPic = gMonBackPic_TsumemonGigantamax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 6,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_GengarGigantamax,
-        .shinyPalette = gMonShinyPalette_GengarGigantamax,
-        .iconSprite = gMonIcon_GengarGigantamax,
+        .palette = gMonPalette_TsumemonGigantamax,
+        .shinyPalette = gMonShinyPalette_TsumemonGigantamax,
+        .iconSprite = gMonIcon_TsumemonGigantamax,
         .iconPalIndex = 2,
-        FOOTPRINT(Gengar)
+        FOOTPRINT(Tsumemon)
         .isGigantamax = TRUE,
-        .levelUpLearnset = sGengarLevelUpLearnset,
-        .teachableLearnset = sGengarTeachableLearnset,
-        .formSpeciesIdTable = sGengarFormSpeciesIdTable,
-        .formChangeTable = sGengarFormChangeTable,
+        .levelUpLearnset = sTsumemonLevelUpLearnset,
+        .teachableLearnset = sTsumemonTeachableLearnset,
+        .formSpeciesIdTable = sTsumemonFormSpeciesIdTable,
+        .formChangeTable = sTsumemonFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_TOKOMON_X

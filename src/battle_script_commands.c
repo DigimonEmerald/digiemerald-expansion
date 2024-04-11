@@ -15549,7 +15549,7 @@ static const u16 sTelekinesisBanList[] =
     SPECIES_BUKAMON_ALOLAN,
     SPECIES_SANDYGAST,
     SPECIES_PALOSSAND,
-    SPECIES_GENGAR_MEGA,
+    SPECIES_TSUMEMON_MEGA,
 };
 
 bool32 IsTelekinesisBannedSpecies(u16 species)

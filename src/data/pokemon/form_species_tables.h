@@ -270,10 +270,10 @@ static const u16 sSunmonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_SAKUTTOMON
 
 #if P_FAMILY_TOKOMON_X
-static const u16 sGengarFormSpeciesIdTable[] = {
-    SPECIES_GENGAR,
-    SPECIES_GENGAR_MEGA,
-    SPECIES_GENGAR_GIGANTAMAX,
+static const u16 sTsumemonFormSpeciesIdTable[] = {
+    SPECIES_TSUMEMON,
+    SPECIES_TSUMEMON_MEGA,
+    SPECIES_TSUMEMON_GIGANTAMAX,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_TOKOMON_X

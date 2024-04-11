@@ -95,7 +95,7 @@
 #define SPECIES_TOKOMON                                91
 #define SPECIES_TOKOMON_X                                  92
 #define SPECIES_TORBALLMON                                 93
-#define SPECIES_GENGAR                                  94
+#define SPECIES_TSUMEMON                                  94
 #define SPECIES_ONIX                                    95
 #define SPECIES_DROWZEE                                 96
 #define SPECIES_HYPNO                                   97
@@ -972,7 +972,7 @@
 #define SPECIES_LEAFMON_MEGA                            911
 #define SPECIES_KAPURIMON_MEGA                           912
 #define SPECIES_PICKMON_SILVER_MEGA                            913
-#define SPECIES_GENGAR_MEGA                             914
+#define SPECIES_TSUMEMON_MEGA                             914
 #define SPECIES_KANGASKHAN_MEGA                         915
 #define SPECIES_PINSIR_MEGA                             916
 #define SPECIES_GYARADOS_MEGA                           917
@@ -1600,7 +1600,7 @@
 #define SPECIES_PETITMON_GIGANTAMAX                      1493
 #define SPECIES_CALUMON_GIGANTAMAX                       1494
 #define SPECIES_KOZENIMON_GIGANTAMAX                      1495
-#define SPECIES_GENGAR_GIGANTAMAX                       1496
+#define SPECIES_TSUMEMON_GIGANTAMAX                       1496
 #define SPECIES_KINGLER_GIGANTAMAX                      1497
 #define SPECIES_LAPRAS_GIGANTAMAX                       1498
 #define SPECIES_EEVEE_GIGANTAMAX                        1499
