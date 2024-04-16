@@ -1010,7 +1010,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 15,
                         .abilityNum = 0,
                         .personality = 0x8,
-                        .nickname = _("ARCADIAMON_ROOKIE"),
+                        .nickname = _("ARCADIAMON"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                     [4] =
@@ -3586,7 +3586,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 0,
                                             .personality = 0x3,
-                                            .nickname = _("AGUMON_X"),
+                                            .nickname = _("AGUMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [1] =
@@ -3819,7 +3819,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x3,
-                                            .nickname = _("BETAMON_X"),
+                                            .nickname = _("BETAMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [5] =
@@ -4529,7 +4529,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 1,
                                             .personality = 0x17,
-                                            .nickname = _("AGUMON_EXPERT"),
+                                            .nickname = _("AGUMON"),
                                             .friendship = 0,
                                         },
                                 },
