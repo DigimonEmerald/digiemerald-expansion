@@ -853,11 +853,11 @@ const u32 gItemIconPalette_Commdramonite[] = INCBIN_U32("graphics/items/icon_pal
 const u32 gItemIcon_Dracmonite[] = INCBIN_U32("graphics/items/icons/dracmonite.4bpp.lz");
 const u32 gItemIconPalette_Dracmonite[] = INCBIN_U32("graphics/items/icon_palettes/dracmonite.gbapal.lz");
 
-const u32 gItemIcon_MewtwoniteX[] = INCBIN_U32("graphics/items/icons/mewtwonite_x.4bpp.lz");
-const u32 gItemIconPalette_MewtwoniteX[] = INCBIN_U32("graphics/items/icon_palettes/mewtwonite_x.gbapal.lz");
+const u32 gItemIcon_Agumon_fake_expertniteX[] = INCBIN_U32("graphics/items/icons/agumon_fake_expertnite_x.4bpp.lz");
+const u32 gItemIconPalette_Agumon_fake_expertniteX[] = INCBIN_U32("graphics/items/icon_palettes/agumon_fake_expertnite_x.gbapal.lz");
 
-const u32 gItemIcon_MewtwoniteY[] = INCBIN_U32("graphics/items/icons/mewtwonite_y.4bpp.lz");
-const u32 gItemIconPalette_MewtwoniteY[] = INCBIN_U32("graphics/items/icon_palettes/mewtwonite_y.gbapal.lz");
+const u32 gItemIcon_Agumon_fake_expertniteY[] = INCBIN_U32("graphics/items/icons/agumon_fake_expertnite_y.4bpp.lz");
+const u32 gItemIconPalette_Agumon_fake_expertniteY[] = INCBIN_U32("graphics/items/icon_palettes/agumon_fake_expertnite_y.gbapal.lz");
 
 const u32 gItemIcon_Ampharosite[] = INCBIN_U32("graphics/items/icons/ampharosite.4bpp.lz");
 const u32 gItemIconPalette_Ampharosite[] = INCBIN_U32("graphics/items/icon_palettes/ampharosite.gbapal.lz");

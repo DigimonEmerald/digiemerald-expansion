@@ -15405,8 +15405,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_ELECMON
 
-#if P_FAMILY_MEWTWO
-    [SPECIES_MEWTWO] =
+#if P_FAMILY_AGUMON_FAKE_EXPERT
+    [SPECIES_AGUMON_FAKE_EXPERT] =
     {
         .baseHP        = 106,
         .baseAttack    = 110,
@@ -15431,9 +15431,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Mewtwo"),
-        .cryId = CRY_MEWTWO,
-        .natDexNum = NATIONAL_DEX_MEWTWO,
+        .speciesName = _("Agumon_fake_expert"),
+        .cryId = CRY_AGUMON_FAKE_EXPERT,
+        .natDexNum = NATIONAL_DEX_AGUMON_FAKE_EXPERT,
         .categoryName = _("Genetic"),
         .height = 20,
         .weight = 1220,
@@ -15446,29 +15446,29 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 309,
         .trainerOffset = 4,
-        .frontPic = gMonFrontPic_Mewtwo,
+        .frontPic = gMonFrontPic_Agumon_fake_expert,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Mewtwo,
+        .frontAnimFrames = sAnims_Agumon_fake_expert,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Mewtwo,
+        .backPic = gMonBackPic_Agumon_fake_expert,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_GROW_STUTTER,
-        .palette = gMonPalette_Mewtwo,
-        .shinyPalette = gMonShinyPalette_Mewtwo,
-        .iconSprite = gMonIcon_Mewtwo,
+        .palette = gMonPalette_Agumon_fake_expert,
+        .shinyPalette = gMonShinyPalette_Agumon_fake_expert,
+        .iconSprite = gMonIcon_Agumon_fake_expert,
         .iconPalIndex = 2,
-        FOOTPRINT(Mewtwo)
+        FOOTPRINT(Agumon_fake_expert)
         .isLegendary = TRUE,
-        .levelUpLearnset = sMewtwoLevelUpLearnset,
-        .teachableLearnset = sMewtwoTeachableLearnset,
-        .formSpeciesIdTable = sMewtwoFormSpeciesIdTable,
-        .formChangeTable = sMewtwoFormChangeTable,
+        .levelUpLearnset = sAgumon_fake_expertLevelUpLearnset,
+        .teachableLearnset = sAgumon_fake_expertTeachableLearnset,
+        .formSpeciesIdTable = sAgumon_fake_expertFormSpeciesIdTable,
+        .formChangeTable = sAgumon_fake_expertFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_MEWTWO_MEGA_X] =
+    [SPECIES_AGUMON_FAKE_EXPERT_MEGA_X] =
     {
         .baseHP        = 106,
         .baseAttack    = 190,
@@ -15487,9 +15487,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_STEADFAST, ABILITY_STEADFAST, ABILITY_STEADFAST },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Mewtwo"),
-        .cryId = CRY_MEWTWO_MEGA_X,
-        .natDexNum = NATIONAL_DEX_MEWTWO,
+        .speciesName = _("Agumon_fake_expert"),
+        .cryId = CRY_AGUMON_FAKE_EXPERT_MEGA_X,
+        .natDexNum = NATIONAL_DEX_AGUMON_FAKE_EXPERT,
         .categoryName = _("Genetic"),
         .height = 23,
         .weight = 1270,
@@ -15502,29 +15502,29 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 309,
         .trainerOffset = 4,
-        .frontPic = gMonFrontPic_MewtwoMegaX,
+        .frontPic = gMonFrontPic_Agumon_fake_expertMegaX,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_MewtwoMegaX,
+        .frontAnimFrames = sAnims_Agumon_fake_expertMegaX,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_MewtwoMegaX,
+        .backPic = gMonBackPic_Agumon_fake_expertMegaX,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_GROW_STUTTER,
-        .palette = gMonPalette_MewtwoMegaX,
-        .shinyPalette = gMonShinyPalette_MewtwoMegaX,
-        .iconSprite = gMonIcon_MewtwoMegaX,
+        .palette = gMonPalette_Agumon_fake_expertMegaX,
+        .shinyPalette = gMonShinyPalette_Agumon_fake_expertMegaX,
+        .iconSprite = gMonIcon_Agumon_fake_expertMegaX,
         .iconPalIndex = 2,
-        FOOTPRINT(Mewtwo)
+        FOOTPRINT(Agumon_fake_expert)
         .isLegendary = TRUE,
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sMewtwoLevelUpLearnset,
-        .teachableLearnset = sMewtwoTeachableLearnset,
-        .formSpeciesIdTable = sMewtwoFormSpeciesIdTable,
-        .formChangeTable = sMewtwoFormChangeTable,
+        .levelUpLearnset = sAgumon_fake_expertLevelUpLearnset,
+        .teachableLearnset = sAgumon_fake_expertTeachableLearnset,
+        .formSpeciesIdTable = sAgumon_fake_expertFormSpeciesIdTable,
+        .formChangeTable = sAgumon_fake_expertFormChangeTable,
     },
 
-    [SPECIES_MEWTWO_MEGA_Y] =
+    [SPECIES_AGUMON_FAKE_EXPERT_MEGA_Y] =
     {
         .baseHP        = 106,
         .baseAttack    = 150,
@@ -15543,9 +15543,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_INSOMNIA, ABILITY_INSOMNIA, ABILITY_INSOMNIA },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Mewtwo"),
-        .cryId = CRY_MEWTWO_MEGA_Y,
-        .natDexNum = NATIONAL_DEX_MEWTWO,
+        .speciesName = _("Agumon_fake_expert"),
+        .cryId = CRY_AGUMON_FAKE_EXPERT_MEGA_Y,
+        .natDexNum = NATIONAL_DEX_AGUMON_FAKE_EXPERT,
         .categoryName = _("Genetic"),
         .height = 15,
         .weight = 330,
@@ -15558,30 +15558,30 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 309,
         .trainerOffset = 4,
-        .frontPic = gMonFrontPic_MewtwoMegaY,
+        .frontPic = gMonFrontPic_Agumon_fake_expertMegaY,
         .frontPicSize = MON_COORDS_SIZE(40, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_MewtwoMegaY,
+        .frontAnimFrames = sAnims_Agumon_fake_expertMegaY,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 3,
-        .backPic = gMonBackPic_MewtwoMegaY,
+        .backPic = gMonBackPic_Agumon_fake_expertMegaY,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_GROW_STUTTER,
-        .palette = gMonPalette_MewtwoMegaY,
-        .shinyPalette = gMonShinyPalette_MewtwoMegaY,
-        .iconSprite = gMonIcon_MewtwoMegaY,
+        .palette = gMonPalette_Agumon_fake_expertMegaY,
+        .shinyPalette = gMonShinyPalette_Agumon_fake_expertMegaY,
+        .iconSprite = gMonIcon_Agumon_fake_expertMegaY,
         .iconPalIndex = 2,
-        FOOTPRINT(Mewtwo)
+        FOOTPRINT(Agumon_fake_expert)
         .isLegendary = TRUE,
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sMewtwoLevelUpLearnset,
-        .teachableLearnset = sMewtwoTeachableLearnset,
-        .formSpeciesIdTable = sMewtwoFormSpeciesIdTable,
-        .formChangeTable = sMewtwoFormChangeTable,
+        .levelUpLearnset = sAgumon_fake_expertLevelUpLearnset,
+        .teachableLearnset = sAgumon_fake_expertTeachableLearnset,
+        .formSpeciesIdTable = sAgumon_fake_expertFormSpeciesIdTable,
+        .formChangeTable = sAgumon_fake_expertFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MEWTWO
+#endif //P_FAMILY_AGUMON_FAKE_EXPERT
 
 #if P_FAMILY_MEW
     [SPECIES_MEW] =

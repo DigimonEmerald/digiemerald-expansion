@@ -570,16 +570,16 @@ static const u16 sEkakimonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_EKAKIMON
 
-#if P_FAMILY_MEWTWO
-static const u16 sMewtwoFormSpeciesIdTable[] = {
-    SPECIES_MEWTWO,
+#if P_FAMILY_AGUMON_FAKE_EXPERT
+static const u16 sAgumon_fake_expertFormSpeciesIdTable[] = {
+    SPECIES_AGUMON_FAKE_EXPERT,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_MEWTWO_MEGA_X,
-    SPECIES_MEWTWO_MEGA_Y,
+    SPECIES_AGUMON_FAKE_EXPERT_MEGA_X,
+    SPECIES_AGUMON_FAKE_EXPERT_MEGA_Y,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_MEWTWO
+#endif //P_FAMILY_AGUMON_FAKE_EXPERT
 
 #if P_FAMILY_CYNDAQUIL
 static const u16 sTyphlosionFormSpeciesIdTable[] = {

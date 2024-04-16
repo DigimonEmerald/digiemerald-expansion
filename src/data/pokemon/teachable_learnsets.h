@@ -8358,8 +8358,8 @@ static const u16 sEspimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_ELECMON
 
-#if P_FAMILY_MEWTWO
-static const u16 sMewtwoTeachableLearnset[] = {
+#if P_FAMILY_AGUMON_FAKE_EXPERT
+static const u16 sAgumon_fake_expertTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
@@ -8424,7 +8424,7 @@ static const u16 sMewtwoTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MEWTWO
+#endif //P_FAMILY_AGUMON_FAKE_EXPERT
 
 #if P_FAMILY_MEW
 // Instead of reading this array for Mew, it checks for exceptions in CanLearnTeachableMove instead.

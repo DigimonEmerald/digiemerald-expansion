@@ -151,7 +151,7 @@
 #define SPECIES_ELECMON                                 147
 #define SPECIES_ELECMON_VIOLET                               148
 #define SPECIES_ESPIMON                               149
-#define SPECIES_MEWTWO                                  150
+#define SPECIES_AGUMON_FAKE_EXPERT                                  150
 #define SPECIES_MEW                                     151
 #define SPECIES_CHIKORITA                               152
 #define SPECIES_BAYLEEF                                 153
@@ -977,8 +977,8 @@
 #define SPECIES_TYUTYUMON_MEGA                             916
 #define SPECIES_COMMDRAMON_MEGA                           917
 #define SPECIES_DRACMON_MEGA                         918
-#define SPECIES_MEWTWO_MEGA_X                           919
-#define SPECIES_MEWTWO_MEGA_Y                           920
+#define SPECIES_AGUMON_FAKE_EXPERT_MEGA_X                           919
+#define SPECIES_AGUMON_FAKE_EXPERT_MEGA_Y                           920
 #define SPECIES_AMPHAROS_MEGA                           921
 #define SPECIES_STEELIX_MEGA                            922
 #define SPECIES_SCIZOR_MEGA                             923

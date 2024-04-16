@@ -131,7 +131,7 @@
 #define P_FAMILY_EBIBURGMON                  P_GEN_1_POKEMON
 #define P_FAMILY_EKAKIMON                 P_GEN_1_POKEMON
 #define P_FAMILY_ELECMON                 P_GEN_1_POKEMON
-#define P_FAMILY_MEWTWO                  P_GEN_1_POKEMON
+#define P_FAMILY_AGUMON_FAKE_EXPERT                  P_GEN_1_POKEMON
 #define P_FAMILY_MEW                     P_GEN_1_POKEMON
 
 #define P_FAMILY_CHIKORITA               P_GEN_2_POKEMON

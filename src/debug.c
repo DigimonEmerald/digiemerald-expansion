@@ -4605,7 +4605,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_RG_SEVII_67) \
     X(MUS_RG_POKE_FLUTE) \
     X(MUS_RG_VS_DEOXYS) \
-    X(MUS_RG_VS_MEWTWO) \
+    X(MUS_RG_VS_AGUMON_FAKE_EXPERT) \
     X(MUS_RG_VS_LEGEND) \
     X(MUS_RG_ENCOUNTER_GYM_LEADER) \
     X(MUS_RG_ENCOUNTER_DEOXYS) \

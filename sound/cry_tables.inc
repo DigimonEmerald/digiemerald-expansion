@@ -452,13 +452,13 @@ gCryTable::
 	cry Cry_Elecmon_violet
 	cry Cry_Espimon
 .endif @ P_FAMILY_ELECMON
-.if P_FAMILY_MEWTWO == TRUE
-	cry Cry_Mewtwo
+.if P_FAMILY_AGUMON_FAKE_EXPERT == TRUE
+	cry Cry_Agumon_fake_expert
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_MewtwoMegaX
-	cry Cry_MewtwoMegaY
+	cry Cry_Agumon_fake_expertMegaX
+	cry Cry_Agumon_fake_expertMegaY
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MEWTWO
+.endif @ P_FAMILY_AGUMON_FAKE_EXPERT
 .if P_FAMILY_MEW == TRUE
 	cry Cry_Mew
 .endif @ P_FAMILY_MEW
@@ -2878,13 +2878,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Elecmon_violet
 	cry_reverse Cry_Espimon
 .endif @ P_FAMILY_ELECMON
-.if P_FAMILY_MEWTWO == TRUE
-	cry_reverse Cry_Mewtwo
+.if P_FAMILY_AGUMON_FAKE_EXPERT == TRUE
+	cry_reverse Cry_Agumon_fake_expert
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_MewtwoMegaX
-	cry_reverse Cry_MewtwoMegaY
+	cry_reverse Cry_Agumon_fake_expertMegaX
+	cry_reverse Cry_Agumon_fake_expertMegaY
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MEWTWO
+.endif @ P_FAMILY_AGUMON_FAKE_EXPERT
 .if P_FAMILY_MEW == TRUE
 	cry_reverse Cry_Mew
 .endif @ P_FAMILY_MEW

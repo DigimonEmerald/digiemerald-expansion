@@ -86,8 +86,8 @@ static const u8 sChibomoniteDesc[]   = _("This stone enables\n"
                                           "Chibomon to Mega\n"
                                           "Evolve in battle.");
 
-static const u8 sMewtwoniteDesc[]     = _("This stone enables\n"
-                                          "Mewtwo to Mega\n"
+static const u8 sAgumon_fake_expertniteDesc[]     = _("This stone enables\n"
+                                          "Agumon_fake_expert to Mega\n"
                                           "Evolve in battle.");
 
 static const u8 sSeaIncenseDesc[]     = _("A hold item that\n"
@@ -4846,26 +4846,26 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_MEWTWONITE_X] =
+    [ITEM_AGUMON_FAKE_EXPERTNITE_X] =
     {
-        .name = _("Mewtwonite X"),
-        .pluralName = _("Mewtwonites X"),
+        .name = _("Agumon_fake_expertnite X"),
+        .pluralName = _("Agumon_fake_expertnites X"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = sMewtwoniteDesc,
+        .description = sAgumon_fake_expertniteDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
     },
 
-    [ITEM_MEWTWONITE_Y] =
+    [ITEM_AGUMON_FAKE_EXPERTNITE_Y] =
     {
-        .name = _("Mewtwonite Y"),
-        .pluralName = _("Mewtwonites Y"),
+        .name = _("Agumon_fake_expertnite Y"),
+        .pluralName = _("Agumon_fake_expertnites Y"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = sMewtwoniteDesc,
+        .description = sAgumon_fake_expertniteDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,

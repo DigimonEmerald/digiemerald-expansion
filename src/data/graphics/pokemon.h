@@ -2564,30 +2564,30 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_ELECMON
 
-#if P_FAMILY_MEWTWO
-    const u32 gMonFrontPic_Mewtwo[] = INCBIN_U32("graphics/pokemon/mewtwo/anim_front.4bpp.lz");
-    const u32 gMonPalette_Mewtwo[] = INCBIN_U32("graphics/pokemon/mewtwo/normal.gbapal.lz");
-    const u32 gMonBackPic_Mewtwo[] = INCBIN_U32("graphics/pokemon/mewtwo/back.4bpp.lz");
-    const u32 gMonShinyPalette_Mewtwo[] = INCBIN_U32("graphics/pokemon/mewtwo/shiny.gbapal.lz");
-    const u8 gMonIcon_Mewtwo[] = INCBIN_U8("graphics/pokemon/mewtwo/icon.4bpp");
+#if P_FAMILY_AGUMON_FAKE_EXPERT
+    const u32 gMonFrontPic_Agumon_fake_expert[] = INCBIN_U32("graphics/pokemon/agumon_fake_expert/anim_front.4bpp.lz");
+    const u32 gMonPalette_Agumon_fake_expert[] = INCBIN_U32("graphics/pokemon/agumon_fake_expert/normal.gbapal.lz");
+    const u32 gMonBackPic_Agumon_fake_expert[] = INCBIN_U32("graphics/pokemon/agumon_fake_expert/back.4bpp.lz");
+    const u32 gMonShinyPalette_Agumon_fake_expert[] = INCBIN_U32("graphics/pokemon/agumon_fake_expert/shiny.gbapal.lz");
+    const u8 gMonIcon_Agumon_fake_expert[] = INCBIN_U8("graphics/pokemon/agumon_fake_expert/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Mewtwo[] = INCBIN_U8("graphics/pokemon/mewtwo/footprint.1bpp");
+    const u8 gMonFootprint_Agumon_fake_expert[] = INCBIN_U8("graphics/pokemon/agumon_fake_expert/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_MewtwoMegaX[] = INCBIN_U32("graphics/pokemon/mewtwo/mega_x/front.4bpp.lz");
-    const u32 gMonPalette_MewtwoMegaX[] = INCBIN_U32("graphics/pokemon/mewtwo/mega_x/normal.gbapal.lz");
-    const u32 gMonBackPic_MewtwoMegaX[] = INCBIN_U32("graphics/pokemon/mewtwo/mega_x/back.4bpp.lz");
-    const u32 gMonShinyPalette_MewtwoMegaX[] = INCBIN_U32("graphics/pokemon/mewtwo/mega_x/shiny.gbapal.lz");
-    const u8 gMonIcon_MewtwoMegaX[] = INCBIN_U8("graphics/pokemon/mewtwo/mega_x/icon.4bpp");
+    const u32 gMonFrontPic_Agumon_fake_expertMegaX[] = INCBIN_U32("graphics/pokemon/agumon_fake_expert/mega_x/front.4bpp.lz");
+    const u32 gMonPalette_Agumon_fake_expertMegaX[] = INCBIN_U32("graphics/pokemon/agumon_fake_expert/mega_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Agumon_fake_expertMegaX[] = INCBIN_U32("graphics/pokemon/agumon_fake_expert/mega_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Agumon_fake_expertMegaX[] = INCBIN_U32("graphics/pokemon/agumon_fake_expert/mega_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Agumon_fake_expertMegaX[] = INCBIN_U8("graphics/pokemon/agumon_fake_expert/mega_x/icon.4bpp");
 
-    const u32 gMonFrontPic_MewtwoMegaY[] = INCBIN_U32("graphics/pokemon/mewtwo/mega_y/front.4bpp.lz");
-    const u32 gMonPalette_MewtwoMegaY[] = INCBIN_U32("graphics/pokemon/mewtwo/mega_y/normal.gbapal.lz");
-    const u32 gMonBackPic_MewtwoMegaY[] = INCBIN_U32("graphics/pokemon/mewtwo/mega_y/back.4bpp.lz");
-    const u32 gMonShinyPalette_MewtwoMegaY[] = INCBIN_U32("graphics/pokemon/mewtwo/mega_y/shiny.gbapal.lz");
-    const u8 gMonIcon_MewtwoMegaY[] = INCBIN_U8("graphics/pokemon/mewtwo/mega_y/icon.4bpp");
+    const u32 gMonFrontPic_Agumon_fake_expertMegaY[] = INCBIN_U32("graphics/pokemon/agumon_fake_expert/mega_y/front.4bpp.lz");
+    const u32 gMonPalette_Agumon_fake_expertMegaY[] = INCBIN_U32("graphics/pokemon/agumon_fake_expert/mega_y/normal.gbapal.lz");
+    const u32 gMonBackPic_Agumon_fake_expertMegaY[] = INCBIN_U32("graphics/pokemon/agumon_fake_expert/mega_y/back.4bpp.lz");
+    const u32 gMonShinyPalette_Agumon_fake_expertMegaY[] = INCBIN_U32("graphics/pokemon/agumon_fake_expert/mega_y/shiny.gbapal.lz");
+    const u8 gMonIcon_Agumon_fake_expertMegaY[] = INCBIN_U8("graphics/pokemon/agumon_fake_expert/mega_y/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MEWTWO
+#endif //P_FAMILY_AGUMON_FAKE_EXPERT
 
 #if P_FAMILY_MEW
     const u32 gMonFrontPic_Mew[] = INCBIN_U32("graphics/pokemon/mew/anim_front.4bpp.lz");

@@ -1443,21 +1443,21 @@ Cry_Espimon::
 	.incbin "sound/direct_sound_samples/cries/espimon.bin"
 .endif @ P_FAMILY_ELECMON
 
-.if P_FAMILY_MEWTWO == TRUE
+.if P_FAMILY_AGUMON_FAKE_EXPERT == TRUE
 	.align 2
-Cry_Mewtwo::
-	.incbin "sound/direct_sound_samples/cries/mewtwo.bin"
+Cry_Agumon_fake_expert::
+	.incbin "sound/direct_sound_samples/cries/agumon_fake_expert.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_MewtwoMegaX::
-	.incbin "sound/direct_sound_samples/cries/mewtwo_mega_x.bin"
+Cry_Agumon_fake_expertMegaX::
+	.incbin "sound/direct_sound_samples/cries/agumon_fake_expert_mega_x.bin"
 
 	.align 2
-Cry_MewtwoMegaY::
-	.incbin "sound/direct_sound_samples/cries/mewtwo_mega_y.bin"
+Cry_Agumon_fake_expertMegaY::
+	.incbin "sound/direct_sound_samples/cries/agumon_fake_expert_mega_y.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MEWTWO
+.endif @ P_FAMILY_AGUMON_FAKE_EXPERT
 
 .if P_FAMILY_MEW == TRUE
 	.align 2

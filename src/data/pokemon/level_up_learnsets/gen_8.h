@@ -4728,8 +4728,8 @@ static const struct LevelUpMove sEspimonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_ELECMON
 
-#if P_FAMILY_MEWTWO
-static const struct LevelUpMove sMewtwoLevelUpLearnset[] = {
+#if P_FAMILY_AGUMON_FAKE_EXPERT
+static const struct LevelUpMove sAgumon_fake_expertLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LIFE_DEW),
     LEVEL_UP_MOVE( 1, MOVE_LASER_FOCUS),
     LEVEL_UP_MOVE( 1, MOVE_DISABLE),
@@ -4749,7 +4749,7 @@ static const struct LevelUpMove sMewtwoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(88, MOVE_FUTURE_SIGHT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_MEWTWO
+#endif //P_FAMILY_AGUMON_FAKE_EXPERT
 
 #if P_FAMILY_MEW
 static const struct LevelUpMove sMewLevelUpLearnset[] = {

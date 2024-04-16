@@ -2311,8 +2311,8 @@ static const union AnimCmd sAnim_Espimon_1[] =
 };
 #endif //P_FAMILY_ELECMON
 
-#if P_FAMILY_MEWTWO
-static const union AnimCmd sAnim_Mewtwo_1[] =
+#if P_FAMILY_AGUMON_FAKE_EXPERT
+static const union AnimCmd sAnim_Agumon_fake_expert_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 20),
@@ -2320,13 +2320,13 @@ static const union AnimCmd sAnim_Mewtwo_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(MewtwoMegaX);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Agumon_fake_expertMegaX);
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(MewtwoMegaY);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Agumon_fake_expertMegaY);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MEWTWO
+#endif //P_FAMILY_AGUMON_FAKE_EXPERT
 
 #if P_FAMILY_MEW
 static const union AnimCmd sAnim_Mew_1[] =
@@ -10732,13 +10732,13 @@ SINGLE_ANIMATION(Elecmon);
 SINGLE_ANIMATION(Elecmon_violet);
 SINGLE_ANIMATION(Espimon);
 #endif //P_FAMILY_ELECMON
-#if P_FAMILY_MEWTWO
-SINGLE_ANIMATION(Mewtwo);
+#if P_FAMILY_AGUMON_FAKE_EXPERT
+SINGLE_ANIMATION(Agumon_fake_expert);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(MewtwoMegaX);
-SINGLE_ANIMATION(MewtwoMegaY);
+SINGLE_ANIMATION(Agumon_fake_expertMegaX);
+SINGLE_ANIMATION(Agumon_fake_expertMegaY);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MEWTWO
+#endif //P_FAMILY_AGUMON_FAKE_EXPERT
 #if P_FAMILY_MEW
 SINGLE_ANIMATION(Mew);
 #endif //P_FAMILY_MEW
