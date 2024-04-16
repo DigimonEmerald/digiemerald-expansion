@@ -1023,15 +1023,15 @@ Cry_Agumon::
 	.incbin "sound/direct_sound_samples/cries/agumon.bin"
 .endif @ P_FAMILY_YOKOMON
 
-.if P_FAMILY_CUBONE == TRUE
+.if P_FAMILY_AGUMON_06 == TRUE
 	.align 2
-Cry_Cubone::
-	.incbin "sound/direct_sound_samples/cries/cubone.bin"
+Cry_Agumon_06::
+	.incbin "sound/direct_sound_samples/cries/agumon_06.bin"
 
 	.align 2
 Cry_Marowak::
 	.incbin "sound/direct_sound_samples/cries/marowak.bin"
-.endif @ P_FAMILY_CUBONE
+.endif @ P_FAMILY_AGUMON_06
 
 .if P_FAMILY_HITMONS == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE

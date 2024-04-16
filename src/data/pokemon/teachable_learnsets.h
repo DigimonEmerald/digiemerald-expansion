@@ -5285,8 +5285,8 @@ static const u16 sAgumonAlolanTeachableLearnset[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_YOKOMON
 
-#if P_FAMILY_CUBONE
-static const u16 sCuboneTeachableLearnset[] = {
+#if P_FAMILY_AGUMON_06
+static const u16 sAgumon_06TeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -5424,7 +5424,7 @@ static const u16 sMarowakAlolanTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_CUBONE
+#endif //P_FAMILY_AGUMON_06
 
 #if P_FAMILY_HITMONS
 #if P_GEN_2_CROSS_EVOS

@@ -100,7 +100,7 @@
 #define P_FAMILY_VIXIMON                  P_GEN_1_POKEMON
 #define P_FAMILY_XIAOMON                 P_GEN_1_POKEMON
 #define P_FAMILY_YOKOMON               P_GEN_1_POKEMON
-#define P_FAMILY_CUBONE                  P_GEN_1_POKEMON
+#define P_FAMILY_AGUMON_06                  P_GEN_1_POKEMON
 #define P_FAMILY_HITMONS                 P_GEN_1_POKEMON
 #define P_FAMILY_LICKITUNG               P_GEN_1_POKEMON
 #define P_FAMILY_KOFFING                 P_GEN_1_POKEMON

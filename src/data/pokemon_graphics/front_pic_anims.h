@@ -1475,8 +1475,8 @@ PLACEHOLDER_ANIM_TWO_FRAMES(AgumonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_YOKOMON
 
-#if P_FAMILY_CUBONE
-static const union AnimCmd sAnim_Cubone_1[] =
+#if P_FAMILY_AGUMON_06
+static const union AnimCmd sAnim_Agumon_06_1[] =
 {
     ANIMCMD_FRAME(1, 6),
     ANIMCMD_FRAME(0, 6),
@@ -1501,7 +1501,7 @@ static const union AnimCmd sAnim_Marowak_1[] =
 #if P_ALOLAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(MarowakAlolan);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_CUBONE
+#endif //P_FAMILY_AGUMON_06
 
 #if P_FAMILY_HITMONS
 #if P_GEN_2_CROSS_EVOS
@@ -10510,13 +10510,13 @@ SINGLE_ANIMATION(Agumon);
 SINGLE_ANIMATION(AgumonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_YOKOMON
-#if P_FAMILY_CUBONE
-SINGLE_ANIMATION(Cubone);
+#if P_FAMILY_AGUMON_06
+SINGLE_ANIMATION(Agumon_06);
 SINGLE_ANIMATION(Marowak);
 #if P_ALOLAN_FORMS
 SINGLE_ANIMATION(MarowakAlolan);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_CUBONE
+#endif //P_FAMILY_AGUMON_06
 #if P_FAMILY_HITMONS
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Tyrogue);

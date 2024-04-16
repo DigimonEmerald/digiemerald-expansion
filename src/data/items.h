@@ -6208,7 +6208,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_THICK_CLUB,
         .description = COMPOUND_STRING(
             "A hold item that \n"
-            "raises Cubone or\n"
+            "raises Agumon_06 or\n"
             "Marowak's Attack."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

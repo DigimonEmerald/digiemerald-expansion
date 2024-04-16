@@ -2159,7 +2159,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         },
                                     [5] =
                                         {
-                                            .species = SPECIES_CUBONE,
+                                            .species = SPECIES_AGUMON_06,
                                             .heldItem = ITEM_SOFT_SAND,
                                             .moves = {MOVE_EARTHQUAKE, MOVE_NONE, MOVE_NONE, MOVE_NONE},
                                             .hpEV = 6,
@@ -2174,7 +2174,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 1,
                                             .personality = 0x80,
-                                            .nickname = _("CUBONE"),
+                                            .nickname = _("AGUMON_06"),
                                             .friendship = 0,
                                         },
                                 },
@@ -3081,7 +3081,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                         },
                                     [3] =
                                         {
-                                            .species = SPECIES_CUBONE,
+                                            .species = SPECIES_AGUMON_06,
                                             .heldItem = ITEM_THICK_CLUB,
                                             .moves = {MOVE_BONEMERANG, MOVE_NONE, MOVE_NONE, MOVE_NONE},
                                             .hpEV = 252,
@@ -3096,7 +3096,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                             .spDefenseIV = 5,
                                             .abilityNum = 1,
                                             .personality = 0x16,
-                                            .nickname = _("CUBONE"),
+                                            .nickname = _("AGUMON_06"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [4] =

@@ -10270,8 +10270,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_YOKOMON
 
-#if P_FAMILY_CUBONE
-    [SPECIES_CUBONE] =
+#if P_FAMILY_AGUMON_06
+    [SPECIES_AGUMON_06] =
     {
         .baseHP        = 50,
         .baseAttack    = 50,
@@ -10291,9 +10291,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_ROCK_HEAD, ABILITY_LIGHTNING_ROD, ABILITY_BATTLE_ARMOR },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Cubone"),
-        .cryId = CRY_CUBONE,
-        .natDexNum = NATIONAL_DEX_CUBONE,
+        .speciesName = _("Agumon_06"),
+        .cryId = CRY_AGUMON_06,
+        .natDexNum = NATIONAL_DEX_AGUMON_06,
         .categoryName = _("Lonely"),
         .height = 4,
         .weight = 65,
@@ -10306,23 +10306,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 21,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Cubone,
+        .frontPic = gMonFrontPic_Agumon_06,
         .frontPicSize = MON_COORDS_SIZE(56, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Cubone,
+        .frontAnimFrames = sAnims_Agumon_06,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .frontAnimDelay = 30,
-        .backPic = gMonBackPic_Cubone,
+        .backPic = gMonBackPic_Agumon_06,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Cubone,
-        .shinyPalette = gMonShinyPalette_Cubone,
-        .iconSprite = gMonIcon_Cubone,
+        .palette = gMonPalette_Agumon_06,
+        .shinyPalette = gMonShinyPalette_Agumon_06,
+        .iconSprite = gMonIcon_Agumon_06,
         .iconPalIndex = 2,
-        FOOTPRINT(Cubone)
-        .levelUpLearnset = sCuboneLevelUpLearnset,
-        .teachableLearnset = sCuboneTeachableLearnset,
+        FOOTPRINT(Agumon_06)
+        .levelUpLearnset = sAgumon_06LevelUpLearnset,
+        .teachableLearnset = sAgumon_06TeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_MAROWAK},
                                 {EVO_NONE, 0, SPECIES_MAROWAK_ALOLAN},
                                 {EVO_NONE, 0, SPECIES_MAROWAK_ALOLAN_TOTEM}),
@@ -10355,7 +10355,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 10,
         .weight = 450,
         .description = COMPOUND_STRING(
-            "A Marowak is the evolved form of a Cubone\n"
+            "A Marowak is the evolved form of a Agumon_06\n"
             "that has grown tough by overcoming the\n"
             "grief of losing its mother. Its tempered\n"
             "and hardened spirit is not easily broken."),
@@ -10486,7 +10486,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sMarowakFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_CUBONE
+#endif //P_FAMILY_AGUMON_06
 
 #if P_FAMILY_HITMONS
 #if P_GEN_2_CROSS_EVOS

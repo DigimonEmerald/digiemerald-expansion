@@ -1652,14 +1652,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_YOKOMON
 
-#if P_FAMILY_CUBONE
-    const u32 gMonFrontPic_Cubone[] = INCBIN_U32("graphics/pokemon/cubone/anim_front.4bpp.lz");
-    const u32 gMonPalette_Cubone[] = INCBIN_U32("graphics/pokemon/cubone/normal.gbapal.lz");
-    const u32 gMonBackPic_Cubone[] = INCBIN_U32("graphics/pokemon/cubone/back.4bpp.lz");
-    const u32 gMonShinyPalette_Cubone[] = INCBIN_U32("graphics/pokemon/cubone/shiny.gbapal.lz");
-    const u8 gMonIcon_Cubone[] = INCBIN_U8("graphics/pokemon/cubone/icon.4bpp");
+#if P_FAMILY_AGUMON_06
+    const u32 gMonFrontPic_Agumon_06[] = INCBIN_U32("graphics/pokemon/agumon_06/anim_front.4bpp.lz");
+    const u32 gMonPalette_Agumon_06[] = INCBIN_U32("graphics/pokemon/agumon_06/normal.gbapal.lz");
+    const u32 gMonBackPic_Agumon_06[] = INCBIN_U32("graphics/pokemon/agumon_06/back.4bpp.lz");
+    const u32 gMonShinyPalette_Agumon_06[] = INCBIN_U32("graphics/pokemon/agumon_06/shiny.gbapal.lz");
+    const u8 gMonIcon_Agumon_06[] = INCBIN_U8("graphics/pokemon/agumon_06/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Cubone[] = INCBIN_U8("graphics/pokemon/cubone/footprint.1bpp");
+    const u8 gMonFootprint_Agumon_06[] = INCBIN_U8("graphics/pokemon/agumon_06/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Marowak[] = INCBIN_U32("graphics/pokemon/marowak/anim_front.4bpp.lz");
@@ -1678,7 +1678,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_MarowakAlolan[] = INCBIN_U32("graphics/pokemon/marowak/alolan/shiny.gbapal.lz");
     const u8 gMonIcon_MarowakAlolan[] = INCBIN_U8("graphics/pokemon/marowak/alolan/icon.4bpp");
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_CUBONE
+#endif //P_FAMILY_AGUMON_06
 
 #if P_FAMILY_HITMONS
 #if P_GEN_2_CROSS_EVOS

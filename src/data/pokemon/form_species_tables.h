@@ -414,7 +414,7 @@ static const u16 sAgumonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_YOKOMON
 
-#if P_FAMILY_CUBONE
+#if P_FAMILY_AGUMON_06
 static const u16 sMarowakFormSpeciesIdTable[] = {
     SPECIES_MAROWAK,
 #if P_ALOLAN_FORMS
@@ -423,7 +423,7 @@ static const u16 sMarowakFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_CUBONE
+#endif //P_FAMILY_AGUMON_06
 
 #if P_FAMILY_KOFFING
 static const u16 sWeezingFormSpeciesIdTable[] = {

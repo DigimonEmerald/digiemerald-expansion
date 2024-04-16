@@ -2012,7 +2012,7 @@ const struct ContestPokemon gContestOpponents[] =
         .otId = CONTEST_AI_TRAINER_ID,
     },
     [CONTEST_OPPONENT_COLTIN] = {
-        .species = SPECIES_CUBONE,
+        .species = SPECIES_AGUMON_06,
         .nickname = _("CUBIN"),
         .trainerName = _("COLTIN"),
         .trainerGfxId = OBJ_EVENT_GFX_MAN_4,

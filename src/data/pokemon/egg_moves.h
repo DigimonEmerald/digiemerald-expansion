@@ -857,8 +857,8 @@ const u16 gEggMoves[] = {
         MOVE_GRASSY_TERRAIN),
 #endif //P_FAMILY_YOKOMON
 
-#if P_FAMILY_CUBONE
-    egg_moves(CUBONE,
+#if P_FAMILY_AGUMON_06
+    egg_moves(AGUMON_06,
         MOVE_ANCIENT_POWER,
         MOVE_BELLY_DRUM,
         MOVE_SCREECH,
@@ -870,7 +870,7 @@ const u16 gEggMoves[] = {
         MOVE_ENDURE,
         MOVE_CHIP_AWAY,
         MOVE_CURSE),
-#endif //P_FAMILY_CUBONE
+#endif //P_FAMILY_AGUMON_06
 
 #if P_FAMILY_HITMONS
 #if P_GEN_2_CROSS_EVOS

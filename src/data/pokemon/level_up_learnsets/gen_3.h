@@ -2268,8 +2268,8 @@ static const struct LevelUpMove sAgumonAlolanLevelUpLearnset[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_YOKOMON
 
-#if P_FAMILY_CUBONE
-static const struct LevelUpMove sCuboneLevelUpLearnset[] = {
+#if P_FAMILY_AGUMON_06
+static const struct LevelUpMove sAgumon_06LevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 5, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 9, MOVE_BONE_CLUB),
@@ -2328,7 +2328,7 @@ static const struct LevelUpMove sMarowakAlolanLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_CUBONE
+#endif //P_FAMILY_AGUMON_06
 
 #if P_FAMILY_HITMONS
 #if P_GEN_2_CROSS_EVOS
