@@ -282,13 +282,13 @@ gCryTable::
 	cry Cry_Argomon_rookie
 	cry Cry_Armadilmon
 .endif @ P_FAMILY_ARGOMON_ROOKIE
-.if P_FAMILY_RHYHORN == TRUE
-	cry Cry_Rhyhorn
+.if P_FAMILY_ARURAUMON == TRUE
+	cry Cry_Aruraumon
 	cry Cry_Rhydon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Rhyperior
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_RHYHORN
+.endif @ P_FAMILY_ARURAUMON
 .if P_FAMILY_CHANSEY == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Happiny
@@ -2708,13 +2708,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Argomon_rookie
 	cry_reverse Cry_Armadilmon
 .endif @ P_FAMILY_ARGOMON_ROOKIE
-.if P_FAMILY_RHYHORN == TRUE
-	cry_reverse Cry_Rhyhorn
+.if P_FAMILY_ARURAUMON == TRUE
+	cry_reverse Cry_Aruraumon
 	cry_reverse Cry_Rhydon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Rhyperior
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_RHYHORN
+.endif @ P_FAMILY_ARURAUMON
 .if P_FAMILY_CHANSEY == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Happiny

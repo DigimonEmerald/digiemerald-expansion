@@ -923,8 +923,8 @@ const u16 gEggMoves[] = {
         MOVE_VENOM_DRENCH),
 #endif //P_FAMILY_ARGOMON_ROOKIE
 
-#if P_FAMILY_RHYHORN
-    egg_moves(RHYHORN,
+#if P_FAMILY_ARURAUMON
+    egg_moves(ARURAUMON,
         MOVE_CRUNCH,
         MOVE_REVERSAL,
         MOVE_COUNTER,
@@ -941,7 +941,7 @@ const u16 gEggMoves[] = {
         MOVE_ROTOTILLER,
         MOVE_METAL_BURST,
         MOVE_GUARD_SPLIT),
-#endif //P_FAMILY_RHYHORN
+#endif //P_FAMILY_ARURAUMON
 
 #if P_FAMILY_CHANSEY
 #if P_GEN_4_CROSS_EVOS

@@ -10997,8 +10997,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_ARGOMON_ROOKIE
 
-#if P_FAMILY_RHYHORN
-    [SPECIES_RHYHORN] =
+#if P_FAMILY_ARURAUMON
+    [SPECIES_ARURAUMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 85,
@@ -11017,9 +11017,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
         .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_ROCK_HEAD, ABILITY_RECKLESS },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Rhyhorn"),
-        .cryId = CRY_RHYHORN,
-        .natDexNum = NATIONAL_DEX_RHYHORN,
+        .speciesName = _("Aruraumon"),
+        .cryId = CRY_ARURAUMON,
+        .natDexNum = NATIONAL_DEX_ARURAUMON,
         .categoryName = _("Spikes"),
         .height = 10,
         .weight = 1150,
@@ -11032,26 +11032,26 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 6,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Rhyhorn,
-        .frontPicFemale = gMonFrontPic_RhyhornF,
+        .frontPic = gMonFrontPic_Aruraumon,
+        .frontPicFemale = gMonFrontPic_AruraumonF,
         .frontPicSize = MON_COORDS_SIZE(56, 40),
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Rhyhorn,
+        .frontAnimFrames = sAnims_Aruraumon,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Rhyhorn,
-        .backPicFemale = gMonBackPic_RhyhornF,
+        .backPic = gMonBackPic_Aruraumon,
+        .backPicFemale = gMonBackPic_AruraumonF,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Rhyhorn,
-        .shinyPalette = gMonShinyPalette_Rhyhorn,
-        .iconSprite = gMonIcon_Rhyhorn,
+        .palette = gMonPalette_Aruraumon,
+        .shinyPalette = gMonShinyPalette_Aruraumon,
+        .iconSprite = gMonIcon_Aruraumon,
         .iconPalIndex = 1,
-        FOOTPRINT(Rhyhorn)
-        .levelUpLearnset = sRhyhornLevelUpLearnset,
-        .teachableLearnset = sRhyhornTeachableLearnset,
+        FOOTPRINT(Aruraumon)
+        .levelUpLearnset = sAruraumonLevelUpLearnset,
+        .teachableLearnset = sAruraumonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_RHYDON}),
     },
 
@@ -11176,7 +11176,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sRhyperiorTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_RHYHORN
+#endif //P_FAMILY_ARURAUMON
 
 #if P_FAMILY_CHANSEY
 #if P_GEN_4_CROSS_EVOS

@@ -1772,18 +1772,18 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_ARGOMON_ROOKIE
 
-#if P_FAMILY_RHYHORN
-    const u32 gMonFrontPic_Rhyhorn[] = INCBIN_U32("graphics/pokemon/rhyhorn/anim_front.4bpp.lz");
-    const u32 gMonPalette_Rhyhorn[] = INCBIN_U32("graphics/pokemon/rhyhorn/normal.gbapal.lz");
-    const u32 gMonBackPic_Rhyhorn[] = INCBIN_U32("graphics/pokemon/rhyhorn/back.4bpp.lz");
-    const u32 gMonShinyPalette_Rhyhorn[] = INCBIN_U32("graphics/pokemon/rhyhorn/shiny.gbapal.lz");
-    const u8 gMonIcon_Rhyhorn[] = INCBIN_U8("graphics/pokemon/rhyhorn/icon.4bpp");
+#if P_FAMILY_ARURAUMON
+    const u32 gMonFrontPic_Aruraumon[] = INCBIN_U32("graphics/pokemon/aruraumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Aruraumon[] = INCBIN_U32("graphics/pokemon/aruraumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Aruraumon[] = INCBIN_U32("graphics/pokemon/aruraumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Aruraumon[] = INCBIN_U32("graphics/pokemon/aruraumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Aruraumon[] = INCBIN_U8("graphics/pokemon/aruraumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Rhyhorn[] = INCBIN_U8("graphics/pokemon/rhyhorn/footprint.1bpp");
+    const u8 gMonFootprint_Aruraumon[] = INCBIN_U8("graphics/pokemon/aruraumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_RhyhornF[] = INCBIN_U32("graphics/pokemon/rhyhorn/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_RhyhornF[] = INCBIN_U32("graphics/pokemon/rhyhorn/backf.4bpp.lz");
+    const u32 gMonFrontPic_AruraumonF[] = INCBIN_U32("graphics/pokemon/aruraumon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_AruraumonF[] = INCBIN_U32("graphics/pokemon/aruraumon/backf.4bpp.lz");
 
     const u32 gMonFrontPic_Rhydon[] = INCBIN_U32("graphics/pokemon/rhydon/anim_front.4bpp.lz");
     const u32 gMonPalette_Rhydon[] = INCBIN_U32("graphics/pokemon/rhydon/normal.gbapal.lz");
@@ -1810,7 +1810,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_RhyperiorF[] = INCBIN_U32("graphics/pokemon/rhyperior/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_RhyperiorF[] = INCBIN_U32("graphics/pokemon/rhyperior/backf.4bpp.lz");
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_RHYHORN
+#endif //P_FAMILY_ARURAUMON
 
 #if P_FAMILY_CHANSEY
 #if P_GEN_4_CROSS_EVOS

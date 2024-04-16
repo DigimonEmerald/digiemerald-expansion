@@ -1077,10 +1077,10 @@ Cry_Armadilmon::
 	.incbin "sound/direct_sound_samples/cries/armadilmon.bin"
 .endif @ P_FAMILY_ARGOMON_ROOKIE
 
-.if P_FAMILY_RHYHORN == TRUE
+.if P_FAMILY_ARURAUMON == TRUE
 	.align 2
-Cry_Rhyhorn::
-	.incbin "sound/direct_sound_samples/cries/rhyhorn.bin"
+Cry_Aruraumon::
+	.incbin "sound/direct_sound_samples/cries/aruraumon.bin"
 
 	.align 2
 Cry_Rhydon::
@@ -1091,7 +1091,7 @@ Cry_Rhydon::
 Cry_Rhyperior::
 	.incbin "sound/direct_sound_samples/cries/rhyperior.bin"
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_RHYHORN
+.endif @ P_FAMILY_ARURAUMON
 
 .if P_FAMILY_CHANSEY == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE

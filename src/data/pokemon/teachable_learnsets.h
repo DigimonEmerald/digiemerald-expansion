@@ -5783,8 +5783,8 @@ static const u16 sArmadilmonGalarianTeachableLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_ARGOMON_ROOKIE
 
-#if P_FAMILY_RHYHORN
-static const u16 sRhyhornTeachableLearnset[] = {
+#if P_FAMILY_ARURAUMON
+static const u16 sAruraumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIG,
@@ -5929,7 +5929,7 @@ static const u16 sRhyperiorTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_RHYHORN
+#endif //P_FAMILY_ARURAUMON
 
 #if P_FAMILY_CHANSEY
 #if P_GEN_4_CROSS_EVOS

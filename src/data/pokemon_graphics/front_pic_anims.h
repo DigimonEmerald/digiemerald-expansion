@@ -1601,8 +1601,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(ArmadilmonGalarian);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_ARGOMON_ROOKIE
 
-#if P_FAMILY_RHYHORN
-static const union AnimCmd sAnim_Rhyhorn_1[] =
+#if P_FAMILY_ARURAUMON
+static const union AnimCmd sAnim_Aruraumon_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 10),
@@ -1630,7 +1630,7 @@ static const union AnimCmd sAnim_Rhyperior_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_RHYHORN
+#endif //P_FAMILY_ARURAUMON
 
 #if P_FAMILY_CHANSEY
 #if P_GEN_4_CROSS_EVOS
@@ -10540,13 +10540,13 @@ SINGLE_ANIMATION(Armadilmon);
 SINGLE_ANIMATION(ArmadilmonGalarian);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_ARGOMON_ROOKIE
-#if P_FAMILY_RHYHORN
-SINGLE_ANIMATION(Rhyhorn);
+#if P_FAMILY_ARURAUMON
+SINGLE_ANIMATION(Aruraumon);
 SINGLE_ANIMATION(Rhydon);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Rhyperior);
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_RHYHORN
+#endif //P_FAMILY_ARURAUMON
 #if P_FAMILY_CHANSEY
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Happiny);

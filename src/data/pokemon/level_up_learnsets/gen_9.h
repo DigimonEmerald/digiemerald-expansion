@@ -3207,8 +3207,8 @@ static const struct LevelUpMove sArmadilmonGalarianLevelUpLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_ARGOMON_ROOKIE
 
-#if P_FAMILY_RHYHORN
-static const struct LevelUpMove sRhyhornLevelUpLearnset[] = {
+#if P_FAMILY_ARURAUMON
+static const struct LevelUpMove sAruraumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 5, MOVE_SMACK_DOWN),
@@ -3267,7 +3267,7 @@ static const struct LevelUpMove sRhyperiorLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_RHYHORN
+#endif //P_FAMILY_ARURAUMON
 
 #if P_FAMILY_CHANSEY
 #if P_GEN_4_CROSS_EVOS
