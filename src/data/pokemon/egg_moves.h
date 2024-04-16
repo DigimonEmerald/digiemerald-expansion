@@ -972,8 +972,8 @@ const u16 gEggMoves[] = {
         MOVE_SEISMIC_TOSS),
 #endif //P_FAMILY_BEARMON
 
-#if P_FAMILY_TANGELA
-    egg_moves(TANGELA,
+#if P_FAMILY_BETAMON
+    egg_moves(BETAMON,
         MOVE_FLAIL,
         MOVE_CONFUSION,
         MOVE_MEGA_DRAIN,
@@ -987,7 +987,7 @@ const u16 gEggMoves[] = {
         MOVE_RAGE_POWDER,
         MOVE_NATURAL_GIFT,
         MOVE_WAKE_UP_SLAP),
-#endif //P_FAMILY_TANGELA
+#endif //P_FAMILY_BETAMON
 
 #if P_FAMILY_KANGASKHAN
     egg_moves(KANGASKHAN,

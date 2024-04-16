@@ -11346,8 +11346,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BEARMON
 
-#if P_FAMILY_TANGELA
-    [SPECIES_TANGELA] =
+#if P_FAMILY_BETAMON
+    [SPECIES_BETAMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 55,
@@ -11366,9 +11366,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_LEAF_GUARD, ABILITY_REGENERATOR },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Tangela"),
-        .cryId = CRY_TANGELA,
-        .natDexNum = NATIONAL_DEX_TANGELA,
+        .speciesName = _("Betamon"),
+        .cryId = CRY_BETAMON,
+        .natDexNum = NATIONAL_DEX_BETAMON,
         .categoryName = _("Vine"),
         .height = 10,
         .weight = 350,
@@ -11381,22 +11381,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 1,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Tangela,
+        .frontPic = gMonFrontPic_Betamon,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Tangela,
+        .frontAnimFrames = sAnims_Betamon,
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
-        .backPic = gMonBackPic_Tangela,
+        .backPic = gMonBackPic_Betamon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Tangela,
-        .shinyPalette = gMonShinyPalette_Tangela,
-        .iconSprite = gMonIcon_Tangela,
+        .palette = gMonPalette_Betamon,
+        .shinyPalette = gMonShinyPalette_Betamon,
+        .iconSprite = gMonIcon_Betamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Tangela)
-        .levelUpLearnset = sTangelaLevelUpLearnset,
-        .teachableLearnset = sTangelaTeachableLearnset,
+        FOOTPRINT(Betamon)
+        .levelUpLearnset = sBetamonLevelUpLearnset,
+        .teachableLearnset = sBetamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_MOVE, MOVE_ANCIENT_POWER, SPECIES_TANGROWTH}),
     },
 
@@ -11455,7 +11455,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sTangrowthTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_TANGELA
+#endif //P_FAMILY_BETAMON
 
 #if P_FAMILY_KANGASKHAN
     [SPECIES_KANGASKHAN] =

@@ -2637,7 +2637,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                         },
                                     [1] =
                                         {
-                                            .species = SPECIES_TANGELA,
+                                            .species = SPECIES_BETAMON,
                                             .heldItem = ITEM_QUICK_CLAW,
                                             .moves = {MOVE_GIGA_DRAIN, MOVE_SLEEP_POWDER, MOVE_AMNESIA, MOVE_SUNNY_DAY},
                                             .hpEV = 255,
@@ -2651,7 +2651,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 0,
                                             .personality = 0x91,
-                                            .nickname = _("TANGELA"),
+                                            .nickname = _("BETAMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [2] =

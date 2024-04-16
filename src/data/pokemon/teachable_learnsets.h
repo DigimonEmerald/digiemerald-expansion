@@ -6108,8 +6108,8 @@ static const u16 sBlisseyTeachableLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BEARMON
 
-#if P_FAMILY_TANGELA
-static const u16 sTangelaTeachableLearnset[] = {
+#if P_FAMILY_BETAMON
+static const u16 sBetamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,
@@ -6176,7 +6176,7 @@ static const u16 sTangrowthTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_TANGELA
+#endif //P_FAMILY_BETAMON
 
 #if P_FAMILY_KANGASKHAN
 static const u16 sKangaskhanTeachableLearnset[] = {

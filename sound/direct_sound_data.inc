@@ -1111,17 +1111,17 @@ Cry_Blissey::
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_BEARMON
 
-.if P_FAMILY_TANGELA == TRUE
+.if P_FAMILY_BETAMON == TRUE
 	.align 2
-Cry_Tangela::
-	.incbin "sound/direct_sound_samples/cries/tangela.bin"
+Cry_Betamon::
+	.incbin "sound/direct_sound_samples/cries/betamon.bin"
 
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
 Cry_Tangrowth::
 	.incbin "sound/direct_sound_samples/cries/tangrowth.bin"
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_TANGELA
+.endif @ P_FAMILY_BETAMON
 
 .if P_FAMILY_KANGASKHAN == TRUE
 	.align 2

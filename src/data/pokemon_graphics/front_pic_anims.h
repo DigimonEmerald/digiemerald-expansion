@@ -1662,8 +1662,8 @@ static const union AnimCmd sAnim_Blissey_1[] =
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BEARMON
 
-#if P_FAMILY_TANGELA
-static const union AnimCmd sAnim_Tangela_1[] =
+#if P_FAMILY_BETAMON
+static const union AnimCmd sAnim_Betamon_1[] =
 {
     ANIMCMD_FRAME(0, 40),
     ANIMCMD_FRAME(1, 24),
@@ -1684,7 +1684,7 @@ static const union AnimCmd sAnim_Tangrowth_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_TANGELA
+#endif //P_FAMILY_BETAMON
 
 #if P_FAMILY_KANGASKHAN
 static const union AnimCmd sAnim_Kangaskhan_1[] =
@@ -10556,12 +10556,12 @@ SINGLE_ANIMATION(Bearmon);
 SINGLE_ANIMATION(Blissey);
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BEARMON
-#if P_FAMILY_TANGELA
-SINGLE_ANIMATION(Tangela);
+#if P_FAMILY_BETAMON
+SINGLE_ANIMATION(Betamon);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Tangrowth);
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_TANGELA
+#endif //P_FAMILY_BETAMON
 #if P_FAMILY_KANGASKHAN
 SINGLE_ANIMATION(Kangaskhan);
 #if P_MEGA_EVOLUTIONS

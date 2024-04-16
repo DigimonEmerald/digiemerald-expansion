@@ -1845,14 +1845,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BEARMON
 
-#if P_FAMILY_TANGELA
-    const u32 gMonFrontPic_Tangela[] = INCBIN_U32("graphics/pokemon/tangela/anim_front.4bpp.lz");
-    const u32 gMonPalette_Tangela[] = INCBIN_U32("graphics/pokemon/tangela/normal.gbapal.lz");
-    const u32 gMonBackPic_Tangela[] = INCBIN_U32("graphics/pokemon/tangela/back.4bpp.lz");
-    const u32 gMonShinyPalette_Tangela[] = INCBIN_U32("graphics/pokemon/tangela/shiny.gbapal.lz");
-    const u8 gMonIcon_Tangela[] = INCBIN_U8("graphics/pokemon/tangela/icon.4bpp");
+#if P_FAMILY_BETAMON
+    const u32 gMonFrontPic_Betamon[] = INCBIN_U32("graphics/pokemon/betamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Betamon[] = INCBIN_U32("graphics/pokemon/betamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Betamon[] = INCBIN_U32("graphics/pokemon/betamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Betamon[] = INCBIN_U32("graphics/pokemon/betamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Betamon[] = INCBIN_U8("graphics/pokemon/betamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Tangela[] = INCBIN_U8("graphics/pokemon/tangela/footprint.1bpp");
+    const u8 gMonFootprint_Betamon[] = INCBIN_U8("graphics/pokemon/betamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_4_CROSS_EVOS
@@ -1867,7 +1867,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
     const u32 gMonFrontPic_TangrowthF[] = INCBIN_U32("graphics/pokemon/tangrowth/anim_frontf.4bpp.lz");
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_TANGELA
+#endif //P_FAMILY_BETAMON
 
 #if P_FAMILY_KANGASKHAN
     const u32 gMonFrontPic_Kangaskhan[] = INCBIN_U32("graphics/pokemon/kangaskhan/anim_front.4bpp.lz");
