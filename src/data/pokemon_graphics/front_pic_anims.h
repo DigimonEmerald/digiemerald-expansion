@@ -1550,8 +1550,8 @@ static const union AnimCmd sAnim_Hitmontop_1[] =
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_HITMONS
 
-#if P_FAMILY_LICKITUNG
-static const union AnimCmd sAnim_Lickitung_1[] =
+#if P_FAMILY_ARCADIAMON_ROOKIE
+static const union AnimCmd sAnim_Arcadiamon_rookie_1[] =
 {
     ANIMCMD_FRAME(1, 16),
     ANIMCMD_FRAME(0, 15),
@@ -1573,7 +1573,7 @@ static const union AnimCmd sAnim_Lickilicky_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_LICKITUNG
+#endif //P_FAMILY_ARCADIAMON_ROOKIE
 
 #if P_FAMILY_KOFFING
 static const union AnimCmd sAnim_Koffing_1[] =
@@ -10527,12 +10527,12 @@ SINGLE_ANIMATION(Angoramon);
 SINGLE_ANIMATION(Hitmontop);
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_HITMONS
-#if P_FAMILY_LICKITUNG
-SINGLE_ANIMATION(Lickitung);
+#if P_FAMILY_ARCADIAMON_ROOKIE
+SINGLE_ANIMATION(Arcadiamon_rookie);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Lickilicky);
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_LICKITUNG
+#endif //P_FAMILY_ARCADIAMON_ROOKIE
 #if P_FAMILY_KOFFING
 SINGLE_ANIMATION(Koffing);
 SINGLE_ANIMATION(Weezing);

@@ -10705,8 +10705,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_HITMONS
 
-#if P_FAMILY_LICKITUNG
-    [SPECIES_LICKITUNG] =
+#if P_FAMILY_ARCADIAMON_ROOKIE
+    [SPECIES_ARCADIAMON_ROOKIE] =
     {
         .baseHP        = 90,
         .baseAttack    = 55,
@@ -10726,9 +10726,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_OWN_TEMPO, ABILITY_OBLIVIOUS, ABILITY_CLOUD_NINE },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Lickitung"),
-        .cryId = CRY_LICKITUNG,
-        .natDexNum = NATIONAL_DEX_LICKITUNG,
+        .speciesName = _("Arcadiamon_rookie"),
+        .cryId = CRY_ARCADIAMON_ROOKIE,
+        .natDexNum = NATIONAL_DEX_ARCADIAMON_ROOKIE,
         .categoryName = _("Licking"),
         .height = 12,
         .weight = 655,
@@ -10741,22 +10741,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Lickitung,
+        .frontPic = gMonFrontPic_Arcadiamon_rookie,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Lickitung,
+        .frontAnimFrames = sAnims_Arcadiamon_rookie,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Lickitung,
+        .backPic = gMonBackPic_Arcadiamon_rookie,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Lickitung,
-        .shinyPalette = gMonShinyPalette_Lickitung,
-        .iconSprite = gMonIcon_Lickitung,
+        .palette = gMonPalette_Arcadiamon_rookie,
+        .shinyPalette = gMonShinyPalette_Arcadiamon_rookie,
+        .iconSprite = gMonIcon_Arcadiamon_rookie,
         .iconPalIndex = 0,
-        FOOTPRINT(Lickitung)
-        .levelUpLearnset = sLickitungLevelUpLearnset,
-        .teachableLearnset = sLickitungTeachableLearnset,
+        FOOTPRINT(Arcadiamon_rookie)
+        .levelUpLearnset = sArcadiamon_rookieLevelUpLearnset,
+        .teachableLearnset = sArcadiamon_rookieTeachableLearnset,
         .evolutions = EVOLUTION({EVO_MOVE, MOVE_ROLLOUT, SPECIES_LICKILICKY}),
     },
 
@@ -10814,7 +10814,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sLickilickyTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_LICKITUNG
+#endif //P_FAMILY_ARCADIAMON_ROOKIE
 
 #if P_FAMILY_KOFFING
     [SPECIES_KOFFING] =

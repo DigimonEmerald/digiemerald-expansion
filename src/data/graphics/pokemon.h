@@ -1722,14 +1722,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_HITMONS
 
-#if P_FAMILY_LICKITUNG
-    const u32 gMonFrontPic_Lickitung[] = INCBIN_U32("graphics/pokemon/lickitung/anim_front.4bpp.lz");
-    const u32 gMonPalette_Lickitung[] = INCBIN_U32("graphics/pokemon/lickitung/normal.gbapal.lz");
-    const u32 gMonBackPic_Lickitung[] = INCBIN_U32("graphics/pokemon/lickitung/back.4bpp.lz");
-    const u32 gMonShinyPalette_Lickitung[] = INCBIN_U32("graphics/pokemon/lickitung/shiny.gbapal.lz");
-    const u8 gMonIcon_Lickitung[] = INCBIN_U8("graphics/pokemon/lickitung/icon.4bpp");
+#if P_FAMILY_ARCADIAMON_ROOKIE
+    const u32 gMonFrontPic_Arcadiamon_rookie[] = INCBIN_U32("graphics/pokemon/arcadiamon_rookie/anim_front.4bpp.lz");
+    const u32 gMonPalette_Arcadiamon_rookie[] = INCBIN_U32("graphics/pokemon/arcadiamon_rookie/normal.gbapal.lz");
+    const u32 gMonBackPic_Arcadiamon_rookie[] = INCBIN_U32("graphics/pokemon/arcadiamon_rookie/back.4bpp.lz");
+    const u32 gMonShinyPalette_Arcadiamon_rookie[] = INCBIN_U32("graphics/pokemon/arcadiamon_rookie/shiny.gbapal.lz");
+    const u8 gMonIcon_Arcadiamon_rookie[] = INCBIN_U8("graphics/pokemon/arcadiamon_rookie/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Lickitung[] = INCBIN_U8("graphics/pokemon/lickitung/footprint.1bpp");
+    const u8 gMonFootprint_Arcadiamon_rookie[] = INCBIN_U8("graphics/pokemon/arcadiamon_rookie/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_4_CROSS_EVOS
@@ -1742,7 +1742,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Lickilicky[] = INCBIN_U8("graphics/pokemon/lickilicky/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_LICKITUNG
+#endif //P_FAMILY_ARCADIAMON_ROOKIE
 
 #if P_FAMILY_KOFFING
     const u32 gMonFrontPic_Koffing[] = INCBIN_U32("graphics/pokemon/koffing/anim_front.4bpp.lz");

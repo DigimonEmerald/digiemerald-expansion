@@ -889,8 +889,8 @@ const u16 gEggMoves[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_HITMONS
 
-#if P_FAMILY_LICKITUNG
-    egg_moves(LICKITUNG,
+#if P_FAMILY_ARCADIAMON_ROOKIE
+    egg_moves(ARCADIAMON_ROOKIE,
         MOVE_BELLY_DRUM,
         MOVE_MAGNITUDE,
         MOVE_BODY_SLAM,
@@ -904,7 +904,7 @@ const u16 gEggMoves[] = {
         MOVE_ZEN_HEADBUTT,
         MOVE_BELCH,
         MOVE_THRASH),
-#endif //P_FAMILY_LICKITUNG
+#endif //P_FAMILY_ARCADIAMON_ROOKIE
 
 #if P_FAMILY_KOFFING
     egg_moves(KOFFING,

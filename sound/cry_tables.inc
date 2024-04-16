@@ -272,12 +272,12 @@ gCryTable::
 	cry Cry_Hitmontop
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_HITMONS
-.if P_FAMILY_LICKITUNG == TRUE
-	cry Cry_Lickitung
+.if P_FAMILY_ARCADIAMON_ROOKIE == TRUE
+	cry Cry_Arcadiamon_rookie
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Lickilicky
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_LICKITUNG
+.endif @ P_FAMILY_ARCADIAMON_ROOKIE
 .if P_FAMILY_KOFFING == TRUE
 	cry Cry_Koffing
 	cry Cry_Weezing
@@ -2698,12 +2698,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Hitmontop
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_HITMONS
-.if P_FAMILY_LICKITUNG == TRUE
-	cry_reverse Cry_Lickitung
+.if P_FAMILY_ARCADIAMON_ROOKIE == TRUE
+	cry_reverse Cry_Arcadiamon_rookie
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Lickilicky
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_LICKITUNG
+.endif @ P_FAMILY_ARCADIAMON_ROOKIE
 .if P_FAMILY_KOFFING == TRUE
 	cry_reverse Cry_Koffing
 	cry_reverse Cry_Weezing

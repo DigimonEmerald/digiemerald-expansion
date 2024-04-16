@@ -5575,8 +5575,8 @@ static const u16 sHitmontopTeachableLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_HITMONS
 
-#if P_FAMILY_LICKITUNG
-static const u16 sLickitungTeachableLearnset[] = {
+#if P_FAMILY_ARCADIAMON_ROOKIE
+static const u16 sArcadiamon_rookieTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
@@ -5689,7 +5689,7 @@ static const u16 sLickilickyTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_LICKITUNG
+#endif //P_FAMILY_ARCADIAMON_ROOKIE
 
 #if P_FAMILY_KOFFING
 static const u16 sKoffingTeachableLearnset[] = {

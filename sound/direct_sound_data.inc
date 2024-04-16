@@ -1055,17 +1055,17 @@ Cry_Hitmontop::
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_HITMONS
 
-.if P_FAMILY_LICKITUNG == TRUE
+.if P_FAMILY_ARCADIAMON_ROOKIE == TRUE
 	.align 2
-Cry_Lickitung::
-	.incbin "sound/direct_sound_samples/cries/lickitung.bin"
+Cry_Arcadiamon_rookie::
+	.incbin "sound/direct_sound_samples/cries/arcadiamon_rookie.bin"
 
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
 Cry_Lickilicky::
 	.incbin "sound/direct_sound_samples/cries/lickilicky.bin"
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_LICKITUNG
+.endif @ P_FAMILY_ARCADIAMON_ROOKIE
 
 .if P_FAMILY_KOFFING == TRUE
 	.align 2

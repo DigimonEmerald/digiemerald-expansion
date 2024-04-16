@@ -2118,8 +2118,8 @@ static const struct LevelUpMove sHitmontopLevelUpLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_HITMONS
 
-#if P_FAMILY_LICKITUNG
-static const struct LevelUpMove sLickitungLevelUpLearnset[] = {
+#if P_FAMILY_ARCADIAMON_ROOKIE
+static const struct LevelUpMove sArcadiamon_rookieLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WRAP),
     LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE( 7, MOVE_STOMP),
@@ -2150,7 +2150,7 @@ static const struct LevelUpMove sLickilickyLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_LICKITUNG
+#endif //P_FAMILY_ARCADIAMON_ROOKIE
 
 #if P_FAMILY_KOFFING
 static const struct LevelUpMove sKoffingLevelUpLearnset[] = {
