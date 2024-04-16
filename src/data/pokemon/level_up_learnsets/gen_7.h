@@ -4011,8 +4011,8 @@ static const struct LevelUpMove sChuumonPaldeanAquaBreedLevelUpLearnset[] = {
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_CHUUMON
 
-#if P_FAMILY_MAGIKARP
-static const struct LevelUpMove sMagikarpLevelUpLearnset[] = {
+#if P_FAMILY_HAZYAGUMON
+static const struct LevelUpMove sHazyagumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
     LEVEL_UP_MOVE(15, MOVE_TACKLE),
     LEVEL_UP_MOVE(30, MOVE_FLAIL),
@@ -4037,7 +4037,7 @@ static const struct LevelUpMove sGyaradosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(54, MOVE_HYPER_BEAM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_MAGIKARP
+#endif //P_FAMILY_HAZYAGUMON
 
 #if P_FAMILY_LAPRAS
 static const struct LevelUpMove sLaprasLevelUpLearnset[] = {

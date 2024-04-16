@@ -379,13 +379,13 @@ gCryTable::
 .if P_FAMILY_CHUUMON == TRUE
 	cry Cry_Chuumon
 .endif @ P_FAMILY_CHUUMON
-.if P_FAMILY_MAGIKARP == TRUE
-	cry Cry_Magikarp
+.if P_FAMILY_HAZYAGUMON == TRUE
+	cry Cry_Hazyagumon
 	cry Cry_Gyarados
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_GyaradosMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MAGIKARP
+.endif @ P_FAMILY_HAZYAGUMON
 .if P_FAMILY_LAPRAS == TRUE
 	cry Cry_Lapras
 .endif @ P_FAMILY_LAPRAS
@@ -2805,13 +2805,13 @@ gCryTable_Reverse::
 .if P_FAMILY_CHUUMON == TRUE
 	cry_reverse Cry_Chuumon
 .endif @ P_FAMILY_CHUUMON
-.if P_FAMILY_MAGIKARP == TRUE
-	cry_reverse Cry_Magikarp
+.if P_FAMILY_HAZYAGUMON == TRUE
+	cry_reverse Cry_Hazyagumon
 	cry_reverse Cry_Gyarados
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_GyaradosMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MAGIKARP
+.endif @ P_FAMILY_HAZYAGUMON
 .if P_FAMILY_LAPRAS == TRUE
 	cry_reverse Cry_Lapras
 .endif @ P_FAMILY_LAPRAS

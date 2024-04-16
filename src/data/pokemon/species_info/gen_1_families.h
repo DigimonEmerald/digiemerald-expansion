@@ -13224,8 +13224,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_CHUUMON
 
-#if P_FAMILY_MAGIKARP
-    [SPECIES_MAGIKARP] =
+#if P_FAMILY_HAZYAGUMON
+    [SPECIES_HAZYAGUMON] =
     {
         .baseHP        = 20,
         .baseAttack    = 10,
@@ -13244,9 +13244,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Magikarp"),
-        .cryId = CRY_MAGIKARP,
-        .natDexNum = NATIONAL_DEX_MAGIKARP,
+        .speciesName = _("Hazyagumon"),
+        .cryId = CRY_HAZYAGUMON,
+        .natDexNum = NATIONAL_DEX_HAZYAGUMON,
         .categoryName = _("Fish"),
         .height = 9,
         .weight = 100,
@@ -13254,32 +13254,32 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "Its swimming muscles are weak, so it is\n"
             "easily washed away by currents. In places\n"
             "where water pools, you can see many\n"
-            "Magikarp deposited there by the flow."),
+            "Hazyagumon deposited there by the flow."),
         .pokemonScale = 310,
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Magikarp,
-        .frontPicFemale = gMonFrontPic_MagikarpF,
+        .frontPic = gMonFrontPic_Hazyagumon,
+        .frontPicFemale = gMonFrontPic_HazyagumonF,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Magikarp,
+        .frontAnimFrames = sAnims_Hazyagumon,
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
-        .backPic = gMonBackPic_Magikarp,
-        .backPicFemale = gMonBackPic_MagikarpF,
+        .backPic = gMonBackPic_Hazyagumon,
+        .backPicFemale = gMonBackPic_HazyagumonF,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Magikarp,
-        .shinyPalette = gMonShinyPalette_Magikarp,
-        .iconSprite = gMonIcon_Magikarp,
+        .palette = gMonPalette_Hazyagumon,
+        .shinyPalette = gMonShinyPalette_Hazyagumon,
+        .iconSprite = gMonIcon_Hazyagumon,
         .iconPalIndex = 0,
-        FOOTPRINT(Magikarp)
+        FOOTPRINT(Hazyagumon)
         .tmIlliterate = TRUE,
-        .levelUpLearnset = sMagikarpLevelUpLearnset,
-        .teachableLearnset = sMagikarpTeachableLearnset,
+        .levelUpLearnset = sHazyagumonLevelUpLearnset,
+        .teachableLearnset = sHazyagumonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_GYARADOS}),
     },
 
@@ -13398,7 +13398,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sGyaradosFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MAGIKARP
+#endif //P_FAMILY_HAZYAGUMON
 
 #if P_FAMILY_LAPRAS
     [SPECIES_LAPRAS] =

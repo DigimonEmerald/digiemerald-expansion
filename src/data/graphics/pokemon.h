@@ -2187,18 +2187,18 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_CHUUMON
 
-#if P_FAMILY_MAGIKARP
-    const u32 gMonFrontPic_Magikarp[] = INCBIN_U32("graphics/pokemon/magikarp/anim_front.4bpp.lz");
-    const u32 gMonPalette_Magikarp[] = INCBIN_U32("graphics/pokemon/magikarp/normal.gbapal.lz");
-    const u32 gMonBackPic_Magikarp[] = INCBIN_U32("graphics/pokemon/magikarp/back.4bpp.lz");
-    const u32 gMonShinyPalette_Magikarp[] = INCBIN_U32("graphics/pokemon/magikarp/shiny.gbapal.lz");
-    const u8 gMonIcon_Magikarp[] = INCBIN_U8("graphics/pokemon/magikarp/icon.4bpp");
+#if P_FAMILY_HAZYAGUMON
+    const u32 gMonFrontPic_Hazyagumon[] = INCBIN_U32("graphics/pokemon/hazyagumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Hazyagumon[] = INCBIN_U32("graphics/pokemon/hazyagumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Hazyagumon[] = INCBIN_U32("graphics/pokemon/hazyagumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Hazyagumon[] = INCBIN_U32("graphics/pokemon/hazyagumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Hazyagumon[] = INCBIN_U8("graphics/pokemon/hazyagumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Magikarp[] = INCBIN_U8("graphics/pokemon/magikarp/footprint.1bpp");
+    const u8 gMonFootprint_Hazyagumon[] = INCBIN_U8("graphics/pokemon/hazyagumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_MagikarpF[] = INCBIN_U32("graphics/pokemon/magikarp/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_MagikarpF[] = INCBIN_U32("graphics/pokemon/magikarp/backf.4bpp.lz");
+    const u32 gMonFrontPic_HazyagumonF[] = INCBIN_U32("graphics/pokemon/hazyagumon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_HazyagumonF[] = INCBIN_U32("graphics/pokemon/hazyagumon/backf.4bpp.lz");
 
     const u32 gMonFrontPic_Gyarados[] = INCBIN_U32("graphics/pokemon/gyarados/anim_front.4bpp.lz");
     const u32 gMonPalette_Gyarados[] = INCBIN_U32("graphics/pokemon/gyarados/normal.gbapal.lz");
@@ -2219,7 +2219,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_GyaradosMega[] = INCBIN_U32("graphics/pokemon/gyarados/mega/shiny.gbapal.lz");
     const u8 gMonIcon_GyaradosMega[] = INCBIN_U8("graphics/pokemon/gyarados/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MAGIKARP
+#endif //P_FAMILY_HAZYAGUMON
 
 #if P_FAMILY_LAPRAS
     const u32 gMonFrontPic_Lapras[] = INCBIN_U32("graphics/pokemon/lapras/anim_front.4bpp.lz");

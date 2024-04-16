@@ -489,7 +489,7 @@ static const u16 sChuumonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_CHUUMON
 
-#if P_FAMILY_MAGIKARP
+#if P_FAMILY_HAZYAGUMON
 static const u16 sGyaradosFormSpeciesIdTable[] = {
     SPECIES_GYARADOS,
 #if P_MEGA_EVOLUTIONS
@@ -497,7 +497,7 @@ static const u16 sGyaradosFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_MAGIKARP
+#endif //P_FAMILY_HAZYAGUMON
 
 #if P_FAMILY_LAPRAS
 static const u16 sLaprasFormSpeciesIdTable[] = {

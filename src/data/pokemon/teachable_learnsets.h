@@ -7221,8 +7221,8 @@ static const u16 sChuumonPaldeanAquaBreedTeachableLearnset[] = {
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_CHUUMON
 
-#if P_FAMILY_MAGIKARP
-static const u16 sMagikarpTeachableLearnset[] = {
+#if P_FAMILY_HAZYAGUMON
+static const u16 sHazyagumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
@@ -7266,7 +7266,7 @@ static const u16 sGyaradosTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MAGIKARP
+#endif //P_FAMILY_HAZYAGUMON
 
 #if P_FAMILY_LAPRAS
 static const u16 sLaprasTeachableLearnset[] = {

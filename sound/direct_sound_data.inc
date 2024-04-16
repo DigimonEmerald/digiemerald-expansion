@@ -1279,10 +1279,10 @@ Cry_Chuumon::
 	.incbin "sound/direct_sound_samples/cries/chuumon.bin"
 .endif @ P_FAMILY_CHUUMON
 
-.if P_FAMILY_MAGIKARP == TRUE
+.if P_FAMILY_HAZYAGUMON == TRUE
 	.align 2
-Cry_Magikarp::
-	.incbin "sound/direct_sound_samples/cries/magikarp.bin"
+Cry_Hazyagumon::
+	.incbin "sound/direct_sound_samples/cries/hazyagumon.bin"
 
 	.align 2
 Cry_Gyarados::
@@ -1293,7 +1293,7 @@ Cry_Gyarados::
 Cry_GyaradosMega::
 	.incbin "sound/direct_sound_samples/cries/gyarados_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MAGIKARP
+.endif @ P_FAMILY_HAZYAGUMON
 
 .if P_FAMILY_LAPRAS == TRUE
 	.align 2

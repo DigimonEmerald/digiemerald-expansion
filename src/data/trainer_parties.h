@@ -4269,7 +4269,7 @@ static const struct TrainerMon sParty_Wallace[] = {
 static const struct TrainerMon sParty_Andrew[] = {
     {
     .lvl = 5,
-    .species = SPECIES_MAGIKARP,
+    .species = SPECIES_HAZYAGUMON,
     },
     {
     .lvl = 10,
@@ -4277,29 +4277,29 @@ static const struct TrainerMon sParty_Andrew[] = {
     },
     {
     .lvl = 15,
-    .species = SPECIES_MAGIKARP,
+    .species = SPECIES_HAZYAGUMON,
     }
 };
 
 static const struct TrainerMon sParty_Ivan[] = {
     {
     .lvl = 5,
-    .species = SPECIES_MAGIKARP,
+    .species = SPECIES_HAZYAGUMON,
     },
     {
     .lvl = 6,
-    .species = SPECIES_MAGIKARP,
+    .species = SPECIES_HAZYAGUMON,
     },
     {
     .lvl = 7,
-    .species = SPECIES_MAGIKARP,
+    .species = SPECIES_HAZYAGUMON,
     }
 };
 
 static const struct TrainerMon sParty_Claude[] = {
     {
     .lvl = 16,
-    .species = SPECIES_MAGIKARP,
+    .species = SPECIES_HAZYAGUMON,
     },
     {
     .lvl = 17,
@@ -4314,7 +4314,7 @@ static const struct TrainerMon sParty_Claude[] = {
 static const struct TrainerMon sParty_Elliot1[] = {
     {
     .lvl = 10,
-    .species = SPECIES_MAGIKARP,
+    .species = SPECIES_HAZYAGUMON,
     },
     {
     .lvl = 7,
@@ -4322,7 +4322,7 @@ static const struct TrainerMon sParty_Elliot1[] = {
     },
     {
     .lvl = 10,
-    .species = SPECIES_MAGIKARP,
+    .species = SPECIES_HAZYAGUMON,
     }
 };
 
@@ -4481,7 +4481,7 @@ static const struct TrainerMon sParty_Elliot5[] = {
 static const struct TrainerMon sParty_Ronald[] = {
     {
     .lvl = 19,
-    .species = SPECIES_MAGIKARP,
+    .species = SPECIES_HAZYAGUMON,
     },
     {
     .lvl = 21,
@@ -8575,11 +8575,11 @@ static const struct TrainerMon sParty_Henry[] = {
 static const struct TrainerMon sParty_Roger[] = {
     {
     .lvl = 15,
-    .species = SPECIES_MAGIKARP,
+    .species = SPECIES_HAZYAGUMON,
     },
     {
     .lvl = 25,
-    .species = SPECIES_MAGIKARP,
+    .species = SPECIES_HAZYAGUMON,
     },
     {
     .lvl = 35,
@@ -8869,7 +8869,7 @@ static const struct TrainerMon sParty_LisaAndRay[] = {
 static const struct TrainerMon sParty_Chris[] = {
     {
     .lvl = 29,
-    .species = SPECIES_MAGIKARP,
+    .species = SPECIES_HAZYAGUMON,
     },
     {
     .lvl = 20,
@@ -8914,7 +8914,7 @@ static const struct TrainerMon sParty_Sarah[] = {
 static const struct TrainerMon sParty_Darian[] = {
     {
     .lvl = 9,
-    .species = SPECIES_MAGIKARP,
+    .species = SPECIES_HAZYAGUMON,
     }
 };
 

@@ -1959,8 +1959,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(ChuumonPaldean);
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_CHUUMON
 
-#if P_FAMILY_MAGIKARP
-static const union AnimCmd sAnim_Magikarp_1[] =
+#if P_FAMILY_HAZYAGUMON
+static const union AnimCmd sAnim_Hazyagumon_1[] =
 {
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_FRAME(1, 8),
@@ -1985,7 +1985,7 @@ static const union AnimCmd sAnim_Gyarados_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(GyaradosMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MAGIKARP
+#endif //P_FAMILY_HAZYAGUMON
 
 #if P_FAMILY_LAPRAS
 static const union AnimCmd sAnim_Lapras_1[] =
@@ -10641,13 +10641,13 @@ SINGLE_ANIMATION(Chuumon);
 SINGLE_ANIMATION(ChuumonPaldean);
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_CHUUMON
-#if P_FAMILY_MAGIKARP
-SINGLE_ANIMATION(Magikarp);
+#if P_FAMILY_HAZYAGUMON
+SINGLE_ANIMATION(Hazyagumon);
 SINGLE_ANIMATION(Gyarados);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(GyaradosMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MAGIKARP
+#endif //P_FAMILY_HAZYAGUMON
 #if P_FAMILY_LAPRAS
 SINGLE_ANIMATION(Lapras);
 #if P_GIGANTAMAX_FORMS
