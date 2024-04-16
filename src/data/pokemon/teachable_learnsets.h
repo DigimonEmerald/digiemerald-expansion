@@ -7106,8 +7106,8 @@ static const u16 sTyutyumonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_TYUTYUMON
 
-#if P_FAMILY_TAUROS
-static const u16 sTaurosTeachableLearnset[] = {
+#if P_FAMILY_CHUUMON
+static const u16 sChuumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIG,
@@ -7148,7 +7148,7 @@ static const u16 sTaurosTeachableLearnset[] = {
 };
 
 #if P_PALDEAN_FORMS
-static const u16 sTaurosPaldeanCombatBreedTeachableLearnset[] = {
+static const u16 sChuumonPaldeanCombatBreedTeachableLearnset[] = {
     MOVE_BULK_UP,
     MOVE_DIG,
     MOVE_EARTHQUAKE,
@@ -7171,7 +7171,7 @@ static const u16 sTaurosPaldeanCombatBreedTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sTaurosPaldeanBlazeBreedTeachableLearnset[] = {
+static const u16 sChuumonPaldeanBlazeBreedTeachableLearnset[] = {
     MOVE_BULK_UP,
     MOVE_DIG,
     MOVE_EARTHQUAKE,
@@ -7196,7 +7196,7 @@ static const u16 sTaurosPaldeanBlazeBreedTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sTaurosPaldeanAquaBreedTeachableLearnset[] = {
+static const u16 sChuumonPaldeanAquaBreedTeachableLearnset[] = {
     MOVE_BULK_UP,
     MOVE_DIG,
     MOVE_EARTHQUAKE,
@@ -7219,7 +7219,7 @@ static const u16 sTaurosPaldeanAquaBreedTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_PALDEAN_FORMS
-#endif //P_FAMILY_TAUROS
+#endif //P_FAMILY_CHUUMON
 
 #if P_FAMILY_MAGIKARP
 static const u16 sMagikarpTeachableLearnset[] = {

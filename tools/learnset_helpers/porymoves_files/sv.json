@@ -10295,7 +10295,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "TAUROS": {
+  "CHUUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -94555,7 +94555,7 @@
     ],
     "TutorMoves": []
   },
-  "TAUROS_PALDEAN_COMBAT_BREED": {
+  "CHUUMON_PALDEAN_COMBAT_BREED": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -94664,7 +94664,7 @@
     ],
     "TutorMoves": []
   },
-  "TAUROS_PALDEAN_BLAZE_BREED": {
+  "CHUUMON_PALDEAN_BLAZE_BREED": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -94779,7 +94779,7 @@
     ],
     "TutorMoves": []
   },
-  "TAUROS_PALDEAN_AQUA_BREED": {
+  "CHUUMON_PALDEAN_AQUA_BREED": {
     "LevelMoves": [
       {
         "Level": 1,

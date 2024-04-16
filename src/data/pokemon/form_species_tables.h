@@ -477,17 +477,17 @@ static const u16 sTyutyumonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_TYUTYUMON
 
-#if P_FAMILY_TAUROS
-static const u16 sTaurosFormSpeciesIdTable[] = {
-    SPECIES_TAUROS,
+#if P_FAMILY_CHUUMON
+static const u16 sChuumonFormSpeciesIdTable[] = {
+    SPECIES_CHUUMON,
 #if P_PALDEAN_FORMS
-    SPECIES_TAUROS_PALDEAN_COMBAT_BREED,
-    SPECIES_TAUROS_PALDEAN_BLAZE_BREED,
-    SPECIES_TAUROS_PALDEAN_AQUA_BREED,
+    SPECIES_CHUUMON_PALDEAN_COMBAT_BREED,
+    SPECIES_CHUUMON_PALDEAN_BLAZE_BREED,
+    SPECIES_CHUUMON_PALDEAN_AQUA_BREED,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_TAUROS
+#endif //P_FAMILY_CHUUMON
 
 #if P_FAMILY_MAGIKARP
 static const u16 sGyaradosFormSpeciesIdTable[] = {

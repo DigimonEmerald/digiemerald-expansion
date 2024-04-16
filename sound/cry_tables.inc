@@ -376,9 +376,9 @@ gCryTable::
 	cry Cry_TyutyumonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TYUTYUMON
-.if P_FAMILY_TAUROS == TRUE
-	cry Cry_Tauros
-.endif @ P_FAMILY_TAUROS
+.if P_FAMILY_CHUUMON == TRUE
+	cry Cry_Chuumon
+.endif @ P_FAMILY_CHUUMON
 .if P_FAMILY_MAGIKARP == TRUE
 	cry Cry_Magikarp
 	cry Cry_Gyarados
@@ -2802,9 +2802,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_TyutyumonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TYUTYUMON
-.if P_FAMILY_TAUROS == TRUE
-	cry_reverse Cry_Tauros
-.endif @ P_FAMILY_TAUROS
+.if P_FAMILY_CHUUMON == TRUE
+	cry_reverse Cry_Chuumon
+.endif @ P_FAMILY_CHUUMON
 .if P_FAMILY_MAGIKARP == TRUE
 	cry_reverse Cry_Magikarp
 	cry_reverse Cry_Gyarados

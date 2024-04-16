@@ -1944,8 +1944,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(TyutyumonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_TYUTYUMON
 
-#if P_FAMILY_TAUROS
-static const union AnimCmd sAnim_Tauros_1[] =
+#if P_FAMILY_CHUUMON
+static const union AnimCmd sAnim_Chuumon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 20),
@@ -1955,9 +1955,9 @@ static const union AnimCmd sAnim_Tauros_1[] =
 };
 
 #if P_PALDEAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(TaurosPaldean);
+PLACEHOLDER_ANIM_SINGLE_FRAME(ChuumonPaldean);
 #endif //P_PALDEAN_FORMS
-#endif //P_FAMILY_TAUROS
+#endif //P_FAMILY_CHUUMON
 
 #if P_FAMILY_MAGIKARP
 static const union AnimCmd sAnim_Magikarp_1[] =
@@ -10635,12 +10635,12 @@ SINGLE_ANIMATION(Tyutyumon);
 SINGLE_ANIMATION(TyutyumonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_TYUTYUMON
-#if P_FAMILY_TAUROS
-SINGLE_ANIMATION(Tauros);
+#if P_FAMILY_CHUUMON
+SINGLE_ANIMATION(Chuumon);
 #if P_PALDEAN_FORMS
-SINGLE_ANIMATION(TaurosPaldean);
+SINGLE_ANIMATION(ChuumonPaldean);
 #endif //P_PALDEAN_FORMS
-#endif //P_FAMILY_TAUROS
+#endif //P_FAMILY_CHUUMON
 #if P_FAMILY_MAGIKARP
 SINGLE_ANIMATION(Magikarp);
 SINGLE_ANIMATION(Gyarados);

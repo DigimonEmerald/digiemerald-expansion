@@ -13003,8 +13003,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_TYUTYUMON
 
-#if P_FAMILY_TAUROS
-    [SPECIES_TAUROS] =
+#if P_FAMILY_CHUUMON
+    [SPECIES_CHUUMON] =
     {
         .baseHP        = 75,
         .baseAttack    = 100,
@@ -13024,43 +13024,43 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_ANGER_POINT, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Tauros"),
-        .cryId = CRY_TAUROS,
-        .natDexNum = NATIONAL_DEX_TAUROS,
+        .speciesName = _("Chuumon"),
+        .cryId = CRY_CHUUMON,
+        .natDexNum = NATIONAL_DEX_CHUUMON,
         .categoryName = _("Wild Bull"),
         .height = 14,
         .weight = 884,
         .description = COMPOUND_STRING(
             "It is not satisfied unless it is rampaging\n"
             "at all times. If there is no opponent for\n"
-            "Tauros to battle, it will charge at thick\n"
+            "Chuumon to battle, it will charge at thick\n"
             "trees and knock them down to calm itself."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Tauros,
+        .frontPic = gMonFrontPic_Chuumon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_Tauros,
+        .frontAnimFrames = sAnims_Chuumon,
         .frontAnimId = ANIM_V_SHAKE_TWICE,
         .frontAnimDelay = 10,
-        .backPic = gMonBackPic_Tauros,
+        .backPic = gMonBackPic_Chuumon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Tauros,
-        .shinyPalette = gMonShinyPalette_Tauros,
-        .iconSprite = gMonIcon_Tauros,
+        .palette = gMonPalette_Chuumon,
+        .shinyPalette = gMonShinyPalette_Chuumon,
+        .iconSprite = gMonIcon_Chuumon,
         .iconPalIndex = 2,
-        FOOTPRINT(Tauros)
-        .levelUpLearnset = sTaurosLevelUpLearnset,
-        .teachableLearnset = sTaurosTeachableLearnset,
-        .formSpeciesIdTable = sTaurosFormSpeciesIdTable,
+        FOOTPRINT(Chuumon)
+        .levelUpLearnset = sChuumonLevelUpLearnset,
+        .teachableLearnset = sChuumonTeachableLearnset,
+        .formSpeciesIdTable = sChuumonFormSpeciesIdTable,
     },
 
 #if P_PALDEAN_FORMS
-    [SPECIES_TAUROS_PALDEAN_COMBAT_BREED] =
+    [SPECIES_CHUUMON_PALDEAN_COMBAT_BREED] =
     {
         .baseHP        = 75,
         .baseAttack    = 110,
@@ -13079,9 +13079,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_ANGER_POINT, ABILITY_CUD_CHEW },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Tauros"),
-        .cryId = CRY_TAUROS,
-        .natDexNum = NATIONAL_DEX_TAUROS,
+        .speciesName = _("Chuumon"),
+        .cryId = CRY_CHUUMON,
+        .natDexNum = NATIONAL_DEX_CHUUMON,
         .categoryName = _("Wild Bull"),
         .height = 14,
         .weight = 1150,
@@ -13094,27 +13094,27 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_TaurosPaldeanCombatBreed,
+        .frontPic = gMonFrontPic_ChuumonPaldeanCombatBreed,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_TaurosPaldean,
+        .frontAnimFrames = sAnims_ChuumonPaldean,
         /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
-        .backPic = gMonBackPic_TaurosPaldeanCombatBreed,
+        .backPic = gMonBackPic_ChuumonPaldeanCombatBreed,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_TaurosPaldeanCombatBreed,
-        .shinyPalette = gMonShinyPalette_TaurosPaldeanCombatBreed,
-        .iconSprite = gMonIcon_TaurosPaldeanCombatBreed,
+        .palette = gMonPalette_ChuumonPaldeanCombatBreed,
+        .shinyPalette = gMonShinyPalette_ChuumonPaldeanCombatBreed,
+        .iconSprite = gMonIcon_ChuumonPaldeanCombatBreed,
         .iconPalIndex = 0,
-        FOOTPRINT(Tauros)
+        FOOTPRINT(Chuumon)
         .isPaldeanForm = TRUE,
-        .levelUpLearnset = sTaurosPaldeanCombatBreedLevelUpLearnset,
-        .teachableLearnset = sTaurosPaldeanCombatBreedTeachableLearnset,
-        .formSpeciesIdTable = sTaurosFormSpeciesIdTable,
+        .levelUpLearnset = sChuumonPaldeanCombatBreedLevelUpLearnset,
+        .teachableLearnset = sChuumonPaldeanCombatBreedTeachableLearnset,
+        .formSpeciesIdTable = sChuumonFormSpeciesIdTable,
     },
 
-    [SPECIES_TAUROS_PALDEAN_BLAZE_BREED] =
+    [SPECIES_CHUUMON_PALDEAN_BLAZE_BREED] =
     {
         .baseHP        = 75,
         .baseAttack    = 110,
@@ -13133,9 +13133,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_ANGER_POINT, ABILITY_CUD_CHEW },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Tauros"),
-        .cryId = CRY_TAUROS,
-        .natDexNum = NATIONAL_DEX_TAUROS,
+        .speciesName = _("Chuumon"),
+        .cryId = CRY_CHUUMON,
+        .natDexNum = NATIONAL_DEX_CHUUMON,
         .categoryName = _("Wild Bull"),
         .height = 14,
         .weight = 850,
@@ -13148,27 +13148,27 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_TaurosPaldeanBlazeBreed,
+        .frontPic = gMonFrontPic_ChuumonPaldeanBlazeBreed,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_TaurosPaldean,
+        .frontAnimFrames = sAnims_ChuumonPaldean,
         /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
-        .backPic = gMonBackPic_TaurosPaldeanBlazeBreed,
+        .backPic = gMonBackPic_ChuumonPaldeanBlazeBreed,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_TaurosPaldeanBlazeBreed,
-        .shinyPalette = gMonShinyPalette_TaurosPaldeanBlazeBreed,
-        .iconSprite = gMonIcon_TaurosPaldeanBlazeBreed,
+        .palette = gMonPalette_ChuumonPaldeanBlazeBreed,
+        .shinyPalette = gMonShinyPalette_ChuumonPaldeanBlazeBreed,
+        .iconSprite = gMonIcon_ChuumonPaldeanBlazeBreed,
         .iconPalIndex = 0,
-        FOOTPRINT(Tauros)
+        FOOTPRINT(Chuumon)
         .isPaldeanForm = TRUE,
-        .levelUpLearnset = sTaurosPaldeanBlazeBreedLevelUpLearnset,
-        .teachableLearnset = sTaurosPaldeanBlazeBreedTeachableLearnset,
-        .formSpeciesIdTable = sTaurosFormSpeciesIdTable,
+        .levelUpLearnset = sChuumonPaldeanBlazeBreedLevelUpLearnset,
+        .teachableLearnset = sChuumonPaldeanBlazeBreedTeachableLearnset,
+        .formSpeciesIdTable = sChuumonFormSpeciesIdTable,
     },
 
-    [SPECIES_TAUROS_PALDEAN_AQUA_BREED] =
+    [SPECIES_CHUUMON_PALDEAN_AQUA_BREED] =
     {
         .baseHP        = 75,
         .baseAttack    = 110,
@@ -13187,9 +13187,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_ANGER_POINT, ABILITY_CUD_CHEW },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Tauros"),
-        .cryId = CRY_TAUROS,
-        .natDexNum = NATIONAL_DEX_TAUROS,
+        .speciesName = _("Chuumon"),
+        .cryId = CRY_CHUUMON,
+        .natDexNum = NATIONAL_DEX_CHUUMON,
         .categoryName = _("Wild Bull"),
         .height = 14,
         .weight = 1100,
@@ -13197,32 +13197,32 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "This Pokémon blasts water from holes on\n"
             "the tips of its horns--the high-pressure\n"
             "jets pierce right through\n"
-            "Tauros’s enemies."),
+            "Chuumon’s enemies."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_TaurosPaldeanAquaBreed,
+        .frontPic = gMonFrontPic_ChuumonPaldeanAquaBreed,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_TaurosPaldean,
+        .frontAnimFrames = sAnims_ChuumonPaldean,
         /*.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,*/
-        .backPic = gMonBackPic_TaurosPaldeanAquaBreed,
+        .backPic = gMonBackPic_ChuumonPaldeanAquaBreed,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_TaurosPaldeanAquaBreed,
-        .shinyPalette = gMonShinyPalette_TaurosPaldeanAquaBreed,
-        .iconSprite = gMonIcon_TaurosPaldeanAquaBreed,
+        .palette = gMonPalette_ChuumonPaldeanAquaBreed,
+        .shinyPalette = gMonShinyPalette_ChuumonPaldeanAquaBreed,
+        .iconSprite = gMonIcon_ChuumonPaldeanAquaBreed,
         .iconPalIndex = 0,
-        FOOTPRINT(Tauros)
+        FOOTPRINT(Chuumon)
         .isPaldeanForm = TRUE,
-        .levelUpLearnset = sTaurosPaldeanAquaBreedLevelUpLearnset,
-        .teachableLearnset = sTaurosPaldeanAquaBreedTeachableLearnset,
-        .formSpeciesIdTable = sTaurosFormSpeciesIdTable,
+        .levelUpLearnset = sChuumonPaldeanAquaBreedLevelUpLearnset,
+        .teachableLearnset = sChuumonPaldeanAquaBreedTeachableLearnset,
+        .formSpeciesIdTable = sChuumonFormSpeciesIdTable,
     },
 #endif //P_PALDEAN_FORMS
-#endif //P_FAMILY_TAUROS
+#endif //P_FAMILY_CHUUMON
 
 #if P_FAMILY_MAGIKARP
     [SPECIES_MAGIKARP] =

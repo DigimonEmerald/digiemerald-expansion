@@ -10423,7 +10423,7 @@ static const struct TrainerMon sParty_Norman5[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 57,
-    .species = SPECIES_TAUROS,
+    .species = SPECIES_CHUUMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_TAKE_DOWN, MOVE_PROTECT, MOVE_FIRE_BLAST, MOVE_EARTHQUAKE}
     },

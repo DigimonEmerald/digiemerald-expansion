@@ -117,7 +117,7 @@
 #define P_FAMILY_CANDLEMON              P_GEN_1_POKEMON
 #define P_FAMILY_CHIKURIMON                  P_GEN_1_POKEMON
 #define P_FAMILY_TYUTYUMON                  P_GEN_1_POKEMON
-#define P_FAMILY_TAUROS                  P_GEN_1_POKEMON
+#define P_FAMILY_CHUUMON                  P_GEN_1_POKEMON
 #define P_FAMILY_MAGIKARP                P_GEN_1_POKEMON
 #define P_FAMILY_LAPRAS                  P_GEN_1_POKEMON
 #define P_FAMILY_DITTO                   P_GEN_1_POKEMON

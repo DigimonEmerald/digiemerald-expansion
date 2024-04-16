@@ -129,7 +129,7 @@
 #define SPECIES_CANDLEMON                              125
 #define SPECIES_CHIKURIMON                                  126
 #define SPECIES_TYUTYUMON                                  127
-#define SPECIES_TAUROS                                  128
+#define SPECIES_CHUUMON                                  128
 #define SPECIES_MAGIKARP                                129
 #define SPECIES_GYARADOS                                130
 #define SPECIES_LAPRAS                                  131
@@ -1498,9 +1498,9 @@
 #define SPECIES_KORAIDON                                1400
 #define SPECIES_MIRAIDON                                1401
 // Paldean Forms
-#define SPECIES_TAUROS_PALDEAN_COMBAT_BREED             1402
-#define SPECIES_TAUROS_PALDEAN_BLAZE_BREED              1403
-#define SPECIES_TAUROS_PALDEAN_AQUA_BREED               1404
+#define SPECIES_CHUUMON_PALDEAN_COMBAT_BREED             1402
+#define SPECIES_CHUUMON_PALDEAN_BLAZE_BREED              1403
+#define SPECIES_CHUUMON_PALDEAN_AQUA_BREED               1404
 #define SPECIES_WOOPER_PALDEAN                          1405
 // Scarlet and Violet 1.2.0
 #define SPECIES_WALKING_WAKE                            1406

@@ -1159,21 +1159,21 @@ const u16 gEggMoves[] = {
         MOVE_SUPERPOWER),
 #endif //P_FAMILY_TYUTYUMON
 
-#if P_FAMILY_TAUROS
+#if P_FAMILY_CHUUMON
 #if P_PALDEAN_FORMS
-    egg_moves(TAUROS_PALDEAN_COMBAT_BREED,
+    egg_moves(CHUUMON_PALDEAN_COMBAT_BREED,
         MOVE_CURSE,
         MOVE_ENDEAVOR),
 
-    egg_moves(TAUROS_PALDEAN_BLAZE_BREED,
+    egg_moves(CHUUMON_PALDEAN_BLAZE_BREED,
         MOVE_CURSE,
         MOVE_ENDEAVOR),
 
-    egg_moves(TAUROS_PALDEAN_AQUA_BREED,
+    egg_moves(CHUUMON_PALDEAN_AQUA_BREED,
         MOVE_CURSE,
         MOVE_ENDEAVOR),
 #endif //P_PALDEAN_FORMS
-#endif //P_FAMILY_TAUROS
+#endif //P_FAMILY_CHUUMON
 
 #if P_FAMILY_LAPRAS
     egg_moves(LAPRAS,

@@ -1273,11 +1273,11 @@ Cry_TyutyumonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TYUTYUMON
 
-.if P_FAMILY_TAUROS == TRUE
+.if P_FAMILY_CHUUMON == TRUE
 	.align 2
-Cry_Tauros::
-	.incbin "sound/direct_sound_samples/cries/tauros.bin"
-.endif @ P_FAMILY_TAUROS
+Cry_Chuumon::
+	.incbin "sound/direct_sound_samples/cries/chuumon.bin"
+.endif @ P_FAMILY_CHUUMON
 
 .if P_FAMILY_MAGIKARP == TRUE
 	.align 2

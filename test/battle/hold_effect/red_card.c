@@ -362,7 +362,7 @@ SINGLE_BATTLE_TEST("Red Card does not activate if attacker's Sheer Force applied
 
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
-        OPPONENT(SPECIES_TAUROS) { Ability(ABILITY_SHEER_FORCE); }
+        OPPONENT(SPECIES_CHUUMON) { Ability(ABILITY_SHEER_FORCE); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponent, move); }
@@ -370,11 +370,11 @@ SINGLE_BATTLE_TEST("Red Card does not activate if attacker's Sheer Force applied
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
         if (activate) {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Wobbuffet held up its Red Card against Foe Tauros!");
+            MESSAGE("Wobbuffet held up its Red Card against Foe Chuumon!");
         } else {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-                MESSAGE("Wobbuffet held up its Red Card against Foe Tauros!");
+                MESSAGE("Wobbuffet held up its Red Card against Foe Chuumon!");
             }
         }
     }

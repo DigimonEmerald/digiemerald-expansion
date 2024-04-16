@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Sheer Force boosts power, but removes secondary effects of m
     }
 
     GIVEN {
-        PLAYER(SPECIES_TAUROS) { Ability(ability); Status1(move == MOVE_SNORE ? STATUS1_SLEEP : STATUS1_NONE); }
+        PLAYER(SPECIES_CHUUMON) { Ability(ability); Status1(move == MOVE_SNORE ? STATUS1_SLEEP : STATUS1_NONE); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         if (move == MOVE_ALLURING_VOICE || move == MOVE_BURNING_JEALOUSY) // Alluring Voice requires the target to boost stats to have an effect
@@ -57,7 +57,7 @@ SINGLE_BATTLE_TEST("Sheer Force boosts power, but removes secondary effects of m
             if (gMovesInfo[move].recoil > 0)
             {
                 HP_BAR(player);
-                MESSAGE("Tauros is hit with recoil!");
+                MESSAGE("Chuumon is hit with recoil!");
             }
         }
     } FINALLY {

@@ -2931,8 +2931,8 @@ static const struct LevelUpMove sTyutyumonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_TYUTYUMON
 
-#if P_FAMILY_TAUROS
-static const struct LevelUpMove sTaurosLevelUpLearnset[] = {
+#if P_FAMILY_CHUUMON
+static const struct LevelUpMove sChuumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 4, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 8, MOVE_RAGE),
@@ -2946,7 +2946,7 @@ static const struct LevelUpMove sTaurosLevelUpLearnset[] = {
 };
 
 #if P_PALDEAN_FORMS
-static const struct LevelUpMove sTaurosPaldeanCombatBreedLevelUpLearnset[] = {
+static const struct LevelUpMove sChuumonPaldeanCombatBreedLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 5, MOVE_WORK_UP),
@@ -2964,7 +2964,7 @@ static const struct LevelUpMove sTaurosPaldeanCombatBreedLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sTaurosPaldeanBlazeBreedLevelUpLearnset[] = {
+static const struct LevelUpMove sChuumonPaldeanBlazeBreedLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 5, MOVE_WORK_UP),
@@ -2982,7 +2982,7 @@ static const struct LevelUpMove sTaurosPaldeanBlazeBreedLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sTaurosPaldeanAquaBreedLevelUpLearnset[] = {
+static const struct LevelUpMove sChuumonPaldeanAquaBreedLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 5, MOVE_WORK_UP),
@@ -3000,7 +3000,7 @@ static const struct LevelUpMove sTaurosPaldeanAquaBreedLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_PALDEAN_FORMS
-#endif //P_FAMILY_TAUROS
+#endif //P_FAMILY_CHUUMON
 
 #if P_FAMILY_MAGIKARP
 static const struct LevelUpMove sMagikarpLevelUpLearnset[] = {
