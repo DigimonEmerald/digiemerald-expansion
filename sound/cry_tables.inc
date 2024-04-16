@@ -420,7 +420,7 @@ gCryTable::
 .endif @ P_FAMILY_DOKUNEMON
 .if P_FAMILY_DONDOKOMON == TRUE
 	cry Cry_Dondokomon
-	cry Cry_Omastar
+	cry Cry_Dorumon
 .endif @ P_FAMILY_DONDOKOMON
 .if P_FAMILY_KABUTO == TRUE
 	cry Cry_Kabuto
@@ -2846,7 +2846,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_DOKUNEMON
 .if P_FAMILY_DONDOKOMON == TRUE
 	cry_reverse Cry_Dondokomon
-	cry_reverse Cry_Omastar
+	cry_reverse Cry_Dorumon
 .endif @ P_FAMILY_DONDOKOMON
 .if P_FAMILY_KABUTO == TRUE
 	cry_reverse Cry_Kabuto

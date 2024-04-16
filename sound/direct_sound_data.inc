@@ -1373,8 +1373,8 @@ Cry_Dondokomon::
 	.incbin "sound/direct_sound_samples/cries/dondokomon.bin"
 
 	.align 2
-Cry_Omastar::
-	.incbin "sound/direct_sound_samples/cries/omastar.bin"
+Cry_Dorumon::
+	.incbin "sound/direct_sound_samples/cries/dorumon.bin"
 .endif @ P_FAMILY_DONDOKOMON
 
 .if P_FAMILY_KABUTO == TRUE

@@ -7776,7 +7776,7 @@ static const u16 sDondokomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sOmastarTeachableLearnset[] = {
+static const u16 sDorumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,

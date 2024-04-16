@@ -14410,10 +14410,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Dondokomon)
         .levelUpLearnset = sDondokomonLevelUpLearnset,
         .teachableLearnset = sDondokomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_OMASTAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_DORUMON}),
     },
 
-    [SPECIES_OMASTAR] =
+    [SPECIES_DORUMON] =
     {
         .baseHP        = 70,
         .baseAttack    = 60,
@@ -14432,14 +14432,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_SHELL_ARMOR, ABILITY_WEAK_ARMOR },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Omastar"),
-        .cryId = CRY_OMASTAR,
-        .natDexNum = NATIONAL_DEX_OMASTAR,
+        .speciesName = _("Dorumon"),
+        .cryId = CRY_DORUMON,
+        .natDexNum = NATIONAL_DEX_DORUMON,
         .categoryName = _("Spiral"),
         .height = 10,
         .weight = 350,
         .description = COMPOUND_STRING(
-            "An Omastar uses its tentacles to capture\n"
+            "An Dorumon uses its tentacles to capture\n"
             "its prey. It is believed to have become\n"
             "extinct because its shell grew too large,\n"
             "making its movements slow and ponderous."),
@@ -14447,22 +14447,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Omastar,
+        .frontPic = gMonFrontPic_Dorumon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Omastar,
+        .frontAnimFrames = sAnims_Dorumon,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Omastar,
+        .backPic = gMonBackPic_Dorumon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Omastar,
-        .shinyPalette = gMonShinyPalette_Omastar,
-        .iconSprite = gMonIcon_Omastar,
+        .palette = gMonPalette_Dorumon,
+        .shinyPalette = gMonShinyPalette_Dorumon,
+        .iconSprite = gMonIcon_Dorumon,
         .iconPalIndex = 0,
-        FOOTPRINT(Omastar)
-        .levelUpLearnset = sOmastarLevelUpLearnset,
-        .teachableLearnset = sOmastarTeachableLearnset,
+        FOOTPRINT(Dorumon)
+        .levelUpLearnset = sDorumonLevelUpLearnset,
+        .teachableLearnset = sDorumonTeachableLearnset,
     },
 #endif //P_FAMILY_DONDOKOMON
 

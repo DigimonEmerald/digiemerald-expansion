@@ -2138,7 +2138,7 @@ static const union AnimCmd sAnim_Dondokomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Omastar_1[] =
+static const union AnimCmd sAnim_Dorumon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -10688,7 +10688,7 @@ SINGLE_ANIMATION(Dokunemon_Z);
 #endif //P_FAMILY_DOKUNEMON
 #if P_FAMILY_DONDOKOMON
 SINGLE_ANIMATION(Dondokomon);
-SINGLE_ANIMATION(Omastar);
+SINGLE_ANIMATION(Dorumon);
 #endif //P_FAMILY_DONDOKOMON
 #if P_FAMILY_KABUTO
 SINGLE_ANIMATION(Kabuto);
