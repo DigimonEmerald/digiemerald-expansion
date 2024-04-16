@@ -42,7 +42,7 @@ SINGLE_BATTLE_TEST("Embodoy Aspect raises a stat depending on the users form by 
 SINGLE_BATTLE_TEST("Embodoy Aspect activates when it's no longer effected by Neutralizing Gas")
 {
     GIVEN {
-        PLAYER(SPECIES_WEEZING) { Ability(ABILITY_NEUTRALIZING_GAS); }
+        PLAYER(SPECIES_ARMADILMON) { Ability(ABILITY_NEUTRALIZING_GAS); }
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_OGERPON_TEAL_MASK_TERA) { Ability(ABILITY_EMBODY_ASPECT_TEAL); }
     } WHEN {
@@ -50,7 +50,7 @@ SINGLE_BATTLE_TEST("Embodoy Aspect activates when it's no longer effected by Neu
     } SCENE {
         ABILITY_POPUP(player, ABILITY_NEUTRALIZING_GAS);
         MESSAGE("Neutralizing Gas filled the area!");
-        MESSAGE("Weezing, that's enough! Come back!");
+        MESSAGE("Armadilmon, that's enough! Come back!");
         MESSAGE("The effects of Neutralizing Gas wore off!");
         ABILITY_POPUP(opponent, ABILITY_EMBODY_ASPECT_TEAL);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);

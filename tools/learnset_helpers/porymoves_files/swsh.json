@@ -9039,7 +9039,7 @@
       "MOVE_CORROSIVE_GAS"
     ]
   },
-  "WEEZING": {
+  "ARMADILMON": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -79801,7 +79801,7 @@
       "MOVE_DUAL_WINGBEAT"
     ]
   },
-  "WEEZING_GALARIAN": {
+  "ARMADILMON_GALARIAN": {
     "LevelMoves": [
       {
         "Level": 0,

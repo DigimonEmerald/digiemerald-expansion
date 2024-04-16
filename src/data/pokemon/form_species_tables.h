@@ -426,10 +426,10 @@ static const u16 sAgumon_expertFormSpeciesIdTable[] = {
 #endif //P_FAMILY_AGUMON_06
 
 #if P_FAMILY_ARGOMON_ROOKIE
-static const u16 sWeezingFormSpeciesIdTable[] = {
-    SPECIES_WEEZING,
+static const u16 sArmadilmonFormSpeciesIdTable[] = {
+    SPECIES_ARMADILMON,
 #if P_GALARIAN_FORMS
-    SPECIES_WEEZING_GALARIAN,
+    SPECIES_ARMADILMON_GALARIAN,
 #endif
     FORM_SPECIES_END,
 };

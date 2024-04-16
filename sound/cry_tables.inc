@@ -280,7 +280,7 @@ gCryTable::
 .endif @ P_FAMILY_ARCADIAMON_ROOKIE
 .if P_FAMILY_ARGOMON_ROOKIE == TRUE
 	cry Cry_Argomon_rookie
-	cry Cry_Weezing
+	cry Cry_Armadilmon
 .endif @ P_FAMILY_ARGOMON_ROOKIE
 .if P_FAMILY_RHYHORN == TRUE
 	cry Cry_Rhyhorn
@@ -2706,7 +2706,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_ARCADIAMON_ROOKIE
 .if P_FAMILY_ARGOMON_ROOKIE == TRUE
 	cry_reverse Cry_Argomon_rookie
-	cry_reverse Cry_Weezing
+	cry_reverse Cry_Armadilmon
 .endif @ P_FAMILY_ARGOMON_ROOKIE
 .if P_FAMILY_RHYHORN == TRUE
 	cry_reverse Cry_Rhyhorn

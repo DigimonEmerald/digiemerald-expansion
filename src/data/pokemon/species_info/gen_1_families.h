@@ -10873,11 +10873,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Argomon_rookie)
         .levelUpLearnset = sArgomon_rookieLevelUpLearnset,
         .teachableLearnset = sArgomon_rookieTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_WEEZING},
-                                {EVO_NONE, 0, SPECIES_WEEZING_GALARIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_ARMADILMON},
+                                {EVO_NONE, 0, SPECIES_ARMADILMON_GALARIAN}),
     },
 
-    [SPECIES_WEEZING] =
+    [SPECIES_ARMADILMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 90,
@@ -10902,43 +10902,43 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     #endif
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = TRUE,
-        .speciesName = _("Weezing"),
-        .cryId = CRY_WEEZING,
-        .natDexNum = NATIONAL_DEX_WEEZING,
+        .speciesName = _("Armadilmon"),
+        .cryId = CRY_ARMADILMON,
+        .natDexNum = NATIONAL_DEX_ARMADILMON,
         .categoryName = _("Poison Gas"),
         .height = 12,
         .weight = 95,
         .description = COMPOUND_STRING(
             "By diluting its toxic gases with a special\n"
             "process, the highest grade of perfume can\n"
-            "be extracted. To Weezing, gases emanating\n"
+            "be extracted. To Armadilmon, gases emanating\n"
             "from garbage are the ultimate feast."),
         .pokemonScale = 305,
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Weezing,
+        .frontPic = gMonFrontPic_Armadilmon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Weezing,
+        .frontAnimFrames = sAnims_Armadilmon,
         .frontAnimId = ANIM_V_SLIDE,
         .enemyMonElevation = 3,
-        .backPic = gMonBackPic_Weezing,
+        .backPic = gMonBackPic_Armadilmon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_GROW,
-        .palette = gMonPalette_Weezing,
-        .shinyPalette = gMonShinyPalette_Weezing,
-        .iconSprite = gMonIcon_Weezing,
+        .palette = gMonPalette_Armadilmon,
+        .shinyPalette = gMonShinyPalette_Armadilmon,
+        .iconSprite = gMonIcon_Armadilmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Weezing)
-        .levelUpLearnset = sWeezingLevelUpLearnset,
-        .teachableLearnset = sWeezingTeachableLearnset,
-        .formSpeciesIdTable = sWeezingFormSpeciesIdTable,
+        FOOTPRINT(Armadilmon)
+        .levelUpLearnset = sArmadilmonLevelUpLearnset,
+        .teachableLearnset = sArmadilmonTeachableLearnset,
+        .formSpeciesIdTable = sArmadilmonFormSpeciesIdTable,
     },
 
 #if P_GALARIAN_FORMS
-    [SPECIES_WEEZING_GALARIAN] =
+    [SPECIES_ARMADILMON_GALARIAN] =
     {
         .baseHP        = 65,
         .baseAttack    = 90,
@@ -10959,9 +10959,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_NEUTRALIZING_GAS, ABILITY_MISTY_SURGE },
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = TRUE,
-        .speciesName = _("Weezing"),
-        .cryId = CRY_WEEZING,
-        .natDexNum = NATIONAL_DEX_WEEZING,
+        .speciesName = _("Armadilmon"),
+        .cryId = CRY_ARMADILMON,
+        .natDexNum = NATIONAL_DEX_ARMADILMON,
         .categoryName = _("Poison Gas"),
         .height = 30,
         .weight = 160,
@@ -10974,25 +10974,25 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_WeezingGalarian,
+        .frontPic = gMonFrontPic_ArmadilmonGalarian,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_WeezingGalarian,
+        .frontAnimFrames = sAnims_ArmadilmonGalarian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 6,
-        .backPic = gMonBackPic_WeezingGalarian,
+        .backPic = gMonBackPic_ArmadilmonGalarian,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_WeezingGalarian,
-        .shinyPalette = gMonShinyPalette_WeezingGalarian,
-        .iconSprite = gMonIcon_WeezingGalarian,
+        .palette = gMonPalette_ArmadilmonGalarian,
+        .shinyPalette = gMonShinyPalette_ArmadilmonGalarian,
+        .iconSprite = gMonIcon_ArmadilmonGalarian,
         .iconPalIndex = 1,
-        FOOTPRINT(Weezing)
+        FOOTPRINT(Armadilmon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sWeezingGalarianLevelUpLearnset,
-        .teachableLearnset = sWeezingGalarianTeachableLearnset,
-        .formSpeciesIdTable = sWeezingFormSpeciesIdTable,
+        .levelUpLearnset = sArmadilmonGalarianLevelUpLearnset,
+        .teachableLearnset = sArmadilmonGalarianTeachableLearnset,
+        .formSpeciesIdTable = sArmadilmonFormSpeciesIdTable,
     },
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_ARGOMON_ROOKIE

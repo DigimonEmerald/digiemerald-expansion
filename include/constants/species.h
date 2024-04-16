@@ -111,7 +111,7 @@
 #define SPECIES_ANGORAMON                              107
 #define SPECIES_ARCADIAMON_ROOKIE                               108
 #define SPECIES_ARGOMON_ROOKIE                                 109
-#define SPECIES_WEEZING                                 110
+#define SPECIES_ARMADILMON                                 110
 #define SPECIES_RHYHORN                                 111
 #define SPECIES_RHYDON                                  112
 #define SPECIES_CHANSEY                                 113
@@ -1038,7 +1038,7 @@
 #define SPECIES_PAGUMON_GALARIAN                       977
 #define SPECIES_PICKMON_SILVER_GALARIAN                        978
 #define SPECIES_PINAMON_GALARIAN                      979
-#define SPECIES_WEEZING_GALARIAN                        980
+#define SPECIES_ARMADILMON_GALARIAN                        980
 #define SPECIES_MR_MIME_GALARIAN                        981
 #define SPECIES_ARTICUNO_GALARIAN                       982
 #define SPECIES_ZAPDOS_GALARIAN                         983

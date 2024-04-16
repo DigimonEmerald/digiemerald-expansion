@@ -1073,8 +1073,8 @@ Cry_Argomon_rookie::
 	.incbin "sound/direct_sound_samples/cries/argomon_rookie.bin"
 
 	.align 2
-Cry_Weezing::
-	.incbin "sound/direct_sound_samples/cries/weezing.bin"
+Cry_Armadilmon::
+	.incbin "sound/direct_sound_samples/cries/armadilmon.bin"
 .endif @ P_FAMILY_ARGOMON_ROOKIE
 
 .if P_FAMILY_RHYHORN == TRUE

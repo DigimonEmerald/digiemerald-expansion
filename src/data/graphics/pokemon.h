@@ -1754,21 +1754,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Argomon_rookie[] = INCBIN_U8("graphics/pokemon/argomon_rookie/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Weezing[] = INCBIN_U32("graphics/pokemon/weezing/anim_front.4bpp.lz");
-    const u32 gMonPalette_Weezing[] = INCBIN_U32("graphics/pokemon/weezing/normal.gbapal.lz");
-    const u32 gMonBackPic_Weezing[] = INCBIN_U32("graphics/pokemon/weezing/back.4bpp.lz");
-    const u32 gMonShinyPalette_Weezing[] = INCBIN_U32("graphics/pokemon/weezing/shiny.gbapal.lz");
-    const u8 gMonIcon_Weezing[] = INCBIN_U8("graphics/pokemon/weezing/icon.4bpp");
+    const u32 gMonFrontPic_Armadilmon[] = INCBIN_U32("graphics/pokemon/armadilmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Armadilmon[] = INCBIN_U32("graphics/pokemon/armadilmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Armadilmon[] = INCBIN_U32("graphics/pokemon/armadilmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Armadilmon[] = INCBIN_U32("graphics/pokemon/armadilmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Armadilmon[] = INCBIN_U8("graphics/pokemon/armadilmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Weezing[] = INCBIN_U8("graphics/pokemon/weezing/footprint.1bpp");
+    const u8 gMonFootprint_Armadilmon[] = INCBIN_U8("graphics/pokemon/armadilmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GALARIAN_FORMS
-    const u32 gMonFrontPic_WeezingGalarian[] = INCBIN_U32("graphics/pokemon/weezing/galarian/front.4bpp.lz");
-    const u32 gMonPalette_WeezingGalarian[] = INCBIN_U32("graphics/pokemon/weezing/galarian/normal.gbapal.lz");
-    const u32 gMonBackPic_WeezingGalarian[] = INCBIN_U32("graphics/pokemon/weezing/galarian/back.4bpp.lz");
-    const u32 gMonShinyPalette_WeezingGalarian[] = INCBIN_U32("graphics/pokemon/weezing/galarian/shiny.gbapal.lz");
-    const u8 gMonIcon_WeezingGalarian[] = INCBIN_U8("graphics/pokemon/weezing/galarian/icon.4bpp");
+    const u32 gMonFrontPic_ArmadilmonGalarian[] = INCBIN_U32("graphics/pokemon/armadilmon/galarian/front.4bpp.lz");
+    const u32 gMonPalette_ArmadilmonGalarian[] = INCBIN_U32("graphics/pokemon/armadilmon/galarian/normal.gbapal.lz");
+    const u32 gMonBackPic_ArmadilmonGalarian[] = INCBIN_U32("graphics/pokemon/armadilmon/galarian/back.4bpp.lz");
+    const u32 gMonShinyPalette_ArmadilmonGalarian[] = INCBIN_U32("graphics/pokemon/armadilmon/galarian/shiny.gbapal.lz");
+    const u8 gMonIcon_ArmadilmonGalarian[] = INCBIN_U8("graphics/pokemon/armadilmon/galarian/icon.4bpp");
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_ARGOMON_ROOKIE
 

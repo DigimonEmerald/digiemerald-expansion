@@ -5722,7 +5722,7 @@ static const u16 sArgomon_rookieTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sWeezingTeachableLearnset[] = {
+static const u16 sArmadilmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
@@ -5754,7 +5754,7 @@ static const u16 sWeezingTeachableLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const u16 sWeezingGalarianTeachableLearnset[] = {
+static const u16 sArmadilmonGalarianTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_FACADE,
     MOVE_FIRE_BLAST,

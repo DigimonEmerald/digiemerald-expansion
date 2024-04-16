@@ -1586,7 +1586,7 @@ static const union AnimCmd sAnim_Argomon_rookie_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Weezing_1[] =
+static const union AnimCmd sAnim_Armadilmon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -1597,7 +1597,7 @@ static const union AnimCmd sAnim_Weezing_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(WeezingGalarian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(ArmadilmonGalarian);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_ARGOMON_ROOKIE
 
@@ -10535,9 +10535,9 @@ SINGLE_ANIMATION(Lickilicky);
 #endif //P_FAMILY_ARCADIAMON_ROOKIE
 #if P_FAMILY_ARGOMON_ROOKIE
 SINGLE_ANIMATION(Argomon_rookie);
-SINGLE_ANIMATION(Weezing);
+SINGLE_ANIMATION(Armadilmon);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(WeezingGalarian);
+SINGLE_ANIMATION(ArmadilmonGalarian);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_ARGOMON_ROOKIE
 #if P_FAMILY_RHYHORN
