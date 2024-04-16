@@ -1945,14 +1945,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonBackPic_BlkgabumonF[] = INCBIN_U32("graphics/pokemon/blkgabumon/backf.4bpp.lz");
 #endif //P_FAMILY_BLKAGUMON_X
 
-#if P_FAMILY_STARYU
-    const u32 gMonFrontPic_Staryu[] = INCBIN_U32("graphics/pokemon/staryu/anim_front.4bpp.lz");
-    const u32 gMonPalette_Staryu[] = INCBIN_U32("graphics/pokemon/staryu/normal.gbapal.lz");
-    const u32 gMonBackPic_Staryu[] = INCBIN_U32("graphics/pokemon/staryu/back.4bpp.lz");
-    const u32 gMonShinyPalette_Staryu[] = INCBIN_U32("graphics/pokemon/staryu/shiny.gbapal.lz");
-    const u8 gMonIcon_Staryu[] = INCBIN_U8("graphics/pokemon/staryu/icon.4bpp");
+#if P_FAMILY_BLKGUILMON
+    const u32 gMonFrontPic_Blkguilmon[] = INCBIN_U32("graphics/pokemon/blkguilmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Blkguilmon[] = INCBIN_U32("graphics/pokemon/blkguilmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Blkguilmon[] = INCBIN_U32("graphics/pokemon/blkguilmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Blkguilmon[] = INCBIN_U32("graphics/pokemon/blkguilmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Blkguilmon[] = INCBIN_U8("graphics/pokemon/blkguilmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Staryu[] = INCBIN_U8("graphics/pokemon/staryu/footprint.1bpp");
+    const u8 gMonFootprint_Blkguilmon[] = INCBIN_U8("graphics/pokemon/blkguilmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Starmie[] = INCBIN_U32("graphics/pokemon/starmie/anim_front.4bpp.lz");
@@ -1963,7 +1963,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Starmie[] = INCBIN_U8("graphics/pokemon/starmie/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_STARYU
+#endif //P_FAMILY_BLKGUILMON
 
 #if P_FAMILY_MR_MIME
 #if P_GEN_4_CROSS_EVOS

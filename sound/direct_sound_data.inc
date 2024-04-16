@@ -1161,15 +1161,15 @@ Cry_Blkgabumon::
 	.incbin "sound/direct_sound_samples/cries/blkgabumon.bin"
 .endif @ P_FAMILY_BLKAGUMON_X
 
-.if P_FAMILY_STARYU == TRUE
+.if P_FAMILY_BLKGUILMON == TRUE
 	.align 2
-Cry_Staryu::
-	.incbin "sound/direct_sound_samples/cries/staryu.bin"
+Cry_Blkguilmon::
+	.incbin "sound/direct_sound_samples/cries/blkguilmon.bin"
 
 	.align 2
 Cry_Starmie::
 	.incbin "sound/direct_sound_samples/cries/starmie.bin"
-.endif @ P_FAMILY_STARYU
+.endif @ P_FAMILY_BLKGUILMON
 
 .if P_FAMILY_MR_MIME == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE

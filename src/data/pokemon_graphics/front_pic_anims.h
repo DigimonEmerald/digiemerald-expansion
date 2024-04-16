@@ -1761,8 +1761,8 @@ static const union AnimCmd sAnim_Blkgabumon_1[] =
 };
 #endif //P_FAMILY_BLKAGUMON_X
 
-#if P_FAMILY_STARYU
-static const union AnimCmd sAnim_Staryu_1[] =
+#if P_FAMILY_BLKGUILMON
+static const union AnimCmd sAnim_Blkguilmon_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 10),
@@ -1781,7 +1781,7 @@ static const union AnimCmd sAnim_Starmie_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_STARYU
+#endif //P_FAMILY_BLKGUILMON
 
 #if P_FAMILY_MR_MIME
 #if P_GEN_4_CROSS_EVOS
@@ -10579,10 +10579,10 @@ SINGLE_ANIMATION(Kingdra);
 SINGLE_ANIMATION(Blkagumon_x);
 SINGLE_ANIMATION(Blkgabumon);
 #endif //P_FAMILY_BLKAGUMON_X
-#if P_FAMILY_STARYU
-SINGLE_ANIMATION(Staryu);
+#if P_FAMILY_BLKGUILMON
+SINGLE_ANIMATION(Blkguilmon);
 SINGLE_ANIMATION(Starmie);
-#endif //P_FAMILY_STARYU
+#endif //P_FAMILY_BLKGUILMON
 #if P_FAMILY_MR_MIME
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(MimeJr);

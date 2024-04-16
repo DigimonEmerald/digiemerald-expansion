@@ -2417,8 +2417,8 @@ static const struct LevelUpMove sBlkgabumonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_BLKAGUMON_X
 
-#if P_FAMILY_STARYU
-static const struct LevelUpMove sStaryuLevelUpLearnset[] = {
+#if P_FAMILY_BLKGUILMON
+static const struct LevelUpMove sBlkguilmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE(17, MOVE_WATER_GUN),
     LEVEL_UP_MOVE(22, MOVE_HARDEN),
@@ -2436,7 +2436,7 @@ static const struct LevelUpMove sStarmieLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_STARYU
+#endif //P_FAMILY_BLKGUILMON
 
 #if P_FAMILY_MR_MIME
 #if P_GEN_4_CROSS_EVOS

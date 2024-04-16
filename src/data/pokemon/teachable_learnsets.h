@@ -6380,8 +6380,8 @@ static const u16 sBlkgabumonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BLKAGUMON_X
 
-#if P_FAMILY_STARYU
-static const u16 sStaryuTeachableLearnset[] = {
+#if P_FAMILY_BLKGUILMON
+static const u16 sBlkguilmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -6451,7 +6451,7 @@ static const u16 sStarmieTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_STARYU
+#endif //P_FAMILY_BLKGUILMON
 
 #if P_FAMILY_MR_MIME
 #if P_GEN_4_CROSS_EVOS

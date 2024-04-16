@@ -321,10 +321,10 @@ gCryTable::
 	cry Cry_Blkagumon_x
 	cry Cry_Blkgabumon
 .endif @ P_FAMILY_BLKAGUMON_X
-.if P_FAMILY_STARYU == TRUE
-	cry Cry_Staryu
+.if P_FAMILY_BLKGUILMON == TRUE
+	cry Cry_Blkguilmon
 	cry Cry_Starmie
-.endif @ P_FAMILY_STARYU
+.endif @ P_FAMILY_BLKGUILMON
 .if P_FAMILY_MR_MIME == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_MimeJr
@@ -2747,10 +2747,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Blkagumon_x
 	cry_reverse Cry_Blkgabumon
 .endif @ P_FAMILY_BLKAGUMON_X
-.if P_FAMILY_STARYU == TRUE
-	cry_reverse Cry_Staryu
+.if P_FAMILY_BLKGUILMON == TRUE
+	cry_reverse Cry_Blkguilmon
 	cry_reverse Cry_Starmie
-.endif @ P_FAMILY_STARYU
+.endif @ P_FAMILY_BLKGUILMON
 .if P_FAMILY_MR_MIME == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_MimeJr

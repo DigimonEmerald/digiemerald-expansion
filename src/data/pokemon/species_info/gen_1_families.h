@@ -11862,8 +11862,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_BLKAGUMON_X
 
-#if P_FAMILY_STARYU
-    [SPECIES_STARYU] =
+#if P_FAMILY_BLKGUILMON
+    [SPECIES_BLKGUILMON] =
     {
         .baseHP        = 30,
         .baseAttack    = 45,
@@ -11885,9 +11885,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_ILLUMINATE, ABILITY_NATURAL_CURE, ABILITY_ANALYTIC },
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
-        .speciesName = _("Staryu"),
-        .cryId = CRY_STARYU,
-        .natDexNum = NATIONAL_DEX_STARYU,
+        .speciesName = _("Blkguilmon"),
+        .cryId = CRY_BLKGUILMON,
+        .natDexNum = NATIONAL_DEX_BLKGUILMON,
         .categoryName = _("Star Shape"),
         .height = 8,
         .weight = 345,
@@ -11900,22 +11900,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 1,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Staryu,
+        .frontPic = gMonFrontPic_Blkguilmon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Staryu,
+        .frontAnimFrames = sAnims_Blkguilmon,
         .frontAnimId = ANIM_TWIST_TWICE,
-        .backPic = gMonBackPic_Staryu,
+        .backPic = gMonBackPic_Blkguilmon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Staryu,
-        .shinyPalette = gMonShinyPalette_Staryu,
-        .iconSprite = gMonIcon_Staryu,
+        .palette = gMonPalette_Blkguilmon,
+        .shinyPalette = gMonShinyPalette_Blkguilmon,
+        .iconSprite = gMonIcon_Blkguilmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Staryu)
-        .levelUpLearnset = sStaryuLevelUpLearnset,
-        .teachableLearnset = sStaryuTeachableLearnset,
+        FOOTPRINT(Blkguilmon)
+        .levelUpLearnset = sBlkguilmonLevelUpLearnset,
+        .teachableLearnset = sBlkguilmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_STARMIE}),
     },
 
@@ -11972,7 +11972,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sStarmieLevelUpLearnset,
         .teachableLearnset = sStarmieTeachableLearnset,
     },
-#endif //P_FAMILY_STARYU
+#endif //P_FAMILY_BLKGUILMON
 
 #if P_FAMILY_MR_MIME
 #if P_GEN_4_CROSS_EVOS

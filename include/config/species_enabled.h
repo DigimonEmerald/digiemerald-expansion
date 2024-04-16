@@ -110,7 +110,7 @@
 #define P_FAMILY_BETAMON_X              P_GEN_1_POKEMON
 #define P_FAMILY_BIYOMON                  P_GEN_1_POKEMON
 #define P_FAMILY_BLKAGUMON_X                 P_GEN_1_POKEMON
-#define P_FAMILY_STARYU                  P_GEN_1_POKEMON
+#define P_FAMILY_BLKGUILMON                  P_GEN_1_POKEMON
 #define P_FAMILY_MR_MIME                 P_GEN_1_POKEMON
 #define P_FAMILY_SCYTHER                 P_GEN_1_POKEMON
 #define P_FAMILY_JYNX                    P_GEN_1_POKEMON
