@@ -2277,13 +2277,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
         const u8 gMonIcon_Crabmon_xPartnerF[] = INCBIN_U8("graphics/pokemon/crabmon_x/partner/iconf.4bpp");
     #endif
 
-    const u32 gMonFrontPic_Vaporeon[] = INCBIN_U32("graphics/pokemon/vaporeon/anim_front.4bpp.lz");
-    const u32 gMonPalette_Vaporeon[] = INCBIN_U32("graphics/pokemon/vaporeon/normal.gbapal.lz");
-    const u32 gMonBackPic_Vaporeon[] = INCBIN_U32("graphics/pokemon/vaporeon/back.4bpp.lz");
-    const u32 gMonShinyPalette_Vaporeon[] = INCBIN_U32("graphics/pokemon/vaporeon/shiny.gbapal.lz");
-    const u8 gMonIcon_Vaporeon[] = INCBIN_U8("graphics/pokemon/vaporeon/icon.4bpp");
+    const u32 gMonFrontPic_Cutemon[] = INCBIN_U32("graphics/pokemon/cutemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Cutemon[] = INCBIN_U32("graphics/pokemon/cutemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Cutemon[] = INCBIN_U32("graphics/pokemon/cutemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Cutemon[] = INCBIN_U32("graphics/pokemon/cutemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Cutemon[] = INCBIN_U8("graphics/pokemon/cutemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Vaporeon[] = INCBIN_U8("graphics/pokemon/vaporeon/footprint.1bpp");
+    const u8 gMonFootprint_Cutemon[] = INCBIN_U8("graphics/pokemon/cutemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Jolteon[] = INCBIN_U32("graphics/pokemon/jolteon/anim_front.4bpp.lz");

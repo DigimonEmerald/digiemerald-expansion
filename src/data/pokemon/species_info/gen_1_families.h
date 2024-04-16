@@ -13628,7 +13628,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sCrabmon_xFormSpeciesIdTable,
         .formChangeTable = sCrabmon_xFormChangeTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_JOLTEON},
-                                {EVO_ITEM, ITEM_WATER_STONE, SPECIES_VAPOREON},
+                                {EVO_ITEM, ITEM_WATER_STONE, SPECIES_CUTEMON},
                                 {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_FLAREON},
                                 {EVO_FRIENDSHIP_DAY, 0, SPECIES_ESPEON},
                                 {EVO_FRIENDSHIP_NIGHT, 0, SPECIES_UMBREON},
@@ -13755,7 +13755,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sCrabmon_xFormSpeciesIdTable,
     },
 
-    [SPECIES_VAPOREON] =
+    [SPECIES_CUTEMON] =
     {
         .baseHP        = 130,
         .baseAttack    = 65,
@@ -13774,14 +13774,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_WATER_ABSORB, ABILITY_WATER_ABSORB, ABILITY_HYDRATION },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Vaporeon"),
-        .cryId = CRY_VAPOREON,
-        .natDexNum = NATIONAL_DEX_VAPOREON,
+        .speciesName = _("Cutemon"),
+        .cryId = CRY_CUTEMON,
+        .natDexNum = NATIONAL_DEX_CUTEMON,
         .categoryName = _("Bubble Jet"),
         .height = 10,
         .weight = 290,
         .description = COMPOUND_STRING(
-            "Vaporeon underwent a spontaneous\n"
+            "Cutemon underwent a spontaneous\n"
             "mutation and grew fins and gills that\n"
             "allow them to live underwater. They have\n"
             "the ability to freely control water."),
@@ -13789,22 +13789,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Vaporeon,
+        .frontPic = gMonFrontPic_Cutemon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Vaporeon,
+        .frontAnimFrames = sAnims_Cutemon,
         .frontAnimId = ANIM_GLOW_BLUE,
-        .backPic = gMonBackPic_Vaporeon,
+        .backPic = gMonBackPic_Cutemon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
-        .palette = gMonPalette_Vaporeon,
-        .shinyPalette = gMonShinyPalette_Vaporeon,
-        .iconSprite = gMonIcon_Vaporeon,
+        .palette = gMonPalette_Cutemon,
+        .shinyPalette = gMonShinyPalette_Cutemon,
+        .iconSprite = gMonIcon_Cutemon,
         .iconPalIndex = 0,
-        FOOTPRINT(Vaporeon)
-        .levelUpLearnset = sVaporeonLevelUpLearnset,
-        .teachableLearnset = sVaporeonTeachableLearnset,
+        FOOTPRINT(Cutemon)
+        .levelUpLearnset = sCutemonLevelUpLearnset,
+        .teachableLearnset = sCutemonTeachableLearnset,
     },
 
     [SPECIES_JOLTEON] =

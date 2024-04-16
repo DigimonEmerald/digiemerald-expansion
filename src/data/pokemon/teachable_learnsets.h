@@ -7342,7 +7342,7 @@ static const u16 sCrabmon_xTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sVaporeonTeachableLearnset[] = {
+static const u16 sCutemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,
