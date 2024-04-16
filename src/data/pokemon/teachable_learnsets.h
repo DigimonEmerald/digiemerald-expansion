@@ -6721,7 +6721,7 @@ static const u16 sKleavorTeachableLearnset[] = {
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_BURGERMON
 
-#if P_FAMILY_JYNX
+#if P_FAMILY_SAMUAGUMON
 #if P_GEN_2_CROSS_EVOS
 static const u16 sSmoochumTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -6764,7 +6764,7 @@ static const u16 sSmoochumTeachableLearnset[] = {
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const u16 sJynxTeachableLearnset[] = {
+static const u16 sSamuagumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
@@ -6808,7 +6808,7 @@ static const u16 sJynxTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_JYNX
+#endif //P_FAMILY_SAMUAGUMON
 
 #if P_FAMILY_ELECTABUZZ
 #if P_GEN_2_CROSS_EVOS

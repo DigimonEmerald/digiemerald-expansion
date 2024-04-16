@@ -2777,7 +2777,7 @@ static const struct LevelUpMove sKleavorLevelUpLearnset[] = {
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_BURGERMON
 
-#if P_FAMILY_JYNX
+#if P_FAMILY_SAMUAGUMON
 #if P_GEN_2_CROSS_EVOS
 static const struct LevelUpMove sSmoochumLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
@@ -2794,7 +2794,7 @@ static const struct LevelUpMove sSmoochumLevelUpLearnset[] = {
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const struct LevelUpMove sJynxLevelUpLearnset[] = {
+static const struct LevelUpMove sSamuagumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_LICK),
     LEVEL_UP_MOVE( 1, MOVE_LOVELY_KISS),
@@ -2809,7 +2809,7 @@ static const struct LevelUpMove sJynxLevelUpLearnset[] = {
     LEVEL_UP_MOVE(57, MOVE_BLIZZARD),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_JYNX
+#endif //P_FAMILY_SAMUAGUMON
 
 #if P_FAMILY_ELECTABUZZ
 #if P_GEN_2_CROSS_EVOS

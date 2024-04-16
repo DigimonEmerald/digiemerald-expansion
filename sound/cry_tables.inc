@@ -346,12 +346,12 @@ gCryTable::
 	cry Cry_Kleavor
 .endif @ P_GEN_8_CROSS_EVOS
 .endif @ P_FAMILY_BURGERMON
-.if P_FAMILY_JYNX == TRUE
+.if P_FAMILY_SAMUAGUMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Smoochum
 .endif @ P_GEN_2_CROSS_EVOS
-	cry Cry_Jynx
-.endif @ P_FAMILY_JYNX
+	cry Cry_Samuagumon
+.endif @ P_FAMILY_SAMUAGUMON
 .if P_FAMILY_ELECTABUZZ == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Elekid
@@ -2772,12 +2772,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Kleavor
 .endif @ P_GEN_8_CROSS_EVOS
 .endif @ P_FAMILY_BURGERMON
-.if P_FAMILY_JYNX == TRUE
+.if P_FAMILY_SAMUAGUMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Smoochum
 .endif @ P_GEN_2_CROSS_EVOS
-	cry_reverse Cry_Jynx
-.endif @ P_FAMILY_JYNX
+	cry_reverse Cry_Samuagumon
+.endif @ P_FAMILY_SAMUAGUMON
 .if P_FAMILY_ELECTABUZZ == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Elekid

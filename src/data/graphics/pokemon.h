@@ -2049,7 +2049,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_BURGERMON
 
-#if P_FAMILY_JYNX
+#if P_FAMILY_SAMUAGUMON
 #if P_GEN_2_CROSS_EVOS
     const u32 gMonFrontPic_Smoochum[] = INCBIN_U32("graphics/pokemon/smoochum/anim_front.4bpp.lz");
     const u32 gMonPalette_Smoochum[] = INCBIN_U32("graphics/pokemon/smoochum/normal.gbapal.lz");
@@ -2061,15 +2061,15 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
 
-    const u32 gMonFrontPic_Jynx[] = INCBIN_U32("graphics/pokemon/jynx/anim_front.4bpp.lz");
-    const u32 gMonPalette_Jynx[] = INCBIN_U32("graphics/pokemon/jynx/normal.gbapal.lz");
-    const u32 gMonBackPic_Jynx[] = INCBIN_U32("graphics/pokemon/jynx/back.4bpp.lz");
-    const u32 gMonShinyPalette_Jynx[] = INCBIN_U32("graphics/pokemon/jynx/shiny.gbapal.lz");
-    const u8 gMonIcon_Jynx[] = INCBIN_U8("graphics/pokemon/jynx/icon.4bpp");
+    const u32 gMonFrontPic_Samuagumon[] = INCBIN_U32("graphics/pokemon/samuagumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Samuagumon[] = INCBIN_U32("graphics/pokemon/samuagumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Samuagumon[] = INCBIN_U32("graphics/pokemon/samuagumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Samuagumon[] = INCBIN_U32("graphics/pokemon/samuagumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Samuagumon[] = INCBIN_U8("graphics/pokemon/samuagumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Jynx[] = INCBIN_U8("graphics/pokemon/jynx/footprint.1bpp");
+    const u8 gMonFootprint_Samuagumon[] = INCBIN_U8("graphics/pokemon/samuagumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_JYNX
+#endif //P_FAMILY_SAMUAGUMON
 
 #if P_FAMILY_ELECTABUZZ
 #if P_GEN_2_CROSS_EVOS

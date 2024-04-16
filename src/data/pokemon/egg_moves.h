@@ -1095,7 +1095,7 @@ const u16 gEggMoves[] = {
         MOVE_QUICK_GUARD),
 #endif //P_FAMILY_BURGERMON
 
-#if P_FAMILY_JYNX
+#if P_FAMILY_SAMUAGUMON
 #if P_GEN_2_CROSS_EVOS
     egg_moves(SMOOCHUM,
         MOVE_MEDITATE,
@@ -1107,7 +1107,7 @@ const u16 gEggMoves[] = {
         MOVE_WAKE_UP_SLAP,
         MOVE_CAPTIVATE),
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_JYNX
+#endif //P_FAMILY_SAMUAGUMON
 
 #if P_FAMILY_ELECTABUZZ
 #if P_GEN_2_CROSS_EVOS

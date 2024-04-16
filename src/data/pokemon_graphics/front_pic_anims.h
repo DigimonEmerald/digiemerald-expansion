@@ -1846,7 +1846,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Kleavor);
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_BURGERMON
 
-#if P_FAMILY_JYNX
+#if P_FAMILY_SAMUAGUMON
 #if P_GEN_2_CROSS_EVOS
 static const union AnimCmd sAnim_Smoochum_1[] =
 {
@@ -1856,7 +1856,7 @@ static const union AnimCmd sAnim_Smoochum_1[] =
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const union AnimCmd sAnim_Jynx_1[] =
+static const union AnimCmd sAnim_Samuagumon_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 10),
@@ -1865,7 +1865,7 @@ static const union AnimCmd sAnim_Jynx_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_JYNX
+#endif //P_FAMILY_SAMUAGUMON
 
 #if P_FAMILY_ELECTABUZZ
 #if P_GEN_2_CROSS_EVOS
@@ -10605,12 +10605,12 @@ SINGLE_ANIMATION(ScizorMega);
 SINGLE_ANIMATION(Kleavor);
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_BURGERMON
-#if P_FAMILY_JYNX
+#if P_FAMILY_SAMUAGUMON
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Smoochum);
 #endif //P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Jynx);
-#endif //P_FAMILY_JYNX
+SINGLE_ANIMATION(Samuagumon);
+#endif //P_FAMILY_SAMUAGUMON
 #if P_FAMILY_ELECTABUZZ
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Elekid);

@@ -1213,7 +1213,7 @@ Cry_Kleavor::
 .endif @ P_GEN_8_CROSS_EVOS
 .endif @ P_FAMILY_BURGERMON
 
-.if P_FAMILY_JYNX == TRUE
+.if P_FAMILY_SAMUAGUMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
 Cry_Smoochum::
@@ -1221,9 +1221,9 @@ Cry_Smoochum::
 .endif @ P_GEN_2_CROSS_EVOS
 
 	.align 2
-Cry_Jynx::
-	.incbin "sound/direct_sound_samples/cries/jynx.bin"
-.endif @ P_FAMILY_JYNX
+Cry_Samuagumon::
+	.incbin "sound/direct_sound_samples/cries/samuagumon.bin"
+.endif @ P_FAMILY_SAMUAGUMON
 
 .if P_FAMILY_ELECTABUZZ == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE

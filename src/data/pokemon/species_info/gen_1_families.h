@@ -12427,7 +12427,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_BURGERMON
 
-#if P_FAMILY_JYNX
+#if P_FAMILY_SAMUAGUMON
 #if P_GEN_2_CROSS_EVOS
     [SPECIES_SMOOCHUM] =
     {
@@ -12480,11 +12480,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Smoochum)
         .levelUpLearnset = sSmoochumLevelUpLearnset,
         .teachableLearnset = sSmoochumTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_JYNX}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SAMUAGUMON}),
     },
 #endif //P_GEN_2_CROSS_EVOS
 
-    [SPECIES_JYNX] =
+    [SPECIES_SAMUAGUMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 50,
@@ -12503,14 +12503,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_FOREWARN, ABILITY_DRY_SKIN },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Jynx"),
-        .cryId = CRY_JYNX,
-        .natDexNum = NATIONAL_DEX_JYNX,
+        .speciesName = _("Samuagumon"),
+        .cryId = CRY_SAMUAGUMON,
+        .natDexNum = NATIONAL_DEX_SAMUAGUMON,
         .categoryName = _("Human Shape"),
         .height = 14,
         .weight = 406,
         .description = COMPOUND_STRING(
-            "A Jynx sashays rhythmically as if it were\n"
+            "A Samuagumon sashays rhythmically as if it were\n"
             "dancing. Its motions are so bouncingly\n"
             "alluring, people seeing it are compelled to\n"
             "shake their hips without noticing."),
@@ -12518,24 +12518,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 3,
         .trainerScale = 300,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Jynx,
+        .frontPic = gMonFrontPic_Samuagumon,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Jynx,
+        .frontAnimFrames = sAnims_Samuagumon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Jynx,
+        .backPic = gMonBackPic_Samuagumon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Jynx,
-        .shinyPalette = gMonShinyPalette_Jynx,
-        .iconSprite = gMonIcon_Jynx,
+        .palette = gMonPalette_Samuagumon,
+        .shinyPalette = gMonShinyPalette_Samuagumon,
+        .iconSprite = gMonIcon_Samuagumon,
         .iconPalIndex = 2,
-        FOOTPRINT(Jynx)
-        .levelUpLearnset = sJynxLevelUpLearnset,
-        .teachableLearnset = sJynxTeachableLearnset,
+        FOOTPRINT(Samuagumon)
+        .levelUpLearnset = sSamuagumonLevelUpLearnset,
+        .teachableLearnset = sSamuagumonTeachableLearnset,
     },
-#endif //P_FAMILY_JYNX
+#endif //P_FAMILY_SAMUAGUMON
 
 #if P_FAMILY_ELECTABUZZ
 #if P_GEN_2_CROSS_EVOS
