@@ -5376,7 +5376,7 @@
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_HORSEA"
+                "species": "SPECIES_BIYOMON"
               },
               {
                 "min_level": 35,
@@ -5465,7 +5465,7 @@
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_HORSEA"
+                "species": "SPECIES_BIYOMON"
               },
               {
                 "min_level": 35,
@@ -5554,7 +5554,7 @@
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_HORSEA"
+                "species": "SPECIES_BIYOMON"
               },
               {
                 "min_level": 35,

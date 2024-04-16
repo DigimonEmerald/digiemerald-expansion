@@ -6237,8 +6237,8 @@ static const u16 sBetamon_xTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BETAMON_X
 
-#if P_FAMILY_HORSEA
-static const u16 sHorseaTeachableLearnset[] = {
+#if P_FAMILY_BIYOMON
+static const u16 sBiyomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -6317,7 +6317,7 @@ static const u16 sKingdraTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_HORSEA
+#endif //P_FAMILY_BIYOMON
 
 #if P_FAMILY_GOLDEEN
 static const u16 sGoldeenTeachableLearnset[] = {

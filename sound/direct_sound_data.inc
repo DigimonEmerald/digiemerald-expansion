@@ -1135,10 +1135,10 @@ Cry_Betamon_xMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BETAMON_X
 
-.if P_FAMILY_HORSEA == TRUE
+.if P_FAMILY_BIYOMON == TRUE
 	.align 2
-Cry_Horsea::
-	.incbin "sound/direct_sound_samples/cries/horsea.bin"
+Cry_Biyomon::
+	.incbin "sound/direct_sound_samples/cries/biyomon.bin"
 
 	.align 2
 Cry_Seadra::
@@ -1149,7 +1149,7 @@ Cry_Seadra::
 Cry_Kingdra::
 	.incbin "sound/direct_sound_samples/cries/kingdra.bin"
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_HORSEA
+.endif @ P_FAMILY_BIYOMON
 
 .if P_FAMILY_GOLDEEN == TRUE
 	.align 2

@@ -11570,8 +11570,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BETAMON_X
 
-#if P_FAMILY_HORSEA
-    [SPECIES_HORSEA] =
+#if P_FAMILY_BIYOMON
+    [SPECIES_BIYOMON] =
     {
         .baseHP        = 30,
         .baseAttack    = 40,
@@ -11591,9 +11591,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_SNIPER, ABILITY_DAMP },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Horsea"),
-        .cryId = CRY_HORSEA,
-        .natDexNum = NATIONAL_DEX_HORSEA,
+        .speciesName = _("Biyomon"),
+        .cryId = CRY_BIYOMON,
+        .natDexNum = NATIONAL_DEX_BIYOMON,
         .categoryName = _("Dragon"),
         .height = 4,
         .weight = 80,
@@ -11606,22 +11606,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = -1,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Horsea,
+        .frontPic = gMonFrontPic_Biyomon,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Horsea,
+        .frontAnimFrames = sAnims_Biyomon,
         .frontAnimId = ANIM_V_JUMPS_SMALL,
-        .backPic = gMonBackPic_Horsea,
+        .backPic = gMonBackPic_Biyomon,
         .backPicSize = MON_COORDS_SIZE(48, 40),
         .backPicYOffset = 14,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Horsea,
-        .shinyPalette = gMonShinyPalette_Horsea,
-        .iconSprite = gMonIcon_Horsea,
+        .palette = gMonPalette_Biyomon,
+        .shinyPalette = gMonShinyPalette_Biyomon,
+        .iconSprite = gMonIcon_Biyomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Horsea)
-        .levelUpLearnset = sHorseaLevelUpLearnset,
-        .teachableLearnset = sHorseaTeachableLearnset,
+        FOOTPRINT(Biyomon)
+        .levelUpLearnset = sBiyomonLevelUpLearnset,
+        .teachableLearnset = sBiyomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_SEADRA}),
     },
 
@@ -11743,7 +11743,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sKingdraTeachableLearnset,
     },
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_HORSEA
+#endif //P_FAMILY_BIYOMON
 
 #if P_FAMILY_GOLDEEN
     [SPECIES_GOLDEEN] =

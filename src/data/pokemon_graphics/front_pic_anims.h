@@ -1701,8 +1701,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Betamon_xMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BETAMON_X
 
-#if P_FAMILY_HORSEA
-static const union AnimCmd sAnim_Horsea_1[] =
+#if P_FAMILY_BIYOMON
+static const union AnimCmd sAnim_Biyomon_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 10),
@@ -1733,7 +1733,7 @@ static const union AnimCmd sAnim_Kingdra_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_HORSEA
+#endif //P_FAMILY_BIYOMON
 
 #if P_FAMILY_GOLDEEN
 static const union AnimCmd sAnim_Goldeen_1[] =
@@ -10568,13 +10568,13 @@ SINGLE_ANIMATION(Betamon_x);
 SINGLE_ANIMATION(Betamon_xMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BETAMON_X
-#if P_FAMILY_HORSEA
-SINGLE_ANIMATION(Horsea);
+#if P_FAMILY_BIYOMON
+SINGLE_ANIMATION(Biyomon);
 SINGLE_ANIMATION(Seadra);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Kingdra);
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_HORSEA
+#endif //P_FAMILY_BIYOMON
 #if P_FAMILY_GOLDEEN
 SINGLE_ANIMATION(Goldeen);
 SINGLE_ANIMATION(Seaking);

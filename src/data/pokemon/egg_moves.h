@@ -1006,8 +1006,8 @@ const u16 gEggMoves[] = {
         MOVE_CIRCLE_THROW),
 #endif //P_FAMILY_BETAMON_X
 
-#if P_FAMILY_HORSEA
-    egg_moves(HORSEA,
+#if P_FAMILY_BIYOMON
+    egg_moves(BIYOMON,
         MOVE_FLAIL,
         MOVE_AURORA_BEAM,
         MOVE_OCTAZOOKA,
@@ -1021,7 +1021,7 @@ const u16 gEggMoves[] = {
         MOVE_WATER_PULSE,
         MOVE_CLEAR_SMOG,
         MOVE_OUTRAGE),
-#endif //P_FAMILY_HORSEA
+#endif //P_FAMILY_BIYOMON
 
 #if P_FAMILY_GOLDEEN
     egg_moves(GOLDEEN,

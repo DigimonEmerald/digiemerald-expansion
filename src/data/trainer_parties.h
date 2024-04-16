@@ -1707,7 +1707,7 @@ static const struct TrainerMon sParty_Thalia1[] = {
     },
     {
     .lvl = 25,
-    .species = SPECIES_HORSEA,
+    .species = SPECIES_BIYOMON,
     }
 };
 
@@ -1877,7 +1877,7 @@ static const struct TrainerMon sParty_Nolen[] = {
 static const struct TrainerMon sParty_Stan[] = {
     {
     .lvl = 34,
-    .species = SPECIES_HORSEA,
+    .species = SPECIES_BIYOMON,
     }
 };
 
@@ -5542,7 +5542,7 @@ static const struct TrainerMon sParty_Beth[] = {
 static const struct TrainerMon sParty_Tara[] = {
     {
     .lvl = 25,
-    .species = SPECIES_HORSEA,
+    .species = SPECIES_BIYOMON,
     },
     {
     .lvl = 25,
@@ -5671,7 +5671,7 @@ static const struct TrainerMon sParty_Debra[] = {
 static const struct TrainerMon sParty_Linda[] = {
     {
     .lvl = 33,
-    .species = SPECIES_HORSEA,
+    .species = SPECIES_BIYOMON,
     },
     {
     .lvl = 33,
@@ -11694,7 +11694,7 @@ static const struct TrainerMon sParty_Thalia2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 34,
-    .species = SPECIES_HORSEA,
+    .species = SPECIES_BIYOMON,
     }
 };
 

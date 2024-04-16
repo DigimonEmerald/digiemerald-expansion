@@ -310,13 +310,13 @@ gCryTable::
 	cry Cry_Betamon_xMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BETAMON_X
-.if P_FAMILY_HORSEA == TRUE
-	cry Cry_Horsea
+.if P_FAMILY_BIYOMON == TRUE
+	cry Cry_Biyomon
 	cry Cry_Seadra
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Kingdra
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_HORSEA
+.endif @ P_FAMILY_BIYOMON
 .if P_FAMILY_GOLDEEN == TRUE
 	cry Cry_Goldeen
 	cry Cry_Seaking
@@ -2736,13 +2736,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Betamon_xMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BETAMON_X
-.if P_FAMILY_HORSEA == TRUE
-	cry_reverse Cry_Horsea
+.if P_FAMILY_BIYOMON == TRUE
+	cry_reverse Cry_Biyomon
 	cry_reverse Cry_Seadra
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Kingdra
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_HORSEA
+.endif @ P_FAMILY_BIYOMON
 .if P_FAMILY_GOLDEEN == TRUE
 	cry_reverse Cry_Goldeen
 	cry_reverse Cry_Seaking
