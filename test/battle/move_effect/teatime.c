@@ -169,7 +169,7 @@ SINGLE_BATTLE_TEST("Teatime triggers Volt Absorb if it has been affected by Elec
     PARAMETRIZE { move = MOVE_PLASMA_FISTS; item = ITEM_NONE; }
 
     GIVEN {
-        PLAYER(SPECIES_JOLTEON) { Ability(ABILITY_VOLT_ABSORB); Item(item); HP(55); MaxHP(100); }
+        PLAYER(SPECIES_DAMEMON) { Ability(ABILITY_VOLT_ABSORB); Item(item); HP(55); MaxHP(100); }
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_LIECHI_BERRY); }
     } WHEN {
         TURN {
@@ -183,10 +183,10 @@ SINGLE_BATTLE_TEST("Teatime triggers Volt Absorb if it has been affected by Elec
         {
             ABILITY_POPUP(player, ABILITY_VOLT_ABSORB);
             HP_BAR(player, damage: -25);
-            NOT MESSAGE("Using Liechi Berry, the Attack of Jolteon rose!");
+            NOT MESSAGE("Using Liechi Berry, the Attack of Damemon rose!");
         } else {
             NOT ABILITY_POPUP(player, ABILITY_VOLT_ABSORB);
-            MESSAGE("Using Liechi Berry, the Attack of Jolteon rose!");
+            MESSAGE("Using Liechi Berry, the Attack of Damemon rose!");
         }
         MESSAGE("Using Liechi Berry, the Attack of Foe Wobbuffet rose!");
     }

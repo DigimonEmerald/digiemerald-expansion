@@ -395,7 +395,7 @@ gCryTable::
 .if P_FAMILY_CRABMON_X == TRUE
 	cry Cry_Crabmon_x
 	cry Cry_Cutemon
-	cry Cry_Jolteon
+	cry Cry_Damemon
 	cry Cry_Flareon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Espeon
@@ -2821,7 +2821,7 @@ gCryTable_Reverse::
 .if P_FAMILY_CRABMON_X == TRUE
 	cry_reverse Cry_Crabmon_x
 	cry_reverse Cry_Cutemon
-	cry_reverse Cry_Jolteon
+	cry_reverse Cry_Damemon
 	cry_reverse Cry_Flareon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Espeon

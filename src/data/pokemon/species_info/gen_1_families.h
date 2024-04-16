@@ -13627,7 +13627,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sCrabmon_xTeachableLearnset,
         .formSpeciesIdTable = sCrabmon_xFormSpeciesIdTable,
         .formChangeTable = sCrabmon_xFormChangeTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_JOLTEON},
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_DAMEMON},
                                 {EVO_ITEM, ITEM_WATER_STONE, SPECIES_CUTEMON},
                                 {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_FLAREON},
                                 {EVO_FRIENDSHIP_DAY, 0, SPECIES_ESPEON},
@@ -13807,7 +13807,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sCutemonTeachableLearnset,
     },
 
-    [SPECIES_JOLTEON] =
+    [SPECIES_DAMEMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 65,
@@ -13826,9 +13826,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_VOLT_ABSORB, ABILITY_VOLT_ABSORB, ABILITY_QUICK_FEET },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Jolteon"),
-        .cryId = CRY_JOLTEON,
-        .natDexNum = NATIONAL_DEX_JOLTEON,
+        .speciesName = _("Damemon"),
+        .cryId = CRY_DAMEMON,
+        .natDexNum = NATIONAL_DEX_DAMEMON,
         .categoryName = _("Lightning"),
         .height = 8,
         .weight = 245,
@@ -13841,22 +13841,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Jolteon,
+        .frontPic = gMonFrontPic_Damemon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Jolteon,
+        .frontAnimFrames = sAnims_Damemon,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Jolteon,
+        .backPic = gMonBackPic_Damemon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
-        .palette = gMonPalette_Jolteon,
-        .shinyPalette = gMonShinyPalette_Jolteon,
-        .iconSprite = gMonIcon_Jolteon,
+        .palette = gMonPalette_Damemon,
+        .shinyPalette = gMonShinyPalette_Damemon,
+        .iconSprite = gMonIcon_Damemon,
         .iconPalIndex = 2,
-        FOOTPRINT(Jolteon)
-        .levelUpLearnset = sJolteonLevelUpLearnset,
-        .teachableLearnset = sJolteonTeachableLearnset,
+        FOOTPRINT(Damemon)
+        .levelUpLearnset = sDamemonLevelUpLearnset,
+        .teachableLearnset = sDamemonTeachableLearnset,
     },
 
     [SPECIES_FLAREON] =

@@ -2286,13 +2286,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Cutemon[] = INCBIN_U8("graphics/pokemon/cutemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Jolteon[] = INCBIN_U32("graphics/pokemon/jolteon/anim_front.4bpp.lz");
-    const u32 gMonPalette_Jolteon[] = INCBIN_U32("graphics/pokemon/jolteon/normal.gbapal.lz");
-    const u32 gMonBackPic_Jolteon[] = INCBIN_U32("graphics/pokemon/jolteon/back.4bpp.lz");
-    const u32 gMonShinyPalette_Jolteon[] = INCBIN_U32("graphics/pokemon/jolteon/shiny.gbapal.lz");
-    const u8 gMonIcon_Jolteon[] = INCBIN_U8("graphics/pokemon/jolteon/icon.4bpp");
+    const u32 gMonFrontPic_Damemon[] = INCBIN_U32("graphics/pokemon/damemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Damemon[] = INCBIN_U32("graphics/pokemon/damemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Damemon[] = INCBIN_U32("graphics/pokemon/damemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Damemon[] = INCBIN_U32("graphics/pokemon/damemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Damemon[] = INCBIN_U8("graphics/pokemon/damemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Jolteon[] = INCBIN_U8("graphics/pokemon/jolteon/footprint.1bpp");
+    const u8 gMonFootprint_Damemon[] = INCBIN_U8("graphics/pokemon/damemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Flareon[] = INCBIN_U32("graphics/pokemon/flareon/anim_front.4bpp.lz");
