@@ -284,7 +284,7 @@ gCryTable::
 .endif @ P_FAMILY_ARGOMON_ROOKIE
 .if P_FAMILY_ARURAUMON == TRUE
 	cry Cry_Aruraumon
-	cry Cry_Rhydon
+	cry Cry_Bakomon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Rhyperior
 .endif @ P_GEN_4_CROSS_EVOS
@@ -2710,7 +2710,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_ARGOMON_ROOKIE
 .if P_FAMILY_ARURAUMON == TRUE
 	cry_reverse Cry_Aruraumon
-	cry_reverse Cry_Rhydon
+	cry_reverse Cry_Bakomon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Rhyperior
 .endif @ P_GEN_4_CROSS_EVOS

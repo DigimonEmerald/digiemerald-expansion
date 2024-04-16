@@ -1612,7 +1612,7 @@ static const union AnimCmd sAnim_Aruraumon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Rhydon_1[] =
+static const union AnimCmd sAnim_Bakomon_1[] =
 {
     ANIMCMD_FRAME(1, 16),
     ANIMCMD_FRAME(0, 15),
@@ -10542,7 +10542,7 @@ SINGLE_ANIMATION(ArmadilmonGalarian);
 #endif //P_FAMILY_ARGOMON_ROOKIE
 #if P_FAMILY_ARURAUMON
 SINGLE_ANIMATION(Aruraumon);
-SINGLE_ANIMATION(Rhydon);
+SINGLE_ANIMATION(Bakomon);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Rhyperior);
 #endif //P_GEN_4_CROSS_EVOS
