@@ -15288,10 +15288,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Elecmon)
         .levelUpLearnset = sElecmonLevelUpLearnset,
         .teachableLearnset = sElecmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_DRAGONAIR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ELECMON_VIOLET}),
     },
 
-    [SPECIES_DRAGONAIR] =
+    [SPECIES_ELECMON_VIOLET] =
     {
         .baseHP        = 61,
         .baseAttack    = 84,
@@ -15311,14 +15311,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_MARVEL_SCALE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Dragonair"),
-        .cryId = CRY_DRAGONAIR,
-        .natDexNum = NATIONAL_DEX_DRAGONAIR,
+        .speciesName = _("Elecmon_violet"),
+        .cryId = CRY_ELECMON_VIOLET,
+        .natDexNum = NATIONAL_DEX_ELECMON_VIOLET,
         .categoryName = _("Dragon"),
         .height = 40,
         .weight = 165,
         .description = COMPOUND_STRING(
-            "A Dragonair stores an enormous amount of\n"
+            "A Elecmon_violet stores an enormous amount of\n"
             "energy inside its body. It is said to alter\n"
             "the weather around it by loosing energy\n"
             "from the crystals on its neck and tail."),
@@ -15326,22 +15326,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 411,
         .trainerOffset = 5,
-        .frontPic = gMonFrontPic_Dragonair,
+        .frontPic = gMonFrontPic_Elecmon_violet,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_Dragonair,
+        .frontAnimFrames = sAnims_Elecmon_violet,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Dragonair,
+        .backPic = gMonBackPic_Elecmon_violet,
         .backPicSize = MON_COORDS_SIZE(40, 56),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Dragonair,
-        .shinyPalette = gMonShinyPalette_Dragonair,
-        .iconSprite = gMonIcon_Dragonair,
+        .palette = gMonPalette_Elecmon_violet,
+        .shinyPalette = gMonShinyPalette_Elecmon_violet,
+        .iconSprite = gMonIcon_Elecmon_violet,
         .iconPalIndex = 0,
-        FOOTPRINT(Dragonair)
-        .levelUpLearnset = sDragonairLevelUpLearnset,
-        .teachableLearnset = sDragonairTeachableLearnset,
+        FOOTPRINT(Elecmon_violet)
+        .levelUpLearnset = sElecmon_violetLevelUpLearnset,
+        .teachableLearnset = sElecmon_violetTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_DRAGONITE}),
     },
 

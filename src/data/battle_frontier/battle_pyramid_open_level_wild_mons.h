@@ -885,7 +885,7 @@ static const struct PyramidWildMon sOpenLevelWildMons_Round17[] =
 static const struct PyramidWildMon sOpenLevelWildMons_Round18[] =
 {
     {
-        .species = SPECIES_DRAGONAIR,
+        .species = SPECIES_ELECMON_VIOLET,
         .lvl = 10,
         .abilityNum = ABILITY_RANDOM,
         .moves = {MOVE_THUNDER_WAVE, MOVE_TOXIC, MOVE_ICE_BEAM, MOVE_NONE}

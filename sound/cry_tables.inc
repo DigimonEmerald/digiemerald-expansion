@@ -449,7 +449,7 @@ gCryTable::
 .endif @ P_FAMILY_EKAKIMON
 .if P_FAMILY_ELECMON == TRUE
 	cry Cry_Elecmon
-	cry Cry_Dragonair
+	cry Cry_Elecmon_violet
 	cry Cry_Dragonite
 .endif @ P_FAMILY_ELECMON
 .if P_FAMILY_MEWTWO == TRUE
@@ -2875,7 +2875,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_EKAKIMON
 .if P_FAMILY_ELECMON == TRUE
 	cry_reverse Cry_Elecmon
-	cry_reverse Cry_Dragonair
+	cry_reverse Cry_Elecmon_violet
 	cry_reverse Cry_Dragonite
 .endif @ P_FAMILY_ELECMON
 .if P_FAMILY_MEWTWO == TRUE

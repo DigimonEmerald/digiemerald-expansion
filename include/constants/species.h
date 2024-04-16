@@ -149,7 +149,7 @@
 #define SPECIES_EBIBURGMON                                  145
 #define SPECIES_EKAKIMON                                 146
 #define SPECIES_ELECMON                                 147
-#define SPECIES_DRAGONAIR                               148
+#define SPECIES_ELECMON_VIOLET                               148
 #define SPECIES_DRAGONITE                               149
 #define SPECIES_MEWTWO                                  150
 #define SPECIES_MEW                                     151

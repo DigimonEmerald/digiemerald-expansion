@@ -8259,7 +8259,7 @@ static const u16 sElecmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDragonairTeachableLearnset[] = {
+static const u16 sElecmon_violetTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DOUBLE_TEAM,
