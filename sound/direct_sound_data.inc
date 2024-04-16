@@ -1179,7 +1179,7 @@ Cry_MimeJr::
 .endif @ P_GEN_4_CROSS_EVOS
 
 	.align 2
-Cry_MrMime::
+Cry_Bulucomon::
 	.incbin "sound/direct_sound_samples/cries/bulucomon.bin"
 
 .if P_GALARIAN_FORMS == TRUE

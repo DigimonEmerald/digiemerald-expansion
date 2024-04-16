@@ -275,7 +275,7 @@ struct BerryCrushGame_Gfx
     u8 resultsState;
     u8 unused;
     u8 resultsWindowId;
-    u8 nafalcomonindowIds[MAX_RFU_PLAYERS];
+    u8 nameWindowIds[MAX_RFU_PLAYERS];
     u16 bgBuffers[4][0x800];
 };
 
@@ -330,9 +330,9 @@ static void SetNamesAndTextSpeed(struct BerryCrushGame *);
 static void RunOrScheduleCommand(u16, u8, u8 *);
 static void SetPaletteFadeArgs(u8 *, bool8, u32, s8, u8, u8, u16);
 static s32 UpdateGame(struct BerryCrushGame *);
-static void CreatePlayerNafalcomonindows(struct BerryCrushGame *);
-static void DrawPlayerNafalcomonindows(struct BerryCrushGame *);
-static void CopyPlayerNafalcomonindowGfxToBg(struct BerryCrushGame *);
+static void CreatePlayerNameWindows(struct BerryCrushGame *);
+static void DrawPlayerNameWindows(struct BerryCrushGame *);
+static void CopyPlayerNameWindowGfxToBg(struct BerryCrushGame *);
 static void CreateGameSprites(struct BerryCrushGame *);
 static void DestroyGameSprites(struct BerryCrushGame *);
 static void PrintTimer(struct BerryCrushGame_Gfx *, u16);
@@ -1230,8 +1230,8 @@ static s32 ShowGameDisplay(void)
 
         InitStandardTextBoxWindows();
         InitTextBoxGfxAndPrinters();
-        CreatePlayerNafalcomonindows(game);
-        DrawPlayerNafalcomonindows(game);
+        CreatePlayerNameWindows(game);
+        DrawPlayerNameWindows(game);
         gPaletteFade.bufferTransferDisabled = TRUE;
         break;
     case 7:
@@ -1239,7 +1239,7 @@ static s32 ShowGameDisplay(void)
         CopyToBgTilemapBuffer(1, sCrusherTop_Tilemap, 0, 0);
         CopyToBgTilemapBuffer(2, sContainerCap_Tilemap, 0, 0);
         CopyToBgTilemapBuffer(3, sBg_Tilemap, 0, 0);
-        CopyPlayerNafalcomonindowGfxToBg(game);
+        CopyPlayerNameWindowGfxToBg(game);
         CopyBgTilemapBufferToVram(1);
         CopyBgTilemapBufferToVram(2);
         CopyBgTilemapBufferToVram(3);
@@ -1747,7 +1747,7 @@ static bool32 OpenResultsWindow(struct BerryCrushGame *game, struct BerryCrushGa
         break;
     case 2:
         LoadUserWindowBorderGfx_(gfx->resultsWindowId, 541, BG_PLTT_ID(13));
-        DrawStdFrafalcomonithCustomTileAndPalette(gfx->resultsWindowId, FALSE, 541, 13);
+        DrawStdFrameWithCustomTileAndPalette(gfx->resultsWindowId, FALSE, 541, 13);
         break;
     case 3:
         playerCountIdx = game->playerCount - 2;
@@ -1785,7 +1785,7 @@ static void CloseResultsWindow(struct BerryCrushGame *game)
 {
     ClearStdWindowAndFrameToTransparent(game->gfx.resultsWindowId, TRUE);
     RemoveWindow(game->gfx.resultsWindowId);
-    DrawPlayerNafalcomonindows(game);
+    DrawPlayerNameWindows(game);
 }
 
 #define tState             data[0]
@@ -1805,7 +1805,7 @@ static void Task_ShowRankings(u8 taskId)
         PutWindowTilemap(tWindowId);
         FillWindowPixelBuffer(tWindowId, PIXEL_FILL(0));
         LoadUserWindowBorderGfx_(tWindowId, 541, BG_PLTT_ID(13));
-        DrawStdFrafalcomonithCustomTileAndPalette(tWindowId, FALSE, 541, 13);
+        DrawStdFrameWithCustomTileAndPalette(tWindowId, FALSE, 541, 13);
         break;
     case 1:
         // Print header text
@@ -1885,29 +1885,29 @@ static void HideTimer(struct BerryCrushGame_Gfx *gfx)
     DigitObjUtil_HideOrShow(0, TRUE);
 }
 
-static void CreatePlayerNafalcomonindows(struct BerryCrushGame *game)
+static void CreatePlayerNameWindows(struct BerryCrushGame *game)
 {
     u8 i;
     for (i = 0; i < game->playerCount; i++)
     {
         game->gfx.playerCoords[i] = &sPlayerCoords[sPlayerIdToPosId[game->playerCount - 2][i]];
-        game->gfx.nafalcomonindowIds[i] = AddWindow(&sWindowTemplates_PlayerNames[game->gfx.playerCoords[i]->playerId]);
-        PutWindowTilemap(game->gfx.nafalcomonindowIds[i]);
-        FillWindowPixelBuffer(game->gfx.nafalcomonindowIds[i], 0);
+        game->gfx.nameWindowIds[i] = AddWindow(&sWindowTemplates_PlayerNames[game->gfx.playerCoords[i]->playerId]);
+        PutWindowTilemap(game->gfx.nameWindowIds[i]);
+        FillWindowPixelBuffer(game->gfx.nameWindowIds[i], 0);
     }
 }
 
-static void DrawPlayerNafalcomonindows(struct BerryCrushGame *game)
+static void DrawPlayerNameWindows(struct BerryCrushGame *game)
 {
     u8 i;
     for (i = 0; i < game->playerCount; i++)
     {
-        PutWindowTilemap(game->gfx.nafalcomonindowIds[i]);
+        PutWindowTilemap(game->gfx.nameWindowIds[i]);
         if (i == game->localId)
         {
             // Print the player's name
             AddTextPrinterParameterized4(
-                game->gfx.nafalcomonindowIds[i],
+                game->gfx.nameWindowIds[i],
                 FONT_SHORT,
                 36 - GetStringWidth(FONT_SHORT, game->players[i].name, 0) / 2u,
                 1,
@@ -1922,7 +1922,7 @@ static void DrawPlayerNafalcomonindows(struct BerryCrushGame *game)
         {
             // Print a partner's name
             AddTextPrinterParameterized4(
-                game->gfx.nafalcomonindowIds[i],
+                game->gfx.nameWindowIds[i],
                 FONT_SHORT,
                 36 - GetStringWidth(FONT_SHORT, game->players[i].name, 0) / 2u,
                 1,
@@ -1933,13 +1933,13 @@ static void DrawPlayerNafalcomonindows(struct BerryCrushGame *game)
                 game->players[i].name
             );
         }
-        CopyWindowToVram(game->gfx.nafalcomonindowIds[i], COPYWIN_FULL);
+        CopyWindowToVram(game->gfx.nameWindowIds[i], COPYWIN_FULL);
     }
     CopyBgTilemapBufferToVram(0);
 }
 
 // Each player name window border uses a color that corresponds to a slot of the crusher lid
-static void CopyPlayerNafalcomonindowGfxToBg(struct BerryCrushGame *game)
+static void CopyPlayerNameWindowGfxToBg(struct BerryCrushGame *game)
 {
     u8 i = 0;
     u8 *windowGfx;

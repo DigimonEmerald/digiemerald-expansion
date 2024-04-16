@@ -1124,7 +1124,7 @@ SECTIONS {
         sound/songs/midi/mus_b_factory.o(.rodata);
         sound/songs/midi/mus_vs_rayquaza.o(.rodata);
         sound/songs/midi/mus_vs_frontier_brain.o(.rodata);
-        sound/songs/midi/mus_vs_falcomon.o(.rodata);
+        sound/songs/midi/mus_vs_mew.o(.rodata);
         sound/songs/midi/mus_b_dome_lobby.o(.rodata);
         sound/songs/midi/mus_vs_wild.o(.rodata);
         sound/songs/midi/mus_vs_aqua_magma.o(.rodata);
@@ -1204,7 +1204,7 @@ SECTIONS {
         sound/songs/midi/mus_rg_sevii_67.o(.rodata);
         sound/songs/midi/mus_rg_poke_flute.o(.rodata);
         sound/songs/midi/mus_rg_vs_deoxys.o(.rodata);
-        sound/songs/midi/mus_rg_vs_agumon_fake_expert.o(.rodata);
+        sound/songs/midi/mus_rg_vs_mewtwo.o(.rodata);
         sound/songs/midi/mus_rg_vs_legend.o(.rodata);
         sound/songs/midi/mus_rg_encounter_gym_leader.o(.rodata);
         sound/songs/midi/mus_rg_encounter_deoxys.o(.rodata);

@@ -1797,7 +1797,7 @@ static const union AnimCmd sAnim_MimeJr_1[] =
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const union AnimCmd sAnim_MrMime_1[] =
+static const union AnimCmd sAnim_Bulucomon_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 15),
@@ -1809,7 +1809,7 @@ static const union AnimCmd sAnim_MrMime_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(MrMimeGalarian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(BulucomonGalarian);
 PLACEHOLDER_ANIM_SINGLE_FRAME(MrRime);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_BULUCOMON
@@ -10587,9 +10587,9 @@ SINGLE_ANIMATION(Bokomon);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(MimeJr);
 #endif //P_GEN_4_CROSS_EVOS
-SINGLE_ANIMATION(MrMime);
+SINGLE_ANIMATION(Bulucomon);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(MrMimeGalarian);
+SINGLE_ANIMATION(BulucomonGalarian);
 SINGLE_ANIMATION(MrRime);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_BULUCOMON

@@ -540,7 +540,7 @@ $(MID_SUBDIR)/mus_rg_vs_gym_leader.s: %.s: %.mid
 $(MID_SUBDIR)/mus_rg_vs_champion.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G158 -V090
 
-$(MID_SUBDIR)/mus_rg_vs_agumon_fake_expert.s: %.s: %.mid
+$(MID_SUBDIR)/mus_rg_vs_mewtwo.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G157 -V090
 
 $(MID_SUBDIR)/mus_rg_vs_trainer.s: %.s: %.mid
@@ -624,7 +624,7 @@ $(MID_SUBDIR)/mus_follow_me.s: %.s: %.mid
 $(MID_SUBDIR)/mus_vs_frontier_brain.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G115 -V090 -P1
 
-$(MID_SUBDIR)/mus_vs_falcomon.s: %.s: %.mid
+$(MID_SUBDIR)/mus_vs_mew.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G116 -V090
 
 $(MID_SUBDIR)/mus_vs_rayquaza.s: %.s: %.mid

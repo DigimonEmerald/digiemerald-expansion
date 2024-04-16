@@ -3664,7 +3664,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_CHIKURIMONIZER] =
     {
-        .name = _("Chikurimonizer"),
+        .name = _("Chikurizer"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
         .description = COMPOUND_STRING(
             "Loved by a certain\n"
@@ -4848,8 +4848,8 @@ const struct Item gItemsInfo[] =
 
     [ITEM_AGUMON_FAKE_EXPERTNITE_X] =
     {
-        .name = _("Agumon_fake_expertnite X"),
-        .pluralName = _("Agumon_fake_expertnites X"),
+        .name = _("Agumonnite X"),
+        .pluralName = _("Agumonnites X"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = sAgumon_fake_expertniteDesc,
@@ -4861,8 +4861,8 @@ const struct Item gItemsInfo[] =
 
     [ITEM_AGUMON_FAKE_EXPERTNITE_Y] =
     {
-        .name = _("Agumon_fake_expertnite Y"),
-        .pluralName = _("Agumon_fake_expertnites Y"),
+        .name = _("Agumonite Y"),
+        .pluralName = _("Agumonites Y"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = sAgumon_fake_expertniteDesc,
@@ -5961,7 +5961,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_FALCOMONNIUM_Z] =
     {
-        .name = _("Falcomonnium Z"),
+        .name = _("Falcomonium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(

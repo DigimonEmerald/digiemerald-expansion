@@ -446,7 +446,7 @@ static const u16 sBetamon_xFormSpeciesIdTable[] = {
 #endif //P_FAMILY_BETAMON_X
 
 #if P_FAMILY_BULUCOMON
-static const u16 sMrMimeFormSpeciesIdTable[] = {
+static const u16 sBulucomonFormSpeciesIdTable[] = {
     SPECIES_BULUCOMON,
 #if P_GALARIAN_FORMS
     SPECIES_BULUCOMON_GALARIAN,

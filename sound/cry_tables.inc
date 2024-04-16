@@ -329,7 +329,7 @@ gCryTable::
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_MimeJr
 .endif @ P_GEN_4_CROSS_EVOS
-	cry Cry_MrMime
+	cry Cry_Bulucomon
 .if P_GALARIAN_FORMS == TRUE
 	cry Cry_MrRime
 .endif @ P_GALARIAN_FORMS
@@ -2755,7 +2755,7 @@ gCryTable_Reverse::
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_MimeJr
 .endif @ P_GEN_4_CROSS_EVOS
-	cry_reverse Cry_MrMime
+	cry_reverse Cry_Bulucomon
 .if P_GALARIAN_FORMS == TRUE
 	cry_reverse Cry_MrRime
 .endif @ P_GALARIAN_FORMS

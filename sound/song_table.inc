@@ -473,7 +473,7 @@ gSongTable::
 	song mus_b_factory, 0, 0
 	song mus_vs_rayquaza, 0, 0
 	song mus_vs_frontier_brain, 0, 0
-	song mus_vs_falcomon, 0, 0
+	song mus_vs_mew, 0, 0
 	song mus_b_dome_lobby, 0, 0
 	song mus_vs_wild, 0, 0
 	song mus_vs_aqua_magma, 0, 0
@@ -553,7 +553,7 @@ gSongTable::
 	song mus_rg_sevii_67, 0, 0
 	song mus_rg_poke_flute, 2, 2
 	song mus_rg_vs_deoxys, 0, 0
-	song mus_rg_vs_agumon_fake_expert, 0, 0
+	song mus_rg_vs_mewtwo, 0, 0
 	song mus_rg_vs_legend, 0, 0
 	song mus_rg_encounter_gym_leader, 0, 0
 	song mus_rg_encounter_deoxys, 0, 0

@@ -402,7 +402,7 @@
 #define MUS_B_FACTORY               469 // MUS_B_FACTORY
 #define MUS_VS_RAYQUAZA             470 // MUS_VS_REKKU         // Identical to MUS_VS_KYOGRE_GROUDON.
 #define MUS_VS_FRONTIER_BRAIN       471 // MUS_VS_FRONT
-#define MUS_VS_FALCOMON                  472 // MUS_VS_FALCOMON
+#define MUS_VS_MEW                  472 // MUS_VS_MEW
 #define MUS_B_DOME_LOBBY            473 // MUS_B_DOME1
 #define MUS_VS_WILD                 474 // MUS_BATTLE27
 #define MUS_VS_AQUA_MAGMA           475 // MUS_BATTLE31
@@ -483,7 +483,7 @@
 #define MUS_RG_SEVII_67             549 // MUS_RG_NANA67
 #define MUS_RG_POKE_FLUTE           550 // MUS_RG_POKEFUE
 #define MUS_RG_VS_DEOXYS            551 // MUS_RG_VS_DEO
-#define MUS_RG_VS_AGUMON_FAKE_EXPERT            552 // MUS_RG_VS_MYU2
+#define MUS_RG_VS_MEWTWO            552 // MUS_RG_VS_MYU2
 #define MUS_RG_VS_LEGEND            553 // MUS_RG_VS_DEN
 #define MUS_RG_ENCOUNTER_GYM_LEADER 554 // MUS_RG_EXEYE
 #define MUS_RG_ENCOUNTER_DEOXYS     555 // MUS_RG_DEOEYE
