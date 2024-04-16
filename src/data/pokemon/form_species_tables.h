@@ -467,15 +467,15 @@ static const u16 sScizorFormSpeciesIdTable[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BURGERMON
 
-#if P_FAMILY_PINSIR
-static const u16 sPinsirFormSpeciesIdTable[] = {
-    SPECIES_PINSIR,
+#if P_FAMILY_TYUTYUMON
+static const u16 sTyutyumonFormSpeciesIdTable[] = {
+    SPECIES_TYUTYUMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_PINSIR_MEGA,
+    SPECIES_TYUTYUMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_PINSIR
+#endif //P_FAMILY_TYUTYUMON
 
 #if P_FAMILY_TAUROS
 static const u16 sTaurosFormSpeciesIdTable[] = {

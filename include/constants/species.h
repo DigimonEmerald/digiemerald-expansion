@@ -128,7 +128,7 @@
 #define SPECIES_SAMUAGUMON                                    124
 #define SPECIES_CANDLEMON                              125
 #define SPECIES_CHIKURIMON                                  126
-#define SPECIES_PINSIR                                  127
+#define SPECIES_TYUTYUMON                                  127
 #define SPECIES_TAUROS                                  128
 #define SPECIES_MAGIKARP                                129
 #define SPECIES_GYARADOS                                130
@@ -974,7 +974,7 @@
 #define SPECIES_PICKMON_SILVER_MEGA                            913
 #define SPECIES_TSUMEMON_MEGA                             914
 #define SPECIES_BETAMON_X_MEGA                         915
-#define SPECIES_PINSIR_MEGA                             916
+#define SPECIES_TYUTYUMON_MEGA                             916
 #define SPECIES_GYARADOS_MEGA                           917
 #define SPECIES_AERODACTYL_MEGA                         918
 #define SPECIES_MEWTWO_MEGA_X                           919

@@ -164,14 +164,14 @@ static const struct FormChange sScizorFormChangeTable[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BURGERMON
 
-#if P_FAMILY_PINSIR
-static const struct FormChange sPinsirFormChangeTable[] = {
+#if P_FAMILY_TYUTYUMON
+static const struct FormChange sTyutyumonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_PINSIR_MEGA, ITEM_PINSIRITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_TYUTYUMON_MEGA, ITEM_TYUTYUMONITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_PINSIR
+#endif //P_FAMILY_TYUTYUMON
 
 #if P_FAMILY_MAGIKARP
 static const struct FormChange sGyaradosFormChangeTable[] = {

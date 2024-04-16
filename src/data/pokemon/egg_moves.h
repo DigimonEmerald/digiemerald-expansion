@@ -1146,8 +1146,8 @@ const u16 gEggMoves[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_CHIKURIMON
 
-#if P_FAMILY_PINSIR
-    egg_moves(PINSIR,
+#if P_FAMILY_TYUTYUMON
+    egg_moves(TYUTYUMON,
         MOVE_FURY_ATTACK,
         MOVE_FLAIL,
         MOVE_FEINT_ATTACK,
@@ -1157,7 +1157,7 @@ const u16 gEggMoves[] = {
         MOVE_ME_FIRST,
         MOVE_BUG_BITE,
         MOVE_SUPERPOWER),
-#endif //P_FAMILY_PINSIR
+#endif //P_FAMILY_TYUTYUMON
 
 #if P_FAMILY_TAUROS
 #if P_PALDEAN_FORMS

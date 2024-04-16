@@ -2137,24 +2137,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_CHIKURIMON
 
-#if P_FAMILY_PINSIR
-    const u32 gMonFrontPic_Pinsir[] = INCBIN_U32("graphics/pokemon/pinsir/anim_front.4bpp.lz");
-    const u32 gMonPalette_Pinsir[] = INCBIN_U32("graphics/pokemon/pinsir/normal.gbapal.lz");
-    const u32 gMonBackPic_Pinsir[] = INCBIN_U32("graphics/pokemon/pinsir/back.4bpp.lz");
-    const u32 gMonShinyPalette_Pinsir[] = INCBIN_U32("graphics/pokemon/pinsir/shiny.gbapal.lz");
-    const u8 gMonIcon_Pinsir[] = INCBIN_U8("graphics/pokemon/pinsir/icon.4bpp");
+#if P_FAMILY_TYUTYUMON
+    const u32 gMonFrontPic_Tyutyumon[] = INCBIN_U32("graphics/pokemon/tyutyumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Tyutyumon[] = INCBIN_U32("graphics/pokemon/tyutyumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Tyutyumon[] = INCBIN_U32("graphics/pokemon/tyutyumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Tyutyumon[] = INCBIN_U32("graphics/pokemon/tyutyumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Tyutyumon[] = INCBIN_U8("graphics/pokemon/tyutyumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Pinsir[] = INCBIN_U8("graphics/pokemon/pinsir/footprint.1bpp");
+    const u8 gMonFootprint_Tyutyumon[] = INCBIN_U8("graphics/pokemon/tyutyumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_PinsirMega[] = INCBIN_U32("graphics/pokemon/pinsir/mega/front.4bpp.lz");
-    const u32 gMonPalette_PinsirMega[] = INCBIN_U32("graphics/pokemon/pinsir/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_PinsirMega[] = INCBIN_U32("graphics/pokemon/pinsir/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_PinsirMega[] = INCBIN_U32("graphics/pokemon/pinsir/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_PinsirMega[] = INCBIN_U8("graphics/pokemon/pinsir/mega/icon.4bpp");
+    const u32 gMonFrontPic_TyutyumonMega[] = INCBIN_U32("graphics/pokemon/tyutyumon/mega/front.4bpp.lz");
+    const u32 gMonPalette_TyutyumonMega[] = INCBIN_U32("graphics/pokemon/tyutyumon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_TyutyumonMega[] = INCBIN_U32("graphics/pokemon/tyutyumon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_TyutyumonMega[] = INCBIN_U32("graphics/pokemon/tyutyumon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_TyutyumonMega[] = INCBIN_U8("graphics/pokemon/tyutyumon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_PINSIR
+#endif //P_FAMILY_TYUTYUMON
 
 #if P_FAMILY_TAUROS
     const u32 gMonFrontPic_Tauros[] = INCBIN_U32("graphics/pokemon/tauros/anim_front.4bpp.lz");

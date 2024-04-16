@@ -64,7 +64,7 @@ SINGLE_BATTLE_TEST("Mold Breaker, Teravolt and Turboblaze ignore Battle Armor an
     u32 j;
     static const u32 pokemonPlayer[][2] =
     {
-        {SPECIES_PINSIR, ABILITY_MOLD_BREAKER},
+        {SPECIES_TYUTYUMON, ABILITY_MOLD_BREAKER},
         {SPECIES_ZEKROM, ABILITY_TERAVOLT},
         {SPECIES_KYUREM_WHITE,  ABILITY_TURBOBLAZE},
     };

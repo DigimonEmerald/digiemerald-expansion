@@ -60,13 +60,13 @@ SINGLE_BATTLE_TEST("Hyper Cutter is ignored by Mold Breaker")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_GROWL].effect == EFFECT_ATTACK_DOWN);
-        PLAYER(SPECIES_PINSIR) { Ability(ABILITY_MOLD_BREAKER); }
+        PLAYER(SPECIES_TYUTYUMON) { Ability(ABILITY_MOLD_BREAKER); }
         OPPONENT(SPECIES_VIXIMON) { Ability(ABILITY_HYPER_CUTTER); }
     } WHEN {
         TURN { MOVE(player, MOVE_GROWL); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_MOLD_BREAKER);
-        MESSAGE("Pinsir breaks the mold!");
+        MESSAGE("Tyutyumon breaks the mold!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GROWL, player);
         MESSAGE("Foe Viximon's Attack fell!");
         NONE_OF {

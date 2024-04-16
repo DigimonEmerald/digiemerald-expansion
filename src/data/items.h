@@ -4801,14 +4801,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_PINSIRITE] =
+    [ITEM_TYUTYUMONITE] =
     {
-        .name = _("Pinsirite"),
+        .name = _("Tyutyumonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Pinsir to Mega\n"
+            "Tyutyumon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

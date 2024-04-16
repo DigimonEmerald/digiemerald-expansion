@@ -370,12 +370,12 @@ gCryTable::
 	cry Cry_Magmortar
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_CHIKURIMON
-.if P_FAMILY_PINSIR == TRUE
-	cry Cry_Pinsir
+.if P_FAMILY_TYUTYUMON == TRUE
+	cry Cry_Tyutyumon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_PinsirMega
+	cry Cry_TyutyumonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_PINSIR
+.endif @ P_FAMILY_TYUTYUMON
 .if P_FAMILY_TAUROS == TRUE
 	cry Cry_Tauros
 .endif @ P_FAMILY_TAUROS
@@ -2796,12 +2796,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Magmortar
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_CHIKURIMON
-.if P_FAMILY_PINSIR == TRUE
-	cry_reverse Cry_Pinsir
+.if P_FAMILY_TYUTYUMON == TRUE
+	cry_reverse Cry_Tyutyumon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_PinsirMega
+	cry_reverse Cry_TyutyumonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_PINSIR
+.endif @ P_FAMILY_TYUTYUMON
 .if P_FAMILY_TAUROS == TRUE
 	cry_reverse Cry_Tauros
 .endif @ P_FAMILY_TAUROS

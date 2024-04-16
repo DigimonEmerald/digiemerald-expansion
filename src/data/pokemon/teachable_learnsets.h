@@ -7071,8 +7071,8 @@ static const u16 sMagmortarTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_CHIKURIMON
 
-#if P_FAMILY_PINSIR
-static const u16 sPinsirTeachableLearnset[] = {
+#if P_FAMILY_TYUTYUMON
+static const u16 sTyutyumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -7104,7 +7104,7 @@ static const u16 sPinsirTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PINSIR
+#endif //P_FAMILY_TYUTYUMON
 
 #if P_FAMILY_TAUROS
 static const u16 sTaurosTeachableLearnset[] = {

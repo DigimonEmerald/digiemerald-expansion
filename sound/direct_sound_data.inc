@@ -1261,17 +1261,17 @@ Cry_Magmortar::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_CHIKURIMON
 
-.if P_FAMILY_PINSIR == TRUE
+.if P_FAMILY_TYUTYUMON == TRUE
 	.align 2
-Cry_Pinsir::
-	.incbin "sound/direct_sound_samples/cries/pinsir.bin"
+Cry_Tyutyumon::
+	.incbin "sound/direct_sound_samples/cries/tyutyumon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_PinsirMega::
-	.incbin "sound/direct_sound_samples/cries/pinsir_mega.bin"
+Cry_TyutyumonMega::
+	.incbin "sound/direct_sound_samples/cries/tyutyumon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_PINSIR
+.endif @ P_FAMILY_TYUTYUMON
 
 .if P_FAMILY_TAUROS == TRUE
 	.align 2

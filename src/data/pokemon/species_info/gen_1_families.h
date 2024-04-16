@@ -12889,8 +12889,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_CHIKURIMON
 
-#if P_FAMILY_PINSIR
-    [SPECIES_PINSIR] =
+#if P_FAMILY_TYUTYUMON
+    [SPECIES_TYUTYUMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 125,
@@ -12909,43 +12909,43 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_HYPER_CUTTER, ABILITY_MOLD_BREAKER, ABILITY_MOXIE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Pinsir"),
-        .cryId = CRY_PINSIR,
-        .natDexNum = NATIONAL_DEX_PINSIR,
+        .speciesName = _("Tyutyumon"),
+        .cryId = CRY_TYUTYUMON,
+        .natDexNum = NATIONAL_DEX_TYUTYUMON,
         .categoryName = _("Stag Beetle"),
         .height = 15,
         .weight = 550,
         .description = COMPOUND_STRING(
             "Their pincers are strong enough to\n"
             "shatter thick logs. Because they dislike\n"
-            "cold, Pinsir burrow and sleep under\n"
+            "cold, Tyutyumon burrow and sleep under\n"
             "the ground on chilly nights."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Pinsir,
+        .frontPic = gMonFrontPic_Tyutyumon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_Pinsir,
+        .frontAnimFrames = sAnims_Tyutyumon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Pinsir,
+        .backPic = gMonBackPic_Tyutyumon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Pinsir,
-        .shinyPalette = gMonShinyPalette_Pinsir,
-        .iconSprite = gMonIcon_Pinsir,
+        .palette = gMonPalette_Tyutyumon,
+        .shinyPalette = gMonShinyPalette_Tyutyumon,
+        .iconSprite = gMonIcon_Tyutyumon,
         .iconPalIndex = 2,
-        FOOTPRINT(Pinsir)
-        .levelUpLearnset = sPinsirLevelUpLearnset,
-        .teachableLearnset = sPinsirTeachableLearnset,
-        .formSpeciesIdTable = sPinsirFormSpeciesIdTable,
-        .formChangeTable = sPinsirFormChangeTable,
+        FOOTPRINT(Tyutyumon)
+        .levelUpLearnset = sTyutyumonLevelUpLearnset,
+        .teachableLearnset = sTyutyumonTeachableLearnset,
+        .formSpeciesIdTable = sTyutyumonFormSpeciesIdTable,
+        .formChangeTable = sTyutyumonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_PINSIR_MEGA] =
+    [SPECIES_TYUTYUMON_MEGA] =
     {
         .baseHP        = 65,
         .baseAttack    = 155,
@@ -12964,9 +12964,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_AERILATE, ABILITY_AERILATE, ABILITY_AERILATE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Pinsir"),
-        .cryId = CRY_PINSIR_MEGA,
-        .natDexNum = NATIONAL_DEX_PINSIR,
+        .speciesName = _("Tyutyumon"),
+        .cryId = CRY_TYUTYUMON_MEGA,
+        .natDexNum = NATIONAL_DEX_TYUTYUMON,
         .categoryName = _("Stag Beetle"),
         .height = 17,
         .weight = 590,
@@ -12979,29 +12979,29 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 2,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_PinsirMega,
+        .frontPic = gMonFrontPic_TyutyumonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_PinsirMega,
+        .frontAnimFrames = sAnims_TyutyumonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 4,
-        .backPic = gMonBackPic_PinsirMega,
+        .backPic = gMonBackPic_TyutyumonMega,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_PinsirMega,
-        .shinyPalette = gMonShinyPalette_PinsirMega,
-        .iconSprite = gMonIcon_PinsirMega,
+        .palette = gMonPalette_TyutyumonMega,
+        .shinyPalette = gMonShinyPalette_TyutyumonMega,
+        .iconSprite = gMonIcon_TyutyumonMega,
         .iconPalIndex = 2,
-        FOOTPRINT(Pinsir)
+        FOOTPRINT(Tyutyumon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sPinsirLevelUpLearnset,
-        .teachableLearnset = sPinsirTeachableLearnset,
-        .formSpeciesIdTable = sPinsirFormSpeciesIdTable,
-        .formChangeTable = sPinsirFormChangeTable,
+        .levelUpLearnset = sTyutyumonLevelUpLearnset,
+        .teachableLearnset = sTyutyumonTeachableLearnset,
+        .formSpeciesIdTable = sTyutyumonFormSpeciesIdTable,
+        .formChangeTable = sTyutyumonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_PINSIR
+#endif //P_FAMILY_TYUTYUMON
 
 #if P_FAMILY_TAUROS
     [SPECIES_TAUROS] =

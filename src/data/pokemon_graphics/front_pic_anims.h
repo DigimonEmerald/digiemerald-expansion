@@ -1928,8 +1928,8 @@ static const union AnimCmd sAnim_Magmortar_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_CHIKURIMON
 
-#if P_FAMILY_PINSIR
-static const union AnimCmd sAnim_Pinsir_1[] =
+#if P_FAMILY_TYUTYUMON
+static const union AnimCmd sAnim_Tyutyumon_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 10),
@@ -1940,9 +1940,9 @@ static const union AnimCmd sAnim_Pinsir_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(PinsirMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(TyutyumonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_PINSIR
+#endif //P_FAMILY_TYUTYUMON
 
 #if P_FAMILY_TAUROS
 static const union AnimCmd sAnim_Tauros_1[] =
@@ -10629,12 +10629,12 @@ SINGLE_ANIMATION(Chikurimon);
 SINGLE_ANIMATION(Magmortar);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_CHIKURIMON
-#if P_FAMILY_PINSIR
-SINGLE_ANIMATION(Pinsir);
+#if P_FAMILY_TYUTYUMON
+SINGLE_ANIMATION(Tyutyumon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(PinsirMega);
+SINGLE_ANIMATION(TyutyumonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_PINSIR
+#endif //P_FAMILY_TYUTYUMON
 #if P_FAMILY_TAUROS
 SINGLE_ANIMATION(Tauros);
 #if P_PALDEAN_FORMS
