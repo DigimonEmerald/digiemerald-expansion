@@ -27,7 +27,7 @@
 #include "constants/moves.h"
 #include "constants/region_map_sections.h"
 
-#define IS_DITTO(species) (gSpeciesInfo[species].eggGroups[0] == EGG_GROUP_DITTO || gSpeciesInfo[species].eggGroups[1] == EGG_GROUP_DITTO)
+#define IS_CRABMON(species) (gSpeciesInfo[species].eggGroups[0] == EGG_GROUP_CRABMON || gSpeciesInfo[species].eggGroups[1] == EGG_GROUP_CRABMON)
 
 static void ClearDaycareMonMail(struct DaycareMail *mail);
 static void SetInitialEggData(struct Pokemon *mon, u16 species, struct DayCare *daycare);
@@ -490,7 +490,7 @@ static s32 GetParentToInheritNature(struct DayCare *daycare)
     for (i = 0; i < DAYCARE_MON_COUNT; i++)
     {
         if (ItemId_GetHoldEffect(GetBoxMonData(&daycare->mons[i].mon, MON_DATA_HELD_ITEM)) == HOLD_EFFECT_PREVENT_EVOLVE
-            && (P_NATURE_INHERITANCE != GEN_3 || GetBoxMonGender(&daycare->mons[i].mon) == MON_FEMALE || IS_DITTO(GetBoxMonData(&daycare->mons[i].mon, MON_DATA_SPECIES))))
+            && (P_NATURE_INHERITANCE != GEN_3 || GetBoxMonGender(&daycare->mons[i].mon) == MON_FEMALE || IS_CRABMON(GetBoxMonData(&daycare->mons[i].mon, MON_DATA_SPECIES))))
         {
             slot = i;
             numWithEverstone++;
@@ -699,7 +699,7 @@ static void InheritPokeball(struct Pokemon *egg, struct BoxPokemon *father, stru
     {
         if (fatherSpecies == motherSpecies)
             inheritBall = (Random() % 2 == 0 ? motherBall : fatherBall);
-        else if (motherSpecies != SPECIES_DITTO)
+        else if (motherSpecies != SPECIES_CRABMON)
             inheritBall = motherBall;
         else
             inheritBall = fatherBall;
@@ -718,7 +718,7 @@ static void InheritAbility(struct Pokemon *egg, struct BoxPokemon *father, struc
     u8 motherSpecies = GetBoxMonData(mother, MON_DATA_SPECIES);
     u8 inheritAbility = motherAbility;
 
-    if (motherSpecies == SPECIES_DITTO)
+    if (motherSpecies == SPECIES_CRABMON)
     {
         if (P_ABILITY_INHERITANCE >= GEN_6)
             inheritAbility = fatherAbility;
@@ -1029,7 +1029,7 @@ static u16 DetermineEggSpeciesAndParentSlots(struct DayCare *daycare, u8 *parent
     for (i = 0; i < DAYCARE_MON_COUNT; i++)
     {
         species[i] = GetBoxMonData(&daycare->mons[i].mon, MON_DATA_SPECIES);
-        if (species[i] == SPECIES_DITTO)
+        if (species[i] == SPECIES_CRABMON)
         {
             parentSlots[0] = i ^ 1;
             parentSlots[1] = i;
@@ -1046,9 +1046,9 @@ static u16 DetermineEggSpeciesAndParentSlots(struct DayCare *daycare, u8 *parent
         eggSpecies = SPECIES_PUSUMON;
     else if (eggSpecies == SPECIES_ILLUMISE && daycare->offspringPersonality & EGG_GENDER_MALE)
         eggSpecies = SPECIES_VOLBEAT;
-    else if (P_PUSUMON_DITTO_BREED >= GEN_5 && eggSpecies == SPECIES_PUSUMON && !(daycare->offspringPersonality & EGG_GENDER_MALE))
+    else if (P_PUSUMON_CRABMON_BREED >= GEN_5 && eggSpecies == SPECIES_PUSUMON && !(daycare->offspringPersonality & EGG_GENDER_MALE))
         eggSpecies = SPECIES_PUNIMON;
-    else if (P_PUSUMON_DITTO_BREED >= GEN_5 && eggSpecies == SPECIES_VOLBEAT && !(daycare->offspringPersonality & EGG_GENDER_MALE))
+    else if (P_PUSUMON_CRABMON_BREED >= GEN_5 && eggSpecies == SPECIES_VOLBEAT && !(daycare->offspringPersonality & EGG_GENDER_MALE))
         eggSpecies = SPECIES_ILLUMISE;
     else if (eggSpecies == SPECIES_MANAPHY)
         eggSpecies = SPECIES_PHIONE;
@@ -1064,12 +1064,12 @@ static u16 DetermineEggSpeciesAndParentSlots(struct DayCare *daycare, u8 *parent
     else if (eggSpecies == SPECIES_TOGEDEMARU_TOTEM)
         eggSpecies = SPECIES_TOGEDEMARU;
 
-    // Make Ditto the "mother" slot if the other daycare mon is male.
-    if (species[parentSlots[1]] == SPECIES_DITTO && GetBoxMonGender(&daycare->mons[parentSlots[0]].mon) != MON_FEMALE)
+    // Make Crabmon the "mother" slot if the other daycare mon is male.
+    if (species[parentSlots[1]] == SPECIES_CRABMON && GetBoxMonGender(&daycare->mons[parentSlots[0]].mon) != MON_FEMALE)
     {
-        u8 ditto = parentSlots[1];
+        u8 crabmon = parentSlots[1];
         parentSlots[1] = parentSlots[0];
-        parentSlots[0] = ditto;
+        parentSlots[0] = crabmon;
     }
 
     return eggSpecies;
@@ -1313,19 +1313,19 @@ u8 GetDaycareCompatibilityScore(struct DayCare *daycare)
     // check unbreedable egg group
     if (eggGroups[0][0] == EGG_GROUP_NO_EGGS_DISCOVERED || eggGroups[1][0] == EGG_GROUP_NO_EGGS_DISCOVERED)
         return PARENTS_INCOMPATIBLE;
-    // two Ditto can't breed
-    if (eggGroups[0][0] == EGG_GROUP_DITTO && eggGroups[1][0] == EGG_GROUP_DITTO)
+    // two Crabmon can't breed
+    if (eggGroups[0][0] == EGG_GROUP_CRABMON && eggGroups[1][0] == EGG_GROUP_CRABMON)
         return PARENTS_INCOMPATIBLE;
 
-    // one parent is Ditto
-    if (eggGroups[0][0] == EGG_GROUP_DITTO || eggGroups[1][0] == EGG_GROUP_DITTO)
+    // one parent is Crabmon
+    if (eggGroups[0][0] == EGG_GROUP_CRABMON || eggGroups[1][0] == EGG_GROUP_CRABMON)
     {
         if (trainerIds[0] == trainerIds[1])
             return PARENTS_LOW_COMPATIBILITY;
 
         return PARENTS_MED_COMPATIBILITY;
     }
-    // neither parent is Ditto
+    // neither parent is Crabmon
     else
     {
         if (genders[0] == genders[1])

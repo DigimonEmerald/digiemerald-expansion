@@ -3854,12 +3854,12 @@ static const struct LevelUpMove sCoronamonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_CORONAMON
 
-#if P_FAMILY_DITTO
-static const struct LevelUpMove sDittoLevelUpLearnset[] = {
+#if P_FAMILY_CRABMON
+static const struct LevelUpMove sCrabmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TRANSFORM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_DITTO
+#endif //P_FAMILY_CRABMON
 
 #if P_FAMILY_EEVEE
 static const struct LevelUpMove sEeveeLevelUpLearnset[] = {

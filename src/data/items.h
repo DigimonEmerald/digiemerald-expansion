@@ -6240,7 +6240,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_METAL_POWDER,
         .description = COMPOUND_STRING(
             "A hold item that\n"
-            "raises Ditto's\n"
+            "raises Crabmon's\n"
             "Defense."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -6256,7 +6256,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_QUICK_POWDER,
         .description = COMPOUND_STRING(
             "An item to be held\n"
-            "by Ditto. This odd\n"
+            "by Crabmon. This odd\n"
             "powder boosts Speed."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

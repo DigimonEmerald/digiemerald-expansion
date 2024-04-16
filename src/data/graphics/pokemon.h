@@ -2240,16 +2240,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_CORONAMON
 
-#if P_FAMILY_DITTO
-    const u32 gMonFrontPic_Ditto[] = INCBIN_U32("graphics/pokemon/ditto/anim_front.4bpp.lz");
-    const u32 gMonPalette_Ditto[] = INCBIN_U32("graphics/pokemon/ditto/normal.gbapal.lz");
-    const u32 gMonBackPic_Ditto[] = INCBIN_U32("graphics/pokemon/ditto/back.4bpp.lz");
-    const u32 gMonShinyPalette_Ditto[] = INCBIN_U32("graphics/pokemon/ditto/shiny.gbapal.lz");
-    const u8 gMonIcon_Ditto[] = INCBIN_U8("graphics/pokemon/ditto/icon.4bpp");
+#if P_FAMILY_CRABMON
+    const u32 gMonFrontPic_Crabmon[] = INCBIN_U32("graphics/pokemon/crabmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Crabmon[] = INCBIN_U32("graphics/pokemon/crabmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Crabmon[] = INCBIN_U32("graphics/pokemon/crabmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Crabmon[] = INCBIN_U32("graphics/pokemon/crabmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Crabmon[] = INCBIN_U8("graphics/pokemon/crabmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Ditto[] = INCBIN_U8("graphics/pokemon/ditto/footprint.1bpp");
+    const u8 gMonFootprint_Crabmon[] = INCBIN_U8("graphics/pokemon/crabmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_DITTO
+#endif //P_FAMILY_CRABMON
 
 #if P_FAMILY_EEVEE
     const u32 gMonFrontPic_Eevee[] = INCBIN_U32("graphics/pokemon/eevee/anim_front.4bpp.lz");

@@ -2000,8 +2000,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(CoronamonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_CORONAMON
 
-#if P_FAMILY_DITTO
-static const union AnimCmd sAnim_Ditto_1[] =
+#if P_FAMILY_CRABMON
+static const union AnimCmd sAnim_Crabmon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -2009,7 +2009,7 @@ static const union AnimCmd sAnim_Ditto_1[] =
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_DITTO
+#endif //P_FAMILY_CRABMON
 
 #if P_FAMILY_EEVEE
 static const union AnimCmd sAnim_Eevee_1[] =
@@ -10654,9 +10654,9 @@ SINGLE_ANIMATION(Coronamon);
 SINGLE_ANIMATION(CoronamonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_CORONAMON
-#if P_FAMILY_DITTO
-SINGLE_ANIMATION(Ditto);
-#endif //P_FAMILY_DITTO
+#if P_FAMILY_CRABMON
+SINGLE_ANIMATION(Crabmon);
+#endif //P_FAMILY_CRABMON
 #if P_FAMILY_EEVEE
 SINGLE_ANIMATION(Eevee);
 #if P_GIGANTAMAX_FORMS

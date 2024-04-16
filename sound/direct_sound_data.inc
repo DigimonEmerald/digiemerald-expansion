@@ -1301,11 +1301,11 @@ Cry_Coronamon::
 	.incbin "sound/direct_sound_samples/cries/coronamon.bin"
 .endif @ P_FAMILY_CORONAMON
 
-.if P_FAMILY_DITTO == TRUE
+.if P_FAMILY_CRABMON == TRUE
 	.align 2
-Cry_Ditto::
-	.incbin "sound/direct_sound_samples/cries/ditto.bin"
-.endif @ P_FAMILY_DITTO
+Cry_Crabmon::
+	.incbin "sound/direct_sound_samples/cries/crabmon.bin"
+.endif @ P_FAMILY_CRABMON
 
 .if P_FAMILY_EEVEE == TRUE
 	.align 2

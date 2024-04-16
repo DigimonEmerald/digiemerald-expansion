@@ -7309,11 +7309,11 @@ static const u16 sCoronamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_CORONAMON
 
-#if P_FAMILY_DITTO
-static const u16 sDittoTeachableLearnset[] = {
+#if P_FAMILY_CRABMON
+static const u16 sCrabmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DITTO
+#endif //P_FAMILY_CRABMON
 
 #if P_FAMILY_EEVEE
 static const u16 sEeveeTeachableLearnset[] = {

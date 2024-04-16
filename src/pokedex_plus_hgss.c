@@ -190,7 +190,7 @@ static const u8 sText_Stats_eggGroup_WATER_3[] = _("WATER {CIRCLE_3}");
 static const u8 sText_Stats_eggGroup_MINERAL[] = _("MINERAL");
 static const u8 sText_Stats_eggGroup_AMORPHOUS[] = _("AMORPHOUS");
 static const u8 sText_Stats_eggGroup_WATER_2[] = _("WATER {CIRCLE_2}");
-static const u8 sText_Stats_eggGroup_DITTO[] = _("DITTO");
+static const u8 sText_Stats_eggGroup_CRABMON[] = _("CRABMON");
 static const u8 sText_Stats_eggGroup_DRAGON[] = _("DRAGON");
 static const u8 sText_Stats_eggGroup_NO_EGGS_DISCOVERED[] = _("---");
 static const u8 sText_Dex_SEEN[] = _("SEEN");
@@ -5790,8 +5790,8 @@ static void PrintStatsScreen_Left(u8 taskId)
         case EGG_GROUP_WATER_2     :
             StringCopy(gStringVar1, sText_Stats_eggGroup_WATER_2);
             break;
-        case EGG_GROUP_DITTO       :
-            StringCopy(gStringVar1, sText_Stats_eggGroup_DITTO);
+        case EGG_GROUP_CRABMON       :
+            StringCopy(gStringVar1, sText_Stats_eggGroup_CRABMON);
             break;
         case EGG_GROUP_DRAGON      :
             StringCopy(gStringVar1, sText_Stats_eggGroup_DRAGON);
@@ -5841,8 +5841,8 @@ static void PrintStatsScreen_Left(u8 taskId)
             case EGG_GROUP_WATER_2     :
                 StringCopy(gStringVar2, sText_Stats_eggGroup_WATER_2);
                 break;
-            case EGG_GROUP_DITTO       :
-                StringCopy(gStringVar2, sText_Stats_eggGroup_DITTO);
+            case EGG_GROUP_CRABMON       :
+                StringCopy(gStringVar2, sText_Stats_eggGroup_CRABMON);
                 break;
             case EGG_GROUP_DRAGON      :
                 StringCopy(gStringVar2, sText_Stats_eggGroup_DRAGON);

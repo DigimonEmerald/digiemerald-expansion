@@ -389,9 +389,9 @@ gCryTable::
 .if P_FAMILY_CORONAMON == TRUE
 	cry Cry_Coronamon
 .endif @ P_FAMILY_CORONAMON
-.if P_FAMILY_DITTO == TRUE
-	cry Cry_Ditto
-.endif @ P_FAMILY_DITTO
+.if P_FAMILY_CRABMON == TRUE
+	cry Cry_Crabmon
+.endif @ P_FAMILY_CRABMON
 .if P_FAMILY_EEVEE == TRUE
 	cry Cry_Eevee
 	cry Cry_Vaporeon
@@ -2815,9 +2815,9 @@ gCryTable_Reverse::
 .if P_FAMILY_CORONAMON == TRUE
 	cry_reverse Cry_Coronamon
 .endif @ P_FAMILY_CORONAMON
-.if P_FAMILY_DITTO == TRUE
-	cry_reverse Cry_Ditto
-.endif @ P_FAMILY_DITTO
+.if P_FAMILY_CRABMON == TRUE
+	cry_reverse Cry_Crabmon
+.endif @ P_FAMILY_CRABMON
 .if P_FAMILY_EEVEE == TRUE
 	cry_reverse Cry_Eevee
 	cry_reverse Cry_Vaporeon

@@ -13517,8 +13517,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_CORONAMON
 
-#if P_FAMILY_DITTO
-    [SPECIES_DITTO] =
+#if P_FAMILY_CRABMON
+    [SPECIES_CRABMON] =
     {
         .baseHP        = 48,
         .baseAttack    = 48,
@@ -13536,17 +13536,17 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DITTO),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_CRABMON),
         .abilities = { ABILITY_LIMBER, ABILITY_NONE, ABILITY_IMPOSTER },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Ditto"),
-        .cryId = CRY_DITTO,
-        .natDexNum = NATIONAL_DEX_DITTO,
+        .speciesName = _("Crabmon"),
+        .cryId = CRY_CRABMON,
+        .natDexNum = NATIONAL_DEX_CRABMON,
         .categoryName = _("Transform"),
         .height = 3,
         .weight = 40,
         .description = COMPOUND_STRING(
-            "A Ditto rearranges its cell structure to\n"
+            "A Crabmon rearranges its cell structure to\n"
             "transform itself. However, if it tries to\n"
             "change based on its memory, it will get\n"
             "details wrong."),
@@ -13554,25 +13554,25 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 23,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Ditto,
+        .frontPic = gMonFrontPic_Crabmon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 15,
-        .frontAnimFrames = sAnims_Ditto,
+        .frontAnimFrames = sAnims_Crabmon,
         .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
-        .backPic = gMonBackPic_Ditto,
+        .backPic = gMonBackPic_Crabmon,
         .backPicSize = MON_COORDS_SIZE(48, 32),
         .backPicYOffset = 17,
         .backAnimId = BACK_ANIM_SHRINK_GROW,
-        .palette = gMonPalette_Ditto,
-        .shinyPalette = gMonShinyPalette_Ditto,
-        .iconSprite = gMonIcon_Ditto,
+        .palette = gMonPalette_Crabmon,
+        .shinyPalette = gMonShinyPalette_Crabmon,
+        .iconSprite = gMonIcon_Crabmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Ditto)
+        FOOTPRINT(Crabmon)
         .tmIlliterate = TRUE,
-        .levelUpLearnset = sDittoLevelUpLearnset,
-        .teachableLearnset = sDittoTeachableLearnset,
+        .levelUpLearnset = sCrabmonLevelUpLearnset,
+        .teachableLearnset = sCrabmonTeachableLearnset,
     },
-#endif //P_FAMILY_DITTO
+#endif //P_FAMILY_CRABMON
 
 #if P_FAMILY_EEVEE
     [SPECIES_EEVEE] =

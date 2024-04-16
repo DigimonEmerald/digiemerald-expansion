@@ -190,7 +190,7 @@ void PrepareBattlerForDynamax(u16 battlerId)
     gBattleStruct->choicedMove[battlerId] = MOVE_NONE;
 
     // Try Gigantamax form change.
-    if (!(gBattleMons[battlerId].status2 & STATUS2_TRANSFORMED)) // Ditto cannot Gigantamax.
+    if (!(gBattleMons[battlerId].status2 & STATUS2_TRANSFORMED)) // Crabmon cannot Gigantamax.
         TryBattleFormChange(battlerId, FORM_CHANGE_BATTLE_GIGANTAMAX);
 }
 

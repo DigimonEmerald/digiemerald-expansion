@@ -119,7 +119,7 @@ SINGLE_BATTLE_TEST("Imposter doesn't apply the heroic transformation message whe
     GIVEN {
         PLAYER(SPECIES_PALAFIN_ZERO) { Ability(ABILITY_ZERO_TO_HERO); }
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_DITTO) { Ability(ABILITY_IMPOSTER); }
+        OPPONENT(SPECIES_CRABMON) { Ability(ABILITY_IMPOSTER); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { SWITCH(player, 1); SWITCH(opponent, 1); }
@@ -128,10 +128,10 @@ SINGLE_BATTLE_TEST("Imposter doesn't apply the heroic transformation message whe
         ABILITY_POPUP(player, ABILITY_ZERO_TO_HERO);
         MESSAGE("Palafin underwent a heroic transformation!");
         ABILITY_POPUP(opponent, ABILITY_IMPOSTER);
-        MESSAGE("Foe Ditto transformed into Palafin using Imposter!");
+        MESSAGE("Foe Crabmon transformed into Palafin using Imposter!");
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_ZERO_TO_HERO);
-            MESSAGE("Foe Ditto underwent a heroic transformation!");
+            MESSAGE("Foe Crabmon underwent a heroic transformation!");
         }
     } THEN { EXPECT_EQ(player->species, SPECIES_PALAFIN_HERO); }
 }

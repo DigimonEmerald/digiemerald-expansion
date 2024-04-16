@@ -10563,7 +10563,7 @@
               {
                 "min_level": 38,
                 "max_level": 38,
-                "species": "SPECIES_DITTO"
+                "species": "SPECIES_CRABMON"
               },
               {
                 "min_level": 35,
@@ -10573,7 +10573,7 @@
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": "SPECIES_DITTO"
+                "species": "SPECIES_CRABMON"
               },
               {
                 "min_level": 40,
@@ -10583,7 +10583,7 @@
               {
                 "min_level": 41,
                 "max_level": 41,
-                "species": "SPECIES_DITTO"
+                "species": "SPECIES_CRABMON"
               },
               {
                 "min_level": 36,
@@ -10598,7 +10598,7 @@
               {
                 "min_level": 42,
                 "max_level": 42,
-                "species": "SPECIES_DITTO"
+                "species": "SPECIES_CRABMON"
               },
               {
                 "min_level": 38,
@@ -10608,7 +10608,7 @@
               {
                 "min_level": 43,
                 "max_level": 43,
-                "species": "SPECIES_DITTO"
+                "species": "SPECIES_CRABMON"
               },
               {
                 "min_level": 44,
@@ -10618,7 +10618,7 @@
               {
                 "min_level": 45,
                 "max_level": 45,
-                "species": "SPECIES_DITTO"
+                "species": "SPECIES_CRABMON"
               }
             ]
           }

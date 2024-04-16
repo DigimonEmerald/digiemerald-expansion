@@ -120,7 +120,7 @@
 #define P_FAMILY_CHUUMON                  P_GEN_1_POKEMON
 #define P_FAMILY_HAZYAGUMON                P_GEN_1_POKEMON
 #define P_FAMILY_CORONAMON                  P_GEN_1_POKEMON
-#define P_FAMILY_DITTO                   P_GEN_1_POKEMON
+#define P_FAMILY_CRABMON                   P_GEN_1_POKEMON
 #define P_FAMILY_EEVEE                   P_GEN_1_POKEMON
 #define P_FAMILY_PORYGON                 P_GEN_1_POKEMON
 #define P_FAMILY_OMANYTE                 P_GEN_1_POKEMON
