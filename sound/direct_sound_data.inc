@@ -1093,7 +1093,7 @@ Cry_Rhyperior::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_ARURAUMON
 
-.if P_FAMILY_CHANSEY == TRUE
+.if P_FAMILY_BEARMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
 Cry_Happiny::
@@ -1101,15 +1101,15 @@ Cry_Happiny::
 .endif @ P_GEN_4_CROSS_EVOS
 
 	.align 2
-Cry_Chansey::
-	.incbin "sound/direct_sound_samples/cries/chansey.bin"
+Cry_Bearmon::
+	.incbin "sound/direct_sound_samples/cries/bearmon.bin"
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
 Cry_Blissey::
 	.incbin "sound/direct_sound_samples/cries/blissey.bin"
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_CHANSEY
+.endif @ P_FAMILY_BEARMON
 
 .if P_FAMILY_TANGELA == TRUE
 	.align 2

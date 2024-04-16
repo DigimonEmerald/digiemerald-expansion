@@ -5931,7 +5931,7 @@ static const u16 sRhyperiorTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_ARURAUMON
 
-#if P_FAMILY_CHANSEY
+#if P_FAMILY_BEARMON
 #if P_GEN_4_CROSS_EVOS
 static const u16 sHappinyTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -5974,7 +5974,7 @@ static const u16 sHappinyTeachableLearnset[] = {
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const u16 sChanseyTeachableLearnset[] = {
+static const u16 sBearmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
@@ -6106,7 +6106,7 @@ static const u16 sBlisseyTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_CHANSEY
+#endif //P_FAMILY_BEARMON
 
 #if P_FAMILY_TANGELA
 static const u16 sTangelaTeachableLearnset[] = {

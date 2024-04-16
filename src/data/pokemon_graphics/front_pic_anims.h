@@ -1632,7 +1632,7 @@ static const union AnimCmd sAnim_Rhyperior_1[] =
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ARURAUMON
 
-#if P_FAMILY_CHANSEY
+#if P_FAMILY_BEARMON
 #if P_GEN_4_CROSS_EVOS
 static const union AnimCmd sAnim_Happiny_1[] =
 {
@@ -1643,7 +1643,7 @@ static const union AnimCmd sAnim_Happiny_1[] =
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const union AnimCmd sAnim_Chansey_1[] =
+static const union AnimCmd sAnim_Bearmon_1[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_FRAME(1, 30),
@@ -1660,7 +1660,7 @@ static const union AnimCmd sAnim_Blissey_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_CHANSEY
+#endif //P_FAMILY_BEARMON
 
 #if P_FAMILY_TANGELA
 static const union AnimCmd sAnim_Tangela_1[] =
@@ -10547,15 +10547,15 @@ SINGLE_ANIMATION(Bakomon);
 SINGLE_ANIMATION(Rhyperior);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_ARURAUMON
-#if P_FAMILY_CHANSEY
+#if P_FAMILY_BEARMON
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Happiny);
 #endif //P_GEN_4_CROSS_EVOS
-SINGLE_ANIMATION(Chansey);
+SINGLE_ANIMATION(Bearmon);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Blissey);
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_CHANSEY
+#endif //P_FAMILY_BEARMON
 #if P_FAMILY_TANGELA
 SINGLE_ANIMATION(Tangela);
 #if P_GEN_4_CROSS_EVOS

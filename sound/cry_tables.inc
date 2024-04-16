@@ -289,15 +289,15 @@ gCryTable::
 	cry Cry_Rhyperior
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_ARURAUMON
-.if P_FAMILY_CHANSEY == TRUE
+.if P_FAMILY_BEARMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Happiny
 .endif @ P_GEN_4_CROSS_EVOS
-	cry Cry_Chansey
+	cry Cry_Bearmon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Blissey
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_CHANSEY
+.endif @ P_FAMILY_BEARMON
 .if P_FAMILY_TANGELA == TRUE
 	cry Cry_Tangela
 .if P_GEN_4_CROSS_EVOS == TRUE
@@ -2715,15 +2715,15 @@ gCryTable_Reverse::
 	cry_reverse Cry_Rhyperior
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_ARURAUMON
-.if P_FAMILY_CHANSEY == TRUE
+.if P_FAMILY_BEARMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Happiny
 .endif @ P_GEN_4_CROSS_EVOS
-	cry_reverse Cry_Chansey
+	cry_reverse Cry_Bearmon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Blissey
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_CHANSEY
+.endif @ P_FAMILY_BEARMON
 .if P_FAMILY_TANGELA == TRUE
 	cry_reverse Cry_Tangela
 .if P_GEN_4_CROSS_EVOS == TRUE

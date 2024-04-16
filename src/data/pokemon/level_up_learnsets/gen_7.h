@@ -3275,7 +3275,7 @@ static const struct LevelUpMove sRhyperiorLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_ARURAUMON
 
-#if P_FAMILY_CHANSEY
+#if P_FAMILY_BEARMON
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sHappinyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
@@ -3287,7 +3287,7 @@ static const struct LevelUpMove sHappinyLevelUpLearnset[] = {
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const struct LevelUpMove sChanseyLevelUpLearnset[] = {
+static const struct LevelUpMove sBearmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
@@ -3332,7 +3332,7 @@ static const struct LevelUpMove sBlisseyLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_CHANSEY
+#endif //P_FAMILY_BEARMON
 
 #if P_FAMILY_TANGELA
 static const struct LevelUpMove sTangelaLevelUpLearnset[] = {

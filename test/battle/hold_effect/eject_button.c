@@ -136,7 +136,7 @@ SINGLE_BATTLE_TEST("Eject Button has no chance to activate after Dragon Tail")
     GIVEN {
         PLAYER(SPECIES_KOMMO_O);
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_BUTTON); }
-        OPPONENT(SPECIES_CHANSEY);
+        OPPONENT(SPECIES_BEARMON);
     } WHEN {
         TURN {
             MOVE(player, MOVE_DRAGON_TAIL);
@@ -144,10 +144,10 @@ SINGLE_BATTLE_TEST("Eject Button has no chance to activate after Dragon Tail")
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_TAIL, player);
-        MESSAGE("Foe Chansey was dragged out!");
+        MESSAGE("Foe Bearmon was dragged out!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-            MESSAGE("Foe Chansey is switched out with the Eject Button!");
+            MESSAGE("Foe Bearmon is switched out with the Eject Button!");
         }
     }
 }

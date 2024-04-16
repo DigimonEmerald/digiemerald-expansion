@@ -943,7 +943,7 @@ const u16 gEggMoves[] = {
         MOVE_GUARD_SPLIT),
 #endif //P_FAMILY_ARURAUMON
 
-#if P_FAMILY_CHANSEY
+#if P_FAMILY_BEARMON
 #if P_GEN_4_CROSS_EVOS
     egg_moves(HAPPINY,
         MOVE_PRESENT,
@@ -958,7 +958,7 @@ const u16 gEggMoves[] = {
         MOVE_NATURAL_GIFT,
         MOVE_ENDURE),
 #endif //P_GEN_4_CROSS_EVOS
-    egg_moves(CHANSEY,
+    egg_moves(BEARMON,
         MOVE_PRESENT,
         MOVE_METRONOME,
         MOVE_HEAL_BELL,
@@ -970,7 +970,7 @@ const u16 gEggMoves[] = {
         MOVE_NATURAL_GIFT,
         MOVE_ENDURE,
         MOVE_SEISMIC_TOSS),
-#endif //P_FAMILY_CHANSEY
+#endif //P_FAMILY_BEARMON
 
 #if P_FAMILY_TANGELA
     egg_moves(TANGELA,

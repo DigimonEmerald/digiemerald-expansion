@@ -105,7 +105,7 @@
 #define P_FAMILY_ARCADIAMON_ROOKIE               P_GEN_1_POKEMON
 #define P_FAMILY_ARGOMON_ROOKIE                 P_GEN_1_POKEMON
 #define P_FAMILY_ARURAUMON                 P_GEN_1_POKEMON
-#define P_FAMILY_CHANSEY                 P_GEN_1_POKEMON
+#define P_FAMILY_BEARMON                 P_GEN_1_POKEMON
 #define P_FAMILY_TANGELA                 P_GEN_1_POKEMON
 #define P_FAMILY_KANGASKHAN              P_GEN_1_POKEMON
 #define P_FAMILY_HORSEA                  P_GEN_1_POKEMON

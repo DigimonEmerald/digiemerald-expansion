@@ -217,7 +217,7 @@ SINGLE_BATTLE_TEST("Signature items Leek and Lucky Punch increase the critical h
     PARAMETRIZE { species = SPECIES_PINAMON; item = ITEM_LEEK; }
     PARAMETRIZE { species = SPECIES_PINAMON_GALARIAN; item = ITEM_LEEK; }
     PARAMETRIZE { species = SPECIES_SIRFETCHD; item = ITEM_LEEK; }
-    PARAMETRIZE { species = SPECIES_CHANSEY; item = ITEM_LUCKY_PUNCH; }
+    PARAMETRIZE { species = SPECIES_BEARMON; item = ITEM_LUCKY_PUNCH; }
 
     GIVEN {
         ASSUME(gItemsInfo[ITEM_LEEK].holdEffect == HOLD_EFFECT_LEEK);

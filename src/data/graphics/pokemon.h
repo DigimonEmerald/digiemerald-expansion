@@ -1812,7 +1812,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_ARURAUMON
 
-#if P_FAMILY_CHANSEY
+#if P_FAMILY_BEARMON
 #if P_GEN_4_CROSS_EVOS
     const u32 gMonFrontPic_Happiny[] = INCBIN_U32("graphics/pokemon/happiny/anim_front.4bpp.lz");
     const u32 gMonPalette_Happiny[] = INCBIN_U32("graphics/pokemon/happiny/normal.gbapal.lz");
@@ -1824,13 +1824,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
 
-    const u32 gMonFrontPic_Chansey[] = INCBIN_U32("graphics/pokemon/chansey/anim_front.4bpp.lz");
-    const u32 gMonPalette_Chansey[] = INCBIN_U32("graphics/pokemon/chansey/normal.gbapal.lz");
-    const u32 gMonBackPic_Chansey[] = INCBIN_U32("graphics/pokemon/chansey/back.4bpp.lz");
-    const u32 gMonShinyPalette_Chansey[] = INCBIN_U32("graphics/pokemon/chansey/shiny.gbapal.lz");
-    const u8 gMonIcon_Chansey[] = INCBIN_U8("graphics/pokemon/chansey/icon.4bpp");
+    const u32 gMonFrontPic_Bearmon[] = INCBIN_U32("graphics/pokemon/bearmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Bearmon[] = INCBIN_U32("graphics/pokemon/bearmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Bearmon[] = INCBIN_U32("graphics/pokemon/bearmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Bearmon[] = INCBIN_U32("graphics/pokemon/bearmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Bearmon[] = INCBIN_U8("graphics/pokemon/bearmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Chansey[] = INCBIN_U8("graphics/pokemon/chansey/footprint.1bpp");
+    const u8 gMonFootprint_Bearmon[] = INCBIN_U8("graphics/pokemon/bearmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_2_CROSS_EVOS
@@ -1843,7 +1843,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Blissey[] = INCBIN_U8("graphics/pokemon/blissey/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_CHANSEY
+#endif //P_FAMILY_BEARMON
 
 #if P_FAMILY_TANGELA
     const u32 gMonFrontPic_Tangela[] = INCBIN_U32("graphics/pokemon/tangela/anim_front.4bpp.lz");

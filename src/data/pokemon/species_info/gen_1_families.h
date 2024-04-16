@@ -11178,7 +11178,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_ARURAUMON
 
-#if P_FAMILY_CHANSEY
+#if P_FAMILY_BEARMON
 #if P_GEN_4_CROSS_EVOS
     [SPECIES_HAPPINY] =
     {
@@ -11231,12 +11231,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Happiny)
         .levelUpLearnset = sHappinyLevelUpLearnset,
         .teachableLearnset = sHappinyTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM_HOLD_DAY, ITEM_OVAL_STONE, SPECIES_CHANSEY},
-                                {EVO_ITEM_DAY, ITEM_OVAL_STONE, SPECIES_CHANSEY}),
+        .evolutions = EVOLUTION({EVO_ITEM_HOLD_DAY, ITEM_OVAL_STONE, SPECIES_BEARMON},
+                                {EVO_ITEM_DAY, ITEM_OVAL_STONE, SPECIES_BEARMON}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 
-    [SPECIES_CHANSEY] =
+    [SPECIES_BEARMON] =
     {
         .baseHP        = 250,
         .baseAttack    = 5,
@@ -11256,14 +11256,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
         .abilities = { ABILITY_NATURAL_CURE, ABILITY_SERENE_GRACE, ABILITY_HEALER },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Chansey"),
-        .cryId = CRY_CHANSEY,
-        .natDexNum = NATIONAL_DEX_CHANSEY,
+        .speciesName = _("Bearmon"),
+        .cryId = CRY_BEARMON,
+        .natDexNum = NATIONAL_DEX_BEARMON,
         .categoryName = _("Egg"),
         .height = 11,
         .weight = 346,
         .description = COMPOUND_STRING(
-            "Chansey lay nutritionally excellent eggs\n"
+            "Bearmon lay nutritionally excellent eggs\n"
             "every day. The eggs are so delicious, they\n"
             "are eagerly devoured by even those people\n"
             "who have lost their appetite."),
@@ -11271,22 +11271,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Chansey,
+        .frontPic = gMonFrontPic_Bearmon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Chansey,
+        .frontAnimFrames = sAnims_Bearmon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Chansey,
+        .backPic = gMonBackPic_Bearmon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Chansey,
-        .shinyPalette = gMonShinyPalette_Chansey,
-        .iconSprite = gMonIcon_Chansey,
+        .palette = gMonPalette_Bearmon,
+        .shinyPalette = gMonShinyPalette_Bearmon,
+        .iconSprite = gMonIcon_Bearmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Chansey)
-        .levelUpLearnset = sChanseyLevelUpLearnset,
-        .teachableLearnset = sChanseyTeachableLearnset,
+        FOOTPRINT(Bearmon)
+        .levelUpLearnset = sBearmonLevelUpLearnset,
+        .teachableLearnset = sBearmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_BLISSEY}),
     },
 
@@ -11344,7 +11344,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sBlisseyTeachableLearnset,
     },
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_CHANSEY
+#endif //P_FAMILY_BEARMON
 
 #if P_FAMILY_TANGELA
     [SPECIES_TANGELA] =

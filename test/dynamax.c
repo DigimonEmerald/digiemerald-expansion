@@ -1277,7 +1277,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Snooze makes only the target drowsy")
         PLAYER(SPECIES_GRIMMSNARL) { GigantamaxFactor(TRUE); }
         PLAYER(SPECIES_IMPIDIMP);
         OPPONENT(SPECIES_BLISSEY);
-        OPPONENT(SPECIES_CHANSEY);
+        OPPONENT(SPECIES_BEARMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_DARK_PULSE, target: opponentLeft, dynamax: TRUE); }
         TURN { }
