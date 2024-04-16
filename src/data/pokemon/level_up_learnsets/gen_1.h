@@ -3064,8 +3064,8 @@ static const struct LevelUpMove sDorumonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_DONDOKOMON
 
-#if P_FAMILY_KABUTO
-static const struct LevelUpMove sKabutoLevelUpLearnset[] = {
+#if P_FAMILY_DOTAGUMON
+static const struct LevelUpMove sDotagumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE(34, MOVE_ABSORB),
@@ -3075,7 +3075,7 @@ static const struct LevelUpMove sKabutoLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sKabutopsLevelUpLearnset[] = {
+static const struct LevelUpMove sDotagumonpsLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
@@ -3085,7 +3085,7 @@ static const struct LevelUpMove sKabutopsLevelUpLearnset[] = {
     LEVEL_UP_MOVE(53, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_KABUTO
+#endif //P_FAMILY_DOTAGUMON
 
 #if P_FAMILY_AERODACTYL
 static const struct LevelUpMove sAerodactylLevelUpLearnset[] = {

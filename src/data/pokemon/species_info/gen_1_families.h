@@ -14466,8 +14466,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_DONDOKOMON
 
-#if P_FAMILY_KABUTO
-    [SPECIES_KABUTO] =
+#if P_FAMILY_DOTAGUMON
+    [SPECIES_DOTAGUMON] =
     {
         .baseHP        = 30,
         .baseAttack    = 80,
@@ -14492,41 +14492,41 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_BATTLE_ARMOR, ABILITY_WEAK_ARMOR },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Kabuto"),
-        .cryId = CRY_KABUTO,
-        .natDexNum = NATIONAL_DEX_KABUTO,
+        .speciesName = _("Dotagumon"),
+        .cryId = CRY_DOTAGUMON,
+        .natDexNum = NATIONAL_DEX_DOTAGUMON,
         .categoryName = _("Shellfish"),
         .height = 5,
         .weight = 115,
         .description = COMPOUND_STRING(
             "It is a Pokémon that has been regenerated\n"
             "from a fossil. However, in rare cases, living\n"
-            "examples have been discovered. Kabuto\n"
+            "examples have been discovered. Dotagumon\n"
             "have not changed for 300 million years."),
         .pokemonScale = 454,
         .pokemonOffset = 21,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Kabuto,
+        .frontPic = gMonFrontPic_Dotagumon,
         .frontPicSize = MON_COORDS_SIZE(40, 32),
         .frontPicYOffset = 16,
-        .frontAnimFrames = sAnims_Kabuto,
+        .frontAnimFrames = sAnims_Dotagumon,
         .frontAnimId = ANIM_H_SLIDE_WOBBLE,
-        .backPic = gMonBackPic_Kabuto,
+        .backPic = gMonBackPic_Dotagumon,
         .backPicSize = MON_COORDS_SIZE(48, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Kabuto,
-        .shinyPalette = gMonShinyPalette_Kabuto,
-        .iconSprite = gMonIcon_Kabuto,
+        .palette = gMonPalette_Dotagumon,
+        .shinyPalette = gMonShinyPalette_Dotagumon,
+        .iconSprite = gMonIcon_Dotagumon,
         .iconPalIndex = 2,
-        FOOTPRINT(Kabuto)
-        .levelUpLearnset = sKabutoLevelUpLearnset,
-        .teachableLearnset = sKabutoTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_KABUTOPS}),
+        FOOTPRINT(Dotagumon)
+        .levelUpLearnset = sDotagumonLevelUpLearnset,
+        .teachableLearnset = sDotagumonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_DOTAGUMONPS}),
     },
 
-    [SPECIES_KABUTOPS] =
+    [SPECIES_DOTAGUMONPS] =
     {
         .baseHP        = 60,
         .baseAttack    = 115,
@@ -14551,14 +14551,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_BATTLE_ARMOR, ABILITY_WEAK_ARMOR },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Kabutops"),
-        .cryId = CRY_KABUTOPS,
-        .natDexNum = NATIONAL_DEX_KABUTOPS,
+        .speciesName = _("Dotagumonps"),
+        .cryId = CRY_DOTAGUMONPS,
+        .natDexNum = NATIONAL_DEX_DOTAGUMONPS,
         .categoryName = _("Shellfish"),
         .height = 13,
         .weight = 405,
         .description = COMPOUND_STRING(
-            "Kabutops once swam underwater to hunt \n"
+            "Dotagumonps once swam underwater to hunt \n"
             "for prey. It was apparently evolving from\n"
             "being a water dweller to living on land as\n"
             "evident from changes in its gills and legs."),
@@ -14566,24 +14566,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Kabutops,
+        .frontPic = gMonFrontPic_Dotagumonps,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Kabutops,
+        .frontAnimFrames = sAnims_Dotagumonps,
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Kabutops,
+        .backPic = gMonBackPic_Dotagumonps,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Kabutops,
-        .shinyPalette = gMonShinyPalette_Kabutops,
-        .iconSprite = gMonIcon_Kabutops,
+        .palette = gMonPalette_Dotagumonps,
+        .shinyPalette = gMonShinyPalette_Dotagumonps,
+        .iconSprite = gMonIcon_Dotagumonps,
         .iconPalIndex = 2,
-        FOOTPRINT(Kabutops)
-        .levelUpLearnset = sKabutopsLevelUpLearnset,
-        .teachableLearnset = sKabutopsTeachableLearnset,
+        FOOTPRINT(Dotagumonps)
+        .levelUpLearnset = sDotagumonpsLevelUpLearnset,
+        .teachableLearnset = sDotagumonpsTeachableLearnset,
     },
-#endif //P_FAMILY_KABUTO
+#endif //P_FAMILY_DOTAGUMON
 
 #if P_FAMILY_AERODACTYL
     [SPECIES_AERODACTYL] =

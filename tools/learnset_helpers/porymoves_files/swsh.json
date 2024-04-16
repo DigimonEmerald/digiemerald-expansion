@@ -12580,7 +12580,7 @@
       "MOVE_METEOR_BEAM"
     ]
   },
-  "KABUTO": {
+  "DOTAGUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -12692,7 +12692,7 @@
       "MOVE_METEOR_BEAM"
     ]
   },
-  "KABUTOPS": {
+  "DOTAGUMONPS": {
     "LevelMoves": [
       {
         "Level": 0,

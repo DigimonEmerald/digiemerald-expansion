@@ -1229,8 +1229,8 @@ const u16 gEggMoves[] = {
         MOVE_REFLECT_TYPE),
 #endif //P_FAMILY_DONDOKOMON
 
-#if P_FAMILY_KABUTO
-    egg_moves(KABUTO,
+#if P_FAMILY_DOTAGUMON
+    egg_moves(DOTAGUMON,
         MOVE_BUBBLE_BEAM,
         MOVE_AURORA_BEAM,
         MOVE_RAPID_SPIN,
@@ -1243,7 +1243,7 @@ const u16 gEggMoves[] = {
         MOVE_GIGA_DRAIN,
         MOVE_FORESIGHT,
         MOVE_TAKE_DOWN),
-#endif //P_FAMILY_KABUTO
+#endif //P_FAMILY_DOTAGUMON
 
 #if P_FAMILY_AERODACTYL
     egg_moves(AERODACTYL,

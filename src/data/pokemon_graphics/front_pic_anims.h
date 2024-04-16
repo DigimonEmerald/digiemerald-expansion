@@ -2148,8 +2148,8 @@ static const union AnimCmd sAnim_Dorumon_1[] =
 };
 #endif //P_FAMILY_DONDOKOMON
 
-#if P_FAMILY_KABUTO
-static const union AnimCmd sAnim_Kabuto_1[] =
+#if P_FAMILY_DOTAGUMON
+static const union AnimCmd sAnim_Dotagumon_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 8),
@@ -2162,7 +2162,7 @@ static const union AnimCmd sAnim_Kabuto_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Kabutops_1[] =
+static const union AnimCmd sAnim_Dotagumonps_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -2170,7 +2170,7 @@ static const union AnimCmd sAnim_Kabutops_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_KABUTO
+#endif //P_FAMILY_DOTAGUMON
 
 #if P_FAMILY_AERODACTYL
 static const union AnimCmd sAnim_Aerodactyl_1[] =
@@ -10690,10 +10690,10 @@ SINGLE_ANIMATION(Dokunemon_Z);
 SINGLE_ANIMATION(Dondokomon);
 SINGLE_ANIMATION(Dorumon);
 #endif //P_FAMILY_DONDOKOMON
-#if P_FAMILY_KABUTO
-SINGLE_ANIMATION(Kabuto);
-SINGLE_ANIMATION(Kabutops);
-#endif //P_FAMILY_KABUTO
+#if P_FAMILY_DOTAGUMON
+SINGLE_ANIMATION(Dotagumon);
+SINGLE_ANIMATION(Dotagumonps);
+#endif //P_FAMILY_DOTAGUMON
 #if P_FAMILY_AERODACTYL
 SINGLE_ANIMATION(Aerodactyl);
 #if P_MEGA_EVOLUTIONS

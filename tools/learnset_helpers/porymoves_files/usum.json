@@ -17828,7 +17828,7 @@
       "MOVE_WATER_PULSE"
     ]
   },
-  "KABUTO": {
+  "DOTAGUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -17935,7 +17935,7 @@
       "MOVE_WATER_PULSE"
     ]
   },
-  "KABUTOPS": {
+  "DOTAGUMONPS": {
     "LevelMoves": [
       {
         "Level": 0,

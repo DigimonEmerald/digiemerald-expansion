@@ -7811,8 +7811,8 @@ static const u16 sDorumonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DONDOKOMON
 
-#if P_FAMILY_KABUTO
-static const u16 sKabutoTeachableLearnset[] = {
+#if P_FAMILY_DOTAGUMON
+static const u16 sDotagumonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -7847,7 +7847,7 @@ static const u16 sKabutoTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sKabutopsTeachableLearnset[] = {
+static const u16 sDotagumonpsTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -7889,7 +7889,7 @@ static const u16 sKabutopsTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_KABUTO
+#endif //P_FAMILY_DOTAGUMON
 
 #if P_FAMILY_AERODACTYL
 static const u16 sAerodactylTeachableLearnset[] = {

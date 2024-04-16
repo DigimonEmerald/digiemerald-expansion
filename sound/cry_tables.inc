@@ -422,10 +422,10 @@ gCryTable::
 	cry Cry_Dondokomon
 	cry Cry_Dorumon
 .endif @ P_FAMILY_DONDOKOMON
-.if P_FAMILY_KABUTO == TRUE
-	cry Cry_Kabuto
-	cry Cry_Kabutops
-.endif @ P_FAMILY_KABUTO
+.if P_FAMILY_DOTAGUMON == TRUE
+	cry Cry_Dotagumon
+	cry Cry_Dotagumonps
+.endif @ P_FAMILY_DOTAGUMON
 .if P_FAMILY_AERODACTYL == TRUE
 	cry Cry_Aerodactyl
 .if P_MEGA_EVOLUTIONS == TRUE
@@ -2848,10 +2848,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Dondokomon
 	cry_reverse Cry_Dorumon
 .endif @ P_FAMILY_DONDOKOMON
-.if P_FAMILY_KABUTO == TRUE
-	cry_reverse Cry_Kabuto
-	cry_reverse Cry_Kabutops
-.endif @ P_FAMILY_KABUTO
+.if P_FAMILY_DOTAGUMON == TRUE
+	cry_reverse Cry_Dotagumon
+	cry_reverse Cry_Dotagumonps
+.endif @ P_FAMILY_DOTAGUMON
 .if P_FAMILY_AERODACTYL == TRUE
 	cry_reverse Cry_Aerodactyl
 .if P_MEGA_EVOLUTIONS == TRUE

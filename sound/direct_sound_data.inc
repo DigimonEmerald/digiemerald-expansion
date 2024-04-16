@@ -1377,15 +1377,15 @@ Cry_Dorumon::
 	.incbin "sound/direct_sound_samples/cries/dorumon.bin"
 .endif @ P_FAMILY_DONDOKOMON
 
-.if P_FAMILY_KABUTO == TRUE
+.if P_FAMILY_DOTAGUMON == TRUE
 	.align 2
-Cry_Kabuto::
-	.incbin "sound/direct_sound_samples/cries/kabuto.bin"
+Cry_Dotagumon::
+	.incbin "sound/direct_sound_samples/cries/dotagumon.bin"
 
 	.align 2
-Cry_Kabutops::
-	.incbin "sound/direct_sound_samples/cries/kabutops.bin"
-.endif @ P_FAMILY_KABUTO
+Cry_Dotagumonps::
+	.incbin "sound/direct_sound_samples/cries/dotagumonps.bin"
+.endif @ P_FAMILY_DOTAGUMON
 
 .if P_FAMILY_AERODACTYL == TRUE
 	.align 2
