@@ -13629,7 +13629,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sCrabmon_xFormChangeTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_DAMEMON},
                                 {EVO_ITEM, ITEM_WATER_STONE, SPECIES_CUTEMON},
-                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_FLAREON},
+                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_DEMIDEVMON},
                                 {EVO_FRIENDSHIP_DAY, 0, SPECIES_ESPEON},
                                 {EVO_FRIENDSHIP_NIGHT, 0, SPECIES_UMBREON},
                                 {EVO_SPECIFIC_MAP, MAP_PETALBURG_WOODS, SPECIES_LEAFEON},
@@ -13859,7 +13859,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sDamemonTeachableLearnset,
     },
 
-    [SPECIES_FLAREON] =
+    [SPECIES_DEMIDEVMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 130,
@@ -13878,14 +13878,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_FLASH_FIRE, ABILITY_FLASH_FIRE, ABILITY_GUTS },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Flareon"),
-        .cryId = CRY_FLAREON,
-        .natDexNum = NATIONAL_DEX_FLAREON,
+        .speciesName = _("Demidevmon"),
+        .cryId = CRY_DEMIDEVMON,
+        .natDexNum = NATIONAL_DEX_DEMIDEVMON,
         .categoryName = _("Flame"),
         .height = 9,
         .weight = 250,
         .description = COMPOUND_STRING(
-            "Flareon's fluffy fur releases heat into\n"
+            "Demidevmon's fluffy fur releases heat into\n"
             "the air so that its body does not get\n"
             "excessively hot. Its body temperature can\n"
             "rise to a maximum of 1,650 degrees F."),
@@ -13893,22 +13893,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Flareon,
+        .frontPic = gMonFrontPic_Demidevmon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Flareon,
+        .frontAnimFrames = sAnims_Demidevmon,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Flareon,
+        .backPic = gMonBackPic_Demidevmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_Flareon,
-        .shinyPalette = gMonShinyPalette_Flareon,
-        .iconSprite = gMonIcon_Flareon,
+        .palette = gMonPalette_Demidevmon,
+        .shinyPalette = gMonShinyPalette_Demidevmon,
+        .iconSprite = gMonIcon_Demidevmon,
         .iconPalIndex = 3,
-        FOOTPRINT(Flareon)
-        .levelUpLearnset = sFlareonLevelUpLearnset,
-        .teachableLearnset = sFlareonTeachableLearnset,
+        FOOTPRINT(Demidevmon)
+        .levelUpLearnset = sDemidevmonLevelUpLearnset,
+        .teachableLearnset = sDemidevmonTeachableLearnset,
     },
 
 #if P_GEN_2_CROSS_EVOS

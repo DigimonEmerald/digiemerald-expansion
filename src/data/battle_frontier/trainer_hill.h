@@ -571,7 +571,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [3] =
                     {
-                        .species = SPECIES_FLAREON,
+                        .species = SPECIES_DEMIDEVMON,
                         .heldItem = ITEM_CHARCOAL,
                         .moves = {MOVE_FIRE_BLAST, MOVE_BITE, MOVE_QUICK_ATTACK, MOVE_SAND_ATTACK},
                         .speedEV = 255,
@@ -585,7 +585,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 15,
                         .abilityNum = 0,
                         .personality = 0x28,
-                        .nickname = _("FLAREON"),
+                        .nickname = _("DEMIDEVMON"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                     [4] =

@@ -7414,7 +7414,7 @@ static const u16 sDamemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFlareonTeachableLearnset[] = {
+static const u16 sDemidevmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DIG,

@@ -4129,7 +4129,7 @@ static const struct LevelUpMove sDamemonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sFlareonLevelUpLearnset[] = {
+static const struct LevelUpMove sDemidevmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_EMBER),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),

@@ -2295,13 +2295,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Damemon[] = INCBIN_U8("graphics/pokemon/damemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Flareon[] = INCBIN_U32("graphics/pokemon/flareon/anim_front.4bpp.lz");
-    const u32 gMonPalette_Flareon[] = INCBIN_U32("graphics/pokemon/flareon/normal.gbapal.lz");
-    const u32 gMonBackPic_Flareon[] = INCBIN_U32("graphics/pokemon/flareon/back.4bpp.lz");
-    const u32 gMonShinyPalette_Flareon[] = INCBIN_U32("graphics/pokemon/flareon/shiny.gbapal.lz");
-    const u8 gMonIcon_Flareon[] = INCBIN_U8("graphics/pokemon/flareon/icon.4bpp");
+    const u32 gMonFrontPic_Demidevmon[] = INCBIN_U32("graphics/pokemon/demidevmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Demidevmon[] = INCBIN_U32("graphics/pokemon/demidevmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Demidevmon[] = INCBIN_U32("graphics/pokemon/demidevmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Demidevmon[] = INCBIN_U32("graphics/pokemon/demidevmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Demidevmon[] = INCBIN_U8("graphics/pokemon/demidevmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Flareon[] = INCBIN_U8("graphics/pokemon/flareon/footprint.1bpp");
+    const u8 gMonFootprint_Demidevmon[] = INCBIN_U8("graphics/pokemon/demidevmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_2_CROSS_EVOS

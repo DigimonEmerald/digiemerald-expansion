@@ -2037,7 +2037,7 @@ static const union AnimCmd sAnim_Damemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Flareon_1[] =
+static const union AnimCmd sAnim_Demidevmon_1[] =
 {
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 30),
@@ -10664,7 +10664,7 @@ SINGLE_ANIMATION(Crabmon_xGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 SINGLE_ANIMATION(Cutemon);
 SINGLE_ANIMATION(Damemon);
-SINGLE_ANIMATION(Flareon);
+SINGLE_ANIMATION(Demidevmon);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Espeon);
 SINGLE_ANIMATION(Umbreon);
