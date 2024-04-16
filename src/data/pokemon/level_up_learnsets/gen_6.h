@@ -2961,7 +2961,7 @@ static const struct LevelUpMove sAgumon_xLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sHitmonchanLevelUpLearnset[] = {
+static const struct LevelUpMove sAngoramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CLOSE_COMBAT),
     LEVEL_UP_MOVE( 1, MOVE_COUNTER),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_PUNCH),

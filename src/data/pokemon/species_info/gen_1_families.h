@@ -10540,7 +10540,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Tyrogue)
         .levelUpLearnset = sTyrogueLevelUpLearnset,
         .teachableLearnset = sTyrogueTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_ATK_LT_DEF, 20, SPECIES_HITMONCHAN},
+        .evolutions = EVOLUTION({EVO_LEVEL_ATK_LT_DEF, 20, SPECIES_ANGORAMON},
                                 {EVO_LEVEL_ATK_GT_DEF, 20, SPECIES_AGUMON_X},
                                 {EVO_LEVEL_ATK_EQ_DEF, 20, SPECIES_HITMONTOP}),
     },
@@ -10598,7 +10598,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sAgumon_xTeachableLearnset,
     },
 
-    [SPECIES_HITMONCHAN] =
+    [SPECIES_ANGORAMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 105,
@@ -10617,14 +10617,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_KEEN_EYE, ABILITY_IRON_FIST, ABILITY_INNER_FOCUS },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Hitmonchan"),
-        .cryId = CRY_HITMONCHAN,
-        .natDexNum = NATIONAL_DEX_HITMONCHAN,
+        .speciesName = _("Angoramon"),
+        .cryId = CRY_ANGORAMON,
+        .natDexNum = NATIONAL_DEX_ANGORAMON,
         .categoryName = _("Punching"),
         .height = 14,
         .weight = 502,
         .description = COMPOUND_STRING(
-            "A Hitmonchan is said to possess the\n"
+            "A Angoramon is said to possess the\n"
             "spirit of a boxer who aimed to become the\n"
             "world champion. Having an indomitable\n"
             "spirit means that it will never give up."),
@@ -10632,22 +10632,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 2,
         .trainerScale = 277,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_Hitmonchan,
+        .frontPic = gMonFrontPic_Angoramon,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Hitmonchan,
+        .frontAnimFrames = sAnims_Angoramon,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Hitmonchan,
+        .backPic = gMonBackPic_Angoramon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Hitmonchan,
-        .shinyPalette = gMonShinyPalette_Hitmonchan,
-        .iconSprite = gMonIcon_Hitmonchan,
+        .palette = gMonPalette_Angoramon,
+        .shinyPalette = gMonShinyPalette_Angoramon,
+        .iconSprite = gMonIcon_Angoramon,
         .iconPalIndex = 2,
-        FOOTPRINT(Hitmonchan)
-        .levelUpLearnset = sHitmonchanLevelUpLearnset,
-        .teachableLearnset = sHitmonchanTeachableLearnset,
+        FOOTPRINT(Angoramon)
+        .levelUpLearnset = sAngoramonLevelUpLearnset,
+        .teachableLearnset = sAngoramonTeachableLearnset,
     },
 
 #if P_GEN_2_CROSS_EVOS

@@ -1521,7 +1521,7 @@ static const union AnimCmd sAnim_Agumon_x_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Hitmonchan_1[] =
+static const union AnimCmd sAnim_Angoramon_1[] =
 {
     ANIMCMD_FRAME(0, 17),
     ANIMCMD_FRAME(1, 4),
@@ -10522,7 +10522,7 @@ SINGLE_ANIMATION(Agumon_expertAlolan);
 SINGLE_ANIMATION(Tyrogue);
 #endif //P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Agumon_x);
-SINGLE_ANIMATION(Hitmonchan);
+SINGLE_ANIMATION(Angoramon);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Hitmontop);
 #endif //P_GEN_2_CROSS_EVOS

@@ -267,7 +267,7 @@ gCryTable::
 	cry Cry_Tyrogue
 .endif @ P_GEN_2_CROSS_EVOS
 	cry Cry_Agumon_x
-	cry Cry_Hitmonchan
+	cry Cry_Angoramon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Hitmontop
 .endif @ P_GEN_2_CROSS_EVOS
@@ -2693,7 +2693,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Tyrogue
 .endif @ P_GEN_2_CROSS_EVOS
 	cry_reverse Cry_Agumon_x
-	cry_reverse Cry_Hitmonchan
+	cry_reverse Cry_Angoramon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Hitmontop
 .endif @ P_GEN_2_CROSS_EVOS

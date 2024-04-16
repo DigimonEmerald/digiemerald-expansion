@@ -1045,8 +1045,8 @@ Cry_Agumon_x::
 	.incbin "sound/direct_sound_samples/cries/agumon_x.bin"
 
 	.align 2
-Cry_Hitmonchan::
-	.incbin "sound/direct_sound_samples/cries/hitmonchan.bin"
+Cry_Angoramon::
+	.incbin "sound/direct_sound_samples/cries/angoramon.bin"
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
