@@ -530,15 +530,15 @@ static const u16 sDracmonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_DRACMON
 
-#if P_FAMILY_SNORLAX
-static const u16 sSnorlaxFormSpeciesIdTable[] = {
-    SPECIES_SNORLAX,
+#if P_FAMILY_DRACOMON
+static const u16 sDracomonFormSpeciesIdTable[] = {
+    SPECIES_DRACOMON,
 #if P_GIGANTAMAX_FORMS
-    SPECIES_SNORLAX_GIGANTAMAX,
+    SPECIES_DRACOMON_GIGANTAMAX,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_SNORLAX
+#endif //P_FAMILY_DRACOMON
 
 #if P_FAMILY_ARTICUNO
 static const u16 sArticunoFormSpeciesIdTable[] = {

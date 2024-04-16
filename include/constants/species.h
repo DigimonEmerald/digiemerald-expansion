@@ -144,7 +144,7 @@
 #define SPECIES_DOTAGUMON                                  140
 #define SPECIES_DOTFALCMON                                141
 #define SPECIES_DRACMON                              142
-#define SPECIES_SNORLAX                                 143
+#define SPECIES_DRACOMON                                 143
 #define SPECIES_ARTICUNO                                144
 #define SPECIES_ZAPDOS                                  145
 #define SPECIES_MOLTRES                                 146
@@ -1604,7 +1604,7 @@
 #define SPECIES_WANYAMON_GIGANTAMAX                      1497
 #define SPECIES_CORONAMON_GIGANTAMAX                       1498
 #define SPECIES_CRABMON_X_GIGANTAMAX                        1499
-#define SPECIES_SNORLAX_GIGANTAMAX                      1500
+#define SPECIES_DRACOMON_GIGANTAMAX                      1500
 #define SPECIES_GARBODOR_GIGANTAMAX                     1501
 #define SPECIES_MELMETAL_GIGANTAMAX                     1502
 #define SPECIES_RILLABOOM_GIGANTAMAX                    1503

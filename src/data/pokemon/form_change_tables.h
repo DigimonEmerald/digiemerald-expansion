@@ -209,14 +209,14 @@ static const struct FormChange sDracmonFormChangeTable[] = {
 };
 #endif //P_FAMILY_DRACMON
 
-#if P_FAMILY_SNORLAX
-static const struct FormChange sSnorlaxFormChangeTable[] = {
+#if P_FAMILY_DRACOMON
+static const struct FormChange sDracomonFormChangeTable[] = {
 #if P_GIGANTAMAX_FORMS
-    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_SNORLAX_GIGANTAMAX},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_DRACOMON_GIGANTAMAX},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_SNORLAX
+#endif //P_FAMILY_DRACOMON
 
 #if P_FAMILY_MEWTWO
 static const struct FormChange sMewtwoFormChangeTable[] = {

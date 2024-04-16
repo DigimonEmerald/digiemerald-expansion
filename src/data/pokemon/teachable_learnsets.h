@@ -7930,7 +7930,7 @@ static const u16 sDracmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DRACMON
 
-#if P_FAMILY_SNORLAX
+#if P_FAMILY_DRACOMON
 #if P_GEN_4_CROSS_EVOS
 static const u16 sMunchlaxTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -7984,7 +7984,7 @@ static const u16 sMunchlaxTeachableLearnset[] = {
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const u16 sSnorlaxTeachableLearnset[] = {
+static const u16 sDracomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
@@ -8039,7 +8039,7 @@ static const u16 sSnorlaxTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SNORLAX
+#endif //P_FAMILY_DRACOMON
 
 #if P_FAMILY_ARTICUNO
 static const u16 sArticunoTeachableLearnset[] = {

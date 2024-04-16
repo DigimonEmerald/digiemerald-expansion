@@ -1399,7 +1399,7 @@ Cry_DracmonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_DRACMON
 
-.if P_FAMILY_SNORLAX == TRUE
+.if P_FAMILY_DRACOMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
 Cry_Munchlax::
@@ -1407,9 +1407,9 @@ Cry_Munchlax::
 .endif @ P_GEN_4_CROSS_EVOS
 
 	.align 2
-Cry_Snorlax::
-	.incbin "sound/direct_sound_samples/cries/snorlax.bin"
-.endif @ P_FAMILY_SNORLAX
+Cry_Dracomon::
+	.incbin "sound/direct_sound_samples/cries/dracomon.bin"
+.endif @ P_FAMILY_DRACOMON
 
 .if P_FAMILY_ARTICUNO == TRUE
 	.align 2

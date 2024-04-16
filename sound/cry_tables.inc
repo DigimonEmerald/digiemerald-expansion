@@ -432,12 +432,12 @@ gCryTable::
 	cry Cry_DracmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_DRACMON
-.if P_FAMILY_SNORLAX == TRUE
+.if P_FAMILY_DRACOMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Munchlax
 .endif @ P_GEN_4_CROSS_EVOS
-	cry Cry_Snorlax
-.endif @ P_FAMILY_SNORLAX
+	cry Cry_Dracomon
+.endif @ P_FAMILY_DRACOMON
 .if P_FAMILY_ARTICUNO == TRUE
 	cry Cry_Articuno
 .endif @ P_FAMILY_ARTICUNO
@@ -2858,12 +2858,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_DracmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_DRACMON
-.if P_FAMILY_SNORLAX == TRUE
+.if P_FAMILY_DRACOMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Munchlax
 .endif @ P_GEN_4_CROSS_EVOS
-	cry_reverse Cry_Snorlax
-.endif @ P_FAMILY_SNORLAX
+	cry_reverse Cry_Dracomon
+.endif @ P_FAMILY_DRACOMON
 .if P_FAMILY_ARTICUNO == TRUE
 	cry_reverse Cry_Articuno
 .endif @ P_FAMILY_ARTICUNO

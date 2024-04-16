@@ -2187,7 +2187,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(DracmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DRACMON
 
-#if P_FAMILY_SNORLAX
+#if P_FAMILY_DRACOMON
 #if P_GEN_4_CROSS_EVOS
 static const union AnimCmd sAnim_Munchlax_1[] =
 {
@@ -2198,7 +2198,7 @@ static const union AnimCmd sAnim_Munchlax_1[] =
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const union AnimCmd sAnim_Snorlax_1[] =
+static const union AnimCmd sAnim_Dracomon_1[] =
 {
     ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(1, 50),
@@ -2207,9 +2207,9 @@ static const union AnimCmd sAnim_Snorlax_1[] =
 };
 
 #if P_GIGANTAMAX_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(SnorlaxGigantamax);
+PLACEHOLDER_ANIM_SINGLE_FRAME(DracomonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_SNORLAX
+#endif //P_FAMILY_DRACOMON
 
 #if P_FAMILY_ARTICUNO
 static const union AnimCmd sAnim_Articuno_1[] =
@@ -10700,15 +10700,15 @@ SINGLE_ANIMATION(Dracmon);
 SINGLE_ANIMATION(DracmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DRACMON
-#if P_FAMILY_SNORLAX
+#if P_FAMILY_DRACOMON
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Munchlax);
 #endif //P_GEN_4_CROSS_EVOS
-SINGLE_ANIMATION(Snorlax);
+SINGLE_ANIMATION(Dracomon);
 #if P_GIGANTAMAX_FORMS
-SINGLE_ANIMATION(SnorlaxGigantamax);
+SINGLE_ANIMATION(DracomonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_SNORLAX
+#endif //P_FAMILY_DRACOMON
 #if P_FAMILY_ARTICUNO
 SINGLE_ANIMATION(Articuno);
 #if P_GALARIAN_FORMS

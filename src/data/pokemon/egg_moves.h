@@ -1259,7 +1259,7 @@ const u16 gEggMoves[] = {
         MOVE_WIDE_GUARD),
 #endif //P_FAMILY_DRACMON
 
-#if P_FAMILY_SNORLAX
+#if P_FAMILY_DRACOMON
 #if P_GEN_4_CROSS_EVOS
     egg_moves(MUNCHLAX,
         MOVE_LICK,
@@ -1275,7 +1275,7 @@ const u16 gEggMoves[] = {
         MOVE_SELF_DESTRUCT,
         MOVE_BELCH),
 #endif //P_GEN_4_CROSS_EVOS
-    egg_moves(SNORLAX,
+    egg_moves(DRACOMON,
         MOVE_LICK,
         MOVE_CHARM,
         MOVE_DOUBLE_EDGE,
@@ -1288,7 +1288,7 @@ const u16 gEggMoves[] = {
         MOVE_AFTER_YOU,
         MOVE_BELCH,
         MOVE_POWER_UP_PUNCH),
-#endif //P_FAMILY_SNORLAX
+#endif //P_FAMILY_DRACOMON
 
 #if P_FAMILY_DRATINI
     egg_moves(DRATINI,

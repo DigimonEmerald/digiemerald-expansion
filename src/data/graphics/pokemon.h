@@ -2448,7 +2448,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DRACMON
 
-#if P_FAMILY_SNORLAX
+#if P_FAMILY_DRACOMON
 #if P_GEN_4_CROSS_EVOS
     const u32 gMonFrontPic_Munchlax[] = INCBIN_U32("graphics/pokemon/munchlax/anim_front.4bpp.lz");
     const u32 gMonPalette_Munchlax[] = INCBIN_U32("graphics/pokemon/munchlax/normal.gbapal.lz");
@@ -2460,23 +2460,23 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
 
-    const u32 gMonFrontPic_Snorlax[] = INCBIN_U32("graphics/pokemon/snorlax/anim_front.4bpp.lz");
-    const u32 gMonPalette_Snorlax[] = INCBIN_U32("graphics/pokemon/snorlax/normal.gbapal.lz");
-    const u32 gMonBackPic_Snorlax[] = INCBIN_U32("graphics/pokemon/snorlax/back.4bpp.lz");
-    const u32 gMonShinyPalette_Snorlax[] = INCBIN_U32("graphics/pokemon/snorlax/shiny.gbapal.lz");
-    const u8 gMonIcon_Snorlax[] = INCBIN_U8("graphics/pokemon/snorlax/icon.4bpp");
+    const u32 gMonFrontPic_Dracomon[] = INCBIN_U32("graphics/pokemon/dracomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Dracomon[] = INCBIN_U32("graphics/pokemon/dracomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Dracomon[] = INCBIN_U32("graphics/pokemon/dracomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Dracomon[] = INCBIN_U32("graphics/pokemon/dracomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Dracomon[] = INCBIN_U8("graphics/pokemon/dracomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Snorlax[] = INCBIN_U8("graphics/pokemon/snorlax/footprint.1bpp");
+    const u8 gMonFootprint_Dracomon[] = INCBIN_U8("graphics/pokemon/dracomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GIGANTAMAX_FORMS
-    const u32 gMonFrontPic_SnorlaxGigantamax[] = INCBIN_U32("graphics/pokemon/snorlax/gigantamax/front.4bpp.lz");
-    const u32 gMonBackPic_SnorlaxGigantamax[] = INCBIN_U32("graphics/pokemon/snorlax/gigantamax/back.4bpp.lz");
-    const u32 gMonPalette_SnorlaxGigantamax[] = INCBIN_U32("graphics/pokemon/snorlax/gigantamax/normal.gbapal.lz");
-    const u32 gMonShinyPalette_SnorlaxGigantamax[] = INCBIN_U32("graphics/pokemon/snorlax/gigantamax/shiny.gbapal.lz");
-    const u8 gMonIcon_SnorlaxGigantamax[] = INCBIN_U8("graphics/pokemon/snorlax/gigantamax/icon.4bpp");
+    const u32 gMonFrontPic_DracomonGigantamax[] = INCBIN_U32("graphics/pokemon/dracomon/gigantamax/front.4bpp.lz");
+    const u32 gMonBackPic_DracomonGigantamax[] = INCBIN_U32("graphics/pokemon/dracomon/gigantamax/back.4bpp.lz");
+    const u32 gMonPalette_DracomonGigantamax[] = INCBIN_U32("graphics/pokemon/dracomon/gigantamax/normal.gbapal.lz");
+    const u32 gMonShinyPalette_DracomonGigantamax[] = INCBIN_U32("graphics/pokemon/dracomon/gigantamax/shiny.gbapal.lz");
+    const u8 gMonIcon_DracomonGigantamax[] = INCBIN_U8("graphics/pokemon/dracomon/gigantamax/icon.4bpp");
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_SNORLAX
+#endif //P_FAMILY_DRACOMON
 
 #if P_FAMILY_ARTICUNO
     const u32 gMonFrontPic_Articuno[] = INCBIN_U32("graphics/pokemon/articuno/anim_front.4bpp.lz");

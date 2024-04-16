@@ -5950,7 +5950,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Snorlax's\n"
+            "Upgrade Dracomon's\n"
             "Giga Impact\n"
             "into a Z-Move."),
         .pocket = POCKET_ITEMS,

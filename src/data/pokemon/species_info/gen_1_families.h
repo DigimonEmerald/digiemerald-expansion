@@ -14699,7 +14699,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DRACMON
 
-#if P_FAMILY_SNORLAX
+#if P_FAMILY_DRACOMON
 #if P_GEN_4_CROSS_EVOS
     [SPECIES_MUNCHLAX] =
     {
@@ -14753,11 +14753,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Munchlax)
         .levelUpLearnset = sMunchlaxLevelUpLearnset,
         .teachableLearnset = sMunchlaxTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_SNORLAX}),
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_DRACOMON}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 
-    [SPECIES_SNORLAX] =
+    [SPECIES_DRACOMON] =
     {
         .baseHP        = 160,
         .baseAttack    = 110,
@@ -14778,14 +14778,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_IMMUNITY, ABILITY_THICK_FAT, ABILITY_GLUTTONY },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Snorlax"),
-        .cryId = CRY_SNORLAX,
-        .natDexNum = NATIONAL_DEX_SNORLAX,
+        .speciesName = _("Dracomon"),
+        .cryId = CRY_DRACOMON,
+        .natDexNum = NATIONAL_DEX_DRACOMON,
         .categoryName = _("Sleeping"),
         .height = 21,
         .weight = 4600,
         .description = COMPOUND_STRING(
-            "Snorlax's typical day consists of nothing\n"
+            "Dracomon's typical day consists of nothing\n"
             "more than eating and sleeping. It is such\n"
             "a docile Pokémon that there are children\n"
             "who use its big belly as a place to play."),
@@ -14793,28 +14793,28 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 4,
         .trainerScale = 423,
         .trainerOffset = 11,
-        .frontPic = gMonFrontPic_Snorlax,
+        .frontPic = gMonFrontPic_Dracomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_Snorlax,
+        .frontAnimFrames = sAnims_Dracomon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Snorlax,
+        .backPic = gMonBackPic_Dracomon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Snorlax,
-        .shinyPalette = gMonShinyPalette_Snorlax,
-        .iconSprite = gMonIcon_Snorlax,
+        .palette = gMonPalette_Dracomon,
+        .shinyPalette = gMonShinyPalette_Dracomon,
+        .iconSprite = gMonIcon_Dracomon,
         .iconPalIndex = 3,
-        FOOTPRINT(Snorlax)
-        .levelUpLearnset = sSnorlaxLevelUpLearnset,
-        .teachableLearnset = sSnorlaxTeachableLearnset,
-        .formSpeciesIdTable = sSnorlaxFormSpeciesIdTable,
-        .formChangeTable = sSnorlaxFormChangeTable,
+        FOOTPRINT(Dracomon)
+        .levelUpLearnset = sDracomonLevelUpLearnset,
+        .teachableLearnset = sDracomonTeachableLearnset,
+        .formSpeciesIdTable = sDracomonFormSpeciesIdTable,
+        .formChangeTable = sDracomonFormChangeTable,
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_SNORLAX_GIGANTAMAX] =
+    [SPECIES_DRACOMON_GIGANTAMAX] =
     {
         .baseHP        = 160,
         .baseAttack    = 110,
@@ -14835,43 +14835,43 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_IMMUNITY, ABILITY_THICK_FAT, ABILITY_GLUTTONY },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Snorlax"),
-        .cryId = CRY_SNORLAX,
-        .natDexNum = NATIONAL_DEX_SNORLAX,
+        .speciesName = _("Dracomon"),
+        .cryId = CRY_DRACOMON,
+        .natDexNum = NATIONAL_DEX_DRACOMON,
         .categoryName = _("Sleeping"),
         .height = 350,
         .weight = 0,
         .description = COMPOUND_STRING(
             "Gigantamax energy has affected\n"
             "stray seeds and even pebbles that\n"
-            "got stuck to Snorlax, making them grow\n"
+            "got stuck to Dracomon, making them grow\n"
             "to a huge size."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 423,
         .trainerOffset = 11,
-        .frontPic = gMonFrontPic_SnorlaxGigantamax,
+        .frontPic = gMonFrontPic_DracomonGigantamax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SnorlaxGigantamax,
+        .frontAnimFrames = sAnims_DracomonGigantamax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_SnorlaxGigantamax,
+        .backPic = gMonBackPic_DracomonGigantamax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 5,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_SnorlaxGigantamax,
-        .shinyPalette = gMonShinyPalette_SnorlaxGigantamax,
-        .iconSprite = gMonIcon_SnorlaxGigantamax,
+        .palette = gMonPalette_DracomonGigantamax,
+        .shinyPalette = gMonShinyPalette_DracomonGigantamax,
+        .iconSprite = gMonIcon_DracomonGigantamax,
         .iconPalIndex = 3,
-        FOOTPRINT(Snorlax)
+        FOOTPRINT(Dracomon)
         .isGigantamax = TRUE,
-        .levelUpLearnset = sSnorlaxLevelUpLearnset,
-        .teachableLearnset = sSnorlaxTeachableLearnset,
-        .formSpeciesIdTable = sSnorlaxFormSpeciesIdTable,
-        .formChangeTable = sSnorlaxFormChangeTable,
+        .levelUpLearnset = sDracomonLevelUpLearnset,
+        .teachableLearnset = sDracomonTeachableLearnset,
+        .formSpeciesIdTable = sDracomonFormSpeciesIdTable,
+        .formChangeTable = sDracomonFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_SNORLAX
+#endif //P_FAMILY_DRACOMON
 
 #if P_FAMILY_ARTICUNO
     [SPECIES_ARTICUNO] =

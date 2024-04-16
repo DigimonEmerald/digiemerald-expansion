@@ -4450,7 +4450,7 @@ static const struct LevelUpMove sDracmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_DRACMON
 
-#if P_FAMILY_SNORLAX
+#if P_FAMILY_DRACOMON
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sMunchlaxLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LICK),
@@ -4473,7 +4473,7 @@ static const struct LevelUpMove sMunchlaxLevelUpLearnset[] = {
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const struct LevelUpMove sSnorlaxLevelUpLearnset[] = {
+static const struct LevelUpMove sDracomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_RECYCLE),
     LEVEL_UP_MOVE( 1, MOVE_COVET),
     LEVEL_UP_MOVE( 1, MOVE_STOCKPILE),
@@ -4503,7 +4503,7 @@ static const struct LevelUpMove sSnorlaxLevelUpLearnset[] = {
     LEVEL_UP_MOVE(56, MOVE_GIGA_IMPACT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SNORLAX
+#endif //P_FAMILY_DRACOMON
 
 #if P_FAMILY_ARTICUNO
 static const struct LevelUpMove sArticunoLevelUpLearnset[] = {

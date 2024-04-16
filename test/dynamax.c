@@ -1245,7 +1245,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Replenish recycles allies' berries 50\% of t
     PASSES_RANDOMLY(1, 2, RNG_G_MAX_REPLENISH);
     GIVEN {
         ASSUME(gMovesInfo[MOVE_G_MAX_REPLENISH].argument == MAX_EFFECT_RECYCLE_BERRIES);
-        PLAYER(SPECIES_SNORLAX) { Item(ITEM_APICOT_BERRY); GigantamaxFactor(TRUE); }
+        PLAYER(SPECIES_DRACOMON) { Item(ITEM_APICOT_BERRY); GigantamaxFactor(TRUE); }
         PLAYER(SPECIES_MUNCHLAX) { Item(ITEM_APICOT_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_APICOT_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_APICOT_BERRY); }
@@ -1257,13 +1257,13 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Replenish recycles allies' berries 50\% of t
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft, dynamax: TRUE); }
     } SCENE {
         // turn 1
-        MESSAGE("Using Apicot Berry, the Sp. Def of Snorlax rose!");
+        MESSAGE("Using Apicot Berry, the Sp. Def of Dracomon rose!");
         MESSAGE("Using Apicot Berry, the Sp. Def of Munchlax rose!");
         MESSAGE("Using Apicot Berry, the Sp. Def of Foe Wobbuffet rose!");
         MESSAGE("Using Apicot Berry, the Sp. Def of Foe Wobbuffet rose!");
         // turn 2
-        MESSAGE("Snorlax used G-Max Replenish!");
-        MESSAGE("Snorlax found one Apicot Berry!");
+        MESSAGE("Dracomon used G-Max Replenish!");
+        MESSAGE("Dracomon found one Apicot Berry!");
         MESSAGE("Munchlax found one Apicot Berry!");
     }
 }
