@@ -1225,7 +1225,7 @@ Cry_Samuagumon::
 	.incbin "sound/direct_sound_samples/cries/samuagumon.bin"
 .endif @ P_FAMILY_SAMUAGUMON
 
-.if P_FAMILY_ELECTABUZZ == TRUE
+.if P_FAMILY_CANDLEMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
 Cry_Elekid::
@@ -1233,15 +1233,15 @@ Cry_Elekid::
 .endif @ P_GEN_2_CROSS_EVOS
 
 	.align 2
-Cry_Electabuzz::
-	.incbin "sound/direct_sound_samples/cries/electabuzz.bin"
+Cry_Candlemon::
+	.incbin "sound/direct_sound_samples/cries/candlemon.bin"
 
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
 Cry_Electivire::
 	.incbin "sound/direct_sound_samples/cries/electivire.bin"
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_ELECTABUZZ
+.endif @ P_FAMILY_CANDLEMON
 
 .if P_FAMILY_MAGMAR == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE

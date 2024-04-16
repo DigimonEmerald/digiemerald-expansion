@@ -6810,7 +6810,7 @@ static const u16 sSamuagumonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SAMUAGUMON
 
-#if P_FAMILY_ELECTABUZZ
+#if P_FAMILY_CANDLEMON
 #if P_GEN_2_CROSS_EVOS
 static const u16 sElekidTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -6852,7 +6852,7 @@ static const u16 sElekidTeachableLearnset[] = {
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const u16 sElectabuzzTeachableLearnset[] = {
+static const u16 sCandlemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -6947,7 +6947,7 @@ static const u16 sElectivireTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_ELECTABUZZ
+#endif //P_FAMILY_CANDLEMON
 
 #if P_FAMILY_MAGMAR
 #if P_GEN_2_CROSS_EVOS

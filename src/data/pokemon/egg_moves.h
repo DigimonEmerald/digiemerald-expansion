@@ -1109,7 +1109,7 @@ const u16 gEggMoves[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_SAMUAGUMON
 
-#if P_FAMILY_ELECTABUZZ
+#if P_FAMILY_CANDLEMON
 #if P_GEN_2_CROSS_EVOS
     egg_moves(ELEKID,
         MOVE_KARATE_CHOP,
@@ -1124,7 +1124,7 @@ const u16 gEggMoves[] = {
         MOVE_HAMMER_ARM,
         MOVE_FOCUS_PUNCH),
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ELECTABUZZ
+#endif //P_FAMILY_CANDLEMON
 
 #if P_FAMILY_MAGMAR
 #if P_GEN_2_CROSS_EVOS

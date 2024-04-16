@@ -3582,7 +3582,7 @@ static const struct LevelUpMove sSamuagumonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_SAMUAGUMON
 
-#if P_FAMILY_ELECTABUZZ
+#if P_FAMILY_CANDLEMON
 #if P_GEN_2_CROSS_EVOS
 static const struct LevelUpMove sElekidLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
@@ -3603,7 +3603,7 @@ static const struct LevelUpMove sElekidLevelUpLearnset[] = {
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const struct LevelUpMove sElectabuzzLevelUpLearnset[] = {
+static const struct LevelUpMove sCandlemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
@@ -3645,7 +3645,7 @@ static const struct LevelUpMove sElectivireLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_ELECTABUZZ
+#endif //P_FAMILY_CANDLEMON
 
 #if P_FAMILY_MAGMAR
 #if P_GEN_2_CROSS_EVOS

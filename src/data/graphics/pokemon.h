@@ -2071,7 +2071,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_SAMUAGUMON
 
-#if P_FAMILY_ELECTABUZZ
+#if P_FAMILY_CANDLEMON
 #if P_GEN_2_CROSS_EVOS
     const u32 gMonFrontPic_Elekid[] = INCBIN_U32("graphics/pokemon/elekid/anim_front.4bpp.lz");
     const u32 gMonPalette_Elekid[] = INCBIN_U32("graphics/pokemon/elekid/normal.gbapal.lz");
@@ -2083,13 +2083,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
 
-    const u32 gMonFrontPic_Electabuzz[] = INCBIN_U32("graphics/pokemon/electabuzz/anim_front.4bpp.lz");
-    const u32 gMonPalette_Electabuzz[] = INCBIN_U32("graphics/pokemon/electabuzz/normal.gbapal.lz");
-    const u32 gMonBackPic_Electabuzz[] = INCBIN_U32("graphics/pokemon/electabuzz/back.4bpp.lz");
-    const u32 gMonShinyPalette_Electabuzz[] = INCBIN_U32("graphics/pokemon/electabuzz/shiny.gbapal.lz");
-    const u8 gMonIcon_Electabuzz[] = INCBIN_U8("graphics/pokemon/electabuzz/icon.4bpp");
+    const u32 gMonFrontPic_Candlemon[] = INCBIN_U32("graphics/pokemon/candlemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Candlemon[] = INCBIN_U32("graphics/pokemon/candlemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Candlemon[] = INCBIN_U32("graphics/pokemon/candlemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Candlemon[] = INCBIN_U32("graphics/pokemon/candlemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Candlemon[] = INCBIN_U8("graphics/pokemon/candlemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Electabuzz[] = INCBIN_U8("graphics/pokemon/electabuzz/footprint.1bpp");
+    const u8 gMonFootprint_Candlemon[] = INCBIN_U8("graphics/pokemon/candlemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_4_CROSS_EVOS
@@ -2102,7 +2102,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Electivire[] = INCBIN_U8("graphics/pokemon/electivire/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_ELECTABUZZ
+#endif //P_FAMILY_CANDLEMON
 
 #if P_FAMILY_MAGMAR
 #if P_GEN_2_CROSS_EVOS

@@ -1867,7 +1867,7 @@ static const union AnimCmd sAnim_Samuagumon_1[] =
 };
 #endif //P_FAMILY_SAMUAGUMON
 
-#if P_FAMILY_ELECTABUZZ
+#if P_FAMILY_CANDLEMON
 #if P_GEN_2_CROSS_EVOS
 static const union AnimCmd sAnim_Elekid_1[] =
 {
@@ -1878,7 +1878,7 @@ static const union AnimCmd sAnim_Elekid_1[] =
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const union AnimCmd sAnim_Electabuzz_1[] =
+static const union AnimCmd sAnim_Candlemon_1[] =
 {
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_FRAME(1, 22),
@@ -1897,7 +1897,7 @@ static const union AnimCmd sAnim_Electivire_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_ELECTABUZZ
+#endif //P_FAMILY_CANDLEMON
 
 #if P_FAMILY_MAGMAR
 #if P_GEN_2_CROSS_EVOS
@@ -10611,15 +10611,15 @@ SINGLE_ANIMATION(Smoochum);
 #endif //P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Samuagumon);
 #endif //P_FAMILY_SAMUAGUMON
-#if P_FAMILY_ELECTABUZZ
+#if P_FAMILY_CANDLEMON
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Elekid);
 #endif //P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Electabuzz);
+SINGLE_ANIMATION(Candlemon);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Electivire);
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_ELECTABUZZ
+#endif //P_FAMILY_CANDLEMON
 #if P_FAMILY_MAGMAR
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Magby);

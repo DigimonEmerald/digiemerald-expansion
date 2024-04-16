@@ -12537,7 +12537,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_SAMUAGUMON
 
-#if P_FAMILY_ELECTABUZZ
+#if P_FAMILY_CANDLEMON
 #if P_GEN_2_CROSS_EVOS
     [SPECIES_ELEKID] =
     {
@@ -12591,11 +12591,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Elekid)
         .levelUpLearnset = sElekidLevelUpLearnset,
         .teachableLearnset = sElekidTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ELECTABUZZ}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_CANDLEMON}),
     },
 #endif //P_GEN_2_CROSS_EVOS
 
-    [SPECIES_ELECTABUZZ] =
+    [SPECIES_CANDLEMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 83,
@@ -12616,9 +12616,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_VITAL_SPIRIT },
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = TRUE,
-        .speciesName = _("Electabuzz"),
-        .cryId = CRY_ELECTABUZZ,
-        .natDexNum = NATIONAL_DEX_ELECTABUZZ,
+        .speciesName = _("Candlemon"),
+        .cryId = CRY_CANDLEMON,
+        .natDexNum = NATIONAL_DEX_CANDLEMON,
         .categoryName = _("Electric"),
         .height = 11,
         .weight = 300,
@@ -12626,27 +12626,27 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "When a storm approaches, it competes with\n"
             "others to scale heights that are likely to\n"
             "be stricken by lightning. Some towns use\n"
-            "Electabuzz in place of lightning rods."),
+            "Candlemon in place of lightning rods."),
         .pokemonScale = 351,
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Electabuzz,
+        .frontPic = gMonFrontPic_Candlemon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Electabuzz,
+        .frontAnimFrames = sAnims_Candlemon,
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL_SLOW,
-        .backPic = gMonBackPic_Electabuzz,
+        .backPic = gMonBackPic_Candlemon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
-        .palette = gMonPalette_Electabuzz,
-        .shinyPalette = gMonShinyPalette_Electabuzz,
-        .iconSprite = gMonIcon_Electabuzz,
+        .palette = gMonPalette_Candlemon,
+        .shinyPalette = gMonShinyPalette_Candlemon,
+        .iconSprite = gMonIcon_Candlemon,
         .iconPalIndex = 1,
-        FOOTPRINT(Electabuzz)
-        .levelUpLearnset = sElectabuzzLevelUpLearnset,
-        .teachableLearnset = sElectabuzzTeachableLearnset,
+        FOOTPRINT(Candlemon)
+        .levelUpLearnset = sCandlemonLevelUpLearnset,
+        .teachableLearnset = sCandlemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_ELECTIRIZER, SPECIES_ELECTIVIRE},
                                 {EVO_ITEM, ITEM_ELECTIRIZER, SPECIES_ELECTIVIRE}),
     },
@@ -12711,7 +12711,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sElectivireTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_ELECTABUZZ
+#endif //P_FAMILY_CANDLEMON
 
 #if P_FAMILY_MAGMAR
 #if P_GEN_2_CROSS_EVOS

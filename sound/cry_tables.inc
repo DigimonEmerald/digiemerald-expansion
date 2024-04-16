@@ -352,15 +352,15 @@ gCryTable::
 .endif @ P_GEN_2_CROSS_EVOS
 	cry Cry_Samuagumon
 .endif @ P_FAMILY_SAMUAGUMON
-.if P_FAMILY_ELECTABUZZ == TRUE
+.if P_FAMILY_CANDLEMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Elekid
 .endif @ P_GEN_2_CROSS_EVOS
-	cry Cry_Electabuzz
+	cry Cry_Candlemon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Electivire
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_ELECTABUZZ
+.endif @ P_FAMILY_CANDLEMON
 .if P_FAMILY_MAGMAR == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Magby
@@ -2778,15 +2778,15 @@ gCryTable_Reverse::
 .endif @ P_GEN_2_CROSS_EVOS
 	cry_reverse Cry_Samuagumon
 .endif @ P_FAMILY_SAMUAGUMON
-.if P_FAMILY_ELECTABUZZ == TRUE
+.if P_FAMILY_CANDLEMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Elekid
 .endif @ P_GEN_2_CROSS_EVOS
-	cry_reverse Cry_Electabuzz
+	cry_reverse Cry_Candlemon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Electivire
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_ELECTABUZZ
+.endif @ P_FAMILY_CANDLEMON
 .if P_FAMILY_MAGMAR == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Magby
