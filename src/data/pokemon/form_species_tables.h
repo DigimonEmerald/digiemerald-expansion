@@ -435,15 +435,15 @@ static const u16 sArmadilmonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_ARGOMON_ROOKIE
 
-#if P_FAMILY_KANGASKHAN
-static const u16 sKangaskhanFormSpeciesIdTable[] = {
-    SPECIES_KANGASKHAN,
+#if P_FAMILY_BETAMON_X
+static const u16 sBetamon_xFormSpeciesIdTable[] = {
+    SPECIES_BETAMON_X,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_KANGASKHAN_MEGA,
+    SPECIES_BETAMON_X_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_KANGASKHAN
+#endif //P_FAMILY_BETAMON_X
 
 #if P_FAMILY_MR_MIME
 static const u16 sMrMimeFormSpeciesIdTable[] = {

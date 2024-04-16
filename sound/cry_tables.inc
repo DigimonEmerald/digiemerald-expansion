@@ -304,12 +304,12 @@ gCryTable::
 	cry Cry_Tangrowth
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_BETAMON
-.if P_FAMILY_KANGASKHAN == TRUE
-	cry Cry_Kangaskhan
+.if P_FAMILY_BETAMON_X == TRUE
+	cry Cry_Betamon_x
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_KangaskhanMega
+	cry Cry_Betamon_xMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_KANGASKHAN
+.endif @ P_FAMILY_BETAMON_X
 .if P_FAMILY_HORSEA == TRUE
 	cry Cry_Horsea
 	cry Cry_Seadra
@@ -2730,12 +2730,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Tangrowth
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_BETAMON
-.if P_FAMILY_KANGASKHAN == TRUE
-	cry_reverse Cry_Kangaskhan
+.if P_FAMILY_BETAMON_X == TRUE
+	cry_reverse Cry_Betamon_x
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_KangaskhanMega
+	cry_reverse Cry_Betamon_xMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_KANGASKHAN
+.endif @ P_FAMILY_BETAMON_X
 .if P_FAMILY_HORSEA == TRUE
 	cry_reverse Cry_Horsea
 	cry_reverse Cry_Seadra

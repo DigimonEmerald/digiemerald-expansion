@@ -989,8 +989,8 @@ const u16 gEggMoves[] = {
         MOVE_WAKE_UP_SLAP),
 #endif //P_FAMILY_BETAMON
 
-#if P_FAMILY_KANGASKHAN
-    egg_moves(KANGASKHAN,
+#if P_FAMILY_BETAMON_X
+    egg_moves(BETAMON_X,
         MOVE_STOMP,
         MOVE_FORESIGHT,
         MOVE_FOCUS_ENERGY,
@@ -1004,7 +1004,7 @@ const u16 gEggMoves[] = {
         MOVE_TRUMP_CARD,
         MOVE_UPROAR,
         MOVE_CIRCLE_THROW),
-#endif //P_FAMILY_KANGASKHAN
+#endif //P_FAMILY_BETAMON_X
 
 #if P_FAMILY_HORSEA
     egg_moves(HORSEA,

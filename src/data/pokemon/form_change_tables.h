@@ -144,14 +144,14 @@ static const struct FormChange sWanyamonFormChangeTable[] =
 };
 #endif //P_FAMILY_VIXIMON
 
-#if P_FAMILY_KANGASKHAN
-static const struct FormChange sKangaskhanFormChangeTable[] = {
+#if P_FAMILY_BETAMON_X
+static const struct FormChange sBetamon_xFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_KANGASKHAN_MEGA, ITEM_KANGASKHANITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BETAMON_X_MEGA, ITEM_BETAMON_XITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_KANGASKHAN
+#endif //P_FAMILY_BETAMON_X
 
 #if P_FAMILY_SCYTHER
 #if P_GEN_2_CROSS_EVOS

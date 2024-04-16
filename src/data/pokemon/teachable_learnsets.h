@@ -6178,8 +6178,8 @@ static const u16 sTangrowthTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BETAMON
 
-#if P_FAMILY_KANGASKHAN
-static const u16 sKangaskhanTeachableLearnset[] = {
+#if P_FAMILY_BETAMON_X
+static const u16 sBetamon_xTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -6235,7 +6235,7 @@ static const u16 sKangaskhanTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_KANGASKHAN
+#endif //P_FAMILY_BETAMON_X
 
 #if P_FAMILY_HORSEA
 static const u16 sHorseaTeachableLearnset[] = {

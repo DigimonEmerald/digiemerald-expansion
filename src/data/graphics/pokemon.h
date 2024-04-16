@@ -1869,24 +1869,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BETAMON
 
-#if P_FAMILY_KANGASKHAN
-    const u32 gMonFrontPic_Kangaskhan[] = INCBIN_U32("graphics/pokemon/kangaskhan/anim_front.4bpp.lz");
-    const u32 gMonPalette_Kangaskhan[] = INCBIN_U32("graphics/pokemon/kangaskhan/normal.gbapal.lz");
-    const u32 gMonBackPic_Kangaskhan[] = INCBIN_U32("graphics/pokemon/kangaskhan/back.4bpp.lz");
-    const u32 gMonShinyPalette_Kangaskhan[] = INCBIN_U32("graphics/pokemon/kangaskhan/shiny.gbapal.lz");
-    const u8 gMonIcon_Kangaskhan[] = INCBIN_U8("graphics/pokemon/kangaskhan/icon.4bpp");
+#if P_FAMILY_BETAMON_X
+    const u32 gMonFrontPic_Betamon_x[] = INCBIN_U32("graphics/pokemon/betamon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Betamon_x[] = INCBIN_U32("graphics/pokemon/betamon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Betamon_x[] = INCBIN_U32("graphics/pokemon/betamon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Betamon_x[] = INCBIN_U32("graphics/pokemon/betamon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Betamon_x[] = INCBIN_U8("graphics/pokemon/betamon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Kangaskhan[] = INCBIN_U8("graphics/pokemon/kangaskhan/footprint.1bpp");
+    const u8 gMonFootprint_Betamon_x[] = INCBIN_U8("graphics/pokemon/betamon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_KangaskhanMega[] = INCBIN_U32("graphics/pokemon/kangaskhan/mega/front.4bpp.lz");
-    const u32 gMonPalette_KangaskhanMega[] = INCBIN_U32("graphics/pokemon/kangaskhan/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_KangaskhanMega[] = INCBIN_U32("graphics/pokemon/kangaskhan/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_KangaskhanMega[] = INCBIN_U32("graphics/pokemon/kangaskhan/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_KangaskhanMega[] = INCBIN_U8("graphics/pokemon/kangaskhan/mega/icon.4bpp");
+    const u32 gMonFrontPic_Betamon_xMega[] = INCBIN_U32("graphics/pokemon/betamon_x/mega/front.4bpp.lz");
+    const u32 gMonPalette_Betamon_xMega[] = INCBIN_U32("graphics/pokemon/betamon_x/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_Betamon_xMega[] = INCBIN_U32("graphics/pokemon/betamon_x/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_Betamon_xMega[] = INCBIN_U32("graphics/pokemon/betamon_x/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_Betamon_xMega[] = INCBIN_U8("graphics/pokemon/betamon_x/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_KANGASKHAN
+#endif //P_FAMILY_BETAMON_X
 
 #if P_FAMILY_HORSEA
     const u32 gMonFrontPic_Horsea[] = INCBIN_U32("graphics/pokemon/horsea/anim_front.4bpp.lz");

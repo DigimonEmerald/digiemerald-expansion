@@ -1686,8 +1686,8 @@ static const union AnimCmd sAnim_Tangrowth_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BETAMON
 
-#if P_FAMILY_KANGASKHAN
-static const union AnimCmd sAnim_Kangaskhan_1[] =
+#if P_FAMILY_BETAMON_X
+static const union AnimCmd sAnim_Betamon_x_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -1697,9 +1697,9 @@ static const union AnimCmd sAnim_Kangaskhan_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(KangaskhanMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Betamon_xMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_KANGASKHAN
+#endif //P_FAMILY_BETAMON_X
 
 #if P_FAMILY_HORSEA
 static const union AnimCmd sAnim_Horsea_1[] =
@@ -10562,12 +10562,12 @@ SINGLE_ANIMATION(Betamon);
 SINGLE_ANIMATION(Tangrowth);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BETAMON
-#if P_FAMILY_KANGASKHAN
-SINGLE_ANIMATION(Kangaskhan);
+#if P_FAMILY_BETAMON_X
+SINGLE_ANIMATION(Betamon_x);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(KangaskhanMega);
+SINGLE_ANIMATION(Betamon_xMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_KANGASKHAN
+#endif //P_FAMILY_BETAMON_X
 #if P_FAMILY_HORSEA
 SINGLE_ANIMATION(Horsea);
 SINGLE_ANIMATION(Seadra);

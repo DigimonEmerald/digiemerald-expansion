@@ -3398,8 +3398,8 @@ static const struct LevelUpMove sTangrowthLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BETAMON
 
-#if P_FAMILY_KANGASKHAN
-static const struct LevelUpMove sKangaskhanLevelUpLearnset[] = {
+#if P_FAMILY_BETAMON_X
+static const struct LevelUpMove sBetamon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 4, MOVE_GROWL),
@@ -3417,7 +3417,7 @@ static const struct LevelUpMove sKangaskhanLevelUpLearnset[] = {
     LEVEL_UP_MOVE(52, MOVE_LAST_RESORT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_KANGASKHAN
+#endif //P_FAMILY_BETAMON_X
 
 #if P_FAMILY_HORSEA
 static const struct LevelUpMove sHorseaLevelUpLearnset[] = {

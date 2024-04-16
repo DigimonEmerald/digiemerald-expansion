@@ -4786,14 +4786,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_KANGASKHANITE] =
+    [ITEM_BETAMON_XITE] =
     {
-        .name = _("Kangaskhanite"),
+        .name = _("Betamon_xite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Kangaskhan to Mega\n"
+            "Betamon_x to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

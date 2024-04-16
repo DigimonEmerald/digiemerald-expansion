@@ -116,7 +116,7 @@
 #define SPECIES_BAKOMON                                  112
 #define SPECIES_BEARMON                                 113
 #define SPECIES_BETAMON                                 114
-#define SPECIES_KANGASKHAN                              115
+#define SPECIES_BETAMON_X                              115
 #define SPECIES_HORSEA                                  116
 #define SPECIES_SEADRA                                  117
 #define SPECIES_GOLDEEN                                 118
@@ -973,7 +973,7 @@
 #define SPECIES_KAPURIMON_MEGA                           912
 #define SPECIES_PICKMON_SILVER_MEGA                            913
 #define SPECIES_TSUMEMON_MEGA                             914
-#define SPECIES_KANGASKHAN_MEGA                         915
+#define SPECIES_BETAMON_X_MEGA                         915
 #define SPECIES_PINSIR_MEGA                             916
 #define SPECIES_GYARADOS_MEGA                           917
 #define SPECIES_AERODACTYL_MEGA                         918

@@ -1123,17 +1123,17 @@ Cry_Tangrowth::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_BETAMON
 
-.if P_FAMILY_KANGASKHAN == TRUE
+.if P_FAMILY_BETAMON_X == TRUE
 	.align 2
-Cry_Kangaskhan::
-	.incbin "sound/direct_sound_samples/cries/kangaskhan.bin"
+Cry_Betamon_x::
+	.incbin "sound/direct_sound_samples/cries/betamon_x.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_KangaskhanMega::
-	.incbin "sound/direct_sound_samples/cries/kangaskhan_mega.bin"
+Cry_Betamon_xMega::
+	.incbin "sound/direct_sound_samples/cries/betamon_x_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_KANGASKHAN
+.endif @ P_FAMILY_BETAMON_X
 
 .if P_FAMILY_HORSEA == TRUE
 	.align 2

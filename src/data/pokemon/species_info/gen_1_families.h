@@ -11457,8 +11457,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BETAMON
 
-#if P_FAMILY_KANGASKHAN
-    [SPECIES_KANGASKHAN] =
+#if P_FAMILY_BETAMON_X
+    [SPECIES_BETAMON_X] =
     {
         .baseHP        = 105,
         .baseAttack    = 95,
@@ -11477,14 +11477,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_EARLY_BIRD, ABILITY_SCRAPPY, ABILITY_INNER_FOCUS },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Kangaskhan"),
-        .cryId = CRY_KANGASKHAN,
-        .natDexNum = NATIONAL_DEX_KANGASKHAN,
+        .speciesName = _("Betamon_x"),
+        .cryId = CRY_BETAMON_X,
+        .natDexNum = NATIONAL_DEX_BETAMON_X,
         .categoryName = _("Parent"),
         .height = 22,
         .weight = 800,
         .description = COMPOUND_STRING(
-            "If you come across a young Kangaskhan\n"
+            "If you come across a young Betamon_x\n"
             "playing by itself, never try to catch it.\n"
             "The baby's parent is sure to be in the area,\n"
             "and it will become violently enraged."),
@@ -11492,28 +11492,28 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 387,
         .trainerOffset = 8,
-        .frontPic = gMonFrontPic_Kangaskhan,
+        .frontPic = gMonFrontPic_Betamon_x,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_Kangaskhan,
+        .frontAnimFrames = sAnims_Betamon_x,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Kangaskhan,
+        .backPic = gMonBackPic_Betamon_x,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Kangaskhan,
-        .shinyPalette = gMonShinyPalette_Kangaskhan,
-        .iconSprite = gMonIcon_Kangaskhan,
+        .palette = gMonPalette_Betamon_x,
+        .shinyPalette = gMonShinyPalette_Betamon_x,
+        .iconSprite = gMonIcon_Betamon_x,
         .iconPalIndex = 2,
-        FOOTPRINT(Kangaskhan)
-        .levelUpLearnset = sKangaskhanLevelUpLearnset,
-        .teachableLearnset = sKangaskhanTeachableLearnset,
-        .formSpeciesIdTable = sKangaskhanFormSpeciesIdTable,
-        .formChangeTable = sKangaskhanFormChangeTable,
+        FOOTPRINT(Betamon_x)
+        .levelUpLearnset = sBetamon_xLevelUpLearnset,
+        .teachableLearnset = sBetamon_xTeachableLearnset,
+        .formSpeciesIdTable = sBetamon_xFormSpeciesIdTable,
+        .formChangeTable = sBetamon_xFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_KANGASKHAN_MEGA] =
+    [SPECIES_BETAMON_X_MEGA] =
     {
         .baseHP        = 105,
         .baseAttack    = 125,
@@ -11532,9 +11532,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_PARENTAL_BOND, ABILITY_PARENTAL_BOND, ABILITY_PARENTAL_BOND },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Kangaskhan"),
-        .cryId = CRY_KANGASKHAN_MEGA,
-        .natDexNum = NATIONAL_DEX_KANGASKHAN,
+        .speciesName = _("Betamon_x"),
+        .cryId = CRY_BETAMON_X_MEGA,
+        .natDexNum = NATIONAL_DEX_BETAMON_X,
         .categoryName = _("Parent"),
         .height = 22,
         .weight = 1000,
@@ -11547,28 +11547,28 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 387,
         .trainerOffset = 8,
-        .frontPic = gMonFrontPic_KangaskhanMega,
+        .frontPic = gMonFrontPic_Betamon_xMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_KangaskhanMega,
+        .frontAnimFrames = sAnims_Betamon_xMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_KangaskhanMega,
+        .backPic = gMonBackPic_Betamon_xMega,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_KangaskhanMega,
-        .shinyPalette = gMonShinyPalette_KangaskhanMega,
-        .iconSprite = gMonIcon_KangaskhanMega,
+        .palette = gMonPalette_Betamon_xMega,
+        .shinyPalette = gMonShinyPalette_Betamon_xMega,
+        .iconSprite = gMonIcon_Betamon_xMega,
         .iconPalIndex = 2,
-        FOOTPRINT(Kangaskhan)
+        FOOTPRINT(Betamon_x)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sKangaskhanLevelUpLearnset,
-        .teachableLearnset = sKangaskhanTeachableLearnset,
-        .formSpeciesIdTable = sKangaskhanFormSpeciesIdTable,
-        .formChangeTable = sKangaskhanFormChangeTable,
+        .levelUpLearnset = sBetamon_xLevelUpLearnset,
+        .teachableLearnset = sBetamon_xTeachableLearnset,
+        .formSpeciesIdTable = sBetamon_xFormSpeciesIdTable,
+        .formChangeTable = sBetamon_xFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_KANGASKHAN
+#endif //P_FAMILY_BETAMON_X
 
 #if P_FAMILY_HORSEA
     [SPECIES_HORSEA] =

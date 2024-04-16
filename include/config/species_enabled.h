@@ -107,7 +107,7 @@
 #define P_FAMILY_ARURAUMON                 P_GEN_1_POKEMON
 #define P_FAMILY_BEARMON                 P_GEN_1_POKEMON
 #define P_FAMILY_BETAMON                 P_GEN_1_POKEMON
-#define P_FAMILY_KANGASKHAN              P_GEN_1_POKEMON
+#define P_FAMILY_BETAMON_X              P_GEN_1_POKEMON
 #define P_FAMILY_HORSEA                  P_GEN_1_POKEMON
 #define P_FAMILY_GOLDEEN                 P_GEN_1_POKEMON
 #define P_FAMILY_STARYU                  P_GEN_1_POKEMON
