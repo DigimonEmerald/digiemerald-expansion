@@ -2419,13 +2419,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Dotagumon[] = INCBIN_U8("graphics/pokemon/dotagumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Dotagumonps[] = INCBIN_U32("graphics/pokemon/dotagumonps/anim_front.4bpp.lz");
-    const u32 gMonPalette_Dotagumonps[] = INCBIN_U32("graphics/pokemon/dotagumonps/normal.gbapal.lz");
-    const u32 gMonBackPic_Dotagumonps[] = INCBIN_U32("graphics/pokemon/dotagumonps/back.4bpp.lz");
-    const u32 gMonShinyPalette_Dotagumonps[] = INCBIN_U32("graphics/pokemon/dotagumonps/shiny.gbapal.lz");
-    const u8 gMonIcon_Dotagumonps[] = INCBIN_U8("graphics/pokemon/dotagumonps/icon.4bpp");
+    const u32 gMonFrontPic_Dotfalcmon[] = INCBIN_U32("graphics/pokemon/dotfalcmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Dotfalcmon[] = INCBIN_U32("graphics/pokemon/dotfalcmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Dotfalcmon[] = INCBIN_U32("graphics/pokemon/dotfalcmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Dotfalcmon[] = INCBIN_U32("graphics/pokemon/dotfalcmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Dotfalcmon[] = INCBIN_U8("graphics/pokemon/dotfalcmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Dotagumonps[] = INCBIN_U8("graphics/pokemon/dotagumonps/footprint.1bpp");
+    const u8 gMonFootprint_Dotfalcmon[] = INCBIN_U8("graphics/pokemon/dotfalcmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_DOTAGUMON
 

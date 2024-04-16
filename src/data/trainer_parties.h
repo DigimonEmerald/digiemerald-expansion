@@ -9732,7 +9732,7 @@ static const struct TrainerMon sParty_Roxanne3[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 40,
-    .species = SPECIES_DOTAGUMONPS,
+    .species = SPECIES_DOTFALCMON,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_SWORDS_DANCE, MOVE_ICE_BEAM, MOVE_SURF, MOVE_ROCK_SLIDE}
     },
@@ -9770,7 +9770,7 @@ static const struct TrainerMon sParty_Roxanne4[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 45,
-    .species = SPECIES_DOTAGUMONPS,
+    .species = SPECIES_DOTFALCMON,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_SWORDS_DANCE, MOVE_ICE_BEAM, MOVE_SURF, MOVE_ROCK_SLIDE}
     },
@@ -9815,7 +9815,7 @@ static const struct TrainerMon sParty_Roxanne5[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 50,
-    .species = SPECIES_DOTAGUMONPS,
+    .species = SPECIES_DOTFALCMON,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_SWORDS_DANCE, MOVE_ICE_BEAM, MOVE_SURF, MOVE_ROCK_SLIDE}
     },

@@ -424,7 +424,7 @@ gCryTable::
 .endif @ P_FAMILY_DONDOKOMON
 .if P_FAMILY_DOTAGUMON == TRUE
 	cry Cry_Dotagumon
-	cry Cry_Dotagumonps
+	cry Cry_Dotfalcmon
 .endif @ P_FAMILY_DOTAGUMON
 .if P_FAMILY_AERODACTYL == TRUE
 	cry Cry_Aerodactyl
@@ -2850,7 +2850,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_DONDOKOMON
 .if P_FAMILY_DOTAGUMON == TRUE
 	cry_reverse Cry_Dotagumon
-	cry_reverse Cry_Dotagumonps
+	cry_reverse Cry_Dotfalcmon
 .endif @ P_FAMILY_DOTAGUMON
 .if P_FAMILY_AERODACTYL == TRUE
 	cry_reverse Cry_Aerodactyl

@@ -4155,7 +4155,7 @@ static const struct LevelUpMove sDotagumonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sDotagumonpsLevelUpLearnset[] = {
+static const struct LevelUpMove sDotfalcmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FEINT),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),

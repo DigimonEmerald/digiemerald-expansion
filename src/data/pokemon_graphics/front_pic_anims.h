@@ -2162,7 +2162,7 @@ static const union AnimCmd sAnim_Dotagumon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Dotagumonps_1[] =
+static const union AnimCmd sAnim_Dotfalcmon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -10692,7 +10692,7 @@ SINGLE_ANIMATION(Dorumon);
 #endif //P_FAMILY_DONDOKOMON
 #if P_FAMILY_DOTAGUMON
 SINGLE_ANIMATION(Dotagumon);
-SINGLE_ANIMATION(Dotagumonps);
+SINGLE_ANIMATION(Dotfalcmon);
 #endif //P_FAMILY_DOTAGUMON
 #if P_FAMILY_AERODACTYL
 SINGLE_ANIMATION(Aerodactyl);

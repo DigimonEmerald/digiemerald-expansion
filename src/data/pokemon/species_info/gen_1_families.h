@@ -14523,10 +14523,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Dotagumon)
         .levelUpLearnset = sDotagumonLevelUpLearnset,
         .teachableLearnset = sDotagumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_DOTAGUMONPS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_DOTFALCMON}),
     },
 
-    [SPECIES_DOTAGUMONPS] =
+    [SPECIES_DOTFALCMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 115,
@@ -14551,14 +14551,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_BATTLE_ARMOR, ABILITY_WEAK_ARMOR },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Dotagumonps"),
-        .cryId = CRY_DOTAGUMONPS,
-        .natDexNum = NATIONAL_DEX_DOTAGUMONPS,
+        .speciesName = _("Dotfalcmon"),
+        .cryId = CRY_DOTFALCMON,
+        .natDexNum = NATIONAL_DEX_DOTFALCMON,
         .categoryName = _("Shellfish"),
         .height = 13,
         .weight = 405,
         .description = COMPOUND_STRING(
-            "Dotagumonps once swam underwater to hunt \n"
+            "Dotfalcmon once swam underwater to hunt \n"
             "for prey. It was apparently evolving from\n"
             "being a water dweller to living on land as\n"
             "evident from changes in its gills and legs."),
@@ -14566,22 +14566,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Dotagumonps,
+        .frontPic = gMonFrontPic_Dotfalcmon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Dotagumonps,
+        .frontAnimFrames = sAnims_Dotfalcmon,
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Dotagumonps,
+        .backPic = gMonBackPic_Dotfalcmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Dotagumonps,
-        .shinyPalette = gMonShinyPalette_Dotagumonps,
-        .iconSprite = gMonIcon_Dotagumonps,
+        .palette = gMonPalette_Dotfalcmon,
+        .shinyPalette = gMonShinyPalette_Dotfalcmon,
+        .iconSprite = gMonIcon_Dotfalcmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Dotagumonps)
-        .levelUpLearnset = sDotagumonpsLevelUpLearnset,
-        .teachableLearnset = sDotagumonpsTeachableLearnset,
+        FOOTPRINT(Dotfalcmon)
+        .levelUpLearnset = sDotfalcmonLevelUpLearnset,
+        .teachableLearnset = sDotfalcmonTeachableLearnset,
     },
 #endif //P_FAMILY_DOTAGUMON
 

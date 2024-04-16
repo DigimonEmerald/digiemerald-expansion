@@ -1383,8 +1383,8 @@ Cry_Dotagumon::
 	.incbin "sound/direct_sound_samples/cries/dotagumon.bin"
 
 	.align 2
-Cry_Dotagumonps::
-	.incbin "sound/direct_sound_samples/cries/dotagumonps.bin"
+Cry_Dotfalcmon::
+	.incbin "sound/direct_sound_samples/cries/dotfalcmon.bin"
 .endif @ P_FAMILY_DOTAGUMON
 
 .if P_FAMILY_AERODACTYL == TRUE
