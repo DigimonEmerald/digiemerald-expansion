@@ -1987,8 +1987,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(CommdramonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HAZYAGUMON
 
-#if P_FAMILY_LAPRAS
-static const union AnimCmd sAnim_Lapras_1[] =
+#if P_FAMILY_CORONAMON
+static const union AnimCmd sAnim_Coronamon_1[] =
 {
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 10),
@@ -1996,9 +1996,9 @@ static const union AnimCmd sAnim_Lapras_1[] =
 };
 
 #if P_GIGANTAMAX_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(LaprasGigantamax);
+PLACEHOLDER_ANIM_SINGLE_FRAME(CoronamonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_LAPRAS
+#endif //P_FAMILY_CORONAMON
 
 #if P_FAMILY_DITTO
 static const union AnimCmd sAnim_Ditto_1[] =
@@ -10648,12 +10648,12 @@ SINGLE_ANIMATION(Commdramon);
 SINGLE_ANIMATION(CommdramonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HAZYAGUMON
-#if P_FAMILY_LAPRAS
-SINGLE_ANIMATION(Lapras);
+#if P_FAMILY_CORONAMON
+SINGLE_ANIMATION(Coronamon);
 #if P_GIGANTAMAX_FORMS
-SINGLE_ANIMATION(LaprasGigantamax);
+SINGLE_ANIMATION(CoronamonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_LAPRAS
+#endif //P_FAMILY_CORONAMON
 #if P_FAMILY_DITTO
 SINGLE_ANIMATION(Ditto);
 #endif //P_FAMILY_DITTO

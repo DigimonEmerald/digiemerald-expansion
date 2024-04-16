@@ -13400,8 +13400,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HAZYAGUMON
 
-#if P_FAMILY_LAPRAS
-    [SPECIES_LAPRAS] =
+#if P_FAMILY_CORONAMON
+    [SPECIES_CORONAMON] =
     {
         .baseHP        = 130,
         .baseAttack    = 85,
@@ -13422,14 +13422,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_WATER_ABSORB, ABILITY_SHELL_ARMOR, ABILITY_HYDRATION },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Lapras"),
-        .cryId = CRY_LAPRAS,
-        .natDexNum = NATIONAL_DEX_LAPRAS,
+        .speciesName = _("Coronamon"),
+        .cryId = CRY_CORONAMON,
+        .natDexNum = NATIONAL_DEX_CORONAMON,
         .categoryName = _("Transport"),
         .height = 25,
         .weight = 2200,
         .description = COMPOUND_STRING(
-            "People have driven Lapras almost to the\n"
+            "People have driven Coronamon almost to the\n"
             "point of extinction. In the evenings,\n"
             "it is said to sing plaintively as it seeks\n"
             "what few others of its kind still remain."),
@@ -13437,28 +13437,28 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 10,
         .trainerScale = 423,
         .trainerOffset = 8,
-        .frontPic = gMonFrontPic_Lapras,
+        .frontPic = gMonFrontPic_Coronamon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Lapras,
+        .frontAnimFrames = sAnims_Coronamon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Lapras,
+        .backPic = gMonBackPic_Coronamon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
-        .palette = gMonPalette_Lapras,
-        .shinyPalette = gMonShinyPalette_Lapras,
-        .iconSprite = gMonIcon_Lapras,
+        .palette = gMonPalette_Coronamon,
+        .shinyPalette = gMonShinyPalette_Coronamon,
+        .iconSprite = gMonIcon_Coronamon,
         .iconPalIndex = 2,
-        FOOTPRINT(Lapras)
-        .levelUpLearnset = sLaprasLevelUpLearnset,
-        .teachableLearnset = sLaprasTeachableLearnset,
-        .formSpeciesIdTable = sLaprasFormSpeciesIdTable,
-        .formChangeTable = sLaprasFormChangeTable,
+        FOOTPRINT(Coronamon)
+        .levelUpLearnset = sCoronamonLevelUpLearnset,
+        .teachableLearnset = sCoronamonTeachableLearnset,
+        .formSpeciesIdTable = sCoronamonFormSpeciesIdTable,
+        .formChangeTable = sCoronamonFormChangeTable,
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_LAPRAS_GIGANTAMAX] =
+    [SPECIES_CORONAMON_GIGANTAMAX] =
     {
         .baseHP        = 130,
         .baseAttack    = 85,
@@ -13479,9 +13479,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_WATER_ABSORB, ABILITY_SHELL_ARMOR, ABILITY_HYDRATION },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Lapras"),
-        .cryId = CRY_LAPRAS,
-        .natDexNum = NATIONAL_DEX_LAPRAS,
+        .speciesName = _("Coronamon"),
+        .cryId = CRY_CORONAMON,
+        .natDexNum = NATIONAL_DEX_CORONAMON,
         .categoryName = _("Transport"),
         .height = 240,
         .weight = 0,
@@ -13494,28 +13494,28 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 10,
         .trainerScale = 423,
         .trainerOffset = 8,
-        .frontPic = gMonFrontPic_LaprasGigantamax,
+        .frontPic = gMonFrontPic_CoronamonGigantamax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_LaprasGigantamax,
+        .frontAnimFrames = sAnims_CoronamonGigantamax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_LaprasGigantamax,
+        .backPic = gMonBackPic_CoronamonGigantamax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_LaprasGigantamax,
-        .shinyPalette = gMonShinyPalette_LaprasGigantamax,
-        .iconSprite = gMonIcon_LaprasGigantamax,
+        .palette = gMonPalette_CoronamonGigantamax,
+        .shinyPalette = gMonShinyPalette_CoronamonGigantamax,
+        .iconSprite = gMonIcon_CoronamonGigantamax,
         .iconPalIndex = 2,
-        FOOTPRINT(Lapras)
+        FOOTPRINT(Coronamon)
         .isGigantamax = TRUE,
-        .levelUpLearnset = sLaprasLevelUpLearnset,
-        .teachableLearnset = sLaprasTeachableLearnset,
-        .formSpeciesIdTable = sLaprasFormSpeciesIdTable,
-        .formChangeTable = sLaprasFormChangeTable,
+        .levelUpLearnset = sCoronamonLevelUpLearnset,
+        .teachableLearnset = sCoronamonTeachableLearnset,
+        .formSpeciesIdTable = sCoronamonFormSpeciesIdTable,
+        .formChangeTable = sCoronamonFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_LAPRAS
+#endif //P_FAMILY_CORONAMON
 
 #if P_FAMILY_DITTO
     [SPECIES_DITTO] =

@@ -386,9 +386,9 @@ gCryTable::
 	cry Cry_CommdramonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HAZYAGUMON
-.if P_FAMILY_LAPRAS == TRUE
-	cry Cry_Lapras
-.endif @ P_FAMILY_LAPRAS
+.if P_FAMILY_CORONAMON == TRUE
+	cry Cry_Coronamon
+.endif @ P_FAMILY_CORONAMON
 .if P_FAMILY_DITTO == TRUE
 	cry Cry_Ditto
 .endif @ P_FAMILY_DITTO
@@ -2812,9 +2812,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_CommdramonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HAZYAGUMON
-.if P_FAMILY_LAPRAS == TRUE
-	cry_reverse Cry_Lapras
-.endif @ P_FAMILY_LAPRAS
+.if P_FAMILY_CORONAMON == TRUE
+	cry_reverse Cry_Coronamon
+.endif @ P_FAMILY_CORONAMON
 .if P_FAMILY_DITTO == TRUE
 	cry_reverse Cry_Ditto
 .endif @ P_FAMILY_DITTO

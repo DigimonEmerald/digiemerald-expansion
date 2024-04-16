@@ -2221,24 +2221,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HAZYAGUMON
 
-#if P_FAMILY_LAPRAS
-    const u32 gMonFrontPic_Lapras[] = INCBIN_U32("graphics/pokemon/lapras/anim_front.4bpp.lz");
-    const u32 gMonPalette_Lapras[] = INCBIN_U32("graphics/pokemon/lapras/normal.gbapal.lz");
-    const u32 gMonBackPic_Lapras[] = INCBIN_U32("graphics/pokemon/lapras/back.4bpp.lz");
-    const u32 gMonShinyPalette_Lapras[] = INCBIN_U32("graphics/pokemon/lapras/shiny.gbapal.lz");
-    const u8 gMonIcon_Lapras[] = INCBIN_U8("graphics/pokemon/lapras/icon.4bpp");
+#if P_FAMILY_CORONAMON
+    const u32 gMonFrontPic_Coronamon[] = INCBIN_U32("graphics/pokemon/coronamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Coronamon[] = INCBIN_U32("graphics/pokemon/coronamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Coronamon[] = INCBIN_U32("graphics/pokemon/coronamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Coronamon[] = INCBIN_U32("graphics/pokemon/coronamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Coronamon[] = INCBIN_U8("graphics/pokemon/coronamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Lapras[] = INCBIN_U8("graphics/pokemon/lapras/footprint.1bpp");
+    const u8 gMonFootprint_Coronamon[] = INCBIN_U8("graphics/pokemon/coronamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GIGANTAMAX_FORMS
-    const u32 gMonFrontPic_LaprasGigantamax[] = INCBIN_U32("graphics/pokemon/lapras/gigantamax/front.4bpp.lz");
-    const u32 gMonBackPic_LaprasGigantamax[] = INCBIN_U32("graphics/pokemon/lapras/gigantamax/back.4bpp.lz");
-    const u32 gMonPalette_LaprasGigantamax[] = INCBIN_U32("graphics/pokemon/lapras/gigantamax/normal.gbapal.lz");
-    const u32 gMonShinyPalette_LaprasGigantamax[] = INCBIN_U32("graphics/pokemon/lapras/gigantamax/shiny.gbapal.lz");
-    const u8 gMonIcon_LaprasGigantamax[] = INCBIN_U8("graphics/pokemon/lapras/gigantamax/icon.4bpp");
+    const u32 gMonFrontPic_CoronamonGigantamax[] = INCBIN_U32("graphics/pokemon/coronamon/gigantamax/front.4bpp.lz");
+    const u32 gMonBackPic_CoronamonGigantamax[] = INCBIN_U32("graphics/pokemon/coronamon/gigantamax/back.4bpp.lz");
+    const u32 gMonPalette_CoronamonGigantamax[] = INCBIN_U32("graphics/pokemon/coronamon/gigantamax/normal.gbapal.lz");
+    const u32 gMonShinyPalette_CoronamonGigantamax[] = INCBIN_U32("graphics/pokemon/coronamon/gigantamax/shiny.gbapal.lz");
+    const u8 gMonIcon_CoronamonGigantamax[] = INCBIN_U8("graphics/pokemon/coronamon/gigantamax/icon.4bpp");
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_LAPRAS
+#endif //P_FAMILY_CORONAMON
 
 #if P_FAMILY_DITTO
     const u32 gMonFrontPic_Ditto[] = INCBIN_U32("graphics/pokemon/ditto/anim_front.4bpp.lz");

@@ -132,7 +132,7 @@
 #define SPECIES_CHUUMON                                  128
 #define SPECIES_HAZYAGUMON                                129
 #define SPECIES_COMMDRAMON                                130
-#define SPECIES_LAPRAS                                  131
+#define SPECIES_CORONAMON                                  131
 #define SPECIES_DITTO                                   132
 #define SPECIES_EEVEE                                   133
 #define SPECIES_VAPOREON                                134
@@ -1602,7 +1602,7 @@
 #define SPECIES_KOZENIMON_GIGANTAMAX                      1495
 #define SPECIES_TSUMEMON_GIGANTAMAX                       1496
 #define SPECIES_WANYAMON_GIGANTAMAX                      1497
-#define SPECIES_LAPRAS_GIGANTAMAX                       1498
+#define SPECIES_CORONAMON_GIGANTAMAX                       1498
 #define SPECIES_EEVEE_GIGANTAMAX                        1499
 #define SPECIES_SNORLAX_GIGANTAMAX                      1500
 #define SPECIES_GARBODOR_GIGANTAMAX                     1501

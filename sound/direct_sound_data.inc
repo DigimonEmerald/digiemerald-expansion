@@ -1295,11 +1295,11 @@ Cry_CommdramonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HAZYAGUMON
 
-.if P_FAMILY_LAPRAS == TRUE
+.if P_FAMILY_CORONAMON == TRUE
 	.align 2
-Cry_Lapras::
-	.incbin "sound/direct_sound_samples/cries/lapras.bin"
-.endif @ P_FAMILY_LAPRAS
+Cry_Coronamon::
+	.incbin "sound/direct_sound_samples/cries/coronamon.bin"
+.endif @ P_FAMILY_CORONAMON
 
 .if P_FAMILY_DITTO == TRUE
 	.align 2

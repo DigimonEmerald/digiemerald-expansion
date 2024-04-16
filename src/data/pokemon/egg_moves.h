@@ -1175,8 +1175,8 @@ const u16 gEggMoves[] = {
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_CHUUMON
 
-#if P_FAMILY_LAPRAS
-    egg_moves(LAPRAS,
+#if P_FAMILY_CORONAMON
+    egg_moves(CORONAMON,
         MOVE_FORESIGHT,
         MOVE_TICKLE,
         MOVE_REFRESH,
@@ -1191,7 +1191,7 @@ const u16 gEggMoves[] = {
         MOVE_AVALANCHE,
         MOVE_FUTURE_SIGHT,
         MOVE_FREEZE_DRY),
-#endif //P_FAMILY_LAPRAS
+#endif //P_FAMILY_CORONAMON
 
 #if P_FAMILY_EEVEE
     egg_moves(EEVEE,

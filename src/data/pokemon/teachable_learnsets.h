@@ -7268,8 +7268,8 @@ static const u16 sCommdramonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_HAZYAGUMON
 
-#if P_FAMILY_LAPRAS
-static const u16 sLaprasTeachableLearnset[] = {
+#if P_FAMILY_CORONAMON
+static const u16 sCoronamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -7307,7 +7307,7 @@ static const u16 sLaprasTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_LAPRAS
+#endif //P_FAMILY_CORONAMON
 
 #if P_FAMILY_DITTO
 static const u16 sDittoTeachableLearnset[] = {

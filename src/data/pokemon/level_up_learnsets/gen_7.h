@@ -4039,8 +4039,8 @@ static const struct LevelUpMove sCommdramonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_HAZYAGUMON
 
-#if P_FAMILY_LAPRAS
-static const struct LevelUpMove sLaprasLevelUpLearnset[] = {
+#if P_FAMILY_CORONAMON
+static const struct LevelUpMove sCoronamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SING),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
@@ -4058,7 +4058,7 @@ static const struct LevelUpMove sLaprasLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_SHEER_COLD),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_LAPRAS
+#endif //P_FAMILY_CORONAMON
 
 #if P_FAMILY_DITTO
 static const struct LevelUpMove sDittoLevelUpLearnset[] = {

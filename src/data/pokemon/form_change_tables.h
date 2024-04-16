@@ -182,14 +182,14 @@ static const struct FormChange sCommdramonFormChangeTable[] = {
 };
 #endif //P_FAMILY_HAZYAGUMON
 
-#if P_FAMILY_LAPRAS
-static const struct FormChange sLaprasFormChangeTable[] = {
+#if P_FAMILY_CORONAMON
+static const struct FormChange sCoronamonFormChangeTable[] = {
 #if P_GIGANTAMAX_FORMS
-    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_LAPRAS_GIGANTAMAX},
+    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_CORONAMON_GIGANTAMAX},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_LAPRAS
+#endif //P_FAMILY_CORONAMON
 
 #if P_FAMILY_EEVEE
 static const struct FormChange sEeveeFormChangeTable[] = {

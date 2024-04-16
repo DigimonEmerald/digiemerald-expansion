@@ -499,15 +499,15 @@ static const u16 sCommdramonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_HAZYAGUMON
 
-#if P_FAMILY_LAPRAS
-static const u16 sLaprasFormSpeciesIdTable[] = {
-    SPECIES_LAPRAS,
+#if P_FAMILY_CORONAMON
+static const u16 sCoronamonFormSpeciesIdTable[] = {
+    SPECIES_CORONAMON,
 #if P_GIGANTAMAX_FORMS
-    SPECIES_LAPRAS_GIGANTAMAX,
+    SPECIES_CORONAMON_GIGANTAMAX,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_LAPRAS
+#endif //P_FAMILY_CORONAMON
 
 #if P_FAMILY_EEVEE
 static const u16 sEeveeFormSpeciesIdTable[] = {
