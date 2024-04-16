@@ -2211,8 +2211,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(DracomonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_DRACOMON
 
-#if P_FAMILY_ARTICUNO
-static const union AnimCmd sAnim_Articuno_1[] =
+#if P_FAMILY_DRACOMON_X
+static const union AnimCmd sAnim_Dracomon_x_1[] =
 {
     ANIMCMD_FRAME(1, 25),
     ANIMCMD_FRAME(0, 15),
@@ -2222,9 +2222,9 @@ static const union AnimCmd sAnim_Articuno_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(ArticunoGalarian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Dracomon_xGalarian);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ARTICUNO
+#endif //P_FAMILY_DRACOMON_X
 
 #if P_FAMILY_ZAPDOS
 static const union AnimCmd sAnim_Zapdos_1[] =
@@ -10709,12 +10709,12 @@ SINGLE_ANIMATION(Dracomon);
 SINGLE_ANIMATION(DracomonGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_DRACOMON
-#if P_FAMILY_ARTICUNO
-SINGLE_ANIMATION(Articuno);
+#if P_FAMILY_DRACOMON_X
+SINGLE_ANIMATION(Dracomon_x);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(ArticunoGalarian);
+SINGLE_ANIMATION(Dracomon_xGalarian);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ARTICUNO
+#endif //P_FAMILY_DRACOMON_X
 #if P_FAMILY_ZAPDOS
 SINGLE_ANIMATION(Zapdos);
 #if P_GALARIAN_FORMS

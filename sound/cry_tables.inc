@@ -438,9 +438,9 @@ gCryTable::
 .endif @ P_GEN_4_CROSS_EVOS
 	cry Cry_Dracomon
 .endif @ P_FAMILY_DRACOMON
-.if P_FAMILY_ARTICUNO == TRUE
-	cry Cry_Articuno
-.endif @ P_FAMILY_ARTICUNO
+.if P_FAMILY_DRACOMON_X == TRUE
+	cry Cry_Dracomon_x
+.endif @ P_FAMILY_DRACOMON_X
 .if P_FAMILY_ZAPDOS == TRUE
 	cry Cry_Zapdos
 .endif @ P_FAMILY_ZAPDOS
@@ -2864,9 +2864,9 @@ gCryTable_Reverse::
 .endif @ P_GEN_4_CROSS_EVOS
 	cry_reverse Cry_Dracomon
 .endif @ P_FAMILY_DRACOMON
-.if P_FAMILY_ARTICUNO == TRUE
-	cry_reverse Cry_Articuno
-.endif @ P_FAMILY_ARTICUNO
+.if P_FAMILY_DRACOMON_X == TRUE
+	cry_reverse Cry_Dracomon_x
+.endif @ P_FAMILY_DRACOMON_X
 .if P_FAMILY_ZAPDOS == TRUE
 	cry_reverse Cry_Zapdos
 .endif @ P_FAMILY_ZAPDOS

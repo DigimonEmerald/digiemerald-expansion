@@ -14873,8 +14873,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_DRACOMON
 
-#if P_FAMILY_ARTICUNO
-    [SPECIES_ARTICUNO] =
+#if P_FAMILY_DRACOMON_X
+    [SPECIES_DRACOMON_X] =
     {
         .baseHP        = 90,
         .baseAttack    = 85,
@@ -14899,14 +14899,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_SNOW_CLOAK },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Articuno"),
-        .cryId = CRY_ARTICUNO,
-        .natDexNum = NATIONAL_DEX_ARTICUNO,
+        .speciesName = _("Dracomon_x"),
+        .cryId = CRY_DRACOMON_X,
+        .natDexNum = NATIONAL_DEX_DRACOMON_X,
         .categoryName = _("Freeze"),
         .height = 17,
         .weight = 554,
         .description = COMPOUND_STRING(
-            "Articuno is a legendary bird Pokémon that\n"
+            "Dracomon_x is a legendary bird Pokémon that\n"
             "can control ice. The flapping of its wings\n"
             "chills the air. As a result, it is said that\n"
             "when this Pokémon flies, snow will fall."),
@@ -14914,28 +14914,28 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 309,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_Articuno,
+        .frontPic = gMonFrontPic_Dracomon_x,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Articuno,
+        .frontAnimFrames = sAnims_Dracomon_x,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Articuno,
+        .backPic = gMonBackPic_Dracomon_x,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
-        .palette = gMonPalette_Articuno,
-        .shinyPalette = gMonShinyPalette_Articuno,
-        .iconSprite = gMonIcon_Articuno,
+        .palette = gMonPalette_Dracomon_x,
+        .shinyPalette = gMonShinyPalette_Dracomon_x,
+        .iconSprite = gMonIcon_Dracomon_x,
         .iconPalIndex = 2,
-        FOOTPRINT(Articuno)
+        FOOTPRINT(Dracomon_x)
         .isLegendary = TRUE,
-        .levelUpLearnset = sArticunoLevelUpLearnset,
-        .teachableLearnset = sArticunoTeachableLearnset,
-        .formSpeciesIdTable = sArticunoFormSpeciesIdTable,
+        .levelUpLearnset = sDracomon_xLevelUpLearnset,
+        .teachableLearnset = sDracomon_xTeachableLearnset,
+        .formSpeciesIdTable = sDracomon_xFormSpeciesIdTable,
     },
 
 #if P_GALARIAN_FORMS
-    [SPECIES_ARTICUNO_GALARIAN] =
+    [SPECIES_DRACOMON_X_GALARIAN] =
     {
         .baseHP        = 90,
         .baseAttack    = 85,
@@ -14954,9 +14954,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_COMPETITIVE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Articuno"),
-        .cryId = CRY_ARTICUNO,
-        .natDexNum = NATIONAL_DEX_ARTICUNO,
+        .speciesName = _("Dracomon_x"),
+        .cryId = CRY_DRACOMON_X,
+        .natDexNum = NATIONAL_DEX_DRACOMON_X,
         .categoryName = _("Cruel"),
         .height = 17,
         .weight = 509,
@@ -14969,29 +14969,29 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 309,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_ArticunoGalarian,
+        .frontPic = gMonFrontPic_Dracomon_xGalarian,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_ArticunoGalarian,
+        .frontAnimFrames = sAnims_Dracomon_xGalarian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 10,
-        .backPic = gMonBackPic_ArticunoGalarian,
+        .backPic = gMonBackPic_Dracomon_xGalarian,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_ArticunoGalarian,
-        .shinyPalette = gMonShinyPalette_ArticunoGalarian,
-        .iconSprite = gMonIcon_ArticunoGalarian,
+        .palette = gMonPalette_Dracomon_xGalarian,
+        .shinyPalette = gMonShinyPalette_Dracomon_xGalarian,
+        .iconSprite = gMonIcon_Dracomon_xGalarian,
         .iconPalIndex = 2,
-        FOOTPRINT(Articuno)
+        FOOTPRINT(Dracomon_x)
         .isLegendary = TRUE,
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sArticunoGalarianLevelUpLearnset,
-        .teachableLearnset = sArticunoGalarianTeachableLearnset,
-        .formSpeciesIdTable = sArticunoFormSpeciesIdTable,
+        .levelUpLearnset = sDracomon_xGalarianLevelUpLearnset,
+        .teachableLearnset = sDracomon_xGalarianTeachableLearnset,
+        .formSpeciesIdTable = sDracomon_xFormSpeciesIdTable,
     },
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ARTICUNO
+#endif //P_FAMILY_DRACOMON_X
 
 #if P_FAMILY_ZAPDOS
     [SPECIES_ZAPDOS] =

@@ -3514,8 +3514,8 @@ static const struct LevelUpMove sDracomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_DRACOMON
 
-#if P_FAMILY_ARTICUNO
-static const struct LevelUpMove sArticunoLevelUpLearnset[] = {
+#if P_FAMILY_DRACOMON_X
+static const struct LevelUpMove sDracomon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GUST),
     LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE(13, MOVE_MIST),
@@ -3529,7 +3529,7 @@ static const struct LevelUpMove sArticunoLevelUpLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const struct LevelUpMove sArticunoGalarianLevelUpLearnset[] = {
+static const struct LevelUpMove sDracomon_xGalarianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GUST),
     LEVEL_UP_MOVE( 1, MOVE_PSYCHO_SHIFT),
     LEVEL_UP_MOVE( 5, MOVE_CONFUSION),
@@ -3549,7 +3549,7 @@ static const struct LevelUpMove sArticunoGalarianLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ARTICUNO
+#endif //P_FAMILY_DRACOMON_X
 
 #if P_FAMILY_ZAPDOS
 static const struct LevelUpMove sZapdosLevelUpLearnset[] = {

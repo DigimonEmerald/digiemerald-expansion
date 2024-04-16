@@ -1411,11 +1411,11 @@ Cry_Dracomon::
 	.incbin "sound/direct_sound_samples/cries/dracomon.bin"
 .endif @ P_FAMILY_DRACOMON
 
-.if P_FAMILY_ARTICUNO == TRUE
+.if P_FAMILY_DRACOMON_X == TRUE
 	.align 2
-Cry_Articuno::
-	.incbin "sound/direct_sound_samples/cries/articuno.bin"
-.endif @ P_FAMILY_ARTICUNO
+Cry_Dracomon_x::
+	.incbin "sound/direct_sound_samples/cries/dracomon_x.bin"
+.endif @ P_FAMILY_DRACOMON_X
 
 .if P_FAMILY_ZAPDOS == TRUE
 	.align 2

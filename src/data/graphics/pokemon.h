@@ -2478,24 +2478,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_DRACOMON
 
-#if P_FAMILY_ARTICUNO
-    const u32 gMonFrontPic_Articuno[] = INCBIN_U32("graphics/pokemon/articuno/anim_front.4bpp.lz");
-    const u32 gMonPalette_Articuno[] = INCBIN_U32("graphics/pokemon/articuno/normal.gbapal.lz");
-    const u32 gMonBackPic_Articuno[] = INCBIN_U32("graphics/pokemon/articuno/back.4bpp.lz");
-    const u32 gMonShinyPalette_Articuno[] = INCBIN_U32("graphics/pokemon/articuno/shiny.gbapal.lz");
-    const u8 gMonIcon_Articuno[] = INCBIN_U8("graphics/pokemon/articuno/icon.4bpp");
+#if P_FAMILY_DRACOMON_X
+    const u32 gMonFrontPic_Dracomon_x[] = INCBIN_U32("graphics/pokemon/dracomon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Dracomon_x[] = INCBIN_U32("graphics/pokemon/dracomon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Dracomon_x[] = INCBIN_U32("graphics/pokemon/dracomon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Dracomon_x[] = INCBIN_U32("graphics/pokemon/dracomon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Dracomon_x[] = INCBIN_U8("graphics/pokemon/dracomon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Articuno[] = INCBIN_U8("graphics/pokemon/articuno/footprint.1bpp");
+    const u8 gMonFootprint_Dracomon_x[] = INCBIN_U8("graphics/pokemon/dracomon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GALARIAN_FORMS
-    const u32 gMonFrontPic_ArticunoGalarian[] = INCBIN_U32("graphics/pokemon/articuno/galarian/front.4bpp.lz");
-    const u32 gMonPalette_ArticunoGalarian[] = INCBIN_U32("graphics/pokemon/articuno/galarian/normal.gbapal.lz");
-    const u32 gMonBackPic_ArticunoGalarian[] = INCBIN_U32("graphics/pokemon/articuno/galarian/back.4bpp.lz");
-    const u32 gMonShinyPalette_ArticunoGalarian[] = INCBIN_U32("graphics/pokemon/articuno/galarian/shiny.gbapal.lz");
-    const u8 gMonIcon_ArticunoGalarian[] = INCBIN_U8("graphics/pokemon/articuno/galarian/icon.4bpp");
+    const u32 gMonFrontPic_Dracomon_xGalarian[] = INCBIN_U32("graphics/pokemon/dracomon_x/galarian/front.4bpp.lz");
+    const u32 gMonPalette_Dracomon_xGalarian[] = INCBIN_U32("graphics/pokemon/dracomon_x/galarian/normal.gbapal.lz");
+    const u32 gMonBackPic_Dracomon_xGalarian[] = INCBIN_U32("graphics/pokemon/dracomon_x/galarian/back.4bpp.lz");
+    const u32 gMonShinyPalette_Dracomon_xGalarian[] = INCBIN_U32("graphics/pokemon/dracomon_x/galarian/shiny.gbapal.lz");
+    const u8 gMonIcon_Dracomon_xGalarian[] = INCBIN_U8("graphics/pokemon/dracomon_x/galarian/icon.4bpp");
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ARTICUNO
+#endif //P_FAMILY_DRACOMON_X
 
 #if P_FAMILY_ZAPDOS
     const u32 gMonFrontPic_Zapdos[] = INCBIN_U32("graphics/pokemon/zapdos/anim_front.4bpp.lz");

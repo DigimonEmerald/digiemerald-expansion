@@ -127,7 +127,7 @@
 #define P_FAMILY_DOTAGUMON                  P_GEN_1_POKEMON
 #define P_FAMILY_DRACMON              P_GEN_1_POKEMON
 #define P_FAMILY_DRACOMON                 P_GEN_1_POKEMON
-#define P_FAMILY_ARTICUNO                P_GEN_1_POKEMON
+#define P_FAMILY_DRACOMON_X                P_GEN_1_POKEMON
 #define P_FAMILY_ZAPDOS                  P_GEN_1_POKEMON
 #define P_FAMILY_MOLTRES                 P_GEN_1_POKEMON
 #define P_FAMILY_DRATINI                 P_GEN_1_POKEMON
