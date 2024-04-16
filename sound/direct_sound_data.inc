@@ -1029,8 +1029,8 @@ Cry_Agumon_06::
 	.incbin "sound/direct_sound_samples/cries/agumon_06.bin"
 
 	.align 2
-Cry_Marowak::
-	.incbin "sound/direct_sound_samples/cries/marowak.bin"
+Cry_Agumon_expert::
+	.incbin "sound/direct_sound_samples/cries/agumon_expert.bin"
 .endif @ P_FAMILY_AGUMON_06
 
 .if P_FAMILY_HITMONS == TRUE
@@ -1041,8 +1041,8 @@ Cry_Tyrogue::
 .endif @ P_GEN_2_CROSS_EVOS
 
 	.align 2
-Cry_Hitmonlee::
-	.incbin "sound/direct_sound_samples/cries/hitmonlee.bin"
+Cry_Agumon_x::
+	.incbin "sound/direct_sound_samples/cries/agumon_x.bin"
 
 	.align 2
 Cry_Hitmonchan::

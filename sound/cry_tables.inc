@@ -260,13 +260,13 @@ gCryTable::
 .endif @ P_FAMILY_YOKOMON
 .if P_FAMILY_AGUMON_06 == TRUE
 	cry Cry_Agumon_06
-	cry Cry_Marowak
+	cry Cry_Agumon_expert
 .endif @ P_FAMILY_AGUMON_06
 .if P_FAMILY_HITMONS == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Tyrogue
 .endif @ P_GEN_2_CROSS_EVOS
-	cry Cry_Hitmonlee
+	cry Cry_Agumon_x
 	cry Cry_Hitmonchan
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Hitmontop
@@ -2686,13 +2686,13 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_YOKOMON
 .if P_FAMILY_AGUMON_06 == TRUE
 	cry_reverse Cry_Agumon_06
-	cry_reverse Cry_Marowak
+	cry_reverse Cry_Agumon_expert
 .endif @ P_FAMILY_AGUMON_06
 .if P_FAMILY_HITMONS == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Tyrogue
 .endif @ P_GEN_2_CROSS_EVOS
-	cry_reverse Cry_Hitmonlee
+	cry_reverse Cry_Agumon_x
 	cry_reverse Cry_Hitmonchan
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Hitmontop

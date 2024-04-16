@@ -17,7 +17,7 @@ const u8 gPetitmonPokedexText[] = _(
     "energy in a burst, the electric power is\n"
     "equal to a lightning bolt.");
 
-const u8 gMarowakAlolanPokedexText[] = _(
+const u8 gAgumon_expertAlolanPokedexText[] = _(
     "The cursed flames that light up the bone\n"
     "carried by this Pokémon are said\n"
     "to cause both mental and physical\n"

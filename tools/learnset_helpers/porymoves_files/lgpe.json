@@ -7621,7 +7621,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "MAROWAK": {
+  "AGUMON_EXPERT": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -7715,7 +7715,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "HITMONLEE": {
+  "AGUMON_X": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -12594,7 +12594,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "MAROWAK_ALOLAN": {
+  "AGUMON_EXPERT_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 0,

@@ -8397,7 +8397,7 @@
       "MOVE_SCORCHING_SANDS"
     ]
   },
-  "MAROWAK": {
+  "AGUMON_EXPERT": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -8521,7 +8521,7 @@
     ],
     "TutorMoves": []
   },
-  "HITMONLEE": {
+  "AGUMON_X": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -78885,7 +78885,7 @@
       "MOVE_DRACO_METEOR"
     ]
   },
-  "MAROWAK_ALOLAN": {
+  "AGUMON_EXPERT_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 0,

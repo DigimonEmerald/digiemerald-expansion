@@ -1662,21 +1662,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Agumon_06[] = INCBIN_U8("graphics/pokemon/agumon_06/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Marowak[] = INCBIN_U32("graphics/pokemon/marowak/anim_front.4bpp.lz");
-    const u32 gMonPalette_Marowak[] = INCBIN_U32("graphics/pokemon/marowak/normal.gbapal.lz");
-    const u32 gMonBackPic_Marowak[] = INCBIN_U32("graphics/pokemon/marowak/back.4bpp.lz");
-    const u32 gMonShinyPalette_Marowak[] = INCBIN_U32("graphics/pokemon/marowak/shiny.gbapal.lz");
-    const u8 gMonIcon_Marowak[] = INCBIN_U8("graphics/pokemon/marowak/icon.4bpp");
+    const u32 gMonFrontPic_Agumon_expert[] = INCBIN_U32("graphics/pokemon/agumon_expert/anim_front.4bpp.lz");
+    const u32 gMonPalette_Agumon_expert[] = INCBIN_U32("graphics/pokemon/agumon_expert/normal.gbapal.lz");
+    const u32 gMonBackPic_Agumon_expert[] = INCBIN_U32("graphics/pokemon/agumon_expert/back.4bpp.lz");
+    const u32 gMonShinyPalette_Agumon_expert[] = INCBIN_U32("graphics/pokemon/agumon_expert/shiny.gbapal.lz");
+    const u8 gMonIcon_Agumon_expert[] = INCBIN_U8("graphics/pokemon/agumon_expert/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Marowak[] = INCBIN_U8("graphics/pokemon/marowak/footprint.1bpp");
+    const u8 gMonFootprint_Agumon_expert[] = INCBIN_U8("graphics/pokemon/agumon_expert/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_ALOLAN_FORMS
-    const u32 gMonFrontPic_MarowakAlolan[] = INCBIN_U32("graphics/pokemon/marowak/alolan/front.4bpp.lz");
-    const u32 gMonPalette_MarowakAlolan[] = INCBIN_U32("graphics/pokemon/marowak/alolan/normal.gbapal.lz");
-    const u32 gMonBackPic_MarowakAlolan[] = INCBIN_U32("graphics/pokemon/marowak/alolan/back.4bpp.lz");
-    const u32 gMonShinyPalette_MarowakAlolan[] = INCBIN_U32("graphics/pokemon/marowak/alolan/shiny.gbapal.lz");
-    const u8 gMonIcon_MarowakAlolan[] = INCBIN_U8("graphics/pokemon/marowak/alolan/icon.4bpp");
+    const u32 gMonFrontPic_Agumon_expertAlolan[] = INCBIN_U32("graphics/pokemon/agumon_expert/alolan/front.4bpp.lz");
+    const u32 gMonPalette_Agumon_expertAlolan[] = INCBIN_U32("graphics/pokemon/agumon_expert/alolan/normal.gbapal.lz");
+    const u32 gMonBackPic_Agumon_expertAlolan[] = INCBIN_U32("graphics/pokemon/agumon_expert/alolan/back.4bpp.lz");
+    const u32 gMonShinyPalette_Agumon_expertAlolan[] = INCBIN_U32("graphics/pokemon/agumon_expert/alolan/shiny.gbapal.lz");
+    const u8 gMonIcon_Agumon_expertAlolan[] = INCBIN_U8("graphics/pokemon/agumon_expert/alolan/icon.4bpp");
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_AGUMON_06
 
@@ -1692,13 +1692,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
 
-    const u32 gMonFrontPic_Hitmonlee[] = INCBIN_U32("graphics/pokemon/hitmonlee/anim_front.4bpp.lz");
-    const u32 gMonPalette_Hitmonlee[] = INCBIN_U32("graphics/pokemon/hitmonlee/normal.gbapal.lz");
-    const u32 gMonBackPic_Hitmonlee[] = INCBIN_U32("graphics/pokemon/hitmonlee/back.4bpp.lz");
-    const u32 gMonShinyPalette_Hitmonlee[] = INCBIN_U32("graphics/pokemon/hitmonlee/shiny.gbapal.lz");
-    const u8 gMonIcon_Hitmonlee[] = INCBIN_U8("graphics/pokemon/hitmonlee/icon.4bpp");
+    const u32 gMonFrontPic_Agumon_x[] = INCBIN_U32("graphics/pokemon/agumon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Agumon_x[] = INCBIN_U32("graphics/pokemon/agumon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Agumon_x[] = INCBIN_U32("graphics/pokemon/agumon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Agumon_x[] = INCBIN_U32("graphics/pokemon/agumon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Agumon_x[] = INCBIN_U8("graphics/pokemon/agumon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Hitmonlee[] = INCBIN_U8("graphics/pokemon/hitmonlee/footprint.1bpp");
+    const u8 gMonFootprint_Agumon_x[] = INCBIN_U8("graphics/pokemon/agumon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Hitmonchan[] = INCBIN_U32("graphics/pokemon/hitmonchan/anim_front.4bpp.lz");

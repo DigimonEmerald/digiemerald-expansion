@@ -2131,14 +2131,14 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "MAROWAK": {
+  "AGUMON_EXPERT": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
-  "HITMONLEE": {
+  "AGUMON_X": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -17041,7 +17041,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "MAROWAK_ALOLAN": {
+  "AGUMON_EXPERT_ALOLAN": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],

@@ -415,11 +415,11 @@ static const u16 sAgumonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_YOKOMON
 
 #if P_FAMILY_AGUMON_06
-static const u16 sMarowakFormSpeciesIdTable[] = {
-    SPECIES_MAROWAK,
+static const u16 sAgumon_expertFormSpeciesIdTable[] = {
+    SPECIES_AGUMON_EXPERT,
 #if P_ALOLAN_FORMS
-    SPECIES_MAROWAK_ALOLAN,
-    SPECIES_MAROWAK_ALOLAN_TOTEM,
+    SPECIES_AGUMON_EXPERT_ALOLAN,
+    SPECIES_AGUMON_EXPERT_ALOLAN_TOTEM,
 #endif
     FORM_SPECIES_END,
 };

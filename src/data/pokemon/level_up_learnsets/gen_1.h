@@ -2032,7 +2032,7 @@ static const struct LevelUpMove sAgumon_06LevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sMarowakLevelUpLearnset[] = {
+static const struct LevelUpMove sAgumon_expertLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BONE_CLUB),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE(10, MOVE_BONE_CLUB),
@@ -2047,7 +2047,7 @@ static const struct LevelUpMove sMarowakLevelUpLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const struct LevelUpMove sMarowakAlolanLevelUpLearnset[] = {
+static const struct LevelUpMove sAgumon_expertAlolanLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_BONE_CLUB),
@@ -2080,7 +2080,7 @@ static const struct LevelUpMove sTyrogueLevelUpLearnset[] = {
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const struct LevelUpMove sHitmonleeLevelUpLearnset[] = {
+static const struct LevelUpMove sAgumon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_KICK),
     LEVEL_UP_MOVE( 1, MOVE_MEDITATE),
     LEVEL_UP_MOVE(33, MOVE_ROLLING_KICK),

@@ -844,7 +844,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_MAROWAK] = {
+    [SPECIES_AGUMON_EXPERT] = {
         { .songLengthId =  0 },
         { .songLengthId = 26 },
         { .songLengthId =  0 },
@@ -852,7 +852,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_HITMONLEE] = {
+    [SPECIES_AGUMON_X] = {
         { .songLengthId = 17 },
         { .songLengthId = 21 },
         { .songLengthId = 12 },

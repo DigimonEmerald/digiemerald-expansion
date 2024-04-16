@@ -9333,7 +9333,7 @@ static inline u32 CalcAttackStat(u32 move, u32 battlerAtk, u32 battlerDef, u32 m
     switch (holdEffectAtk)
     {
     case HOLD_EFFECT_THICK_CLUB:
-        if ((atkBaseSpeciesId == SPECIES_AGUMON_06 || atkBaseSpeciesId == SPECIES_MAROWAK) && IS_MOVE_PHYSICAL(move))
+        if ((atkBaseSpeciesId == SPECIES_AGUMON_06 || atkBaseSpeciesId == SPECIES_AGUMON_EXPERT) && IS_MOVE_PHYSICAL(move))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
         break;
     case HOLD_EFFECT_DEEP_SEA_TOOTH:

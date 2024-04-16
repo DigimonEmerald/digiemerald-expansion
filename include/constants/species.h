@@ -106,8 +106,8 @@
 #define SPECIES_YOKOMON                               102
 #define SPECIES_AGUMON                               103
 #define SPECIES_AGUMON_06                                  104
-#define SPECIES_MAROWAK                                 105
-#define SPECIES_HITMONLEE                               106
+#define SPECIES_AGUMON_EXPERT                                 105
+#define SPECIES_AGUMON_X                               106
 #define SPECIES_HITMONCHAN                              107
 #define SPECIES_LICKITUNG                               108
 #define SPECIES_KOFFING                                 109
@@ -1031,7 +1031,7 @@
 #define SPECIES_SAKUTTOMON_ALOLAN                           970
 #define SPECIES_SUNMON_ALOLAN                              971
 #define SPECIES_AGUMON_ALOLAN                        972
-#define SPECIES_MAROWAK_ALOLAN                          973
+#define SPECIES_AGUMON_EXPERT_ALOLAN                          973
 #define SPECIES_CALUMON_GALARIAN                         974
 #define SPECIES_NEGAMON_GALARIAN                         975
 #define SPECIES_NYAROMON_GALARIAN                       976
@@ -1587,7 +1587,7 @@
 #define SPECIES_MIMIKYU_TOTEM                           SPECIES_MIMIKYU_TOTEM_DISGUISED
 #define SPECIES_MIMIKYU_TOTEM_DISGUISED                 1481
 #define SPECIES_KOMMO_O_TOTEM                           1482
-#define SPECIES_MAROWAK_ALOLAN_TOTEM                    1483
+#define SPECIES_AGUMON_EXPERT_ALOLAN_TOTEM                    1483
 #define SPECIES_RIBOMBEE_TOTEM                          1484
 #define SPECIES_ARAQUANID_TOTEM                         1485
 #define SPECIES_TOGEDEMARU_TOTEM                        1486

@@ -5331,7 +5331,7 @@ static const u16 sAgumon_06TeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sMarowakTeachableLearnset[] = {
+static const u16 sAgumon_expertTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -5378,7 +5378,7 @@ static const u16 sMarowakTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sMarowakAlolanTeachableLearnset[] = {
+static const u16 sAgumon_expertAlolanTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -5460,7 +5460,7 @@ static const u16 sTyrogueTeachableLearnset[] = {
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const u16 sHitmonleeTeachableLearnset[] = {
+static const u16 sAgumon_xTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,

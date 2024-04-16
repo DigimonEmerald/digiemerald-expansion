@@ -3572,7 +3572,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                 {
                                     [0] =
                                         {
-                                            .species = SPECIES_HITMONLEE,
+                                            .species = SPECIES_AGUMON_X,
                                             .heldItem = ITEM_FOCUS_BAND,
                                             .moves = {MOVE_MEGA_KICK, MOVE_MIND_READER, MOVE_FOCUS_ENERGY, MOVE_HIGH_JUMP_KICK},
                                             .hpEV = 255,
@@ -3586,7 +3586,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 0,
                                             .personality = 0x3,
-                                            .nickname = _("HITMONLEE"),
+                                            .nickname = _("AGUMON_X"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [1] =
@@ -4514,7 +4514,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [5] =
                                         {
-                                            .species = SPECIES_MAROWAK,
+                                            .species = SPECIES_AGUMON_EXPERT,
                                             .heldItem = ITEM_QUICK_CLAW,
                                             .moves = {MOVE_PERISH_SONG, MOVE_EARTHQUAKE, MOVE_COUNTER, MOVE_PROTECT},
                                             .hpEV = 252,
@@ -4529,7 +4529,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 1,
                                             .personality = 0x17,
-                                            .nickname = _("MAROWAK"),
+                                            .nickname = _("AGUMON_EXPERT"),
                                             .friendship = 0,
                                         },
                                 },

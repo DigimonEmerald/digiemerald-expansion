@@ -1487,7 +1487,7 @@ static const union AnimCmd sAnim_Agumon_06_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Marowak_1[] =
+static const union AnimCmd sAnim_Agumon_expert_1[] =
 {
     ANIMCMD_FRAME(1, 14),
     ANIMCMD_FRAME(0, 14),
@@ -1499,7 +1499,7 @@ static const union AnimCmd sAnim_Marowak_1[] =
 };
 
 #if P_ALOLAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(MarowakAlolan);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Agumon_expertAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_AGUMON_06
 
@@ -1513,7 +1513,7 @@ static const union AnimCmd sAnim_Tyrogue_1[] =
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const union AnimCmd sAnim_Hitmonlee_1[] =
+static const union AnimCmd sAnim_Agumon_x_1[] =
 {
     ANIMCMD_FRAME(0, 16),
     ANIMCMD_FRAME(1, 18),
@@ -10512,16 +10512,16 @@ SINGLE_ANIMATION(AgumonAlolan);
 #endif //P_FAMILY_YOKOMON
 #if P_FAMILY_AGUMON_06
 SINGLE_ANIMATION(Agumon_06);
-SINGLE_ANIMATION(Marowak);
+SINGLE_ANIMATION(Agumon_expert);
 #if P_ALOLAN_FORMS
-SINGLE_ANIMATION(MarowakAlolan);
+SINGLE_ANIMATION(Agumon_expertAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_AGUMON_06
 #if P_FAMILY_HITMONS
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Tyrogue);
 #endif //P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Hitmonlee);
+SINGLE_ANIMATION(Agumon_x);
 SINGLE_ANIMATION(Hitmonchan);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Hitmontop);

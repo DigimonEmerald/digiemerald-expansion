@@ -13307,7 +13307,7 @@
       "MOVE_UPROAR"
     ]
   },
-  "MAROWAK": {
+  "AGUMON_EXPERT": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -13460,7 +13460,7 @@
       "MOVE_UPROAR"
     ]
   },
-  "HITMONLEE": {
+  "AGUMON_X": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -106754,7 +106754,7 @@
       "MOVE_ZEN_HEADBUTT"
     ]
   },
-  "MAROWAK_ALOLAN": {
+  "AGUMON_EXPERT_ALOLAN": {
     "LevelMoves": [
       {
         "Level": 1,

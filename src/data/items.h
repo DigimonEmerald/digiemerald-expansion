@@ -6209,7 +6209,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "A hold item that \n"
             "raises Agumon_06 or\n"
-            "Marowak's Attack."),
+            "Agumon_expert's Attack."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
