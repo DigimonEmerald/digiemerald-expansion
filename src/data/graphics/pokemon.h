@@ -1965,7 +1965,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_BLKGUILMON
 
-#if P_FAMILY_MR_MIME
+#if P_FAMILY_BULUCOMON
 #if P_GEN_4_CROSS_EVOS
     const u32 gMonFrontPic_MimeJr[] = INCBIN_U32("graphics/pokemon/mime_jr/anim_front.4bpp.lz");
     const u32 gMonPalette_MimeJr[] = INCBIN_U32("graphics/pokemon/mime_jr/normal.gbapal.lz");
@@ -1977,21 +1977,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
 
-    const u32 gMonFrontPic_MrMime[] = INCBIN_U32("graphics/pokemon/mr_mime/anim_front.4bpp.lz");
-    const u32 gMonPalette_MrMime[] = INCBIN_U32("graphics/pokemon/mr_mime/normal.gbapal.lz");
-    const u32 gMonBackPic_MrMime[] = INCBIN_U32("graphics/pokemon/mr_mime/back.4bpp.lz");
-    const u32 gMonShinyPalette_MrMime[] = INCBIN_U32("graphics/pokemon/mr_mime/shiny.gbapal.lz");
-    const u8 gMonIcon_MrMime[] = INCBIN_U8("graphics/pokemon/mr_mime/icon.4bpp");
+    const u32 gMonFrontPic_MrMime[] = INCBIN_U32("graphics/pokemon/bulucomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_MrMime[] = INCBIN_U32("graphics/pokemon/bulucomon/normal.gbapal.lz");
+    const u32 gMonBackPic_MrMime[] = INCBIN_U32("graphics/pokemon/bulucomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_MrMime[] = INCBIN_U32("graphics/pokemon/bulucomon/shiny.gbapal.lz");
+    const u8 gMonIcon_MrMime[] = INCBIN_U8("graphics/pokemon/bulucomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_MrMime[] = INCBIN_U8("graphics/pokemon/mr_mime/footprint.1bpp");
+    const u8 gMonFootprint_MrMime[] = INCBIN_U8("graphics/pokemon/bulucomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GALARIAN_FORMS
-    const u32 gMonFrontPic_MrMimeGalarian[] = INCBIN_U32("graphics/pokemon/mr_mime/galarian/front.4bpp.lz");
-    const u32 gMonPalette_MrMimeGalarian[] = INCBIN_U32("graphics/pokemon/mr_mime/galarian/normal.gbapal.lz");
-    const u32 gMonBackPic_MrMimeGalarian[] = INCBIN_U32("graphics/pokemon/mr_mime/galarian/back.4bpp.lz");
-    const u32 gMonShinyPalette_MrMimeGalarian[] = INCBIN_U32("graphics/pokemon/mr_mime/galarian/shiny.gbapal.lz");
-    const u8 gMonIcon_MrMimeGalarian[] = INCBIN_U8("graphics/pokemon/mr_mime/galarian/icon.4bpp");
+    const u32 gMonFrontPic_MrMimeGalarian[] = INCBIN_U32("graphics/pokemon/bulucomon/galarian/front.4bpp.lz");
+    const u32 gMonPalette_MrMimeGalarian[] = INCBIN_U32("graphics/pokemon/bulucomon/galarian/normal.gbapal.lz");
+    const u32 gMonBackPic_MrMimeGalarian[] = INCBIN_U32("graphics/pokemon/bulucomon/galarian/back.4bpp.lz");
+    const u32 gMonShinyPalette_MrMimeGalarian[] = INCBIN_U32("graphics/pokemon/bulucomon/galarian/shiny.gbapal.lz");
+    const u8 gMonIcon_MrMimeGalarian[] = INCBIN_U8("graphics/pokemon/bulucomon/galarian/icon.4bpp");
 
     const u32 gMonFrontPic_MrRime[] = INCBIN_U32("graphics/pokemon/mr_rime/front.4bpp.lz");
     const u32 gMonPalette_MrRime[] = INCBIN_U32("graphics/pokemon/mr_rime/normal.gbapal.lz");
@@ -2002,7 +2002,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_MrRime[] = INCBIN_U8("graphics/pokemon/mr_rime/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_MR_MIME
+#endif //P_FAMILY_BULUCOMON
 
 #if P_FAMILY_SCYTHER
     const u32 gMonFrontPic_Scyther[] = INCBIN_U32("graphics/pokemon/scyther/anim_front.4bpp.lz");

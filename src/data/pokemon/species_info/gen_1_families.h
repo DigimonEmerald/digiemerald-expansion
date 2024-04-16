@@ -11974,7 +11974,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_BLKGUILMON
 
-#if P_FAMILY_MR_MIME
+#if P_FAMILY_BULUCOMON
 #if P_GEN_4_CROSS_EVOS
     [SPECIES_MIME_JR] =
     {
@@ -12030,12 +12030,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(MimeJr)
         .levelUpLearnset = sMimeJrLevelUpLearnset,
         .teachableLearnset = sMimeJrTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_MOVE, MOVE_MIMIC, SPECIES_MR_MIME},
-                                {EVO_NONE, 0, SPECIES_MR_MIME_GALARIAN}),
+        .evolutions = EVOLUTION({EVO_MOVE, MOVE_MIMIC, SPECIES_BULUCOMON},
+                                {EVO_NONE, 0, SPECIES_BULUCOMON_GALARIAN}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 
-    [SPECIES_MR_MIME] =
+    [SPECIES_BULUCOMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 45,
@@ -12055,8 +12055,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_SOUNDPROOF, ABILITY_FILTER, ABILITY_TECHNICIAN },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Mr. Mime"),
-        .cryId = CRY_MR_MIME,
-        .natDexNum = NATIONAL_DEX_MR_MIME,
+        .cryId = CRY_BULUCOMON,
+        .natDexNum = NATIONAL_DEX_BULUCOMON,
         .categoryName = _("Barrier"),
         .height = 13,
         .weight = 545,
@@ -12089,7 +12089,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_GALARIAN_FORMS
-    [SPECIES_MR_MIME_GALARIAN] =
+    [SPECIES_BULUCOMON_GALARIAN] =
     {
         .baseHP        = 50,
         .baseAttack    = 65,
@@ -12109,8 +12109,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_VITAL_SPIRIT, ABILITY_SCREEN_CLEANER, ABILITY_ICE_BODY },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Mr. Mime"),
-        .cryId = CRY_MR_MIME,
-        .natDexNum = NATIONAL_DEX_MR_MIME,
+        .cryId = CRY_BULUCOMON,
+        .natDexNum = NATIONAL_DEX_BULUCOMON,
         .categoryName = _("Dancing"),
         .height = 14,
         .weight = 568,
@@ -12195,7 +12195,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sMrRimeTeachableLearnset,
     },
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_MR_MIME
+#endif //P_FAMILY_BULUCOMON
 
 #if P_FAMILY_SCYTHER
     [SPECIES_SCYTHER] =

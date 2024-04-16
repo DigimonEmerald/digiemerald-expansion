@@ -445,15 +445,15 @@ static const u16 sBetamon_xFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_BETAMON_X
 
-#if P_FAMILY_MR_MIME
+#if P_FAMILY_BULUCOMON
 static const u16 sMrMimeFormSpeciesIdTable[] = {
-    SPECIES_MR_MIME,
+    SPECIES_BULUCOMON,
 #if P_GALARIAN_FORMS
-    SPECIES_MR_MIME_GALARIAN,
+    SPECIES_BULUCOMON_GALARIAN,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_MR_MIME
+#endif //P_FAMILY_BULUCOMON
 
 #if P_FAMILY_SCYTHER
 #if P_GEN_2_CROSS_EVOS

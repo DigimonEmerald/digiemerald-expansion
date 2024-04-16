@@ -123,7 +123,7 @@
 #define SPECIES_BLKGABUMON                                 119
 #define SPECIES_BLKGUILMON                                  120
 #define SPECIES_BOKOMON                                 121
-#define SPECIES_MR_MIME                                 122
+#define SPECIES_BULUCOMON                                 122
 #define SPECIES_SCYTHER                                 123
 #define SPECIES_JYNX                                    124
 #define SPECIES_ELECTABUZZ                              125
@@ -1039,7 +1039,7 @@
 #define SPECIES_PICKMON_SILVER_GALARIAN                        978
 #define SPECIES_PINAMON_GALARIAN                      979
 #define SPECIES_ARMADILMON_GALARIAN                        980
-#define SPECIES_MR_MIME_GALARIAN                        981
+#define SPECIES_BULUCOMON_GALARIAN                        981
 #define SPECIES_ARTICUNO_GALARIAN                       982
 #define SPECIES_ZAPDOS_GALARIAN                         983
 #define SPECIES_MOLTRES_GALARIAN                        984

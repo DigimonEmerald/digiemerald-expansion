@@ -1038,7 +1038,7 @@ const u16 gEggMoves[] = {
         MOVE_SIGNAL_BEAM),
 #endif //P_FAMILY_BLKAGUMON_X
 
-#if P_FAMILY_MR_MIME
+#if P_FAMILY_BULUCOMON
 #if P_GEN_4_CROSS_EVOS
     egg_moves(MIME_JR,
         MOVE_FUTURE_SIGHT,
@@ -1057,7 +1057,7 @@ const u16 gEggMoves[] = {
         MOVE_ICY_WIND,
         MOVE_PSYCHIC_TERRAIN),
 #endif //P_GEN_4_CROSS_EVOS
-    egg_moves(MR_MIME,
+    egg_moves(BULUCOMON,
         MOVE_FUTURE_SIGHT,
         MOVE_HYPNOSIS,
         MOVE_MIMIC,
@@ -1072,13 +1072,13 @@ const u16 gEggMoves[] = {
         MOVE_ICY_WIND,
         MOVE_PSYCHIC_TERRAIN),
 #if P_GALARIAN_FORMS
-    egg_moves(MR_MIME_GALARIAN,
+    egg_moves(BULUCOMON_GALARIAN,
         MOVE_FAKE_OUT,
         MOVE_CONFUSE_RAY,
         MOVE_POWER_SPLIT,
         MOVE_TICKLE),
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_MR_MIME
+#endif //P_FAMILY_BULUCOMON
 
 #if P_FAMILY_SCYTHER
     egg_moves(SCYTHER,

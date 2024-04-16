@@ -6453,7 +6453,7 @@ static const u16 sBokomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BLKGUILMON
 
-#if P_FAMILY_MR_MIME
+#if P_FAMILY_BULUCOMON
 #if P_GEN_4_CROSS_EVOS
 static const u16 sMimeJrTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -6622,7 +6622,7 @@ static const u16 sMrRimeTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_MR_MIME
+#endif //P_FAMILY_BULUCOMON
 
 #if P_FAMILY_SCYTHER
 static const u16 sScytherTeachableLearnset[] = {

@@ -3545,7 +3545,7 @@ static const struct LevelUpMove sBokomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_BLKGUILMON
 
-#if P_FAMILY_MR_MIME
+#if P_FAMILY_BULUCOMON
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sMimeJrLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BARRIER),
@@ -3665,7 +3665,7 @@ static const struct LevelUpMove sMrRimeLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_MR_MIME
+#endif //P_FAMILY_BULUCOMON
 
 #if P_FAMILY_SCYTHER
 static const struct LevelUpMove sScytherLevelUpLearnset[] = {

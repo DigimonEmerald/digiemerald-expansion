@@ -325,7 +325,7 @@ gCryTable::
 	cry Cry_Blkguilmon
 	cry Cry_Bokomon
 .endif @ P_FAMILY_BLKGUILMON
-.if P_FAMILY_MR_MIME == TRUE
+.if P_FAMILY_BULUCOMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_MimeJr
 .endif @ P_GEN_4_CROSS_EVOS
@@ -333,7 +333,7 @@ gCryTable::
 .if P_GALARIAN_FORMS == TRUE
 	cry Cry_MrRime
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_MR_MIME
+.endif @ P_FAMILY_BULUCOMON
 .if P_FAMILY_SCYTHER == TRUE
 	cry Cry_Scyther
 .if P_GEN_2_CROSS_EVOS == TRUE
@@ -2751,7 +2751,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Blkguilmon
 	cry_reverse Cry_Bokomon
 .endif @ P_FAMILY_BLKGUILMON
-.if P_FAMILY_MR_MIME == TRUE
+.if P_FAMILY_BULUCOMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_MimeJr
 .endif @ P_GEN_4_CROSS_EVOS
@@ -2759,7 +2759,7 @@ gCryTable_Reverse::
 .if P_GALARIAN_FORMS == TRUE
 	cry_reverse Cry_MrRime
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_MR_MIME
+.endif @ P_FAMILY_BULUCOMON
 .if P_FAMILY_SCYTHER == TRUE
 	cry_reverse Cry_Scyther
 .if P_GEN_2_CROSS_EVOS == TRUE

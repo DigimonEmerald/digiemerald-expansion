@@ -1171,7 +1171,7 @@ Cry_Bokomon::
 	.incbin "sound/direct_sound_samples/cries/bokomon.bin"
 .endif @ P_FAMILY_BLKGUILMON
 
-.if P_FAMILY_MR_MIME == TRUE
+.if P_FAMILY_BULUCOMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
 Cry_MimeJr::
@@ -1180,7 +1180,7 @@ Cry_MimeJr::
 
 	.align 2
 Cry_MrMime::
-	.incbin "sound/direct_sound_samples/cries/mr_mime.bin"
+	.incbin "sound/direct_sound_samples/cries/bulucomon.bin"
 
 .if P_GALARIAN_FORMS == TRUE
 	.align 2
@@ -1188,7 +1188,7 @@ Cry_MrRime::
 	.incbin "sound/direct_sound_samples/cries/mr_rime.bin"
 
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_MR_MIME
+.endif @ P_FAMILY_BULUCOMON
 
 .if P_FAMILY_SCYTHER == TRUE
 	.align 2
