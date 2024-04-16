@@ -323,7 +323,7 @@ gCryTable::
 .endif @ P_FAMILY_BLKAGUMON_X
 .if P_FAMILY_BLKGUILMON == TRUE
 	cry Cry_Blkguilmon
-	cry Cry_Starmie
+	cry Cry_Bokomon
 .endif @ P_FAMILY_BLKGUILMON
 .if P_FAMILY_MR_MIME == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
@@ -2749,7 +2749,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_BLKAGUMON_X
 .if P_FAMILY_BLKGUILMON == TRUE
 	cry_reverse Cry_Blkguilmon
-	cry_reverse Cry_Starmie
+	cry_reverse Cry_Bokomon
 .endif @ P_FAMILY_BLKGUILMON
 .if P_FAMILY_MR_MIME == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE

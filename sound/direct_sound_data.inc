@@ -1167,8 +1167,8 @@ Cry_Blkguilmon::
 	.incbin "sound/direct_sound_samples/cries/blkguilmon.bin"
 
 	.align 2
-Cry_Starmie::
-	.incbin "sound/direct_sound_samples/cries/starmie.bin"
+Cry_Bokomon::
+	.incbin "sound/direct_sound_samples/cries/bokomon.bin"
 .endif @ P_FAMILY_BLKGUILMON
 
 .if P_FAMILY_MR_MIME == TRUE

@@ -11916,10 +11916,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Blkguilmon)
         .levelUpLearnset = sBlkguilmonLevelUpLearnset,
         .teachableLearnset = sBlkguilmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_STARMIE}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_BOKOMON}),
     },
 
-    [SPECIES_STARMIE] =
+    [SPECIES_BOKOMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 75,
@@ -11940,37 +11940,37 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
         .abilities = { ABILITY_ILLUMINATE, ABILITY_NATURAL_CURE, ABILITY_ANALYTIC },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Starmie"),
-        .cryId = CRY_STARMIE,
-        .natDexNum = NATIONAL_DEX_STARMIE,
+        .speciesName = _("Bokomon"),
+        .cryId = CRY_BOKOMON,
+        .natDexNum = NATIONAL_DEX_BOKOMON,
         .categoryName = _("Mysterious"),
         .height = 11,
         .weight = 800,
         .description = COMPOUND_STRING(
             "People in ancient times imagined that\n"
-            "Starmie were transformed from the\n"
+            "Bokomon were transformed from the\n"
             "reflections of stars that twinkled on\n"
             "gentle waves at night."),
         .pokemonScale = 301,
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Starmie,
+        .frontPic = gMonFrontPic_Bokomon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Starmie,
+        .frontAnimFrames = sAnims_Bokomon,
         .frontAnimId = ANIM_TWIST,
-        .backPic = gMonBackPic_Starmie,
+        .backPic = gMonBackPic_Bokomon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
-        .palette = gMonPalette_Starmie,
-        .shinyPalette = gMonShinyPalette_Starmie,
-        .iconSprite = gMonIcon_Starmie,
+        .palette = gMonPalette_Bokomon,
+        .shinyPalette = gMonShinyPalette_Bokomon,
+        .iconSprite = gMonIcon_Bokomon,
         .iconPalIndex = 2,
-        FOOTPRINT(Starmie)
-        .levelUpLearnset = sStarmieLevelUpLearnset,
-        .teachableLearnset = sStarmieTeachableLearnset,
+        FOOTPRINT(Bokomon)
+        .levelUpLearnset = sBokomonLevelUpLearnset,
+        .teachableLearnset = sBokomonTeachableLearnset,
     },
 #endif //P_FAMILY_BLKGUILMON
 

@@ -1772,7 +1772,7 @@ static const union AnimCmd sAnim_Blkguilmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Starmie_1[] =
+static const union AnimCmd sAnim_Bokomon_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 10),
@@ -10581,7 +10581,7 @@ SINGLE_ANIMATION(Blkgabumon);
 #endif //P_FAMILY_BLKAGUMON_X
 #if P_FAMILY_BLKGUILMON
 SINGLE_ANIMATION(Blkguilmon);
-SINGLE_ANIMATION(Starmie);
+SINGLE_ANIMATION(Bokomon);
 #endif //P_FAMILY_BLKGUILMON
 #if P_FAMILY_MR_MIME
 #if P_GEN_4_CROSS_EVOS
