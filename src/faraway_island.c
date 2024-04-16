@@ -9,19 +9,19 @@
 #include "constants/field_effects.h"
 #include "constants/metatile_behaviors.h"
 
-static u8 GetValidMewMoveDirection(u8);
-static bool8 ShouldMewMoveNorth(struct ObjectEvent *, u8);
-static bool8 ShouldMewMoveSouth(struct ObjectEvent *, u8);
-static bool8 ShouldMewMoveEast(struct ObjectEvent *, u8);
-static bool8 ShouldMewMoveWest(struct ObjectEvent *, u8);
-static u8 GetRandomMewDirectionCandidate(u8);
-static bool8 CanMewMoveToCoords(s16, s16);
+static u8 GetValidFalcomonMoveDirection(u8);
+static bool8 ShouldFalcomonMoveNorth(struct ObjectEvent *, u8);
+static bool8 ShouldFalcomonMoveSouth(struct ObjectEvent *, u8);
+static bool8 ShouldFalcomonMoveEast(struct ObjectEvent *, u8);
+static bool8 ShouldFalcomonMoveWest(struct ObjectEvent *, u8);
+static u8 GetRandomFalcomonDirectionCandidate(u8);
+static bool8 CanFalcomonMoveToCoords(s16, s16);
 
 static EWRAM_DATA u8 sGrassSpriteId = 0;
 
-static s16 sPlayerToMewDeltaX;
-static s16 sPlayerToMewDeltaY;
-static u8 sMewDirectionCandidates[4];
+static s16 sPlayerToFalcomonDeltaX;
+static s16 sPlayerToFalcomonDeltaY;
+static u8 sFalcomonDirectionCandidates[4];
 
 extern const struct SpritePalette gSpritePalette_GeneralFieldEffect1;
 extern const struct SpriteTemplate *const gFieldEffectObjectTemplatePointers[];
@@ -34,25 +34,25 @@ static const s16 sFarawayIslandRockCoords[4][2] =
     {13 + MAP_OFFSET, 13 + MAP_OFFSET},
 };
 
-static u8 GetMewObjectEventId(void)
+static u8 GetFalcomonObjectEventId(void)
 {
     u8 objectEventId;
-    TryGetObjectEventIdByLocalIdAndMap(LOCALID_FARAWAY_ISLAND_MEW, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, &objectEventId);
+    TryGetObjectEventIdByLocalIdAndMap(LOCALID_FARAWAY_ISLAND_FALCOMON, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, &objectEventId);
     return objectEventId;
 }
 
-// When the player enters Faraway Island interior it begins a "hide and seek" minigame where Mew disappears into the grass
-// This function returns the direction Mew will take a step, and is run every time the player takes a step
-u32 GetMewMoveDirection(void)
+// When the player enters Faraway Island interior it begins a "hide and seek" minigame where Falcomon disappears into the grass
+// This function returns the direction Falcomon will take a step, and is run every time the player takes a step
+u32 GetFalcomonMoveDirection(void)
 {
     u8 i;
-    int mewSafeFromTrap;
-    struct ObjectEvent *mew = &gObjectEvents[GetMewObjectEventId()];
+    int falcomonSafeFromTrap;
+    struct ObjectEvent *falcomon = &gObjectEvents[GetFalcomonObjectEventId()];
 
-    sPlayerToMewDeltaX = gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.x - mew->currentCoords.x;
-    sPlayerToMewDeltaY = gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.y - mew->currentCoords.y;
-    for (i = 0; i < ARRAY_COUNT(sMewDirectionCandidates); i++)
-        sMewDirectionCandidates[i] = DIR_NONE;
+    sPlayerToFalcomonDeltaX = gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.x - falcomon->currentCoords.x;
+    sPlayerToFalcomonDeltaY = gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.y - falcomon->currentCoords.y;
+    for (i = 0; i < ARRAY_COUNT(sFalcomonDirectionCandidates); i++)
+        sFalcomonDirectionCandidates[i] = DIR_NONE;
 
     // Player hasn't moved (just facing new direction), don't move
     if (gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.x == gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.x
@@ -61,62 +61,62 @@ u32 GetMewMoveDirection(void)
         return DIR_NONE;
     }
 
-    // Mew is invisible except for every 8th step
+    // Falcomon is invisible except for every 8th step
     if (VarGet(VAR_FARAWAY_ISLAND_STEP_COUNTER) % 8 == 0)
-        mew->invisible = FALSE;
+        falcomon->invisible = FALSE;
     else
-        mew->invisible = TRUE;
+        falcomon->invisible = TRUE;
 
-    // Mew will stay in place for 1 step after its visible
+    // Falcomon will stay in place for 1 step after its visible
     if (VarGet(VAR_FARAWAY_ISLAND_STEP_COUNTER) % 9 == 0)
         return DIR_NONE;
 
-    // Below loop is for Mew to try to avoid getting trapped between the player and a rock
+    // Below loop is for Falcomon to try to avoid getting trapped between the player and a rock
     for (i = 0; i < ARRAY_COUNT(sFarawayIslandRockCoords); i++)
     {
         if (gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.x == sFarawayIslandRockCoords[i][0])
         {
-            mewSafeFromTrap = FALSE;
+            falcomonSafeFromTrap = FALSE;
             if (gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.y < sFarawayIslandRockCoords[i][1])
             {
-                if (mew->currentCoords.y <= sFarawayIslandRockCoords[i][1])
-                    mewSafeFromTrap = TRUE;
+                if (falcomon->currentCoords.y <= sFarawayIslandRockCoords[i][1])
+                    falcomonSafeFromTrap = TRUE;
             }
             else
             {
-                if (mew->currentCoords.y >= sFarawayIslandRockCoords[i][1])
-                    mewSafeFromTrap = TRUE;
+                if (falcomon->currentCoords.y >= sFarawayIslandRockCoords[i][1])
+                    falcomonSafeFromTrap = TRUE;
             }
 
-            if (!mewSafeFromTrap)
+            if (!falcomonSafeFromTrap)
             {
-                if (sPlayerToMewDeltaX > 0)
+                if (sPlayerToFalcomonDeltaX > 0)
                 {
-                    if (mew->currentCoords.x + 1 == gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.x)
+                    if (falcomon->currentCoords.x + 1 == gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.x)
                     {
-                        if (CanMewMoveToCoords(mew->currentCoords.x + 1, mew->currentCoords.y))
+                        if (CanFalcomonMoveToCoords(falcomon->currentCoords.x + 1, falcomon->currentCoords.y))
                             return DIR_EAST;
                     }
                 }
-                else if (sPlayerToMewDeltaX < 0)
+                else if (sPlayerToFalcomonDeltaX < 0)
                 {
-                    if (mew->currentCoords.x - 1 == gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.x)
+                    if (falcomon->currentCoords.x - 1 == gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.x)
                     {
-                        if (CanMewMoveToCoords(mew->currentCoords.x - 1, mew->currentCoords.y))
+                        if (CanFalcomonMoveToCoords(falcomon->currentCoords.x - 1, falcomon->currentCoords.y))
                             return DIR_WEST;
                     }
                 }
 
-                if (mew->currentCoords.x == gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.x)
+                if (falcomon->currentCoords.x == gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.x)
                 {
-                    if (sPlayerToMewDeltaY > 0)
+                    if (sPlayerToFalcomonDeltaY > 0)
                     {
-                        if (CanMewMoveToCoords(mew->currentCoords.x, mew->currentCoords.y - 1))
+                        if (CanFalcomonMoveToCoords(falcomon->currentCoords.x, falcomon->currentCoords.y - 1))
                             return DIR_NORTH;
                     }
                     else
                     {
-                        if (CanMewMoveToCoords(mew->currentCoords.x, mew->currentCoords.y + 1))
+                        if (CanFalcomonMoveToCoords(falcomon->currentCoords.x, falcomon->currentCoords.y + 1))
                             return DIR_SOUTH;
                     }
                 }
@@ -125,47 +125,47 @@ u32 GetMewMoveDirection(void)
 
         if (gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.y == sFarawayIslandRockCoords[i][1])
         {
-            mewSafeFromTrap = FALSE;
+            falcomonSafeFromTrap = FALSE;
             if (gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.x < sFarawayIslandRockCoords[i][0])
             {
-                if (mew->currentCoords.x <= sFarawayIslandRockCoords[i][0])
-                    mewSafeFromTrap = TRUE;
+                if (falcomon->currentCoords.x <= sFarawayIslandRockCoords[i][0])
+                    falcomonSafeFromTrap = TRUE;
             }
             else
             {
-                if (mew->currentCoords.x >= sFarawayIslandRockCoords[i][0])
-                    mewSafeFromTrap = TRUE;
+                if (falcomon->currentCoords.x >= sFarawayIslandRockCoords[i][0])
+                    falcomonSafeFromTrap = TRUE;
             }
 
-            if (!mewSafeFromTrap)
+            if (!falcomonSafeFromTrap)
             {
-                if (sPlayerToMewDeltaY > 0)
+                if (sPlayerToFalcomonDeltaY > 0)
                 {
-                    if (mew->currentCoords.y + 1 == gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.y)
+                    if (falcomon->currentCoords.y + 1 == gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.y)
                     {
-                        if (CanMewMoveToCoords(mew->currentCoords.x, mew->currentCoords.y + 1))
+                        if (CanFalcomonMoveToCoords(falcomon->currentCoords.x, falcomon->currentCoords.y + 1))
                             return DIR_SOUTH;
                     }
                 }
-                else if (sPlayerToMewDeltaY < 0)
+                else if (sPlayerToFalcomonDeltaY < 0)
                 {
-                    if (mew->currentCoords.y - 1 == gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.y)
+                    if (falcomon->currentCoords.y - 1 == gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.y)
                     {
-                        if (CanMewMoveToCoords(mew->currentCoords.x, mew->currentCoords.y - 1))
+                        if (CanFalcomonMoveToCoords(falcomon->currentCoords.x, falcomon->currentCoords.y - 1))
                             return DIR_NORTH;
                     }
                 }
 
-                if (mew->currentCoords.y == gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.y)
+                if (falcomon->currentCoords.y == gObjectEvents[gPlayerAvatar.objectEventId].previousCoords.y)
                 {
-                    if (sPlayerToMewDeltaX > 0)
+                    if (sPlayerToFalcomonDeltaX > 0)
                     {
-                        if (CanMewMoveToCoords(mew->currentCoords.x - 1, mew->currentCoords.y))
+                        if (CanFalcomonMoveToCoords(falcomon->currentCoords.x - 1, falcomon->currentCoords.y))
                             return DIR_WEST;
                     }
                     else
                     {
-                        if (CanMewMoveToCoords(mew->currentCoords.x + 1, mew->currentCoords.y))
+                        if (CanFalcomonMoveToCoords(falcomon->currentCoords.x + 1, falcomon->currentCoords.y))
                             return DIR_EAST;
                     }
                 }
@@ -173,101 +173,101 @@ u32 GetMewMoveDirection(void)
         }
     }
 
-    // Check if Mew can move in any direction without getting closer to the player
-    // If so load into sMewDirectionCandidates
-    // If Mew can move in two of the checked directions, choose one randomly
-    if (ShouldMewMoveNorth(mew, 0))
+    // Check if Falcomon can move in any direction without getting closer to the player
+    // If so load into sFalcomonDirectionCandidates
+    // If Falcomon can move in two of the checked directions, choose one randomly
+    if (ShouldFalcomonMoveNorth(falcomon, 0))
     {
-        if (ShouldMewMoveEast(mew, 1))
-            return GetRandomMewDirectionCandidate(2);
-        else if (ShouldMewMoveWest(mew, 1))
-            return GetRandomMewDirectionCandidate(2);
+        if (ShouldFalcomonMoveEast(falcomon, 1))
+            return GetRandomFalcomonDirectionCandidate(2);
+        else if (ShouldFalcomonMoveWest(falcomon, 1))
+            return GetRandomFalcomonDirectionCandidate(2);
         else
             return DIR_NORTH;
     }
 
-    if (ShouldMewMoveSouth(mew, 0))
+    if (ShouldFalcomonMoveSouth(falcomon, 0))
     {
-        if (ShouldMewMoveEast(mew, 1))
-            return GetRandomMewDirectionCandidate(2);
-        else if (ShouldMewMoveWest(mew, 1))
-            return GetRandomMewDirectionCandidate(2);
+        if (ShouldFalcomonMoveEast(falcomon, 1))
+            return GetRandomFalcomonDirectionCandidate(2);
+        else if (ShouldFalcomonMoveWest(falcomon, 1))
+            return GetRandomFalcomonDirectionCandidate(2);
         else
             return DIR_SOUTH;
     }
 
-    if (ShouldMewMoveEast(mew, 0))
+    if (ShouldFalcomonMoveEast(falcomon, 0))
     {
-        if (ShouldMewMoveNorth(mew, 1))
-            return GetRandomMewDirectionCandidate(2);
-        else if (ShouldMewMoveSouth(mew, 1))
-            return GetRandomMewDirectionCandidate(2);
+        if (ShouldFalcomonMoveNorth(falcomon, 1))
+            return GetRandomFalcomonDirectionCandidate(2);
+        else if (ShouldFalcomonMoveSouth(falcomon, 1))
+            return GetRandomFalcomonDirectionCandidate(2);
         else
             return DIR_EAST;
     }
 
-    if (ShouldMewMoveWest(mew, 0))
+    if (ShouldFalcomonMoveWest(falcomon, 0))
     {
-        if (ShouldMewMoveNorth(mew, 1))
-            return GetRandomMewDirectionCandidate(2);
-        else if (ShouldMewMoveSouth(mew, 1))
-            return GetRandomMewDirectionCandidate(2);
+        if (ShouldFalcomonMoveNorth(falcomon, 1))
+            return GetRandomFalcomonDirectionCandidate(2);
+        else if (ShouldFalcomonMoveSouth(falcomon, 1))
+            return GetRandomFalcomonDirectionCandidate(2);
         else
             return DIR_WEST;
     }
 
-    // If this point is reached, Mew cannot move without getting closer to the player
+    // If this point is reached, Falcomon cannot move without getting closer to the player
 
     // Avoid player on same Y, try move North/South
-    if (sPlayerToMewDeltaY == 0)
+    if (sPlayerToFalcomonDeltaY == 0)
     {
-        if (gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.y > mew->currentCoords.y)
+        if (gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.y > falcomon->currentCoords.y)
         {
-            if (CanMewMoveToCoords(mew->currentCoords.x, mew->currentCoords.y - 1))
+            if (CanFalcomonMoveToCoords(falcomon->currentCoords.x, falcomon->currentCoords.y - 1))
                 return DIR_NORTH;
         }
 
-        if (gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.y < mew->currentCoords.y)
+        if (gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.y < falcomon->currentCoords.y)
         {
-            if (CanMewMoveToCoords(mew->currentCoords.x, mew->currentCoords.y + 1))
+            if (CanFalcomonMoveToCoords(falcomon->currentCoords.x, falcomon->currentCoords.y + 1))
                 return DIR_SOUTH;
         }
 
-        if (CanMewMoveToCoords(mew->currentCoords.x, mew->currentCoords.y - 1))
+        if (CanFalcomonMoveToCoords(falcomon->currentCoords.x, falcomon->currentCoords.y - 1))
             return DIR_NORTH;
 
-        if (CanMewMoveToCoords(mew->currentCoords.x, mew->currentCoords.y + 1))
+        if (CanFalcomonMoveToCoords(falcomon->currentCoords.x, falcomon->currentCoords.y + 1))
             return DIR_SOUTH;
     }
 
     // Avoid player on same X, try move West/East
-    if (sPlayerToMewDeltaX == 0)
+    if (sPlayerToFalcomonDeltaX == 0)
     {
-        if (gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.x > mew->currentCoords.x)
+        if (gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.x > falcomon->currentCoords.x)
         {
-            if (CanMewMoveToCoords(mew->currentCoords.x - 1, mew->currentCoords.y))
+            if (CanFalcomonMoveToCoords(falcomon->currentCoords.x - 1, falcomon->currentCoords.y))
                 return DIR_WEST;
         }
 
-        if (gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.x < mew->currentCoords.x)
+        if (gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.x < falcomon->currentCoords.x)
         {
-            if (CanMewMoveToCoords(mew->currentCoords.x + 1, mew->currentCoords.y))
+            if (CanFalcomonMoveToCoords(falcomon->currentCoords.x + 1, falcomon->currentCoords.y))
                 return DIR_EAST;
         }
 
-        if (CanMewMoveToCoords(mew->currentCoords.x + 1, mew->currentCoords.y))
+        if (CanFalcomonMoveToCoords(falcomon->currentCoords.x + 1, falcomon->currentCoords.y))
             return DIR_EAST;
 
-        if (CanMewMoveToCoords(mew->currentCoords.x - 1, mew->currentCoords.y))
+        if (CanFalcomonMoveToCoords(falcomon->currentCoords.x - 1, falcomon->currentCoords.y))
             return DIR_WEST;
     }
 
     // Can't avoid player on axis, move any valid direction
-    return GetValidMewMoveDirection(DIR_NONE);
+    return GetValidFalcomonMoveDirection(DIR_NONE);
 }
 
-// Mew can move to any Tall/Long Grass metatile the player isn't currently on
-static bool8 CanMewMoveToCoords(s16 x, s16 y)
+// Falcomon can move to any Tall/Long Grass metatile the player isn't currently on
+static bool8 CanFalcomonMoveToCoords(s16 x, s16 y)
 {
     if (gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.x == x
      && gObjectEvents[gPlayerAvatar.objectEventId].currentCoords.y == y)
@@ -279,43 +279,43 @@ static bool8 CanMewMoveToCoords(s16 x, s16 y)
 }
 
 // Last ditch effort to move, clear move candidates and try all directions again
-static u8 GetValidMewMoveDirection(u8 ignoredDir)
+static u8 GetValidFalcomonMoveDirection(u8 ignoredDir)
 {
     u8 i;
     u8 count = 0;
-    struct ObjectEvent *mew = &gObjectEvents[GetMewObjectEventId()];
+    struct ObjectEvent *falcomon = &gObjectEvents[GetFalcomonObjectEventId()];
 
-    for (i = 0; i < ARRAY_COUNT(sMewDirectionCandidates); i++)
-        sMewDirectionCandidates[i] = DIR_NONE;
+    for (i = 0; i < ARRAY_COUNT(sFalcomonDirectionCandidates); i++)
+        sFalcomonDirectionCandidates[i] = DIR_NONE;
 
-    if (CanMewMoveToCoords(mew->currentCoords.x, mew->currentCoords.y - 1) == TRUE && ignoredDir != DIR_NORTH)
+    if (CanFalcomonMoveToCoords(falcomon->currentCoords.x, falcomon->currentCoords.y - 1) == TRUE && ignoredDir != DIR_NORTH)
     {
-        sMewDirectionCandidates[count] = DIR_NORTH;
+        sFalcomonDirectionCandidates[count] = DIR_NORTH;
         count++;
     }
 
-    if (CanMewMoveToCoords(mew->currentCoords.x + 1, mew->currentCoords.y) == TRUE && ignoredDir != DIR_EAST)
+    if (CanFalcomonMoveToCoords(falcomon->currentCoords.x + 1, falcomon->currentCoords.y) == TRUE && ignoredDir != DIR_EAST)
     {
-        sMewDirectionCandidates[count] = DIR_EAST;
+        sFalcomonDirectionCandidates[count] = DIR_EAST;
         count++;
     }
 
-    if (CanMewMoveToCoords(mew->currentCoords.x, mew->currentCoords.y + 1) == TRUE && ignoredDir != DIR_SOUTH)
+    if (CanFalcomonMoveToCoords(falcomon->currentCoords.x, falcomon->currentCoords.y + 1) == TRUE && ignoredDir != DIR_SOUTH)
     {
-        sMewDirectionCandidates[count] = DIR_SOUTH;
+        sFalcomonDirectionCandidates[count] = DIR_SOUTH;
         count++;
     }
 
-    if (CanMewMoveToCoords(mew->currentCoords.x - 1, mew->currentCoords.y) == TRUE && ignoredDir != DIR_WEST)
+    if (CanFalcomonMoveToCoords(falcomon->currentCoords.x - 1, falcomon->currentCoords.y) == TRUE && ignoredDir != DIR_WEST)
     {
-        sMewDirectionCandidates[count] = DIR_WEST;
+        sFalcomonDirectionCandidates[count] = DIR_WEST;
         count++;
     }
 
     if (count > 1)
-        return sMewDirectionCandidates[VarGet(VAR_FARAWAY_ISLAND_STEP_COUNTER) % count];
+        return sFalcomonDirectionCandidates[VarGet(VAR_FARAWAY_ISLAND_STEP_COUNTER) % count];
     else
-        return sMewDirectionCandidates[0];
+        return sFalcomonDirectionCandidates[0];
 }
 
 void UpdateFarawayIslandStepCounter(void)
@@ -332,33 +332,33 @@ void UpdateFarawayIslandStepCounter(void)
     }
 }
 
-bool8 ObjectEventIsFarawayIslandMew(struct ObjectEvent *objectEvent)
+bool8 ObjectEventIsFarawayIslandFalcomon(struct ObjectEvent *objectEvent)
 {
     if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(FARAWAY_ISLAND_INTERIOR)
      && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FARAWAY_ISLAND_INTERIOR))
     {
-        if (objectEvent->graphicsId == OBJ_EVENT_GFX_MEW)
+        if (objectEvent->graphicsId == OBJ_EVENT_GFX_FALCOMON)
             return TRUE;
     }
 
     return FALSE;
 }
 
-bool8 IsMewPlayingHideAndSeek(void)
+bool8 IsFalcomonPlayingHideAndSeek(void)
 {
     if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(FARAWAY_ISLAND_INTERIOR)
      && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FARAWAY_ISLAND_INTERIOR))
     {
-        if (FlagGet(FLAG_CAUGHT_MEW) != TRUE && FlagGet(FLAG_HIDE_MEW) != TRUE)
+        if (FlagGet(FLAG_CAUGHT_FALCOMON) != TRUE && FlagGet(FLAG_HIDE_FALCOMON) != TRUE)
             return TRUE;
     }
 
     return FALSE;
 }
 
-// Every 4th step Mew will shake the grass it steps into
+// Every 4th step Falcomon will shake the grass it steps into
 // Otherwise its movement leaves grass undisturbed
-bool8 ShouldMewShakeGrass(struct ObjectEvent *objectEvent)
+bool8 ShouldFalcomonShakeGrass(struct ObjectEvent *objectEvent)
 {
     if (VarGet(VAR_FARAWAY_ISLAND_STEP_COUNTER) != 0xFFFF
      && VarGet(VAR_FARAWAY_ISLAND_STEP_COUNTER) % 4 == 0)
@@ -367,37 +367,37 @@ bool8 ShouldMewShakeGrass(struct ObjectEvent *objectEvent)
     return FALSE;
 }
 
-void SetMewAboveGrass(void)
+void SetFalcomonAboveGrass(void)
 {
     s16 x;
     s16 y;
-    struct ObjectEvent *mew = &gObjectEvents[GetMewObjectEventId()];
+    struct ObjectEvent *falcomon = &gObjectEvents[GetFalcomonObjectEventId()];
 
-    mew->invisible = FALSE;
+    falcomon->invisible = FALSE;
     if (gSpecialVar_0x8004 == 1)
     {
-        // For after battle where Mew should still be present (e.g. if ran from battle)
-        mew->fixedPriority = 1;
-        gSprites[mew->spriteId].subspriteMode = SUBSPRITES_IGNORE_PRIORITY;
-        gSprites[mew->spriteId].subpriority = 1;
+        // For after battle where Falcomon should still be present (e.g. if ran from battle)
+        falcomon->fixedPriority = 1;
+        gSprites[falcomon->spriteId].subspriteMode = SUBSPRITES_IGNORE_PRIORITY;
+        gSprites[falcomon->spriteId].subpriority = 1;
     }
     else
     {
-        // Mew emerging from grass when found
+        // Falcomon emerging from grass when found
         // Also do field effect for grass shaking as it emerges
         VarSet(VAR_FARAWAY_ISLAND_STEP_COUNTER, 0xFFFF);
-        mew->fixedPriority = 1;
-        gSprites[mew->spriteId].subspriteMode = SUBSPRITES_IGNORE_PRIORITY;
+        falcomon->fixedPriority = 1;
+        gSprites[falcomon->spriteId].subspriteMode = SUBSPRITES_IGNORE_PRIORITY;
         if (gSpecialVar_Facing != DIR_NORTH)
-            gSprites[mew->spriteId].subpriority = 1;
+            gSprites[falcomon->spriteId].subpriority = 1;
 
         LoadSpritePalette(&gSpritePalette_GeneralFieldEffect1);
         UpdateSpritePaletteWithWeather(IndexOfSpritePaletteTag(gSpritePalette_GeneralFieldEffect1.tag));
 
-        x = mew->currentCoords.x;
-        y = mew->currentCoords.y;
+        x = falcomon->currentCoords.x;
+        y = falcomon->currentCoords.y;
         SetSpritePosToOffsetMapCoords(&x, &y, 8, 8);
-        sGrassSpriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_LONG_GRASS], x, y, gSprites[mew->spriteId].subpriority - 1);
+        sGrassSpriteId = CreateSpriteAtEnd(gFieldEffectObjectTemplatePointers[FLDEFFOBJ_LONG_GRASS], x, y, gSprites[falcomon->spriteId].subpriority - 1);
         if (sGrassSpriteId != MAX_SPRITES)
         {
             struct Sprite *sprite = &gSprites[sGrassSpriteId];
@@ -408,57 +408,57 @@ void SetMewAboveGrass(void)
     }
 }
 
-void DestroyMewEmergingGrassSprite(void)
+void DestroyFalcomonEmergingGrassSprite(void)
 {
     if (sGrassSpriteId != MAX_SPRITES)
         DestroySprite(&gSprites[sGrassSpriteId]);
 }
 
-static bool8 ShouldMewMoveNorth(struct ObjectEvent *mew, u8 index)
+static bool8 ShouldFalcomonMoveNorth(struct ObjectEvent *falcomon, u8 index)
 {
-    if (sPlayerToMewDeltaY > 0 && CanMewMoveToCoords(mew->currentCoords.x, mew->currentCoords.y - 1))
+    if (sPlayerToFalcomonDeltaY > 0 && CanFalcomonMoveToCoords(falcomon->currentCoords.x, falcomon->currentCoords.y - 1))
     {
-        sMewDirectionCandidates[index] = DIR_NORTH;
+        sFalcomonDirectionCandidates[index] = DIR_NORTH;
         return TRUE;
     }
 
     return FALSE;
 }
 
-static bool8 ShouldMewMoveEast(struct ObjectEvent *mew, u8 index)
+static bool8 ShouldFalcomonMoveEast(struct ObjectEvent *falcomon, u8 index)
 {
-    if (sPlayerToMewDeltaX < 0 && CanMewMoveToCoords(mew->currentCoords.x + 1, mew->currentCoords.y))
+    if (sPlayerToFalcomonDeltaX < 0 && CanFalcomonMoveToCoords(falcomon->currentCoords.x + 1, falcomon->currentCoords.y))
     {
-        sMewDirectionCandidates[index] = DIR_EAST;
+        sFalcomonDirectionCandidates[index] = DIR_EAST;
         return TRUE;
     }
 
     return FALSE;
 }
 
-static bool8 ShouldMewMoveSouth(struct ObjectEvent *mew, u8 index)
+static bool8 ShouldFalcomonMoveSouth(struct ObjectEvent *falcomon, u8 index)
 {
-    if (sPlayerToMewDeltaY < 0 && CanMewMoveToCoords(mew->currentCoords.x, mew->currentCoords.y + 1))
+    if (sPlayerToFalcomonDeltaY < 0 && CanFalcomonMoveToCoords(falcomon->currentCoords.x, falcomon->currentCoords.y + 1))
     {
-        sMewDirectionCandidates[index] = DIR_SOUTH;
+        sFalcomonDirectionCandidates[index] = DIR_SOUTH;
         return TRUE;
     }
 
     return FALSE;
 }
 
-static bool8 ShouldMewMoveWest(struct ObjectEvent *mew, u8 index)
+static bool8 ShouldFalcomonMoveWest(struct ObjectEvent *falcomon, u8 index)
 {
-    if (sPlayerToMewDeltaX > 0 && CanMewMoveToCoords(mew->currentCoords.x - 1, mew->currentCoords.y))
+    if (sPlayerToFalcomonDeltaX > 0 && CanFalcomonMoveToCoords(falcomon->currentCoords.x - 1, falcomon->currentCoords.y))
     {
-        sMewDirectionCandidates[index] = DIR_WEST;
+        sFalcomonDirectionCandidates[index] = DIR_WEST;
         return TRUE;
     }
 
     return FALSE;
 }
 
-static u8 GetRandomMewDirectionCandidate(u8 numDirections)
+static u8 GetRandomFalcomonDirectionCandidate(u8 numDirections)
 {
-    return sMewDirectionCandidates[VarGet(VAR_FARAWAY_ISLAND_STEP_COUNTER) % numDirections];
+    return sFalcomonDirectionCandidates[VarGet(VAR_FARAWAY_ISLAND_STEP_COUNTER) % numDirections];
 }

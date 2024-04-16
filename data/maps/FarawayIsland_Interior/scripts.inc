@@ -1,4 +1,4 @@
-@ Note: LOCALID_FARAWAY_ISLAND_MEW is a local id for this map used elsewhere. It's defined in event_objects.h
+@ Note: LOCALID_FARAWAY_ISLAND_FALCOMON is a local id for this map used elsewhere. It's defined in event_objects.h
 
 FarawayIsland_Interior_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, FarawayIsland_Interior_OnResume
@@ -8,27 +8,27 @@ FarawayIsland_Interior_MapScripts::
 	.byte 0
 
 FarawayIsland_Interior_OnReturnToField:
-	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, FarawayIsland_Interior_EventScript_TrySetMewAboveGrass
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, FarawayIsland_Interior_EventScript_TrySetFalcomonAboveGrass
 	end
 
-FarawayIsland_Interior_EventScript_TrySetMewAboveGrass::
+FarawayIsland_Interior_EventScript_TrySetFalcomonAboveGrass::
 	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_eq VAR_RESULT, B_OUTCOME_WON, FarawayIsland_Interior_EventScript_SetMewAboveGrass
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, FarawayIsland_Interior_EventScript_SetMewAboveGrass
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, FarawayIsland_Interior_EventScript_SetMewAboveGrass
-	goto_if_eq VAR_RESULT, B_OUTCOME_MON_TELEPORTED, FarawayIsland_Interior_EventScript_SetMewAboveGrass
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, FarawayIsland_Interior_EventScript_SetFalcomonAboveGrass
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, FarawayIsland_Interior_EventScript_SetFalcomonAboveGrass
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, FarawayIsland_Interior_EventScript_SetFalcomonAboveGrass
+	goto_if_eq VAR_RESULT, B_OUTCOME_MON_TELEPORTED, FarawayIsland_Interior_EventScript_SetFalcomonAboveGrass
 	return
 
-FarawayIsland_Interior_EventScript_SetMewAboveGrass::
+FarawayIsland_Interior_EventScript_SetFalcomonAboveGrass::
 	setvar VAR_0x8004, 1
-	special SetMewAboveGrass
+	special SetFalcomonAboveGrass
 	return
 
 FarawayIsland_Interior_OnResume:
-	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, FarawayIsland_Interior_EventScript_TryRemoveMew
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, FarawayIsland_Interior_EventScript_TryRemoveFalcomon
 	end
 
-FarawayIsland_Interior_EventScript_TryRemoveMew::
+FarawayIsland_Interior_EventScript_TryRemoveFalcomon::
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
 	removeobject VAR_LAST_TALKED
@@ -37,34 +37,34 @@ FarawayIsland_Interior_EventScript_TryRemoveMew::
 FarawayIsland_Interior_OnTransition:
 	setvar VAR_FARAWAY_ISLAND_STEP_COUNTER, 0
 	setvar VAR_TEMP_1, 1
-	call_if_unset FLAG_CAUGHT_MEW, FarawayIsland_Interior_EventScript_TryShowMew
+	call_if_unset FLAG_CAUGHT_FALCOMON, FarawayIsland_Interior_EventScript_TryShowFalcomon
 	end
 
-FarawayIsland_Interior_EventScript_TryShowMew::
-	goto_if_set FLAG_DEFEATED_MEW, Common_EventScript_NopReturn
-	clearflag FLAG_HIDE_MEW
+FarawayIsland_Interior_EventScript_TryShowFalcomon::
+	goto_if_set FLAG_DEFEATED_FALCOMON, Common_EventScript_NopReturn
+	clearflag FLAG_HIDE_FALCOMON
 	setvar VAR_TEMP_1, 0
 	return
 
 FarawayIsland_Interior_OnFrame:
-	map_script_2 VAR_TEMP_1, 0, FarawayIsland_Interior_EventScript_FindMew
+	map_script_2 VAR_TEMP_1, 0, FarawayIsland_Interior_EventScript_FindFalcomon
 	.2byte 0
 
-FarawayIsland_Interior_EventScript_FindMew::
+FarawayIsland_Interior_EventScript_FindFalcomon::
 	lockall
 	playse SE_PIN
-	applymovement LOCALID_FARAWAY_ISLAND_MEW, Common_Movement_ExclamationMark
+	applymovement LOCALID_FARAWAY_ISLAND_FALCOMON, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_FARAWAY_ISLAND_MEW, Common_Movement_Delay48
+	applymovement LOCALID_FARAWAY_ISLAND_FALCOMON, Common_Movement_Delay48
 	waitmovement 0
-	applymovement LOCALID_FARAWAY_ISLAND_MEW, FarawayIsland_Interior_Movement_MewMoveAndHide
+	applymovement LOCALID_FARAWAY_ISLAND_FALCOMON, FarawayIsland_Interior_Movement_FalcomonMoveAndHide
 	waitmovement 0
-	copyobjectxytoperm LOCALID_FARAWAY_ISLAND_MEW
+	copyobjectxytoperm LOCALID_FARAWAY_ISLAND_FALCOMON
 	setvar VAR_TEMP_1, 1
 	releaseall
 	end
 
-FarawayIsland_Interior_Movement_MewMoveAndHide:
+FarawayIsland_Interior_Movement_FalcomonMoveAndHide:
 	walk_up
 	walk_up
 	walk_up
@@ -72,11 +72,11 @@ FarawayIsland_Interior_Movement_MewMoveAndHide:
 	set_invisible
 	step_end
 
-FarawayIsland_Interior_Movement_MewAppear:
+FarawayIsland_Interior_Movement_FalcomonAppear:
 	set_visible
 	step_end
 
-FarawayIsland_Interior_Movement_MewFloatUpNorth:
+FarawayIsland_Interior_Movement_FalcomonFloatUpNorth:
 	lock_facing_direction
 	walk_fast_up
 	walk_fast_up
@@ -85,7 +85,7 @@ FarawayIsland_Interior_Movement_MewFloatUpNorth:
 	walk_in_place_down
 	step_end
 
-FarawayIsland_Interior_Movement_MewFloatUpSouth:
+FarawayIsland_Interior_Movement_FalcomonFloatUpSouth:
 	lock_facing_direction
 	walk_fast_up
 	walk_fast_up
@@ -94,7 +94,7 @@ FarawayIsland_Interior_Movement_MewFloatUpSouth:
 	walk_in_place_up
 	step_end
 
-FarawayIsland_Interior_Movement_MewFloatUpWest:
+FarawayIsland_Interior_Movement_FalcomonFloatUpWest:
 	lock_facing_direction
 	walk_fast_up
 	walk_fast_up
@@ -103,7 +103,7 @@ FarawayIsland_Interior_Movement_MewFloatUpWest:
 	walk_in_place_right
 	step_end
 
-FarawayIsland_Interior_Movement_MewFloatUpEast:
+FarawayIsland_Interior_Movement_FalcomonFloatUpEast:
 	lock_facing_direction
 	walk_fast_up
 	walk_fast_up
@@ -112,73 +112,73 @@ FarawayIsland_Interior_Movement_MewFloatUpEast:
 	walk_in_place_left
 	step_end
 
-FarawayIsland_Interior_EventScript_Mew::
+FarawayIsland_Interior_EventScript_Falcomon::
 	lock
 	faceplayer
-	applymovement LOCALID_FARAWAY_ISLAND_MEW, FarawayIsland_Interior_Movement_MewAppear
+	applymovement LOCALID_FARAWAY_ISLAND_FALCOMON, FarawayIsland_Interior_Movement_FalcomonAppear
 	waitmovement 0
 	setvar VAR_0x8004, 0
-	special SetMewAboveGrass
-	message FarawayIsland_Interior_Text_Mew
+	special SetFalcomonAboveGrass
+	message FarawayIsland_Interior_Text_Falcomon
 	waitse
-	playmoncry SPECIES_MEW, CRY_MODE_ENCOUNTER
-	call_if_eq VAR_FACING, DIR_NORTH, FarawayIsland_Interior_EventScript_FoundMewNorth
-	call_if_eq VAR_FACING, DIR_SOUTH, FarawayIsland_Interior_EventScript_FoundMewSouth
-	call_if_eq VAR_FACING, DIR_WEST, FarawayIsland_Interior_EventScript_FoundMewWest
-	call_if_eq VAR_FACING, DIR_EAST, FarawayIsland_Interior_EventScript_FoundMewEast
-	special DestroyMewEmergingGrassSprite
+	playmoncry SPECIES_FALCOMON, CRY_MODE_ENCOUNTER
+	call_if_eq VAR_FACING, DIR_NORTH, FarawayIsland_Interior_EventScript_FoundFalcomonNorth
+	call_if_eq VAR_FACING, DIR_SOUTH, FarawayIsland_Interior_EventScript_FoundFalcomonSouth
+	call_if_eq VAR_FACING, DIR_WEST, FarawayIsland_Interior_EventScript_FoundFalcomonWest
+	call_if_eq VAR_FACING, DIR_EAST, FarawayIsland_Interior_EventScript_FoundFalcomonEast
+	special DestroyFalcomonEmergingGrassSprite
 	delay 40
 	waitmoncry
-	seteventmon SPECIES_MEW, 30
+	seteventmon SPECIES_FALCOMON, 30
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle
 	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_eq VAR_RESULT, B_OUTCOME_WON, FarawayIsland_Interior_EventScript_MewDefeated
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, FarawayIsland_Interior_EventScript_PlayerOrMewRan
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, FarawayIsland_Interior_EventScript_PlayerOrMewRan
-	goto_if_eq VAR_RESULT, B_OUTCOME_MON_TELEPORTED, FarawayIsland_Interior_EventScript_PlayerOrMewRan
-	setflag FLAG_CAUGHT_MEW
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, FarawayIsland_Interior_EventScript_FalcomonDefeated
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, FarawayIsland_Interior_EventScript_PlayerOrFalcomonRan
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, FarawayIsland_Interior_EventScript_PlayerOrFalcomonRan
+	goto_if_eq VAR_RESULT, B_OUTCOME_MON_TELEPORTED, FarawayIsland_Interior_EventScript_PlayerOrFalcomonRan
+	setflag FLAG_CAUGHT_FALCOMON
 	release
 	end
 
-FarawayIsland_Interior_EventScript_MewDefeated::
-	setflag FLAG_DEFEATED_MEW
-	setvar VAR_0x8004, SPECIES_MEW
+FarawayIsland_Interior_EventScript_FalcomonDefeated::
+	setflag FLAG_DEFEATED_FALCOMON
+	setvar VAR_0x8004, SPECIES_FALCOMON
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
-FarawayIsland_Interior_EventScript_PlayerOrMewRan::
-	setvar VAR_0x8004, SPECIES_MEW
+FarawayIsland_Interior_EventScript_PlayerOrFalcomonRan::
+	setvar VAR_0x8004, SPECIES_FALCOMON
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
-FarawayIsland_Interior_EventScript_FoundMewNorth::
-	applymovement LOCALID_FARAWAY_ISLAND_MEW, FarawayIsland_Interior_Movement_MewFloatUpNorth
+FarawayIsland_Interior_EventScript_FoundFalcomonNorth::
+	applymovement LOCALID_FARAWAY_ISLAND_FALCOMON, FarawayIsland_Interior_Movement_FalcomonFloatUpNorth
 	waitmovement 0
 	return
 
-FarawayIsland_Interior_EventScript_FoundMewSouth::
-	applymovement LOCALID_FARAWAY_ISLAND_MEW, FarawayIsland_Interior_Movement_MewFloatUpSouth
+FarawayIsland_Interior_EventScript_FoundFalcomonSouth::
+	applymovement LOCALID_FARAWAY_ISLAND_FALCOMON, FarawayIsland_Interior_Movement_FalcomonFloatUpSouth
 	waitmovement 0
 	return
 
-FarawayIsland_Interior_EventScript_FoundMewWest::
-	applymovement LOCALID_FARAWAY_ISLAND_MEW, FarawayIsland_Interior_Movement_MewFloatUpWest
+FarawayIsland_Interior_EventScript_FoundFalcomonWest::
+	applymovement LOCALID_FARAWAY_ISLAND_FALCOMON, FarawayIsland_Interior_Movement_FalcomonFloatUpWest
 	waitmovement 0
 	return
 
-FarawayIsland_Interior_EventScript_FoundMewEast::
-	applymovement LOCALID_FARAWAY_ISLAND_MEW, FarawayIsland_Interior_Movement_MewFloatUpEast
+FarawayIsland_Interior_EventScript_FoundFalcomonEast::
+	applymovement LOCALID_FARAWAY_ISLAND_FALCOMON, FarawayIsland_Interior_Movement_FalcomonFloatUpEast
 	waitmovement 0
 	return
 
-FarawayIsland_Interior_EventScript_HideMewWhenGrassCut::
+FarawayIsland_Interior_EventScript_HideFalcomonWhenGrassCut::
 	lockall
 	fadescreenswapbuffers FADE_TO_BLACK
-	setflag FLAG_HIDE_MEW
-	removeobject LOCALID_FARAWAY_ISLAND_MEW
+	setflag FLAG_HIDE_FALCOMON
+	removeobject LOCALID_FARAWAY_ISLAND_FALCOMON
 	fadescreenswapbuffers FADE_FROM_BLACK
 	msgbox FarawayIsland_Interior_Text_TheFeelingOfBeingWatchedFaded, MSGBOX_DEFAULT
 	closemessage

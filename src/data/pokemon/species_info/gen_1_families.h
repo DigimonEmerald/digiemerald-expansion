@@ -15583,8 +15583,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_AGUMON_FAKE_EXPERT
 
-#if P_FAMILY_MEW
-    [SPECIES_MEW] =
+#if P_FAMILY_FALCOMON
+    [SPECIES_FALCOMON] =
     {
         .baseHP        = 100,
         .baseAttack    = 100,
@@ -15611,14 +15611,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_SYNCHRONIZE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Mew"),
-        .cryId = CRY_MEW,
-        .natDexNum = NATIONAL_DEX_MEW,
+        .speciesName = _("Falcomon"),
+        .cryId = CRY_FALCOMON,
+        .natDexNum = NATIONAL_DEX_FALCOMON,
         .categoryName = _("New Species"),
         .height = 4,
         .weight = 40,
         .description = COMPOUND_STRING(
-            "A Mew is said to possess the genes of all\n"
+            "A Falcomon is said to possess the genes of all\n"
             "Pokémon. It is capable of making itself\n"
             "invisible at will, so it entirely avoids\n"
             "notice even if it approaches people."),
@@ -15626,26 +15626,26 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = -2,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Mew,
+        .frontPic = gMonFrontPic_Falcomon,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Mew,
+        .frontAnimFrames = sAnims_Falcomon,
         .frontAnimId = ANIM_ZIGZAG_SLOW,
         .enemyMonElevation = 11,
-        .backPic = gMonBackPic_Mew,
+        .backPic = gMonBackPic_Falcomon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Mew,
-        .shinyPalette = gMonShinyPalette_Mew,
-        .iconSprite = gMonIcon_Mew,
+        .palette = gMonPalette_Falcomon,
+        .shinyPalette = gMonShinyPalette_Falcomon,
+        .iconSprite = gMonIcon_Falcomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Mew)
+        FOOTPRINT(Falcomon)
         .isMythical = TRUE,
-        .levelUpLearnset = sMewLevelUpLearnset,
-        .teachableLearnset = sMewTeachableLearnset,
+        .levelUpLearnset = sFalcomonLevelUpLearnset,
+        .teachableLearnset = sFalcomonTeachableLearnset,
     },
-#endif //P_FAMILY_MEW
+#endif //P_FAMILY_FALCOMON
 
 #ifdef __INTELLISENSE__
 };

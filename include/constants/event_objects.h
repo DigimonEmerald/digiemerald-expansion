@@ -230,7 +230,7 @@
 #define OBJ_EVENT_GFX_DUSCLOPS                   226
 #define OBJ_EVENT_GFX_UNION_ROOM_NURSE           227
 #define OBJ_EVENT_GFX_SUDOWOODO                  228
-#define OBJ_EVENT_GFX_MEW                        229
+#define OBJ_EVENT_GFX_FALCOMON                        229
 #define OBJ_EVENT_GFX_RED                        230
 #define OBJ_EVENT_GFX_LEAF                       231
 #define OBJ_EVENT_GFX_DEOXYS                     232
@@ -298,7 +298,7 @@
 // Object event local ids referenced in C files
 #define LOCALID_ROUTE111_PLAYER_FALLING 45
 #define LOCALID_BIRTH_ISLAND_EXTERIOR_ROCK 1
-#define LOCALID_FARAWAY_ISLAND_MEW 1
+#define LOCALID_FARAWAY_ISLAND_FALCOMON 1
 #define LOCALID_UNION_ROOM_PLAYER_4 2
 #define LOCALID_UNION_ROOM_PLAYER_8 3
 #define LOCALID_UNION_ROOM_PLAYER_7 4

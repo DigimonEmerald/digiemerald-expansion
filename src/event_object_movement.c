@@ -4193,9 +4193,9 @@ bool8 CopyablePlayerMovement_WalkNormal(struct ObjectEvent *objectEvent, struct 
     s16 y;
 
     direction = playerDirection;
-    if (ObjectEventIsFarawayIslandMew(objectEvent))
+    if (ObjectEventIsFarawayIslandFalcomon(objectEvent))
     {
-        direction = GetMewMoveDirection();
+        direction = GetFalcomonMoveDirection();
         if (direction == DIR_NONE)
         {
             direction = playerDirection;
@@ -8043,7 +8043,7 @@ static void DoFlaggedGroundEffects(struct ObjectEvent *objEvent, struct Sprite *
 {
     u8 i;
 
-    if (ObjectEventIsFarawayIslandMew(objEvent) == TRUE && !ShouldMewShakeGrass(objEvent))
+    if (ObjectEventIsFarawayIslandFalcomon(objEvent) == TRUE && !ShouldFalcomonShakeGrass(objEvent))
         return;
 
     for (i = 0; i < ARRAY_COUNT(sGroundEffectFuncs); i++, flags >>= 1)

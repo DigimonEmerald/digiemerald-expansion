@@ -1459,11 +1459,11 @@ Cry_Agumon_fake_expertMegaY::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_AGUMON_FAKE_EXPERT
 
-.if P_FAMILY_MEW == TRUE
+.if P_FAMILY_FALCOMON == TRUE
 	.align 2
-Cry_Mew::
-	.incbin "sound/direct_sound_samples/cries/mew.bin"
-.endif @ P_FAMILY_MEW
+Cry_Falcomon::
+	.incbin "sound/direct_sound_samples/cries/falcomon.bin"
+.endif @ P_FAMILY_FALCOMON
 
 .if P_FAMILY_CHIKORITA == TRUE
 	.align 2

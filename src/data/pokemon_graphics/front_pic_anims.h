@@ -2328,15 +2328,15 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Agumon_fake_expertMegaY);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_AGUMON_FAKE_EXPERT
 
-#if P_FAMILY_MEW
-static const union AnimCmd sAnim_Mew_1[] =
+#if P_FAMILY_FALCOMON
+static const union AnimCmd sAnim_Falcomon_1[] =
 {
     ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_MEW
+#endif //P_FAMILY_FALCOMON
 
 #if P_FAMILY_CHIKORITA
 static const union AnimCmd sAnim_Chikorita_1[] =
@@ -10739,9 +10739,9 @@ SINGLE_ANIMATION(Agumon_fake_expertMegaX);
 SINGLE_ANIMATION(Agumon_fake_expertMegaY);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_AGUMON_FAKE_EXPERT
-#if P_FAMILY_MEW
-SINGLE_ANIMATION(Mew);
-#endif //P_FAMILY_MEW
+#if P_FAMILY_FALCOMON
+SINGLE_ANIMATION(Falcomon);
+#endif //P_FAMILY_FALCOMON
 #if P_FAMILY_CHIKORITA
 SINGLE_ANIMATION(Chikorita);
 SINGLE_ANIMATION(Bayleef);

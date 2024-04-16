@@ -1124,7 +1124,7 @@ SECTIONS {
         sound/songs/midi/mus_b_factory.o(.rodata);
         sound/songs/midi/mus_vs_rayquaza.o(.rodata);
         sound/songs/midi/mus_vs_frontier_brain.o(.rodata);
-        sound/songs/midi/mus_vs_mew.o(.rodata);
+        sound/songs/midi/mus_vs_falcomon.o(.rodata);
         sound/songs/midi/mus_b_dome_lobby.o(.rodata);
         sound/songs/midi/mus_vs_wild.o(.rodata);
         sound/songs/midi/mus_vs_aqua_magma.o(.rodata);

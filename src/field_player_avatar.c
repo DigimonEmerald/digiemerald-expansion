@@ -94,7 +94,7 @@ static bool8 PlayerCheckIfAnimFinishedOrInactive(void);
 
 static void PlayerRun(u8);
 static void PlayerNotOnBikeCollide(u8);
-static void PlayerNotOnBikeCollideWithFarawayIslandMew(u8);
+static void PlayerNotOnBikeCollideWithFarawayIslandFalcomon(u8);
 
 static void PlayCollisionSoundIfNotFacingWarp(u8);
 
@@ -615,9 +615,9 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
             PlayerJumpLedge(direction);
             return;
         }
-        else if (collision == COLLISION_OBJECT_EVENT && IsPlayerCollidingWithFarawayIslandMew(direction))
+        else if (collision == COLLISION_OBJECT_EVENT && IsPlayerCollidingWithFarawayIslandFalcomon(direction))
         {
-            PlayerNotOnBikeCollideWithFarawayIslandMew(direction);
+            PlayerNotOnBikeCollideWithFarawayIslandFalcomon(direction);
             return;
         }
         else
@@ -766,30 +766,30 @@ static void CheckAcroBikeCollision(s16 x, s16 y, u8 metatileBehavior, u8 *collis
     }
 }
 
-bool8 IsPlayerCollidingWithFarawayIslandMew(u8 direction)
+bool8 IsPlayerCollidingWithFarawayIslandFalcomon(u8 direction)
 {
-    u8 mewObjectId;
+    u8 falcomonObjectId;
     struct ObjectEvent *object;
     s16 playerX;
     s16 playerY;
-    s16 mewPrevX;
+    s16 falcomonPrevX;
 
     object = &gObjectEvents[gPlayerAvatar.objectEventId];
     playerX = object->currentCoords.x;
     playerY = object->currentCoords.y;
 
     MoveCoords(direction, &playerX, &playerY);
-    mewObjectId = GetObjectEventIdByLocalIdAndMap(1, MAP_NUM(FARAWAY_ISLAND_INTERIOR), MAP_GROUP(FARAWAY_ISLAND_INTERIOR));
-    if (mewObjectId == OBJECT_EVENTS_COUNT)
+    falcomonObjectId = GetObjectEventIdByLocalIdAndMap(1, MAP_NUM(FARAWAY_ISLAND_INTERIOR), MAP_GROUP(FARAWAY_ISLAND_INTERIOR));
+    if (falcomonObjectId == OBJECT_EVENTS_COUNT)
         return FALSE;
 
-    object = &gObjectEvents[mewObjectId];
-    mewPrevX = object->previousCoords.x;
+    object = &gObjectEvents[falcomonObjectId];
+    falcomonPrevX = object->previousCoords.x;
 
-    if (mewPrevX == playerX)
+    if (falcomonPrevX == playerX)
     {
         if (object->previousCoords.y != playerY
-            || object->currentCoords.x != mewPrevX
+            || object->currentCoords.x != falcomonPrevX
             || object->currentCoords.y != object->previousCoords.y)
         {
             if (object->previousCoords.x == playerX &&
@@ -984,7 +984,7 @@ void PlayerOnBikeCollide(u8 direction)
     PlayerSetAnimId(GetWalkInPlaceNormalMovementAction(direction), COPY_MOVE_WALK);
 }
 
-void PlayerOnBikeCollideWithFarawayIslandMew(u8 direction)
+void PlayerOnBikeCollideWithFarawayIslandFalcomon(u8 direction)
 {
     PlayerSetAnimId(GetWalkInPlaceNormalMovementAction(direction), COPY_MOVE_WALK);
 }
@@ -995,7 +995,7 @@ static void PlayerNotOnBikeCollide(u8 direction)
     PlayerSetAnimId(GetWalkInPlaceSlowMovementAction(direction), COPY_MOVE_WALK);
 }
 
-static void PlayerNotOnBikeCollideWithFarawayIslandMew(u8 direction)
+static void PlayerNotOnBikeCollideWithFarawayIslandFalcomon(u8 direction)
 {
     PlayerSetAnimId(GetWalkInPlaceSlowMovementAction(direction), COPY_MOVE_WALK);
 }

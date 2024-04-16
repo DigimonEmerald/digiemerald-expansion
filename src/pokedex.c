@@ -4598,7 +4598,7 @@ bool8 HasAllKantoMons(void)
 {
     u32 i;
 
-    // -1 excludes Mew
+    // -1 excludes Falcomon
     for (i = 0; i < KANTO_DEX_COUNT - 1; i++)
     {
         if (!GetSetPokedexFlag(i + 1, FLAG_GET_CAUGHT))

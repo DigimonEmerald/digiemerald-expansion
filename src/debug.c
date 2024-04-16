@@ -4525,7 +4525,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_B_FACTORY) \
     X(MUS_VS_RAYQUAZA) \
     X(MUS_VS_FRONTIER_BRAIN) \
-    X(MUS_VS_MEW) \
+    X(MUS_VS_FALCOMON) \
     X(MUS_B_DOME_LOBBY) \
     X(MUS_VS_WILD) \
     X(MUS_VS_AQUA_MAGMA) \

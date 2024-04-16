@@ -473,7 +473,7 @@ gSongTable::
 	song mus_b_factory, 0, 0
 	song mus_vs_rayquaza, 0, 0
 	song mus_vs_frontier_brain, 0, 0
-	song mus_vs_mew, 0, 0
+	song mus_vs_falcomon, 0, 0
 	song mus_b_dome_lobby, 0, 0
 	song mus_vs_wild, 0, 0
 	song mus_vs_aqua_magma, 0, 0

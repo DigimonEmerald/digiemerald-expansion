@@ -5959,13 +5959,13 @@ const struct Item gItemsInfo[] =
         .secondaryId = 255  // signature z move
     },
 
-    [ITEM_MEWNIUM_Z] =
+    [ITEM_FALCOMONNIUM_Z] =
     {
-        .name = _("Mewnium Z"),
+        .name = _("Falcomonnium Z"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_Z_CRYSTAL,
         .description = COMPOUND_STRING(
-            "Upgrade Mew's\n"
+            "Upgrade Falcomon's\n"
             "Psychic into\n"
             "a Z-Move."),
         .pocket = POCKET_ITEMS,

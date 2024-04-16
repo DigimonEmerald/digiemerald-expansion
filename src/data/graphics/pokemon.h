@@ -2589,16 +2589,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_AGUMON_FAKE_EXPERT
 
-#if P_FAMILY_MEW
-    const u32 gMonFrontPic_Mew[] = INCBIN_U32("graphics/pokemon/mew/anim_front.4bpp.lz");
-    const u32 gMonPalette_Mew[] = INCBIN_U32("graphics/pokemon/mew/normal.gbapal.lz");
-    const u32 gMonBackPic_Mew[] = INCBIN_U32("graphics/pokemon/mew/back.4bpp.lz");
-    const u32 gMonShinyPalette_Mew[] = INCBIN_U32("graphics/pokemon/mew/shiny.gbapal.lz");
-    const u8 gMonIcon_Mew[] = INCBIN_U8("graphics/pokemon/mew/icon.4bpp");
+#if P_FAMILY_FALCOMON
+    const u32 gMonFrontPic_Falcomon[] = INCBIN_U32("graphics/pokemon/falcomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Falcomon[] = INCBIN_U32("graphics/pokemon/falcomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Falcomon[] = INCBIN_U32("graphics/pokemon/falcomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Falcomon[] = INCBIN_U32("graphics/pokemon/falcomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Falcomon[] = INCBIN_U8("graphics/pokemon/falcomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Mew[] = INCBIN_U8("graphics/pokemon/mew/footprint.1bpp");
+    const u8 gMonFootprint_Falcomon[] = INCBIN_U8("graphics/pokemon/falcomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_MEW
+#endif //P_FAMILY_FALCOMON
 
 #if P_FAMILY_CHIKORITA
     const u32 gMonFrontPic_Chikorita[] = INCBIN_U32("graphics/pokemon/chikorita/anim_front.4bpp.lz");

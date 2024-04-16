@@ -1076,8 +1076,8 @@ const u32 gItemIconPalette_EeviumZ[] = INCBIN_U32("graphics/items/icon_palettes/
 const u32 gItemIcon_SnorliumZ[] = INCBIN_U32("graphics/items/icons/snorlium_z.4bpp.lz");
 const u32 gItemIconPalette_SnorliumZ[] = INCBIN_U32("graphics/items/icon_palettes/snorlium_z.gbapal.lz");
 
-const u32 gItemIcon_MewniumZ[] = INCBIN_U32("graphics/items/icons/mewnium_z.4bpp.lz");
-const u32 gItemIconPalette_MewniumZ[] = INCBIN_U32("graphics/items/icon_palettes/mewnium_z.gbapal.lz");
+const u32 gItemIcon_FalcomonniumZ[] = INCBIN_U32("graphics/items/icons/falcomonnium_z.4bpp.lz");
+const u32 gItemIconPalette_FalcomonniumZ[] = INCBIN_U32("graphics/items/icon_palettes/falcomonnium_z.gbapal.lz");
 
 const u32 gItemIcon_DecidiumZ[] = INCBIN_U32("graphics/items/icons/decidium_z.4bpp.lz");
 const u32 gItemIconPalette_DecidiumZ[] = INCBIN_U32("graphics/items/icon_palettes/decidium_z.gbapal.lz");

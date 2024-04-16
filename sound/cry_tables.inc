@@ -459,9 +459,9 @@ gCryTable::
 	cry Cry_Agumon_fake_expertMegaY
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_AGUMON_FAKE_EXPERT
-.if P_FAMILY_MEW == TRUE
-	cry Cry_Mew
-.endif @ P_FAMILY_MEW
+.if P_FAMILY_FALCOMON == TRUE
+	cry Cry_Falcomon
+.endif @ P_FAMILY_FALCOMON
 .if P_FAMILY_CHIKORITA == TRUE
 	cry Cry_Chikorita
 	cry Cry_Bayleef
@@ -2885,9 +2885,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Agumon_fake_expertMegaY
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_AGUMON_FAKE_EXPERT
-.if P_FAMILY_MEW == TRUE
-	cry_reverse Cry_Mew
-.endif @ P_FAMILY_MEW
+.if P_FAMILY_FALCOMON == TRUE
+	cry_reverse Cry_Falcomon
+.endif @ P_FAMILY_FALCOMON
 .if P_FAMILY_CHIKORITA == TRUE
 	cry_reverse Cry_Chikorita
 	cry_reverse Cry_Bayleef

@@ -8426,12 +8426,12 @@ static const u16 sAgumon_fake_expertTeachableLearnset[] = {
 };
 #endif //P_FAMILY_AGUMON_FAKE_EXPERT
 
-#if P_FAMILY_MEW
-// Instead of reading this array for Mew, it checks for exceptions in CanLearnTeachableMove instead.
-static const u16 sMewTeachableLearnset[] = {
+#if P_FAMILY_FALCOMON
+// Instead of reading this array for Falcomon, it checks for exceptions in CanLearnTeachableMove instead.
+static const u16 sFalcomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MEW
+#endif //P_FAMILY_FALCOMON
 
 #if P_FAMILY_CHIKORITA
 static const u16 sChikoritaTeachableLearnset[] = {
