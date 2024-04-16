@@ -317,7 +317,7 @@ DOUBLE_BATTLE_TEST("Damage calculation: Combined pledge move")
         PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
         PLAYER(SPECIES_WOBBUFFET) { HP(521); SpDefense(152); Speed(3); }
         OPPONENT(SPECIES_CHIBOMON) { Speed(8); }
-        OPPONENT(SPECIES_EEVEE) { SpAttack(126); Speed(5); }
+        OPPONENT(SPECIES_CRABMON_X) { SpAttack(126); Speed(5); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_FIRE_PLEDGE, target: playerLeft, WITH_RNG(RNG_DAMAGE_MODIFIER, i));
                MOVE(opponentRight, MOVE_GRASS_PLEDGE, target: playerRight, WITH_RNG(RNG_DAMAGE_MODIFIER, i));

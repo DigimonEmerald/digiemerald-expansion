@@ -4067,8 +4067,8 @@ static const struct LevelUpMove sCrabmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_CRABMON
 
-#if P_FAMILY_EEVEE
-static const struct LevelUpMove sEeveeLevelUpLearnset[] = {
+#if P_FAMILY_CRABMON_X
+static const struct LevelUpMove sCrabmon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_COVET),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
@@ -4255,7 +4255,7 @@ static const struct LevelUpMove sSylveonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_6_CROSS_EVOS
-#endif //P_FAMILY_EEVEE
+#endif //P_FAMILY_CRABMON_X
 
 #if P_FAMILY_PORYGON
 static const struct LevelUpMove sPorygonLevelUpLearnset[] = {

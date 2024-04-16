@@ -2011,8 +2011,8 @@ static const union AnimCmd sAnim_Crabmon_1[] =
 };
 #endif //P_FAMILY_CRABMON
 
-#if P_FAMILY_EEVEE
-static const union AnimCmd sAnim_Eevee_1[] =
+#if P_FAMILY_CRABMON_X
+static const union AnimCmd sAnim_Crabmon_x_1[] =
 {
     ANIMCMD_FRAME(1, 33),
     ANIMCMD_FRAME(0, 5),
@@ -2020,7 +2020,7 @@ static const union AnimCmd sAnim_Eevee_1[] =
 };
 
 #if P_GIGANTAMAX_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(EeveeGigantamax);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Crabmon_xGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 
 static const union AnimCmd sAnim_Vaporeon_1[] =
@@ -2088,7 +2088,7 @@ static const union AnimCmd sAnim_Sylveon_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_6_CROSS_EVOS
-#endif //P_FAMILY_EEVEE
+#endif //P_FAMILY_CRABMON_X
 
 #if P_FAMILY_PORYGON
 static const union AnimCmd sAnim_Porygon_1[] =
@@ -10657,10 +10657,10 @@ SINGLE_ANIMATION(CoronamonGigantamax);
 #if P_FAMILY_CRABMON
 SINGLE_ANIMATION(Crabmon);
 #endif //P_FAMILY_CRABMON
-#if P_FAMILY_EEVEE
-SINGLE_ANIMATION(Eevee);
+#if P_FAMILY_CRABMON_X
+SINGLE_ANIMATION(Crabmon_x);
 #if P_GIGANTAMAX_FORMS
-SINGLE_ANIMATION(EeveeGigantamax);
+SINGLE_ANIMATION(Crabmon_xGigantamax);
 #endif //P_GIGANTAMAX_FORMS
 SINGLE_ANIMATION(Vaporeon);
 SINGLE_ANIMATION(Jolteon);
@@ -10676,7 +10676,7 @@ SINGLE_ANIMATION(Glaceon);
 #if P_GEN_6_CROSS_EVOS
 SINGLE_ANIMATION(Sylveon);
 #endif //P_GEN_6_CROSS_EVOS
-#endif //P_FAMILY_EEVEE
+#endif //P_FAMILY_CRABMON_X
 #if P_FAMILY_PORYGON
 SINGLE_ANIMATION(Porygon);
 #if P_GEN_2_CROSS_EVOS

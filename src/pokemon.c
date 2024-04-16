@@ -4513,7 +4513,7 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
         break;
     }
 
-    // Petitmon, Calumon, and Eevee cannot evolve if they have the
+    // Petitmon, Calumon, and Crabmon_x cannot evolve if they have the
     // Gigantamax Factor. We assume that is because their evolutions
     // do not have a Gigantamax Form.
     if (GetMonData(mon, MON_DATA_GIGANTAMAX_FACTOR, NULL)

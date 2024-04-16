@@ -13574,8 +13574,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_CRABMON
 
-#if P_FAMILY_EEVEE
-    [SPECIES_EEVEE] =
+#if P_FAMILY_CRABMON_X
+    [SPECIES_CRABMON_X] =
     {
         .baseHP        = 55,
         .baseAttack    = 55,
@@ -13594,39 +13594,39 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_RUN_AWAY, ABILITY_ADAPTABILITY, ABILITY_ANTICIPATION },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Eevee"),
-        .cryId = CRY_EEVEE,
-        .natDexNum = NATIONAL_DEX_EEVEE,
+        .speciesName = _("Crabmon_x"),
+        .cryId = CRY_CRABMON_X,
+        .natDexNum = NATIONAL_DEX_CRABMON_X,
         .categoryName = _("Evolution"),
         .height = 3,
         .weight = 65,
-        .description = gEeveePokedexText,
+        .description = gCrabmon_xPokedexText,
         .pokemonScale = 476,
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Eevee,
-        .frontPicFemale = gMonFrontPic_EeveeF,
+        .frontPic = gMonFrontPic_Crabmon_x,
+        .frontPicFemale = gMonFrontPic_Crabmon_xF,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicSizeFemale = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Eevee,
+        .frontAnimFrames = sAnims_Crabmon_x,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Eevee,
-        .backPicFemale = gMonBackPic_EeveeF,
+        .backPic = gMonBackPic_Crabmon_x,
+        .backPicFemale = gMonBackPic_Crabmon_xF,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicSizeFemale = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Eevee,
-        .shinyPalette = gMonShinyPalette_Eevee,
-        .iconSprite = gMonIcon_Eevee,
+        .palette = gMonPalette_Crabmon_x,
+        .shinyPalette = gMonShinyPalette_Crabmon_x,
+        .iconSprite = gMonIcon_Crabmon_x,
         .iconPalIndex = 2,
-        FOOTPRINT(Eevee)
-        .levelUpLearnset = sEeveeLevelUpLearnset,
-        .teachableLearnset = sEeveeTeachableLearnset,
-        .formSpeciesIdTable = sEeveeFormSpeciesIdTable,
-        .formChangeTable = sEeveeFormChangeTable,
+        FOOTPRINT(Crabmon_x)
+        .levelUpLearnset = sCrabmon_xLevelUpLearnset,
+        .teachableLearnset = sCrabmon_xTeachableLearnset,
+        .formSpeciesIdTable = sCrabmon_xFormSpeciesIdTable,
+        .formChangeTable = sCrabmon_xFormChangeTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_JOLTEON},
                                 {EVO_ITEM, ITEM_WATER_STONE, SPECIES_VAPOREON},
                                 {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_FLAREON},
@@ -13640,7 +13640,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_EEVEE_GIGANTAMAX] =
+    [SPECIES_CRABMON_X_GIGANTAMAX] =
     {
         .baseHP        = 55,
         .baseAttack    = 55,
@@ -13659,44 +13659,44 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_RUN_AWAY, ABILITY_ADAPTABILITY, ABILITY_ANTICIPATION },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Eevee"),
-        .cryId = CRY_EEVEE,
-        .natDexNum = NATIONAL_DEX_EEVEE,
+        .speciesName = _("Crabmon_x"),
+        .cryId = CRY_CRABMON_X,
+        .natDexNum = NATIONAL_DEX_CRABMON_X,
         .categoryName = _("Evolution"),
         .height = 180,
         .weight = 0,
         .description = COMPOUND_STRING(
             "Having gotten even friendlier and\n"
-            "more innocent, Eevee tries to play\n"
+            "more innocent, Crabmon_x tries to play\n"
             "with anyone around, only to end up\n"
             "crushing them with its immense body."),
         .pokemonScale = 476,
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_EeveeGigantamax,
+        .frontPic = gMonFrontPic_Crabmon_xGigantamax,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_EeveeGigantamax,
+        .frontAnimFrames = sAnims_Crabmon_xGigantamax,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_EeveeGigantamax,
+        .backPic = gMonBackPic_Crabmon_xGigantamax,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 7,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_EeveeGigantamax,
-        .shinyPalette = gMonShinyPalette_EeveeGigantamax,
-        .iconSprite = gMonIcon_EeveeGigantamax,
+        .palette = gMonPalette_Crabmon_xGigantamax,
+        .shinyPalette = gMonShinyPalette_Crabmon_xGigantamax,
+        .iconSprite = gMonIcon_Crabmon_xGigantamax,
         .iconPalIndex = 2,
-        FOOTPRINT(Eevee)
+        FOOTPRINT(Crabmon_x)
         .isGigantamax = TRUE,
-        .levelUpLearnset = sEeveeLevelUpLearnset,
-        .teachableLearnset = sEeveeTeachableLearnset,
-        .formSpeciesIdTable = sEeveeFormSpeciesIdTable,
-        .formChangeTable = sEeveeFormChangeTable,
+        .levelUpLearnset = sCrabmon_xLevelUpLearnset,
+        .teachableLearnset = sCrabmon_xTeachableLearnset,
+        .formSpeciesIdTable = sCrabmon_xFormSpeciesIdTable,
+        .formChangeTable = sCrabmon_xFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
 
-    [SPECIES_EEVEE_PARTNER] =
+    [SPECIES_CRABMON_X_PARTNER] =
     {
         .baseHP        = 65,
         .baseAttack    = 75,
@@ -13715,44 +13715,44 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_RUN_AWAY, ABILITY_ADAPTABILITY, ABILITY_ANTICIPATION },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Eevee"),
-        .cryId = CRY_EEVEE,
-        .natDexNum = NATIONAL_DEX_EEVEE,
+        .speciesName = _("Crabmon_x"),
+        .cryId = CRY_CRABMON_X,
+        .natDexNum = NATIONAL_DEX_CRABMON_X,
         .categoryName = _("Evolution"),
         .height = 3,
         .weight = 65,
-        .description = gEeveePokedexText,
+        .description = gCrabmon_xPokedexText,
         .pokemonScale = 476,
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Eevee,
-        .frontPicFemale = gMonFrontPic_EeveeF,
+        .frontPic = gMonFrontPic_Crabmon_x,
+        .frontPicFemale = gMonFrontPic_Crabmon_xF,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicSizeFemale = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Eevee,
+        .frontAnimFrames = sAnims_Crabmon_x,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Eevee,
-        .backPicFemale = gMonBackPic_EeveeF,
+        .backPic = gMonBackPic_Crabmon_x,
+        .backPicFemale = gMonBackPic_Crabmon_xF,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicSizeFemale = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Eevee,
-        .shinyPalette = gMonShinyPalette_Eevee,
-        .iconSprite = gMonIcon_EeveePartner,
+        .palette = gMonPalette_Crabmon_x,
+        .shinyPalette = gMonShinyPalette_Crabmon_x,
+        .iconSprite = gMonIcon_Crabmon_xPartner,
         .iconPalIndex = 2,
     #if P_CUSTOM_GENDER_DIFF_ICONS == TRUE
-        .iconSpriteFemale = gMonIcon_EeveePartnerF,
+        .iconSpriteFemale = gMonIcon_Crabmon_xPartnerF,
         .iconPalIndexFemale = 2,
     #endif
-        FOOTPRINT(Eevee)
+        FOOTPRINT(Crabmon_x)
         .cannotBeTraded = TRUE,
         .allPerfectIVs = TRUE,
-        .levelUpLearnset = sEeveeLevelUpLearnset,
-        .teachableLearnset = sEeveeTeachableLearnset,
-        .formSpeciesIdTable = sEeveeFormSpeciesIdTable,
+        .levelUpLearnset = sCrabmon_xLevelUpLearnset,
+        .teachableLearnset = sCrabmon_xTeachableLearnset,
+        .formSpeciesIdTable = sCrabmon_xFormSpeciesIdTable,
     },
 
     [SPECIES_VAPOREON] =
@@ -14177,7 +14177,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sSylveonTeachableLearnset,
     },
 #endif //P_GEN_6_CROSS_EVOS
-#endif //P_FAMILY_EEVEE
+#endif //P_FAMILY_CRABMON_X
 
 #if P_FAMILY_PORYGON
     [SPECIES_PORYGON] =

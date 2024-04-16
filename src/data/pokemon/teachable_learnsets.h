@@ -7315,8 +7315,8 @@ static const u16 sCrabmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_CRABMON
 
-#if P_FAMILY_EEVEE
-static const u16 sEeveeTeachableLearnset[] = {
+#if P_FAMILY_CRABMON_X
+static const u16 sCrabmon_xTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DIG,
@@ -7630,7 +7630,7 @@ static const u16 sSylveonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_6_CROSS_EVOS
-#endif //P_FAMILY_EEVEE
+#endif //P_FAMILY_CRABMON_X
 
 #if P_FAMILY_PORYGON
 static const u16 sPorygonTeachableLearnset[] = {

@@ -6227,7 +6227,7 @@ static void Task_HandleEvolutionScreenInput(u8 taskId)
     }
 }
 
-static void HandleTargetSpeciesPrint(u8 taskId, u16 targetSpecies, u16 previousTargetSpecies, u8 base_x, u8 base_y, u8 base_y_offset, u8 base_i, bool8 isEevee)
+static void HandleTargetSpeciesPrint(u8 taskId, u16 targetSpecies, u16 previousTargetSpecies, u8 base_x, u8 base_y, u8 base_y_offset, u8 base_i, bool8 isCrabmon_x)
 {
     u8 iterations = 6;
     bool8 seen = GetSetPokedexFlag(SpeciesToNationalPokedexNum(targetSpecies), FLAG_GET_SEEN);
@@ -6240,7 +6240,7 @@ static void HandleTargetSpeciesPrint(u8 taskId, u16 targetSpecies, u16 previousT
     PrintInfoScreenTextSmall(gStringVar3, base_x, base_y + base_y_offset*base_i); //evolution mon name
 
     //Print mon icon in the top row
-    if (isEevee)
+    if (isCrabmon_x)
     {
         iterations = 9;
         if (targetSpecies == previousTargetSpecies)
@@ -6255,7 +6255,7 @@ static void HandleTargetSpeciesPrint(u8 taskId, u16 targetSpecies, u16 previousT
     {
         u32 personality = GetPokedexMonPersonality(targetSpecies);
         LoadMonIconPalettePersonality(targetSpecies, personality); //Loads pallete for current mon
-            if (isEevee)
+            if (isCrabmon_x)
                 gTasks[taskId].data[4+base_i] = CreateMonIcon(targetSpecies, SpriteCB_MonIcon, 45 + 26*base_i, 31, 4, personality); //Create pokemon sprite
             else
                 gTasks[taskId].data[4+base_i] = CreateMonIcon(targetSpecies, SpriteCB_MonIcon, 50 + 32*base_i, 31, 4, personality); //Create pokemon sprite
@@ -6434,7 +6434,7 @@ static u8 PrintEvolutionTargetSpeciesAndMethod(u8 taskId, u16 species, u8 depth,
     u8 base_i = 0;
     u8 times = 0;
     u8 depth_x = 16;
-    bool8 isEevee = FALSE;
+    bool8 isCrabmon_x = FALSE;
     const struct Evolution *evolutions = GetSpeciesEvolutions(species);
 
     if (sPokedexView->sEvoScreenData.isMega)
@@ -6444,10 +6444,10 @@ static u8 PrintEvolutionTargetSpeciesAndMethod(u8 taskId, u16 species, u8 depth,
 
     StringCopy(gStringVar1, GetSpeciesName(species));
 
-    if (species == SPECIES_EEVEE)
-        isEevee = TRUE;
+    if (species == SPECIES_CRABMON_X)
+        isCrabmon_x = TRUE;
 
-    //Calculate number of possible direct evolutions (e.g. Eevee has 5 but torchic has 1)
+    //Calculate number of possible direct evolutions (e.g. Crabmon_x has 5 but torchic has 1)
     for (i = 0; evolutions[i].method != EVOLUTIONS_END; i++)
     {
         if (evolutions[i].method != 0)
@@ -6473,7 +6473,7 @@ static u8 PrintEvolutionTargetSpeciesAndMethod(u8 taskId, u16 species, u8 depth,
         targetSpecies = evolutions[i].targetSpecies;
         sPokedexView->sEvoScreenData.targetSpecies[base_i] = targetSpecies;
         CreateCaughtBallEvolutionScreen(targetSpecies, base_x + depth_x*depth-9, base_y + base_y_offset*base_i, 0);
-        HandleTargetSpeciesPrint(taskId, targetSpecies, previousTargetSpecies, base_x + depth_x*depth, base_y, base_y_offset, base_i, isEevee); //evolution mon name
+        HandleTargetSpeciesPrint(taskId, targetSpecies, previousTargetSpecies, base_x + depth_x*depth, base_y, base_y_offset, base_i, isCrabmon_x); //evolution mon name
 
         switch (evolutions[i].method)
         {

@@ -157,7 +157,7 @@
     FRONTIER_MON_SAKUTTOMON,        \
     FRONTIER_MON_VIXIMON,        \
     FRONTIER_MON_YOKOMON,     \
-    FRONTIER_MON_EEVEE,         \
+    FRONTIER_MON_CRABMON_X,         \
     FRONTIER_MON_TUMBLEMON,       \
     FRONTIER_MON_XIAOMON,       \
     FRONTIER_MON_CHINCHOU,      \
@@ -277,7 +277,7 @@
     FRONTIER_MON_PUYOMON,      \
     FRONTIER_MON_PUSURIMON,          \
     FRONTIER_MON_VIXIMON,        \
-    FRONTIER_MON_EEVEE,         \
+    FRONTIER_MON_CRABMON_X,         \
     FRONTIER_MON_CHINCHOU,      \
     FRONTIER_MON_TEDDIURSA,     \
     FRONTIER_MON_LUVDISC,       \
@@ -327,7 +327,7 @@
     FRONTIER_MON_PUYOMON,      \
     FRONTIER_MON_PUSURIMON,          \
     FRONTIER_MON_VIXIMON,        \
-    FRONTIER_MON_EEVEE,         \
+    FRONTIER_MON_CRABMON_X,         \
     FRONTIER_MON_CHINCHOU,      \
     FRONTIER_MON_TEDDIURSA,     \
     FRONTIER_MON_DELIBIRD,      \
@@ -367,7 +367,7 @@
     FRONTIER_MON_PUYOMON,      \
     FRONTIER_MON_PUSURIMON,          \
     FRONTIER_MON_YOKOMON,     \
-    FRONTIER_MON_EEVEE,         \
+    FRONTIER_MON_CRABMON_X,         \
     FRONTIER_MON_TEDDIURSA,     \
     FRONTIER_MON_PHANPY,        \
     FRONTIER_MON_SPOINK,        \
@@ -726,7 +726,7 @@
     FRONTIER_MON_TORCHIC,       \
     FRONTIER_MON_NATU,          \
     FRONTIER_MON_PUYOMON,      \
-    FRONTIER_MON_EEVEE,         \
+    FRONTIER_MON_CRABMON_X,         \
     FRONTIER_MON_TEDDIURSA,     \
     FRONTIER_MON_DELIBIRD,      \
     FRONTIER_MON_KURAMON,     \
@@ -859,7 +859,7 @@
     FRONTIER_MON_SWABLU,        \
     FRONTIER_MON_AGUMON_06,        \
     FRONTIER_MON_PUYOMON,      \
-    FRONTIER_MON_EEVEE,         \
+    FRONTIER_MON_CRABMON_X,         \
     FRONTIER_MON_TEDDIURSA,     \
     FRONTIER_MON_PHANPY,        \
     FRONTIER_MON_VIBRAVA,       \
@@ -893,7 +893,7 @@
     FRONTIER_MON_PUYOMON,      \
     FRONTIER_MON_PUSURIMON,          \
     FRONTIER_MON_VIXIMON,        \
-    FRONTIER_MON_EEVEE,         \
+    FRONTIER_MON_CRABMON_X,         \
     FRONTIER_MON_TEDDIURSA,     \
     FRONTIER_MON_DELIBIRD,      \
     FRONTIER_MON_LOMBRE,        \
@@ -925,7 +925,7 @@
     FRONTIER_MON_SWABLU,        \
     FRONTIER_MON_PUYOMON,      \
     FRONTIER_MON_PICKMON_WHITE,     \
-    FRONTIER_MON_EEVEE,         \
+    FRONTIER_MON_CRABMON_X,         \
     FRONTIER_MON_XIAOMON,       \
     FRONTIER_MON_TEDDIURSA,     \
     FRONTIER_MON_ARON,          \
@@ -5702,7 +5702,7 @@
     -1
 
 // Only used by one Beauty
-#define FRONTIER_MONS_EEVEELUTIONS \
+#define FRONTIER_MONS_CRABMON_XLUTIONS \
     FRONTIER_MON_VAPOREON_1,    \
     FRONTIER_MON_JOLTEON_1,     \
     FRONTIER_MON_FLAREON_1,     \
@@ -7350,7 +7350,7 @@ const u16 gBattleFrontierTrainerMons_Paige[] =
 
 const u16 gBattleFrontierTrainerMons_Anya[] =
 {
-    FRONTIER_MONS_EEVEELUTIONS
+    FRONTIER_MONS_CRABMON_XLUTIONS
 };
 
 const u16 gBattleFrontierTrainerMons_Dawn[] =

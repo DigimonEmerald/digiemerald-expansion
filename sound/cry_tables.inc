@@ -392,8 +392,8 @@ gCryTable::
 .if P_FAMILY_CRABMON == TRUE
 	cry Cry_Crabmon
 .endif @ P_FAMILY_CRABMON
-.if P_FAMILY_EEVEE == TRUE
-	cry Cry_Eevee
+.if P_FAMILY_CRABMON_X == TRUE
+	cry Cry_Crabmon_x
 	cry Cry_Vaporeon
 	cry Cry_Jolteon
 	cry Cry_Flareon
@@ -408,7 +408,7 @@ gCryTable::
 .if P_GEN_6_CROSS_EVOS == TRUE
 	cry Cry_Sylveon
 .endif @ P_GEN_6_CROSS_EVOS
-.endif @ P_FAMILY_EEVEE
+.endif @ P_FAMILY_CRABMON_X
 .if P_FAMILY_PORYGON == TRUE
 	cry Cry_Porygon
 .if P_GEN_2_CROSS_EVOS == TRUE
@@ -2818,8 +2818,8 @@ gCryTable_Reverse::
 .if P_FAMILY_CRABMON == TRUE
 	cry_reverse Cry_Crabmon
 .endif @ P_FAMILY_CRABMON
-.if P_FAMILY_EEVEE == TRUE
-	cry_reverse Cry_Eevee
+.if P_FAMILY_CRABMON_X == TRUE
+	cry_reverse Cry_Crabmon_x
 	cry_reverse Cry_Vaporeon
 	cry_reverse Cry_Jolteon
 	cry_reverse Cry_Flareon
@@ -2834,7 +2834,7 @@ gCryTable_Reverse::
 .if P_GEN_6_CROSS_EVOS == TRUE
 	cry_reverse Cry_Sylveon
 .endif @ P_GEN_6_CROSS_EVOS
-.endif @ P_FAMILY_EEVEE
+.endif @ P_FAMILY_CRABMON_X
 .if P_FAMILY_PORYGON == TRUE
 	cry_reverse Cry_Porygon
 .if P_GEN_2_CROSS_EVOS == TRUE

@@ -2251,30 +2251,30 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_CRABMON
 
-#if P_FAMILY_EEVEE
-    const u32 gMonFrontPic_Eevee[] = INCBIN_U32("graphics/pokemon/eevee/anim_front.4bpp.lz");
-    const u32 gMonPalette_Eevee[] = INCBIN_U32("graphics/pokemon/eevee/normal.gbapal.lz");
-    const u32 gMonBackPic_Eevee[] = INCBIN_U32("graphics/pokemon/eevee/back.4bpp.lz");
-    const u32 gMonShinyPalette_Eevee[] = INCBIN_U32("graphics/pokemon/eevee/shiny.gbapal.lz");
-    const u8 gMonIcon_Eevee[] = INCBIN_U8("graphics/pokemon/eevee/icon.4bpp");
+#if P_FAMILY_CRABMON_X
+    const u32 gMonFrontPic_Crabmon_x[] = INCBIN_U32("graphics/pokemon/crabmon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Crabmon_x[] = INCBIN_U32("graphics/pokemon/crabmon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Crabmon_x[] = INCBIN_U32("graphics/pokemon/crabmon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Crabmon_x[] = INCBIN_U32("graphics/pokemon/crabmon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Crabmon_x[] = INCBIN_U8("graphics/pokemon/crabmon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Eevee[] = INCBIN_U8("graphics/pokemon/eevee/footprint.1bpp");
+    const u8 gMonFootprint_Crabmon_x[] = INCBIN_U8("graphics/pokemon/crabmon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_EeveeF[] = INCBIN_U32("graphics/pokemon/eevee/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_EeveeF[] = INCBIN_U32("graphics/pokemon/eevee/backf.4bpp.lz");
+    const u32 gMonFrontPic_Crabmon_xF[] = INCBIN_U32("graphics/pokemon/crabmon_x/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_Crabmon_xF[] = INCBIN_U32("graphics/pokemon/crabmon_x/backf.4bpp.lz");
 
 #if P_GIGANTAMAX_FORMS
-    const u32 gMonFrontPic_EeveeGigantamax[] = INCBIN_U32("graphics/pokemon/eevee/gigantamax/front.4bpp.lz");
-    const u32 gMonBackPic_EeveeGigantamax[] = INCBIN_U32("graphics/pokemon/eevee/gigantamax/back.4bpp.lz");
-    const u32 gMonPalette_EeveeGigantamax[] = INCBIN_U32("graphics/pokemon/eevee/gigantamax/normal.gbapal.lz");
-    const u32 gMonShinyPalette_EeveeGigantamax[] = INCBIN_U32("graphics/pokemon/eevee/gigantamax/shiny.gbapal.lz");
-    const u8 gMonIcon_EeveeGigantamax[] = INCBIN_U8("graphics/pokemon/eevee/gigantamax/icon.4bpp");
+    const u32 gMonFrontPic_Crabmon_xGigantamax[] = INCBIN_U32("graphics/pokemon/crabmon_x/gigantamax/front.4bpp.lz");
+    const u32 gMonBackPic_Crabmon_xGigantamax[] = INCBIN_U32("graphics/pokemon/crabmon_x/gigantamax/back.4bpp.lz");
+    const u32 gMonPalette_Crabmon_xGigantamax[] = INCBIN_U32("graphics/pokemon/crabmon_x/gigantamax/normal.gbapal.lz");
+    const u32 gMonShinyPalette_Crabmon_xGigantamax[] = INCBIN_U32("graphics/pokemon/crabmon_x/gigantamax/shiny.gbapal.lz");
+    const u8 gMonIcon_Crabmon_xGigantamax[] = INCBIN_U8("graphics/pokemon/crabmon_x/gigantamax/icon.4bpp");
 #endif //P_GIGANTAMAX_FORMS
 
-    const u8 gMonIcon_EeveePartner[] = INCBIN_U8("graphics/pokemon/eevee/partner/icon.4bpp");
+    const u8 gMonIcon_Crabmon_xPartner[] = INCBIN_U8("graphics/pokemon/crabmon_x/partner/icon.4bpp");
     #if P_CUSTOM_GENDER_DIFF_ICONS
-        const u8 gMonIcon_EeveePartnerF[] = INCBIN_U8("graphics/pokemon/eevee/partner/iconf.4bpp");
+        const u8 gMonIcon_Crabmon_xPartnerF[] = INCBIN_U8("graphics/pokemon/crabmon_x/partner/iconf.4bpp");
     #endif
 
     const u32 gMonFrontPic_Vaporeon[] = INCBIN_U32("graphics/pokemon/vaporeon/anim_front.4bpp.lz");
@@ -2354,7 +2354,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Sylveon[] = INCBIN_U8("graphics/pokemon/sylveon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_6_CROSS_EVOS
-#endif //P_FAMILY_EEVEE
+#endif //P_FAMILY_CRABMON_X
 
 #if P_FAMILY_PORYGON
     const u32 gMonFrontPic_Porygon[] = INCBIN_U32("graphics/pokemon/porygon/anim_front.4bpp.lz");

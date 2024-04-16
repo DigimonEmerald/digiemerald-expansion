@@ -16368,7 +16368,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
     {
         .name = HANDLE_EXPANDED_MOVE_NAME("VeeveeVolley", "Veevee Volley"),
         .description = COMPOUND_STRING(
-            "Eevee's love increases its\n"
+            "Crabmon_x's love increases its\n"
             "power. It never misses."),
         .effect = EFFECT_RETURN,
         .power = 1,

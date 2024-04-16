@@ -1307,10 +1307,10 @@ Cry_Crabmon::
 	.incbin "sound/direct_sound_samples/cries/crabmon.bin"
 .endif @ P_FAMILY_CRABMON
 
-.if P_FAMILY_EEVEE == TRUE
+.if P_FAMILY_CRABMON_X == TRUE
 	.align 2
-Cry_Eevee::
-	.incbin "sound/direct_sound_samples/cries/eevee.bin"
+Cry_Crabmon_x::
+	.incbin "sound/direct_sound_samples/cries/crabmon_x.bin"
 
 	.align 2
 Cry_Vaporeon::
@@ -1347,7 +1347,7 @@ Cry_Glaceon::
 Cry_Sylveon::
 	.incbin "sound/direct_sound_samples/cries/sylveon.bin"
 .endif @ P_GEN_6_CROSS_EVOS
-.endif @ P_FAMILY_EEVEE
+.endif @ P_FAMILY_CRABMON_X
 
 .if P_FAMILY_PORYGON == TRUE
 	.align 2

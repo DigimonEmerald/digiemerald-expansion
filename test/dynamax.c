@@ -1122,14 +1122,14 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Cuddle infatuates both opponents, if possibl
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_G_MAX_CUDDLE].argument == MAX_EFFECT_INFATUATE_FOES);
-        PLAYER(SPECIES_EEVEE) { Gender(MON_MALE); GigantamaxFactor(TRUE); }
-        PLAYER(SPECIES_EEVEE);
+        PLAYER(SPECIES_CRABMON_X) { Gender(MON_MALE); GigantamaxFactor(TRUE); }
+        PLAYER(SPECIES_CRABMON_X);
         OPPONENT(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); }
         OPPONENT(SPECIES_WOBBUFFET) { Gender(MON_MALE); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft, dynamax: TRUE); }
     } SCENE {
-        MESSAGE("Eevee used G-Max Cuddle!");
+        MESSAGE("Crabmon_x used G-Max Cuddle!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_INFATUATION, opponentLeft);
         MESSAGE("Foe Wobbuffet fell in love!");
         NONE_OF {

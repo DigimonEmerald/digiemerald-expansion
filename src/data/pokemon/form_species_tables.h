@@ -509,16 +509,16 @@ static const u16 sCoronamonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_CORONAMON
 
-#if P_FAMILY_EEVEE
-static const u16 sEeveeFormSpeciesIdTable[] = {
-    SPECIES_EEVEE,
+#if P_FAMILY_CRABMON_X
+static const u16 sCrabmon_xFormSpeciesIdTable[] = {
+    SPECIES_CRABMON_X,
 #if P_GIGANTAMAX_FORMS
-    SPECIES_EEVEE_GIGANTAMAX,
+    SPECIES_CRABMON_X_GIGANTAMAX,
 #endif
-    SPECIES_EEVEE_PARTNER,
+    SPECIES_CRABMON_X_PARTNER,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_EEVEE
+#endif //P_FAMILY_CRABMON_X
 
 #if P_FAMILY_AERODACTYL
 static const u16 sAerodactylFormSpeciesIdTable[] = {

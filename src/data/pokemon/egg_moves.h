@@ -1193,8 +1193,8 @@ const u16 gEggMoves[] = {
         MOVE_FREEZE_DRY),
 #endif //P_FAMILY_CORONAMON
 
-#if P_FAMILY_EEVEE
-    egg_moves(EEVEE,
+#if P_FAMILY_CRABMON_X
+    egg_moves(CRABMON_X,
         MOVE_CHARM,
         MOVE_FLAIL,
         MOVE_ENDURE,
@@ -1209,7 +1209,7 @@ const u16 gEggMoves[] = {
         MOVE_STORED_POWER,
         MOVE_SYNCHRONOISE,
         MOVE_CAPTIVATE),
-#endif //P_FAMILY_EEVEE
+#endif //P_FAMILY_CRABMON_X
 
 #if P_FAMILY_OMANYTE
     egg_moves(OMANYTE,

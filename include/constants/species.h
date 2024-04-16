@@ -134,7 +134,7 @@
 #define SPECIES_COMMDRAMON                                130
 #define SPECIES_CORONAMON                                  131
 #define SPECIES_CRABMON                                   132
-#define SPECIES_EEVEE                                   133
+#define SPECIES_CRABMON_X                                   133
 #define SPECIES_VAPOREON                                134
 #define SPECIES_JOLTEON                                 135
 #define SPECIES_FLAREON                                 136
@@ -1592,7 +1592,7 @@
 #define SPECIES_ARAQUANID_TOTEM                         1485
 #define SPECIES_TOGEDEMARU_TOTEM                        1486
 #define SPECIES_PETITMON_PARTNER                         1487
-#define SPECIES_EEVEE_PARTNER                           1488
+#define SPECIES_CRABMON_X_PARTNER                           1488
 #define SPECIES_BOMMON_GIGANTAMAX                     1489
 #define SPECIES_CURIMON_GIGANTAMAX                    1490
 #define SPECIES_CHIBOMON_GIGANTAMAX                    1491
@@ -1603,7 +1603,7 @@
 #define SPECIES_TSUMEMON_GIGANTAMAX                       1496
 #define SPECIES_WANYAMON_GIGANTAMAX                      1497
 #define SPECIES_CORONAMON_GIGANTAMAX                       1498
-#define SPECIES_EEVEE_GIGANTAMAX                        1499
+#define SPECIES_CRABMON_X_GIGANTAMAX                        1499
 #define SPECIES_SNORLAX_GIGANTAMAX                      1500
 #define SPECIES_GARBODOR_GIGANTAMAX                     1501
 #define SPECIES_MELMETAL_GIGANTAMAX                     1502
