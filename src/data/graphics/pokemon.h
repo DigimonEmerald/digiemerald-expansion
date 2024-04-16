@@ -1634,21 +1634,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Yokomon[] = INCBIN_U8("graphics/pokemon/yokomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Exeggutor[] = INCBIN_U32("graphics/pokemon/exeggutor/anim_front.4bpp.lz");
-    const u32 gMonPalette_Exeggutor[] = INCBIN_U32("graphics/pokemon/exeggutor/normal.gbapal.lz");
-    const u32 gMonBackPic_Exeggutor[] = INCBIN_U32("graphics/pokemon/exeggutor/back.4bpp.lz");
-    const u32 gMonShinyPalette_Exeggutor[] = INCBIN_U32("graphics/pokemon/exeggutor/shiny.gbapal.lz");
-    const u8 gMonIcon_Exeggutor[] = INCBIN_U8("graphics/pokemon/exeggutor/icon.4bpp");
+    const u32 gMonFrontPic_Agumon[] = INCBIN_U32("graphics/pokemon/agumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Agumon[] = INCBIN_U32("graphics/pokemon/agumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Agumon[] = INCBIN_U32("graphics/pokemon/agumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Agumon[] = INCBIN_U32("graphics/pokemon/agumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Agumon[] = INCBIN_U8("graphics/pokemon/agumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Exeggutor[] = INCBIN_U8("graphics/pokemon/exeggutor/footprint.1bpp");
+    const u8 gMonFootprint_Agumon[] = INCBIN_U8("graphics/pokemon/agumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_ALOLAN_FORMS
-    const u32 gMonFrontPic_ExeggutorAlolan[] = INCBIN_U32("graphics/pokemon/exeggutor/alolan/anim_front.4bpp.lz");
-    const u32 gMonPalette_ExeggutorAlolan[] = INCBIN_U32("graphics/pokemon/exeggutor/alolan/normal.gbapal.lz");
-    const u32 gMonBackPic_ExeggutorAlolan[] = INCBIN_U32("graphics/pokemon/exeggutor/alolan/back.4bpp.lz");
-    const u32 gMonShinyPalette_ExeggutorAlolan[] = INCBIN_U32("graphics/pokemon/exeggutor/alolan/shiny.gbapal.lz");
-    const u8 gMonIcon_ExeggutorAlolan[] = INCBIN_U8("graphics/pokemon/exeggutor/alolan/icon.4bpp");
+    const u32 gMonFrontPic_AgumonAlolan[] = INCBIN_U32("graphics/pokemon/agumon/alolan/anim_front.4bpp.lz");
+    const u32 gMonPalette_AgumonAlolan[] = INCBIN_U32("graphics/pokemon/agumon/alolan/normal.gbapal.lz");
+    const u32 gMonBackPic_AgumonAlolan[] = INCBIN_U32("graphics/pokemon/agumon/alolan/back.4bpp.lz");
+    const u32 gMonShinyPalette_AgumonAlolan[] = INCBIN_U32("graphics/pokemon/agumon/alolan/shiny.gbapal.lz");
+    const u8 gMonIcon_AgumonAlolan[] = INCBIN_U8("graphics/pokemon/agumon/alolan/icon.4bpp");
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_YOKOMON
 

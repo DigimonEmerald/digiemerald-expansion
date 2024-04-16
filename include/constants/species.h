@@ -104,7 +104,7 @@
 #define SPECIES_XIAOMON                                 100
 #define SPECIES_YAAMON                               101
 #define SPECIES_YOKOMON                               102
-#define SPECIES_EXEGGUTOR                               103
+#define SPECIES_AGUMON                               103
 #define SPECIES_CUBONE                                  104
 #define SPECIES_MAROWAK                                 105
 #define SPECIES_HITMONLEE                               106
@@ -1030,7 +1030,7 @@
 #define SPECIES_MOTIMON_ALOLAN                            969
 #define SPECIES_SAKUTTOMON_ALOLAN                           970
 #define SPECIES_SUNMON_ALOLAN                              971
-#define SPECIES_EXEGGUTOR_ALOLAN                        972
+#define SPECIES_AGUMON_ALOLAN                        972
 #define SPECIES_MAROWAK_ALOLAN                          973
 #define SPECIES_CALUMON_GALARIAN                         974
 #define SPECIES_NEGAMON_GALARIAN                         975

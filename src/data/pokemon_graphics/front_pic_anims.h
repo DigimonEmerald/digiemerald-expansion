@@ -1463,7 +1463,7 @@ static const union AnimCmd sAnim_Yokomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Exeggutor_1[] =
+static const union AnimCmd sAnim_Agumon_1[] =
 {
     ANIMCMD_FRAME(1, 35),
     ANIMCMD_FRAME(0, 10),
@@ -1471,7 +1471,7 @@ static const union AnimCmd sAnim_Exeggutor_1[] =
 };
 
 #if P_ALOLAN_FORMS
-PLACEHOLDER_ANIM_TWO_FRAMES(ExeggutorAlolan);
+PLACEHOLDER_ANIM_TWO_FRAMES(AgumonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_YOKOMON
 
@@ -10505,9 +10505,9 @@ SINGLE_ANIMATION(YaamonHisuian);
 #endif //P_FAMILY_XIAOMON
 #if P_FAMILY_YOKOMON
 SINGLE_ANIMATION(Yokomon);
-SINGLE_ANIMATION(Exeggutor);
+SINGLE_ANIMATION(Agumon);
 #if P_ALOLAN_FORMS
-SINGLE_ANIMATION(ExeggutorAlolan);
+SINGLE_ANIMATION(AgumonAlolan);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_YOKOMON
 #if P_FAMILY_CUBONE

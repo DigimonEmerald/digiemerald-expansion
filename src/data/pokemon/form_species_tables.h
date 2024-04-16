@@ -405,10 +405,10 @@ static const u16 sYaamonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_XIAOMON
 
 #if P_FAMILY_YOKOMON
-static const u16 sExeggutorFormSpeciesIdTable[] = {
-    SPECIES_EXEGGUTOR,
+static const u16 sAgumonFormSpeciesIdTable[] = {
+    SPECIES_AGUMON,
 #if P_ALOLAN_FORMS
-    SPECIES_EXEGGUTOR_ALOLAN,
+    SPECIES_AGUMON_ALOLAN,
 #endif
     FORM_SPECIES_END,
 };

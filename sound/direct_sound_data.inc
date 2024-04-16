@@ -1019,8 +1019,8 @@ Cry_Yokomon::
 	.incbin "sound/direct_sound_samples/cries/yokomon.bin"
 
 	.align 2
-Cry_Exeggutor::
-	.incbin "sound/direct_sound_samples/cries/exeggutor.bin"
+Cry_Agumon::
+	.incbin "sound/direct_sound_samples/cries/agumon.bin"
 .endif @ P_FAMILY_YOKOMON
 
 .if P_FAMILY_CUBONE == TRUE

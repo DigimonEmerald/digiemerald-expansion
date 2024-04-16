@@ -10146,31 +10146,31 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Yokomon)
         .levelUpLearnset = sYokomonLevelUpLearnset,
         .teachableLearnset = sYokomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_EXEGGUTOR},
-                                {EVO_NONE, 0, SPECIES_EXEGGUTOR_ALOLAN}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_AGUMON},
+                                {EVO_NONE, 0, SPECIES_AGUMON_ALOLAN}),
     },
 
 #if P_UPDATED_EXP_YIELDS >= GEN_7
-    #define EXEGGUTOR_EXP_YIELD 186
+    #define AGUMON_EXP_YIELD 186
 #elif P_UPDATED_EXP_YIELDS >= GEN_5
-    #define EXEGGUTOR_EXP_YIELD 182
+    #define AGUMON_EXP_YIELD 182
 #else
-    #define EXEGGUTOR_EXP_YIELD 212
+    #define AGUMON_EXP_YIELD 212
 #endif
 
-#define EXEGGUTOR_SP_DEF (P_UPDATED_STATS >= GEN_7 ? 75 : 65)
+#define AGUMON_SP_DEF (P_UPDATED_STATS >= GEN_7 ? 75 : 65)
 
-    [SPECIES_EXEGGUTOR] =
+    [SPECIES_AGUMON] =
     {
         .baseHP        = 95,
         .baseAttack    = 95,
         .baseDefense   = 85,
         .baseSpeed     = 55,
         .baseSpAttack  = 125,
-        .baseSpDefense = EXEGGUTOR_SP_DEF,
+        .baseSpDefense = AGUMON_SP_DEF,
         .types = MON_TYPES(TYPE_GRASS, TYPE_PSYCHIC),
         .catchRate = 45,
-        .expYield = EXEGGUTOR_EXP_YIELD,
+        .expYield = AGUMON_EXP_YIELD,
         .evYield_SpAttack = 2,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
@@ -10179,14 +10179,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_NONE, ABILITY_HARVEST },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Exeggutor"),
-        .cryId = CRY_EXEGGUTOR,
-        .natDexNum = NATIONAL_DEX_EXEGGUTOR,
+        .speciesName = _("Agumon"),
+        .cryId = CRY_AGUMON,
+        .natDexNum = NATIONAL_DEX_AGUMON,
         .categoryName = _("Coconut"),
         .height = 20,
         .weight = 1200,
         .description = COMPOUND_STRING(
-            "Originally from the tropics, Exeggutor's\n"
+            "Originally from the tropics, Agumon's\n"
             "heads grow larger from exposure to strong\n"
             "sunlight. It is said that when the heads\n"
             "fall, they group to form an Yokomon."),
@@ -10194,37 +10194,37 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 309,
         .trainerOffset = 5,
-        .frontPic = gMonFrontPic_Exeggutor,
+        .frontPic = gMonFrontPic_Agumon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Exeggutor,
+        .frontAnimFrames = sAnims_Agumon,
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
-        .backPic = gMonBackPic_Exeggutor,
+        .backPic = gMonBackPic_Agumon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Exeggutor,
-        .shinyPalette = gMonShinyPalette_Exeggutor,
-        .iconSprite = gMonIcon_Exeggutor,
+        .palette = gMonPalette_Agumon,
+        .shinyPalette = gMonShinyPalette_Agumon,
+        .iconSprite = gMonIcon_Agumon,
         .iconPalIndex = 1,
-        FOOTPRINT(Exeggutor)
-        .levelUpLearnset = sExeggutorLevelUpLearnset,
-        .teachableLearnset = sExeggutorTeachableLearnset,
-        .formSpeciesIdTable = sExeggutorFormSpeciesIdTable,
+        FOOTPRINT(Agumon)
+        .levelUpLearnset = sAgumonLevelUpLearnset,
+        .teachableLearnset = sAgumonTeachableLearnset,
+        .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
     },
 
 #if P_ALOLAN_FORMS
-    [SPECIES_EXEGGUTOR_ALOLAN] =
+    [SPECIES_AGUMON_ALOLAN] =
     {
         .baseHP        = 95,
         .baseAttack    = 105,
         .baseDefense   = 85,
         .baseSpeed     = 45,
         .baseSpAttack  = 125,
-        .baseSpDefense = EXEGGUTOR_SP_DEF,
+        .baseSpDefense = AGUMON_SP_DEF,
         .types = MON_TYPES(TYPE_GRASS, TYPE_DRAGON),
         .catchRate = 45,
-        .expYield = EXEGGUTOR_EXP_YIELD,
+        .expYield = AGUMON_EXP_YIELD,
         .evYield_SpAttack = 2,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
@@ -10233,9 +10233,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
         .abilities = { ABILITY_FRISK, ABILITY_NONE, ABILITY_HARVEST },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Exeggutor"),
-        .cryId = CRY_EXEGGUTOR,
-        .natDexNum = NATIONAL_DEX_EXEGGUTOR,
+        .speciesName = _("Agumon"),
+        .cryId = CRY_AGUMON,
+        .natDexNum = NATIONAL_DEX_AGUMON,
         .categoryName = _("Coconut"),
         .height = 109,
         .weight = 4156,
@@ -10243,29 +10243,29 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "Alola is the best environment for\n"
             "this Pokémon. Local people take pride\n"
             "in its appearance, saying this is how\n"
-            "Exeggutor ought to look."),
+            "Agumon ought to look."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 309,
         .trainerOffset = 5,
-        .frontPic = gMonFrontPic_ExeggutorAlolan,
+        .frontPic = gMonFrontPic_AgumonAlolan,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_ExeggutorAlolan,
+        .frontAnimFrames = sAnims_AgumonAlolan,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_ExeggutorAlolan,
+        .backPic = gMonBackPic_AgumonAlolan,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 0,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_ExeggutorAlolan,
-        .shinyPalette = gMonShinyPalette_ExeggutorAlolan,
-        .iconSprite = gMonIcon_ExeggutorAlolan,
+        .palette = gMonPalette_AgumonAlolan,
+        .shinyPalette = gMonShinyPalette_AgumonAlolan,
+        .iconSprite = gMonIcon_AgumonAlolan,
         .iconPalIndex = 1,
-        FOOTPRINT(Exeggutor)
+        FOOTPRINT(Agumon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sExeggutorAlolanLevelUpLearnset,
-        .teachableLearnset = sExeggutorAlolanTeachableLearnset,
-        .formSpeciesIdTable = sExeggutorFormSpeciesIdTable,
+        .levelUpLearnset = sAgumonAlolanLevelUpLearnset,
+        .teachableLearnset = sAgumonAlolanTeachableLearnset,
+        .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_YOKOMON

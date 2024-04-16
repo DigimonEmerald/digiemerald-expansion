@@ -1994,7 +1994,7 @@ static const struct LevelUpMove sYokomonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sExeggutorLevelUpLearnset[] = {
+static const struct LevelUpMove sAgumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BARRAGE),
     LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),
     LEVEL_UP_MOVE(28, MOVE_STOMP),
@@ -2002,7 +2002,7 @@ static const struct LevelUpMove sExeggutorLevelUpLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const struct LevelUpMove sExeggutorAlolanLevelUpLearnset[] = {
+static const struct LevelUpMove sAgumonAlolanLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_DRAGON_HAMMER),
     LEVEL_UP_MOVE( 1, MOVE_DRAGON_HAMMER),
     LEVEL_UP_MOVE( 1, MOVE_SEED_BOMB),

@@ -256,7 +256,7 @@ gCryTable::
 .endif @ P_FAMILY_XIAOMON
 .if P_FAMILY_YOKOMON == TRUE
 	cry Cry_Yokomon
-	cry Cry_Exeggutor
+	cry Cry_Agumon
 .endif @ P_FAMILY_YOKOMON
 .if P_FAMILY_CUBONE == TRUE
 	cry Cry_Cubone
@@ -2682,7 +2682,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_XIAOMON
 .if P_FAMILY_YOKOMON == TRUE
 	cry_reverse Cry_Yokomon
-	cry_reverse Cry_Exeggutor
+	cry_reverse Cry_Agumon
 .endif @ P_FAMILY_YOKOMON
 .if P_FAMILY_CUBONE == TRUE
 	cry_reverse Cry_Cubone

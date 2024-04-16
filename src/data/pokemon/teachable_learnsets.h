@@ -5210,7 +5210,7 @@ static const u16 sYokomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sExeggutorTeachableLearnset[] = {
+static const u16 sAgumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CALM_MIND,
@@ -5247,7 +5247,7 @@ static const u16 sExeggutorTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sExeggutorAlolanTeachableLearnset[] = {
+static const u16 sAgumonAlolanTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULLET_SEED,
