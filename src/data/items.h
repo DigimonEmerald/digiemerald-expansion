@@ -4816,14 +4816,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_GYARADOSITE] =
+    [ITEM_COMMDRAMONITE] =
     {
-        .name = _("Gyaradosite"),
+        .name = _("Commdramonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Gyarados to Mega\n"
+            "Commdramon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

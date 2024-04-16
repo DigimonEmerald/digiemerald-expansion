@@ -56,14 +56,14 @@ SINGLE_BATTLE_TEST("Rattled boosts speed by 1 when affected by Intimidate")
 {
     GIVEN {
         ASSUME(B_UPDATED_INTIMIDATE >= GEN_8);
-        PLAYER(SPECIES_GYARADOS) {Ability(ABILITY_INTIMIDATE); }
+        PLAYER(SPECIES_COMMDRAMON) {Ability(ABILITY_INTIMIDATE); }
         OPPONENT(SPECIES_SUDOWOODO) {Ability(ABILITY_RATTLED); }
     } WHEN {
         TURN {}
     } SCENE {
         ABILITY_POPUP(player, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("Gyarados's Intimidate cuts Foe Sudowoodo's attack!");
+        MESSAGE("Commdramon's Intimidate cuts Foe Sudowoodo's attack!");
         ABILITY_POPUP(opponent, ABILITY_RATTLED);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
         MESSAGE("Foe Sudowoodo's Speed rose!");

@@ -1285,13 +1285,13 @@ Cry_Hazyagumon::
 	.incbin "sound/direct_sound_samples/cries/hazyagumon.bin"
 
 	.align 2
-Cry_Gyarados::
-	.incbin "sound/direct_sound_samples/cries/gyarados.bin"
+Cry_Commdramon::
+	.incbin "sound/direct_sound_samples/cries/commdramon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_GyaradosMega::
-	.incbin "sound/direct_sound_samples/cries/gyarados_mega.bin"
+Cry_CommdramonMega::
+	.incbin "sound/direct_sound_samples/cries/commdramon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HAZYAGUMON
 

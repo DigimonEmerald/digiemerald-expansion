@@ -13,7 +13,7 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises player's Attack after Intimidate")
     GIVEN {
         PLAYER(SPECIES_DEMIVEEMON) { Ability(abilityLeft); }
         PLAYER(SPECIES_DORIMON) { Ability(abilityRight); }
-        OPPONENT(SPECIES_GYARADOS) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_COMMDRAMON) { Ability(ABILITY_INTIMIDATE); }
         OPPONENT(SPECIES_PAOMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, target:opponentLeft); MOVE(playerRight, MOVE_TACKLE, target:opponentRight); }
@@ -21,14 +21,14 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises player's Attack after Intimidate")
         //1st mon Intimidate
         ABILITY_POPUP(opponentLeft, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-        MESSAGE("Foe Gyarados's Intimidate cuts Demiveemon's attack!");
+        MESSAGE("Foe Commdramon's Intimidate cuts Demiveemon's attack!");
         if (abilityLeft == ABILITY_DEFIANT) {
             ABILITY_POPUP(playerLeft, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
             MESSAGE("Demiveemon's Attack sharply rose!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-        MESSAGE("Foe Gyarados's Intimidate cuts Dorimon's attack!");
+        MESSAGE("Foe Commdramon's Intimidate cuts Dorimon's attack!");
         if (abilityRight == ABILITY_DEFIANT) {
             ABILITY_POPUP(playerRight, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
@@ -71,7 +71,7 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises opponent's Attack after Intimidate")
     GIVEN {
         OPPONENT(SPECIES_DEMIVEEMON) { Ability(abilityLeft); }
         OPPONENT(SPECIES_DORIMON) { Ability(abilityRight); }
-        PLAYER(SPECIES_GYARADOS) { Ability(ABILITY_INTIMIDATE); }
+        PLAYER(SPECIES_COMMDRAMON) { Ability(ABILITY_INTIMIDATE); }
         PLAYER(SPECIES_PAOMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_TACKLE, target:playerLeft); MOVE(opponentRight, MOVE_TACKLE, target:playerRight); }
@@ -79,14 +79,14 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises opponent's Attack after Intimidate")
         //1st mon Intimidate
         ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-        MESSAGE("Gyarados's Intimidate cuts Foe Demiveemon's attack!");
+        MESSAGE("Commdramon's Intimidate cuts Foe Demiveemon's attack!");
         if (abilityLeft == ABILITY_DEFIANT) {
             ABILITY_POPUP(opponentLeft, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
             MESSAGE("Foe Demiveemon's Attack sharply rose!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("Gyarados's Intimidate cuts Foe Dorimon's attack!");
+        MESSAGE("Commdramon's Intimidate cuts Foe Dorimon's attack!");
         if (abilityRight == ABILITY_DEFIANT) {
             ABILITY_POPUP(opponentRight, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);

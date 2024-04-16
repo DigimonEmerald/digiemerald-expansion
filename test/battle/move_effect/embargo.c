@@ -278,11 +278,11 @@ SINGLE_BATTLE_TEST("Embargo disables the effect of the Drive items on the move T
     PARAMETRIZE{ heldItem = ITEM_SHOCK_DRIVE; }
     GIVEN {
         PLAYER(SPECIES_GENESECT) { Item(heldItem); };
-        OPPONENT(SPECIES_GYARADOS);
+        OPPONENT(SPECIES_COMMDRAMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBARGO); MOVE(player, MOVE_TECHNO_BLAST); }
     } SCENE {
-        MESSAGE("Foe Gyarados used Embargo!");
+        MESSAGE("Foe Commdramon used Embargo!");
         MESSAGE("Genesect can't use items anymore!");
         MESSAGE("Genesect used Techno Blast!");
         HP_BAR(opponent, captureDamage: &results[i].damage);

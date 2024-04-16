@@ -131,7 +131,7 @@
 #define SPECIES_TYUTYUMON                                  127
 #define SPECIES_CHUUMON                                  128
 #define SPECIES_HAZYAGUMON                                129
-#define SPECIES_GYARADOS                                130
+#define SPECIES_COMMDRAMON                                130
 #define SPECIES_LAPRAS                                  131
 #define SPECIES_DITTO                                   132
 #define SPECIES_EEVEE                                   133
@@ -975,7 +975,7 @@
 #define SPECIES_TSUMEMON_MEGA                             914
 #define SPECIES_BETAMON_X_MEGA                         915
 #define SPECIES_TYUTYUMON_MEGA                             916
-#define SPECIES_GYARADOS_MEGA                           917
+#define SPECIES_COMMDRAMON_MEGA                           917
 #define SPECIES_AERODACTYL_MEGA                         918
 #define SPECIES_MEWTWO_MEGA_X                           919
 #define SPECIES_MEWTWO_MEGA_Y                           920

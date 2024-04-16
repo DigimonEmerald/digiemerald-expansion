@@ -1974,7 +1974,7 @@ static const union AnimCmd sAnim_Hazyagumon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Gyarados_1[] =
+static const union AnimCmd sAnim_Commdramon_1[] =
 {
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_FRAME(1, 32),
@@ -1983,7 +1983,7 @@ static const union AnimCmd sAnim_Gyarados_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(GyaradosMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(CommdramonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HAZYAGUMON
 
@@ -10643,9 +10643,9 @@ SINGLE_ANIMATION(ChuumonPaldean);
 #endif //P_FAMILY_CHUUMON
 #if P_FAMILY_HAZYAGUMON
 SINGLE_ANIMATION(Hazyagumon);
-SINGLE_ANIMATION(Gyarados);
+SINGLE_ANIMATION(Commdramon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(GyaradosMega);
+SINGLE_ANIMATION(CommdramonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HAZYAGUMON
 #if P_FAMILY_LAPRAS
