@@ -455,7 +455,7 @@ static const u16 sMrMimeFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_BULUCOMON
 
-#if P_FAMILY_SCYTHER
+#if P_FAMILY_BURGERMON
 #if P_GEN_2_CROSS_EVOS
 static const u16 sScizorFormSpeciesIdTable[] = {
     SPECIES_SCIZOR,
@@ -465,7 +465,7 @@ static const u16 sScizorFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_SCYTHER
+#endif //P_FAMILY_BURGERMON
 
 #if P_FAMILY_PINSIR
 static const u16 sPinsirFormSpeciesIdTable[] = {

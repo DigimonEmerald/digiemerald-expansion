@@ -2541,8 +2541,8 @@ static const struct LevelUpMove sMrRimeLevelUpLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_BULUCOMON
 
-#if P_FAMILY_SCYTHER
-static const struct LevelUpMove sScytherLevelUpLearnset[] = {
+#if P_FAMILY_BURGERMON
+static const struct LevelUpMove sBurgermonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(17, MOVE_LEER),
     LEVEL_UP_MOVE(20, MOVE_FOCUS_ENERGY),
@@ -2585,7 +2585,7 @@ static const struct LevelUpMove sKleavorLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_8_CROSS_EVOS
-#endif //P_FAMILY_SCYTHER
+#endif //P_FAMILY_BURGERMON
 
 #if P_FAMILY_JYNX
 #if P_GEN_2_CROSS_EVOS

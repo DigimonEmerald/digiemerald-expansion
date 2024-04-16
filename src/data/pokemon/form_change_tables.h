@@ -153,7 +153,7 @@ static const struct FormChange sBetamon_xFormChangeTable[] = {
 };
 #endif //P_FAMILY_BETAMON_X
 
-#if P_FAMILY_SCYTHER
+#if P_FAMILY_BURGERMON
 #if P_GEN_2_CROSS_EVOS
 static const struct FormChange sScizorFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
@@ -162,7 +162,7 @@ static const struct FormChange sScizorFormChangeTable[] = {
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_SCYTHER
+#endif //P_FAMILY_BURGERMON
 
 #if P_FAMILY_PINSIR
 static const struct FormChange sPinsirFormChangeTable[] = {

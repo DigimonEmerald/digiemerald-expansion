@@ -12197,8 +12197,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_BULUCOMON
 
-#if P_FAMILY_SCYTHER
-    [SPECIES_SCYTHER] =
+#if P_FAMILY_BURGERMON
+    [SPECIES_BURGERMON] =
     {
         .baseHP        = 70,
         .baseAttack    = 110,
@@ -12217,9 +12217,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SWARM, ABILITY_TECHNICIAN, ABILITY_STEADFAST },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Scyther"),
-        .cryId = CRY_SCYTHER,
-        .natDexNum = NATIONAL_DEX_SCYTHER,
+        .speciesName = _("Burgermon"),
+        .cryId = CRY_BURGERMON,
+        .natDexNum = NATIONAL_DEX_BURGERMON,
         .categoryName = _("Mantis"),
         .height = 15,
         .weight = 560,
@@ -12232,25 +12232,25 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 1,
         .trainerScale = 293,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_Scyther,
-        .frontPicFemale = gMonFrontPic_ScytherF,
+        .frontPic = gMonFrontPic_Burgermon,
+        .frontPicFemale = gMonFrontPic_BurgermonF,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_Scyther,
+        .frontAnimFrames = sAnims_Burgermon,
         .frontAnimId = ANIM_H_VIBRATE,
         .frontAnimDelay = 10,
-        .backPic = gMonBackPic_Scyther,
+        .backPic = gMonBackPic_Burgermon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Scyther,
-        .shinyPalette = gMonShinyPalette_Scyther,
-        .iconSprite = gMonIcon_Scyther,
+        .palette = gMonPalette_Burgermon,
+        .shinyPalette = gMonShinyPalette_Burgermon,
+        .iconSprite = gMonIcon_Burgermon,
         .iconPalIndex = 1,
-        FOOTPRINT(Scyther)
-        .levelUpLearnset = sScytherLevelUpLearnset,
-        .teachableLearnset = sScytherTeachableLearnset,
+        FOOTPRINT(Burgermon)
+        .levelUpLearnset = sBurgermonLevelUpLearnset,
+        .teachableLearnset = sBurgermonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_METAL_COAT, SPECIES_SCIZOR},
                                 {EVO_ITEM, ITEM_BLACK_AUGURITE, SPECIES_KLEAVOR},
                                 {EVO_ITEM, ITEM_METAL_COAT, SPECIES_SCIZOR}),
@@ -12425,7 +12425,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sKleavorTeachableLearnset,
     },
 #endif //P_GEN_8_CROSS_EVOS
-#endif //P_FAMILY_SCYTHER
+#endif //P_FAMILY_BURGERMON
 
 #if P_FAMILY_JYNX
 #if P_GEN_2_CROSS_EVOS

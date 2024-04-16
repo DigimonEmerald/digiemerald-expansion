@@ -2004,17 +2004,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_BULUCOMON
 
-#if P_FAMILY_SCYTHER
-    const u32 gMonFrontPic_Scyther[] = INCBIN_U32("graphics/pokemon/scyther/anim_front.4bpp.lz");
-    const u32 gMonPalette_Scyther[] = INCBIN_U32("graphics/pokemon/scyther/normal.gbapal.lz");
-    const u32 gMonBackPic_Scyther[] = INCBIN_U32("graphics/pokemon/scyther/back.4bpp.lz");
-    const u32 gMonShinyPalette_Scyther[] = INCBIN_U32("graphics/pokemon/scyther/shiny.gbapal.lz");
-    const u8 gMonIcon_Scyther[] = INCBIN_U8("graphics/pokemon/scyther/icon.4bpp");
+#if P_FAMILY_BURGERMON
+    const u32 gMonFrontPic_Burgermon[] = INCBIN_U32("graphics/pokemon/burgermon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Burgermon[] = INCBIN_U32("graphics/pokemon/burgermon/normal.gbapal.lz");
+    const u32 gMonBackPic_Burgermon[] = INCBIN_U32("graphics/pokemon/burgermon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Burgermon[] = INCBIN_U32("graphics/pokemon/burgermon/shiny.gbapal.lz");
+    const u8 gMonIcon_Burgermon[] = INCBIN_U8("graphics/pokemon/burgermon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Scyther[] = INCBIN_U8("graphics/pokemon/scyther/footprint.1bpp");
+    const u8 gMonFootprint_Burgermon[] = INCBIN_U8("graphics/pokemon/burgermon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_ScytherF[] = INCBIN_U32("graphics/pokemon/scyther/anim_frontf.4bpp.lz");
+    const u32 gMonFrontPic_BurgermonF[] = INCBIN_U32("graphics/pokemon/burgermon/anim_frontf.4bpp.lz");
 
 #if P_GEN_2_CROSS_EVOS
     const u32 gMonFrontPic_Scizor[] = INCBIN_U32("graphics/pokemon/scizor/anim_front.4bpp.lz");
@@ -2047,7 +2047,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     //const u8 gMonFootprint_Kleavor[] = INCBIN_U8("graphics/pokemon/kleavor/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_8_CROSS_EVOS
-#endif //P_FAMILY_SCYTHER
+#endif //P_FAMILY_BURGERMON
 
 #if P_FAMILY_JYNX
 #if P_GEN_2_CROSS_EVOS

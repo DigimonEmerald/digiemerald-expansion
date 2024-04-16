@@ -1080,8 +1080,8 @@ const u16 gEggMoves[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_BULUCOMON
 
-#if P_FAMILY_SCYTHER
-    egg_moves(SCYTHER,
+#if P_FAMILY_BURGERMON
+    egg_moves(BURGERMON,
         MOVE_COUNTER,
         MOVE_BATON_PASS,
         MOVE_RAZOR_WIND,
@@ -1093,7 +1093,7 @@ const u16 gEggMoves[] = {
         MOVE_DEFOG,
         MOVE_STEEL_WING,
         MOVE_QUICK_GUARD),
-#endif //P_FAMILY_SCYTHER
+#endif //P_FAMILY_BURGERMON
 
 #if P_FAMILY_JYNX
 #if P_GEN_2_CROSS_EVOS

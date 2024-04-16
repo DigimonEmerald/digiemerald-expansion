@@ -334,8 +334,8 @@ gCryTable::
 	cry Cry_MrRime
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_BULUCOMON
-.if P_FAMILY_SCYTHER == TRUE
-	cry Cry_Scyther
+.if P_FAMILY_BURGERMON == TRUE
+	cry Cry_Burgermon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Scizor
 .if P_MEGA_EVOLUTIONS == TRUE
@@ -345,7 +345,7 @@ gCryTable::
 .if P_GEN_8_CROSS_EVOS == TRUE
 	cry Cry_Kleavor
 .endif @ P_GEN_8_CROSS_EVOS
-.endif @ P_FAMILY_SCYTHER
+.endif @ P_FAMILY_BURGERMON
 .if P_FAMILY_JYNX == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Smoochum
@@ -2760,8 +2760,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_MrRime
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_BULUCOMON
-.if P_FAMILY_SCYTHER == TRUE
-	cry_reverse Cry_Scyther
+.if P_FAMILY_BURGERMON == TRUE
+	cry_reverse Cry_Burgermon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Scizor
 .if P_MEGA_EVOLUTIONS == TRUE
@@ -2771,7 +2771,7 @@ gCryTable_Reverse::
 .if P_GEN_8_CROSS_EVOS == TRUE
 	cry_reverse Cry_Kleavor
 .endif @ P_GEN_8_CROSS_EVOS
-.endif @ P_FAMILY_SCYTHER
+.endif @ P_FAMILY_BURGERMON
 .if P_FAMILY_JYNX == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Smoochum

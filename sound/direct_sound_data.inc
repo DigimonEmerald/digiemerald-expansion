@@ -1190,10 +1190,10 @@ Cry_MrRime::
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_BULUCOMON
 
-.if P_FAMILY_SCYTHER == TRUE
+.if P_FAMILY_BURGERMON == TRUE
 	.align 2
-Cry_Scyther::
-	.incbin "sound/direct_sound_samples/cries/scyther.bin"
+Cry_Burgermon::
+	.incbin "sound/direct_sound_samples/cries/burgermon.bin"
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
@@ -1211,7 +1211,7 @@ Cry_ScizorMega::
 Cry_Kleavor::
 	.incbin "sound/direct_sound_samples/cries/kleavor.bin"
 .endif @ P_GEN_8_CROSS_EVOS
-.endif @ P_FAMILY_SCYTHER
+.endif @ P_FAMILY_BURGERMON
 
 .if P_FAMILY_JYNX == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE

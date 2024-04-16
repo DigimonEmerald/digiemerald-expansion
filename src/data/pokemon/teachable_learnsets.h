@@ -6624,8 +6624,8 @@ static const u16 sMrRimeTeachableLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_BULUCOMON
 
-#if P_FAMILY_SCYTHER
-static const u16 sScytherTeachableLearnset[] = {
+#if P_FAMILY_BURGERMON
+static const u16 sBurgermonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -6719,7 +6719,7 @@ static const u16 sKleavorTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_8_CROSS_EVOS
-#endif //P_FAMILY_SCYTHER
+#endif //P_FAMILY_BURGERMON
 
 #if P_FAMILY_JYNX
 #if P_GEN_2_CROSS_EVOS
