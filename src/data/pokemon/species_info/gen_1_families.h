@@ -11745,8 +11745,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BIYOMON
 
-#if P_FAMILY_GOLDEEN
-    [SPECIES_GOLDEEN] =
+#if P_FAMILY_BLKAGUMON_X
+    [SPECIES_BLKAGUMON_X] =
     {
         .baseHP        = 45,
         .baseAttack    = 67,
@@ -11766,14 +11766,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_WATER_VEIL, ABILITY_LIGHTNING_ROD },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Goldeen"),
-        .cryId = CRY_GOLDEEN,
-        .natDexNum = NATIONAL_DEX_GOLDEEN,
+        .speciesName = _("Blkagumon_x"),
+        .cryId = CRY_BLKAGUMON_X,
+        .natDexNum = NATIONAL_DEX_BLKAGUMON_X,
         .categoryName = _("Goldfish"),
         .height = 6,
         .weight = 150,
         .description = COMPOUND_STRING(
-            "In the springtime, schools of Goldeen\n"
+            "In the springtime, schools of Blkagumon_x\n"
             "can be seen swimming up falls and rivers.\n"
             "It metes out staggering damage with its\n"
             "single horn."),
@@ -11781,26 +11781,26 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Goldeen,
-        .frontPicFemale = gMonFrontPic_GoldeenF,
+        .frontPic = gMonFrontPic_Blkagumon_x,
+        .frontPicFemale = gMonFrontPic_Blkagumon_xF,
         .frontPicSize = MON_COORDS_SIZE(64, 40),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Goldeen,
+        .frontAnimFrames = sAnims_Blkagumon_x,
         .frontAnimId = ANIM_H_SLIDE_WOBBLE,
-        .backPic = gMonBackPic_Goldeen,
-        .backPicFemale = gMonBackPic_GoldeenF,
+        .backPic = gMonBackPic_Blkagumon_x,
+        .backPicFemale = gMonBackPic_Blkagumon_xF,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Goldeen,
-        .shinyPalette = gMonShinyPalette_Goldeen,
-        .iconSprite = gMonIcon_Goldeen,
+        .palette = gMonPalette_Blkagumon_x,
+        .shinyPalette = gMonShinyPalette_Blkagumon_x,
+        .iconSprite = gMonIcon_Blkagumon_x,
         .iconPalIndex = 0,
-        FOOTPRINT(Goldeen)
-        .levelUpLearnset = sGoldeenLevelUpLearnset,
-        .teachableLearnset = sGoldeenTeachableLearnset,
+        FOOTPRINT(Blkagumon_x)
+        .levelUpLearnset = sBlkagumon_xLevelUpLearnset,
+        .teachableLearnset = sBlkagumon_xTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_SEAKING}),
     },
 
@@ -11860,7 +11860,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sSeakingLevelUpLearnset,
         .teachableLearnset = sSeakingTeachableLearnset,
     },
-#endif //P_FAMILY_GOLDEEN
+#endif //P_FAMILY_BLKAGUMON_X
 
 #if P_FAMILY_STARYU
     [SPECIES_STARYU] =

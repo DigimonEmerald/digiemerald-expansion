@@ -1151,15 +1151,15 @@ Cry_Kingdra::
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_BIYOMON
 
-.if P_FAMILY_GOLDEEN == TRUE
+.if P_FAMILY_BLKAGUMON_X == TRUE
 	.align 2
-Cry_Goldeen::
-	.incbin "sound/direct_sound_samples/cries/goldeen.bin"
+Cry_Blkagumon_x::
+	.incbin "sound/direct_sound_samples/cries/blkagumon_x.bin"
 
 	.align 2
 Cry_Seaking::
 	.incbin "sound/direct_sound_samples/cries/seaking.bin"
-.endif @ P_FAMILY_GOLDEEN
+.endif @ P_FAMILY_BLKAGUMON_X
 
 .if P_FAMILY_STARYU == TRUE
 	.align 2

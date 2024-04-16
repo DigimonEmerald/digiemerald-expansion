@@ -1023,8 +1023,8 @@ const u16 gEggMoves[] = {
         MOVE_OUTRAGE),
 #endif //P_FAMILY_BIYOMON
 
-#if P_FAMILY_GOLDEEN
-    egg_moves(GOLDEEN,
+#if P_FAMILY_BLKAGUMON_X
+    egg_moves(BLKAGUMON_X,
         MOVE_PSYBEAM,
         MOVE_HAZE,
         MOVE_HYDRO_PUMP,
@@ -1036,7 +1036,7 @@ const u16 gEggMoves[] = {
         MOVE_MUD_SHOT,
         MOVE_SKULL_BASH,
         MOVE_SIGNAL_BEAM),
-#endif //P_FAMILY_GOLDEEN
+#endif //P_FAMILY_BLKAGUMON_X
 
 #if P_FAMILY_MR_MIME
 #if P_GEN_4_CROSS_EVOS

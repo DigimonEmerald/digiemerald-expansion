@@ -6319,8 +6319,8 @@ static const u16 sKingdraTeachableLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BIYOMON
 
-#if P_FAMILY_GOLDEEN
-static const u16 sGoldeenTeachableLearnset[] = {
+#if P_FAMILY_BLKAGUMON_X
+static const u16 sBlkagumon_xTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -6378,7 +6378,7 @@ static const u16 sSeakingTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_GOLDEEN
+#endif //P_FAMILY_BLKAGUMON_X
 
 #if P_FAMILY_STARYU
 static const u16 sStaryuTeachableLearnset[] = {

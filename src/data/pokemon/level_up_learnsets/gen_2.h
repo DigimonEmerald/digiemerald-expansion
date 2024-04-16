@@ -2569,8 +2569,8 @@ static const struct LevelUpMove sKingdraLevelUpLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BIYOMON
 
-#if P_FAMILY_GOLDEEN
-static const struct LevelUpMove sGoldeenLevelUpLearnset[] = {
+#if P_FAMILY_BLKAGUMON_X
+static const struct LevelUpMove sBlkagumon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE(10, MOVE_SUPERSONIC),
@@ -2595,7 +2595,7 @@ static const struct LevelUpMove sSeakingLevelUpLearnset[] = {
     LEVEL_UP_MOVE(61, MOVE_AGILITY),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_GOLDEEN
+#endif //P_FAMILY_BLKAGUMON_X
 
 #if P_FAMILY_STARYU
 static const struct LevelUpMove sStaryuLevelUpLearnset[] = {

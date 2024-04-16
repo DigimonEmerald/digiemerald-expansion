@@ -1919,18 +1919,18 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BIYOMON
 
-#if P_FAMILY_GOLDEEN
-    const u32 gMonFrontPic_Goldeen[] = INCBIN_U32("graphics/pokemon/goldeen/anim_front.4bpp.lz");
-    const u32 gMonPalette_Goldeen[] = INCBIN_U32("graphics/pokemon/goldeen/normal.gbapal.lz");
-    const u32 gMonBackPic_Goldeen[] = INCBIN_U32("graphics/pokemon/goldeen/back.4bpp.lz");
-    const u32 gMonShinyPalette_Goldeen[] = INCBIN_U32("graphics/pokemon/goldeen/shiny.gbapal.lz");
-    const u8 gMonIcon_Goldeen[] = INCBIN_U8("graphics/pokemon/goldeen/icon.4bpp");
+#if P_FAMILY_BLKAGUMON_X
+    const u32 gMonFrontPic_Blkagumon_x[] = INCBIN_U32("graphics/pokemon/blkagumon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Blkagumon_x[] = INCBIN_U32("graphics/pokemon/blkagumon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Blkagumon_x[] = INCBIN_U32("graphics/pokemon/blkagumon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Blkagumon_x[] = INCBIN_U32("graphics/pokemon/blkagumon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Blkagumon_x[] = INCBIN_U8("graphics/pokemon/blkagumon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Goldeen[] = INCBIN_U8("graphics/pokemon/goldeen/footprint.1bpp");
+    const u8 gMonFootprint_Blkagumon_x[] = INCBIN_U8("graphics/pokemon/blkagumon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_GoldeenF[] = INCBIN_U32("graphics/pokemon/goldeen/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_GoldeenF[] = INCBIN_U32("graphics/pokemon/goldeen/backf.4bpp.lz");
+    const u32 gMonFrontPic_Blkagumon_xF[] = INCBIN_U32("graphics/pokemon/blkagumon_x/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_Blkagumon_xF[] = INCBIN_U32("graphics/pokemon/blkagumon_x/backf.4bpp.lz");
 
     const u32 gMonFrontPic_Seaking[] = INCBIN_U32("graphics/pokemon/seaking/anim_front.4bpp.lz");
     const u32 gMonPalette_Seaking[] = INCBIN_U32("graphics/pokemon/seaking/normal.gbapal.lz");
@@ -1943,7 +1943,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
     const u32 gMonFrontPic_SeakingF[] = INCBIN_U32("graphics/pokemon/seaking/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_SeakingF[] = INCBIN_U32("graphics/pokemon/seaking/backf.4bpp.lz");
-#endif //P_FAMILY_GOLDEEN
+#endif //P_FAMILY_BLKAGUMON_X
 
 #if P_FAMILY_STARYU
     const u32 gMonFrontPic_Staryu[] = INCBIN_U32("graphics/pokemon/staryu/anim_front.4bpp.lz");

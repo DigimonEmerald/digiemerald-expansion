@@ -317,10 +317,10 @@ gCryTable::
 	cry Cry_Kingdra
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_BIYOMON
-.if P_FAMILY_GOLDEEN == TRUE
-	cry Cry_Goldeen
+.if P_FAMILY_BLKAGUMON_X == TRUE
+	cry Cry_Blkagumon_x
 	cry Cry_Seaking
-.endif @ P_FAMILY_GOLDEEN
+.endif @ P_FAMILY_BLKAGUMON_X
 .if P_FAMILY_STARYU == TRUE
 	cry Cry_Staryu
 	cry Cry_Starmie
@@ -2743,10 +2743,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Kingdra
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_BIYOMON
-.if P_FAMILY_GOLDEEN == TRUE
-	cry_reverse Cry_Goldeen
+.if P_FAMILY_BLKAGUMON_X == TRUE
+	cry_reverse Cry_Blkagumon_x
 	cry_reverse Cry_Seaking
-.endif @ P_FAMILY_GOLDEEN
+.endif @ P_FAMILY_BLKAGUMON_X
 .if P_FAMILY_STARYU == TRUE
 	cry_reverse Cry_Staryu
 	cry_reverse Cry_Starmie

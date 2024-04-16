@@ -1735,8 +1735,8 @@ static const union AnimCmd sAnim_Kingdra_1[] =
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BIYOMON
 
-#if P_FAMILY_GOLDEEN
-static const union AnimCmd sAnim_Goldeen_1[] =
+#if P_FAMILY_BLKAGUMON_X
+static const union AnimCmd sAnim_Blkagumon_x_1[] =
 {
     ANIMCMD_FRAME(0, 16),
     ANIMCMD_FRAME(1, 16),
@@ -1759,7 +1759,7 @@ static const union AnimCmd sAnim_Seaking_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_GOLDEEN
+#endif //P_FAMILY_BLKAGUMON_X
 
 #if P_FAMILY_STARYU
 static const union AnimCmd sAnim_Staryu_1[] =
@@ -10575,10 +10575,10 @@ SINGLE_ANIMATION(Blkagumon);
 SINGLE_ANIMATION(Kingdra);
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BIYOMON
-#if P_FAMILY_GOLDEEN
-SINGLE_ANIMATION(Goldeen);
+#if P_FAMILY_BLKAGUMON_X
+SINGLE_ANIMATION(Blkagumon_x);
 SINGLE_ANIMATION(Seaking);
-#endif //P_FAMILY_GOLDEEN
+#endif //P_FAMILY_BLKAGUMON_X
 #if P_FAMILY_STARYU
 SINGLE_ANIMATION(Staryu);
 SINGLE_ANIMATION(Starmie);
