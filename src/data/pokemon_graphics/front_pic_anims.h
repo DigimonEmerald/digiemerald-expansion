@@ -2302,7 +2302,7 @@ static const union AnimCmd sAnim_Elecmon_violet_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Dragonite_1[] =
+static const union AnimCmd sAnim_Espimon_1[] =
 {
     ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(1, 30),
@@ -10730,7 +10730,7 @@ SINGLE_ANIMATION(EkakimonGalarian);
 #if P_FAMILY_ELECMON
 SINGLE_ANIMATION(Elecmon);
 SINGLE_ANIMATION(Elecmon_violet);
-SINGLE_ANIMATION(Dragonite);
+SINGLE_ANIMATION(Espimon);
 #endif //P_FAMILY_ELECMON
 #if P_FAMILY_MEWTWO
 SINGLE_ANIMATION(Mewtwo);

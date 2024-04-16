@@ -257,11 +257,11 @@ SINGLE_BATTLE_TEST("Embargo disables the effect of the Plate items on the move J
     PARAMETRIZE{ heldItem = ITEM_PIXIE_PLATE; }
     GIVEN {
         PLAYER(SPECIES_ARCEUS) { Item(heldItem); };
-        OPPONENT(SPECIES_DRAGONITE);
+        OPPONENT(SPECIES_ESPIMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBARGO); MOVE(player, MOVE_JUDGMENT); }
     } SCENE {
-        MESSAGE("Foe Dragonite used Embargo!");
+        MESSAGE("Foe Espimon used Embargo!");
         MESSAGE("Arceus can't use items anymore!");
         MESSAGE("Arceus used Judgment!");
         HP_BAR(opponent, captureDamage: &results[i].damage);

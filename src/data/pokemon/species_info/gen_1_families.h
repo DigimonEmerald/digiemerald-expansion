@@ -15342,10 +15342,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Elecmon_violet)
         .levelUpLearnset = sElecmon_violetLevelUpLearnset,
         .teachableLearnset = sElecmon_violetTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_DRAGONITE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_ESPIMON}),
     },
 
-    [SPECIES_DRAGONITE] =
+    [SPECIES_ESPIMON] =
     {
         .baseHP        = 91,
         .baseAttack    = 134,
@@ -15371,9 +15371,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_NONE, ABILITY_MULTISCALE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Dragonite"),
-        .cryId = CRY_DRAGONITE,
-        .natDexNum = NATIONAL_DEX_DRAGONITE,
+        .speciesName = _("Espimon"),
+        .cryId = CRY_ESPIMON,
+        .natDexNum = NATIONAL_DEX_ESPIMON,
         .categoryName = _("Dragon"),
         .height = 22,
         .weight = 2100,
@@ -15386,22 +15386,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 309,
         .trainerOffset = 4,
-        .frontPic = gMonFrontPic_Dragonite,
+        .frontPic = gMonFrontPic_Espimon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Dragonite,
+        .frontAnimFrames = sAnims_Espimon,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Dragonite,
+        .backPic = gMonBackPic_Espimon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Dragonite,
-        .shinyPalette = gMonShinyPalette_Dragonite,
-        .iconSprite = gMonIcon_Dragonite,
+        .palette = gMonPalette_Espimon,
+        .shinyPalette = gMonShinyPalette_Espimon,
+        .iconSprite = gMonIcon_Espimon,
         .iconPalIndex = 2,
-        FOOTPRINT(Dragonite)
-        .levelUpLearnset = sDragoniteLevelUpLearnset,
-        .teachableLearnset = sDragoniteTeachableLearnset,
+        FOOTPRINT(Espimon)
+        .levelUpLearnset = sEspimonLevelUpLearnset,
+        .teachableLearnset = sEspimonTeachableLearnset,
     },
 #endif //P_FAMILY_ELECMON
 

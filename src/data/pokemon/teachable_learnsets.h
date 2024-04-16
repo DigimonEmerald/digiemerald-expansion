@@ -8296,7 +8296,7 @@ static const u16 sElecmon_violetTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDragoniteTeachableLearnset[] = {
+static const u16 sEspimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,

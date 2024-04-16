@@ -1439,8 +1439,8 @@ Cry_Elecmon_violet::
 	.incbin "sound/direct_sound_samples/cries/elecmon_violet.bin"
 
 	.align 2
-Cry_Dragonite::
-	.incbin "sound/direct_sound_samples/cries/dragonite.bin"
+Cry_Espimon::
+	.incbin "sound/direct_sound_samples/cries/espimon.bin"
 .endif @ P_FAMILY_ELECMON
 
 .if P_FAMILY_MEWTWO == TRUE
