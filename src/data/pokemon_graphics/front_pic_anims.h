@@ -2090,8 +2090,8 @@ static const union AnimCmd sAnim_Sylveon_1[] =
 #endif //P_GEN_6_CROSS_EVOS
 #endif //P_FAMILY_CRABMON_X
 
-#if P_FAMILY_PORYGON
-static const union AnimCmd sAnim_Porygon_1[] =
+#if P_FAMILY_DOKUNEMON
+static const union AnimCmd sAnim_Dokunemon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -2101,7 +2101,7 @@ static const union AnimCmd sAnim_Porygon_1[] =
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Porygon2_1[] =
+static const union AnimCmd sAnim_Dokunemon2_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -2112,7 +2112,7 @@ static const union AnimCmd sAnim_Porygon2_1[] =
 };
 
 #if P_GEN_4_CROSS_EVOS
-static const union AnimCmd sAnim_Porygon_Z_1[] =
+static const union AnimCmd sAnim_Dokunemon_Z_1[] =
 {
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 30),
@@ -2122,7 +2122,7 @@ static const union AnimCmd sAnim_Porygon_Z_1[] =
 };
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_PORYGON
+#endif //P_FAMILY_DOKUNEMON
 
 #if P_FAMILY_OMANYTE
 static const union AnimCmd sAnim_Omanyte_1[] =
@@ -10677,15 +10677,15 @@ SINGLE_ANIMATION(Glaceon);
 SINGLE_ANIMATION(Sylveon);
 #endif //P_GEN_6_CROSS_EVOS
 #endif //P_FAMILY_CRABMON_X
-#if P_FAMILY_PORYGON
-SINGLE_ANIMATION(Porygon);
+#if P_FAMILY_DOKUNEMON
+SINGLE_ANIMATION(Dokunemon);
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Porygon2);
+SINGLE_ANIMATION(Dokunemon2);
 #if P_GEN_4_CROSS_EVOS
-SINGLE_ANIMATION(Porygon_Z);
+SINGLE_ANIMATION(Dokunemon_Z);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_PORYGON
+#endif //P_FAMILY_DOKUNEMON
 #if P_FAMILY_OMANYTE
 SINGLE_ANIMATION(Omanyte);
 SINGLE_ANIMATION(Omastar);

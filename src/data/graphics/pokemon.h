@@ -2356,38 +2356,38 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_6_CROSS_EVOS
 #endif //P_FAMILY_CRABMON_X
 
-#if P_FAMILY_PORYGON
-    const u32 gMonFrontPic_Porygon[] = INCBIN_U32("graphics/pokemon/porygon/anim_front.4bpp.lz");
-    const u32 gMonPalette_Porygon[] = INCBIN_U32("graphics/pokemon/porygon/normal.gbapal.lz");
-    const u32 gMonBackPic_Porygon[] = INCBIN_U32("graphics/pokemon/porygon/back.4bpp.lz");
-    const u32 gMonShinyPalette_Porygon[] = INCBIN_U32("graphics/pokemon/porygon/shiny.gbapal.lz");
-    const u8 gMonIcon_Porygon[] = INCBIN_U8("graphics/pokemon/porygon/icon.4bpp");
+#if P_FAMILY_DOKUNEMON
+    const u32 gMonFrontPic_Dokunemon[] = INCBIN_U32("graphics/pokemon/dokunemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Dokunemon[] = INCBIN_U32("graphics/pokemon/dokunemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Dokunemon[] = INCBIN_U32("graphics/pokemon/dokunemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Dokunemon[] = INCBIN_U32("graphics/pokemon/dokunemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Dokunemon[] = INCBIN_U8("graphics/pokemon/dokunemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Porygon[] = INCBIN_U8("graphics/pokemon/porygon/footprint.1bpp");
+    const u8 gMonFootprint_Dokunemon[] = INCBIN_U8("graphics/pokemon/dokunemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Porygon2[] = INCBIN_U32("graphics/pokemon/porygon2/anim_front.4bpp.lz");
-    const u32 gMonPalette_Porygon2[] = INCBIN_U32("graphics/pokemon/porygon2/normal.gbapal.lz");
-    const u32 gMonBackPic_Porygon2[] = INCBIN_U32("graphics/pokemon/porygon2/back.4bpp.lz");
-    const u32 gMonShinyPalette_Porygon2[] = INCBIN_U32("graphics/pokemon/porygon2/shiny.gbapal.lz");
-    const u8 gMonIcon_Porygon2[] = INCBIN_U8("graphics/pokemon/porygon2/icon.4bpp");
+    const u32 gMonFrontPic_Dokunemon2[] = INCBIN_U32("graphics/pokemon/dokunemon2/anim_front.4bpp.lz");
+    const u32 gMonPalette_Dokunemon2[] = INCBIN_U32("graphics/pokemon/dokunemon2/normal.gbapal.lz");
+    const u32 gMonBackPic_Dokunemon2[] = INCBIN_U32("graphics/pokemon/dokunemon2/back.4bpp.lz");
+    const u32 gMonShinyPalette_Dokunemon2[] = INCBIN_U32("graphics/pokemon/dokunemon2/shiny.gbapal.lz");
+    const u8 gMonIcon_Dokunemon2[] = INCBIN_U8("graphics/pokemon/dokunemon2/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Porygon2[] = INCBIN_U8("graphics/pokemon/porygon2/footprint.1bpp");
+    const u8 gMonFootprint_Dokunemon2[] = INCBIN_U8("graphics/pokemon/dokunemon2/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_4_CROSS_EVOS
-    const u32 gMonFrontPic_PorygonZ[] = INCBIN_U32("graphics/pokemon/porygon_z/anim_front.4bpp.lz");
-    const u32 gMonPalette_PorygonZ[] = INCBIN_U32("graphics/pokemon/porygon_z/normal.gbapal.lz");
-    const u32 gMonBackPic_PorygonZ[] = INCBIN_U32("graphics/pokemon/porygon_z/back.4bpp.lz");
-    const u32 gMonShinyPalette_PorygonZ[] = INCBIN_U32("graphics/pokemon/porygon_z/shiny.gbapal.lz");
-    const u8 gMonIcon_PorygonZ[] = INCBIN_U8("graphics/pokemon/porygon_z/icon.4bpp");
+    const u32 gMonFrontPic_DokunemonZ[] = INCBIN_U32("graphics/pokemon/dokunemon_z/anim_front.4bpp.lz");
+    const u32 gMonPalette_DokunemonZ[] = INCBIN_U32("graphics/pokemon/dokunemon_z/normal.gbapal.lz");
+    const u32 gMonBackPic_DokunemonZ[] = INCBIN_U32("graphics/pokemon/dokunemon_z/back.4bpp.lz");
+    const u32 gMonShinyPalette_DokunemonZ[] = INCBIN_U32("graphics/pokemon/dokunemon_z/shiny.gbapal.lz");
+    const u8 gMonIcon_DokunemonZ[] = INCBIN_U8("graphics/pokemon/dokunemon_z/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_PorygonZ[] = INCBIN_U8("graphics/pokemon/porygon_z/footprint.1bpp");
+    const u8 gMonFootprint_DokunemonZ[] = INCBIN_U8("graphics/pokemon/dokunemon_z/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_PORYGON
+#endif //P_FAMILY_DOKUNEMON
 
 #if P_FAMILY_OMANYTE
     const u32 gMonFrontPic_Omanyte[] = INCBIN_U32("graphics/pokemon/omanyte/anim_front.4bpp.lz");

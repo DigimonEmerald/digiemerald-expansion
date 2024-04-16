@@ -3051,7 +3051,7 @@
       "MOVE_SWIFT"
     ]
   },
-  "PORYGON": {
+  "DOKUNEMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -5037,7 +5037,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "PORYGON2": {
+  "DOKUNEMON2": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -11640,7 +11640,7 @@
       "MOVE_STONE_EDGE"
     ]
   },
-  "PORYGON_Z": {
+  "DOKUNEMON_Z": {
     "LevelMoves": [
       {
         "Level": 1,

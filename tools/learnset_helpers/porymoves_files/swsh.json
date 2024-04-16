@@ -12237,7 +12237,7 @@
       "MOVE_SCORCHING_SANDS"
     ]
   },
-  "PORYGON": {
+  "DOKUNEMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -19023,7 +19023,7 @@
       "MOVE_SCALE_SHOT"
     ]
   },
-  "PORYGON2": {
+  "DOKUNEMON2": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -37488,7 +37488,7 @@
     ],
     "TutorMoves": []
   },
-  "PORYGON_Z": {
+  "DOKUNEMON_Z": {
     "LevelMoves": [
       {
         "Level": 1,

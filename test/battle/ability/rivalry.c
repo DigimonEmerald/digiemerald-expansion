@@ -5,7 +5,7 @@ ASSUMPTIONS
 {
     ASSUME(gSpeciesInfo[SPECIES_PUWAMON].genderRatio == MON_MALE);
     ASSUME(gSpeciesInfo[SPECIES_PURURUMON].genderRatio == MON_FEMALE);
-    ASSUME(gSpeciesInfo[SPECIES_PORYGON].genderRatio == MON_GENDERLESS);
+    ASSUME(gSpeciesInfo[SPECIES_DOKUNEMON].genderRatio == MON_GENDERLESS);
 }
 
 SINGLE_BATTLE_TEST("Rivalry increases power by x1.25 towards Pokémon of the same gender", s16 damage)
@@ -61,8 +61,8 @@ SINGLE_BATTLE_TEST("Rivalry doesn't modify power if the attacker is genderless",
     PARAMETRIZE { species = SPECIES_PURURUMON; ability = ABILITY_RIVALRY; }
 
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_PORYGON].abilities[0] == ABILITY_TRACE);
-        PLAYER(SPECIES_PORYGON) { Ability(ABILITY_TRACE); } // No genderless mon naturally gets Rivalry
+        ASSUME(gSpeciesInfo[SPECIES_DOKUNEMON].abilities[0] == ABILITY_TRACE);
+        PLAYER(SPECIES_DOKUNEMON) { Ability(ABILITY_TRACE); } // No genderless mon naturally gets Rivalry
         OPPONENT(species) { Ability(ability); };
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
@@ -86,7 +86,7 @@ SINGLE_BATTLE_TEST("Rivalry doesn't modify power if the target is genderless", s
 
     GIVEN {
         PLAYER(species) { Ability(ability); };
-        OPPONENT(SPECIES_PORYGON);
+        OPPONENT(SPECIES_DOKUNEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {

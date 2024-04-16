@@ -1349,23 +1349,23 @@ Cry_Sylveon::
 .endif @ P_GEN_6_CROSS_EVOS
 .endif @ P_FAMILY_CRABMON_X
 
-.if P_FAMILY_PORYGON == TRUE
+.if P_FAMILY_DOKUNEMON == TRUE
 	.align 2
-Cry_Porygon::
-	.incbin "sound/direct_sound_samples/cries/porygon.bin"
+Cry_Dokunemon::
+	.incbin "sound/direct_sound_samples/cries/dokunemon.bin"
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Porygon2::
-	.incbin "sound/direct_sound_samples/cries/porygon2.bin"
+Cry_Dokunemon2::
+	.incbin "sound/direct_sound_samples/cries/dokunemon2.bin"
 
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
-Cry_PorygonZ::
-	.incbin "sound/direct_sound_samples/cries/porygon_z.bin"
+Cry_DokunemonZ::
+	.incbin "sound/direct_sound_samples/cries/dokunemon_z.bin"
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_PORYGON
+.endif @ P_FAMILY_DOKUNEMON
 
 .if P_FAMILY_OMANYTE == TRUE
 	.align 2

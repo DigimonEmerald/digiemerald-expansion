@@ -14179,8 +14179,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_6_CROSS_EVOS
 #endif //P_FAMILY_CRABMON_X
 
-#if P_FAMILY_PORYGON
-    [SPECIES_PORYGON] =
+#if P_FAMILY_DOKUNEMON
+    [SPECIES_DOKUNEMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 60,
@@ -14199,43 +14199,43 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_TRACE, ABILITY_DOWNLOAD, ABILITY_ANALYTIC },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Porygon"),
-        .cryId = CRY_PORYGON,
-        .natDexNum = NATIONAL_DEX_PORYGON,
+        .speciesName = _("Dokunemon"),
+        .cryId = CRY_DOKUNEMON,
+        .natDexNum = NATIONAL_DEX_DOKUNEMON,
         .categoryName = _("Virtual"),
         .height = 8,
         .weight = 365,
         .description = COMPOUND_STRING(
             "It is capable of reverting itself entirely\n"
             "back to program data in order to enter\n"
-            "cyberspace. A Porygon is copy-\n"
+            "cyberspace. A Dokunemon is copy-\n"
             "protected so it cannot be duplicated."),
         .pokemonScale = 328,
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Porygon,
+        .frontPic = gMonFrontPic_Dokunemon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Porygon,
+        .frontAnimFrames = sAnims_Dokunemon,
         .frontAnimId = ANIM_V_JUMPS_SMALL,
-        .backPic = gMonBackPic_Porygon,
+        .backPic = gMonBackPic_Dokunemon,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Porygon,
-        .shinyPalette = gMonShinyPalette_Porygon,
-        .iconSprite = gMonIcon_Porygon,
+        .palette = gMonPalette_Dokunemon,
+        .shinyPalette = gMonShinyPalette_Dokunemon,
+        .iconSprite = gMonIcon_Dokunemon,
         .iconPalIndex = 0,
-        FOOTPRINT(Porygon)
-        .levelUpLearnset = sPorygonLevelUpLearnset,
-        .teachableLearnset = sPorygonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_UPGRADE, SPECIES_PORYGON2},
-                                {EVO_ITEM, ITEM_UPGRADE, SPECIES_PORYGON2}),
+        FOOTPRINT(Dokunemon)
+        .levelUpLearnset = sDokunemonLevelUpLearnset,
+        .teachableLearnset = sDokunemonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_UPGRADE, SPECIES_DOKUNEMON2},
+                                {EVO_ITEM, ITEM_UPGRADE, SPECIES_DOKUNEMON2}),
     },
 
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_PORYGON2] =
+    [SPECIES_DOKUNEMON2] =
     {
         .baseHP        = 85,
         .baseAttack    = 80,
@@ -14254,9 +14254,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_TRACE, ABILITY_DOWNLOAD, ABILITY_ANALYTIC },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Porygon2"),
-        .cryId = CRY_PORYGON2,
-        .natDexNum = NATIONAL_DEX_PORYGON2,
+        .speciesName = _("Dokunemon2"),
+        .cryId = CRY_DOKUNEMON2,
+        .natDexNum = NATIONAL_DEX_DOKUNEMON2,
         .categoryName = _("Virtual"),
         .height = 6,
         .weight = 325,
@@ -14269,29 +14269,29 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Porygon2,
+        .frontPic = gMonFrontPic_Dokunemon2,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 15,
-        .frontAnimFrames = sAnims_Porygon2,
+        .frontAnimFrames = sAnims_Dokunemon2,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 9,
-        .backPic = gMonBackPic_Porygon2,
+        .backPic = gMonBackPic_Dokunemon2,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Porygon2,
-        .shinyPalette = gMonShinyPalette_Porygon2,
-        .iconSprite = gMonIcon_Porygon2,
+        .palette = gMonPalette_Dokunemon2,
+        .shinyPalette = gMonShinyPalette_Dokunemon2,
+        .iconSprite = gMonIcon_Dokunemon2,
         .iconPalIndex = 0,
-        FOOTPRINT(Porygon2)
-        .levelUpLearnset = sPorygon2LevelUpLearnset,
-        .teachableLearnset = sPorygon2TeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_DUBIOUS_DISC, SPECIES_PORYGON_Z},
-                                {EVO_ITEM, ITEM_DUBIOUS_DISC, SPECIES_PORYGON_Z}),
+        FOOTPRINT(Dokunemon2)
+        .levelUpLearnset = sDokunemon2LevelUpLearnset,
+        .teachableLearnset = sDokunemon2TeachableLearnset,
+        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_DUBIOUS_DISC, SPECIES_DOKUNEMON_Z},
+                                {EVO_ITEM, ITEM_DUBIOUS_DISC, SPECIES_DOKUNEMON_Z}),
     },
 
 #if P_GEN_4_CROSS_EVOS
-    [SPECIES_PORYGON_Z] =
+    [SPECIES_DOKUNEMON_Z] =
     {
         .baseHP        = 85,
         .baseAttack    = 80,
@@ -14316,9 +14316,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_ADAPTABILITY, ABILITY_DOWNLOAD, ABILITY_ANALYTIC },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Porygon-Z"),
-        .cryId = CRY_PORYGON_Z,
-        .natDexNum = NATIONAL_DEX_PORYGON_Z,
+        .speciesName = _("Dokunemon-Z"),
+        .cryId = CRY_DOKUNEMON_Z,
+        .natDexNum = NATIONAL_DEX_DOKUNEMON_Z,
         .categoryName = _("Virtual"),
         .height = 9,
         .weight = 340,
@@ -14331,27 +14331,27 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_PorygonZ,
+        .frontPic = gMonFrontPic_DokunemonZ,
         .frontPicSize = MON_COORDS_SIZE(40, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Porygon_Z,
+        .frontAnimFrames = sAnims_Dokunemon_Z,
         .frontAnimId = ANIM_CIRCLE_C_CLOCKWISE_SLOW,
         .enemyMonElevation = 12,
-        .backPic = gMonBackPic_PorygonZ,
+        .backPic = gMonBackPic_DokunemonZ,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_PorygonZ,
-        .shinyPalette = gMonShinyPalette_PorygonZ,
-        .iconSprite = gMonIcon_PorygonZ,
+        .palette = gMonPalette_DokunemonZ,
+        .shinyPalette = gMonShinyPalette_DokunemonZ,
+        .iconSprite = gMonIcon_DokunemonZ,
         .iconPalIndex = 0,
-        FOOTPRINT(PorygonZ)
-        .levelUpLearnset = sPorygonZLevelUpLearnset,
-        .teachableLearnset = sPorygonZTeachableLearnset,
+        FOOTPRINT(DokunemonZ)
+        .levelUpLearnset = sDokunemonZLevelUpLearnset,
+        .teachableLearnset = sDokunemonZTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_PORYGON
+#endif //P_FAMILY_DOKUNEMON
 
 #if P_FAMILY_OMANYTE
     [SPECIES_OMANYTE] =

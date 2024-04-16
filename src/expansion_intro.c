@@ -17,18 +17,18 @@
 #if EXPANSION_INTRO == TRUE
 
 #define TAG_DIZZY   20000
-#define TAG_PORYGON 20001
+#define TAG_DOKUNEMON 20001
 
 #define PAL_TAG_DIZZY   20000
-#define PAL_TAG_PORYGON 20001
+#define PAL_TAG_DOKUNEMON 20001
 
 #define DIZZY_POS_X 300
 #define DIZZY_POS_Y 138
 #define DIZZY_COLLISION_POS_X   172
 #define PORY_POS_X  -32
 #define PORY_POS_Y  115
-#define PORYGON_COLLISION_POS_X 140
-#define PORYGON_WAIT_TIME   99
+#define DOKUNEMON_COLLISION_POS_X 140
+#define DOKUNEMON_WAIT_TIME   99
 
 #define DIZZY_ANIM_SPEED    4
 #define DIZZY_STARS_SPEED   12
@@ -58,13 +58,13 @@ static const u32 sBgMap_PoweredBy[] = INCBIN_U32("graphics/expansion_intro/power
 static const u32 sBgMap_RhhCredits[] = INCBIN_U32("graphics/expansion_intro/rhh_credits.bin.lz");
 static const u32 sBgPal_Credits[] = INCBIN_U32("graphics/expansion_intro/credits.gbapal.lz");
 static const u32 sSpriteTiles_DizzyEgg[] = INCBIN_U32("graphics/expansion_intro/sprites/dizzy_egg.4bpp.lz");
-static const u32 sSpriteTiles_Porygon[] = INCBIN_U32("graphics/expansion_intro/sprites/porygon.4bpp.lz");
+static const u32 sSpriteTiles_Dokunemon[] = INCBIN_U32("graphics/expansion_intro/sprites/dokunemon.4bpp.lz");
 static const u16 sSpritePal_DizzyEgg[] = INCBIN_U16("graphics/expansion_intro/sprites/dizzy_egg.gbapal");
-static const u16 sSpritePal_Porygon[] = INCBIN_U16("graphics/expansion_intro/sprites/porygon.gbapal");
-static const u16 sSpritePal_PorygonShiny[] = INCBIN_U16("graphics/expansion_intro/sprites/shiny.gbapal");
+static const u16 sSpritePal_Dokunemon[] = INCBIN_U16("graphics/expansion_intro/sprites/dokunemon.gbapal");
+static const u16 sSpritePal_DokunemonShiny[] = INCBIN_U16("graphics/expansion_intro/sprites/shiny.gbapal");
 
 static void SpriteCallback_DizzyWalking(struct Sprite* sprite);
-static void SpriteCallback_PorygonFlying(struct Sprite* sprite);
+static void SpriteCallback_DokunemonFlying(struct Sprite* sprite);
 static void Task_ExpansionIntro_HandleBlend(u8 taskId);
 static void VBlankCB_ExpansionIntro(void);
 static void ExpansionIntro_InitBgs();
@@ -100,41 +100,41 @@ static const union AnimCmd *const sAnimCmdTable_DizzyEgg[] =
     [ANIM_DIZZY_DIZZY] = sAnimCmd_DizzyisDizzy,
 };
 
-static const union AnimCmd sAnimCmd_PorygonIdle[] =
+static const union AnimCmd sAnimCmd_DokunemonIdle[] =
 {
     ANIMCMD_FRAME(0, 0),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnimCmd_PorygonHitted[] =
+static const union AnimCmd sAnimCmd_DokunemonHitted[] =
 {
     ANIMCMD_FRAME(64, 0),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnimCmd_PorygonGoUp[] =
+static const union AnimCmd sAnimCmd_DokunemonGoUp[] =
 {
     ANIMCMD_FRAME(64, 20),
     ANIMCMD_FRAME(128, 10),
     ANIMCMD_END,
 };
 
-static const union AnimCmd *const sAnimCmdTable_Porygon[] =
+static const union AnimCmd *const sAnimCmdTable_Dokunemon[] =
 {
-    [ANIM_PORY_IDLE] = sAnimCmd_PorygonIdle,
-    [ANIM_PORY_HIT] = sAnimCmd_PorygonHitted,
-    [ANIM_PORY_GO_UP] = sAnimCmd_PorygonGoUp,
+    [ANIM_PORY_IDLE] = sAnimCmd_DokunemonIdle,
+    [ANIM_PORY_HIT] = sAnimCmd_DokunemonHitted,
+    [ANIM_PORY_GO_UP] = sAnimCmd_DokunemonGoUp,
 };
 
-static const union AffineAnimCmd sAffineAnimCmd_PorygonScale[] =
+static const union AffineAnimCmd sAffineAnimCmd_DokunemonScale[] =
 {
     AFFINEANIMCMD_FRAME(0x100, 0x100, 0, 0),
     AFFINEANIMCMD_END,
 };
 
-static const union AffineAnimCmd *const sAffineAnimCmdTable_Porygon[] =
+static const union AffineAnimCmd *const sAffineAnimCmdTable_Dokunemon[] =
 {
-    sAffineAnimCmd_PorygonScale,
+    sAffineAnimCmd_DokunemonScale,
 };
 
 static const struct CompressedSpriteSheet sSpriteSheet_DizzyEgg =
@@ -144,11 +144,11 @@ static const struct CompressedSpriteSheet sSpriteSheet_DizzyEgg =
     .tag = TAG_DIZZY,
 };
 
-static const struct CompressedSpriteSheet sSpriteSheet_Porygon =
+static const struct CompressedSpriteSheet sSpriteSheet_Dokunemon =
 {
-    .data = sSpriteTiles_Porygon,
+    .data = sSpriteTiles_Dokunemon,
     .size = 0x2800,
-    .tag = PAL_TAG_PORYGON,
+    .tag = PAL_TAG_DOKUNEMON,
 };
 
 static const struct SpritePalette sSpritePalette_DizzyEgg =
@@ -157,10 +157,10 @@ static const struct SpritePalette sSpritePalette_DizzyEgg =
     .tag = PAL_TAG_DIZZY,
 };
 
-static const struct SpritePalette sSpritePalette_Porygon =
+static const struct SpritePalette sSpritePalette_Dokunemon =
 {
-    .data = sSpritePal_Porygon,
-    .tag = PAL_TAG_PORYGON,
+    .data = sSpritePal_Dokunemon,
+    .tag = PAL_TAG_DOKUNEMON,
 };
 
 static const struct OamData sOamData_DizzyEgg =
@@ -174,7 +174,7 @@ static const struct OamData sOamData_DizzyEgg =
     .priority = 0,
 };
 
-static const struct OamData sOamData_Porygon =
+static const struct OamData sOamData_Dokunemon =
 {
     .affineMode = ST_OAM_AFFINE_NORMAL,
     .objMode = ST_OAM_OBJ_NORMAL,
@@ -196,15 +196,15 @@ static const struct SpriteTemplate sSpriteTemplate_DizzyEgg =
     .callback = SpriteCallback_DizzyWalking,
 };
 
-static const struct SpriteTemplate sSpriteTemplate_Porygon =
+static const struct SpriteTemplate sSpriteTemplate_Dokunemon =
 {
-    .tileTag = TAG_PORYGON,
-    .paletteTag = PAL_TAG_PORYGON,
-    .oam = &sOamData_Porygon,
-    .anims = sAnimCmdTable_Porygon,
+    .tileTag = TAG_DOKUNEMON,
+    .paletteTag = PAL_TAG_DOKUNEMON,
+    .oam = &sOamData_Dokunemon,
+    .anims = sAnimCmdTable_Dokunemon,
     .images = NULL,
-    .affineAnims = sAffineAnimCmdTable_Porygon,
-    .callback = SpriteCallback_PorygonFlying,
+    .affineAnims = sAffineAnimCmdTable_Dokunemon,
+    .callback = SpriteCallback_DokunemonFlying,
 };
 
 static const struct BgTemplate sBgTemplates_RhhCopyrightScreen[] =
@@ -315,9 +315,9 @@ static void ExpansionIntro_LoadGraphics(void)
     LoadCompressedPalette(sBgPal_Credits, 0x00, 0x60);
 
     LoadCompressedSpriteSheet(&sSpriteSheet_DizzyEgg);
-    LoadCompressedSpriteSheet(&sSpriteSheet_Porygon);
+    LoadCompressedSpriteSheet(&sSpriteSheet_Dokunemon);
     LoadSpritePalette(&sSpritePalette_DizzyEgg);
-    LoadSpritePalette(&sSpritePalette_Porygon);
+    LoadSpritePalette(&sSpritePalette_Dokunemon);
 }
 
 static void ExpansionIntro_CreateSprites(void)
@@ -327,7 +327,7 @@ static void ExpansionIntro_CreateSprites(void)
     dizzyId = CreateSprite(&sSpriteTemplate_DizzyEgg, 0, DIZZY_POS_Y, 0);
     gSprites[dizzyId].x2 = DIZZY_POS_X;
 
-    poryId = CreateSprite(&sSpriteTemplate_Porygon, 0, PORY_POS_Y, 0);
+    poryId = CreateSprite(&sSpriteTemplate_Dokunemon, 0, PORY_POS_Y, 0);
     gSprites[poryId].x2 = PORY_POS_X;
 }
 
@@ -368,7 +368,7 @@ static void SpriteCallback_DizzyWalking(struct Sprite* sprite)
 }
 
 
-static void SpriteCallback_PorygonHit(struct Sprite* sprite)
+static void SpriteCallback_DokunemonHit(struct Sprite* sprite)
 {
     sprite->x2-=2;
     sprite ->y2 = Sin2(180 + sprite->sTimer * 4) / 128;
@@ -382,17 +382,17 @@ static void SpriteCallback_PorygonHit(struct Sprite* sprite)
     if (sprite->sTimer % 8 == 0)
     {
         if (sprite->sTimer % 16 == 0)
-            LoadPalette(sSpritePal_PorygonShiny, 0x10 * (16 + sprite->oam.paletteNum), 0x20);
+            LoadPalette(sSpritePal_DokunemonShiny, 0x10 * (16 + sprite->oam.paletteNum), 0x20);
         else
-            LoadPalette(sSpritePal_Porygon, 0x10 * (16 + sprite->oam.paletteNum), 0x20);
+            LoadPalette(sSpritePal_Dokunemon, 0x10 * (16 + sprite->oam.paletteNum), 0x20);
     }
 
     sprite->sTimer++;
 }
 
-static void SpriteCallback_PorygonFlying(struct Sprite* sprite)
+static void SpriteCallback_DokunemonFlying(struct Sprite* sprite)
 {
-    if (sprite->sTimer >= PORYGON_WAIT_TIME)
+    if (sprite->sTimer >= DOKUNEMON_WAIT_TIME)
     {
         sprite->x2 += 6;
 
@@ -401,13 +401,13 @@ static void SpriteCallback_PorygonFlying(struct Sprite* sprite)
         else
             sprite->y2++;
 
-        if (sprite->x2 >= PORYGON_COLLISION_POS_X)
+        if (sprite->x2 >= DOKUNEMON_COLLISION_POS_X)
         {
             StartSpriteAnim(sprite, ANIM_PORY_HIT);
-            sprite->callback = SpriteCallback_PorygonHit;
+            sprite->callback = SpriteCallback_DokunemonHit;
             sprite->sTimer = 0;
             PlaySE(SE_M_DOUBLE_SLAP);
-            PlayCryInternal(SPECIES_PORYGON, 0, 120, 10, 0);
+            PlayCryInternal(SPECIES_DOKUNEMON, 0, 120, 10, 0);
         }
     }
     sprite->sTimer++;

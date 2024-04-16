@@ -138,7 +138,7 @@
 #define SPECIES_CUTEMON                                134
 #define SPECIES_DAMEMON                                 135
 #define SPECIES_DEMIDEVMON                                 136
-#define SPECIES_PORYGON                                 137
+#define SPECIES_DOKUNEMON                                 137
 #define SPECIES_OMANYTE                                 138
 #define SPECIES_OMASTAR                                 139
 #define SPECIES_KABUTO                                  140
@@ -234,7 +234,7 @@
 #define SPECIES_KINGDRA                                 230
 #define SPECIES_PHANPY                                  231
 #define SPECIES_DONPHAN                                 232
-#define SPECIES_PORYGON2                                233
+#define SPECIES_DOKUNEMON2                                233
 #define SPECIES_STANTLER                                234
 #define SPECIES_SMEARGLE                                235
 #define SPECIES_TYROGUE                                 236
@@ -483,7 +483,7 @@
 #define SPECIES_GLACEON                                 471
 #define SPECIES_GLISCOR                                 472
 #define SPECIES_MAMOSWINE                               473
-#define SPECIES_PORYGON_Z                               474
+#define SPECIES_DOKUNEMON_Z                               474
 #define SPECIES_GALLADE                                 475
 #define SPECIES_PROBOPASS                               476
 #define SPECIES_DUSKNOIR                                477

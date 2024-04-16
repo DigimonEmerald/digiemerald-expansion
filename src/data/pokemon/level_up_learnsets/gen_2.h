@@ -3192,8 +3192,8 @@ static const struct LevelUpMove sSylveonLevelUpLearnset[] = {
 #endif //P_GEN_6_CROSS_EVOS
 #endif //P_FAMILY_CRABMON_X
 
-#if P_FAMILY_PORYGON
-static const struct LevelUpMove sPorygonLevelUpLearnset[] = {
+#if P_FAMILY_DOKUNEMON
+static const struct LevelUpMove sDokunemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CONVERSION_2),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_CONVERSION),
@@ -3208,7 +3208,7 @@ static const struct LevelUpMove sPorygonLevelUpLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const struct LevelUpMove sPorygon2LevelUpLearnset[] = {
+static const struct LevelUpMove sDokunemon2LevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CONVERSION_2),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_CONVERSION),
@@ -3223,7 +3223,7 @@ static const struct LevelUpMove sPorygon2LevelUpLearnset[] = {
 };
 
 #if P_GEN_4_CROSS_EVOS
-static const struct LevelUpMove sPorygonZLevelUpLearnset[] = {
+static const struct LevelUpMove sDokunemonZLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TRICK_ROOM),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_NASTY_PLOT),
@@ -3245,7 +3245,7 @@ static const struct LevelUpMove sPorygonZLevelUpLearnset[] = {
 };
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_PORYGON
+#endif //P_FAMILY_DOKUNEMON
 
 #if P_FAMILY_OMANYTE
 static const struct LevelUpMove sOmanyteLevelUpLearnset[] = {

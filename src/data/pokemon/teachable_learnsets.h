@@ -7632,8 +7632,8 @@ static const u16 sSylveonTeachableLearnset[] = {
 #endif //P_GEN_6_CROSS_EVOS
 #endif //P_FAMILY_CRABMON_X
 
-#if P_FAMILY_PORYGON
-static const u16 sPorygonTeachableLearnset[] = {
+#if P_FAMILY_DOKUNEMON
+static const u16 sDokunemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BLIZZARD,
     MOVE_DOUBLE_TEAM,
@@ -7669,7 +7669,7 @@ static const u16 sPorygonTeachableLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const u16 sPorygon2TeachableLearnset[] = {
+static const u16 sDokunemon2TeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BLIZZARD,
     MOVE_DOUBLE_TEAM,
@@ -7705,7 +7705,7 @@ static const u16 sPorygon2TeachableLearnset[] = {
 };
 
 #if P_GEN_4_CROSS_EVOS
-static const u16 sPorygonZTeachableLearnset[] = {
+static const u16 sDokunemonZTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BLIZZARD,
     MOVE_DOUBLE_TEAM,
@@ -7741,7 +7741,7 @@ static const u16 sPorygonZTeachableLearnset[] = {
 };
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_PORYGON
+#endif //P_FAMILY_DOKUNEMON
 
 #if P_FAMILY_OMANYTE
 static const u16 sOmanyteTeachableLearnset[] = {

@@ -409,15 +409,15 @@ gCryTable::
 	cry Cry_Sylveon
 .endif @ P_GEN_6_CROSS_EVOS
 .endif @ P_FAMILY_CRABMON_X
-.if P_FAMILY_PORYGON == TRUE
-	cry Cry_Porygon
+.if P_FAMILY_DOKUNEMON == TRUE
+	cry Cry_Dokunemon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry Cry_Porygon2
+	cry Cry_Dokunemon2
 .if P_GEN_4_CROSS_EVOS == TRUE
-	cry Cry_PorygonZ
+	cry Cry_DokunemonZ
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_PORYGON
+.endif @ P_FAMILY_DOKUNEMON
 .if P_FAMILY_OMANYTE == TRUE
 	cry Cry_Omanyte
 	cry Cry_Omastar
@@ -2835,15 +2835,15 @@ gCryTable_Reverse::
 	cry_reverse Cry_Sylveon
 .endif @ P_GEN_6_CROSS_EVOS
 .endif @ P_FAMILY_CRABMON_X
-.if P_FAMILY_PORYGON == TRUE
-	cry_reverse Cry_Porygon
+.if P_FAMILY_DOKUNEMON == TRUE
+	cry_reverse Cry_Dokunemon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry_reverse Cry_Porygon2
+	cry_reverse Cry_Dokunemon2
 .if P_GEN_4_CROSS_EVOS == TRUE
-	cry_reverse Cry_PorygonZ
+	cry_reverse Cry_DokunemonZ
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_PORYGON
+.endif @ P_FAMILY_DOKUNEMON
 .if P_FAMILY_OMANYTE == TRUE
 	cry_reverse Cry_Omanyte
 	cry_reverse Cry_Omastar
