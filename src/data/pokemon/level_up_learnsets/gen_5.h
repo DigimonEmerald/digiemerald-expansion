@@ -4374,8 +4374,8 @@ static const struct LevelUpMove sEkakimonGalarianLevelUpLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_EKAKIMON
 
-#if P_FAMILY_DRATINI
-static const struct LevelUpMove sDratiniLevelUpLearnset[] = {
+#if P_FAMILY_ELECMON
+static const struct LevelUpMove sElecmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WRAP),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 5, MOVE_THUNDER_WAVE),
@@ -4437,7 +4437,7 @@ static const struct LevelUpMove sDragoniteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(81, MOVE_HURRICANE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_DRATINI
+#endif //P_FAMILY_ELECMON
 
 #if P_FAMILY_MEWTWO
 static const struct LevelUpMove sMewtwoLevelUpLearnset[] = {

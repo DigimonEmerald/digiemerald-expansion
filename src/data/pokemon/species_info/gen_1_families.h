@@ -15236,8 +15236,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_EKAKIMON
 
-#if P_FAMILY_DRATINI
-    [SPECIES_DRATINI] =
+#if P_FAMILY_ELECMON
+    [SPECIES_ELECMON] =
     {
         .baseHP        = 41,
         .baseAttack    = 64,
@@ -15257,14 +15257,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_MARVEL_SCALE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Dratini"),
-        .cryId = CRY_DRATINI,
-        .natDexNum = NATIONAL_DEX_DRATINI,
+        .speciesName = _("Elecmon"),
+        .cryId = CRY_ELECMON,
+        .natDexNum = NATIONAL_DEX_ELECMON,
         .categoryName = _("Dragon"),
         .height = 18,
         .weight = 33,
         .description = COMPOUND_STRING(
-            "A Dratini continually molts and sloughs\n"
+            "A Elecmon continually molts and sloughs\n"
             "off its old skin. It does so because the\n"
             "life energy within its body steadily builds\n"
             "to reach uncontrollable levels."),
@@ -15272,22 +15272,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 8,
         .trainerScale = 386,
         .trainerOffset = 6,
-        .frontPic = gMonFrontPic_Dratini,
+        .frontPic = gMonFrontPic_Elecmon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Dratini,
+        .frontAnimFrames = sAnims_Elecmon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Dratini,
+        .backPic = gMonBackPic_Elecmon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Dratini,
-        .shinyPalette = gMonShinyPalette_Dratini,
-        .iconSprite = gMonIcon_Dratini,
+        .palette = gMonPalette_Elecmon,
+        .shinyPalette = gMonShinyPalette_Elecmon,
+        .iconSprite = gMonIcon_Elecmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Dratini)
-        .levelUpLearnset = sDratiniLevelUpLearnset,
-        .teachableLearnset = sDratiniTeachableLearnset,
+        FOOTPRINT(Elecmon)
+        .levelUpLearnset = sElecmonLevelUpLearnset,
+        .teachableLearnset = sElecmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_DRAGONAIR}),
     },
 
@@ -15403,7 +15403,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sDragoniteLevelUpLearnset,
         .teachableLearnset = sDragoniteTeachableLearnset,
     },
-#endif //P_FAMILY_DRATINI
+#endif //P_FAMILY_ELECMON
 
 #if P_FAMILY_MEWTWO
     [SPECIES_MEWTWO] =

@@ -447,11 +447,11 @@ gCryTable::
 .if P_FAMILY_EKAKIMON == TRUE
 	cry Cry_Ekakimon
 .endif @ P_FAMILY_EKAKIMON
-.if P_FAMILY_DRATINI == TRUE
-	cry Cry_Dratini
+.if P_FAMILY_ELECMON == TRUE
+	cry Cry_Elecmon
 	cry Cry_Dragonair
 	cry Cry_Dragonite
-.endif @ P_FAMILY_DRATINI
+.endif @ P_FAMILY_ELECMON
 .if P_FAMILY_MEWTWO == TRUE
 	cry Cry_Mewtwo
 .if P_MEGA_EVOLUTIONS == TRUE
@@ -2873,11 +2873,11 @@ gCryTable_Reverse::
 .if P_FAMILY_EKAKIMON == TRUE
 	cry_reverse Cry_Ekakimon
 .endif @ P_FAMILY_EKAKIMON
-.if P_FAMILY_DRATINI == TRUE
-	cry_reverse Cry_Dratini
+.if P_FAMILY_ELECMON == TRUE
+	cry_reverse Cry_Elecmon
 	cry_reverse Cry_Dragonair
 	cry_reverse Cry_Dragonite
-.endif @ P_FAMILY_DRATINI
+.endif @ P_FAMILY_ELECMON
 .if P_FAMILY_MEWTWO == TRUE
 	cry_reverse Cry_Mewtwo
 .if P_MEGA_EVOLUTIONS == TRUE

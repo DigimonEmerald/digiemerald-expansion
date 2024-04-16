@@ -2535,14 +2535,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_EKAKIMON
 
-#if P_FAMILY_DRATINI
-    const u32 gMonFrontPic_Dratini[] = INCBIN_U32("graphics/pokemon/dratini/anim_front.4bpp.lz");
-    const u32 gMonPalette_Dratini[] = INCBIN_U32("graphics/pokemon/dratini/normal.gbapal.lz");
-    const u32 gMonBackPic_Dratini[] = INCBIN_U32("graphics/pokemon/dratini/back.4bpp.lz");
-    const u32 gMonShinyPalette_Dratini[] = INCBIN_U32("graphics/pokemon/dratini/shiny.gbapal.lz");
-    const u8 gMonIcon_Dratini[] = INCBIN_U8("graphics/pokemon/dratini/icon.4bpp");
+#if P_FAMILY_ELECMON
+    const u32 gMonFrontPic_Elecmon[] = INCBIN_U32("graphics/pokemon/elecmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Elecmon[] = INCBIN_U32("graphics/pokemon/elecmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Elecmon[] = INCBIN_U32("graphics/pokemon/elecmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Elecmon[] = INCBIN_U32("graphics/pokemon/elecmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Elecmon[] = INCBIN_U8("graphics/pokemon/elecmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Dratini[] = INCBIN_U8("graphics/pokemon/dratini/footprint.1bpp");
+    const u8 gMonFootprint_Elecmon[] = INCBIN_U8("graphics/pokemon/elecmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Dragonair[] = INCBIN_U32("graphics/pokemon/dragonair/anim_front.4bpp.lz");
@@ -2562,7 +2562,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Dragonite[] = INCBIN_U8("graphics/pokemon/dragonite/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_DRATINI
+#endif //P_FAMILY_ELECMON
 
 #if P_FAMILY_MEWTWO
     const u32 gMonFrontPic_Mewtwo[] = INCBIN_U32("graphics/pokemon/mewtwo/anim_front.4bpp.lz");

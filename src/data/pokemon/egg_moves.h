@@ -1290,8 +1290,8 @@ const u16 gEggMoves[] = {
         MOVE_POWER_UP_PUNCH),
 #endif //P_FAMILY_DRACOMON
 
-#if P_FAMILY_DRATINI
-    egg_moves(DRATINI,
+#if P_FAMILY_ELECMON
+    egg_moves(ELECMON,
         MOVE_MIST,
         MOVE_HAZE,
         MOVE_SUPERSONIC,
@@ -1303,7 +1303,7 @@ const u16 gEggMoves[] = {
         MOVE_AQUA_JET,
         MOVE_DRAGON_PULSE,
         MOVE_IRON_TAIL),
-#endif //P_FAMILY_DRATINI
+#endif //P_FAMILY_ELECMON
 
 #if P_FAMILY_CHIKORITA
     egg_moves(CHIKORITA,

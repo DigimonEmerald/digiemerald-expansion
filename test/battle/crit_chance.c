@@ -309,14 +309,14 @@ DOUBLE_BATTLE_TEST("Dragon Cheer increases critical hit ratio by two on Dragon t
         ASSUME(gMovesInfo[MOVE_TACKLE].criticalHitStage == 0);
         ASSUME(gMovesInfo[MOVE_DRAGON_CHEER].effect == EFFECT_DRAGON_CHEER);
         PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_DRATINI);
+        PLAYER(SPECIES_ELECMON);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_DRAGON_CHEER, target: playerRight); MOVE(playerRight, MOVE_TACKLE, target: opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_CHEER, playerLeft);
-        MESSAGE("Dratini is getting pumped!");
+        MESSAGE("Elecmon is getting pumped!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerRight);
         MESSAGE("A critical hit!");
     }

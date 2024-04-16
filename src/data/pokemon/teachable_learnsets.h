@@ -8221,8 +8221,8 @@ static const u16 sEkakimonGalarianTeachableLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_EKAKIMON
 
-#if P_FAMILY_DRATINI
-static const u16 sDratiniTeachableLearnset[] = {
+#if P_FAMILY_ELECMON
+static const u16 sElecmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DOUBLE_TEAM,
@@ -8356,7 +8356,7 @@ static const u16 sDragoniteTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DRATINI
+#endif //P_FAMILY_ELECMON
 
 #if P_FAMILY_MEWTWO
 static const u16 sMewtwoTeachableLearnset[] = {

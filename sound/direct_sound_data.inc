@@ -1429,10 +1429,10 @@ Cry_Ekakimon::
 	.incbin "sound/direct_sound_samples/cries/ekakimon.bin"
 .endif @ P_FAMILY_EKAKIMON
 
-.if P_FAMILY_DRATINI == TRUE
+.if P_FAMILY_ELECMON == TRUE
 	.align 2
-Cry_Dratini::
-	.incbin "sound/direct_sound_samples/cries/dratini.bin"
+Cry_Elecmon::
+	.incbin "sound/direct_sound_samples/cries/elecmon.bin"
 
 	.align 2
 Cry_Dragonair::
@@ -1441,7 +1441,7 @@ Cry_Dragonair::
 	.align 2
 Cry_Dragonite::
 	.incbin "sound/direct_sound_samples/cries/dragonite.bin"
-.endif @ P_FAMILY_DRATINI
+.endif @ P_FAMILY_ELECMON
 
 .if P_FAMILY_MEWTWO == TRUE
 	.align 2

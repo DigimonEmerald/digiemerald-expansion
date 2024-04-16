@@ -130,7 +130,7 @@
 #define P_FAMILY_DRACOMON_X                P_GEN_1_POKEMON
 #define P_FAMILY_EBIBURGMON                  P_GEN_1_POKEMON
 #define P_FAMILY_EKAKIMON                 P_GEN_1_POKEMON
-#define P_FAMILY_DRATINI                 P_GEN_1_POKEMON
+#define P_FAMILY_ELECMON                 P_GEN_1_POKEMON
 #define P_FAMILY_MEWTWO                  P_GEN_1_POKEMON
 #define P_FAMILY_MEW                     P_GEN_1_POKEMON
 

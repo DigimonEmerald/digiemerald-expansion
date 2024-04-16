@@ -2284,8 +2284,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(EkakimonGalarian);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_EKAKIMON
 
-#if P_FAMILY_DRATINI
-static const union AnimCmd sAnim_Dratini_1[] =
+#if P_FAMILY_ELECMON
+static const union AnimCmd sAnim_Elecmon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -2309,7 +2309,7 @@ static const union AnimCmd sAnim_Dragonite_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_DRATINI
+#endif //P_FAMILY_ELECMON
 
 #if P_FAMILY_MEWTWO
 static const union AnimCmd sAnim_Mewtwo_1[] =
@@ -10727,11 +10727,11 @@ SINGLE_ANIMATION(Ekakimon);
 SINGLE_ANIMATION(EkakimonGalarian);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_EKAKIMON
-#if P_FAMILY_DRATINI
-SINGLE_ANIMATION(Dratini);
+#if P_FAMILY_ELECMON
+SINGLE_ANIMATION(Elecmon);
 SINGLE_ANIMATION(Dragonair);
 SINGLE_ANIMATION(Dragonite);
-#endif //P_FAMILY_DRATINI
+#endif //P_FAMILY_ELECMON
 #if P_FAMILY_MEWTWO
 SINGLE_ANIMATION(Mewtwo);
 #if P_MEGA_EVOLUTIONS
