@@ -2226,8 +2226,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Dracomon_xGalarian);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_DRACOMON_X
 
-#if P_FAMILY_ZAPDOS
-static const union AnimCmd sAnim_Zapdos_1[] =
+#if P_FAMILY_EBIBURGMON
+static const union AnimCmd sAnim_Ebiburgmon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -2237,9 +2237,9 @@ static const union AnimCmd sAnim_Zapdos_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(ZapdosGalarian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(EbiburgmonGalarian);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ZAPDOS
+#endif //P_FAMILY_EBIBURGMON
 
 #if P_FAMILY_MOLTRES
 static const union AnimCmd sAnim_Moltres_1[] =
@@ -10715,12 +10715,12 @@ SINGLE_ANIMATION(Dracomon_x);
 SINGLE_ANIMATION(Dracomon_xGalarian);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_DRACOMON_X
-#if P_FAMILY_ZAPDOS
-SINGLE_ANIMATION(Zapdos);
+#if P_FAMILY_EBIBURGMON
+SINGLE_ANIMATION(Ebiburgmon);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(ZapdosGalarian);
+SINGLE_ANIMATION(EbiburgmonGalarian);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ZAPDOS
+#endif //P_FAMILY_EBIBURGMON
 #if P_FAMILY_MOLTRES
 SINGLE_ANIMATION(Moltres);
 #if P_GALARIAN_FORMS

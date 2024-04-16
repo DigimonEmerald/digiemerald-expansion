@@ -550,15 +550,15 @@ static const u16 sDracomon_xFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_DRACOMON_X
 
-#if P_FAMILY_ZAPDOS
-static const u16 sZapdosFormSpeciesIdTable[] = {
-    SPECIES_ZAPDOS,
+#if P_FAMILY_EBIBURGMON
+static const u16 sEbiburgmonFormSpeciesIdTable[] = {
+    SPECIES_EBIBURGMON,
 #if P_GALARIAN_FORMS
-    SPECIES_ZAPDOS_GALARIAN,
+    SPECIES_EBIBURGMON_GALARIAN,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_ZAPDOS
+#endif //P_FAMILY_EBIBURGMON
 
 #if P_FAMILY_MOLTRES
 static const u16 sMoltresFormSpeciesIdTable[] = {

@@ -3166,8 +3166,8 @@ static const struct LevelUpMove sDracomon_xGalarianLevelUpLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_DRACOMON_X
 
-#if P_FAMILY_ZAPDOS
-static const struct LevelUpMove sZapdosLevelUpLearnset[] = {
+#if P_FAMILY_EBIBURGMON
+static const struct LevelUpMove sEbiburgmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
     LEVEL_UP_MOVE( 1, MOVE_DRILL_PECK),
     LEVEL_UP_MOVE(51, MOVE_THUNDER),
@@ -3177,7 +3177,7 @@ static const struct LevelUpMove sZapdosLevelUpLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const struct LevelUpMove sZapdosGalarianLevelUpLearnset[] = {
+static const struct LevelUpMove sEbiburgmonGalarianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE( 5, MOVE_ROCK_SMASH),
@@ -3197,7 +3197,7 @@ static const struct LevelUpMove sZapdosGalarianLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ZAPDOS
+#endif //P_FAMILY_EBIBURGMON
 
 #if P_FAMILY_MOLTRES
 static const struct LevelUpMove sMoltresLevelUpLearnset[] = {

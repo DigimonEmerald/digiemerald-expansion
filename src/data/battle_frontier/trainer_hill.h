@@ -3541,7 +3541,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                         },
                                     [5] =
                                         {
-                                            .species = SPECIES_ZAPDOS,
+                                            .species = SPECIES_EBIBURGMON,
                                             .heldItem = ITEM_BRIGHT_POWDER,
                                             .moves = {MOVE_THUNDERBOLT, MOVE_DRILL_PECK, MOVE_THUNDER_WAVE, MOVE_AGILITY},
                                             .speedEV = 255,
@@ -3555,7 +3555,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 0,
                                             .personality = 0x18,
-                                            .nickname = _("ZAPDOS"),
+                                            .nickname = _("EBIBURGMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                 },

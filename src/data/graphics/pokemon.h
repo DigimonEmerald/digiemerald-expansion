@@ -2497,24 +2497,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_DRACOMON_X
 
-#if P_FAMILY_ZAPDOS
-    const u32 gMonFrontPic_Zapdos[] = INCBIN_U32("graphics/pokemon/zapdos/anim_front.4bpp.lz");
-    const u32 gMonPalette_Zapdos[] = INCBIN_U32("graphics/pokemon/zapdos/normal.gbapal.lz");
-    const u32 gMonBackPic_Zapdos[] = INCBIN_U32("graphics/pokemon/zapdos/back.4bpp.lz");
-    const u32 gMonShinyPalette_Zapdos[] = INCBIN_U32("graphics/pokemon/zapdos/shiny.gbapal.lz");
-    const u8 gMonIcon_Zapdos[] = INCBIN_U8("graphics/pokemon/zapdos/icon.4bpp");
+#if P_FAMILY_EBIBURGMON
+    const u32 gMonFrontPic_Ebiburgmon[] = INCBIN_U32("graphics/pokemon/ebiburgmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Ebiburgmon[] = INCBIN_U32("graphics/pokemon/ebiburgmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Ebiburgmon[] = INCBIN_U32("graphics/pokemon/ebiburgmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Ebiburgmon[] = INCBIN_U32("graphics/pokemon/ebiburgmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Ebiburgmon[] = INCBIN_U8("graphics/pokemon/ebiburgmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Zapdos[] = INCBIN_U8("graphics/pokemon/zapdos/footprint.1bpp");
+    const u8 gMonFootprint_Ebiburgmon[] = INCBIN_U8("graphics/pokemon/ebiburgmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GALARIAN_FORMS
-    const u32 gMonFrontPic_ZapdosGalarian[] = INCBIN_U32("graphics/pokemon/zapdos/galarian/front.4bpp.lz");
-    const u32 gMonPalette_ZapdosGalarian[] = INCBIN_U32("graphics/pokemon/zapdos/galarian/normal.gbapal.lz");
-    const u32 gMonBackPic_ZapdosGalarian[] = INCBIN_U32("graphics/pokemon/zapdos/galarian/back.4bpp.lz");
-    const u32 gMonShinyPalette_ZapdosGalarian[] = INCBIN_U32("graphics/pokemon/zapdos/galarian/shiny.gbapal.lz");
-    const u8 gMonIcon_ZapdosGalarian[] = INCBIN_U8("graphics/pokemon/zapdos/galarian/icon.4bpp");
+    const u32 gMonFrontPic_EbiburgmonGalarian[] = INCBIN_U32("graphics/pokemon/ebiburgmon/galarian/front.4bpp.lz");
+    const u32 gMonPalette_EbiburgmonGalarian[] = INCBIN_U32("graphics/pokemon/ebiburgmon/galarian/normal.gbapal.lz");
+    const u32 gMonBackPic_EbiburgmonGalarian[] = INCBIN_U32("graphics/pokemon/ebiburgmon/galarian/back.4bpp.lz");
+    const u32 gMonShinyPalette_EbiburgmonGalarian[] = INCBIN_U32("graphics/pokemon/ebiburgmon/galarian/shiny.gbapal.lz");
+    const u8 gMonIcon_EbiburgmonGalarian[] = INCBIN_U8("graphics/pokemon/ebiburgmon/galarian/icon.4bpp");
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ZAPDOS
+#endif //P_FAMILY_EBIBURGMON
 
 #if P_FAMILY_MOLTRES
     const u32 gMonFrontPic_Moltres[] = INCBIN_U32("graphics/pokemon/moltres/anim_front.4bpp.lz");

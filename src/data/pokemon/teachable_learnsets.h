@@ -8101,8 +8101,8 @@ static const u16 sDracomon_xGalarianTeachableLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_DRACOMON_X
 
-#if P_FAMILY_ZAPDOS
-static const u16 sZapdosTeachableLearnset[] = {
+#if P_FAMILY_EBIBURGMON
+static const u16 sEbiburgmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
@@ -8136,7 +8136,7 @@ static const u16 sZapdosTeachableLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const u16 sZapdosGalarianTeachableLearnset[] = {
+static const u16 sEbiburgmonGalarianTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -8162,7 +8162,7 @@ static const u16 sZapdosGalarianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ZAPDOS
+#endif //P_FAMILY_EBIBURGMON
 
 #if P_FAMILY_MOLTRES
 static const u16 sMoltresTeachableLearnset[] = {

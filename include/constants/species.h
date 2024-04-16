@@ -146,7 +146,7 @@
 #define SPECIES_DRACMON                              142
 #define SPECIES_DRACOMON                                 143
 #define SPECIES_DRACOMON_X                                144
-#define SPECIES_ZAPDOS                                  145
+#define SPECIES_EBIBURGMON                                  145
 #define SPECIES_MOLTRES                                 146
 #define SPECIES_DRATINI                                 147
 #define SPECIES_DRAGONAIR                               148
@@ -1041,7 +1041,7 @@
 #define SPECIES_ARMADILMON_GALARIAN                        980
 #define SPECIES_BULUCOMON_GALARIAN                        981
 #define SPECIES_DRACOMON_X_GALARIAN                       982
-#define SPECIES_ZAPDOS_GALARIAN                         983
+#define SPECIES_EBIBURGMON_GALARIAN                         983
 #define SPECIES_MOLTRES_GALARIAN                        984
 #define SPECIES_SLOWKING_GALARIAN                       985
 #define SPECIES_CORSOLA_GALARIAN                        986

@@ -14993,8 +14993,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_DRACOMON_X
 
-#if P_FAMILY_ZAPDOS
-    [SPECIES_ZAPDOS] =
+#if P_FAMILY_EBIBURGMON
+    [SPECIES_EBIBURGMON] =
     {
         .baseHP        = 90,
         .baseAttack    = 90,
@@ -15023,14 +15023,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
     #endif
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Zapdos"),
-        .cryId = CRY_ZAPDOS,
-        .natDexNum = NATIONAL_DEX_ZAPDOS,
+        .speciesName = _("Ebiburgmon"),
+        .cryId = CRY_EBIBURGMON,
+        .natDexNum = NATIONAL_DEX_EBIBURGMON,
         .categoryName = _("Electric"),
         .height = 16,
         .weight = 526,
         .description = COMPOUND_STRING(
-            "Zapdos is a legendary bird Pokémon that\n"
+            "Ebiburgmon is a legendary bird Pokémon that\n"
             "has the ability to control electricity.\n"
             "It usually lives in thunderclouds. It gains\n"
             "power if it is stricken by lightning bolts."),
@@ -15038,29 +15038,29 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 318,
         .trainerOffset = 3,
-        .frontPic = gMonFrontPic_Zapdos,
+        .frontPic = gMonFrontPic_Ebiburgmon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Zapdos,
+        .frontAnimFrames = sAnims_Ebiburgmon,
         .frontAnimId = ANIM_FLASH_YELLOW,
         .enemyMonElevation = 8,
-        .backPic = gMonBackPic_Zapdos,
+        .backPic = gMonBackPic_Ebiburgmon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
-        .palette = gMonPalette_Zapdos,
-        .shinyPalette = gMonShinyPalette_Zapdos,
-        .iconSprite = gMonIcon_Zapdos,
+        .palette = gMonPalette_Ebiburgmon,
+        .shinyPalette = gMonShinyPalette_Ebiburgmon,
+        .iconSprite = gMonIcon_Ebiburgmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Zapdos)
+        FOOTPRINT(Ebiburgmon)
         .isLegendary = TRUE,
-        .levelUpLearnset = sZapdosLevelUpLearnset,
-        .teachableLearnset = sZapdosTeachableLearnset,
-        .formSpeciesIdTable = sZapdosFormSpeciesIdTable,
+        .levelUpLearnset = sEbiburgmonLevelUpLearnset,
+        .teachableLearnset = sEbiburgmonTeachableLearnset,
+        .formSpeciesIdTable = sEbiburgmonFormSpeciesIdTable,
     },
 
 #if P_GALARIAN_FORMS
-    [SPECIES_ZAPDOS_GALARIAN] =
+    [SPECIES_EBIBURGMON_GALARIAN] =
     {
         .baseHP        = 90,
         .baseAttack    = 125,
@@ -15079,9 +15079,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_DEFIANT, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Zapdos"),
-        .cryId = CRY_ZAPDOS,
-        .natDexNum = NATIONAL_DEX_ZAPDOS,
+        .speciesName = _("Ebiburgmon"),
+        .cryId = CRY_EBIBURGMON,
+        .natDexNum = NATIONAL_DEX_EBIBURGMON,
         .categoryName = _("Strong Legs"),
         .height = 16,
         .weight = 582,
@@ -15094,28 +15094,28 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 318,
         .trainerOffset = 3,
-        .frontPic = gMonFrontPic_ZapdosGalarian,
+        .frontPic = gMonFrontPic_EbiburgmonGalarian,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_ZapdosGalarian,
+        .frontAnimFrames = sAnims_EbiburgmonGalarian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_ZapdosGalarian,
+        .backPic = gMonBackPic_EbiburgmonGalarian,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 9,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_ZapdosGalarian,
-        .shinyPalette = gMonShinyPalette_ZapdosGalarian,
-        .iconSprite = gMonIcon_ZapdosGalarian,
+        .palette = gMonPalette_EbiburgmonGalarian,
+        .shinyPalette = gMonShinyPalette_EbiburgmonGalarian,
+        .iconSprite = gMonIcon_EbiburgmonGalarian,
         .iconPalIndex = 0,
-        FOOTPRINT(Zapdos)
+        FOOTPRINT(Ebiburgmon)
         .isLegendary = TRUE,
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sZapdosGalarianLevelUpLearnset,
-        .teachableLearnset = sZapdosGalarianTeachableLearnset,
-        .formSpeciesIdTable = sZapdosFormSpeciesIdTable,
+        .levelUpLearnset = sEbiburgmonGalarianLevelUpLearnset,
+        .teachableLearnset = sEbiburgmonGalarianTeachableLearnset,
+        .formSpeciesIdTable = sEbiburgmonFormSpeciesIdTable,
     },
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ZAPDOS
+#endif //P_FAMILY_EBIBURGMON
 
 #if P_FAMILY_MOLTRES
     [SPECIES_MOLTRES] =
