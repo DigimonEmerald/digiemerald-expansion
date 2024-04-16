@@ -15117,8 +15117,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_EBIBURGMON
 
-#if P_FAMILY_MOLTRES
-    [SPECIES_MOLTRES] =
+#if P_FAMILY_EKAKIMON
+    [SPECIES_EKAKIMON] =
     {
         .baseHP        = 90,
         .baseAttack    = 100,
@@ -15143,14 +15143,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_FLAME_BODY },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Moltres"),
-        .cryId = CRY_MOLTRES,
-        .natDexNum = NATIONAL_DEX_MOLTRES,
+        .speciesName = _("Ekakimon"),
+        .cryId = CRY_EKAKIMON,
+        .natDexNum = NATIONAL_DEX_EKAKIMON,
         .categoryName = _("Flame"),
         .height = 20,
         .weight = 600,
         .description = COMPOUND_STRING(
-            "Moltres is a legendary bird Pokémon\n"
+            "Ekakimon is a legendary bird Pokémon\n"
             "that can control fire. If injured, it is said\n"
             "to dip its body in the molten magma of\n"
             "a volcano to burn and heal itself."),
@@ -15158,28 +15158,28 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 387,
         .trainerOffset = 8,
-        .frontPic = gMonFrontPic_Moltres,
+        .frontPic = gMonFrontPic_Ekakimon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_Moltres,
+        .frontAnimFrames = sAnims_Ekakimon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Moltres,
+        .backPic = gMonBackPic_Ekakimon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_Moltres,
-        .shinyPalette = gMonShinyPalette_Moltres,
-        .iconSprite = gMonIcon_Moltres,
+        .palette = gMonPalette_Ekakimon,
+        .shinyPalette = gMonShinyPalette_Ekakimon,
+        .iconSprite = gMonIcon_Ekakimon,
         .iconPalIndex = 0,
-        FOOTPRINT(Moltres)
+        FOOTPRINT(Ekakimon)
         .isLegendary = TRUE,
-        .levelUpLearnset = sMoltresLevelUpLearnset,
-        .teachableLearnset = sMoltresTeachableLearnset,
-        .formSpeciesIdTable = sMoltresFormSpeciesIdTable,
+        .levelUpLearnset = sEkakimonLevelUpLearnset,
+        .teachableLearnset = sEkakimonTeachableLearnset,
+        .formSpeciesIdTable = sEkakimonFormSpeciesIdTable,
     },
 
 #if P_GALARIAN_FORMS
-    [SPECIES_MOLTRES_GALARIAN] =
+    [SPECIES_EKAKIMON_GALARIAN] =
     {
         .baseHP        = 90,
         .baseAttack    = 85,
@@ -15198,9 +15198,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_BERSERK, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Moltres"),
-        .cryId = CRY_MOLTRES,
-        .natDexNum = NATIONAL_DEX_MOLTRES,
+        .speciesName = _("Ekakimon"),
+        .cryId = CRY_EKAKIMON,
+        .natDexNum = NATIONAL_DEX_EKAKIMON,
         .categoryName = _("Malevolent"),
         .height = 20,
         .weight = 660,
@@ -15213,28 +15213,28 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 387,
         .trainerOffset = 8,
-        .frontPic = gMonFrontPic_MoltresGalarian,
+        .frontPic = gMonFrontPic_EkakimonGalarian,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_MoltresGalarian,
+        .frontAnimFrames = sAnims_EkakimonGalarian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_MoltresGalarian,
+        .backPic = gMonBackPic_EkakimonGalarian,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 5,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_MoltresGalarian,
-        .shinyPalette = gMonShinyPalette_MoltresGalarian,
-        .iconSprite = gMonIcon_MoltresGalarian,
+        .palette = gMonPalette_EkakimonGalarian,
+        .shinyPalette = gMonShinyPalette_EkakimonGalarian,
+        .iconSprite = gMonIcon_EkakimonGalarian,
         .iconPalIndex = 0,
-        FOOTPRINT(Moltres)
+        FOOTPRINT(Ekakimon)
         .isLegendary = TRUE,
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sMoltresGalarianLevelUpLearnset,
-        .teachableLearnset = sMoltresGalarianTeachableLearnset,
-        .formSpeciesIdTable = sMoltresFormSpeciesIdTable,
+        .levelUpLearnset = sEkakimonGalarianLevelUpLearnset,
+        .teachableLearnset = sEkakimonGalarianTeachableLearnset,
+        .formSpeciesIdTable = sEkakimonFormSpeciesIdTable,
     },
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_MOLTRES
+#endif //P_FAMILY_EKAKIMON
 
 #if P_FAMILY_DRATINI
     [SPECIES_DRATINI] =

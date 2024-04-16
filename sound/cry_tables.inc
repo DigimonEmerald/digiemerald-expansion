@@ -444,9 +444,9 @@ gCryTable::
 .if P_FAMILY_EBIBURGMON == TRUE
 	cry Cry_Ebiburgmon
 .endif @ P_FAMILY_EBIBURGMON
-.if P_FAMILY_MOLTRES == TRUE
-	cry Cry_Moltres
-.endif @ P_FAMILY_MOLTRES
+.if P_FAMILY_EKAKIMON == TRUE
+	cry Cry_Ekakimon
+.endif @ P_FAMILY_EKAKIMON
 .if P_FAMILY_DRATINI == TRUE
 	cry Cry_Dratini
 	cry Cry_Dragonair
@@ -2870,9 +2870,9 @@ gCryTable_Reverse::
 .if P_FAMILY_EBIBURGMON == TRUE
 	cry_reverse Cry_Ebiburgmon
 .endif @ P_FAMILY_EBIBURGMON
-.if P_FAMILY_MOLTRES == TRUE
-	cry_reverse Cry_Moltres
-.endif @ P_FAMILY_MOLTRES
+.if P_FAMILY_EKAKIMON == TRUE
+	cry_reverse Cry_Ekakimon
+.endif @ P_FAMILY_EKAKIMON
 .if P_FAMILY_DRATINI == TRUE
 	cry_reverse Cry_Dratini
 	cry_reverse Cry_Dragonair

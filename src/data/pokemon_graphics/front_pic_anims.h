@@ -2241,8 +2241,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(EbiburgmonGalarian);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_EBIBURGMON
 
-#if P_FAMILY_MOLTRES
-static const union AnimCmd sAnim_Moltres_1[] =
+#if P_FAMILY_EKAKIMON
+static const union AnimCmd sAnim_Ekakimon_1[] =
 {
     ANIMCMD_FRAME(1, 3),
     ANIMCMD_FRAME(0, 3),
@@ -2280,9 +2280,9 @@ static const union AnimCmd sAnim_Moltres_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(MoltresGalarian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(EkakimonGalarian);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_MOLTRES
+#endif //P_FAMILY_EKAKIMON
 
 #if P_FAMILY_DRATINI
 static const union AnimCmd sAnim_Dratini_1[] =
@@ -10721,12 +10721,12 @@ SINGLE_ANIMATION(Ebiburgmon);
 SINGLE_ANIMATION(EbiburgmonGalarian);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_EBIBURGMON
-#if P_FAMILY_MOLTRES
-SINGLE_ANIMATION(Moltres);
+#if P_FAMILY_EKAKIMON
+SINGLE_ANIMATION(Ekakimon);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(MoltresGalarian);
+SINGLE_ANIMATION(EkakimonGalarian);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_MOLTRES
+#endif //P_FAMILY_EKAKIMON
 #if P_FAMILY_DRATINI
 SINGLE_ANIMATION(Dratini);
 SINGLE_ANIMATION(Dragonair);

@@ -8164,8 +8164,8 @@ static const u16 sEbiburgmonGalarianTeachableLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_EBIBURGMON
 
-#if P_FAMILY_MOLTRES
-static const u16 sMoltresTeachableLearnset[] = {
+#if P_FAMILY_EKAKIMON
+static const u16 sEkakimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
@@ -8197,7 +8197,7 @@ static const u16 sMoltresTeachableLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const u16 sMoltresGalarianTeachableLearnset[] = {
+static const u16 sEkakimonGalarianTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_FACADE,
     MOVE_FLY,
@@ -8219,7 +8219,7 @@ static const u16 sMoltresGalarianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_MOLTRES
+#endif //P_FAMILY_EKAKIMON
 
 #if P_FAMILY_DRATINI
 static const u16 sDratiniTeachableLearnset[] = {

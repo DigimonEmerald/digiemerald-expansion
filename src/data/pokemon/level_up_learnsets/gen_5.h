@@ -4331,8 +4331,8 @@ static const struct LevelUpMove sEbiburgmonGalarianLevelUpLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_EBIBURGMON
 
-#if P_FAMILY_MOLTRES
-static const struct LevelUpMove sMoltresLevelUpLearnset[] = {
+#if P_FAMILY_EKAKIMON
+static const struct LevelUpMove sEkakimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WING_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 8, MOVE_FIRE_SPIN),
@@ -4352,7 +4352,7 @@ static const struct LevelUpMove sMoltresLevelUpLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const struct LevelUpMove sMoltresGalarianLevelUpLearnset[] = {
+static const struct LevelUpMove sEkakimonGalarianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GUST),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 5, MOVE_PAYBACK),
@@ -4372,7 +4372,7 @@ static const struct LevelUpMove sMoltresGalarianLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_MOLTRES
+#endif //P_FAMILY_EKAKIMON
 
 #if P_FAMILY_DRATINI
 static const struct LevelUpMove sDratiniLevelUpLearnset[] = {

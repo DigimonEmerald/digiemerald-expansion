@@ -560,15 +560,15 @@ static const u16 sEbiburgmonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_EBIBURGMON
 
-#if P_FAMILY_MOLTRES
-static const u16 sMoltresFormSpeciesIdTable[] = {
-    SPECIES_MOLTRES,
+#if P_FAMILY_EKAKIMON
+static const u16 sEkakimonFormSpeciesIdTable[] = {
+    SPECIES_EKAKIMON,
 #if P_GALARIAN_FORMS
-    SPECIES_MOLTRES_GALARIAN,
+    SPECIES_EKAKIMON_GALARIAN,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_MOLTRES
+#endif //P_FAMILY_EKAKIMON
 
 #if P_FAMILY_MEWTWO
 static const u16 sMewtwoFormSpeciesIdTable[] = {

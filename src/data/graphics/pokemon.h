@@ -2516,24 +2516,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_EBIBURGMON
 
-#if P_FAMILY_MOLTRES
-    const u32 gMonFrontPic_Moltres[] = INCBIN_U32("graphics/pokemon/moltres/anim_front.4bpp.lz");
-    const u32 gMonPalette_Moltres[] = INCBIN_U32("graphics/pokemon/moltres/normal.gbapal.lz");
-    const u32 gMonBackPic_Moltres[] = INCBIN_U32("graphics/pokemon/moltres/back.4bpp.lz");
-    const u32 gMonShinyPalette_Moltres[] = INCBIN_U32("graphics/pokemon/moltres/shiny.gbapal.lz");
-    const u8 gMonIcon_Moltres[] = INCBIN_U8("graphics/pokemon/moltres/icon.4bpp");
+#if P_FAMILY_EKAKIMON
+    const u32 gMonFrontPic_Ekakimon[] = INCBIN_U32("graphics/pokemon/ekakimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Ekakimon[] = INCBIN_U32("graphics/pokemon/ekakimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Ekakimon[] = INCBIN_U32("graphics/pokemon/ekakimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Ekakimon[] = INCBIN_U32("graphics/pokemon/ekakimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Ekakimon[] = INCBIN_U8("graphics/pokemon/ekakimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Moltres[] = INCBIN_U8("graphics/pokemon/moltres/footprint.1bpp");
+    const u8 gMonFootprint_Ekakimon[] = INCBIN_U8("graphics/pokemon/ekakimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GALARIAN_FORMS
-    const u32 gMonFrontPic_MoltresGalarian[] = INCBIN_U32("graphics/pokemon/moltres/galarian/front.4bpp.lz");
-    const u32 gMonPalette_MoltresGalarian[] = INCBIN_U32("graphics/pokemon/moltres/galarian/normal.gbapal.lz");
-    const u32 gMonBackPic_MoltresGalarian[] = INCBIN_U32("graphics/pokemon/moltres/galarian/back.4bpp.lz");
-    const u32 gMonShinyPalette_MoltresGalarian[] = INCBIN_U32("graphics/pokemon/moltres/galarian/shiny.gbapal.lz");
-    const u8 gMonIcon_MoltresGalarian[] = INCBIN_U8("graphics/pokemon/moltres/galarian/icon.4bpp");
+    const u32 gMonFrontPic_EkakimonGalarian[] = INCBIN_U32("graphics/pokemon/ekakimon/galarian/front.4bpp.lz");
+    const u32 gMonPalette_EkakimonGalarian[] = INCBIN_U32("graphics/pokemon/ekakimon/galarian/normal.gbapal.lz");
+    const u32 gMonBackPic_EkakimonGalarian[] = INCBIN_U32("graphics/pokemon/ekakimon/galarian/back.4bpp.lz");
+    const u32 gMonShinyPalette_EkakimonGalarian[] = INCBIN_U32("graphics/pokemon/ekakimon/galarian/shiny.gbapal.lz");
+    const u8 gMonIcon_EkakimonGalarian[] = INCBIN_U8("graphics/pokemon/ekakimon/galarian/icon.4bpp");
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_MOLTRES
+#endif //P_FAMILY_EKAKIMON
 
 #if P_FAMILY_DRATINI
     const u32 gMonFrontPic_Dratini[] = INCBIN_U32("graphics/pokemon/dratini/anim_front.4bpp.lz");

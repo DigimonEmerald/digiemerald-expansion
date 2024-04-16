@@ -1423,11 +1423,11 @@ Cry_Ebiburgmon::
 	.incbin "sound/direct_sound_samples/cries/ebiburgmon.bin"
 .endif @ P_FAMILY_EBIBURGMON
 
-.if P_FAMILY_MOLTRES == TRUE
+.if P_FAMILY_EKAKIMON == TRUE
 	.align 2
-Cry_Moltres::
-	.incbin "sound/direct_sound_samples/cries/moltres.bin"
-.endif @ P_FAMILY_MOLTRES
+Cry_Ekakimon::
+	.incbin "sound/direct_sound_samples/cries/ekakimon.bin"
+.endif @ P_FAMILY_EKAKIMON
 
 .if P_FAMILY_DRATINI == TRUE
 	.align 2
