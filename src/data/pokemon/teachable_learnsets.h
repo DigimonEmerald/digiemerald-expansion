@@ -6349,7 +6349,7 @@ static const u16 sBlkagumon_xTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSeakingTeachableLearnset[] = {
+static const u16 sBlkgabumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,

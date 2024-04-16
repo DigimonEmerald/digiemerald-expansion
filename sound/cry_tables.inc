@@ -319,7 +319,7 @@ gCryTable::
 .endif @ P_FAMILY_BIYOMON
 .if P_FAMILY_BLKAGUMON_X == TRUE
 	cry Cry_Blkagumon_x
-	cry Cry_Seaking
+	cry Cry_Blkgabumon
 .endif @ P_FAMILY_BLKAGUMON_X
 .if P_FAMILY_STARYU == TRUE
 	cry Cry_Staryu
@@ -2745,7 +2745,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_BIYOMON
 .if P_FAMILY_BLKAGUMON_X == TRUE
 	cry_reverse Cry_Blkagumon_x
-	cry_reverse Cry_Seaking
+	cry_reverse Cry_Blkgabumon
 .endif @ P_FAMILY_BLKAGUMON_X
 .if P_FAMILY_STARYU == TRUE
 	cry_reverse Cry_Staryu

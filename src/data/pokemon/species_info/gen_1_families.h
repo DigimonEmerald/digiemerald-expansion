@@ -11801,10 +11801,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Blkagumon_x)
         .levelUpLearnset = sBlkagumon_xLevelUpLearnset,
         .teachableLearnset = sBlkagumon_xTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_SEAKING}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_BLKGABUMON}),
     },
 
-    [SPECIES_SEAKING] =
+    [SPECIES_BLKGABUMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 92,
@@ -11824,9 +11824,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_WATER_VEIL, ABILITY_LIGHTNING_ROD },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Seaking"),
-        .cryId = CRY_SEAKING,
-        .natDexNum = NATIONAL_DEX_SEAKING,
+        .speciesName = _("Blkgabumon"),
+        .cryId = CRY_BLKGABUMON,
+        .natDexNum = NATIONAL_DEX_BLKGABUMON,
         .categoryName = _("Goldfish"),
         .height = 13,
         .weight = 390,
@@ -11839,26 +11839,26 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Seaking,
-        .frontPicFemale = gMonFrontPic_SeakingF,
+        .frontPic = gMonFrontPic_Blkgabumon,
+        .frontPicFemale = gMonFrontPic_BlkgabumonF,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_Seaking,
+        .frontAnimFrames = sAnims_Blkgabumon,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
-        .backPic = gMonBackPic_Seaking,
-        .backPicFemale = gMonBackPic_SeakingF,
+        .backPic = gMonBackPic_Blkgabumon,
+        .backPicFemale = gMonBackPic_BlkgabumonF,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Seaking,
-        .shinyPalette = gMonShinyPalette_Seaking,
-        .iconSprite = gMonIcon_Seaking,
+        .palette = gMonPalette_Blkgabumon,
+        .shinyPalette = gMonShinyPalette_Blkgabumon,
+        .iconSprite = gMonIcon_Blkgabumon,
         .iconPalIndex = 0,
-        FOOTPRINT(Seaking)
-        .levelUpLearnset = sSeakingLevelUpLearnset,
-        .teachableLearnset = sSeakingTeachableLearnset,
+        FOOTPRINT(Blkgabumon)
+        .levelUpLearnset = sBlkgabumonLevelUpLearnset,
+        .teachableLearnset = sBlkgabumonTeachableLearnset,
     },
 #endif //P_FAMILY_BLKAGUMON_X
 

@@ -1157,8 +1157,8 @@ Cry_Blkagumon_x::
 	.incbin "sound/direct_sound_samples/cries/blkagumon_x.bin"
 
 	.align 2
-Cry_Seaking::
-	.incbin "sound/direct_sound_samples/cries/seaking.bin"
+Cry_Blkgabumon::
+	.incbin "sound/direct_sound_samples/cries/blkgabumon.bin"
 .endif @ P_FAMILY_BLKAGUMON_X
 
 .if P_FAMILY_STARYU == TRUE
