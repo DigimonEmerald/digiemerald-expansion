@@ -2124,8 +2124,8 @@ static const union AnimCmd sAnim_Dokunemon_Z_1[] =
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_DOKUNEMON
 
-#if P_FAMILY_OMANYTE
-static const union AnimCmd sAnim_Omanyte_1[] =
+#if P_FAMILY_DONDOKOMON
+static const union AnimCmd sAnim_Dondokomon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -2146,7 +2146,7 @@ static const union AnimCmd sAnim_Omastar_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_OMANYTE
+#endif //P_FAMILY_DONDOKOMON
 
 #if P_FAMILY_KABUTO
 static const union AnimCmd sAnim_Kabuto_1[] =
@@ -10686,10 +10686,10 @@ SINGLE_ANIMATION(Dokunemon_Z);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_DOKUNEMON
-#if P_FAMILY_OMANYTE
-SINGLE_ANIMATION(Omanyte);
+#if P_FAMILY_DONDOKOMON
+SINGLE_ANIMATION(Dondokomon);
 SINGLE_ANIMATION(Omastar);
-#endif //P_FAMILY_OMANYTE
+#endif //P_FAMILY_DONDOKOMON
 #if P_FAMILY_KABUTO
 SINGLE_ANIMATION(Kabuto);
 SINGLE_ANIMATION(Kabutops);

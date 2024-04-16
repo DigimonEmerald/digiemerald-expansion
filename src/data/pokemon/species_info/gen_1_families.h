@@ -14353,8 +14353,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_DOKUNEMON
 
-#if P_FAMILY_OMANYTE
-    [SPECIES_OMANYTE] =
+#if P_FAMILY_DONDOKOMON
+    [SPECIES_DONDOKOMON] =
     {
         .baseHP        = 35,
         .baseAttack    = 40,
@@ -14379,9 +14379,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_SHELL_ARMOR, ABILITY_WEAK_ARMOR },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Omanyte"),
-        .cryId = CRY_OMANYTE,
-        .natDexNum = NATIONAL_DEX_OMANYTE,
+        .speciesName = _("Dondokomon"),
+        .cryId = CRY_DONDOKOMON,
+        .natDexNum = NATIONAL_DEX_DONDOKOMON,
         .categoryName = _("Spiral"),
         .height = 4,
         .weight = 75,
@@ -14394,22 +14394,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 22,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Omanyte,
+        .frontPic = gMonFrontPic_Dondokomon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Omanyte,
+        .frontAnimFrames = sAnims_Dondokomon,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE_SMALL,
-        .backPic = gMonBackPic_Omanyte,
+        .backPic = gMonBackPic_Dondokomon,
         .backPicSize = MON_COORDS_SIZE(48, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Omanyte,
-        .shinyPalette = gMonShinyPalette_Omanyte,
-        .iconSprite = gMonIcon_Omanyte,
+        .palette = gMonPalette_Dondokomon,
+        .shinyPalette = gMonShinyPalette_Dondokomon,
+        .iconSprite = gMonIcon_Dondokomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Omanyte)
-        .levelUpLearnset = sOmanyteLevelUpLearnset,
-        .teachableLearnset = sOmanyteTeachableLearnset,
+        FOOTPRINT(Dondokomon)
+        .levelUpLearnset = sDondokomonLevelUpLearnset,
+        .teachableLearnset = sDondokomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_OMASTAR}),
     },
 
@@ -14464,7 +14464,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sOmastarLevelUpLearnset,
         .teachableLearnset = sOmastarTeachableLearnset,
     },
-#endif //P_FAMILY_OMANYTE
+#endif //P_FAMILY_DONDOKOMON
 
 #if P_FAMILY_KABUTO
     [SPECIES_KABUTO] =

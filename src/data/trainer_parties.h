@@ -9718,7 +9718,7 @@ static const struct TrainerMon sParty_Roxanne3[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 37,
-    .species = SPECIES_OMANYTE,
+    .species = SPECIES_DONDOKOMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_PROTECT, MOVE_ICE_BEAM, MOVE_ROCK_SLIDE, MOVE_SURF}
     },

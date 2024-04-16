@@ -418,10 +418,10 @@ gCryTable::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_DOKUNEMON
-.if P_FAMILY_OMANYTE == TRUE
-	cry Cry_Omanyte
+.if P_FAMILY_DONDOKOMON == TRUE
+	cry Cry_Dondokomon
 	cry Cry_Omastar
-.endif @ P_FAMILY_OMANYTE
+.endif @ P_FAMILY_DONDOKOMON
 .if P_FAMILY_KABUTO == TRUE
 	cry Cry_Kabuto
 	cry Cry_Kabutops
@@ -2844,10 +2844,10 @@ gCryTable_Reverse::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_DOKUNEMON
-.if P_FAMILY_OMANYTE == TRUE
-	cry_reverse Cry_Omanyte
+.if P_FAMILY_DONDOKOMON == TRUE
+	cry_reverse Cry_Dondokomon
 	cry_reverse Cry_Omastar
-.endif @ P_FAMILY_OMANYTE
+.endif @ P_FAMILY_DONDOKOMON
 .if P_FAMILY_KABUTO == TRUE
 	cry_reverse Cry_Kabuto
 	cry_reverse Cry_Kabutops

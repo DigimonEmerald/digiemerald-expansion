@@ -2389,14 +2389,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_DOKUNEMON
 
-#if P_FAMILY_OMANYTE
-    const u32 gMonFrontPic_Omanyte[] = INCBIN_U32("graphics/pokemon/omanyte/anim_front.4bpp.lz");
-    const u32 gMonPalette_Omanyte[] = INCBIN_U32("graphics/pokemon/omanyte/normal.gbapal.lz");
-    const u32 gMonBackPic_Omanyte[] = INCBIN_U32("graphics/pokemon/omanyte/back.4bpp.lz");
-    const u32 gMonShinyPalette_Omanyte[] = INCBIN_U32("graphics/pokemon/omanyte/shiny.gbapal.lz");
-    const u8 gMonIcon_Omanyte[] = INCBIN_U8("graphics/pokemon/omanyte/icon.4bpp");
+#if P_FAMILY_DONDOKOMON
+    const u32 gMonFrontPic_Dondokomon[] = INCBIN_U32("graphics/pokemon/dondokomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Dondokomon[] = INCBIN_U32("graphics/pokemon/dondokomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Dondokomon[] = INCBIN_U32("graphics/pokemon/dondokomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Dondokomon[] = INCBIN_U32("graphics/pokemon/dondokomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Dondokomon[] = INCBIN_U8("graphics/pokemon/dondokomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Omanyte[] = INCBIN_U8("graphics/pokemon/omanyte/footprint.1bpp");
+    const u8 gMonFootprint_Dondokomon[] = INCBIN_U8("graphics/pokemon/dondokomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Omastar[] = INCBIN_U32("graphics/pokemon/omastar/anim_front.4bpp.lz");
@@ -2407,7 +2407,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Omastar[] = INCBIN_U8("graphics/pokemon/omastar/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_OMANYTE
+#endif //P_FAMILY_DONDOKOMON
 
 #if P_FAMILY_KABUTO
     const u32 gMonFrontPic_Kabuto[] = INCBIN_U32("graphics/pokemon/kabuto/anim_front.4bpp.lz");

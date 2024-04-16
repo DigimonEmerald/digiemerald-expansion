@@ -1367,15 +1367,15 @@ Cry_DokunemonZ::
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_DOKUNEMON
 
-.if P_FAMILY_OMANYTE == TRUE
+.if P_FAMILY_DONDOKOMON == TRUE
 	.align 2
-Cry_Omanyte::
-	.incbin "sound/direct_sound_samples/cries/omanyte.bin"
+Cry_Dondokomon::
+	.incbin "sound/direct_sound_samples/cries/dondokomon.bin"
 
 	.align 2
 Cry_Omastar::
 	.incbin "sound/direct_sound_samples/cries/omastar.bin"
-.endif @ P_FAMILY_OMANYTE
+.endif @ P_FAMILY_DONDOKOMON
 
 .if P_FAMILY_KABUTO == TRUE
 	.align 2

@@ -7743,8 +7743,8 @@ static const u16 sDokunemonZTeachableLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_DOKUNEMON
 
-#if P_FAMILY_OMANYTE
-static const u16 sOmanyteTeachableLearnset[] = {
+#if P_FAMILY_DONDOKOMON
+static const u16 sDondokomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -7809,7 +7809,7 @@ static const u16 sOmastarTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_OMANYTE
+#endif //P_FAMILY_DONDOKOMON
 
 #if P_FAMILY_KABUTO
 static const u16 sKabutoTeachableLearnset[] = {

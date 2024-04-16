@@ -3247,8 +3247,8 @@ static const struct LevelUpMove sDokunemonZLevelUpLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_DOKUNEMON
 
-#if P_FAMILY_OMANYTE
-static const struct LevelUpMove sOmanyteLevelUpLearnset[] = {
+#if P_FAMILY_DONDOKOMON
+static const struct LevelUpMove sDondokomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CONSTRICT),
     LEVEL_UP_MOVE( 1, MOVE_WITHDRAW),
     LEVEL_UP_MOVE(13, MOVE_BITE),
@@ -3273,7 +3273,7 @@ static const struct LevelUpMove sOmastarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(65, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_OMANYTE
+#endif //P_FAMILY_DONDOKOMON
 
 #if P_FAMILY_KABUTO
 static const struct LevelUpMove sKabutoLevelUpLearnset[] = {

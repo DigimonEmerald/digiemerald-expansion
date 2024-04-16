@@ -1211,8 +1211,8 @@ const u16 gEggMoves[] = {
         MOVE_CAPTIVATE),
 #endif //P_FAMILY_CRABMON_X
 
-#if P_FAMILY_OMANYTE
-    egg_moves(OMANYTE,
+#if P_FAMILY_DONDOKOMON
+    egg_moves(DONDOKOMON,
         MOVE_BUBBLE_BEAM,
         MOVE_AURORA_BEAM,
         MOVE_SLAM,
@@ -1227,7 +1227,7 @@ const u16 gEggMoves[] = {
         MOVE_WATER_PULSE,
         MOVE_WHIRLPOOL,
         MOVE_REFLECT_TYPE),
-#endif //P_FAMILY_OMANYTE
+#endif //P_FAMILY_DONDOKOMON
 
 #if P_FAMILY_KABUTO
     egg_moves(KABUTO,
