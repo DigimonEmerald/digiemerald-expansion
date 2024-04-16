@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Zero to Hero can't be surpressed by Neutralizing Gas")
     GIVEN {
         PLAYER(SPECIES_PALAFIN_ZERO) { Ability(ABILITY_ZERO_TO_HERO); }
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_KOFFING) { Ability(ABILITY_NEUTRALIZING_GAS); }
+        OPPONENT(SPECIES_ARGOMON_ROOKIE) { Ability(ABILITY_NEUTRALIZING_GAS); }
     } WHEN {
         TURN { SWITCH(player, 1); }
         TURN { SWITCH(player, 0); }

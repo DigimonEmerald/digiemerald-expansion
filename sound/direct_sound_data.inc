@@ -1067,15 +1067,15 @@ Cry_Lickilicky::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_ARCADIAMON_ROOKIE
 
-.if P_FAMILY_KOFFING == TRUE
+.if P_FAMILY_ARGOMON_ROOKIE == TRUE
 	.align 2
-Cry_Koffing::
-	.incbin "sound/direct_sound_samples/cries/koffing.bin"
+Cry_Argomon_rookie::
+	.incbin "sound/direct_sound_samples/cries/argomon_rookie.bin"
 
 	.align 2
 Cry_Weezing::
 	.incbin "sound/direct_sound_samples/cries/weezing.bin"
-.endif @ P_FAMILY_KOFFING
+.endif @ P_FAMILY_ARGOMON_ROOKIE
 
 .if P_FAMILY_RHYHORN == TRUE
 	.align 2

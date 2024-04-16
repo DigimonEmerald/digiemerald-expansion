@@ -3128,8 +3128,8 @@ static const struct LevelUpMove sLickilickyLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_ARCADIAMON_ROOKIE
 
-#if P_FAMILY_KOFFING
-static const struct LevelUpMove sKoffingLevelUpLearnset[] = {
+#if P_FAMILY_ARGOMON_ROOKIE
+static const struct LevelUpMove sArgomon_rookieLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_GAS),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 4, MOVE_SMOG),
@@ -3200,7 +3200,7 @@ static const struct LevelUpMove sWeezingGalarianLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_KOFFING
+#endif //P_FAMILY_ARGOMON_ROOKIE
 
 #if P_FAMILY_RHYHORN
 static const struct LevelUpMove sRhyhornLevelUpLearnset[] = {

@@ -10816,8 +10816,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_ARCADIAMON_ROOKIE
 
-#if P_FAMILY_KOFFING
-    [SPECIES_KOFFING] =
+#if P_FAMILY_ARGOMON_ROOKIE
+    [SPECIES_ARGOMON_ROOKIE] =
     {
         .baseHP        = 40,
         .baseAttack    = 65,
@@ -10841,14 +10841,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
     #endif
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Koffing"),
-        .cryId = CRY_KOFFING,
-        .natDexNum = NATIONAL_DEX_KOFFING,
+        .speciesName = _("Argomon_rookie"),
+        .cryId = CRY_ARGOMON_ROOKIE,
+        .natDexNum = NATIONAL_DEX_ARGOMON_ROOKIE,
         .categoryName = _("Poison Gas"),
         .height = 6,
         .weight = 10,
         .description = COMPOUND_STRING(
-            "Getting up close to a Koffing will give\n"
+            "Getting up close to a Argomon_rookie will give\n"
             "you a chance to observe, through its thin\n"
             "skin, the toxic gases swirling inside. It\n"
             "blows up at the slightest stimulation."),
@@ -10856,23 +10856,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = -1,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Koffing,
+        .frontPic = gMonFrontPic_Argomon_rookie,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Koffing,
+        .frontAnimFrames = sAnims_Argomon_rookie,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE_SMALL,
         .enemyMonElevation = 14,
-        .backPic = gMonBackPic_Koffing,
+        .backPic = gMonBackPic_Argomon_rookie,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_GROW,
-        .palette = gMonPalette_Koffing,
-        .shinyPalette = gMonShinyPalette_Koffing,
-        .iconSprite = gMonIcon_Koffing,
+        .palette = gMonPalette_Argomon_rookie,
+        .shinyPalette = gMonShinyPalette_Argomon_rookie,
+        .iconSprite = gMonIcon_Argomon_rookie,
         .iconPalIndex = 2,
-        FOOTPRINT(Koffing)
-        .levelUpLearnset = sKoffingLevelUpLearnset,
-        .teachableLearnset = sKoffingTeachableLearnset,
+        FOOTPRINT(Argomon_rookie)
+        .levelUpLearnset = sArgomon_rookieLevelUpLearnset,
+        .teachableLearnset = sArgomon_rookieTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_WEEZING},
                                 {EVO_NONE, 0, SPECIES_WEEZING_GALARIAN}),
     },
@@ -10995,7 +10995,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sWeezingFormSpeciesIdTable,
     },
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_KOFFING
+#endif //P_FAMILY_ARGOMON_ROOKIE
 
 #if P_FAMILY_RHYHORN
     [SPECIES_RHYHORN] =

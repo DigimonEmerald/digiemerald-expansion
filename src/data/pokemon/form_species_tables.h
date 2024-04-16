@@ -425,7 +425,7 @@ static const u16 sAgumon_expertFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_AGUMON_06
 
-#if P_FAMILY_KOFFING
+#if P_FAMILY_ARGOMON_ROOKIE
 static const u16 sWeezingFormSpeciesIdTable[] = {
     SPECIES_WEEZING,
 #if P_GALARIAN_FORMS
@@ -433,7 +433,7 @@ static const u16 sWeezingFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_KOFFING
+#endif //P_FAMILY_ARGOMON_ROOKIE
 
 #if P_FAMILY_KANGASKHAN
 static const u16 sKangaskhanFormSpeciesIdTable[] = {

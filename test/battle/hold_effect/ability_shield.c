@@ -15,7 +15,7 @@ SINGLE_BATTLE_TEST("Ability Shield prevents Neutralizing Gas")
 
     GIVEN {
         PLAYER(SPECIES_TORKOAL) { Ability(ABILITY_DROUGHT); Item(item); }
-        OPPONENT(SPECIES_KOFFING) { Ability(ABILITY_NEUTRALIZING_GAS); }
+        OPPONENT(SPECIES_ARGOMON_ROOKIE) { Ability(ABILITY_NEUTRALIZING_GAS); }
     } WHEN {
         TURN { }
     } SCENE {

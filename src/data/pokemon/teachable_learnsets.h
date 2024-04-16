@@ -5691,8 +5691,8 @@ static const u16 sLickilickyTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_ARCADIAMON_ROOKIE
 
-#if P_FAMILY_KOFFING
-static const u16 sKoffingTeachableLearnset[] = {
+#if P_FAMILY_ARGOMON_ROOKIE
+static const u16 sArgomon_rookieTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
@@ -5781,7 +5781,7 @@ static const u16 sWeezingGalarianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_KOFFING
+#endif //P_FAMILY_ARGOMON_ROOKIE
 
 #if P_FAMILY_RHYHORN
 static const u16 sRhyhornTeachableLearnset[] = {

@@ -1744,14 +1744,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_ARCADIAMON_ROOKIE
 
-#if P_FAMILY_KOFFING
-    const u32 gMonFrontPic_Koffing[] = INCBIN_U32("graphics/pokemon/koffing/anim_front.4bpp.lz");
-    const u32 gMonPalette_Koffing[] = INCBIN_U32("graphics/pokemon/koffing/normal.gbapal.lz");
-    const u32 gMonBackPic_Koffing[] = INCBIN_U32("graphics/pokemon/koffing/back.4bpp.lz");
-    const u32 gMonShinyPalette_Koffing[] = INCBIN_U32("graphics/pokemon/koffing/shiny.gbapal.lz");
-    const u8 gMonIcon_Koffing[] = INCBIN_U8("graphics/pokemon/koffing/icon.4bpp");
+#if P_FAMILY_ARGOMON_ROOKIE
+    const u32 gMonFrontPic_Argomon_rookie[] = INCBIN_U32("graphics/pokemon/argomon_rookie/anim_front.4bpp.lz");
+    const u32 gMonPalette_Argomon_rookie[] = INCBIN_U32("graphics/pokemon/argomon_rookie/normal.gbapal.lz");
+    const u32 gMonBackPic_Argomon_rookie[] = INCBIN_U32("graphics/pokemon/argomon_rookie/back.4bpp.lz");
+    const u32 gMonShinyPalette_Argomon_rookie[] = INCBIN_U32("graphics/pokemon/argomon_rookie/shiny.gbapal.lz");
+    const u8 gMonIcon_Argomon_rookie[] = INCBIN_U8("graphics/pokemon/argomon_rookie/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Koffing[] = INCBIN_U8("graphics/pokemon/koffing/footprint.1bpp");
+    const u8 gMonFootprint_Argomon_rookie[] = INCBIN_U8("graphics/pokemon/argomon_rookie/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Weezing[] = INCBIN_U32("graphics/pokemon/weezing/anim_front.4bpp.lz");
@@ -1770,7 +1770,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_WeezingGalarian[] = INCBIN_U32("graphics/pokemon/weezing/galarian/shiny.gbapal.lz");
     const u8 gMonIcon_WeezingGalarian[] = INCBIN_U8("graphics/pokemon/weezing/galarian/icon.4bpp");
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_KOFFING
+#endif //P_FAMILY_ARGOMON_ROOKIE
 
 #if P_FAMILY_RHYHORN
     const u32 gMonFrontPic_Rhyhorn[] = INCBIN_U32("graphics/pokemon/rhyhorn/anim_front.4bpp.lz");

@@ -1575,8 +1575,8 @@ static const union AnimCmd sAnim_Lickilicky_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_ARCADIAMON_ROOKIE
 
-#if P_FAMILY_KOFFING
-static const union AnimCmd sAnim_Koffing_1[] =
+#if P_FAMILY_ARGOMON_ROOKIE
+static const union AnimCmd sAnim_Argomon_rookie_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -1599,7 +1599,7 @@ static const union AnimCmd sAnim_Weezing_1[] =
 #if P_GALARIAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(WeezingGalarian);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_KOFFING
+#endif //P_FAMILY_ARGOMON_ROOKIE
 
 #if P_FAMILY_RHYHORN
 static const union AnimCmd sAnim_Rhyhorn_1[] =
@@ -10533,13 +10533,13 @@ SINGLE_ANIMATION(Arcadiamon_rookie);
 SINGLE_ANIMATION(Lickilicky);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_ARCADIAMON_ROOKIE
-#if P_FAMILY_KOFFING
-SINGLE_ANIMATION(Koffing);
+#if P_FAMILY_ARGOMON_ROOKIE
+SINGLE_ANIMATION(Argomon_rookie);
 SINGLE_ANIMATION(Weezing);
 #if P_GALARIAN_FORMS
 SINGLE_ANIMATION(WeezingGalarian);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_KOFFING
+#endif //P_FAMILY_ARGOMON_ROOKIE
 #if P_FAMILY_RHYHORN
 SINGLE_ANIMATION(Rhyhorn);
 SINGLE_ANIMATION(Rhydon);

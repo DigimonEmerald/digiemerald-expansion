@@ -906,8 +906,8 @@ const u16 gEggMoves[] = {
         MOVE_THRASH),
 #endif //P_FAMILY_ARCADIAMON_ROOKIE
 
-#if P_FAMILY_KOFFING
-    egg_moves(KOFFING,
+#if P_FAMILY_ARGOMON_ROOKIE
+    egg_moves(ARGOMON_ROOKIE,
         MOVE_SCREECH,
         MOVE_PSYWAVE,
         MOVE_PSYBEAM,
@@ -921,7 +921,7 @@ const u16 gEggMoves[] = {
         MOVE_SPIT_UP,
         MOVE_TOXIC_SPIKES,
         MOVE_VENOM_DRENCH),
-#endif //P_FAMILY_KOFFING
+#endif //P_FAMILY_ARGOMON_ROOKIE
 
 #if P_FAMILY_RHYHORN
     egg_moves(RHYHORN,

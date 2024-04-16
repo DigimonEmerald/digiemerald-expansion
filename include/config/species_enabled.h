@@ -103,7 +103,7 @@
 #define P_FAMILY_AGUMON_06                  P_GEN_1_POKEMON
 #define P_FAMILY_HITMONS                 P_GEN_1_POKEMON
 #define P_FAMILY_ARCADIAMON_ROOKIE               P_GEN_1_POKEMON
-#define P_FAMILY_KOFFING                 P_GEN_1_POKEMON
+#define P_FAMILY_ARGOMON_ROOKIE                 P_GEN_1_POKEMON
 #define P_FAMILY_RHYHORN                 P_GEN_1_POKEMON
 #define P_FAMILY_CHANSEY                 P_GEN_1_POKEMON
 #define P_FAMILY_TANGELA                 P_GEN_1_POKEMON
