@@ -6949,7 +6949,7 @@ static const u16 sElectivireTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_CANDLEMON
 
-#if P_FAMILY_MAGMAR
+#if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
 static const u16 sMagbyTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -6986,7 +6986,7 @@ static const u16 sMagbyTeachableLearnset[] = {
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const u16 sMagmarTeachableLearnset[] = {
+static const u16 sChikurimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DOUBLE_TEAM,
@@ -7069,7 +7069,7 @@ static const u16 sMagmortarTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MAGMAR
+#endif //P_FAMILY_CHIKURIMON
 
 #if P_FAMILY_PINSIR
 static const u16 sPinsirTeachableLearnset[] = {

@@ -1899,7 +1899,7 @@ static const union AnimCmd sAnim_Electivire_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_CANDLEMON
 
-#if P_FAMILY_MAGMAR
+#if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
 static const union AnimCmd sAnim_Magby_1[] =
 {
@@ -1911,7 +1911,7 @@ static const union AnimCmd sAnim_Magby_1[] =
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const union AnimCmd sAnim_Magmar_1[] =
+static const union AnimCmd sAnim_Chikurimon_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 10),
@@ -1926,7 +1926,7 @@ static const union AnimCmd sAnim_Magmortar_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MAGMAR
+#endif //P_FAMILY_CHIKURIMON
 
 #if P_FAMILY_PINSIR
 static const union AnimCmd sAnim_Pinsir_1[] =
@@ -10620,15 +10620,15 @@ SINGLE_ANIMATION(Candlemon);
 SINGLE_ANIMATION(Electivire);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_CANDLEMON
-#if P_FAMILY_MAGMAR
+#if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Magby);
 #endif //P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Magmar);
+SINGLE_ANIMATION(Chikurimon);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Magmortar);
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MAGMAR
+#endif //P_FAMILY_CHIKURIMON
 #if P_FAMILY_PINSIR
 SINGLE_ANIMATION(Pinsir);
 #if P_MEGA_EVOLUTIONS

@@ -49,7 +49,7 @@ SINGLE_BATTLE_TEST("Weather Ball doubles its power and turns to a Rock-type move
     PARAMETRIZE{ move = MOVE_SANDSTORM; }
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_MAGMAR) { Item(ITEM_SAFETY_GOGGLES); };
+        OPPONENT(SPECIES_CHIKURIMON) { Item(ITEM_SAFETY_GOGGLES); };
     } WHEN {
         TURN { MOVE(player, move); }
         TURN { MOVE(player, MOVE_WEATHER_BALL); }

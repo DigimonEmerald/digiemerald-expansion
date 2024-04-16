@@ -3847,7 +3847,7 @@ static const struct LevelUpMove sElectivireLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_CANDLEMON
 
-#if P_FAMILY_MAGMAR
+#if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
 static const struct LevelUpMove sMagbyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SMOG),
@@ -3868,7 +3868,7 @@ static const struct LevelUpMove sMagbyLevelUpLearnset[] = {
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const struct LevelUpMove sMagmarLevelUpLearnset[] = {
+static const struct LevelUpMove sChikurimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SMOG),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
@@ -3910,7 +3910,7 @@ static const struct LevelUpMove sMagmortarLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MAGMAR
+#endif //P_FAMILY_CHIKURIMON
 
 #if P_FAMILY_PINSIR
 static const struct LevelUpMove sPinsirLevelUpLearnset[] = {

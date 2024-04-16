@@ -12713,7 +12713,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_CANDLEMON
 
-#if P_FAMILY_MAGMAR
+#if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
     [SPECIES_MAGBY] =
     {
@@ -12727,7 +12727,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 73 : 117,
         .evYield_Speed = 1,
-        .itemRare = ITEM_MAGMARIZER,
+        .itemRare = ITEM_CHIKURIMONIZER,
         .genderRatio = PERCENT_FEMALE(25),
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
@@ -12767,11 +12767,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Magby)
         .levelUpLearnset = sMagbyLevelUpLearnset,
         .teachableLearnset = sMagbyTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_MAGMAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_CHIKURIMON}),
     },
 #endif //P_GEN_2_CROSS_EVOS
 
-    [SPECIES_MAGMAR] =
+    [SPECIES_CHIKURIMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 95,
@@ -12783,7 +12783,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 173 : 167,
         .evYield_SpAttack = 2,
-        .itemRare = ITEM_MAGMARIZER,
+        .itemRare = ITEM_CHIKURIMONIZER,
         .genderRatio = PERCENT_FEMALE(25),
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
@@ -12791,9 +12791,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_FLAME_BODY, ABILITY_NONE, ABILITY_VITAL_SPIRIT },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Magmar"),
-        .cryId = CRY_MAGMAR,
-        .natDexNum = NATIONAL_DEX_MAGMAR,
+        .speciesName = _("Chikurimon"),
+        .cryId = CRY_CHIKURIMON,
+        .natDexNum = NATIONAL_DEX_CHIKURIMON,
         .categoryName = _("Spitfire"),
         .height = 13,
         .weight = 445,
@@ -12806,24 +12806,24 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 5,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Magmar,
+        .frontPic = gMonFrontPic_Chikurimon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Magmar,
+        .frontAnimFrames = sAnims_Chikurimon,
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Magmar,
+        .backPic = gMonBackPic_Chikurimon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_Magmar,
-        .shinyPalette = gMonShinyPalette_Magmar,
-        .iconSprite = gMonIcon_Magmar,
+        .palette = gMonPalette_Chikurimon,
+        .shinyPalette = gMonShinyPalette_Chikurimon,
+        .iconSprite = gMonIcon_Chikurimon,
         .iconPalIndex = 0,
-        FOOTPRINT(Magmar)
-        .levelUpLearnset = sMagmarLevelUpLearnset,
-        .teachableLearnset = sMagmarTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_MAGMARIZER, SPECIES_MAGMORTAR},
-                                {EVO_ITEM, ITEM_MAGMARIZER, SPECIES_MAGMORTAR}),
+        FOOTPRINT(Chikurimon)
+        .levelUpLearnset = sChikurimonLevelUpLearnset,
+        .teachableLearnset = sChikurimonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_CHIKURIMONIZER, SPECIES_MAGMORTAR},
+                                {EVO_ITEM, ITEM_CHIKURIMONIZER, SPECIES_MAGMORTAR}),
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -12845,7 +12845,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .expYield = 199,
     #endif
         .evYield_SpAttack = 3,
-        .itemRare = ITEM_MAGMARIZER,
+        .itemRare = ITEM_CHIKURIMONIZER,
         .genderRatio = PERCENT_FEMALE(25),
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
@@ -12887,7 +12887,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sMagmortarTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MAGMAR
+#endif //P_FAMILY_CHIKURIMON
 
 #if P_FAMILY_PINSIR
     [SPECIES_PINSIR] =

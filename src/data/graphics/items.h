@@ -600,8 +600,8 @@ const u32 gItemIconPalette_Protector[] = INCBIN_U32("graphics/items/icon_palette
 const u32 gItemIcon_Electirizer[] = INCBIN_U32("graphics/items/icons/electirizer.4bpp.lz");
 const u32 gItemIconPalette_Electirizer[] = INCBIN_U32("graphics/items/icon_palettes/electirizer.gbapal.lz");
 
-const u32 gItemIcon_Magmarizer[] = INCBIN_U32("graphics/items/icons/magmarizer.4bpp.lz");
-const u32 gItemIconPalette_Magmarizer[] = INCBIN_U32("graphics/items/icon_palettes/magmarizer.gbapal.lz");
+const u32 gItemIcon_Chikurimonizer[] = INCBIN_U32("graphics/items/icons/chikurimonizer.4bpp.lz");
+const u32 gItemIconPalette_Chikurimonizer[] = INCBIN_U32("graphics/items/icon_palettes/chikurimonizer.gbapal.lz");
 
 const u32 gItemIcon_DubiousDisc[] = INCBIN_U32("graphics/items/icons/dubious_disc.4bpp.lz");
 const u32 gItemIconPalette_DubiousDisc[] = INCBIN_U32("graphics/items/icon_palettes/dubious_disc.gbapal.lz");

@@ -2104,7 +2104,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_CANDLEMON
 
-#if P_FAMILY_MAGMAR
+#if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
     const u32 gMonFrontPic_Magby[] = INCBIN_U32("graphics/pokemon/magby/anim_front.4bpp.lz");
     const u32 gMonPalette_Magby[] = INCBIN_U32("graphics/pokemon/magby/normal.gbapal.lz");
@@ -2116,13 +2116,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
 
-    const u32 gMonFrontPic_Magmar[] = INCBIN_U32("graphics/pokemon/magmar/anim_front.4bpp.lz");
-    const u32 gMonPalette_Magmar[] = INCBIN_U32("graphics/pokemon/magmar/normal.gbapal.lz");
-    const u32 gMonBackPic_Magmar[] = INCBIN_U32("graphics/pokemon/magmar/back.4bpp.lz");
-    const u32 gMonShinyPalette_Magmar[] = INCBIN_U32("graphics/pokemon/magmar/shiny.gbapal.lz");
-    const u8 gMonIcon_Magmar[] = INCBIN_U8("graphics/pokemon/magmar/icon.4bpp");
+    const u32 gMonFrontPic_Chikurimon[] = INCBIN_U32("graphics/pokemon/chikurimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Chikurimon[] = INCBIN_U32("graphics/pokemon/chikurimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Chikurimon[] = INCBIN_U32("graphics/pokemon/chikurimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Chikurimon[] = INCBIN_U32("graphics/pokemon/chikurimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Chikurimon[] = INCBIN_U8("graphics/pokemon/chikurimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Magmar[] = INCBIN_U8("graphics/pokemon/magmar/footprint.1bpp");
+    const u8 gMonFootprint_Chikurimon[] = INCBIN_U8("graphics/pokemon/chikurimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_4_CROSS_EVOS
@@ -2135,7 +2135,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Magmortar[] = INCBIN_U8("graphics/pokemon/magmortar/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MAGMAR
+#endif //P_FAMILY_CHIKURIMON
 
 #if P_FAMILY_PINSIR
     const u32 gMonFrontPic_Pinsir[] = INCBIN_U32("graphics/pokemon/pinsir/anim_front.4bpp.lz");

@@ -1243,7 +1243,7 @@ Cry_Electivire::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_CANDLEMON
 
-.if P_FAMILY_MAGMAR == TRUE
+.if P_FAMILY_CHIKURIMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
 Cry_Magby::
@@ -1251,15 +1251,15 @@ Cry_Magby::
 .endif @ P_GEN_2_CROSS_EVOS
 
 	.align 2
-Cry_Magmar::
-	.incbin "sound/direct_sound_samples/cries/magmar.bin"
+Cry_Chikurimon::
+	.incbin "sound/direct_sound_samples/cries/chikurimon.bin"
 
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
 Cry_Magmortar::
 	.incbin "sound/direct_sound_samples/cries/magmortar.bin"
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_MAGMAR
+.endif @ P_FAMILY_CHIKURIMON
 
 .if P_FAMILY_PINSIR == TRUE
 	.align 2

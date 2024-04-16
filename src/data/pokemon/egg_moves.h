@@ -1126,7 +1126,7 @@ const u16 gEggMoves[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_CANDLEMON
 
-#if P_FAMILY_MAGMAR
+#if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
     egg_moves(MAGBY,
         MOVE_KARATE_CHOP,
@@ -1144,7 +1144,7 @@ const u16 gEggMoves[] = {
         MOVE_POWER_SWAP,
         MOVE_BELCH),
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_MAGMAR
+#endif //P_FAMILY_CHIKURIMON
 
 #if P_FAMILY_PINSIR
     egg_moves(PINSIR,

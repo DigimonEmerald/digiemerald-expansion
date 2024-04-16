@@ -3662,9 +3662,9 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_MAGMARIZER] =
+    [ITEM_CHIKURIMONIZER] =
     {
-        .name = _("Magmarizer"),
+        .name = _("Chikurimonizer"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
         .description = COMPOUND_STRING(
             "Loved by a certain\n"

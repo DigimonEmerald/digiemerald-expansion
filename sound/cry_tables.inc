@@ -361,15 +361,15 @@ gCryTable::
 	cry Cry_Electivire
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_CANDLEMON
-.if P_FAMILY_MAGMAR == TRUE
+.if P_FAMILY_CHIKURIMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Magby
 .endif @ P_GEN_2_CROSS_EVOS
-	cry Cry_Magmar
+	cry Cry_Chikurimon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Magmortar
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_MAGMAR
+.endif @ P_FAMILY_CHIKURIMON
 .if P_FAMILY_PINSIR == TRUE
 	cry Cry_Pinsir
 .if P_MEGA_EVOLUTIONS == TRUE
@@ -2787,15 +2787,15 @@ gCryTable_Reverse::
 	cry_reverse Cry_Electivire
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_CANDLEMON
-.if P_FAMILY_MAGMAR == TRUE
+.if P_FAMILY_CHIKURIMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Magby
 .endif @ P_GEN_2_CROSS_EVOS
-	cry_reverse Cry_Magmar
+	cry_reverse Cry_Chikurimon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Magmortar
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_MAGMAR
+.endif @ P_FAMILY_CHIKURIMON
 .if P_FAMILY_PINSIR == TRUE
 	cry_reverse Cry_Pinsir
 .if P_MEGA_EVOLUTIONS == TRUE

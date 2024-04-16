@@ -115,7 +115,7 @@
 #define P_FAMILY_BURGERMON                 P_GEN_1_POKEMON
 #define P_FAMILY_SAMUAGUMON                    P_GEN_1_POKEMON
 #define P_FAMILY_CANDLEMON              P_GEN_1_POKEMON
-#define P_FAMILY_MAGMAR                  P_GEN_1_POKEMON
+#define P_FAMILY_CHIKURIMON                  P_GEN_1_POKEMON
 #define P_FAMILY_PINSIR                  P_GEN_1_POKEMON
 #define P_FAMILY_TAUROS                  P_GEN_1_POKEMON
 #define P_FAMILY_MAGIKARP                P_GEN_1_POKEMON
