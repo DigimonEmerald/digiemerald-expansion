@@ -5675,7 +5675,7 @@ static const struct TrainerMon sParty_Linda[] = {
     },
     {
     .lvl = 33,
-    .species = SPECIES_SEADRA,
+    .species = SPECIES_BLKAGUMON,
     }
 };
 
@@ -11712,7 +11712,7 @@ static const struct TrainerMon sParty_Thalia3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 36,
-    .species = SPECIES_SEADRA,
+    .species = SPECIES_BLKAGUMON,
     }
 };
 
@@ -11730,7 +11730,7 @@ static const struct TrainerMon sParty_Thalia4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 38,
-    .species = SPECIES_SEADRA,
+    .species = SPECIES_BLKAGUMON,
     }
 };
 

@@ -1712,7 +1712,7 @@ static const union AnimCmd sAnim_Biyomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Seadra_1[] =
+static const union AnimCmd sAnim_Blkagumon_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 10),
@@ -10570,7 +10570,7 @@ SINGLE_ANIMATION(Betamon_xMega);
 #endif //P_FAMILY_BETAMON_X
 #if P_FAMILY_BIYOMON
 SINGLE_ANIMATION(Biyomon);
-SINGLE_ANIMATION(Seadra);
+SINGLE_ANIMATION(Blkagumon);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Kingdra);
 #endif //P_GEN_2_CROSS_EVOS

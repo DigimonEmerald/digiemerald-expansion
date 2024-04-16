@@ -1141,8 +1141,8 @@ Cry_Biyomon::
 	.incbin "sound/direct_sound_samples/cries/biyomon.bin"
 
 	.align 2
-Cry_Seadra::
-	.incbin "sound/direct_sound_samples/cries/seadra.bin"
+Cry_Blkagumon::
+	.incbin "sound/direct_sound_samples/cries/blkagumon.bin"
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
