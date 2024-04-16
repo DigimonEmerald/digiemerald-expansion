@@ -2172,8 +2172,8 @@ static const union AnimCmd sAnim_Dotfalcmon_1[] =
 };
 #endif //P_FAMILY_DOTAGUMON
 
-#if P_FAMILY_AERODACTYL
-static const union AnimCmd sAnim_Aerodactyl_1[] =
+#if P_FAMILY_DRACMON
+static const union AnimCmd sAnim_Dracmon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 25),
@@ -2183,9 +2183,9 @@ static const union AnimCmd sAnim_Aerodactyl_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(AerodactylMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(DracmonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_AERODACTYL
+#endif //P_FAMILY_DRACMON
 
 #if P_FAMILY_SNORLAX
 #if P_GEN_4_CROSS_EVOS
@@ -10694,12 +10694,12 @@ SINGLE_ANIMATION(Dorumon);
 SINGLE_ANIMATION(Dotagumon);
 SINGLE_ANIMATION(Dotfalcmon);
 #endif //P_FAMILY_DOTAGUMON
-#if P_FAMILY_AERODACTYL
-SINGLE_ANIMATION(Aerodactyl);
+#if P_FAMILY_DRACMON
+SINGLE_ANIMATION(Dracmon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(AerodactylMega);
+SINGLE_ANIMATION(DracmonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_AERODACTYL
+#endif //P_FAMILY_DRACMON
 #if P_FAMILY_SNORLAX
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Munchlax);

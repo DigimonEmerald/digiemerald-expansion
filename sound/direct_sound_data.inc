@@ -1387,17 +1387,17 @@ Cry_Dotfalcmon::
 	.incbin "sound/direct_sound_samples/cries/dotfalcmon.bin"
 .endif @ P_FAMILY_DOTAGUMON
 
-.if P_FAMILY_AERODACTYL == TRUE
+.if P_FAMILY_DRACMON == TRUE
 	.align 2
-Cry_Aerodactyl::
-	.incbin "sound/direct_sound_samples/cries/aerodactyl.bin"
+Cry_Dracmon::
+	.incbin "sound/direct_sound_samples/cries/dracmon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_AerodactylMega::
-	.incbin "sound/direct_sound_samples/cries/aerodactyl_mega.bin"
+Cry_DracmonMega::
+	.incbin "sound/direct_sound_samples/cries/dracmon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_AERODACTYL
+.endif @ P_FAMILY_DRACMON
 
 .if P_FAMILY_SNORLAX == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE

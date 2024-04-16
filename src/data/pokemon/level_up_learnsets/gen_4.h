@@ -3985,8 +3985,8 @@ static const struct LevelUpMove sDotfalcmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_DOTAGUMON
 
-#if P_FAMILY_AERODACTYL
-static const struct LevelUpMove sAerodactylLevelUpLearnset[] = {
+#if P_FAMILY_DRACMON
+static const struct LevelUpMove sDracmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FIRE_FANG),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_FANG),
     LEVEL_UP_MOVE( 1, MOVE_ICE_FANG),
@@ -4005,7 +4005,7 @@ static const struct LevelUpMove sAerodactylLevelUpLearnset[] = {
     LEVEL_UP_MOVE(73, MOVE_GIGA_IMPACT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_AERODACTYL
+#endif //P_FAMILY_DRACMON
 
 #if P_FAMILY_SNORLAX
 #if P_GEN_4_CROSS_EVOS

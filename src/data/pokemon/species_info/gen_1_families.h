@@ -14585,8 +14585,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 #endif //P_FAMILY_DOTAGUMON
 
-#if P_FAMILY_AERODACTYL
-    [SPECIES_AERODACTYL] =
+#if P_FAMILY_DRACMON
+    [SPECIES_DRACMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 105,
@@ -14605,14 +14605,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_ROCK_HEAD, ABILITY_PRESSURE, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Aerodactyl"),
-        .cryId = CRY_AERODACTYL,
-        .natDexNum = NATIONAL_DEX_AERODACTYL,
+        .speciesName = _("Dracmon"),
+        .cryId = CRY_DRACMON,
+        .natDexNum = NATIONAL_DEX_DRACMON,
         .categoryName = _("Fossil"),
         .height = 18,
         .weight = 590,
         .description = COMPOUND_STRING(
-            "Aerodactyl is a Pokémon from the age\n"
+            "Dracmon is a Pokémon from the age\n"
             "of dinosaurs. It was regenerated from DNA\n"
             "extracted from amber. It is imagined to\n"
             "have been the king of the skies."),
@@ -14620,29 +14620,29 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 302,
         .trainerOffset = 4,
-        .frontPic = gMonFrontPic_Aerodactyl,
+        .frontPic = gMonFrontPic_Dracmon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Aerodactyl,
+        .frontAnimFrames = sAnims_Dracmon,
         .frontAnimId = ANIM_V_SLIDE_SLOW,
         .enemyMonElevation = 9,
-        .backPic = gMonBackPic_Aerodactyl,
+        .backPic = gMonBackPic_Dracmon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Aerodactyl,
-        .shinyPalette = gMonShinyPalette_Aerodactyl,
-        .iconSprite = gMonIcon_Aerodactyl,
+        .palette = gMonPalette_Dracmon,
+        .shinyPalette = gMonShinyPalette_Dracmon,
+        .iconSprite = gMonIcon_Dracmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Aerodactyl)
-        .levelUpLearnset = sAerodactylLevelUpLearnset,
-        .teachableLearnset = sAerodactylTeachableLearnset,
-        .formSpeciesIdTable = sAerodactylFormSpeciesIdTable,
-        .formChangeTable = sAerodactylFormChangeTable,
+        FOOTPRINT(Dracmon)
+        .levelUpLearnset = sDracmonLevelUpLearnset,
+        .teachableLearnset = sDracmonTeachableLearnset,
+        .formSpeciesIdTable = sDracmonFormSpeciesIdTable,
+        .formChangeTable = sDracmonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_AERODACTYL_MEGA] =
+    [SPECIES_DRACMON_MEGA] =
     {
         .baseHP        = 80,
         .baseAttack    = 135,
@@ -14661,9 +14661,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Aerodactyl"),
-        .cryId = CRY_AERODACTYL_MEGA,
-        .natDexNum = NATIONAL_DEX_AERODACTYL,
+        .speciesName = _("Dracmon"),
+        .cryId = CRY_DRACMON_MEGA,
+        .natDexNum = NATIONAL_DEX_DRACMON,
         .categoryName = _("Fossil"),
         .height = 21,
         .weight = 790,
@@ -14675,29 +14675,29 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 302,
         .trainerOffset = 4,
-        .frontPic = gMonFrontPic_AerodactylMega,
+        .frontPic = gMonFrontPic_DracmonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_AerodactylMega,
+        .frontAnimFrames = sAnims_DracmonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 7,
-        .backPic = gMonBackPic_AerodactylMega,
+        .backPic = gMonBackPic_DracmonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_AerodactylMega,
-        .shinyPalette = gMonShinyPalette_AerodactylMega,
-        .iconSprite = gMonIcon_AerodactylMega,
+        .palette = gMonPalette_DracmonMega,
+        .shinyPalette = gMonShinyPalette_DracmonMega,
+        .iconSprite = gMonIcon_DracmonMega,
         .iconPalIndex = 2,
-        FOOTPRINT(Aerodactyl)
+        FOOTPRINT(Dracmon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sAerodactylLevelUpLearnset,
-        .teachableLearnset = sAerodactylTeachableLearnset,
-        .formSpeciesIdTable = sAerodactylFormSpeciesIdTable,
-        .formChangeTable = sAerodactylFormChangeTable,
+        .levelUpLearnset = sDracmonLevelUpLearnset,
+        .teachableLearnset = sDracmonTeachableLearnset,
+        .formSpeciesIdTable = sDracmonFormSpeciesIdTable,
+        .formChangeTable = sDracmonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_AERODACTYL
+#endif //P_FAMILY_DRACMON
 
 #if P_FAMILY_SNORLAX
 #if P_GEN_4_CROSS_EVOS

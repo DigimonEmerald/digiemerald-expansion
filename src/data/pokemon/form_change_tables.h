@@ -200,14 +200,14 @@ static const struct FormChange sCrabmon_xFormChangeTable[] = {
 };
 #endif //P_FAMILY_CRABMON_X
 
-#if P_FAMILY_AERODACTYL
-static const struct FormChange sAerodactylFormChangeTable[] = {
+#if P_FAMILY_DRACMON
+static const struct FormChange sDracmonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_AERODACTYL_MEGA, ITEM_AERODACTYLITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_DRACMON_MEGA, ITEM_DRACMONITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_AERODACTYL
+#endif //P_FAMILY_DRACMON
 
 #if P_FAMILY_SNORLAX
 static const struct FormChange sSnorlaxFormChangeTable[] = {

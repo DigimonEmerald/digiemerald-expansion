@@ -4831,14 +4831,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_AERODACTYLITE] =
+    [ITEM_DRACMONITE] =
     {
-        .name = _("Aerodactylite"),
+        .name = _("Dracmonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Aerodactyl to Mega\n"
+            "Dracmon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

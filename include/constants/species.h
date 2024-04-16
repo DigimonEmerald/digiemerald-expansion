@@ -143,7 +143,7 @@
 #define SPECIES_DORUMON                                 139
 #define SPECIES_DOTAGUMON                                  140
 #define SPECIES_DOTFALCMON                                141
-#define SPECIES_AERODACTYL                              142
+#define SPECIES_DRACMON                              142
 #define SPECIES_SNORLAX                                 143
 #define SPECIES_ARTICUNO                                144
 #define SPECIES_ZAPDOS                                  145
@@ -976,7 +976,7 @@
 #define SPECIES_BETAMON_X_MEGA                         915
 #define SPECIES_TYUTYUMON_MEGA                             916
 #define SPECIES_COMMDRAMON_MEGA                           917
-#define SPECIES_AERODACTYL_MEGA                         918
+#define SPECIES_DRACMON_MEGA                         918
 #define SPECIES_MEWTWO_MEGA_X                           919
 #define SPECIES_MEWTWO_MEGA_Y                           920
 #define SPECIES_AMPHAROS_MEGA                           921

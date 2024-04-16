@@ -2429,24 +2429,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_DOTAGUMON
 
-#if P_FAMILY_AERODACTYL
-    const u32 gMonFrontPic_Aerodactyl[] = INCBIN_U32("graphics/pokemon/aerodactyl/anim_front.4bpp.lz");
-    const u32 gMonPalette_Aerodactyl[] = INCBIN_U32("graphics/pokemon/aerodactyl/normal.gbapal.lz");
-    const u32 gMonBackPic_Aerodactyl[] = INCBIN_U32("graphics/pokemon/aerodactyl/back.4bpp.lz");
-    const u32 gMonShinyPalette_Aerodactyl[] = INCBIN_U32("graphics/pokemon/aerodactyl/shiny.gbapal.lz");
-    const u8 gMonIcon_Aerodactyl[] = INCBIN_U8("graphics/pokemon/aerodactyl/icon.4bpp");
+#if P_FAMILY_DRACMON
+    const u32 gMonFrontPic_Dracmon[] = INCBIN_U32("graphics/pokemon/dracmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Dracmon[] = INCBIN_U32("graphics/pokemon/dracmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Dracmon[] = INCBIN_U32("graphics/pokemon/dracmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Dracmon[] = INCBIN_U32("graphics/pokemon/dracmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Dracmon[] = INCBIN_U8("graphics/pokemon/dracmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Aerodactyl[] = INCBIN_U8("graphics/pokemon/aerodactyl/footprint.1bpp");
+    const u8 gMonFootprint_Dracmon[] = INCBIN_U8("graphics/pokemon/dracmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_AerodactylMega[] = INCBIN_U32("graphics/pokemon/aerodactyl/mega/front.4bpp.lz");
-    const u32 gMonPalette_AerodactylMega[] = INCBIN_U32("graphics/pokemon/aerodactyl/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_AerodactylMega[] = INCBIN_U32("graphics/pokemon/aerodactyl/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_AerodactylMega[] = INCBIN_U32("graphics/pokemon/aerodactyl/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_AerodactylMega[] = INCBIN_U8("graphics/pokemon/aerodactyl/mega/icon.4bpp");
+    const u32 gMonFrontPic_DracmonMega[] = INCBIN_U32("graphics/pokemon/dracmon/mega/front.4bpp.lz");
+    const u32 gMonPalette_DracmonMega[] = INCBIN_U32("graphics/pokemon/dracmon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_DracmonMega[] = INCBIN_U32("graphics/pokemon/dracmon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_DracmonMega[] = INCBIN_U32("graphics/pokemon/dracmon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_DracmonMega[] = INCBIN_U8("graphics/pokemon/dracmon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_AERODACTYL
+#endif //P_FAMILY_DRACMON
 
 #if P_FAMILY_SNORLAX
 #if P_GEN_4_CROSS_EVOS

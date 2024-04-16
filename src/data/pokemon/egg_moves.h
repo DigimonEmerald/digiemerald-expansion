@@ -1245,8 +1245,8 @@ const u16 gEggMoves[] = {
         MOVE_TAKE_DOWN),
 #endif //P_FAMILY_DOTAGUMON
 
-#if P_FAMILY_AERODACTYL
-    egg_moves(AERODACTYL,
+#if P_FAMILY_DRACMON
+    egg_moves(DRACMON,
         MOVE_WHIRLWIND,
         MOVE_PURSUIT,
         MOVE_FORESIGHT,
@@ -1257,7 +1257,7 @@ const u16 gEggMoves[] = {
         MOVE_ROOST,
         MOVE_TAILWIND,
         MOVE_WIDE_GUARD),
-#endif //P_FAMILY_AERODACTYL
+#endif //P_FAMILY_DRACMON
 
 #if P_FAMILY_SNORLAX
 #if P_GEN_4_CROSS_EVOS

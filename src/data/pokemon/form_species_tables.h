@@ -520,15 +520,15 @@ static const u16 sCrabmon_xFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_CRABMON_X
 
-#if P_FAMILY_AERODACTYL
-static const u16 sAerodactylFormSpeciesIdTable[] = {
-    SPECIES_AERODACTYL,
+#if P_FAMILY_DRACMON
+static const u16 sDracmonFormSpeciesIdTable[] = {
+    SPECIES_DRACMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_AERODACTYL_MEGA,
+    SPECIES_DRACMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_AERODACTYL
+#endif //P_FAMILY_DRACMON
 
 #if P_FAMILY_SNORLAX
 static const u16 sSnorlaxFormSpeciesIdTable[] = {

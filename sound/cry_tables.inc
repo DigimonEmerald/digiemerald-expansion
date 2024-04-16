@@ -426,12 +426,12 @@ gCryTable::
 	cry Cry_Dotagumon
 	cry Cry_Dotfalcmon
 .endif @ P_FAMILY_DOTAGUMON
-.if P_FAMILY_AERODACTYL == TRUE
-	cry Cry_Aerodactyl
+.if P_FAMILY_DRACMON == TRUE
+	cry Cry_Dracmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_AerodactylMega
+	cry Cry_DracmonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_AERODACTYL
+.endif @ P_FAMILY_DRACMON
 .if P_FAMILY_SNORLAX == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Munchlax
@@ -2852,12 +2852,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Dotagumon
 	cry_reverse Cry_Dotfalcmon
 .endif @ P_FAMILY_DOTAGUMON
-.if P_FAMILY_AERODACTYL == TRUE
-	cry_reverse Cry_Aerodactyl
+.if P_FAMILY_DRACMON == TRUE
+	cry_reverse Cry_Dracmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_AerodactylMega
+	cry_reverse Cry_DracmonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_AERODACTYL
+.endif @ P_FAMILY_DRACMON
 .if P_FAMILY_SNORLAX == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Munchlax

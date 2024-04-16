@@ -7891,8 +7891,8 @@ static const u16 sDotfalcmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DOTAGUMON
 
-#if P_FAMILY_AERODACTYL
-static const u16 sAerodactylTeachableLearnset[] = {
+#if P_FAMILY_DRACMON
+static const u16 sDracmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
@@ -7928,7 +7928,7 @@ static const u16 sAerodactylTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_AERODACTYL
+#endif //P_FAMILY_DRACMON
 
 #if P_FAMILY_SNORLAX
 #if P_GEN_4_CROSS_EVOS
