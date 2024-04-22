@@ -5025,7 +5025,7 @@ static const struct LevelUpMove sPawnmon_blackLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sOctilleryLevelUpLearnset[] = {
+static const struct LevelUpMove sPawnmon_whiteLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
     LEVEL_UP_MOVE(11, MOVE_CONSTRICT),
     LEVEL_UP_MOVE(22, MOVE_PSYBEAM),

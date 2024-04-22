@@ -3646,17 +3646,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Pawnmon_black[] = INCBIN_U8("graphics/pokemon/pawnmon_black/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Octillery[] = INCBIN_U32("graphics/pokemon/octillery/anim_front.4bpp.lz");
-    const u32 gMonPalette_Octillery[] = INCBIN_U32("graphics/pokemon/octillery/normal.gbapal.lz");
-    const u32 gMonBackPic_Octillery[] = INCBIN_U32("graphics/pokemon/octillery/back.4bpp.lz");
-    const u32 gMonShinyPalette_Octillery[] = INCBIN_U32("graphics/pokemon/octillery/shiny.gbapal.lz");
-    const u8 gMonIcon_Octillery[] = INCBIN_U8("graphics/pokemon/octillery/icon.4bpp");
+    const u32 gMonFrontPic_Pawnmon_white[] = INCBIN_U32("graphics/pokemon/pawnmon_white/anim_front.4bpp.lz");
+    const u32 gMonPalette_Pawnmon_white[] = INCBIN_U32("graphics/pokemon/pawnmon_white/normal.gbapal.lz");
+    const u32 gMonBackPic_Pawnmon_white[] = INCBIN_U32("graphics/pokemon/pawnmon_white/back.4bpp.lz");
+    const u32 gMonShinyPalette_Pawnmon_white[] = INCBIN_U32("graphics/pokemon/pawnmon_white/shiny.gbapal.lz");
+    const u8 gMonIcon_Pawnmon_white[] = INCBIN_U8("graphics/pokemon/pawnmon_white/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Octillery[] = INCBIN_U8("graphics/pokemon/octillery/footprint.1bpp");
+    const u8 gMonFootprint_Pawnmon_white[] = INCBIN_U8("graphics/pokemon/pawnmon_white/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_OctilleryF[] = INCBIN_U32("graphics/pokemon/octillery/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_OctilleryF[] = INCBIN_U32("graphics/pokemon/octillery/backf.4bpp.lz");
+    const u32 gMonFrontPic_Pawnmon_whiteF[] = INCBIN_U32("graphics/pokemon/pawnmon_white/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_Pawnmon_whiteF[] = INCBIN_U32("graphics/pokemon/pawnmon_white/backf.4bpp.lz");
 #endif //P_FAMILY_PAWNMON_BLACK
 
 #if P_FAMILY_DELIBIRD

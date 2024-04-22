@@ -11536,7 +11536,7 @@ static const u16 sPawnmon_blackTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sOctilleryTeachableLearnset[] = {
+static const u16 sPawnmon_whiteTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BULLET_SEED,

@@ -288,7 +288,7 @@ DOUBLE_BATTLE_TEST("Red Card activates but fails if the attacker has Suction Cup
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_OCTILLERY) { Ability(ABILITY_SUCTION_CUPS); }
+        OPPONENT(SPECIES_PAWNMON_WHITE) { Ability(ABILITY_SUCTION_CUPS); }
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_LOPMON);
     } WHEN {
@@ -299,8 +299,8 @@ DOUBLE_BATTLE_TEST("Red Card activates but fails if the attacker has Suction Cup
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerLeft);
-        MESSAGE("Lopmonx held up its Red Card against Foe Octillery!");
-        MESSAGE("Foe Octillery anchors itself with Suction Cups!");
+        MESSAGE("Lopmonx held up its Red Card against Foe Pawnmon_white!");
+        MESSAGE("Foe Pawnmon_white anchors itself with Suction Cups!");
 
         // Red Card already consumed so cannot activate.
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);

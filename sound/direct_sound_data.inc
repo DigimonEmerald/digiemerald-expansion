@@ -1896,8 +1896,8 @@ Cry_Pawnmon_black::
 	.incbin "sound/direct_sound_samples/cries/pawnmon_black.bin"
 
 	.align 2
-Cry_Octillery::
-	.incbin "sound/direct_sound_samples/cries/octillery.bin"
+Cry_Pawnmon_white::
+	.incbin "sound/direct_sound_samples/cries/pawnmon_white.bin"
 .endif @ P_FAMILY_PAWNMON_BLACK
 
 .if P_FAMILY_DELIBIRD == TRUE

@@ -3187,7 +3187,7 @@ static const union AnimCmd sAnim_Pawnmon_black_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Octillery_1[] =
+static const union AnimCmd sAnim_Pawnmon_white_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -10942,7 +10942,7 @@ SINGLE_ANIMATION(Cursola);
 #endif //P_FAMILY_PATAMON
 #if P_FAMILY_PAWNMON_BLACK
 SINGLE_ANIMATION(Pawnmon_black);
-SINGLE_ANIMATION(Octillery);
+SINGLE_ANIMATION(Pawnmon_white);
 #endif //P_FAMILY_PAWNMON_BLACK
 #if P_FAMILY_DELIBIRD
 SINGLE_ANIMATION(Delibird);

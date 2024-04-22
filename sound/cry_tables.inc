@@ -646,7 +646,7 @@ gCryTable::
 .endif @ P_FAMILY_PATAMON
 .if P_FAMILY_PAWNMON_BLACK == TRUE
 	cry Cry_Pawnmon_black
-	cry Cry_Octillery
+	cry Cry_Pawnmon_white
 .endif @ P_FAMILY_PAWNMON_BLACK
 .if P_FAMILY_DELIBIRD == TRUE
 	cry Cry_Delibird
@@ -3072,7 +3072,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_PATAMON
 .if P_FAMILY_PAWNMON_BLACK == TRUE
 	cry_reverse Cry_Pawnmon_black
-	cry_reverse Cry_Octillery
+	cry_reverse Cry_Pawnmon_white
 .endif @ P_FAMILY_PAWNMON_BLACK
 .if P_FAMILY_DELIBIRD == TRUE
 	cry_reverse Cry_Delibird
