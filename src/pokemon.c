@@ -687,7 +687,7 @@ static const struct SpeciesItem sAlteringCaveWildMonHeldItems[] =
     {SPECIES_KOKABUIMON,     ITEM_BERRY_JUICE},
     {SPECIES_MORPHOMON,   ITEM_BERRY_JUICE},
     {SPECIES_ROKUSHO,  ITEM_PETAYA_BERRY},
-    {SPECIES_SMEARGLE,  ITEM_SALAC_BERRY},
+    {SPECIES_RYUDAMON,  ITEM_SALAC_BERRY},
 };
 
 static const struct OamData sOamData_64x64 =

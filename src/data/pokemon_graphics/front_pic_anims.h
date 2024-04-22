@@ -3292,8 +3292,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Wyrdeer);
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_ROKUSHO
 
-#if P_FAMILY_SMEARGLE
-static const union AnimCmd sAnim_Smeargle_1[] =
+#if P_FAMILY_RYUDAMON
+static const union AnimCmd sAnim_Ryudamon_1[] =
 {
     ANIMCMD_FRAME(1, 12),
     ANIMCMD_FRAME(0, 12),
@@ -3301,7 +3301,7 @@ static const union AnimCmd sAnim_Smeargle_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SMEARGLE
+#endif //P_FAMILY_RYUDAMON
 
 #if P_FAMILY_MILTANK
 static const union AnimCmd sAnim_Miltank_1[] =
@@ -10973,9 +10973,9 @@ SINGLE_ANIMATION(Rokusho);
 SINGLE_ANIMATION(Wyrdeer);
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_ROKUSHO
-#if P_FAMILY_SMEARGLE
-SINGLE_ANIMATION(Smeargle);
-#endif //P_FAMILY_SMEARGLE
+#if P_FAMILY_RYUDAMON
+SINGLE_ANIMATION(Ryudamon);
+#endif //P_FAMILY_RYUDAMON
 #if P_FAMILY_MILTANK
 SINGLE_ANIMATION(Miltank);
 #endif //P_FAMILY_MILTANK

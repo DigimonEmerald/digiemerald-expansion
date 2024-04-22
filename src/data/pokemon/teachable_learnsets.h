@@ -11932,11 +11932,11 @@ static const u16 sWyrdeerTeachableLearnset[] = {
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_ROKUSHO
 
-#if P_FAMILY_SMEARGLE
-static const u16 sSmeargleTeachableLearnset[] = {
+#if P_FAMILY_RYUDAMON
+static const u16 sRyudamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SMEARGLE
+#endif //P_FAMILY_RYUDAMON
 
 #if P_FAMILY_MILTANK
 static const u16 sMiltankTeachableLearnset[] = {

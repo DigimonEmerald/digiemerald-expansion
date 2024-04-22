@@ -1962,11 +1962,11 @@ Cry_Wyrdeer::
 .endif @ P_GEN_8_CROSS_EVOS
 .endif @ P_FAMILY_ROKUSHO
 
-.if P_FAMILY_SMEARGLE == TRUE
+.if P_FAMILY_RYUDAMON == TRUE
 	.align 2
-Cry_Smeargle::
-	.incbin "sound/direct_sound_samples/cries/smeargle.bin"
-.endif @ P_FAMILY_SMEARGLE
+Cry_Ryudamon::
+	.incbin "sound/direct_sound_samples/cries/ryudamon.bin"
+.endif @ P_FAMILY_RYUDAMON
 
 .if P_FAMILY_MILTANK == TRUE
 	.align 2

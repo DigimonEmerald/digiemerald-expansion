@@ -6721,8 +6721,8 @@ static const struct LevelUpMove sWyrdeerLevelUpLearnset[] = {
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_ROKUSHO
 
-#if P_FAMILY_SMEARGLE
-static const struct LevelUpMove sSmeargleLevelUpLearnset[] = {
+#if P_FAMILY_RYUDAMON
+static const struct LevelUpMove sRyudamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(11, MOVE_SKETCH),
     LEVEL_UP_MOVE(21, MOVE_SKETCH),
     LEVEL_UP_MOVE(31, MOVE_SKETCH),
@@ -6734,7 +6734,7 @@ static const struct LevelUpMove sSmeargleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(91, MOVE_SKETCH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SMEARGLE
+#endif //P_FAMILY_RYUDAMON
 
 #if P_FAMILY_MILTANK
 static const struct LevelUpMove sMiltankLevelUpLearnset[] = {

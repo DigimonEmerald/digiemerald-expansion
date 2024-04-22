@@ -677,9 +677,9 @@ gCryTable::
 	cry Cry_Wyrdeer
 .endif @ P_GEN_8_CROSS_EVOS
 .endif @ P_FAMILY_ROKUSHO
-.if P_FAMILY_SMEARGLE == TRUE
-	cry Cry_Smeargle
-.endif @ P_FAMILY_SMEARGLE
+.if P_FAMILY_RYUDAMON == TRUE
+	cry Cry_Ryudamon
+.endif @ P_FAMILY_RYUDAMON
 .if P_FAMILY_MILTANK == TRUE
 	cry Cry_Miltank
 .endif @ P_FAMILY_MILTANK
@@ -3103,9 +3103,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Wyrdeer
 .endif @ P_GEN_8_CROSS_EVOS
 .endif @ P_FAMILY_ROKUSHO
-.if P_FAMILY_SMEARGLE == TRUE
-	cry_reverse Cry_Smeargle
-.endif @ P_FAMILY_SMEARGLE
+.if P_FAMILY_RYUDAMON == TRUE
+	cry_reverse Cry_Ryudamon
+.endif @ P_FAMILY_RYUDAMON
 .if P_FAMILY_MILTANK == TRUE
 	cry_reverse Cry_Miltank
 .endif @ P_FAMILY_MILTANK

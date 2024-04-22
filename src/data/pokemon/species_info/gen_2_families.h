@@ -5732,8 +5732,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_ROKUSHO
 
-#if P_FAMILY_SMEARGLE
-    [SPECIES_SMEARGLE] =
+#if P_FAMILY_RYUDAMON
+    [SPECIES_RYUDAMON] =
     {
         .baseHP        = 55,
         .baseAttack    = 20,
@@ -5752,14 +5752,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_OWN_TEMPO, ABILITY_TECHNICIAN, ABILITY_MOODY },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Smeargle"),
-        .cryId = CRY_SMEARGLE,
-        .natDexNum = NATIONAL_DEX_SMEARGLE,
+        .speciesName = _("Ryudamon"),
+        .cryId = CRY_RYUDAMON,
+        .natDexNum = NATIONAL_DEX_RYUDAMON,
         .categoryName = _("Painter"),
         .height = 12,
         .weight = 580,
         .description = COMPOUND_STRING(
-            "A Smeargle marks its territory using a\n"
+            "A Ryudamon marks its territory using a\n"
             "fluid that leaks out from the tip of its\n"
             "tail. About 5,000 different marks left by\n"
             "this Pokémon have been found."),
@@ -5767,25 +5767,25 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 5,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Smeargle,
+        .frontPic = gMonFrontPic_Ryudamon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Smeargle,
+        .frontAnimFrames = sAnims_Ryudamon,
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
-        .backPic = gMonBackPic_Smeargle,
+        .backPic = gMonBackPic_Ryudamon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Smeargle,
-        .shinyPalette = gMonShinyPalette_Smeargle,
-        .iconSprite = gMonIcon_Smeargle,
+        .palette = gMonPalette_Ryudamon,
+        .shinyPalette = gMonShinyPalette_Ryudamon,
+        .iconSprite = gMonIcon_Ryudamon,
         .iconPalIndex = 1,
-        FOOTPRINT(Smeargle)
+        FOOTPRINT(Ryudamon)
         .tmIlliterate = TRUE,
-        .levelUpLearnset = sSmeargleLevelUpLearnset,
-        .teachableLearnset = sSmeargleTeachableLearnset,
+        .levelUpLearnset = sRyudamonLevelUpLearnset,
+        .teachableLearnset = sRyudamonTeachableLearnset,
     },
-#endif //P_FAMILY_SMEARGLE
+#endif //P_FAMILY_RYUDAMON
 
 #if P_FAMILY_MILTANK
     [SPECIES_MILTANK] =
