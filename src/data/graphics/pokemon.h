@@ -2642,13 +2642,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Floramon[] = INCBIN_U8("graphics/pokemon/floramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Quilava[] = INCBIN_U32("graphics/pokemon/quilava/anim_front.4bpp.lz");
-    const u32 gMonPalette_Quilava[] = INCBIN_U32("graphics/pokemon/quilava/normal.gbapal.lz");
-    const u32 gMonBackPic_Quilava[] = INCBIN_U32("graphics/pokemon/quilava/back.4bpp.lz");
-    const u32 gMonShinyPalette_Quilava[] = INCBIN_U32("graphics/pokemon/quilava/shiny.gbapal.lz");
-    const u8 gMonIcon_Quilava[] = INCBIN_U8("graphics/pokemon/quilava/icon.4bpp");
+    const u32 gMonFrontPic_Gabumon[] = INCBIN_U32("graphics/pokemon/gabumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gabumon[] = INCBIN_U32("graphics/pokemon/gabumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Gabumon[] = INCBIN_U32("graphics/pokemon/gabumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gabumon[] = INCBIN_U32("graphics/pokemon/gabumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Gabumon[] = INCBIN_U8("graphics/pokemon/gabumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Quilava[] = INCBIN_U8("graphics/pokemon/quilava/footprint.1bpp");
+    const u8 gMonFootprint_Gabumon[] = INCBIN_U8("graphics/pokemon/gabumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Typhlosion[] = INCBIN_U32("graphics/pokemon/typhlosion/anim_front.4bpp.lz");

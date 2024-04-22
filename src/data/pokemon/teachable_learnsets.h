@@ -8561,7 +8561,7 @@ static const u16 sFloramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sQuilavaTeachableLearnset[] = {
+static const u16 sGabumonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,

@@ -469,7 +469,7 @@ gCryTable::
 .endif @ P_FAMILY_FALCOMON_06
 .if P_FAMILY_FLORAMON == TRUE
 	cry Cry_Floramon
-	cry Cry_Quilava
+	cry Cry_Gabumon
 	cry Cry_Typhlosion
 .endif @ P_FAMILY_FLORAMON
 .if P_FAMILY_TOTODILE == TRUE
@@ -2895,7 +2895,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_FALCOMON_06
 .if P_FAMILY_FLORAMON == TRUE
 	cry_reverse Cry_Floramon
-	cry_reverse Cry_Quilava
+	cry_reverse Cry_Gabumon
 	cry_reverse Cry_Typhlosion
 .endif @ P_FAMILY_FLORAMON
 .if P_FAMILY_TOTODILE == TRUE

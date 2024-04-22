@@ -2372,7 +2372,7 @@ static const union AnimCmd sAnim_Floramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Quilava_1[] =
+static const union AnimCmd sAnim_Gabumon_1[] =
 {
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 20),
@@ -10749,7 +10749,7 @@ SINGLE_ANIMATION(Flamemon);
 #endif //P_FAMILY_FALCOMON_06
 #if P_FAMILY_FLORAMON
 SINGLE_ANIMATION(Floramon);
-SINGLE_ANIMATION(Quilava);
+SINGLE_ANIMATION(Gabumon);
 SINGLE_ANIMATION(Typhlosion);
 #if P_HISUIAN_FORMS
 SINGLE_ANIMATION(TyphlosionHisuian);
