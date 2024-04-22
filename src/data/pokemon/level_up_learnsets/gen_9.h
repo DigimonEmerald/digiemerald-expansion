@@ -4974,7 +4974,7 @@ static const struct LevelUpMove sGazimonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sFurretLevelUpLearnset[] = {
+static const struct LevelUpMove sGazimon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_AGILITY),
     LEVEL_UP_MOVE( 1, MOVE_AGILITY),
     LEVEL_UP_MOVE( 1, MOVE_COIL),

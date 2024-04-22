@@ -2430,7 +2430,7 @@ static const union AnimCmd sAnim_Gazimon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Furret_1[] =
+static const union AnimCmd sAnim_Gazimon_x_1[] =
 {
     ANIMCMD_FRAME(1, 35),
     ANIMCMD_FRAME(0, 5),
@@ -10762,7 +10762,7 @@ SINGLE_ANIMATION(Gaossmon);
 #endif //P_FAMILY_GAMMAMON
 #if P_FAMILY_GAZIMON
 SINGLE_ANIMATION(Gazimon);
-SINGLE_ANIMATION(Furret);
+SINGLE_ANIMATION(Gazimon_x);
 #endif //P_FAMILY_GAZIMON
 #if P_FAMILY_HOOTHOOT
 SINGLE_ANIMATION(Hoothoot);

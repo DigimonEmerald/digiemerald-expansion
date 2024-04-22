@@ -479,7 +479,7 @@ gCryTable::
 .endif @ P_FAMILY_GAMMAMON
 .if P_FAMILY_GAZIMON == TRUE
 	cry Cry_Gazimon
-	cry Cry_Furret
+	cry Cry_Gazimon_x
 .endif @ P_FAMILY_GAZIMON
 .if P_FAMILY_HOOTHOOT == TRUE
 	cry Cry_Hoothoot
@@ -2905,7 +2905,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_GAMMAMON
 .if P_FAMILY_GAZIMON == TRUE
 	cry_reverse Cry_Gazimon
-	cry_reverse Cry_Furret
+	cry_reverse Cry_Gazimon_x
 .endif @ P_FAMILY_GAZIMON
 .if P_FAMILY_HOOTHOOT == TRUE
 	cry_reverse Cry_Hoothoot

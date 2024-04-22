@@ -624,10 +624,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Gazimon)
         .levelUpLearnset = sGazimonLevelUpLearnset,
         .teachableLearnset = sGazimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_FURRET}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_GAZIMON_X}),
     },
 
-    [SPECIES_FURRET] =
+    [SPECIES_GAZIMON_X] =
     {
         .baseHP        = 85,
         .baseAttack    = 76,
@@ -646,14 +646,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_RUN_AWAY, ABILITY_KEEN_EYE, ABILITY_FRISK },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Furret"),
-        .cryId = CRY_FURRET,
-        .natDexNum = NATIONAL_DEX_FURRET,
+        .speciesName = _("Gazimon_x"),
+        .cryId = CRY_GAZIMON_X,
+        .natDexNum = NATIONAL_DEX_GAZIMON_X,
         .categoryName = _("Long Body"),
         .height = 18,
         .weight = 325,
         .description = COMPOUND_STRING(
-            "A Furret has a very slim build. When under\n"
+            "A Gazimon_x has a very slim build. When under\n"
             "attack, it can squirm through narrow\n"
             "spaces and get away. In spite of its short\n"
             "limbs, it is very nimble and fleet."),
@@ -661,22 +661,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 11,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Furret,
+        .frontPic = gMonFrontPic_Gazimon_x,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Furret,
+        .frontAnimFrames = sAnims_Gazimon_x,
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
-        .backPic = gMonBackPic_Furret,
+        .backPic = gMonBackPic_Gazimon_x,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Furret,
-        .shinyPalette = gMonShinyPalette_Furret,
-        .iconSprite = gMonIcon_Furret,
+        .palette = gMonPalette_Gazimon_x,
+        .shinyPalette = gMonShinyPalette_Gazimon_x,
+        .iconSprite = gMonIcon_Gazimon_x,
         .iconPalIndex = 2,
-        FOOTPRINT(Furret)
-        .levelUpLearnset = sFurretLevelUpLearnset,
-        .teachableLearnset = sFurretTeachableLearnset,
+        FOOTPRINT(Gazimon_x)
+        .levelUpLearnset = sGazimon_xLevelUpLearnset,
+        .teachableLearnset = sGazimon_xTeachableLearnset,
     },
 #endif //P_FAMILY_GAZIMON
 

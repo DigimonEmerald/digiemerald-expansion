@@ -8863,7 +8863,7 @@ static const u16 sGazimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFurretTeachableLearnset[] = {
+static const u16 sGazimon_xTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
