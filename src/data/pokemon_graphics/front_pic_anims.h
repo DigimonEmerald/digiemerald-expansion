@@ -2484,8 +2484,8 @@ static const union AnimCmd sAnim_Goblimon_1[] =
 };
 #endif //P_FAMILY_GIZUMON
 
-#if P_FAMILY_SPINARAK
-static const union AnimCmd sAnim_Spinarak_1[] =
+#if P_FAMILY_GOMAMON
+static const union AnimCmd sAnim_Gomamon_1[] =
 {
     ANIMCMD_FRAME(1, 6),
     ANIMCMD_FRAME(0, 6),
@@ -2506,7 +2506,7 @@ static const union AnimCmd sAnim_Ariados_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SPINARAK
+#endif //P_FAMILY_GOMAMON
 
 #if P_FAMILY_CHINCHOU
 static const union AnimCmd sAnim_Chinchou_1[] =
@@ -10772,10 +10772,10 @@ SINGLE_ANIMATION(Gizamon);
 SINGLE_ANIMATION(Gizumon);
 SINGLE_ANIMATION(Goblimon);
 #endif //P_FAMILY_GIZUMON
-#if P_FAMILY_SPINARAK
-SINGLE_ANIMATION(Spinarak);
+#if P_FAMILY_GOMAMON
+SINGLE_ANIMATION(Gomamon);
 SINGLE_ANIMATION(Ariados);
-#endif //P_FAMILY_SPINARAK
+#endif //P_FAMILY_GOMAMON
 #if P_FAMILY_CHINCHOU
 SINGLE_ANIMATION(Chinchou);
 SINGLE_ANIMATION(Lanturn);

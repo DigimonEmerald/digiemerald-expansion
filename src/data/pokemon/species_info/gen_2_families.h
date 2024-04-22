@@ -909,8 +909,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_GIZUMON
 
-#if P_FAMILY_SPINARAK
-    [SPECIES_SPINARAK] =
+#if P_FAMILY_GOMAMON
+    [SPECIES_GOMAMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 60,
@@ -929,37 +929,37 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SWARM, ABILITY_INSOMNIA, ABILITY_SNIPER },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Spinarak"),
-        .cryId = CRY_SPINARAK,
-        .natDexNum = NATIONAL_DEX_SPINARAK,
+        .speciesName = _("Gomamon"),
+        .cryId = CRY_GOMAMON,
+        .natDexNum = NATIONAL_DEX_GOMAMON,
         .categoryName = _("String Spit"),
         .height = 5,
         .weight = 85,
         .description = COMPOUND_STRING(
             "The web it spins can be considered its\n"
             "second nervous system. It is said that a\n"
-            "Spinarak determines its prey by the tiny\n"
+            "Gomamon determines its prey by the tiny\n"
             "vibrations it feels through the web."),
         .pokemonScale = 414,
         .pokemonOffset = 21,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Spinarak,
+        .frontPic = gMonFrontPic_Gomamon,
         .frontPicSize = MON_COORDS_SIZE(48, 32),
         .frontPicYOffset = 16,
-        .frontAnimFrames = sAnims_Spinarak,
+        .frontAnimFrames = sAnims_Gomamon,
         .frontAnimId = ANIM_CIRCLE_C_CLOCKWISE_SLOW,
-        .backPic = gMonBackPic_Spinarak,
+        .backPic = gMonBackPic_Gomamon,
         .backPicSize = MON_COORDS_SIZE(64, 32),
         .backPicYOffset = 16,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Spinarak,
-        .shinyPalette = gMonShinyPalette_Spinarak,
-        .iconSprite = gMonIcon_Spinarak,
+        .palette = gMonPalette_Gomamon,
+        .shinyPalette = gMonShinyPalette_Gomamon,
+        .iconSprite = gMonIcon_Gomamon,
         .iconPalIndex = 1,
-        FOOTPRINT(Spinarak)
-        .levelUpLearnset = sSpinarakLevelUpLearnset,
-        .teachableLearnset = sSpinarakTeachableLearnset,
+        FOOTPRINT(Gomamon)
+        .levelUpLearnset = sGomamonLevelUpLearnset,
+        .teachableLearnset = sGomamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_ARIADOS}),
     },
 
@@ -1020,7 +1020,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sAriadosLevelUpLearnset,
         .teachableLearnset = sAriadosTeachableLearnset,
     },
-#endif //P_FAMILY_SPINARAK
+#endif //P_FAMILY_GOMAMON
 
 #if P_FAMILY_CHINCHOU
     [SPECIES_CHINCHOU] =

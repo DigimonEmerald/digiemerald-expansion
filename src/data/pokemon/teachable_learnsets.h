@@ -9051,8 +9051,8 @@ static const u16 sGoblimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GIZUMON
 
-#if P_FAMILY_SPINARAK
-static const u16 sSpinarakTeachableLearnset[] = {
+#if P_FAMILY_GOMAMON
+static const u16 sGomamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -9101,7 +9101,7 @@ static const u16 sAriadosTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SPINARAK
+#endif //P_FAMILY_GOMAMON
 
 #if P_FAMILY_CHINCHOU
 static const u16 sChinchouTeachableLearnset[] = {

@@ -1537,15 +1537,15 @@ Cry_Goblimon::
 	.incbin "sound/direct_sound_samples/cries/goblimon.bin"
 .endif @ P_FAMILY_GIZUMON
 
-.if P_FAMILY_SPINARAK == TRUE
+.if P_FAMILY_GOMAMON == TRUE
 	.align 2
-Cry_Spinarak::
-	.incbin "sound/direct_sound_samples/cries/spinarak.bin"
+Cry_Gomamon::
+	.incbin "sound/direct_sound_samples/cries/gomamon.bin"
 
 	.align 2
 Cry_Ariados::
 	.incbin "sound/direct_sound_samples/cries/ariados.bin"
-.endif @ P_FAMILY_SPINARAK
+.endif @ P_FAMILY_GOMAMON
 
 .if P_FAMILY_CHINCHOU == TRUE
 	.align 2

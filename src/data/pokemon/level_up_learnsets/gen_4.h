@@ -4593,8 +4593,8 @@ static const struct LevelUpMove sGoblimonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_GIZUMON
 
-#if P_FAMILY_SPINARAK
-static const struct LevelUpMove sSpinarakLevelUpLearnset[] = {
+#if P_FAMILY_GOMAMON
+static const struct LevelUpMove sGomamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_STRING_SHOT),
     LEVEL_UP_MOVE( 5, MOVE_SCARY_FACE),
@@ -4632,7 +4632,7 @@ static const struct LevelUpMove sAriadosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_POISON_JAB),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SPINARAK
+#endif //P_FAMILY_GOMAMON
 
 #if P_FAMILY_CHINCHOU
 static const struct LevelUpMove sChinchouLevelUpLearnset[] = {

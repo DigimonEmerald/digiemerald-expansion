@@ -489,10 +489,10 @@ gCryTable::
 	cry Cry_Gizumon
 	cry Cry_Goblimon
 .endif @ P_FAMILY_GIZUMON
-.if P_FAMILY_SPINARAK == TRUE
-	cry Cry_Spinarak
+.if P_FAMILY_GOMAMON == TRUE
+	cry Cry_Gomamon
 	cry Cry_Ariados
-.endif @ P_FAMILY_SPINARAK
+.endif @ P_FAMILY_GOMAMON
 .if P_FAMILY_CHINCHOU == TRUE
 	cry Cry_Chinchou
 	cry Cry_Lanturn
@@ -2915,10 +2915,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Gizumon
 	cry_reverse Cry_Goblimon
 .endif @ P_FAMILY_GIZUMON
-.if P_FAMILY_SPINARAK == TRUE
-	cry_reverse Cry_Spinarak
+.if P_FAMILY_GOMAMON == TRUE
+	cry_reverse Cry_Gomamon
 	cry_reverse Cry_Ariados
-.endif @ P_FAMILY_SPINARAK
+.endif @ P_FAMILY_GOMAMON
 .if P_FAMILY_CHINCHOU == TRUE
 	cry_reverse Cry_Chinchou
 	cry_reverse Cry_Lanturn

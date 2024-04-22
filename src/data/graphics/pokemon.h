@@ -2764,14 +2764,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonBackPic_GoblimonF[] = INCBIN_U32("graphics/pokemon/goblimon/backf.4bpp.lz");
 #endif //P_FAMILY_GIZUMON
 
-#if P_FAMILY_SPINARAK
-    const u32 gMonFrontPic_Spinarak[] = INCBIN_U32("graphics/pokemon/spinarak/anim_front.4bpp.lz");
-    const u32 gMonPalette_Spinarak[] = INCBIN_U32("graphics/pokemon/spinarak/normal.gbapal.lz");
-    const u32 gMonBackPic_Spinarak[] = INCBIN_U32("graphics/pokemon/spinarak/back.4bpp.lz");
-    const u32 gMonShinyPalette_Spinarak[] = INCBIN_U32("graphics/pokemon/spinarak/shiny.gbapal.lz");
-    const u8 gMonIcon_Spinarak[] = INCBIN_U8("graphics/pokemon/spinarak/icon.4bpp");
+#if P_FAMILY_GOMAMON
+    const u32 gMonFrontPic_Gomamon[] = INCBIN_U32("graphics/pokemon/gomamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gomamon[] = INCBIN_U32("graphics/pokemon/gomamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Gomamon[] = INCBIN_U32("graphics/pokemon/gomamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gomamon[] = INCBIN_U32("graphics/pokemon/gomamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Gomamon[] = INCBIN_U8("graphics/pokemon/gomamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Spinarak[] = INCBIN_U8("graphics/pokemon/spinarak/footprint.1bpp");
+    const u8 gMonFootprint_Gomamon[] = INCBIN_U8("graphics/pokemon/gomamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Ariados[] = INCBIN_U32("graphics/pokemon/ariados/anim_front.4bpp.lz");
@@ -2782,7 +2782,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Ariados[] = INCBIN_U8("graphics/pokemon/ariados/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_SPINARAK
+#endif //P_FAMILY_GOMAMON
 
 #if P_FAMILY_CHINCHOU
     const u32 gMonFrontPic_Chinchou[] = INCBIN_U32("graphics/pokemon/chinchou/anim_front.4bpp.lz");
