@@ -7,8 +7,8 @@
 // Modifying the latest generation WILL change the saveblock due to Dex flags and will require a new save file.
 // Generations of Pokémon are defined by the first member introduced,
 // so Petitmon depends on the Gen 1 setting despite Guilmon_x being the lowest member of the evolution tree.
-// Eg: If P_GEN_2_POKEMON is set to FALSE, all members of the Sneasel Family will be disabled
-// (Sneasel + Hisuian, Weavile and Sneasler).
+// Eg: If P_GEN_2_POKEMON is set to FALSE, all members of the Mushroomon Family will be disabled
+// (Mushroomon + Hisuian, Weavile and Sneasler).
 #define P_GEN_1_POKEMON                  TRUE // Generation 1 Pokémon (RGBY)
 #define P_GEN_2_POKEMON                  TRUE // Generation 2 Pokémon (GSC)
 #define P_GEN_3_POKEMON                  TRUE // Generation 3 Pokémon (RSE, FRLG)
@@ -164,7 +164,7 @@
 #define P_FAMILY_MONMON                P_GEN_2_POKEMON
 #define P_FAMILY_MORPHOMON                 P_GEN_2_POKEMON
 #define P_FAMILY_MUCHOMON               P_GEN_2_POKEMON
-#define P_FAMILY_SNEASEL                 P_GEN_2_POKEMON
+#define P_FAMILY_MUSHROOMON                 P_GEN_2_POKEMON
 #define P_FAMILY_TEDDIURSA               P_GEN_2_POKEMON
 #define P_FAMILY_SLUGMA                  P_GEN_2_POKEMON
 #define P_FAMILY_SWINUB                  P_GEN_2_POKEMON

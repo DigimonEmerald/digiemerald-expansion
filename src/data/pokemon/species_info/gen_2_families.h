@@ -4078,8 +4078,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_MUCHOMON
 
-#if P_FAMILY_SNEASEL
-    [SPECIES_SNEASEL] =
+#if P_FAMILY_MUSHROOMON
+    [SPECIES_MUSHROOMON] =
     {
         .baseHP        = 55,
         .baseAttack    = 95,
@@ -4100,14 +4100,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_KEEN_EYE, ABILITY_PICKPOCKET },
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
-        .speciesName = _("Sneasel"),
-        .cryId = CRY_SNEASEL,
-        .natDexNum = NATIONAL_DEX_SNEASEL,
+        .speciesName = _("Mushroomon"),
+        .cryId = CRY_MUSHROOMON,
+        .natDexNum = NATIONAL_DEX_MUSHROOMON,
         .categoryName = _("Sharp Claw"),
         .height = 9,
         .weight = 280,
         .description = COMPOUND_STRING(
-            "A Sneasel scales trees by punching its\n"
+            "A Mushroomon scales trees by punching its\n"
             "hooked claws into the bark. It seeks out\n"
             "unguarded nests and steals eggs for food\n"
             "while the parents are away."),
@@ -4115,27 +4115,27 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = -3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Sneasel,
-        .frontPicFemale = gMonFrontPic_SneaselF,
+        .frontPic = gMonFrontPic_Mushroomon,
+        .frontPicFemale = gMonFrontPic_MushroomonF,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Sneasel,
+        .frontAnimFrames = sAnims_Mushroomon,
         .frontAnimId = ANIM_H_JUMPS,
-        .backPic = gMonBackPic_Sneasel,
-        .backPicFemale = gMonBackPic_SneaselF,
+        .backPic = gMonBackPic_Mushroomon,
+        .backPicFemale = gMonBackPic_MushroomonF,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Sneasel,
-        .shinyPalette = gMonShinyPalette_Sneasel,
-        .iconSprite = gMonIcon_Sneasel,
+        .palette = gMonPalette_Mushroomon,
+        .shinyPalette = gMonShinyPalette_Mushroomon,
+        .iconSprite = gMonIcon_Mushroomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Sneasel)
-        .levelUpLearnset = sSneaselLevelUpLearnset,
-        .teachableLearnset = sSneaselTeachableLearnset,
-        .formSpeciesIdTable = sSneaselFormSpeciesIdTable,
+        FOOTPRINT(Mushroomon)
+        .levelUpLearnset = sMushroomonLevelUpLearnset,
+        .teachableLearnset = sMushroomonTeachableLearnset,
+        .formSpeciesIdTable = sMushroomonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM_HOLD_NIGHT, ITEM_RAZOR_CLAW, SPECIES_WEAVILE},
                                 {EVO_ITEM_NIGHT, ITEM_RAZOR_CLAW, SPECIES_WEAVILE}),
     },
@@ -4201,7 +4201,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_GEN_4_CROSS_EVOS
 
 #if P_HISUIAN_FORMS
-    [SPECIES_SNEASEL_HISUIAN] =
+    [SPECIES_MUSHROOMON_HISUIAN] =
     {
         .baseHP        = 55,
         .baseAttack    = 95,
@@ -4222,9 +4222,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_KEEN_EYE, ABILITY_PICKPOCKET },
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = TRUE,
-        .speciesName = _("Sneasel"),
-        .cryId = CRY_SNEASEL,
-        .natDexNum = NATIONAL_DEX_SNEASEL,
+        .speciesName = _("Mushroomon"),
+        .cryId = CRY_MUSHROOMON,
+        .natDexNum = NATIONAL_DEX_MUSHROOMON,
         .categoryName = _("Sharp Claw"),
         .height = 9,
         .weight = 270,
@@ -4237,28 +4237,28 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = -3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_SneaselHisuian,
-        .frontPicFemale = gMonFrontPic_SneaselHisuianF,
+        .frontPic = gMonFrontPic_MushroomonHisuian,
+        .frontPicFemale = gMonFrontPic_MushroomonHisuianF,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_SneaselHisuian,
+        .frontAnimFrames = sAnims_MushroomonHisuian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_SneaselHisuian,
-        .backPicFemale = gMonBackPic_SneaselHisuianF,
+        .backPic = gMonBackPic_MushroomonHisuian,
+        .backPicFemale = gMonBackPic_MushroomonHisuianF,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicSizeFemale = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 3,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_SneaselHisuian,
-        .shinyPalette = gMonShinyPalette_SneaselHisuian,
-        .iconSprite = gMonIcon_SneaselHisuian,
+        .palette = gMonPalette_MushroomonHisuian,
+        .shinyPalette = gMonShinyPalette_MushroomonHisuian,
+        .iconSprite = gMonIcon_MushroomonHisuian,
         .iconPalIndex = 0,
-        FOOTPRINT(Sneasel)
+        FOOTPRINT(Mushroomon)
         .isHisuianForm = TRUE,
-        .levelUpLearnset = sSneaselHisuianLevelUpLearnset,
-        .teachableLearnset = sSneaselHisuianTeachableLearnset,
-        .formSpeciesIdTable = sSneaselFormSpeciesIdTable,
+        .levelUpLearnset = sMushroomonHisuianLevelUpLearnset,
+        .teachableLearnset = sMushroomonHisuianTeachableLearnset,
+        .formSpeciesIdTable = sMushroomonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM_HOLD_DAY, ITEM_RAZOR_CLAW, SPECIES_SNEASLER},
                                 {EVO_ITEM_DAY, ITEM_RAZOR_CLAW, SPECIES_SNEASLER}),
     },
@@ -4315,7 +4315,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sSneaslerTeachableLearnset,
     },
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_SNEASEL
+#endif //P_FAMILY_MUSHROOMON
 
 #if P_FAMILY_TEDDIURSA
     [SPECIES_TEDDIURSA] =

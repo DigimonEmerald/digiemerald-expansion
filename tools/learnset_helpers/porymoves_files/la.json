@@ -4545,7 +4545,7 @@
       "MOVE_STONE_EDGE"
     ]
   },
-  "SNEASEL": {
+  "MUSHROOMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -18080,7 +18080,7 @@
       "MOVE_WATER_PULSE"
     ]
   },
-  "SNEASEL_HISUIAN": {
+  "MUSHROOMON_HISUIAN": {
     "LevelMoves": [
       {
         "Level": 1,

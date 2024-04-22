@@ -10887,8 +10887,8 @@ static const u16 sMuchomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_MUCHOMON
 
-#if P_FAMILY_SNEASEL
-static const u16 sSneaselTeachableLearnset[] = {
+#if P_FAMILY_MUSHROOMON
+static const u16 sMushroomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -10990,7 +10990,7 @@ static const u16 sWeavileTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 
 #if P_HISUIAN_FORMS
-static const u16 sSneaselHisuianTeachableLearnset[] = {
+static const u16 sMushroomonHisuianTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -11048,7 +11048,7 @@ static const u16 sSneaslerTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_SNEASEL
+#endif //P_FAMILY_MUSHROOMON
 
 #if P_FAMILY_TEDDIURSA
 static const u16 sTeddiursaTeachableLearnset[] = {

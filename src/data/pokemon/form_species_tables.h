@@ -673,15 +673,15 @@ static const u16 sMuchomonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_MUCHOMON
 
-#if P_FAMILY_SNEASEL
-static const u16 sSneaselFormSpeciesIdTable[] = {
-    SPECIES_SNEASEL,
+#if P_FAMILY_MUSHROOMON
+static const u16 sMushroomonFormSpeciesIdTable[] = {
+    SPECIES_MUSHROOMON,
 #if P_HISUIAN_FORMS
-    SPECIES_SNEASEL_HISUIAN,
+    SPECIES_MUSHROOMON_HISUIAN,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_SNEASEL
+#endif //P_FAMILY_MUSHROOMON
 
 #if P_FAMILY_TEDDIURSA
 static const u16 sUrsalunaFormSpeciesIdTable[] = {

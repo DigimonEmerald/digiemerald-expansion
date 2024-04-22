@@ -1817,10 +1817,10 @@ Cry_MuchomonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_MUCHOMON
 
-.if P_FAMILY_SNEASEL == TRUE
+.if P_FAMILY_MUSHROOMON == TRUE
 	.align 2
-Cry_Sneasel::
-	.incbin "sound/direct_sound_samples/cries/sneasel.bin"
+Cry_Mushroomon::
+	.incbin "sound/direct_sound_samples/cries/mushroomon.bin"
 
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
@@ -1833,7 +1833,7 @@ Cry_Sneasler::
 	.incbin "sound/direct_sound_samples/cries/sneasler.bin"
 
 .endif @ P_HISUIAN_FORMS
-.endif @ P_FAMILY_SNEASEL
+.endif @ P_FAMILY_MUSHROOMON
 
 .if P_FAMILY_TEDDIURSA == TRUE
 	.align 2

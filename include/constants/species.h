@@ -216,7 +216,7 @@
 #define SPECIES_MONODRAMON                                  212
 #define SPECIES_MORPHOMON                                 213
 #define SPECIES_MUCHOMON                               214
-#define SPECIES_SNEASEL                                 215
+#define SPECIES_MUSHROOMON                                 215
 #define SPECIES_TEDDIURSA                               216
 #define SPECIES_URSARING                                217
 #define SPECIES_SLUGMA                                  218
@@ -1060,7 +1060,7 @@
 #define SPECIES_YAAMON_HISUIAN                       996
 #define SPECIES_GABUMON_X_HISUIAN                      997
 #define SPECIES_MONMON_HISUIAN                        998
-#define SPECIES_SNEASEL_HISUIAN                         999
+#define SPECIES_MUSHROOMON_HISUIAN                         999
 #define SPECIES_SAMUROTT_HISUIAN                        1000
 #define SPECIES_LILLIGANT_HISUIAN                       1001
 #define SPECIES_ZORUA_HISUIAN                           1002

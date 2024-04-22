@@ -116,7 +116,7 @@ SINGLE_BATTLE_TEST("Eject Button is not triggered after given to player by Picke
     GIVEN {
         PLAYER(SPECIES_REGIELEKI) { Item(ITEM_EJECT_BUTTON); }
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_SNEASEL) { Ability(ABILITY_PICKPOCKET); }
+        OPPONENT(SPECIES_MUSHROOMON) { Ability(ABILITY_PICKPOCKET); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN {
@@ -126,7 +126,7 @@ SINGLE_BATTLE_TEST("Eject Button is not triggered after given to player by Picke
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         ABILITY_POPUP(opponent, ABILITY_PICKPOCKET);
-        MESSAGE("Foe Sneasel stole Regieleki's Eject Button!");
+        MESSAGE("Foe Mushroomon stole Regieleki's Eject Button!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
     }
 }

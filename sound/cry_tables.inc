@@ -611,15 +611,15 @@ gCryTable::
 	cry Cry_MuchomonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_MUCHOMON
-.if P_FAMILY_SNEASEL == TRUE
-	cry Cry_Sneasel
+.if P_FAMILY_MUSHROOMON == TRUE
+	cry Cry_Mushroomon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Weavile
 .endif @ P_GEN_4_CROSS_EVOS
 .if P_HISUIAN_FORMS == TRUE
 	cry Cry_Sneasler
 .endif @ P_HISUIAN_FORMS
-.endif @ P_FAMILY_SNEASEL
+.endif @ P_FAMILY_MUSHROOMON
 .if P_FAMILY_TEDDIURSA == TRUE
 	cry Cry_Teddiursa
 	cry Cry_Ursaring
@@ -3037,15 +3037,15 @@ gCryTable_Reverse::
 	cry_reverse Cry_MuchomonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_MUCHOMON
-.if P_FAMILY_SNEASEL == TRUE
-	cry_reverse Cry_Sneasel
+.if P_FAMILY_MUSHROOMON == TRUE
+	cry_reverse Cry_Mushroomon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Weavile
 .endif @ P_GEN_4_CROSS_EVOS
 .if P_HISUIAN_FORMS == TRUE
 	cry_reverse Cry_Sneasler
 .endif @ P_HISUIAN_FORMS
-.endif @ P_FAMILY_SNEASEL
+.endif @ P_FAMILY_MUSHROOMON
 .if P_FAMILY_TEDDIURSA == TRUE
 	cry_reverse Cry_Teddiursa
 	cry_reverse Cry_Ursaring

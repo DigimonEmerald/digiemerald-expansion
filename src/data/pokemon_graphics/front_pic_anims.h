@@ -3061,8 +3061,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(MuchomonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_MUCHOMON
 
-#if P_FAMILY_SNEASEL
-static const union AnimCmd sAnim_Sneasel_1[] =
+#if P_FAMILY_MUSHROOMON
+static const union AnimCmd sAnim_Mushroomon_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 8),
@@ -3083,10 +3083,10 @@ static const union AnimCmd sAnim_Weavile_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 
 #if P_HISUIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(SneaselHisuian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(MushroomonHisuian);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Sneasler);
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_SNEASEL
+#endif //P_FAMILY_MUSHROOMON
 
 #if P_FAMILY_TEDDIURSA
 static const union AnimCmd sAnim_Teddiursa_1[] =
@@ -10904,16 +10904,16 @@ SINGLE_ANIMATION(Muchomon);
 SINGLE_ANIMATION(MuchomonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_MUCHOMON
-#if P_FAMILY_SNEASEL
-SINGLE_ANIMATION(Sneasel);
+#if P_FAMILY_MUSHROOMON
+SINGLE_ANIMATION(Mushroomon);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Weavile);
 #endif //P_GEN_4_CROSS_EVOS
 #if P_HISUIAN_FORMS
-SINGLE_ANIMATION(SneaselHisuian);
+SINGLE_ANIMATION(MushroomonHisuian);
 SINGLE_ANIMATION(Sneasler);
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_SNEASEL
+#endif //P_FAMILY_MUSHROOMON
 #if P_FAMILY_TEDDIURSA
 SINGLE_ANIMATION(Teddiursa);
 SINGLE_ANIMATION(Ursaring);

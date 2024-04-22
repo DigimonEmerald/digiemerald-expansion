@@ -4300,8 +4300,8 @@ static const struct LevelUpMove sMuchomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_MUCHOMON
 
-#if P_FAMILY_SNEASEL
-static const struct LevelUpMove sSneaselLevelUpLearnset[] = {
+#if P_FAMILY_MUSHROOMON
+static const struct LevelUpMove sMushroomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 9, MOVE_QUICK_ATTACK),
@@ -4339,7 +4339,7 @@ static const struct LevelUpMove sWeavileLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 
 #if P_HISUIAN_FORMS
-static const struct LevelUpMove sSneaselHisuianLevelUpLearnset[] = {
+static const struct LevelUpMove sMushroomonHisuianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 6, MOVE_ROCK_SMASH),
     LEVEL_UP_MOVE(11, MOVE_SWIFT),
@@ -4362,7 +4362,7 @@ static const struct LevelUpMove sSneaslerLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_SNEASEL
+#endif //P_FAMILY_MUSHROOMON
 
 #if P_FAMILY_TEDDIURSA
 static const struct LevelUpMove sTeddiursaLevelUpLearnset[] = {

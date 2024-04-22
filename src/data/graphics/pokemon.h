@@ -3464,18 +3464,18 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_MUCHOMON
 
-#if P_FAMILY_SNEASEL
-    const u32 gMonFrontPic_Sneasel[] = INCBIN_U32("graphics/pokemon/sneasel/anim_front.4bpp.lz");
-    const u32 gMonPalette_Sneasel[] = INCBIN_U32("graphics/pokemon/sneasel/normal.gbapal.lz");
-    const u32 gMonBackPic_Sneasel[] = INCBIN_U32("graphics/pokemon/sneasel/back.4bpp.lz");
-    const u32 gMonShinyPalette_Sneasel[] = INCBIN_U32("graphics/pokemon/sneasel/shiny.gbapal.lz");
-    const u8 gMonIcon_Sneasel[] = INCBIN_U8("graphics/pokemon/sneasel/icon.4bpp");
+#if P_FAMILY_MUSHROOMON
+    const u32 gMonFrontPic_Mushroomon[] = INCBIN_U32("graphics/pokemon/mushroomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Mushroomon[] = INCBIN_U32("graphics/pokemon/mushroomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Mushroomon[] = INCBIN_U32("graphics/pokemon/mushroomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Mushroomon[] = INCBIN_U32("graphics/pokemon/mushroomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Mushroomon[] = INCBIN_U8("graphics/pokemon/mushroomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Sneasel[] = INCBIN_U8("graphics/pokemon/sneasel/footprint.1bpp");
+    const u8 gMonFootprint_Mushroomon[] = INCBIN_U8("graphics/pokemon/mushroomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_SneaselF[] = INCBIN_U32("graphics/pokemon/sneasel/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_SneaselF[] = INCBIN_U32("graphics/pokemon/sneasel/backf.4bpp.lz");
+    const u32 gMonFrontPic_MushroomonF[] = INCBIN_U32("graphics/pokemon/mushroomon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_MushroomonF[] = INCBIN_U32("graphics/pokemon/mushroomon/backf.4bpp.lz");
 
 #if P_GEN_4_CROSS_EVOS
     const u32 gMonFrontPic_Weavile[] = INCBIN_U32("graphics/pokemon/weavile/anim_front.4bpp.lz");
@@ -3492,14 +3492,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 
 #if P_HISUIAN_FORMS
-    const u32 gMonFrontPic_SneaselHisuian[] = INCBIN_U32("graphics/pokemon/sneasel/hisuian/front.4bpp.lz");
-    const u32 gMonPalette_SneaselHisuian[] = INCBIN_U32("graphics/pokemon/sneasel/hisuian/normal.gbapal.lz");
-    const u32 gMonBackPic_SneaselHisuian[] = INCBIN_U32("graphics/pokemon/sneasel/hisuian/back.4bpp.lz");
-    const u32 gMonShinyPalette_SneaselHisuian[] = INCBIN_U32("graphics/pokemon/sneasel/hisuian/shiny.gbapal.lz");
-    const u8 gMonIcon_SneaselHisuian[] = INCBIN_U8("graphics/pokemon/sneasel/hisuian/icon.4bpp");
+    const u32 gMonFrontPic_MushroomonHisuian[] = INCBIN_U32("graphics/pokemon/mushroomon/hisuian/front.4bpp.lz");
+    const u32 gMonPalette_MushroomonHisuian[] = INCBIN_U32("graphics/pokemon/mushroomon/hisuian/normal.gbapal.lz");
+    const u32 gMonBackPic_MushroomonHisuian[] = INCBIN_U32("graphics/pokemon/mushroomon/hisuian/back.4bpp.lz");
+    const u32 gMonShinyPalette_MushroomonHisuian[] = INCBIN_U32("graphics/pokemon/mushroomon/hisuian/shiny.gbapal.lz");
+    const u8 gMonIcon_MushroomonHisuian[] = INCBIN_U8("graphics/pokemon/mushroomon/hisuian/icon.4bpp");
 
-    const u32 gMonFrontPic_SneaselHisuianF[] = INCBIN_U32("graphics/pokemon/sneasel/hisuian/frontf.4bpp.lz");
-    const u32 gMonBackPic_SneaselHisuianF[] = INCBIN_U32("graphics/pokemon/sneasel/hisuian/backf.4bpp.lz");
+    const u32 gMonFrontPic_MushroomonHisuianF[] = INCBIN_U32("graphics/pokemon/mushroomon/hisuian/frontf.4bpp.lz");
+    const u32 gMonBackPic_MushroomonHisuianF[] = INCBIN_U32("graphics/pokemon/mushroomon/hisuian/backf.4bpp.lz");
 
     const u32 gMonFrontPic_Sneasler[] = INCBIN_U32("graphics/pokemon/sneasler/front.4bpp.lz");
     const u32 gMonPalette_Sneasler[] = INCBIN_U32("graphics/pokemon/sneasler/normal.gbapal.lz");
@@ -3510,7 +3510,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     //const u8 gMonFootprint_Sneasler[] = INCBIN_U8("graphics/pokemon/sneasler/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_SNEASEL
+#endif //P_FAMILY_MUSHROOMON
 
 #if P_FAMILY_TEDDIURSA
     const u32 gMonFrontPic_Teddiursa[] = INCBIN_U32("graphics/pokemon/teddiursa/anim_front.4bpp.lz");
