@@ -2051,13 +2051,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
 #if P_FAMILY_SAMUAGUMON
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Smoochum[] = INCBIN_U32("graphics/pokemon/smoochum/anim_front.4bpp.lz");
-    const u32 gMonPalette_Smoochum[] = INCBIN_U32("graphics/pokemon/smoochum/normal.gbapal.lz");
-    const u32 gMonBackPic_Smoochum[] = INCBIN_U32("graphics/pokemon/smoochum/back.4bpp.lz");
-    const u32 gMonShinyPalette_Smoochum[] = INCBIN_U32("graphics/pokemon/smoochum/shiny.gbapal.lz");
-    const u8 gMonIcon_Smoochum[] = INCBIN_U8("graphics/pokemon/smoochum/icon.4bpp");
+    const u32 gMonFrontPic_Sangomon[] = INCBIN_U32("graphics/pokemon/sangomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Sangomon[] = INCBIN_U32("graphics/pokemon/sangomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Sangomon[] = INCBIN_U32("graphics/pokemon/sangomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Sangomon[] = INCBIN_U32("graphics/pokemon/sangomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Sangomon[] = INCBIN_U8("graphics/pokemon/sangomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Smoochum[] = INCBIN_U8("graphics/pokemon/smoochum/footprint.1bpp");
+    const u8 gMonFootprint_Sangomon[] = INCBIN_U8("graphics/pokemon/sangomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
 

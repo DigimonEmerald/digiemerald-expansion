@@ -6723,7 +6723,7 @@ static const u16 sKleavorTeachableLearnset[] = {
 
 #if P_FAMILY_SAMUAGUMON
 #if P_GEN_2_CROSS_EVOS
-static const u16 sSmoochumTeachableLearnset[] = {
+static const u16 sSangomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,

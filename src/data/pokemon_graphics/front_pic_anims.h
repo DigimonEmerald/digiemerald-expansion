@@ -1848,7 +1848,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Kleavor);
 
 #if P_FAMILY_SAMUAGUMON
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Smoochum_1[] =
+static const union AnimCmd sAnim_Sangomon_1[] =
 {
     ANIMCMD_FRAME(1, 20),
     ANIMCMD_FRAME(0, 20),
@@ -10607,7 +10607,7 @@ SINGLE_ANIMATION(Kleavor);
 #endif //P_FAMILY_BURGERMON
 #if P_FAMILY_SAMUAGUMON
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Smoochum);
+SINGLE_ANIMATION(Sangomon);
 #endif //P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Samuagumon);
 #endif //P_FAMILY_SAMUAGUMON

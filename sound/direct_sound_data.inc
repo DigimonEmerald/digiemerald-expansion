@@ -1216,8 +1216,8 @@ Cry_Kleavor::
 .if P_FAMILY_SAMUAGUMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Smoochum::
-	.incbin "sound/direct_sound_samples/cries/smoochum.bin"
+Cry_Sangomon::
+	.incbin "sound/direct_sound_samples/cries/sangomon.bin"
 .endif @ P_GEN_2_CROSS_EVOS
 
 	.align 2

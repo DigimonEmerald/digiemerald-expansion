@@ -1097,7 +1097,7 @@ const u16 gEggMoves[] = {
 
 #if P_FAMILY_SAMUAGUMON
 #if P_GEN_2_CROSS_EVOS
-    egg_moves(SMOOCHUM,
+    egg_moves(SANGOMON,
         MOVE_MEDITATE,
         MOVE_FAKE_OUT,
         MOVE_WISH,

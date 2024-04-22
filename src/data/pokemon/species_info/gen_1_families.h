@@ -12429,7 +12429,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
 #if P_FAMILY_SAMUAGUMON
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_SMOOCHUM] =
+    [SPECIES_SANGOMON] =
     {
         .baseHP        = 45,
         .baseAttack    = 30,
@@ -12448,9 +12448,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_FOREWARN, ABILITY_HYDRATION },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Smoochum"),
-        .cryId = CRY_SMOOCHUM,
-        .natDexNum = NATIONAL_DEX_SMOOCHUM,
+        .speciesName = _("Sangomon"),
+        .cryId = CRY_SANGOMON,
+        .natDexNum = NATIONAL_DEX_SANGOMON,
         .categoryName = _("Kiss"),
         .height = 4,
         .weight = 60,
@@ -12463,23 +12463,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Smoochum,
+        .frontPic = gMonFrontPic_Sangomon,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Smoochum,
+        .frontAnimFrames = sAnims_Sangomon,
         .frontAnimId = ANIM_GROW_VIBRATE,
         .frontAnimDelay = 40,
-        .backPic = gMonBackPic_Smoochum,
+        .backPic = gMonBackPic_Sangomon,
         .backPicSize = MON_COORDS_SIZE(40, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Smoochum,
-        .shinyPalette = gMonShinyPalette_Smoochum,
-        .iconSprite = gMonIcon_Smoochum,
+        .palette = gMonPalette_Sangomon,
+        .shinyPalette = gMonShinyPalette_Sangomon,
+        .iconSprite = gMonIcon_Sangomon,
         .iconPalIndex = 1,
-        FOOTPRINT(Smoochum)
-        .levelUpLearnset = sSmoochumLevelUpLearnset,
-        .teachableLearnset = sSmoochumTeachableLearnset,
+        FOOTPRINT(Sangomon)
+        .levelUpLearnset = sSangomonLevelUpLearnset,
+        .teachableLearnset = sSangomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SAMUAGUMON}),
     },
 #endif //P_GEN_2_CROSS_EVOS

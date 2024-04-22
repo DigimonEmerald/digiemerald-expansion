@@ -2914,7 +2914,7 @@ static const struct LevelUpMove sKleavorLevelUpLearnset[] = {
 
 #if P_FAMILY_SAMUAGUMON
 #if P_GEN_2_CROSS_EVOS
-static const struct LevelUpMove sSmoochumLevelUpLearnset[] = {
+static const struct LevelUpMove sSangomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_LICK),
     LEVEL_UP_MOVE( 9, MOVE_SWEET_KISS),
