@@ -10731,8 +10731,8 @@ static const u16 sMonitamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_MODBETAMON
 
-#if P_FAMILY_QWILFISH
-static const u16 sQwilfishTeachableLearnset[] = {
+#if P_FAMILY_MONMON
+static const u16 sMonmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -10767,7 +10767,7 @@ static const u16 sQwilfishTeachableLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const u16 sQwilfishHisuianTeachableLearnset[] = {
+static const u16 sMonmonHisuianTeachableLearnset[] = {
     MOVE_BLIZZARD,
     MOVE_FACADE,
     MOVE_ICE_BEAM,
@@ -10814,7 +10814,7 @@ static const u16 sOverqwilTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_QWILFISH
+#endif //P_FAMILY_MONMON
 
 #if P_FAMILY_SHUCKLE
 static const u16 sShuckleTeachableLearnset[] = {

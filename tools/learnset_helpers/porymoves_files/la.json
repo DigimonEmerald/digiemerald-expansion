@@ -4406,7 +4406,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "QWILFISH": {
+  "MONMON": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -18019,7 +18019,7 @@
       "MOVE_WILD_CHARGE"
     ]
   },
-  "QWILFISH_HISUIAN": {
+  "MONMON_HISUIAN": {
     "LevelMoves": [
       {
         "Level": 1,

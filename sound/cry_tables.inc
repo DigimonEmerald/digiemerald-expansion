@@ -596,12 +596,12 @@ gCryTable::
 	cry Cry_Modbetamon
 	cry Cry_Monitamon
 .endif @ P_FAMILY_MODBETAMON
-.if P_FAMILY_QWILFISH == TRUE
-	cry Cry_Qwilfish
+.if P_FAMILY_MONMON == TRUE
+	cry Cry_Monmon
 .if P_HISUIAN_FORMS == TRUE
 	cry Cry_Overqwil
 .endif @ P_HISUIAN_FORMS
-.endif @ P_FAMILY_QWILFISH
+.endif @ P_FAMILY_MONMON
 .if P_FAMILY_SHUCKLE == TRUE
 	cry Cry_Shuckle
 .endif @ P_FAMILY_SHUCKLE
@@ -3022,12 +3022,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Modbetamon
 	cry_reverse Cry_Monitamon
 .endif @ P_FAMILY_MODBETAMON
-.if P_FAMILY_QWILFISH == TRUE
-	cry_reverse Cry_Qwilfish
+.if P_FAMILY_MONMON == TRUE
+	cry_reverse Cry_Monmon
 .if P_HISUIAN_FORMS == TRUE
 	cry_reverse Cry_Overqwil
 .endif @ P_HISUIAN_FORMS
-.endif @ P_FAMILY_QWILFISH
+.endif @ P_FAMILY_MONMON
 .if P_FAMILY_SHUCKLE == TRUE
 	cry_reverse Cry_Shuckle
 .endif @ P_FAMILY_SHUCKLE

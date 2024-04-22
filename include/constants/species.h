@@ -212,7 +212,7 @@
 #define SPECIES_KODEKACMON                                 208
 #define SPECIES_MODBETAMON                                209
 #define SPECIES_MONITAMON                                210
-#define SPECIES_QWILFISH                                211
+#define SPECIES_MONMON                                211
 #define SPECIES_SCIZOR                                  212
 #define SPECIES_SHUCKLE                                 213
 #define SPECIES_HERACROSS                               214
@@ -1059,7 +1059,7 @@
 #define SPECIES_XIAOMON_HISUIAN                         995
 #define SPECIES_YAAMON_HISUIAN                       996
 #define SPECIES_GABUMON_X_HISUIAN                      997
-#define SPECIES_QWILFISH_HISUIAN                        998
+#define SPECIES_MONMON_HISUIAN                        998
 #define SPECIES_SNEASEL_HISUIAN                         999
 #define SPECIES_SAMUROTT_HISUIAN                        1000
 #define SPECIES_LILLIGANT_HISUIAN                       1001

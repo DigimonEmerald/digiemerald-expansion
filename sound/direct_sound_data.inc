@@ -1786,10 +1786,10 @@ Cry_Monitamon::
 	.incbin "sound/direct_sound_samples/cries/monitamon.bin"
 .endif @ P_FAMILY_MODBETAMON
 
-.if P_FAMILY_QWILFISH == TRUE
+.if P_FAMILY_MONMON == TRUE
 	.align 2
-Cry_Qwilfish::
-	.incbin "sound/direct_sound_samples/cries/qwilfish.bin"
+Cry_Monmon::
+	.incbin "sound/direct_sound_samples/cries/monmon.bin"
 
 .if P_HISUIAN_FORMS == TRUE
 	.align 2
@@ -1797,7 +1797,7 @@ Cry_Overqwil::
 	.incbin "sound/direct_sound_samples/cries/overqwil.bin"
 
 .endif @ P_HISUIAN_FORMS
-.endif @ P_FAMILY_QWILFISH
+.endif @ P_FAMILY_MONMON
 
 .if P_FAMILY_SHUCKLE == TRUE
 	.align 2

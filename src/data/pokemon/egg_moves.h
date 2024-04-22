@@ -1778,8 +1778,8 @@ const u16 gEggMoves[] = {
         MOVE_FAKE_TEARS),
 #endif //P_FAMILY_MODBETAMON
 
-#if P_FAMILY_QWILFISH
-    egg_moves(QWILFISH,
+#if P_FAMILY_MONMON
+    egg_moves(MONMON,
         MOVE_FLAIL,
         MOVE_HAZE,
         MOVE_BUBBLE_BEAM,
@@ -1790,7 +1790,7 @@ const u16 gEggMoves[] = {
         MOVE_WATER_PULSE,
         MOVE_BRINE,
         MOVE_ACID_SPRAY),
-#endif //P_FAMILY_QWILFISH
+#endif //P_FAMILY_MONMON
 
 #if P_FAMILY_SHUCKLE
     egg_moves(SHUCKLE,

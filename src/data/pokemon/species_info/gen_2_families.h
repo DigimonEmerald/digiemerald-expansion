@@ -3727,17 +3727,17 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_MODBETAMON
 
-#if P_FAMILY_QWILFISH
+#if P_FAMILY_MONMON
 
 #if P_UPDATED_EXP_YIELDS >= GEN_7
-    #define QWILFISH_EXP_YIELD 88
+    #define MONMON_EXP_YIELD 88
 #elif P_UPDATED_EXP_YIELDS >= GEN_5
-    #define QWILFISH_EXP_YIELD 86
+    #define MONMON_EXP_YIELD 86
 #else
-    #define QWILFISH_EXP_YIELD 100
+    #define MONMON_EXP_YIELD 100
 #endif
 
-    [SPECIES_QWILFISH] =
+    [SPECIES_MONMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 95,
@@ -3747,7 +3747,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_WATER, TYPE_POISON),
         .catchRate = 45,
-        .expYield = QWILFISH_EXP_YIELD,
+        .expYield = MONMON_EXP_YIELD,
         .evYield_Attack = 1,
         .itemRare = ITEM_POISON_BARB,
         .genderRatio = PERCENT_FEMALE(50),
@@ -3757,14 +3757,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_POISON_POINT, ABILITY_SWIFT_SWIM, ABILITY_INTIMIDATE },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Qwilfish"),
-        .cryId = CRY_QWILFISH,
-        .natDexNum = NATIONAL_DEX_QWILFISH,
+        .speciesName = _("Monmon"),
+        .cryId = CRY_MONMON,
+        .natDexNum = NATIONAL_DEX_MONMON,
         .categoryName = _("Balloon"),
         .height = 5,
         .weight = 39,
         .description = COMPOUND_STRING(
-            "A Qwilfish uses the pressure of water\n"
+            "A Monmon uses the pressure of water\n"
             "it swallows to shoot toxic quills all at\n"
             "once from all over its body. It finds\n"
             "swimming to be somewhat challenging."),
@@ -3772,28 +3772,28 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Qwilfish,
+        .frontPic = gMonFrontPic_Monmon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Qwilfish,
+        .frontAnimFrames = sAnims_Monmon,
         .frontAnimId = ANIM_GROW_IN_STAGES,
         .frontAnimDelay = 39,
-        .backPic = gMonBackPic_Qwilfish,
+        .backPic = gMonBackPic_Monmon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_GROW_STUTTER,
-        .palette = gMonPalette_Qwilfish,
-        .shinyPalette = gMonShinyPalette_Qwilfish,
-        .iconSprite = gMonIcon_Qwilfish,
+        .palette = gMonPalette_Monmon,
+        .shinyPalette = gMonShinyPalette_Monmon,
+        .iconSprite = gMonIcon_Monmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Qwilfish)
-        .levelUpLearnset = sQwilfishLevelUpLearnset,
-        .teachableLearnset = sQwilfishTeachableLearnset,
-        .formSpeciesIdTable = sQwilfishFormSpeciesIdTable,
+        FOOTPRINT(Monmon)
+        .levelUpLearnset = sMonmonLevelUpLearnset,
+        .teachableLearnset = sMonmonTeachableLearnset,
+        .formSpeciesIdTable = sMonmonFormSpeciesIdTable,
     },
 
 #if P_HISUIAN_FORMS
-    [SPECIES_QWILFISH_HISUIAN] =
+    [SPECIES_MONMON_HISUIAN] =
     {
         .baseHP        = 65,
         .baseAttack    = 95,
@@ -3803,7 +3803,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_DARK, TYPE_POISON),
         .catchRate = 45,
-        .expYield = QWILFISH_EXP_YIELD,
+        .expYield = MONMON_EXP_YIELD,
         .evYield_Attack = 1,
         .itemRare = ITEM_POISON_BARB,
         .genderRatio = PERCENT_FEMALE(50),
@@ -3813,14 +3813,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_POISON_POINT, ABILITY_SWIFT_SWIM, ABILITY_INTIMIDATE },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Qwilfish"),
-        .cryId = CRY_QWILFISH,
-        .natDexNum = NATIONAL_DEX_QWILFISH,
+        .speciesName = _("Monmon"),
+        .cryId = CRY_MONMON,
+        .natDexNum = NATIONAL_DEX_MONMON,
         .categoryName = _("Balloon"),
         .height = 5,
         .weight = 39,
         .description = COMPOUND_STRING(
-            "A form of Qwilfish from the distant past.\n"
+            "A form of Monmon from the distant past.\n"
             "Fishers detest this troublesome Pokémon\n"
             "because it sprays poison from its spines,\n"
             "getting it everywhere."),
@@ -3828,25 +3828,25 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_QwilfishHisuian,
+        .frontPic = gMonFrontPic_MonmonHisuian,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 16,
-        .frontAnimFrames = sAnims_QwilfishHisuian,
+        .frontAnimFrames = sAnims_MonmonHisuian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 9,
-        .backPic = gMonBackPic_QwilfishHisuian,
+        .backPic = gMonBackPic_MonmonHisuian,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 8,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_QwilfishHisuian,
-        .shinyPalette = gMonShinyPalette_QwilfishHisuian,
-        .iconSprite = gMonIcon_QwilfishHisuian,
+        .palette = gMonPalette_MonmonHisuian,
+        .shinyPalette = gMonShinyPalette_MonmonHisuian,
+        .iconSprite = gMonIcon_MonmonHisuian,
         .iconPalIndex = 1,
-        FOOTPRINT(Qwilfish)
+        FOOTPRINT(Monmon)
         .isHisuianForm = TRUE,
-        .levelUpLearnset = sQwilfishHisuianLevelUpLearnset,
-        .teachableLearnset = sQwilfishHisuianTeachableLearnset,
-        .formSpeciesIdTable = sQwilfishFormSpeciesIdTable,
+        .levelUpLearnset = sMonmonHisuianLevelUpLearnset,
+        .teachableLearnset = sMonmonHisuianTeachableLearnset,
+        .formSpeciesIdTable = sMonmonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_MOVE, MOVE_BARB_BARRAGE, SPECIES_OVERQWIL}),
     },
 
@@ -3902,7 +3902,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sOverqwilTeachableLearnset,
     },
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_QWILFISH
+#endif //P_FAMILY_MONMON
 
 #if P_FAMILY_SHUCKLE
     [SPECIES_SHUCKLE] =

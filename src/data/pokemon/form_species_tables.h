@@ -653,15 +653,15 @@ static const u16 sDuluxmonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_LUXMON
 
-#if P_FAMILY_QWILFISH
-static const u16 sQwilfishFormSpeciesIdTable[] = {
-    SPECIES_QWILFISH,
+#if P_FAMILY_MONMON
+static const u16 sMonmonFormSpeciesIdTable[] = {
+    SPECIES_MONMON,
 #if P_HISUIAN_FORMS
-    SPECIES_QWILFISH_HISUIAN,
+    SPECIES_MONMON_HISUIAN,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_QWILFISH
+#endif //P_FAMILY_MONMON
 
 #if P_FAMILY_HERACROSS
 static const u16 sHeracrossFormSpeciesIdTable[] = {

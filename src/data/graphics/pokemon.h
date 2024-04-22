@@ -3403,22 +3403,22 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_MODBETAMON
 
-#if P_FAMILY_QWILFISH
-    const u32 gMonFrontPic_Qwilfish[] = INCBIN_U32("graphics/pokemon/qwilfish/anim_front.4bpp.lz");
-    const u32 gMonPalette_Qwilfish[] = INCBIN_U32("graphics/pokemon/qwilfish/normal.gbapal.lz");
-    const u32 gMonBackPic_Qwilfish[] = INCBIN_U32("graphics/pokemon/qwilfish/back.4bpp.lz");
-    const u32 gMonShinyPalette_Qwilfish[] = INCBIN_U32("graphics/pokemon/qwilfish/shiny.gbapal.lz");
-    const u8 gMonIcon_Qwilfish[] = INCBIN_U8("graphics/pokemon/qwilfish/icon.4bpp");
+#if P_FAMILY_MONMON
+    const u32 gMonFrontPic_Monmon[] = INCBIN_U32("graphics/pokemon/monmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Monmon[] = INCBIN_U32("graphics/pokemon/monmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Monmon[] = INCBIN_U32("graphics/pokemon/monmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Monmon[] = INCBIN_U32("graphics/pokemon/monmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Monmon[] = INCBIN_U8("graphics/pokemon/monmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Qwilfish[] = INCBIN_U8("graphics/pokemon/qwilfish/footprint.1bpp");
+    const u8 gMonFootprint_Monmon[] = INCBIN_U8("graphics/pokemon/monmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_HISUIAN_FORMS
-    const u32 gMonFrontPic_QwilfishHisuian[] = INCBIN_U32("graphics/pokemon/qwilfish/hisuian/front.4bpp.lz");
-    const u32 gMonPalette_QwilfishHisuian[] = INCBIN_U32("graphics/pokemon/qwilfish/hisuian/normal.gbapal.lz");
-    const u32 gMonBackPic_QwilfishHisuian[] = INCBIN_U32("graphics/pokemon/qwilfish/hisuian/back.4bpp.lz");
-    const u32 gMonShinyPalette_QwilfishHisuian[] = INCBIN_U32("graphics/pokemon/qwilfish/hisuian/shiny.gbapal.lz");
-    const u8 gMonIcon_QwilfishHisuian[] = INCBIN_U8("graphics/pokemon/qwilfish/hisuian/icon.4bpp");
+    const u32 gMonFrontPic_MonmonHisuian[] = INCBIN_U32("graphics/pokemon/monmon/hisuian/front.4bpp.lz");
+    const u32 gMonPalette_MonmonHisuian[] = INCBIN_U32("graphics/pokemon/monmon/hisuian/normal.gbapal.lz");
+    const u32 gMonBackPic_MonmonHisuian[] = INCBIN_U32("graphics/pokemon/monmon/hisuian/back.4bpp.lz");
+    const u32 gMonShinyPalette_MonmonHisuian[] = INCBIN_U32("graphics/pokemon/monmon/hisuian/shiny.gbapal.lz");
+    const u8 gMonIcon_MonmonHisuian[] = INCBIN_U8("graphics/pokemon/monmon/hisuian/icon.4bpp");
 
     const u32 gMonFrontPic_Overqwil[] = INCBIN_U32("graphics/pokemon/overqwil/front.4bpp.lz");
     const u32 gMonPalette_Overqwil[] = INCBIN_U32("graphics/pokemon/overqwil/normal.gbapal.lz");
@@ -3429,7 +3429,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     //const u8 gMonFootprint_Overqwil[] = INCBIN_U8("graphics/pokemon/overqwil/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_QWILFISH
+#endif //P_FAMILY_MONMON
 
 #if P_FAMILY_SHUCKLE
     const u32 gMonFrontPic_Shuckle[] = INCBIN_U32("graphics/pokemon/shuckle/anim_front.4bpp.lz");

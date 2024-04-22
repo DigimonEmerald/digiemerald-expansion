@@ -3016,8 +3016,8 @@ static const union AnimCmd sAnim_Monitamon_1[] =
 };
 #endif //P_FAMILY_MODBETAMON
 
-#if P_FAMILY_QWILFISH
-static const union AnimCmd sAnim_Qwilfish_1[] =
+#if P_FAMILY_MONMON
+static const union AnimCmd sAnim_Monmon_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 8),
@@ -3030,10 +3030,10 @@ static const union AnimCmd sAnim_Qwilfish_1[] =
 };
 
 #if P_HISUIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(QwilfishHisuian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(MonmonHisuian);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Overqwil);
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_QWILFISH
+#endif //P_FAMILY_MONMON
 
 #if P_FAMILY_SHUCKLE
 static const union AnimCmd sAnim_Shuckle_1[] =
@@ -10888,13 +10888,13 @@ SINGLE_ANIMATION(Gliscor);
 SINGLE_ANIMATION(Modbetamon);
 SINGLE_ANIMATION(Monitamon);
 #endif //P_FAMILY_MODBETAMON
-#if P_FAMILY_QWILFISH
-SINGLE_ANIMATION(Qwilfish);
+#if P_FAMILY_MONMON
+SINGLE_ANIMATION(Monmon);
 #if P_HISUIAN_FORMS
-SINGLE_ANIMATION(QwilfishHisuian);
+SINGLE_ANIMATION(MonmonHisuian);
 SINGLE_ANIMATION(Overqwil);
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_QWILFISH
+#endif //P_FAMILY_MONMON
 #if P_FAMILY_SHUCKLE
 SINGLE_ANIMATION(Shuckle);
 #endif //P_FAMILY_SHUCKLE

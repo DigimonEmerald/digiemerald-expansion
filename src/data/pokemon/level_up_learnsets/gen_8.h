@@ -6133,8 +6133,8 @@ static const struct LevelUpMove sMonitamonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_MODBETAMON
 
-#if P_FAMILY_QWILFISH
-static const struct LevelUpMove sQwilfishLevelUpLearnset[] = {
+#if P_FAMILY_MONMON
+static const struct LevelUpMove sMonmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 4, MOVE_HARDEN),
@@ -6158,7 +6158,7 @@ static const struct LevelUpMove sQwilfishLevelUpLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const struct LevelUpMove sQwilfishHisuianLevelUpLearnset[] = {
+static const struct LevelUpMove sMonmonHisuianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 5, MOVE_SPIKES),
     LEVEL_UP_MOVE( 9, MOVE_PIN_MISSILE),
@@ -6186,7 +6186,7 @@ static const struct LevelUpMove sOverqwilLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_QWILFISH
+#endif //P_FAMILY_MONMON
 
 #if P_FAMILY_SHUCKLE
 static const struct LevelUpMove sShuckleLevelUpLearnset[] = {
