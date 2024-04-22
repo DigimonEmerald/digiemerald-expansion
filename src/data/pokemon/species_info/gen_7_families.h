@@ -1970,7 +1970,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .description = COMPOUND_STRING(
             "It's found crawling on beaches and\n"
             "seafloors. The coral that grows on\n"
-            "Corsola's head is as good as a five-star\n"
+            "Patamon's head is as good as a five-star\n"
             "banquet to this Pokémon."),
         .pokemonScale = 491,
         .pokemonOffset = 12,

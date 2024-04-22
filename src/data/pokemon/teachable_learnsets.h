@@ -11391,8 +11391,8 @@ static const u16 sMamoswineTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_PALMON
 
-#if P_FAMILY_CORSOLA
-static const u16 sCorsolaTeachableLearnset[] = {
+#if P_FAMILY_PATAMON
+static const u16 sPatamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,
@@ -11434,7 +11434,7 @@ static const u16 sCorsolaTeachableLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const u16 sCorsolaGalarianTeachableLearnset[] = {
+static const u16 sPatamonGalarianTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,
@@ -11499,7 +11499,7 @@ static const u16 sCursolaTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_CORSOLA
+#endif //P_FAMILY_PATAMON
 
 #if P_FAMILY_REMORAID
 static const u16 sRemoraidTeachableLearnset[] = {

@@ -691,15 +691,15 @@ static const u16 sUrsalunaFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_NEEMON
 
-#if P_FAMILY_CORSOLA
-static const u16 sCorsolaFormSpeciesIdTable[] = {
-    SPECIES_CORSOLA,
+#if P_FAMILY_PATAMON
+static const u16 sPatamonFormSpeciesIdTable[] = {
+    SPECIES_PATAMON,
 #if P_GALARIAN_FORMS
-    SPECIES_CORSOLA_GALARIAN,
+    SPECIES_PATAMON_GALARIAN,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_CORSOLA
+#endif //P_FAMILY_PATAMON
 
 #if P_FAMILY_HOUNDOUR
 static const u16 sHoundoomFormSpeciesIdTable[] = {

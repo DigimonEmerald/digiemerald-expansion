@@ -1877,10 +1877,10 @@ Cry_Mamoswine::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_PALMON
 
-.if P_FAMILY_CORSOLA == TRUE
+.if P_FAMILY_PATAMON == TRUE
 	.align 2
-Cry_Corsola::
-	.incbin "sound/direct_sound_samples/cries/corsola.bin"
+Cry_Patamon::
+	.incbin "sound/direct_sound_samples/cries/patamon.bin"
 
 .if P_GALARIAN_FORMS == TRUE
 	.align 2
@@ -1888,7 +1888,7 @@ Cry_Cursola::
 	.incbin "sound/direct_sound_samples/cries/cursola.bin"
 
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_CORSOLA
+.endif @ P_FAMILY_PATAMON
 
 .if P_FAMILY_REMORAID == TRUE
 	.align 2

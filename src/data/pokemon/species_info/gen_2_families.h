@@ -4827,28 +4827,28 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_PALMON
 
-#if P_FAMILY_CORSOLA
+#if P_FAMILY_PATAMON
 #if P_UPDATED_EXP_YIELDS >= GEN_7
-    #define CORSOLA_EXP_YIELD 144
+    #define PATAMON_EXP_YIELD 144
 #elif P_UPDATED_EXP_YIELDS >= GEN_5
-    #define CORSOLA_EXP_YIELD 133
+    #define PATAMON_EXP_YIELD 133
 #else
-    #define CORSOLA_EXP_YIELD 113
+    #define PATAMON_EXP_YIELD 113
 #endif
-#define CORSOLA_HP       (P_UPDATED_STATS >= GEN_7 ? 65 : 55)
-#define CORSOLA_DEFENSES (P_UPDATED_STATS >= GEN_7 ? 95 : 85)
+#define PATAMON_HP       (P_UPDATED_STATS >= GEN_7 ? 65 : 55)
+#define PATAMON_DEFENSES (P_UPDATED_STATS >= GEN_7 ? 95 : 85)
 
-    [SPECIES_CORSOLA] =
+    [SPECIES_PATAMON] =
     {
-        .baseHP        = CORSOLA_HP,
+        .baseHP        = PATAMON_HP,
         .baseAttack    = 55,
-        .baseDefense   = CORSOLA_DEFENSES,
+        .baseDefense   = PATAMON_DEFENSES,
         .baseSpeed     = 35,
         .baseSpAttack  = 65,
-        .baseSpDefense = CORSOLA_DEFENSES,
+        .baseSpDefense = PATAMON_DEFENSES,
         .types = MON_TYPES(TYPE_WATER, TYPE_ROCK),
         .catchRate = 60,
-        .expYield = CORSOLA_EXP_YIELD,
+        .expYield = PATAMON_EXP_YIELD,
         .evYield_Defense = 1,
         .evYield_SpDefense = 1,
         .itemRare = ITEM_LUMINOUS_MOSS,
@@ -4859,14 +4859,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
         .abilities = { ABILITY_HUSTLE, ABILITY_NATURAL_CURE, ABILITY_REGENERATOR },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Corsola"),
-        .cryId = CRY_CORSOLA,
-        .natDexNum = NATIONAL_DEX_CORSOLA,
+        .speciesName = _("Patamon"),
+        .cryId = CRY_PATAMON,
+        .natDexNum = NATIONAL_DEX_PATAMON,
         .categoryName = _("Coral"),
         .height = 6,
         .weight = 50,
         .description = COMPOUND_STRING(
-            "Corsola live in warm southern seas.\n"
+            "Patamon live in warm southern seas.\n"
             "If the sea becomes polluted, the beautiful\n"
             "coral stalks become discolored and crumble\n"
             "away in tatters."),
@@ -4874,37 +4874,37 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Corsola,
+        .frontPic = gMonFrontPic_Patamon,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Corsola,
+        .frontAnimFrames = sAnims_Patamon,
         .frontAnimId = ANIM_H_SLIDE,
-        .backPic = gMonBackPic_Corsola,
+        .backPic = gMonBackPic_Patamon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Corsola,
-        .shinyPalette = gMonShinyPalette_Corsola,
-        .iconSprite = gMonIcon_Corsola,
+        .palette = gMonPalette_Patamon,
+        .shinyPalette = gMonShinyPalette_Patamon,
+        .iconSprite = gMonIcon_Patamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Corsola)
-        .levelUpLearnset = sCorsolaLevelUpLearnset,
-        .teachableLearnset = sCorsolaTeachableLearnset,
-        .formSpeciesIdTable = sCorsolaFormSpeciesIdTable,
+        FOOTPRINT(Patamon)
+        .levelUpLearnset = sPatamonLevelUpLearnset,
+        .teachableLearnset = sPatamonTeachableLearnset,
+        .formSpeciesIdTable = sPatamonFormSpeciesIdTable,
     },
 
 #if P_GALARIAN_FORMS
-    [SPECIES_CORSOLA_GALARIAN] =
+    [SPECIES_PATAMON_GALARIAN] =
     {
-        .baseHP        = CORSOLA_HP - 5,
+        .baseHP        = PATAMON_HP - 5,
         .baseAttack    = 55,
-        .baseDefense   = CORSOLA_DEFENSES + 5,
+        .baseDefense   = PATAMON_DEFENSES + 5,
         .baseSpeed     = 30,
         .baseSpAttack  = 65,
-        .baseSpDefense = CORSOLA_DEFENSES + 5,
+        .baseSpDefense = PATAMON_DEFENSES + 5,
         .types = MON_TYPES(TYPE_GHOST),
         .catchRate = 60,
-        .expYield = CORSOLA_EXP_YIELD,
+        .expYield = PATAMON_EXP_YIELD,
         .evYield_SpDefense = 1,
         .genderRatio = PERCENT_FEMALE(75),
         .eggCycles = 20,
@@ -4913,39 +4913,39 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
         .abilities = { ABILITY_WEAK_ARMOR, ABILITY_NONE, ABILITY_CURSED_BODY },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Corsola"),
-        .cryId = CRY_CORSOLA,
-        .natDexNum = NATIONAL_DEX_CORSOLA,
+        .speciesName = _("Patamon"),
+        .cryId = CRY_PATAMON,
+        .natDexNum = NATIONAL_DEX_PATAMON,
         .categoryName = _("Coral"),
         .height = 6,
         .weight = 5,
         .description = COMPOUND_STRING(
             "Sudden climate change wiped out this\n"
-            "ancient kind of Corsola. With its branches,\n"
+            "ancient kind of Patamon. With its branches,\n"
             "it absorbs others' life-force. It curses\n"
             "those unaware that kick it by accident."),
         .pokemonScale = 410,
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_CorsolaGalarian,
+        .frontPic = gMonFrontPic_PatamonGalarian,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_CorsolaGalarian,
+        .frontAnimFrames = sAnims_PatamonGalarian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_CorsolaGalarian,
+        .backPic = gMonBackPic_PatamonGalarian,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 8,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_CorsolaGalarian,
-        .shinyPalette = gMonShinyPalette_CorsolaGalarian,
-        .iconSprite = gMonIcon_CorsolaGalarian,
+        .palette = gMonPalette_PatamonGalarian,
+        .shinyPalette = gMonShinyPalette_PatamonGalarian,
+        .iconSprite = gMonIcon_PatamonGalarian,
         .iconPalIndex = 0,
-        FOOTPRINT(Corsola)
+        FOOTPRINT(Patamon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sCorsolaGalarianLevelUpLearnset,
-        .teachableLearnset = sCorsolaGalarianTeachableLearnset,
-        .formSpeciesIdTable = sCorsolaFormSpeciesIdTable,
+        .levelUpLearnset = sPatamonGalarianLevelUpLearnset,
+        .teachableLearnset = sPatamonGalarianTeachableLearnset,
+        .formSpeciesIdTable = sPatamonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_CURSOLA}),
     },
 
@@ -5001,7 +5001,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sCursolaTeachableLearnset,
     },
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_CORSOLA
+#endif //P_FAMILY_PATAMON
 
 #if P_FAMILY_REMORAID
     [SPECIES_REMORAID] =

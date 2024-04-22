@@ -8366,7 +8366,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 6,
         .weight = 87,
         .description = COMPOUND_STRING(
-            "Luvdisc make the branches of Corsola\n"
+            "Luvdisc make the branches of Patamon\n"
             "their nests. There is a custom from long\n"
             "ago of giving a Luvdisc as a gift to\n"
             "express one's feelings of love."),

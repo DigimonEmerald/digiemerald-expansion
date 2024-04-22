@@ -638,12 +638,12 @@ gCryTable::
 	cry Cry_Mamoswine
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_PALMON
-.if P_FAMILY_CORSOLA == TRUE
-	cry Cry_Corsola
+.if P_FAMILY_PATAMON == TRUE
+	cry Cry_Patamon
 .if P_GALARIAN_FORMS == TRUE
 	cry Cry_Cursola
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_CORSOLA
+.endif @ P_FAMILY_PATAMON
 .if P_FAMILY_REMORAID == TRUE
 	cry Cry_Remoraid
 	cry Cry_Octillery
@@ -3064,12 +3064,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Mamoswine
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_PALMON
-.if P_FAMILY_CORSOLA == TRUE
-	cry_reverse Cry_Corsola
+.if P_FAMILY_PATAMON == TRUE
+	cry_reverse Cry_Patamon
 .if P_GALARIAN_FORMS == TRUE
 	cry_reverse Cry_Cursola
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_CORSOLA
+.endif @ P_FAMILY_PATAMON
 .if P_FAMILY_REMORAID == TRUE
 	cry_reverse Cry_Remoraid
 	cry_reverse Cry_Octillery

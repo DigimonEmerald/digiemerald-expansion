@@ -3161,8 +3161,8 @@ static const union AnimCmd sAnim_Mamoswine_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_PALMON
 
-#if P_FAMILY_CORSOLA
-static const union AnimCmd sAnim_Corsola_1[] =
+#if P_FAMILY_PATAMON
+static const union AnimCmd sAnim_Patamon_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 10),
@@ -3173,10 +3173,10 @@ static const union AnimCmd sAnim_Corsola_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(CorsolaGalarian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(PatamonGalarian);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Cursola);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_CORSOLA
+#endif //P_FAMILY_PATAMON
 
 #if P_FAMILY_REMORAID
 static const union AnimCmd sAnim_Remoraid_1[] =
@@ -10933,13 +10933,13 @@ SINGLE_ANIMATION(Palmon_x);
 SINGLE_ANIMATION(Mamoswine);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_PALMON
-#if P_FAMILY_CORSOLA
-SINGLE_ANIMATION(Corsola);
+#if P_FAMILY_PATAMON
+SINGLE_ANIMATION(Patamon);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(CorsolaGalarian);
+SINGLE_ANIMATION(PatamonGalarian);
 SINGLE_ANIMATION(Cursola);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_CORSOLA
+#endif //P_FAMILY_PATAMON
 #if P_FAMILY_REMORAID
 SINGLE_ANIMATION(Remoraid);
 SINGLE_ANIMATION(Octillery);

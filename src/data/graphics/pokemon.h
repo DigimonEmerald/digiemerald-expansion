@@ -3608,22 +3608,22 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_PALMON
 
-#if P_FAMILY_CORSOLA
-    const u32 gMonFrontPic_Corsola[] = INCBIN_U32("graphics/pokemon/corsola/anim_front.4bpp.lz");
-    const u32 gMonPalette_Corsola[] = INCBIN_U32("graphics/pokemon/corsola/normal.gbapal.lz");
-    const u32 gMonBackPic_Corsola[] = INCBIN_U32("graphics/pokemon/corsola/back.4bpp.lz");
-    const u32 gMonShinyPalette_Corsola[] = INCBIN_U32("graphics/pokemon/corsola/shiny.gbapal.lz");
-    const u8 gMonIcon_Corsola[] = INCBIN_U8("graphics/pokemon/corsola/icon.4bpp");
+#if P_FAMILY_PATAMON
+    const u32 gMonFrontPic_Patamon[] = INCBIN_U32("graphics/pokemon/patamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Patamon[] = INCBIN_U32("graphics/pokemon/patamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Patamon[] = INCBIN_U32("graphics/pokemon/patamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Patamon[] = INCBIN_U32("graphics/pokemon/patamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Patamon[] = INCBIN_U8("graphics/pokemon/patamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Corsola[] = INCBIN_U8("graphics/pokemon/corsola/footprint.1bpp");
+    const u8 gMonFootprint_Patamon[] = INCBIN_U8("graphics/pokemon/patamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GALARIAN_FORMS
-    const u32 gMonFrontPic_CorsolaGalarian[] = INCBIN_U32("graphics/pokemon/corsola/galarian/front.4bpp.lz");
-    const u32 gMonPalette_CorsolaGalarian[] = INCBIN_U32("graphics/pokemon/corsola/galarian/normal.gbapal.lz");
-    const u32 gMonBackPic_CorsolaGalarian[] = INCBIN_U32("graphics/pokemon/corsola/galarian/back.4bpp.lz");
-    const u32 gMonShinyPalette_CorsolaGalarian[] = INCBIN_U32("graphics/pokemon/corsola/galarian/shiny.gbapal.lz");
-    const u8 gMonIcon_CorsolaGalarian[] = INCBIN_U8("graphics/pokemon/corsola/galarian/icon.4bpp");
+    const u32 gMonFrontPic_PatamonGalarian[] = INCBIN_U32("graphics/pokemon/patamon/galarian/front.4bpp.lz");
+    const u32 gMonPalette_PatamonGalarian[] = INCBIN_U32("graphics/pokemon/patamon/galarian/normal.gbapal.lz");
+    const u32 gMonBackPic_PatamonGalarian[] = INCBIN_U32("graphics/pokemon/patamon/galarian/back.4bpp.lz");
+    const u32 gMonShinyPalette_PatamonGalarian[] = INCBIN_U32("graphics/pokemon/patamon/galarian/shiny.gbapal.lz");
+    const u8 gMonIcon_PatamonGalarian[] = INCBIN_U8("graphics/pokemon/patamon/galarian/icon.4bpp");
 
     const u32 gMonFrontPic_Cursola[] = INCBIN_U32("graphics/pokemon/cursola/front.4bpp.lz");
     const u32 gMonPalette_Cursola[] = INCBIN_U32("graphics/pokemon/cursola/normal.gbapal.lz");
@@ -3634,7 +3634,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Cursola[] = INCBIN_U8("graphics/pokemon/cursola/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_CORSOLA
+#endif //P_FAMILY_PATAMON
 
 #if P_FAMILY_REMORAID
     const u32 gMonFrontPic_Remoraid[] = INCBIN_U32("graphics/pokemon/remoraid/anim_front.4bpp.lz");

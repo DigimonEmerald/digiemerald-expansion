@@ -1892,8 +1892,8 @@ const u16 gEggMoves[] = {
         MOVE_FREEZE_DRY),
 #endif //P_FAMILY_PALMON
 
-#if P_FAMILY_CORSOLA
-    egg_moves(CORSOLA,
+#if P_FAMILY_PATAMON
+    egg_moves(PATAMON,
         MOVE_SCREECH,
         MOVE_MIST,
         MOVE_AMNESIA,
@@ -1910,7 +1910,7 @@ const u16 gEggMoves[] = {
         MOVE_CAMOUFLAGE,
         MOVE_LIQUIDATION),
 #if P_GALARIAN_FORMS
-    egg_moves(CORSOLA_GALARIAN,
+    egg_moves(PATAMON_GALARIAN,
         MOVE_HAZE,
         MOVE_CONFUSE_RAY,
         MOVE_NATURE_POWER,
@@ -1918,7 +1918,7 @@ const u16 gEggMoves[] = {
         MOVE_WATER_PULSE,
         MOVE_HEAD_SMASH),
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_CORSOLA
+#endif //P_FAMILY_PATAMON
 
 #if P_FAMILY_REMORAID
     egg_moves(REMORAID,

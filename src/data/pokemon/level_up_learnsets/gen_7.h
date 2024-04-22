@@ -6466,8 +6466,8 @@ static const struct LevelUpMove sMamoswineLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_PALMON
 
-#if P_FAMILY_CORSOLA
-static const struct LevelUpMove sCorsolaLevelUpLearnset[] = {
+#if P_FAMILY_PATAMON
+static const struct LevelUpMove sPatamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 4, MOVE_BUBBLE),
@@ -6490,7 +6490,7 @@ static const struct LevelUpMove sCorsolaLevelUpLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const struct LevelUpMove sCorsolaGalarianLevelUpLearnset[] = {
+static const struct LevelUpMove sPatamonGalarianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 5, MOVE_ASTONISH),
@@ -6525,7 +6525,7 @@ static const struct LevelUpMove sCursolaLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_CORSOLA
+#endif //P_FAMILY_PATAMON
 
 #if P_FAMILY_REMORAID
 static const struct LevelUpMove sRemoraidLevelUpLearnset[] = {

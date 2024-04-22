@@ -608,7 +608,7 @@ static void OpponentHandleChooseMove(u32 battler)
                     {SPECIES_HEATMOR,   SPECIES_DURANT},
                     {SPECIES_DURANT,    SPECIES_HEATMOR},
                     {SPECIES_SABLEYE,   SPECIES_CARBINK},
-                    {SPECIES_MAREANIE,  SPECIES_CORSOLA},
+                    {SPECIES_MAREANIE,  SPECIES_PATAMON},
                 };
                 speciesAttacker = gBattleMons[battler].species;
                 speciesTarget = gBattleMons[GetBattlerAtPosition(BATTLE_PARTNER(battler))].species;

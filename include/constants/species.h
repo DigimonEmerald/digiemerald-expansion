@@ -223,7 +223,7 @@
 #define SPECIES_OTAMAMON_X                                219
 #define SPECIES_PALMON                                  220
 #define SPECIES_PALMON_X                               221
-#define SPECIES_CORSOLA                                 222
+#define SPECIES_PATAMON                                 222
 #define SPECIES_REMORAID                                223
 #define SPECIES_OCTILLERY                               224
 #define SPECIES_DELIBIRD                                225
@@ -1044,7 +1044,7 @@
 #define SPECIES_EBIBURGMON_GALARIAN                         983
 #define SPECIES_EKAKIMON_GALARIAN                        984
 #define SPECIES_LIOLLMON_GALARIAN                       985
-#define SPECIES_CORSOLA_GALARIAN                        986
+#define SPECIES_PATAMON_GALARIAN                        986
 #define SPECIES_ZIGZAGOON_GALARIAN                      987
 #define SPECIES_LINOONE_GALARIAN                        988
 #define SPECIES_DARUMAKA_GALARIAN                       989
