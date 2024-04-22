@@ -314,7 +314,7 @@ gCryTable::
 	cry Cry_Biyomon
 	cry Cry_Blkagumon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry Cry_Kingdra
+	cry Cry_Psychemon
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_BIYOMON
 .if P_FAMILY_BLKAGUMON_X == TRUE
@@ -2740,7 +2740,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Biyomon
 	cry_reverse Cry_Blkagumon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry_reverse Cry_Kingdra
+	cry_reverse Cry_Psychemon
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_BIYOMON
 .if P_FAMILY_BLKAGUMON_X == TRUE

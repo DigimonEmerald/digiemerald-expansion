@@ -1723,7 +1723,7 @@ static const union AnimCmd sAnim_Blkagumon_1[] =
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Kingdra_1[] =
+static const union AnimCmd sAnim_Psychemon_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 10),
@@ -10572,7 +10572,7 @@ SINGLE_ANIMATION(Betamon_xMega);
 SINGLE_ANIMATION(Biyomon);
 SINGLE_ANIMATION(Blkagumon);
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Kingdra);
+SINGLE_ANIMATION(Psychemon);
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BIYOMON
 #if P_FAMILY_BLKAGUMON_X

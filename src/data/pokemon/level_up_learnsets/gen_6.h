@@ -3370,7 +3370,7 @@ static const struct LevelUpMove sBlkagumonLevelUpLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const struct LevelUpMove sKingdraLevelUpLearnset[] = {
+static const struct LevelUpMove sPsychemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE( 1, MOVE_YAWN),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),

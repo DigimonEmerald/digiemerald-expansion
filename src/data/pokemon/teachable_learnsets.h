@@ -6290,7 +6290,7 @@ static const u16 sBlkagumonTeachableLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const u16 sKingdraTeachableLearnset[] = {
+static const u16 sPsychemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,

@@ -11677,12 +11677,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Blkagumon)
         .levelUpLearnset = sBlkagumonLevelUpLearnset,
         .teachableLearnset = sBlkagumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_DRAGON_SCALE, SPECIES_KINGDRA},
-                                {EVO_ITEM, ITEM_DRAGON_SCALE, SPECIES_KINGDRA}),
+        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_DRAGON_SCALE, SPECIES_PSYCHEMON},
+                                {EVO_ITEM, ITEM_DRAGON_SCALE, SPECIES_PSYCHEMON}),
     },
 
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_KINGDRA] =
+    [SPECIES_PSYCHEMON] =
     {
         .baseHP        = 75,
         .baseAttack    = 95,
@@ -11710,9 +11710,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_SNIPER, ABILITY_DAMP },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Kingdra"),
-        .cryId = CRY_KINGDRA,
-        .natDexNum = NATIONAL_DEX_KINGDRA,
+        .speciesName = _("Psychemon"),
+        .cryId = CRY_PSYCHEMON,
+        .natDexNum = NATIONAL_DEX_PSYCHEMON,
         .categoryName = _("Dragon"),
         .height = 18,
         .weight = 1520,
@@ -11725,22 +11725,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 287,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Kingdra,
+        .frontPic = gMonFrontPic_Psychemon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_Kingdra,
+        .frontAnimFrames = sAnims_Psychemon,
         .frontAnimId = ANIM_CIRCLE_INTO_BG,
-        .backPic = gMonBackPic_Kingdra,
+        .backPic = gMonBackPic_Psychemon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
-        .palette = gMonPalette_Kingdra,
-        .shinyPalette = gMonShinyPalette_Kingdra,
-        .iconSprite = gMonIcon_Kingdra,
+        .palette = gMonPalette_Psychemon,
+        .shinyPalette = gMonShinyPalette_Psychemon,
+        .iconSprite = gMonIcon_Psychemon,
         .iconPalIndex = 0,
-        FOOTPRINT(Kingdra)
-        .levelUpLearnset = sKingdraLevelUpLearnset,
-        .teachableLearnset = sKingdraTeachableLearnset,
+        FOOTPRINT(Psychemon)
+        .levelUpLearnset = sPsychemonLevelUpLearnset,
+        .teachableLearnset = sPsychemonTeachableLearnset,
     },
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BIYOMON
