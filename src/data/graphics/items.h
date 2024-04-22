@@ -874,8 +874,8 @@ const u32 gItemIconPalette_Heracronite[] = INCBIN_U32("graphics/items/icon_palet
 const u32 gItemIcon_Pomumoninite[] = INCBIN_U32("graphics/items/icons/pomumoninite.4bpp.lz");
 const u32 gItemIconPalette_Pomumoninite[] = INCBIN_U32("graphics/items/icon_palettes/pomumoninite.gbapal.lz");
 
-const u32 gItemIcon_Tyranitarite[] = INCBIN_U32("graphics/items/icons/tyranitarite.4bpp.lz");
-const u32 gItemIconPalette_Tyranitarite[] = INCBIN_U32("graphics/items/icon_palettes/tyranitarite.gbapal.lz");
+const u32 gItemIcon_Spadamonite[] = INCBIN_U32("graphics/items/icons/spadamonite.4bpp.lz");
+const u32 gItemIconPalette_Spadamonite[] = INCBIN_U32("graphics/items/icon_palettes/spadamonite.gbapal.lz");
 
 const u32 gItemIcon_Sceptilite[] = INCBIN_U32("graphics/items/icons/sceptilite.4bpp.lz");
 const u32 gItemIconPalette_Sceptilite[] = INCBIN_U32("graphics/items/icon_palettes/sceptilite.gbapal.lz");

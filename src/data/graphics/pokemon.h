@@ -3853,21 +3853,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Sounbrdmon[] = INCBIN_U8("graphics/pokemon/sounbrdmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Tyranitar[] = INCBIN_U32("graphics/pokemon/tyranitar/anim_front.4bpp.lz");
-    const u32 gMonPalette_Tyranitar[] = INCBIN_U32("graphics/pokemon/tyranitar/normal.gbapal.lz");
-    const u32 gMonBackPic_Tyranitar[] = INCBIN_U32("graphics/pokemon/tyranitar/back.4bpp.lz");
-    const u32 gMonShinyPalette_Tyranitar[] = INCBIN_U32("graphics/pokemon/tyranitar/shiny.gbapal.lz");
-    const u8 gMonIcon_Tyranitar[] = INCBIN_U8("graphics/pokemon/tyranitar/icon.4bpp");
+    const u32 gMonFrontPic_Spadamon[] = INCBIN_U32("graphics/pokemon/spadamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Spadamon[] = INCBIN_U32("graphics/pokemon/spadamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Spadamon[] = INCBIN_U32("graphics/pokemon/spadamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Spadamon[] = INCBIN_U32("graphics/pokemon/spadamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Spadamon[] = INCBIN_U8("graphics/pokemon/spadamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Tyranitar[] = INCBIN_U8("graphics/pokemon/tyranitar/footprint.1bpp");
+    const u8 gMonFootprint_Spadamon[] = INCBIN_U8("graphics/pokemon/spadamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_TyranitarMega[] = INCBIN_U32("graphics/pokemon/tyranitar/mega/front.4bpp.lz");
-    const u32 gMonPalette_TyranitarMega[] = INCBIN_U32("graphics/pokemon/tyranitar/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_TyranitarMega[] = INCBIN_U32("graphics/pokemon/tyranitar/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_TyranitarMega[] = INCBIN_U32("graphics/pokemon/tyranitar/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_TyranitarMega[] = INCBIN_U8("graphics/pokemon/tyranitar/mega/icon.4bpp");
+    const u32 gMonFrontPic_SpadamonMega[] = INCBIN_U32("graphics/pokemon/spadamon/mega/front.4bpp.lz");
+    const u32 gMonPalette_SpadamonMega[] = INCBIN_U32("graphics/pokemon/spadamon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_SpadamonMega[] = INCBIN_U32("graphics/pokemon/spadamon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_SpadamonMega[] = INCBIN_U32("graphics/pokemon/spadamon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_SpadamonMega[] = INCBIN_U8("graphics/pokemon/spadamon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SOLARMON
 

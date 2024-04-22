@@ -6145,10 +6145,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Sounbrdmon)
         .levelUpLearnset = sSounbrdmonLevelUpLearnset,
         .teachableLearnset = sSounbrdmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_TYRANITAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_SPADAMON}),
     },
 
-    [SPECIES_TYRANITAR] =
+    [SPECIES_SPADAMON] =
     {
         .baseHP        = 100,
         .baseAttack    = 134,
@@ -6173,14 +6173,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_SAND_STREAM, ABILITY_NONE, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Tyranitar"),
-        .cryId = CRY_TYRANITAR,
-        .natDexNum = NATIONAL_DEX_TYRANITAR,
+        .speciesName = _("Spadamon"),
+        .cryId = CRY_SPADAMON,
+        .natDexNum = NATIONAL_DEX_SPADAMON,
         .categoryName = _("Armor"),
         .height = 20,
         .weight = 2020,
         .description = COMPOUND_STRING(
-            "A Tyranitar is so overwhelmingly powerful,\n"
+            "A Spadamon is so overwhelmingly powerful,\n"
             "it can bring down a whole mountain to make\n"
             "its nest. It roams in mountains seeking\n"
             "new opponents to fight."),
@@ -6188,29 +6188,29 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 0,
         .trainerScale = 345,
         .trainerOffset = 7,
-        .frontPic = gMonFrontPic_Tyranitar,
+        .frontPic = gMonFrontPic_Spadamon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Tyranitar,
+        .frontAnimFrames = sAnims_Spadamon,
         .frontAnimId = ANIM_V_SHAKE,
         .frontAnimDelay = 10,
-        .backPic = gMonBackPic_Tyranitar,
+        .backPic = gMonBackPic_Spadamon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Tyranitar,
-        .shinyPalette = gMonShinyPalette_Tyranitar,
-        .iconSprite = gMonIcon_Tyranitar,
+        .palette = gMonPalette_Spadamon,
+        .shinyPalette = gMonShinyPalette_Spadamon,
+        .iconSprite = gMonIcon_Spadamon,
         .iconPalIndex = 4,
-        FOOTPRINT(Tyranitar)
-        .levelUpLearnset = sTyranitarLevelUpLearnset,
-        .teachableLearnset = sTyranitarTeachableLearnset,
-        .formSpeciesIdTable = sTyranitarFormSpeciesIdTable,
-        .formChangeTable = sTyranitarFormChangeTable,
+        FOOTPRINT(Spadamon)
+        .levelUpLearnset = sSpadamonLevelUpLearnset,
+        .teachableLearnset = sSpadamonTeachableLearnset,
+        .formSpeciesIdTable = sSpadamonFormSpeciesIdTable,
+        .formChangeTable = sSpadamonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_TYRANITAR_MEGA] =
+    [SPECIES_SPADAMON_MEGA] =
     {
         .baseHP        = 100,
         .baseAttack    = 164,
@@ -6229,9 +6229,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_SAND_STREAM, ABILITY_SAND_STREAM, ABILITY_SAND_STREAM },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Tyranitar"),
-        .cryId = CRY_TYRANITAR_MEGA,
-        .natDexNum = NATIONAL_DEX_TYRANITAR,
+        .speciesName = _("Spadamon"),
+        .cryId = CRY_SPADAMON_MEGA,
+        .natDexNum = NATIONAL_DEX_SPADAMON,
         .categoryName = _("Armor"),
         .height = 25,
         .weight = 2550,
@@ -6244,25 +6244,25 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 0,
         .trainerScale = 345,
         .trainerOffset = 7,
-        .frontPic = gMonFrontPic_TyranitarMega,
+        .frontPic = gMonFrontPic_SpadamonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_TyranitarMega,
+        .frontAnimFrames = sAnims_SpadamonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_TyranitarMega,
+        .backPic = gMonBackPic_SpadamonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_TyranitarMega,
-        .shinyPalette = gMonShinyPalette_TyranitarMega,
-        .iconSprite = gMonIcon_TyranitarMega,
+        .palette = gMonPalette_SpadamonMega,
+        .shinyPalette = gMonShinyPalette_SpadamonMega,
+        .iconSprite = gMonIcon_SpadamonMega,
         .iconPalIndex = 1,
-        FOOTPRINT(Tyranitar)
+        FOOTPRINT(Spadamon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sTyranitarLevelUpLearnset,
-        .teachableLearnset = sTyranitarTeachableLearnset,
-        .formSpeciesIdTable = sTyranitarFormSpeciesIdTable,
-        .formChangeTable = sTyranitarFormChangeTable,
+        .levelUpLearnset = sSpadamonLevelUpLearnset,
+        .teachableLearnset = sSpadamonTeachableLearnset,
+        .formSpeciesIdTable = sSpadamonFormSpeciesIdTable,
+        .formChangeTable = sSpadamonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SOLARMON

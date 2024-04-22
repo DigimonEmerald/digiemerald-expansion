@@ -3357,7 +3357,7 @@ static const union AnimCmd sAnim_Sounbrdmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Tyranitar_1[] =
+static const union AnimCmd sAnim_Spadamon_1[] =
 {
     ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(1, 30),
@@ -3366,7 +3366,7 @@ static const union AnimCmd sAnim_Tyranitar_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(TyranitarMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(SpadamonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SOLARMON
 
@@ -10991,9 +10991,9 @@ SINGLE_ANIMATION(Icegobimon);
 #if P_FAMILY_SOLARMON
 SINGLE_ANIMATION(Solarmon);
 SINGLE_ANIMATION(Sounbrdmon);
-SINGLE_ANIMATION(Tyranitar);
+SINGLE_ANIMATION(Spadamon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(TyranitarMega);
+SINGLE_ANIMATION(SpadamonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SOLARMON
 #if P_FAMILY_LUGIA

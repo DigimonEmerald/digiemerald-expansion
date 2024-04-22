@@ -4979,7 +4979,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .description = COMPOUND_STRING(
             "It has some similarities to a\n"
             "Pokémon introduced in a dubious magazine\n"
-            "as a Tyranitar from one billion\n"
+            "as a Spadamon from one billion\n"
             "years into the future."),
         .pokemonScale = 356,
         .pokemonOffset = 17,

@@ -2002,13 +2002,13 @@ Cry_Sounbrdmon::
 	.incbin "sound/direct_sound_samples/cries/sounbrdmon.bin"
 
 	.align 2
-Cry_Tyranitar::
-	.incbin "sound/direct_sound_samples/cries/tyranitar.bin"
+Cry_Spadamon::
+	.incbin "sound/direct_sound_samples/cries/spadamon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_TyranitarMega::
-	.incbin "sound/direct_sound_samples/cries/tyranitar_mega.bin"
+Cry_SpadamonMega::
+	.incbin "sound/direct_sound_samples/cries/spadamon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SOLARMON
 

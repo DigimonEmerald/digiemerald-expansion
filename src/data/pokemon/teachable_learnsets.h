@@ -12171,7 +12171,7 @@ static const u16 sSounbrdmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sTyranitarTeachableLearnset[] = {
+static const u16 sSpadamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,

@@ -249,7 +249,7 @@
 #define SPECIES_ICEGOBIMON                                 245
 #define SPECIES_SOLARMON                                246
 #define SPECIES_SOUNBRDMON                                 247
-#define SPECIES_TYRANITAR                               248
+#define SPECIES_SPADAMON                               248
 #define SPECIES_LUGIA                                   249
 #define SPECIES_HO_OH                                   250
 #define SPECIES_CELEBI                                  251
@@ -984,7 +984,7 @@
 #define SPECIES_MONODRAMON_MEGA                             923
 #define SPECIES_MUCHOMON_MEGA                          924
 #define SPECIES_POMUMON_MEGA                           925
-#define SPECIES_TYRANITAR_MEGA                          926
+#define SPECIES_SPADAMON_MEGA                          926
 #define SPECIES_SCEPTILE_MEGA                           927
 #define SPECIES_BLAZIKEN_MEGA                           928
 #define SPECIES_SWAMPERT_MEGA                           929
