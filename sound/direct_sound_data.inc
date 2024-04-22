@@ -1764,17 +1764,17 @@ Cry_Duluxmon::
 .endif @ P_GEN_9_CROSS_EVOS
 .endif @ P_FAMILY_LUXMON
 
-.if P_FAMILY_GLIGAR == TRUE
+.if P_FAMILY_METABEE == TRUE
 	.align 2
-Cry_Gligar::
-	.incbin "sound/direct_sound_samples/cries/gligar.bin"
+Cry_Metabee::
+	.incbin "sound/direct_sound_samples/cries/metabee.bin"
 
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
 Cry_Gliscor::
 	.incbin "sound/direct_sound_samples/cries/gliscor.bin"
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_GLIGAR
+.endif @ P_FAMILY_METABEE
 
 .if P_FAMILY_SNUBBULL == TRUE
 	.align 2

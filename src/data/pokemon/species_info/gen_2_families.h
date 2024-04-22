@@ -3496,8 +3496,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_LUXMON
 
-#if P_FAMILY_GLIGAR
-    [SPECIES_GLIGAR] =
+#if P_FAMILY_METABEE
+    [SPECIES_METABEE] =
     {
         .baseHP        = 65,
         .baseAttack    = 75,
@@ -3516,9 +3516,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_HYPER_CUTTER, ABILITY_SAND_VEIL, ABILITY_IMMUNITY },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Gligar"),
-        .cryId = CRY_GLIGAR,
-        .natDexNum = NATIONAL_DEX_GLIGAR,
+        .speciesName = _("Metabee"),
+        .cryId = CRY_METABEE,
+        .natDexNum = NATIONAL_DEX_METABEE,
         .categoryName = _("Fly Scorpion"),
         .height = 11,
         .weight = 648,
@@ -3531,27 +3531,27 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = -1,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Gligar,
-        .frontPicFemale = gMonFrontPic_GligarF,
+        .frontPic = gMonFrontPic_Metabee,
+        .frontPicFemale = gMonFrontPic_MetabeeF,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Gligar,
+        .frontAnimFrames = sAnims_Metabee,
         .frontAnimId = ANIM_SHRINK_GROW,
         .enemyMonElevation = 8,
-        .backPic = gMonBackPic_Gligar,
-        .backPicFemale = gMonBackPic_GligarF,
+        .backPic = gMonBackPic_Metabee,
+        .backPicFemale = gMonBackPic_MetabeeF,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_SHRINK_GROW,
-        .palette = gMonPalette_Gligar,
-        .shinyPalette = gMonShinyPalette_Gligar,
-        .iconSprite = gMonIcon_Gligar,
+        .palette = gMonPalette_Metabee,
+        .shinyPalette = gMonShinyPalette_Metabee,
+        .iconSprite = gMonIcon_Metabee,
         .iconPalIndex = 0,
-        FOOTPRINT(Gligar)
-        .levelUpLearnset = sGligarLevelUpLearnset,
-        .teachableLearnset = sGligarTeachableLearnset,
+        FOOTPRINT(Metabee)
+        .levelUpLearnset = sMetabeeLevelUpLearnset,
+        .teachableLearnset = sMetabeeTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM_HOLD_NIGHT, ITEM_RAZOR_FANG, SPECIES_GLISCOR},
                                 {EVO_ITEM_NIGHT, ITEM_RAZOR_FANG, SPECIES_GLISCOR}),
     },
@@ -3610,7 +3610,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sGliscorTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_GLIGAR
+#endif //P_FAMILY_METABEE
 
 #if P_FAMILY_SNUBBULL
     [SPECIES_SNUBBULL] =

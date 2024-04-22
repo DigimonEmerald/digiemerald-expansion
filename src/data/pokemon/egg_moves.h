@@ -1741,8 +1741,8 @@ const u16 gEggMoves[] = {
         MOVE_HEX),
 #endif //P_FAMILY_LUXMON
 
-#if P_FAMILY_GLIGAR
-    egg_moves(GLIGAR,
+#if P_FAMILY_METABEE
+    egg_moves(METABEE,
         MOVE_METAL_CLAW,
         MOVE_WING_ATTACK,
         MOVE_RAZOR_WIND,
@@ -1757,7 +1757,7 @@ const u16 gEggMoves[] = {
         MOVE_POWER_TRICK,
         MOVE_ROCK_CLIMB,
         MOVE_POISON_TAIL),
-#endif //P_FAMILY_GLIGAR
+#endif //P_FAMILY_METABEE
 
 #if P_FAMILY_SNUBBULL
     egg_moves(SNUBBULL,

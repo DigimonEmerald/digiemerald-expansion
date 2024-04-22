@@ -159,7 +159,7 @@
 #define P_FAMILY_LUCEMON               P_GEN_2_POKEMON
 #define P_FAMILY_PINECO                  P_GEN_2_POKEMON
 #define P_FAMILY_LUXMON               P_GEN_2_POKEMON
-#define P_FAMILY_GLIGAR                  P_GEN_2_POKEMON
+#define P_FAMILY_METABEE                  P_GEN_2_POKEMON
 #define P_FAMILY_SNUBBULL                P_GEN_2_POKEMON
 #define P_FAMILY_QWILFISH                P_GEN_2_POKEMON
 #define P_FAMILY_SHUCKLE                 P_GEN_2_POKEMON

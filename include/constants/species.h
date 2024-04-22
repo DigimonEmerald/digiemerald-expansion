@@ -208,7 +208,7 @@
 #define SPECIES_PINECO                                  204
 #define SPECIES_FORRETRESS                              205
 #define SPECIES_LUXMON                               206
-#define SPECIES_GLIGAR                                  207
+#define SPECIES_METABEE                                  207
 #define SPECIES_STEELIX                                 208
 #define SPECIES_SNUBBULL                                209
 #define SPECIES_GRANBULL                                210

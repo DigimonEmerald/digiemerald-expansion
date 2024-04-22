@@ -4404,8 +4404,8 @@ static const struct LevelUpMove sDuluxmonLevelUpLearnset[] = {
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_LUXMON
 
-#if P_FAMILY_GLIGAR
-static const struct LevelUpMove sGligarLevelUpLearnset[] = {
+#if P_FAMILY_METABEE
+static const struct LevelUpMove sMetabeeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 6, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(13, MOVE_HARDEN),
@@ -4441,7 +4441,7 @@ static const struct LevelUpMove sGliscorLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_GLIGAR
+#endif //P_FAMILY_METABEE
 
 #if P_FAMILY_SNUBBULL
 static const struct LevelUpMove sSnubbullLevelUpLearnset[] = {

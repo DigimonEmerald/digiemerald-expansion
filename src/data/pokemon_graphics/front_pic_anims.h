@@ -2980,8 +2980,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Duluxmon);
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_LUXMON
 
-#if P_FAMILY_GLIGAR
-static const union AnimCmd sAnim_Gligar_1[] =
+#if P_FAMILY_METABEE
+static const union AnimCmd sAnim_Metabee_1[] =
 {
     ANIMCMD_FRAME(1, 17),
     ANIMCMD_FRAME(0, 10),
@@ -2998,7 +2998,7 @@ static const union AnimCmd sAnim_Gliscor_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_GLIGAR
+#endif //P_FAMILY_METABEE
 
 #if P_FAMILY_SNUBBULL
 static const union AnimCmd sAnim_Snubbull_1[] =
@@ -10878,12 +10878,12 @@ SINGLE_ANIMATION(Luxmon);
 SINGLE_ANIMATION(Duluxmon);
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_LUXMON
-#if P_FAMILY_GLIGAR
-SINGLE_ANIMATION(Gligar);
+#if P_FAMILY_METABEE
+SINGLE_ANIMATION(Metabee);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Gliscor);
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_GLIGAR
+#endif //P_FAMILY_METABEE
 #if P_FAMILY_SNUBBULL
 SINGLE_ANIMATION(Snubbull);
 SINGLE_ANIMATION(Granbull);

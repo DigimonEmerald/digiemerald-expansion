@@ -3358,18 +3358,18 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_LUXMON
 
-#if P_FAMILY_GLIGAR
-    const u32 gMonFrontPic_Gligar[] = INCBIN_U32("graphics/pokemon/gligar/anim_front.4bpp.lz");
-    const u32 gMonPalette_Gligar[] = INCBIN_U32("graphics/pokemon/gligar/normal.gbapal.lz");
-    const u32 gMonBackPic_Gligar[] = INCBIN_U32("graphics/pokemon/gligar/back.4bpp.lz");
-    const u32 gMonShinyPalette_Gligar[] = INCBIN_U32("graphics/pokemon/gligar/shiny.gbapal.lz");
-    const u8 gMonIcon_Gligar[] = INCBIN_U8("graphics/pokemon/gligar/icon.4bpp");
+#if P_FAMILY_METABEE
+    const u32 gMonFrontPic_Metabee[] = INCBIN_U32("graphics/pokemon/metabee/anim_front.4bpp.lz");
+    const u32 gMonPalette_Metabee[] = INCBIN_U32("graphics/pokemon/metabee/normal.gbapal.lz");
+    const u32 gMonBackPic_Metabee[] = INCBIN_U32("graphics/pokemon/metabee/back.4bpp.lz");
+    const u32 gMonShinyPalette_Metabee[] = INCBIN_U32("graphics/pokemon/metabee/shiny.gbapal.lz");
+    const u8 gMonIcon_Metabee[] = INCBIN_U8("graphics/pokemon/metabee/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Gligar[] = INCBIN_U8("graphics/pokemon/gligar/footprint.1bpp");
+    const u8 gMonFootprint_Metabee[] = INCBIN_U8("graphics/pokemon/metabee/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_GligarF[] = INCBIN_U32("graphics/pokemon/gligar/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_GligarF[] = INCBIN_U32("graphics/pokemon/gligar/backf.4bpp.lz");
+    const u32 gMonFrontPic_MetabeeF[] = INCBIN_U32("graphics/pokemon/metabee/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_MetabeeF[] = INCBIN_U32("graphics/pokemon/metabee/backf.4bpp.lz");
 
 #if P_GEN_4_CROSS_EVOS
     const u32 gMonFrontPic_Gliscor[] = INCBIN_U32("graphics/pokemon/gliscor/anim_front.4bpp.lz");
@@ -3381,7 +3381,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Gliscor[] = INCBIN_U8("graphics/pokemon/gliscor/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_GLIGAR
+#endif //P_FAMILY_METABEE
 
 #if P_FAMILY_SNUBBULL
     const u32 gMonFrontPic_Snubbull[] = INCBIN_U32("graphics/pokemon/snubbull/anim_front.4bpp.lz");

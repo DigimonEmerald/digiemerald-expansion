@@ -586,12 +586,12 @@ gCryTable::
 	cry Cry_Duluxmon
 .endif @ P_GEN_9_CROSS_EVOS
 .endif @ P_FAMILY_LUXMON
-.if P_FAMILY_GLIGAR == TRUE
-	cry Cry_Gligar
+.if P_FAMILY_METABEE == TRUE
+	cry Cry_Metabee
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Gliscor
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_GLIGAR
+.endif @ P_FAMILY_METABEE
 .if P_FAMILY_SNUBBULL == TRUE
 	cry Cry_Snubbull
 	cry Cry_Granbull
@@ -3012,12 +3012,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Duluxmon
 .endif @ P_GEN_9_CROSS_EVOS
 .endif @ P_FAMILY_LUXMON
-.if P_FAMILY_GLIGAR == TRUE
-	cry_reverse Cry_Gligar
+.if P_FAMILY_METABEE == TRUE
+	cry_reverse Cry_Metabee
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Gliscor
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_GLIGAR
+.endif @ P_FAMILY_METABEE
 .if P_FAMILY_SNUBBULL == TRUE
 	cry_reverse Cry_Snubbull
 	cry_reverse Cry_Granbull
