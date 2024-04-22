@@ -54,10 +54,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Falcomon_06)
         .levelUpLearnset = sFalcomon_06LevelUpLearnset,
         .teachableLearnset = sFalcomon_06TeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_BAYLEEF}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_FANBEEMON}),
     },
 
-    [SPECIES_BAYLEEF] =
+    [SPECIES_FANBEEMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 62,
@@ -77,14 +77,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_LEAF_GUARD },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Bayleef"),
-        .cryId = CRY_BAYLEEF,
-        .natDexNum = NATIONAL_DEX_BAYLEEF,
+        .speciesName = _("Fanbeemon"),
+        .cryId = CRY_FANBEEMON,
+        .natDexNum = NATIONAL_DEX_FANBEEMON,
         .categoryName = _("Leaf"),
         .height = 12,
         .weight = 158,
         .description = COMPOUND_STRING(
-            "A Bayleef's neck is ringed by curled-up\n"
+            "A Fanbeemon's neck is ringed by curled-up\n"
             "leaves. Inside each leaf is a small tree\n"
             "shoot. The fragrance of this shoot\n"
             "makes people peppy."),
@@ -92,22 +92,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Bayleef,
+        .frontPic = gMonFrontPic_Fanbeemon,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_Bayleef,
+        .frontAnimFrames = sAnims_Fanbeemon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Bayleef,
+        .backPic = gMonBackPic_Fanbeemon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Bayleef,
-        .shinyPalette = gMonShinyPalette_Bayleef,
-        .iconSprite = gMonIcon_Bayleef,
+        .palette = gMonPalette_Fanbeemon,
+        .shinyPalette = gMonShinyPalette_Fanbeemon,
+        .iconSprite = gMonIcon_Fanbeemon,
         .iconPalIndex = 1,
-        FOOTPRINT(Bayleef)
-        .levelUpLearnset = sBayleefLevelUpLearnset,
-        .teachableLearnset = sBayleefTeachableLearnset,
+        FOOTPRINT(Fanbeemon)
+        .levelUpLearnset = sFanbeemonLevelUpLearnset,
+        .teachableLearnset = sFanbeemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_MEGANIUM}),
     },
 

@@ -8464,7 +8464,7 @@ static const u16 sFalcomon_06TeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBayleefTeachableLearnset[] = {
+static const u16 sFanbeemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,

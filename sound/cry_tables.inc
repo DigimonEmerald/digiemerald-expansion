@@ -464,7 +464,7 @@ gCryTable::
 .endif @ P_FAMILY_FALCOMON
 .if P_FAMILY_FALCOMON_06 == TRUE
 	cry Cry_Falcomon_06
-	cry Cry_Bayleef
+	cry Cry_Fanbeemon
 	cry Cry_Meganium
 .endif @ P_FAMILY_FALCOMON_06
 .if P_FAMILY_CYNDAQUIL == TRUE
@@ -2890,7 +2890,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_FALCOMON
 .if P_FAMILY_FALCOMON_06 == TRUE
 	cry_reverse Cry_Falcomon_06
-	cry_reverse Cry_Bayleef
+	cry_reverse Cry_Fanbeemon
 	cry_reverse Cry_Meganium
 .endif @ P_FAMILY_FALCOMON_06
 .if P_FAMILY_CYNDAQUIL == TRUE
