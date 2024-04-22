@@ -2530,8 +2530,8 @@ static const union AnimCmd sAnim_Guilmon_1[] =
 };
 #endif //P_FAMILY_GOTSUMON_X
 
-#if P_FAMILY_TOGEPI
-static const union AnimCmd sAnim_Togepi_1[] =
+#if P_FAMILY_HAGURUMON
+static const union AnimCmd sAnim_Hagurumon_1[] =
 {
     ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(1, 50),
@@ -2560,7 +2560,7 @@ static const union AnimCmd sAnim_Togekiss_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_TOGEPI
+#endif //P_FAMILY_HAGURUMON
 
 #if P_FAMILY_NATU
 static const union AnimCmd sAnim_Natu_1[] =
@@ -10780,13 +10780,13 @@ SINGLE_ANIMATION(Gomamon_x);
 SINGLE_ANIMATION(Gotsumon_x);
 SINGLE_ANIMATION(Guilmon);
 #endif //P_FAMILY_GOTSUMON_X
-#if P_FAMILY_TOGEPI
-SINGLE_ANIMATION(Togepi);
+#if P_FAMILY_HAGURUMON
+SINGLE_ANIMATION(Hagurumon);
 SINGLE_ANIMATION(Togetic);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Togekiss);
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_TOGEPI
+#endif //P_FAMILY_HAGURUMON
 #if P_FAMILY_NATU
 SINGLE_ANIMATION(Natu);
 SINGLE_ANIMATION(Xatu);

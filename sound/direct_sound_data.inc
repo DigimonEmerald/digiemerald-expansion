@@ -1557,10 +1557,10 @@ Cry_Guilmon::
 	.incbin "sound/direct_sound_samples/cries/guilmon.bin"
 .endif @ P_FAMILY_GOTSUMON_X
 
-.if P_FAMILY_TOGEPI == TRUE
+.if P_FAMILY_HAGURUMON == TRUE
 	.align 2
-Cry_Togepi::
-	.incbin "sound/direct_sound_samples/cries/togepi.bin"
+Cry_Hagurumon::
+	.incbin "sound/direct_sound_samples/cries/hagurumon.bin"
 
 	.align 2
 Cry_Togetic::
@@ -1571,7 +1571,7 @@ Cry_Togetic::
 Cry_Togekiss::
 	.incbin "sound/direct_sound_samples/cries/togekiss.bin"
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_TOGEPI
+.endif @ P_FAMILY_HAGURUMON
 
 .if P_FAMILY_NATU == TRUE
 	.align 2

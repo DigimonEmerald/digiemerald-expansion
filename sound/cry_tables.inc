@@ -497,13 +497,13 @@ gCryTable::
 	cry Cry_Gotsumon_x
 	cry Cry_Guilmon
 .endif @ P_FAMILY_GOTSUMON_X
-.if P_FAMILY_TOGEPI == TRUE
-	cry Cry_Togepi
+.if P_FAMILY_HAGURUMON == TRUE
+	cry Cry_Hagurumon
 	cry Cry_Togetic
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Togekiss
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_TOGEPI
+.endif @ P_FAMILY_HAGURUMON
 .if P_FAMILY_NATU == TRUE
 	cry Cry_Natu
 	cry Cry_Xatu
@@ -2923,13 +2923,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Gotsumon_x
 	cry_reverse Cry_Guilmon
 .endif @ P_FAMILY_GOTSUMON_X
-.if P_FAMILY_TOGEPI == TRUE
-	cry_reverse Cry_Togepi
+.if P_FAMILY_HAGURUMON == TRUE
+	cry_reverse Cry_Hagurumon
 	cry_reverse Cry_Togetic
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Togekiss
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_TOGEPI
+.endif @ P_FAMILY_HAGURUMON
 .if P_FAMILY_NATU == TRUE
 	cry_reverse Cry_Natu
 	cry_reverse Cry_Xatu

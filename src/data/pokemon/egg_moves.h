@@ -1444,8 +1444,8 @@ const u16 gEggMoves[] = {
         MOVE_SOAK),
 #endif //P_FAMILY_GOTSUMON_X
 
-#if P_FAMILY_TOGEPI
-    egg_moves(TOGEPI,
+#if P_FAMILY_HAGURUMON
+    egg_moves(HAGURUMON,
         MOVE_PRESENT,
         MOVE_MIRROR_MOVE,
         MOVE_PECK,
@@ -1458,7 +1458,7 @@ const u16 gEggMoves[] = {
         MOVE_SECRET_POWER,
         MOVE_STORED_POWER,
         MOVE_MORNING_SUN),
-#endif //P_FAMILY_TOGEPI
+#endif //P_FAMILY_HAGURUMON
 
 #if P_FAMILY_NATU
     egg_moves(NATU,

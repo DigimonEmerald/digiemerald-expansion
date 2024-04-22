@@ -9164,8 +9164,8 @@ static const u16 sGuilmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GOTSUMON_X
 
-#if P_FAMILY_TOGEPI
-static const u16 sTogepiTeachableLearnset[] = {
+#if P_FAMILY_HAGURUMON
+static const u16 sHagurumonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
@@ -9307,7 +9307,7 @@ static const u16 sTogekissTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_TOGEPI
+#endif //P_FAMILY_HAGURUMON
 
 #if P_FAMILY_NATU
 static const u16 sNatuTeachableLearnset[] = {

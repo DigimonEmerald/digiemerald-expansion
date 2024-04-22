@@ -167,7 +167,7 @@ SINGLE_BATTLE_TEST("Super Luck increases the critical hit ratio by one stage")
 {
     PASSES_RANDOMLY(1, 8, RNG_CRITICAL_HIT);
     GIVEN {
-        PLAYER(SPECIES_TOGEPI) { Ability(ABILITY_SUPER_LUCK); };
+        PLAYER(SPECIES_HAGURUMON) { Ability(ABILITY_SUPER_LUCK); };
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }

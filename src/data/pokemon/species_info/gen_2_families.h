@@ -1131,10 +1131,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_GOTSUMON_X
 
-#if P_FAMILY_TOGEPI
-#define TOGEPI_FAMILY_TYPE (P_UPDATED_TYPES >= GEN_6 ? TYPE_FAIRY : TYPE_NORMAL)
+#if P_FAMILY_HAGURUMON
+#define HAGURUMON_FAMILY_TYPE (P_UPDATED_TYPES >= GEN_6 ? TYPE_FAIRY : TYPE_NORMAL)
 
-    [SPECIES_TOGEPI] =
+    [SPECIES_HAGURUMON] =
     {
         .baseHP        = 35,
         .baseAttack    = 20,
@@ -1142,7 +1142,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 40,
         .baseSpDefense = 65,
-        .types = MON_TYPES(TOGEPI_FAMILY_TYPE),
+        .types = MON_TYPES(HAGURUMON_FAMILY_TYPE),
         .catchRate = 190,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 49 : 74,
         .evYield_SpDefense = 1,
@@ -1153,9 +1153,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_HUSTLE, ABILITY_SERENE_GRACE, ABILITY_SUPER_LUCK },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Togepi"),
-        .cryId = CRY_TOGEPI,
-        .natDexNum = NATIONAL_DEX_TOGEPI,
+        .speciesName = _("Hagurumon"),
+        .cryId = CRY_HAGURUMON,
+        .natDexNum = NATIONAL_DEX_HAGURUMON,
         .categoryName = _("Spike Ball"),
         .height = 3,
         .weight = 15,
@@ -1168,22 +1168,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 23,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Togepi,
+        .frontPic = gMonFrontPic_Hagurumon,
         .frontPicSize = MON_COORDS_SIZE(24, 32),
         .frontPicYOffset = 16,
-        .frontAnimFrames = sAnims_Togepi,
+        .frontAnimFrames = sAnims_Hagurumon,
         .frontAnimId = ANIM_V_JUMPS_BIG,
-        .backPic = gMonBackPic_Togepi,
+        .backPic = gMonBackPic_Hagurumon,
         .backPicSize = MON_COORDS_SIZE(48, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Togepi,
-        .shinyPalette = gMonShinyPalette_Togepi,
-        .iconSprite = gMonIcon_Togepi,
+        .palette = gMonPalette_Hagurumon,
+        .shinyPalette = gMonShinyPalette_Hagurumon,
+        .iconSprite = gMonIcon_Hagurumon,
         .iconPalIndex = 0,
-        FOOTPRINT(Togepi)
-        .levelUpLearnset = sTogepiLevelUpLearnset,
-        .teachableLearnset = sTogepiTeachableLearnset,
+        FOOTPRINT(Hagurumon)
+        .levelUpLearnset = sHagurumonLevelUpLearnset,
+        .teachableLearnset = sHagurumonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_TOGETIC}),
     },
 
@@ -1195,7 +1195,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 40,
         .baseSpAttack  = 80,
         .baseSpDefense = 105,
-        .types = MON_TYPES(TOGEPI_FAMILY_TYPE, TYPE_FLYING),
+        .types = MON_TYPES(HAGURUMON_FAMILY_TYPE, TYPE_FLYING),
         .catchRate = 75,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 114,
         .evYield_SpDefense = 2,
@@ -1249,7 +1249,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 80,
         .baseSpAttack  = 120,
         .baseSpDefense = 115,
-        .types = MON_TYPES(TOGEPI_FAMILY_TYPE, TYPE_FLYING),
+        .types = MON_TYPES(HAGURUMON_FAMILY_TYPE, TYPE_FLYING),
         .catchRate = 30,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 273,
@@ -1302,7 +1302,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sTogekissTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_TOGEPI
+#endif //P_FAMILY_HAGURUMON
 
 #if P_FAMILY_NATU
     [SPECIES_NATU] =
