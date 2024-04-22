@@ -648,9 +648,9 @@ gCryTable::
 	cry Cry_Pawnmon_black
 	cry Cry_Pawnmon_white
 .endif @ P_FAMILY_PAWNMON_BLACK
-.if P_FAMILY_DELIBIRD == TRUE
-	cry Cry_Delibird
-.endif @ P_FAMILY_DELIBIRD
+.if P_FAMILY_PENGUINMON == TRUE
+	cry Cry_Penguinmon
+.endif @ P_FAMILY_PENGUINMON
 .if P_FAMILY_MANTINE == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Mantyke
@@ -3074,9 +3074,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Pawnmon_black
 	cry_reverse Cry_Pawnmon_white
 .endif @ P_FAMILY_PAWNMON_BLACK
-.if P_FAMILY_DELIBIRD == TRUE
-	cry_reverse Cry_Delibird
-.endif @ P_FAMILY_DELIBIRD
+.if P_FAMILY_PENGUINMON == TRUE
+	cry_reverse Cry_Penguinmon
+.endif @ P_FAMILY_PENGUINMON
 .if P_FAMILY_MANTINE == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Mantyke

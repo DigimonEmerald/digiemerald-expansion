@@ -3197,14 +3197,14 @@ static const union AnimCmd sAnim_Pawnmon_white_1[] =
 };
 #endif //P_FAMILY_PAWNMON_BLACK
 
-#if P_FAMILY_DELIBIRD
-static const union AnimCmd sAnim_Delibird_1[] =
+#if P_FAMILY_PENGUINMON
+static const union AnimCmd sAnim_Penguinmon_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_DELIBIRD
+#endif //P_FAMILY_PENGUINMON
 
 #if P_FAMILY_MANTINE
 #if P_GEN_4_CROSS_EVOS
@@ -10944,9 +10944,9 @@ SINGLE_ANIMATION(Cursola);
 SINGLE_ANIMATION(Pawnmon_black);
 SINGLE_ANIMATION(Pawnmon_white);
 #endif //P_FAMILY_PAWNMON_BLACK
-#if P_FAMILY_DELIBIRD
-SINGLE_ANIMATION(Delibird);
-#endif //P_FAMILY_DELIBIRD
+#if P_FAMILY_PENGUINMON
+SINGLE_ANIMATION(Penguinmon);
+#endif //P_FAMILY_PENGUINMON
 #if P_FAMILY_MANTINE
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Mantyke);

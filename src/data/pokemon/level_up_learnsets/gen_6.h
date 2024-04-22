@@ -6434,12 +6434,12 @@ static const struct LevelUpMove sPawnmon_whiteLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_PAWNMON_BLACK
 
-#if P_FAMILY_DELIBIRD
-static const struct LevelUpMove sDelibirdLevelUpLearnset[] = {
+#if P_FAMILY_PENGUINMON
+static const struct LevelUpMove sPenguinmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PRESENT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_DELIBIRD
+#endif //P_FAMILY_PENGUINMON
 
 #if P_FAMILY_MANTINE
 #if P_GEN_4_CROSS_EVOS

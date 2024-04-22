@@ -11573,8 +11573,8 @@ static const u16 sPawnmon_whiteTeachableLearnset[] = {
 };
 #endif //P_FAMILY_PAWNMON_BLACK
 
-#if P_FAMILY_DELIBIRD
-static const u16 sDelibirdTeachableLearnset[] = {
+#if P_FAMILY_PENGUINMON
+static const u16 sPenguinmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -11610,7 +11610,7 @@ static const u16 sDelibirdTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DELIBIRD
+#endif //P_FAMILY_PENGUINMON
 
 #if P_FAMILY_MANTINE
 #if P_GEN_4_CROSS_EVOS

@@ -5116,8 +5116,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_PAWNMON_BLACK
 
-#if P_FAMILY_DELIBIRD
-    [SPECIES_DELIBIRD] =
+#if P_FAMILY_PENGUINMON
+    [SPECIES_PENGUINMON] =
     {
         .baseHP        = 45,
         .baseAttack    = 55,
@@ -5136,9 +5136,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
         .abilities = { ABILITY_VITAL_SPIRIT, ABILITY_HUSTLE, ABILITY_INSOMNIA },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Delibird"),
-        .cryId = CRY_DELIBIRD,
-        .natDexNum = NATIONAL_DEX_DELIBIRD,
+        .speciesName = _("Penguinmon"),
+        .cryId = CRY_PENGUINMON,
+        .natDexNum = NATIONAL_DEX_PENGUINMON,
         .categoryName = _("Delivery"),
         .height = 9,
         .weight = 160,
@@ -5146,29 +5146,29 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "It carries food bundled up in its tail.\n"
             "There was a famous explorer who\n"
             "managed to scale Mt. Everest thanks\n"
-            "to a Delibird sharing its food."),
+            "to a Penguinmon sharing its food."),
         .pokemonScale = 293,
         .pokemonOffset = 11,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Delibird,
+        .frontPic = gMonFrontPic_Penguinmon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Delibird,
+        .frontAnimFrames = sAnims_Penguinmon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Delibird,
+        .backPic = gMonBackPic_Penguinmon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Delibird,
-        .shinyPalette = gMonShinyPalette_Delibird,
-        .iconSprite = gMonIcon_Delibird,
+        .palette = gMonPalette_Penguinmon,
+        .shinyPalette = gMonShinyPalette_Penguinmon,
+        .iconSprite = gMonIcon_Penguinmon,
         .iconPalIndex = 1,
-        FOOTPRINT(Delibird)
-        .levelUpLearnset = sDelibirdLevelUpLearnset,
-        .teachableLearnset = sDelibirdTeachableLearnset,
+        FOOTPRINT(Penguinmon)
+        .levelUpLearnset = sPenguinmonLevelUpLearnset,
+        .teachableLearnset = sPenguinmonTeachableLearnset,
     },
-#endif //P_FAMILY_DELIBIRD
+#endif //P_FAMILY_PENGUINMON
 
 #if P_FAMILY_MANTINE
 #if P_GEN_4_CROSS_EVOS

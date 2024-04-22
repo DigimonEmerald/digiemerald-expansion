@@ -1900,11 +1900,11 @@ Cry_Pawnmon_white::
 	.incbin "sound/direct_sound_samples/cries/pawnmon_white.bin"
 .endif @ P_FAMILY_PAWNMON_BLACK
 
-.if P_FAMILY_DELIBIRD == TRUE
+.if P_FAMILY_PENGUINMON == TRUE
 	.align 2
-Cry_Delibird::
-	.incbin "sound/direct_sound_samples/cries/delibird.bin"
-.endif @ P_FAMILY_DELIBIRD
+Cry_Penguinmon::
+	.incbin "sound/direct_sound_samples/cries/penguinmon.bin"
+.endif @ P_FAMILY_PENGUINMON
 
 .if P_FAMILY_MANTINE == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE

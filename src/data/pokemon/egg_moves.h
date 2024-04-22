@@ -1938,8 +1938,8 @@ const u16 gEggMoves[] = {
         MOVE_ENTRAINMENT),
 #endif //P_FAMILY_PAWNMON_BLACK
 
-#if P_FAMILY_DELIBIRD
-    egg_moves(DELIBIRD,
+#if P_FAMILY_PENGUINMON
+    egg_moves(PENGUINMON,
         MOVE_AURORA_BEAM,
         MOVE_QUICK_ATTACK,
         MOVE_FUTURE_SIGHT,
@@ -1955,7 +1955,7 @@ const u16 gEggMoves[] = {
         MOVE_DESTINY_BOND,
         MOVE_SPIKES,
         MOVE_COUNTER),
-#endif //P_FAMILY_DELIBIRD
+#endif //P_FAMILY_PENGUINMON
 
 #if P_FAMILY_MANTINE
 #if P_GEN_4_CROSS_EVOS

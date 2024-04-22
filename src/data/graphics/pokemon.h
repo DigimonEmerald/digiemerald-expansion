@@ -3659,16 +3659,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonBackPic_Pawnmon_whiteF[] = INCBIN_U32("graphics/pokemon/pawnmon_white/backf.4bpp.lz");
 #endif //P_FAMILY_PAWNMON_BLACK
 
-#if P_FAMILY_DELIBIRD
-    const u32 gMonFrontPic_Delibird[] = INCBIN_U32("graphics/pokemon/delibird/anim_front.4bpp.lz");
-    const u32 gMonPalette_Delibird[] = INCBIN_U32("graphics/pokemon/delibird/normal.gbapal.lz");
-    const u32 gMonBackPic_Delibird[] = INCBIN_U32("graphics/pokemon/delibird/back.4bpp.lz");
-    const u32 gMonShinyPalette_Delibird[] = INCBIN_U32("graphics/pokemon/delibird/shiny.gbapal.lz");
-    const u8 gMonIcon_Delibird[] = INCBIN_U8("graphics/pokemon/delibird/icon.4bpp");
+#if P_FAMILY_PENGUINMON
+    const u32 gMonFrontPic_Penguinmon[] = INCBIN_U32("graphics/pokemon/penguinmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Penguinmon[] = INCBIN_U32("graphics/pokemon/penguinmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Penguinmon[] = INCBIN_U32("graphics/pokemon/penguinmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Penguinmon[] = INCBIN_U32("graphics/pokemon/penguinmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Penguinmon[] = INCBIN_U8("graphics/pokemon/penguinmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Delibird[] = INCBIN_U8("graphics/pokemon/delibird/footprint.1bpp");
+    const u8 gMonFootprint_Penguinmon[] = INCBIN_U8("graphics/pokemon/penguinmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_DELIBIRD
+#endif //P_FAMILY_PENGUINMON
 
 #if P_FAMILY_MANTINE
 #if P_GEN_4_CROSS_EVOS

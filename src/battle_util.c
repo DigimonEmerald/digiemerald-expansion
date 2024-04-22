@@ -11310,7 +11310,7 @@ bool8 IsMonBannedFromSkyBattles(u16 species)
         case SPECIES_GHOSTMON:
         case SPECIES_HAWKMON:
         case SPECIES_LALAMON:
-        case SPECIES_DELIBIRD:
+        case SPECIES_PENGUINMON:
         case SPECIES_TAILLOW:
         case SPECIES_STARLY:
         case SPECIES_CHATOT:
