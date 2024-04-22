@@ -5299,7 +5299,7 @@ static const struct LevelUpMove sKokuwamonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sSunfloraLevelUpLearnset[] = {
+static const struct LevelUpMove sKokuwamon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_GROWTH),

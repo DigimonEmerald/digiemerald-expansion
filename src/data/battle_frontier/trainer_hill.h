@@ -2617,7 +2617,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                 {
                                     [0] =
                                         {
-                                            .species = SPECIES_SUNFLORA,
+                                            .species = SPECIES_KOKUWAMON_X,
                                             .heldItem = ITEM_PERSIM_BERRY,
                                             .moves = {MOVE_PETAL_DANCE, MOVE_GRASS_WHISTLE, MOVE_LIGHT_SCREEN, MOVE_SUNNY_DAY},
                                             .hpEV = 255,
@@ -2632,7 +2632,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 0,
                                             .personality = 0x0,
-                                            .nickname = _("SUNFLORA"),
+                                            .nickname = _("KOKUWAMON_X"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [1] =

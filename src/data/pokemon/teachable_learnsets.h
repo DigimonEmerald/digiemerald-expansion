@@ -9909,7 +9909,7 @@ static const u16 sKokuwamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSunfloraTeachableLearnset[] = {
+static const u16 sKokuwamon_xTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,

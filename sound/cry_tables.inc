@@ -538,7 +538,7 @@ gCryTable::
 .endif @ P_FAMILY_KOKABUIMON
 .if P_FAMILY_KOKUWAMON == TRUE
 	cry Cry_Kokuwamon
-	cry Cry_Sunflora
+	cry Cry_Kokuwamon_x
 .endif @ P_FAMILY_KOKUWAMON
 .if P_FAMILY_YANMA == TRUE
 	cry Cry_Yanma
@@ -2964,7 +2964,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_KOKABUIMON
 .if P_FAMILY_KOKUWAMON == TRUE
 	cry_reverse Cry_Kokuwamon
-	cry_reverse Cry_Sunflora
+	cry_reverse Cry_Kokuwamon_x
 .endif @ P_FAMILY_KOKUWAMON
 .if P_FAMILY_YANMA == TRUE
 	cry_reverse Cry_Yanma

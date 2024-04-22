@@ -2746,7 +2746,7 @@ static const union AnimCmd sAnim_Kokuwamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Sunflora_1[] =
+static const union AnimCmd sAnim_Kokuwamon_x_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -10825,7 +10825,7 @@ SINGLE_ANIMATION(Ambipom);
 #endif //P_FAMILY_KOKABUIMON
 #if P_FAMILY_KOKUWAMON
 SINGLE_ANIMATION(Kokuwamon);
-SINGLE_ANIMATION(Sunflora);
+SINGLE_ANIMATION(Kokuwamon_x);
 #endif //P_FAMILY_KOKUWAMON
 #if P_FAMILY_YANMA
 SINGLE_ANIMATION(Yanma);

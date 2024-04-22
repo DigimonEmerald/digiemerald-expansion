@@ -2280,10 +2280,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Kokuwamon)
         .levelUpLearnset = sKokuwamonLevelUpLearnset,
         .teachableLearnset = sKokuwamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_SUNFLORA}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_KOKUWAMON_X}),
     },
 
-    [SPECIES_SUNFLORA] =
+    [SPECIES_KOKUWAMON_X] =
     {
         .baseHP        = 75,
         .baseAttack    = 75,
@@ -2302,14 +2302,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_SOLAR_POWER, ABILITY_EARLY_BIRD },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Sunflora"),
-        .cryId = CRY_SUNFLORA,
-        .natDexNum = NATIONAL_DEX_SUNFLORA,
+        .speciesName = _("Kokuwamon_x"),
+        .cryId = CRY_KOKUWAMON_X,
+        .natDexNum = NATIONAL_DEX_KOKUWAMON_X,
         .categoryName = _("Sun"),
         .height = 8,
         .weight = 85,
         .description = COMPOUND_STRING(
-            "Sunflora convert solar energy into\n"
+            "Kokuwamon_x convert solar energy into\n"
             "nutrition. They are highly active in the\n"
             "warm daytime but suddenly stop moving as\n"
             "soon as the sun sets."),
@@ -2317,22 +2317,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Sunflora,
+        .frontPic = gMonFrontPic_Kokuwamon_x,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Sunflora,
+        .frontAnimFrames = sAnims_Kokuwamon_x,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Sunflora,
+        .backPic = gMonBackPic_Kokuwamon_x,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Sunflora,
-        .shinyPalette = gMonShinyPalette_Sunflora,
-        .iconSprite = gMonIcon_Sunflora,
+        .palette = gMonPalette_Kokuwamon_x,
+        .shinyPalette = gMonShinyPalette_Kokuwamon_x,
+        .iconSprite = gMonIcon_Kokuwamon_x,
         .iconPalIndex = 1,
-        FOOTPRINT(Sunflora)
-        .levelUpLearnset = sSunfloraLevelUpLearnset,
-        .teachableLearnset = sSunfloraTeachableLearnset,
+        FOOTPRINT(Kokuwamon_x)
+        .levelUpLearnset = sKokuwamon_xLevelUpLearnset,
+        .teachableLearnset = sKokuwamon_xTeachableLearnset,
     },
 #endif //P_FAMILY_KOKUWAMON
 
