@@ -848,10 +848,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Gizumon)
         .levelUpLearnset = sGizumonLevelUpLearnset,
         .teachableLearnset = sGizumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_LEDIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_GOBLIMON}),
     },
 
-    [SPECIES_LEDIAN] =
+    [SPECIES_GOBLIMON] =
     {
         .baseHP        = 55,
         .baseAttack    = 35,
@@ -870,42 +870,42 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SWARM, ABILITY_EARLY_BIRD, ABILITY_IRON_FIST },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Ledian"),
-        .cryId = CRY_LEDIAN,
-        .natDexNum = NATIONAL_DEX_LEDIAN,
+        .speciesName = _("Goblimon"),
+        .cryId = CRY_GOBLIMON,
+        .natDexNum = NATIONAL_DEX_GOBLIMON,
         .categoryName = _("Five Star"),
         .height = 14,
         .weight = 356,
         .description = COMPOUND_STRING(
             "It is said that in lands with clean air,\n"
             "where the stars fill the sky, there live\n"
-            "many Ledian. For good reason, they use\n"
+            "many Goblimon. For good reason, they use\n"
             "the light of the stars as energy."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Ledian,
-        .frontPicFemale = gMonFrontPic_LedianF,
+        .frontPic = gMonFrontPic_Goblimon,
+        .frontPicFemale = gMonFrontPic_GoblimonF,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Ledian,
+        .frontAnimFrames = sAnims_Goblimon,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 10,
-        .backPic = gMonBackPic_Ledian,
-        .backPicFemale = gMonBackPic_LedianF,
+        .backPic = gMonBackPic_Goblimon,
+        .backPicFemale = gMonBackPic_GoblimonF,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Ledian,
-        .shinyPalette = gMonShinyPalette_Ledian,
-        .iconSprite = gMonIcon_Ledian,
+        .palette = gMonPalette_Goblimon,
+        .shinyPalette = gMonShinyPalette_Goblimon,
+        .iconSprite = gMonIcon_Goblimon,
         .iconPalIndex = 0,
-        FOOTPRINT(Ledian)
-        .levelUpLearnset = sLedianLevelUpLearnset,
-        .teachableLearnset = sLedianTeachableLearnset,
+        FOOTPRINT(Goblimon)
+        .levelUpLearnset = sGoblimonLevelUpLearnset,
+        .teachableLearnset = sGoblimonTeachableLearnset,
     },
 #endif //P_FAMILY_GIZUMON
 

@@ -2474,7 +2474,7 @@ static const union AnimCmd sAnim_Gizumon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Ledian_1[] =
+static const union AnimCmd sAnim_Goblimon_1[] =
 {
     ANIMCMD_FRAME(1, 25),
     ANIMCMD_FRAME(0, 25),
@@ -10770,7 +10770,7 @@ SINGLE_ANIMATION(Gizamon);
 #endif //P_FAMILY_GHOSTMON
 #if P_FAMILY_GIZUMON
 SINGLE_ANIMATION(Gizumon);
-SINGLE_ANIMATION(Ledian);
+SINGLE_ANIMATION(Goblimon);
 #endif //P_FAMILY_GIZUMON
 #if P_FAMILY_SPINARAK
 SINGLE_ANIMATION(Spinarak);

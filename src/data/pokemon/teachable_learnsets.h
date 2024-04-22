@@ -9012,7 +9012,7 @@ static const u16 sGizumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sLedianTeachableLearnset[] = {
+static const u16 sGoblimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,

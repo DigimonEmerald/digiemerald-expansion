@@ -1533,8 +1533,8 @@ Cry_Gizumon::
 	.incbin "sound/direct_sound_samples/cries/gizumon.bin"
 
 	.align 2
-Cry_Ledian::
-	.incbin "sound/direct_sound_samples/cries/ledian.bin"
+Cry_Goblimon::
+	.incbin "sound/direct_sound_samples/cries/goblimon.bin"
 .endif @ P_FAMILY_GIZUMON
 
 .if P_FAMILY_SPINARAK == TRUE

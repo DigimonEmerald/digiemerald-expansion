@@ -487,7 +487,7 @@ gCryTable::
 .endif @ P_FAMILY_GHOSTMON
 .if P_FAMILY_GIZUMON == TRUE
 	cry Cry_Gizumon
-	cry Cry_Ledian
+	cry Cry_Goblimon
 .endif @ P_FAMILY_GIZUMON
 .if P_FAMILY_SPINARAK == TRUE
 	cry Cry_Spinarak
@@ -2913,7 +2913,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_GHOSTMON
 .if P_FAMILY_GIZUMON == TRUE
 	cry_reverse Cry_Gizumon
-	cry_reverse Cry_Ledian
+	cry_reverse Cry_Goblimon
 .endif @ P_FAMILY_GIZUMON
 .if P_FAMILY_SPINARAK == TRUE
 	cry_reverse Cry_Spinarak

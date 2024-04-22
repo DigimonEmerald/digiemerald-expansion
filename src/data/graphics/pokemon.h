@@ -2751,17 +2751,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_GizumonF[] = INCBIN_U32("graphics/pokemon/gizumon/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_GizumonF[] = INCBIN_U32("graphics/pokemon/gizumon/backf.4bpp.lz");
 
-    const u32 gMonFrontPic_Ledian[] = INCBIN_U32("graphics/pokemon/ledian/anim_front.4bpp.lz");
-    const u32 gMonPalette_Ledian[] = INCBIN_U32("graphics/pokemon/ledian/normal.gbapal.lz");
-    const u32 gMonBackPic_Ledian[] = INCBIN_U32("graphics/pokemon/ledian/back.4bpp.lz");
-    const u32 gMonShinyPalette_Ledian[] = INCBIN_U32("graphics/pokemon/ledian/shiny.gbapal.lz");
-    const u8 gMonIcon_Ledian[] = INCBIN_U8("graphics/pokemon/ledian/icon.4bpp");
+    const u32 gMonFrontPic_Goblimon[] = INCBIN_U32("graphics/pokemon/goblimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Goblimon[] = INCBIN_U32("graphics/pokemon/goblimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Goblimon[] = INCBIN_U32("graphics/pokemon/goblimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Goblimon[] = INCBIN_U32("graphics/pokemon/goblimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Goblimon[] = INCBIN_U8("graphics/pokemon/goblimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Ledian[] = INCBIN_U8("graphics/pokemon/ledian/footprint.1bpp");
+    const u8 gMonFootprint_Goblimon[] = INCBIN_U8("graphics/pokemon/goblimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_LedianF[] = INCBIN_U32("graphics/pokemon/ledian/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_LedianF[] = INCBIN_U32("graphics/pokemon/ledian/backf.4bpp.lz");
+    const u32 gMonFrontPic_GoblimonF[] = INCBIN_U32("graphics/pokemon/goblimon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_GoblimonF[] = INCBIN_U32("graphics/pokemon/goblimon/backf.4bpp.lz");
 #endif //P_FAMILY_GIZUMON
 
 #if P_FAMILY_SPINARAK
