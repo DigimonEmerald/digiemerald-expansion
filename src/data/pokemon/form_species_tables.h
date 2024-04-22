@@ -313,10 +313,10 @@ static const u16 sPickmon_silverFormSpeciesIdTable[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const u16 sSlowkingFormSpeciesIdTable[] = {
-    SPECIES_SLOWKING,
+static const u16 sLiollmonFormSpeciesIdTable[] = {
+    SPECIES_LIOLLMON,
 #if P_GALARIAN_FORMS
-    SPECIES_SLOWKING_GALARIAN,
+    SPECIES_LIOLLMON_GALARIAN,
 #endif
     FORM_SPECIES_END,
 };

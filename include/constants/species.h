@@ -200,7 +200,7 @@
 #define SPECIES_KUNEMON                                  196
 #define SPECIES_LABRAMON                                 197
 #define SPECIES_LALAMON                                 198
-#define SPECIES_SLOWKING                                199
+#define SPECIES_LIOLLMON                                199
 #define SPECIES_MISDREAVUS                              200
 #define SPECIES_UNOWN                                   201
 #define SPECIES_WOBBUFFET                               202
@@ -1043,7 +1043,7 @@
 #define SPECIES_DRACOMON_X_GALARIAN                       982
 #define SPECIES_EBIBURGMON_GALARIAN                         983
 #define SPECIES_EKAKIMON_GALARIAN                        984
-#define SPECIES_SLOWKING_GALARIAN                       985
+#define SPECIES_LIOLLMON_GALARIAN                       985
 #define SPECIES_CORSOLA_GALARIAN                        986
 #define SPECIES_ZIGZAGOON_GALARIAN                      987
 #define SPECIES_LINOONE_GALARIAN                        988

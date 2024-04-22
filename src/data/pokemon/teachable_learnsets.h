@@ -4001,7 +4001,7 @@ static const u16 sPickmon_silverTeachableLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const u16 sSlowkingTeachableLearnset[] = {
+static const u16 sLiollmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
@@ -4147,7 +4147,7 @@ static const u16 sPickmon_silverGalarianTeachableLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const u16 sSlowkingGalarianTeachableLearnset[] = {
+static const u16 sLiollmonGalarianTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,

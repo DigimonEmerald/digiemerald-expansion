@@ -860,8 +860,8 @@ Cry_Pickmon_silver::
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Slowking::
-	.incbin "sound/direct_sound_samples/cries/slowking.bin"
+Cry_Liollmon::
+	.incbin "sound/direct_sound_samples/cries/liollmon.bin"
 .endif @ P_GEN_2_CROSS_EVOS
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2

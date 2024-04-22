@@ -7851,8 +7851,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sPagumonTeachableLearnset,
         .formSpeciesIdTable = sPagumonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_PICKMON_SILVER},
-                                {EVO_TRADE_ITEM, ITEM_KINGS_ROCK, SPECIES_SLOWKING},
-                                {EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_SLOWKING}),
+                                {EVO_TRADE_ITEM, ITEM_KINGS_ROCK, SPECIES_LIOLLMON},
+                                {EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_LIOLLMON}),
     },
 
     [SPECIES_PICKMON_SILVER] =
@@ -7911,7 +7911,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_SLOWKING] =
+    [SPECIES_LIOLLMON] =
     {
         .baseHP        = 95,
         .baseAttack    = 75,
@@ -7931,9 +7931,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_OWN_TEMPO, ABILITY_REGENERATOR },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Slowking"),
-        .cryId = CRY_SLOWKING,
-        .natDexNum = NATIONAL_DEX_SLOWKING,
+        .speciesName = _("Liollmon"),
+        .cryId = CRY_LIOLLMON,
+        .natDexNum = NATIONAL_DEX_LIOLLMON,
         .categoryName = _("Royal"),
         .height = 20,
         .weight = 795,
@@ -7946,23 +7946,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 309,
         .trainerOffset = 5,
-        .frontPic = gMonFrontPic_Slowking,
+        .frontPic = gMonFrontPic_Liollmon,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_Slowking,
+        .frontAnimFrames = sAnims_Liollmon,
         .frontAnimId = ANIM_SHRINK_GROW,
-        .backPic = gMonBackPic_Slowking,
+        .backPic = gMonBackPic_Liollmon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Slowking,
-        .shinyPalette = gMonShinyPalette_Slowking,
-        .iconSprite = gMonIcon_Slowking,
+        .palette = gMonPalette_Liollmon,
+        .shinyPalette = gMonShinyPalette_Liollmon,
+        .iconSprite = gMonIcon_Liollmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Slowking)
-        .levelUpLearnset = sSlowkingLevelUpLearnset,
-        .teachableLearnset = sSlowkingTeachableLearnset,
-        .formSpeciesIdTable = sSlowkingFormSpeciesIdTable,
+        FOOTPRINT(Liollmon)
+        .levelUpLearnset = sLiollmonLevelUpLearnset,
+        .teachableLearnset = sLiollmonTeachableLearnset,
+        .formSpeciesIdTable = sLiollmonFormSpeciesIdTable,
     },
 #endif //P_GEN_2_CROSS_EVOS
 
@@ -8078,7 +8078,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sPagumonGalarianTeachableLearnset,
         .formSpeciesIdTable = sPagumonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_GALARICA_CUFF, SPECIES_PICKMON_SILVER_GALARIAN},
-                                {EVO_ITEM, ITEM_GALARICA_WREATH, SPECIES_SLOWKING_GALARIAN}),
+                                {EVO_ITEM, ITEM_GALARICA_WREATH, SPECIES_LIOLLMON_GALARIAN}),
     },
 
     [SPECIES_PICKMON_SILVER_GALARIAN] =
@@ -8137,7 +8137,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_SLOWKING_GALARIAN] =
+    [SPECIES_LIOLLMON_GALARIAN] =
     {
         .baseHP        = 95,
         .baseAttack    = 65,
@@ -8156,9 +8156,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_CURIOUS_MEDICINE, ABILITY_OWN_TEMPO, ABILITY_REGENERATOR },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Slowking"),
-        .cryId = CRY_SLOWKING,
-        .natDexNum = NATIONAL_DEX_SLOWKING,
+        .speciesName = _("Liollmon"),
+        .cryId = CRY_LIOLLMON,
+        .natDexNum = NATIONAL_DEX_LIOLLMON,
         .categoryName = _("Hexpert"),
         .height = 18,
         .weight = 795,
@@ -8166,29 +8166,29 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "A combination of toxins and the shock of\n"
             "evolving has increased Tanemon's\n"
             "intelligence to the point that Tanemon\n"
-            "now controls Slowking."),
+            "now controls Liollmon."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 309,
         .trainerOffset = 5,
-        .frontPic = gMonFrontPic_SlowkingGalarian,
+        .frontPic = gMonFrontPic_LiollmonGalarian,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SlowkingGalarian,
+        .frontAnimFrames = sAnims_LiollmonGalarian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_SlowkingGalarian,
+        .backPic = gMonBackPic_LiollmonGalarian,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 3,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_SlowkingGalarian,
-        .shinyPalette = gMonShinyPalette_SlowkingGalarian,
-        .iconSprite = gMonIcon_SlowkingGalarian,
+        .palette = gMonPalette_LiollmonGalarian,
+        .shinyPalette = gMonShinyPalette_LiollmonGalarian,
+        .iconSprite = gMonIcon_LiollmonGalarian,
         .iconPalIndex = 2,
-        FOOTPRINT(Slowking)
+        FOOTPRINT(Liollmon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sSlowkingGalarianLevelUpLearnset,
-        .teachableLearnset = sSlowkingGalarianTeachableLearnset,
-        .formSpeciesIdTable = sSlowkingFormSpeciesIdTable,
+        .levelUpLearnset = sLiollmonGalarianLevelUpLearnset,
+        .teachableLearnset = sLiollmonGalarianTeachableLearnset,
+        .formSpeciesIdTable = sLiollmonFormSpeciesIdTable,
     },
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_GALARIAN_FORMS

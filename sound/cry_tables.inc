@@ -187,7 +187,7 @@ gCryTable::
 	cry Cry_Pagumon
 	cry Cry_Pickmon_silver
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry Cry_Slowking
+	cry Cry_Liollmon
 .endif @ P_GEN_2_CROSS_EVOS
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_Pickmon_silverMega
@@ -2613,7 +2613,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Pagumon
 	cry_reverse Cry_Pickmon_silver
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry_reverse Cry_Slowking
+	cry_reverse Cry_Liollmon
 .endif @ P_GEN_2_CROSS_EVOS
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_Pickmon_silverMega

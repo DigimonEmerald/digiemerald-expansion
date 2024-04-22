@@ -1261,13 +1261,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Slowking[] = INCBIN_U32("graphics/pokemon/slowking/anim_front.4bpp.lz");
-    const u32 gMonPalette_Slowking[] = INCBIN_U32("graphics/pokemon/slowking/normal.gbapal.lz");
-    const u32 gMonBackPic_Slowking[] = INCBIN_U32("graphics/pokemon/slowking/back.4bpp.lz");
-    const u32 gMonShinyPalette_Slowking[] = INCBIN_U32("graphics/pokemon/slowking/shiny.gbapal.lz");
-    const u8 gMonIcon_Slowking[] = INCBIN_U8("graphics/pokemon/slowking/icon.4bpp");
+    const u32 gMonFrontPic_Liollmon[] = INCBIN_U32("graphics/pokemon/liollmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Liollmon[] = INCBIN_U32("graphics/pokemon/liollmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Liollmon[] = INCBIN_U32("graphics/pokemon/liollmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Liollmon[] = INCBIN_U32("graphics/pokemon/liollmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Liollmon[] = INCBIN_U8("graphics/pokemon/liollmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Slowking[] = INCBIN_U8("graphics/pokemon/slowking/footprint.1bpp");
+    const u8 gMonFootprint_Liollmon[] = INCBIN_U8("graphics/pokemon/liollmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
 
@@ -1293,11 +1293,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonIcon_Pickmon_silverGalarian[] = INCBIN_U8("graphics/pokemon/pickmon_silver/galarian/icon.4bpp");
 
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_SlowkingGalarian[] = INCBIN_U32("graphics/pokemon/slowking/galarian/front.4bpp.lz");
-    const u32 gMonPalette_SlowkingGalarian[] = INCBIN_U32("graphics/pokemon/slowking/galarian/normal.gbapal.lz");
-    const u32 gMonBackPic_SlowkingGalarian[] = INCBIN_U32("graphics/pokemon/slowking/galarian/back.4bpp.lz");
-    const u32 gMonShinyPalette_SlowkingGalarian[] = INCBIN_U32("graphics/pokemon/slowking/galarian/shiny.gbapal.lz");
-    const u8 gMonIcon_SlowkingGalarian[] = INCBIN_U8("graphics/pokemon/slowking/galarian/icon.4bpp");
+    const u32 gMonFrontPic_LiollmonGalarian[] = INCBIN_U32("graphics/pokemon/liollmon/galarian/front.4bpp.lz");
+    const u32 gMonPalette_LiollmonGalarian[] = INCBIN_U32("graphics/pokemon/liollmon/galarian/normal.gbapal.lz");
+    const u32 gMonBackPic_LiollmonGalarian[] = INCBIN_U32("graphics/pokemon/liollmon/galarian/back.4bpp.lz");
+    const u32 gMonShinyPalette_LiollmonGalarian[] = INCBIN_U32("graphics/pokemon/liollmon/galarian/shiny.gbapal.lz");
+    const u8 gMonIcon_LiollmonGalarian[] = INCBIN_U8("graphics/pokemon/liollmon/galarian/icon.4bpp");
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PAGUMON

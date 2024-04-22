@@ -2096,7 +2096,7 @@ static const struct LevelUpMove sPickmon_silverLevelUpLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const struct LevelUpMove sSlowkingLevelUpLearnset[] = {
+static const struct LevelUpMove sLiollmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HEAL_PULSE),
     LEVEL_UP_MOVE( 1, MOVE_POWER_GEM),
     LEVEL_UP_MOVE( 1, MOVE_HIDDEN_POWER),
@@ -2167,7 +2167,7 @@ static const struct LevelUpMove sPickmon_silverGalarianLevelUpLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const struct LevelUpMove sSlowkingGalarianLevelUpLearnset[] = {
+static const struct LevelUpMove sLiollmonGalarianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_EERIE_SPELL),
     LEVEL_UP_MOVE( 1, MOVE_EERIE_SPELL),
     LEVEL_UP_MOVE( 1, MOVE_POWER_GEM),

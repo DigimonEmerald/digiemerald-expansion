@@ -3102,7 +3102,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
             "Deep in the jungle, high in the lofty\n"
             "canopy, this Pokémon abides. On rare\n"
             "occasions, it shows up at the beach to\n"
-            "match wits with Slowking."),
+            "match wits with Liollmon."),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
