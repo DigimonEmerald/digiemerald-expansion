@@ -138,7 +138,7 @@ const u16 gEggMoves[] = {
 
 #if P_FAMILY_PETITMON
 #if P_GEN_2_CROSS_EVOS
-    egg_moves(PICHU,
+    egg_moves(GUILMON_X,
         MOVE_REVERSAL,
         MOVE_BIDE,
         MOVE_PRESENT,

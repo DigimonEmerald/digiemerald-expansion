@@ -330,7 +330,7 @@ static const union AnimCmd sAnim_Paomon_1[] =
 
 #if P_FAMILY_PETITMON
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Pichu_1[] =
+static const union AnimCmd sAnim_Guilmon_x_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -340,7 +340,7 @@ static const union AnimCmd sAnim_Pichu_1[] =
     ANIMCMD_END,
 };
 
-PLACEHOLDER_ANIM_SINGLE_FRAME(PichuSpikyEared);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Guilmon_xSpikyEared);
 #endif //P_GEN_2_CROSS_EVOS
 
 static const union AnimCmd sAnim_Petitmon_1[] =
@@ -10229,8 +10229,8 @@ SINGLE_ANIMATION(Paomon);
 #endif //P_FAMILY_PAFUMON
 #if P_FAMILY_PETITMON
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Pichu);
-SINGLE_ANIMATION(PichuSpikyEared);
+SINGLE_ANIMATION(Guilmon_x);
+SINGLE_ANIMATION(Guilmon_xSpikyEared);
 #endif //P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Petitmon);
 #if P_COSPLAY_PETITMON_FORMS

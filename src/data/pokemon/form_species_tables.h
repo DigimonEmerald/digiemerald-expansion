@@ -89,9 +89,9 @@ static const u16 sMokumonFormSpeciesIdTable[] = {
 
 #if P_FAMILY_PETITMON
 #if P_GEN_2_CROSS_EVOS
-static const u16 sPichuFormSpeciesIdTable[] = {
-    SPECIES_PICHU,
-    SPECIES_PICHU_SPIKY_EARED,
+static const u16 sGuilmon_xFormSpeciesIdTable[] = {
+    SPECIES_GUILMON_X,
+    SPECIES_GUILMON_X_SPIKY_EARED,
     FORM_SPECIES_END,
 };
 #endif //P_GEN_2_CROSS_EVOS

@@ -5,7 +5,7 @@ const u8 gMokumonAlolanPokedexText[] = _(
     "has its own territory, and disputes\n"
     "over food happen often.");
 
-const u8 gPichuPokedexText[] = _(
+const u8 gGuilmon_xPokedexText[] = _(
     "It is still inept at retaining electricity.\n"
     "When it is startled, it discharges power\n"
     "accidentally. It gets better at holding\n"

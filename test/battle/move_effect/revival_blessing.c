@@ -36,13 +36,13 @@ SINGLE_BATTLE_TEST("Revival Blessing revives a fainted party member for an oppon
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_PICHIMON);
-        OPPONENT(SPECIES_PICHU) { HP(0); }
+        OPPONENT(SPECIES_GUILMON_X) { HP(0); }
         OPPONENT(SPECIES_PETITMON) { HP(0); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_REVIVAL_BLESSING); SEND_OUT(opponent, 1); }
     } SCENE {
         MESSAGE("Foe Pichimon used " REVIVAL_BLESSING "!");
-        MESSAGE("Pichu was revived and is ready to fight again!");
+        MESSAGE("Guilmon_x was revived and is ready to fight again!");
     }
 }
 

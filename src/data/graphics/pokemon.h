@@ -347,20 +347,20 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
 #if P_FAMILY_PETITMON
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Pichu[] = INCBIN_U32("graphics/pokemon/pichu/anim_front.4bpp.lz");
-    const u32 gMonPalette_Pichu[] = INCBIN_U32("graphics/pokemon/pichu/normal.gbapal.lz");
-    const u32 gMonBackPic_Pichu[] = INCBIN_U32("graphics/pokemon/pichu/back.4bpp.lz");
-    const u32 gMonShinyPalette_Pichu[] = INCBIN_U32("graphics/pokemon/pichu/shiny.gbapal.lz");
-    const u8 gMonIcon_Pichu[] = INCBIN_U8("graphics/pokemon/pichu/icon.4bpp");
+    const u32 gMonFrontPic_Guilmon_x[] = INCBIN_U32("graphics/pokemon/guilmon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Guilmon_x[] = INCBIN_U32("graphics/pokemon/guilmon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Guilmon_x[] = INCBIN_U32("graphics/pokemon/guilmon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Guilmon_x[] = INCBIN_U32("graphics/pokemon/guilmon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Guilmon_x[] = INCBIN_U8("graphics/pokemon/guilmon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Pichu[] = INCBIN_U8("graphics/pokemon/pichu/footprint.1bpp");
+    const u8 gMonFootprint_Guilmon_x[] = INCBIN_U8("graphics/pokemon/guilmon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_PichuSpikyEared[] = INCBIN_U32("graphics/pokemon/pichu/spiky_eared/anim_front.4bpp.lz");
-    const u32 gMonPalette_PichuSpikyEared[] = INCBIN_U32("graphics/pokemon/pichu/spiky_eared/normal.gbapal.lz");
-    const u32 gMonBackPic_PichuSpikyEared[] = INCBIN_U32("graphics/pokemon/pichu/spiky_eared/back.4bpp.lz");
-    const u32 gMonShinyPalette_PichuSpikyEared[] = INCBIN_U32("graphics/pokemon/pichu/spiky_eared/shiny.gbapal.lz");
-    const u8 gMonIcon_PichuSpikyEared[] = INCBIN_U8("graphics/pokemon/pichu/spiky_eared/icon.4bpp");
+    const u32 gMonFrontPic_Guilmon_xSpikyEared[] = INCBIN_U32("graphics/pokemon/guilmon_x/spiky_eared/anim_front.4bpp.lz");
+    const u32 gMonPalette_Guilmon_xSpikyEared[] = INCBIN_U32("graphics/pokemon/guilmon_x/spiky_eared/normal.gbapal.lz");
+    const u32 gMonBackPic_Guilmon_xSpikyEared[] = INCBIN_U32("graphics/pokemon/guilmon_x/spiky_eared/back.4bpp.lz");
+    const u32 gMonShinyPalette_Guilmon_xSpikyEared[] = INCBIN_U32("graphics/pokemon/guilmon_x/spiky_eared/shiny.gbapal.lz");
+    const u8 gMonIcon_Guilmon_xSpikyEared[] = INCBIN_U8("graphics/pokemon/guilmon_x/spiky_eared/icon.4bpp");
 #endif //P_GEN_2_CROSS_EVOS
 
     const u32 gMonFrontPic_Petitmon[] = INCBIN_U32("graphics/pokemon/petitmon/anim_front.4bpp.lz");

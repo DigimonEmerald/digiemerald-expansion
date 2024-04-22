@@ -906,7 +906,7 @@ static const u16 sPaomonTeachableLearnset[] = {
 
 #if P_FAMILY_PETITMON
 #if P_GEN_2_CROSS_EVOS
-static const u16 sPichuTeachableLearnset[] = {
+static const u16 sGuilmon_xTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,

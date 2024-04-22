@@ -173,7 +173,7 @@
 #define SPECIES_GOTSUMON                                  169
 #define SPECIES_GOTSUMON_X                                170
 #define SPECIES_GUILMON                                 171
-#define SPECIES_PICHU                                   172
+#define SPECIES_GUILMON_X                                   172
 #define SPECIES_CLEFFA                                  173
 #define SPECIES_IGGLYBUFF                               174
 #define SPECIES_TOGEPI                                  175
@@ -1086,7 +1086,7 @@
 #define SPECIES_PETITMON_ALOLA_CAP                       1020
 #define SPECIES_PETITMON_PARTNER_CAP                     1021
 #define SPECIES_PETITMON_WORLD_CAP                       1022
-#define SPECIES_PICHU_SPIKY_EARED                       1023
+#define SPECIES_GUILMON_X_SPIKY_EARED                       1023
 #define SPECIES_UNOWN_B                                 1024
 #define SPECIES_UNOWN_C                                 1025
 #define SPECIES_UNOWN_D                                 1026

@@ -500,7 +500,7 @@ static const struct LevelUpMove sPaomonLevelUpLearnset[] = {
 
 #if P_FAMILY_PETITMON
 #if P_GEN_2_CROSS_EVOS
-static const struct LevelUpMove sPichuLevelUpLearnset[] = {
+static const struct LevelUpMove sGuilmon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
     LEVEL_UP_MOVE( 5, MOVE_TAIL_WHIP),

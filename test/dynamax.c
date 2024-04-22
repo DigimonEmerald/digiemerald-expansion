@@ -943,7 +943,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Volt Crash paralyzes both opponents")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_G_MAX_VOLT_CRASH].argument == MAX_EFFECT_PARALYZE_FOES);
         PLAYER(SPECIES_PETITMON) { GigantamaxFactor(TRUE); }
-        PLAYER(SPECIES_PICHU);
+        PLAYER(SPECIES_GUILMON_X);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {

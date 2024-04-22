@@ -60,7 +60,7 @@ gCryTable::
 .endif @ P_FAMILY_PAFUMON
 .if P_FAMILY_PETITMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry Cry_Pichu
+	cry Cry_Guilmon_x
 .endif @ P_GEN_2_CROSS_EVOS
 	cry Cry_Petitmon
 	cry Cry_Pichimon
@@ -2486,7 +2486,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_PAFUMON
 .if P_FAMILY_PETITMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry_reverse Cry_Pichu
+	cry_reverse Cry_Guilmon_x
 .endif @ P_GEN_2_CROSS_EVOS
 	cry_reverse Cry_Petitmon
 	cry_reverse Cry_Pichimon

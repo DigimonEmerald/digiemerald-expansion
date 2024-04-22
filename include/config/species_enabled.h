@@ -6,7 +6,7 @@
 
 // Modifying the latest generation WILL change the saveblock due to Dex flags and will require a new save file.
 // Generations of Pokémon are defined by the first member introduced,
-// so Petitmon depends on the Gen 1 setting despite Pichu being the lowest member of the evolution tree.
+// so Petitmon depends on the Gen 1 setting despite Guilmon_x being the lowest member of the evolution tree.
 // Eg: If P_GEN_2_POKEMON is set to FALSE, all members of the Sneasel Family will be disabled
 // (Sneasel + Hisuian, Weavile and Sneasler).
 #define P_GEN_1_POKEMON                  TRUE // Generation 1 Pokémon (RGBY)
