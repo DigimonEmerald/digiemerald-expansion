@@ -1356,10 +1356,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Hawkmon)
         .levelUpLearnset = sHawkmonLevelUpLearnset,
         .teachableLearnset = sHawkmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_XATU}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_HERISSMON}),
     },
 
-    [SPECIES_XATU] =
+    [SPECIES_HERISSMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 75,
@@ -1379,39 +1379,39 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_SYNCHRONIZE, ABILITY_EARLY_BIRD, ABILITY_MAGIC_BOUNCE },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Xatu"),
-        .cryId = CRY_XATU,
-        .natDexNum = NATIONAL_DEX_XATU,
+        .speciesName = _("Herissmon"),
+        .cryId = CRY_HERISSMON,
+        .natDexNum = NATIONAL_DEX_HERISSMON,
         .categoryName = _("Mystic"),
         .height = 15,
         .weight = 150,
         .description = COMPOUND_STRING(
             "It has the enigmatic power of foreseeing\n"
             "the future. Some people in different lands\n"
-            "have long believed that Xatu are\n"
+            "have long believed that Herissmon are\n"
             "emissaries from another world."),
         .pokemonScale = 256,
         .pokemonOffset = 6,
         .trainerScale = 318,
         .trainerOffset = 4,
-        .frontPic = gMonFrontPic_Xatu,
-        .frontPicFemale = gMonFrontPic_XatuF,
+        .frontPic = gMonFrontPic_Herissmon,
+        .frontPicFemale = gMonFrontPic_HerissmonF,
         .frontPicSize = MON_COORDS_SIZE(40, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(40, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_Xatu,
+        .frontAnimFrames = sAnims_Herissmon,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Xatu,
+        .backPic = gMonBackPic_Herissmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Xatu,
-        .shinyPalette = gMonShinyPalette_Xatu,
-        .iconSprite = gMonIcon_Xatu,
+        .palette = gMonPalette_Herissmon,
+        .shinyPalette = gMonShinyPalette_Herissmon,
+        .iconSprite = gMonIcon_Herissmon,
         .iconPalIndex = 1,
-        FOOTPRINT(Xatu)
-        .levelUpLearnset = sXatuLevelUpLearnset,
-        .teachableLearnset = sXatuTeachableLearnset,
+        FOOTPRINT(Herissmon)
+        .levelUpLearnset = sHerissmonLevelUpLearnset,
+        .teachableLearnset = sHerissmonTeachableLearnset,
     },
 #endif //P_FAMILY_HAWKMON
 

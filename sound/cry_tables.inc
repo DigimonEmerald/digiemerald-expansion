@@ -506,7 +506,7 @@ gCryTable::
 .endif @ P_FAMILY_HAGURUMON
 .if P_FAMILY_HAWKMON == TRUE
 	cry Cry_Hawkmon
-	cry Cry_Xatu
+	cry Cry_Herissmon
 .endif @ P_FAMILY_HAWKMON
 .if P_FAMILY_MAREEP == TRUE
 	cry Cry_Mareep
@@ -2932,7 +2932,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_HAGURUMON
 .if P_FAMILY_HAWKMON == TRUE
 	cry_reverse Cry_Hawkmon
-	cry_reverse Cry_Xatu
+	cry_reverse Cry_Herissmon
 .endif @ P_FAMILY_HAWKMON
 .if P_FAMILY_MAREEP == TRUE
 	cry_reverse Cry_Mareep

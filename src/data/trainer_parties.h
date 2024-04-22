@@ -112,7 +112,7 @@ static const struct TrainerMon sParty_Alberto[] = {
     },
     {
     .lvl = 30,
-    .species = SPECIES_XATU,
+    .species = SPECIES_HERISSMON,
     }
 };
 
@@ -2867,7 +2867,7 @@ static const struct TrainerMon sParty_Samantha[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 36,
-    .species = SPECIES_XATU,
+    .species = SPECIES_HERISSMON,
     }
 };
 
@@ -2901,7 +2901,7 @@ static const struct TrainerMon sParty_Alexis[] = {
     },
     {
     .lvl = 41,
-    .species = SPECIES_XATU,
+    .species = SPECIES_HERISSMON,
     }
 };
 
@@ -3394,7 +3394,7 @@ static const struct TrainerMon sParty_TateAndLiza1[] = {
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .lvl = 41,
-    .species = SPECIES_XATU,
+    .species = SPECIES_HERISSMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_PSYCHIC, MOVE_SUNNY_DAY, MOVE_CONFUSE_RAY, MOVE_CALM_MIND}
     },
@@ -5013,7 +5013,7 @@ static const struct TrainerMon sParty_Presley[] = {
     },
     {
     .lvl = 33,
-    .species = SPECIES_XATU,
+    .species = SPECIES_HERISSMON,
     }
 };
 
@@ -5059,7 +5059,7 @@ static const struct TrainerMon sParty_Benny[] = {
     },
     {
     .lvl = 36,
-    .species = SPECIES_XATU,
+    .species = SPECIES_HERISSMON,
     }
 };
 
@@ -5122,7 +5122,7 @@ static const struct TrainerMon sParty_Robert5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 41,
-    .species = SPECIES_XATU,
+    .species = SPECIES_HERISSMON,
     }
 };
 
@@ -8246,7 +8246,7 @@ static const struct TrainerMon sParty_Flint[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 29,
-    .species = SPECIES_XATU,
+    .species = SPECIES_HERISSMON,
     }
 };
 
@@ -10634,7 +10634,7 @@ static const struct TrainerMon sParty_TateAndLiza2[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 49,
-    .species = SPECIES_XATU,
+    .species = SPECIES_HERISSMON,
     .heldItem = ITEM_CHESTO_BERRY,
     .moves = {MOVE_PSYCHIC, MOVE_REST, MOVE_CONFUSE_RAY, MOVE_CALM_MIND}
     },
@@ -10679,7 +10679,7 @@ static const struct TrainerMon sParty_TateAndLiza3[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 54,
-    .species = SPECIES_XATU,
+    .species = SPECIES_HERISSMON,
     .heldItem = ITEM_CHESTO_BERRY,
     .moves = {MOVE_PSYCHIC, MOVE_REST, MOVE_CONFUSE_RAY, MOVE_CALM_MIND}
     },
@@ -10724,7 +10724,7 @@ static const struct TrainerMon sParty_TateAndLiza4[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 59,
-    .species = SPECIES_XATU,
+    .species = SPECIES_HERISSMON,
     .heldItem = ITEM_CHESTO_BERRY,
     .moves = {MOVE_PSYCHIC, MOVE_REST, MOVE_CONFUSE_RAY, MOVE_CALM_MIND}
     },
@@ -10769,7 +10769,7 @@ static const struct TrainerMon sParty_TateAndLiza5[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 64,
-    .species = SPECIES_XATU,
+    .species = SPECIES_HERISSMON,
     .heldItem = ITEM_CHESTO_BERRY,
     .moves = {MOVE_PSYCHIC, MOVE_REST, MOVE_CONFUSE_RAY, MOVE_CALM_MIND}
     },

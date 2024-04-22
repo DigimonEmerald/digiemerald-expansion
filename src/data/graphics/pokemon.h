@@ -2845,16 +2845,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Hawkmon[] = INCBIN_U8("graphics/pokemon/hawkmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Xatu[] = INCBIN_U32("graphics/pokemon/xatu/anim_front.4bpp.lz");
-    const u32 gMonPalette_Xatu[] = INCBIN_U32("graphics/pokemon/xatu/normal.gbapal.lz");
-    const u32 gMonBackPic_Xatu[] = INCBIN_U32("graphics/pokemon/xatu/back.4bpp.lz");
-    const u32 gMonShinyPalette_Xatu[] = INCBIN_U32("graphics/pokemon/xatu/shiny.gbapal.lz");
-    const u8 gMonIcon_Xatu[] = INCBIN_U8("graphics/pokemon/xatu/icon.4bpp");
+    const u32 gMonFrontPic_Herissmon[] = INCBIN_U32("graphics/pokemon/herissmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Herissmon[] = INCBIN_U32("graphics/pokemon/herissmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Herissmon[] = INCBIN_U32("graphics/pokemon/herissmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Herissmon[] = INCBIN_U32("graphics/pokemon/herissmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Herissmon[] = INCBIN_U8("graphics/pokemon/herissmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Xatu[] = INCBIN_U8("graphics/pokemon/xatu/footprint.1bpp");
+    const u8 gMonFootprint_Herissmon[] = INCBIN_U8("graphics/pokemon/herissmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_XatuF[] = INCBIN_U32("graphics/pokemon/xatu/anim_frontf.4bpp.lz");
+    const u32 gMonFrontPic_HerissmonF[] = INCBIN_U32("graphics/pokemon/herissmon/anim_frontf.4bpp.lz");
 #endif //P_FAMILY_HAWKMON
 
 #if P_FAMILY_MAREEP

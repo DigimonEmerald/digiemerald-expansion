@@ -2573,7 +2573,7 @@ static const union AnimCmd sAnim_Hawkmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Xatu_1[] =
+static const union AnimCmd sAnim_Herissmon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 45),
@@ -10789,7 +10789,7 @@ SINGLE_ANIMATION(Togekiss);
 #endif //P_FAMILY_HAGURUMON
 #if P_FAMILY_HAWKMON
 SINGLE_ANIMATION(Hawkmon);
-SINGLE_ANIMATION(Xatu);
+SINGLE_ANIMATION(Herissmon);
 #endif //P_FAMILY_HAWKMON
 #if P_FAMILY_MAREEP
 SINGLE_ANIMATION(Mareep);

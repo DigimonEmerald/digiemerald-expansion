@@ -1579,8 +1579,8 @@ Cry_Hawkmon::
 	.incbin "sound/direct_sound_samples/cries/hawkmon.bin"
 
 	.align 2
-Cry_Xatu::
-	.incbin "sound/direct_sound_samples/cries/xatu.bin"
+Cry_Herissmon::
+	.incbin "sound/direct_sound_samples/cries/herissmon.bin"
 .endif @ P_FAMILY_HAWKMON
 
 .if P_FAMILY_MAREEP == TRUE
