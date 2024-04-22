@@ -5975,8 +5975,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_YUKIAGUMON_06
 
-#if P_FAMILY_SUICUNE
-    [SPECIES_SUICUNE] =
+#if P_FAMILY_ICEGOBIMON
+    [SPECIES_ICEGOBIMON] =
     {
         .baseHP        = 100,
         .baseAttack    = 75,
@@ -6006,14 +6006,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_WATER_ABSORB },
     #endif
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Suicune"),
-        .cryId = CRY_SUICUNE,
-        .natDexNum = NATIONAL_DEX_SUICUNE,
+        .speciesName = _("Icegobimon"),
+        .cryId = CRY_ICEGOBIMON,
+        .natDexNum = NATIONAL_DEX_ICEGOBIMON,
         .categoryName = _("Aurora"),
         .height = 20,
         .weight = 1870,
         .description = COMPOUND_STRING(
-            "Suicune embodies the compassion of\n"
+            "Icegobimon embodies the compassion of\n"
             "a pure spring of water. It runs across\n"
             "the land with gliding elegance. It has the\n"
             "power to purify dirty water."),
@@ -6021,25 +6021,25 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 0,
         .trainerScale = 345,
         .trainerOffset = 7,
-        .frontPic = gMonFrontPic_Suicune,
+        .frontPic = gMonFrontPic_Icegobimon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_Suicune,
+        .frontAnimFrames = sAnims_Icegobimon,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Suicune,
+        .backPic = gMonBackPic_Icegobimon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
-        .palette = gMonPalette_Suicune,
-        .shinyPalette = gMonShinyPalette_Suicune,
-        .iconSprite = gMonIcon_Suicune,
+        .palette = gMonPalette_Icegobimon,
+        .shinyPalette = gMonShinyPalette_Icegobimon,
+        .iconSprite = gMonIcon_Icegobimon,
         .iconPalIndex = 2,
-        FOOTPRINT(Suicune)
+        FOOTPRINT(Icegobimon)
         .isLegendary = TRUE,
-        .levelUpLearnset = sSuicuneLevelUpLearnset,
-        .teachableLearnset = sSuicuneTeachableLearnset,
+        .levelUpLearnset = sIcegobimonLevelUpLearnset,
+        .teachableLearnset = sIcegobimonTeachableLearnset,
     },
-#endif //P_FAMILY_SUICUNE
+#endif //P_FAMILY_ICEGOBIMON
 
 #if P_FAMILY_LARVITAR
     [SPECIES_LARVITAR] =

@@ -12069,8 +12069,8 @@ static const u16 sYukiagumon_06TeachableLearnset[] = {
 };
 #endif //P_FAMILY_YUKIAGUMON_06
 
-#if P_FAMILY_SUICUNE
-static const u16 sSuicuneTeachableLearnset[] = {
+#if P_FAMILY_ICEGOBIMON
+static const u16 sIcegobimonTeachableLearnset[] = {
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,
     MOVE_CUT,
@@ -12107,7 +12107,7 @@ static const u16 sSuicuneTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SUICUNE
+#endif //P_FAMILY_ICEGOBIMON
 
 #if P_FAMILY_LARVITAR
 static const u16 sLarvitarTeachableLearnset[] = {

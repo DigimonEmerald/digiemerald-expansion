@@ -3823,16 +3823,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_YUKIAGUMON_06
 
-#if P_FAMILY_SUICUNE
-    const u32 gMonFrontPic_Suicune[] = INCBIN_U32("graphics/pokemon/suicune/anim_front.4bpp.lz");
-    const u32 gMonPalette_Suicune[] = INCBIN_U32("graphics/pokemon/suicune/normal.gbapal.lz");
-    const u32 gMonBackPic_Suicune[] = INCBIN_U32("graphics/pokemon/suicune/back.4bpp.lz");
-    const u32 gMonShinyPalette_Suicune[] = INCBIN_U32("graphics/pokemon/suicune/shiny.gbapal.lz");
-    const u8 gMonIcon_Suicune[] = INCBIN_U8("graphics/pokemon/suicune/icon.4bpp");
+#if P_FAMILY_ICEGOBIMON
+    const u32 gMonFrontPic_Icegobimon[] = INCBIN_U32("graphics/pokemon/icegobimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Icegobimon[] = INCBIN_U32("graphics/pokemon/icegobimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Icegobimon[] = INCBIN_U32("graphics/pokemon/icegobimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Icegobimon[] = INCBIN_U32("graphics/pokemon/icegobimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Icegobimon[] = INCBIN_U8("graphics/pokemon/icegobimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Suicune[] = INCBIN_U8("graphics/pokemon/suicune/footprint.1bpp");
+    const u8 gMonFootprint_Icegobimon[] = INCBIN_U8("graphics/pokemon/icegobimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_SUICUNE
+#endif //P_FAMILY_ICEGOBIMON
 
 #if P_FAMILY_LARVITAR
     const u32 gMonFrontPic_Larvitar[] = INCBIN_U32("graphics/pokemon/larvitar/anim_front.4bpp.lz");

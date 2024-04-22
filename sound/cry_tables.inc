@@ -689,9 +689,9 @@ gCryTable::
 .if P_FAMILY_YUKIAGUMON_06 == TRUE
 	cry Cry_Yukiagumon_06
 .endif @ P_FAMILY_YUKIAGUMON_06
-.if P_FAMILY_SUICUNE == TRUE
-	cry Cry_Suicune
-.endif @ P_FAMILY_SUICUNE
+.if P_FAMILY_ICEGOBIMON == TRUE
+	cry Cry_Icegobimon
+.endif @ P_FAMILY_ICEGOBIMON
 .if P_FAMILY_LARVITAR == TRUE
 	cry Cry_Larvitar
 	cry Cry_Pupitar
@@ -3115,9 +3115,9 @@ gCryTable_Reverse::
 .if P_FAMILY_YUKIAGUMON_06 == TRUE
 	cry_reverse Cry_Yukiagumon_06
 .endif @ P_FAMILY_YUKIAGUMON_06
-.if P_FAMILY_SUICUNE == TRUE
-	cry_reverse Cry_Suicune
-.endif @ P_FAMILY_SUICUNE
+.if P_FAMILY_ICEGOBIMON == TRUE
+	cry_reverse Cry_Icegobimon
+.endif @ P_FAMILY_ICEGOBIMON
 .if P_FAMILY_LARVITAR == TRUE
 	cry_reverse Cry_Larvitar
 	cry_reverse Cry_Pupitar

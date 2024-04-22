@@ -1986,11 +1986,11 @@ Cry_Yukiagumon_06::
 	.incbin "sound/direct_sound_samples/cries/yukiagumon_06.bin"
 .endif @ P_FAMILY_YUKIAGUMON_06
 
-.if P_FAMILY_SUICUNE == TRUE
+.if P_FAMILY_ICEGOBIMON == TRUE
 	.align 2
-Cry_Suicune::
-	.incbin "sound/direct_sound_samples/cries/suicune.bin"
-.endif @ P_FAMILY_SUICUNE
+Cry_Icegobimon::
+	.incbin "sound/direct_sound_samples/cries/icegobimon.bin"
+.endif @ P_FAMILY_ICEGOBIMON
 
 .if P_FAMILY_LARVITAR == TRUE
 	.align 2
