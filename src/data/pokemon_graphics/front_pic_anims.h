@@ -3141,7 +3141,7 @@ static const union AnimCmd sAnim_Palmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Piloswine_1[] =
+static const union AnimCmd sAnim_Palmon_x_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -10928,7 +10928,7 @@ SINGLE_ANIMATION(Otamamon_x);
 #endif //P_FAMILY_OTAMAMON_RED
 #if P_FAMILY_PALMON
 SINGLE_ANIMATION(Palmon);
-SINGLE_ANIMATION(Piloswine);
+SINGLE_ANIMATION(Palmon_x);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Mamoswine);
 #endif //P_GEN_4_CROSS_EVOS

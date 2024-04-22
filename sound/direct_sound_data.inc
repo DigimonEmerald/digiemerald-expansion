@@ -1867,8 +1867,8 @@ Cry_Palmon::
 	.incbin "sound/direct_sound_samples/cries/palmon.bin"
 
 	.align 2
-Cry_Piloswine::
-	.incbin "sound/direct_sound_samples/cries/piloswine.bin"
+Cry_Palmon_x::
+	.incbin "sound/direct_sound_samples/cries/palmon_x.bin"
 
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2

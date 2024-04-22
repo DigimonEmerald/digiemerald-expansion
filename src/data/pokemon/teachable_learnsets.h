@@ -11320,7 +11320,7 @@ static const u16 sPalmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sPiloswineTeachableLearnset[] = {
+static const u16 sPalmon_xTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIG,

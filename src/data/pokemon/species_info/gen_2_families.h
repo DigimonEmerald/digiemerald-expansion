@@ -4703,10 +4703,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Palmon)
         .levelUpLearnset = sPalmonLevelUpLearnset,
         .teachableLearnset = sPalmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_PILOSWINE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_PALMON_X}),
     },
 
-    [SPECIES_PILOSWINE] =
+    [SPECIES_PALMON_X] =
     {
         .baseHP        = 100,
         .baseAttack    = 100,
@@ -4726,14 +4726,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_SNOW_CLOAK, ABILITY_THICK_FAT },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Piloswine"),
-        .cryId = CRY_PILOSWINE,
-        .natDexNum = NATIONAL_DEX_PILOSWINE,
+        .speciesName = _("Palmon_x"),
+        .cryId = CRY_PALMON_X,
+        .natDexNum = NATIONAL_DEX_PALMON_X,
         .categoryName = _("Swine"),
         .height = 11,
         .weight = 558,
         .description = COMPOUND_STRING(
-            "A Piloswine is covered by a thick coat\n"
+            "A Palmon_x is covered by a thick coat\n"
             "of long hair for enduring freezing cold.\n"
             "It uses its tusks to dig up food that has\n"
             "been buried under ice."),
@@ -4741,26 +4741,26 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Piloswine,
-        .frontPicFemale = gMonFrontPic_PiloswineF,
+        .frontPic = gMonFrontPic_Palmon_x,
+        .frontPicFemale = gMonFrontPic_Palmon_xF,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Piloswine,
+        .frontAnimFrames = sAnims_Palmon_x,
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Piloswine,
-        .backPicFemale = gMonBackPic_PiloswineF,
+        .backPic = gMonBackPic_Palmon_x,
+        .backPicFemale = gMonBackPic_Palmon_xF,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_H_SHAKE,
-        .palette = gMonPalette_Piloswine,
-        .shinyPalette = gMonShinyPalette_Piloswine,
-        .iconSprite = gMonIcon_Piloswine,
+        .palette = gMonPalette_Palmon_x,
+        .shinyPalette = gMonShinyPalette_Palmon_x,
+        .iconSprite = gMonIcon_Palmon_x,
         .iconPalIndex = 2,
-        FOOTPRINT(Piloswine)
-        .levelUpLearnset = sPiloswineLevelUpLearnset,
-        .teachableLearnset = sPiloswineTeachableLearnset,
+        FOOTPRINT(Palmon_x)
+        .levelUpLearnset = sPalmon_xLevelUpLearnset,
+        .teachableLearnset = sPalmon_xTeachableLearnset,
         .evolutions = EVOLUTION({EVO_MOVE, MOVE_ANCIENT_POWER, SPECIES_MAMOSWINE}),
     },
 

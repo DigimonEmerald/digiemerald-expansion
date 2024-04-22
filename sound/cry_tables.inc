@@ -633,7 +633,7 @@ gCryTable::
 .endif @ P_FAMILY_OTAMAMON_RED
 .if P_FAMILY_PALMON == TRUE
 	cry Cry_Palmon
-	cry Cry_Piloswine
+	cry Cry_Palmon_x
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Mamoswine
 .endif @ P_GEN_4_CROSS_EVOS
@@ -3059,7 +3059,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_OTAMAMON_RED
 .if P_FAMILY_PALMON == TRUE
 	cry_reverse Cry_Palmon
-	cry_reverse Cry_Piloswine
+	cry_reverse Cry_Palmon_x
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Mamoswine
 .endif @ P_GEN_4_CROSS_EVOS
