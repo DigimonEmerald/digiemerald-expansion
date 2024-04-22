@@ -4322,7 +4322,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [2] =
                                         {
-                                            .species = SPECIES_CROBAT,
+                                            .species = SPECIES_GOTSUMON,
                                             .heldItem = ITEM_KINGS_ROCK,
                                             .moves = {MOVE_MEAN_LOOK, MOVE_CONFUSE_RAY, MOVE_AERIAL_ACE, MOVE_TOXIC},
                                             .hpEV = 250,
@@ -4337,7 +4337,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x0,
-                                            .nickname = _("CROBAT"),
+                                            .nickname = _("GOTSUMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [3] =

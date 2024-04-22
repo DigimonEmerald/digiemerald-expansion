@@ -2019,7 +2019,7 @@ static const u16 sYuramonTeachableLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const u16 sCrobatTeachableLearnset[] = {
+static const u16 sGotsumonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,

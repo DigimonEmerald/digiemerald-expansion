@@ -4551,11 +4551,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Yuramon)
         .levelUpLearnset = sYuramonLevelUpLearnset,
         .teachableLearnset = sYuramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_CROBAT}),
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_GOTSUMON}),
     },
 
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_CROBAT] =
+    [SPECIES_GOTSUMON] =
     {
         .baseHP        = 85,
         .baseAttack    = 90,
@@ -4580,9 +4580,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_NONE, ABILITY_INFILTRATOR },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Crobat"),
-        .cryId = CRY_CROBAT,
-        .natDexNum = NATIONAL_DEX_CROBAT,
+        .speciesName = _("Gotsumon"),
+        .cryId = CRY_GOTSUMON,
+        .natDexNum = NATIONAL_DEX_GOTSUMON,
         .categoryName = _("Bat"),
         .height = 18,
         .weight = 750,
@@ -4595,23 +4595,23 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 281,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Crobat,
+        .frontPic = gMonFrontPic_Gotsumon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Crobat,
+        .frontAnimFrames = sAnims_Gotsumon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 9,
-        .backPic = gMonBackPic_Crobat,
+        .backPic = gMonBackPic_Gotsumon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Crobat,
-        .shinyPalette = gMonShinyPalette_Crobat,
-        .iconSprite = gMonIcon_Crobat,
+        .palette = gMonPalette_Gotsumon,
+        .shinyPalette = gMonShinyPalette_Gotsumon,
+        .iconSprite = gMonIcon_Gotsumon,
         .iconPalIndex = 2,
-        FOOTPRINT(Crobat)
-        .levelUpLearnset = sCrobatLevelUpLearnset,
-        .teachableLearnset = sCrobatTeachableLearnset,
+        FOOTPRINT(Gotsumon)
+        .levelUpLearnset = sGotsumonLevelUpLearnset,
+        .teachableLearnset = sGotsumonTeachableLearnset,
     },
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ICEBOTAMON

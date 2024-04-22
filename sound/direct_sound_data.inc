@@ -639,8 +639,8 @@ Cry_Yuramon::
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Crobat::
-	.incbin "sound/direct_sound_samples/cries/crobat.bin"
+Cry_Gotsumon::
+	.incbin "sound/direct_sound_samples/cries/gotsumon.bin"
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_ICEBOTAMON
 

@@ -375,9 +375,9 @@ AI_SINGLE_BATTLE_TEST("AI won't use Solar Beam if there is no Sun up or the user
 AI_SINGLE_BATTLE_TEST("AI won't use ground type attacks against flying type Pokemon unless Gravity is in effect")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_EARTHQUAKE].category == DAMAGE_CATEGORY_PHYSICAL); // Otherwise, it doesn't KO Crobat
+        ASSUME(gMovesInfo[MOVE_EARTHQUAKE].category == DAMAGE_CATEGORY_PHYSICAL); // Otherwise, it doesn't KO Gotsumon
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_CROBAT);
+        PLAYER(SPECIES_GOTSUMON);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_PURURUMON) { Moves(MOVE_EARTHQUAKE, MOVE_TACKLE, MOVE_POISON_STING, MOVE_GUST); }
     } WHEN {
@@ -600,14 +600,14 @@ AI_SINGLE_BATTLE_TEST("AI switches if Perish Song is about to kill")
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET) {Moves(MOVE_TACKLE); }
-        OPPONENT(SPECIES_CROBAT) {Moves(MOVE_TACKLE); }
+        OPPONENT(SPECIES_GOTSUMON) {Moves(MOVE_TACKLE); }
     } WHEN {
             TURN { MOVE(player, MOVE_PERISH_SONG); }
             TURN { ; }
             TURN { ; }
             TURN { EXPECT_SWITCH(opponent, 1); }
     } SCENE {
-        MESSAGE("{PKMN} TRAINER LEAF sent out Crobat!");
+        MESSAGE("{PKMN} TRAINER LEAF sent out Gotsumon!");
     }
 }
 

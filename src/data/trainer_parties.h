@@ -324,7 +324,7 @@ static const struct TrainerMon sParty_Archie[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 41,
-    .species = SPECIES_CROBAT,
+    .species = SPECIES_GOTSUMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -7545,7 +7545,7 @@ static const struct TrainerMon sParty_MaxieMagmaHideout[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 38,
-    .species = SPECIES_CROBAT,
+    .species = SPECIES_GOTSUMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -9258,7 +9258,7 @@ static const struct TrainerMon sParty_MaxieMossdeep[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 43,
-    .species = SPECIES_CROBAT,
+    .species = SPECIES_GOTSUMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),

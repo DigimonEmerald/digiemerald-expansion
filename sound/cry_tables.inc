@@ -99,7 +99,7 @@ gCryTable::
 	cry Cry_Icebotamon
 	cry Cry_Yuramon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry Cry_Crobat
+	cry Cry_Gotsumon
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_ICEBOTAMON
 .if P_FAMILY_ZERIMON == TRUE
@@ -2525,7 +2525,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Icebotamon
 	cry_reverse Cry_Yuramon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry_reverse Cry_Crobat
+	cry_reverse Cry_Gotsumon
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_ICEBOTAMON
 .if P_FAMILY_ZERIMON == TRUE

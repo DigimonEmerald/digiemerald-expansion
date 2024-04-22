@@ -606,7 +606,7 @@ static const union AnimCmd sAnim_Yuramon_1[] =
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Crobat_1[] =
+static const union AnimCmd sAnim_Gotsumon_1[] =
 {
     ANIMCMD_FRAME(0, 2),
     ANIMCMD_FRAME(1, 2),
@@ -10301,7 +10301,7 @@ SINGLE_ANIMATION(Tsubumon);
 SINGLE_ANIMATION(Icebotamon);
 SINGLE_ANIMATION(Yuramon);
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Crobat);
+SINGLE_ANIMATION(Gotsumon);
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ICEBOTAMON
 #if P_FAMILY_ZERIMON

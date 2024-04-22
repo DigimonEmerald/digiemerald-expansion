@@ -909,7 +909,7 @@ static const struct LevelUpMove sYuramonLevelUpLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const struct LevelUpMove sCrobatLevelUpLearnset[] = {
+static const struct LevelUpMove sGotsumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CROSS_POISON),
     LEVEL_UP_MOVE( 1, MOVE_SCREECH),
     LEVEL_UP_MOVE( 1, MOVE_LEECH_LIFE),

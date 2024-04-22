@@ -711,13 +711,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonBackPic_YuramonF[] = INCBIN_U32("graphics/pokemon/yuramon/backf.4bpp.lz");
 
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Crobat[] = INCBIN_U32("graphics/pokemon/crobat/anim_front.4bpp.lz");
-    const u32 gMonPalette_Crobat[] = INCBIN_U32("graphics/pokemon/crobat/normal.gbapal.lz");
-    const u32 gMonBackPic_Crobat[] = INCBIN_U32("graphics/pokemon/crobat/back.4bpp.lz");
-    const u32 gMonShinyPalette_Crobat[] = INCBIN_U32("graphics/pokemon/crobat/shiny.gbapal.lz");
-    const u8 gMonIcon_Crobat[] = INCBIN_U8("graphics/pokemon/crobat/icon.4bpp");
+    const u32 gMonFrontPic_Gotsumon[] = INCBIN_U32("graphics/pokemon/gotsumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gotsumon[] = INCBIN_U32("graphics/pokemon/gotsumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Gotsumon[] = INCBIN_U32("graphics/pokemon/gotsumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gotsumon[] = INCBIN_U32("graphics/pokemon/gotsumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Gotsumon[] = INCBIN_U8("graphics/pokemon/gotsumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Crobat[] = INCBIN_U8("graphics/pokemon/crobat/footprint.1bpp");
+    const u8 gMonFootprint_Gotsumon[] = INCBIN_U8("graphics/pokemon/gotsumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ICEBOTAMON
