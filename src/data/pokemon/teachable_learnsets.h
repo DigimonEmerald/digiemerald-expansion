@@ -8910,8 +8910,8 @@ static const u16 sGazimon_xTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GAZIMON
 
-#if P_FAMILY_HOOTHOOT
-static const u16 sHoothootTeachableLearnset[] = {
+#if P_FAMILY_GHOSTMON
+static const u16 sGhostmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
@@ -8974,7 +8974,7 @@ static const u16 sNoctowlTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_HOOTHOOT
+#endif //P_FAMILY_GHOSTMON
 
 #if P_FAMILY_LEDYBA
 static const u16 sLedybaTeachableLearnset[] = {

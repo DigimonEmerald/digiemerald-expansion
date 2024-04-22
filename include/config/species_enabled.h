@@ -138,7 +138,7 @@
 #define P_FAMILY_FLORAMON               P_GEN_2_POKEMON
 #define P_FAMILY_GAMMAMON                P_GEN_2_POKEMON
 #define P_FAMILY_GAZIMON                 P_GEN_2_POKEMON
-#define P_FAMILY_HOOTHOOT                P_GEN_2_POKEMON
+#define P_FAMILY_GHOSTMON                P_GEN_2_POKEMON
 #define P_FAMILY_LEDYBA                  P_GEN_2_POKEMON
 #define P_FAMILY_SPINARAK                P_GEN_2_POKEMON
 #define P_FAMILY_CHINCHOU                P_GEN_2_POKEMON

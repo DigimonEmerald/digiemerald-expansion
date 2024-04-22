@@ -2718,14 +2718,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_GAZIMON
 
-#if P_FAMILY_HOOTHOOT
-    const u32 gMonFrontPic_Hoothoot[] = INCBIN_U32("graphics/pokemon/hoothoot/anim_front.4bpp.lz");
-    const u32 gMonPalette_Hoothoot[] = INCBIN_U32("graphics/pokemon/hoothoot/normal.gbapal.lz");
-    const u32 gMonBackPic_Hoothoot[] = INCBIN_U32("graphics/pokemon/hoothoot/back.4bpp.lz");
-    const u32 gMonShinyPalette_Hoothoot[] = INCBIN_U32("graphics/pokemon/hoothoot/shiny.gbapal.lz");
-    const u8 gMonIcon_Hoothoot[] = INCBIN_U8("graphics/pokemon/hoothoot/icon.4bpp");
+#if P_FAMILY_GHOSTMON
+    const u32 gMonFrontPic_Ghostmon[] = INCBIN_U32("graphics/pokemon/ghostmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Ghostmon[] = INCBIN_U32("graphics/pokemon/ghostmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Ghostmon[] = INCBIN_U32("graphics/pokemon/ghostmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Ghostmon[] = INCBIN_U32("graphics/pokemon/ghostmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Ghostmon[] = INCBIN_U8("graphics/pokemon/ghostmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Hoothoot[] = INCBIN_U8("graphics/pokemon/hoothoot/footprint.1bpp");
+    const u8 gMonFootprint_Ghostmon[] = INCBIN_U8("graphics/pokemon/ghostmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Noctowl[] = INCBIN_U32("graphics/pokemon/noctowl/anim_front.4bpp.lz");
@@ -2736,7 +2736,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Noctowl[] = INCBIN_U8("graphics/pokemon/noctowl/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_HOOTHOOT
+#endif //P_FAMILY_GHOSTMON
 
 #if P_FAMILY_LEDYBA
     const u32 gMonFrontPic_Ledyba[] = INCBIN_U32("graphics/pokemon/ledyba/anim_front.4bpp.lz");

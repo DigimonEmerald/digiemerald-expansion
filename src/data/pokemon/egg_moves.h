@@ -1378,8 +1378,8 @@ const u16 gEggMoves[] = {
         MOVE_BABY_DOLL_EYES),
 #endif //P_FAMILY_GAZIMON
 
-#if P_FAMILY_HOOTHOOT
-    egg_moves(HOOTHOOT,
+#if P_FAMILY_GHOSTMON
+    egg_moves(GHOSTMON,
         MOVE_MIRROR_MOVE,
         MOVE_SUPERSONIC,
         MOVE_FEINT_ATTACK,
@@ -1392,7 +1392,7 @@ const u16 gEggMoves[] = {
         MOVE_DEFOG,
         MOVE_MEAN_LOOK,
         MOVE_HURRICANE),
-#endif //P_FAMILY_HOOTHOOT
+#endif //P_FAMILY_GHOSTMON
 
 #if P_FAMILY_LEDYBA
     egg_moves(LEDYBA,

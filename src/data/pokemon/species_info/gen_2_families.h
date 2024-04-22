@@ -680,8 +680,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_GAZIMON
 
-#if P_FAMILY_HOOTHOOT
-    [SPECIES_HOOTHOOT] =
+#if P_FAMILY_GHOSTMON
+    [SPECIES_GHOSTMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 30,
@@ -700,37 +700,37 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_INSOMNIA, ABILITY_KEEN_EYE, ABILITY_TINTED_LENS },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Hoothoot"),
-        .cryId = CRY_HOOTHOOT,
-        .natDexNum = NATIONAL_DEX_HOOTHOOT,
+        .speciesName = _("Ghostmon"),
+        .cryId = CRY_GHOSTMON,
+        .natDexNum = NATIONAL_DEX_GHOSTMON,
         .categoryName = _("Owl"),
         .height = 7,
         .weight = 212,
         .description = COMPOUND_STRING(
             "It has an internal organ that senses\n"
             "the earth's rotation. Using this special\n"
-            "organ, a Hoothoot begins hooting at\n"
+            "organ, a Ghostmon begins hooting at\n"
             "precisely the same time every day."),
         .pokemonScale = 380,
         .pokemonOffset = -2,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Hoothoot,
+        .frontPic = gMonFrontPic_Ghostmon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Hoothoot,
+        .frontAnimFrames = sAnims_Ghostmon,
         .frontAnimId = ANIM_V_SLIDE_SLOW,
-        .backPic = gMonBackPic_Hoothoot,
+        .backPic = gMonBackPic_Ghostmon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Hoothoot,
-        .shinyPalette = gMonShinyPalette_Hoothoot,
-        .iconSprite = gMonIcon_Hoothoot,
+        .palette = gMonPalette_Ghostmon,
+        .shinyPalette = gMonShinyPalette_Ghostmon,
+        .iconSprite = gMonIcon_Ghostmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Hoothoot)
-        .levelUpLearnset = sHoothootLevelUpLearnset,
-        .teachableLearnset = sHoothootTeachableLearnset,
+        FOOTPRINT(Ghostmon)
+        .levelUpLearnset = sGhostmonLevelUpLearnset,
+        .teachableLearnset = sGhostmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_NOCTOWL}),
     },
 
@@ -791,7 +791,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sNoctowlLevelUpLearnset,
         .teachableLearnset = sNoctowlTeachableLearnset,
     },
-#endif //P_FAMILY_HOOTHOOT
+#endif //P_FAMILY_GHOSTMON
 
 #if P_FAMILY_LEDYBA
     [SPECIES_LEDYBA] =

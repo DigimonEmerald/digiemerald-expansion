@@ -1517,15 +1517,15 @@ Cry_Gazimon_x::
 	.incbin "sound/direct_sound_samples/cries/gazimon_x.bin"
 .endif @ P_FAMILY_GAZIMON
 
-.if P_FAMILY_HOOTHOOT == TRUE
+.if P_FAMILY_GHOSTMON == TRUE
 	.align 2
-Cry_Hoothoot::
-	.incbin "sound/direct_sound_samples/cries/hoothoot.bin"
+Cry_Ghostmon::
+	.incbin "sound/direct_sound_samples/cries/ghostmon.bin"
 
 	.align 2
 Cry_Noctowl::
 	.incbin "sound/direct_sound_samples/cries/noctowl.bin"
-.endif @ P_FAMILY_HOOTHOOT
+.endif @ P_FAMILY_GHOSTMON
 
 .if P_FAMILY_LEDYBA == TRUE
 	.align 2

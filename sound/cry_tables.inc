@@ -481,10 +481,10 @@ gCryTable::
 	cry Cry_Gazimon
 	cry Cry_Gazimon_x
 .endif @ P_FAMILY_GAZIMON
-.if P_FAMILY_HOOTHOOT == TRUE
-	cry Cry_Hoothoot
+.if P_FAMILY_GHOSTMON == TRUE
+	cry Cry_Ghostmon
 	cry Cry_Noctowl
-.endif @ P_FAMILY_HOOTHOOT
+.endif @ P_FAMILY_GHOSTMON
 .if P_FAMILY_LEDYBA == TRUE
 	cry Cry_Ledyba
 	cry Cry_Ledian
@@ -2907,10 +2907,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Gazimon
 	cry_reverse Cry_Gazimon_x
 .endif @ P_FAMILY_GAZIMON
-.if P_FAMILY_HOOTHOOT == TRUE
-	cry_reverse Cry_Hoothoot
+.if P_FAMILY_GHOSTMON == TRUE
+	cry_reverse Cry_Ghostmon
 	cry_reverse Cry_Noctowl
-.endif @ P_FAMILY_HOOTHOOT
+.endif @ P_FAMILY_GHOSTMON
 .if P_FAMILY_LEDYBA == TRUE
 	cry_reverse Cry_Ledyba
 	cry_reverse Cry_Ledian
