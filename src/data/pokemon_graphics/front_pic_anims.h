@@ -3178,8 +3178,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Cursola);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PATAMON
 
-#if P_FAMILY_REMORAID
-static const union AnimCmd sAnim_Remoraid_1[] =
+#if P_FAMILY_PAWNMON_BLACK
+static const union AnimCmd sAnim_Pawnmon_black_1[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_FRAME(1, 30),
@@ -3195,7 +3195,7 @@ static const union AnimCmd sAnim_Octillery_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_REMORAID
+#endif //P_FAMILY_PAWNMON_BLACK
 
 #if P_FAMILY_DELIBIRD
 static const union AnimCmd sAnim_Delibird_1[] =
@@ -10940,10 +10940,10 @@ SINGLE_ANIMATION(PatamonGalarian);
 SINGLE_ANIMATION(Cursola);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PATAMON
-#if P_FAMILY_REMORAID
-SINGLE_ANIMATION(Remoraid);
+#if P_FAMILY_PAWNMON_BLACK
+SINGLE_ANIMATION(Pawnmon_black);
 SINGLE_ANIMATION(Octillery);
-#endif //P_FAMILY_REMORAID
+#endif //P_FAMILY_PAWNMON_BLACK
 #if P_FAMILY_DELIBIRD
 SINGLE_ANIMATION(Delibird);
 #endif //P_FAMILY_DELIBIRD

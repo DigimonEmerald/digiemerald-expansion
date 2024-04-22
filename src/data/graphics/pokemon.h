@@ -3636,14 +3636,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PATAMON
 
-#if P_FAMILY_REMORAID
-    const u32 gMonFrontPic_Remoraid[] = INCBIN_U32("graphics/pokemon/remoraid/anim_front.4bpp.lz");
-    const u32 gMonPalette_Remoraid[] = INCBIN_U32("graphics/pokemon/remoraid/normal.gbapal.lz");
-    const u32 gMonBackPic_Remoraid[] = INCBIN_U32("graphics/pokemon/remoraid/back.4bpp.lz");
-    const u32 gMonShinyPalette_Remoraid[] = INCBIN_U32("graphics/pokemon/remoraid/shiny.gbapal.lz");
-    const u8 gMonIcon_Remoraid[] = INCBIN_U8("graphics/pokemon/remoraid/icon.4bpp");
+#if P_FAMILY_PAWNMON_BLACK
+    const u32 gMonFrontPic_Pawnmon_black[] = INCBIN_U32("graphics/pokemon/pawnmon_black/anim_front.4bpp.lz");
+    const u32 gMonPalette_Pawnmon_black[] = INCBIN_U32("graphics/pokemon/pawnmon_black/normal.gbapal.lz");
+    const u32 gMonBackPic_Pawnmon_black[] = INCBIN_U32("graphics/pokemon/pawnmon_black/back.4bpp.lz");
+    const u32 gMonShinyPalette_Pawnmon_black[] = INCBIN_U32("graphics/pokemon/pawnmon_black/shiny.gbapal.lz");
+    const u8 gMonIcon_Pawnmon_black[] = INCBIN_U8("graphics/pokemon/pawnmon_black/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Remoraid[] = INCBIN_U8("graphics/pokemon/remoraid/footprint.1bpp");
+    const u8 gMonFootprint_Pawnmon_black[] = INCBIN_U8("graphics/pokemon/pawnmon_black/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Octillery[] = INCBIN_U32("graphics/pokemon/octillery/anim_front.4bpp.lz");
@@ -3657,7 +3657,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
     const u32 gMonFrontPic_OctilleryF[] = INCBIN_U32("graphics/pokemon/octillery/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_OctilleryF[] = INCBIN_U32("graphics/pokemon/octillery/backf.4bpp.lz");
-#endif //P_FAMILY_REMORAID
+#endif //P_FAMILY_PAWNMON_BLACK
 
 #if P_FAMILY_DELIBIRD
     const u32 gMonFrontPic_Delibird[] = INCBIN_U32("graphics/pokemon/delibird/anim_front.4bpp.lz");

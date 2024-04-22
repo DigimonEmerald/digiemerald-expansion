@@ -5003,8 +5003,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PATAMON
 
-#if P_FAMILY_REMORAID
-    [SPECIES_REMORAID] =
+#if P_FAMILY_PAWNMON_BLACK
+    [SPECIES_PAWNMON_BLACK] =
     {
         .baseHP        = 35,
         .baseAttack    = 65,
@@ -5023,14 +5023,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_2),
         .abilities = { ABILITY_HUSTLE, ABILITY_SNIPER, ABILITY_MOODY },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Remoraid"),
-        .cryId = CRY_REMORAID,
-        .natDexNum = NATIONAL_DEX_REMORAID,
+        .speciesName = _("Pawnmon_black"),
+        .cryId = CRY_PAWNMON_BLACK,
+        .natDexNum = NATIONAL_DEX_PAWNMON_BLACK,
         .categoryName = _("Jet"),
         .height = 6,
         .weight = 120,
         .description = COMPOUND_STRING(
-            "A Remoraid uses its abdominal muscles\n"
+            "A Pawnmon_black uses its abdominal muscles\n"
             "to forcefully expel swallowed water, then\n"
             "shoot down flying prey. When evolution\n"
             "approaches, it travels down rivers."),
@@ -5038,22 +5038,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Remoraid,
+        .frontPic = gMonFrontPic_Pawnmon_black,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Remoraid,
+        .frontAnimFrames = sAnims_Pawnmon_black,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Remoraid,
+        .backPic = gMonBackPic_Pawnmon_black,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Remoraid,
-        .shinyPalette = gMonShinyPalette_Remoraid,
-        .iconSprite = gMonIcon_Remoraid,
+        .palette = gMonPalette_Pawnmon_black,
+        .shinyPalette = gMonShinyPalette_Pawnmon_black,
+        .iconSprite = gMonIcon_Pawnmon_black,
         .iconPalIndex = 0,
-        FOOTPRINT(Remoraid)
-        .levelUpLearnset = sRemoraidLevelUpLearnset,
-        .teachableLearnset = sRemoraidTeachableLearnset,
+        FOOTPRINT(Pawnmon_black)
+        .levelUpLearnset = sPawnmon_blackLevelUpLearnset,
+        .teachableLearnset = sPawnmon_blackTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_OCTILLERY}),
     },
 
@@ -5114,7 +5114,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sOctilleryLevelUpLearnset,
         .teachableLearnset = sOctilleryTeachableLearnset,
     },
-#endif //P_FAMILY_REMORAID
+#endif //P_FAMILY_PAWNMON_BLACK
 
 #if P_FAMILY_DELIBIRD
     [SPECIES_DELIBIRD] =
@@ -5201,7 +5201,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "When it swims close to the surface\n"
             "of the ocean, people aboard ships are\n"
             "able to observe the pattern on its back.\n"
-            "It often swims in a school of Remoraid."),
+            "It often swims in a school of Pawnmon_black."),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
@@ -5222,7 +5222,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Mantyke)
         .levelUpLearnset = sMantykeLevelUpLearnset,
         .teachableLearnset = sMantykeTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_SPECIFIC_MON_IN_PARTY, SPECIES_REMORAID, SPECIES_MANTINE}),
+        .evolutions = EVOLUTION({EVO_SPECIFIC_MON_IN_PARTY, SPECIES_PAWNMON_BLACK, SPECIES_MANTINE}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 
@@ -5260,7 +5260,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .description = COMPOUND_STRING(
             "On sunny days, schools of Mantine can be\n"
             "seen elegantly leaping over the waves.\n"
-            "It is not bothered by the Remoraid that\n"
+            "It is not bothered by the Pawnmon_black that\n"
             "hitches rides."),
         .pokemonScale = 256,
         .pokemonOffset = 0,

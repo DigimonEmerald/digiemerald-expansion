@@ -169,7 +169,7 @@
 #define P_FAMILY_OTAMAMON_RED                  P_GEN_2_POKEMON
 #define P_FAMILY_PALMON                  P_GEN_2_POKEMON
 #define P_FAMILY_PATAMON                 P_GEN_2_POKEMON
-#define P_FAMILY_REMORAID                P_GEN_2_POKEMON
+#define P_FAMILY_PAWNMON_BLACK                P_GEN_2_POKEMON
 #define P_FAMILY_DELIBIRD                P_GEN_2_POKEMON
 #define P_FAMILY_MANTINE                 P_GEN_2_POKEMON
 #define P_FAMILY_SKARMORY                P_GEN_2_POKEMON

@@ -1920,8 +1920,8 @@ const u16 gEggMoves[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PATAMON
 
-#if P_FAMILY_REMORAID
-    egg_moves(REMORAID,
+#if P_FAMILY_PAWNMON_BLACK
+    egg_moves(PAWNMON_BLACK,
         MOVE_AURORA_BEAM,
         MOVE_OCTAZOOKA,
         MOVE_SUPERSONIC,
@@ -1936,7 +1936,7 @@ const u16 gEggMoves[] = {
         MOVE_ACID_SPRAY,
         MOVE_WATER_PULSE,
         MOVE_ENTRAINMENT),
-#endif //P_FAMILY_REMORAID
+#endif //P_FAMILY_PAWNMON_BLACK
 
 #if P_FAMILY_DELIBIRD
     egg_moves(DELIBIRD,

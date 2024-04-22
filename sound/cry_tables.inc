@@ -644,10 +644,10 @@ gCryTable::
 	cry Cry_Cursola
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_PATAMON
-.if P_FAMILY_REMORAID == TRUE
-	cry Cry_Remoraid
+.if P_FAMILY_PAWNMON_BLACK == TRUE
+	cry Cry_Pawnmon_black
 	cry Cry_Octillery
-.endif @ P_FAMILY_REMORAID
+.endif @ P_FAMILY_PAWNMON_BLACK
 .if P_FAMILY_DELIBIRD == TRUE
 	cry Cry_Delibird
 .endif @ P_FAMILY_DELIBIRD
@@ -3070,10 +3070,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Cursola
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_PATAMON
-.if P_FAMILY_REMORAID == TRUE
-	cry_reverse Cry_Remoraid
+.if P_FAMILY_PAWNMON_BLACK == TRUE
+	cry_reverse Cry_Pawnmon_black
 	cry_reverse Cry_Octillery
-.endif @ P_FAMILY_REMORAID
+.endif @ P_FAMILY_PAWNMON_BLACK
 .if P_FAMILY_DELIBIRD == TRUE
 	cry_reverse Cry_Delibird
 .endif @ P_FAMILY_DELIBIRD

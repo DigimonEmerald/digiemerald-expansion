@@ -1890,15 +1890,15 @@ Cry_Cursola::
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_PATAMON
 
-.if P_FAMILY_REMORAID == TRUE
+.if P_FAMILY_PAWNMON_BLACK == TRUE
 	.align 2
-Cry_Remoraid::
-	.incbin "sound/direct_sound_samples/cries/remoraid.bin"
+Cry_Pawnmon_black::
+	.incbin "sound/direct_sound_samples/cries/pawnmon_black.bin"
 
 	.align 2
 Cry_Octillery::
 	.incbin "sound/direct_sound_samples/cries/octillery.bin"
-.endif @ P_FAMILY_REMORAID
+.endif @ P_FAMILY_PAWNMON_BLACK
 
 .if P_FAMILY_DELIBIRD == TRUE
 	.align 2
