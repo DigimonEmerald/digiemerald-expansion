@@ -1360,8 +1360,8 @@ const u16 gEggMoves[] = {
         MOVE_FLATTER),
 #endif //P_FAMILY_GAMMAMON
 
-#if P_FAMILY_SENTRET
-    egg_moves(SENTRET,
+#if P_FAMILY_GAZIMON
+    egg_moves(GAZIMON,
         MOVE_DOUBLE_EDGE,
         MOVE_PURSUIT,
         MOVE_SLASH,
@@ -1376,7 +1376,7 @@ const u16 gEggMoves[] = {
         MOVE_IRON_TAIL,
         MOVE_CAPTIVATE,
         MOVE_BABY_DOLL_EYES),
-#endif //P_FAMILY_SENTRET
+#endif //P_FAMILY_GAZIMON
 
 #if P_FAMILY_HOOTHOOT
     egg_moves(HOOTHOOT,

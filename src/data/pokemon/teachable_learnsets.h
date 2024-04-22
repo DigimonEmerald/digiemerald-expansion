@@ -8819,8 +8819,8 @@ static const u16 sGaossmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GAMMAMON
 
-#if P_FAMILY_SENTRET
-static const u16 sSentretTeachableLearnset[] = {
+#if P_FAMILY_GAZIMON
+static const u16 sGazimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
@@ -8908,7 +8908,7 @@ static const u16 sFurretTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SENTRET
+#endif //P_FAMILY_GAZIMON
 
 #if P_FAMILY_HOOTHOOT
 static const u16 sHoothootTeachableLearnset[] = {

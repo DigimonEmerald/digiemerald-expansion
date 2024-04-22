@@ -1507,15 +1507,15 @@ Cry_Gaossmon::
 	.incbin "sound/direct_sound_samples/cries/gaossmon.bin"
 .endif @ P_FAMILY_GAMMAMON
 
-.if P_FAMILY_SENTRET == TRUE
+.if P_FAMILY_GAZIMON == TRUE
 	.align 2
-Cry_Sentret::
-	.incbin "sound/direct_sound_samples/cries/sentret.bin"
+Cry_Gazimon::
+	.incbin "sound/direct_sound_samples/cries/gazimon.bin"
 
 	.align 2
 Cry_Furret::
 	.incbin "sound/direct_sound_samples/cries/furret.bin"
-.endif @ P_FAMILY_SENTRET
+.endif @ P_FAMILY_GAZIMON
 
 .if P_FAMILY_HOOTHOOT == TRUE
 	.align 2

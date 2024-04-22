@@ -4842,8 +4842,8 @@ static const struct LevelUpMove sGaossmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_GAMMAMON
 
-#if P_FAMILY_SENTRET
-static const struct LevelUpMove sSentretLevelUpLearnset[] = {
+#if P_FAMILY_GAZIMON
+static const struct LevelUpMove sGazimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_FORESIGHT),
     LEVEL_UP_MOVE( 4, MOVE_DEFENSE_CURL),
@@ -4880,7 +4880,7 @@ static const struct LevelUpMove sFurretLevelUpLearnset[] = {
     LEVEL_UP_MOVE(56, MOVE_HYPER_VOICE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SENTRET
+#endif //P_FAMILY_GAZIMON
 
 #if P_FAMILY_HOOTHOOT
 static const struct LevelUpMove sHoothootLevelUpLearnset[] = {

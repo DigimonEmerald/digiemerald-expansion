@@ -6,8 +6,8 @@ DOUBLE_BATTLE_TEST("Frisk does not trigger when pokemon hold no items")
     GIVEN {
         PLAYER(SPECIES_FURRET) { Ability(ABILITY_FRISK); };
         PLAYER(SPECIES_FURRET) { Ability(ABILITY_FRISK); };
-        OPPONENT(SPECIES_SENTRET) { Ability(ABILITY_FRISK); };
-        OPPONENT(SPECIES_SENTRET) { Ability(ABILITY_FRISK); };
+        OPPONENT(SPECIES_GAZIMON) { Ability(ABILITY_FRISK); };
+        OPPONENT(SPECIES_GAZIMON) { Ability(ABILITY_FRISK); };
     } WHEN {
         TURN { ; }
     } SCENE {
@@ -24,14 +24,14 @@ SINGLE_BATTLE_TEST("Frisk triggers in a Single Battle")
 {
     GIVEN {
         PLAYER(SPECIES_FURRET) { Ability(ABILITY_FRISK); Item(ITEM_POTION); };
-        OPPONENT(SPECIES_SENTRET) { Ability(ABILITY_FRISK); Item(ITEM_POTION); };
+        OPPONENT(SPECIES_GAZIMON) { Ability(ABILITY_FRISK); Item(ITEM_POTION); };
     } WHEN {
         TURN { ; }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_FRISK);
-        MESSAGE("Furret frisked Foe Sentret and found its Potion!");
+        MESSAGE("Furret frisked Foe Gazimon and found its Potion!");
         ABILITY_POPUP(opponent, ABILITY_FRISK);
-        MESSAGE("Foe Sentret frisked Furret and found its Potion!");
+        MESSAGE("Foe Gazimon frisked Furret and found its Potion!");
     }
 }
 

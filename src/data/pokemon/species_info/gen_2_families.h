@@ -573,8 +573,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_GAMMAMON
 
-#if P_FAMILY_SENTRET
-    [SPECIES_SENTRET] =
+#if P_FAMILY_GAZIMON
+    [SPECIES_GAZIMON] =
     {
         .baseHP        = 35,
         .baseAttack    = 46,
@@ -593,9 +593,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_RUN_AWAY, ABILITY_KEEN_EYE, ABILITY_FRISK },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Sentret"),
-        .cryId = CRY_SENTRET,
-        .natDexNum = NATIONAL_DEX_SENTRET,
+        .speciesName = _("Gazimon"),
+        .cryId = CRY_GAZIMON,
+        .natDexNum = NATIONAL_DEX_GAZIMON,
         .categoryName = _("Scout"),
         .height = 8,
         .weight = 60,
@@ -608,22 +608,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Sentret,
+        .frontPic = gMonFrontPic_Gazimon,
         .frontPicSize = MON_COORDS_SIZE(40, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Sentret,
+        .frontAnimFrames = sAnims_Gazimon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Sentret,
+        .backPic = gMonBackPic_Gazimon,
         .backPicSize = MON_COORDS_SIZE(48, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Sentret,
-        .shinyPalette = gMonShinyPalette_Sentret,
-        .iconSprite = gMonIcon_Sentret,
+        .palette = gMonPalette_Gazimon,
+        .shinyPalette = gMonShinyPalette_Gazimon,
+        .iconSprite = gMonIcon_Gazimon,
         .iconPalIndex = 2,
-        FOOTPRINT(Sentret)
-        .levelUpLearnset = sSentretLevelUpLearnset,
-        .teachableLearnset = sSentretTeachableLearnset,
+        FOOTPRINT(Gazimon)
+        .levelUpLearnset = sGazimonLevelUpLearnset,
+        .teachableLearnset = sGazimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_FURRET}),
     },
 
@@ -678,7 +678,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sFurretLevelUpLearnset,
         .teachableLearnset = sFurretTeachableLearnset,
     },
-#endif //P_FAMILY_SENTRET
+#endif //P_FAMILY_GAZIMON
 
 #if P_FAMILY_HOOTHOOT
     [SPECIES_HOOTHOOT] =

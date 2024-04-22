@@ -2420,8 +2420,8 @@ static const union AnimCmd sAnim_Gaossmon_1[] =
 };
 #endif //P_FAMILY_GAMMAMON
 
-#if P_FAMILY_SENTRET
-static const union AnimCmd sAnim_Sentret_1[] =
+#if P_FAMILY_GAZIMON
+static const union AnimCmd sAnim_Gazimon_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 15),
@@ -2436,7 +2436,7 @@ static const union AnimCmd sAnim_Furret_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SENTRET
+#endif //P_FAMILY_GAZIMON
 
 #if P_FAMILY_HOOTHOOT
 static const union AnimCmd sAnim_Hoothoot_1[] =
@@ -10760,10 +10760,10 @@ SINGLE_ANIMATION(Gammamon);
 SINGLE_ANIMATION(Gaomon);
 SINGLE_ANIMATION(Gaossmon);
 #endif //P_FAMILY_GAMMAMON
-#if P_FAMILY_SENTRET
-SINGLE_ANIMATION(Sentret);
+#if P_FAMILY_GAZIMON
+SINGLE_ANIMATION(Gazimon);
 SINGLE_ANIMATION(Furret);
-#endif //P_FAMILY_SENTRET
+#endif //P_FAMILY_GAZIMON
 #if P_FAMILY_HOOTHOOT
 SINGLE_ANIMATION(Hoothoot);
 SINGLE_ANIMATION(Noctowl);
