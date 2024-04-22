@@ -108,10 +108,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Fanbeemon)
         .levelUpLearnset = sFanbeemonLevelUpLearnset,
         .teachableLearnset = sFanbeemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_MEGANIUM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_FLAMEMON}),
     },
 
-    [SPECIES_MEGANIUM] =
+    [SPECIES_FLAMEMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 82,
@@ -137,14 +137,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_LEAF_GUARD },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Meganium"),
-        .cryId = CRY_MEGANIUM,
-        .natDexNum = NATIONAL_DEX_MEGANIUM,
+        .speciesName = _("Flamemon"),
+        .cryId = CRY_FLAMEMON,
+        .natDexNum = NATIONAL_DEX_FLAMEMON,
         .categoryName = _("Herb"),
         .height = 18,
         .weight = 1005,
         .description = COMPOUND_STRING(
-            "The fragrance of a Meganium's flower\n"
+            "The fragrance of a Flamemon's flower\n"
             "soothes and calms emotions. In battle,\n"
             "it gives off more of its becalming scent\n"
             "to blunt the foe's fighting spirit."),
@@ -152,26 +152,26 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 0,
         .trainerScale = 277,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Meganium,
-        .frontPicFemale = gMonFrontPic_MeganiumF,
+        .frontPic = gMonFrontPic_Flamemon,
+        .frontPicFemale = gMonFrontPic_FlamemonF,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Meganium,
+        .frontAnimFrames = sAnims_Flamemon,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Meganium,
-        .backPicFemale = gMonBackPic_MeganiumF,
+        .backPic = gMonBackPic_Flamemon,
+        .backPicFemale = gMonBackPic_FlamemonF,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicSizeFemale = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Meganium,
-        .shinyPalette = gMonShinyPalette_Meganium,
-        .iconSprite = gMonIcon_Meganium,
+        .palette = gMonPalette_Flamemon,
+        .shinyPalette = gMonShinyPalette_Flamemon,
+        .iconSprite = gMonIcon_Flamemon,
         .iconPalIndex = 1,
-        FOOTPRINT(Meganium)
-        .levelUpLearnset = sMeganiumLevelUpLearnset,
-        .teachableLearnset = sMeganiumTeachableLearnset,
+        FOOTPRINT(Flamemon)
+        .levelUpLearnset = sFlamemonLevelUpLearnset,
+        .teachableLearnset = sFlamemonTeachableLearnset,
     },
 #endif //P_FAMILY_FALCOMON_06
 

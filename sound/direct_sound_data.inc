@@ -1475,8 +1475,8 @@ Cry_Fanbeemon::
 	.incbin "sound/direct_sound_samples/cries/fanbeemon.bin"
 
 	.align 2
-Cry_Meganium::
-	.incbin "sound/direct_sound_samples/cries/meganium.bin"
+Cry_Flamemon::
+	.incbin "sound/direct_sound_samples/cries/flamemon.bin"
 .endif @ P_FAMILY_FALCOMON_06
 
 .if P_FAMILY_CYNDAQUIL == TRUE

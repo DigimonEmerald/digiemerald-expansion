@@ -2619,17 +2619,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Fanbeemon[] = INCBIN_U8("graphics/pokemon/fanbeemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Meganium[] = INCBIN_U32("graphics/pokemon/meganium/anim_front.4bpp.lz");
-    const u32 gMonPalette_Meganium[] = INCBIN_U32("graphics/pokemon/meganium/normal.gbapal.lz");
-    const u32 gMonBackPic_Meganium[] = INCBIN_U32("graphics/pokemon/meganium/back.4bpp.lz");
-    const u32 gMonShinyPalette_Meganium[] = INCBIN_U32("graphics/pokemon/meganium/shiny.gbapal.lz");
-    const u8 gMonIcon_Meganium[] = INCBIN_U8("graphics/pokemon/meganium/icon.4bpp");
+    const u32 gMonFrontPic_Flamemon[] = INCBIN_U32("graphics/pokemon/flamemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Flamemon[] = INCBIN_U32("graphics/pokemon/flamemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Flamemon[] = INCBIN_U32("graphics/pokemon/flamemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Flamemon[] = INCBIN_U32("graphics/pokemon/flamemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Flamemon[] = INCBIN_U8("graphics/pokemon/flamemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Meganium[] = INCBIN_U8("graphics/pokemon/meganium/footprint.1bpp");
+    const u8 gMonFootprint_Flamemon[] = INCBIN_U8("graphics/pokemon/flamemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_MeganiumF[] = INCBIN_U32("graphics/pokemon/meganium/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_MeganiumF[] = INCBIN_U32("graphics/pokemon/meganium/backf.4bpp.lz");
+    const u32 gMonFrontPic_FlamemonF[] = INCBIN_U32("graphics/pokemon/flamemon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_FlamemonF[] = INCBIN_U32("graphics/pokemon/flamemon/backf.4bpp.lz");
 #endif //P_FAMILY_FALCOMON_06
 
 #if P_FAMILY_CYNDAQUIL

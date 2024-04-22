@@ -1437,7 +1437,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [5] =
                     {
-                        .species = SPECIES_MEGANIUM,
+                        .species = SPECIES_FLAMEMON,
                         .heldItem = ITEM_MIRACLE_SEED,
                         .moves = {MOVE_RAZOR_LEAF, MOVE_BODY_SLAM, MOVE_LEECH_SEED, MOVE_SYNTHESIS},
                         .attackEV = 200,
@@ -1452,7 +1452,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 15,
                         .abilityNum = 0,
                         .personality = 0x1F,
-                        .nickname = _("MEGANIUM"),
+                        .nickname = _("FLAMEMON"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                 },

@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Weather Ball doubles its power and turns to a Fire-type move
     PARAMETRIZE{ move = MOVE_SUNNY_DAY; }
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_MEGANIUM);
+        OPPONENT(SPECIES_FLAMEMON);
     } WHEN {
         TURN { MOVE(player, move); }
         TURN { MOVE(player, MOVE_WEATHER_BALL); }

@@ -8496,7 +8496,7 @@ static const u16 sFanbeemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sMeganiumTeachableLearnset[] = {
+static const u16 sFlamemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,
