@@ -852,7 +852,7 @@ static const struct LevelUpMove sSakumonAlolanLevelUpLearnset[] = {
 
 #if P_FAMILY_SANDMON
 #if P_GEN_2_CROSS_EVOS
-static const struct LevelUpMove sIgglybuffLevelUpLearnset[] = {
+static const struct LevelUpMove sHackmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SING),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
     LEVEL_UP_MOVE( 3, MOVE_DEFENSE_CURL),

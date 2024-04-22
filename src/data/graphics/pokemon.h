@@ -656,13 +656,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
 #if P_FAMILY_SANDMON
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Igglybuff[] = INCBIN_U32("graphics/pokemon/igglybuff/anim_front.4bpp.lz");
-    const u32 gMonPalette_Igglybuff[] = INCBIN_U32("graphics/pokemon/igglybuff/normal.gbapal.lz");
-    const u32 gMonBackPic_Igglybuff[] = INCBIN_U32("graphics/pokemon/igglybuff/back.4bpp.lz");
-    const u32 gMonShinyPalette_Igglybuff[] = INCBIN_U32("graphics/pokemon/igglybuff/shiny.gbapal.lz");
-    const u8 gMonIcon_Igglybuff[] = INCBIN_U8("graphics/pokemon/igglybuff/icon.4bpp");
+    const u32 gMonFrontPic_Hackmon[] = INCBIN_U32("graphics/pokemon/hackmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Hackmon[] = INCBIN_U32("graphics/pokemon/hackmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Hackmon[] = INCBIN_U32("graphics/pokemon/hackmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Hackmon[] = INCBIN_U32("graphics/pokemon/hackmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Hackmon[] = INCBIN_U8("graphics/pokemon/hackmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Igglybuff[] = INCBIN_U8("graphics/pokemon/igglybuff/footprint.1bpp");
+    const u8 gMonFootprint_Hackmon[] = INCBIN_U8("graphics/pokemon/hackmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
 

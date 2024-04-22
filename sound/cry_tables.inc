@@ -90,7 +90,7 @@ gCryTable::
 .endif @ P_FAMILY_RELEMON
 .if P_FAMILY_SANDMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry Cry_Igglybuff
+	cry Cry_Hackmon
 .endif @ P_GEN_2_CROSS_EVOS
 	cry Cry_Sandmon
 	cry Cry_Tsubumon
@@ -2516,7 +2516,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_RELEMON
 .if P_FAMILY_SANDMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry_reverse Cry_Igglybuff
+	cry_reverse Cry_Hackmon
 .endif @ P_GEN_2_CROSS_EVOS
 	cry_reverse Cry_Sandmon
 	cry_reverse Cry_Tsubumon

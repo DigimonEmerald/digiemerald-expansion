@@ -190,7 +190,7 @@ SINGLE_BATTLE_TEST("White Herb has correct interactions with Intimidate triggere
     u16 species;
     u16 ability;
 
-    PARAMETRIZE { species = SPECIES_IGGLYBUFF; ability = ABILITY_COMPETITIVE; }
+    PARAMETRIZE { species = SPECIES_HACKMON; ability = ABILITY_COMPETITIVE; }
     PARAMETRIZE { species = SPECIES_DEMIVEEMON; ability = ABILITY_DEFIANT; }
 
     GIVEN {
@@ -205,7 +205,7 @@ SINGLE_BATTLE_TEST("White Herb has correct interactions with Intimidate triggere
         // Defiant activates first, so White Herb doesn't have a chance to trigger.
         if (ability == ABILITY_COMPETITIVE) {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Igglybuff's White Herb restored its status!");
+            MESSAGE("Hackmon's White Herb restored its status!");
         }
     } THEN {
         if (ability == ABILITY_COMPETITIVE) {

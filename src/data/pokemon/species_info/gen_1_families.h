@@ -4264,7 +4264,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif
 
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_IGGLYBUFF] =
+    [SPECIES_HACKMON] =
     {
         .baseHP        = 90,
         .baseAttack    = 30,
@@ -4284,9 +4284,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_CUTE_CHARM, ABILITY_COMPETITIVE, ABILITY_FRIEND_GUARD },
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
-        .speciesName = _("Igglybuff"),
-        .cryId = CRY_IGGLYBUFF,
-        .natDexNum = NATIONAL_DEX_IGGLYBUFF,
+        .speciesName = _("Hackmon"),
+        .cryId = CRY_HACKMON,
+        .natDexNum = NATIONAL_DEX_HACKMON,
         .categoryName = _("Balloon"),
         .height = 3,
         .weight = 10,
@@ -4299,22 +4299,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = -1,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Igglybuff,
+        .frontPic = gMonFrontPic_Hackmon,
         .frontPicSize = MON_COORDS_SIZE(32, 32),
         .frontPicYOffset = 17,
-        .frontAnimFrames = sAnims_Igglybuff,
+        .frontAnimFrames = sAnims_Hackmon,
         .frontAnimId = ANIM_SWING_CONCAVE_FAST,
-        .backPic = gMonBackPic_Igglybuff,
+        .backPic = gMonBackPic_Hackmon,
         .backPicSize = MON_COORDS_SIZE(40, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Igglybuff,
-        .shinyPalette = gMonShinyPalette_Igglybuff,
-        .iconSprite = gMonIcon_Igglybuff,
+        .palette = gMonPalette_Hackmon,
+        .shinyPalette = gMonShinyPalette_Hackmon,
+        .iconSprite = gMonIcon_Hackmon,
         .iconPalIndex = 1,
-        FOOTPRINT(Igglybuff)
-        .levelUpLearnset = sIgglybuffLevelUpLearnset,
-        .teachableLearnset = sIgglybuffTeachableLearnset,
+        FOOTPRINT(Hackmon)
+        .levelUpLearnset = sHackmonLevelUpLearnset,
+        .teachableLearnset = sHackmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_SANDMON}),
     },
 #endif //P_GEN_2_CROSS_EVOS

@@ -280,7 +280,7 @@ const u16 gEggMoves[] = {
 
 #if P_FAMILY_SANDMON
 #if P_GEN_2_CROSS_EVOS
-    egg_moves(IGGLYBUFF,
+    egg_moves(HACKMON,
         MOVE_PERISH_SONG,
         MOVE_PRESENT,
         MOVE_FEINT_ATTACK,

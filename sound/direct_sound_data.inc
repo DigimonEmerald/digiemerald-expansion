@@ -615,8 +615,8 @@ Cry_Sakumon::
 .if P_FAMILY_SANDMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Igglybuff::
-	.incbin "sound/direct_sound_samples/cries/igglybuff.bin"
+Cry_Hackmon::
+	.incbin "sound/direct_sound_samples/cries/hackmon.bin"
 .endif @ P_GEN_2_CROSS_EVOS
 
 	.align 2

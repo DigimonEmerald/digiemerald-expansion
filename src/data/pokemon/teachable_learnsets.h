@@ -1795,7 +1795,7 @@ static const u16 sSakumonAlolanTeachableLearnset[] = {
 
 #if P_FAMILY_SANDMON
 #if P_GEN_2_CROSS_EVOS
-static const u16 sIgglybuffTeachableLearnset[] = {
+static const u16 sHackmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,

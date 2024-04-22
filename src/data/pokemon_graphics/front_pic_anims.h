@@ -530,7 +530,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(SakumonAlolan);
 
 #if P_FAMILY_SANDMON
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Igglybuff_1[] =
+static const union AnimCmd sAnim_Hackmon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -10292,7 +10292,7 @@ SINGLE_ANIMATION(SakumonAlolan);
 #endif //P_FAMILY_RELEMON
 #if P_FAMILY_SANDMON
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Igglybuff);
+SINGLE_ANIMATION(Hackmon);
 #endif //P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Sandmon);
 SINGLE_ANIMATION(Tsubumon);
