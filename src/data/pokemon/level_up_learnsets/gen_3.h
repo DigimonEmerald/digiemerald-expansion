@@ -4303,8 +4303,8 @@ static const struct LevelUpMove sKokuwamon_xLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_KOKUWAMON
 
-#if P_FAMILY_YANMA
-static const struct LevelUpMove sYanmaLevelUpLearnset[] = {
+#if P_FAMILY_KOTEMON
+static const struct LevelUpMove sKotemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_FORESIGHT),
     LEVEL_UP_MOVE( 7, MOVE_QUICK_ATTACK),
@@ -4343,7 +4343,7 @@ static const struct LevelUpMove sYanmegaLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_YANMA
+#endif //P_FAMILY_KOTEMON
 
 #if P_FAMILY_WOOPER
 static const struct LevelUpMove sWooperLevelUpLearnset[] = {

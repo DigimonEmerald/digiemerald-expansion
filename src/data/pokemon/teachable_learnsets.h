@@ -9937,8 +9937,8 @@ static const u16 sKokuwamon_xTeachableLearnset[] = {
 };
 #endif //P_FAMILY_KOKUWAMON
 
-#if P_FAMILY_YANMA
-static const u16 sYanmaTeachableLearnset[] = {
+#if P_FAMILY_KOTEMON
+static const u16 sKotemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
@@ -9997,7 +9997,7 @@ static const u16 sYanmegaTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_YANMA
+#endif //P_FAMILY_KOTEMON
 
 #if P_FAMILY_WOOPER
 static const u16 sWooperTeachableLearnset[] = {

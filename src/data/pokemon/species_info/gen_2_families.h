@@ -2336,8 +2336,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_KOKUWAMON
 
-#if P_FAMILY_YANMA
-    [SPECIES_YANMA] =
+#if P_FAMILY_KOTEMON
+    [SPECIES_KOTEMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 65,
@@ -2357,9 +2357,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SPEED_BOOST, ABILITY_COMPOUND_EYES, ABILITY_FRISK },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Yanma"),
-        .cryId = CRY_YANMA,
-        .natDexNum = NATIONAL_DEX_YANMA,
+        .speciesName = _("Kotemon"),
+        .cryId = CRY_KOTEMON,
+        .natDexNum = NATIONAL_DEX_KOTEMON,
         .categoryName = _("Clear Wing"),
         .height = 12,
         .weight = 380,
@@ -2372,23 +2372,23 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = -1,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Yanma,
+        .frontPic = gMonFrontPic_Kotemon,
         .frontPicSize = MON_COORDS_SIZE(64, 40),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Yanma,
+        .frontAnimFrames = sAnims_Kotemon,
         .frontAnimId = ANIM_FIGURE_8,
         .enemyMonElevation = 13,
-        .backPic = gMonBackPic_Yanma,
+        .backPic = gMonBackPic_Kotemon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Yanma,
-        .shinyPalette = gMonShinyPalette_Yanma,
-        .iconSprite = gMonIcon_Yanma,
+        .palette = gMonPalette_Kotemon,
+        .shinyPalette = gMonShinyPalette_Kotemon,
+        .iconSprite = gMonIcon_Kotemon,
         .iconPalIndex = 1,
-        FOOTPRINT(Yanma)
-        .levelUpLearnset = sYanmaLevelUpLearnset,
-        .teachableLearnset = sYanmaTeachableLearnset,
+        FOOTPRINT(Kotemon)
+        .levelUpLearnset = sKotemonLevelUpLearnset,
+        .teachableLearnset = sKotemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_MOVE, MOVE_ANCIENT_POWER, SPECIES_YANMEGA}),
     },
 
@@ -2447,7 +2447,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sYanmegaTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_YANMA
+#endif //P_FAMILY_KOTEMON
 
 #if P_FAMILY_WOOPER
     [SPECIES_WOOPER] =

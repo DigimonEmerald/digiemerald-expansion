@@ -2755,8 +2755,8 @@ static const union AnimCmd sAnim_Kokuwamon_x_1[] =
 };
 #endif //P_FAMILY_KOKUWAMON
 
-#if P_FAMILY_YANMA
-static const union AnimCmd sAnim_Yanma_1[] =
+#if P_FAMILY_KOTEMON
+static const union AnimCmd sAnim_Kotemon_1[] =
 {
     ANIMCMD_FRAME(1, 2),
     ANIMCMD_FRAME(0, 2),
@@ -2815,7 +2815,7 @@ static const union AnimCmd sAnim_Yanmega_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_YANMA
+#endif //P_FAMILY_KOTEMON
 
 #if P_FAMILY_WOOPER
 static const union AnimCmd sAnim_Wooper_1[] =
@@ -10827,12 +10827,12 @@ SINGLE_ANIMATION(Ambipom);
 SINGLE_ANIMATION(Kokuwamon);
 SINGLE_ANIMATION(Kokuwamon_x);
 #endif //P_FAMILY_KOKUWAMON
-#if P_FAMILY_YANMA
-SINGLE_ANIMATION(Yanma);
+#if P_FAMILY_KOTEMON
+SINGLE_ANIMATION(Kotemon);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Yanmega);
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_YANMA
+#endif //P_FAMILY_KOTEMON
 #if P_FAMILY_WOOPER
 SINGLE_ANIMATION(Wooper);
 SINGLE_ANIMATION(Quagsire);

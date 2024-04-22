@@ -3027,14 +3027,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_KOKUWAMON
 
-#if P_FAMILY_YANMA
-    const u32 gMonFrontPic_Yanma[] = INCBIN_U32("graphics/pokemon/yanma/anim_front.4bpp.lz");
-    const u32 gMonPalette_Yanma[] = INCBIN_U32("graphics/pokemon/yanma/normal.gbapal.lz");
-    const u32 gMonBackPic_Yanma[] = INCBIN_U32("graphics/pokemon/yanma/back.4bpp.lz");
-    const u32 gMonShinyPalette_Yanma[] = INCBIN_U32("graphics/pokemon/yanma/shiny.gbapal.lz");
-    const u8 gMonIcon_Yanma[] = INCBIN_U8("graphics/pokemon/yanma/icon.4bpp");
+#if P_FAMILY_KOTEMON
+    const u32 gMonFrontPic_Kotemon[] = INCBIN_U32("graphics/pokemon/kotemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Kotemon[] = INCBIN_U32("graphics/pokemon/kotemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Kotemon[] = INCBIN_U32("graphics/pokemon/kotemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Kotemon[] = INCBIN_U32("graphics/pokemon/kotemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Kotemon[] = INCBIN_U8("graphics/pokemon/kotemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Yanma[] = INCBIN_U8("graphics/pokemon/yanma/footprint.1bpp");
+    const u8 gMonFootprint_Kotemon[] = INCBIN_U8("graphics/pokemon/kotemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_4_CROSS_EVOS
@@ -3047,7 +3047,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Yanmega[] = INCBIN_U8("graphics/pokemon/yanmega/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_YANMA
+#endif //P_FAMILY_KOTEMON
 
 #if P_FAMILY_WOOPER
     const u32 gMonFrontPic_Wooper[] = INCBIN_U32("graphics/pokemon/wooper/anim_front.4bpp.lz");

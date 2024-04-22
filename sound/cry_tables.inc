@@ -540,12 +540,12 @@ gCryTable::
 	cry Cry_Kokuwamon
 	cry Cry_Kokuwamon_x
 .endif @ P_FAMILY_KOKUWAMON
-.if P_FAMILY_YANMA == TRUE
-	cry Cry_Yanma
+.if P_FAMILY_KOTEMON == TRUE
+	cry Cry_Kotemon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Yanmega
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_YANMA
+.endif @ P_FAMILY_KOTEMON
 .if P_FAMILY_WOOPER == TRUE
 	cry Cry_Wooper
 	cry Cry_Quagsire
@@ -2966,12 +2966,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Kokuwamon
 	cry_reverse Cry_Kokuwamon_x
 .endif @ P_FAMILY_KOKUWAMON
-.if P_FAMILY_YANMA == TRUE
-	cry_reverse Cry_Yanma
+.if P_FAMILY_KOTEMON == TRUE
+	cry_reverse Cry_Kotemon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Yanmega
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_YANMA
+.endif @ P_FAMILY_KOTEMON
 .if P_FAMILY_WOOPER == TRUE
 	cry_reverse Cry_Wooper
 	cry_reverse Cry_Quagsire

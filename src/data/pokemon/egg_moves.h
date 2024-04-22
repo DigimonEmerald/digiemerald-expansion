@@ -1603,8 +1603,8 @@ const u16 gEggMoves[] = {
         MOVE_GRASSY_TERRAIN),
 #endif //P_FAMILY_KOKUWAMON
 
-#if P_FAMILY_YANMA
-    egg_moves(YANMA,
+#if P_FAMILY_KOTEMON
+    egg_moves(KOTEMON,
         MOVE_WHIRLWIND,
         MOVE_REVERSAL,
         MOVE_LEECH_LIFE,
@@ -1615,7 +1615,7 @@ const u16 gEggMoves[] = {
         MOVE_PURSUIT,
         MOVE_DOUBLE_EDGE,
         MOVE_SECRET_POWER),
-#endif //P_FAMILY_YANMA
+#endif //P_FAMILY_KOTEMON
 
 #if P_FAMILY_WOOPER
     egg_moves(WOOPER,

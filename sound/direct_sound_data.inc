@@ -1663,17 +1663,17 @@ Cry_Kokuwamon_x::
 	.incbin "sound/direct_sound_samples/cries/kokuwamon_x.bin"
 .endif @ P_FAMILY_KOKUWAMON
 
-.if P_FAMILY_YANMA == TRUE
+.if P_FAMILY_KOTEMON == TRUE
 	.align 2
-Cry_Yanma::
-	.incbin "sound/direct_sound_samples/cries/yanma.bin"
+Cry_Kotemon::
+	.incbin "sound/direct_sound_samples/cries/kotemon.bin"
 
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
 Cry_Yanmega::
 	.incbin "sound/direct_sound_samples/cries/yanmega.bin"
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_YANMA
+.endif @ P_FAMILY_KOTEMON
 
 .if P_FAMILY_WOOPER == TRUE
 	.align 2

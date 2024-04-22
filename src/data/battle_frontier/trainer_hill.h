@@ -1952,7 +1952,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         },
                                     [2] =
                                         {
-                                            .species = SPECIES_YANMA,
+                                            .species = SPECIES_KOTEMON,
                                             .heldItem = ITEM_FOCUS_BAND,
                                             .moves = {MOVE_UPROAR, MOVE_ATTRACT, MOVE_NONE, MOVE_NONE},
                                             .hpEV = 6,
@@ -1967,7 +1967,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 5,
                                             .abilityNum = 0,
                                             .personality = 0x8A,
-                                            .nickname = _("YANMA"),
+                                            .nickname = _("KOTEMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [3] =
