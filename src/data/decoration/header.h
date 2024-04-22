@@ -975,7 +975,7 @@ const struct Decoration gDecorations[] =
     [DECOR_FALCOMON_06_DOLL] =
     {
         .id = DECOR_FALCOMON_06_DOLL,
-        .name = _("FALCOMON_06"),
+        .name = _("FALCOMON"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,

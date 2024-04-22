@@ -1759,8 +1759,8 @@ Cry_Luxmon::
 
 .if P_GEN_9_CROSS_EVOS == TRUE
 	.align 2
-Cry_Duluxmon::
-	.incbin "sound/direct_sound_samples/cries/duluxmon.bin"
+Cry_Dudunsparce::
+	.incbin "sound/direct_sound_samples/cries/dudunsparce.bin"
 .endif @ P_GEN_9_CROSS_EVOS
 .endif @ P_FAMILY_LUXMON
 

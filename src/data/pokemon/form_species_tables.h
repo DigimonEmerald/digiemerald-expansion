@@ -646,9 +646,9 @@ static const u16 sLopmonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_LOPMON
 
 #if P_FAMILY_LUXMON
-static const u16 sDuluxmonFormSpeciesIdTable[] = {
-    SPECIES_DULUXMON_TWO_SEGMENT,
-    SPECIES_DULUXMON_THREE_SEGMENT,
+static const u16 sDudunsparceFormSpeciesIdTable[] = {
+    SPECIES_DUDUNSPARCE_TWO_SEGMENT,
+    SPECIES_DUDUNSPARCE_THREE_SEGMENT,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_LUXMON

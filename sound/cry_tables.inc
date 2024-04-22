@@ -583,7 +583,7 @@ gCryTable::
 .if P_FAMILY_LUXMON == TRUE
 	cry Cry_Luxmon
 .if P_GEN_9_CROSS_EVOS == TRUE
-	cry Cry_Duluxmon
+	cry Cry_Dudunsparce
 .endif @ P_GEN_9_CROSS_EVOS
 .endif @ P_FAMILY_LUXMON
 .if P_FAMILY_METABEE == TRUE
@@ -3009,7 +3009,7 @@ gCryTable_Reverse::
 .if P_FAMILY_LUXMON == TRUE
 	cry_reverse Cry_Luxmon
 .if P_GEN_9_CROSS_EVOS == TRUE
-	cry_reverse Cry_Duluxmon
+	cry_reverse Cry_Dudunsparce
 .endif @ P_GEN_9_CROSS_EVOS
 .endif @ P_FAMILY_LUXMON
 .if P_FAMILY_METABEE == TRUE

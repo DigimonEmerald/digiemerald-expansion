@@ -5843,7 +5843,7 @@ static const struct LevelUpMove sLuxmonLevelUpLearnset[] = {
 };
 
 #if P_GEN_9_CROSS_EVOS
-static const struct LevelUpMove sDuluxmonLevelUpLearnset[] = {
+static const struct LevelUpMove sDudunsparceLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_FLAIL),
     LEVEL_UP_MOVE( 4, MOVE_MUD_SLAP),

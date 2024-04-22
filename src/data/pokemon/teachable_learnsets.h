@@ -10503,7 +10503,7 @@ static const u16 sLuxmonTeachableLearnset[] = {
 };
 
 #if P_GEN_9_CROSS_EVOS
-static const u16 sDuluxmonTeachableLearnset[] = {
+static const u16 sDudunsparceTeachableLearnset[] = {
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,
     MOVE_DIG,
