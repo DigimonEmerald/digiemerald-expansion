@@ -694,7 +694,7 @@ gCryTable::
 .endif @ P_FAMILY_ICEGOBIMON
 .if P_FAMILY_SOLARMON == TRUE
 	cry Cry_Solarmon
-	cry Cry_Pupitar
+	cry Cry_Sounbrdmon
 	cry Cry_Tyranitar
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_TyranitarMega
@@ -3120,7 +3120,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_ICEGOBIMON
 .if P_FAMILY_SOLARMON == TRUE
 	cry_reverse Cry_Solarmon
-	cry_reverse Cry_Pupitar
+	cry_reverse Cry_Sounbrdmon
 	cry_reverse Cry_Tyranitar
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_TyranitarMega

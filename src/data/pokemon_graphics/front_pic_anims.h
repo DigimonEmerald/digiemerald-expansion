@@ -3350,7 +3350,7 @@ static const union AnimCmd sAnim_Solarmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Pupitar_1[] =
+static const union AnimCmd sAnim_Sounbrdmon_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 10),
@@ -10990,7 +10990,7 @@ SINGLE_ANIMATION(Icegobimon);
 #endif //P_FAMILY_ICEGOBIMON
 #if P_FAMILY_SOLARMON
 SINGLE_ANIMATION(Solarmon);
-SINGLE_ANIMATION(Pupitar);
+SINGLE_ANIMATION(Sounbrdmon);
 SINGLE_ANIMATION(Tyranitar);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(TyranitarMega);

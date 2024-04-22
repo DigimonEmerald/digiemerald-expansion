@@ -3844,13 +3844,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Solarmon[] = INCBIN_U8("graphics/pokemon/solarmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Pupitar[] = INCBIN_U32("graphics/pokemon/pupitar/anim_front.4bpp.lz");
-    const u32 gMonPalette_Pupitar[] = INCBIN_U32("graphics/pokemon/pupitar/normal.gbapal.lz");
-    const u32 gMonBackPic_Pupitar[] = INCBIN_U32("graphics/pokemon/pupitar/back.4bpp.lz");
-    const u32 gMonShinyPalette_Pupitar[] = INCBIN_U32("graphics/pokemon/pupitar/shiny.gbapal.lz");
-    const u8 gMonIcon_Pupitar[] = INCBIN_U8("graphics/pokemon/pupitar/icon.4bpp");
+    const u32 gMonFrontPic_Sounbrdmon[] = INCBIN_U32("graphics/pokemon/sounbrdmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Sounbrdmon[] = INCBIN_U32("graphics/pokemon/sounbrdmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Sounbrdmon[] = INCBIN_U32("graphics/pokemon/sounbrdmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Sounbrdmon[] = INCBIN_U32("graphics/pokemon/sounbrdmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Sounbrdmon[] = INCBIN_U8("graphics/pokemon/sounbrdmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Pupitar[] = INCBIN_U8("graphics/pokemon/pupitar/footprint.1bpp");
+    const u8 gMonFootprint_Sounbrdmon[] = INCBIN_U8("graphics/pokemon/sounbrdmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Tyranitar[] = INCBIN_U32("graphics/pokemon/tyranitar/anim_front.4bpp.lz");

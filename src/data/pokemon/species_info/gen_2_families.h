@@ -6092,10 +6092,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Solarmon)
         .levelUpLearnset = sSolarmonLevelUpLearnset,
         .teachableLearnset = sSolarmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_PUPITAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SOUNBRDMON}),
     },
 
-    [SPECIES_PUPITAR] =
+    [SPECIES_SOUNBRDMON] =
     {
         .baseHP        = 70,
         .baseAttack    = 84,
@@ -6114,14 +6114,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Pupitar"),
-        .cryId = CRY_PUPITAR,
-        .natDexNum = NATIONAL_DEX_PUPITAR,
+        .speciesName = _("Sounbrdmon"),
+        .cryId = CRY_SOUNBRDMON,
+        .natDexNum = NATIONAL_DEX_SOUNBRDMON,
         .categoryName = _("Hard Shell"),
         .height = 12,
         .weight = 1520,
         .description = COMPOUND_STRING(
-            "A Pupitar creates a gas inside its body\n"
+            "A Sounbrdmon creates a gas inside its body\n"
             "that it ejects under compression to propel\n"
             "itself like a jet. Its body can withstand\n"
             "a collision with solid steel."),
@@ -6129,22 +6129,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Pupitar,
+        .frontPic = gMonFrontPic_Sounbrdmon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Pupitar,
+        .frontAnimFrames = sAnims_Sounbrdmon,
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Pupitar,
+        .backPic = gMonBackPic_Sounbrdmon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Pupitar,
-        .shinyPalette = gMonShinyPalette_Pupitar,
-        .iconSprite = gMonIcon_Pupitar,
+        .palette = gMonPalette_Sounbrdmon,
+        .shinyPalette = gMonShinyPalette_Sounbrdmon,
+        .iconSprite = gMonIcon_Sounbrdmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Pupitar)
-        .levelUpLearnset = sPupitarLevelUpLearnset,
-        .teachableLearnset = sPupitarTeachableLearnset,
+        FOOTPRINT(Sounbrdmon)
+        .levelUpLearnset = sSounbrdmonLevelUpLearnset,
+        .teachableLearnset = sSounbrdmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_TYRANITAR}),
     },
 

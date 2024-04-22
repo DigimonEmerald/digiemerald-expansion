@@ -12140,7 +12140,7 @@ static const u16 sSolarmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sPupitarTeachableLearnset[] = {
+static const u16 sSounbrdmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
