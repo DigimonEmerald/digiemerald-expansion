@@ -3131,8 +3131,8 @@ static const union AnimCmd sAnim_Otamamon_x_1[] =
 };
 #endif //P_FAMILY_OTAMAMON_RED
 
-#if P_FAMILY_SWINUB
-static const union AnimCmd sAnim_Swinub_1[] =
+#if P_FAMILY_PALMON
+static const union AnimCmd sAnim_Palmon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -3159,7 +3159,7 @@ static const union AnimCmd sAnim_Mamoswine_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_SWINUB
+#endif //P_FAMILY_PALMON
 
 #if P_FAMILY_CORSOLA
 static const union AnimCmd sAnim_Corsola_1[] =
@@ -10926,13 +10926,13 @@ SINGLE_ANIMATION(UrsalunaBloodmoon);
 SINGLE_ANIMATION(Otamamon_red);
 SINGLE_ANIMATION(Otamamon_x);
 #endif //P_FAMILY_OTAMAMON_RED
-#if P_FAMILY_SWINUB
-SINGLE_ANIMATION(Swinub);
+#if P_FAMILY_PALMON
+SINGLE_ANIMATION(Palmon);
 SINGLE_ANIMATION(Piloswine);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Mamoswine);
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_SWINUB
+#endif //P_FAMILY_PALMON
 #if P_FAMILY_CORSOLA
 SINGLE_ANIMATION(Corsola);
 #if P_GALARIAN_FORMS

@@ -1861,10 +1861,10 @@ Cry_Otamamon_x::
 	.incbin "sound/direct_sound_samples/cries/otamamon_x.bin"
 .endif @ P_FAMILY_OTAMAMON_RED
 
-.if P_FAMILY_SWINUB == TRUE
+.if P_FAMILY_PALMON == TRUE
 	.align 2
-Cry_Swinub::
-	.incbin "sound/direct_sound_samples/cries/swinub.bin"
+Cry_Palmon::
+	.incbin "sound/direct_sound_samples/cries/palmon.bin"
 
 	.align 2
 Cry_Piloswine::
@@ -1875,7 +1875,7 @@ Cry_Piloswine::
 Cry_Mamoswine::
 	.incbin "sound/direct_sound_samples/cries/mamoswine.bin"
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_SWINUB
+.endif @ P_FAMILY_PALMON
 
 .if P_FAMILY_CORSOLA == TRUE
 	.align 2

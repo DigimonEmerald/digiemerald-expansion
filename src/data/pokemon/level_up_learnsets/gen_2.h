@@ -4700,8 +4700,8 @@ static const struct LevelUpMove sOtamamon_xLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_OTAMAMON_RED
 
-#if P_FAMILY_SWINUB
-static const struct LevelUpMove sSwinubLevelUpLearnset[] = {
+#if P_FAMILY_PALMON
+static const struct LevelUpMove sPalmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE(10, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE(19, MOVE_ENDURE),
@@ -4749,7 +4749,7 @@ static const struct LevelUpMove sMamoswineLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_SWINUB
+#endif //P_FAMILY_PALMON
 
 #if P_FAMILY_CORSOLA
 static const struct LevelUpMove sCorsolaLevelUpLearnset[] = {

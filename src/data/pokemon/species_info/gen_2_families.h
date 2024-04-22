@@ -4652,8 +4652,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_OTAMAMON_RED
 
-#if P_FAMILY_SWINUB
-    [SPECIES_SWINUB] =
+#if P_FAMILY_PALMON
+    [SPECIES_PALMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 50,
@@ -4672,9 +4672,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_SNOW_CLOAK, ABILITY_THICK_FAT },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Swinub"),
-        .cryId = CRY_SWINUB,
-        .natDexNum = NATIONAL_DEX_SWINUB,
+        .speciesName = _("Palmon"),
+        .cryId = CRY_PALMON,
+        .natDexNum = NATIONAL_DEX_PALMON,
         .categoryName = _("Pig"),
         .height = 4,
         .weight = 65,
@@ -4687,22 +4687,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Swinub,
+        .frontPic = gMonFrontPic_Palmon,
         .frontPicSize = MON_COORDS_SIZE(40, 32),
         .frontPicYOffset = 18,
-        .frontAnimFrames = sAnims_Swinub,
+        .frontAnimFrames = sAnims_Palmon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Swinub,
+        .backPic = gMonBackPic_Palmon,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 15,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Swinub,
-        .shinyPalette = gMonShinyPalette_Swinub,
-        .iconSprite = gMonIcon_Swinub,
+        .palette = gMonPalette_Palmon,
+        .shinyPalette = gMonShinyPalette_Palmon,
+        .iconSprite = gMonIcon_Palmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Swinub)
-        .levelUpLearnset = sSwinubLevelUpLearnset,
-        .teachableLearnset = sSwinubTeachableLearnset,
+        FOOTPRINT(Palmon)
+        .levelUpLearnset = sPalmonLevelUpLearnset,
+        .teachableLearnset = sPalmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_PILOSWINE}),
     },
 
@@ -4825,7 +4825,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sMamoswineTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_SWINUB
+#endif //P_FAMILY_PALMON
 
 #if P_FAMILY_CORSOLA
 #if P_UPDATED_EXP_YIELDS >= GEN_7

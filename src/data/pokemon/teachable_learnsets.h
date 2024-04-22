@@ -11286,8 +11286,8 @@ static const u16 sOtamamon_xTeachableLearnset[] = {
 };
 #endif //P_FAMILY_OTAMAMON_RED
 
-#if P_FAMILY_SWINUB
-static const u16 sSwinubTeachableLearnset[] = {
+#if P_FAMILY_PALMON
+static const u16 sPalmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIG,
@@ -11389,7 +11389,7 @@ static const u16 sMamoswineTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_SWINUB
+#endif //P_FAMILY_PALMON
 
 #if P_FAMILY_CORSOLA
 static const u16 sCorsolaTeachableLearnset[] = {

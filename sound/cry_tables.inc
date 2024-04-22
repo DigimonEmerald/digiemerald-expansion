@@ -631,13 +631,13 @@ gCryTable::
 	cry Cry_Otamamon_red
 	cry Cry_Otamamon_x
 .endif @ P_FAMILY_OTAMAMON_RED
-.if P_FAMILY_SWINUB == TRUE
-	cry Cry_Swinub
+.if P_FAMILY_PALMON == TRUE
+	cry Cry_Palmon
 	cry Cry_Piloswine
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Mamoswine
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_SWINUB
+.endif @ P_FAMILY_PALMON
 .if P_FAMILY_CORSOLA == TRUE
 	cry Cry_Corsola
 .if P_GALARIAN_FORMS == TRUE
@@ -3057,13 +3057,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Otamamon_red
 	cry_reverse Cry_Otamamon_x
 .endif @ P_FAMILY_OTAMAMON_RED
-.if P_FAMILY_SWINUB == TRUE
-	cry_reverse Cry_Swinub
+.if P_FAMILY_PALMON == TRUE
+	cry_reverse Cry_Palmon
 	cry_reverse Cry_Piloswine
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Mamoswine
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_SWINUB
+.endif @ P_FAMILY_PALMON
 .if P_FAMILY_CORSOLA == TRUE
 	cry_reverse Cry_Corsola
 .if P_GALARIAN_FORMS == TRUE

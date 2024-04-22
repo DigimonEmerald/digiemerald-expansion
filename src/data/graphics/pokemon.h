@@ -3572,14 +3572,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_OTAMAMON_RED
 
-#if P_FAMILY_SWINUB
-    const u32 gMonFrontPic_Swinub[] = INCBIN_U32("graphics/pokemon/swinub/anim_front.4bpp.lz");
-    const u32 gMonPalette_Swinub[] = INCBIN_U32("graphics/pokemon/swinub/normal.gbapal.lz");
-    const u32 gMonBackPic_Swinub[] = INCBIN_U32("graphics/pokemon/swinub/back.4bpp.lz");
-    const u32 gMonShinyPalette_Swinub[] = INCBIN_U32("graphics/pokemon/swinub/shiny.gbapal.lz");
-    const u8 gMonIcon_Swinub[] = INCBIN_U8("graphics/pokemon/swinub/icon.4bpp");
+#if P_FAMILY_PALMON
+    const u32 gMonFrontPic_Palmon[] = INCBIN_U32("graphics/pokemon/palmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Palmon[] = INCBIN_U32("graphics/pokemon/palmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Palmon[] = INCBIN_U32("graphics/pokemon/palmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Palmon[] = INCBIN_U32("graphics/pokemon/palmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Palmon[] = INCBIN_U8("graphics/pokemon/palmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Swinub[] = INCBIN_U8("graphics/pokemon/swinub/footprint.1bpp");
+    const u8 gMonFootprint_Palmon[] = INCBIN_U8("graphics/pokemon/palmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Piloswine[] = INCBIN_U32("graphics/pokemon/piloswine/anim_front.4bpp.lz");
@@ -3606,7 +3606,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
     const u32 gMonFrontPic_MamoswineF[] = INCBIN_U32("graphics/pokemon/mamoswine/anim_frontf.4bpp.lz");
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_SWINUB
+#endif //P_FAMILY_PALMON
 
 #if P_FAMILY_CORSOLA
     const u32 gMonFrontPic_Corsola[] = INCBIN_U32("graphics/pokemon/corsola/anim_front.4bpp.lz");

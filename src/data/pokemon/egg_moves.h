@@ -1874,8 +1874,8 @@ const u16 gEggMoves[] = {
         MOVE_GUARD_SWAP),
 #endif //P_FAMILY_OTAMAMON_RED
 
-#if P_FAMILY_SWINUB
-    egg_moves(SWINUB,
+#if P_FAMILY_PALMON
+    egg_moves(PALMON,
         MOVE_TAKE_DOWN,
         MOVE_BITE,
         MOVE_BODY_SLAM,
@@ -1890,7 +1890,7 @@ const u16 gEggMoves[] = {
         MOVE_STEALTH_ROCK,
         MOVE_ICICLE_CRASH,
         MOVE_FREEZE_DRY),
-#endif //P_FAMILY_SWINUB
+#endif //P_FAMILY_PALMON
 
 #if P_FAMILY_CORSOLA
     egg_moves(CORSOLA,
