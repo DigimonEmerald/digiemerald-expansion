@@ -474,7 +474,7 @@ gCryTable::
 .endif @ P_FAMILY_FLORAMON
 .if P_FAMILY_GAMMAMON == TRUE
 	cry Cry_Gammamon
-	cry Cry_Croconaw
+	cry Cry_Gaomon
 	cry Cry_Feraligatr
 .endif @ P_FAMILY_GAMMAMON
 .if P_FAMILY_SENTRET == TRUE
@@ -2900,7 +2900,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_FLORAMON
 .if P_FAMILY_GAMMAMON == TRUE
 	cry_reverse Cry_Gammamon
-	cry_reverse Cry_Croconaw
+	cry_reverse Cry_Gaomon
 	cry_reverse Cry_Feraligatr
 .endif @ P_FAMILY_GAMMAMON
 .if P_FAMILY_SENTRET == TRUE

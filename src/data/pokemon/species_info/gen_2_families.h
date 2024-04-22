@@ -454,10 +454,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Gammamon)
         .levelUpLearnset = sGammamonLevelUpLearnset,
         .teachableLearnset = sGammamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_CROCONAW}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_GAOMON}),
     },
 
-    [SPECIES_CROCONAW] =
+    [SPECIES_GAOMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 80,
@@ -478,9 +478,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = TRUE,
-        .speciesName = _("Croconaw"),
-        .cryId = CRY_CROCONAW,
-        .natDexNum = NATIONAL_DEX_CROCONAW,
+        .speciesName = _("Gaomon"),
+        .cryId = CRY_GAOMON,
+        .natDexNum = NATIONAL_DEX_GAOMON,
         .categoryName = _("Big Jaw"),
         .height = 11,
         .weight = 250,
@@ -493,22 +493,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Croconaw,
+        .frontPic = gMonFrontPic_Gaomon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_Croconaw,
+        .frontAnimFrames = sAnims_Gaomon,
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Croconaw,
+        .backPic = gMonBackPic_Gaomon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Croconaw,
-        .shinyPalette = gMonShinyPalette_Croconaw,
-        .iconSprite = gMonIcon_Croconaw,
+        .palette = gMonPalette_Gaomon,
+        .shinyPalette = gMonShinyPalette_Gaomon,
+        .iconSprite = gMonIcon_Gaomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Croconaw)
-        .levelUpLearnset = sCroconawLevelUpLearnset,
-        .teachableLearnset = sCroconawTeachableLearnset,
+        FOOTPRINT(Gaomon)
+        .levelUpLearnset = sGaomonLevelUpLearnset,
+        .teachableLearnset = sGaomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_FERALIGATR}),
     },
 
