@@ -5622,8 +5622,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_PULSEMON
 
-#if P_FAMILY_STANTLER
-    [SPECIES_STANTLER] =
+#if P_FAMILY_ROKUSHO
+    [SPECIES_ROKUSHO] =
     {
         .baseHP        = 73,
         .baseAttack    = 95,
@@ -5642,14 +5642,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_FRISK, ABILITY_SAP_SIPPER },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Stantler"),
-        .cryId = CRY_STANTLER,
-        .natDexNum = NATIONAL_DEX_STANTLER,
+        .speciesName = _("Rokusho"),
+        .cryId = CRY_ROKUSHO,
+        .natDexNum = NATIONAL_DEX_ROKUSHO,
         .categoryName = _("Big Horn"),
         .height = 14,
         .weight = 712,
         .description = COMPOUND_STRING(
-            "Stantler's magnificent antlers were\n"
+            "Rokusho's magnificent antlers were\n"
             "once traded at high prices as works of art.\n"
             "As a result, this Pokémon was hunted\n"
             "close to extinction."),
@@ -5657,22 +5657,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Stantler,
+        .frontPic = gMonFrontPic_Rokusho,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Stantler,
+        .frontAnimFrames = sAnims_Rokusho,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Stantler,
+        .backPic = gMonBackPic_Rokusho,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Stantler,
-        .shinyPalette = gMonShinyPalette_Stantler,
-        .iconSprite = gMonIcon_Stantler,
+        .palette = gMonPalette_Rokusho,
+        .shinyPalette = gMonShinyPalette_Rokusho,
+        .iconSprite = gMonIcon_Rokusho,
         .iconPalIndex = 2,
-        FOOTPRINT(Stantler)
-        .levelUpLearnset = sStantlerLevelUpLearnset,
-        .teachableLearnset = sStantlerTeachableLearnset,
+        FOOTPRINT(Rokusho)
+        .levelUpLearnset = sRokushoLevelUpLearnset,
+        .teachableLearnset = sRokushoTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL_MOVE_TWENTY_TIMES, MOVE_PSYSHIELD_BASH, SPECIES_WYRDEER}),
     },
 
@@ -5730,7 +5730,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sWyrdeerTeachableLearnset,
     },
 #endif //P_GEN_8_CROSS_EVOS
-#endif //P_FAMILY_STANTLER
+#endif //P_FAMILY_ROKUSHO
 
 #if P_FAMILY_SMEARGLE
     [SPECIES_SMEARGLE] =

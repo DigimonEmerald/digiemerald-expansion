@@ -3279,8 +3279,8 @@ static const union AnimCmd sAnim_Renamon_1[] =
 };
 #endif //P_FAMILY_PULSEMON
 
-#if P_FAMILY_STANTLER
-static const union AnimCmd sAnim_Stantler_1[] =
+#if P_FAMILY_ROKUSHO
+static const union AnimCmd sAnim_Rokusho_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 15),
@@ -3290,7 +3290,7 @@ static const union AnimCmd sAnim_Stantler_1[] =
 #if P_GEN_8_CROSS_EVOS
 PLACEHOLDER_ANIM_SINGLE_FRAME(Wyrdeer);
 #endif //P_GEN_8_CROSS_EVOS
-#endif //P_FAMILY_STANTLER
+#endif //P_FAMILY_ROKUSHO
 
 #if P_FAMILY_SMEARGLE
 static const union AnimCmd sAnim_Smeargle_1[] =
@@ -10967,12 +10967,12 @@ SINGLE_ANIMATION(PomumonMega);
 SINGLE_ANIMATION(Pulsemon);
 SINGLE_ANIMATION(Renamon);
 #endif //P_FAMILY_PULSEMON
-#if P_FAMILY_STANTLER
-SINGLE_ANIMATION(Stantler);
+#if P_FAMILY_ROKUSHO
+SINGLE_ANIMATION(Rokusho);
 #if P_GEN_8_CROSS_EVOS
 SINGLE_ANIMATION(Wyrdeer);
 #endif //P_GEN_8_CROSS_EVOS
-#endif //P_FAMILY_STANTLER
+#endif //P_FAMILY_ROKUSHO
 #if P_FAMILY_SMEARGLE
 SINGLE_ANIMATION(Smeargle);
 #endif //P_FAMILY_SMEARGLE

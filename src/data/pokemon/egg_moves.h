@@ -2035,8 +2035,8 @@ const u16 gEggMoves[] = {
         MOVE_HIGH_HORSEPOWER),
 #endif //P_FAMILY_PULSEMON
 
-#if P_FAMILY_STANTLER
-    egg_moves(STANTLER,
+#if P_FAMILY_ROKUSHO
+    egg_moves(ROKUSHO,
         MOVE_SPITE,
         MOVE_DISABLE,
         MOVE_BITE,
@@ -2048,7 +2048,7 @@ const u16 gEggMoves[] = {
         MOVE_MUD_SPORT,
         MOVE_RAGE,
         MOVE_ME_FIRST),
-#endif //P_FAMILY_STANTLER
+#endif //P_FAMILY_ROKUSHO
 
 #if P_FAMILY_MILTANK
     egg_moves(MILTANK,

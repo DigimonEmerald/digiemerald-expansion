@@ -3757,14 +3757,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonBackPic_RenamonF[] = INCBIN_U32("graphics/pokemon/renamon/backf.4bpp.lz");
 #endif //P_FAMILY_PULSEMON
 
-#if P_FAMILY_STANTLER
-    const u32 gMonFrontPic_Stantler[] = INCBIN_U32("graphics/pokemon/stantler/anim_front.4bpp.lz");
-    const u32 gMonPalette_Stantler[] = INCBIN_U32("graphics/pokemon/stantler/normal.gbapal.lz");
-    const u32 gMonBackPic_Stantler[] = INCBIN_U32("graphics/pokemon/stantler/back.4bpp.lz");
-    const u32 gMonShinyPalette_Stantler[] = INCBIN_U32("graphics/pokemon/stantler/shiny.gbapal.lz");
-    const u8 gMonIcon_Stantler[] = INCBIN_U8("graphics/pokemon/stantler/icon.4bpp");
+#if P_FAMILY_ROKUSHO
+    const u32 gMonFrontPic_Rokusho[] = INCBIN_U32("graphics/pokemon/rokusho/anim_front.4bpp.lz");
+    const u32 gMonPalette_Rokusho[] = INCBIN_U32("graphics/pokemon/rokusho/normal.gbapal.lz");
+    const u32 gMonBackPic_Rokusho[] = INCBIN_U32("graphics/pokemon/rokusho/back.4bpp.lz");
+    const u32 gMonShinyPalette_Rokusho[] = INCBIN_U32("graphics/pokemon/rokusho/shiny.gbapal.lz");
+    const u8 gMonIcon_Rokusho[] = INCBIN_U8("graphics/pokemon/rokusho/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Stantler[] = INCBIN_U8("graphics/pokemon/stantler/footprint.1bpp");
+    const u8 gMonFootprint_Rokusho[] = INCBIN_U8("graphics/pokemon/rokusho/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_8_CROSS_EVOS
@@ -3777,7 +3777,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     //const u8 gMonFootprint_Wyrdeer[] = INCBIN_U8("graphics/pokemon/wyrdeer/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_8_CROSS_EVOS
-#endif //P_FAMILY_STANTLER
+#endif //P_FAMILY_ROKUSHO
 
 #if P_FAMILY_SMEARGLE
     const u32 gMonFrontPic_Smeargle[] = INCBIN_U32("graphics/pokemon/smeargle/anim_front.4bpp.lz");

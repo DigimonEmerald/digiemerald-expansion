@@ -6743,8 +6743,8 @@ static const struct LevelUpMove sRenamonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_PULSEMON
 
-#if P_FAMILY_STANTLER
-static const struct LevelUpMove sStantlerLevelUpLearnset[] = {
+#if P_FAMILY_ROKUSHO
+static const struct LevelUpMove sRokushoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 3, MOVE_LEER),
     LEVEL_UP_MOVE( 7, MOVE_ASTONISH),
@@ -6776,7 +6776,7 @@ static const struct LevelUpMove sWyrdeerLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_8_CROSS_EVOS
-#endif //P_FAMILY_STANTLER
+#endif //P_FAMILY_ROKUSHO
 
 #if P_FAMILY_SMEARGLE
 static const struct LevelUpMove sSmeargleLevelUpLearnset[] = {

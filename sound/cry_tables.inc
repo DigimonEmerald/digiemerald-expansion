@@ -671,12 +671,12 @@ gCryTable::
 	cry Cry_Pulsemon
 	cry Cry_Renamon
 .endif @ P_FAMILY_PULSEMON
-.if P_FAMILY_STANTLER == TRUE
-	cry Cry_Stantler
+.if P_FAMILY_ROKUSHO == TRUE
+	cry Cry_Rokusho
 .if P_GEN_8_CROSS_EVOS == TRUE
 	cry Cry_Wyrdeer
 .endif @ P_GEN_8_CROSS_EVOS
-.endif @ P_FAMILY_STANTLER
+.endif @ P_FAMILY_ROKUSHO
 .if P_FAMILY_SMEARGLE == TRUE
 	cry Cry_Smeargle
 .endif @ P_FAMILY_SMEARGLE
@@ -3097,12 +3097,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Pulsemon
 	cry_reverse Cry_Renamon
 .endif @ P_FAMILY_PULSEMON
-.if P_FAMILY_STANTLER == TRUE
-	cry_reverse Cry_Stantler
+.if P_FAMILY_ROKUSHO == TRUE
+	cry_reverse Cry_Rokusho
 .if P_GEN_8_CROSS_EVOS == TRUE
 	cry_reverse Cry_Wyrdeer
 .endif @ P_GEN_8_CROSS_EVOS
-.endif @ P_FAMILY_STANTLER
+.endif @ P_FAMILY_ROKUSHO
 .if P_FAMILY_SMEARGLE == TRUE
 	cry_reverse Cry_Smeargle
 .endif @ P_FAMILY_SMEARGLE

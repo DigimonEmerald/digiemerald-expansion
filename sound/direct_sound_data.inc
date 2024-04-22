@@ -1950,17 +1950,17 @@ Cry_Renamon::
 	.incbin "sound/direct_sound_samples/cries/renamon.bin"
 .endif @ P_FAMILY_PULSEMON
 
-.if P_FAMILY_STANTLER == TRUE
+.if P_FAMILY_ROKUSHO == TRUE
 	.align 2
-Cry_Stantler::
-	.incbin "sound/direct_sound_samples/cries/stantler.bin"
+Cry_Rokusho::
+	.incbin "sound/direct_sound_samples/cries/rokusho.bin"
 
 .if P_GEN_8_CROSS_EVOS == TRUE
 	.align 2
 Cry_Wyrdeer::
 	.incbin "sound/direct_sound_samples/cries/wyrdeer.bin"
 .endif @ P_GEN_8_CROSS_EVOS
-.endif @ P_FAMILY_STANTLER
+.endif @ P_FAMILY_ROKUSHO
 
 .if P_FAMILY_SMEARGLE == TRUE
 	.align 2

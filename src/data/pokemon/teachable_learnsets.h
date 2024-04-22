@@ -11857,8 +11857,8 @@ static const u16 sRenamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_PULSEMON
 
-#if P_FAMILY_STANTLER
-static const u16 sStantlerTeachableLearnset[] = {
+#if P_FAMILY_ROKUSHO
+static const u16 sRokushoTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DIG,
@@ -11930,7 +11930,7 @@ static const u16 sWyrdeerTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_8_CROSS_EVOS
-#endif //P_FAMILY_STANTLER
+#endif //P_FAMILY_ROKUSHO
 
 #if P_FAMILY_SMEARGLE
 static const u16 sSmeargleTeachableLearnset[] = {

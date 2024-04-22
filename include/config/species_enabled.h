@@ -175,7 +175,7 @@
 #define P_FAMILY_PHASCOMON                P_GEN_2_POKEMON
 #define P_FAMILY_PILLOMON                P_GEN_2_POKEMON
 #define P_FAMILY_PULSEMON                  P_GEN_2_POKEMON
-#define P_FAMILY_STANTLER                P_GEN_2_POKEMON
+#define P_FAMILY_ROKUSHO                P_GEN_2_POKEMON
 #define P_FAMILY_SMEARGLE                P_GEN_2_POKEMON
 #define P_FAMILY_MILTANK                 P_GEN_2_POKEMON
 #define P_FAMILY_RAIKOU                  P_GEN_2_POKEMON
