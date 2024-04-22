@@ -5286,8 +5286,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_PETITMAMON
 
-#if P_FAMILY_SKARMORY
-    [SPECIES_SKARMORY] =
+#if P_FAMILY_PHASCOMON
+    [SPECIES_PHASCOMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 80,
@@ -5307,39 +5307,39 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_KEEN_EYE, ABILITY_STURDY, ABILITY_WEAK_ARMOR },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Skarmory"),
-        .cryId = CRY_SKARMORY,
-        .natDexNum = NATIONAL_DEX_SKARMORY,
+        .speciesName = _("Phascomon"),
+        .cryId = CRY_PHASCOMON,
+        .natDexNum = NATIONAL_DEX_PHASCOMON,
         .categoryName = _("Armor Bird"),
         .height = 17,
         .weight = 505,
         .description = COMPOUND_STRING(
             "A Pokémon that has a body and wings of\n"
             "steel. People in the past used feathers\n"
-            "fallen from Skarmory to make swords and\n"
+            "fallen from Phascomon to make swords and\n"
             "knives."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 271,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Skarmory,
+        .frontPic = gMonFrontPic_Phascomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_Skarmory,
+        .frontAnimFrames = sAnims_Phascomon,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Skarmory,
+        .backPic = gMonBackPic_Phascomon,
         .backPicSize = MON_COORDS_SIZE(48, 64),
         .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Skarmory,
-        .shinyPalette = gMonShinyPalette_Skarmory,
-        .iconSprite = gMonIcon_Skarmory,
+        .palette = gMonPalette_Phascomon,
+        .shinyPalette = gMonShinyPalette_Phascomon,
+        .iconSprite = gMonIcon_Phascomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Skarmory)
-        .levelUpLearnset = sSkarmoryLevelUpLearnset,
-        .teachableLearnset = sSkarmoryTeachableLearnset,
+        FOOTPRINT(Phascomon)
+        .levelUpLearnset = sPhascomonLevelUpLearnset,
+        .teachableLearnset = sPhascomonTeachableLearnset,
     },
-#endif //P_FAMILY_SKARMORY
+#endif //P_FAMILY_PHASCOMON
 
 #if P_FAMILY_HOUNDOUR
     [SPECIES_HOUNDOUR] =

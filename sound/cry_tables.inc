@@ -657,9 +657,9 @@ gCryTable::
 .endif @ P_GEN_4_CROSS_EVOS
 	cry Cry_Petitmamon
 .endif @ P_FAMILY_PETITMAMON
-.if P_FAMILY_SKARMORY == TRUE
-	cry Cry_Skarmory
-.endif @ P_FAMILY_SKARMORY
+.if P_FAMILY_PHASCOMON == TRUE
+	cry Cry_Phascomon
+.endif @ P_FAMILY_PHASCOMON
 .if P_FAMILY_HOUNDOUR == TRUE
 	cry Cry_Houndour
 	cry Cry_Houndoom
@@ -3083,9 +3083,9 @@ gCryTable_Reverse::
 .endif @ P_GEN_4_CROSS_EVOS
 	cry_reverse Cry_Petitmamon
 .endif @ P_FAMILY_PETITMAMON
-.if P_FAMILY_SKARMORY == TRUE
-	cry_reverse Cry_Skarmory
-.endif @ P_FAMILY_SKARMORY
+.if P_FAMILY_PHASCOMON == TRUE
+	cry_reverse Cry_Phascomon
+.endif @ P_FAMILY_PHASCOMON
 .if P_FAMILY_HOUNDOUR == TRUE
 	cry_reverse Cry_Houndour
 	cry_reverse Cry_Houndoom

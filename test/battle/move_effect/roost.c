@@ -85,25 +85,25 @@ SINGLE_BATTLE_TEST("Roost recovers 50% of the user's Max HP")
 SINGLE_BATTLE_TEST("Roost suppresses the user's Flying-typing this turn, then restores it at the end of the turn")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_SKARMORY].types[0] == TYPE_STEEL);
-        ASSUME(gSpeciesInfo[SPECIES_SKARMORY].types[1] == TYPE_FLYING);
-        PLAYER(SPECIES_SKARMORY) { HP(50); MaxHP(100); Ability(ABILITY_STURDY); }
+        ASSUME(gSpeciesInfo[SPECIES_PHASCOMON].types[0] == TYPE_STEEL);
+        ASSUME(gSpeciesInfo[SPECIES_PHASCOMON].types[1] == TYPE_FLYING);
+        PLAYER(SPECIES_PHASCOMON) { HP(50); MaxHP(100); Ability(ABILITY_STURDY); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST); MOVE(opponent, MOVE_EARTHQUAKE); }
         TURN { MOVE(opponent, MOVE_EARTHQUAKE); }
     } SCENE {
         // Turn 1: EQ hits when Roosted
-        MESSAGE("Skarmory used Roost!");
+        MESSAGE("Phascomon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Skarmory regained health!");
+        MESSAGE("Phascomon regained health!");
         MESSAGE("Foe Lopmonx used Earthquake!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
         MESSAGE("It's super effective!");
         // Turn 2: EQ has no effect because Roost expired
         MESSAGE("Foe Lopmonx used Earthquake!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
-        MESSAGE("It doesn't affect Skarmory…");
+        MESSAGE("It doesn't affect Phascomon…");
         NOT HP_BAR(player);
     }
 }

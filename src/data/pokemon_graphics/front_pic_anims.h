@@ -3228,14 +3228,14 @@ static const union AnimCmd sAnim_Petitmamon_1[] =
 };
 #endif //P_FAMILY_PETITMAMON
 
-#if P_FAMILY_SKARMORY
-static const union AnimCmd sAnim_Skarmory_1[] =
+#if P_FAMILY_PHASCOMON
+static const union AnimCmd sAnim_Phascomon_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SKARMORY
+#endif //P_FAMILY_PHASCOMON
 
 #if P_FAMILY_HOUNDOUR
 static const union AnimCmd sAnim_Houndour_1[] =
@@ -10953,9 +10953,9 @@ SINGLE_ANIMATION(Mantyke);
 #endif //P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Petitmamon);
 #endif //P_FAMILY_PETITMAMON
-#if P_FAMILY_SKARMORY
-SINGLE_ANIMATION(Skarmory);
-#endif //P_FAMILY_SKARMORY
+#if P_FAMILY_PHASCOMON
+SINGLE_ANIMATION(Phascomon);
+#endif //P_FAMILY_PHASCOMON
 #if P_FAMILY_HOUNDOUR
 SINGLE_ANIMATION(Houndour);
 SINGLE_ANIMATION(Houndoom);

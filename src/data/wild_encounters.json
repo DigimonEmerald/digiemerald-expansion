@@ -1116,7 +1116,7 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_SKARMORY"
+                "species": "SPECIES_PHASCOMON"
               },
               {
                 "min_level": 16,
@@ -1126,7 +1126,7 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_SKARMORY"
+                "species": "SPECIES_PHASCOMON"
               }
             ]
           }

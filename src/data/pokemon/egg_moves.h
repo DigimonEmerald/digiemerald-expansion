@@ -1986,8 +1986,8 @@ const u16 gEggMoves[] = {
         MOVE_AMNESIA),
 #endif //P_FAMILY_PETITMAMON
 
-#if P_FAMILY_SKARMORY
-    egg_moves(SKARMORY,
+#if P_FAMILY_PHASCOMON
+    egg_moves(PHASCOMON,
         MOVE_DRILL_PECK,
         MOVE_PURSUIT,
         MOVE_WHIRLWIND,
@@ -1998,7 +1998,7 @@ const u16 gEggMoves[] = {
         MOVE_GUARD_SWAP,
         MOVE_STEALTH_ROCK,
         MOVE_ENDURE),
-#endif //P_FAMILY_SKARMORY
+#endif //P_FAMILY_PHASCOMON
 
 #if P_FAMILY_HOUNDOUR
     egg_moves(HOUNDOUR,

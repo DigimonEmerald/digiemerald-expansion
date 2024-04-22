@@ -1784,7 +1784,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .weight = 23,
         .description = COMPOUND_STRING(
             "Although it is small, it is very courageous.\n"
-            "It will take on a larger Skarmory on an\n"
+            "It will take on a larger Phascomon on an\n"
             "equal footing. However, its will weakens if\n"
             "it becomes hungry."),
         .pokemonScale = 465,

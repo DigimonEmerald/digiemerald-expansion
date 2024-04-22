@@ -11678,8 +11678,8 @@ static const u16 sPetitmamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_PETITMAMON
 
-#if P_FAMILY_SKARMORY
-static const u16 sSkarmoryTeachableLearnset[] = {
+#if P_FAMILY_PHASCOMON
+static const u16 sPhascomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CUT,
@@ -11714,7 +11714,7 @@ static const u16 sSkarmoryTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SKARMORY
+#endif //P_FAMILY_PHASCOMON
 
 #if P_FAMILY_HOUNDOUR
 static const u16 sHoundourTeachableLearnset[] = {

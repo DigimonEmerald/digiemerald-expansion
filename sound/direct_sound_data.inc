@@ -1918,11 +1918,11 @@ Cry_Petitmamon::
 	.incbin "sound/direct_sound_samples/cries/petitmamon.bin"
 .endif @ P_FAMILY_PETITMAMON
 
-.if P_FAMILY_SKARMORY == TRUE
+.if P_FAMILY_PHASCOMON == TRUE
 	.align 2
-Cry_Skarmory::
-	.incbin "sound/direct_sound_samples/cries/skarmory.bin"
-.endif @ P_FAMILY_SKARMORY
+Cry_Phascomon::
+	.incbin "sound/direct_sound_samples/cries/phascomon.bin"
+.endif @ P_FAMILY_PHASCOMON
 
 .if P_FAMILY_HOUNDOUR == TRUE
 	.align 2

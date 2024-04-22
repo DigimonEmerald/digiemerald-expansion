@@ -3692,16 +3692,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_PETITMAMON
 
-#if P_FAMILY_SKARMORY
-    const u32 gMonFrontPic_Skarmory[] = INCBIN_U32("graphics/pokemon/skarmory/anim_front.4bpp.lz");
-    const u32 gMonPalette_Skarmory[] = INCBIN_U32("graphics/pokemon/skarmory/normal.gbapal.lz");
-    const u32 gMonBackPic_Skarmory[] = INCBIN_U32("graphics/pokemon/skarmory/back.4bpp.lz");
-    const u32 gMonShinyPalette_Skarmory[] = INCBIN_U32("graphics/pokemon/skarmory/shiny.gbapal.lz");
-    const u8 gMonIcon_Skarmory[] = INCBIN_U8("graphics/pokemon/skarmory/icon.4bpp");
+#if P_FAMILY_PHASCOMON
+    const u32 gMonFrontPic_Phascomon[] = INCBIN_U32("graphics/pokemon/phascomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Phascomon[] = INCBIN_U32("graphics/pokemon/phascomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Phascomon[] = INCBIN_U32("graphics/pokemon/phascomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Phascomon[] = INCBIN_U32("graphics/pokemon/phascomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Phascomon[] = INCBIN_U8("graphics/pokemon/phascomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Skarmory[] = INCBIN_U8("graphics/pokemon/skarmory/footprint.1bpp");
+    const u8 gMonFootprint_Phascomon[] = INCBIN_U8("graphics/pokemon/phascomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_SKARMORY
+#endif //P_FAMILY_PHASCOMON
 
 #if P_FAMILY_HOUNDOUR
     const u32 gMonFrontPic_Houndour[] = INCBIN_U32("graphics/pokemon/houndour/anim_front.4bpp.lz");
