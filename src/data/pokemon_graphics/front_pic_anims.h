@@ -3096,7 +3096,7 @@ static const union AnimCmd sAnim_Neemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Ursaring_1[] =
+static const union AnimCmd sAnim_Otamamon_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 20),
@@ -10916,7 +10916,7 @@ SINGLE_ANIMATION(Sneasler);
 #endif //P_FAMILY_MUSHROOMON
 #if P_FAMILY_NEEMON
 SINGLE_ANIMATION(Neemon);
-SINGLE_ANIMATION(Ursaring);
+SINGLE_ANIMATION(Otamamon);
 #if P_GEN_8_CROSS_EVOS
 SINGLE_ANIMATION(Ursaluna);
 SINGLE_ANIMATION(UrsalunaBloodmoon);

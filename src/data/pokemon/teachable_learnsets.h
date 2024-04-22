@@ -11099,7 +11099,7 @@ static const u16 sNeemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sUrsaringTeachableLearnset[] = {
+static const u16 sOtamamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,

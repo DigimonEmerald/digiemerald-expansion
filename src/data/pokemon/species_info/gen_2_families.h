@@ -4369,10 +4369,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Neemon)
         .levelUpLearnset = sNeemonLevelUpLearnset,
         .teachableLearnset = sNeemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_URSARING}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_OTAMAMON}),
     },
 
-    [SPECIES_URSARING] =
+    [SPECIES_OTAMAMON] =
     {
         .baseHP        = 90,
         .baseAttack    = 130,
@@ -4391,41 +4391,41 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_GUTS, ABILITY_QUICK_FEET, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Ursaring"),
-        .cryId = CRY_URSARING,
-        .natDexNum = NATIONAL_DEX_URSARING,
+        .speciesName = _("Otamamon"),
+        .cryId = CRY_OTAMAMON,
+        .natDexNum = NATIONAL_DEX_OTAMAMON,
         .categoryName = _("Hibernator"),
         .height = 18,
         .weight = 1258,
         .description = COMPOUND_STRING(
             "In forests, it is said that there are many\n"
             "streams and towering trees where an\n"
-            "Ursaring gathers food. It walks through\n"
+            "Otamamon gathers food. It walks through\n"
             "its forest collecting food every day."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Ursaring,
-        .frontPicFemale = gMonFrontPic_UrsaringF,
+        .frontPic = gMonFrontPic_Otamamon,
+        .frontPicFemale = gMonFrontPic_OtamamonF,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Ursaring,
+        .frontAnimFrames = sAnims_Otamamon,
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Ursaring,
-        .backPicFemale = gMonBackPic_UrsaringF,
+        .backPic = gMonBackPic_Otamamon,
+        .backPicFemale = gMonBackPic_OtamamonF,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicSizeFemale = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Ursaring,
-        .shinyPalette = gMonShinyPalette_Ursaring,
-        .iconSprite = gMonIcon_Ursaring,
+        .palette = gMonPalette_Otamamon,
+        .shinyPalette = gMonShinyPalette_Otamamon,
+        .iconSprite = gMonIcon_Otamamon,
         .iconPalIndex = 2,
-        FOOTPRINT(Ursaring)
-        .levelUpLearnset = sUrsaringLevelUpLearnset,
-        .teachableLearnset = sUrsaringTeachableLearnset,
+        FOOTPRINT(Otamamon)
+        .levelUpLearnset = sOtamamonLevelUpLearnset,
+        .teachableLearnset = sOtamamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM_NIGHT, ITEM_PEAT_BLOCK, SPECIES_URSALUNA},
                                 {EVO_NONE, 0, SPECIES_URSALUNA_BLOODMOON}),
     },

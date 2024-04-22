@@ -3522,17 +3522,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Neemon[] = INCBIN_U8("graphics/pokemon/neemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Ursaring[] = INCBIN_U32("graphics/pokemon/ursaring/anim_front.4bpp.lz");
-    const u32 gMonPalette_Ursaring[] = INCBIN_U32("graphics/pokemon/ursaring/normal.gbapal.lz");
-    const u32 gMonBackPic_Ursaring[] = INCBIN_U32("graphics/pokemon/ursaring/back.4bpp.lz");
-    const u32 gMonShinyPalette_Ursaring[] = INCBIN_U32("graphics/pokemon/ursaring/shiny.gbapal.lz");
-    const u8 gMonIcon_Ursaring[] = INCBIN_U8("graphics/pokemon/ursaring/icon.4bpp");
+    const u32 gMonFrontPic_Otamamon[] = INCBIN_U32("graphics/pokemon/otamamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Otamamon[] = INCBIN_U32("graphics/pokemon/otamamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Otamamon[] = INCBIN_U32("graphics/pokemon/otamamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Otamamon[] = INCBIN_U32("graphics/pokemon/otamamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Otamamon[] = INCBIN_U8("graphics/pokemon/otamamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Ursaring[] = INCBIN_U8("graphics/pokemon/ursaring/footprint.1bpp");
+    const u8 gMonFootprint_Otamamon[] = INCBIN_U8("graphics/pokemon/otamamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_UrsaringF[] = INCBIN_U32("graphics/pokemon/ursaring/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_UrsaringF[] = INCBIN_U32("graphics/pokemon/ursaring/backf.4bpp.lz");
+    const u32 gMonFrontPic_OtamamonF[] = INCBIN_U32("graphics/pokemon/otamamon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_OtamamonF[] = INCBIN_U32("graphics/pokemon/otamamon/backf.4bpp.lz");
 
 #if P_GEN_8_CROSS_EVOS
     const u32 gMonFrontPic_Ursaluna[] = INCBIN_U32("graphics/pokemon/ursaluna/front.4bpp.lz");

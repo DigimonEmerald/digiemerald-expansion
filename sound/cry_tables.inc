@@ -622,7 +622,7 @@ gCryTable::
 .endif @ P_FAMILY_MUSHROOMON
 .if P_FAMILY_NEEMON == TRUE
 	cry Cry_Neemon
-	cry Cry_Ursaring
+	cry Cry_Otamamon
 .if P_GEN_8_CROSS_EVOS == TRUE
 	cry Cry_Ursaluna
 .endif @ P_GEN_8_CROSS_EVOS
@@ -3048,7 +3048,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_MUSHROOMON
 .if P_FAMILY_NEEMON == TRUE
 	cry_reverse Cry_Neemon
-	cry_reverse Cry_Ursaring
+	cry_reverse Cry_Otamamon
 .if P_GEN_8_CROSS_EVOS == TRUE
 	cry_reverse Cry_Ursaluna
 .endif @ P_GEN_8_CROSS_EVOS

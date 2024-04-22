@@ -1841,8 +1841,8 @@ Cry_Neemon::
 	.incbin "sound/direct_sound_samples/cries/neemon.bin"
 
 	.align 2
-Cry_Ursaring::
-	.incbin "sound/direct_sound_samples/cries/ursaring.bin"
+Cry_Otamamon::
+	.incbin "sound/direct_sound_samples/cries/otamamon.bin"
 
 .if P_GEN_8_CROSS_EVOS == TRUE
 	.align 2
