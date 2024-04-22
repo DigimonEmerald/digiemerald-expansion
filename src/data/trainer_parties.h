@@ -7184,7 +7184,7 @@ static const struct TrainerMon sParty_Catherine5[] = {
     {
     .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
     .lvl = 39,
-    .species = SPECIES_BELLOSSOM,
+    .species = SPECIES_IMPMON_X,
     },
     {
     .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),

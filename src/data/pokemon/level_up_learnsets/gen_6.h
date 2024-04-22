@@ -1017,7 +1017,7 @@ static const struct LevelUpMove sArcadiamon_itLevelUpLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const struct LevelUpMove sBellossomLevelUpLearnset[] = {
+static const struct LevelUpMove sImpmon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEAF_STORM),
     LEVEL_UP_MOVE( 1, MOVE_LEAF_BLADE),
     LEVEL_UP_MOVE( 1, MOVE_MEGA_DRAIN),

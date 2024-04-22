@@ -660,7 +660,7 @@ static const union AnimCmd sAnim_Arcadiamon_it_1[] =
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Bellossom_1[] =
+static const union AnimCmd sAnim_Impmon_x_1[] =
 {
     ANIMCMD_FRAME(1, 5),
     ANIMCMD_FRAME(0, 5),
@@ -10309,7 +10309,7 @@ SINGLE_ANIMATION(Zerimon);
 SINGLE_ANIMATION(Zurumon);
 SINGLE_ANIMATION(Arcadiamon_it);
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Bellossom);
+SINGLE_ANIMATION(Impmon_x);
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ZERIMON
 #if P_FAMILY_ARGOMON_IT

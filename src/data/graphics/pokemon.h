@@ -757,13 +757,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonBackPic_Arcadiamon_itF[] = INCBIN_U32("graphics/pokemon/arcadiamon_it/backf.4bpp.lz");
 
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Bellossom[] = INCBIN_U32("graphics/pokemon/bellossom/anim_front.4bpp.lz");
-    const u32 gMonPalette_Bellossom[] = INCBIN_U32("graphics/pokemon/bellossom/normal.gbapal.lz");
-    const u32 gMonBackPic_Bellossom[] = INCBIN_U32("graphics/pokemon/bellossom/back.4bpp.lz");
-    const u32 gMonShinyPalette_Bellossom[] = INCBIN_U32("graphics/pokemon/bellossom/shiny.gbapal.lz");
-    const u8 gMonIcon_Bellossom[] = INCBIN_U8("graphics/pokemon/bellossom/icon.4bpp");
+    const u32 gMonFrontPic_Impmon_x[] = INCBIN_U32("graphics/pokemon/impmon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Impmon_x[] = INCBIN_U32("graphics/pokemon/impmon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Impmon_x[] = INCBIN_U32("graphics/pokemon/impmon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Impmon_x[] = INCBIN_U32("graphics/pokemon/impmon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Impmon_x[] = INCBIN_U8("graphics/pokemon/impmon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Bellossom[] = INCBIN_U8("graphics/pokemon/bellossom/footprint.1bpp");
+    const u8 gMonFootprint_Impmon_x[] = INCBIN_U8("graphics/pokemon/impmon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ZERIMON

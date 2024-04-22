@@ -659,8 +659,8 @@ Cry_Arcadiamon_it::
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Bellossom::
-	.incbin "sound/direct_sound_samples/cries/bellossom.bin"
+Cry_Impmon_x::
+	.incbin "sound/direct_sound_samples/cries/impmon_x.bin"
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_ZERIMON
 

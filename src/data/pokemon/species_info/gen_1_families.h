@@ -4727,7 +4727,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sZurumonLevelUpLearnset,
         .teachableLearnset = sZurumonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_ARCADIAMON_IT},
-                                {EVO_ITEM, ITEM_SUN_STONE, SPECIES_BELLOSSOM}),
+                                {EVO_ITEM, ITEM_SUN_STONE, SPECIES_IMPMON_X}),
     },
 
     [SPECIES_ARCADIAMON_IT] =
@@ -4796,7 +4796,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_BELLOSSOM] =
+    [SPECIES_IMPMON_X] =
     {
         .baseHP        = 75,
         .baseAttack    = 80,
@@ -4824,9 +4824,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_NONE, ABILITY_HEALER },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Bellossom"),
-        .cryId = CRY_BELLOSSOM,
-        .natDexNum = NATIONAL_DEX_BELLOSSOM,
+        .speciesName = _("Impmon_x"),
+        .cryId = CRY_IMPMON_X,
+        .natDexNum = NATIONAL_DEX_IMPMON_X,
         .categoryName = _("Flower"),
         .height = 4,
         .weight = 58,
@@ -4839,22 +4839,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 21,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Bellossom,
+        .frontPic = gMonFrontPic_Impmon_x,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Bellossom,
+        .frontAnimFrames = sAnims_Impmon_x,
         .frontAnimId = ANIM_H_SLIDE_SLOW,
-        .backPic = gMonBackPic_Bellossom,
+        .backPic = gMonBackPic_Impmon_x,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Bellossom,
-        .shinyPalette = gMonShinyPalette_Bellossom,
-        .iconSprite = gMonIcon_Bellossom,
+        .palette = gMonPalette_Impmon_x,
+        .shinyPalette = gMonShinyPalette_Impmon_x,
+        .iconSprite = gMonIcon_Impmon_x,
         .iconPalIndex = 1,
-        FOOTPRINT(Bellossom)
-        .levelUpLearnset = sBellossomLevelUpLearnset,
-        .teachableLearnset = sBellossomTeachableLearnset,
+        FOOTPRINT(Impmon_x)
+        .levelUpLearnset = sImpmon_xLevelUpLearnset,
+        .teachableLearnset = sImpmon_xTeachableLearnset,
     },
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_ZERIMON

@@ -2127,7 +2127,7 @@ static const u16 sArcadiamon_itTeachableLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const u16 sBellossomTeachableLearnset[] = {
+static const u16 sImpmon_xTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,
