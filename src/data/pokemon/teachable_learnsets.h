@@ -1499,7 +1499,7 @@ static const u16 sPuwamonTeachableLearnset[] = {
 
 #if P_FAMILY_PUYOMON
 #if P_GEN_2_CROSS_EVOS
-static const u16 sCleffaTeachableLearnset[] = {
+static const u16 sGumdramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DIG,

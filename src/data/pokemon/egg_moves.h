@@ -225,7 +225,7 @@ const u16 gEggMoves[] = {
 
 #if P_FAMILY_PUYOMON
 #if P_GEN_2_CROSS_EVOS
-    egg_moves(CLEFFA,
+    egg_moves(GUMDRAMON,
         MOVE_PRESENT,
         MOVE_METRONOME,
         MOVE_AMNESIA,

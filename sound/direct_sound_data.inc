@@ -589,8 +589,8 @@ Cry_Puwamon::
 .if P_FAMILY_PUYOMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Cleffa::
-	.incbin "sound/direct_sound_samples/cries/cleffa.bin"
+Cry_Gumdramon::
+	.incbin "sound/direct_sound_samples/cries/gumdramon.bin"
 .endif @ P_GEN_2_CROSS_EVOS
 
 	.align 2

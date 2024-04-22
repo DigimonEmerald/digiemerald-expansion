@@ -3856,7 +3856,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #endif
 
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_CLEFFA] =
+    [SPECIES_GUMDRAMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 25,
@@ -3877,37 +3877,37 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_CUTE_CHARM, ABILITY_MAGIC_GUARD, ABILITY_FRIEND_GUARD },
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
-        .speciesName = _("Cleffa"),
-        .cryId = CRY_CLEFFA,
-        .natDexNum = NATIONAL_DEX_CLEFFA,
+        .speciesName = _("Gumdramon"),
+        .cryId = CRY_GUMDRAMON,
+        .natDexNum = NATIONAL_DEX_GUMDRAMON,
         .categoryName = _("Star Shape"),
         .height = 3,
         .weight = 30,
         .description = COMPOUND_STRING(
             "On nights with many shooting stars,\n"
-            "Cleffa can be seen dancing in a ring.\n"
+            "Gumdramon can be seen dancing in a ring.\n"
             "They dance until daybreak, when they\n"
             "quench their thirst with the morning dew."),
         .pokemonScale = 462,
         .pokemonOffset = 23,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Cleffa,
+        .frontPic = gMonFrontPic_Gumdramon,
         .frontPicSize = MON_COORDS_SIZE(32, 32),
         .frontPicYOffset = 18,
-        .frontAnimFrames = sAnims_Cleffa,
+        .frontAnimFrames = sAnims_Gumdramon,
         .frontAnimId = ANIM_V_JUMPS_SMALL,
-        .backPic = gMonBackPic_Cleffa,
+        .backPic = gMonBackPic_Gumdramon,
         .backPicSize = MON_COORDS_SIZE(48, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Cleffa,
-        .shinyPalette = gMonShinyPalette_Cleffa,
-        .iconSprite = gMonIcon_Cleffa,
+        .palette = gMonPalette_Gumdramon,
+        .shinyPalette = gMonShinyPalette_Gumdramon,
+        .iconSprite = gMonIcon_Gumdramon,
         .iconPalIndex = 0,
-        FOOTPRINT(Cleffa)
-        .levelUpLearnset = sCleffaLevelUpLearnset,
-        .teachableLearnset = sCleffaTeachableLearnset,
+        FOOTPRINT(Gumdramon)
+        .levelUpLearnset = sGumdramonLevelUpLearnset,
+        .teachableLearnset = sGumdramonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_PUYOMON}),
     },
 #endif //P_GEN_2_CROSS_EVOS

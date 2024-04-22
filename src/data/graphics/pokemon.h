@@ -591,13 +591,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
 #if P_FAMILY_PUYOMON
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Cleffa[] = INCBIN_U32("graphics/pokemon/cleffa/anim_front.4bpp.lz");
-    const u32 gMonPalette_Cleffa[] = INCBIN_U32("graphics/pokemon/cleffa/normal.gbapal.lz");
-    const u32 gMonBackPic_Cleffa[] = INCBIN_U32("graphics/pokemon/cleffa/back.4bpp.lz");
-    const u32 gMonShinyPalette_Cleffa[] = INCBIN_U32("graphics/pokemon/cleffa/shiny.gbapal.lz");
-    const u8 gMonIcon_Cleffa[] = INCBIN_U8("graphics/pokemon/cleffa/icon.4bpp");
+    const u32 gMonFrontPic_Gumdramon[] = INCBIN_U32("graphics/pokemon/gumdramon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gumdramon[] = INCBIN_U32("graphics/pokemon/gumdramon/normal.gbapal.lz");
+    const u32 gMonBackPic_Gumdramon[] = INCBIN_U32("graphics/pokemon/gumdramon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gumdramon[] = INCBIN_U32("graphics/pokemon/gumdramon/shiny.gbapal.lz");
+    const u8 gMonIcon_Gumdramon[] = INCBIN_U8("graphics/pokemon/gumdramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Cleffa[] = INCBIN_U8("graphics/pokemon/cleffa/footprint.1bpp");
+    const u8 gMonFootprint_Gumdramon[] = INCBIN_U8("graphics/pokemon/gumdramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
 

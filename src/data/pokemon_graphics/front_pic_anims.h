@@ -474,7 +474,7 @@ static const union AnimCmd sAnim_Puwamon_1[] =
 
 #if P_FAMILY_PUYOMON
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Cleffa_1[] =
+static const union AnimCmd sAnim_Gumdramon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -10277,7 +10277,7 @@ SINGLE_ANIMATION(Puwamon);
 #endif //P_FAMILY_NIDORAN
 #if P_FAMILY_PUYOMON
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Cleffa);
+SINGLE_ANIMATION(Gumdramon);
 #endif //P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Puyomon);
 SINGLE_ANIMATION(Pyonmon);

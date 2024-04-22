@@ -79,7 +79,7 @@ gCryTable::
 .endif @ P_FAMILY_NIDORAN
 .if P_FAMILY_PUYOMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry Cry_Cleffa
+	cry Cry_Gumdramon
 .endif @ P_GEN_2_CROSS_EVOS
 	cry Cry_Puyomon
 	cry Cry_Pyonmon
@@ -2505,7 +2505,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_NIDORAN
 .if P_FAMILY_PUYOMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry_reverse Cry_Cleffa
+	cry_reverse Cry_Gumdramon
 .endif @ P_GEN_2_CROSS_EVOS
 	cry_reverse Cry_Puyomon
 	cry_reverse Cry_Pyonmon
