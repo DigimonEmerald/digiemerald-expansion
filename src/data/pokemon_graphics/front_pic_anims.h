@@ -2410,7 +2410,7 @@ static const union AnimCmd sAnim_Gaomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Feraligatr_1[] =
+static const union AnimCmd sAnim_Gaossmon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -10758,7 +10758,7 @@ SINGLE_ANIMATION(Gabumon_xHisuian);
 #if P_FAMILY_GAMMAMON
 SINGLE_ANIMATION(Gammamon);
 SINGLE_ANIMATION(Gaomon);
-SINGLE_ANIMATION(Feraligatr);
+SINGLE_ANIMATION(Gaossmon);
 #endif //P_FAMILY_GAMMAMON
 #if P_FAMILY_SENTRET
 SINGLE_ANIMATION(Sentret);

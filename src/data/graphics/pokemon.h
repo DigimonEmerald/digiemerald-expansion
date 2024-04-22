@@ -2688,13 +2688,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Gaomon[] = INCBIN_U8("graphics/pokemon/gaomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Feraligatr[] = INCBIN_U32("graphics/pokemon/feraligatr/anim_front.4bpp.lz");
-    const u32 gMonPalette_Feraligatr[] = INCBIN_U32("graphics/pokemon/feraligatr/normal.gbapal.lz");
-    const u32 gMonBackPic_Feraligatr[] = INCBIN_U32("graphics/pokemon/feraligatr/back.4bpp.lz");
-    const u32 gMonShinyPalette_Feraligatr[] = INCBIN_U32("graphics/pokemon/feraligatr/shiny.gbapal.lz");
-    const u8 gMonIcon_Feraligatr[] = INCBIN_U8("graphics/pokemon/feraligatr/icon.4bpp");
+    const u32 gMonFrontPic_Gaossmon[] = INCBIN_U32("graphics/pokemon/gaossmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gaossmon[] = INCBIN_U32("graphics/pokemon/gaossmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Gaossmon[] = INCBIN_U32("graphics/pokemon/gaossmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gaossmon[] = INCBIN_U32("graphics/pokemon/gaossmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Gaossmon[] = INCBIN_U8("graphics/pokemon/gaossmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Feraligatr[] = INCBIN_U8("graphics/pokemon/feraligatr/footprint.1bpp");
+    const u8 gMonFootprint_Gaossmon[] = INCBIN_U8("graphics/pokemon/gaossmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_GAMMAMON
 

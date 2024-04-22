@@ -1503,8 +1503,8 @@ Cry_Gaomon::
 	.incbin "sound/direct_sound_samples/cries/gaomon.bin"
 
 	.align 2
-Cry_Feraligatr::
-	.incbin "sound/direct_sound_samples/cries/feraligatr.bin"
+Cry_Gaossmon::
+	.incbin "sound/direct_sound_samples/cries/gaossmon.bin"
 .endif @ P_FAMILY_GAMMAMON
 
 .if P_FAMILY_SENTRET == TRUE

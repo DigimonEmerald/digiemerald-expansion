@@ -509,10 +509,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Gaomon)
         .levelUpLearnset = sGaomonLevelUpLearnset,
         .teachableLearnset = sGaomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_FERALIGATR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GAOSSMON}),
     },
 
-    [SPECIES_FERALIGATR] =
+    [SPECIES_GAOSSMON] =
     {
         .baseHP        = 85,
         .baseAttack    = 105,
@@ -538,9 +538,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Feraligatr"),
-        .cryId = CRY_FERALIGATR,
-        .natDexNum = NATIONAL_DEX_FERALIGATR,
+        .speciesName = _("Gaossmon"),
+        .cryId = CRY_GAOSSMON,
+        .natDexNum = NATIONAL_DEX_GAOSSMON,
         .categoryName = _("Big Jaw"),
         .height = 23,
         .weight = 888,
@@ -553,23 +553,23 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 0,
         .trainerScale = 342,
         .trainerOffset = 7,
-        .frontPic = gMonFrontPic_Feraligatr,
+        .frontPic = gMonFrontPic_Gaossmon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_Feraligatr,
+        .frontAnimFrames = sAnims_Gaossmon,
         .frontAnimId = ANIM_H_SHAKE,
         .frontAnimDelay = 5,
-        .backPic = gMonBackPic_Feraligatr,
+        .backPic = gMonBackPic_Gaossmon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Feraligatr,
-        .shinyPalette = gMonShinyPalette_Feraligatr,
-        .iconSprite = gMonIcon_Feraligatr,
+        .palette = gMonPalette_Gaossmon,
+        .shinyPalette = gMonShinyPalette_Gaossmon,
+        .iconSprite = gMonIcon_Gaossmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Feraligatr)
-        .levelUpLearnset = sFeraligatrLevelUpLearnset,
-        .teachableLearnset = sFeraligatrTeachableLearnset,
+        FOOTPRINT(Gaossmon)
+        .levelUpLearnset = sGaossmonLevelUpLearnset,
+        .teachableLearnset = sGaossmonTeachableLearnset,
     },
 #endif //P_FAMILY_GAMMAMON
 
