@@ -7483,7 +7483,7 @@ static const u16 sKunemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sUmbreonTeachableLearnset[] = {
+static const u16 sLabramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_CUT,

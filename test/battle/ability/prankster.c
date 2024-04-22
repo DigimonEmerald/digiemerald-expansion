@@ -3,20 +3,20 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gSpeciesInfo[SPECIES_UMBREON].types[0] == TYPE_DARK);
+    ASSUME(gSpeciesInfo[SPECIES_LABRAMON].types[0] == TYPE_DARK);
     ASSUME(gMovesInfo[MOVE_CONFUSE_RAY].category == DAMAGE_CATEGORY_STATUS);
 }
 
 SINGLE_BATTLE_TEST("Prankster-affected moves don't affect Dark-type Pokémon")
 {
     GIVEN {
-        PLAYER(SPECIES_UMBREON);
+        PLAYER(SPECIES_LABRAMON);
         OPPONENT(SPECIES_VOLBEAT) { Ability(ABILITY_PRANKSTER); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CONFUSE_RAY); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, opponent);
-        MESSAGE("It doesn't affect Umbreon…");
+        MESSAGE("It doesn't affect Labramon…");
     }
 }
 
@@ -24,13 +24,13 @@ SINGLE_BATTLE_TEST("Prankster-affected moves don't affect Dark-type Pokémon aft
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_UMBREON);
+        PLAYER(SPECIES_LABRAMON);
         OPPONENT(SPECIES_VOLBEAT) { Ability(ABILITY_PRANKSTER); }
     } WHEN {
         TURN { SWITCH(player, 1); MOVE(opponent, MOVE_CONFUSE_RAY); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, opponent);
-        MESSAGE("It doesn't affect Umbreon…");
+        MESSAGE("It doesn't affect Labramon…");
     }
 }
 
@@ -38,28 +38,28 @@ DOUBLE_BATTLE_TEST("Prankster-affected moves affect Ally Dark-type Pokémon")
 {
     GIVEN {
         PLAYER(SPECIES_VOLBEAT) { Ability(ABILITY_PRANKSTER); }
-        PLAYER(SPECIES_UMBREON);
+        PLAYER(SPECIES_LABRAMON);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_CONFUSE_RAY, target: playerRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, playerLeft);
-        NOT MESSAGE("It doesn't affect Umbreon…");
+        NOT MESSAGE("It doesn't affect Labramon…");
     }
 }
 
 SINGLE_BATTLE_TEST("Prankster-affected moves called via Assist don't affect Dark-type Pokémon")
 {
     GIVEN {
-        PLAYER(SPECIES_UMBREON);
+        PLAYER(SPECIES_LABRAMON);
         OPPONENT(SPECIES_VOLBEAT) { Ability(ABILITY_PRANKSTER); }
         OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_CONFUSE_RAY); };
     } WHEN {
         TURN { MOVE(opponent, MOVE_ASSIST); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, opponent);
-        MESSAGE("It doesn't affect Umbreon…");
+        MESSAGE("It doesn't affect Labramon…");
     }
 }
 
@@ -69,7 +69,7 @@ DOUBLE_BATTLE_TEST("Prankster-affected moves called via Instruct do not affect D
     GIVEN {
         PLAYER(SPECIES_VOLBEAT) { Speed(20); Ability(ABILITY_PRANKSTER); }
         PLAYER(SPECIES_WOBBUFFET) { Speed(10);}
-        OPPONENT(SPECIES_UMBREON) { Speed(1); }
+        OPPONENT(SPECIES_LABRAMON) { Speed(1); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(1); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_CONFUSE_RAY, target: opponentLeft);
@@ -77,11 +77,11 @@ DOUBLE_BATTLE_TEST("Prankster-affected moves called via Instruct do not affect D
         }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, playerLeft);
-        MESSAGE("It doesn't affect Foe Umbreon…");
+        MESSAGE("It doesn't affect Foe Labramon…");
         MESSAGE("Wobbuffet used Instruct!");
         MESSAGE("Volbeat used Confuse Ray!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, playerLeft);
-        MESSAGE("It doesn't affect Foe Umbreon…");
+        MESSAGE("It doesn't affect Foe Labramon…");
     }
 }
 
@@ -103,7 +103,7 @@ DOUBLE_BATTLE_TEST("Moves called via Prankster-affected After you affect Dark-ty
     GIVEN {
         PLAYER(SPECIES_VOLBEAT) { Speed(1); Ability(ABILITY_PRANKSTER); }
         PLAYER(SPECIES_WOBBUFFET) { Speed(1);}
-        OPPONENT(SPECIES_UMBREON) { Speed(10); }
+        OPPONENT(SPECIES_LABRAMON) { Speed(10); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(10); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_AFTER_YOU, target: playerRight);
@@ -114,7 +114,7 @@ DOUBLE_BATTLE_TEST("Moves called via Prankster-affected After you affect Dark-ty
         ANIMATION(ANIM_TYPE_MOVE, MOVE_AFTER_YOU, playerLeft);
         MESSAGE("Wobbuffet used Confuse Ray!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, playerRight);
-        MESSAGE("Foe Umbreon became confused!");
+        MESSAGE("Foe Labramon became confused!");
     }
 }
 
@@ -138,7 +138,7 @@ DOUBLE_BATTLE_TEST("Prankster-affected moves that target all Pokémon are succes
         ASSUME(gMovesInfo[MOVE_CAPTIVATE].target == MOVE_TARGET_BOTH);
         PLAYER(SPECIES_VOLBEAT) { Ability(ABILITY_PRANKSTER); }
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_UMBREON);
+        OPPONENT(SPECIES_LABRAMON);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_CAPTIVATE); }
@@ -150,7 +150,7 @@ DOUBLE_BATTLE_TEST("Prankster-affected moves that target all Pokémon are succes
 SINGLE_BATTLE_TEST("Prankster-affected moves can still be bounced back by Dark-types using Magic Coat")
 {
     GIVEN {
-        PLAYER(SPECIES_UMBREON);
+        PLAYER(SPECIES_LABRAMON);
         OPPONENT(SPECIES_VOLBEAT) { Ability(ABILITY_PRANKSTER); }
     } WHEN {
         TURN { MOVE(player, MOVE_MAGIC_COAT); MOVE(opponent, MOVE_CONFUSE_RAY); }

@@ -4080,7 +4080,7 @@ static const struct LevelUpMove sKunemonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sUmbreonLevelUpLearnset[] = {
+static const struct LevelUpMove sLabramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),

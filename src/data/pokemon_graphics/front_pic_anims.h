@@ -2053,7 +2053,7 @@ static const union AnimCmd sAnim_Kunemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Umbreon_1[] =
+static const union AnimCmd sAnim_Labramon_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 20),
@@ -10667,7 +10667,7 @@ SINGLE_ANIMATION(Damemon);
 SINGLE_ANIMATION(Demidevmon);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Kunemon);
-SINGLE_ANIMATION(Umbreon);
+SINGLE_ANIMATION(Labramon);
 #endif //P_GEN_2_CROSS_EVOS
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Leafeon);

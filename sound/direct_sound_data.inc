@@ -1330,8 +1330,8 @@ Cry_Kunemon::
 	.incbin "sound/direct_sound_samples/cries/kunemon.bin"
 
 	.align 2
-Cry_Umbreon::
-	.incbin "sound/direct_sound_samples/cries/umbreon.bin"
+Cry_Labramon::
+	.incbin "sound/direct_sound_samples/cries/labramon.bin"
 .endif @ P_GEN_2_CROSS_EVOS
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2

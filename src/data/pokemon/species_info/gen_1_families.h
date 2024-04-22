@@ -13631,7 +13631,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
                                 {EVO_ITEM, ITEM_WATER_STONE, SPECIES_CUTEMON},
                                 {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_DEMIDEVMON},
                                 {EVO_FRIENDSHIP_DAY, 0, SPECIES_KUNEMON},
-                                {EVO_FRIENDSHIP_NIGHT, 0, SPECIES_UMBREON},
+                                {EVO_FRIENDSHIP_NIGHT, 0, SPECIES_LABRAMON},
                                 {EVO_SPECIFIC_MAP, MAP_PETALBURG_WOODS, SPECIES_LEAFEON},
                                 {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_LEAFEON},
                                 {EVO_SPECIFIC_MAP, MAP_SHOAL_CAVE_LOW_TIDE_ICE_ROOM, SPECIES_GLACEON},
@@ -13964,7 +13964,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sKunemonTeachableLearnset,
     },
 
-    [SPECIES_UMBREON] =
+    [SPECIES_LABRAMON] =
     {
         .baseHP        = 95,
         .baseAttack    = 65,
@@ -13983,14 +13983,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SYNCHRONIZE, ABILITY_SYNCHRONIZE, ABILITY_INNER_FOCUS },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Umbreon"),
-        .cryId = CRY_UMBREON,
-        .natDexNum = NATIONAL_DEX_UMBREON,
+        .speciesName = _("Labramon"),
+        .cryId = CRY_LABRAMON,
+        .natDexNum = NATIONAL_DEX_LABRAMON,
         .categoryName = _("Moonlight"),
         .height = 10,
         .weight = 270,
         .description = COMPOUND_STRING(
-            "Umbreon evolved from exposure to the\n"
+            "Labramon evolved from exposure to the\n"
             "moon's energy pulses. It lurks in darkness\n"
             "and waits for its foes to move. The rings\n"
             "on its body glow when it leaps to attack."),
@@ -13998,22 +13998,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 11,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Umbreon,
+        .frontPic = gMonFrontPic_Labramon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Umbreon,
+        .frontAnimFrames = sAnims_Labramon,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Umbreon,
+        .backPic = gMonBackPic_Labramon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Umbreon,
-        .shinyPalette = gMonShinyPalette_Umbreon,
-        .iconSprite = gMonIcon_Umbreon,
+        .palette = gMonPalette_Labramon,
+        .shinyPalette = gMonShinyPalette_Labramon,
+        .iconSprite = gMonIcon_Labramon,
         .iconPalIndex = 0,
-        FOOTPRINT(Umbreon)
-        .levelUpLearnset = sUmbreonLevelUpLearnset,
-        .teachableLearnset = sUmbreonTeachableLearnset,
+        FOOTPRINT(Labramon)
+        .levelUpLearnset = sLabramonLevelUpLearnset,
+        .teachableLearnset = sLabramonTeachableLearnset,
     },
 #endif //P_GEN_2_CROSS_EVOS
 
