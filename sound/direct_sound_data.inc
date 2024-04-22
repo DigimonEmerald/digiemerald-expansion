@@ -1493,10 +1493,10 @@ Cry_Gabumon_x::
 	.incbin "sound/direct_sound_samples/cries/gabumon_x.bin"
 .endif @ P_FAMILY_FLORAMON
 
-.if P_FAMILY_TOTODILE == TRUE
+.if P_FAMILY_GAMMAMON == TRUE
 	.align 2
-Cry_Totodile::
-	.incbin "sound/direct_sound_samples/cries/totodile.bin"
+Cry_Gammamon::
+	.incbin "sound/direct_sound_samples/cries/gammamon.bin"
 
 	.align 2
 Cry_Croconaw::
@@ -1505,7 +1505,7 @@ Cry_Croconaw::
 	.align 2
 Cry_Feraligatr::
 	.incbin "sound/direct_sound_samples/cries/feraligatr.bin"
-.endif @ P_FAMILY_TOTODILE
+.endif @ P_FAMILY_GAMMAMON
 
 .if P_FAMILY_SENTRET == TRUE
 	.align 2

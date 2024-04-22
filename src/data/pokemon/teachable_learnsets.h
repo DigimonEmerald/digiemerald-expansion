@@ -8678,8 +8678,8 @@ static const u16 sGabumon_xHisuianTeachableLearnset[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FLORAMON
 
-#if P_FAMILY_TOTODILE
-static const u16 sTotodileTeachableLearnset[] = {
+#if P_FAMILY_GAMMAMON
+static const u16 sGammamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -8817,7 +8817,7 @@ static const u16 sFeraligatrTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TOTODILE
+#endif //P_FAMILY_GAMMAMON
 
 #if P_FAMILY_SENTRET
 static const u16 sSentretTeachableLearnset[] = {

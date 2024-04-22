@@ -4776,8 +4776,8 @@ static const struct LevelUpMove sGabumon_xHisuianLevelUpLearnset[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FLORAMON
 
-#if P_FAMILY_TOTODILE
-static const struct LevelUpMove sTotodileLevelUpLearnset[] = {
+#if P_FAMILY_GAMMAMON
+static const struct LevelUpMove sGammamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 6, MOVE_WATER_GUN),
@@ -4840,7 +4840,7 @@ static const struct LevelUpMove sFeraligatrLevelUpLearnset[] = {
     LEVEL_UP_MOVE(76, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_TOTODILE
+#endif //P_FAMILY_GAMMAMON
 
 #if P_FAMILY_SENTRET
 static const struct LevelUpMove sSentretLevelUpLearnset[] = {

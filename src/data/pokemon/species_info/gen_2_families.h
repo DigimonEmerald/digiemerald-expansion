@@ -403,8 +403,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FLORAMON
 
-#if P_FAMILY_TOTODILE
-    [SPECIES_TOTODILE] =
+#if P_FAMILY_GAMMAMON
+    [SPECIES_GAMMAMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 65,
@@ -423,14 +423,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Totodile"),
-        .cryId = CRY_TOTODILE,
-        .natDexNum = NATIONAL_DEX_TOTODILE,
+        .speciesName = _("Gammamon"),
+        .cryId = CRY_GAMMAMON,
+        .natDexNum = NATIONAL_DEX_GAMMAMON,
         .categoryName = _("Big Jaw"),
         .height = 6,
         .weight = 95,
         .description = COMPOUND_STRING(
-            "Despite its small body, Totodile's jaws\n"
+            "Despite its small body, Gammamon's jaws\n"
             "are very powerful. While it may think it is\n"
             "just playfully nipping, its bite has enough\n"
             "strength to cause serious injury."),
@@ -438,22 +438,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Totodile,
+        .frontPic = gMonFrontPic_Gammamon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Totodile,
+        .frontAnimFrames = sAnims_Gammamon,
         .frontAnimId = ANIM_H_JUMPS,
-        .backPic = gMonBackPic_Totodile,
+        .backPic = gMonBackPic_Gammamon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Totodile,
-        .shinyPalette = gMonShinyPalette_Totodile,
-        .iconSprite = gMonIcon_Totodile,
+        .palette = gMonPalette_Gammamon,
+        .shinyPalette = gMonShinyPalette_Gammamon,
+        .iconSprite = gMonIcon_Gammamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Totodile)
-        .levelUpLearnset = sTotodileLevelUpLearnset,
-        .teachableLearnset = sTotodileTeachableLearnset,
+        FOOTPRINT(Gammamon)
+        .levelUpLearnset = sGammamonLevelUpLearnset,
+        .teachableLearnset = sGammamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_CROCONAW}),
     },
 
@@ -571,7 +571,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sFeraligatrLevelUpLearnset,
         .teachableLearnset = sFeraligatrTeachableLearnset,
     },
-#endif //P_FAMILY_TOTODILE
+#endif //P_FAMILY_GAMMAMON
 
 #if P_FAMILY_SENTRET
     [SPECIES_SENTRET] =

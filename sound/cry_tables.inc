@@ -472,11 +472,11 @@ gCryTable::
 	cry Cry_Gabumon
 	cry Cry_Gabumon_x
 .endif @ P_FAMILY_FLORAMON
-.if P_FAMILY_TOTODILE == TRUE
-	cry Cry_Totodile
+.if P_FAMILY_GAMMAMON == TRUE
+	cry Cry_Gammamon
 	cry Cry_Croconaw
 	cry Cry_Feraligatr
-.endif @ P_FAMILY_TOTODILE
+.endif @ P_FAMILY_GAMMAMON
 .if P_FAMILY_SENTRET == TRUE
 	cry Cry_Sentret
 	cry Cry_Furret
@@ -2898,11 +2898,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Gabumon
 	cry_reverse Cry_Gabumon_x
 .endif @ P_FAMILY_FLORAMON
-.if P_FAMILY_TOTODILE == TRUE
-	cry_reverse Cry_Totodile
+.if P_FAMILY_GAMMAMON == TRUE
+	cry_reverse Cry_Gammamon
 	cry_reverse Cry_Croconaw
 	cry_reverse Cry_Feraligatr
-.endif @ P_FAMILY_TOTODILE
+.endif @ P_FAMILY_GAMMAMON
 .if P_FAMILY_SENTRET == TRUE
 	cry_reverse Cry_Sentret
 	cry_reverse Cry_Furret

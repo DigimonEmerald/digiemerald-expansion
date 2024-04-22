@@ -2669,14 +2669,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FLORAMON
 
-#if P_FAMILY_TOTODILE
-    const u32 gMonFrontPic_Totodile[] = INCBIN_U32("graphics/pokemon/totodile/anim_front.4bpp.lz");
-    const u32 gMonPalette_Totodile[] = INCBIN_U32("graphics/pokemon/totodile/normal.gbapal.lz");
-    const u32 gMonBackPic_Totodile[] = INCBIN_U32("graphics/pokemon/totodile/back.4bpp.lz");
-    const u32 gMonShinyPalette_Totodile[] = INCBIN_U32("graphics/pokemon/totodile/shiny.gbapal.lz");
-    const u8 gMonIcon_Totodile[] = INCBIN_U8("graphics/pokemon/totodile/icon.4bpp");
+#if P_FAMILY_GAMMAMON
+    const u32 gMonFrontPic_Gammamon[] = INCBIN_U32("graphics/pokemon/gammamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gammamon[] = INCBIN_U32("graphics/pokemon/gammamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Gammamon[] = INCBIN_U32("graphics/pokemon/gammamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gammamon[] = INCBIN_U32("graphics/pokemon/gammamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Gammamon[] = INCBIN_U8("graphics/pokemon/gammamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Totodile[] = INCBIN_U8("graphics/pokemon/totodile/footprint.1bpp");
+    const u8 gMonFootprint_Gammamon[] = INCBIN_U8("graphics/pokemon/gammamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Croconaw[] = INCBIN_U32("graphics/pokemon/croconaw/anim_front.4bpp.lz");
@@ -2696,7 +2696,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Feraligatr[] = INCBIN_U8("graphics/pokemon/feraligatr/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_TOTODILE
+#endif //P_FAMILY_GAMMAMON
 
 #if P_FAMILY_SENTRET
     const u32 gMonFrontPic_Sentret[] = INCBIN_U32("graphics/pokemon/sentret/anim_front.4bpp.lz");

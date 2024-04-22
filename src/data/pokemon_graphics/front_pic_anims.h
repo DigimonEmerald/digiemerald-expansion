@@ -2391,8 +2391,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Gabumon_xHisuian);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FLORAMON
 
-#if P_FAMILY_TOTODILE
-static const union AnimCmd sAnim_Totodile_1[] =
+#if P_FAMILY_GAMMAMON
+static const union AnimCmd sAnim_Gammamon_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 8),
@@ -2418,7 +2418,7 @@ static const union AnimCmd sAnim_Feraligatr_1[] =
     ANIMCMD_FRAME(0, 40),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_TOTODILE
+#endif //P_FAMILY_GAMMAMON
 
 #if P_FAMILY_SENTRET
 static const union AnimCmd sAnim_Sentret_1[] =
@@ -10755,11 +10755,11 @@ SINGLE_ANIMATION(Gabumon_x);
 SINGLE_ANIMATION(Gabumon_xHisuian);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FLORAMON
-#if P_FAMILY_TOTODILE
-SINGLE_ANIMATION(Totodile);
+#if P_FAMILY_GAMMAMON
+SINGLE_ANIMATION(Gammamon);
 SINGLE_ANIMATION(Croconaw);
 SINGLE_ANIMATION(Feraligatr);
-#endif //P_FAMILY_TOTODILE
+#endif //P_FAMILY_GAMMAMON
 #if P_FAMILY_SENTRET
 SINGLE_ANIMATION(Sentret);
 SINGLE_ANIMATION(Furret);

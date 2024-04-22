@@ -1342,8 +1342,8 @@ const u16 gEggMoves[] = {
         MOVE_FLAME_BURST),
 #endif //P_FAMILY_FLORAMON
 
-#if P_FAMILY_TOTODILE
-    egg_moves(TOTODILE,
+#if P_FAMILY_GAMMAMON
+    egg_moves(GAMMAMON,
         MOVE_CRUNCH,
         MOVE_THRASH,
         MOVE_HYDRO_PUMP,
@@ -1358,7 +1358,7 @@ const u16 gEggMoves[] = {
         MOVE_BLOCK,
         MOVE_WATER_PULSE,
         MOVE_FLATTER),
-#endif //P_FAMILY_TOTODILE
+#endif //P_FAMILY_GAMMAMON
 
 #if P_FAMILY_SENTRET
     egg_moves(SENTRET,
