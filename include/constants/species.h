@@ -182,7 +182,7 @@
 #define SPECIES_HERISSMON                                    178
 #define SPECIES_HYOKOMON                                  179
 #define SPECIES_IGNITEMON                                 180
-#define SPECIES_AMPHAROS                                181
+#define SPECIES_IMPMON                                181
 #define SPECIES_BELLOSSOM                               182
 #define SPECIES_MARILL                                  183
 #define SPECIES_AZUMARILL                               184
@@ -979,7 +979,7 @@
 #define SPECIES_DRACMON_MEGA                         918
 #define SPECIES_AGUMON_FAKE_EXPERT_MEGA_X                           919
 #define SPECIES_AGUMON_FAKE_EXPERT_MEGA_Y                           920
-#define SPECIES_AMPHAROS_MEGA                           921
+#define SPECIES_IMPMON_MEGA                           921
 #define SPECIES_STEELIX_MEGA                            922
 #define SPECIES_SCIZOR_MEGA                             923
 #define SPECIES_HERACROSS_MEGA                          924

@@ -592,10 +592,10 @@ static const u16 sGabumon_xFormSpeciesIdTable[] = {
 #endif //P_FAMILY_FLORAMON
 
 #if P_FAMILY_HYOKOMON
-static const u16 sAmpharosFormSpeciesIdTable[] = {
-    SPECIES_AMPHAROS,
+static const u16 sImpmonFormSpeciesIdTable[] = {
+    SPECIES_IMPMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_AMPHAROS_MEGA,
+    SPECIES_IMPMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };

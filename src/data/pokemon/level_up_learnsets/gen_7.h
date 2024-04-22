@@ -5321,7 +5321,7 @@ static const struct LevelUpMove sIgnitemonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sAmpharosLevelUpLearnset[] = {
+static const struct LevelUpMove sImpmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_THUNDER_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_ZAP_CANNON),

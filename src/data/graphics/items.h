@@ -859,8 +859,8 @@ const u32 gItemIconPalette_Agumon_fake_expertniteX[] = INCBIN_U32("graphics/item
 const u32 gItemIcon_Agumon_fake_expertniteY[] = INCBIN_U32("graphics/items/icons/agumon_fake_expertnite_y.4bpp.lz");
 const u32 gItemIconPalette_Agumon_fake_expertniteY[] = INCBIN_U32("graphics/items/icon_palettes/agumon_fake_expertnite_y.gbapal.lz");
 
-const u32 gItemIcon_Ampharosite[] = INCBIN_U32("graphics/items/icons/ampharosite.4bpp.lz");
-const u32 gItemIconPalette_Ampharosite[] = INCBIN_U32("graphics/items/icon_palettes/ampharosite.gbapal.lz");
+const u32 gItemIcon_Impmonite[] = INCBIN_U32("graphics/items/icons/impmonite.4bpp.lz");
+const u32 gItemIconPalette_Impmonite[] = INCBIN_U32("graphics/items/icon_palettes/impmonite.gbapal.lz");
 
 const u32 gItemIcon_Steelixite[] = INCBIN_U32("graphics/items/icons/steelixite.4bpp.lz");
 const u32 gItemIconPalette_Steelixite[] = INCBIN_U32("graphics/items/icon_palettes/steelixite.gbapal.lz");

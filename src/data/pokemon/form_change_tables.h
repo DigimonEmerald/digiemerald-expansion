@@ -229,9 +229,9 @@ static const struct FormChange sAgumon_fake_expertFormChangeTable[] = {
 #endif //P_FAMILY_AGUMON_FAKE_EXPERT
 
 #if P_FAMILY_HYOKOMON
-static const struct FormChange sAmpharosFormChangeTable[] = {
+static const struct FormChange sImpmonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_AMPHAROS_MEGA, ITEM_AMPHAROSITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_IMPMON_MEGA, ITEM_IMPMONITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };

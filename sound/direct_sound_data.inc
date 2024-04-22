@@ -1593,13 +1593,13 @@ Cry_Ignitemon::
 	.incbin "sound/direct_sound_samples/cries/ignitemon.bin"
 
 	.align 2
-Cry_Ampharos::
-	.incbin "sound/direct_sound_samples/cries/ampharos.bin"
+Cry_Impmon::
+	.incbin "sound/direct_sound_samples/cries/impmon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_AmpharosMega::
-	.incbin "sound/direct_sound_samples/cries/ampharos_mega.bin"
+Cry_ImpmonMega::
+	.incbin "sound/direct_sound_samples/cries/impmon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HYOKOMON
 

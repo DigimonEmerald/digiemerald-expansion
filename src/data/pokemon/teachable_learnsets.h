@@ -9453,7 +9453,7 @@ static const u16 sIgnitemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sAmpharosTeachableLearnset[] = {
+static const u16 sImpmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,

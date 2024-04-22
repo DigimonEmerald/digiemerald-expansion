@@ -10060,7 +10060,7 @@ static const struct TrainerMon sParty_Wattson4[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 46,
-    .species = SPECIES_AMPHAROS,
+    .species = SPECIES_IMPMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_THUNDER, MOVE_PROTECT, MOVE_THUNDER_WAVE, MOVE_LIGHT_SCREEN}
     },
@@ -10105,7 +10105,7 @@ static const struct TrainerMon sParty_Wattson5[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 51,
-    .species = SPECIES_AMPHAROS,
+    .species = SPECIES_IMPMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_THUNDER, MOVE_PROTECT, MOVE_THUNDER_WAVE, MOVE_LIGHT_SCREEN}
     },

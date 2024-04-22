@@ -511,9 +511,9 @@ gCryTable::
 .if P_FAMILY_HYOKOMON == TRUE
 	cry Cry_Hyokomon
 	cry Cry_Ignitemon
-	cry Cry_Ampharos
+	cry Cry_Impmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_AmpharosMega
+	cry Cry_ImpmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HYOKOMON
 .if P_FAMILY_MARILL == TRUE
@@ -2937,9 +2937,9 @@ gCryTable_Reverse::
 .if P_FAMILY_HYOKOMON == TRUE
 	cry_reverse Cry_Hyokomon
 	cry_reverse Cry_Ignitemon
-	cry_reverse Cry_Ampharos
+	cry_reverse Cry_Impmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_AmpharosMega
+	cry_reverse Cry_ImpmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HYOKOMON
 .if P_FAMILY_MARILL == TRUE

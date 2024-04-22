@@ -2608,7 +2608,7 @@ static const union AnimCmd sAnim_Ignitemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Ampharos_1[] =
+static const union AnimCmd sAnim_Impmon_1[] =
 {
     ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(1, 15),
@@ -2617,7 +2617,7 @@ static const union AnimCmd sAnim_Ampharos_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(AmpharosMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(ImpmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HYOKOMON
 
@@ -10794,9 +10794,9 @@ SINGLE_ANIMATION(Herissmon);
 #if P_FAMILY_HYOKOMON
 SINGLE_ANIMATION(Hyokomon);
 SINGLE_ANIMATION(Ignitemon);
-SINGLE_ANIMATION(Ampharos);
+SINGLE_ANIMATION(Impmon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(AmpharosMega);
+SINGLE_ANIMATION(ImpmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HYOKOMON
 #if P_FAMILY_MARILL

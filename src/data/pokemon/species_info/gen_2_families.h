@@ -1520,16 +1520,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Ignitemon)
         .levelUpLearnset = sIgnitemonLevelUpLearnset,
         .teachableLearnset = sIgnitemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_AMPHAROS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_IMPMON}),
     },
 
-#define AMPHAROS_DEFENSE (P_UPDATED_STATS >= GEN_6 ? 85 : 75)
+#define IMPMON_DEFENSE (P_UPDATED_STATS >= GEN_6 ? 85 : 75)
 
-    [SPECIES_AMPHAROS] =
+    [SPECIES_IMPMON] =
     {
         .baseHP        = 90,
         .baseAttack    = 75,
-        .baseDefense   = AMPHAROS_DEFENSE,
+        .baseDefense   = IMPMON_DEFENSE,
         .baseSpeed     = 55,
         .baseSpAttack  = 115,
         .baseSpDefense = 90,
@@ -1552,9 +1552,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
         .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_PLUS },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Ampharos"),
-        .cryId = CRY_AMPHAROS,
-        .natDexNum = NATIONAL_DEX_AMPHAROS,
+        .speciesName = _("Impmon"),
+        .cryId = CRY_IMPMON,
+        .natDexNum = NATIONAL_DEX_IMPMON,
         .categoryName = _("Light"),
         .height = 14,
         .weight = 615,
@@ -1567,33 +1567,33 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Ampharos,
+        .frontPic = gMonFrontPic_Impmon,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Ampharos,
+        .frontAnimFrames = sAnims_Impmon,
         .frontAnimId = ANIM_FLASH_YELLOW,
         .frontAnimDelay = 10,
-        .backPic = gMonBackPic_Ampharos,
+        .backPic = gMonBackPic_Impmon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
-        .palette = gMonPalette_Ampharos,
-        .shinyPalette = gMonShinyPalette_Ampharos,
-        .iconSprite = gMonIcon_Ampharos,
+        .palette = gMonPalette_Impmon,
+        .shinyPalette = gMonShinyPalette_Impmon,
+        .iconSprite = gMonIcon_Impmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Ampharos)
-        .levelUpLearnset = sAmpharosLevelUpLearnset,
-        .teachableLearnset = sAmpharosTeachableLearnset,
-        .formSpeciesIdTable = sAmpharosFormSpeciesIdTable,
-        .formChangeTable = sAmpharosFormChangeTable,
+        FOOTPRINT(Impmon)
+        .levelUpLearnset = sImpmonLevelUpLearnset,
+        .teachableLearnset = sImpmonTeachableLearnset,
+        .formSpeciesIdTable = sImpmonFormSpeciesIdTable,
+        .formChangeTable = sImpmonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_AMPHAROS_MEGA] =
+    [SPECIES_IMPMON_MEGA] =
     {
         .baseHP        = 90,
         .baseAttack    = 95,
-        .baseDefense   = AMPHAROS_DEFENSE + 20,
+        .baseDefense   = IMPMON_DEFENSE + 20,
         .baseSpeed     = 45,
         .baseSpAttack  = 165,
         .baseSpDefense = 110,
@@ -1608,40 +1608,40 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
         .abilities = { ABILITY_MOLD_BREAKER, ABILITY_MOLD_BREAKER, ABILITY_MOLD_BREAKER },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Ampharos"),
-        .cryId = CRY_AMPHAROS_MEGA,
-        .natDexNum = NATIONAL_DEX_AMPHAROS,
+        .speciesName = _("Impmon"),
+        .cryId = CRY_IMPMON_MEGA,
+        .natDexNum = NATIONAL_DEX_IMPMON,
         .categoryName = _("Light"),
         .height = 14,
         .weight = 615,
         .description = COMPOUND_STRING(
             "Massive amounts of energy intensely\n"
-            "stimulated Ampharos's cells, apparently\n"
+            "stimulated Impmon's cells, apparently\n"
             "awakening its long-sleeping dragon's\n"
             "blood."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_AmpharosMega,
+        .frontPic = gMonFrontPic_ImpmonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_AmpharosMega,
+        .frontAnimFrames = sAnims_ImpmonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_AmpharosMega,
+        .backPic = gMonBackPic_ImpmonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
-        .palette = gMonPalette_AmpharosMega,
-        .shinyPalette = gMonShinyPalette_AmpharosMega,
-        .iconSprite = gMonIcon_AmpharosMega,
+        .palette = gMonPalette_ImpmonMega,
+        .shinyPalette = gMonShinyPalette_ImpmonMega,
+        .iconSprite = gMonIcon_ImpmonMega,
         .iconPalIndex = 0,
-        FOOTPRINT(Ampharos)
+        FOOTPRINT(Impmon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sAmpharosLevelUpLearnset,
-        .teachableLearnset = sAmpharosTeachableLearnset,
-        .formSpeciesIdTable = sAmpharosFormSpeciesIdTable,
-        .formChangeTable = sAmpharosFormChangeTable,
+        .levelUpLearnset = sImpmonLevelUpLearnset,
+        .teachableLearnset = sImpmonTeachableLearnset,
+        .formSpeciesIdTable = sImpmonFormSpeciesIdTable,
+        .formChangeTable = sImpmonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HYOKOMON

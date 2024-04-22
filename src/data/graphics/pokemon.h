@@ -2876,21 +2876,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Ignitemon[] = INCBIN_U8("graphics/pokemon/ignitemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Ampharos[] = INCBIN_U32("graphics/pokemon/ampharos/anim_front.4bpp.lz");
-    const u32 gMonPalette_Ampharos[] = INCBIN_U32("graphics/pokemon/ampharos/normal.gbapal.lz");
-    const u32 gMonBackPic_Ampharos[] = INCBIN_U32("graphics/pokemon/ampharos/back.4bpp.lz");
-    const u32 gMonShinyPalette_Ampharos[] = INCBIN_U32("graphics/pokemon/ampharos/shiny.gbapal.lz");
-    const u8 gMonIcon_Ampharos[] = INCBIN_U8("graphics/pokemon/ampharos/icon.4bpp");
+    const u32 gMonFrontPic_Impmon[] = INCBIN_U32("graphics/pokemon/impmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Impmon[] = INCBIN_U32("graphics/pokemon/impmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Impmon[] = INCBIN_U32("graphics/pokemon/impmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Impmon[] = INCBIN_U32("graphics/pokemon/impmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Impmon[] = INCBIN_U8("graphics/pokemon/impmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Ampharos[] = INCBIN_U8("graphics/pokemon/ampharos/footprint.1bpp");
+    const u8 gMonFootprint_Impmon[] = INCBIN_U8("graphics/pokemon/impmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_AmpharosMega[] = INCBIN_U32("graphics/pokemon/ampharos/mega/front.4bpp.lz");
-    const u32 gMonPalette_AmpharosMega[] = INCBIN_U32("graphics/pokemon/ampharos/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_AmpharosMega[] = INCBIN_U32("graphics/pokemon/ampharos/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_AmpharosMega[] = INCBIN_U32("graphics/pokemon/ampharos/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_AmpharosMega[] = INCBIN_U8("graphics/pokemon/ampharos/mega/icon.4bpp");
+    const u32 gMonFrontPic_ImpmonMega[] = INCBIN_U32("graphics/pokemon/impmon/mega/front.4bpp.lz");
+    const u32 gMonPalette_ImpmonMega[] = INCBIN_U32("graphics/pokemon/impmon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_ImpmonMega[] = INCBIN_U32("graphics/pokemon/impmon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_ImpmonMega[] = INCBIN_U32("graphics/pokemon/impmon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_ImpmonMega[] = INCBIN_U8("graphics/pokemon/impmon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HYOKOMON
 
