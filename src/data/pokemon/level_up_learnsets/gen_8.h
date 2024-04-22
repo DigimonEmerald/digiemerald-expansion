@@ -2706,7 +2706,7 @@ static const struct LevelUpMove sTsunomonLevelUpLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const struct LevelUpMove sSteelixLevelUpLearnset[] = {
+static const struct LevelUpMove sKodekacmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CRUNCH),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_FANG),
     LEVEL_UP_MOVE( 1, MOVE_ICE_FANG),

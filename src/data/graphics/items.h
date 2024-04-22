@@ -862,8 +862,8 @@ const u32 gItemIconPalette_Agumon_fake_expertniteY[] = INCBIN_U32("graphics/item
 const u32 gItemIcon_Impmonite[] = INCBIN_U32("graphics/items/icons/impmonite.4bpp.lz");
 const u32 gItemIconPalette_Impmonite[] = INCBIN_U32("graphics/items/icon_palettes/impmonite.gbapal.lz");
 
-const u32 gItemIcon_Steelixite[] = INCBIN_U32("graphics/items/icons/steelixite.4bpp.lz");
-const u32 gItemIconPalette_Steelixite[] = INCBIN_U32("graphics/items/icon_palettes/steelixite.gbapal.lz");
+const u32 gItemIcon_Kodekacmonite[] = INCBIN_U32("graphics/items/icons/kodekacmonite.4bpp.lz");
+const u32 gItemIconPalette_Kodekacmonite[] = INCBIN_U32("graphics/items/icon_palettes/kodekacmonite.gbapal.lz");
 
 const u32 gItemIcon_Scizorite[] = INCBIN_U32("graphics/items/icons/scizorite.4bpp.lz");
 const u32 gItemIconPalette_Scizorite[] = INCBIN_U32("graphics/items/icon_palettes/scizorite.gbapal.lz");

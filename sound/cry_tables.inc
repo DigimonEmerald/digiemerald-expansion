@@ -236,9 +236,9 @@ gCryTable::
 .if P_FAMILY_TSUNOMON == TRUE
 	cry Cry_Tsunomon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry Cry_Steelix
+	cry Cry_Kodekacmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_SteelixMega
+	cry Cry_KodekacmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_TSUNOMON
@@ -2662,9 +2662,9 @@ gCryTable_Reverse::
 .if P_FAMILY_TSUNOMON == TRUE
 	cry_reverse Cry_Tsunomon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry_reverse Cry_Steelix
+	cry_reverse Cry_Kodekacmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_SteelixMega
+	cry_reverse Cry_KodekacmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_TSUNOMON

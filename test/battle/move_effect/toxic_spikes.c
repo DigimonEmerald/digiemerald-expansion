@@ -139,10 +139,10 @@ SINGLE_BATTLE_TEST("Toxic Spikes do not poison airborne Pokemon")
 SINGLE_BATTLE_TEST("Toxic Spikes do not affect Steel-types")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_STEELIX].types[0] == TYPE_STEEL);
+        ASSUME(gSpeciesInfo[SPECIES_KODEKACMON].types[0] == TYPE_STEEL);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_STEELIX);
+        OPPONENT(SPECIES_KODEKACMON);
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
         TURN { SWITCH(opponent, 1); }

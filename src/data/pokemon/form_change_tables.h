@@ -125,9 +125,9 @@ static const struct FormChange sTsumemonFormChangeTable[] = {
 
 #if P_FAMILY_TSUNOMON
 #if P_GEN_2_CROSS_EVOS
-static const struct FormChange sSteelixFormChangeTable[] = {
+static const struct FormChange sKodekacmonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_STEELIX_MEGA, ITEM_STEELIXITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_KODEKACMON_MEGA, ITEM_KODEKACMONITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };

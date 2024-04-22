@@ -209,7 +209,7 @@
 #define SPECIES_FORRETRESS                              205
 #define SPECIES_LUXMON                               206
 #define SPECIES_METABEE                                  207
-#define SPECIES_STEELIX                                 208
+#define SPECIES_KODEKACMON                                 208
 #define SPECIES_SNUBBULL                                209
 #define SPECIES_GRANBULL                                210
 #define SPECIES_QWILFISH                                211
@@ -980,7 +980,7 @@
 #define SPECIES_AGUMON_FAKE_EXPERT_MEGA_X                           919
 #define SPECIES_AGUMON_FAKE_EXPERT_MEGA_Y                           920
 #define SPECIES_IMPMON_MEGA                           921
-#define SPECIES_STEELIX_MEGA                            922
+#define SPECIES_KODEKACMON_MEGA                            922
 #define SPECIES_SCIZOR_MEGA                             923
 #define SPECIES_HERACROSS_MEGA                          924
 #define SPECIES_HOUNDOOM_MEGA                           925

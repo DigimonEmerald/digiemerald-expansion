@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Stealth Rock damage on switch in based on typing")
     PARAMETRIZE { species = SPECIES_LEAFMON; divisor = 4; } // Flying
     PARAMETRIZE { species = SPECIES_MOKUMON; divisor = 8; } // Normal dmg
     PARAMETRIZE { species = SPECIES_MOTIMON; divisor = 16; } // Ground not very effective
-    PARAMETRIZE { species = SPECIES_STEELIX; divisor = 32; } // Ground/Steel not very effective
+    PARAMETRIZE { species = SPECIES_KODEKACMON; divisor = 32; } // Ground/Steel not very effective
 
     GIVEN {
         PLAYER(SPECIES_LOPMONX);

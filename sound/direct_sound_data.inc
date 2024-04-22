@@ -972,13 +972,13 @@ Cry_Tsunomon::
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Steelix::
-	.incbin "sound/direct_sound_samples/cries/steelix.bin"
+Cry_Kodekacmon::
+	.incbin "sound/direct_sound_samples/cries/kodekacmon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_SteelixMega::
-	.incbin "sound/direct_sound_samples/cries/steelix_mega.bin"
+Cry_KodekacmonMega::
+	.incbin "sound/direct_sound_samples/cries/kodekacmon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_TSUNOMON

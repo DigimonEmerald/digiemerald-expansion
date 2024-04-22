@@ -9822,7 +9822,7 @@ static const struct TrainerMon sParty_Roxanne5[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 50,
-    .species = SPECIES_STEELIX,
+    .species = SPECIES_KODEKACMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_IRON_TAIL, MOVE_EXPLOSION, MOVE_ROAR, MOVE_ROCK_SLIDE}
     },

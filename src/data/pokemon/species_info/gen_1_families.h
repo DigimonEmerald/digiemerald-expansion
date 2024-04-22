@@ -9459,12 +9459,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Tsunomon)
         .levelUpLearnset = sTsunomonLevelUpLearnset,
         .teachableLearnset = sTsunomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_METAL_COAT, SPECIES_STEELIX},
-                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_STEELIX}),
+        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_METAL_COAT, SPECIES_KODEKACMON},
+                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_KODEKACMON}),
     },
 
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_STEELIX] =
+    [SPECIES_KODEKACMON] =
     {
         .baseHP        = 75,
         .baseAttack    = 85,
@@ -9484,14 +9484,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Steelix"),
-        .cryId = CRY_STEELIX,
-        .natDexNum = NATIONAL_DEX_STEELIX,
+        .speciesName = _("Kodekacmon"),
+        .cryId = CRY_KODEKACMON,
+        .natDexNum = NATIONAL_DEX_KODEKACMON,
         .categoryName = _("Iron Snake"),
         .height = 92,
         .weight = 4000,
         .description = COMPOUND_STRING(
-            "Steelix live even further underground\n"
+            "Kodekacmon live even further underground\n"
             "than Tsunomon. This Pokémon is known to dig\n"
             "toward the earth's core, reaching a depth\n"
             "of over six-tenths of a mile underground."),
@@ -9499,33 +9499,33 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 516,
         .trainerOffset = 13,
-        .frontPic = gMonFrontPic_Steelix,
-        .frontPicFemale = gMonFrontPic_SteelixF,
+        .frontPic = gMonFrontPic_Kodekacmon,
+        .frontPicFemale = gMonFrontPic_KodekacmonF,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Steelix,
+        .frontAnimFrames = sAnims_Kodekacmon,
         .frontAnimId = ANIM_V_SHAKE,
         .frontAnimDelay = 45,
-        .backPic = gMonBackPic_Steelix,
-        .backPicFemale = gMonBackPic_SteelixF,
+        .backPic = gMonBackPic_Kodekacmon,
+        .backPicFemale = gMonBackPic_KodekacmonF,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Steelix,
-        .shinyPalette = gMonShinyPalette_Steelix,
-        .iconSprite = gMonIcon_Steelix,
+        .palette = gMonPalette_Kodekacmon,
+        .shinyPalette = gMonShinyPalette_Kodekacmon,
+        .iconSprite = gMonIcon_Kodekacmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Steelix)
-        .levelUpLearnset = sSteelixLevelUpLearnset,
-        .teachableLearnset = sSteelixTeachableLearnset,
-        .formSpeciesIdTable = sSteelixFormSpeciesIdTable,
-        .formChangeTable = sSteelixFormChangeTable,
+        FOOTPRINT(Kodekacmon)
+        .levelUpLearnset = sKodekacmonLevelUpLearnset,
+        .teachableLearnset = sKodekacmonTeachableLearnset,
+        .formSpeciesIdTable = sKodekacmonFormSpeciesIdTable,
+        .formChangeTable = sKodekacmonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_STEELIX_MEGA] =
+    [SPECIES_KODEKACMON_MEGA] =
     {
         .baseHP        = 75,
         .baseAttack    = 125,
@@ -9545,9 +9545,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_SAND_FORCE, ABILITY_SAND_FORCE, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Steelix"),
-        .cryId = CRY_STEELIX_MEGA,
-        .natDexNum = NATIONAL_DEX_STEELIX,
+        .speciesName = _("Kodekacmon"),
+        .cryId = CRY_KODEKACMON_MEGA,
+        .natDexNum = NATIONAL_DEX_KODEKACMON,
         .categoryName = _("Iron Snake"),
         .height = 105,
         .weight = 7400,
@@ -9560,25 +9560,25 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 0,
         .trainerScale = 516,
         .trainerOffset = 13,
-        .frontPic = gMonFrontPic_SteelixMega,
+        .frontPic = gMonFrontPic_KodekacmonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SteelixMega,
+        .frontAnimFrames = sAnims_KodekacmonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_SteelixMega,
+        .backPic = gMonBackPic_KodekacmonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_SteelixMega,
-        .shinyPalette = gMonShinyPalette_SteelixMega,
-        .iconSprite = gMonIcon_SteelixMega,
+        .palette = gMonPalette_KodekacmonMega,
+        .shinyPalette = gMonShinyPalette_KodekacmonMega,
+        .iconSprite = gMonIcon_KodekacmonMega,
         .iconPalIndex = 0,
-        FOOTPRINT(Steelix)
+        FOOTPRINT(Kodekacmon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sSteelixLevelUpLearnset,
-        .teachableLearnset = sSteelixTeachableLearnset,
-        .formSpeciesIdTable = sSteelixFormSpeciesIdTable,
-        .formChangeTable = sSteelixFormChangeTable,
+        .levelUpLearnset = sKodekacmonLevelUpLearnset,
+        .teachableLearnset = sKodekacmonTeachableLearnset,
+        .formSpeciesIdTable = sKodekacmonFormSpeciesIdTable,
+        .formChangeTable = sKodekacmonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS

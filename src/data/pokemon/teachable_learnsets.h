@@ -4866,7 +4866,7 @@ static const u16 sTsunomonTeachableLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const u16 sSteelixTeachableLearnset[] = {
+static const u16 sKodekacmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CUT,
     MOVE_DIG,

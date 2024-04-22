@@ -1357,7 +1357,7 @@ static const union AnimCmd sAnim_Tsunomon_1[] =
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Steelix_1[] =
+static const union AnimCmd sAnim_Kodekacmon_1[] =
 {
     ANIMCMD_FRAME(0, 7),
     ANIMCMD_FRAME(1, 21),
@@ -1368,7 +1368,7 @@ static const union AnimCmd sAnim_Steelix_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(SteelixMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(KodekacmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_TSUNOMON
@@ -10478,9 +10478,9 @@ SINGLE_ANIMATION(TsumemonGigantamax);
 #if P_FAMILY_TSUNOMON
 SINGLE_ANIMATION(Tsunomon);
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Steelix);
+SINGLE_ANIMATION(Kodekacmon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(SteelixMega);
+SINGLE_ANIMATION(KodekacmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_TSUNOMON

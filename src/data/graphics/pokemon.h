@@ -1517,24 +1517,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Steelix[] = INCBIN_U32("graphics/pokemon/steelix/anim_front.4bpp.lz");
-    const u32 gMonPalette_Steelix[] = INCBIN_U32("graphics/pokemon/steelix/normal.gbapal.lz");
-    const u32 gMonBackPic_Steelix[] = INCBIN_U32("graphics/pokemon/steelix/back.4bpp.lz");
-    const u32 gMonShinyPalette_Steelix[] = INCBIN_U32("graphics/pokemon/steelix/shiny.gbapal.lz");
-    const u8 gMonIcon_Steelix[] = INCBIN_U8("graphics/pokemon/steelix/icon.4bpp");
+    const u32 gMonFrontPic_Kodekacmon[] = INCBIN_U32("graphics/pokemon/kodekacmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Kodekacmon[] = INCBIN_U32("graphics/pokemon/kodekacmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Kodekacmon[] = INCBIN_U32("graphics/pokemon/kodekacmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Kodekacmon[] = INCBIN_U32("graphics/pokemon/kodekacmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Kodekacmon[] = INCBIN_U8("graphics/pokemon/kodekacmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Steelix[] = INCBIN_U8("graphics/pokemon/steelix/footprint.1bpp");
+    const u8 gMonFootprint_Kodekacmon[] = INCBIN_U8("graphics/pokemon/kodekacmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_SteelixF[] = INCBIN_U32("graphics/pokemon/steelix/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_SteelixF[] = INCBIN_U32("graphics/pokemon/steelix/backf.4bpp.lz");
+    const u32 gMonFrontPic_KodekacmonF[] = INCBIN_U32("graphics/pokemon/kodekacmon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_KodekacmonF[] = INCBIN_U32("graphics/pokemon/kodekacmon/backf.4bpp.lz");
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_SteelixMega[] = INCBIN_U32("graphics/pokemon/steelix/mega/front.4bpp.lz");
-    const u32 gMonPalette_SteelixMega[] = INCBIN_U32("graphics/pokemon/steelix/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_SteelixMega[] = INCBIN_U32("graphics/pokemon/steelix/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_SteelixMega[] = INCBIN_U32("graphics/pokemon/steelix/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_SteelixMega[] = INCBIN_U8("graphics/pokemon/steelix/mega/icon.4bpp");
+    const u32 gMonFrontPic_KodekacmonMega[] = INCBIN_U32("graphics/pokemon/kodekacmon/mega/front.4bpp.lz");
+    const u32 gMonPalette_KodekacmonMega[] = INCBIN_U32("graphics/pokemon/kodekacmon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_KodekacmonMega[] = INCBIN_U32("graphics/pokemon/kodekacmon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_KodekacmonMega[] = INCBIN_U32("graphics/pokemon/kodekacmon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_KodekacmonMega[] = INCBIN_U8("graphics/pokemon/kodekacmon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_TSUNOMON

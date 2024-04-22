@@ -366,10 +366,10 @@ static const u16 sTsumemonFormSpeciesIdTable[] = {
 
 #if P_FAMILY_TSUNOMON
 #if P_GEN_2_CROSS_EVOS
-static const u16 sSteelixFormSpeciesIdTable[] = {
-    SPECIES_STEELIX,
+static const u16 sKodekacmonFormSpeciesIdTable[] = {
+    SPECIES_KODEKACMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_STEELIX_MEGA,
+    SPECIES_KODEKACMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };

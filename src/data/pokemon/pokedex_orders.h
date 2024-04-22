@@ -873,7 +873,7 @@ const u16 gPokedexOrder_Alphabetical[] =
     NATIONAL_DEX_STARLY,
     NATIONAL_DEX_BOKOMON,
     NATIONAL_DEX_BLKGUILMON,
-    NATIONAL_DEX_STEELIX,
+    NATIONAL_DEX_KODEKACMON,
     NATIONAL_DEX_STEENEE,
     NATIONAL_DEX_STONJOURNER,
     NATIONAL_DEX_STOUTLAND,
@@ -2867,7 +2867,7 @@ const u16 gPokedexOrder_Weight[] =
     // 877.4 lbs / 398.0 kg
     NATIONAL_DEX_WAILORD,
     // 881.8 lbs / 400.0 kg
-    NATIONAL_DEX_STEELIX,
+    NATIONAL_DEX_KODEKACMON,
     // 916.2 lbs / 415.6 kg
     //NATIONAL_DEX_AGUMON_ALOLAN,
     // 925.9 lbs / 420.0 kg
@@ -2904,7 +2904,7 @@ const u16 gPokedexOrder_Weight[] =
     // 1543.2 lbs / 700.0 kg
     NATIONAL_DEX_CETITAN,
     // 1631.4 lbs / 740.0 kg
-    //NATIONAL_DEX_STEELIX_MEGA,
+    //NATIONAL_DEX_KODEKACMON_MEGA,
     // 1653.5 lbs / 750.0 kg
     NATIONAL_DEX_GIRATINA,//_ALTERED,
     // 1730.6 lbs / 785.0 kg
@@ -4288,12 +4288,12 @@ const u16 gPokedexOrder_Height[] =
     // 28'10" / 8.8m
     NATIONAL_DEX_TSUNOMON,
     // 30'02" / 9.2m
-    NATIONAL_DEX_STEELIX,
+    NATIONAL_DEX_KODEKACMON,
     NATIONAL_DEX_CELESTEELA,
     // 32'02" / 9.8m
     //NATIONAL_DEX_KYOGRE_PRIMAL,
     // 34'05" / 10.5m
-    //NATIONAL_DEX_STEELIX_MEGA,
+    //NATIONAL_DEX_KODEKACMON_MEGA,
     // 35'05" / 10.8m
     //NATIONAL_DEX_RAYQUAZA_MEGA,
     // 35'09" / 10.9m

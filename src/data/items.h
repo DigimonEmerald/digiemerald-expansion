@@ -4887,14 +4887,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_STEELIXITE] =
+    [ITEM_KODEKACMONITE] =
     {
-        .name = _("Steelixite"),
+        .name = _("Kodekacmonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Steelix to Mega\n"
+            "Kodekacmon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
