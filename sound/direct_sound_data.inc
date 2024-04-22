@@ -1583,10 +1583,10 @@ Cry_Herissmon::
 	.incbin "sound/direct_sound_samples/cries/herissmon.bin"
 .endif @ P_FAMILY_HAWKMON
 
-.if P_FAMILY_MAREEP == TRUE
+.if P_FAMILY_HYOKOMON == TRUE
 	.align 2
-Cry_Mareep::
-	.incbin "sound/direct_sound_samples/cries/mareep.bin"
+Cry_Hyokomon::
+	.incbin "sound/direct_sound_samples/cries/hyokomon.bin"
 
 	.align 2
 Cry_Flaaffy::
@@ -1601,7 +1601,7 @@ Cry_Ampharos::
 Cry_AmpharosMega::
 	.incbin "sound/direct_sound_samples/cries/ampharos_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MAREEP
+.endif @ P_FAMILY_HYOKOMON
 
 .if P_FAMILY_MARILL == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE

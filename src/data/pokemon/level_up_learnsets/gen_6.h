@@ -5163,8 +5163,8 @@ static const struct LevelUpMove sHerissmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_HAWKMON
 
-#if P_FAMILY_MAREEP
-static const struct LevelUpMove sMareepLevelUpLearnset[] = {
+#if P_FAMILY_HYOKOMON
+static const struct LevelUpMove sHyokomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 4, MOVE_THUNDER_WAVE),
@@ -5231,7 +5231,7 @@ static const struct LevelUpMove sAmpharosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(65, MOVE_DRAGON_PULSE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_MAREEP
+#endif //P_FAMILY_HYOKOMON
 
 #if P_FAMILY_MARILL
 #if P_GEN_3_CROSS_EVOS

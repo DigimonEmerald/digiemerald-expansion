@@ -144,7 +144,7 @@
 #define P_FAMILY_GOTSUMON_X                P_GEN_2_POKEMON
 #define P_FAMILY_HAGURUMON                  P_GEN_2_POKEMON
 #define P_FAMILY_HAWKMON                    P_GEN_2_POKEMON
-#define P_FAMILY_MAREEP                  P_GEN_2_POKEMON
+#define P_FAMILY_HYOKOMON                  P_GEN_2_POKEMON
 #define P_FAMILY_MARILL                  P_GEN_2_POKEMON
 #define P_FAMILY_SUDOWOODO               P_GEN_2_POKEMON
 #define P_FAMILY_HOPPIP                  P_GEN_2_POKEMON

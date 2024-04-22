@@ -9379,8 +9379,8 @@ static const u16 sHerissmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_HAWKMON
 
-#if P_FAMILY_MAREEP
-static const u16 sMareepTeachableLearnset[] = {
+#if P_FAMILY_HYOKOMON
+static const u16 sHyokomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -9496,7 +9496,7 @@ static const u16 sAmpharosTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MAREEP
+#endif //P_FAMILY_HYOKOMON
 
 #if P_FAMILY_MARILL
 #if P_GEN_3_CROSS_EVOS

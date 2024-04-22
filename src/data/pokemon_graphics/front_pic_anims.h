@@ -2586,8 +2586,8 @@ static const union AnimCmd sAnim_Herissmon_1[] =
 };
 #endif //P_FAMILY_NATU
 
-#if P_FAMILY_MAREEP
-static const union AnimCmd sAnim_Mareep_1[] =
+#if P_FAMILY_HYOKOMON
+static const union AnimCmd sAnim_Hyokomon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -2619,7 +2619,7 @@ static const union AnimCmd sAnim_Ampharos_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(AmpharosMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MAREEP
+#endif //P_FAMILY_HYOKOMON
 
 #if P_FAMILY_MARILL
 #if P_GEN_3_CROSS_EVOS
@@ -10791,14 +10791,14 @@ SINGLE_ANIMATION(Togekiss);
 SINGLE_ANIMATION(Hawkmon);
 SINGLE_ANIMATION(Herissmon);
 #endif //P_FAMILY_HAWKMON
-#if P_FAMILY_MAREEP
-SINGLE_ANIMATION(Mareep);
+#if P_FAMILY_HYOKOMON
+SINGLE_ANIMATION(Hyokomon);
 SINGLE_ANIMATION(Flaaffy);
 SINGLE_ANIMATION(Ampharos);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(AmpharosMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MAREEP
+#endif //P_FAMILY_HYOKOMON
 #if P_FAMILY_MARILL
 #if P_GEN_3_CROSS_EVOS
 SINGLE_ANIMATION(Azurill);

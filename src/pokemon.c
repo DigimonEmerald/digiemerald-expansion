@@ -680,7 +680,7 @@ static const u16 sHMMoves[] =
 static const struct SpeciesItem sAlteringCaveWildMonHeldItems[] =
 {
     {SPECIES_NONE,      ITEM_NONE},
-    {SPECIES_MAREEP,    ITEM_GANLON_BERRY},
+    {SPECIES_HYOKOMON,    ITEM_GANLON_BERRY},
     {SPECIES_PINECO,    ITEM_APICOT_BERRY},
     {SPECIES_HOUNDOUR,  ITEM_BIG_MUSHROOM},
     {SPECIES_TEDDIURSA, ITEM_PETAYA_BERRY},

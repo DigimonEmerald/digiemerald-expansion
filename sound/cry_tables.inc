@@ -508,14 +508,14 @@ gCryTable::
 	cry Cry_Hawkmon
 	cry Cry_Herissmon
 .endif @ P_FAMILY_HAWKMON
-.if P_FAMILY_MAREEP == TRUE
-	cry Cry_Mareep
+.if P_FAMILY_HYOKOMON == TRUE
+	cry Cry_Hyokomon
 	cry Cry_Flaaffy
 	cry Cry_Ampharos
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_AmpharosMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MAREEP
+.endif @ P_FAMILY_HYOKOMON
 .if P_FAMILY_MARILL == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
 	cry Cry_Azurill
@@ -2934,14 +2934,14 @@ gCryTable_Reverse::
 	cry_reverse Cry_Hawkmon
 	cry_reverse Cry_Herissmon
 .endif @ P_FAMILY_HAWKMON
-.if P_FAMILY_MAREEP == TRUE
-	cry_reverse Cry_Mareep
+.if P_FAMILY_HYOKOMON == TRUE
+	cry_reverse Cry_Hyokomon
 	cry_reverse Cry_Flaaffy
 	cry_reverse Cry_Ampharos
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_AmpharosMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MAREEP
+.endif @ P_FAMILY_HYOKOMON
 .if P_FAMILY_MARILL == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
 	cry_reverse Cry_Azurill

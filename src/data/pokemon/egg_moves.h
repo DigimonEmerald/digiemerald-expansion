@@ -1478,8 +1478,8 @@ const u16 gEggMoves[] = {
         MOVE_ALLY_SWITCH),
 #endif //P_FAMILY_HAWKMON
 
-#if P_FAMILY_MAREEP
-    egg_moves(MAREEP,
+#if P_FAMILY_HYOKOMON
+    egg_moves(HYOKOMON,
         MOVE_TAKE_DOWN,
         MOVE_BODY_SLAM,
         MOVE_SCREECH,
@@ -1492,7 +1492,7 @@ const u16 gEggMoves[] = {
         MOVE_AGILITY,
         MOVE_EERIE_IMPULSE,
         MOVE_ELECTRIC_TERRAIN),
-#endif //P_FAMILY_MAREEP
+#endif //P_FAMILY_HYOKOMON
 
 #if P_FAMILY_MARILL
 #if P_GEN_3_CROSS_EVOS

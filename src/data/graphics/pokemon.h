@@ -2857,14 +2857,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_HerissmonF[] = INCBIN_U32("graphics/pokemon/herissmon/anim_frontf.4bpp.lz");
 #endif //P_FAMILY_HAWKMON
 
-#if P_FAMILY_MAREEP
-    const u32 gMonFrontPic_Mareep[] = INCBIN_U32("graphics/pokemon/mareep/anim_front.4bpp.lz");
-    const u32 gMonPalette_Mareep[] = INCBIN_U32("graphics/pokemon/mareep/normal.gbapal.lz");
-    const u32 gMonBackPic_Mareep[] = INCBIN_U32("graphics/pokemon/mareep/back.4bpp.lz");
-    const u32 gMonShinyPalette_Mareep[] = INCBIN_U32("graphics/pokemon/mareep/shiny.gbapal.lz");
-    const u8 gMonIcon_Mareep[] = INCBIN_U8("graphics/pokemon/mareep/icon.4bpp");
+#if P_FAMILY_HYOKOMON
+    const u32 gMonFrontPic_Hyokomon[] = INCBIN_U32("graphics/pokemon/hyokomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Hyokomon[] = INCBIN_U32("graphics/pokemon/hyokomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Hyokomon[] = INCBIN_U32("graphics/pokemon/hyokomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Hyokomon[] = INCBIN_U32("graphics/pokemon/hyokomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Hyokomon[] = INCBIN_U8("graphics/pokemon/hyokomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Mareep[] = INCBIN_U8("graphics/pokemon/mareep/footprint.1bpp");
+    const u8 gMonFootprint_Hyokomon[] = INCBIN_U8("graphics/pokemon/hyokomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Flaaffy[] = INCBIN_U32("graphics/pokemon/flaaffy/anim_front.4bpp.lz");
@@ -2892,7 +2892,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_AmpharosMega[] = INCBIN_U32("graphics/pokemon/ampharos/mega/shiny.gbapal.lz");
     const u8 gMonIcon_AmpharosMega[] = INCBIN_U8("graphics/pokemon/ampharos/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MAREEP
+#endif //P_FAMILY_HYOKOMON
 
 #if P_FAMILY_MARILL
 #if P_GEN_3_CROSS_EVOS

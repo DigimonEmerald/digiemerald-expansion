@@ -591,7 +591,7 @@ static const u16 sGabumon_xFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_FLORAMON
 
-#if P_FAMILY_MAREEP
+#if P_FAMILY_HYOKOMON
 static const u16 sAmpharosFormSpeciesIdTable[] = {
     SPECIES_AMPHAROS,
 #if P_MEGA_EVOLUTIONS
@@ -599,7 +599,7 @@ static const u16 sAmpharosFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_MAREEP
+#endif //P_FAMILY_HYOKOMON
 
 #if P_FAMILY_WOOPER
 static const u16 sWooperFormSpeciesIdTable[] = {

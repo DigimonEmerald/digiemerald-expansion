@@ -1415,8 +1415,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_HAWKMON
 
-#if P_FAMILY_MAREEP
-    [SPECIES_MAREEP] =
+#if P_FAMILY_HYOKOMON
+    [SPECIES_HYOKOMON] =
     {
         .baseHP        = 55,
         .baseAttack    = 40,
@@ -1435,9 +1435,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
         .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_PLUS },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Mareep"),
-        .cryId = CRY_MAREEP,
-        .natDexNum = NATIONAL_DEX_MAREEP,
+        .speciesName = _("Hyokomon"),
+        .cryId = CRY_HYOKOMON,
+        .natDexNum = NATIONAL_DEX_HYOKOMON,
         .categoryName = _("Wool"),
         .height = 6,
         .weight = 78,
@@ -1450,23 +1450,23 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Mareep,
+        .frontPic = gMonFrontPic_Hyokomon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Mareep,
+        .frontAnimFrames = sAnims_Hyokomon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .frontAnimDelay = 50,
-        .backPic = gMonBackPic_Mareep,
+        .backPic = gMonBackPic_Hyokomon,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 15,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Mareep,
-        .shinyPalette = gMonShinyPalette_Mareep,
-        .iconSprite = gMonIcon_Mareep,
+        .palette = gMonPalette_Hyokomon,
+        .shinyPalette = gMonShinyPalette_Hyokomon,
+        .iconSprite = gMonIcon_Hyokomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Mareep)
-        .levelUpLearnset = sMareepLevelUpLearnset,
-        .teachableLearnset = sMareepTeachableLearnset,
+        FOOTPRINT(Hyokomon)
+        .levelUpLearnset = sHyokomonLevelUpLearnset,
+        .teachableLearnset = sHyokomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_FLAAFFY}),
     },
 
@@ -1644,7 +1644,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .formChangeTable = sAmpharosFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MAREEP
+#endif //P_FAMILY_HYOKOMON
 
 #if P_FAMILY_MARILL
 #if P_GEN_3_CROSS_EVOS
