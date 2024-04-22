@@ -1724,8 +1724,8 @@ const u16 gEggMoves[] = {
         MOVE_STEALTH_ROCK),
 #endif //P_FAMILY_PINECO
 
-#if P_FAMILY_DUNSPARCE
-    egg_moves(DUNSPARCE,
+#if P_FAMILY_LUXMON
+    egg_moves(LUXMON,
         MOVE_BIDE,
         MOVE_ANCIENT_POWER,
         MOVE_BITE,
@@ -1739,7 +1739,7 @@ const u16 gEggMoves[] = {
         MOVE_SECRET_POWER,
         MOVE_SLEEP_TALK,
         MOVE_HEX),
-#endif //P_FAMILY_DUNSPARCE
+#endif //P_FAMILY_LUXMON
 
 #if P_FAMILY_GLIGAR
     egg_moves(GLIGAR,

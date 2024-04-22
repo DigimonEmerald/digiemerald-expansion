@@ -3325,8 +3325,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_PINECO
 
-#if P_FAMILY_DUNSPARCE
-    [SPECIES_DUNSPARCE] =
+#if P_FAMILY_LUXMON
+    [SPECIES_LUXMON] =
     {
         .baseHP        = 100,
         .baseAttack    = 70,
@@ -3351,9 +3351,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SERENE_GRACE, ABILITY_RUN_AWAY, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Dunsparce"),
-        .cryId = CRY_DUNSPARCE,
-        .natDexNum = NATIONAL_DEX_DUNSPARCE,
+        .speciesName = _("Luxmon"),
+        .cryId = CRY_LUXMON,
+        .natDexNum = NATIONAL_DEX_LUXMON,
         .categoryName = _("Land Snake"),
         .height = 15,
         .weight = 140,
@@ -3366,29 +3366,29 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Dunsparce,
+        .frontPic = gMonFrontPic_Luxmon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Dunsparce,
+        .frontAnimFrames = sAnims_Luxmon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .frontAnimDelay = 10,
-        .backPic = gMonBackPic_Dunsparce,
+        .backPic = gMonBackPic_Luxmon,
         .backPicSize = MON_COORDS_SIZE(56, 32),
         .backPicYOffset = 17,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Dunsparce,
-        .shinyPalette = gMonShinyPalette_Dunsparce,
-        .iconSprite = gMonIcon_Dunsparce,
+        .palette = gMonPalette_Luxmon,
+        .shinyPalette = gMonShinyPalette_Luxmon,
+        .iconSprite = gMonIcon_Luxmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Dunsparce)
-        .levelUpLearnset = sDunsparceLevelUpLearnset,
-        .teachableLearnset = sDunsparceTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_MOVE_TWO_SEGMENT, MOVE_HYPER_DRILL, SPECIES_DUDUNSPARCE_TWO_SEGMENT},
-                                {EVO_MOVE_THREE_SEGMENT, MOVE_HYPER_DRILL, SPECIES_DUDUNSPARCE_THREE_SEGMENT}),
+        FOOTPRINT(Luxmon)
+        .levelUpLearnset = sLuxmonLevelUpLearnset,
+        .teachableLearnset = sLuxmonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_MOVE_TWO_SEGMENT, MOVE_HYPER_DRILL, SPECIES_DULUXMON_TWO_SEGMENT},
+                                {EVO_MOVE_THREE_SEGMENT, MOVE_HYPER_DRILL, SPECIES_DULUXMON_THREE_SEGMENT}),
     },
 
 #if P_GEN_9_CROSS_EVOS
-    [SPECIES_DUDUNSPARCE_TWO_SEGMENT] =
+    [SPECIES_DULUXMON_TWO_SEGMENT] =
     {
         .baseHP        = 125,
         .baseAttack    = 100,
@@ -3408,8 +3408,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_SERENE_GRACE, ABILITY_RUN_AWAY, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Dudunsprce"),
-        .cryId = CRY_DUDUNSPARCE,
-        .natDexNum = NATIONAL_DEX_DUDUNSPARCE,
+        .cryId = CRY_DULUXMON,
+        .natDexNum = NATIONAL_DEX_DULUXMON,
         .categoryName = _("Land Snake"),
         .height = 36,
         .weight = 392,
@@ -3422,26 +3422,26 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_DudunsparceTwoSegment,
+        .frontPic = gMonFrontPic_DuluxmonTwoSegment,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Dudunsparce,
+        .frontAnimFrames = sAnims_Duluxmon,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_DudunsparceTwoSegment,
+        .backPic = gMonBackPic_DuluxmonTwoSegment,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 11,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_Dudunsparce,
-        .shinyPalette = gMonShinyPalette_Dudunsparce,
-        .iconSprite = gMonIcon_Dudunsparce,
+        .palette = gMonPalette_Duluxmon,
+        .shinyPalette = gMonShinyPalette_Duluxmon,
+        .iconSprite = gMonIcon_Duluxmon,
         .iconPalIndex = 0,
-        //FOOTPRINT(Dudunsparce),
-        .levelUpLearnset = sDudunsparceLevelUpLearnset,
-        .teachableLearnset = sDudunsparceTeachableLearnset,
-        .formSpeciesIdTable = sDudunsparceFormSpeciesIdTable,
+        //FOOTPRINT(Duluxmon),
+        .levelUpLearnset = sDuluxmonLevelUpLearnset,
+        .teachableLearnset = sDuluxmonTeachableLearnset,
+        .formSpeciesIdTable = sDuluxmonFormSpeciesIdTable,
     },
 
-    [SPECIES_DUDUNSPARCE_THREE_SEGMENT] =
+    [SPECIES_DULUXMON_THREE_SEGMENT] =
     {
         .baseHP        = 125,
         .baseAttack    = 100,
@@ -3461,40 +3461,40 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_SERENE_GRACE, ABILITY_RUN_AWAY, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Dudunsprce"),
-        .cryId = CRY_DUDUNSPARCE,
-        .natDexNum = NATIONAL_DEX_DUDUNSPARCE,
+        .cryId = CRY_DULUXMON,
+        .natDexNum = NATIONAL_DEX_DULUXMON,
         .categoryName = _("Land Snake"),
         .height = 45,
         .weight = 474,
         .description = COMPOUND_STRING(
             "A recent study uncovered that the\n"
             "number of segments a\n"
-            "Dudunsparce's body has is determined by the\n"
+            "Duluxmon's body has is determined by the\n"
             "Pokémon's genes."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_DudunsparceThreeSegment,
+        .frontPic = gMonFrontPic_DuluxmonThreeSegment,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Dudunsparce,
+        .frontAnimFrames = sAnims_Duluxmon,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_DudunsparceThreeSegment,
+        .backPic = gMonBackPic_DuluxmonThreeSegment,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 11,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_Dudunsparce,
-        .shinyPalette = gMonShinyPalette_Dudunsparce,
-        .iconSprite = gMonIcon_Dudunsparce,
+        .palette = gMonPalette_Duluxmon,
+        .shinyPalette = gMonShinyPalette_Duluxmon,
+        .iconSprite = gMonIcon_Duluxmon,
         .iconPalIndex = 0,
-        //FOOTPRINT(Dudunsparce),
-        .levelUpLearnset = sDudunsparceLevelUpLearnset,
-        .teachableLearnset = sDudunsparceTeachableLearnset,
-        .formSpeciesIdTable = sDudunsparceFormSpeciesIdTable,
+        //FOOTPRINT(Duluxmon),
+        .levelUpLearnset = sDuluxmonLevelUpLearnset,
+        .teachableLearnset = sDuluxmonTeachableLearnset,
+        .formSpeciesIdTable = sDuluxmonFormSpeciesIdTable,
     },
 #endif //P_GEN_9_CROSS_EVOS
-#endif //P_FAMILY_DUNSPARCE
+#endif //P_FAMILY_LUXMON
 
 #if P_FAMILY_GLIGAR
     [SPECIES_GLIGAR] =

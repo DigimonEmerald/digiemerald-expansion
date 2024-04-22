@@ -580,12 +580,12 @@ gCryTable::
 	cry Cry_Pineco
 	cry Cry_Forretress
 .endif @ P_FAMILY_PINECO
-.if P_FAMILY_DUNSPARCE == TRUE
-	cry Cry_Dunsparce
+.if P_FAMILY_LUXMON == TRUE
+	cry Cry_Luxmon
 .if P_GEN_9_CROSS_EVOS == TRUE
-	cry Cry_Dudunsparce
+	cry Cry_Duluxmon
 .endif @ P_GEN_9_CROSS_EVOS
-.endif @ P_FAMILY_DUNSPARCE
+.endif @ P_FAMILY_LUXMON
 .if P_FAMILY_GLIGAR == TRUE
 	cry Cry_Gligar
 .if P_GEN_4_CROSS_EVOS == TRUE
@@ -3006,12 +3006,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Pineco
 	cry_reverse Cry_Forretress
 .endif @ P_FAMILY_PINECO
-.if P_FAMILY_DUNSPARCE == TRUE
-	cry_reverse Cry_Dunsparce
+.if P_FAMILY_LUXMON == TRUE
+	cry_reverse Cry_Luxmon
 .if P_GEN_9_CROSS_EVOS == TRUE
-	cry_reverse Cry_Dudunsparce
+	cry_reverse Cry_Duluxmon
 .endif @ P_GEN_9_CROSS_EVOS
-.endif @ P_FAMILY_DUNSPARCE
+.endif @ P_FAMILY_LUXMON
 .if P_FAMILY_GLIGAR == TRUE
 	cry_reverse Cry_Gligar
 .if P_GEN_4_CROSS_EVOS == TRUE

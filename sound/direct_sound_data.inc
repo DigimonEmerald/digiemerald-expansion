@@ -1752,17 +1752,17 @@ Cry_Forretress::
 	.incbin "sound/direct_sound_samples/cries/forretress.bin"
 .endif @ P_FAMILY_PINECO
 
-.if P_FAMILY_DUNSPARCE == TRUE
+.if P_FAMILY_LUXMON == TRUE
 	.align 2
-Cry_Dunsparce::
-	.incbin "sound/direct_sound_samples/cries/dunsparce.bin"
+Cry_Luxmon::
+	.incbin "sound/direct_sound_samples/cries/luxmon.bin"
 
 .if P_GEN_9_CROSS_EVOS == TRUE
 	.align 2
-Cry_Dudunsparce::
-	.incbin "sound/direct_sound_samples/cries/dudunsparce.bin"
+Cry_Duluxmon::
+	.incbin "sound/direct_sound_samples/cries/duluxmon.bin"
 .endif @ P_GEN_9_CROSS_EVOS
-.endif @ P_FAMILY_DUNSPARCE
+.endif @ P_FAMILY_LUXMON
 
 .if P_FAMILY_GLIGAR == TRUE
 	.align 2

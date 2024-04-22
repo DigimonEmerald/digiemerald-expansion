@@ -10455,8 +10455,8 @@ static const u16 sForretressTeachableLearnset[] = {
 };
 #endif //P_FAMILY_PINECO
 
-#if P_FAMILY_DUNSPARCE
-static const u16 sDunsparceTeachableLearnset[] = {
+#if P_FAMILY_LUXMON
+static const u16 sLuxmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,
@@ -10503,7 +10503,7 @@ static const u16 sDunsparceTeachableLearnset[] = {
 };
 
 #if P_GEN_9_CROSS_EVOS
-static const u16 sDudunsparceTeachableLearnset[] = {
+static const u16 sDuluxmonTeachableLearnset[] = {
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,
     MOVE_DIG,
@@ -10537,7 +10537,7 @@ static const u16 sDudunsparceTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_9_CROSS_EVOS
-#endif //P_FAMILY_DUNSPARCE
+#endif //P_FAMILY_LUXMON
 
 #if P_FAMILY_GLIGAR
 static const u16 sGligarTeachableLearnset[] = {

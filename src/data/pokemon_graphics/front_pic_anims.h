@@ -2965,8 +2965,8 @@ static const union AnimCmd sAnim_Forretress_1[] =
 };
 #endif //P_FAMILY_PINECO
 
-#if P_FAMILY_DUNSPARCE
-static const union AnimCmd sAnim_Dunsparce_1[] =
+#if P_FAMILY_LUXMON
+static const union AnimCmd sAnim_Luxmon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 15),
@@ -2976,9 +2976,9 @@ static const union AnimCmd sAnim_Dunsparce_1[] =
 };
 
 #if P_GEN_9_CROSS_EVOS
-PLACEHOLDER_ANIM_SINGLE_FRAME(Dudunsparce);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Duluxmon);
 #endif //P_GEN_9_CROSS_EVOS
-#endif //P_FAMILY_DUNSPARCE
+#endif //P_FAMILY_LUXMON
 
 #if P_FAMILY_GLIGAR
 static const union AnimCmd sAnim_Gligar_1[] =
@@ -10872,12 +10872,12 @@ SINGLE_ANIMATION(Farigiraf);
 SINGLE_ANIMATION(Pineco);
 SINGLE_ANIMATION(Forretress);
 #endif //P_FAMILY_PINECO
-#if P_FAMILY_DUNSPARCE
-SINGLE_ANIMATION(Dunsparce);
+#if P_FAMILY_LUXMON
+SINGLE_ANIMATION(Luxmon);
 #if P_GEN_9_CROSS_EVOS
-SINGLE_ANIMATION(Dudunsparce);
+SINGLE_ANIMATION(Duluxmon);
 #endif //P_GEN_9_CROSS_EVOS
-#endif //P_FAMILY_DUNSPARCE
+#endif //P_FAMILY_LUXMON
 #if P_FAMILY_GLIGAR
 SINGLE_ANIMATION(Gligar);
 #if P_GEN_4_CROSS_EVOS

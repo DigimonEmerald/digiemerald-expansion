@@ -207,7 +207,7 @@
 #define SPECIES_LUCEMON                               203
 #define SPECIES_PINECO                                  204
 #define SPECIES_FORRETRESS                              205
-#define SPECIES_DUNSPARCE                               206
+#define SPECIES_LUXMON                               206
 #define SPECIES_GLIGAR                                  207
 #define SPECIES_STEELIX                                 208
 #define SPECIES_SNUBBULL                                209
@@ -1466,9 +1466,9 @@
 #define SPECIES_ANNIHILAPE                              1370
 #define SPECIES_CLODSIRE                                1371
 #define SPECIES_FARIGIRAF                               1372
-#define SPECIES_DUDUNSPARCE                             SPECIES_DUDUNSPARCE_TWO_SEGMENT
-#define SPECIES_DUDUNSPARCE_TWO_SEGMENT                 1373
-#define SPECIES_DUDUNSPARCE_THREE_SEGMENT               1374
+#define SPECIES_DULUXMON                             SPECIES_DULUXMON_TWO_SEGMENT
+#define SPECIES_DULUXMON_TWO_SEGMENT                 1373
+#define SPECIES_DULUXMON_THREE_SEGMENT               1374
 #define SPECIES_KINGAMBIT                               1375
 #define SPECIES_GREAT_TUSK                              1376
 #define SPECIES_SCREAM_TAIL                             1377

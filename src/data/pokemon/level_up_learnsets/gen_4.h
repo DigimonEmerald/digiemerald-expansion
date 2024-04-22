@@ -5356,8 +5356,8 @@ static const struct LevelUpMove sForretressLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_PINECO
 
-#if P_FAMILY_DUNSPARCE
-static const struct LevelUpMove sDunsparceLevelUpLearnset[] = {
+#if P_FAMILY_LUXMON
+static const struct LevelUpMove sLuxmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_RAGE),
     LEVEL_UP_MOVE( 5, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 9, MOVE_YAWN),
@@ -5376,7 +5376,7 @@ static const struct LevelUpMove sDunsparceLevelUpLearnset[] = {
 };
 
 #if P_GEN_9_CROSS_EVOS
-static const struct LevelUpMove sDudunsparceLevelUpLearnset[] = {
+static const struct LevelUpMove sDuluxmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_FLAIL),
     LEVEL_UP_MOVE( 4, MOVE_MUD_SLAP),
@@ -5397,7 +5397,7 @@ static const struct LevelUpMove sDudunsparceLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_9_CROSS_EVOS
-#endif //P_FAMILY_DUNSPARCE
+#endif //P_FAMILY_LUXMON
 
 #if P_FAMILY_GLIGAR
 static const struct LevelUpMove sGligarLevelUpLearnset[] = {

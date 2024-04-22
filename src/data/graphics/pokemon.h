@@ -3332,31 +3332,31 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_PINECO
 
-#if P_FAMILY_DUNSPARCE
-    const u32 gMonFrontPic_Dunsparce[] = INCBIN_U32("graphics/pokemon/dunsparce/anim_front.4bpp.lz");
-    const u32 gMonPalette_Dunsparce[] = INCBIN_U32("graphics/pokemon/dunsparce/normal.gbapal.lz");
-    const u32 gMonBackPic_Dunsparce[] = INCBIN_U32("graphics/pokemon/dunsparce/back.4bpp.lz");
-    const u32 gMonShinyPalette_Dunsparce[] = INCBIN_U32("graphics/pokemon/dunsparce/shiny.gbapal.lz");
-    const u8 gMonIcon_Dunsparce[] = INCBIN_U8("graphics/pokemon/dunsparce/icon.4bpp");
+#if P_FAMILY_LUXMON
+    const u32 gMonFrontPic_Luxmon[] = INCBIN_U32("graphics/pokemon/luxmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Luxmon[] = INCBIN_U32("graphics/pokemon/luxmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Luxmon[] = INCBIN_U32("graphics/pokemon/luxmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Luxmon[] = INCBIN_U32("graphics/pokemon/luxmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Luxmon[] = INCBIN_U8("graphics/pokemon/luxmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Dunsparce[] = INCBIN_U8("graphics/pokemon/dunsparce/footprint.1bpp");
+    const u8 gMonFootprint_Luxmon[] = INCBIN_U8("graphics/pokemon/luxmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_9_CROSS_EVOS
-    const u32 gMonPalette_Dudunsparce[] = INCBIN_U32("graphics/pokemon/dudunsparce/normal.gbapal.lz");
-    const u32 gMonShinyPalette_Dudunsparce[] = INCBIN_U32("graphics/pokemon/dudunsparce/shiny.gbapal.lz");
-    const u8 gMonIcon_Dudunsparce[] = INCBIN_U8("graphics/pokemon/dudunsparce/icon.4bpp");
+    const u32 gMonPalette_Duluxmon[] = INCBIN_U32("graphics/pokemon/duluxmon/normal.gbapal.lz");
+    const u32 gMonShinyPalette_Duluxmon[] = INCBIN_U32("graphics/pokemon/duluxmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Duluxmon[] = INCBIN_U8("graphics/pokemon/duluxmon/icon.4bpp");
 #if P_FOOTPRINTS
-    // const u8 gMonFootprint_Dudunsparce[] = INCBIN_U8("graphics/pokemon/dudunsparce/footprint.1bpp");
+    // const u8 gMonFootprint_Duluxmon[] = INCBIN_U8("graphics/pokemon/duluxmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_DudunsparceTwoSegment[] = INCBIN_U32("graphics/pokemon/dudunsparce/front.4bpp.lz");
-    const u32 gMonBackPic_DudunsparceTwoSegment[] = INCBIN_U32("graphics/pokemon/dudunsparce/back.4bpp.lz");
+    const u32 gMonFrontPic_DuluxmonTwoSegment[] = INCBIN_U32("graphics/pokemon/duluxmon/front.4bpp.lz");
+    const u32 gMonBackPic_DuluxmonTwoSegment[] = INCBIN_U32("graphics/pokemon/duluxmon/back.4bpp.lz");
 
-    const u32 gMonFrontPic_DudunsparceThreeSegment[] = INCBIN_U32("graphics/pokemon/dudunsparce/three_segment/front.4bpp.lz");
-    const u32 gMonBackPic_DudunsparceThreeSegment[] = INCBIN_U32("graphics/pokemon/dudunsparce/three_segment/back.4bpp.lz");
+    const u32 gMonFrontPic_DuluxmonThreeSegment[] = INCBIN_U32("graphics/pokemon/duluxmon/three_segment/front.4bpp.lz");
+    const u32 gMonBackPic_DuluxmonThreeSegment[] = INCBIN_U32("graphics/pokemon/duluxmon/three_segment/back.4bpp.lz");
 #endif //P_GEN_9_CROSS_EVOS
-#endif //P_FAMILY_DUNSPARCE
+#endif //P_FAMILY_LUXMON
 
 #if P_FAMILY_GLIGAR
     const u32 gMonFrontPic_Gligar[] = INCBIN_U32("graphics/pokemon/gligar/anim_front.4bpp.lz");
