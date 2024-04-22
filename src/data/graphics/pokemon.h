@@ -1015,17 +1015,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Politoed[] = INCBIN_U32("graphics/pokemon/politoed/anim_front.4bpp.lz");
-    const u32 gMonPalette_Politoed[] = INCBIN_U32("graphics/pokemon/politoed/normal.gbapal.lz");
-    const u32 gMonBackPic_Politoed[] = INCBIN_U32("graphics/pokemon/politoed/back.4bpp.lz");
-    const u32 gMonShinyPalette_Politoed[] = INCBIN_U32("graphics/pokemon/politoed/shiny.gbapal.lz");
-    const u8 gMonIcon_Politoed[] = INCBIN_U8("graphics/pokemon/politoed/icon.4bpp");
+    const u32 gMonFrontPic_Kamemon[] = INCBIN_U32("graphics/pokemon/kamemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Kamemon[] = INCBIN_U32("graphics/pokemon/kamemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Kamemon[] = INCBIN_U32("graphics/pokemon/kamemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Kamemon[] = INCBIN_U32("graphics/pokemon/kamemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Kamemon[] = INCBIN_U8("graphics/pokemon/kamemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Politoed[] = INCBIN_U8("graphics/pokemon/politoed/footprint.1bpp");
+    const u8 gMonFootprint_Kamemon[] = INCBIN_U8("graphics/pokemon/kamemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_PolitoedF[] = INCBIN_U32("graphics/pokemon/politoed/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_PolitoedF[] = INCBIN_U32("graphics/pokemon/politoed/backf.4bpp.lz");
+    const u32 gMonFrontPic_KamemonF[] = INCBIN_U32("graphics/pokemon/kamemon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_KamemonF[] = INCBIN_U32("graphics/pokemon/kamemon/backf.4bpp.lz");
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_GUMMYMON
 

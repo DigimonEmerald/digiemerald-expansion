@@ -6316,8 +6316,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sGurimonLevelUpLearnset,
         .teachableLearnset = sGurimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_HIYARIMON},
-                                {EVO_TRADE_ITEM, ITEM_KINGS_ROCK, SPECIES_POLITOED},
-                                {EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_POLITOED}),
+                                {EVO_TRADE_ITEM, ITEM_KINGS_ROCK, SPECIES_KAMEMON},
+                                {EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_KAMEMON}),
     },
 
     [SPECIES_HIYARIMON] =
@@ -6383,7 +6383,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_POLITOED] =
+    [SPECIES_KAMEMON] =
     {
         .baseHP        = 90,
         .baseAttack    = 75,
@@ -6410,9 +6410,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_WATER_ABSORB, ABILITY_DAMP, ABILITY_DRIZZLE },
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
-        .speciesName = _("Politoed"),
-        .cryId = CRY_POLITOED,
-        .natDexNum = NATIONAL_DEX_POLITOED,
+        .speciesName = _("Kamemon"),
+        .cryId = CRY_KAMEMON,
+        .natDexNum = NATIONAL_DEX_KAMEMON,
         .categoryName = _("Frog"),
         .height = 11,
         .weight = 339,
@@ -6425,27 +6425,27 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 6,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Politoed,
-        .frontPicFemale = gMonFrontPic_PolitoedF,
+        .frontPic = gMonFrontPic_Kamemon,
+        .frontPicFemale = gMonFrontPic_KamemonF,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Politoed,
+        .frontAnimFrames = sAnims_Kamemon,
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
         .frontAnimDelay = 40,
-        .backPic = gMonBackPic_Politoed,
-        .backPicFemale = gMonBackPic_PolitoedF,
+        .backPic = gMonBackPic_Kamemon,
+        .backPicFemale = gMonBackPic_KamemonF,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Politoed,
-        .shinyPalette = gMonShinyPalette_Politoed,
-        .iconSprite = gMonIcon_Politoed,
+        .palette = gMonPalette_Kamemon,
+        .shinyPalette = gMonShinyPalette_Kamemon,
+        .iconSprite = gMonIcon_Kamemon,
         .iconPalIndex = 1,
-        FOOTPRINT(Politoed)
-        .levelUpLearnset = sPolitoedLevelUpLearnset,
-        .teachableLearnset = sPolitoedTeachableLearnset,
+        FOOTPRINT(Kamemon)
+        .levelUpLearnset = sKamemonLevelUpLearnset,
+        .teachableLearnset = sKamemonTeachableLearnset,
     },
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_GUMMYMON

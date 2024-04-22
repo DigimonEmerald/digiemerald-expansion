@@ -3089,7 +3089,7 @@ static const u16 sHiyarimonTeachableLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const u16 sPolitoedTeachableLearnset[] = {
+static const u16 sKamemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,

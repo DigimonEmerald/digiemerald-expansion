@@ -1452,7 +1452,7 @@ static const struct LevelUpMove sHiyarimonLevelUpLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const struct LevelUpMove sPolitoedLevelUpLearnset[] = {
+static const struct LevelUpMove sKamemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BUBBLE_BEAM),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_SLAP),
     LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),

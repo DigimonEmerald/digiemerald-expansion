@@ -149,7 +149,7 @@ gCryTable::
 	cry Cry_Gurimon
 	cry Cry_Hiyarimon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry Cry_Politoed
+	cry Cry_Kamemon
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_GUMMYMON
 .if P_FAMILY_HOPMON == TRUE
@@ -2575,7 +2575,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Gurimon
 	cry_reverse Cry_Hiyarimon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry_reverse Cry_Politoed
+	cry_reverse Cry_Kamemon
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_GUMMYMON
 .if P_FAMILY_HOPMON == TRUE

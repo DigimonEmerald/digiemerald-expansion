@@ -4494,7 +4494,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [4] =
                                         {
-                                            .species = SPECIES_POLITOED,
+                                            .species = SPECIES_KAMEMON,
                                             .heldItem = ITEM_BRIGHT_POWDER,
                                             .moves = {MOVE_HYDRO_PUMP, MOVE_BLIZZARD, MOVE_MIND_READER, MOVE_PERISH_SONG},
                                             .hpEV = 252,
@@ -4509,7 +4509,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 1,
                                             .personality = 0x14,
-                                            .nickname = _("POLITOED"),
+                                            .nickname = _("KAMEMON"),
                                             .friendship = 0,
                                         },
                                     [5] =

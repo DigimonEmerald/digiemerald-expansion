@@ -924,7 +924,7 @@ static const union AnimCmd sAnim_Hiyarimon_1[] =
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Politoed_1[] =
+static const union AnimCmd sAnim_Kamemon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -10367,7 +10367,7 @@ SINGLE_ANIMATION(Gummymon);
 SINGLE_ANIMATION(Gurimon);
 SINGLE_ANIMATION(Hiyarimon);
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Politoed);
+SINGLE_ANIMATION(Kamemon);
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_GUMMYMON
 #if P_FAMILY_HOPMON

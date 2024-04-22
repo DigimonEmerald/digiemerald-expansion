@@ -762,8 +762,8 @@ Cry_Hiyarimon::
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Politoed::
-	.incbin "sound/direct_sound_samples/cries/politoed.bin"
+Cry_Kamemon::
+	.incbin "sound/direct_sound_samples/cries/kamemon.bin"
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_GUMMYMON
 
