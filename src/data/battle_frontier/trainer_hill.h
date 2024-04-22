@@ -380,7 +380,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                 {
                     [0] =
                     {
-                        .species = SPECIES_MISDREAVUS,
+                        .species = SPECIES_LOOGAMON,
                         .heldItem = ITEM_BRIGHT_POWDER,
                         .moves = {MOVE_SHADOW_BALL, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_CONFUSE_RAY},
                         .attackEV = 155,
@@ -395,7 +395,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 24,
                         .abilityNum = 0,
                         .personality = 0x0,
-                        .nickname = _("MISDREAVUS"),
+                        .nickname = _("LOOGAMON"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                     [1] =
@@ -4785,7 +4785,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [5] =
                                         {
-                                            .species = SPECIES_MISDREAVUS,
+                                            .species = SPECIES_LOOGAMON,
                                             .heldItem = ITEM_FOCUS_BAND,
                                             .moves = {MOVE_MEAN_LOOK, MOVE_CONFUSE_RAY, MOVE_PERISH_SONG, MOVE_SHADOW_BALL},
                                             .hpEV = 180,
@@ -4800,7 +4800,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x85,
-                                            .nickname = _("MISDREAVUS"),
+                                            .nickname = _("LOOGAMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                 },

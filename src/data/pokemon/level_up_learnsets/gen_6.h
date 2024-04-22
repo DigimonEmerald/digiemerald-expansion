@@ -5662,8 +5662,8 @@ static const struct LevelUpMove sHonchkrowLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_LALAMON
 
-#if P_FAMILY_MISDREAVUS
-static const struct LevelUpMove sMisdreavusLevelUpLearnset[] = {
+#if P_FAMILY_LOOGAMON
+static const struct LevelUpMove sLoogamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_PSYWAVE),
     LEVEL_UP_MOVE( 5, MOVE_SPITE),
@@ -5695,7 +5695,7 @@ static const struct LevelUpMove sMismagiusLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MISDREAVUS
+#endif //P_FAMILY_LOOGAMON
 
 #if P_FAMILY_UNOWN
 static const struct LevelUpMove sUnownLevelUpLearnset[] = {

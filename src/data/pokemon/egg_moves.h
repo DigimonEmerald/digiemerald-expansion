@@ -1673,8 +1673,8 @@ const u16 gEggMoves[] = {
         MOVE_PUNISHMENT),
 #endif //P_FAMILY_LALAMON
 
-#if P_FAMILY_MISDREAVUS
-    egg_moves(MISDREAVUS,
+#if P_FAMILY_LOOGAMON
+    egg_moves(LOOGAMON,
         MOVE_SCREECH,
         MOVE_DESTINY_BOND,
         MOVE_IMPRISON,
@@ -1688,7 +1688,7 @@ const u16 gEggMoves[] = {
         MOVE_SKILL_SWAP,
         MOVE_WONDER_ROOM,
         MOVE_ME_FIRST),
-#endif //P_FAMILY_MISDREAVUS
+#endif //P_FAMILY_LOOGAMON
 
 #if P_FAMILY_GIRAFARIG
     egg_moves(GIRAFARIG,

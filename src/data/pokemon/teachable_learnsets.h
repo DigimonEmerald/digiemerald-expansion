@@ -10214,8 +10214,8 @@ static const u16 sHonchkrowTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_LALAMON
 
-#if P_FAMILY_MISDREAVUS
-static const u16 sMisdreavusTeachableLearnset[] = {
+#if P_FAMILY_LOOGAMON
+static const u16 sLoogamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
@@ -10288,7 +10288,7 @@ static const u16 sMismagiusTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MISDREAVUS
+#endif //P_FAMILY_LOOGAMON
 
 #if P_FAMILY_UNOWN
 static const u16 sUnownTeachableLearnset[] = {

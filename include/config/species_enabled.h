@@ -153,7 +153,7 @@
 #define P_FAMILY_KOTEMON                   P_GEN_2_POKEMON
 #define P_FAMILY_KUDAMON                  P_GEN_2_POKEMON
 #define P_FAMILY_LALAMON                 P_GEN_2_POKEMON
-#define P_FAMILY_MISDREAVUS              P_GEN_2_POKEMON
+#define P_FAMILY_LOOGAMON              P_GEN_2_POKEMON
 #define P_FAMILY_UNOWN                   P_GEN_2_POKEMON
 #define P_FAMILY_WOBBUFFET               P_GEN_2_POKEMON
 #define P_FAMILY_GIRAFARIG               P_GEN_2_POKEMON

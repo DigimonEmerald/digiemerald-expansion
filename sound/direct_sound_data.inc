@@ -1702,15 +1702,15 @@ Cry_Honchkrow::
 	.incbin "sound/direct_sound_samples/cries/honchkrow.bin"
 .endif @ P_FAMILY_LALAMON
 
-.if P_FAMILY_MISDREAVUS == TRUE
+.if P_FAMILY_LOOGAMON == TRUE
 	.align 2
-Cry_Misdreavus::
-	.incbin "sound/direct_sound_samples/cries/misdreavus.bin"
+Cry_Loogamon::
+	.incbin "sound/direct_sound_samples/cries/loogamon.bin"
 
 	.align 2
 Cry_Mismagius::
 	.incbin "sound/direct_sound_samples/cries/mismagius.bin"
-.endif @ P_FAMILY_MISDREAVUS
+.endif @ P_FAMILY_LOOGAMON
 
 .if P_FAMILY_UNOWN == TRUE
 	.align 2

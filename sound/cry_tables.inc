@@ -557,10 +557,10 @@ gCryTable::
 	cry Cry_Lalamon
 	cry Cry_Honchkrow
 .endif @ P_FAMILY_LALAMON
-.if P_FAMILY_MISDREAVUS == TRUE
-	cry Cry_Misdreavus
+.if P_FAMILY_LOOGAMON == TRUE
+	cry Cry_Loogamon
 	cry Cry_Mismagius
-.endif @ P_FAMILY_MISDREAVUS
+.endif @ P_FAMILY_LOOGAMON
 .if P_FAMILY_UNOWN == TRUE
 	cry Cry_Unown
 .endif @ P_FAMILY_UNOWN
@@ -2983,10 +2983,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Lalamon
 	cry_reverse Cry_Honchkrow
 .endif @ P_FAMILY_LALAMON
-.if P_FAMILY_MISDREAVUS == TRUE
-	cry_reverse Cry_Misdreavus
+.if P_FAMILY_LOOGAMON == TRUE
+	cry_reverse Cry_Loogamon
 	cry_reverse Cry_Mismagius
-.endif @ P_FAMILY_MISDREAVUS
+.endif @ P_FAMILY_LOOGAMON
 .if P_FAMILY_UNOWN == TRUE
 	cry_reverse Cry_Unown
 .endif @ P_FAMILY_UNOWN

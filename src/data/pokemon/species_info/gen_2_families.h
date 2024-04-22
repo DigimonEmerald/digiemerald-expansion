@@ -2788,8 +2788,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_LALAMON
 
-#if P_FAMILY_MISDREAVUS
-    [SPECIES_MISDREAVUS] =
+#if P_FAMILY_LOOGAMON
+    [SPECIES_LOOGAMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 60,
@@ -2809,14 +2809,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Misdreavus"),
-        .cryId = CRY_MISDREAVUS,
-        .natDexNum = NATIONAL_DEX_MISDREAVUS,
+        .speciesName = _("Loogamon"),
+        .cryId = CRY_LOOGAMON,
+        .natDexNum = NATIONAL_DEX_LOOGAMON,
         .categoryName = _("Screech"),
         .height = 7,
         .weight = 10,
         .description = COMPOUND_STRING(
-            "A Misdreavus frightens people with a\n"
+            "A Loogamon frightens people with a\n"
             "creepy, sobbing cry. It apparently uses\n"
             "its red spheres to absorb the fear of foes\n"
             "as its nutrition."),
@@ -2824,23 +2824,23 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = -8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Misdreavus,
+        .frontPic = gMonFrontPic_Loogamon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Misdreavus,
+        .frontAnimFrames = sAnims_Loogamon,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 12,
-        .backPic = gMonBackPic_Misdreavus,
+        .backPic = gMonBackPic_Loogamon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Misdreavus,
-        .shinyPalette = gMonShinyPalette_Misdreavus,
-        .iconSprite = gMonIcon_Misdreavus,
+        .palette = gMonPalette_Loogamon,
+        .shinyPalette = gMonShinyPalette_Loogamon,
+        .iconSprite = gMonIcon_Loogamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Misdreavus)
-        .levelUpLearnset = sMisdreavusLevelUpLearnset,
-        .teachableLearnset = sMisdreavusTeachableLearnset,
+        FOOTPRINT(Loogamon)
+        .levelUpLearnset = sLoogamonLevelUpLearnset,
+        .teachableLearnset = sLoogamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_MISMAGIUS}),
     },
 
@@ -2899,7 +2899,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sMismagiusTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MISDREAVUS
+#endif //P_FAMILY_LOOGAMON
 
 #if P_FAMILY_UNOWN
 #define UNOWN_MISC_INFO(letter, _noFlip, frontWidth, frontHeight, backWidth, backHeight, backYOffset)   \

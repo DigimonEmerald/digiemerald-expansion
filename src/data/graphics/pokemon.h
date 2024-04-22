@@ -3117,14 +3117,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_LALAMON
 
-#if P_FAMILY_MISDREAVUS
-    const u32 gMonFrontPic_Misdreavus[] = INCBIN_U32("graphics/pokemon/misdreavus/anim_front.4bpp.lz");
-    const u32 gMonPalette_Misdreavus[] = INCBIN_U32("graphics/pokemon/misdreavus/normal.gbapal.lz");
-    const u32 gMonBackPic_Misdreavus[] = INCBIN_U32("graphics/pokemon/misdreavus/back.4bpp.lz");
-    const u32 gMonShinyPalette_Misdreavus[] = INCBIN_U32("graphics/pokemon/misdreavus/shiny.gbapal.lz");
-    const u8 gMonIcon_Misdreavus[] = INCBIN_U8("graphics/pokemon/misdreavus/icon.4bpp");
+#if P_FAMILY_LOOGAMON
+    const u32 gMonFrontPic_Loogamon[] = INCBIN_U32("graphics/pokemon/loogamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Loogamon[] = INCBIN_U32("graphics/pokemon/loogamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Loogamon[] = INCBIN_U32("graphics/pokemon/loogamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Loogamon[] = INCBIN_U32("graphics/pokemon/loogamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Loogamon[] = INCBIN_U8("graphics/pokemon/loogamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Misdreavus[] = INCBIN_U8("graphics/pokemon/misdreavus/footprint.1bpp");
+    const u8 gMonFootprint_Loogamon[] = INCBIN_U8("graphics/pokemon/loogamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_4_CROSS_EVOS
@@ -3137,7 +3137,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Mismagius[] = INCBIN_U8("graphics/pokemon/mismagius/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MISDREAVUS
+#endif //P_FAMILY_LOOGAMON
 
 #if P_FAMILY_UNOWN
     const u32 gMonPalette_Unown[] = INCBIN_U32("graphics/pokemon/unown/normal.gbapal.lz");
