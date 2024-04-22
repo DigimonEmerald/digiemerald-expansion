@@ -1467,10 +1467,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Hyokomon)
         .levelUpLearnset = sHyokomonLevelUpLearnset,
         .teachableLearnset = sHyokomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_FLAAFFY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_IGNITEMON}),
     },
 
-    [SPECIES_FLAAFFY] =
+    [SPECIES_IGNITEMON] =
     {
         .baseHP        = 70,
         .baseAttack    = 55,
@@ -1489,9 +1489,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
         .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_PLUS },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Flaaffy"),
-        .cryId = CRY_FLAAFFY,
-        .natDexNum = NATIONAL_DEX_FLAAFFY,
+        .speciesName = _("Ignitemon"),
+        .cryId = CRY_IGNITEMON,
+        .natDexNum = NATIONAL_DEX_IGNITEMON,
         .categoryName = _("Wool"),
         .height = 8,
         .weight = 133,
@@ -1504,22 +1504,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Flaaffy,
+        .frontPic = gMonFrontPic_Ignitemon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Flaaffy,
+        .frontAnimFrames = sAnims_Ignitemon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Flaaffy,
+        .backPic = gMonBackPic_Ignitemon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Flaaffy,
-        .shinyPalette = gMonShinyPalette_Flaaffy,
-        .iconSprite = gMonIcon_Flaaffy,
+        .palette = gMonPalette_Ignitemon,
+        .shinyPalette = gMonShinyPalette_Ignitemon,
+        .iconSprite = gMonIcon_Ignitemon,
         .iconPalIndex = 0,
-        FOOTPRINT(Flaaffy)
-        .levelUpLearnset = sFlaaffyLevelUpLearnset,
-        .teachableLearnset = sFlaaffyTeachableLearnset,
+        FOOTPRINT(Ignitemon)
+        .levelUpLearnset = sIgnitemonLevelUpLearnset,
+        .teachableLearnset = sIgnitemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_AMPHAROS}),
     },
 

@@ -10022,7 +10022,7 @@ static const struct TrainerMon sParty_Wattson3[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 41,
-    .species = SPECIES_FLAAFFY,
+    .species = SPECIES_IGNITEMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_THUNDER, MOVE_PROTECT, MOVE_THUNDER_WAVE, MOVE_LIGHT_SCREEN}
     },

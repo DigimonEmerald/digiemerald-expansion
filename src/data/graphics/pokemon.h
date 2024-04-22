@@ -2867,13 +2867,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Hyokomon[] = INCBIN_U8("graphics/pokemon/hyokomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Flaaffy[] = INCBIN_U32("graphics/pokemon/flaaffy/anim_front.4bpp.lz");
-    const u32 gMonPalette_Flaaffy[] = INCBIN_U32("graphics/pokemon/flaaffy/normal.gbapal.lz");
-    const u32 gMonBackPic_Flaaffy[] = INCBIN_U32("graphics/pokemon/flaaffy/back.4bpp.lz");
-    const u32 gMonShinyPalette_Flaaffy[] = INCBIN_U32("graphics/pokemon/flaaffy/shiny.gbapal.lz");
-    const u8 gMonIcon_Flaaffy[] = INCBIN_U8("graphics/pokemon/flaaffy/icon.4bpp");
+    const u32 gMonFrontPic_Ignitemon[] = INCBIN_U32("graphics/pokemon/ignitemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Ignitemon[] = INCBIN_U32("graphics/pokemon/ignitemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Ignitemon[] = INCBIN_U32("graphics/pokemon/ignitemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Ignitemon[] = INCBIN_U32("graphics/pokemon/ignitemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Ignitemon[] = INCBIN_U8("graphics/pokemon/ignitemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Flaaffy[] = INCBIN_U8("graphics/pokemon/flaaffy/footprint.1bpp");
+    const u8 gMonFootprint_Ignitemon[] = INCBIN_U8("graphics/pokemon/ignitemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Ampharos[] = INCBIN_U32("graphics/pokemon/ampharos/anim_front.4bpp.lz");

@@ -2598,7 +2598,7 @@ static const union AnimCmd sAnim_Hyokomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Flaaffy_1[] =
+static const union AnimCmd sAnim_Ignitemon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -10793,7 +10793,7 @@ SINGLE_ANIMATION(Herissmon);
 #endif //P_FAMILY_HAWKMON
 #if P_FAMILY_HYOKOMON
 SINGLE_ANIMATION(Hyokomon);
-SINGLE_ANIMATION(Flaaffy);
+SINGLE_ANIMATION(Ignitemon);
 SINGLE_ANIMATION(Ampharos);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(AmpharosMega);

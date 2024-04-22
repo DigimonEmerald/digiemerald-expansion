@@ -510,7 +510,7 @@ gCryTable::
 .endif @ P_FAMILY_HAWKMON
 .if P_FAMILY_HYOKOMON == TRUE
 	cry Cry_Hyokomon
-	cry Cry_Flaaffy
+	cry Cry_Ignitemon
 	cry Cry_Ampharos
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_AmpharosMega
@@ -2936,7 +2936,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_HAWKMON
 .if P_FAMILY_HYOKOMON == TRUE
 	cry_reverse Cry_Hyokomon
-	cry_reverse Cry_Flaaffy
+	cry_reverse Cry_Ignitemon
 	cry_reverse Cry_Ampharos
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_AmpharosMega

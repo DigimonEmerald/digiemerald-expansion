@@ -9410,7 +9410,7 @@ static const u16 sHyokomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFlaaffyTeachableLearnset[] = {
+static const u16 sIgnitemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
