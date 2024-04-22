@@ -4977,8 +4977,8 @@ static const struct LevelUpMove sKodokgumonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_KERAMON
 
-#if P_FAMILY_AIPOM
-static const struct LevelUpMove sAipomLevelUpLearnset[] = {
+#if P_FAMILY_KOKABUIMON
+static const struct LevelUpMove sKokabuimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 4, MOVE_SAND_ATTACK),
@@ -5017,7 +5017,7 @@ static const struct LevelUpMove sAmbipomLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_AIPOM
+#endif //P_FAMILY_KOKABUIMON
 
 #if P_FAMILY_SUNKERN
 static const struct LevelUpMove sSunkernLevelUpLearnset[] = {

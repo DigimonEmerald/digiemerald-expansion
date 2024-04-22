@@ -2112,8 +2112,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_KERAMON
 
-#if P_FAMILY_AIPOM
-    [SPECIES_AIPOM] =
+#if P_FAMILY_KOKABUIMON
+    [SPECIES_KOKABUIMON] =
     {
         .baseHP        = 55,
         .baseAttack    = 70,
@@ -2132,41 +2132,41 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_RUN_AWAY, ABILITY_PICKUP, ABILITY_SKILL_LINK },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Aipom"),
-        .cryId = CRY_AIPOM,
-        .natDexNum = NATIONAL_DEX_AIPOM,
+        .speciesName = _("Kokabuimon"),
+        .cryId = CRY_KOKABUIMON,
+        .natDexNum = NATIONAL_DEX_KOKABUIMON,
         .categoryName = _("Long Tail"),
         .height = 8,
         .weight = 115,
         .description = COMPOUND_STRING(
             "Its tail ends with a dexterous, handlike\n"
             "appendage. However, because it uses the\n"
-            "tail so much, Aipom's real hands have\n"
+            "tail so much, Kokabuimon's real hands have\n"
             "become rather clumsy."),
         .pokemonScale = 363,
         .pokemonOffset = 6,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Aipom,
-        .frontPicFemale = gMonFrontPic_AipomF,
+        .frontPic = gMonFrontPic_Kokabuimon,
+        .frontPicFemale = gMonFrontPic_KokabuimonF,
         .frontPicSize = MON_COORDS_SIZE(32, 64),
         .frontPicSizeFemale = MON_COORDS_SIZE(32, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_Aipom,
+        .frontAnimFrames = sAnims_Kokabuimon,
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
-        .backPic = gMonBackPic_Aipom,
-        .backPicFemale = gMonBackPic_AipomF,
+        .backPic = gMonBackPic_Kokabuimon,
+        .backPicFemale = gMonBackPic_KokabuimonF,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Aipom,
-        .shinyPalette = gMonShinyPalette_Aipom,
-        .iconSprite = gMonIcon_Aipom,
+        .palette = gMonPalette_Kokabuimon,
+        .shinyPalette = gMonShinyPalette_Kokabuimon,
+        .iconSprite = gMonIcon_Kokabuimon,
         .iconPalIndex = 2,
-        FOOTPRINT(Aipom)
-        .levelUpLearnset = sAipomLevelUpLearnset,
-        .teachableLearnset = sAipomTeachableLearnset,
+        FOOTPRINT(Kokabuimon)
+        .levelUpLearnset = sKokabuimonLevelUpLearnset,
+        .teachableLearnset = sKokabuimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_MOVE, MOVE_DOUBLE_HIT, SPECIES_AMBIPOM}),
     },
 
@@ -2227,7 +2227,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sAmbipomTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_AIPOM
+#endif //P_FAMILY_KOKABUIMON
 
 #if P_FAMILY_SUNKERN
     [SPECIES_SUNKERN] =

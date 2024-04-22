@@ -532,10 +532,10 @@ gCryTable::
 	cry Cry_Keramon_x
 	cry Cry_Kodokgumon
 .endif @ P_FAMILY_KERAMON
-.if P_FAMILY_AIPOM == TRUE
-	cry Cry_Aipom
+.if P_FAMILY_KOKABUIMON == TRUE
+	cry Cry_Kokabuimon
 	cry Cry_Ambipom
-.endif @ P_FAMILY_AIPOM
+.endif @ P_FAMILY_KOKABUIMON
 .if P_FAMILY_SUNKERN == TRUE
 	cry Cry_Sunkern
 	cry Cry_Sunflora
@@ -2958,10 +2958,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Keramon_x
 	cry_reverse Cry_Kodokgumon
 .endif @ P_FAMILY_KERAMON
-.if P_FAMILY_AIPOM == TRUE
-	cry_reverse Cry_Aipom
+.if P_FAMILY_KOKABUIMON == TRUE
+	cry_reverse Cry_Kokabuimon
 	cry_reverse Cry_Ambipom
-.endif @ P_FAMILY_AIPOM
+.endif @ P_FAMILY_KOKABUIMON
 .if P_FAMILY_SUNKERN == TRUE
 	cry_reverse Cry_Sunkern
 	cry_reverse Cry_Sunflora

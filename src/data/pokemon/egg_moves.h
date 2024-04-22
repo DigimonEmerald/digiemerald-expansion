@@ -1567,8 +1567,8 @@ const u16 gEggMoves[] = {
         MOVE_STRENGTH_SAP),
 #endif //P_FAMILY_KERAMON
 
-#if P_FAMILY_AIPOM
-    egg_moves(AIPOM,
+#if P_FAMILY_KOKABUIMON
+    egg_moves(KOKABUIMON,
         MOVE_COUNTER,
         MOVE_SCREECH,
         MOVE_PURSUIT,
@@ -1584,7 +1584,7 @@ const u16 gEggMoves[] = {
         MOVE_SWITCHEROO,
         MOVE_QUICK_GUARD,
         MOVE_TAIL_SLAP),
-#endif //P_FAMILY_AIPOM
+#endif //P_FAMILY_KOKABUIMON
 
 #if P_FAMILY_SUNKERN
     egg_moves(SUNKERN,

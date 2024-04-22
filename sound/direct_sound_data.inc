@@ -1643,15 +1643,15 @@ Cry_Kodokgumon::
 	.incbin "sound/direct_sound_samples/cries/kodokgumon.bin"
 .endif @ P_FAMILY_KERAMON
 
-.if P_FAMILY_AIPOM == TRUE
+.if P_FAMILY_KOKABUIMON == TRUE
 	.align 2
-Cry_Aipom::
-	.incbin "sound/direct_sound_samples/cries/aipom.bin"
+Cry_Kokabuimon::
+	.incbin "sound/direct_sound_samples/cries/kokabuimon.bin"
 
 	.align 2
 Cry_Ambipom::
 	.incbin "sound/direct_sound_samples/cries/ambipom.bin"
-.endif @ P_FAMILY_AIPOM
+.endif @ P_FAMILY_KOKABUIMON
 
 .if P_FAMILY_SUNKERN == TRUE
 	.align 2

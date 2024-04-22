@@ -9783,8 +9783,8 @@ static const u16 sKodokgumonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_KERAMON
 
-#if P_FAMILY_AIPOM
-static const u16 sAipomTeachableLearnset[] = {
+#if P_FAMILY_KOKABUIMON
+static const u16 sKokabuimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -9880,7 +9880,7 @@ static const u16 sAmbipomTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_AIPOM
+#endif //P_FAMILY_KOKABUIMON
 
 #if P_FAMILY_SUNKERN
 static const u16 sSunkernTeachableLearnset[] = {

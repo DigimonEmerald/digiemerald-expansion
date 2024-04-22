@@ -2979,18 +2979,18 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_KERAMON
 
-#if P_FAMILY_AIPOM
-    const u32 gMonFrontPic_Aipom[] = INCBIN_U32("graphics/pokemon/aipom/anim_front.4bpp.lz");
-    const u32 gMonPalette_Aipom[] = INCBIN_U32("graphics/pokemon/aipom/normal.gbapal.lz");
-    const u32 gMonBackPic_Aipom[] = INCBIN_U32("graphics/pokemon/aipom/back.4bpp.lz");
-    const u32 gMonShinyPalette_Aipom[] = INCBIN_U32("graphics/pokemon/aipom/shiny.gbapal.lz");
-    const u8 gMonIcon_Aipom[] = INCBIN_U8("graphics/pokemon/aipom/icon.4bpp");
+#if P_FAMILY_KOKABUIMON
+    const u32 gMonFrontPic_Kokabuimon[] = INCBIN_U32("graphics/pokemon/kokabuimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Kokabuimon[] = INCBIN_U32("graphics/pokemon/kokabuimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Kokabuimon[] = INCBIN_U32("graphics/pokemon/kokabuimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Kokabuimon[] = INCBIN_U32("graphics/pokemon/kokabuimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Kokabuimon[] = INCBIN_U8("graphics/pokemon/kokabuimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Aipom[] = INCBIN_U8("graphics/pokemon/aipom/footprint.1bpp");
+    const u8 gMonFootprint_Kokabuimon[] = INCBIN_U8("graphics/pokemon/kokabuimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_AipomF[] = INCBIN_U32("graphics/pokemon/aipom/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_AipomF[] = INCBIN_U32("graphics/pokemon/aipom/backf.4bpp.lz");
+    const u32 gMonFrontPic_KokabuimonF[] = INCBIN_U32("graphics/pokemon/kokabuimon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_KokabuimonF[] = INCBIN_U32("graphics/pokemon/kokabuimon/backf.4bpp.lz");
 
 #if P_GEN_4_CROSS_EVOS
     const u32 gMonFrontPic_Ambipom[] = INCBIN_U32("graphics/pokemon/ambipom/anim_front.4bpp.lz");
@@ -3005,7 +3005,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_AmbipomF[] = INCBIN_U32("graphics/pokemon/ambipom/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_AmbipomF[] = INCBIN_U32("graphics/pokemon/ambipom/backf.4bpp.lz");
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_AIPOM
+#endif //P_FAMILY_KOKABUIMON
 
 #if P_FAMILY_SUNKERN
     const u32 gMonFrontPic_Sunkern[] = INCBIN_U32("graphics/pokemon/sunkern/anim_front.4bpp.lz");
