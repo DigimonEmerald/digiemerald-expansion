@@ -237,14 +237,14 @@ static const struct FormChange sImpmonFormChangeTable[] = {
 };
 #endif //P_FAMILY_HYOKOMON
 
-#if P_FAMILY_HERACROSS
-static const struct FormChange sHeracrossFormChangeTable[] = {
+#if P_FAMILY_MUCHOMON
+static const struct FormChange sMuchomonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_HERACROSS_MEGA, ITEM_HERACRONITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MUCHOMON_MEGA, ITEM_HERACRONITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_HERACROSS
+#endif //P_FAMILY_MUCHOMON
 
 #if P_FAMILY_HOUNDOUR
 static const struct FormChange sHoundoomFormChangeTable[] = {

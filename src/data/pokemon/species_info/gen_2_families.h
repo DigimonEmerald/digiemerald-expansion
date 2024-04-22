@@ -3961,8 +3961,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_MORPHOMON
 
-#if P_FAMILY_HERACROSS
-    [SPECIES_HERACROSS] =
+#if P_FAMILY_MUCHOMON
+    [SPECIES_MUCHOMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 125,
@@ -3981,9 +3981,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SWARM, ABILITY_GUTS, ABILITY_MOXIE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Heracross"),
-        .cryId = CRY_HERACROSS,
-        .natDexNum = NATIONAL_DEX_HERACROSS,
+        .speciesName = _("Muchomon"),
+        .cryId = CRY_MUCHOMON,
+        .natDexNum = NATIONAL_DEX_MUCHOMON,
         .categoryName = _("Single Horn"),
         .height = 15,
         .weight = 540,
@@ -3996,32 +3996,32 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Heracross,
-        .frontPicFemale = gMonFrontPic_HeracrossF,
+        .frontPic = gMonFrontPic_Muchomon,
+        .frontPicFemale = gMonFrontPic_MuchomonF,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_Heracross,
+        .frontAnimFrames = sAnims_Muchomon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Heracross,
-        .backPicFemale = gMonBackPic_HeracrossF,
+        .backPic = gMonBackPic_Muchomon,
+        .backPicFemale = gMonBackPic_MuchomonF,
         .backPicSize = MON_COORDS_SIZE(48, 64),
         .backPicSizeFemale = MON_COORDS_SIZE(48, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Heracross,
-        .shinyPalette = gMonShinyPalette_Heracross,
-        .iconSprite = gMonIcon_Heracross,
+        .palette = gMonPalette_Muchomon,
+        .shinyPalette = gMonShinyPalette_Muchomon,
+        .iconSprite = gMonIcon_Muchomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Heracross)
-        .levelUpLearnset = sHeracrossLevelUpLearnset,
-        .teachableLearnset = sHeracrossTeachableLearnset,
-        .formSpeciesIdTable = sHeracrossFormSpeciesIdTable,
-        .formChangeTable = sHeracrossFormChangeTable,
+        FOOTPRINT(Muchomon)
+        .levelUpLearnset = sMuchomonLevelUpLearnset,
+        .teachableLearnset = sMuchomonTeachableLearnset,
+        .formSpeciesIdTable = sMuchomonFormSpeciesIdTable,
+        .formChangeTable = sMuchomonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_HERACROSS_MEGA] =
+    [SPECIES_MUCHOMON_MEGA] =
     {
         .baseHP        = 80,
         .baseAttack    = 185,
@@ -4040,43 +4040,43 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SKILL_LINK, ABILITY_SKILL_LINK, ABILITY_SKILL_LINK },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Heracross"),
-        .cryId = CRY_HERACROSS_MEGA,
-        .natDexNum = NATIONAL_DEX_HERACROSS,
+        .speciesName = _("Muchomon"),
+        .cryId = CRY_MUCHOMON_MEGA,
+        .natDexNum = NATIONAL_DEX_MUCHOMON,
         .categoryName = _("Single Horn"),
         .height = 17,
         .weight = 625,
         .description = COMPOUND_STRING(
             "A tremendous influx of energy builds it up,\n"
-            "but when Mega Evolution ends, Heracross\n"
+            "but when Mega Evolution ends, Muchomon\n"
             "is bothered by terrible soreness in its\n"
             "muscles."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_HeracrossMega,
+        .frontPic = gMonFrontPic_MuchomonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_HeracrossMega,
+        .frontAnimFrames = sAnims_MuchomonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_HeracrossMega,
+        .backPic = gMonBackPic_MuchomonMega,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_HeracrossMega,
-        .shinyPalette = gMonShinyPalette_HeracrossMega,
-        .iconSprite = gMonIcon_HeracrossMega,
+        .palette = gMonPalette_MuchomonMega,
+        .shinyPalette = gMonShinyPalette_MuchomonMega,
+        .iconSprite = gMonIcon_MuchomonMega,
         .iconPalIndex = 0,
-        FOOTPRINT(Heracross)
+        FOOTPRINT(Muchomon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sHeracrossLevelUpLearnset,
-        .teachableLearnset = sHeracrossTeachableLearnset,
-        .formSpeciesIdTable = sHeracrossFormSpeciesIdTable,
-        .formChangeTable = sHeracrossFormChangeTable,
+        .levelUpLearnset = sMuchomonLevelUpLearnset,
+        .teachableLearnset = sMuchomonTeachableLearnset,
+        .formSpeciesIdTable = sMuchomonFormSpeciesIdTable,
+        .formChangeTable = sMuchomonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_HERACROSS
+#endif //P_FAMILY_MUCHOMON
 
 #if P_FAMILY_SNEASEL
     [SPECIES_SNEASEL] =

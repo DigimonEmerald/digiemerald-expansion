@@ -1805,8 +1805,8 @@ const u16 gEggMoves[] = {
         MOVE_FINAL_GAMBIT),
 #endif //P_FAMILY_MORPHOMON
 
-#if P_FAMILY_HERACROSS
-    egg_moves(HERACROSS,
+#if P_FAMILY_MUCHOMON
+    egg_moves(MUCHOMON,
         MOVE_HARDEN,
         MOVE_BIDE,
         MOVE_FLAIL,
@@ -1817,7 +1817,7 @@ const u16 gEggMoves[] = {
         MOVE_FOCUS_PUNCH,
         MOVE_MEGAHORN,
         MOVE_ROCK_BLAST),
-#endif //P_FAMILY_HERACROSS
+#endif //P_FAMILY_MUCHOMON
 
 #if P_FAMILY_SNEASEL
     egg_moves(SNEASEL,

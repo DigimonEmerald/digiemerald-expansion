@@ -605,12 +605,12 @@ gCryTable::
 .if P_FAMILY_MORPHOMON == TRUE
 	cry Cry_Morphomon
 .endif @ P_FAMILY_MORPHOMON
-.if P_FAMILY_HERACROSS == TRUE
-	cry Cry_Heracross
+.if P_FAMILY_MUCHOMON == TRUE
+	cry Cry_Muchomon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_HeracrossMega
+	cry Cry_MuchomonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_HERACROSS
+.endif @ P_FAMILY_MUCHOMON
 .if P_FAMILY_SNEASEL == TRUE
 	cry Cry_Sneasel
 .if P_GEN_4_CROSS_EVOS == TRUE
@@ -3031,12 +3031,12 @@ gCryTable_Reverse::
 .if P_FAMILY_MORPHOMON == TRUE
 	cry_reverse Cry_Morphomon
 .endif @ P_FAMILY_MORPHOMON
-.if P_FAMILY_HERACROSS == TRUE
-	cry_reverse Cry_Heracross
+.if P_FAMILY_MUCHOMON == TRUE
+	cry_reverse Cry_Muchomon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_HeracrossMega
+	cry_reverse Cry_MuchomonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_HERACROSS
+.endif @ P_FAMILY_MUCHOMON
 .if P_FAMILY_SNEASEL == TRUE
 	cry_reverse Cry_Sneasel
 .if P_GEN_4_CROSS_EVOS == TRUE

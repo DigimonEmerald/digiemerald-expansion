@@ -215,7 +215,7 @@
 #define SPECIES_MONMON                                211
 #define SPECIES_MONODRAMON                                  212
 #define SPECIES_MORPHOMON                                 213
-#define SPECIES_HERACROSS                               214
+#define SPECIES_MUCHOMON                               214
 #define SPECIES_SNEASEL                                 215
 #define SPECIES_TEDDIURSA                               216
 #define SPECIES_URSARING                                217
@@ -982,7 +982,7 @@
 #define SPECIES_IMPMON_MEGA                           921
 #define SPECIES_KODEKACMON_MEGA                            922
 #define SPECIES_MONODRAMON_MEGA                             923
-#define SPECIES_HERACROSS_MEGA                          924
+#define SPECIES_MUCHOMON_MEGA                          924
 #define SPECIES_HOUNDOOM_MEGA                           925
 #define SPECIES_TYRANITAR_MEGA                          926
 #define SPECIES_SCEPTILE_MEGA                           927

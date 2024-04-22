@@ -10848,8 +10848,8 @@ static const u16 sMorphomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_MORPHOMON
 
-#if P_FAMILY_HERACROSS
-static const u16 sHeracrossTeachableLearnset[] = {
+#if P_FAMILY_MUCHOMON
+static const u16 sMuchomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -10885,7 +10885,7 @@ static const u16 sHeracrossTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_HERACROSS
+#endif //P_FAMILY_MUCHOMON
 
 #if P_FAMILY_SNEASEL
 static const u16 sSneaselTeachableLearnset[] = {

@@ -1805,17 +1805,17 @@ Cry_Morphomon::
 	.incbin "sound/direct_sound_samples/cries/morphomon.bin"
 .endif @ P_FAMILY_MORPHOMON
 
-.if P_FAMILY_HERACROSS == TRUE
+.if P_FAMILY_MUCHOMON == TRUE
 	.align 2
-Cry_Heracross::
-	.incbin "sound/direct_sound_samples/cries/heracross.bin"
+Cry_Muchomon::
+	.incbin "sound/direct_sound_samples/cries/muchomon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_HeracrossMega::
-	.incbin "sound/direct_sound_samples/cries/heracross_mega.bin"
+Cry_MuchomonMega::
+	.incbin "sound/direct_sound_samples/cries/muchomon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_HERACROSS
+.endif @ P_FAMILY_MUCHOMON
 
 .if P_FAMILY_SNEASEL == TRUE
 	.align 2

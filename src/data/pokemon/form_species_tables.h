@@ -663,15 +663,15 @@ static const u16 sMonmonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_MONMON
 
-#if P_FAMILY_HERACROSS
-static const u16 sHeracrossFormSpeciesIdTable[] = {
-    SPECIES_HERACROSS,
+#if P_FAMILY_MUCHOMON
+static const u16 sMuchomonFormSpeciesIdTable[] = {
+    SPECIES_MUCHOMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_HERACROSS_MEGA,
+    SPECIES_MUCHOMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_HERACROSS
+#endif //P_FAMILY_MUCHOMON
 
 #if P_FAMILY_SNEASEL
 static const u16 sSneaselFormSpeciesIdTable[] = {

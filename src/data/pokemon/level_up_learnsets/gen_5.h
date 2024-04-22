@@ -5844,8 +5844,8 @@ static const struct LevelUpMove sMorphomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_MORPHOMON
 
-#if P_FAMILY_HERACROSS
-static const struct LevelUpMove sHeracrossLevelUpLearnset[] = {
+#if P_FAMILY_MUCHOMON
+static const struct LevelUpMove sMuchomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
@@ -5863,7 +5863,7 @@ static const struct LevelUpMove sHeracrossLevelUpLearnset[] = {
     LEVEL_UP_MOVE(46, MOVE_MEGAHORN),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_HERACROSS
+#endif //P_FAMILY_MUCHOMON
 
 #if P_FAMILY_SNEASEL
 static const struct LevelUpMove sSneaselLevelUpLearnset[] = {

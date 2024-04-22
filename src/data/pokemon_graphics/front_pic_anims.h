@@ -3045,8 +3045,8 @@ static const union AnimCmd sAnim_Morphomon_1[] =
 };
 #endif //P_FAMILY_MORPHOMON
 
-#if P_FAMILY_HERACROSS
-static const union AnimCmd sAnim_Heracross_1[] =
+#if P_FAMILY_MUCHOMON
+static const union AnimCmd sAnim_Muchomon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -3057,9 +3057,9 @@ static const union AnimCmd sAnim_Heracross_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(HeracrossMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(MuchomonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_HERACROSS
+#endif //P_FAMILY_MUCHOMON
 
 #if P_FAMILY_SNEASEL
 static const union AnimCmd sAnim_Sneasel_1[] =
@@ -10898,12 +10898,12 @@ SINGLE_ANIMATION(Overqwil);
 #if P_FAMILY_MORPHOMON
 SINGLE_ANIMATION(Morphomon);
 #endif //P_FAMILY_MORPHOMON
-#if P_FAMILY_HERACROSS
-SINGLE_ANIMATION(Heracross);
+#if P_FAMILY_MUCHOMON
+SINGLE_ANIMATION(Muchomon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(HeracrossMega);
+SINGLE_ANIMATION(MuchomonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_HERACROSS
+#endif //P_FAMILY_MUCHOMON
 #if P_FAMILY_SNEASEL
 SINGLE_ANIMATION(Sneasel);
 #if P_GEN_4_CROSS_EVOS

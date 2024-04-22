@@ -3442,27 +3442,27 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_MORPHOMON
 
-#if P_FAMILY_HERACROSS
-    const u32 gMonFrontPic_Heracross[] = INCBIN_U32("graphics/pokemon/heracross/anim_front.4bpp.lz");
-    const u32 gMonPalette_Heracross[] = INCBIN_U32("graphics/pokemon/heracross/normal.gbapal.lz");
-    const u32 gMonBackPic_Heracross[] = INCBIN_U32("graphics/pokemon/heracross/back.4bpp.lz");
-    const u32 gMonShinyPalette_Heracross[] = INCBIN_U32("graphics/pokemon/heracross/shiny.gbapal.lz");
-    const u8 gMonIcon_Heracross[] = INCBIN_U8("graphics/pokemon/heracross/icon.4bpp");
+#if P_FAMILY_MUCHOMON
+    const u32 gMonFrontPic_Muchomon[] = INCBIN_U32("graphics/pokemon/muchomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Muchomon[] = INCBIN_U32("graphics/pokemon/muchomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Muchomon[] = INCBIN_U32("graphics/pokemon/muchomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Muchomon[] = INCBIN_U32("graphics/pokemon/muchomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Muchomon[] = INCBIN_U8("graphics/pokemon/muchomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Heracross[] = INCBIN_U8("graphics/pokemon/heracross/footprint.1bpp");
+    const u8 gMonFootprint_Muchomon[] = INCBIN_U8("graphics/pokemon/muchomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_HeracrossF[] = INCBIN_U32("graphics/pokemon/heracross/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_HeracrossF[] = INCBIN_U32("graphics/pokemon/heracross/backf.4bpp.lz");
+    const u32 gMonFrontPic_MuchomonF[] = INCBIN_U32("graphics/pokemon/muchomon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_MuchomonF[] = INCBIN_U32("graphics/pokemon/muchomon/backf.4bpp.lz");
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_HeracrossMega[] = INCBIN_U32("graphics/pokemon/heracross/mega/front.4bpp.lz");
-    const u32 gMonPalette_HeracrossMega[] = INCBIN_U32("graphics/pokemon/heracross/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_HeracrossMega[] = INCBIN_U32("graphics/pokemon/heracross/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_HeracrossMega[] = INCBIN_U32("graphics/pokemon/heracross/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_HeracrossMega[] = INCBIN_U8("graphics/pokemon/heracross/mega/icon.4bpp");
+    const u32 gMonFrontPic_MuchomonMega[] = INCBIN_U32("graphics/pokemon/muchomon/mega/front.4bpp.lz");
+    const u32 gMonPalette_MuchomonMega[] = INCBIN_U32("graphics/pokemon/muchomon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_MuchomonMega[] = INCBIN_U32("graphics/pokemon/muchomon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_MuchomonMega[] = INCBIN_U32("graphics/pokemon/muchomon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_MuchomonMega[] = INCBIN_U8("graphics/pokemon/muchomon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_HERACROSS
+#endif //P_FAMILY_MUCHOMON
 
 #if P_FAMILY_SNEASEL
     const u32 gMonFrontPic_Sneasel[] = INCBIN_U32("graphics/pokemon/sneasel/anim_front.4bpp.lz");

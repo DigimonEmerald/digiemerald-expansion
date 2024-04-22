@@ -163,7 +163,7 @@
 #define P_FAMILY_MODBETAMON                P_GEN_2_POKEMON
 #define P_FAMILY_MONMON                P_GEN_2_POKEMON
 #define P_FAMILY_MORPHOMON                 P_GEN_2_POKEMON
-#define P_FAMILY_HERACROSS               P_GEN_2_POKEMON
+#define P_FAMILY_MUCHOMON               P_GEN_2_POKEMON
 #define P_FAMILY_SNEASEL                 P_GEN_2_POKEMON
 #define P_FAMILY_TEDDIURSA               P_GEN_2_POKEMON
 #define P_FAMILY_SLUGMA                  P_GEN_2_POKEMON
