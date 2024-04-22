@@ -2367,13 +2367,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Dokunemon2[] = INCBIN_U32("graphics/pokemon/dokunemon2/anim_front.4bpp.lz");
-    const u32 gMonPalette_Dokunemon2[] = INCBIN_U32("graphics/pokemon/dokunemon2/normal.gbapal.lz");
-    const u32 gMonBackPic_Dokunemon2[] = INCBIN_U32("graphics/pokemon/dokunemon2/back.4bpp.lz");
-    const u32 gMonShinyPalette_Dokunemon2[] = INCBIN_U32("graphics/pokemon/dokunemon2/shiny.gbapal.lz");
-    const u8 gMonIcon_Dokunemon2[] = INCBIN_U8("graphics/pokemon/dokunemon2/icon.4bpp");
+    const u32 gMonFrontPic_Renamon_x[] = INCBIN_U32("graphics/pokemon/renamon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Renamon_x[] = INCBIN_U32("graphics/pokemon/renamon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Renamon_x[] = INCBIN_U32("graphics/pokemon/renamon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Renamon_x[] = INCBIN_U32("graphics/pokemon/renamon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Renamon_x[] = INCBIN_U8("graphics/pokemon/renamon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Dokunemon2[] = INCBIN_U8("graphics/pokemon/dokunemon2/footprint.1bpp");
+    const u8 gMonFootprint_Renamon_x[] = INCBIN_U8("graphics/pokemon/renamon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_4_CROSS_EVOS

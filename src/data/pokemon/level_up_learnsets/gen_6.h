@@ -4180,7 +4180,7 @@ static const struct LevelUpMove sDokunemonLevelUpLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const struct LevelUpMove sDokunemon2LevelUpLearnset[] = {
+static const struct LevelUpMove sRenamon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ZAP_CANNON),
     LEVEL_UP_MOVE( 1, MOVE_MAGIC_COAT),
     LEVEL_UP_MOVE( 1, MOVE_CONVERSION_2),

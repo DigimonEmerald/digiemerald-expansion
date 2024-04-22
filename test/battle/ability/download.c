@@ -63,7 +63,7 @@ SINGLE_BATTLE_TEST("Download doesn't activate if target hasn't been sent out yet
         PLAYER(SPECIES_LOPMONX) { Speed(100); }
         PLAYER(SPECIES_DOKUNEMON) { Ability(ability); Defense(400); SpDefense(300); Speed(300); Attack(100); }
         OPPONENT(SPECIES_LOPMONX) { HP(1); Speed(100); }
-        OPPONENT(SPECIES_DOKUNEMON2) { Ability(ability); Defense(100); SpDefense(200); Speed(200); }
+        OPPONENT(SPECIES_RENAMON_X) { Ability(ability); Defense(100); SpDefense(200); Speed(200); }
     } WHEN {
         TURN { MOVE(player, MOVE_EXPLOSION); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
         TURN { MOVE(player, MOVE_TACKLE); MOVE(opponent, MOVE_TRI_ATTACK); }
@@ -73,7 +73,7 @@ SINGLE_BATTLE_TEST("Download doesn't activate if target hasn't been sent out yet
         // Everyone faints.
 
         MESSAGE("Go! Dokunemon!");
-        MESSAGE("2 sent out Dokunemon2!");
+        MESSAGE("2 sent out Renamon_x!");
 
         NONE_OF {
             ABILITY_POPUP(player, ABILITY_DOWNLOAD);
@@ -84,7 +84,7 @@ SINGLE_BATTLE_TEST("Download doesn't activate if target hasn't been sent out yet
         {
             ABILITY_POPUP(opponent, ABILITY_DOWNLOAD);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("Foe Dokunemon2's Download raised its Sp. Atk!");
+            MESSAGE("Foe Renamon_x's Download raised its Sp. Atk!");
         }
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TRI_ATTACK, opponent);

@@ -2101,7 +2101,7 @@ static const union AnimCmd sAnim_Dokunemon_1[] =
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Dokunemon2_1[] =
+static const union AnimCmd sAnim_Renamon_x_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -10680,7 +10680,7 @@ SINGLE_ANIMATION(Sylveon);
 #if P_FAMILY_DOKUNEMON
 SINGLE_ANIMATION(Dokunemon);
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Dokunemon2);
+SINGLE_ANIMATION(Renamon_x);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Dokunemon_Z);
 #endif //P_GEN_4_CROSS_EVOS

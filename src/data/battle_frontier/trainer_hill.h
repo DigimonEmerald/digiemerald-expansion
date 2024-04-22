@@ -3591,7 +3591,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                         },
                                     [1] =
                                         {
-                                            .species = SPECIES_DOKUNEMON2,
+                                            .species = SPECIES_RENAMON_X,
                                             .heldItem = ITEM_SCOPE_LENS,
                                             .moves = {MOVE_LOCK_ON, MOVE_BLIZZARD, MOVE_CONVERSION_2, MOVE_PSYCHIC},
                                             .hpEV = 255,
@@ -3605,7 +3605,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 0,
                                             .personality = 0xF,
-                                            .nickname = _("DOKUNEMON2"),
+                                            .nickname = _("RENAMON_X"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [2] =

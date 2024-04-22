@@ -1356,8 +1356,8 @@ Cry_Dokunemon::
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Dokunemon2::
-	.incbin "sound/direct_sound_samples/cries/dokunemon2.bin"
+Cry_Renamon_x::
+	.incbin "sound/direct_sound_samples/cries/renamon_x.bin"
 
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2

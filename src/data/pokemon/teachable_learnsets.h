@@ -7669,7 +7669,7 @@ static const u16 sDokunemonTeachableLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const u16 sDokunemon2TeachableLearnset[] = {
+static const u16 sRenamon_xTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BLIZZARD,
     MOVE_DOUBLE_TEAM,
