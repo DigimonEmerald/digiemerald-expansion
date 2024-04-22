@@ -6148,8 +6148,8 @@ static const struct LevelUpMove sOverqwilLevelUpLearnset[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_MONMON
 
-#if P_FAMILY_SHUCKLE
-static const struct LevelUpMove sShuckleLevelUpLearnset[] = {
+#if P_FAMILY_MORPHOMON
+static const struct LevelUpMove sMorphomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_STICKY_WEB),
     LEVEL_UP_MOVE( 1, MOVE_WITHDRAW),
     LEVEL_UP_MOVE( 1, MOVE_CONSTRICT),
@@ -6172,7 +6172,7 @@ static const struct LevelUpMove sShuckleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(53, MOVE_STICKY_WEB),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SHUCKLE
+#endif //P_FAMILY_MORPHOMON
 
 #if P_FAMILY_HERACROSS
 static const struct LevelUpMove sHeracrossLevelUpLearnset[] = {

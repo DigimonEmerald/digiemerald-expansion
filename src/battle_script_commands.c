@@ -14666,8 +14666,8 @@ static void Cmd_pickup(void)
                     SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &heldItem);
                 }
             }
-            else if (P_SHUCKLE_BERRY_JUICE == GEN_2
-                && species == SPECIES_SHUCKLE
+            else if (P_MORPHOMON_BERRY_JUICE == GEN_2
+                && species == SPECIES_MORPHOMON
                 && heldItem == ITEM_ORAN_BERRY
                 && (Random() % 16) == 0)
             {

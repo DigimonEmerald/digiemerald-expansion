@@ -10816,8 +10816,8 @@ static const u16 sOverqwilTeachableLearnset[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_MONMON
 
-#if P_FAMILY_SHUCKLE
-static const u16 sShuckleTeachableLearnset[] = {
+#if P_FAMILY_MORPHOMON
+static const u16 sMorphomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -10846,7 +10846,7 @@ static const u16 sShuckleTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SHUCKLE
+#endif //P_FAMILY_MORPHOMON
 
 #if P_FAMILY_HERACROSS
 static const u16 sHeracrossTeachableLearnset[] = {

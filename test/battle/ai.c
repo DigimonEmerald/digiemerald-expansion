@@ -55,7 +55,7 @@ AI_SINGLE_BATTLE_TEST("AI prefers Water Gun over Bubble if it knows that foe has
     PARAMETRIZE { abilityAI = ABILITY_MOLD_BREAKER; } // Mold Breaker ignores Contrary.
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_SHUCKLE) { Ability(ABILITY_CONTRARY); }
+        PLAYER(SPECIES_MORPHOMON) { Ability(ABILITY_CONTRARY); }
         OPPONENT(SPECIES_TYUTYUMON) { Moves(MOVE_WATER_GUN, MOVE_BUBBLE); Ability(abilityAI); }
     } WHEN {
             TURN { MOVE(player, MOVE_DEFENSE_CURL); }
@@ -63,7 +63,7 @@ AI_SINGLE_BATTLE_TEST("AI prefers Water Gun over Bubble if it knows that foe has
                    if (abilityAI == ABILITY_MOLD_BREAKER) { SCORE_EQ(opponent, MOVE_WATER_GUN, MOVE_BUBBLE); }
                    else { SCORE_GT(opponent, MOVE_WATER_GUN, MOVE_BUBBLE); }}
     } SCENE {
-        MESSAGE("Shuckle's Defense fell!"); // Contrary activates
+        MESSAGE("Morphomon's Defense fell!"); // Contrary activates
     } THEN {
         EXPECT(gBattleResources->aiData->abilities[B_POSITION_PLAYER_LEFT] == ABILITY_CONTRARY);
     }

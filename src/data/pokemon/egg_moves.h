@@ -1792,8 +1792,8 @@ const u16 gEggMoves[] = {
         MOVE_ACID_SPRAY),
 #endif //P_FAMILY_MONMON
 
-#if P_FAMILY_SHUCKLE
-    egg_moves(SHUCKLE,
+#if P_FAMILY_MORPHOMON
+    egg_moves(MORPHOMON,
         MOVE_SWEET_SCENT,
         MOVE_KNOCK_OFF,
         MOVE_HELPING_HAND,
@@ -1803,7 +1803,7 @@ const u16 gEggMoves[] = {
         MOVE_ACID,
         MOVE_ROCK_BLAST,
         MOVE_FINAL_GAMBIT),
-#endif //P_FAMILY_SHUCKLE
+#endif //P_FAMILY_MORPHOMON
 
 #if P_FAMILY_HERACROSS
     egg_moves(HERACROSS,

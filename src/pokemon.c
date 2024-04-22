@@ -685,7 +685,7 @@ static const struct SpeciesItem sAlteringCaveWildMonHeldItems[] =
     {SPECIES_HOUNDOUR,  ITEM_BIG_MUSHROOM},
     {SPECIES_TEDDIURSA, ITEM_PETAYA_BERRY},
     {SPECIES_KOKABUIMON,     ITEM_BERRY_JUICE},
-    {SPECIES_SHUCKLE,   ITEM_BERRY_JUICE},
+    {SPECIES_MORPHOMON,   ITEM_BERRY_JUICE},
     {SPECIES_STANTLER,  ITEM_PETAYA_BERRY},
     {SPECIES_SMEARGLE,  ITEM_SALAC_BERRY},
 };
@@ -4785,7 +4785,7 @@ u16 ModifyStatByNature(u8 nature, u16 stat, u8 statIndex)
 // positive nature and > 728 for a negative nature.
 // Neither occur in the base game, but this can happen if
 // any Nature-affected base stat is increased to a value
-// above 248. The closest by default is Shuckle at 230.
+// above 248. The closest by default is Morphomon at 230.
 #ifdef BUGFIX
     u32 retVal;
 #else

@@ -3904,8 +3904,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_MONMON
 
-#if P_FAMILY_SHUCKLE
-    [SPECIES_SHUCKLE] =
+#if P_FAMILY_MORPHOMON
+    [SPECIES_MORPHOMON] =
     {
         .baseHP        = 20,
         .baseAttack    = 10,
@@ -3927,14 +3927,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_STURDY, ABILITY_GLUTTONY, ABILITY_CONTRARY },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Shuckle"),
-        .cryId = CRY_SHUCKLE,
-        .natDexNum = NATIONAL_DEX_SHUCKLE,
+        .speciesName = _("Morphomon"),
+        .cryId = CRY_MORPHOMON,
+        .natDexNum = NATIONAL_DEX_MORPHOMON,
         .categoryName = _("Mold"),
         .height = 6,
         .weight = 205,
         .description = COMPOUND_STRING(
-            "A Shuckle hides under rocks, keeping its\n"
+            "A Morphomon hides under rocks, keeping its\n"
             "body concealed inside its shell while\n"
             "eating stored berries. The berries mix with\n"
             "its body fluids to become a juice."),
@@ -3942,24 +3942,24 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Shuckle,
+        .frontPic = gMonFrontPic_Morphomon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Shuckle,
+        .frontAnimFrames = sAnims_Morphomon,
         .frontAnimId = ANIM_SWING_CONCAVE,
-        .backPic = gMonBackPic_Shuckle,
+        .backPic = gMonBackPic_Morphomon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Shuckle,
-        .shinyPalette = gMonShinyPalette_Shuckle,
-        .iconSprite = gMonIcon_Shuckle,
+        .palette = gMonPalette_Morphomon,
+        .shinyPalette = gMonShinyPalette_Morphomon,
+        .iconSprite = gMonIcon_Morphomon,
         .iconPalIndex = 1,
-        FOOTPRINT(Shuckle)
-        .levelUpLearnset = sShuckleLevelUpLearnset,
-        .teachableLearnset = sShuckleTeachableLearnset,
+        FOOTPRINT(Morphomon)
+        .levelUpLearnset = sMorphomonLevelUpLearnset,
+        .teachableLearnset = sMorphomonTeachableLearnset,
     },
-#endif //P_FAMILY_SHUCKLE
+#endif //P_FAMILY_MORPHOMON
 
 #if P_FAMILY_HERACROSS
     [SPECIES_HERACROSS] =

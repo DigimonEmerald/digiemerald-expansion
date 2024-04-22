@@ -80,7 +80,7 @@ SINGLE_BATTLE_TEST("Sticky Web raises Speed by 1 for a Pokemon with Contrary")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_SHUCKLE) { Ability(ABILITY_CONTRARY); }
+        OPPONENT(SPECIES_MORPHOMON) { Ability(ABILITY_CONTRARY); }
     } WHEN {
         TURN { MOVE(player, MOVE_STICKY_WEB); }
         TURN { SWITCH(opponent, 1); }
@@ -88,10 +88,10 @@ SINGLE_BATTLE_TEST("Sticky Web raises Speed by 1 for a Pokemon with Contrary")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STICKY_WEB, player);
         MESSAGE("A sticky web spreads out on the ground around the opposing team!");
-        MESSAGE("2 sent out Shuckle!");
-        MESSAGE("Foe Shuckle was caught in a Sticky Web!");
+        MESSAGE("2 sent out Morphomon!");
+        MESSAGE("Foe Morphomon was caught in a Sticky Web!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("Foe Shuckle's Speed rose!");
+        MESSAGE("Foe Morphomon's Speed rose!");
     }
 }
 

@@ -128,14 +128,14 @@ SINGLE_BATTLE_TEST("Mirror Armor raises the stat of an attacking Pokemon with Co
 {
     GIVEN {
         PLAYER(SPECIES_CORVIKNIGHT) {Ability(ABILITY_MIRROR_ARMOR);}
-        OPPONENT(SPECIES_SHUCKLE) {Ability(ABILITY_CONTRARY);}
+        OPPONENT(SPECIES_MORPHOMON) {Ability(ABILITY_CONTRARY);}
     } WHEN {
         TURN { MOVE(opponent, MOVE_LEER); }
     } SCENE {
-        MESSAGE("Foe Shuckle used Leer!");
+        MESSAGE("Foe Morphomon used Leer!");
         ABILITY_POPUP(player, ABILITY_MIRROR_ARMOR);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("Foe Shuckle's Defense rose!");
+        MESSAGE("Foe Morphomon's Defense rose!");
     } THEN {
         EXPECT_EQ(player->statStages[STAT_DEF], DEFAULT_STAT_STAGE);
         EXPECT_EQ(opponent->statStages[STAT_DEF], DEFAULT_STAT_STAGE + 1);

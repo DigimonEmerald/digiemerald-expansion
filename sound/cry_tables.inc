@@ -602,9 +602,9 @@ gCryTable::
 	cry Cry_Overqwil
 .endif @ P_HISUIAN_FORMS
 .endif @ P_FAMILY_MONMON
-.if P_FAMILY_SHUCKLE == TRUE
-	cry Cry_Shuckle
-.endif @ P_FAMILY_SHUCKLE
+.if P_FAMILY_MORPHOMON == TRUE
+	cry Cry_Morphomon
+.endif @ P_FAMILY_MORPHOMON
 .if P_FAMILY_HERACROSS == TRUE
 	cry Cry_Heracross
 .if P_MEGA_EVOLUTIONS == TRUE
@@ -3028,9 +3028,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Overqwil
 .endif @ P_HISUIAN_FORMS
 .endif @ P_FAMILY_MONMON
-.if P_FAMILY_SHUCKLE == TRUE
-	cry_reverse Cry_Shuckle
-.endif @ P_FAMILY_SHUCKLE
+.if P_FAMILY_MORPHOMON == TRUE
+	cry_reverse Cry_Morphomon
+.endif @ P_FAMILY_MORPHOMON
 .if P_FAMILY_HERACROSS == TRUE
 	cry_reverse Cry_Heracross
 .if P_MEGA_EVOLUTIONS == TRUE

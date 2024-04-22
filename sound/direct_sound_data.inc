@@ -1799,11 +1799,11 @@ Cry_Overqwil::
 .endif @ P_HISUIAN_FORMS
 .endif @ P_FAMILY_MONMON
 
-.if P_FAMILY_SHUCKLE == TRUE
+.if P_FAMILY_MORPHOMON == TRUE
 	.align 2
-Cry_Shuckle::
-	.incbin "sound/direct_sound_samples/cries/shuckle.bin"
-.endif @ P_FAMILY_SHUCKLE
+Cry_Morphomon::
+	.incbin "sound/direct_sound_samples/cries/morphomon.bin"
+.endif @ P_FAMILY_MORPHOMON
 
 .if P_FAMILY_HERACROSS == TRUE
 	.align 2

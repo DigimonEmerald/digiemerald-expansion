@@ -3431,16 +3431,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_MONMON
 
-#if P_FAMILY_SHUCKLE
-    const u32 gMonFrontPic_Shuckle[] = INCBIN_U32("graphics/pokemon/shuckle/anim_front.4bpp.lz");
-    const u32 gMonPalette_Shuckle[] = INCBIN_U32("graphics/pokemon/shuckle/normal.gbapal.lz");
-    const u32 gMonBackPic_Shuckle[] = INCBIN_U32("graphics/pokemon/shuckle/back.4bpp.lz");
-    const u32 gMonShinyPalette_Shuckle[] = INCBIN_U32("graphics/pokemon/shuckle/shiny.gbapal.lz");
-    const u8 gMonIcon_Shuckle[] = INCBIN_U8("graphics/pokemon/shuckle/icon.4bpp");
+#if P_FAMILY_MORPHOMON
+    const u32 gMonFrontPic_Morphomon[] = INCBIN_U32("graphics/pokemon/morphomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Morphomon[] = INCBIN_U32("graphics/pokemon/morphomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Morphomon[] = INCBIN_U32("graphics/pokemon/morphomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Morphomon[] = INCBIN_U32("graphics/pokemon/morphomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Morphomon[] = INCBIN_U8("graphics/pokemon/morphomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Shuckle[] = INCBIN_U8("graphics/pokemon/shuckle/footprint.1bpp");
+    const u8 gMonFootprint_Morphomon[] = INCBIN_U8("graphics/pokemon/morphomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_SHUCKLE
+#endif //P_FAMILY_MORPHOMON
 
 #if P_FAMILY_HERACROSS
     const u32 gMonFrontPic_Heracross[] = INCBIN_U32("graphics/pokemon/heracross/anim_front.4bpp.lz");

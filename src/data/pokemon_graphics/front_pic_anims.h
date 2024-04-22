@@ -3035,15 +3035,15 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Overqwil);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_MONMON
 
-#if P_FAMILY_SHUCKLE
-static const union AnimCmd sAnim_Shuckle_1[] =
+#if P_FAMILY_MORPHOMON
+static const union AnimCmd sAnim_Morphomon_1[] =
 {
     ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SHUCKLE
+#endif //P_FAMILY_MORPHOMON
 
 #if P_FAMILY_HERACROSS
 static const union AnimCmd sAnim_Heracross_1[] =
@@ -10895,9 +10895,9 @@ SINGLE_ANIMATION(MonmonHisuian);
 SINGLE_ANIMATION(Overqwil);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_MONMON
-#if P_FAMILY_SHUCKLE
-SINGLE_ANIMATION(Shuckle);
-#endif //P_FAMILY_SHUCKLE
+#if P_FAMILY_MORPHOMON
+SINGLE_ANIMATION(Morphomon);
+#endif //P_FAMILY_MORPHOMON
 #if P_FAMILY_HERACROSS
 SINGLE_ANIMATION(Heracross);
 #if P_MEGA_EVOLUTIONS
