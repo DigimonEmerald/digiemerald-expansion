@@ -1586,8 +1586,8 @@ const u16 gEggMoves[] = {
         MOVE_TAIL_SLAP),
 #endif //P_FAMILY_KOKABUIMON
 
-#if P_FAMILY_SUNKERN
-    egg_moves(SUNKERN,
+#if P_FAMILY_KOKUWAMON
+    egg_moves(KOKUWAMON,
         MOVE_GRASS_WHISTLE,
         MOVE_ENCORE,
         MOVE_LEECH_SEED,
@@ -1601,7 +1601,7 @@ const u16 gEggMoves[] = {
         MOVE_NATURAL_GIFT,
         MOVE_MORNING_SUN,
         MOVE_GRASSY_TERRAIN),
-#endif //P_FAMILY_SUNKERN
+#endif //P_FAMILY_KOKUWAMON
 
 #if P_FAMILY_YANMA
     egg_moves(YANMA,

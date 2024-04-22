@@ -4276,8 +4276,8 @@ static const struct LevelUpMove sAmbipomLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_KOKABUIMON
 
-#if P_FAMILY_SUNKERN
-static const struct LevelUpMove sSunkernLevelUpLearnset[] = {
+#if P_FAMILY_KOKUWAMON
+static const struct LevelUpMove sKokuwamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 6, MOVE_GROWTH),
     LEVEL_UP_MOVE(13, MOVE_MEGA_DRAIN),
@@ -4301,7 +4301,7 @@ static const struct LevelUpMove sSunfloraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_SOLAR_BEAM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SUNKERN
+#endif //P_FAMILY_KOKUWAMON
 
 #if P_FAMILY_YANMA
 static const struct LevelUpMove sYanmaLevelUpLearnset[] = {

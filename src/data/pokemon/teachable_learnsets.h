@@ -9882,8 +9882,8 @@ static const u16 sAmbipomTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_KOKABUIMON
 
-#if P_FAMILY_SUNKERN
-static const u16 sSunkernTeachableLearnset[] = {
+#if P_FAMILY_KOKUWAMON
+static const u16 sKokuwamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,
@@ -9935,7 +9935,7 @@ static const u16 sSunfloraTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SUNKERN
+#endif //P_FAMILY_KOKUWAMON
 
 #if P_FAMILY_YANMA
 static const u16 sYanmaTeachableLearnset[] = {

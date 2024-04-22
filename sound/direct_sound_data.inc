@@ -1653,15 +1653,15 @@ Cry_Ambipom::
 	.incbin "sound/direct_sound_samples/cries/ambipom.bin"
 .endif @ P_FAMILY_KOKABUIMON
 
-.if P_FAMILY_SUNKERN == TRUE
+.if P_FAMILY_KOKUWAMON == TRUE
 	.align 2
-Cry_Sunkern::
-	.incbin "sound/direct_sound_samples/cries/sunkern.bin"
+Cry_Kokuwamon::
+	.incbin "sound/direct_sound_samples/cries/kokuwamon.bin"
 
 	.align 2
 Cry_Sunflora::
 	.incbin "sound/direct_sound_samples/cries/sunflora.bin"
-.endif @ P_FAMILY_SUNKERN
+.endif @ P_FAMILY_KOKUWAMON
 
 .if P_FAMILY_YANMA == TRUE
 	.align 2

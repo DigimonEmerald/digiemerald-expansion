@@ -2734,8 +2734,8 @@ static const union AnimCmd sAnim_Ambipom_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_KOKABUIMON
 
-#if P_FAMILY_SUNKERN
-static const union AnimCmd sAnim_Sunkern_1[] =
+#if P_FAMILY_KOKUWAMON
+static const union AnimCmd sAnim_Kokuwamon_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 8),
@@ -2753,7 +2753,7 @@ static const union AnimCmd sAnim_Sunflora_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SUNKERN
+#endif //P_FAMILY_KOKUWAMON
 
 #if P_FAMILY_YANMA
 static const union AnimCmd sAnim_Yanma_1[] =
@@ -10823,10 +10823,10 @@ SINGLE_ANIMATION(Kokabuimon);
 SINGLE_ANIMATION(Ambipom);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_KOKABUIMON
-#if P_FAMILY_SUNKERN
-SINGLE_ANIMATION(Sunkern);
+#if P_FAMILY_KOKUWAMON
+SINGLE_ANIMATION(Kokuwamon);
 SINGLE_ANIMATION(Sunflora);
-#endif //P_FAMILY_SUNKERN
+#endif //P_FAMILY_KOKUWAMON
 #if P_FAMILY_YANMA
 SINGLE_ANIMATION(Yanma);
 #if P_GEN_4_CROSS_EVOS

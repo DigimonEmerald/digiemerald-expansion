@@ -536,10 +536,10 @@ gCryTable::
 	cry Cry_Kokabuimon
 	cry Cry_Ambipom
 .endif @ P_FAMILY_KOKABUIMON
-.if P_FAMILY_SUNKERN == TRUE
-	cry Cry_Sunkern
+.if P_FAMILY_KOKUWAMON == TRUE
+	cry Cry_Kokuwamon
 	cry Cry_Sunflora
-.endif @ P_FAMILY_SUNKERN
+.endif @ P_FAMILY_KOKUWAMON
 .if P_FAMILY_YANMA == TRUE
 	cry Cry_Yanma
 .if P_GEN_4_CROSS_EVOS == TRUE
@@ -2962,10 +2962,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Kokabuimon
 	cry_reverse Cry_Ambipom
 .endif @ P_FAMILY_KOKABUIMON
-.if P_FAMILY_SUNKERN == TRUE
-	cry_reverse Cry_Sunkern
+.if P_FAMILY_KOKUWAMON == TRUE
+	cry_reverse Cry_Kokuwamon
 	cry_reverse Cry_Sunflora
-.endif @ P_FAMILY_SUNKERN
+.endif @ P_FAMILY_KOKUWAMON
 .if P_FAMILY_YANMA == TRUE
 	cry_reverse Cry_Yanma
 .if P_GEN_4_CROSS_EVOS == TRUE

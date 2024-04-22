@@ -2229,8 +2229,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_KOKABUIMON
 
-#if P_FAMILY_SUNKERN
-    [SPECIES_SUNKERN] =
+#if P_FAMILY_KOKUWAMON
+    [SPECIES_KOKUWAMON] =
     {
         .baseHP        = 30,
         .baseAttack    = 30,
@@ -2249,14 +2249,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_SOLAR_POWER, ABILITY_EARLY_BIRD },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Sunkern"),
-        .cryId = CRY_SUNKERN,
-        .natDexNum = NATIONAL_DEX_SUNKERN,
+        .speciesName = _("Kokuwamon"),
+        .cryId = CRY_KOKUWAMON,
+        .natDexNum = NATIONAL_DEX_KOKUWAMON,
         .categoryName = _("Seed"),
         .height = 3,
         .weight = 18,
         .description = COMPOUND_STRING(
-            "Sunkern try to minimize movement to\n"
+            "Kokuwamon try to minimize movement to\n"
             "conserve the nutrients they have stored\n"
             "in their bodies for evolution. They will\n"
             "not eat, subsisting only on morning dew."),
@@ -2264,22 +2264,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Sunkern,
+        .frontPic = gMonFrontPic_Kokuwamon,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = 17,
-        .frontAnimFrames = sAnims_Sunkern,
+        .frontAnimFrames = sAnims_Kokuwamon,
         .frontAnimId = ANIM_H_JUMPS,
-        .backPic = gMonBackPic_Sunkern,
+        .backPic = gMonBackPic_Kokuwamon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Sunkern,
-        .shinyPalette = gMonShinyPalette_Sunkern,
-        .iconSprite = gMonIcon_Sunkern,
+        .palette = gMonPalette_Kokuwamon,
+        .shinyPalette = gMonShinyPalette_Kokuwamon,
+        .iconSprite = gMonIcon_Kokuwamon,
         .iconPalIndex = 1,
-        FOOTPRINT(Sunkern)
-        .levelUpLearnset = sSunkernLevelUpLearnset,
-        .teachableLearnset = sSunkernTeachableLearnset,
+        FOOTPRINT(Kokuwamon)
+        .levelUpLearnset = sKokuwamonLevelUpLearnset,
+        .teachableLearnset = sKokuwamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_SUNFLORA}),
     },
 
@@ -2334,7 +2334,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sSunfloraLevelUpLearnset,
         .teachableLearnset = sSunfloraTeachableLearnset,
     },
-#endif //P_FAMILY_SUNKERN
+#endif //P_FAMILY_KOKUWAMON
 
 #if P_FAMILY_YANMA
     [SPECIES_YANMA] =

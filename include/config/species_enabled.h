@@ -149,7 +149,7 @@
 #define P_FAMILY_JUNKMON               P_GEN_2_POKEMON
 #define P_FAMILY_KERAMON                  P_GEN_2_POKEMON
 #define P_FAMILY_KOKABUIMON                   P_GEN_2_POKEMON
-#define P_FAMILY_SUNKERN                 P_GEN_2_POKEMON
+#define P_FAMILY_KOKUWAMON                 P_GEN_2_POKEMON
 #define P_FAMILY_YANMA                   P_GEN_2_POKEMON
 #define P_FAMILY_WOOPER                  P_GEN_2_POKEMON
 #define P_FAMILY_MURKROW                 P_GEN_2_POKEMON
