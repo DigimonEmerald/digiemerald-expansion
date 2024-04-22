@@ -1839,8 +1839,8 @@ const u16 gEggMoves[] = {
         MOVE_THROAT_CHOP),
 #endif //P_FAMILY_MUSHROOMON
 
-#if P_FAMILY_TEDDIURSA
-    egg_moves(TEDDIURSA,
+#if P_FAMILY_NEEMON
+    egg_moves(NEEMON,
         MOVE_CRUNCH,
         MOVE_TAKE_DOWN,
         MOVE_SEISMIC_TOSS,
@@ -1856,7 +1856,7 @@ const u16 gEggMoves[] = {
         MOVE_BELLY_DRUM,
         MOVE_CHIP_AWAY,
         MOVE_PLAY_ROUGH),
-#endif //P_FAMILY_TEDDIURSA
+#endif //P_FAMILY_NEEMON
 
 #if P_FAMILY_SLUGMA
     egg_moves(SLUGMA,

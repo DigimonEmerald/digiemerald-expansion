@@ -4317,8 +4317,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_MUSHROOMON
 
-#if P_FAMILY_TEDDIURSA
-    [SPECIES_TEDDIURSA] =
+#if P_FAMILY_NEEMON
+    [SPECIES_NEEMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 80,
@@ -4338,37 +4338,37 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_PICKUP, ABILITY_QUICK_FEET, ABILITY_HONEY_GATHER },
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
-        .speciesName = _("Teddiursa"),
-        .cryId = CRY_TEDDIURSA,
-        .natDexNum = NATIONAL_DEX_TEDDIURSA,
+        .speciesName = _("Neemon"),
+        .cryId = CRY_NEEMON,
+        .natDexNum = NATIONAL_DEX_NEEMON,
         .categoryName = _("Little Bear"),
         .height = 6,
         .weight = 88,
         .description = COMPOUND_STRING(
             "It licks its palms that are sweetened by\n"
-            "being soaked in honey. A Teddiursa makes\n"
+            "being soaked in honey. A Neemon makes\n"
             "its own honey by blending fruits and pollen\n"
             "collected by Keemon."),
         .pokemonScale = 455,
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Teddiursa,
+        .frontPic = gMonFrontPic_Neemon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Teddiursa,
+        .frontAnimFrames = sAnims_Neemon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Teddiursa,
+        .backPic = gMonBackPic_Neemon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Teddiursa,
-        .shinyPalette = gMonShinyPalette_Teddiursa,
-        .iconSprite = gMonIcon_Teddiursa,
+        .palette = gMonPalette_Neemon,
+        .shinyPalette = gMonShinyPalette_Neemon,
+        .iconSprite = gMonIcon_Neemon,
         .iconPalIndex = 0,
-        FOOTPRINT(Teddiursa)
-        .levelUpLearnset = sTeddiursaLevelUpLearnset,
-        .teachableLearnset = sTeddiursaTeachableLearnset,
+        FOOTPRINT(Neemon)
+        .levelUpLearnset = sNeemonLevelUpLearnset,
+        .teachableLearnset = sNeemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_URSARING}),
     },
 
@@ -4536,7 +4536,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .formSpeciesIdTable = sUrsalunaFormSpeciesIdTable,
     },
 #endif //P_GEN_8_CROSS_EVOS
-#endif //P_FAMILY_TEDDIURSA
+#endif //P_FAMILY_NEEMON
 
 #if P_FAMILY_SLUGMA
     [SPECIES_SLUGMA] =

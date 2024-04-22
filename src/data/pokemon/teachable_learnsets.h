@@ -11050,8 +11050,8 @@ static const u16 sSneaslerTeachableLearnset[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_MUSHROOMON
 
-#if P_FAMILY_TEDDIURSA
-static const u16 sTeddiursaTeachableLearnset[] = {
+#if P_FAMILY_NEEMON
+static const u16 sNeemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -11218,7 +11218,7 @@ static const u16 sUrsalunaBloodmoonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_8_CROSS_EVOS
-#endif //P_FAMILY_TEDDIURSA
+#endif //P_FAMILY_NEEMON
 
 #if P_FAMILY_SLUGMA
 static const u16 sSlugmaTeachableLearnset[] = {

@@ -683,13 +683,13 @@ static const u16 sMushroomonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_MUSHROOMON
 
-#if P_FAMILY_TEDDIURSA
+#if P_FAMILY_NEEMON
 static const u16 sUrsalunaFormSpeciesIdTable[] = {
     SPECIES_URSALUNA,
     SPECIES_URSALUNA_BLOODMOON,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_TEDDIURSA
+#endif //P_FAMILY_NEEMON
 
 #if P_FAMILY_CORSOLA
 static const u16 sCorsolaFormSpeciesIdTable[] = {

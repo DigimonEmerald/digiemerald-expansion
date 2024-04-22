@@ -620,13 +620,13 @@ gCryTable::
 	cry Cry_Sneasler
 .endif @ P_HISUIAN_FORMS
 .endif @ P_FAMILY_MUSHROOMON
-.if P_FAMILY_TEDDIURSA == TRUE
-	cry Cry_Teddiursa
+.if P_FAMILY_NEEMON == TRUE
+	cry Cry_Neemon
 	cry Cry_Ursaring
 .if P_GEN_8_CROSS_EVOS == TRUE
 	cry Cry_Ursaluna
 .endif @ P_GEN_8_CROSS_EVOS
-.endif @ P_FAMILY_TEDDIURSA
+.endif @ P_FAMILY_NEEMON
 .if P_FAMILY_SLUGMA == TRUE
 	cry Cry_Slugma
 	cry Cry_Magcargo
@@ -3046,13 +3046,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Sneasler
 .endif @ P_HISUIAN_FORMS
 .endif @ P_FAMILY_MUSHROOMON
-.if P_FAMILY_TEDDIURSA == TRUE
-	cry_reverse Cry_Teddiursa
+.if P_FAMILY_NEEMON == TRUE
+	cry_reverse Cry_Neemon
 	cry_reverse Cry_Ursaring
 .if P_GEN_8_CROSS_EVOS == TRUE
 	cry_reverse Cry_Ursaluna
 .endif @ P_GEN_8_CROSS_EVOS
-.endif @ P_FAMILY_TEDDIURSA
+.endif @ P_FAMILY_NEEMON
 .if P_FAMILY_SLUGMA == TRUE
 	cry_reverse Cry_Slugma
 	cry_reverse Cry_Magcargo

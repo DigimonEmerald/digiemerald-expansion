@@ -1835,10 +1835,10 @@ Cry_Sneasler::
 .endif @ P_HISUIAN_FORMS
 .endif @ P_FAMILY_MUSHROOMON
 
-.if P_FAMILY_TEDDIURSA == TRUE
+.if P_FAMILY_NEEMON == TRUE
 	.align 2
-Cry_Teddiursa::
-	.incbin "sound/direct_sound_samples/cries/teddiursa.bin"
+Cry_Neemon::
+	.incbin "sound/direct_sound_samples/cries/neemon.bin"
 
 	.align 2
 Cry_Ursaring::
@@ -1849,7 +1849,7 @@ Cry_Ursaring::
 Cry_Ursaluna::
 	.incbin "sound/direct_sound_samples/cries/ursaluna.bin"
 .endif @ P_GEN_8_CROSS_EVOS
-.endif @ P_FAMILY_TEDDIURSA
+.endif @ P_FAMILY_NEEMON
 
 .if P_FAMILY_SLUGMA == TRUE
 	.align 2

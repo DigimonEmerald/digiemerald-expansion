@@ -3512,14 +3512,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_MUSHROOMON
 
-#if P_FAMILY_TEDDIURSA
-    const u32 gMonFrontPic_Teddiursa[] = INCBIN_U32("graphics/pokemon/teddiursa/anim_front.4bpp.lz");
-    const u32 gMonPalette_Teddiursa[] = INCBIN_U32("graphics/pokemon/teddiursa/normal.gbapal.lz");
-    const u32 gMonBackPic_Teddiursa[] = INCBIN_U32("graphics/pokemon/teddiursa/back.4bpp.lz");
-    const u32 gMonShinyPalette_Teddiursa[] = INCBIN_U32("graphics/pokemon/teddiursa/shiny.gbapal.lz");
-    const u8 gMonIcon_Teddiursa[] = INCBIN_U8("graphics/pokemon/teddiursa/icon.4bpp");
+#if P_FAMILY_NEEMON
+    const u32 gMonFrontPic_Neemon[] = INCBIN_U32("graphics/pokemon/neemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Neemon[] = INCBIN_U32("graphics/pokemon/neemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Neemon[] = INCBIN_U32("graphics/pokemon/neemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Neemon[] = INCBIN_U32("graphics/pokemon/neemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Neemon[] = INCBIN_U8("graphics/pokemon/neemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Teddiursa[] = INCBIN_U8("graphics/pokemon/teddiursa/footprint.1bpp");
+    const u8 gMonFootprint_Neemon[] = INCBIN_U8("graphics/pokemon/neemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Ursaring[] = INCBIN_U32("graphics/pokemon/ursaring/anim_front.4bpp.lz");
@@ -3550,7 +3550,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_UrsalunaBloodmoon[] = INCBIN_U32("graphics/pokemon/ursaluna/bloodmoon/shiny.gbapal.lz");
     const u8 gMonIcon_UrsalunaBloodmoon[] = INCBIN_U8("graphics/pokemon/ursaluna/bloodmoon/icon.4bpp");
 #endif //P_GEN_8_CROSS_EVOS
-#endif //P_FAMILY_TEDDIURSA
+#endif //P_FAMILY_NEEMON
 
 #if P_FAMILY_SLUGMA
     const u32 gMonFrontPic_Slugma[] = INCBIN_U32("graphics/pokemon/slugma/anim_front.4bpp.lz");

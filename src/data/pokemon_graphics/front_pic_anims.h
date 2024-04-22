@@ -3088,8 +3088,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Sneasler);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_MUSHROOMON
 
-#if P_FAMILY_TEDDIURSA
-static const union AnimCmd sAnim_Teddiursa_1[] =
+#if P_FAMILY_NEEMON
+static const union AnimCmd sAnim_Neemon_1[] =
 {
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 20),
@@ -3107,7 +3107,7 @@ static const union AnimCmd sAnim_Ursaring_1[] =
 PLACEHOLDER_ANIM_SINGLE_FRAME(Ursaluna);
 PLACEHOLDER_ANIM_SINGLE_FRAME(UrsalunaBloodmoon);
 #endif //P_GEN_8_CROSS_EVOS
-#endif //P_FAMILY_TEDDIURSA
+#endif //P_FAMILY_NEEMON
 
 #if P_FAMILY_SLUGMA
 static const union AnimCmd sAnim_Slugma_1[] =
@@ -10914,14 +10914,14 @@ SINGLE_ANIMATION(MushroomonHisuian);
 SINGLE_ANIMATION(Sneasler);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_MUSHROOMON
-#if P_FAMILY_TEDDIURSA
-SINGLE_ANIMATION(Teddiursa);
+#if P_FAMILY_NEEMON
+SINGLE_ANIMATION(Neemon);
 SINGLE_ANIMATION(Ursaring);
 #if P_GEN_8_CROSS_EVOS
 SINGLE_ANIMATION(Ursaluna);
 SINGLE_ANIMATION(UrsalunaBloodmoon);
 #endif //P_GEN_8_CROSS_EVOS
-#endif //P_FAMILY_TEDDIURSA
+#endif //P_FAMILY_NEEMON
 #if P_FAMILY_SLUGMA
 SINGLE_ANIMATION(Slugma);
 SINGLE_ANIMATION(Magcargo);

@@ -4810,8 +4810,8 @@ static const struct LevelUpMove sSneaslerLevelUpLearnset[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_MUSHROOMON
 
-#if P_FAMILY_TEDDIURSA
-static const struct LevelUpMove sTeddiursaLevelUpLearnset[] = {
+#if P_FAMILY_NEEMON
+static const struct LevelUpMove sNeemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 7, MOVE_LICK),
@@ -4874,7 +4874,7 @@ static const struct LevelUpMove sUrsalunaBloodmoonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_8_CROSS_EVOS
-#endif //P_FAMILY_TEDDIURSA
+#endif //P_FAMILY_NEEMON
 
 #if P_FAMILY_SLUGMA
 static const struct LevelUpMove sSlugmaLevelUpLearnset[] = {
