@@ -527,11 +527,11 @@ gCryTable::
 	cry Cry_Bonsly
 	cry Cry_Junkmon
 .endif @ P_FAMILY_JUNKMON
-.if P_FAMILY_HOPPIP == TRUE
-	cry Cry_Hoppip
+.if P_FAMILY_KERAMON == TRUE
+	cry Cry_Keramon
 	cry Cry_Skiploom
 	cry Cry_Jumpluff
-.endif @ P_FAMILY_HOPPIP
+.endif @ P_FAMILY_KERAMON
 .if P_FAMILY_AIPOM == TRUE
 	cry Cry_Aipom
 	cry Cry_Ambipom
@@ -2953,11 +2953,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Bonsly
 	cry_reverse Cry_Junkmon
 .endif @ P_FAMILY_JUNKMON
-.if P_FAMILY_HOPPIP == TRUE
-	cry_reverse Cry_Hoppip
+.if P_FAMILY_KERAMON == TRUE
+	cry_reverse Cry_Keramon
 	cry_reverse Cry_Skiploom
 	cry_reverse Cry_Jumpluff
-.endif @ P_FAMILY_HOPPIP
+.endif @ P_FAMILY_KERAMON
 .if P_FAMILY_AIPOM == TRUE
 	cry_reverse Cry_Aipom
 	cry_reverse Cry_Ambipom

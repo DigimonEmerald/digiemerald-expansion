@@ -1551,8 +1551,8 @@ const u16 gEggMoves[] = {
         MOVE_ENDURE),
 #endif //P_FAMILY_JUNKMON
 
-#if P_FAMILY_HOPPIP
-    egg_moves(HOPPIP,
+#if P_FAMILY_KERAMON
+    egg_moves(KERAMON,
         MOVE_CONFUSION,
         MOVE_ENCORE,
         MOVE_DOUBLE_EDGE,
@@ -1565,7 +1565,7 @@ const u16 gEggMoves[] = {
         MOVE_ENDURE,
         MOVE_GRASSY_TERRAIN,
         MOVE_STRENGTH_SAP),
-#endif //P_FAMILY_HOPPIP
+#endif //P_FAMILY_KERAMON
 
 #if P_FAMILY_AIPOM
     egg_moves(AIPOM,

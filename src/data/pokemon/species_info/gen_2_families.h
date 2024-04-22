@@ -1941,8 +1941,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_JUNKMON
 
-#if P_FAMILY_HOPPIP
-    [SPECIES_HOPPIP] =
+#if P_FAMILY_KERAMON
+    [SPECIES_KERAMON] =
     {
         .baseHP        = 35,
         .baseAttack    = 35,
@@ -1961,38 +1961,38 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_GRASS),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_LEAF_GUARD, ABILITY_INFILTRATOR },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Hoppip"),
-        .cryId = CRY_HOPPIP,
-        .natDexNum = NATIONAL_DEX_HOPPIP,
+        .speciesName = _("Keramon"),
+        .cryId = CRY_KERAMON,
+        .natDexNum = NATIONAL_DEX_KERAMON,
         .categoryName = _("Cottonweed"),
         .height = 4,
         .weight = 5,
         .description = COMPOUND_STRING(
             "This Pokémon drifts and floats with the\n"
             "wind. If it senses the approach of strong\n"
-            "winds, a Hoppip links leaves with others\n"
+            "winds, a Keramon links leaves with others\n"
             "to prepare against being blown away."),
         .pokemonScale = 562,
         .pokemonOffset = -7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Hoppip,
+        .frontPic = gMonFrontPic_Keramon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Hoppip,
+        .frontAnimFrames = sAnims_Keramon,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 15,
-        .backPic = gMonBackPic_Hoppip,
+        .backPic = gMonBackPic_Keramon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Hoppip,
-        .shinyPalette = gMonShinyPalette_Hoppip,
-        .iconSprite = gMonIcon_Hoppip,
+        .palette = gMonPalette_Keramon,
+        .shinyPalette = gMonShinyPalette_Keramon,
+        .iconSprite = gMonIcon_Keramon,
         .iconPalIndex = 1,
-        FOOTPRINT(Hoppip)
-        .levelUpLearnset = sHoppipLevelUpLearnset,
-        .teachableLearnset = sHoppipTeachableLearnset,
+        FOOTPRINT(Keramon)
+        .levelUpLearnset = sKeramonLevelUpLearnset,
+        .teachableLearnset = sKeramonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_SKIPLOOM}),
     },
 
@@ -2110,7 +2110,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sJumpluffLevelUpLearnset,
         .teachableLearnset = sJumpluffTeachableLearnset,
     },
-#endif //P_FAMILY_HOPPIP
+#endif //P_FAMILY_KERAMON
 
 #if P_FAMILY_AIPOM
     [SPECIES_AIPOM] =

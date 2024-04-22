@@ -2950,14 +2950,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonBackPic_JunkmonF[] = INCBIN_U32("graphics/pokemon/junkmon/backf.4bpp.lz");
 #endif //P_FAMILY_JUNKMON
 
-#if P_FAMILY_HOPPIP
-    const u32 gMonFrontPic_Hoppip[] = INCBIN_U32("graphics/pokemon/hoppip/anim_front.4bpp.lz");
-    const u32 gMonPalette_Hoppip[] = INCBIN_U32("graphics/pokemon/hoppip/normal.gbapal.lz");
-    const u32 gMonBackPic_Hoppip[] = INCBIN_U32("graphics/pokemon/hoppip/back.4bpp.lz");
-    const u32 gMonShinyPalette_Hoppip[] = INCBIN_U32("graphics/pokemon/hoppip/shiny.gbapal.lz");
-    const u8 gMonIcon_Hoppip[] = INCBIN_U8("graphics/pokemon/hoppip/icon.4bpp");
+#if P_FAMILY_KERAMON
+    const u32 gMonFrontPic_Keramon[] = INCBIN_U32("graphics/pokemon/keramon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Keramon[] = INCBIN_U32("graphics/pokemon/keramon/normal.gbapal.lz");
+    const u32 gMonBackPic_Keramon[] = INCBIN_U32("graphics/pokemon/keramon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Keramon[] = INCBIN_U32("graphics/pokemon/keramon/shiny.gbapal.lz");
+    const u8 gMonIcon_Keramon[] = INCBIN_U8("graphics/pokemon/keramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Hoppip[] = INCBIN_U8("graphics/pokemon/hoppip/footprint.1bpp");
+    const u8 gMonFootprint_Keramon[] = INCBIN_U8("graphics/pokemon/keramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Skiploom[] = INCBIN_U32("graphics/pokemon/skiploom/anim_front.4bpp.lz");
@@ -2977,7 +2977,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Jumpluff[] = INCBIN_U8("graphics/pokemon/jumpluff/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_HOPPIP
+#endif //P_FAMILY_KERAMON
 
 #if P_FAMILY_AIPOM
     const u32 gMonFrontPic_Aipom[] = INCBIN_U32("graphics/pokemon/aipom/anim_front.4bpp.lz");

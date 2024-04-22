@@ -9696,8 +9696,8 @@ static const u16 sJunkmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_JUNKMON
 
-#if P_FAMILY_HOPPIP
-static const u16 sHoppipTeachableLearnset[] = {
+#if P_FAMILY_KERAMON
+static const u16 sKeramonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
@@ -9781,7 +9781,7 @@ static const u16 sJumpluffTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_HOPPIP
+#endif //P_FAMILY_KERAMON
 
 #if P_FAMILY_AIPOM
 static const u16 sAipomTeachableLearnset[] = {

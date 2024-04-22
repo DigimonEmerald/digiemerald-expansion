@@ -2680,8 +2680,8 @@ static const union AnimCmd sAnim_Junkmon_1[] =
 };
 #endif //P_FAMILY_JUNKMON
 
-#if P_FAMILY_HOPPIP
-static const union AnimCmd sAnim_Hoppip_1[] =
+#if P_FAMILY_KERAMON
+static const union AnimCmd sAnim_Keramon_1[] =
 {
     ANIMCMD_FRAME(1, 25),
     ANIMCMD_FRAME(0, 25),
@@ -2713,7 +2713,7 @@ static const union AnimCmd sAnim_Jumpluff_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_HOPPIP
+#endif //P_FAMILY_KERAMON
 
 #if P_FAMILY_AIPOM
 static const union AnimCmd sAnim_Aipom_1[] =
@@ -10812,11 +10812,11 @@ SINGLE_ANIMATION(Bonsly);
 #endif //P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Junkmon);
 #endif //P_FAMILY_JUNKMON
-#if P_FAMILY_HOPPIP
-SINGLE_ANIMATION(Hoppip);
+#if P_FAMILY_KERAMON
+SINGLE_ANIMATION(Keramon);
 SINGLE_ANIMATION(Skiploom);
 SINGLE_ANIMATION(Jumpluff);
-#endif //P_FAMILY_HOPPIP
+#endif //P_FAMILY_KERAMON
 #if P_FAMILY_AIPOM
 SINGLE_ANIMATION(Aipom);
 #if P_GEN_4_CROSS_EVOS

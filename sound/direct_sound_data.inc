@@ -1629,10 +1629,10 @@ Cry_Junkmon::
 	.incbin "sound/direct_sound_samples/cries/junkmon.bin"
 .endif @ P_FAMILY_JUNKMON
 
-.if P_FAMILY_HOPPIP == TRUE
+.if P_FAMILY_KERAMON == TRUE
 	.align 2
-Cry_Hoppip::
-	.incbin "sound/direct_sound_samples/cries/hoppip.bin"
+Cry_Keramon::
+	.incbin "sound/direct_sound_samples/cries/keramon.bin"
 
 	.align 2
 Cry_Skiploom::
@@ -1641,7 +1641,7 @@ Cry_Skiploom::
 	.align 2
 Cry_Jumpluff::
 	.incbin "sound/direct_sound_samples/cries/jumpluff.bin"
-.endif @ P_FAMILY_HOPPIP
+.endif @ P_FAMILY_KERAMON
 
 .if P_FAMILY_AIPOM == TRUE
 	.align 2

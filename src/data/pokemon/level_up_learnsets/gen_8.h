@@ -5482,8 +5482,8 @@ static const struct LevelUpMove sJunkmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_JUNKMON
 
-#if P_FAMILY_HOPPIP
-static const struct LevelUpMove sHoppipLevelUpLearnset[] = {
+#if P_FAMILY_KERAMON
+static const struct LevelUpMove sKeramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 4, MOVE_SYNTHESIS),
@@ -5558,7 +5558,7 @@ static const struct LevelUpMove sJumpluffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(69, MOVE_MEMENTO),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_HOPPIP
+#endif //P_FAMILY_KERAMON
 
 #if P_FAMILY_AIPOM
 static const struct LevelUpMove sAipomLevelUpLearnset[] = {
