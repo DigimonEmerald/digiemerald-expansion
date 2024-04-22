@@ -3120,7 +3120,7 @@ static const union AnimCmd sAnim_Otamamon_red_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Magcargo_1[] =
+static const union AnimCmd sAnim_Otamamon_x_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -10924,7 +10924,7 @@ SINGLE_ANIMATION(UrsalunaBloodmoon);
 #endif //P_FAMILY_NEEMON
 #if P_FAMILY_OTAMAMON_RED
 SINGLE_ANIMATION(Otamamon_red);
-SINGLE_ANIMATION(Magcargo);
+SINGLE_ANIMATION(Otamamon_x);
 #endif //P_FAMILY_OTAMAMON_RED
 #if P_FAMILY_SWINUB
 SINGLE_ANIMATION(Swinub);

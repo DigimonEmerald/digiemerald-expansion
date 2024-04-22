@@ -6397,7 +6397,7 @@ static const struct LevelUpMove sOtamamon_redLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sMagcargoLevelUpLearnset[] = {
+static const struct LevelUpMove sOtamamon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SHELL_SMASH),
     LEVEL_UP_MOVE( 1, MOVE_SHELL_SMASH),
     LEVEL_UP_MOVE( 1, MOVE_EARTH_POWER),

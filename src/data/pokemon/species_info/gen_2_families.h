@@ -4589,10 +4589,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Otamamon_red)
         .levelUpLearnset = sOtamamon_redLevelUpLearnset,
         .teachableLearnset = sOtamamon_redTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_MAGCARGO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_OTAMAMON_X}),
     },
 
-    [SPECIES_MAGCARGO] =
+    [SPECIES_OTAMAMON_X] =
     {
         .baseHP        = P_UPDATED_STATS >= GEN_7 ? 60 : 50,
         .baseAttack    = 50,
@@ -4618,9 +4618,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_MAGMA_ARMOR, ABILITY_FLAME_BODY, ABILITY_WEAK_ARMOR },
         .bodyColor = BODY_COLOR_RED,
         .noFlip = TRUE,
-        .speciesName = _("Magcargo"),
-        .cryId = CRY_MAGCARGO,
-        .natDexNum = NATIONAL_DEX_MAGCARGO,
+        .speciesName = _("Otamamon_x"),
+        .cryId = CRY_OTAMAMON_X,
+        .natDexNum = NATIONAL_DEX_OTAMAMON_X,
         .categoryName = _("Lava"),
         .height = 8,
         .weight = 550,
@@ -4628,27 +4628,27 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "The shell on its back is made of hardened\n"
             "magma. Tens of thousands of years spent\n"
             "living in volcanic craters have turned\n"
-            "Magcargo's bodies into magma."),
+            "Otamamon_x's bodies into magma."),
         .pokemonScale = 332,
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Magcargo,
+        .frontPic = gMonFrontPic_Otamamon_x,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Magcargo,
+        .frontAnimFrames = sAnims_Otamamon_x,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Magcargo,
+        .backPic = gMonBackPic_Otamamon_x,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_Magcargo,
-        .shinyPalette = gMonShinyPalette_Magcargo,
-        .iconSprite = gMonIcon_Magcargo,
+        .palette = gMonPalette_Otamamon_x,
+        .shinyPalette = gMonShinyPalette_Otamamon_x,
+        .iconSprite = gMonIcon_Otamamon_x,
         .iconPalIndex = 0,
-        FOOTPRINT(Magcargo)
-        .levelUpLearnset = sMagcargoLevelUpLearnset,
-        .teachableLearnset = sMagcargoTeachableLearnset,
+        FOOTPRINT(Otamamon_x)
+        .levelUpLearnset = sOtamamon_xLevelUpLearnset,
+        .teachableLearnset = sOtamamon_xTeachableLearnset,
     },
 #endif //P_FAMILY_OTAMAMON_RED
 

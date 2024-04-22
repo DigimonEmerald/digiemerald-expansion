@@ -1857,8 +1857,8 @@ Cry_Otamamon_red::
 	.incbin "sound/direct_sound_samples/cries/otamamon_red.bin"
 
 	.align 2
-Cry_Magcargo::
-	.incbin "sound/direct_sound_samples/cries/magcargo.bin"
+Cry_Otamamon_x::
+	.incbin "sound/direct_sound_samples/cries/otamamon_x.bin"
 .endif @ P_FAMILY_OTAMAMON_RED
 
 .if P_FAMILY_SWINUB == TRUE

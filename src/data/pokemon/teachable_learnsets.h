@@ -11251,7 +11251,7 @@ static const u16 sOtamamon_redTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sMagcargoTeachableLearnset[] = {
+static const u16 sOtamamon_xTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_EARTHQUAKE,

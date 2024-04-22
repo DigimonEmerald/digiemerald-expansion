@@ -629,7 +629,7 @@ gCryTable::
 .endif @ P_FAMILY_NEEMON
 .if P_FAMILY_OTAMAMON_RED == TRUE
 	cry Cry_Otamamon_red
-	cry Cry_Magcargo
+	cry Cry_Otamamon_x
 .endif @ P_FAMILY_OTAMAMON_RED
 .if P_FAMILY_SWINUB == TRUE
 	cry Cry_Swinub
@@ -3055,7 +3055,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_NEEMON
 .if P_FAMILY_OTAMAMON_RED == TRUE
 	cry_reverse Cry_Otamamon_red
-	cry_reverse Cry_Magcargo
+	cry_reverse Cry_Otamamon_x
 .endif @ P_FAMILY_OTAMAMON_RED
 .if P_FAMILY_SWINUB == TRUE
 	cry_reverse Cry_Swinub

@@ -135,7 +135,7 @@ SINGLE_BATTLE_TEST("Weak Armor doesn't interrupt multi hit moves if Defense can'
 {
     u32 j;
     GIVEN {
-        PLAYER(SPECIES_MAGCARGO) { Ability(ABILITY_WEAK_ARMOR); Defense(999); }
+        PLAYER(SPECIES_OTAMAMON_X) { Ability(ABILITY_WEAK_ARMOR); Defense(999); }
         OPPONENT(SPECIES_TOKOMON) { Ability(ABILITY_SKILL_LINK); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SCREECH); }
@@ -146,21 +146,21 @@ SINGLE_BATTLE_TEST("Weak Armor doesn't interrupt multi hit moves if Defense can'
         {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FURY_SWIPES, opponent);
             ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
-            MESSAGE("Magcargo's Weak Armor lowered its Defense!");
-            MESSAGE("Magcargo's Weak Armor raised its Speed!");
+            MESSAGE("Otamamon_x's Weak Armor lowered its Defense!");
+            MESSAGE("Otamamon_x's Weak Armor raised its Speed!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FURY_SWIPES, opponent);
         ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
-        MESSAGE("Magcargo's Defense won't go lower!");
-        MESSAGE("Magcargo's Weak Armor raised its Speed!");
+        MESSAGE("Otamamon_x's Defense won't go lower!");
+        MESSAGE("Otamamon_x's Weak Armor raised its Speed!");
         for (j = 0; j < 2; j++)
         {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FURY_SWIPES, opponent);
             // Ability doesn't activate if neither stat can be changed.
             NONE_OF {
                 ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
-                MESSAGE("Magcargo's Defense won't go lower!");
-                MESSAGE("Magcargo's Speed won't go higher!");
+                MESSAGE("Otamamon_x's Defense won't go lower!");
+                MESSAGE("Otamamon_x's Speed won't go higher!");
             }
         }
     } THEN {
@@ -173,7 +173,7 @@ SINGLE_BATTLE_TEST("Weak Armor doesn't interrupt multi hit moves if Speed can't 
 {
     u32 j;
     GIVEN {
-        PLAYER(SPECIES_MAGCARGO) { Ability(ABILITY_WEAK_ARMOR); Defense(999); }
+        PLAYER(SPECIES_OTAMAMON_X) { Ability(ABILITY_WEAK_ARMOR); Defense(999); }
         OPPONENT(SPECIES_TOKOMON) { Ability(ABILITY_SKILL_LINK); }
     } WHEN {
         TURN { MOVE(player, MOVE_AGILITY); }
@@ -182,14 +182,14 @@ SINGLE_BATTLE_TEST("Weak Armor doesn't interrupt multi hit moves if Speed can't 
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FURY_SWIPES, opponent);
         ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
-        MESSAGE("Magcargo's Weak Armor lowered its Defense!");
-        MESSAGE("Magcargo's Weak Armor raised its Speed!");
+        MESSAGE("Otamamon_x's Weak Armor lowered its Defense!");
+        MESSAGE("Otamamon_x's Weak Armor raised its Speed!");
         for (j = 0; j < 4; j++)
         {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FURY_SWIPES, opponent);
             ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
-            MESSAGE("Magcargo's Weak Armor lowered its Defense!");
-            MESSAGE("Magcargo's Speed won't go higher!");
+            MESSAGE("Otamamon_x's Weak Armor lowered its Defense!");
+            MESSAGE("Otamamon_x's Speed won't go higher!");
         }
     } THEN {
         EXPECT_EQ(player->statStages[STAT_DEF], DEFAULT_STAT_STAGE - 5);

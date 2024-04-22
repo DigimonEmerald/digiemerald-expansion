@@ -3562,13 +3562,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Otamamon_red[] = INCBIN_U8("graphics/pokemon/otamamon_red/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Magcargo[] = INCBIN_U32("graphics/pokemon/magcargo/anim_front.4bpp.lz");
-    const u32 gMonPalette_Magcargo[] = INCBIN_U32("graphics/pokemon/magcargo/normal.gbapal.lz");
-    const u32 gMonBackPic_Magcargo[] = INCBIN_U32("graphics/pokemon/magcargo/back.4bpp.lz");
-    const u32 gMonShinyPalette_Magcargo[] = INCBIN_U32("graphics/pokemon/magcargo/shiny.gbapal.lz");
-    const u8 gMonIcon_Magcargo[] = INCBIN_U8("graphics/pokemon/magcargo/icon.4bpp");
+    const u32 gMonFrontPic_Otamamon_x[] = INCBIN_U32("graphics/pokemon/otamamon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Otamamon_x[] = INCBIN_U32("graphics/pokemon/otamamon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Otamamon_x[] = INCBIN_U32("graphics/pokemon/otamamon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Otamamon_x[] = INCBIN_U32("graphics/pokemon/otamamon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Otamamon_x[] = INCBIN_U8("graphics/pokemon/otamamon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Magcargo[] = INCBIN_U8("graphics/pokemon/magcargo/footprint.1bpp");
+    const u8 gMonFootprint_Otamamon_x[] = INCBIN_U8("graphics/pokemon/otamamon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_OTAMAMON_RED
 
