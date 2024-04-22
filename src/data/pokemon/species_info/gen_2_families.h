@@ -6267,8 +6267,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SOLARMON
 
-#if P_FAMILY_LUGIA
-    [SPECIES_LUGIA] =
+#if P_FAMILY_SPARROWMON
+    [SPECIES_SPARROWMON] =
     {
         .baseHP        = 106,
         .baseAttack    = 90,
@@ -6293,14 +6293,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_MULTISCALE },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Lugia"),
-        .cryId = CRY_LUGIA,
-        .natDexNum = NATIONAL_DEX_LUGIA,
+        .speciesName = _("Sparrowmon"),
+        .cryId = CRY_SPARROWMON,
+        .natDexNum = NATIONAL_DEX_SPARROWMON,
         .categoryName = _("Diving"),
         .height = 52,
         .weight = 2160,
         .description = COMPOUND_STRING(
-            "Lugia is so powerful even a light\n"
+            "Sparrowmon is so powerful even a light\n"
             "fluttering of its wings can blow apart\n"
             "houses. As a result, it chooses to live out\n"
             "of sight deep under the sea."),
@@ -6308,27 +6308,27 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 0,
         .trainerScale = 721,
         .trainerOffset = 19,
-        .frontPic = gMonFrontPic_Lugia,
+        .frontPic = gMonFrontPic_Sparrowmon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Lugia,
+        .frontAnimFrames = sAnims_Sparrowmon,
         .frontAnimId = ANIM_GROW_IN_STAGES,
         .frontAnimDelay = 20,
         .enemyMonElevation = 6,
-        .backPic = gMonBackPic_Lugia,
+        .backPic = gMonBackPic_Sparrowmon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
-        .palette = gMonPalette_Lugia,
-        .shinyPalette = gMonShinyPalette_Lugia,
-        .iconSprite = gMonIcon_Lugia,
+        .palette = gMonPalette_Sparrowmon,
+        .shinyPalette = gMonShinyPalette_Sparrowmon,
+        .iconSprite = gMonIcon_Sparrowmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Lugia)
+        FOOTPRINT(Sparrowmon)
         .isLegendary = TRUE,
-        .levelUpLearnset = sLugiaLevelUpLearnset,
-        .teachableLearnset = sLugiaTeachableLearnset,
+        .levelUpLearnset = sSparrowmonLevelUpLearnset,
+        .teachableLearnset = sSparrowmonTeachableLearnset,
     },
-#endif //P_FAMILY_LUGIA
+#endif //P_FAMILY_SPARROWMON
 
 #if P_FAMILY_HO_OH
     [SPECIES_HO_OH] =

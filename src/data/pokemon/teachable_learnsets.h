@@ -12228,8 +12228,8 @@ static const u16 sSpadamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SOLARMON
 
-#if P_FAMILY_LUGIA
-static const u16 sLugiaTeachableLearnset[] = {
+#if P_FAMILY_SPARROWMON
+static const u16 sSparrowmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,
@@ -12280,7 +12280,7 @@ static const u16 sLugiaTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_LUGIA
+#endif //P_FAMILY_SPARROWMON
 
 #if P_FAMILY_HO_OH
 static const u16 sHoOhTeachableLearnset[] = {

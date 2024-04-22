@@ -700,9 +700,9 @@ gCryTable::
 	cry Cry_SpadamonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SOLARMON
-.if P_FAMILY_LUGIA == TRUE
-	cry Cry_Lugia
-.endif @ P_FAMILY_LUGIA
+.if P_FAMILY_SPARROWMON == TRUE
+	cry Cry_Sparrowmon
+.endif @ P_FAMILY_SPARROWMON
 .if P_FAMILY_HO_OH == TRUE
 	cry Cry_HoOh
 .endif @ P_FAMILY_HO_OH
@@ -3126,9 +3126,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_SpadamonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SOLARMON
-.if P_FAMILY_LUGIA == TRUE
-	cry_reverse Cry_Lugia
-.endif @ P_FAMILY_LUGIA
+.if P_FAMILY_SPARROWMON == TRUE
+	cry_reverse Cry_Sparrowmon
+.endif @ P_FAMILY_SPARROWMON
 .if P_FAMILY_HO_OH == TRUE
 	cry_reverse Cry_HoOh
 .endif @ P_FAMILY_HO_OH

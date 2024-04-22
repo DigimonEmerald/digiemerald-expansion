@@ -250,7 +250,7 @@
 #define SPECIES_SOLARMON                                246
 #define SPECIES_SOUNBRDMON                                 247
 #define SPECIES_SPADAMON                               248
-#define SPECIES_LUGIA                                   249
+#define SPECIES_SPARROWMON                                   249
 #define SPECIES_HO_OH                                   250
 #define SPECIES_CELEBI                                  251
 #define SPECIES_TREECKO                                 252
@@ -1538,7 +1538,7 @@
 #define SPECIES_TERAPAGOS_TERASTAL                      1432
 #define SPECIES_TERAPAGOS_STELLAR                       1433
 #define SPECIES_PECHARUNT                               1434
-#define SPECIES_LUGIA_SHADOW                            1435
+#define SPECIES_SPARROWMON_SHADOW                            1435
 #define SPECIES_MOTHIM_SANDY_CLOAK                      1436
 #define SPECIES_MOTHIM_TRASH_CLOAK                      1437
 #define SPECIES_SCATTERBUG_POLAR                        1438

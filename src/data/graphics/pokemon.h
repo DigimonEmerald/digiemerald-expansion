@@ -3871,16 +3871,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SOLARMON
 
-#if P_FAMILY_LUGIA
-    const u32 gMonFrontPic_Lugia[] = INCBIN_U32("graphics/pokemon/lugia/anim_front.4bpp.lz");
-    const u32 gMonPalette_Lugia[] = INCBIN_U32("graphics/pokemon/lugia/normal.gbapal.lz");
-    const u32 gMonBackPic_Lugia[] = INCBIN_U32("graphics/pokemon/lugia/back.4bpp.lz");
-    const u32 gMonShinyPalette_Lugia[] = INCBIN_U32("graphics/pokemon/lugia/shiny.gbapal.lz");
-    const u8 gMonIcon_Lugia[] = INCBIN_U8("graphics/pokemon/lugia/icon.4bpp");
+#if P_FAMILY_SPARROWMON
+    const u32 gMonFrontPic_Sparrowmon[] = INCBIN_U32("graphics/pokemon/sparrowmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Sparrowmon[] = INCBIN_U32("graphics/pokemon/sparrowmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Sparrowmon[] = INCBIN_U32("graphics/pokemon/sparrowmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Sparrowmon[] = INCBIN_U32("graphics/pokemon/sparrowmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Sparrowmon[] = INCBIN_U8("graphics/pokemon/sparrowmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Lugia[] = INCBIN_U8("graphics/pokemon/lugia/footprint.1bpp");
+    const u8 gMonFootprint_Sparrowmon[] = INCBIN_U8("graphics/pokemon/sparrowmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_LUGIA
+#endif //P_FAMILY_SPARROWMON
 
 #if P_FAMILY_HO_OH
     const u32 gMonFrontPic_HoOh[] = INCBIN_U32("graphics/pokemon/ho_oh/anim_front.4bpp.lz");

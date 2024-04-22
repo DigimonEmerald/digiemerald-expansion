@@ -2012,11 +2012,11 @@ Cry_SpadamonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SOLARMON
 
-.if P_FAMILY_LUGIA == TRUE
+.if P_FAMILY_SPARROWMON == TRUE
 	.align 2
-Cry_Lugia::
-	.incbin "sound/direct_sound_samples/cries/lugia.bin"
-.endif @ P_FAMILY_LUGIA
+Cry_Sparrowmon::
+	.incbin "sound/direct_sound_samples/cries/sparrowmon.bin"
+.endif @ P_FAMILY_SPARROWMON
 
 .if P_FAMILY_HO_OH == TRUE
 	.align 2

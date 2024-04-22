@@ -3370,8 +3370,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(SpadamonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SOLARMON
 
-#if P_FAMILY_LUGIA
-static const union AnimCmd sAnim_Lugia_1[] =
+#if P_FAMILY_SPARROWMON
+static const union AnimCmd sAnim_Sparrowmon_1[] =
 {
     ANIMCMD_FRAME(1, 5),
     ANIMCMD_FRAME(0, 5),
@@ -3387,7 +3387,7 @@ static const union AnimCmd sAnim_Lugia_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_LUGIA
+#endif //P_FAMILY_SPARROWMON
 
 #if P_FAMILY_HO_OH
 static const union AnimCmd sAnim_HoOh_1[] =
@@ -10996,9 +10996,9 @@ SINGLE_ANIMATION(Spadamon);
 SINGLE_ANIMATION(SpadamonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SOLARMON
-#if P_FAMILY_LUGIA
-SINGLE_ANIMATION(Lugia);
-#endif //P_FAMILY_LUGIA
+#if P_FAMILY_SPARROWMON
+SINGLE_ANIMATION(Sparrowmon);
+#endif //P_FAMILY_SPARROWMON
 #if P_FAMILY_HO_OH
 SINGLE_ANIMATION(HoOh);
 #endif //P_FAMILY_HO_OH
