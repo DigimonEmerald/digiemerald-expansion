@@ -701,7 +701,7 @@ static const u16 sPatamonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_PATAMON
 
-#if P_FAMILY_HOUNDOUR
+#if P_FAMILY_PILLOMON
 static const u16 sHoundoomFormSpeciesIdTable[] = {
     SPECIES_HOUNDOOM,
 #if P_MEGA_EVOLUTIONS
@@ -709,7 +709,7 @@ static const u16 sHoundoomFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_HOUNDOUR
+#endif //P_FAMILY_PILLOMON
 
 #if P_FAMILY_LARVITAR
 static const u16 sTyranitarFormSpeciesIdTable[] = {

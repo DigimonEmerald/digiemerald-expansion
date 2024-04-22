@@ -1924,10 +1924,10 @@ Cry_Phascomon::
 	.incbin "sound/direct_sound_samples/cries/phascomon.bin"
 .endif @ P_FAMILY_PHASCOMON
 
-.if P_FAMILY_HOUNDOUR == TRUE
+.if P_FAMILY_PILLOMON == TRUE
 	.align 2
-Cry_Houndour::
-	.incbin "sound/direct_sound_samples/cries/houndour.bin"
+Cry_Pillomon::
+	.incbin "sound/direct_sound_samples/cries/pillomon.bin"
 
 	.align 2
 Cry_Houndoom::
@@ -1938,7 +1938,7 @@ Cry_Houndoom::
 Cry_HoundoomMega::
 	.incbin "sound/direct_sound_samples/cries/houndoom_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_HOUNDOUR
+.endif @ P_FAMILY_PILLOMON
 
 .if P_FAMILY_PHANPY == TRUE
 	.align 2

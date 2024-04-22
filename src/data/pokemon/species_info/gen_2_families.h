@@ -5341,8 +5341,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_PHASCOMON
 
-#if P_FAMILY_HOUNDOUR
-    [SPECIES_HOUNDOUR] =
+#if P_FAMILY_PILLOMON
+    [SPECIES_PILLOMON] =
     {
         .baseHP        = 45,
         .baseAttack    = 60,
@@ -5361,14 +5361,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_EARLY_BIRD, ABILITY_FLASH_FIRE, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Houndour"),
-        .cryId = CRY_HOUNDOUR,
-        .natDexNum = NATIONAL_DEX_HOUNDOUR,
+        .speciesName = _("Pillomon"),
+        .cryId = CRY_PILLOMON,
+        .natDexNum = NATIONAL_DEX_PILLOMON,
         .categoryName = _("Dark"),
         .height = 6,
         .weight = 108,
         .description = COMPOUND_STRING(
-            "Houndour communicate with each other\n"
+            "Pillomon communicate with each other\n"
             "using a variety of cries to corner their\n"
             "prey. This Pokémon's remarkable teamwork\n"
             "is simply unparalleled."),
@@ -5376,22 +5376,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 16,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Houndour,
+        .frontPic = gMonFrontPic_Pillomon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Houndour,
+        .frontAnimFrames = sAnims_Pillomon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Houndour,
+        .backPic = gMonBackPic_Pillomon,
         .backPicSize = MON_COORDS_SIZE(40, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Houndour,
-        .shinyPalette = gMonShinyPalette_Houndour,
-        .iconSprite = gMonIcon_Houndour,
+        .palette = gMonPalette_Pillomon,
+        .shinyPalette = gMonShinyPalette_Pillomon,
+        .iconSprite = gMonIcon_Pillomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Houndour)
-        .levelUpLearnset = sHoundourLevelUpLearnset,
-        .teachableLearnset = sHoundourTeachableLearnset,
+        FOOTPRINT(Pillomon)
+        .levelUpLearnset = sPillomonLevelUpLearnset,
+        .teachableLearnset = sPillomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_HOUNDOOM}),
     },
 
@@ -5508,7 +5508,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .formChangeTable = sHoundoomFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_HOUNDOUR
+#endif //P_FAMILY_PILLOMON
 
 #if P_FAMILY_PHANPY
     [SPECIES_PHANPY] =

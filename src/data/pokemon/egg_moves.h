@@ -2000,8 +2000,8 @@ const u16 gEggMoves[] = {
         MOVE_ENDURE),
 #endif //P_FAMILY_PHASCOMON
 
-#if P_FAMILY_HOUNDOUR
-    egg_moves(HOUNDOUR,
+#if P_FAMILY_PILLOMON
+    egg_moves(PILLOMON,
         MOVE_FIRE_SPIN,
         MOVE_RAGE,
         MOVE_PURSUIT,
@@ -2016,7 +2016,7 @@ const u16 gEggMoves[] = {
         MOVE_FEINT,
         MOVE_SUCKER_PUNCH,
         MOVE_DESTINY_BOND),
-#endif //P_FAMILY_HOUNDOUR
+#endif //P_FAMILY_PILLOMON
 
 #if P_FAMILY_PHANPY
     egg_moves(PHANPY,

@@ -5096,8 +5096,8 @@ static const struct LevelUpMove sPhascomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_PHASCOMON
 
-#if P_FAMILY_HOUNDOUR
-static const struct LevelUpMove sHoundourLevelUpLearnset[] = {
+#if P_FAMILY_PILLOMON
+static const struct LevelUpMove sPillomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 7, MOVE_HOWL),
@@ -5125,7 +5125,7 @@ static const struct LevelUpMove sHoundoomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(59, MOVE_CRUNCH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_HOUNDOUR
+#endif //P_FAMILY_PILLOMON
 
 #if P_FAMILY_PHANPY
 static const struct LevelUpMove sPhanpyLevelUpLearnset[] = {

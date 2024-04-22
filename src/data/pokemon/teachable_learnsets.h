@@ -11716,8 +11716,8 @@ static const u16 sPhascomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_PHASCOMON
 
-#if P_FAMILY_HOUNDOUR
-static const u16 sHoundourTeachableLearnset[] = {
+#if P_FAMILY_PILLOMON
+static const u16 sPillomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
@@ -11788,7 +11788,7 @@ static const u16 sHoundoomTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_HOUNDOUR
+#endif //P_FAMILY_PILLOMON
 
 #if P_FAMILY_PHANPY
 static const u16 sPhanpyTeachableLearnset[] = {

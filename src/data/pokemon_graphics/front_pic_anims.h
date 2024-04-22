@@ -3237,8 +3237,8 @@ static const union AnimCmd sAnim_Phascomon_1[] =
 };
 #endif //P_FAMILY_PHASCOMON
 
-#if P_FAMILY_HOUNDOUR
-static const union AnimCmd sAnim_Houndour_1[] =
+#if P_FAMILY_PILLOMON
+static const union AnimCmd sAnim_Pillomon_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 20),
@@ -3255,7 +3255,7 @@ static const union AnimCmd sAnim_Houndoom_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(HoundoomMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_HOUNDOUR
+#endif //P_FAMILY_PILLOMON
 
 #if P_FAMILY_PHANPY
 static const union AnimCmd sAnim_Phanpy_1[] =
@@ -10956,13 +10956,13 @@ SINGLE_ANIMATION(Petitmamon);
 #if P_FAMILY_PHASCOMON
 SINGLE_ANIMATION(Phascomon);
 #endif //P_FAMILY_PHASCOMON
-#if P_FAMILY_HOUNDOUR
-SINGLE_ANIMATION(Houndour);
+#if P_FAMILY_PILLOMON
+SINGLE_ANIMATION(Pillomon);
 SINGLE_ANIMATION(Houndoom);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(HoundoomMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_HOUNDOUR
+#endif //P_FAMILY_PILLOMON
 #if P_FAMILY_PHANPY
 SINGLE_ANIMATION(Phanpy);
 SINGLE_ANIMATION(Donphan);

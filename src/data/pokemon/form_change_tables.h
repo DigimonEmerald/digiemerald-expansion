@@ -246,14 +246,14 @@ static const struct FormChange sMuchomonFormChangeTable[] = {
 };
 #endif //P_FAMILY_MUCHOMON
 
-#if P_FAMILY_HOUNDOUR
+#if P_FAMILY_PILLOMON
 static const struct FormChange sHoundoomFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_HOUNDOOM_MEGA, ITEM_HOUNDOOMINITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_HOUNDOUR
+#endif //P_FAMILY_PILLOMON
 
 #if P_FAMILY_LARVITAR
 static const struct FormChange sTyranitarFormChangeTable[] = {
