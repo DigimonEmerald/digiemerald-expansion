@@ -2632,14 +2632,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonBackPic_FlamemonF[] = INCBIN_U32("graphics/pokemon/flamemon/backf.4bpp.lz");
 #endif //P_FAMILY_FALCOMON_06
 
-#if P_FAMILY_CYNDAQUIL
-    const u32 gMonFrontPic_Cyndaquil[] = INCBIN_U32("graphics/pokemon/cyndaquil/anim_front.4bpp.lz");
-    const u32 gMonPalette_Cyndaquil[] = INCBIN_U32("graphics/pokemon/cyndaquil/normal.gbapal.lz");
-    const u32 gMonBackPic_Cyndaquil[] = INCBIN_U32("graphics/pokemon/cyndaquil/back.4bpp.lz");
-    const u32 gMonShinyPalette_Cyndaquil[] = INCBIN_U32("graphics/pokemon/cyndaquil/shiny.gbapal.lz");
-    const u8 gMonIcon_Cyndaquil[] = INCBIN_U8("graphics/pokemon/cyndaquil/icon.4bpp");
+#if P_FAMILY_FLORAMON
+    const u32 gMonFrontPic_Floramon[] = INCBIN_U32("graphics/pokemon/floramon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Floramon[] = INCBIN_U32("graphics/pokemon/floramon/normal.gbapal.lz");
+    const u32 gMonBackPic_Floramon[] = INCBIN_U32("graphics/pokemon/floramon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Floramon[] = INCBIN_U32("graphics/pokemon/floramon/shiny.gbapal.lz");
+    const u8 gMonIcon_Floramon[] = INCBIN_U8("graphics/pokemon/floramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Cyndaquil[] = INCBIN_U8("graphics/pokemon/cyndaquil/footprint.1bpp");
+    const u8 gMonFootprint_Floramon[] = INCBIN_U8("graphics/pokemon/floramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Quilava[] = INCBIN_U32("graphics/pokemon/quilava/anim_front.4bpp.lz");
@@ -2667,7 +2667,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_TyphlosionHisuian[] = INCBIN_U32("graphics/pokemon/typhlosion/hisuian/shiny.gbapal.lz");
     const u8 gMonIcon_TyphlosionHisuian[] = INCBIN_U8("graphics/pokemon/typhlosion/hisuian/icon.4bpp");
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_CYNDAQUIL
+#endif //P_FAMILY_FLORAMON
 
 #if P_FAMILY_TOTODILE
     const u32 gMonFrontPic_Totodile[] = INCBIN_U32("graphics/pokemon/totodile/anim_front.4bpp.lz");

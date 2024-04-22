@@ -175,8 +175,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_FALCOMON_06
 
-#if P_FAMILY_CYNDAQUIL
-    [SPECIES_CYNDAQUIL] =
+#if P_FAMILY_FLORAMON
+    [SPECIES_FLORAMON] =
     {
         .baseHP        = 39,
         .baseAttack    = 52,
@@ -195,9 +195,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_FLASH_FIRE },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Cyndaquil"),
-        .cryId = CRY_CYNDAQUIL,
-        .natDexNum = NATIONAL_DEX_CYNDAQUIL,
+        .speciesName = _("Floramon"),
+        .cryId = CRY_FLORAMON,
+        .natDexNum = NATIONAL_DEX_FLORAMON,
         .categoryName = _("Fire Mouse"),
         .height = 5,
         .weight = 79,
@@ -210,22 +210,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 21,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Cyndaquil,
+        .frontPic = gMonFrontPic_Floramon,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Cyndaquil,
+        .frontAnimFrames = sAnims_Floramon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Cyndaquil,
+        .backPic = gMonBackPic_Floramon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Cyndaquil,
-        .shinyPalette = gMonShinyPalette_Cyndaquil,
-        .iconSprite = gMonIcon_Cyndaquil,
+        .palette = gMonPalette_Floramon,
+        .shinyPalette = gMonShinyPalette_Floramon,
+        .iconSprite = gMonIcon_Floramon,
         .iconPalIndex = 3,
-        FOOTPRINT(Cyndaquil)
-        .levelUpLearnset = sCyndaquilLevelUpLearnset,
-        .teachableLearnset = sCyndaquilTeachableLearnset,
+        FOOTPRINT(Floramon)
+        .levelUpLearnset = sFloramonLevelUpLearnset,
+        .teachableLearnset = sFloramonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_QUILAVA}),
     },
 
@@ -401,7 +401,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .formSpeciesIdTable = sTyphlosionFormSpeciesIdTable,
     },
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_CYNDAQUIL
+#endif //P_FAMILY_FLORAMON
 
 #if P_FAMILY_TOTODILE
     [SPECIES_TOTODILE] =

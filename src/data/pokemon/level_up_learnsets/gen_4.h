@@ -4337,8 +4337,8 @@ static const struct LevelUpMove sFlamemonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_FALCOMON_06
 
-#if P_FAMILY_CYNDAQUIL
-static const struct LevelUpMove sCyndaquilLevelUpLearnset[] = {
+#if P_FAMILY_FLORAMON
+static const struct LevelUpMove sFloramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 6, MOVE_SMOKESCREEN),
@@ -4408,7 +4408,7 @@ static const struct LevelUpMove sTyphlosionHisuianLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_CYNDAQUIL
+#endif //P_FAMILY_FLORAMON
 
 #if P_FAMILY_TOTODILE
 static const struct LevelUpMove sTotodileLevelUpLearnset[] = {

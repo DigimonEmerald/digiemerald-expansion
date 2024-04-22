@@ -467,11 +467,11 @@ gCryTable::
 	cry Cry_Fanbeemon
 	cry Cry_Flamemon
 .endif @ P_FAMILY_FALCOMON_06
-.if P_FAMILY_CYNDAQUIL == TRUE
-	cry Cry_Cyndaquil
+.if P_FAMILY_FLORAMON == TRUE
+	cry Cry_Floramon
 	cry Cry_Quilava
 	cry Cry_Typhlosion
-.endif @ P_FAMILY_CYNDAQUIL
+.endif @ P_FAMILY_FLORAMON
 .if P_FAMILY_TOTODILE == TRUE
 	cry Cry_Totodile
 	cry Cry_Croconaw
@@ -2893,11 +2893,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Fanbeemon
 	cry_reverse Cry_Flamemon
 .endif @ P_FAMILY_FALCOMON_06
-.if P_FAMILY_CYNDAQUIL == TRUE
-	cry_reverse Cry_Cyndaquil
+.if P_FAMILY_FLORAMON == TRUE
+	cry_reverse Cry_Floramon
 	cry_reverse Cry_Quilava
 	cry_reverse Cry_Typhlosion
-.endif @ P_FAMILY_CYNDAQUIL
+.endif @ P_FAMILY_FLORAMON
 .if P_FAMILY_TOTODILE == TRUE
 	cry_reverse Cry_Totodile
 	cry_reverse Cry_Croconaw

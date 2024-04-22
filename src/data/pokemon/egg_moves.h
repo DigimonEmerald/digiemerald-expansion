@@ -1324,8 +1324,8 @@ const u16 gEggMoves[] = {
         MOVE_GRASSY_TERRAIN),
 #endif //P_FAMILY_FALCOMON_06
 
-#if P_FAMILY_CYNDAQUIL
-    egg_moves(CYNDAQUIL,
+#if P_FAMILY_FLORAMON
+    egg_moves(FLORAMON,
         MOVE_FURY_SWIPES,
         MOVE_QUICK_ATTACK,
         MOVE_REVERSAL,
@@ -1340,7 +1340,7 @@ const u16 gEggMoves[] = {
         MOVE_EXTRASENSORY,
         MOVE_NATURE_POWER,
         MOVE_FLAME_BURST),
-#endif //P_FAMILY_CYNDAQUIL
+#endif //P_FAMILY_FLORAMON
 
 #if P_FAMILY_TOTODILE
     egg_moves(TOTODILE,

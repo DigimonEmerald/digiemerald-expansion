@@ -1479,10 +1479,10 @@ Cry_Flamemon::
 	.incbin "sound/direct_sound_samples/cries/flamemon.bin"
 .endif @ P_FAMILY_FALCOMON_06
 
-.if P_FAMILY_CYNDAQUIL == TRUE
+.if P_FAMILY_FLORAMON == TRUE
 	.align 2
-Cry_Cyndaquil::
-	.incbin "sound/direct_sound_samples/cries/cyndaquil.bin"
+Cry_Floramon::
+	.incbin "sound/direct_sound_samples/cries/floramon.bin"
 
 	.align 2
 Cry_Quilava::
@@ -1491,7 +1491,7 @@ Cry_Quilava::
 	.align 2
 Cry_Typhlosion::
 	.incbin "sound/direct_sound_samples/cries/typhlosion.bin"
-.endif @ P_FAMILY_CYNDAQUIL
+.endif @ P_FAMILY_FLORAMON
 
 .if P_FAMILY_TOTODILE == TRUE
 	.align 2

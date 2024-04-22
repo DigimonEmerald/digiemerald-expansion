@@ -135,7 +135,7 @@
 #define P_FAMILY_FALCOMON                     P_GEN_1_POKEMON
 
 #define P_FAMILY_FALCOMON_06               P_GEN_2_POKEMON
-#define P_FAMILY_CYNDAQUIL               P_GEN_2_POKEMON
+#define P_FAMILY_FLORAMON               P_GEN_2_POKEMON
 #define P_FAMILY_TOTODILE                P_GEN_2_POKEMON
 #define P_FAMILY_SENTRET                 P_GEN_2_POKEMON
 #define P_FAMILY_HOOTHOOT                P_GEN_2_POKEMON

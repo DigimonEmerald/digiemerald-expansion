@@ -2362,8 +2362,8 @@ static const union AnimCmd sAnim_Flamemon_1[] =
 };
 #endif //P_FAMILY_FALCOMON_06
 
-#if P_FAMILY_CYNDAQUIL
-static const union AnimCmd sAnim_Cyndaquil_1[] =
+#if P_FAMILY_FLORAMON
+static const union AnimCmd sAnim_Floramon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -2389,7 +2389,7 @@ static const union AnimCmd sAnim_Typhlosion_1[] =
 #if P_HISUIAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(TyphlosionHisuian);
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_CYNDAQUIL
+#endif //P_FAMILY_FLORAMON
 
 #if P_FAMILY_TOTODILE
 static const union AnimCmd sAnim_Totodile_1[] =
@@ -10747,14 +10747,14 @@ SINGLE_ANIMATION(Falcomon_06);
 SINGLE_ANIMATION(Fanbeemon);
 SINGLE_ANIMATION(Flamemon);
 #endif //P_FAMILY_FALCOMON_06
-#if P_FAMILY_CYNDAQUIL
-SINGLE_ANIMATION(Cyndaquil);
+#if P_FAMILY_FLORAMON
+SINGLE_ANIMATION(Floramon);
 SINGLE_ANIMATION(Quilava);
 SINGLE_ANIMATION(Typhlosion);
 #if P_HISUIAN_FORMS
 SINGLE_ANIMATION(TyphlosionHisuian);
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_CYNDAQUIL
+#endif //P_FAMILY_FLORAMON
 #if P_FAMILY_TOTODILE
 SINGLE_ANIMATION(Totodile);
 SINGLE_ANIMATION(Croconaw);

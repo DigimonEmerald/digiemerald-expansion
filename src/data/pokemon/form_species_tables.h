@@ -581,7 +581,7 @@ static const u16 sAgumon_fake_expertFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_AGUMON_FAKE_EXPERT
 
-#if P_FAMILY_CYNDAQUIL
+#if P_FAMILY_FLORAMON
 static const u16 sTyphlosionFormSpeciesIdTable[] = {
     SPECIES_TYPHLOSION,
 #if P_HISUIAN_FORMS
@@ -589,7 +589,7 @@ static const u16 sTyphlosionFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_CYNDAQUIL
+#endif //P_FAMILY_FLORAMON
 
 #if P_FAMILY_MAREEP
 static const u16 sAmpharosFormSpeciesIdTable[] = {

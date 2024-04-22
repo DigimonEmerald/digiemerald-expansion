@@ -8531,8 +8531,8 @@ static const u16 sFlamemonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_FALCOMON_06
 
-#if P_FAMILY_CYNDAQUIL
-static const u16 sCyndaquilTeachableLearnset[] = {
+#if P_FAMILY_FLORAMON
+static const u16 sFloramonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CUT,
@@ -8676,7 +8676,7 @@ static const u16 sTyphlosionHisuianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_CYNDAQUIL
+#endif //P_FAMILY_FLORAMON
 
 #if P_FAMILY_TOTODILE
 static const u16 sTotodileTeachableLearnset[] = {
