@@ -1184,10 +1184,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Hagurumon)
         .levelUpLearnset = sHagurumonLevelUpLearnset,
         .teachableLearnset = sHagurumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_TOGETIC}),
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_HAGURUMON_X}),
     },
 
-    [SPECIES_TOGETIC] =
+    [SPECIES_HAGURUMON_X] =
     {
         .baseHP        = 55,
         .baseAttack    = 40,
@@ -1206,37 +1206,37 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_FAIRY),
         .abilities = { ABILITY_HUSTLE, ABILITY_SERENE_GRACE, ABILITY_SUPER_LUCK },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Togetic"),
-        .cryId = CRY_TOGETIC,
-        .natDexNum = NATIONAL_DEX_TOGETIC,
+        .speciesName = _("Hagurumon_x"),
+        .cryId = CRY_HAGURUMON_X,
+        .natDexNum = NATIONAL_DEX_HAGURUMON_X,
         .categoryName = _("Happiness"),
         .height = 6,
         .weight = 32,
         .description = COMPOUND_STRING(
             "It is said to be a Pokémon that brings good\n"
             "fortune. When it spots someone who is pure\n"
-            "of heart, a Togetic appears and shares its\n"
+            "of heart, a Hagurumon_x appears and shares its\n"
             "happiness with that person."),
         .pokemonScale = 424,
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Togetic,
+        .frontPic = gMonFrontPic_Hagurumon_x,
         .frontPicSize = MON_COORDS_SIZE(32, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Togetic,
+        .frontAnimFrames = sAnims_Hagurumon_x,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Togetic,
+        .backPic = gMonBackPic_Hagurumon_x,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Togetic,
-        .shinyPalette = gMonShinyPalette_Togetic,
-        .iconSprite = gMonIcon_Togetic,
+        .palette = gMonPalette_Hagurumon_x,
+        .shinyPalette = gMonShinyPalette_Hagurumon_x,
+        .iconSprite = gMonIcon_Hagurumon_x,
         .iconPalIndex = 0,
-        FOOTPRINT(Togetic)
-        .levelUpLearnset = sTogeticLevelUpLearnset,
-        .teachableLearnset = sTogeticTeachableLearnset,
+        FOOTPRINT(Hagurumon_x)
+        .levelUpLearnset = sHagurumon_xLevelUpLearnset,
+        .teachableLearnset = sHagurumon_xTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_SHINY_STONE, SPECIES_TOGEKISS}),
     },
 

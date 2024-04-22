@@ -499,7 +499,7 @@ gCryTable::
 .endif @ P_FAMILY_GOTSUMON_X
 .if P_FAMILY_HAGURUMON == TRUE
 	cry Cry_Hagurumon
-	cry Cry_Togetic
+	cry Cry_Hagurumon_x
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Togekiss
 .endif @ P_GEN_4_CROSS_EVOS
@@ -2925,7 +2925,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_GOTSUMON_X
 .if P_FAMILY_HAGURUMON == TRUE
 	cry_reverse Cry_Hagurumon
-	cry_reverse Cry_Togetic
+	cry_reverse Cry_Hagurumon_x
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Togekiss
 .endif @ P_GEN_4_CROSS_EVOS

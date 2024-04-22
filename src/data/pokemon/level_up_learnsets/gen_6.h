@@ -5082,7 +5082,7 @@ static const struct LevelUpMove sHagurumonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sTogeticLevelUpLearnset[] = {
+static const struct LevelUpMove sHagurumon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_MAGICAL_LEAF),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),

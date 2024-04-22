@@ -2539,7 +2539,7 @@ static const union AnimCmd sAnim_Hagurumon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Togetic_1[] =
+static const union AnimCmd sAnim_Hagurumon_x_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -10782,7 +10782,7 @@ SINGLE_ANIMATION(Guilmon);
 #endif //P_FAMILY_GOTSUMON_X
 #if P_FAMILY_HAGURUMON
 SINGLE_ANIMATION(Hagurumon);
-SINGLE_ANIMATION(Togetic);
+SINGLE_ANIMATION(Hagurumon_x);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Togekiss);
 #endif //P_GEN_4_CROSS_EVOS

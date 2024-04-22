@@ -2814,13 +2814,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Hagurumon[] = INCBIN_U8("graphics/pokemon/hagurumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Togetic[] = INCBIN_U32("graphics/pokemon/togetic/anim_front.4bpp.lz");
-    const u32 gMonPalette_Togetic[] = INCBIN_U32("graphics/pokemon/togetic/normal.gbapal.lz");
-    const u32 gMonBackPic_Togetic[] = INCBIN_U32("graphics/pokemon/togetic/back.4bpp.lz");
-    const u32 gMonShinyPalette_Togetic[] = INCBIN_U32("graphics/pokemon/togetic/shiny.gbapal.lz");
-    const u8 gMonIcon_Togetic[] = INCBIN_U8("graphics/pokemon/togetic/icon.4bpp");
+    const u32 gMonFrontPic_Hagurumon_x[] = INCBIN_U32("graphics/pokemon/hagurumon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Hagurumon_x[] = INCBIN_U32("graphics/pokemon/hagurumon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Hagurumon_x[] = INCBIN_U32("graphics/pokemon/hagurumon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Hagurumon_x[] = INCBIN_U32("graphics/pokemon/hagurumon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Hagurumon_x[] = INCBIN_U8("graphics/pokemon/hagurumon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Togetic[] = INCBIN_U8("graphics/pokemon/togetic/footprint.1bpp");
+    const u8 gMonFootprint_Hagurumon_x[] = INCBIN_U8("graphics/pokemon/hagurumon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_4_CROSS_EVOS

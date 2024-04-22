@@ -1590,7 +1590,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         },
                                     [5] =
                                         {
-                                            .species = SPECIES_TOGETIC,
+                                            .species = SPECIES_HAGURUMON_X,
                                             .heldItem = ITEM_SITRUS_BERRY,
                                             .moves = {MOVE_PRESENT, MOVE_CHARM, MOVE_SWEET_KISS, MOVE_WISH},
                                             .attackEV = 255,
@@ -1604,7 +1604,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 1,
                                             .personality = 0x26,
-                                            .nickname = _("TOGETIC"),
+                                            .nickname = _("HAGURUMON_X"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                 },

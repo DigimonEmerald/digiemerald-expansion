@@ -9210,7 +9210,7 @@ static const u16 sHagurumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sTogeticTeachableLearnset[] = {
+static const u16 sHagurumon_xTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,

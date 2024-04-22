@@ -1563,8 +1563,8 @@ Cry_Hagurumon::
 	.incbin "sound/direct_sound_samples/cries/hagurumon.bin"
 
 	.align 2
-Cry_Togetic::
-	.incbin "sound/direct_sound_samples/cries/togetic.bin"
+Cry_Hagurumon_x::
+	.incbin "sound/direct_sound_samples/cries/hagurumon_x.bin"
 
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
