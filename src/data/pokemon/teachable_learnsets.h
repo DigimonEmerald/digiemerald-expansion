@@ -11823,7 +11823,7 @@ static const u16 sPulsemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDonphanTeachableLearnset[] = {
+static const u16 sRenamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,

@@ -5561,10 +5561,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Pulsemon)
         .levelUpLearnset = sPulsemonLevelUpLearnset,
         .teachableLearnset = sPulsemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_DONPHAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_RENAMON}),
     },
 
-    [SPECIES_DONPHAN] =
+    [SPECIES_RENAMON] =
     {
         .baseHP        = 90,
         .baseAttack    = 120,
@@ -5584,14 +5584,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_SAND_VEIL },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Donphan"),
-        .cryId = CRY_DONPHAN,
-        .natDexNum = NATIONAL_DEX_DONPHAN,
+        .speciesName = _("Renamon"),
+        .cryId = CRY_RENAMON,
+        .natDexNum = NATIONAL_DEX_RENAMON,
         .categoryName = _("Armor"),
         .height = 11,
         .weight = 1200,
         .description = COMPOUND_STRING(
-            "A Donphan is so strong it can easily haul\n"
+            "A Renamon is so strong it can easily haul\n"
             "a dump truck. Its hide has toughened to a\n"
             "rock-hard state. An ordinary sort of\n"
             "attack won't even leave a scratch."),
@@ -5599,26 +5599,26 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 9,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Donphan,
-        .frontPicFemale = gMonFrontPic_DonphanF,
+        .frontPic = gMonFrontPic_Renamon,
+        .frontPicFemale = gMonFrontPic_RenamonF,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Donphan,
+        .frontAnimFrames = sAnims_Renamon,
         .frontAnimId = ANIM_ROTATE_UP_SLAM_DOWN,
-        .backPic = gMonBackPic_Donphan,
-        .backPicFemale = gMonBackPic_DonphanF,
+        .backPic = gMonBackPic_Renamon,
+        .backPicFemale = gMonBackPic_RenamonF,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Donphan,
-        .shinyPalette = gMonShinyPalette_Donphan,
-        .iconSprite = gMonIcon_Donphan,
+        .palette = gMonPalette_Renamon,
+        .shinyPalette = gMonShinyPalette_Renamon,
+        .iconSprite = gMonIcon_Renamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Donphan)
-        .levelUpLearnset = sDonphanLevelUpLearnset,
-        .teachableLearnset = sDonphanTeachableLearnset,
+        FOOTPRINT(Renamon)
+        .levelUpLearnset = sRenamonLevelUpLearnset,
+        .teachableLearnset = sRenamonTeachableLearnset,
     },
 #endif //P_FAMILY_PULSEMON
 

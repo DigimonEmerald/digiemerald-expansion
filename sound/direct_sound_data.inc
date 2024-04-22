@@ -1946,8 +1946,8 @@ Cry_Pulsemon::
 	.incbin "sound/direct_sound_samples/cries/pulsemon.bin"
 
 	.align 2
-Cry_Donphan::
-	.incbin "sound/direct_sound_samples/cries/donphan.bin"
+Cry_Renamon::
+	.incbin "sound/direct_sound_samples/cries/renamon.bin"
 .endif @ P_FAMILY_PULSEMON
 
 .if P_FAMILY_STANTLER == TRUE

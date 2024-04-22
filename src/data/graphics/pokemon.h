@@ -3744,17 +3744,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Pulsemon[] = INCBIN_U8("graphics/pokemon/pulsemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Donphan[] = INCBIN_U32("graphics/pokemon/donphan/anim_front.4bpp.lz");
-    const u32 gMonPalette_Donphan[] = INCBIN_U32("graphics/pokemon/donphan/normal.gbapal.lz");
-    const u32 gMonBackPic_Donphan[] = INCBIN_U32("graphics/pokemon/donphan/back.4bpp.lz");
-    const u32 gMonShinyPalette_Donphan[] = INCBIN_U32("graphics/pokemon/donphan/shiny.gbapal.lz");
-    const u8 gMonIcon_Donphan[] = INCBIN_U8("graphics/pokemon/donphan/icon.4bpp");
+    const u32 gMonFrontPic_Renamon[] = INCBIN_U32("graphics/pokemon/renamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Renamon[] = INCBIN_U32("graphics/pokemon/renamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Renamon[] = INCBIN_U32("graphics/pokemon/renamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Renamon[] = INCBIN_U32("graphics/pokemon/renamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Renamon[] = INCBIN_U8("graphics/pokemon/renamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Donphan[] = INCBIN_U8("graphics/pokemon/donphan/footprint.1bpp");
+    const u8 gMonFootprint_Renamon[] = INCBIN_U8("graphics/pokemon/renamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_DonphanF[] = INCBIN_U32("graphics/pokemon/donphan/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_DonphanF[] = INCBIN_U32("graphics/pokemon/donphan/backf.4bpp.lz");
+    const u32 gMonFrontPic_RenamonF[] = INCBIN_U32("graphics/pokemon/renamon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_RenamonF[] = INCBIN_U32("graphics/pokemon/renamon/backf.4bpp.lz");
 #endif //P_FAMILY_PULSEMON
 
 #if P_FAMILY_STANTLER

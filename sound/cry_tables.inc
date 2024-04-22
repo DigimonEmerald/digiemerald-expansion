@@ -669,7 +669,7 @@ gCryTable::
 .endif @ P_FAMILY_PILLOMON
 .if P_FAMILY_PULSEMON == TRUE
 	cry Cry_Pulsemon
-	cry Cry_Donphan
+	cry Cry_Renamon
 .endif @ P_FAMILY_PULSEMON
 .if P_FAMILY_STANTLER == TRUE
 	cry Cry_Stantler
@@ -3095,7 +3095,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_PILLOMON
 .if P_FAMILY_PULSEMON == TRUE
 	cry_reverse Cry_Pulsemon
-	cry_reverse Cry_Donphan
+	cry_reverse Cry_Renamon
 .endif @ P_FAMILY_PULSEMON
 .if P_FAMILY_STANTLER == TRUE
 	cry_reverse Cry_Stantler

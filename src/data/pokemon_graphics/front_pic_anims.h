@@ -3270,7 +3270,7 @@ static const union AnimCmd sAnim_Pulsemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Donphan_1[] =
+static const union AnimCmd sAnim_Renamon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 25),
@@ -10965,7 +10965,7 @@ SINGLE_ANIMATION(PomumonMega);
 #endif //P_FAMILY_PILLOMON
 #if P_FAMILY_PULSEMON
 SINGLE_ANIMATION(Pulsemon);
-SINGLE_ANIMATION(Donphan);
+SINGLE_ANIMATION(Renamon);
 #endif //P_FAMILY_PULSEMON
 #if P_FAMILY_STANTLER
 SINGLE_ANIMATION(Stantler);
