@@ -6657,7 +6657,7 @@ static const u16 sBurgermonTeachableLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const u16 sScizorTeachableLearnset[] = {
+static const u16 sMonodramonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,

@@ -865,8 +865,8 @@ const u32 gItemIconPalette_Impmonite[] = INCBIN_U32("graphics/items/icon_palette
 const u32 gItemIcon_Kodekacmonite[] = INCBIN_U32("graphics/items/icons/kodekacmonite.4bpp.lz");
 const u32 gItemIconPalette_Kodekacmonite[] = INCBIN_U32("graphics/items/icon_palettes/kodekacmonite.gbapal.lz");
 
-const u32 gItemIcon_Scizorite[] = INCBIN_U32("graphics/items/icons/scizorite.4bpp.lz");
-const u32 gItemIconPalette_Scizorite[] = INCBIN_U32("graphics/items/icon_palettes/scizorite.gbapal.lz");
+const u32 gItemIcon_Monodramonite[] = INCBIN_U32("graphics/items/icons/monodramonite.4bpp.lz");
+const u32 gItemIconPalette_Monodramonite[] = INCBIN_U32("graphics/items/icon_palettes/monodramonite.gbapal.lz");
 
 const u32 gItemIcon_Heracronite[] = INCBIN_U32("graphics/items/icons/heracronite.4bpp.lz");
 const u32 gItemIconPalette_Heracronite[] = INCBIN_U32("graphics/items/icon_palettes/heracronite.gbapal.lz");

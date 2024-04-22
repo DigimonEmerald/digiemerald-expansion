@@ -2017,23 +2017,23 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_BurgermonF[] = INCBIN_U32("graphics/pokemon/burgermon/anim_frontf.4bpp.lz");
 
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Scizor[] = INCBIN_U32("graphics/pokemon/scizor/anim_front.4bpp.lz");
-    const u32 gMonPalette_Scizor[] = INCBIN_U32("graphics/pokemon/scizor/normal.gbapal.lz");
-    const u32 gMonBackPic_Scizor[] = INCBIN_U32("graphics/pokemon/scizor/back.4bpp.lz");
-    const u32 gMonShinyPalette_Scizor[] = INCBIN_U32("graphics/pokemon/scizor/shiny.gbapal.lz");
-    const u8 gMonIcon_Scizor[] = INCBIN_U8("graphics/pokemon/scizor/icon.4bpp");
+    const u32 gMonFrontPic_Monodramon[] = INCBIN_U32("graphics/pokemon/monodramon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Monodramon[] = INCBIN_U32("graphics/pokemon/monodramon/normal.gbapal.lz");
+    const u32 gMonBackPic_Monodramon[] = INCBIN_U32("graphics/pokemon/monodramon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Monodramon[] = INCBIN_U32("graphics/pokemon/monodramon/shiny.gbapal.lz");
+    const u8 gMonIcon_Monodramon[] = INCBIN_U8("graphics/pokemon/monodramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Scizor[] = INCBIN_U8("graphics/pokemon/scizor/footprint.1bpp");
+    const u8 gMonFootprint_Monodramon[] = INCBIN_U8("graphics/pokemon/monodramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_ScizorF[] = INCBIN_U32("graphics/pokemon/scizor/anim_frontf.4bpp.lz");
+    const u32 gMonFrontPic_MonodramonF[] = INCBIN_U32("graphics/pokemon/monodramon/anim_frontf.4bpp.lz");
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_ScizorMega[] = INCBIN_U32("graphics/pokemon/scizor/mega/front.4bpp.lz");
-    const u32 gMonPalette_ScizorMega[] = INCBIN_U32("graphics/pokemon/scizor/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_ScizorMega[] = INCBIN_U32("graphics/pokemon/scizor/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_ScizorMega[] = INCBIN_U32("graphics/pokemon/scizor/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_ScizorMega[] = INCBIN_U8("graphics/pokemon/scizor/mega/icon.4bpp");
+    const u32 gMonFrontPic_MonodramonMega[] = INCBIN_U32("graphics/pokemon/monodramon/mega/front.4bpp.lz");
+    const u32 gMonPalette_MonodramonMega[] = INCBIN_U32("graphics/pokemon/monodramon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_MonodramonMega[] = INCBIN_U32("graphics/pokemon/monodramon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_MonodramonMega[] = INCBIN_U32("graphics/pokemon/monodramon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_MonodramonMega[] = INCBIN_U8("graphics/pokemon/monodramon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS
 

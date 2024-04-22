@@ -1829,7 +1829,7 @@ static const union AnimCmd sAnim_Burgermon_1[] =
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Scizor_1[] =
+static const union AnimCmd sAnim_Monodramon_1[] =
 {
     ANIMCMD_FRAME(1, 20),
     ANIMCMD_FRAME(0, 20),
@@ -1837,7 +1837,7 @@ static const union AnimCmd sAnim_Scizor_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(ScizorMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(MonodramonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS
 
@@ -10596,9 +10596,9 @@ SINGLE_ANIMATION(MrRime);
 #if P_FAMILY_BURGERMON
 SINGLE_ANIMATION(Burgermon);
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Scizor);
+SINGLE_ANIMATION(Monodramon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(ScizorMega);
+SINGLE_ANIMATION(MonodramonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS
 #if P_GEN_8_CROSS_EVOS

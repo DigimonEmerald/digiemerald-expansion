@@ -12251,13 +12251,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Burgermon)
         .levelUpLearnset = sBurgermonLevelUpLearnset,
         .teachableLearnset = sBurgermonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_METAL_COAT, SPECIES_SCIZOR},
+        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_METAL_COAT, SPECIES_MONODRAMON},
                                 {EVO_ITEM, ITEM_BLACK_AUGURITE, SPECIES_KLEAVOR},
-                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_SCIZOR}),
+                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_MONODRAMON}),
     },
 
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_SCIZOR] =
+    [SPECIES_MONODRAMON] =
     {
         .baseHP        = 70,
         .baseAttack    = 130,
@@ -12276,14 +12276,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SWARM, ABILITY_TECHNICIAN, ABILITY_LIGHT_METAL },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Scizor"),
-        .cryId = CRY_SCIZOR,
-        .natDexNum = NATIONAL_DEX_SCIZOR,
+        .speciesName = _("Monodramon"),
+        .cryId = CRY_MONODRAMON,
+        .natDexNum = NATIONAL_DEX_MONODRAMON,
         .categoryName = _("Pincer"),
         .height = 18,
         .weight = 1180,
         .description = COMPOUND_STRING(
-            "A Scizor has a body with the hardness of\n"
+            "A Monodramon has a body with the hardness of\n"
             "steel. It is not easily fazed by ordinary\n"
             "sorts of attacks. It flaps its wings to\n"
             "regulate its body temperature."),
@@ -12291,31 +12291,31 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 1,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Scizor,
-        .frontPicFemale = gMonFrontPic_ScizorF,
+        .frontPic = gMonFrontPic_Monodramon,
+        .frontPicFemale = gMonFrontPic_MonodramonF,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Scizor,
+        .frontAnimFrames = sAnims_Monodramon,
         .frontAnimId = ANIM_H_VIBRATE,
         .frontAnimDelay = 19,
-        .backPic = gMonBackPic_Scizor,
+        .backPic = gMonBackPic_Monodramon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Scizor,
-        .shinyPalette = gMonShinyPalette_Scizor,
-        .iconSprite = gMonIcon_Scizor,
+        .palette = gMonPalette_Monodramon,
+        .shinyPalette = gMonShinyPalette_Monodramon,
+        .iconSprite = gMonIcon_Monodramon,
         .iconPalIndex = 0,
-        FOOTPRINT(Scizor)
-        .levelUpLearnset = sScizorLevelUpLearnset,
-        .teachableLearnset = sScizorTeachableLearnset,
-        .formSpeciesIdTable = sScizorFormSpeciesIdTable,
-        .formChangeTable = sScizorFormChangeTable,
+        FOOTPRINT(Monodramon)
+        .levelUpLearnset = sMonodramonLevelUpLearnset,
+        .teachableLearnset = sMonodramonTeachableLearnset,
+        .formSpeciesIdTable = sMonodramonFormSpeciesIdTable,
+        .formChangeTable = sMonodramonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_SCIZOR_MEGA] =
+    [SPECIES_MONODRAMON_MEGA] =
     {
         .baseHP        = 70,
         .baseAttack    = 150,
@@ -12334,9 +12334,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_TECHNICIAN, ABILITY_TECHNICIAN, ABILITY_TECHNICIAN },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Scizor"),
-        .cryId = CRY_SCIZOR_MEGA,
-        .natDexNum = NATIONAL_DEX_SCIZOR,
+        .speciesName = _("Monodramon"),
+        .cryId = CRY_MONODRAMON_MEGA,
+        .natDexNum = NATIONAL_DEX_MONODRAMON,
         .categoryName = _("Pincer"),
         .height = 20,
         .weight = 1250,
@@ -12349,25 +12349,25 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 1,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_ScizorMega,
+        .frontPic = gMonFrontPic_MonodramonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_ScizorMega,
+        .frontAnimFrames = sAnims_MonodramonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_ScizorMega,
+        .backPic = gMonBackPic_MonodramonMega,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_ScizorMega,
-        .shinyPalette = gMonShinyPalette_ScizorMega,
-        .iconSprite = gMonIcon_ScizorMega,
+        .palette = gMonPalette_MonodramonMega,
+        .shinyPalette = gMonShinyPalette_MonodramonMega,
+        .iconSprite = gMonIcon_MonodramonMega,
         .iconPalIndex = 0,
-        FOOTPRINT(Scizor)
+        FOOTPRINT(Monodramon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sScizorLevelUpLearnset,
-        .teachableLearnset = sScizorTeachableLearnset,
-        .formSpeciesIdTable = sScizorFormSpeciesIdTable,
-        .formChangeTable = sScizorFormChangeTable,
+        .levelUpLearnset = sMonodramonLevelUpLearnset,
+        .teachableLearnset = sMonodramonTeachableLearnset,
+        .formSpeciesIdTable = sMonodramonFormSpeciesIdTable,
+        .formChangeTable = sMonodramonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS

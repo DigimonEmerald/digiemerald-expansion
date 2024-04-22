@@ -1197,13 +1197,13 @@ Cry_Burgermon::
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Scizor::
-	.incbin "sound/direct_sound_samples/cries/scizor.bin"
+Cry_Monodramon::
+	.incbin "sound/direct_sound_samples/cries/monodramon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_ScizorMega::
-	.incbin "sound/direct_sound_samples/cries/scizor_mega.bin"
+Cry_MonodramonMega::
+	.incbin "sound/direct_sound_samples/cries/monodramon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_2_CROSS_EVOS
 .if P_GEN_8_CROSS_EVOS == TRUE

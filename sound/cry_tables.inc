@@ -337,9 +337,9 @@ gCryTable::
 .if P_FAMILY_BURGERMON == TRUE
 	cry Cry_Burgermon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry Cry_Scizor
+	cry Cry_Monodramon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_ScizorMega
+	cry Cry_MonodramonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_2_CROSS_EVOS
 .if P_GEN_8_CROSS_EVOS == TRUE
@@ -2763,9 +2763,9 @@ gCryTable_Reverse::
 .if P_FAMILY_BURGERMON == TRUE
 	cry_reverse Cry_Burgermon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry_reverse Cry_Scizor
+	cry_reverse Cry_Monodramon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_ScizorMega
+	cry_reverse Cry_MonodramonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_2_CROSS_EVOS
 .if P_GEN_8_CROSS_EVOS == TRUE

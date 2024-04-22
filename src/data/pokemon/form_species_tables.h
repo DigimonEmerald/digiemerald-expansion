@@ -457,10 +457,10 @@ static const u16 sBulucomonFormSpeciesIdTable[] = {
 
 #if P_FAMILY_BURGERMON
 #if P_GEN_2_CROSS_EVOS
-static const u16 sScizorFormSpeciesIdTable[] = {
-    SPECIES_SCIZOR,
+static const u16 sMonodramonFormSpeciesIdTable[] = {
+    SPECIES_MONODRAMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_SCIZOR_MEGA,
+    SPECIES_MONODRAMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };

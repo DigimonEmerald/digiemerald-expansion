@@ -4902,14 +4902,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_SCIZORITE] =
+    [ITEM_MONODRAMONITE] =
     {
-        .name = _("Scizorite"),
+        .name = _("Monodramonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Scizor to Mega\n"
+            "Monodramon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

@@ -155,9 +155,9 @@ static const struct FormChange sBetamon_xFormChangeTable[] = {
 
 #if P_FAMILY_BURGERMON
 #if P_GEN_2_CROSS_EVOS
-static const struct FormChange sScizorFormChangeTable[] = {
+static const struct FormChange sMonodramonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_SCIZOR_MEGA, ITEM_SCIZORITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MONODRAMON_MEGA, ITEM_MONODRAMONITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };

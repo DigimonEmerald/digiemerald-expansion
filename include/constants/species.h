@@ -213,7 +213,7 @@
 #define SPECIES_MODBETAMON                                209
 #define SPECIES_MONITAMON                                210
 #define SPECIES_MONMON                                211
-#define SPECIES_SCIZOR                                  212
+#define SPECIES_MONODRAMON                                  212
 #define SPECIES_SHUCKLE                                 213
 #define SPECIES_HERACROSS                               214
 #define SPECIES_SNEASEL                                 215
@@ -981,7 +981,7 @@
 #define SPECIES_AGUMON_FAKE_EXPERT_MEGA_Y                           920
 #define SPECIES_IMPMON_MEGA                           921
 #define SPECIES_KODEKACMON_MEGA                            922
-#define SPECIES_SCIZOR_MEGA                             923
+#define SPECIES_MONODRAMON_MEGA                             923
 #define SPECIES_HERACROSS_MEGA                          924
 #define SPECIES_HOUNDOOM_MEGA                           925
 #define SPECIES_TYRANITAR_MEGA                          926

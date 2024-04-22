@@ -9,7 +9,7 @@ AI_SINGLE_BATTLE_TEST("AI gets baited by Protect Switch tactics") // This behavi
         PLAYER(SPECIES_STUNFISK);
         PLAYER(SPECIES_PELIPPER);
         OPPONENT(SPECIES_DARKRAI) { Moves(MOVE_TACKLE, MOVE_PECK, MOVE_EARTHQUAKE, MOVE_THUNDERBOLT); }
-        OPPONENT(SPECIES_SCIZOR) { Moves(MOVE_HYPER_BEAM, MOVE_FACADE, MOVE_GIGA_IMPACT, MOVE_EXTREME_SPEED); }
+        OPPONENT(SPECIES_MONODRAMON) { Moves(MOVE_HYPER_BEAM, MOVE_FACADE, MOVE_GIGA_IMPACT, MOVE_EXTREME_SPEED); }
     } WHEN {
 
         TURN { MOVE(player, MOVE_PROTECT);  EXPECT_MOVE(opponent, MOVE_EARTHQUAKE); } // E-quake
@@ -31,7 +31,7 @@ AI_SINGLE_BATTLE_TEST("AI prefers Bubble over Water Gun if it's slower")
 
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_SCIZOR) { Speed(speedPlayer); }
+        PLAYER(SPECIES_MONODRAMON) { Speed(speedPlayer); }
         OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_WATER_GUN, MOVE_BUBBLE); Speed(speedAi); }
     } WHEN {
         if (speedPlayer > speedAi)
