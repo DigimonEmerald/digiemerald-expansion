@@ -1128,7 +1128,7 @@ const u16 gEggMoves[] = {
 
 #if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
-    egg_moves(MAGBY,
+    egg_moves(BLKTOYAMON,
         MOVE_KARATE_CHOP,
         MOVE_MEGA_PUNCH,
         MOVE_BARRIER,

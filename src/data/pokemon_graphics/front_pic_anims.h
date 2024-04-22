@@ -1901,7 +1901,7 @@ static const union AnimCmd sAnim_Electivire_1[] =
 
 #if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Magby_1[] =
+static const union AnimCmd sAnim_Blktoyamon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -10622,7 +10622,7 @@ SINGLE_ANIMATION(Electivire);
 #endif //P_FAMILY_CANDLEMON
 #if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Magby);
+SINGLE_ANIMATION(Blktoyamon);
 #endif //P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Chikurimon);
 #if P_GEN_4_CROSS_EVOS

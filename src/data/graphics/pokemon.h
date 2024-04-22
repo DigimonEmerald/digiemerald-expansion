@@ -2106,13 +2106,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
 #if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Magby[] = INCBIN_U32("graphics/pokemon/magby/anim_front.4bpp.lz");
-    const u32 gMonPalette_Magby[] = INCBIN_U32("graphics/pokemon/magby/normal.gbapal.lz");
-    const u32 gMonBackPic_Magby[] = INCBIN_U32("graphics/pokemon/magby/back.4bpp.lz");
-    const u32 gMonShinyPalette_Magby[] = INCBIN_U32("graphics/pokemon/magby/shiny.gbapal.lz");
-    const u8 gMonIcon_Magby[] = INCBIN_U8("graphics/pokemon/magby/icon.4bpp");
+    const u32 gMonFrontPic_Blktoyamon[] = INCBIN_U32("graphics/pokemon/blktoyamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Blktoyamon[] = INCBIN_U32("graphics/pokemon/blktoyamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Blktoyamon[] = INCBIN_U32("graphics/pokemon/blktoyamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Blktoyamon[] = INCBIN_U32("graphics/pokemon/blktoyamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Blktoyamon[] = INCBIN_U8("graphics/pokemon/blktoyamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Magby[] = INCBIN_U8("graphics/pokemon/magby/footprint.1bpp");
+    const u8 gMonFootprint_Blktoyamon[] = INCBIN_U8("graphics/pokemon/blktoyamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
 

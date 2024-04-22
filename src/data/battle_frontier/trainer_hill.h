@@ -3398,7 +3398,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                         },
                                     [5] =
                                         {
-                                            .species = SPECIES_MAGBY,
+                                            .species = SPECIES_BLKTOYAMON,
                                             .heldItem = ITEM_SCOPE_LENS,
                                             .moves = {MOVE_FIRE_BLAST, MOVE_CONFUSE_RAY, MOVE_THUNDER_PUNCH, MOVE_BARRIER},
                                             .hpEV = 6,
@@ -3413,7 +3413,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0xF,
-                                            .nickname = _("MAGBY"),
+                                            .nickname = _("BLKTOYAMON"),
                                             .friendship = 50,
                                         },
                                 },

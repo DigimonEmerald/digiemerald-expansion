@@ -3849,7 +3849,7 @@ static const struct LevelUpMove sElectivireLevelUpLearnset[] = {
 
 #if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
-static const struct LevelUpMove sMagbyLevelUpLearnset[] = {
+static const struct LevelUpMove sBlktoyamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SMOG),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 5, MOVE_EMBER),

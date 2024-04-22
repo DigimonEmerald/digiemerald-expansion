@@ -1246,8 +1246,8 @@ Cry_Electivire::
 .if P_FAMILY_CHIKURIMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Magby::
-	.incbin "sound/direct_sound_samples/cries/magby.bin"
+Cry_Blktoyamon::
+	.incbin "sound/direct_sound_samples/cries/blktoyamon.bin"
 .endif @ P_GEN_2_CROSS_EVOS
 
 	.align 2

@@ -6951,7 +6951,7 @@ static const u16 sElectivireTeachableLearnset[] = {
 
 #if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
-static const u16 sMagbyTeachableLearnset[] = {
+static const u16 sBlktoyamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DOUBLE_TEAM,

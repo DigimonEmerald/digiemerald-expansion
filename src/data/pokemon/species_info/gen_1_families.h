@@ -12715,7 +12715,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
 #if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_MAGBY] =
+    [SPECIES_BLKTOYAMON] =
     {
         .baseHP        = 45,
         .baseAttack    = 75,
@@ -12736,14 +12736,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_FLAME_BODY, ABILITY_NONE, ABILITY_VITAL_SPIRIT },
         .bodyColor = BODY_COLOR_RED,
         .noFlip = TRUE,
-        .speciesName = _("Magby"),
-        .cryId = CRY_MAGBY,
-        .natDexNum = NATIONAL_DEX_MAGBY,
+        .speciesName = _("Blktoyamon"),
+        .cryId = CRY_BLKTOYAMON,
+        .natDexNum = NATIONAL_DEX_BLKTOYAMON,
         .categoryName = _("Live Coal"),
         .height = 7,
         .weight = 214,
         .description = COMPOUND_STRING(
-            "If a Magby is spouting yellow flames from\n"
+            "If a Blktoyamon is spouting yellow flames from\n"
             "its mouth, it is in good health. When it is\n"
             "fatigued, black smoke will be mixed in with\n"
             "the flames."),
@@ -12751,22 +12751,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Magby,
+        .frontPic = gMonFrontPic_Blktoyamon,
         .frontPicSize = MON_COORDS_SIZE(32, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Magby,
+        .frontAnimFrames = sAnims_Blktoyamon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Magby,
+        .backPic = gMonBackPic_Blktoyamon,
         .backPicSize = MON_COORDS_SIZE(40, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_Magby,
-        .shinyPalette = gMonShinyPalette_Magby,
-        .iconSprite = gMonIcon_Magby,
+        .palette = gMonPalette_Blktoyamon,
+        .shinyPalette = gMonShinyPalette_Blktoyamon,
+        .iconSprite = gMonIcon_Blktoyamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Magby)
-        .levelUpLearnset = sMagbyLevelUpLearnset,
-        .teachableLearnset = sMagbyTeachableLearnset,
+        FOOTPRINT(Blktoyamon)
+        .levelUpLearnset = sBlktoyamonLevelUpLearnset,
+        .teachableLearnset = sBlktoyamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_CHIKURIMON}),
     },
 #endif //P_GEN_2_CROSS_EVOS
