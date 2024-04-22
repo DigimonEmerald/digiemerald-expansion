@@ -1106,8 +1106,8 @@ Cry_Bearmon::
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Blissey::
-	.incbin "sound/direct_sound_samples/cries/blissey.bin"
+Cry_Shoutmon::
+	.incbin "sound/direct_sound_samples/cries/shoutmon.bin"
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_BEARMON
 

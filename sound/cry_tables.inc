@@ -295,7 +295,7 @@ gCryTable::
 .endif @ P_GEN_4_CROSS_EVOS
 	cry Cry_Bearmon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry Cry_Blissey
+	cry Cry_Shoutmon
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_BEARMON
 .if P_FAMILY_BETAMON == TRUE
@@ -2721,7 +2721,7 @@ gCryTable_Reverse::
 .endif @ P_GEN_4_CROSS_EVOS
 	cry_reverse Cry_Bearmon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry_reverse Cry_Blissey
+	cry_reverse Cry_Shoutmon
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_BEARMON
 .if P_FAMILY_BETAMON == TRUE

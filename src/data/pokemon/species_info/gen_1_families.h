@@ -11287,11 +11287,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Bearmon)
         .levelUpLearnset = sBearmonLevelUpLearnset,
         .teachableLearnset = sBearmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_BLISSEY}),
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_SHOUTMON}),
     },
 
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_BLISSEY] =
+    [SPECIES_SHOUTMON] =
     {
         .baseHP        = 255,
         .baseAttack    = 10,
@@ -11311,37 +11311,37 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
         .abilities = { ABILITY_NATURAL_CURE, ABILITY_SERENE_GRACE, ABILITY_HEALER },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Blissey"),
-        .cryId = CRY_BLISSEY,
-        .natDexNum = NATIONAL_DEX_BLISSEY,
+        .speciesName = _("Shoutmon"),
+        .cryId = CRY_SHOUTMON,
+        .natDexNum = NATIONAL_DEX_SHOUTMON,
         .categoryName = _("Happiness"),
         .height = 15,
         .weight = 468,
         .description = COMPOUND_STRING(
             "If it senses sadness with its fluffy fur,\n"
-            "a Blissey will rush over to the sad person,\n"
+            "a Shoutmon will rush over to the sad person,\n"
             "however far away, to share an egg of\n"
             "happiness that brings a smile to any face."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 310,
         .trainerOffset = 3,
-        .frontPic = gMonFrontPic_Blissey,
+        .frontPic = gMonFrontPic_Shoutmon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_Blissey,
+        .frontAnimFrames = sAnims_Shoutmon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Blissey,
+        .backPic = gMonBackPic_Shoutmon,
         .backPicSize = MON_COORDS_SIZE(64, 32),
         .backPicYOffset = 16,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Blissey,
-        .shinyPalette = gMonShinyPalette_Blissey,
-        .iconSprite = gMonIcon_Blissey,
+        .palette = gMonPalette_Shoutmon,
+        .shinyPalette = gMonShinyPalette_Shoutmon,
+        .iconSprite = gMonIcon_Shoutmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Blissey)
-        .levelUpLearnset = sBlisseyLevelUpLearnset,
-        .teachableLearnset = sBlisseyTeachableLearnset,
+        FOOTPRINT(Shoutmon)
+        .levelUpLearnset = sShoutmonLevelUpLearnset,
+        .teachableLearnset = sShoutmonTeachableLearnset,
     },
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BEARMON

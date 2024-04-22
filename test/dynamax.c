@@ -1273,10 +1273,10 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Snooze makes only the target drowsy")
     PASSES_RANDOMLY(1, 2, RNG_G_MAX_SNOOZE);
     GIVEN {
         ASSUME(gMovesInfo[MOVE_G_MAX_SNOOZE].argument == MAX_EFFECT_YAWN_FOE);
-        ASSUME(gMovesInfo[MOVE_DARK_PULSE].category == DAMAGE_CATEGORY_SPECIAL); // Otherwise, Blissey faints.
+        ASSUME(gMovesInfo[MOVE_DARK_PULSE].category == DAMAGE_CATEGORY_SPECIAL); // Otherwise, Shoutmon faints.
         PLAYER(SPECIES_GRIMMSNARL) { GigantamaxFactor(TRUE); }
         PLAYER(SPECIES_IMPIDIMP);
-        OPPONENT(SPECIES_BLISSEY);
+        OPPONENT(SPECIES_SHOUTMON);
         OPPONENT(SPECIES_BEARMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_DARK_PULSE, target: opponentLeft, dynamax: TRUE); }
@@ -1284,10 +1284,10 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Snooze makes only the target drowsy")
     } SCENE {
         // turn 1
         MESSAGE("Grimmsnarl used G-Max Snooze!");
-        MESSAGE("Grimmsnarl made Foe Blissey drowsy!");
+        MESSAGE("Grimmsnarl made Foe Shoutmon drowsy!");
         // turn 2
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentLeft);
-        MESSAGE("Foe Blissey fell asleep!");
+        MESSAGE("Foe Shoutmon fell asleep!");
         STATUS_ICON(opponentLeft, sleep: TRUE);
     }
 }

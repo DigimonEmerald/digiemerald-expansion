@@ -1834,13 +1834,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Blissey[] = INCBIN_U32("graphics/pokemon/blissey/anim_front.4bpp.lz");
-    const u32 gMonPalette_Blissey[] = INCBIN_U32("graphics/pokemon/blissey/normal.gbapal.lz");
-    const u32 gMonBackPic_Blissey[] = INCBIN_U32("graphics/pokemon/blissey/back.4bpp.lz");
-    const u32 gMonShinyPalette_Blissey[] = INCBIN_U32("graphics/pokemon/blissey/shiny.gbapal.lz");
-    const u8 gMonIcon_Blissey[] = INCBIN_U8("graphics/pokemon/blissey/icon.4bpp");
+    const u32 gMonFrontPic_Shoutmon[] = INCBIN_U32("graphics/pokemon/shoutmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Shoutmon[] = INCBIN_U32("graphics/pokemon/shoutmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Shoutmon[] = INCBIN_U32("graphics/pokemon/shoutmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Shoutmon[] = INCBIN_U32("graphics/pokemon/shoutmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Shoutmon[] = INCBIN_U8("graphics/pokemon/shoutmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Blissey[] = INCBIN_U8("graphics/pokemon/blissey/footprint.1bpp");
+    const u8 gMonFootprint_Shoutmon[] = INCBIN_U8("graphics/pokemon/shoutmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BEARMON

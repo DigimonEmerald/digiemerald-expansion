@@ -103,12 +103,12 @@ WILD_BATTLE_TEST("Large exp gains are supported", s32 exp) // #1455
 
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Level(1); Item(ITEM_LUCKY_EGG); OTName("Test"); } // OT Name is different so it gets more exp as a traded mon
-        OPPONENT(SPECIES_BLISSEY) { Level(level); HP(1); }
+        OPPONENT(SPECIES_SHOUTMON) { Level(level); HP(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
         MESSAGE("Lopmonx used Tackle!");
-        MESSAGE("Wild Blissey fainted!");
+        MESSAGE("Wild Shoutmon fainted!");
         EXPERIENCE_BAR(player, captureGainedExp: &results[i].exp);
     } THEN {
         EXPECT(GetMonData(&gPlayerParty[0], MON_DATA_LEVEL) > 1);

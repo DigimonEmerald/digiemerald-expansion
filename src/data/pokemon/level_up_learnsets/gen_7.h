@@ -3310,7 +3310,7 @@ static const struct LevelUpMove sBearmonLevelUpLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const struct LevelUpMove sBlisseyLevelUpLearnset[] = {
+static const struct LevelUpMove sShoutmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),

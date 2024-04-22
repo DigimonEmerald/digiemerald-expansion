@@ -1652,7 +1652,7 @@ static const union AnimCmd sAnim_Bearmon_1[] =
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Blissey_1[] =
+static const union AnimCmd sAnim_Shoutmon_1[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_FRAME(1, 30),
@@ -10553,7 +10553,7 @@ SINGLE_ANIMATION(Happiny);
 #endif //P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Bearmon);
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Blissey);
+SINGLE_ANIMATION(Shoutmon);
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BEARMON
 #if P_FAMILY_BETAMON

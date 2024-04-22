@@ -6041,7 +6041,7 @@ static const u16 sBearmonTeachableLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const u16 sBlisseyTeachableLearnset[] = {
+static const u16 sShoutmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
