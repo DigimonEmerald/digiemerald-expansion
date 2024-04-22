@@ -2045,7 +2045,7 @@ static const union AnimCmd sAnim_Demidevmon_1[] =
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Espeon_1[] =
+static const union AnimCmd sAnim_Kunemon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 25),
@@ -10666,7 +10666,7 @@ SINGLE_ANIMATION(Cutemon);
 SINGLE_ANIMATION(Damemon);
 SINGLE_ANIMATION(Demidevmon);
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Espeon);
+SINGLE_ANIMATION(Kunemon);
 SINGLE_ANIMATION(Umbreon);
 #endif //P_GEN_2_CROSS_EVOS
 #if P_GEN_4_CROSS_EVOS

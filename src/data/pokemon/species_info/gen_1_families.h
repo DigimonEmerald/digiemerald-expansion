@@ -13630,7 +13630,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_DAMEMON},
                                 {EVO_ITEM, ITEM_WATER_STONE, SPECIES_CUTEMON},
                                 {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_DEMIDEVMON},
-                                {EVO_FRIENDSHIP_DAY, 0, SPECIES_ESPEON},
+                                {EVO_FRIENDSHIP_DAY, 0, SPECIES_KUNEMON},
                                 {EVO_FRIENDSHIP_NIGHT, 0, SPECIES_UMBREON},
                                 {EVO_SPECIFIC_MAP, MAP_PETALBURG_WOODS, SPECIES_LEAFEON},
                                 {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_LEAFEON},
@@ -13912,7 +13912,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_ESPEON] =
+    [SPECIES_KUNEMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 65,
@@ -13931,14 +13931,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SYNCHRONIZE, ABILITY_SYNCHRONIZE, ABILITY_MAGIC_BOUNCE },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Espeon"),
-        .cryId = CRY_ESPEON,
-        .natDexNum = NATIONAL_DEX_ESPEON,
+        .speciesName = _("Kunemon"),
+        .cryId = CRY_KUNEMON,
+        .natDexNum = NATIONAL_DEX_KUNEMON,
         .categoryName = _("Sun"),
         .height = 9,
         .weight = 265,
         .description = COMPOUND_STRING(
-            "An Espeon is extremely loyal to any\n"
+            "An Kunemon is extremely loyal to any\n"
             "Trainer it considers to be worthy. It is\n"
             "said to have developed precognitive\n"
             "powers to protect its Trainer from harm."),
@@ -13946,22 +13946,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 14,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Espeon,
+        .frontPic = gMonFrontPic_Kunemon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Espeon,
+        .frontAnimFrames = sAnims_Kunemon,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Espeon,
+        .backPic = gMonBackPic_Kunemon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Espeon,
-        .shinyPalette = gMonShinyPalette_Espeon,
-        .iconSprite = gMonIcon_Espeon,
+        .palette = gMonPalette_Kunemon,
+        .shinyPalette = gMonShinyPalette_Kunemon,
+        .iconSprite = gMonIcon_Kunemon,
         .iconPalIndex = 2,
-        FOOTPRINT(Espeon)
-        .levelUpLearnset = sEspeonLevelUpLearnset,
-        .teachableLearnset = sEspeonTeachableLearnset,
+        FOOTPRINT(Kunemon)
+        .levelUpLearnset = sKunemonLevelUpLearnset,
+        .teachableLearnset = sKunemonTeachableLearnset,
     },
 
     [SPECIES_UMBREON] =

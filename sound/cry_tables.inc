@@ -398,7 +398,7 @@ gCryTable::
 	cry Cry_Damemon
 	cry Cry_Demidevmon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry Cry_Espeon
+	cry Cry_Kunemon
 	cry Cry_Umbreon
 .endif @ P_GEN_2_CROSS_EVOS
 .if P_GEN_4_CROSS_EVOS == TRUE
@@ -2824,7 +2824,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Damemon
 	cry_reverse Cry_Demidevmon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry_reverse Cry_Espeon
+	cry_reverse Cry_Kunemon
 	cry_reverse Cry_Umbreon
 .endif @ P_GEN_2_CROSS_EVOS
 .if P_GEN_4_CROSS_EVOS == TRUE

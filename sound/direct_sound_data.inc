@@ -1326,8 +1326,8 @@ Cry_Demidevmon::
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Espeon::
-	.incbin "sound/direct_sound_samples/cries/espeon.bin"
+Cry_Kunemon::
+	.incbin "sound/direct_sound_samples/cries/kunemon.bin"
 
 	.align 2
 Cry_Umbreon::

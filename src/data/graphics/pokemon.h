@@ -2305,13 +2305,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Espeon[] = INCBIN_U32("graphics/pokemon/espeon/anim_front.4bpp.lz");
-    const u32 gMonPalette_Espeon[] = INCBIN_U32("graphics/pokemon/espeon/normal.gbapal.lz");
-    const u32 gMonBackPic_Espeon[] = INCBIN_U32("graphics/pokemon/espeon/back.4bpp.lz");
-    const u32 gMonShinyPalette_Espeon[] = INCBIN_U32("graphics/pokemon/espeon/shiny.gbapal.lz");
-    const u8 gMonIcon_Espeon[] = INCBIN_U8("graphics/pokemon/espeon/icon.4bpp");
+    const u32 gMonFrontPic_Kunemon[] = INCBIN_U32("graphics/pokemon/kunemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Kunemon[] = INCBIN_U32("graphics/pokemon/kunemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Kunemon[] = INCBIN_U32("graphics/pokemon/kunemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Kunemon[] = INCBIN_U32("graphics/pokemon/kunemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Kunemon[] = INCBIN_U8("graphics/pokemon/kunemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Espeon[] = INCBIN_U8("graphics/pokemon/espeon/footprint.1bpp");
+    const u8 gMonFootprint_Kunemon[] = INCBIN_U8("graphics/pokemon/kunemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Umbreon[] = INCBIN_U32("graphics/pokemon/umbreon/anim_front.4bpp.lz");

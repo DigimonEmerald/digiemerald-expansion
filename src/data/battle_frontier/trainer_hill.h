@@ -1310,7 +1310,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [5] =
                     {
-                        .species = SPECIES_ESPEON,
+                        .species = SPECIES_KUNEMON,
                         .heldItem = ITEM_LUM_BERRY,
                         .moves = {MOVE_SKILL_SWAP, MOVE_PSYBEAM, MOVE_SWIFT, MOVE_ATTRACT},
                         .speedEV = 255,
@@ -1324,7 +1324,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 5,
                         .abilityNum = 0,
                         .personality = 0xF,
-                        .nickname = _("ESPEON"),
+                        .nickname = _("KUNEMON"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                 },
@@ -3876,7 +3876,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [1] =
                                         {
-                                            .species = SPECIES_ESPEON,
+                                            .species = SPECIES_KUNEMON,
                                             .heldItem = ITEM_LUM_BERRY,
                                             .moves = {MOVE_PSYCHIC, MOVE_BITE, MOVE_CALM_MIND, MOVE_REFLECT},
                                             .hpEV = 6,
@@ -3891,7 +3891,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x28,
-                                            .nickname = _("ESPEON"),
+                                            .nickname = _("KUNEMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [2] =

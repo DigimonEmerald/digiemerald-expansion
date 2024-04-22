@@ -7447,7 +7447,7 @@ static const u16 sDemidevmonTeachableLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const u16 sEspeonTeachableLearnset[] = {
+static const u16 sKunemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_CUT,
