@@ -1828,7 +1828,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_JAZAMON
 
-#if P_FAMILY_SUDOWOODO
+#if P_FAMILY_JUNKMON
 #if P_GEN_4_CROSS_EVOS
     [SPECIES_BONSLY] =
     {
@@ -1880,11 +1880,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Bonsly)
         .levelUpLearnset = sBonslyLevelUpLearnset,
         .teachableLearnset = sBonslyTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_MOVE, MOVE_MIMIC, SPECIES_SUDOWOODO}),
+        .evolutions = EVOLUTION({EVO_MOVE, MOVE_MIMIC, SPECIES_JUNKMON}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 
-    [SPECIES_SUDOWOODO] =
+    [SPECIES_JUNKMON] =
     {
         .baseHP        = 70,
         .baseAttack    = 100,
@@ -1903,9 +1903,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_STURDY, ABILITY_ROCK_HEAD, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Sudowoodo"),
-        .cryId = CRY_SUDOWOODO,
-        .natDexNum = NATIONAL_DEX_SUDOWOODO,
+        .speciesName = _("Junkmon"),
+        .cryId = CRY_JUNKMON,
+        .natDexNum = NATIONAL_DEX_JUNKMON,
         .categoryName = _("Imitation"),
         .height = 12,
         .weight = 380,
@@ -1918,28 +1918,28 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Sudowoodo,
-        .frontPicFemale = gMonFrontPic_SudowoodoF,
+        .frontPic = gMonFrontPic_Junkmon,
+        .frontPicFemale = gMonFrontPic_JunkmonF,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Sudowoodo,
+        .frontAnimFrames = sAnims_Junkmon,
         .frontAnimId = ANIM_H_SLIDE_SLOW,
-        .backPic = gMonBackPic_Sudowoodo,
-        .backPicFemale = gMonBackPic_SudowoodoF,
+        .backPic = gMonBackPic_Junkmon,
+        .backPicFemale = gMonBackPic_JunkmonF,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Sudowoodo,
-        .shinyPalette = gMonShinyPalette_Sudowoodo,
-        .iconSprite = gMonIcon_Sudowoodo,
+        .palette = gMonPalette_Junkmon,
+        .shinyPalette = gMonShinyPalette_Junkmon,
+        .iconSprite = gMonIcon_Junkmon,
         .iconPalIndex = 1,
-        FOOTPRINT(Sudowoodo)
-        .levelUpLearnset = sSudowoodoLevelUpLearnset,
-        .teachableLearnset = sSudowoodoTeachableLearnset,
+        FOOTPRINT(Junkmon)
+        .levelUpLearnset = sJunkmonLevelUpLearnset,
+        .teachableLearnset = sJunkmonTeachableLearnset,
     },
-#endif //P_FAMILY_SUDOWOODO
+#endif //P_FAMILY_JUNKMON
 
 #if P_FAMILY_HOPPIP
     [SPECIES_HOPPIP] =

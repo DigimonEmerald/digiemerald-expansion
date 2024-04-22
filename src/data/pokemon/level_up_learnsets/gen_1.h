@@ -3732,7 +3732,7 @@ static const struct LevelUpMove sJellymonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_JAZAMON
 
-#if P_FAMILY_SUDOWOODO
+#if P_FAMILY_JUNKMON
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sBonslyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FAKE_TEARS),
@@ -3752,7 +3752,7 @@ static const struct LevelUpMove sBonslyLevelUpLearnset[] = {
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const struct LevelUpMove sSudowoodoLevelUpLearnset[] = {
+static const struct LevelUpMove sJunkmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ROCK_THROW),
     LEVEL_UP_MOVE( 1, MOVE_MIMIC),
     LEVEL_UP_MOVE(10, MOVE_FLAIL),
@@ -3762,7 +3762,7 @@ static const struct LevelUpMove sSudowoodoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(46, MOVE_SLAM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SUDOWOODO
+#endif //P_FAMILY_JUNKMON
 
 #if P_FAMILY_HOPPIP
 static const struct LevelUpMove sHoppipLevelUpLearnset[] = {

@@ -2925,7 +2925,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_JAZAMON
 
-#if P_FAMILY_SUDOWOODO
+#if P_FAMILY_JUNKMON
 #if P_GEN_4_CROSS_EVOS
     const u32 gMonFrontPic_Bonsly[] = INCBIN_U32("graphics/pokemon/bonsly/anim_front.4bpp.lz");
     const u32 gMonPalette_Bonsly[] = INCBIN_U32("graphics/pokemon/bonsly/normal.gbapal.lz");
@@ -2937,18 +2937,18 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
 
-    const u32 gMonFrontPic_Sudowoodo[] = INCBIN_U32("graphics/pokemon/sudowoodo/anim_front.4bpp.lz");
-    const u32 gMonPalette_Sudowoodo[] = INCBIN_U32("graphics/pokemon/sudowoodo/normal.gbapal.lz");
-    const u32 gMonBackPic_Sudowoodo[] = INCBIN_U32("graphics/pokemon/sudowoodo/back.4bpp.lz");
-    const u32 gMonShinyPalette_Sudowoodo[] = INCBIN_U32("graphics/pokemon/sudowoodo/shiny.gbapal.lz");
-    const u8 gMonIcon_Sudowoodo[] = INCBIN_U8("graphics/pokemon/sudowoodo/icon.4bpp");
+    const u32 gMonFrontPic_Junkmon[] = INCBIN_U32("graphics/pokemon/junkmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Junkmon[] = INCBIN_U32("graphics/pokemon/junkmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Junkmon[] = INCBIN_U32("graphics/pokemon/junkmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Junkmon[] = INCBIN_U32("graphics/pokemon/junkmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Junkmon[] = INCBIN_U8("graphics/pokemon/junkmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Sudowoodo[] = INCBIN_U8("graphics/pokemon/sudowoodo/footprint.1bpp");
+    const u8 gMonFootprint_Junkmon[] = INCBIN_U8("graphics/pokemon/junkmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_SudowoodoF[] = INCBIN_U32("graphics/pokemon/sudowoodo/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_SudowoodoF[] = INCBIN_U32("graphics/pokemon/sudowoodo/backf.4bpp.lz");
-#endif //P_FAMILY_SUDOWOODO
+    const u32 gMonFrontPic_JunkmonF[] = INCBIN_U32("graphics/pokemon/junkmon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_JunkmonF[] = INCBIN_U32("graphics/pokemon/junkmon/backf.4bpp.lz");
+#endif //P_FAMILY_JUNKMON
 
 #if P_FAMILY_HOPPIP
     const u32 gMonFrontPic_Hoppip[] = INCBIN_U32("graphics/pokemon/hoppip/anim_front.4bpp.lz");

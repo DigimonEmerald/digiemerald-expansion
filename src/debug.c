@@ -4933,7 +4933,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(SE_ARENA_TIMEUP2) \
     X(SE_PIKE_CURTAIN_CLOSE) \
     X(SE_PIKE_CURTAIN_OPEN) \
-    X(SE_SUDOWOODO_SHAKE) \
+    X(SE_JUNKMON_SHAKE) \
 
 // Create BGM list
 #define X(songId) static const u8 sBGMName_##songId[] = _(#songId);

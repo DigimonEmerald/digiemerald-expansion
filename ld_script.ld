@@ -1001,7 +1001,7 @@ SECTIONS {
         sound/songs/midi/se_arena_timeup2.o(.rodata);
         sound/songs/midi/se_pike_curtain_close.o(.rodata);
         sound/songs/midi/se_pike_curtain_open.o(.rodata);
-        sound/songs/midi/se_sudowoodo_shake.o(.rodata);
+        sound/songs/midi/se_junkmon_shake.o(.rodata);
         sound/songs/midi/mus_littleroot_test.o(.rodata);
         sound/songs/midi/mus_gsc_route38.o(.rodata);
         sound/songs/midi/mus_caught.o(.rodata);

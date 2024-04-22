@@ -1526,7 +1526,7 @@ const u16 gEggMoves[] = {
         MOVE_CAMOUFLAGE),
 #endif //P_FAMILY_JAZAMON
 
-#if P_FAMILY_SUDOWOODO
+#if P_FAMILY_JUNKMON
 #if P_GEN_4_CROSS_EVOS
     egg_moves(BONSLY,
         MOVE_SELF_DESTRUCT,
@@ -1539,7 +1539,7 @@ const u16 gEggMoves[] = {
         MOVE_CURSE,
         MOVE_ENDURE),
 #endif //P_GEN_4_CROSS_EVOS
-    egg_moves(SUDOWOODO,
+    egg_moves(JUNKMON,
         MOVE_SELF_DESTRUCT,
         MOVE_HEADBUTT,
         MOVE_HARDEN,
@@ -1549,7 +1549,7 @@ const u16 gEggMoves[] = {
         MOVE_STEALTH_ROCK,
         MOVE_CURSE,
         MOVE_ENDURE),
-#endif //P_FAMILY_SUDOWOODO
+#endif //P_FAMILY_JUNKMON
 
 #if P_FAMILY_HOPPIP
     egg_moves(HOPPIP,

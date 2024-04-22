@@ -9617,7 +9617,7 @@ static const u16 sJellymonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_JAZAMON
 
-#if P_FAMILY_SUDOWOODO
+#if P_FAMILY_JUNKMON
 #if P_GEN_4_CROSS_EVOS
 static const u16 sBonslyTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -9651,7 +9651,7 @@ static const u16 sBonslyTeachableLearnset[] = {
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const u16 sSudowoodoTeachableLearnset[] = {
+static const u16 sJunkmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
@@ -9694,7 +9694,7 @@ static const u16 sSudowoodoTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SUDOWOODO
+#endif //P_FAMILY_JUNKMON
 
 #if P_FAMILY_HOPPIP
 static const u16 sHoppipTeachableLearnset[] = {

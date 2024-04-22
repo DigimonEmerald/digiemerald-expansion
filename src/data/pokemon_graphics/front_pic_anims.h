@@ -2655,7 +2655,7 @@ static const union AnimCmd sAnim_Jellymon_1[] =
 };
 #endif //P_FAMILY_JAZAMON
 
-#if P_FAMILY_SUDOWOODO
+#if P_FAMILY_JUNKMON
 #if P_GEN_4_CROSS_EVOS
 static const union AnimCmd sAnim_Bonsly_1[] =
 {
@@ -2668,7 +2668,7 @@ static const union AnimCmd sAnim_Bonsly_1[] =
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const union AnimCmd sAnim_Sudowoodo_1[] =
+static const union AnimCmd sAnim_Junkmon_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 15),
@@ -2678,7 +2678,7 @@ static const union AnimCmd sAnim_Sudowoodo_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SUDOWOODO
+#endif //P_FAMILY_JUNKMON
 
 #if P_FAMILY_HOPPIP
 static const union AnimCmd sAnim_Hoppip_1[] =
@@ -10806,12 +10806,12 @@ SINGLE_ANIMATION(Azurill);
 SINGLE_ANIMATION(Jazamon);
 SINGLE_ANIMATION(Jellymon);
 #endif //P_FAMILY_JAZAMON
-#if P_FAMILY_SUDOWOODO
+#if P_FAMILY_JUNKMON
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Bonsly);
 #endif //P_GEN_4_CROSS_EVOS
-SINGLE_ANIMATION(Sudowoodo);
-#endif //P_FAMILY_SUDOWOODO
+SINGLE_ANIMATION(Junkmon);
+#endif //P_FAMILY_JUNKMON
 #if P_FAMILY_HOPPIP
 SINGLE_ANIMATION(Hoppip);
 SINGLE_ANIMATION(Skiploom);

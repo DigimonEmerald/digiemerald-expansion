@@ -133,17 +133,17 @@ SINGLE_BATTLE_TEST("Reflect Type copies a target's pure type")
 {
     ASSUME(gSpeciesInfo[SPECIES_GIGIMON].types[0] == TYPE_FIRE);
     ASSUME(gSpeciesInfo[SPECIES_GIGIMON].types[1] == TYPE_FIRE);
-    ASSUME(gSpeciesInfo[SPECIES_SUDOWOODO].types[0] == TYPE_ROCK);
-    ASSUME(gSpeciesInfo[SPECIES_SUDOWOODO].types[1] == TYPE_ROCK);
+    ASSUME(gSpeciesInfo[SPECIES_JUNKMON].types[0] == TYPE_ROCK);
+    ASSUME(gSpeciesInfo[SPECIES_JUNKMON].types[1] == TYPE_ROCK);
     GIVEN {
         PLAYER(SPECIES_GIGIMON);
-        OPPONENT(SPECIES_SUDOWOODO);
+        OPPONENT(SPECIES_JUNKMON);
     } WHEN {
         TURN { MOVE(player, MOVE_REFLECT_TYPE); }
     } SCENE {
         MESSAGE("Gigimon used Reflect Type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, player);
-        MESSAGE("Gigimon's type changed to match the Foe Sudowoodo's!");
+        MESSAGE("Gigimon's type changed to match the Foe Junkmon's!");
     } THEN {
         EXPECT_EQ(player->type1, TYPE_ROCK);
         EXPECT_EQ(player->type2, TYPE_ROCK);

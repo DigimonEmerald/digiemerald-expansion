@@ -3445,7 +3445,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                 {
                                     [0] =
                                         {
-                                            .species = SPECIES_SUDOWOODO,
+                                            .species = SPECIES_JUNKMON,
                                             .heldItem = ITEM_SITRUS_BERRY,
                                             .moves = {MOVE_ROCK_SLIDE, MOVE_BLOCK, MOVE_TOXIC, MOVE_EXPLOSION},
                                             .hpEV = 100,
@@ -3460,7 +3460,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 0,
                                             .personality = 0x80,
-                                            .nickname = _("SUDOWOODO"),
+                                            .nickname = _("JUNKMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [1] =

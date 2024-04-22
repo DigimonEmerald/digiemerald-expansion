@@ -523,10 +523,10 @@ gCryTable::
 	cry Cry_Jazamon
 	cry Cry_Jellymon
 .endif @ P_FAMILY_JAZAMON
-.if P_FAMILY_SUDOWOODO == TRUE
+.if P_FAMILY_JUNKMON == TRUE
 	cry Cry_Bonsly
-	cry Cry_Sudowoodo
-.endif @ P_FAMILY_SUDOWOODO
+	cry Cry_Junkmon
+.endif @ P_FAMILY_JUNKMON
 .if P_FAMILY_HOPPIP == TRUE
 	cry Cry_Hoppip
 	cry Cry_Skiploom
@@ -2949,10 +2949,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Jazamon
 	cry_reverse Cry_Jellymon
 .endif @ P_FAMILY_JAZAMON
-.if P_FAMILY_SUDOWOODO == TRUE
+.if P_FAMILY_JUNKMON == TRUE
 	cry_reverse Cry_Bonsly
-	cry_reverse Cry_Sudowoodo
-.endif @ P_FAMILY_SUDOWOODO
+	cry_reverse Cry_Junkmon
+.endif @ P_FAMILY_JUNKMON
 .if P_FAMILY_HOPPIP == TRUE
 	cry_reverse Cry_Hoppip
 	cry_reverse Cry_Skiploom

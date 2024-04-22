@@ -1619,15 +1619,15 @@ Cry_Jellymon::
 	.incbin "sound/direct_sound_samples/cries/jellymon.bin"
 .endif @ P_FAMILY_JAZAMON
 
-.if P_FAMILY_SUDOWOODO == TRUE
+.if P_FAMILY_JUNKMON == TRUE
 	.align 2
 Cry_Bonsly::
 	.incbin "sound/direct_sound_samples/cries/bonsly.bin"
 
 	.align 2
-Cry_Sudowoodo::
-	.incbin "sound/direct_sound_samples/cries/sudowoodo.bin"
-.endif @ P_FAMILY_SUDOWOODO
+Cry_Junkmon::
+	.incbin "sound/direct_sound_samples/cries/junkmon.bin"
+.endif @ P_FAMILY_JUNKMON
 
 .if P_FAMILY_HOPPIP == TRUE
 	.align 2
