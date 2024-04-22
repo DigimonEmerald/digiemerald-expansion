@@ -8942,7 +8942,7 @@ static const u16 sGhostmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sNoctowlTeachableLearnset[] = {
+static const u16 sGizamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CALM_MIND,

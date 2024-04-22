@@ -10530,7 +10530,7 @@ static const struct TrainerMon sParty_Winona4[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 48,
-    .species = SPECIES_NOCTOWL,
+    .species = SPECIES_GIZAMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_HYPNOSIS, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_DREAM_EATER}
     },
@@ -10575,7 +10575,7 @@ static const struct TrainerMon sParty_Winona5[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 53,
-    .species = SPECIES_NOCTOWL,
+    .species = SPECIES_GIZAMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_HYPNOSIS, MOVE_PSYCHIC, MOVE_REFLECT, MOVE_DREAM_EATER}
     },

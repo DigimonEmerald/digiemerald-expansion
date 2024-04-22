@@ -2728,13 +2728,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Ghostmon[] = INCBIN_U8("graphics/pokemon/ghostmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Noctowl[] = INCBIN_U32("graphics/pokemon/noctowl/anim_front.4bpp.lz");
-    const u32 gMonPalette_Noctowl[] = INCBIN_U32("graphics/pokemon/noctowl/normal.gbapal.lz");
-    const u32 gMonBackPic_Noctowl[] = INCBIN_U32("graphics/pokemon/noctowl/back.4bpp.lz");
-    const u32 gMonShinyPalette_Noctowl[] = INCBIN_U32("graphics/pokemon/noctowl/shiny.gbapal.lz");
-    const u8 gMonIcon_Noctowl[] = INCBIN_U8("graphics/pokemon/noctowl/icon.4bpp");
+    const u32 gMonFrontPic_Gizamon[] = INCBIN_U32("graphics/pokemon/gizamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gizamon[] = INCBIN_U32("graphics/pokemon/gizamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Gizamon[] = INCBIN_U32("graphics/pokemon/gizamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gizamon[] = INCBIN_U32("graphics/pokemon/gizamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Gizamon[] = INCBIN_U8("graphics/pokemon/gizamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Noctowl[] = INCBIN_U8("graphics/pokemon/noctowl/footprint.1bpp");
+    const u8 gMonFootprint_Gizamon[] = INCBIN_U8("graphics/pokemon/gizamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_GHOSTMON
 

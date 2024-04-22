@@ -483,7 +483,7 @@ gCryTable::
 .endif @ P_FAMILY_GAZIMON
 .if P_FAMILY_GHOSTMON == TRUE
 	cry Cry_Ghostmon
-	cry Cry_Noctowl
+	cry Cry_Gizamon
 .endif @ P_FAMILY_GHOSTMON
 .if P_FAMILY_LEDYBA == TRUE
 	cry Cry_Ledyba
@@ -2909,7 +2909,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_GAZIMON
 .if P_FAMILY_GHOSTMON == TRUE
 	cry_reverse Cry_Ghostmon
-	cry_reverse Cry_Noctowl
+	cry_reverse Cry_Gizamon
 .endif @ P_FAMILY_GHOSTMON
 .if P_FAMILY_LEDYBA == TRUE
 	cry_reverse Cry_Ledyba

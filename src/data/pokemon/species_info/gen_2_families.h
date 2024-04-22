@@ -731,10 +731,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Ghostmon)
         .levelUpLearnset = sGhostmonLevelUpLearnset,
         .teachableLearnset = sGhostmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_NOCTOWL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_GIZAMON}),
     },
 
-    [SPECIES_NOCTOWL] =
+    [SPECIES_GIZAMON] =
     {
         .baseHP        = 100,
         .baseAttack    = 50,
@@ -759,37 +759,37 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_INSOMNIA, ABILITY_KEEN_EYE, ABILITY_TINTED_LENS },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Noctowl"),
-        .cryId = CRY_NOCTOWL,
-        .natDexNum = NATIONAL_DEX_NOCTOWL,
+        .speciesName = _("Gizamon"),
+        .cryId = CRY_GIZAMON,
+        .natDexNum = NATIONAL_DEX_GIZAMON,
         .categoryName = _("Owl"),
         .height = 16,
         .weight = 408,
         .description = COMPOUND_STRING(
             "It unfailingly catches prey in darkness.\n"
-            "Noctowl owe their success to superior\n"
+            "Gizamon owe their success to superior\n"
             "vision that allows them to see in minimal\n"
             "light, and to their supple and silent wings."),
         .pokemonScale = 278,
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Noctowl,
+        .frontPic = gMonFrontPic_Gizamon,
         .frontPicSize = MON_COORDS_SIZE(40, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Noctowl,
+        .frontAnimFrames = sAnims_Gizamon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Noctowl,
+        .backPic = gMonBackPic_Gizamon,
         .backPicSize = MON_COORDS_SIZE(48, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Noctowl,
-        .shinyPalette = gMonShinyPalette_Noctowl,
-        .iconSprite = gMonIcon_Noctowl,
+        .palette = gMonPalette_Gizamon,
+        .shinyPalette = gMonShinyPalette_Gizamon,
+        .iconSprite = gMonIcon_Gizamon,
         .iconPalIndex = 2,
-        FOOTPRINT(Noctowl)
-        .levelUpLearnset = sNoctowlLevelUpLearnset,
-        .teachableLearnset = sNoctowlTeachableLearnset,
+        FOOTPRINT(Gizamon)
+        .levelUpLearnset = sGizamonLevelUpLearnset,
+        .teachableLearnset = sGizamonTeachableLearnset,
     },
 #endif //P_FAMILY_GHOSTMON
 

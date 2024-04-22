@@ -2456,7 +2456,7 @@ static const union AnimCmd sAnim_Ghostmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Noctowl_1[] =
+static const union AnimCmd sAnim_Gizamon_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 20),
@@ -10766,7 +10766,7 @@ SINGLE_ANIMATION(Gazimon_x);
 #endif //P_FAMILY_GAZIMON
 #if P_FAMILY_GHOSTMON
 SINGLE_ANIMATION(Ghostmon);
-SINGLE_ANIMATION(Noctowl);
+SINGLE_ANIMATION(Gizamon);
 #endif //P_FAMILY_GHOSTMON
 #if P_FAMILY_LEDYBA
 SINGLE_ANIMATION(Ledyba);
