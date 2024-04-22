@@ -1074,10 +1074,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Gotsumon_x)
         .levelUpLearnset = sGotsumon_xLevelUpLearnset,
         .teachableLearnset = sGotsumon_xTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_LANTURN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_GUILMON}),
     },
 
-    [SPECIES_LANTURN] =
+    [SPECIES_GUILMON] =
     {
         .baseHP        = 125,
         .baseAttack    = 58,
@@ -1097,9 +1097,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_VOLT_ABSORB, ABILITY_ILLUMINATE, ABILITY_WATER_ABSORB },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Lanturn"),
-        .cryId = CRY_LANTURN,
-        .natDexNum = NATIONAL_DEX_LANTURN,
+        .speciesName = _("Guilmon"),
+        .cryId = CRY_GUILMON,
+        .natDexNum = NATIONAL_DEX_GUILMON,
         .categoryName = _("Light"),
         .height = 12,
         .weight = 225,
@@ -1112,22 +1112,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 6,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Lanturn,
+        .frontPic = gMonFrontPic_Guilmon,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Lanturn,
+        .frontAnimFrames = sAnims_Guilmon,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE_SMALL,
-        .backPic = gMonBackPic_Lanturn,
+        .backPic = gMonBackPic_Guilmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
-        .palette = gMonPalette_Lanturn,
-        .shinyPalette = gMonShinyPalette_Lanturn,
-        .iconSprite = gMonIcon_Lanturn,
+        .palette = gMonPalette_Guilmon,
+        .shinyPalette = gMonShinyPalette_Guilmon,
+        .iconSprite = gMonIcon_Guilmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Lanturn)
-        .levelUpLearnset = sLanturnLevelUpLearnset,
-        .teachableLearnset = sLanturnTeachableLearnset,
+        FOOTPRINT(Guilmon)
+        .levelUpLearnset = sGuilmonLevelUpLearnset,
+        .teachableLearnset = sGuilmonTeachableLearnset,
     },
 #endif //P_FAMILY_GOTSUMON_X
 

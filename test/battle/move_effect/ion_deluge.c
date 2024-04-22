@@ -11,15 +11,15 @@ WILD_BATTLE_TEST("Ion Deluge works the same way as always when used by a mon wit
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_LANTURN) { Ability(ABILITY_VOLT_ABSORB); HP(1); }
+        OPPONENT(SPECIES_GUILMON) { Ability(ABILITY_VOLT_ABSORB); HP(1); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_ION_DELUGE); }
     } SCENE {
-        MESSAGE("Wild Lanturn used Ion Deluge!");
+        MESSAGE("Wild Guilmon used Ion Deluge!");
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_VOLT_ABSORB);
             HP_BAR(opponent);
-            MESSAGE("Wild Lanturn restored HP using its Volt Absorb!");
+            MESSAGE("Wild Guilmon restored HP using its Volt Absorb!");
         }
         MESSAGE("A deluge of ions showers the battlefield!");
     }

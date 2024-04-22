@@ -5173,7 +5173,7 @@ static const struct TrainerMon sParty_Dianne[] = {
     },
     {
     .lvl = 43,
-    .species = SPECIES_LANTURN,
+    .species = SPECIES_GUILMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_THUNDERBOLT, MOVE_EARTHQUAKE, MOVE_NONE, MOVE_NONE}
     }
@@ -5682,7 +5682,7 @@ static const struct TrainerMon sParty_Linda[] = {
 static const struct TrainerMon sParty_Kaylee[] = {
     {
     .lvl = 34,
-    .species = SPECIES_LANTURN,
+    .species = SPECIES_GUILMON,
     },
     {
     .lvl = 34,
@@ -8825,7 +8825,7 @@ static const struct TrainerMon sParty_LilaAndRoy2[] = {
 static const struct TrainerMon sParty_LilaAndRoy3[] = {
     {
     .lvl = 45,
-    .species = SPECIES_LANTURN,
+    .species = SPECIES_GUILMON,
     },
     {
     .lvl = 43,
@@ -8836,7 +8836,7 @@ static const struct TrainerMon sParty_LilaAndRoy3[] = {
 static const struct TrainerMon sParty_LilaAndRoy4[] = {
     {
     .lvl = 48,
-    .species = SPECIES_LANTURN,
+    .species = SPECIES_GUILMON,
     },
     {
     .lvl = 46,
@@ -8847,7 +8847,7 @@ static const struct TrainerMon sParty_LilaAndRoy4[] = {
 static const struct TrainerMon sParty_LilaAndRoy5[] = {
     {
     .lvl = 51,
-    .species = SPECIES_LANTURN,
+    .species = SPECIES_GUILMON,
     },
     {
     .lvl = 49,

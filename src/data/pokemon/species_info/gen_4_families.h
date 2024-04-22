@@ -3985,7 +3985,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             "Lumineon swimming in the darkness\n"
             "of the deep sea look like stars shining\n"
             "in the night sky. It competes for food\n"
-            "with Lanturn."),
+            "with Guilmon."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,

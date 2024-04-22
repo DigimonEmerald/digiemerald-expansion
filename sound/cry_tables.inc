@@ -495,7 +495,7 @@ gCryTable::
 .endif @ P_FAMILY_GOMAMON
 .if P_FAMILY_GOTSUMON_X == TRUE
 	cry Cry_Gotsumon_x
-	cry Cry_Lanturn
+	cry Cry_Guilmon
 .endif @ P_FAMILY_GOTSUMON_X
 .if P_FAMILY_TOGEPI == TRUE
 	cry Cry_Togepi
@@ -2921,7 +2921,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_GOMAMON
 .if P_FAMILY_GOTSUMON_X == TRUE
 	cry_reverse Cry_Gotsumon_x
-	cry_reverse Cry_Lanturn
+	cry_reverse Cry_Guilmon
 .endif @ P_FAMILY_GOTSUMON_X
 .if P_FAMILY_TOGEPI == TRUE
 	cry_reverse Cry_Togepi

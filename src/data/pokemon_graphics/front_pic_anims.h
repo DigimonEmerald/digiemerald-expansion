@@ -2519,7 +2519,7 @@ static const union AnimCmd sAnim_Gotsumon_x_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Lanturn_1[] =
+static const union AnimCmd sAnim_Guilmon_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 10),
@@ -10778,7 +10778,7 @@ SINGLE_ANIMATION(Gomamon_x);
 #endif //P_FAMILY_GOMAMON
 #if P_FAMILY_GOTSUMON_X
 SINGLE_ANIMATION(Gotsumon_x);
-SINGLE_ANIMATION(Lanturn);
+SINGLE_ANIMATION(Guilmon);
 #endif //P_FAMILY_GOTSUMON_X
 #if P_FAMILY_TOGEPI
 SINGLE_ANIMATION(Togepi);
