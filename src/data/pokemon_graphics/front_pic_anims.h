@@ -3340,8 +3340,8 @@ static const union AnimCmd sAnim_Icegobimon_1[] =
 };
 #endif //P_FAMILY_ICEGOBIMON
 
-#if P_FAMILY_LARVITAR
-static const union AnimCmd sAnim_Larvitar_1[] =
+#if P_FAMILY_SOLARMON
+static const union AnimCmd sAnim_Solarmon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -3368,7 +3368,7 @@ static const union AnimCmd sAnim_Tyranitar_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(TyranitarMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_LARVITAR
+#endif //P_FAMILY_SOLARMON
 
 #if P_FAMILY_LUGIA
 static const union AnimCmd sAnim_Lugia_1[] =
@@ -10988,14 +10988,14 @@ SINGLE_ANIMATION(Yukiagumon_06);
 #if P_FAMILY_ICEGOBIMON
 SINGLE_ANIMATION(Icegobimon);
 #endif //P_FAMILY_ICEGOBIMON
-#if P_FAMILY_LARVITAR
-SINGLE_ANIMATION(Larvitar);
+#if P_FAMILY_SOLARMON
+SINGLE_ANIMATION(Solarmon);
 SINGLE_ANIMATION(Pupitar);
 SINGLE_ANIMATION(Tyranitar);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(TyranitarMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_LARVITAR
+#endif //P_FAMILY_SOLARMON
 #if P_FAMILY_LUGIA
 SINGLE_ANIMATION(Lugia);
 #endif //P_FAMILY_LUGIA

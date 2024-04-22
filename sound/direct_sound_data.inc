@@ -1992,10 +1992,10 @@ Cry_Icegobimon::
 	.incbin "sound/direct_sound_samples/cries/icegobimon.bin"
 .endif @ P_FAMILY_ICEGOBIMON
 
-.if P_FAMILY_LARVITAR == TRUE
+.if P_FAMILY_SOLARMON == TRUE
 	.align 2
-Cry_Larvitar::
-	.incbin "sound/direct_sound_samples/cries/larvitar.bin"
+Cry_Solarmon::
+	.incbin "sound/direct_sound_samples/cries/solarmon.bin"
 
 	.align 2
 Cry_Pupitar::
@@ -2010,7 +2010,7 @@ Cry_Tyranitar::
 Cry_TyranitarMega::
 	.incbin "sound/direct_sound_samples/cries/tyranitar_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_LARVITAR
+.endif @ P_FAMILY_SOLARMON
 
 .if P_FAMILY_LUGIA == TRUE
 	.align 2

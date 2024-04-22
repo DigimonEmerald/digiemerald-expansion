@@ -181,7 +181,7 @@
 #define P_FAMILY_YUKIAGUMON                  P_GEN_2_POKEMON
 #define P_FAMILY_YUKIAGUMON_06                   P_GEN_2_POKEMON
 #define P_FAMILY_ICEGOBIMON                 P_GEN_2_POKEMON
-#define P_FAMILY_LARVITAR                P_GEN_2_POKEMON
+#define P_FAMILY_SOLARMON                P_GEN_2_POKEMON
 #define P_FAMILY_LUGIA                   P_GEN_2_POKEMON
 #define P_FAMILY_HO_OH                   P_GEN_2_POKEMON
 #define P_FAMILY_CELEBI                  P_GEN_2_POKEMON

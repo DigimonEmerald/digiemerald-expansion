@@ -692,14 +692,14 @@ gCryTable::
 .if P_FAMILY_ICEGOBIMON == TRUE
 	cry Cry_Icegobimon
 .endif @ P_FAMILY_ICEGOBIMON
-.if P_FAMILY_LARVITAR == TRUE
-	cry Cry_Larvitar
+.if P_FAMILY_SOLARMON == TRUE
+	cry Cry_Solarmon
 	cry Cry_Pupitar
 	cry Cry_Tyranitar
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_TyranitarMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_LARVITAR
+.endif @ P_FAMILY_SOLARMON
 .if P_FAMILY_LUGIA == TRUE
 	cry Cry_Lugia
 .endif @ P_FAMILY_LUGIA
@@ -3118,14 +3118,14 @@ gCryTable_Reverse::
 .if P_FAMILY_ICEGOBIMON == TRUE
 	cry_reverse Cry_Icegobimon
 .endif @ P_FAMILY_ICEGOBIMON
-.if P_FAMILY_LARVITAR == TRUE
-	cry_reverse Cry_Larvitar
+.if P_FAMILY_SOLARMON == TRUE
+	cry_reverse Cry_Solarmon
 	cry_reverse Cry_Pupitar
 	cry_reverse Cry_Tyranitar
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_TyranitarMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_LARVITAR
+.endif @ P_FAMILY_SOLARMON
 .if P_FAMILY_LUGIA == TRUE
 	cry_reverse Cry_Lugia
 .endif @ P_FAMILY_LUGIA

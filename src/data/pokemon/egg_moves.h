@@ -2068,8 +2068,8 @@ const u16 gEggMoves[] = {
         MOVE_BELCH),
 #endif //P_FAMILY_SHAMANMON
 
-#if P_FAMILY_LARVITAR
-    egg_moves(LARVITAR,
+#if P_FAMILY_SOLARMON
+    egg_moves(SOLARMON,
         MOVE_PURSUIT,
         MOVE_STOMP,
         MOVE_OUTRAGE,
@@ -2082,7 +2082,7 @@ const u16 gEggMoves[] = {
         MOVE_IRON_HEAD,
         MOVE_STEALTH_ROCK,
         MOVE_IRON_TAIL),
-#endif //P_FAMILY_LARVITAR
+#endif //P_FAMILY_SOLARMON
 
 #if P_FAMILY_TREECKO
     egg_moves(TREECKO,

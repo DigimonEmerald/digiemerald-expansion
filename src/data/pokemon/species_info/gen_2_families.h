@@ -6041,8 +6041,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_ICEGOBIMON
 
-#if P_FAMILY_LARVITAR
-    [SPECIES_LARVITAR] =
+#if P_FAMILY_SOLARMON
+    [SPECIES_SOLARMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 64,
@@ -6061,14 +6061,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_SAND_VEIL },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Larvitar"),
-        .cryId = CRY_LARVITAR,
-        .natDexNum = NATIONAL_DEX_LARVITAR,
+        .speciesName = _("Solarmon"),
+        .cryId = CRY_SOLARMON,
+        .natDexNum = NATIONAL_DEX_SOLARMON,
         .categoryName = _("Rock Skin"),
         .height = 6,
         .weight = 720,
         .description = COMPOUND_STRING(
-            "A Larvitar is born deep under the ground.\n"
+            "A Solarmon is born deep under the ground.\n"
             "It must eat its way through the soil above\n"
             "and reach the surface for it to see its\n"
             "parents' faces."),
@@ -6076,22 +6076,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Larvitar,
+        .frontPic = gMonFrontPic_Solarmon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Larvitar,
+        .frontAnimFrames = sAnims_Solarmon,
         .frontAnimId = ANIM_V_JUMPS_SMALL,
-        .backPic = gMonBackPic_Larvitar,
+        .backPic = gMonBackPic_Solarmon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Larvitar,
-        .shinyPalette = gMonShinyPalette_Larvitar,
-        .iconSprite = gMonIcon_Larvitar,
+        .palette = gMonPalette_Solarmon,
+        .shinyPalette = gMonShinyPalette_Solarmon,
+        .iconSprite = gMonIcon_Solarmon,
         .iconPalIndex = 1,
-        FOOTPRINT(Larvitar)
-        .levelUpLearnset = sLarvitarLevelUpLearnset,
-        .teachableLearnset = sLarvitarTeachableLearnset,
+        FOOTPRINT(Solarmon)
+        .levelUpLearnset = sSolarmonLevelUpLearnset,
+        .teachableLearnset = sSolarmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_PUPITAR}),
     },
 
@@ -6265,7 +6265,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .formChangeTable = sTyranitarFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_LARVITAR
+#endif //P_FAMILY_SOLARMON
 
 #if P_FAMILY_LUGIA
     [SPECIES_LUGIA] =

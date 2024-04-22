@@ -3834,14 +3834,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_ICEGOBIMON
 
-#if P_FAMILY_LARVITAR
-    const u32 gMonFrontPic_Larvitar[] = INCBIN_U32("graphics/pokemon/larvitar/anim_front.4bpp.lz");
-    const u32 gMonPalette_Larvitar[] = INCBIN_U32("graphics/pokemon/larvitar/normal.gbapal.lz");
-    const u32 gMonBackPic_Larvitar[] = INCBIN_U32("graphics/pokemon/larvitar/back.4bpp.lz");
-    const u32 gMonShinyPalette_Larvitar[] = INCBIN_U32("graphics/pokemon/larvitar/shiny.gbapal.lz");
-    const u8 gMonIcon_Larvitar[] = INCBIN_U8("graphics/pokemon/larvitar/icon.4bpp");
+#if P_FAMILY_SOLARMON
+    const u32 gMonFrontPic_Solarmon[] = INCBIN_U32("graphics/pokemon/solarmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Solarmon[] = INCBIN_U32("graphics/pokemon/solarmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Solarmon[] = INCBIN_U32("graphics/pokemon/solarmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Solarmon[] = INCBIN_U32("graphics/pokemon/solarmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Solarmon[] = INCBIN_U8("graphics/pokemon/solarmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Larvitar[] = INCBIN_U8("graphics/pokemon/larvitar/footprint.1bpp");
+    const u8 gMonFootprint_Solarmon[] = INCBIN_U8("graphics/pokemon/solarmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Pupitar[] = INCBIN_U32("graphics/pokemon/pupitar/anim_front.4bpp.lz");
@@ -3869,7 +3869,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_TyranitarMega[] = INCBIN_U32("graphics/pokemon/tyranitar/mega/shiny.gbapal.lz");
     const u8 gMonIcon_TyranitarMega[] = INCBIN_U8("graphics/pokemon/tyranitar/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_LARVITAR
+#endif //P_FAMILY_SOLARMON
 
 #if P_FAMILY_LUGIA
     const u32 gMonFrontPic_Lugia[] = INCBIN_U32("graphics/pokemon/lugia/anim_front.4bpp.lz");

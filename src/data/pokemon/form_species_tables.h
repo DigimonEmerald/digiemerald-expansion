@@ -711,7 +711,7 @@ static const u16 sPomumonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_PILLOMON
 
-#if P_FAMILY_LARVITAR
+#if P_FAMILY_SOLARMON
 static const u16 sTyranitarFormSpeciesIdTable[] = {
     SPECIES_TYRANITAR,
 #if P_MEGA_EVOLUTIONS
@@ -719,7 +719,7 @@ static const u16 sTyranitarFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_LARVITAR
+#endif //P_FAMILY_SOLARMON
 
 #if P_FAMILY_TREECKO
 static const u16 sSceptileFormSpeciesIdTable[] = {

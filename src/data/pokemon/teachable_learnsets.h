@@ -12109,8 +12109,8 @@ static const u16 sIcegobimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_ICEGOBIMON
 
-#if P_FAMILY_LARVITAR
-static const u16 sLarvitarTeachableLearnset[] = {
+#if P_FAMILY_SOLARMON
+static const u16 sSolarmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
@@ -12226,7 +12226,7 @@ static const u16 sTyranitarTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_LARVITAR
+#endif //P_FAMILY_SOLARMON
 
 #if P_FAMILY_LUGIA
 static const u16 sLugiaTeachableLearnset[] = {
