@@ -6330,8 +6330,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_SPARROWMON
 
-#if P_FAMILY_HO_OH
-    [SPECIES_HO_OH] =
+#if P_FAMILY_STARMON_2010
+    [SPECIES_STARMON_2010] =
     {
         .baseHP        = 106,
         .baseAttack    = 130,
@@ -6358,9 +6358,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_REGENERATOR },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Ho-Oh"),
-        .cryId = CRY_HO_OH,
-        .natDexNum = NATIONAL_DEX_HO_OH,
+        .speciesName = _("Starmon_2010"),
+        .cryId = CRY_STARMON_2010,
+        .natDexNum = NATIONAL_DEX_STARMON_2010,
         .categoryName = _("Rainbow"),
         .height = 38,
         .weight = 1990,
@@ -6373,26 +6373,26 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 0,
         .trainerScale = 610,
         .trainerOffset = 17,
-        .frontPic = gMonFrontPic_HoOh,
+        .frontPic = gMonFrontPic_Starmon_2010,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_HoOh,
+        .frontAnimFrames = sAnims_Starmon_2010,
         .frontAnimId = ANIM_GROW_VIBRATE,
         .enemyMonElevation = 6,
-        .backPic = gMonBackPic_HoOh,
+        .backPic = gMonBackPic_Starmon_2010,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_HoOh,
-        .shinyPalette = gMonShinyPalette_HoOh,
-        .iconSprite = gMonIcon_HoOh,
+        .palette = gMonPalette_Starmon_2010,
+        .shinyPalette = gMonShinyPalette_Starmon_2010,
+        .iconSprite = gMonIcon_Starmon_2010,
         .iconPalIndex = 1,
-        FOOTPRINT(HoOh)
+        FOOTPRINT(Starmon_2010)
         .isLegendary = TRUE,
-        .levelUpLearnset = sHoOhLevelUpLearnset,
-        .teachableLearnset = sHoOhTeachableLearnset,
+        .levelUpLearnset = sStarmon_2010LevelUpLearnset,
+        .teachableLearnset = sStarmon_2010TeachableLearnset,
     },
-#endif //P_FAMILY_HO_OH
+#endif //P_FAMILY_STARMON_2010
 
 #if P_FAMILY_CELEBI
     [SPECIES_CELEBI] =

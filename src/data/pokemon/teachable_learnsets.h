@@ -12282,8 +12282,8 @@ static const u16 sSparrowmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SPARROWMON
 
-#if P_FAMILY_HO_OH
-static const u16 sHoOhTeachableLearnset[] = {
+#if P_FAMILY_STARMON_2010
+static const u16 sStarmon_2010TeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
@@ -12328,7 +12328,7 @@ static const u16 sHoOhTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_HO_OH
+#endif //P_FAMILY_STARMON_2010
 
 #if P_FAMILY_CELEBI
 static const u16 sCelebiTeachableLearnset[] = {

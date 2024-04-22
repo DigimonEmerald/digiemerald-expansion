@@ -6961,8 +6961,8 @@ static const struct LevelUpMove sSparrowmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_SPARROWMON
 
-#if P_FAMILY_HO_OH
-static const struct LevelUpMove sHoOhLevelUpLearnset[] = {
+#if P_FAMILY_STARMON_2010
+static const struct LevelUpMove sStarmon_2010LevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WHIRLWIND),
     LEVEL_UP_MOVE( 1, MOVE_WEATHER_BALL),
     LEVEL_UP_MOVE( 9, MOVE_GUST),
@@ -6981,7 +6981,7 @@ static const struct LevelUpMove sHoOhLevelUpLearnset[] = {
     LEVEL_UP_MOVE(99, MOVE_SKY_ATTACK),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_HO_OH
+#endif //P_FAMILY_STARMON_2010
 
 #if P_FAMILY_CELEBI
 static const struct LevelUpMove sCelebiLevelUpLearnset[] = {

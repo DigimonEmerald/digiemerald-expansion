@@ -2018,11 +2018,11 @@ Cry_Sparrowmon::
 	.incbin "sound/direct_sound_samples/cries/sparrowmon.bin"
 .endif @ P_FAMILY_SPARROWMON
 
-.if P_FAMILY_HO_OH == TRUE
+.if P_FAMILY_STARMON_2010 == TRUE
 	.align 2
-Cry_HoOh::
-	.incbin "sound/direct_sound_samples/cries/ho_oh.bin"
-.endif @ P_FAMILY_HO_OH
+Cry_Starmon_2010::
+	.incbin "sound/direct_sound_samples/cries/starmon_2010.bin"
+.endif @ P_FAMILY_STARMON_2010
 
 .if P_FAMILY_CELEBI == TRUE
 	.align 2

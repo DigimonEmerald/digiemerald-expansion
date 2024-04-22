@@ -35,7 +35,7 @@ const u8 gEasyChatWord_MeetYou[] = _("MEET YOU");
 const u8 gEasyChatWord_Hey[] = _("HEY");
 const u8 gEasyChatWord_Smell[] = _("SMELL");
 const u8 gEasyChatWord_Listening[] = _("LISTENING");
-const u8 gEasyChatWord_HooHah[] = _("HOO-HAH");
+const u8 gEasyChatWord_Starmon_2010ah[] = _("HOO-HAH");
 const u8 gEasyChatWord_Yahoo[] = _("YAHOO");
 const u8 gEasyChatWord_Yo[] = _("YO");
 const u8 gEasyChatWord_ComeOver[] = _("COME OVER");
@@ -266,7 +266,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Greetings[] = {
     },
     [EC_INDEX(EC_WORD_HOO_HAH)] =
     {
-        .text = gEasyChatWord_HooHah,
+        .text = gEasyChatWord_Starmon_2010ah,
         .alphabeticalOrder = 38,
         .enabled = TRUE,
     },

@@ -3389,14 +3389,14 @@ static const union AnimCmd sAnim_Sparrowmon_1[] =
 };
 #endif //P_FAMILY_SPARROWMON
 
-#if P_FAMILY_HO_OH
-static const union AnimCmd sAnim_HoOh_1[] =
+#if P_FAMILY_STARMON_2010
+static const union AnimCmd sAnim_Starmon_2010_1[] =
 {
     ANIMCMD_FRAME(1, 20),
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_HO_OH
+#endif //P_FAMILY_STARMON_2010
 
 #if P_FAMILY_CELEBI
 static const union AnimCmd sAnim_Celebi_1[] =
@@ -10999,9 +10999,9 @@ SINGLE_ANIMATION(SpadamonMega);
 #if P_FAMILY_SPARROWMON
 SINGLE_ANIMATION(Sparrowmon);
 #endif //P_FAMILY_SPARROWMON
-#if P_FAMILY_HO_OH
-SINGLE_ANIMATION(HoOh);
-#endif //P_FAMILY_HO_OH
+#if P_FAMILY_STARMON_2010
+SINGLE_ANIMATION(Starmon_2010);
+#endif //P_FAMILY_STARMON_2010
 #if P_FAMILY_CELEBI
 SINGLE_ANIMATION(Celebi);
 #endif //P_FAMILY_CELEBI
