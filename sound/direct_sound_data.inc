@@ -1547,15 +1547,15 @@ Cry_Gomamon_x::
 	.incbin "sound/direct_sound_samples/cries/gomamon_x.bin"
 .endif @ P_FAMILY_GOMAMON
 
-.if P_FAMILY_CHINCHOU == TRUE
+.if P_FAMILY_GOTSUMON_X == TRUE
 	.align 2
-Cry_Chinchou::
-	.incbin "sound/direct_sound_samples/cries/chinchou.bin"
+Cry_Gotsumon_x::
+	.incbin "sound/direct_sound_samples/cries/gotsumon_x.bin"
 
 	.align 2
 Cry_Lanturn::
 	.incbin "sound/direct_sound_samples/cries/lanturn.bin"
-.endif @ P_FAMILY_CHINCHOU
+.endif @ P_FAMILY_GOTSUMON_X
 
 .if P_FAMILY_TOGEPI == TRUE
 	.align 2

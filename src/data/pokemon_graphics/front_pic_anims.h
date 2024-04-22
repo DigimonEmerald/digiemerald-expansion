@@ -2508,8 +2508,8 @@ static const union AnimCmd sAnim_Gomamon_x_1[] =
 };
 #endif //P_FAMILY_GOMAMON
 
-#if P_FAMILY_CHINCHOU
-static const union AnimCmd sAnim_Chinchou_1[] =
+#if P_FAMILY_GOTSUMON_X
+static const union AnimCmd sAnim_Gotsumon_x_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 10),
@@ -2528,7 +2528,7 @@ static const union AnimCmd sAnim_Lanturn_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_CHINCHOU
+#endif //P_FAMILY_GOTSUMON_X
 
 #if P_FAMILY_TOGEPI
 static const union AnimCmd sAnim_Togepi_1[] =
@@ -10776,10 +10776,10 @@ SINGLE_ANIMATION(Goblimon);
 SINGLE_ANIMATION(Gomamon);
 SINGLE_ANIMATION(Gomamon_x);
 #endif //P_FAMILY_GOMAMON
-#if P_FAMILY_CHINCHOU
-SINGLE_ANIMATION(Chinchou);
+#if P_FAMILY_GOTSUMON_X
+SINGLE_ANIMATION(Gotsumon_x);
 SINGLE_ANIMATION(Lanturn);
-#endif //P_FAMILY_CHINCHOU
+#endif //P_FAMILY_GOTSUMON_X
 #if P_FAMILY_TOGEPI
 SINGLE_ANIMATION(Togepi);
 SINGLE_ANIMATION(Togetic);

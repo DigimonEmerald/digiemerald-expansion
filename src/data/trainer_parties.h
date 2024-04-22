@@ -6286,7 +6286,7 @@ static const struct TrainerMon sParty_Hudson[] = {
 static const struct TrainerMon sParty_Conor[] = {
     {
     .lvl = 33,
-    .species = SPECIES_CHINCHOU,
+    .species = SPECIES_GOTSUMON_X,
     },
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -8660,7 +8660,7 @@ static const struct TrainerMon sParty_Reed[] = {
 static const struct TrainerMon sParty_Tisha[] = {
     {
     .lvl = 34,
-    .species = SPECIES_CHINCHOU,
+    .species = SPECIES_GOTSUMON_X,
     }
 };
 
@@ -8803,7 +8803,7 @@ static const struct TrainerMon sParty_ReliAndIan[] = {
 static const struct TrainerMon sParty_LilaAndRoy1[] = {
     {
     .lvl = 34,
-    .species = SPECIES_CHINCHOU,
+    .species = SPECIES_GOTSUMON_X,
     },
     {
     .lvl = 33,
@@ -8814,7 +8814,7 @@ static const struct TrainerMon sParty_LilaAndRoy1[] = {
 static const struct TrainerMon sParty_LilaAndRoy2[] = {
     {
     .lvl = 42,
-    .species = SPECIES_CHINCHOU,
+    .species = SPECIES_GOTSUMON_X,
     },
     {
     .lvl = 40,

@@ -1022,8 +1022,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_GOMAMON
 
-#if P_FAMILY_CHINCHOU
-    [SPECIES_CHINCHOU] =
+#if P_FAMILY_GOTSUMON_X
+    [SPECIES_GOTSUMON_X] =
     {
         .baseHP        = 75,
         .baseAttack    = 38,
@@ -1043,9 +1043,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_VOLT_ABSORB, ABILITY_ILLUMINATE, ABILITY_WATER_ABSORB },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Chinchou"),
-        .cryId = CRY_CHINCHOU,
-        .natDexNum = NATIONAL_DEX_CHINCHOU,
+        .speciesName = _("Gotsumon_x"),
+        .cryId = CRY_GOTSUMON_X,
+        .natDexNum = NATIONAL_DEX_GOTSUMON_X,
         .categoryName = _("Angler"),
         .height = 5,
         .weight = 120,
@@ -1058,22 +1058,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = -2,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Chinchou,
+        .frontPic = gMonFrontPic_Gotsumon_x,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Chinchou,
+        .frontAnimFrames = sAnims_Gotsumon_x,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Chinchou,
+        .backPic = gMonBackPic_Gotsumon_x,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Chinchou,
-        .shinyPalette = gMonShinyPalette_Chinchou,
-        .iconSprite = gMonIcon_Chinchou,
+        .palette = gMonPalette_Gotsumon_x,
+        .shinyPalette = gMonShinyPalette_Gotsumon_x,
+        .iconSprite = gMonIcon_Gotsumon_x,
         .iconPalIndex = 2,
-        FOOTPRINT(Chinchou)
-        .levelUpLearnset = sChinchouLevelUpLearnset,
-        .teachableLearnset = sChinchouTeachableLearnset,
+        FOOTPRINT(Gotsumon_x)
+        .levelUpLearnset = sGotsumon_xLevelUpLearnset,
+        .teachableLearnset = sGotsumon_xTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_LANTURN}),
     },
 
@@ -1129,7 +1129,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sLanturnLevelUpLearnset,
         .teachableLearnset = sLanturnTeachableLearnset,
     },
-#endif //P_FAMILY_CHINCHOU
+#endif //P_FAMILY_GOTSUMON_X
 
 #if P_FAMILY_TOGEPI
 #define TOGEPI_FAMILY_TYPE (P_UPDATED_TYPES >= GEN_6 ? TYPE_FAIRY : TYPE_NORMAL)

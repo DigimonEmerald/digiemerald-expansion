@@ -1429,8 +1429,8 @@ const u16 gEggMoves[] = {
         MOVE_LUNGE),
 #endif //P_FAMILY_GOMAMON
 
-#if P_FAMILY_CHINCHOU
-    egg_moves(CHINCHOU,
+#if P_FAMILY_GOTSUMON_X
+    egg_moves(GOTSUMON_X,
         MOVE_FLAIL,
         MOVE_SCREECH,
         MOVE_AMNESIA,
@@ -1442,7 +1442,7 @@ const u16 gEggMoves[] = {
         MOVE_BRINE,
         MOVE_WATER_PULSE,
         MOVE_SOAK),
-#endif //P_FAMILY_CHINCHOU
+#endif //P_FAMILY_GOTSUMON_X
 
 #if P_FAMILY_TOGEPI
     egg_moves(TOGEPI,

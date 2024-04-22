@@ -2784,14 +2784,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_GOMAMON
 
-#if P_FAMILY_CHINCHOU
-    const u32 gMonFrontPic_Chinchou[] = INCBIN_U32("graphics/pokemon/chinchou/anim_front.4bpp.lz");
-    const u32 gMonPalette_Chinchou[] = INCBIN_U32("graphics/pokemon/chinchou/normal.gbapal.lz");
-    const u32 gMonBackPic_Chinchou[] = INCBIN_U32("graphics/pokemon/chinchou/back.4bpp.lz");
-    const u32 gMonShinyPalette_Chinchou[] = INCBIN_U32("graphics/pokemon/chinchou/shiny.gbapal.lz");
-    const u8 gMonIcon_Chinchou[] = INCBIN_U8("graphics/pokemon/chinchou/icon.4bpp");
+#if P_FAMILY_GOTSUMON_X
+    const u32 gMonFrontPic_Gotsumon_x[] = INCBIN_U32("graphics/pokemon/gotsumon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gotsumon_x[] = INCBIN_U32("graphics/pokemon/gotsumon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Gotsumon_x[] = INCBIN_U32("graphics/pokemon/gotsumon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gotsumon_x[] = INCBIN_U32("graphics/pokemon/gotsumon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Gotsumon_x[] = INCBIN_U8("graphics/pokemon/gotsumon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Chinchou[] = INCBIN_U8("graphics/pokemon/chinchou/footprint.1bpp");
+    const u8 gMonFootprint_Gotsumon_x[] = INCBIN_U8("graphics/pokemon/gotsumon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Lanturn[] = INCBIN_U32("graphics/pokemon/lanturn/anim_front.4bpp.lz");
@@ -2802,7 +2802,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Lanturn[] = INCBIN_U8("graphics/pokemon/lanturn/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_CHINCHOU
+#endif //P_FAMILY_GOTSUMON_X
 
 #if P_FAMILY_TOGEPI
     const u32 gMonFrontPic_Togepi[] = INCBIN_U32("graphics/pokemon/togepi/anim_front.4bpp.lz");

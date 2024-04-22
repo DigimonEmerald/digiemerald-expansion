@@ -9103,8 +9103,8 @@ static const u16 sGomamon_xTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GOMAMON
 
-#if P_FAMILY_CHINCHOU
-static const u16 sChinchouTeachableLearnset[] = {
+#if P_FAMILY_GOTSUMON_X
+static const u16 sGotsumon_xTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -9162,7 +9162,7 @@ static const u16 sLanturnTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CHINCHOU
+#endif //P_FAMILY_GOTSUMON_X
 
 #if P_FAMILY_TOGEPI
 static const u16 sTogepiTeachableLearnset[] = {
