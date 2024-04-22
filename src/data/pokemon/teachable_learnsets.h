@@ -11790,8 +11790,8 @@ static const u16 sPomumonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_PILLOMON
 
-#if P_FAMILY_PHANPY
-static const u16 sPhanpyTeachableLearnset[] = {
+#if P_FAMILY_PULSEMON
+static const u16 sPulsemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -11855,7 +11855,7 @@ static const u16 sDonphanTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PHANPY
+#endif //P_FAMILY_PULSEMON
 
 #if P_FAMILY_STANTLER
 static const u16 sStantlerTeachableLearnset[] = {

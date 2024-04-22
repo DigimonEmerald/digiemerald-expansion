@@ -667,10 +667,10 @@ gCryTable::
 	cry Cry_PomumonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_PILLOMON
-.if P_FAMILY_PHANPY == TRUE
-	cry Cry_Phanpy
+.if P_FAMILY_PULSEMON == TRUE
+	cry Cry_Pulsemon
 	cry Cry_Donphan
-.endif @ P_FAMILY_PHANPY
+.endif @ P_FAMILY_PULSEMON
 .if P_FAMILY_STANTLER == TRUE
 	cry Cry_Stantler
 .if P_GEN_8_CROSS_EVOS == TRUE
@@ -3093,10 +3093,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_PomumonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_PILLOMON
-.if P_FAMILY_PHANPY == TRUE
-	cry_reverse Cry_Phanpy
+.if P_FAMILY_PULSEMON == TRUE
+	cry_reverse Cry_Pulsemon
 	cry_reverse Cry_Donphan
-.endif @ P_FAMILY_PHANPY
+.endif @ P_FAMILY_PULSEMON
 .if P_FAMILY_STANTLER == TRUE
 	cry_reverse Cry_Stantler
 .if P_GEN_8_CROSS_EVOS == TRUE

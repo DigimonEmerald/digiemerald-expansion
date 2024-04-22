@@ -3734,14 +3734,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_PILLOMON
 
-#if P_FAMILY_PHANPY
-    const u32 gMonFrontPic_Phanpy[] = INCBIN_U32("graphics/pokemon/phanpy/anim_front.4bpp.lz");
-    const u32 gMonPalette_Phanpy[] = INCBIN_U32("graphics/pokemon/phanpy/normal.gbapal.lz");
-    const u32 gMonBackPic_Phanpy[] = INCBIN_U32("graphics/pokemon/phanpy/back.4bpp.lz");
-    const u32 gMonShinyPalette_Phanpy[] = INCBIN_U32("graphics/pokemon/phanpy/shiny.gbapal.lz");
-    const u8 gMonIcon_Phanpy[] = INCBIN_U8("graphics/pokemon/phanpy/icon.4bpp");
+#if P_FAMILY_PULSEMON
+    const u32 gMonFrontPic_Pulsemon[] = INCBIN_U32("graphics/pokemon/pulsemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Pulsemon[] = INCBIN_U32("graphics/pokemon/pulsemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Pulsemon[] = INCBIN_U32("graphics/pokemon/pulsemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Pulsemon[] = INCBIN_U32("graphics/pokemon/pulsemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Pulsemon[] = INCBIN_U8("graphics/pokemon/pulsemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Phanpy[] = INCBIN_U8("graphics/pokemon/phanpy/footprint.1bpp");
+    const u8 gMonFootprint_Pulsemon[] = INCBIN_U8("graphics/pokemon/pulsemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Donphan[] = INCBIN_U32("graphics/pokemon/donphan/anim_front.4bpp.lz");
@@ -3755,7 +3755,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
     const u32 gMonFrontPic_DonphanF[] = INCBIN_U32("graphics/pokemon/donphan/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_DonphanF[] = INCBIN_U32("graphics/pokemon/donphan/backf.4bpp.lz");
-#endif //P_FAMILY_PHANPY
+#endif //P_FAMILY_PULSEMON
 
 #if P_FAMILY_STANTLER
     const u32 gMonFrontPic_Stantler[] = INCBIN_U32("graphics/pokemon/stantler/anim_front.4bpp.lz");

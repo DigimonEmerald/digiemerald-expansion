@@ -1940,15 +1940,15 @@ Cry_PomumonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_PILLOMON
 
-.if P_FAMILY_PHANPY == TRUE
+.if P_FAMILY_PULSEMON == TRUE
 	.align 2
-Cry_Phanpy::
-	.incbin "sound/direct_sound_samples/cries/phanpy.bin"
+Cry_Pulsemon::
+	.incbin "sound/direct_sound_samples/cries/pulsemon.bin"
 
 	.align 2
 Cry_Donphan::
 	.incbin "sound/direct_sound_samples/cries/donphan.bin"
-.endif @ P_FAMILY_PHANPY
+.endif @ P_FAMILY_PULSEMON
 
 .if P_FAMILY_STANTLER == TRUE
 	.align 2

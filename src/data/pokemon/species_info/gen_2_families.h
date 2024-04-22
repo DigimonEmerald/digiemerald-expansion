@@ -5510,8 +5510,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_PILLOMON
 
-#if P_FAMILY_PHANPY
-    [SPECIES_PHANPY] =
+#if P_FAMILY_PULSEMON
+    [SPECIES_PULSEMON] =
     {
         .baseHP        = 90,
         .baseAttack    = 60,
@@ -5530,14 +5530,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_PICKUP, ABILITY_NONE, ABILITY_SAND_VEIL },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Phanpy"),
-        .cryId = CRY_PHANPY,
-        .natDexNum = NATIONAL_DEX_PHANPY,
+        .speciesName = _("Pulsemon"),
+        .cryId = CRY_PULSEMON,
+        .natDexNum = NATIONAL_DEX_PULSEMON,
         .categoryName = _("Long Nose"),
         .height = 5,
         .weight = 335,
         .description = COMPOUND_STRING(
-            "Phanpy's big ears serve as broad fans.\n"
+            "Pulsemon's big ears serve as broad fans.\n"
             "When it becomes hot, it flaps the ears\n"
             "busily to cool down. Even the young are\n"
             "very strong."),
@@ -5545,22 +5545,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 21,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Phanpy,
+        .frontPic = gMonFrontPic_Pulsemon,
         .frontPicSize = MON_COORDS_SIZE(40, 32),
         .frontPicYOffset = 16,
-        .frontAnimFrames = sAnims_Phanpy,
+        .frontAnimFrames = sAnims_Pulsemon,
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
-        .backPic = gMonBackPic_Phanpy,
+        .backPic = gMonBackPic_Pulsemon,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Phanpy,
-        .shinyPalette = gMonShinyPalette_Phanpy,
-        .iconSprite = gMonIcon_Phanpy,
+        .palette = gMonPalette_Pulsemon,
+        .shinyPalette = gMonShinyPalette_Pulsemon,
+        .iconSprite = gMonIcon_Pulsemon,
         .iconPalIndex = 0,
-        FOOTPRINT(Phanpy)
-        .levelUpLearnset = sPhanpyLevelUpLearnset,
-        .teachableLearnset = sPhanpyTeachableLearnset,
+        FOOTPRINT(Pulsemon)
+        .levelUpLearnset = sPulsemonLevelUpLearnset,
+        .teachableLearnset = sPulsemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_DONPHAN}),
     },
 
@@ -5620,7 +5620,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sDonphanLevelUpLearnset,
         .teachableLearnset = sDonphanTeachableLearnset,
     },
-#endif //P_FAMILY_PHANPY
+#endif //P_FAMILY_PULSEMON
 
 #if P_FAMILY_STANTLER
     [SPECIES_STANTLER] =

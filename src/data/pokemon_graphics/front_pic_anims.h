@@ -3257,8 +3257,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(PomumonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_PILLOMON
 
-#if P_FAMILY_PHANPY
-static const union AnimCmd sAnim_Phanpy_1[] =
+#if P_FAMILY_PULSEMON
+static const union AnimCmd sAnim_Pulsemon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -3277,7 +3277,7 @@ static const union AnimCmd sAnim_Donphan_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_PHANPY
+#endif //P_FAMILY_PULSEMON
 
 #if P_FAMILY_STANTLER
 static const union AnimCmd sAnim_Stantler_1[] =
@@ -10963,10 +10963,10 @@ SINGLE_ANIMATION(Pomumon);
 SINGLE_ANIMATION(PomumonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_PILLOMON
-#if P_FAMILY_PHANPY
-SINGLE_ANIMATION(Phanpy);
+#if P_FAMILY_PULSEMON
+SINGLE_ANIMATION(Pulsemon);
 SINGLE_ANIMATION(Donphan);
-#endif //P_FAMILY_PHANPY
+#endif //P_FAMILY_PULSEMON
 #if P_FAMILY_STANTLER
 SINGLE_ANIMATION(Stantler);
 #if P_GEN_8_CROSS_EVOS

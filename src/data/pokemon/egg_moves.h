@@ -2018,8 +2018,8 @@ const u16 gEggMoves[] = {
         MOVE_DESTINY_BOND),
 #endif //P_FAMILY_PILLOMON
 
-#if P_FAMILY_PHANPY
-    egg_moves(PHANPY,
+#if P_FAMILY_PULSEMON
+    egg_moves(PULSEMON,
         MOVE_FOCUS_ENERGY,
         MOVE_BODY_SLAM,
         MOVE_ANCIENT_POWER,
@@ -2033,7 +2033,7 @@ const u16 gEggMoves[] = {
         MOVE_HEAVY_SLAM,
         MOVE_PLAY_ROUGH,
         MOVE_HIGH_HORSEPOWER),
-#endif //P_FAMILY_PHANPY
+#endif //P_FAMILY_PULSEMON
 
 #if P_FAMILY_STANTLER
     egg_moves(STANTLER,
