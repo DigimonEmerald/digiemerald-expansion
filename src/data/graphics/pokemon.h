@@ -3393,13 +3393,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Modbetamon[] = INCBIN_U8("graphics/pokemon/modbetamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Granbull[] = INCBIN_U32("graphics/pokemon/granbull/anim_front.4bpp.lz");
-    const u32 gMonPalette_Granbull[] = INCBIN_U32("graphics/pokemon/granbull/normal.gbapal.lz");
-    const u32 gMonBackPic_Granbull[] = INCBIN_U32("graphics/pokemon/granbull/back.4bpp.lz");
-    const u32 gMonShinyPalette_Granbull[] = INCBIN_U32("graphics/pokemon/granbull/shiny.gbapal.lz");
-    const u8 gMonIcon_Granbull[] = INCBIN_U8("graphics/pokemon/granbull/icon.4bpp");
+    const u32 gMonFrontPic_Monitamon[] = INCBIN_U32("graphics/pokemon/monitamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Monitamon[] = INCBIN_U32("graphics/pokemon/monitamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Monitamon[] = INCBIN_U32("graphics/pokemon/monitamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Monitamon[] = INCBIN_U32("graphics/pokemon/monitamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Monitamon[] = INCBIN_U8("graphics/pokemon/monitamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Granbull[] = INCBIN_U8("graphics/pokemon/granbull/footprint.1bpp");
+    const u8 gMonFootprint_Monitamon[] = INCBIN_U8("graphics/pokemon/monitamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_MODBETAMON
 

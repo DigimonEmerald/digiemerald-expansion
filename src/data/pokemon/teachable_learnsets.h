@@ -10674,7 +10674,7 @@ static const u16 sModbetamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGranbullTeachableLearnset[] = {
+static const u16 sMonitamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,

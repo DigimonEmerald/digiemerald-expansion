@@ -3667,10 +3667,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Modbetamon)
         .levelUpLearnset = sModbetamonLevelUpLearnset,
         .teachableLearnset = sModbetamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_GRANBULL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_MONITAMON}),
     },
 
-    [SPECIES_GRANBULL] =
+    [SPECIES_MONITAMON] =
     {
         .baseHP        = 90,
         .baseAttack    = 120,
@@ -3693,9 +3693,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_QUICK_FEET, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Granbull"),
-        .cryId = CRY_GRANBULL,
-        .natDexNum = NATIONAL_DEX_GRANBULL,
+        .speciesName = _("Monitamon"),
+        .cryId = CRY_MONITAMON,
+        .natDexNum = NATIONAL_DEX_MONITAMON,
         .categoryName = _("Fairy"),
         .height = 14,
         .weight = 487,
@@ -3708,22 +3708,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Granbull,
+        .frontPic = gMonFrontPic_Monitamon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Granbull,
+        .frontAnimFrames = sAnims_Monitamon,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Granbull,
+        .backPic = gMonBackPic_Monitamon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Granbull,
-        .shinyPalette = gMonShinyPalette_Granbull,
-        .iconSprite = gMonIcon_Granbull,
+        .palette = gMonPalette_Monitamon,
+        .shinyPalette = gMonShinyPalette_Monitamon,
+        .iconSprite = gMonIcon_Monitamon,
         .iconPalIndex = 2,
-        FOOTPRINT(Granbull)
-        .levelUpLearnset = sGranbullLevelUpLearnset,
-        .teachableLearnset = sGranbullTeachableLearnset,
+        FOOTPRINT(Monitamon)
+        .levelUpLearnset = sMonitamonLevelUpLearnset,
+        .teachableLearnset = sMonitamonTeachableLearnset,
     },
 #endif //P_FAMILY_MODBETAMON
 

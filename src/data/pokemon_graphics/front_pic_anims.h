@@ -3008,7 +3008,7 @@ static const union AnimCmd sAnim_Modbetamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Granbull_1[] =
+static const union AnimCmd sAnim_Monitamon_1[] =
 {
     ANIMCMD_FRAME(1, 35),
     ANIMCMD_FRAME(0, 20),
@@ -10886,7 +10886,7 @@ SINGLE_ANIMATION(Gliscor);
 #endif //P_FAMILY_METABEE
 #if P_FAMILY_MODBETAMON
 SINGLE_ANIMATION(Modbetamon);
-SINGLE_ANIMATION(Granbull);
+SINGLE_ANIMATION(Monitamon);
 #endif //P_FAMILY_MODBETAMON
 #if P_FAMILY_QWILFISH
 SINGLE_ANIMATION(Qwilfish);

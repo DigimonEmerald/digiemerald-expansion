@@ -594,7 +594,7 @@ gCryTable::
 .endif @ P_FAMILY_METABEE
 .if P_FAMILY_MODBETAMON == TRUE
 	cry Cry_Modbetamon
-	cry Cry_Granbull
+	cry Cry_Monitamon
 .endif @ P_FAMILY_MODBETAMON
 .if P_FAMILY_QWILFISH == TRUE
 	cry Cry_Qwilfish
@@ -3020,7 +3020,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_METABEE
 .if P_FAMILY_MODBETAMON == TRUE
 	cry_reverse Cry_Modbetamon
-	cry_reverse Cry_Granbull
+	cry_reverse Cry_Monitamon
 .endif @ P_FAMILY_MODBETAMON
 .if P_FAMILY_QWILFISH == TRUE
 	cry_reverse Cry_Qwilfish

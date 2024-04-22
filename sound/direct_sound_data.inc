@@ -1782,8 +1782,8 @@ Cry_Modbetamon::
 	.incbin "sound/direct_sound_samples/cries/modbetamon.bin"
 
 	.align 2
-Cry_Granbull::
-	.incbin "sound/direct_sound_samples/cries/granbull.bin"
+Cry_Monitamon::
+	.incbin "sound/direct_sound_samples/cries/monitamon.bin"
 .endif @ P_FAMILY_MODBETAMON
 
 .if P_FAMILY_QWILFISH == TRUE
