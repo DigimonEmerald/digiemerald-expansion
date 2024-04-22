@@ -2337,7 +2337,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                 {
                                     [0] =
                                         {
-                                            .species = SPECIES_UNOWN,
+                                            .species = SPECIES_LOPMON,
                                             .heldItem = ITEM_MIRACLE_SEED,
                                             .moves = {MOVE_HIDDEN_POWER, MOVE_NONE, MOVE_NONE, MOVE_NONE},
                                             .hpEV = 255,
@@ -2351,12 +2351,12 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x202,
-                                            .nickname = _("UNOWN"),
+                                            .nickname = _("LOPMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [1] =
                                         {
-                                            .species = SPECIES_UNOWN,
+                                            .species = SPECIES_LOPMON,
                                             .heldItem = ITEM_MYSTIC_WATER,
                                             .moves = {MOVE_HIDDEN_POWER, MOVE_NONE, MOVE_NONE, MOVE_NONE},
                                             .hpEV = 255,
@@ -2370,12 +2370,12 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x10001,
-                                            .nickname = _("UNOWN"),
+                                            .nickname = _("LOPMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [2] =
                                         {
-                                            .species = SPECIES_UNOWN,
+                                            .species = SPECIES_LOPMON,
                                             .heldItem = ITEM_BLACK_BELT,
                                             .moves = {MOVE_HIDDEN_POWER, MOVE_NONE, MOVE_NONE, MOVE_NONE},
                                             .hpEV = 255,
@@ -2389,7 +2389,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 30,
                                             .abilityNum = 0,
                                             .personality = 0x102,
-                                            .nickname = _("UNOWN"),
+                                            .nickname = _("LOPMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [3] =
@@ -2522,7 +2522,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         },
                                     [3] =
                                         {
-                                            .species = SPECIES_UNOWN,
+                                            .species = SPECIES_LOPMON,
                                             .heldItem = ITEM_CHARCOAL,
                                             .moves = {MOVE_HIDDEN_POWER, MOVE_NONE, MOVE_NONE, MOVE_NONE},
                                             .hpEV = 255,
@@ -2536,12 +2536,12 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x302,
-                                            .nickname = _("UNOWN"),
+                                            .nickname = _("LOPMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [4] =
                                         {
-                                            .species = SPECIES_UNOWN,
+                                            .species = SPECIES_LOPMON,
                                             .heldItem = ITEM_SOFT_SAND,
                                             .moves = {MOVE_HIDDEN_POWER, MOVE_NONE, MOVE_NONE, MOVE_NONE},
                                             .hpEV = 255,
@@ -2555,12 +2555,12 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 30,
                                             .abilityNum = 0,
                                             .personality = 0x203,
-                                            .nickname = _("UNOWN"),
+                                            .nickname = _("LOPMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [5] =
                                         {
-                                            .species = SPECIES_UNOWN,
+                                            .species = SPECIES_LOPMON,
                                             .heldItem = ITEM_TWISTED_SPOON,
                                             .moves = {MOVE_HIDDEN_POWER, MOVE_NONE, MOVE_NONE, MOVE_NONE},
                                             .hpEV = 255,
@@ -2574,7 +2574,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x301,
-                                            .nickname = _("UNOWN"),
+                                            .nickname = _("LOPMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                 },

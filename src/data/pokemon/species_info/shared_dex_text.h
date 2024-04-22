@@ -30,11 +30,11 @@ const u8 gCrabmon_xPokedexText[] = _(
     "Stones causes this Pokémon to evolve.");
 
 // Gen 2 families
-const u8 gUnownPokedexText[] = _(
+const u8 gLopmonPokedexText[] = _(
     "This Pokémon is shaped like ancient text\n"
     "characters. Although research is ongoing,\n"
     "it is a mystery as to which came first,\n"
-    "the ancient writings or the various Unown.");
+    "the ancient writings or the various Lopmon.");
 
 // Gen 3 families
 const u8 gDeoxysNormalPokedexText[] = _(

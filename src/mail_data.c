@@ -6,7 +6,7 @@
 #include "text.h"
 #include "international_string_util.h"
 
-#define UNOWN_OFFSET 30000
+#define LOPMON_OFFSET 30000
 
 void ClearAllMail(void)
 {
@@ -82,9 +82,9 @@ u8 GiveMailToMonByItemId(struct Pokemon *mon, u16 itemId)
 
 u16 SpeciesToMailSpecies(u16 species, u32 personality)
 {
-    if (species == SPECIES_UNOWN)
+    if (species == SPECIES_LOPMON)
     {
-        u32 species = GetUnownLetterByPersonality(personality) + UNOWN_OFFSET;
+        u32 species = GetLopmonLetterByPersonality(personality) + LOPMON_OFFSET;
         return species;
     }
 
@@ -95,10 +95,10 @@ u16 MailSpeciesToSpecies(u16 mailSpecies, u16 *buffer)
 {
     u16 result;
 
-    if (mailSpecies >= UNOWN_OFFSET && mailSpecies < UNOWN_OFFSET + NUM_UNOWN_FORMS)
+    if (mailSpecies >= LOPMON_OFFSET && mailSpecies < LOPMON_OFFSET + NUM_LOPMON_FORMS)
     {
-        result = SPECIES_UNOWN;
-        *buffer = mailSpecies - UNOWN_OFFSET;
+        result = SPECIES_LOPMON;
+        *buffer = mailSpecies - LOPMON_OFFSET;
     }
     else
     {

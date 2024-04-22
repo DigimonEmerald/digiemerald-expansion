@@ -2893,15 +2893,15 @@ static const union AnimCmd sAnim_Mismagius_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_LOOGAMON
 
-#if P_FAMILY_UNOWN
-static const union AnimCmd sAnim_Unown_1[] =
+#if P_FAMILY_LOPMON
+static const union AnimCmd sAnim_Lopmon_1[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_UNOWN
+#endif //P_FAMILY_LOPMON
 
 #if P_FAMILY_WOBBUFFET
 #if P_GEN_3_CROSS_EVOS
@@ -10853,9 +10853,9 @@ SINGLE_ANIMATION(Loogamon);
 SINGLE_ANIMATION(Mismagius);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_LOOGAMON
-#if P_FAMILY_UNOWN
-SINGLE_ANIMATION(Unown);
-#endif //P_FAMILY_UNOWN
+#if P_FAMILY_LOPMON
+SINGLE_ANIMATION(Lopmon);
+#endif //P_FAMILY_LOPMON
 #if P_FAMILY_WOBBUFFET
 #if P_GEN_3_CROSS_EVOS
 SINGLE_ANIMATION(Wynaut);

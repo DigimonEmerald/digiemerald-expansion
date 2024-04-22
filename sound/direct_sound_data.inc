@@ -1712,11 +1712,11 @@ Cry_Mismagius::
 	.incbin "sound/direct_sound_samples/cries/mismagius.bin"
 .endif @ P_FAMILY_LOOGAMON
 
-.if P_FAMILY_UNOWN == TRUE
+.if P_FAMILY_LOPMON == TRUE
 	.align 2
-Cry_Unown::
-	.incbin "sound/direct_sound_samples/cries/unown.bin"
-.endif @ P_FAMILY_UNOWN
+Cry_Lopmon::
+	.incbin "sound/direct_sound_samples/cries/lopmon.bin"
+.endif @ P_FAMILY_LOPMON
 
 .if P_FAMILY_WOBBUFFET == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE

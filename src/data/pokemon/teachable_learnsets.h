@@ -10290,11 +10290,11 @@ static const u16 sMismagiusTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_LOOGAMON
 
-#if P_FAMILY_UNOWN
-static const u16 sUnownTeachableLearnset[] = {
+#if P_FAMILY_LOPMON
+static const u16 sLopmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_UNOWN
+#endif //P_FAMILY_LOPMON
 
 #if P_FAMILY_WOBBUFFET
 #if P_GEN_3_CROSS_EVOS

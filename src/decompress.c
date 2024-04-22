@@ -83,8 +83,8 @@ void HandleLoadSpecialPokePic(bool32 isFrontPic, void *dest, s32 species, u32 pe
 void LoadSpecialPokePic(void *dest, s32 species, u32 personality, bool8 isFrontPic)
 {
     species = SanitizeSpeciesId(species);
-    if (species == SPECIES_UNOWN)
-        species = GetUnownSpeciesId(personality);
+    if (species == SPECIES_LOPMON)
+        species = GetLopmonSpeciesId(personality);
 
     if (isFrontPic)
     {

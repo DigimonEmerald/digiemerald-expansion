@@ -5697,12 +5697,12 @@ static const struct LevelUpMove sMismagiusLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_LOOGAMON
 
-#if P_FAMILY_UNOWN
-static const struct LevelUpMove sUnownLevelUpLearnset[] = {
+#if P_FAMILY_LOPMON
+static const struct LevelUpMove sLopmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HIDDEN_POWER),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_UNOWN
+#endif //P_FAMILY_LOPMON
 
 #if P_FAMILY_WOBBUFFET
 #if P_GEN_3_CROSS_EVOS

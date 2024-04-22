@@ -3223,7 +3223,7 @@ static u8 CreateContestantSprite(u16 species, bool8 isShiny, u32 personality, u3
     gSprites[spriteId].callback = SpriteCallbackDummy;
     gSprites[spriteId].data[0] = gSprites[spriteId].oam.paletteNum;
     gSprites[spriteId].data[2] = species;
-    if (IsSpeciesNotUnown(species))
+    if (IsSpeciesNotLopmon(species))
         gSprites[spriteId].affineAnims = gAffineAnims_BattleSpriteContest;
     else
         gSprites[spriteId].affineAnims = gAffineAnims_BattleSpriteOpponentSide;
@@ -3232,9 +3232,9 @@ static u8 CreateContestantSprite(u16 species, bool8 isShiny, u32 personality, u3
     return spriteId;
 }
 
-bool8 IsSpeciesNotUnown(u16 species)
+bool8 IsSpeciesNotLopmon(u16 species)
 {
-    if (species == SPECIES_UNOWN)
+    if (species == SPECIES_LOPMON)
         return FALSE;
     else
         return TRUE;

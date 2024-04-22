@@ -151,7 +151,7 @@ u8 GetBattlerYDelta(u8 battlerId, u16 species)
 
     if (GetBattlerSide(battlerId) == B_SIDE_PLAYER || IsContest())
     {
-        if (species == SPECIES_UNOWN)
+        if (species == SPECIES_LOPMON)
         {
             if (IsContest())
             {
@@ -168,13 +168,13 @@ u8 GetBattlerYDelta(u8 battlerId, u16 species)
                 else
                     personality = gTransformedPersonalities[battlerId];
             }
-            species = GetUnownSpeciesId(personality);
+            species = GetLopmonSpeciesId(personality);
         }
         ret = gSpeciesInfo[species].backPicYOffset;
     }
     else
     {
-        if (species == SPECIES_UNOWN)
+        if (species == SPECIES_LOPMON)
         {
             spriteInfo = gBattleSpritesDataPtr->battlerData;
             if (!spriteInfo[battlerId].transformSpecies)
@@ -182,7 +182,7 @@ u8 GetBattlerYDelta(u8 battlerId, u16 species)
             else
                 personality = gTransformedPersonalities[battlerId];
 
-            species = GetUnownSpeciesId(personality);
+            species = GetLopmonSpeciesId(personality);
         }
         ret = gSpeciesInfo[species].frontPicYOffset;
     }
@@ -1251,12 +1251,12 @@ void SetSpriteRotScale(u8 spriteId, s16 xScale, s16 yScale, u16 rotation)
     gOamMatrices[i].d = matrix.d;
 }
 
-// Pokémon in Contests (except Unown) should be flipped.
+// Pokémon in Contests (except Lopmon) should be flipped.
 static bool8 ShouldRotScaleSpeciesBeFlipped(void)
 {
     if (IsContest())
     {
-        if (gSprites[GetAnimBattlerSpriteId(ANIM_ATTACKER)].data[2] == SPECIES_UNOWN)
+        if (gSprites[GetAnimBattlerSpriteId(ANIM_ATTACKER)].data[2] == SPECIES_LOPMON)
             return FALSE;
         else
             return TRUE;
@@ -2127,8 +2127,8 @@ s16 GetBattlerSpriteCoordAttr(u8 battlerId, u8 attr)
             personality = gContestResources->moveAnim->personality;
         }
         species = SanitizeSpeciesId(species);
-        if (species == SPECIES_UNOWN)
-            species = GetUnownSpeciesId(personality);
+        if (species == SPECIES_LOPMON)
+            species = GetLopmonSpeciesId(personality);
         size = gSpeciesInfo[species].backPicSize;
         y_offset = gSpeciesInfo[species].backPicYOffset;
     }
@@ -2149,8 +2149,8 @@ s16 GetBattlerSpriteCoordAttr(u8 battlerId, u8 attr)
             }
 
             species = SanitizeSpeciesId(species);
-            if (species == SPECIES_UNOWN)
-                species = GetUnownSpeciesId(personality);
+            if (species == SPECIES_LOPMON)
+                species = GetLopmonSpeciesId(personality);
             if (gSpeciesInfo[species].backPicFemale != NULL && IsPersonalityFemale(species, personality))
                 size = gSpeciesInfo[species].backPicSizeFemale;
             else
@@ -2172,8 +2172,8 @@ s16 GetBattlerSpriteCoordAttr(u8 battlerId, u8 attr)
             }
 
             species = SanitizeSpeciesId(species);
-            if (species == SPECIES_UNOWN)
-                species = GetUnownSpeciesId(personality);
+            if (species == SPECIES_LOPMON)
+                species = GetLopmonSpeciesId(personality);
             if (gSpeciesInfo[species].frontPicFemale != NULL && IsPersonalityFemale(species, personality))
                 size = gSpeciesInfo[species].frontPicSizeFemale;
             else

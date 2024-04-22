@@ -3139,125 +3139,125 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_LOOGAMON
 
-#if P_FAMILY_UNOWN
-    const u32 gMonPalette_Unown[] = INCBIN_U32("graphics/pokemon/unown/normal.gbapal.lz");
-    const u32 gMonShinyPalette_Unown[] = INCBIN_U32("graphics/pokemon/unown/shiny.gbapal.lz");
+#if P_FAMILY_LOPMON
+    const u32 gMonPalette_Lopmon[] = INCBIN_U32("graphics/pokemon/lopmon/normal.gbapal.lz");
+    const u32 gMonShinyPalette_Lopmon[] = INCBIN_U32("graphics/pokemon/lopmon/shiny.gbapal.lz");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Unown[] = INCBIN_U8("graphics/pokemon/unown/footprint.1bpp");
+    const u8 gMonFootprint_Lopmon[] = INCBIN_U8("graphics/pokemon/lopmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_UnownA[] = INCBIN_U32("graphics/pokemon/unown/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownA[] = INCBIN_U32("graphics/pokemon/unown/back.4bpp.lz");
-    const u8 gMonIcon_UnownA[] = INCBIN_U8("graphics/pokemon/unown/icon.4bpp");
+    const u32 gMonFrontPic_LopmonA[] = INCBIN_U32("graphics/pokemon/lopmon/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonA[] = INCBIN_U32("graphics/pokemon/lopmon/back.4bpp.lz");
+    const u8 gMonIcon_LopmonA[] = INCBIN_U8("graphics/pokemon/lopmon/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownB[] = INCBIN_U32("graphics/pokemon/unown/b/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownB[] = INCBIN_U32("graphics/pokemon/unown/b/back.4bpp.lz");
-    const u8 gMonIcon_UnownB[] = INCBIN_U8("graphics/pokemon/unown/b/icon.4bpp");
+    const u32 gMonFrontPic_LopmonB[] = INCBIN_U32("graphics/pokemon/lopmon/b/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonB[] = INCBIN_U32("graphics/pokemon/lopmon/b/back.4bpp.lz");
+    const u8 gMonIcon_LopmonB[] = INCBIN_U8("graphics/pokemon/lopmon/b/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownC[] = INCBIN_U32("graphics/pokemon/unown/c/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownC[] = INCBIN_U32("graphics/pokemon/unown/c/back.4bpp.lz");
-    const u8 gMonIcon_UnownC[] = INCBIN_U8("graphics/pokemon/unown/c/icon.4bpp");
+    const u32 gMonFrontPic_LopmonC[] = INCBIN_U32("graphics/pokemon/lopmon/c/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonC[] = INCBIN_U32("graphics/pokemon/lopmon/c/back.4bpp.lz");
+    const u8 gMonIcon_LopmonC[] = INCBIN_U8("graphics/pokemon/lopmon/c/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownD[] = INCBIN_U32("graphics/pokemon/unown/d/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownD[] = INCBIN_U32("graphics/pokemon/unown/d/back.4bpp.lz");
-    const u8 gMonIcon_UnownD[] = INCBIN_U8("graphics/pokemon/unown/d/icon.4bpp");
+    const u32 gMonFrontPic_LopmonD[] = INCBIN_U32("graphics/pokemon/lopmon/d/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonD[] = INCBIN_U32("graphics/pokemon/lopmon/d/back.4bpp.lz");
+    const u8 gMonIcon_LopmonD[] = INCBIN_U8("graphics/pokemon/lopmon/d/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownE[] = INCBIN_U32("graphics/pokemon/unown/e/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownE[] = INCBIN_U32("graphics/pokemon/unown/e/back.4bpp.lz");
-    const u8 gMonIcon_UnownE[] = INCBIN_U8("graphics/pokemon/unown/e/icon.4bpp");
+    const u32 gMonFrontPic_LopmonE[] = INCBIN_U32("graphics/pokemon/lopmon/e/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonE[] = INCBIN_U32("graphics/pokemon/lopmon/e/back.4bpp.lz");
+    const u8 gMonIcon_LopmonE[] = INCBIN_U8("graphics/pokemon/lopmon/e/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownF[] = INCBIN_U32("graphics/pokemon/unown/f/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownF[] = INCBIN_U32("graphics/pokemon/unown/f/back.4bpp.lz");
-    const u8 gMonIcon_UnownF[] = INCBIN_U8("graphics/pokemon/unown/f/icon.4bpp");
+    const u32 gMonFrontPic_LopmonF[] = INCBIN_U32("graphics/pokemon/lopmon/f/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonF[] = INCBIN_U32("graphics/pokemon/lopmon/f/back.4bpp.lz");
+    const u8 gMonIcon_LopmonF[] = INCBIN_U8("graphics/pokemon/lopmon/f/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownG[] = INCBIN_U32("graphics/pokemon/unown/g/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownG[] = INCBIN_U32("graphics/pokemon/unown/g/back.4bpp.lz");
-    const u8 gMonIcon_UnownG[] = INCBIN_U8("graphics/pokemon/unown/g/icon.4bpp");
+    const u32 gMonFrontPic_LopmonG[] = INCBIN_U32("graphics/pokemon/lopmon/g/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonG[] = INCBIN_U32("graphics/pokemon/lopmon/g/back.4bpp.lz");
+    const u8 gMonIcon_LopmonG[] = INCBIN_U8("graphics/pokemon/lopmon/g/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownH[] = INCBIN_U32("graphics/pokemon/unown/h/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownH[] = INCBIN_U32("graphics/pokemon/unown/h/back.4bpp.lz");
-    const u8 gMonIcon_UnownH[] = INCBIN_U8("graphics/pokemon/unown/h/icon.4bpp");
+    const u32 gMonFrontPic_LopmonH[] = INCBIN_U32("graphics/pokemon/lopmon/h/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonH[] = INCBIN_U32("graphics/pokemon/lopmon/h/back.4bpp.lz");
+    const u8 gMonIcon_LopmonH[] = INCBIN_U8("graphics/pokemon/lopmon/h/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownI[] = INCBIN_U32("graphics/pokemon/unown/i/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownI[] = INCBIN_U32("graphics/pokemon/unown/i/back.4bpp.lz");
-    const u8 gMonIcon_UnownI[] = INCBIN_U8("graphics/pokemon/unown/i/icon.4bpp");
+    const u32 gMonFrontPic_LopmonI[] = INCBIN_U32("graphics/pokemon/lopmon/i/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonI[] = INCBIN_U32("graphics/pokemon/lopmon/i/back.4bpp.lz");
+    const u8 gMonIcon_LopmonI[] = INCBIN_U8("graphics/pokemon/lopmon/i/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownJ[] = INCBIN_U32("graphics/pokemon/unown/j/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownJ[] = INCBIN_U32("graphics/pokemon/unown/j/back.4bpp.lz");
-    const u8 gMonIcon_UnownJ[] = INCBIN_U8("graphics/pokemon/unown/j/icon.4bpp");
+    const u32 gMonFrontPic_LopmonJ[] = INCBIN_U32("graphics/pokemon/lopmon/j/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonJ[] = INCBIN_U32("graphics/pokemon/lopmon/j/back.4bpp.lz");
+    const u8 gMonIcon_LopmonJ[] = INCBIN_U8("graphics/pokemon/lopmon/j/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownK[] = INCBIN_U32("graphics/pokemon/unown/k/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownK[] = INCBIN_U32("graphics/pokemon/unown/k/back.4bpp.lz");
-    const u8 gMonIcon_UnownK[] = INCBIN_U8("graphics/pokemon/unown/k/icon.4bpp");
+    const u32 gMonFrontPic_LopmonK[] = INCBIN_U32("graphics/pokemon/lopmon/k/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonK[] = INCBIN_U32("graphics/pokemon/lopmon/k/back.4bpp.lz");
+    const u8 gMonIcon_LopmonK[] = INCBIN_U8("graphics/pokemon/lopmon/k/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownL[] = INCBIN_U32("graphics/pokemon/unown/l/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownL[] = INCBIN_U32("graphics/pokemon/unown/l/back.4bpp.lz");
-    const u8 gMonIcon_UnownL[] = INCBIN_U8("graphics/pokemon/unown/l/icon.4bpp");
+    const u32 gMonFrontPic_LopmonL[] = INCBIN_U32("graphics/pokemon/lopmon/l/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonL[] = INCBIN_U32("graphics/pokemon/lopmon/l/back.4bpp.lz");
+    const u8 gMonIcon_LopmonL[] = INCBIN_U8("graphics/pokemon/lopmon/l/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownM[] = INCBIN_U32("graphics/pokemon/unown/m/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownM[] = INCBIN_U32("graphics/pokemon/unown/m/back.4bpp.lz");
-    const u8 gMonIcon_UnownM[] = INCBIN_U8("graphics/pokemon/unown/m/icon.4bpp");
+    const u32 gMonFrontPic_LopmonM[] = INCBIN_U32("graphics/pokemon/lopmon/m/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonM[] = INCBIN_U32("graphics/pokemon/lopmon/m/back.4bpp.lz");
+    const u8 gMonIcon_LopmonM[] = INCBIN_U8("graphics/pokemon/lopmon/m/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownN[] = INCBIN_U32("graphics/pokemon/unown/n/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownN[] = INCBIN_U32("graphics/pokemon/unown/n/back.4bpp.lz");
-    const u8 gMonIcon_UnownN[] = INCBIN_U8("graphics/pokemon/unown/n/icon.4bpp");
+    const u32 gMonFrontPic_LopmonN[] = INCBIN_U32("graphics/pokemon/lopmon/n/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonN[] = INCBIN_U32("graphics/pokemon/lopmon/n/back.4bpp.lz");
+    const u8 gMonIcon_LopmonN[] = INCBIN_U8("graphics/pokemon/lopmon/n/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownO[] = INCBIN_U32("graphics/pokemon/unown/o/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownO[] = INCBIN_U32("graphics/pokemon/unown/o/back.4bpp.lz");
-    const u8 gMonIcon_UnownO[] = INCBIN_U8("graphics/pokemon/unown/o/icon.4bpp");
+    const u32 gMonFrontPic_LopmonO[] = INCBIN_U32("graphics/pokemon/lopmon/o/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonO[] = INCBIN_U32("graphics/pokemon/lopmon/o/back.4bpp.lz");
+    const u8 gMonIcon_LopmonO[] = INCBIN_U8("graphics/pokemon/lopmon/o/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownP[] = INCBIN_U32("graphics/pokemon/unown/p/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownP[] = INCBIN_U32("graphics/pokemon/unown/p/back.4bpp.lz");
-    const u8 gMonIcon_UnownP[] = INCBIN_U8("graphics/pokemon/unown/p/icon.4bpp");
+    const u32 gMonFrontPic_LopmonP[] = INCBIN_U32("graphics/pokemon/lopmon/p/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonP[] = INCBIN_U32("graphics/pokemon/lopmon/p/back.4bpp.lz");
+    const u8 gMonIcon_LopmonP[] = INCBIN_U8("graphics/pokemon/lopmon/p/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownQ[] = INCBIN_U32("graphics/pokemon/unown/q/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownQ[] = INCBIN_U32("graphics/pokemon/unown/q/back.4bpp.lz");
-    const u8 gMonIcon_UnownQ[] = INCBIN_U8("graphics/pokemon/unown/q/icon.4bpp");
+    const u32 gMonFrontPic_LopmonQ[] = INCBIN_U32("graphics/pokemon/lopmon/q/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonQ[] = INCBIN_U32("graphics/pokemon/lopmon/q/back.4bpp.lz");
+    const u8 gMonIcon_LopmonQ[] = INCBIN_U8("graphics/pokemon/lopmon/q/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownR[] = INCBIN_U32("graphics/pokemon/unown/r/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownR[] = INCBIN_U32("graphics/pokemon/unown/r/back.4bpp.lz");
-    const u8 gMonIcon_UnownR[] = INCBIN_U8("graphics/pokemon/unown/r/icon.4bpp");
+    const u32 gMonFrontPic_LopmonR[] = INCBIN_U32("graphics/pokemon/lopmon/r/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonR[] = INCBIN_U32("graphics/pokemon/lopmon/r/back.4bpp.lz");
+    const u8 gMonIcon_LopmonR[] = INCBIN_U8("graphics/pokemon/lopmon/r/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownS[] = INCBIN_U32("graphics/pokemon/unown/s/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownS[] = INCBIN_U32("graphics/pokemon/unown/s/back.4bpp.lz");
-    const u8 gMonIcon_UnownS[] = INCBIN_U8("graphics/pokemon/unown/s/icon.4bpp");
+    const u32 gMonFrontPic_LopmonS[] = INCBIN_U32("graphics/pokemon/lopmon/s/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonS[] = INCBIN_U32("graphics/pokemon/lopmon/s/back.4bpp.lz");
+    const u8 gMonIcon_LopmonS[] = INCBIN_U8("graphics/pokemon/lopmon/s/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownT[] = INCBIN_U32("graphics/pokemon/unown/t/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownT[] = INCBIN_U32("graphics/pokemon/unown/t/back.4bpp.lz");
-    const u8 gMonIcon_UnownT[] = INCBIN_U8("graphics/pokemon/unown/t/icon.4bpp");
+    const u32 gMonFrontPic_LopmonT[] = INCBIN_U32("graphics/pokemon/lopmon/t/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonT[] = INCBIN_U32("graphics/pokemon/lopmon/t/back.4bpp.lz");
+    const u8 gMonIcon_LopmonT[] = INCBIN_U8("graphics/pokemon/lopmon/t/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownU[] = INCBIN_U32("graphics/pokemon/unown/u/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownU[] = INCBIN_U32("graphics/pokemon/unown/u/back.4bpp.lz");
-    const u8 gMonIcon_UnownU[] = INCBIN_U8("graphics/pokemon/unown/u/icon.4bpp");
+    const u32 gMonFrontPic_LopmonU[] = INCBIN_U32("graphics/pokemon/lopmon/u/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonU[] = INCBIN_U32("graphics/pokemon/lopmon/u/back.4bpp.lz");
+    const u8 gMonIcon_LopmonU[] = INCBIN_U8("graphics/pokemon/lopmon/u/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownV[] = INCBIN_U32("graphics/pokemon/unown/v/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownV[] = INCBIN_U32("graphics/pokemon/unown/v/back.4bpp.lz");
-    const u8 gMonIcon_UnownV[] = INCBIN_U8("graphics/pokemon/unown/v/icon.4bpp");
+    const u32 gMonFrontPic_LopmonV[] = INCBIN_U32("graphics/pokemon/lopmon/v/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonV[] = INCBIN_U32("graphics/pokemon/lopmon/v/back.4bpp.lz");
+    const u8 gMonIcon_LopmonV[] = INCBIN_U8("graphics/pokemon/lopmon/v/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownW[] = INCBIN_U32("graphics/pokemon/unown/w/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownW[] = INCBIN_U32("graphics/pokemon/unown/w/back.4bpp.lz");
-    const u8 gMonIcon_UnownW[] = INCBIN_U8("graphics/pokemon/unown/w/icon.4bpp");
+    const u32 gMonFrontPic_LopmonW[] = INCBIN_U32("graphics/pokemon/lopmon/w/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonW[] = INCBIN_U32("graphics/pokemon/lopmon/w/back.4bpp.lz");
+    const u8 gMonIcon_LopmonW[] = INCBIN_U8("graphics/pokemon/lopmon/w/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownX[] = INCBIN_U32("graphics/pokemon/unown/x/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownX[] = INCBIN_U32("graphics/pokemon/unown/x/back.4bpp.lz");
-    const u8 gMonIcon_UnownX[] = INCBIN_U8("graphics/pokemon/unown/x/icon.4bpp");
+    const u32 gMonFrontPic_LopmonX[] = INCBIN_U32("graphics/pokemon/lopmon/x/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonX[] = INCBIN_U32("graphics/pokemon/lopmon/x/back.4bpp.lz");
+    const u8 gMonIcon_LopmonX[] = INCBIN_U8("graphics/pokemon/lopmon/x/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownY[] = INCBIN_U32("graphics/pokemon/unown/y/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownY[] = INCBIN_U32("graphics/pokemon/unown/y/back.4bpp.lz");
-    const u8 gMonIcon_UnownY[] = INCBIN_U8("graphics/pokemon/unown/y/icon.4bpp");
+    const u32 gMonFrontPic_LopmonY[] = INCBIN_U32("graphics/pokemon/lopmon/y/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonY[] = INCBIN_U32("graphics/pokemon/lopmon/y/back.4bpp.lz");
+    const u8 gMonIcon_LopmonY[] = INCBIN_U8("graphics/pokemon/lopmon/y/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownZ[] = INCBIN_U32("graphics/pokemon/unown/z/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownZ[] = INCBIN_U32("graphics/pokemon/unown/z/back.4bpp.lz");
-    const u8 gMonIcon_UnownZ[] = INCBIN_U8("graphics/pokemon/unown/z/icon.4bpp");
+    const u32 gMonFrontPic_LopmonZ[] = INCBIN_U32("graphics/pokemon/lopmon/z/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonZ[] = INCBIN_U32("graphics/pokemon/lopmon/z/back.4bpp.lz");
+    const u8 gMonIcon_LopmonZ[] = INCBIN_U8("graphics/pokemon/lopmon/z/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownExclamationMark[] = INCBIN_U32("graphics/pokemon/unown/exclamation_mark/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownExclamationMark[] = INCBIN_U32("graphics/pokemon/unown/exclamation_mark/back.4bpp.lz");
-    const u8 gMonIcon_UnownExclamationMark[] = INCBIN_U8("graphics/pokemon/unown/exclamation_mark/icon.4bpp");
+    const u32 gMonFrontPic_LopmonExclamationMark[] = INCBIN_U32("graphics/pokemon/lopmon/exclamation_mark/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonExclamationMark[] = INCBIN_U32("graphics/pokemon/lopmon/exclamation_mark/back.4bpp.lz");
+    const u8 gMonIcon_LopmonExclamationMark[] = INCBIN_U8("graphics/pokemon/lopmon/exclamation_mark/icon.4bpp");
 
-    const u32 gMonFrontPic_UnownQuestionMark[] = INCBIN_U32("graphics/pokemon/unown/question_mark/anim_front.4bpp.lz");
-    const u32 gMonBackPic_UnownQuestionMark[] = INCBIN_U32("graphics/pokemon/unown/question_mark/back.4bpp.lz");
-    const u8 gMonIcon_UnownQuestionMark[] = INCBIN_U8("graphics/pokemon/unown/question_mark/icon.4bpp");
-#endif //P_FAMILY_UNOWN
+    const u32 gMonFrontPic_LopmonQuestionMark[] = INCBIN_U32("graphics/pokemon/lopmon/question_mark/anim_front.4bpp.lz");
+    const u32 gMonBackPic_LopmonQuestionMark[] = INCBIN_U32("graphics/pokemon/lopmon/question_mark/back.4bpp.lz");
+    const u8 gMonIcon_LopmonQuestionMark[] = INCBIN_U8("graphics/pokemon/lopmon/question_mark/icon.4bpp");
+#endif //P_FAMILY_LOPMON
 
 #if P_FAMILY_WOBBUFFET
 #if P_GEN_3_CROSS_EVOS

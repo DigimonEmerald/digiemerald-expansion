@@ -561,9 +561,9 @@ gCryTable::
 	cry Cry_Loogamon
 	cry Cry_Mismagius
 .endif @ P_FAMILY_LOOGAMON
-.if P_FAMILY_UNOWN == TRUE
-	cry Cry_Unown
-.endif @ P_FAMILY_UNOWN
+.if P_FAMILY_LOPMON == TRUE
+	cry Cry_Lopmon
+.endif @ P_FAMILY_LOPMON
 .if P_FAMILY_WOBBUFFET == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
 	cry Cry_Wynaut
@@ -2987,9 +2987,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Loogamon
 	cry_reverse Cry_Mismagius
 .endif @ P_FAMILY_LOOGAMON
-.if P_FAMILY_UNOWN == TRUE
-	cry_reverse Cry_Unown
-.endif @ P_FAMILY_UNOWN
+.if P_FAMILY_LOPMON == TRUE
+	cry_reverse Cry_Lopmon
+.endif @ P_FAMILY_LOPMON
 .if P_FAMILY_WOBBUFFET == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
 	cry_reverse Cry_Wynaut

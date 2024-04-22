@@ -2901,8 +2901,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_LOOGAMON
 
-#if P_FAMILY_UNOWN
-#define UNOWN_MISC_INFO(letter, _noFlip, frontWidth, frontHeight, backWidth, backHeight, backYOffset)   \
+#if P_FAMILY_LOPMON
+#define LOPMON_MISC_INFO(letter, _noFlip, frontWidth, frontHeight, backWidth, backHeight, backYOffset)   \
     {                                                                                                   \
         .baseHP        = 48,                                                                            \
         .baseAttack    = 72,                                                                            \
@@ -2923,67 +2923,67 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },                                  \
         .bodyColor = BODY_COLOR_BLACK,                                                                  \
         .noFlip = _noFlip,                                                                              \
-        .speciesName = _("Unown"),                                                                      \
-        .cryId = CRY_UNOWN,                                                                             \
-        .natDexNum = NATIONAL_DEX_UNOWN,                                                                \
+        .speciesName = _("Lopmon"),                                                                      \
+        .cryId = CRY_LOPMON,                                                                             \
+        .natDexNum = NATIONAL_DEX_LOPMON,                                                                \
         .categoryName = _("Symbol"),                                                                    \
         .height = 5,                                                                                    \
         .weight = 50,                                                                                   \
-        .description = gUnownPokedexText,                                                               \
+        .description = gLopmonPokedexText,                                                               \
         .pokemonScale = 411,                                                                            \
         .pokemonOffset = 2,                                                                             \
         .trainerScale = 256,                                                                            \
         .trainerOffset = 0,                                                                             \
-        .frontPic = gMonFrontPic_Unown ##letter,                                                        \
+        .frontPic = gMonFrontPic_Lopmon ##letter,                                                        \
         .frontPicSize = MON_COORDS_SIZE(frontWidth, frontHeight),                                       \
         .frontPicYOffset = 16,                                                                          \
-        .frontAnimFrames = sAnims_Unown,                                                                \
+        .frontAnimFrames = sAnims_Lopmon,                                                                \
         .frontAnimId = ANIM_ZIGZAG_FAST,                                                                \
         .enemyMonElevation = 8,                                                                         \
-        .backPic = gMonBackPic_Unown ##letter,                                                          \
+        .backPic = gMonBackPic_Lopmon ##letter,                                                          \
         .backPicSize = MON_COORDS_SIZE(backWidth, backHeight),                                          \
         .backPicYOffset = backYOffset,                                                                  \
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,                                                    \
-        .palette = gMonPalette_Unown,                                                                   \
-        .shinyPalette = gMonShinyPalette_Unown,                                                         \
-        .iconSprite = gMonIcon_Unown ##letter,                                                          \
+        .palette = gMonPalette_Lopmon,                                                                   \
+        .shinyPalette = gMonShinyPalette_Lopmon,                                                         \
+        .iconSprite = gMonIcon_Lopmon ##letter,                                                          \
         .iconPalIndex = 0,                                                                              \
-        FOOTPRINT(Unown)                                                                                \
-        .levelUpLearnset = sUnownLevelUpLearnset,                                                       \
-        .teachableLearnset = sUnownTeachableLearnset,                                                   \
+        FOOTPRINT(Lopmon)                                                                                \
+        .levelUpLearnset = sLopmonLevelUpLearnset,                                                       \
+        .teachableLearnset = sLopmonTeachableLearnset,                                                   \
         .tmIlliterate = TRUE,                                                                           \
-        .formSpeciesIdTable = sUnownFormSpeciesIdTable,                                                 \
+        .formSpeciesIdTable = sLopmonFormSpeciesIdTable,                                                 \
     }
 
-    [SPECIES_UNOWN]       = UNOWN_MISC_INFO(A,               FALSE, 24, 40, 24, 48,  8 ),
-    [SPECIES_UNOWN_B]     = UNOWN_MISC_INFO(B,               TRUE,  24, 32, 40, 48,  9 ),
-    [SPECIES_UNOWN_C]     = UNOWN_MISC_INFO(C,               TRUE,  32, 32, 48, 56,  6 ),
-    [SPECIES_UNOWN_D]     = UNOWN_MISC_INFO(D,               TRUE,  32, 32, 40, 48,  8 ),
-    [SPECIES_UNOWN_E]     = UNOWN_MISC_INFO(E,               TRUE,  32, 32, 40, 48, 10 ),
-    [SPECIES_UNOWN_F]     = UNOWN_MISC_INFO(F,               TRUE,  32, 32, 48, 48, 10 ),
-    [SPECIES_UNOWN_G]     = UNOWN_MISC_INFO(G,               TRUE,  24, 40, 40, 56,  5 ),
-    [SPECIES_UNOWN_H]     = UNOWN_MISC_INFO(H,               TRUE,  32, 32, 48, 48,  8 ),
-    [SPECIES_UNOWN_I]     = UNOWN_MISC_INFO(I,               FALSE, 24, 32, 24, 56,  7 ),
-    [SPECIES_UNOWN_J]     = UNOWN_MISC_INFO(J,               TRUE,  24, 32, 32, 48,  9 ),
-    [SPECIES_UNOWN_K]     = UNOWN_MISC_INFO(K,               TRUE,  32, 32, 40, 56,  7 ),
-    [SPECIES_UNOWN_L]     = UNOWN_MISC_INFO(L,               TRUE,  24, 32, 32, 48, 10 ),
-    [SPECIES_UNOWN_M]     = UNOWN_MISC_INFO(M,               FALSE, 32, 32, 48, 40, 13 ),
-    [SPECIES_UNOWN_N]     = UNOWN_MISC_INFO(N,               TRUE,  32, 24, 48, 40, 13 ),
-    [SPECIES_UNOWN_O]     = UNOWN_MISC_INFO(O,               FALSE, 32, 32, 48, 48,  8 ),
-    [SPECIES_UNOWN_P]     = UNOWN_MISC_INFO(P,               TRUE,  24, 32, 32, 48, 10 ),
-    [SPECIES_UNOWN_Q]     = UNOWN_MISC_INFO(Q,               TRUE,  32, 24, 40, 40, 15 ),
-    [SPECIES_UNOWN_R]     = UNOWN_MISC_INFO(R,               TRUE,  24, 32, 32, 40, 12 ),
-    [SPECIES_UNOWN_S]     = UNOWN_MISC_INFO(S,               TRUE,  32, 40, 40, 56,  4 ),
-    [SPECIES_UNOWN_T]     = UNOWN_MISC_INFO(T,               FALSE, 24, 32, 32, 40, 13 ),
-    [SPECIES_UNOWN_U]     = UNOWN_MISC_INFO(U,               FALSE, 32, 32, 48, 40, 13 ),
-    [SPECIES_UNOWN_V]     = UNOWN_MISC_INFO(V,               TRUE,  32, 32, 40, 48, 11 ),
-    [SPECIES_UNOWN_W]     = UNOWN_MISC_INFO(W,               FALSE, 32, 32, 40, 40, 13 ),
-    [SPECIES_UNOWN_X]     = UNOWN_MISC_INFO(X,               FALSE, 24, 24, 40, 40, 15 ),
-    [SPECIES_UNOWN_Y]     = UNOWN_MISC_INFO(Y,               FALSE, 24, 32, 32, 48, 10 ),
-    [SPECIES_UNOWN_Z]     = UNOWN_MISC_INFO(Z,               TRUE,  24, 32, 32, 48, 10 ),
-    [SPECIES_UNOWN_EMARK] = UNOWN_MISC_INFO(ExclamationMark, FALSE, 24, 40, 24, 56,  6 ),
-    [SPECIES_UNOWN_QMARK] = UNOWN_MISC_INFO(QuestionMark,    TRUE,  24, 40, 32, 56,  6 ),
-#endif //P_FAMILY_UNOWN
+    [SPECIES_LOPMON]       = LOPMON_MISC_INFO(A,               FALSE, 24, 40, 24, 48,  8 ),
+    [SPECIES_LOPMON_B]     = LOPMON_MISC_INFO(B,               TRUE,  24, 32, 40, 48,  9 ),
+    [SPECIES_LOPMON_C]     = LOPMON_MISC_INFO(C,               TRUE,  32, 32, 48, 56,  6 ),
+    [SPECIES_LOPMON_D]     = LOPMON_MISC_INFO(D,               TRUE,  32, 32, 40, 48,  8 ),
+    [SPECIES_LOPMON_E]     = LOPMON_MISC_INFO(E,               TRUE,  32, 32, 40, 48, 10 ),
+    [SPECIES_LOPMON_F]     = LOPMON_MISC_INFO(F,               TRUE,  32, 32, 48, 48, 10 ),
+    [SPECIES_LOPMON_G]     = LOPMON_MISC_INFO(G,               TRUE,  24, 40, 40, 56,  5 ),
+    [SPECIES_LOPMON_H]     = LOPMON_MISC_INFO(H,               TRUE,  32, 32, 48, 48,  8 ),
+    [SPECIES_LOPMON_I]     = LOPMON_MISC_INFO(I,               FALSE, 24, 32, 24, 56,  7 ),
+    [SPECIES_LOPMON_J]     = LOPMON_MISC_INFO(J,               TRUE,  24, 32, 32, 48,  9 ),
+    [SPECIES_LOPMON_K]     = LOPMON_MISC_INFO(K,               TRUE,  32, 32, 40, 56,  7 ),
+    [SPECIES_LOPMON_L]     = LOPMON_MISC_INFO(L,               TRUE,  24, 32, 32, 48, 10 ),
+    [SPECIES_LOPMON_M]     = LOPMON_MISC_INFO(M,               FALSE, 32, 32, 48, 40, 13 ),
+    [SPECIES_LOPMON_N]     = LOPMON_MISC_INFO(N,               TRUE,  32, 24, 48, 40, 13 ),
+    [SPECIES_LOPMON_O]     = LOPMON_MISC_INFO(O,               FALSE, 32, 32, 48, 48,  8 ),
+    [SPECIES_LOPMON_P]     = LOPMON_MISC_INFO(P,               TRUE,  24, 32, 32, 48, 10 ),
+    [SPECIES_LOPMON_Q]     = LOPMON_MISC_INFO(Q,               TRUE,  32, 24, 40, 40, 15 ),
+    [SPECIES_LOPMON_R]     = LOPMON_MISC_INFO(R,               TRUE,  24, 32, 32, 40, 12 ),
+    [SPECIES_LOPMON_S]     = LOPMON_MISC_INFO(S,               TRUE,  32, 40, 40, 56,  4 ),
+    [SPECIES_LOPMON_T]     = LOPMON_MISC_INFO(T,               FALSE, 24, 32, 32, 40, 13 ),
+    [SPECIES_LOPMON_U]     = LOPMON_MISC_INFO(U,               FALSE, 32, 32, 48, 40, 13 ),
+    [SPECIES_LOPMON_V]     = LOPMON_MISC_INFO(V,               TRUE,  32, 32, 40, 48, 11 ),
+    [SPECIES_LOPMON_W]     = LOPMON_MISC_INFO(W,               FALSE, 32, 32, 40, 40, 13 ),
+    [SPECIES_LOPMON_X]     = LOPMON_MISC_INFO(X,               FALSE, 24, 24, 40, 40, 15 ),
+    [SPECIES_LOPMON_Y]     = LOPMON_MISC_INFO(Y,               FALSE, 24, 32, 32, 48, 10 ),
+    [SPECIES_LOPMON_Z]     = LOPMON_MISC_INFO(Z,               TRUE,  24, 32, 32, 48, 10 ),
+    [SPECIES_LOPMON_EMARK] = LOPMON_MISC_INFO(ExclamationMark, FALSE, 24, 40, 24, 56,  6 ),
+    [SPECIES_LOPMON_QMARK] = LOPMON_MISC_INFO(QuestionMark,    TRUE,  24, 40, 32, 56,  6 ),
+#endif //P_FAMILY_LOPMON
 
 #if P_FAMILY_WOBBUFFET
 #if P_GEN_3_CROSS_EVOS

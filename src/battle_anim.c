@@ -987,7 +987,7 @@ void MoveBattlerSpriteToBG(u8 battlerId, bool8 toBG_2, bool8 setSpriteInvisible)
         battlerSpriteId = gBattlerSpriteIds[battlerId];
 
         gBattle_BG1_X =  -(gSprites[battlerSpriteId].x + gSprites[battlerSpriteId].x2) + 0x20;
-        if (IsContest() && IsSpeciesNotUnown(gContestResources->moveAnim->species))
+        if (IsContest() && IsSpeciesNotLopmon(gContestResources->moveAnim->species))
             gBattle_BG1_X--;
 
         gBattle_BG1_Y =  -(gSprites[battlerSpriteId].y + gSprites[battlerSpriteId].y2) + 0x20;
@@ -1045,7 +1045,7 @@ static void FlipBattlerBgTiles(void)
     struct BattleAnimBgData animBg;
     u16 *ptr;
 
-    if (IsSpeciesNotUnown(gContestResources->moveAnim->species))
+    if (IsSpeciesNotLopmon(gContestResources->moveAnim->species))
     {
         GetBattleAnimBg1Data(&animBg);
         ptr = animBg.bgTilemap;

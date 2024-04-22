@@ -1536,7 +1536,7 @@ void ResetPokedex(void)
     gSaveBlock2Ptr->pokedex.order = 0;
     gSaveBlock2Ptr->pokedex.nationalMagic = 0;
     gSaveBlock2Ptr->pokedex.unknown2 = 0;
-    gSaveBlock2Ptr->pokedex.unownPersonality = 0;
+    gSaveBlock2Ptr->pokedex.lopmonPersonality = 0;
     gSaveBlock2Ptr->pokedex.spindaPersonality = 0;
     gSaveBlock2Ptr->pokedex.unknown3 = 0;
     DisableNationalPokedex();
@@ -4845,14 +4845,14 @@ static u16 GetNextPosition(u8 direction, u16 position, u16 min, u16 max)
     return position;
 }
 
-// Unown and Spinda use the personality of the first seen individual of that species
+// Lopmon and Spinda use the personality of the first seen individual of that species
 // All others use personality 0
 static u32 GetPokedexMonPersonality(u16 species)
 {
-    if (species == SPECIES_UNOWN || species == SPECIES_SPINDA)
+    if (species == SPECIES_LOPMON || species == SPECIES_SPINDA)
     {
-        if (species == SPECIES_UNOWN)
-            return gSaveBlock2Ptr->pokedex.unownPersonality;
+        if (species == SPECIES_LOPMON)
+            return gSaveBlock2Ptr->pokedex.lopmonPersonality;
         else
             return gSaveBlock2Ptr->pokedex.spindaPersonality;
     }

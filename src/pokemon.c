@@ -1020,22 +1020,22 @@ void CreateMonWithNature(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV,
     CreateMon(mon, species, level, fixedIV, TRUE, personality, OT_ID_PLAYER_ID, 0);
 }
 
-void CreateMonWithGenderNatureLetter(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 gender, u8 nature, u8 unownLetter)
+void CreateMonWithGenderNatureLetter(struct Pokemon *mon, u16 species, u8 level, u8 fixedIV, u8 gender, u8 nature, u8 lopmonLetter)
 {
     u32 personality;
 
-    if ((u8)(unownLetter - 1) < NUM_UNOWN_FORMS)
+    if ((u8)(lopmonLetter - 1) < NUM_LOPMON_FORMS)
     {
         u16 actualLetter;
 
         do
         {
             personality = Random32();
-            actualLetter = GET_UNOWN_LETTER(personality);
+            actualLetter = GET_LOPMON_LETTER(personality);
         }
         while (nature != GetNatureFromPersonality(personality)
             || gender != GetGenderFromSpeciesAndPersonality(species, personality)
-            || actualLetter != unownLetter - 1);
+            || actualLetter != lopmonLetter - 1);
     }
     else
     {
@@ -1917,13 +1917,13 @@ bool32 IsPersonalityFemale(u16 species, u32 personality)
     return GetGenderFromSpeciesAndPersonality(species, personality) == MON_FEMALE;
 }
 
-u32 GetUnownSpeciesId(u32 personality)
+u32 GetLopmonSpeciesId(u32 personality)
 {
-    u16 unownLetter = GetUnownLetterByPersonality(personality);
+    u16 lopmonLetter = GetLopmonLetterByPersonality(personality);
 
-    if (unownLetter == 0)
-        return SPECIES_UNOWN;
-    return unownLetter + SPECIES_UNOWN_B - 1;
+    if (lopmonLetter == 0)
+        return SPECIES_LOPMON;
+    return lopmonLetter + SPECIES_LOPMON_B - 1;
 }
 
 void SetMultiuseSpriteTemplateToPokemon(u16 speciesTag, u8 battlerPosition)
@@ -5922,8 +5922,8 @@ void HandleSetPokedexFlag(u16 nationalNum, u8 caseId, u32 personality)
     if (!GetSetPokedexFlag(nationalNum, getFlagCaseId)) // don't set if it's already set
     {
         GetSetPokedexFlag(nationalNum, caseId);
-        if (NationalPokedexNumToSpecies(nationalNum) == SPECIES_UNOWN)
-            gSaveBlock2Ptr->pokedex.unownPersonality = personality;
+        if (NationalPokedexNumToSpecies(nationalNum) == SPECIES_LOPMON)
+            gSaveBlock2Ptr->pokedex.lopmonPersonality = personality;
         if (NationalPokedexNumToSpecies(nationalNum) == SPECIES_SPINDA)
             gSaveBlock2Ptr->pokedex.spindaPersonality = personality;
     }
@@ -5931,7 +5931,7 @@ void HandleSetPokedexFlag(u16 nationalNum, u8 caseId, u32 personality)
 
 bool8 HasTwoFramesAnimation(u16 species)
 {
-    return species != SPECIES_UNOWN;
+    return species != SPECIES_LOPMON;
 }
 
 static bool8 ShouldSkipFriendshipChange(void)
