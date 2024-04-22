@@ -1573,15 +1573,15 @@ Cry_Togekiss::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_HAGURUMON
 
-.if P_FAMILY_NATU == TRUE
+.if P_FAMILY_HAWKMON == TRUE
 	.align 2
-Cry_Natu::
-	.incbin "sound/direct_sound_samples/cries/natu.bin"
+Cry_Hawkmon::
+	.incbin "sound/direct_sound_samples/cries/hawkmon.bin"
 
 	.align 2
 Cry_Xatu::
 	.incbin "sound/direct_sound_samples/cries/xatu.bin"
-.endif @ P_FAMILY_NATU
+.endif @ P_FAMILY_HAWKMON
 
 .if P_FAMILY_MAREEP == TRUE
 	.align 2

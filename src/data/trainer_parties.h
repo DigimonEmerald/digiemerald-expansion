@@ -2886,7 +2886,7 @@ static const struct TrainerMon sParty_Kayla[] = {
     },
     {
     .lvl = 26,
-    .species = SPECIES_NATU,
+    .species = SPECIES_HAWKMON,
     },
     {
     .lvl = 26,
@@ -5037,7 +5037,7 @@ static const struct TrainerMon sParty_Colin[] = {
     },
     {
     .lvl = 28,
-    .species = SPECIES_NATU,
+    .species = SPECIES_HAWKMON,
     }
 };
 
@@ -5078,7 +5078,7 @@ static const struct TrainerMon sParty_Robert2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 32,
-    .species = SPECIES_NATU,
+    .species = SPECIES_HAWKMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -5091,7 +5091,7 @@ static const struct TrainerMon sParty_Robert3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 35,
-    .species = SPECIES_NATU,
+    .species = SPECIES_HAWKMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -5104,7 +5104,7 @@ static const struct TrainerMon sParty_Robert4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 38,
-    .species = SPECIES_NATU,
+    .species = SPECIES_HAWKMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -5130,7 +5130,7 @@ static const struct TrainerMon sParty_Alex[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 33,
-    .species = SPECIES_NATU,
+    .species = SPECIES_HAWKMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -7417,7 +7417,7 @@ static const struct TrainerMon sParty_GruntSpaceCenter7[] = {
 static const struct TrainerMon sParty_Macey[] = {
     {
     .lvl = 36,
-    .species = SPECIES_NATU,
+    .species = SPECIES_HAWKMON,
     }
 };
 

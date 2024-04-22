@@ -2835,14 +2835,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_HAGURUMON
 
-#if P_FAMILY_NATU
-    const u32 gMonFrontPic_Natu[] = INCBIN_U32("graphics/pokemon/natu/anim_front.4bpp.lz");
-    const u32 gMonPalette_Natu[] = INCBIN_U32("graphics/pokemon/natu/normal.gbapal.lz");
-    const u32 gMonBackPic_Natu[] = INCBIN_U32("graphics/pokemon/natu/back.4bpp.lz");
-    const u32 gMonShinyPalette_Natu[] = INCBIN_U32("graphics/pokemon/natu/shiny.gbapal.lz");
-    const u8 gMonIcon_Natu[] = INCBIN_U8("graphics/pokemon/natu/icon.4bpp");
+#if P_FAMILY_HAWKMON
+    const u32 gMonFrontPic_Hawkmon[] = INCBIN_U32("graphics/pokemon/hawkmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Hawkmon[] = INCBIN_U32("graphics/pokemon/hawkmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Hawkmon[] = INCBIN_U32("graphics/pokemon/hawkmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Hawkmon[] = INCBIN_U32("graphics/pokemon/hawkmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Hawkmon[] = INCBIN_U8("graphics/pokemon/hawkmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Natu[] = INCBIN_U8("graphics/pokemon/natu/footprint.1bpp");
+    const u8 gMonFootprint_Hawkmon[] = INCBIN_U8("graphics/pokemon/hawkmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Xatu[] = INCBIN_U32("graphics/pokemon/xatu/anim_front.4bpp.lz");
@@ -2855,7 +2855,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_XatuF[] = INCBIN_U32("graphics/pokemon/xatu/anim_frontf.4bpp.lz");
-#endif //P_FAMILY_NATU
+#endif //P_FAMILY_HAWKMON
 
 #if P_FAMILY_MAREEP
     const u32 gMonFrontPic_Mareep[] = INCBIN_U32("graphics/pokemon/mareep/anim_front.4bpp.lz");

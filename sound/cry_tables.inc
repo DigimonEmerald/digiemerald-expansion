@@ -504,10 +504,10 @@ gCryTable::
 	cry Cry_Togekiss
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_HAGURUMON
-.if P_FAMILY_NATU == TRUE
-	cry Cry_Natu
+.if P_FAMILY_HAWKMON == TRUE
+	cry Cry_Hawkmon
 	cry Cry_Xatu
-.endif @ P_FAMILY_NATU
+.endif @ P_FAMILY_HAWKMON
 .if P_FAMILY_MAREEP == TRUE
 	cry Cry_Mareep
 	cry Cry_Flaaffy
@@ -2930,10 +2930,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Togekiss
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_HAGURUMON
-.if P_FAMILY_NATU == TRUE
-	cry_reverse Cry_Natu
+.if P_FAMILY_HAWKMON == TRUE
+	cry_reverse Cry_Hawkmon
 	cry_reverse Cry_Xatu
-.endif @ P_FAMILY_NATU
+.endif @ P_FAMILY_HAWKMON
 .if P_FAMILY_MAREEP == TRUE
 	cry_reverse Cry_Mareep
 	cry_reverse Cry_Flaaffy

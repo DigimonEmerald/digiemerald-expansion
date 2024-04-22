@@ -1460,8 +1460,8 @@ const u16 gEggMoves[] = {
         MOVE_MORNING_SUN),
 #endif //P_FAMILY_HAGURUMON
 
-#if P_FAMILY_NATU
-    egg_moves(NATU,
+#if P_FAMILY_HAWKMON
+    egg_moves(HAWKMON,
         MOVE_HAZE,
         MOVE_DRILL_PECK,
         MOVE_QUICK_ATTACK,
@@ -1476,7 +1476,7 @@ const u16 gEggMoves[] = {
         MOVE_SKILL_SWAP,
         MOVE_SIMPLE_BEAM,
         MOVE_ALLY_SWITCH),
-#endif //P_FAMILY_NATU
+#endif //P_FAMILY_HAWKMON
 
 #if P_FAMILY_MAREEP
     egg_moves(MAREEP,

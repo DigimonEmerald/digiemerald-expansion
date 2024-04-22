@@ -5117,8 +5117,8 @@ static const struct LevelUpMove sTogekissLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_HAGURUMON
 
-#if P_FAMILY_NATU
-static const struct LevelUpMove sNatuLevelUpLearnset[] = {
+#if P_FAMILY_HAWKMON
+static const struct LevelUpMove sHawkmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 6, MOVE_NIGHT_SHADE),
@@ -5161,7 +5161,7 @@ static const struct LevelUpMove sXatuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(57, MOVE_ME_FIRST),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_NATU
+#endif //P_FAMILY_HAWKMON
 
 #if P_FAMILY_MAREEP
 static const struct LevelUpMove sMareepLevelUpLearnset[] = {

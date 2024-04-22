@@ -1304,8 +1304,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_HAGURUMON
 
-#if P_FAMILY_NATU
-    [SPECIES_NATU] =
+#if P_FAMILY_HAWKMON
+    [SPECIES_HAWKMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 50,
@@ -1324,38 +1324,38 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_SYNCHRONIZE, ABILITY_EARLY_BIRD, ABILITY_MAGIC_BOUNCE },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Natu"),
-        .cryId = CRY_NATU,
-        .natDexNum = NATIONAL_DEX_NATU,
+        .speciesName = _("Hawkmon"),
+        .cryId = CRY_HAWKMON,
+        .natDexNum = NATIONAL_DEX_HAWKMON,
         .categoryName = _("Tiny Bird"),
         .height = 2,
         .weight = 20,
         .description = COMPOUND_STRING(
             "It runs up short trees that grow on the\n"
             "savanna to peck at new shoots.\n"
-            "A Natu's eyes look as if they are\n"
+            "A Hawkmon's eyes look as if they are\n"
             "always observing something."),
         .pokemonScale = 610,
         .pokemonOffset = 25,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Natu,
+        .frontPic = gMonFrontPic_Hawkmon,
         .frontPicSize = MON_COORDS_SIZE(32, 32),
         .frontPicYOffset = 17,
-        .frontAnimFrames = sAnims_Natu,
+        .frontAnimFrames = sAnims_Hawkmon,
         .frontAnimId = ANIM_H_JUMPS,
         .frontAnimDelay = 30,
-        .backPic = gMonBackPic_Natu,
+        .backPic = gMonBackPic_Hawkmon,
         .backPicSize = MON_COORDS_SIZE(40, 40),
         .backPicYOffset = 15,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Natu,
-        .shinyPalette = gMonShinyPalette_Natu,
-        .iconSprite = gMonIcon_Natu,
+        .palette = gMonPalette_Hawkmon,
+        .shinyPalette = gMonShinyPalette_Hawkmon,
+        .iconSprite = gMonIcon_Hawkmon,
         .iconPalIndex = 1,
-        FOOTPRINT(Natu)
-        .levelUpLearnset = sNatuLevelUpLearnset,
-        .teachableLearnset = sNatuTeachableLearnset,
+        FOOTPRINT(Hawkmon)
+        .levelUpLearnset = sHawkmonLevelUpLearnset,
+        .teachableLearnset = sHawkmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_XATU}),
     },
 
@@ -1413,7 +1413,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sXatuLevelUpLearnset,
         .teachableLearnset = sXatuTeachableLearnset,
     },
-#endif //P_FAMILY_NATU
+#endif //P_FAMILY_HAWKMON
 
 #if P_FAMILY_MAREEP
     [SPECIES_MAREEP] =

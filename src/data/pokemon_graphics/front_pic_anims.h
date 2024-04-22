@@ -2562,8 +2562,8 @@ static const union AnimCmd sAnim_Togekiss_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_HAGURUMON
 
-#if P_FAMILY_NATU
-static const union AnimCmd sAnim_Natu_1[] =
+#if P_FAMILY_HAWKMON
+static const union AnimCmd sAnim_Hawkmon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -10787,10 +10787,10 @@ SINGLE_ANIMATION(Hagurumon_x);
 SINGLE_ANIMATION(Togekiss);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_HAGURUMON
-#if P_FAMILY_NATU
-SINGLE_ANIMATION(Natu);
+#if P_FAMILY_HAWKMON
+SINGLE_ANIMATION(Hawkmon);
 SINGLE_ANIMATION(Xatu);
-#endif //P_FAMILY_NATU
+#endif //P_FAMILY_HAWKMON
 #if P_FAMILY_MAREEP
 SINGLE_ANIMATION(Mareep);
 SINGLE_ANIMATION(Flaaffy);

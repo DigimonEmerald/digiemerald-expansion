@@ -314,8 +314,8 @@ static const struct SpriteFrameImage sPicTable_MauvilleOldMan2[] = {
     overworld_ascending_frames(gObjectEventPic_MauvilleOldMan2, 2, 4),
 };
 
-static const struct SpriteFrameImage sPicTable_UnusedNatuDoll[] = {
-    obj_frame_tiles(gObjectEventPic_UnusedNatuDoll),
+static const struct SpriteFrameImage sPicTable_UnusedHawkmonDoll[] = {
+    obj_frame_tiles(gObjectEventPic_UnusedHawkmonDoll),
 };
 
 static const struct SpriteFrameImage sPicTable_UnusedPickmon_whiteDoll[] = {

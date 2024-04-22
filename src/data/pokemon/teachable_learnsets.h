@@ -9309,8 +9309,8 @@ static const u16 sTogekissTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_HAGURUMON
 
-#if P_FAMILY_NATU
-static const u16 sNatuTeachableLearnset[] = {
+#if P_FAMILY_HAWKMON
+static const u16 sHawkmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
@@ -9377,7 +9377,7 @@ static const u16 sXatuTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_NATU
+#endif //P_FAMILY_HAWKMON
 
 #if P_FAMILY_MAREEP
 static const u16 sMareepTeachableLearnset[] = {

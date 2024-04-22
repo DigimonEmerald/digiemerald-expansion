@@ -11308,7 +11308,7 @@ bool8 IsMonBannedFromSkyBattles(u16 species)
         case SPECIES_POROMON:
         case SPECIES_PUROROMON:
         case SPECIES_GHOSTMON:
-        case SPECIES_NATU:
+        case SPECIES_HAWKMON:
         case SPECIES_MURKROW:
         case SPECIES_DELIBIRD:
         case SPECIES_TAILLOW:
