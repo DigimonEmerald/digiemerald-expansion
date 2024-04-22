@@ -10142,8 +10142,8 @@ static const u16 sClodsireTeachableLearnset[] = {
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_KUDAMON
 
-#if P_FAMILY_MURKROW
-static const u16 sMurkrowTeachableLearnset[] = {
+#if P_FAMILY_LALAMON
+static const u16 sLalamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
@@ -10212,7 +10212,7 @@ static const u16 sHonchkrowTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MURKROW
+#endif //P_FAMILY_LALAMON
 
 #if P_FAMILY_MISDREAVUS
 static const u16 sMisdreavusTeachableLearnset[] = {

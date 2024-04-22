@@ -2674,8 +2674,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_KUDAMON
 
-#if P_FAMILY_MURKROW
-    [SPECIES_MURKROW] =
+#if P_FAMILY_LALAMON
+    [SPECIES_LALAMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 85,
@@ -2694,14 +2694,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_INSOMNIA, ABILITY_SUPER_LUCK, ABILITY_PRANKSTER },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Murkrow"),
-        .cryId = CRY_MURKROW,
-        .natDexNum = NATIONAL_DEX_MURKROW,
+        .speciesName = _("Lalamon"),
+        .cryId = CRY_LALAMON,
+        .natDexNum = NATIONAL_DEX_LALAMON,
         .categoryName = _("Darkness"),
         .height = 5,
         .weight = 21,
         .description = COMPOUND_STRING(
-            "Murkrow were feared as the alleged\n"
+            "Lalamon were feared as the alleged\n"
             "bearers of ill fortune. It shows strong\n"
             "interest in anything that sparkles. It will\n"
             "even try to steal rings from women."),
@@ -2709,27 +2709,27 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = -8,
         .trainerScale = 256,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Murkrow,
-        .frontPicFemale = gMonFrontPic_MurkrowF,
+        .frontPic = gMonFrontPic_Lalamon,
+        .frontPicFemale = gMonFrontPic_LalamonF,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 15,
-        .frontAnimFrames = sAnims_Murkrow,
+        .frontAnimFrames = sAnims_Lalamon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 12,
-        .backPic = gMonBackPic_Murkrow,
-        .backPicFemale = gMonBackPic_MurkrowF,
+        .backPic = gMonBackPic_Lalamon,
+        .backPicFemale = gMonBackPic_LalamonF,
         .backPicSize = MON_COORDS_SIZE(40, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(40, 56),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Murkrow,
-        .shinyPalette = gMonShinyPalette_Murkrow,
-        .iconSprite = gMonIcon_Murkrow,
+        .palette = gMonPalette_Lalamon,
+        .shinyPalette = gMonShinyPalette_Lalamon,
+        .iconSprite = gMonIcon_Lalamon,
         .iconPalIndex = 2,
-        FOOTPRINT(Murkrow)
-        .levelUpLearnset = sMurkrowLevelUpLearnset,
-        .teachableLearnset = sMurkrowTeachableLearnset,
+        FOOTPRINT(Lalamon)
+        .levelUpLearnset = sLalamonLevelUpLearnset,
+        .teachableLearnset = sLalamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_HONCHKROW}),
     },
 
@@ -2761,7 +2761,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .weight = 273,
         .description = COMPOUND_STRING(
             "Becoming active at night, it is known\n"
-            "to swarm with numerous Murkrow in tow.\n"
+            "to swarm with numerous Lalamon in tow.\n"
             "It is said that it never forgives the\n"
             "mistakes of its cronies."),
         .pokemonScale = 338,
@@ -2786,7 +2786,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sHonchkrowTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MURKROW
+#endif //P_FAMILY_LALAMON
 
 #if P_FAMILY_MISDREAVUS
     [SPECIES_MISDREAVUS] =

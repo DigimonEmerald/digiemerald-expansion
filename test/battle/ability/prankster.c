@@ -172,20 +172,20 @@ SINGLE_BATTLE_TEST("Prankster-affected moves which are reflected by Magic Coat c
 
     GIVEN {
         PLAYER(SPECIES_SABLEYE) { Ability(sableyeAbility); }
-        OPPONENT(SPECIES_MURKROW) { Ability(ABILITY_PRANKSTER); }
+        OPPONENT(SPECIES_LALAMON) { Ability(ABILITY_PRANKSTER); }
     } WHEN {
         TURN { MOVE(player, MOVE_MAGIC_COAT); MOVE(opponent, MOVE_CONFUSE_RAY); }
     } SCENE {
         MESSAGE("Sableye used Magic Coat!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MAGIC_COAT, player);
-        MESSAGE("Foe Murkrow used Confuse Ray!");
-        MESSAGE("Foe Murkrow's Confuse Ray was bounced back by MAGIC COAT!");
+        MESSAGE("Foe Lalamon used Confuse Ray!");
+        MESSAGE("Foe Lalamon's Confuse Ray was bounced back by MAGIC COAT!");
         if (sableyeAbility == ABILITY_PRANKSTER) {
             NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);
-            MESSAGE("It doesn't affect Foe Murkrow…");
+            MESSAGE("It doesn't affect Foe Lalamon…");
         } else {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);
-            MESSAGE("Foe Murkrow became confused!");
+            MESSAGE("Foe Lalamon became confused!");
         }
     }
 }
@@ -207,13 +207,13 @@ SINGLE_BATTLE_TEST("Prankster-affected moves that are bounced back by Magic Boun
 {
     GIVEN {
         PLAYER(SPECIES_ABSOL) { Item(ITEM_ABSOLITE); }
-        OPPONENT(SPECIES_MURKROW) { Ability(ABILITY_PRANKSTER); }
+        OPPONENT(SPECIES_LALAMON) { Ability(ABILITY_PRANKSTER); }
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, megaEvolve: TRUE); MOVE(opponent, MOVE_CONFUSE_RAY); }
     } SCENE {
-        MESSAGE("Foe Murkrow's Confuse Ray was bounced back by Absol's Magic Bounce!");
+        MESSAGE("Foe Lalamon's Confuse Ray was bounced back by Absol's Magic Bounce!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);
-        MESSAGE("Foe Murkrow became confused!");
+        MESSAGE("Foe Lalamon became confused!");
     }
 }
 

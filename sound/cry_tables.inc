@@ -553,10 +553,10 @@ gCryTable::
 	cry Cry_Clodsire
 .endif @ P_PALDEAN_FORMS
 .endif @ P_FAMILY_KUDAMON
-.if P_FAMILY_MURKROW == TRUE
-	cry Cry_Murkrow
+.if P_FAMILY_LALAMON == TRUE
+	cry Cry_Lalamon
 	cry Cry_Honchkrow
-.endif @ P_FAMILY_MURKROW
+.endif @ P_FAMILY_LALAMON
 .if P_FAMILY_MISDREAVUS == TRUE
 	cry Cry_Misdreavus
 	cry Cry_Mismagius
@@ -2979,10 +2979,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Clodsire
 .endif @ P_PALDEAN_FORMS
 .endif @ P_FAMILY_KUDAMON
-.if P_FAMILY_MURKROW == TRUE
-	cry_reverse Cry_Murkrow
+.if P_FAMILY_LALAMON == TRUE
+	cry_reverse Cry_Lalamon
 	cry_reverse Cry_Honchkrow
-.endif @ P_FAMILY_MURKROW
+.endif @ P_FAMILY_LALAMON
 .if P_FAMILY_MISDREAVUS == TRUE
 	cry_reverse Cry_Misdreavus
 	cry_reverse Cry_Mismagius

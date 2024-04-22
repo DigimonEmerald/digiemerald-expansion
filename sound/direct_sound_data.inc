@@ -1692,15 +1692,15 @@ Cry_Clodsire::
 .endif @ P_PALDEAN_FORMS
 .endif @ P_FAMILY_KUDAMON
 
-.if P_FAMILY_MURKROW == TRUE
+.if P_FAMILY_LALAMON == TRUE
 	.align 2
-Cry_Murkrow::
-	.incbin "sound/direct_sound_samples/cries/murkrow.bin"
+Cry_Lalamon::
+	.incbin "sound/direct_sound_samples/cries/lalamon.bin"
 
 	.align 2
 Cry_Honchkrow::
 	.incbin "sound/direct_sound_samples/cries/honchkrow.bin"
-.endif @ P_FAMILY_MURKROW
+.endif @ P_FAMILY_LALAMON
 
 .if P_FAMILY_MISDREAVUS == TRUE
 	.align 2

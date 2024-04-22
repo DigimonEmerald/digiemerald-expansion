@@ -1653,8 +1653,8 @@ const u16 gEggMoves[] = {
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_KUDAMON
 
-#if P_FAMILY_MURKROW
-    egg_moves(MURKROW,
+#if P_FAMILY_LALAMON
+    egg_moves(LALAMON,
         MOVE_WHIRLWIND,
         MOVE_DRILL_PECK,
         MOVE_MIRROR_MOVE,
@@ -1671,7 +1671,7 @@ const u16 gEggMoves[] = {
         MOVE_ASSURANCE,
         MOVE_FLATTER,
         MOVE_PUNISHMENT),
-#endif //P_FAMILY_MURKROW
+#endif //P_FAMILY_LALAMON
 
 #if P_FAMILY_MISDREAVUS
     egg_moves(MISDREAVUS,

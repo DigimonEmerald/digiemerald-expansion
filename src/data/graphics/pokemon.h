@@ -3092,18 +3092,18 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_KUDAMON
 
-#if P_FAMILY_MURKROW
-    const u32 gMonFrontPic_Murkrow[] = INCBIN_U32("graphics/pokemon/murkrow/anim_front.4bpp.lz");
-    const u32 gMonPalette_Murkrow[] = INCBIN_U32("graphics/pokemon/murkrow/normal.gbapal.lz");
-    const u32 gMonBackPic_Murkrow[] = INCBIN_U32("graphics/pokemon/murkrow/back.4bpp.lz");
-    const u32 gMonShinyPalette_Murkrow[] = INCBIN_U32("graphics/pokemon/murkrow/shiny.gbapal.lz");
-    const u8 gMonIcon_Murkrow[] = INCBIN_U8("graphics/pokemon/murkrow/icon.4bpp");
+#if P_FAMILY_LALAMON
+    const u32 gMonFrontPic_Lalamon[] = INCBIN_U32("graphics/pokemon/lalamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Lalamon[] = INCBIN_U32("graphics/pokemon/lalamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Lalamon[] = INCBIN_U32("graphics/pokemon/lalamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Lalamon[] = INCBIN_U32("graphics/pokemon/lalamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Lalamon[] = INCBIN_U8("graphics/pokemon/lalamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Murkrow[] = INCBIN_U8("graphics/pokemon/murkrow/footprint.1bpp");
+    const u8 gMonFootprint_Lalamon[] = INCBIN_U8("graphics/pokemon/lalamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_MurkrowF[] = INCBIN_U32("graphics/pokemon/murkrow/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_MurkrowF[] = INCBIN_U32("graphics/pokemon/murkrow/backf.4bpp.lz");
+    const u32 gMonFrontPic_LalamonF[] = INCBIN_U32("graphics/pokemon/lalamon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_LalamonF[] = INCBIN_U32("graphics/pokemon/lalamon/backf.4bpp.lz");
 
 #if P_GEN_4_CROSS_EVOS
     const u32 gMonFrontPic_Honchkrow[] = INCBIN_U32("graphics/pokemon/honchkrow/anim_front.4bpp.lz");
@@ -3115,7 +3115,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Honchkrow[] = INCBIN_U8("graphics/pokemon/honchkrow/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MURKROW
+#endif //P_FAMILY_LALAMON
 
 #if P_FAMILY_MISDREAVUS
     const u32 gMonFrontPic_Misdreavus[] = INCBIN_U32("graphics/pokemon/misdreavus/anim_front.4bpp.lz");

@@ -5176,8 +5176,8 @@ static const struct LevelUpMove sClodsireLevelUpLearnset[] = {
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_KUDAMON
 
-#if P_FAMILY_MURKROW
-static const struct LevelUpMove sMurkrowLevelUpLearnset[] = {
+#if P_FAMILY_LALAMON
+static const struct LevelUpMove sLalamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 5, MOVE_PURSUIT),
@@ -5205,7 +5205,7 @@ static const struct LevelUpMove sHonchkrowLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MURKROW
+#endif //P_FAMILY_LALAMON
 
 #if P_FAMILY_MISDREAVUS
 static const struct LevelUpMove sMisdreavusLevelUpLearnset[] = {

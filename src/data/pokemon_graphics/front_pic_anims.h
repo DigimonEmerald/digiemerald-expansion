@@ -2839,8 +2839,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Clodsire);
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_KUDAMON
 
-#if P_FAMILY_MURKROW
-static const union AnimCmd sAnim_Murkrow_1[] =
+#if P_FAMILY_LALAMON
+static const union AnimCmd sAnim_Lalamon_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 20),
@@ -2857,7 +2857,7 @@ static const union AnimCmd sAnim_Honchkrow_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MURKROW
+#endif //P_FAMILY_LALAMON
 
 #if P_FAMILY_MISDREAVUS
 static const union AnimCmd sAnim_Misdreavus_1[] =
@@ -10841,12 +10841,12 @@ SINGLE_ANIMATION(KudamonPaldean);
 SINGLE_ANIMATION(Clodsire);
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_KUDAMON
-#if P_FAMILY_MURKROW
-SINGLE_ANIMATION(Murkrow);
+#if P_FAMILY_LALAMON
+SINGLE_ANIMATION(Lalamon);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Honchkrow);
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_MURKROW
+#endif //P_FAMILY_LALAMON
 #if P_FAMILY_MISDREAVUS
 SINGLE_ANIMATION(Misdreavus);
 #if P_GEN_4_CROSS_EVOS
