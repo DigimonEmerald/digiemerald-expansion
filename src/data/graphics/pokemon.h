@@ -2915,13 +2915,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Marill[] = INCBIN_U8("graphics/pokemon/marill/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Azumarill[] = INCBIN_U32("graphics/pokemon/azumarill/anim_front.4bpp.lz");
-    const u32 gMonPalette_Azumarill[] = INCBIN_U32("graphics/pokemon/azumarill/normal.gbapal.lz");
-    const u32 gMonBackPic_Azumarill[] = INCBIN_U32("graphics/pokemon/azumarill/back.4bpp.lz");
-    const u32 gMonShinyPalette_Azumarill[] = INCBIN_U32("graphics/pokemon/azumarill/shiny.gbapal.lz");
-    const u8 gMonIcon_Azumarill[] = INCBIN_U8("graphics/pokemon/azumarill/icon.4bpp");
+    const u32 gMonFrontPic_Jellymon[] = INCBIN_U32("graphics/pokemon/jellymon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Jellymon[] = INCBIN_U32("graphics/pokemon/jellymon/normal.gbapal.lz");
+    const u32 gMonBackPic_Jellymon[] = INCBIN_U32("graphics/pokemon/jellymon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Jellymon[] = INCBIN_U32("graphics/pokemon/jellymon/shiny.gbapal.lz");
+    const u8 gMonIcon_Jellymon[] = INCBIN_U8("graphics/pokemon/jellymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Azumarill[] = INCBIN_U8("graphics/pokemon/azumarill/footprint.1bpp");
+    const u8 gMonFootprint_Jellymon[] = INCBIN_U8("graphics/pokemon/jellymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_MARILL
 

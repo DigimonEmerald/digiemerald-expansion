@@ -9573,7 +9573,7 @@ static const u16 sMarillTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sAzumarillTeachableLearnset[] = {
+static const u16 sJellymonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,

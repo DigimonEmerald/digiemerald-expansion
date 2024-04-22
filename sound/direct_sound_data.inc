@@ -1615,8 +1615,8 @@ Cry_Marill::
 	.incbin "sound/direct_sound_samples/cries/marill.bin"
 
 	.align 2
-Cry_Azumarill::
-	.incbin "sound/direct_sound_samples/cries/azumarill.bin"
+Cry_Jellymon::
+	.incbin "sound/direct_sound_samples/cries/jellymon.bin"
 .endif @ P_FAMILY_MARILL
 
 .if P_FAMILY_SUDOWOODO == TRUE

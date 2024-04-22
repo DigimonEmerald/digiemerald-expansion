@@ -2644,7 +2644,7 @@ static const union AnimCmd sAnim_Marill_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Azumarill_1[] =
+static const union AnimCmd sAnim_Jellymon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -10804,7 +10804,7 @@ SINGLE_ANIMATION(ImpmonMega);
 SINGLE_ANIMATION(Azurill);
 #endif //P_GEN_3_CROSS_EVOS
 SINGLE_ANIMATION(Marill);
-SINGLE_ANIMATION(Azumarill);
+SINGLE_ANIMATION(Jellymon);
 #endif //P_FAMILY_MARILL
 #if P_FAMILY_SUDOWOODO
 #if P_GEN_4_CROSS_EVOS

@@ -521,7 +521,7 @@ gCryTable::
 	cry Cry_Azurill
 .endif @ P_GEN_3_CROSS_EVOS
 	cry Cry_Marill
-	cry Cry_Azumarill
+	cry Cry_Jellymon
 .endif @ P_FAMILY_MARILL
 .if P_FAMILY_SUDOWOODO == TRUE
 	cry Cry_Bonsly
@@ -2947,7 +2947,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Azurill
 .endif @ P_GEN_3_CROSS_EVOS
 	cry_reverse Cry_Marill
-	cry_reverse Cry_Azumarill
+	cry_reverse Cry_Jellymon
 .endif @ P_FAMILY_MARILL
 .if P_FAMILY_SUDOWOODO == TRUE
 	cry_reverse Cry_Bonsly

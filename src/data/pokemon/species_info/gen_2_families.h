@@ -1760,10 +1760,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Marill)
         .levelUpLearnset = sMarillLevelUpLearnset,
         .teachableLearnset = sMarillTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_AZUMARILL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_JELLYMON}),
     },
 
-    [SPECIES_AZUMARILL] =
+    [SPECIES_JELLYMON] =
     {
         .baseHP        = 100,
         .baseAttack    = 50,
@@ -1794,9 +1794,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FAIRY),
         .abilities = { ABILITY_THICK_FAT, ABILITY_HUGE_POWER, ABILITY_SAP_SIPPER },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Azumarill"),
-        .cryId = CRY_AZUMARILL,
-        .natDexNum = NATIONAL_DEX_AZUMARILL,
+        .speciesName = _("Jellymon"),
+        .cryId = CRY_JELLYMON,
+        .natDexNum = NATIONAL_DEX_JELLYMON,
         .categoryName = _("Aqua Rabbit"),
         .height = 8,
         .weight = 285,
@@ -1809,22 +1809,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 16,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Azumarill,
+        .frontPic = gMonFrontPic_Jellymon,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Azumarill,
+        .frontAnimFrames = sAnims_Jellymon,
         .frontAnimId = ANIM_SHRINK_GROW,
-        .backPic = gMonBackPic_Azumarill,
+        .backPic = gMonBackPic_Jellymon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Azumarill,
-        .shinyPalette = gMonShinyPalette_Azumarill,
-        .iconSprite = gMonIcon_Azumarill,
+        .palette = gMonPalette_Jellymon,
+        .shinyPalette = gMonShinyPalette_Jellymon,
+        .iconSprite = gMonIcon_Jellymon,
         .iconPalIndex = 0,
-        FOOTPRINT(Azumarill)
-        .levelUpLearnset = sAzumarillLevelUpLearnset,
-        .teachableLearnset = sAzumarillTeachableLearnset,
+        FOOTPRINT(Jellymon)
+        .levelUpLearnset = sJellymonLevelUpLearnset,
+        .teachableLearnset = sJellymonTeachableLearnset,
     },
 #endif //P_FAMILY_MARILL
 

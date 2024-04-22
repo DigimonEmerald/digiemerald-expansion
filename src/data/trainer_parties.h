@@ -688,12 +688,12 @@ static const struct TrainerMon sParty_Lola5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 35,
-    .species = SPECIES_AZUMARILL,
+    .species = SPECIES_JELLYMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 35,
-    .species = SPECIES_AZUMARILL,
+    .species = SPECIES_JELLYMON,
     }
 };
 
@@ -1534,7 +1534,7 @@ static const struct TrainerMon sParty_Bridget[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 40,
-    .species = SPECIES_AZUMARILL,
+    .species = SPECIES_JELLYMON,
     }
 };
 
@@ -1655,7 +1655,7 @@ static const struct TrainerMon sParty_Mollie[] = {
 static const struct TrainerMon sParty_Garret[] = {
     {
     .lvl = 45,
-    .species = SPECIES_AZUMARILL,
+    .species = SPECIES_JELLYMON,
     .heldItem = ITEM_NUGGET
     }
 };
@@ -3829,7 +3829,7 @@ static const struct TrainerMon sParty_Bethany[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 39,
-    .species = SPECIES_AZUMARILL,
+    .species = SPECIES_JELLYMON,
     .heldItem = ITEM_ORAN_BERRY
     }
 };
@@ -5646,7 +5646,7 @@ static const struct TrainerMon sParty_Kara[] = {
 static const struct TrainerMon sParty_Dana[] = {
     {
     .lvl = 34,
-    .species = SPECIES_AZUMARILL,
+    .species = SPECIES_JELLYMON,
     }
 };
 
@@ -7007,7 +7007,7 @@ static const struct TrainerMon sParty_Lydia5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 31,
-    .species = SPECIES_AZUMARILL,
+    .species = SPECIES_JELLYMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -8596,7 +8596,7 @@ static const struct TrainerMon sParty_Alexa[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 34,
-    .species = SPECIES_AZUMARILL,
+    .species = SPECIES_JELLYMON,
     }
 };
 
@@ -8792,7 +8792,7 @@ static const struct TrainerMon sParty_JohnAndJay5[] = {
 static const struct TrainerMon sParty_ReliAndIan[] = {
     {
     .lvl = 35,
-    .species = SPECIES_AZUMARILL,
+    .species = SPECIES_JELLYMON,
     },
     {
     .lvl = 33,
