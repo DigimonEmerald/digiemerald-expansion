@@ -5129,7 +5129,7 @@ static const struct LevelUpMove sGomamonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sAriadosLevelUpLearnset[] = {
+static const struct LevelUpMove sGomamon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE( 1, MOVE_SWORDS_DANCE),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),

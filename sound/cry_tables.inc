@@ -491,7 +491,7 @@ gCryTable::
 .endif @ P_FAMILY_GIZUMON
 .if P_FAMILY_GOMAMON == TRUE
 	cry Cry_Gomamon
-	cry Cry_Ariados
+	cry Cry_Gomamon_x
 .endif @ P_FAMILY_GOMAMON
 .if P_FAMILY_CHINCHOU == TRUE
 	cry Cry_Chinchou
@@ -2917,7 +2917,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_GIZUMON
 .if P_FAMILY_GOMAMON == TRUE
 	cry_reverse Cry_Gomamon
-	cry_reverse Cry_Ariados
+	cry_reverse Cry_Gomamon_x
 .endif @ P_FAMILY_GOMAMON
 .if P_FAMILY_CHINCHOU == TRUE
 	cry_reverse Cry_Chinchou

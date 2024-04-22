@@ -9076,7 +9076,7 @@ static const u16 sGomamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sAriadosTeachableLearnset[] = {
+static const u16 sGomamon_xTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,

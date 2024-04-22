@@ -960,10 +960,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Gomamon)
         .levelUpLearnset = sGomamonLevelUpLearnset,
         .teachableLearnset = sGomamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_ARIADOS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_GOMAMON_X}),
     },
 
-    [SPECIES_ARIADOS] =
+    [SPECIES_GOMAMON_X] =
     {
         .baseHP        = 70,
         .baseAttack    = 90,
@@ -988,9 +988,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SWARM, ABILITY_INSOMNIA, ABILITY_SNIPER },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Ariados"),
-        .cryId = CRY_ARIADOS,
-        .natDexNum = NATIONAL_DEX_ARIADOS,
+        .speciesName = _("Gomamon_x"),
+        .cryId = CRY_GOMAMON_X,
+        .natDexNum = NATIONAL_DEX_GOMAMON_X,
         .categoryName = _("Long Leg"),
         .height = 11,
         .weight = 335,
@@ -1003,22 +1003,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Ariados,
+        .frontPic = gMonFrontPic_Gomamon_x,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Ariados,
+        .frontAnimFrames = sAnims_Gomamon_x,
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Ariados,
+        .backPic = gMonBackPic_Gomamon_x,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Ariados,
-        .shinyPalette = gMonShinyPalette_Ariados,
-        .iconSprite = gMonIcon_Ariados,
+        .palette = gMonPalette_Gomamon_x,
+        .shinyPalette = gMonShinyPalette_Gomamon_x,
+        .iconSprite = gMonIcon_Gomamon_x,
         .iconPalIndex = 0,
-        FOOTPRINT(Ariados)
-        .levelUpLearnset = sAriadosLevelUpLearnset,
-        .teachableLearnset = sAriadosTeachableLearnset,
+        FOOTPRINT(Gomamon_x)
+        .levelUpLearnset = sGomamon_xLevelUpLearnset,
+        .teachableLearnset = sGomamon_xTeachableLearnset,
     },
 #endif //P_FAMILY_GOMAMON
 

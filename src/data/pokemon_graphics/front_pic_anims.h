@@ -2498,7 +2498,7 @@ static const union AnimCmd sAnim_Gomamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Ariados_1[] =
+static const union AnimCmd sAnim_Gomamon_x_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -10774,7 +10774,7 @@ SINGLE_ANIMATION(Goblimon);
 #endif //P_FAMILY_GIZUMON
 #if P_FAMILY_GOMAMON
 SINGLE_ANIMATION(Gomamon);
-SINGLE_ANIMATION(Ariados);
+SINGLE_ANIMATION(Gomamon_x);
 #endif //P_FAMILY_GOMAMON
 #if P_FAMILY_CHINCHOU
 SINGLE_ANIMATION(Chinchou);
