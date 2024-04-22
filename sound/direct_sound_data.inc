@@ -1980,11 +1980,11 @@ Cry_Yukiagumon::
 	.incbin "sound/direct_sound_samples/cries/yukiagumon.bin"
 .endif @ P_FAMILY_YUKIAGUMON
 
-.if P_FAMILY_ENTEI == TRUE
+.if P_FAMILY_YUKIAGUMON_06 == TRUE
 	.align 2
-Cry_Entei::
-	.incbin "sound/direct_sound_samples/cries/entei.bin"
-.endif @ P_FAMILY_ENTEI
+Cry_Yukiagumon_06::
+	.incbin "sound/direct_sound_samples/cries/yukiagumon_06.bin"
+.endif @ P_FAMILY_YUKIAGUMON_06
 
 .if P_FAMILY_SUICUNE == TRUE
 	.align 2

@@ -5909,8 +5909,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_YUKIAGUMON
 
-#if P_FAMILY_ENTEI
-    [SPECIES_ENTEI] =
+#if P_FAMILY_YUKIAGUMON_06
+    [SPECIES_YUKIAGUMON_06] =
     {
         .baseHP        = 115,
         .baseAttack    = 115,
@@ -5940,14 +5940,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_FLASH_FIRE },
     #endif
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Entei"),
-        .cryId = CRY_ENTEI,
-        .natDexNum = NATIONAL_DEX_ENTEI,
+        .speciesName = _("Yukiagumon_06"),
+        .cryId = CRY_YUKIAGUMON_06,
+        .natDexNum = NATIONAL_DEX_YUKIAGUMON_06,
         .categoryName = _("Volcano"),
         .height = 21,
         .weight = 1980,
         .description = COMPOUND_STRING(
-            "Entei embodies the passion of magma.\n"
+            "Yukiagumon_06 embodies the passion of magma.\n"
             "It is thought to have been born in the\n"
             "eruption of a volcano. It blasts fire that\n"
             "consumes all that it touches."),
@@ -5955,25 +5955,25 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 0,
         .trainerScale = 345,
         .trainerOffset = 7,
-        .frontPic = gMonFrontPic_Entei,
+        .frontPic = gMonFrontPic_Yukiagumon_06,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Entei,
+        .frontAnimFrames = sAnims_Yukiagumon_06,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Entei,
+        .backPic = gMonBackPic_Yukiagumon_06,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_Entei,
-        .shinyPalette = gMonShinyPalette_Entei,
-        .iconSprite = gMonIcon_Entei,
+        .palette = gMonPalette_Yukiagumon_06,
+        .shinyPalette = gMonShinyPalette_Yukiagumon_06,
+        .iconSprite = gMonIcon_Yukiagumon_06,
         .iconPalIndex = 2,
-        FOOTPRINT(Entei)
+        FOOTPRINT(Yukiagumon_06)
         .isLegendary = TRUE,
-        .levelUpLearnset = sEnteiLevelUpLearnset,
-        .teachableLearnset = sEnteiTeachableLearnset,
+        .levelUpLearnset = sYukiagumon_06LevelUpLearnset,
+        .teachableLearnset = sYukiagumon_06TeachableLearnset,
     },
-#endif //P_FAMILY_ENTEI
+#endif //P_FAMILY_YUKIAGUMON_06
 
 #if P_FAMILY_SUICUNE
     [SPECIES_SUICUNE] =

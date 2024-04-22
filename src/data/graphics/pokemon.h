@@ -3812,16 +3812,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_YUKIAGUMON
 
-#if P_FAMILY_ENTEI
-    const u32 gMonFrontPic_Entei[] = INCBIN_U32("graphics/pokemon/entei/anim_front.4bpp.lz");
-    const u32 gMonPalette_Entei[] = INCBIN_U32("graphics/pokemon/entei/normal.gbapal.lz");
-    const u32 gMonBackPic_Entei[] = INCBIN_U32("graphics/pokemon/entei/back.4bpp.lz");
-    const u32 gMonShinyPalette_Entei[] = INCBIN_U32("graphics/pokemon/entei/shiny.gbapal.lz");
-    const u8 gMonIcon_Entei[] = INCBIN_U8("graphics/pokemon/entei/icon.4bpp");
+#if P_FAMILY_YUKIAGUMON_06
+    const u32 gMonFrontPic_Yukiagumon_06[] = INCBIN_U32("graphics/pokemon/yukiagumon_06/anim_front.4bpp.lz");
+    const u32 gMonPalette_Yukiagumon_06[] = INCBIN_U32("graphics/pokemon/yukiagumon_06/normal.gbapal.lz");
+    const u32 gMonBackPic_Yukiagumon_06[] = INCBIN_U32("graphics/pokemon/yukiagumon_06/back.4bpp.lz");
+    const u32 gMonShinyPalette_Yukiagumon_06[] = INCBIN_U32("graphics/pokemon/yukiagumon_06/shiny.gbapal.lz");
+    const u8 gMonIcon_Yukiagumon_06[] = INCBIN_U8("graphics/pokemon/yukiagumon_06/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Entei[] = INCBIN_U8("graphics/pokemon/entei/footprint.1bpp");
+    const u8 gMonFootprint_Yukiagumon_06[] = INCBIN_U8("graphics/pokemon/yukiagumon_06/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_ENTEI
+#endif //P_FAMILY_YUKIAGUMON_06
 
 #if P_FAMILY_SUICUNE
     const u32 gMonFrontPic_Suicune[] = INCBIN_U32("graphics/pokemon/suicune/anim_front.4bpp.lz");

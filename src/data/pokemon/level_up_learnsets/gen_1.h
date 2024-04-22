@@ -4763,8 +4763,8 @@ static const struct LevelUpMove sYukiagumonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_YUKIAGUMON
 
-#if P_FAMILY_ENTEI
-static const struct LevelUpMove sEnteiLevelUpLearnset[] = {
+#if P_FAMILY_YUKIAGUMON_06
+static const struct LevelUpMove sYukiagumon_06LevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE(11, MOVE_EMBER),
@@ -4776,7 +4776,7 @@ static const struct LevelUpMove sEnteiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(71, MOVE_FIRE_BLAST),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_ENTEI
+#endif //P_FAMILY_YUKIAGUMON_06
 
 #if P_FAMILY_SUICUNE
 static const struct LevelUpMove sSuicuneLevelUpLearnset[] = {

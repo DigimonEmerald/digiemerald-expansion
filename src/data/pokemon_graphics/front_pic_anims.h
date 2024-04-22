@@ -3322,14 +3322,14 @@ static const union AnimCmd sAnim_Yukiagumon_1[] =
 };
 #endif //P_FAMILY_YUKIAGUMON
 
-#if P_FAMILY_ENTEI
-static const union AnimCmd sAnim_Entei_1[] =
+#if P_FAMILY_YUKIAGUMON_06
+static const union AnimCmd sAnim_Yukiagumon_06_1[] =
 {
     ANIMCMD_FRAME(1, 20),
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_ENTEI
+#endif //P_FAMILY_YUKIAGUMON_06
 
 #if P_FAMILY_SUICUNE
 static const union AnimCmd sAnim_Suicune_1[] =
@@ -10982,9 +10982,9 @@ SINGLE_ANIMATION(Shamanmon);
 #if P_FAMILY_YUKIAGUMON
 SINGLE_ANIMATION(Yukiagumon);
 #endif //P_FAMILY_YUKIAGUMON
-#if P_FAMILY_ENTEI
-SINGLE_ANIMATION(Entei);
-#endif //P_FAMILY_ENTEI
+#if P_FAMILY_YUKIAGUMON_06
+SINGLE_ANIMATION(Yukiagumon_06);
+#endif //P_FAMILY_YUKIAGUMON_06
 #if P_FAMILY_SUICUNE
 SINGLE_ANIMATION(Suicune);
 #endif //P_FAMILY_SUICUNE

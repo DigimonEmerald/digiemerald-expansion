@@ -12031,8 +12031,8 @@ static const u16 sYukiagumonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_YUKIAGUMON
 
-#if P_FAMILY_ENTEI
-static const u16 sEnteiTeachableLearnset[] = {
+#if P_FAMILY_YUKIAGUMON_06
+static const u16 sYukiagumon_06TeachableLearnset[] = {
     MOVE_CALM_MIND,
     MOVE_CUT,
     MOVE_DIG,
@@ -12067,7 +12067,7 @@ static const u16 sEnteiTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ENTEI
+#endif //P_FAMILY_YUKIAGUMON_06
 
 #if P_FAMILY_SUICUNE
 static const u16 sSuicuneTeachableLearnset[] = {
