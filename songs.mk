@@ -1185,7 +1185,7 @@ $(MID_SUBDIR)/se_repel.s: %.s: %.mid
 $(MID_SUBDIR)/se_u.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G128 -P4
 
-$(MID_SUBDIR)/se_junkmon_shake.s: %.s: %.mid
+$(MID_SUBDIR)/se_sudowoodo_shake.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G129 -V077 -P5
 
 $(MID_SUBDIR)/se_m_double_slap.s: %.s: %.mid

@@ -107,7 +107,7 @@ BattleFrontier_OutsideEast_EventScript_Junkmon::
 	lock
 	faceplayer
 	waitse
-	playse SE_JUNKMON_SHAKE
+	playse SE_SUDOWOODO_SHAKE
 	applymovement LOCALID_JUNKMON, BattleFrontier_OutsideEast_Movement_JunkmonShake
 	waitmovement 0
 	release
@@ -119,7 +119,7 @@ BattleFrontier_OutsideEast_EventScript_WaterJunkmon::
 	special DoWateringBerryTreeAnim
 	waitstate
 	waitse
-	playse SE_JUNKMON_SHAKE
+	playse SE_SUDOWOODO_SHAKE
 	applymovement LOCALID_JUNKMON, BattleFrontier_OutsideEast_Movement_JunkmonShake
 	waitmovement 0
 	msgbox gText_Junkmon_Attacked, MSGBOX_DEFAULT
