@@ -2050,8 +2050,8 @@ const u16 gEggMoves[] = {
         MOVE_ME_FIRST),
 #endif //P_FAMILY_ROKUSHO
 
-#if P_FAMILY_MILTANK
-    egg_moves(MILTANK,
+#if P_FAMILY_SHAMANMON
+    egg_moves(SHAMANMON,
         MOVE_PRESENT,
         MOVE_REVERSAL,
         MOVE_SEISMIC_TOSS,
@@ -2066,7 +2066,7 @@ const u16 gEggMoves[] = {
         MOVE_NATURAL_GIFT,
         MOVE_HEART_STAMP,
         MOVE_BELCH),
-#endif //P_FAMILY_MILTANK
+#endif //P_FAMILY_SHAMANMON
 
 #if P_FAMILY_LARVITAR
     egg_moves(LARVITAR,

@@ -5787,8 +5787,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_RYUDAMON
 
-#if P_FAMILY_MILTANK
-    [SPECIES_MILTANK] =
+#if P_FAMILY_SHAMANMON
+    [SPECIES_SHAMANMON] =
     {
         .baseHP        = 95,
         .baseAttack    = 80,
@@ -5809,9 +5809,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_THICK_FAT, ABILITY_SCRAPPY, ABILITY_SAP_SIPPER },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Miltank"),
-        .cryId = CRY_MILTANK,
-        .natDexNum = NATIONAL_DEX_MILTANK,
+        .speciesName = _("Shamanmon"),
+        .cryId = CRY_SHAMANMON,
+        .natDexNum = NATIONAL_DEX_SHAMANMON,
         .categoryName = _("Milk Cow"),
         .height = 12,
         .weight = 755,
@@ -5824,24 +5824,24 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 5,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Miltank,
+        .frontPic = gMonFrontPic_Shamanmon,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Miltank,
+        .frontAnimFrames = sAnims_Shamanmon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Miltank,
+        .backPic = gMonBackPic_Shamanmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Miltank,
-        .shinyPalette = gMonShinyPalette_Miltank,
-        .iconSprite = gMonIcon_Miltank,
+        .palette = gMonPalette_Shamanmon,
+        .shinyPalette = gMonShinyPalette_Shamanmon,
+        .iconSprite = gMonIcon_Shamanmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Miltank)
-        .levelUpLearnset = sMiltankLevelUpLearnset,
-        .teachableLearnset = sMiltankTeachableLearnset,
+        FOOTPRINT(Shamanmon)
+        .levelUpLearnset = sShamanmonLevelUpLearnset,
+        .teachableLearnset = sShamanmonTeachableLearnset,
     },
-#endif //P_FAMILY_MILTANK
+#endif //P_FAMILY_SHAMANMON
 
 #if P_FAMILY_RAIKOU
     [SPECIES_RAIKOU] =

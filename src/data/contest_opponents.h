@@ -2208,7 +2208,7 @@ const struct ContestPokemon gContestOpponents[] =
         .otId = CONTEST_AI_TRAINER_ID,
     },
     [CONTEST_OPPONENT_DEVON] = {
-        .species = SPECIES_MILTANK,
+        .species = SPECIES_SHAMANMON,
         .nickname = _("MILKAN"),
         .trainerName = _("DEVON"),
         .trainerGfxId = OBJ_EVENT_GFX_POKEFAN_M,

@@ -213,12 +213,12 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon can be switched out by Eject But
 SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon cannot have their ability swapped to another Pokemon's")
 {
     GIVEN {
-        PLAYER(SPECIES_MILTANK) { Ability(ABILITY_SCRAPPY); }
+        PLAYER(SPECIES_SHAMANMON) { Ability(ABILITY_SCRAPPY); }
         OPPONENT(SPECIES_RUNERIGUS) { Ability(ABILITY_WANDERING_SPIRIT); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE, dynamax: TRUE); MOVE(opponent, MOVE_SKILL_SWAP); }
     } SCENE {
-        MESSAGE("Miltank used Max Strike!");
+        MESSAGE("Shamanmon used Max Strike!");
         MESSAGE("Foe Runerigus used Skill Swap!");
         MESSAGE("But it failed!");
     } THEN {

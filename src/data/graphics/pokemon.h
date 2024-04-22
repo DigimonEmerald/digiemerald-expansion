@@ -3790,16 +3790,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_RYUDAMON
 
-#if P_FAMILY_MILTANK
-    const u32 gMonFrontPic_Miltank[] = INCBIN_U32("graphics/pokemon/miltank/anim_front.4bpp.lz");
-    const u32 gMonPalette_Miltank[] = INCBIN_U32("graphics/pokemon/miltank/normal.gbapal.lz");
-    const u32 gMonBackPic_Miltank[] = INCBIN_U32("graphics/pokemon/miltank/back.4bpp.lz");
-    const u32 gMonShinyPalette_Miltank[] = INCBIN_U32("graphics/pokemon/miltank/shiny.gbapal.lz");
-    const u8 gMonIcon_Miltank[] = INCBIN_U8("graphics/pokemon/miltank/icon.4bpp");
+#if P_FAMILY_SHAMANMON
+    const u32 gMonFrontPic_Shamanmon[] = INCBIN_U32("graphics/pokemon/shamanmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Shamanmon[] = INCBIN_U32("graphics/pokemon/shamanmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Shamanmon[] = INCBIN_U32("graphics/pokemon/shamanmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Shamanmon[] = INCBIN_U32("graphics/pokemon/shamanmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Shamanmon[] = INCBIN_U8("graphics/pokemon/shamanmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Miltank[] = INCBIN_U8("graphics/pokemon/miltank/footprint.1bpp");
+    const u8 gMonFootprint_Shamanmon[] = INCBIN_U8("graphics/pokemon/shamanmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_MILTANK
+#endif //P_FAMILY_SHAMANMON
 
 #if P_FAMILY_RAIKOU
     const u32 gMonFrontPic_Raikou[] = INCBIN_U32("graphics/pokemon/raikou/anim_front.4bpp.lz");

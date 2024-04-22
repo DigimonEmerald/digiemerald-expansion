@@ -3303,14 +3303,14 @@ static const union AnimCmd sAnim_Ryudamon_1[] =
 };
 #endif //P_FAMILY_RYUDAMON
 
-#if P_FAMILY_MILTANK
-static const union AnimCmd sAnim_Miltank_1[] =
+#if P_FAMILY_SHAMANMON
+static const union AnimCmd sAnim_Shamanmon_1[] =
 {
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_MILTANK
+#endif //P_FAMILY_SHAMANMON
 
 #if P_FAMILY_RAIKOU
 static const union AnimCmd sAnim_Raikou_1[] =
@@ -10976,9 +10976,9 @@ SINGLE_ANIMATION(Wyrdeer);
 #if P_FAMILY_RYUDAMON
 SINGLE_ANIMATION(Ryudamon);
 #endif //P_FAMILY_RYUDAMON
-#if P_FAMILY_MILTANK
-SINGLE_ANIMATION(Miltank);
-#endif //P_FAMILY_MILTANK
+#if P_FAMILY_SHAMANMON
+SINGLE_ANIMATION(Shamanmon);
+#endif //P_FAMILY_SHAMANMON
 #if P_FAMILY_RAIKOU
 SINGLE_ANIMATION(Raikou);
 #endif //P_FAMILY_RAIKOU

@@ -1968,11 +1968,11 @@ Cry_Ryudamon::
 	.incbin "sound/direct_sound_samples/cries/ryudamon.bin"
 .endif @ P_FAMILY_RYUDAMON
 
-.if P_FAMILY_MILTANK == TRUE
+.if P_FAMILY_SHAMANMON == TRUE
 	.align 2
-Cry_Miltank::
-	.incbin "sound/direct_sound_samples/cries/miltank.bin"
-.endif @ P_FAMILY_MILTANK
+Cry_Shamanmon::
+	.incbin "sound/direct_sound_samples/cries/shamanmon.bin"
+.endif @ P_FAMILY_SHAMANMON
 
 .if P_FAMILY_RAIKOU == TRUE
 	.align 2
