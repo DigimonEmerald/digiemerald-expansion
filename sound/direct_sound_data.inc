@@ -1050,8 +1050,8 @@ Cry_Angoramon::
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Hitmontop::
-	.incbin "sound/direct_sound_samples/cries/hitmontop.bin"
+Cry_Salamon_x::
+	.incbin "sound/direct_sound_samples/cries/salamon_x.bin"
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_HITMONS
 

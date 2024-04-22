@@ -1538,7 +1538,7 @@ static const union AnimCmd sAnim_Angoramon_1[] =
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Hitmontop_1[] =
+static const union AnimCmd sAnim_Salamon_x_1[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 26),
@@ -10524,7 +10524,7 @@ SINGLE_ANIMATION(Salamon);
 SINGLE_ANIMATION(Agumon_x);
 SINGLE_ANIMATION(Angoramon);
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Hitmontop);
+SINGLE_ANIMATION(Salamon_x);
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_HITMONS
 #if P_FAMILY_ARCADIAMON_ROOKIE

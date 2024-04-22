@@ -2987,7 +2987,7 @@ static const struct LevelUpMove sAngoramonLevelUpLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const struct LevelUpMove sHitmontopLevelUpLearnset[] = {
+static const struct LevelUpMove sSalamon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ENDEAVOR),
     LEVEL_UP_MOVE( 1, MOVE_CLOSE_COMBAT),
     LEVEL_UP_MOVE( 1, MOVE_REVENGE),

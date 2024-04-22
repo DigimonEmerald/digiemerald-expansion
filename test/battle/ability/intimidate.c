@@ -104,7 +104,7 @@ SINGLE_BATTLE_TEST("Intimidate and Eject Button force the opponent to Attack")
         ASSUME(gItemsInfo[ITEM_EJECT_BUTTON].holdEffect == HOLD_EFFECT_EJECT_BUTTON);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX) { Item(ITEM_EJECT_BUTTON); }
-        OPPONENT(SPECIES_HITMONTOP) { Moves(MOVE_TACKLE); }
+        OPPONENT(SPECIES_SALAMON_X) { Moves(MOVE_TACKLE); }
     } WHEN {
         TURN {
                MOVE(player, MOVE_QUICK_ATTACK);
@@ -115,12 +115,12 @@ SINGLE_BATTLE_TEST("Intimidate and Eject Button force the opponent to Attack")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_QUICK_ATTACK, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
         MESSAGE("Foe Lopmonx is switched out with the Eject Button!");
-        MESSAGE("2 sent out Hitmontop!");
+        MESSAGE("2 sent out Salamon_x!");
         ABILITY_POPUP(opponent, ABILITY_INTIMIDATE);
-        MESSAGE("Foe Hitmontop's Intimidate cuts Lopmonx's attack!");
+        MESSAGE("Foe Salamon_x's Intimidate cuts Lopmonx's attack!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-            MESSAGE("Foe Hitmontop used Tackle!");
+            MESSAGE("Foe Salamon_x used Tackle!");
         }
     }
 }
@@ -131,7 +131,7 @@ DOUBLE_BATTLE_TEST("Intimidate activates on an empty slot")
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_CROAGUNK);
         PLAYER(SPECIES_WYNAUT);
-        PLAYER(SPECIES_HITMONTOP) { Ability(ABILITY_INTIMIDATE); }
+        PLAYER(SPECIES_SALAMON_X) { Ability(ABILITY_INTIMIDATE); }
         OPPONENT(SPECIES_RALTS);
         OPPONENT(SPECIES_AZURILL);
     } WHEN {
@@ -152,13 +152,13 @@ DOUBLE_BATTLE_TEST("Intimidate activates on an empty slot")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GUNK_SHOT, playerRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPLASH, opponentRight);
         MESSAGE("Wynaut, that's enough! Come back!");
-        MESSAGE("Go! Hitmontop!");
+        MESSAGE("Go! Salamon_x!");
         ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
         NONE_OF {
-            MESSAGE("Hitmontop's Intimidate cuts Foe Ralts's attack!");
+            MESSAGE("Salamon_x's Intimidate cuts Foe Ralts's attack!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("Hitmontop's Intimidate cuts Foe Azurill's attack!");
+        MESSAGE("Salamon_x's Intimidate cuts Foe Azurill's attack!");
     }
 }
 

@@ -9853,7 +9853,7 @@ static const struct TrainerMon sParty_Brawly2[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 35,
-    .species = SPECIES_HITMONTOP,
+    .species = SPECIES_SALAMON_X,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_PURSUIT, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_KICK}
     },
@@ -9884,7 +9884,7 @@ static const struct TrainerMon sParty_Brawly3[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 40,
-    .species = SPECIES_HITMONTOP,
+    .species = SPECIES_SALAMON_X,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_PURSUIT, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_KICK}
     },
@@ -9922,7 +9922,7 @@ static const struct TrainerMon sParty_Brawly4[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 45,
-    .species = SPECIES_HITMONTOP,
+    .species = SPECIES_SALAMON_X,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_PURSUIT, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_KICK}
     },
@@ -9967,7 +9967,7 @@ static const struct TrainerMon sParty_Brawly5[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 50,
-    .species = SPECIES_HITMONTOP,
+    .species = SPECIES_SALAMON_X,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_PURSUIT, MOVE_COUNTER, MOVE_PROTECT, MOVE_TRIPLE_KICK}
     },

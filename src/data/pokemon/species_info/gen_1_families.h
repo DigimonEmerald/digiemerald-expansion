@@ -10542,7 +10542,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sSalamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL_ATK_LT_DEF, 20, SPECIES_ANGORAMON},
                                 {EVO_LEVEL_ATK_GT_DEF, 20, SPECIES_AGUMON_X},
-                                {EVO_LEVEL_ATK_EQ_DEF, 20, SPECIES_HITMONTOP}),
+                                {EVO_LEVEL_ATK_EQ_DEF, 20, SPECIES_SALAMON_X}),
     },
 #endif //P_GEN_2_CROSS_EVOS
 
@@ -10651,7 +10651,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_HITMONTOP] =
+    [SPECIES_SALAMON_X] =
     {
         .baseHP        = 50,
         .baseAttack    = 95,
@@ -10670,37 +10670,37 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_TECHNICIAN, ABILITY_STEADFAST },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Hitmontop"),
-        .cryId = CRY_HITMONTOP,
-        .natDexNum = NATIONAL_DEX_HITMONTOP,
+        .speciesName = _("Salamon_x"),
+        .cryId = CRY_SALAMON_X,
+        .natDexNum = NATIONAL_DEX_SALAMON_X,
         .categoryName = _("Handstand"),
         .height = 14,
         .weight = 480,
         .description = COMPOUND_STRING(
             "Its technique of kicking while spinning is\n"
             "a remarkable mix of both offense and\n"
-            "defense. Hitmontop travel faster\n"
+            "defense. Salamon_x travel faster\n"
             "spinning than they do walking."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Hitmontop,
+        .frontPic = gMonFrontPic_Salamon_x,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Hitmontop,
+        .frontAnimFrames = sAnims_Salamon_x,
         .frontAnimId = ANIM_SWING_CONCAVE,
-        .backPic = gMonBackPic_Hitmontop,
+        .backPic = gMonBackPic_Salamon_x,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_CIRCLE_COUNTERCLOCKWISE,
-        .palette = gMonPalette_Hitmontop,
-        .shinyPalette = gMonShinyPalette_Hitmontop,
-        .iconSprite = gMonIcon_Hitmontop,
+        .palette = gMonPalette_Salamon_x,
+        .shinyPalette = gMonShinyPalette_Salamon_x,
+        .iconSprite = gMonIcon_Salamon_x,
         .iconPalIndex = 2,
-        FOOTPRINT(Hitmontop)
-        .levelUpLearnset = sHitmontopLevelUpLearnset,
-        .teachableLearnset = sHitmontopTeachableLearnset,
+        FOOTPRINT(Salamon_x)
+        .levelUpLearnset = sSalamon_xLevelUpLearnset,
+        .teachableLearnset = sSalamon_xTeachableLearnset,
     },
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_HITMONS

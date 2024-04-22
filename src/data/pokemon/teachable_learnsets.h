@@ -5538,7 +5538,7 @@ static const u16 sAngoramonTeachableLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const u16 sHitmontopTeachableLearnset[] = {
+static const u16 sSalamon_xTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,

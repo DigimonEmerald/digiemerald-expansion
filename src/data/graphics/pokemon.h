@@ -1711,13 +1711,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Hitmontop[] = INCBIN_U32("graphics/pokemon/hitmontop/anim_front.4bpp.lz");
-    const u32 gMonPalette_Hitmontop[] = INCBIN_U32("graphics/pokemon/hitmontop/normal.gbapal.lz");
-    const u32 gMonBackPic_Hitmontop[] = INCBIN_U32("graphics/pokemon/hitmontop/back.4bpp.lz");
-    const u32 gMonShinyPalette_Hitmontop[] = INCBIN_U32("graphics/pokemon/hitmontop/shiny.gbapal.lz");
-    const u8 gMonIcon_Hitmontop[] = INCBIN_U8("graphics/pokemon/hitmontop/icon.4bpp");
+    const u32 gMonFrontPic_Salamon_x[] = INCBIN_U32("graphics/pokemon/salamon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Salamon_x[] = INCBIN_U32("graphics/pokemon/salamon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Salamon_x[] = INCBIN_U32("graphics/pokemon/salamon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Salamon_x[] = INCBIN_U32("graphics/pokemon/salamon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Salamon_x[] = INCBIN_U8("graphics/pokemon/salamon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Hitmontop[] = INCBIN_U8("graphics/pokemon/hitmontop/footprint.1bpp");
+    const u8 gMonFootprint_Salamon_x[] = INCBIN_U8("graphics/pokemon/salamon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_HITMONS
