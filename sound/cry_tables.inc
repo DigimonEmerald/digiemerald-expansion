@@ -516,13 +516,13 @@ gCryTable::
 	cry Cry_ImpmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HYOKOMON
-.if P_FAMILY_MARILL == TRUE
+.if P_FAMILY_JAZAMON == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
 	cry Cry_Azurill
 .endif @ P_GEN_3_CROSS_EVOS
-	cry Cry_Marill
+	cry Cry_Jazamon
 	cry Cry_Jellymon
-.endif @ P_FAMILY_MARILL
+.endif @ P_FAMILY_JAZAMON
 .if P_FAMILY_SUDOWOODO == TRUE
 	cry Cry_Bonsly
 	cry Cry_Sudowoodo
@@ -2942,13 +2942,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_ImpmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HYOKOMON
-.if P_FAMILY_MARILL == TRUE
+.if P_FAMILY_JAZAMON == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
 	cry_reverse Cry_Azurill
 .endif @ P_GEN_3_CROSS_EVOS
-	cry_reverse Cry_Marill
+	cry_reverse Cry_Jazamon
 	cry_reverse Cry_Jellymon
-.endif @ P_FAMILY_MARILL
+.endif @ P_FAMILY_JAZAMON
 .if P_FAMILY_SUDOWOODO == TRUE
 	cry_reverse Cry_Bonsly
 	cry_reverse Cry_Sudowoodo

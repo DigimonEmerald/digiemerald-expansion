@@ -9498,7 +9498,7 @@ static const u16 sImpmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_HYOKOMON
 
-#if P_FAMILY_MARILL
+#if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
 static const u16 sAzurillTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -9531,7 +9531,7 @@ static const u16 sAzurillTeachableLearnset[] = {
 };
 #endif //P_GEN_3_CROSS_EVOS
 
-static const u16 sMarillTeachableLearnset[] = {
+static const u16 sJazamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
@@ -9615,7 +9615,7 @@ static const u16 sJellymonTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MARILL
+#endif //P_FAMILY_JAZAMON
 
 #if P_FAMILY_SUDOWOODO
 #if P_GEN_4_CROSS_EVOS

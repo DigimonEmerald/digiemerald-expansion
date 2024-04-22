@@ -1494,7 +1494,7 @@ const u16 gEggMoves[] = {
         MOVE_ELECTRIC_TERRAIN),
 #endif //P_FAMILY_HYOKOMON
 
-#if P_FAMILY_MARILL
+#if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
     egg_moves(AZURILL,
         MOVE_ENCORE,
@@ -1510,7 +1510,7 @@ const u16 gEggMoves[] = {
         MOVE_COPYCAT,
         MOVE_CAMOUFLAGE),
 #endif //P_GEN_3_CROSS_EVOS
-    egg_moves(MARILL,
+    egg_moves(JAZAMON,
         MOVE_PRESENT,
         MOVE_AMNESIA,
         MOVE_FUTURE_SIGHT,
@@ -1524,7 +1524,7 @@ const u16 gEggMoves[] = {
         MOVE_WATER_SPORT,
         MOVE_MUDDY_WATER,
         MOVE_CAMOUFLAGE),
-#endif //P_FAMILY_MARILL
+#endif //P_FAMILY_JAZAMON
 
 #if P_FAMILY_SUDOWOODO
 #if P_GEN_4_CROSS_EVOS

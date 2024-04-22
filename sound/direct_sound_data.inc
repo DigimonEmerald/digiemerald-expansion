@@ -1603,7 +1603,7 @@ Cry_ImpmonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HYOKOMON
 
-.if P_FAMILY_MARILL == TRUE
+.if P_FAMILY_JAZAMON == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
 	.align 2
 Cry_Azurill::
@@ -1611,13 +1611,13 @@ Cry_Azurill::
 .endif @ P_GEN_3_CROSS_EVOS
 
 	.align 2
-Cry_Marill::
-	.incbin "sound/direct_sound_samples/cries/marill.bin"
+Cry_Jazamon::
+	.incbin "sound/direct_sound_samples/cries/jazamon.bin"
 
 	.align 2
 Cry_Jellymon::
 	.incbin "sound/direct_sound_samples/cries/jellymon.bin"
-.endif @ P_FAMILY_MARILL
+.endif @ P_FAMILY_JAZAMON
 
 .if P_FAMILY_SUDOWOODO == TRUE
 	.align 2

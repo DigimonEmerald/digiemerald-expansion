@@ -2621,7 +2621,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(ImpmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HYOKOMON
 
-#if P_FAMILY_MARILL
+#if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
 static const union AnimCmd sAnim_Azurill_1[] =
 {
@@ -2636,7 +2636,7 @@ static const union AnimCmd sAnim_Azurill_1[] =
 };
 #endif //P_GEN_3_CROSS_EVOS
 
-static const union AnimCmd sAnim_Marill_1[] =
+static const union AnimCmd sAnim_Jazamon_1[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_FRAME(1, 30),
@@ -2653,7 +2653,7 @@ static const union AnimCmd sAnim_Jellymon_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_MARILL
+#endif //P_FAMILY_JAZAMON
 
 #if P_FAMILY_SUDOWOODO
 #if P_GEN_4_CROSS_EVOS
@@ -10799,13 +10799,13 @@ SINGLE_ANIMATION(Impmon);
 SINGLE_ANIMATION(ImpmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HYOKOMON
-#if P_FAMILY_MARILL
+#if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
 SINGLE_ANIMATION(Azurill);
 #endif //P_GEN_3_CROSS_EVOS
-SINGLE_ANIMATION(Marill);
+SINGLE_ANIMATION(Jazamon);
 SINGLE_ANIMATION(Jellymon);
-#endif //P_FAMILY_MARILL
+#endif //P_FAMILY_JAZAMON
 #if P_FAMILY_SUDOWOODO
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Bonsly);

@@ -1646,7 +1646,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HYOKOMON
 
-#if P_FAMILY_MARILL
+#if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
     [SPECIES_AZURILL] =
     {
@@ -1702,11 +1702,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Azurill)
         .levelUpLearnset = sAzurillLevelUpLearnset,
         .teachableLearnset = sAzurillTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_MARILL}),
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_JAZAMON}),
     },
 #endif //P_GEN_3_CROSS_EVOS
 
-    [SPECIES_MARILL] =
+    [SPECIES_JAZAMON] =
     {
         .baseHP        = 70,
         .baseAttack    = 20,
@@ -1729,9 +1729,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FAIRY),
         .abilities = { ABILITY_THICK_FAT, ABILITY_HUGE_POWER, ABILITY_SAP_SIPPER },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Marill"),
-        .cryId = CRY_MARILL,
-        .natDexNum = NATIONAL_DEX_MARILL,
+        .speciesName = _("Jazamon"),
+        .cryId = CRY_JAZAMON,
+        .natDexNum = NATIONAL_DEX_JAZAMON,
         .categoryName = _("Aqua Mouse"),
         .height = 4,
         .weight = 85,
@@ -1744,22 +1744,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Marill,
+        .frontPic = gMonFrontPic_Jazamon,
         .frontPicSize = MON_COORDS_SIZE(56, 40),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Marill,
+        .frontAnimFrames = sAnims_Jazamon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Marill,
+        .backPic = gMonBackPic_Jazamon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Marill,
-        .shinyPalette = gMonShinyPalette_Marill,
-        .iconSprite = gMonIcon_Marill,
+        .palette = gMonPalette_Jazamon,
+        .shinyPalette = gMonShinyPalette_Jazamon,
+        .iconSprite = gMonIcon_Jazamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Marill)
-        .levelUpLearnset = sMarillLevelUpLearnset,
-        .teachableLearnset = sMarillTeachableLearnset,
+        FOOTPRINT(Jazamon)
+        .levelUpLearnset = sJazamonLevelUpLearnset,
+        .teachableLearnset = sJazamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_JELLYMON}),
     },
 
@@ -1826,7 +1826,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sJellymonLevelUpLearnset,
         .teachableLearnset = sJellymonTeachableLearnset,
     },
-#endif //P_FAMILY_MARILL
+#endif //P_FAMILY_JAZAMON
 
 #if P_FAMILY_SUDOWOODO
 #if P_GEN_4_CROSS_EVOS

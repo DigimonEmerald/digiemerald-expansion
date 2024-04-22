@@ -4111,7 +4111,7 @@ static const struct LevelUpMove sImpmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_HYOKOMON
 
-#if P_FAMILY_MARILL
+#if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
 static const struct LevelUpMove sAzurillLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -4124,7 +4124,7 @@ static const struct LevelUpMove sAzurillLevelUpLearnset[] = {
 };
 #endif //P_GEN_3_CROSS_EVOS
 
-static const struct LevelUpMove sMarillLevelUpLearnset[] = {
+static const struct LevelUpMove sJazamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 3, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 6, MOVE_TAIL_WHIP),
@@ -4152,7 +4152,7 @@ static const struct LevelUpMove sJellymonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(57, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_MARILL
+#endif //P_FAMILY_JAZAMON
 
 #if P_FAMILY_SUDOWOODO
 #if P_GEN_4_CROSS_EVOS

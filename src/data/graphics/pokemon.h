@@ -2894,7 +2894,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HYOKOMON
 
-#if P_FAMILY_MARILL
+#if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
     const u32 gMonFrontPic_Azurill[] = INCBIN_U32("graphics/pokemon/azurill/anim_front.4bpp.lz");
     const u32 gMonPalette_Azurill[] = INCBIN_U32("graphics/pokemon/azurill/normal.gbapal.lz");
@@ -2906,13 +2906,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_GEN_3_CROSS_EVOS
 
-    const u32 gMonFrontPic_Marill[] = INCBIN_U32("graphics/pokemon/marill/anim_front.4bpp.lz");
-    const u32 gMonPalette_Marill[] = INCBIN_U32("graphics/pokemon/marill/normal.gbapal.lz");
-    const u32 gMonBackPic_Marill[] = INCBIN_U32("graphics/pokemon/marill/back.4bpp.lz");
-    const u32 gMonShinyPalette_Marill[] = INCBIN_U32("graphics/pokemon/marill/shiny.gbapal.lz");
-    const u8 gMonIcon_Marill[] = INCBIN_U8("graphics/pokemon/marill/icon.4bpp");
+    const u32 gMonFrontPic_Jazamon[] = INCBIN_U32("graphics/pokemon/jazamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Jazamon[] = INCBIN_U32("graphics/pokemon/jazamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Jazamon[] = INCBIN_U32("graphics/pokemon/jazamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Jazamon[] = INCBIN_U32("graphics/pokemon/jazamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Jazamon[] = INCBIN_U8("graphics/pokemon/jazamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Marill[] = INCBIN_U8("graphics/pokemon/marill/footprint.1bpp");
+    const u8 gMonFootprint_Jazamon[] = INCBIN_U8("graphics/pokemon/jazamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Jellymon[] = INCBIN_U32("graphics/pokemon/jellymon/anim_front.4bpp.lz");
@@ -2923,7 +2923,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Jellymon[] = INCBIN_U8("graphics/pokemon/jellymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_MARILL
+#endif //P_FAMILY_JAZAMON
 
 #if P_FAMILY_SUDOWOODO
 #if P_GEN_4_CROSS_EVOS
