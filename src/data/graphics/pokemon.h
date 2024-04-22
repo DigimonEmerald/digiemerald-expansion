@@ -3383,14 +3383,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_METABEE
 
-#if P_FAMILY_SNUBBULL
-    const u32 gMonFrontPic_Snubbull[] = INCBIN_U32("graphics/pokemon/snubbull/anim_front.4bpp.lz");
-    const u32 gMonPalette_Snubbull[] = INCBIN_U32("graphics/pokemon/snubbull/normal.gbapal.lz");
-    const u32 gMonBackPic_Snubbull[] = INCBIN_U32("graphics/pokemon/snubbull/back.4bpp.lz");
-    const u32 gMonShinyPalette_Snubbull[] = INCBIN_U32("graphics/pokemon/snubbull/shiny.gbapal.lz");
-    const u8 gMonIcon_Snubbull[] = INCBIN_U8("graphics/pokemon/snubbull/icon.4bpp");
+#if P_FAMILY_MODBETAMON
+    const u32 gMonFrontPic_Modbetamon[] = INCBIN_U32("graphics/pokemon/modbetamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Modbetamon[] = INCBIN_U32("graphics/pokemon/modbetamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Modbetamon[] = INCBIN_U32("graphics/pokemon/modbetamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Modbetamon[] = INCBIN_U32("graphics/pokemon/modbetamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Modbetamon[] = INCBIN_U8("graphics/pokemon/modbetamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Snubbull[] = INCBIN_U8("graphics/pokemon/snubbull/footprint.1bpp");
+    const u8 gMonFootprint_Modbetamon[] = INCBIN_U8("graphics/pokemon/modbetamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Granbull[] = INCBIN_U32("graphics/pokemon/granbull/anim_front.4bpp.lz");
@@ -3401,7 +3401,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Granbull[] = INCBIN_U8("graphics/pokemon/granbull/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_SNUBBULL
+#endif //P_FAMILY_MODBETAMON
 
 #if P_FAMILY_QWILFISH
     const u32 gMonFrontPic_Qwilfish[] = INCBIN_U32("graphics/pokemon/qwilfish/anim_front.4bpp.lz");

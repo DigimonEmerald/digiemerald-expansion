@@ -10621,8 +10621,8 @@ static const u16 sGliscorTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_METABEE
 
-#if P_FAMILY_SNUBBULL
-static const u16 sSnubbullTeachableLearnset[] = {
+#if P_FAMILY_MODBETAMON
+static const u16 sModbetamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -10729,7 +10729,7 @@ static const u16 sGranbullTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SNUBBULL
+#endif //P_FAMILY_MODBETAMON
 
 #if P_FAMILY_QWILFISH
 static const u16 sQwilfishTeachableLearnset[] = {

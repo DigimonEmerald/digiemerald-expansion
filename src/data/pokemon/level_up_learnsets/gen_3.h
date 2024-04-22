@@ -4640,8 +4640,8 @@ static const struct LevelUpMove sGliscorLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_METABEE
 
-#if P_FAMILY_SNUBBULL
-static const struct LevelUpMove sSnubbullLevelUpLearnset[] = {
+#if P_FAMILY_MODBETAMON
+static const struct LevelUpMove sModbetamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE( 4, MOVE_TAIL_WHIP),
@@ -4668,7 +4668,7 @@ static const struct LevelUpMove sGranbullLevelUpLearnset[] = {
     LEVEL_UP_MOVE(61, MOVE_CRUNCH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SNUBBULL
+#endif //P_FAMILY_MODBETAMON
 
 #if P_FAMILY_QWILFISH
 static const struct LevelUpMove sQwilfishLevelUpLearnset[] = {

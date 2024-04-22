@@ -1759,8 +1759,8 @@ const u16 gEggMoves[] = {
         MOVE_POISON_TAIL),
 #endif //P_FAMILY_METABEE
 
-#if P_FAMILY_SNUBBULL
-    egg_moves(SNUBBULL,
+#if P_FAMILY_MODBETAMON
+    egg_moves(MODBETAMON,
         MOVE_METRONOME,
         MOVE_FEINT_ATTACK,
         MOVE_PRESENT,
@@ -1776,7 +1776,7 @@ const u16 gEggMoves[] = {
         MOVE_DOUBLE_EDGE,
         MOVE_MIMIC,
         MOVE_FAKE_TEARS),
-#endif //P_FAMILY_SNUBBULL
+#endif //P_FAMILY_MODBETAMON
 
 #if P_FAMILY_QWILFISH
     egg_moves(QWILFISH,

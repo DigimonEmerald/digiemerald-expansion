@@ -1776,15 +1776,15 @@ Cry_Gliscor::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_METABEE
 
-.if P_FAMILY_SNUBBULL == TRUE
+.if P_FAMILY_MODBETAMON == TRUE
 	.align 2
-Cry_Snubbull::
-	.incbin "sound/direct_sound_samples/cries/snubbull.bin"
+Cry_Modbetamon::
+	.incbin "sound/direct_sound_samples/cries/modbetamon.bin"
 
 	.align 2
 Cry_Granbull::
 	.incbin "sound/direct_sound_samples/cries/granbull.bin"
-.endif @ P_FAMILY_SNUBBULL
+.endif @ P_FAMILY_MODBETAMON
 
 .if P_FAMILY_QWILFISH == TRUE
 	.align 2

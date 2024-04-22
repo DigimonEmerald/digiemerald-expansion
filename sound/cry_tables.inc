@@ -592,10 +592,10 @@ gCryTable::
 	cry Cry_Gliscor
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_METABEE
-.if P_FAMILY_SNUBBULL == TRUE
-	cry Cry_Snubbull
+.if P_FAMILY_MODBETAMON == TRUE
+	cry Cry_Modbetamon
 	cry Cry_Granbull
-.endif @ P_FAMILY_SNUBBULL
+.endif @ P_FAMILY_MODBETAMON
 .if P_FAMILY_QWILFISH == TRUE
 	cry Cry_Qwilfish
 .if P_HISUIAN_FORMS == TRUE
@@ -3018,10 +3018,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Gliscor
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_METABEE
-.if P_FAMILY_SNUBBULL == TRUE
-	cry_reverse Cry_Snubbull
+.if P_FAMILY_MODBETAMON == TRUE
+	cry_reverse Cry_Modbetamon
 	cry_reverse Cry_Granbull
-.endif @ P_FAMILY_SNUBBULL
+.endif @ P_FAMILY_MODBETAMON
 .if P_FAMILY_QWILFISH == TRUE
 	cry_reverse Cry_Qwilfish
 .if P_HISUIAN_FORMS == TRUE

@@ -3612,8 +3612,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_METABEE
 
-#if P_FAMILY_SNUBBULL
-    [SPECIES_SNUBBULL] =
+#if P_FAMILY_MODBETAMON
+    [SPECIES_MODBETAMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 80,
@@ -3636,37 +3636,37 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_RUN_AWAY, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Snubbull"),
-        .cryId = CRY_SNUBBULL,
-        .natDexNum = NATIONAL_DEX_SNUBBULL,
+        .speciesName = _("Modbetamon"),
+        .cryId = CRY_MODBETAMON,
+        .natDexNum = NATIONAL_DEX_MODBETAMON,
         .categoryName = _("Fairy"),
         .height = 6,
         .weight = 78,
         .description = COMPOUND_STRING(
             "By baring its fangs and making a scary\n"
             "face, it sends smaller Pokémon scurrying\n"
-            "in terror. The Snubbull does seem a\n"
+            "in terror. The Modbetamon does seem a\n"
             "little sad at making its foes flee."),
         .pokemonScale = 465,
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Snubbull,
+        .frontPic = gMonFrontPic_Modbetamon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Snubbull,
+        .frontAnimFrames = sAnims_Modbetamon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Snubbull,
+        .backPic = gMonBackPic_Modbetamon,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Snubbull,
-        .shinyPalette = gMonShinyPalette_Snubbull,
-        .iconSprite = gMonIcon_Snubbull,
+        .palette = gMonPalette_Modbetamon,
+        .shinyPalette = gMonShinyPalette_Modbetamon,
+        .iconSprite = gMonIcon_Modbetamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Snubbull)
-        .levelUpLearnset = sSnubbullLevelUpLearnset,
-        .teachableLearnset = sSnubbullTeachableLearnset,
+        FOOTPRINT(Modbetamon)
+        .levelUpLearnset = sModbetamonLevelUpLearnset,
+        .teachableLearnset = sModbetamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_GRANBULL}),
     },
 
@@ -3725,7 +3725,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sGranbullLevelUpLearnset,
         .teachableLearnset = sGranbullTeachableLearnset,
     },
-#endif //P_FAMILY_SNUBBULL
+#endif //P_FAMILY_MODBETAMON
 
 #if P_FAMILY_QWILFISH
 
