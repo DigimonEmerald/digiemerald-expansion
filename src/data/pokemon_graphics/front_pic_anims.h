@@ -2903,7 +2903,7 @@ static const union AnimCmd sAnim_Lopmon_1[] =
 };
 #endif //P_FAMILY_LOPMON
 
-#if P_FAMILY_WOBBUFFET
+#if P_FAMILY_LOPMONX
 #if P_GEN_3_CROSS_EVOS
 static const union AnimCmd sAnim_Wynaut_1[] =
 {
@@ -2916,7 +2916,7 @@ static const union AnimCmd sAnim_Wynaut_1[] =
 };
 #endif //P_GEN_3_CROSS_EVOS
 
-static const union AnimCmd sAnim_Wobbuffet_1[] =
+static const union AnimCmd sAnim_Lopmonx_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -2925,7 +2925,7 @@ static const union AnimCmd sAnim_Wobbuffet_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_WOBBUFFET
+#endif //P_FAMILY_LOPMONX
 
 #if P_FAMILY_GIRAFARIG
 static const union AnimCmd sAnim_Girafarig_1[] =
@@ -10856,12 +10856,12 @@ SINGLE_ANIMATION(Mismagius);
 #if P_FAMILY_LOPMON
 SINGLE_ANIMATION(Lopmon);
 #endif //P_FAMILY_LOPMON
-#if P_FAMILY_WOBBUFFET
+#if P_FAMILY_LOPMONX
 #if P_GEN_3_CROSS_EVOS
 SINGLE_ANIMATION(Wynaut);
 #endif //P_GEN_3_CROSS_EVOS
-SINGLE_ANIMATION(Wobbuffet);
-#endif //P_FAMILY_WOBBUFFET
+SINGLE_ANIMATION(Lopmonx);
+#endif //P_FAMILY_LOPMONX
 #if P_FAMILY_GIRAFARIG
 SINGLE_ANIMATION(Girafarig);
 #if P_GEN_9_CROSS_EVOS

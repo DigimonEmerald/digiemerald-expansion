@@ -10,9 +10,9 @@ SINGLE_BATTLE_TEST("Pursuited mon correctly switches out after it got hit and ac
 {
     GIVEN {
         PLAYER(SPECIES_BUKAMON) { Ability(ABILITY_TANGLING_HAIR); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { SWITCH(player, 1); MOVE(opponent, MOVE_PURSUIT); }
     } SCENE {
@@ -21,6 +21,6 @@ SINGLE_BATTLE_TEST("Pursuited mon correctly switches out after it got hit and ac
         ABILITY_POPUP(player, ABILITY_TANGLING_HAIR);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
         MESSAGE("Foe Wynaut's Speed fell!");
-        MESSAGE("Go! Wobbuffet!");
+        MESSAGE("Go! Lopmonx!");
     }
 }

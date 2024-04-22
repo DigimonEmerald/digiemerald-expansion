@@ -5,15 +5,15 @@ SINGLE_BATTLE_TEST("Zero to Hero transforms Palafin when it switches out")
 {
     GIVEN {
         PLAYER(SPECIES_PALAFIN_ZERO) { Ability(ABILITY_ZERO_TO_HERO); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { SWITCH(player, 1); }
         TURN { SWITCH(player, 0); }
     } SCENE {
         MESSAGE("Palafin, that's enough! Come back!");
-        MESSAGE("Go! Wobbuffet!");
-        MESSAGE("Wobbuffet, that's enough! Come back!");
+        MESSAGE("Go! Lopmonx!");
+        MESSAGE("Lopmonx, that's enough! Come back!");
         MESSAGE("Go! Palafin!");
         ABILITY_POPUP(player, ABILITY_ZERO_TO_HERO);
         MESSAGE("Palafin underwent a heroic transformation!");
@@ -24,7 +24,7 @@ SINGLE_BATTLE_TEST("Zero to Hero can't be surpressed by Neutralizing Gas")
 {
     GIVEN {
         PLAYER(SPECIES_PALAFIN_ZERO) { Ability(ABILITY_ZERO_TO_HERO); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_ARGOMON_ROOKIE) { Ability(ABILITY_NEUTRALIZING_GAS); }
     } WHEN {
         TURN { SWITCH(player, 1); }
@@ -40,9 +40,9 @@ SINGLE_BATTLE_TEST("Zero to Hero transforms both player and opponent")
 {
     GIVEN {
         PLAYER(SPECIES_PALAFIN_ZERO) { Ability(ABILITY_ZERO_TO_HERO); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PALAFIN_ZERO) { Ability(ABILITY_ZERO_TO_HERO); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { SWITCH(player, 1); SWITCH(opponent, 1); }
         TURN { SWITCH(player, 0); SWITCH(opponent, 0); }
@@ -62,8 +62,8 @@ SINGLE_BATTLE_TEST("Zero to Hero will activate if a switch move is used")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_FLIP_TURN].effect == EFFECT_HIT_ESCAPE);
         PLAYER(SPECIES_PALAFIN_ZERO) { Ability(ABILITY_ZERO_TO_HERO); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_FLIP_TURN); SEND_OUT(player, 1); }
         TURN { SWITCH(player, 0); }
@@ -87,7 +87,7 @@ SINGLE_BATTLE_TEST("Gastro Acid, Worry Seed, and Simple Beam fail if the target 
         ASSUME(gMovesInfo[MOVE_WORRY_SEED].effect == EFFECT_WORRY_SEED);
         ASSUME(gMovesInfo[MOVE_SIMPLE_BEAM].effect == EFFECT_SIMPLE_BEAM);
         PLAYER(SPECIES_PALAFIN_ZERO) { Ability(ABILITY_ZERO_TO_HERO); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
@@ -100,8 +100,8 @@ SINGLE_BATTLE_TEST("Transform doesn't apply the heroic transformation message wh
 {
     GIVEN {
         PLAYER(SPECIES_PALAFIN_ZERO) { Ability(ABILITY_ZERO_TO_HERO); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { SWITCH(player, 1); }
         TURN { SWITCH(player, 0); MOVE(opponent, MOVE_TRANSFORM); }
@@ -109,7 +109,7 @@ SINGLE_BATTLE_TEST("Transform doesn't apply the heroic transformation message wh
         ABILITY_POPUP(player, ABILITY_ZERO_TO_HERO);
         MESSAGE("Palafin underwent a heroic transformation!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TRANSFORM, opponent);
-        MESSAGE("Foe Wobbuffet transformed into Palafin!");
+        MESSAGE("Foe Lopmonx transformed into Palafin!");
         NOT ABILITY_POPUP(opponent, ABILITY_ZERO_TO_HERO);
     } THEN { EXPECT_EQ(player->species, SPECIES_PALAFIN_HERO); }
 }
@@ -118,9 +118,9 @@ SINGLE_BATTLE_TEST("Imposter doesn't apply the heroic transformation message whe
 {
     GIVEN {
         PLAYER(SPECIES_PALAFIN_ZERO) { Ability(ABILITY_ZERO_TO_HERO); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_CRABMON) { Ability(ABILITY_IMPOSTER); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { SWITCH(player, 1); SWITCH(opponent, 1); }
         TURN { SWITCH(player, 0); SWITCH(opponent, 0); }

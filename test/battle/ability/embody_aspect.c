@@ -12,7 +12,7 @@ SINGLE_BATTLE_TEST("Embodoy Aspect raises a stat depending on the users form by 
     PARAMETRIZE { species = SPECIES_OGERPON_CORNERSTONE_MASK_TERA; ability = ABILITY_EMBODY_ASPECT_CORNERSTONE; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { }
@@ -43,7 +43,7 @@ SINGLE_BATTLE_TEST("Embodoy Aspect activates when it's no longer effected by Neu
 {
     GIVEN {
         PLAYER(SPECIES_ARMADILMON) { Ability(ABILITY_NEUTRALIZING_GAS); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_OGERPON_TEAL_MASK_TERA) { Ability(ABILITY_EMBODY_ASPECT_TEAL); }
     } WHEN {
         TURN { SWITCH(player, 1); }

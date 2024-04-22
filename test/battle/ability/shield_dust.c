@@ -20,7 +20,7 @@ SINGLE_BATTLE_TEST("Shield Dust blocks secondary effects")
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_ROCK_TOMB, MOVE_EFFECT_SPD_MINUS_1, 100) == TRUE);
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_SPIRIT_SHACKLE, MOVE_EFFECT_PREVENT_ESCAPE, 100) == TRUE);
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_PSYCHIC_NOISE, MOVE_EFFECT_PSYCHIC_NOISE, 100) == TRUE);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_VIVILLON) { Ability(ABILITY_SHIELD_DUST); }
     } WHEN {
         TURN { MOVE(player, move); }
@@ -54,7 +54,7 @@ SINGLE_BATTLE_TEST("Shield Dust does not block primary effects")
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_JAW_LOCK, MOVE_EFFECT_TRAP_BOTH, 0) == TRUE);
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_PAY_DAY, MOVE_EFFECT_PAYDAY, 0) == TRUE);
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_SMACK_DOWN, MOVE_EFFECT_SMACK_DOWN, 0) == TRUE);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_VIVILLON) { Ability(ABILITY_SHIELD_DUST); }
     } WHEN {
         TURN { MOVE(player, move); }
@@ -64,7 +64,7 @@ SINGLE_BATTLE_TEST("Shield Dust does not block primary effects")
         switch (move)
         {
             case MOVE_INFESTATION:
-                MESSAGE("Foe Vivillon has been afflicted with an infestation by Wobbuffet!");
+                MESSAGE("Foe Vivillon has been afflicted with an infestation by Lopmonx!");
                 break;
             case MOVE_THOUSAND_ARROWS:
                 MESSAGE("Foe Vivillon fell straight down!");
@@ -97,7 +97,7 @@ SINGLE_BATTLE_TEST("Shield Dust does not block self-targeting effects, primary o
         ASSUME(MoveHasAdditionalEffectSelf(MOVE_RAPID_SPIN, MOVE_EFFECT_RAPID_SPIN) == TRUE);
         ASSUME(MoveHasAdditionalEffectSelf(MOVE_LEAF_STORM, MOVE_EFFECT_SP_ATK_TWO_DOWN) == TRUE);
         ASSUME(MoveHasAdditionalEffectSelf(MOVE_METEOR_ASSAULT, MOVE_EFFECT_RECHARGE) == TRUE);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_VIVILLON) { Ability(ABILITY_SHIELD_DUST); }
     } WHEN {
         TURN { MOVE(player, move); }
@@ -115,7 +115,7 @@ SINGLE_BATTLE_TEST("Shield Dust does not block self-targeting effects, primary o
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
                 break;
             case MOVE_METEOR_ASSAULT: // second turn
-                MESSAGE("Wobbuffet must recharge!");
+                MESSAGE("Lopmonx must recharge!");
                 break;
         }
     }
@@ -125,10 +125,10 @@ DOUBLE_BATTLE_TEST("Shield Dust does not block Sparkling Aria in doubles")
 {
     KNOWN_FAILING;
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_VIVILLON) { Ability(ABILITY_SHIELD_DUST); Status1(STATUS1_BURN); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SPARKLING_ARIA); }
     } SCENE {

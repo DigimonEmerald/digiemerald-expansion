@@ -2882,7 +2882,7 @@ static const struct TrainerMon sParty_Maura[] = {
 static const struct TrainerMon sParty_Kayla[] = {
     {
     .lvl = 26,
-    .species = SPECIES_WOBBUFFET,
+    .species = SPECIES_LOPMONX,
     },
     {
     .lvl = 26,
@@ -5825,7 +5825,7 @@ static const struct TrainerMon sParty_Diana1[] = {
 static const struct TrainerMon sParty_Cedric[] = {
     {
     .lvl = 32,
-    .species = SPECIES_WOBBUFFET,
+    .species = SPECIES_LOPMONX,
     .moves = {MOVE_DESTINY_BOND, MOVE_SAFEGUARD, MOVE_COUNTER, MOVE_MIRROR_COAT}
     }
 };
@@ -7371,7 +7371,7 @@ static const struct TrainerMon sParty_Clifford[] = {
 static const struct TrainerMon sParty_Nicholas[] = {
     {
     .lvl = 36,
-    .species = SPECIES_WOBBUFFET,
+    .species = SPECIES_LOPMONX,
     }
 };
 
@@ -11773,7 +11773,7 @@ static const struct TrainerMon sParty_Alvaro[] = {
 static const struct TrainerMon sParty_Everett[] = {
     {
     .lvl = 41,
-    .species = SPECIES_WOBBUFFET,
+    .species = SPECIES_LOPMONX,
     }
 };
 

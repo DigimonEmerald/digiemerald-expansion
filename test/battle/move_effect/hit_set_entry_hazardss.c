@@ -13,9 +13,9 @@ SINGLE_BATTLE_TEST("Stone Axe / Ceaseless Edge set up hazards after hitting the 
     PARAMETRIZE { move = MOVE_STONE_AXE; }
     PARAMETRIZE { move = MOVE_CEASELESS_EDGE; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, move); }
         TURN { SWITCH(opponent, 1); }
@@ -29,14 +29,14 @@ SINGLE_BATTLE_TEST("Stone Axe / Ceaseless Edge set up hazards after hitting the 
         else {
             MESSAGE("Pointed stones float in the air around the opposing team!");
         }
-        MESSAGE("2 sent out Wobbuffet!");
+        MESSAGE("2 sent out Lopmonx!");
         if (move == MOVE_CEASELESS_EDGE) {
             HP_BAR(opponent, damage: maxHP / 8);
-            MESSAGE("Foe Wobbuffet is hurt by spikes!");
+            MESSAGE("Foe Lopmonx is hurt by spikes!");
         }
         else {
             HP_BAR(opponent, damage: maxHP / 8);
-            MESSAGE("Pointed stones dug into Foe Wobbuffet!");
+            MESSAGE("Pointed stones dug into Foe Lopmonx!");
         }
     }
 }
@@ -44,8 +44,8 @@ SINGLE_BATTLE_TEST("Stone Axe / Ceaseless Edge set up hazards after hitting the 
 SINGLE_BATTLE_TEST("Ceaseless Edge can set up to 3 layers of Spikes")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(player, MOVE_CEASELESS_EDGE); }
@@ -81,8 +81,8 @@ SINGLE_BATTLE_TEST("Ceaseless Edge can set up to 3 layers of Spikes")
 SINGLE_BATTLE_TEST("Stone Axe can set up pointed stones only once")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(player, MOVE_STONE_AXE); }

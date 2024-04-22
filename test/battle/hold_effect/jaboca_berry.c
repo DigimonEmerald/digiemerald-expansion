@@ -17,8 +17,8 @@ SINGLE_BATTLE_TEST("Jaboca Berry causes the attacker to lose 1/8 of its max HP i
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SWIFT].category == DAMAGE_CATEGORY_SPECIAL);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_JABOCA_BERRY); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_JABOCA_BERRY); }
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
@@ -27,11 +27,11 @@ SINGLE_BATTLE_TEST("Jaboca Berry causes the attacker to lose 1/8 of its max HP i
         if (move == MOVE_TACKLE) {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
             HP_BAR(player, captureDamage: &damage);
-            MESSAGE("Wobbuffet was hurt by Foe Wobbuffet's Jaboca Berry!");
+            MESSAGE("Lopmonx was hurt by Foe Lopmonx's Jaboca Berry!");
         } else {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-                MESSAGE("Wobbuffet was hurt by Foe Wobbuffet's Jaboca Berry!");
+                MESSAGE("Lopmonx was hurt by Foe Lopmonx's Jaboca Berry!");
             }
         }
     } THEN {
@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Jaboca Berry tirggers before Bug Bite can steal it")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_BUG_BITE].category == DAMAGE_CATEGORY_PHYSICAL);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_JABOCA_BERRY); }
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_JABOCA_BERRY); }
     } WHEN {
         TURN { MOVE(player, MOVE_BUG_BITE); }
     } SCENE {
@@ -54,7 +54,7 @@ SINGLE_BATTLE_TEST("Jaboca Berry tirggers before Bug Bite can steal it")
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
         HP_BAR(player);
-        MESSAGE("Wyanut was hurt by Foe Wobbuffet's Jaboca Berry!");
-        NOT MESSAGE("Wynaut stole and ate Foe Wobbuffet's Jaboca Berry!");
+        MESSAGE("Wyanut was hurt by Foe Lopmonx's Jaboca Berry!");
+        NOT MESSAGE("Wynaut stole and ate Foe Lopmonx's Jaboca Berry!");
     }
 }

@@ -9,18 +9,18 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Knock Off knocks a healing berry before it has the chance to activate")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_SITRUS_BERRY); MaxHP(500); HP(255); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_SITRUS_BERRY); MaxHP(500); HP(255); }
     } WHEN {
         TURN { MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, player);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-            MESSAGE("Foe Wobbuffet's Sitrus Berry restored health!");
+            MESSAGE("Foe Lopmonx's Sitrus Berry restored health!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF);
-        MESSAGE("Wobbuffet knocked off Foe Wobbuffet's Sitrus Berry!");
+        MESSAGE("Lopmonx knocked off Foe Lopmonx's Sitrus Berry!");
     }
 }
 
@@ -32,8 +32,8 @@ SINGLE_BATTLE_TEST("Knock Off activates after Rocky Helmet and Weakness Policy")
     PARAMETRIZE { item = ITEM_ROCKY_HELMET; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(item); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(item); }
     } WHEN {
         TURN { MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
@@ -41,13 +41,13 @@ SINGLE_BATTLE_TEST("Knock Off activates after Rocky Helmet and Weakness Policy")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
         if (item == ITEM_WEAKNESS_POLICY) {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE);
-            MESSAGE("Using WeaknssPolicy, the Attack of Foe Wobbuffet sharply rose!");
-            MESSAGE("Using WeaknssPolicy, the Sp. Atk of Foe Wobbuffet sharply rose!");
+            MESSAGE("Using WeaknssPolicy, the Attack of Foe Lopmonx sharply rose!");
+            MESSAGE("Using WeaknssPolicy, the Sp. Atk of Foe Lopmonx sharply rose!");
         } else if (item == ITEM_ROCKY_HELMET) {
             HP_BAR(player);
-            MESSAGE("Wobbuffet was hurt by Foe Wobbuffet's Rocky Helmet!");
+            MESSAGE("Lopmonx was hurt by Foe Lopmonx's Rocky Helmet!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF);
-            MESSAGE("Wobbuffet knocked off Foe Wobbuffet's Rocky Helmet!");
+            MESSAGE("Lopmonx knocked off Foe Lopmonx's Rocky Helmet!");
         }
     }
 }

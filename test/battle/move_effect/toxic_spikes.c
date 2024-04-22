@@ -9,8 +9,8 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Toxic Spikes inflicts poison on switch in")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
@@ -28,8 +28,8 @@ SINGLE_BATTLE_TEST("Toxic Spikes inflicts poison on switch in")
 SINGLE_BATTLE_TEST("Toxic Spikes inflicts bad poison on switch in")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
@@ -50,8 +50,8 @@ SINGLE_BATTLE_TEST("Toxic Spikes inflicts bad poison on switch in")
 SINGLE_BATTLE_TEST("Toxic Spikes fails after 2 layers")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
@@ -64,7 +64,7 @@ SINGLE_BATTLE_TEST("Toxic Spikes fails after 2 layers")
         MESSAGE("Poison Spikes were scattered all around the opposing team's feet!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC_SPIKES, player);
         MESSAGE("Poison Spikes were scattered all around the opposing team's feet!");
-        MESSAGE("Wobbuffet used Toxic Spikes!");
+        MESSAGE("Lopmonx used Toxic Spikes!");
         MESSAGE("But it failed!");
         MESSAGE("2 sent out Wynaut!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
@@ -75,8 +75,8 @@ SINGLE_BATTLE_TEST("Toxic Spikes fails after 2 layers")
 SINGLE_BATTLE_TEST("Toxic Spikes inflicts poison on subsequent switch ins")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
@@ -91,7 +91,7 @@ SINGLE_BATTLE_TEST("Toxic Spikes inflicts poison on subsequent switch ins")
 
 SINGLE_BATTLE_TEST("Toxic Spikes do not poison airborne Pokemon")
 {
-    u32 species = SPECIES_WOBBUFFET;
+    u32 species = SPECIES_LOPMONX;
     u32 item = ITEM_NONE;
     u32 move1 = MOVE_CELEBRATE;
     u32 move2 = MOVE_CELEBRATE;
@@ -120,8 +120,8 @@ SINGLE_BATTLE_TEST("Toxic Spikes do not poison airborne Pokemon")
     PARAMETRIZE { item = ITEM_AIR_BALLOON; move1 = MOVE_INGRAIN; airborne = FALSE; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(species) { Item(item); }
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); MOVE(opponent, move1); }
@@ -140,8 +140,8 @@ SINGLE_BATTLE_TEST("Toxic Spikes do not affect Steel-types")
 {
     GIVEN {
         ASSUME(gSpeciesInfo[SPECIES_STEELIX].types[0] == TYPE_STEEL);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_STEELIX);
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
@@ -166,8 +166,8 @@ SINGLE_BATTLE_TEST("Toxic Spikes are removed by grounded Poison-type Pokémon on
         ASSUME(gSpeciesInfo[SPECIES_PAFUMON].types[0] == TYPE_POISON);
         ASSUME(gSpeciesInfo[SPECIES_ICEBOTAMON].types[0] == TYPE_POISON);
         ASSUME(gSpeciesInfo[SPECIES_ICEBOTAMON].types[1] == TYPE_FLYING);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(species) { Item(item); }
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); MOVE(opponent, move); }
@@ -195,8 +195,8 @@ SINGLE_BATTLE_TEST("Toxic Spikes are removed by Poison-type Pokémon affected by
     KNOWN_FAILING;
     GIVEN {
         ASSUME(gSpeciesInfo[SPECIES_PAFUMON].types[0] == TYPE_POISON);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PAFUMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_MAGNET_RISE); }
@@ -213,16 +213,16 @@ SINGLE_BATTLE_TEST("Toxic Spikes inflicts poison on switch in after Primal Rever
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_MEMENTO].effect == EFFECT_MEMENTO); // Faints the user.
-        PLAYER(SPECIES_WOBBUFFET) {Speed(5); }
+        PLAYER(SPECIES_LOPMONX) {Speed(5); }
         PLAYER(SPECIES_GROUDON) { Item(ITEM_RED_ORB); Speed(1); }
         PLAYER(SPECIES_WYNAUT) {Speed(5); }
-        OPPONENT(SPECIES_WOBBUFFET) {Speed(15); }
+        OPPONENT(SPECIES_LOPMONX) {Speed(15); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TOXIC_SPIKES); }
         TURN { SWITCH(player, 1); }
         TURN { MOVE(player, MOVE_MEMENTO); SEND_OUT(player, 2); }
     } SCENE {
-        MESSAGE("Foe Wobbuffet used Toxic Spikes!");
+        MESSAGE("Foe Lopmonx used Toxic Spikes!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC_SPIKES, opponent);
         MESSAGE("Poison Spikes were scattered all around your team's feet!");
         // Switch in

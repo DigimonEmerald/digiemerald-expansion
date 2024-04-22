@@ -5,7 +5,7 @@ ASSUMPTIONS
 {
     ASSUME(gMovesInfo[MOVE_DOUBLE_SHOCK].effect == EFFECT_FAIL_IF_NOT_ARG_TYPE);
     ASSUME(MoveHasAdditionalEffectSelfArg(MOVE_DOUBLE_SHOCK, MOVE_EFFECT_REMOVE_ARG_TYPE, TYPE_ELECTRIC) == TRUE);
-    ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[0] != TYPE_ELECTRIC || gSpeciesInfo[SPECIES_WOBBUFFET].types[1] != TYPE_ELECTRIC);
+    ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[0] != TYPE_ELECTRIC || gSpeciesInfo[SPECIES_LOPMONX].types[1] != TYPE_ELECTRIC);
     ASSUME(gSpeciesInfo[SPECIES_PETITMON].types[0] == TYPE_ELECTRIC || gSpeciesInfo[SPECIES_PETITMON].types[1] == TYPE_ELECTRIC);
 }
 
@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Double Shock user loses its Electric-type")
 {
     GIVEN {
         PLAYER(SPECIES_PETITMON);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_DOUBLE_SHOCK); }
         TURN { MOVE(player, MOVE_DOUBLE_SHOCK); }
@@ -28,13 +28,13 @@ SINGLE_BATTLE_TEST("Double Shock user loses its Electric-type")
 SINGLE_BATTLE_TEST("Double Shock fails if the user isn't an Electric-type")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_DOUBLE_SHOCK); }
     } SCENE {
         NONE_OF { ANIMATION(ANIM_TYPE_MOVE, MOVE_DOUBLE_SHOCK, player); }
-        MESSAGE("Wobbuffet used Double Shock!");
+        MESSAGE("Lopmonx used Double Shock!");
         MESSAGE("But it failed!");
     }
 }
@@ -43,7 +43,7 @@ SINGLE_BATTLE_TEST("Double Shock user loses its Electric-type if enemy faints")
 {
     GIVEN {
         PLAYER(SPECIES_PETITMON);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX) { HP(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_DOUBLE_SHOCK); }
     } SCENE {

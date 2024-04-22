@@ -8,11 +8,11 @@ SINGLE_BATTLE_TEST("Sandstorm deals 1/16 damage per turn")
 
     GIVEN {
         PLAYER(SPECIES_POYOMON);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN {MOVE(player, MOVE_SANDSTORM);}
     } SCENE {
-        MESSAGE("Foe Wobbuffet is buffeted by the sandstorm!");
+        MESSAGE("Foe Lopmonx is buffeted by the sandstorm!");
         HP_BAR(opponent, captureDamage: &sandstormDamage);
    } THEN { EXPECT_EQ(sandstormDamage, opponent->maxHP / 16); }
 }
@@ -24,7 +24,7 @@ SINGLE_BATTLE_TEST("Sandstorm multiplies the special defense of Rock-types by 1.
     PARAMETRIZE{ move = MOVE_CELEBRATE; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SWIFT].category == DAMAGE_CATEGORY_SPECIAL);
-        PLAYER(SPECIES_WOBBUFFET) ;
+        PLAYER(SPECIES_LOPMONX) ;
         OPPONENT(SPECIES_NOSEPASS);
     } WHEN {
         TURN { MOVE(opponent, move); }
@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Sandstorm damage does not hurt Ground, Rock, and Steel-type 
         ASSUME(gSpeciesInfo[SPECIES_POYOMON].types[0] == TYPE_GROUND);
         ASSUME(gSpeciesInfo[SPECIES_NOSEPASS].types[0] == TYPE_ROCK);
         ASSUME(gSpeciesInfo[SPECIES_REGISTEEL].types[0] == TYPE_STEEL);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(mon);
     } WHEN {
         TURN { MOVE(player, MOVE_SANDSTORM); }

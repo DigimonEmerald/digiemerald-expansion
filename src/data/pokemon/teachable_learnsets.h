@@ -10296,7 +10296,7 @@ static const u16 sLopmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_LOPMON
 
-#if P_FAMILY_WOBBUFFET
+#if P_FAMILY_LOPMONX
 #if P_GEN_3_CROSS_EVOS
 static const u16 sWynautTeachableLearnset[] = {
     MOVE_SAFEGUARD,
@@ -10305,12 +10305,12 @@ static const u16 sWynautTeachableLearnset[] = {
 };
 #endif //P_GEN_3_CROSS_EVOS
 
-static const u16 sWobbuffetTeachableLearnset[] = {
+static const u16 sLopmonxTeachableLearnset[] = {
     MOVE_SAFEGUARD,
     MOVE_COUNTER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_WOBBUFFET
+#endif //P_FAMILY_LOPMONX
 
 #if P_FAMILY_GIRAFARIG
 static const u16 sGirafarigTeachableLearnset[] = {

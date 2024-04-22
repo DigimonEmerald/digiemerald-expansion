@@ -9,9 +9,9 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("U-turn switches the user out")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(player, 1); }
     } SCENE {
@@ -24,9 +24,9 @@ SINGLE_BATTLE_TEST("U-turn switches the user out")
 SINGLE_BATTLE_TEST("U-turn does not switch the user out if the battle ends")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX) { HP(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); }
     } SCENE {
@@ -38,8 +38,8 @@ SINGLE_BATTLE_TEST("U-turn does not switch the user out if the battle ends")
 SINGLE_BATTLE_TEST("U-turn does not switch the user out if no replacements")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); }
     } SCENE {
@@ -51,9 +51,9 @@ SINGLE_BATTLE_TEST("U-turn does not switch the user out if no replacements")
 SINGLE_BATTLE_TEST("U-turn does not switch the user out if replacements fainted")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT) { HP(0); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); }
     } SCENE {
@@ -65,24 +65,24 @@ SINGLE_BATTLE_TEST("U-turn does not switch the user out if replacements fainted"
 SINGLE_BATTLE_TEST("U-turn does not switch the user out if Wimp Out activates")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_WIMPOD) { MaxHP(200); HP(101); Ability(ABILITY_WIMP_OUT); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(opponent, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
         HP_BAR(opponent);
         ABILITY_POPUP(opponent, ABILITY_WIMP_OUT);
-        MESSAGE("2 sent out Wobbuffet!");
+        MESSAGE("2 sent out Lopmonx!");
     }
 }
 
 SINGLE_BATTLE_TEST("U-turn switches the user out if Wimp Out fails to activate")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_WIMPOD) { MaxHP(200); HP(101); Ability(ABILITY_WIMP_OUT); }
     } WHEN {

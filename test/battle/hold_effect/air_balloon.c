@@ -12,65 +12,65 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Air Balloon prevents the holder from taking damage from ground type moves")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_AIR_BALLOON); };
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_AIR_BALLOON); };
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EARTHQUAKE); }
     } SCENE {
-        MESSAGE("Wobbuffet floats in the air with its Air Balloon!");
-        MESSAGE("Foe Wobbuffet used Earthquake!");
+        MESSAGE("Lopmonx floats in the air with its Air Balloon!");
+        MESSAGE("Foe Lopmonx used Earthquake!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
-        MESSAGE("It doesn't affect Wobbuffet…");
+        MESSAGE("It doesn't affect Lopmonx…");
     }
 }
 
 SINGLE_BATTLE_TEST("Air Balloon pops when the holder is hit by a move that is not ground type")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_AIR_BALLOON); };
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_AIR_BALLOON); };
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
-        MESSAGE("Wobbuffet floats in the air with its Air Balloon!");
-        MESSAGE("Foe Wobbuffet used Tackle!");
-        MESSAGE("Wobbuffet's Air Balloon popped!");
+        MESSAGE("Lopmonx floats in the air with its Air Balloon!");
+        MESSAGE("Foe Lopmonx used Tackle!");
+        MESSAGE("Lopmonx's Air Balloon popped!");
     }
 }
 
 SINGLE_BATTLE_TEST("Air Balloon no longer prevents the holder from taking damage from ground type moves once it has been popped")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_AIR_BALLOON); };
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_AIR_BALLOON); };
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
         TURN { MOVE(opponent, MOVE_EARTHQUAKE); }
     } SCENE {
-        MESSAGE("Wobbuffet floats in the air with its Air Balloon!");
-        MESSAGE("Foe Wobbuffet used Tackle!");
-        MESSAGE("Wobbuffet's Air Balloon popped!");
-        MESSAGE("Foe Wobbuffet used Earthquake!");
+        MESSAGE("Lopmonx floats in the air with its Air Balloon!");
+        MESSAGE("Foe Lopmonx used Tackle!");
+        MESSAGE("Lopmonx's Air Balloon popped!");
+        MESSAGE("Foe Lopmonx used Earthquake!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
-        NOT MESSAGE("It doesn't affect Wobbuffet…");
+        NOT MESSAGE("It doesn't affect Lopmonx…");
     }
 }
 
 SINGLE_BATTLE_TEST("Air Balloon can not be restored with Recycle after it has been popped")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_AIR_BALLOON); };
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_AIR_BALLOON); };
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN {
             MOVE(opponent, MOVE_TACKLE);
             MOVE(player, MOVE_RECYCLE);
         }
     } SCENE {
-        MESSAGE("Wobbuffet floats in the air with its Air Balloon!");
-        MESSAGE("Foe Wobbuffet used Tackle!");
-        MESSAGE("Wobbuffet's Air Balloon popped!");
-        MESSAGE("Wobbuffet used Recycle!");
+        MESSAGE("Lopmonx floats in the air with its Air Balloon!");
+        MESSAGE("Foe Lopmonx used Tackle!");
+        MESSAGE("Lopmonx's Air Balloon popped!");
+        MESSAGE("Lopmonx used Recycle!");
         MESSAGE("But it failed!");
     }
 }
@@ -78,26 +78,26 @@ SINGLE_BATTLE_TEST("Air Balloon can not be restored with Recycle after it has be
 SINGLE_BATTLE_TEST("Air Balloon prevents the user from being healed by Grassy Terrain")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_AIR_BALLOON); MaxHP(100); HP(1); };
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_AIR_BALLOON); MaxHP(100); HP(1); };
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_GRASSY_TERRAIN); }
     } SCENE {
-        MESSAGE("Wobbuffet floats in the air with its Air Balloon!");
-        NOT MESSAGE("Wobbuffet is healed by the Grassy Terrain!");
+        MESSAGE("Lopmonx floats in the air with its Air Balloon!");
+        NOT MESSAGE("Lopmonx is healed by the Grassy Terrain!");
     }
 }
 
 SINGLE_BATTLE_TEST("Air Balloon pops before it can be stolen with Magician")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_AIR_BALLOON); };
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_AIR_BALLOON); };
         OPPONENT(SPECIES_DELPHOX) { Ability(ABILITY_MAGICIAN); };
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
-        MESSAGE("Wobbuffet floats in the air with its Air Balloon!");
-        MESSAGE("Wobbuffet's Air Balloon popped!");
+        MESSAGE("Lopmonx floats in the air with its Air Balloon!");
+        MESSAGE("Lopmonx's Air Balloon popped!");
         NOT ABILITY_POPUP(opponent, ABILITY_MAGICIAN);
     }
 }
@@ -110,13 +110,13 @@ SINGLE_BATTLE_TEST("Air Balloon pops before it can be stolen with Thief or Covet
     PARAMETRIZE { move = MOVE_COVET; }
     GIVEN {
         ASSUME(MoveHasAdditionalEffect(move, MOVE_EFFECT_STEAL_ITEM) == TRUE);
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_AIR_BALLOON); };
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_AIR_BALLOON); };
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
-        MESSAGE("Wobbuffet floats in the air with its Air Balloon!");
-        MESSAGE("Wobbuffet's Air Balloon popped!");
-        NOT MESSAGE("Foe Wobbuffet stole Wobbuffet's Air Balloon!");
+        MESSAGE("Lopmonx floats in the air with its Air Balloon!");
+        MESSAGE("Lopmonx's Air Balloon popped!");
+        NOT MESSAGE("Foe Lopmonx stole Lopmonx's Air Balloon!");
     }
 }

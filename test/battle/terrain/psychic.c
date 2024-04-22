@@ -5,7 +5,7 @@ SINGLE_BATTLE_TEST("Psychic Terrain protects grounded battlers from priority mov
 {
     GIVEN {
         PLAYER(SPECIES_CLAYDOL) { Ability(ABILITY_LEVITATE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_PSYCHIC_TERRAIN); }
         TURN { MOVE(player, MOVE_QUICK_ATTACK); MOVE(opponent, MOVE_QUICK_ATTACK); }
@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Psychic Terrain protects grounded battlers from priority mov
         MESSAGE("Claydol used PsychcTrrain!");
         MESSAGE("Claydol cannot use Quick Attack!");
         NOT { HP_BAR(opponent); }
-        MESSAGE("Foe Wobbuffet used Quick Attack!");
+        MESSAGE("Foe Lopmonx used Quick Attack!");
         HP_BAR(player);
     }
 }
@@ -23,13 +23,13 @@ SINGLE_BATTLE_TEST("Psychic Terrain activates Psychic Seed and Mimicry")
     GIVEN {
         ASSUME(gItemsInfo[ITEM_PSYCHIC_SEED].holdEffect == HOLD_EFFECT_SEEDS);
         ASSUME(gItemsInfo[ITEM_PSYCHIC_SEED].holdEffectParam == HOLD_EFFECT_PARAM_PSYCHIC_TERRAIN);
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_PSYCHIC_SEED); }
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_PSYCHIC_SEED); }
         OPPONENT(SPECIES_STUNFISK_GALARIAN) { Ability(ABILITY_MIMICRY); }
     } WHEN {
         TURN { MOVE(player, MOVE_PSYCHIC_TERRAIN); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Using Psychic Seed, the Sp. Def of Wobbuffet rose!");
+        MESSAGE("Using Psychic Seed, the Sp. Def of Lopmonx rose!");
         ABILITY_POPUP(opponent);
         MESSAGE("Foe Stunfisk's type changed to Psychc!");
     } THEN {
@@ -43,14 +43,14 @@ SINGLE_BATTLE_TEST("Psychic Terrain increases power of Psychic-type moves by 30/
     PARAMETRIZE { terrain = FALSE; }
     PARAMETRIZE { terrain = TRUE; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         if (terrain)
             TURN { MOVE(player, MOVE_PSYCHIC_TERRAIN); }
         TURN { MOVE(player, MOVE_CONFUSION); }
     } SCENE {
-        MESSAGE("Wobbuffet used Confusion!");
+        MESSAGE("Lopmonx used Confusion!");
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         if (B_TERRAIN_TYPE_BOOST >= GEN_8)
@@ -64,7 +64,7 @@ SINGLE_BATTLE_TEST("Psychic Terrain doesn't block priority moves that target the
 {
     GIVEN {
         PLAYER(SPECIES_SABLEYE) { Ability(ABILITY_PRANKSTER); HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_PSYCHIC_TERRAIN); }
         TURN { MOVE(player, MOVE_RECOVER); }
@@ -79,7 +79,7 @@ SINGLE_BATTLE_TEST("Psychic Terrain doesn't block priority moves that target all
 {
     GIVEN {
         PLAYER(SPECIES_SABLEYE) { Ability(ABILITY_PRANKSTER); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_PSYCHIC_TERRAIN); }
         TURN { MOVE(player, MOVE_HAZE); }
@@ -93,7 +93,7 @@ SINGLE_BATTLE_TEST("Psychic Terrain doesn't block priority moves that target all
 {
     GIVEN {
         PLAYER(SPECIES_SABLEYE) { Ability(ABILITY_PRANKSTER); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_PSYCHIC_TERRAIN); }
         TURN { MOVE(player, MOVE_SPIKES); }
@@ -107,9 +107,9 @@ DOUBLE_BATTLE_TEST("Psychic Terrain doesn't block priority moves that target all
 {
     GIVEN {
         PLAYER(SPECIES_SABLEYE) { Ability(ABILITY_PRANKSTER); }
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_PSYCHIC_TERRAIN); }
         TURN { MOVE(playerLeft, MOVE_HEAL_PULSE, target: playerRight); }
@@ -123,7 +123,7 @@ SINGLE_BATTLE_TEST("Psychic Terrain doesn't block priority field moves")
 {
     GIVEN {
         PLAYER(SPECIES_SABLEYE) { Ability(ABILITY_PRANKSTER); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_PSYCHIC_TERRAIN); }
         TURN { MOVE(player, MOVE_SUNNY_DAY); }
@@ -136,8 +136,8 @@ SINGLE_BATTLE_TEST("Psychic Terrain doesn't block priority field moves")
 SINGLE_BATTLE_TEST("Psychic Terrain lasts for 5 turns")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_PSYCHIC_TERRAIN); }
         TURN {}
@@ -145,18 +145,18 @@ SINGLE_BATTLE_TEST("Psychic Terrain lasts for 5 turns")
         TURN {}
         TURN {}
     } SCENE {
-        MESSAGE("Foe Wobbuffet used Celebrate!");
+        MESSAGE("Foe Lopmonx used Celebrate!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PSYCHIC_TERRAIN, player);
         MESSAGE("The battlefield got weird!");
 
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("Foe Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("Foe Lopmonx used Celebrate!");
 
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("Foe Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("Foe Lopmonx used Celebrate!");
 
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("Foe Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("Foe Lopmonx used Celebrate!");
 
         MESSAGE("The weirdness disappeared from the battlefield.");
     }

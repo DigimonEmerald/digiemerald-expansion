@@ -14,18 +14,18 @@ SINGLE_BATTLE_TEST("Corrosive Gas destroys the target's item or fails if the tar
     PARAMETRIZE {item = ITEM_POTION; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) {Item(item); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) {Item(item); }
     } WHEN {
         TURN { MOVE(player, MOVE_CORROSIVE_GAS); }
     } SCENE {
-        MESSAGE("Wobbuffet used CorrosiveGas!");
+        MESSAGE("Lopmonx used CorrosiveGas!");
         if (item == ITEM_POTION) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_CORROSIVE_GAS, player);
-            MESSAGE("Wobbuffet corroded Foe Wobbuffet's Potion!");
+            MESSAGE("Lopmonx corroded Foe Lopmonx's Potion!");
         }
         else {
-            MESSAGE("It had no effect on Foe Wobbuffet!");
+            MESSAGE("It had no effect on Foe Lopmonx!");
         }
     } THEN {
         EXPECT_EQ(opponent->item, ITEM_NONE);
@@ -35,14 +35,14 @@ SINGLE_BATTLE_TEST("Corrosive Gas destroys the target's item or fails if the tar
 SINGLE_BATTLE_TEST("Corrosive Gas doesn't destroy the item of a Pokemon with the Sticky Hold ability")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_SUNMON) {Item(ITEM_POISON_BARB); Ability(ABILITY_STICKY_HOLD); }
     } WHEN {
         TURN { MOVE(player, MOVE_CORROSIVE_GAS); }
     } SCENE {
-        MESSAGE("Wobbuffet used CorrosiveGas!");
+        MESSAGE("Lopmonx used CorrosiveGas!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CORROSIVE_GAS, player);
-        NOT MESSAGE("Wobbuffet corroded Foe Wobbuffet's Potion!");
+        NOT MESSAGE("Lopmonx corroded Foe Lopmonx's Potion!");
         ABILITY_POPUP(opponent, ABILITY_STICKY_HOLD);
         MESSAGE("Foe Sunmon's Sticky Hold made CorrosiveGas ineffective!");
     } THEN {
@@ -54,15 +54,15 @@ SINGLE_BATTLE_TEST("Items lost to Corrosive Gas cannot be restored by Recycle")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_RECYCLE].effect == EFFECT_RECYCLE);
-        PLAYER(SPECIES_WOBBUFFET) {Speed(15); }
-        OPPONENT(SPECIES_WOBBUFFET) {Item(ITEM_ORAN_BERRY); Speed(10); }
+        PLAYER(SPECIES_LOPMONX) {Speed(15); }
+        OPPONENT(SPECIES_LOPMONX) {Item(ITEM_ORAN_BERRY); Speed(10); }
     } WHEN {
         TURN { MOVE(player, MOVE_CORROSIVE_GAS); MOVE(opponent, MOVE_RECYCLE); }
     } SCENE {
-        MESSAGE("Wobbuffet used CorrosiveGas!");
+        MESSAGE("Lopmonx used CorrosiveGas!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CORROSIVE_GAS, player);
-        MESSAGE("Wobbuffet corroded Foe Wobbuffet's Oran Berry!");
-        MESSAGE("Foe Wobbuffet used Recycle!");
+        MESSAGE("Lopmonx corroded Foe Lopmonx's Oran Berry!");
+        MESSAGE("Foe Lopmonx used Recycle!");
         MESSAGE("But it failed!");
     } THEN {
         EXPECT_EQ(opponent->item, ITEM_NONE);
@@ -86,7 +86,7 @@ DOUBLE_BATTLE_TEST("Corrosive Gas destroys foes and ally's items if they have on
     }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) {Item(itemPlayerLeft);}
+        PLAYER(SPECIES_LOPMONX) {Item(itemPlayerLeft);}
         PLAYER(SPECIES_WYNAUT) {Item(ITEM_SITRUS_BERRY);}
         OPPONENT(SPECIES_HOPMON) {Item(itemOpponentLeft);}
         OPPONENT(SPECIES_KAKKINMON) {Item(itemOpponentRight);}
@@ -95,9 +95,9 @@ DOUBLE_BATTLE_TEST("Corrosive Gas destroys foes and ally's items if they have on
     } SCENE {
         MESSAGE("Wynaut used CorrosiveGas!");
         if (itemPlayerLeft == ITEM_CHERI_BERRY) {
-            MESSAGE("Wynaut corroded Wobbuffet's Cheri Berry!");
+            MESSAGE("Wynaut corroded Lopmonx's Cheri Berry!");
         } else {
-            MESSAGE("It had no effect on Wobbuffet!");
+            MESSAGE("It had no effect on Lopmonx!");
         }
         if (itemOpponentLeft == ITEM_ORAN_BERRY) {
             MESSAGE("Wynaut corroded Foe Hopmon's Oran Berry!");

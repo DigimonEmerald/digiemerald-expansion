@@ -15,8 +15,8 @@ SINGLE_BATTLE_TEST("Pecha and Lum Berries cure poison")
 
     GIVEN {
         ASSUME(gItemsInfo[ITEM_PECHA_BERRY].holdEffect == HOLD_EFFECT_CURE_PSN);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(item); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(item); }
     } WHEN {
         TURN { MOVE(player, MOVE_POISON_POWDER); }
     } SCENE {
@@ -37,8 +37,8 @@ SINGLE_BATTLE_TEST("Pecha and Lum Berries cure bad poison")
 
     GIVEN {
         ASSUME(gItemsInfo[ITEM_PECHA_BERRY].holdEffect == HOLD_EFFECT_CURE_PSN);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(item); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(item); }
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC); }
     } SCENE {
@@ -59,8 +59,8 @@ SINGLE_BATTLE_TEST("Rawst and Lum Berries cure burn")
 
     GIVEN {
         ASSUME(gItemsInfo[ITEM_RAWST_BERRY].holdEffect == HOLD_EFFECT_CURE_BRN);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(item); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(item); }
     } WHEN {
         TURN { MOVE(player, MOVE_WILL_O_WISP); }
     } SCENE {
@@ -81,8 +81,8 @@ SINGLE_BATTLE_TEST("Aspear and Lum Berries cure freeze")
 
     GIVEN {
         ASSUME(gItemsInfo[ITEM_ASPEAR_BERRY].holdEffect == HOLD_EFFECT_CURE_FRZ);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(item); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(item); }
     } WHEN {
         TURN { MOVE(player, MOVE_ICE_PUNCH); }
     } SCENE {
@@ -103,8 +103,8 @@ SINGLE_BATTLE_TEST("Chesto and Lum Berries cure sleep")
 
     GIVEN {
         ASSUME(gItemsInfo[ITEM_CHESTO_BERRY].holdEffect == HOLD_EFFECT_CURE_SLP);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(item); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(item); }
     } WHEN {
         TURN { MOVE(player, MOVE_HYPNOSIS); }
     } SCENE {
@@ -125,8 +125,8 @@ SINGLE_BATTLE_TEST("Cheri and Lum Berries cure paralysis")
 
     GIVEN {
         ASSUME(gItemsInfo[ITEM_CHERI_BERRY].holdEffect == HOLD_EFFECT_CURE_PAR);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(item); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(item); }
     } WHEN {
         TURN { MOVE(player, MOVE_THUNDER_WAVE); }
     } SCENE {
@@ -147,8 +147,8 @@ SINGLE_BATTLE_TEST("Perism and Lum Berries cure confusion")
 
     GIVEN {
         ASSUME(gItemsInfo[ITEM_PERSIM_BERRY].holdEffect == HOLD_EFFECT_CURE_CONFUSION);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(item); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(item); }
     } WHEN {
         TURN { MOVE(player, MOVE_CONFUSE_RAY); }
     } SCENE {
@@ -176,8 +176,8 @@ SINGLE_BATTLE_TEST("Berry hold effect cures status if a pokemon enters a battle"
         ASSUME(gItemsInfo[ITEM_CHERI_BERRY].holdEffect == HOLD_EFFECT_CURE_PAR);
         ASSUME(gItemsInfo[ITEM_PECHA_BERRY].holdEffect == HOLD_EFFECT_CURE_PSN);
         ASSUME(gItemsInfo[ITEM_CHESTO_BERRY].holdEffect == HOLD_EFFECT_CURE_SLP);
-        PLAYER(SPECIES_WOBBUFFET) { Status1(status); Item(ITEM_LUM_BERRY); }
-        OPPONENT(SPECIES_WOBBUFFET) { Status1(status); Item(item); }
+        PLAYER(SPECIES_LOPMONX) { Status1(status); Item(ITEM_LUM_BERRY); }
+        OPPONENT(SPECIES_LOPMONX) { Status1(status); Item(item); }
     } WHEN {
         TURN { }
     } SCENE {
@@ -196,15 +196,15 @@ SINGLE_BATTLE_TEST("Opponent Pokemon can be further poisoned with Toxic spikes a
     GIVEN {
         ASSUME(gItemsInfo[ITEM_PECHA_BERRY].holdEffect == HOLD_EFFECT_CURE_PSN);
         ASSUME(gItemsInfo[ITEM_LUM_BERRY].holdEffect == HOLD_EFFECT_CURE_STATUS);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT) { Item(item); }
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
         TURN { SWITCH(opponent, 1); }
         TURN { SWITCH(opponent, 0); }
     } SCENE {
-        MESSAGE("Wobbuffet used Toxic Spikes!");
+        MESSAGE("Lopmonx used Toxic Spikes!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC_SPIKES, player);
         MESSAGE("Poison Spikes were scattered all around the opposing team's feet!");
         // 1st switch-in
@@ -219,7 +219,7 @@ SINGLE_BATTLE_TEST("Opponent Pokemon can be further poisoned with Toxic spikes a
         }
         STATUS_ICON(opponent, poison: FALSE);
         // 2nd switch-in
-        MESSAGE("2 sent out Wobbuffet!");
+        MESSAGE("2 sent out Lopmonx!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
         STATUS_ICON(opponent, poison: TRUE);
     }
@@ -236,27 +236,27 @@ SINGLE_BATTLE_TEST("Player Pokemon can be further poisoned with Toxic spikes aft
     GIVEN {
         ASSUME(gItemsInfo[ITEM_PECHA_BERRY].holdEffect == HOLD_EFFECT_CURE_PSN);
         ASSUME(gItemsInfo[ITEM_LUM_BERRY].holdEffect == HOLD_EFFECT_CURE_STATUS);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET) {Item(item); }
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX) {Item(item); }
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TOXIC_SPIKES); }
         TURN { SWITCH(player, 1); }
         TURN { SWITCH(player, 2); }
     } SCENE {
-        MESSAGE("Foe Wobbuffet used Toxic Spikes!");
+        MESSAGE("Foe Lopmonx used Toxic Spikes!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC_SPIKES, opponent);
         MESSAGE("Poison Spikes were scattered all around your team's feet!");
         // 1st switch-in
-        MESSAGE("Go! Wobbuffet!");
+        MESSAGE("Go! Lopmonx!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, player);
         STATUS_ICON(player, poison: TRUE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         if (item == ITEM_PECHA_BERRY) {
-            MESSAGE("Wobbuffet's Pecha Berry cured poison!");
+            MESSAGE("Lopmonx's Pecha Berry cured poison!");
         } else {
-            MESSAGE("Wobbuffet's Lum Berry cured its poison problem!");
+            MESSAGE("Lopmonx's Lum Berry cured its poison problem!");
         }
         STATUS_ICON(player, poison: FALSE);
         // 2nd switch-in

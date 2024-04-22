@@ -564,12 +564,12 @@ gCryTable::
 .if P_FAMILY_LOPMON == TRUE
 	cry Cry_Lopmon
 .endif @ P_FAMILY_LOPMON
-.if P_FAMILY_WOBBUFFET == TRUE
+.if P_FAMILY_LOPMONX == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
 	cry Cry_Wynaut
 .endif @ P_GEN_3_CROSS_EVOS
-	cry Cry_Wobbuffet
-.endif @ P_FAMILY_WOBBUFFET
+	cry Cry_Lopmonx
+.endif @ P_FAMILY_LOPMONX
 .if P_FAMILY_GIRAFARIG == TRUE
 	cry Cry_Girafarig
 .if P_GEN_9_CROSS_EVOS == TRUE
@@ -2990,12 +2990,12 @@ gCryTable_Reverse::
 .if P_FAMILY_LOPMON == TRUE
 	cry_reverse Cry_Lopmon
 .endif @ P_FAMILY_LOPMON
-.if P_FAMILY_WOBBUFFET == TRUE
+.if P_FAMILY_LOPMONX == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
 	cry_reverse Cry_Wynaut
 .endif @ P_GEN_3_CROSS_EVOS
-	cry_reverse Cry_Wobbuffet
-.endif @ P_FAMILY_WOBBUFFET
+	cry_reverse Cry_Lopmonx
+.endif @ P_FAMILY_LOPMONX
 .if P_FAMILY_GIRAFARIG == TRUE
 	cry_reverse Cry_Girafarig
 .if P_GEN_9_CROSS_EVOS == TRUE

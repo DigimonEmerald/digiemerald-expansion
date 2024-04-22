@@ -17,8 +17,8 @@ SINGLE_BATTLE_TEST("Stealth Rock damage on switch in based on typing")
     PARAMETRIZE { species = SPECIES_STEELIX; divisor = 32; } // Ground/Steel not very effective
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(species);
     } WHEN {
         TURN { MOVE(player, MOVE_STEALTH_ROCK); }

@@ -5704,7 +5704,7 @@ static const struct LevelUpMove sLopmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_LOPMON
 
-#if P_FAMILY_WOBBUFFET
+#if P_FAMILY_LOPMONX
 #if P_GEN_3_CROSS_EVOS
 static const struct LevelUpMove sWynautLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -5718,14 +5718,14 @@ static const struct LevelUpMove sWynautLevelUpLearnset[] = {
 };
 #endif //P_GEN_3_CROSS_EVOS
 
-static const struct LevelUpMove sWobbuffetLevelUpLearnset[] = {
+static const struct LevelUpMove sLopmonxLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_COUNTER),
     LEVEL_UP_MOVE( 1, MOVE_MIRROR_COAT),
     LEVEL_UP_MOVE( 1, MOVE_SAFEGUARD),
     LEVEL_UP_MOVE( 1, MOVE_DESTINY_BOND),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_WOBBUFFET
+#endif //P_FAMILY_LOPMONX
 
 #if P_FAMILY_GIRAFARIG
 static const struct LevelUpMove sGirafarigLevelUpLearnset[] = {

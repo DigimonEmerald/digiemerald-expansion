@@ -2985,7 +2985,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_LOPMON_QMARK] = LOPMON_MISC_INFO(QuestionMark,    TRUE,  24, 40, 32, 56,  6 ),
 #endif //P_FAMILY_LOPMON
 
-#if P_FAMILY_WOBBUFFET
+#if P_FAMILY_LOPMONX
 #if P_GEN_3_CROSS_EVOS
     [SPECIES_WYNAUT] =
     {
@@ -3039,11 +3039,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sWynautLevelUpLearnset,
         .teachableLearnset = sWynautTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_WOBBUFFET}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_LOPMONX}),
     },
 #endif //P_GEN_3_CROSS_EVOS
 
-    [SPECIES_WOBBUFFET] =
+    [SPECIES_LOPMONX] =
     {
         .baseHP        = 190,
         .baseAttack    = 33,
@@ -3062,14 +3062,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_SHADOW_TAG, ABILITY_NONE, ABILITY_TELEPATHY },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Wobbuffet"),
-        .cryId = CRY_WOBBUFFET,
-        .natDexNum = NATIONAL_DEX_WOBBUFFET,
+        .speciesName = _("Lopmonx"),
+        .cryId = CRY_LOPMONX,
+        .natDexNum = NATIONAL_DEX_LOPMONX,
         .categoryName = _("Patient"),
         .height = 13,
         .weight = 285,
         .description = COMPOUND_STRING(
-            "Usually docile, a Wobbuffet strikes back\n"
+            "Usually docile, a Lopmonx strikes back\n"
             "ferociously if its black tail is attacked.\n"
             "It makes its lair in caves where it waits\n"
             "for nightfall."),
@@ -3077,33 +3077,33 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Wobbuffet,
-        .frontPicFemale = gMonFrontPic_WobbuffetF,
+        .frontPic = gMonFrontPic_Lopmonx,
+        .frontPicFemale = gMonFrontPic_LopmonxF,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_Wobbuffet,
+        .frontAnimFrames = sAnims_Lopmonx,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Wobbuffet,
-        .backPicFemale = gMonBackPic_WobbuffetF,
+        .backPic = gMonBackPic_Lopmonx,
+        .backPicFemale = gMonBackPic_LopmonxF,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Wobbuffet,
-        .shinyPalette = gMonShinyPalette_Wobbuffet,
-        .iconSprite = gMonIcon_Wobbuffet,
+        .palette = gMonPalette_Lopmonx,
+        .shinyPalette = gMonShinyPalette_Lopmonx,
+        .iconSprite = gMonIcon_Lopmonx,
         .iconPalIndex = 0,
     #if P_CUSTOM_GENDER_DIFF_ICONS == TRUE
-        .iconSpriteFemale = gMonIcon_WobbuffetF,
+        .iconSpriteFemale = gMonIcon_LopmonxF,
         .iconPalIndexFemale = 0,
     #endif
-        FOOTPRINT(Wobbuffet)
+        FOOTPRINT(Lopmonx)
         .tmIlliterate = TRUE,
-        .levelUpLearnset = sWobbuffetLevelUpLearnset,
-        .teachableLearnset = sWobbuffetTeachableLearnset,
+        .levelUpLearnset = sLopmonxLevelUpLearnset,
+        .teachableLearnset = sLopmonxTeachableLearnset,
     },
-#endif //P_FAMILY_WOBBUFFET
+#endif //P_FAMILY_LOPMONX
 
 #if P_FAMILY_GIRAFARIG
     [SPECIES_GIRAFARIG] =

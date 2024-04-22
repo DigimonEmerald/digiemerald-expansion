@@ -35,12 +35,12 @@ SINGLE_BATTLE_TEST("Reflect Type does not affect any of Arceus' forms")
     }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(species);
     } WHEN {
         TURN { MOVE(player, MOVE_REFLECT_TYPE); }
     } SCENE {
-        MESSAGE("Wobbuffet used Reflect Type!");
+        MESSAGE("Lopmonx used Reflect Type!");
         MESSAGE("But it failed!");
     }
 }
@@ -76,12 +76,12 @@ SINGLE_BATTLE_TEST("Reflect Type does not affect any of Silvally's forms")
     }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(species);
     } WHEN {
         TURN { MOVE(player, MOVE_REFLECT_TYPE); }
     } SCENE {
-        MESSAGE("Wobbuffet used Reflect Type!");
+        MESSAGE("Lopmonx used Reflect Type!");
         MESSAGE("But it failed!");
     }
 }
@@ -153,12 +153,12 @@ SINGLE_BATTLE_TEST("Reflect Type copies a target's pure type")
 
 SINGLE_BATTLE_TEST("Reflect Type defaults to Normal type for the user's type1 and type2 if the target only has a 3rd type")
 {
-    ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[0] == TYPE_PSYCHIC);
-    ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[1] == TYPE_PSYCHIC);
+    ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[0] == TYPE_PSYCHIC);
+    ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[1] == TYPE_PSYCHIC);
     ASSUME(gSpeciesInfo[SPECIES_GIGIMON].types[0] == TYPE_FIRE);
     ASSUME(gSpeciesInfo[SPECIES_GIGIMON].types[1] == TYPE_FIRE);
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_GIGIMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_BURN_UP); }
@@ -171,13 +171,13 @@ SINGLE_BATTLE_TEST("Reflect Type defaults to Normal type for the user's type1 an
         HP_BAR(player);
         MESSAGE("Foe Gigimon burned itself out!");
         // Turn 2
-        MESSAGE("Wobbuffet used Forest'sCurs!");
+        MESSAGE("Lopmonx used Forest'sCurs!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FORESTS_CURSE, player);
         MESSAGE("Grass type was added to Foe Gigimon!");
         // Turn 3
-        MESSAGE("Wobbuffet used Reflect Type!");
+        MESSAGE("Lopmonx used Reflect Type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, player);
-        MESSAGE("Wobbuffet's type changed to match the Foe Gigimon's!");
+        MESSAGE("Lopmonx's type changed to match the Foe Gigimon's!");
     } THEN {
         EXPECT_EQ(player->type1, TYPE_NORMAL);
         EXPECT_EQ(player->type2, TYPE_NORMAL);

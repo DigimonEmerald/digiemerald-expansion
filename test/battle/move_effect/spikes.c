@@ -14,8 +14,8 @@ SINGLE_BATTLE_TEST("Spikes damage on switch in")
     PARAMETRIZE { layers = 2; divisor = 6; }
     PARAMETRIZE { layers = 3; divisor = 4; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         u32 count;
@@ -39,8 +39,8 @@ SINGLE_BATTLE_TEST("Spikes damage on switch in")
 SINGLE_BATTLE_TEST("Spikes fails after 3 layers")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(player, MOVE_SPIKES); }
@@ -56,7 +56,7 @@ SINGLE_BATTLE_TEST("Spikes fails after 3 layers")
         MESSAGE("Spikes were scattered all around the opposing team!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPIKES, player);
         MESSAGE("Spikes were scattered all around the opposing team!");
-        MESSAGE("Wobbuffet used Spikes!");
+        MESSAGE("Lopmonx used Spikes!");
         MESSAGE("But it failed!");
         MESSAGE("2 sent out Wynaut!");
         HP_BAR(opponent, damage: maxHP / 4);
@@ -67,8 +67,8 @@ SINGLE_BATTLE_TEST("Spikes fails after 3 layers")
 SINGLE_BATTLE_TEST("Spikes damage on subsequent switch ins")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(player, MOVE_SPIKES); }
@@ -80,15 +80,15 @@ SINGLE_BATTLE_TEST("Spikes damage on subsequent switch ins")
         MESSAGE("2 sent out Wynaut!");
         HP_BAR(opponent, damage: maxHP1 / 8);
         MESSAGE("Foe Wynaut is hurt by spikes!");
-        MESSAGE("2 sent out Wobbuffet!");
+        MESSAGE("2 sent out Lopmonx!");
         HP_BAR(opponent, damage: maxHP0 / 8);
-        MESSAGE("Foe Wobbuffet is hurt by spikes!");
+        MESSAGE("Foe Lopmonx is hurt by spikes!");
     }
 }
 
 SINGLE_BATTLE_TEST("Spikes do not damage airborne Pokemon")
 {
-    u32 species = SPECIES_WOBBUFFET;
+    u32 species = SPECIES_LOPMONX;
     u32 item = ITEM_NONE;
     u32 move1 = MOVE_CELEBRATE;
     u32 move2 = MOVE_CELEBRATE;
@@ -117,8 +117,8 @@ SINGLE_BATTLE_TEST("Spikes do not damage airborne Pokemon")
     PARAMETRIZE { item = ITEM_AIR_BALLOON; move1 = MOVE_INGRAIN; airborne = FALSE; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(species) { Item(item); }
     } WHEN {
         TURN { MOVE(player, MOVE_SPIKES); MOVE(opponent, move1); }

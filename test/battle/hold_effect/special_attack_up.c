@@ -16,8 +16,8 @@ SINGLE_BATTLE_TEST("Petaya Berry raises the holder's Sp. Atk by one stage when H
     PARAMETRIZE { move = MOVE_DRAGON_RAGE; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { MaxHP(160); HP(80); Item(ITEM_PETAYA_BERRY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { MaxHP(160); HP(80); Item(ITEM_PETAYA_BERRY); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
@@ -25,11 +25,11 @@ SINGLE_BATTLE_TEST("Petaya Berry raises the holder's Sp. Atk by one stage when H
         if (move == MOVE_TACKLE) {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-                MESSAGE("Using Petaya Berry, the Sp. Atk of Wobbuffet rose!");
+                MESSAGE("Using Petaya Berry, the Sp. Atk of Lopmonx rose!");
             }
         } else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Using Petaya Berry, the Sp. Atk of Wobbuffet rose!");
+            MESSAGE("Using Petaya Berry, the Sp. Atk of Lopmonx rose!");
         }
     } THEN {
         if (move == MOVE_DRAGON_RAGE)
@@ -41,7 +41,7 @@ SINGLE_BATTLE_TEST("Petaya Berry raises Sp. Atk by one stage when HP drops to 1/
 {
     GIVEN {
         PLAYER(SPECIES_KYAROMON) { MaxHP(80); HP(80); Ability(ABILITY_GLUTTONY); Item(ITEM_PETAYA_BERRY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DRAGON_RAGE); }
     } SCENE {
@@ -57,7 +57,7 @@ SINGLE_BATTLE_TEST("Petaya Berry raises Sp. Atk by one stage when HP drops to 1/
 {
     GIVEN {
         PLAYER(SPECIES_APPLIN) { MaxHP(160); HP(80); Ability(ABILITY_RIPEN); Item(ITEM_PETAYA_BERRY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DRAGON_RAGE); }
     } SCENE {

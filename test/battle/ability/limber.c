@@ -5,7 +5,7 @@ SINGLE_BATTLE_TEST("Limber prevents paralysis")
 {
     GIVEN {
         PLAYER(SPECIES_CHAPMON) { Ability(ABILITY_LIMBER); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_THUNDER_SHOCK); }
     } SCENE {

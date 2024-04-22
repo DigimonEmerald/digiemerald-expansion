@@ -155,7 +155,7 @@
 #define P_FAMILY_LALAMON                 P_GEN_2_POKEMON
 #define P_FAMILY_LOOGAMON              P_GEN_2_POKEMON
 #define P_FAMILY_LOPMON                   P_GEN_2_POKEMON
-#define P_FAMILY_WOBBUFFET               P_GEN_2_POKEMON
+#define P_FAMILY_LOPMONX               P_GEN_2_POKEMON
 #define P_FAMILY_GIRAFARIG               P_GEN_2_POKEMON
 #define P_FAMILY_PINECO                  P_GEN_2_POKEMON
 #define P_FAMILY_DUNSPARCE               P_GEN_2_POKEMON

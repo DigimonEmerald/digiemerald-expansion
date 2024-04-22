@@ -16,8 +16,8 @@ SINGLE_BATTLE_TEST("Micle Berry raises the holder's accuracy by 1.2 when HP drop
     PARAMETRIZE { move = MOVE_DRAGON_RAGE; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { MaxHP(160); HP(80); Item(ITEM_MICLE_BERRY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { MaxHP(160); HP(80); Item(ITEM_MICLE_BERRY); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
@@ -25,11 +25,11 @@ SINGLE_BATTLE_TEST("Micle Berry raises the holder's accuracy by 1.2 when HP drop
         if (move == MOVE_TACKLE) {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-                MESSAGE("Wobbuffet boosted the accuracy of its next move using Micle Berry!");
+                MESSAGE("Lopmonx boosted the accuracy of its next move using Micle Berry!");
             }
         } else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Wobbuffet boosted the accuracy of its next move using Micle Berry!");
+            MESSAGE("Lopmonx boosted the accuracy of its next move using Micle Berry!");
         }
     }
 }
@@ -38,7 +38,7 @@ SINGLE_BATTLE_TEST("Micle Berry raises the holder's accuracy by 1.2 when HP drop
 {
     GIVEN {
         PLAYER(SPECIES_KYAROMON) { MaxHP(80); HP(80); Ability(ABILITY_GLUTTONY); Item(ITEM_MICLE_BERRY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DRAGON_RAGE); }
     } SCENE {
@@ -53,14 +53,14 @@ SINGLE_BATTLE_TEST("Micle Berry raises the holder's accuracy by 1.2")
     PASSES_RANDOMLY(24, 25, RNG_ACCURACY);
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SUBMISSION].accuracy == 80);
-        PLAYER(SPECIES_WOBBUFFET) { MaxHP(160); HP(80); Item(ITEM_MICLE_BERRY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { MaxHP(160); HP(80); Item(ITEM_MICLE_BERRY); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DRAGON_RAGE); MOVE(player, MOVE_SUBMISSION); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_RAGE, opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-        MESSAGE("Wobbuffet boosted the accuracy of its next move using Micle Berry!");
+        MESSAGE("Lopmonx boosted the accuracy of its next move using Micle Berry!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SUBMISSION, player);
     }
 }

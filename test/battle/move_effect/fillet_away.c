@@ -9,8 +9,8 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Fillet Away cuts the user's HP in half")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_FILLET_AWAY); }
     } SCENE {
@@ -22,16 +22,16 @@ SINGLE_BATTLE_TEST("Fillet Away cuts the user's HP in half")
 SINGLE_BATTLE_TEST("Fillet Away sharply raises Attack, Sp. Atk, and Speed")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_FILLET_AWAY); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FILLET_AWAY, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Wobbuffet's Attack sharply rose!");
-        MESSAGE("Wobbuffet's Sp. Atk sharply rose!");
-        MESSAGE("Wobbuffet's Speed sharply rose!");
+        MESSAGE("Lopmonx's Attack sharply rose!");
+        MESSAGE("Lopmonx's Sp. Atk sharply rose!");
+        MESSAGE("Lopmonx's Speed sharply rose!");
         HP_BAR(player);
     } THEN {
         EXPECT_EQ(player->statStages[STAT_ATK], DEFAULT_STAT_STAGE + 2);
@@ -43,8 +43,8 @@ SINGLE_BATTLE_TEST("Fillet Away sharply raises Attack, Sp. Atk, and Speed")
 SINGLE_BATTLE_TEST("Fillet Away fails if user's current HP is half or less than half its maximum")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { MaxHP(100); HP(50);}
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { MaxHP(100); HP(50);}
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_FILLET_AWAY); }
     } SCENE {

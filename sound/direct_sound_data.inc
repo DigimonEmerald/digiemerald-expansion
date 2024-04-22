@@ -1718,7 +1718,7 @@ Cry_Lopmon::
 	.incbin "sound/direct_sound_samples/cries/lopmon.bin"
 .endif @ P_FAMILY_LOPMON
 
-.if P_FAMILY_WOBBUFFET == TRUE
+.if P_FAMILY_LOPMONX == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
 	.align 2
 Cry_Wynaut::
@@ -1726,9 +1726,9 @@ Cry_Wynaut::
 .endif @ P_GEN_3_CROSS_EVOS
 
 	.align 2
-Cry_Wobbuffet::
-	.incbin "sound/direct_sound_samples/cries/wobbuffet.bin"
-.endif @ P_FAMILY_WOBBUFFET
+Cry_Lopmonx::
+	.incbin "sound/direct_sound_samples/cries/lopmonx.bin"
+.endif @ P_FAMILY_LOPMONX
 
 .if P_FAMILY_GIRAFARIG == TRUE
 	.align 2

@@ -16,8 +16,8 @@ SINGLE_BATTLE_TEST("Ganlon Berry raises the holder's Defense by one stage when H
     PARAMETRIZE { move = MOVE_DRAGON_RAGE; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { MaxHP(160); HP(80); Item(ITEM_GANLON_BERRY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { MaxHP(160); HP(80); Item(ITEM_GANLON_BERRY); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
@@ -25,11 +25,11 @@ SINGLE_BATTLE_TEST("Ganlon Berry raises the holder's Defense by one stage when H
         if (move == MOVE_TACKLE) {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-                MESSAGE("Using Ganlon Berry, the Defense of Wobbuffet rose!");
+                MESSAGE("Using Ganlon Berry, the Defense of Lopmonx rose!");
             }
         } else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Using Ganlon Berry, the Defense of Wobbuffet rose!");
+            MESSAGE("Using Ganlon Berry, the Defense of Lopmonx rose!");
         }
     } THEN {
         if (move == MOVE_DRAGON_RAGE)
@@ -41,7 +41,7 @@ SINGLE_BATTLE_TEST("Ganlon Berry raises Defense by one stage when HP drops to 1/
 {
     GIVEN {
         PLAYER(SPECIES_KYAROMON) { MaxHP(80); HP(80); Ability(ABILITY_GLUTTONY); Item(ITEM_GANLON_BERRY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DRAGON_RAGE); }
     } SCENE {
@@ -57,7 +57,7 @@ SINGLE_BATTLE_TEST("Ganlon Berry raises Defense by one stage when HP drops to 1/
 {
     GIVEN {
         PLAYER(SPECIES_APPLIN) { MaxHP(160); HP(80); Ability(ABILITY_RIPEN); Item(ITEM_GANLON_BERRY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DRAGON_RAGE); }
     } SCENE {

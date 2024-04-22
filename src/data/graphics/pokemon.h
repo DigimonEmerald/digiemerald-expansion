@@ -3259,7 +3259,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonIcon_LopmonQuestionMark[] = INCBIN_U8("graphics/pokemon/lopmon/question_mark/icon.4bpp");
 #endif //P_FAMILY_LOPMON
 
-#if P_FAMILY_WOBBUFFET
+#if P_FAMILY_LOPMONX
 #if P_GEN_3_CROSS_EVOS
     const u32 gMonFrontPic_Wynaut[] = INCBIN_U32("graphics/pokemon/wynaut/anim_front.4bpp.lz");
     const u32 gMonPalette_Wynaut[] = INCBIN_U32("graphics/pokemon/wynaut/normal.gbapal.lz");
@@ -3271,21 +3271,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_GEN_3_CROSS_EVOS
 
-    const u32 gMonFrontPic_Wobbuffet[] = INCBIN_U32("graphics/pokemon/wobbuffet/anim_front.4bpp.lz");
-    const u32 gMonPalette_Wobbuffet[] = INCBIN_U32("graphics/pokemon/wobbuffet/normal.gbapal.lz");
-    const u32 gMonBackPic_Wobbuffet[] = INCBIN_U32("graphics/pokemon/wobbuffet/back.4bpp.lz");
-    const u32 gMonShinyPalette_Wobbuffet[] = INCBIN_U32("graphics/pokemon/wobbuffet/shiny.gbapal.lz");
-    const u8 gMonIcon_Wobbuffet[] = INCBIN_U8("graphics/pokemon/wobbuffet/icon.4bpp");
+    const u32 gMonFrontPic_Lopmonx[] = INCBIN_U32("graphics/pokemon/lopmonx/anim_front.4bpp.lz");
+    const u32 gMonPalette_Lopmonx[] = INCBIN_U32("graphics/pokemon/lopmonx/normal.gbapal.lz");
+    const u32 gMonBackPic_Lopmonx[] = INCBIN_U32("graphics/pokemon/lopmonx/back.4bpp.lz");
+    const u32 gMonShinyPalette_Lopmonx[] = INCBIN_U32("graphics/pokemon/lopmonx/shiny.gbapal.lz");
+    const u8 gMonIcon_Lopmonx[] = INCBIN_U8("graphics/pokemon/lopmonx/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Wobbuffet[] = INCBIN_U8("graphics/pokemon/wobbuffet/footprint.1bpp");
+    const u8 gMonFootprint_Lopmonx[] = INCBIN_U8("graphics/pokemon/lopmonx/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_WobbuffetF[] = INCBIN_U32("graphics/pokemon/wobbuffet/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_WobbuffetF[] = INCBIN_U32("graphics/pokemon/wobbuffet/backf.4bpp.lz");
+    const u32 gMonFrontPic_LopmonxF[] = INCBIN_U32("graphics/pokemon/lopmonx/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_LopmonxF[] = INCBIN_U32("graphics/pokemon/lopmonx/backf.4bpp.lz");
 #if P_CUSTOM_GENDER_DIFF_ICONS
-    const u8 gMonIcon_WobbuffetF[] = INCBIN_U8("graphics/pokemon/wobbuffet/iconf.4bpp");
+    const u8 gMonIcon_LopmonxF[] = INCBIN_U8("graphics/pokemon/lopmonx/iconf.4bpp");
 #endif
-#endif //P_FAMILY_WOBBUFFET
+#endif //P_FAMILY_LOPMONX
 
 #if P_FAMILY_GIRAFARIG
     const u32 gMonFrontPic_Girafarig[] = INCBIN_U32("graphics/pokemon/girafarig/anim_front.4bpp.lz");

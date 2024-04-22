@@ -10,8 +10,8 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Poison Sting inflicts poison")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_POISON_STING); }
         TURN {}
@@ -31,7 +31,7 @@ SINGLE_BATTLE_TEST("Poison cannot be inflicted on Poison and Steel-type Pokémon
     GIVEN {
         ASSUME(gSpeciesInfo[SPECIES_PUSUMON].types[0] == TYPE_POISON);
         ASSUME(gSpeciesInfo[SPECIES_REGISTEEL].types[0] == TYPE_STEEL);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(mon);
     } WHEN {
         TURN { MOVE(player, MOVE_TWINEEDLE); }

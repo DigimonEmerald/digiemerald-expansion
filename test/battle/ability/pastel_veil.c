@@ -5,7 +5,7 @@ SINGLE_BATTLE_TEST("Pastel Veil prevents Poison Sting poison")
 {
     GIVEN {
         ASSUME(MoveHasAdditionalEffect(MOVE_POISON_STING, MOVE_EFFECT_POISON) == TRUE);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
     } WHEN {
         TURN { MOVE(player, MOVE_POISON_STING); }
@@ -19,7 +19,7 @@ DOUBLE_BATTLE_TEST("Pastel Veil prevents Poison Sting poison on partner")
 {
     GIVEN {
         ASSUME(MoveHasAdditionalEffect(MOVE_POISON_STING, MOVE_EFFECT_POISON) == TRUE);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
         OPPONENT(SPECIES_WYNAUT);
@@ -71,12 +71,12 @@ SINGLE_BATTLE_TEST("Pastel Veil prevents Toxic bad poison")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TOXIC].effect == EFFECT_TOXIC);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC); }
     } SCENE {
-        MESSAGE("Wobbuffet used Toxic!");
+        MESSAGE("Lopmonx used Toxic!");
         ABILITY_POPUP(opponent, ABILITY_PASTEL_VEIL);
         MESSAGE("Foe Negamon is protected by a pastel veil!");
         NOT STATUS_ICON(opponent, badPoison: TRUE);
@@ -87,14 +87,14 @@ DOUBLE_BATTLE_TEST("Pastel Veil prevents Toxic bad poison on partner")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TOXIC].effect == EFFECT_TOXIC);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TOXIC, target: opponentRight); }
     } SCENE {
-        MESSAGE("Wobbuffet used Toxic!");
+        MESSAGE("Lopmonx used Toxic!");
         ABILITY_POPUP(opponentLeft, ABILITY_PASTEL_VEIL);
         MESSAGE("Foe Wynaut is protected by a pastel veil!");
         NOT STATUS_ICON(opponentRight, badPoison: TRUE);
@@ -105,8 +105,8 @@ SINGLE_BATTLE_TEST("Pastel Veil prevents Toxic Spikes poison")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TOXIC_SPIKES].effect == EFFECT_TOXIC_SPIKES);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
@@ -121,10 +121,10 @@ DOUBLE_BATTLE_TEST("Pastel Veil prevents Toxic Spikes poison on partner")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TOXIC_SPIKES].effect == EFFECT_TOXIC_SPIKES);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TOXIC_SPIKES); }
@@ -138,16 +138,16 @@ DOUBLE_BATTLE_TEST("Pastel Veil prevents Toxic Spikes poison on partner")
 DOUBLE_BATTLE_TEST("Pastel Veil cures partner's poison on initial switch in")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET) { Status1(STATUS1_POISON); }
+        OPPONENT(SPECIES_LOPMONX) { Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
     } WHEN {
         TURN {}
     } SCENE {
-        MESSAGE("2 sent out Wobbuffet and Negamon!");
+        MESSAGE("2 sent out Lopmonx and Negamon!");
         ABILITY_POPUP(opponentRight, ABILITY_PASTEL_VEIL);
-        MESSAGE("Foe Wobbuffet was cured of its poisoning!");
+        MESSAGE("Foe Lopmonx was cured of its poisoning!");
         STATUS_ICON(opponentLeft, none: TRUE);
     }
 }
@@ -155,9 +155,9 @@ DOUBLE_BATTLE_TEST("Pastel Veil cures partner's poison on initial switch in")
 DOUBLE_BATTLE_TEST("Pastel Veil cures partner's poison on switch in")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET) { Status1(STATUS1_POISON); }
+        OPPONENT(SPECIES_LOPMONX) { Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
     } WHEN {
@@ -165,7 +165,7 @@ DOUBLE_BATTLE_TEST("Pastel Veil cures partner's poison on switch in")
     } SCENE {
         MESSAGE("2 sent out Negamon!");
         ABILITY_POPUP(opponentRight, ABILITY_PASTEL_VEIL);
-        MESSAGE("Foe Wobbuffet was cured of its poisoning!");
+        MESSAGE("Foe Lopmonx was cured of its poisoning!");
         STATUS_ICON(opponentLeft, none: TRUE);
     }
 }

@@ -32,7 +32,7 @@ AI_SINGLE_BATTLE_TEST("AI prefers Bubble over Water Gun if it's slower")
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_SCIZOR) { Speed(speedPlayer); }
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_WATER_GUN, MOVE_BUBBLE); Speed(speedAi); }
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_WATER_GUN, MOVE_BUBBLE); Speed(speedAi); }
     } WHEN {
         if (speedPlayer > speedAi)
         {
@@ -98,8 +98,8 @@ AI_SINGLE_BATTLE_TEST("AI prefers moves with better accuracy, but only if they b
 
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET) { HP(hp); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(hp); }
+        PLAYER(SPECIES_LOPMONX);
         ASSUME(gMovesInfo[MOVE_SWIFT].accuracy == 0);
         ASSUME(gMovesInfo[MOVE_SLAM].power == gMovesInfo[MOVE_STRENGTH].power);
         ASSUME(gMovesInfo[MOVE_MEGA_KICK].power > gMovesInfo[MOVE_STRENGTH].power);
@@ -148,7 +148,7 @@ AI_SINGLE_BATTLE_TEST("AI prefers moves with better accuracy, but only if they b
                 break;
             }
     } SCENE {
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmonx fainted!");
     }
 }
 
@@ -172,7 +172,7 @@ AI_SINGLE_BATTLE_TEST("AI prefers moves which deal more damage instead of moves 
         ASSUME(gMovesInfo[MOVE_WATER_GUN].category == DAMAGE_CATEGORY_SPECIAL);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_GABUMON_X) { Ability(abilityDef); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PURURUMON) { Moves(move1, move2, move3, move4); Ability(abilityAtk); }
     } WHEN {
             switch (turns)
@@ -200,7 +200,7 @@ AI_SINGLE_BATTLE_TEST("AI prefers Earthquake over Drill Run if both require the 
         ASSUME(gMovesInfo[MOVE_DRILL_RUN].category == DAMAGE_CATEGORY_PHYSICAL);  // Added because Monimon has to KO Gabumon_x
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_GABUMON_X);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_MONIMON) { Moves(MOVE_EARTHQUAKE, MOVE_DRILL_RUN); }
     } WHEN {
         TURN { EXPECT_MOVE(opponent, MOVE_EARTHQUAKE); }
@@ -222,11 +222,11 @@ AI_SINGLE_BATTLE_TEST("AI prefers a weaker move over a one with a downside effec
     PARAMETRIZE { move1 = MOVE_OVERHEAT; move2 = MOVE_FLAMETHROWER; hp = 250; expectedMove = MOVE_OVERHEAT; turns = 1; }
 
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_FLAMETHROWER].category == DAMAGE_CATEGORY_SPECIAL); // Added because Gabumon_x has to KO Wobbuffet
-        ASSUME(gMovesInfo[MOVE_OVERHEAT].category == DAMAGE_CATEGORY_SPECIAL);     // Added because Gabumon_x has to KO Wobbuffet
+        ASSUME(gMovesInfo[MOVE_FLAMETHROWER].category == DAMAGE_CATEGORY_SPECIAL); // Added because Gabumon_x has to KO Lopmonx
+        ASSUME(gMovesInfo[MOVE_OVERHEAT].category == DAMAGE_CATEGORY_SPECIAL);     // Added because Gabumon_x has to KO Lopmonx
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET) { HP(hp); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(hp); }
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_GABUMON_X) { Moves(move1, move2, move3, move4); }
     } WHEN {
         switch (turns)
@@ -240,7 +240,7 @@ AI_SINGLE_BATTLE_TEST("AI prefers a weaker move over a one with a downside effec
             break;
         }
     } SCENE {
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmonx fainted!");
     }
 }
 
@@ -248,14 +248,14 @@ AI_SINGLE_BATTLE_TEST("AI prefers moves with the best possible score, chosen ran
 {
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET) { HP(5); };
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_THUNDERBOLT, MOVE_SLUDGE_BOMB, MOVE_TAKE_DOWN); }
+        PLAYER(SPECIES_LOPMONX) { HP(5); };
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_THUNDERBOLT, MOVE_SLUDGE_BOMB, MOVE_TAKE_DOWN); }
     } WHEN {
         TURN { EXPECT_MOVES(opponent, MOVE_THUNDERBOLT, MOVE_SLUDGE_BOMB); SEND_OUT(player, 1); }
     }
     SCENE {
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmonx fainted!");
     }
 }
 
@@ -265,8 +265,8 @@ AI_SINGLE_BATTLE_TEST("AI can choose a status move that boosts the attack by two
         ASSUME(gMovesInfo[MOVE_STRENGTH].category == DAMAGE_CATEGORY_PHYSICAL);
         ASSUME(gMovesInfo[MOVE_HORN_ATTACK].category == DAMAGE_CATEGORY_PHYSICAL);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET) { HP(277); };
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(277); };
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_BETAMON_X) { Moves(MOVE_STRENGTH, MOVE_HORN_ATTACK, MOVE_SWORDS_DANCE); }
     } WHEN {
         TURN { EXPECT_MOVES(opponent, MOVE_STRENGTH, MOVE_SWORDS_DANCE); }
@@ -298,8 +298,8 @@ AI_SINGLE_BATTLE_TEST("AI chooses the safest option to faint the target, taking 
 
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET) { HP(5); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(5); }
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_MONIMON) { Moves(move1, move2, move3, move4); Ability(abilityAtk); Item(holdItemAtk); }
     } WHEN {
         TURN {  if (expectedMove2 == MOVE_NONE) { EXPECT_MOVE(opponent, expectedMove); SEND_OUT(player, 1); }
@@ -307,7 +307,7 @@ AI_SINGLE_BATTLE_TEST("AI chooses the safest option to faint the target, taking 
              }
     }
     SCENE {
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmonx fainted!");
     }
 }
 
@@ -327,8 +327,8 @@ AI_SINGLE_BATTLE_TEST("AI chooses the safest option to faint the target, taking 
     KNOWN_FAILING;
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET) { HP(5); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(5); }
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_MONIMON) { Moves(move1, move2, move3, move4); Ability(abilityAtk); Item(holdItemAtk); }
     } WHEN {
         TURN {  if (expectedMove2 == MOVE_NONE) { EXPECT_MOVE(opponent, expectedMove); SEND_OUT(player, 1); }
@@ -336,7 +336,7 @@ AI_SINGLE_BATTLE_TEST("AI chooses the safest option to faint the target, taking 
              }
     }
     SCENE {
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmonx fainted!");
     }
 }
 
@@ -353,8 +353,8 @@ AI_SINGLE_BATTLE_TEST("AI won't use Solar Beam if there is no Sun up or the user
         ASSUME(gMovesInfo[MOVE_SOLAR_BEAM].category == DAMAGE_CATEGORY_SPECIAL);
         ASSUME(gMovesInfo[MOVE_GRASS_PLEDGE].category == DAMAGE_CATEGORY_SPECIAL);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET) { HP(211); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(211); }
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_GABUMON_X) { Moves(MOVE_SOLAR_BEAM, MOVE_GRASS_PLEDGE); Ability(abilityAtk); Item(holdItemAtk); }
     } WHEN {
         if (abilityAtk == ABILITY_DROUGHT) {
@@ -368,7 +368,7 @@ AI_SINGLE_BATTLE_TEST("AI won't use Solar Beam if there is no Sun up or the user
             TURN { EXPECT_MOVE(opponent, MOVE_GRASS_PLEDGE); SEND_OUT(player, 1); }
         }
     } SCENE {
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmonx fainted!");
     }
 }
 
@@ -378,7 +378,7 @@ AI_SINGLE_BATTLE_TEST("AI won't use ground type attacks against flying type Poke
         ASSUME(gMovesInfo[MOVE_EARTHQUAKE].category == DAMAGE_CATEGORY_PHYSICAL); // Otherwise, it doesn't KO Gotsumon
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_GOTSUMON);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PURURUMON) { Moves(MOVE_EARTHQUAKE, MOVE_TACKLE, MOVE_POISON_STING, MOVE_GUST); }
     } WHEN {
         TURN { NOT_EXPECT_MOVE(opponent, MOVE_EARTHQUAKE); }
@@ -405,10 +405,10 @@ AI_DOUBLE_BATTLE_TEST("AI won't use a Weather changing move if partner already c
 
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(weatherMoveLeft); }
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_TACKLE, weatherMoveRight); }
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Moves(weatherMoveLeft); }
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_TACKLE, weatherMoveRight); }
     } WHEN {
             TURN {  NOT_EXPECT_MOVE(opponentRight, weatherMoveRight);
                     SCORE_LT_VAL(opponentRight, weatherMoveRight, AI_SCORE_DEFAULT, target:playerLeft);
@@ -428,10 +428,10 @@ AI_DOUBLE_BATTLE_TEST("AI will not use Helping Hand if partner does not have any
 
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_HELPING_HAND, MOVE_TACKLE); }
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(move1, move2, move3, move4); }
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_HELPING_HAND, MOVE_TACKLE); }
+        OPPONENT(SPECIES_LOPMONX) { Moves(move1, move2, move3, move4); }
     } WHEN {
             TURN {  NOT_EXPECT_MOVE(opponentLeft, MOVE_HELPING_HAND);
                     SCORE_LT_VAL(opponentLeft, MOVE_HELPING_HAND, AI_SCORE_DEFAULT, target:playerLeft);
@@ -439,7 +439,7 @@ AI_DOUBLE_BATTLE_TEST("AI will not use Helping Hand if partner does not have any
                     SCORE_LT_VAL(opponentLeft, MOVE_HELPING_HAND, AI_SCORE_DEFAULT, target:opponentLeft);
                  }
     } SCENE {
-        NOT MESSAGE("Foe Wobbuffet used Helping Hand!");
+        NOT MESSAGE("Foe Lopmonx used Helping Hand!");
     }
 }
 
@@ -457,10 +457,10 @@ AI_DOUBLE_BATTLE_TEST("AI will not use a status move if partner already chose He
 
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_HELPING_HAND); }
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_TACKLE, statusMove); }
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_HELPING_HAND); }
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_TACKLE, statusMove); }
     } WHEN {
             TURN {  NOT_EXPECT_MOVE(opponentRight, statusMove);
                     SCORE_LT_VAL(opponentRight, statusMove, AI_SCORE_DEFAULT, target:playerLeft);
@@ -468,7 +468,7 @@ AI_DOUBLE_BATTLE_TEST("AI will not use a status move if partner already chose He
                     SCORE_LT_VAL(opponentRight, statusMove, AI_SCORE_DEFAULT, target:opponentLeft);
                  }
     } SCENE {
-        MESSAGE("Foe Wobbuffet used Helping Hand!");
+        MESSAGE("Foe Lopmonx used Helping Hand!");
     }
 }
 
@@ -476,7 +476,7 @@ AI_SINGLE_BATTLE_TEST("AI without any flags chooses moves at random - singles")
 {
     GIVEN {
         AI_FLAGS(0);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PURURUMON) { Moves(MOVE_SPLASH, MOVE_EXPLOSION, MOVE_RAGE, MOVE_HELPING_HAND); }
     } WHEN {
             TURN { EXPECT_MOVES(opponent, MOVE_SPLASH, MOVE_EXPLOSION, MOVE_RAGE, MOVE_HELPING_HAND);
@@ -492,8 +492,8 @@ AI_DOUBLE_BATTLE_TEST("AI without any flags chooses moves at random - doubles")
 {
     GIVEN {
         AI_FLAGS(0);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PURURUMON) { Moves(MOVE_SPLASH, MOVE_EXPLOSION, MOVE_RAGE, MOVE_HELPING_HAND); }
         OPPONENT(SPECIES_PURURUMON) { Moves(MOVE_SPLASH, MOVE_EXPLOSION, MOVE_RAGE, MOVE_HELPING_HAND); }
     } WHEN {
@@ -515,14 +515,14 @@ AI_SINGLE_BATTLE_TEST("AI will choose either Rock Tomb or Bulldoze if Stat drop 
 {
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET) { HP(46); Speed(20); }
+        PLAYER(SPECIES_LOPMONX) { HP(46); Speed(20); }
         PLAYER(SPECIES_WYNAUT) { Speed(20); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(10); Moves(MOVE_BULLDOZE, MOVE_ROCK_TOMB); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(10); Moves(MOVE_BULLDOZE, MOVE_ROCK_TOMB); }
     } WHEN {
             TURN { EXPECT_MOVES(opponent, MOVE_BULLDOZE, MOVE_ROCK_TOMB); }
             TURN { EXPECT_MOVES(opponent, MOVE_BULLDOZE, MOVE_ROCK_TOMB); SEND_OUT(player, 1); }
     } SCENE {
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmonx fainted!");
     }
 }
 
@@ -598,8 +598,8 @@ AI_SINGLE_BATTLE_TEST("AI switches if Perish Song is about to kill")
 {
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) {Moves(MOVE_TACKLE); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) {Moves(MOVE_TACKLE); }
         OPPONENT(SPECIES_GOTSUMON) {Moves(MOVE_TACKLE); }
     } WHEN {
             TURN { MOVE(player, MOVE_PERISH_SONG); }
@@ -732,7 +732,7 @@ AI_SINGLE_BATTLE_TEST("First Impression is preferred on the first turn of the sp
         ASSUME(gMovesInfo[MOVE_LUNGE].power == 80);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_BETAMON_X);
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_FIRST_IMPRESSION, MOVE_LUNGE); }
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_FIRST_IMPRESSION, MOVE_LUNGE); }
     } WHEN {
         TURN { EXPECT_MOVE(opponent, MOVE_FIRST_IMPRESSION); }
         TURN { EXPECT_MOVE(opponent, MOVE_LUNGE); }
@@ -754,7 +754,7 @@ AI_SINGLE_BATTLE_TEST("First Impression is not chosen if it's blocked by certain
         ASSUME(gMovesInfo[MOVE_LUNGE].power == 80);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
         PLAYER(species) { Ability(ability); }
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_FIRST_IMPRESSION, MOVE_LUNGE); }
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_FIRST_IMPRESSION, MOVE_LUNGE); }
     } WHEN {
         TURN { EXPECT_MOVE(opponent, MOVE_LUNGE); }
     }
@@ -793,7 +793,7 @@ AI_SINGLE_BATTLE_TEST("AI will not choose Burn Up if the user lost the Fire typi
     GIVEN {
         ASSUME(gMovesInfo[MOVE_BURN_UP].effect == EFFECT_FAIL_IF_NOT_ARG_TYPE);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_FLORAMON) { Moves(MOVE_BURN_UP, MOVE_EXTRASENSORY, MOVE_FLAMETHROWER); }
     } WHEN {
         TURN { EXPECT_MOVE(opponent, MOVE_BURN_UP); }

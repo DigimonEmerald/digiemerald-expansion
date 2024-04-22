@@ -9,8 +9,8 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Toxic inflicts bad poison")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC); }
         TURN {}
@@ -25,13 +25,13 @@ SINGLE_BATTLE_TEST("Toxic cannot miss if used by a Poison-type")
 {
     u32 species;
     bool32 hit;
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; hit = FALSE; }
+    PARAMETRIZE { species = SPECIES_LOPMONX; hit = FALSE; }
     PARAMETRIZE { species = SPECIES_PUSUMON; hit = TRUE; }
     GIVEN {
         ASSUME(B_TOXIC_NEVER_MISS >= GEN_6);
         ASSUME(gSpeciesInfo[SPECIES_PUSUMON].types[0] == TYPE_POISON);
         PLAYER(species);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC, hit: FALSE); }
     } SCENE {

@@ -4,17 +4,17 @@
 SINGLE_BATTLE_TEST("Misty Terrain protects grounded battlers from non-volatile status conditions")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_CLAYDOL) { Ability(ABILITY_LEVITATE); }
     } WHEN {
         TURN { MOVE(player, MOVE_MISTY_TERRAIN); MOVE(opponent, MOVE_TOXIC); }
         TURN { MOVE(player, MOVE_TOXIC); }
     } SCENE {
-        MESSAGE("Wobbuffet used MistyTerrain!");
+        MESSAGE("Lopmonx used MistyTerrain!");
         MESSAGE("Foe Claydol used Toxic!");
-        MESSAGE("Wobbuffet surrounds itself with a protective mist!");
+        MESSAGE("Lopmonx surrounds itself with a protective mist!");
         NOT { STATUS_ICON(opponent, badPoison: TRUE); }
-        MESSAGE("Wobbuffet used Toxic!");
+        MESSAGE("Lopmonx used Toxic!");
         STATUS_ICON(opponent, badPoison: TRUE);
     }
 }
@@ -24,13 +24,13 @@ SINGLE_BATTLE_TEST("Misty Terrain activates Misty Seed and Mimicry")
     GIVEN {
         ASSUME(gItemsInfo[ITEM_MISTY_SEED].holdEffect == HOLD_EFFECT_SEEDS);
         ASSUME(gItemsInfo[ITEM_MISTY_SEED].holdEffectParam == HOLD_EFFECT_PARAM_MISTY_TERRAIN);
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_MISTY_SEED); }
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_MISTY_SEED); }
         OPPONENT(SPECIES_STUNFISK_GALARIAN) { Ability(ABILITY_MIMICRY); }
     } WHEN {
         TURN { MOVE(player, MOVE_MISTY_TERRAIN); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Using Misty Seed, the Sp. Def of Wobbuffet rose!");
+        MESSAGE("Using Misty Seed, the Sp. Def of Lopmonx rose!");
         ABILITY_POPUP(opponent);
         MESSAGE("Foe Stunfisk's type changed to Fairy!");
     } THEN {
@@ -44,14 +44,14 @@ SINGLE_BATTLE_TEST("Misty Terrain does not increase the power of Fairy-type move
     PARAMETRIZE { terrain = FALSE; }
     PARAMETRIZE { terrain = TRUE; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         if (terrain)
             TURN { MOVE(player, MOVE_MISTY_TERRAIN); }
         TURN { MOVE(player, MOVE_MOONBLAST); }
     } SCENE {
-        MESSAGE("Wobbuffet used Moonblast!");
+        MESSAGE("Lopmonx used Moonblast!");
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_EQ(results[0].damage, results[1].damage);
@@ -64,14 +64,14 @@ SINGLE_BATTLE_TEST("Misty Terrain decreases power of Dragon-type moves by 50 per
     PARAMETRIZE { terrain = FALSE; }
     PARAMETRIZE { terrain = TRUE; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         if (terrain)
             TURN { MOVE(player, MOVE_MISTY_TERRAIN); }
         TURN { MOVE(player, MOVE_DRAGON_CLAW); }
     } SCENE {
-        MESSAGE("Wobbuffet used Dragon Claw!");
+        MESSAGE("Lopmonx used Dragon Claw!");
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(0.5), results[1].damage);
@@ -81,8 +81,8 @@ SINGLE_BATTLE_TEST("Misty Terrain decreases power of Dragon-type moves by 50 per
 SINGLE_BATTLE_TEST("Misty Terrain lasts for 5 turns")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_MISTY_TERRAIN); }
         TURN {}
@@ -90,18 +90,18 @@ SINGLE_BATTLE_TEST("Misty Terrain lasts for 5 turns")
         TURN {}
         TURN {}
     } SCENE {
-        MESSAGE("Foe Wobbuffet used Celebrate!");
+        MESSAGE("Foe Lopmonx used Celebrate!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MISTY_TERRAIN, player);
         MESSAGE("Mist swirled about the battlefield!");
 
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("Foe Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("Foe Lopmonx used Celebrate!");
 
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("Foe Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("Foe Lopmonx used Celebrate!");
 
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("Foe Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("Foe Lopmonx used Celebrate!");
 
         MESSAGE("The mist disappeared from the battlefield.");
     }

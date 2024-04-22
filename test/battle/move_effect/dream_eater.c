@@ -11,8 +11,8 @@ SINGLE_BATTLE_TEST("Dream Eater recovers 50% of the damage dealt")
     s16 damage;
     s16 healed;
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET) { Status1(STATUS1_SLEEP); }
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX) { Status1(STATUS1_SLEEP); }
     } WHEN {
         TURN { MOVE(player, MOVE_DREAM_EATER); }
     } SCENE {
@@ -27,13 +27,13 @@ SINGLE_BATTLE_TEST("Dream Eater recovers 50% of the damage dealt")
 SINGLE_BATTLE_TEST("Dream Eater fails on awake targets")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_DREAM_EATER); }
     } SCENE {
-        MESSAGE("Wobbuffet used Dream Eater!");
-        MESSAGE("Foe Wobbuffet wasn't affected!");
+        MESSAGE("Lopmonx used Dream Eater!");
+        MESSAGE("Foe Lopmonx wasn't affected!");
     }
 }
 
@@ -41,12 +41,12 @@ SINGLE_BATTLE_TEST("Dream Eater fails if Heal Block applies")
 {
     ASSUME(B_HEAL_BLOCKING >= GEN_6);
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_HEAL_BLOCK); MOVE(player, MOVE_DREAM_EATER); }
     } SCENE {
-        MESSAGE("Wobbuffet was prevented from healing!");
+        MESSAGE("Lopmonx was prevented from healing!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_DREAM_EATER, player);
             HP_BAR(opponent);

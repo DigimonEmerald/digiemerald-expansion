@@ -4,17 +4,17 @@
 SINGLE_BATTLE_TEST("Octolock decreases Defense and Sp. Def by at the end of the turn")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_OCTOLOCK); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_OCTOLOCK, player);
-        MESSAGE("Foe Wobbuffet can no longer escape because of Octolock!");
+        MESSAGE("Foe Lopmonx can no longer escape because of Octolock!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("Foe Wobbuffet's Defense fell!");
+        MESSAGE("Foe Lopmonx's Defense fell!");
         NOT ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("Foe Wobbuffet's Sp. Def fell!");
+        MESSAGE("Foe Lopmonx's Sp. Def fell!");
     }
 }
 
@@ -28,7 +28,7 @@ SINGLE_BATTLE_TEST("Octolock reduction is prevented by Clear Body, White Smoke a
     PARAMETRIZE { species = SPECIES_SOLGALEO; ability = ABILITY_FULL_METAL_BODY; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_OCTOLOCK); }
@@ -71,7 +71,7 @@ SINGLE_BATTLE_TEST("Octolock reduction is prevented by Clear Body, White Smoke a
 SINGLE_BATTLE_TEST("Octolock Defense reduction is prevented by Big Pecks")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_KETOMON) { Ability(ABILITY_BIG_PECKS); }
     } WHEN {
         TURN { MOVE(player, MOVE_OCTOLOCK); }
@@ -89,19 +89,19 @@ SINGLE_BATTLE_TEST("Octolock Defense reduction is prevented by Big Pecks")
 SINGLE_BATTLE_TEST("Octolock reduction is prevented by Clear Amulet")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_CLEAR_AMULET); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_CLEAR_AMULET); }
     } WHEN {
         TURN { MOVE(player, MOVE_OCTOLOCK); }
         TURN {}
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_OCTOLOCK, player);
-        MESSAGE("Foe Wobbuffet can no longer escape because of Octolock!");
-        MESSAGE("Foe Wobbuffet's Clear Amulet prevents its stats from being lowered!");
+        MESSAGE("Foe Lopmonx can no longer escape because of Octolock!");
+        MESSAGE("Foe Lopmonx's Clear Amulet prevents its stats from being lowered!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("Foe Wobbuffet's Defense fell!");
-            MESSAGE("Foe Wobbuffet's Sp. Def fell!");
+            MESSAGE("Foe Lopmonx's Defense fell!");
+            MESSAGE("Foe Lopmonx's Sp. Def fell!");
         }
     }
 }
@@ -111,8 +111,8 @@ SINGLE_BATTLE_TEST("Octolock will not decrease Defense and Sp. Def further then 
     u8 j;
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_OCTOLOCK); }
         for (j = 0; j < 6; j++)
@@ -120,14 +120,14 @@ SINGLE_BATTLE_TEST("Octolock will not decrease Defense and Sp. Def further then 
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_OCTOLOCK, player);
         for (j = 0; j < 5; j++) {
-            MESSAGE("Foe Wobbuffet's Defense fell!");
-            MESSAGE("Foe Wobbuffet's Sp. Def fell!");
+            MESSAGE("Foe Lopmonx's Defense fell!");
+            MESSAGE("Foe Lopmonx's Sp. Def fell!");
         }
-        MESSAGE("Foe Wobbuffet's Defense won't go lower!");
-        MESSAGE("Foe Wobbuffet's Sp. Def won't go lower!");
+        MESSAGE("Foe Lopmonx's Defense won't go lower!");
+        MESSAGE("Foe Lopmonx's Sp. Def won't go lower!");
         NONE_OF {
-            MESSAGE("Foe Wobbuffet's Defense fell!");
-            MESSAGE("Foe Wobbuffet's Sp. Def fell!");
+            MESSAGE("Foe Lopmonx's Defense fell!");
+            MESSAGE("Foe Lopmonx's Sp. Def fell!");
         }
     }
 }

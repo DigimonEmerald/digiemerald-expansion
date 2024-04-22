@@ -15,7 +15,7 @@
 static const struct TrainerMon sTestParty1[] =
 {
     {
-        .species = SPECIES_WOBBUFFET,
+        .species = SPECIES_LOPMONX,
         .ball = ITEM_MASTER_BALL,
         .ability = ABILITY_TELEPATHY,
         .friendship = 42,
@@ -31,7 +31,7 @@ static const struct TrainerMon sTestParty1[] =
         .dynamaxLevel = 5,
     },
     {
-        .species = SPECIES_WOBBUFFET,
+        .species = SPECIES_LOPMONX,
         .ability = ABILITY_SHADOW_TAG,
         .lvl = 5,
     },
@@ -58,8 +58,8 @@ TEST("CreateNPCTrainerPartyForTrainer generates customized Pokémon")
     EXPECT(GetMonData(&testParty[0], MON_DATA_POKEBALL, 0) == ITEM_MASTER_BALL);
     EXPECT(GetMonData(&testParty[1], MON_DATA_POKEBALL, 0) == ITEM_POKE_BALL);
 
-    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES, 0) == SPECIES_WOBBUFFET);
-    EXPECT(GetMonData(&testParty[1], MON_DATA_SPECIES, 0) == SPECIES_WOBBUFFET);
+    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES, 0) == SPECIES_LOPMONX);
+    EXPECT(GetMonData(&testParty[1], MON_DATA_SPECIES, 0) == SPECIES_LOPMONX);
 
     EXPECT(GetMonAbility(&testParty[0]) == ABILITY_TELEPATHY);
     EXPECT(GetMonAbility(&testParty[1]) == ABILITY_SHADOW_TAG);
@@ -111,7 +111,7 @@ TEST("CreateNPCTrainerPartyForTrainer generates customized Pokémon")
     EXPECT(StringCompare(nickBuffer, COMPOUND_STRING("Bubbles")) == 0);
 
     GetMonData(&testParty[1], MON_DATA_NICKNAME, nickBuffer);
-    EXPECT(StringCompare(nickBuffer, COMPOUND_STRING("Wobbuffet")) == 0);
+    EXPECT(StringCompare(nickBuffer, COMPOUND_STRING("Lopmonx")) == 0);
 
     EXPECT(GetMonGender(&testParty[0]) == MON_FEMALE);
     EXPECT(GetNature(&testParty[0]) == NATURE_HASTY);

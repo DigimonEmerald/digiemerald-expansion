@@ -173,8 +173,8 @@ DOUBLE_BATTLE_TEST("Mirror Armor lowers Speed of the partner Pokemon after Court
     GIVEN {
         ASSUME(gMovesInfo[MOVE_STICKY_WEB].effect == EFFECT_STICKY_WEB);
         ASSUME(gMovesInfo[MOVE_COURT_CHANGE].effect == EFFECT_COURT_CHANGE);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_CORVIKNIGHT) {Ability(ABILITY_MIRROR_ARMOR); Item(ITEM_IRON_BALL); }
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_WYNAUT);
@@ -185,14 +185,14 @@ DOUBLE_BATTLE_TEST("Mirror Armor lowers Speed of the partner Pokemon after Court
         TURN { SWITCH(playerRight, 2);}
         TURN { }
     } SCENE {
-        MESSAGE("Wobbuffet used Sticky Web!");
+        MESSAGE("Lopmonx used Sticky Web!");
         MESSAGE("Foe Wynaut used Court Change!");
         MESSAGE("Foe Wynaut swapped the battle effects affecting each side!");
         MESSAGE("Go! Corviknigh!");
         MESSAGE("Corviknigh was caught in a Sticky Web!");
         ABILITY_POPUP(playerRight, ABILITY_MIRROR_ARMOR);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-        MESSAGE("Wobbuffet's Speed fell!");
+        MESSAGE("Lopmonx's Speed fell!");
     }
 }
 

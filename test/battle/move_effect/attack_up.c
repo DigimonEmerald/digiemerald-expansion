@@ -13,8 +13,8 @@ SINGLE_BATTLE_TEST("Meditate raises Attack", s16 damage)
     PARAMETRIZE { raiseAttack = TRUE; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].category == DAMAGE_CATEGORY_PHYSICAL);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         if (raiseAttack) TURN { MOVE(player, MOVE_MEDITATE); }
         TURN { MOVE(player, MOVE_TACKLE); }
@@ -22,7 +22,7 @@ SINGLE_BATTLE_TEST("Meditate raises Attack", s16 damage)
         if (raiseAttack) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_MEDITATE, player);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-            MESSAGE("Wobbuffet's Attack rose!");
+            MESSAGE("Lopmonx's Attack rose!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         HP_BAR(opponent, captureDamage: &results[i].damage);

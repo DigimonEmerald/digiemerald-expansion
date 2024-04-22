@@ -5,7 +5,7 @@ SINGLE_BATTLE_TEST("Sand Veil prevents damage from sandstorm")
 {
     GIVEN {
         PLAYER(SPECIES_CACNEA) { Ability(ABILITY_SAND_VEIL); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SANDSTORM); }
         TURN {}
@@ -20,7 +20,7 @@ SINGLE_BATTLE_TEST("Sand Veil increases evasion during sandstorm")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_POUND].accuracy == 100);
         PLAYER(SPECIES_POPOMON) { Ability(ABILITY_SAND_VEIL); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SANDSTORM); }
         TURN { MOVE(opponent, MOVE_POUND); }

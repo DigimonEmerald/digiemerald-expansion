@@ -21,7 +21,7 @@ SINGLE_BATTLE_TEST("Rattled boosts speed by 1 when hit by Bug, Dark or Ghost typ
     PARAMETRIZE { move = MOVE_SHADOW_PUNCH; }
     PARAMETRIZE { move = MOVE_TACKLE; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) {Speed(42) ;}
+        PLAYER(SPECIES_LOPMONX) {Speed(42) ;}
         OPPONENT(SPECIES_JUNKMON) {Speed(40); Ability(ABILITY_RATTLED);}
     } WHEN {
         TURN { MOVE(player, move); }
@@ -75,14 +75,14 @@ SINGLE_BATTLE_TEST("Rattled triggers correctly when hit by U-Turn") // Specific 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_U_TURN].effect == EFFECT_HIT_ESCAPE);
         ASSUME(gMovesInfo[MOVE_U_TURN].type == TYPE_BUG);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_JUNKMON) {Ability(ABILITY_RATTLED); }
         OPPONENT(SPECIES_JUNKMON);
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(player, 1); }
     } SCENE {
-        MESSAGE("Wobbuffet used U-turn!");
+        MESSAGE("Lopmonx used U-turn!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
         HP_BAR(opponent);
         ABILITY_POPUP(opponent, ABILITY_RATTLED);

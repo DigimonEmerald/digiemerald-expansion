@@ -10,8 +10,8 @@ SINGLE_BATTLE_TEST("Red Card switches the attacker with a random non-fainted rep
 {
     PASSES_RANDOMLY(1, 2, RNG_FORCE_RANDOM_SWITCH);
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_ARGOMON_F);
         OPPONENT(SPECIES_BOTAMON);
         OPPONENT(SPECIES_CONOMON) { HP(0); }
@@ -20,7 +20,7 @@ SINGLE_BATTLE_TEST("Red Card switches the attacker with a random non-fainted rep
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-        MESSAGE("Wobbuffet held up its Red Card against Foe Wobbuffet!");
+        MESSAGE("Lopmonx held up its Red Card against Foe Lopmonx!");
         MESSAGE("Foe Argomon_f was dragged out!");
     } THEN {
         EXPECT(player->item == ITEM_NONE);
@@ -31,9 +31,9 @@ DOUBLE_BATTLE_TEST("Red Card switches the target with a random non-battler, non-
 {
     PASSES_RANDOMLY(1, 2, RNG_FORCE_RANDOM_SWITCH);
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_ARGOMON_F);
         OPPONENT(SPECIES_BOTAMON);
@@ -43,7 +43,7 @@ DOUBLE_BATTLE_TEST("Red Card switches the target with a random non-battler, non-
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerLeft);
-        MESSAGE("Wobbuffet held up its Red Card against Foe Wobbuffet!");
+        MESSAGE("Lopmonx held up its Red Card against Foe Lopmonx!");
         MESSAGE("Foe Argomon_f was dragged out!");
     } THEN {
         EXPECT(playerLeft->item == ITEM_NONE);
@@ -53,9 +53,9 @@ DOUBLE_BATTLE_TEST("Red Card switches the target with a random non-battler, non-
 SINGLE_BATTLE_TEST("Red Card does not activate if holder faints")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); Item(ITEM_RED_CARD); }
+        PLAYER(SPECIES_LOPMONX) { HP(1); Item(ITEM_RED_CARD); }
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); SEND_OUT(player, 1); }
@@ -63,7 +63,7 @@ SINGLE_BATTLE_TEST("Red Card does not activate if holder faints")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Wobbuffet held up its Red Card against Foe Wobbuffet!");
+            MESSAGE("Lopmonx held up its Red Card against Foe Lopmonx!");
         }
     } THEN {
         EXPECT(player->item == ITEM_NONE);
@@ -73,8 +73,8 @@ SINGLE_BATTLE_TEST("Red Card does not activate if holder faints")
 SINGLE_BATTLE_TEST("Red Card does not activate if target is behind a Substitute")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(player, MOVE_SUBSTITUTE); MOVE(opponent, MOVE_TACKLE); }
@@ -82,7 +82,7 @@ SINGLE_BATTLE_TEST("Red Card does not activate if target is behind a Substitute"
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Wobbuffet held up its Red Card against Foe Wobbuffet!");
+            MESSAGE("Lopmonx held up its Red Card against Foe Lopmonx!");
         }
     } THEN {
         EXPECT(player->item == ITEM_RED_CARD); // Not activated, so still has the item.
@@ -92,8 +92,8 @@ SINGLE_BATTLE_TEST("Red Card does not activate if target is behind a Substitute"
 SINGLE_BATTLE_TEST("Red Card activates after the last hit of a multi-hit move")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DOUBLE_KICK); }
@@ -102,7 +102,7 @@ SINGLE_BATTLE_TEST("Red Card activates after the last hit of a multi-hit move")
         HP_BAR(player);
         HP_BAR(player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-        MESSAGE("Wobbuffet held up its Red Card against Foe Wobbuffet!");
+        MESSAGE("Lopmonx held up its Red Card against Foe Lopmonx!");
     } THEN {
         EXPECT(player->item == ITEM_NONE);
     }
@@ -111,15 +111,15 @@ SINGLE_BATTLE_TEST("Red Card activates after the last hit of a multi-hit move")
 SINGLE_BATTLE_TEST("Red Card does not activate if no replacements")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Wobbuffet held up its Red Card against Foe Wobbuffet!");
+            MESSAGE("Lopmonx held up its Red Card against Foe Lopmonx!");
         }
     } THEN {
         EXPECT(player->item == ITEM_RED_CARD); // Not activated, so still has the item.
@@ -129,8 +129,8 @@ SINGLE_BATTLE_TEST("Red Card does not activate if no replacements")
 SINGLE_BATTLE_TEST("Red Card does not activate if replacements fainted")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT) { HP(0); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
@@ -138,7 +138,7 @@ SINGLE_BATTLE_TEST("Red Card does not activate if replacements fainted")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Wobbuffet held up its Red Card against Foe Wobbuffet!");
+            MESSAGE("Lopmonx held up its Red Card against Foe Lopmonx!");
         }
     } THEN {
         EXPECT(player->item == ITEM_RED_CARD); // Not activated, so still has the item.
@@ -148,8 +148,8 @@ SINGLE_BATTLE_TEST("Red Card does not activate if replacements fainted")
 SINGLE_BATTLE_TEST("Red Card does not activate if knocked off")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponent, MOVE_KNOCK_OFF); }
@@ -157,7 +157,7 @@ SINGLE_BATTLE_TEST("Red Card does not activate if knocked off")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, opponent);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Wobbuffet held up its Red Card against Foe Wobbuffet!");
+            MESSAGE("Lopmonx held up its Red Card against Foe Lopmonx!");
         }
     } THEN {
         EXPECT(player->item == ITEM_NONE);
@@ -173,8 +173,8 @@ SINGLE_BATTLE_TEST("Red Card does not activate if stolen by a move")
     ASSUME(MoveHasAdditionalEffect(MOVE_THIEF, MOVE_EFFECT_STEAL_ITEM) == TRUE);
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
-        OPPONENT(SPECIES_WOBBUFFET) { Item(item); }
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
+        OPPONENT(SPECIES_LOPMONX) { Item(item); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponent, MOVE_THIEF); }
@@ -182,11 +182,11 @@ SINGLE_BATTLE_TEST("Red Card does not activate if stolen by a move")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THIEF, opponent);
         if (activate) {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Wobbuffet held up its Red Card against Foe Wobbuffet!");
+            MESSAGE("Lopmonx held up its Red Card against Foe Lopmonx!");
         } else {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-                MESSAGE("Wobbuffet held up its Red Card against Foe Wobbuffet!");
+                MESSAGE("Lopmonx held up its Red Card against Foe Lopmonx!");
             }
         }
     } THEN {
@@ -202,7 +202,7 @@ SINGLE_BATTLE_TEST("Red Card does not activate if stolen by Magician")
     PARAMETRIZE { item = ITEM_POTION; activate = TRUE; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
         OPPONENT(SPECIES_FENNEKIN) { Ability(ABILITY_MAGICIAN); Item(item); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
@@ -211,11 +211,11 @@ SINGLE_BATTLE_TEST("Red Card does not activate if stolen by Magician")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         if (activate) {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Wobbuffet held up its Red Card against Foe Fennekin!");
+            MESSAGE("Lopmonx held up its Red Card against Foe Fennekin!");
         } else {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-                MESSAGE("Wobbuffet held up its Red Card against Foe Fennekin!");
+                MESSAGE("Lopmonx held up its Red Card against Foe Fennekin!");
             }
         }
     } THEN {
@@ -226,9 +226,9 @@ SINGLE_BATTLE_TEST("Red Card does not activate if stolen by Magician")
 DOUBLE_BATTLE_TEST("Red Card activates for only the fastest target")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(3); Item(ITEM_RED_CARD); }
+        PLAYER(SPECIES_LOPMONX) { Speed(3); Item(ITEM_RED_CARD); }
         PLAYER(SPECIES_WYNAUT) { Speed(2); Item(ITEM_RED_CARD); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(5); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(5); }
         OPPONENT(SPECIES_WYNAUT) { Speed(4); }
         OPPONENT(SPECIES_LOPMON) { Speed(1); }
     } WHEN {
@@ -240,14 +240,14 @@ DOUBLE_BATTLE_TEST("Red Card activates for only the fastest target")
         // Fastest target's Red Card activates.
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROCK_SLIDE, opponentLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerLeft);
-        MESSAGE("Wobbuffet held up its Red Card against Foe Wobbuffet!");
+        MESSAGE("Lopmonx held up its Red Card against Foe Lopmonx!");
         MESSAGE("Foe Lopmon was dragged out!");
 
         // Slower target's Red Card still able to activate on other battler.
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerRight);
         MESSAGE("Wynaut held up its Red Card against Foe Wynaut!");
-        MESSAGE("Foe Wobbuffet was dragged out!");
+        MESSAGE("Foe Lopmonx was dragged out!");
     } THEN {
         EXPECT(playerLeft->item == ITEM_NONE);
         EXPECT(playerRight->item == ITEM_NONE);
@@ -257,9 +257,9 @@ DOUBLE_BATTLE_TEST("Red Card activates for only the fastest target")
 DOUBLE_BATTLE_TEST("Red Card activates but fails if the attacker is rooted")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_LOPMON);
     } WHEN {
@@ -271,8 +271,8 @@ DOUBLE_BATTLE_TEST("Red Card activates but fails if the attacker is rooted")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerLeft);
-        MESSAGE("Wobbuffet held up its Red Card against Foe Wobbuffet!");
-        MESSAGE("Foe Wobbuffet anchored itself with its roots!");
+        MESSAGE("Lopmonx held up its Red Card against Foe Lopmonx!");
+        MESSAGE("Foe Lopmonx anchored itself with its roots!");
 
         // Red Card already consumed so cannot activate.
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);
@@ -286,7 +286,7 @@ DOUBLE_BATTLE_TEST("Red Card activates but fails if the attacker is rooted")
 DOUBLE_BATTLE_TEST("Red Card activates but fails if the attacker has Suction Cups")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_OCTILLERY) { Ability(ABILITY_SUCTION_CUPS); }
         OPPONENT(SPECIES_WYNAUT);
@@ -299,7 +299,7 @@ DOUBLE_BATTLE_TEST("Red Card activates but fails if the attacker has Suction Cup
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerLeft);
-        MESSAGE("Wobbuffet held up its Red Card against Foe Octillery!");
+        MESSAGE("Lopmonx held up its Red Card against Foe Octillery!");
         MESSAGE("Foe Octillery anchors itself with Suction Cups!");
 
         // Red Card already consumed so cannot activate.
@@ -318,9 +318,9 @@ SINGLE_BATTLE_TEST("Red Card does not activate if switched by Dragon Tail")
     PARAMETRIZE { hasWynaut = FALSE; activate = TRUE; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
         if (hasWynaut) PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DRAGON_TAIL); }
@@ -328,11 +328,11 @@ SINGLE_BATTLE_TEST("Red Card does not activate if switched by Dragon Tail")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_TAIL, opponent);
         if (activate) {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Wobbuffet held up its Red Card against Foe Wobbuffet!");
+            MESSAGE("Lopmonx held up its Red Card against Foe Lopmonx!");
         } else {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-                MESSAGE("Wobbuffet held up its Red Card against Foe Wobbuffet!");
+                MESSAGE("Lopmonx held up its Red Card against Foe Lopmonx!");
             }
         }
     }
@@ -341,15 +341,15 @@ SINGLE_BATTLE_TEST("Red Card does not activate if switched by Dragon Tail")
 SINGLE_BATTLE_TEST("Red Card activates and overrides U-turn")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponent, MOVE_U_TURN); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-        MESSAGE("Wobbuffet held up its Red Card against Foe Wobbuffet!");
+        MESSAGE("Lopmonx held up its Red Card against Foe Lopmonx!");
     }
 }
 
@@ -361,7 +361,7 @@ SINGLE_BATTLE_TEST("Red Card does not activate if attacker's Sheer Force applied
     PARAMETRIZE { move = MOVE_STOMP; activate = FALSE; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
         OPPONENT(SPECIES_CHUUMON) { Ability(ABILITY_SHEER_FORCE); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
@@ -370,11 +370,11 @@ SINGLE_BATTLE_TEST("Red Card does not activate if attacker's Sheer Force applied
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
         if (activate) {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Wobbuffet held up its Red Card against Foe Chuumon!");
+            MESSAGE("Lopmonx held up its Red Card against Foe Chuumon!");
         } else {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-                MESSAGE("Wobbuffet held up its Red Card against Foe Chuumon!");
+                MESSAGE("Lopmonx held up its Red Card against Foe Chuumon!");
             }
         }
     }
@@ -385,14 +385,14 @@ SINGLE_BATTLE_TEST("Red Card activates before Emergency Exit")
     GIVEN {
         PLAYER(SPECIES_GOLISOPOD) { MaxHP(100); HP(51); Item(ITEM_RED_CARD); }
         PLAYER(SPECIES_WIMPOD);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); SEND_OUT(player, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-        MESSAGE("Golisopod held up its Red Card against Foe Wobbuffet!");
+        MESSAGE("Golisopod held up its Red Card against Foe Lopmonx!");
         ABILITY_POPUP(player, ABILITY_EMERGENCY_EXIT);
         MESSAGE("Go! Wimpod!");
     }
@@ -402,9 +402,9 @@ SINGLE_BATTLE_TEST("Red Card is consumed after dragged out replacement has its S
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_STICKY_WEB].effect == EFFECT_STICKY_WEB);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT) { Moves(MOVE_TACKLE); }
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_STICKY_WEB); }
         TURN { MOVE(player, MOVE_TACKLE); }
@@ -415,14 +415,14 @@ SINGLE_BATTLE_TEST("Red Card is consumed after dragged out replacement has its S
         // 2nd turn Red Card activation
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-        MESSAGE("Foe Wobbuffet held up its Red Card against Wobbuffet!");
+        MESSAGE("Foe Lopmonx held up its Red Card against Lopmonx!");
         MESSAGE("Wynaut was dragged out!");
         MESSAGE("Wynaut was caught in a Sticky Web!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         // 3rd turn, Red Card was consumed, it can't trigger again
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-            MESSAGE("Foe Wobbuffet held up its Red Card against Wynaut!");
+            MESSAGE("Foe Lopmonx held up its Red Card against Wynaut!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         }
     } THEN {
@@ -433,15 +433,15 @@ SINGLE_BATTLE_TEST("Red Card is consumed after dragged out replacement has its S
 SINGLE_BATTLE_TEST("Red Card does not cause the dragged out mon to lose hp due to it's held Life Orb")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT) { Item(ITEM_LIFE_ORB); }
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-        MESSAGE("Foe Wobbuffet held up its Red Card against Wobbuffet!");
+        MESSAGE("Foe Lopmonx held up its Red Card against Lopmonx!");
         MESSAGE("Wynaut was dragged out!");
         NOT MESSAGE("Wynaut was hurt by its Life Orb!");
     }

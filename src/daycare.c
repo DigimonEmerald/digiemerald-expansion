@@ -962,7 +962,7 @@ static const struct {
 } sIncenseBabyTable[] =
 {
     // Regular offspring,   Item,              Incense Offspring
-    { SPECIES_WOBBUFFET,    ITEM_LAX_INCENSE,  SPECIES_WYNAUT },
+    { SPECIES_LOPMONX,    ITEM_LAX_INCENSE,  SPECIES_WYNAUT },
     { SPECIES_JAZAMON,       ITEM_SEA_INCENSE,  SPECIES_AZURILL },
     { SPECIES_DRACOMON,      ITEM_FULL_INCENSE, SPECIES_MUNCHLAX },
     { SPECIES_BEARMON,      ITEM_LUCK_INCENSE, SPECIES_HAPPINY },

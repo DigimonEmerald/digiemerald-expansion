@@ -18,23 +18,23 @@ SINGLE_BATTLE_TEST("Shell Trap activates only if hit by a physical move")
     PARAMETRIZE { move = MOVE_LEER; activate = FALSE; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SHELL_TRAP); MOVE(opponent, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SHELL_TRAP_SETUP, player);
-        MESSAGE("Wobbuffet set a shell trap!");
+        MESSAGE("Lopmonx set a shell trap!");
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
 
         if (activate) {
-            MESSAGE("Wobbuffet used Shell Trap!");
+            MESSAGE("Lopmonx used Shell Trap!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SHELL_TRAP, player);
             HP_BAR(opponent);
         } else {
-            MESSAGE("Wobbuffet's shell trap didn't work!");
+            MESSAGE("Lopmonx's shell trap didn't work!");
             NONE_OF {
-                MESSAGE("Wobbuffet used Shell Trap!");
+                MESSAGE("Lopmonx used Shell Trap!");
                 ANIMATION(ANIM_TYPE_MOVE, MOVE_SHELL_TRAP, player);
                 HP_BAR(opponent);
             }
@@ -50,22 +50,22 @@ SINGLE_BATTLE_TEST("Shell Trap does not activate if attacker's Sheer Force appli
     PARAMETRIZE { move = MOVE_STOMP; activate = FALSE; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_CHUUMON) { Ability(ABILITY_SHEER_FORCE); }
     } WHEN {
         TURN { MOVE(player, MOVE_SHELL_TRAP); MOVE(opponent, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SHELL_TRAP_SETUP, player);
-        MESSAGE("Wobbuffet set a shell trap!");
+        MESSAGE("Lopmonx set a shell trap!");
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
         if (activate) {
-            MESSAGE("Wobbuffet used Shell Trap!");
+            MESSAGE("Lopmonx used Shell Trap!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SHELL_TRAP, player);
             HP_BAR(opponent);
         } else {
-            MESSAGE("Wobbuffet's shell trap didn't work!");
+            MESSAGE("Lopmonx's shell trap didn't work!");
             NONE_OF {
-                MESSAGE("Wobbuffet used Shell Trap!");
+                MESSAGE("Lopmonx used Shell Trap!");
                 ANIMATION(ANIM_TYPE_MOVE, MOVE_SHELL_TRAP, player);
                 HP_BAR(opponent);
             }
@@ -76,19 +76,19 @@ SINGLE_BATTLE_TEST("Shell Trap does not activate if attacker's Sheer Force appli
 SINGLE_BATTLE_TEST("Shell Trap does not activate if battler faints before being able to activate it")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SHELL_TRAP); MOVE(opponent, MOVE_TACKLE); SEND_OUT(player, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SHELL_TRAP_SETUP, player);
-        MESSAGE("Wobbuffet set a shell trap!");
+        MESSAGE("Lopmonx set a shell trap!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-        MESSAGE("Wobbuffet fainted!");
-        MESSAGE("Go! Wobbuffet!");
+        MESSAGE("Lopmonx fainted!");
+        MESSAGE("Go! Lopmonx!");
         NONE_OF {
-            MESSAGE("Wobbuffet used Shell Trap!");
+            MESSAGE("Lopmonx used Shell Trap!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SHELL_TRAP, player);
             HP_BAR(opponent);
         }
@@ -99,22 +99,22 @@ DOUBLE_BATTLE_TEST("Shell Trap activates immediately after being hit on turn 1 a
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SHELL_TRAP].target == MOVE_TARGET_BOTH);
-        PLAYER(SPECIES_WOBBUFFET) { Speed(1); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(2); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(5); }
+        PLAYER(SPECIES_LOPMONX) { Speed(1); }
+        PLAYER(SPECIES_LOPMONX) { Speed(2); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(5); }
         OPPONENT(SPECIES_WYNAUT) { Speed(1); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SHELL_TRAP); MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(playerRight, MOVE_CELEBRATE); MOVE(opponentRight, MOVE_CELEBRATE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SHELL_TRAP_SETUP, playerLeft);
-        MESSAGE("Wobbuffet set a shell trap!");
-        MESSAGE("Foe Wobbuffet used Tackle!");
+        MESSAGE("Lopmonx set a shell trap!");
+        MESSAGE("Foe Lopmonx used Tackle!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
-        MESSAGE("Wobbuffet used Shell Trap!");
+        MESSAGE("Lopmonx used Shell Trap!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SHELL_TRAP, playerLeft);
         HP_BAR(opponentLeft);
         HP_BAR(opponentRight);
-        MESSAGE("Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
         MESSAGE("Foe Wynaut used Celebrate!");
     }
 }
@@ -123,23 +123,23 @@ DOUBLE_BATTLE_TEST("Shell Trap activates immediately after being hit on turn 2 a
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SHELL_TRAP].target == MOVE_TARGET_BOTH);
-        PLAYER(SPECIES_WOBBUFFET) { Speed(1); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(2); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(5); }
+        PLAYER(SPECIES_LOPMONX) { Speed(1); }
+        PLAYER(SPECIES_LOPMONX) { Speed(2); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(5); }
         OPPONENT(SPECIES_WYNAUT) { Speed(6); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SHELL_TRAP); MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(playerRight, MOVE_CELEBRATE); MOVE(opponentRight, MOVE_CELEBRATE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SHELL_TRAP_SETUP, playerLeft);
-        MESSAGE("Wobbuffet set a shell trap!");
+        MESSAGE("Lopmonx set a shell trap!");
         MESSAGE("Foe Wynaut used Celebrate!");
-        MESSAGE("Foe Wobbuffet used Tackle!");
+        MESSAGE("Foe Lopmonx used Tackle!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
-        MESSAGE("Wobbuffet used Shell Trap!");
+        MESSAGE("Lopmonx used Shell Trap!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SHELL_TRAP, playerLeft);
         HP_BAR(opponentLeft);
         HP_BAR(opponentRight);
-        MESSAGE("Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
     }
 }
 
@@ -147,20 +147,20 @@ DOUBLE_BATTLE_TEST("Shell Trap activates immediately after being hit on turn 3 a
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SHELL_TRAP].target == MOVE_TARGET_BOTH);
-        PLAYER(SPECIES_WOBBUFFET) { Speed(1); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(7); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(5); }
+        PLAYER(SPECIES_LOPMONX) { Speed(1); }
+        PLAYER(SPECIES_LOPMONX) { Speed(7); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(5); }
         OPPONENT(SPECIES_WYNAUT) { Speed(6); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SHELL_TRAP); MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(playerRight, MOVE_CELEBRATE); MOVE(opponentRight, MOVE_CELEBRATE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SHELL_TRAP_SETUP, playerLeft);
-        MESSAGE("Wobbuffet set a shell trap!");
-        MESSAGE("Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx set a shell trap!");
+        MESSAGE("Lopmonx used Celebrate!");
         MESSAGE("Foe Wynaut used Celebrate!");
-        MESSAGE("Foe Wobbuffet used Tackle!");
+        MESSAGE("Foe Lopmonx used Tackle!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
-        MESSAGE("Wobbuffet used Shell Trap!");
+        MESSAGE("Lopmonx used Shell Trap!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SHELL_TRAP, playerLeft);
         HP_BAR(opponentLeft);
         HP_BAR(opponentRight);

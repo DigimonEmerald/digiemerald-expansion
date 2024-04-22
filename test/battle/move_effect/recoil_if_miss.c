@@ -9,15 +9,15 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Jump Kick has 50% recoil on miss")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_JUMP_KICK, hit: FALSE); }
     } SCENE {
         s32 maxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
-        MESSAGE("Wobbuffet used Jump Kick!");
-        MESSAGE("Wobbuffet's attack missed!");
-        MESSAGE("Wobbuffet kept going and crashed!");
+        MESSAGE("Lopmonx used Jump Kick!");
+        MESSAGE("Lopmonx's attack missed!");
+        MESSAGE("Lopmonx kept going and crashed!");
         HP_BAR(player, damage: maxHP / 2);
     }
 }
@@ -26,8 +26,8 @@ SINGLE_BATTLE_TEST("Jump Kick has 50% recoil on protect")
 {
     GIVEN {
         ASSUME(!gMovesInfo[MOVE_JUMP_KICK].ignoresProtect);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_PROTECT); MOVE(player, MOVE_JUMP_KICK, hit: FALSE); }
     } SCENE {
@@ -42,8 +42,8 @@ SINGLE_BATTLE_TEST("Jump Kick has no recoil if no target")
 {
     GIVEN {
         ASSUME(B_HEALING_WISH_SWITCH >= GEN_5);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponent, MOVE_HEALING_WISH); MOVE(player, MOVE_JUMP_KICK, hit: FALSE); SEND_OUT(opponent, 1); }
@@ -65,9 +65,9 @@ SINGLE_BATTLE_TEST("Jump Kick's recoil happens after Spiky Shield damage and Pok
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SPIKY_SHIELD].effect == EFFECT_PROTECT);
-        PLAYER(SPECIES_WOBBUFFET) { HP(hp); MaxHP(maxHp); }
+        PLAYER(SPECIES_LOPMONX) { HP(hp); MaxHP(maxHp); }
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         if (!faintOnJumpKick && !faintOnSpiky) {
             TURN { MOVE(opponent, MOVE_SPIKY_SHIELD); MOVE(player, MOVE_JUMP_KICK, hit: FALSE); }
@@ -77,22 +77,22 @@ SINGLE_BATTLE_TEST("Jump Kick's recoil happens after Spiky Shield damage and Pok
         TURN { ; }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPIKY_SHIELD, opponent);
-        MESSAGE("Wobbuffet used Jump Kick!");
-        MESSAGE("Foe Wobbuffet protected itself!");
+        MESSAGE("Lopmonx used Jump Kick!");
+        MESSAGE("Foe Lopmonx protected itself!");
         HP_BAR(player, damage: maxHp / 8);
-        MESSAGE("Wobbuffet was hurt by Foe Wobbuffet's Spiky Shield!");
+        MESSAGE("Lopmonx was hurt by Foe Lopmonx's Spiky Shield!");
         if (faintOnSpiky){
-            MESSAGE("Wobbuffet fainted!");
+            MESSAGE("Lopmonx fainted!");
             MESSAGE("Go! Wynaut!");
             NONE_OF {
-                MESSAGE("Wobbuffet kept going and crashed!");
+                MESSAGE("Lopmonx kept going and crashed!");
                 HP_BAR(player);
             }
         } else {
-            MESSAGE("Wobbuffet kept going and crashed!");
+            MESSAGE("Lopmonx kept going and crashed!");
             HP_BAR(player);
             if (faintOnJumpKick) {
-                MESSAGE("Wobbuffet fainted!");
+                MESSAGE("Lopmonx fainted!");
                 MESSAGE("Go! Wynaut!");
             }
         }

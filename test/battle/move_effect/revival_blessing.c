@@ -19,14 +19,14 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Revival Blessing revives a chosen fainted party member for the player")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET) { HP(0); }
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX) { HP(0); }
         PLAYER(SPECIES_WYNAUT) { HP(0); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_REVIVAL_BLESSING); SEND_OUT(player, 2); }
     } SCENE {
-        MESSAGE("Wobbuffet used " REVIVAL_BLESSING "!");
+        MESSAGE("Lopmonx used " REVIVAL_BLESSING "!");
         MESSAGE("Wynaut was revived and is ready to fight again!");
     }
 }
@@ -34,7 +34,7 @@ SINGLE_BATTLE_TEST("Revival Blessing revives a chosen fainted party member for t
 SINGLE_BATTLE_TEST("Revival Blessing revives a fainted party member for an opponent")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PICHIMON);
         OPPONENT(SPECIES_GUILMON_X) { HP(0); }
         OPPONENT(SPECIES_PETITMON) { HP(0); }
@@ -49,12 +49,12 @@ SINGLE_BATTLE_TEST("Revival Blessing revives a fainted party member for an oppon
 SINGLE_BATTLE_TEST("Revival Blessing fails if no party members are fainted")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_REVIVAL_BLESSING); }
     } SCENE {
-        MESSAGE("Wobbuffet used " REVIVAL_BLESSING "!");
+        MESSAGE("Lopmonx used " REVIVAL_BLESSING "!");
         MESSAGE("But it failed!");
     }
 }
@@ -70,11 +70,11 @@ TO_DO_BATTLE_TEST("Revival Blessing cannot revive a partner's party member");
 //     PARAMETRIZE { user = opponentRight; }
 //     GIVEN {
 //         ASSUME((gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS) != FALSE);
-//         PLAYER(SPECIES_WOBBUFFET);
-//         PLAYER(SPECIES_WOBBUFFET);
-//         OPPONENT(SPECIES_WOBBUFFET);
-//         OPPONENT(SPECIES_WOBBUFFET);
-//         OPPONENT(SPECIES_WOBBUFFET);
+//         PLAYER(SPECIES_LOPMONX);
+//         PLAYER(SPECIES_LOPMONX);
+//         OPPONENT(SPECIES_LOPMONX);
+//         OPPONENT(SPECIES_LOPMONX);
+//         OPPONENT(SPECIES_LOPMONX);
 //         OPPONENT(SPECIES_WYNAUT);
 //         OPPONENT(SPECIES_WYNAUT) { HP(0); }
 //         OPPONENT(SPECIES_WYNAUT);
@@ -82,7 +82,7 @@ TO_DO_BATTLE_TEST("Revival Blessing cannot revive a partner's party member");
 //         TURN { MOVE(user, MOVE_REVIVAL_BLESSING); }
 //     } SCENE {
 //         if (user == opponentLeft) {
-//             MESSAGE("Foe Wobbuffet used " REVIVAL_BLESSING "!");
+//             MESSAGE("Foe Lopmonx used " REVIVAL_BLESSING "!");
 //             MESSAGE("But it failed!");
 //         } else {
 //             MESSAGE("Foe Wynaut used " REVIVAL_BLESSING "!");
@@ -97,18 +97,18 @@ TO_DO_BATTLE_TEST("Revived battlers still lose their turn");
 // DOUBLE_BATTLE_TEST("Revived battlers still lose their turn")
 // {
 //     GIVEN {
-//         PLAYER(SPECIES_WOBBUFFET);
+//         PLAYER(SPECIES_LOPMONX);
 //         PLAYER(SPECIES_WYNAUT);
-//         OPPONENT(SPECIES_WOBBUFFET);
+//         OPPONENT(SPECIES_LOPMONX);
 //         OPPONENT(SPECIES_WYNAUT) { HP(1); }
 //     } WHEN {
 //         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentRight);
 //                MOVE(opponentLeft, MOVE_REVIVAL_BLESSING);
 //                SEND_OUT(opponentLeft, 1); }
 //     } SCENE {
-//         MESSAGE("Wobbuffet used Tackle!");
+//         MESSAGE("Lopmonx used Tackle!");
 //         MESSAGE("Foe Wynaut fainted!");
-//         MESSAGE("Foe Wobbuffet used " REVIVAL_BLESSING "!");
+//         MESSAGE("Foe Lopmonx used " REVIVAL_BLESSING "!");
 //         MESSAGE("Wynaut was revived and is ready to fight again!");
 //         NOT { MESSAGE("Wynaut used Celebrate!"); }
 //     }

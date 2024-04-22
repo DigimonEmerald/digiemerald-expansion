@@ -6,11 +6,11 @@ SINGLE_BATTLE_TEST("Sturdy prevents OHKO moves")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_FISSURE].effect == EFFECT_OHKO);
         PLAYER(SPECIES_MONIMON) { Ability(ABILITY_STURDY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_FISSURE); }
     } SCENE {
-        MESSAGE("Foe Wobbuffet used Fissure!");
+        MESSAGE("Foe Lopmonx used Fissure!");
         ABILITY_POPUP(player, ABILITY_STURDY);
         MESSAGE("Monimon was protected by Sturdy!");
     } THEN {
@@ -22,7 +22,7 @@ SINGLE_BATTLE_TEST("Sturdy prevents OHKOs")
 {
     GIVEN {
         PLAYER(SPECIES_MONIMON) { Ability(ABILITY_STURDY); MaxHP(100); HP(100); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SEISMIC_TOSS); }
     } SCENE {
@@ -37,7 +37,7 @@ SINGLE_BATTLE_TEST("Sturdy does not prevent non-OHKOs")
 {
     GIVEN {
         PLAYER(SPECIES_MONIMON) { Ability(ABILITY_STURDY); MaxHP(100); HP(99); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SEISMIC_TOSS); }
     } SCENE {

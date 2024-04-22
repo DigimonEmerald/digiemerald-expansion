@@ -13,9 +13,9 @@ SINGLE_BATTLE_TEST("Last Respects power is multiplied by the amount of fainted m
     PARAMETRIZE { faintCount = 1; }
     PARAMETRIZE { faintCount = 2; }
     GIVEN {
-        PLAYER(SPECIES_MOTIMON); // Not Wobbuffet to omit type effectiveness
+        PLAYER(SPECIES_MOTIMON); // Not Lopmonx to omit type effectiveness
         PLAYER(SPECIES_MONIMON);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_LEPPA_BERRY); Moves(MOVE_RECYCLE, MOVE_NONE, MOVE_NONE, MOVE_NONE); }
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_LEPPA_BERRY); Moves(MOVE_RECYCLE, MOVE_NONE, MOVE_NONE, MOVE_NONE); }
     } WHEN {
         for (j = 0; j < faintCount; j++)
         {
@@ -43,8 +43,8 @@ SINGLE_BATTLE_TEST("Last Respects power is multiplied by the amount of fainted m
     PARAMETRIZE { faintCount = 1; }
     PARAMETRIZE { faintCount = 2; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_LEPPA_BERRY); Moves(MOVE_RECYCLE, MOVE_NONE, MOVE_NONE, MOVE_NONE); }
-        OPPONENT(SPECIES_MOTIMON); // Not Wobbuffet to omit type effectiveness
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_LEPPA_BERRY); Moves(MOVE_RECYCLE, MOVE_NONE, MOVE_NONE, MOVE_NONE); }
+        OPPONENT(SPECIES_MOTIMON); // Not Lopmonx to omit type effectiveness
         OPPONENT(SPECIES_MONIMON);
     } WHEN {
         for (j = 0; j < faintCount; j++)

@@ -11,7 +11,7 @@ SINGLE_BATTLE_TEST("Ion Duldge turns normal moves into electric for the remainde
     GIVEN {
         ASSUME(gMovesInfo[MOVE_ION_DELUGE].effect == EFFECT_ION_DELUGE);
         PLAYER(SPECIES_VIXIMON);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_ION_DELUGE); MOVE(opponent, MOVE_TACKLE); }
         TURN { MOVE(opponent, MOVE_TACKLE); }
@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Ion Duldge turns normal moves into electric for the remainde
         MESSAGE("Viximon used Ion Deluge!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ION_DELUGE, player);
         MESSAGE("A deluge of ions showers the battlefield!");
-        MESSAGE("Foe Wobbuffet used Tackle!");
+        MESSAGE("Foe Lopmonx used Tackle!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         MESSAGE("It's super effective!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
@@ -31,7 +31,7 @@ SINGLE_BATTLE_TEST("Plasma Fists turns normal moves into electric for the remain
 {
     GIVEN {
         PLAYER(SPECIES_VIXIMON);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_PLASMA_FISTS); MOVE(opponent, MOVE_TACKLE); }
         TURN { MOVE(opponent, MOVE_TACKLE); }
@@ -39,7 +39,7 @@ SINGLE_BATTLE_TEST("Plasma Fists turns normal moves into electric for the remain
         MESSAGE("Viximon used Plasma Fists!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PLASMA_FISTS, player);
         MESSAGE("A deluge of ions showers the battlefield!");
-        MESSAGE("Foe Wobbuffet used Tackle!");
+        MESSAGE("Foe Lopmonx used Tackle!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         MESSAGE("It's super effective!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
@@ -86,14 +86,14 @@ SINGLE_BATTLE_TEST("Plasma Fists turns normal type dynamax-moves into electric t
 {
     GIVEN {
         PLAYER(SPECIES_VIXIMON) { Speed(100); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(1); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_PLASMA_FISTS); MOVE(opponent, MOVE_TACKLE, dynamax: TRUE); }
     } SCENE {
         MESSAGE("Viximon used Plasma Fists!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PLASMA_FISTS, player);
         MESSAGE("A deluge of ions showers the battlefield!");
-        MESSAGE("Foe Wobbuffet used Max Lightning!");
+        MESSAGE("Foe Lopmonx used Max Lightning!");
         MESSAGE("It's super effective!");
     }
 }
