@@ -2338,8 +2338,8 @@ static const union AnimCmd sAnim_Falcomon_1[] =
 };
 #endif //P_FAMILY_FALCOMON
 
-#if P_FAMILY_CHIKORITA
-static const union AnimCmd sAnim_Chikorita_1[] =
+#if P_FAMILY_FALCOMON_06
+static const union AnimCmd sAnim_Falcomon_06_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -2360,7 +2360,7 @@ static const union AnimCmd sAnim_Meganium_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_CHIKORITA
+#endif //P_FAMILY_FALCOMON_06
 
 #if P_FAMILY_CYNDAQUIL
 static const union AnimCmd sAnim_Cyndaquil_1[] =
@@ -10742,11 +10742,11 @@ SINGLE_ANIMATION(Agumon_fake_expertMegaY);
 #if P_FAMILY_FALCOMON
 SINGLE_ANIMATION(Falcomon);
 #endif //P_FAMILY_FALCOMON
-#if P_FAMILY_CHIKORITA
-SINGLE_ANIMATION(Chikorita);
+#if P_FAMILY_FALCOMON_06
+SINGLE_ANIMATION(Falcomon_06);
 SINGLE_ANIMATION(Bayleef);
 SINGLE_ANIMATION(Meganium);
-#endif //P_FAMILY_CHIKORITA
+#endif //P_FAMILY_FALCOMON_06
 #if P_FAMILY_CYNDAQUIL
 SINGLE_ANIMATION(Cyndaquil);
 SINGLE_ANIMATION(Quilava);

@@ -4276,8 +4276,8 @@ static const struct LevelUpMove sFalcomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_FALCOMON
 
-#if P_FAMILY_CHIKORITA
-static const struct LevelUpMove sChikoritaLevelUpLearnset[] = {
+#if P_FAMILY_FALCOMON_06
+static const struct LevelUpMove sFalcomon_06LevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 6, MOVE_RAZOR_LEAF),
@@ -4335,7 +4335,7 @@ static const struct LevelUpMove sMeganiumLevelUpLearnset[] = {
     LEVEL_UP_MOVE(66, MOVE_SOLAR_BEAM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CHIKORITA
+#endif //P_FAMILY_FALCOMON_06
 
 #if P_FAMILY_CYNDAQUIL
 static const struct LevelUpMove sCyndaquilLevelUpLearnset[] = {

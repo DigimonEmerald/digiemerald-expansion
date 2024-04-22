@@ -2600,14 +2600,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_FALCOMON
 
-#if P_FAMILY_CHIKORITA
-    const u32 gMonFrontPic_Chikorita[] = INCBIN_U32("graphics/pokemon/chikorita/anim_front.4bpp.lz");
-    const u32 gMonPalette_Chikorita[] = INCBIN_U32("graphics/pokemon/chikorita/normal.gbapal.lz");
-    const u32 gMonBackPic_Chikorita[] = INCBIN_U32("graphics/pokemon/chikorita/back.4bpp.lz");
-    const u32 gMonShinyPalette_Chikorita[] = INCBIN_U32("graphics/pokemon/chikorita/shiny.gbapal.lz");
-    const u8 gMonIcon_Chikorita[] = INCBIN_U8("graphics/pokemon/chikorita/icon.4bpp");
+#if P_FAMILY_FALCOMON_06
+    const u32 gMonFrontPic_Falcomon_06[] = INCBIN_U32("graphics/pokemon/falcomon_06/anim_front.4bpp.lz");
+    const u32 gMonPalette_Falcomon_06[] = INCBIN_U32("graphics/pokemon/falcomon_06/normal.gbapal.lz");
+    const u32 gMonBackPic_Falcomon_06[] = INCBIN_U32("graphics/pokemon/falcomon_06/back.4bpp.lz");
+    const u32 gMonShinyPalette_Falcomon_06[] = INCBIN_U32("graphics/pokemon/falcomon_06/shiny.gbapal.lz");
+    const u8 gMonIcon_Falcomon_06[] = INCBIN_U8("graphics/pokemon/falcomon_06/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Chikorita[] = INCBIN_U8("graphics/pokemon/chikorita/footprint.1bpp");
+    const u8 gMonFootprint_Falcomon_06[] = INCBIN_U8("graphics/pokemon/falcomon_06/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Bayleef[] = INCBIN_U32("graphics/pokemon/bayleef/anim_front.4bpp.lz");
@@ -2630,7 +2630,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
     const u32 gMonFrontPic_MeganiumF[] = INCBIN_U32("graphics/pokemon/meganium/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_MeganiumF[] = INCBIN_U32("graphics/pokemon/meganium/backf.4bpp.lz");
-#endif //P_FAMILY_CHIKORITA
+#endif //P_FAMILY_FALCOMON_06
 
 #if P_FAMILY_CYNDAQUIL
     const u32 gMonFrontPic_Cyndaquil[] = INCBIN_U32("graphics/pokemon/cyndaquil/anim_front.4bpp.lz");

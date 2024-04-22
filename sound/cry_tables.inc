@@ -462,11 +462,11 @@ gCryTable::
 .if P_FAMILY_FALCOMON == TRUE
 	cry Cry_Falcomon
 .endif @ P_FAMILY_FALCOMON
-.if P_FAMILY_CHIKORITA == TRUE
-	cry Cry_Chikorita
+.if P_FAMILY_FALCOMON_06 == TRUE
+	cry Cry_Falcomon_06
 	cry Cry_Bayleef
 	cry Cry_Meganium
-.endif @ P_FAMILY_CHIKORITA
+.endif @ P_FAMILY_FALCOMON_06
 .if P_FAMILY_CYNDAQUIL == TRUE
 	cry Cry_Cyndaquil
 	cry Cry_Quilava
@@ -2888,11 +2888,11 @@ gCryTable_Reverse::
 .if P_FAMILY_FALCOMON == TRUE
 	cry_reverse Cry_Falcomon
 .endif @ P_FAMILY_FALCOMON
-.if P_FAMILY_CHIKORITA == TRUE
-	cry_reverse Cry_Chikorita
+.if P_FAMILY_FALCOMON_06 == TRUE
+	cry_reverse Cry_Falcomon_06
 	cry_reverse Cry_Bayleef
 	cry_reverse Cry_Meganium
-.endif @ P_FAMILY_CHIKORITA
+.endif @ P_FAMILY_FALCOMON_06
 .if P_FAMILY_CYNDAQUIL == TRUE
 	cry_reverse Cry_Cyndaquil
 	cry_reverse Cry_Quilava

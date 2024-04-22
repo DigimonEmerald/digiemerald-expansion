@@ -1305,8 +1305,8 @@ const u16 gEggMoves[] = {
         MOVE_IRON_TAIL),
 #endif //P_FAMILY_ELECMON
 
-#if P_FAMILY_CHIKORITA
-    egg_moves(CHIKORITA,
+#if P_FAMILY_FALCOMON_06
+    egg_moves(FALCOMON_06,
         MOVE_VINE_WHIP,
         MOVE_LEECH_SEED,
         MOVE_COUNTER,
@@ -1322,7 +1322,7 @@ const u16 gEggMoves[] = {
         MOVE_REFRESH,
         MOVE_HEAL_PULSE,
         MOVE_GRASSY_TERRAIN),
-#endif //P_FAMILY_CHIKORITA
+#endif //P_FAMILY_FALCOMON_06
 
 #if P_FAMILY_CYNDAQUIL
     egg_moves(CYNDAQUIL,

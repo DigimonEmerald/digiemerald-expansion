@@ -1465,10 +1465,10 @@ Cry_Falcomon::
 	.incbin "sound/direct_sound_samples/cries/falcomon.bin"
 .endif @ P_FAMILY_FALCOMON
 
-.if P_FAMILY_CHIKORITA == TRUE
+.if P_FAMILY_FALCOMON_06 == TRUE
 	.align 2
-Cry_Chikorita::
-	.incbin "sound/direct_sound_samples/cries/chikorita.bin"
+Cry_Falcomon_06::
+	.incbin "sound/direct_sound_samples/cries/falcomon_06.bin"
 
 	.align 2
 Cry_Bayleef::
@@ -1477,7 +1477,7 @@ Cry_Bayleef::
 	.align 2
 Cry_Meganium::
 	.incbin "sound/direct_sound_samples/cries/meganium.bin"
-.endif @ P_FAMILY_CHIKORITA
+.endif @ P_FAMILY_FALCOMON_06
 
 .if P_FAMILY_CYNDAQUIL == TRUE
 	.align 2

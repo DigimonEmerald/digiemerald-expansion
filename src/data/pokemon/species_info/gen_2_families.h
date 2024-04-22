@@ -3,8 +3,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 {
 #endif
 
-#if P_FAMILY_CHIKORITA
-    [SPECIES_CHIKORITA] =
+#if P_FAMILY_FALCOMON_06
+    [SPECIES_FALCOMON_06] =
     {
         .baseHP        = 45,
         .baseAttack    = 49,
@@ -23,9 +23,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_LEAF_GUARD },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Chikorita"),
-        .cryId = CRY_CHIKORITA,
-        .natDexNum = NATIONAL_DEX_CHIKORITA,
+        .speciesName = _("Falcomon_06"),
+        .cryId = CRY_FALCOMON_06,
+        .natDexNum = NATIONAL_DEX_FALCOMON_06,
         .categoryName = _("Leaf"),
         .height = 9,
         .weight = 64,
@@ -38,22 +38,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Chikorita,
+        .frontPic = gMonFrontPic_Falcomon_06,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Chikorita,
+        .frontAnimFrames = sAnims_Falcomon_06,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Chikorita,
+        .backPic = gMonBackPic_Falcomon_06,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Chikorita,
-        .shinyPalette = gMonShinyPalette_Chikorita,
-        .iconSprite = gMonIcon_Chikorita,
+        .palette = gMonPalette_Falcomon_06,
+        .shinyPalette = gMonShinyPalette_Falcomon_06,
+        .iconSprite = gMonIcon_Falcomon_06,
         .iconPalIndex = 1,
-        FOOTPRINT(Chikorita)
-        .levelUpLearnset = sChikoritaLevelUpLearnset,
-        .teachableLearnset = sChikoritaTeachableLearnset,
+        FOOTPRINT(Falcomon_06)
+        .levelUpLearnset = sFalcomon_06LevelUpLearnset,
+        .teachableLearnset = sFalcomon_06TeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_BAYLEEF}),
     },
 
@@ -173,7 +173,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sMeganiumLevelUpLearnset,
         .teachableLearnset = sMeganiumTeachableLearnset,
     },
-#endif //P_FAMILY_CHIKORITA
+#endif //P_FAMILY_FALCOMON_06
 
 #if P_FAMILY_CYNDAQUIL
     [SPECIES_CYNDAQUIL] =

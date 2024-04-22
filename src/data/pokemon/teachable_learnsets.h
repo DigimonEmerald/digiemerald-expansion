@@ -8433,8 +8433,8 @@ static const u16 sFalcomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_FALCOMON
 
-#if P_FAMILY_CHIKORITA
-static const u16 sChikoritaTeachableLearnset[] = {
+#if P_FAMILY_FALCOMON_06
+static const u16 sFalcomon_06TeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,
@@ -8529,7 +8529,7 @@ static const u16 sMeganiumTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CHIKORITA
+#endif //P_FAMILY_FALCOMON_06
 
 #if P_FAMILY_CYNDAQUIL
 static const u16 sCyndaquilTeachableLearnset[] = {
