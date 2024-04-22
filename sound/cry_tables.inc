@@ -548,7 +548,7 @@ gCryTable::
 .endif @ P_FAMILY_KOTEMON
 .if P_FAMILY_KUDAMON == TRUE
 	cry Cry_Kudamon
-	cry Cry_Quagsire
+	cry Cry_Kudamon_06
 .if P_PALDEAN_FORMS == TRUE
 	cry Cry_Clodsire
 .endif @ P_PALDEAN_FORMS
@@ -2974,7 +2974,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_KOTEMON
 .if P_FAMILY_KUDAMON == TRUE
 	cry_reverse Cry_Kudamon
-	cry_reverse Cry_Quagsire
+	cry_reverse Cry_Kudamon_06
 .if P_PALDEAN_FORMS == TRUE
 	cry_reverse Cry_Clodsire
 .endif @ P_PALDEAN_FORMS

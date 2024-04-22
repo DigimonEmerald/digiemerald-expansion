@@ -3062,17 +3062,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_KudamonF[] = INCBIN_U32("graphics/pokemon/kudamon/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_KudamonF[] = INCBIN_U32("graphics/pokemon/kudamon/backf.4bpp.lz");
 
-    const u32 gMonFrontPic_Quagsire[] = INCBIN_U32("graphics/pokemon/quagsire/anim_front.4bpp.lz");
-    const u32 gMonPalette_Quagsire[] = INCBIN_U32("graphics/pokemon/quagsire/normal.gbapal.lz");
-    const u32 gMonBackPic_Quagsire[] = INCBIN_U32("graphics/pokemon/quagsire/back.4bpp.lz");
-    const u32 gMonShinyPalette_Quagsire[] = INCBIN_U32("graphics/pokemon/quagsire/shiny.gbapal.lz");
-    const u8 gMonIcon_Quagsire[] = INCBIN_U8("graphics/pokemon/quagsire/icon.4bpp");
+    const u32 gMonFrontPic_Kudamon_06[] = INCBIN_U32("graphics/pokemon/kudamon_06/anim_front.4bpp.lz");
+    const u32 gMonPalette_Kudamon_06[] = INCBIN_U32("graphics/pokemon/kudamon_06/normal.gbapal.lz");
+    const u32 gMonBackPic_Kudamon_06[] = INCBIN_U32("graphics/pokemon/kudamon_06/back.4bpp.lz");
+    const u32 gMonShinyPalette_Kudamon_06[] = INCBIN_U32("graphics/pokemon/kudamon_06/shiny.gbapal.lz");
+    const u8 gMonIcon_Kudamon_06[] = INCBIN_U8("graphics/pokemon/kudamon_06/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Quagsire[] = INCBIN_U8("graphics/pokemon/quagsire/footprint.1bpp");
+    const u8 gMonFootprint_Kudamon_06[] = INCBIN_U8("graphics/pokemon/kudamon_06/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_QuagsireF[] = INCBIN_U32("graphics/pokemon/quagsire/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_QuagsireF[] = INCBIN_U32("graphics/pokemon/quagsire/backf.4bpp.lz");
+    const u32 gMonFrontPic_Kudamon_06F[] = INCBIN_U32("graphics/pokemon/kudamon_06/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_Kudamon_06F[] = INCBIN_U32("graphics/pokemon/kudamon_06/backf.4bpp.lz");
 
 #if P_PALDEAN_FORMS
     const u32 gMonFrontPic_KudamonPaldean[] = INCBIN_U32("graphics/pokemon/kudamon/kudamon_paldean/front.4bpp.lz");

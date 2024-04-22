@@ -1681,8 +1681,8 @@ Cry_Kudamon::
 	.incbin "sound/direct_sound_samples/cries/kudamon.bin"
 
 	.align 2
-Cry_Quagsire::
-	.incbin "sound/direct_sound_samples/cries/quagsire.bin"
+Cry_Kudamon_06::
+	.incbin "sound/direct_sound_samples/cries/kudamon_06.bin"
 
 .if P_PALDEAN_FORMS == TRUE
 	.align 2

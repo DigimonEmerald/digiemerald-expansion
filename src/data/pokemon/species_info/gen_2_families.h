@@ -2505,10 +2505,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sKudamonLevelUpLearnset,
         .teachableLearnset = sKudamonTeachableLearnset,
         .formSpeciesIdTable = sKudamonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_QUAGSIRE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_KUDAMON_06}),
     },
 
-    [SPECIES_QUAGSIRE] =
+    [SPECIES_KUDAMON_06] =
     {
         .baseHP        = 95,
         .baseAttack    = 85,
@@ -2527,14 +2527,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
         .abilities = { ABILITY_DAMP, ABILITY_WATER_ABSORB, ABILITY_UNAWARE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Quagsire"),
-        .cryId = CRY_QUAGSIRE,
-        .natDexNum = NATIONAL_DEX_QUAGSIRE,
+        .speciesName = _("Kudamon_06"),
+        .cryId = CRY_KUDAMON_06,
+        .natDexNum = NATIONAL_DEX_KUDAMON_06,
         .categoryName = _("Water Fish"),
         .height = 14,
         .weight = 750,
         .description = COMPOUND_STRING(
-            "A Quagsire hunts by leaving its mouth wide\n"
+            "A Kudamon_06 hunts by leaving its mouth wide\n"
             "open in water and waiting for its prey to\n"
             "blunder in. Because it doesn't move, it\n"
             "does not get very hungry."),
@@ -2542,26 +2542,26 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Quagsire,
-        .frontPicFemale = gMonFrontPic_QuagsireF,
+        .frontPic = gMonFrontPic_Kudamon_06,
+        .frontPicFemale = gMonFrontPic_Kudamon_06F,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_Quagsire,
+        .frontAnimFrames = sAnims_Kudamon_06,
         .frontAnimId = ANIM_H_STRETCH,
-        .backPic = gMonBackPic_Quagsire,
-        .backPicFemale = gMonBackPic_QuagsireF,
+        .backPic = gMonBackPic_Kudamon_06,
+        .backPicFemale = gMonBackPic_Kudamon_06F,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Quagsire,
-        .shinyPalette = gMonShinyPalette_Quagsire,
-        .iconSprite = gMonIcon_Quagsire,
+        .palette = gMonPalette_Kudamon_06,
+        .shinyPalette = gMonShinyPalette_Kudamon_06,
+        .iconSprite = gMonIcon_Kudamon_06,
         .iconPalIndex = 0,
-        FOOTPRINT(Quagsire)
-        .levelUpLearnset = sQuagsireLevelUpLearnset,
-        .teachableLearnset = sQuagsireTeachableLearnset,
+        FOOTPRINT(Kudamon_06)
+        .levelUpLearnset = sKudamon_06LevelUpLearnset,
+        .teachableLearnset = sKudamon_06TeachableLearnset,
     },
 
 #if P_PALDEAN_FORMS

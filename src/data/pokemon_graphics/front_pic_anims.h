@@ -2826,7 +2826,7 @@ static const union AnimCmd sAnim_Kudamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Quagsire_1[] =
+static const union AnimCmd sAnim_Kudamon_06_1[] =
 {
     ANIMCMD_FRAME(1, 32),
     ANIMCMD_FRAME(0, 20),
@@ -10835,7 +10835,7 @@ SINGLE_ANIMATION(Yanmega);
 #endif //P_FAMILY_KOTEMON
 #if P_FAMILY_KUDAMON
 SINGLE_ANIMATION(Kudamon);
-SINGLE_ANIMATION(Quagsire);
+SINGLE_ANIMATION(Kudamon_06);
 #if P_PALDEAN_FORMS
 SINGLE_ANIMATION(KudamonPaldean);
 SINGLE_ANIMATION(Clodsire);

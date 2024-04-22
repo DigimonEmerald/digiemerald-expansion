@@ -10041,7 +10041,7 @@ static const u16 sKudamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sQuagsireTeachableLearnset[] = {
+static const u16 sKudamon_06TeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
