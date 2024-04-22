@@ -2817,8 +2817,8 @@ static const union AnimCmd sAnim_Yanmega_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_KOTEMON
 
-#if P_FAMILY_WOOPER
-static const union AnimCmd sAnim_Wooper_1[] =
+#if P_FAMILY_KUDAMON
+static const union AnimCmd sAnim_Kudamon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -2834,10 +2834,10 @@ static const union AnimCmd sAnim_Quagsire_1[] =
 };
 
 #if P_PALDEAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(WooperPaldean);
+PLACEHOLDER_ANIM_SINGLE_FRAME(KudamonPaldean);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Clodsire);
 #endif //P_PALDEAN_FORMS
-#endif //P_FAMILY_WOOPER
+#endif //P_FAMILY_KUDAMON
 
 #if P_FAMILY_MURKROW
 static const union AnimCmd sAnim_Murkrow_1[] =
@@ -10833,14 +10833,14 @@ SINGLE_ANIMATION(Kotemon);
 SINGLE_ANIMATION(Yanmega);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_KOTEMON
-#if P_FAMILY_WOOPER
-SINGLE_ANIMATION(Wooper);
+#if P_FAMILY_KUDAMON
+SINGLE_ANIMATION(Kudamon);
 SINGLE_ANIMATION(Quagsire);
 #if P_PALDEAN_FORMS
-SINGLE_ANIMATION(WooperPaldean);
+SINGLE_ANIMATION(KudamonPaldean);
 SINGLE_ANIMATION(Clodsire);
 #endif //P_PALDEAN_FORMS
-#endif //P_FAMILY_WOOPER
+#endif //P_FAMILY_KUDAMON
 #if P_FAMILY_MURKROW
 SINGLE_ANIMATION(Murkrow);
 #if P_GEN_4_CROSS_EVOS

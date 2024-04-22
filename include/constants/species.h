@@ -195,7 +195,7 @@
 #define SPECIES_KOKUWAMON                                 191
 #define SPECIES_KOKUWAMON_X                                192
 #define SPECIES_KOTEMON                                   193
-#define SPECIES_WOOPER                                  194
+#define SPECIES_KUDAMON                                  194
 #define SPECIES_QUAGSIRE                                195
 #define SPECIES_ESPEON                                  196
 #define SPECIES_UMBREON                                 197
@@ -1501,7 +1501,7 @@
 #define SPECIES_CHUUMON_PALDEAN_COMBAT_BREED             1402
 #define SPECIES_CHUUMON_PALDEAN_BLAZE_BREED              1403
 #define SPECIES_CHUUMON_PALDEAN_AQUA_BREED               1404
-#define SPECIES_WOOPER_PALDEAN                          1405
+#define SPECIES_KUDAMON_PALDEAN                          1405
 // Scarlet and Violet 1.2.0
 #define SPECIES_WALKING_WAKE                            1406
 #define SPECIES_IRON_LEAVES                             1407

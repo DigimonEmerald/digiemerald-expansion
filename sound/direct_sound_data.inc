@@ -1675,10 +1675,10 @@ Cry_Yanmega::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_KOTEMON
 
-.if P_FAMILY_WOOPER == TRUE
+.if P_FAMILY_KUDAMON == TRUE
 	.align 2
-Cry_Wooper::
-	.incbin "sound/direct_sound_samples/cries/wooper.bin"
+Cry_Kudamon::
+	.incbin "sound/direct_sound_samples/cries/kudamon.bin"
 
 	.align 2
 Cry_Quagsire::
@@ -1690,7 +1690,7 @@ Cry_Clodsire::
 	.incbin "sound/direct_sound_samples/cries/clodsire.bin"
 
 .endif @ P_PALDEAN_FORMS
-.endif @ P_FAMILY_WOOPER
+.endif @ P_FAMILY_KUDAMON
 
 .if P_FAMILY_MURKROW == TRUE
 	.align 2

@@ -1617,8 +1617,8 @@ const u16 gEggMoves[] = {
         MOVE_SECRET_POWER),
 #endif //P_FAMILY_KOTEMON
 
-#if P_FAMILY_WOOPER
-    egg_moves(WOOPER,
+#if P_FAMILY_KUDAMON
+    egg_moves(KUDAMON,
         MOVE_BODY_SLAM,
         MOVE_ANCIENT_POWER,
         MOVE_CURSE,
@@ -1637,7 +1637,7 @@ const u16 gEggMoves[] = {
         MOVE_EERIE_IMPULSE,
         MOVE_POWER_UP_PUNCH),
 #if P_PALDEAN_FORMS
-    egg_moves(WOOPER_PALDEAN,
+    egg_moves(KUDAMON_PALDEAN,
         MOVE_ACID_SPRAY,
         MOVE_AFTER_YOU,
         MOVE_ANCIENT_POWER,
@@ -1651,7 +1651,7 @@ const u16 gEggMoves[] = {
         MOVE_STOCKPILE,
         MOVE_SWALLOW),
 #endif //P_PALDEAN_FORMS
-#endif //P_FAMILY_WOOPER
+#endif //P_FAMILY_KUDAMON
 
 #if P_FAMILY_MURKROW
     egg_moves(MURKROW,

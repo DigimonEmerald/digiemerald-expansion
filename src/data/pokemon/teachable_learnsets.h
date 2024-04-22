@@ -9999,8 +9999,8 @@ static const u16 sYanmegaTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_KOTEMON
 
-#if P_FAMILY_WOOPER
-static const u16 sWooperTeachableLearnset[] = {
+#if P_FAMILY_KUDAMON
+static const u16 sKudamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIG,
@@ -10091,7 +10091,7 @@ static const u16 sQuagsireTeachableLearnset[] = {
 };
 
 #if P_PALDEAN_FORMS
-static const u16 sWooperPaldeanTeachableLearnset[] = {
+static const u16 sKudamonPaldeanTeachableLearnset[] = {
     MOVE_DIG,
     MOVE_EARTHQUAKE,
     MOVE_FACADE,
@@ -10140,7 +10140,7 @@ static const u16 sClodsireTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_PALDEAN_FORMS
-#endif //P_FAMILY_WOOPER
+#endif //P_FAMILY_KUDAMON
 
 #if P_FAMILY_MURKROW
 static const u16 sMurkrowTeachableLearnset[] = {

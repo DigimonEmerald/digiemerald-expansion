@@ -546,13 +546,13 @@ gCryTable::
 	cry Cry_Yanmega
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_KOTEMON
-.if P_FAMILY_WOOPER == TRUE
-	cry Cry_Wooper
+.if P_FAMILY_KUDAMON == TRUE
+	cry Cry_Kudamon
 	cry Cry_Quagsire
 .if P_PALDEAN_FORMS == TRUE
 	cry Cry_Clodsire
 .endif @ P_PALDEAN_FORMS
-.endif @ P_FAMILY_WOOPER
+.endif @ P_FAMILY_KUDAMON
 .if P_FAMILY_MURKROW == TRUE
 	cry Cry_Murkrow
 	cry Cry_Honchkrow
@@ -2972,13 +2972,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Yanmega
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_KOTEMON
-.if P_FAMILY_WOOPER == TRUE
-	cry_reverse Cry_Wooper
+.if P_FAMILY_KUDAMON == TRUE
+	cry_reverse Cry_Kudamon
 	cry_reverse Cry_Quagsire
 .if P_PALDEAN_FORMS == TRUE
 	cry_reverse Cry_Clodsire
 .endif @ P_PALDEAN_FORMS
-.endif @ P_FAMILY_WOOPER
+.endif @ P_FAMILY_KUDAMON
 .if P_FAMILY_MURKROW == TRUE
 	cry_reverse Cry_Murkrow
 	cry_reverse Cry_Honchkrow

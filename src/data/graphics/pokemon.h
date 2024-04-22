@@ -3049,18 +3049,18 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_KOTEMON
 
-#if P_FAMILY_WOOPER
-    const u32 gMonFrontPic_Wooper[] = INCBIN_U32("graphics/pokemon/wooper/anim_front.4bpp.lz");
-    const u32 gMonPalette_Wooper[] = INCBIN_U32("graphics/pokemon/wooper/normal.gbapal.lz");
-    const u32 gMonBackPic_Wooper[] = INCBIN_U32("graphics/pokemon/wooper/back.4bpp.lz");
-    const u32 gMonShinyPalette_Wooper[] = INCBIN_U32("graphics/pokemon/wooper/shiny.gbapal.lz");
-    const u8 gMonIcon_Wooper[] = INCBIN_U8("graphics/pokemon/wooper/icon.4bpp");
+#if P_FAMILY_KUDAMON
+    const u32 gMonFrontPic_Kudamon[] = INCBIN_U32("graphics/pokemon/kudamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Kudamon[] = INCBIN_U32("graphics/pokemon/kudamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Kudamon[] = INCBIN_U32("graphics/pokemon/kudamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Kudamon[] = INCBIN_U32("graphics/pokemon/kudamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Kudamon[] = INCBIN_U8("graphics/pokemon/kudamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Wooper[] = INCBIN_U8("graphics/pokemon/wooper/footprint.1bpp");
+    const u8 gMonFootprint_Kudamon[] = INCBIN_U8("graphics/pokemon/kudamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_WooperF[] = INCBIN_U32("graphics/pokemon/wooper/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_WooperF[] = INCBIN_U32("graphics/pokemon/wooper/backf.4bpp.lz");
+    const u32 gMonFrontPic_KudamonF[] = INCBIN_U32("graphics/pokemon/kudamon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_KudamonF[] = INCBIN_U32("graphics/pokemon/kudamon/backf.4bpp.lz");
 
     const u32 gMonFrontPic_Quagsire[] = INCBIN_U32("graphics/pokemon/quagsire/anim_front.4bpp.lz");
     const u32 gMonPalette_Quagsire[] = INCBIN_U32("graphics/pokemon/quagsire/normal.gbapal.lz");
@@ -3075,11 +3075,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonBackPic_QuagsireF[] = INCBIN_U32("graphics/pokemon/quagsire/backf.4bpp.lz");
 
 #if P_PALDEAN_FORMS
-    const u32 gMonFrontPic_WooperPaldean[] = INCBIN_U32("graphics/pokemon/wooper/wooper_paldean/front.4bpp.lz");
-    const u32 gMonPalette_WooperPaldean[] = INCBIN_U32("graphics/pokemon/wooper/wooper_paldean/normal.gbapal.lz");
-    const u32 gMonBackPic_WooperPaldean[] = INCBIN_U32("graphics/pokemon/wooper/wooper_paldean/back.4bpp.lz");
-    const u32 gMonShinyPalette_WooperPaldean[] = INCBIN_U32("graphics/pokemon/wooper/wooper_paldean/shiny.gbapal.lz");
-    const u8 gMonIcon_WooperPaldean[] = INCBIN_U8("graphics/pokemon/wooper/wooper_paldean/icon.4bpp");
+    const u32 gMonFrontPic_KudamonPaldean[] = INCBIN_U32("graphics/pokemon/kudamon/kudamon_paldean/front.4bpp.lz");
+    const u32 gMonPalette_KudamonPaldean[] = INCBIN_U32("graphics/pokemon/kudamon/kudamon_paldean/normal.gbapal.lz");
+    const u32 gMonBackPic_KudamonPaldean[] = INCBIN_U32("graphics/pokemon/kudamon/kudamon_paldean/back.4bpp.lz");
+    const u32 gMonShinyPalette_KudamonPaldean[] = INCBIN_U32("graphics/pokemon/kudamon/kudamon_paldean/shiny.gbapal.lz");
+    const u8 gMonIcon_KudamonPaldean[] = INCBIN_U8("graphics/pokemon/kudamon/kudamon_paldean/icon.4bpp");
 
     const u32 gMonFrontPic_Clodsire[] = INCBIN_U32("graphics/pokemon/clodsire/front.4bpp.lz");
     const u32 gMonPalette_Clodsire[] = INCBIN_U32("graphics/pokemon/clodsire/normal.gbapal.lz");
@@ -3090,7 +3090,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     // const u8 gMonFootprint_Clodsire[] = INCBIN_U8("graphics/pokemon/clodsire/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_PALDEAN_FORMS
-#endif //P_FAMILY_WOOPER
+#endif //P_FAMILY_KUDAMON
 
 #if P_FAMILY_MURKROW
     const u32 gMonFrontPic_Murkrow[] = INCBIN_U32("graphics/pokemon/murkrow/anim_front.4bpp.lz");

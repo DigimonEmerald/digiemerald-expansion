@@ -601,15 +601,15 @@ static const u16 sImpmonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_HYOKOMON
 
-#if P_FAMILY_WOOPER
-static const u16 sWooperFormSpeciesIdTable[] = {
-    SPECIES_WOOPER,
+#if P_FAMILY_KUDAMON
+static const u16 sKudamonFormSpeciesIdTable[] = {
+    SPECIES_KUDAMON,
 #if P_PALDEAN_FORMS
-    SPECIES_WOOPER_PALDEAN,
+    SPECIES_KUDAMON_PALDEAN,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_WOOPER
+#endif //P_FAMILY_KUDAMON
 
 #if P_FAMILY_UNOWN
 static const u16 sUnownFormSpeciesIdTable[] = {

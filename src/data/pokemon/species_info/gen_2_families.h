@@ -2449,8 +2449,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_KOTEMON
 
-#if P_FAMILY_WOOPER
-    [SPECIES_WOOPER] =
+#if P_FAMILY_KUDAMON
+    [SPECIES_KUDAMON] =
     {
         .baseHP        = 55,
         .baseAttack    = 45,
@@ -2469,14 +2469,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
         .abilities = { ABILITY_DAMP, ABILITY_WATER_ABSORB, ABILITY_UNAWARE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Wooper"),
-        .cryId = CRY_WOOPER,
-        .natDexNum = NATIONAL_DEX_WOOPER,
+        .speciesName = _("Kudamon"),
+        .cryId = CRY_KUDAMON,
+        .natDexNum = NATIONAL_DEX_KUDAMON,
         .categoryName = _("Water Fish"),
         .height = 4,
         .weight = 85,
         .description = COMPOUND_STRING(
-            "Wooper usually live in water but come\n"
+            "Kudamon usually live in water but come\n"
             "out onto land seeking food occasionally.\n"
             "On land, they coat their bodies with a\n"
             "gooey, toxic film."),
@@ -2484,27 +2484,27 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 21,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Wooper,
-        .frontPicFemale = gMonFrontPic_WooperF,
+        .frontPic = gMonFrontPic_Kudamon,
+        .frontPicFemale = gMonFrontPic_KudamonF,
         .frontPicSize = MON_COORDS_SIZE(40, 32),
         .frontPicSizeFemale = MON_COORDS_SIZE(40, 32),
         .frontPicYOffset = 16,
-        .frontAnimFrames = sAnims_Wooper,
+        .frontAnimFrames = sAnims_Kudamon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Wooper,
-        .backPicFemale = gMonBackPic_WooperF,
+        .backPic = gMonBackPic_Kudamon,
+        .backPicFemale = gMonBackPic_KudamonF,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Wooper,
-        .shinyPalette = gMonShinyPalette_Wooper,
-        .iconSprite = gMonIcon_Wooper,
+        .palette = gMonPalette_Kudamon,
+        .shinyPalette = gMonShinyPalette_Kudamon,
+        .iconSprite = gMonIcon_Kudamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Wooper)
-        .levelUpLearnset = sWooperLevelUpLearnset,
-        .teachableLearnset = sWooperTeachableLearnset,
-        .formSpeciesIdTable = sWooperFormSpeciesIdTable,
+        FOOTPRINT(Kudamon)
+        .levelUpLearnset = sKudamonLevelUpLearnset,
+        .teachableLearnset = sKudamonTeachableLearnset,
+        .formSpeciesIdTable = sKudamonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_QUAGSIRE}),
     },
 
@@ -2565,7 +2565,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 
 #if P_PALDEAN_FORMS
-    [SPECIES_WOOPER_PALDEAN] =
+    [SPECIES_KUDAMON_PALDEAN] =
     {
         .baseHP        = 55,
         .baseAttack    = 45,
@@ -2584,39 +2584,39 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
         .abilities = { ABILITY_POISON_POINT, ABILITY_WATER_ABSORB, ABILITY_UNAWARE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Wooper"),
-        .cryId = CRY_WOOPER,
-        .natDexNum = NATIONAL_DEX_WOOPER,
+        .speciesName = _("Kudamon"),
+        .cryId = CRY_KUDAMON,
+        .natDexNum = NATIONAL_DEX_KUDAMON,
         .categoryName = _("Poison Fish"),
         .height = 4,
         .weight = 110,
         .description = COMPOUND_STRING(
             "After losing a territorial struggle,\n"
-            "Wooper began living on land.\n"
+            "Kudamon began living on land.\n"
             "The Pokémon changed over time, developing\n"
             "a poisonous film to protect its body."),
         .pokemonScale = 479,
         .pokemonOffset = 21,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_WooperPaldean,
+        .frontPic = gMonFrontPic_KudamonPaldean,
         .frontPicSize = MON_COORDS_SIZE(40, 32),
         .frontPicYOffset = 16,
-        .frontAnimFrames = sAnims_WooperPaldean,
+        .frontAnimFrames = sAnims_KudamonPaldean,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_WooperPaldean,
+        .backPic = gMonBackPic_KudamonPaldean,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_WooperPaldean,
-        .shinyPalette = gMonShinyPalette_WooperPaldean,
-        .iconSprite = gMonIcon_WooperPaldean,
+        .palette = gMonPalette_KudamonPaldean,
+        .shinyPalette = gMonShinyPalette_KudamonPaldean,
+        .iconSprite = gMonIcon_KudamonPaldean,
         .iconPalIndex = 2,
-        FOOTPRINT(Wooper)
+        FOOTPRINT(Kudamon)
         .isPaldeanForm = TRUE,
-        .levelUpLearnset = sWooperPaldeanLevelUpLearnset,
-        .teachableLearnset = sWooperPaldeanTeachableLearnset,
-        .formSpeciesIdTable = sWooperFormSpeciesIdTable,
+        .levelUpLearnset = sKudamonPaldeanLevelUpLearnset,
+        .teachableLearnset = sKudamonPaldeanTeachableLearnset,
+        .formSpeciesIdTable = sKudamonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_CLODSIRE}),
     },
 
@@ -2672,7 +2672,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sClodsireTeachableLearnset,
     },
 #endif //P_PALDEAN_FORMS
-#endif //P_FAMILY_WOOPER
+#endif //P_FAMILY_KUDAMON
 
 #if P_FAMILY_MURKROW
     [SPECIES_MURKROW] =
