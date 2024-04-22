@@ -3206,7 +3206,7 @@ static const union AnimCmd sAnim_Penguinmon_1[] =
 };
 #endif //P_FAMILY_PENGUINMON
 
-#if P_FAMILY_MANTINE
+#if P_FAMILY_PETITMAMON
 #if P_GEN_4_CROSS_EVOS
 static const union AnimCmd sAnim_Mantyke_1[] =
 {
@@ -3218,7 +3218,7 @@ static const union AnimCmd sAnim_Mantyke_1[] =
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const union AnimCmd sAnim_Mantine_1[] =
+static const union AnimCmd sAnim_Petitmamon_1[] =
 {
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 30),
@@ -3226,7 +3226,7 @@ static const union AnimCmd sAnim_Mantine_1[] =
     ANIMCMD_FRAME(0, 40),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_MANTINE
+#endif //P_FAMILY_PETITMAMON
 
 #if P_FAMILY_SKARMORY
 static const union AnimCmd sAnim_Skarmory_1[] =
@@ -10947,12 +10947,12 @@ SINGLE_ANIMATION(Pawnmon_white);
 #if P_FAMILY_PENGUINMON
 SINGLE_ANIMATION(Penguinmon);
 #endif //P_FAMILY_PENGUINMON
-#if P_FAMILY_MANTINE
+#if P_FAMILY_PETITMAMON
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Mantyke);
 #endif //P_GEN_4_CROSS_EVOS
-SINGLE_ANIMATION(Mantine);
-#endif //P_FAMILY_MANTINE
+SINGLE_ANIMATION(Petitmamon);
+#endif //P_FAMILY_PETITMAMON
 #if P_FAMILY_SKARMORY
 SINGLE_ANIMATION(Skarmory);
 #endif //P_FAMILY_SKARMORY

@@ -1957,7 +1957,7 @@ const u16 gEggMoves[] = {
         MOVE_COUNTER),
 #endif //P_FAMILY_PENGUINMON
 
-#if P_FAMILY_MANTINE
+#if P_FAMILY_PETITMAMON
 #if P_GEN_4_CROSS_EVOS
     egg_moves(MANTYKE,
         MOVE_TWISTER,
@@ -1973,7 +1973,7 @@ const u16 gEggMoves[] = {
         MOVE_AMNESIA,
         MOVE_TAILWIND),
 #endif //P_GEN_4_CROSS_EVOS
-    egg_moves(MANTINE,
+    egg_moves(PETITMAMON,
         MOVE_TWISTER,
         MOVE_HYDRO_PUMP,
         MOVE_HAZE,
@@ -1984,7 +1984,7 @@ const u16 gEggMoves[] = {
         MOVE_SPLASH,
         MOVE_WIDE_GUARD,
         MOVE_AMNESIA),
-#endif //P_FAMILY_MANTINE
+#endif //P_FAMILY_PETITMAMON
 
 #if P_FAMILY_SKARMORY
     egg_moves(SKARMORY,

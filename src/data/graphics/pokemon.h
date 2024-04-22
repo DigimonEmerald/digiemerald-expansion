@@ -3670,7 +3670,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_PENGUINMON
 
-#if P_FAMILY_MANTINE
+#if P_FAMILY_PETITMAMON
 #if P_GEN_4_CROSS_EVOS
     const u32 gMonFrontPic_Mantyke[] = INCBIN_U32("graphics/pokemon/mantyke/anim_front.4bpp.lz");
     const u32 gMonPalette_Mantyke[] = INCBIN_U32("graphics/pokemon/mantyke/normal.gbapal.lz");
@@ -3682,15 +3682,15 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
 
-    const u32 gMonFrontPic_Mantine[] = INCBIN_U32("graphics/pokemon/mantine/anim_front.4bpp.lz");
-    const u32 gMonPalette_Mantine[] = INCBIN_U32("graphics/pokemon/mantine/normal.gbapal.lz");
-    const u32 gMonBackPic_Mantine[] = INCBIN_U32("graphics/pokemon/mantine/back.4bpp.lz");
-    const u32 gMonShinyPalette_Mantine[] = INCBIN_U32("graphics/pokemon/mantine/shiny.gbapal.lz");
-    const u8 gMonIcon_Mantine[] = INCBIN_U8("graphics/pokemon/mantine/icon.4bpp");
+    const u32 gMonFrontPic_Petitmamon[] = INCBIN_U32("graphics/pokemon/petitmamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Petitmamon[] = INCBIN_U32("graphics/pokemon/petitmamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Petitmamon[] = INCBIN_U32("graphics/pokemon/petitmamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Petitmamon[] = INCBIN_U32("graphics/pokemon/petitmamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Petitmamon[] = INCBIN_U8("graphics/pokemon/petitmamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Mantine[] = INCBIN_U8("graphics/pokemon/mantine/footprint.1bpp");
+    const u8 gMonFootprint_Petitmamon[] = INCBIN_U8("graphics/pokemon/petitmamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_MANTINE
+#endif //P_FAMILY_PETITMAMON
 
 #if P_FAMILY_SKARMORY
     const u32 gMonFrontPic_Skarmory[] = INCBIN_U32("graphics/pokemon/skarmory/anim_front.4bpp.lz");

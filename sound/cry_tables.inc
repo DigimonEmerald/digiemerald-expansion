@@ -651,12 +651,12 @@ gCryTable::
 .if P_FAMILY_PENGUINMON == TRUE
 	cry Cry_Penguinmon
 .endif @ P_FAMILY_PENGUINMON
-.if P_FAMILY_MANTINE == TRUE
+.if P_FAMILY_PETITMAMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Mantyke
 .endif @ P_GEN_4_CROSS_EVOS
-	cry Cry_Mantine
-.endif @ P_FAMILY_MANTINE
+	cry Cry_Petitmamon
+.endif @ P_FAMILY_PETITMAMON
 .if P_FAMILY_SKARMORY == TRUE
 	cry Cry_Skarmory
 .endif @ P_FAMILY_SKARMORY
@@ -3077,12 +3077,12 @@ gCryTable_Reverse::
 .if P_FAMILY_PENGUINMON == TRUE
 	cry_reverse Cry_Penguinmon
 .endif @ P_FAMILY_PENGUINMON
-.if P_FAMILY_MANTINE == TRUE
+.if P_FAMILY_PETITMAMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Mantyke
 .endif @ P_GEN_4_CROSS_EVOS
-	cry_reverse Cry_Mantine
-.endif @ P_FAMILY_MANTINE
+	cry_reverse Cry_Petitmamon
+.endif @ P_FAMILY_PETITMAMON
 .if P_FAMILY_SKARMORY == TRUE
 	cry_reverse Cry_Skarmory
 .endif @ P_FAMILY_SKARMORY

@@ -171,7 +171,7 @@
 #define P_FAMILY_PATAMON                 P_GEN_2_POKEMON
 #define P_FAMILY_PAWNMON_BLACK                P_GEN_2_POKEMON
 #define P_FAMILY_PENGUINMON                P_GEN_2_POKEMON
-#define P_FAMILY_MANTINE                 P_GEN_2_POKEMON
+#define P_FAMILY_PETITMAMON                 P_GEN_2_POKEMON
 #define P_FAMILY_SKARMORY                P_GEN_2_POKEMON
 #define P_FAMILY_HOUNDOUR                P_GEN_2_POKEMON
 #define P_FAMILY_PHANPY                  P_GEN_2_POKEMON

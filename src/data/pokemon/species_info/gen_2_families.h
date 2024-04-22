@@ -5170,7 +5170,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_PENGUINMON
 
-#if P_FAMILY_MANTINE
+#if P_FAMILY_PETITMAMON
 #if P_GEN_4_CROSS_EVOS
     [SPECIES_MANTYKE] =
     {
@@ -5222,11 +5222,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Mantyke)
         .levelUpLearnset = sMantykeLevelUpLearnset,
         .teachableLearnset = sMantykeTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_SPECIFIC_MON_IN_PARTY, SPECIES_PAWNMON_BLACK, SPECIES_MANTINE}),
+        .evolutions = EVOLUTION({EVO_SPECIFIC_MON_IN_PARTY, SPECIES_PAWNMON_BLACK, SPECIES_PETITMAMON}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 
-    [SPECIES_MANTINE] =
+    [SPECIES_PETITMAMON] =
     {
         .baseHP        = P_UPDATED_STATS >= GEN_7 ? 85 : 65,
         .baseAttack    = 40,
@@ -5251,14 +5251,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_WATER_ABSORB, ABILITY_WATER_VEIL },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Mantine"),
-        .cryId = CRY_MANTINE,
-        .natDexNum = NATIONAL_DEX_MANTINE,
+        .speciesName = _("Petitmamon"),
+        .cryId = CRY_PETITMAMON,
+        .natDexNum = NATIONAL_DEX_PETITMAMON,
         .categoryName = _("Kite"),
         .height = 21,
         .weight = 2200,
         .description = COMPOUND_STRING(
-            "On sunny days, schools of Mantine can be\n"
+            "On sunny days, schools of Petitmamon can be\n"
             "seen elegantly leaping over the waves.\n"
             "It is not bothered by the Pawnmon_black that\n"
             "hitches rides."),
@@ -5266,25 +5266,25 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 0,
         .trainerScale = 342,
         .trainerOffset = 7,
-        .frontPic = gMonFrontPic_Mantine,
+        .frontPic = gMonFrontPic_Petitmamon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Mantine,
+        .frontAnimFrames = sAnims_Petitmamon,
         .frontAnimId = ANIM_SWING_CONVEX,
         .enemyMonElevation = 6,
-        .backPic = gMonBackPic_Mantine,
+        .backPic = gMonBackPic_Petitmamon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Mantine,
-        .shinyPalette = gMonShinyPalette_Mantine,
-        .iconSprite = gMonIcon_Mantine,
+        .palette = gMonPalette_Petitmamon,
+        .shinyPalette = gMonShinyPalette_Petitmamon,
+        .iconSprite = gMonIcon_Petitmamon,
         .iconPalIndex = 2,
-        FOOTPRINT(Mantine)
-        .levelUpLearnset = sMantineLevelUpLearnset,
-        .teachableLearnset = sMantineTeachableLearnset,
+        FOOTPRINT(Petitmamon)
+        .levelUpLearnset = sPetitmamonLevelUpLearnset,
+        .teachableLearnset = sPetitmamonTeachableLearnset,
     },
-#endif //P_FAMILY_MANTINE
+#endif //P_FAMILY_PETITMAMON
 
 #if P_FAMILY_SKARMORY
     [SPECIES_SKARMORY] =

@@ -1906,7 +1906,7 @@ Cry_Penguinmon::
 	.incbin "sound/direct_sound_samples/cries/penguinmon.bin"
 .endif @ P_FAMILY_PENGUINMON
 
-.if P_FAMILY_MANTINE == TRUE
+.if P_FAMILY_PETITMAMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
 Cry_Mantyke::
@@ -1914,9 +1914,9 @@ Cry_Mantyke::
 .endif @ P_GEN_4_CROSS_EVOS
 
 	.align 2
-Cry_Mantine::
-	.incbin "sound/direct_sound_samples/cries/mantine.bin"
-.endif @ P_FAMILY_MANTINE
+Cry_Petitmamon::
+	.incbin "sound/direct_sound_samples/cries/petitmamon.bin"
+.endif @ P_FAMILY_PETITMAMON
 
 .if P_FAMILY_SKARMORY == TRUE
 	.align 2

@@ -5046,7 +5046,7 @@ static const struct LevelUpMove sPenguinmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_PENGUINMON
 
-#if P_FAMILY_MANTINE
+#if P_FAMILY_PETITMAMON
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sMantykeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
@@ -5066,7 +5066,7 @@ static const struct LevelUpMove sMantykeLevelUpLearnset[] = {
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const struct LevelUpMove sMantineLevelUpLearnset[] = {
+static const struct LevelUpMove sPetitmamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
     LEVEL_UP_MOVE( 8, MOVE_SUPERSONIC),
@@ -5078,7 +5078,7 @@ static const struct LevelUpMove sMantineLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_CONFUSE_RAY),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_MANTINE
+#endif //P_FAMILY_PETITMAMON
 
 #if P_FAMILY_SKARMORY
 static const struct LevelUpMove sSkarmoryLevelUpLearnset[] = {

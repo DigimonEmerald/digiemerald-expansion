@@ -11612,7 +11612,7 @@ static const u16 sPenguinmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_PENGUINMON
 
-#if P_FAMILY_MANTINE
+#if P_FAMILY_PETITMAMON
 #if P_GEN_4_CROSS_EVOS
 static const u16 sMantykeTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
@@ -11644,7 +11644,7 @@ static const u16 sMantykeTeachableLearnset[] = {
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const u16 sMantineTeachableLearnset[] = {
+static const u16 sPetitmamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -11676,7 +11676,7 @@ static const u16 sMantineTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MANTINE
+#endif //P_FAMILY_PETITMAMON
 
 #if P_FAMILY_SKARMORY
 static const u16 sSkarmoryTeachableLearnset[] = {
