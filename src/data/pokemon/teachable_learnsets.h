@@ -6812,7 +6812,7 @@ static const u16 sSamuagumonTeachableLearnset[] = {
 
 #if P_FAMILY_CANDLEMON
 #if P_GEN_2_CROSS_EVOS
-static const u16 sElekidTeachableLearnset[] = {
+static const u16 sSantaagumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DOUBLE_TEAM,

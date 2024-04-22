@@ -1228,8 +1228,8 @@ Cry_Samuagumon::
 .if P_FAMILY_CANDLEMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Elekid::
-	.incbin "sound/direct_sound_samples/cries/elekid.bin"
+Cry_Santaagumon::
+	.incbin "sound/direct_sound_samples/cries/santaagumon.bin"
 .endif @ P_GEN_2_CROSS_EVOS
 
 	.align 2

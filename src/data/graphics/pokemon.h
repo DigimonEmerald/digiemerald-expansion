@@ -2073,13 +2073,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
 #if P_FAMILY_CANDLEMON
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Elekid[] = INCBIN_U32("graphics/pokemon/elekid/anim_front.4bpp.lz");
-    const u32 gMonPalette_Elekid[] = INCBIN_U32("graphics/pokemon/elekid/normal.gbapal.lz");
-    const u32 gMonBackPic_Elekid[] = INCBIN_U32("graphics/pokemon/elekid/back.4bpp.lz");
-    const u32 gMonShinyPalette_Elekid[] = INCBIN_U32("graphics/pokemon/elekid/shiny.gbapal.lz");
-    const u8 gMonIcon_Elekid[] = INCBIN_U8("graphics/pokemon/elekid/icon.4bpp");
+    const u32 gMonFrontPic_Santaagumon[] = INCBIN_U32("graphics/pokemon/santaagumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Santaagumon[] = INCBIN_U32("graphics/pokemon/santaagumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Santaagumon[] = INCBIN_U32("graphics/pokemon/santaagumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Santaagumon[] = INCBIN_U32("graphics/pokemon/santaagumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Santaagumon[] = INCBIN_U8("graphics/pokemon/santaagumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Elekid[] = INCBIN_U8("graphics/pokemon/elekid/footprint.1bpp");
+    const u8 gMonFootprint_Santaagumon[] = INCBIN_U8("graphics/pokemon/santaagumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
 

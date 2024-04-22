@@ -12539,7 +12539,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
 #if P_FAMILY_CANDLEMON
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_ELEKID] =
+    [SPECIES_SANTAAGUMON] =
     {
         .baseHP        = 45,
         .baseAttack    = 63,
@@ -12560,37 +12560,37 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_VITAL_SPIRIT },
         .bodyColor = BODY_COLOR_YELLOW,
         .noFlip = TRUE,
-        .speciesName = _("Elekid"),
-        .cryId = CRY_ELEKID,
-        .natDexNum = NATIONAL_DEX_ELEKID,
+        .speciesName = _("Santaagumon"),
+        .cryId = CRY_SANTAAGUMON,
+        .natDexNum = NATIONAL_DEX_SANTAAGUMON,
         .categoryName = _("Electric"),
         .height = 6,
         .weight = 235,
         .description = COMPOUND_STRING(
             "If it touches metal and discharges the\n"
             "electricity it has stored in its body, an\n"
-            "Elekid begins swinging its arms in circles\n"
+            "Santaagumon begins swinging its arms in circles\n"
             "to recharge itself."),
         .pokemonScale = 363,
         .pokemonOffset = 14,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Elekid,
+        .frontPic = gMonFrontPic_Santaagumon,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Elekid,
+        .frontAnimFrames = sAnims_Santaagumon,
         .frontAnimId = ANIM_FLASH_YELLOW,
-        .backPic = gMonBackPic_Elekid,
+        .backPic = gMonBackPic_Santaagumon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_H_SHAKE,
-        .palette = gMonPalette_Elekid,
-        .shinyPalette = gMonShinyPalette_Elekid,
-        .iconSprite = gMonIcon_Elekid,
+        .palette = gMonPalette_Santaagumon,
+        .shinyPalette = gMonShinyPalette_Santaagumon,
+        .iconSprite = gMonIcon_Santaagumon,
         .iconPalIndex = 1,
-        FOOTPRINT(Elekid)
-        .levelUpLearnset = sElekidLevelUpLearnset,
-        .teachableLearnset = sElekidTeachableLearnset,
+        FOOTPRINT(Santaagumon)
+        .levelUpLearnset = sSantaagumonLevelUpLearnset,
+        .teachableLearnset = sSantaagumonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_CANDLEMON}),
     },
 #endif //P_GEN_2_CROSS_EVOS

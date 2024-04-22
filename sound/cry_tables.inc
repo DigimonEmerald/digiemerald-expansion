@@ -354,7 +354,7 @@ gCryTable::
 .endif @ P_FAMILY_SAMUAGUMON
 .if P_FAMILY_CANDLEMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry Cry_Elekid
+	cry Cry_Santaagumon
 .endif @ P_GEN_2_CROSS_EVOS
 	cry Cry_Candlemon
 .if P_GEN_4_CROSS_EVOS == TRUE
@@ -2780,7 +2780,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_SAMUAGUMON
 .if P_FAMILY_CANDLEMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry_reverse Cry_Elekid
+	cry_reverse Cry_Santaagumon
 .endif @ P_GEN_2_CROSS_EVOS
 	cry_reverse Cry_Candlemon
 .if P_GEN_4_CROSS_EVOS == TRUE

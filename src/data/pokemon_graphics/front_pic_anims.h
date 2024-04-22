@@ -1869,7 +1869,7 @@ static const union AnimCmd sAnim_Samuagumon_1[] =
 
 #if P_FAMILY_CANDLEMON
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Elekid_1[] =
+static const union AnimCmd sAnim_Santaagumon_1[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_FRAME(1, 30),
@@ -10613,7 +10613,7 @@ SINGLE_ANIMATION(Samuagumon);
 #endif //P_FAMILY_SAMUAGUMON
 #if P_FAMILY_CANDLEMON
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Elekid);
+SINGLE_ANIMATION(Santaagumon);
 #endif //P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Candlemon);
 #if P_GEN_4_CROSS_EVOS
