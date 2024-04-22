@@ -5392,10 +5392,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Pillomon)
         .levelUpLearnset = sPillomonLevelUpLearnset,
         .teachableLearnset = sPillomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_HOUNDOOM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_POMUMON}),
     },
 
-    [SPECIES_HOUNDOOM] =
+    [SPECIES_POMUMON] =
     {
         .baseHP        = 75,
         .baseAttack    = 90,
@@ -5414,14 +5414,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_EARLY_BIRD, ABILITY_FLASH_FIRE, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Houndoom"),
-        .cryId = CRY_HOUNDOOM,
-        .natDexNum = NATIONAL_DEX_HOUNDOOM,
+        .speciesName = _("Pomumon"),
+        .cryId = CRY_POMUMON,
+        .natDexNum = NATIONAL_DEX_POMUMON,
         .categoryName = _("Dark"),
         .height = 14,
         .weight = 350,
         .description = COMPOUND_STRING(
-            "In a Houndoom pack, the one with its horns\n"
+            "In a Pomumon pack, the one with its horns\n"
             "raked sharply back serves a leadership\n"
             "role. They choose their leader by fighting\n"
             "among themselves."),
@@ -5429,32 +5429,32 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Houndoom,
-        .frontPicFemale = gMonFrontPic_HoundoomF,
+        .frontPic = gMonFrontPic_Pomumon,
+        .frontPicFemale = gMonFrontPic_PomumonF,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Houndoom,
+        .frontAnimFrames = sAnims_Pomumon,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Houndoom,
-        .backPicFemale = gMonBackPic_HoundoomF,
+        .backPic = gMonBackPic_Pomumon,
+        .backPicFemale = gMonBackPic_PomumonF,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Houndoom,
-        .shinyPalette = gMonShinyPalette_Houndoom,
-        .iconSprite = gMonIcon_Houndoom,
+        .palette = gMonPalette_Pomumon,
+        .shinyPalette = gMonShinyPalette_Pomumon,
+        .iconSprite = gMonIcon_Pomumon,
         .iconPalIndex = 0,
-        FOOTPRINT(Houndoom)
-        .levelUpLearnset = sHoundoomLevelUpLearnset,
-        .teachableLearnset = sHoundoomTeachableLearnset,
-        .formSpeciesIdTable = sHoundoomFormSpeciesIdTable,
-        .formChangeTable = sHoundoomFormChangeTable,
+        FOOTPRINT(Pomumon)
+        .levelUpLearnset = sPomumonLevelUpLearnset,
+        .teachableLearnset = sPomumonTeachableLearnset,
+        .formSpeciesIdTable = sPomumonFormSpeciesIdTable,
+        .formChangeTable = sPomumonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_HOUNDOOM_MEGA] =
+    [SPECIES_POMUMON_MEGA] =
     {
         .baseHP        = 75,
         .baseAttack    = 90,
@@ -5473,39 +5473,39 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SOLAR_POWER, ABILITY_SOLAR_POWER, ABILITY_SOLAR_POWER },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Houndoom"),
-        .cryId = CRY_HOUNDOOM_MEGA,
-        .natDexNum = NATIONAL_DEX_HOUNDOOM,
+        .speciesName = _("Pomumon"),
+        .cryId = CRY_POMUMON_MEGA,
+        .natDexNum = NATIONAL_DEX_POMUMON,
         .categoryName = _("Dark"),
         .height = 19,
         .weight = 495,
         .description = COMPOUND_STRING(
             "Its red claws and the tips of its tail are\n"
             "melting from high internal temperatures\n"
-            "that are painful to Houndoom itself.\n"),
+            "that are painful to Pomumon itself.\n"),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_HoundoomMega,
+        .frontPic = gMonFrontPic_PomumonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_HoundoomMega,
+        .frontAnimFrames = sAnims_PomumonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_HoundoomMega,
+        .backPic = gMonBackPic_PomumonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_HoundoomMega,
-        .shinyPalette = gMonShinyPalette_HoundoomMega,
-        .iconSprite = gMonIcon_HoundoomMega,
+        .palette = gMonPalette_PomumonMega,
+        .shinyPalette = gMonShinyPalette_PomumonMega,
+        .iconSprite = gMonIcon_PomumonMega,
         .iconPalIndex = 0,
-        FOOTPRINT(Houndoom)
+        FOOTPRINT(Pomumon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sHoundoomLevelUpLearnset,
-        .teachableLearnset = sHoundoomTeachableLearnset,
-        .formSpeciesIdTable = sHoundoomFormSpeciesIdTable,
-        .formChangeTable = sHoundoomFormChangeTable,
+        .levelUpLearnset = sPomumonLevelUpLearnset,
+        .teachableLearnset = sPomumonTeachableLearnset,
+        .formSpeciesIdTable = sPomumonFormSpeciesIdTable,
+        .formChangeTable = sPomumonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_PILLOMON

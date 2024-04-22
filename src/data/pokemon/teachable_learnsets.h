@@ -11752,7 +11752,7 @@ static const u16 sPillomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sHoundoomTeachableLearnset[] = {
+static const u16 sPomumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,

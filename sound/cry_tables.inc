@@ -662,9 +662,9 @@ gCryTable::
 .endif @ P_FAMILY_PHASCOMON
 .if P_FAMILY_PILLOMON == TRUE
 	cry Cry_Pillomon
-	cry Cry_Houndoom
+	cry Cry_Pomumon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_HoundoomMega
+	cry Cry_PomumonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_PILLOMON
 .if P_FAMILY_PHANPY == TRUE
@@ -3088,9 +3088,9 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_PHASCOMON
 .if P_FAMILY_PILLOMON == TRUE
 	cry_reverse Cry_Pillomon
-	cry_reverse Cry_Houndoom
+	cry_reverse Cry_Pomumon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_HoundoomMega
+	cry_reverse Cry_PomumonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_PILLOMON
 .if P_FAMILY_PHANPY == TRUE

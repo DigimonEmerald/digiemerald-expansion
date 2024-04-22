@@ -3713,24 +3713,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Pillomon[] = INCBIN_U8("graphics/pokemon/pillomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Houndoom[] = INCBIN_U32("graphics/pokemon/houndoom/anim_front.4bpp.lz");
-    const u32 gMonPalette_Houndoom[] = INCBIN_U32("graphics/pokemon/houndoom/normal.gbapal.lz");
-    const u32 gMonBackPic_Houndoom[] = INCBIN_U32("graphics/pokemon/houndoom/back.4bpp.lz");
-    const u32 gMonShinyPalette_Houndoom[] = INCBIN_U32("graphics/pokemon/houndoom/shiny.gbapal.lz");
-    const u8 gMonIcon_Houndoom[] = INCBIN_U8("graphics/pokemon/houndoom/icon.4bpp");
+    const u32 gMonFrontPic_Pomumon[] = INCBIN_U32("graphics/pokemon/pomumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Pomumon[] = INCBIN_U32("graphics/pokemon/pomumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Pomumon[] = INCBIN_U32("graphics/pokemon/pomumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Pomumon[] = INCBIN_U32("graphics/pokemon/pomumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Pomumon[] = INCBIN_U8("graphics/pokemon/pomumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Houndoom[] = INCBIN_U8("graphics/pokemon/houndoom/footprint.1bpp");
+    const u8 gMonFootprint_Pomumon[] = INCBIN_U8("graphics/pokemon/pomumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_HoundoomF[] = INCBIN_U32("graphics/pokemon/houndoom/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_HoundoomF[] = INCBIN_U32("graphics/pokemon/houndoom/backf.4bpp.lz");
+    const u32 gMonFrontPic_PomumonF[] = INCBIN_U32("graphics/pokemon/pomumon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_PomumonF[] = INCBIN_U32("graphics/pokemon/pomumon/backf.4bpp.lz");
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_HoundoomMega[] = INCBIN_U32("graphics/pokemon/houndoom/mega/front.4bpp.lz");
-    const u32 gMonPalette_HoundoomMega[] = INCBIN_U32("graphics/pokemon/houndoom/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_HoundoomMega[] = INCBIN_U32("graphics/pokemon/houndoom/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_HoundoomMega[] = INCBIN_U32("graphics/pokemon/houndoom/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_HoundoomMega[] = INCBIN_U8("graphics/pokemon/houndoom/mega/icon.4bpp");
+    const u32 gMonFrontPic_PomumonMega[] = INCBIN_U32("graphics/pokemon/pomumon/mega/front.4bpp.lz");
+    const u32 gMonPalette_PomumonMega[] = INCBIN_U32("graphics/pokemon/pomumon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_PomumonMega[] = INCBIN_U32("graphics/pokemon/pomumon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_PomumonMega[] = INCBIN_U32("graphics/pokemon/pomumon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_PomumonMega[] = INCBIN_U8("graphics/pokemon/pomumon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_PILLOMON
 

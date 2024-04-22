@@ -1930,13 +1930,13 @@ Cry_Pillomon::
 	.incbin "sound/direct_sound_samples/cries/pillomon.bin"
 
 	.align 2
-Cry_Houndoom::
-	.incbin "sound/direct_sound_samples/cries/houndoom.bin"
+Cry_Pomumon::
+	.incbin "sound/direct_sound_samples/cries/pomumon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_HoundoomMega::
-	.incbin "sound/direct_sound_samples/cries/houndoom_mega.bin"
+Cry_PomumonMega::
+	.incbin "sound/direct_sound_samples/cries/pomumon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_PILLOMON
 

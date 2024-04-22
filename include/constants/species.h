@@ -230,7 +230,7 @@
 #define SPECIES_PETITMAMON                                 226
 #define SPECIES_PHASCOMON                                227
 #define SPECIES_PILLOMON                                228
-#define SPECIES_HOUNDOOM                                229
+#define SPECIES_POMUMON                                229
 #define SPECIES_KINGDRA                                 230
 #define SPECIES_PHANPY                                  231
 #define SPECIES_DONPHAN                                 232
@@ -983,7 +983,7 @@
 #define SPECIES_KODEKACMON_MEGA                            922
 #define SPECIES_MONODRAMON_MEGA                             923
 #define SPECIES_MUCHOMON_MEGA                          924
-#define SPECIES_HOUNDOOM_MEGA                           925
+#define SPECIES_POMUMON_MEGA                           925
 #define SPECIES_TYRANITAR_MEGA                          926
 #define SPECIES_SCEPTILE_MEGA                           927
 #define SPECIES_BLAZIKEN_MEGA                           928

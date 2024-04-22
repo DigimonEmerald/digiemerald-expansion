@@ -94,7 +94,7 @@ SINGLE_BATTLE_TEST("Future Sight is affected by type effectiveness")
     GIVEN {
         PLAYER(SPECIES_PETITMON);
         PLAYER(SPECIES_PICHIMON);
-        OPPONENT(SPECIES_HOUNDOOM);
+        OPPONENT(SPECIES_POMUMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SEED_FLARE, WITH_RNG(RNG_SECONDARY_EFFECT, FALSE)); }
         TURN { MOVE(player, MOVE_FUTURE_SIGHT); }
@@ -105,8 +105,8 @@ SINGLE_BATTLE_TEST("Future Sight is affected by type effectiveness")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SEED_FLARE, player);
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FUTURE_SIGHT, player);
-        MESSAGE("Foe Houndoom took the Future Sight attack!");
-        MESSAGE("It doesn't affect Foe Houndoom…");
+        MESSAGE("Foe Pomumon took the Future Sight attack!");
+        MESSAGE("It doesn't affect Foe Pomumon…");
         NOT HP_BAR(opponent);
     }
 }
