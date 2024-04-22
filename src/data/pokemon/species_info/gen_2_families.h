@@ -2047,10 +2047,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Keramon_x)
         .levelUpLearnset = sKeramon_xLevelUpLearnset,
         .teachableLearnset = sKeramon_xTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_JUMPLUFF}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_KODOKGUMON}),
     },
 
-    [SPECIES_JUMPLUFF] =
+    [SPECIES_KODOKGUMON] =
     {
         .baseHP        = 75,
         .baseAttack    = 55,
@@ -2077,14 +2077,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_GRASS),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_LEAF_GUARD, ABILITY_INFILTRATOR },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Jumpluff"),
-        .cryId = CRY_JUMPLUFF,
-        .natDexNum = NATIONAL_DEX_JUMPLUFF,
+        .speciesName = _("Kodokgumon"),
+        .cryId = CRY_KODOKGUMON,
+        .natDexNum = NATIONAL_DEX_KODOKGUMON,
         .categoryName = _("Cottonweed"),
         .height = 8,
         .weight = 30,
         .description = COMPOUND_STRING(
-            "Jumpluff ride warm southern winds to\n"
+            "Kodokgumon ride warm southern winds to\n"
             "cross the sea and fly to foreign lands.\n"
             "This Pokémon lands when it encounters\n"
             "cold air while it is floating."),
@@ -2092,23 +2092,23 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = -4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Jumpluff,
+        .frontPic = gMonFrontPic_Kodokgumon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Jumpluff,
+        .frontAnimFrames = sAnims_Kodokgumon,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE_SMALL,
         .enemyMonElevation = 9,
-        .backPic = gMonBackPic_Jumpluff,
+        .backPic = gMonBackPic_Kodokgumon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Jumpluff,
-        .shinyPalette = gMonShinyPalette_Jumpluff,
-        .iconSprite = gMonIcon_Jumpluff,
+        .palette = gMonPalette_Kodokgumon,
+        .shinyPalette = gMonShinyPalette_Kodokgumon,
+        .iconSprite = gMonIcon_Kodokgumon,
         .iconPalIndex = 2,
-        FOOTPRINT(Jumpluff)
-        .levelUpLearnset = sJumpluffLevelUpLearnset,
-        .teachableLearnset = sJumpluffTeachableLearnset,
+        FOOTPRINT(Kodokgumon)
+        .levelUpLearnset = sKodokgumonLevelUpLearnset,
+        .teachableLearnset = sKodokgumonTeachableLearnset,
     },
 #endif //P_FAMILY_KERAMON
 

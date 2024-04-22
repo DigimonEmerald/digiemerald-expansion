@@ -9753,7 +9753,7 @@ static const u16 sKeramon_xTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sJumpluffTeachableLearnset[] = {
+static const u16 sKodokgumonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,

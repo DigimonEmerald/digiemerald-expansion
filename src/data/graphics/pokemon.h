@@ -2969,13 +2969,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Keramon_x[] = INCBIN_U8("graphics/pokemon/keramon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Jumpluff[] = INCBIN_U32("graphics/pokemon/jumpluff/anim_front.4bpp.lz");
-    const u32 gMonPalette_Jumpluff[] = INCBIN_U32("graphics/pokemon/jumpluff/normal.gbapal.lz");
-    const u32 gMonBackPic_Jumpluff[] = INCBIN_U32("graphics/pokemon/jumpluff/back.4bpp.lz");
-    const u32 gMonShinyPalette_Jumpluff[] = INCBIN_U32("graphics/pokemon/jumpluff/shiny.gbapal.lz");
-    const u8 gMonIcon_Jumpluff[] = INCBIN_U8("graphics/pokemon/jumpluff/icon.4bpp");
+    const u32 gMonFrontPic_Kodokgumon[] = INCBIN_U32("graphics/pokemon/kodokgumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Kodokgumon[] = INCBIN_U32("graphics/pokemon/kodokgumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Kodokgumon[] = INCBIN_U32("graphics/pokemon/kodokgumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Kodokgumon[] = INCBIN_U32("graphics/pokemon/kodokgumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Kodokgumon[] = INCBIN_U8("graphics/pokemon/kodokgumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Jumpluff[] = INCBIN_U8("graphics/pokemon/jumpluff/footprint.1bpp");
+    const u8 gMonFootprint_Kodokgumon[] = INCBIN_U8("graphics/pokemon/kodokgumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_KERAMON
 
