@@ -2379,7 +2379,7 @@ static const union AnimCmd sAnim_Gabumon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Typhlosion_1[] =
+static const union AnimCmd sAnim_Gabumon_x_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 5),
@@ -2387,7 +2387,7 @@ static const union AnimCmd sAnim_Typhlosion_1[] =
 };
 
 #if P_HISUIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(TyphlosionHisuian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Gabumon_xHisuian);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FLORAMON
 
@@ -10750,9 +10750,9 @@ SINGLE_ANIMATION(Flamemon);
 #if P_FAMILY_FLORAMON
 SINGLE_ANIMATION(Floramon);
 SINGLE_ANIMATION(Gabumon);
-SINGLE_ANIMATION(Typhlosion);
+SINGLE_ANIMATION(Gabumon_x);
 #if P_HISUIAN_FORMS
-SINGLE_ANIMATION(TyphlosionHisuian);
+SINGLE_ANIMATION(Gabumon_xHisuian);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FLORAMON
 #if P_FAMILY_TOTODILE

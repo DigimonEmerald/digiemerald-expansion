@@ -158,7 +158,7 @@
 #define SPECIES_FLAMEMON                                154
 #define SPECIES_FLORAMON                               155
 #define SPECIES_GABUMON                                 156
-#define SPECIES_TYPHLOSION                              157
+#define SPECIES_GABUMON_X                              157
 #define SPECIES_TOTODILE                                158
 #define SPECIES_CROCONAW                                159
 #define SPECIES_FERALIGATR                              160
@@ -1058,7 +1058,7 @@
 #define SPECIES_GIGIMON_HISUIAN                        994
 #define SPECIES_XIAOMON_HISUIAN                         995
 #define SPECIES_YAAMON_HISUIAN                       996
-#define SPECIES_TYPHLOSION_HISUIAN                      997
+#define SPECIES_GABUMON_X_HISUIAN                      997
 #define SPECIES_QWILFISH_HISUIAN                        998
 #define SPECIES_SNEASEL_HISUIAN                         999
 #define SPECIES_SAMUROTT_HISUIAN                        1000

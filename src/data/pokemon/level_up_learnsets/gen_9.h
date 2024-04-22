@@ -4843,7 +4843,7 @@ static const struct LevelUpMove sGabumonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sTyphlosionLevelUpLearnset[] = {
+static const struct LevelUpMove sGabumon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
@@ -4865,7 +4865,7 @@ static const struct LevelUpMove sTyphlosionLevelUpLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const struct LevelUpMove sTyphlosionHisuianLevelUpLearnset[] = {
+static const struct LevelUpMove sGabumon_xHisuianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_INFERNAL_PARADE),
     LEVEL_UP_MOVE( 1, MOVE_GYRO_BALL),
     LEVEL_UP_MOVE( 1, MOVE_ERUPTION),

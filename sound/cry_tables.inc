@@ -470,7 +470,7 @@ gCryTable::
 .if P_FAMILY_FLORAMON == TRUE
 	cry Cry_Floramon
 	cry Cry_Gabumon
-	cry Cry_Typhlosion
+	cry Cry_Gabumon_x
 .endif @ P_FAMILY_FLORAMON
 .if P_FAMILY_TOTODILE == TRUE
 	cry Cry_Totodile
@@ -2896,7 +2896,7 @@ gCryTable_Reverse::
 .if P_FAMILY_FLORAMON == TRUE
 	cry_reverse Cry_Floramon
 	cry_reverse Cry_Gabumon
-	cry_reverse Cry_Typhlosion
+	cry_reverse Cry_Gabumon_x
 .endif @ P_FAMILY_FLORAMON
 .if P_FAMILY_TOTODILE == TRUE
 	cry_reverse Cry_Totodile

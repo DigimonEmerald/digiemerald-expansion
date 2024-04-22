@@ -171,7 +171,7 @@ AI_SINGLE_BATTLE_TEST("AI prefers moves which deal more damage instead of moves 
         ASSUME(gMovesInfo[MOVE_POISON_JAB].category == DAMAGE_CATEGORY_PHYSICAL);
         ASSUME(gMovesInfo[MOVE_WATER_GUN].category == DAMAGE_CATEGORY_SPECIAL);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_TYPHLOSION) { Ability(abilityDef); }
+        PLAYER(SPECIES_GABUMON_X) { Ability(abilityDef); }
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_PURURUMON) { Moves(move1, move2, move3, move4); Ability(abilityAtk); }
     } WHEN {
@@ -188,7 +188,7 @@ AI_SINGLE_BATTLE_TEST("AI prefers moves which deal more damage instead of moves 
                 break;
             }
     } SCENE {
-        MESSAGE("Typhlosion fainted!");
+        MESSAGE("Gabumon_x fainted!");
     }
 }
 
@@ -196,10 +196,10 @@ AI_SINGLE_BATTLE_TEST("AI prefers Earthquake over Drill Run if both require the 
 {
     // Drill Run has less accuracy than E-quake, but can score a higher crit. However the chance is too small, so AI should ignore it.
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_EARTHQUAKE].category == DAMAGE_CATEGORY_PHYSICAL); // Added because Monimon has to KO Typhlosion
-        ASSUME(gMovesInfo[MOVE_DRILL_RUN].category == DAMAGE_CATEGORY_PHYSICAL);  // Added because Monimon has to KO Typhlosion
+        ASSUME(gMovesInfo[MOVE_EARTHQUAKE].category == DAMAGE_CATEGORY_PHYSICAL); // Added because Monimon has to KO Gabumon_x
+        ASSUME(gMovesInfo[MOVE_DRILL_RUN].category == DAMAGE_CATEGORY_PHYSICAL);  // Added because Monimon has to KO Gabumon_x
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_TYPHLOSION);
+        PLAYER(SPECIES_GABUMON_X);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_MONIMON) { Moves(MOVE_EARTHQUAKE, MOVE_DRILL_RUN); }
     } WHEN {
@@ -207,7 +207,7 @@ AI_SINGLE_BATTLE_TEST("AI prefers Earthquake over Drill Run if both require the 
         TURN { EXPECT_MOVE(opponent, MOVE_EARTHQUAKE); SEND_OUT(player, 1); }
     }
     SCENE {
-        MESSAGE("Typhlosion fainted!");
+        MESSAGE("Gabumon_x fainted!");
     }
 }
 
@@ -222,12 +222,12 @@ AI_SINGLE_BATTLE_TEST("AI prefers a weaker move over a one with a downside effec
     PARAMETRIZE { move1 = MOVE_OVERHEAT; move2 = MOVE_FLAMETHROWER; hp = 250; expectedMove = MOVE_OVERHEAT; turns = 1; }
 
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_FLAMETHROWER].category == DAMAGE_CATEGORY_SPECIAL); // Added because Typhlosion has to KO Wobbuffet
-        ASSUME(gMovesInfo[MOVE_OVERHEAT].category == DAMAGE_CATEGORY_SPECIAL);     // Added because Typhlosion has to KO Wobbuffet
+        ASSUME(gMovesInfo[MOVE_FLAMETHROWER].category == DAMAGE_CATEGORY_SPECIAL); // Added because Gabumon_x has to KO Wobbuffet
+        ASSUME(gMovesInfo[MOVE_OVERHEAT].category == DAMAGE_CATEGORY_SPECIAL);     // Added because Gabumon_x has to KO Wobbuffet
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_WOBBUFFET) { HP(hp); }
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_TYPHLOSION) { Moves(move1, move2, move3, move4); }
+        OPPONENT(SPECIES_GABUMON_X) { Moves(move1, move2, move3, move4); }
     } WHEN {
         switch (turns)
         {
@@ -355,7 +355,7 @@ AI_SINGLE_BATTLE_TEST("AI won't use Solar Beam if there is no Sun up or the user
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_WOBBUFFET) { HP(211); }
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_TYPHLOSION) { Moves(MOVE_SOLAR_BEAM, MOVE_GRASS_PLEDGE); Ability(abilityAtk); Item(holdItemAtk); }
+        OPPONENT(SPECIES_GABUMON_X) { Moves(MOVE_SOLAR_BEAM, MOVE_GRASS_PLEDGE); Ability(abilityAtk); Item(holdItemAtk); }
     } WHEN {
         if (abilityAtk == ABILITY_DROUGHT) {
             TURN { EXPECT_MOVES(opponent, MOVE_SOLAR_BEAM, MOVE_GRASS_PLEDGE); }
@@ -536,7 +536,7 @@ AI_SINGLE_BATTLE_TEST("AI_FLAG_SMART_MON_CHOICES: Number of hits to KO calculati
         OPPONENT(SPECIES_SAKUMON_ALOLAN) { Level(100); Moves(MOVE_AURORA_VEIL, MOVE_BLIZZARD, MOVE_MOONBLAST, MOVE_DISABLE); }
         OPPONENT(SPECIES_WEAVILE) { Level(100); Moves(MOVE_NIGHT_SLASH, MOVE_TRIPLE_AXEL, MOVE_ICE_SHARD, MOVE_FAKE_OUT); }
         OPPONENT(SPECIES_CRABMON) { Level(100); Moves(MOVE_TRANSFORM); }
-        OPPONENT(SPECIES_TYPHLOSION) { Level(100); Moves(MOVE_ERUPTION, MOVE_HEAT_WAVE, MOVE_FOCUS_BLAST, MOVE_EXTRASENSORY); }
+        OPPONENT(SPECIES_GABUMON_X) { Level(100); Moves(MOVE_ERUPTION, MOVE_HEAT_WAVE, MOVE_FOCUS_BLAST, MOVE_EXTRASENSORY); }
         OPPONENT(SPECIES_UMBREON) { Level(100); Item(ITEM_LEFTOVERS); Moves(MOVE_FOUL_PLAY, MOVE_SNARL, MOVE_HELPING_HAND, MOVE_THUNDER_WAVE); }
     } WHEN {
             TURN { MOVE(player, MOVE_TACKLE); EXPECT_MOVES(opponent, MOVE_ZIPPY_ZAP, MOVE_EXTREME_SPEED, MOVE_IRON_TAIL, MOVE_KNOCK_OFF); }
@@ -621,13 +621,13 @@ AI_SINGLE_BATTLE_TEST("AI_FLAG_SMART_MON_CHOICES: AI considers hazard damage whe
 
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | aiSmartSwitchFlags);
-        PLAYER(SPECIES_FLAMEMON) { Speed(100); SpDefense(328); SpAttack(265); Moves(MOVE_STEALTH_ROCK, MOVE_SURF); } // Flamemon does ~56% minimum ~66% maximum, enough to KO Chibomon after rocks and never KO Typhlosion after rocks
+        PLAYER(SPECIES_FLAMEMON) { Speed(100); SpDefense(328); SpAttack(265); Moves(MOVE_STEALTH_ROCK, MOVE_SURF); } // Flamemon does ~56% minimum ~66% maximum, enough to KO Chibomon after rocks and never KO Gabumon_x after rocks
         OPPONENT(SPECIES_NEGAMON) { Level(5); Speed(5); Moves(MOVE_TACKLE); }
         OPPONENT(SPECIES_CHIBOMON) { Speed(200); Moves(MOVE_FLAMETHROWER); SpAttack(317); SpDefense(207); MaxHP(297); } // Outspeends and 2HKOs Flamemon
-        OPPONENT(SPECIES_TYPHLOSION) { Speed(200); Moves(MOVE_FLAMETHROWER); SpAttack(317); SpDefense(207); MaxHP(297); } // Outspeends and 2HKOs Flamemon
+        OPPONENT(SPECIES_GABUMON_X) { Speed(200); Moves(MOVE_FLAMETHROWER); SpAttack(317); SpDefense(207); MaxHP(297); } // Outspeends and 2HKOs Flamemon
     } WHEN {
             TURN { MOVE(player, MOVE_STEALTH_ROCK) ;}
-            TURN { MOVE(player, MOVE_SURF); EXPECT_SEND_OUT(opponent, aiIsSmart ? 2 : 1); } // AI sends out Typhlosion to get the KO with the flag rather than Chibomon
+            TURN { MOVE(player, MOVE_SURF); EXPECT_SEND_OUT(opponent, aiIsSmart ? 2 : 1); } // AI sends out Gabumon_x to get the KO with the flag rather than Chibomon
     }
 }
 

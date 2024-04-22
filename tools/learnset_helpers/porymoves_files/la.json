@@ -3375,7 +3375,7 @@
       "MOVE_WILD_CHARGE"
     ]
   },
-  "TYPHLOSION": {
+  "GABUMON_X": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -17951,7 +17951,7 @@
       "MOVE_WILD_CHARGE"
     ]
   },
-  "TYPHLOSION_HISUIAN": {
+  "GABUMON_X_HISUIAN": {
     "LevelMoves": [
       {
         "Level": 0,

@@ -280,19 +280,19 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Gabumon)
         .levelUpLearnset = sGabumonLevelUpLearnset,
         .teachableLearnset = sGabumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TYPHLOSION},
-                                {EVO_NONE, 0, SPECIES_TYPHLOSION_HISUIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GABUMON_X},
+                                {EVO_NONE, 0, SPECIES_GABUMON_X_HISUIAN}),
     },
 
 #if P_UPDATED_EXP_YIELDS >= GEN_8
-    #define TYPHLOSION_EXP_YIELD 267
+    #define GABUMON_X_EXP_YIELD 267
 #elif P_UPDATED_EXP_YIELDS >= GEN_5
-    #define TYPHLOSION_EXP_YIELD 240
+    #define GABUMON_X_EXP_YIELD 240
 #else
-    #define TYPHLOSION_EXP_YIELD 209
+    #define GABUMON_X_EXP_YIELD 209
 #endif
 
-    [SPECIES_TYPHLOSION] =
+    [SPECIES_GABUMON_X] =
     {
         .baseHP        = 78,
         .baseAttack    = 84,
@@ -302,7 +302,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_FIRE),
         .catchRate = 45,
-        .expYield = TYPHLOSION_EXP_YIELD,
+        .expYield = GABUMON_X_EXP_YIELD,
         .evYield_SpAttack = 3,
         .genderRatio = PERCENT_FEMALE(12.5),
         .eggCycles = 20,
@@ -311,43 +311,43 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_FLASH_FIRE },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Typhlosion"),
-        .cryId = CRY_TYPHLOSION,
-        .natDexNum = NATIONAL_DEX_TYPHLOSION,
+        .speciesName = _("Gabumon_x"),
+        .cryId = CRY_GABUMON_X,
+        .natDexNum = NATIONAL_DEX_GABUMON_X,
         .categoryName = _("Volcano"),
         .height = 17,
         .weight = 795,
         .description = COMPOUND_STRING(
             "It can hide behind a shimmering heat haze\n"
             "that it creates using its intense flames.\n"
-            "Typhlosion create blazing explosive\n"
+            "Gabumon_x create blazing explosive\n"
             "blasts that burn everything to cinders."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 268,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Typhlosion,
+        .frontPic = gMonFrontPic_Gabumon_x,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Typhlosion,
+        .frontAnimFrames = sAnims_Gabumon_x,
         .frontAnimId = ANIM_V_SHAKE,
         .frontAnimDelay = 20,
-        .backPic = gMonBackPic_Typhlosion,
+        .backPic = gMonBackPic_Gabumon_x,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_Typhlosion,
-        .shinyPalette = gMonShinyPalette_Typhlosion,
-        .iconSprite = gMonIcon_Typhlosion,
+        .palette = gMonPalette_Gabumon_x,
+        .shinyPalette = gMonShinyPalette_Gabumon_x,
+        .iconSprite = gMonIcon_Gabumon_x,
         .iconPalIndex = 3,
-        FOOTPRINT(Typhlosion)
-        .levelUpLearnset = sTyphlosionLevelUpLearnset,
-        .teachableLearnset = sTyphlosionTeachableLearnset,
-        .formSpeciesIdTable = sTyphlosionFormSpeciesIdTable,
+        FOOTPRINT(Gabumon_x)
+        .levelUpLearnset = sGabumon_xLevelUpLearnset,
+        .teachableLearnset = sGabumon_xTeachableLearnset,
+        .formSpeciesIdTable = sGabumon_xFormSpeciesIdTable,
     },
 
 #if P_HISUIAN_FORMS
-    [SPECIES_TYPHLOSION_HISUIAN] =
+    [SPECIES_GABUMON_X_HISUIAN] =
     {
         .baseHP        = 73,
         .baseAttack    = 84,
@@ -357,7 +357,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_FIRE, TYPE_GHOST),
         .catchRate = 45,
-        .expYield = TYPHLOSION_EXP_YIELD,
+        .expYield = GABUMON_X_EXP_YIELD,
         .evYield_SpAttack = 3,
         .genderRatio = PERCENT_FEMALE(12.5),
         .eggCycles = 20,
@@ -366,9 +366,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_FRISK },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Typhlosion"),
-        .cryId = CRY_TYPHLOSION,
-        .natDexNum = NATIONAL_DEX_TYPHLOSION,
+        .speciesName = _("Gabumon_x"),
+        .cryId = CRY_GABUMON_X,
+        .natDexNum = NATIONAL_DEX_GABUMON_X,
         .categoryName = _("Ghost Flame"),
         .height = 16,
         .weight = 698,
@@ -381,24 +381,24 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 0,
         .trainerScale = 268,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_TyphlosionHisuian,
+        .frontPic = gMonFrontPic_Gabumon_xHisuian,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_TyphlosionHisuian,
+        .frontAnimFrames = sAnims_Gabumon_xHisuian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_TyphlosionHisuian,
+        .backPic = gMonBackPic_Gabumon_xHisuian,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 2,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_TyphlosionHisuian,
-        .shinyPalette = gMonShinyPalette_TyphlosionHisuian,
-        .iconSprite = gMonIcon_TyphlosionHisuian,
+        .palette = gMonPalette_Gabumon_xHisuian,
+        .shinyPalette = gMonShinyPalette_Gabumon_xHisuian,
+        .iconSprite = gMonIcon_Gabumon_xHisuian,
         .iconPalIndex = 1,
-        FOOTPRINT(Typhlosion)
+        FOOTPRINT(Gabumon_x)
         .isHisuianForm = TRUE,
-        .levelUpLearnset = sTyphlosionHisuianLevelUpLearnset,
-        .teachableLearnset = sTyphlosionHisuianTeachableLearnset,
-        .formSpeciesIdTable = sTyphlosionFormSpeciesIdTable,
+        .levelUpLearnset = sGabumon_xHisuianLevelUpLearnset,
+        .teachableLearnset = sGabumon_xHisuianTeachableLearnset,
+        .formSpeciesIdTable = sGabumon_xFormSpeciesIdTable,
     },
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FLORAMON

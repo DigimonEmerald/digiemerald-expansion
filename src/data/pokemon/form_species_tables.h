@@ -582,10 +582,10 @@ static const u16 sAgumon_fake_expertFormSpeciesIdTable[] = {
 #endif //P_FAMILY_AGUMON_FAKE_EXPERT
 
 #if P_FAMILY_FLORAMON
-static const u16 sTyphlosionFormSpeciesIdTable[] = {
-    SPECIES_TYPHLOSION,
+static const u16 sGabumon_xFormSpeciesIdTable[] = {
+    SPECIES_GABUMON_X,
 #if P_HISUIAN_FORMS
-    SPECIES_TYPHLOSION_HISUIAN,
+    SPECIES_GABUMON_X_HISUIAN,
 #endif
     FORM_SPECIES_END,
 };

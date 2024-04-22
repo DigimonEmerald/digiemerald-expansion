@@ -2651,21 +2651,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Gabumon[] = INCBIN_U8("graphics/pokemon/gabumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Typhlosion[] = INCBIN_U32("graphics/pokemon/typhlosion/anim_front.4bpp.lz");
-    const u32 gMonPalette_Typhlosion[] = INCBIN_U32("graphics/pokemon/typhlosion/normal.gbapal.lz");
-    const u32 gMonBackPic_Typhlosion[] = INCBIN_U32("graphics/pokemon/typhlosion/back.4bpp.lz");
-    const u32 gMonShinyPalette_Typhlosion[] = INCBIN_U32("graphics/pokemon/typhlosion/shiny.gbapal.lz");
-    const u8 gMonIcon_Typhlosion[] = INCBIN_U8("graphics/pokemon/typhlosion/icon.4bpp");
+    const u32 gMonFrontPic_Gabumon_x[] = INCBIN_U32("graphics/pokemon/gabumon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gabumon_x[] = INCBIN_U32("graphics/pokemon/gabumon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Gabumon_x[] = INCBIN_U32("graphics/pokemon/gabumon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gabumon_x[] = INCBIN_U32("graphics/pokemon/gabumon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Gabumon_x[] = INCBIN_U8("graphics/pokemon/gabumon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Typhlosion[] = INCBIN_U8("graphics/pokemon/typhlosion/footprint.1bpp");
+    const u8 gMonFootprint_Gabumon_x[] = INCBIN_U8("graphics/pokemon/gabumon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_HISUIAN_FORMS
-    const u32 gMonFrontPic_TyphlosionHisuian[] = INCBIN_U32("graphics/pokemon/typhlosion/hisuian/front.4bpp.lz");
-    const u32 gMonPalette_TyphlosionHisuian[] = INCBIN_U32("graphics/pokemon/typhlosion/hisuian/normal.gbapal.lz");
-    const u32 gMonBackPic_TyphlosionHisuian[] = INCBIN_U32("graphics/pokemon/typhlosion/hisuian/back.4bpp.lz");
-    const u32 gMonShinyPalette_TyphlosionHisuian[] = INCBIN_U32("graphics/pokemon/typhlosion/hisuian/shiny.gbapal.lz");
-    const u8 gMonIcon_TyphlosionHisuian[] = INCBIN_U8("graphics/pokemon/typhlosion/hisuian/icon.4bpp");
+    const u32 gMonFrontPic_Gabumon_xHisuian[] = INCBIN_U32("graphics/pokemon/gabumon_x/hisuian/front.4bpp.lz");
+    const u32 gMonPalette_Gabumon_xHisuian[] = INCBIN_U32("graphics/pokemon/gabumon_x/hisuian/normal.gbapal.lz");
+    const u32 gMonBackPic_Gabumon_xHisuian[] = INCBIN_U32("graphics/pokemon/gabumon_x/hisuian/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gabumon_xHisuian[] = INCBIN_U32("graphics/pokemon/gabumon_x/hisuian/shiny.gbapal.lz");
+    const u8 gMonIcon_Gabumon_xHisuian[] = INCBIN_U8("graphics/pokemon/gabumon_x/hisuian/icon.4bpp");
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FLORAMON
 

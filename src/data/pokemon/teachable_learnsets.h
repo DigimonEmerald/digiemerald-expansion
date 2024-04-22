@@ -8595,7 +8595,7 @@ static const u16 sGabumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sTyphlosionTeachableLearnset[] = {
+static const u16 sGabumon_xTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -8643,7 +8643,7 @@ static const u16 sTyphlosionTeachableLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const u16 sTyphlosionHisuianTeachableLearnset[] = {
+static const u16 sGabumon_xHisuianTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
