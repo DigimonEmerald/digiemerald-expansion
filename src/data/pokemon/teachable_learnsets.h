@@ -5428,7 +5428,7 @@ static const u16 sAgumon_expertAlolanTeachableLearnset[] = {
 
 #if P_FAMILY_HITMONS
 #if P_GEN_2_CROSS_EVOS
-static const u16 sTyrogueTeachableLearnset[] = {
+static const u16 sSalamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,

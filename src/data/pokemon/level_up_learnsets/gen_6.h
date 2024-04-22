@@ -2928,7 +2928,7 @@ static const struct LevelUpMove sAgumon_expertAlolanLevelUpLearnset[] = {
 
 #if P_FAMILY_HITMONS
 #if P_GEN_2_CROSS_EVOS
-static const struct LevelUpMove sTyrogueLevelUpLearnset[] = {
+static const struct LevelUpMove sSalamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE( 1, MOVE_FAKE_OUT),

@@ -1682,13 +1682,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
 #if P_FAMILY_HITMONS
 #if P_GEN_2_CROSS_EVOS
-    const u32 gMonFrontPic_Tyrogue[] = INCBIN_U32("graphics/pokemon/tyrogue/anim_front.4bpp.lz");
-    const u32 gMonPalette_Tyrogue[] = INCBIN_U32("graphics/pokemon/tyrogue/normal.gbapal.lz");
-    const u32 gMonBackPic_Tyrogue[] = INCBIN_U32("graphics/pokemon/tyrogue/back.4bpp.lz");
-    const u32 gMonShinyPalette_Tyrogue[] = INCBIN_U32("graphics/pokemon/tyrogue/shiny.gbapal.lz");
-    const u8 gMonIcon_Tyrogue[] = INCBIN_U8("graphics/pokemon/tyrogue/icon.4bpp");
+    const u32 gMonFrontPic_Salamon[] = INCBIN_U32("graphics/pokemon/salamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Salamon[] = INCBIN_U32("graphics/pokemon/salamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Salamon[] = INCBIN_U32("graphics/pokemon/salamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Salamon[] = INCBIN_U32("graphics/pokemon/salamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Salamon[] = INCBIN_U8("graphics/pokemon/salamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Tyrogue[] = INCBIN_U8("graphics/pokemon/tyrogue/footprint.1bpp");
+    const u8 gMonFootprint_Salamon[] = INCBIN_U8("graphics/pokemon/salamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_2_CROSS_EVOS
 

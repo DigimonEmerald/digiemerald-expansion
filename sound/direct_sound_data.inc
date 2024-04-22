@@ -1036,8 +1036,8 @@ Cry_Agumon_expert::
 .if P_FAMILY_HITMONS == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Tyrogue::
-	.incbin "sound/direct_sound_samples/cries/tyrogue.bin"
+Cry_Salamon::
+	.incbin "sound/direct_sound_samples/cries/salamon.bin"
 .endif @ P_GEN_2_CROSS_EVOS
 
 	.align 2

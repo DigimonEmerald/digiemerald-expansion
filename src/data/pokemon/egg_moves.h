@@ -874,7 +874,7 @@ const u16 gEggMoves[] = {
 
 #if P_FAMILY_HITMONS
 #if P_GEN_2_CROSS_EVOS
-    egg_moves(TYROGUE,
+    egg_moves(SALAMON,
         MOVE_RAPID_SPIN,
         MOVE_HIGH_JUMP_KICK,
         MOVE_MACH_PUNCH,

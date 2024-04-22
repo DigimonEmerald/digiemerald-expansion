@@ -1505,7 +1505,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Agumon_expertAlolan);
 
 #if P_FAMILY_HITMONS
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Tyrogue_1[] =
+static const union AnimCmd sAnim_Salamon_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 20),
@@ -10519,7 +10519,7 @@ SINGLE_ANIMATION(Agumon_expertAlolan);
 #endif //P_FAMILY_AGUMON_06
 #if P_FAMILY_HITMONS
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Tyrogue);
+SINGLE_ANIMATION(Salamon);
 #endif //P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Agumon_x);
 SINGLE_ANIMATION(Angoramon);

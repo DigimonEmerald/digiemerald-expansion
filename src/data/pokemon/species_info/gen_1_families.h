@@ -10490,7 +10490,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
 #if P_FAMILY_HITMONS
 #if P_GEN_2_CROSS_EVOS
-    [SPECIES_TYROGUE] =
+    [SPECIES_SALAMON] =
     {
         .baseHP        = 35,
         .baseAttack    = 35,
@@ -10509,14 +10509,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_GUTS, ABILITY_STEADFAST, ABILITY_VITAL_SPIRIT },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Tyrogue"),
-        .cryId = CRY_TYROGUE,
-        .natDexNum = NATIONAL_DEX_TYROGUE,
+        .speciesName = _("Salamon"),
+        .cryId = CRY_SALAMON,
+        .natDexNum = NATIONAL_DEX_SALAMON,
         .categoryName = _("Scuffle"),
         .height = 7,
         .weight = 210,
         .description = COMPOUND_STRING(
-            "Tyrogue become stressed out if they do\n"
+            "Salamon become stressed out if they do\n"
             "not get to train every day. When raising\n"
             "this Pokémon, the Trainer must establish\n"
             "a regular training schedule."),
@@ -10524,22 +10524,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonOffset = 9,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Tyrogue,
+        .frontPic = gMonFrontPic_Salamon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Tyrogue,
+        .frontAnimFrames = sAnims_Salamon,
         .frontAnimId = ANIM_BACK_AND_LUNGE,
-        .backPic = gMonBackPic_Tyrogue,
+        .backPic = gMonBackPic_Salamon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Tyrogue,
-        .shinyPalette = gMonShinyPalette_Tyrogue,
-        .iconSprite = gMonIcon_Tyrogue,
+        .palette = gMonPalette_Salamon,
+        .shinyPalette = gMonShinyPalette_Salamon,
+        .iconSprite = gMonIcon_Salamon,
         .iconPalIndex = 2,
-        FOOTPRINT(Tyrogue)
-        .levelUpLearnset = sTyrogueLevelUpLearnset,
-        .teachableLearnset = sTyrogueTeachableLearnset,
+        FOOTPRINT(Salamon)
+        .levelUpLearnset = sSalamonLevelUpLearnset,
+        .teachableLearnset = sSalamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL_ATK_LT_DEF, 20, SPECIES_ANGORAMON},
                                 {EVO_LEVEL_ATK_GT_DEF, 20, SPECIES_AGUMON_X},
                                 {EVO_LEVEL_ATK_EQ_DEF, 20, SPECIES_HITMONTOP}),
