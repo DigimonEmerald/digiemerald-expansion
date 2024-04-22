@@ -5843,8 +5843,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_SHAMANMON
 
-#if P_FAMILY_RAIKOU
-    [SPECIES_RAIKOU] =
+#if P_FAMILY_YUKIAGUMON
+    [SPECIES_YUKIAGUMON] =
     {
         .baseHP        = 90,
         .baseAttack    = 85,
@@ -5874,14 +5874,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_VOLT_ABSORB },
     #endif
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Raikou"),
-        .cryId = CRY_RAIKOU,
-        .natDexNum = NATIONAL_DEX_RAIKOU,
+        .speciesName = _("Yukiagumon"),
+        .cryId = CRY_YUKIAGUMON,
+        .natDexNum = NATIONAL_DEX_YUKIAGUMON,
         .categoryName = _("Thunder"),
         .height = 19,
         .weight = 1780,
         .description = COMPOUND_STRING(
-            "Raikou embodies the speed of lightning.\n"
+            "Yukiagumon embodies the speed of lightning.\n"
             "Its roars send shock waves shuddering\n"
             "through the air and ground as if\n"
             "lightning bolts were crashing down."),
@@ -5889,25 +5889,25 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 0,
         .trainerScale = 345,
         .trainerOffset = 7,
-        .frontPic = gMonFrontPic_Raikou,
+        .frontPic = gMonFrontPic_Yukiagumon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_Raikou,
+        .frontAnimFrames = sAnims_Yukiagumon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Raikou,
+        .backPic = gMonBackPic_Yukiagumon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
-        .palette = gMonPalette_Raikou,
-        .shinyPalette = gMonShinyPalette_Raikou,
-        .iconSprite = gMonIcon_Raikou,
+        .palette = gMonPalette_Yukiagumon,
+        .shinyPalette = gMonShinyPalette_Yukiagumon,
+        .iconSprite = gMonIcon_Yukiagumon,
         .iconPalIndex = 2,
-        FOOTPRINT(Raikou)
+        FOOTPRINT(Yukiagumon)
         .isLegendary = TRUE,
-        .levelUpLearnset = sRaikouLevelUpLearnset,
-        .teachableLearnset = sRaikouTeachableLearnset,
+        .levelUpLearnset = sYukiagumonLevelUpLearnset,
+        .teachableLearnset = sYukiagumonTeachableLearnset,
     },
-#endif //P_FAMILY_RAIKOU
+#endif //P_FAMILY_YUKIAGUMON
 
 #if P_FAMILY_ENTEI
     [SPECIES_ENTEI] =

@@ -11992,8 +11992,8 @@ static const u16 sShamanmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SHAMANMON
 
-#if P_FAMILY_RAIKOU
-static const u16 sRaikouTeachableLearnset[] = {
+#if P_FAMILY_YUKIAGUMON
+static const u16 sYukiagumonTeachableLearnset[] = {
     MOVE_CALM_MIND,
     MOVE_CUT,
     MOVE_DIG,
@@ -12029,7 +12029,7 @@ static const u16 sRaikouTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_RAIKOU
+#endif //P_FAMILY_YUKIAGUMON
 
 #if P_FAMILY_ENTEI
 static const u16 sEnteiTeachableLearnset[] = {

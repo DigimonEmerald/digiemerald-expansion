@@ -1974,11 +1974,11 @@ Cry_Shamanmon::
 	.incbin "sound/direct_sound_samples/cries/shamanmon.bin"
 .endif @ P_FAMILY_SHAMANMON
 
-.if P_FAMILY_RAIKOU == TRUE
+.if P_FAMILY_YUKIAGUMON == TRUE
 	.align 2
-Cry_Raikou::
-	.incbin "sound/direct_sound_samples/cries/raikou.bin"
-.endif @ P_FAMILY_RAIKOU
+Cry_Yukiagumon::
+	.incbin "sound/direct_sound_samples/cries/yukiagumon.bin"
+.endif @ P_FAMILY_YUKIAGUMON
 
 .if P_FAMILY_ENTEI == TRUE
 	.align 2

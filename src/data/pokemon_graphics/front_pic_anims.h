@@ -3312,15 +3312,15 @@ static const union AnimCmd sAnim_Shamanmon_1[] =
 };
 #endif //P_FAMILY_SHAMANMON
 
-#if P_FAMILY_RAIKOU
-static const union AnimCmd sAnim_Raikou_1[] =
+#if P_FAMILY_YUKIAGUMON
+static const union AnimCmd sAnim_Yukiagumon_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 36),
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_RAIKOU
+#endif //P_FAMILY_YUKIAGUMON
 
 #if P_FAMILY_ENTEI
 static const union AnimCmd sAnim_Entei_1[] =
@@ -10979,9 +10979,9 @@ SINGLE_ANIMATION(Ryudamon);
 #if P_FAMILY_SHAMANMON
 SINGLE_ANIMATION(Shamanmon);
 #endif //P_FAMILY_SHAMANMON
-#if P_FAMILY_RAIKOU
-SINGLE_ANIMATION(Raikou);
-#endif //P_FAMILY_RAIKOU
+#if P_FAMILY_YUKIAGUMON
+SINGLE_ANIMATION(Yukiagumon);
+#endif //P_FAMILY_YUKIAGUMON
 #if P_FAMILY_ENTEI
 SINGLE_ANIMATION(Entei);
 #endif //P_FAMILY_ENTEI

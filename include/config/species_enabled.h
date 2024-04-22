@@ -178,7 +178,7 @@
 #define P_FAMILY_ROKUSHO                P_GEN_2_POKEMON
 #define P_FAMILY_RYUDAMON                P_GEN_2_POKEMON
 #define P_FAMILY_SHAMANMON                 P_GEN_2_POKEMON
-#define P_FAMILY_RAIKOU                  P_GEN_2_POKEMON
+#define P_FAMILY_YUKIAGUMON                  P_GEN_2_POKEMON
 #define P_FAMILY_ENTEI                   P_GEN_2_POKEMON
 #define P_FAMILY_SUICUNE                 P_GEN_2_POKEMON
 #define P_FAMILY_LARVITAR                P_GEN_2_POKEMON

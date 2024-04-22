@@ -6407,7 +6407,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             "It bears resemblance to a Pokémon\n"
             "that became a hot topic for a short\n"
             "while after a paranomal magazine\n"
-            "touted it as Raikou's ancestor."),
+            "touted it as Yukiagumon's ancestor."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 345,

@@ -683,9 +683,9 @@ gCryTable::
 .if P_FAMILY_SHAMANMON == TRUE
 	cry Cry_Shamanmon
 .endif @ P_FAMILY_SHAMANMON
-.if P_FAMILY_RAIKOU == TRUE
-	cry Cry_Raikou
-.endif @ P_FAMILY_RAIKOU
+.if P_FAMILY_YUKIAGUMON == TRUE
+	cry Cry_Yukiagumon
+.endif @ P_FAMILY_YUKIAGUMON
 .if P_FAMILY_ENTEI == TRUE
 	cry Cry_Entei
 .endif @ P_FAMILY_ENTEI
@@ -3109,9 +3109,9 @@ gCryTable_Reverse::
 .if P_FAMILY_SHAMANMON == TRUE
 	cry_reverse Cry_Shamanmon
 .endif @ P_FAMILY_SHAMANMON
-.if P_FAMILY_RAIKOU == TRUE
-	cry_reverse Cry_Raikou
-.endif @ P_FAMILY_RAIKOU
+.if P_FAMILY_YUKIAGUMON == TRUE
+	cry_reverse Cry_Yukiagumon
+.endif @ P_FAMILY_YUKIAGUMON
 .if P_FAMILY_ENTEI == TRUE
 	cry_reverse Cry_Entei
 .endif @ P_FAMILY_ENTEI
