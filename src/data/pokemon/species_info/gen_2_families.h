@@ -4538,8 +4538,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_NEEMON
 
-#if P_FAMILY_SLUGMA
-    [SPECIES_SLUGMA] =
+#if P_FAMILY_OTAMAMON_RED
+    [SPECIES_OTAMAMON_RED] =
     {
         .baseHP        = 40,
         .baseAttack    = 40,
@@ -4558,9 +4558,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_MAGMA_ARMOR, ABILITY_FLAME_BODY, ABILITY_WEAK_ARMOR },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Slugma"),
-        .cryId = CRY_SLUGMA,
-        .natDexNum = NATIONAL_DEX_SLUGMA,
+        .speciesName = _("Otamamon_red"),
+        .cryId = CRY_OTAMAMON_RED,
+        .natDexNum = NATIONAL_DEX_OTAMAMON_RED,
         .categoryName = _("Lava"),
         .height = 7,
         .weight = 350,
@@ -4573,22 +4573,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Slugma,
+        .frontPic = gMonFrontPic_Otamamon_red,
         .frontPicSize = MON_COORDS_SIZE(32, 48),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Slugma,
+        .frontAnimFrames = sAnims_Otamamon_red,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Slugma,
+        .backPic = gMonBackPic_Otamamon_red,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_Slugma,
-        .shinyPalette = gMonShinyPalette_Slugma,
-        .iconSprite = gMonIcon_Slugma,
+        .palette = gMonPalette_Otamamon_red,
+        .shinyPalette = gMonShinyPalette_Otamamon_red,
+        .iconSprite = gMonIcon_Otamamon_red,
         .iconPalIndex = 0,
-        FOOTPRINT(Slugma)
-        .levelUpLearnset = sSlugmaLevelUpLearnset,
-        .teachableLearnset = sSlugmaTeachableLearnset,
+        FOOTPRINT(Otamamon_red)
+        .levelUpLearnset = sOtamamon_redLevelUpLearnset,
+        .teachableLearnset = sOtamamon_redTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_MAGCARGO}),
     },
 
@@ -4650,7 +4650,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sMagcargoLevelUpLearnset,
         .teachableLearnset = sMagcargoTeachableLearnset,
     },
-#endif //P_FAMILY_SLUGMA
+#endif //P_FAMILY_OTAMAMON_RED
 
 #if P_FAMILY_SWINUB
     [SPECIES_SWINUB] =

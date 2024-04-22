@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("Weak Armor lowers Defense by 1 and boosts Speed by 2 when hi
     PARAMETRIZE { move = MOVE_GUST; }
 
     GIVEN {
-        PLAYER(SPECIES_SLUGMA) { Ability(ABILITY_WEAK_ARMOR); }
+        PLAYER(SPECIES_OTAMAMON_RED) { Ability(ABILITY_WEAK_ARMOR); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, move); }
@@ -28,14 +28,14 @@ SINGLE_BATTLE_TEST("Weak Armor lowers Defense by 1 and boosts Speed by 2 when hi
         if (move == MOVE_TACKLE) {
             ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-            MESSAGE("Slugma's Weak Armor lowered its Defense!");
-            MESSAGE("Slugma's Weak Armor raised its Speed!");
+            MESSAGE("Otamamon_red's Weak Armor lowered its Defense!");
+            MESSAGE("Otamamon_red's Weak Armor raised its Speed!");
         } else {
             NONE_OF {
                 ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-                MESSAGE("Slugma's Weak Armor lowered its Defense!");
-                MESSAGE("Slugma's Weak Armor raised its Speed!");
+                MESSAGE("Otamamon_red's Weak Armor lowered its Defense!");
+                MESSAGE("Otamamon_red's Weak Armor raised its Speed!");
             }
         }
     } THEN {
@@ -53,7 +53,7 @@ SINGLE_BATTLE_TEST("Weak Armor does not trigger when brought in by Dragon Tail a
         ASSUME(gMovesInfo[MOVE_STEALTH_ROCK].effect == EFFECT_STEALTH_ROCK);
         ASSUME(gMovesInfo[MOVE_DRAGON_TAIL].effect == EFFECT_HIT_SWITCH_TARGET);
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_SLUGMA) { Ability(ABILITY_WEAK_ARMOR); }
+        PLAYER(SPECIES_OTAMAMON_RED) { Ability(ABILITY_WEAK_ARMOR); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_STEALTH_ROCK); }
@@ -62,14 +62,14 @@ SINGLE_BATTLE_TEST("Weak Armor does not trigger when brought in by Dragon Tail a
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STEALTH_ROCK, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_TAIL, opponent);
         HP_BAR(player);
-        MESSAGE("Slugma was dragged out!");
+        MESSAGE("Otamamon_red was dragged out!");
         HP_BAR(player);
-        MESSAGE("Pointed stones dug into Slugma!");
+        MESSAGE("Pointed stones dug into Otamamon_red!");
         NONE_OF {
             ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-            MESSAGE("Slugma's Weak Armor lowered its Defense!");
-            MESSAGE("Slugma's Weak Armor raised its Speed!");
+            MESSAGE("Otamamon_red's Weak Armor lowered its Defense!");
+            MESSAGE("Otamamon_red's Weak Armor raised its Speed!");
         }
     } THEN {
         EXPECT_EQ(player->statStages[STAT_DEF], DEFAULT_STAT_STAGE);
@@ -80,7 +80,7 @@ SINGLE_BATTLE_TEST("Weak Armor does not trigger when brought in by Dragon Tail a
 SINGLE_BATTLE_TEST("Weak Armor still lowers boosts Speed if Defense can't go any lower")
 {
     GIVEN {
-        PLAYER(SPECIES_SLUGMA) { Ability(ABILITY_WEAK_ARMOR); }
+        PLAYER(SPECIES_OTAMAMON_RED) { Ability(ABILITY_WEAK_ARMOR); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SCREECH); }
@@ -93,11 +93,11 @@ SINGLE_BATTLE_TEST("Weak Armor still lowers boosts Speed if Defense can't go any
         ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-            MESSAGE("Slugma's Weak Armor lowered its Defense!");
+            MESSAGE("Otamamon_red's Weak Armor lowered its Defense!");
         }
-        MESSAGE("Slugma's Defense won't go lower!");
+        MESSAGE("Otamamon_red's Defense won't go lower!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Slugma's Weak Armor raised its Speed!");
+        MESSAGE("Otamamon_red's Weak Armor raised its Speed!");
     } THEN {
         EXPECT_EQ(player->statStages[STAT_DEF], MIN_STAT_STAGE);
         EXPECT_EQ(player->statStages[STAT_SPEED], DEFAULT_STAT_STAGE + 2);
@@ -107,7 +107,7 @@ SINGLE_BATTLE_TEST("Weak Armor still lowers boosts Speed if Defense can't go any
 SINGLE_BATTLE_TEST("Weak Armor still lowers Defense if Speed can't go any higher")
 {
     GIVEN {
-        PLAYER(SPECIES_SLUGMA) { Ability(ABILITY_WEAK_ARMOR); }
+        PLAYER(SPECIES_OTAMAMON_RED) { Ability(ABILITY_WEAK_ARMOR); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_AGILITY); }
@@ -119,12 +119,12 @@ SINGLE_BATTLE_TEST("Weak Armor still lowers Defense if Speed can't go any higher
         HP_BAR(player);
         ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Slugma's Weak Armor lowered its Defense!");
+        MESSAGE("Otamamon_red's Weak Armor lowered its Defense!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-            MESSAGE("Slugma's Weak Armor raised its Speed!");
+            MESSAGE("Otamamon_red's Weak Armor raised its Speed!");
         }
-        MESSAGE("Slugma's Speed won't go higher!");
+        MESSAGE("Otamamon_red's Speed won't go higher!");
     } THEN {
         EXPECT_EQ(player->statStages[STAT_DEF], DEFAULT_STAT_STAGE - 1);
         EXPECT_EQ(player->statStages[STAT_SPEED], MAX_STAT_STAGE);

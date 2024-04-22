@@ -627,10 +627,10 @@ gCryTable::
 	cry Cry_Ursaluna
 .endif @ P_GEN_8_CROSS_EVOS
 .endif @ P_FAMILY_NEEMON
-.if P_FAMILY_SLUGMA == TRUE
-	cry Cry_Slugma
+.if P_FAMILY_OTAMAMON_RED == TRUE
+	cry Cry_Otamamon_red
 	cry Cry_Magcargo
-.endif @ P_FAMILY_SLUGMA
+.endif @ P_FAMILY_OTAMAMON_RED
 .if P_FAMILY_SWINUB == TRUE
 	cry Cry_Swinub
 	cry Cry_Piloswine
@@ -3053,10 +3053,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Ursaluna
 .endif @ P_GEN_8_CROSS_EVOS
 .endif @ P_FAMILY_NEEMON
-.if P_FAMILY_SLUGMA == TRUE
-	cry_reverse Cry_Slugma
+.if P_FAMILY_OTAMAMON_RED == TRUE
+	cry_reverse Cry_Otamamon_red
 	cry_reverse Cry_Magcargo
-.endif @ P_FAMILY_SLUGMA
+.endif @ P_FAMILY_OTAMAMON_RED
 .if P_FAMILY_SWINUB == TRUE
 	cry_reverse Cry_Swinub
 	cry_reverse Cry_Piloswine

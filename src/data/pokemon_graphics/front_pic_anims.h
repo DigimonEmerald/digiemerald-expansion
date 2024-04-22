@@ -3109,8 +3109,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(UrsalunaBloodmoon);
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_NEEMON
 
-#if P_FAMILY_SLUGMA
-static const union AnimCmd sAnim_Slugma_1[] =
+#if P_FAMILY_OTAMAMON_RED
+static const union AnimCmd sAnim_Otamamon_red_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -3129,7 +3129,7 @@ static const union AnimCmd sAnim_Magcargo_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SLUGMA
+#endif //P_FAMILY_OTAMAMON_RED
 
 #if P_FAMILY_SWINUB
 static const union AnimCmd sAnim_Swinub_1[] =
@@ -10922,10 +10922,10 @@ SINGLE_ANIMATION(Ursaluna);
 SINGLE_ANIMATION(UrsalunaBloodmoon);
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_NEEMON
-#if P_FAMILY_SLUGMA
-SINGLE_ANIMATION(Slugma);
+#if P_FAMILY_OTAMAMON_RED
+SINGLE_ANIMATION(Otamamon_red);
 SINGLE_ANIMATION(Magcargo);
-#endif //P_FAMILY_SLUGMA
+#endif //P_FAMILY_OTAMAMON_RED
 #if P_FAMILY_SWINUB
 SINGLE_ANIMATION(Swinub);
 SINGLE_ANIMATION(Piloswine);

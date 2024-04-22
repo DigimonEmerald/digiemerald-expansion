@@ -1858,8 +1858,8 @@ const u16 gEggMoves[] = {
         MOVE_PLAY_ROUGH),
 #endif //P_FAMILY_NEEMON
 
-#if P_FAMILY_SLUGMA
-    egg_moves(SLUGMA,
+#if P_FAMILY_OTAMAMON_RED
+    egg_moves(OTAMAMON_RED,
         MOVE_ACID_ARMOR,
         MOVE_HEAT_WAVE,
         MOVE_CURSE,
@@ -1872,7 +1872,7 @@ const u16 gEggMoves[] = {
         MOVE_INFERNO,
         MOVE_EARTH_POWER,
         MOVE_GUARD_SWAP),
-#endif //P_FAMILY_SLUGMA
+#endif //P_FAMILY_OTAMAMON_RED
 
 #if P_FAMILY_SWINUB
     egg_moves(SWINUB,

@@ -134,21 +134,21 @@ SINGLE_BATTLE_TEST("White Herb wont have time to activate if it is knocked off o
     GIVEN {
         ASSUME(MoveHasAdditionalEffect(MOVE_THIEF, MOVE_EFFECT_STEAL_ITEM) == TRUE);
         ASSUME(gMovesInfo[MOVE_KNOCK_OFF].effect == EFFECT_KNOCK_OFF);
-        PLAYER(SPECIES_SLUGMA) {  Ability(ABILITY_WEAK_ARMOR); Item(ITEM_WHITE_HERB); }
+        PLAYER(SPECIES_OTAMAMON_RED) {  Ability(ABILITY_WEAK_ARMOR); Item(ITEM_WHITE_HERB); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
         if (move == MOVE_THIEF) {
-            MESSAGE("Foe Lopmonx stole Slugma's White Herb!");
+            MESSAGE("Foe Lopmonx stole Otamamon_red's White Herb!");
         }
         ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Slugma's Weak Armor lowered its Defense!");
-        MESSAGE("Slugma's Weak Armor raised its Speed!");
+        MESSAGE("Otamamon_red's Weak Armor lowered its Defense!");
+        MESSAGE("Otamamon_red's Weak Armor raised its Speed!");
         if (move == MOVE_KNOCK_OFF) {
-            MESSAGE("Foe Lopmonx knocked off Slugma's White Herb!");
+            MESSAGE("Foe Lopmonx knocked off Otamamon_red's White Herb!");
         }
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
@@ -163,7 +163,7 @@ SINGLE_BATTLE_TEST("White Herb wont have time to activate if it is knocked off o
 SINGLE_BATTLE_TEST("White Herb wont have time to activate if Magician steals it")
 {
     GIVEN {
-        PLAYER(SPECIES_SLUGMA) {  Ability(ABILITY_WEAK_ARMOR); Item(ITEM_WHITE_HERB); }
+        PLAYER(SPECIES_OTAMAMON_RED) {  Ability(ABILITY_WEAK_ARMOR); Item(ITEM_WHITE_HERB); }
         OPPONENT(SPECIES_FENNEKIN) { Ability(ABILITY_MAGICIAN); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
@@ -171,10 +171,10 @@ SINGLE_BATTLE_TEST("White Herb wont have time to activate if Magician steals it"
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Slugma's Weak Armor lowered its Defense!");
-        MESSAGE("Slugma's Weak Armor raised its Speed!");
+        MESSAGE("Otamamon_red's Weak Armor lowered its Defense!");
+        MESSAGE("Otamamon_red's Weak Armor raised its Speed!");
         ABILITY_POPUP(opponent, ABILITY_MAGICIAN);
-        MESSAGE("Foe Fennekin stole Slugma's White Herb!");
+        MESSAGE("Foe Fennekin stole Otamamon_red's White Herb!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
             MESSAGE("Lopmonx's White Herb restored its status!");

@@ -1851,15 +1851,15 @@ Cry_Ursaluna::
 .endif @ P_GEN_8_CROSS_EVOS
 .endif @ P_FAMILY_NEEMON
 
-.if P_FAMILY_SLUGMA == TRUE
+.if P_FAMILY_OTAMAMON_RED == TRUE
 	.align 2
-Cry_Slugma::
-	.incbin "sound/direct_sound_samples/cries/slugma.bin"
+Cry_Otamamon_red::
+	.incbin "sound/direct_sound_samples/cries/otamamon_red.bin"
 
 	.align 2
 Cry_Magcargo::
 	.incbin "sound/direct_sound_samples/cries/magcargo.bin"
-.endif @ P_FAMILY_SLUGMA
+.endif @ P_FAMILY_OTAMAMON_RED
 
 .if P_FAMILY_SWINUB == TRUE
 	.align 2

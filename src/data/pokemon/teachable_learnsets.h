@@ -11220,8 +11220,8 @@ static const u16 sUrsalunaBloodmoonTeachableLearnset[] = {
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_NEEMON
 
-#if P_FAMILY_SLUGMA
-static const u16 sSlugmaTeachableLearnset[] = {
+#if P_FAMILY_OTAMAMON_RED
+static const u16 sOtamamon_redTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_EARTHQUAKE,
@@ -11284,7 +11284,7 @@ static const u16 sMagcargoTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SLUGMA
+#endif //P_FAMILY_OTAMAMON_RED
 
 #if P_FAMILY_SWINUB
 static const u16 sSwinubTeachableLearnset[] = {

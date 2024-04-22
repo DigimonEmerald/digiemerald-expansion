@@ -166,7 +166,7 @@
 #define P_FAMILY_MUCHOMON               P_GEN_2_POKEMON
 #define P_FAMILY_MUSHROOMON                 P_GEN_2_POKEMON
 #define P_FAMILY_NEEMON               P_GEN_2_POKEMON
-#define P_FAMILY_SLUGMA                  P_GEN_2_POKEMON
+#define P_FAMILY_OTAMAMON_RED                  P_GEN_2_POKEMON
 #define P_FAMILY_SWINUB                  P_GEN_2_POKEMON
 #define P_FAMILY_CORSOLA                 P_GEN_2_POKEMON
 #define P_FAMILY_REMORAID                P_GEN_2_POKEMON
