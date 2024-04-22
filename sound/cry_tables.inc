@@ -529,7 +529,7 @@ gCryTable::
 .endif @ P_FAMILY_JUNKMON
 .if P_FAMILY_KERAMON == TRUE
 	cry Cry_Keramon
-	cry Cry_Skiploom
+	cry Cry_Keramon_x
 	cry Cry_Jumpluff
 .endif @ P_FAMILY_KERAMON
 .if P_FAMILY_AIPOM == TRUE
@@ -2955,7 +2955,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_JUNKMON
 .if P_FAMILY_KERAMON == TRUE
 	cry_reverse Cry_Keramon
-	cry_reverse Cry_Skiploom
+	cry_reverse Cry_Keramon_x
 	cry_reverse Cry_Jumpluff
 .endif @ P_FAMILY_KERAMON
 .if P_FAMILY_AIPOM == TRUE

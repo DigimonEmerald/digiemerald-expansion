@@ -1993,10 +1993,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Keramon)
         .levelUpLearnset = sKeramonLevelUpLearnset,
         .teachableLearnset = sKeramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_SKIPLOOM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_KERAMON_X}),
     },
 
-    [SPECIES_SKIPLOOM] =
+    [SPECIES_KERAMON_X] =
     {
         .baseHP        = 55,
         .baseAttack    = 45,
@@ -2015,9 +2015,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_GRASS),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_LEAF_GUARD, ABILITY_INFILTRATOR },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Skiploom"),
-        .cryId = CRY_SKIPLOOM,
-        .natDexNum = NATIONAL_DEX_SKIPLOOM,
+        .speciesName = _("Keramon_x"),
+        .cryId = CRY_KERAMON_X,
+        .natDexNum = NATIONAL_DEX_KERAMON_X,
         .categoryName = _("Cottonweed"),
         .height = 6,
         .weight = 10,
@@ -2030,23 +2030,23 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Skiploom,
+        .frontPic = gMonFrontPic_Keramon_x,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 15,
-        .frontAnimFrames = sAnims_Skiploom,
+        .frontAnimFrames = sAnims_Keramon_x,
         .frontAnimId = ANIM_RISING_WOBBLE,
         .enemyMonElevation = 15,
-        .backPic = gMonBackPic_Skiploom,
+        .backPic = gMonBackPic_Keramon_x,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Skiploom,
-        .shinyPalette = gMonShinyPalette_Skiploom,
-        .iconSprite = gMonIcon_Skiploom,
+        .palette = gMonPalette_Keramon_x,
+        .shinyPalette = gMonShinyPalette_Keramon_x,
+        .iconSprite = gMonIcon_Keramon_x,
         .iconPalIndex = 1,
-        FOOTPRINT(Skiploom)
-        .levelUpLearnset = sSkiploomLevelUpLearnset,
-        .teachableLearnset = sSkiploomTeachableLearnset,
+        FOOTPRINT(Keramon_x)
+        .levelUpLearnset = sKeramon_xLevelUpLearnset,
+        .teachableLearnset = sKeramon_xTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_JUMPLUFF}),
     },
 

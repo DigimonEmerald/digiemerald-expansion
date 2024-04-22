@@ -2690,7 +2690,7 @@ static const union AnimCmd sAnim_Keramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Skiploom_1[] =
+static const union AnimCmd sAnim_Keramon_x_1[] =
 {
     ANIMCMD_FRAME(1, 12),
     ANIMCMD_FRAME(0, 12),
@@ -10814,7 +10814,7 @@ SINGLE_ANIMATION(Junkmon);
 #endif //P_FAMILY_JUNKMON
 #if P_FAMILY_KERAMON
 SINGLE_ANIMATION(Keramon);
-SINGLE_ANIMATION(Skiploom);
+SINGLE_ANIMATION(Keramon_x);
 SINGLE_ANIMATION(Jumpluff);
 #endif //P_FAMILY_KERAMON
 #if P_FAMILY_AIPOM
