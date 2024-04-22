@@ -1690,8 +1690,8 @@ const u16 gEggMoves[] = {
         MOVE_ME_FIRST),
 #endif //P_FAMILY_LOOGAMON
 
-#if P_FAMILY_GIRAFARIG
-    egg_moves(GIRAFARIG,
+#if P_FAMILY_LUCEMON
+    egg_moves(LUCEMON,
         MOVE_TAKE_DOWN,
         MOVE_AMNESIA,
         MOVE_FORESIGHT,
@@ -1707,7 +1707,7 @@ const u16 gEggMoves[] = {
         MOVE_MEAN_LOOK,
         MOVE_PSYCHIC_TERRAIN,
         MOVE_PSYCHIC_FANGS),
-#endif //P_FAMILY_GIRAFARIG
+#endif //P_FAMILY_LUCEMON
 
 #if P_FAMILY_PINECO
     egg_moves(PINECO,

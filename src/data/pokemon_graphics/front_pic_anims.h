@@ -2927,8 +2927,8 @@ static const union AnimCmd sAnim_Lopmonx_1[] =
 };
 #endif //P_FAMILY_LOPMONX
 
-#if P_FAMILY_GIRAFARIG
-static const union AnimCmd sAnim_Girafarig_1[] =
+#if P_FAMILY_LUCEMON
+static const union AnimCmd sAnim_Lucemon_1[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_FRAME(1, 30),
@@ -2939,7 +2939,7 @@ static const union AnimCmd sAnim_Girafarig_1[] =
 #if P_GEN_9_CROSS_EVOS
 PLACEHOLDER_ANIM_SINGLE_FRAME(Farigiraf);
 #endif //P_GEN_9_CROSS_EVOS
-#endif //P_FAMILY_GIRAFARIG
+#endif //P_FAMILY_LUCEMON
 
 #if P_FAMILY_PINECO
 static const union AnimCmd sAnim_Pineco_1[] =
@@ -10862,12 +10862,12 @@ SINGLE_ANIMATION(Wynaut);
 #endif //P_GEN_3_CROSS_EVOS
 SINGLE_ANIMATION(Lopmonx);
 #endif //P_FAMILY_LOPMONX
-#if P_FAMILY_GIRAFARIG
-SINGLE_ANIMATION(Girafarig);
+#if P_FAMILY_LUCEMON
+SINGLE_ANIMATION(Lucemon);
 #if P_GEN_9_CROSS_EVOS
 SINGLE_ANIMATION(Farigiraf);
 #endif //P_GEN_9_CROSS_EVOS
-#endif //P_FAMILY_GIRAFARIG
+#endif //P_FAMILY_LUCEMON
 #if P_FAMILY_PINECO
 SINGLE_ANIMATION(Pineco);
 SINGLE_ANIMATION(Forretress);

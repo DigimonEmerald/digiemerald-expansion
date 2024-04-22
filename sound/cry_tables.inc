@@ -570,12 +570,12 @@ gCryTable::
 .endif @ P_GEN_3_CROSS_EVOS
 	cry Cry_Lopmonx
 .endif @ P_FAMILY_LOPMONX
-.if P_FAMILY_GIRAFARIG == TRUE
-	cry Cry_Girafarig
+.if P_FAMILY_LUCEMON == TRUE
+	cry Cry_Lucemon
 .if P_GEN_9_CROSS_EVOS == TRUE
 	cry Cry_Farigiraf
 .endif @ P_GEN_9_CROSS_EVOS
-.endif @ P_FAMILY_GIRAFARIG
+.endif @ P_FAMILY_LUCEMON
 .if P_FAMILY_PINECO == TRUE
 	cry Cry_Pineco
 	cry Cry_Forretress
@@ -2996,12 +2996,12 @@ gCryTable_Reverse::
 .endif @ P_GEN_3_CROSS_EVOS
 	cry_reverse Cry_Lopmonx
 .endif @ P_FAMILY_LOPMONX
-.if P_FAMILY_GIRAFARIG == TRUE
-	cry_reverse Cry_Girafarig
+.if P_FAMILY_LUCEMON == TRUE
+	cry_reverse Cry_Lucemon
 .if P_GEN_9_CROSS_EVOS == TRUE
 	cry_reverse Cry_Farigiraf
 .endif @ P_GEN_9_CROSS_EVOS
-.endif @ P_FAMILY_GIRAFARIG
+.endif @ P_FAMILY_LUCEMON
 .if P_FAMILY_PINECO == TRUE
 	cry_reverse Cry_Pineco
 	cry_reverse Cry_Forretress

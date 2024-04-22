@@ -3105,8 +3105,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_LOPMONX
 
-#if P_FAMILY_GIRAFARIG
-    [SPECIES_GIRAFARIG] =
+#if P_FAMILY_LUCEMON
+    [SPECIES_LUCEMON] =
     {
         .baseHP        = 70,
         .baseAttack    = 80,
@@ -3125,14 +3125,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_EARLY_BIRD, ABILITY_SAP_SIPPER },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Girafarig"),
-        .cryId = CRY_GIRAFARIG,
-        .natDexNum = NATIONAL_DEX_GIRAFARIG,
+        .speciesName = _("Lucemon"),
+        .cryId = CRY_LUCEMON,
+        .natDexNum = NATIONAL_DEX_LUCEMON,
         .categoryName = _("Long Neck"),
         .height = 15,
         .weight = 415,
         .description = COMPOUND_STRING(
-            "A Girafarig is an herbivore--it eats\n"
+            "A Lucemon is an herbivore--it eats\n"
             "grass and tree shoots. While it is eating,\n"
             "its tail makes chewing and swallowing\n"
             "motions as if it were also eating."),
@@ -3140,26 +3140,26 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 1,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Girafarig,
-        .frontPicFemale = gMonFrontPic_GirafarigF,
+        .frontPic = gMonFrontPic_Lucemon,
+        .frontPicFemale = gMonFrontPic_LucemonF,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Girafarig,
+        .frontAnimFrames = sAnims_Lucemon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Girafarig,
-        .backPicFemale = gMonBackPic_GirafarigF,
+        .backPic = gMonBackPic_Lucemon,
+        .backPicFemale = gMonBackPic_LucemonF,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Girafarig,
-        .shinyPalette = gMonShinyPalette_Girafarig,
-        .iconSprite = gMonIcon_Girafarig,
+        .palette = gMonPalette_Lucemon,
+        .shinyPalette = gMonShinyPalette_Lucemon,
+        .iconSprite = gMonIcon_Lucemon,
         .iconPalIndex = 1,
-        FOOTPRINT(Girafarig)
-        .levelUpLearnset = sGirafarigLevelUpLearnset,
-        .teachableLearnset = sGirafarigTeachableLearnset,
+        FOOTPRINT(Lucemon)
+        .levelUpLearnset = sLucemonLevelUpLearnset,
+        .teachableLearnset = sLucemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_MOVE, MOVE_TWIN_BEAM, SPECIES_FARIGIRAF}),
     },
 
@@ -3193,7 +3193,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "Now that the brain waves from the\n"
             "head and tail are synced up, the\n"
             "psychic power of this Pokémon is 10\n"
-            "times stronger than Girafarig's."),
+            "times stronger than Lucemon's."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -3216,7 +3216,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sFarigirafTeachableLearnset,
     },
 #endif //P_GEN_9_CROSS_EVOS
-#endif //P_FAMILY_GIRAFARIG
+#endif //P_FAMILY_LUCEMON
 
 #if P_FAMILY_PINECO
     [SPECIES_PINECO] =

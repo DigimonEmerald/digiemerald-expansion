@@ -3287,18 +3287,18 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif
 #endif //P_FAMILY_LOPMONX
 
-#if P_FAMILY_GIRAFARIG
-    const u32 gMonFrontPic_Girafarig[] = INCBIN_U32("graphics/pokemon/girafarig/anim_front.4bpp.lz");
-    const u32 gMonPalette_Girafarig[] = INCBIN_U32("graphics/pokemon/girafarig/normal.gbapal.lz");
-    const u32 gMonBackPic_Girafarig[] = INCBIN_U32("graphics/pokemon/girafarig/back.4bpp.lz");
-    const u32 gMonShinyPalette_Girafarig[] = INCBIN_U32("graphics/pokemon/girafarig/shiny.gbapal.lz");
-    const u8 gMonIcon_Girafarig[] = INCBIN_U8("graphics/pokemon/girafarig/icon.4bpp");
+#if P_FAMILY_LUCEMON
+    const u32 gMonFrontPic_Lucemon[] = INCBIN_U32("graphics/pokemon/lucemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Lucemon[] = INCBIN_U32("graphics/pokemon/lucemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Lucemon[] = INCBIN_U32("graphics/pokemon/lucemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Lucemon[] = INCBIN_U32("graphics/pokemon/lucemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Lucemon[] = INCBIN_U8("graphics/pokemon/lucemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Girafarig[] = INCBIN_U8("graphics/pokemon/girafarig/footprint.1bpp");
+    const u8 gMonFootprint_Lucemon[] = INCBIN_U8("graphics/pokemon/lucemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_GirafarigF[] = INCBIN_U32("graphics/pokemon/girafarig/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_GirafarigF[] = INCBIN_U32("graphics/pokemon/girafarig/backf.4bpp.lz");
+    const u32 gMonFrontPic_LucemonF[] = INCBIN_U32("graphics/pokemon/lucemon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_LucemonF[] = INCBIN_U32("graphics/pokemon/lucemon/backf.4bpp.lz");
 
 #if P_GEN_9_CROSS_EVOS
     const u32 gMonFrontPic_Farigiraf[] = INCBIN_U32("graphics/pokemon/farigiraf/front.4bpp.lz");
@@ -3310,7 +3310,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     // const u8 gMonFootprint_Farigiraf[] = INCBIN_U8("graphics/pokemon/farigiraf/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_9_CROSS_EVOS
-#endif //P_FAMILY_GIRAFARIG
+#endif //P_FAMILY_LUCEMON
 
 #if P_FAMILY_PINECO
     const u32 gMonFrontPic_Pineco[] = INCBIN_U32("graphics/pokemon/pineco/anim_front.4bpp.lz");

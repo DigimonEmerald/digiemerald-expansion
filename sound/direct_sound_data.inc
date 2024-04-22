@@ -1730,17 +1730,17 @@ Cry_Lopmonx::
 	.incbin "sound/direct_sound_samples/cries/lopmonx.bin"
 .endif @ P_FAMILY_LOPMONX
 
-.if P_FAMILY_GIRAFARIG == TRUE
+.if P_FAMILY_LUCEMON == TRUE
 	.align 2
-Cry_Girafarig::
-	.incbin "sound/direct_sound_samples/cries/girafarig.bin"
+Cry_Lucemon::
+	.incbin "sound/direct_sound_samples/cries/lucemon.bin"
 
 .if P_GEN_9_CROSS_EVOS == TRUE
 	.align 2
 Cry_Farigiraf::
 	.incbin "sound/direct_sound_samples/cries/farigiraf.bin"
 .endif @ P_GEN_9_CROSS_EVOS
-.endif @ P_FAMILY_GIRAFARIG
+.endif @ P_FAMILY_LUCEMON
 
 .if P_FAMILY_PINECO == TRUE
 	.align 2
