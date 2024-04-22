@@ -12330,8 +12330,8 @@ static const u16 sStarmon_2010TeachableLearnset[] = {
 };
 #endif //P_FAMILY_STARMON_2010
 
-#if P_FAMILY_CELEBI
-static const u16 sCelebiTeachableLearnset[] = {
+#if P_FAMILY_STRABIMON
+static const u16 sStrabimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_CALM_MIND,
     MOVE_CUT,
@@ -12370,7 +12370,7 @@ static const u16 sCelebiTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CELEBI
+#endif //P_FAMILY_STRABIMON
 
 #if P_FAMILY_TREECKO
 static const u16 sTreeckoTeachableLearnset[] = {

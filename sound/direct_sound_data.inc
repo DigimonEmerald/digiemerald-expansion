@@ -2024,11 +2024,11 @@ Cry_Starmon_2010::
 	.incbin "sound/direct_sound_samples/cries/starmon_2010.bin"
 .endif @ P_FAMILY_STARMON_2010
 
-.if P_FAMILY_CELEBI == TRUE
+.if P_FAMILY_STRABIMON == TRUE
 	.align 2
-Cry_Celebi::
-	.incbin "sound/direct_sound_samples/cries/celebi.bin"
-.endif @ P_FAMILY_CELEBI
+Cry_Strabimon::
+	.incbin "sound/direct_sound_samples/cries/strabimon.bin"
+.endif @ P_FAMILY_STRABIMON
 
 .if P_FAMILY_TREECKO == TRUE
 	.align 2

@@ -6394,8 +6394,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_STARMON_2010
 
-#if P_FAMILY_CELEBI
-    [SPECIES_CELEBI] =
+#if P_FAMILY_STRABIMON
+    [SPECIES_STRABIMON] =
     {
         .baseHP        = 100,
         .baseAttack    = 100,
@@ -6422,41 +6422,41 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_NATURAL_CURE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Celebi"),
-        .cryId = CRY_CELEBI,
-        .natDexNum = NATIONAL_DEX_CELEBI,
+        .speciesName = _("Strabimon"),
+        .cryId = CRY_STRABIMON,
+        .natDexNum = NATIONAL_DEX_STRABIMON,
         .categoryName = _("Time Travel"),
         .height = 6,
         .weight = 50,
         .description = COMPOUND_STRING(
             "This Pokémon came from the future by\n"
             "crossing over time. It is thought that so\n"
-            "long as Celebi appears, a bright and\n"
+            "long as Strabimon appears, a bright and\n"
             "shining future awaits us."),
         .pokemonScale = 393,
         .pokemonOffset = -10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Celebi,
+        .frontPic = gMonFrontPic_Strabimon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Celebi,
+        .frontAnimFrames = sAnims_Strabimon,
         .frontAnimId = ANIM_H_SLIDE_WOBBLE,
         .enemyMonElevation = 15,
-        .backPic = gMonBackPic_Celebi,
+        .backPic = gMonBackPic_Strabimon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_GREEN,
-        .palette = gMonPalette_Celebi,
-        .shinyPalette = gMonShinyPalette_Celebi,
-        .iconSprite = gMonIcon_Celebi,
+        .palette = gMonPalette_Strabimon,
+        .shinyPalette = gMonShinyPalette_Strabimon,
+        .iconSprite = gMonIcon_Strabimon,
         .iconPalIndex = 1,
-        FOOTPRINT(Celebi)
+        FOOTPRINT(Strabimon)
         .isMythical = TRUE,
-        .levelUpLearnset = sCelebiLevelUpLearnset,
-        .teachableLearnset = sCelebiTeachableLearnset,
+        .levelUpLearnset = sStrabimonLevelUpLearnset,
+        .teachableLearnset = sStrabimonTeachableLearnset,
     },
-#endif //P_FAMILY_CELEBI
+#endif //P_FAMILY_STRABIMON
 
 #ifdef __INTELLISENSE__
 };

@@ -706,9 +706,9 @@ gCryTable::
 .if P_FAMILY_STARMON_2010 == TRUE
 	cry Cry_Starmon_2010
 .endif @ P_FAMILY_STARMON_2010
-.if P_FAMILY_CELEBI == TRUE
-	cry Cry_Celebi
-.endif @ P_FAMILY_CELEBI
+.if P_FAMILY_STRABIMON == TRUE
+	cry Cry_Strabimon
+.endif @ P_FAMILY_STRABIMON
 .if P_FAMILY_TREECKO == TRUE
 	cry Cry_Treecko
 	cry Cry_Grovyle
@@ -3132,9 +3132,9 @@ gCryTable_Reverse::
 .if P_FAMILY_STARMON_2010 == TRUE
 	cry_reverse Cry_Starmon_2010
 .endif @ P_FAMILY_STARMON_2010
-.if P_FAMILY_CELEBI == TRUE
-	cry_reverse Cry_Celebi
-.endif @ P_FAMILY_CELEBI
+.if P_FAMILY_STRABIMON == TRUE
+	cry_reverse Cry_Strabimon
+.endif @ P_FAMILY_STRABIMON
 .if P_FAMILY_TREECKO == TRUE
 	cry_reverse Cry_Treecko
 	cry_reverse Cry_Grovyle

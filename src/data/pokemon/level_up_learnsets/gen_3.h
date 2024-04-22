@@ -5343,8 +5343,8 @@ static const struct LevelUpMove sStarmon_2010LevelUpLearnset[] = {
 };
 #endif //P_FAMILY_STARMON_2010
 
-#if P_FAMILY_CELEBI
-static const struct LevelUpMove sCelebiLevelUpLearnset[] = {
+#if P_FAMILY_STRABIMON
+static const struct LevelUpMove sStrabimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEECH_SEED),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 1, MOVE_RECOVER),
@@ -5356,7 +5356,7 @@ static const struct LevelUpMove sCelebiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_PERISH_SONG),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CELEBI
+#endif //P_FAMILY_STRABIMON
 
 #if P_FAMILY_TREECKO
 static const struct LevelUpMove sTreeckoLevelUpLearnset[] = {

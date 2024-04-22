@@ -3398,8 +3398,8 @@ static const union AnimCmd sAnim_Starmon_2010_1[] =
 };
 #endif //P_FAMILY_STARMON_2010
 
-#if P_FAMILY_CELEBI
-static const union AnimCmd sAnim_Celebi_1[] =
+#if P_FAMILY_STRABIMON
+static const union AnimCmd sAnim_Strabimon_1[] =
 {
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 30),
@@ -3407,7 +3407,7 @@ static const union AnimCmd sAnim_Celebi_1[] =
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_CELEBI
+#endif //P_FAMILY_STRABIMON
 
 #if P_FAMILY_TREECKO
 static const union AnimCmd sAnim_Treecko_1[] =
@@ -11002,9 +11002,9 @@ SINGLE_ANIMATION(Sparrowmon);
 #if P_FAMILY_STARMON_2010
 SINGLE_ANIMATION(Starmon_2010);
 #endif //P_FAMILY_STARMON_2010
-#if P_FAMILY_CELEBI
-SINGLE_ANIMATION(Celebi);
-#endif //P_FAMILY_CELEBI
+#if P_FAMILY_STRABIMON
+SINGLE_ANIMATION(Strabimon);
+#endif //P_FAMILY_STRABIMON
 #if P_FAMILY_TREECKO
 SINGLE_ANIMATION(Treecko);
 SINGLE_ANIMATION(Grovyle);

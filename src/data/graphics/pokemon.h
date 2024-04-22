@@ -3893,16 +3893,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_STARMON_2010
 
-#if P_FAMILY_CELEBI
-    const u32 gMonFrontPic_Celebi[] = INCBIN_U32("graphics/pokemon/celebi/anim_front.4bpp.lz");
-    const u32 gMonPalette_Celebi[] = INCBIN_U32("graphics/pokemon/celebi/normal.gbapal.lz");
-    const u32 gMonBackPic_Celebi[] = INCBIN_U32("graphics/pokemon/celebi/back.4bpp.lz");
-    const u32 gMonShinyPalette_Celebi[] = INCBIN_U32("graphics/pokemon/celebi/shiny.gbapal.lz");
-    const u8 gMonIcon_Celebi[] = INCBIN_U8("graphics/pokemon/celebi/icon.4bpp");
+#if P_FAMILY_STRABIMON
+    const u32 gMonFrontPic_Strabimon[] = INCBIN_U32("graphics/pokemon/strabimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Strabimon[] = INCBIN_U32("graphics/pokemon/strabimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Strabimon[] = INCBIN_U32("graphics/pokemon/strabimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Strabimon[] = INCBIN_U32("graphics/pokemon/strabimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Strabimon[] = INCBIN_U8("graphics/pokemon/strabimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Celebi[] = INCBIN_U8("graphics/pokemon/celebi/footprint.1bpp");
+    const u8 gMonFootprint_Strabimon[] = INCBIN_U8("graphics/pokemon/strabimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_CELEBI
+#endif //P_FAMILY_STRABIMON
 
 #if P_FAMILY_TREECKO
     const u32 gMonFrontPic_Treecko[] = INCBIN_U32("graphics/pokemon/treecko/anim_front.4bpp.lz");
