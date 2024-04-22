@@ -1394,8 +1394,8 @@ const u16 gEggMoves[] = {
         MOVE_HURRICANE),
 #endif //P_FAMILY_GHOSTMON
 
-#if P_FAMILY_LEDYBA
-    egg_moves(LEDYBA,
+#if P_FAMILY_GIZUMON
+    egg_moves(GIZUMON,
         MOVE_PSYBEAM,
         MOVE_BIDE,
         MOVE_SILVER_WIND,
@@ -1410,7 +1410,7 @@ const u16 gEggMoves[] = {
         MOVE_TAILWIND,
         MOVE_ENDURE,
         MOVE_COUNTER),
-#endif //P_FAMILY_LEDYBA
+#endif //P_FAMILY_GIZUMON
 
 #if P_FAMILY_SPINARAK
     egg_moves(SPINARAK,

@@ -2738,18 +2738,18 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_GHOSTMON
 
-#if P_FAMILY_LEDYBA
-    const u32 gMonFrontPic_Ledyba[] = INCBIN_U32("graphics/pokemon/ledyba/anim_front.4bpp.lz");
-    const u32 gMonPalette_Ledyba[] = INCBIN_U32("graphics/pokemon/ledyba/normal.gbapal.lz");
-    const u32 gMonBackPic_Ledyba[] = INCBIN_U32("graphics/pokemon/ledyba/back.4bpp.lz");
-    const u32 gMonShinyPalette_Ledyba[] = INCBIN_U32("graphics/pokemon/ledyba/shiny.gbapal.lz");
-    const u8 gMonIcon_Ledyba[] = INCBIN_U8("graphics/pokemon/ledyba/icon.4bpp");
+#if P_FAMILY_GIZUMON
+    const u32 gMonFrontPic_Gizumon[] = INCBIN_U32("graphics/pokemon/gizumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gizumon[] = INCBIN_U32("graphics/pokemon/gizumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Gizumon[] = INCBIN_U32("graphics/pokemon/gizumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gizumon[] = INCBIN_U32("graphics/pokemon/gizumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Gizumon[] = INCBIN_U8("graphics/pokemon/gizumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Ledyba[] = INCBIN_U8("graphics/pokemon/ledyba/footprint.1bpp");
+    const u8 gMonFootprint_Gizumon[] = INCBIN_U8("graphics/pokemon/gizumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_LedybaF[] = INCBIN_U32("graphics/pokemon/ledyba/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_LedybaF[] = INCBIN_U32("graphics/pokemon/ledyba/backf.4bpp.lz");
+    const u32 gMonFrontPic_GizumonF[] = INCBIN_U32("graphics/pokemon/gizumon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_GizumonF[] = INCBIN_U32("graphics/pokemon/gizumon/backf.4bpp.lz");
 
     const u32 gMonFrontPic_Ledian[] = INCBIN_U32("graphics/pokemon/ledian/anim_front.4bpp.lz");
     const u32 gMonPalette_Ledian[] = INCBIN_U32("graphics/pokemon/ledian/normal.gbapal.lz");
@@ -2762,7 +2762,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
     const u32 gMonFrontPic_LedianF[] = INCBIN_U32("graphics/pokemon/ledian/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_LedianF[] = INCBIN_U32("graphics/pokemon/ledian/backf.4bpp.lz");
-#endif //P_FAMILY_LEDYBA
+#endif //P_FAMILY_GIZUMON
 
 #if P_FAMILY_SPINARAK
     const u32 gMonFrontPic_Spinarak[] = INCBIN_U32("graphics/pokemon/spinarak/anim_front.4bpp.lz");

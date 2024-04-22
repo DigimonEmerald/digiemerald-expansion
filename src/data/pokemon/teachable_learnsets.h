@@ -8976,8 +8976,8 @@ static const u16 sGizamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GHOSTMON
 
-#if P_FAMILY_LEDYBA
-static const u16 sLedybaTeachableLearnset[] = {
+#if P_FAMILY_GIZUMON
+static const u16 sGizumonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -9049,7 +9049,7 @@ static const u16 sLedianTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_LEDYBA
+#endif //P_FAMILY_GIZUMON
 
 #if P_FAMILY_SPINARAK
 static const u16 sSpinarakTeachableLearnset[] = {

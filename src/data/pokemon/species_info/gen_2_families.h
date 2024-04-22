@@ -793,8 +793,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     },
 #endif //P_FAMILY_GHOSTMON
 
-#if P_FAMILY_LEDYBA
-    [SPECIES_LEDYBA] =
+#if P_FAMILY_GIZUMON
+    [SPECIES_GIZUMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 20,
@@ -813,14 +813,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SWARM, ABILITY_EARLY_BIRD, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Ledyba"),
-        .cryId = CRY_LEDYBA,
-        .natDexNum = NATIONAL_DEX_LEDYBA,
+        .speciesName = _("Gizumon"),
+        .cryId = CRY_GIZUMON,
+        .natDexNum = NATIONAL_DEX_GIZUMON,
         .categoryName = _("Five Star"),
         .height = 10,
         .weight = 108,
         .description = COMPOUND_STRING(
-            "Ledyba communicate using a fluid that\n"
+            "Gizumon communicate using a fluid that\n"
             "they secrete from where the legs join the\n"
             "body. They are said to convey feelings to\n"
             "others by altering the fluid's scent."),
@@ -828,26 +828,26 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Ledyba,
-        .frontPicFemale = gMonFrontPic_LedybaF,
+        .frontPic = gMonFrontPic_Gizumon,
+        .frontPicFemale = gMonFrontPic_GizumonF,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Ledyba,
+        .frontAnimFrames = sAnims_Gizumon,
         .frontAnimId = ANIM_V_JUMPS_SMALL,
-        .backPic = gMonBackPic_Ledyba,
-        .backPicFemale = gMonBackPic_LedybaF,
+        .backPic = gMonBackPic_Gizumon,
+        .backPicFemale = gMonBackPic_GizumonF,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicSizeFemale = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Ledyba,
-        .shinyPalette = gMonShinyPalette_Ledyba,
-        .iconSprite = gMonIcon_Ledyba,
+        .palette = gMonPalette_Gizumon,
+        .shinyPalette = gMonShinyPalette_Gizumon,
+        .iconSprite = gMonIcon_Gizumon,
         .iconPalIndex = 0,
-        FOOTPRINT(Ledyba)
-        .levelUpLearnset = sLedybaLevelUpLearnset,
-        .teachableLearnset = sLedybaTeachableLearnset,
+        FOOTPRINT(Gizumon)
+        .levelUpLearnset = sGizumonLevelUpLearnset,
+        .teachableLearnset = sGizumonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_LEDIAN}),
     },
 
@@ -907,7 +907,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sLedianLevelUpLearnset,
         .teachableLearnset = sLedianTeachableLearnset,
     },
-#endif //P_FAMILY_LEDYBA
+#endif //P_FAMILY_GIZUMON
 
 #if P_FAMILY_SPINARAK
     [SPECIES_SPINARAK] =
