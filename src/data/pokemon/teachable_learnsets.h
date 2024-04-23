@@ -12542,7 +12542,7 @@ static const u16 sSyakomon_xTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sCombuskenTeachableLearnset[] = {
+static const u16 sTapirmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,

@@ -719,7 +719,7 @@ gCryTable::
 .endif @ P_FAMILY_SUNARZAMON
 .if P_FAMILY_SYAKOMON_X == TRUE
 	cry Cry_Syakomon_x
-	cry Cry_Combusken
+	cry Cry_Tapirmon
 	cry Cry_Blaziken
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_BlazikenMega
@@ -3145,7 +3145,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_SUNARZAMON
 .if P_FAMILY_SYAKOMON_X == TRUE
 	cry_reverse Cry_Syakomon_x
-	cry_reverse Cry_Combusken
+	cry_reverse Cry_Tapirmon
 	cry_reverse Cry_Blaziken
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_BlazikenMega

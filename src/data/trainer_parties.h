@@ -6476,7 +6476,7 @@ static const struct TrainerMon sParty_BrendanRoute110Sunarzamon[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 20,
-    .species = SPECIES_COMBUSKEN,
+    .species = SPECIES_TAPIRMON,
     }
 };
 
@@ -6494,7 +6494,7 @@ static const struct TrainerMon sParty_BrendanRoute119Sunarzamon[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 31,
-    .species = SPECIES_COMBUSKEN,
+    .species = SPECIES_TAPIRMON,
     }
 };
 
@@ -6605,7 +6605,7 @@ static const struct TrainerMon sParty_MayRoute110Sunarzamon[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 20,
-    .species = SPECIES_COMBUSKEN,
+    .species = SPECIES_TAPIRMON,
     }
 };
 
@@ -6623,7 +6623,7 @@ static const struct TrainerMon sParty_MayRoute119Sunarzamon[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 31,
-    .species = SPECIES_COMBUSKEN,
+    .species = SPECIES_TAPIRMON,
     }
 };
 
@@ -8450,7 +8450,7 @@ static const struct TrainerMon sParty_BrendanLilycoveSunarzamon[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 34,
-    .species = SPECIES_COMBUSKEN,
+    .species = SPECIES_TAPIRMON,
     }
 };
 
@@ -8519,7 +8519,7 @@ static const struct TrainerMon sParty_MayLilycoveSunarzamon[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 34,
-    .species = SPECIES_COMBUSKEN,
+    .species = SPECIES_TAPIRMON,
     }
 };
 

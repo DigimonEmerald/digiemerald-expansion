@@ -3456,7 +3456,7 @@ static const union AnimCmd sAnim_Syakomon_x_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Combusken_1[] =
+static const union AnimCmd sAnim_Tapirmon_1[] =
 {
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_FRAME(1, 25),
@@ -11015,7 +11015,7 @@ SINGLE_ANIMATION(SyakomonMega);
 #endif //P_FAMILY_SUNARZAMON
 #if P_FAMILY_SYAKOMON_X
 SINGLE_ANIMATION(Syakomon_x);
-SINGLE_ANIMATION(Combusken);
+SINGLE_ANIMATION(Tapirmon);
 SINGLE_ANIMATION(Blaziken);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(BlazikenMega);

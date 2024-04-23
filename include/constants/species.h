@@ -257,7 +257,7 @@
 #define SPECIES_SWIMMON                                 253
 #define SPECIES_SYAKOMON                                254
 #define SPECIES_SYAKOMON_X                                 255
-#define SPECIES_COMBUSKEN                               256
+#define SPECIES_TAPIRMON                               256
 #define SPECIES_BLAZIKEN                                257
 #define SPECIES_MUDKIP                                  258
 #define SPECIES_MARSHTOMP                               259
