@@ -12416,7 +12416,7 @@ static const u16 sSunarzamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGrovyleTeachableLearnset[] = {
+static const u16 sSwimmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,

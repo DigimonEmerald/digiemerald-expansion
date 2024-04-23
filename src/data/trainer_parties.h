@@ -6433,7 +6433,7 @@ static const struct TrainerMon sParty_BrendanRoute110Mudkip[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 20,
-    .species = SPECIES_GROVYLE,
+    .species = SPECIES_SWIMMON,
     }
 };
 
@@ -6451,7 +6451,7 @@ static const struct TrainerMon sParty_BrendanRoute119Mudkip[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 31,
-    .species = SPECIES_GROVYLE,
+    .species = SPECIES_SWIMMON,
     }
 };
 
@@ -6562,7 +6562,7 @@ static const struct TrainerMon sParty_MayRoute110Mudkip[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 20,
-    .species = SPECIES_GROVYLE,
+    .species = SPECIES_SWIMMON,
     }
 };
 
@@ -6580,7 +6580,7 @@ static const struct TrainerMon sParty_MayRoute119Mudkip[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 31,
-    .species = SPECIES_GROVYLE,
+    .species = SPECIES_SWIMMON,
     }
 };
 
@@ -8427,7 +8427,7 @@ static const struct TrainerMon sParty_BrendanLilycoveMudkip[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 34,
-    .species = SPECIES_GROVYLE,
+    .species = SPECIES_SWIMMON,
     }
 };
 
@@ -8496,7 +8496,7 @@ static const struct TrainerMon sParty_MayLilycoveMudkip[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 34,
-    .species = SPECIES_GROVYLE,
+    .species = SPECIES_SWIMMON,
     }
 };
 

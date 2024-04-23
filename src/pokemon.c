@@ -110,7 +110,7 @@ static const struct CombinedMove sCombinedMoves[2] =
 static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
 {
     HOENN_TO_NATIONAL(SUNARZAMON),
-    HOENN_TO_NATIONAL(GROVYLE),
+    HOENN_TO_NATIONAL(SWIMMON),
     HOENN_TO_NATIONAL(SCEPTILE),
     HOENN_TO_NATIONAL(TORCHIC),
     HOENN_TO_NATIONAL(COMBUSKEN),

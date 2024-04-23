@@ -3914,13 +3914,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Sunarzamon[] = INCBIN_U8("graphics/pokemon/sunarzamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Grovyle[] = INCBIN_U32("graphics/pokemon/grovyle/anim_front.4bpp.lz");
-    const u32 gMonPalette_Grovyle[] = INCBIN_U32("graphics/pokemon/grovyle/normal.gbapal.lz");
-    const u32 gMonBackPic_Grovyle[] = INCBIN_U32("graphics/pokemon/grovyle/back.4bpp.lz");
-    const u32 gMonShinyPalette_Grovyle[] = INCBIN_U32("graphics/pokemon/grovyle/shiny.gbapal.lz");
-    const u8 gMonIcon_Grovyle[] = INCBIN_U8("graphics/pokemon/grovyle/icon.4bpp");
+    const u32 gMonFrontPic_Swimmon[] = INCBIN_U32("graphics/pokemon/swimmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Swimmon[] = INCBIN_U32("graphics/pokemon/swimmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Swimmon[] = INCBIN_U32("graphics/pokemon/swimmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Swimmon[] = INCBIN_U32("graphics/pokemon/swimmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Swimmon[] = INCBIN_U8("graphics/pokemon/swimmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Grovyle[] = INCBIN_U8("graphics/pokemon/grovyle/footprint.1bpp");
+    const u8 gMonFootprint_Swimmon[] = INCBIN_U8("graphics/pokemon/swimmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Sceptile[] = INCBIN_U32("graphics/pokemon/sceptile/anim_front.4bpp.lz");

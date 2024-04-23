@@ -711,7 +711,7 @@ gCryTable::
 .endif @ P_FAMILY_STRABIMON
 .if P_FAMILY_SUNARZAMON == TRUE
 	cry Cry_Sunarzamon
-	cry Cry_Grovyle
+	cry Cry_Swimmon
 	cry Cry_Sceptile
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_SceptileMega
@@ -3137,7 +3137,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_STRABIMON
 .if P_FAMILY_SUNARZAMON == TRUE
 	cry_reverse Cry_Sunarzamon
-	cry_reverse Cry_Grovyle
+	cry_reverse Cry_Swimmon
 	cry_reverse Cry_Sceptile
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_SceptileMega

@@ -3420,7 +3420,7 @@ static const union AnimCmd sAnim_Sunarzamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Grovyle_1[] =
+static const union AnimCmd sAnim_Swimmon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 18),
@@ -11007,7 +11007,7 @@ SINGLE_ANIMATION(Strabimon);
 #endif //P_FAMILY_STRABIMON
 #if P_FAMILY_SUNARZAMON
 SINGLE_ANIMATION(Sunarzamon);
-SINGLE_ANIMATION(Grovyle);
+SINGLE_ANIMATION(Swimmon);
 SINGLE_ANIMATION(Sceptile);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(SceptileMega);

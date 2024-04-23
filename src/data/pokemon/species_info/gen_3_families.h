@@ -54,10 +54,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Sunarzamon)
         .levelUpLearnset = sSunarzamonLevelUpLearnset,
         .teachableLearnset = sSunarzamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_GROVYLE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_SWIMMON}),
     },
 
-    [SPECIES_GROVYLE] =
+    [SPECIES_SWIMMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 65,
@@ -76,37 +76,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_UNBURDEN },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Grovyle"),
-        .cryId = CRY_GROVYLE,
-        .natDexNum = NATIONAL_DEX_GROVYLE,
+        .speciesName = _("Swimmon"),
+        .cryId = CRY_SWIMMON,
+        .natDexNum = NATIONAL_DEX_SWIMMON,
         .categoryName = _("Wood Gecko"),
         .height = 9,
         .weight = 216,
         .description = COMPOUND_STRING(
             "Leaves grow out of this Pokémon's body.\n"
-            "They help obscure a Grovyle from the eyes\n"
+            "They help obscure a Swimmon from the eyes\n"
             "of its enemies while it is in a thickly\n"
             "overgrown forest."),
         .pokemonScale = 360,
         .pokemonOffset = 5,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Grovyle,
+        .frontPic = gMonFrontPic_Swimmon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_Grovyle,
+        .frontAnimFrames = sAnims_Swimmon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Grovyle,
+        .backPic = gMonBackPic_Swimmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Grovyle,
-        .shinyPalette = gMonShinyPalette_Grovyle,
-        .iconSprite = gMonIcon_Grovyle,
+        .palette = gMonPalette_Swimmon,
+        .shinyPalette = gMonShinyPalette_Swimmon,
+        .iconSprite = gMonIcon_Swimmon,
         .iconPalIndex = 1,
-        FOOTPRINT(Grovyle)
-        .levelUpLearnset = sGrovyleLevelUpLearnset,
-        .teachableLearnset = sGrovyleTeachableLearnset,
+        FOOTPRINT(Swimmon)
+        .levelUpLearnset = sSwimmonLevelUpLearnset,
+        .teachableLearnset = sSwimmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SCEPTILE}),
     },
 

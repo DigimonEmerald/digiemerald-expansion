@@ -7022,7 +7022,7 @@ static const struct LevelUpMove sSunarzamonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sGrovyleLevelUpLearnset[] = {
+static const struct LevelUpMove sSwimmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
