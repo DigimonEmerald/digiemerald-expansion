@@ -717,14 +717,14 @@ gCryTable::
 	cry Cry_SyakomonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SUNARZAMON
-.if P_FAMILY_TORCHIC == TRUE
-	cry Cry_Torchic
+.if P_FAMILY_SYAKOMON_X == TRUE
+	cry Cry_Syakomon_x
 	cry Cry_Combusken
 	cry Cry_Blaziken
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_BlazikenMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_TORCHIC
+.endif @ P_FAMILY_SYAKOMON_X
 .if P_FAMILY_MUDKIP == TRUE
 	cry Cry_Mudkip
 	cry Cry_Marshtomp
@@ -3143,14 +3143,14 @@ gCryTable_Reverse::
 	cry_reverse Cry_SyakomonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SUNARZAMON
-.if P_FAMILY_TORCHIC == TRUE
-	cry_reverse Cry_Torchic
+.if P_FAMILY_SYAKOMON_X == TRUE
+	cry_reverse Cry_Syakomon_x
 	cry_reverse Cry_Combusken
 	cry_reverse Cry_Blaziken
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_BlazikenMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_TORCHIC
+.endif @ P_FAMILY_SYAKOMON_X
 .if P_FAMILY_MUDKIP == TRUE
 	cry_reverse Cry_Mudkip
 	cry_reverse Cry_Marshtomp

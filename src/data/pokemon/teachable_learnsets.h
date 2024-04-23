@@ -12507,8 +12507,8 @@ static const u16 sSyakomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SUNARZAMON
 
-#if P_FAMILY_TORCHIC
-static const u16 sTorchicTeachableLearnset[] = {
+#if P_FAMILY_SYAKOMON_X
+static const u16 sSyakomon_xTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CUT,
@@ -12629,7 +12629,7 @@ static const u16 sBlazikenTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TORCHIC
+#endif //P_FAMILY_SYAKOMON_X
 
 #if P_FAMILY_MUDKIP
 static const u16 sMudkipTeachableLearnset[] = {

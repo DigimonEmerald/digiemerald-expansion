@@ -3941,17 +3941,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SUNARZAMON
 
-#if P_FAMILY_TORCHIC
-    const u32 gMonFrontPic_Torchic[] = INCBIN_U32("graphics/pokemon/torchic/anim_front.4bpp.lz");
-    const u32 gMonPalette_Torchic[] = INCBIN_U32("graphics/pokemon/torchic/normal.gbapal.lz");
-    const u32 gMonBackPic_Torchic[] = INCBIN_U32("graphics/pokemon/torchic/back.4bpp.lz");
-    const u32 gMonShinyPalette_Torchic[] = INCBIN_U32("graphics/pokemon/torchic/shiny.gbapal.lz");
-    const u8 gMonIcon_Torchic[] = INCBIN_U8("graphics/pokemon/torchic/icon.4bpp");
+#if P_FAMILY_SYAKOMON_X
+    const u32 gMonFrontPic_Syakomon_x[] = INCBIN_U32("graphics/pokemon/syakomon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Syakomon_x[] = INCBIN_U32("graphics/pokemon/syakomon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Syakomon_x[] = INCBIN_U32("graphics/pokemon/syakomon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Syakomon_x[] = INCBIN_U32("graphics/pokemon/syakomon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Syakomon_x[] = INCBIN_U8("graphics/pokemon/syakomon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Torchic[] = INCBIN_U8("graphics/pokemon/torchic/footprint.1bpp");
+    const u8 gMonFootprint_Syakomon_x[] = INCBIN_U8("graphics/pokemon/syakomon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonBackPic_TorchicF[] = INCBIN_U32("graphics/pokemon/torchic/backf.4bpp.lz");
+    const u32 gMonBackPic_Syakomon_xF[] = INCBIN_U32("graphics/pokemon/syakomon_x/backf.4bpp.lz");
 
     const u32 gMonFrontPic_Combusken[] = INCBIN_U32("graphics/pokemon/combusken/anim_front.4bpp.lz");
     const u32 gMonPalette_Combusken[] = INCBIN_U32("graphics/pokemon/combusken/normal.gbapal.lz");
@@ -3984,7 +3984,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_BlazikenMega[] = INCBIN_U32("graphics/pokemon/blaziken/mega/shiny.gbapal.lz");
     const u8 gMonIcon_BlazikenMega[] = INCBIN_U8("graphics/pokemon/blaziken/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_TORCHIC
+#endif //P_FAMILY_SYAKOMON_X
 
 #if P_FAMILY_MUDKIP
     const u32 gMonFrontPic_Mudkip[] = INCBIN_U32("graphics/pokemon/mudkip/anim_front.4bpp.lz");

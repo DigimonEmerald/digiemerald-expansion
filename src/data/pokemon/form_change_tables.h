@@ -273,14 +273,14 @@ static const struct FormChange sSyakomonFormChangeTable[] = {
 };
 #endif //P_FAMILY_SUNARZAMON
 
-#if P_FAMILY_TORCHIC
+#if P_FAMILY_SYAKOMON_X
 static const struct FormChange sBlazikenFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BLAZIKEN_MEGA, ITEM_BLAZIKENITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_TORCHIC
+#endif //P_FAMILY_SYAKOMON_X
 
 #if P_FAMILY_MUDKIP
 static const struct FormChange sSwampertFormChangeTable[] = {

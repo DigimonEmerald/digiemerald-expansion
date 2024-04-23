@@ -5411,8 +5411,8 @@ static const struct LevelUpMove sSyakomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_SUNARZAMON
 
-#if P_FAMILY_TORCHIC
-static const struct LevelUpMove sTorchicLevelUpLearnset[] = {
+#if P_FAMILY_SYAKOMON_X
+static const struct LevelUpMove sSyakomon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 7, MOVE_FOCUS_ENERGY),
@@ -5464,7 +5464,7 @@ static const struct LevelUpMove sBlazikenLevelUpLearnset[] = {
     LEVEL_UP_MOVE(59, MOVE_SKY_UPPERCUT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_TORCHIC
+#endif //P_FAMILY_SYAKOMON_X
 
 #if P_FAMILY_MUDKIP
 static const struct LevelUpMove sMudkipLevelUpLearnset[] = {

@@ -6447,7 +6447,7 @@ static u8 PrintEvolutionTargetSpeciesAndMethod(u8 taskId, u16 species, u8 depth,
     if (species == SPECIES_CRABMON_X)
         isCrabmon_x = TRUE;
 
-    //Calculate number of possible direct evolutions (e.g. Crabmon_x has 5 but torchic has 1)
+    //Calculate number of possible direct evolutions (e.g. Crabmon_x has 5 but syakomon_x has 1)
     for (i = 0; evolutions[i].method != EVOLUTIONS_END; i++)
     {
         if (evolutions[i].method != 0)

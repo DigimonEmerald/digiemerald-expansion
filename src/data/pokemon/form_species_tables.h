@@ -731,7 +731,7 @@ static const u16 sSyakomonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_SUNARZAMON
 
-#if P_FAMILY_TORCHIC
+#if P_FAMILY_SYAKOMON_X
 static const u16 sBlazikenFormSpeciesIdTable[] = {
     SPECIES_BLAZIKEN,
 #if P_MEGA_EVOLUTIONS
@@ -739,7 +739,7 @@ static const u16 sBlazikenFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_TORCHIC
+#endif //P_FAMILY_SYAKOMON_X
 
 #if P_FAMILY_MUDKIP
 static const u16 sSwampertFormSpeciesIdTable[] = {

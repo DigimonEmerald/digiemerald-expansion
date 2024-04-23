@@ -187,7 +187,7 @@
 #define P_FAMILY_STRABIMON                  P_GEN_2_POKEMON
 
 #define P_FAMILY_SUNARZAMON                 P_GEN_3_POKEMON
-#define P_FAMILY_TORCHIC                 P_GEN_3_POKEMON
+#define P_FAMILY_SYAKOMON_X                 P_GEN_3_POKEMON
 #define P_FAMILY_MUDKIP                  P_GEN_3_POKEMON
 #define P_FAMILY_POOCHYENA               P_GEN_3_POKEMON
 #define P_FAMILY_ZIGZAGOON               P_GEN_3_POKEMON

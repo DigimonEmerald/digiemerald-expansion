@@ -2104,8 +2104,8 @@ const u16 gEggMoves[] = {
         MOVE_GRASSY_TERRAIN),
 #endif //P_FAMILY_SUNARZAMON
 
-#if P_FAMILY_TORCHIC
-    egg_moves(TORCHIC,
+#if P_FAMILY_SYAKOMON_X
+    egg_moves(SYAKOMON_X,
         MOVE_COUNTER,
         MOVE_REVERSAL,
         MOVE_ENDURE,
@@ -2120,7 +2120,7 @@ const u16 gEggMoves[] = {
         MOVE_CURSE,
         MOVE_FLAME_BURST,
         MOVE_LOW_KICK),
-#endif //P_FAMILY_TORCHIC
+#endif //P_FAMILY_SYAKOMON_X
 
 #if P_FAMILY_MUDKIP
     egg_moves(MUDKIP,

@@ -2050,10 +2050,10 @@ Cry_SyakomonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SUNARZAMON
 
-.if P_FAMILY_TORCHIC == TRUE
+.if P_FAMILY_SYAKOMON_X == TRUE
 	.align 2
-Cry_Torchic::
-	.incbin "sound/direct_sound_samples/cries/torchic.bin"
+Cry_Syakomon_x::
+	.incbin "sound/direct_sound_samples/cries/syakomon_x.bin"
 
 	.align 2
 Cry_Combusken::
@@ -2068,7 +2068,7 @@ Cry_Blaziken::
 Cry_BlazikenMega::
 	.incbin "sound/direct_sound_samples/cries/blaziken_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_TORCHIC
+.endif @ P_FAMILY_SYAKOMON_X
 
 .if P_FAMILY_MUDKIP == TRUE
 	.align 2

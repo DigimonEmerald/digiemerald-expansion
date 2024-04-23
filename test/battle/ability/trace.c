@@ -5,12 +5,12 @@ SINGLE_BATTLE_TEST("Trace copies opponents ability")
 {
     GIVEN {
         PLAYER(SPECIES_RALTS) { Ability(ABILITY_TRACE); }
-        OPPONENT(SPECIES_TORCHIC) { Ability(ABILITY_BLAZE); }
+        OPPONENT(SPECIES_SYAKOMON_X) { Ability(ABILITY_BLAZE); }
     } WHEN {
         TURN { }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_TRACE);
-        MESSAGE("Ralts TRACED Foe Torchic's Blaze!");
+        MESSAGE("Ralts TRACED Foe Syakomon_x's Blaze!");
     }
 }
 
@@ -19,12 +19,12 @@ SINGLE_BATTLE_TEST("Trace copies opponents ability on switch-in")
     GIVEN {
         PLAYER(SPECIES_LOPMONX)
         PLAYER(SPECIES_RALTS) { Ability(ABILITY_TRACE); }
-        OPPONENT(SPECIES_TORCHIC) { Ability(ABILITY_BLAZE); }
+        OPPONENT(SPECIES_SYAKOMON_X) { Ability(ABILITY_BLAZE); }
     } WHEN {
         TURN { SWITCH(player, 1); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_TRACE);
-        MESSAGE("Ralts TRACED Foe Torchic's Blaze!");
+        MESSAGE("Ralts TRACED Foe Syakomon_x's Blaze!");
     }
 }
 
@@ -34,13 +34,13 @@ SINGLE_BATTLE_TEST("Trace copies opponents ability on switch-in even if opponent
         PLAYER(SPECIES_LOPMONX)
         PLAYER(SPECIES_RALTS) { Ability(ABILITY_TRACE); }
         OPPONENT(SPECIES_SUNARZAMON) { HP(1); }
-        OPPONENT(SPECIES_TORCHIC) { Ability(ABILITY_BLAZE); }
+        OPPONENT(SPECIES_SYAKOMON_X) { Ability(ABILITY_BLAZE); }
     } WHEN {
         TURN { MOVE(player, MOVE_MISTY_EXPLOSION); SEND_OUT(opponent, 1); SEND_OUT(player, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MISTY_EXPLOSION);
         ABILITY_POPUP(player, ABILITY_TRACE);
-        MESSAGE("Ralts TRACED Foe Torchic's Blaze!");
+        MESSAGE("Ralts TRACED Foe Syakomon_x's Blaze!");
     }
 }
 
@@ -55,13 +55,13 @@ DOUBLE_BATTLE_TEST("Trace copies opponents ability randomly")
     GIVEN {
         PLAYER(SPECIES_RALTS) { Ability(ABILITY_TRACE); }
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_TORCHIC) { Ability(ability1); }
-        OPPONENT(SPECIES_TORCHIC) { Ability(ability2); }
+        OPPONENT(SPECIES_SYAKOMON_X) { Ability(ability1); }
+        OPPONENT(SPECIES_SYAKOMON_X) { Ability(ability2); }
     } WHEN {
         TURN { }
     } SCENE {
         ABILITY_POPUP(playerLeft, ABILITY_TRACE);
-        MESSAGE("Ralts TRACED Foe Torchic's Blaze!");
+        MESSAGE("Ralts TRACED Foe Syakomon_x's Blaze!");
     }
 }
 
@@ -70,12 +70,12 @@ SINGLE_BATTLE_TEST("Trace will copy an opponent's ability whenever it has the ch
     GIVEN {
         PLAYER(SPECIES_RALTS) { Ability(ABILITY_TRACE); }
         OPPONENT(SPECIES_CHERRIM) { Ability(ABILITY_FLOWER_GIFT); }
-        OPPONENT(SPECIES_TORCHIC) { Ability(ABILITY_BLAZE); }
+        OPPONENT(SPECIES_SYAKOMON_X) { Ability(ABILITY_BLAZE); }
     } WHEN {
         TURN { SWITCH(opponent, 1); }
     } SCENE {
         // TURN 2
         ABILITY_POPUP(player, ABILITY_TRACE);
-        MESSAGE("Ralts TRACED Foe Torchic's Blaze!");
+        MESSAGE("Ralts TRACED Foe Syakomon_x's Blaze!");
     }
 }

@@ -3443,8 +3443,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(SyakomonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SUNARZAMON
 
-#if P_FAMILY_TORCHIC
-static const union AnimCmd sAnim_Torchic_1[] =
+#if P_FAMILY_SYAKOMON_X
+static const union AnimCmd sAnim_Syakomon_x_1[] =
 {
     ANIMCMD_FRAME(0, 7),
     ANIMCMD_FRAME(1, 4),
@@ -3477,7 +3477,7 @@ static const union AnimCmd sAnim_Blaziken_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(BlazikenMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_TORCHIC
+#endif //P_FAMILY_SYAKOMON_X
 
 #if P_FAMILY_MUDKIP
 static const union AnimCmd sAnim_Mudkip_1[] =
@@ -11013,14 +11013,14 @@ SINGLE_ANIMATION(Syakomon);
 SINGLE_ANIMATION(SyakomonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SUNARZAMON
-#if P_FAMILY_TORCHIC
-SINGLE_ANIMATION(Torchic);
+#if P_FAMILY_SYAKOMON_X
+SINGLE_ANIMATION(Syakomon_x);
 SINGLE_ANIMATION(Combusken);
 SINGLE_ANIMATION(Blaziken);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(BlazikenMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_TORCHIC
+#endif //P_FAMILY_SYAKOMON_X
 #if P_FAMILY_MUDKIP
 SINGLE_ANIMATION(Mudkip);
 SINGLE_ANIMATION(Marshtomp);

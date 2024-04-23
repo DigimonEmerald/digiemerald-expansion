@@ -228,8 +228,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SUNARZAMON
 
-#if P_FAMILY_TORCHIC
-    [SPECIES_TORCHIC] =
+#if P_FAMILY_SYAKOMON_X
+    [SPECIES_SYAKOMON_X] =
     {
         .baseHP        = 45,
         .baseAttack    = 60,
@@ -249,39 +249,39 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_SPEED_BOOST },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Torchic"),
-        .cryId = CRY_TORCHIC,
-        .natDexNum = NATIONAL_DEX_TORCHIC,
+        .speciesName = _("Syakomon_x"),
+        .cryId = CRY_SYAKOMON_X,
+        .natDexNum = NATIONAL_DEX_SYAKOMON_X,
         .categoryName = _("Chick"),
         .height = 4,
         .weight = 25,
         .description = COMPOUND_STRING(
             "If attacked, it strikes back by spitting\n"
             "balls of fire it forms in its stomach.\n"
-            "A Torchic dislikes darkness because it\n"
+            "A Syakomon_x dislikes darkness because it\n"
             "can't see its surroundings."),
         .pokemonScale = 566,
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Torchic,
+        .frontPic = gMonFrontPic_Syakomon_x,
         .frontPicSize = MON_COORDS_SIZE(32, 48),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Torchic,
+        .frontAnimFrames = sAnims_Syakomon_x,
         .frontAnimId = ANIM_V_JUMPS_SMALL,
-        .backPic = gMonBackPic_Torchic,
-        .backPicFemale = gMonBackPic_TorchicF,
+        .backPic = gMonBackPic_Syakomon_x,
+        .backPicFemale = gMonBackPic_Syakomon_xF,
         .backPicSize = MON_COORDS_SIZE(40, 48),
         .backPicSizeFemale = MON_COORDS_SIZE(40, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Torchic,
-        .shinyPalette = gMonShinyPalette_Torchic,
-        .iconSprite = gMonIcon_Torchic,
+        .palette = gMonPalette_Syakomon_x,
+        .shinyPalette = gMonShinyPalette_Syakomon_x,
+        .iconSprite = gMonIcon_Syakomon_x,
         .iconPalIndex = 0,
-        FOOTPRINT(Torchic)
-        .levelUpLearnset = sTorchicLevelUpLearnset,
-        .teachableLearnset = sTorchicTeachableLearnset,
+        FOOTPRINT(Syakomon_x)
+        .levelUpLearnset = sSyakomon_xLevelUpLearnset,
+        .teachableLearnset = sSyakomon_xTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_COMBUSKEN}),
     },
 
@@ -463,7 +463,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .formChangeTable = sBlazikenFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_TORCHIC
+#endif //P_FAMILY_SYAKOMON_X
 
 #if P_FAMILY_MUDKIP
     [SPECIES_MUDKIP] =
