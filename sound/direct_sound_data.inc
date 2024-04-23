@@ -2040,13 +2040,13 @@ Cry_Swimmon::
 	.incbin "sound/direct_sound_samples/cries/swimmon.bin"
 
 	.align 2
-Cry_Sceptile::
-	.incbin "sound/direct_sound_samples/cries/sceptile.bin"
+Cry_Syakomon::
+	.incbin "sound/direct_sound_samples/cries/syakomon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_SceptileMega::
-	.incbin "sound/direct_sound_samples/cries/sceptile_mega.bin"
+Cry_SyakomonMega::
+	.incbin "sound/direct_sound_samples/cries/syakomon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SUNARZAMON
 

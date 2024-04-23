@@ -3923,21 +3923,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Swimmon[] = INCBIN_U8("graphics/pokemon/swimmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Sceptile[] = INCBIN_U32("graphics/pokemon/sceptile/anim_front.4bpp.lz");
-    const u32 gMonPalette_Sceptile[] = INCBIN_U32("graphics/pokemon/sceptile/normal.gbapal.lz");
-    const u32 gMonBackPic_Sceptile[] = INCBIN_U32("graphics/pokemon/sceptile/back.4bpp.lz");
-    const u32 gMonShinyPalette_Sceptile[] = INCBIN_U32("graphics/pokemon/sceptile/shiny.gbapal.lz");
-    const u8 gMonIcon_Sceptile[] = INCBIN_U8("graphics/pokemon/sceptile/icon.4bpp");
+    const u32 gMonFrontPic_Syakomon[] = INCBIN_U32("graphics/pokemon/syakomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Syakomon[] = INCBIN_U32("graphics/pokemon/syakomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Syakomon[] = INCBIN_U32("graphics/pokemon/syakomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Syakomon[] = INCBIN_U32("graphics/pokemon/syakomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Syakomon[] = INCBIN_U8("graphics/pokemon/syakomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Sceptile[] = INCBIN_U8("graphics/pokemon/sceptile/footprint.1bpp");
+    const u8 gMonFootprint_Syakomon[] = INCBIN_U8("graphics/pokemon/syakomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_SceptileMega[] = INCBIN_U32("graphics/pokemon/sceptile/mega/front.4bpp.lz");
-    const u32 gMonPalette_SceptileMega[] = INCBIN_U32("graphics/pokemon/sceptile/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_SceptileMega[] = INCBIN_U32("graphics/pokemon/sceptile/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_SceptileMega[] = INCBIN_U32("graphics/pokemon/sceptile/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_SceptileMega[] = INCBIN_U8("graphics/pokemon/sceptile/mega/icon.4bpp");
+    const u32 gMonFrontPic_SyakomonMega[] = INCBIN_U32("graphics/pokemon/syakomon/mega/front.4bpp.lz");
+    const u32 gMonPalette_SyakomonMega[] = INCBIN_U32("graphics/pokemon/syakomon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_SyakomonMega[] = INCBIN_U32("graphics/pokemon/syakomon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_SyakomonMega[] = INCBIN_U32("graphics/pokemon/syakomon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_SyakomonMega[] = INCBIN_U8("graphics/pokemon/syakomon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SUNARZAMON
 

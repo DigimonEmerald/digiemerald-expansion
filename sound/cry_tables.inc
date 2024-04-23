@@ -712,9 +712,9 @@ gCryTable::
 .if P_FAMILY_SUNARZAMON == TRUE
 	cry Cry_Sunarzamon
 	cry Cry_Swimmon
-	cry Cry_Sceptile
+	cry Cry_Syakomon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_SceptileMega
+	cry Cry_SyakomonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SUNARZAMON
 .if P_FAMILY_TORCHIC == TRUE
@@ -3138,9 +3138,9 @@ gCryTable_Reverse::
 .if P_FAMILY_SUNARZAMON == TRUE
 	cry_reverse Cry_Sunarzamon
 	cry_reverse Cry_Swimmon
-	cry_reverse Cry_Sceptile
+	cry_reverse Cry_Syakomon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_SceptileMega
+	cry_reverse Cry_SyakomonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SUNARZAMON
 .if P_FAMILY_TORCHIC == TRUE

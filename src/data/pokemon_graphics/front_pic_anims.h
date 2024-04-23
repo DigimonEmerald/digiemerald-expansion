@@ -3430,7 +3430,7 @@ static const union AnimCmd sAnim_Swimmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Sceptile_1[] =
+static const union AnimCmd sAnim_Syakomon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 26),
@@ -3439,7 +3439,7 @@ static const union AnimCmd sAnim_Sceptile_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(SceptileMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(SyakomonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SUNARZAMON
 
@@ -11008,9 +11008,9 @@ SINGLE_ANIMATION(Strabimon);
 #if P_FAMILY_SUNARZAMON
 SINGLE_ANIMATION(Sunarzamon);
 SINGLE_ANIMATION(Swimmon);
-SINGLE_ANIMATION(Sceptile);
+SINGLE_ANIMATION(Syakomon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(SceptileMega);
+SINGLE_ANIMATION(SyakomonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SUNARZAMON
 #if P_FAMILY_TORCHIC

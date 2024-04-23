@@ -107,10 +107,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Swimmon)
         .levelUpLearnset = sSwimmonLevelUpLearnset,
         .teachableLearnset = sSwimmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SCEPTILE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SYAKOMON}),
     },
 
-    [SPECIES_SCEPTILE] =
+    [SPECIES_SYAKOMON] =
     {
         .baseHP        = 70,
         .baseAttack    = 85,
@@ -135,9 +135,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_UNBURDEN },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Sceptile"),
-        .cryId = CRY_SCEPTILE,
-        .natDexNum = NATIONAL_DEX_SCEPTILE,
+        .speciesName = _("Syakomon"),
+        .cryId = CRY_SYAKOMON,
+        .natDexNum = NATIONAL_DEX_SYAKOMON,
         .categoryName = _("Forest"),
         .height = 17,
         .weight = 522,
@@ -150,28 +150,28 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = -1,
         .trainerScale = 275,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_Sceptile,
+        .frontPic = gMonFrontPic_Syakomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Sceptile,
+        .frontAnimFrames = sAnims_Syakomon,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Sceptile,
+        .backPic = gMonBackPic_Syakomon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Sceptile,
-        .shinyPalette = gMonShinyPalette_Sceptile,
-        .iconSprite = gMonIcon_Sceptile,
+        .palette = gMonPalette_Syakomon,
+        .shinyPalette = gMonShinyPalette_Syakomon,
+        .iconSprite = gMonIcon_Syakomon,
         .iconPalIndex = 1,
-        FOOTPRINT(Sceptile)
-        .levelUpLearnset = sSceptileLevelUpLearnset,
-        .teachableLearnset = sSceptileTeachableLearnset,
-        .formSpeciesIdTable = sSceptileFormSpeciesIdTable,
-        .formChangeTable = sSceptileFormChangeTable,
+        FOOTPRINT(Syakomon)
+        .levelUpLearnset = sSyakomonLevelUpLearnset,
+        .teachableLearnset = sSyakomonTeachableLearnset,
+        .formSpeciesIdTable = sSyakomonFormSpeciesIdTable,
+        .formChangeTable = sSyakomonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_SCEPTILE_MEGA] =
+    [SPECIES_SYAKOMON_MEGA] =
     {
         .baseHP        = 70,
         .baseAttack    = 110,
@@ -190,40 +190,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_LIGHTNING_ROD, ABILITY_LIGHTNING_ROD },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Sceptile"),
-        .cryId = CRY_SCEPTILE_MEGA,
-        .natDexNum = NATIONAL_DEX_SCEPTILE,
+        .speciesName = _("Syakomon"),
+        .cryId = CRY_SYAKOMON_MEGA,
+        .natDexNum = NATIONAL_DEX_SYAKOMON,
         .categoryName = _("Forest"),
         .height = 19,
         .weight = 552,
         .description = COMPOUND_STRING(
             "Thanks to the power in its quick legs,\n"
-            "Mega Sceptile can be on its opponent in a\n"
+            "Mega Syakomon can be on its opponent in a\n"
             "flash. It can cut off a portion of its tail\n"
             "to fire it like a missile at an opponent."),
         .pokemonScale = 256,
         .pokemonOffset = -1,
         .trainerScale = 275,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_SceptileMega,
+        .frontPic = gMonFrontPic_SyakomonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_SceptileMega,
+        .frontAnimFrames = sAnims_SyakomonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_SceptileMega,
+        .backPic = gMonBackPic_SyakomonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_SceptileMega,
-        .shinyPalette = gMonShinyPalette_SceptileMega,
-        .iconSprite = gMonIcon_SceptileMega,
+        .palette = gMonPalette_SyakomonMega,
+        .shinyPalette = gMonShinyPalette_SyakomonMega,
+        .iconSprite = gMonIcon_SyakomonMega,
         .iconPalIndex = 1,
-        FOOTPRINT(Sceptile)
+        FOOTPRINT(Syakomon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sSceptileLevelUpLearnset,
-        .teachableLearnset = sSceptileTeachableLearnset,
-        .formSpeciesIdTable = sSceptileFormSpeciesIdTable,
-        .formChangeTable = sSceptileFormChangeTable,
+        .levelUpLearnset = sSyakomonLevelUpLearnset,
+        .teachableLearnset = sSyakomonTeachableLearnset,
+        .formSpeciesIdTable = sSyakomonFormSpeciesIdTable,
+        .formChangeTable = sSyakomonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SUNARZAMON

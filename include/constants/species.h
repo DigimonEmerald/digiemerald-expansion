@@ -255,7 +255,7 @@
 #define SPECIES_STRABIMON                                  251
 #define SPECIES_SUNARZAMON                                 252
 #define SPECIES_SWIMMON                                 253
-#define SPECIES_SCEPTILE                                254
+#define SPECIES_SYAKOMON                                254
 #define SPECIES_TORCHIC                                 255
 #define SPECIES_COMBUSKEN                               256
 #define SPECIES_BLAZIKEN                                257
@@ -985,7 +985,7 @@
 #define SPECIES_MUCHOMON_MEGA                          924
 #define SPECIES_POMUMON_MEGA                           925
 #define SPECIES_SPADAMON_MEGA                          926
-#define SPECIES_SCEPTILE_MEGA                           927
+#define SPECIES_SYAKOMON_MEGA                           927
 #define SPECIES_BLAZIKEN_MEGA                           928
 #define SPECIES_SWAMPERT_MEGA                           929
 #define SPECIES_GARDEVOIR_MEGA                          930

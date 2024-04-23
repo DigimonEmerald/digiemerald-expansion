@@ -722,10 +722,10 @@ static const u16 sSpadamonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_SOLARMON
 
 #if P_FAMILY_SUNARZAMON
-static const u16 sSceptileFormSpeciesIdTable[] = {
-    SPECIES_SCEPTILE,
+static const u16 sSyakomonFormSpeciesIdTable[] = {
+    SPECIES_SYAKOMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_SCEPTILE_MEGA,
+    SPECIES_SYAKOMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
