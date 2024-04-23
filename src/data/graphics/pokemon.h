@@ -3965,24 +3965,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_TapirmonF[] = INCBIN_U32("graphics/pokemon/tapirmon/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_TapirmonF[] = INCBIN_U32("graphics/pokemon/tapirmon/backf.4bpp.lz");
 
-    const u32 gMonFrontPic_Blaziken[] = INCBIN_U32("graphics/pokemon/blaziken/anim_front.4bpp.lz");
-    const u32 gMonPalette_Blaziken[] = INCBIN_U32("graphics/pokemon/blaziken/normal.gbapal.lz");
-    const u32 gMonBackPic_Blaziken[] = INCBIN_U32("graphics/pokemon/blaziken/back.4bpp.lz");
-    const u32 gMonShinyPalette_Blaziken[] = INCBIN_U32("graphics/pokemon/blaziken/shiny.gbapal.lz");
-    const u8 gMonIcon_Blaziken[] = INCBIN_U8("graphics/pokemon/blaziken/icon.4bpp");
+    const u32 gMonFrontPic_Tentomon[] = INCBIN_U32("graphics/pokemon/tentomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Tentomon[] = INCBIN_U32("graphics/pokemon/tentomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Tentomon[] = INCBIN_U32("graphics/pokemon/tentomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Tentomon[] = INCBIN_U32("graphics/pokemon/tentomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Tentomon[] = INCBIN_U8("graphics/pokemon/tentomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Blaziken[] = INCBIN_U8("graphics/pokemon/blaziken/footprint.1bpp");
+    const u8 gMonFootprint_Tentomon[] = INCBIN_U8("graphics/pokemon/tentomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_BlazikenF[] = INCBIN_U32("graphics/pokemon/blaziken/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_BlazikenF[] = INCBIN_U32("graphics/pokemon/blaziken/backf.4bpp.lz");
+    const u32 gMonFrontPic_TentomonF[] = INCBIN_U32("graphics/pokemon/tentomon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_TentomonF[] = INCBIN_U32("graphics/pokemon/tentomon/backf.4bpp.lz");
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_BlazikenMega[] = INCBIN_U32("graphics/pokemon/blaziken/mega/front.4bpp.lz");
-    const u32 gMonPalette_BlazikenMega[] = INCBIN_U32("graphics/pokemon/blaziken/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_BlazikenMega[] = INCBIN_U32("graphics/pokemon/blaziken/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_BlazikenMega[] = INCBIN_U32("graphics/pokemon/blaziken/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_BlazikenMega[] = INCBIN_U8("graphics/pokemon/blaziken/mega/icon.4bpp");
+    const u32 gMonFrontPic_TentomonMega[] = INCBIN_U32("graphics/pokemon/tentomon/mega/front.4bpp.lz");
+    const u32 gMonPalette_TentomonMega[] = INCBIN_U32("graphics/pokemon/tentomon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_TentomonMega[] = INCBIN_U32("graphics/pokemon/tentomon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_TentomonMega[] = INCBIN_U32("graphics/pokemon/tentomon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_TentomonMega[] = INCBIN_U8("graphics/pokemon/tentomon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SYAKOMON_X
 

@@ -4975,7 +4975,7 @@ static const struct LevelUpMove sTapirmonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sBlazikenLevelUpLearnset[] = {
+static const struct LevelUpMove sTentomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FIRE_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),

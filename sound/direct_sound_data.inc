@@ -2060,13 +2060,13 @@ Cry_Tapirmon::
 	.incbin "sound/direct_sound_samples/cries/tapirmon.bin"
 
 	.align 2
-Cry_Blaziken::
-	.incbin "sound/direct_sound_samples/cries/blaziken.bin"
+Cry_Tentomon::
+	.incbin "sound/direct_sound_samples/cries/tentomon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_BlazikenMega::
-	.incbin "sound/direct_sound_samples/cries/blaziken_mega.bin"
+Cry_TentomonMega::
+	.incbin "sound/direct_sound_samples/cries/tentomon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SYAKOMON_X
 

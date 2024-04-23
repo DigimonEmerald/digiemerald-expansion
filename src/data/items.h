@@ -4977,14 +4977,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_BLAZIKENITE] =
+    [ITEM_TENTOMONITE] =
     {
-        .name = _("Blazikenite"),
+        .name = _("Tentomonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Blaziken to Mega\n"
+            "Tentomon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

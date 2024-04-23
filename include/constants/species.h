@@ -258,7 +258,7 @@
 #define SPECIES_SYAKOMON                                254
 #define SPECIES_SYAKOMON_X                                 255
 #define SPECIES_TAPIRMON                               256
-#define SPECIES_BLAZIKEN                                257
+#define SPECIES_TENTOMON                                257
 #define SPECIES_MUDKIP                                  258
 #define SPECIES_MARSHTOMP                               259
 #define SPECIES_SWAMPERT                                260
@@ -986,7 +986,7 @@
 #define SPECIES_POMUMON_MEGA                           925
 #define SPECIES_SPADAMON_MEGA                          926
 #define SPECIES_SYAKOMON_MEGA                           927
-#define SPECIES_BLAZIKEN_MEGA                           928
+#define SPECIES_TENTOMON_MEGA                           928
 #define SPECIES_SWAMPERT_MEGA                           929
 #define SPECIES_GARDEVOIR_MEGA                          930
 #define SPECIES_SABLEYE_MEGA                            931

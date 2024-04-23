@@ -3464,7 +3464,7 @@ static const union AnimCmd sAnim_Tapirmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Blaziken_1[] =
+static const union AnimCmd sAnim_Tentomon_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 25),
@@ -3475,7 +3475,7 @@ static const union AnimCmd sAnim_Blaziken_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(BlazikenMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(TentomonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SYAKOMON_X
 
@@ -11016,9 +11016,9 @@ SINGLE_ANIMATION(SyakomonMega);
 #if P_FAMILY_SYAKOMON_X
 SINGLE_ANIMATION(Syakomon_x);
 SINGLE_ANIMATION(Tapirmon);
-SINGLE_ANIMATION(Blaziken);
+SINGLE_ANIMATION(Tentomon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(BlazikenMega);
+SINGLE_ANIMATION(TentomonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SYAKOMON_X
 #if P_FAMILY_MUDKIP
