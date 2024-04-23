@@ -2084,8 +2084,8 @@ const u16 gEggMoves[] = {
         MOVE_IRON_TAIL),
 #endif //P_FAMILY_SOLARMON
 
-#if P_FAMILY_TREECKO
-    egg_moves(TREECKO,
+#if P_FAMILY_SUNARZAMON
+    egg_moves(SUNARZAMON,
         MOVE_CRUNCH,
         MOVE_MUD_SPORT,
         MOVE_ENDEAVOR,
@@ -2102,7 +2102,7 @@ const u16 gEggMoves[] = {
         MOVE_BULLET_SEED,
         MOVE_NATURAL_GIFT,
         MOVE_GRASSY_TERRAIN),
-#endif //P_FAMILY_TREECKO
+#endif //P_FAMILY_SUNARZAMON
 
 #if P_FAMILY_TORCHIC
     egg_moves(TORCHIC,

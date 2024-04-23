@@ -12,7 +12,7 @@ DOUBLE_BATTLE_TEST("Quash-affected target will move last in the priority bracket
         PLAYER(SPECIES_VOLBEAT) { Speed(10); Ability(ABILITY_PRANKSTER); }
         PLAYER(SPECIES_LOPMONX) { Speed(30); }
         OPPONENT(SPECIES_TORCHIC) { Speed(20); }
-        OPPONENT(SPECIES_TREECKO) { Speed(40); }
+        OPPONENT(SPECIES_SUNARZAMON) { Speed(40); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_QUASH, target: opponentRight); }
     } SCENE {
@@ -31,7 +31,7 @@ DOUBLE_BATTLE_TEST("Quash is not affected by dynamic speed")
         PLAYER(SPECIES_VOLBEAT) { Speed(10); Ability(ABILITY_PRANKSTER); }
         PLAYER(SPECIES_LOPMONX) { Speed(30); }
         OPPONENT(SPECIES_TORCHIC) { Speed(50); }
-        OPPONENT(SPECIES_TREECKO) { Speed(40); }
+        OPPONENT(SPECIES_SUNARZAMON) { Speed(40); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_QUASH, target: opponentRight);
                MOVE(opponentLeft, MOVE_TAILWIND);

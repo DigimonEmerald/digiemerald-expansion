@@ -6639,8 +6639,8 @@ static const struct LevelUpMove sStrabimonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_STRABIMON
 
-#if P_FAMILY_TREECKO
-static const struct LevelUpMove sTreeckoLevelUpLearnset[] = {
+#if P_FAMILY_SUNARZAMON
+static const struct LevelUpMove sSunarzamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 6, MOVE_ABSORB),
@@ -6694,7 +6694,7 @@ static const struct LevelUpMove sSceptileLevelUpLearnset[] = {
     LEVEL_UP_MOVE(67, MOVE_LEAF_STORM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_TREECKO
+#endif //P_FAMILY_SUNARZAMON
 
 #if P_FAMILY_TORCHIC
 static const struct LevelUpMove sTorchicLevelUpLearnset[] = {

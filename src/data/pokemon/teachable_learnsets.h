@@ -12372,8 +12372,8 @@ static const u16 sStrabimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_STRABIMON
 
-#if P_FAMILY_TREECKO
-static const u16 sTreeckoTeachableLearnset[] = {
+#if P_FAMILY_SUNARZAMON
+static const u16 sSunarzamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -12505,7 +12505,7 @@ static const u16 sSceptileTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TREECKO
+#endif //P_FAMILY_SUNARZAMON
 
 #if P_FAMILY_TORCHIC
 static const u16 sTorchicTeachableLearnset[] = {

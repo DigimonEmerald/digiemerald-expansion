@@ -3409,8 +3409,8 @@ static const union AnimCmd sAnim_Strabimon_1[] =
 };
 #endif //P_FAMILY_STRABIMON
 
-#if P_FAMILY_TREECKO
-static const union AnimCmd sAnim_Treecko_1[] =
+#if P_FAMILY_SUNARZAMON
+static const union AnimCmd sAnim_Sunarzamon_1[] =
 {
     ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(1, 15),
@@ -3441,7 +3441,7 @@ static const union AnimCmd sAnim_Sceptile_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(SceptileMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_TREECKO
+#endif //P_FAMILY_SUNARZAMON
 
 #if P_FAMILY_TORCHIC
 static const union AnimCmd sAnim_Torchic_1[] =
@@ -11005,14 +11005,14 @@ SINGLE_ANIMATION(Starmon_2010);
 #if P_FAMILY_STRABIMON
 SINGLE_ANIMATION(Strabimon);
 #endif //P_FAMILY_STRABIMON
-#if P_FAMILY_TREECKO
-SINGLE_ANIMATION(Treecko);
+#if P_FAMILY_SUNARZAMON
+SINGLE_ANIMATION(Sunarzamon);
 SINGLE_ANIMATION(Grovyle);
 SINGLE_ANIMATION(Sceptile);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(SceptileMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_TREECKO
+#endif //P_FAMILY_SUNARZAMON
 #if P_FAMILY_TORCHIC
 SINGLE_ANIMATION(Torchic);
 SINGLE_ANIMATION(Combusken);

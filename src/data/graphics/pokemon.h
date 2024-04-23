@@ -3904,14 +3904,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_STRABIMON
 
-#if P_FAMILY_TREECKO
-    const u32 gMonFrontPic_Treecko[] = INCBIN_U32("graphics/pokemon/treecko/anim_front.4bpp.lz");
-    const u32 gMonPalette_Treecko[] = INCBIN_U32("graphics/pokemon/treecko/normal.gbapal.lz");
-    const u32 gMonBackPic_Treecko[] = INCBIN_U32("graphics/pokemon/treecko/back.4bpp.lz");
-    const u32 gMonShinyPalette_Treecko[] = INCBIN_U32("graphics/pokemon/treecko/shiny.gbapal.lz");
-    const u8 gMonIcon_Treecko[] = INCBIN_U8("graphics/pokemon/treecko/icon.4bpp");
+#if P_FAMILY_SUNARZAMON
+    const u32 gMonFrontPic_Sunarzamon[] = INCBIN_U32("graphics/pokemon/sunarzamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Sunarzamon[] = INCBIN_U32("graphics/pokemon/sunarzamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Sunarzamon[] = INCBIN_U32("graphics/pokemon/sunarzamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Sunarzamon[] = INCBIN_U32("graphics/pokemon/sunarzamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Sunarzamon[] = INCBIN_U8("graphics/pokemon/sunarzamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Treecko[] = INCBIN_U8("graphics/pokemon/treecko/footprint.1bpp");
+    const u8 gMonFootprint_Sunarzamon[] = INCBIN_U8("graphics/pokemon/sunarzamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Grovyle[] = INCBIN_U32("graphics/pokemon/grovyle/anim_front.4bpp.lz");
@@ -3939,7 +3939,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_SceptileMega[] = INCBIN_U32("graphics/pokemon/sceptile/mega/shiny.gbapal.lz");
     const u8 gMonIcon_SceptileMega[] = INCBIN_U8("graphics/pokemon/sceptile/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_TREECKO
+#endif //P_FAMILY_SUNARZAMON
 
 #if P_FAMILY_TORCHIC
     const u32 gMonFrontPic_Torchic[] = INCBIN_U32("graphics/pokemon/torchic/anim_front.4bpp.lz");

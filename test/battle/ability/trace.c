@@ -33,7 +33,7 @@ SINGLE_BATTLE_TEST("Trace copies opponents ability on switch-in even if opponent
     GIVEN {
         PLAYER(SPECIES_LOPMONX)
         PLAYER(SPECIES_RALTS) { Ability(ABILITY_TRACE); }
-        OPPONENT(SPECIES_TREECKO) { HP(1); }
+        OPPONENT(SPECIES_SUNARZAMON) { HP(1); }
         OPPONENT(SPECIES_TORCHIC) { Ability(ABILITY_BLAZE); }
     } WHEN {
         TURN { MOVE(player, MOVE_MISTY_EXPLOSION); SEND_OUT(opponent, 1); SEND_OUT(player, 1); }

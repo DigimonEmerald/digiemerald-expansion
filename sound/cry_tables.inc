@@ -709,14 +709,14 @@ gCryTable::
 .if P_FAMILY_STRABIMON == TRUE
 	cry Cry_Strabimon
 .endif @ P_FAMILY_STRABIMON
-.if P_FAMILY_TREECKO == TRUE
-	cry Cry_Treecko
+.if P_FAMILY_SUNARZAMON == TRUE
+	cry Cry_Sunarzamon
 	cry Cry_Grovyle
 	cry Cry_Sceptile
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_SceptileMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_TREECKO
+.endif @ P_FAMILY_SUNARZAMON
 .if P_FAMILY_TORCHIC == TRUE
 	cry Cry_Torchic
 	cry Cry_Combusken
@@ -3135,14 +3135,14 @@ gCryTable_Reverse::
 .if P_FAMILY_STRABIMON == TRUE
 	cry_reverse Cry_Strabimon
 .endif @ P_FAMILY_STRABIMON
-.if P_FAMILY_TREECKO == TRUE
-	cry_reverse Cry_Treecko
+.if P_FAMILY_SUNARZAMON == TRUE
+	cry_reverse Cry_Sunarzamon
 	cry_reverse Cry_Grovyle
 	cry_reverse Cry_Sceptile
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_SceptileMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_TREECKO
+.endif @ P_FAMILY_SUNARZAMON
 .if P_FAMILY_TORCHIC == TRUE
 	cry_reverse Cry_Torchic
 	cry_reverse Cry_Combusken

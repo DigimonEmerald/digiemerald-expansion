@@ -2030,10 +2030,10 @@ Cry_Strabimon::
 	.incbin "sound/direct_sound_samples/cries/strabimon.bin"
 .endif @ P_FAMILY_STRABIMON
 
-.if P_FAMILY_TREECKO == TRUE
+.if P_FAMILY_SUNARZAMON == TRUE
 	.align 2
-Cry_Treecko::
-	.incbin "sound/direct_sound_samples/cries/treecko.bin"
+Cry_Sunarzamon::
+	.incbin "sound/direct_sound_samples/cries/sunarzamon.bin"
 
 	.align 2
 Cry_Grovyle::
@@ -2048,7 +2048,7 @@ Cry_Sceptile::
 Cry_SceptileMega::
 	.incbin "sound/direct_sound_samples/cries/sceptile_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_TREECKO
+.endif @ P_FAMILY_SUNARZAMON
 
 .if P_FAMILY_TORCHIC == TRUE
 	.align 2

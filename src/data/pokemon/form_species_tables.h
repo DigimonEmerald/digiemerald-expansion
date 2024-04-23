@@ -721,7 +721,7 @@ static const u16 sSpadamonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_SOLARMON
 
-#if P_FAMILY_TREECKO
+#if P_FAMILY_SUNARZAMON
 static const u16 sSceptileFormSpeciesIdTable[] = {
     SPECIES_SCEPTILE,
 #if P_MEGA_EVOLUTIONS
@@ -729,7 +729,7 @@ static const u16 sSceptileFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_TREECKO
+#endif //P_FAMILY_SUNARZAMON
 
 #if P_FAMILY_TORCHIC
 static const u16 sBlazikenFormSpeciesIdTable[] = {

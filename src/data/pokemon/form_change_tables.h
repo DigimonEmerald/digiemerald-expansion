@@ -264,14 +264,14 @@ static const struct FormChange sSpadamonFormChangeTable[] = {
 };
 #endif //P_FAMILY_SOLARMON
 
-#if P_FAMILY_TREECKO
+#if P_FAMILY_SUNARZAMON
 static const struct FormChange sSceptileFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_SCEPTILE_MEGA, ITEM_SCEPTILITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_TREECKO
+#endif //P_FAMILY_SUNARZAMON
 
 #if P_FAMILY_TORCHIC
 static const struct FormChange sBlazikenFormChangeTable[] = {

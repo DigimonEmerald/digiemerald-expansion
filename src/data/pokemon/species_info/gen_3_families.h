@@ -3,8 +3,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 {
 #endif
 
-#if P_FAMILY_TREECKO
-    [SPECIES_TREECKO] =
+#if P_FAMILY_SUNARZAMON
+    [SPECIES_SUNARZAMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 45,
@@ -23,9 +23,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_UNBURDEN },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Treecko"),
-        .cryId = CRY_TREECKO,
-        .natDexNum = NATIONAL_DEX_TREECKO,
+        .speciesName = _("Sunarzamon"),
+        .cryId = CRY_SUNARZAMON,
+        .natDexNum = NATIONAL_DEX_SUNARZAMON,
         .categoryName = _("Wood Gecko"),
         .height = 5,
         .weight = 50,
@@ -38,22 +38,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Treecko,
+        .frontPic = gMonFrontPic_Sunarzamon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Treecko,
+        .frontAnimFrames = sAnims_Sunarzamon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Treecko,
+        .backPic = gMonBackPic_Sunarzamon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Treecko,
-        .shinyPalette = gMonShinyPalette_Treecko,
-        .iconSprite = gMonIcon_Treecko,
+        .palette = gMonPalette_Sunarzamon,
+        .shinyPalette = gMonShinyPalette_Sunarzamon,
+        .iconSprite = gMonIcon_Sunarzamon,
         .iconPalIndex = 1,
-        FOOTPRINT(Treecko)
-        .levelUpLearnset = sTreeckoLevelUpLearnset,
-        .teachableLearnset = sTreeckoTeachableLearnset,
+        FOOTPRINT(Sunarzamon)
+        .levelUpLearnset = sSunarzamonLevelUpLearnset,
+        .teachableLearnset = sSunarzamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_GROVYLE}),
     },
 
@@ -226,7 +226,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .formChangeTable = sSceptileFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_TREECKO
+#endif //P_FAMILY_SUNARZAMON
 
 #if P_FAMILY_TORCHIC
     [SPECIES_TORCHIC] =

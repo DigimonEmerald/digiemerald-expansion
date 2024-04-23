@@ -186,7 +186,7 @@
 #define P_FAMILY_STARMON_2010                   P_GEN_2_POKEMON
 #define P_FAMILY_STRABIMON                  P_GEN_2_POKEMON
 
-#define P_FAMILY_TREECKO                 P_GEN_3_POKEMON
+#define P_FAMILY_SUNARZAMON                 P_GEN_3_POKEMON
 #define P_FAMILY_TORCHIC                 P_GEN_3_POKEMON
 #define P_FAMILY_MUDKIP                  P_GEN_3_POKEMON
 #define P_FAMILY_POOCHYENA               P_GEN_3_POKEMON

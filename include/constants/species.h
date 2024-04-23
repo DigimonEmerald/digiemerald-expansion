@@ -253,7 +253,7 @@
 #define SPECIES_SPARROWMON                                   249
 #define SPECIES_STARMON_2010                                   250
 #define SPECIES_STRABIMON                                  251
-#define SPECIES_TREECKO                                 252
+#define SPECIES_SUNARZAMON                                 252
 #define SPECIES_GROVYLE                                 253
 #define SPECIES_SCEPTILE                                254
 #define SPECIES_TORCHIC                                 255
