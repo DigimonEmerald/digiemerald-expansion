@@ -4003,7 +4003,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                 {
                                     [0] =
                                         {
-                                            .species = SPECIES_SWELLOW,
+                                            .species = SPECIES_ANGELAMON,
                                             .heldItem = ITEM_LEFTOVERS,
                                             .moves = {MOVE_AERIAL_ACE, MOVE_AGILITY, MOVE_FACADE, MOVE_ATTRACT},
                                             .hpEV = 252,
@@ -4018,7 +4018,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x3,
-                                            .nickname = _("SWELLOW"),
+                                            .nickname = _("ANGELAMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [1] =

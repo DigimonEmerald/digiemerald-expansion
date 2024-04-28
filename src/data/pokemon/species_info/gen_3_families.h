@@ -1807,10 +1807,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Allomon_x)
         .levelUpLearnset = sAllomon_xLevelUpLearnset,
         .teachableLearnset = sAllomon_xTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_SWELLOW}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_ANGELAMON}),
     },
 
-    [SPECIES_SWELLOW] =
+    [SPECIES_ANGELAMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 85,
@@ -1835,14 +1835,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_SCRAPPY },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Swellow"),
-        .cryId = CRY_SWELLOW,
-        .natDexNum = NATIONAL_DEX_SWELLOW,
+        .speciesName = _("Angelamon"),
+        .cryId = CRY_ANGELAMON,
+        .natDexNum = NATIONAL_DEX_ANGELAMON,
         .categoryName = _("Swallow"),
         .height = 7,
         .weight = 198,
         .description = COMPOUND_STRING(
-            "A Swellow dives upon prey from far above.\n"
+            "A Angelamon dives upon prey from far above.\n"
             "It never misses its targets. It takes to\n"
             "the skies in search of lands with a warm\n"
             "climate."),
@@ -1850,22 +1850,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Swellow,
+        .frontPic = gMonFrontPic_Angelamon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_Swellow,
+        .frontAnimFrames = sAnims_Angelamon,
         .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
-        .backPic = gMonBackPic_Swellow,
+        .backPic = gMonBackPic_Angelamon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Swellow,
-        .shinyPalette = gMonShinyPalette_Swellow,
-        .iconSprite = gMonIcon_Swellow,
+        .palette = gMonPalette_Angelamon,
+        .shinyPalette = gMonShinyPalette_Angelamon,
+        .iconSprite = gMonIcon_Angelamon,
         .iconPalIndex = 2,
-        FOOTPRINT(Swellow)
-        .levelUpLearnset = sSwellowLevelUpLearnset,
-        .teachableLearnset = sSwellowTeachableLearnset,
+        FOOTPRINT(Angelamon)
+        .levelUpLearnset = sAngelamonLevelUpLearnset,
+        .teachableLearnset = sAngelamonTeachableLearnset,
     },
 #endif //P_FAMILY_ALLOMON_X
 

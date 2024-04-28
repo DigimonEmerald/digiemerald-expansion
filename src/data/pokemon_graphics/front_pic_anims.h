@@ -3714,7 +3714,7 @@ static const union AnimCmd sAnim_Allomon_x_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Swellow_1[] =
+static const union AnimCmd sAnim_Angelamon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 18),
@@ -11061,7 +11061,7 @@ SINGLE_ANIMATION(Allomon);
 #endif //P_FAMILY_AIRDRAMON
 #if P_FAMILY_ALLOMON_X
 SINGLE_ANIMATION(Allomon_x);
-SINGLE_ANIMATION(Swellow);
+SINGLE_ANIMATION(Angelamon);
 #endif //P_FAMILY_ALLOMON_X
 #if P_FAMILY_WINGULL
 SINGLE_ANIMATION(Wingull);

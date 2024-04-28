@@ -4216,13 +4216,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Allomon_x[] = INCBIN_U8("graphics/pokemon/allomon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Swellow[] = INCBIN_U32("graphics/pokemon/swellow/anim_front.4bpp.lz");
-    const u32 gMonPalette_Swellow[] = INCBIN_U32("graphics/pokemon/swellow/normal.gbapal.lz");
-    const u32 gMonBackPic_Swellow[] = INCBIN_U32("graphics/pokemon/swellow/back.4bpp.lz");
-    const u32 gMonShinyPalette_Swellow[] = INCBIN_U32("graphics/pokemon/swellow/shiny.gbapal.lz");
-    const u8 gMonIcon_Swellow[] = INCBIN_U8("graphics/pokemon/swellow/icon.4bpp");
+    const u32 gMonFrontPic_Angelamon[] = INCBIN_U32("graphics/pokemon/angelamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Angelamon[] = INCBIN_U32("graphics/pokemon/angelamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Angelamon[] = INCBIN_U32("graphics/pokemon/angelamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Angelamon[] = INCBIN_U32("graphics/pokemon/angelamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Angelamon[] = INCBIN_U8("graphics/pokemon/angelamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Swellow[] = INCBIN_U8("graphics/pokemon/swellow/footprint.1bpp");
+    const u8 gMonFootprint_Angelamon[] = INCBIN_U8("graphics/pokemon/angelamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_ALLOMON_X
 

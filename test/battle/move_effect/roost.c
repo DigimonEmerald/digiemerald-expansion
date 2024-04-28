@@ -272,20 +272,20 @@ SINGLE_BATTLE_TEST("Roost prevents a Flying-type user from being protected by De
 SINGLE_BATTLE_TEST("Roost does not undo other type-changing effects at the end of the turn")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_SWELLOW].types[0] == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_SWELLOW].types[1] == TYPE_FLYING);
-        PLAYER(SPECIES_SWELLOW) { HP(1); }
+        ASSUME(gSpeciesInfo[SPECIES_ANGELAMON].types[0] == TYPE_NORMAL);
+        ASSUME(gSpeciesInfo[SPECIES_ANGELAMON].types[1] == TYPE_FLYING);
+        PLAYER(SPECIES_ANGELAMON) { HP(1); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST); MOVE(opponent, MOVE_SOAK); }
         TURN { MOVE(opponent, MOVE_VINE_WHIP); }
     } SCENE {
-        MESSAGE("Swellow used Roost!");
+        MESSAGE("Angelamon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Swellow regained health!");
+        MESSAGE("Angelamon regained health!");
         MESSAGE("Foe Lopmonx used Soak!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SOAK, opponent);
-        MESSAGE("Swellow transformed into the Water type!");
+        MESSAGE("Angelamon transformed into the Water type!");
         MESSAGE("Foe Lopmonx used Vine Whip!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_VINE_WHIP, opponent);
         MESSAGE("It's super effective!");
@@ -296,17 +296,17 @@ SINGLE_BATTLE_TEST("Roost does not undo other type-changing effects at the end o
 SINGLE_BATTLE_TEST("Roost's effect is lifted after Grassy Terrain's healing")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_SWELLOW].types[0] == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_SWELLOW].types[1] == TYPE_FLYING);
-        PLAYER(SPECIES_SWELLOW) { HP(1); Ability(ABILITY_GRASSY_SURGE); }
+        ASSUME(gSpeciesInfo[SPECIES_ANGELAMON].types[0] == TYPE_NORMAL);
+        ASSUME(gSpeciesInfo[SPECIES_ANGELAMON].types[1] == TYPE_FLYING);
+        PLAYER(SPECIES_ANGELAMON) { HP(1); Ability(ABILITY_GRASSY_SURGE); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST); }
     } SCENE {
-        MESSAGE("Swellow used Roost!");
+        MESSAGE("Angelamon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Swellow regained health!");
-        MESSAGE("Swellow is healed by the grassy terrain!");
+        MESSAGE("Angelamon regained health!");
+        MESSAGE("Angelamon is healed by the grassy terrain!");
         HP_BAR(player);
     }
 }
@@ -315,11 +315,11 @@ SINGLE_BATTLE_TEST("Roost's effect is lifted after Grassy Terrain's healing")
 SINGLE_BATTLE_TEST("Roost's suppression prevents Reflect Type from copying any Flying typing")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_SWELLOW].types[0] == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_SWELLOW].types[1] == TYPE_FLYING);
+        ASSUME(gSpeciesInfo[SPECIES_ANGELAMON].types[0] == TYPE_NORMAL);
+        ASSUME(gSpeciesInfo[SPECIES_ANGELAMON].types[1] == TYPE_FLYING);
         ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[0] == TYPE_PSYCHIC);
         ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[1] == TYPE_PSYCHIC);
-        PLAYER(SPECIES_SWELLOW) { HP(1); }
+        PLAYER(SPECIES_ANGELAMON) { HP(1); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST); MOVE(opponent, MOVE_REFLECT_TYPE); }
@@ -327,21 +327,21 @@ SINGLE_BATTLE_TEST("Roost's suppression prevents Reflect Type from copying any F
         TURN { MOVE(player, MOVE_EARTHQUAKE); }
     } SCENE {
         // Turn 1: Reflect Type on Roosted Normal/Flying
-        MESSAGE("Swellow used Roost!");
+        MESSAGE("Angelamon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Swellow regained health!");
+        MESSAGE("Angelamon regained health!");
         MESSAGE("Foe Lopmonx used Reflect Type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, opponent);
-        MESSAGE("Foe Lopmonx's type changed to match the Swellow's!");
+        MESSAGE("Foe Lopmonx's type changed to match the Angelamon's!");
         // Turn 2: EQ hits, Reflect Type on non-Roosted Normal/Flying
-        MESSAGE("Swellow used Earthquake!");
+        MESSAGE("Angelamon used Earthquake!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, player);
         HP_BAR(opponent);
         MESSAGE("Foe Lopmonx used Reflect Type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, opponent);
-        MESSAGE("Foe Lopmonx's type changed to match the Swellow's!");
+        MESSAGE("Foe Lopmonx's type changed to match the Angelamon's!");
         // Turn 3: EQ has no effect
-        MESSAGE("Swellow used Earthquake!");
+        MESSAGE("Angelamon used Earthquake!");
         MESSAGE("It doesn't affect Foe Lopmonx…");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, player);

@@ -6778,7 +6778,7 @@ static const struct LevelUpMove sAllomon_xLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sSwellowLevelUpLearnset[] = {
+static const struct LevelUpMove sAngelamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PLUCK),
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),

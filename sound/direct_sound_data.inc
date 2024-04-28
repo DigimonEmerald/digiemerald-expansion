@@ -2173,8 +2173,8 @@ Cry_Allomon_x::
 	.incbin "sound/direct_sound_samples/cries/allomon_x.bin"
 
 	.align 2
-Cry_Swellow::
-	.incbin "sound/direct_sound_samples/cries/swellow.bin"
+Cry_Angelamon::
+	.incbin "sound/direct_sound_samples/cries/angelamon.bin"
 .endif @ P_FAMILY_ALLOMON_X
 
 .if P_FAMILY_WINGULL == TRUE

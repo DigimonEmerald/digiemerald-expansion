@@ -13338,7 +13338,7 @@ static const u16 sAllomon_xTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSwellowTeachableLearnset[] = {
+static const u16 sAngelamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,

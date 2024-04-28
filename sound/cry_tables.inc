@@ -763,7 +763,7 @@ gCryTable::
 .endif @ P_FAMILY_AIRDRAMON
 .if P_FAMILY_ALLOMON_X == TRUE
 	cry Cry_Allomon_x
-	cry Cry_Swellow
+	cry Cry_Angelamon
 .endif @ P_FAMILY_ALLOMON_X
 .if P_FAMILY_WINGULL == TRUE
 	cry Cry_Wingull
@@ -3189,7 +3189,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_AIRDRAMON
 .if P_FAMILY_ALLOMON_X == TRUE
 	cry_reverse Cry_Allomon_x
-	cry_reverse Cry_Swellow
+	cry_reverse Cry_Angelamon
 .endif @ P_FAMILY_ALLOMON_X
 .if P_FAMILY_WINGULL == TRUE
 	cry_reverse Cry_Wingull
