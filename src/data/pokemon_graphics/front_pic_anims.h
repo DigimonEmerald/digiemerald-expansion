@@ -3732,7 +3732,7 @@ static const union AnimCmd sAnim_Angemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Pelipper_1[] =
+static const union AnimCmd sAnim_Ankylomon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 5),
@@ -11065,7 +11065,7 @@ SINGLE_ANIMATION(Angelamon);
 #endif //P_FAMILY_ALLOMON_X
 #if P_FAMILY_ANGEMON
 SINGLE_ANIMATION(Angemon);
-SINGLE_ANIMATION(Pelipper);
+SINGLE_ANIMATION(Ankylomon);
 #endif //P_FAMILY_ANGEMON
 #if P_FAMILY_RALTS
 SINGLE_ANIMATION(Ralts);

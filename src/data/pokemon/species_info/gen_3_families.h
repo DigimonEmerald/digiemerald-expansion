@@ -1922,10 +1922,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Angemon)
         .levelUpLearnset = sAngemonLevelUpLearnset,
         .teachableLearnset = sAngemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_PELIPPER}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_ANKYLOMON}),
     },
 
-    [SPECIES_PELIPPER] =
+    [SPECIES_ANKYLOMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 50,
@@ -1951,9 +1951,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FLYING),
         .abilities = { ABILITY_KEEN_EYE, ABILITY_DRIZZLE, ABILITY_RAIN_DISH },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Pelipper"),
-        .cryId = CRY_PELIPPER,
-        .natDexNum = NATIONAL_DEX_PELIPPER,
+        .speciesName = _("Ankylomon"),
+        .cryId = CRY_ANKYLOMON,
+        .natDexNum = NATIONAL_DEX_ANKYLOMON,
         .categoryName = _("Water Bird"),
         .height = 12,
         .weight = 280,
@@ -1966,23 +1966,23 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 1,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Pelipper,
+        .frontPic = gMonFrontPic_Ankylomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Pelipper,
+        .frontAnimFrames = sAnims_Ankylomon,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 8,
-        .backPic = gMonBackPic_Pelipper,
+        .backPic = gMonBackPic_Ankylomon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Pelipper,
-        .shinyPalette = gMonShinyPalette_Pelipper,
-        .iconSprite = gMonIcon_Pelipper,
+        .palette = gMonPalette_Ankylomon,
+        .shinyPalette = gMonShinyPalette_Ankylomon,
+        .iconSprite = gMonIcon_Ankylomon,
         .iconPalIndex = 2,
-        FOOTPRINT(Pelipper)
-        .levelUpLearnset = sPelipperLevelUpLearnset,
-        .teachableLearnset = sPelipperTeachableLearnset,
+        FOOTPRINT(Ankylomon)
+        .levelUpLearnset = sAnkylomonLevelUpLearnset,
+        .teachableLearnset = sAnkylomonTeachableLearnset,
     },
 #endif //P_FAMILY_ANGEMON
 

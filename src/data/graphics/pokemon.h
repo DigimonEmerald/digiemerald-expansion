@@ -4236,13 +4236,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Angemon[] = INCBIN_U8("graphics/pokemon/angemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Pelipper[] = INCBIN_U32("graphics/pokemon/pelipper/anim_front.4bpp.lz");
-    const u32 gMonPalette_Pelipper[] = INCBIN_U32("graphics/pokemon/pelipper/normal.gbapal.lz");
-    const u32 gMonBackPic_Pelipper[] = INCBIN_U32("graphics/pokemon/pelipper/back.4bpp.lz");
-    const u32 gMonShinyPalette_Pelipper[] = INCBIN_U32("graphics/pokemon/pelipper/shiny.gbapal.lz");
-    const u8 gMonIcon_Pelipper[] = INCBIN_U8("graphics/pokemon/pelipper/icon.4bpp");
+    const u32 gMonFrontPic_Ankylomon[] = INCBIN_U32("graphics/pokemon/ankylomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Ankylomon[] = INCBIN_U32("graphics/pokemon/ankylomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Ankylomon[] = INCBIN_U32("graphics/pokemon/ankylomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Ankylomon[] = INCBIN_U32("graphics/pokemon/ankylomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Ankylomon[] = INCBIN_U8("graphics/pokemon/ankylomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Pelipper[] = INCBIN_U8("graphics/pokemon/pelipper/footprint.1bpp");
+    const u8 gMonFootprint_Ankylomon[] = INCBIN_U8("graphics/pokemon/ankylomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_ANGEMON
 

@@ -2183,8 +2183,8 @@ Cry_Angemon::
 	.incbin "sound/direct_sound_samples/cries/angemon.bin"
 
 	.align 2
-Cry_Pelipper::
-	.incbin "sound/direct_sound_samples/cries/pelipper.bin"
+Cry_Ankylomon::
+	.incbin "sound/direct_sound_samples/cries/ankylomon.bin"
 .endif @ P_FAMILY_ANGEMON
 
 .if P_FAMILY_RALTS == TRUE
