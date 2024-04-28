@@ -2033,7 +2033,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             "The small ball holds the nutrients needed\n"
             "for evolution. Apparently, it is also very\n"
             "sweet and tasty. Pokémon like Starly and\n"
-            "Taillow try to peck it off."),
+            "Allomon_x try to peck it off."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,

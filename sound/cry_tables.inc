@@ -761,10 +761,10 @@ gCryTable::
 	cry Cry_Akatorimon
 	cry Cry_Allomon
 .endif @ P_FAMILY_AIRDRAMON
-.if P_FAMILY_TAILLOW == TRUE
-	cry Cry_Taillow
+.if P_FAMILY_ALLOMON_X == TRUE
+	cry Cry_Allomon_x
 	cry Cry_Swellow
-.endif @ P_FAMILY_TAILLOW
+.endif @ P_FAMILY_ALLOMON_X
 .if P_FAMILY_WINGULL == TRUE
 	cry Cry_Wingull
 	cry Cry_Pelipper
@@ -3187,10 +3187,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Akatorimon
 	cry_reverse Cry_Allomon
 .endif @ P_FAMILY_AIRDRAMON
-.if P_FAMILY_TAILLOW == TRUE
-	cry_reverse Cry_Taillow
+.if P_FAMILY_ALLOMON_X == TRUE
+	cry_reverse Cry_Allomon_x
 	cry_reverse Cry_Swellow
-.endif @ P_FAMILY_TAILLOW
+.endif @ P_FAMILY_ALLOMON_X
 .if P_FAMILY_WINGULL == TRUE
 	cry_reverse Cry_Wingull
 	cry_reverse Cry_Pelipper

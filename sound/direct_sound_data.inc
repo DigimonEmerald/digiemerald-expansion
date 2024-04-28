@@ -2167,15 +2167,15 @@ Cry_Allomon::
 	.incbin "sound/direct_sound_samples/cries/allomon.bin"
 .endif @ P_FAMILY_AIRDRAMON
 
-.if P_FAMILY_TAILLOW == TRUE
+.if P_FAMILY_ALLOMON_X == TRUE
 	.align 2
-Cry_Taillow::
-	.incbin "sound/direct_sound_samples/cries/taillow.bin"
+Cry_Allomon_x::
+	.incbin "sound/direct_sound_samples/cries/allomon_x.bin"
 
 	.align 2
 Cry_Swellow::
 	.incbin "sound/direct_sound_samples/cries/swellow.bin"
-.endif @ P_FAMILY_TAILLOW
+.endif @ P_FAMILY_ALLOMON_X
 
 .if P_FAMILY_WINGULL == TRUE
 	.align 2

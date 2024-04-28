@@ -1756,8 +1756,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_AIRDRAMON
 
-#if P_FAMILY_TAILLOW
-    [SPECIES_TAILLOW] =
+#if P_FAMILY_ALLOMON_X
+    [SPECIES_ALLOMON_X] =
     {
         .baseHP        = 40,
         .baseAttack    = 55,
@@ -1776,9 +1776,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_SCRAPPY },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Taillow"),
-        .cryId = CRY_TAILLOW,
-        .natDexNum = NATIONAL_DEX_TAILLOW,
+        .speciesName = _("Allomon_x"),
+        .cryId = CRY_ALLOMON_X,
+        .natDexNum = NATIONAL_DEX_ALLOMON_X,
         .categoryName = _("Tiny Swallow"),
         .height = 3,
         .weight = 23,
@@ -1791,22 +1791,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 21,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Taillow,
+        .frontPic = gMonFrontPic_Allomon_x,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Taillow,
+        .frontAnimFrames = sAnims_Allomon_x,
         .frontAnimId = ANIM_V_JUMPS_BIG,
-        .backPic = gMonBackPic_Taillow,
+        .backPic = gMonBackPic_Allomon_x,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 15,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Taillow,
-        .shinyPalette = gMonShinyPalette_Taillow,
-        .iconSprite = gMonIcon_Taillow,
+        .palette = gMonPalette_Allomon_x,
+        .shinyPalette = gMonShinyPalette_Allomon_x,
+        .iconSprite = gMonIcon_Allomon_x,
         .iconPalIndex = 2,
-        FOOTPRINT(Taillow)
-        .levelUpLearnset = sTaillowLevelUpLearnset,
-        .teachableLearnset = sTaillowTeachableLearnset,
+        FOOTPRINT(Allomon_x)
+        .levelUpLearnset = sAllomon_xLevelUpLearnset,
+        .teachableLearnset = sAllomon_xTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_SWELLOW}),
     },
 
@@ -1867,7 +1867,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sSwellowLevelUpLearnset,
         .teachableLearnset = sSwellowTeachableLearnset,
     },
-#endif //P_FAMILY_TAILLOW
+#endif //P_FAMILY_ALLOMON_X
 
 #if P_FAMILY_WINGULL
     [SPECIES_WINGULL] =

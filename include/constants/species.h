@@ -277,7 +277,7 @@
 #define SPECIES_AIRDRAMON                                  273
 #define SPECIES_AKATORIMON                                 274
 #define SPECIES_ALLOMON                                 275
-#define SPECIES_TAILLOW                                 276
+#define SPECIES_ALLOMON_X                                 276
 #define SPECIES_SWELLOW                                 277
 #define SPECIES_WINGULL                                 278
 #define SPECIES_PELIPPER                                279

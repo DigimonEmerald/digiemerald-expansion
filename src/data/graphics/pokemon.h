@@ -4206,14 +4206,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonBackPic_AllomonF[] = INCBIN_U32("graphics/pokemon/allomon/backf.4bpp.lz");
 #endif //P_FAMILY_AIRDRAMON
 
-#if P_FAMILY_TAILLOW
-    const u32 gMonFrontPic_Taillow[] = INCBIN_U32("graphics/pokemon/taillow/anim_front.4bpp.lz");
-    const u32 gMonPalette_Taillow[] = INCBIN_U32("graphics/pokemon/taillow/normal.gbapal.lz");
-    const u32 gMonBackPic_Taillow[] = INCBIN_U32("graphics/pokemon/taillow/back.4bpp.lz");
-    const u32 gMonShinyPalette_Taillow[] = INCBIN_U32("graphics/pokemon/taillow/shiny.gbapal.lz");
-    const u8 gMonIcon_Taillow[] = INCBIN_U8("graphics/pokemon/taillow/icon.4bpp");
+#if P_FAMILY_ALLOMON_X
+    const u32 gMonFrontPic_Allomon_x[] = INCBIN_U32("graphics/pokemon/allomon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Allomon_x[] = INCBIN_U32("graphics/pokemon/allomon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Allomon_x[] = INCBIN_U32("graphics/pokemon/allomon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Allomon_x[] = INCBIN_U32("graphics/pokemon/allomon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Allomon_x[] = INCBIN_U8("graphics/pokemon/allomon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Taillow[] = INCBIN_U8("graphics/pokemon/taillow/footprint.1bpp");
+    const u8 gMonFootprint_Allomon_x[] = INCBIN_U8("graphics/pokemon/allomon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Swellow[] = INCBIN_U32("graphics/pokemon/swellow/anim_front.4bpp.lz");
@@ -4224,7 +4224,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Swellow[] = INCBIN_U8("graphics/pokemon/swellow/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_TAILLOW
+#endif //P_FAMILY_ALLOMON_X
 
 #if P_FAMILY_WINGULL
     const u32 gMonFrontPic_Wingull[] = INCBIN_U32("graphics/pokemon/wingull/anim_front.4bpp.lz");

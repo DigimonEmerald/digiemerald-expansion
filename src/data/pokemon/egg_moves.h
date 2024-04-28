@@ -2211,8 +2211,8 @@ const u16 gEggMoves[] = {
         MOVE_GRASSY_TERRAIN),
 #endif //P_FAMILY_AIRDRAMON
 
-#if P_FAMILY_TAILLOW
-    egg_moves(TAILLOW,
+#if P_FAMILY_ALLOMON_X
+    egg_moves(ALLOMON_X,
         MOVE_PURSUIT,
         MOVE_SUPERSONIC,
         MOVE_REFRESH,
@@ -2226,7 +2226,7 @@ const u16 gEggMoves[] = {
         MOVE_DEFOG,
         MOVE_BOOMBURST,
         MOVE_HURRICANE),
-#endif //P_FAMILY_TAILLOW
+#endif //P_FAMILY_ALLOMON_X
 
 #if P_FAMILY_WINGULL
     egg_moves(WINGULL,

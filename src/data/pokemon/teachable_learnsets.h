@@ -13313,8 +13313,8 @@ static const u16 sAllomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_AIRDRAMON
 
-#if P_FAMILY_TAILLOW
-static const u16 sTaillowTeachableLearnset[] = {
+#if P_FAMILY_ALLOMON_X
+static const u16 sAllomon_xTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
@@ -13362,7 +13362,7 @@ static const u16 sSwellowTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TAILLOW
+#endif //P_FAMILY_ALLOMON_X
 
 #if P_FAMILY_WINGULL
 static const u16 sWingullTeachableLearnset[] = {

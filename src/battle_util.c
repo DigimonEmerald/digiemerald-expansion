@@ -11317,7 +11317,7 @@ bool8 IsMonBannedFromSkyBattles(u16 species)
         case SPECIES_HAWKMON:
         case SPECIES_LALAMON:
         case SPECIES_PENGUINMON:
-        case SPECIES_TAILLOW:
+        case SPECIES_ALLOMON_X:
         case SPECIES_STARLY:
         case SPECIES_CHATOT:
         case SPECIES_SHAYMIN:

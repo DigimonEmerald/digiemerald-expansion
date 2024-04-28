@@ -5313,8 +5313,8 @@ static const struct LevelUpMove sAllomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_AIRDRAMON
 
-#if P_FAMILY_TAILLOW
-static const struct LevelUpMove sTaillowLevelUpLearnset[] = {
+#if P_FAMILY_ALLOMON_X
+static const struct LevelUpMove sAllomon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 4, MOVE_FOCUS_ENERGY),
@@ -5341,7 +5341,7 @@ static const struct LevelUpMove sSwellowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(49, MOVE_AGILITY),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_TAILLOW
+#endif //P_FAMILY_ALLOMON_X
 
 #if P_FAMILY_WINGULL
 static const struct LevelUpMove sWingullLevelUpLearnset[] = {
