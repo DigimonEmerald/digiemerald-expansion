@@ -6670,7 +6670,7 @@ static const struct LevelUpMove sWormmonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sDustoxLevelUpLearnset[] = {
+static const struct LevelUpMove sZenimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE(10, MOVE_CONFUSION),
     LEVEL_UP_MOVE(13, MOVE_GUST),

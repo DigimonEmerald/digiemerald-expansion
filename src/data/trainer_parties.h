@@ -2606,7 +2606,7 @@ static const struct TrainerMon sParty_Taylor[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 27,
-    .species = SPECIES_DUSTOX,
+    .species = SPECIES_ZENIMON,
     }
 };
 
@@ -2629,7 +2629,7 @@ static const struct TrainerMon sParty_Derek[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 16,
-    .species = SPECIES_DUSTOX,
+    .species = SPECIES_ZENIMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -2707,7 +2707,7 @@ static const struct TrainerMon sParty_Jeffrey5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 38,
-    .species = SPECIES_DUSTOX,
+    .species = SPECIES_ZENIMON,
     .heldItem = ITEM_NONE
     },
     {
@@ -5955,7 +5955,7 @@ static const struct TrainerMon sParty_MiuAndYuki[] = {
     },
     {
     .lvl = 26,
-    .species = SPECIES_DUSTOX,
+    .species = SPECIES_ZENIMON,
     }
 };
 
@@ -7814,7 +7814,7 @@ static const struct TrainerMon sParty_James3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 29,
-    .species = SPECIES_DUSTOX,
+    .species = SPECIES_ZENIMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -7832,7 +7832,7 @@ static const struct TrainerMon sParty_James4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 31,
-    .species = SPECIES_DUSTOX,
+    .species = SPECIES_ZENIMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -7855,7 +7855,7 @@ static const struct TrainerMon sParty_James5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 33,
-    .species = SPECIES_DUSTOX,
+    .species = SPECIES_ZENIMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -8704,7 +8704,7 @@ static const struct TrainerMon sParty_TyraAndIvy[] = {
 static const struct TrainerMon sParty_MelAndPaul[] = {
     {
     .lvl = 27,
-    .species = SPECIES_DUSTOX,
+    .species = SPECIES_ZENIMON,
     .moves = {MOVE_GUST, MOVE_PSYBEAM, MOVE_TOXIC, MOVE_PROTECT}
     },
     {
@@ -9570,7 +9570,7 @@ static const struct TrainerMon sParty_Callie[] = {
 static const struct TrainerMon sParty_Cale[] = {
     {
     .lvl = 29,
-    .species = SPECIES_DUSTOX,
+    .species = SPECIES_ZENIMON,
     },
     {
     .lvl = 29,

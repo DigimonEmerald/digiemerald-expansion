@@ -749,7 +749,7 @@ gCryTable::
 	cry Cry_Vemmon
 	cry Cry_Vorvomon
 	cry Cry_Wormmon
-	cry Cry_Dustox
+	cry Cry_Zenimon
 .endif @ P_FAMILY_VEEMON
 .if P_FAMILY_LOTAD == TRUE
 	cry Cry_Lotad
@@ -3175,7 +3175,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Vemmon
 	cry_reverse Cry_Vorvomon
 	cry_reverse Cry_Wormmon
-	cry_reverse Cry_Dustox
+	cry_reverse Cry_Zenimon
 .endif @ P_FAMILY_VEEMON
 .if P_FAMILY_LOTAD == TRUE
 	cry_reverse Cry_Lotad

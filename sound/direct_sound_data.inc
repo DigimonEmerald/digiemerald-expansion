@@ -2135,8 +2135,8 @@ Cry_Wormmon::
 	.incbin "sound/direct_sound_samples/cries/wormmon.bin"
 
 	.align 2
-Cry_Dustox::
-	.incbin "sound/direct_sound_samples/cries/dustox.bin"
+Cry_Zenimon::
+	.incbin "sound/direct_sound_samples/cries/zenimon.bin"
 .endif @ P_FAMILY_VEEMON
 
 .if P_FAMILY_LOTAD == TRUE

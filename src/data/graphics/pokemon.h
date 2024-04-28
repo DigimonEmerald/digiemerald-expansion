@@ -4126,17 +4126,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Wormmon[] = INCBIN_U8("graphics/pokemon/wormmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Dustox[] = INCBIN_U32("graphics/pokemon/dustox/anim_front.4bpp.lz");
-    const u32 gMonPalette_Dustox[] = INCBIN_U32("graphics/pokemon/dustox/normal.gbapal.lz");
-    const u32 gMonBackPic_Dustox[] = INCBIN_U32("graphics/pokemon/dustox/back.4bpp.lz");
-    const u32 gMonShinyPalette_Dustox[] = INCBIN_U32("graphics/pokemon/dustox/shiny.gbapal.lz");
-    const u8 gMonIcon_Dustox[] = INCBIN_U8("graphics/pokemon/dustox/icon.4bpp");
+    const u32 gMonFrontPic_Zenimon[] = INCBIN_U32("graphics/pokemon/zenimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Zenimon[] = INCBIN_U32("graphics/pokemon/zenimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Zenimon[] = INCBIN_U32("graphics/pokemon/zenimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Zenimon[] = INCBIN_U32("graphics/pokemon/zenimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Zenimon[] = INCBIN_U8("graphics/pokemon/zenimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Dustox[] = INCBIN_U8("graphics/pokemon/dustox/footprint.1bpp");
+    const u8 gMonFootprint_Zenimon[] = INCBIN_U8("graphics/pokemon/zenimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_DustoxF[] = INCBIN_U32("graphics/pokemon/dustox/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_DustoxF[] = INCBIN_U32("graphics/pokemon/dustox/backf.4bpp.lz");
+    const u32 gMonFrontPic_ZenimonF[] = INCBIN_U32("graphics/pokemon/zenimon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_ZenimonF[] = INCBIN_U32("graphics/pokemon/zenimon/backf.4bpp.lz");
 #endif //P_FAMILY_VEEMON
 
 #if P_FAMILY_LOTAD
