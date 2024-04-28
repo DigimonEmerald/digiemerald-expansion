@@ -3638,7 +3638,7 @@ static const union AnimCmd sAnim_Zubamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Lombre_1[] =
+static const union AnimCmd sAnim_Aegiomon_1[] =
 {
     ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(1, 30),
@@ -11051,7 +11051,7 @@ SINGLE_ANIMATION(Zenimon);
 #endif //P_FAMILY_VEEMON
 #if P_FAMILY_ZUBAMON
 SINGLE_ANIMATION(Zubamon);
-SINGLE_ANIMATION(Lombre);
+SINGLE_ANIMATION(Aegiomon);
 SINGLE_ANIMATION(Ludicolo);
 #endif //P_FAMILY_ZUBAMON
 #if P_FAMILY_SEEDOT

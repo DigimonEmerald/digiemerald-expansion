@@ -666,7 +666,7 @@ AI_SINGLE_BATTLE_TEST("AI_FLAG_SMART_MON_CHOICES: Mid-battle switches prioritize
         PLAYER(SPECIES_TERRIERMON_ASSISTANT) { Level(30); Moves(MOVE_MUD_BOMB, MOVE_WATER_GUN, MOVE_GROWL, MOVE_MUD_SHOT); Speed(5); }
         OPPONENT(SPECIES_NEGAMON) { Level(1); Moves(MOVE_NONE); Speed(6); } // Forces switchout
         OPPONENT(SPECIES_BETAMON) { Level(30); Moves(move1); Speed(4); }
-        OPPONENT(SPECIES_LOMBRE) { Level(30); Moves(move2); Speed(4); }
+        OPPONENT(SPECIES_AEGIOMON) { Level(30); Moves(move2); Speed(4); }
         OPPONENT(SPECIES_HARIYAMA) { Level(30); Moves(MOVE_VITAL_THROW); Speed(4); }
     } WHEN {
             TURN { MOVE(player, MOVE_GROWL); EXPECT_SWITCH(opponent, expectedIndex); }

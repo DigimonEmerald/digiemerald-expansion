@@ -1454,10 +1454,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Zubamon)
         .levelUpLearnset = sZubamonLevelUpLearnset,
         .teachableLearnset = sZubamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_LOMBRE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_AEGIOMON}),
     },
 
-    [SPECIES_LOMBRE] =
+    [SPECIES_AEGIOMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 50,
@@ -1477,9 +1477,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_GRASS),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_RAIN_DISH, ABILITY_OWN_TEMPO },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Lombre"),
-        .cryId = CRY_LOMBRE,
-        .natDexNum = NATIONAL_DEX_LOMBRE,
+        .speciesName = _("Aegiomon"),
+        .cryId = CRY_AEGIOMON,
+        .natDexNum = NATIONAL_DEX_AEGIOMON,
         .categoryName = _("Jolly"),
         .height = 12,
         .weight = 325,
@@ -1492,22 +1492,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 9,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Lombre,
+        .frontPic = gMonFrontPic_Aegiomon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Lombre,
+        .frontAnimFrames = sAnims_Aegiomon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Lombre,
+        .backPic = gMonBackPic_Aegiomon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Lombre,
-        .shinyPalette = gMonShinyPalette_Lombre,
-        .iconSprite = gMonIcon_Lombre,
+        .palette = gMonPalette_Aegiomon,
+        .shinyPalette = gMonShinyPalette_Aegiomon,
+        .iconSprite = gMonIcon_Aegiomon,
         .iconPalIndex = 1,
-        FOOTPRINT(Lombre)
-        .levelUpLearnset = sLombreLevelUpLearnset,
-        .teachableLearnset = sLombreTeachableLearnset,
+        FOOTPRINT(Aegiomon)
+        .levelUpLearnset = sAegiomonLevelUpLearnset,
+        .teachableLearnset = sAegiomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_LUDICOLO}),
     },
 

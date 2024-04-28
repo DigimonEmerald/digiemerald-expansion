@@ -4149,13 +4149,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Zubamon[] = INCBIN_U8("graphics/pokemon/zubamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Lombre[] = INCBIN_U32("graphics/pokemon/lombre/anim_front.4bpp.lz");
-    const u32 gMonPalette_Lombre[] = INCBIN_U32("graphics/pokemon/lombre/normal.gbapal.lz");
-    const u32 gMonBackPic_Lombre[] = INCBIN_U32("graphics/pokemon/lombre/back.4bpp.lz");
-    const u32 gMonShinyPalette_Lombre[] = INCBIN_U32("graphics/pokemon/lombre/shiny.gbapal.lz");
-    const u8 gMonIcon_Lombre[] = INCBIN_U8("graphics/pokemon/lombre/icon.4bpp");
+    const u32 gMonFrontPic_Aegiomon[] = INCBIN_U32("graphics/pokemon/aegiomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Aegiomon[] = INCBIN_U32("graphics/pokemon/aegiomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Aegiomon[] = INCBIN_U32("graphics/pokemon/aegiomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Aegiomon[] = INCBIN_U32("graphics/pokemon/aegiomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Aegiomon[] = INCBIN_U8("graphics/pokemon/aegiomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Lombre[] = INCBIN_U8("graphics/pokemon/lombre/footprint.1bpp");
+    const u8 gMonFootprint_Aegiomon[] = INCBIN_U8("graphics/pokemon/aegiomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Ludicolo[] = INCBIN_U32("graphics/pokemon/ludicolo/anim_front.4bpp.lz");

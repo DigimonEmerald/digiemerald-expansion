@@ -753,7 +753,7 @@ gCryTable::
 .endif @ P_FAMILY_VEEMON
 .if P_FAMILY_ZUBAMON == TRUE
 	cry Cry_Zubamon
-	cry Cry_Lombre
+	cry Cry_Aegiomon
 	cry Cry_Ludicolo
 .endif @ P_FAMILY_ZUBAMON
 .if P_FAMILY_SEEDOT == TRUE
@@ -3179,7 +3179,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_VEEMON
 .if P_FAMILY_ZUBAMON == TRUE
 	cry_reverse Cry_Zubamon
-	cry_reverse Cry_Lombre
+	cry_reverse Cry_Aegiomon
 	cry_reverse Cry_Ludicolo
 .endif @ P_FAMILY_ZUBAMON
 .if P_FAMILY_SEEDOT == TRUE
