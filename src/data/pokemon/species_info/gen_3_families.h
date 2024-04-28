@@ -3291,8 +3291,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BIOTHUNMON
 
-#if P_FAMILY_SKITTY
-    [SPECIES_SKITTY] =
+#if P_FAMILY_BIRDRAMON
+    [SPECIES_BIRDRAMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 45,
@@ -3311,14 +3311,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
         .abilities = { ABILITY_CUTE_CHARM, ABILITY_NORMALIZE, ABILITY_WONDER_SKIN },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Skitty"),
-        .cryId = CRY_SKITTY,
-        .natDexNum = NATIONAL_DEX_SKITTY,
+        .speciesName = _("Birdramon"),
+        .cryId = CRY_BIRDRAMON,
+        .natDexNum = NATIONAL_DEX_BIRDRAMON,
         .categoryName = _("Kitten"),
         .height = 6,
         .weight = 110,
         .description = COMPOUND_STRING(
-            "A Skitty's adorably cute behavior makes it\n"
+            "A Birdramon's adorably cute behavior makes it\n"
             "highly popular. In battle, it makes its tail\n"
             "puff out. It threatens foes with a sharp\n"
             "growl."),
@@ -3326,22 +3326,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Skitty,
+        .frontPic = gMonFrontPic_Birdramon,
         .frontPicSize = MON_COORDS_SIZE(56, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Skitty,
+        .frontAnimFrames = sAnims_Birdramon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Skitty,
+        .backPic = gMonBackPic_Birdramon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Skitty,
-        .shinyPalette = gMonShinyPalette_Skitty,
-        .iconSprite = gMonIcon_Skitty,
+        .palette = gMonPalette_Birdramon,
+        .shinyPalette = gMonShinyPalette_Birdramon,
+        .iconSprite = gMonIcon_Birdramon,
         .iconPalIndex = 0,
-        FOOTPRINT(Skitty)
-        .levelUpLearnset = sSkittyLevelUpLearnset,
-        .teachableLearnset = sSkittyTeachableLearnset,
+        FOOTPRINT(Birdramon)
+        .levelUpLearnset = sBirdramonLevelUpLearnset,
+        .teachableLearnset = sBirdramonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_DELCATTY}),
     },
 
@@ -3403,7 +3403,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sDelcattyLevelUpLearnset,
         .teachableLearnset = sDelcattyTeachableLearnset,
     },
-#endif //P_FAMILY_SKITTY
+#endif //P_FAMILY_BIRDRAMON
 
 #if P_FAMILY_SABLEYE
     [SPECIES_SABLEYE] =

@@ -4012,8 +4012,8 @@ static const union AnimCmd sAnim_Probopass_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BIOTHUNMON
 
-#if P_FAMILY_SKITTY
-static const union AnimCmd sAnim_Skitty_1[] =
+#if P_FAMILY_BIRDRAMON
+static const union AnimCmd sAnim_Birdramon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 35),
@@ -4028,7 +4028,7 @@ static const union AnimCmd sAnim_Delcatty_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SKITTY
+#endif //P_FAMILY_BIRDRAMON
 
 #if P_FAMILY_SABLEYE
 static const union AnimCmd sAnim_Sableye_1[] =
@@ -11114,10 +11114,10 @@ SINGLE_ANIMATION(Biothunmon);
 SINGLE_ANIMATION(Probopass);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BIOTHUNMON
-#if P_FAMILY_SKITTY
-SINGLE_ANIMATION(Skitty);
+#if P_FAMILY_BIRDRAMON
+SINGLE_ANIMATION(Birdramon);
 SINGLE_ANIMATION(Delcatty);
-#endif //P_FAMILY_SKITTY
+#endif //P_FAMILY_BIRDRAMON
 #if P_FAMILY_SABLEYE
 SINGLE_ANIMATION(Sableye);
 #if P_MEGA_EVOLUTIONS

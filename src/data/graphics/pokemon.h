@@ -4471,14 +4471,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BIOTHUNMON
 
-#if P_FAMILY_SKITTY
-    const u32 gMonFrontPic_Skitty[] = INCBIN_U32("graphics/pokemon/skitty/anim_front.4bpp.lz");
-    const u32 gMonPalette_Skitty[] = INCBIN_U32("graphics/pokemon/skitty/normal.gbapal.lz");
-    const u32 gMonBackPic_Skitty[] = INCBIN_U32("graphics/pokemon/skitty/back.4bpp.lz");
-    const u32 gMonShinyPalette_Skitty[] = INCBIN_U32("graphics/pokemon/skitty/shiny.gbapal.lz");
-    const u8 gMonIcon_Skitty[] = INCBIN_U8("graphics/pokemon/skitty/icon.4bpp");
+#if P_FAMILY_BIRDRAMON
+    const u32 gMonFrontPic_Birdramon[] = INCBIN_U32("graphics/pokemon/birdramon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Birdramon[] = INCBIN_U32("graphics/pokemon/birdramon/normal.gbapal.lz");
+    const u32 gMonBackPic_Birdramon[] = INCBIN_U32("graphics/pokemon/birdramon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Birdramon[] = INCBIN_U32("graphics/pokemon/birdramon/shiny.gbapal.lz");
+    const u8 gMonIcon_Birdramon[] = INCBIN_U8("graphics/pokemon/birdramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Skitty[] = INCBIN_U8("graphics/pokemon/skitty/footprint.1bpp");
+    const u8 gMonFootprint_Birdramon[] = INCBIN_U8("graphics/pokemon/birdramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Delcatty[] = INCBIN_U32("graphics/pokemon/delcatty/anim_front.4bpp.lz");
@@ -4489,7 +4489,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Delcatty[] = INCBIN_U8("graphics/pokemon/delcatty/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_SKITTY
+#endif //P_FAMILY_BIRDRAMON
 
 #if P_FAMILY_SABLEYE
     const u32 gMonFrontPic_Sableye[] = INCBIN_U32("graphics/pokemon/sableye/anim_front.4bpp.lz");

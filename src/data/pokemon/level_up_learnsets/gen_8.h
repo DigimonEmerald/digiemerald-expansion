@@ -8162,8 +8162,8 @@ static const struct LevelUpMove sProbopassLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BIOTHUNMON
 
-#if P_FAMILY_SKITTY
-static const struct LevelUpMove sSkittyLevelUpLearnset[] = {
+#if P_FAMILY_BIRDRAMON
+static const struct LevelUpMove sBirdramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FAKE_OUT),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
@@ -8204,7 +8204,7 @@ static const struct LevelUpMove sDelcattyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PLAY_ROUGH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SKITTY
+#endif //P_FAMILY_BIRDRAMON
 
 #if P_FAMILY_SABLEYE
 static const struct LevelUpMove sSableyeLevelUpLearnset[] = {

@@ -2302,15 +2302,15 @@ Cry_Probopass::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_BIOTHUNMON
 
-.if P_FAMILY_SKITTY == TRUE
+.if P_FAMILY_BIRDRAMON == TRUE
 	.align 2
-Cry_Skitty::
-	.incbin "sound/direct_sound_samples/cries/skitty.bin"
+Cry_Birdramon::
+	.incbin "sound/direct_sound_samples/cries/birdramon.bin"
 
 	.align 2
 Cry_Delcatty::
 	.incbin "sound/direct_sound_samples/cries/delcatty.bin"
-.endif @ P_FAMILY_SKITTY
+.endif @ P_FAMILY_BIRDRAMON
 
 .if P_FAMILY_SABLEYE == TRUE
 	.align 2

@@ -14324,8 +14324,8 @@ static const u16 sProbopassTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BIOTHUNMON
 
-#if P_FAMILY_SKITTY
-static const u16 sSkittyTeachableLearnset[] = {
+#if P_FAMILY_BIRDRAMON
+static const u16 sBirdramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,
@@ -14405,7 +14405,7 @@ static const u16 sDelcattyTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SKITTY
+#endif //P_FAMILY_BIRDRAMON
 
 #if P_FAMILY_SABLEYE
 static const u16 sSableyeTeachableLearnset[] = {

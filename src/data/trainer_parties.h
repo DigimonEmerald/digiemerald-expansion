@@ -61,7 +61,7 @@ static const struct TrainerMon sParty_GruntSeafloorCavern3[] = {
 static const struct TrainerMon sParty_Gabrielle1[] = {
     {
     .lvl = 26,
-    .species = SPECIES_SKITTY,
+    .species = SPECIES_BIRDRAMON,
     },
     {
     .lvl = 26,
@@ -3720,7 +3720,7 @@ static const struct TrainerMon sParty_Victor[] = {
 static const struct TrainerMon sParty_Miguel1[] = {
     {
     .lvl = 15,
-    .species = SPECIES_SKITTY,
+    .species = SPECIES_BIRDRAMON,
     .heldItem = ITEM_ORAN_BERRY
     }
 };
@@ -3728,31 +3728,31 @@ static const struct TrainerMon sParty_Miguel1[] = {
 static const struct TrainerMon sParty_Colton[] = {
     {
     .lvl = 22,
-    .species = SPECIES_SKITTY,
+    .species = SPECIES_BIRDRAMON,
     .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
     },
     {
     .lvl = 36,
-    .species = SPECIES_SKITTY,
+    .species = SPECIES_BIRDRAMON,
     .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
     },
     {
     .lvl = 40,
-    .species = SPECIES_SKITTY,
+    .species = SPECIES_BIRDRAMON,
     .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
     },
     {
     .lvl = 12,
-    .species = SPECIES_SKITTY,
+    .species = SPECIES_BIRDRAMON,
     .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
     },
     {
     .lvl = 30,
-    .species = SPECIES_SKITTY,
+    .species = SPECIES_BIRDRAMON,
     .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
     },
@@ -3767,7 +3767,7 @@ static const struct TrainerMon sParty_Colton[] = {
 static const struct TrainerMon sParty_Miguel2[] = {
     {
     .lvl = 29,
-    .species = SPECIES_SKITTY,
+    .species = SPECIES_BIRDRAMON,
     .heldItem = ITEM_ORAN_BERRY
     }
 };
@@ -3775,7 +3775,7 @@ static const struct TrainerMon sParty_Miguel2[] = {
 static const struct TrainerMon sParty_Miguel3[] = {
     {
     .lvl = 32,
-    .species = SPECIES_SKITTY,
+    .species = SPECIES_BIRDRAMON,
     .heldItem = ITEM_ORAN_BERRY
     }
 };
@@ -5799,7 +5799,7 @@ static const struct TrainerMon sParty_Nancy[] = {
 static const struct TrainerMon sParty_Martha[] = {
     {
     .lvl = 23,
-    .species = SPECIES_SKITTY,
+    .species = SPECIES_BIRDRAMON,
     },
     {
     .lvl = 23,
@@ -6868,7 +6868,7 @@ static const struct TrainerMon sParty_Lydia1[] = {
     },
     {
     .lvl = 11,
-    .species = SPECIES_SKITTY,
+    .species = SPECIES_BIRDRAMON,
     },
     {
     .lvl = 11,
@@ -6918,7 +6918,7 @@ static const struct TrainerMon sParty_Lydia2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 22,
-    .species = SPECIES_SKITTY,
+    .species = SPECIES_BIRDRAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -7686,7 +7686,7 @@ static const struct TrainerMon sParty_Sally[] = {
 static const struct TrainerMon sParty_Robin[] = {
     {
     .lvl = 14,
-    .species = SPECIES_SKITTY,
+    .species = SPECIES_BIRDRAMON,
     },
     {
     .lvl = 14,
@@ -11557,7 +11557,7 @@ static const struct TrainerMon sParty_Gabrielle2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 31,
-    .species = SPECIES_SKITTY,
+    .species = SPECIES_BIRDRAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -11590,7 +11590,7 @@ static const struct TrainerMon sParty_Gabrielle3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 33,
-    .species = SPECIES_SKITTY,
+    .species = SPECIES_BIRDRAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),

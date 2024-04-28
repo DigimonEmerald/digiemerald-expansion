@@ -816,10 +816,10 @@ gCryTable::
 	cry Cry_Probopass
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_BIOTHUNMON
-.if P_FAMILY_SKITTY == TRUE
-	cry Cry_Skitty
+.if P_FAMILY_BIRDRAMON == TRUE
+	cry Cry_Birdramon
 	cry Cry_Delcatty
-.endif @ P_FAMILY_SKITTY
+.endif @ P_FAMILY_BIRDRAMON
 .if P_FAMILY_SABLEYE == TRUE
 	cry Cry_Sableye
 .if P_MEGA_EVOLUTIONS == TRUE
@@ -3242,10 +3242,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Probopass
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_BIOTHUNMON
-.if P_FAMILY_SKITTY == TRUE
-	cry_reverse Cry_Skitty
+.if P_FAMILY_BIRDRAMON == TRUE
+	cry_reverse Cry_Birdramon
 	cry_reverse Cry_Delcatty
-.endif @ P_FAMILY_SKITTY
+.endif @ P_FAMILY_BIRDRAMON
 .if P_FAMILY_SABLEYE == TRUE
 	cry_reverse Cry_Sableye
 .if P_MEGA_EVOLUTIONS == TRUE

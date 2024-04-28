@@ -2360,8 +2360,8 @@ const u16 gEggMoves[] = {
         MOVE_WIDE_GUARD),
 #endif //P_FAMILY_BIOTHUNMON
 
-#if P_FAMILY_SKITTY
-    egg_moves(SKITTY,
+#if P_FAMILY_BIRDRAMON
+    egg_moves(BIRDRAMON,
         MOVE_HELPING_HAND,
         MOVE_UPROAR,
         MOVE_FAKE_TEARS,
@@ -2376,7 +2376,7 @@ const u16 gEggMoves[] = {
         MOVE_SIMPLE_BEAM,
         MOVE_CAPTIVATE,
         MOVE_COSMIC_POWER),
-#endif //P_FAMILY_SKITTY
+#endif //P_FAMILY_BIRDRAMON
 
 #if P_FAMILY_SABLEYE
     egg_moves(SABLEYE,

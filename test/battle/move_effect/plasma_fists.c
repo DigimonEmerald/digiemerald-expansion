@@ -69,14 +69,14 @@ SINGLE_BATTLE_TEST("Plasma Fists type-changing effect is applied after Normalize
 {
     GIVEN {
         PLAYER(SPECIES_VIXIMON);
-        OPPONENT(SPECIES_SKITTY) { Ability(ABILITY_NORMALIZE); }
+        OPPONENT(SPECIES_BIRDRAMON) { Ability(ABILITY_NORMALIZE); }
     } WHEN {
         TURN { MOVE(player, MOVE_PLASMA_FISTS); MOVE(opponent, MOVE_EMBER); }
     } SCENE {
         MESSAGE("Viximon used Plasma Fists!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PLASMA_FISTS, player);
         MESSAGE("A deluge of ions showers the battlefield!");
-        MESSAGE("Foe Skitty used Ember!");
+        MESSAGE("Foe Birdramon used Ember!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EMBER, opponent);
         MESSAGE("It's super effective!");
     }
