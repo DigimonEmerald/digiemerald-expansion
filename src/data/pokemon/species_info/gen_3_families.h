@@ -465,8 +465,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SYAKOMON_X
 
-#if P_FAMILY_MUDKIP
-    [SPECIES_MUDKIP] =
+#if P_FAMILY_TERRIERMON
+    [SPECIES_TERRIERMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 70,
@@ -485,9 +485,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_DAMP },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Mudkip"),
-        .cryId = CRY_MUDKIP,
-        .natDexNum = NATIONAL_DEX_MUDKIP,
+        .speciesName = _("Terriermon"),
+        .cryId = CRY_TERRIERMON,
+        .natDexNum = NATIONAL_DEX_TERRIERMON,
         .categoryName = _("Mud Fish"),
         .height = 4,
         .weight = 76,
@@ -500,22 +500,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Mudkip,
+        .frontPic = gMonFrontPic_Terriermon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Mudkip,
+        .frontAnimFrames = sAnims_Terriermon,
         .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
-        .backPic = gMonBackPic_Mudkip,
+        .backPic = gMonBackPic_Terriermon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Mudkip,
-        .shinyPalette = gMonShinyPalette_Mudkip,
-        .iconSprite = gMonIcon_Mudkip,
+        .palette = gMonPalette_Terriermon,
+        .shinyPalette = gMonShinyPalette_Terriermon,
+        .iconSprite = gMonIcon_Terriermon,
         .iconPalIndex = 0,
-        FOOTPRINT(Mudkip)
-        .levelUpLearnset = sMudkipLevelUpLearnset,
-        .teachableLearnset = sMudkipTeachableLearnset,
+        FOOTPRINT(Terriermon)
+        .levelUpLearnset = sTerriermonLevelUpLearnset,
+        .teachableLearnset = sTerriermonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_MARSHTOMP}),
     },
 
@@ -688,7 +688,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .formChangeTable = sSwampertFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MUDKIP
+#endif //P_FAMILY_TERRIERMON
 
 #if P_FAMILY_POOCHYENA
     [SPECIES_POOCHYENA] =

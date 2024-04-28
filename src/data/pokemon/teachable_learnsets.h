@@ -12631,8 +12631,8 @@ static const u16 sTentomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SYAKOMON_X
 
-#if P_FAMILY_MUDKIP
-static const u16 sMudkipTeachableLearnset[] = {
+#if P_FAMILY_TERRIERMON
+static const u16 sTerriermonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIG,
@@ -12757,7 +12757,7 @@ static const u16 sSwampertTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MUDKIP
+#endif //P_FAMILY_TERRIERMON
 
 #if P_FAMILY_POOCHYENA
 static const u16 sPoochyenaTeachableLearnset[] = {

@@ -282,14 +282,14 @@ static const struct FormChange sTentomonFormChangeTable[] = {
 };
 #endif //P_FAMILY_SYAKOMON_X
 
-#if P_FAMILY_MUDKIP
+#if P_FAMILY_TERRIERMON
 static const struct FormChange sSwampertFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_SWAMPERT_MEGA, ITEM_SWAMPERTITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_MUDKIP
+#endif //P_FAMILY_TERRIERMON
 
 #if P_FAMILY_RALTS
 static const struct FormChange sGardevoirFormChangeTable[] = {

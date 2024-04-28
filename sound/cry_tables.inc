@@ -725,14 +725,14 @@ gCryTable::
 	cry Cry_TentomonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SYAKOMON_X
-.if P_FAMILY_MUDKIP == TRUE
-	cry Cry_Mudkip
+.if P_FAMILY_TERRIERMON == TRUE
+	cry Cry_Terriermon
 	cry Cry_Marshtomp
 	cry Cry_Swampert
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_SwampertMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MUDKIP
+.endif @ P_FAMILY_TERRIERMON
 .if P_FAMILY_POOCHYENA == TRUE
 	cry Cry_Poochyena
 	cry Cry_Mightyena
@@ -3151,14 +3151,14 @@ gCryTable_Reverse::
 	cry_reverse Cry_TentomonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SYAKOMON_X
-.if P_FAMILY_MUDKIP == TRUE
-	cry_reverse Cry_Mudkip
+.if P_FAMILY_TERRIERMON == TRUE
+	cry_reverse Cry_Terriermon
 	cry_reverse Cry_Marshtomp
 	cry_reverse Cry_Swampert
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_SwampertMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MUDKIP
+.endif @ P_FAMILY_TERRIERMON
 .if P_FAMILY_POOCHYENA == TRUE
 	cry_reverse Cry_Poochyena
 	cry_reverse Cry_Mightyena

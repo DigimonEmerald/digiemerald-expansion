@@ -2122,8 +2122,8 @@ const u16 gEggMoves[] = {
         MOVE_LOW_KICK),
 #endif //P_FAMILY_SYAKOMON_X
 
-#if P_FAMILY_MUDKIP
-    egg_moves(MUDKIP,
+#if P_FAMILY_TERRIERMON
+    egg_moves(TERRIERMON,
         MOVE_REFRESH,
         MOVE_UPROAR,
         MOVE_CURSE,
@@ -2141,7 +2141,7 @@ const u16 gEggMoves[] = {
         MOVE_AVALANCHE,
         MOVE_WIDE_GUARD,
         MOVE_BARRIER),
-#endif //P_FAMILY_MUDKIP
+#endif //P_FAMILY_TERRIERMON
 
 #if P_FAMILY_POOCHYENA
     egg_moves(POOCHYENA,

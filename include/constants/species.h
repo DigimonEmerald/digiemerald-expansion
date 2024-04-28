@@ -259,7 +259,7 @@
 #define SPECIES_SYAKOMON_X                                 255
 #define SPECIES_TAPIRMON                               256
 #define SPECIES_TENTOMON                                257
-#define SPECIES_MUDKIP                                  258
+#define SPECIES_TERRIERMON                                  258
 #define SPECIES_MARSHTOMP                               259
 #define SPECIES_SWAMPERT                                260
 #define SPECIES_POOCHYENA                               261

@@ -741,7 +741,7 @@ static const u16 sTentomonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_SYAKOMON_X
 
-#if P_FAMILY_MUDKIP
+#if P_FAMILY_TERRIERMON
 static const u16 sSwampertFormSpeciesIdTable[] = {
     SPECIES_SWAMPERT,
 #if P_MEGA_EVOLUTIONS
@@ -749,7 +749,7 @@ static const u16 sSwampertFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_MUDKIP
+#endif //P_FAMILY_TERRIERMON
 
 #if P_FAMILY_ZIGZAGOON
 static const u16 sZigzagoonFormSpeciesIdTable[] = {

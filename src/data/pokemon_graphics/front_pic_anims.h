@@ -3479,8 +3479,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(TentomonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SYAKOMON_X
 
-#if P_FAMILY_MUDKIP
-static const union AnimCmd sAnim_Mudkip_1[] =
+#if P_FAMILY_TERRIERMON
+static const union AnimCmd sAnim_Terriermon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 8),
@@ -3517,7 +3517,7 @@ static const union AnimCmd sAnim_Swampert_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(SwampertMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MUDKIP
+#endif //P_FAMILY_TERRIERMON
 
 #if P_FAMILY_POOCHYENA
 static const union AnimCmd sAnim_Poochyena_1[] =
@@ -11021,14 +11021,14 @@ SINGLE_ANIMATION(Tentomon);
 SINGLE_ANIMATION(TentomonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SYAKOMON_X
-#if P_FAMILY_MUDKIP
-SINGLE_ANIMATION(Mudkip);
+#if P_FAMILY_TERRIERMON
+SINGLE_ANIMATION(Terriermon);
 SINGLE_ANIMATION(Marshtomp);
 SINGLE_ANIMATION(Swampert);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(SwampertMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MUDKIP
+#endif //P_FAMILY_TERRIERMON
 #if P_FAMILY_POOCHYENA
 SINGLE_ANIMATION(Poochyena);
 SINGLE_ANIMATION(Mightyena);

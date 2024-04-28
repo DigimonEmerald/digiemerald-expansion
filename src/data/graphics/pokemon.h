@@ -3986,14 +3986,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SYAKOMON_X
 
-#if P_FAMILY_MUDKIP
-    const u32 gMonFrontPic_Mudkip[] = INCBIN_U32("graphics/pokemon/mudkip/anim_front.4bpp.lz");
-    const u32 gMonPalette_Mudkip[] = INCBIN_U32("graphics/pokemon/mudkip/normal.gbapal.lz");
-    const u32 gMonBackPic_Mudkip[] = INCBIN_U32("graphics/pokemon/mudkip/back.4bpp.lz");
-    const u32 gMonShinyPalette_Mudkip[] = INCBIN_U32("graphics/pokemon/mudkip/shiny.gbapal.lz");
-    const u8 gMonIcon_Mudkip[] = INCBIN_U8("graphics/pokemon/mudkip/icon.4bpp");
+#if P_FAMILY_TERRIERMON
+    const u32 gMonFrontPic_Terriermon[] = INCBIN_U32("graphics/pokemon/terriermon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Terriermon[] = INCBIN_U32("graphics/pokemon/terriermon/normal.gbapal.lz");
+    const u32 gMonBackPic_Terriermon[] = INCBIN_U32("graphics/pokemon/terriermon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Terriermon[] = INCBIN_U32("graphics/pokemon/terriermon/shiny.gbapal.lz");
+    const u8 gMonIcon_Terriermon[] = INCBIN_U8("graphics/pokemon/terriermon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Mudkip[] = INCBIN_U8("graphics/pokemon/mudkip/footprint.1bpp");
+    const u8 gMonFootprint_Terriermon[] = INCBIN_U8("graphics/pokemon/terriermon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Marshtomp[] = INCBIN_U32("graphics/pokemon/marshtomp/anim_front.4bpp.lz");
@@ -4021,7 +4021,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_SwampertMega[] = INCBIN_U32("graphics/pokemon/swampert/mega/shiny.gbapal.lz");
     const u8 gMonIcon_SwampertMega[] = INCBIN_U8("graphics/pokemon/swampert/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MUDKIP
+#endif //P_FAMILY_TERRIERMON
 
 #if P_FAMILY_POOCHYENA
     const u32 gMonFrontPic_Poochyena[] = INCBIN_U32("graphics/pokemon/poochyena/anim_front.4bpp.lz");

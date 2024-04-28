@@ -2070,10 +2070,10 @@ Cry_TentomonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SYAKOMON_X
 
-.if P_FAMILY_MUDKIP == TRUE
+.if P_FAMILY_TERRIERMON == TRUE
 	.align 2
-Cry_Mudkip::
-	.incbin "sound/direct_sound_samples/cries/mudkip.bin"
+Cry_Terriermon::
+	.incbin "sound/direct_sound_samples/cries/terriermon.bin"
 
 	.align 2
 Cry_Marshtomp::
@@ -2088,7 +2088,7 @@ Cry_Swampert::
 Cry_SwampertMega::
 	.incbin "sound/direct_sound_samples/cries/swampert_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MUDKIP
+.endif @ P_FAMILY_TERRIERMON
 
 .if P_FAMILY_POOCHYENA == TRUE
 	.align 2
