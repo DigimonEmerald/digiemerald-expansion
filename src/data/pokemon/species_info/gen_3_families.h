@@ -2675,10 +2675,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Axemon)
         .levelUpLearnset = sAxemonLevelUpLearnset,
         .teachableLearnset = sAxemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SLAKING}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_BABOONMON}),
     },
 
-    [SPECIES_SLAKING] =
+    [SPECIES_BABOONMON] =
     {
         .baseHP        = 150,
         .baseAttack    = 160,
@@ -2703,14 +2703,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_TRUANT, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Slaking"),
-        .cryId = CRY_SLAKING,
-        .natDexNum = NATIONAL_DEX_SLAKING,
+        .speciesName = _("Baboonmon"),
+        .cryId = CRY_BABOONMON,
+        .natDexNum = NATIONAL_DEX_BABOONMON,
         .categoryName = _("Lazy"),
         .height = 20,
         .weight = 1305,
         .description = COMPOUND_STRING(
-            "Hordes of Slaking gather around trees\n"
+            "Hordes of Baboonmon gather around trees\n"
             "when fruits come into season. They wait\n"
             "around patiently for ripened fruits to fall\n"
             "out of the trees."),
@@ -2718,22 +2718,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 2,
         .trainerScale = 300,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Slaking,
+        .frontPic = gMonFrontPic_Baboonmon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Slaking,
+        .frontAnimFrames = sAnims_Baboonmon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Slaking,
+        .backPic = gMonBackPic_Baboonmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_H_SHAKE,
-        .palette = gMonPalette_Slaking,
-        .shinyPalette = gMonShinyPalette_Slaking,
-        .iconSprite = gMonIcon_Slaking,
+        .palette = gMonPalette_Baboonmon,
+        .shinyPalette = gMonShinyPalette_Baboonmon,
+        .iconSprite = gMonIcon_Baboonmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Slaking)
-        .levelUpLearnset = sSlakingLevelUpLearnset,
-        .teachableLearnset = sSlakingTeachableLearnset,
+        FOOTPRINT(Baboonmon)
+        .levelUpLearnset = sBaboonmonLevelUpLearnset,
+        .teachableLearnset = sBaboonmonTeachableLearnset,
     },
 #endif //P_FAMILY_AURUMON
 

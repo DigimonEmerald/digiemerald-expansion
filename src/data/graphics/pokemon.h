@@ -4361,13 +4361,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Axemon[] = INCBIN_U8("graphics/pokemon/axemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Slaking[] = INCBIN_U32("graphics/pokemon/slaking/anim_front.4bpp.lz");
-    const u32 gMonPalette_Slaking[] = INCBIN_U32("graphics/pokemon/slaking/normal.gbapal.lz");
-    const u32 gMonBackPic_Slaking[] = INCBIN_U32("graphics/pokemon/slaking/back.4bpp.lz");
-    const u32 gMonShinyPalette_Slaking[] = INCBIN_U32("graphics/pokemon/slaking/shiny.gbapal.lz");
-    const u8 gMonIcon_Slaking[] = INCBIN_U8("graphics/pokemon/slaking/icon.4bpp");
+    const u32 gMonFrontPic_Baboonmon[] = INCBIN_U32("graphics/pokemon/baboonmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Baboonmon[] = INCBIN_U32("graphics/pokemon/baboonmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Baboonmon[] = INCBIN_U32("graphics/pokemon/baboonmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Baboonmon[] = INCBIN_U32("graphics/pokemon/baboonmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Baboonmon[] = INCBIN_U8("graphics/pokemon/baboonmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Slaking[] = INCBIN_U8("graphics/pokemon/slaking/footprint.1bpp");
+    const u8 gMonFootprint_Baboonmon[] = INCBIN_U8("graphics/pokemon/baboonmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_AURUMON
 

@@ -2320,7 +2320,7 @@ const struct ContestPokemon gContestOpponents[] =
         .otId = CONTEST_AI_TRAINER_ID,
     },
     [CONTEST_OPPONENT_KEATON] = {
-        .species = SPECIES_SLAKING,
+        .species = SPECIES_BABOONMON,
         .nickname = _("SLING"),
         .trainerName = _("KEATON"),
         .trainerGfxId = OBJ_EVENT_GFX_LITTLE_BOY,

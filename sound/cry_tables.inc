@@ -794,7 +794,7 @@ gCryTable::
 .if P_FAMILY_AURUMON == TRUE
 	cry Cry_Aurumon
 	cry Cry_Axemon
-	cry Cry_Slaking
+	cry Cry_Baboonmon
 .endif @ P_FAMILY_AURUMON
 .if P_FAMILY_NINCADA == TRUE
 	cry Cry_Nincada
@@ -3220,7 +3220,7 @@ gCryTable_Reverse::
 .if P_FAMILY_AURUMON == TRUE
 	cry_reverse Cry_Aurumon
 	cry_reverse Cry_Axemon
-	cry_reverse Cry_Slaking
+	cry_reverse Cry_Baboonmon
 .endif @ P_FAMILY_AURUMON
 .if P_FAMILY_NINCADA == TRUE
 	cry_reverse Cry_Nincada

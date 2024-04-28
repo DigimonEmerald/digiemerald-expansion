@@ -3868,7 +3868,7 @@ static const union AnimCmd sAnim_Axemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Slaking_1[] =
+static const union AnimCmd sAnim_Baboonmon_1[] =
 {
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_FRAME(1, 22),
@@ -11092,7 +11092,7 @@ SINGLE_ANIMATION(Atamademon);
 #if P_FAMILY_AURUMON
 SINGLE_ANIMATION(Aurumon);
 SINGLE_ANIMATION(Axemon);
-SINGLE_ANIMATION(Slaking);
+SINGLE_ANIMATION(Baboonmon);
 #endif //P_FAMILY_AURUMON
 #if P_FAMILY_NINCADA
 SINGLE_ANIMATION(Nincada);
