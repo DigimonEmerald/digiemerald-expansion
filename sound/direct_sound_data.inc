@@ -2228,15 +2228,15 @@ Cry_Argomon_champion::
 	.incbin "sound/direct_sound_samples/cries/argomon_champion.bin"
 .endif @ P_FAMILY_ARCHELOMON
 
-.if P_FAMILY_SHROOMISH == TRUE
+.if P_FAMILY_ARESDRAMON == TRUE
 	.align 2
-Cry_Shroomish::
-	.incbin "sound/direct_sound_samples/cries/shroomish.bin"
+Cry_Aresdramon::
+	.incbin "sound/direct_sound_samples/cries/aresdramon.bin"
 
 	.align 2
 Cry_Breloom::
 	.incbin "sound/direct_sound_samples/cries/breloom.bin"
-.endif @ P_FAMILY_SHROOMISH
+.endif @ P_FAMILY_ARESDRAMON
 
 .if P_FAMILY_SLAKOTH == TRUE
 	.align 2

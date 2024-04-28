@@ -286,7 +286,7 @@
 #define SPECIES_ARCADIAMON_CHAMPION                               282
 #define SPECIES_ARCHELOMON                                 283
 #define SPECIES_ARGOMON_CHAMPION                              284
-#define SPECIES_SHROOMISH                               285
+#define SPECIES_ARESDRAMON                               285
 #define SPECIES_BRELOOM                                 286
 #define SPECIES_SLAKOTH                                 287
 #define SPECIES_VIGOROTH                                288

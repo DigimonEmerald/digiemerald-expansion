@@ -2275,8 +2275,8 @@ const u16 gEggMoves[] = {
         MOVE_LUNGE),
 #endif //P_FAMILY_ARCHELOMON
 
-#if P_FAMILY_SHROOMISH
-    egg_moves(SHROOMISH,
+#if P_FAMILY_ARESDRAMON
+    egg_moves(ARESDRAMON,
         MOVE_FAKE_TEARS,
         MOVE_CHARM,
         MOVE_HELPING_HAND,
@@ -2287,7 +2287,7 @@ const u16 gEggMoves[] = {
         MOVE_FOCUS_PUNCH,
         MOVE_NATURAL_GIFT,
         MOVE_DRAIN_PUNCH),
-#endif //P_FAMILY_SHROOMISH
+#endif //P_FAMILY_ARESDRAMON
 
 #if P_FAMILY_SLAKOTH
     egg_moves(SLAKOTH,

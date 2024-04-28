@@ -2460,8 +2460,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_ARCHELOMON
 
-#if P_FAMILY_SHROOMISH
-    [SPECIES_SHROOMISH] =
+#if P_FAMILY_ARESDRAMON
+    [SPECIES_ARESDRAMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 40,
@@ -2482,37 +2482,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_GRASS),
         .abilities = { ABILITY_EFFECT_SPORE, ABILITY_POISON_HEAL, ABILITY_QUICK_FEET },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Shroomish"),
-        .cryId = CRY_SHROOMISH,
-        .natDexNum = NATIONAL_DEX_SHROOMISH,
+        .speciesName = _("Aresdramon"),
+        .cryId = CRY_ARESDRAMON,
+        .natDexNum = NATIONAL_DEX_ARESDRAMON,
         .categoryName = _("Mushroom"),
         .height = 4,
         .weight = 45,
         .description = COMPOUND_STRING(
             "It loves to eat damp, composted soil in\n"
             "forests. If you enter a forest after a\n"
-            "long rain, you can see many Shroomish\n"
+            "long rain, you can see many Aresdramon\n"
             "feasting on composted soil."),
         .pokemonScale = 513,
         .pokemonOffset = 22,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Shroomish,
+        .frontPic = gMonFrontPic_Aresdramon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Shroomish,
+        .frontAnimFrames = sAnims_Aresdramon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Shroomish,
+        .backPic = gMonBackPic_Aresdramon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Shroomish,
-        .shinyPalette = gMonShinyPalette_Shroomish,
-        .iconSprite = gMonIcon_Shroomish,
+        .palette = gMonPalette_Aresdramon,
+        .shinyPalette = gMonShinyPalette_Aresdramon,
+        .iconSprite = gMonIcon_Aresdramon,
         .iconPalIndex = 1,
-        FOOTPRINT(Shroomish)
-        .levelUpLearnset = sShroomishLevelUpLearnset,
-        .teachableLearnset = sShroomishTeachableLearnset,
+        FOOTPRINT(Aresdramon)
+        .levelUpLearnset = sAresdramonLevelUpLearnset,
+        .teachableLearnset = sAresdramonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_BRELOOM}),
     },
 
@@ -2569,7 +2569,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sBreloomLevelUpLearnset,
         .teachableLearnset = sBreloomTeachableLearnset,
     },
-#endif //P_FAMILY_SHROOMISH
+#endif //P_FAMILY_ARESDRAMON
 
 #if P_FAMILY_SLAKOTH
     [SPECIES_SLAKOTH] =

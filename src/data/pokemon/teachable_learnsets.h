@@ -13695,8 +13695,8 @@ static const u16 sArgomon_championTeachableLearnset[] = {
 };
 #endif //P_FAMILY_ARCHELOMON
 
-#if P_FAMILY_SHROOMISH
-static const u16 sShroomishTeachableLearnset[] = {
+#if P_FAMILY_ARESDRAMON
+static const u16 sAresdramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_DOUBLE_TEAM,
@@ -13770,7 +13770,7 @@ static const u16 sBreloomTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SHROOMISH
+#endif //P_FAMILY_ARESDRAMON
 
 #if P_FAMILY_SLAKOTH
 static const u16 sSlakothTeachableLearnset[] = {

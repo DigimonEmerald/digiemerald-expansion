@@ -787,10 +787,10 @@ gCryTable::
 	cry Cry_Archelomon
 	cry Cry_Argomon_champion
 .endif @ P_FAMILY_ARCHELOMON
-.if P_FAMILY_SHROOMISH == TRUE
-	cry Cry_Shroomish
+.if P_FAMILY_ARESDRAMON == TRUE
+	cry Cry_Aresdramon
 	cry Cry_Breloom
-.endif @ P_FAMILY_SHROOMISH
+.endif @ P_FAMILY_ARESDRAMON
 .if P_FAMILY_SLAKOTH == TRUE
 	cry Cry_Slakoth
 	cry Cry_Vigoroth
@@ -3213,10 +3213,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Archelomon
 	cry_reverse Cry_Argomon_champion
 .endif @ P_FAMILY_ARCHELOMON
-.if P_FAMILY_SHROOMISH == TRUE
-	cry_reverse Cry_Shroomish
+.if P_FAMILY_ARESDRAMON == TRUE
+	cry_reverse Cry_Aresdramon
 	cry_reverse Cry_Breloom
-.endif @ P_FAMILY_SHROOMISH
+.endif @ P_FAMILY_ARESDRAMON
 .if P_FAMILY_SLAKOTH == TRUE
 	cry_reverse Cry_Slakoth
 	cry_reverse Cry_Vigoroth
