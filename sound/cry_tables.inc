@@ -746,7 +746,7 @@ gCryTable::
 .endif @ P_FAMILY_TOYAGUMON
 .if P_FAMILY_VEEMON == TRUE
 	cry Cry_Veemon
-	cry Cry_Silcoon
+	cry Cry_Vemmon
 	cry Cry_Beautifly
 	cry Cry_Cascoon
 	cry Cry_Dustox
@@ -3172,7 +3172,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_TOYAGUMON
 .if P_FAMILY_VEEMON == TRUE
 	cry_reverse Cry_Veemon
-	cry_reverse Cry_Silcoon
+	cry_reverse Cry_Vemmon
 	cry_reverse Cry_Beautifly
 	cry_reverse Cry_Cascoon
 	cry_reverse Cry_Dustox

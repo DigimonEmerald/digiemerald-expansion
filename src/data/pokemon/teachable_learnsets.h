@@ -13008,7 +13008,7 @@ static const u16 sVeemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSilcoonTeachableLearnset[] = {
+static const u16 sVemmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 

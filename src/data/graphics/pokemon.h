@@ -4096,13 +4096,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Veemon[] = INCBIN_U8("graphics/pokemon/veemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Silcoon[] = INCBIN_U32("graphics/pokemon/silcoon/anim_front.4bpp.lz");
-    const u32 gMonPalette_Silcoon[] = INCBIN_U32("graphics/pokemon/silcoon/normal.gbapal.lz");
-    const u32 gMonBackPic_Silcoon[] = INCBIN_U32("graphics/pokemon/silcoon/back.4bpp.lz");
-    const u32 gMonShinyPalette_Silcoon[] = INCBIN_U32("graphics/pokemon/silcoon/shiny.gbapal.lz");
-    const u8 gMonIcon_Silcoon[] = INCBIN_U8("graphics/pokemon/silcoon/icon.4bpp");
+    const u32 gMonFrontPic_Vemmon[] = INCBIN_U32("graphics/pokemon/vemmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Vemmon[] = INCBIN_U32("graphics/pokemon/vemmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Vemmon[] = INCBIN_U32("graphics/pokemon/vemmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Vemmon[] = INCBIN_U32("graphics/pokemon/vemmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Vemmon[] = INCBIN_U8("graphics/pokemon/vemmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Silcoon[] = INCBIN_U8("graphics/pokemon/silcoon/footprint.1bpp");
+    const u8 gMonFootprint_Vemmon[] = INCBIN_U8("graphics/pokemon/vemmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Beautifly[] = INCBIN_U32("graphics/pokemon/beautifly/anim_front.4bpp.lz");

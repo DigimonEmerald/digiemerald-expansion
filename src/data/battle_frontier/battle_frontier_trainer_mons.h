@@ -6113,7 +6113,7 @@ const u16 gBattleFrontierTrainerMons_Lewis[] =
 
 const u16 gBattleFrontierTrainerMons_Yoshi[] =
 {
-    FRONTIER_MONS_BUG_CATCHER_1_EXTRA(SILCOON, CASCOON)
+    FRONTIER_MONS_BUG_CATCHER_1_EXTRA(VEMMON, CASCOON)
 };
 
 const u16 gBattleFrontierTrainerMons_Destin[] =
