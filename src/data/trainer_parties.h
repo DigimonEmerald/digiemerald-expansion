@@ -1056,7 +1056,7 @@ static const struct TrainerMon sParty_Mary[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 26,
-    .species = SPECIES_DELCATTY,
+    .species = SPECIES_BLGAOGAMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_FEINT_ATTACK, MOVE_SHOCK_WAVE, MOVE_NONE, MOVE_NONE}
     }
@@ -3758,7 +3758,7 @@ static const struct TrainerMon sParty_Colton[] = {
     },
     {
     .lvl = 42,
-    .species = SPECIES_DELCATTY,
+    .species = SPECIES_BLGAOGAMON,
     .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK, MOVE_HEAL_BELL}
     }
@@ -3783,7 +3783,7 @@ static const struct TrainerMon sParty_Miguel3[] = {
 static const struct TrainerMon sParty_Miguel4[] = {
     {
     .lvl = 35,
-    .species = SPECIES_DELCATTY,
+    .species = SPECIES_BLGAOGAMON,
     .heldItem = ITEM_ORAN_BERRY
     }
 };
@@ -3791,7 +3791,7 @@ static const struct TrainerMon sParty_Miguel4[] = {
 static const struct TrainerMon sParty_Miguel5[] = {
     {
     .lvl = 38,
-    .species = SPECIES_DELCATTY,
+    .species = SPECIES_BLGAOGAMON,
     .heldItem = ITEM_SITRUS_BERRY
     }
 };
@@ -6389,7 +6389,7 @@ static const struct TrainerMon sParty_WallyVR1[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 43,
-    .species = SPECIES_DELCATTY,
+    .species = SPECIES_BLGAOGAMON,
     .moves = {MOVE_SING, MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK}
     },
     {
@@ -6951,7 +6951,7 @@ static const struct TrainerMon sParty_Lydia3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 25,
-    .species = SPECIES_DELCATTY,
+    .species = SPECIES_BLGAOGAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -6984,7 +6984,7 @@ static const struct TrainerMon sParty_Lydia4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 28,
-    .species = SPECIES_DELCATTY,
+    .species = SPECIES_BLGAOGAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -7017,7 +7017,7 @@ static const struct TrainerMon sParty_Lydia5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 31,
-    .species = SPECIES_DELCATTY,
+    .species = SPECIES_BLGAOGAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -8076,7 +8076,7 @@ static const struct TrainerMon sParty_Trent5[] = {
 static const struct TrainerMon sParty_DezAndLuke[] = {
     {
     .lvl = 31,
-    .species = SPECIES_DELCATTY,
+    .species = SPECIES_BLGAOGAMON,
     },
     {
     .lvl = 31,
@@ -8286,7 +8286,7 @@ static const struct TrainerMon sParty_WallyVR2[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 46,
-    .species = SPECIES_DELCATTY,
+    .species = SPECIES_BLGAOGAMON,
     .moves = {MOVE_SING, MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK}
     },
     {
@@ -8319,7 +8319,7 @@ static const struct TrainerMon sParty_WallyVR3[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 49,
-    .species = SPECIES_DELCATTY,
+    .species = SPECIES_BLGAOGAMON,
     .moves = {MOVE_SING, MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK}
     },
     {
@@ -8352,7 +8352,7 @@ static const struct TrainerMon sParty_WallyVR4[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 52,
-    .species = SPECIES_DELCATTY,
+    .species = SPECIES_BLGAOGAMON,
     .moves = {MOVE_SING, MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK}
     },
     {
@@ -8385,7 +8385,7 @@ static const struct TrainerMon sParty_WallyVR5[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 55,
-    .species = SPECIES_DELCATTY,
+    .species = SPECIES_BLGAOGAMON,
     .moves = {MOVE_SING, MOVE_ASSIST, MOVE_CHARM, MOVE_FEINT_ATTACK}
     },
     {
@@ -11623,7 +11623,7 @@ static const struct TrainerMon sParty_Gabrielle4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 35,
-    .species = SPECIES_DELCATTY,
+    .species = SPECIES_BLGAOGAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -11656,7 +11656,7 @@ static const struct TrainerMon sParty_Gabrielle5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 37,
-    .species = SPECIES_DELCATTY,
+    .species = SPECIES_BLGAOGAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),

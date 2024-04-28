@@ -4021,7 +4021,7 @@ static const union AnimCmd sAnim_Birdramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Delcatty_1[] =
+static const union AnimCmd sAnim_Blgaogamon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 46),
@@ -11116,7 +11116,7 @@ SINGLE_ANIMATION(Probopass);
 #endif //P_FAMILY_BIOTHUNMON
 #if P_FAMILY_BIRDRAMON
 SINGLE_ANIMATION(Birdramon);
-SINGLE_ANIMATION(Delcatty);
+SINGLE_ANIMATION(Blgaogamon);
 #endif //P_FAMILY_BIRDRAMON
 #if P_FAMILY_SABLEYE
 SINGLE_ANIMATION(Sableye);

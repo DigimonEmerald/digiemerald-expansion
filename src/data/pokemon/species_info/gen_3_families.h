@@ -3342,10 +3342,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Birdramon)
         .levelUpLearnset = sBirdramonLevelUpLearnset,
         .teachableLearnset = sBirdramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_DELCATTY}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_BLGAOGAMON}),
     },
 
-    [SPECIES_DELCATTY] =
+    [SPECIES_BLGAOGAMON] =
     {
         .baseHP        = 70,
         .baseAttack    = 65,
@@ -3371,9 +3371,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
         .abilities = { ABILITY_CUTE_CHARM, ABILITY_NORMALIZE, ABILITY_WONDER_SKIN },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Delcatty"),
-        .cryId = CRY_DELCATTY,
-        .natDexNum = NATIONAL_DEX_DELCATTY,
+        .speciesName = _("Blgaogamon"),
+        .cryId = CRY_BLGAOGAMON,
+        .natDexNum = NATIONAL_DEX_BLGAOGAMON,
         .categoryName = _("Prim"),
         .height = 11,
         .weight = 326,
@@ -3386,22 +3386,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Delcatty,
+        .frontPic = gMonFrontPic_Blgaogamon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Delcatty,
+        .frontAnimFrames = sAnims_Blgaogamon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Delcatty,
+        .backPic = gMonBackPic_Blgaogamon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Delcatty,
-        .shinyPalette = gMonShinyPalette_Delcatty,
-        .iconSprite = gMonIcon_Delcatty,
+        .palette = gMonPalette_Blgaogamon,
+        .shinyPalette = gMonShinyPalette_Blgaogamon,
+        .iconSprite = gMonIcon_Blgaogamon,
         .iconPalIndex = 2,
-        FOOTPRINT(Delcatty)
-        .levelUpLearnset = sDelcattyLevelUpLearnset,
-        .teachableLearnset = sDelcattyTeachableLearnset,
+        FOOTPRINT(Blgaogamon)
+        .levelUpLearnset = sBlgaogamonLevelUpLearnset,
+        .teachableLearnset = sBlgaogamonTeachableLearnset,
     },
 #endif //P_FAMILY_BIRDRAMON
 

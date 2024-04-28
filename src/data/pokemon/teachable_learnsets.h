@@ -14364,7 +14364,7 @@ static const u16 sBirdramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDelcattyTeachableLearnset[] = {
+static const u16 sBlgaogamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,

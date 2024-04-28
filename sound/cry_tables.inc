@@ -818,7 +818,7 @@ gCryTable::
 .endif @ P_FAMILY_BIOTHUNMON
 .if P_FAMILY_BIRDRAMON == TRUE
 	cry Cry_Birdramon
-	cry Cry_Delcatty
+	cry Cry_Blgaogamon
 .endif @ P_FAMILY_BIRDRAMON
 .if P_FAMILY_SABLEYE == TRUE
 	cry Cry_Sableye
@@ -3244,7 +3244,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_BIOTHUNMON
 .if P_FAMILY_BIRDRAMON == TRUE
 	cry_reverse Cry_Birdramon
-	cry_reverse Cry_Delcatty
+	cry_reverse Cry_Blgaogamon
 .endif @ P_FAMILY_BIRDRAMON
 .if P_FAMILY_SABLEYE == TRUE
 	cry_reverse Cry_Sableye

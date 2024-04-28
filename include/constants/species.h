@@ -302,7 +302,7 @@
 #define SPECIES_BIOSTEGMON                                 298
 #define SPECIES_BIOTHUNMON                                299
 #define SPECIES_BIRDRAMON                                  300
-#define SPECIES_DELCATTY                                301
+#define SPECIES_BLGAOGAMON                                301
 #define SPECIES_SABLEYE                                 302
 #define SPECIES_MAWILE                                  303
 #define SPECIES_ARON                                    304

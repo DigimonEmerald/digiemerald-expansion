@@ -75,7 +75,7 @@ SINGLE_BATTLE_TEST("Gem modifier is used for all hits of Multi Hit Moves")
 SINGLE_BATTLE_TEST("Gem is consumed if the move type is changed")
 {
     GIVEN {
-        PLAYER(SPECIES_DELCATTY) { Ability(ABILITY_NORMALIZE); Item(ITEM_NORMAL_GEM); };
+        PLAYER(SPECIES_BLGAOGAMON) { Ability(ABILITY_NORMALIZE); Item(ITEM_NORMAL_GEM); };
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN {
@@ -83,7 +83,7 @@ SINGLE_BATTLE_TEST("Gem is consumed if the move type is changed")
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-        MESSAGE("Normal Gem strengthened Delcatty's power!");
+        MESSAGE("Normal Gem strengthened Blgaogamon's power!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FEINT_ATTACK, player);
     }
 }

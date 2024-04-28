@@ -4481,13 +4481,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Birdramon[] = INCBIN_U8("graphics/pokemon/birdramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Delcatty[] = INCBIN_U32("graphics/pokemon/delcatty/anim_front.4bpp.lz");
-    const u32 gMonPalette_Delcatty[] = INCBIN_U32("graphics/pokemon/delcatty/normal.gbapal.lz");
-    const u32 gMonBackPic_Delcatty[] = INCBIN_U32("graphics/pokemon/delcatty/back.4bpp.lz");
-    const u32 gMonShinyPalette_Delcatty[] = INCBIN_U32("graphics/pokemon/delcatty/shiny.gbapal.lz");
-    const u8 gMonIcon_Delcatty[] = INCBIN_U8("graphics/pokemon/delcatty/icon.4bpp");
+    const u32 gMonFrontPic_Blgaogamon[] = INCBIN_U32("graphics/pokemon/blgaogamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Blgaogamon[] = INCBIN_U32("graphics/pokemon/blgaogamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Blgaogamon[] = INCBIN_U32("graphics/pokemon/blgaogamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Blgaogamon[] = INCBIN_U32("graphics/pokemon/blgaogamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Blgaogamon[] = INCBIN_U8("graphics/pokemon/blgaogamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Delcatty[] = INCBIN_U8("graphics/pokemon/delcatty/footprint.1bpp");
+    const u8 gMonFootprint_Blgaogamon[] = INCBIN_U8("graphics/pokemon/blgaogamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_BIRDRAMON
 
