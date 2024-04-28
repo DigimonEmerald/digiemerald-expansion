@@ -5007,14 +5007,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_GARDEVOIRITE] =
+    [ITEM_ARCADIAMON_CHAMPIONITE] =
     {
-        .name = _("Gardevoirite"),
+        .name = _("Arcadiamon_championite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Gardevoir to Mega\n"
+            "Arcadiamon_champion to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

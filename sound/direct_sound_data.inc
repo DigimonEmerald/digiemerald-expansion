@@ -2197,13 +2197,13 @@ Cry_Aquilamon::
 	.incbin "sound/direct_sound_samples/cries/aquilamon.bin"
 
 	.align 2
-Cry_Gardevoir::
-	.incbin "sound/direct_sound_samples/cries/gardevoir.bin"
+Cry_Arcadiamon_champion::
+	.incbin "sound/direct_sound_samples/cries/arcadiamon_champion.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_GardevoirMega::
-	.incbin "sound/direct_sound_samples/cries/gardevoir_mega.bin"
+Cry_Arcadiamon_championMega::
+	.incbin "sound/direct_sound_samples/cries/arcadiamon_champion_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2

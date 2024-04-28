@@ -3764,7 +3764,7 @@ static const union AnimCmd sAnim_Aquilamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Gardevoir_1[] =
+static const union AnimCmd sAnim_Arcadiamon_champion_1[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_FRAME(1, 30),
@@ -3773,7 +3773,7 @@ static const union AnimCmd sAnim_Gardevoir_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(GardevoirMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Arcadiamon_championMega);
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GEN_4_CROSS_EVOS
@@ -11070,9 +11070,9 @@ SINGLE_ANIMATION(Ankylomon);
 #if P_FAMILY_APEMON
 SINGLE_ANIMATION(Apemon);
 SINGLE_ANIMATION(Aquilamon);
-SINGLE_ANIMATION(Gardevoir);
+SINGLE_ANIMATION(Arcadiamon_champion);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(GardevoirMega);
+SINGLE_ANIMATION(Arcadiamon_championMega);
 #endif //P_MEGA_EVOLUTIONS
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Gallade);

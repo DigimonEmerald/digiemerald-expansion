@@ -2098,11 +2098,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Aquilamon)
         .levelUpLearnset = sAquilamonLevelUpLearnset,
         .teachableLearnset = sAquilamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GARDEVOIR},
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ARCADIAMON_CHAMPION},
                                 {EVO_ITEM_MALE, ITEM_DAWN_STONE, SPECIES_GALLADE}),
     },
 
-    [SPECIES_GARDEVOIR] =
+    [SPECIES_ARCADIAMON_CHAMPION] =
     {
         .baseHP        = 68,
         .baseAttack    = 65,
@@ -2127,9 +2127,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = APEMON_FAMILY_EGG_GROUPS,
         .abilities = { ABILITY_SYNCHRONIZE, ABILITY_TRACE, ABILITY_TELEPATHY },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Gardevoir"),
-        .cryId = CRY_GARDEVOIR,
-        .natDexNum = NATIONAL_DEX_GARDEVOIR,
+        .speciesName = _("Arcadiamon_champion"),
+        .cryId = CRY_ARCADIAMON_CHAMPION,
+        .natDexNum = NATIONAL_DEX_ARCADIAMON_CHAMPION,
         .categoryName = _("Embrace"),
         .height = 16,
         .weight = 484,
@@ -2142,28 +2142,28 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Gardevoir,
+        .frontPic = gMonFrontPic_Arcadiamon_champion,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Gardevoir,
+        .frontAnimFrames = sAnims_Arcadiamon_champion,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Gardevoir,
+        .backPic = gMonBackPic_Arcadiamon_champion,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Gardevoir,
-        .shinyPalette = gMonShinyPalette_Gardevoir,
-        .iconSprite = gMonIcon_Gardevoir,
+        .palette = gMonPalette_Arcadiamon_champion,
+        .shinyPalette = gMonShinyPalette_Arcadiamon_champion,
+        .iconSprite = gMonIcon_Arcadiamon_champion,
         .iconPalIndex = 1,
-        FOOTPRINT(Gardevoir)
-        .levelUpLearnset = sGardevoirLevelUpLearnset,
-        .teachableLearnset = sGardevoirTeachableLearnset,
-        .formSpeciesIdTable = sGardevoirFormSpeciesIdTable,
-        .formChangeTable = sGardevoirFormChangeTable,
+        FOOTPRINT(Arcadiamon_champion)
+        .levelUpLearnset = sArcadiamon_championLevelUpLearnset,
+        .teachableLearnset = sArcadiamon_championTeachableLearnset,
+        .formSpeciesIdTable = sArcadiamon_championFormSpeciesIdTable,
+        .formChangeTable = sArcadiamon_championFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_GARDEVOIR_MEGA] =
+    [SPECIES_ARCADIAMON_CHAMPION_MEGA] =
     {
         .baseHP        = 68,
         .baseAttack    = 85,
@@ -2182,14 +2182,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = APEMON_FAMILY_EGG_GROUPS,
         .abilities = { ABILITY_PIXILATE, ABILITY_PIXILATE, ABILITY_PIXILATE },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Gardevoir"),
-        .cryId = CRY_GARDEVOIR_MEGA,
-        .natDexNum = NATIONAL_DEX_GARDEVOIR,
+        .speciesName = _("Arcadiamon_champion"),
+        .cryId = CRY_ARCADIAMON_CHAMPION_MEGA,
+        .natDexNum = NATIONAL_DEX_ARCADIAMON_CHAMPION,
         .categoryName = _("Embrace"),
         .height = 16,
         .weight = 484,
         .description = COMPOUND_STRING(
-            "By opening its heart, Mega Gardevoir\n"
+            "By opening its heart, Mega Arcadiamon_champion\n"
             "becomes able to use tremendous psychic\n"
             "power. The red plate in its chest is said to\n"
             "be a physical manifestation of its heart."),
@@ -2197,25 +2197,25 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_GardevoirMega,
+        .frontPic = gMonFrontPic_Arcadiamon_championMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_GardevoirMega,
+        .frontAnimFrames = sAnims_Arcadiamon_championMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_GardevoirMega,
+        .backPic = gMonBackPic_Arcadiamon_championMega,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_GREEN,
-        .palette = gMonPalette_GardevoirMega,
-        .shinyPalette = gMonShinyPalette_GardevoirMega,
-        .iconSprite = gMonIcon_GardevoirMega,
+        .palette = gMonPalette_Arcadiamon_championMega,
+        .shinyPalette = gMonShinyPalette_Arcadiamon_championMega,
+        .iconSprite = gMonIcon_Arcadiamon_championMega,
         .iconPalIndex = 1,
-        FOOTPRINT(Gardevoir)
+        FOOTPRINT(Arcadiamon_champion)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sGardevoirLevelUpLearnset,
-        .teachableLearnset = sGardevoirTeachableLearnset,
-        .formSpeciesIdTable = sGardevoirFormSpeciesIdTable,
-        .formChangeTable = sGardevoirFormChangeTable,
+        .levelUpLearnset = sArcadiamon_championLevelUpLearnset,
+        .teachableLearnset = sArcadiamon_championTeachableLearnset,
+        .formSpeciesIdTable = sArcadiamon_championFormSpeciesIdTable,
+        .formChangeTable = sArcadiamon_championFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 

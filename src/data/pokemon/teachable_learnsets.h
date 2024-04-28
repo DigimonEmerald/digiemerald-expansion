@@ -13522,7 +13522,7 @@ static const u16 sAquilamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGardevoirTeachableLearnset[] = {
+static const u16 sArcadiamon_championTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,

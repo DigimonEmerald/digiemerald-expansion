@@ -772,9 +772,9 @@ gCryTable::
 .if P_FAMILY_APEMON == TRUE
 	cry Cry_Apemon
 	cry Cry_Aquilamon
-	cry Cry_Gardevoir
+	cry Cry_Arcadiamon_champion
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_GardevoirMega
+	cry Cry_Arcadiamon_championMega
 .endif @ P_MEGA_EVOLUTIONS
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Gallade
@@ -3198,9 +3198,9 @@ gCryTable_Reverse::
 .if P_FAMILY_APEMON == TRUE
 	cry_reverse Cry_Apemon
 	cry_reverse Cry_Aquilamon
-	cry_reverse Cry_Gardevoir
+	cry_reverse Cry_Arcadiamon_champion
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_GardevoirMega
+	cry_reverse Cry_Arcadiamon_championMega
 .endif @ P_MEGA_EVOLUTIONS
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Gallade

@@ -103,7 +103,7 @@ SINGLE_BATTLE_TEST("Ultra Burst and Mega Evolution can happen on the same turn")
 {
     GIVEN {
         PLAYER(SPECIES_NECROZMA_DUSK_MANE) { Item(ITEM_ULTRANECROZIUM_Z); Speed(3); }
-        OPPONENT(SPECIES_GARDEVOIR) { Item(ITEM_GARDEVOIRITE); Speed(2); }
+        OPPONENT(SPECIES_ARCADIAMON_CHAMPION) { Item(ITEM_ARCADIAMON_CHAMPIONITE); Speed(2); }
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, ultraBurst: TRUE); MOVE(opponent, MOVE_CELEBRATE, megaEvolve: TRUE); }
     } SCENE {
@@ -111,11 +111,11 @@ SINGLE_BATTLE_TEST("Ultra Burst and Mega Evolution can happen on the same turn")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ULTRA_BURST, player);
         MESSAGE("Necrozma regained its true power through Ultra Burst!");
 
-        MESSAGE("Foe Gardevoir's Gardevoirite is reacting to 2's Mega Ring!");
+        MESSAGE("Foe Arcadiamon_champion's Arcadiamon_championite is reacting to 2's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponent);
-        MESSAGE("Foe Gardevoir has Mega Evolved into Mega Gardevoir!");
+        MESSAGE("Foe Arcadiamon_champion has Mega Evolved into Mega Arcadiamon_champion!");
     } THEN {
         EXPECT_EQ(player->species, SPECIES_NECROZMA_ULTRA);
-        EXPECT_EQ(opponent->species, SPECIES_GARDEVOIR_MEGA);
+        EXPECT_EQ(opponent->species, SPECIES_ARCADIAMON_CHAMPION_MEGA);
     }
 }

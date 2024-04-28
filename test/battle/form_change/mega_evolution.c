@@ -22,14 +22,14 @@ DOUBLE_BATTLE_TEST("Mega Evolution's order is determined by Speed - opponent fas
     GIVEN {
         PLAYER(SPECIES_BOMMON) { Item(ITEM_BOMMONITE); Speed(1); }
         PLAYER(SPECIES_LOPMONX) { Speed(3); }
-        OPPONENT(SPECIES_GARDEVOIR) { Item(ITEM_GARDEVOIRITE); Speed(3); }
+        OPPONENT(SPECIES_ARCADIAMON_CHAMPION) { Item(ITEM_ARCADIAMON_CHAMPIONITE); Speed(3); }
         OPPONENT(SPECIES_LOPMONX) { Speed(4); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_CELEBRATE, megaEvolve: TRUE); MOVE(playerLeft, MOVE_CELEBRATE, megaEvolve: TRUE); }
     } SCENE {
-        MESSAGE("Foe Gardevoir's Gardevoirite is reacting to 2's Mega Ring!");
+        MESSAGE("Foe Arcadiamon_champion's Arcadiamon_championite is reacting to 2's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponentLeft);
-        MESSAGE("Foe Gardevoir has Mega Evolved into Mega Gardevoir!");
+        MESSAGE("Foe Arcadiamon_champion has Mega Evolved into Mega Arcadiamon_champion!");
         MESSAGE("Bommon's Bommonite is reacting to 1's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, playerLeft);
         MESSAGE("Bommon has Mega Evolved into Mega Bommon!");
@@ -41,7 +41,7 @@ DOUBLE_BATTLE_TEST("Mega Evolution's order is determined by Speed - player faste
     GIVEN {
         PLAYER(SPECIES_BOMMON) { Item(ITEM_BOMMONITE); Speed(5); }
         PLAYER(SPECIES_LOPMONX) { Speed(3); }
-        OPPONENT(SPECIES_GARDEVOIR) { Item(ITEM_GARDEVOIRITE); Speed(2); }
+        OPPONENT(SPECIES_ARCADIAMON_CHAMPION) { Item(ITEM_ARCADIAMON_CHAMPIONITE); Speed(2); }
         OPPONENT(SPECIES_LOPMONX) { Speed(4); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_CELEBRATE, megaEvolve: TRUE); MOVE(playerLeft, MOVE_CELEBRATE, megaEvolve: TRUE); }
@@ -49,9 +49,9 @@ DOUBLE_BATTLE_TEST("Mega Evolution's order is determined by Speed - player faste
         MESSAGE("Bommon's Bommonite is reacting to 1's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, playerLeft);
         MESSAGE("Bommon has Mega Evolved into Mega Bommon!");
-        MESSAGE("Foe Gardevoir's Gardevoirite is reacting to 2's Mega Ring!");
+        MESSAGE("Foe Arcadiamon_champion's Arcadiamon_championite is reacting to 2's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponentLeft);
-        MESSAGE("Foe Gardevoir has Mega Evolved into Mega Gardevoir!");
+        MESSAGE("Foe Arcadiamon_champion has Mega Evolved into Mega Arcadiamon_champion!");
     }
 }
 
@@ -75,12 +75,12 @@ SINGLE_BATTLE_TEST("Mega Evolution affects turn order")
 {
     GIVEN {
         ASSUME(B_MEGA_EVO_TURN_ORDER >= GEN_7);
-        PLAYER(SPECIES_GARDEVOIR) { Item(ITEM_GARDEVOIRITE); Speed(105); }
+        PLAYER(SPECIES_ARCADIAMON_CHAMPION) { Item(ITEM_ARCADIAMON_CHAMPIONITE); Speed(105); }
         OPPONENT(SPECIES_LOPMONX) { Speed(106); }
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, megaEvolve: TRUE); }
     } SCENE {
-        MESSAGE("Gardevoir used Celebrate!");
+        MESSAGE("Arcadiamon_champion used Celebrate!");
         MESSAGE("Foe Lopmonx used Celebrate!");
     } THEN {
         ASSUME(player->speed == 205);
@@ -137,7 +137,7 @@ SINGLE_BATTLE_TEST("Regular Mega Evolution and Fervent Wish Mega Evolution can h
 {
     GIVEN {
         PLAYER(SPECIES_RAYQUAZA) { Moves(MOVE_DRAGON_ASCENT, MOVE_CELEBRATE); Speed(3); }
-        OPPONENT(SPECIES_GARDEVOIR) { Item(ITEM_GARDEVOIRITE); Speed(2); }
+        OPPONENT(SPECIES_ARCADIAMON_CHAMPION) { Item(ITEM_ARCADIAMON_CHAMPIONITE); Speed(2); }
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, megaEvolve: TRUE); MOVE(opponent, MOVE_CELEBRATE, megaEvolve: TRUE); }
     } SCENE {
@@ -145,11 +145,11 @@ SINGLE_BATTLE_TEST("Regular Mega Evolution and Fervent Wish Mega Evolution can h
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, player);
         MESSAGE("Rayquaza has Mega Evolved into Mega Rayquaza!");
 
-        MESSAGE("Foe Gardevoir's Gardevoirite is reacting to 2's Mega Ring!");
+        MESSAGE("Foe Arcadiamon_champion's Arcadiamon_championite is reacting to 2's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponent);
-        MESSAGE("Foe Gardevoir has Mega Evolved into Mega Gardevoir!");
+        MESSAGE("Foe Arcadiamon_champion has Mega Evolved into Mega Arcadiamon_champion!");
     } THEN {
         EXPECT_EQ(player->species, SPECIES_RAYQUAZA_MEGA);
-        EXPECT_EQ(opponent->species, SPECIES_GARDEVOIR_MEGA);
+        EXPECT_EQ(opponent->species, SPECIES_ARCADIAMON_CHAMPION_MEGA);
     }
 }

@@ -1272,7 +1272,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [3] =
                     {
-                        .species = SPECIES_GARDEVOIR,
+                        .species = SPECIES_ARCADIAMON_CHAMPION,
                         .heldItem = ITEM_SALAC_BERRY,
                         .moves = {MOVE_SKILL_SWAP, MOVE_DREAM_EATER, MOVE_HYPNOSIS, MOVE_PROTECT},
                         .speedEV = 255,
@@ -1286,7 +1286,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 5,
                         .abilityNum = 1,
                         .personality = 0xF,
-                        .nickname = _("GARDEVOIR"),
+                        .nickname = _("ARCADIAMON_CHAMPION"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                     [4] =
@@ -3936,7 +3936,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [4] =
                                         {
-                                            .species = SPECIES_GARDEVOIR,
+                                            .species = SPECIES_ARCADIAMON_CHAMPION,
                                             .heldItem = ITEM_SALAC_BERRY,
                                             .moves = {MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_MAGICAL_LEAF, MOVE_DESTINY_BOND},
                                             .hpEV = 6,
@@ -3951,7 +3951,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0xF,
-                                            .nickname = _("GARDEVOIR"),
+                                            .nickname = _("ARCADIAMON_CHAMPION"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [5] =

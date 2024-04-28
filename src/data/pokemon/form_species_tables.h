@@ -770,10 +770,10 @@ static const u16 sTsukaimonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_TOYAGUMON
 
 #if P_FAMILY_APEMON
-static const u16 sGardevoirFormSpeciesIdTable[] = {
-    SPECIES_GARDEVOIR,
+static const u16 sArcadiamon_championFormSpeciesIdTable[] = {
+    SPECIES_ARCADIAMON_CHAMPION,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_GARDEVOIR_MEGA,
+    SPECIES_ARCADIAMON_CHAMPION_MEGA,
 #endif
     FORM_SPECIES_END,
 };

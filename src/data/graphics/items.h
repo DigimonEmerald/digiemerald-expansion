@@ -886,8 +886,8 @@ const u32 gItemIconPalette_Tentomonite[] = INCBIN_U32("graphics/items/icon_palet
 const u32 gItemIcon_Terriermon_xite[] = INCBIN_U32("graphics/items/icons/terriermon_xite.4bpp.lz");
 const u32 gItemIconPalette_Terriermon_xite[] = INCBIN_U32("graphics/items/icon_palettes/terriermon_xite.gbapal.lz");
 
-const u32 gItemIcon_Gardevoirite[] = INCBIN_U32("graphics/items/icons/gardevoirite.4bpp.lz");
-const u32 gItemIconPalette_Gardevoirite[] = INCBIN_U32("graphics/items/icon_palettes/gardevoirite.gbapal.lz");
+const u32 gItemIcon_Arcadiamon_championite[] = INCBIN_U32("graphics/items/icons/arcadiamon_championite.4bpp.lz");
+const u32 gItemIconPalette_Arcadiamon_championite[] = INCBIN_U32("graphics/items/icon_palettes/arcadiamon_championite.gbapal.lz");
 
 const u32 gItemIcon_Sablenite[] = INCBIN_U32("graphics/items/icons/sablenite.4bpp.lz");
 const u32 gItemIconPalette_Sablenite[] = INCBIN_U32("graphics/items/icon_palettes/sablenite.gbapal.lz");
