@@ -4117,13 +4117,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_VorvomonF[] = INCBIN_U32("graphics/pokemon/vorvomon/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_VorvomonF[] = INCBIN_U32("graphics/pokemon/vorvomon/backf.4bpp.lz");
 
-    const u32 gMonFrontPic_Cascoon[] = INCBIN_U32("graphics/pokemon/cascoon/anim_front.4bpp.lz");
-    const u32 gMonPalette_Cascoon[] = INCBIN_U32("graphics/pokemon/cascoon/normal.gbapal.lz");
-    const u32 gMonBackPic_Cascoon[] = INCBIN_U32("graphics/pokemon/cascoon/back.4bpp.lz");
-    const u32 gMonShinyPalette_Cascoon[] = INCBIN_U32("graphics/pokemon/cascoon/shiny.gbapal.lz");
-    const u8 gMonIcon_Cascoon[] = INCBIN_U8("graphics/pokemon/cascoon/icon.4bpp");
+    const u32 gMonFrontPic_Wormmon[] = INCBIN_U32("graphics/pokemon/wormmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Wormmon[] = INCBIN_U32("graphics/pokemon/wormmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Wormmon[] = INCBIN_U32("graphics/pokemon/wormmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Wormmon[] = INCBIN_U32("graphics/pokemon/wormmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Wormmon[] = INCBIN_U8("graphics/pokemon/wormmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Cascoon[] = INCBIN_U8("graphics/pokemon/cascoon/footprint.1bpp");
+    const u8 gMonFootprint_Wormmon[] = INCBIN_U8("graphics/pokemon/wormmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Dustox[] = INCBIN_U32("graphics/pokemon/dustox/anim_front.4bpp.lz");

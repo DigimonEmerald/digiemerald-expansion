@@ -128,7 +128,7 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(VEEMON),
     HOENN_TO_NATIONAL(VEMMON),
     HOENN_TO_NATIONAL(VORVOMON),
-    HOENN_TO_NATIONAL(CASCOON),
+    HOENN_TO_NATIONAL(WORMMON),
     HOENN_TO_NATIONAL(DUSTOX),
     HOENN_TO_NATIONAL(LOTAD),
     HOENN_TO_NATIONAL(LOMBRE),
@@ -4251,7 +4251,7 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
                 if (evolutions[i].param <= level && (upperPersonality % 10) <= 4)
                     targetSpecies = evolutions[i].targetSpecies;
                 break;
-            case EVO_LEVEL_CASCOON:
+            case EVO_LEVEL_WORMMON:
                 if (evolutions[i].param <= level && (upperPersonality % 10) > 4)
                     targetSpecies = evolutions[i].targetSpecies;
                 break;

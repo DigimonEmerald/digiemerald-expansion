@@ -1150,7 +1150,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sVeemonLevelUpLearnset,
         .teachableLearnset = sVeemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL_VEMMON, 7, SPECIES_VEMMON},
-                                {EVO_LEVEL_CASCOON, 7, SPECIES_CASCOON}),
+                                {EVO_LEVEL_WORMMON, 7, SPECIES_WORMMON}),
     },
 
     [SPECIES_VEMMON] =
@@ -1273,7 +1273,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sVorvomonTeachableLearnset,
     },
 
-    [SPECIES_CASCOON] =
+    [SPECIES_WORMMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 35,
@@ -1298,9 +1298,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Cascoon"),
-        .cryId = CRY_CASCOON,
-        .natDexNum = NATIONAL_DEX_CASCOON,
+        .speciesName = _("Wormmon"),
+        .cryId = CRY_WORMMON,
+        .natDexNum = NATIONAL_DEX_WORMMON,
         .categoryName = _("Cocoon"),
         .height = 7,
         .weight = 115,
@@ -1313,23 +1313,23 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Cascoon,
+        .frontPic = gMonFrontPic_Wormmon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Cascoon,
+        .frontAnimFrames = sAnims_Wormmon,
         .frontAnimId = ANIM_V_SLIDE,
-        .backPic = gMonBackPic_Cascoon,
+        .backPic = gMonBackPic_Wormmon,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 15,
         .backAnimId = BACK_ANIM_H_SHAKE,
-        .palette = gMonPalette_Cascoon,
-        .shinyPalette = gMonShinyPalette_Cascoon,
-        .iconSprite = gMonIcon_Cascoon,
+        .palette = gMonPalette_Wormmon,
+        .shinyPalette = gMonShinyPalette_Wormmon,
+        .iconSprite = gMonIcon_Wormmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Cascoon)
+        FOOTPRINT(Wormmon)
         .tmIlliterate = TRUE,
-        .levelUpLearnset = sCascoonLevelUpLearnset,
-        .teachableLearnset = sCascoonTeachableLearnset,
+        .levelUpLearnset = sWormmonLevelUpLearnset,
+        .teachableLearnset = sWormmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_DUSTOX}),
     },
 

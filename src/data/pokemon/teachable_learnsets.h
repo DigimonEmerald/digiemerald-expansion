@@ -13038,7 +13038,7 @@ static const u16 sVorvomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sCascoonTeachableLearnset[] = {
+static const u16 sWormmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
