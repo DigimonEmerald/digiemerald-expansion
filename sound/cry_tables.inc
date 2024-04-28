@@ -771,7 +771,7 @@ gCryTable::
 .endif @ P_FAMILY_ANGEMON
 .if P_FAMILY_APEMON == TRUE
 	cry Cry_Apemon
-	cry Cry_Kirlia
+	cry Cry_Aquilamon
 	cry Cry_Gardevoir
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_GardevoirMega
@@ -3197,7 +3197,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_ANGEMON
 .if P_FAMILY_APEMON == TRUE
 	cry_reverse Cry_Apemon
-	cry_reverse Cry_Kirlia
+	cry_reverse Cry_Aquilamon
 	cry_reverse Cry_Gardevoir
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_GardevoirMega

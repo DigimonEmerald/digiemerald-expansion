@@ -282,7 +282,7 @@
 #define SPECIES_ANGEMON                                 278
 #define SPECIES_ANKYLOMON                                279
 #define SPECIES_APEMON                                   280
-#define SPECIES_KIRLIA                                  281
+#define SPECIES_AQUILAMON                                  281
 #define SPECIES_GARDEVOIR                               282
 #define SPECIES_SURSKIT                                 283
 #define SPECIES_MASQUERAIN                              284

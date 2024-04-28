@@ -1145,8 +1145,8 @@ static const struct SpriteFrameImage sPicTable_Dusclops[] = {
     overworld_ascending_frames(gObjectEventPic_Dusclops, 2, 4),
 };
 
-static const struct SpriteFrameImage sPicTable_Kirlia[] = {
-    overworld_ascending_frames(gObjectEventPic_Kirlia, 2, 4),
+static const struct SpriteFrameImage sPicTable_Aquilamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Aquilamon, 2, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_UnionRoomAttendant[] = {

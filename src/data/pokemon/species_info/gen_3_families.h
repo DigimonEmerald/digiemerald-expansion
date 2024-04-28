@@ -2045,10 +2045,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Apemon)
         .levelUpLearnset = sApemonLevelUpLearnset,
         .teachableLearnset = sApemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_KIRLIA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_AQUILAMON}),
     },
 
-    [SPECIES_KIRLIA] =
+    [SPECIES_AQUILAMON] =
     {
         .baseHP        = 38,
         .baseAttack    = 35,
@@ -2067,14 +2067,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = APEMON_FAMILY_EGG_GROUPS,
         .abilities = { ABILITY_SYNCHRONIZE, ABILITY_TRACE, ABILITY_TELEPATHY },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Kirlia"),
-        .cryId = CRY_KIRLIA,
-        .natDexNum = NATIONAL_DEX_KIRLIA,
+        .speciesName = _("Aquilamon"),
+        .cryId = CRY_AQUILAMON,
+        .natDexNum = NATIONAL_DEX_AQUILAMON,
         .categoryName = _("Emotion"),
         .height = 8,
         .weight = 202,
         .description = COMPOUND_STRING(
-            "A Kirlia has the psychic power to create \n"
+            "A Aquilamon has the psychic power to create \n"
             "a rip in the dimensions and see into the\n"
             "future. It is said to dance with pleasure\n"
             "on sunny mornings."),
@@ -2082,22 +2082,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Kirlia,
+        .frontPic = gMonFrontPic_Aquilamon,
         .frontPicSize = MON_COORDS_SIZE(32, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Kirlia,
+        .frontAnimFrames = sAnims_Aquilamon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Kirlia,
+        .backPic = gMonBackPic_Aquilamon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Kirlia,
-        .shinyPalette = gMonShinyPalette_Kirlia,
-        .iconSprite = gMonIcon_Kirlia,
+        .palette = gMonPalette_Aquilamon,
+        .shinyPalette = gMonShinyPalette_Aquilamon,
+        .iconSprite = gMonIcon_Aquilamon,
         .iconPalIndex = 1,
-        FOOTPRINT(Kirlia)
-        .levelUpLearnset = sKirliaLevelUpLearnset,
-        .teachableLearnset = sKirliaTeachableLearnset,
+        FOOTPRINT(Aquilamon)
+        .levelUpLearnset = sAquilamonLevelUpLearnset,
+        .teachableLearnset = sAquilamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GARDEVOIR},
                                 {EVO_ITEM_MALE, ITEM_DAWN_STONE, SPECIES_GALLADE}),
     },

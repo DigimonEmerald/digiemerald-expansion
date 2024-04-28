@@ -4256,13 +4256,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Apemon[] = INCBIN_U8("graphics/pokemon/apemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Kirlia[] = INCBIN_U32("graphics/pokemon/kirlia/anim_front.4bpp.lz");
-    const u32 gMonPalette_Kirlia[] = INCBIN_U32("graphics/pokemon/kirlia/normal.gbapal.lz");
-    const u32 gMonBackPic_Kirlia[] = INCBIN_U32("graphics/pokemon/kirlia/back.4bpp.lz");
-    const u32 gMonShinyPalette_Kirlia[] = INCBIN_U32("graphics/pokemon/kirlia/shiny.gbapal.lz");
-    const u8 gMonIcon_Kirlia[] = INCBIN_U8("graphics/pokemon/kirlia/icon.4bpp");
+    const u32 gMonFrontPic_Aquilamon[] = INCBIN_U32("graphics/pokemon/aquilamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Aquilamon[] = INCBIN_U32("graphics/pokemon/aquilamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Aquilamon[] = INCBIN_U32("graphics/pokemon/aquilamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Aquilamon[] = INCBIN_U32("graphics/pokemon/aquilamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Aquilamon[] = INCBIN_U8("graphics/pokemon/aquilamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Kirlia[] = INCBIN_U8("graphics/pokemon/kirlia/footprint.1bpp");
+    const u8 gMonFootprint_Aquilamon[] = INCBIN_U8("graphics/pokemon/aquilamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Gardevoir[] = INCBIN_U32("graphics/pokemon/gardevoir/anim_front.4bpp.lz");

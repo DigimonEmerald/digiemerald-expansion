@@ -13475,7 +13475,7 @@ static const u16 sApemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sKirliaTeachableLearnset[] = {
+static const u16 sAquilamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,

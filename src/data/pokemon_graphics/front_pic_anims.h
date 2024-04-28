@@ -3756,7 +3756,7 @@ static const union AnimCmd sAnim_Apemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Kirlia_1[] =
+static const union AnimCmd sAnim_Aquilamon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 39),
@@ -11069,7 +11069,7 @@ SINGLE_ANIMATION(Ankylomon);
 #endif //P_FAMILY_ANGEMON
 #if P_FAMILY_APEMON
 SINGLE_ANIMATION(Apemon);
-SINGLE_ANIMATION(Kirlia);
+SINGLE_ANIMATION(Aquilamon);
 SINGLE_ANIMATION(Gardevoir);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(GardevoirMega);
