@@ -1648,7 +1648,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
 #if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
-    [SPECIES_AZURILL] =
+    [SPECIES_BIOSTEGMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 20,
@@ -1671,9 +1671,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_THICK_FAT, ABILITY_HUGE_POWER, ABILITY_SAP_SIPPER },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Azurill"),
-        .cryId = CRY_AZURILL,
-        .natDexNum = NATIONAL_DEX_AZURILL,
+        .speciesName = _("Biostegmon"),
+        .cryId = CRY_BIOSTEGMON,
+        .natDexNum = NATIONAL_DEX_BIOSTEGMON,
         .categoryName = _("Polka Dot"),
         .height = 2,
         .weight = 20,
@@ -1686,22 +1686,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 23,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Azurill,
+        .frontPic = gMonFrontPic_Biostegmon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Azurill,
+        .frontAnimFrames = sAnims_Biostegmon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Azurill,
+        .backPic = gMonBackPic_Biostegmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Azurill,
-        .shinyPalette = gMonShinyPalette_Azurill,
-        .iconSprite = gMonIcon_Azurill,
+        .palette = gMonPalette_Biostegmon,
+        .shinyPalette = gMonShinyPalette_Biostegmon,
+        .iconSprite = gMonIcon_Biostegmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Azurill)
-        .levelUpLearnset = sAzurillLevelUpLearnset,
-        .teachableLearnset = sAzurillTeachableLearnset,
+        FOOTPRINT(Biostegmon)
+        .levelUpLearnset = sBiostegmonLevelUpLearnset,
+        .teachableLearnset = sBiostegmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_JAZAMON}),
     },
 #endif //P_GEN_3_CROSS_EVOS

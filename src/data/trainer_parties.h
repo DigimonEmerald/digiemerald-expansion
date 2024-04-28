@@ -622,12 +622,12 @@ static const struct TrainerMon sParty_Lola1[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 12,
-    .species = SPECIES_AZURILL,
+    .species = SPECIES_BIOSTEGMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 12,
-    .species = SPECIES_AZURILL,
+    .species = SPECIES_BIOSTEGMON,
     }
 };
 
@@ -709,7 +709,7 @@ static const struct TrainerMon sParty_Ricky1[] = {
 static const struct TrainerMon sParty_Simon[] = {
     {
     .lvl = 12,
-    .species = SPECIES_AZURILL,
+    .species = SPECIES_BIOSTEGMON,
     },
     {
     .lvl = 12,
@@ -3817,7 +3817,7 @@ static const struct TrainerMon sParty_Bethany[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 35,
-    .species = SPECIES_AZURILL,
+    .species = SPECIES_BIOSTEGMON,
     .heldItem = ITEM_ORAN_BERRY
     },
     {

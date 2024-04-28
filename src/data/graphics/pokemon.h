@@ -2896,13 +2896,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
 #if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
-    const u32 gMonFrontPic_Azurill[] = INCBIN_U32("graphics/pokemon/azurill/anim_front.4bpp.lz");
-    const u32 gMonPalette_Azurill[] = INCBIN_U32("graphics/pokemon/azurill/normal.gbapal.lz");
-    const u32 gMonBackPic_Azurill[] = INCBIN_U32("graphics/pokemon/azurill/back.4bpp.lz");
-    const u32 gMonShinyPalette_Azurill[] = INCBIN_U32("graphics/pokemon/azurill/shiny.gbapal.lz");
-    const u8 gMonIcon_Azurill[] = INCBIN_U8("graphics/pokemon/azurill/icon.4bpp");
+    const u32 gMonFrontPic_Biostegmon[] = INCBIN_U32("graphics/pokemon/biostegmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Biostegmon[] = INCBIN_U32("graphics/pokemon/biostegmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Biostegmon[] = INCBIN_U32("graphics/pokemon/biostegmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Biostegmon[] = INCBIN_U32("graphics/pokemon/biostegmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Biostegmon[] = INCBIN_U8("graphics/pokemon/biostegmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Azurill[] = INCBIN_U8("graphics/pokemon/azurill/footprint.1bpp");
+    const u8 gMonFootprint_Biostegmon[] = INCBIN_U8("graphics/pokemon/biostegmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_3_CROSS_EVOS
 

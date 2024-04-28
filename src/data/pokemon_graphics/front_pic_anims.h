@@ -2623,7 +2623,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(ImpmonMega);
 
 #if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
-static const union AnimCmd sAnim_Azurill_1[] =
+static const union AnimCmd sAnim_Biostegmon_1[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 12),
@@ -10801,7 +10801,7 @@ SINGLE_ANIMATION(ImpmonMega);
 #endif //P_FAMILY_HYOKOMON
 #if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
-SINGLE_ANIMATION(Azurill);
+SINGLE_ANIMATION(Biostegmon);
 #endif //P_GEN_3_CROSS_EVOS
 SINGLE_ANIMATION(Jazamon);
 SINGLE_ANIMATION(Jellymon);

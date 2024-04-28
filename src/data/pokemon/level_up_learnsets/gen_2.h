@@ -3937,7 +3937,7 @@ static const struct LevelUpMove sImpmonLevelUpLearnset[] = {
 
 #if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
-static const struct LevelUpMove sAzurillLevelUpLearnset[] = {
+static const struct LevelUpMove sBiostegmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
     LEVEL_UP_MOVE( 3, MOVE_CHARM),
     LEVEL_UP_MOVE( 6, MOVE_TAIL_WHIP),

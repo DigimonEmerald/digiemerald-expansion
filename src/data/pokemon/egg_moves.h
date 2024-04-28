@@ -1496,7 +1496,7 @@ const u16 gEggMoves[] = {
 
 #if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
-    egg_moves(AZURILL,
+    egg_moves(BIOSTEGMON,
         MOVE_ENCORE,
         MOVE_SING,
         MOVE_REFRESH,

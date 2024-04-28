@@ -1606,8 +1606,8 @@ Cry_ImpmonMega::
 .if P_FAMILY_JAZAMON == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
 	.align 2
-Cry_Azurill::
-	.incbin "sound/direct_sound_samples/cries/azurill.bin"
+Cry_Biostegmon::
+	.incbin "sound/direct_sound_samples/cries/biostegmon.bin"
 .endif @ P_GEN_3_CROSS_EVOS
 
 	.align 2

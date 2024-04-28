@@ -133,7 +133,7 @@ DOUBLE_BATTLE_TEST("Intimidate activates on an empty slot")
         PLAYER(SPECIES_WYNAUT);
         PLAYER(SPECIES_SALAMON_X) { Ability(ABILITY_INTIMIDATE); }
         OPPONENT(SPECIES_APEMON);
-        OPPONENT(SPECIES_AZURILL);
+        OPPONENT(SPECIES_BIOSTEGMON);
     } WHEN {
         TURN {
             SWITCH(playerLeft, 2);
@@ -158,7 +158,7 @@ DOUBLE_BATTLE_TEST("Intimidate activates on an empty slot")
             MESSAGE("Salamon_x's Intimidate cuts Foe Apemon's attack!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("Salamon_x's Intimidate cuts Foe Azurill's attack!");
+        MESSAGE("Salamon_x's Intimidate cuts Foe Biostegmon's attack!");
     }
 }
 

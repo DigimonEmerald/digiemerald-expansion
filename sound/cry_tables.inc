@@ -518,7 +518,7 @@ gCryTable::
 .endif @ P_FAMILY_HYOKOMON
 .if P_FAMILY_JAZAMON == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
-	cry Cry_Azurill
+	cry Cry_Biostegmon
 .endif @ P_GEN_3_CROSS_EVOS
 	cry Cry_Jazamon
 	cry Cry_Jellymon
@@ -2944,7 +2944,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_HYOKOMON
 .if P_FAMILY_JAZAMON == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
-	cry_reverse Cry_Azurill
+	cry_reverse Cry_Biostegmon
 .endif @ P_GEN_3_CROSS_EVOS
 	cry_reverse Cry_Jazamon
 	cry_reverse Cry_Jellymon

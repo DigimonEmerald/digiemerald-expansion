@@ -9500,7 +9500,7 @@ static const u16 sImpmonTeachableLearnset[] = {
 
 #if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
-static const u16 sAzurillTeachableLearnset[] = {
+static const u16 sBiostegmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DOUBLE_TEAM,

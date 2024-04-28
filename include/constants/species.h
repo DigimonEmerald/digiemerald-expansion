@@ -299,7 +299,7 @@
 #define SPECIES_TRAILMON_BATTLE_ARMAMENT                                 295
 #define SPECIES_BETGAMAMON                                296
 #define SPECIES_BIOQUETMON                                297
-#define SPECIES_AZURILL                                 298
+#define SPECIES_BIOSTEGMON                                 298
 #define SPECIES_NOSEPASS                                299
 #define SPECIES_SKITTY                                  300
 #define SPECIES_DELCATTY                                301
