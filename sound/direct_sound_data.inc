@@ -2286,8 +2286,8 @@ Cry_Betgamamon::
 	.incbin "sound/direct_sound_samples/cries/betgamamon.bin"
 
 	.align 2
-Cry_Hariyama::
-	.incbin "sound/direct_sound_samples/cries/hariyama.bin"
+Cry_Bioquetmon::
+	.incbin "sound/direct_sound_samples/cries/bioquetmon.bin"
 .endif @ P_FAMILY_BETGAMAMON
 
 .if P_FAMILY_NOSEPASS == TRUE

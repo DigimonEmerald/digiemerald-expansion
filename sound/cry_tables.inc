@@ -808,7 +808,7 @@ gCryTable::
 .endif @ P_FAMILY_BAOHUCKMON
 .if P_FAMILY_BETGAMAMON == TRUE
 	cry Cry_Betgamamon
-	cry Cry_Hariyama
+	cry Cry_Bioquetmon
 .endif @ P_FAMILY_BETGAMAMON
 .if P_FAMILY_NOSEPASS == TRUE
 	cry Cry_Nosepass
@@ -3234,7 +3234,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_BAOHUCKMON
 .if P_FAMILY_BETGAMAMON == TRUE
 	cry_reverse Cry_Betgamamon
-	cry_reverse Cry_Hariyama
+	cry_reverse Cry_Bioquetmon
 .endif @ P_FAMILY_BETGAMAMON
 .if P_FAMILY_NOSEPASS == TRUE
 	cry_reverse Cry_Nosepass

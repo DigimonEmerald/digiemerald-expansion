@@ -4439,13 +4439,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Betgamamon[] = INCBIN_U8("graphics/pokemon/betgamamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Hariyama[] = INCBIN_U32("graphics/pokemon/hariyama/anim_front.4bpp.lz");
-    const u32 gMonPalette_Hariyama[] = INCBIN_U32("graphics/pokemon/hariyama/normal.gbapal.lz");
-    const u32 gMonBackPic_Hariyama[] = INCBIN_U32("graphics/pokemon/hariyama/back.4bpp.lz");
-    const u32 gMonShinyPalette_Hariyama[] = INCBIN_U32("graphics/pokemon/hariyama/shiny.gbapal.lz");
-    const u8 gMonIcon_Hariyama[] = INCBIN_U8("graphics/pokemon/hariyama/icon.4bpp");
+    const u32 gMonFrontPic_Bioquetmon[] = INCBIN_U32("graphics/pokemon/bioquetmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Bioquetmon[] = INCBIN_U32("graphics/pokemon/bioquetmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Bioquetmon[] = INCBIN_U32("graphics/pokemon/bioquetmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Bioquetmon[] = INCBIN_U32("graphics/pokemon/bioquetmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Bioquetmon[] = INCBIN_U8("graphics/pokemon/bioquetmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Hariyama[] = INCBIN_U8("graphics/pokemon/hariyama/footprint.1bpp");
+    const u8 gMonFootprint_Bioquetmon[] = INCBIN_U8("graphics/pokemon/bioquetmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_BETGAMAMON
 

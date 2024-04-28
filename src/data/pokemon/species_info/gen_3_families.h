@@ -3120,10 +3120,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Betgamamon)
         .levelUpLearnset = sBetgamamonLevelUpLearnset,
         .teachableLearnset = sBetgamamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_HARIYAMA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_BIOQUETMON}),
     },
 
-    [SPECIES_HARIYAMA] =
+    [SPECIES_BIOQUETMON] =
     {
         .baseHP        = 144,
         .baseAttack    = 120,
@@ -3143,9 +3143,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_THICK_FAT, ABILITY_GUTS, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Hariyama"),
-        .cryId = CRY_HARIYAMA,
-        .natDexNum = NATIONAL_DEX_HARIYAMA,
+        .speciesName = _("Bioquetmon"),
+        .cryId = CRY_BIOQUETMON,
+        .natDexNum = NATIONAL_DEX_BIOQUETMON,
         .categoryName = _("Arm Thrust"),
         .height = 23,
         .weight = 2538,
@@ -3158,22 +3158,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 343,
         .trainerOffset = 7,
-        .frontPic = gMonFrontPic_Hariyama,
+        .frontPic = gMonFrontPic_Bioquetmon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Hariyama,
+        .frontAnimFrames = sAnims_Bioquetmon,
         .frontAnimId = ANIM_ROTATE_UP_TO_SIDES,
-        .backPic = gMonBackPic_Hariyama,
+        .backPic = gMonBackPic_Bioquetmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Hariyama,
-        .shinyPalette = gMonShinyPalette_Hariyama,
-        .iconSprite = gMonIcon_Hariyama,
+        .palette = gMonPalette_Bioquetmon,
+        .shinyPalette = gMonShinyPalette_Bioquetmon,
+        .iconSprite = gMonIcon_Bioquetmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Hariyama)
-        .levelUpLearnset = sHariyamaLevelUpLearnset,
-        .teachableLearnset = sHariyamaTeachableLearnset,
+        FOOTPRINT(Bioquetmon)
+        .levelUpLearnset = sBioquetmonLevelUpLearnset,
+        .teachableLearnset = sBioquetmonTeachableLearnset,
     },
 #endif //P_FAMILY_BETGAMAMON
 

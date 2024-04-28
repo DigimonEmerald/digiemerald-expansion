@@ -14204,7 +14204,7 @@ static const u16 sBetgamamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sHariyamaTeachableLearnset[] = {
+static const u16 sBioquetmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,

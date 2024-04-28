@@ -3976,7 +3976,7 @@ static const union AnimCmd sAnim_Betgamamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Hariyama_1[] =
+static const union AnimCmd sAnim_Bioquetmon_1[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_FRAME(1, 30),
@@ -11106,7 +11106,7 @@ SINGLE_ANIMATION(Trailmon_battle_armament);
 #endif //P_FAMILY_BAOHUCKMON
 #if P_FAMILY_BETGAMAMON
 SINGLE_ANIMATION(Betgamamon);
-SINGLE_ANIMATION(Hariyama);
+SINGLE_ANIMATION(Bioquetmon);
 #endif //P_FAMILY_BETGAMAMON
 #if P_FAMILY_NOSEPASS
 SINGLE_ANIMATION(Nosepass);
