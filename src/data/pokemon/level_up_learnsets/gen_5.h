@@ -6852,8 +6852,8 @@ static const struct LevelUpMove sTinpetLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_TINKERMON
 
-#if P_FAMILY_ZIGZAGOON
-static const struct LevelUpMove sZigzagoonLevelUpLearnset[] = {
+#if P_FAMILY_TOYAGUMON
+static const struct LevelUpMove sToyagumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 5, MOVE_TAIL_WHIP),
@@ -6893,7 +6893,7 @@ static const struct LevelUpMove sLinooneLevelUpLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const struct LevelUpMove sZigzagoonGalarianLevelUpLearnset[] = {
+static const struct LevelUpMove sToyagumonGalarianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 3, MOVE_SAND_ATTACK),
@@ -6960,7 +6960,7 @@ static const struct LevelUpMove sObstagoonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ZIGZAGOON
+#endif //P_FAMILY_TOYAGUMON
 
 #if P_FAMILY_WURMPLE
 static const struct LevelUpMove sWurmpleLevelUpLearnset[] = {

@@ -737,13 +737,13 @@ gCryTable::
 	cry Cry_Tinkermon
 	cry Cry_Tinpet
 .endif @ P_FAMILY_TINKERMON
-.if P_FAMILY_ZIGZAGOON == TRUE
-	cry Cry_Zigzagoon
+.if P_FAMILY_TOYAGUMON == TRUE
+	cry Cry_Toyagumon
 	cry Cry_Linoone
 .if P_GALARIAN_FORMS == TRUE
 	cry Cry_Obstagoon
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_ZIGZAGOON
+.endif @ P_FAMILY_TOYAGUMON
 .if P_FAMILY_WURMPLE == TRUE
 	cry Cry_Wurmple
 	cry Cry_Silcoon
@@ -3163,13 +3163,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Tinkermon
 	cry_reverse Cry_Tinpet
 .endif @ P_FAMILY_TINKERMON
-.if P_FAMILY_ZIGZAGOON == TRUE
-	cry_reverse Cry_Zigzagoon
+.if P_FAMILY_TOYAGUMON == TRUE
+	cry_reverse Cry_Toyagumon
 	cry_reverse Cry_Linoone
 .if P_GALARIAN_FORMS == TRUE
 	cry_reverse Cry_Obstagoon
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_ZIGZAGOON
+.endif @ P_FAMILY_TOYAGUMON
 .if P_FAMILY_WURMPLE == TRUE
 	cry_reverse Cry_Wurmple
 	cry_reverse Cry_Silcoon

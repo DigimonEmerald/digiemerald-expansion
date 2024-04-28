@@ -206,7 +206,7 @@ extern u8 gBattleControllerData[MAX_BATTLERS_COUNT];
 
 // general functions
 void HandleLinkBattleSetup(void);
-void SetUpBattleVarsAndBirchZigzagoon(void);
+void SetUpBattleVarsAndBirchToyagumon(void);
 void InitBattleControllers(void);
 bool32 IsValidForBattle(struct Pokemon *mon);
 void TryReceiveLinkBattleData(void);

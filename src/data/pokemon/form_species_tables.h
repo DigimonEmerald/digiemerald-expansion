@@ -751,11 +751,11 @@ static const u16 sTerriermon_xFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_TERRIERMON
 
-#if P_FAMILY_ZIGZAGOON
-static const u16 sZigzagoonFormSpeciesIdTable[] = {
-    SPECIES_ZIGZAGOON,
+#if P_FAMILY_TOYAGUMON
+static const u16 sToyagumonFormSpeciesIdTable[] = {
+    SPECIES_TOYAGUMON,
 #if P_GALARIAN_FORMS
-    SPECIES_ZIGZAGOON_GALARIAN,
+    SPECIES_TOYAGUMON_GALARIAN,
 #endif
     FORM_SPECIES_END,
 };
@@ -767,7 +767,7 @@ static const u16 sLinooneFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_ZIGZAGOON
+#endif //P_FAMILY_TOYAGUMON
 
 #if P_FAMILY_RALTS
 static const u16 sGardevoirFormSpeciesIdTable[] = {

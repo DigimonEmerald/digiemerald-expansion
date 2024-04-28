@@ -190,7 +190,7 @@
 #define P_FAMILY_SYAKOMON_X                 P_GEN_3_POKEMON
 #define P_FAMILY_TERRIERMON                  P_GEN_3_POKEMON
 #define P_FAMILY_TINKERMON               P_GEN_3_POKEMON
-#define P_FAMILY_ZIGZAGOON               P_GEN_3_POKEMON
+#define P_FAMILY_TOYAGUMON               P_GEN_3_POKEMON
 #define P_FAMILY_WURMPLE                 P_GEN_3_POKEMON
 #define P_FAMILY_LOTAD                   P_GEN_3_POKEMON
 #define P_FAMILY_SEEDOT                  P_GEN_3_POKEMON

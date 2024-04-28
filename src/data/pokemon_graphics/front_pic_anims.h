@@ -3539,8 +3539,8 @@ static const union AnimCmd sAnim_Tinpet_1[] =
 };
 #endif //P_FAMILY_TINKERMON
 
-#if P_FAMILY_ZIGZAGOON
-static const union AnimCmd sAnim_Zigzagoon_1[] =
+#if P_FAMILY_TOYAGUMON
+static const union AnimCmd sAnim_Toyagumon_1[] =
 {
     ANIMCMD_FRAME(0, 27),
     ANIMCMD_FRAME(1, 6),
@@ -3561,11 +3561,11 @@ static const union AnimCmd sAnim_Linoone_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(ZigzagoonGalarian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(ToyagumonGalarian);
 PLACEHOLDER_ANIM_SINGLE_FRAME(LinooneGalarian);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Obstagoon);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ZIGZAGOON
+#endif //P_FAMILY_TOYAGUMON
 
 #if P_FAMILY_WURMPLE
 static const union AnimCmd sAnim_Wurmple_1[] =
@@ -11033,15 +11033,15 @@ SINGLE_ANIMATION(Terriermon_xMega);
 SINGLE_ANIMATION(Tinkermon);
 SINGLE_ANIMATION(Tinpet);
 #endif //P_FAMILY_TINKERMON
-#if P_FAMILY_ZIGZAGOON
-SINGLE_ANIMATION(Zigzagoon);
+#if P_FAMILY_TOYAGUMON
+SINGLE_ANIMATION(Toyagumon);
 SINGLE_ANIMATION(Linoone);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(ZigzagoonGalarian);
+SINGLE_ANIMATION(ToyagumonGalarian);
 SINGLE_ANIMATION(LinooneGalarian);
 SINGLE_ANIMATION(Obstagoon);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ZIGZAGOON
+#endif //P_FAMILY_TOYAGUMON
 #if P_FAMILY_WURMPLE
 SINGLE_ANIMATION(Wurmple);
 SINGLE_ANIMATION(Silcoon);

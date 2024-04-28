@@ -2100,10 +2100,10 @@ Cry_Tinpet::
 	.incbin "sound/direct_sound_samples/cries/tinpet.bin"
 .endif @ P_FAMILY_TINKERMON
 
-.if P_FAMILY_ZIGZAGOON == TRUE
+.if P_FAMILY_TOYAGUMON == TRUE
 	.align 2
-Cry_Zigzagoon::
-	.incbin "sound/direct_sound_samples/cries/zigzagoon.bin"
+Cry_Toyagumon::
+	.incbin "sound/direct_sound_samples/cries/toyagumon.bin"
 
 	.align 2
 Cry_Linoone::
@@ -2115,7 +2115,7 @@ Cry_Obstagoon::
 	.incbin "sound/direct_sound_samples/cries/obstagoon.bin"
 
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_ZIGZAGOON
+.endif @ P_FAMILY_TOYAGUMON
 
 .if P_FAMILY_WURMPLE == TRUE
 	.align 2

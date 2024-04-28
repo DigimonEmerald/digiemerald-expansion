@@ -22365,7 +22365,7 @@
       "MOVE_FLIP_TURN"
     ]
   },
-  "ZIGZAGOON": {
+  "TOYAGUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -80776,7 +80776,7 @@
       "MOVE_METEOR_BEAM"
     ]
   },
-  "ZIGZAGOON_GALARIAN": {
+  "TOYAGUMON_GALARIAN": {
     "LevelMoves": [
       {
         "Level": 1,

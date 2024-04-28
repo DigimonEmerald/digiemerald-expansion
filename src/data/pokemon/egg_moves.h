@@ -2160,8 +2160,8 @@ const u16 gEggMoves[] = {
         MOVE_PLAY_ROUGH),
 #endif //P_FAMILY_TINKERMON
 
-#if P_FAMILY_ZIGZAGOON
-    egg_moves(ZIGZAGOON,
+#if P_FAMILY_TOYAGUMON
+    egg_moves(TOYAGUMON,
         MOVE_CHARM,
         MOVE_PURSUIT,
         MOVE_TICKLE,
@@ -2173,12 +2173,12 @@ const u16 gEggMoves[] = {
         MOVE_SIMPLE_BEAM,
         MOVE_EXTREME_SPEED),
 #if P_GALARIAN_FORMS
-    egg_moves(ZIGZAGOON_GALARIAN,
+    egg_moves(TOYAGUMON_GALARIAN,
         MOVE_PARTING_SHOT,
         MOVE_QUICK_GUARD,
         MOVE_KNOCK_OFF),
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ZIGZAGOON
+#endif //P_FAMILY_TOYAGUMON
 
 #if P_FAMILY_LOTAD
     egg_moves(LOTAD,

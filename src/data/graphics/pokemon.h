@@ -4043,14 +4043,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_TINKERMON
 
-#if P_FAMILY_ZIGZAGOON
-    const u32 gMonFrontPic_Zigzagoon[] = INCBIN_U32("graphics/pokemon/zigzagoon/anim_front.4bpp.lz");
-    const u32 gMonPalette_Zigzagoon[] = INCBIN_U32("graphics/pokemon/zigzagoon/normal.gbapal.lz");
-    const u32 gMonBackPic_Zigzagoon[] = INCBIN_U32("graphics/pokemon/zigzagoon/back.4bpp.lz");
-    const u32 gMonShinyPalette_Zigzagoon[] = INCBIN_U32("graphics/pokemon/zigzagoon/shiny.gbapal.lz");
-    const u8 gMonIcon_Zigzagoon[] = INCBIN_U8("graphics/pokemon/zigzagoon/icon.4bpp");
+#if P_FAMILY_TOYAGUMON
+    const u32 gMonFrontPic_Toyagumon[] = INCBIN_U32("graphics/pokemon/toyagumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Toyagumon[] = INCBIN_U32("graphics/pokemon/toyagumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Toyagumon[] = INCBIN_U32("graphics/pokemon/toyagumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Toyagumon[] = INCBIN_U32("graphics/pokemon/toyagumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Toyagumon[] = INCBIN_U8("graphics/pokemon/toyagumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Zigzagoon[] = INCBIN_U8("graphics/pokemon/zigzagoon/footprint.1bpp");
+    const u8 gMonFootprint_Toyagumon[] = INCBIN_U8("graphics/pokemon/toyagumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Linoone[] = INCBIN_U32("graphics/pokemon/linoone/anim_front.4bpp.lz");
@@ -4063,11 +4063,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
 #if P_GALARIAN_FORMS
-    const u32 gMonFrontPic_ZigzagoonGalarian[] = INCBIN_U32("graphics/pokemon/zigzagoon/galarian/front.4bpp.lz");
-    const u32 gMonPalette_ZigzagoonGalarian[] = INCBIN_U32("graphics/pokemon/zigzagoon/galarian/normal.gbapal.lz");
-    const u32 gMonBackPic_ZigzagoonGalarian[] = INCBIN_U32("graphics/pokemon/zigzagoon/galarian/back.4bpp.lz");
-    const u32 gMonShinyPalette_ZigzagoonGalarian[] = INCBIN_U32("graphics/pokemon/zigzagoon/galarian/shiny.gbapal.lz");
-    const u8 gMonIcon_ZigzagoonGalarian[] = INCBIN_U8("graphics/pokemon/zigzagoon/galarian/icon.4bpp");
+    const u32 gMonFrontPic_ToyagumonGalarian[] = INCBIN_U32("graphics/pokemon/toyagumon/galarian/front.4bpp.lz");
+    const u32 gMonPalette_ToyagumonGalarian[] = INCBIN_U32("graphics/pokemon/toyagumon/galarian/normal.gbapal.lz");
+    const u32 gMonBackPic_ToyagumonGalarian[] = INCBIN_U32("graphics/pokemon/toyagumon/galarian/back.4bpp.lz");
+    const u32 gMonShinyPalette_ToyagumonGalarian[] = INCBIN_U32("graphics/pokemon/toyagumon/galarian/shiny.gbapal.lz");
+    const u8 gMonIcon_ToyagumonGalarian[] = INCBIN_U8("graphics/pokemon/toyagumon/galarian/icon.4bpp");
 
     const u32 gMonFrontPic_LinooneGalarian[] = INCBIN_U32("graphics/pokemon/linoone/galarian/front.4bpp.lz");
     const u32 gMonPalette_LinooneGalarian[] = INCBIN_U32("graphics/pokemon/linoone/galarian/normal.gbapal.lz");
@@ -4084,7 +4084,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Obstagoon[] = INCBIN_U8("graphics/pokemon/obstagoon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ZIGZAGOON
+#endif //P_FAMILY_TOYAGUMON
 
 #if P_FAMILY_WURMPLE
     const u32 gMonFrontPic_Wurmple[] = INCBIN_U32("graphics/pokemon/wurmple/anim_front.4bpp.lz");

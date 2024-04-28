@@ -12823,8 +12823,8 @@ static const u16 sTinpetTeachableLearnset[] = {
 };
 #endif //P_FAMILY_TINKERMON
 
-#if P_FAMILY_ZIGZAGOON
-static const u16 sZigzagoonTeachableLearnset[] = {
+#if P_FAMILY_TOYAGUMON
+static const u16 sToyagumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CUT,
@@ -12904,7 +12904,7 @@ static const u16 sLinooneTeachableLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const u16 sZigzagoonGalarianTeachableLearnset[] = {
+static const u16 sToyagumonGalarianTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIG,
@@ -13000,7 +13000,7 @@ static const u16 sObstagoonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ZIGZAGOON
+#endif //P_FAMILY_TOYAGUMON
 
 #if P_FAMILY_WURMPLE
 static const u16 sWurmpleTeachableLearnset[] = {

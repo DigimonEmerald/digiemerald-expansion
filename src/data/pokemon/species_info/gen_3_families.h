@@ -804,16 +804,16 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_TINKERMON
 
-#if P_FAMILY_ZIGZAGOON
+#if P_FAMILY_TOYAGUMON
 #if P_UPDATED_EXP_YIELDS >= GEN_7
-    #define ZIGZAGOON_EXP_YIELD 56
+    #define TOYAGUMON_EXP_YIELD 56
 #elif P_UPDATED_EXP_YIELDS >= GEN_5
-    #define ZIGZAGOON_EXP_YIELD 48
+    #define TOYAGUMON_EXP_YIELD 48
 #else
-    #define ZIGZAGOON_EXP_YIELD 60
+    #define TOYAGUMON_EXP_YIELD 60
 #endif
 
-    [SPECIES_ZIGZAGOON] =
+    [SPECIES_TOYAGUMON] =
     {
         .baseHP        = 38,
         .baseAttack    = 30,
@@ -823,7 +823,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpDefense = 41,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 255,
-        .expYield = ZIGZAGOON_EXP_YIELD,
+        .expYield = TOYAGUMON_EXP_YIELD,
         .evYield_Speed = 1,
         .itemCommon = ITEM_POTION,
         .itemRare = ITEM_REVIVE,
@@ -834,9 +834,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_PICKUP, ABILITY_GLUTTONY, ABILITY_QUICK_FEET },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Zigzagoon"),
-        .cryId = CRY_ZIGZAGOON,
-        .natDexNum = NATIONAL_DEX_ZIGZAGOON,
+        .speciesName = _("Toyagumon"),
+        .cryId = CRY_TOYAGUMON,
+        .natDexNum = NATIONAL_DEX_TOYAGUMON,
         .categoryName = _("Tiny Raccoon"),
         .height = 4,
         .weight = 175,
@@ -849,23 +849,23 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 22,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Zigzagoon,
+        .frontPic = gMonFrontPic_Toyagumon,
         .frontPicSize = MON_COORDS_SIZE(56, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Zigzagoon,
+        .frontAnimFrames = sAnims_Toyagumon,
         .frontAnimId = ANIM_H_SLIDE,
-        .backPic = gMonBackPic_Zigzagoon,
+        .backPic = gMonBackPic_Toyagumon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Zigzagoon,
-        .shinyPalette = gMonShinyPalette_Zigzagoon,
-        .iconSprite = gMonIcon_Zigzagoon,
+        .palette = gMonPalette_Toyagumon,
+        .shinyPalette = gMonShinyPalette_Toyagumon,
+        .iconSprite = gMonIcon_Toyagumon,
         .iconPalIndex = 2,
-        FOOTPRINT(Zigzagoon)
-        .levelUpLearnset = sZigzagoonLevelUpLearnset,
-        .teachableLearnset = sZigzagoonTeachableLearnset,
-        .formSpeciesIdTable = sZigzagoonFormSpeciesIdTable,
+        FOOTPRINT(Toyagumon)
+        .levelUpLearnset = sToyagumonLevelUpLearnset,
+        .teachableLearnset = sToyagumonTeachableLearnset,
+        .formSpeciesIdTable = sToyagumonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_LINOONE}),
     },
 
@@ -925,7 +925,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 
 #if P_GALARIAN_FORMS
-    [SPECIES_ZIGZAGOON_GALARIAN] =
+    [SPECIES_TOYAGUMON_GALARIAN] =
     {
         .baseHP        = 38,
         .baseAttack    = 30,
@@ -935,7 +935,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpDefense = 41,
         .types = MON_TYPES(TYPE_DARK, TYPE_NORMAL),
         .catchRate = 255,
-        .expYield = ZIGZAGOON_EXP_YIELD,
+        .expYield = TOYAGUMON_EXP_YIELD,
         .evYield_Speed = 1,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 15,
@@ -944,9 +944,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_PICKUP, ABILITY_GLUTTONY, ABILITY_QUICK_FEET },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Zigzagoon"),
-        .cryId = CRY_ZIGZAGOON,
-        .natDexNum = NATIONAL_DEX_ZIGZAGOON,
+        .speciesName = _("Toyagumon"),
+        .cryId = CRY_TOYAGUMON,
+        .natDexNum = NATIONAL_DEX_TOYAGUMON,
         .categoryName = _("Tiny Raccoon"),
         .height = 4,
         .weight = 175,
@@ -954,29 +954,29 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "Its restlessness has it constantly moving\n"
             "in zigzags. It will purposely run into other\n"
             "Pokémon to start fights. It's thought to\n"
-            "be the oldest form of Zigzagoon."),
+            "be the oldest form of Toyagumon."),
         .pokemonScale = 560,
         .pokemonOffset = 22,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_ZigzagoonGalarian,
+        .frontPic = gMonFrontPic_ToyagumonGalarian,
         .frontPicSize = MON_COORDS_SIZE(56, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_ZigzagoonGalarian,
+        .frontAnimFrames = sAnims_ToyagumonGalarian,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_ZigzagoonGalarian,
+        .backPic = gMonBackPic_ToyagumonGalarian,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 12,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_ZigzagoonGalarian,
-        .shinyPalette = gMonShinyPalette_ZigzagoonGalarian,
-        .iconSprite = gMonIcon_ZigzagoonGalarian,
+        .palette = gMonPalette_ToyagumonGalarian,
+        .shinyPalette = gMonShinyPalette_ToyagumonGalarian,
+        .iconSprite = gMonIcon_ToyagumonGalarian,
         .iconPalIndex = 0,
-        FOOTPRINT(Zigzagoon)
+        FOOTPRINT(Toyagumon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sZigzagoonGalarianLevelUpLearnset,
-        .teachableLearnset = sZigzagoonGalarianTeachableLearnset,
-        .formSpeciesIdTable = sZigzagoonFormSpeciesIdTable,
+        .levelUpLearnset = sToyagumonGalarianLevelUpLearnset,
+        .teachableLearnset = sToyagumonGalarianTeachableLearnset,
+        .formSpeciesIdTable = sToyagumonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_LINOONE_GALARIAN}),
     },
 
@@ -1087,7 +1087,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sObstagoonTeachableLearnset,
     },
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_ZIGZAGOON
+#endif //P_FAMILY_TOYAGUMON
 
 #if P_FAMILY_WURMPLE
     [SPECIES_WURMPLE] =
