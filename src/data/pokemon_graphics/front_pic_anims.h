@@ -3942,7 +3942,7 @@ static const union AnimCmd sAnim_Baohuckmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Loudred_1[] =
+static const union AnimCmd sAnim_Baromon_1[] =
 {
     ANIMCMD_FRAME(0, 9),
     ANIMCMD_FRAME(1, 9),
@@ -11101,7 +11101,7 @@ SINGLE_ANIMATION(Baluchimon);
 #endif //P_FAMILY_BAKEMON
 #if P_FAMILY_BAOHUCKMON
 SINGLE_ANIMATION(Baohuckmon);
-SINGLE_ANIMATION(Loudred);
+SINGLE_ANIMATION(Baromon);
 SINGLE_ANIMATION(Exploud);
 #endif //P_FAMILY_BAOHUCKMON
 #if P_FAMILY_MAKUHITA

@@ -2951,10 +2951,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Baohuckmon)
         .levelUpLearnset = sBaohuckmonLevelUpLearnset,
         .teachableLearnset = sBaohuckmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_LOUDRED}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_BAROMON}),
     },
 
-    [SPECIES_LOUDRED] =
+    [SPECIES_BAROMON] =
     {
         .baseHP        = 84,
         .baseAttack    = 71,
@@ -2973,9 +2973,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
         .abilities = { ABILITY_SOUNDPROOF, ABILITY_NONE, ABILITY_SCRAPPY },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Loudred"),
-        .cryId = CRY_LOUDRED,
-        .natDexNum = NATIONAL_DEX_LOUDRED,
+        .speciesName = _("Baromon"),
+        .cryId = CRY_BAROMON,
+        .natDexNum = NATIONAL_DEX_BAROMON,
         .categoryName = _("Big Voice"),
         .height = 10,
         .weight = 405,
@@ -2988,22 +2988,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Loudred,
+        .frontPic = gMonFrontPic_Baromon,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_Loudred,
+        .frontAnimFrames = sAnims_Baromon,
         .frontAnimId = ANIM_SHRINK_GROW,
-        .backPic = gMonBackPic_Loudred,
+        .backPic = gMonBackPic_Baromon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Loudred,
-        .shinyPalette = gMonShinyPalette_Loudred,
-        .iconSprite = gMonIcon_Loudred,
+        .palette = gMonPalette_Baromon,
+        .shinyPalette = gMonShinyPalette_Baromon,
+        .iconSprite = gMonIcon_Baromon,
         .iconPalIndex = 2,
-        FOOTPRINT(Loudred)
-        .levelUpLearnset = sLoudredLevelUpLearnset,
-        .teachableLearnset = sLoudredTeachableLearnset,
+        FOOTPRINT(Baromon)
+        .levelUpLearnset = sBaromonLevelUpLearnset,
+        .teachableLearnset = sBaromonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_EXPLOUD}),
     },
 

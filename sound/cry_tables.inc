@@ -803,7 +803,7 @@ gCryTable::
 .endif @ P_FAMILY_BAKEMON
 .if P_FAMILY_BAOHUCKMON == TRUE
 	cry Cry_Baohuckmon
-	cry Cry_Loudred
+	cry Cry_Baromon
 	cry Cry_Exploud
 .endif @ P_FAMILY_BAOHUCKMON
 .if P_FAMILY_MAKUHITA == TRUE
@@ -3229,7 +3229,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_BAKEMON
 .if P_FAMILY_BAOHUCKMON == TRUE
 	cry_reverse Cry_Baohuckmon
-	cry_reverse Cry_Loudred
+	cry_reverse Cry_Baromon
 	cry_reverse Cry_Exploud
 .endif @ P_FAMILY_BAOHUCKMON
 .if P_FAMILY_MAKUHITA == TRUE

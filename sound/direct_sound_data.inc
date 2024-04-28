@@ -2272,8 +2272,8 @@ Cry_Baohuckmon::
 	.incbin "sound/direct_sound_samples/cries/baohuckmon.bin"
 
 	.align 2
-Cry_Loudred::
-	.incbin "sound/direct_sound_samples/cries/loudred.bin"
+Cry_Baromon::
+	.incbin "sound/direct_sound_samples/cries/baromon.bin"
 
 	.align 2
 Cry_Exploud::

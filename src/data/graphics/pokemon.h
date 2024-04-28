@@ -4410,13 +4410,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Baohuckmon[] = INCBIN_U8("graphics/pokemon/baohuckmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Loudred[] = INCBIN_U32("graphics/pokemon/loudred/anim_front.4bpp.lz");
-    const u32 gMonPalette_Loudred[] = INCBIN_U32("graphics/pokemon/loudred/normal.gbapal.lz");
-    const u32 gMonBackPic_Loudred[] = INCBIN_U32("graphics/pokemon/loudred/back.4bpp.lz");
-    const u32 gMonShinyPalette_Loudred[] = INCBIN_U32("graphics/pokemon/loudred/shiny.gbapal.lz");
-    const u8 gMonIcon_Loudred[] = INCBIN_U8("graphics/pokemon/loudred/icon.4bpp");
+    const u32 gMonFrontPic_Baromon[] = INCBIN_U32("graphics/pokemon/baromon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Baromon[] = INCBIN_U32("graphics/pokemon/baromon/normal.gbapal.lz");
+    const u32 gMonBackPic_Baromon[] = INCBIN_U32("graphics/pokemon/baromon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Baromon[] = INCBIN_U32("graphics/pokemon/baromon/shiny.gbapal.lz");
+    const u8 gMonIcon_Baromon[] = INCBIN_U8("graphics/pokemon/baromon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Loudred[] = INCBIN_U8("graphics/pokemon/loudred/footprint.1bpp");
+    const u8 gMonFootprint_Baromon[] = INCBIN_U8("graphics/pokemon/baromon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Exploud[] = INCBIN_U32("graphics/pokemon/exploud/anim_front.4bpp.lz");

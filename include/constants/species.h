@@ -295,7 +295,7 @@
 #define SPECIES_BALISTAMON                                 291
 #define SPECIES_BALUCHIMON                                292
 #define SPECIES_BAOHUCKMON                                 293
-#define SPECIES_LOUDRED                                 294
+#define SPECIES_BAROMON                                 294
 #define SPECIES_EXPLOUD                                 295
 #define SPECIES_MAKUHITA                                296
 #define SPECIES_HARIYAMA                                297
