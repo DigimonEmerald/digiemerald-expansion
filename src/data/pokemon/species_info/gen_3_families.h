@@ -2900,8 +2900,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_BAKEMON
 
-#if P_FAMILY_WHISMUR
-    [SPECIES_WHISMUR] =
+#if P_FAMILY_BAOHUCKMON
+    [SPECIES_BAOHUCKMON] =
     {
         .baseHP        = 64,
         .baseAttack    = 51,
@@ -2920,9 +2920,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
         .abilities = { ABILITY_SOUNDPROOF, ABILITY_NONE, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Whismur"),
-        .cryId = CRY_WHISMUR,
-        .natDexNum = NATIONAL_DEX_WHISMUR,
+        .speciesName = _("Baohuckmon"),
+        .cryId = CRY_BAOHUCKMON,
+        .natDexNum = NATIONAL_DEX_BAOHUCKMON,
         .categoryName = _("Whisper"),
         .height = 6,
         .weight = 163,
@@ -2935,22 +2935,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Whismur,
+        .frontPic = gMonFrontPic_Baohuckmon,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Whismur,
+        .frontAnimFrames = sAnims_Baohuckmon,
         .frontAnimId = ANIM_H_SLIDE,
-        .backPic = gMonBackPic_Whismur,
+        .backPic = gMonBackPic_Baohuckmon,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Whismur,
-        .shinyPalette = gMonShinyPalette_Whismur,
-        .iconSprite = gMonIcon_Whismur,
+        .palette = gMonPalette_Baohuckmon,
+        .shinyPalette = gMonShinyPalette_Baohuckmon,
+        .iconSprite = gMonIcon_Baohuckmon,
         .iconPalIndex = 1,
-        FOOTPRINT(Whismur)
-        .levelUpLearnset = sWhismurLevelUpLearnset,
-        .teachableLearnset = sWhismurTeachableLearnset,
+        FOOTPRINT(Baohuckmon)
+        .levelUpLearnset = sBaohuckmonLevelUpLearnset,
+        .teachableLearnset = sBaohuckmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_LOUDRED}),
     },
 
@@ -3066,7 +3066,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sExploudLevelUpLearnset,
         .teachableLearnset = sExploudTeachableLearnset,
     },
-#endif //P_FAMILY_WHISMUR
+#endif //P_FAMILY_BAOHUCKMON
 
 #if P_FAMILY_MAKUHITA
     [SPECIES_MAKUHITA] =

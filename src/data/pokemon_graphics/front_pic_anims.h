@@ -3926,8 +3926,8 @@ static const union AnimCmd sAnim_Baluchimon_1[] =
 };
 #endif //P_FAMILY_BAKEMON
 
-#if P_FAMILY_WHISMUR
-static const union AnimCmd sAnim_Whismur_1[] =
+#if P_FAMILY_BAOHUCKMON
+static const union AnimCmd sAnim_Baohuckmon_1[] =
 {
     ANIMCMD_FRAME(0, 9),
     ANIMCMD_FRAME(1, 9),
@@ -3959,7 +3959,7 @@ static const union AnimCmd sAnim_Exploud_1[] =
     ANIMCMD_FRAME(0, 9),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_WHISMUR
+#endif //P_FAMILY_BAOHUCKMON
 
 #if P_FAMILY_MAKUHITA
 static const union AnimCmd sAnim_Makuhita_1[] =
@@ -11099,11 +11099,11 @@ SINGLE_ANIMATION(Bakemon);
 SINGLE_ANIMATION(Balistamon);
 SINGLE_ANIMATION(Baluchimon);
 #endif //P_FAMILY_BAKEMON
-#if P_FAMILY_WHISMUR
-SINGLE_ANIMATION(Whismur);
+#if P_FAMILY_BAOHUCKMON
+SINGLE_ANIMATION(Baohuckmon);
 SINGLE_ANIMATION(Loudred);
 SINGLE_ANIMATION(Exploud);
-#endif //P_FAMILY_WHISMUR
+#endif //P_FAMILY_BAOHUCKMON
 #if P_FAMILY_MAKUHITA
 SINGLE_ANIMATION(Makuhita);
 SINGLE_ANIMATION(Hariyama);

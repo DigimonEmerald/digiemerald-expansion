@@ -801,11 +801,11 @@ gCryTable::
 	cry Cry_Balistamon
 	cry Cry_Baluchimon
 .endif @ P_FAMILY_BAKEMON
-.if P_FAMILY_WHISMUR == TRUE
-	cry Cry_Whismur
+.if P_FAMILY_BAOHUCKMON == TRUE
+	cry Cry_Baohuckmon
 	cry Cry_Loudred
 	cry Cry_Exploud
-.endif @ P_FAMILY_WHISMUR
+.endif @ P_FAMILY_BAOHUCKMON
 .if P_FAMILY_MAKUHITA == TRUE
 	cry Cry_Makuhita
 	cry Cry_Hariyama
@@ -3227,11 +3227,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Balistamon
 	cry_reverse Cry_Baluchimon
 .endif @ P_FAMILY_BAKEMON
-.if P_FAMILY_WHISMUR == TRUE
-	cry_reverse Cry_Whismur
+.if P_FAMILY_BAOHUCKMON == TRUE
+	cry_reverse Cry_Baohuckmon
 	cry_reverse Cry_Loudred
 	cry_reverse Cry_Exploud
-.endif @ P_FAMILY_WHISMUR
+.endif @ P_FAMILY_BAOHUCKMON
 .if P_FAMILY_MAKUHITA == TRUE
 	cry_reverse Cry_Makuhita
 	cry_reverse Cry_Hariyama

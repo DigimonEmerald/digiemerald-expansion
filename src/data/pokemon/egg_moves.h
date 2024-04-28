@@ -2316,8 +2316,8 @@ const u16 gEggMoves[] = {
         MOVE_FINAL_GAMBIT),
 #endif //P_FAMILY_BAKEMON
 
-#if P_FAMILY_WHISMUR
-    egg_moves(WHISMUR,
+#if P_FAMILY_BAOHUCKMON
+    egg_moves(BAOHUCKMON,
         MOVE_TAKE_DOWN,
         MOVE_SNORE,
         MOVE_EXTRASENSORY,
@@ -2329,7 +2329,7 @@ const u16 gEggMoves[] = {
         MOVE_CIRCLE_THROW,
         MOVE_DISARMING_VOICE,
         MOVE_WHIRLWIND),
-#endif //P_FAMILY_WHISMUR
+#endif //P_FAMILY_BAOHUCKMON
 
 #if P_FAMILY_MAKUHITA
     egg_moves(MAKUHITA,

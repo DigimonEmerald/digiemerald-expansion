@@ -4400,14 +4400,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_BAKEMON
 
-#if P_FAMILY_WHISMUR
-    const u32 gMonFrontPic_Whismur[] = INCBIN_U32("graphics/pokemon/whismur/anim_front.4bpp.lz");
-    const u32 gMonPalette_Whismur[] = INCBIN_U32("graphics/pokemon/whismur/normal.gbapal.lz");
-    const u32 gMonBackPic_Whismur[] = INCBIN_U32("graphics/pokemon/whismur/back.4bpp.lz");
-    const u32 gMonShinyPalette_Whismur[] = INCBIN_U32("graphics/pokemon/whismur/shiny.gbapal.lz");
-    const u8 gMonIcon_Whismur[] = INCBIN_U8("graphics/pokemon/whismur/icon.4bpp");
+#if P_FAMILY_BAOHUCKMON
+    const u32 gMonFrontPic_Baohuckmon[] = INCBIN_U32("graphics/pokemon/baohuckmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Baohuckmon[] = INCBIN_U32("graphics/pokemon/baohuckmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Baohuckmon[] = INCBIN_U32("graphics/pokemon/baohuckmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Baohuckmon[] = INCBIN_U32("graphics/pokemon/baohuckmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Baohuckmon[] = INCBIN_U8("graphics/pokemon/baohuckmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Whismur[] = INCBIN_U8("graphics/pokemon/whismur/footprint.1bpp");
+    const u8 gMonFootprint_Baohuckmon[] = INCBIN_U8("graphics/pokemon/baohuckmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Loudred[] = INCBIN_U32("graphics/pokemon/loudred/anim_front.4bpp.lz");
@@ -4427,7 +4427,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Exploud[] = INCBIN_U8("graphics/pokemon/exploud/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_WHISMUR
+#endif //P_FAMILY_BAOHUCKMON
 
 #if P_FAMILY_MAKUHITA
     const u32 gMonFrontPic_Makuhita[] = INCBIN_U32("graphics/pokemon/makuhita/anim_front.4bpp.lz");

@@ -5608,8 +5608,8 @@ static const struct LevelUpMove sBaluchimonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_BAKEMON
 
-#if P_FAMILY_WHISMUR
-static const struct LevelUpMove sWhismurLevelUpLearnset[] = {
+#if P_FAMILY_BAOHUCKMON
+static const struct LevelUpMove sBaohuckmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 5, MOVE_UPROAR),
     LEVEL_UP_MOVE(11, MOVE_ASTONISH),
@@ -5660,7 +5660,7 @@ static const struct LevelUpMove sExploudLevelUpLearnset[] = {
     LEVEL_UP_MOVE(63, MOVE_HYPER_VOICE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_WHISMUR
+#endif //P_FAMILY_BAOHUCKMON
 
 #if P_FAMILY_MAKUHITA
 static const struct LevelUpMove sMakuhitaLevelUpLearnset[] = {

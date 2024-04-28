@@ -2266,10 +2266,10 @@ Cry_Baluchimon::
 	.incbin "sound/direct_sound_samples/cries/baluchimon.bin"
 .endif @ P_FAMILY_BAKEMON
 
-.if P_FAMILY_WHISMUR == TRUE
+.if P_FAMILY_BAOHUCKMON == TRUE
 	.align 2
-Cry_Whismur::
-	.incbin "sound/direct_sound_samples/cries/whismur.bin"
+Cry_Baohuckmon::
+	.incbin "sound/direct_sound_samples/cries/baohuckmon.bin"
 
 	.align 2
 Cry_Loudred::
@@ -2278,7 +2278,7 @@ Cry_Loudred::
 	.align 2
 Cry_Exploud::
 	.incbin "sound/direct_sound_samples/cries/exploud.bin"
-.endif @ P_FAMILY_WHISMUR
+.endif @ P_FAMILY_BAOHUCKMON
 
 .if P_FAMILY_MAKUHITA == TRUE
 	.align 2

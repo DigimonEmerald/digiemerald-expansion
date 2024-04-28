@@ -14020,8 +14020,8 @@ static const u16 sBaluchimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BAKEMON
 
-#if P_FAMILY_WHISMUR
-static const u16 sWhismurTeachableLearnset[] = {
+#if P_FAMILY_BAOHUCKMON
+static const u16 sBaohuckmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DOUBLE_TEAM,
@@ -14160,7 +14160,7 @@ static const u16 sExploudTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_WHISMUR
+#endif //P_FAMILY_BAOHUCKMON
 
 #if P_FAMILY_MAKUHITA
 static const u16 sMakuhitaTeachableLearnset[] = {
