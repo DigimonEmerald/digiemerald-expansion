@@ -1685,10 +1685,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Akatorimon)
         .levelUpLearnset = sAkatorimonLevelUpLearnset,
         .teachableLearnset = sAkatorimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_SHIFTRY}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_ALLOMON}),
     },
 
-    [SPECIES_SHIFTRY] =
+    [SPECIES_ALLOMON] =
     {
         .baseHP        = 90,
         .baseAttack    = 100,
@@ -1718,9 +1718,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_EARLY_BIRD, ABILITY_PICKPOCKET },
     #endif
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Shiftry"),
-        .cryId = CRY_SHIFTRY,
-        .natDexNum = NATIONAL_DEX_SHIFTRY,
+        .speciesName = _("Allomon"),
+        .cryId = CRY_ALLOMON,
+        .natDexNum = NATIONAL_DEX_ALLOMON,
         .categoryName = _("Wicked"),
         .height = 13,
         .weight = 596,
@@ -1733,26 +1733,26 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Shiftry,
-        .frontPicFemale = gMonFrontPic_ShiftryF,
+        .frontPic = gMonFrontPic_Allomon,
+        .frontPicFemale = gMonFrontPic_AllomonF,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Shiftry,
+        .frontAnimFrames = sAnims_Allomon,
         .frontAnimId = ANIM_H_VIBRATE,
-        .backPic = gMonBackPic_Shiftry,
-        .backPicFemale = gMonBackPic_ShiftryF,
+        .backPic = gMonBackPic_Allomon,
+        .backPicFemale = gMonBackPic_AllomonF,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Shiftry,
-        .shinyPalette = gMonShinyPalette_Shiftry,
-        .iconSprite = gMonIcon_Shiftry,
+        .palette = gMonPalette_Allomon,
+        .shinyPalette = gMonShinyPalette_Allomon,
+        .iconSprite = gMonIcon_Allomon,
         .iconPalIndex = 5,
-        FOOTPRINT(Shiftry)
-        .levelUpLearnset = sShiftryLevelUpLearnset,
-        .teachableLearnset = sShiftryTeachableLearnset,
+        FOOTPRINT(Allomon)
+        .levelUpLearnset = sAllomonLevelUpLearnset,
+        .teachableLearnset = sAllomonTeachableLearnset,
     },
 #endif //P_FAMILY_AIRDRAMON
 

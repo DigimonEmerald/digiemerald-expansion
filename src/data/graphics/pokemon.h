@@ -4193,17 +4193,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_AkatorimonF[] = INCBIN_U32("graphics/pokemon/akatorimon/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_AkatorimonF[] = INCBIN_U32("graphics/pokemon/akatorimon/backf.4bpp.lz");
 
-    const u32 gMonFrontPic_Shiftry[] = INCBIN_U32("graphics/pokemon/shiftry/anim_front.4bpp.lz");
-    const u32 gMonPalette_Shiftry[] = INCBIN_U32("graphics/pokemon/shiftry/normal.gbapal.lz");
-    const u32 gMonBackPic_Shiftry[] = INCBIN_U32("graphics/pokemon/shiftry/back.4bpp.lz");
-    const u32 gMonShinyPalette_Shiftry[] = INCBIN_U32("graphics/pokemon/shiftry/shiny.gbapal.lz");
-    const u8 gMonIcon_Shiftry[] = INCBIN_U8("graphics/pokemon/shiftry/icon.4bpp");
+    const u32 gMonFrontPic_Allomon[] = INCBIN_U32("graphics/pokemon/allomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Allomon[] = INCBIN_U32("graphics/pokemon/allomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Allomon[] = INCBIN_U32("graphics/pokemon/allomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Allomon[] = INCBIN_U32("graphics/pokemon/allomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Allomon[] = INCBIN_U8("graphics/pokemon/allomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Shiftry[] = INCBIN_U8("graphics/pokemon/shiftry/footprint.1bpp");
+    const u8 gMonFootprint_Allomon[] = INCBIN_U8("graphics/pokemon/allomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_ShiftryF[] = INCBIN_U32("graphics/pokemon/shiftry/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_ShiftryF[] = INCBIN_U32("graphics/pokemon/shiftry/backf.4bpp.lz");
+    const u32 gMonFrontPic_AllomonF[] = INCBIN_U32("graphics/pokemon/allomon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_AllomonF[] = INCBIN_U32("graphics/pokemon/allomon/backf.4bpp.lz");
 #endif //P_FAMILY_AIRDRAMON
 
 #if P_FAMILY_TAILLOW

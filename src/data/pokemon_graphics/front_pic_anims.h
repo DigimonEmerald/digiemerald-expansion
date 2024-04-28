@@ -3690,7 +3690,7 @@ static const union AnimCmd sAnim_Akatorimon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Shiftry_1[] =
+static const union AnimCmd sAnim_Allomon_1[] =
 {
     ANIMCMD_FRAME(0, 7),
     ANIMCMD_FRAME(1, 35),
@@ -11057,7 +11057,7 @@ SINGLE_ANIMATION(Ludicolo);
 #if P_FAMILY_AIRDRAMON
 SINGLE_ANIMATION(Airdramon);
 SINGLE_ANIMATION(Akatorimon);
-SINGLE_ANIMATION(Shiftry);
+SINGLE_ANIMATION(Allomon);
 #endif //P_FAMILY_AIRDRAMON
 #if P_FAMILY_TAILLOW
 SINGLE_ANIMATION(Taillow);

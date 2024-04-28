@@ -276,7 +276,7 @@
 #define SPECIES_LUDICOLO                                272
 #define SPECIES_AIRDRAMON                                  273
 #define SPECIES_AKATORIMON                                 274
-#define SPECIES_SHIFTRY                                 275
+#define SPECIES_ALLOMON                                 275
 #define SPECIES_TAILLOW                                 276
 #define SPECIES_SWELLOW                                 277
 #define SPECIES_WINGULL                                 278

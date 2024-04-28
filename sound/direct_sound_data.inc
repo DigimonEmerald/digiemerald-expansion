@@ -2163,8 +2163,8 @@ Cry_Akatorimon::
 	.incbin "sound/direct_sound_samples/cries/akatorimon.bin"
 
 	.align 2
-Cry_Shiftry::
-	.incbin "sound/direct_sound_samples/cries/shiftry.bin"
+Cry_Allomon::
+	.incbin "sound/direct_sound_samples/cries/allomon.bin"
 .endif @ P_FAMILY_AIRDRAMON
 
 .if P_FAMILY_TAILLOW == TRUE

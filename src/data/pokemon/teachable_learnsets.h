@@ -13267,7 +13267,7 @@ static const u16 sAkatorimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sShiftryTeachableLearnset[] = {
+static const u16 sAllomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,

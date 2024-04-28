@@ -7083,7 +7083,7 @@ static const struct LevelUpMove sAkatorimonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sShiftryLevelUpLearnset[] = {
+static const struct LevelUpMove sAllomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FEINT_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_WHIRLWIND),
     LEVEL_UP_MOVE( 1, MOVE_NASTY_PLOT),
