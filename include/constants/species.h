@@ -292,7 +292,7 @@
 #define SPECIES_AXEMON                                288
 #define SPECIES_BABOONMON                                 289
 #define SPECIES_BAKEMON                                 290
-#define SPECIES_NINJASK                                 291
+#define SPECIES_BALISTAMON                                 291
 #define SPECIES_SHEDINJA                                292
 #define SPECIES_WHISMUR                                 293
 #define SPECIES_LOUDRED                                 294

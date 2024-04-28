@@ -157,7 +157,7 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(KAKKINMON),
     HOENN_TO_NATIONAL(KAPURIMON),
     HOENN_TO_NATIONAL(BAKEMON),
-    HOENN_TO_NATIONAL(NINJASK),
+    HOENN_TO_NATIONAL(BALISTAMON),
     HOENN_TO_NATIONAL(SHEDINJA),
     HOENN_TO_NATIONAL(WHISMUR),
     HOENN_TO_NATIONAL(LOUDRED),
@@ -4255,7 +4255,7 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
                 if (evolutions[i].param <= level && (upperPersonality % 10) > 4)
                     targetSpecies = evolutions[i].targetSpecies;
                 break;
-            case EVO_LEVEL_NINJASK:
+            case EVO_LEVEL_BALISTAMON:
                 if (evolutions[i].param <= level)
                     targetSpecies = evolutions[i].targetSpecies;
                 break;

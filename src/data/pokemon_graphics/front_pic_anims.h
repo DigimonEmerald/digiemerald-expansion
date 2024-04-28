@@ -3892,7 +3892,7 @@ static const union AnimCmd sAnim_Bakemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Ninjask_1[] =
+static const union AnimCmd sAnim_Balistamon_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 1),
@@ -11096,7 +11096,7 @@ SINGLE_ANIMATION(Baboonmon);
 #endif //P_FAMILY_AURUMON
 #if P_FAMILY_BAKEMON
 SINGLE_ANIMATION(Bakemon);
-SINGLE_ANIMATION(Ninjask);
+SINGLE_ANIMATION(Balistamon);
 SINGLE_ANIMATION(Shedinja);
 #endif //P_FAMILY_BAKEMON
 #if P_FAMILY_WHISMUR

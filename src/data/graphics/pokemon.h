@@ -4381,13 +4381,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Bakemon[] = INCBIN_U8("graphics/pokemon/bakemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Ninjask[] = INCBIN_U32("graphics/pokemon/ninjask/anim_front.4bpp.lz");
-    const u32 gMonPalette_Ninjask[] = INCBIN_U32("graphics/pokemon/ninjask/normal.gbapal.lz");
-    const u32 gMonBackPic_Ninjask[] = INCBIN_U32("graphics/pokemon/ninjask/back.4bpp.lz");
-    const u32 gMonShinyPalette_Ninjask[] = INCBIN_U32("graphics/pokemon/ninjask/shiny.gbapal.lz");
-    const u8 gMonIcon_Ninjask[] = INCBIN_U8("graphics/pokemon/ninjask/icon.4bpp");
+    const u32 gMonFrontPic_Balistamon[] = INCBIN_U32("graphics/pokemon/balistamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Balistamon[] = INCBIN_U32("graphics/pokemon/balistamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Balistamon[] = INCBIN_U32("graphics/pokemon/balistamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Balistamon[] = INCBIN_U32("graphics/pokemon/balistamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Balistamon[] = INCBIN_U8("graphics/pokemon/balistamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Ninjask[] = INCBIN_U8("graphics/pokemon/ninjask/footprint.1bpp");
+    const u8 gMonFootprint_Balistamon[] = INCBIN_U8("graphics/pokemon/balistamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Shedinja[] = INCBIN_U32("graphics/pokemon/shedinja/anim_front.4bpp.lz");

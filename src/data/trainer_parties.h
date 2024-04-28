@@ -5149,14 +5149,14 @@ static const struct TrainerMon sParty_Beck[] = {
 static const struct TrainerMon sParty_Yasu[] = {
     {
     .lvl = 26,
-    .species = SPECIES_NINJASK,
+    .species = SPECIES_BALISTAMON,
     }
 };
 
 static const struct TrainerMon sParty_Takashi[] = {
     {
     .lvl = 25,
-    .species = SPECIES_NINJASK,
+    .species = SPECIES_BALISTAMON,
     },
     {
     .lvl = 25,
@@ -5211,7 +5211,7 @@ static const struct TrainerMon sParty_Lung[] = {
     },
     {
     .lvl = 18,
-    .species = SPECIES_NINJASK,
+    .species = SPECIES_BALISTAMON,
     }
 };
 
@@ -7769,7 +7769,7 @@ static const struct TrainerMon sParty_Doug[] = {
     },
     {
     .lvl = 28,
-    .species = SPECIES_NINJASK,
+    .species = SPECIES_BALISTAMON,
     }
 };
 
@@ -7787,7 +7787,7 @@ static const struct TrainerMon sParty_Greg[] = {
 static const struct TrainerMon sParty_Kent[] = {
     {
     .lvl = 25,
-    .species = SPECIES_NINJASK,
+    .species = SPECIES_BALISTAMON,
     }
 };
 
@@ -7806,7 +7806,7 @@ static const struct TrainerMon sParty_James2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 27,
-    .species = SPECIES_NINJASK,
+    .species = SPECIES_BALISTAMON,
     }
 };
 
@@ -7819,7 +7819,7 @@ static const struct TrainerMon sParty_James3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 29,
-    .species = SPECIES_NINJASK,
+    .species = SPECIES_BALISTAMON,
     }
 };
 
@@ -7837,7 +7837,7 @@ static const struct TrainerMon sParty_James4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 31,
-    .species = SPECIES_NINJASK,
+    .species = SPECIES_BALISTAMON,
     }
 };
 
@@ -7850,7 +7850,7 @@ static const struct TrainerMon sParty_James5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 33,
-    .species = SPECIES_NINJASK,
+    .species = SPECIES_BALISTAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -7860,7 +7860,7 @@ static const struct TrainerMon sParty_James5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 33,
-    .species = SPECIES_NINJASK,
+    .species = SPECIES_BALISTAMON,
     }
 };
 
@@ -8219,7 +8219,7 @@ static const struct TrainerMon sParty_Keigo[] = {
     },
     {
     .lvl = 28,
-    .species = SPECIES_NINJASK,
+    .species = SPECIES_BALISTAMON,
     .moves = {MOVE_SAND_ATTACK, MOVE_DOUBLE_TEAM, MOVE_FURY_CUTTER, MOVE_SWORDS_DANCE}
     }
 };
@@ -9427,7 +9427,7 @@ static const struct TrainerMon sParty_Kyra[] = {
 static const struct TrainerMon sParty_Jaiden[] = {
     {
     .lvl = 26,
-    .species = SPECIES_NINJASK,
+    .species = SPECIES_BALISTAMON,
     },
     {
     .lvl = 26,

@@ -1620,7 +1620,7 @@ const struct ContestPokemon gContestOpponents[] =
         .otId = CONTEST_AI_TRAINER_ID,
     },
     [CONTEST_OPPONENT_ELIAS] = {
-        .species = SPECIES_NINJASK,
+        .species = SPECIES_BALISTAMON,
         .nickname = _("NINAS"),
         .trainerName = _("ELIAS"),
         .trainerGfxId = OBJ_EVENT_GFX_LITTLE_BOY,

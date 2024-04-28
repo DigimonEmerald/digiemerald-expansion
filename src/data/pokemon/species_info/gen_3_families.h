@@ -2789,11 +2789,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Bakemon)
         .levelUpLearnset = sBakemonLevelUpLearnset,
         .teachableLearnset = sBakemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_NINJASK, 20, SPECIES_NINJASK},
+        .evolutions = EVOLUTION({EVO_LEVEL_BALISTAMON, 20, SPECIES_BALISTAMON},
                                 {EVO_LEVEL_SHEDINJA, 20, SPECIES_SHEDINJA}),
     },
 
-    [SPECIES_NINJASK] =
+    [SPECIES_BALISTAMON] =
     {
         .baseHP        = 61,
         .baseAttack    = 90,
@@ -2812,9 +2812,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SPEED_BOOST, ABILITY_NONE, ABILITY_INFILTRATOR },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Ninjask"),
-        .cryId = CRY_NINJASK,
-        .natDexNum = NATIONAL_DEX_NINJASK,
+        .speciesName = _("Balistamon"),
+        .cryId = CRY_BALISTAMON,
+        .natDexNum = NATIONAL_DEX_BALISTAMON,
         .categoryName = _("Ninja"),
         .height = 8,
         .weight = 120,
@@ -2827,23 +2827,23 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = -9,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Ninjask,
+        .frontPic = gMonFrontPic_Balistamon,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Ninjask,
+        .frontAnimFrames = sAnims_Balistamon,
         .frontAnimId = ANIM_H_SLIDE_SLOW,
         .enemyMonElevation = 10,
-        .backPic = gMonBackPic_Ninjask,
+        .backPic = gMonBackPic_Balistamon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Ninjask,
-        .shinyPalette = gMonShinyPalette_Ninjask,
-        .iconSprite = gMonIcon_Ninjask,
+        .palette = gMonPalette_Balistamon,
+        .shinyPalette = gMonShinyPalette_Balistamon,
+        .iconSprite = gMonIcon_Balistamon,
         .iconPalIndex = 1,
-        FOOTPRINT(Ninjask)
-        .levelUpLearnset = sNinjaskLevelUpLearnset,
-        .teachableLearnset = sNinjaskTeachableLearnset,
+        FOOTPRINT(Balistamon)
+        .levelUpLearnset = sBalistamonLevelUpLearnset,
+        .teachableLearnset = sBalistamonTeachableLearnset,
     },
 
     [SPECIES_SHEDINJA] =
