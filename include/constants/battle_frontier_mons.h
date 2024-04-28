@@ -42,7 +42,7 @@
 #define FRONTIER_MON_GHOSTMON       38
 #define FRONTIER_MON_BUDMON        39
 #define FRONTIER_MON_GIZUMON         40
-#define FRONTIER_MON_NINCADA        41
+#define FRONTIER_MON_BAKEMON        41
 #define FRONTIER_MON_ARCHELOMON        42
 #define FRONTIER_MON_SANDMON     43
 #define FRONTIER_MON_ALLOMON_X        44

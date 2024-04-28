@@ -7758,14 +7758,14 @@ static const struct TrainerMon sParty_Jose[] = {
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 8,
-    .species = SPECIES_NINCADA,
+    .species = SPECIES_BAKEMON,
     }
 };
 
 static const struct TrainerMon sParty_Doug[] = {
     {
     .lvl = 28,
-    .species = SPECIES_NINCADA,
+    .species = SPECIES_BAKEMON,
     },
     {
     .lvl = 28,
@@ -7794,11 +7794,11 @@ static const struct TrainerMon sParty_Kent[] = {
 static const struct TrainerMon sParty_James1[] = {
     {
     .lvl = 6,
-    .species = SPECIES_NINCADA,
+    .species = SPECIES_BAKEMON,
     },
     {
     .lvl = 6,
-    .species = SPECIES_NINCADA,
+    .species = SPECIES_BAKEMON,
     }
 };
 
@@ -8227,7 +8227,7 @@ static const struct TrainerMon sParty_Keigo[] = {
 static const struct TrainerMon sParty_Riley[] = {
     {
     .lvl = 28,
-    .species = SPECIES_NINCADA,
+    .species = SPECIES_BAKEMON,
     .moves = {MOVE_LEECH_LIFE, MOVE_FURY_SWIPES, MOVE_MIND_READER, MOVE_DIG}
     },
     {

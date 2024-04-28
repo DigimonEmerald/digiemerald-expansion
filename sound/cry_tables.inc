@@ -796,11 +796,11 @@ gCryTable::
 	cry Cry_Axemon
 	cry Cry_Baboonmon
 .endif @ P_FAMILY_AURUMON
-.if P_FAMILY_NINCADA == TRUE
-	cry Cry_Nincada
+.if P_FAMILY_BAKEMON == TRUE
+	cry Cry_Bakemon
 	cry Cry_Ninjask
 	cry Cry_Shedinja
-.endif @ P_FAMILY_NINCADA
+.endif @ P_FAMILY_BAKEMON
 .if P_FAMILY_WHISMUR == TRUE
 	cry Cry_Whismur
 	cry Cry_Loudred
@@ -3222,11 +3222,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Axemon
 	cry_reverse Cry_Baboonmon
 .endif @ P_FAMILY_AURUMON
-.if P_FAMILY_NINCADA == TRUE
-	cry_reverse Cry_Nincada
+.if P_FAMILY_BAKEMON == TRUE
+	cry_reverse Cry_Bakemon
 	cry_reverse Cry_Ninjask
 	cry_reverse Cry_Shedinja
-.endif @ P_FAMILY_NINCADA
+.endif @ P_FAMILY_BAKEMON
 .if P_FAMILY_WHISMUR == TRUE
 	cry_reverse Cry_Whismur
 	cry_reverse Cry_Loudred

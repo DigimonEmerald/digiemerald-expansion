@@ -4371,14 +4371,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_AURUMON
 
-#if P_FAMILY_NINCADA
-    const u32 gMonFrontPic_Nincada[] = INCBIN_U32("graphics/pokemon/nincada/anim_front.4bpp.lz");
-    const u32 gMonPalette_Nincada[] = INCBIN_U32("graphics/pokemon/nincada/normal.gbapal.lz");
-    const u32 gMonBackPic_Nincada[] = INCBIN_U32("graphics/pokemon/nincada/back.4bpp.lz");
-    const u32 gMonShinyPalette_Nincada[] = INCBIN_U32("graphics/pokemon/nincada/shiny.gbapal.lz");
-    const u8 gMonIcon_Nincada[] = INCBIN_U8("graphics/pokemon/nincada/icon.4bpp");
+#if P_FAMILY_BAKEMON
+    const u32 gMonFrontPic_Bakemon[] = INCBIN_U32("graphics/pokemon/bakemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Bakemon[] = INCBIN_U32("graphics/pokemon/bakemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Bakemon[] = INCBIN_U32("graphics/pokemon/bakemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Bakemon[] = INCBIN_U32("graphics/pokemon/bakemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Bakemon[] = INCBIN_U8("graphics/pokemon/bakemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Nincada[] = INCBIN_U8("graphics/pokemon/nincada/footprint.1bpp");
+    const u8 gMonFootprint_Bakemon[] = INCBIN_U8("graphics/pokemon/bakemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Ninjask[] = INCBIN_U32("graphics/pokemon/ninjask/anim_front.4bpp.lz");
@@ -4398,7 +4398,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Shedinja[] = INCBIN_U8("graphics/pokemon/shedinja/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_NINCADA
+#endif //P_FAMILY_BAKEMON
 
 #if P_FAMILY_WHISMUR
     const u32 gMonFrontPic_Whismur[] = INCBIN_U32("graphics/pokemon/whismur/anim_front.4bpp.lz");

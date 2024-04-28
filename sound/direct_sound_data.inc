@@ -2252,10 +2252,10 @@ Cry_Baboonmon::
 	.incbin "sound/direct_sound_samples/cries/baboonmon.bin"
 .endif @ P_FAMILY_AURUMON
 
-.if P_FAMILY_NINCADA == TRUE
+.if P_FAMILY_BAKEMON == TRUE
 	.align 2
-Cry_Nincada::
-	.incbin "sound/direct_sound_samples/cries/nincada.bin"
+Cry_Bakemon::
+	.incbin "sound/direct_sound_samples/cries/bakemon.bin"
 
 	.align 2
 Cry_Ninjask::
@@ -2264,7 +2264,7 @@ Cry_Ninjask::
 	.align 2
 Cry_Shedinja::
 	.incbin "sound/direct_sound_samples/cries/shedinja.bin"
-.endif @ P_FAMILY_NINCADA
+.endif @ P_FAMILY_BAKEMON
 
 .if P_FAMILY_WHISMUR == TRUE
 	.align 2

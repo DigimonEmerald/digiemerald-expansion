@@ -200,7 +200,7 @@
 #define P_FAMILY_ARCHELOMON                 P_GEN_3_POKEMON
 #define P_FAMILY_ARESDRAMON               P_GEN_3_POKEMON
 #define P_FAMILY_AURUMON                 P_GEN_3_POKEMON
-#define P_FAMILY_NINCADA                 P_GEN_3_POKEMON
+#define P_FAMILY_BAKEMON                 P_GEN_3_POKEMON
 #define P_FAMILY_WHISMUR                 P_GEN_3_POKEMON
 #define P_FAMILY_MAKUHITA                P_GEN_3_POKEMON
 #define P_FAMILY_NOSEPASS                P_GEN_3_POKEMON

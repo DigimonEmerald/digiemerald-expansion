@@ -287,8 +287,8 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_BASHFUL
     },
-    [FRONTIER_MON_NINCADA] = {
-        .species = SPECIES_NINCADA,
+    [FRONTIER_MON_BAKEMON] = {
+        .species = SPECIES_BAKEMON,
         .moves = {MOVE_MUD_SLAP, MOVE_DIG, MOVE_TOXIC, MOVE_PROTECT},
         .itemTableId = BATTLE_FRONTIER_ITEM_PECHA_BERRY,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,

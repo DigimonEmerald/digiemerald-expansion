@@ -13935,8 +13935,8 @@ static const u16 sBaboonmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_AURUMON
 
-#if P_FAMILY_NINCADA
-static const u16 sNincadaTeachableLearnset[] = {
+#if P_FAMILY_BAKEMON
+static const u16 sBakemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_CUT,
     MOVE_DIG,
@@ -14018,7 +14018,7 @@ static const u16 sShedinjaTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_NINCADA
+#endif //P_FAMILY_BAKEMON
 
 #if P_FAMILY_WHISMUR
 static const u16 sWhismurTeachableLearnset[] = {

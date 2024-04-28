@@ -2304,8 +2304,8 @@ const u16 gEggMoves[] = {
         MOVE_TICKLE),
 #endif //P_FAMILY_AURUMON
 
-#if P_FAMILY_NINCADA
-    egg_moves(NINCADA,
+#if P_FAMILY_BAKEMON
+    egg_moves(BAKEMON,
         MOVE_ENDURE,
         MOVE_FEINT_ATTACK,
         MOVE_GUST,
@@ -2314,7 +2314,7 @@ const u16 gEggMoves[] = {
         MOVE_NIGHT_SLASH,
         MOVE_BUG_BITE,
         MOVE_FINAL_GAMBIT),
-#endif //P_FAMILY_NINCADA
+#endif //P_FAMILY_BAKEMON
 
 #if P_FAMILY_WHISMUR
     egg_moves(WHISMUR,

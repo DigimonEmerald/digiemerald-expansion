@@ -2737,8 +2737,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_AURUMON
 
-#if P_FAMILY_NINCADA
-    [SPECIES_NINCADA] =
+#if P_FAMILY_BAKEMON
+    [SPECIES_BAKEMON] =
     {
         .baseHP        = 31,
         .baseAttack    = 45,
@@ -2758,9 +2758,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_COMPOUND_EYES, ABILITY_NONE, ABILITY_RUN_AWAY },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Nincada"),
-        .cryId = CRY_NINCADA,
-        .natDexNum = NATIONAL_DEX_NINCADA,
+        .speciesName = _("Bakemon"),
+        .cryId = CRY_BAKEMON,
+        .natDexNum = NATIONAL_DEX_BAKEMON,
         .categoryName = _("Trainee"),
         .height = 5,
         .weight = 55,
@@ -2773,22 +2773,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 21,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Nincada,
+        .frontPic = gMonFrontPic_Bakemon,
         .frontPicSize = MON_COORDS_SIZE(56, 32),
         .frontPicYOffset = 16,
-        .frontAnimFrames = sAnims_Nincada,
+        .frontAnimFrames = sAnims_Bakemon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Nincada,
+        .backPic = gMonBackPic_Bakemon,
         .backPicSize = MON_COORDS_SIZE(64, 32),
         .backPicYOffset = 18,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Nincada,
-        .shinyPalette = gMonShinyPalette_Nincada,
-        .iconSprite = gMonIcon_Nincada,
+        .palette = gMonPalette_Bakemon,
+        .shinyPalette = gMonShinyPalette_Bakemon,
+        .iconSprite = gMonIcon_Bakemon,
         .iconPalIndex = 1,
-        FOOTPRINT(Nincada)
-        .levelUpLearnset = sNincadaLevelUpLearnset,
-        .teachableLearnset = sNincadaTeachableLearnset,
+        FOOTPRINT(Bakemon)
+        .levelUpLearnset = sBakemonLevelUpLearnset,
+        .teachableLearnset = sBakemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL_NINJASK, 20, SPECIES_NINJASK},
                                 {EVO_LEVEL_SHEDINJA, 20, SPECIES_SHEDINJA}),
     },
@@ -2898,7 +2898,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sShedinjaLevelUpLearnset,
         .teachableLearnset = sShedinjaTeachableLearnset,
     },
-#endif //P_FAMILY_NINCADA
+#endif //P_FAMILY_BAKEMON
 
 #if P_FAMILY_WHISMUR
     [SPECIES_WHISMUR] =
