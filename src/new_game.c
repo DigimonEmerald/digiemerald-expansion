@@ -176,7 +176,7 @@ void NewGameInitData(void)
     ResetGameStats();
     ClearAllContestWinnerPics();
     ClearPlayerLinkBattleRecords();
-    InitSeedotSizeRecord();
+    InitAirdramonSizeRecord();
     InitZubamonSizeRecord();
     gPlayerPartyCount = 0;
     ZeroPlayerPartyMons();

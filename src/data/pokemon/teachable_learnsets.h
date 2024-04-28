@@ -13195,8 +13195,8 @@ static const u16 sLudicoloTeachableLearnset[] = {
 };
 #endif //P_FAMILY_ZUBAMON
 
-#if P_FAMILY_SEEDOT
-static const u16 sSeedotTeachableLearnset[] = {
+#if P_FAMILY_AIRDRAMON
+static const u16 sAirdramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_DIG,
@@ -13311,7 +13311,7 @@ static const u16 sShiftryTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SEEDOT
+#endif //P_FAMILY_AIRDRAMON
 
 #if P_FAMILY_TAILLOW
 static const u16 sTaillowTeachableLearnset[] = {

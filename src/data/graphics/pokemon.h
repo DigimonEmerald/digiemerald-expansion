@@ -4171,14 +4171,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonBackPic_LudicoloF[] = INCBIN_U32("graphics/pokemon/ludicolo/backf.4bpp.lz");
 #endif //P_FAMILY_ZUBAMON
 
-#if P_FAMILY_SEEDOT
-    const u32 gMonFrontPic_Seedot[] = INCBIN_U32("graphics/pokemon/seedot/anim_front.4bpp.lz");
-    const u32 gMonPalette_Seedot[] = INCBIN_U32("graphics/pokemon/seedot/normal.gbapal.lz");
-    const u32 gMonBackPic_Seedot[] = INCBIN_U32("graphics/pokemon/seedot/back.4bpp.lz");
-    const u32 gMonShinyPalette_Seedot[] = INCBIN_U32("graphics/pokemon/seedot/shiny.gbapal.lz");
-    const u8 gMonIcon_Seedot[] = INCBIN_U8("graphics/pokemon/seedot/icon.4bpp");
+#if P_FAMILY_AIRDRAMON
+    const u32 gMonFrontPic_Airdramon[] = INCBIN_U32("graphics/pokemon/airdramon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Airdramon[] = INCBIN_U32("graphics/pokemon/airdramon/normal.gbapal.lz");
+    const u32 gMonBackPic_Airdramon[] = INCBIN_U32("graphics/pokemon/airdramon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Airdramon[] = INCBIN_U32("graphics/pokemon/airdramon/shiny.gbapal.lz");
+    const u8 gMonIcon_Airdramon[] = INCBIN_U8("graphics/pokemon/airdramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Seedot[] = INCBIN_U8("graphics/pokemon/seedot/footprint.1bpp");
+    const u8 gMonFootprint_Airdramon[] = INCBIN_U8("graphics/pokemon/airdramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Nuzleaf[] = INCBIN_U32("graphics/pokemon/nuzleaf/anim_front.4bpp.lz");
@@ -4204,7 +4204,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
     const u32 gMonFrontPic_ShiftryF[] = INCBIN_U32("graphics/pokemon/shiftry/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_ShiftryF[] = INCBIN_U32("graphics/pokemon/shiftry/backf.4bpp.lz");
-#endif //P_FAMILY_SEEDOT
+#endif //P_FAMILY_AIRDRAMON
 
 #if P_FAMILY_TAILLOW
     const u32 gMonFrontPic_Taillow[] = INCBIN_U32("graphics/pokemon/taillow/anim_front.4bpp.lz");

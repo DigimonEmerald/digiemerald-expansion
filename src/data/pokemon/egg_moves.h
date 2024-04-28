@@ -2194,8 +2194,8 @@ const u16 gEggMoves[] = {
         MOVE_TEETER_DANCE),
 #endif //P_FAMILY_ZUBAMON
 
-#if P_FAMILY_SEEDOT
-    egg_moves(SEEDOT,
+#if P_FAMILY_AIRDRAMON
+    egg_moves(AIRDRAMON,
         MOVE_LEECH_SEED,
         MOVE_AMNESIA,
         MOVE_QUICK_ATTACK,
@@ -2209,7 +2209,7 @@ const u16 gEggMoves[] = {
         MOVE_BEAT_UP,
         MOVE_BULLET_SEED,
         MOVE_GRASSY_TERRAIN),
-#endif //P_FAMILY_SEEDOT
+#endif //P_FAMILY_AIRDRAMON
 
 #if P_FAMILY_TAILLOW
     egg_moves(TAILLOW,

@@ -168,7 +168,7 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_SEEDOT"
+                "species": "SPECIES_AIRDRAMON"
               }
             ]
           },
@@ -1448,7 +1448,7 @@
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_SEEDOT"
+                "species": "SPECIES_AIRDRAMON"
               }
             ]
           },
@@ -3575,7 +3575,7 @@
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_SEEDOT"
+                "species": "SPECIES_AIRDRAMON"
               }
             ]
           },

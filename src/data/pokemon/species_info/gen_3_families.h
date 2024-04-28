@@ -1575,8 +1575,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_ZUBAMON
 
-#if P_FAMILY_SEEDOT
-    [SPECIES_SEEDOT] =
+#if P_FAMILY_AIRDRAMON
+    [SPECIES_AIRDRAMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 40,
@@ -1596,9 +1596,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_GRASS),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_EARLY_BIRD, ABILITY_PICKPOCKET },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Seedot"),
-        .cryId = CRY_SEEDOT,
-        .natDexNum = NATIONAL_DEX_SEEDOT,
+        .speciesName = _("Airdramon"),
+        .cryId = CRY_AIRDRAMON,
+        .natDexNum = NATIONAL_DEX_AIRDRAMON,
         .categoryName = _("Acorn"),
         .height = 5,
         .weight = 40,
@@ -1611,22 +1611,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Seedot,
+        .frontPic = gMonFrontPic_Airdramon,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Seedot,
+        .frontAnimFrames = sAnims_Airdramon,
         .frontAnimId = ANIM_V_JUMPS_H_JUMPS,
-        .backPic = gMonBackPic_Seedot,
+        .backPic = gMonBackPic_Airdramon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Seedot,
-        .shinyPalette = gMonShinyPalette_Seedot,
-        .iconSprite = gMonIcon_Seedot,
+        .palette = gMonPalette_Airdramon,
+        .shinyPalette = gMonShinyPalette_Airdramon,
+        .iconSprite = gMonIcon_Airdramon,
         .iconPalIndex = 2,
-        FOOTPRINT(Seedot)
-        .levelUpLearnset = sSeedotLevelUpLearnset,
-        .teachableLearnset = sSeedotTeachableLearnset,
+        FOOTPRINT(Airdramon)
+        .levelUpLearnset = sAirdramonLevelUpLearnset,
+        .teachableLearnset = sAirdramonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_NUZLEAF}),
     },
 
@@ -1754,7 +1754,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sShiftryLevelUpLearnset,
         .teachableLearnset = sShiftryTeachableLearnset,
     },
-#endif //P_FAMILY_SEEDOT
+#endif //P_FAMILY_AIRDRAMON
 
 #if P_FAMILY_TAILLOW
     [SPECIES_TAILLOW] =

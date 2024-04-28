@@ -2153,10 +2153,10 @@ Cry_Ludicolo::
 	.incbin "sound/direct_sound_samples/cries/ludicolo.bin"
 .endif @ P_FAMILY_ZUBAMON
 
-.if P_FAMILY_SEEDOT == TRUE
+.if P_FAMILY_AIRDRAMON == TRUE
 	.align 2
-Cry_Seedot::
-	.incbin "sound/direct_sound_samples/cries/seedot.bin"
+Cry_Airdramon::
+	.incbin "sound/direct_sound_samples/cries/airdramon.bin"
 
 	.align 2
 Cry_Nuzleaf::
@@ -2165,7 +2165,7 @@ Cry_Nuzleaf::
 	.align 2
 Cry_Shiftry::
 	.incbin "sound/direct_sound_samples/cries/shiftry.bin"
-.endif @ P_FAMILY_SEEDOT
+.endif @ P_FAMILY_AIRDRAMON
 
 .if P_FAMILY_TAILLOW == TRUE
 	.align 2

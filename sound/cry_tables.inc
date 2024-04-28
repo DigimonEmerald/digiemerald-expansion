@@ -756,11 +756,11 @@ gCryTable::
 	cry Cry_Aegiomon
 	cry Cry_Ludicolo
 .endif @ P_FAMILY_ZUBAMON
-.if P_FAMILY_SEEDOT == TRUE
-	cry Cry_Seedot
+.if P_FAMILY_AIRDRAMON == TRUE
+	cry Cry_Airdramon
 	cry Cry_Nuzleaf
 	cry Cry_Shiftry
-.endif @ P_FAMILY_SEEDOT
+.endif @ P_FAMILY_AIRDRAMON
 .if P_FAMILY_TAILLOW == TRUE
 	cry Cry_Taillow
 	cry Cry_Swellow
@@ -3182,11 +3182,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Aegiomon
 	cry_reverse Cry_Ludicolo
 .endif @ P_FAMILY_ZUBAMON
-.if P_FAMILY_SEEDOT == TRUE
-	cry_reverse Cry_Seedot
+.if P_FAMILY_AIRDRAMON == TRUE
+	cry_reverse Cry_Airdramon
 	cry_reverse Cry_Nuzleaf
 	cry_reverse Cry_Shiftry
-.endif @ P_FAMILY_SEEDOT
+.endif @ P_FAMILY_AIRDRAMON
 .if P_FAMILY_TAILLOW == TRUE
 	cry_reverse Cry_Taillow
 	cry_reverse Cry_Swellow

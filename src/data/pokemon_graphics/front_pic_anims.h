@@ -3661,8 +3661,8 @@ static const union AnimCmd sAnim_Ludicolo_1[] =
 };
 #endif //P_FAMILY_ZUBAMON
 
-#if P_FAMILY_SEEDOT
-static const union AnimCmd sAnim_Seedot_1[] =
+#if P_FAMILY_AIRDRAMON
+static const union AnimCmd sAnim_Airdramon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -3697,7 +3697,7 @@ static const union AnimCmd sAnim_Shiftry_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SEEDOT
+#endif //P_FAMILY_AIRDRAMON
 
 #if P_FAMILY_TAILLOW
 static const union AnimCmd sAnim_Taillow_1[] =
@@ -11054,11 +11054,11 @@ SINGLE_ANIMATION(Zubamon);
 SINGLE_ANIMATION(Aegiomon);
 SINGLE_ANIMATION(Ludicolo);
 #endif //P_FAMILY_ZUBAMON
-#if P_FAMILY_SEEDOT
-SINGLE_ANIMATION(Seedot);
+#if P_FAMILY_AIRDRAMON
+SINGLE_ANIMATION(Airdramon);
 SINGLE_ANIMATION(Nuzleaf);
 SINGLE_ANIMATION(Shiftry);
-#endif //P_FAMILY_SEEDOT
+#endif //P_FAMILY_AIRDRAMON
 #if P_FAMILY_TAILLOW
 SINGLE_ANIMATION(Taillow);
 SINGLE_ANIMATION(Swellow);
