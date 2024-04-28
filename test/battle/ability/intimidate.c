@@ -132,7 +132,7 @@ DOUBLE_BATTLE_TEST("Intimidate activates on an empty slot")
         PLAYER(SPECIES_CROAGUNK);
         PLAYER(SPECIES_WYNAUT);
         PLAYER(SPECIES_SALAMON_X) { Ability(ABILITY_INTIMIDATE); }
-        OPPONENT(SPECIES_RALTS);
+        OPPONENT(SPECIES_APEMON);
         OPPONENT(SPECIES_AZURILL);
     } WHEN {
         TURN {
@@ -155,7 +155,7 @@ DOUBLE_BATTLE_TEST("Intimidate activates on an empty slot")
         MESSAGE("Go! Salamon_x!");
         ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
         NONE_OF {
-            MESSAGE("Salamon_x's Intimidate cuts Foe Ralts's attack!");
+            MESSAGE("Salamon_x's Intimidate cuts Foe Apemon's attack!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
         MESSAGE("Salamon_x's Intimidate cuts Foe Azurill's attack!");

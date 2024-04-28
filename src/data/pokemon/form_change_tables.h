@@ -291,7 +291,7 @@ static const struct FormChange sTerriermon_xFormChangeTable[] = {
 };
 #endif //P_FAMILY_TERRIERMON
 
-#if P_FAMILY_RALTS
+#if P_FAMILY_APEMON
 static const struct FormChange sGardevoirFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_GARDEVOIR_MEGA, ITEM_GARDEVOIRITE},
@@ -307,7 +307,7 @@ static const struct FormChange sGalladeFormChangeTable[] = {
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_RALTS
+#endif //P_FAMILY_APEMON
 
 #if P_FAMILY_SABLEYE
 static const struct FormChange sSableyeFormChangeTable[] = {

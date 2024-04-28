@@ -769,7 +769,7 @@ static const u16 sTsukaimonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_TOYAGUMON
 
-#if P_FAMILY_RALTS
+#if P_FAMILY_APEMON
 static const u16 sGardevoirFormSpeciesIdTable[] = {
     SPECIES_GARDEVOIR,
 #if P_MEGA_EVOLUTIONS
@@ -787,7 +787,7 @@ static const u16 sGalladeFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_RALTS
+#endif //P_FAMILY_APEMON
 
 #if P_FAMILY_SABLEYE
 static const u16 sSableyeFormSpeciesIdTable[] = {

@@ -7611,8 +7611,8 @@ static const struct LevelUpMove sAnkylomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_ANGEMON
 
-#if P_FAMILY_RALTS
-static const struct LevelUpMove sRaltsLevelUpLearnset[] = {
+#if P_FAMILY_APEMON
+static const struct LevelUpMove sApemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE( 3, MOVE_DOUBLE_TEAM),
@@ -7713,7 +7713,7 @@ static const struct LevelUpMove sGalladeLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_RALTS
+#endif //P_FAMILY_APEMON
 
 #if P_FAMILY_SURSKIT
 static const struct LevelUpMove sSurskitLevelUpLearnset[] = {

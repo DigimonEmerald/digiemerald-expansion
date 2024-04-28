@@ -2243,8 +2243,8 @@ const u16 gEggMoves[] = {
         MOVE_WIDE_GUARD),
 #endif //P_FAMILY_ANGEMON
 
-#if P_FAMILY_RALTS
-    egg_moves(RALTS,
+#if P_FAMILY_APEMON
+    egg_moves(APEMON,
         MOVE_DISABLE,
         MOVE_MEAN_LOOK,
         MOVE_MEMENTO,
@@ -2257,7 +2257,7 @@ const u16 gEggMoves[] = {
         MOVE_SKILL_SWAP,
         MOVE_MISTY_TERRAIN,
         MOVE_ALLY_SWITCH),
-#endif //P_FAMILY_RALTS
+#endif //P_FAMILY_APEMON
 
 #if P_FAMILY_SURSKIT
     egg_moves(SURSKIT,

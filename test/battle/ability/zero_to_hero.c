@@ -141,13 +141,13 @@ SINGLE_BATTLE_TEST("Zero to Hero cannot be copied by Trace")
 {
     GIVEN {
         PLAYER(SPECIES_PALAFIN_ZERO) { Ability(ABILITY_ZERO_TO_HERO); }
-        OPPONENT(SPECIES_RALTS) { Ability(ABILITY_TRACE); }
+        OPPONENT(SPECIES_APEMON) { Ability(ABILITY_TRACE); }
     } WHEN {
         TURN {}
     } SCENE {
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_TRACE);
-            MESSAGE("Foe Ralts Traced Palafin's Zero to Hero!");
+            MESSAGE("Foe Apemon Traced Palafin's Zero to Hero!");
         }
     }
 }

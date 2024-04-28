@@ -140,7 +140,7 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(ANGELAMON),
     HOENN_TO_NATIONAL(ANGEMON),
     HOENN_TO_NATIONAL(ANKYLOMON),
-    HOENN_TO_NATIONAL(RALTS),
+    HOENN_TO_NATIONAL(APEMON),
     HOENN_TO_NATIONAL(KIRLIA),
     HOENN_TO_NATIONAL(GARDEVOIR),
 #if P_NEW_EVOS_IN_REGIONAL_DEX && P_GEN_4_CROSS_EVOS
@@ -1050,7 +1050,7 @@ void CreateMonWithGenderNatureLetter(struct Pokemon *mon, u16 species, u8 level,
     CreateMon(mon, species, level, fixedIV, TRUE, personality, OT_ID_PLAYER_ID, 0);
 }
 
-// This is only used to create Wally's Ralts.
+// This is only used to create Wally's Apemon.
 void CreateMaleMon(struct Pokemon *mon, u16 species, u8 level)
 {
     u32 personality;

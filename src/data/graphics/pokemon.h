@@ -4246,14 +4246,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_ANGEMON
 
-#if P_FAMILY_RALTS
-    const u32 gMonFrontPic_Ralts[] = INCBIN_U32("graphics/pokemon/ralts/anim_front.4bpp.lz");
-    const u32 gMonPalette_Ralts[] = INCBIN_U32("graphics/pokemon/ralts/normal.gbapal.lz");
-    const u32 gMonBackPic_Ralts[] = INCBIN_U32("graphics/pokemon/ralts/back.4bpp.lz");
-    const u32 gMonShinyPalette_Ralts[] = INCBIN_U32("graphics/pokemon/ralts/shiny.gbapal.lz");
-    const u8 gMonIcon_Ralts[] = INCBIN_U8("graphics/pokemon/ralts/icon.4bpp");
+#if P_FAMILY_APEMON
+    const u32 gMonFrontPic_Apemon[] = INCBIN_U32("graphics/pokemon/apemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Apemon[] = INCBIN_U32("graphics/pokemon/apemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Apemon[] = INCBIN_U32("graphics/pokemon/apemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Apemon[] = INCBIN_U32("graphics/pokemon/apemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Apemon[] = INCBIN_U8("graphics/pokemon/apemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Ralts[] = INCBIN_U8("graphics/pokemon/ralts/footprint.1bpp");
+    const u8 gMonFootprint_Apemon[] = INCBIN_U8("graphics/pokemon/apemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Kirlia[] = INCBIN_U32("graphics/pokemon/kirlia/anim_front.4bpp.lz");
@@ -4300,7 +4300,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonIcon_GalladeMega[] = INCBIN_U8("graphics/pokemon/gallade/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_RALTS
+#endif //P_FAMILY_APEMON
 
 #if P_FAMILY_SURSKIT
     const u32 gMonFrontPic_Surskit[] = INCBIN_U32("graphics/pokemon/surskit/anim_front.4bpp.lz");

@@ -769,8 +769,8 @@ gCryTable::
 	cry Cry_Angemon
 	cry Cry_Ankylomon
 .endif @ P_FAMILY_ANGEMON
-.if P_FAMILY_RALTS == TRUE
-	cry Cry_Ralts
+.if P_FAMILY_APEMON == TRUE
+	cry Cry_Apemon
 	cry Cry_Kirlia
 	cry Cry_Gardevoir
 .if P_MEGA_EVOLUTIONS == TRUE
@@ -782,7 +782,7 @@ gCryTable::
 	cry Cry_GalladeMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_RALTS
+.endif @ P_FAMILY_APEMON
 .if P_FAMILY_SURSKIT == TRUE
 	cry Cry_Surskit
 	cry Cry_Masquerain
@@ -3195,8 +3195,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Angemon
 	cry_reverse Cry_Ankylomon
 .endif @ P_FAMILY_ANGEMON
-.if P_FAMILY_RALTS == TRUE
-	cry_reverse Cry_Ralts
+.if P_FAMILY_APEMON == TRUE
+	cry_reverse Cry_Apemon
 	cry_reverse Cry_Kirlia
 	cry_reverse Cry_Gardevoir
 .if P_MEGA_EVOLUTIONS == TRUE
@@ -3208,7 +3208,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_GalladeMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_RALTS
+.endif @ P_FAMILY_APEMON
 .if P_FAMILY_SURSKIT == TRUE
 	cry_reverse Cry_Surskit
 	cry_reverse Cry_Masquerain

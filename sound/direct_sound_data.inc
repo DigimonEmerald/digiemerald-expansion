@@ -2187,10 +2187,10 @@ Cry_Ankylomon::
 	.incbin "sound/direct_sound_samples/cries/ankylomon.bin"
 .endif @ P_FAMILY_ANGEMON
 
-.if P_FAMILY_RALTS == TRUE
+.if P_FAMILY_APEMON == TRUE
 	.align 2
-Cry_Ralts::
-	.incbin "sound/direct_sound_samples/cries/ralts.bin"
+Cry_Apemon::
+	.incbin "sound/direct_sound_samples/cries/apemon.bin"
 
 	.align 2
 Cry_Kirlia::
@@ -2216,7 +2216,7 @@ Cry_GalladeMega::
 	.incbin "sound/direct_sound_samples/cries/gallade_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_RALTS
+.endif @ P_FAMILY_APEMON
 
 .if P_FAMILY_SURSKIT == TRUE
 	.align 2

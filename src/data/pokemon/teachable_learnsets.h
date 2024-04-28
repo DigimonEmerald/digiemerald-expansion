@@ -13428,8 +13428,8 @@ static const u16 sAnkylomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_ANGEMON
 
-#if P_FAMILY_RALTS
-static const u16 sRaltsTeachableLearnset[] = {
+#if P_FAMILY_APEMON
+static const u16 sApemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
@@ -13627,7 +13627,7 @@ static const u16 sGalladeTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_RALTS
+#endif //P_FAMILY_APEMON
 
 #if P_FAMILY_SURSKIT
 static const u16 sSurskitTeachableLearnset[] = {

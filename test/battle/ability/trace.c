@@ -4,13 +4,13 @@
 SINGLE_BATTLE_TEST("Trace copies opponents ability")
 {
     GIVEN {
-        PLAYER(SPECIES_RALTS) { Ability(ABILITY_TRACE); }
+        PLAYER(SPECIES_APEMON) { Ability(ABILITY_TRACE); }
         OPPONENT(SPECIES_SYAKOMON_X) { Ability(ABILITY_BLAZE); }
     } WHEN {
         TURN { }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_TRACE);
-        MESSAGE("Ralts TRACED Foe Syakomon_x's Blaze!");
+        MESSAGE("Apemon TRACED Foe Syakomon_x's Blaze!");
     }
 }
 
@@ -18,13 +18,13 @@ SINGLE_BATTLE_TEST("Trace copies opponents ability on switch-in")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX)
-        PLAYER(SPECIES_RALTS) { Ability(ABILITY_TRACE); }
+        PLAYER(SPECIES_APEMON) { Ability(ABILITY_TRACE); }
         OPPONENT(SPECIES_SYAKOMON_X) { Ability(ABILITY_BLAZE); }
     } WHEN {
         TURN { SWITCH(player, 1); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_TRACE);
-        MESSAGE("Ralts TRACED Foe Syakomon_x's Blaze!");
+        MESSAGE("Apemon TRACED Foe Syakomon_x's Blaze!");
     }
 }
 
@@ -32,7 +32,7 @@ SINGLE_BATTLE_TEST("Trace copies opponents ability on switch-in even if opponent
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX)
-        PLAYER(SPECIES_RALTS) { Ability(ABILITY_TRACE); }
+        PLAYER(SPECIES_APEMON) { Ability(ABILITY_TRACE); }
         OPPONENT(SPECIES_SUNARZAMON) { HP(1); }
         OPPONENT(SPECIES_SYAKOMON_X) { Ability(ABILITY_BLAZE); }
     } WHEN {
@@ -40,7 +40,7 @@ SINGLE_BATTLE_TEST("Trace copies opponents ability on switch-in even if opponent
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MISTY_EXPLOSION);
         ABILITY_POPUP(player, ABILITY_TRACE);
-        MESSAGE("Ralts TRACED Foe Syakomon_x's Blaze!");
+        MESSAGE("Apemon TRACED Foe Syakomon_x's Blaze!");
     }
 }
 
@@ -53,7 +53,7 @@ DOUBLE_BATTLE_TEST("Trace copies opponents ability randomly")
 
     PASSES_RANDOMLY(1, 2, RNG_TRACE);
     GIVEN {
-        PLAYER(SPECIES_RALTS) { Ability(ABILITY_TRACE); }
+        PLAYER(SPECIES_APEMON) { Ability(ABILITY_TRACE); }
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_SYAKOMON_X) { Ability(ability1); }
         OPPONENT(SPECIES_SYAKOMON_X) { Ability(ability2); }
@@ -61,14 +61,14 @@ DOUBLE_BATTLE_TEST("Trace copies opponents ability randomly")
         TURN { }
     } SCENE {
         ABILITY_POPUP(playerLeft, ABILITY_TRACE);
-        MESSAGE("Ralts TRACED Foe Syakomon_x's Blaze!");
+        MESSAGE("Apemon TRACED Foe Syakomon_x's Blaze!");
     }
 }
 
 SINGLE_BATTLE_TEST("Trace will copy an opponent's ability whenever it has the chance but only once")
 {
     GIVEN {
-        PLAYER(SPECIES_RALTS) { Ability(ABILITY_TRACE); }
+        PLAYER(SPECIES_APEMON) { Ability(ABILITY_TRACE); }
         OPPONENT(SPECIES_CHERRIM) { Ability(ABILITY_FLOWER_GIFT); }
         OPPONENT(SPECIES_SYAKOMON_X) { Ability(ABILITY_BLAZE); }
     } WHEN {
@@ -76,6 +76,6 @@ SINGLE_BATTLE_TEST("Trace will copy an opponent's ability whenever it has the ch
     } SCENE {
         // TURN 2
         ABILITY_POPUP(player, ABILITY_TRACE);
-        MESSAGE("Ralts TRACED Foe Syakomon_x's Blaze!");
+        MESSAGE("Apemon TRACED Foe Syakomon_x's Blaze!");
     }
 }

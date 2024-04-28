@@ -3747,8 +3747,8 @@ static const union AnimCmd sAnim_Ankylomon_1[] =
 };
 #endif //P_FAMILY_ANGEMON
 
-#if P_FAMILY_RALTS
-static const union AnimCmd sAnim_Ralts_1[] =
+#if P_FAMILY_APEMON
+static const union AnimCmd sAnim_Apemon_1[] =
 {
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_FRAME(1, 25),
@@ -3788,7 +3788,7 @@ static const union AnimCmd sAnim_Gallade_1[] =
 PLACEHOLDER_ANIM_SINGLE_FRAME(GalladeMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_RALTS
+#endif //P_FAMILY_APEMON
 
 #if P_FAMILY_SURSKIT
 static const union AnimCmd sAnim_Surskit_1[] =
@@ -11067,8 +11067,8 @@ SINGLE_ANIMATION(Angelamon);
 SINGLE_ANIMATION(Angemon);
 SINGLE_ANIMATION(Ankylomon);
 #endif //P_FAMILY_ANGEMON
-#if P_FAMILY_RALTS
-SINGLE_ANIMATION(Ralts);
+#if P_FAMILY_APEMON
+SINGLE_ANIMATION(Apemon);
 SINGLE_ANIMATION(Kirlia);
 SINGLE_ANIMATION(Gardevoir);
 #if P_MEGA_EVOLUTIONS
@@ -11080,7 +11080,7 @@ SINGLE_ANIMATION(Gallade);
 SINGLE_ANIMATION(GalladeMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_RALTS
+#endif //P_FAMILY_APEMON
 #if P_FAMILY_SURSKIT
 SINGLE_ANIMATION(Surskit);
 SINGLE_ANIMATION(Masquerain);

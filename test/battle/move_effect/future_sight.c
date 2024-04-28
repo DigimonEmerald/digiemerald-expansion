@@ -70,7 +70,7 @@ SINGLE_BATTLE_TEST("Future Sight receives STAB from party mon")
     s16 futureSightDmg;
 
     GIVEN {
-        PLAYER(SPECIES_RALTS);
+        PLAYER(SPECIES_APEMON);
         PLAYER(SPECIES_PICHIMON);
         OPPONENT(SPECIES_REGICE);
     } WHEN {
