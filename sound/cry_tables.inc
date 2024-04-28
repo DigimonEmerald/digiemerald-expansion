@@ -758,7 +758,7 @@ gCryTable::
 .endif @ P_FAMILY_ZUBAMON
 .if P_FAMILY_AIRDRAMON == TRUE
 	cry Cry_Airdramon
-	cry Cry_Nuzleaf
+	cry Cry_Akatorimon
 	cry Cry_Shiftry
 .endif @ P_FAMILY_AIRDRAMON
 .if P_FAMILY_TAILLOW == TRUE
@@ -3184,7 +3184,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_ZUBAMON
 .if P_FAMILY_AIRDRAMON == TRUE
 	cry_reverse Cry_Airdramon
-	cry_reverse Cry_Nuzleaf
+	cry_reverse Cry_Akatorimon
 	cry_reverse Cry_Shiftry
 .endif @ P_FAMILY_AIRDRAMON
 .if P_FAMILY_TAILLOW == TRUE

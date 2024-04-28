@@ -3676,7 +3676,7 @@ static const union AnimCmd sAnim_Airdramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Nuzleaf_1[] =
+static const union AnimCmd sAnim_Akatorimon_1[] =
 {
     ANIMCMD_FRAME(0, 7),
     ANIMCMD_FRAME(1, 15),
@@ -11056,7 +11056,7 @@ SINGLE_ANIMATION(Ludicolo);
 #endif //P_FAMILY_ZUBAMON
 #if P_FAMILY_AIRDRAMON
 SINGLE_ANIMATION(Airdramon);
-SINGLE_ANIMATION(Nuzleaf);
+SINGLE_ANIMATION(Akatorimon);
 SINGLE_ANIMATION(Shiftry);
 #endif //P_FAMILY_AIRDRAMON
 #if P_FAMILY_TAILLOW

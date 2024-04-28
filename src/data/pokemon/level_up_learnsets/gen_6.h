@@ -7327,7 +7327,7 @@ static const struct LevelUpMove sAirdramonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sNuzleafLevelUpLearnset[] = {
+static const struct LevelUpMove sAkatorimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 3, MOVE_HARDEN),
     LEVEL_UP_MOVE( 6, MOVE_GROWTH),

@@ -4181,17 +4181,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Airdramon[] = INCBIN_U8("graphics/pokemon/airdramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Nuzleaf[] = INCBIN_U32("graphics/pokemon/nuzleaf/anim_front.4bpp.lz");
-    const u32 gMonPalette_Nuzleaf[] = INCBIN_U32("graphics/pokemon/nuzleaf/normal.gbapal.lz");
-    const u32 gMonBackPic_Nuzleaf[] = INCBIN_U32("graphics/pokemon/nuzleaf/back.4bpp.lz");
-    const u32 gMonShinyPalette_Nuzleaf[] = INCBIN_U32("graphics/pokemon/nuzleaf/shiny.gbapal.lz");
-    const u8 gMonIcon_Nuzleaf[] = INCBIN_U8("graphics/pokemon/nuzleaf/icon.4bpp");
+    const u32 gMonFrontPic_Akatorimon[] = INCBIN_U32("graphics/pokemon/akatorimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Akatorimon[] = INCBIN_U32("graphics/pokemon/akatorimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Akatorimon[] = INCBIN_U32("graphics/pokemon/akatorimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Akatorimon[] = INCBIN_U32("graphics/pokemon/akatorimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Akatorimon[] = INCBIN_U8("graphics/pokemon/akatorimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Nuzleaf[] = INCBIN_U8("graphics/pokemon/nuzleaf/footprint.1bpp");
+    const u8 gMonFootprint_Akatorimon[] = INCBIN_U8("graphics/pokemon/akatorimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_NuzleafF[] = INCBIN_U32("graphics/pokemon/nuzleaf/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_NuzleafF[] = INCBIN_U32("graphics/pokemon/nuzleaf/backf.4bpp.lz");
+    const u32 gMonFrontPic_AkatorimonF[] = INCBIN_U32("graphics/pokemon/akatorimon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_AkatorimonF[] = INCBIN_U32("graphics/pokemon/akatorimon/backf.4bpp.lz");
 
     const u32 gMonFrontPic_Shiftry[] = INCBIN_U32("graphics/pokemon/shiftry/anim_front.4bpp.lz");
     const u32 gMonPalette_Shiftry[] = INCBIN_U32("graphics/pokemon/shiftry/normal.gbapal.lz");

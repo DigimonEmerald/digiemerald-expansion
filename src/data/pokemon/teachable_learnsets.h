@@ -13225,7 +13225,7 @@ static const u16 sAirdramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sNuzleafTeachableLearnset[] = {
+static const u16 sAkatorimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULLET_SEED,
