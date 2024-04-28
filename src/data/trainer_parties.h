@@ -6519,7 +6519,7 @@ static const struct TrainerMon sParty_BrendanRoute110Syakomon_x[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 20,
-    .species = SPECIES_MARSHTOMP,
+    .species = SPECIES_TERRIERMON_ASSISTANT,
     }
 };
 
@@ -6537,7 +6537,7 @@ static const struct TrainerMon sParty_BrendanRoute119Syakomon_x[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 31,
-    .species = SPECIES_MARSHTOMP,
+    .species = SPECIES_TERRIERMON_ASSISTANT,
     }
 };
 
@@ -6648,7 +6648,7 @@ static const struct TrainerMon sParty_MayRoute110Syakomon_x[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 20,
-    .species = SPECIES_MARSHTOMP,
+    .species = SPECIES_TERRIERMON_ASSISTANT,
     }
 };
 
@@ -6666,7 +6666,7 @@ static const struct TrainerMon sParty_MayRoute119Syakomon_x[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 31,
-    .species = SPECIES_MARSHTOMP,
+    .species = SPECIES_TERRIERMON_ASSISTANT,
     }
 };
 
@@ -8473,7 +8473,7 @@ static const struct TrainerMon sParty_BrendanLilycoveSyakomon_x[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 34,
-    .species = SPECIES_MARSHTOMP,
+    .species = SPECIES_TERRIERMON_ASSISTANT,
     }
 };
 
@@ -8542,7 +8542,7 @@ static const struct TrainerMon sParty_MayLilycoveSyakomon_x[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 34,
-    .species = SPECIES_MARSHTOMP,
+    .species = SPECIES_TERRIERMON_ASSISTANT,
     }
 };
 

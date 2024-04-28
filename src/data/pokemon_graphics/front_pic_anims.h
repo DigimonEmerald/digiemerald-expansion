@@ -3490,7 +3490,7 @@ static const union AnimCmd sAnim_Terriermon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Marshtomp_1[] =
+static const union AnimCmd sAnim_Terriermon_assistant_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 5),
@@ -11023,7 +11023,7 @@ SINGLE_ANIMATION(TentomonMega);
 #endif //P_FAMILY_SYAKOMON_X
 #if P_FAMILY_TERRIERMON
 SINGLE_ANIMATION(Terriermon);
-SINGLE_ANIMATION(Marshtomp);
+SINGLE_ANIMATION(Terriermon_assistant);
 SINGLE_ANIMATION(Swampert);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(SwampertMega);

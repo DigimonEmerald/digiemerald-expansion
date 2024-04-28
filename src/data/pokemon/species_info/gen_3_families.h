@@ -516,10 +516,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Terriermon)
         .levelUpLearnset = sTerriermonLevelUpLearnset,
         .teachableLearnset = sTerriermonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_MARSHTOMP}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_TERRIERMON_ASSISTANT}),
     },
 
-    [SPECIES_MARSHTOMP] =
+    [SPECIES_TERRIERMON_ASSISTANT] =
     {
         .baseHP        = 70,
         .baseAttack    = 85,
@@ -538,9 +538,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_DAMP },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Marshtomp"),
-        .cryId = CRY_MARSHTOMP,
-        .natDexNum = NATIONAL_DEX_MARSHTOMP,
+        .speciesName = _("Terriermon_assistant"),
+        .cryId = CRY_TERRIERMON_ASSISTANT,
+        .natDexNum = NATIONAL_DEX_TERRIERMON_ASSISTANT,
         .categoryName = _("Mud Fish"),
         .height = 7,
         .weight = 280,
@@ -553,22 +553,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Marshtomp,
+        .frontPic = gMonFrontPic_Terriermon_assistant,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Marshtomp,
+        .frontAnimFrames = sAnims_Terriermon_assistant,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Marshtomp,
+        .backPic = gMonBackPic_Terriermon_assistant,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Marshtomp,
-        .shinyPalette = gMonShinyPalette_Marshtomp,
-        .iconSprite = gMonIcon_Marshtomp,
+        .palette = gMonPalette_Terriermon_assistant,
+        .shinyPalette = gMonShinyPalette_Terriermon_assistant,
+        .iconSprite = gMonIcon_Terriermon_assistant,
         .iconPalIndex = 0,
-        FOOTPRINT(Marshtomp)
-        .levelUpLearnset = sMarshtompLevelUpLearnset,
-        .teachableLearnset = sMarshtompTeachableLearnset,
+        FOOTPRINT(Terriermon_assistant)
+        .levelUpLearnset = sTerriermon_assistantLevelUpLearnset,
+        .teachableLearnset = sTerriermon_assistantTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SWAMPERT}),
     },
 

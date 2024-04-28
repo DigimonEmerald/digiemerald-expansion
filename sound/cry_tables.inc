@@ -727,7 +727,7 @@ gCryTable::
 .endif @ P_FAMILY_SYAKOMON_X
 .if P_FAMILY_TERRIERMON == TRUE
 	cry Cry_Terriermon
-	cry Cry_Marshtomp
+	cry Cry_Terriermon_assistant
 	cry Cry_Swampert
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_SwampertMega
@@ -3153,7 +3153,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_SYAKOMON_X
 .if P_FAMILY_TERRIERMON == TRUE
 	cry_reverse Cry_Terriermon
-	cry_reverse Cry_Marshtomp
+	cry_reverse Cry_Terriermon_assistant
 	cry_reverse Cry_Swampert
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_SwampertMega

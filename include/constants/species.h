@@ -260,7 +260,7 @@
 #define SPECIES_TAPIRMON                               256
 #define SPECIES_TENTOMON                                257
 #define SPECIES_TERRIERMON                                  258
-#define SPECIES_MARSHTOMP                               259
+#define SPECIES_TERRIERMON_ASSISTANT                               259
 #define SPECIES_SWAMPERT                                260
 #define SPECIES_POOCHYENA                               261
 #define SPECIES_MIGHTYENA                               262
