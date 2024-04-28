@@ -2622,10 +2622,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Aurumon)
         .levelUpLearnset = sAurumonLevelUpLearnset,
         .teachableLearnset = sAurumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_VIGOROTH}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_AXEMON}),
     },
 
-    [SPECIES_VIGOROTH] =
+    [SPECIES_AXEMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 80,
@@ -2644,9 +2644,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_VITAL_SPIRIT, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Vigoroth"),
-        .cryId = CRY_VIGOROTH,
-        .natDexNum = NATIONAL_DEX_VIGOROTH,
+        .speciesName = _("Axemon"),
+        .cryId = CRY_AXEMON,
+        .natDexNum = NATIONAL_DEX_AXEMON,
         .categoryName = _("Wild Monkey"),
         .height = 14,
         .weight = 465,
@@ -2659,22 +2659,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 2,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Vigoroth,
+        .frontPic = gMonFrontPic_Axemon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Vigoroth,
+        .frontAnimFrames = sAnims_Axemon,
         .frontAnimId = ANIM_H_JUMPS,
-        .backPic = gMonBackPic_Vigoroth,
+        .backPic = gMonBackPic_Axemon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Vigoroth,
-        .shinyPalette = gMonShinyPalette_Vigoroth,
-        .iconSprite = gMonIcon_Vigoroth,
+        .palette = gMonPalette_Axemon,
+        .shinyPalette = gMonShinyPalette_Axemon,
+        .iconSprite = gMonIcon_Axemon,
         .iconPalIndex = 2,
-        FOOTPRINT(Vigoroth)
-        .levelUpLearnset = sVigorothLevelUpLearnset,
-        .teachableLearnset = sVigorothTeachableLearnset,
+        FOOTPRINT(Axemon)
+        .levelUpLearnset = sAxemonLevelUpLearnset,
+        .teachableLearnset = sAxemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SLAKING}),
     },
 

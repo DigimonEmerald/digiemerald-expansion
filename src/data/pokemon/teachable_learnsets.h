@@ -13823,7 +13823,7 @@ static const u16 sAurumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sVigorothTeachableLearnset[] = {
+static const u16 sAxemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,

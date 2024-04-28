@@ -2244,8 +2244,8 @@ Cry_Aurumon::
 	.incbin "sound/direct_sound_samples/cries/aurumon.bin"
 
 	.align 2
-Cry_Vigoroth::
-	.incbin "sound/direct_sound_samples/cries/vigoroth.bin"
+Cry_Axemon::
+	.incbin "sound/direct_sound_samples/cries/axemon.bin"
 
 	.align 2
 Cry_Slaking::

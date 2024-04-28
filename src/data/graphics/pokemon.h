@@ -4352,13 +4352,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Aurumon[] = INCBIN_U8("graphics/pokemon/aurumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Vigoroth[] = INCBIN_U32("graphics/pokemon/vigoroth/anim_front.4bpp.lz");
-    const u32 gMonPalette_Vigoroth[] = INCBIN_U32("graphics/pokemon/vigoroth/normal.gbapal.lz");
-    const u32 gMonBackPic_Vigoroth[] = INCBIN_U32("graphics/pokemon/vigoroth/back.4bpp.lz");
-    const u32 gMonShinyPalette_Vigoroth[] = INCBIN_U32("graphics/pokemon/vigoroth/shiny.gbapal.lz");
-    const u8 gMonIcon_Vigoroth[] = INCBIN_U8("graphics/pokemon/vigoroth/icon.4bpp");
+    const u32 gMonFrontPic_Axemon[] = INCBIN_U32("graphics/pokemon/axemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Axemon[] = INCBIN_U32("graphics/pokemon/axemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Axemon[] = INCBIN_U32("graphics/pokemon/axemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Axemon[] = INCBIN_U32("graphics/pokemon/axemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Axemon[] = INCBIN_U8("graphics/pokemon/axemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Vigoroth[] = INCBIN_U8("graphics/pokemon/vigoroth/footprint.1bpp");
+    const u8 gMonFootprint_Axemon[] = INCBIN_U8("graphics/pokemon/axemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Slaking[] = INCBIN_U32("graphics/pokemon/slaking/anim_front.4bpp.lz");

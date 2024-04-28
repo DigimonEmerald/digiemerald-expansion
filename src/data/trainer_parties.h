@@ -794,7 +794,7 @@ static const struct TrainerMon sParty_Berke[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 26,
-    .species = SPECIES_VIGOROTH,
+    .species = SPECIES_AXEMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_FOCUS_ENERGY, MOVE_SLASH, MOVE_NONE, MOVE_NONE}
     }
@@ -3325,7 +3325,7 @@ static const struct TrainerMon sParty_Norman1[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 27,
-    .species = SPECIES_VIGOROTH,
+    .species = SPECIES_AXEMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SLASH, MOVE_FACADE, MOVE_ENCORE, MOVE_FEINT_ATTACK}
     },
@@ -9653,7 +9653,7 @@ static const struct TrainerMon sParty_Cristin1[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 29,
-    .species = SPECIES_VIGOROTH,
+    .species = SPECIES_AXEMON,
     }
 };
 
@@ -11356,7 +11356,7 @@ static const struct TrainerMon sParty_Cristin2[] = {
     {
     .iv = TRAINER_PARTY_IVS(13, 13, 13, 13, 13, 13),
     .lvl = 35,
-    .species = SPECIES_VIGOROTH,
+    .species = SPECIES_AXEMON,
     }
 };
 
@@ -11374,7 +11374,7 @@ static const struct TrainerMon sParty_Cristin3[] = {
     {
     .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
     .lvl = 37,
-    .species = SPECIES_VIGOROTH,
+    .species = SPECIES_AXEMON,
     }
 };
 
@@ -11392,7 +11392,7 @@ static const struct TrainerMon sParty_Cristin4[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 39,
-    .species = SPECIES_VIGOROTH,
+    .species = SPECIES_AXEMON,
     }
 };
 

@@ -7879,7 +7879,7 @@ static const struct LevelUpMove sAurumonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sVigorothLevelUpLearnset[] = {
+static const struct LevelUpMove sAxemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_REVERSAL),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),

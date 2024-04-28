@@ -2012,7 +2012,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         },
                                     [5] =
                                         {
-                                            .species = SPECIES_VIGOROTH,
+                                            .species = SPECIES_AXEMON,
                                             .heldItem = ITEM_FOCUS_BAND,
                                             .moves = {MOVE_ENCORE, MOVE_ATTRACT, MOVE_NONE, MOVE_NONE},
                                             .hpEV = 252,
@@ -2027,7 +2027,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 5,
                                             .abilityNum = 0,
                                             .personality = 0x87,
-                                            .nickname = _("VIGOROTH"),
+                                            .nickname = _("AXEMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                 },
