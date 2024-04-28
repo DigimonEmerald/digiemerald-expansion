@@ -3567,8 +3567,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Obstagoon);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TOYAGUMON
 
-#if P_FAMILY_WURMPLE
-static const union AnimCmd sAnim_Wurmple_1[] =
+#if P_FAMILY_VEEMON
+static const union AnimCmd sAnim_Veemon_1[] =
 {
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_FRAME(1, 35),
@@ -3627,7 +3627,7 @@ static const union AnimCmd sAnim_Dustox_1[] =
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_WURMPLE
+#endif //P_FAMILY_VEEMON
 
 #if P_FAMILY_LOTAD
 static const union AnimCmd sAnim_Lotad_1[] =
@@ -11042,13 +11042,13 @@ SINGLE_ANIMATION(TsukaimonGalarian);
 SINGLE_ANIMATION(Obstagoon);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TOYAGUMON
-#if P_FAMILY_WURMPLE
-SINGLE_ANIMATION(Wurmple);
+#if P_FAMILY_VEEMON
+SINGLE_ANIMATION(Veemon);
 SINGLE_ANIMATION(Silcoon);
 SINGLE_ANIMATION(Beautifly);
 SINGLE_ANIMATION(Cascoon);
 SINGLE_ANIMATION(Dustox);
-#endif //P_FAMILY_WURMPLE
+#endif //P_FAMILY_VEEMON
 #if P_FAMILY_LOTAD
 SINGLE_ANIMATION(Lotad);
 SINGLE_ANIMATION(Lombre);

@@ -5194,8 +5194,8 @@ static const struct LevelUpMove sObstagoonLevelUpLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TOYAGUMON
 
-#if P_FAMILY_WURMPLE
-static const struct LevelUpMove sWurmpleLevelUpLearnset[] = {
+#if P_FAMILY_VEEMON
+static const struct LevelUpMove sVeemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_STRING_SHOT),
     LEVEL_UP_MOVE( 5, MOVE_POISON_STING),
@@ -5241,7 +5241,7 @@ static const struct LevelUpMove sDustoxLevelUpLearnset[] = {
     LEVEL_UP_MOVE(38, MOVE_TOXIC),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_WURMPLE
+#endif //P_FAMILY_VEEMON
 
 #if P_FAMILY_LOTAD
 static const struct LevelUpMove sLotadLevelUpLearnset[] = {

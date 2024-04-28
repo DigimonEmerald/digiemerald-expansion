@@ -744,13 +744,13 @@ gCryTable::
 	cry Cry_Obstagoon
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_TOYAGUMON
-.if P_FAMILY_WURMPLE == TRUE
-	cry Cry_Wurmple
+.if P_FAMILY_VEEMON == TRUE
+	cry Cry_Veemon
 	cry Cry_Silcoon
 	cry Cry_Beautifly
 	cry Cry_Cascoon
 	cry Cry_Dustox
-.endif @ P_FAMILY_WURMPLE
+.endif @ P_FAMILY_VEEMON
 .if P_FAMILY_LOTAD == TRUE
 	cry Cry_Lotad
 	cry Cry_Lombre
@@ -3170,13 +3170,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Obstagoon
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_TOYAGUMON
-.if P_FAMILY_WURMPLE == TRUE
-	cry_reverse Cry_Wurmple
+.if P_FAMILY_VEEMON == TRUE
+	cry_reverse Cry_Veemon
 	cry_reverse Cry_Silcoon
 	cry_reverse Cry_Beautifly
 	cry_reverse Cry_Cascoon
 	cry_reverse Cry_Dustox
-.endif @ P_FAMILY_WURMPLE
+.endif @ P_FAMILY_VEEMON
 .if P_FAMILY_LOTAD == TRUE
 	cry_reverse Cry_Lotad
 	cry_reverse Cry_Lombre

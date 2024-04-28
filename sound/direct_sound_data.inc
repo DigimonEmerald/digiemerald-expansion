@@ -2117,10 +2117,10 @@ Cry_Obstagoon::
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_TOYAGUMON
 
-.if P_FAMILY_WURMPLE == TRUE
+.if P_FAMILY_VEEMON == TRUE
 	.align 2
-Cry_Wurmple::
-	.incbin "sound/direct_sound_samples/cries/wurmple.bin"
+Cry_Veemon::
+	.incbin "sound/direct_sound_samples/cries/veemon.bin"
 
 	.align 2
 Cry_Silcoon::
@@ -2137,7 +2137,7 @@ Cry_Cascoon::
 	.align 2
 Cry_Dustox::
 	.incbin "sound/direct_sound_samples/cries/dustox.bin"
-.endif @ P_FAMILY_WURMPLE
+.endif @ P_FAMILY_VEEMON
 
 .if P_FAMILY_LOTAD == TRUE
 	.align 2

@@ -4086,14 +4086,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TOYAGUMON
 
-#if P_FAMILY_WURMPLE
-    const u32 gMonFrontPic_Wurmple[] = INCBIN_U32("graphics/pokemon/wurmple/anim_front.4bpp.lz");
-    const u32 gMonPalette_Wurmple[] = INCBIN_U32("graphics/pokemon/wurmple/normal.gbapal.lz");
-    const u32 gMonBackPic_Wurmple[] = INCBIN_U32("graphics/pokemon/wurmple/back.4bpp.lz");
-    const u32 gMonShinyPalette_Wurmple[] = INCBIN_U32("graphics/pokemon/wurmple/shiny.gbapal.lz");
-    const u8 gMonIcon_Wurmple[] = INCBIN_U8("graphics/pokemon/wurmple/icon.4bpp");
+#if P_FAMILY_VEEMON
+    const u32 gMonFrontPic_Veemon[] = INCBIN_U32("graphics/pokemon/veemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Veemon[] = INCBIN_U32("graphics/pokemon/veemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Veemon[] = INCBIN_U32("graphics/pokemon/veemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Veemon[] = INCBIN_U32("graphics/pokemon/veemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Veemon[] = INCBIN_U8("graphics/pokemon/veemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Wurmple[] = INCBIN_U8("graphics/pokemon/wurmple/footprint.1bpp");
+    const u8 gMonFootprint_Veemon[] = INCBIN_U8("graphics/pokemon/veemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Silcoon[] = INCBIN_U32("graphics/pokemon/silcoon/anim_front.4bpp.lz");
@@ -4137,7 +4137,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
     const u32 gMonFrontPic_DustoxF[] = INCBIN_U32("graphics/pokemon/dustox/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_DustoxF[] = INCBIN_U32("graphics/pokemon/dustox/backf.4bpp.lz");
-#endif //P_FAMILY_WURMPLE
+#endif //P_FAMILY_VEEMON
 
 #if P_FAMILY_LOTAD
     const u32 gMonFrontPic_Lotad[] = INCBIN_U32("graphics/pokemon/lotad/anim_front.4bpp.lz");

@@ -13002,8 +13002,8 @@ static const u16 sObstagoonTeachableLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TOYAGUMON
 
-#if P_FAMILY_WURMPLE
-static const u16 sWurmpleTeachableLearnset[] = {
+#if P_FAMILY_VEEMON
+static const u16 sVeemonTeachableLearnset[] = {
     MOVE_SNORE,
     MOVE_UNAVAILABLE,
 };
@@ -13068,7 +13068,7 @@ static const u16 sDustoxTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_WURMPLE
+#endif //P_FAMILY_VEEMON
 
 #if P_FAMILY_LOTAD
 static const u16 sLotadTeachableLearnset[] = {

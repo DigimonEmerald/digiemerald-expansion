@@ -1089,8 +1089,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TOYAGUMON
 
-#if P_FAMILY_WURMPLE
-    [SPECIES_WURMPLE] =
+#if P_FAMILY_VEEMON
+    [SPECIES_VEEMON] =
     {
         .baseHP        = 45,
         .baseAttack    = 45,
@@ -1117,9 +1117,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SHIELD_DUST, ABILITY_NONE, ABILITY_RUN_AWAY },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Wurmple"),
-        .cryId = CRY_WURMPLE,
-        .natDexNum = NATIONAL_DEX_WURMPLE,
+        .speciesName = _("Veemon"),
+        .cryId = CRY_VEEMON,
+        .natDexNum = NATIONAL_DEX_VEEMON,
         .categoryName = _("Worm"),
         .height = 3,
         .weight = 36,
@@ -1132,23 +1132,23 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 24,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Wurmple,
+        .frontPic = gMonFrontPic_Veemon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Wurmple,
+        .frontAnimFrames = sAnims_Veemon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Wurmple,
+        .backPic = gMonBackPic_Veemon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Wurmple,
-        .shinyPalette = gMonShinyPalette_Wurmple,
-        .iconSprite = gMonIcon_Wurmple,
+        .palette = gMonPalette_Veemon,
+        .shinyPalette = gMonShinyPalette_Veemon,
+        .iconSprite = gMonIcon_Veemon,
         .iconPalIndex = 0,
-        FOOTPRINT(Wurmple)
+        FOOTPRINT(Veemon)
         .tmIlliterate = TRUE,
-        .levelUpLearnset = sWurmpleLevelUpLearnset,
-        .teachableLearnset = sWurmpleTeachableLearnset,
+        .levelUpLearnset = sVeemonLevelUpLearnset,
+        .teachableLearnset = sVeemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL_SILCOON, 7, SPECIES_SILCOON},
                                 {EVO_LEVEL_CASCOON, 7, SPECIES_CASCOON}),
     },
@@ -1180,7 +1180,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .weight = 100,
         .description = COMPOUND_STRING(
             "It prepares for evolution using the\n"
-            "energy it stored while it was a Wurmple.\n"
+            "energy it stored while it was a Veemon.\n"
             "It keeps watch over the surroundings with\n"
             "its two eyes."),
         .pokemonScale = 431,
@@ -1400,7 +1400,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sDustoxLevelUpLearnset,
         .teachableLearnset = sDustoxTeachableLearnset,
     },
-#endif //P_FAMILY_WURMPLE
+#endif //P_FAMILY_VEEMON
 
 #if P_FAMILY_LOTAD
     [SPECIES_LOTAD] =
