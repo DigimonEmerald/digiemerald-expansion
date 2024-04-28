@@ -739,7 +739,7 @@ gCryTable::
 .endif @ P_FAMILY_TINKERMON
 .if P_FAMILY_TOYAGUMON == TRUE
 	cry Cry_Toyagumon
-	cry Cry_Linoone
+	cry Cry_Tsukaimon
 .if P_GALARIAN_FORMS == TRUE
 	cry Cry_Obstagoon
 .endif @ P_GALARIAN_FORMS
@@ -3165,7 +3165,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_TINKERMON
 .if P_FAMILY_TOYAGUMON == TRUE
 	cry_reverse Cry_Toyagumon
-	cry_reverse Cry_Linoone
+	cry_reverse Cry_Tsukaimon
 .if P_GALARIAN_FORMS == TRUE
 	cry_reverse Cry_Obstagoon
 .endif @ P_GALARIAN_FORMS

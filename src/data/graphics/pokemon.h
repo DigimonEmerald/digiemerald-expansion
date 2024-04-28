@@ -4053,13 +4053,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Toyagumon[] = INCBIN_U8("graphics/pokemon/toyagumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Linoone[] = INCBIN_U32("graphics/pokemon/linoone/anim_front.4bpp.lz");
-    const u32 gMonPalette_Linoone[] = INCBIN_U32("graphics/pokemon/linoone/normal.gbapal.lz");
-    const u32 gMonBackPic_Linoone[] = INCBIN_U32("graphics/pokemon/linoone/back.4bpp.lz");
-    const u32 gMonShinyPalette_Linoone[] = INCBIN_U32("graphics/pokemon/linoone/shiny.gbapal.lz");
-    const u8 gMonIcon_Linoone[] = INCBIN_U8("graphics/pokemon/linoone/icon.4bpp");
+    const u32 gMonFrontPic_Tsukaimon[] = INCBIN_U32("graphics/pokemon/tsukaimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Tsukaimon[] = INCBIN_U32("graphics/pokemon/tsukaimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Tsukaimon[] = INCBIN_U32("graphics/pokemon/tsukaimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Tsukaimon[] = INCBIN_U32("graphics/pokemon/tsukaimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Tsukaimon[] = INCBIN_U8("graphics/pokemon/tsukaimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Linoone[] = INCBIN_U8("graphics/pokemon/linoone/footprint.1bpp");
+    const u8 gMonFootprint_Tsukaimon[] = INCBIN_U8("graphics/pokemon/tsukaimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GALARIAN_FORMS
@@ -4069,11 +4069,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_ToyagumonGalarian[] = INCBIN_U32("graphics/pokemon/toyagumon/galarian/shiny.gbapal.lz");
     const u8 gMonIcon_ToyagumonGalarian[] = INCBIN_U8("graphics/pokemon/toyagumon/galarian/icon.4bpp");
 
-    const u32 gMonFrontPic_LinooneGalarian[] = INCBIN_U32("graphics/pokemon/linoone/galarian/front.4bpp.lz");
-    const u32 gMonPalette_LinooneGalarian[] = INCBIN_U32("graphics/pokemon/linoone/galarian/normal.gbapal.lz");
-    const u32 gMonBackPic_LinooneGalarian[] = INCBIN_U32("graphics/pokemon/linoone/galarian/back.4bpp.lz");
-    const u32 gMonShinyPalette_LinooneGalarian[] = INCBIN_U32("graphics/pokemon/linoone/galarian/shiny.gbapal.lz");
-    const u8 gMonIcon_LinooneGalarian[] = INCBIN_U8("graphics/pokemon/linoone/galarian/icon.4bpp");
+    const u32 gMonFrontPic_TsukaimonGalarian[] = INCBIN_U32("graphics/pokemon/tsukaimon/galarian/front.4bpp.lz");
+    const u32 gMonPalette_TsukaimonGalarian[] = INCBIN_U32("graphics/pokemon/tsukaimon/galarian/normal.gbapal.lz");
+    const u32 gMonBackPic_TsukaimonGalarian[] = INCBIN_U32("graphics/pokemon/tsukaimon/galarian/back.4bpp.lz");
+    const u32 gMonShinyPalette_TsukaimonGalarian[] = INCBIN_U32("graphics/pokemon/tsukaimon/galarian/shiny.gbapal.lz");
+    const u8 gMonIcon_TsukaimonGalarian[] = INCBIN_U8("graphics/pokemon/tsukaimon/galarian/icon.4bpp");
 
     const u32 gMonFrontPic_Obstagoon[] = INCBIN_U32("graphics/pokemon/obstagoon/front.4bpp.lz");
     const u32 gMonPalette_Obstagoon[] = INCBIN_U32("graphics/pokemon/obstagoon/normal.gbapal.lz");

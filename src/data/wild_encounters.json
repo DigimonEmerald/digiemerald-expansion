@@ -1567,7 +1567,7 @@
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_LINOONE"
+                "species": "SPECIES_TSUKAIMON"
               },
               {
                 "min_level": 26,
@@ -3371,7 +3371,7 @@
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_LINOONE"
+                "species": "SPECIES_TSUKAIMON"
               },
               {
                 "min_level": 27,
@@ -3386,7 +3386,7 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_LINOONE"
+                "species": "SPECIES_TSUKAIMON"
               },
               {
                 "min_level": 26,

@@ -760,10 +760,10 @@ static const u16 sToyagumonFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
-static const u16 sLinooneFormSpeciesIdTable[] = {
-    SPECIES_LINOONE,
+static const u16 sTsukaimonFormSpeciesIdTable[] = {
+    SPECIES_TSUKAIMON,
 #if P_GALARIAN_FORMS
-    SPECIES_LINOONE_GALARIAN,
+    SPECIES_TSUKAIMON_GALARIAN,
 #endif
     FORM_SPECIES_END,
 };

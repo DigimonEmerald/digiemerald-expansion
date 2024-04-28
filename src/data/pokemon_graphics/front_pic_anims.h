@@ -3550,7 +3550,7 @@ static const union AnimCmd sAnim_Toyagumon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Linoone_1[] =
+static const union AnimCmd sAnim_Tsukaimon_1[] =
 {
     ANIMCMD_FRAME(0, 14),
     ANIMCMD_FRAME(1, 14),
@@ -3562,7 +3562,7 @@ static const union AnimCmd sAnim_Linoone_1[] =
 
 #if P_GALARIAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(ToyagumonGalarian);
-PLACEHOLDER_ANIM_SINGLE_FRAME(LinooneGalarian);
+PLACEHOLDER_ANIM_SINGLE_FRAME(TsukaimonGalarian);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Obstagoon);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TOYAGUMON
@@ -11035,10 +11035,10 @@ SINGLE_ANIMATION(Tinpet);
 #endif //P_FAMILY_TINKERMON
 #if P_FAMILY_TOYAGUMON
 SINGLE_ANIMATION(Toyagumon);
-SINGLE_ANIMATION(Linoone);
+SINGLE_ANIMATION(Tsukaimon);
 #if P_GALARIAN_FORMS
 SINGLE_ANIMATION(ToyagumonGalarian);
-SINGLE_ANIMATION(LinooneGalarian);
+SINGLE_ANIMATION(TsukaimonGalarian);
 SINGLE_ANIMATION(Obstagoon);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TOYAGUMON

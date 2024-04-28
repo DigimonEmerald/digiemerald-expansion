@@ -5350,7 +5350,7 @@ static const struct LevelUpMove sToyagumonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sLinooneLevelUpLearnset[] = {
+static const struct LevelUpMove sTsukaimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
@@ -5387,7 +5387,7 @@ static const struct LevelUpMove sToyagumonGalarianLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sLinooneGalarianLevelUpLearnset[] = {
+static const struct LevelUpMove sTsukaimonGalarianLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_SWITCHEROO),

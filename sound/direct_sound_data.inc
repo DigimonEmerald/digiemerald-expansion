@@ -2106,8 +2106,8 @@ Cry_Toyagumon::
 	.incbin "sound/direct_sound_samples/cries/toyagumon.bin"
 
 	.align 2
-Cry_Linoone::
-	.incbin "sound/direct_sound_samples/cries/linoone.bin"
+Cry_Tsukaimon::
+	.incbin "sound/direct_sound_samples/cries/tsukaimon.bin"
 
 .if P_GALARIAN_FORMS == TRUE
 	.align 2

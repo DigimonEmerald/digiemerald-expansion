@@ -12862,7 +12862,7 @@ static const u16 sToyagumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sLinooneTeachableLearnset[] = {
+static const u16 sTsukaimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CUT,
@@ -12933,7 +12933,7 @@ static const u16 sToyagumonGalarianTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sLinooneGalarianTeachableLearnset[] = {
+static const u16 sTsukaimonGalarianTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIG,

@@ -265,7 +265,7 @@
 #define SPECIES_TINKERMON                               261
 #define SPECIES_TINPET                               262
 #define SPECIES_TOYAGUMON                               263
-#define SPECIES_LINOONE                                 264
+#define SPECIES_TSUKAIMON                                 264
 #define SPECIES_WURMPLE                                 265
 #define SPECIES_SILCOON                                 266
 #define SPECIES_BEAUTIFLY                               267
@@ -1046,7 +1046,7 @@
 #define SPECIES_LIOLLMON_GALARIAN                       985
 #define SPECIES_PATAMON_GALARIAN                        986
 #define SPECIES_TOYAGUMON_GALARIAN                      987
-#define SPECIES_LINOONE_GALARIAN                        988
+#define SPECIES_TSUKAIMON_GALARIAN                        988
 #define SPECIES_DARUMAKA_GALARIAN                       989
 #define SPECIES_DARMANITAN_GALARIAN                     SPECIES_DARMANITAN_GALARIAN_STANDARD_MODE
 #define SPECIES_DARMANITAN_GALARIAN_STANDARD_MODE       990
