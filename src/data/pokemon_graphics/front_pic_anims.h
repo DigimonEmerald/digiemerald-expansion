@@ -3584,7 +3584,7 @@ static const union AnimCmd sAnim_Vemmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Beautifly_1[] =
+static const union AnimCmd sAnim_Vorvomon_1[] =
 {
     ANIMCMD_FRAME(0, 2),
     ANIMCMD_FRAME(1, 2),
@@ -11045,7 +11045,7 @@ SINGLE_ANIMATION(Obstagoon);
 #if P_FAMILY_VEEMON
 SINGLE_ANIMATION(Veemon);
 SINGLE_ANIMATION(Vemmon);
-SINGLE_ANIMATION(Beautifly);
+SINGLE_ANIMATION(Vorvomon);
 SINGLE_ANIMATION(Cascoon);
 SINGLE_ANIMATION(Dustox);
 #endif //P_FAMILY_VEEMON

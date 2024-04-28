@@ -245,18 +245,18 @@ SINGLE_BATTLE_TEST("Recoil damage is not applied if target was protected")
         ASSUME(gMovesInfo[MOVE_TAKE_DOWN].recoil > 0);
         ASSUME(gMovesInfo[MOVE_DOUBLE_EDGE].recoil > 0);
         PLAYER(SPECIES_NYAROMON);
-        OPPONENT(SPECIES_BEAUTIFLY);
+        OPPONENT(SPECIES_VORVOMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); MOVE(player, MOVE_TACKLE); }
         TURN { MOVE(opponent, protectMove); MOVE(player, recoilMove); }
         TURN {}
     } SCENE {
         // 1st turn
-        MESSAGE("Foe Beautifly used Tackle!");
+        MESSAGE("Foe Vorvomon used Tackle!");
         MESSAGE("Nyaromon used Tackle!");
         // 2nd turn
         ANIMATION(ANIM_TYPE_MOVE, protectMove, opponent);
-        MESSAGE("Foe Beautifly protected itself!");
+        MESSAGE("Foe Vorvomon protected itself!");
         // MESSAGE("Nyaromon used recoilMove!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, recoilMove, player);
@@ -280,16 +280,16 @@ SINGLE_BATTLE_TEST("Multi-hit moves don't hit a protected target and fail only o
     GIVEN {
         ASSUME(gMovesInfo[MOVE_ARM_THRUST].effect == EFFECT_MULTI_HIT);
         PLAYER(SPECIES_NYAROMON);
-        OPPONENT(SPECIES_BEAUTIFLY);
+        OPPONENT(SPECIES_VORVOMON);
     } WHEN {
         TURN { MOVE(opponent, move); MOVE(player, MOVE_ARM_THRUST); }
         TURN {}
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
-        MESSAGE("Foe Beautifly protected itself!");
+        MESSAGE("Foe Vorvomon protected itself!");
         MESSAGE("Nyaromon used Arm Thrust!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_ARM_THRUST, player);
-        MESSAGE("Foe Beautifly protected itself!");
+        MESSAGE("Foe Vorvomon protected itself!");
         // Each effect happens only once.
         if (move == MOVE_KINGS_SHIELD || move == MOVE_SILK_TRAP || move == MOVE_OBSTRUCT) {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);

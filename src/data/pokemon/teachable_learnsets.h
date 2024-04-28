@@ -13012,7 +13012,7 @@ static const u16 sVemmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBeautiflyTeachableLearnset[] = {
+static const u16 sVorvomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,

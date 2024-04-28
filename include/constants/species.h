@@ -268,7 +268,7 @@
 #define SPECIES_TSUKAIMON                                 264
 #define SPECIES_VEEMON                                 265
 #define SPECIES_VEMMON                                 266
-#define SPECIES_BEAUTIFLY                               267
+#define SPECIES_VORVOMON                               267
 #define SPECIES_CASCOON                                 268
 #define SPECIES_DUSTOX                                  269
 #define SPECIES_LOTAD                                   270
