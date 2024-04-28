@@ -765,10 +765,10 @@ gCryTable::
 	cry Cry_Allomon_x
 	cry Cry_Angelamon
 .endif @ P_FAMILY_ALLOMON_X
-.if P_FAMILY_WINGULL == TRUE
-	cry Cry_Wingull
+.if P_FAMILY_ANGEMON == TRUE
+	cry Cry_Angemon
 	cry Cry_Pelipper
-.endif @ P_FAMILY_WINGULL
+.endif @ P_FAMILY_ANGEMON
 .if P_FAMILY_RALTS == TRUE
 	cry Cry_Ralts
 	cry Cry_Kirlia
@@ -3191,10 +3191,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Allomon_x
 	cry_reverse Cry_Angelamon
 .endif @ P_FAMILY_ALLOMON_X
-.if P_FAMILY_WINGULL == TRUE
-	cry_reverse Cry_Wingull
+.if P_FAMILY_ANGEMON == TRUE
+	cry_reverse Cry_Angemon
 	cry_reverse Cry_Pelipper
-.endif @ P_FAMILY_WINGULL
+.endif @ P_FAMILY_ANGEMON
 .if P_FAMILY_RALTS == TRUE
 	cry_reverse Cry_Ralts
 	cry_reverse Cry_Kirlia

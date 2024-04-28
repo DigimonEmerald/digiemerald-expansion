@@ -13364,8 +13364,8 @@ static const u16 sAngelamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_ALLOMON_X
 
-#if P_FAMILY_WINGULL
-static const u16 sWingullTeachableLearnset[] = {
+#if P_FAMILY_ANGEMON
+static const u16 sAngemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -13426,7 +13426,7 @@ static const u16 sPelipperTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_WINGULL
+#endif //P_FAMILY_ANGEMON
 
 #if P_FAMILY_RALTS
 static const u16 sRaltsTeachableLearnset[] = {

@@ -3723,8 +3723,8 @@ static const union AnimCmd sAnim_Angelamon_1[] =
 };
 #endif //P_FAMILY_ALLOMON_X
 
-#if P_FAMILY_WINGULL
-static const union AnimCmd sAnim_Wingull_1[] =
+#if P_FAMILY_ANGEMON
+static const union AnimCmd sAnim_Angemon_1[] =
 {
     ANIMCMD_FRAME(0, 17),
     ANIMCMD_FRAME(1, 23),
@@ -3745,7 +3745,7 @@ static const union AnimCmd sAnim_Pelipper_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_WINGULL
+#endif //P_FAMILY_ANGEMON
 
 #if P_FAMILY_RALTS
 static const union AnimCmd sAnim_Ralts_1[] =
@@ -11063,10 +11063,10 @@ SINGLE_ANIMATION(Allomon);
 SINGLE_ANIMATION(Allomon_x);
 SINGLE_ANIMATION(Angelamon);
 #endif //P_FAMILY_ALLOMON_X
-#if P_FAMILY_WINGULL
-SINGLE_ANIMATION(Wingull);
+#if P_FAMILY_ANGEMON
+SINGLE_ANIMATION(Angemon);
 SINGLE_ANIMATION(Pelipper);
-#endif //P_FAMILY_WINGULL
+#endif //P_FAMILY_ANGEMON
 #if P_FAMILY_RALTS
 SINGLE_ANIMATION(Ralts);
 SINGLE_ANIMATION(Kirlia);

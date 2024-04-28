@@ -3927,7 +3927,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .description = COMPOUND_STRING(
             "Its double tail fins propel its energetic\n"
             "jumps. When it breaks the surface of the\n"
-            "sea, Wingull swoop down to grab it on\n"
+            "sea, Angemon swoop down to grab it on\n"
             "the fly."),
         .pokemonScale = 491,
         .pokemonOffset = 12,

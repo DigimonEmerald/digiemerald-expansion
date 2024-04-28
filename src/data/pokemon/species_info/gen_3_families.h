@@ -1869,8 +1869,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_ALLOMON_X
 
-#if P_FAMILY_WINGULL
-    [SPECIES_WINGULL] =
+#if P_FAMILY_ANGEMON
+    [SPECIES_ANGEMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 30,
@@ -1890,9 +1890,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FLYING),
         .abilities = { ABILITY_KEEN_EYE, ABILITY_HYDRATION, ABILITY_RAIN_DISH },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Wingull"),
-        .cryId = CRY_WINGULL,
-        .natDexNum = NATIONAL_DEX_WINGULL,
+        .speciesName = _("Angemon"),
+        .cryId = CRY_ANGEMON,
+        .natDexNum = NATIONAL_DEX_ANGEMON,
         .categoryName = _("Seagull"),
         .height = 6,
         .weight = 95,
@@ -1905,23 +1905,23 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = -2,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Wingull,
+        .frontPic = gMonFrontPic_Angemon,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Wingull,
+        .frontAnimFrames = sAnims_Angemon,
         .frontAnimId = ANIM_H_PIVOT,
         .enemyMonElevation = 15,
-        .backPic = gMonBackPic_Wingull,
+        .backPic = gMonBackPic_Angemon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Wingull,
-        .shinyPalette = gMonShinyPalette_Wingull,
-        .iconSprite = gMonIcon_Wingull,
+        .palette = gMonPalette_Angemon,
+        .shinyPalette = gMonShinyPalette_Angemon,
+        .iconSprite = gMonIcon_Angemon,
         .iconPalIndex = 0,
-        FOOTPRINT(Wingull)
-        .levelUpLearnset = sWingullLevelUpLearnset,
-        .teachableLearnset = sWingullTeachableLearnset,
+        FOOTPRINT(Angemon)
+        .levelUpLearnset = sAngemonLevelUpLearnset,
+        .teachableLearnset = sAngemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_PELIPPER}),
     },
 
@@ -1984,7 +1984,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sPelipperLevelUpLearnset,
         .teachableLearnset = sPelipperTeachableLearnset,
     },
-#endif //P_FAMILY_WINGULL
+#endif //P_FAMILY_ANGEMON
 
 #if P_FAMILY_RALTS
 #define RALTS_FAMILY_TYPE2 (P_UPDATED_TYPES >= GEN_6 ? TYPE_FAIRY : TYPE_PSYCHIC)

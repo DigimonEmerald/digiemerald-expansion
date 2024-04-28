@@ -2228,8 +2228,8 @@ const u16 gEggMoves[] = {
         MOVE_HURRICANE),
 #endif //P_FAMILY_ALLOMON_X
 
-#if P_FAMILY_WINGULL
-    egg_moves(WINGULL,
+#if P_FAMILY_ANGEMON
+    egg_moves(ANGEMON,
         MOVE_MIST,
         MOVE_TWISTER,
         MOVE_AGILITY,
@@ -2241,7 +2241,7 @@ const u16 gEggMoves[] = {
         MOVE_ROOST,
         MOVE_SOAK,
         MOVE_WIDE_GUARD),
-#endif //P_FAMILY_WINGULL
+#endif //P_FAMILY_ANGEMON
 
 #if P_FAMILY_RALTS
     egg_moves(RALTS,

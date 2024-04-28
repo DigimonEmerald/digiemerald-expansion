@@ -4226,14 +4226,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_ALLOMON_X
 
-#if P_FAMILY_WINGULL
-    const u32 gMonFrontPic_Wingull[] = INCBIN_U32("graphics/pokemon/wingull/anim_front.4bpp.lz");
-    const u32 gMonPalette_Wingull[] = INCBIN_U32("graphics/pokemon/wingull/normal.gbapal.lz");
-    const u32 gMonBackPic_Wingull[] = INCBIN_U32("graphics/pokemon/wingull/back.4bpp.lz");
-    const u32 gMonShinyPalette_Wingull[] = INCBIN_U32("graphics/pokemon/wingull/shiny.gbapal.lz");
-    const u8 gMonIcon_Wingull[] = INCBIN_U8("graphics/pokemon/wingull/icon.4bpp");
+#if P_FAMILY_ANGEMON
+    const u32 gMonFrontPic_Angemon[] = INCBIN_U32("graphics/pokemon/angemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Angemon[] = INCBIN_U32("graphics/pokemon/angemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Angemon[] = INCBIN_U32("graphics/pokemon/angemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Angemon[] = INCBIN_U32("graphics/pokemon/angemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Angemon[] = INCBIN_U8("graphics/pokemon/angemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Wingull[] = INCBIN_U8("graphics/pokemon/wingull/footprint.1bpp");
+    const u8 gMonFootprint_Angemon[] = INCBIN_U8("graphics/pokemon/angemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Pelipper[] = INCBIN_U32("graphics/pokemon/pelipper/anim_front.4bpp.lz");
@@ -4244,7 +4244,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Pelipper[] = INCBIN_U8("graphics/pokemon/pelipper/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_WINGULL
+#endif //P_FAMILY_ANGEMON
 
 #if P_FAMILY_RALTS
     const u32 gMonFrontPic_Ralts[] = INCBIN_U32("graphics/pokemon/ralts/anim_front.4bpp.lz");

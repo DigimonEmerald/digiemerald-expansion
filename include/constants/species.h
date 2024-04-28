@@ -279,7 +279,7 @@
 #define SPECIES_ALLOMON                                 275
 #define SPECIES_ALLOMON_X                                 276
 #define SPECIES_ANGELAMON                                 277
-#define SPECIES_WINGULL                                 278
+#define SPECIES_ANGEMON                                 278
 #define SPECIES_PELIPPER                                279
 #define SPECIES_RALTS                                   280
 #define SPECIES_KIRLIA                                  281

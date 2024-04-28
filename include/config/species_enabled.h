@@ -195,7 +195,7 @@
 #define P_FAMILY_ZUBAMON                   P_GEN_3_POKEMON
 #define P_FAMILY_AIRDRAMON                  P_GEN_3_POKEMON
 #define P_FAMILY_ALLOMON_X                 P_GEN_3_POKEMON
-#define P_FAMILY_WINGULL                 P_GEN_3_POKEMON
+#define P_FAMILY_ANGEMON                 P_GEN_3_POKEMON
 #define P_FAMILY_RALTS                   P_GEN_3_POKEMON
 #define P_FAMILY_SURSKIT                 P_GEN_3_POKEMON
 #define P_FAMILY_SHROOMISH               P_GEN_3_POKEMON
