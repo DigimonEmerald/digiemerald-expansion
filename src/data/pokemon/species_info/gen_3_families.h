@@ -690,8 +690,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_TERRIERMON
 
-#if P_FAMILY_POOCHYENA
-    [SPECIES_POOCHYENA] =
+#if P_FAMILY_TINKERMON
+    [SPECIES_TINKERMON] =
     {
         .baseHP        = 35,
         .baseAttack    = 55,
@@ -717,9 +717,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_RUN_AWAY, ABILITY_QUICK_FEET, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Poochyena"),
-        .cryId = CRY_POOCHYENA,
-        .natDexNum = NATIONAL_DEX_POOCHYENA,
+        .speciesName = _("Tinkermon"),
+        .cryId = CRY_TINKERMON,
+        .natDexNum = NATIONAL_DEX_TINKERMON,
         .categoryName = _("Bite"),
         .height = 5,
         .weight = 136,
@@ -732,22 +732,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Poochyena,
+        .frontPic = gMonFrontPic_Tinkermon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Poochyena,
+        .frontAnimFrames = sAnims_Tinkermon,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Poochyena,
+        .backPic = gMonBackPic_Tinkermon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Poochyena,
-        .shinyPalette = gMonShinyPalette_Poochyena,
-        .iconSprite = gMonIcon_Poochyena,
+        .palette = gMonPalette_Tinkermon,
+        .shinyPalette = gMonShinyPalette_Tinkermon,
+        .iconSprite = gMonIcon_Tinkermon,
         .iconPalIndex = 2,
-        FOOTPRINT(Poochyena)
-        .levelUpLearnset = sPoochyenaLevelUpLearnset,
-        .teachableLearnset = sPoochyenaTeachableLearnset,
+        FOOTPRINT(Tinkermon)
+        .levelUpLearnset = sTinkermonLevelUpLearnset,
+        .teachableLearnset = sTinkermonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_MIGHTYENA}),
     },
 
@@ -802,7 +802,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sMightyenaLevelUpLearnset,
         .teachableLearnset = sMightyenaTeachableLearnset,
     },
-#endif //P_FAMILY_POOCHYENA
+#endif //P_FAMILY_TINKERMON
 
 #if P_FAMILY_ZIGZAGOON
 #if P_UPDATED_EXP_YIELDS >= GEN_7

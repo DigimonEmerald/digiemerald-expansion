@@ -733,10 +733,10 @@ gCryTable::
 	cry Cry_Terriermon_xMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TERRIERMON
-.if P_FAMILY_POOCHYENA == TRUE
-	cry Cry_Poochyena
+.if P_FAMILY_TINKERMON == TRUE
+	cry Cry_Tinkermon
 	cry Cry_Mightyena
-.endif @ P_FAMILY_POOCHYENA
+.endif @ P_FAMILY_TINKERMON
 .if P_FAMILY_ZIGZAGOON == TRUE
 	cry Cry_Zigzagoon
 	cry Cry_Linoone
@@ -3159,10 +3159,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Terriermon_xMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TERRIERMON
-.if P_FAMILY_POOCHYENA == TRUE
-	cry_reverse Cry_Poochyena
+.if P_FAMILY_TINKERMON == TRUE
+	cry_reverse Cry_Tinkermon
 	cry_reverse Cry_Mightyena
-.endif @ P_FAMILY_POOCHYENA
+.endif @ P_FAMILY_TINKERMON
 .if P_FAMILY_ZIGZAGOON == TRUE
 	cry_reverse Cry_Zigzagoon
 	cry_reverse Cry_Linoone

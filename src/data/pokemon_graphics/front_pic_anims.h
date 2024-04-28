@@ -3519,8 +3519,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Terriermon_xMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_TERRIERMON
 
-#if P_FAMILY_POOCHYENA
-static const union AnimCmd sAnim_Poochyena_1[] =
+#if P_FAMILY_TINKERMON
+static const union AnimCmd sAnim_Tinkermon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 44),
@@ -3537,7 +3537,7 @@ static const union AnimCmd sAnim_Mightyena_1[] =
     ANIMCMD_FRAME(0, 6),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_POOCHYENA
+#endif //P_FAMILY_TINKERMON
 
 #if P_FAMILY_ZIGZAGOON
 static const union AnimCmd sAnim_Zigzagoon_1[] =
@@ -11029,10 +11029,10 @@ SINGLE_ANIMATION(Terriermon_x);
 SINGLE_ANIMATION(Terriermon_xMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_TERRIERMON
-#if P_FAMILY_POOCHYENA
-SINGLE_ANIMATION(Poochyena);
+#if P_FAMILY_TINKERMON
+SINGLE_ANIMATION(Tinkermon);
 SINGLE_ANIMATION(Mightyena);
-#endif //P_FAMILY_POOCHYENA
+#endif //P_FAMILY_TINKERMON
 #if P_FAMILY_ZIGZAGOON
 SINGLE_ANIMATION(Zigzagoon);
 SINGLE_ANIMATION(Linoone);

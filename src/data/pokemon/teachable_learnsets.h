@@ -12759,8 +12759,8 @@ static const u16 sTerriermon_xTeachableLearnset[] = {
 };
 #endif //P_FAMILY_TERRIERMON
 
-#if P_FAMILY_POOCHYENA
-static const u16 sPoochyenaTeachableLearnset[] = {
+#if P_FAMILY_TINKERMON
+static const u16 sTinkermonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -12821,7 +12821,7 @@ static const u16 sMightyenaTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_POOCHYENA
+#endif //P_FAMILY_TINKERMON
 
 #if P_FAMILY_ZIGZAGOON
 static const u16 sZigzagoonTeachableLearnset[] = {

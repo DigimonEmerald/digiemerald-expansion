@@ -2090,15 +2090,15 @@ Cry_Terriermon_xMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TERRIERMON
 
-.if P_FAMILY_POOCHYENA == TRUE
+.if P_FAMILY_TINKERMON == TRUE
 	.align 2
-Cry_Poochyena::
-	.incbin "sound/direct_sound_samples/cries/poochyena.bin"
+Cry_Tinkermon::
+	.incbin "sound/direct_sound_samples/cries/tinkermon.bin"
 
 	.align 2
 Cry_Mightyena::
 	.incbin "sound/direct_sound_samples/cries/mightyena.bin"
-.endif @ P_FAMILY_POOCHYENA
+.endif @ P_FAMILY_TINKERMON
 
 .if P_FAMILY_ZIGZAGOON == TRUE
 	.align 2

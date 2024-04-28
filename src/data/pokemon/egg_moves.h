@@ -2143,8 +2143,8 @@ const u16 gEggMoves[] = {
         MOVE_BARRIER),
 #endif //P_FAMILY_TERRIERMON
 
-#if P_FAMILY_POOCHYENA
-    egg_moves(POOCHYENA,
+#if P_FAMILY_TINKERMON
+    egg_moves(TINKERMON,
         MOVE_ASTONISH,
         MOVE_POISON_FANG,
         MOVE_COVET,
@@ -2158,7 +2158,7 @@ const u16 gEggMoves[] = {
         MOVE_SNATCH,
         MOVE_SLEEP_TALK,
         MOVE_PLAY_ROUGH),
-#endif //P_FAMILY_POOCHYENA
+#endif //P_FAMILY_TINKERMON
 
 #if P_FAMILY_ZIGZAGOON
     egg_moves(ZIGZAGOON,

@@ -4023,14 +4023,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_TERRIERMON
 
-#if P_FAMILY_POOCHYENA
-    const u32 gMonFrontPic_Poochyena[] = INCBIN_U32("graphics/pokemon/poochyena/anim_front.4bpp.lz");
-    const u32 gMonPalette_Poochyena[] = INCBIN_U32("graphics/pokemon/poochyena/normal.gbapal.lz");
-    const u32 gMonBackPic_Poochyena[] = INCBIN_U32("graphics/pokemon/poochyena/back.4bpp.lz");
-    const u32 gMonShinyPalette_Poochyena[] = INCBIN_U32("graphics/pokemon/poochyena/shiny.gbapal.lz");
-    const u8 gMonIcon_Poochyena[] = INCBIN_U8("graphics/pokemon/poochyena/icon.4bpp");
+#if P_FAMILY_TINKERMON
+    const u32 gMonFrontPic_Tinkermon[] = INCBIN_U32("graphics/pokemon/tinkermon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Tinkermon[] = INCBIN_U32("graphics/pokemon/tinkermon/normal.gbapal.lz");
+    const u32 gMonBackPic_Tinkermon[] = INCBIN_U32("graphics/pokemon/tinkermon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Tinkermon[] = INCBIN_U32("graphics/pokemon/tinkermon/shiny.gbapal.lz");
+    const u8 gMonIcon_Tinkermon[] = INCBIN_U8("graphics/pokemon/tinkermon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Poochyena[] = INCBIN_U8("graphics/pokemon/poochyena/footprint.1bpp");
+    const u8 gMonFootprint_Tinkermon[] = INCBIN_U8("graphics/pokemon/tinkermon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Mightyena[] = INCBIN_U32("graphics/pokemon/mightyena/anim_front.4bpp.lz");
@@ -4041,7 +4041,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Mightyena[] = INCBIN_U8("graphics/pokemon/mightyena/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_POOCHYENA
+#endif //P_FAMILY_TINKERMON
 
 #if P_FAMILY_ZIGZAGOON
     const u32 gMonFrontPic_Zigzagoon[] = INCBIN_U32("graphics/pokemon/zigzagoon/anim_front.4bpp.lz");
