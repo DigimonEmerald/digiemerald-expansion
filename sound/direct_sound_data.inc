@@ -2238,10 +2238,10 @@ Cry_Atamademon::
 	.incbin "sound/direct_sound_samples/cries/atamademon.bin"
 .endif @ P_FAMILY_ARESDRAMON
 
-.if P_FAMILY_SLAKOTH == TRUE
+.if P_FAMILY_AURUMON == TRUE
 	.align 2
-Cry_Slakoth::
-	.incbin "sound/direct_sound_samples/cries/slakoth.bin"
+Cry_Aurumon::
+	.incbin "sound/direct_sound_samples/cries/aurumon.bin"
 
 	.align 2
 Cry_Vigoroth::
@@ -2250,7 +2250,7 @@ Cry_Vigoroth::
 	.align 2
 Cry_Slaking::
 	.incbin "sound/direct_sound_samples/cries/slaking.bin"
-.endif @ P_FAMILY_SLAKOTH
+.endif @ P_FAMILY_AURUMON
 
 .if P_FAMILY_NINCADA == TRUE
 	.align 2

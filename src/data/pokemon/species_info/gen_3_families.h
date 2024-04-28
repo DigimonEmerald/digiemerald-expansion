@@ -2571,8 +2571,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_ARESDRAMON
 
-#if P_FAMILY_SLAKOTH
-    [SPECIES_SLAKOTH] =
+#if P_FAMILY_AURUMON
+    [SPECIES_AURUMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 60,
@@ -2591,9 +2591,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_TRUANT, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Slakoth"),
-        .cryId = CRY_SLAKOTH,
-        .natDexNum = NATIONAL_DEX_SLAKOTH,
+        .speciesName = _("Aurumon"),
+        .cryId = CRY_AURUMON,
+        .natDexNum = NATIONAL_DEX_AURUMON,
         .categoryName = _("Slacker"),
         .height = 8,
         .weight = 240,
@@ -2606,22 +2606,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 16,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Slakoth,
+        .frontPic = gMonFrontPic_Aurumon,
         .frontPicSize = MON_COORDS_SIZE(56, 40),
         .frontPicYOffset = 15,
-        .frontAnimFrames = sAnims_Slakoth,
+        .frontAnimFrames = sAnims_Aurumon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Slakoth,
+        .backPic = gMonBackPic_Aurumon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Slakoth,
-        .shinyPalette = gMonShinyPalette_Slakoth,
-        .iconSprite = gMonIcon_Slakoth,
+        .palette = gMonPalette_Aurumon,
+        .shinyPalette = gMonShinyPalette_Aurumon,
+        .iconSprite = gMonIcon_Aurumon,
         .iconPalIndex = 2,
-        FOOTPRINT(Slakoth)
-        .levelUpLearnset = sSlakothLevelUpLearnset,
-        .teachableLearnset = sSlakothTeachableLearnset,
+        FOOTPRINT(Aurumon)
+        .levelUpLearnset = sAurumonLevelUpLearnset,
+        .teachableLearnset = sAurumonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_VIGOROTH}),
     },
 
@@ -2735,7 +2735,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sSlakingLevelUpLearnset,
         .teachableLearnset = sSlakingTeachableLearnset,
     },
-#endif //P_FAMILY_SLAKOTH
+#endif //P_FAMILY_AURUMON
 
 #if P_FAMILY_NINCADA
     [SPECIES_NINCADA] =

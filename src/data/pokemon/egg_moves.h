@@ -2289,8 +2289,8 @@ const u16 gEggMoves[] = {
         MOVE_DRAIN_PUNCH),
 #endif //P_FAMILY_ARESDRAMON
 
-#if P_FAMILY_SLAKOTH
-    egg_moves(SLAKOTH,
+#if P_FAMILY_AURUMON
+    egg_moves(AURUMON,
         MOVE_PURSUIT,
         MOVE_SLASH,
         MOVE_BODY_SLAM,
@@ -2302,7 +2302,7 @@ const u16 gEggMoves[] = {
         MOVE_NIGHT_SLASH,
         MOVE_AFTER_YOU,
         MOVE_TICKLE),
-#endif //P_FAMILY_SLAKOTH
+#endif //P_FAMILY_AURUMON
 
 #if P_FAMILY_NINCADA
     egg_moves(NINCADA,

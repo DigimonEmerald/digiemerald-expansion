@@ -3279,7 +3279,7 @@ const struct Item gItemsInfo[] =
         .pluralName = _("Wood Mail"),
         .price = 50,
         .description = COMPOUND_STRING(
-            "A Slakoth-print\n"
+            "A Aurumon-print\n"
             "Mail to be held by\n"
             "a Pokémon."),
         .pocket = POCKET_ITEMS,

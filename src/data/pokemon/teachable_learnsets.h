@@ -13772,8 +13772,8 @@ static const u16 sAtamademonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_ARESDRAMON
 
-#if P_FAMILY_SLAKOTH
-static const u16 sSlakothTeachableLearnset[] = {
+#if P_FAMILY_AURUMON
+static const u16 sAurumonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -13933,7 +13933,7 @@ static const u16 sSlakingTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SLAKOTH
+#endif //P_FAMILY_AURUMON
 
 #if P_FAMILY_NINCADA
 static const u16 sNincadaTeachableLearnset[] = {

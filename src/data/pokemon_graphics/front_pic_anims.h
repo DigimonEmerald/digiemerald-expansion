@@ -3844,8 +3844,8 @@ static const union AnimCmd sAnim_Atamademon_1[] =
 };
 #endif //P_FAMILY_ARESDRAMON
 
-#if P_FAMILY_SLAKOTH
-static const union AnimCmd sAnim_Slakoth_1[] =
+#if P_FAMILY_AURUMON
+static const union AnimCmd sAnim_Aurumon_1[] =
 {
     ANIMCMD_FRAME(0, 13),
     ANIMCMD_FRAME(1, 22),
@@ -3879,7 +3879,7 @@ static const union AnimCmd sAnim_Slaking_1[] =
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SLAKOTH
+#endif //P_FAMILY_AURUMON
 
 #if P_FAMILY_NINCADA
 static const union AnimCmd sAnim_Nincada_1[] =
@@ -11089,11 +11089,11 @@ SINGLE_ANIMATION(Argomon_champion);
 SINGLE_ANIMATION(Aresdramon);
 SINGLE_ANIMATION(Atamademon);
 #endif //P_FAMILY_ARESDRAMON
-#if P_FAMILY_SLAKOTH
-SINGLE_ANIMATION(Slakoth);
+#if P_FAMILY_AURUMON
+SINGLE_ANIMATION(Aurumon);
 SINGLE_ANIMATION(Vigoroth);
 SINGLE_ANIMATION(Slaking);
-#endif //P_FAMILY_SLAKOTH
+#endif //P_FAMILY_AURUMON
 #if P_FAMILY_NINCADA
 SINGLE_ANIMATION(Nincada);
 SINGLE_ANIMATION(Ninjask);

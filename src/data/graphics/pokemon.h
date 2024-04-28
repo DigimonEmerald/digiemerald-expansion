@@ -4342,14 +4342,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_ARESDRAMON
 
-#if P_FAMILY_SLAKOTH
-    const u32 gMonFrontPic_Slakoth[] = INCBIN_U32("graphics/pokemon/slakoth/anim_front.4bpp.lz");
-    const u32 gMonPalette_Slakoth[] = INCBIN_U32("graphics/pokemon/slakoth/normal.gbapal.lz");
-    const u32 gMonBackPic_Slakoth[] = INCBIN_U32("graphics/pokemon/slakoth/back.4bpp.lz");
-    const u32 gMonShinyPalette_Slakoth[] = INCBIN_U32("graphics/pokemon/slakoth/shiny.gbapal.lz");
-    const u8 gMonIcon_Slakoth[] = INCBIN_U8("graphics/pokemon/slakoth/icon.4bpp");
+#if P_FAMILY_AURUMON
+    const u32 gMonFrontPic_Aurumon[] = INCBIN_U32("graphics/pokemon/aurumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Aurumon[] = INCBIN_U32("graphics/pokemon/aurumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Aurumon[] = INCBIN_U32("graphics/pokemon/aurumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Aurumon[] = INCBIN_U32("graphics/pokemon/aurumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Aurumon[] = INCBIN_U8("graphics/pokemon/aurumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Slakoth[] = INCBIN_U8("graphics/pokemon/slakoth/footprint.1bpp");
+    const u8 gMonFootprint_Aurumon[] = INCBIN_U8("graphics/pokemon/aurumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Vigoroth[] = INCBIN_U32("graphics/pokemon/vigoroth/anim_front.4bpp.lz");
@@ -4369,7 +4369,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Slaking[] = INCBIN_U8("graphics/pokemon/slaking/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_SLAKOTH
+#endif //P_FAMILY_AURUMON
 
 #if P_FAMILY_NINCADA
     const u32 gMonFrontPic_Nincada[] = INCBIN_U32("graphics/pokemon/nincada/anim_front.4bpp.lz");

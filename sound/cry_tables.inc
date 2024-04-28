@@ -791,11 +791,11 @@ gCryTable::
 	cry Cry_Aresdramon
 	cry Cry_Atamademon
 .endif @ P_FAMILY_ARESDRAMON
-.if P_FAMILY_SLAKOTH == TRUE
-	cry Cry_Slakoth
+.if P_FAMILY_AURUMON == TRUE
+	cry Cry_Aurumon
 	cry Cry_Vigoroth
 	cry Cry_Slaking
-.endif @ P_FAMILY_SLAKOTH
+.endif @ P_FAMILY_AURUMON
 .if P_FAMILY_NINCADA == TRUE
 	cry Cry_Nincada
 	cry Cry_Ninjask
@@ -3217,11 +3217,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Aresdramon
 	cry_reverse Cry_Atamademon
 .endif @ P_FAMILY_ARESDRAMON
-.if P_FAMILY_SLAKOTH == TRUE
-	cry_reverse Cry_Slakoth
+.if P_FAMILY_AURUMON == TRUE
+	cry_reverse Cry_Aurumon
 	cry_reverse Cry_Vigoroth
 	cry_reverse Cry_Slaking
-.endif @ P_FAMILY_SLAKOTH
+.endif @ P_FAMILY_AURUMON
 .if P_FAMILY_NINCADA == TRUE
 	cry_reverse Cry_Nincada
 	cry_reverse Cry_Ninjask
