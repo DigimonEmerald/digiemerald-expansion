@@ -3801,7 +3801,7 @@ static const union AnimCmd sAnim_Archelomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Masquerain_1[] =
+static const union AnimCmd sAnim_Argomon_champion_1[] =
 {
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_FRAME(1, 8),
@@ -11083,7 +11083,7 @@ SINGLE_ANIMATION(GalladeMega);
 #endif //P_FAMILY_APEMON
 #if P_FAMILY_ARCHELOMON
 SINGLE_ANIMATION(Archelomon);
-SINGLE_ANIMATION(Masquerain);
+SINGLE_ANIMATION(Argomon_champion);
 #endif //P_FAMILY_ARCHELOMON
 #if P_FAMILY_SHROOMISH
 SINGLE_ANIMATION(Shroomish);

@@ -785,7 +785,7 @@ gCryTable::
 .endif @ P_FAMILY_APEMON
 .if P_FAMILY_ARCHELOMON == TRUE
 	cry Cry_Archelomon
-	cry Cry_Masquerain
+	cry Cry_Argomon_champion
 .endif @ P_FAMILY_ARCHELOMON
 .if P_FAMILY_SHROOMISH == TRUE
 	cry Cry_Shroomish
@@ -3211,7 +3211,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_APEMON
 .if P_FAMILY_ARCHELOMON == TRUE
 	cry_reverse Cry_Archelomon
-	cry_reverse Cry_Masquerain
+	cry_reverse Cry_Argomon_champion
 .endif @ P_FAMILY_ARCHELOMON
 .if P_FAMILY_SHROOMISH == TRUE
 	cry_reverse Cry_Shroomish

@@ -2395,10 +2395,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Archelomon)
         .levelUpLearnset = sArchelomonLevelUpLearnset,
         .teachableLearnset = sArchelomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_MASQUERAIN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_ARGOMON_CHAMPION}),
     },
 
-    [SPECIES_MASQUERAIN] =
+    [SPECIES_ARGOMON_CHAMPION] =
     {
         .baseHP        = 70,
         .baseAttack    = 60,
@@ -2425,9 +2425,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_BUG),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_NONE, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Masquerain"),
-        .cryId = CRY_MASQUERAIN,
-        .natDexNum = NATIONAL_DEX_MASQUERAIN,
+        .speciesName = _("Argomon_champion"),
+        .cryId = CRY_ARGOMON_CHAMPION,
+        .natDexNum = NATIONAL_DEX_ARGOMON_CHAMPION,
         .categoryName = _("Eyeball"),
         .height = 8,
         .weight = 36,
@@ -2440,23 +2440,23 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Masquerain,
+        .frontPic = gMonFrontPic_Argomon_champion,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Masquerain,
+        .frontAnimFrames = sAnims_Argomon_champion,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 10,
-        .backPic = gMonBackPic_Masquerain,
+        .backPic = gMonBackPic_Argomon_champion,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Masquerain,
-        .shinyPalette = gMonShinyPalette_Masquerain,
-        .iconSprite = gMonIcon_Masquerain,
+        .palette = gMonPalette_Argomon_champion,
+        .shinyPalette = gMonShinyPalette_Argomon_champion,
+        .iconSprite = gMonIcon_Argomon_champion,
         .iconPalIndex = 0,
-        FOOTPRINT(Masquerain)
-        .levelUpLearnset = sMasquerainLevelUpLearnset,
-        .teachableLearnset = sMasquerainTeachableLearnset,
+        FOOTPRINT(Argomon_champion)
+        .levelUpLearnset = sArgomon_championLevelUpLearnset,
+        .teachableLearnset = sArgomon_championTeachableLearnset,
     },
 #endif //P_FAMILY_ARCHELOMON
 

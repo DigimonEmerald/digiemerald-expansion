@@ -2670,7 +2670,7 @@ static const struct TrainerMon sParty_Jeffrey3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 34,
-    .species = SPECIES_MASQUERAIN,
+    .species = SPECIES_ARGOMON_CHAMPION,
     }
 };
 
@@ -2693,7 +2693,7 @@ static const struct TrainerMon sParty_Jeffrey4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 36,
-    .species = SPECIES_MASQUERAIN,
+    .species = SPECIES_ARGOMON_CHAMPION,
     }
 };
 
@@ -2719,7 +2719,7 @@ static const struct TrainerMon sParty_Jeffrey5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 38,
-    .species = SPECIES_MASQUERAIN,
+    .species = SPECIES_ARGOMON_CHAMPION,
     .heldItem = ITEM_SILVER_POWDER
     },
     {

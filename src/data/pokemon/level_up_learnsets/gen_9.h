@@ -7730,7 +7730,7 @@ static const struct LevelUpMove sArchelomonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sMasquerainLevelUpLearnset[] = {
+static const struct LevelUpMove sArgomon_championLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WHIRLWIND),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),

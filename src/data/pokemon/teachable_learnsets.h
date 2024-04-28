@@ -13661,7 +13661,7 @@ static const u16 sArchelomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sMasquerainTeachableLearnset[] = {
+static const u16 sArgomon_championTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,

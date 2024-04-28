@@ -2224,8 +2224,8 @@ Cry_Archelomon::
 	.incbin "sound/direct_sound_samples/cries/archelomon.bin"
 
 	.align 2
-Cry_Masquerain::
-	.incbin "sound/direct_sound_samples/cries/masquerain.bin"
+Cry_Argomon_champion::
+	.incbin "sound/direct_sound_samples/cries/argomon_champion.bin"
 .endif @ P_FAMILY_ARCHELOMON
 
 .if P_FAMILY_SHROOMISH == TRUE
