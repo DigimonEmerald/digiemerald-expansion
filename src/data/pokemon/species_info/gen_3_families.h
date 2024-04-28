@@ -3068,8 +3068,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_BAOHUCKMON
 
-#if P_FAMILY_MAKUHITA
-    [SPECIES_MAKUHITA] =
+#if P_FAMILY_BETGAMAMON
+    [SPECIES_BETGAMAMON] =
     {
         .baseHP        = 72,
         .baseAttack    = 60,
@@ -3089,37 +3089,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_THICK_FAT, ABILITY_GUTS, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Makuhita"),
-        .cryId = CRY_MAKUHITA,
-        .natDexNum = NATIONAL_DEX_MAKUHITA,
+        .speciesName = _("Betgamamon"),
+        .cryId = CRY_BETGAMAMON,
+        .natDexNum = NATIONAL_DEX_BETGAMAMON,
         .categoryName = _("Guts"),
         .height = 10,
         .weight = 864,
         .description = COMPOUND_STRING(
             "It loves to toughen up its body above all\n"
             "else. If you hear quaking rumbles in a cave,\n"
-            "it is the sound of Makuhita undertaking\n"
+            "it is the sound of Betgamamon undertaking\n"
             "strenuous training."),
         .pokemonScale = 256,
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Makuhita,
+        .frontPic = gMonFrontPic_Betgamamon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Makuhita,
+        .frontAnimFrames = sAnims_Betgamamon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Makuhita,
+        .backPic = gMonBackPic_Betgamamon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Makuhita,
-        .shinyPalette = gMonShinyPalette_Makuhita,
-        .iconSprite = gMonIcon_Makuhita,
+        .palette = gMonPalette_Betgamamon,
+        .shinyPalette = gMonShinyPalette_Betgamamon,
+        .iconSprite = gMonIcon_Betgamamon,
         .iconPalIndex = 1,
-        FOOTPRINT(Makuhita)
-        .levelUpLearnset = sMakuhitaLevelUpLearnset,
-        .teachableLearnset = sMakuhitaTeachableLearnset,
+        FOOTPRINT(Betgamamon)
+        .levelUpLearnset = sBetgamamonLevelUpLearnset,
+        .teachableLearnset = sBetgamamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_HARIYAMA}),
     },
 
@@ -3175,7 +3175,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sHariyamaLevelUpLearnset,
         .teachableLearnset = sHariyamaTeachableLearnset,
     },
-#endif //P_FAMILY_MAKUHITA
+#endif //P_FAMILY_BETGAMAMON
 
 #if P_FAMILY_NOSEPASS
     [SPECIES_NOSEPASS] =

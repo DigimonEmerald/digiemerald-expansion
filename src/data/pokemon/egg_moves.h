@@ -2331,8 +2331,8 @@ const u16 gEggMoves[] = {
         MOVE_WHIRLWIND),
 #endif //P_FAMILY_BAOHUCKMON
 
-#if P_FAMILY_MAKUHITA
-    egg_moves(MAKUHITA,
+#if P_FAMILY_BETGAMAMON
+    egg_moves(BETGAMAMON,
         MOVE_FEINT_ATTACK,
         MOVE_DETECT,
         MOVE_FORESIGHT,
@@ -2347,7 +2347,7 @@ const u16 gEggMoves[] = {
         MOVE_WIDE_GUARD,
         MOVE_FOCUS_PUNCH,
         MOVE_CHIP_AWAY),
-#endif //P_FAMILY_MAKUHITA
+#endif //P_FAMILY_BETGAMAMON
 
 #if P_FAMILY_NOSEPASS
     egg_moves(NOSEPASS,

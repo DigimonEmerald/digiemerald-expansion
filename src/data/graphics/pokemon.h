@@ -4429,14 +4429,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_BAOHUCKMON
 
-#if P_FAMILY_MAKUHITA
-    const u32 gMonFrontPic_Makuhita[] = INCBIN_U32("graphics/pokemon/makuhita/anim_front.4bpp.lz");
-    const u32 gMonPalette_Makuhita[] = INCBIN_U32("graphics/pokemon/makuhita/normal.gbapal.lz");
-    const u32 gMonBackPic_Makuhita[] = INCBIN_U32("graphics/pokemon/makuhita/back.4bpp.lz");
-    const u32 gMonShinyPalette_Makuhita[] = INCBIN_U32("graphics/pokemon/makuhita/shiny.gbapal.lz");
-    const u8 gMonIcon_Makuhita[] = INCBIN_U8("graphics/pokemon/makuhita/icon.4bpp");
+#if P_FAMILY_BETGAMAMON
+    const u32 gMonFrontPic_Betgamamon[] = INCBIN_U32("graphics/pokemon/betgamamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Betgamamon[] = INCBIN_U32("graphics/pokemon/betgamamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Betgamamon[] = INCBIN_U32("graphics/pokemon/betgamamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Betgamamon[] = INCBIN_U32("graphics/pokemon/betgamamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Betgamamon[] = INCBIN_U8("graphics/pokemon/betgamamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Makuhita[] = INCBIN_U8("graphics/pokemon/makuhita/footprint.1bpp");
+    const u8 gMonFootprint_Betgamamon[] = INCBIN_U8("graphics/pokemon/betgamamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Hariyama[] = INCBIN_U32("graphics/pokemon/hariyama/anim_front.4bpp.lz");
@@ -4447,7 +4447,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Hariyama[] = INCBIN_U8("graphics/pokemon/hariyama/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_MAKUHITA
+#endif //P_FAMILY_BETGAMAMON
 
 #if P_FAMILY_NOSEPASS
     const u32 gMonFrontPic_Nosepass[] = INCBIN_U32("graphics/pokemon/nosepass/anim_front.4bpp.lz");

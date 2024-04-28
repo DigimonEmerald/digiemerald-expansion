@@ -806,10 +806,10 @@ gCryTable::
 	cry Cry_Baromon
 	cry Cry_Trailmon_battle_armament
 .endif @ P_FAMILY_BAOHUCKMON
-.if P_FAMILY_MAKUHITA == TRUE
-	cry Cry_Makuhita
+.if P_FAMILY_BETGAMAMON == TRUE
+	cry Cry_Betgamamon
 	cry Cry_Hariyama
-.endif @ P_FAMILY_MAKUHITA
+.endif @ P_FAMILY_BETGAMAMON
 .if P_FAMILY_NOSEPASS == TRUE
 	cry Cry_Nosepass
 .if P_GEN_4_CROSS_EVOS == TRUE
@@ -3232,10 +3232,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Baromon
 	cry_reverse Cry_Trailmon_battle_armament
 .endif @ P_FAMILY_BAOHUCKMON
-.if P_FAMILY_MAKUHITA == TRUE
-	cry_reverse Cry_Makuhita
+.if P_FAMILY_BETGAMAMON == TRUE
+	cry_reverse Cry_Betgamamon
 	cry_reverse Cry_Hariyama
-.endif @ P_FAMILY_MAKUHITA
+.endif @ P_FAMILY_BETGAMAMON
 .if P_FAMILY_NOSEPASS == TRUE
 	cry_reverse Cry_Nosepass
 .if P_GEN_4_CROSS_EVOS == TRUE

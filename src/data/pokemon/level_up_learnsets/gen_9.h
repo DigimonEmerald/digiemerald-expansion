@@ -7962,8 +7962,8 @@ static const struct LevelUpMove sTrailmon_battle_armamentLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_BAOHUCKMON
 
-#if P_FAMILY_MAKUHITA
-static const struct LevelUpMove sMakuhitaLevelUpLearnset[] = {
+#if P_FAMILY_BETGAMAMON
+static const struct LevelUpMove sBetgamamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE( 4, MOVE_SAND_ATTACK),
@@ -8006,7 +8006,7 @@ static const struct LevelUpMove sHariyamaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(60, MOVE_HEADLONG_RUSH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_MAKUHITA
+#endif //P_FAMILY_BETGAMAMON
 
 #if P_FAMILY_NOSEPASS
 static const struct LevelUpMove sNosepassLevelUpLearnset[] = {

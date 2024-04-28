@@ -3961,8 +3961,8 @@ static const union AnimCmd sAnim_Trailmon_battle_armament_1[] =
 };
 #endif //P_FAMILY_BAOHUCKMON
 
-#if P_FAMILY_MAKUHITA
-static const union AnimCmd sAnim_Makuhita_1[] =
+#if P_FAMILY_BETGAMAMON
+static const union AnimCmd sAnim_Betgamamon_1[] =
 {
     ANIMCMD_FRAME(0, 7),
     ANIMCMD_FRAME(1, 10),
@@ -3984,7 +3984,7 @@ static const union AnimCmd sAnim_Hariyama_1[] =
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_MAKUHITA
+#endif //P_FAMILY_BETGAMAMON
 
 #if P_FAMILY_NOSEPASS
 static const union AnimCmd sAnim_Nosepass_1[] =
@@ -11104,10 +11104,10 @@ SINGLE_ANIMATION(Baohuckmon);
 SINGLE_ANIMATION(Baromon);
 SINGLE_ANIMATION(Trailmon_battle_armament);
 #endif //P_FAMILY_BAOHUCKMON
-#if P_FAMILY_MAKUHITA
-SINGLE_ANIMATION(Makuhita);
+#if P_FAMILY_BETGAMAMON
+SINGLE_ANIMATION(Betgamamon);
 SINGLE_ANIMATION(Hariyama);
-#endif //P_FAMILY_MAKUHITA
+#endif //P_FAMILY_BETGAMAMON
 #if P_FAMILY_NOSEPASS
 SINGLE_ANIMATION(Nosepass);
 #if P_GEN_4_CROSS_EVOS

@@ -14162,8 +14162,8 @@ static const u16 sTrailmon_battle_armamentTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BAOHUCKMON
 
-#if P_FAMILY_MAKUHITA
-static const u16 sMakuhitaTeachableLearnset[] = {
+#if P_FAMILY_BETGAMAMON
+static const u16 sBetgamamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -14245,7 +14245,7 @@ static const u16 sHariyamaTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MAKUHITA
+#endif //P_FAMILY_BETGAMAMON
 
 #if P_FAMILY_NOSEPASS
 static const u16 sNosepassTeachableLearnset[] = {
