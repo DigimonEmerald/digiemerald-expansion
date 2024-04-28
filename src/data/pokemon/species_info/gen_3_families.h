@@ -2513,10 +2513,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Aresdramon)
         .levelUpLearnset = sAresdramonLevelUpLearnset,
         .teachableLearnset = sAresdramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_BRELOOM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 23, SPECIES_ATAMADEMON}),
     },
 
-    [SPECIES_BRELOOM] =
+    [SPECIES_ATAMADEMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 130,
@@ -2537,9 +2537,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_GRASS),
         .abilities = { ABILITY_EFFECT_SPORE, ABILITY_POISON_HEAL, ABILITY_TECHNICIAN },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Breloom"),
-        .cryId = CRY_BRELOOM,
-        .natDexNum = NATIONAL_DEX_BRELOOM,
+        .speciesName = _("Atamademon"),
+        .cryId = CRY_ATAMADEMON,
+        .natDexNum = NATIONAL_DEX_ATAMADEMON,
         .categoryName = _("Mushroom"),
         .height = 12,
         .weight = 392,
@@ -2552,22 +2552,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 6,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Breloom,
+        .frontPic = gMonFrontPic_Atamademon,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_Breloom,
+        .frontAnimFrames = sAnims_Atamademon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Breloom,
+        .backPic = gMonBackPic_Atamademon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Breloom,
-        .shinyPalette = gMonShinyPalette_Breloom,
-        .iconSprite = gMonIcon_Breloom,
+        .palette = gMonPalette_Atamademon,
+        .shinyPalette = gMonShinyPalette_Atamademon,
+        .iconSprite = gMonIcon_Atamademon,
         .iconPalIndex = 1,
-        FOOTPRINT(Breloom)
-        .levelUpLearnset = sBreloomLevelUpLearnset,
-        .teachableLearnset = sBreloomTeachableLearnset,
+        FOOTPRINT(Atamademon)
+        .levelUpLearnset = sAtamademonLevelUpLearnset,
+        .teachableLearnset = sAtamademonTeachableLearnset,
     },
 #endif //P_FAMILY_ARESDRAMON
 

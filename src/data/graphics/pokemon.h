@@ -4332,13 +4332,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Aresdramon[] = INCBIN_U8("graphics/pokemon/aresdramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Breloom[] = INCBIN_U32("graphics/pokemon/breloom/anim_front.4bpp.lz");
-    const u32 gMonPalette_Breloom[] = INCBIN_U32("graphics/pokemon/breloom/normal.gbapal.lz");
-    const u32 gMonBackPic_Breloom[] = INCBIN_U32("graphics/pokemon/breloom/back.4bpp.lz");
-    const u32 gMonShinyPalette_Breloom[] = INCBIN_U32("graphics/pokemon/breloom/shiny.gbapal.lz");
-    const u8 gMonIcon_Breloom[] = INCBIN_U8("graphics/pokemon/breloom/icon.4bpp");
+    const u32 gMonFrontPic_Atamademon[] = INCBIN_U32("graphics/pokemon/atamademon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Atamademon[] = INCBIN_U32("graphics/pokemon/atamademon/normal.gbapal.lz");
+    const u32 gMonBackPic_Atamademon[] = INCBIN_U32("graphics/pokemon/atamademon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Atamademon[] = INCBIN_U32("graphics/pokemon/atamademon/shiny.gbapal.lz");
+    const u8 gMonIcon_Atamademon[] = INCBIN_U8("graphics/pokemon/atamademon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Breloom[] = INCBIN_U8("graphics/pokemon/breloom/footprint.1bpp");
+    const u8 gMonFootprint_Atamademon[] = INCBIN_U8("graphics/pokemon/atamademon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_ARESDRAMON
 

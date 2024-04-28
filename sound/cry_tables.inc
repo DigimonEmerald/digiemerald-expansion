@@ -789,7 +789,7 @@ gCryTable::
 .endif @ P_FAMILY_ARCHELOMON
 .if P_FAMILY_ARESDRAMON == TRUE
 	cry Cry_Aresdramon
-	cry Cry_Breloom
+	cry Cry_Atamademon
 .endif @ P_FAMILY_ARESDRAMON
 .if P_FAMILY_SLAKOTH == TRUE
 	cry Cry_Slakoth
@@ -3215,7 +3215,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_ARCHELOMON
 .if P_FAMILY_ARESDRAMON == TRUE
 	cry_reverse Cry_Aresdramon
-	cry_reverse Cry_Breloom
+	cry_reverse Cry_Atamademon
 .endif @ P_FAMILY_ARESDRAMON
 .if P_FAMILY_SLAKOTH == TRUE
 	cry_reverse Cry_Slakoth

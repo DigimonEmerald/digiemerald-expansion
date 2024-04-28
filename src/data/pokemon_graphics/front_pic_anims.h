@@ -3833,7 +3833,7 @@ static const union AnimCmd sAnim_Aresdramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Breloom_1[] =
+static const union AnimCmd sAnim_Atamademon_1[] =
 {
     ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(1, 30),
@@ -11087,7 +11087,7 @@ SINGLE_ANIMATION(Argomon_champion);
 #endif //P_FAMILY_ARCHELOMON
 #if P_FAMILY_ARESDRAMON
 SINGLE_ANIMATION(Aresdramon);
-SINGLE_ANIMATION(Breloom);
+SINGLE_ANIMATION(Atamademon);
 #endif //P_FAMILY_ARESDRAMON
 #if P_FAMILY_SLAKOTH
 SINGLE_ANIMATION(Slakoth);

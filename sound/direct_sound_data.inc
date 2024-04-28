@@ -2234,8 +2234,8 @@ Cry_Aresdramon::
 	.incbin "sound/direct_sound_samples/cries/aresdramon.bin"
 
 	.align 2
-Cry_Breloom::
-	.incbin "sound/direct_sound_samples/cries/breloom.bin"
+Cry_Atamademon::
+	.incbin "sound/direct_sound_samples/cries/atamademon.bin"
 .endif @ P_FAMILY_ARESDRAMON
 
 .if P_FAMILY_SLAKOTH == TRUE
