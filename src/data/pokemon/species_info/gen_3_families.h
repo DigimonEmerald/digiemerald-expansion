@@ -3177,8 +3177,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_BETGAMAMON
 
-#if P_FAMILY_NOSEPASS
-    [SPECIES_NOSEPASS] =
+#if P_FAMILY_BIOTHUNMON
+    [SPECIES_BIOTHUNMON] =
     {
         .baseHP        = 30,
         .baseAttack    = 45,
@@ -3198,9 +3198,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_STURDY, ABILITY_MAGNET_PULL, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Nosepass"),
-        .cryId = CRY_NOSEPASS,
-        .natDexNum = NATIONAL_DEX_NOSEPASS,
+        .speciesName = _("Biothunmon"),
+        .cryId = CRY_BIOTHUNMON,
+        .natDexNum = NATIONAL_DEX_BIOTHUNMON,
         .categoryName = _("Compass"),
         .height = 10,
         .weight = 970,
@@ -3213,22 +3213,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 9,
         .trainerScale = 289,
         .trainerOffset = 3,
-        .frontPic = gMonFrontPic_Nosepass,
+        .frontPic = gMonFrontPic_Biothunmon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Nosepass,
+        .frontAnimFrames = sAnims_Biothunmon,
         .frontAnimId = ANIM_H_SLIDE_SLOW,
-        .backPic = gMonBackPic_Nosepass,
+        .backPic = gMonBackPic_Biothunmon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Nosepass,
-        .shinyPalette = gMonShinyPalette_Nosepass,
-        .iconSprite = gMonIcon_Nosepass,
+        .palette = gMonPalette_Biothunmon,
+        .shinyPalette = gMonShinyPalette_Biothunmon,
+        .iconSprite = gMonIcon_Biothunmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Nosepass)
-        .levelUpLearnset = sNosepassLevelUpLearnset,
-        .teachableLearnset = sNosepassTeachableLearnset,
+        FOOTPRINT(Biothunmon)
+        .levelUpLearnset = sBiothunmonLevelUpLearnset,
+        .teachableLearnset = sBiothunmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_MAPSEC, MAPSEC_NEW_MAUVILLE, SPECIES_PROBOPASS},
                                 {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_PROBOPASS}),
     },
@@ -3289,7 +3289,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sProbopassTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_NOSEPASS
+#endif //P_FAMILY_BIOTHUNMON
 
 #if P_FAMILY_SKITTY
     [SPECIES_SKITTY] =

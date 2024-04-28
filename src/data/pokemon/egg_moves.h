@@ -2349,8 +2349,8 @@ const u16 gEggMoves[] = {
         MOVE_CHIP_AWAY),
 #endif //P_FAMILY_BETGAMAMON
 
-#if P_FAMILY_NOSEPASS
-    egg_moves(NOSEPASS,
+#if P_FAMILY_BIOTHUNMON
+    egg_moves(BIOTHUNMON,
         MOVE_MAGNITUDE,
         MOVE_ROLLOUT,
         MOVE_DOUBLE_EDGE,
@@ -2358,7 +2358,7 @@ const u16 gEggMoves[] = {
         MOVE_STEALTH_ROCK,
         MOVE_ENDURE,
         MOVE_WIDE_GUARD),
-#endif //P_FAMILY_NOSEPASS
+#endif //P_FAMILY_BIOTHUNMON
 
 #if P_FAMILY_SKITTY
     egg_moves(SKITTY,

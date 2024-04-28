@@ -3986,8 +3986,8 @@ static const union AnimCmd sAnim_Bioquetmon_1[] =
 };
 #endif //P_FAMILY_BETGAMAMON
 
-#if P_FAMILY_NOSEPASS
-static const union AnimCmd sAnim_Nosepass_1[] =
+#if P_FAMILY_BIOTHUNMON
+static const union AnimCmd sAnim_Biothunmon_1[] =
 {
     ANIMCMD_FRAME(0, 27),
     ANIMCMD_FRAME(1, 27),
@@ -4010,7 +4010,7 @@ static const union AnimCmd sAnim_Probopass_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_NOSEPASS
+#endif //P_FAMILY_BIOTHUNMON
 
 #if P_FAMILY_SKITTY
 static const union AnimCmd sAnim_Skitty_1[] =
@@ -11108,12 +11108,12 @@ SINGLE_ANIMATION(Trailmon_battle_armament);
 SINGLE_ANIMATION(Betgamamon);
 SINGLE_ANIMATION(Bioquetmon);
 #endif //P_FAMILY_BETGAMAMON
-#if P_FAMILY_NOSEPASS
-SINGLE_ANIMATION(Nosepass);
+#if P_FAMILY_BIOTHUNMON
+SINGLE_ANIMATION(Biothunmon);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Probopass);
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_NOSEPASS
+#endif //P_FAMILY_BIOTHUNMON
 #if P_FAMILY_SKITTY
 SINGLE_ANIMATION(Skitty);
 SINGLE_ANIMATION(Delcatty);

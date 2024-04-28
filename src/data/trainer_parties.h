@@ -3222,7 +3222,7 @@ static const struct TrainerMon sParty_Roxanne1[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 15,
-    .species = SPECIES_NOSEPASS,
+    .species = SPECIES_BIOTHUNMON,
     .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_BLOCK, MOVE_HARDEN, MOVE_TACKLE, MOVE_ROCK_TOMB}
     }
@@ -7919,7 +7919,7 @@ static const struct TrainerMon sParty_Alan[] = {
     },
     {
     .lvl = 22,
-    .species = SPECIES_NOSEPASS,
+    .species = SPECIES_BIOTHUNMON,
     },
     {
     .lvl = 22,
@@ -8609,7 +8609,7 @@ static const struct TrainerMon sParty_Ruben[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 34,
-    .species = SPECIES_NOSEPASS,
+    .species = SPECIES_BIOTHUNMON,
     }
 };
 
@@ -9708,7 +9708,7 @@ static const struct TrainerMon sParty_Roxanne2[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 37,
-    .species = SPECIES_NOSEPASS,
+    .species = SPECIES_BIOTHUNMON,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE}
     }
@@ -9746,7 +9746,7 @@ static const struct TrainerMon sParty_Roxanne3[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 42,
-    .species = SPECIES_NOSEPASS,
+    .species = SPECIES_BIOTHUNMON,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE}
     }
@@ -9784,7 +9784,7 @@ static const struct TrainerMon sParty_Roxanne4[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 47,
-    .species = SPECIES_NOSEPASS,
+    .species = SPECIES_BIOTHUNMON,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE}
     }
@@ -9829,7 +9829,7 @@ static const struct TrainerMon sParty_Roxanne5[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 52,
-    .species = SPECIES_NOSEPASS,
+    .species = SPECIES_BIOTHUNMON,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE}
     }
@@ -11091,7 +11091,7 @@ static const struct TrainerMon sParty_Andres3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 33,
-    .species = SPECIES_NOSEPASS,
+    .species = SPECIES_BIOTHUNMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -11109,7 +11109,7 @@ static const struct TrainerMon sParty_Andres4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 35,
-    .species = SPECIES_NOSEPASS,
+    .species = SPECIES_BIOTHUNMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -11127,7 +11127,7 @@ static const struct TrainerMon sParty_Andres5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 37,
-    .species = SPECIES_NOSEPASS,
+    .species = SPECIES_BIOTHUNMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),

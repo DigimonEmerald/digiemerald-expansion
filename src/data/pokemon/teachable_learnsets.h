@@ -14247,8 +14247,8 @@ static const u16 sBioquetmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BETGAMAMON
 
-#if P_FAMILY_NOSEPASS
-static const u16 sNosepassTeachableLearnset[] = {
+#if P_FAMILY_BIOTHUNMON
+static const u16 sBiothunmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_EARTHQUAKE,
@@ -14322,7 +14322,7 @@ static const u16 sProbopassTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_NOSEPASS
+#endif //P_FAMILY_BIOTHUNMON
 
 #if P_FAMILY_SKITTY
 static const u16 sSkittyTeachableLearnset[] = {

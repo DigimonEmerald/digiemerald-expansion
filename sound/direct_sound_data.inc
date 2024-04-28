@@ -2290,17 +2290,17 @@ Cry_Bioquetmon::
 	.incbin "sound/direct_sound_samples/cries/bioquetmon.bin"
 .endif @ P_FAMILY_BETGAMAMON
 
-.if P_FAMILY_NOSEPASS == TRUE
+.if P_FAMILY_BIOTHUNMON == TRUE
 	.align 2
-Cry_Nosepass::
-	.incbin "sound/direct_sound_samples/cries/nosepass.bin"
+Cry_Biothunmon::
+	.incbin "sound/direct_sound_samples/cries/biothunmon.bin"
 
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
 Cry_Probopass::
 	.incbin "sound/direct_sound_samples/cries/probopass.bin"
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_NOSEPASS
+.endif @ P_FAMILY_BIOTHUNMON
 
 .if P_FAMILY_SKITTY == TRUE
 	.align 2

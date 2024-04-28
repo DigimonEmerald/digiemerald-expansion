@@ -7855,8 +7855,8 @@ static const struct LevelUpMove sBioquetmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_BETGAMAMON
 
-#if P_FAMILY_NOSEPASS
-static const struct LevelUpMove sNosepassLevelUpLearnset[] = {
+#if P_FAMILY_BIOTHUNMON
+static const struct LevelUpMove sBiothunmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 4, MOVE_HARDEN),
     LEVEL_UP_MOVE( 7, MOVE_BLOCK),
@@ -7903,7 +7903,7 @@ static const struct LevelUpMove sProbopassLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_NOSEPASS
+#endif //P_FAMILY_BIOTHUNMON
 
 #if P_FAMILY_SKITTY
 static const struct LevelUpMove sSkittyLevelUpLearnset[] = {

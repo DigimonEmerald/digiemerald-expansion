@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Sandstorm multiplies the special defense of Rock-types by 1.
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SWIFT].category == DAMAGE_CATEGORY_SPECIAL);
         PLAYER(SPECIES_LOPMONX) ;
-        OPPONENT(SPECIES_NOSEPASS);
+        OPPONENT(SPECIES_BIOTHUNMON);
     } WHEN {
         TURN { MOVE(opponent, move); }
         TURN { MOVE(player, MOVE_SWIFT); }
@@ -40,11 +40,11 @@ SINGLE_BATTLE_TEST("Sandstorm damage does not hurt Ground, Rock, and Steel-type 
 {
     u32 mon;
     PARAMETRIZE { mon = SPECIES_POYOMON; }
-    PARAMETRIZE { mon = SPECIES_NOSEPASS; }
+    PARAMETRIZE { mon = SPECIES_BIOTHUNMON; }
     PARAMETRIZE { mon = SPECIES_REGISTEEL; }
     GIVEN {
         ASSUME(gSpeciesInfo[SPECIES_POYOMON].types[0] == TYPE_GROUND);
-        ASSUME(gSpeciesInfo[SPECIES_NOSEPASS].types[0] == TYPE_ROCK);
+        ASSUME(gSpeciesInfo[SPECIES_BIOTHUNMON].types[0] == TYPE_ROCK);
         ASSUME(gSpeciesInfo[SPECIES_REGISTEEL].types[0] == TYPE_STEEL);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(mon);
@@ -56,8 +56,8 @@ SINGLE_BATTLE_TEST("Sandstorm damage does not hurt Ground, Rock, and Steel-type 
         case SPECIES_POYOMON:
             NOT MESSAGE("Foe Poyomon is buffeted by the sandstorm!");
             break;
-        case SPECIES_NOSEPASS:
-            NOT MESSAGE("Foe Nosepass is buffeted by the sandstorm!");
+        case SPECIES_BIOTHUNMON:
+            NOT MESSAGE("Foe Biothunmon is buffeted by the sandstorm!");
             break;
         case SPECIES_REGISTEEL:
             NOT MESSAGE("Foe Registeel is buffeted by the sandstorm!");

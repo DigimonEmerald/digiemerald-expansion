@@ -203,7 +203,7 @@
 #define P_FAMILY_BAKEMON                 P_GEN_3_POKEMON
 #define P_FAMILY_BAOHUCKMON                 P_GEN_3_POKEMON
 #define P_FAMILY_BETGAMAMON                P_GEN_3_POKEMON
-#define P_FAMILY_NOSEPASS                P_GEN_3_POKEMON
+#define P_FAMILY_BIOTHUNMON                P_GEN_3_POKEMON
 #define P_FAMILY_SKITTY                  P_GEN_3_POKEMON
 #define P_FAMILY_SABLEYE                 P_GEN_3_POKEMON
 #define P_FAMILY_MAWILE                  P_GEN_3_POKEMON

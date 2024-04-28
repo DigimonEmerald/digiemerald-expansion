@@ -810,12 +810,12 @@ gCryTable::
 	cry Cry_Betgamamon
 	cry Cry_Bioquetmon
 .endif @ P_FAMILY_BETGAMAMON
-.if P_FAMILY_NOSEPASS == TRUE
-	cry Cry_Nosepass
+.if P_FAMILY_BIOTHUNMON == TRUE
+	cry Cry_Biothunmon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Probopass
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_NOSEPASS
+.endif @ P_FAMILY_BIOTHUNMON
 .if P_FAMILY_SKITTY == TRUE
 	cry Cry_Skitty
 	cry Cry_Delcatty
@@ -3236,12 +3236,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Betgamamon
 	cry_reverse Cry_Bioquetmon
 .endif @ P_FAMILY_BETGAMAMON
-.if P_FAMILY_NOSEPASS == TRUE
-	cry_reverse Cry_Nosepass
+.if P_FAMILY_BIOTHUNMON == TRUE
+	cry_reverse Cry_Biothunmon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Probopass
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_NOSEPASS
+.endif @ P_FAMILY_BIOTHUNMON
 .if P_FAMILY_SKITTY == TRUE
 	cry_reverse Cry_Skitty
 	cry_reverse Cry_Delcatty

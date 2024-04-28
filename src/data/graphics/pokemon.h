@@ -4449,14 +4449,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_BETGAMAMON
 
-#if P_FAMILY_NOSEPASS
-    const u32 gMonFrontPic_Nosepass[] = INCBIN_U32("graphics/pokemon/nosepass/anim_front.4bpp.lz");
-    const u32 gMonPalette_Nosepass[] = INCBIN_U32("graphics/pokemon/nosepass/normal.gbapal.lz");
-    const u32 gMonBackPic_Nosepass[] = INCBIN_U32("graphics/pokemon/nosepass/back.4bpp.lz");
-    const u32 gMonShinyPalette_Nosepass[] = INCBIN_U32("graphics/pokemon/nosepass/shiny.gbapal.lz");
-    const u8 gMonIcon_Nosepass[] = INCBIN_U8("graphics/pokemon/nosepass/icon.4bpp");
+#if P_FAMILY_BIOTHUNMON
+    const u32 gMonFrontPic_Biothunmon[] = INCBIN_U32("graphics/pokemon/biothunmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Biothunmon[] = INCBIN_U32("graphics/pokemon/biothunmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Biothunmon[] = INCBIN_U32("graphics/pokemon/biothunmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Biothunmon[] = INCBIN_U32("graphics/pokemon/biothunmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Biothunmon[] = INCBIN_U8("graphics/pokemon/biothunmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Nosepass[] = INCBIN_U8("graphics/pokemon/nosepass/footprint.1bpp");
+    const u8 gMonFootprint_Biothunmon[] = INCBIN_U8("graphics/pokemon/biothunmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_4_CROSS_EVOS
@@ -4469,7 +4469,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Probopass[] = INCBIN_U8("graphics/pokemon/probopass/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_NOSEPASS
+#endif //P_FAMILY_BIOTHUNMON
 
 #if P_FAMILY_SKITTY
     const u32 gMonFrontPic_Skitty[] = INCBIN_U32("graphics/pokemon/skitty/anim_front.4bpp.lz");
