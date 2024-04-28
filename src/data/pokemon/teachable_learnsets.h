@@ -12790,7 +12790,7 @@ static const u16 sTinkermonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sMightyenaTeachableLearnset[] = {
+static const u16 sTinpetTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,

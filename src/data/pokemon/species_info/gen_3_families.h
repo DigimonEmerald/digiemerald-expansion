@@ -748,10 +748,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Tinkermon)
         .levelUpLearnset = sTinkermonLevelUpLearnset,
         .teachableLearnset = sTinkermonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_MIGHTYENA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_TINPET}),
     },
 
-    [SPECIES_MIGHTYENA] =
+    [SPECIES_TINPET] =
     {
         .baseHP        = 70,
         .baseAttack    = 90,
@@ -770,14 +770,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_QUICK_FEET, ABILITY_MOXIE },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Mightyena"),
-        .cryId = CRY_MIGHTYENA,
-        .natDexNum = NATIONAL_DEX_MIGHTYENA,
+        .speciesName = _("Tinpet"),
+        .cryId = CRY_TINPET,
+        .natDexNum = NATIONAL_DEX_TINPET,
         .categoryName = _("Bite"),
         .height = 10,
         .weight = 370,
         .description = COMPOUND_STRING(
-            "In the wild, Mightyena live in a pack.\n"
+            "In the wild, Tinpet live in a pack.\n"
             "They never defy their leader's orders.\n"
             "They defeat foes with perfectly\n"
             "coordinated teamwork."),
@@ -785,22 +785,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 9,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Mightyena,
+        .frontPic = gMonFrontPic_Tinpet,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_Mightyena,
+        .frontAnimFrames = sAnims_Tinpet,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Mightyena,
+        .backPic = gMonBackPic_Tinpet,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_H_SHAKE,
-        .palette = gMonPalette_Mightyena,
-        .shinyPalette = gMonShinyPalette_Mightyena,
-        .iconSprite = gMonIcon_Mightyena,
+        .palette = gMonPalette_Tinpet,
+        .shinyPalette = gMonShinyPalette_Tinpet,
+        .iconSprite = gMonIcon_Tinpet,
         .iconPalIndex = 2,
-        FOOTPRINT(Mightyena)
-        .levelUpLearnset = sMightyenaLevelUpLearnset,
-        .teachableLearnset = sMightyenaTeachableLearnset,
+        FOOTPRINT(Tinpet)
+        .levelUpLearnset = sTinpetLevelUpLearnset,
+        .teachableLearnset = sTinpetTeachableLearnset,
     },
 #endif //P_FAMILY_TINKERMON
 

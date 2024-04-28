@@ -3528,7 +3528,7 @@ static const union AnimCmd sAnim_Tinkermon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Mightyena_1[] =
+static const union AnimCmd sAnim_Tinpet_1[] =
 {
     ANIMCMD_FRAME(0, 27),
     ANIMCMD_FRAME(1, 6),
@@ -11031,7 +11031,7 @@ SINGLE_ANIMATION(Terriermon_xMega);
 #endif //P_FAMILY_TERRIERMON
 #if P_FAMILY_TINKERMON
 SINGLE_ANIMATION(Tinkermon);
-SINGLE_ANIMATION(Mightyena);
+SINGLE_ANIMATION(Tinpet);
 #endif //P_FAMILY_TINKERMON
 #if P_FAMILY_ZIGZAGOON
 SINGLE_ANIMATION(Zigzagoon);

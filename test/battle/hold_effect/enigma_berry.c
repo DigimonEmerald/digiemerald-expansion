@@ -26,7 +26,7 @@ SINGLE_BATTLE_TEST("Enigma Berry recovers 25% of HP if hit by super effective mo
 SINGLE_BATTLE_TEST("Enigma Berry does nothing if not hit by super effective move")
 {
     GIVEN {
-        PLAYER(SPECIES_MIGHTYENA) { MaxHP(100); HP(2); Item(ITEM_ENIGMA_BERRY); }
+        PLAYER(SPECIES_TINPET) { MaxHP(100); HP(2); Item(ITEM_ENIGMA_BERRY); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_ENDURE); MOVE(opponent, MOVE_BITE); }
@@ -35,7 +35,7 @@ SINGLE_BATTLE_TEST("Enigma Berry does nothing if not hit by super effective move
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BITE, opponent);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Mightyena's Enigma Berry restored health!");
+            MESSAGE("Tinpet's Enigma Berry restored health!");
         }
     }
 }

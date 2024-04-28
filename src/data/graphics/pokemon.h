@@ -4033,13 +4033,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Tinkermon[] = INCBIN_U8("graphics/pokemon/tinkermon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Mightyena[] = INCBIN_U32("graphics/pokemon/mightyena/anim_front.4bpp.lz");
-    const u32 gMonPalette_Mightyena[] = INCBIN_U32("graphics/pokemon/mightyena/normal.gbapal.lz");
-    const u32 gMonBackPic_Mightyena[] = INCBIN_U32("graphics/pokemon/mightyena/back.4bpp.lz");
-    const u32 gMonShinyPalette_Mightyena[] = INCBIN_U32("graphics/pokemon/mightyena/shiny.gbapal.lz");
-    const u8 gMonIcon_Mightyena[] = INCBIN_U8("graphics/pokemon/mightyena/icon.4bpp");
+    const u32 gMonFrontPic_Tinpet[] = INCBIN_U32("graphics/pokemon/tinpet/anim_front.4bpp.lz");
+    const u32 gMonPalette_Tinpet[] = INCBIN_U32("graphics/pokemon/tinpet/normal.gbapal.lz");
+    const u32 gMonBackPic_Tinpet[] = INCBIN_U32("graphics/pokemon/tinpet/back.4bpp.lz");
+    const u32 gMonShinyPalette_Tinpet[] = INCBIN_U32("graphics/pokemon/tinpet/shiny.gbapal.lz");
+    const u8 gMonIcon_Tinpet[] = INCBIN_U8("graphics/pokemon/tinpet/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Mightyena[] = INCBIN_U8("graphics/pokemon/mightyena/footprint.1bpp");
+    const u8 gMonFootprint_Tinpet[] = INCBIN_U8("graphics/pokemon/tinpet/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_TINKERMON
 

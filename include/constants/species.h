@@ -263,7 +263,7 @@
 #define SPECIES_TERRIERMON_ASSISTANT                               259
 #define SPECIES_TERRIERMON_X                                260
 #define SPECIES_TINKERMON                               261
-#define SPECIES_MIGHTYENA                               262
+#define SPECIES_TINPET                               262
 #define SPECIES_ZIGZAGOON                               263
 #define SPECIES_LINOONE                                 264
 #define SPECIES_WURMPLE                                 265

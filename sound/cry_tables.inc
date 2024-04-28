@@ -735,7 +735,7 @@ gCryTable::
 .endif @ P_FAMILY_TERRIERMON
 .if P_FAMILY_TINKERMON == TRUE
 	cry Cry_Tinkermon
-	cry Cry_Mightyena
+	cry Cry_Tinpet
 .endif @ P_FAMILY_TINKERMON
 .if P_FAMILY_ZIGZAGOON == TRUE
 	cry Cry_Zigzagoon
@@ -3161,7 +3161,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_TERRIERMON
 .if P_FAMILY_TINKERMON == TRUE
 	cry_reverse Cry_Tinkermon
-	cry_reverse Cry_Mightyena
+	cry_reverse Cry_Tinpet
 .endif @ P_FAMILY_TINKERMON
 .if P_FAMILY_ZIGZAGOON == TRUE
 	cry_reverse Cry_Zigzagoon

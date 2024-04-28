@@ -2096,8 +2096,8 @@ Cry_Tinkermon::
 	.incbin "sound/direct_sound_samples/cries/tinkermon.bin"
 
 	.align 2
-Cry_Mightyena::
-	.incbin "sound/direct_sound_samples/cries/mightyena.bin"
+Cry_Tinpet::
+	.incbin "sound/direct_sound_samples/cries/tinpet.bin"
 .endif @ P_FAMILY_TINKERMON
 
 .if P_FAMILY_ZIGZAGOON == TRUE
