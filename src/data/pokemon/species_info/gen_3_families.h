@@ -2343,8 +2343,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_APEMON
 
-#if P_FAMILY_SURSKIT
-    [SPECIES_SURSKIT] =
+#if P_FAMILY_ARCHELOMON
+    [SPECIES_ARCHELOMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 30,
@@ -2364,9 +2364,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_BUG),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_RAIN_DISH },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Surskit"),
-        .cryId = CRY_SURSKIT,
-        .natDexNum = NATIONAL_DEX_SURSKIT,
+        .speciesName = _("Archelomon"),
+        .cryId = CRY_ARCHELOMON,
+        .natDexNum = NATIONAL_DEX_ARCHELOMON,
         .categoryName = _("Pond Skater"),
         .height = 5,
         .weight = 17,
@@ -2379,22 +2379,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Surskit,
+        .frontPic = gMonFrontPic_Archelomon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Surskit,
+        .frontAnimFrames = sAnims_Archelomon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Surskit,
+        .backPic = gMonBackPic_Archelomon,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_H_SPRING,
-        .palette = gMonPalette_Surskit,
-        .shinyPalette = gMonShinyPalette_Surskit,
-        .iconSprite = gMonIcon_Surskit,
+        .palette = gMonPalette_Archelomon,
+        .shinyPalette = gMonShinyPalette_Archelomon,
+        .iconSprite = gMonIcon_Archelomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Surskit)
-        .levelUpLearnset = sSurskitLevelUpLearnset,
-        .teachableLearnset = sSurskitTeachableLearnset,
+        FOOTPRINT(Archelomon)
+        .levelUpLearnset = sArchelomonLevelUpLearnset,
+        .teachableLearnset = sArchelomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_MASQUERAIN}),
     },
 
@@ -2458,7 +2458,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sMasquerainLevelUpLearnset,
         .teachableLearnset = sMasquerainTeachableLearnset,
     },
-#endif //P_FAMILY_SURSKIT
+#endif //P_FAMILY_ARCHELOMON
 
 #if P_FAMILY_SHROOMISH
     [SPECIES_SHROOMISH] =

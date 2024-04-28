@@ -2218,15 +2218,15 @@ Cry_GalladeMega::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_APEMON
 
-.if P_FAMILY_SURSKIT == TRUE
+.if P_FAMILY_ARCHELOMON == TRUE
 	.align 2
-Cry_Surskit::
-	.incbin "sound/direct_sound_samples/cries/surskit.bin"
+Cry_Archelomon::
+	.incbin "sound/direct_sound_samples/cries/archelomon.bin"
 
 	.align 2
 Cry_Masquerain::
 	.incbin "sound/direct_sound_samples/cries/masquerain.bin"
-.endif @ P_FAMILY_SURSKIT
+.endif @ P_FAMILY_ARCHELOMON
 
 .if P_FAMILY_SHROOMISH == TRUE
 	.align 2

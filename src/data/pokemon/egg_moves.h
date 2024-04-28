@@ -2259,8 +2259,8 @@ const u16 gEggMoves[] = {
         MOVE_ALLY_SWITCH),
 #endif //P_FAMILY_APEMON
 
-#if P_FAMILY_SURSKIT
-    egg_moves(SURSKIT,
+#if P_FAMILY_ARCHELOMON
+    egg_moves(ARCHELOMON,
         MOVE_FORESIGHT,
         MOVE_MUD_SHOT,
         MOVE_PSYBEAM,
@@ -2273,7 +2273,7 @@ const u16 gEggMoves[] = {
         MOVE_FELL_STINGER,
         MOVE_POWER_SPLIT,
         MOVE_LUNGE),
-#endif //P_FAMILY_SURSKIT
+#endif //P_FAMILY_ARCHELOMON
 
 #if P_FAMILY_SHROOMISH
     egg_moves(SHROOMISH,

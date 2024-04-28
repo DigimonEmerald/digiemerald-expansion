@@ -13629,8 +13629,8 @@ static const u16 sGalladeTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_APEMON
 
-#if P_FAMILY_SURSKIT
-static const u16 sSurskitTeachableLearnset[] = {
+#if P_FAMILY_ARCHELOMON
+static const u16 sArchelomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DOUBLE_TEAM,
@@ -13693,7 +13693,7 @@ static const u16 sMasquerainTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SURSKIT
+#endif //P_FAMILY_ARCHELOMON
 
 #if P_FAMILY_SHROOMISH
 static const u16 sShroomishTeachableLearnset[] = {

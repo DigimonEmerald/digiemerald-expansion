@@ -284,7 +284,7 @@
 #define SPECIES_APEMON                                   280
 #define SPECIES_AQUILAMON                                  281
 #define SPECIES_ARCADIAMON_CHAMPION                               282
-#define SPECIES_SURSKIT                                 283
+#define SPECIES_ARCHELOMON                                 283
 #define SPECIES_MASQUERAIN                              284
 #define SPECIES_SHROOMISH                               285
 #define SPECIES_BRELOOM                                 286

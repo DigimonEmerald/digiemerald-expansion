@@ -4302,14 +4302,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_APEMON
 
-#if P_FAMILY_SURSKIT
-    const u32 gMonFrontPic_Surskit[] = INCBIN_U32("graphics/pokemon/surskit/anim_front.4bpp.lz");
-    const u32 gMonPalette_Surskit[] = INCBIN_U32("graphics/pokemon/surskit/normal.gbapal.lz");
-    const u32 gMonBackPic_Surskit[] = INCBIN_U32("graphics/pokemon/surskit/back.4bpp.lz");
-    const u32 gMonShinyPalette_Surskit[] = INCBIN_U32("graphics/pokemon/surskit/shiny.gbapal.lz");
-    const u8 gMonIcon_Surskit[] = INCBIN_U8("graphics/pokemon/surskit/icon.4bpp");
+#if P_FAMILY_ARCHELOMON
+    const u32 gMonFrontPic_Archelomon[] = INCBIN_U32("graphics/pokemon/archelomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Archelomon[] = INCBIN_U32("graphics/pokemon/archelomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Archelomon[] = INCBIN_U32("graphics/pokemon/archelomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Archelomon[] = INCBIN_U32("graphics/pokemon/archelomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Archelomon[] = INCBIN_U8("graphics/pokemon/archelomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Surskit[] = INCBIN_U8("graphics/pokemon/surskit/footprint.1bpp");
+    const u8 gMonFootprint_Archelomon[] = INCBIN_U8("graphics/pokemon/archelomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Masquerain[] = INCBIN_U32("graphics/pokemon/masquerain/anim_front.4bpp.lz");
@@ -4320,7 +4320,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Masquerain[] = INCBIN_U8("graphics/pokemon/masquerain/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_SURSKIT
+#endif //P_FAMILY_ARCHELOMON
 
 #if P_FAMILY_SHROOMISH
     const u32 gMonFrontPic_Shroomish[] = INCBIN_U32("graphics/pokemon/shroomish/anim_front.4bpp.lz");

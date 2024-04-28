@@ -3790,8 +3790,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(GalladeMega);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_APEMON
 
-#if P_FAMILY_SURSKIT
-static const union AnimCmd sAnim_Surskit_1[] =
+#if P_FAMILY_ARCHELOMON
+static const union AnimCmd sAnim_Archelomon_1[] =
 {
     ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(1, 18),
@@ -3814,7 +3814,7 @@ static const union AnimCmd sAnim_Masquerain_1[] =
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SURSKIT
+#endif //P_FAMILY_ARCHELOMON
 
 #if P_FAMILY_SHROOMISH
 static const union AnimCmd sAnim_Shroomish_1[] =
@@ -11081,10 +11081,10 @@ SINGLE_ANIMATION(GalladeMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_APEMON
-#if P_FAMILY_SURSKIT
-SINGLE_ANIMATION(Surskit);
+#if P_FAMILY_ARCHELOMON
+SINGLE_ANIMATION(Archelomon);
 SINGLE_ANIMATION(Masquerain);
-#endif //P_FAMILY_SURSKIT
+#endif //P_FAMILY_ARCHELOMON
 #if P_FAMILY_SHROOMISH
 SINGLE_ANIMATION(Shroomish);
 SINGLE_ANIMATION(Breloom);

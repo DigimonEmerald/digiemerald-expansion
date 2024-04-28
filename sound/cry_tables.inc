@@ -783,10 +783,10 @@ gCryTable::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_APEMON
-.if P_FAMILY_SURSKIT == TRUE
-	cry Cry_Surskit
+.if P_FAMILY_ARCHELOMON == TRUE
+	cry Cry_Archelomon
 	cry Cry_Masquerain
-.endif @ P_FAMILY_SURSKIT
+.endif @ P_FAMILY_ARCHELOMON
 .if P_FAMILY_SHROOMISH == TRUE
 	cry Cry_Shroomish
 	cry Cry_Breloom
@@ -3209,10 +3209,10 @@ gCryTable_Reverse::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_APEMON
-.if P_FAMILY_SURSKIT == TRUE
-	cry_reverse Cry_Surskit
+.if P_FAMILY_ARCHELOMON == TRUE
+	cry_reverse Cry_Archelomon
 	cry_reverse Cry_Masquerain
-.endif @ P_FAMILY_SURSKIT
+.endif @ P_FAMILY_ARCHELOMON
 .if P_FAMILY_SHROOMISH == TRUE
 	cry_reverse Cry_Shroomish
 	cry_reverse Cry_Breloom

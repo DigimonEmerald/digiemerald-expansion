@@ -197,7 +197,7 @@
 #define P_FAMILY_ALLOMON_X                 P_GEN_3_POKEMON
 #define P_FAMILY_ANGEMON                 P_GEN_3_POKEMON
 #define P_FAMILY_APEMON                   P_GEN_3_POKEMON
-#define P_FAMILY_SURSKIT                 P_GEN_3_POKEMON
+#define P_FAMILY_ARCHELOMON                 P_GEN_3_POKEMON
 #define P_FAMILY_SHROOMISH               P_GEN_3_POKEMON
 #define P_FAMILY_SLAKOTH                 P_GEN_3_POKEMON
 #define P_FAMILY_NINCADA                 P_GEN_3_POKEMON

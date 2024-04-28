@@ -6919,8 +6919,8 @@ static const struct LevelUpMove sGalladeLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_APEMON
 
-#if P_FAMILY_SURSKIT
-static const struct LevelUpMove sSurskitLevelUpLearnset[] = {
+#if P_FAMILY_ARCHELOMON
+static const struct LevelUpMove sArchelomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
     LEVEL_UP_MOVE( 7, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(13, MOVE_SWEET_SCENT),
@@ -6951,7 +6951,7 @@ static const struct LevelUpMove sMasquerainLevelUpLearnset[] = {
     LEVEL_UP_MOVE(61, MOVE_BUG_BUZZ),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SURSKIT
+#endif //P_FAMILY_ARCHELOMON
 
 #if P_FAMILY_SHROOMISH
 static const struct LevelUpMove sShroomishLevelUpLearnset[] = {
