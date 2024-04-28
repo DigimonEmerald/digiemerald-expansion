@@ -12712,7 +12712,7 @@ static const u16 sTerriermon_assistantTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSwampertTeachableLearnset[] = {
+static const u16 sTerriermon_xTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,

@@ -4992,14 +4992,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_SWAMPERTITE] =
+    [ITEM_TERRIERMON_XITE] =
     {
-        .name = _("Swampertite"),
+        .name = _("Terriermonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Swampert to Mega\n"
+            "Terriermon_x to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

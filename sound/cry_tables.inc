@@ -728,9 +728,9 @@ gCryTable::
 .if P_FAMILY_TERRIERMON == TRUE
 	cry Cry_Terriermon
 	cry Cry_Terriermon_assistant
-	cry Cry_Swampert
+	cry Cry_Terriermon_x
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_SwampertMega
+	cry Cry_Terriermon_xMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TERRIERMON
 .if P_FAMILY_POOCHYENA == TRUE
@@ -3154,9 +3154,9 @@ gCryTable_Reverse::
 .if P_FAMILY_TERRIERMON == TRUE
 	cry_reverse Cry_Terriermon
 	cry_reverse Cry_Terriermon_assistant
-	cry_reverse Cry_Swampert
+	cry_reverse Cry_Terriermon_x
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_SwampertMega
+	cry_reverse Cry_Terriermon_xMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TERRIERMON
 .if P_FAMILY_POOCHYENA == TRUE

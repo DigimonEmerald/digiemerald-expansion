@@ -4005,21 +4005,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Terriermon_assistant[] = INCBIN_U8("graphics/pokemon/terriermon_assistant/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Swampert[] = INCBIN_U32("graphics/pokemon/swampert/anim_front.4bpp.lz");
-    const u32 gMonPalette_Swampert[] = INCBIN_U32("graphics/pokemon/swampert/normal.gbapal.lz");
-    const u32 gMonBackPic_Swampert[] = INCBIN_U32("graphics/pokemon/swampert/back.4bpp.lz");
-    const u32 gMonShinyPalette_Swampert[] = INCBIN_U32("graphics/pokemon/swampert/shiny.gbapal.lz");
-    const u8 gMonIcon_Swampert[] = INCBIN_U8("graphics/pokemon/swampert/icon.4bpp");
+    const u32 gMonFrontPic_Terriermon_x[] = INCBIN_U32("graphics/pokemon/terriermon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Terriermon_x[] = INCBIN_U32("graphics/pokemon/terriermon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Terriermon_x[] = INCBIN_U32("graphics/pokemon/terriermon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Terriermon_x[] = INCBIN_U32("graphics/pokemon/terriermon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Terriermon_x[] = INCBIN_U8("graphics/pokemon/terriermon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Swampert[] = INCBIN_U8("graphics/pokemon/swampert/footprint.1bpp");
+    const u8 gMonFootprint_Terriermon_x[] = INCBIN_U8("graphics/pokemon/terriermon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_SwampertMega[] = INCBIN_U32("graphics/pokemon/swampert/mega/front.4bpp.lz");
-    const u32 gMonPalette_SwampertMega[] = INCBIN_U32("graphics/pokemon/swampert/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_SwampertMega[] = INCBIN_U32("graphics/pokemon/swampert/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_SwampertMega[] = INCBIN_U32("graphics/pokemon/swampert/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_SwampertMega[] = INCBIN_U8("graphics/pokemon/swampert/mega/icon.4bpp");
+    const u32 gMonFrontPic_Terriermon_xMega[] = INCBIN_U32("graphics/pokemon/terriermon_x/mega/front.4bpp.lz");
+    const u32 gMonPalette_Terriermon_xMega[] = INCBIN_U32("graphics/pokemon/terriermon_x/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_Terriermon_xMega[] = INCBIN_U32("graphics/pokemon/terriermon_x/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_Terriermon_xMega[] = INCBIN_U32("graphics/pokemon/terriermon_x/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_Terriermon_xMega[] = INCBIN_U8("graphics/pokemon/terriermon_x/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_TERRIERMON
 

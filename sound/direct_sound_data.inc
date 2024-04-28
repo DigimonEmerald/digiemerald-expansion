@@ -2080,13 +2080,13 @@ Cry_Terriermon_assistant::
 	.incbin "sound/direct_sound_samples/cries/terriermon_assistant.bin"
 
 	.align 2
-Cry_Swampert::
-	.incbin "sound/direct_sound_samples/cries/swampert.bin"
+Cry_Terriermon_x::
+	.incbin "sound/direct_sound_samples/cries/terriermon_x.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_SwampertMega::
-	.incbin "sound/direct_sound_samples/cries/swampert_mega.bin"
+Cry_Terriermon_xMega::
+	.incbin "sound/direct_sound_samples/cries/terriermon_x_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_TERRIERMON
 

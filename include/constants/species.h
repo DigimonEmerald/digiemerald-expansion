@@ -261,7 +261,7 @@
 #define SPECIES_TENTOMON                                257
 #define SPECIES_TERRIERMON                                  258
 #define SPECIES_TERRIERMON_ASSISTANT                               259
-#define SPECIES_SWAMPERT                                260
+#define SPECIES_TERRIERMON_X                                260
 #define SPECIES_POOCHYENA                               261
 #define SPECIES_MIGHTYENA                               262
 #define SPECIES_ZIGZAGOON                               263
@@ -987,7 +987,7 @@
 #define SPECIES_SPADAMON_MEGA                          926
 #define SPECIES_SYAKOMON_MEGA                           927
 #define SPECIES_TENTOMON_MEGA                           928
-#define SPECIES_SWAMPERT_MEGA                           929
+#define SPECIES_TERRIERMON_X_MEGA                           929
 #define SPECIES_GARDEVOIR_MEGA                          930
 #define SPECIES_SABLEYE_MEGA                            931
 #define SPECIES_MAWILE_MEGA                             932

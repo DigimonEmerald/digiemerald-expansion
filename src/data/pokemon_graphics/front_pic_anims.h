@@ -3504,7 +3504,7 @@ static const union AnimCmd sAnim_Terriermon_assistant_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Swampert_1[] =
+static const union AnimCmd sAnim_Terriermon_x_1[] =
 {
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_FRAME(1, 44),
@@ -3515,7 +3515,7 @@ static const union AnimCmd sAnim_Swampert_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(SwampertMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Terriermon_xMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_TERRIERMON
 
@@ -11024,9 +11024,9 @@ SINGLE_ANIMATION(TentomonMega);
 #if P_FAMILY_TERRIERMON
 SINGLE_ANIMATION(Terriermon);
 SINGLE_ANIMATION(Terriermon_assistant);
-SINGLE_ANIMATION(Swampert);
+SINGLE_ANIMATION(Terriermon_x);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(SwampertMega);
+SINGLE_ANIMATION(Terriermon_xMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_TERRIERMON
 #if P_FAMILY_POOCHYENA

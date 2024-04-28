@@ -5276,7 +5276,7 @@ static const struct LevelUpMove sTerriermon_assistantLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sSwampertLevelUpLearnset[] = {
+static const struct LevelUpMove sTerriermon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
