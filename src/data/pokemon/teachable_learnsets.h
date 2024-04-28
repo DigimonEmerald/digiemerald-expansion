@@ -14110,7 +14110,7 @@ static const u16 sBaromonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sExploudTeachableLearnset[] = {
+static const u16 sTrailmon_battle_armamentTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,

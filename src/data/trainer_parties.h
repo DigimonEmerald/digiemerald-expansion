@@ -613,7 +613,7 @@ static const struct TrainerMon sParty_GabbyAndTy6[] = {
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .lvl = 39,
-    .species = SPECIES_EXPLOUD,
+    .species = SPECIES_TRAILMON_BATTLE_ARMAMENT,
     .moves = {MOVE_ASTONISH, MOVE_STOMP, MOVE_SUPERSONIC, MOVE_HYPER_VOICE}
     }
 };
@@ -2311,7 +2311,7 @@ static const struct TrainerMon sParty_Dalton5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 34,
-    .species = SPECIES_EXPLOUD,
+    .species = SPECIES_TRAILMON_BATTLE_ARMAMENT,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -3612,7 +3612,7 @@ static const struct TrainerMon sParty_Karen5[] = {
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 35,
-    .species = SPECIES_EXPLOUD,
+    .species = SPECIES_TRAILMON_BATTLE_ARMAMENT,
     }
 };
 
@@ -11405,7 +11405,7 @@ static const struct TrainerMon sParty_Cristin5[] = {
     {
     .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),
     .lvl = 41,
-    .species = SPECIES_EXPLOUD,
+    .species = SPECIES_TRAILMON_BATTLE_ARMAMENT,
     },
     {
     .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),
@@ -11482,7 +11482,7 @@ static const struct TrainerMon sParty_Fernando5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 41,
-    .species = SPECIES_EXPLOUD,
+    .species = SPECIES_TRAILMON_BATTLE_ARMAMENT,
     }
 };
 

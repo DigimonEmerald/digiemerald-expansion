@@ -804,7 +804,7 @@ gCryTable::
 .if P_FAMILY_BAOHUCKMON == TRUE
 	cry Cry_Baohuckmon
 	cry Cry_Baromon
-	cry Cry_Exploud
+	cry Cry_Trailmon_battle_armament
 .endif @ P_FAMILY_BAOHUCKMON
 .if P_FAMILY_MAKUHITA == TRUE
 	cry Cry_Makuhita
@@ -3230,7 +3230,7 @@ gCryTable_Reverse::
 .if P_FAMILY_BAOHUCKMON == TRUE
 	cry_reverse Cry_Baohuckmon
 	cry_reverse Cry_Baromon
-	cry_reverse Cry_Exploud
+	cry_reverse Cry_Trailmon_battle_armament
 .endif @ P_FAMILY_BAOHUCKMON
 .if P_FAMILY_MAKUHITA == TRUE
 	cry_reverse Cry_Makuhita

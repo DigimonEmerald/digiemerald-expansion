@@ -4419,13 +4419,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Baromon[] = INCBIN_U8("graphics/pokemon/baromon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Exploud[] = INCBIN_U32("graphics/pokemon/exploud/anim_front.4bpp.lz");
-    const u32 gMonPalette_Exploud[] = INCBIN_U32("graphics/pokemon/exploud/normal.gbapal.lz");
-    const u32 gMonBackPic_Exploud[] = INCBIN_U32("graphics/pokemon/exploud/back.4bpp.lz");
-    const u32 gMonShinyPalette_Exploud[] = INCBIN_U32("graphics/pokemon/exploud/shiny.gbapal.lz");
-    const u8 gMonIcon_Exploud[] = INCBIN_U8("graphics/pokemon/exploud/icon.4bpp");
+    const u32 gMonFrontPic_Trailmon_battle_armament[] = INCBIN_U32("graphics/pokemon/trailmon_battle_armament/anim_front.4bpp.lz");
+    const u32 gMonPalette_Trailmon_battle_armament[] = INCBIN_U32("graphics/pokemon/trailmon_battle_armament/normal.gbapal.lz");
+    const u32 gMonBackPic_Trailmon_battle_armament[] = INCBIN_U32("graphics/pokemon/trailmon_battle_armament/back.4bpp.lz");
+    const u32 gMonShinyPalette_Trailmon_battle_armament[] = INCBIN_U32("graphics/pokemon/trailmon_battle_armament/shiny.gbapal.lz");
+    const u8 gMonIcon_Trailmon_battle_armament[] = INCBIN_U8("graphics/pokemon/trailmon_battle_armament/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Exploud[] = INCBIN_U8("graphics/pokemon/exploud/footprint.1bpp");
+    const u8 gMonFootprint_Trailmon_battle_armament[] = INCBIN_U8("graphics/pokemon/trailmon_battle_armament/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_BAOHUCKMON
 

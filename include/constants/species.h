@@ -296,7 +296,7 @@
 #define SPECIES_BALUCHIMON                                292
 #define SPECIES_BAOHUCKMON                                 293
 #define SPECIES_BAROMON                                 294
-#define SPECIES_EXPLOUD                                 295
+#define SPECIES_TRAILMON_BATTLE_ARMAMENT                                 295
 #define SPECIES_MAKUHITA                                296
 #define SPECIES_HARIYAMA                                297
 #define SPECIES_AZURILL                                 298

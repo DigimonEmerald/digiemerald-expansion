@@ -7937,7 +7937,7 @@ static const struct LevelUpMove sBaromonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sExploudLevelUpLearnset[] = {
+static const struct LevelUpMove sTrailmon_battle_armamentLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_CRUNCH),
     LEVEL_UP_MOVE( 1, MOVE_CRUNCH),
     LEVEL_UP_MOVE( 1, MOVE_BITE),

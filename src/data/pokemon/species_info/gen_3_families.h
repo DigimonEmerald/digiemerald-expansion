@@ -3004,10 +3004,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Baromon)
         .levelUpLearnset = sBaromonLevelUpLearnset,
         .teachableLearnset = sBaromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_EXPLOUD}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_TRAILMON_BATTLE_ARMAMENT}),
     },
 
-    [SPECIES_EXPLOUD] =
+    [SPECIES_TRAILMON_BATTLE_ARMAMENT] =
     {
         .baseHP        = 104,
         .baseAttack    = 91,
@@ -3034,9 +3034,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
         .abilities = { ABILITY_SOUNDPROOF, ABILITY_NONE, ABILITY_SCRAPPY },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Exploud"),
-        .cryId = CRY_EXPLOUD,
-        .natDexNum = NATIONAL_DEX_EXPLOUD,
+        .speciesName = _("Trailmon_battle_armament"),
+        .cryId = CRY_TRAILMON_BATTLE_ARMAMENT,
+        .natDexNum = NATIONAL_DEX_TRAILMON_BATTLE_ARMAMENT,
         .categoryName = _("Loud Noise"),
         .height = 15,
         .weight = 840,
@@ -3049,22 +3049,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 1,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Exploud,
+        .frontPic = gMonFrontPic_Trailmon_battle_armament,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Exploud,
+        .frontAnimFrames = sAnims_Trailmon_battle_armament,
         .frontAnimId = ANIM_V_SHAKE_TWICE,
-        .backPic = gMonBackPic_Exploud,
+        .backPic = gMonBackPic_Trailmon_battle_armament,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_GROW_STUTTER,
-        .palette = gMonPalette_Exploud,
-        .shinyPalette = gMonShinyPalette_Exploud,
-        .iconSprite = gMonIcon_Exploud,
+        .palette = gMonPalette_Trailmon_battle_armament,
+        .shinyPalette = gMonShinyPalette_Trailmon_battle_armament,
+        .iconSprite = gMonIcon_Trailmon_battle_armament,
         .iconPalIndex = 2,
-        FOOTPRINT(Exploud)
-        .levelUpLearnset = sExploudLevelUpLearnset,
-        .teachableLearnset = sExploudTeachableLearnset,
+        FOOTPRINT(Trailmon_battle_armament)
+        .levelUpLearnset = sTrailmon_battle_armamentLevelUpLearnset,
+        .teachableLearnset = sTrailmon_battle_armamentTeachableLearnset,
     },
 #endif //P_FAMILY_BAOHUCKMON
 

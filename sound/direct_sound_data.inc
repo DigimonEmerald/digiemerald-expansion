@@ -2276,8 +2276,8 @@ Cry_Baromon::
 	.incbin "sound/direct_sound_samples/cries/baromon.bin"
 
 	.align 2
-Cry_Exploud::
-	.incbin "sound/direct_sound_samples/cries/exploud.bin"
+Cry_Trailmon_battle_armament::
+	.incbin "sound/direct_sound_samples/cries/trailmon_battle_armament.bin"
 .endif @ P_FAMILY_BAOHUCKMON
 
 .if P_FAMILY_MAKUHITA == TRUE
