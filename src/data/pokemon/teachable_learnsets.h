@@ -13070,8 +13070,8 @@ static const u16 sZenimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_VEEMON
 
-#if P_FAMILY_LOTAD
-static const u16 sLotadTeachableLearnset[] = {
+#if P_FAMILY_ZUBAMON
+static const u16 sZubamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BULLET_SEED,
@@ -13193,7 +13193,7 @@ static const u16 sLudicoloTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_LOTAD
+#endif //P_FAMILY_ZUBAMON
 
 #if P_FAMILY_SEEDOT
 static const u16 sSeedotTeachableLearnset[] = {

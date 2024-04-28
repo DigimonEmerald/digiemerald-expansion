@@ -3629,8 +3629,8 @@ static const union AnimCmd sAnim_Zenimon_1[] =
 };
 #endif //P_FAMILY_VEEMON
 
-#if P_FAMILY_LOTAD
-static const union AnimCmd sAnim_Lotad_1[] =
+#if P_FAMILY_ZUBAMON
+static const union AnimCmd sAnim_Zubamon_1[] =
 {
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_FRAME(1, 55),
@@ -3659,7 +3659,7 @@ static const union AnimCmd sAnim_Ludicolo_1[] =
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_LOTAD
+#endif //P_FAMILY_ZUBAMON
 
 #if P_FAMILY_SEEDOT
 static const union AnimCmd sAnim_Seedot_1[] =
@@ -11049,11 +11049,11 @@ SINGLE_ANIMATION(Vorvomon);
 SINGLE_ANIMATION(Wormmon);
 SINGLE_ANIMATION(Zenimon);
 #endif //P_FAMILY_VEEMON
-#if P_FAMILY_LOTAD
-SINGLE_ANIMATION(Lotad);
+#if P_FAMILY_ZUBAMON
+SINGLE_ANIMATION(Zubamon);
 SINGLE_ANIMATION(Lombre);
 SINGLE_ANIMATION(Ludicolo);
-#endif //P_FAMILY_LOTAD
+#endif //P_FAMILY_ZUBAMON
 #if P_FAMILY_SEEDOT
 SINGLE_ANIMATION(Seedot);
 SINGLE_ANIMATION(Nuzleaf);

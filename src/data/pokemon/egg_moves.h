@@ -2180,8 +2180,8 @@ const u16 gEggMoves[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TOYAGUMON
 
-#if P_FAMILY_LOTAD
-    egg_moves(LOTAD,
+#if P_FAMILY_ZUBAMON
+    egg_moves(ZUBAMON,
         MOVE_SYNTHESIS,
         MOVE_RAZOR_LEAF,
         MOVE_SWEET_SCENT,
@@ -2192,7 +2192,7 @@ const u16 gEggMoves[] = {
         MOVE_COUNTER,
         MOVE_GIGA_DRAIN,
         MOVE_TEETER_DANCE),
-#endif //P_FAMILY_LOTAD
+#endif //P_FAMILY_ZUBAMON
 
 #if P_FAMILY_SEEDOT
     egg_moves(SEEDOT,

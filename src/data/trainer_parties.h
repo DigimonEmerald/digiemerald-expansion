@@ -73,7 +73,7 @@ static const struct TrainerMon sParty_Gabrielle1[] = {
     },
     {
     .lvl = 26,
-    .species = SPECIES_LOTAD,
+    .species = SPECIES_ZUBAMON,
     },
     {
     .lvl = 26,
@@ -5944,7 +5944,7 @@ static const struct TrainerMon sParty_GinaAndMia1[] = {
     },
     {
     .lvl = 6,
-    .species = SPECIES_LOTAD,
+    .species = SPECIES_ZUBAMON,
     }
 };
 
@@ -7114,7 +7114,7 @@ static const struct TrainerMon sParty_Jenna[] = {
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 28,
-    .species = SPECIES_LOTAD,
+    .species = SPECIES_ZUBAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -7425,7 +7425,7 @@ static const struct TrainerMon sParty_BrendanRustboroSunarzamon[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 13,
-    .species = SPECIES_LOTAD,
+    .species = SPECIES_ZUBAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -7586,7 +7586,7 @@ static const struct TrainerMon sParty_Tiana[] = {
 static const struct TrainerMon sParty_Haley1[] = {
     {
     .lvl = 6,
-    .species = SPECIES_LOTAD,
+    .species = SPECIES_ZUBAMON,
     },
     {
     .lvl = 6,
@@ -8901,7 +8901,7 @@ static const struct TrainerMon sParty_Dawson[] = {
 static const struct TrainerMon sParty_Sarah[] = {
     {
     .lvl = 8,
-    .species = SPECIES_LOTAD,
+    .species = SPECIES_ZUBAMON,
     .heldItem = ITEM_NONE
     },
     {
@@ -9486,7 +9486,7 @@ static const struct TrainerMon sParty_Johnson[] = {
     },
     {
     .lvl = 8,
-    .species = SPECIES_LOTAD,
+    .species = SPECIES_ZUBAMON,
     }
 };
 
@@ -9661,7 +9661,7 @@ static const struct TrainerMon sParty_MayRustboroSunarzamon[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 13,
-    .species = SPECIES_LOTAD,
+    .species = SPECIES_ZUBAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -11572,7 +11572,7 @@ static const struct TrainerMon sParty_Gabrielle2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 31,
-    .species = SPECIES_LOTAD,
+    .species = SPECIES_ZUBAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),

@@ -4139,14 +4139,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonBackPic_ZenimonF[] = INCBIN_U32("graphics/pokemon/zenimon/backf.4bpp.lz");
 #endif //P_FAMILY_VEEMON
 
-#if P_FAMILY_LOTAD
-    const u32 gMonFrontPic_Lotad[] = INCBIN_U32("graphics/pokemon/lotad/anim_front.4bpp.lz");
-    const u32 gMonPalette_Lotad[] = INCBIN_U32("graphics/pokemon/lotad/normal.gbapal.lz");
-    const u32 gMonBackPic_Lotad[] = INCBIN_U32("graphics/pokemon/lotad/back.4bpp.lz");
-    const u32 gMonShinyPalette_Lotad[] = INCBIN_U32("graphics/pokemon/lotad/shiny.gbapal.lz");
-    const u8 gMonIcon_Lotad[] = INCBIN_U8("graphics/pokemon/lotad/icon.4bpp");
+#if P_FAMILY_ZUBAMON
+    const u32 gMonFrontPic_Zubamon[] = INCBIN_U32("graphics/pokemon/zubamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Zubamon[] = INCBIN_U32("graphics/pokemon/zubamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Zubamon[] = INCBIN_U32("graphics/pokemon/zubamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Zubamon[] = INCBIN_U32("graphics/pokemon/zubamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Zubamon[] = INCBIN_U8("graphics/pokemon/zubamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Lotad[] = INCBIN_U8("graphics/pokemon/lotad/footprint.1bpp");
+    const u8 gMonFootprint_Zubamon[] = INCBIN_U8("graphics/pokemon/zubamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Lombre[] = INCBIN_U32("graphics/pokemon/lombre/anim_front.4bpp.lz");
@@ -4169,7 +4169,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
     const u32 gMonFrontPic_LudicoloF[] = INCBIN_U32("graphics/pokemon/ludicolo/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_LudicoloF[] = INCBIN_U32("graphics/pokemon/ludicolo/backf.4bpp.lz");
-#endif //P_FAMILY_LOTAD
+#endif //P_FAMILY_ZUBAMON
 
 #if P_FAMILY_SEEDOT
     const u32 gMonFrontPic_Seedot[] = INCBIN_U32("graphics/pokemon/seedot/anim_front.4bpp.lz");

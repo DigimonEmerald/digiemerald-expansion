@@ -1402,8 +1402,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_VEEMON
 
-#if P_FAMILY_LOTAD
-    [SPECIES_LOTAD] =
+#if P_FAMILY_ZUBAMON
+    [SPECIES_ZUBAMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 30,
@@ -1423,9 +1423,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_GRASS),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_RAIN_DISH, ABILITY_OWN_TEMPO },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Lotad"),
-        .cryId = CRY_LOTAD,
-        .natDexNum = NATIONAL_DEX_LOTAD,
+        .speciesName = _("Zubamon"),
+        .cryId = CRY_ZUBAMON,
+        .natDexNum = NATIONAL_DEX_ZUBAMON,
         .categoryName = _("Water Weed"),
         .height = 5,
         .weight = 26,
@@ -1438,22 +1438,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Lotad,
+        .frontPic = gMonFrontPic_Zubamon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Lotad,
+        .frontAnimFrames = sAnims_Zubamon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Lotad,
+        .backPic = gMonBackPic_Zubamon,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Lotad,
-        .shinyPalette = gMonShinyPalette_Lotad,
-        .iconSprite = gMonIcon_Lotad,
+        .palette = gMonPalette_Zubamon,
+        .shinyPalette = gMonShinyPalette_Zubamon,
+        .iconSprite = gMonIcon_Zubamon,
         .iconPalIndex = 4,
-        FOOTPRINT(Lotad)
-        .levelUpLearnset = sLotadLevelUpLearnset,
-        .teachableLearnset = sLotadTeachableLearnset,
+        FOOTPRINT(Zubamon)
+        .levelUpLearnset = sZubamonLevelUpLearnset,
+        .teachableLearnset = sZubamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_LOMBRE}),
     },
 
@@ -1573,7 +1573,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sLudicoloLevelUpLearnset,
         .teachableLearnset = sLudicoloTeachableLearnset,
     },
-#endif //P_FAMILY_LOTAD
+#endif //P_FAMILY_ZUBAMON
 
 #if P_FAMILY_SEEDOT
     [SPECIES_SEEDOT] =

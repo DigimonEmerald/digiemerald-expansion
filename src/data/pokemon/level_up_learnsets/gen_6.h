@@ -7271,8 +7271,8 @@ static const struct LevelUpMove sZenimonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_VEEMON
 
-#if P_FAMILY_LOTAD
-static const struct LevelUpMove sLotadLevelUpLearnset[] = {
+#if P_FAMILY_ZUBAMON
+static const struct LevelUpMove sZubamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 3, MOVE_GROWL),
     LEVEL_UP_MOVE( 6, MOVE_ABSORB),
@@ -7313,7 +7313,7 @@ static const struct LevelUpMove sLudicoloLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_NATURE_POWER),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_LOTAD
+#endif //P_FAMILY_ZUBAMON
 
 #if P_FAMILY_SEEDOT
 static const struct LevelUpMove sSeedotLevelUpLearnset[] = {

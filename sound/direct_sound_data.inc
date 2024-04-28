@@ -2139,10 +2139,10 @@ Cry_Zenimon::
 	.incbin "sound/direct_sound_samples/cries/zenimon.bin"
 .endif @ P_FAMILY_VEEMON
 
-.if P_FAMILY_LOTAD == TRUE
+.if P_FAMILY_ZUBAMON == TRUE
 	.align 2
-Cry_Lotad::
-	.incbin "sound/direct_sound_samples/cries/lotad.bin"
+Cry_Zubamon::
+	.incbin "sound/direct_sound_samples/cries/zubamon.bin"
 
 	.align 2
 Cry_Lombre::
@@ -2151,7 +2151,7 @@ Cry_Lombre::
 	.align 2
 Cry_Ludicolo::
 	.incbin "sound/direct_sound_samples/cries/ludicolo.bin"
-.endif @ P_FAMILY_LOTAD
+.endif @ P_FAMILY_ZUBAMON
 
 .if P_FAMILY_SEEDOT == TRUE
 	.align 2

@@ -271,7 +271,7 @@
 #define SPECIES_VORVOMON                               267
 #define SPECIES_WORMMON                                 268
 #define SPECIES_ZENIMON                                  269
-#define SPECIES_LOTAD                                   270
+#define SPECIES_ZUBAMON                                   270
 #define SPECIES_LOMBRE                                  271
 #define SPECIES_LUDICOLO                                272
 #define SPECIES_SEEDOT                                  273
