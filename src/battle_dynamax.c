@@ -135,7 +135,7 @@ bool32 IsGigantamaxed(u16 battlerId)
 // Applies the HP Multiplier for Dynamaxed Pokemon and Raid Bosses.
 void ApplyDynamaxHPMultiplier(u32 battler, struct Pokemon* mon)
 {
-    if (GetMonData(mon, MON_DATA_SPECIES) == SPECIES_SHEDINJA)
+    if (GetMonData(mon, MON_DATA_SPECIES) == SPECIES_BALUCHIMON)
         return;
     else
     {
@@ -150,7 +150,7 @@ void ApplyDynamaxHPMultiplier(u32 battler, struct Pokemon* mon)
 // Returns the non-Dynamax HP of a Pokemon.
 u16 GetNonDynamaxHP(u16 battlerId)
 {
-    if (!IsDynamaxed(battlerId) || gBattleMons[battlerId].species == SPECIES_SHEDINJA)
+    if (!IsDynamaxed(battlerId) || gBattleMons[battlerId].species == SPECIES_BALUCHIMON)
         return gBattleMons[battlerId].hp;
     else
     {
@@ -163,7 +163,7 @@ u16 GetNonDynamaxHP(u16 battlerId)
 // Returns the non-Dynamax Max HP of a Pokemon.
 u16 GetNonDynamaxMaxHP(u32 battlerId)
 {
-    if (!IsDynamaxed(battlerId) || gBattleMons[battlerId].species == SPECIES_SHEDINJA)
+    if (!IsDynamaxed(battlerId) || gBattleMons[battlerId].species == SPECIES_BALUCHIMON)
         return gBattleMons[battlerId].maxHP;
     else
     {

@@ -4390,13 +4390,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Balistamon[] = INCBIN_U8("graphics/pokemon/balistamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Shedinja[] = INCBIN_U32("graphics/pokemon/shedinja/anim_front.4bpp.lz");
-    const u32 gMonPalette_Shedinja[] = INCBIN_U32("graphics/pokemon/shedinja/normal.gbapal.lz");
-    const u32 gMonBackPic_Shedinja[] = INCBIN_U32("graphics/pokemon/shedinja/back.4bpp.lz");
-    const u32 gMonShinyPalette_Shedinja[] = INCBIN_U32("graphics/pokemon/shedinja/shiny.gbapal.lz");
-    const u8 gMonIcon_Shedinja[] = INCBIN_U8("graphics/pokemon/shedinja/icon.4bpp");
+    const u32 gMonFrontPic_Baluchimon[] = INCBIN_U32("graphics/pokemon/baluchimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Baluchimon[] = INCBIN_U32("graphics/pokemon/baluchimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Baluchimon[] = INCBIN_U32("graphics/pokemon/baluchimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Baluchimon[] = INCBIN_U32("graphics/pokemon/baluchimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Baluchimon[] = INCBIN_U8("graphics/pokemon/baluchimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Shedinja[] = INCBIN_U8("graphics/pokemon/shedinja/footprint.1bpp");
+    const u8 gMonFootprint_Baluchimon[] = INCBIN_U8("graphics/pokemon/baluchimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_BAKEMON
 

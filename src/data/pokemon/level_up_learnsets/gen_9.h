@@ -7880,7 +7880,7 @@ static const struct LevelUpMove sBalistamonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sShedinjaLevelUpLearnset[] = {
+static const struct LevelUpMove sBaluchimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SHADOW_CLAW),
     LEVEL_UP_MOVE( 1, MOVE_GRUDGE),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),

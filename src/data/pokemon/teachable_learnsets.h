@@ -13991,7 +13991,7 @@ static const u16 sBalistamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sShedinjaTeachableLearnset[] = {
+static const u16 sBaluchimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_CUT,
     MOVE_DIG,

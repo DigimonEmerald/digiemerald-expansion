@@ -27,7 +27,7 @@ SINGLE_BATTLE_TEST("Mind's Eye doesn't bypass a Ghost-type's Wonder Guard")
 
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Ability(ABILITY_SCRAPPY); };
-        OPPONENT(SPECIES_SHEDINJA) { Ability(ABILITY_WONDER_GUARD); };
+        OPPONENT(SPECIES_BALUCHIMON) { Ability(ABILITY_WONDER_GUARD); };
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
@@ -36,7 +36,7 @@ SINGLE_BATTLE_TEST("Mind's Eye doesn't bypass a Ghost-type's Wonder Guard")
             HP_BAR(opponent);
         }
         ABILITY_POPUP(opponent, ABILITY_WONDER_GUARD);
-        MESSAGE("Foe Shedinja avoided damage with Wonder Guard!");
+        MESSAGE("Foe Baluchimon avoided damage with Wonder Guard!");
     }
 }
 

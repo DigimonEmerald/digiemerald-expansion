@@ -799,7 +799,7 @@ gCryTable::
 .if P_FAMILY_BAKEMON == TRUE
 	cry Cry_Bakemon
 	cry Cry_Balistamon
-	cry Cry_Shedinja
+	cry Cry_Baluchimon
 .endif @ P_FAMILY_BAKEMON
 .if P_FAMILY_WHISMUR == TRUE
 	cry Cry_Whismur
@@ -3225,7 +3225,7 @@ gCryTable_Reverse::
 .if P_FAMILY_BAKEMON == TRUE
 	cry_reverse Cry_Bakemon
 	cry_reverse Cry_Balistamon
-	cry_reverse Cry_Shedinja
+	cry_reverse Cry_Baluchimon
 .endif @ P_FAMILY_BAKEMON
 .if P_FAMILY_WHISMUR == TRUE
 	cry_reverse Cry_Whismur

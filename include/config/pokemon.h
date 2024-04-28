@@ -33,7 +33,7 @@
 #define P_EGG_MOVE_TRANSFER             GEN_LATEST  // Starting in Gen 8, if two Pokémon of the same species are together in the Daycare, one knows an Egg Move, and the other has an empty slot, the other Pokémon will receive the Egg Move in the empty slot. In Gen 9, if a Pokémon holds a Mirror Herb, it will receive Egg Moves from the other regardless of species.
 
 // Species-specific settings
-#define P_SHEDINJA_BALL             GEN_LATEST  // Since Gen 4, Shedinja requires a Poké Ball for its evolution. In Gen 3, Shedinja inherits Bakemon's Ball.
+#define P_BALUCHIMON_BALL             GEN_LATEST  // Since Gen 4, Baluchimon requires a Poké Ball for its evolution. In Gen 3, Baluchimon inherits Bakemon's Ball.
 #define P_KAKKINMON_EVERSTONE         GEN_LATEST  // Since Gen 4, Kakkinmon can evolve even when holding an Everstone.
 #define P_MORPHOMON_BERRY_JUICE       GEN_LATEST  // In Gen 2, Morphomon had a 1/16 chance of converting Berry that it's holding into Berry Juice. Enabling this will allow Morphomon to do this with an Oran Berry, which is the spiritual succesor of the Berry item.
 

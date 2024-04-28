@@ -4564,9 +4564,9 @@ static void GetMedicineItemEffectMessage(u16 item, u32 statusCured)
     }
 }
 
-static bool8 NotUsingHPEVItemOnShedinja(struct Pokemon *mon, u16 item)
+static bool8 NotUsingHPEVItemOnBaluchimon(struct Pokemon *mon, u16 item)
 {
-    if (GetItemEffectType(item) == ITEM_EFFECT_HP_EV && GetMonData(mon, MON_DATA_SPECIES) == SPECIES_SHEDINJA)
+    if (GetItemEffectType(item) == ITEM_EFFECT_HP_EV && GetMonData(mon, MON_DATA_SPECIES) == SPECIES_BALUCHIMON)
         return FALSE;
     return TRUE;
 }
@@ -4617,7 +4617,7 @@ void ItemUseCB_Medicine(u8 taskId, TaskFunc task)
     bool8 canHeal, cannotUse;
     u32 oldStatus = GetMonData(mon, MON_DATA_STATUS);
 
-    if (NotUsingHPEVItemOnShedinja(mon, item) == FALSE)
+    if (NotUsingHPEVItemOnBaluchimon(mon, item) == FALSE)
     {
         cannotUse = TRUE;
     }
@@ -5069,7 +5069,7 @@ static u16 ItemEffectToMonEv(struct Pokemon *mon, u8 effectType)
     switch (effectType)
     {
     case ITEM_EFFECT_HP_EV:
-        if (GetMonData(mon, MON_DATA_SPECIES) != SPECIES_SHEDINJA)
+        if (GetMonData(mon, MON_DATA_SPECIES) != SPECIES_BALUCHIMON)
             return GetMonData(mon, MON_DATA_HP_EV);
         break;
     case ITEM_EFFECT_ATK_EV:

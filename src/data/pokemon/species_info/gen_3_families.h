@@ -2790,7 +2790,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sBakemonLevelUpLearnset,
         .teachableLearnset = sBakemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL_BALISTAMON, 20, SPECIES_BALISTAMON},
-                                {EVO_LEVEL_SHEDINJA, 20, SPECIES_SHEDINJA}),
+                                {EVO_LEVEL_BALUCHIMON, 20, SPECIES_BALUCHIMON}),
     },
 
     [SPECIES_BALISTAMON] =
@@ -2846,7 +2846,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sBalistamonTeachableLearnset,
     },
 
-    [SPECIES_SHEDINJA] =
+    [SPECIES_BALUCHIMON] =
     {
         .baseHP        = 1,
         .baseAttack    = 90,
@@ -2865,9 +2865,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_WONDER_GUARD, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Shedinja"),
-        .cryId = CRY_SHEDINJA,
-        .natDexNum = NATIONAL_DEX_SHEDINJA,
+        .speciesName = _("Baluchimon"),
+        .cryId = CRY_BALUCHIMON,
+        .natDexNum = NATIONAL_DEX_BALUCHIMON,
         .categoryName = _("Shed"),
         .height = 8,
         .weight = 12,
@@ -2880,23 +2880,23 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = -8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Shedinja,
+        .frontPic = gMonFrontPic_Baluchimon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Shedinja,
+        .frontAnimFrames = sAnims_Baluchimon,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 8,
-        .backPic = gMonBackPic_Shedinja,
+        .backPic = gMonBackPic_Baluchimon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Shedinja,
-        .shinyPalette = gMonShinyPalette_Shedinja,
-        .iconSprite = gMonIcon_Shedinja,
+        .palette = gMonPalette_Baluchimon,
+        .shinyPalette = gMonShinyPalette_Baluchimon,
+        .iconSprite = gMonIcon_Baluchimon,
         .iconPalIndex = 1,
-        FOOTPRINT(Shedinja)
-        .levelUpLearnset = sShedinjaLevelUpLearnset,
-        .teachableLearnset = sShedinjaTeachableLearnset,
+        FOOTPRINT(Baluchimon)
+        .levelUpLearnset = sBaluchimonLevelUpLearnset,
+        .teachableLearnset = sBaluchimonTeachableLearnset,
     },
 #endif //P_FAMILY_BAKEMON
 

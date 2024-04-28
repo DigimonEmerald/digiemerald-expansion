@@ -2262,8 +2262,8 @@ Cry_Balistamon::
 	.incbin "sound/direct_sound_samples/cries/balistamon.bin"
 
 	.align 2
-Cry_Shedinja::
-	.incbin "sound/direct_sound_samples/cries/shedinja.bin"
+Cry_Baluchimon::
+	.incbin "sound/direct_sound_samples/cries/baluchimon.bin"
 .endif @ P_FAMILY_BAKEMON
 
 .if P_FAMILY_WHISMUR == TRUE

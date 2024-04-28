@@ -158,7 +158,7 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(KAPURIMON),
     HOENN_TO_NATIONAL(BAKEMON),
     HOENN_TO_NATIONAL(BALISTAMON),
-    HOENN_TO_NATIONAL(SHEDINJA),
+    HOENN_TO_NATIONAL(BALUCHIMON),
     HOENN_TO_NATIONAL(WHISMUR),
     HOENN_TO_NATIONAL(LOUDRED),
     HOENN_TO_NATIONAL(EXPLOUD),
@@ -1506,7 +1506,7 @@ void CalculateMonStats(struct Pokemon *mon)
 
     SetMonData(mon, MON_DATA_LEVEL, &level);
 
-    if (species == SPECIES_SHEDINJA)
+    if (species == SPECIES_BALUCHIMON)
     {
         newMaxHP = 1;
     }
@@ -1528,7 +1528,7 @@ void CalculateMonStats(struct Pokemon *mon)
     CALC_STAT(baseSpAttack, spAttackIV, spAttackEV, STAT_SPATK, MON_DATA_SPATK)
     CALC_STAT(baseSpDefense, spDefenseIV, spDefenseEV, STAT_SPDEF, MON_DATA_SPDEF)
 
-    if (species == SPECIES_SHEDINJA)
+    if (species == SPECIES_BALUCHIMON)
     {
         if (currentHP != 0 || oldMaxHP == 0)
             currentHP = 1;

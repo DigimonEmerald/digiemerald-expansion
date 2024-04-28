@@ -217,7 +217,7 @@ static const u8 sText_EVO_LEVEL_ATK_LT_DEF[] = _("{LV}{UP_ARROW} to {STR_VAR_2},
 static const u8 sText_EVO_LEVEL_VEMMON[] = _("{LV}{UP_ARROW} to {STR_VAR_2}, Vemmon persona");
 static const u8 sText_EVO_LEVEL_WORMMON[] = _("{LV}{UP_ARROW} to {STR_VAR_2}, Wormmon persona");
 static const u8 sText_EVO_LEVEL_BALISTAMON[] = _("{LV}{UP_ARROW} to {STR_VAR_2}");
-static const u8 sText_EVO_LEVEL_SHEDINJA[] = _("{LV}{UP_ARROW} to {STR_VAR_2}, party<6, 1x POKéBALL");
+static const u8 sText_EVO_LEVEL_BALUCHIMON[] = _("{LV}{UP_ARROW} to {STR_VAR_2}, party<6, 1x POKéBALL");
 static const u8 sText_EVO_BEAUTY[] = _("{LV}{UP_ARROW}, high beauty");
 static const u8 sText_EVO_LEVEL_FEMALE[] = _("{LV}{UP_ARROW} to {STR_VAR_2}, is female");
 static const u8 sText_EVO_LEVEL_MALE[] = _("{LV}{UP_ARROW} to {STR_VAR_2}, is male");
@@ -6528,9 +6528,9 @@ static u8 PrintEvolutionTargetSpeciesAndMethod(u8 taskId, u16 species, u8 depth,
             ConvertIntToDecimalStringN(gStringVar2, evolutions[i].param, STR_CONV_MODE_LEADING_ZEROS, EVO_SCREEN_LVL_DIGITS); //level
             StringExpandPlaceholders(gStringVar4, sText_EVO_LEVEL_BALISTAMON );
             break;
-        case EVO_LEVEL_SHEDINJA:
+        case EVO_LEVEL_BALUCHIMON:
             ConvertIntToDecimalStringN(gStringVar2, evolutions[i].param, STR_CONV_MODE_LEADING_ZEROS, EVO_SCREEN_LVL_DIGITS); //level
-            StringExpandPlaceholders(gStringVar4, sText_EVO_LEVEL_SHEDINJA );
+            StringExpandPlaceholders(gStringVar4, sText_EVO_LEVEL_BALUCHIMON );
             break;
         case EVO_BEAUTY:
             ConvertIntToDecimalStringN(gStringVar2, evolutions[i].param, STR_CONV_MODE_LEADING_ZEROS, 3); //beauty
