@@ -8445,10 +8445,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Flymon)
         .levelUpLearnset = sFlymonLevelUpLearnset,
         .teachableLearnset = sFlymonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SHELGON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_FRIGIMON}),
     },
 
-    [SPECIES_SHELGON] =
+    [SPECIES_FRIGIMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 95,
@@ -8468,9 +8468,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON),
         .abilities = { ABILITY_ROCK_HEAD, ABILITY_NONE, ABILITY_OVERCOAT },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Shelgon"),
-        .cryId = CRY_SHELGON,
-        .natDexNum = NATIONAL_DEX_SHELGON,
+        .speciesName = _("Frigimon"),
+        .cryId = CRY_FRIGIMON,
+        .natDexNum = NATIONAL_DEX_FRIGIMON,
         .categoryName = _("Endurance"),
         .height = 11,
         .weight = 1105,
@@ -8483,22 +8483,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Shelgon,
+        .frontPic = gMonFrontPic_Frigimon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Shelgon,
+        .frontAnimFrames = sAnims_Frigimon,
         .frontAnimId = ANIM_V_SLIDE,
-        .backPic = gMonBackPic_Shelgon,
+        .backPic = gMonBackPic_Frigimon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Shelgon,
-        .shinyPalette = gMonShinyPalette_Shelgon,
-        .iconSprite = gMonIcon_Shelgon,
+        .palette = gMonPalette_Frigimon,
+        .shinyPalette = gMonShinyPalette_Frigimon,
+        .iconSprite = gMonIcon_Frigimon,
         .iconPalIndex = 2,
-        FOOTPRINT(Shelgon)
-        .levelUpLearnset = sShelgonLevelUpLearnset,
-        .teachableLearnset = sShelgonTeachableLearnset,
+        FOOTPRINT(Frigimon)
+        .levelUpLearnset = sFrigimonLevelUpLearnset,
+        .teachableLearnset = sFrigimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_SALAMENCE}),
     },
 

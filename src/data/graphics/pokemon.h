@@ -5388,13 +5388,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Flymon[] = INCBIN_U8("graphics/pokemon/flymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Shelgon[] = INCBIN_U32("graphics/pokemon/shelgon/anim_front.4bpp.lz");
-    const u32 gMonPalette_Shelgon[] = INCBIN_U32("graphics/pokemon/shelgon/normal.gbapal.lz");
-    const u32 gMonBackPic_Shelgon[] = INCBIN_U32("graphics/pokemon/shelgon/back.4bpp.lz");
-    const u32 gMonShinyPalette_Shelgon[] = INCBIN_U32("graphics/pokemon/shelgon/shiny.gbapal.lz");
-    const u8 gMonIcon_Shelgon[] = INCBIN_U8("graphics/pokemon/shelgon/icon.4bpp");
+    const u32 gMonFrontPic_Frigimon[] = INCBIN_U32("graphics/pokemon/frigimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Frigimon[] = INCBIN_U32("graphics/pokemon/frigimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Frigimon[] = INCBIN_U32("graphics/pokemon/frigimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Frigimon[] = INCBIN_U32("graphics/pokemon/frigimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Frigimon[] = INCBIN_U8("graphics/pokemon/frigimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Shelgon[] = INCBIN_U8("graphics/pokemon/shelgon/footprint.1bpp");
+    const u8 gMonFootprint_Frigimon[] = INCBIN_U8("graphics/pokemon/frigimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Salamence[] = INCBIN_U32("graphics/pokemon/salamence/anim_front.4bpp.lz");

@@ -9142,7 +9142,7 @@ static const struct LevelUpMove sFlymonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sShelgonLevelUpLearnset[] = {
+static const struct LevelUpMove sFrigimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_RAGE),
     LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),

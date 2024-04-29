@@ -17262,7 +17262,7 @@ static const u16 sFlymonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sShelgonTeachableLearnset[] = {
+static const u16 sFrigimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,

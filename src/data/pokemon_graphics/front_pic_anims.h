@@ -5012,7 +5012,7 @@ static const union AnimCmd sAnim_Flymon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Shelgon_1[] =
+static const union AnimCmd sAnim_Frigimon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -11321,7 +11321,7 @@ SINGLE_ANIMATION(Flybeemon);
 #endif //P_FAMILY_FLYBEEMON
 #if P_FAMILY_FLYMON
 SINGLE_ANIMATION(Flymon);
-SINGLE_ANIMATION(Shelgon);
+SINGLE_ANIMATION(Frigimon);
 SINGLE_ANIMATION(Salamence);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(SalamenceMega);
