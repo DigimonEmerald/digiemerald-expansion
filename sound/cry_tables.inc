@@ -1009,7 +1009,7 @@ gCryTable::
 .endif @ P_FAMILY_EYESMON_SCATTERMODE
 .if P_FAMILY_FIRAMON == TRUE
 	cry Cry_Firamon
-	cry Cry_Huntail
+	cry Cry_Fladramon
 	cry Cry_Gorebyss
 .endif @ P_FAMILY_FIRAMON
 .if P_FAMILY_RELICANTH == TRUE
@@ -3435,7 +3435,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_EYESMON_SCATTERMODE
 .if P_FAMILY_FIRAMON == TRUE
 	cry_reverse Cry_Firamon
-	cry_reverse Cry_Huntail
+	cry_reverse Cry_Fladramon
 	cry_reverse Cry_Gorebyss
 .endif @ P_FAMILY_FIRAMON
 .if P_FAMILY_RELICANTH == TRUE

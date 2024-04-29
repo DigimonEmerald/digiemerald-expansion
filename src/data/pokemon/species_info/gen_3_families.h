@@ -8164,13 +8164,13 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Firamon)
         .levelUpLearnset = sFiramonLevelUpLearnset,
         .teachableLearnset = sFiramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_DEEP_SEA_TOOTH, SPECIES_HUNTAIL},
+        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_DEEP_SEA_TOOTH, SPECIES_FLADRAMON},
                                 {EVO_TRADE_ITEM, ITEM_DEEP_SEA_SCALE, SPECIES_GOREBYSS},
-                                {EVO_ITEM, ITEM_DEEP_SEA_TOOTH, SPECIES_HUNTAIL},
+                                {EVO_ITEM, ITEM_DEEP_SEA_TOOTH, SPECIES_FLADRAMON},
                                 {EVO_ITEM, ITEM_DEEP_SEA_SCALE, SPECIES_GOREBYSS}),
     },
 
-    [SPECIES_HUNTAIL] =
+    [SPECIES_FLADRAMON] =
     {
         .baseHP        = 55,
         .baseAttack    = 104,
@@ -8191,9 +8191,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_WATER_VEIL },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Huntail"),
-        .cryId = CRY_HUNTAIL,
-        .natDexNum = NATIONAL_DEX_HUNTAIL,
+        .speciesName = _("Fladramon"),
+        .cryId = CRY_FLADRAMON,
+        .natDexNum = NATIONAL_DEX_FLADRAMON,
         .categoryName = _("Deep Sea"),
         .height = 17,
         .weight = 270,
@@ -8206,22 +8206,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 1,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Huntail,
+        .frontPic = gMonFrontPic_Fladramon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_Huntail,
+        .frontAnimFrames = sAnims_Fladramon,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Huntail,
+        .backPic = gMonBackPic_Fladramon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Huntail,
-        .shinyPalette = gMonShinyPalette_Huntail,
-        .iconSprite = gMonIcon_Huntail,
+        .palette = gMonPalette_Fladramon,
+        .shinyPalette = gMonShinyPalette_Fladramon,
+        .iconSprite = gMonIcon_Fladramon,
         .iconPalIndex = 0,
-        FOOTPRINT(Huntail)
-        .levelUpLearnset = sHuntailLevelUpLearnset,
-        .teachableLearnset = sHuntailTeachableLearnset,
+        FOOTPRINT(Fladramon)
+        .levelUpLearnset = sFladramonLevelUpLearnset,
+        .teachableLearnset = sFladramonTeachableLearnset,
     },
 
     [SPECIES_GOREBYSS] =

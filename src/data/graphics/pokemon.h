@@ -5334,13 +5334,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Firamon[] = INCBIN_U8("graphics/pokemon/firamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Huntail[] = INCBIN_U32("graphics/pokemon/huntail/anim_front.4bpp.lz");
-    const u32 gMonPalette_Huntail[] = INCBIN_U32("graphics/pokemon/huntail/normal.gbapal.lz");
-    const u32 gMonBackPic_Huntail[] = INCBIN_U32("graphics/pokemon/huntail/back.4bpp.lz");
-    const u32 gMonShinyPalette_Huntail[] = INCBIN_U32("graphics/pokemon/huntail/shiny.gbapal.lz");
-    const u8 gMonIcon_Huntail[] = INCBIN_U8("graphics/pokemon/huntail/icon.4bpp");
+    const u32 gMonFrontPic_Fladramon[] = INCBIN_U32("graphics/pokemon/fladramon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Fladramon[] = INCBIN_U32("graphics/pokemon/fladramon/normal.gbapal.lz");
+    const u32 gMonBackPic_Fladramon[] = INCBIN_U32("graphics/pokemon/fladramon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Fladramon[] = INCBIN_U32("graphics/pokemon/fladramon/shiny.gbapal.lz");
+    const u8 gMonIcon_Fladramon[] = INCBIN_U8("graphics/pokemon/fladramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Huntail[] = INCBIN_U8("graphics/pokemon/huntail/footprint.1bpp");
+    const u8 gMonFootprint_Fladramon[] = INCBIN_U8("graphics/pokemon/fladramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Gorebyss[] = INCBIN_U32("graphics/pokemon/gorebyss/anim_front.4bpp.lz");

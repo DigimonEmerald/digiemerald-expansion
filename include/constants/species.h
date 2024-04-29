@@ -369,7 +369,7 @@
 #define SPECIES_FANGMON                                  364
 #define SPECIES_FILMON                                 365
 #define SPECIES_FIRAMON                                366
-#define SPECIES_HUNTAIL                                 367
+#define SPECIES_FLADRAMON                                 367
 #define SPECIES_GOREBYSS                                368
 #define SPECIES_RELICANTH                               369
 #define SPECIES_LUVDISC                                 370
