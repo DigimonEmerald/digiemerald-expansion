@@ -5105,34 +5105,34 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonBackPic_DokugumonF[] = INCBIN_U32("graphics/pokemon/dokugumon/backf.4bpp.lz");
 #endif //P_FAMILY_DOGGYMON
 
-#if P_FAMILY_CASTFORM
-    const u32 gMonFrontPic_CastformNormal[] = INCBIN_U32("graphics/pokemon/castform/anim_front.4bpp.lz");
-    const u32 gMonPalette_CastformNormal[] = INCBIN_U32("graphics/pokemon/castform/normal.gbapal.lz");
-    const u32 gMonBackPic_CastformNormal[] = INCBIN_U32("graphics/pokemon/castform/back.4bpp.lz");
-    const u32 gMonShinyPalette_CastformNormal[] = INCBIN_U32("graphics/pokemon/castform/shiny.gbapal.lz");
-    const u8 gMonIcon_CastformNormal[] = INCBIN_U8("graphics/pokemon/castform/icon.4bpp");
+#if P_FAMILY_DOLPHMON
+    const u32 gMonFrontPic_DolphmonNormal[] = INCBIN_U32("graphics/pokemon/dolphmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_DolphmonNormal[] = INCBIN_U32("graphics/pokemon/dolphmon/normal.gbapal.lz");
+    const u32 gMonBackPic_DolphmonNormal[] = INCBIN_U32("graphics/pokemon/dolphmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_DolphmonNormal[] = INCBIN_U32("graphics/pokemon/dolphmon/shiny.gbapal.lz");
+    const u8 gMonIcon_DolphmonNormal[] = INCBIN_U8("graphics/pokemon/dolphmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Castform[] = INCBIN_U8("graphics/pokemon/castform/footprint.1bpp");
+    const u8 gMonFootprint_Dolphmon[] = INCBIN_U8("graphics/pokemon/dolphmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_CastformSunny[] = INCBIN_U32("graphics/pokemon/castform/sunny/anim_front.4bpp.lz");
-    const u32 gMonPalette_CastformSunny[] = INCBIN_U32("graphics/pokemon/castform/sunny/normal.gbapal.lz");
-    const u32 gMonBackPic_CastformSunny[] = INCBIN_U32("graphics/pokemon/castform/sunny/back.4bpp.lz");
-    const u32 gMonShinyPalette_CastformSunny[] = INCBIN_U32("graphics/pokemon/castform/sunny/shiny.gbapal.lz");
-    const u8 gMonIcon_CastformSunny[] = INCBIN_U8("graphics/pokemon/castform/sunny/icon.4bpp");
+    const u32 gMonFrontPic_DolphmonSunny[] = INCBIN_U32("graphics/pokemon/dolphmon/sunny/anim_front.4bpp.lz");
+    const u32 gMonPalette_DolphmonSunny[] = INCBIN_U32("graphics/pokemon/dolphmon/sunny/normal.gbapal.lz");
+    const u32 gMonBackPic_DolphmonSunny[] = INCBIN_U32("graphics/pokemon/dolphmon/sunny/back.4bpp.lz");
+    const u32 gMonShinyPalette_DolphmonSunny[] = INCBIN_U32("graphics/pokemon/dolphmon/sunny/shiny.gbapal.lz");
+    const u8 gMonIcon_DolphmonSunny[] = INCBIN_U8("graphics/pokemon/dolphmon/sunny/icon.4bpp");
 
-    const u32 gMonFrontPic_CastformRainy[] = INCBIN_U32("graphics/pokemon/castform/rainy/anim_front.4bpp.lz");
-    const u32 gMonPalette_CastformRainy[] = INCBIN_U32("graphics/pokemon/castform/rainy/normal.gbapal.lz");
-    const u32 gMonBackPic_CastformRainy[] = INCBIN_U32("graphics/pokemon/castform/rainy/back.4bpp.lz");
-    const u32 gMonShinyPalette_CastformRainy[] = INCBIN_U32("graphics/pokemon/castform/rainy/shiny.gbapal.lz");
-    const u8 gMonIcon_CastformRainy[] = INCBIN_U8("graphics/pokemon/castform/rainy/icon.4bpp");
+    const u32 gMonFrontPic_DolphmonRainy[] = INCBIN_U32("graphics/pokemon/dolphmon/rainy/anim_front.4bpp.lz");
+    const u32 gMonPalette_DolphmonRainy[] = INCBIN_U32("graphics/pokemon/dolphmon/rainy/normal.gbapal.lz");
+    const u32 gMonBackPic_DolphmonRainy[] = INCBIN_U32("graphics/pokemon/dolphmon/rainy/back.4bpp.lz");
+    const u32 gMonShinyPalette_DolphmonRainy[] = INCBIN_U32("graphics/pokemon/dolphmon/rainy/shiny.gbapal.lz");
+    const u8 gMonIcon_DolphmonRainy[] = INCBIN_U8("graphics/pokemon/dolphmon/rainy/icon.4bpp");
 
-    const u32 gMonFrontPic_CastformSnowy[] = INCBIN_U32("graphics/pokemon/castform/snowy/anim_front.4bpp.lz");
-    const u32 gMonPalette_CastformSnowy[] = INCBIN_U32("graphics/pokemon/castform/snowy/normal.gbapal.lz");
-    const u32 gMonBackPic_CastformSnowy[] = INCBIN_U32("graphics/pokemon/castform/snowy/back.4bpp.lz");
-    const u32 gMonShinyPalette_CastformSnowy[] = INCBIN_U32("graphics/pokemon/castform/snowy/shiny.gbapal.lz");
-    const u8 gMonIcon_CastformSnowy[] = INCBIN_U8("graphics/pokemon/castform/snowy/icon.4bpp");
-#endif //P_FAMILY_CASTFORM
+    const u32 gMonFrontPic_DolphmonSnowy[] = INCBIN_U32("graphics/pokemon/dolphmon/snowy/anim_front.4bpp.lz");
+    const u32 gMonPalette_DolphmonSnowy[] = INCBIN_U32("graphics/pokemon/dolphmon/snowy/normal.gbapal.lz");
+    const u32 gMonBackPic_DolphmonSnowy[] = INCBIN_U32("graphics/pokemon/dolphmon/snowy/back.4bpp.lz");
+    const u32 gMonShinyPalette_DolphmonSnowy[] = INCBIN_U32("graphics/pokemon/dolphmon/snowy/shiny.gbapal.lz");
+    const u8 gMonIcon_DolphmonSnowy[] = INCBIN_U8("graphics/pokemon/dolphmon/snowy/icon.4bpp");
+#endif //P_FAMILY_DOLPHMON
 
 #if P_FAMILY_KECLEON
     const u32 gMonFrontPic_Kecleon[] = INCBIN_U32("graphics/pokemon/kecleon/anim_front.4bpp.lz");

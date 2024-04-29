@@ -2626,11 +2626,11 @@ Cry_Dokugumon::
 	.incbin "sound/direct_sound_samples/cries/dokugumon.bin"
 .endif @ P_FAMILY_DOGGYMON
 
-.if P_FAMILY_CASTFORM == TRUE
+.if P_FAMILY_DOLPHMON == TRUE
 	.align 2
-Cry_Castform::
-	.incbin "sound/direct_sound_samples/cries/castform.bin"
-.endif @ P_FAMILY_CASTFORM
+Cry_Dolphmon::
+	.incbin "sound/direct_sound_samples/cries/dolphmon.bin"
+.endif @ P_FAMILY_DOLPHMON
 
 .if P_FAMILY_KECLEON == TRUE
 	.align 2

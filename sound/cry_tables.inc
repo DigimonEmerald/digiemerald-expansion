@@ -957,9 +957,9 @@ gCryTable::
 	cry Cry_Doggymon
 	cry Cry_Dokugumon
 .endif @ P_FAMILY_DOGGYMON
-.if P_FAMILY_CASTFORM == TRUE
-	cry Cry_Castform
-.endif @ P_FAMILY_CASTFORM
+.if P_FAMILY_DOLPHMON == TRUE
+	cry Cry_Dolphmon
+.endif @ P_FAMILY_DOLPHMON
 .if P_FAMILY_KECLEON == TRUE
 	cry Cry_Kecleon
 .endif @ P_FAMILY_KECLEON
@@ -3383,9 +3383,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Doggymon
 	cry_reverse Cry_Dokugumon
 .endif @ P_FAMILY_DOGGYMON
-.if P_FAMILY_CASTFORM == TRUE
-	cry_reverse Cry_Castform
-.endif @ P_FAMILY_CASTFORM
+.if P_FAMILY_DOLPHMON == TRUE
+	cry_reverse Cry_Dolphmon
+.endif @ P_FAMILY_DOLPHMON
 .if P_FAMILY_KECLEON == TRUE
 	cry_reverse Cry_Kecleon
 .endif @ P_FAMILY_KECLEON

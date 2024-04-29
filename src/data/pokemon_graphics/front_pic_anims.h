@@ -4690,8 +4690,8 @@ static const union AnimCmd sAnim_Dokugumon_1[] =
 };
 #endif //P_FAMILY_DOGGYMON
 
-#if P_FAMILY_CASTFORM
-static const union AnimCmd sAnim_CastformNormal_1[] =
+#if P_FAMILY_DOLPHMON
+static const union AnimCmd sAnim_DolphmonNormal_1[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 24),
@@ -4701,7 +4701,7 @@ static const union AnimCmd sAnim_CastformNormal_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_CastformSunny_1[] =
+static const union AnimCmd sAnim_DolphmonSunny_1[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 12),
@@ -4713,7 +4713,7 @@ static const union AnimCmd sAnim_CastformSunny_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_CastformRainy_1[] =
+static const union AnimCmd sAnim_DolphmonRainy_1[] =
 {
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_FRAME(1, 22),
@@ -4723,7 +4723,7 @@ static const union AnimCmd sAnim_CastformRainy_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_CastformSnowy_1[] =
+static const union AnimCmd sAnim_DolphmonSnowy_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 12),
@@ -4732,7 +4732,7 @@ static const union AnimCmd sAnim_CastformSnowy_1[] =
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_CASTFORM
+#endif //P_FAMILY_DOLPHMON
 
 #if P_FAMILY_KECLEON
 static const union AnimCmd sAnim_Kecleon_1[] =
@@ -11255,12 +11255,12 @@ SINGLE_ANIMATION(Dobermon_x);
 SINGLE_ANIMATION(Doggymon);
 SINGLE_ANIMATION(Dokugumon);
 #endif //P_FAMILY_DOGGYMON
-#if P_FAMILY_CASTFORM
-SINGLE_ANIMATION(CastformNormal);
-SINGLE_ANIMATION(CastformSunny);
-SINGLE_ANIMATION(CastformRainy);
-SINGLE_ANIMATION(CastformSnowy);
-#endif //P_FAMILY_CASTFORM
+#if P_FAMILY_DOLPHMON
+SINGLE_ANIMATION(DolphmonNormal);
+SINGLE_ANIMATION(DolphmonSunny);
+SINGLE_ANIMATION(DolphmonRainy);
+SINGLE_ANIMATION(DolphmonSnowy);
+#endif //P_FAMILY_DOLPHMON
 #if P_FAMILY_KECLEON
 SINGLE_ANIMATION(Kecleon);
 #endif //P_FAMILY_KECLEON

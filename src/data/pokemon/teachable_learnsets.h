@@ -16386,8 +16386,8 @@ static const u16 sDokugumonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DOGGYMON
 
-#if P_FAMILY_CASTFORM
-static const u16 sCastformTeachableLearnset[] = {
+#if P_FAMILY_DOLPHMON
+static const u16 sDolphmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DOUBLE_TEAM,
@@ -16423,7 +16423,7 @@ static const u16 sCastformTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CASTFORM
+#endif //P_FAMILY_DOLPHMON
 
 #if P_FAMILY_KECLEON
 static const u16 sKecleonTeachableLearnset[] = {

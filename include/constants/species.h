@@ -352,8 +352,8 @@
 #define SPECIES_DOBERMON_X                                 348
 #define SPECIES_DOGGYMON                                  349
 #define SPECIES_DOKUGUMON                                 350
-#define SPECIES_CASTFORM                                SPECIES_CASTFORM_NORMAL
-#define SPECIES_CASTFORM_NORMAL                         351
+#define SPECIES_DOLPHMON                                SPECIES_DOLPHMON_NORMAL
+#define SPECIES_DOLPHMON_NORMAL                         351
 #define SPECIES_KECLEON                                 352
 #define SPECIES_SHUPPET                                 353
 #define SPECIES_BANETTE                                 354
@@ -1114,9 +1114,9 @@
 #define SPECIES_LOPMON_Z                                 1048
 #define SPECIES_LOPMON_EMARK                             1049
 #define SPECIES_LOPMON_QMARK                             1050
-#define SPECIES_CASTFORM_SUNNY                          1051
-#define SPECIES_CASTFORM_RAINY                          1052
-#define SPECIES_CASTFORM_SNOWY                          1053
+#define SPECIES_DOLPHMON_SUNNY                          1051
+#define SPECIES_DOLPHMON_RAINY                          1052
+#define SPECIES_DOLPHMON_SNOWY                          1053
 #define SPECIES_DEOXYS_ATTACK                           1054
 #define SPECIES_DEOXYS_DEFENSE                          1055
 #define SPECIES_DEOXYS_SPEED                            1056

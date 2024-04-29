@@ -869,15 +869,15 @@ static const u16 sDarmailmonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_DARLIZAMON
 
-#if P_FAMILY_CASTFORM
-static const u16 sCastformFormSpeciesIdTable[] = {
-    SPECIES_CASTFORM_NORMAL,
-    SPECIES_CASTFORM_SUNNY,
-    SPECIES_CASTFORM_RAINY,
-    SPECIES_CASTFORM_SNOWY,
+#if P_FAMILY_DOLPHMON
+static const u16 sDolphmonFormSpeciesIdTable[] = {
+    SPECIES_DOLPHMON_NORMAL,
+    SPECIES_DOLPHMON_SUNNY,
+    SPECIES_DOLPHMON_RAINY,
+    SPECIES_DOLPHMON_SNOWY,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_CASTFORM
+#endif //P_FAMILY_DOLPHMON
 
 #if P_FAMILY_SHUPPET
 static const u16 sBanetteFormSpeciesIdTable[] = {

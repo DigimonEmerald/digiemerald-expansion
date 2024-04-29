@@ -2815,8 +2815,8 @@ const u16 gEggMoves[] = {
         MOVE_CAPTIVATE),
 #endif //P_FAMILY_DOGGYMON
 
-#if P_FAMILY_CASTFORM
-    egg_moves(CASTFORM,
+#if P_FAMILY_DOLPHMON
+    egg_moves(DOLPHMON,
         MOVE_FUTURE_SIGHT,
         MOVE_LUCKY_CHANT,
         MOVE_DISABLE,
@@ -2827,7 +2827,7 @@ const u16 gEggMoves[] = {
         MOVE_REFLECT_TYPE,
         MOVE_GUARD_SWAP,
         MOVE_COSMIC_POWER),
-#endif //P_FAMILY_CASTFORM
+#endif //P_FAMILY_DOLPHMON
 
 #if P_FAMILY_KECLEON
     egg_moves(KECLEON,

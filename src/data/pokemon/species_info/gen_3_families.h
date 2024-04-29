@@ -6797,8 +6797,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_DOGGYMON
 
-#if P_FAMILY_CASTFORM
-    [SPECIES_CASTFORM_NORMAL] =
+#if P_FAMILY_DOLPHMON
+    [SPECIES_DOLPHMON_NORMAL] =
     {
         .baseHP        = 70,
         .baseAttack    = 70,
@@ -6819,9 +6819,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_FORECAST, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Castform"),
-        .cryId = CRY_CASTFORM,
-        .natDexNum = NATIONAL_DEX_CASTFORM,
+        .speciesName = _("Dolphmon"),
+        .cryId = CRY_DOLPHMON,
+        .natDexNum = NATIONAL_DEX_DOLPHMON,
         .categoryName = _("Weather"),
         .height = 3,
         .weight = 8,
@@ -6834,28 +6834,28 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = -5,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_CastformNormal,
+        .frontPic = gMonFrontPic_DolphmonNormal,
         .frontPicSize = MON_COORDS_SIZE(24, 32),
         .frontPicYOffset = 17,
-        .frontAnimFrames = sAnims_CastformNormal,
+        .frontAnimFrames = sAnims_DolphmonNormal,
         .frontAnimId = ANIM_H_SLIDE_WOBBLE,
         .enemyMonElevation = 16,
-        .backPic = gMonBackPic_CastformNormal,
+        .backPic = gMonBackPic_DolphmonNormal,
         .backPicSize = MON_COORDS_SIZE(32, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_CastformNormal,
-        .shinyPalette = gMonShinyPalette_CastformNormal,
-        .iconSprite = gMonIcon_CastformNormal,
+        .palette = gMonPalette_DolphmonNormal,
+        .shinyPalette = gMonShinyPalette_DolphmonNormal,
+        .iconSprite = gMonIcon_DolphmonNormal,
         .iconPalIndex = 0,
-        FOOTPRINT(Castform)
-        .levelUpLearnset = sCastformLevelUpLearnset,
-        .teachableLearnset = sCastformTeachableLearnset,
-        .formSpeciesIdTable = sCastformFormSpeciesIdTable,
-        .formChangeTable = sCastformFormChangeTable,
+        FOOTPRINT(Dolphmon)
+        .levelUpLearnset = sDolphmonLevelUpLearnset,
+        .teachableLearnset = sDolphmonTeachableLearnset,
+        .formSpeciesIdTable = sDolphmonFormSpeciesIdTable,
+        .formChangeTable = sDolphmonFormChangeTable,
     },
 
-    [SPECIES_CASTFORM_SUNNY] =
+    [SPECIES_DOLPHMON_SUNNY] =
     {
         .baseHP        = 70,
         .baseAttack    = 70,
@@ -6876,14 +6876,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_FORECAST, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Castform"),
-        .cryId = CRY_CASTFORM,
-        .natDexNum = NATIONAL_DEX_CASTFORM,
+        .speciesName = _("Dolphmon"),
+        .cryId = CRY_DOLPHMON,
+        .natDexNum = NATIONAL_DEX_DOLPHMON,
         .categoryName = _("Weather"),
         .height = 3,
         .weight = 8,
         .description = COMPOUND_STRING(
-            "Castform takes this form on bright days.\n"
+            "Dolphmon takes this form on bright days.\n"
             "In an experiment where is was placed in\n"
             "front of a heater, it didn't change to this\n"
             "form. Its body is warm and toasty."),
@@ -6891,28 +6891,28 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = -5,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_CastformSunny,
+        .frontPic = gMonFrontPic_DolphmonSunny,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_CastformSunny,
+        .frontAnimFrames = sAnims_DolphmonSunny,
         .frontAnimId = ANIM_GROW_VIBRATE,
         .enemyMonElevation = 5,
-        .backPic = gMonBackPic_CastformSunny,
+        .backPic = gMonBackPic_DolphmonSunny,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_CastformSunny,
-        .shinyPalette = gMonShinyPalette_CastformSunny,
-        .iconSprite = gMonIcon_CastformSunny,
+        .palette = gMonPalette_DolphmonSunny,
+        .shinyPalette = gMonShinyPalette_DolphmonSunny,
+        .iconSprite = gMonIcon_DolphmonSunny,
         .iconPalIndex = 0,
-        FOOTPRINT(Castform)
-        .levelUpLearnset = sCastformLevelUpLearnset,
-        .teachableLearnset = sCastformTeachableLearnset,
-        .formSpeciesIdTable = sCastformFormSpeciesIdTable,
-        .formChangeTable = sCastformFormChangeTable,
+        FOOTPRINT(Dolphmon)
+        .levelUpLearnset = sDolphmonLevelUpLearnset,
+        .teachableLearnset = sDolphmonTeachableLearnset,
+        .formSpeciesIdTable = sDolphmonFormSpeciesIdTable,
+        .formChangeTable = sDolphmonFormChangeTable,
     },
 
-    [SPECIES_CASTFORM_RAINY] =
+    [SPECIES_DOLPHMON_RAINY] =
     {
         .baseHP        = 70,
         .baseAttack    = 70,
@@ -6933,14 +6933,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_FORECAST, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Castform"),
-        .cryId = CRY_CASTFORM,
-        .natDexNum = NATIONAL_DEX_CASTFORM,
+        .speciesName = _("Dolphmon"),
+        .cryId = CRY_DOLPHMON,
+        .natDexNum = NATIONAL_DEX_DOLPHMON,
         .categoryName = _("Weather"),
         .height = 3,
         .weight = 8,
         .description = COMPOUND_STRING(
-            "This is Castform's form while it's raining.\n"
+            "This is Dolphmon's form while it's raining.\n"
             "In an experiment where it was placed in a\n"
             "shower, it didn't change to this form. Its\n"
             "body is soft, slightly swollen with water."),
@@ -6948,28 +6948,28 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = -5,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_CastformRainy,
+        .frontPic = gMonFrontPic_DolphmonRainy,
         .frontPicSize = MON_COORDS_SIZE(32, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_CastformRainy,
+        .frontAnimFrames = sAnims_DolphmonRainy,
         .frontAnimId = ANIM_SWING_CONVEX_FAST,
         .enemyMonElevation = 5,
-        .backPic = gMonBackPic_CastformRainy,
+        .backPic = gMonBackPic_DolphmonRainy,
         .backPicSize = MON_COORDS_SIZE(40, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_CastformRainy,
-        .shinyPalette = gMonShinyPalette_CastformRainy,
-        .iconSprite = gMonIcon_CastformRainy,
+        .palette = gMonPalette_DolphmonRainy,
+        .shinyPalette = gMonShinyPalette_DolphmonRainy,
+        .iconSprite = gMonIcon_DolphmonRainy,
         .iconPalIndex = 0,
-        FOOTPRINT(Castform)
-        .levelUpLearnset = sCastformLevelUpLearnset,
-        .teachableLearnset = sCastformTeachableLearnset,
-        .formSpeciesIdTable = sCastformFormSpeciesIdTable,
-        .formChangeTable = sCastformFormChangeTable,
+        FOOTPRINT(Dolphmon)
+        .levelUpLearnset = sDolphmonLevelUpLearnset,
+        .teachableLearnset = sDolphmonTeachableLearnset,
+        .formSpeciesIdTable = sDolphmonFormSpeciesIdTable,
+        .formChangeTable = sDolphmonFormChangeTable,
     },
 
-    [SPECIES_CASTFORM_SNOWY] =
+    [SPECIES_DOLPHMON_SNOWY] =
     {
         .baseHP        = 70,
         .baseAttack    = 70,
@@ -6990,14 +6990,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_FORECAST, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Castform"),
-        .cryId = CRY_CASTFORM,
-        .natDexNum = NATIONAL_DEX_CASTFORM,
+        .speciesName = _("Dolphmon"),
+        .cryId = CRY_DOLPHMON,
+        .natDexNum = NATIONAL_DEX_DOLPHMON,
         .categoryName = _("Weather"),
         .height = 3,
         .weight = 8,
         .description = COMPOUND_STRING(
-            "This is Castform's form in a hailstorm.\n"
+            "This is Dolphmon's form in a hailstorm.\n"
             "In an experiment where it was placed\n"
             "in a freezer, it didn't change to this form.\n"
             "Its cold skin is as smooth as ice."),
@@ -7005,27 +7005,27 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = -5,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_CastformSnowy,
+        .frontPic = gMonFrontPic_DolphmonSnowy,
         .frontPicSize = MON_COORDS_SIZE(40, 56),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_CastformSnowy,
+        .frontAnimFrames = sAnims_DolphmonSnowy,
         .frontAnimId = ANIM_V_STRETCH,
         .enemyMonElevation = 5,
-        .backPic = gMonBackPic_CastformSnowy,
+        .backPic = gMonBackPic_DolphmonSnowy,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_CastformSnowy,
-        .shinyPalette = gMonShinyPalette_CastformSnowy,
-        .iconSprite = gMonIcon_CastformSnowy,
+        .palette = gMonPalette_DolphmonSnowy,
+        .shinyPalette = gMonShinyPalette_DolphmonSnowy,
+        .iconSprite = gMonIcon_DolphmonSnowy,
         .iconPalIndex = 0,
-        FOOTPRINT(Castform)
-        .levelUpLearnset = sCastformLevelUpLearnset,
-        .teachableLearnset = sCastformTeachableLearnset,
-        .formSpeciesIdTable = sCastformFormSpeciesIdTable,
-        .formChangeTable = sCastformFormChangeTable,
+        FOOTPRINT(Dolphmon)
+        .levelUpLearnset = sDolphmonLevelUpLearnset,
+        .teachableLearnset = sDolphmonTeachableLearnset,
+        .formSpeciesIdTable = sDolphmonFormSpeciesIdTable,
+        .formChangeTable = sDolphmonFormChangeTable,
     },
-#endif //P_FAMILY_CASTFORM
+#endif //P_FAMILY_DOLPHMON
 
 #if P_FAMILY_KECLEON
     [SPECIES_KECLEON] =
