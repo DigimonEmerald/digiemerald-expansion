@@ -5232,14 +5232,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_LATIOSITE] =
+    [ITEM_GATOMONITE] =
     {
-        .name = _("Latiosite"),
+        .name = _("Gatomonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Latios to Mega\n"
+            "Gatomon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -6305,13 +6305,13 @@ const struct Item gItemsInfo[] =
         .holdEffectParam = B_SOUL_DEW_BOOST >= GEN_7 ? 20 : 50,
         .description = COMPOUND_STRING(
         #if B_SOUL_DEW_BOOST >= GEN_7
-            "Powers up Latios' &\n"
+            "Powers up Gatomon' &\n"
             "Garurumon_x' Psychic and\n"
             "Dragon-type moves."),
         #else
             "Hold item: raises\n"
             "Sp. Atk & Sp. Def of\n"
-            "Latios & Garurumon_x."),
+            "Gatomon & Garurumon_x."),
         #endif
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

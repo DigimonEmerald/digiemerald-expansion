@@ -1049,12 +1049,12 @@ gCryTable::
 	cry Cry_Garurumon_xMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_GARURUMON_X
-.if P_FAMILY_LATIOS == TRUE
-	cry Cry_Latios
+.if P_FAMILY_GATOMON == TRUE
+	cry Cry_Gatomon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_LatiosMega
+	cry Cry_GatomonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_LATIOS
+.endif @ P_FAMILY_GATOMON
 .if P_FAMILY_KYOGRE == TRUE
 	cry Cry_Kyogre
 .if P_PRIMAL_REVERSIONS == TRUE
@@ -3475,12 +3475,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Garurumon_xMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_GARURUMON_X
-.if P_FAMILY_LATIOS == TRUE
-	cry_reverse Cry_Latios
+.if P_FAMILY_GATOMON == TRUE
+	cry_reverse Cry_Gatomon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_LatiosMega
+	cry_reverse Cry_GatomonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_LATIOS
+.endif @ P_FAMILY_GATOMON
 .if P_FAMILY_KYOGRE == TRUE
 	cry_reverse Cry_Kyogre
 .if P_PRIMAL_REVERSIONS == TRUE

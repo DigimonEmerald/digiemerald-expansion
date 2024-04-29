@@ -9129,7 +9129,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 18,
         .weight = 520,
         .description = COMPOUND_STRING(
-            "Its body is smaller than Mega Latios's\n"
+            "Its body is smaller than Mega Gatomon's\n"
             "body. It is more agile and can make very\n"
             "sharp turns. When it Mega Evolves, its\n"
             "defensive strength grows substantially."),
@@ -9162,8 +9162,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_GARURUMON_X
 
-#if P_FAMILY_LATIOS
-    [SPECIES_LATIOS] =
+#if P_FAMILY_GATOMON
+    [SPECIES_GATOMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 90,
@@ -9188,9 +9188,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Latios"),
-        .cryId = CRY_LATIOS,
-        .natDexNum = NATIONAL_DEX_LATIOS,
+        .speciesName = _("Gatomon"),
+        .cryId = CRY_GATOMON,
+        .natDexNum = NATIONAL_DEX_GATOMON,
         .categoryName = _("Eon"),
         .height = 20,
         .weight = 600,
@@ -9203,30 +9203,30 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 294,
         .trainerOffset = 3,
-        .frontPic = gMonFrontPic_Latios,
+        .frontPic = gMonFrontPic_Gatomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Latios,
+        .frontAnimFrames = sAnims_Gatomon,
         .frontAnimId = ANIM_CIRCLE_C_CLOCKWISE_SLOW,
         .enemyMonElevation = 6,
-        .backPic = gMonBackPic_Latios,
+        .backPic = gMonBackPic_Gatomon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Latios,
-        .shinyPalette = gMonShinyPalette_Latios,
-        .iconSprite = gMonIcon_Latios,
+        .palette = gMonPalette_Gatomon,
+        .shinyPalette = gMonShinyPalette_Gatomon,
+        .iconSprite = gMonIcon_Gatomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Latios)
+        FOOTPRINT(Gatomon)
         .isLegendary = TRUE,
-        .levelUpLearnset = sLatiosLevelUpLearnset,
-        .teachableLearnset = sLatiosTeachableLearnset,
-        .formSpeciesIdTable = sLatiosFormSpeciesIdTable,
-        .formChangeTable = sLatiosFormChangeTable,
+        .levelUpLearnset = sGatomonLevelUpLearnset,
+        .teachableLearnset = sGatomonTeachableLearnset,
+        .formSpeciesIdTable = sGatomonFormSpeciesIdTable,
+        .formChangeTable = sGatomonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_LATIOS_MEGA] =
+    [SPECIES_GATOMON_MEGA] =
     {
         .baseHP        = 80,
         .baseAttack    = 130,
@@ -9245,9 +9245,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Latios"),
-        .cryId = CRY_LATIOS_MEGA,
-        .natDexNum = NATIONAL_DEX_LATIOS,
+        .speciesName = _("Gatomon"),
+        .cryId = CRY_GATOMON_MEGA,
+        .natDexNum = NATIONAL_DEX_GATOMON,
         .categoryName = _("Eon"),
         .height = 23,
         .weight = 700,
@@ -9260,30 +9260,30 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 294,
         .trainerOffset = 3,
-        .frontPic = gMonFrontPic_LatiosMega,
+        .frontPic = gMonFrontPic_GatomonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_LatiosMega,
+        .frontAnimFrames = sAnims_GatomonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 8,
-        .backPic = gMonBackPic_LatiosMega,
+        .backPic = gMonBackPic_GatomonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_LatiosMega,
-        .shinyPalette = gMonShinyPalette_LatiosMega,
-        .iconSprite = gMonIcon_LatiosMega,
+        .palette = gMonPalette_GatomonMega,
+        .shinyPalette = gMonShinyPalette_GatomonMega,
+        .iconSprite = gMonIcon_GatomonMega,
         .iconPalIndex = 2,
-        FOOTPRINT(Latios)
+        FOOTPRINT(Gatomon)
         .isLegendary = TRUE,
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sLatiosLevelUpLearnset,
-        .teachableLearnset = sLatiosTeachableLearnset,
-        .formSpeciesIdTable = sLatiosFormSpeciesIdTable,
-        .formChangeTable = sLatiosFormChangeTable,
+        .levelUpLearnset = sGatomonLevelUpLearnset,
+        .teachableLearnset = sGatomonTeachableLearnset,
+        .formSpeciesIdTable = sGatomonFormSpeciesIdTable,
+        .formChangeTable = sGatomonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_LATIOS
+#endif //P_FAMILY_GATOMON
 
 #if P_FAMILY_KYOGRE
     [SPECIES_KYOGRE] =

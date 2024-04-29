@@ -2831,17 +2831,17 @@ Cry_Garurumon_xMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_GARURUMON_X
 
-.if P_FAMILY_LATIOS == TRUE
+.if P_FAMILY_GATOMON == TRUE
 	.align 2
-Cry_Latios::
-	.incbin "sound/direct_sound_samples/cries/latios.bin"
+Cry_Gatomon::
+	.incbin "sound/direct_sound_samples/cries/gatomon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_LatiosMega::
-	.incbin "sound/direct_sound_samples/cries/latios_mega.bin"
+Cry_GatomonMega::
+	.incbin "sound/direct_sound_samples/cries/gatomon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_LATIOS
+.endif @ P_FAMILY_GATOMON
 
 .if P_FAMILY_KYOGRE == TRUE
 	.align 2

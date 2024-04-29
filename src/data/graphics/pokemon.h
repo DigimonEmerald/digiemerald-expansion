@@ -5504,24 +5504,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_GARURUMON_X
 
-#if P_FAMILY_LATIOS
-    const u32 gMonFrontPic_Latios[] = INCBIN_U32("graphics/pokemon/latios/anim_front.4bpp.lz");
-    const u32 gMonPalette_Latios[] = INCBIN_U32("graphics/pokemon/latios/normal.gbapal.lz");
-    const u32 gMonBackPic_Latios[] = INCBIN_U32("graphics/pokemon/latios/back.4bpp.lz");
-    const u32 gMonShinyPalette_Latios[] = INCBIN_U32("graphics/pokemon/latios/shiny.gbapal.lz");
-    const u8 gMonIcon_Latios[] = INCBIN_U8("graphics/pokemon/latios/icon.4bpp");
+#if P_FAMILY_GATOMON
+    const u32 gMonFrontPic_Gatomon[] = INCBIN_U32("graphics/pokemon/gatomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gatomon[] = INCBIN_U32("graphics/pokemon/gatomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Gatomon[] = INCBIN_U32("graphics/pokemon/gatomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gatomon[] = INCBIN_U32("graphics/pokemon/gatomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Gatomon[] = INCBIN_U8("graphics/pokemon/gatomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Latios[] = INCBIN_U8("graphics/pokemon/latios/footprint.1bpp");
+    const u8 gMonFootprint_Gatomon[] = INCBIN_U8("graphics/pokemon/gatomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_LatiosMega[] = INCBIN_U32("graphics/pokemon/latios/mega/front.4bpp.lz");
-    const u32 gMonPalette_LatiosMega[] = INCBIN_U32("graphics/pokemon/latios/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_LatiosMega[] = INCBIN_U32("graphics/pokemon/latios/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_LatiosMega[] = INCBIN_U32("graphics/pokemon/latios/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_LatiosMega[] = INCBIN_U8("graphics/pokemon/latios/mega/icon.4bpp");
+    const u32 gMonFrontPic_GatomonMega[] = INCBIN_U32("graphics/pokemon/gatomon/mega/front.4bpp.lz");
+    const u32 gMonPalette_GatomonMega[] = INCBIN_U32("graphics/pokemon/gatomon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_GatomonMega[] = INCBIN_U32("graphics/pokemon/gatomon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_GatomonMega[] = INCBIN_U32("graphics/pokemon/gatomon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_GatomonMega[] = INCBIN_U8("graphics/pokemon/gatomon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_LATIOS
+#endif //P_FAMILY_GATOMON
 
 #if P_FAMILY_KYOGRE
     const u32 gMonFrontPic_Kyogre[] = INCBIN_U32("graphics/pokemon/kyogre/anim_front.4bpp.lz");

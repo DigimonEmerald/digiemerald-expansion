@@ -383,7 +383,7 @@
 #define SPECIES_GARGOYLMON                                  378
 #define SPECIES_GARURUMON                               379
 #define SPECIES_GARURUMON_X                                  380
-#define SPECIES_LATIOS                                  381
+#define SPECIES_GATOMON                                  381
 #define SPECIES_KYOGRE                                  382
 #define SPECIES_GROUDON                                 383
 #define SPECIES_RAYQUAZA                                384
@@ -1003,7 +1003,7 @@
 #define SPECIES_FROGMON_MEGA                          942
 #define SPECIES_GAOGAMON_MEGA                          943
 #define SPECIES_GARURUMON_X_MEGA                             944
-#define SPECIES_LATIOS_MEGA                             945
+#define SPECIES_GATOMON_MEGA                             945
 #define SPECIES_LOPUNNY_MEGA                            946
 #define SPECIES_GARCHOMP_MEGA                           947
 #define SPECIES_LUCARIO_MEGA                            948

@@ -5125,8 +5125,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Garurumon_xMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_GARURUMON_X
 
-#if P_FAMILY_LATIOS
-static const union AnimCmd sAnim_Latios_1[] =
+#if P_FAMILY_GATOMON
+static const union AnimCmd sAnim_Gatomon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -5137,9 +5137,9 @@ static const union AnimCmd sAnim_Latios_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(LatiosMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(GatomonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_LATIOS
+#endif //P_FAMILY_GATOMON
 
 #if P_FAMILY_KYOGRE
 static const union AnimCmd sAnim_Kyogre_1[] =
@@ -11350,12 +11350,12 @@ SINGLE_ANIMATION(Garurumon_x);
 SINGLE_ANIMATION(Garurumon_xMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_GARURUMON_X
-#if P_FAMILY_LATIOS
-SINGLE_ANIMATION(Latios);
+#if P_FAMILY_GATOMON
+SINGLE_ANIMATION(Gatomon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(LatiosMega);
+SINGLE_ANIMATION(GatomonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_LATIOS
+#endif //P_FAMILY_GATOMON
 #if P_FAMILY_KYOGRE
 SINGLE_ANIMATION(Kyogre);
 #if P_PRIMAL_REVERSIONS

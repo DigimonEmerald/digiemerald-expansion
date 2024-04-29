@@ -17622,8 +17622,8 @@ static const u16 sGarurumon_xTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GARURUMON_X
 
-#if P_FAMILY_LATIOS
-static const u16 sLatiosTeachableLearnset[] = {
+#if P_FAMILY_GATOMON
+static const u16 sGatomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
@@ -17672,7 +17672,7 @@ static const u16 sLatiosTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_LATIOS
+#endif //P_FAMILY_GATOMON
 
 #if P_FAMILY_KYOGRE
 static const u16 sKyogreTeachableLearnset[] = {
