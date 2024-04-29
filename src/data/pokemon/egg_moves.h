@@ -2488,7 +2488,7 @@ const u16 gEggMoves[] = {
         MOVE_TEARFUL_LOOK),
 #endif //P_FAMILY_BUCCHIEMON_RED
 
-#if P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
+#if P_FAMILY_BUCCHIEMON_GREEN_BULKMON
     egg_moves(BUCCHIEMON_GREEN,
         MOVE_BATON_PASS,
         MOVE_SILVER_WIND,
@@ -2499,7 +2499,7 @@ const u16 gEggMoves[] = {
         MOVE_SEISMIC_TOSS,
         MOVE_LUNGE),
 
-    egg_moves(ILLUMISE,
+    egg_moves(BULKMON,
         MOVE_BATON_PASS,
         MOVE_SILVER_WIND,
         MOVE_GROWTH,
@@ -2509,7 +2509,7 @@ const u16 gEggMoves[] = {
         MOVE_FAKE_TEARS,
         MOVE_CONFUSE_RAY,
         MOVE_AROMATHERAPY),
-#endif //P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
+#endif //P_FAMILY_BUCCHIEMON_GREEN_BULKMON
 
 #if P_FAMILY_ROSELIA
 #if P_GEN_4_CROSS_EVOS

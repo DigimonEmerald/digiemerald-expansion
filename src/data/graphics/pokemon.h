@@ -4650,7 +4650,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_BUCCHIEMON_RED
 
-#if P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
+#if P_FAMILY_BUCCHIEMON_GREEN_BULKMON
     const u32 gMonFrontPic_Bucchiemon_green[] = INCBIN_U32("graphics/pokemon/bucchiemon_green/anim_front.4bpp.lz");
     const u32 gMonPalette_Bucchiemon_green[] = INCBIN_U32("graphics/pokemon/bucchiemon_green/normal.gbapal.lz");
     const u32 gMonBackPic_Bucchiemon_green[] = INCBIN_U32("graphics/pokemon/bucchiemon_green/back.4bpp.lz");
@@ -4660,15 +4660,15 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Bucchiemon_green[] = INCBIN_U8("graphics/pokemon/bucchiemon_green/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Illumise[] = INCBIN_U32("graphics/pokemon/illumise/anim_front.4bpp.lz");
-    const u32 gMonPalette_Illumise[] = INCBIN_U32("graphics/pokemon/illumise/normal.gbapal.lz");
-    const u32 gMonBackPic_Illumise[] = INCBIN_U32("graphics/pokemon/illumise/back.4bpp.lz");
-    const u32 gMonShinyPalette_Illumise[] = INCBIN_U32("graphics/pokemon/illumise/shiny.gbapal.lz");
-    const u8 gMonIcon_Illumise[] = INCBIN_U8("graphics/pokemon/illumise/icon.4bpp");
+    const u32 gMonFrontPic_Bulkmon[] = INCBIN_U32("graphics/pokemon/bulkmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Bulkmon[] = INCBIN_U32("graphics/pokemon/bulkmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Bulkmon[] = INCBIN_U32("graphics/pokemon/bulkmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Bulkmon[] = INCBIN_U32("graphics/pokemon/bulkmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Bulkmon[] = INCBIN_U8("graphics/pokemon/bulkmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Illumise[] = INCBIN_U8("graphics/pokemon/illumise/footprint.1bpp");
+    const u8 gMonFootprint_Bulkmon[] = INCBIN_U8("graphics/pokemon/bulkmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
+#endif //P_FAMILY_BUCCHIEMON_GREEN_BULKMON
 
 #if P_FAMILY_ROSELIA
 #if P_GEN_4_CROSS_EVOS

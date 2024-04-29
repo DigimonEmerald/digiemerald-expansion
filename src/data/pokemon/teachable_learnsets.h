@@ -14881,7 +14881,7 @@ static const u16 sBucchiemon_redTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BUCCHIEMON_RED
 
-#if P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
+#if P_FAMILY_BUCCHIEMON_GREEN_BULKMON
 static const u16 sBucchiemon_greenTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
@@ -14926,7 +14926,7 @@ static const u16 sBucchiemon_greenTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sIllumiseTeachableLearnset[] = {
+static const u16 sBulkmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -14968,7 +14968,7 @@ static const u16 sIllumiseTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
+#endif //P_FAMILY_BUCCHIEMON_GREEN_BULKMON
 
 #if P_FAMILY_ROSELIA
 #if P_GEN_4_CROSS_EVOS

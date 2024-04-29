@@ -7780,7 +7780,7 @@ static const struct TrainerMon sParty_Greg[] = {
     },
     {
     .lvl = 25,
-    .species = SPECIES_ILLUMISE,
+    .species = SPECIES_BULKMON,
     }
 };
 
@@ -8102,7 +8102,7 @@ static const struct TrainerMon sParty_KiraAndDan1[] = {
     },
     {
     .lvl = 25,
-    .species = SPECIES_ILLUMISE,
+    .species = SPECIES_BULKMON,
     }
 };
 
@@ -8115,7 +8115,7 @@ static const struct TrainerMon sParty_KiraAndDan2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 30,
-    .species = SPECIES_ILLUMISE,
+    .species = SPECIES_BULKMON,
     }
 };
 
@@ -8128,7 +8128,7 @@ static const struct TrainerMon sParty_KiraAndDan3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 33,
-    .species = SPECIES_ILLUMISE,
+    .species = SPECIES_BULKMON,
     }
 };
 
@@ -8141,7 +8141,7 @@ static const struct TrainerMon sParty_KiraAndDan4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 36,
-    .species = SPECIES_ILLUMISE,
+    .species = SPECIES_BULKMON,
     }
 };
 
@@ -8154,7 +8154,7 @@ static const struct TrainerMon sParty_KiraAndDan5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 39,
-    .species = SPECIES_ILLUMISE,
+    .species = SPECIES_BULKMON,
     }
 };
 
@@ -10959,7 +10959,7 @@ static const struct TrainerMon sParty_Angelo[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 17,
-    .species = SPECIES_ILLUMISE,
+    .species = SPECIES_BULKMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SHOCK_WAVE, MOVE_QUICK_ATTACK, MOVE_CHARM, MOVE_NONE}
     },

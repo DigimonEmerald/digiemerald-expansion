@@ -4174,7 +4174,7 @@ static const union AnimCmd sAnim_Bucchiemon_red_1[] =
 };
 #endif //P_FAMILY_BUCCHIEMON_RED
 
-#if P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
+#if P_FAMILY_BUCCHIEMON_GREEN_BULKMON
 static const union AnimCmd sAnim_Bucchiemon_green_1[] =
 {
     ANIMCMD_FRAME(0, 11),
@@ -4187,7 +4187,7 @@ static const union AnimCmd sAnim_Bucchiemon_green_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Illumise_1[] =
+static const union AnimCmd sAnim_Bulkmon_1[] =
 {
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_FRAME(1, 22),
@@ -4196,7 +4196,7 @@ static const union AnimCmd sAnim_Illumise_1[] =
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
+#endif //P_FAMILY_BUCCHIEMON_GREEN_BULKMON
 
 #if P_FAMILY_ROSELIA
 #if P_GEN_4_CROSS_EVOS
@@ -11158,10 +11158,10 @@ SINGLE_ANIMATION(Boogiemon);
 #if P_FAMILY_BUCCHIEMON_RED
 SINGLE_ANIMATION(Bucchiemon_red);
 #endif //P_FAMILY_BUCCHIEMON_RED
-#if P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
+#if P_FAMILY_BUCCHIEMON_GREEN_BULKMON
 SINGLE_ANIMATION(Bucchiemon_green);
-SINGLE_ANIMATION(Illumise);
-#endif //P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
+SINGLE_ANIMATION(Bulkmon);
+#endif //P_FAMILY_BUCCHIEMON_GREEN_BULKMON
 #if P_FAMILY_ROSELIA
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Budew);

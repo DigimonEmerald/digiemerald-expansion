@@ -1044,12 +1044,12 @@ static u16 DetermineEggSpeciesAndParentSlots(struct DayCare *daycare, u8 *parent
     eggSpecies = GetEggSpecies(species[parentSlots[0]]);
     if (eggSpecies == SPECIES_PUNIMON && daycare->offspringPersonality & EGG_GENDER_MALE)
         eggSpecies = SPECIES_PUSUMON;
-    else if (eggSpecies == SPECIES_ILLUMISE && daycare->offspringPersonality & EGG_GENDER_MALE)
+    else if (eggSpecies == SPECIES_BULKMON && daycare->offspringPersonality & EGG_GENDER_MALE)
         eggSpecies = SPECIES_BUCCHIEMON_GREEN;
     else if (P_PUSUMON_CRABMON_BREED >= GEN_5 && eggSpecies == SPECIES_PUSUMON && !(daycare->offspringPersonality & EGG_GENDER_MALE))
         eggSpecies = SPECIES_PUNIMON;
     else if (P_PUSUMON_CRABMON_BREED >= GEN_5 && eggSpecies == SPECIES_BUCCHIEMON_GREEN && !(daycare->offspringPersonality & EGG_GENDER_MALE))
-        eggSpecies = SPECIES_ILLUMISE;
+        eggSpecies = SPECIES_BULKMON;
     else if (eggSpecies == SPECIES_MANAPHY)
         eggSpecies = SPECIES_PHIONE;
     else if (eggSpecies == SPECIES_SINISTEA_ANTIQUE)

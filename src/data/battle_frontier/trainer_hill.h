@@ -1972,7 +1972,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         },
                                     [3] =
                                         {
-                                            .species = SPECIES_ILLUMISE,
+                                            .species = SPECIES_BULKMON,
                                             .heldItem = ITEM_BRIGHT_POWDER,
                                             .moves = {MOVE_ENCORE, MOVE_ATTRACT, MOVE_NONE, MOVE_NONE},
                                             .hpEV = 252,
@@ -1987,7 +1987,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 5,
                                             .abilityNum = 0,
                                             .personality = 0xA,
-                                            .nickname = _("ILLUMISE"),
+                                            .nickname = _("BULKMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [4] =
@@ -2503,7 +2503,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         },
                                     [2] =
                                         {
-                                            .species = SPECIES_ILLUMISE,
+                                            .species = SPECIES_BULKMON,
                                             .heldItem = ITEM_SITRUS_BERRY,
                                             .moves = {MOVE_HELPING_HAND, MOVE_WISH, MOVE_THUNDERBOLT, MOVE_MOONLIGHT},
                                             .speedEV = 255,
@@ -2517,7 +2517,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 0,
                                             .personality = 0xF,
-                                            .nickname = _("ILLUMISE"),
+                                            .nickname = _("BULKMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [3] =

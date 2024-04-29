@@ -4320,7 +4320,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_BUCCHIEMON_RED
 
-#if P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
+#if P_FAMILY_BUCCHIEMON_GREEN_BULKMON
     [SPECIES_BUCCHIEMON_GREEN] =
     {
         .baseHP        = 65,
@@ -4380,7 +4380,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sBucchiemon_greenTeachableLearnset,
     },
 
-    [SPECIES_ILLUMISE] =
+    [SPECIES_BULKMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 47,
@@ -4406,9 +4406,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_TINTED_LENS, ABILITY_PRANKSTER },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Illumise"),
-        .cryId = CRY_ILLUMISE,
-        .natDexNum = NATIONAL_DEX_ILLUMISE,
+        .speciesName = _("Bulkmon"),
+        .cryId = CRY_BULKMON,
+        .natDexNum = NATIONAL_DEX_BULKMON,
         .categoryName = _("Firefly"),
         .height = 6,
         .weight = 177,
@@ -4421,24 +4421,24 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Illumise,
+        .frontPic = gMonFrontPic_Bulkmon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Illumise,
+        .frontAnimFrames = sAnims_Bulkmon,
         .frontAnimId = ANIM_RISING_WOBBLE,
-        .backPic = gMonBackPic_Illumise,
+        .backPic = gMonBackPic_Bulkmon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Illumise,
-        .shinyPalette = gMonShinyPalette_Illumise,
-        .iconSprite = gMonIcon_Illumise,
+        .palette = gMonPalette_Bulkmon,
+        .shinyPalette = gMonShinyPalette_Bulkmon,
+        .iconSprite = gMonIcon_Bulkmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Illumise)
-        .levelUpLearnset = sIllumiseLevelUpLearnset,
-        .teachableLearnset = sIllumiseTeachableLearnset,
+        FOOTPRINT(Bulkmon)
+        .levelUpLearnset = sBulkmonLevelUpLearnset,
+        .teachableLearnset = sBulkmonTeachableLearnset,
     },
-#endif //P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
+#endif //P_FAMILY_BUCCHIEMON_GREEN_BULKMON
 
 #if P_FAMILY_ROSELIA
 #if P_GEN_4_CROSS_EVOS
