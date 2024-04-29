@@ -963,13 +963,13 @@ gCryTable::
 .if P_FAMILY_DONSHOUMON == TRUE
 	cry Cry_Donshoumon
 .endif @ P_FAMILY_DONSHOUMON
-.if P_FAMILY_SHUPPET == TRUE
-	cry Cry_Shuppet
+.if P_FAMILY_DORUGAMON == TRUE
+	cry Cry_Dorugamon
 	cry Cry_Banette
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_BanetteMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SHUPPET
+.endif @ P_FAMILY_DORUGAMON
 .if P_FAMILY_DUSKULL == TRUE
 	cry Cry_Duskull
 	cry Cry_Dusclops
@@ -3389,13 +3389,13 @@ gCryTable_Reverse::
 .if P_FAMILY_DONSHOUMON == TRUE
 	cry_reverse Cry_Donshoumon
 .endif @ P_FAMILY_DONSHOUMON
-.if P_FAMILY_SHUPPET == TRUE
-	cry_reverse Cry_Shuppet
+.if P_FAMILY_DORUGAMON == TRUE
+	cry_reverse Cry_Dorugamon
 	cry_reverse Cry_Banette
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_BanetteMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SHUPPET
+.endif @ P_FAMILY_DORUGAMON
 .if P_FAMILY_DUSKULL == TRUE
 	cry_reverse Cry_Duskull
 	cry_reverse Cry_Dusclops

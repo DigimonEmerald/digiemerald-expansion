@@ -381,14 +381,14 @@ static const struct FormChange sDarmailmonFormChangeTable[] = {
 };
 #endif //P_FAMILY_DARLIZAMON
 
-#if P_FAMILY_SHUPPET
+#if P_FAMILY_DORUGAMON
 static const struct FormChange sBanetteFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BANETTE_MEGA, ITEM_BANETTITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_SHUPPET
+#endif //P_FAMILY_DORUGAMON
 
 #if P_FAMILY_ABSOL
 static const struct FormChange sAbsolFormChangeTable[] = {

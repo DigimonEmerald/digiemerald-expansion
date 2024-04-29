@@ -2845,8 +2845,8 @@ const u16 gEggMoves[] = {
         MOVE_POWER_UP_PUNCH),
 #endif //P_FAMILY_DONSHOUMON
 
-#if P_FAMILY_SHUPPET
-    egg_moves(SHUPPET,
+#if P_FAMILY_DORUGAMON
+    egg_moves(DORUGAMON,
         MOVE_DISABLE,
         MOVE_DESTINY_BOND,
         MOVE_FORESIGHT,
@@ -2858,7 +2858,7 @@ const u16 gEggMoves[] = {
         MOVE_OMINOUS_WIND,
         MOVE_GUNK_SHOT,
         MOVE_PHANTOM_FORCE),
-#endif //P_FAMILY_SHUPPET
+#endif //P_FAMILY_DORUGAMON
 
 #if P_FAMILY_DUSKULL
     egg_moves(DUSKULL,

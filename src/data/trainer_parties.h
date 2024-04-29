@@ -1297,7 +1297,7 @@ static const struct TrainerMon sParty_Kindra[] = {
     },
     {
     .lvl = 30,
-    .species = SPECIES_SHUPPET,
+    .species = SPECIES_DORUGAMON,
     }
 };
 
@@ -1308,7 +1308,7 @@ static const struct TrainerMon sParty_Tammy[] = {
     },
     {
     .lvl = 29,
-    .species = SPECIES_SHUPPET,
+    .species = SPECIES_DORUGAMON,
     }
 };
 
@@ -1323,7 +1323,7 @@ static const struct TrainerMon sParty_Tasha[] = {
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 32,
-    .species = SPECIES_SHUPPET,
+    .species = SPECIES_DORUGAMON,
     }
 };
 

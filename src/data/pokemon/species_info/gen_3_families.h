@@ -7082,8 +7082,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_DONSHOUMON
 
-#if P_FAMILY_SHUPPET
-    [SPECIES_SHUPPET] =
+#if P_FAMILY_DORUGAMON
+    [SPECIES_DORUGAMON] =
     {
         .baseHP        = 44,
         .baseAttack    = 75,
@@ -7103,9 +7103,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_INSOMNIA, ABILITY_FRISK, ABILITY_CURSED_BODY },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Shuppet"),
-        .cryId = CRY_SHUPPET,
-        .natDexNum = NATIONAL_DEX_SHUPPET,
+        .speciesName = _("Dorugamon"),
+        .cryId = CRY_DORUGAMON,
+        .natDexNum = NATIONAL_DEX_DORUGAMON,
         .categoryName = _("Puppet"),
         .height = 6,
         .weight = 23,
@@ -7118,23 +7118,23 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Shuppet,
+        .frontPic = gMonFrontPic_Dorugamon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Shuppet,
+        .frontAnimFrames = sAnims_Dorugamon,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 14,
-        .backPic = gMonBackPic_Shuppet,
+        .backPic = gMonBackPic_Dorugamon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Shuppet,
-        .shinyPalette = gMonShinyPalette_Shuppet,
-        .iconSprite = gMonIcon_Shuppet,
+        .palette = gMonPalette_Dorugamon,
+        .shinyPalette = gMonShinyPalette_Dorugamon,
+        .iconSprite = gMonIcon_Dorugamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Shuppet)
-        .levelUpLearnset = sShuppetLevelUpLearnset,
-        .teachableLearnset = sShuppetTeachableLearnset,
+        FOOTPRINT(Dorugamon)
+        .levelUpLearnset = sDorugamonLevelUpLearnset,
+        .teachableLearnset = sDorugamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_BANETTE}),
     },
 
@@ -7250,7 +7250,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .formChangeTable = sBanetteFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SHUPPET
+#endif //P_FAMILY_DORUGAMON
 
 #if P_FAMILY_DUSKULL
     [SPECIES_DUSKULL] =

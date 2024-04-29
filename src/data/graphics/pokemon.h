@@ -5145,14 +5145,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_DONSHOUMON
 
-#if P_FAMILY_SHUPPET
-    const u32 gMonFrontPic_Shuppet[] = INCBIN_U32("graphics/pokemon/shuppet/anim_front.4bpp.lz");
-    const u32 gMonPalette_Shuppet[] = INCBIN_U32("graphics/pokemon/shuppet/normal.gbapal.lz");
-    const u32 gMonBackPic_Shuppet[] = INCBIN_U32("graphics/pokemon/shuppet/back.4bpp.lz");
-    const u32 gMonShinyPalette_Shuppet[] = INCBIN_U32("graphics/pokemon/shuppet/shiny.gbapal.lz");
-    const u8 gMonIcon_Shuppet[] = INCBIN_U8("graphics/pokemon/shuppet/icon.4bpp");
+#if P_FAMILY_DORUGAMON
+    const u32 gMonFrontPic_Dorugamon[] = INCBIN_U32("graphics/pokemon/dorugamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Dorugamon[] = INCBIN_U32("graphics/pokemon/dorugamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Dorugamon[] = INCBIN_U32("graphics/pokemon/dorugamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Dorugamon[] = INCBIN_U32("graphics/pokemon/dorugamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Dorugamon[] = INCBIN_U8("graphics/pokemon/dorugamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Shuppet[] = INCBIN_U8("graphics/pokemon/shuppet/footprint.1bpp");
+    const u8 gMonFootprint_Dorugamon[] = INCBIN_U8("graphics/pokemon/dorugamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Banette[] = INCBIN_U32("graphics/pokemon/banette/anim_front.4bpp.lz");
@@ -5171,7 +5171,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_BanetteMega[] = INCBIN_U32("graphics/pokemon/banette/mega/shiny.gbapal.lz");
     const u8 gMonIcon_BanetteMega[] = INCBIN_U8("graphics/pokemon/banette/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SHUPPET
+#endif //P_FAMILY_DORUGAMON
 
 #if P_FAMILY_DUSKULL
     const u32 gMonFrontPic_Duskull[] = INCBIN_U32("graphics/pokemon/duskull/anim_front.4bpp.lz");

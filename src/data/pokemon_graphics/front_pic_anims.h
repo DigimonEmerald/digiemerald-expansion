@@ -4746,8 +4746,8 @@ static const union AnimCmd sAnim_Donshoumon_1[] =
 };
 #endif //P_FAMILY_DONSHOUMON
 
-#if P_FAMILY_SHUPPET
-static const union AnimCmd sAnim_Shuppet_1[] =
+#if P_FAMILY_DORUGAMON
+static const union AnimCmd sAnim_Dorugamon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4774,7 +4774,7 @@ static const union AnimCmd sAnim_Banette_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(BanetteMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SHUPPET
+#endif //P_FAMILY_DORUGAMON
 
 #if P_FAMILY_DUSKULL
 static const union AnimCmd sAnim_Duskull_1[] =
@@ -11264,13 +11264,13 @@ SINGLE_ANIMATION(DolphmonSnowy);
 #if P_FAMILY_DONSHOUMON
 SINGLE_ANIMATION(Donshoumon);
 #endif //P_FAMILY_DONSHOUMON
-#if P_FAMILY_SHUPPET
-SINGLE_ANIMATION(Shuppet);
+#if P_FAMILY_DORUGAMON
+SINGLE_ANIMATION(Dorugamon);
 SINGLE_ANIMATION(Banette);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(BanetteMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SHUPPET
+#endif //P_FAMILY_DORUGAMON
 #if P_FAMILY_DUSKULL
 SINGLE_ANIMATION(Duskull);
 SINGLE_ANIMATION(Dusclops);

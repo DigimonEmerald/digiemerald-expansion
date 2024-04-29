@@ -879,7 +879,7 @@ static const u16 sDolphmonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_DOLPHMON
 
-#if P_FAMILY_SHUPPET
+#if P_FAMILY_DORUGAMON
 static const u16 sBanetteFormSpeciesIdTable[] = {
     SPECIES_BANETTE,
 #if P_MEGA_EVOLUTIONS
@@ -887,7 +887,7 @@ static const u16 sBanetteFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_SHUPPET
+#endif //P_FAMILY_DORUGAMON
 
 #if P_FAMILY_ABSOL
 static const u16 sAbsolFormSpeciesIdTable[] = {

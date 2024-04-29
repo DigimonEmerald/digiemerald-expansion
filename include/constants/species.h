@@ -355,7 +355,7 @@
 #define SPECIES_DOLPHMON                                SPECIES_DOLPHMON_NORMAL
 #define SPECIES_DOLPHMON_NORMAL                         351
 #define SPECIES_DONSHOUMON                                 352
-#define SPECIES_SHUPPET                                 353
+#define SPECIES_DORUGAMON                                 353
 #define SPECIES_BANETTE                                 354
 #define SPECIES_DUSKULL                                 355
 #define SPECIES_DUSCLOPS                                356

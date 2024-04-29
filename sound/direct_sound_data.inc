@@ -2638,10 +2638,10 @@ Cry_Donshoumon::
 	.incbin "sound/direct_sound_samples/cries/donshoumon.bin"
 .endif @ P_FAMILY_DONSHOUMON
 
-.if P_FAMILY_SHUPPET == TRUE
+.if P_FAMILY_DORUGAMON == TRUE
 	.align 2
-Cry_Shuppet::
-	.incbin "sound/direct_sound_samples/cries/shuppet.bin"
+Cry_Dorugamon::
+	.incbin "sound/direct_sound_samples/cries/dorugamon.bin"
 
 	.align 2
 Cry_Banette::
@@ -2652,7 +2652,7 @@ Cry_Banette::
 Cry_BanetteMega::
 	.incbin "sound/direct_sound_samples/cries/banette_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SHUPPET
+.endif @ P_FAMILY_DORUGAMON
 
 .if P_FAMILY_DUSKULL == TRUE
 	.align 2
