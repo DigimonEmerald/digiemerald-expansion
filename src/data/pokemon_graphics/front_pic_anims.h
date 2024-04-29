@@ -4107,7 +4107,7 @@ static const union AnimCmd sAnim_Sawkuwamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Medicham_1[] =
+static const union AnimCmd sAnim_Blimpmon_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 11),
@@ -4120,7 +4120,7 @@ static const union AnimCmd sAnim_Medicham_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(MedichamMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(BlimpmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SAWKUWAMON
 
@@ -11140,9 +11140,9 @@ SINGLE_ANIMATION(BlgrowlmonMega);
 #endif //P_FAMILY_BLKGATOMON
 #if P_FAMILY_SAWKUWAMON
 SINGLE_ANIMATION(Sawkuwamon);
-SINGLE_ANIMATION(Medicham);
+SINGLE_ANIMATION(Blimpmon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(MedichamMega);
+SINGLE_ANIMATION(BlimpmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SAWKUWAMON
 #if P_FAMILY_ELECTRIKE

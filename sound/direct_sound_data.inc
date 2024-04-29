@@ -2362,13 +2362,13 @@ Cry_Sawkuwamon::
 	.incbin "sound/direct_sound_samples/cries/sawkuwamon.bin"
 
 	.align 2
-Cry_Medicham::
-	.incbin "sound/direct_sound_samples/cries/medicham.bin"
+Cry_Blimpmon::
+	.incbin "sound/direct_sound_samples/cries/blimpmon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_MedichamMega::
-	.incbin "sound/direct_sound_samples/cries/medicham_mega.bin"
+Cry_BlimpmonMega::
+	.incbin "sound/direct_sound_samples/cries/blimpmon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SAWKUWAMON
 

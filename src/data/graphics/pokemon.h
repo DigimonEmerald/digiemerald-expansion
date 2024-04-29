@@ -4579,24 +4579,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_SawkuwamonF[] = INCBIN_U32("graphics/pokemon/sawkuwamon/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_SawkuwamonF[] = INCBIN_U32("graphics/pokemon/sawkuwamon/backf.4bpp.lz");
 
-    const u32 gMonFrontPic_Medicham[] = INCBIN_U32("graphics/pokemon/medicham/anim_front.4bpp.lz");
-    const u32 gMonPalette_Medicham[] = INCBIN_U32("graphics/pokemon/medicham/normal.gbapal.lz");
-    const u32 gMonBackPic_Medicham[] = INCBIN_U32("graphics/pokemon/medicham/back.4bpp.lz");
-    const u32 gMonShinyPalette_Medicham[] = INCBIN_U32("graphics/pokemon/medicham/shiny.gbapal.lz");
-    const u8 gMonIcon_Medicham[] = INCBIN_U8("graphics/pokemon/medicham/icon.4bpp");
+    const u32 gMonFrontPic_Blimpmon[] = INCBIN_U32("graphics/pokemon/blimpmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Blimpmon[] = INCBIN_U32("graphics/pokemon/blimpmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Blimpmon[] = INCBIN_U32("graphics/pokemon/blimpmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Blimpmon[] = INCBIN_U32("graphics/pokemon/blimpmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Blimpmon[] = INCBIN_U8("graphics/pokemon/blimpmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Medicham[] = INCBIN_U8("graphics/pokemon/medicham/footprint.1bpp");
+    const u8 gMonFootprint_Blimpmon[] = INCBIN_U8("graphics/pokemon/blimpmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_MedichamF[] = INCBIN_U32("graphics/pokemon/medicham/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_MedichamF[] = INCBIN_U32("graphics/pokemon/medicham/backf.4bpp.lz");
+    const u32 gMonFrontPic_BlimpmonF[] = INCBIN_U32("graphics/pokemon/blimpmon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_BlimpmonF[] = INCBIN_U32("graphics/pokemon/blimpmon/backf.4bpp.lz");
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_MedichamMega[] = INCBIN_U32("graphics/pokemon/medicham/mega/front.4bpp.lz");
-    const u32 gMonPalette_MedichamMega[] = INCBIN_U32("graphics/pokemon/medicham/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_MedichamMega[] = INCBIN_U32("graphics/pokemon/medicham/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_MedichamMega[] = INCBIN_U32("graphics/pokemon/medicham/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_MedichamMega[] = INCBIN_U8("graphics/pokemon/medicham/mega/icon.4bpp");
+    const u32 gMonFrontPic_BlimpmonMega[] = INCBIN_U32("graphics/pokemon/blimpmon/mega/front.4bpp.lz");
+    const u32 gMonPalette_BlimpmonMega[] = INCBIN_U32("graphics/pokemon/blimpmon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_BlimpmonMega[] = INCBIN_U32("graphics/pokemon/blimpmon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_BlimpmonMega[] = INCBIN_U32("graphics/pokemon/blimpmon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_BlimpmonMega[] = INCBIN_U8("graphics/pokemon/blimpmon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SAWKUWAMON
 

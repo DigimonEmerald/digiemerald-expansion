@@ -5067,14 +5067,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_MEDICHAMITE] =
+    [ITEM_BLIMPMONITE] =
     {
-        .name = _("Medichamite"),
+        .name = _("Blimpmonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Medicham to Mega\n"
+            "Blimpmon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

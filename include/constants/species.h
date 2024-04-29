@@ -309,7 +309,7 @@
 #define SPECIES_BLKGATOMON_UVER                                  305
 #define SPECIES_BLGROWLMON                                  306
 #define SPECIES_SAWKUWAMON                                307
-#define SPECIES_MEDICHAM                                308
+#define SPECIES_BLIMPMON                                308
 #define SPECIES_ELECTRIKE                               309
 #define SPECIES_MANECTRIC                               310
 #define SPECIES_PLUSLE                                  311
@@ -992,7 +992,7 @@
 #define SPECIES_BLGARGOMON_MEGA                            931
 #define SPECIES_BLGARURMON_MEGA                             932
 #define SPECIES_BLGROWLMON_MEGA                             933
-#define SPECIES_MEDICHAM_MEGA                           934
+#define SPECIES_BLIMPMON_MEGA                           934
 #define SPECIES_MANECTRIC_MEGA                          935
 #define SPECIES_SHARPEDO_MEGA                           936
 #define SPECIES_CAMERUPT_MEGA                           937

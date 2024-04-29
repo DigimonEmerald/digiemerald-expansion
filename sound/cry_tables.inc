@@ -842,9 +842,9 @@ gCryTable::
 .endif @ P_FAMILY_BLKGATOMON
 .if P_FAMILY_SAWKUWAMON == TRUE
 	cry Cry_Sawkuwamon
-	cry Cry_Medicham
+	cry Cry_Blimpmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_MedichamMega
+	cry Cry_BlimpmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SAWKUWAMON
 .if P_FAMILY_ELECTRIKE == TRUE
@@ -3268,9 +3268,9 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_BLKGATOMON
 .if P_FAMILY_SAWKUWAMON == TRUE
 	cry_reverse Cry_Sawkuwamon
-	cry_reverse Cry_Medicham
+	cry_reverse Cry_Blimpmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_MedichamMega
+	cry_reverse Cry_BlimpmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SAWKUWAMON
 .if P_FAMILY_ELECTRIKE == TRUE
