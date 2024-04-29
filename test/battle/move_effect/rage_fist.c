@@ -90,7 +90,7 @@ DOUBLE_BATTLE_TEST("Rage Fist maximum base power is 350")
 
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_REGIROCK);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
@@ -157,7 +157,7 @@ SINGLE_BATTLE_TEST("Rage Fist base power is not lost if user switches out")
 
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_REGIROCK);
     } WHEN {
         TURN { MOVE(player, MOVE_RAGE_FIST); MOVE(opponent, MOVE_TACKLE); }
@@ -169,7 +169,7 @@ SINGLE_BATTLE_TEST("Rage Fist base power is not lost if user switches out")
         HP_BAR(opponent, captureDamage: &timesGotHit[0]);
         MESSAGE("Lopmonx, that's enough! Come back!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-        MESSAGE("Wynaut, that's enough! Come back!");
+        MESSAGE("Exveemon, that's enough! Come back!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_RAGE_FIST, player);
         HP_BAR(opponent, captureDamage: &timesGotHit[1]);
     } THEN {

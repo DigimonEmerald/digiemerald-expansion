@@ -39,9 +39,9 @@ DOUBLE_BATTLE_TEST("Howl raises user's and partner's Attack", s16 damageLeft, s1
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].category == DAMAGE_CATEGORY_PHYSICAL);
         PLAYER(SPECIES_LOPMONX) { Speed(15); }
-        PLAYER(SPECIES_WYNAUT) { Speed(10); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(10); }
         OPPONENT(SPECIES_LOPMONX) { Speed(13); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(12); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(12); }
     } WHEN {
         if (raiseAttack) TURN { MOVE(playerLeft, MOVE_HOWL); }
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft); }
@@ -52,7 +52,7 @@ DOUBLE_BATTLE_TEST("Howl raises user's and partner's Attack", s16 damageLeft, s1
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
             MESSAGE("Lopmonx's Attack rose!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-            MESSAGE("Wynaut's Attack rose!");
+            MESSAGE("Exveemon's Attack rose!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerLeft);
         HP_BAR(opponentLeft, captureDamage: &results[i].damageLeft);
@@ -73,7 +73,7 @@ DOUBLE_BATTLE_TEST("Howl does not work on partner if it has Soundproof")
         PLAYER(SPECIES_LOPMONX) { Speed(15); }
         PLAYER(SPECIES_XIAOMON) { Speed(10); Ability(ABILITY_SOUNDPROOF); }
         OPPONENT(SPECIES_LOPMONX) { Speed(5); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(1); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(1); }
     } WHEN {
         TURN { MOVE(playerRight, MOVE_TACKLE, target: opponentLeft); }
         TURN { MOVE(playerLeft, MOVE_HOWL); MOVE(playerRight, MOVE_TACKLE, target: opponentLeft); }
@@ -86,7 +86,7 @@ DOUBLE_BATTLE_TEST("Howl does not work on partner if it has Soundproof")
         MESSAGE("Lopmonx's Attack rose!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-            MESSAGE("Wynaut's Attack rose!");
+            MESSAGE("Exveemon's Attack rose!");
         }
         ABILITY_POPUP(playerRight, ABILITY_SOUNDPROOF);
         MESSAGE("Xiaomon's Soundproof blocks Howl!");

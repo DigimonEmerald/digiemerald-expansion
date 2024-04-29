@@ -16,7 +16,7 @@ SINGLE_BATTLE_TEST("Spikes damage on switch in")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         u32 count;
         for (count = 0; count < layers; ++count) {
@@ -30,9 +30,9 @@ SINGLE_BATTLE_TEST("Spikes damage on switch in")
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPIKES, player);
             MESSAGE("Spikes were scattered all around the opposing team!");
         }
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
         HP_BAR(opponent, damage: maxHP / divisor);
-        MESSAGE("Foe Wynaut is hurt by spikes!");
+        MESSAGE("Foe Exveemon is hurt by spikes!");
     }
 }
 
@@ -41,7 +41,7 @@ SINGLE_BATTLE_TEST("Spikes fails after 3 layers")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SPIKES); }
         TURN { MOVE(player, MOVE_SPIKES); }
@@ -58,9 +58,9 @@ SINGLE_BATTLE_TEST("Spikes fails after 3 layers")
         MESSAGE("Spikes were scattered all around the opposing team!");
         MESSAGE("Lopmonx used Spikes!");
         MESSAGE("But it failed!");
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
         HP_BAR(opponent, damage: maxHP / 4);
-        MESSAGE("Foe Wynaut is hurt by spikes!");
+        MESSAGE("Foe Exveemon is hurt by spikes!");
     }
 }
 
@@ -69,7 +69,7 @@ SINGLE_BATTLE_TEST("Spikes damage on subsequent switch ins")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SPIKES); }
         TURN { SWITCH(opponent, 1); }
@@ -77,9 +77,9 @@ SINGLE_BATTLE_TEST("Spikes damage on subsequent switch ins")
     } SCENE {
         s32 maxHP0 = GetMonData(&OPPONENT_PARTY[0], MON_DATA_MAX_HP);
         s32 maxHP1 = GetMonData(&OPPONENT_PARTY[1], MON_DATA_MAX_HP);
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
         HP_BAR(opponent, damage: maxHP1 / 8);
-        MESSAGE("Foe Wynaut is hurt by spikes!");
+        MESSAGE("Foe Exveemon is hurt by spikes!");
         MESSAGE("2 sent out Lopmonx!");
         HP_BAR(opponent, damage: maxHP0 / 8);
         MESSAGE("Foe Lopmonx is hurt by spikes!");

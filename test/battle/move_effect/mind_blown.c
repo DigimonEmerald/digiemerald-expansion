@@ -87,7 +87,7 @@ DOUBLE_BATTLE_TEST("Mind Blown causes everyone to faint in a double battle")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { HP(200); MaxHP(400); }
-        PLAYER(SPECIES_WYNAUT) { HP(1); }
+        PLAYER(SPECIES_EXVEEMON) { HP(1); }
         OPPONENT(SPECIES_HOPMON) { HP(1); }
         OPPONENT(SPECIES_KAKKINMON) { HP(1); }
         OPPONENT(SPECIES_KAKKINMON);
@@ -99,7 +99,7 @@ DOUBLE_BATTLE_TEST("Mind Blown causes everyone to faint in a double battle")
         HP_BAR(opponentLeft, hp: 0);
         MESSAGE("Foe Hopmon fainted!");
         HP_BAR(playerRight, hp: 0);
-        MESSAGE("Wynaut fainted!");
+        MESSAGE("Exveemon fainted!");
         HP_BAR(opponentRight, hp: 0);
         MESSAGE("Foe Kakkinmon fainted!");
         MESSAGE("Lopmonx fainted!");

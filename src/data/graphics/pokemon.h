@@ -3261,13 +3261,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
 #if P_FAMILY_LOPMONX
 #if P_GEN_3_CROSS_EVOS
-    const u32 gMonFrontPic_Wynaut[] = INCBIN_U32("graphics/pokemon/wynaut/anim_front.4bpp.lz");
-    const u32 gMonPalette_Wynaut[] = INCBIN_U32("graphics/pokemon/wynaut/normal.gbapal.lz");
-    const u32 gMonBackPic_Wynaut[] = INCBIN_U32("graphics/pokemon/wynaut/back.4bpp.lz");
-    const u32 gMonShinyPalette_Wynaut[] = INCBIN_U32("graphics/pokemon/wynaut/shiny.gbapal.lz");
-    const u8 gMonIcon_Wynaut[] = INCBIN_U8("graphics/pokemon/wynaut/icon.4bpp");
+    const u32 gMonFrontPic_Exveemon[] = INCBIN_U32("graphics/pokemon/exveemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Exveemon[] = INCBIN_U32("graphics/pokemon/exveemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Exveemon[] = INCBIN_U32("graphics/pokemon/exveemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Exveemon[] = INCBIN_U32("graphics/pokemon/exveemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Exveemon[] = INCBIN_U8("graphics/pokemon/exveemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Wynaut[] = INCBIN_U8("graphics/pokemon/wynaut/footprint.1bpp");
+    const u8 gMonFootprint_Exveemon[] = INCBIN_U8("graphics/pokemon/exveemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_3_CROSS_EVOS
 

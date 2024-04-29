@@ -36,7 +36,7 @@ static const struct TrainerMon sTestParty1[] =
         .lvl = 5,
     },
     {
-        .species = SPECIES_WYNAUT,
+        .species = SPECIES_EXVEEMON,
         .lvl = 5,
     },
 };

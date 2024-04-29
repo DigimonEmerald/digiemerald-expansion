@@ -41,9 +41,9 @@ DOUBLE_BATTLE_TEST("Teeter Dance can confuse foes and allies")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TEETER_DANCE); }
     } SCENE {
@@ -51,8 +51,8 @@ DOUBLE_BATTLE_TEST("Teeter Dance can confuse foes and allies")
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, opponentLeft);
         MESSAGE("Foe Lopmonx became confused!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, playerRight);
-        MESSAGE("Wynaut became confused!");
+        MESSAGE("Exveemon became confused!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, opponentRight);
-        MESSAGE("Foe Wynaut became confused!");
+        MESSAGE("Foe Exveemon became confused!");
     }
 }

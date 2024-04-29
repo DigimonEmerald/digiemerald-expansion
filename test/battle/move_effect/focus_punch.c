@@ -43,18 +43,18 @@ DOUBLE_BATTLE_TEST("Focus Punch activation is based on Speed")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Speed(2); }
-        PLAYER(SPECIES_WYNAUT) { Speed(3); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(3); }
         OPPONENT(SPECIES_LOPMONX) { Speed(1); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(5); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(5); }
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_FOCUS_PUNCH, target: playerLeft); MOVE(playerRight, MOVE_FOCUS_PUNCH, target: opponentLeft); MOVE(playerLeft, MOVE_FOCUS_PUNCH, target: opponentLeft); MOVE(opponentLeft, MOVE_FOCUS_PUNCH, target: playerLeft); }
     }
     SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FOCUS_PUNCH_SETUP, opponentRight);
-        MESSAGE("Foe Wynaut is tightening its focus!");
+        MESSAGE("Foe Exveemon is tightening its focus!");
 
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FOCUS_PUNCH_SETUP, playerRight);
-        MESSAGE("Wynaut is tightening its focus!");
+        MESSAGE("Exveemon is tightening its focus!");
 
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FOCUS_PUNCH_SETUP, playerLeft);
         MESSAGE("Lopmonx is tightening its focus!");
@@ -62,11 +62,11 @@ DOUBLE_BATTLE_TEST("Focus Punch activation is based on Speed")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FOCUS_PUNCH_SETUP, opponentLeft);
         MESSAGE("Foe Lopmonx is tightening its focus!");
 
-        MESSAGE("Foe Wynaut used Focus Punch!");
+        MESSAGE("Foe Exveemon used Focus Punch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FOCUS_PUNCH, opponentRight);
         HP_BAR(playerLeft);
 
-        MESSAGE("Wynaut used Focus Punch!");
+        MESSAGE("Exveemon used Focus Punch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FOCUS_PUNCH, playerRight);
         HP_BAR(opponentLeft);
 

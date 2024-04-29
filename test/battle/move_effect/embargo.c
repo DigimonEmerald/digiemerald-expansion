@@ -207,7 +207,7 @@ SINGLE_BATTLE_TEST("Embargo is passed via Baton Pass")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT) { Item(ITEM_LIGHT_BALL); };
+        PLAYER(SPECIES_EXVEEMON) { Item(ITEM_LIGHT_BALL); };
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBARGO); }
@@ -220,9 +220,9 @@ SINGLE_BATTLE_TEST("Embargo is passed via Baton Pass")
         // Turn 2
         MESSAGE("Lopmonx used Baton Pass!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BATON_PASS, player);
-        MESSAGE("Go! Wynaut!");
+        MESSAGE("Go! Exveemon!");
         // Turn 3
-        MESSAGE("Wynaut used Fling!");
+        MESSAGE("Exveemon used Fling!");
         MESSAGE("But it failed!");
     }
 }

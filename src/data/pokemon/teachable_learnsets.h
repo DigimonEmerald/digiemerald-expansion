@@ -10298,7 +10298,7 @@ static const u16 sLopmonTeachableLearnset[] = {
 
 #if P_FAMILY_LOPMONX
 #if P_GEN_3_CROSS_EVOS
-static const u16 sWynautTeachableLearnset[] = {
+static const u16 sExveemonTeachableLearnset[] = {
     MOVE_SAFEGUARD,
     MOVE_COUNTER,
     MOVE_UNAVAILABLE,

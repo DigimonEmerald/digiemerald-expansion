@@ -46,7 +46,7 @@ DOUBLE_BATTLE_TEST("White Herb restores stats after Attack was lowered by Intimi
 {
     GIVEN {
         OPPONENT(SPECIES_LOPMONX) { Item(ITEM_WHITE_HERB); }
-        OPPONENT(SPECIES_WYNAUT) { Item(ITEM_WHITE_HERB); }
+        OPPONENT(SPECIES_EXVEEMON) { Item(ITEM_WHITE_HERB); }
         PLAYER(SPECIES_PAOMON) { Ability(ABILITY_INTIMIDATE); }
         PLAYER(SPECIES_LOPMONX);
     } WHEN {
@@ -60,7 +60,7 @@ DOUBLE_BATTLE_TEST("White Herb restores stats after Attack was lowered by Intimi
 
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponentRight);
-        MESSAGE("Foe Wynaut's White Herb restored its status!");
+        MESSAGE("Foe Exveemon's White Herb restored its status!");
     } THEN {
         EXPECT(opponentLeft->item == ITEM_NONE);
         EXPECT(opponentLeft->statStages[STAT_DEF] = DEFAULT_STAT_STAGE);

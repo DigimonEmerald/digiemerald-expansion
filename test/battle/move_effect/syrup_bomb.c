@@ -169,7 +169,7 @@ SINGLE_BATTLE_TEST("Sticky Syrup is removed when the user switches out")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SYRUP_BOMB); }
@@ -191,7 +191,7 @@ SINGLE_BATTLE_TEST("Sticky Syrup is removed when the user faints")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { HP(1); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SYRUP_BOMB);
@@ -205,7 +205,7 @@ SINGLE_BATTLE_TEST("Sticky Syrup is removed when the user faints")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         HP_BAR(player);
         MESSAGE("Lopmonx fainted!");
-        MESSAGE("Go! Wynaut!");
+        MESSAGE("Go! Exveemon!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SYRUP_BOMB_SPEED_DROP, opponent);
             MESSAGE("Foe Lopmonx's Speed fell!");

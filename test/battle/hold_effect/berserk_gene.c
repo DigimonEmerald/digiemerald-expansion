@@ -38,7 +38,7 @@ DOUBLE_BATTLE_TEST("Berserk Gene sharply raises attack at the start of a double 
     PARAMETRIZE { item = ITEM_BERSERK_GENE; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].category == DAMAGE_CATEGORY_PHYSICAL);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         PLAYER(SPECIES_LOPMONX) { Item(item); }
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
@@ -65,7 +65,7 @@ SINGLE_BATTLE_TEST("Berserk Gene activates on switch in", s16 damage)
     PARAMETRIZE { item = ITEM_BERSERK_GENE; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].category == DAMAGE_CATEGORY_PHYSICAL);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         PLAYER(SPECIES_LOPMONX) { Item(item); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
@@ -173,7 +173,7 @@ SINGLE_BATTLE_TEST("Berserk Gene does not confuse on Misty Terrain but still rai
 SINGLE_BATTLE_TEST("Berserk Gene does not confuse when Safeguard is active")
 {
     GIVEN {
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_BERSERK_GENE); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {

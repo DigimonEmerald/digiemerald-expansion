@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Tangling Hair drops opposing mon's speed if ability user got
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SWIFT].makesContact == FALSE);
         PLAYER(SPECIES_BUKAMON) { Ability(ABILITY_TANGLING_HAIR); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
@@ -27,7 +27,7 @@ SINGLE_BATTLE_TEST("Tangling Hair drops opposing mon's speed if ability user got
         if (move == MOVE_TACKLE) {
             ABILITY_POPUP(player, ABILITY_TANGLING_HAIR);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("Foe Wynaut's Speed fell!");
+            MESSAGE("Foe Exveemon's Speed fell!");
         }
     }
 }
@@ -37,16 +37,16 @@ SINGLE_BATTLE_TEST("Tangling Hair does not cause Rocky Helmet miss activation")
     GIVEN {
         ASSUME(gItemsInfo[ITEM_ROCKY_HELMET].holdEffect == HOLD_EFFECT_ROCKY_HELMET);
         PLAYER(SPECIES_BUKAMON) { Ability(ABILITY_TANGLING_HAIR); Item(ITEM_ROCKY_HELMET); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         ABILITY_POPUP(player, ABILITY_TANGLING_HAIR);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("Foe Wynaut's Speed fell!");
+        MESSAGE("Foe Exveemon's Speed fell!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-        MESSAGE("Foe Wynaut was hurt by Bukamon's Rocky Helmet!");
+        MESSAGE("Foe Exveemon was hurt by Bukamon's Rocky Helmet!");
     }
 }
 

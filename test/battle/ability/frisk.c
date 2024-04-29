@@ -46,15 +46,15 @@ DOUBLE_BATTLE_TEST("Frisk triggers for player in a Double Battle after switching
         PLAYER(SPECIES_LOPMONX) { HP(1); }
         PLAYER(SPECIES_LOPMONX) { HP(1); }
         PLAYER(SPECIES_GAZIMON_X) { Ability(ABILITY_FRISK); };
-        OPPONENT(SPECIES_WYNAUT) { Item(ITEM_POTION); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON) { Item(ITEM_POTION); }
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_POUND, target: targetLeft ? playerLeft : playerRight); SEND_OUT(targetLeft ? playerLeft : playerRight, 2); }
     } SCENE {
-        MESSAGE("Foe Wynaut used Pound!");
+        MESSAGE("Foe Exveemon used Pound!");
         MESSAGE("Lopmonx fainted!");
         ABILITY_POPUP(targetLeft ? playerLeft : playerRight, ABILITY_FRISK);
-        MESSAGE("Gazimon_x frisked Foe Wynaut and found its Potion!");
+        MESSAGE("Gazimon_x frisked Foe Exveemon and found its Potion!");
     }
 }
 
@@ -66,17 +66,17 @@ DOUBLE_BATTLE_TEST("Frisk triggers for opponent in a Double Battle after switchi
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_POUND].power != 0);
-        PLAYER(SPECIES_WYNAUT) { Item(ITEM_POTION); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON) { Item(ITEM_POTION); }
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX) { HP(1); }
         OPPONENT(SPECIES_LOPMONX) { HP(1); }
         OPPONENT(SPECIES_GAZIMON_X) { Ability(ABILITY_FRISK); };
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_POUND, target: targetLeft ? opponentLeft : opponentRight); SEND_OUT(targetLeft ? opponentLeft : opponentRight, 2); }
     } SCENE {
-        MESSAGE("Wynaut used Pound!");
+        MESSAGE("Exveemon used Pound!");
         MESSAGE("Foe Lopmonx fainted!");
         ABILITY_POPUP(targetLeft ? opponentLeft : opponentRight, ABILITY_FRISK);
-        MESSAGE("Foe Gazimon_x frisked Wynaut and found its Potion!");
+        MESSAGE("Foe Gazimon_x frisked Exveemon and found its Potion!");
     }
 }

@@ -68,7 +68,7 @@ DOUBLE_BATTLE_TEST("Intimidate doesn't activate on an empty field in a double ba
         OPPONENT(SPECIES_LOPMONX) { HP(1); }
         OPPONENT(SPECIES_LOPMONX) { HP(1); }
         OPPONENT(SPECIES_PAOMON) { Ability(ABILITY_INTIMIDATE); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EXPLOSION); SEND_OUT(playerLeft, 2); SEND_OUT(opponentLeft, 2); SEND_OUT(playerRight, 3); SEND_OUT(opponentRight, 3); }
         TURN { MOVE(playerLeft, MOVE_CELEBRATE); }
@@ -80,14 +80,14 @@ DOUBLE_BATTLE_TEST("Intimidate doesn't activate on an empty field in a double ba
         MESSAGE("Go! Pafumon!");
         MESSAGE("2 sent out Paomon!");
         MESSAGE("Go! Hopmon!");
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
 
         NONE_OF {
             ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
             MESSAGE("Pafumon's Intimidate cuts Foe Paomon's attack!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-            MESSAGE("Pafumon's Intimidate cuts Foe Wynaut's attack!");
+            MESSAGE("Pafumon's Intimidate cuts Foe Exveemon's attack!");
 
             ABILITY_POPUP(opponentLeft, ABILITY_INTIMIDATE);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
@@ -130,7 +130,7 @@ DOUBLE_BATTLE_TEST("Intimidate activates on an empty slot")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_CROAGUNK);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         PLAYER(SPECIES_SALAMON_X) { Ability(ABILITY_INTIMIDATE); }
         OPPONENT(SPECIES_APEMON);
         OPPONENT(SPECIES_BIOSTEGMON);
@@ -148,10 +148,10 @@ DOUBLE_BATTLE_TEST("Intimidate activates on an empty slot")
 
     } SCENE {
         MESSAGE("Lopmonx, that's enough! Come back!");
-        MESSAGE("Go! Wynaut!");
+        MESSAGE("Go! Exveemon!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GUNK_SHOT, playerRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPLASH, opponentRight);
-        MESSAGE("Wynaut, that's enough! Come back!");
+        MESSAGE("Exveemon, that's enough! Come back!");
         MESSAGE("Go! Salamon_x!");
         ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
         NONE_OF {
@@ -168,8 +168,8 @@ DOUBLE_BATTLE_TEST("Intimidate activates immediately after the mon was switched 
         PLAYER(SPECIES_TAPU_KOKO) { Ability(ABILITY_ELECTRIC_SURGE); };
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); Item(ITEM_ELECTRIC_SEED); }
-        OPPONENT(SPECIES_WYNAUT) { HP(1); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON) { HP(1); }
+        OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_U_TURN, target: opponentLeft); SEND_OUT(playerLeft, 2); SEND_OUT(opponentLeft, 2); }

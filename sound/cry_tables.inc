@@ -566,7 +566,7 @@ gCryTable::
 .endif @ P_FAMILY_LOPMON
 .if P_FAMILY_LOPMONX == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
-	cry Cry_Wynaut
+	cry Cry_Exveemon
 .endif @ P_GEN_3_CROSS_EVOS
 	cry Cry_Lopmonx
 .endif @ P_FAMILY_LOPMONX
@@ -2992,7 +2992,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_LOPMON
 .if P_FAMILY_LOPMONX == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
-	cry_reverse Cry_Wynaut
+	cry_reverse Cry_Exveemon
 .endif @ P_GEN_3_CROSS_EVOS
 	cry_reverse Cry_Lopmonx
 .endif @ P_FAMILY_LOPMONX

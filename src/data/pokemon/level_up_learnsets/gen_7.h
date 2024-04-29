@@ -5830,7 +5830,7 @@ static const struct LevelUpMove sLopmonLevelUpLearnset[] = {
 
 #if P_FAMILY_LOPMONX
 #if P_GEN_3_CROSS_EVOS
-static const struct LevelUpMove sWynautLevelUpLearnset[] = {
+static const struct LevelUpMove sExveemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
     LEVEL_UP_MOVE( 1, MOVE_ENCORE),

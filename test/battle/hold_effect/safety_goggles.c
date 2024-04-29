@@ -10,7 +10,7 @@ SINGLE_BATTLE_TEST("Safety Goggles block powder and spore moves")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_STUN_SPORE].powderMove);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_HOPMON) { Item(ITEM_SAFETY_GOGGLES); }
     } WHEN {
         TURN { MOVE(player, MOVE_STUN_SPORE); }

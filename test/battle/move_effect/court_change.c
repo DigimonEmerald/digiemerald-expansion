@@ -9,9 +9,9 @@ ASSUMPTIONS
 DOUBLE_BATTLE_TEST("Court Change swaps entry hazards used by the opponent")
 {
     GIVEN {
-        PLAYER(SPECIES_WYNAUT);
-        PLAYER(SPECIES_WYNAUT);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
@@ -25,14 +25,14 @@ DOUBLE_BATTLE_TEST("Court Change swaps entry hazards used by the opponent")
         MESSAGE("Foe Lopmonx used Stealth Rock!");
         MESSAGE("Foe Lopmonx used Spikes!");
         MESSAGE("Foe Lopmonx used Toxic Spikes!");
-        MESSAGE("Wynaut used Court Change!");
-        MESSAGE("Wynaut swapped the battle effects affecting each side!");
-        MESSAGE("Go! Wynaut!");
+        MESSAGE("Exveemon used Court Change!");
+        MESSAGE("Exveemon swapped the battle effects affecting each side!");
+        MESSAGE("Go! Exveemon!");
         NONE_OF {
-            MESSAGE("Wynaut is hurt by spikes!");
-            MESSAGE("Pointed stones dug into Wynaut!");
-            MESSAGE("Wynaut was poisoned!");
-            MESSAGE("Wynaut was caught in a Sticky Web!");
+            MESSAGE("Exveemon is hurt by spikes!");
+            MESSAGE("Pointed stones dug into Exveemon!");
+            MESSAGE("Exveemon was poisoned!");
+            MESSAGE("Exveemon was caught in a Sticky Web!");
         }
         MESSAGE("2 sent out Lopmonx!");
         MESSAGE("Foe Lopmonx is hurt by spikes!");
@@ -48,9 +48,9 @@ DOUBLE_BATTLE_TEST("Court Change swaps entry hazards used by the player")
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_STICKY_WEB); MOVE(playerRight, MOVE_STEALTH_ROCK); }
         TURN { MOVE(playerLeft, MOVE_SPIKES); MOVE(playerRight, MOVE_TOXIC_SPIKES); }
@@ -61,19 +61,19 @@ DOUBLE_BATTLE_TEST("Court Change swaps entry hazards used by the player")
         MESSAGE("Lopmonx used Stealth Rock!");
         MESSAGE("Lopmonx used Spikes!");
         MESSAGE("Lopmonx used Toxic Spikes!");
-        MESSAGE("Foe Wynaut used Court Change!");
-        MESSAGE("Foe Wynaut swapped the battle effects affecting each side!");
+        MESSAGE("Foe Exveemon used Court Change!");
+        MESSAGE("Foe Exveemon swapped the battle effects affecting each side!");
         MESSAGE("Go! Lopmonx!");
         MESSAGE("Lopmonx is hurt by spikes!");
         MESSAGE("Pointed stones dug into Lopmonx!");
         MESSAGE("Lopmonx was poisoned!");
         MESSAGE("Lopmonx was caught in a Sticky Web!");
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
         NONE_OF {
-            MESSAGE("Foe Wynaut is hurt by spikes!");
-            MESSAGE("Pointed stones dug into Foe Wynaut!");
-            MESSAGE("Foe Wynaut was poisoned!");
-            MESSAGE("Foe Wynaut was caught in a Sticky Web!");
+            MESSAGE("Foe Exveemon is hurt by spikes!");
+            MESSAGE("Pointed stones dug into Foe Exveemon!");
+            MESSAGE("Foe Exveemon was poisoned!");
+            MESSAGE("Foe Exveemon was caught in a Sticky Web!");
         }
     }
 }
@@ -81,9 +81,9 @@ DOUBLE_BATTLE_TEST("Court Change swaps entry hazards used by the player")
 DOUBLE_BATTLE_TEST("Court Change used by the player swaps Mist, Safeguard, Lucky Chant, Reflect, Light Screen, Tailwind")
 {
     GIVEN {
-        PLAYER(SPECIES_WYNAUT);
-        PLAYER(SPECIES_WYNAUT);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
@@ -103,8 +103,8 @@ DOUBLE_BATTLE_TEST("Court Change used by the player swaps Mist, Safeguard, Lucky
         MESSAGE("Foe Lopmonx used Reflect!");
         MESSAGE("Foe Lopmonx used Light Screen!");
         MESSAGE("Foe Lopmonx used Tailwind!");
-        MESSAGE("Wynaut used Court Change!");
-        MESSAGE("Wynaut swapped the battle effects affecting each side!");
+        MESSAGE("Exveemon used Court Change!");
+        MESSAGE("Exveemon swapped the battle effects affecting each side!");
         // The effects now end for the player side.
         MESSAGE("Ally's Mist wore off!");
         MESSAGE("Ally's party is no longer protected by Safeguard!");
@@ -121,9 +121,9 @@ DOUBLE_BATTLE_TEST("Court Change used by the opponent swaps Mist, Safeguard, Luc
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_MIST); MOVE(playerRight, MOVE_SAFEGUARD); }
         TURN { MOVE(playerLeft, MOVE_LUCKY_CHANT); MOVE(playerRight, MOVE_REFLECT); }
@@ -140,8 +140,8 @@ DOUBLE_BATTLE_TEST("Court Change used by the opponent swaps Mist, Safeguard, Luc
         MESSAGE("Lopmonx used Reflect!");
         MESSAGE("Lopmonx used Light Screen!");
         MESSAGE("Lopmonx used Tailwind!");
-        MESSAGE("Foe Wynaut used Court Change!");
-        MESSAGE("Foe Wynaut swapped the battle effects affecting each side!");
+        MESSAGE("Foe Exveemon used Court Change!");
+        MESSAGE("Foe Exveemon swapped the battle effects affecting each side!");
         // The effects now end for the player side.
         MESSAGE("Foe's Mist wore off!");
         MESSAGE("Foe's party is no longer protected by Safeguard!");

@@ -23,7 +23,7 @@ SINGLE_BATTLE_TEST("Teleport fails when there no alive pokemon left")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT) { HP(0); }
+        OPPONENT(SPECIES_EXVEEMON) { HP(0); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TELEPORT); }
     } SCENE {
@@ -36,12 +36,12 @@ SINGLE_BATTLE_TEST("Teleport forces the pokemon to switch out")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TELEPORT); SEND_OUT(opponent, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TELEPORT, opponent);
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
     }
 }
 
@@ -50,12 +50,12 @@ SINGLE_BATTLE_TEST("Teleport does not fail if the user is trapped")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_FIRE_SPIN); MOVE(opponent, MOVE_TELEPORT); SEND_OUT(opponent, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_SPIN, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TELEPORT, opponent);
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
     }
 }

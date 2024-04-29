@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Shed Tail creates a Substitute at the cost of 1/2 users maxi
 
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SHED_TAIL); SEND_OUT(player, 1); }
@@ -22,7 +22,7 @@ SINGLE_BATTLE_TEST("Shed Tail creates a Substitute at the cost of 1/2 users maxi
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SHED_TAIL, player);
         HP_BAR(player, captureDamage: &costHP);
         MESSAGE("Lopmonx shed its tail to create a decoy!");
-        MESSAGE("Go! Wynaut!");
+        MESSAGE("Go! Exveemon!");
     }THEN {
         EXPECT_EQ(maxHP / 2, costHP);
     }
@@ -32,7 +32,7 @@ SINGLE_BATTLE_TEST("Shed Tail fails if the user doesn't have enough HP")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { HP(1); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SHED_TAIL); }
@@ -46,14 +46,14 @@ SINGLE_BATTLE_TEST("Shed Tail's HP cost can trigger a berry before the user swit
     GIVEN {
         ASSUME(gItemsInfo[ITEM_SITRUS_BERRY].battleUsage == EFFECT_ITEM_RESTORE_HP);
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_SITRUS_BERRY); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SHED_TAIL); SEND_OUT(player, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SHED_TAIL, player);
         MESSAGE("Lopmonx's Sitrus Berry restored health!");
-        MESSAGE("Go! Wynaut!");
+        MESSAGE("Go! Exveemon!");
     }
 }
 
@@ -61,7 +61,7 @@ SINGLE_BATTLE_TEST("Shed Tail fails if there are no usable pokemon left")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX)
-        PLAYER(SPECIES_WYNAUT) { HP(0); }
+        PLAYER(SPECIES_EXVEEMON) { HP(0); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SHED_TAIL); }

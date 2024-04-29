@@ -12,7 +12,7 @@ SINGLE_BATTLE_TEST("Healing Wish causes the user to faint and fully heals the re
     GIVEN {
         ASSUME(B_HEALING_WISH_SWITCH >= GEN_5);
         PLAYER(SPECIES_ARCADIAMON_CHAMPION);
-        PLAYER(SPECIES_WYNAUT) { HP(1); MaxHP(100); Status1(STATUS1_POISON); }
+        PLAYER(SPECIES_EXVEEMON) { HP(1); MaxHP(100); Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_HEALING_WISH); SEND_OUT(player, 1); }
@@ -20,10 +20,10 @@ SINGLE_BATTLE_TEST("Healing Wish causes the user to faint and fully heals the re
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEALING_WISH, player);
         HP_BAR(player, hp: 0);
         MESSAGE("Arcadiamon_champion fainted!");
-        MESSAGE("The healing wish came true for Wynaut!");
+        MESSAGE("The healing wish came true for Exveemon!");
         HP_BAR(player, hp: 100);
         STATUS_ICON(player, none: TRUE);
-        MESSAGE("Wynaut regained health!");
+        MESSAGE("Exveemon regained health!");
     }
 }
 
@@ -33,7 +33,7 @@ DOUBLE_BATTLE_TEST("Lunar Dance causes the user to faint and fully heals the rep
         ASSUME(B_HEALING_WISH_SWITCH >= GEN_5);
         PLAYER(SPECIES_ARCADIAMON_CHAMPION) { Speed(300); }
         PLAYER(SPECIES_LOPMONX) { Speed(50); }
-        PLAYER(SPECIES_WYNAUT) { HP(99); MaxHP(100); Status1(STATUS1_BURN); Speed(50); }
+        PLAYER(SPECIES_EXVEEMON) { HP(99); MaxHP(100); Status1(STATUS1_BURN); Speed(50); }
         OPPONENT(SPECIES_LOPMONX) { Speed(50); }
         OPPONENT(SPECIES_LOPMONX) { Speed(50); }
     } WHEN {
@@ -42,10 +42,10 @@ DOUBLE_BATTLE_TEST("Lunar Dance causes the user to faint and fully heals the rep
         ANIMATION(ANIM_TYPE_MOVE, MOVE_LUNAR_DANCE, playerLeft);
         HP_BAR(playerLeft, hp: 0);
         MESSAGE("Arcadiamon_champion fainted!");
-        MESSAGE("Wynaut became cloaked in mystical moonlight!");
+        MESSAGE("Exveemon became cloaked in mystical moonlight!");
         HP_BAR(playerLeft, hp: 100);
         STATUS_ICON(playerLeft, none: TRUE);
-        MESSAGE("Wynaut regained health!");
+        MESSAGE("Exveemon regained health!");
     }
 }
 
@@ -55,7 +55,7 @@ SINGLE_BATTLE_TEST("Healing Wish effect activates only if the switched pokemon c
         ASSUME(B_HEALING_WISH_SWITCH >= GEN_8);
         PLAYER(SPECIES_ARCADIAMON_CHAMPION) { Speed(300); }
         PLAYER(SPECIES_BALISTAMON) { Speed(400); }
-        PLAYER(SPECIES_WYNAUT) { HP(50); MaxHP(100); Status1(STATUS1_PARALYSIS); Speed(50); }
+        PLAYER(SPECIES_EXVEEMON) { HP(50); MaxHP(100); Status1(STATUS1_PARALYSIS); Speed(50); }
         OPPONENT(SPECIES_LOPMONX) { Speed(50); }
     } WHEN {
         TURN { MOVE(player, MOVE_HEALING_WISH); SEND_OUT(player, 1); }
@@ -65,13 +65,13 @@ SINGLE_BATTLE_TEST("Healing Wish effect activates only if the switched pokemon c
         HP_BAR(player, hp: 0);
         MESSAGE("Arcadiamon_champion fainted!");
         NONE_OF {
-            MESSAGE("The healing wish came true for Wynaut!");
-            MESSAGE("Wynaut regained health!");
+            MESSAGE("The healing wish came true for Exveemon!");
+            MESSAGE("Exveemon regained health!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
-        MESSAGE("The healing wish came true for Wynaut!");
+        MESSAGE("The healing wish came true for Exveemon!");
         HP_BAR(player, hp: 100);
         STATUS_ICON(player, none: TRUE);
-        MESSAGE("Wynaut regained health!");
+        MESSAGE("Exveemon regained health!");
     }
 }

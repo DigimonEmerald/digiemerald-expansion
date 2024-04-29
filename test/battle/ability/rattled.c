@@ -76,7 +76,7 @@ SINGLE_BATTLE_TEST("Rattled triggers correctly when hit by U-Turn") // Specific 
         ASSUME(gMovesInfo[MOVE_U_TURN].effect == EFFECT_HIT_ESCAPE);
         ASSUME(gMovesInfo[MOVE_U_TURN].type == TYPE_BUG);
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_JUNKMON) {Ability(ABILITY_RATTLED); }
         OPPONENT(SPECIES_JUNKMON);
     } WHEN {
@@ -88,6 +88,6 @@ SINGLE_BATTLE_TEST("Rattled triggers correctly when hit by U-Turn") // Specific 
         ABILITY_POPUP(opponent, ABILITY_RATTLED);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
         MESSAGE("Foe Junkmon's Speed rose!");
-        MESSAGE("Go! Wynaut!");
+        MESSAGE("Go! Exveemon!");
     }
 }

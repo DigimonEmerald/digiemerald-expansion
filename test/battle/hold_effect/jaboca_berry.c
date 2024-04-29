@@ -45,7 +45,7 @@ SINGLE_BATTLE_TEST("Jaboca Berry tirggers before Bug Bite can steal it")
     KNOWN_FAILING;
     GIVEN {
         ASSUME(gMovesInfo[MOVE_BUG_BITE].category == DAMAGE_CATEGORY_PHYSICAL);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX) { Item(ITEM_JABOCA_BERRY); }
     } WHEN {
         TURN { MOVE(player, MOVE_BUG_BITE); }
@@ -55,6 +55,6 @@ SINGLE_BATTLE_TEST("Jaboca Berry tirggers before Bug Bite can steal it")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
         HP_BAR(player);
         MESSAGE("Wyanut was hurt by Foe Lopmonx's Jaboca Berry!");
-        NOT MESSAGE("Wynaut stole and ate Foe Lopmonx's Jaboca Berry!");
+        NOT MESSAGE("Exveemon stole and ate Foe Lopmonx's Jaboca Berry!");
     }
 }

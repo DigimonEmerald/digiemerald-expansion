@@ -2987,7 +2987,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
 #if P_FAMILY_LOPMONX
 #if P_GEN_3_CROSS_EVOS
-    [SPECIES_WYNAUT] =
+    [SPECIES_EXVEEMON] =
     {
         .baseHP        = 95,
         .baseAttack    = 23,
@@ -3006,14 +3006,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_SHADOW_TAG, ABILITY_NONE, ABILITY_TELEPATHY },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Wynaut"),
-        .cryId = CRY_WYNAUT,
-        .natDexNum = NATIONAL_DEX_WYNAUT,
+        .speciesName = _("Exveemon"),
+        .cryId = CRY_EXVEEMON,
+        .natDexNum = NATIONAL_DEX_EXVEEMON,
         .categoryName = _("Bright"),
         .height = 6,
         .weight = 140,
         .description = COMPOUND_STRING(
-            "A Wynaut loves to eat sweet fruits.\n"
+            "A Exveemon loves to eat sweet fruits.\n"
             "It cleverly picks fruits using its earlike\n"
             "arms. They gather in fruit gardens, drawn\n"
             "by the fragrance."),
@@ -3021,24 +3021,24 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Wynaut,
+        .frontPic = gMonFrontPic_Exveemon,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Wynaut,
+        .frontAnimFrames = sAnims_Exveemon,
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
         .frontAnimDelay = 15,
-        .backPic = gMonBackPic_Wynaut,
+        .backPic = gMonBackPic_Exveemon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Wynaut,
-        .shinyPalette = gMonShinyPalette_Wynaut,
-        .iconSprite = gMonIcon_Wynaut,
+        .palette = gMonPalette_Exveemon,
+        .shinyPalette = gMonShinyPalette_Exveemon,
+        .iconSprite = gMonIcon_Exveemon,
         .iconPalIndex = 0,
-        FOOTPRINT(Wynaut)
+        FOOTPRINT(Exveemon)
         .tmIlliterate = TRUE,
-        .levelUpLearnset = sWynautLevelUpLearnset,
-        .teachableLearnset = sWynautTeachableLearnset,
+        .levelUpLearnset = sExveemonLevelUpLearnset,
+        .teachableLearnset = sExveemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_LOPMONX}),
     },
 #endif //P_GEN_3_CROSS_EVOS

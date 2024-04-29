@@ -11,7 +11,7 @@ SINGLE_BATTLE_TEST("Sticky Web lowers Speed by 1 on switch-in")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_STICKY_WEB); }
         TURN { SWITCH(opponent, 1); }
@@ -19,10 +19,10 @@ SINGLE_BATTLE_TEST("Sticky Web lowers Speed by 1 on switch-in")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STICKY_WEB, player);
         MESSAGE("A sticky web spreads out on the ground around the opposing team!");
-        MESSAGE("2 sent out Wynaut!");
-        MESSAGE("Foe Wynaut was caught in a Sticky Web!");
+        MESSAGE("2 sent out Exveemon!");
+        MESSAGE("Foe Exveemon was caught in a Sticky Web!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("Foe Wynaut's Speed fell!");
+        MESSAGE("Foe Exveemon's Speed fell!");
     }
 }
 
@@ -55,8 +55,8 @@ DOUBLE_BATTLE_TEST("Sticky Web lowers Speed by 1 in a double battle after Explos
         PLAYER(SPECIES_LOPMONX) {Speed(10);}
         OPPONENT(SPECIES_LOPMONX) {HP(1); Speed(1);}
         OPPONENT(SPECIES_LOPMONX) {HP(1); Speed(1);}
-        OPPONENT(SPECIES_WYNAUT) {Speed(10);}
-        OPPONENT(SPECIES_WYNAUT) {Speed(10);}
+        OPPONENT(SPECIES_EXVEEMON) {Speed(10);}
+        OPPONENT(SPECIES_EXVEEMON) {Speed(10);}
     } WHEN {
         TURN { MOVE(playerRight, MOVE_STICKY_WEB); MOVE(playerLeft, MOVE_EXPLOSION); SEND_OUT(playerLeft, 2); SEND_OUT(opponentLeft, 2); SEND_OUT(opponentRight, 3); }
         TURN {}
@@ -64,14 +64,14 @@ DOUBLE_BATTLE_TEST("Sticky Web lowers Speed by 1 in a double battle after Explos
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STICKY_WEB, playerRight);
         MESSAGE("A sticky web spreads out on the ground around the opposing team!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, playerLeft);
-        MESSAGE("2 sent out Wynaut!");
-        MESSAGE("Foe Wynaut was caught in a Sticky Web!");
+        MESSAGE("2 sent out Exveemon!");
+        MESSAGE("Foe Exveemon was caught in a Sticky Web!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-        MESSAGE("Foe Wynaut's Speed fell!");
-        MESSAGE("2 sent out Wynaut!");
-        MESSAGE("Foe Wynaut was caught in a Sticky Web!");
+        MESSAGE("Foe Exveemon's Speed fell!");
+        MESSAGE("2 sent out Exveemon!");
+        MESSAGE("Foe Exveemon was caught in a Sticky Web!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("Foe Wynaut's Speed fell!");
+        MESSAGE("Foe Exveemon's Speed fell!");
     }
 }
 

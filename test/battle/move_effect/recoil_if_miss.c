@@ -44,7 +44,7 @@ SINGLE_BATTLE_TEST("Jump Kick has no recoil if no target")
         ASSUME(B_HEALING_WISH_SWITCH >= GEN_5);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_HEALING_WISH); MOVE(player, MOVE_JUMP_KICK, hit: FALSE); SEND_OUT(opponent, 1); }
     } SCENE {
@@ -66,7 +66,7 @@ SINGLE_BATTLE_TEST("Jump Kick's recoil happens after Spiky Shield damage and Pok
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SPIKY_SHIELD].effect == EFFECT_PROTECT);
         PLAYER(SPECIES_LOPMONX) { HP(hp); MaxHP(maxHp); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         if (!faintOnJumpKick && !faintOnSpiky) {
@@ -83,7 +83,7 @@ SINGLE_BATTLE_TEST("Jump Kick's recoil happens after Spiky Shield damage and Pok
         MESSAGE("Lopmonx was hurt by Foe Lopmonx's Spiky Shield!");
         if (faintOnSpiky){
             MESSAGE("Lopmonx fainted!");
-            MESSAGE("Go! Wynaut!");
+            MESSAGE("Go! Exveemon!");
             NONE_OF {
                 MESSAGE("Lopmonx kept going and crashed!");
                 HP_BAR(player);
@@ -93,7 +93,7 @@ SINGLE_BATTLE_TEST("Jump Kick's recoil happens after Spiky Shield damage and Pok
             HP_BAR(player);
             if (faintOnJumpKick) {
                 MESSAGE("Lopmonx fainted!");
-                MESSAGE("Go! Wynaut!");
+                MESSAGE("Go! Exveemon!");
             }
         }
     }

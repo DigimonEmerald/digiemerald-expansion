@@ -2905,7 +2905,7 @@ static const union AnimCmd sAnim_Lopmon_1[] =
 
 #if P_FAMILY_LOPMONX
 #if P_GEN_3_CROSS_EVOS
-static const union AnimCmd sAnim_Wynaut_1[] =
+static const union AnimCmd sAnim_Exveemon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -10858,7 +10858,7 @@ SINGLE_ANIMATION(Lopmon);
 #endif //P_FAMILY_LOPMON
 #if P_FAMILY_LOPMONX
 #if P_GEN_3_CROSS_EVOS
-SINGLE_ANIMATION(Wynaut);
+SINGLE_ANIMATION(Exveemon);
 #endif //P_GEN_3_CROSS_EVOS
 SINGLE_ANIMATION(Lopmonx);
 #endif //P_FAMILY_LOPMONX

@@ -41,15 +41,15 @@ DOUBLE_BATTLE_TEST("Tailwind affects partner on first turn")
     GIVEN {
         ASSUME(B_RECALC_TURN_AFTER_ACTIONS);
         PLAYER(SPECIES_LOPMONX) { Speed(20); }
-        PLAYER(SPECIES_WYNAUT) { Speed(10); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(10); }
         OPPONENT(SPECIES_LOPMONX) { Speed(15); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(14); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(14); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TAILWIND); }
     } SCENE {
         MESSAGE("Lopmonx used Tailwind!");
-        MESSAGE("Wynaut used Celebrate!");
+        MESSAGE("Exveemon used Celebrate!");
         MESSAGE("Foe Lopmonx used Celebrate!");
-        MESSAGE("Foe Wynaut used Celebrate!");
+        MESSAGE("Foe Exveemon used Celebrate!");
     }
 }

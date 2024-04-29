@@ -12,9 +12,9 @@ DOUBLE_BATTLE_TEST("Water and Fire Pledge create a rainbow on the user's side of
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Speed(4); }
-        PLAYER(SPECIES_WYNAUT) { Speed(3); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(3); }
         OPPONENT(SPECIES_LOPMONX) { Speed(8); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(5); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(5); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_WATER_PLEDGE, target: opponentLeft);
                MOVE(playerRight, MOVE_FIRE_PLEDGE, target: opponentRight);
@@ -24,8 +24,8 @@ DOUBLE_BATTLE_TEST("Water and Fire Pledge create a rainbow on the user's side of
         TURN {}
     } SCENE {
         MESSAGE("Lopmonx used Water Pledge!");
-        MESSAGE("Lopmonx is waiting for Wynaut's move…{PAUSE 16}");
-        MESSAGE("Wynaut used Fire Pledge!");
+        MESSAGE("Lopmonx is waiting for Exveemon's move…{PAUSE 16}");
+        MESSAGE("Exveemon used Fire Pledge!");
         MESSAGE("The two moves become one! It's a combined move!{PAUSE 16}");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WATER_PLEDGE, playerRight);
         HP_BAR(opponentRight);
@@ -40,9 +40,9 @@ DOUBLE_BATTLE_TEST("Rainbow doubles the chance of secondary move effects")
     GIVEN {
         ASSUME(MoveHasAdditionalEffect(MOVE_EMBER, MOVE_EFFECT_BURN) == TRUE);
         PLAYER(SPECIES_LOPMONX) { Speed(4); }
-        PLAYER(SPECIES_WYNAUT) { Speed(3); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(3); }
         OPPONENT(SPECIES_LOPMONX) { Speed(8); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(5); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(5); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_WATER_PLEDGE, target: opponentLeft);
                MOVE(playerRight, MOVE_FIRE_PLEDGE, target: opponentRight);
@@ -51,7 +51,7 @@ DOUBLE_BATTLE_TEST("Rainbow doubles the chance of secondary move effects")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WATER_PLEDGE, playerRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EMBER, playerLeft);
-        MESSAGE("Foe Wynaut was burned!");
+        MESSAGE("Foe Exveemon was burned!");
     }
 }
 
@@ -63,7 +63,7 @@ DOUBLE_BATTLE_TEST("Rainbow flinch chance does not stack with Serene Grace")
         PLAYER(SPECIES_HAGURUMON) { Speed(8); Ability(ABILITY_SERENE_GRACE); }
         PLAYER(SPECIES_LOPMONX) { Speed(5); }
         OPPONENT(SPECIES_LOPMONX) { Speed(4); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(3); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(3); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_WATER_PLEDGE, target: opponentLeft);
                MOVE(playerRight, MOVE_FIRE_PLEDGE, target: opponentRight);
@@ -72,7 +72,7 @@ DOUBLE_BATTLE_TEST("Rainbow flinch chance does not stack with Serene Grace")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WATER_PLEDGE, playerRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BITE, playerLeft);
-        MESSAGE("Foe Wynaut flinched!");
+        MESSAGE("Foe Exveemon flinched!");
     }
 }
 
@@ -80,9 +80,9 @@ DOUBLE_BATTLE_TEST("Fire and Grass Pledge summons Sea Of Fire for four turns tha
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Speed(4); }
-        PLAYER(SPECIES_WYNAUT) { Speed(3); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(3); }
         OPPONENT(SPECIES_LOPMONX) { Speed(8); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(5); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(5); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentLeft);
                MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight);
@@ -92,8 +92,8 @@ DOUBLE_BATTLE_TEST("Fire and Grass Pledge summons Sea Of Fire for four turns tha
         TURN {}
     } SCENE {
         MESSAGE("Lopmonx used Fire Pledge!");
-        MESSAGE("Lopmonx is waiting for Wynaut's move…{PAUSE 16}");
-        MESSAGE("Wynaut used Grass Pledge!");
+        MESSAGE("Lopmonx is waiting for Exveemon's move…{PAUSE 16}");
+        MESSAGE("Exveemon used Grass Pledge!");
         MESSAGE("The two moves become one! It's a combined move!{PAUSE 16}");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerRight);
         HP_BAR(opponentRight);
@@ -102,15 +102,15 @@ DOUBLE_BATTLE_TEST("Fire and Grass Pledge summons Sea Of Fire for four turns tha
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentLeft);
         MESSAGE("The opposing Foe Lopmonx was hurt by the sea of fire!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentRight);
-        MESSAGE("The opposing Foe Wynaut was hurt by the sea of fire!");
+        MESSAGE("The opposing Foe Exveemon was hurt by the sea of fire!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentLeft);
         MESSAGE("The opposing Foe Lopmonx was hurt by the sea of fire!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentRight);
-        MESSAGE("The opposing Foe Wynaut was hurt by the sea of fire!");
+        MESSAGE("The opposing Foe Exveemon was hurt by the sea of fire!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentLeft);
         MESSAGE("The opposing Foe Lopmonx was hurt by the sea of fire!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentRight);
-        MESSAGE("The opposing Foe Wynaut was hurt by the sea of fire!");
+        MESSAGE("The opposing Foe Exveemon was hurt by the sea of fire!");
         MESSAGE("The sea of fire around the opposing team disappeared!");
     }
 }
@@ -119,9 +119,9 @@ DOUBLE_BATTLE_TEST("Sea Of Fire deals 1/8th damage per turn")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Speed(4); }
-        PLAYER(SPECIES_WYNAUT) { Speed(3); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(3); }
         OPPONENT(SPECIES_LOPMONX) { Speed(8); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(5); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(5); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentLeft);
                MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight);
@@ -138,9 +138,9 @@ DOUBLE_BATTLE_TEST("Grass and Water Pledge create a swamp on the user's side of 
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Speed(4); }
-        PLAYER(SPECIES_WYNAUT) { Speed(3); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(3); }
         OPPONENT(SPECIES_LOPMONX) { Speed(8); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(5); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(5); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_GRASS_PLEDGE, target: opponentLeft);
                MOVE(playerRight, MOVE_WATER_PLEDGE, target: opponentRight);
@@ -150,8 +150,8 @@ DOUBLE_BATTLE_TEST("Grass and Water Pledge create a swamp on the user's side of 
         TURN {}
     } SCENE {
         MESSAGE("Lopmonx used Grass Pledge!");
-        MESSAGE("Lopmonx is waiting for Wynaut's move…{PAUSE 16}");
-        MESSAGE("Wynaut used Water Pledge!");
+        MESSAGE("Lopmonx is waiting for Exveemon's move…{PAUSE 16}");
+        MESSAGE("Exveemon used Water Pledge!");
         MESSAGE("The two moves become one! It's a combined move!{PAUSE 16}");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GRASS_PLEDGE, playerRight);
         HP_BAR(opponentRight);
@@ -164,9 +164,9 @@ DOUBLE_BATTLE_TEST("Swamp reduces the speed of the effected side by 1/4th")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Speed(5); }
-        PLAYER(SPECIES_WYNAUT) { Speed(4); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(4); }
         OPPONENT(SPECIES_LOPMONX) { Speed(12); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(8); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(8); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_GRASS_PLEDGE, target: opponentLeft);
                MOVE(playerRight, MOVE_WATER_PLEDGE, target: opponentRight);
@@ -191,9 +191,9 @@ DOUBLE_BATTLE_TEST("The base power of a combined pledge move effect is 150")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_HYPER_BEAM].power == 150);
         PLAYER(SPECIES_LOPMONX) { Speed(4); }
-        PLAYER(SPECIES_WYNAUT) { Speed(3); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(3); }
         OPPONENT(SPECIES_LOPMONX) { Speed(8); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(5); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(5); }
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_HYPER_BEAM, target: playerRight);
                MOVE(playerLeft, MOVE_WATER_PLEDGE, target: opponentLeft);
@@ -234,9 +234,9 @@ DOUBLE_BATTLE_TEST("Pledge status timer does not reset if combined move is used 
 
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Speed(4); }
-        PLAYER(SPECIES_WYNAUT) { Speed(3); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(3); }
         OPPONENT(SPECIES_LOPMONX) { Speed(8); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(5); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(5); }
     } WHEN {
         TURN { MOVE(playerLeft, pledgeMove1, target: opponentLeft);
                MOVE(playerRight, pledgeMove2, target: opponentRight);
@@ -277,9 +277,9 @@ DOUBLE_BATTLE_TEST("Pledge moves get same attack type bonus from partner", s16 d
 
     GIVEN {
         PLAYER(species) { Speed(4); }
-        PLAYER(SPECIES_WYNAUT) { Speed(3); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(3); }
         OPPONENT(SPECIES_LOPMONX) { Speed(8); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(5); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(5); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentLeft);
                MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight);

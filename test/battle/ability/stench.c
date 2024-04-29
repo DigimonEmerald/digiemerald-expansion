@@ -37,7 +37,7 @@ DOUBLE_BATTLE_TEST("Stench only triggers if target takes damage")
         ASSUME(gMovesInfo[MOVE_TACKLE].power > 0);
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_FAKE_OUT, MOVE_EFFECT_FLINCH, 100));
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_SAKUTTOMON) { Ability(ABILITY_STENCH); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
@@ -51,7 +51,7 @@ DOUBLE_BATTLE_TEST("Stench only triggers if target takes damage")
             MOVE(playerRight, MOVE_TACKLE, target: opponentRight);
         }
     } SCENE {
-        NONE_OF { MESSAGE("Wynaut flinched!"); }
+        NONE_OF { MESSAGE("Exveemon flinched!"); }
     }
 }
 
@@ -61,7 +61,7 @@ DOUBLE_BATTLE_TEST("Stench doesn't trigger if partner uses a move")
         ASSUME(gMovesInfo[MOVE_TACKLE].power > 0);
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_FAKE_OUT, MOVE_EFFECT_FLINCH, 100));
         PLAYER(SPECIES_LOPMONX) { Speed(20); }
-        PLAYER(SPECIES_WYNAUT) { Speed(10); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(10); }
         OPPONENT(SPECIES_SAKUTTOMON) { Speed(100); Ability(ABILITY_STENCH); }
         OPPONENT(SPECIES_LOPMONX) {Speed(50); }
     } WHEN {
@@ -74,7 +74,7 @@ DOUBLE_BATTLE_TEST("Stench doesn't trigger if partner uses a move")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FAKE_OUT, playerLeft);
         MESSAGE("Foe Sakuttomon flinched!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);
-        NOT MESSAGE("Wynaut flinched!");
+        NOT MESSAGE("Exveemon flinched!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerRight);
     }
 }

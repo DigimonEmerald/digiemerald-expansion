@@ -21,13 +21,13 @@ SINGLE_BATTLE_TEST("Revival Blessing revives a chosen fainted party member for t
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX) { HP(0); }
-        PLAYER(SPECIES_WYNAUT) { HP(0); }
+        PLAYER(SPECIES_EXVEEMON) { HP(0); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_REVIVAL_BLESSING); SEND_OUT(player, 2); }
     } SCENE {
         MESSAGE("Lopmonx used " REVIVAL_BLESSING "!");
-        MESSAGE("Wynaut was revived and is ready to fight again!");
+        MESSAGE("Exveemon was revived and is ready to fight again!");
     }
 }
 
@@ -75,9 +75,9 @@ TO_DO_BATTLE_TEST("Revival Blessing cannot revive a partner's party member");
 //         OPPONENT(SPECIES_LOPMONX);
 //         OPPONENT(SPECIES_LOPMONX);
 //         OPPONENT(SPECIES_LOPMONX);
-//         OPPONENT(SPECIES_WYNAUT);
-//         OPPONENT(SPECIES_WYNAUT) { HP(0); }
-//         OPPONENT(SPECIES_WYNAUT);
+//         OPPONENT(SPECIES_EXVEEMON);
+//         OPPONENT(SPECIES_EXVEEMON) { HP(0); }
+//         OPPONENT(SPECIES_EXVEEMON);
 //     } WHEN {
 //         TURN { MOVE(user, MOVE_REVIVAL_BLESSING); }
 //     } SCENE {
@@ -85,8 +85,8 @@ TO_DO_BATTLE_TEST("Revival Blessing cannot revive a partner's party member");
 //             MESSAGE("Foe Lopmonx used " REVIVAL_BLESSING "!");
 //             MESSAGE("But it failed!");
 //         } else {
-//             MESSAGE("Foe Wynaut used " REVIVAL_BLESSING "!");
-//             MESSAGE("Wynaut was revived and is ready to fight again!");
+//             MESSAGE("Foe Exveemon used " REVIVAL_BLESSING "!");
+//             MESSAGE("Exveemon was revived and is ready to fight again!");
 //         }
 //     }
 // }
@@ -98,18 +98,18 @@ TO_DO_BATTLE_TEST("Revived battlers still lose their turn");
 // {
 //     GIVEN {
 //         PLAYER(SPECIES_LOPMONX);
-//         PLAYER(SPECIES_WYNAUT);
+//         PLAYER(SPECIES_EXVEEMON);
 //         OPPONENT(SPECIES_LOPMONX);
-//         OPPONENT(SPECIES_WYNAUT) { HP(1); }
+//         OPPONENT(SPECIES_EXVEEMON) { HP(1); }
 //     } WHEN {
 //         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentRight);
 //                MOVE(opponentLeft, MOVE_REVIVAL_BLESSING);
 //                SEND_OUT(opponentLeft, 1); }
 //     } SCENE {
 //         MESSAGE("Lopmonx used Tackle!");
-//         MESSAGE("Foe Wynaut fainted!");
+//         MESSAGE("Foe Exveemon fainted!");
 //         MESSAGE("Foe Lopmonx used " REVIVAL_BLESSING "!");
-//         MESSAGE("Wynaut was revived and is ready to fight again!");
-//         NOT { MESSAGE("Wynaut used Celebrate!"); }
+//         MESSAGE("Exveemon was revived and is ready to fight again!");
+//         NOT { MESSAGE("Exveemon used Celebrate!"); }
 //     }
 // }

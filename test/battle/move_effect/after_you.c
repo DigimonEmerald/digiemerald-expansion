@@ -10,9 +10,9 @@ DOUBLE_BATTLE_TEST("After You makes the target move after user")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Speed(4); }
-        PLAYER(SPECIES_WYNAUT) { Speed(1); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(1); }
         OPPONENT(SPECIES_LOPMONX) { Speed(3); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(2); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(2); }
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_AFTER_YOU, target: playerRight);
@@ -22,7 +22,7 @@ DOUBLE_BATTLE_TEST("After You makes the target move after user")
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_AFTER_YOU, playerLeft);
-        MESSAGE("Wynaut took the kind offer!");
+        MESSAGE("Exveemon took the kind offer!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentRight);
@@ -33,9 +33,9 @@ DOUBLE_BATTLE_TEST("After You does nothing if the target has already moved")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Speed(4); }
-        PLAYER(SPECIES_WYNAUT) { Speed(1); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(1); }
         OPPONENT(SPECIES_LOPMONX) { Speed(3); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(2); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(2); }
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_CELEBRATE);
@@ -46,7 +46,7 @@ DOUBLE_BATTLE_TEST("After You does nothing if the target has already moved")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentLeft);
-        MESSAGE("Foe Wynaut used After You!");
+        MESSAGE("Foe Exveemon used After You!");
         MESSAGE("But it failed!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerRight);
     }

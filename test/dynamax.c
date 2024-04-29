@@ -139,7 +139,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon are not affected by phazing move
         ASSUME(gMovesInfo[MOVE_DRAGON_TAIL].effect == EFFECT_HIT_SWITCH_TARGET);
         ASSUME(gMovesInfo[MOVE_WHIRLWIND].effect == EFFECT_ROAR);
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DRAGON_TAIL); MOVE(player, MOVE_TACKLE, dynamax: TRUE); }
@@ -160,7 +160,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon are not affected by phazing move
     GIVEN {
         ASSUME(gMovesInfo[MOVE_DRAGON_TAIL].effect == EFFECT_HIT_SWITCH_TARGET);
         PLAYER(SPECIES_LOPMONX) { HP(1); };
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DRAGON_TAIL); MOVE(player, MOVE_TACKLE, dynamax: TRUE); SEND_OUT(player, 1); }
@@ -178,7 +178,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon are not affected by Red Card")
     GIVEN {
         ASSUME(gItemsInfo[ITEM_RED_CARD].holdEffect == HOLD_EFFECT_RED_CARD);
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE, dynamax: TRUE); MOVE(opponent, MOVE_CELEBRATE); }
@@ -196,7 +196,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon can be switched out by Eject But
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_EJECT_BUTTON); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE, dynamax: TRUE); MOVE(opponent, MOVE_TACKLE); SEND_OUT(player, 1); }
@@ -365,14 +365,14 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon can have their base moves copied
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TRICK_ROOM, dynamax: TRUE, target: opponentLeft); MOVE(playerRight, MOVE_COPYCAT, target: opponentLeft); }
     } SCENE {
         MESSAGE("Lopmonx used Max Guard!");
-        MESSAGE("Wynaut used Trick Room!");
+        MESSAGE("Exveemon used Trick Room!");
     }
 }
 
@@ -430,9 +430,9 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) Feint bypasses Max Guard but doesn't break it")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_PROTECT, dynamax: TRUE);
                MOVE(opponentLeft, MOVE_FEINT, target: playerLeft);
@@ -442,7 +442,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) Feint bypasses Max Guard but doesn't break it")
         MESSAGE("Lopmonx used Max Guard!");
         MESSAGE("Foe Lopmonx used Feint!");
         HP_BAR(playerLeft);
-        MESSAGE("Foe Wynaut used Tackle!");
+        MESSAGE("Foe Exveemon used Tackle!");
         NONE_OF { HP_BAR(playerLeft); }
     }
 }
@@ -451,16 +451,16 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon are immune to Instruct")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, dynamax: TRUE, target: opponentLeft);
                MOVE(playerRight, MOVE_INSTRUCT, target: playerLeft);
         }
     } SCENE {
         MESSAGE("Lopmonx used Max Strike!");
-        MESSAGE("Wynaut used Instruct!");
+        MESSAGE("Exveemon used Instruct!");
         MESSAGE("But it failed!");
     }
 }
@@ -704,9 +704,9 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) Max Knuckle raises both allies' attack")
         ASSUME(gMovesInfo[MOVE_CLOSE_COMBAT].category == DAMAGE_CATEGORY_PHYSICAL);
         ASSUME(gMovesInfo[MOVE_TACKLE].category == DAMAGE_CATEGORY_PHYSICAL);
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_CLOSE_COMBAT, target: opponentLeft, dynamax: TRUE); \
                MOVE(playerRight, MOVE_TACKLE, target: opponentRight); }
@@ -719,19 +719,19 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) Max Knuckle raises both allies' attack")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
         MESSAGE("Lopmonx's Attack rose!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-        MESSAGE("Wynaut's Attack rose!");
-        MESSAGE("Wynaut used Tackle!");
+        MESSAGE("Exveemon's Attack rose!");
+        MESSAGE("Exveemon used Tackle!");
         HP_BAR(opponentRight, captureDamage: &damage[1]);
         MESSAGE("Foe Lopmonx used Celebrate!");
-        MESSAGE("Foe Wynaut used Celebrate!");
+        MESSAGE("Foe Exveemon used Celebrate!");
         // turn 2
         MESSAGE("Lopmonx used Max Knuckle!");
         HP_BAR(opponentLeft, captureDamage: &damage[2]);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
         MESSAGE("Lopmonx's Attack rose!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-        MESSAGE("Wynaut's Attack rose!");
-        MESSAGE("Wynaut used Tackle!");
+        MESSAGE("Exveemon's Attack rose!");
+        MESSAGE("Exveemon used Tackle!");
         HP_BAR(opponentRight, captureDamage: &damage[3]);
     } THEN {
         EXPECT_GT(damage[2], damage[0]);
@@ -945,7 +945,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Volt Crash paralyzes both opponents")
         PLAYER(SPECIES_PETITMON) { GigantamaxFactor(TRUE); }
         PLAYER(SPECIES_GUILMON_X);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_THUNDERBOLT, target: opponentLeft, dynamax: TRUE); }
     } SCENE {
@@ -955,7 +955,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Volt Crash paralyzes both opponents")
         MESSAGE("Foe Lopmonx is paralyzed! It may be unable to move!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PRZ, opponentRight);
         STATUS_ICON(opponentRight, paralysis: TRUE);
-        MESSAGE("Foe Wynaut is paralyzed! It may be unable to move!");
+        MESSAGE("Foe Exveemon is paralyzed! It may be unable to move!");
     }
 }
 
@@ -972,7 +972,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Stun Shock paralyzes or poisons both opponen
         PLAYER(SPECIES_TOXTRICITY) { GigantamaxFactor(TRUE); }
         PLAYER(SPECIES_TOXEL);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_THUNDERBOLT, target: opponentLeft, dynamax: TRUE, \
                WITH_RNG(RNG_G_MAX_STUN_SHOCK, rng)); }
@@ -992,11 +992,11 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Stun Shock paralyzes or poisons both opponen
         ANIMATION(ANIM_TYPE_STATUS, statusAnim, opponentRight);
         if (statusAnim == B_ANIM_STATUS_PSN) {
             STATUS_ICON(opponentRight, poison: TRUE);
-            MESSAGE("Foe Wynaut was poisoned!");
+            MESSAGE("Foe Exveemon was poisoned!");
         }
         else {
             STATUS_ICON(opponentRight, paralysis: TRUE);
-            MESSAGE("Foe Wynaut is paralyzed! It may be unable to move!");
+            MESSAGE("Foe Exveemon is paralyzed! It may be unable to move!");
         }
     }
 }
@@ -1165,7 +1165,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Meltdown torments both opponents for 3 turns
         PLAYER(SPECIES_MELMETAL) { GigantamaxFactor(TRUE); }
         PLAYER(SPECIES_MELTAN);
         OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_SPLASH, MOVE_CELEBRATE); }
-        OPPONENT(SPECIES_WYNAUT) { Moves(MOVE_SPLASH, MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_EXVEEMON) { Moves(MOVE_SPLASH, MOVE_CELEBRATE); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_IRON_HEAD, target: opponentLeft, dynamax: TRUE); \
                MOVE(opponentLeft, MOVE_SPLASH); MOVE(opponentRight, MOVE_SPLASH); }
@@ -1181,15 +1181,15 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Meltdown torments both opponents for 3 turns
         // turn 1
         MESSAGE("Melmetal used G-Max Meltdown!");
         MESSAGE("Foe Lopmonx was subjected to torment!");
-        MESSAGE("Foe Wynaut was subjected to torment!");
+        MESSAGE("Foe Exveemon was subjected to torment!");
         MESSAGE("Foe Lopmonx used Splash!");
-        MESSAGE("Foe Wynaut used Splash!");
+        MESSAGE("Foe Exveemon used Splash!");
         // turn 2
         MESSAGE("Foe Lopmonx used Celebrate!");
-        MESSAGE("Foe Wynaut used Celebrate!");
+        MESSAGE("Foe Exveemon used Celebrate!");
         // end of turn 3
         MESSAGE("Foe Lopmonx is tormented no more!");
-        MESSAGE("Foe Wynaut is tormented no more!");
+        MESSAGE("Foe Exveemon is tormented no more!");
     }
 }
 
@@ -1202,7 +1202,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Wildfire sets a field effect that damages no
         PLAYER(SPECIES_CHIBOMON) { GigantamaxFactor(TRUE); }
         PLAYER(SPECIES_BOTAMON);
         OPPONENT(SPECIES_LOPMONX) { HP(600); MaxHP(600); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_GIGIMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EMBER, target: opponentLeft, dynamax: TRUE); }
@@ -1216,24 +1216,24 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Wildfire sets a field effect that damages no
         MESSAGE("The opposing team was surrounded by flames!");
         MESSAGE("Foe Lopmonx is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentLeft, captureDamage: &damage);
-        MESSAGE("Foe Wynaut is burning up within G-Max Wildfire's flames!");
+        MESSAGE("Foe Exveemon is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentRight);
         // turn 2
         MESSAGE("Foe Lopmonx is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentLeft);
-        MESSAGE("Foe Wynaut is burning up within G-Max Wildfire's flames!");
+        MESSAGE("Foe Exveemon is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentRight);
         // turn 3
         NONE_OF { MESSAGE("Foe Gigimon is burning up within G-Max Wildfire's flames!"); }
-        MESSAGE("Foe Wynaut is burning up within G-Max Wildfire's flames!");
+        MESSAGE("Foe Exveemon is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentRight);
         // turn 4
-        MESSAGE("Foe Wynaut is burning up within G-Max Wildfire's flames!");
+        MESSAGE("Foe Exveemon is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentRight);
         // turn 5
         NONE_OF {
             HP_BAR(opponentRight);
-            MESSAGE("Foe Wynaut is burning up within G-Max Wildfire's flames!");
+            MESSAGE("Foe Exveemon is burning up within G-Max Wildfire's flames!");
         }
     } THEN {
         EXPECT_EQ(damage, 100);
@@ -1341,7 +1341,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Centiferno traps both opponents in Fire Spin
         PLAYER(SPECIES_SIZZLIPEDE);
         PLAYER(SPECIES_SIZZLIPEDE);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FLAME_CHARGE, target: opponentLeft, dynamax: TRUE); }
         TURN { SWITCH(playerLeft, 2); }
@@ -1350,12 +1350,12 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Centiferno traps both opponents in Fire Spin
         MESSAGE("Centiskorc used G-Max Centiferno!");
         MESSAGE("Foe Lopmonx is hurt by Fire Spin!");
         HP_BAR(opponentLeft);
-        MESSAGE("Foe Wynaut is hurt by Fire Spin!");
+        MESSAGE("Foe Exveemon is hurt by Fire Spin!");
         HP_BAR(opponentRight);
         // turn 2 - Fire Spin continues even after Centiskorch switches out
         MESSAGE("Foe Lopmonx is hurt by Fire Spin!");
         HP_BAR(opponentLeft);
-        MESSAGE("Foe Wynaut is hurt by Fire Spin!");
+        MESSAGE("Foe Exveemon is hurt by Fire Spin!");
         HP_BAR(opponentRight);
     }
 }
@@ -1397,10 +1397,10 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Depletion takes away 2 PP from the target's 
         ASSUME(gMovesInfo[MOVE_DRAGON_CLAW].category == DAMAGE_CATEGORY_PHYSICAL); // Otherwise Blgargomon faints.
         ASSUME(gMovesInfo[MOVE_G_MAX_DEPLETION].argument == MAX_EFFECT_SPITE);
         PLAYER(SPECIES_DURALUDON) { GigantamaxFactor(TRUE); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         // Dynamax behaves weird with test turn order because stats are recalculated.
         OPPONENT(SPECIES_BLGARGOMON) { Ability(ABILITY_PRANKSTER); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_DRAGON_CLAW, target: opponentLeft, dynamax: TRUE); }
     } SCENE {
@@ -1421,7 +1421,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max One Blow bypasses Max Guard for full damage"
         PLAYER(SPECIES_URSHIFU) { GigantamaxFactor(TRUE); }
         PLAYER(SPECIES_KUBFU);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         if (protect)
             TURN { MOVE(playerLeft, MOVE_WICKED_BLOW, target: opponentLeft, dynamax: TRUE); \

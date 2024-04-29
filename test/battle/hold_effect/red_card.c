@@ -32,9 +32,9 @@ DOUBLE_BATTLE_TEST("Red Card switches the target with a random non-battler, non-
     PASSES_RANDOMLY(1, 2, RNG_FORCE_RANDOM_SWITCH);
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_ARGOMON_F);
         OPPONENT(SPECIES_BOTAMON);
         OPPONENT(SPECIES_CONOMON) { HP(0); }
@@ -54,9 +54,9 @@ SINGLE_BATTLE_TEST("Red Card does not activate if holder faints")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { HP(1); Item(ITEM_RED_CARD); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); SEND_OUT(player, 1); }
     } SCENE {
@@ -75,7 +75,7 @@ SINGLE_BATTLE_TEST("Red Card does not activate if target is behind a Substitute"
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SUBSTITUTE); MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
@@ -94,7 +94,7 @@ SINGLE_BATTLE_TEST("Red Card activates after the last hit of a multi-hit move")
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DOUBLE_KICK); }
     } SCENE {
@@ -131,7 +131,7 @@ SINGLE_BATTLE_TEST("Red Card does not activate if replacements fainted")
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT) { HP(0); }
+        OPPONENT(SPECIES_EXVEEMON) { HP(0); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
@@ -150,7 +150,7 @@ SINGLE_BATTLE_TEST("Red Card does not activate if knocked off")
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_KNOCK_OFF); }
     } SCENE {
@@ -175,7 +175,7 @@ SINGLE_BATTLE_TEST("Red Card does not activate if stolen by a move")
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
         OPPONENT(SPECIES_LOPMONX) { Item(item); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_THIEF); }
     } SCENE {
@@ -204,7 +204,7 @@ SINGLE_BATTLE_TEST("Red Card does not activate if stolen by Magician")
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
         OPPONENT(SPECIES_FENNEKIN) { Ability(ABILITY_MAGICIAN); Item(item); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
@@ -227,9 +227,9 @@ DOUBLE_BATTLE_TEST("Red Card activates for only the fastest target")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Speed(3); Item(ITEM_RED_CARD); }
-        PLAYER(SPECIES_WYNAUT) { Speed(2); Item(ITEM_RED_CARD); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(2); Item(ITEM_RED_CARD); }
         OPPONENT(SPECIES_LOPMONX) { Speed(5); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(4); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(4); }
         OPPONENT(SPECIES_LOPMON) { Speed(1); }
     } WHEN {
         TURN {
@@ -246,7 +246,7 @@ DOUBLE_BATTLE_TEST("Red Card activates for only the fastest target")
         // Slower target's Red Card still able to activate on other battler.
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerRight);
-        MESSAGE("Wynaut held up its Red Card against Foe Wynaut!");
+        MESSAGE("Exveemon held up its Red Card against Foe Exveemon!");
         MESSAGE("Foe Lopmonx was dragged out!");
     } THEN {
         EXPECT(playerLeft->item == ITEM_NONE);
@@ -258,9 +258,9 @@ DOUBLE_BATTLE_TEST("Red Card activates but fails if the attacker is rooted")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_INGRAIN); }
@@ -278,7 +278,7 @@ DOUBLE_BATTLE_TEST("Red Card activates but fails if the attacker is rooted")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerRight);
-            MESSAGE("Wynaut held up its Red Card against Foe Wynaut!");
+            MESSAGE("Exveemon held up its Red Card against Foe Exveemon!");
         }
     }
 }
@@ -287,9 +287,9 @@ DOUBLE_BATTLE_TEST("Red Card activates but fails if the attacker has Suction Cup
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_PAWNMON_WHITE) { Ability(ABILITY_SUCTION_CUPS); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMON);
     } WHEN {
         TURN {
@@ -306,22 +306,22 @@ DOUBLE_BATTLE_TEST("Red Card activates but fails if the attacker has Suction Cup
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerRight);
-            MESSAGE("Wynaut held up its Red Card against Foe Wynaut!");
+            MESSAGE("Exveemon held up its Red Card against Foe Exveemon!");
         }
     }
 }
 
 SINGLE_BATTLE_TEST("Red Card does not activate if switched by Dragon Tail")
 {
-    bool32 hasWynaut, activate;
-    PARAMETRIZE { hasWynaut = TRUE; activate = FALSE; }
-    PARAMETRIZE { hasWynaut = FALSE; activate = TRUE; }
+    bool32 hasExveemon, activate;
+    PARAMETRIZE { hasExveemon = TRUE; activate = FALSE; }
+    PARAMETRIZE { hasExveemon = FALSE; activate = TRUE; }
 
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
-        if (hasWynaut) PLAYER(SPECIES_WYNAUT);
+        if (hasExveemon) PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DRAGON_TAIL); }
     } SCENE {
@@ -343,7 +343,7 @@ SINGLE_BATTLE_TEST("Red Card activates and overrides U-turn")
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_U_TURN); }
     } SCENE {
@@ -363,7 +363,7 @@ SINGLE_BATTLE_TEST("Red Card does not activate if attacker's Sheer Force applied
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
         OPPONENT(SPECIES_CHUUMON) { Ability(ABILITY_SHEER_FORCE); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
@@ -386,7 +386,7 @@ SINGLE_BATTLE_TEST("Red Card activates before Emergency Exit")
         PLAYER(SPECIES_GOLISOPOD) { MaxHP(100); HP(51); Item(ITEM_RED_CARD); }
         PLAYER(SPECIES_WIMPOD);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); SEND_OUT(player, 1); }
     } SCENE {
@@ -403,7 +403,7 @@ SINGLE_BATTLE_TEST("Red Card is consumed after dragged out replacement has its S
     GIVEN {
         ASSUME(gMovesInfo[MOVE_STICKY_WEB].effect == EFFECT_STICKY_WEB);
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT) { Moves(MOVE_TACKLE); }
+        PLAYER(SPECIES_EXVEEMON) { Moves(MOVE_TACKLE); }
         OPPONENT(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_STICKY_WEB); }
@@ -416,13 +416,13 @@ SINGLE_BATTLE_TEST("Red Card is consumed after dragged out replacement has its S
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
         MESSAGE("Foe Lopmonx held up its Red Card against Lopmonx!");
-        MESSAGE("Wynaut was dragged out!");
-        MESSAGE("Wynaut was caught in a Sticky Web!");
+        MESSAGE("Exveemon was dragged out!");
+        MESSAGE("Exveemon was caught in a Sticky Web!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         // 3rd turn, Red Card was consumed, it can't trigger again
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-            MESSAGE("Foe Lopmonx held up its Red Card against Wynaut!");
+            MESSAGE("Foe Lopmonx held up its Red Card against Exveemon!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         }
     } THEN {
@@ -434,7 +434,7 @@ SINGLE_BATTLE_TEST("Red Card does not cause the dragged out mon to lose hp due t
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT) { Item(ITEM_LIFE_ORB); }
+        PLAYER(SPECIES_EXVEEMON) { Item(ITEM_LIFE_ORB); }
         OPPONENT(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
@@ -442,8 +442,8 @@ SINGLE_BATTLE_TEST("Red Card does not cause the dragged out mon to lose hp due t
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
         MESSAGE("Foe Lopmonx held up its Red Card against Lopmonx!");
-        MESSAGE("Wynaut was dragged out!");
-        NOT MESSAGE("Wynaut was hurt by its Life Orb!");
+        MESSAGE("Exveemon was dragged out!");
+        NOT MESSAGE("Exveemon was hurt by its Life Orb!");
     }
 }
 

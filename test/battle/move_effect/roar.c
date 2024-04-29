@@ -28,9 +28,9 @@ DOUBLE_BATTLE_TEST("Roar switches the target with a random non-battler, non-fain
     PASSES_RANDOMLY(1, 2, RNG_FORCE_RANDOM_SWITCH);
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_ARGOMON_F);
         OPPONENT(SPECIES_BOTAMON);
         OPPONENT(SPECIES_CONOMON) { HP(0); }
@@ -60,7 +60,7 @@ SINGLE_BATTLE_TEST("Roar fails if replacements fainted")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT) { HP(0); }
+        OPPONENT(SPECIES_EXVEEMON) { HP(0); }
     } WHEN {
         TURN { MOVE(player, MOVE_ROAR); }
     } SCENE {

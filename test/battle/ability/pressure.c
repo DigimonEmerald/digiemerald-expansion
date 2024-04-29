@@ -17,9 +17,9 @@ DOUBLE_BATTLE_TEST("Pressure's effect stacks with multiple Pokémon")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { MovesWithPP({MOVE_SWIFT, 20}); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX) { Ability(ABILITY_PRESSURE); }
-        OPPONENT(SPECIES_WYNAUT) { Ability(ABILITY_PRESSURE); }
+        OPPONENT(SPECIES_EXVEEMON) { Ability(ABILITY_PRESSURE); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SWIFT); }
     } THEN {

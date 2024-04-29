@@ -10,7 +10,7 @@ DOUBLE_BATTLE_TEST("Beak Blast's charging message is shown before other moves ar
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_BEAK_BLAST].priority < 0);
-        PLAYER(SPECIES_WYNAUT) { Speed(10); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(10); }
         PLAYER(SPECIES_LOPMONX) { Speed(5); }
         OPPONENT(SPECIES_LOPMONX) { Speed(2); }
         OPPONENT(SPECIES_LOPMONX) { Speed(3); }
@@ -18,7 +18,7 @@ DOUBLE_BATTLE_TEST("Beak Blast's charging message is shown before other moves ar
         TURN { MOVE(playerLeft, MOVE_BEAK_BLAST, target: opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_BEAK_BLAST_SETUP, playerLeft);
-        MESSAGE("Wynaut started heating up its beak!");
+        MESSAGE("Exveemon started heating up its beak!");
 
         MESSAGE("Lopmonx used Celebrate!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerRight);
@@ -27,7 +27,7 @@ DOUBLE_BATTLE_TEST("Beak Blast's charging message is shown before other moves ar
         MESSAGE("Foe Lopmonx used Celebrate!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentLeft);
 
-        MESSAGE("Wynaut used Beak Blast!");
+        MESSAGE("Exveemon used Beak Blast!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BEAK_BLAST, playerLeft);
         HP_BAR(opponentLeft);
     }
@@ -38,7 +38,7 @@ DOUBLE_BATTLE_TEST("Beak Blast burns all who make contact with the pokemon")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_BEAK_BLAST].priority < 0);
         ASSUME(gMovesInfo[MOVE_TACKLE].makesContact);
-        PLAYER(SPECIES_WYNAUT) { Speed(10); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(10); }
         PLAYER(SPECIES_LOPMONX) { Speed(5); }
         OPPONENT(SPECIES_LOPMONX) { Speed(3); }
         OPPONENT(SPECIES_LOPMONX) { Speed(2); }
@@ -46,7 +46,7 @@ DOUBLE_BATTLE_TEST("Beak Blast burns all who make contact with the pokemon")
         TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(opponentRight, MOVE_TACKLE, target: playerLeft); MOVE(playerLeft, MOVE_BEAK_BLAST, target: opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_BEAK_BLAST_SETUP, playerLeft);
-        MESSAGE("Wynaut started heating up its beak!");
+        MESSAGE("Exveemon started heating up its beak!");
 
         MESSAGE("Lopmonx used Celebrate!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerRight);
@@ -65,7 +65,7 @@ DOUBLE_BATTLE_TEST("Beak Blast burns all who make contact with the pokemon")
         MESSAGE("Foe Lopmonx was burned!");
         STATUS_ICON(opponentRight, burn: TRUE);
 
-        MESSAGE("Wynaut used Beak Blast!");
+        MESSAGE("Exveemon used Beak Blast!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BEAK_BLAST, playerLeft);
         HP_BAR(opponentLeft);
     }

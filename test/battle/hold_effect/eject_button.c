@@ -158,7 +158,7 @@ SINGLE_BATTLE_TEST("Eject Button prevents Volt Switch / U-Turn from activating")
         PLAYER(SPECIES_BOMNANIMON);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX) { Item(ITEM_EJECT_BUTTON); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN {
             MOVE(player, MOVE_VOLT_SWITCH);

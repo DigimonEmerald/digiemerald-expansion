@@ -102,7 +102,7 @@ DOUBLE_BATTLE_TEST("Shell Trap activates immediately after being hit on turn 1 a
         PLAYER(SPECIES_LOPMONX) { Speed(1); }
         PLAYER(SPECIES_LOPMONX) { Speed(2); }
         OPPONENT(SPECIES_LOPMONX) { Speed(5); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(1); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(1); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SHELL_TRAP); MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(playerRight, MOVE_CELEBRATE); MOVE(opponentRight, MOVE_CELEBRATE); }
     } SCENE {
@@ -115,7 +115,7 @@ DOUBLE_BATTLE_TEST("Shell Trap activates immediately after being hit on turn 1 a
         HP_BAR(opponentLeft);
         HP_BAR(opponentRight);
         MESSAGE("Lopmonx used Celebrate!");
-        MESSAGE("Foe Wynaut used Celebrate!");
+        MESSAGE("Foe Exveemon used Celebrate!");
     }
 }
 
@@ -126,13 +126,13 @@ DOUBLE_BATTLE_TEST("Shell Trap activates immediately after being hit on turn 2 a
         PLAYER(SPECIES_LOPMONX) { Speed(1); }
         PLAYER(SPECIES_LOPMONX) { Speed(2); }
         OPPONENT(SPECIES_LOPMONX) { Speed(5); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(6); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(6); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SHELL_TRAP); MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(playerRight, MOVE_CELEBRATE); MOVE(opponentRight, MOVE_CELEBRATE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SHELL_TRAP_SETUP, playerLeft);
         MESSAGE("Lopmonx set a shell trap!");
-        MESSAGE("Foe Wynaut used Celebrate!");
+        MESSAGE("Foe Exveemon used Celebrate!");
         MESSAGE("Foe Lopmonx used Tackle!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
         MESSAGE("Lopmonx used Shell Trap!");
@@ -150,14 +150,14 @@ DOUBLE_BATTLE_TEST("Shell Trap activates immediately after being hit on turn 3 a
         PLAYER(SPECIES_LOPMONX) { Speed(1); }
         PLAYER(SPECIES_LOPMONX) { Speed(7); }
         OPPONENT(SPECIES_LOPMONX) { Speed(5); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(6); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(6); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SHELL_TRAP); MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(playerRight, MOVE_CELEBRATE); MOVE(opponentRight, MOVE_CELEBRATE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SHELL_TRAP_SETUP, playerLeft);
         MESSAGE("Lopmonx set a shell trap!");
         MESSAGE("Lopmonx used Celebrate!");
-        MESSAGE("Foe Wynaut used Celebrate!");
+        MESSAGE("Foe Exveemon used Celebrate!");
         MESSAGE("Foe Lopmonx used Tackle!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
         MESSAGE("Lopmonx used Shell Trap!");

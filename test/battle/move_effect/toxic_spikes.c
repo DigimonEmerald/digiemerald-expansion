@@ -11,7 +11,7 @@ SINGLE_BATTLE_TEST("Toxic Spikes inflicts poison on switch in")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
         TURN { SWITCH(opponent, 1); }
@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Toxic Spikes inflicts poison on switch in")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC_SPIKES, player);
         MESSAGE("Poison Spikes were scattered all around the opposing team's feet!");
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
         STATUS_ICON(opponent, poison: TRUE);
     }
@@ -30,7 +30,7 @@ SINGLE_BATTLE_TEST("Toxic Spikes inflicts bad poison on switch in")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
@@ -41,7 +41,7 @@ SINGLE_BATTLE_TEST("Toxic Spikes inflicts bad poison on switch in")
         MESSAGE("Poison Spikes were scattered all around the opposing team's feet!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC_SPIKES, player);
         MESSAGE("Poison Spikes were scattered all around the opposing team's feet!");
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
         STATUS_ICON(opponent, badPoison: TRUE);
     }
@@ -52,7 +52,7 @@ SINGLE_BATTLE_TEST("Toxic Spikes fails after 2 layers")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
@@ -66,7 +66,7 @@ SINGLE_BATTLE_TEST("Toxic Spikes fails after 2 layers")
         MESSAGE("Poison Spikes were scattered all around the opposing team's feet!");
         MESSAGE("Lopmonx used Toxic Spikes!");
         MESSAGE("But it failed!");
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
         STATUS_ICON(opponent, badPoison: TRUE);
     }
@@ -77,14 +77,14 @@ SINGLE_BATTLE_TEST("Toxic Spikes inflicts poison on subsequent switch ins")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
         TURN { SWITCH(opponent, 1); }
         TURN { SWITCH(opponent, 0); }
         TURN {}
     } SCENE {
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
         STATUS_ICON(opponent, poison: TRUE);
     }
 }
@@ -215,7 +215,7 @@ SINGLE_BATTLE_TEST("Toxic Spikes inflicts poison on switch in after Primal Rever
         ASSUME(gMovesInfo[MOVE_MEMENTO].effect == EFFECT_MEMENTO); // Faints the user.
         PLAYER(SPECIES_LOPMONX) {Speed(5); }
         PLAYER(SPECIES_GROUDON) { Item(ITEM_RED_ORB); Speed(1); }
-        PLAYER(SPECIES_WYNAUT) {Speed(5); }
+        PLAYER(SPECIES_EXVEEMON) {Speed(5); }
         OPPONENT(SPECIES_LOPMONX) {Speed(15); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TOXIC_SPIKES); }
@@ -235,7 +235,7 @@ SINGLE_BATTLE_TEST("Toxic Spikes inflicts poison on switch in after Primal Rever
         MESSAGE("Groudon used Memento!");
         MESSAGE("Groudon fainted!");
         // 2nd switch-in
-        MESSAGE("Go! Wynaut!");
+        MESSAGE("Go! Exveemon!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, player);
         STATUS_ICON(player, poison: TRUE);
     }

@@ -9,16 +9,16 @@ ASSUMPTIONS
 DOUBLE_BATTLE_TEST("Doodle gives the target's ability to user and ally")
 {
     GIVEN {
-        PLAYER(SPECIES_WYNAUT);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_SYAKOMON_X) { Ability(ABILITY_BLAZE); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_DOODLE, target: opponentLeft);  }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DOODLE, playerLeft);
-        MESSAGE("Wynaut copied Foe Syakomon_x's Blaze!");
-        MESSAGE("Wynaut copied Foe Syakomon_x's Blaze!");
+        MESSAGE("Exveemon copied Foe Syakomon_x's Blaze!");
+        MESSAGE("Exveemon copied Foe Syakomon_x's Blaze!");
     } THEN {
         EXPECT(playerLeft->ability == ABILITY_BLAZE);
         EXPECT(playerRight->ability == ABILITY_BLAZE);
@@ -28,8 +28,8 @@ DOUBLE_BATTLE_TEST("Doodle gives the target's ability to user and ally")
 DOUBLE_BATTLE_TEST("Doodle can't copy a banned ability")
 {
     GIVEN {
-        PLAYER(SPECIES_WYNAUT);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
@@ -37,8 +37,8 @@ DOUBLE_BATTLE_TEST("Doodle can't copy a banned ability")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DOODLE, playerLeft);
         NONE_OF {
-            MESSAGE("Wynaut copied Foe Great Tusk's Protosynthesis!");
-            MESSAGE("Wynaut copied Foe Great Tusk's Protosynthesis!");
+            MESSAGE("Exveemon copied Foe Great Tusk's Protosynthesis!");
+            MESSAGE("Exveemon copied Foe Great Tusk's Protosynthesis!");
         }
     } THEN {
         EXPECT(playerLeft->ability != ABILITY_PROTOSYNTHESIS);
@@ -50,7 +50,7 @@ DOUBLE_BATTLE_TEST("Doodle fails if user has a banned Ability")
 {
     GIVEN {
         PLAYER(SPECIES_CRAMORANT) { Ability(ABILITY_GULP_MISSILE); }
-        PLAYER(SPECIES_WYNAUT) { Ability(ABILITY_SHADOW_TAG); }
+        PLAYER(SPECIES_EXVEEMON) { Ability(ABILITY_SHADOW_TAG); }
         OPPONENT(SPECIES_SYAKOMON_X) { Ability(ABILITY_BLAZE); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
@@ -67,7 +67,7 @@ DOUBLE_BATTLE_TEST("Doodle fails if user has a banned Ability")
 DOUBLE_BATTLE_TEST("Doodle fails if partner has a banned Ability")
 {
     GIVEN {
-        PLAYER(SPECIES_WYNAUT) { Ability(ABILITY_SHADOW_TAG); }
+        PLAYER(SPECIES_EXVEEMON) { Ability(ABILITY_SHADOW_TAG); }
         PLAYER(SPECIES_CRAMORANT) { Ability(ABILITY_GULP_MISSILE); }
         OPPONENT(SPECIES_SYAKOMON_X) { Ability(ABILITY_BLAZE); }
         OPPONENT(SPECIES_LOPMONX);

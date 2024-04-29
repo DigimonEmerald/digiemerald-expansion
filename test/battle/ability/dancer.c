@@ -40,7 +40,7 @@ DOUBLE_BATTLE_TEST("Dancer can copy Teeter Dance and confuse both opposing targe
         ASSUME(gMovesInfo[MOVE_TEETER_DANCE].danceMove == TRUE);
         ASSUME(gItemsInfo[ITEM_LUM_BERRY].holdEffect == HOLD_EFFECT_CURE_STATUS);
         PLAYER(SPECIES_LOPMONX)
-        PLAYER(SPECIES_WYNAUT) { Item(ITEM_LUM_BERRY); }
+        PLAYER(SPECIES_EXVEEMON) { Item(ITEM_LUM_BERRY); }
         OPPONENT(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); Item(ITEM_LUM_BERRY); }
         OPPONENT(SPECIES_PAGUMON) { Ability(ABILITY_OWN_TEMPO); }
     } WHEN {
@@ -50,6 +50,6 @@ DOUBLE_BATTLE_TEST("Dancer can copy Teeter Dance and confuse both opposing targe
         ABILITY_POPUP(opponentLeft, ABILITY_DANCER);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TEETER_DANCE, opponentLeft);
         MESSAGE("Lopmonx became confused!");
-        MESSAGE("Wynaut became confusef!");
+        MESSAGE("Exveemon became confusef!");
     }
 }

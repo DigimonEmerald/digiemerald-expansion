@@ -43,7 +43,7 @@ SINGLE_BATTLE_TEST("Full Restore heals a battler from any primary status")
     PARAMETRIZE{ status = STATUS1_SLEEP; }
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Status1(status); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { USE_ITEM(player, ITEM_FULL_RESTORE, partyIndex: 0); }
     } SCENE {

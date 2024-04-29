@@ -198,7 +198,7 @@ SINGLE_BATTLE_TEST("Opponent Pokemon can be further poisoned with Toxic spikes a
         ASSUME(gItemsInfo[ITEM_LUM_BERRY].holdEffect == HOLD_EFFECT_CURE_STATUS);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT) { Item(item); }
+        OPPONENT(SPECIES_EXVEEMON) { Item(item); }
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
         TURN { SWITCH(opponent, 1); }
@@ -208,14 +208,14 @@ SINGLE_BATTLE_TEST("Opponent Pokemon can be further poisoned with Toxic spikes a
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC_SPIKES, player);
         MESSAGE("Poison Spikes were scattered all around the opposing team's feet!");
         // 1st switch-in
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
         STATUS_ICON(opponent, poison: TRUE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
         if (item == ITEM_PECHA_BERRY) {
-            MESSAGE("Foe Wynaut's Pecha Berry cured poison!");
+            MESSAGE("Foe Exveemon's Pecha Berry cured poison!");
         } else {
-            MESSAGE("Foe Wynaut's Lum Berry cured its poison problem!");
+            MESSAGE("Foe Exveemon's Lum Berry cured its poison problem!");
         }
         STATUS_ICON(opponent, poison: FALSE);
         // 2nd switch-in
@@ -238,7 +238,7 @@ SINGLE_BATTLE_TEST("Player Pokemon can be further poisoned with Toxic spikes aft
         ASSUME(gItemsInfo[ITEM_LUM_BERRY].holdEffect == HOLD_EFFECT_CURE_STATUS);
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX) {Item(item); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TOXIC_SPIKES); }
@@ -260,7 +260,7 @@ SINGLE_BATTLE_TEST("Player Pokemon can be further poisoned with Toxic spikes aft
         }
         STATUS_ICON(player, poison: FALSE);
         // 2nd switch-in
-        MESSAGE("Go! Wynaut!");
+        MESSAGE("Go! Exveemon!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, player);
         STATUS_ICON(player, poison: TRUE);
     }

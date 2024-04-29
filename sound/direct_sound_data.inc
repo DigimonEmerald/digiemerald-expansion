@@ -1721,8 +1721,8 @@ Cry_Lopmon::
 .if P_FAMILY_LOPMONX == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
 	.align 2
-Cry_Wynaut::
-	.incbin "sound/direct_sound_samples/cries/wynaut.bin"
+Cry_Exveemon::
+	.incbin "sound/direct_sound_samples/cries/exveemon.bin"
 .endif @ P_GEN_3_CROSS_EVOS
 
 	.align 2

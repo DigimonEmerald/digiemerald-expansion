@@ -42,7 +42,7 @@ DOUBLE_BATTLE_TEST("Cotton Down drops speed by one of all other battlers on the 
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_ELDEGOSS) { Ability(ABILITY_COTTON_DOWN); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
@@ -53,7 +53,7 @@ DOUBLE_BATTLE_TEST("Cotton Down drops speed by one of all other battlers on the 
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
         MESSAGE("Lopmonx's Speed fell!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-        MESSAGE("Wynaut's Speed fell!");
+        MESSAGE("Exveemon's Speed fell!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
         MESSAGE("Foe Lopmonx's Speed fell!");
     } THEN {

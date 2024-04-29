@@ -11,7 +11,7 @@ SINGLE_BATTLE_TEST("Eject Pack does not cause the new pokemon to lose hp due to 
     GIVEN {
         ASSUME(gItemsInfo[ITEM_LIFE_ORB].holdEffect == HOLD_EFFECT_LIFE_ORB);
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_WYNAUT) { Item(ITEM_LIFE_ORB); }
+        PLAYER(SPECIES_EXVEEMON) { Item(ITEM_LIFE_ORB); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_OVERHEAT); SEND_OUT(player, 1); }
@@ -20,8 +20,8 @@ SINGLE_BATTLE_TEST("Eject Pack does not cause the new pokemon to lose hp due to 
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         MESSAGE("Lopmonx is switched out with the Eject Pack!");
-        MESSAGE("Go! Wynaut!");
-        NOT MESSAGE("Wynaut was hurt by its Life Orb!");
+        MESSAGE("Go! Exveemon!");
+        NOT MESSAGE("Exveemon was hurt by its Life Orb!");
     }
 }
 

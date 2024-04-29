@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Ceaseless Edge can set up to 3 layers of Spikes")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_CEASELESS_EDGE); }
         TURN { MOVE(player, MOVE_CEASELESS_EDGE); }
@@ -72,9 +72,9 @@ SINGLE_BATTLE_TEST("Ceaseless Edge can set up to 3 layers of Spikes")
         HP_BAR(opponent);
         NOT MESSAGE("Spikes were scattered all around the opposing team!");
 
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
         HP_BAR(opponent, damage: maxHP / 4);
-        MESSAGE("Foe Wynaut is hurt by spikes!");
+        MESSAGE("Foe Exveemon is hurt by spikes!");
     }
 }
 
@@ -83,7 +83,7 @@ SINGLE_BATTLE_TEST("Stone Axe can set up pointed stones only once")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_STONE_AXE); }
         TURN { MOVE(player, MOVE_STONE_AXE); }
@@ -109,9 +109,9 @@ SINGLE_BATTLE_TEST("Stone Axe can set up pointed stones only once")
         HP_BAR(opponent);
         NOT MESSAGE("Pointed stones float in the air around the opposing team!");
 
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
         HP_BAR(opponent, damage: maxHP / 8);
-        MESSAGE("Pointed stones dug into Foe Wynaut!");
+        MESSAGE("Pointed stones dug into Foe Exveemon!");
     }
 }
 

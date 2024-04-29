@@ -70,7 +70,7 @@ DOUBLE_BATTLE_TEST("Volt Absorb does not stop Electric Typed Explosion from dama
         PLAYER(SPECIES_DAMEMON) { Ability(ABILITY_VOLT_ABSORB); HP(1); MaxHP(100); }
         PLAYER(SPECIES_HOPMON);
         OPPONENT(SPECIES_MOONMON_ALOLAN) { Ability(ABILITY_GALVANIZE); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_EXPLOSION); }
     } SCENE {

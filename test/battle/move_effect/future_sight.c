@@ -116,7 +116,7 @@ SINGLE_BATTLE_TEST("Future Sight will miss timing if target faints before it is 
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_FUTURE_SIGHT); }
         TURN { MOVE(player, MOVE_CELEBRATE); }
@@ -128,7 +128,7 @@ SINGLE_BATTLE_TEST("Future Sight will miss timing if target faints before it is 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MEMENTO, opponent);
         MESSAGE("Foe Lopmonx fainted!");
-        MESSAGE("2 sent out Wynaut!");
-        NOT MESSAGE("Foe Wynaut took the Future Sight attack!");
+        MESSAGE("2 sent out Exveemon!");
+        NOT MESSAGE("Foe Exveemon took the Future Sight attack!");
     }
 }

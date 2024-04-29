@@ -43,8 +43,8 @@ DOUBLE_BATTLE_TEST("Ally Switch changes the position of battlers")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SCREECH].effect == EFFECT_DEFENSE_DOWN_2);
         ASSUME(gMovesInfo[MOVE_SCREECH].target == MOVE_TARGET_SELECTED);
-        PLAYER(SPECIES_LOPMONX) { Speed(5); } // Wobb is playerLeft, but it'll be Wynaut after Ally Switch
-        PLAYER(SPECIES_WYNAUT) { Speed(4); }
+        PLAYER(SPECIES_LOPMONX) { Speed(5); } // Wobb is playerLeft, but it'll be Exveemon after Ally Switch
+        PLAYER(SPECIES_EXVEEMON) { Speed(4); }
         OPPONENT(SPECIES_KAKKINMON) { Speed(3); }
         OPPONENT(SPECIES_HOPMON) { Speed(2); }
     } WHEN {
@@ -52,18 +52,18 @@ DOUBLE_BATTLE_TEST("Ally Switch changes the position of battlers")
     } SCENE {
         MESSAGE("Lopmonx used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
-        MESSAGE("Lopmonx and Wynaut switched places!");
+        MESSAGE("Lopmonx and Exveemon switched places!");
 
         MESSAGE("Foe Kakkinmon used Screech!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-        MESSAGE("Wynaut's Defense harshly fell!");
+        MESSAGE("Exveemon's Defense harshly fell!");
 
         MESSAGE("Foe Hopmon used Screech!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-        MESSAGE("Wynaut's Defense harshly fell!");
+        MESSAGE("Exveemon's Defense harshly fell!");
     } THEN {
         EXPECT_EQ(playerLeft->speed, 4);
-        EXPECT_EQ(playerLeft->species, SPECIES_WYNAUT);
+        EXPECT_EQ(playerLeft->species, SPECIES_EXVEEMON);
         EXPECT_EQ(playerRight->speed, 5);
         EXPECT_EQ(playerRight->species, SPECIES_LOPMONX);
     }
@@ -73,8 +73,8 @@ DOUBLE_BATTLE_TEST("Ally Switch does not redirect the target of Snipe Shot")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SNIPE_SHOT].effect == EFFECT_SNIPE_SHOT);
-        PLAYER(SPECIES_LOPMONX); // Wobb is playerLeft, but it'll be Wynaut after Ally Switch
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_LOPMONX); // Wobb is playerLeft, but it'll be Exveemon after Ally Switch
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_KAKKINMON);
         OPPONENT(SPECIES_HOPMON);
     } WHEN {
@@ -82,7 +82,7 @@ DOUBLE_BATTLE_TEST("Ally Switch does not redirect the target of Snipe Shot")
     } SCENE {
         MESSAGE("Lopmonx used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
-        MESSAGE("Lopmonx and Wynaut switched places!");
+        MESSAGE("Lopmonx and Exveemon switched places!");
 
         MESSAGE("Foe Kakkinmon used Snipe Shot!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SNIPE_SHOT, opponentLeft);
@@ -98,16 +98,16 @@ DOUBLE_BATTLE_TEST("Ally Switch does not redirect moves done by pokemon with Sta
     PARAMETRIZE { ability = ABILITY_TELEPATHY; }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX); // Wobb is playerLeft, but it'll be Wynaut after Ally Switch
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_LOPMONX); // Wobb is playerLeft, but it'll be Exveemon after Ally Switch
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_KAKKINMON) { Ability(ability); }
         OPPONENT(SPECIES_HOPMON);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(opponentLeft, MOVE_TACKLE, target:playerRight); } // Kakkinmon targets playerRight Wynaut.
+        TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(opponentLeft, MOVE_TACKLE, target:playerRight); } // Kakkinmon targets playerRight Exveemon.
     } SCENE {
         MESSAGE("Lopmonx used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
-        MESSAGE("Lopmonx and Wynaut switched places!");
+        MESSAGE("Lopmonx and Exveemon switched places!");
 
         MESSAGE("Foe Kakkinmon used Tackle!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
@@ -127,7 +127,7 @@ DOUBLE_BATTLE_TEST("Ally Switch has no effect on parnter's chosen move")
 
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT) { Moves(MOVE_TACKLE, MOVE_POUND, MOVE_CELEBRATE, MOVE_SCRATCH); }
+        PLAYER(SPECIES_EXVEEMON) { Moves(MOVE_TACKLE, MOVE_POUND, MOVE_CELEBRATE, MOVE_SCRATCH); }
         OPPONENT(SPECIES_KAKKINMON);
         OPPONENT(SPECIES_HOPMON);
     } WHEN {
@@ -135,7 +135,7 @@ DOUBLE_BATTLE_TEST("Ally Switch has no effect on parnter's chosen move")
     } SCENE {
         MESSAGE("Lopmonx used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
-        MESSAGE("Lopmonx and Wynaut switched places!");
+        MESSAGE("Lopmonx and Exveemon switched places!");
 
         ANIMATION(ANIM_TYPE_MOVE, chosenMove, playerLeft);
         HP_BAR(chosenTarget);
@@ -152,7 +152,7 @@ DOUBLE_BATTLE_TEST("Ally Switch - move fails if the target was ally which change
 
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_KAKKINMON);
         OPPONENT(SPECIES_HOPMON);
     } WHEN {
@@ -160,7 +160,7 @@ DOUBLE_BATTLE_TEST("Ally Switch - move fails if the target was ally which change
     } SCENE {
         MESSAGE("Lopmonx used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
-        MESSAGE("Lopmonx and Wynaut switched places!");
+        MESSAGE("Lopmonx and Exveemon switched places!");
 
         NOT ANIMATION(ANIM_TYPE_MOVE, move, playerLeft);
         MESSAGE("But it failed!");
@@ -177,7 +177,7 @@ DOUBLE_BATTLE_TEST("Acupressure works after ally used Ally Switch")
 
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_KAKKINMON);
         OPPONENT(SPECIES_HOPMON);
     } WHEN {
@@ -185,7 +185,7 @@ DOUBLE_BATTLE_TEST("Acupressure works after ally used Ally Switch")
     } SCENE {
         MESSAGE("Lopmonx used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
-        MESSAGE("Lopmonx and Wynaut switched places!");
+        MESSAGE("Lopmonx and Exveemon switched places!");
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ACUPRESSURE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, battlerTarget);
@@ -212,18 +212,18 @@ DOUBLE_BATTLE_TEST("Ally Switch works if ally used two-turn move like Dig")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerRight, MOVE_DIG, target:opponentRight); }
         TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); SKIP_TURN(playerRight); }
     } SCENE {
-        MESSAGE("Wynaut used Dig!");
+        MESSAGE("Exveemon used Dig!");
         MESSAGE("Lopmonx used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
-        MESSAGE("Lopmonx and Wynaut switched places!");
-        NOT MESSAGE("Wynaut used -!");
+        MESSAGE("Lopmonx and Exveemon switched places!");
+        NOT MESSAGE("Exveemon used -!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DIG);
         HP_BAR(opponentRight);
     }

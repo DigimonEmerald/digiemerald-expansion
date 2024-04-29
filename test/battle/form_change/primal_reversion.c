@@ -220,8 +220,8 @@ SINGLE_BATTLE_TEST("Primal reversion happens immediately if it was brought in by
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_GROUDON) { Item(ITEM_RED_ORB); }
-        OPPONENT(SPECIES_WYNAUT) { HP(1); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON) { HP(1); }
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
     } SCENE {
@@ -229,7 +229,7 @@ SINGLE_BATTLE_TEST("Primal reversion happens immediately if it was brought in by
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, player);
         MESSAGE("Groudon's Primal Reversion! It reverted to its primal form!");
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
     } THEN {
         EXPECT_EQ(player->species, SPECIES_GROUDON_PRIMAL);
     }
