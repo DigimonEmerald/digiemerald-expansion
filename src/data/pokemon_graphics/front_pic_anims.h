@@ -4046,8 +4046,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(BlgargomonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLGARGOMON
 
-#if P_FAMILY_MAWILE
-static const union AnimCmd sAnim_Mawile_1[] =
+#if P_FAMILY_BLGARURMON
+static const union AnimCmd sAnim_Blgarurmon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -4060,9 +4060,9 @@ static const union AnimCmd sAnim_Mawile_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(MawileMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(BlgarurmonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MAWILE
+#endif //P_FAMILY_BLGARURMON
 
 #if P_FAMILY_ARON
 static const union AnimCmd sAnim_Aron_1[] =
@@ -11124,12 +11124,12 @@ SINGLE_ANIMATION(Blgargomon);
 SINGLE_ANIMATION(BlgargomonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLGARGOMON
-#if P_FAMILY_MAWILE
-SINGLE_ANIMATION(Mawile);
+#if P_FAMILY_BLGARURMON
+SINGLE_ANIMATION(Blgarurmon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(MawileMega);
+SINGLE_ANIMATION(BlgarurmonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MAWILE
+#endif //P_FAMILY_BLGARURMON
 #if P_FAMILY_ARON
 SINGLE_ANIMATION(Aron);
 SINGLE_ANIMATION(Lairon);

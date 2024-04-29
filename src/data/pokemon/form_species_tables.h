@@ -799,15 +799,15 @@ static const u16 sBlgargomonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_BLGARGOMON
 
-#if P_FAMILY_MAWILE
-static const u16 sMawileFormSpeciesIdTable[] = {
-    SPECIES_MAWILE,
+#if P_FAMILY_BLGARURMON
+static const u16 sBlgarurmonFormSpeciesIdTable[] = {
+    SPECIES_BLGARURMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_MAWILE_MEGA,
+    SPECIES_BLGARURMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_MAWILE
+#endif //P_FAMILY_BLGARURMON
 
 #if P_FAMILY_ARON
 static const u16 sAggronFormSpeciesIdTable[] = {

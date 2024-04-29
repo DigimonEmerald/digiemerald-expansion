@@ -826,12 +826,12 @@ gCryTable::
 	cry Cry_BlgargomonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BLGARGOMON
-.if P_FAMILY_MAWILE == TRUE
-	cry Cry_Mawile
+.if P_FAMILY_BLGARURMON == TRUE
+	cry Cry_Blgarurmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_MawileMega
+	cry Cry_BlgarurmonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MAWILE
+.endif @ P_FAMILY_BLGARURMON
 .if P_FAMILY_ARON == TRUE
 	cry Cry_Aron
 	cry Cry_Lairon
@@ -3252,12 +3252,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_BlgargomonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BLGARGOMON
-.if P_FAMILY_MAWILE == TRUE
-	cry_reverse Cry_Mawile
+.if P_FAMILY_BLGARURMON == TRUE
+	cry_reverse Cry_Blgarurmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_MawileMega
+	cry_reverse Cry_BlgarurmonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MAWILE
+.endif @ P_FAMILY_BLGARURMON
 .if P_FAMILY_ARON == TRUE
 	cry_reverse Cry_Aron
 	cry_reverse Cry_Lairon

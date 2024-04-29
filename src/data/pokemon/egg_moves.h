@@ -2393,8 +2393,8 @@ const u16 gEggMoves[] = {
         MOVE_IMPRISON),
 #endif //P_FAMILY_BLGARGOMON
 
-#if P_FAMILY_MAWILE
-    egg_moves(MAWILE,
+#if P_FAMILY_BLGARURMON
+    egg_moves(BLGARURMON,
         MOVE_POISON_FANG,
         MOVE_ANCIENT_POWER,
         MOVE_TICKLE,
@@ -2410,7 +2410,7 @@ const u16 gEggMoves[] = {
         MOVE_MISTY_TERRAIN,
         MOVE_SEISMIC_TOSS,
         MOVE_POWER_UP_PUNCH),
-#endif //P_FAMILY_MAWILE
+#endif //P_FAMILY_BLGARURMON
 
 #if P_FAMILY_ARON
     egg_moves(ARON,

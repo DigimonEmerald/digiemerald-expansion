@@ -318,14 +318,14 @@ static const struct FormChange sBlgargomonFormChangeTable[] = {
 };
 #endif //P_FAMILY_BLGARGOMON
 
-#if P_FAMILY_MAWILE
-static const struct FormChange sMawileFormChangeTable[] = {
+#if P_FAMILY_BLGARURMON
+static const struct FormChange sBlgarurmonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MAWILE_MEGA, ITEM_MAWILITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BLGARURMON_MEGA, ITEM_MAWILITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_MAWILE
+#endif //P_FAMILY_BLGARURMON
 
 #if P_FAMILY_ARON
 static const struct FormChange sAggronFormChangeTable[] = {

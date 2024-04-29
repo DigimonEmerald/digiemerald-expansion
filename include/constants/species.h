@@ -304,7 +304,7 @@
 #define SPECIES_BIRDRAMON                                  300
 #define SPECIES_BLGAOGAMON                                301
 #define SPECIES_BLGARGOMON                                 302
-#define SPECIES_MAWILE                                  303
+#define SPECIES_BLGARURMON                                  303
 #define SPECIES_ARON                                    304
 #define SPECIES_LAIRON                                  305
 #define SPECIES_AGGRON                                  306
@@ -990,7 +990,7 @@
 #define SPECIES_TERRIERMON_X_MEGA                           929
 #define SPECIES_ARCADIAMON_CHAMPION_MEGA                          930
 #define SPECIES_BLGARGOMON_MEGA                            931
-#define SPECIES_MAWILE_MEGA                             932
+#define SPECIES_BLGARURMON_MEGA                             932
 #define SPECIES_AGGRON_MEGA                             933
 #define SPECIES_MEDICHAM_MEGA                           934
 #define SPECIES_MANECTRIC_MEGA                          935

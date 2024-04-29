@@ -2324,17 +2324,17 @@ Cry_BlgargomonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BLGARGOMON
 
-.if P_FAMILY_MAWILE == TRUE
+.if P_FAMILY_BLGARURMON == TRUE
 	.align 2
-Cry_Mawile::
-	.incbin "sound/direct_sound_samples/cries/mawile.bin"
+Cry_Blgarurmon::
+	.incbin "sound/direct_sound_samples/cries/blgarurmon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_MawileMega::
-	.incbin "sound/direct_sound_samples/cries/mawile_mega.bin"
+Cry_BlgarurmonMega::
+	.incbin "sound/direct_sound_samples/cries/blgarurmon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MAWILE
+.endif @ P_FAMILY_BLGARURMON
 
 .if P_FAMILY_ARON == TRUE
 	.align 2

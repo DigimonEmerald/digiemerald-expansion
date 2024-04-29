@@ -3520,14 +3520,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLGARGOMON
 
-#if P_FAMILY_MAWILE
+#if P_FAMILY_BLGARURMON
 #if P_UPDATED_TYPES >= GEN_6
-    #define MAWILE_TYPES { TYPE_STEEL, TYPE_FAIRY }
+    #define BLGARURMON_TYPES { TYPE_STEEL, TYPE_FAIRY }
 #else
-    #define MAWILE_TYPES { TYPE_STEEL, TYPE_STEEL }
+    #define BLGARURMON_TYPES { TYPE_STEEL, TYPE_STEEL }
 #endif
 
-    [SPECIES_MAWILE] =
+    [SPECIES_BLGARURMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 85,
@@ -3535,7 +3535,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 55,
         .baseSpDefense = 55,
-        .types = MAWILE_TYPES,
+        .types = BLGARURMON_TYPES,
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 133 : 98,
         .evYield_Attack = 1,
@@ -3548,9 +3548,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
         .abilities = { ABILITY_HYPER_CUTTER, ABILITY_INTIMIDATE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Mawile"),
-        .cryId = CRY_MAWILE,
-        .natDexNum = NATIONAL_DEX_MAWILE,
+        .speciesName = _("Blgarurmon"),
+        .cryId = CRY_BLGARURMON,
+        .natDexNum = NATIONAL_DEX_BLGARURMON,
         .categoryName = _("Deceiver"),
         .height = 6,
         .weight = 115,
@@ -3563,28 +3563,28 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Mawile,
+        .frontPic = gMonFrontPic_Blgarurmon,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Mawile,
+        .frontAnimFrames = sAnims_Blgarurmon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Mawile,
+        .backPic = gMonBackPic_Blgarurmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Mawile,
-        .shinyPalette = gMonShinyPalette_Mawile,
-        .iconSprite = gMonIcon_Mawile,
+        .palette = gMonPalette_Blgarurmon,
+        .shinyPalette = gMonShinyPalette_Blgarurmon,
+        .iconSprite = gMonIcon_Blgarurmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Mawile)
-        .levelUpLearnset = sMawileLevelUpLearnset,
-        .teachableLearnset = sMawileTeachableLearnset,
-        .formSpeciesIdTable = sMawileFormSpeciesIdTable,
-        .formChangeTable = sMawileFormChangeTable,
+        FOOTPRINT(Blgarurmon)
+        .levelUpLearnset = sBlgarurmonLevelUpLearnset,
+        .teachableLearnset = sBlgarurmonTeachableLearnset,
+        .formSpeciesIdTable = sBlgarurmonFormSpeciesIdTable,
+        .formChangeTable = sBlgarurmonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_MAWILE_MEGA] =
+    [SPECIES_BLGARURMON_MEGA] =
     {
         .baseHP        = 50,
         .baseAttack    = 105,
@@ -3592,7 +3592,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 55,
         .baseSpDefense = 95,
-        .types = MAWILE_TYPES,
+        .types = BLGARURMON_TYPES,
         .catchRate = 45,
         .expYield = 168,
         .evYield_Attack = 1,
@@ -3604,9 +3604,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
         .abilities = { ABILITY_HUGE_POWER, ABILITY_HUGE_POWER, ABILITY_HUGE_POWER },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Mawile"),
-        .cryId = CRY_MAWILE_MEGA,
-        .natDexNum = NATIONAL_DEX_MAWILE,
+        .speciesName = _("Blgarurmon"),
+        .cryId = CRY_BLGARURMON_MEGA,
+        .natDexNum = NATIONAL_DEX_BLGARURMON,
         .categoryName = _("Deceiver"),
         .height = 10,
         .weight = 235,
@@ -3619,28 +3619,28 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_MawileMega,
+        .frontPic = gMonFrontPic_BlgarurmonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_MawileMega,
+        .frontAnimFrames = sAnims_BlgarurmonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_MawileMega,
+        .backPic = gMonBackPic_BlgarurmonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_MawileMega,
-        .shinyPalette = gMonShinyPalette_MawileMega,
-        .iconSprite = gMonIcon_MawileMega,
+        .palette = gMonPalette_BlgarurmonMega,
+        .shinyPalette = gMonShinyPalette_BlgarurmonMega,
+        .iconSprite = gMonIcon_BlgarurmonMega,
         .iconPalIndex = 0,
-        FOOTPRINT(Mawile)
+        FOOTPRINT(Blgarurmon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sMawileLevelUpLearnset,
-        .teachableLearnset = sMawileTeachableLearnset,
-        .formSpeciesIdTable = sMawileFormSpeciesIdTable,
-        .formChangeTable = sMawileFormChangeTable,
+        .levelUpLearnset = sBlgarurmonLevelUpLearnset,
+        .teachableLearnset = sBlgarurmonTeachableLearnset,
+        .formSpeciesIdTable = sBlgarurmonFormSpeciesIdTable,
+        .formChangeTable = sBlgarurmonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MAWILE
+#endif //P_FAMILY_BLGARURMON
 
 #if P_FAMILY_ARON
     [SPECIES_ARON] =

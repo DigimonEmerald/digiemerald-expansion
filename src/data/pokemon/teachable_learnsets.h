@@ -14465,8 +14465,8 @@ static const u16 sBlgargomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BLGARGOMON
 
-#if P_FAMILY_MAWILE
-static const u16 sMawileTeachableLearnset[] = {
+#if P_FAMILY_BLGARURMON
+static const u16 sBlgarurmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DOUBLE_TEAM,
@@ -14511,7 +14511,7 @@ static const u16 sMawileTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MAWILE
+#endif //P_FAMILY_BLGARURMON
 
 #if P_FAMILY_ARON
 static const u16 sAronTeachableLearnset[] = {
