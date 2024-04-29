@@ -2819,17 +2819,17 @@ Cry_Garurumon::
 	.incbin "sound/direct_sound_samples/cries/garurumon.bin"
 .endif @ P_FAMILY_GARURUMON
 
-.if P_FAMILY_LATIAS == TRUE
+.if P_FAMILY_GARURUMON_X == TRUE
 	.align 2
-Cry_Latias::
-	.incbin "sound/direct_sound_samples/cries/latias.bin"
+Cry_Garurumon_x::
+	.incbin "sound/direct_sound_samples/cries/garurumon_x.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_LatiasMega::
-	.incbin "sound/direct_sound_samples/cries/latias_mega.bin"
+Cry_Garurumon_xMega::
+	.incbin "sound/direct_sound_samples/cries/garurumon_x_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_LATIAS
+.endif @ P_FAMILY_GARURUMON_X
 
 .if P_FAMILY_LATIOS == TRUE
 	.align 2

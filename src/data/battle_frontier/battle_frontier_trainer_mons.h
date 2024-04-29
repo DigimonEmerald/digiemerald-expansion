@@ -2729,7 +2729,7 @@
     FRONTIER_MON_BABOONMON_4,     \
     -1
 
-// Cooltrainer M uses Latios, Cooltrainer F uses Latias
+// Cooltrainer M uses Latios, Cooltrainer F uses Garurumon_x
 #define FRONTIER_MONS_COOLTRAINER_2C(lati)  \
     FRONTIER_MON_TSUMEMON_1,      \
     FRONTIER_MON_OTAMAMON_1,    \
@@ -2834,7 +2834,7 @@
     -1
 
 // Also used by Pkmn Ranger M/F
-// For both classes, M uses Latios and F uses Latias
+// For both classes, M uses Latios and F uses Garurumon_x
 #define FRONTIER_MONS_COOLTRAINER_2D(lati)  \
     FRONTIER_MON_DRACOMON_X_1,    \
     FRONTIER_MON_EBIBURGMON_1,      \
@@ -3578,22 +3578,22 @@
     FRONTIER_MON_PSYCHEMON_4,     \
     FRONTIER_MON_DOKUGUMON_4,     \
     FRONTIER_MON_FROGMON_4,   \
-    FRONTIER_MON_LATIAS_1,      \
+    FRONTIER_MON_GARURUMON_X_1,      \
     FRONTIER_MON_LATIOS_1,      \
-    FRONTIER_MON_LATIAS_2,      \
+    FRONTIER_MON_GARURUMON_X_2,      \
     FRONTIER_MON_LATIOS_2,      \
-    FRONTIER_MON_LATIAS_3,      \
+    FRONTIER_MON_GARURUMON_X_3,      \
     FRONTIER_MON_LATIOS_3,      \
-    FRONTIER_MON_LATIAS_4,      \
+    FRONTIER_MON_GARURUMON_X_4,      \
     FRONTIER_MON_LATIOS_4,      \
     FRONTIER_MON_FROGMON_5,   \
     FRONTIER_MON_FROGMON_6,   \
     FRONTIER_MON_FROGMON_7,   \
     FRONTIER_MON_FROGMON_8,   \
-    FRONTIER_MON_LATIAS_5,      \
-    FRONTIER_MON_LATIAS_6,      \
-    FRONTIER_MON_LATIAS_7,      \
-    FRONTIER_MON_LATIAS_8,      \
+    FRONTIER_MON_GARURUMON_X_5,      \
+    FRONTIER_MON_GARURUMON_X_6,      \
+    FRONTIER_MON_GARURUMON_X_7,      \
+    FRONTIER_MON_GARURUMON_X_8,      \
     FRONTIER_MON_LATIOS_5,      \
     FRONTIER_MON_LATIOS_6,      \
     FRONTIER_MON_LATIOS_7,      \
@@ -3964,7 +3964,7 @@
     FRONTIER_MON_##lastmon##_10,\
     -1
 
-// For this group, Expert M uses Latios, Expert F uses Latias
+// For this group, Expert M uses Latios, Expert F uses Garurumon_x
 #define FRONTIER_MONS_EXPERT_2B(lati) \
     FRONTIER_MON_LOOGAMON_1,  \
     FRONTIER_MON_SAMUAGUMON_1,        \
@@ -4173,7 +4173,7 @@
     -1
 
 // The strong Psychic M/F trainers all use the below Pokémon
-// Additionally they use 1 of 3 legendary trios, and Latios or Latias depending on gender
+// Additionally they use 1 of 3 legendary trios, and Latios or Garurumon_x depending on gender
 #define FRONTIER_MONS_PSYCHIC_2(lati, legend1, legend2, legend3) \
     FRONTIER_MON_LOPMONX_1,   \
     FRONTIER_MON_LOPMONX_2,   \
@@ -4726,7 +4726,7 @@
     FRONTIER_MON_SPADAMON_10,  \
     -1
 
-// Identical to FRONTIER_MONS_COOLTRAINER_2C but with both latias and latios
+// Identical to FRONTIER_MONS_COOLTRAINER_2C but with both garurumon_x and latios
 #define FRONTIER_MONS_GENTLEMAN_3A \
     FRONTIER_MON_TSUMEMON_1,      \
     FRONTIER_MON_OTAMAMON_1,    \
@@ -4764,13 +4764,13 @@
     FRONTIER_MON_DRACOMON_4,     \
     FRONTIER_MON_FROGMON_4,   \
     FRONTIER_MON_GAOGAMON_4,   \
-    FRONTIER_MON_LATIAS_1,      \
+    FRONTIER_MON_GARURUMON_X_1,      \
     FRONTIER_MON_LATIOS_1,      \
-    FRONTIER_MON_LATIAS_2,      \
+    FRONTIER_MON_GARURUMON_X_2,      \
     FRONTIER_MON_LATIOS_2,      \
-    FRONTIER_MON_LATIAS_3,      \
+    FRONTIER_MON_GARURUMON_X_3,      \
     FRONTIER_MON_LATIOS_3,      \
-    FRONTIER_MON_LATIAS_4,      \
+    FRONTIER_MON_GARURUMON_X_4,      \
     FRONTIER_MON_LATIOS_4,      \
     FRONTIER_MON_TSUMEMON_5,      \
     FRONTIER_MON_TSUMEMON_6,      \
@@ -4830,7 +4830,7 @@
     FRONTIER_MON_SPADAMON_10,  \
     -1
 
-// Identical to FRONTIER_MONS_COOLTRAINER_2D but with both latias and latios
+// Identical to FRONTIER_MONS_COOLTRAINER_2D but with both garurumon_x and latios
 #define FRONTIER_MONS_GENTLEMAN_3B  \
     FRONTIER_MON_DRACOMON_X_1,    \
     FRONTIER_MON_EBIBURGMON_1,      \
@@ -4841,7 +4841,7 @@
     FRONTIER_MON_GARGOMON_1,    \
     FRONTIER_MON_GARGOYLMON_1,      \
     FRONTIER_MON_GARURUMON_1,   \
-    FRONTIER_MON_LATIAS_1,      \
+    FRONTIER_MON_GARURUMON_X_1,      \
     FRONTIER_MON_LATIOS_1,      \
     FRONTIER_MON_DRACOMON_X_2,    \
     FRONTIER_MON_EBIBURGMON_2,      \
@@ -4852,7 +4852,7 @@
     FRONTIER_MON_GARGOMON_2,    \
     FRONTIER_MON_GARGOYLMON_2,      \
     FRONTIER_MON_GARURUMON_2,   \
-    FRONTIER_MON_LATIAS_2,      \
+    FRONTIER_MON_GARURUMON_X_2,      \
     FRONTIER_MON_LATIOS_2,      \
     FRONTIER_MON_DRACOMON_X_3,    \
     FRONTIER_MON_EBIBURGMON_3,      \
@@ -4863,7 +4863,7 @@
     FRONTIER_MON_GARGOMON_3,    \
     FRONTIER_MON_GARGOYLMON_3,      \
     FRONTIER_MON_GARURUMON_3,   \
-    FRONTIER_MON_LATIAS_3,      \
+    FRONTIER_MON_GARURUMON_X_3,      \
     FRONTIER_MON_LATIOS_3,      \
     FRONTIER_MON_DRACOMON_X_4,    \
     FRONTIER_MON_EBIBURGMON_4,      \
@@ -4874,7 +4874,7 @@
     FRONTIER_MON_GARGOMON_4,    \
     FRONTIER_MON_GARGOYLMON_4,      \
     FRONTIER_MON_GARURUMON_4,   \
-    FRONTIER_MON_LATIAS_4,      \
+    FRONTIER_MON_GARURUMON_X_4,      \
     FRONTIER_MON_LATIOS_4,      \
     FRONTIER_MON_GARGOMON_5,    \
     FRONTIER_MON_GARGOMON_6,    \
@@ -4882,10 +4882,10 @@
     FRONTIER_MON_GARGOYLMON_6,      \
     FRONTIER_MON_GARURUMON_5,   \
     FRONTIER_MON_GARURUMON_6,   \
-    FRONTIER_MON_LATIAS_5,      \
-    FRONTIER_MON_LATIAS_6,      \
-    FRONTIER_MON_LATIAS_7,      \
-    FRONTIER_MON_LATIAS_8,      \
+    FRONTIER_MON_GARURUMON_X_5,      \
+    FRONTIER_MON_GARURUMON_X_6,      \
+    FRONTIER_MON_GARURUMON_X_7,      \
+    FRONTIER_MON_GARURUMON_X_8,      \
     FRONTIER_MON_LATIOS_5,      \
     FRONTIER_MON_LATIOS_6,      \
     FRONTIER_MON_LATIOS_7,      \
@@ -5364,8 +5364,8 @@
     FRONTIER_MON_GARGOYLMON_4,      \
     FRONTIER_MON_GARURUMON_4,   \
     FRONTIER_MON_BOKOMON_6,     \
-    FRONTIER_MON_LATIAS_5,      \
-    FRONTIER_MON_LATIAS_6,      \
+    FRONTIER_MON_GARURUMON_X_5,      \
+    FRONTIER_MON_GARURUMON_X_6,      \
     FRONTIER_MON_LATIOS_5,      \
     FRONTIER_MON_LATIOS_6,      \
     -1
@@ -5764,7 +5764,7 @@
     FRONTIER_MON_ARCADIAMON_CHAMPION_8,   \
     FRONTIER_MON_CORONAMON_8,      \
     FRONTIER_MON_FROGMON_8,   \
-    FRONTIER_MON_LATIAS_6,      \
+    FRONTIER_MON_GARURUMON_X_6,      \
     -1
 
 #define FRONTIER_MONS_AROMA_LADY_3  \
@@ -7000,12 +7000,12 @@ const u16 gBattleFrontierTrainerMons_Miriam[] =
 
 const u16 gBattleFrontierTrainerMons_Carrie[] =
 {
-    FRONTIER_MONS_COOLTRAINER_2C(LATIAS)
+    FRONTIER_MONS_COOLTRAINER_2C(GARURUMON_X)
 };
 
 const u16 gBattleFrontierTrainerMons_Gillian2[] =
 {
-    FRONTIER_MONS_COOLTRAINER_2D(LATIAS)
+    FRONTIER_MONS_COOLTRAINER_2D(GARURUMON_X)
 };
 
 const u16 gBattleFrontierTrainerMons_Tyler[] =
@@ -7035,7 +7035,7 @@ const u16 gBattleFrontierTrainerMons_Stella[] =
 
 const u16 gBattleFrontierTrainerMons_Dorine[] =
 {
-    FRONTIER_MONS_COOLTRAINER_2D(LATIAS)
+    FRONTIER_MONS_COOLTRAINER_2D(GARURUMON_X)
 };
 
 const u16 gBattleFrontierTrainerMons_Maddox[] =
@@ -7105,7 +7105,7 @@ const u16 gBattleFrontierTrainerMons_Nadia[] =
 
 const u16 gBattleFrontierTrainerMons_Miranda[] =
 {
-    FRONTIER_MONS_EXPERT_2B(LATIAS)
+    FRONTIER_MONS_EXPERT_2B(GARURUMON_X)
 };
 
 const u16 gBattleFrontierTrainerMons_Emma[] =
@@ -7130,17 +7130,17 @@ const u16 gBattleFrontierTrainerMons_Dario[] =
 
 const u16 gBattleFrontierTrainerMons_Karlee[] =
 {
-    FRONTIER_MONS_PSYCHIC_2A(LATIAS)
+    FRONTIER_MONS_PSYCHIC_2A(GARURUMON_X)
 };
 
 const u16 gBattleFrontierTrainerMons_Jaylin[] =
 {
-    FRONTIER_MONS_PSYCHIC_2B(LATIAS)
+    FRONTIER_MONS_PSYCHIC_2B(GARURUMON_X)
 };
 
 const u16 gBattleFrontierTrainerMons_Ingrid[] =
 {
-    FRONTIER_MONS_PSYCHIC_2C(LATIAS)
+    FRONTIER_MONS_PSYCHIC_2C(GARURUMON_X)
 };
 
 const u16 gBattleFrontierTrainerMons_Delilah[] =

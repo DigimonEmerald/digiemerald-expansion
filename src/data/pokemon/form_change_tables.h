@@ -448,14 +448,14 @@ static const struct FormChange sGaogamonFormChangeTable[] = {
 };
 #endif //P_FAMILY_FUGAMON
 
-#if P_FAMILY_LATIAS
-static const struct FormChange sLatiasFormChangeTable[] = {
+#if P_FAMILY_GARURUMON_X
+static const struct FormChange sGarurumon_xFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_LATIAS_MEGA, ITEM_LATIASITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_GARURUMON_X_MEGA, ITEM_GARURUMON_XITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_LATIAS
+#endif //P_FAMILY_GARURUMON_X
 
 #if P_FAMILY_LATIOS
 static const struct FormChange sLatiosFormChangeTable[] = {

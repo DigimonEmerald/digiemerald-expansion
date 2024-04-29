@@ -5109,8 +5109,8 @@ static const union AnimCmd sAnim_Garurumon_1[] =
 };
 #endif //P_FAMILY_GARURUMON
 
-#if P_FAMILY_LATIAS
-static const union AnimCmd sAnim_Latias_1[] =
+#if P_FAMILY_GARURUMON_X
+static const union AnimCmd sAnim_Garurumon_x_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -5121,9 +5121,9 @@ static const union AnimCmd sAnim_Latias_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(LatiasMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Garurumon_xMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_LATIAS
+#endif //P_FAMILY_GARURUMON_X
 
 #if P_FAMILY_LATIOS
 static const union AnimCmd sAnim_Latios_1[] =
@@ -11344,12 +11344,12 @@ SINGLE_ANIMATION(Gargoylmon);
 #if P_FAMILY_GARURUMON
 SINGLE_ANIMATION(Garurumon);
 #endif //P_FAMILY_GARURUMON
-#if P_FAMILY_LATIAS
-SINGLE_ANIMATION(Latias);
+#if P_FAMILY_GARURUMON_X
+SINGLE_ANIMATION(Garurumon_x);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(LatiasMega);
+SINGLE_ANIMATION(Garurumon_xMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_LATIAS
+#endif //P_FAMILY_GARURUMON_X
 #if P_FAMILY_LATIOS
 SINGLE_ANIMATION(Latios);
 #if P_MEGA_EVOLUTIONS

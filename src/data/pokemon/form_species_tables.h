@@ -929,15 +929,15 @@ static const u16 sGaogamonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_FUGAMON
 
-#if P_FAMILY_LATIAS
-static const u16 sLatiasFormSpeciesIdTable[] = {
-    SPECIES_LATIAS,
+#if P_FAMILY_GARURUMON_X
+static const u16 sGarurumon_xFormSpeciesIdTable[] = {
+    SPECIES_GARURUMON_X,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_LATIAS_MEGA,
+    SPECIES_GARURUMON_X_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_LATIAS
+#endif //P_FAMILY_GARURUMON_X
 
 #if P_FAMILY_LATIOS
 static const u16 sLatiosFormSpeciesIdTable[] = {

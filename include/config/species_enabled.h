@@ -251,7 +251,7 @@
 #define P_FAMILY_GARGOMON                P_GEN_3_POKEMON
 #define P_FAMILY_GARGOYLMON                  P_GEN_3_POKEMON
 #define P_FAMILY_GARURUMON               P_GEN_3_POKEMON
-#define P_FAMILY_LATIAS                  P_GEN_3_POKEMON
+#define P_FAMILY_GARURUMON_X                  P_GEN_3_POKEMON
 #define P_FAMILY_LATIOS                  P_GEN_3_POKEMON
 #define P_FAMILY_KYOGRE                  P_GEN_3_POKEMON
 #define P_FAMILY_GROUDON                 P_GEN_3_POKEMON

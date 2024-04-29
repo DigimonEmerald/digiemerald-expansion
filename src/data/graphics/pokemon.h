@@ -5485,24 +5485,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_GARURUMON
 
-#if P_FAMILY_LATIAS
-    const u32 gMonFrontPic_Latias[] = INCBIN_U32("graphics/pokemon/latias/anim_front.4bpp.lz");
-    const u32 gMonPalette_Latias[] = INCBIN_U32("graphics/pokemon/latias/normal.gbapal.lz");
-    const u32 gMonBackPic_Latias[] = INCBIN_U32("graphics/pokemon/latias/back.4bpp.lz");
-    const u32 gMonShinyPalette_Latias[] = INCBIN_U32("graphics/pokemon/latias/shiny.gbapal.lz");
-    const u8 gMonIcon_Latias[] = INCBIN_U8("graphics/pokemon/latias/icon.4bpp");
+#if P_FAMILY_GARURUMON_X
+    const u32 gMonFrontPic_Garurumon_x[] = INCBIN_U32("graphics/pokemon/garurumon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Garurumon_x[] = INCBIN_U32("graphics/pokemon/garurumon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Garurumon_x[] = INCBIN_U32("graphics/pokemon/garurumon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Garurumon_x[] = INCBIN_U32("graphics/pokemon/garurumon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Garurumon_x[] = INCBIN_U8("graphics/pokemon/garurumon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Latias[] = INCBIN_U8("graphics/pokemon/latias/footprint.1bpp");
+    const u8 gMonFootprint_Garurumon_x[] = INCBIN_U8("graphics/pokemon/garurumon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_LatiasMega[] = INCBIN_U32("graphics/pokemon/latias/mega/front.4bpp.lz");
-    const u32 gMonPalette_LatiasMega[] = INCBIN_U32("graphics/pokemon/latias/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_LatiasMega[] = INCBIN_U32("graphics/pokemon/latias/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_LatiasMega[] = INCBIN_U32("graphics/pokemon/latias/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_LatiasMega[] = INCBIN_U8("graphics/pokemon/latias/mega/icon.4bpp");
+    const u32 gMonFrontPic_Garurumon_xMega[] = INCBIN_U32("graphics/pokemon/garurumon_x/mega/front.4bpp.lz");
+    const u32 gMonPalette_Garurumon_xMega[] = INCBIN_U32("graphics/pokemon/garurumon_x/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_Garurumon_xMega[] = INCBIN_U32("graphics/pokemon/garurumon_x/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_Garurumon_xMega[] = INCBIN_U32("graphics/pokemon/garurumon_x/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_Garurumon_xMega[] = INCBIN_U8("graphics/pokemon/garurumon_x/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_LATIAS
+#endif //P_FAMILY_GARURUMON_X
 
 #if P_FAMILY_LATIOS
     const u32 gMonFrontPic_Latios[] = INCBIN_U32("graphics/pokemon/latios/anim_front.4bpp.lz");

@@ -1043,12 +1043,12 @@ gCryTable::
 .if P_FAMILY_GARURUMON == TRUE
 	cry Cry_Garurumon
 .endif @ P_FAMILY_GARURUMON
-.if P_FAMILY_LATIAS == TRUE
-	cry Cry_Latias
+.if P_FAMILY_GARURUMON_X == TRUE
+	cry Cry_Garurumon_x
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_LatiasMega
+	cry Cry_Garurumon_xMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_LATIAS
+.endif @ P_FAMILY_GARURUMON_X
 .if P_FAMILY_LATIOS == TRUE
 	cry Cry_Latios
 .if P_MEGA_EVOLUTIONS == TRUE
@@ -3469,12 +3469,12 @@ gCryTable_Reverse::
 .if P_FAMILY_GARURUMON == TRUE
 	cry_reverse Cry_Garurumon
 .endif @ P_FAMILY_GARURUMON
-.if P_FAMILY_LATIAS == TRUE
-	cry_reverse Cry_Latias
+.if P_FAMILY_GARURUMON_X == TRUE
+	cry_reverse Cry_Garurumon_x
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_LatiasMega
+	cry_reverse Cry_Garurumon_xMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_LATIAS
+.endif @ P_FAMILY_GARURUMON_X
 .if P_FAMILY_LATIOS == TRUE
 	cry_reverse Cry_Latios
 .if P_MEGA_EVOLUTIONS == TRUE

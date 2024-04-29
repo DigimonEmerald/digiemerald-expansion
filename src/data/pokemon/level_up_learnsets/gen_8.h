@@ -9964,8 +9964,8 @@ static const struct LevelUpMove sGarurumonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_GARURUMON
 
-#if P_FAMILY_LATIAS
-static const struct LevelUpMove sLatiasLevelUpLearnset[] = {
+#if P_FAMILY_GARURUMON_X
+static const struct LevelUpMove sGarurumon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_STORED_POWER),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
     LEVEL_UP_MOVE( 5, MOVE_HELPING_HAND),
@@ -9985,7 +9985,7 @@ static const struct LevelUpMove sLatiasLevelUpLearnset[] = {
     LEVEL_UP_MOVE(75, MOVE_PSYCHO_SHIFT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_LATIAS
+#endif //P_FAMILY_GARURUMON_X
 
 #if P_FAMILY_LATIOS
 static const struct LevelUpMove sLatiosLevelUpLearnset[] = {

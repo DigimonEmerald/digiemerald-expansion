@@ -9039,8 +9039,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_GARURUMON
 
-#if P_FAMILY_LATIAS
-    [SPECIES_LATIAS] =
+#if P_FAMILY_GARURUMON_X
+    [SPECIES_GARURUMON_X] =
     {
         .baseHP        = 80,
         .baseAttack    = 80,
@@ -9065,9 +9065,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Latias"),
-        .cryId = CRY_LATIAS,
-        .natDexNum = NATIONAL_DEX_LATIAS,
+        .speciesName = _("Garurumon_x"),
+        .cryId = CRY_GARURUMON_X,
+        .natDexNum = NATIONAL_DEX_GARURUMON_X,
         .categoryName = _("Eon"),
         .height = 14,
         .weight = 400,
@@ -9080,30 +9080,30 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Latias,
+        .frontPic = gMonFrontPic_Garurumon_x,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Latias,
+        .frontAnimFrames = sAnims_Garurumon_x,
         .frontAnimId = ANIM_ZIGZAG_SLOW,
         .enemyMonElevation = 12,
-        .backPic = gMonBackPic_Latias,
+        .backPic = gMonBackPic_Garurumon_x,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Latias,
-        .shinyPalette = gMonShinyPalette_Latias,
-        .iconSprite = gMonIcon_Latias,
+        .palette = gMonPalette_Garurumon_x,
+        .shinyPalette = gMonShinyPalette_Garurumon_x,
+        .iconSprite = gMonIcon_Garurumon_x,
         .iconPalIndex = 0,
-        FOOTPRINT(Latias)
+        FOOTPRINT(Garurumon_x)
         .isLegendary = TRUE,
-        .levelUpLearnset = sLatiasLevelUpLearnset,
-        .teachableLearnset = sLatiasTeachableLearnset,
-        .formSpeciesIdTable = sLatiasFormSpeciesIdTable,
-        .formChangeTable = sLatiasFormChangeTable,
+        .levelUpLearnset = sGarurumon_xLevelUpLearnset,
+        .teachableLearnset = sGarurumon_xTeachableLearnset,
+        .formSpeciesIdTable = sGarurumon_xFormSpeciesIdTable,
+        .formChangeTable = sGarurumon_xFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_LATIAS_MEGA] =
+    [SPECIES_GARURUMON_X_MEGA] =
     {
         .baseHP        = 80,
         .baseAttack    = 100,
@@ -9122,9 +9122,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Latias"),
-        .cryId = CRY_LATIAS_MEGA,
-        .natDexNum = NATIONAL_DEX_LATIAS,
+        .speciesName = _("Garurumon_x"),
+        .cryId = CRY_GARURUMON_X_MEGA,
+        .natDexNum = NATIONAL_DEX_GARURUMON_X,
         .categoryName = _("Eon"),
         .height = 18,
         .weight = 520,
@@ -9137,30 +9137,30 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_LatiasMega,
+        .frontPic = gMonFrontPic_Garurumon_xMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_LatiasMega,
+        .frontAnimFrames = sAnims_Garurumon_xMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 8,
-        .backPic = gMonBackPic_LatiasMega,
+        .backPic = gMonBackPic_Garurumon_xMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_LatiasMega,
-        .shinyPalette = gMonShinyPalette_LatiasMega,
-        .iconSprite = gMonIcon_LatiasMega,
+        .palette = gMonPalette_Garurumon_xMega,
+        .shinyPalette = gMonShinyPalette_Garurumon_xMega,
+        .iconSprite = gMonIcon_Garurumon_xMega,
         .iconPalIndex = 2,
-        FOOTPRINT(Latias)
+        FOOTPRINT(Garurumon_x)
         .isLegendary = TRUE,
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sLatiasLevelUpLearnset,
-        .teachableLearnset = sLatiasTeachableLearnset,
-        .formSpeciesIdTable = sLatiasFormSpeciesIdTable,
-        .formChangeTable = sLatiasFormChangeTable,
+        .levelUpLearnset = sGarurumon_xLevelUpLearnset,
+        .teachableLearnset = sGarurumon_xTeachableLearnset,
+        .formSpeciesIdTable = sGarurumon_xFormSpeciesIdTable,
+        .formChangeTable = sGarurumon_xFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_LATIAS
+#endif //P_FAMILY_GARURUMON_X
 
 #if P_FAMILY_LATIOS
     [SPECIES_LATIOS] =
@@ -9252,7 +9252,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 23,
         .weight = 700,
         .description = COMPOUND_STRING(
-            "It's larger than Mega Latias, and can\n"
+            "It's larger than Mega Garurumon_x, and can\n"
             "achieve higher speeds in flight.\n"
             "This Pokémon can use its speed in battle\n"
             "to unleash a flurry of attacks."),
