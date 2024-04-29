@@ -228,9 +228,9 @@ SINGLE_BATTLE_TEST("Roost, if used by a Mystery/Flying type, treats the user as 
 DOUBLE_BATTLE_TEST("Roost suppresses the user's not-yet-aquired Flying-type this turn")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_KECLEON].types[0] != TYPE_FLYING);
-        ASSUME(gSpeciesInfo[SPECIES_KECLEON].types[1] != TYPE_FLYING);
-        PLAYER(SPECIES_KECLEON) { Speed(40); HP(150); Ability(ABILITY_COLOR_CHANGE); }
+        ASSUME(gSpeciesInfo[SPECIES_DONSHOUMON].types[0] != TYPE_FLYING);
+        ASSUME(gSpeciesInfo[SPECIES_DONSHOUMON].types[1] != TYPE_FLYING);
+        PLAYER(SPECIES_DONSHOUMON) { Speed(40); HP(150); Ability(ABILITY_COLOR_CHANGE); }
         PLAYER(SPECIES_LOPMONX) { Speed(10); }
         OPPONENT(SPECIES_KETOMON) { Speed(30); }
         OPPONENT(SPECIES_POPOMON) { Speed(20); }
@@ -239,15 +239,15 @@ DOUBLE_BATTLE_TEST("Roost suppresses the user's not-yet-aquired Flying-type this
                MOVE(opponentLeft, MOVE_GUST, target: playerLeft);
                MOVE(opponentRight, MOVE_EARTHQUAKE, target: playerLeft); }
     } SCENE {
-        MESSAGE("Kecleon used Roost!");
+        MESSAGE("Donshoumon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, playerLeft);
-        MESSAGE("Kecleon regained health!");
+        MESSAGE("Donshoumon regained health!");
         MESSAGE("Foe Ketomon used Gust!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GUST, opponentLeft);
-        MESSAGE("Kecleon's Color Change made it the Flying type!");
+        MESSAGE("Donshoumon's Color Change made it the Flying type!");
         MESSAGE("Foe Popomon used Earthquake!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponentRight);
-        MESSAGE("Kecleon's Color Change made it the Ground type!");
+        MESSAGE("Donshoumon's Color Change made it the Ground type!");
     }
 }
 

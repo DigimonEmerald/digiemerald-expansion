@@ -2632,11 +2632,11 @@ Cry_Dolphmon::
 	.incbin "sound/direct_sound_samples/cries/dolphmon.bin"
 .endif @ P_FAMILY_DOLPHMON
 
-.if P_FAMILY_KECLEON == TRUE
+.if P_FAMILY_DONSHOUMON == TRUE
 	.align 2
-Cry_Kecleon::
-	.incbin "sound/direct_sound_samples/cries/kecleon.bin"
-.endif @ P_FAMILY_KECLEON
+Cry_Donshoumon::
+	.incbin "sound/direct_sound_samples/cries/donshoumon.bin"
+.endif @ P_FAMILY_DONSHOUMON
 
 .if P_FAMILY_SHUPPET == TRUE
 	.align 2

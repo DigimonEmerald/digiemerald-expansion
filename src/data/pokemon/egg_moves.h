@@ -2829,8 +2829,8 @@ const u16 gEggMoves[] = {
         MOVE_COSMIC_POWER),
 #endif //P_FAMILY_DOLPHMON
 
-#if P_FAMILY_KECLEON
-    egg_moves(KECLEON,
+#if P_FAMILY_DONSHOUMON
+    egg_moves(DONSHOUMON,
         MOVE_DISABLE,
         MOVE_MAGIC_COAT,
         MOVE_TRICK,
@@ -2843,7 +2843,7 @@ const u16 gEggMoves[] = {
         MOVE_FOUL_PLAY,
         MOVE_CAMOUFLAGE,
         MOVE_POWER_UP_PUNCH),
-#endif //P_FAMILY_KECLEON
+#endif //P_FAMILY_DONSHOUMON
 
 #if P_FAMILY_SHUPPET
     egg_moves(SHUPPET,

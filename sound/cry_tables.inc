@@ -960,9 +960,9 @@ gCryTable::
 .if P_FAMILY_DOLPHMON == TRUE
 	cry Cry_Dolphmon
 .endif @ P_FAMILY_DOLPHMON
-.if P_FAMILY_KECLEON == TRUE
-	cry Cry_Kecleon
-.endif @ P_FAMILY_KECLEON
+.if P_FAMILY_DONSHOUMON == TRUE
+	cry Cry_Donshoumon
+.endif @ P_FAMILY_DONSHOUMON
 .if P_FAMILY_SHUPPET == TRUE
 	cry Cry_Shuppet
 	cry Cry_Banette
@@ -3386,9 +3386,9 @@ gCryTable_Reverse::
 .if P_FAMILY_DOLPHMON == TRUE
 	cry_reverse Cry_Dolphmon
 .endif @ P_FAMILY_DOLPHMON
-.if P_FAMILY_KECLEON == TRUE
-	cry_reverse Cry_Kecleon
-.endif @ P_FAMILY_KECLEON
+.if P_FAMILY_DONSHOUMON == TRUE
+	cry_reverse Cry_Donshoumon
+.endif @ P_FAMILY_DONSHOUMON
 .if P_FAMILY_SHUPPET == TRUE
 	cry_reverse Cry_Shuppet
 	cry_reverse Cry_Banette

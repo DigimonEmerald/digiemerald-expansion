@@ -235,7 +235,7 @@
 #define P_FAMILY_DOBERMON                 P_GEN_3_POKEMON
 #define P_FAMILY_DOGGYMON                  P_GEN_3_POKEMON
 #define P_FAMILY_DOLPHMON                P_GEN_3_POKEMON
-#define P_FAMILY_KECLEON                 P_GEN_3_POKEMON
+#define P_FAMILY_DONSHOUMON                 P_GEN_3_POKEMON
 #define P_FAMILY_SHUPPET                 P_GEN_3_POKEMON
 #define P_FAMILY_DUSKULL                 P_GEN_3_POKEMON
 #define P_FAMILY_TROPIUS                 P_GEN_3_POKEMON

@@ -7027,8 +7027,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_DOLPHMON
 
-#if P_FAMILY_KECLEON
-    [SPECIES_KECLEON] =
+#if P_FAMILY_DONSHOUMON
+    [SPECIES_DONSHOUMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 90,
@@ -7047,40 +7047,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_COLOR_CHANGE, ABILITY_NONE, ABILITY_PROTEAN },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Kecleon"),
-        .cryId = CRY_KECLEON,
-        .natDexNum = NATIONAL_DEX_KECLEON,
+        .speciesName = _("Donshoumon"),
+        .cryId = CRY_DONSHOUMON,
+        .natDexNum = NATIONAL_DEX_DONSHOUMON,
         .categoryName = _("Color Swap"),
         .height = 10,
         .weight = 220,
         .description = COMPOUND_STRING(
             "A Pokémon that has the ability to alter its\n"
             "body colors to match its surroundings.\n"
-            "A Kecleon reverts to its original colors if\n"
+            "A Donshoumon reverts to its original colors if\n"
             "it is startled."),
         .pokemonScale = 316,
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Kecleon,
+        .frontPic = gMonFrontPic_Donshoumon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_Kecleon,
+        .frontAnimFrames = sAnims_Donshoumon,
         .frontAnimId = ANIM_FLICKER_INCREASING,
         .frontAnimDelay = 30,
-        .backPic = gMonBackPic_Kecleon,
+        .backPic = gMonBackPic_Donshoumon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Kecleon,
-        .shinyPalette = gMonShinyPalette_Kecleon,
-        .iconSprite = gMonIcon_Kecleon,
+        .palette = gMonPalette_Donshoumon,
+        .shinyPalette = gMonShinyPalette_Donshoumon,
+        .iconSprite = gMonIcon_Donshoumon,
         .iconPalIndex = 1,
-        FOOTPRINT(Kecleon)
-        .levelUpLearnset = sKecleonLevelUpLearnset,
-        .teachableLearnset = sKecleonTeachableLearnset,
+        FOOTPRINT(Donshoumon)
+        .levelUpLearnset = sDonshoumonLevelUpLearnset,
+        .teachableLearnset = sDonshoumonTeachableLearnset,
     },
-#endif //P_FAMILY_KECLEON
+#endif //P_FAMILY_DONSHOUMON
 
 #if P_FAMILY_SHUPPET
     [SPECIES_SHUPPET] =

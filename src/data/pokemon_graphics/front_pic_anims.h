@@ -4734,8 +4734,8 @@ static const union AnimCmd sAnim_DolphmonSnowy_1[] =
 };
 #endif //P_FAMILY_DOLPHMON
 
-#if P_FAMILY_KECLEON
-static const union AnimCmd sAnim_Kecleon_1[] =
+#if P_FAMILY_DONSHOUMON
+static const union AnimCmd sAnim_Donshoumon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 18),
@@ -4744,7 +4744,7 @@ static const union AnimCmd sAnim_Kecleon_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_KECLEON
+#endif //P_FAMILY_DONSHOUMON
 
 #if P_FAMILY_SHUPPET
 static const union AnimCmd sAnim_Shuppet_1[] =
@@ -11261,9 +11261,9 @@ SINGLE_ANIMATION(DolphmonSunny);
 SINGLE_ANIMATION(DolphmonRainy);
 SINGLE_ANIMATION(DolphmonSnowy);
 #endif //P_FAMILY_DOLPHMON
-#if P_FAMILY_KECLEON
-SINGLE_ANIMATION(Kecleon);
-#endif //P_FAMILY_KECLEON
+#if P_FAMILY_DONSHOUMON
+SINGLE_ANIMATION(Donshoumon);
+#endif //P_FAMILY_DONSHOUMON
 #if P_FAMILY_SHUPPET
 SINGLE_ANIMATION(Shuppet);
 SINGLE_ANIMATION(Banette);

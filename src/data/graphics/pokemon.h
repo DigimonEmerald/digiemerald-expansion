@@ -5134,16 +5134,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonIcon_DolphmonSnowy[] = INCBIN_U8("graphics/pokemon/dolphmon/snowy/icon.4bpp");
 #endif //P_FAMILY_DOLPHMON
 
-#if P_FAMILY_KECLEON
-    const u32 gMonFrontPic_Kecleon[] = INCBIN_U32("graphics/pokemon/kecleon/anim_front.4bpp.lz");
-    const u32 gMonPalette_Kecleon[] = INCBIN_U32("graphics/pokemon/kecleon/normal.gbapal.lz");
-    const u32 gMonBackPic_Kecleon[] = INCBIN_U32("graphics/pokemon/kecleon/back.4bpp.lz");
-    const u32 gMonShinyPalette_Kecleon[] = INCBIN_U32("graphics/pokemon/kecleon/shiny.gbapal.lz");
-    const u8 gMonIcon_Kecleon[] = INCBIN_U8("graphics/pokemon/kecleon/icon.4bpp");
+#if P_FAMILY_DONSHOUMON
+    const u32 gMonFrontPic_Donshoumon[] = INCBIN_U32("graphics/pokemon/donshoumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Donshoumon[] = INCBIN_U32("graphics/pokemon/donshoumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Donshoumon[] = INCBIN_U32("graphics/pokemon/donshoumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Donshoumon[] = INCBIN_U32("graphics/pokemon/donshoumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Donshoumon[] = INCBIN_U8("graphics/pokemon/donshoumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Kecleon[] = INCBIN_U8("graphics/pokemon/kecleon/footprint.1bpp");
+    const u8 gMonFootprint_Donshoumon[] = INCBIN_U8("graphics/pokemon/donshoumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_KECLEON
+#endif //P_FAMILY_DONSHOUMON
 
 #if P_FAMILY_SHUPPET
     const u32 gMonFrontPic_Shuppet[] = INCBIN_U32("graphics/pokemon/shuppet/anim_front.4bpp.lz");
