@@ -947,7 +947,7 @@ gCryTable::
 .endif @ P_FAMILY_DEXDORUMON
 .if P_FAMILY_DIGMON == TRUE
 	cry Cry_Digmon
-	cry Cry_Cradily
+	cry Cry_Dinohyumon
 .endif @ P_FAMILY_DIGMON
 .if P_FAMILY_ANORITH == TRUE
 	cry Cry_Anorith
@@ -3373,7 +3373,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_DEXDORUMON
 .if P_FAMILY_DIGMON == TRUE
 	cry_reverse Cry_Digmon
-	cry_reverse Cry_Cradily
+	cry_reverse Cry_Dinohyumon
 .endif @ P_FAMILY_DIGMON
 .if P_FAMILY_ANORITH == TRUE
 	cry_reverse Cry_Anorith

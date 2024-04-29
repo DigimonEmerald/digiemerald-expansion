@@ -6501,10 +6501,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Digmon)
         .levelUpLearnset = sDigmonLevelUpLearnset,
         .teachableLearnset = sDigmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_CRADILY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_DINOHYUMON}),
     },
 
-    [SPECIES_CRADILY] =
+    [SPECIES_DINOHYUMON] =
     {
         .baseHP        = 86,
         .baseAttack    = 81,
@@ -6530,37 +6530,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
         .abilities = { ABILITY_SUCTION_CUPS, ABILITY_NONE, ABILITY_STORM_DRAIN },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Cradily"),
-        .cryId = CRY_CRADILY,
-        .natDexNum = NATIONAL_DEX_CRADILY,
+        .speciesName = _("Dinohyumon"),
+        .cryId = CRY_DINOHYUMON,
+        .natDexNum = NATIONAL_DEX_DINOHYUMON,
         .categoryName = _("Barnacle"),
         .height = 15,
         .weight = 604,
         .description = COMPOUND_STRING(
             "It drags its heavy body along the\n"
             "seafloor. It makes its nest in the shallows\n"
-            "of warm seas. Cradily can be seen on\n"
+            "of warm seas. Dinohyumon can be seen on\n"
             "beaches when the tide goes out."),
         .pokemonScale = 267,
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Cradily,
+        .frontPic = gMonFrontPic_Dinohyumon,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Cradily,
+        .frontAnimFrames = sAnims_Dinohyumon,
         .frontAnimId = ANIM_V_SHAKE_TWICE,
-        .backPic = gMonBackPic_Cradily,
+        .backPic = gMonBackPic_Dinohyumon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Cradily,
-        .shinyPalette = gMonShinyPalette_Cradily,
-        .iconSprite = gMonIcon_Cradily,
+        .palette = gMonPalette_Dinohyumon,
+        .shinyPalette = gMonShinyPalette_Dinohyumon,
+        .iconSprite = gMonIcon_Dinohyumon,
         .iconPalIndex = 1,
-        FOOTPRINT(Cradily)
-        .levelUpLearnset = sCradilyLevelUpLearnset,
-        .teachableLearnset = sCradilyTeachableLearnset,
+        FOOTPRINT(Dinohyumon)
+        .levelUpLearnset = sDinohyumonLevelUpLearnset,
+        .teachableLearnset = sDinohyumonTeachableLearnset,
     },
 #endif //P_FAMILY_DIGMON
 

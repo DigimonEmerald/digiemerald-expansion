@@ -2602,8 +2602,8 @@ Cry_Digmon::
 	.incbin "sound/direct_sound_samples/cries/digmon.bin"
 
 	.align 2
-Cry_Cradily::
-	.incbin "sound/direct_sound_samples/cries/cradily.bin"
+Cry_Dinohyumon::
+	.incbin "sound/direct_sound_samples/cries/dinohyumon.bin"
 .endif @ P_FAMILY_DIGMON
 
 .if P_FAMILY_ANORITH == TRUE

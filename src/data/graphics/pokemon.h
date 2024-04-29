@@ -5052,13 +5052,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Digmon[] = INCBIN_U8("graphics/pokemon/digmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Cradily[] = INCBIN_U32("graphics/pokemon/cradily/anim_front.4bpp.lz");
-    const u32 gMonPalette_Cradily[] = INCBIN_U32("graphics/pokemon/cradily/normal.gbapal.lz");
-    const u32 gMonBackPic_Cradily[] = INCBIN_U32("graphics/pokemon/cradily/back.4bpp.lz");
-    const u32 gMonShinyPalette_Cradily[] = INCBIN_U32("graphics/pokemon/cradily/shiny.gbapal.lz");
-    const u8 gMonIcon_Cradily[] = INCBIN_U8("graphics/pokemon/cradily/icon.4bpp");
+    const u32 gMonFrontPic_Dinohyumon[] = INCBIN_U32("graphics/pokemon/dinohyumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Dinohyumon[] = INCBIN_U32("graphics/pokemon/dinohyumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Dinohyumon[] = INCBIN_U32("graphics/pokemon/dinohyumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Dinohyumon[] = INCBIN_U32("graphics/pokemon/dinohyumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Dinohyumon[] = INCBIN_U8("graphics/pokemon/dinohyumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Cradily[] = INCBIN_U8("graphics/pokemon/cradily/footprint.1bpp");
+    const u8 gMonFootprint_Dinohyumon[] = INCBIN_U8("graphics/pokemon/dinohyumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_DIGMON
 

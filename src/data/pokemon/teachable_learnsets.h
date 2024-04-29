@@ -16226,7 +16226,7 @@ static const u16 sDigmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sCradilyTeachableLearnset[] = {
+static const u16 sDinohyumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_DIG,

@@ -4627,7 +4627,7 @@ static const union AnimCmd sAnim_Digmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Cradily_1[] =
+static const union AnimCmd sAnim_Dinohyumon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -11245,7 +11245,7 @@ SINGLE_ANIMATION(Diatrymon);
 #endif //P_FAMILY_DEXDORUMON
 #if P_FAMILY_DIGMON
 SINGLE_ANIMATION(Digmon);
-SINGLE_ANIMATION(Cradily);
+SINGLE_ANIMATION(Dinohyumon);
 #endif //P_FAMILY_DIGMON
 #if P_FAMILY_ANORITH
 SINGLE_ANIMATION(Anorith);
