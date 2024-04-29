@@ -4745,21 +4745,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Choumon[] = INCBIN_U8("graphics/pokemon/choumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Sharpedo[] = INCBIN_U32("graphics/pokemon/sharpedo/anim_front.4bpp.lz");
-    const u32 gMonPalette_Sharpedo[] = INCBIN_U32("graphics/pokemon/sharpedo/normal.gbapal.lz");
-    const u32 gMonBackPic_Sharpedo[] = INCBIN_U32("graphics/pokemon/sharpedo/back.4bpp.lz");
-    const u32 gMonShinyPalette_Sharpedo[] = INCBIN_U32("graphics/pokemon/sharpedo/shiny.gbapal.lz");
-    const u8 gMonIcon_Sharpedo[] = INCBIN_U8("graphics/pokemon/sharpedo/icon.4bpp");
+    const u32 gMonFrontPic_Centarumon[] = INCBIN_U32("graphics/pokemon/centarumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Centarumon[] = INCBIN_U32("graphics/pokemon/centarumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Centarumon[] = INCBIN_U32("graphics/pokemon/centarumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Centarumon[] = INCBIN_U32("graphics/pokemon/centarumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Centarumon[] = INCBIN_U8("graphics/pokemon/centarumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Sharpedo[] = INCBIN_U8("graphics/pokemon/sharpedo/footprint.1bpp");
+    const u8 gMonFootprint_Centarumon[] = INCBIN_U8("graphics/pokemon/centarumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_SharpedoMega[] = INCBIN_U32("graphics/pokemon/sharpedo/mega/front.4bpp.lz");
-    const u32 gMonPalette_SharpedoMega[] = INCBIN_U32("graphics/pokemon/sharpedo/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_SharpedoMega[] = INCBIN_U32("graphics/pokemon/sharpedo/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_SharpedoMega[] = INCBIN_U32("graphics/pokemon/sharpedo/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_SharpedoMega[] = INCBIN_U8("graphics/pokemon/sharpedo/mega/icon.4bpp");
+    const u32 gMonFrontPic_CentarumonMega[] = INCBIN_U32("graphics/pokemon/centarumon/mega/front.4bpp.lz");
+    const u32 gMonPalette_CentarumonMega[] = INCBIN_U32("graphics/pokemon/centarumon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_CentarumonMega[] = INCBIN_U32("graphics/pokemon/centarumon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_CentarumonMega[] = INCBIN_U32("graphics/pokemon/centarumon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_CentarumonMega[] = INCBIN_U8("graphics/pokemon/centarumon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CHOUMON
 

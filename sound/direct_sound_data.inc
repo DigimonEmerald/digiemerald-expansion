@@ -2444,13 +2444,13 @@ Cry_Choumon::
 	.incbin "sound/direct_sound_samples/cries/choumon.bin"
 
 	.align 2
-Cry_Sharpedo::
-	.incbin "sound/direct_sound_samples/cries/sharpedo.bin"
+Cry_Centarumon::
+	.incbin "sound/direct_sound_samples/cries/centarumon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_SharpedoMega::
-	.incbin "sound/direct_sound_samples/cries/sharpedo_mega.bin"
+Cry_CentarumonMega::
+	.incbin "sound/direct_sound_samples/cries/centarumon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_CHOUMON
 

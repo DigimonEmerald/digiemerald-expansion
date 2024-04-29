@@ -15184,7 +15184,7 @@ static const u16 sChoumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSharpedoTeachableLearnset[] = {
+static const u16 sCentarumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,

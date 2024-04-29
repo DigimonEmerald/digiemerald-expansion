@@ -904,8 +904,8 @@ const u32 gItemIconPalette_Blimpmonite[] = INCBIN_U32("graphics/items/icon_palet
 const u32 gItemIcon_Manectite[] = INCBIN_U32("graphics/items/icons/manectite.4bpp.lz");
 const u32 gItemIconPalette_Manectite[] = INCBIN_U32("graphics/items/icon_palettes/manectite.gbapal.lz");
 
-const u32 gItemIcon_Sharpedonite[] = INCBIN_U32("graphics/items/icons/sharpedonite.4bpp.lz");
-const u32 gItemIconPalette_Sharpedonite[] = INCBIN_U32("graphics/items/icon_palettes/sharpedonite.gbapal.lz");
+const u32 gItemIcon_Centarumonnite[] = INCBIN_U32("graphics/items/icons/centarumonnite.4bpp.lz");
+const u32 gItemIconPalette_Centarumonnite[] = INCBIN_U32("graphics/items/icon_palettes/centarumonnite.gbapal.lz");
 
 const u32 gItemIcon_Cameruptite[] = INCBIN_U32("graphics/items/icons/cameruptite.4bpp.lz");
 const u32 gItemIconPalette_Cameruptite[] = INCBIN_U32("graphics/items/icon_palettes/cameruptite.gbapal.lz");

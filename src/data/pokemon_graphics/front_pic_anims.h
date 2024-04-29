@@ -4263,7 +4263,7 @@ static const union AnimCmd sAnim_Choumon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Sharpedo_1[] =
+static const union AnimCmd sAnim_Centarumon_1[] =
 {
     ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(1, 6),
@@ -4278,7 +4278,7 @@ static const union AnimCmd sAnim_Sharpedo_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(SharpedoMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(CentarumonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CHOUMON
 
@@ -11177,9 +11177,9 @@ SINGLE_ANIMATION(Burgermon_champion);
 #endif //P_FAMILY_BURAIMON
 #if P_FAMILY_CHOUMON
 SINGLE_ANIMATION(Choumon);
-SINGLE_ANIMATION(Sharpedo);
+SINGLE_ANIMATION(Centarumon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(SharpedoMega);
+SINGLE_ANIMATION(CentarumonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CHOUMON
 #if P_FAMILY_WAILMER

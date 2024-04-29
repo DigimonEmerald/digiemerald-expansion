@@ -840,10 +840,10 @@ static const u16 sBomnanimonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_BOARMON
 
 #if P_FAMILY_CHOUMON
-static const u16 sSharpedoFormSpeciesIdTable[] = {
-    SPECIES_SHARPEDO,
+static const u16 sCentarumonFormSpeciesIdTable[] = {
+    SPECIES_CENTARUMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_SHARPEDO_MEGA,
+    SPECIES_CENTARUMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
