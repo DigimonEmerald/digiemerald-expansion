@@ -2887,11 +2887,11 @@ Cry_Geremon::
 	.incbin "sound/direct_sound_samples/cries/geremon.bin"
 .endif @ P_FAMILY_GEREMON
 
-.if P_FAMILY_DEOXYS == TRUE
+.if P_FAMILY_GESOMON == TRUE
 	.align 2
-Cry_Deoxys::
-	.incbin "sound/direct_sound_samples/cries/deoxys.bin"
-.endif @ P_FAMILY_DEOXYS
+Cry_Gesomon::
+	.incbin "sound/direct_sound_samples/cries/gesomon.bin"
+.endif @ P_FAMILY_GESOMON
 
 .if P_FAMILY_TURTWIG == TRUE
 	.align 2

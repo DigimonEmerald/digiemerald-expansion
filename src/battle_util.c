@@ -8071,7 +8071,7 @@ u8 IsMonDisobedient(void)
     if (BattlerHasAi(gBattlerAttacker))
         return 0;
 
-    if (IsBattlerModernFatefulEncounter(gBattlerAttacker)) // only false if illegal Falcomon or Deoxys
+    if (IsBattlerModernFatefulEncounter(gBattlerAttacker)) // only false if illegal Falcomon or Gesomon
     {
         if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER && GetBattlerPosition(gBattlerAttacker) == B_POSITION_PLAYER_RIGHT)
             return 0;

@@ -5591,34 +5591,34 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_GEREMON
 
-#if P_FAMILY_DEOXYS
-    const u32 gMonFrontPic_DeoxysNormal[] = INCBIN_U32("graphics/pokemon/deoxys/anim_front.4bpp.lz");
-    const u32 gMonPalette_DeoxysNormal[] = INCBIN_U32("graphics/pokemon/deoxys/normal.gbapal.lz");
-    const u32 gMonBackPic_DeoxysNormal[] = INCBIN_U32("graphics/pokemon/deoxys/back.4bpp.lz");
-    const u32 gMonShinyPalette_DeoxysNormal[] = INCBIN_U32("graphics/pokemon/deoxys/shiny.gbapal.lz");
-    const u8 gMonIcon_DeoxysNormal[] = INCBIN_U8("graphics/pokemon/deoxys/icon.4bpp");
+#if P_FAMILY_GESOMON
+    const u32 gMonFrontPic_GesomonNormal[] = INCBIN_U32("graphics/pokemon/gesomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_GesomonNormal[] = INCBIN_U32("graphics/pokemon/gesomon/normal.gbapal.lz");
+    const u32 gMonBackPic_GesomonNormal[] = INCBIN_U32("graphics/pokemon/gesomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_GesomonNormal[] = INCBIN_U32("graphics/pokemon/gesomon/shiny.gbapal.lz");
+    const u8 gMonIcon_GesomonNormal[] = INCBIN_U8("graphics/pokemon/gesomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Deoxys[] = INCBIN_U8("graphics/pokemon/deoxys/footprint.1bpp");
+    const u8 gMonFootprint_Gesomon[] = INCBIN_U8("graphics/pokemon/gesomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_DeoxysAttack[] = INCBIN_U32("graphics/pokemon/deoxys/attack/anim_front.4bpp.lz");
-    const u32 gMonPalette_DeoxysAttack[] = INCBIN_U32("graphics/pokemon/deoxys/attack/normal.gbapal.lz");
-    const u32 gMonBackPic_DeoxysAttack[] = INCBIN_U32("graphics/pokemon/deoxys/attack/back.4bpp.lz");
-    const u32 gMonShinyPalette_DeoxysAttack[] = INCBIN_U32("graphics/pokemon/deoxys/attack/shiny.gbapal.lz");
-    const u8 gMonIcon_DeoxysAttack[] = INCBIN_U8("graphics/pokemon/deoxys/attack/icon.4bpp");
+    const u32 gMonFrontPic_GesomonAttack[] = INCBIN_U32("graphics/pokemon/gesomon/attack/anim_front.4bpp.lz");
+    const u32 gMonPalette_GesomonAttack[] = INCBIN_U32("graphics/pokemon/gesomon/attack/normal.gbapal.lz");
+    const u32 gMonBackPic_GesomonAttack[] = INCBIN_U32("graphics/pokemon/gesomon/attack/back.4bpp.lz");
+    const u32 gMonShinyPalette_GesomonAttack[] = INCBIN_U32("graphics/pokemon/gesomon/attack/shiny.gbapal.lz");
+    const u8 gMonIcon_GesomonAttack[] = INCBIN_U8("graphics/pokemon/gesomon/attack/icon.4bpp");
 
-    const u32 gMonFrontPic_DeoxysDefense[] = INCBIN_U32("graphics/pokemon/deoxys/defense/anim_front.4bpp.lz");
-    const u32 gMonPalette_DeoxysDefense[] = INCBIN_U32("graphics/pokemon/deoxys/defense/normal.gbapal.lz");
-    const u32 gMonBackPic_DeoxysDefense[] = INCBIN_U32("graphics/pokemon/deoxys/defense/back.4bpp.lz");
-    const u32 gMonShinyPalette_DeoxysDefense[] = INCBIN_U32("graphics/pokemon/deoxys/defense/shiny.gbapal.lz");
-    const u8 gMonIcon_DeoxysDefense[] = INCBIN_U8("graphics/pokemon/deoxys/defense/icon.4bpp");
+    const u32 gMonFrontPic_GesomonDefense[] = INCBIN_U32("graphics/pokemon/gesomon/defense/anim_front.4bpp.lz");
+    const u32 gMonPalette_GesomonDefense[] = INCBIN_U32("graphics/pokemon/gesomon/defense/normal.gbapal.lz");
+    const u32 gMonBackPic_GesomonDefense[] = INCBIN_U32("graphics/pokemon/gesomon/defense/back.4bpp.lz");
+    const u32 gMonShinyPalette_GesomonDefense[] = INCBIN_U32("graphics/pokemon/gesomon/defense/shiny.gbapal.lz");
+    const u8 gMonIcon_GesomonDefense[] = INCBIN_U8("graphics/pokemon/gesomon/defense/icon.4bpp");
 
-    const u32 gMonFrontPic_DeoxysSpeed[] = INCBIN_U32("graphics/pokemon/deoxys/speed/anim_front.4bpp.lz");
-    const u32 gMonPalette_DeoxysSpeed[] = INCBIN_U32("graphics/pokemon/deoxys/speed/normal.gbapal.lz");
-    const u32 gMonBackPic_DeoxysSpeed[] = INCBIN_U32("graphics/pokemon/deoxys/speed/back.4bpp.lz");
-    const u32 gMonShinyPalette_DeoxysSpeed[] = INCBIN_U32("graphics/pokemon/deoxys/speed/shiny.gbapal.lz");
-    const u8 gMonIcon_DeoxysSpeed[] = INCBIN_U8("graphics/pokemon/deoxys/speed/icon.4bpp");
-#endif //P_FAMILY_DEOXYS
+    const u32 gMonFrontPic_GesomonSpeed[] = INCBIN_U32("graphics/pokemon/gesomon/speed/anim_front.4bpp.lz");
+    const u32 gMonPalette_GesomonSpeed[] = INCBIN_U32("graphics/pokemon/gesomon/speed/normal.gbapal.lz");
+    const u32 gMonBackPic_GesomonSpeed[] = INCBIN_U32("graphics/pokemon/gesomon/speed/back.4bpp.lz");
+    const u32 gMonShinyPalette_GesomonSpeed[] = INCBIN_U32("graphics/pokemon/gesomon/speed/shiny.gbapal.lz");
+    const u8 gMonIcon_GesomonSpeed[] = INCBIN_U8("graphics/pokemon/gesomon/speed/icon.4bpp");
+#endif //P_FAMILY_GESOMON
 
 #if P_FAMILY_TURTWIG
     const u32 gMonFrontPic_Turtwig[] = INCBIN_U32("graphics/pokemon/turtwig/anim_front.4bpp.lz");

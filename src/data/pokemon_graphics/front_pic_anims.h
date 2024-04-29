@@ -5206,8 +5206,8 @@ static const union AnimCmd sAnim_Geremon_1[] =
 };
 #endif //P_FAMILY_GEREMON
 
-#if P_FAMILY_DEOXYS
-static const union AnimCmd sAnim_DeoxysNormal_1[] =
+#if P_FAMILY_GESOMON
+static const union AnimCmd sAnim_GesomonNormal_1[] =
 {
     ANIMCMD_FRAME(0, 16),
     ANIMCMD_FRAME(1, 16),
@@ -5217,7 +5217,7 @@ static const union AnimCmd sAnim_DeoxysNormal_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_DeoxysAttack_1[] =
+static const union AnimCmd sAnim_GesomonAttack_1[] =
 {
     ANIMCMD_FRAME(0, 16),
     ANIMCMD_FRAME(1, 16),
@@ -5227,7 +5227,7 @@ static const union AnimCmd sAnim_DeoxysAttack_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_DeoxysDefense_1[] =
+static const union AnimCmd sAnim_GesomonDefense_1[] =
 {
     ANIMCMD_FRAME(0, 16),
     ANIMCMD_FRAME(1, 16),
@@ -5237,7 +5237,7 @@ static const union AnimCmd sAnim_DeoxysDefense_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_DeoxysSpeed_1[] =
+static const union AnimCmd sAnim_GesomonSpeed_1[] =
 {
     ANIMCMD_FRAME(0, 16),
     ANIMCMD_FRAME(1, 16),
@@ -5246,7 +5246,7 @@ static const union AnimCmd sAnim_DeoxysSpeed_1[] =
     ANIMCMD_FRAME(0, 16),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_DEOXYS
+#endif //P_FAMILY_GESOMON
 
 #if P_FAMILY_TURTWIG
 static const union AnimCmd sAnim_Turtwig_1[] =
@@ -11377,12 +11377,12 @@ SINGLE_ANIMATION(GeogreymonMega);
 #if P_FAMILY_GEREMON
 SINGLE_ANIMATION(Geremon);
 #endif //P_FAMILY_GEREMON
-#if P_FAMILY_DEOXYS
-SINGLE_ANIMATION(DeoxysNormal);
-SINGLE_ANIMATION(DeoxysAttack);
-SINGLE_ANIMATION(DeoxysDefense);
-SINGLE_ANIMATION(DeoxysSpeed);
-#endif //P_FAMILY_DEOXYS
+#if P_FAMILY_GESOMON
+SINGLE_ANIMATION(GesomonNormal);
+SINGLE_ANIMATION(GesomonAttack);
+SINGLE_ANIMATION(GesomonDefense);
+SINGLE_ANIMATION(GesomonSpeed);
+#endif //P_FAMILY_GESOMON
 #if P_FAMILY_TURTWIG
 SINGLE_ANIMATION(Turtwig);
 SINGLE_ANIMATION(Grotle);

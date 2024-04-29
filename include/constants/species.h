@@ -388,8 +388,8 @@
 #define SPECIES_GEKOMON                                 383
 #define SPECIES_GEOGREYMON                                384
 #define SPECIES_GEREMON                                 385
-#define SPECIES_DEOXYS                                  SPECIES_DEOXYS_NORMAL
-#define SPECIES_DEOXYS_NORMAL                           386
+#define SPECIES_GESOMON                                  SPECIES_GESOMON_NORMAL
+#define SPECIES_GESOMON_NORMAL                           386
 #define SPECIES_TURTWIG                                 387
 #define SPECIES_GROTLE                                  388
 #define SPECIES_TORTERRA                                389
@@ -1117,9 +1117,9 @@
 #define SPECIES_DOLPHMON_SUNNY                          1051
 #define SPECIES_DOLPHMON_RAINY                          1052
 #define SPECIES_DOLPHMON_SNOWY                          1053
-#define SPECIES_DEOXYS_ATTACK                           1054
-#define SPECIES_DEOXYS_DEFENSE                          1055
-#define SPECIES_DEOXYS_SPEED                            1056
+#define SPECIES_GESOMON_ATTACK                           1054
+#define SPECIES_GESOMON_DEFENSE                          1055
+#define SPECIES_GESOMON_SPEED                            1056
 #define SPECIES_BURMY_SANDY_CLOAK                       1057
 #define SPECIES_BURMY_TRASH_CLOAK                       1058
 #define SPECIES_WORMADAM_SANDY_CLOAK                    1059

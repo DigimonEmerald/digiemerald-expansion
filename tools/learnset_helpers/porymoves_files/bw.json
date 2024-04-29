@@ -42322,7 +42322,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "DEOXYS_NORMAL": {
+  "GESOMON_NORMAL": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -71650,7 +71650,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "DEOXYS_ATTACK": {
+  "GESOMON_ATTACK": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -71765,7 +71765,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "DEOXYS_DEFENSE": {
+  "GESOMON_DEFENSE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -71888,7 +71888,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "DEOXYS_SPEED": {
+  "GESOMON_SPEED": {
     "LevelMoves": [
       {
         "Level": 1,

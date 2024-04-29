@@ -7483,8 +7483,8 @@ static const struct LevelUpMove sGeremonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_GEREMON
 
-#if P_FAMILY_DEOXYS
-static const struct LevelUpMove sDeoxysNormalLevelUpLearnset[] = {
+#if P_FAMILY_GESOMON
+static const struct LevelUpMove sGesomonNormalLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_WRAP),
     LEVEL_UP_MOVE( 5, MOVE_NIGHT_SHADE),
@@ -7500,7 +7500,7 @@ static const struct LevelUpMove sDeoxysNormalLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sDeoxysAttackLevelUpLearnset[] = {
+static const struct LevelUpMove sGesomonAttackLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_WRAP),
     LEVEL_UP_MOVE( 5, MOVE_NIGHT_SHADE),
@@ -7516,7 +7516,7 @@ static const struct LevelUpMove sDeoxysAttackLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sDeoxysDefenseLevelUpLearnset[] = {
+static const struct LevelUpMove sGesomonDefenseLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_WRAP),
     LEVEL_UP_MOVE( 5, MOVE_NIGHT_SHADE),
@@ -7534,7 +7534,7 @@ static const struct LevelUpMove sDeoxysDefenseLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sDeoxysSpeedLevelUpLearnset[] = {
+static const struct LevelUpMove sGesomonSpeedLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_WRAP),
     LEVEL_UP_MOVE( 5, MOVE_NIGHT_SHADE),
@@ -7549,7 +7549,7 @@ static const struct LevelUpMove sDeoxysSpeedLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_EXTREME_SPEED),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_DEOXYS
+#endif //P_FAMILY_GESOMON
 
 #if P_FAMILY_TURTWIG
 static const struct LevelUpMove sTurtwigLevelUpLearnset[] = {

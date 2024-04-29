@@ -37,8 +37,8 @@ const u8 gLopmonPokedexText[] = _(
     "the ancient writings or the various Lopmon.");
 
 // Gen 3 families
-const u8 gDeoxysNormalPokedexText[] = _(
-    "Deoxys emerged from a virus that came\n"
+const u8 gGesomonNormalPokedexText[] = _(
+    "Gesomon emerged from a virus that came\n"
     "from space. It is highly intelligent and\n"
     "can shoot lasers from the crystalline\n"
     "organ on its chest.");

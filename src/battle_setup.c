@@ -608,10 +608,10 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_GEOGREYMON_MEGA:
         CreateBattleStartTask(B_TRANSITION_GEOGREYMON, MUS_VS_RAYQUAZA);
         break;
-    case SPECIES_DEOXYS_NORMAL:
-    case SPECIES_DEOXYS_ATTACK:
-    case SPECIES_DEOXYS_DEFENSE:
-    case SPECIES_DEOXYS_SPEED:
+    case SPECIES_GESOMON_NORMAL:
+    case SPECIES_GESOMON_ATTACK:
+    case SPECIES_GESOMON_DEFENSE:
+    case SPECIES_GESOMON_SPEED:
         CreateBattleStartTask(B_TRANSITION_BLUR, MUS_RG_VS_DEOXYS);
         break;
     case SPECIES_SPARROWMON:

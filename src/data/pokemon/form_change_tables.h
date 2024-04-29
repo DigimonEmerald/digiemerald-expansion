@@ -493,27 +493,27 @@ static const struct FormChange sGeogreymonFormChangeTable[] = {
 };
 #endif //P_FAMILY_GEOGREYMON
 
-#if P_FAMILY_DEOXYS
-static const struct FormChange sDeoxysNormalFormChangeTable[] = {
-    {FORM_CHANGE_ITEM_USE, SPECIES_DEOXYS_ATTACK,  ITEM_METEORITE},
+#if P_FAMILY_GESOMON
+static const struct FormChange sGesomonNormalFormChangeTable[] = {
+    {FORM_CHANGE_ITEM_USE, SPECIES_GESOMON_ATTACK,  ITEM_METEORITE},
     {FORM_CHANGE_TERMINATOR},
 };
 
-static const struct FormChange sDeoxysAttackFormChangeTable[] = {
-    {FORM_CHANGE_ITEM_USE, SPECIES_DEOXYS_DEFENSE,  ITEM_METEORITE},
+static const struct FormChange sGesomonAttackFormChangeTable[] = {
+    {FORM_CHANGE_ITEM_USE, SPECIES_GESOMON_DEFENSE,  ITEM_METEORITE},
     {FORM_CHANGE_TERMINATOR},
 };
 
-static const struct FormChange sDeoxysDefenseFormChangeTable[] = {
-    {FORM_CHANGE_ITEM_USE, SPECIES_DEOXYS_SPEED,  ITEM_METEORITE},
+static const struct FormChange sGesomonDefenseFormChangeTable[] = {
+    {FORM_CHANGE_ITEM_USE, SPECIES_GESOMON_SPEED,  ITEM_METEORITE},
     {FORM_CHANGE_TERMINATOR},
 };
 
-static const struct FormChange sDeoxysSpeedFormChangeTable[] = {
-    {FORM_CHANGE_ITEM_USE, SPECIES_DEOXYS_NORMAL,  ITEM_METEORITE},
+static const struct FormChange sGesomonSpeedFormChangeTable[] = {
+    {FORM_CHANGE_ITEM_USE, SPECIES_GESOMON_NORMAL,  ITEM_METEORITE},
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_DEOXYS
+#endif //P_FAMILY_GESOMON
 
 #if P_FAMILY_BURMY
 static const struct FormChange sBurmyFormChangeTable[] = {

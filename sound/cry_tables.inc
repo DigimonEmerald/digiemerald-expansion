@@ -1076,9 +1076,9 @@ gCryTable::
 .if P_FAMILY_GEREMON == TRUE
 	cry Cry_Geremon
 .endif @ P_FAMILY_GEREMON
-.if P_FAMILY_DEOXYS == TRUE
-	cry Cry_Deoxys
-.endif @ P_FAMILY_DEOXYS
+.if P_FAMILY_GESOMON == TRUE
+	cry Cry_Gesomon
+.endif @ P_FAMILY_GESOMON
 .if P_FAMILY_TURTWIG == TRUE
 	cry Cry_Turtwig
 	cry Cry_Grotle
@@ -3502,9 +3502,9 @@ gCryTable_Reverse::
 .if P_FAMILY_GEREMON == TRUE
 	cry_reverse Cry_Geremon
 .endif @ P_FAMILY_GEREMON
-.if P_FAMILY_DEOXYS == TRUE
-	cry_reverse Cry_Deoxys
-.endif @ P_FAMILY_DEOXYS
+.if P_FAMILY_GESOMON == TRUE
+	cry_reverse Cry_Gesomon
+.endif @ P_FAMILY_GESOMON
 .if P_FAMILY_TURTWIG == TRUE
 	cry_reverse Cry_Turtwig
 	cry_reverse Cry_Grotle

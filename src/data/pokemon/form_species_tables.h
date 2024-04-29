@@ -979,15 +979,15 @@ static const u16 sGeogreymonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_GEOGREYMON
 
-#if P_FAMILY_DEOXYS
-static const u16 sDeoxysFormSpeciesIdTable[] = {
-    SPECIES_DEOXYS_NORMAL,
-    SPECIES_DEOXYS_ATTACK,
-    SPECIES_DEOXYS_DEFENSE,
-    SPECIES_DEOXYS_SPEED,
+#if P_FAMILY_GESOMON
+static const u16 sGesomonFormSpeciesIdTable[] = {
+    SPECIES_GESOMON_NORMAL,
+    SPECIES_GESOMON_ATTACK,
+    SPECIES_GESOMON_DEFENSE,
+    SPECIES_GESOMON_SPEED,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_DEOXYS
+#endif //P_FAMILY_GESOMON
 
 #if P_FAMILY_BURMY
 static const u16 sBurmyFormSpeciesIdTable[] = {

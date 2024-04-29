@@ -346,7 +346,7 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(GEKOMON),
     HOENN_TO_NATIONAL(GEOGREYMON),
     HOENN_TO_NATIONAL(GEREMON),
-    HOENN_TO_NATIONAL(DEOXYS),
+    HOENN_TO_NATIONAL(GESOMON),
 };
 
 const struct Coredramon_blueSpot gCoredramon_blueSpotGraphics[] =
@@ -1343,8 +1343,8 @@ static void CreateEventMon(struct Pokemon *mon, u16 species, u8 level, u8 fixedI
     SetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &isModernFatefulEncounter);
 }
 
-// If FALSE, should load this game's Deoxys form. If TRUE, should load normal Deoxys form
-bool8 ShouldIgnoreDeoxysForm(u8 caseId, u8 battlerId)
+// If FALSE, should load this game's Gesomon form. If TRUE, should load normal Gesomon form
+bool8 ShouldIgnoreGesomonForm(u8 caseId, u8 battlerId)
 {
     switch (caseId)
     {

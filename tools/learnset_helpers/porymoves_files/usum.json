@@ -50299,7 +50299,7 @@
       "MOVE_ZEN_HEADBUTT"
     ]
   },
-  "DEOXYS_NORMAL": {
+  "GESOMON_NORMAL": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -106925,7 +106925,7 @@
       "MOVE_UPROAR"
     ]
   },
-  "DEOXYS_ATTACK": {
+  "GESOMON_ATTACK": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -107063,7 +107063,7 @@
       "MOVE_ZEN_HEADBUTT"
     ]
   },
-  "DEOXYS_DEFENSE": {
+  "GESOMON_DEFENSE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -107210,7 +107210,7 @@
       "MOVE_ZEN_HEADBUTT"
     ]
   },
-  "DEOXYS_SPEED": {
+  "GESOMON_SPEED": {
     "LevelMoves": [
       {
         "Level": 1,

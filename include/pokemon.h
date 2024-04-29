@@ -210,7 +210,7 @@ struct PokemonSubstruct3
 
     // The functionality of this bit changed in FRLG:
     // In RS, this bit does nothing, is never set, & is accidentally unset when hatching Eggs.
-    // In FRLG & Emerald, this controls Falcomon & Deoxys obedience and whether they can be traded.
+    // In FRLG & Emerald, this controls Falcomon & Gesomon obedience and whether they can be traded.
     // If set, a Pokémon is a fateful encounter in FRLG's summary screen if hatched & for all Pokémon in Gen 4+ summary screens.
     // Set for in-game event island legendaries, events distributed after a certain date, & Pokémon from XD: Gale of Darkness.
     // Not to be confused with METLOC_FATEFUL_ENCOUNTER.
@@ -644,7 +644,7 @@ void CreateBattleTowerMon_HandleLevel(struct Pokemon *mon, struct BattleTowerPok
 void CreateApprenticeMon(struct Pokemon *mon, const struct Apprentice *src, u8 monId);
 void CreateMonWithEVSpreadNatureOTID(struct Pokemon *mon, u16 species, u8 level, u8 nature, u8 fixedIV, u8 evSpread, u32 otId);
 void ConvertPokemonToBattleTowerPokemon(struct Pokemon *mon, struct BattleTowerPokemon *dest);
-bool8 ShouldIgnoreDeoxysForm(u8 caseId, u8 battlerId);
+bool8 ShouldIgnoreGesomonForm(u8 caseId, u8 battlerId);
 u16 GetUnionRoomTrainerPic(void);
 u16 GetUnionRoomTrainerClass(void);
 void CreateEnemyEventMon(void);

@@ -17876,8 +17876,8 @@ static const u16 sGeremonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GEREMON
 
-#if P_FAMILY_DEOXYS
-static const u16 sDeoxysNormalTeachableLearnset[] = {
+#if P_FAMILY_GESOMON
+static const u16 sGesomonNormalTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
@@ -17930,63 +17930,7 @@ static const u16 sDeoxysNormalTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDeoxysAttackTeachableLearnset[] = {
-    MOVE_AERIAL_ACE,
-    MOVE_BRICK_BREAK,
-    MOVE_CALM_MIND,
-    MOVE_CUT,
-    MOVE_DOUBLE_TEAM,
-    MOVE_FACADE,
-    MOVE_FLASH,
-    MOVE_FOCUS_PUNCH,
-    MOVE_HYPER_BEAM,
-    MOVE_ICE_BEAM,
-    MOVE_LIGHT_SCREEN,
-    MOVE_PROTECT,
-    MOVE_PSYCHIC,
-    MOVE_RAIN_DANCE,
-    MOVE_REFLECT,
-    MOVE_REST,
-    MOVE_ROCK_SMASH,
-    MOVE_ROCK_TOMB,
-    MOVE_SAFEGUARD,
-    MOVE_SHADOW_BALL,
-    MOVE_SHOCK_WAVE,
-    MOVE_SKILL_SWAP,
-    MOVE_SNATCH,
-    MOVE_SOLAR_BEAM,
-    MOVE_STRENGTH,
-    MOVE_SUNNY_DAY,
-    MOVE_TAUNT,
-    MOVE_THUNDER,
-    MOVE_THUNDERBOLT,
-    MOVE_TORMENT,
-    MOVE_TOXIC,
-    MOVE_WATER_PULSE,
-    MOVE_BODY_SLAM,
-    MOVE_COUNTER,
-    MOVE_DOUBLE_EDGE,
-    MOVE_DREAM_EATER,
-    MOVE_ENDURE,
-    MOVE_FIRE_PUNCH,
-    MOVE_ICE_PUNCH,
-    MOVE_ICY_WIND,
-    MOVE_MEGA_KICK,
-    MOVE_MEGA_PUNCH,
-    MOVE_MUD_SLAP,
-    MOVE_PSYCH_UP,
-    MOVE_ROCK_SLIDE,
-    MOVE_SEISMIC_TOSS,
-    MOVE_SLEEP_TALK,
-    MOVE_SNORE,
-    MOVE_SWAGGER,
-    MOVE_SWIFT,
-    MOVE_THUNDER_PUNCH,
-    MOVE_THUNDER_WAVE,
-    MOVE_UNAVAILABLE,
-};
-
-static const u16 sDeoxysDefenseTeachableLearnset[] = {
+static const u16 sGesomonAttackTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
@@ -18042,7 +17986,63 @@ static const u16 sDeoxysDefenseTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDeoxysSpeedTeachableLearnset[] = {
+static const u16 sGesomonDefenseTeachableLearnset[] = {
+    MOVE_AERIAL_ACE,
+    MOVE_BRICK_BREAK,
+    MOVE_CALM_MIND,
+    MOVE_CUT,
+    MOVE_DOUBLE_TEAM,
+    MOVE_FACADE,
+    MOVE_FLASH,
+    MOVE_FOCUS_PUNCH,
+    MOVE_HYPER_BEAM,
+    MOVE_ICE_BEAM,
+    MOVE_LIGHT_SCREEN,
+    MOVE_PROTECT,
+    MOVE_PSYCHIC,
+    MOVE_RAIN_DANCE,
+    MOVE_REFLECT,
+    MOVE_REST,
+    MOVE_ROCK_SMASH,
+    MOVE_ROCK_TOMB,
+    MOVE_SAFEGUARD,
+    MOVE_SHADOW_BALL,
+    MOVE_SHOCK_WAVE,
+    MOVE_SKILL_SWAP,
+    MOVE_SNATCH,
+    MOVE_SOLAR_BEAM,
+    MOVE_STRENGTH,
+    MOVE_SUNNY_DAY,
+    MOVE_TAUNT,
+    MOVE_THUNDER,
+    MOVE_THUNDERBOLT,
+    MOVE_TORMENT,
+    MOVE_TOXIC,
+    MOVE_WATER_PULSE,
+    MOVE_BODY_SLAM,
+    MOVE_COUNTER,
+    MOVE_DOUBLE_EDGE,
+    MOVE_DREAM_EATER,
+    MOVE_ENDURE,
+    MOVE_FIRE_PUNCH,
+    MOVE_ICE_PUNCH,
+    MOVE_ICY_WIND,
+    MOVE_MEGA_KICK,
+    MOVE_MEGA_PUNCH,
+    MOVE_MUD_SLAP,
+    MOVE_PSYCH_UP,
+    MOVE_ROCK_SLIDE,
+    MOVE_SEISMIC_TOSS,
+    MOVE_SLEEP_TALK,
+    MOVE_SNORE,
+    MOVE_SWAGGER,
+    MOVE_SWIFT,
+    MOVE_THUNDER_PUNCH,
+    MOVE_THUNDER_WAVE,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sGesomonSpeedTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
@@ -18098,7 +18098,7 @@ static const u16 sDeoxysSpeedTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DEOXYS
+#endif //P_FAMILY_GESOMON
 
 #if P_FAMILY_TURTWIG
 static const u16 sTurtwigTeachableLearnset[] = {
