@@ -324,7 +324,7 @@
 #define SPECIES_CHAMBLEMON                                 320
 #define SPECIES_CHAMELEMON                                 321
 #define SPECIES_CHRYSALMON                                   322
-#define SPECIES_CAMERUPT                                323
+#define SPECIES_CITRAMON                                323
 #define SPECIES_TORKOAL                                 324
 #define SPECIES_SPOINK                                  325
 #define SPECIES_GRUMPIG                                 326
@@ -995,7 +995,7 @@
 #define SPECIES_BLIMPMON_MEGA                           934
 #define SPECIES_BOMNANIMON_MEGA                          935
 #define SPECIES_CENTARUMON_MEGA                           936
-#define SPECIES_CAMERUPT_MEGA                           937
+#define SPECIES_CITRAMON_MEGA                           937
 #define SPECIES_ALTARIA_MEGA                            938
 #define SPECIES_BANETTE_MEGA                            939
 #define SPECIES_ABSOL_MEGA                              940

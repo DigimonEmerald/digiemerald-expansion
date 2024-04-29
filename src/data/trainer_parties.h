@@ -1270,7 +1270,7 @@ static const struct TrainerMon sParty_Brooke5[] = {
     {
     .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),
     .lvl = 34,
-    .species = SPECIES_CAMERUPT,
+    .species = SPECIES_CITRAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),
@@ -3301,7 +3301,7 @@ static const struct TrainerMon sParty_Flannery1[] = {
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .lvl = 26,
-    .species = SPECIES_CAMERUPT,
+    .species = SPECIES_CITRAMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_OVERHEAT, MOVE_TACKLE, MOVE_SUNNY_DAY, MOVE_ATTRACT}
     },
@@ -5491,7 +5491,7 @@ static const struct TrainerMon sParty_Madeline5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 37,
-    .species = SPECIES_CAMERUPT,
+    .species = SPECIES_CITRAMON,
     .moves = {MOVE_FLAMETHROWER, MOVE_TAKE_DOWN, MOVE_EARTHQUAKE, MOVE_SUNNY_DAY}
     }
 };
@@ -6321,7 +6321,7 @@ static const struct TrainerMon sParty_TabithaMossdeep[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 36,
-    .species = SPECIES_CAMERUPT,
+    .species = SPECIES_CITRAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -7550,7 +7550,7 @@ static const struct TrainerMon sParty_MaxieMagmaHideout[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 39,
-    .species = SPECIES_CAMERUPT,
+    .species = SPECIES_CITRAMON,
     }
 };
 
@@ -7568,7 +7568,7 @@ static const struct TrainerMon sParty_MaxieMtChimney[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 25,
-    .species = SPECIES_CAMERUPT,
+    .species = SPECIES_CITRAMON,
     }
 };
 
@@ -9234,7 +9234,7 @@ static const struct TrainerMon sParty_TabithaMagmaHideout[] = {
     {
     .iv = TRAINER_PARTY_IVS(9, 9, 9, 9, 9, 9),
     .lvl = 33,
-    .species = SPECIES_CAMERUPT,
+    .species = SPECIES_CITRAMON,
     }
 };
 
@@ -9245,7 +9245,7 @@ static const struct TrainerMon sParty_Darcy[] = {
     },
     {
     .lvl = 33,
-    .species = SPECIES_CAMERUPT,
+    .species = SPECIES_CITRAMON,
     }
 };
 
@@ -9263,7 +9263,7 @@ static const struct TrainerMon sParty_MaxieMossdeep[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 44,
-    .species = SPECIES_CAMERUPT,
+    .species = SPECIES_CITRAMON,
     }
 };
 
@@ -10150,7 +10150,7 @@ static const struct TrainerMon sParty_Flannery2[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 38,
-    .species = SPECIES_CAMERUPT,
+    .species = SPECIES_CITRAMON,
     .heldItem = ITEM_WHITE_HERB,
     .moves = {MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EARTHQUAKE, MOVE_ATTRACT}
     },
@@ -10188,7 +10188,7 @@ static const struct TrainerMon sParty_Flannery3[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 43,
-    .species = SPECIES_CAMERUPT,
+    .species = SPECIES_CITRAMON,
     .heldItem = ITEM_WHITE_HERB,
     .moves = {MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EARTHQUAKE, MOVE_ATTRACT}
     },
@@ -10233,7 +10233,7 @@ static const struct TrainerMon sParty_Flannery4[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 48,
-    .species = SPECIES_CAMERUPT,
+    .species = SPECIES_CITRAMON,
     .heldItem = ITEM_WHITE_HERB,
     .moves = {MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EARTHQUAKE, MOVE_ATTRACT}
     },
@@ -10278,7 +10278,7 @@ static const struct TrainerMon sParty_Flannery5[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 53,
-    .species = SPECIES_CAMERUPT,
+    .species = SPECIES_CITRAMON,
     .heldItem = ITEM_WHITE_HERB,
     .moves = {MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_EARTHQUAKE, MOVE_ATTRACT}
     },
@@ -11544,7 +11544,7 @@ static const struct TrainerMon sParty_Sawyer5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 33,
-    .species = SPECIES_CAMERUPT,
+    .species = SPECIES_CITRAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),

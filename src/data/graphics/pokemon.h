@@ -4796,24 +4796,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_ChrysalmonF[] = INCBIN_U32("graphics/pokemon/chrysalmon/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_ChrysalmonF[] = INCBIN_U32("graphics/pokemon/chrysalmon/backf.4bpp.lz");
 
-    const u32 gMonFrontPic_Camerupt[] = INCBIN_U32("graphics/pokemon/camerupt/anim_front.4bpp.lz");
-    const u32 gMonPalette_Camerupt[] = INCBIN_U32("graphics/pokemon/camerupt/normal.gbapal.lz");
-    const u32 gMonBackPic_Camerupt[] = INCBIN_U32("graphics/pokemon/camerupt/back.4bpp.lz");
-    const u32 gMonShinyPalette_Camerupt[] = INCBIN_U32("graphics/pokemon/camerupt/shiny.gbapal.lz");
-    const u8 gMonIcon_Camerupt[] = INCBIN_U8("graphics/pokemon/camerupt/icon.4bpp");
+    const u32 gMonFrontPic_Citramon[] = INCBIN_U32("graphics/pokemon/citramon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Citramon[] = INCBIN_U32("graphics/pokemon/citramon/normal.gbapal.lz");
+    const u32 gMonBackPic_Citramon[] = INCBIN_U32("graphics/pokemon/citramon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Citramon[] = INCBIN_U32("graphics/pokemon/citramon/shiny.gbapal.lz");
+    const u8 gMonIcon_Citramon[] = INCBIN_U8("graphics/pokemon/citramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Camerupt[] = INCBIN_U8("graphics/pokemon/camerupt/footprint.1bpp");
+    const u8 gMonFootprint_Citramon[] = INCBIN_U8("graphics/pokemon/citramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_CameruptF[] = INCBIN_U32("graphics/pokemon/camerupt/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_CameruptF[] = INCBIN_U32("graphics/pokemon/camerupt/backf.4bpp.lz");
+    const u32 gMonFrontPic_CitramonF[] = INCBIN_U32("graphics/pokemon/citramon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_CitramonF[] = INCBIN_U32("graphics/pokemon/citramon/backf.4bpp.lz");
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_CameruptMega[] = INCBIN_U32("graphics/pokemon/camerupt/mega/front.4bpp.lz");
-    const u32 gMonPalette_CameruptMega[] = INCBIN_U32("graphics/pokemon/camerupt/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_CameruptMega[] = INCBIN_U32("graphics/pokemon/camerupt/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_CameruptMega[] = INCBIN_U32("graphics/pokemon/camerupt/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_CameruptMega[] = INCBIN_U8("graphics/pokemon/camerupt/mega/icon.4bpp");
+    const u32 gMonFrontPic_CitramonMega[] = INCBIN_U32("graphics/pokemon/citramon/mega/front.4bpp.lz");
+    const u32 gMonPalette_CitramonMega[] = INCBIN_U32("graphics/pokemon/citramon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_CitramonMega[] = INCBIN_U32("graphics/pokemon/citramon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_CitramonMega[] = INCBIN_U32("graphics/pokemon/citramon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_CitramonMega[] = INCBIN_U8("graphics/pokemon/citramon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CHRYSALMON
 

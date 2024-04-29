@@ -2470,13 +2470,13 @@ Cry_Chrysalmon::
 	.incbin "sound/direct_sound_samples/cries/chrysalmon.bin"
 
 	.align 2
-Cry_Camerupt::
-	.incbin "sound/direct_sound_samples/cries/camerupt.bin"
+Cry_Citramon::
+	.incbin "sound/direct_sound_samples/cries/citramon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_CameruptMega::
-	.incbin "sound/direct_sound_samples/cries/camerupt_mega.bin"
+Cry_CitramonMega::
+	.incbin "sound/direct_sound_samples/cries/citramon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_CHRYSALMON
 

@@ -4315,7 +4315,7 @@ static const union AnimCmd sAnim_Chrysalmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Camerupt_1[] =
+static const union AnimCmd sAnim_Citramon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4328,7 +4328,7 @@ static const union AnimCmd sAnim_Camerupt_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(CameruptMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(CitramonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CHRYSALMON
 
@@ -11188,9 +11188,9 @@ SINGLE_ANIMATION(Chamelemon);
 #endif //P_FAMILY_CHAMBLEMON
 #if P_FAMILY_CHRYSALMON
 SINGLE_ANIMATION(Chrysalmon);
-SINGLE_ANIMATION(Camerupt);
+SINGLE_ANIMATION(Citramon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(CameruptMega);
+SINGLE_ANIMATION(CitramonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CHRYSALMON
 #if P_FAMILY_TORKOAL
