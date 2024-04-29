@@ -808,7 +808,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [1] =
                     {
-                        .species = SPECIES_MINUN,
+                        .species = SPECIES_BUCCHIEMON_RED,
                         .heldItem = ITEM_FOCUS_BAND,
                         .moves = {MOVE_THUNDER_WAVE, MOVE_CHARM, MOVE_ENCORE, MOVE_SPARK},
                         .hpEV = 252,
@@ -823,7 +823,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 15,
                         .abilityNum = 0,
                         .personality = 0x8C,
-                        .nickname = _("MINUN"),
+                        .nickname = _("BUCCHIEMON_RED"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                     [2] =
@@ -2484,7 +2484,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         },
                                     [1] =
                                         {
-                                            .species = SPECIES_MINUN,
+                                            .species = SPECIES_BUCCHIEMON_RED,
                                             .heldItem = ITEM_BRIGHT_POWDER,
                                             .moves = {MOVE_HELPING_HAND, MOVE_THUNDERBOLT, MOVE_AGILITY, MOVE_BATON_PASS},
                                             .speedEV = 255,
@@ -2498,7 +2498,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 0,
                                             .personality = 0x8C,
-                                            .nickname = _("MINUN"),
+                                            .nickname = _("BUCCHIEMON_RED"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [2] =

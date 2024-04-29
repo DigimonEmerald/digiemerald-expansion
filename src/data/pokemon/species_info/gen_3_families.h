@@ -4265,8 +4265,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_BOOGIEMON
 
-#if P_FAMILY_MINUN
-    [SPECIES_MINUN] =
+#if P_FAMILY_BUCCHIEMON_RED
+    [SPECIES_BUCCHIEMON_RED] =
     {
         .baseHP        = 60,
         .baseAttack    = 40,
@@ -4286,39 +4286,39 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
         .abilities = { ABILITY_MINUS, ABILITY_NONE, ABILITY_VOLT_ABSORB },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Minun"),
-        .cryId = CRY_MINUN,
-        .natDexNum = NATIONAL_DEX_MINUN,
+        .speciesName = _("Bucchiemon_red"),
+        .cryId = CRY_BUCCHIEMON_RED,
+        .natDexNum = NATIONAL_DEX_BUCCHIEMON_RED,
         .categoryName = _("Cheering"),
         .height = 4,
         .weight = 42,
         .description = COMPOUND_STRING(
             "At a meeting of Pokémon academics, it was\n"
             "announced that simultaneous exposure to\n"
-            "electricity from a Boogiemon and Minun will\n"
+            "electricity from a Boogiemon and Bucchiemon_red will\n"
             "promote circulation and boost vitality."),
         .pokemonScale = 512,
         .pokemonOffset = -7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Minun,
+        .frontPic = gMonFrontPic_Bucchiemon_red,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Minun,
+        .frontAnimFrames = sAnims_Bucchiemon_red,
         .frontAnimId = ANIM_V_JUMPS_H_JUMPS,
-        .backPic = gMonBackPic_Minun,
+        .backPic = gMonBackPic_Bucchiemon_red,
         .backPicSize = MON_COORDS_SIZE(48, 64),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Minun,
-        .shinyPalette = gMonShinyPalette_Minun,
-        .iconSprite = gMonIcon_Minun,
+        .palette = gMonPalette_Bucchiemon_red,
+        .shinyPalette = gMonShinyPalette_Bucchiemon_red,
+        .iconSprite = gMonIcon_Bucchiemon_red,
         .iconPalIndex = 0,
-        FOOTPRINT(Minun)
-        .levelUpLearnset = sMinunLevelUpLearnset,
-        .teachableLearnset = sMinunTeachableLearnset,
+        FOOTPRINT(Bucchiemon_red)
+        .levelUpLearnset = sBucchiemon_redLevelUpLearnset,
+        .teachableLearnset = sBucchiemon_redTeachableLearnset,
     },
-#endif //P_FAMILY_MINUN
+#endif //P_FAMILY_BUCCHIEMON_RED
 
 #if P_FAMILY_VOLBEAT_ILLUMISE
     [SPECIES_VOLBEAT] =

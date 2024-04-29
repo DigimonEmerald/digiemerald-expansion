@@ -14844,8 +14844,8 @@ static const u16 sBoogiemonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BOOGIEMON
 
-#if P_FAMILY_MINUN
-static const u16 sMinunTeachableLearnset[] = {
+#if P_FAMILY_BUCCHIEMON_RED
+static const u16 sBucchiemon_redTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
@@ -14879,7 +14879,7 @@ static const u16 sMinunTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MINUN
+#endif //P_FAMILY_BUCCHIEMON_RED
 
 #if P_FAMILY_VOLBEAT_ILLUMISE
 static const u16 sVolbeatTeachableLearnset[] = {

@@ -2394,11 +2394,11 @@ Cry_Boogiemon::
 	.incbin "sound/direct_sound_samples/cries/boogiemon.bin"
 .endif @ P_FAMILY_BOOGIEMON
 
-.if P_FAMILY_MINUN == TRUE
+.if P_FAMILY_BUCCHIEMON_RED == TRUE
 	.align 2
-Cry_Minun::
-	.incbin "sound/direct_sound_samples/cries/minun.bin"
-.endif @ P_FAMILY_MINUN
+Cry_Bucchiemon_red::
+	.incbin "sound/direct_sound_samples/cries/bucchiemon_red.bin"
+.endif @ P_FAMILY_BUCCHIEMON_RED
 
 .if P_FAMILY_VOLBEAT_ILLUMISE == TRUE
 	.align 2

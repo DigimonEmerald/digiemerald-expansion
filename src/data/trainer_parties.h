@@ -3842,7 +3842,7 @@ static const struct TrainerMon sParty_Isabel1[] = {
     },
     {
     .lvl = 14,
-    .species = SPECIES_MINUN,
+    .species = SPECIES_BUCCHIEMON_RED,
     .heldItem = ITEM_ORAN_BERRY
     }
 };
@@ -3857,7 +3857,7 @@ static const struct TrainerMon sParty_Isabel2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 26,
-    .species = SPECIES_MINUN,
+    .species = SPECIES_BUCCHIEMON_RED,
     .heldItem = ITEM_ORAN_BERRY
     }
 };
@@ -3872,7 +3872,7 @@ static const struct TrainerMon sParty_Isabel3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 29,
-    .species = SPECIES_MINUN,
+    .species = SPECIES_BUCCHIEMON_RED,
     .heldItem = ITEM_ORAN_BERRY
     }
 };
@@ -3887,7 +3887,7 @@ static const struct TrainerMon sParty_Isabel4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 32,
-    .species = SPECIES_MINUN,
+    .species = SPECIES_BUCCHIEMON_RED,
     .heldItem = ITEM_ORAN_BERRY
     }
 };
@@ -3902,7 +3902,7 @@ static const struct TrainerMon sParty_Isabel5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 35,
-    .species = SPECIES_MINUN,
+    .species = SPECIES_BUCCHIEMON_RED,
     .heldItem = ITEM_SITRUS_BERRY
     }
 };
@@ -5920,7 +5920,7 @@ static const struct TrainerMon sParty_AmyAndLiv1[] = {
     },
     {
     .lvl = 15,
-    .species = SPECIES_MINUN,
+    .species = SPECIES_BUCCHIEMON_RED,
     }
 };
 
@@ -5933,7 +5933,7 @@ static const struct TrainerMon sParty_AmyAndLiv2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 27,
-    .species = SPECIES_MINUN,
+    .species = SPECIES_BUCCHIEMON_RED,
     }
 };
 
@@ -5966,7 +5966,7 @@ static const struct TrainerMon sParty_AmyAndLiv3[] = {
     },
     {
     .lvl = 9,
-    .species = SPECIES_MINUN,
+    .species = SPECIES_BUCCHIEMON_RED,
     }
 };
 
@@ -5992,7 +5992,7 @@ static const struct TrainerMon sParty_AmyAndLiv4[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 30,
-    .species = SPECIES_MINUN,
+    .species = SPECIES_BUCCHIEMON_RED,
     }
 };
 
@@ -6006,7 +6006,7 @@ static const struct TrainerMon sParty_AmyAndLiv5[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 33,
-    .species = SPECIES_MINUN,
+    .species = SPECIES_BUCCHIEMON_RED,
     .moves = {MOVE_SPARK, MOVE_CHARGE, MOVE_CHARM, MOVE_HELPING_HAND}
     }
 };
@@ -6021,7 +6021,7 @@ static const struct TrainerMon sParty_AmyAndLiv6[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 36,
-    .species = SPECIES_MINUN,
+    .species = SPECIES_BUCCHIEMON_RED,
     .moves = {MOVE_THUNDER, MOVE_CHARGE, MOVE_CHARM, MOVE_HELPING_HAND}
     }
 };
@@ -8939,7 +8939,7 @@ static const struct TrainerMon sParty_Chandler[] = {
 static const struct TrainerMon sParty_Kaleb[] = {
     {
     .lvl = 14,
-    .species = SPECIES_MINUN,
+    .species = SPECIES_BUCCHIEMON_RED,
     .heldItem = ITEM_ORAN_BERRY
     },
     {

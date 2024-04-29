@@ -2476,8 +2476,8 @@ const u16 gEggMoves[] = {
         MOVE_TEARFUL_LOOK),
 #endif //P_FAMILY_BOOGIEMON
 
-#if P_FAMILY_MINUN
-    egg_moves(MINUN,
+#if P_FAMILY_BUCCHIEMON_RED
+    egg_moves(BUCCHIEMON_RED,
         MOVE_WISH,
         MOVE_SING,
         MOVE_SWEET_KISS,
@@ -2486,7 +2486,7 @@ const u16 gEggMoves[] = {
         MOVE_CHARM,
         MOVE_FAKE_TEARS,
         MOVE_TEARFUL_LOOK),
-#endif //P_FAMILY_MINUN
+#endif //P_FAMILY_BUCCHIEMON_RED
 
 #if P_FAMILY_VOLBEAT_ILLUMISE
     egg_moves(VOLBEAT,

@@ -4639,16 +4639,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_BOOGIEMON
 
-#if P_FAMILY_MINUN
-    const u32 gMonFrontPic_Minun[] = INCBIN_U32("graphics/pokemon/minun/anim_front.4bpp.lz");
-    const u32 gMonPalette_Minun[] = INCBIN_U32("graphics/pokemon/minun/normal.gbapal.lz");
-    const u32 gMonBackPic_Minun[] = INCBIN_U32("graphics/pokemon/minun/back.4bpp.lz");
-    const u32 gMonShinyPalette_Minun[] = INCBIN_U32("graphics/pokemon/minun/shiny.gbapal.lz");
-    const u8 gMonIcon_Minun[] = INCBIN_U8("graphics/pokemon/minun/icon.4bpp");
+#if P_FAMILY_BUCCHIEMON_RED
+    const u32 gMonFrontPic_Bucchiemon_red[] = INCBIN_U32("graphics/pokemon/bucchiemon_red/anim_front.4bpp.lz");
+    const u32 gMonPalette_Bucchiemon_red[] = INCBIN_U32("graphics/pokemon/bucchiemon_red/normal.gbapal.lz");
+    const u32 gMonBackPic_Bucchiemon_red[] = INCBIN_U32("graphics/pokemon/bucchiemon_red/back.4bpp.lz");
+    const u32 gMonShinyPalette_Bucchiemon_red[] = INCBIN_U32("graphics/pokemon/bucchiemon_red/shiny.gbapal.lz");
+    const u8 gMonIcon_Bucchiemon_red[] = INCBIN_U8("graphics/pokemon/bucchiemon_red/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Minun[] = INCBIN_U8("graphics/pokemon/minun/footprint.1bpp");
+    const u8 gMonFootprint_Bucchiemon_red[] = INCBIN_U8("graphics/pokemon/bucchiemon_red/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_MINUN
+#endif //P_FAMILY_BUCCHIEMON_RED
 
 #if P_FAMILY_VOLBEAT_ILLUMISE
     const u32 gMonFrontPic_Volbeat[] = INCBIN_U32("graphics/pokemon/volbeat/anim_front.4bpp.lz");

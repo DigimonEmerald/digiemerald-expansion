@@ -211,7 +211,7 @@
 #define P_FAMILY_SAWKUWAMON                P_GEN_3_POKEMON
 #define P_FAMILY_BOARMON               P_GEN_3_POKEMON
 #define P_FAMILY_BOOGIEMON                  P_GEN_3_POKEMON
-#define P_FAMILY_MINUN                   P_GEN_3_POKEMON
+#define P_FAMILY_BUCCHIEMON_RED                   P_GEN_3_POKEMON
 #define P_FAMILY_VOLBEAT_ILLUMISE        P_GEN_3_POKEMON
 #define P_FAMILY_ROSELIA                 P_GEN_3_POKEMON
 #define P_FAMILY_GULPIN                  P_GEN_3_POKEMON

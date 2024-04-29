@@ -4162,8 +4162,8 @@ static const union AnimCmd sAnim_Boogiemon_1[] =
 };
 #endif //P_FAMILY_BOOGIEMON
 
-#if P_FAMILY_MINUN
-static const union AnimCmd sAnim_Minun_1[] =
+#if P_FAMILY_BUCCHIEMON_RED
+static const union AnimCmd sAnim_Bucchiemon_red_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -4172,7 +4172,7 @@ static const union AnimCmd sAnim_Minun_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_MINUN
+#endif //P_FAMILY_BUCCHIEMON_RED
 
 #if P_FAMILY_VOLBEAT_ILLUMISE
 static const union AnimCmd sAnim_Volbeat_1[] =
@@ -11155,9 +11155,9 @@ SINGLE_ANIMATION(BomnanimonMega);
 #if P_FAMILY_BOOGIEMON
 SINGLE_ANIMATION(Boogiemon);
 #endif //P_FAMILY_BOOGIEMON
-#if P_FAMILY_MINUN
-SINGLE_ANIMATION(Minun);
-#endif //P_FAMILY_MINUN
+#if P_FAMILY_BUCCHIEMON_RED
+SINGLE_ANIMATION(Bucchiemon_red);
+#endif //P_FAMILY_BUCCHIEMON_RED
 #if P_FAMILY_VOLBEAT_ILLUMISE
 SINGLE_ANIMATION(Volbeat);
 SINGLE_ANIMATION(Illumise);

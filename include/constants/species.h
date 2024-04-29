@@ -313,7 +313,7 @@
 #define SPECIES_BOARMON                               309
 #define SPECIES_BOMNANIMON                               310
 #define SPECIES_BOOGIEMON                                  311
-#define SPECIES_MINUN                                   312
+#define SPECIES_BUCCHIEMON_RED                                   312
 #define SPECIES_VOLBEAT                                 313
 #define SPECIES_ILLUMISE                                314
 #define SPECIES_ROSELIA                                 315

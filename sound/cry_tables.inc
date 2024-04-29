@@ -857,9 +857,9 @@ gCryTable::
 .if P_FAMILY_BOOGIEMON == TRUE
 	cry Cry_Boogiemon
 .endif @ P_FAMILY_BOOGIEMON
-.if P_FAMILY_MINUN == TRUE
-	cry Cry_Minun
-.endif @ P_FAMILY_MINUN
+.if P_FAMILY_BUCCHIEMON_RED == TRUE
+	cry Cry_Bucchiemon_red
+.endif @ P_FAMILY_BUCCHIEMON_RED
 .if P_FAMILY_VOLBEAT_ILLUMISE == TRUE
 	cry Cry_Volbeat
 	cry Cry_Illumise
@@ -3283,9 +3283,9 @@ gCryTable_Reverse::
 .if P_FAMILY_BOOGIEMON == TRUE
 	cry_reverse Cry_Boogiemon
 .endif @ P_FAMILY_BOOGIEMON
-.if P_FAMILY_MINUN == TRUE
-	cry_reverse Cry_Minun
-.endif @ P_FAMILY_MINUN
+.if P_FAMILY_BUCCHIEMON_RED == TRUE
+	cry_reverse Cry_Bucchiemon_red
+.endif @ P_FAMILY_BUCCHIEMON_RED
 .if P_FAMILY_VOLBEAT_ILLUMISE == TRUE
 	cry_reverse Cry_Volbeat
 	cry_reverse Cry_Illumise
