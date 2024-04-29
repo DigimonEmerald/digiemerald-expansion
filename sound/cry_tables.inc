@@ -1015,9 +1015,9 @@ gCryTable::
 .if P_FAMILY_FLARIZAMON == TRUE
 	cry Cry_Flarizamon
 .endif @ P_FAMILY_FLARIZAMON
-.if P_FAMILY_LUVDISC == TRUE
-	cry Cry_Luvdisc
-.endif @ P_FAMILY_LUVDISC
+.if P_FAMILY_FLYBEEMON == TRUE
+	cry Cry_Flybeemon
+.endif @ P_FAMILY_FLYBEEMON
 .if P_FAMILY_BAGON == TRUE
 	cry Cry_Bagon
 	cry Cry_Shelgon
@@ -3441,9 +3441,9 @@ gCryTable_Reverse::
 .if P_FAMILY_FLARIZAMON == TRUE
 	cry_reverse Cry_Flarizamon
 .endif @ P_FAMILY_FLARIZAMON
-.if P_FAMILY_LUVDISC == TRUE
-	cry_reverse Cry_Luvdisc
-.endif @ P_FAMILY_LUVDISC
+.if P_FAMILY_FLYBEEMON == TRUE
+	cry_reverse Cry_Flybeemon
+.endif @ P_FAMILY_FLYBEEMON
 .if P_FAMILY_BAGON == TRUE
 	cry_reverse Cry_Bagon
 	cry_reverse Cry_Shelgon

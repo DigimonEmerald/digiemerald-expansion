@@ -2755,11 +2755,11 @@ Cry_Flarizamon::
 	.incbin "sound/direct_sound_samples/cries/flarizamon.bin"
 .endif @ P_FAMILY_FLARIZAMON
 
-.if P_FAMILY_LUVDISC == TRUE
+.if P_FAMILY_FLYBEEMON == TRUE
 	.align 2
-Cry_Luvdisc::
-	.incbin "sound/direct_sound_samples/cries/luvdisc.bin"
-.endif @ P_FAMILY_LUVDISC
+Cry_Flybeemon::
+	.incbin "sound/direct_sound_samples/cries/flybeemon.bin"
+.endif @ P_FAMILY_FLYBEEMON
 
 .if P_FAMILY_BAGON == TRUE
 	.align 2

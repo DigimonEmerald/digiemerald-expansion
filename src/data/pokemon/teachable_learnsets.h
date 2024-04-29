@@ -17200,8 +17200,8 @@ static const u16 sFlarizamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_FLARIZAMON
 
-#if P_FAMILY_LUVDISC
-static const u16 sLuvdiscTeachableLearnset[] = {
+#if P_FAMILY_FLYBEEMON
+static const u16 sFlybeemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -17227,7 +17227,7 @@ static const u16 sLuvdiscTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_LUVDISC
+#endif //P_FAMILY_FLYBEEMON
 
 #if P_FAMILY_BAGON
 static const u16 sBagonTeachableLearnset[] = {

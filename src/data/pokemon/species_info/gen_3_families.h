@@ -8338,8 +8338,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_FLARIZAMON
 
-#if P_FAMILY_LUVDISC
-    [SPECIES_LUVDISC] =
+#if P_FAMILY_FLYBEEMON
+    [SPECIES_FLYBEEMON] =
     {
         .baseHP        = 43,
         .baseAttack    = 30,
@@ -8359,39 +8359,39 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_HYDRATION },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Luvdisc"),
-        .cryId = CRY_LUVDISC,
-        .natDexNum = NATIONAL_DEX_LUVDISC,
+        .speciesName = _("Flybeemon"),
+        .cryId = CRY_FLYBEEMON,
+        .natDexNum = NATIONAL_DEX_FLYBEEMON,
         .categoryName = _("Rendezvous"),
         .height = 6,
         .weight = 87,
         .description = COMPOUND_STRING(
-            "Luvdisc make the branches of Patamon\n"
+            "Flybeemon make the branches of Patamon\n"
             "their nests. There is a custom from long\n"
-            "ago of giving a Luvdisc as a gift to\n"
+            "ago of giving a Flybeemon as a gift to\n"
             "express one's feelings of love."),
         .pokemonScale = 371,
         .pokemonOffset = 2,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Luvdisc,
+        .frontPic = gMonFrontPic_Flybeemon,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Luvdisc,
+        .frontAnimFrames = sAnims_Flybeemon,
         .frontAnimId = ANIM_H_SLIDE_WOBBLE,
-        .backPic = gMonBackPic_Luvdisc,
+        .backPic = gMonBackPic_Flybeemon,
         .backPicSize = MON_COORDS_SIZE(40, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_H_SPRING_REPEATED,
-        .palette = gMonPalette_Luvdisc,
-        .shinyPalette = gMonShinyPalette_Luvdisc,
-        .iconSprite = gMonIcon_Luvdisc,
+        .palette = gMonPalette_Flybeemon,
+        .shinyPalette = gMonShinyPalette_Flybeemon,
+        .iconSprite = gMonIcon_Flybeemon,
         .iconPalIndex = 0,
-        FOOTPRINT(Luvdisc)
-        .levelUpLearnset = sLuvdiscLevelUpLearnset,
-        .teachableLearnset = sLuvdiscTeachableLearnset,
+        FOOTPRINT(Flybeemon)
+        .levelUpLearnset = sFlybeemonLevelUpLearnset,
+        .teachableLearnset = sFlybeemonTeachableLearnset,
     },
-#endif //P_FAMILY_LUVDISC
+#endif //P_FAMILY_FLYBEEMON
 
 #if P_FAMILY_BAGON
     [SPECIES_BAGON] =

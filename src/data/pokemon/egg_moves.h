@@ -2999,8 +2999,8 @@ const u16 gEggMoves[] = {
         MOVE_ZEN_HEADBUTT),
 #endif //P_FAMILY_FLARIZAMON
 
-#if P_FAMILY_LUVDISC
-    egg_moves(LUVDISC,
+#if P_FAMILY_FLYBEEMON
+    egg_moves(FLYBEEMON,
         MOVE_SPLASH,
         MOVE_SUPERSONIC,
         MOVE_WATER_SPORT,
@@ -3011,7 +3011,7 @@ const u16 gEggMoves[] = {
         MOVE_HEAL_PULSE,
         MOVE_BRINE,
         MOVE_ENTRAINMENT),
-#endif //P_FAMILY_LUVDISC
+#endif //P_FAMILY_FLYBEEMON
 
 #if P_FAMILY_BAGON
     egg_moves(BAGON,

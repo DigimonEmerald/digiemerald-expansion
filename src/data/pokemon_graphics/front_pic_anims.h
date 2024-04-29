@@ -4989,8 +4989,8 @@ static const union AnimCmd sAnim_Flarizamon_1[] =
 };
 #endif //P_FAMILY_FLARIZAMON
 
-#if P_FAMILY_LUVDISC
-static const union AnimCmd sAnim_Luvdisc_1[] =
+#if P_FAMILY_FLYBEEMON
+static const union AnimCmd sAnim_Flybeemon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4999,7 +4999,7 @@ static const union AnimCmd sAnim_Luvdisc_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_LUVDISC
+#endif //P_FAMILY_FLYBEEMON
 
 #if P_FAMILY_BAGON
 static const union AnimCmd sAnim_Bagon_1[] =
@@ -11316,9 +11316,9 @@ SINGLE_ANIMATION(Flawizamon);
 #if P_FAMILY_FLARIZAMON
 SINGLE_ANIMATION(Flarizamon);
 #endif //P_FAMILY_FLARIZAMON
-#if P_FAMILY_LUVDISC
-SINGLE_ANIMATION(Luvdisc);
-#endif //P_FAMILY_LUVDISC
+#if P_FAMILY_FLYBEEMON
+SINGLE_ANIMATION(Flybeemon);
+#endif //P_FAMILY_FLYBEEMON
 #if P_FAMILY_BAGON
 SINGLE_ANIMATION(Bagon);
 SINGLE_ANIMATION(Shelgon);
