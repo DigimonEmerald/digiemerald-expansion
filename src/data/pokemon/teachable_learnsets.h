@@ -17000,7 +17000,7 @@ static const u16 sEyesmon_scattermodeTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSealeoTeachableLearnset[] = {
+static const u16 sFangmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,

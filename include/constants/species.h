@@ -366,7 +366,7 @@
 #define SPECIES_EXVEEMON_VIRUS                                 361
 #define SPECIES_EYESMON                                  362
 #define SPECIES_EYESMON_SCATTERMODE                                  363
-#define SPECIES_SEALEO                                  364
+#define SPECIES_FANGMON                                  364
 #define SPECIES_WALREIN                                 365
 #define SPECIES_CLAMPERL                                366
 #define SPECIES_HUNTAIL                                 367

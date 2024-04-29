@@ -1004,7 +1004,7 @@ gCryTable::
 .endif @ P_FAMILY_EXVEEMON_VIRUS
 .if P_FAMILY_EYESMON_SCATTERMODE == TRUE
 	cry Cry_Eyesmon_scattermode
-	cry Cry_Sealeo
+	cry Cry_Fangmon
 	cry Cry_Walrein
 .endif @ P_FAMILY_EYESMON_SCATTERMODE
 .if P_FAMILY_CLAMPERL == TRUE
@@ -3430,7 +3430,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_EXVEEMON_VIRUS
 .if P_FAMILY_EYESMON_SCATTERMODE == TRUE
 	cry_reverse Cry_Eyesmon_scattermode
-	cry_reverse Cry_Sealeo
+	cry_reverse Cry_Fangmon
 	cry_reverse Cry_Walrein
 .endif @ P_FAMILY_EYESMON_SCATTERMODE
 .if P_FAMILY_CLAMPERL == TRUE

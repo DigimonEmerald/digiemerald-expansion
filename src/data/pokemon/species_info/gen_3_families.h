@@ -7996,10 +7996,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Eyesmon_scattermode)
         .levelUpLearnset = sEyesmon_scattermodeLevelUpLearnset,
         .teachableLearnset = sEyesmon_scattermodeTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_SEALEO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_FANGMON}),
     },
 
-    [SPECIES_SEALEO] =
+    [SPECIES_FANGMON] =
     {
         .baseHP        = 90,
         .baseAttack    = 60,
@@ -8018,14 +8018,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
         .abilities = { ABILITY_THICK_FAT, ABILITY_ICE_BODY, ABILITY_OBLIVIOUS },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Sealeo"),
-        .cryId = CRY_SEALEO,
-        .natDexNum = NATIONAL_DEX_SEALEO,
+        .speciesName = _("Fangmon"),
+        .cryId = CRY_FANGMON,
+        .natDexNum = NATIONAL_DEX_FANGMON,
         .categoryName = _("Ball Roll"),
         .height = 11,
         .weight = 876,
         .description = COMPOUND_STRING(
-            "Sealeo live in herds on ice floes. Using its\n"
+            "Fangmon live in herds on ice floes. Using its\n"
             "powerful flippers, it shatters ice.\n"
             "It dives into the sea to hunt prey five\n"
             "times a day."),
@@ -8033,22 +8033,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Sealeo,
+        .frontPic = gMonFrontPic_Fangmon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Sealeo,
+        .frontAnimFrames = sAnims_Fangmon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Sealeo,
+        .backPic = gMonBackPic_Fangmon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Sealeo,
-        .shinyPalette = gMonShinyPalette_Sealeo,
-        .iconSprite = gMonIcon_Sealeo,
+        .palette = gMonPalette_Fangmon,
+        .shinyPalette = gMonShinyPalette_Fangmon,
+        .iconSprite = gMonIcon_Fangmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Sealeo)
-        .levelUpLearnset = sSealeoLevelUpLearnset,
-        .teachableLearnset = sSealeoTeachableLearnset,
+        FOOTPRINT(Fangmon)
+        .levelUpLearnset = sFangmonLevelUpLearnset,
+        .teachableLearnset = sFangmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 44, SPECIES_WALREIN}),
     },
 

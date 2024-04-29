@@ -4924,7 +4924,7 @@ static const union AnimCmd sAnim_Eyesmon_scattermode_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Sealeo_1[] =
+static const union AnimCmd sAnim_Fangmon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -11305,7 +11305,7 @@ SINGLE_ANIMATION(Froslass);
 #endif //P_FAMILY_EXVEEMON_VIRUS
 #if P_FAMILY_EYESMON_SCATTERMODE
 SINGLE_ANIMATION(Eyesmon_scattermode);
-SINGLE_ANIMATION(Sealeo);
+SINGLE_ANIMATION(Fangmon);
 SINGLE_ANIMATION(Walrein);
 #endif //P_FAMILY_EYESMON_SCATTERMODE
 #if P_FAMILY_CLAMPERL

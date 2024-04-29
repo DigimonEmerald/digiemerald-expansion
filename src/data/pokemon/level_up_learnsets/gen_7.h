@@ -9627,7 +9627,7 @@ static const struct LevelUpMove sEyesmon_scattermodeLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sSealeoLevelUpLearnset[] = {
+static const struct LevelUpMove sFangmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SWAGGER),
     LEVEL_UP_MOVE( 1, MOVE_SWAGGER),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
