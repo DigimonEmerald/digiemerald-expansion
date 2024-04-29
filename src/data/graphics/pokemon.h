@@ -4722,17 +4722,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_BuraimonF[] = INCBIN_U32("graphics/pokemon/buraimon/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_BuraimonF[] = INCBIN_U32("graphics/pokemon/buraimon/backf.4bpp.lz");
 
-    const u32 gMonFrontPic_Swalot[] = INCBIN_U32("graphics/pokemon/swalot/anim_front.4bpp.lz");
-    const u32 gMonPalette_Swalot[] = INCBIN_U32("graphics/pokemon/swalot/normal.gbapal.lz");
-    const u32 gMonBackPic_Swalot[] = INCBIN_U32("graphics/pokemon/swalot/back.4bpp.lz");
-    const u32 gMonShinyPalette_Swalot[] = INCBIN_U32("graphics/pokemon/swalot/shiny.gbapal.lz");
-    const u8 gMonIcon_Swalot[] = INCBIN_U8("graphics/pokemon/swalot/icon.4bpp");
+    const u32 gMonFrontPic_Burgermon_champion[] = INCBIN_U32("graphics/pokemon/burgermon_champion/anim_front.4bpp.lz");
+    const u32 gMonPalette_Burgermon_champion[] = INCBIN_U32("graphics/pokemon/burgermon_champion/normal.gbapal.lz");
+    const u32 gMonBackPic_Burgermon_champion[] = INCBIN_U32("graphics/pokemon/burgermon_champion/back.4bpp.lz");
+    const u32 gMonShinyPalette_Burgermon_champion[] = INCBIN_U32("graphics/pokemon/burgermon_champion/shiny.gbapal.lz");
+    const u8 gMonIcon_Burgermon_champion[] = INCBIN_U8("graphics/pokemon/burgermon_champion/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Swalot[] = INCBIN_U8("graphics/pokemon/swalot/footprint.1bpp");
+    const u8 gMonFootprint_Burgermon_champion[] = INCBIN_U8("graphics/pokemon/burgermon_champion/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_SwalotF[] = INCBIN_U32("graphics/pokemon/swalot/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_SwalotF[] = INCBIN_U32("graphics/pokemon/swalot/backf.4bpp.lz");
+    const u32 gMonFrontPic_Burgermon_championF[] = INCBIN_U32("graphics/pokemon/burgermon_champion/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_Burgermon_championF[] = INCBIN_U32("graphics/pokemon/burgermon_champion/backf.4bpp.lz");
 #endif //P_FAMILY_BURAIMON
 
 #if P_FAMILY_CARVANHA

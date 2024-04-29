@@ -15106,7 +15106,7 @@ static const u16 sBuraimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSwalotTeachableLearnset[] = {
+static const u16 sBurgermon_championTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULLET_SEED,

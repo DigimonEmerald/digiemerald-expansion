@@ -4683,10 +4683,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Buraimon)
         .levelUpLearnset = sBuraimonLevelUpLearnset,
         .teachableLearnset = sBuraimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_SWALOT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_BURGERMON_CHAMPION}),
     },
 
-    [SPECIES_SWALOT] =
+    [SPECIES_BURGERMON_CHAMPION] =
     {
         .baseHP        = 100,
         .baseAttack    = 73,
@@ -4707,41 +4707,41 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_LIQUID_OOZE, ABILITY_STICKY_HOLD, ABILITY_GLUTTONY },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Swalot"),
-        .cryId = CRY_SWALOT,
-        .natDexNum = NATIONAL_DEX_SWALOT,
+        .speciesName = _("Burgermon_champion"),
+        .cryId = CRY_BURGERMON_CHAMPION,
+        .natDexNum = NATIONAL_DEX_BURGERMON_CHAMPION,
         .categoryName = _("Poison Bag"),
         .height = 17,
         .weight = 800,
         .description = COMPOUND_STRING(
             "Its powerful stomach acid is capable of\n"
             "digesting almost anything. The one thing\n"
-            "in the whole world a Swalot can't digest is\n"
+            "in the whole world a Burgermon_champion can't digest is\n"
             "its own stomach."),
         .pokemonScale = 256,
         .pokemonOffset = 6,
         .trainerScale = 345,
         .trainerOffset = 3,
-        .frontPic = gMonFrontPic_Swalot,
-        .frontPicFemale = gMonFrontPic_SwalotF,
+        .frontPic = gMonFrontPic_Burgermon_champion,
+        .frontPicFemale = gMonFrontPic_Burgermon_championF,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_Swalot,
+        .frontAnimFrames = sAnims_Burgermon_champion,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Swalot,
-        .backPicFemale = gMonBackPic_SwalotF,
+        .backPic = gMonBackPic_Burgermon_champion,
+        .backPicFemale = gMonBackPic_Burgermon_championF,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Swalot,
-        .shinyPalette = gMonShinyPalette_Swalot,
-        .iconSprite = gMonIcon_Swalot,
+        .palette = gMonPalette_Burgermon_champion,
+        .shinyPalette = gMonShinyPalette_Burgermon_champion,
+        .iconSprite = gMonIcon_Burgermon_champion,
         .iconPalIndex = 2,
-        FOOTPRINT(Swalot)
-        .levelUpLearnset = sSwalotLevelUpLearnset,
-        .teachableLearnset = sSwalotTeachableLearnset,
+        FOOTPRINT(Burgermon_champion)
+        .levelUpLearnset = sBurgermon_championLevelUpLearnset,
+        .teachableLearnset = sBurgermon_championTeachableLearnset,
     },
 #endif //P_FAMILY_BURAIMON
 

@@ -875,7 +875,7 @@ gCryTable::
 .endif @ P_FAMILY_BULLMON
 .if P_FAMILY_BURAIMON == TRUE
 	cry Cry_Buraimon
-	cry Cry_Swalot
+	cry Cry_Burgermon_champion
 .endif @ P_FAMILY_BURAIMON
 .if P_FAMILY_CARVANHA == TRUE
 	cry Cry_Carvanha
@@ -3301,7 +3301,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_BULLMON
 .if P_FAMILY_BURAIMON == TRUE
 	cry_reverse Cry_Buraimon
-	cry_reverse Cry_Swalot
+	cry_reverse Cry_Burgermon_champion
 .endif @ P_FAMILY_BURAIMON
 .if P_FAMILY_CARVANHA == TRUE
 	cry_reverse Cry_Carvanha

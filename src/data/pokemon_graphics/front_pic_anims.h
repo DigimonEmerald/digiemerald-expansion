@@ -4238,7 +4238,7 @@ static const union AnimCmd sAnim_Buraimon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Swalot_1[] =
+static const union AnimCmd sAnim_Burgermon_champion_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 30),
@@ -11173,7 +11173,7 @@ SINGLE_ANIMATION(Roserade);
 #endif //P_FAMILY_BULLMON
 #if P_FAMILY_BURAIMON
 SINGLE_ANIMATION(Buraimon);
-SINGLE_ANIMATION(Swalot);
+SINGLE_ANIMATION(Burgermon_champion);
 #endif //P_FAMILY_BURAIMON
 #if P_FAMILY_CARVANHA
 SINGLE_ANIMATION(Carvanha);
