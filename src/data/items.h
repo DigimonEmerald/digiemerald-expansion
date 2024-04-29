@@ -5099,7 +5099,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_CENTARUMONNITE] =
     {
-        .name = _("Centarumonnite"),
+        .name = _("Centarunite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
@@ -5129,7 +5129,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_DARMAILMONNITE] =
     {
-        .name = _("Darmailmonnite"),
+        .name = _("Darmailnite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
@@ -5219,7 +5219,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_GARURUMON_XITE] =
     {
-        .name = _("Garurumon_xite"),
+        .name = _("Garurite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
@@ -11145,7 +11145,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_CHAMBLEMON_PAIL] =
     {
-        .name = _("Chamblemon Pail"),
+        .name = _("Chamble Pail"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A tool used for\n"
