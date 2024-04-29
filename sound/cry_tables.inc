@@ -977,9 +977,9 @@ gCryTable::
 	cry Cry_Dusknoir
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_DRIMOGEMON
-.if P_FAMILY_TROPIUS == TRUE
-	cry Cry_Tropius
-.endif @ P_FAMILY_TROPIUS
+.if P_FAMILY_ELEPHANMON == TRUE
+	cry Cry_Elephanmon
+.endif @ P_FAMILY_ELEPHANMON
 .if P_FAMILY_CHIMECHO == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Chingling
@@ -3403,9 +3403,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Dusknoir
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_DRIMOGEMON
-.if P_FAMILY_TROPIUS == TRUE
-	cry_reverse Cry_Tropius
-.endif @ P_FAMILY_TROPIUS
+.if P_FAMILY_ELEPHANMON == TRUE
+	cry_reverse Cry_Elephanmon
+.endif @ P_FAMILY_ELEPHANMON
 .if P_FAMILY_CHIMECHO == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Chingling

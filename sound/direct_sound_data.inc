@@ -2670,11 +2670,11 @@ Cry_Dusknoir::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_DRIMOGEMON
 
-.if P_FAMILY_TROPIUS == TRUE
+.if P_FAMILY_ELEPHANMON == TRUE
 	.align 2
-Cry_Tropius::
-	.incbin "sound/direct_sound_samples/cries/tropius.bin"
-.endif @ P_FAMILY_TROPIUS
+Cry_Elephanmon::
+	.incbin "sound/direct_sound_samples/cries/elephanmon.bin"
+.endif @ P_FAMILY_ELEPHANMON
 
 .if P_FAMILY_CHIMECHO == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE

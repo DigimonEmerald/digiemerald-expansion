@@ -2874,8 +2874,8 @@ const u16 gEggMoves[] = {
         MOVE_HAZE),
 #endif //P_FAMILY_DRIMOGEMON
 
-#if P_FAMILY_TROPIUS
-    egg_moves(TROPIUS,
+#if P_FAMILY_ELEPHANMON
+    egg_moves(ELEPHANMON,
         MOVE_HEADBUTT,
         MOVE_SLAM,
         MOVE_RAZOR_WIND,
@@ -2889,7 +2889,7 @@ const u16 gEggMoves[] = {
         MOVE_BULLET_SEED,
         MOVE_NATURAL_GIFT,
         MOVE_DRAGON_HAMMER),
-#endif //P_FAMILY_TROPIUS
+#endif //P_FAMILY_ELEPHANMON
 
 #if P_FAMILY_CHIMECHO
 #if P_GEN_4_CROSS_EVOS

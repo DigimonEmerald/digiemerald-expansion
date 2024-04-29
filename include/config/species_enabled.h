@@ -238,7 +238,7 @@
 #define P_FAMILY_DONSHOUMON                 P_GEN_3_POKEMON
 #define P_FAMILY_DORUGAMON                 P_GEN_3_POKEMON
 #define P_FAMILY_DRIMOGEMON                 P_GEN_3_POKEMON
-#define P_FAMILY_TROPIUS                 P_GEN_3_POKEMON
+#define P_FAMILY_ELEPHANMON                 P_GEN_3_POKEMON
 #define P_FAMILY_CHIMECHO                P_GEN_3_POKEMON
 #define P_FAMILY_ABSOL                   P_GEN_3_POKEMON
 #define P_FAMILY_SNORUNT                 P_GEN_3_POKEMON

@@ -4815,8 +4815,8 @@ static const union AnimCmd sAnim_Dusknoir_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_DRIMOGEMON
 
-#if P_FAMILY_TROPIUS
-static const union AnimCmd sAnim_Tropius_1[] =
+#if P_FAMILY_ELEPHANMON
+static const union AnimCmd sAnim_Elephanmon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4825,7 +4825,7 @@ static const union AnimCmd sAnim_Tropius_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_TROPIUS
+#endif //P_FAMILY_ELEPHANMON
 
 #if P_FAMILY_CHIMECHO
 #if P_GEN_4_CROSS_EVOS
@@ -11278,9 +11278,9 @@ SINGLE_ANIMATION(Ebidramon);
 SINGLE_ANIMATION(Dusknoir);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_DRIMOGEMON
-#if P_FAMILY_TROPIUS
-SINGLE_ANIMATION(Tropius);
-#endif //P_FAMILY_TROPIUS
+#if P_FAMILY_ELEPHANMON
+SINGLE_ANIMATION(Elephanmon);
+#endif //P_FAMILY_ELEPHANMON
 #if P_FAMILY_CHIMECHO
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Chingling);

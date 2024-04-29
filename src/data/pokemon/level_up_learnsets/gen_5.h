@@ -8848,8 +8848,8 @@ static const struct LevelUpMove sDusknoirLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_DRIMOGEMON
 
-#if P_FAMILY_TROPIUS
-static const struct LevelUpMove sTropiusLevelUpLearnset[] = {
+#if P_FAMILY_ELEPHANMON
+static const struct LevelUpMove sElephanmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_GUST),
     LEVEL_UP_MOVE( 7, MOVE_GROWTH),
@@ -8868,7 +8868,7 @@ static const struct LevelUpMove sTropiusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(71, MOVE_LEAF_STORM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_TROPIUS
+#endif //P_FAMILY_ELEPHANMON
 
 #if P_FAMILY_CHIMECHO
 #if P_GEN_4_CROSS_EVOS

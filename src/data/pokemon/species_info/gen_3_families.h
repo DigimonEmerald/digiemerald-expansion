@@ -7430,8 +7430,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_DRIMOGEMON
 
-#if P_FAMILY_TROPIUS
-    [SPECIES_TROPIUS] =
+#if P_FAMILY_ELEPHANMON
+    [SPECIES_ELEPHANMON] =
     {
         .baseHP        = 99,
         .baseAttack    = 68,
@@ -7450,9 +7450,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_SOLAR_POWER, ABILITY_HARVEST },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Tropius"),
-        .cryId = CRY_TROPIUS,
-        .natDexNum = NATIONAL_DEX_TROPIUS,
+        .speciesName = _("Elephanmon"),
+        .cryId = CRY_ELEPHANMON,
+        .natDexNum = NATIONAL_DEX_ELEPHANMON,
         .categoryName = _("Fruit"),
         .height = 20,
         .weight = 1000,
@@ -7465,24 +7465,24 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 344,
         .trainerOffset = 7,
-        .frontPic = gMonFrontPic_Tropius,
+        .frontPic = gMonFrontPic_Elephanmon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Tropius,
+        .frontAnimFrames = sAnims_Elephanmon,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Tropius,
+        .backPic = gMonBackPic_Elephanmon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Tropius,
-        .shinyPalette = gMonShinyPalette_Tropius,
-        .iconSprite = gMonIcon_Tropius,
+        .palette = gMonPalette_Elephanmon,
+        .shinyPalette = gMonShinyPalette_Elephanmon,
+        .iconSprite = gMonIcon_Elephanmon,
         .iconPalIndex = 1,
-        FOOTPRINT(Tropius)
-        .levelUpLearnset = sTropiusLevelUpLearnset,
-        .teachableLearnset = sTropiusTeachableLearnset,
+        FOOTPRINT(Elephanmon)
+        .levelUpLearnset = sElephanmonLevelUpLearnset,
+        .teachableLearnset = sElephanmonTeachableLearnset,
     },
-#endif //P_FAMILY_TROPIUS
+#endif //P_FAMILY_ELEPHANMON
 
 #if P_FAMILY_CHIMECHO
 #if P_GEN_4_CROSS_EVOS

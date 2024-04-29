@@ -5204,16 +5204,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_DRIMOGEMON
 
-#if P_FAMILY_TROPIUS
-    const u32 gMonFrontPic_Tropius[] = INCBIN_U32("graphics/pokemon/tropius/anim_front.4bpp.lz");
-    const u32 gMonPalette_Tropius[] = INCBIN_U32("graphics/pokemon/tropius/normal.gbapal.lz");
-    const u32 gMonBackPic_Tropius[] = INCBIN_U32("graphics/pokemon/tropius/back.4bpp.lz");
-    const u32 gMonShinyPalette_Tropius[] = INCBIN_U32("graphics/pokemon/tropius/shiny.gbapal.lz");
-    const u8 gMonIcon_Tropius[] = INCBIN_U8("graphics/pokemon/tropius/icon.4bpp");
+#if P_FAMILY_ELEPHANMON
+    const u32 gMonFrontPic_Elephanmon[] = INCBIN_U32("graphics/pokemon/elephanmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Elephanmon[] = INCBIN_U32("graphics/pokemon/elephanmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Elephanmon[] = INCBIN_U32("graphics/pokemon/elephanmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Elephanmon[] = INCBIN_U32("graphics/pokemon/elephanmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Elephanmon[] = INCBIN_U8("graphics/pokemon/elephanmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Tropius[] = INCBIN_U8("graphics/pokemon/tropius/footprint.1bpp");
+    const u8 gMonFootprint_Elephanmon[] = INCBIN_U8("graphics/pokemon/elephanmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_TROPIUS
+#endif //P_FAMILY_ELEPHANMON
 
 #if P_FAMILY_CHIMECHO
 #if P_GEN_4_CROSS_EVOS

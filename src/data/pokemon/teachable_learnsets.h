@@ -16694,8 +16694,8 @@ static const u16 sDusknoirTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_DRIMOGEMON
 
-#if P_FAMILY_TROPIUS
-static const u16 sTropiusTeachableLearnset[] = {
+#if P_FAMILY_ELEPHANMON
+static const u16 sElephanmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
@@ -16730,7 +16730,7 @@ static const u16 sTropiusTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TROPIUS
+#endif //P_FAMILY_ELEPHANMON
 
 #if P_FAMILY_CHIMECHO
 #if P_GEN_4_CROSS_EVOS

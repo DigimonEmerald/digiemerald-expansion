@@ -359,7 +359,7 @@
 #define SPECIES_DORULUMON                                 354
 #define SPECIES_DRIMOGEMON                                 355
 #define SPECIES_EBIDRAMON                                356
-#define SPECIES_TROPIUS                                 357
+#define SPECIES_ELEPHANMON                                 357
 #define SPECIES_CHIMECHO                                358
 #define SPECIES_ABSOL                                   359
 #define SPECIES_WYNAUT                                  360
