@@ -838,12 +838,12 @@
               {
                 "min_level": 19,
                 "max_level": 19,
-                "species": "SPECIES_BALTOY"
+                "species": "SPECIES_DEXDORUMON"
               },
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_BALTOY"
+                "species": "SPECIES_DEXDORUMON"
               },
               {
                 "min_level": 19,
@@ -858,7 +858,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_BALTOY"
+                "species": "SPECIES_DEXDORUMON"
               },
               {
                 "min_level": 20,

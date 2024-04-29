@@ -470,7 +470,7 @@ static const struct TrainerMon sParty_Chip[] = {
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 27,
-    .species = SPECIES_BALTOY,
+    .species = SPECIES_DEXDORUMON,
     .moves = {MOVE_PSYBEAM, MOVE_SELF_DESTRUCT, MOVE_SANDSTORM, MOVE_ANCIENT_POWER}
     },
     {
@@ -2439,7 +2439,7 @@ static const struct TrainerMon sParty_Drew[] = {
 static const struct TrainerMon sParty_Beau[] = {
     {
     .lvl = 21,
-    .species = SPECIES_BALTOY,
+    .species = SPECIES_DEXDORUMON,
     .moves = {MOVE_RAPID_SPIN, MOVE_MUD_SLAP, MOVE_PSYBEAM, MOVE_ROCK_TOMB}
     },
     {
@@ -2449,7 +2449,7 @@ static const struct TrainerMon sParty_Beau[] = {
     },
     {
     .lvl = 21,
-    .species = SPECIES_BALTOY,
+    .species = SPECIES_DEXDORUMON,
     .moves = {MOVE_RAPID_SPIN, MOVE_MUD_SLAP, MOVE_PSYBEAM, MOVE_ROCK_TOMB}
     }
 };
@@ -5756,7 +5756,7 @@ static const struct TrainerMon sParty_Heidi[] = {
     },
     {
     .lvl = 22,
-    .species = SPECIES_BALTOY,
+    .species = SPECIES_DEXDORUMON,
     .moves = {MOVE_RAPID_SPIN, MOVE_MUD_SLAP, MOVE_PSYBEAM, MOVE_ROCK_TOMB}
     }
 };
@@ -7389,7 +7389,7 @@ static const struct TrainerMon sParty_GruntSpaceCenter3[] = {
 static const struct TrainerMon sParty_GruntSpaceCenter4[] = {
     {
     .lvl = 32,
-    .species = SPECIES_BALTOY,
+    .species = SPECIES_DEXDORUMON,
     }
 };
 
@@ -7410,7 +7410,7 @@ static const struct TrainerMon sParty_GruntSpaceCenter6[] = {
 static const struct TrainerMon sParty_GruntSpaceCenter7[] = {
     {
     .lvl = 32,
-    .species = SPECIES_BALTOY,
+    .species = SPECIES_DEXDORUMON,
     }
 };
 
@@ -7941,7 +7941,7 @@ static const struct TrainerMon sParty_Eric[] = {
     },
     {
     .lvl = 20,
-    .species = SPECIES_BALTOY,
+    .species = SPECIES_DEXDORUMON,
     }
 };
 
@@ -9036,7 +9036,7 @@ static const struct TrainerMon sParty_Coby[] = {
 static const struct TrainerMon sParty_Lawrence[] = {
     {
     .lvl = 18,
-    .species = SPECIES_BALTOY,
+    .species = SPECIES_DEXDORUMON,
     },
     {
     .lvl = 18,
@@ -9119,7 +9119,7 @@ static const struct TrainerMon sParty_GruntMagmaHideout3[] = {
 static const struct TrainerMon sParty_GruntMagmaHideout4[] = {
     {
     .lvl = 28,
-    .species = SPECIES_BALTOY,
+    .species = SPECIES_DEXDORUMON,
     },
     {
     .lvl = 28,
@@ -9130,7 +9130,7 @@ static const struct TrainerMon sParty_GruntMagmaHideout4[] = {
 static const struct TrainerMon sParty_GruntMagmaHideout5[] = {
     {
     .lvl = 28,
-    .species = SPECIES_BALTOY,
+    .species = SPECIES_DEXDORUMON,
     },
     {
     .lvl = 28,
@@ -9176,7 +9176,7 @@ static const struct TrainerMon sParty_GruntMagmaHideout10[] = {
 static const struct TrainerMon sParty_GruntMagmaHideout11[] = {
     {
     .lvl = 29,
-    .species = SPECIES_BALTOY,
+    .species = SPECIES_DEXDORUMON,
     }
 };
 
@@ -9211,7 +9211,7 @@ static const struct TrainerMon sParty_GruntMagmaHideout15[] = {
 static const struct TrainerMon sParty_GruntMagmaHideout16[] = {
     {
     .lvl = 29,
-    .species = SPECIES_BALTOY,
+    .species = SPECIES_DEXDORUMON,
     }
 };
 

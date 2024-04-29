@@ -2586,15 +2586,15 @@ Cry_Devimon::
 	.incbin "sound/direct_sound_samples/cries/devimon.bin"
 .endif @ P_FAMILY_DEVIDRAMON
 
-.if P_FAMILY_BALTOY == TRUE
+.if P_FAMILY_DEXDORUMON == TRUE
 	.align 2
-Cry_Baltoy::
-	.incbin "sound/direct_sound_samples/cries/baltoy.bin"
+Cry_Dexdorumon::
+	.incbin "sound/direct_sound_samples/cries/dexdorumon.bin"
 
 	.align 2
 Cry_Claydol::
 	.incbin "sound/direct_sound_samples/cries/claydol.bin"
-.endif @ P_FAMILY_BALTOY
+.endif @ P_FAMILY_DEXDORUMON
 
 .if P_FAMILY_LILEEP == TRUE
 	.align 2

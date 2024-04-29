@@ -9110,8 +9110,8 @@ static const struct LevelUpMove sDevimonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_DEVIDRAMON
 
-#if P_FAMILY_BALTOY
-static const struct LevelUpMove sBaltoyLevelUpLearnset[] = {
+#if P_FAMILY_DEXDORUMON
+static const struct LevelUpMove sDexdorumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 4, MOVE_RAPID_SPIN),
@@ -9158,7 +9158,7 @@ static const struct LevelUpMove sClaydolLevelUpLearnset[] = {
     LEVEL_UP_MOVE(58, MOVE_EXPLOSION),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_BALTOY
+#endif //P_FAMILY_DEXDORUMON
 
 #if P_FAMILY_LILEEP
 static const struct LevelUpMove sLileepLevelUpLearnset[] = {

@@ -6332,8 +6332,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_DEVIDRAMON
 
-#if P_FAMILY_BALTOY
-    [SPECIES_BALTOY] =
+#if P_FAMILY_DEXDORUMON
+    [SPECIES_DEXDORUMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 40,
@@ -6353,14 +6353,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Baltoy"),
-        .cryId = CRY_BALTOY,
-        .natDexNum = NATIONAL_DEX_BALTOY,
+        .speciesName = _("Dexdorumon"),
+        .cryId = CRY_DEXDORUMON,
+        .natDexNum = NATIONAL_DEX_DEXDORUMON,
         .categoryName = _("Clay Doll"),
         .height = 5,
         .weight = 215,
         .description = COMPOUND_STRING(
-            "A Baltoy moves by spinning on its single\n"
+            "A Dexdorumon moves by spinning on its single\n"
             "foot. It has been depicted in murals \n"
             "adorning the walls of a once-bustling city\n"
             "in an ancient age."),
@@ -6368,23 +6368,23 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 21,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Baltoy,
+        .frontPic = gMonFrontPic_Dexdorumon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Baltoy,
+        .frontAnimFrames = sAnims_Dexdorumon,
         .frontAnimId = ANIM_H_SLIDE_WOBBLE,
         .enemyMonElevation = 8,
-        .backPic = gMonBackPic_Baltoy,
+        .backPic = gMonBackPic_Dexdorumon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Baltoy,
-        .shinyPalette = gMonShinyPalette_Baltoy,
-        .iconSprite = gMonIcon_Baltoy,
+        .palette = gMonPalette_Dexdorumon,
+        .shinyPalette = gMonShinyPalette_Dexdorumon,
+        .iconSprite = gMonIcon_Dexdorumon,
         .iconPalIndex = 2,
-        FOOTPRINT(Baltoy)
-        .levelUpLearnset = sBaltoyLevelUpLearnset,
-        .teachableLearnset = sBaltoyTeachableLearnset,
+        FOOTPRINT(Dexdorumon)
+        .levelUpLearnset = sDexdorumonLevelUpLearnset,
+        .teachableLearnset = sDexdorumonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CLAYDOL}),
     },
 
@@ -6441,7 +6441,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sClaydolLevelUpLearnset,
         .teachableLearnset = sClaydolTeachableLearnset,
     },
-#endif //P_FAMILY_BALTOY
+#endif //P_FAMILY_DEXDORUMON
 
 #if P_FAMILY_LILEEP
     [SPECIES_LILEEP] =

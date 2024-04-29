@@ -16122,8 +16122,8 @@ static const u16 sDevimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DEVIDRAMON
 
-#if P_FAMILY_BALTOY
-static const u16 sBaltoyTeachableLearnset[] = {
+#if P_FAMILY_DEXDORUMON
+static const u16 sDexdorumonTeachableLearnset[] = {
     MOVE_CALM_MIND,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -16195,7 +16195,7 @@ static const u16 sClaydolTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BALTOY
+#endif //P_FAMILY_DEXDORUMON
 
 #if P_FAMILY_LILEEP
 static const u16 sLileepTeachableLearnset[] = {
