@@ -972,7 +972,7 @@ gCryTable::
 .endif @ P_FAMILY_DORUGAMON
 .if P_FAMILY_DRIMOGEMON == TRUE
 	cry Cry_Drimogemon
-	cry Cry_Dusclops
+	cry Cry_Ebidramon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Dusknoir
 .endif @ P_GEN_4_CROSS_EVOS
@@ -3398,7 +3398,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_DORUGAMON
 .if P_FAMILY_DRIMOGEMON == TRUE
 	cry_reverse Cry_Drimogemon
-	cry_reverse Cry_Dusclops
+	cry_reverse Cry_Ebidramon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Dusknoir
 .endif @ P_GEN_4_CROSS_EVOS

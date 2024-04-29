@@ -4787,7 +4787,7 @@ static const union AnimCmd sAnim_Drimogemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Dusclops_1[] =
+static const union AnimCmd sAnim_Ebidramon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -11273,7 +11273,7 @@ SINGLE_ANIMATION(DorulumonMega);
 #endif //P_FAMILY_DORUGAMON
 #if P_FAMILY_DRIMOGEMON
 SINGLE_ANIMATION(Drimogemon);
-SINGLE_ANIMATION(Dusclops);
+SINGLE_ANIMATION(Ebidramon);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Dusknoir);
 #endif //P_GEN_4_CROSS_EVOS

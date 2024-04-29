@@ -5183,13 +5183,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Drimogemon[] = INCBIN_U8("graphics/pokemon/drimogemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Dusclops[] = INCBIN_U32("graphics/pokemon/dusclops/anim_front.4bpp.lz");
-    const u32 gMonPalette_Dusclops[] = INCBIN_U32("graphics/pokemon/dusclops/normal.gbapal.lz");
-    const u32 gMonBackPic_Dusclops[] = INCBIN_U32("graphics/pokemon/dusclops/back.4bpp.lz");
-    const u32 gMonShinyPalette_Dusclops[] = INCBIN_U32("graphics/pokemon/dusclops/shiny.gbapal.lz");
-    const u8 gMonIcon_Dusclops[] = INCBIN_U8("graphics/pokemon/dusclops/icon.4bpp");
+    const u32 gMonFrontPic_Ebidramon[] = INCBIN_U32("graphics/pokemon/ebidramon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Ebidramon[] = INCBIN_U32("graphics/pokemon/ebidramon/normal.gbapal.lz");
+    const u32 gMonBackPic_Ebidramon[] = INCBIN_U32("graphics/pokemon/ebidramon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Ebidramon[] = INCBIN_U32("graphics/pokemon/ebidramon/shiny.gbapal.lz");
+    const u8 gMonIcon_Ebidramon[] = INCBIN_U8("graphics/pokemon/ebidramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Dusclops[] = INCBIN_U8("graphics/pokemon/dusclops/footprint.1bpp");
+    const u8 gMonFootprint_Ebidramon[] = INCBIN_U8("graphics/pokemon/ebidramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_GEN_4_CROSS_EVOS

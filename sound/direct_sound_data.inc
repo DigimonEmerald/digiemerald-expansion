@@ -2660,8 +2660,8 @@ Cry_Drimogemon::
 	.incbin "sound/direct_sound_samples/cries/drimogemon.bin"
 
 	.align 2
-Cry_Dusclops::
-	.incbin "sound/direct_sound_samples/cries/dusclops.bin"
+Cry_Ebidramon::
+	.incbin "sound/direct_sound_samples/cries/ebidramon.bin"
 
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
