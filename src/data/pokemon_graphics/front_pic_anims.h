@@ -4395,7 +4395,7 @@ static const union AnimCmd sAnim_Coredramon_green_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Vibrava_1[] =
+static const union AnimCmd sAnim_Cyclonemon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -11205,7 +11205,7 @@ SINGLE_ANIMATION(Coredramon_blue);
 #endif //P_FAMILY_COREDRAMON_BLUE
 #if P_FAMILY_COREDRAMON_GREEN
 SINGLE_ANIMATION(Coredramon_green);
-SINGLE_ANIMATION(Vibrava);
+SINGLE_ANIMATION(Cyclonemon);
 SINGLE_ANIMATION(Flygon);
 #endif //P_FAMILY_COREDRAMON_GREEN
 #if P_FAMILY_CACNEA

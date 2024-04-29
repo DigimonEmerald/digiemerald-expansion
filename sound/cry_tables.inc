@@ -907,7 +907,7 @@ gCryTable::
 .endif @ P_FAMILY_COREDRAMON_BLUE
 .if P_FAMILY_COREDRAMON_GREEN == TRUE
 	cry Cry_Coredramon_green
-	cry Cry_Vibrava
+	cry Cry_Cyclonemon
 	cry Cry_Flygon
 .endif @ P_FAMILY_COREDRAMON_GREEN
 .if P_FAMILY_CACNEA == TRUE
@@ -3333,7 +3333,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_COREDRAMON_BLUE
 .if P_FAMILY_COREDRAMON_GREEN == TRUE
 	cry_reverse Cry_Coredramon_green
-	cry_reverse Cry_Vibrava
+	cry_reverse Cry_Cyclonemon
 	cry_reverse Cry_Flygon
 .endif @ P_FAMILY_COREDRAMON_GREEN
 .if P_FAMILY_CACNEA == TRUE

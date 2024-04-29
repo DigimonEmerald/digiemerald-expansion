@@ -330,7 +330,7 @@
 #define SPECIES_COELAMON                                 326
 #define SPECIES_COREDRAMON_BLUE                                  327
 #define SPECIES_COREDRAMON_GREEN                                328
-#define SPECIES_VIBRAVA                                 329
+#define SPECIES_CYCLONEMON                                 329
 #define SPECIES_FLYGON                                  330
 #define SPECIES_CACNEA                                  331
 #define SPECIES_CACTURNE                                332

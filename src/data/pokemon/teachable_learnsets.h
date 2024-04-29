@@ -15563,7 +15563,7 @@ static const u16 sCoredramon_greenTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sVibravaTeachableLearnset[] = {
+static const u16 sCyclonemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DIG,

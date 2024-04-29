@@ -4869,13 +4869,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Coredramon_green[] = INCBIN_U8("graphics/pokemon/coredramon_green/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Vibrava[] = INCBIN_U32("graphics/pokemon/vibrava/anim_front.4bpp.lz");
-    const u32 gMonPalette_Vibrava[] = INCBIN_U32("graphics/pokemon/vibrava/normal.gbapal.lz");
-    const u32 gMonBackPic_Vibrava[] = INCBIN_U32("graphics/pokemon/vibrava/back.4bpp.lz");
-    const u32 gMonShinyPalette_Vibrava[] = INCBIN_U32("graphics/pokemon/vibrava/shiny.gbapal.lz");
-    const u8 gMonIcon_Vibrava[] = INCBIN_U8("graphics/pokemon/vibrava/icon.4bpp");
+    const u32 gMonFrontPic_Cyclonemon[] = INCBIN_U32("graphics/pokemon/cyclonemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Cyclonemon[] = INCBIN_U32("graphics/pokemon/cyclonemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Cyclonemon[] = INCBIN_U32("graphics/pokemon/cyclonemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Cyclonemon[] = INCBIN_U32("graphics/pokemon/cyclonemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Cyclonemon[] = INCBIN_U8("graphics/pokemon/cyclonemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Vibrava[] = INCBIN_U8("graphics/pokemon/vibrava/footprint.1bpp");
+    const u8 gMonFootprint_Cyclonemon[] = INCBIN_U8("graphics/pokemon/cyclonemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Flygon[] = INCBIN_U32("graphics/pokemon/flygon/anim_front.4bpp.lz");

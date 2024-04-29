@@ -5473,10 +5473,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Coredramon_green)
         .levelUpLearnset = sCoredramon_greenLevelUpLearnset,
         .teachableLearnset = sCoredramon_greenTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_VIBRAVA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_CYCLONEMON}),
     },
 
-    [SPECIES_VIBRAVA] =
+    [SPECIES_CYCLONEMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 70,
@@ -5500,37 +5500,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #endif
         .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Vibrava"),
-        .cryId = CRY_VIBRAVA,
-        .natDexNum = NATIONAL_DEX_VIBRAVA,
+        .speciesName = _("Cyclonemon"),
+        .cryId = CRY_CYCLONEMON,
+        .natDexNum = NATIONAL_DEX_CYCLONEMON,
         .categoryName = _("Vibration"),
         .height = 11,
         .weight = 153,
         .description = COMPOUND_STRING(
             "It looses ultrasonic waves by rubbing its\n"
-            "wings together. Since a Vibrava's wings\n"
+            "wings together. Since a Cyclonemon's wings\n"
             "are still in the process of growing, it can\n"
             "only fly short distances."),
         .pokemonScale = 370,
         .pokemonOffset = 11,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Vibrava,
+        .frontPic = gMonFrontPic_Cyclonemon,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Vibrava,
+        .frontAnimFrames = sAnims_Cyclonemon,
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Vibrava,
+        .backPic = gMonBackPic_Cyclonemon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Vibrava,
-        .shinyPalette = gMonShinyPalette_Vibrava,
-        .iconSprite = gMonIcon_Vibrava,
+        .palette = gMonPalette_Cyclonemon,
+        .shinyPalette = gMonShinyPalette_Cyclonemon,
+        .iconSprite = gMonIcon_Cyclonemon,
         .iconPalIndex = 1,
-        FOOTPRINT(Vibrava)
-        .levelUpLearnset = sVibravaLevelUpLearnset,
-        .teachableLearnset = sVibravaTeachableLearnset,
+        FOOTPRINT(Cyclonemon)
+        .levelUpLearnset = sCyclonemonLevelUpLearnset,
+        .teachableLearnset = sCyclonemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_FLYGON}),
     },
 
