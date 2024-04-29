@@ -223,7 +223,7 @@
 #define P_FAMILY_COREDRAMON_BLUE                  P_GEN_3_POKEMON
 #define P_FAMILY_COREDRAMON_GREEN                P_GEN_3_POKEMON
 #define P_FAMILY_DARCMON                  P_GEN_3_POKEMON
-#define P_FAMILY_SWABLU                  P_GEN_3_POKEMON
+#define P_FAMILY_DARLIZAMON                  P_GEN_3_POKEMON
 #define P_FAMILY_ZANGOOSE                P_GEN_3_POKEMON
 #define P_FAMILY_SEVIPER                 P_GEN_3_POKEMON
 #define P_FAMILY_LUNATONE                P_GEN_3_POKEMON

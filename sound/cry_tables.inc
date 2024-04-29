@@ -914,13 +914,13 @@ gCryTable::
 	cry Cry_Darcmon
 	cry Cry_Trailmon_dark
 .endif @ P_FAMILY_DARCMON
-.if P_FAMILY_SWABLU == TRUE
-	cry Cry_Swablu
+.if P_FAMILY_DARLIZAMON == TRUE
+	cry Cry_Darlizamon
 	cry Cry_Altaria
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_AltariaMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SWABLU
+.endif @ P_FAMILY_DARLIZAMON
 .if P_FAMILY_ZANGOOSE == TRUE
 	cry Cry_Zangoose
 .endif @ P_FAMILY_ZANGOOSE
@@ -3340,13 +3340,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Darcmon
 	cry_reverse Cry_Trailmon_dark
 .endif @ P_FAMILY_DARCMON
-.if P_FAMILY_SWABLU == TRUE
-	cry_reverse Cry_Swablu
+.if P_FAMILY_DARLIZAMON == TRUE
+	cry_reverse Cry_Darlizamon
 	cry_reverse Cry_Altaria
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_AltariaMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SWABLU
+.endif @ P_FAMILY_DARLIZAMON
 .if P_FAMILY_ZANGOOSE == TRUE
 	cry_reverse Cry_Zangoose
 .endif @ P_FAMILY_ZANGOOSE

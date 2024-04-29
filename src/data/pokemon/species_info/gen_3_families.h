@@ -5711,8 +5711,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_DARCMON
 
-#if P_FAMILY_SWABLU
-    [SPECIES_SWABLU] =
+#if P_FAMILY_DARLIZAMON
+    [SPECIES_DARLIZAMON] =
     {
         .baseHP        = 45,
         .baseAttack    = 40,
@@ -5731,37 +5731,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_NATURAL_CURE, ABILITY_NONE, ABILITY_CLOUD_NINE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Swablu"),
-        .cryId = CRY_SWABLU,
-        .natDexNum = NATIONAL_DEX_SWABLU,
+        .speciesName = _("Darlizamon"),
+        .cryId = CRY_DARLIZAMON,
+        .natDexNum = NATIONAL_DEX_DARLIZAMON,
         .categoryName = _("Cotton Bird"),
         .height = 4,
         .weight = 12,
         .description = COMPOUND_STRING(
             "A Pokémon that has wings like cottony\n"
             "clouds. After enduring winter, in which\n"
-            "little food is available, Swablu flocks\n"
+            "little food is available, Darlizamon flocks\n"
             "move closer to towns in the spring."),
         .pokemonScale = 422,
         .pokemonOffset = -8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Swablu,
+        .frontPic = gMonFrontPic_Darlizamon,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Swablu,
+        .frontAnimFrames = sAnims_Darlizamon,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Swablu,
+        .backPic = gMonBackPic_Darlizamon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Swablu,
-        .shinyPalette = gMonShinyPalette_Swablu,
-        .iconSprite = gMonIcon_Swablu,
+        .palette = gMonPalette_Darlizamon,
+        .shinyPalette = gMonShinyPalette_Darlizamon,
+        .iconSprite = gMonIcon_Darlizamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Swablu)
-        .levelUpLearnset = sSwabluLevelUpLearnset,
-        .teachableLearnset = sSwabluTeachableLearnset,
+        FOOTPRINT(Darlizamon)
+        .levelUpLearnset = sDarlizamonLevelUpLearnset,
+        .teachableLearnset = sDarlizamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_ALTARIA}),
     },
 
@@ -5876,7 +5876,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .formChangeTable = sAltariaFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SWABLU
+#endif //P_FAMILY_DARLIZAMON
 
 #if P_FAMILY_ZANGOOSE
     [SPECIES_ZANGOOSE] =

@@ -2526,10 +2526,10 @@ Cry_Trailmon_dark::
 	.incbin "sound/direct_sound_samples/cries/trailmon_dark.bin"
 .endif @ P_FAMILY_DARCMON
 
-.if P_FAMILY_SWABLU == TRUE
+.if P_FAMILY_DARLIZAMON == TRUE
 	.align 2
-Cry_Swablu::
-	.incbin "sound/direct_sound_samples/cries/swablu.bin"
+Cry_Darlizamon::
+	.incbin "sound/direct_sound_samples/cries/darlizamon.bin"
 
 	.align 2
 Cry_Altaria::
@@ -2540,7 +2540,7 @@ Cry_Altaria::
 Cry_AltariaMega::
 	.incbin "sound/direct_sound_samples/cries/altaria_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SWABLU
+.endif @ P_FAMILY_DARLIZAMON
 
 .if P_FAMILY_ZANGOOSE == TRUE
 	.align 2

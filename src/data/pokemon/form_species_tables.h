@@ -859,7 +859,7 @@ static const u16 sCitramonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_CHRYSALMON
 
-#if P_FAMILY_SWABLU
+#if P_FAMILY_DARLIZAMON
 static const u16 sAltariaFormSpeciesIdTable[] = {
     SPECIES_ALTARIA,
 #if P_MEGA_EVOLUTIONS
@@ -867,7 +867,7 @@ static const u16 sAltariaFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_SWABLU
+#endif //P_FAMILY_DARLIZAMON
 
 #if P_FAMILY_CASTFORM
 static const u16 sCastformFormSpeciesIdTable[] = {

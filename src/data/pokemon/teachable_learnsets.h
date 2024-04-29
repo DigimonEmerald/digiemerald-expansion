@@ -15720,8 +15720,8 @@ static const u16 sTrailmon_darkTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DARCMON
 
-#if P_FAMILY_SWABLU
-static const u16 sSwabluTeachableLearnset[] = {
+#if P_FAMILY_DARLIZAMON
+static const u16 sDarlizamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
@@ -15786,7 +15786,7 @@ static const u16 sAltariaTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SWABLU
+#endif //P_FAMILY_DARLIZAMON
 
 #if P_FAMILY_ZANGOOSE
 static const u16 sZangooseTeachableLearnset[] = {

@@ -334,7 +334,7 @@
 #define SPECIES_DAMEMON_FUSION                                  330
 #define SPECIES_DARCMON                                  331
 #define SPECIES_TRAILMON_DARK                                332
-#define SPECIES_SWABLU                                  333
+#define SPECIES_DARLIZAMON                                  333
 #define SPECIES_ALTARIA                                 334
 #define SPECIES_ZANGOOSE                                335
 #define SPECIES_SEVIPER                                 336

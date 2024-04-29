@@ -4910,14 +4910,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_Trailmon_darkF[] = INCBIN_U32("graphics/pokemon/trailmon_dark/anim_frontf.4bpp.lz");
 #endif //P_FAMILY_DARCMON
 
-#if P_FAMILY_SWABLU
-    const u32 gMonFrontPic_Swablu[] = INCBIN_U32("graphics/pokemon/swablu/anim_front.4bpp.lz");
-    const u32 gMonPalette_Swablu[] = INCBIN_U32("graphics/pokemon/swablu/normal.gbapal.lz");
-    const u32 gMonBackPic_Swablu[] = INCBIN_U32("graphics/pokemon/swablu/back.4bpp.lz");
-    const u32 gMonShinyPalette_Swablu[] = INCBIN_U32("graphics/pokemon/swablu/shiny.gbapal.lz");
-    const u8 gMonIcon_Swablu[] = INCBIN_U8("graphics/pokemon/swablu/icon.4bpp");
+#if P_FAMILY_DARLIZAMON
+    const u32 gMonFrontPic_Darlizamon[] = INCBIN_U32("graphics/pokemon/darlizamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Darlizamon[] = INCBIN_U32("graphics/pokemon/darlizamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Darlizamon[] = INCBIN_U32("graphics/pokemon/darlizamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Darlizamon[] = INCBIN_U32("graphics/pokemon/darlizamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Darlizamon[] = INCBIN_U8("graphics/pokemon/darlizamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Swablu[] = INCBIN_U8("graphics/pokemon/swablu/footprint.1bpp");
+    const u8 gMonFootprint_Darlizamon[] = INCBIN_U8("graphics/pokemon/darlizamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Altaria[] = INCBIN_U32("graphics/pokemon/altaria/anim_front.4bpp.lz");
@@ -4936,7 +4936,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_AltariaMega[] = INCBIN_U32("graphics/pokemon/altaria/mega/shiny.gbapal.lz");
     const u8 gMonIcon_AltariaMega[] = INCBIN_U8("graphics/pokemon/altaria/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SWABLU
+#endif //P_FAMILY_DARLIZAMON
 
 #if P_FAMILY_ZANGOOSE
     const u32 gMonFrontPic_Zangoose[] = INCBIN_U32("graphics/pokemon/zangoose/anim_front.4bpp.lz");

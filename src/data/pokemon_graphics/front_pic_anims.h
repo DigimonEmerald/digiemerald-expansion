@@ -4448,8 +4448,8 @@ static const union AnimCmd sAnim_Trailmon_dark_1[] =
 };
 #endif //P_FAMILY_DARCMON
 
-#if P_FAMILY_SWABLU
-static const union AnimCmd sAnim_Swablu_1[] =
+#if P_FAMILY_DARLIZAMON
+static const union AnimCmd sAnim_Darlizamon_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 10),
@@ -4474,7 +4474,7 @@ static const union AnimCmd sAnim_Altaria_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(AltariaMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SWABLU
+#endif //P_FAMILY_DARLIZAMON
 
 #if P_FAMILY_ZANGOOSE
 static const union AnimCmd sAnim_Zangoose_1[] =
@@ -11212,13 +11212,13 @@ SINGLE_ANIMATION(Damemon_fusion);
 SINGLE_ANIMATION(Darcmon);
 SINGLE_ANIMATION(Trailmon_dark);
 #endif //P_FAMILY_DARCMON
-#if P_FAMILY_SWABLU
-SINGLE_ANIMATION(Swablu);
+#if P_FAMILY_DARLIZAMON
+SINGLE_ANIMATION(Darlizamon);
 SINGLE_ANIMATION(Altaria);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(AltariaMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SWABLU
+#endif //P_FAMILY_DARLIZAMON
 #if P_FAMILY_ZANGOOSE
 SINGLE_ANIMATION(Zangoose);
 #endif //P_FAMILY_ZANGOOSE

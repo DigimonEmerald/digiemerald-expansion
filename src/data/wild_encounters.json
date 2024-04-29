@@ -1140,7 +1140,7 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_SWABLU"
+                "species": "SPECIES_DARLIZAMON"
               },
               {
                 "min_level": 16,
@@ -1150,12 +1150,12 @@
               {
                 "min_level": 17,
                 "max_level": 17,
-                "species": "SPECIES_SWABLU"
+                "species": "SPECIES_DARLIZAMON"
               },
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_SWABLU"
+                "species": "SPECIES_DARLIZAMON"
               },
               {
                 "min_level": 15,
@@ -3143,7 +3143,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_SWABLU"
+                "species": "SPECIES_DARLIZAMON"
               },
               {
                 "min_level": 23,
@@ -3153,7 +3153,7 @@
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_SWABLU"
+                "species": "SPECIES_DARLIZAMON"
               },
               {
                 "min_level": 24,
