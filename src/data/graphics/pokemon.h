@@ -5425,13 +5425,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Fugamon[] = INCBIN_U8("graphics/pokemon/fugamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Metang[] = INCBIN_U32("graphics/pokemon/metang/anim_front.4bpp.lz");
-    const u32 gMonPalette_Metang[] = INCBIN_U32("graphics/pokemon/metang/normal.gbapal.lz");
-    const u32 gMonBackPic_Metang[] = INCBIN_U32("graphics/pokemon/metang/back.4bpp.lz");
-    const u32 gMonShinyPalette_Metang[] = INCBIN_U32("graphics/pokemon/metang/shiny.gbapal.lz");
-    const u8 gMonIcon_Metang[] = INCBIN_U8("graphics/pokemon/metang/icon.4bpp");
+    const u32 gMonFrontPic_Ganemon[] = INCBIN_U32("graphics/pokemon/ganemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Ganemon[] = INCBIN_U32("graphics/pokemon/ganemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Ganemon[] = INCBIN_U32("graphics/pokemon/ganemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Ganemon[] = INCBIN_U32("graphics/pokemon/ganemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Ganemon[] = INCBIN_U8("graphics/pokemon/ganemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Metang[] = INCBIN_U8("graphics/pokemon/metang/footprint.1bpp");
+    const u8 gMonFootprint_Ganemon[] = INCBIN_U8("graphics/pokemon/ganemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Metagross[] = INCBIN_U32("graphics/pokemon/metagross/anim_front.4bpp.lz");

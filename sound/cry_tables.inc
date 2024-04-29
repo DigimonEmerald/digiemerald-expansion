@@ -1028,7 +1028,7 @@ gCryTable::
 .endif @ P_FAMILY_FLYMON
 .if P_FAMILY_FUGAMON == TRUE
 	cry Cry_Fugamon
-	cry Cry_Metang
+	cry Cry_Ganemon
 	cry Cry_Metagross
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_MetagrossMega
@@ -3454,7 +3454,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_FLYMON
 .if P_FAMILY_FUGAMON == TRUE
 	cry_reverse Cry_Fugamon
-	cry_reverse Cry_Metang
+	cry_reverse Cry_Ganemon
 	cry_reverse Cry_Metagross
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_MetagrossMega

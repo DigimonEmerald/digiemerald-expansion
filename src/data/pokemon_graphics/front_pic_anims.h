@@ -5048,7 +5048,7 @@ static const union AnimCmd sAnim_Fugamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Metang_1[] =
+static const union AnimCmd sAnim_Ganemon_1[] =
 {
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_FRAME(1, 8),
@@ -11329,7 +11329,7 @@ SINGLE_ANIMATION(FrogmonMega);
 #endif //P_FAMILY_FLYMON
 #if P_FAMILY_FUGAMON
 SINGLE_ANIMATION(Fugamon);
-SINGLE_ANIMATION(Metang);
+SINGLE_ANIMATION(Ganemon);
 SINGLE_ANIMATION(Metagross);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(MetagrossMega);
