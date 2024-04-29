@@ -4878,13 +4878,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Cyclonemon[] = INCBIN_U8("graphics/pokemon/cyclonemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Flygon[] = INCBIN_U32("graphics/pokemon/flygon/anim_front.4bpp.lz");
-    const u32 gMonPalette_Flygon[] = INCBIN_U32("graphics/pokemon/flygon/normal.gbapal.lz");
-    const u32 gMonBackPic_Flygon[] = INCBIN_U32("graphics/pokemon/flygon/back.4bpp.lz");
-    const u32 gMonShinyPalette_Flygon[] = INCBIN_U32("graphics/pokemon/flygon/shiny.gbapal.lz");
-    const u8 gMonIcon_Flygon[] = INCBIN_U8("graphics/pokemon/flygon/icon.4bpp");
+    const u32 gMonFrontPic_Damemon_fusion[] = INCBIN_U32("graphics/pokemon/damemon_fusion/anim_front.4bpp.lz");
+    const u32 gMonPalette_Damemon_fusion[] = INCBIN_U32("graphics/pokemon/damemon_fusion/normal.gbapal.lz");
+    const u32 gMonBackPic_Damemon_fusion[] = INCBIN_U32("graphics/pokemon/damemon_fusion/back.4bpp.lz");
+    const u32 gMonShinyPalette_Damemon_fusion[] = INCBIN_U32("graphics/pokemon/damemon_fusion/shiny.gbapal.lz");
+    const u8 gMonIcon_Damemon_fusion[] = INCBIN_U8("graphics/pokemon/damemon_fusion/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Flygon[] = INCBIN_U8("graphics/pokemon/flygon/footprint.1bpp");
+    const u8 gMonFootprint_Damemon_fusion[] = INCBIN_U8("graphics/pokemon/damemon_fusion/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_COREDRAMON_GREEN
 

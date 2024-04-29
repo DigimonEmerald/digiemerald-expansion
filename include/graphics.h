@@ -1756,7 +1756,7 @@ extern const u32 gBerryCheckCircle_Gfx[];
 
 //intro graphics
 extern const u32 gIntroSparkle_Gfx[];
-extern const u32 gIntroFlygonSilhouette_Gfx[];
+extern const u32 gIntroDamemon_fusionSilhouette_Gfx[];
 extern const u32 gIntroLightning_Gfx[];
 extern const u16 gIntroLightning_Pal[];
 extern const u32 gIntroCopyright_Gfx[];
@@ -1790,8 +1790,8 @@ extern const u16 gIntroGameFreakTextFade_Pal[];
 extern const u32 gIntroBrendan_Gfx[];
 extern const u32 gIntroMay_Gfx[];
 extern const u16 gIntroPlayer_Pal[];
-extern const u16 gIntroFlygon_Pal[];
-extern const u32 gIntroFlygon_Gfx[];
+extern const u16 gIntroDamemon_fusion_Pal[];
+extern const u32 gIntroDamemon_fusion_Gfx[];
 
 // party menu graphics
 extern const u32 gPartyMenuBg_Gfx[];

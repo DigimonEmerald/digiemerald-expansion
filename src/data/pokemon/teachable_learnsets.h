@@ -15597,7 +15597,7 @@ static const u16 sCyclonemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFlygonTeachableLearnset[] = {
+static const u16 sDamemon_fusionTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DIG,

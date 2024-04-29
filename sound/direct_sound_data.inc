@@ -2512,8 +2512,8 @@ Cry_Cyclonemon::
 	.incbin "sound/direct_sound_samples/cries/cyclonemon.bin"
 
 	.align 2
-Cry_Flygon::
-	.incbin "sound/direct_sound_samples/cries/flygon.bin"
+Cry_Damemon_fusion::
+	.incbin "sound/direct_sound_samples/cries/damemon_fusion.bin"
 .endif @ P_FAMILY_COREDRAMON_GREEN
 
 .if P_FAMILY_CACNEA == TRUE

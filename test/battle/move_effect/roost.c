@@ -353,14 +353,14 @@ SINGLE_BATTLE_TEST("Roost's suppression prevents Reflect Type from copying any F
 SINGLE_BATTLE_TEST("Roost does not suppress the ungrounded effect of Levitate")
 {
     GIVEN {
-        PLAYER(SPECIES_FLYGON) { HP(1); Ability(ABILITY_LEVITATE); }
+        PLAYER(SPECIES_DAMEMON_FUSION) { HP(1); Ability(ABILITY_LEVITATE); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST); MOVE(opponent, MOVE_EARTHQUAKE); }
     } SCENE {
-        MESSAGE("Flygon used Roost!");
+        MESSAGE("Damemon_fusion used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Flygon regained health!");
+        MESSAGE("Damemon_fusion regained health!");
         MESSAGE("Foe Lopmonx used Earthquake!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);

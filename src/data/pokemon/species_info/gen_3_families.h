@@ -5531,10 +5531,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Cyclonemon)
         .levelUpLearnset = sCyclonemonLevelUpLearnset,
         .teachableLearnset = sCyclonemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_FLYGON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_DAMEMON_FUSION}),
     },
 
-    [SPECIES_FLYGON] =
+    [SPECIES_DAMEMON_FUSION] =
     {
         .baseHP        = 80,
         .baseAttack    = 100,
@@ -5564,9 +5564,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #endif
         .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Flygon"),
-        .cryId = CRY_FLYGON,
-        .natDexNum = NATIONAL_DEX_FLYGON,
+        .speciesName = _("Damemon_fusion"),
+        .cryId = CRY_DAMEMON_FUSION,
+        .natDexNum = NATIONAL_DEX_DAMEMON_FUSION,
         .categoryName = _("Mystic"),
         .height = 20,
         .weight = 820,
@@ -5579,23 +5579,23 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 268,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Flygon,
+        .frontPic = gMonFrontPic_Damemon_fusion,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_Flygon,
+        .frontAnimFrames = sAnims_Damemon_fusion,
         .frontAnimId = ANIM_ZIGZAG_SLOW,
         .enemyMonElevation = 7,
-        .backPic = gMonBackPic_Flygon,
+        .backPic = gMonBackPic_Damemon_fusion,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Flygon,
-        .shinyPalette = gMonShinyPalette_Flygon,
-        .iconSprite = gMonIcon_Flygon,
+        .palette = gMonPalette_Damemon_fusion,
+        .shinyPalette = gMonShinyPalette_Damemon_fusion,
+        .iconSprite = gMonIcon_Damemon_fusion,
         .iconPalIndex = 1,
-        FOOTPRINT(Flygon)
-        .levelUpLearnset = sFlygonLevelUpLearnset,
-        .teachableLearnset = sFlygonTeachableLearnset,
+        FOOTPRINT(Damemon_fusion)
+        .levelUpLearnset = sDamemon_fusionLevelUpLearnset,
+        .teachableLearnset = sDamemon_fusionTeachableLearnset,
     },
 #endif //P_FAMILY_COREDRAMON_GREEN
 

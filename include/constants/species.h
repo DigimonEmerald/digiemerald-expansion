@@ -331,7 +331,7 @@
 #define SPECIES_COREDRAMON_BLUE                                  327
 #define SPECIES_COREDRAMON_GREEN                                328
 #define SPECIES_CYCLONEMON                                 329
-#define SPECIES_FLYGON                                  330
+#define SPECIES_DAMEMON_FUSION                                  330
 #define SPECIES_CACNEA                                  331
 #define SPECIES_CACTURNE                                332
 #define SPECIES_SWABLU                                  333
