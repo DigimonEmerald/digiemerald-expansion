@@ -384,7 +384,7 @@
 #define SPECIES_GARURUMON                               379
 #define SPECIES_GARURUMON_X                                  380
 #define SPECIES_GATOMON                                  381
-#define SPECIES_KYOGRE                                  382
+#define SPECIES_GATOMON_X                                  382
 #define SPECIES_GROUDON                                 383
 #define SPECIES_RAYQUAZA                                384
 #define SPECIES_JIRACHI                                 385
@@ -1012,7 +1012,7 @@
 #define SPECIES_AUDINO_MEGA                             951
 #define SPECIES_DIANCIE_MEGA                            952
 #define SPECIES_RAYQUAZA_MEGA                           953
-#define SPECIES_KYOGRE_PRIMAL                           954
+#define SPECIES_GATOMON_X_PRIMAL                           954
 #define SPECIES_GROUDON_PRIMAL                          955
 #define SPECIES_CHOROMON_ALOLAN                          956
 #define SPECIES_MOKUMON_ALOLAN                         957

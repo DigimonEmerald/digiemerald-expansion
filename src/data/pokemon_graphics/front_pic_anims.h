@@ -5141,8 +5141,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(GatomonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_GATOMON
 
-#if P_FAMILY_KYOGRE
-static const union AnimCmd sAnim_Kyogre_1[] =
+#if P_FAMILY_GATOMON_X
+static const union AnimCmd sAnim_Gatomon_x_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -5153,9 +5153,9 @@ static const union AnimCmd sAnim_Kyogre_1[] =
 };
 
 #if P_PRIMAL_REVERSIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(KyogrePrimal);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Gatomon_xPrimal);
 #endif //P_PRIMAL_REVERSIONS
-#endif //P_FAMILY_KYOGRE
+#endif //P_FAMILY_GATOMON_X
 
 #if P_FAMILY_GROUDON
 static const union AnimCmd sAnim_Groudon_1[] =
@@ -11356,12 +11356,12 @@ SINGLE_ANIMATION(Gatomon);
 SINGLE_ANIMATION(GatomonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_GATOMON
-#if P_FAMILY_KYOGRE
-SINGLE_ANIMATION(Kyogre);
+#if P_FAMILY_GATOMON_X
+SINGLE_ANIMATION(Gatomon_x);
 #if P_PRIMAL_REVERSIONS
-SINGLE_ANIMATION(KyogrePrimal);
+SINGLE_ANIMATION(Gatomon_xPrimal);
 #endif //P_PRIMAL_REVERSIONS
-#endif //P_FAMILY_KYOGRE
+#endif //P_FAMILY_GATOMON_X
 #if P_FAMILY_GROUDON
 SINGLE_ANIMATION(Groudon);
 #if P_PRIMAL_REVERSIONS

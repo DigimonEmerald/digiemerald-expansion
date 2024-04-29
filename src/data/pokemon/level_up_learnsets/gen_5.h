@@ -9342,8 +9342,8 @@ static const struct LevelUpMove sGatomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_GATOMON
 
-#if P_FAMILY_KYOGRE
-static const struct LevelUpMove sKyogreLevelUpLearnset[] = {
+#if P_FAMILY_GATOMON_X
+static const struct LevelUpMove sGatomon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WATER_PULSE),
     LEVEL_UP_MOVE( 5, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE(15, MOVE_BODY_SLAM),
@@ -9359,7 +9359,7 @@ static const struct LevelUpMove sKyogreLevelUpLearnset[] = {
     LEVEL_UP_MOVE(90, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_KYOGRE
+#endif //P_FAMILY_GATOMON_X
 
 #if P_FAMILY_GROUDON
 static const struct LevelUpMove sGroudonLevelUpLearnset[] = {

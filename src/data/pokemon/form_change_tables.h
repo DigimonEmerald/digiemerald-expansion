@@ -466,14 +466,14 @@ static const struct FormChange sGatomonFormChangeTable[] = {
 };
 #endif //P_FAMILY_GATOMON
 
-#if P_FAMILY_KYOGRE
-static const struct FormChange sKyogreFormChangeTable[] = {
+#if P_FAMILY_GATOMON_X
+static const struct FormChange sGatomon_xFormChangeTable[] = {
 #if P_PRIMAL_REVERSIONS
-    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION,   SPECIES_KYOGRE_PRIMAL, ITEM_BLUE_ORB},
+    {FORM_CHANGE_BATTLE_PRIMAL_REVERSION,   SPECIES_GATOMON_X_PRIMAL, ITEM_BLUE_ORB},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_KYOGRE
+#endif //P_FAMILY_GATOMON_X
 
 #if P_FAMILY_GROUDON
 static const struct FormChange sGroudonFormChangeTable[] = {

@@ -263,7 +263,7 @@
 #define PLACEHOLDER_ID_MAGMA         0x9
 #define PLACEHOLDER_ID_ARCHIE        0xA
 #define PLACEHOLDER_ID_MAXIE         0xB
-#define PLACEHOLDER_ID_KYOGRE        0xC
+#define PLACEHOLDER_ID_GATOMON_X        0xC
 #define PLACEHOLDER_ID_GROUDON       0xD
 // Fixed-case placeholders
 // These behave the same as their (id & 0x7F),

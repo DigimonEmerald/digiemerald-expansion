@@ -5523,24 +5523,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_GATOMON
 
-#if P_FAMILY_KYOGRE
-    const u32 gMonFrontPic_Kyogre[] = INCBIN_U32("graphics/pokemon/kyogre/anim_front.4bpp.lz");
-    const u32 gMonPalette_Kyogre[] = INCBIN_U32("graphics/pokemon/kyogre/normal.gbapal.lz");
-    const u32 gMonBackPic_Kyogre[] = INCBIN_U32("graphics/pokemon/kyogre/back.4bpp.lz");
-    const u32 gMonShinyPalette_Kyogre[] = INCBIN_U32("graphics/pokemon/kyogre/shiny.gbapal.lz");
-    const u8 gMonIcon_Kyogre[] = INCBIN_U8("graphics/pokemon/kyogre/icon.4bpp");
+#if P_FAMILY_GATOMON_X
+    const u32 gMonFrontPic_Gatomon_x[] = INCBIN_U32("graphics/pokemon/gatomon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gatomon_x[] = INCBIN_U32("graphics/pokemon/gatomon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Gatomon_x[] = INCBIN_U32("graphics/pokemon/gatomon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gatomon_x[] = INCBIN_U32("graphics/pokemon/gatomon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Gatomon_x[] = INCBIN_U8("graphics/pokemon/gatomon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Kyogre[] = INCBIN_U8("graphics/pokemon/kyogre/footprint.1bpp");
+    const u8 gMonFootprint_Gatomon_x[] = INCBIN_U8("graphics/pokemon/gatomon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_PRIMAL_REVERSIONS
-    const u32 gMonFrontPic_KyogrePrimal[] = INCBIN_U32("graphics/pokemon/kyogre/primal/front.4bpp.lz");
-    const u32 gMonPalette_KyogrePrimal[] = INCBIN_U32("graphics/pokemon/kyogre/primal/normal.gbapal.lz");
-    const u32 gMonBackPic_KyogrePrimal[] = INCBIN_U32("graphics/pokemon/kyogre/primal/back.4bpp.lz");
-    const u32 gMonShinyPalette_KyogrePrimal[] = INCBIN_U32("graphics/pokemon/kyogre/primal/shiny.gbapal.lz");
-    const u8 gMonIcon_KyogrePrimal[] = INCBIN_U8("graphics/pokemon/kyogre/primal/icon.4bpp");
+    const u32 gMonFrontPic_Gatomon_xPrimal[] = INCBIN_U32("graphics/pokemon/gatomon_x/primal/front.4bpp.lz");
+    const u32 gMonPalette_Gatomon_xPrimal[] = INCBIN_U32("graphics/pokemon/gatomon_x/primal/normal.gbapal.lz");
+    const u32 gMonBackPic_Gatomon_xPrimal[] = INCBIN_U32("graphics/pokemon/gatomon_x/primal/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gatomon_xPrimal[] = INCBIN_U32("graphics/pokemon/gatomon_x/primal/shiny.gbapal.lz");
+    const u8 gMonIcon_Gatomon_xPrimal[] = INCBIN_U8("graphics/pokemon/gatomon_x/primal/icon.4bpp");
 #endif //P_PRIMAL_REVERSIONS
-#endif //P_FAMILY_KYOGRE
+#endif //P_FAMILY_GATOMON_X
 
 #if P_FAMILY_GROUDON
     const u32 gMonFrontPic_Groudon[] = INCBIN_U32("graphics/pokemon/groudon/anim_front.4bpp.lz");

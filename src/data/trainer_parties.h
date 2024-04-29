@@ -11801,6 +11801,6 @@ static const struct TrainerMon sParty_BrendanLinkPlaceholder[] = {
 static const struct TrainerMon sParty_MayLinkPlaceholder[] = {
     {
     .lvl = 5,
-    .species = SPECIES_KYOGRE,
+    .species = SPECIES_GATOMON_X,
     }
 };

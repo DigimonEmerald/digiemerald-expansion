@@ -29,7 +29,7 @@ SINGLE_BATTLE_TEST("Chilly Reception switches the user out, even if the weather 
     GIVEN {
         PLAYER(SPECIES_LIOLLMON_GALARIAN);
         PLAYER(SPECIES_PAGUMON_GALARIAN);
-        OPPONENT(SPECIES_KYOGRE)  { Item(ITEM_BLUE_ORB); }
+        OPPONENT(SPECIES_GATOMON_X)  { Item(ITEM_BLUE_ORB); }
     } WHEN {
         TURN { MOVE(player, MOVE_CHILLY_RECEPTION); SEND_OUT(player, 1); }
     } SCENE {

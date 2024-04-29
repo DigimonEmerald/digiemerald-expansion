@@ -949,15 +949,15 @@ static const u16 sGatomonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_GATOMON
 
-#if P_FAMILY_KYOGRE
-static const u16 sKyogreFormSpeciesIdTable[] = {
-    SPECIES_KYOGRE,
+#if P_FAMILY_GATOMON_X
+static const u16 sGatomon_xFormSpeciesIdTable[] = {
+    SPECIES_GATOMON_X,
 #if P_PRIMAL_REVERSIONS
-    SPECIES_KYOGRE_PRIMAL,
+    SPECIES_GATOMON_X_PRIMAL,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_KYOGRE
+#endif //P_FAMILY_GATOMON_X
 
 #if P_FAMILY_GROUDON
 static const u16 sGroudonFormSpeciesIdTable[] = {

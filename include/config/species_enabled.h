@@ -24,7 +24,7 @@
 
 // Battle gimmick specific Forms.
 #define P_MEGA_EVOLUTIONS                TRUE
-#define P_PRIMAL_REVERSIONS              TRUE // Groudon and Kyogre only.
+#define P_PRIMAL_REVERSIONS              TRUE // Groudon and Gatomon_x only.
 #define P_ULTRA_BURST_FORMS              TRUE // Ultra Necrozma only.
 #define P_GIGANTAMAX_FORMS               TRUE
 #define P_TERA_FORMS                     TRUE
@@ -253,7 +253,7 @@
 #define P_FAMILY_GARURUMON               P_GEN_3_POKEMON
 #define P_FAMILY_GARURUMON_X                  P_GEN_3_POKEMON
 #define P_FAMILY_GATOMON                  P_GEN_3_POKEMON
-#define P_FAMILY_KYOGRE                  P_GEN_3_POKEMON
+#define P_FAMILY_GATOMON_X                  P_GEN_3_POKEMON
 #define P_FAMILY_GROUDON                 P_GEN_3_POKEMON
 #define P_FAMILY_RAYQUAZA                P_GEN_3_POKEMON
 #define P_FAMILY_JIRACHI                 P_GEN_3_POKEMON

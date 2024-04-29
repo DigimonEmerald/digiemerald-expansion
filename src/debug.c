@@ -4496,7 +4496,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_CONTEST) \
     X(MUS_ENCOUNTER_MAGMA) \
     X(MUS_INTRO_BATTLE) \
-    X(MUS_WEATHER_KYOGRE) \
+    X(MUS_WEATHER_GATOMON_X) \
     X(MUS_WEATHER_GROUDON) \
     X(MUS_SOOTOPOLIS) \
     X(MUS_CONTEST_RESULTS) \
@@ -4533,7 +4533,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(MUS_VS_GYM_LEADER) \
     X(MUS_VS_CHAMPION) \
     X(MUS_VS_REGI) \
-    X(MUS_VS_KYOGRE_GROUDON) \
+    X(MUS_VS_GATOMON_X_GROUDON) \
     X(MUS_VS_RIVAL) \
     X(MUS_VS_ELITE_FOUR) \
     X(MUS_VS_AQUA_MAGMA_LEADER) \

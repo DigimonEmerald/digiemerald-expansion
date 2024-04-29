@@ -941,16 +941,16 @@ static const struct SpriteFrameImage sPicTable_Maxie[] = {
     overworld_ascending_frames(gObjectEventPic_Maxie, 2, 4),
 };
 
-static const struct SpriteFrameImage sPicTable_KyogreFront[] = {
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 1),
+static const struct SpriteFrameImage sPicTable_Gatomon_xFront[] = {
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 1),
 };
 
 static const struct SpriteFrameImage sPicTable_GroudonFront[] = {
@@ -965,16 +965,16 @@ static const struct SpriteFrameImage sPicTable_GroudonFront[] = {
     overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),
 };
 
-static const struct SpriteFrameImage sPicTable_KyogreSide[] = {
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Kyogre, 4, 4, 3),
+static const struct SpriteFrameImage sPicTable_Gatomon_xSide[] = {
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 3),
 };
 
 static const struct SpriteFrameImage sPicTable_GroudonSide[] = {

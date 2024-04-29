@@ -57,7 +57,7 @@ $(MID_SUBDIR)/mus_vs_gym_leader.s: %.s: %.mid
 $(MID_SUBDIR)/mus_vs_champion.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G121 -V080 -P1
 
-$(MID_SUBDIR)/mus_vs_kyogre_groudon.s: %.s: %.mid
+$(MID_SUBDIR)/mus_vs_gatomon_x_groudon.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G123 -V080 -P1
 
 $(MID_SUBDIR)/mus_vs_rival.s: %.s: %.mid

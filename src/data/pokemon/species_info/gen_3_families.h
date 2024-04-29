@@ -9285,8 +9285,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_GATOMON
 
-#if P_FAMILY_KYOGRE
-    [SPECIES_KYOGRE] =
+#if P_FAMILY_GATOMON_X
+    [SPECIES_GATOMON_X] =
     {
         .baseHP        = 100,
         .baseAttack    = 100,
@@ -9311,14 +9311,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_DRIZZLE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Kyogre"),
-        .cryId = CRY_KYOGRE,
-        .natDexNum = NATIONAL_DEX_KYOGRE,
+        .speciesName = _("Gatomon_x"),
+        .cryId = CRY_GATOMON_X,
+        .natDexNum = NATIONAL_DEX_GATOMON_X,
         .categoryName = _("Sea Basin"),
         .height = 45,
         .weight = 3520,
         .description = COMPOUND_STRING(
-            "Kyogre has appeared in mythology as the\n"
+            "Gatomon_x has appeared in mythology as the\n"
             "creator of the sea. After long years of\n"
             "feuding with Groudon, it took to sleep at\n"
             "the bottom of the sea."),
@@ -9326,29 +9326,29 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 614,
         .trainerOffset = 13,
-        .frontPic = gMonFrontPic_Kyogre,
+        .frontPic = gMonFrontPic_Gatomon_x,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Kyogre,
+        .frontAnimFrames = sAnims_Gatomon_x,
         .frontAnimId = ANIM_SWING_CONCAVE_FAST_SHORT,
         .frontAnimDelay = 60,
-        .backPic = gMonBackPic_Kyogre,
+        .backPic = gMonBackPic_Gatomon_x,
         .backPicSize = MON_COORDS_SIZE(64, 32),
         .backPicYOffset = 18,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
-        .palette = gMonPalette_Kyogre,
-        .shinyPalette = gMonShinyPalette_Kyogre,
-        .iconSprite = gMonIcon_Kyogre,
+        .palette = gMonPalette_Gatomon_x,
+        .shinyPalette = gMonShinyPalette_Gatomon_x,
+        .iconSprite = gMonIcon_Gatomon_x,
         .iconPalIndex = 2,
-        FOOTPRINT(Kyogre)
+        FOOTPRINT(Gatomon_x)
         .isLegendary = TRUE,
-        .levelUpLearnset = sKyogreLevelUpLearnset,
-        .teachableLearnset = sKyogreTeachableLearnset,
-        .formSpeciesIdTable = sKyogreFormSpeciesIdTable,
-        .formChangeTable = sKyogreFormChangeTable,
+        .levelUpLearnset = sGatomon_xLevelUpLearnset,
+        .teachableLearnset = sGatomon_xTeachableLearnset,
+        .formSpeciesIdTable = sGatomon_xFormSpeciesIdTable,
+        .formChangeTable = sGatomon_xFormChangeTable,
     },
 #if P_PRIMAL_REVERSIONS
-    [SPECIES_KYOGRE_PRIMAL] =
+    [SPECIES_GATOMON_X_PRIMAL] =
     {
         .baseHP        = 100,
         .baseAttack    = 150,
@@ -9367,14 +9367,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_PRIMORDIAL_SEA, ABILITY_PRIMORDIAL_SEA },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Kyogre"),
-        .cryId = CRY_KYOGRE_PRIMAL,
-        .natDexNum = NATIONAL_DEX_KYOGRE,
+        .speciesName = _("Gatomon_x"),
+        .cryId = CRY_GATOMON_X_PRIMAL,
+        .natDexNum = NATIONAL_DEX_GATOMON_X,
         .categoryName = _("Sea Basin"),
         .height = 98,
         .weight = 4300,
         .description = COMPOUND_STRING(
-            "When Kyogre roared, water poured forth\n"
+            "When Gatomon_x roared, water poured forth\n"
             "and the seas spread outward.\n"
             "Dark clouds enshrouded the world,\n"
             "and the deluge fell upon all…"),
@@ -9382,29 +9382,29 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 515,
         .trainerOffset = 14,
-        .frontPic = gMonFrontPic_KyogrePrimal,
+        .frontPic = gMonFrontPic_Gatomon_xPrimal,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_KyogrePrimal,
+        .frontAnimFrames = sAnims_Gatomon_xPrimal,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_KyogrePrimal,
+        .backPic = gMonBackPic_Gatomon_xPrimal,
         .backPicSize = MON_COORDS_SIZE(64, 32),
         .backPicYOffset = 18,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
-        .palette = gMonPalette_KyogrePrimal,
-        .shinyPalette = gMonShinyPalette_KyogrePrimal,
-        .iconSprite = gMonIcon_KyogrePrimal,
+        .palette = gMonPalette_Gatomon_xPrimal,
+        .shinyPalette = gMonShinyPalette_Gatomon_xPrimal,
+        .iconSprite = gMonIcon_Gatomon_xPrimal,
         .iconPalIndex = 0,
-        FOOTPRINT(Kyogre)
+        FOOTPRINT(Gatomon_x)
         .isLegendary = TRUE,
         .isPrimalReversion = TRUE,
-        .levelUpLearnset = sKyogreLevelUpLearnset,
-        .teachableLearnset = sKyogreTeachableLearnset,
-        .formSpeciesIdTable = sKyogreFormSpeciesIdTable,
-        .formChangeTable = sKyogreFormChangeTable,
+        .levelUpLearnset = sGatomon_xLevelUpLearnset,
+        .teachableLearnset = sGatomon_xTeachableLearnset,
+        .formSpeciesIdTable = sGatomon_xFormSpeciesIdTable,
+        .formChangeTable = sGatomon_xFormChangeTable,
     },
 #endif //P_PRIMAL_REVERSIONS
-#endif //P_FAMILY_KYOGRE
+#endif //P_FAMILY_GATOMON_X
 
 #if P_FAMILY_GROUDON
     [SPECIES_GROUDON] =
@@ -9563,7 +9563,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .description = COMPOUND_STRING(
             "A Pokémon that flies endlessly in the\n"
             "ozone layer. It is said it would descend\n"
-            "to the ground if Kyogre and Groudon\n"
+            "to the ground if Gatomon_x and Groudon\n"
             "were to fight."),
         .pokemonScale = 256,
         .pokemonOffset = 0,

@@ -767,10 +767,10 @@ void DrawMainBattleBackground(void)
             LZDecompressVram(gBattleTerrainTilemap_Cave, (void*)(BG_SCREEN_ADDR(26)));
             LoadCompressedPalette(gBattleTerrainPalette_Groudon, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             break;
-        case SPECIES_KYOGRE:
+        case SPECIES_GATOMON_X:
             LZDecompressVram(gBattleTerrainTiles_Water, (void*)(BG_CHAR_ADDR(2)));
             LZDecompressVram(gBattleTerrainTilemap_Water, (void*)(BG_SCREEN_ADDR(26)));
-            LoadCompressedPalette(gBattleTerrainPalette_Kyogre, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            LoadCompressedPalette(gBattleTerrainPalette_Gatomon_x, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             break;
         case SPECIES_RAYQUAZA:
             LZDecompressVram(gBattleTerrainTiles_Rayquaza, (void*)(BG_CHAR_ADDR(2)));
@@ -1171,7 +1171,7 @@ void DrawBattleEntryBackground(void)
             LZDecompressVram(gBattleTerrainAnimTiles_Cave, (void*)(BG_CHAR_ADDR(1)));
             LZDecompressVram(gBattleTerrainAnimTilemap_Cave, (void*)(BG_SCREEN_ADDR(28)));
             break;
-        case SPECIES_KYOGRE:
+        case SPECIES_GATOMON_X:
             LZDecompressVram(gBattleTerrainAnimTiles_Underwater, (void*)(BG_CHAR_ADDR(1)));
             LZDecompressVram(gBattleTerrainAnimTilemap_Underwater, (void*)(BG_SCREEN_ADDR(28)));
             break;
@@ -1245,7 +1245,7 @@ bool8 LoadChosenBattleElement(u8 caseId)
             case SPECIES_GROUDON:
                 LZDecompressVram(gBattleTerrainTiles_Cave, (void*)(BG_CHAR_ADDR(2)));
                 break;
-            case SPECIES_KYOGRE:
+            case SPECIES_GATOMON_X:
                 LZDecompressVram(gBattleTerrainTilemap_Water, (void*)(BG_SCREEN_ADDR(2)));
                 break;
             }
@@ -1372,7 +1372,7 @@ bool8 LoadChosenBattleElement(u8 caseId)
             if (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL) == SPECIES_GROUDON)
                 LoadCompressedPalette(gBattleTerrainPalette_Groudon, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             else
-                LoadCompressedPalette(gBattleTerrainPalette_Kyogre, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+                LoadCompressedPalette(gBattleTerrainPalette_Gatomon_x, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
         }
         else
         {

@@ -33,7 +33,7 @@ SINGLE_BATTLE_TEST("Primal reversion happens for Groudon only when holding Red O
     }
 }
 
-SINGLE_BATTLE_TEST("Primal reversion happens for Kyogre only when holding Blue Orb")
+SINGLE_BATTLE_TEST("Primal reversion happens for Gatomon_x only when holding Blue Orb")
 {
     u16 heldItem;
     PARAMETRIZE { heldItem = ITEM_NONE;}
@@ -41,26 +41,26 @@ SINGLE_BATTLE_TEST("Primal reversion happens for Kyogre only when holding Blue O
     PARAMETRIZE { heldItem = ITEM_BLUE_ORB;}
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_KYOGRE) { Item(heldItem); }
+        OPPONENT(SPECIES_GATOMON_X) { Item(heldItem); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); }
     } SCENE {
         if (heldItem == ITEM_BLUE_ORB) {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, opponent);
-            MESSAGE("Foe Kyogre's Primal Reversion! It reverted to its primal form!");
+            MESSAGE("Foe Gatomon_x's Primal Reversion! It reverted to its primal form!");
         }
         else {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, opponent);
-                MESSAGE("Foe Kyogre's Primal Reversion! It reverted to its primal form!");
+                MESSAGE("Foe Gatomon_x's Primal Reversion! It reverted to its primal form!");
             }
         }
     } THEN {
         if (heldItem == ITEM_BLUE_ORB) {
-            EXPECT_EQ(opponent->species, SPECIES_KYOGRE_PRIMAL);
+            EXPECT_EQ(opponent->species, SPECIES_GATOMON_X_PRIMAL);
         }
         else {
-            EXPECT_EQ(opponent->species, SPECIES_KYOGRE);
+            EXPECT_EQ(opponent->species, SPECIES_GATOMON_X);
         }
     }
 }
@@ -68,25 +68,25 @@ SINGLE_BATTLE_TEST("Primal reversion happens for Kyogre only when holding Blue O
 DOUBLE_BATTLE_TEST("Primal reversion's order is determined by Speed - opponent faster")
 {
     GIVEN {
-        PLAYER(SPECIES_KYOGRE) { Item(ITEM_BLUE_ORB); Speed(5); };
+        PLAYER(SPECIES_GATOMON_X) { Item(ITEM_BLUE_ORB); Speed(5); };
         PLAYER(SPECIES_GROUDON) { Item(ITEM_RED_ORB); Speed(15); };
         OPPONENT(SPECIES_GROUDON) { Item(ITEM_RED_ORB); Speed(10); }
-        OPPONENT(SPECIES_KYOGRE) { Item(ITEM_BLUE_ORB); Speed(20); }
+        OPPONENT(SPECIES_GATOMON_X) { Item(ITEM_BLUE_ORB); Speed(20); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_CELEBRATE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, opponentRight);
-        MESSAGE("Foe Kyogre's Primal Reversion! It reverted to its primal form!");
+        MESSAGE("Foe Gatomon_x's Primal Reversion! It reverted to its primal form!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, playerRight);
         MESSAGE("Groudon's Primal Reversion! It reverted to its primal form!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, opponentLeft);
         MESSAGE("Foe Groudon's Primal Reversion! It reverted to its primal form!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, playerLeft);
-        MESSAGE("Kyogre's Primal Reversion! It reverted to its primal form!");
+        MESSAGE("Gatomon_x's Primal Reversion! It reverted to its primal form!");
     } THEN {
-        EXPECT_EQ(playerLeft->species, SPECIES_KYOGRE_PRIMAL);
+        EXPECT_EQ(playerLeft->species, SPECIES_GATOMON_X_PRIMAL);
         EXPECT_EQ(opponentLeft->species, SPECIES_GROUDON_PRIMAL);
-        EXPECT_EQ(opponentRight->species, SPECIES_KYOGRE_PRIMAL);
+        EXPECT_EQ(opponentRight->species, SPECIES_GATOMON_X_PRIMAL);
         EXPECT_EQ(playerRight->species, SPECIES_GROUDON_PRIMAL);
     }
 }
@@ -94,25 +94,25 @@ DOUBLE_BATTLE_TEST("Primal reversion's order is determined by Speed - opponent f
 DOUBLE_BATTLE_TEST("Primal reversion's order is determined by Speed - player faster")
 {
     GIVEN {
-        PLAYER(SPECIES_KYOGRE) { Item(ITEM_BLUE_ORB); Speed(20); };
+        PLAYER(SPECIES_GATOMON_X) { Item(ITEM_BLUE_ORB); Speed(20); };
         PLAYER(SPECIES_GROUDON) { Item(ITEM_RED_ORB); Speed(30); };
         OPPONENT(SPECIES_GROUDON) { Item(ITEM_RED_ORB); Speed(10); }
-        OPPONENT(SPECIES_KYOGRE) { Item(ITEM_BLUE_ORB); Speed(2); }
+        OPPONENT(SPECIES_GATOMON_X) { Item(ITEM_BLUE_ORB); Speed(2); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_CELEBRATE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, playerRight);
         MESSAGE("Groudon's Primal Reversion! It reverted to its primal form!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, playerLeft);
-        MESSAGE("Kyogre's Primal Reversion! It reverted to its primal form!");
+        MESSAGE("Gatomon_x's Primal Reversion! It reverted to its primal form!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, opponentLeft);
         MESSAGE("Foe Groudon's Primal Reversion! It reverted to its primal form!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, opponentRight);
-        MESSAGE("Foe Kyogre's Primal Reversion! It reverted to its primal form!");
+        MESSAGE("Foe Gatomon_x's Primal Reversion! It reverted to its primal form!");
     } THEN {
-        EXPECT_EQ(playerLeft->species, SPECIES_KYOGRE_PRIMAL);
+        EXPECT_EQ(playerLeft->species, SPECIES_GATOMON_X_PRIMAL);
         EXPECT_EQ(opponentLeft->species, SPECIES_GROUDON_PRIMAL);
-        EXPECT_EQ(opponentRight->species, SPECIES_KYOGRE_PRIMAL);
+        EXPECT_EQ(opponentRight->species, SPECIES_GATOMON_X_PRIMAL);
         EXPECT_EQ(playerRight->species, SPECIES_GROUDON_PRIMAL);
     }
 }

@@ -17674,8 +17674,8 @@ static const u16 sGatomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GATOMON
 
-#if P_FAMILY_KYOGRE
-static const u16 sKyogreTeachableLearnset[] = {
+#if P_FAMILY_GATOMON_X
+static const u16 sGatomon_xTeachableLearnset[] = {
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
@@ -17716,7 +17716,7 @@ static const u16 sKyogreTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_KYOGRE
+#endif //P_FAMILY_GATOMON_X
 
 #if P_FAMILY_GROUDON
 static const u16 sGroudonTeachableLearnset[] = {

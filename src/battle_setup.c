@@ -598,11 +598,11 @@ void BattleSetup_StartLegendaryBattle(void)
     default:
     case SPECIES_GROUDON:
     case SPECIES_GROUDON_PRIMAL:
-        CreateBattleStartTask(B_TRANSITION_GROUDON, MUS_VS_KYOGRE_GROUDON);
+        CreateBattleStartTask(B_TRANSITION_GROUDON, MUS_VS_GATOMON_X_GROUDON);
         break;
-    case SPECIES_KYOGRE:
-    case SPECIES_KYOGRE_PRIMAL:
-        CreateBattleStartTask(B_TRANSITION_KYOGRE, MUS_VS_KYOGRE_GROUDON);
+    case SPECIES_GATOMON_X:
+    case SPECIES_GATOMON_X_PRIMAL:
+        CreateBattleStartTask(B_TRANSITION_GATOMON_X, MUS_VS_GATOMON_X_GROUDON);
         break;
     case SPECIES_RAYQUAZA:
     case SPECIES_RAYQUAZA_MEGA:
@@ -629,16 +629,16 @@ void BattleSetup_StartLegendaryBattle(void)
     TryUpdateGymLeaderRematchFromWild();
 }
 
-void StartGroudonKyogreBattle(void)
+void StartGroudonGatomon_xBattle(void)
 {
     LockPlayerFieldControls();
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_LEGENDARY;
 
     if (gGameVersion == VERSION_RUBY)
-        CreateBattleStartTask(B_TRANSITION_ANGLED_WIPES, MUS_VS_KYOGRE_GROUDON); // GROUDON
+        CreateBattleStartTask(B_TRANSITION_ANGLED_WIPES, MUS_VS_GATOMON_X_GROUDON); // GROUDON
     else
-        CreateBattleStartTask(B_TRANSITION_RIPPLE, MUS_VS_KYOGRE_GROUDON); // KYOGRE
+        CreateBattleStartTask(B_TRANSITION_RIPPLE, MUS_VS_GATOMON_X_GROUDON); // GATOMON_X
 
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
     IncrementGameStat(GAME_STAT_WILD_BATTLES);

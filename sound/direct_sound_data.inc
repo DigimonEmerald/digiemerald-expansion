@@ -2843,18 +2843,18 @@ Cry_GatomonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_GATOMON
 
-.if P_FAMILY_KYOGRE == TRUE
+.if P_FAMILY_GATOMON_X == TRUE
 	.align 2
-Cry_Kyogre::
-	.incbin "sound/direct_sound_samples/cries/kyogre.bin"
+Cry_Gatomon_x::
+	.incbin "sound/direct_sound_samples/cries/gatomon_x.bin"
 
 .if P_PRIMAL_REVERSIONS == TRUE
 	.align 2
-Cry_KyogrePrimal::
-	.incbin "sound/direct_sound_samples/cries/kyogre_primal.bin"
+Cry_Gatomon_xPrimal::
+	.incbin "sound/direct_sound_samples/cries/gatomon_x_primal.bin"
 
 .endif @ P_PRIMAL_REVERSIONS
-.endif @ P_FAMILY_KYOGRE
+.endif @ P_FAMILY_GATOMON_X
 
 .if P_FAMILY_GROUDON == TRUE
 	.align 2
