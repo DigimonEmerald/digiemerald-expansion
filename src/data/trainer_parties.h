@@ -1648,7 +1648,7 @@ static const struct TrainerMon sParty_Mollie[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 33,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     }
 };
 
@@ -3239,7 +3239,7 @@ static const struct TrainerMon sParty_Brawly1[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 16,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_FOCUS_PUNCH, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_BULK_UP}
     },
@@ -3495,7 +3495,7 @@ static const struct TrainerMon sParty_Jerry2[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 26,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     }
 };
 
@@ -3508,7 +3508,7 @@ static const struct TrainerMon sParty_Jerry3[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 29,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     }
 };
 
@@ -3955,7 +3955,7 @@ static const struct TrainerMon sParty_Vicky[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 18,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     .moves = {MOVE_HIGH_JUMP_KICK, MOVE_MEDITATE, MOVE_CONFUSION, MOVE_DETECT}
     }
 };
@@ -3964,7 +3964,7 @@ static const struct TrainerMon sParty_Shelby1[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 21,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -3977,7 +3977,7 @@ static const struct TrainerMon sParty_Shelby2[] = {
     {
     .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
     .lvl = 30,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(25, 25, 25, 25, 25, 25),
@@ -5327,7 +5327,7 @@ static const struct TrainerMon sParty_Jocelyn[] = {
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
     .lvl = 13,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     }
 };
 
@@ -5335,7 +5335,7 @@ static const struct TrainerMon sParty_Laura[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 13,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     }
 };
 
@@ -5343,7 +5343,7 @@ static const struct TrainerMon sParty_Cyndy1[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 18,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -5356,7 +5356,7 @@ static const struct TrainerMon sParty_Cora[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 27,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     }
 };
 
@@ -5372,7 +5372,7 @@ static const struct TrainerMon sParty_Cyndy2[] = {
     {
     .iv = TRAINER_PARTY_IVS(13, 13, 13, 13, 13, 13),
     .lvl = 26,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(13, 13, 13, 13, 13, 13),
@@ -5385,7 +5385,7 @@ static const struct TrainerMon sParty_Cyndy3[] = {
     {
     .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
     .lvl = 29,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
@@ -6267,7 +6267,7 @@ static const struct TrainerMon sParty_Reyna[] = {
     {
     .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
     .lvl = 33,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -7273,7 +7273,7 @@ static const struct TrainerMon sParty_Lilith[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 13,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     }
 };
 
@@ -7289,7 +7289,7 @@ static const struct TrainerMon sParty_Sylvia[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 36,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     }
 };
 
@@ -8178,13 +8178,13 @@ static const struct TrainerMon sParty_Vivian[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 17,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     .moves = {MOVE_BIDE, MOVE_DETECT, MOVE_CONFUSION, MOVE_THUNDER_PUNCH}
     },
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 17,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     .moves = {MOVE_THUNDER_PUNCH, MOVE_DETECT, MOVE_CONFUSION, MOVE_MEDITATE}
     }
 };
@@ -8193,7 +8193,7 @@ static const struct TrainerMon sParty_Danielle[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 23,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     .moves = {MOVE_BIDE, MOVE_DETECT, MOVE_CONFUSION, MOVE_FIRE_PUNCH}
     }
 };
@@ -9449,7 +9449,7 @@ static const struct TrainerMon sParty_Alix[] = {
 static const struct TrainerMon sParty_Helene[] = {
     {
     .lvl = 26,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     },
     {
     .lvl = 26,
@@ -9460,7 +9460,7 @@ static const struct TrainerMon sParty_Helene[] = {
 static const struct TrainerMon sParty_Marlene[] = {
     {
     .lvl = 18,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     },
     {
     .lvl = 18,
@@ -9507,7 +9507,7 @@ static const struct TrainerMon sParty_Brandi[] = {
 static const struct TrainerMon sParty_Aisha[] = {
     {
     .lvl = 17,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     }
 };
 
@@ -9559,7 +9559,7 @@ static const struct TrainerMon sParty_Leonel[] = {
 static const struct TrainerMon sParty_Callie[] = {
     {
     .lvl = 28,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     },
     {
     .lvl = 28,
@@ -9846,7 +9846,7 @@ static const struct TrainerMon sParty_Brawly2[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 33,
-    .species = SPECIES_MEDITITE,
+    .species = SPECIES_SAWKUWAMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_PSYCHIC, MOVE_LIGHT_SCREEN, MOVE_REFLECT, MOVE_FOCUS_PUNCH}
     },

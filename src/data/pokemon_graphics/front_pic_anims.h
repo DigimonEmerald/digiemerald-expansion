@@ -4098,8 +4098,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(BlgrowlmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLKGATOMON
 
-#if P_FAMILY_MEDITITE
-static const union AnimCmd sAnim_Meditite_1[] =
+#if P_FAMILY_SAWKUWAMON
+static const union AnimCmd sAnim_Sawkuwamon_1[] =
 {
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_FRAME(1, 2),
@@ -4122,7 +4122,7 @@ static const union AnimCmd sAnim_Medicham_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(MedichamMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MEDITITE
+#endif //P_FAMILY_SAWKUWAMON
 
 #if P_FAMILY_ELECTRIKE
 static const union AnimCmd sAnim_Electrike_1[] =
@@ -11138,13 +11138,13 @@ SINGLE_ANIMATION(Blgrowlmon);
 SINGLE_ANIMATION(BlgrowlmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLKGATOMON
-#if P_FAMILY_MEDITITE
-SINGLE_ANIMATION(Meditite);
+#if P_FAMILY_SAWKUWAMON
+SINGLE_ANIMATION(Sawkuwamon);
 SINGLE_ANIMATION(Medicham);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(MedichamMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MEDITITE
+#endif //P_FAMILY_SAWKUWAMON
 #if P_FAMILY_ELECTRIKE
 SINGLE_ANIMATION(Electrike);
 SINGLE_ANIMATION(Manectric);

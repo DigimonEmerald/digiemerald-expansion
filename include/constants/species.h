@@ -308,7 +308,7 @@
 #define SPECIES_BLKGATOMON                                    304
 #define SPECIES_BLKGATOMON_UVER                                  305
 #define SPECIES_BLGROWLMON                                  306
-#define SPECIES_MEDITITE                                307
+#define SPECIES_SAWKUWAMON                                307
 #define SPECIES_MEDICHAM                                308
 #define SPECIES_ELECTRIKE                               309
 #define SPECIES_MANECTRIC                               310

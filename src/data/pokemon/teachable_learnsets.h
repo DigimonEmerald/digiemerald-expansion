@@ -14643,8 +14643,8 @@ static const u16 sBlgrowlmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BLKGATOMON
 
-#if P_FAMILY_MEDITITE
-static const u16 sMedititeTeachableLearnset[] = {
+#if P_FAMILY_SAWKUWAMON
+static const u16 sSawkuwamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -14740,7 +14740,7 @@ static const u16 sMedichamTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MEDITITE
+#endif //P_FAMILY_SAWKUWAMON
 
 #if P_FAMILY_ELECTRIKE
 static const u16 sElectrikeTeachableLearnset[] = {

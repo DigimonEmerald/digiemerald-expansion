@@ -2428,8 +2428,8 @@ const u16 gEggMoves[] = {
         MOVE_REVERSAL),
 #endif //P_FAMILY_BLKGATOMON
 
-#if P_FAMILY_MEDITITE
-    egg_moves(MEDITITE,
+#if P_FAMILY_SAWKUWAMON
+    egg_moves(SAWKUWAMON,
         MOVE_FIRE_PUNCH,
         MOVE_THUNDER_PUNCH,
         MOVE_ICE_PUNCH,
@@ -2444,7 +2444,7 @@ const u16 gEggMoves[] = {
         MOVE_DRAIN_PUNCH,
         MOVE_SECRET_POWER,
         MOVE_QUICK_GUARD),
-#endif //P_FAMILY_MEDITITE
+#endif //P_FAMILY_SAWKUWAMON
 
 #if P_FAMILY_ELECTRIKE
     egg_moves(ELECTRIKE,

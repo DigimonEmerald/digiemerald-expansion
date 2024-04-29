@@ -4566,18 +4566,18 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLKGATOMON
 
-#if P_FAMILY_MEDITITE
-    const u32 gMonFrontPic_Meditite[] = INCBIN_U32("graphics/pokemon/meditite/anim_front.4bpp.lz");
-    const u32 gMonPalette_Meditite[] = INCBIN_U32("graphics/pokemon/meditite/normal.gbapal.lz");
-    const u32 gMonBackPic_Meditite[] = INCBIN_U32("graphics/pokemon/meditite/back.4bpp.lz");
-    const u32 gMonShinyPalette_Meditite[] = INCBIN_U32("graphics/pokemon/meditite/shiny.gbapal.lz");
-    const u8 gMonIcon_Meditite[] = INCBIN_U8("graphics/pokemon/meditite/icon.4bpp");
+#if P_FAMILY_SAWKUWAMON
+    const u32 gMonFrontPic_Sawkuwamon[] = INCBIN_U32("graphics/pokemon/sawkuwamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Sawkuwamon[] = INCBIN_U32("graphics/pokemon/sawkuwamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Sawkuwamon[] = INCBIN_U32("graphics/pokemon/sawkuwamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Sawkuwamon[] = INCBIN_U32("graphics/pokemon/sawkuwamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Sawkuwamon[] = INCBIN_U8("graphics/pokemon/sawkuwamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Meditite[] = INCBIN_U8("graphics/pokemon/meditite/footprint.1bpp");
+    const u8 gMonFootprint_Sawkuwamon[] = INCBIN_U8("graphics/pokemon/sawkuwamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_MedititeF[] = INCBIN_U32("graphics/pokemon/meditite/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_MedititeF[] = INCBIN_U32("graphics/pokemon/meditite/backf.4bpp.lz");
+    const u32 gMonFrontPic_SawkuwamonF[] = INCBIN_U32("graphics/pokemon/sawkuwamon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_SawkuwamonF[] = INCBIN_U32("graphics/pokemon/sawkuwamon/backf.4bpp.lz");
 
     const u32 gMonFrontPic_Medicham[] = INCBIN_U32("graphics/pokemon/medicham/anim_front.4bpp.lz");
     const u32 gMonPalette_Medicham[] = INCBIN_U32("graphics/pokemon/medicham/normal.gbapal.lz");
@@ -4598,7 +4598,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_MedichamMega[] = INCBIN_U32("graphics/pokemon/medicham/mega/shiny.gbapal.lz");
     const u8 gMonIcon_MedichamMega[] = INCBIN_U8("graphics/pokemon/medicham/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MEDITITE
+#endif //P_FAMILY_SAWKUWAMON
 
 #if P_FAMILY_ELECTRIKE
     const u32 gMonFrontPic_Electrike[] = INCBIN_U32("graphics/pokemon/electrike/anim_front.4bpp.lz");

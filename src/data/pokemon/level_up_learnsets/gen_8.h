@@ -8317,8 +8317,8 @@ static const struct LevelUpMove sBlgrowlmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_BLKGATOMON
 
-#if P_FAMILY_MEDITITE
-static const struct LevelUpMove sMedititeLevelUpLearnset[] = {
+#if P_FAMILY_SAWKUWAMON
+static const struct LevelUpMove sSawkuwamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 4, MOVE_LOW_KICK),
     LEVEL_UP_MOVE( 7, MOVE_CONFUSION),
@@ -8365,7 +8365,7 @@ static const struct LevelUpMove sMedichamLevelUpLearnset[] = {
     LEVEL_UP_MOVE(53, MOVE_COUNTER),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_MEDITITE
+#endif //P_FAMILY_SAWKUWAMON
 
 #if P_FAMILY_ELECTRIKE
 static const struct LevelUpMove sElectrikeLevelUpLearnset[] = {

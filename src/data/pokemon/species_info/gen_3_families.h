@@ -3871,8 +3871,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLKGATOMON
 
-#if P_FAMILY_MEDITITE
-    [SPECIES_MEDITITE] =
+#if P_FAMILY_SAWKUWAMON
+    [SPECIES_SAWKUWAMON] =
     {
         .baseHP        = 30,
         .baseAttack    = 40,
@@ -3891,9 +3891,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_PURE_POWER, ABILITY_NONE, ABILITY_TELEPATHY },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Meditite"),
-        .cryId = CRY_MEDITITE,
-        .natDexNum = NATIONAL_DEX_MEDITITE,
+        .speciesName = _("Sawkuwamon"),
+        .cryId = CRY_SAWKUWAMON,
+        .natDexNum = NATIONAL_DEX_SAWKUWAMON,
         .categoryName = _("Meditate"),
         .height = 6,
         .weight = 112,
@@ -3906,26 +3906,26 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Meditite,
-        .frontPicFemale = gMonFrontPic_MedititeF,
+        .frontPic = gMonFrontPic_Sawkuwamon,
+        .frontPicFemale = gMonFrontPic_SawkuwamonF,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Meditite,
+        .frontAnimFrames = sAnims_Sawkuwamon,
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES,
-        .backPic = gMonBackPic_Meditite,
-        .backPicFemale = gMonBackPic_MedititeF,
+        .backPic = gMonBackPic_Sawkuwamon,
+        .backPicFemale = gMonBackPic_SawkuwamonF,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicSizeFemale = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Meditite,
-        .shinyPalette = gMonShinyPalette_Meditite,
-        .iconSprite = gMonIcon_Meditite,
+        .palette = gMonPalette_Sawkuwamon,
+        .shinyPalette = gMonShinyPalette_Sawkuwamon,
+        .iconSprite = gMonIcon_Sawkuwamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Meditite)
-        .levelUpLearnset = sMedititeLevelUpLearnset,
-        .teachableLearnset = sMedititeTeachableLearnset,
+        FOOTPRINT(Sawkuwamon)
+        .levelUpLearnset = sSawkuwamonLevelUpLearnset,
+        .teachableLearnset = sSawkuwamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_MEDICHAM}),
     },
 
@@ -4043,7 +4043,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .formChangeTable = sMedichamFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_MEDITITE
+#endif //P_FAMILY_SAWKUWAMON
 
 #if P_FAMILY_ELECTRIKE
     [SPECIES_ELECTRIKE] =

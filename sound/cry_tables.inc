@@ -840,13 +840,13 @@ gCryTable::
 	cry Cry_BlgrowlmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BLKGATOMON
-.if P_FAMILY_MEDITITE == TRUE
-	cry Cry_Meditite
+.if P_FAMILY_SAWKUWAMON == TRUE
+	cry Cry_Sawkuwamon
 	cry Cry_Medicham
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_MedichamMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MEDITITE
+.endif @ P_FAMILY_SAWKUWAMON
 .if P_FAMILY_ELECTRIKE == TRUE
 	cry Cry_Electrike
 	cry Cry_Manectric
@@ -3266,13 +3266,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_BlgrowlmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BLKGATOMON
-.if P_FAMILY_MEDITITE == TRUE
-	cry_reverse Cry_Meditite
+.if P_FAMILY_SAWKUWAMON == TRUE
+	cry_reverse Cry_Sawkuwamon
 	cry_reverse Cry_Medicham
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_MedichamMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MEDITITE
+.endif @ P_FAMILY_SAWKUWAMON
 .if P_FAMILY_ELECTRIKE == TRUE
 	cry_reverse Cry_Electrike
 	cry_reverse Cry_Manectric

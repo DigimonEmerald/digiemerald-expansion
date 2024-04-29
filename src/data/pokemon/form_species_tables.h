@@ -819,7 +819,7 @@ static const u16 sBlgrowlmonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_BLKGATOMON
 
-#if P_FAMILY_MEDITITE
+#if P_FAMILY_SAWKUWAMON
 static const u16 sMedichamFormSpeciesIdTable[] = {
     SPECIES_MEDICHAM,
 #if P_MEGA_EVOLUTIONS
@@ -827,7 +827,7 @@ static const u16 sMedichamFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_MEDITITE
+#endif //P_FAMILY_SAWKUWAMON
 
 #if P_FAMILY_ELECTRIKE
 static const u16 sManectricFormSpeciesIdTable[] = {

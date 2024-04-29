@@ -2356,10 +2356,10 @@ Cry_BlgrowlmonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BLKGATOMON
 
-.if P_FAMILY_MEDITITE == TRUE
+.if P_FAMILY_SAWKUWAMON == TRUE
 	.align 2
-Cry_Meditite::
-	.incbin "sound/direct_sound_samples/cries/meditite.bin"
+Cry_Sawkuwamon::
+	.incbin "sound/direct_sound_samples/cries/sawkuwamon.bin"
 
 	.align 2
 Cry_Medicham::
@@ -2370,7 +2370,7 @@ Cry_Medicham::
 Cry_MedichamMega::
 	.incbin "sound/direct_sound_samples/cries/medicham_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_MEDITITE
+.endif @ P_FAMILY_SAWKUWAMON
 
 .if P_FAMILY_ELECTRIKE == TRUE
 	.align 2
