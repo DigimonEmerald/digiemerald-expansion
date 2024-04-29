@@ -810,7 +810,7 @@ static const struct TrainerMon sParty_Braxton[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 28,
-    .species = SPECIES_TRAPINCH,
+    .species = SPECIES_COREDRAMON_GREEN,
     .moves = {MOVE_BITE, MOVE_DIG, MOVE_FEINT_ATTACK, MOVE_SAND_TOMB}
     },
     {
@@ -4120,7 +4120,7 @@ static const struct TrainerMon sParty_Katelynn[] = {
 static const struct TrainerMon sParty_Jaylen[] = {
     {
     .lvl = 19,
-    .species = SPECIES_TRAPINCH,
+    .species = SPECIES_COREDRAMON_GREEN,
     }
 };
 

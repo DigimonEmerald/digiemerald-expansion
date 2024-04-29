@@ -2502,10 +2502,10 @@ Cry_Coredramon_blue::
 	.incbin "sound/direct_sound_samples/cries/coredramon_blue.bin"
 .endif @ P_FAMILY_COREDRAMON_BLUE
 
-.if P_FAMILY_TRAPINCH == TRUE
+.if P_FAMILY_COREDRAMON_GREEN == TRUE
 	.align 2
-Cry_Trapinch::
-	.incbin "sound/direct_sound_samples/cries/trapinch.bin"
+Cry_Coredramon_green::
+	.incbin "sound/direct_sound_samples/cries/coredramon_green.bin"
 
 	.align 2
 Cry_Vibrava::
@@ -2514,7 +2514,7 @@ Cry_Vibrava::
 	.align 2
 Cry_Flygon::
 	.incbin "sound/direct_sound_samples/cries/flygon.bin"
-.endif @ P_FAMILY_TRAPINCH
+.endif @ P_FAMILY_COREDRAMON_GREEN
 
 .if P_FAMILY_CACNEA == TRUE
 	.align 2

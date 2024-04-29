@@ -4859,14 +4859,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_COREDRAMON_BLUE
 
-#if P_FAMILY_TRAPINCH
-    const u32 gMonFrontPic_Trapinch[] = INCBIN_U32("graphics/pokemon/trapinch/anim_front.4bpp.lz");
-    const u32 gMonPalette_Trapinch[] = INCBIN_U32("graphics/pokemon/trapinch/normal.gbapal.lz");
-    const u32 gMonBackPic_Trapinch[] = INCBIN_U32("graphics/pokemon/trapinch/back.4bpp.lz");
-    const u32 gMonShinyPalette_Trapinch[] = INCBIN_U32("graphics/pokemon/trapinch/shiny.gbapal.lz");
-    const u8 gMonIcon_Trapinch[] = INCBIN_U8("graphics/pokemon/trapinch/icon.4bpp");
+#if P_FAMILY_COREDRAMON_GREEN
+    const u32 gMonFrontPic_Coredramon_green[] = INCBIN_U32("graphics/pokemon/coredramon_green/anim_front.4bpp.lz");
+    const u32 gMonPalette_Coredramon_green[] = INCBIN_U32("graphics/pokemon/coredramon_green/normal.gbapal.lz");
+    const u32 gMonBackPic_Coredramon_green[] = INCBIN_U32("graphics/pokemon/coredramon_green/back.4bpp.lz");
+    const u32 gMonShinyPalette_Coredramon_green[] = INCBIN_U32("graphics/pokemon/coredramon_green/shiny.gbapal.lz");
+    const u8 gMonIcon_Coredramon_green[] = INCBIN_U8("graphics/pokemon/coredramon_green/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Trapinch[] = INCBIN_U8("graphics/pokemon/trapinch/footprint.1bpp");
+    const u8 gMonFootprint_Coredramon_green[] = INCBIN_U8("graphics/pokemon/coredramon_green/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Vibrava[] = INCBIN_U32("graphics/pokemon/vibrava/anim_front.4bpp.lz");
@@ -4886,7 +4886,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Flygon[] = INCBIN_U8("graphics/pokemon/flygon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_TRAPINCH
+#endif //P_FAMILY_COREDRAMON_GREEN
 
 #if P_FAMILY_CACNEA
     const u32 gMonFrontPic_Cacnea[] = INCBIN_U32("graphics/pokemon/cacnea/anim_front.4bpp.lz");

@@ -3583,7 +3583,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             "It conceals itself in the sand and\n"
             "chomps down on the legs of any prey\n"
             "that unwarily walk over it. Its favorite\n"
-            "food is Trapinch."),
+            "food is Coredramon_green."),
         .pokemonScale = 365,
         .pokemonOffset = 14,
         .trainerScale = 256,

@@ -8749,8 +8749,8 @@ static const struct LevelUpMove sCoredramon_blueLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_COREDRAMON_BLUE
 
-#if P_FAMILY_TRAPINCH
-static const struct LevelUpMove sTrapinchLevelUpLearnset[] = {
+#if P_FAMILY_COREDRAMON_GREEN
+static const struct LevelUpMove sCoredramon_greenLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_FEINT_ATTACK),
@@ -8818,7 +8818,7 @@ static const struct LevelUpMove sFlygonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(47, MOVE_DRAGON_RUSH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_TRAPINCH
+#endif //P_FAMILY_COREDRAMON_GREEN
 
 #if P_FAMILY_CACNEA
 static const struct LevelUpMove sCacneaLevelUpLearnset[] = {

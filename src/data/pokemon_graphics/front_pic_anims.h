@@ -4384,8 +4384,8 @@ static const union AnimCmd sAnim_Coredramon_blue_1[] =
 };
 #endif //P_FAMILY_COREDRAMON_BLUE
 
-#if P_FAMILY_TRAPINCH
-static const union AnimCmd sAnim_Trapinch_1[] =
+#if P_FAMILY_COREDRAMON_GREEN
+static const union AnimCmd sAnim_Coredramon_green_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4418,7 +4418,7 @@ static const union AnimCmd sAnim_Flygon_1[] =
     ANIMCMD_FRAME(0, 50),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_TRAPINCH
+#endif //P_FAMILY_COREDRAMON_GREEN
 
 #if P_FAMILY_CACNEA
 static const union AnimCmd sAnim_Cacnea_1[] =
@@ -11203,11 +11203,11 @@ SINGLE_ANIMATION(Coelamon);
 #if P_FAMILY_COREDRAMON_BLUE
 SINGLE_ANIMATION(Coredramon_blue);
 #endif //P_FAMILY_COREDRAMON_BLUE
-#if P_FAMILY_TRAPINCH
-SINGLE_ANIMATION(Trapinch);
+#if P_FAMILY_COREDRAMON_GREEN
+SINGLE_ANIMATION(Coredramon_green);
 SINGLE_ANIMATION(Vibrava);
 SINGLE_ANIMATION(Flygon);
-#endif //P_FAMILY_TRAPINCH
+#endif //P_FAMILY_COREDRAMON_GREEN
 #if P_FAMILY_CACNEA
 SINGLE_ANIMATION(Cacnea);
 SINGLE_ANIMATION(Cacturne);

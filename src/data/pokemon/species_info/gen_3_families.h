@@ -5417,8 +5417,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_COREDRAMON_BLUE
 
-#if P_FAMILY_TRAPINCH
-    [SPECIES_TRAPINCH] =
+#if P_FAMILY_COREDRAMON_GREEN
+    [SPECIES_COREDRAMON_GREEN] =
     {
         .baseHP        = 45,
         .baseAttack    = 100,
@@ -5442,9 +5442,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #endif
         .abilities = { ABILITY_HYPER_CUTTER, ABILITY_ARENA_TRAP, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Trapinch"),
-        .cryId = CRY_TRAPINCH,
-        .natDexNum = NATIONAL_DEX_TRAPINCH,
+        .speciesName = _("Coredramon_green"),
+        .cryId = CRY_COREDRAMON_GREEN,
+        .natDexNum = NATIONAL_DEX_COREDRAMON_GREEN,
         .categoryName = _("Ant Pit"),
         .height = 7,
         .weight = 150,
@@ -5457,22 +5457,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Trapinch,
+        .frontPic = gMonFrontPic_Coredramon_green,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Trapinch,
+        .frontAnimFrames = sAnims_Coredramon_green,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Trapinch,
+        .backPic = gMonBackPic_Coredramon_green,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Trapinch,
-        .shinyPalette = gMonShinyPalette_Trapinch,
-        .iconSprite = gMonIcon_Trapinch,
+        .palette = gMonPalette_Coredramon_green,
+        .shinyPalette = gMonShinyPalette_Coredramon_green,
+        .iconSprite = gMonIcon_Coredramon_green,
         .iconPalIndex = 0,
-        FOOTPRINT(Trapinch)
-        .levelUpLearnset = sTrapinchLevelUpLearnset,
-        .teachableLearnset = sTrapinchTeachableLearnset,
+        FOOTPRINT(Coredramon_green)
+        .levelUpLearnset = sCoredramon_greenLevelUpLearnset,
+        .teachableLearnset = sCoredramon_greenTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_VIBRAVA}),
     },
 
@@ -5597,7 +5597,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sFlygonLevelUpLearnset,
         .teachableLearnset = sFlygonTeachableLearnset,
     },
-#endif //P_FAMILY_TRAPINCH
+#endif //P_FAMILY_COREDRAMON_GREEN
 
 #if P_FAMILY_CACNEA
     [SPECIES_CACNEA] =

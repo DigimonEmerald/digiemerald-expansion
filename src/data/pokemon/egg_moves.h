@@ -2656,8 +2656,8 @@ const u16 gEggMoves[] = {
         MOVE_SPOTLIGHT),
 #endif //P_FAMILY_COREDRAMON_BLUE
 
-#if P_FAMILY_TRAPINCH
-    egg_moves(TRAPINCH,
+#if P_FAMILY_COREDRAMON_GREEN
+    egg_moves(COREDRAMON_GREEN,
         MOVE_FOCUS_ENERGY,
         MOVE_QUICK_ATTACK,
         MOVE_GUST,
@@ -2668,7 +2668,7 @@ const u16 gEggMoves[] = {
         MOVE_EARTH_POWER,
         MOVE_BUG_BITE,
         MOVE_SIGNAL_BEAM),
-#endif //P_FAMILY_TRAPINCH
+#endif //P_FAMILY_COREDRAMON_GREEN
 
 #if P_FAMILY_CACNEA
     egg_moves(CACNEA,

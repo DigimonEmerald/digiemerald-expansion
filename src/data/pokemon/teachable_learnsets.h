@@ -15533,8 +15533,8 @@ static const u16 sCoredramon_blueTeachableLearnset[] = {
 };
 #endif //P_FAMILY_COREDRAMON_BLUE
 
-#if P_FAMILY_TRAPINCH
-static const u16 sTrapinchTeachableLearnset[] = {
+#if P_FAMILY_COREDRAMON_GREEN
+static const u16 sCoredramon_greenTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -15637,7 +15637,7 @@ static const u16 sFlygonTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TRAPINCH
+#endif //P_FAMILY_COREDRAMON_GREEN
 
 #if P_FAMILY_CACNEA
 static const u16 sCacneaTeachableLearnset[] = {
