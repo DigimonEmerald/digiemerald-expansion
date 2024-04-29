@@ -16965,8 +16965,8 @@ static const u16 sFroslassTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_EXVEEMON_VIRUS
 
-#if P_FAMILY_SPHEAL
-static const u16 sSphealTeachableLearnset[] = {
+#if P_FAMILY_EYESMON_SCATTERMODE
+static const u16 sEyesmon_scattermodeTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -17072,7 +17072,7 @@ static const u16 sWalreinTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SPHEAL
+#endif //P_FAMILY_EYESMON_SCATTERMODE
 
 #if P_FAMILY_CLAMPERL
 static const u16 sClamperlTeachableLearnset[] = {

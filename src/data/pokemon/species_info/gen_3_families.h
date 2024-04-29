@@ -7944,8 +7944,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_EXVEEMON_VIRUS
 
-#if P_FAMILY_SPHEAL
-    [SPECIES_SPHEAL] =
+#if P_FAMILY_EYESMON_SCATTERMODE
+    [SPECIES_EYESMON_SCATTERMODE] =
     {
         .baseHP        = 70,
         .baseAttack    = 40,
@@ -7964,9 +7964,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
         .abilities = { ABILITY_THICK_FAT, ABILITY_ICE_BODY, ABILITY_OBLIVIOUS },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Spheal"),
-        .cryId = CRY_SPHEAL,
-        .natDexNum = NATIONAL_DEX_SPHEAL,
+        .speciesName = _("Eyesmon_scattermode"),
+        .cryId = CRY_EYESMON_SCATTERMODE,
+        .natDexNum = NATIONAL_DEX_EYESMON_SCATTERMODE,
         .categoryName = _("Clap"),
         .height = 8,
         .weight = 395,
@@ -7979,23 +7979,23 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 16,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Spheal,
+        .frontPic = gMonFrontPic_Eyesmon_scattermode,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Spheal,
+        .frontAnimFrames = sAnims_Eyesmon_scattermode,
         .frontAnimId = ANIM_SPIN_LONG,
         .frontAnimDelay = 15,
-        .backPic = gMonBackPic_Spheal,
+        .backPic = gMonBackPic_Eyesmon_scattermode,
         .backPicSize = MON_COORDS_SIZE(48, 40),
         .backPicYOffset = 15,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Spheal,
-        .shinyPalette = gMonShinyPalette_Spheal,
-        .iconSprite = gMonIcon_Spheal,
+        .palette = gMonPalette_Eyesmon_scattermode,
+        .shinyPalette = gMonShinyPalette_Eyesmon_scattermode,
+        .iconSprite = gMonIcon_Eyesmon_scattermode,
         .iconPalIndex = 2,
-        FOOTPRINT(Spheal)
-        .levelUpLearnset = sSphealLevelUpLearnset,
-        .teachableLearnset = sSphealTeachableLearnset,
+        FOOTPRINT(Eyesmon_scattermode)
+        .levelUpLearnset = sEyesmon_scattermodeLevelUpLearnset,
+        .teachableLearnset = sEyesmon_scattermodeTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_SEALEO}),
     },
 
@@ -8109,7 +8109,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sWalreinLevelUpLearnset,
         .teachableLearnset = sWalreinTeachableLearnset,
     },
-#endif //P_FAMILY_SPHEAL
+#endif //P_FAMILY_EYESMON_SCATTERMODE
 
 #if P_FAMILY_CLAMPERL
     [SPECIES_CLAMPERL] =

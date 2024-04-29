@@ -1956,7 +1956,7 @@ static const struct TrainerMon sParty_Franklin[] = {
 static const struct TrainerMon sParty_Kevin[] = {
     {
     .lvl = 34,
-    .species = SPECIES_SPHEAL,
+    .species = SPECIES_EYESMON_SCATTERMODE,
     }
 };
 
@@ -5607,7 +5607,7 @@ static const struct TrainerMon sParty_Nikki[] = {
     },
     {
     .lvl = 33,
-    .species = SPECIES_SPHEAL,
+    .species = SPECIES_EYESMON_SCATTERMODE,
     }
 };
 
@@ -5625,7 +5625,7 @@ static const struct TrainerMon sParty_Katie[] = {
     },
     {
     .lvl = 33,
-    .species = SPECIES_SPHEAL,
+    .species = SPECIES_EYESMON_SCATTERMODE,
     }
 };
 
@@ -6101,7 +6101,7 @@ static const struct TrainerMon sParty_Leonard[] = {
 static const struct TrainerMon sParty_Duncan[] = {
     {
     .lvl = 25,
-    .species = SPECIES_SPHEAL,
+    .species = SPECIES_EYESMON_SCATTERMODE,
     },
     {
     .lvl = 25,
@@ -6249,7 +6249,7 @@ static const struct TrainerMon sParty_Kelvin[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 33,
-    .species = SPECIES_SPHEAL,
+    .species = SPECIES_EYESMON_SCATTERMODE,
     }
 };
 
@@ -8649,7 +8649,7 @@ static const struct TrainerMon sParty_Aidan[] = {
 static const struct TrainerMon sParty_Reed[] = {
     {
     .lvl = 33,
-    .species = SPECIES_SPHEAL,
+    .species = SPECIES_EYESMON_SCATTERMODE,
     },
     {
     .lvl = 33,

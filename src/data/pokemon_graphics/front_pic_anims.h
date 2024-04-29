@@ -4910,8 +4910,8 @@ static const union AnimCmd sAnim_Froslass_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_EXVEEMON_VIRUS
 
-#if P_FAMILY_SPHEAL
-static const union AnimCmd sAnim_Spheal_1[] =
+#if P_FAMILY_EYESMON_SCATTERMODE
+static const union AnimCmd sAnim_Eyesmon_scattermode_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 43),
@@ -4943,7 +4943,7 @@ static const union AnimCmd sAnim_Walrein_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SPHEAL
+#endif //P_FAMILY_EYESMON_SCATTERMODE
 
 #if P_FAMILY_CLAMPERL
 static const union AnimCmd sAnim_Clamperl_1[] =
@@ -11303,11 +11303,11 @@ SINGLE_ANIMATION(EyesmonMega);
 SINGLE_ANIMATION(Froslass);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_EXVEEMON_VIRUS
-#if P_FAMILY_SPHEAL
-SINGLE_ANIMATION(Spheal);
+#if P_FAMILY_EYESMON_SCATTERMODE
+SINGLE_ANIMATION(Eyesmon_scattermode);
 SINGLE_ANIMATION(Sealeo);
 SINGLE_ANIMATION(Walrein);
-#endif //P_FAMILY_SPHEAL
+#endif //P_FAMILY_EYESMON_SCATTERMODE
 #if P_FAMILY_CLAMPERL
 SINGLE_ANIMATION(Clamperl);
 SINGLE_ANIMATION(Huntail);

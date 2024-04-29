@@ -2721,10 +2721,10 @@ Cry_Froslass::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_EXVEEMON_VIRUS
 
-.if P_FAMILY_SPHEAL == TRUE
+.if P_FAMILY_EYESMON_SCATTERMODE == TRUE
 	.align 2
-Cry_Spheal::
-	.incbin "sound/direct_sound_samples/cries/spheal.bin"
+Cry_Eyesmon_scattermode::
+	.incbin "sound/direct_sound_samples/cries/eyesmon_scattermode.bin"
 
 	.align 2
 Cry_Sealeo::
@@ -2733,7 +2733,7 @@ Cry_Sealeo::
 	.align 2
 Cry_Walrein::
 	.incbin "sound/direct_sound_samples/cries/walrein.bin"
-.endif @ P_FAMILY_SPHEAL
+.endif @ P_FAMILY_EYESMON_SCATTERMODE
 
 .if P_FAMILY_CLAMPERL == TRUE
 	.align 2

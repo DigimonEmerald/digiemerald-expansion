@@ -7123,8 +7123,8 @@ static const struct LevelUpMove sFroslassLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_EXVEEMON_VIRUS
 
-#if P_FAMILY_SPHEAL
-static const struct LevelUpMove sSphealLevelUpLearnset[] = {
+#if P_FAMILY_EYESMON_SCATTERMODE
+static const struct LevelUpMove sEyesmon_scattermodeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
@@ -7173,7 +7173,7 @@ static const struct LevelUpMove sWalreinLevelUpLearnset[] = {
     LEVEL_UP_MOVE(61, MOVE_SHEER_COLD),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SPHEAL
+#endif //P_FAMILY_EYESMON_SCATTERMODE
 
 #if P_FAMILY_CLAMPERL
 static const struct LevelUpMove sClamperlLevelUpLearnset[] = {

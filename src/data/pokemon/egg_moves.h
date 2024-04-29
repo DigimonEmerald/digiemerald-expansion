@@ -2951,8 +2951,8 @@ const u16 gEggMoves[] = {
         MOVE_SWITCHEROO),
 #endif //P_FAMILY_EXVEEMON_VIRUS
 
-#if P_FAMILY_SPHEAL
-    egg_moves(SPHEAL,
+#if P_FAMILY_EYESMON_SCATTERMODE
+    egg_moves(EYESMON_SCATTERMODE,
         MOVE_WATER_SPORT,
         MOVE_STOCKPILE,
         MOVE_SWALLOW,
@@ -2966,7 +2966,7 @@ const u16 gEggMoves[] = {
         MOVE_SLEEP_TALK,
         MOVE_WATER_PULSE,
         MOVE_BELLY_DRUM),
-#endif //P_FAMILY_SPHEAL
+#endif //P_FAMILY_EYESMON_SCATTERMODE
 
 #if P_FAMILY_CLAMPERL
     egg_moves(CLAMPERL,

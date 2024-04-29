@@ -5295,14 +5295,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_EXVEEMON_VIRUS
 
-#if P_FAMILY_SPHEAL
-    const u32 gMonFrontPic_Spheal[] = INCBIN_U32("graphics/pokemon/spheal/anim_front.4bpp.lz");
-    const u32 gMonPalette_Spheal[] = INCBIN_U32("graphics/pokemon/spheal/normal.gbapal.lz");
-    const u32 gMonBackPic_Spheal[] = INCBIN_U32("graphics/pokemon/spheal/back.4bpp.lz");
-    const u32 gMonShinyPalette_Spheal[] = INCBIN_U32("graphics/pokemon/spheal/shiny.gbapal.lz");
-    const u8 gMonIcon_Spheal[] = INCBIN_U8("graphics/pokemon/spheal/icon.4bpp");
+#if P_FAMILY_EYESMON_SCATTERMODE
+    const u32 gMonFrontPic_Eyesmon_scattermode[] = INCBIN_U32("graphics/pokemon/eyesmon_scattermode/anim_front.4bpp.lz");
+    const u32 gMonPalette_Eyesmon_scattermode[] = INCBIN_U32("graphics/pokemon/eyesmon_scattermode/normal.gbapal.lz");
+    const u32 gMonBackPic_Eyesmon_scattermode[] = INCBIN_U32("graphics/pokemon/eyesmon_scattermode/back.4bpp.lz");
+    const u32 gMonShinyPalette_Eyesmon_scattermode[] = INCBIN_U32("graphics/pokemon/eyesmon_scattermode/shiny.gbapal.lz");
+    const u8 gMonIcon_Eyesmon_scattermode[] = INCBIN_U8("graphics/pokemon/eyesmon_scattermode/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Spheal[] = INCBIN_U8("graphics/pokemon/spheal/footprint.1bpp");
+    const u8 gMonFootprint_Eyesmon_scattermode[] = INCBIN_U8("graphics/pokemon/eyesmon_scattermode/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Sealeo[] = INCBIN_U32("graphics/pokemon/sealeo/anim_front.4bpp.lz");
@@ -5322,7 +5322,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Walrein[] = INCBIN_U8("graphics/pokemon/walrein/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_SPHEAL
+#endif //P_FAMILY_EYESMON_SCATTERMODE
 
 #if P_FAMILY_CLAMPERL
     const u32 gMonFrontPic_Clamperl[] = INCBIN_U32("graphics/pokemon/clamperl/anim_front.4bpp.lz");
