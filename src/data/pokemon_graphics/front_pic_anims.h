@@ -4476,8 +4476,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(DarmailmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DARLIZAMON
 
-#if P_FAMILY_ZANGOOSE
-static const union AnimCmd sAnim_Zangoose_1[] =
+#if P_FAMILY_DARKTYRMON
+static const union AnimCmd sAnim_Darktyrmon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4488,7 +4488,7 @@ static const union AnimCmd sAnim_Zangoose_1[] =
     ANIMCMD_FRAME(0, 50),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_ZANGOOSE
+#endif //P_FAMILY_DARKTYRMON
 
 #if P_FAMILY_SEVIPER
 static const union AnimCmd sAnim_Seviper_1[] =
@@ -11219,9 +11219,9 @@ SINGLE_ANIMATION(Darmailmon);
 SINGLE_ANIMATION(DarmailmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DARLIZAMON
-#if P_FAMILY_ZANGOOSE
-SINGLE_ANIMATION(Zangoose);
-#endif //P_FAMILY_ZANGOOSE
+#if P_FAMILY_DARKTYRMON
+SINGLE_ANIMATION(Darktyrmon);
+#endif //P_FAMILY_DARKTYRMON
 #if P_FAMILY_SEVIPER
 SINGLE_ANIMATION(Seviper);
 #endif //P_FAMILY_SEVIPER

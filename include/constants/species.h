@@ -336,7 +336,7 @@
 #define SPECIES_TRAILMON_DARK                                332
 #define SPECIES_DARLIZAMON                                  333
 #define SPECIES_DARMAILMON                                 334
-#define SPECIES_ZANGOOSE                                335
+#define SPECIES_DARKTYRMON                                335
 #define SPECIES_SEVIPER                                 336
 #define SPECIES_LUNATONE                                337
 #define SPECIES_SOLROCK                                 338

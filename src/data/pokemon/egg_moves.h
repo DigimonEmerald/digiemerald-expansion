@@ -2707,8 +2707,8 @@ const u16 gEggMoves[] = {
         MOVE_PLAY_ROUGH),
 #endif //P_FAMILY_DARLIZAMON
 
-#if P_FAMILY_ZANGOOSE
-    egg_moves(ZANGOOSE,
+#if P_FAMILY_DARKTYRMON
+    egg_moves(DARKTYRMON,
         MOVE_FLAIL,
         MOVE_DOUBLE_KICK,
         MOVE_RAZOR_WIND,
@@ -2724,7 +2724,7 @@ const u16 gEggMoves[] = {
         MOVE_FEINT,
         MOVE_QUICK_GUARD,
         MOVE_BELLY_DRUM),
-#endif //P_FAMILY_ZANGOOSE
+#endif //P_FAMILY_DARKTYRMON
 
 #if P_FAMILY_SEVIPER
     egg_moves(SEVIPER,

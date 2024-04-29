@@ -5878,8 +5878,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DARLIZAMON
 
-#if P_FAMILY_ZANGOOSE
-    [SPECIES_ZANGOOSE] =
+#if P_FAMILY_DARKTYRMON
+    [SPECIES_DARKTYRMON] =
     {
         .baseHP        = 73,
         .baseAttack    = 115,
@@ -5900,9 +5900,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .abilities = { ABILITY_IMMUNITY, ABILITY_NONE, ABILITY_TOXIC_BOOST },
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
-        .speciesName = _("Zangoose"),
-        .cryId = CRY_ZANGOOSE,
-        .natDexNum = NATIONAL_DEX_ZANGOOSE,
+        .speciesName = _("Darktyrmon"),
+        .cryId = CRY_DARKTYRMON,
+        .natDexNum = NATIONAL_DEX_DARKTYRMON,
         .categoryName = _("Cat Ferret"),
         .height = 13,
         .weight = 403,
@@ -5915,24 +5915,24 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Zangoose,
+        .frontPic = gMonFrontPic_Darktyrmon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_Zangoose,
+        .frontAnimFrames = sAnims_Darktyrmon,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Zangoose,
+        .backPic = gMonBackPic_Darktyrmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Zangoose,
-        .shinyPalette = gMonShinyPalette_Zangoose,
-        .iconSprite = gMonIcon_Zangoose,
+        .palette = gMonPalette_Darktyrmon,
+        .shinyPalette = gMonShinyPalette_Darktyrmon,
+        .iconSprite = gMonIcon_Darktyrmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Zangoose)
-        .levelUpLearnset = sZangooseLevelUpLearnset,
-        .teachableLearnset = sZangooseTeachableLearnset,
+        FOOTPRINT(Darktyrmon)
+        .levelUpLearnset = sDarktyrmonLevelUpLearnset,
+        .teachableLearnset = sDarktyrmonTeachableLearnset,
     },
-#endif //P_FAMILY_ZANGOOSE
+#endif //P_FAMILY_DARKTYRMON
 
 #if P_FAMILY_SEVIPER
     [SPECIES_SEVIPER] =
@@ -5964,8 +5964,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 27,
         .weight = 525,
         .description = COMPOUND_STRING(
-            "Seviper and Zangoose are eternal rivals.\n"
-            "It counters a Zangoose's dazzling agility\n"
+            "Seviper and Darktyrmon are eternal rivals.\n"
+            "It counters a Darktyrmon's dazzling agility\n"
             "with its swordlike tail, which also oozes\n"
             "a horrible poison."),
         .pokemonScale = 275,

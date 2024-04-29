@@ -2542,11 +2542,11 @@ Cry_DarmailmonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_DARLIZAMON
 
-.if P_FAMILY_ZANGOOSE == TRUE
+.if P_FAMILY_DARKTYRMON == TRUE
 	.align 2
-Cry_Zangoose::
-	.incbin "sound/direct_sound_samples/cries/zangoose.bin"
-.endif @ P_FAMILY_ZANGOOSE
+Cry_Darktyrmon::
+	.incbin "sound/direct_sound_samples/cries/darktyrmon.bin"
+.endif @ P_FAMILY_DARKTYRMON
 
 .if P_FAMILY_SEVIPER == TRUE
 	.align 2

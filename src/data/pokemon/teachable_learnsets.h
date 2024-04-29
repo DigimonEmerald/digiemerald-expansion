@@ -15788,8 +15788,8 @@ static const u16 sDarmailmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DARLIZAMON
 
-#if P_FAMILY_ZANGOOSE
-static const u16 sZangooseTeachableLearnset[] = {
+#if P_FAMILY_DARKTYRMON
+static const u16 sDarktyrmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -15847,7 +15847,7 @@ static const u16 sZangooseTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ZANGOOSE
+#endif //P_FAMILY_DARKTYRMON
 
 #if P_FAMILY_SEVIPER
 static const u16 sSeviperTeachableLearnset[] = {

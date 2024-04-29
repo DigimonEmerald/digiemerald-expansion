@@ -921,9 +921,9 @@ gCryTable::
 	cry Cry_DarmailmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_DARLIZAMON
-.if P_FAMILY_ZANGOOSE == TRUE
-	cry Cry_Zangoose
-.endif @ P_FAMILY_ZANGOOSE
+.if P_FAMILY_DARKTYRMON == TRUE
+	cry Cry_Darktyrmon
+.endif @ P_FAMILY_DARKTYRMON
 .if P_FAMILY_SEVIPER == TRUE
 	cry Cry_Seviper
 .endif @ P_FAMILY_SEVIPER
@@ -3347,9 +3347,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_DarmailmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_DARLIZAMON
-.if P_FAMILY_ZANGOOSE == TRUE
-	cry_reverse Cry_Zangoose
-.endif @ P_FAMILY_ZANGOOSE
+.if P_FAMILY_DARKTYRMON == TRUE
+	cry_reverse Cry_Darktyrmon
+.endif @ P_FAMILY_DARKTYRMON
 .if P_FAMILY_SEVIPER == TRUE
 	cry_reverse Cry_Seviper
 .endif @ P_FAMILY_SEVIPER
