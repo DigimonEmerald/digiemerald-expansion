@@ -6564,8 +6564,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_DIGMON
 
-#if P_FAMILY_ANORITH
-    [SPECIES_ANORITH] =
+#if P_FAMILY_DOBERMON
+    [SPECIES_DOBERMON] =
     {
         .baseHP        = 45,
         .baseAttack    = 95,
@@ -6590,9 +6590,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
         .abilities = { ABILITY_BATTLE_ARMOR, ABILITY_NONE, ABILITY_SWIFT_SWIM },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Anorith"),
-        .cryId = CRY_ANORITH,
-        .natDexNum = NATIONAL_DEX_ANORITH,
+        .speciesName = _("Dobermon"),
+        .cryId = CRY_DOBERMON,
+        .natDexNum = NATIONAL_DEX_DOBERMON,
         .categoryName = _("Old Shrimp"),
         .height = 7,
         .weight = 125,
@@ -6605,22 +6605,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Anorith,
+        .frontPic = gMonFrontPic_Dobermon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Anorith,
+        .frontAnimFrames = sAnims_Dobermon,
         .frontAnimId = ANIM_TWIST,
-        .backPic = gMonBackPic_Anorith,
+        .backPic = gMonBackPic_Dobermon,
         .backPicSize = MON_COORDS_SIZE(56, 32),
         .backPicYOffset = 19,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Anorith,
-        .shinyPalette = gMonShinyPalette_Anorith,
-        .iconSprite = gMonIcon_Anorith,
+        .palette = gMonPalette_Dobermon,
+        .shinyPalette = gMonShinyPalette_Dobermon,
+        .iconSprite = gMonIcon_Dobermon,
         .iconPalIndex = 0,
-        FOOTPRINT(Anorith)
-        .levelUpLearnset = sAnorithLevelUpLearnset,
-        .teachableLearnset = sAnorithTeachableLearnset,
+        FOOTPRINT(Dobermon)
+        .levelUpLearnset = sDobermonLevelUpLearnset,
+        .teachableLearnset = sDobermonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_ARMALDO}),
     },
 
@@ -6681,7 +6681,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sArmaldoLevelUpLearnset,
         .teachableLearnset = sArmaldoTeachableLearnset,
     },
-#endif //P_FAMILY_ANORITH
+#endif //P_FAMILY_DOBERMON
 
 #if P_FAMILY_FEEBAS
     [SPECIES_FEEBAS] =

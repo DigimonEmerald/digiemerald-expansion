@@ -2606,15 +2606,15 @@ Cry_Dinohyumon::
 	.incbin "sound/direct_sound_samples/cries/dinohyumon.bin"
 .endif @ P_FAMILY_DIGMON
 
-.if P_FAMILY_ANORITH == TRUE
+.if P_FAMILY_DOBERMON == TRUE
 	.align 2
-Cry_Anorith::
-	.incbin "sound/direct_sound_samples/cries/anorith.bin"
+Cry_Dobermon::
+	.incbin "sound/direct_sound_samples/cries/dobermon.bin"
 
 	.align 2
 Cry_Armaldo::
 	.incbin "sound/direct_sound_samples/cries/armaldo.bin"
-.endif @ P_FAMILY_ANORITH
+.endif @ P_FAMILY_DOBERMON
 
 .if P_FAMILY_FEEBAS == TRUE
 	.align 2

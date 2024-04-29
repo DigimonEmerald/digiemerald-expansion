@@ -9117,8 +9117,8 @@ static const struct LevelUpMove sDinohyumonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_DIGMON
 
-#if P_FAMILY_ANORITH
-static const struct LevelUpMove sAnorithLevelUpLearnset[] = {
+#if P_FAMILY_DOBERMON
+static const struct LevelUpMove sDobermonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 4, MOVE_WATER_GUN),
@@ -9151,7 +9151,7 @@ static const struct LevelUpMove sArmaldoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(48, MOVE_X_SCISSOR),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_ANORITH
+#endif //P_FAMILY_DOBERMON
 
 #if P_FAMILY_FEEBAS
 static const struct LevelUpMove sFeebasLevelUpLearnset[] = {

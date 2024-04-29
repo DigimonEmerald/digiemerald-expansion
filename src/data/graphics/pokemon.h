@@ -5062,14 +5062,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_DIGMON
 
-#if P_FAMILY_ANORITH
-    const u32 gMonFrontPic_Anorith[] = INCBIN_U32("graphics/pokemon/anorith/anim_front.4bpp.lz");
-    const u32 gMonPalette_Anorith[] = INCBIN_U32("graphics/pokemon/anorith/normal.gbapal.lz");
-    const u32 gMonBackPic_Anorith[] = INCBIN_U32("graphics/pokemon/anorith/back.4bpp.lz");
-    const u32 gMonShinyPalette_Anorith[] = INCBIN_U32("graphics/pokemon/anorith/shiny.gbapal.lz");
-    const u8 gMonIcon_Anorith[] = INCBIN_U8("graphics/pokemon/anorith/icon.4bpp");
+#if P_FAMILY_DOBERMON
+    const u32 gMonFrontPic_Dobermon[] = INCBIN_U32("graphics/pokemon/dobermon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Dobermon[] = INCBIN_U32("graphics/pokemon/dobermon/normal.gbapal.lz");
+    const u32 gMonBackPic_Dobermon[] = INCBIN_U32("graphics/pokemon/dobermon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Dobermon[] = INCBIN_U32("graphics/pokemon/dobermon/shiny.gbapal.lz");
+    const u8 gMonIcon_Dobermon[] = INCBIN_U8("graphics/pokemon/dobermon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Anorith[] = INCBIN_U8("graphics/pokemon/anorith/footprint.1bpp");
+    const u8 gMonFootprint_Dobermon[] = INCBIN_U8("graphics/pokemon/dobermon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Armaldo[] = INCBIN_U32("graphics/pokemon/armaldo/anim_front.4bpp.lz");
@@ -5080,7 +5080,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Armaldo[] = INCBIN_U8("graphics/pokemon/armaldo/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_ANORITH
+#endif //P_FAMILY_DOBERMON
 
 #if P_FAMILY_FEEBAS
     const u32 gMonFrontPic_Feebas[] = INCBIN_U32("graphics/pokemon/feebas/anim_front.4bpp.lz");

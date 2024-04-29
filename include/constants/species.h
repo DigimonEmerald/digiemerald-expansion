@@ -348,7 +348,7 @@
 #define SPECIES_DIATRYMON                                 344
 #define SPECIES_DIGMON                                  345
 #define SPECIES_DINOHYUMON                                 346
-#define SPECIES_ANORITH                                 347
+#define SPECIES_DOBERMON                                 347
 #define SPECIES_ARMALDO                                 348
 #define SPECIES_FEEBAS                                  349
 #define SPECIES_MILOTIC                                 350

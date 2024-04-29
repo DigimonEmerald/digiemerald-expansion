@@ -16260,8 +16260,8 @@ static const u16 sDinohyumonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DIGMON
 
-#if P_FAMILY_ANORITH
-static const u16 sAnorithTeachableLearnset[] = {
+#if P_FAMILY_DOBERMON
+static const u16 sDobermonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -16323,7 +16323,7 @@ static const u16 sArmaldoTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ANORITH
+#endif //P_FAMILY_DOBERMON
 
 #if P_FAMILY_FEEBAS
 static const u16 sFeebasTeachableLearnset[] = {

@@ -949,10 +949,10 @@ gCryTable::
 	cry Cry_Digmon
 	cry Cry_Dinohyumon
 .endif @ P_FAMILY_DIGMON
-.if P_FAMILY_ANORITH == TRUE
-	cry Cry_Anorith
+.if P_FAMILY_DOBERMON == TRUE
+	cry Cry_Dobermon
 	cry Cry_Armaldo
-.endif @ P_FAMILY_ANORITH
+.endif @ P_FAMILY_DOBERMON
 .if P_FAMILY_FEEBAS == TRUE
 	cry Cry_Feebas
 	cry Cry_Milotic
@@ -3375,10 +3375,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Digmon
 	cry_reverse Cry_Dinohyumon
 .endif @ P_FAMILY_DIGMON
-.if P_FAMILY_ANORITH == TRUE
-	cry_reverse Cry_Anorith
+.if P_FAMILY_DOBERMON == TRUE
+	cry_reverse Cry_Dobermon
 	cry_reverse Cry_Armaldo
-.endif @ P_FAMILY_ANORITH
+.endif @ P_FAMILY_DOBERMON
 .if P_FAMILY_FEEBAS == TRUE
 	cry_reverse Cry_Feebas
 	cry_reverse Cry_Milotic
