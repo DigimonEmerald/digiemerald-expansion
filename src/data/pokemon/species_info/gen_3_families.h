@@ -8731,10 +8731,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Ganemon)
         .levelUpLearnset = sGanemonLevelUpLearnset,
         .teachableLearnset = sGanemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_METAGROSS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_GAOGAMON}),
     },
 
-    [SPECIES_METAGROSS] =
+    [SPECIES_GAOGAMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 135,
@@ -8760,14 +8760,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_CLEAR_BODY, ABILITY_NONE, ABILITY_LIGHT_METAL },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Metagross"),
-        .cryId = CRY_METAGROSS,
-        .natDexNum = NATIONAL_DEX_METAGROSS,
+        .speciesName = _("Gaogamon"),
+        .cryId = CRY_GAOGAMON,
+        .natDexNum = NATIONAL_DEX_GAOGAMON,
         .categoryName = _("Iron Leg"),
         .height = 16,
         .weight = 5500,
         .description = COMPOUND_STRING(
-            "Metagross has four brains that are joined\n"
+            "Gaogamon has four brains that are joined\n"
             "by a complex neural network. As a result of\n"
             "integration, this Pokémon is smarter than\n"
             "a supercomputer."),
@@ -8775,28 +8775,28 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 4,
         .trainerScale = 447,
         .trainerOffset = 9,
-        .frontPic = gMonFrontPic_Metagross,
+        .frontPic = gMonFrontPic_Gaogamon,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Metagross,
+        .frontAnimFrames = sAnims_Gaogamon,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Metagross,
+        .backPic = gMonBackPic_Gaogamon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Metagross,
-        .shinyPalette = gMonShinyPalette_Metagross,
-        .iconSprite = gMonIcon_Metagross,
+        .palette = gMonPalette_Gaogamon,
+        .shinyPalette = gMonShinyPalette_Gaogamon,
+        .iconSprite = gMonIcon_Gaogamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Metagross)
-        .levelUpLearnset = sMetagrossLevelUpLearnset,
-        .teachableLearnset = sMetagrossTeachableLearnset,
-        .formSpeciesIdTable = sMetagrossFormSpeciesIdTable,
-        .formChangeTable = sMetagrossFormChangeTable,
+        FOOTPRINT(Gaogamon)
+        .levelUpLearnset = sGaogamonLevelUpLearnset,
+        .teachableLearnset = sGaogamonTeachableLearnset,
+        .formSpeciesIdTable = sGaogamonFormSpeciesIdTable,
+        .formChangeTable = sGaogamonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_METAGROSS_MEGA] =
+    [SPECIES_GAOGAMON_MEGA] =
     {
         .baseHP        = 80,
         .baseAttack    = 145,
@@ -8816,9 +8816,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Metagross"),
-        .cryId = CRY_METAGROSS_MEGA,
-        .natDexNum = NATIONAL_DEX_METAGROSS,
+        .speciesName = _("Gaogamon"),
+        .cryId = CRY_GAOGAMON_MEGA,
+        .natDexNum = NATIONAL_DEX_GAOGAMON,
         .categoryName = _("Iron Leg"),
         .height = 25,
         .weight = 9429,
@@ -8830,26 +8830,26 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 4,
         .trainerScale = 447,
         .trainerOffset = 9,
-        .frontPic = gMonFrontPic_MetagrossMega,
+        .frontPic = gMonFrontPic_GaogamonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_MetagrossMega,
+        .frontAnimFrames = sAnims_GaogamonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 4,
-        .backPic = gMonBackPic_MetagrossMega,
+        .backPic = gMonBackPic_GaogamonMega,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_MetagrossMega,
-        .shinyPalette = gMonShinyPalette_MetagrossMega,
-        .iconSprite = gMonIcon_MetagrossMega,
+        .palette = gMonPalette_GaogamonMega,
+        .shinyPalette = gMonShinyPalette_GaogamonMega,
+        .iconSprite = gMonIcon_GaogamonMega,
         .iconPalIndex = 0,
-        FOOTPRINT(Metagross)
+        FOOTPRINT(Gaogamon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sMetagrossLevelUpLearnset,
-        .teachableLearnset = sMetagrossTeachableLearnset,
-        .formSpeciesIdTable = sMetagrossFormSpeciesIdTable,
-        .formChangeTable = sMetagrossFormChangeTable,
+        .levelUpLearnset = sGaogamonLevelUpLearnset,
+        .teachableLearnset = sGaogamonTeachableLearnset,
+        .formSpeciesIdTable = sGaogamonFormSpeciesIdTable,
+        .formChangeTable = sGaogamonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FUGAMON

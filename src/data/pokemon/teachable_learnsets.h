@@ -17385,7 +17385,7 @@ static const u16 sGanemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sMetagrossTeachableLearnset[] = {
+static const u16 sGaogamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BRICK_BREAK,
     MOVE_CUT,

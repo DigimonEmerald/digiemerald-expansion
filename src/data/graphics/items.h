@@ -925,8 +925,8 @@ const u32 gItemIconPalette_Glalitite[] = INCBIN_U32("graphics/items/icon_palette
 const u32 gItemIcon_Salamencite[] = INCBIN_U32("graphics/items/icons/salamencite.4bpp.lz");
 const u32 gItemIconPalette_Salamencite[] = INCBIN_U32("graphics/items/icon_palettes/salamencite.gbapal.lz");
 
-const u32 gItemIcon_Metagrossite[] = INCBIN_U32("graphics/items/icons/metagrossite.4bpp.lz");
-const u32 gItemIconPalette_Metagrossite[] = INCBIN_U32("graphics/items/icon_palettes/metagrossite.gbapal.lz");
+const u32 gItemIcon_Gaogamonite[] = INCBIN_U32("graphics/items/icons/gaogamonite.4bpp.lz");
+const u32 gItemIconPalette_Gaogamonite[] = INCBIN_U32("graphics/items/icon_palettes/gaogamonite.gbapal.lz");
 
 const u32 gItemIcon_Latiasite[] = INCBIN_U32("graphics/items/icons/latiasite.4bpp.lz");
 const u32 gItemIconPalette_Latiasite[] = INCBIN_U32("graphics/items/icon_palettes/latiasite.gbapal.lz");

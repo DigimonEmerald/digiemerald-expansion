@@ -440,9 +440,9 @@ static const struct FormChange sFrogmonFormChangeTable[] = {
 #endif //P_FAMILY_FLYMON
 
 #if P_FAMILY_FUGAMON
-static const struct FormChange sMetagrossFormChangeTable[] = {
+static const struct FormChange sGaogamonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_METAGROSS_MEGA, ITEM_METAGROSSITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_GAOGAMON_MEGA, ITEM_GAOGAMONITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };

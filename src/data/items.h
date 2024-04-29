@@ -5202,14 +5202,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_METAGROSSITE] =
+    [ITEM_GAOGAMONITE] =
     {
-        .name = _("Metagrossite"),
+        .name = _("Gaogamonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Metagross to Mega\n"
+            "Gaogamon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

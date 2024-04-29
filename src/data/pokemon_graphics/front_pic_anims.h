@@ -5058,7 +5058,7 @@ static const union AnimCmd sAnim_Ganemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Metagross_1[] =
+static const union AnimCmd sAnim_Gaogamon_1[] =
 {
     ANIMCMD_FRAME(0, 16),
     ANIMCMD_FRAME(1, 16),
@@ -5069,7 +5069,7 @@ static const union AnimCmd sAnim_Metagross_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(MetagrossMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(GaogamonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FUGAMON
 
@@ -11330,9 +11330,9 @@ SINGLE_ANIMATION(FrogmonMega);
 #if P_FAMILY_FUGAMON
 SINGLE_ANIMATION(Fugamon);
 SINGLE_ANIMATION(Ganemon);
-SINGLE_ANIMATION(Metagross);
+SINGLE_ANIMATION(Gaogamon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(MetagrossMega);
+SINGLE_ANIMATION(GaogamonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FUGAMON
 #if P_FAMILY_REGIROCK

@@ -378,7 +378,7 @@
 #define SPECIES_FROGMON                               373
 #define SPECIES_FUGAMON                                  374
 #define SPECIES_GANEMON                                  375
-#define SPECIES_METAGROSS                               376
+#define SPECIES_GAOGAMON                               376
 #define SPECIES_REGIROCK                                377
 #define SPECIES_REGICE                                  378
 #define SPECIES_REGISTEEL                               379
@@ -1001,7 +1001,7 @@
 #define SPECIES_EXERMON_MEGA                              940
 #define SPECIES_EYESMON_MEGA                             941
 #define SPECIES_FROGMON_MEGA                          942
-#define SPECIES_METAGROSS_MEGA                          943
+#define SPECIES_GAOGAMON_MEGA                          943
 #define SPECIES_LATIAS_MEGA                             944
 #define SPECIES_LATIOS_MEGA                             945
 #define SPECIES_LOPUNNY_MEGA                            946

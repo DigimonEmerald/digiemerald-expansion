@@ -920,10 +920,10 @@ static const u16 sFrogmonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_FLYMON
 
 #if P_FAMILY_FUGAMON
-static const u16 sMetagrossFormSpeciesIdTable[] = {
-    SPECIES_METAGROSS,
+static const u16 sGaogamonFormSpeciesIdTable[] = {
+    SPECIES_GAOGAMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_METAGROSS_MEGA,
+    SPECIES_GAOGAMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };

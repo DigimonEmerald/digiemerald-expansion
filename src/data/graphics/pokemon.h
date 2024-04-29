@@ -5434,21 +5434,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Ganemon[] = INCBIN_U8("graphics/pokemon/ganemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Metagross[] = INCBIN_U32("graphics/pokemon/metagross/anim_front.4bpp.lz");
-    const u32 gMonPalette_Metagross[] = INCBIN_U32("graphics/pokemon/metagross/normal.gbapal.lz");
-    const u32 gMonBackPic_Metagross[] = INCBIN_U32("graphics/pokemon/metagross/back.4bpp.lz");
-    const u32 gMonShinyPalette_Metagross[] = INCBIN_U32("graphics/pokemon/metagross/shiny.gbapal.lz");
-    const u8 gMonIcon_Metagross[] = INCBIN_U8("graphics/pokemon/metagross/icon.4bpp");
+    const u32 gMonFrontPic_Gaogamon[] = INCBIN_U32("graphics/pokemon/gaogamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gaogamon[] = INCBIN_U32("graphics/pokemon/gaogamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Gaogamon[] = INCBIN_U32("graphics/pokemon/gaogamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gaogamon[] = INCBIN_U32("graphics/pokemon/gaogamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Gaogamon[] = INCBIN_U8("graphics/pokemon/gaogamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Metagross[] = INCBIN_U8("graphics/pokemon/metagross/footprint.1bpp");
+    const u8 gMonFootprint_Gaogamon[] = INCBIN_U8("graphics/pokemon/gaogamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_MetagrossMega[] = INCBIN_U32("graphics/pokemon/metagross/mega/front.4bpp.lz");
-    const u32 gMonPalette_MetagrossMega[] = INCBIN_U32("graphics/pokemon/metagross/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_MetagrossMega[] = INCBIN_U32("graphics/pokemon/metagross/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_MetagrossMega[] = INCBIN_U32("graphics/pokemon/metagross/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_MetagrossMega[] = INCBIN_U8("graphics/pokemon/metagross/mega/icon.4bpp");
+    const u32 gMonFrontPic_GaogamonMega[] = INCBIN_U32("graphics/pokemon/gaogamon/mega/front.4bpp.lz");
+    const u32 gMonPalette_GaogamonMega[] = INCBIN_U32("graphics/pokemon/gaogamon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_GaogamonMega[] = INCBIN_U32("graphics/pokemon/gaogamon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_GaogamonMega[] = INCBIN_U32("graphics/pokemon/gaogamon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_GaogamonMega[] = INCBIN_U8("graphics/pokemon/gaogamon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FUGAMON
 

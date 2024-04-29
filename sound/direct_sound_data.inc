@@ -2791,13 +2791,13 @@ Cry_Ganemon::
 	.incbin "sound/direct_sound_samples/cries/ganemon.bin"
 
 	.align 2
-Cry_Metagross::
-	.incbin "sound/direct_sound_samples/cries/metagross.bin"
+Cry_Gaogamon::
+	.incbin "sound/direct_sound_samples/cries/gaogamon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_MetagrossMega::
-	.incbin "sound/direct_sound_samples/cries/metagross_mega.bin"
+Cry_GaogamonMega::
+	.incbin "sound/direct_sound_samples/cries/gaogamon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FUGAMON
 

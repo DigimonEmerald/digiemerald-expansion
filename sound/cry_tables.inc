@@ -1029,9 +1029,9 @@ gCryTable::
 .if P_FAMILY_FUGAMON == TRUE
 	cry Cry_Fugamon
 	cry Cry_Ganemon
-	cry Cry_Metagross
+	cry Cry_Gaogamon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_MetagrossMega
+	cry Cry_GaogamonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FUGAMON
 .if P_FAMILY_REGIROCK == TRUE
@@ -3455,9 +3455,9 @@ gCryTable_Reverse::
 .if P_FAMILY_FUGAMON == TRUE
 	cry_reverse Cry_Fugamon
 	cry_reverse Cry_Ganemon
-	cry_reverse Cry_Metagross
+	cry_reverse Cry_Gaogamon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_MetagrossMega
+	cry_reverse Cry_GaogamonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FUGAMON
 .if P_FAMILY_REGIROCK == TRUE
