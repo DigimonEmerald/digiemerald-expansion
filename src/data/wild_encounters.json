@@ -2574,7 +2574,7 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_BAGON"
+                "species": "SPECIES_FLYMON"
               },
               {
                 "min_level": 35,
@@ -2584,7 +2584,7 @@
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_BAGON"
+                "species": "SPECIES_FLYMON"
               },
               {
                 "min_level": 37,
@@ -2594,7 +2594,7 @@
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_BAGON"
+                "species": "SPECIES_FLYMON"
               },
               {
                 "min_level": 39,

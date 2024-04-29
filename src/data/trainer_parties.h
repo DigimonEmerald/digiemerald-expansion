@@ -4911,7 +4911,7 @@ static const struct TrainerMon sParty_Nicolas4[] = {
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
     .lvl = 46,
-    .species = SPECIES_BAGON,
+    .species = SPECIES_FLYMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
@@ -4950,7 +4950,7 @@ static const struct TrainerMon sParty_Aaron[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 34,
-    .species = SPECIES_BAGON,
+    .species = SPECIES_FLYMON,
     .moves = {MOVE_DRAGON_BREATH, MOVE_HEADBUTT, MOVE_FOCUS_ENERGY, MOVE_EMBER}
     }
 };

@@ -5001,8 +5001,8 @@ static const union AnimCmd sAnim_Flybeemon_1[] =
 };
 #endif //P_FAMILY_FLYBEEMON
 
-#if P_FAMILY_BAGON
-static const union AnimCmd sAnim_Bagon_1[] =
+#if P_FAMILY_FLYMON
+static const union AnimCmd sAnim_Flymon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -5035,7 +5035,7 @@ static const union AnimCmd sAnim_Salamence_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(SalamenceMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BAGON
+#endif //P_FAMILY_FLYMON
 
 #if P_FAMILY_BELDUM
 static const union AnimCmd sAnim_Beldum_1[] =
@@ -11319,14 +11319,14 @@ SINGLE_ANIMATION(Flarizamon);
 #if P_FAMILY_FLYBEEMON
 SINGLE_ANIMATION(Flybeemon);
 #endif //P_FAMILY_FLYBEEMON
-#if P_FAMILY_BAGON
-SINGLE_ANIMATION(Bagon);
+#if P_FAMILY_FLYMON
+SINGLE_ANIMATION(Flymon);
 SINGLE_ANIMATION(Shelgon);
 SINGLE_ANIMATION(Salamence);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(SalamenceMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BAGON
+#endif //P_FAMILY_FLYMON
 #if P_FAMILY_BELDUM
 SINGLE_ANIMATION(Beldum);
 SINGLE_ANIMATION(Metang);

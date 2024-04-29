@@ -909,7 +909,7 @@ static const u16 sEyesmonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_EXVEEMON_VIRUS
 
-#if P_FAMILY_BAGON
+#if P_FAMILY_FLYMON
 static const u16 sSalamenceFormSpeciesIdTable[] = {
     SPECIES_SALAMENCE,
 #if P_MEGA_EVOLUTIONS
@@ -917,7 +917,7 @@ static const u16 sSalamenceFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_BAGON
+#endif //P_FAMILY_FLYMON
 
 #if P_FAMILY_BELDUM
 static const u16 sMetagrossFormSpeciesIdTable[] = {

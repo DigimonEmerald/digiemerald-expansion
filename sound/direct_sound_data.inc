@@ -2761,10 +2761,10 @@ Cry_Flybeemon::
 	.incbin "sound/direct_sound_samples/cries/flybeemon.bin"
 .endif @ P_FAMILY_FLYBEEMON
 
-.if P_FAMILY_BAGON == TRUE
+.if P_FAMILY_FLYMON == TRUE
 	.align 2
-Cry_Bagon::
-	.incbin "sound/direct_sound_samples/cries/bagon.bin"
+Cry_Flymon::
+	.incbin "sound/direct_sound_samples/cries/flymon.bin"
 
 	.align 2
 Cry_Shelgon::
@@ -2779,7 +2779,7 @@ Cry_Salamence::
 Cry_SalamenceMega::
 	.incbin "sound/direct_sound_samples/cries/salamence_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BAGON
+.endif @ P_FAMILY_FLYMON
 
 .if P_FAMILY_BELDUM == TRUE
 	.align 2

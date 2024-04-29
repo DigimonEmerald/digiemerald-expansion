@@ -373,7 +373,7 @@
 #define SPECIES_FLAWIZAMON                                368
 #define SPECIES_FLARIZAMON                               369
 #define SPECIES_FLYBEEMON                                 370
-#define SPECIES_BAGON                                   371
+#define SPECIES_FLYMON                                   371
 #define SPECIES_SHELGON                                 372
 #define SPECIES_SALAMENCE                               373
 #define SPECIES_BELDUM                                  374

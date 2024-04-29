@@ -8393,8 +8393,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_FLYBEEMON
 
-#if P_FAMILY_BAGON
-    [SPECIES_BAGON] =
+#if P_FAMILY_FLYMON
+    [SPECIES_FLYMON] =
     {
         .baseHP        = 45,
         .baseAttack    = 75,
@@ -8414,9 +8414,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON),
         .abilities = { ABILITY_ROCK_HEAD, ABILITY_NONE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Bagon"),
-        .cryId = CRY_BAGON,
-        .natDexNum = NATIONAL_DEX_BAGON,
+        .speciesName = _("Flymon"),
+        .cryId = CRY_FLYMON,
+        .natDexNum = NATIONAL_DEX_FLYMON,
         .categoryName = _("Rock Head"),
         .height = 6,
         .weight = 421,
@@ -8429,22 +8429,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Bagon,
+        .frontPic = gMonFrontPic_Flymon,
         .frontPicSize = MON_COORDS_SIZE(32, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Bagon,
+        .frontAnimFrames = sAnims_Flymon,
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Bagon,
+        .backPic = gMonBackPic_Flymon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Bagon,
-        .shinyPalette = gMonShinyPalette_Bagon,
-        .iconSprite = gMonIcon_Bagon,
+        .palette = gMonPalette_Flymon,
+        .shinyPalette = gMonShinyPalette_Flymon,
+        .iconSprite = gMonIcon_Flymon,
         .iconPalIndex = 0,
-        FOOTPRINT(Bagon)
-        .levelUpLearnset = sBagonLevelUpLearnset,
-        .teachableLearnset = sBagonTeachableLearnset,
+        FOOTPRINT(Flymon)
+        .levelUpLearnset = sFlymonLevelUpLearnset,
+        .teachableLearnset = sFlymonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SHELGON}),
     },
 
@@ -8621,7 +8621,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .formChangeTable = sSalamenceFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BAGON
+#endif //P_FAMILY_FLYMON
 
 #if P_FAMILY_BELDUM
     [SPECIES_BELDUM] =

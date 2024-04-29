@@ -5378,14 +5378,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_FLYBEEMON
 
-#if P_FAMILY_BAGON
-    const u32 gMonFrontPic_Bagon[] = INCBIN_U32("graphics/pokemon/bagon/anim_front.4bpp.lz");
-    const u32 gMonPalette_Bagon[] = INCBIN_U32("graphics/pokemon/bagon/normal.gbapal.lz");
-    const u32 gMonBackPic_Bagon[] = INCBIN_U32("graphics/pokemon/bagon/back.4bpp.lz");
-    const u32 gMonShinyPalette_Bagon[] = INCBIN_U32("graphics/pokemon/bagon/shiny.gbapal.lz");
-    const u8 gMonIcon_Bagon[] = INCBIN_U8("graphics/pokemon/bagon/icon.4bpp");
+#if P_FAMILY_FLYMON
+    const u32 gMonFrontPic_Flymon[] = INCBIN_U32("graphics/pokemon/flymon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Flymon[] = INCBIN_U32("graphics/pokemon/flymon/normal.gbapal.lz");
+    const u32 gMonBackPic_Flymon[] = INCBIN_U32("graphics/pokemon/flymon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Flymon[] = INCBIN_U32("graphics/pokemon/flymon/shiny.gbapal.lz");
+    const u8 gMonIcon_Flymon[] = INCBIN_U8("graphics/pokemon/flymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Bagon[] = INCBIN_U8("graphics/pokemon/bagon/footprint.1bpp");
+    const u8 gMonFootprint_Flymon[] = INCBIN_U8("graphics/pokemon/flymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Shelgon[] = INCBIN_U32("graphics/pokemon/shelgon/anim_front.4bpp.lz");
@@ -5413,7 +5413,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_SalamenceMega[] = INCBIN_U32("graphics/pokemon/salamence/mega/shiny.gbapal.lz");
     const u8 gMonIcon_SalamenceMega[] = INCBIN_U8("graphics/pokemon/salamence/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BAGON
+#endif //P_FAMILY_FLYMON
 
 #if P_FAMILY_BELDUM
     const u32 gMonFrontPic_Beldum[] = INCBIN_U32("graphics/pokemon/beldum/anim_front.4bpp.lz");

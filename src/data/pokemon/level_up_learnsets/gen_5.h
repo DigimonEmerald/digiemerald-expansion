@@ -9125,8 +9125,8 @@ static const struct LevelUpMove sFlybeemonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_FLYBEEMON
 
-#if P_FAMILY_BAGON
-static const struct LevelUpMove sBagonLevelUpLearnset[] = {
+#if P_FAMILY_FLYMON
+static const struct LevelUpMove sFlymonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_RAGE),
     LEVEL_UP_MOVE( 5, MOVE_BITE),
     LEVEL_UP_MOVE(10, MOVE_LEER),
@@ -9185,7 +9185,7 @@ static const struct LevelUpMove sSalamenceLevelUpLearnset[] = {
     LEVEL_UP_MOVE(80, MOVE_DRAGON_TAIL),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_BAGON
+#endif //P_FAMILY_FLYMON
 
 #if P_FAMILY_BELDUM
 static const struct LevelUpMove sBeldumLevelUpLearnset[] = {

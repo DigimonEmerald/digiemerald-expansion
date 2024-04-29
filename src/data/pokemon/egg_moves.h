@@ -3013,8 +3013,8 @@ const u16 gEggMoves[] = {
         MOVE_ENTRAINMENT),
 #endif //P_FAMILY_FLYBEEMON
 
-#if P_FAMILY_BAGON
-    egg_moves(BAGON,
+#if P_FAMILY_FLYMON
+    egg_moves(FLYMON,
         MOVE_HYDRO_PUMP,
         MOVE_THRASH,
         MOVE_DRAGON_RAGE,
@@ -3025,7 +3025,7 @@ const u16 gEggMoves[] = {
         MOVE_DRAGON_PULSE,
         MOVE_ENDURE,
         MOVE_DEFENSE_CURL),
-#endif //P_FAMILY_BAGON
+#endif //P_FAMILY_FLYMON
 
 #if P_FAMILY_TURTWIG
     egg_moves(TURTWIG,

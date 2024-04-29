@@ -1018,14 +1018,14 @@ gCryTable::
 .if P_FAMILY_FLYBEEMON == TRUE
 	cry Cry_Flybeemon
 .endif @ P_FAMILY_FLYBEEMON
-.if P_FAMILY_BAGON == TRUE
-	cry Cry_Bagon
+.if P_FAMILY_FLYMON == TRUE
+	cry Cry_Flymon
 	cry Cry_Shelgon
 	cry Cry_Salamence
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_SalamenceMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BAGON
+.endif @ P_FAMILY_FLYMON
 .if P_FAMILY_BELDUM == TRUE
 	cry Cry_Beldum
 	cry Cry_Metang
@@ -3444,14 +3444,14 @@ gCryTable_Reverse::
 .if P_FAMILY_FLYBEEMON == TRUE
 	cry_reverse Cry_Flybeemon
 .endif @ P_FAMILY_FLYBEEMON
-.if P_FAMILY_BAGON == TRUE
-	cry_reverse Cry_Bagon
+.if P_FAMILY_FLYMON == TRUE
+	cry_reverse Cry_Flymon
 	cry_reverse Cry_Shelgon
 	cry_reverse Cry_Salamence
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_SalamenceMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BAGON
+.endif @ P_FAMILY_FLYMON
 .if P_FAMILY_BELDUM == TRUE
 	cry_reverse Cry_Beldum
 	cry_reverse Cry_Metang
