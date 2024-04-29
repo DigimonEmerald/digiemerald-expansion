@@ -1067,12 +1067,12 @@ gCryTable::
 	cry Cry_GekomonPrimal
 .endif @ P_PRIMAL_REVERSIONS
 .endif @ P_FAMILY_GEKOMON
-.if P_FAMILY_RAYQUAZA == TRUE
-	cry Cry_Rayquaza
+.if P_FAMILY_GEOGREYMON == TRUE
+	cry Cry_Geogreymon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_RayquazaMega
+	cry Cry_GeogreymonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_RAYQUAZA
+.endif @ P_FAMILY_GEOGREYMON
 .if P_FAMILY_JIRACHI == TRUE
 	cry Cry_Jirachi
 .endif @ P_FAMILY_JIRACHI
@@ -3493,12 +3493,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_GekomonPrimal
 .endif @ P_PRIMAL_REVERSIONS
 .endif @ P_FAMILY_GEKOMON
-.if P_FAMILY_RAYQUAZA == TRUE
-	cry_reverse Cry_Rayquaza
+.if P_FAMILY_GEOGREYMON == TRUE
+	cry_reverse Cry_Geogreymon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_RayquazaMega
+	cry_reverse Cry_GeogreymonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_RAYQUAZA
+.endif @ P_FAMILY_GEOGREYMON
 .if P_FAMILY_JIRACHI == TRUE
 	cry_reverse Cry_Jirachi
 .endif @ P_FAMILY_JIRACHI

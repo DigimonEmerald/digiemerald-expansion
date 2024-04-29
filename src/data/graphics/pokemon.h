@@ -5561,24 +5561,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_PRIMAL_REVERSIONS
 #endif //P_FAMILY_GEKOMON
 
-#if P_FAMILY_RAYQUAZA
-    const u32 gMonFrontPic_Rayquaza[] = INCBIN_U32("graphics/pokemon/rayquaza/anim_front.4bpp.lz");
-    const u32 gMonPalette_Rayquaza[] = INCBIN_U32("graphics/pokemon/rayquaza/normal.gbapal.lz");
-    const u32 gMonBackPic_Rayquaza[] = INCBIN_U32("graphics/pokemon/rayquaza/back.4bpp.lz");
-    const u32 gMonShinyPalette_Rayquaza[] = INCBIN_U32("graphics/pokemon/rayquaza/shiny.gbapal.lz");
-    const u8 gMonIcon_Rayquaza[] = INCBIN_U8("graphics/pokemon/rayquaza/icon.4bpp");
+#if P_FAMILY_GEOGREYMON
+    const u32 gMonFrontPic_Geogreymon[] = INCBIN_U32("graphics/pokemon/geogreymon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Geogreymon[] = INCBIN_U32("graphics/pokemon/geogreymon/normal.gbapal.lz");
+    const u32 gMonBackPic_Geogreymon[] = INCBIN_U32("graphics/pokemon/geogreymon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Geogreymon[] = INCBIN_U32("graphics/pokemon/geogreymon/shiny.gbapal.lz");
+    const u8 gMonIcon_Geogreymon[] = INCBIN_U8("graphics/pokemon/geogreymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Rayquaza[] = INCBIN_U8("graphics/pokemon/rayquaza/footprint.1bpp");
+    const u8 gMonFootprint_Geogreymon[] = INCBIN_U8("graphics/pokemon/geogreymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_RayquazaMega[] = INCBIN_U32("graphics/pokemon/rayquaza/mega/front.4bpp.lz");
-    const u32 gMonPalette_RayquazaMega[] = INCBIN_U32("graphics/pokemon/rayquaza/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_RayquazaMega[] = INCBIN_U32("graphics/pokemon/rayquaza/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_RayquazaMega[] = INCBIN_U32("graphics/pokemon/rayquaza/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_RayquazaMega[] = INCBIN_U8("graphics/pokemon/rayquaza/mega/icon.4bpp");
+    const u32 gMonFrontPic_GeogreymonMega[] = INCBIN_U32("graphics/pokemon/geogreymon/mega/front.4bpp.lz");
+    const u32 gMonPalette_GeogreymonMega[] = INCBIN_U32("graphics/pokemon/geogreymon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_GeogreymonMega[] = INCBIN_U32("graphics/pokemon/geogreymon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_GeogreymonMega[] = INCBIN_U32("graphics/pokemon/geogreymon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_GeogreymonMega[] = INCBIN_U8("graphics/pokemon/geogreymon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_RAYQUAZA
+#endif //P_FAMILY_GEOGREYMON
 
 #if P_FAMILY_JIRACHI
     const u32 gMonFrontPic_Jirachi[] = INCBIN_U32("graphics/pokemon/jirachi/anim_front.4bpp.lz");

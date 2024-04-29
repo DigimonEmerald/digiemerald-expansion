@@ -349,7 +349,7 @@ const u8 gBattleBackgroundNames[][30] =
     [MAP_BATTLE_SCENE_WALLACE]  = _("WALLACE                 "),
     [MAP_BATTLE_SCENE_GEKOMON]  = _("GEKOMON                 "),
     [MAP_BATTLE_SCENE_GATOMON_X]   = _("GATOMON_X                  "),
-    [MAP_BATTLE_SCENE_RAYQUAZA] = _("RAYQUAZA                "),
+    [MAP_BATTLE_SCENE_GEOGREYMON] = _("GEOGREYMON                "),
 };
 const u8 gBattleBackgroundTerrainNames[][26] =
 {
@@ -874,10 +874,10 @@ static void LoadBattleBg(u8 battleBgType, u8 battleTerrain)
         LZDecompressVram(gBattleTerrainTilemap_Water, (void*)(BG_SCREEN_ADDR(26)));
         LoadCompressedPalette(gBattleTerrainPalette_Gatomon_x, 0x20, 0x60);
         break;
-    case MAP_BATTLE_SCENE_RAYQUAZA:
-        LZDecompressVram(gBattleTerrainTiles_Rayquaza, (void*)(BG_CHAR_ADDR(2)));
-        LZDecompressVram(gBattleTerrainTilemap_Rayquaza, (void*)(BG_SCREEN_ADDR(26)));
-        LoadCompressedPalette(gBattleTerrainPalette_Rayquaza, 0x20, 0x60);
+    case MAP_BATTLE_SCENE_GEOGREYMON:
+        LZDecompressVram(gBattleTerrainTiles_Geogreymon, (void*)(BG_CHAR_ADDR(2)));
+        LZDecompressVram(gBattleTerrainTilemap_Geogreymon, (void*)(BG_SCREEN_ADDR(26)));
+        LoadCompressedPalette(gBattleTerrainPalette_Geogreymon, 0x20, 0x60);
         break;
     }
 }
@@ -909,7 +909,7 @@ static void UpdateBattleBg(u8 taskId, bool8 increment)
         else
         {
             if (data->battleTerrain == BATTLE_TERRAIN_GRASS)
-                data->battleBgType = MAP_BATTLE_SCENE_RAYQUAZA;
+                data->battleBgType = MAP_BATTLE_SCENE_GEOGREYMON;
             else
                 data->battleTerrain -= 1;
         }
@@ -924,7 +924,7 @@ static void UpdateBattleBg(u8 taskId, bool8 increment)
             data->battleTerrain = BATTLE_TERRAIN_PLAIN;
         }
     }
-    else if (data->battleBgType == MAP_BATTLE_SCENE_RAYQUAZA)
+    else if (data->battleBgType == MAP_BATTLE_SCENE_GEOGREYMON)
     {
         if (increment)
         {

@@ -2869,17 +2869,17 @@ Cry_GekomonPrimal::
 .endif @ P_PRIMAL_REVERSIONS
 .endif @ P_FAMILY_GEKOMON
 
-.if P_FAMILY_RAYQUAZA == TRUE
+.if P_FAMILY_GEOGREYMON == TRUE
 	.align 2
-Cry_Rayquaza::
-	.incbin "sound/direct_sound_samples/cries/rayquaza.bin"
+Cry_Geogreymon::
+	.incbin "sound/direct_sound_samples/cries/geogreymon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_RayquazaMega::
-	.incbin "sound/direct_sound_samples/cries/rayquaza_mega.bin"
+Cry_GeogreymonMega::
+	.incbin "sound/direct_sound_samples/cries/geogreymon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_RAYQUAZA
+.endif @ P_FAMILY_GEOGREYMON
 
 .if P_FAMILY_JIRACHI == TRUE
 	.align 2

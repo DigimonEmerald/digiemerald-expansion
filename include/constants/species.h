@@ -386,7 +386,7 @@
 #define SPECIES_GATOMON                                  381
 #define SPECIES_GATOMON_X                                  382
 #define SPECIES_GEKOMON                                 383
-#define SPECIES_RAYQUAZA                                384
+#define SPECIES_GEOGREYMON                                384
 #define SPECIES_JIRACHI                                 385
 #define SPECIES_DEOXYS                                  SPECIES_DEOXYS_NORMAL
 #define SPECIES_DEOXYS_NORMAL                           386
@@ -1011,7 +1011,7 @@
 #define SPECIES_GALLADE_MEGA                            950
 #define SPECIES_AUDINO_MEGA                             951
 #define SPECIES_DIANCIE_MEGA                            952
-#define SPECIES_RAYQUAZA_MEGA                           953
+#define SPECIES_GEOGREYMON_MEGA                           953
 #define SPECIES_GATOMON_X_PRIMAL                           954
 #define SPECIES_GEKOMON_PRIMAL                          955
 #define SPECIES_CHOROMON_ALOLAN                          956

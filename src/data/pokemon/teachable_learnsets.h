@@ -17775,8 +17775,8 @@ static const u16 sGekomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GEKOMON
 
-#if P_FAMILY_RAYQUAZA
-static const u16 sRayquazaTeachableLearnset[] = {
+#if P_FAMILY_GEOGREYMON
+static const u16 sGeogreymonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
@@ -17826,7 +17826,7 @@ static const u16 sRayquazaTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_RAYQUAZA
+#endif //P_FAMILY_GEOGREYMON
 
 #if P_FAMILY_JIRACHI
 static const u16 sJirachiTeachableLearnset[] = {

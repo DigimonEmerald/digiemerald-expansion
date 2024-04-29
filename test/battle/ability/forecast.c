@@ -269,7 +269,7 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back to normal under Air Lock")
     GIVEN {
         PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); }
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_RAYQUAZA);
+        OPPONENT(SPECIES_GEOGREYMON);
     } WHEN {
         TURN { MOVE(player, MOVE_RAIN_DANCE); }
         TURN { SWITCH(opponent, 1); }

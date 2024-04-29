@@ -352,7 +352,7 @@ SECTIONS {
         src/faraway_island.o(.text);
         src/ereader_screen.o(.text);
         src/trainer_hill.o(.text);
-        src/rayquaza_scene.o(.text);
+        src/geogreymon_scene.o(.text);
         src/walda_phrase.o(.text);
         src/contest_link_util.o(.text);
         src/gym_leader_rematch.o(.text);
@@ -714,7 +714,7 @@ SECTIONS {
         src/faraway_island.o(.rodata);
         src/ereader_screen.o(.rodata);
         src/trainer_hill.o(.rodata);
-        src/rayquaza_scene.o(.rodata);
+        src/geogreymon_scene.o(.rodata);
         src/walda_phrase.o(.rodata);
         src/gym_leader_rematch.o(.rodata);
         src/battle_transition_frontier.o(.rodata);

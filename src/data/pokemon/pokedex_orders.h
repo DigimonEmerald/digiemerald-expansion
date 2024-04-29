@@ -729,7 +729,7 @@ const u16 gPokedexOrder_Alphabetical[] =
     NATIONAL_DEX_NYAROMON,
     NATIONAL_DEX_MOKUMON,
     NATIONAL_DEX_CHOROMON,
-    NATIONAL_DEX_RAYQUAZA,
+    NATIONAL_DEX_GEOGREYMON,
     NATIONAL_DEX_GARGOYLMON,
     NATIONAL_DEX_REGIDRAGO,
     NATIONAL_DEX_REGIELEKI,
@@ -2725,7 +2725,7 @@ const u16 gPokedexOrder_Weight[] =
     // 451.9 lbs / 205.0 kg
     NATIONAL_DEX_GARURUMON,
     // 455.3 lbs / 206.5 kg
-    NATIONAL_DEX_RAYQUAZA,
+    NATIONAL_DEX_GEOGREYMON,
     // 457.5 lbs / 207.5 kg
     //NATIONAL_DEX_KOMMO_O_TOTEM_SIZED,
     // 463.0 lbs / 210.0 kg
@@ -2861,7 +2861,7 @@ const u16 gPokedexOrder_Weight[] =
     // 839.3 lbs / 380.7 kg
     NATIONAL_DEX_IRON_HANDS,
     // 864.2 lbs / 392.0 kg
-    //NATIONAL_DEX_RAYQUAZA_MEGA,
+    //NATIONAL_DEX_GEOGREYMON_MEGA,
     // 870.8 lbs / 395.0 kg
     //NATIONAL_DEX_BLGROWLMON_MEGA,
     // 877.4 lbs / 398.0 kg
@@ -4279,7 +4279,7 @@ const u16 gPokedexOrder_Height[] =
     // 22'08" / 6.9m
     //NATIONAL_DEX_GIRATINA_ORIGIN,
     // 23'00" / 7.0m
-    NATIONAL_DEX_RAYQUAZA,
+    NATIONAL_DEX_GEOGREYMON,
     //NATIONAL_DEX_DIALGA_ORIGIN,
     // 24'07" / 7.5m
     //NATIONAL_DEX_NECROZMA_ULTRA,
@@ -4295,7 +4295,7 @@ const u16 gPokedexOrder_Height[] =
     // 34'05" / 10.5m
     //NATIONAL_DEX_KODEKACMON_MEGA,
     // 35'05" / 10.8m
-    //NATIONAL_DEX_RAYQUAZA_MEGA,
+    //NATIONAL_DEX_GEOGREYMON_MEGA,
     // 35'09" / 10.9m
     //NATIONAL_DEX_AGUMON_ALOLAN,
     // 12m

@@ -344,7 +344,7 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(GATOMON),
     HOENN_TO_NATIONAL(GATOMON_X),
     HOENN_TO_NATIONAL(GEKOMON),
-    HOENN_TO_NATIONAL(RAYQUAZA),
+    HOENN_TO_NATIONAL(GEOGREYMON),
     HOENN_TO_NATIONAL(JIRACHI),
     HOENN_TO_NATIONAL(DEOXYS),
 };
@@ -5381,7 +5381,7 @@ u16 GetBattleBGM(void)
     {
         switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
         {
-        case SPECIES_RAYQUAZA:
+        case SPECIES_GEOGREYMON:
             return MUS_VS_RAYQUAZA;
         case SPECIES_GATOMON_X:
         case SPECIES_GEKOMON:

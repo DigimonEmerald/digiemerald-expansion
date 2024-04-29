@@ -969,15 +969,15 @@ static const u16 sGekomonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_GEKOMON
 
-#if P_FAMILY_RAYQUAZA
-static const u16 sRayquazaFormSpeciesIdTable[] = {
-    SPECIES_RAYQUAZA,
+#if P_FAMILY_GEOGREYMON
+static const u16 sGeogreymonFormSpeciesIdTable[] = {
+    SPECIES_GEOGREYMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_RAYQUAZA_MEGA,
+    SPECIES_GEOGREYMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_RAYQUAZA
+#endif //P_FAMILY_GEOGREYMON
 
 #if P_FAMILY_DEOXYS
 static const u16 sDeoxysFormSpeciesIdTable[] = {

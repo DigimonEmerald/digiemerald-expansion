@@ -772,10 +772,10 @@ void DrawMainBattleBackground(void)
             LZDecompressVram(gBattleTerrainTilemap_Water, (void*)(BG_SCREEN_ADDR(26)));
             LoadCompressedPalette(gBattleTerrainPalette_Gatomon_x, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             break;
-        case SPECIES_RAYQUAZA:
-            LZDecompressVram(gBattleTerrainTiles_Rayquaza, (void*)(BG_CHAR_ADDR(2)));
-            LZDecompressVram(gBattleTerrainTilemap_Rayquaza, (void*)(BG_SCREEN_ADDR(26)));
-            LoadCompressedPalette(gBattleTerrainPalette_Rayquaza, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+        case SPECIES_GEOGREYMON:
+            LZDecompressVram(gBattleTerrainTiles_Geogreymon, (void*)(BG_CHAR_ADDR(2)));
+            LZDecompressVram(gBattleTerrainTilemap_Geogreymon, (void*)(BG_SCREEN_ADDR(26)));
+            LoadCompressedPalette(gBattleTerrainPalette_Geogreymon, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             break;
         default:
             LZDecompressVram(sBattleTerrainTable[gBattleTerrain].tileset, (void *)(BG_CHAR_ADDR(2)));
@@ -1175,9 +1175,9 @@ void DrawBattleEntryBackground(void)
             LZDecompressVram(gBattleTerrainAnimTiles_Underwater, (void*)(BG_CHAR_ADDR(1)));
             LZDecompressVram(gBattleTerrainAnimTilemap_Underwater, (void*)(BG_SCREEN_ADDR(28)));
             break;
-        case SPECIES_RAYQUAZA:
-            LZDecompressVram(gBattleTerrainAnimTiles_Rayquaza, (void*)(BG_CHAR_ADDR(1)));
-            LZDecompressVram(gBattleTerrainAnimTilemap_Rayquaza, (void*)(BG_SCREEN_ADDR(28)));
+        case SPECIES_GEOGREYMON:
+            LZDecompressVram(gBattleTerrainAnimTiles_Geogreymon, (void*)(BG_CHAR_ADDR(1)));
+            LZDecompressVram(gBattleTerrainAnimTilemap_Geogreymon, (void*)(BG_SCREEN_ADDR(28)));
             break;
         default:
             LZDecompressVram(sBattleTerrainTable[gBattleTerrain].entryTileset, (void *)(BG_CHAR_ADDR(1)));

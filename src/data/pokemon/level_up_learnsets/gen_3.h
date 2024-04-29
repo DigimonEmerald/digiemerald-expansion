@@ -7675,8 +7675,8 @@ static const struct LevelUpMove sGekomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_GEKOMON
 
-#if P_FAMILY_RAYQUAZA
-static const struct LevelUpMove sRayquazaLevelUpLearnset[] = {
+#if P_FAMILY_GEOGREYMON
+static const struct LevelUpMove sGeogreymonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TWISTER),
     LEVEL_UP_MOVE( 5, MOVE_SCARY_FACE),
     LEVEL_UP_MOVE(15, MOVE_ANCIENT_POWER),
@@ -7690,7 +7690,7 @@ static const struct LevelUpMove sRayquazaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(75, MOVE_HYPER_BEAM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_RAYQUAZA
+#endif //P_FAMILY_GEOGREYMON
 
 #if P_FAMILY_JIRACHI
 static const struct LevelUpMove sJirachiLevelUpLearnset[] = {

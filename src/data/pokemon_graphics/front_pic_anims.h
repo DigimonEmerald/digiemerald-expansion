@@ -5173,8 +5173,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(GekomonPrimal);
 #endif //P_PRIMAL_REVERSIONS
 #endif //P_FAMILY_GEKOMON
 
-#if P_FAMILY_RAYQUAZA
-static const union AnimCmd sAnim_Rayquaza_1[] =
+#if P_FAMILY_GEOGREYMON
+static const union AnimCmd sAnim_Geogreymon_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 8),
@@ -5185,9 +5185,9 @@ static const union AnimCmd sAnim_Rayquaza_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(RayquazaMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(GeogreymonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_RAYQUAZA
+#endif //P_FAMILY_GEOGREYMON
 
 #if P_FAMILY_JIRACHI
 static const union AnimCmd sAnim_Jirachi_1[] =
@@ -11368,12 +11368,12 @@ SINGLE_ANIMATION(Gekomon);
 SINGLE_ANIMATION(GekomonPrimal);
 #endif //P_PRIMAL_REVERSIONS
 #endif //P_FAMILY_GEKOMON
-#if P_FAMILY_RAYQUAZA
-SINGLE_ANIMATION(Rayquaza);
+#if P_FAMILY_GEOGREYMON
+SINGLE_ANIMATION(Geogreymon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(RayquazaMega);
+SINGLE_ANIMATION(GeogreymonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_RAYQUAZA
+#endif //P_FAMILY_GEOGREYMON
 #if P_FAMILY_JIRACHI
 SINGLE_ANIMATION(Jirachi);
 #endif //P_FAMILY_JIRACHI

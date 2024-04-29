@@ -9527,8 +9527,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_PRIMAL_REVERSIONS
 #endif //P_FAMILY_GEKOMON
 
-#if P_FAMILY_RAYQUAZA
-    [SPECIES_RAYQUAZA] =
+#if P_FAMILY_GEOGREYMON
+    [SPECIES_GEOGREYMON] =
     {
         .baseHP        = 105,
         .baseAttack    = 150,
@@ -9554,9 +9554,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_AIR_LOCK, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Rayquaza"),
-        .cryId = CRY_RAYQUAZA,
-        .natDexNum = NATIONAL_DEX_RAYQUAZA,
+        .speciesName = _("Geogreymon"),
+        .cryId = CRY_GEOGREYMON,
+        .natDexNum = NATIONAL_DEX_GEOGREYMON,
         .categoryName = _("Sky High"),
         .height = 70,
         .weight = 2065,
@@ -9569,31 +9569,31 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 448,
         .trainerOffset = 12,
-        .frontPic = gMonFrontPic_Rayquaza,
+        .frontPic = gMonFrontPic_Geogreymon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Rayquaza,
+        .frontAnimFrames = sAnims_Geogreymon,
         .frontAnimId = ANIM_H_SHAKE,
         .frontAnimDelay = 60,
         .enemyMonElevation = 6,
-        .backPic = gMonBackPic_Rayquaza,
+        .backPic = gMonBackPic_Geogreymon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_GROW_STUTTER,
-        .palette = gMonPalette_Rayquaza,
-        .shinyPalette = gMonShinyPalette_Rayquaza,
-        .iconSprite = gMonIcon_Rayquaza,
+        .palette = gMonPalette_Geogreymon,
+        .shinyPalette = gMonShinyPalette_Geogreymon,
+        .iconSprite = gMonIcon_Geogreymon,
         .iconPalIndex = 1,
-        FOOTPRINT(Rayquaza)
+        FOOTPRINT(Geogreymon)
         .isLegendary = TRUE,
-        .levelUpLearnset = sRayquazaLevelUpLearnset,
-        .teachableLearnset = sRayquazaTeachableLearnset,
-        .formSpeciesIdTable = sRayquazaFormSpeciesIdTable,
-        .formChangeTable = sRayquazaFormChangeTable,
+        .levelUpLearnset = sGeogreymonLevelUpLearnset,
+        .teachableLearnset = sGeogreymonTeachableLearnset,
+        .formSpeciesIdTable = sGeogreymonFormSpeciesIdTable,
+        .formChangeTable = sGeogreymonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_RAYQUAZA_MEGA] =
+    [SPECIES_GEOGREYMON_MEGA] =
     {
         .baseHP        = 105,
         .baseAttack    = 180,
@@ -9613,9 +9613,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_DELTA_STREAM, ABILITY_DELTA_STREAM, ABILITY_DELTA_STREAM },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Rayquaza"),
-        .cryId = CRY_RAYQUAZA,
-        .natDexNum = NATIONAL_DEX_RAYQUAZA,
+        .speciesName = _("Geogreymon"),
+        .cryId = CRY_GEOGREYMON,
+        .natDexNum = NATIONAL_DEX_GEOGREYMON,
         .categoryName = _("Sky High"),
         .height = 108,
         .weight = 3920,
@@ -9623,35 +9623,35 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "Particles stream from the filaments that\n"
             "extend from its jaw. They can control the\n"
             "density and humidity of the air, allowing\n"
-            "Rayquaza to manipulate the weather."),
+            "Geogreymon to manipulate the weather."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 448,
         .trainerOffset = 12,
-        .frontPic = gMonFrontPic_RayquazaMega,
+        .frontPic = gMonFrontPic_GeogreymonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_RayquazaMega,
+        .frontAnimFrames = sAnims_GeogreymonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 4,
-        .backPic = gMonBackPic_RayquazaMega,
+        .backPic = gMonBackPic_GeogreymonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_GREEN,
-        .palette = gMonPalette_RayquazaMega,
-        .shinyPalette = gMonShinyPalette_RayquazaMega,
-        .iconSprite = gMonIcon_RayquazaMega,
+        .palette = gMonPalette_GeogreymonMega,
+        .shinyPalette = gMonShinyPalette_GeogreymonMega,
+        .iconSprite = gMonIcon_GeogreymonMega,
         .iconPalIndex = 1,
-        FOOTPRINT(Rayquaza)
+        FOOTPRINT(Geogreymon)
         .isLegendary = TRUE,
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sRayquazaLevelUpLearnset,
-        .teachableLearnset = sRayquazaTeachableLearnset,
-        .formSpeciesIdTable = sRayquazaFormSpeciesIdTable,
-        .formChangeTable = sRayquazaFormChangeTable,
+        .levelUpLearnset = sGeogreymonLevelUpLearnset,
+        .teachableLearnset = sGeogreymonTeachableLearnset,
+        .formSpeciesIdTable = sGeogreymonFormSpeciesIdTable,
+        .formChangeTable = sGeogreymonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_RAYQUAZA
+#endif //P_FAMILY_GEOGREYMON
 
 #if P_FAMILY_JIRACHI
     [SPECIES_JIRACHI] =

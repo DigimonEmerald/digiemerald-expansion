@@ -55,19 +55,19 @@ DOUBLE_BATTLE_TEST("Mega Evolution's order is determined by Speed - player faste
     }
 }
 
-SINGLE_BATTLE_TEST("Rayquaza can Mega Evolve knowing Dragon Ascent")
+SINGLE_BATTLE_TEST("Geogreymon can Mega Evolve knowing Dragon Ascent")
 {
     GIVEN {
-        PLAYER(SPECIES_RAYQUAZA) { Moves(MOVE_DRAGON_ASCENT, MOVE_CELEBRATE); }
+        PLAYER(SPECIES_GEOGREYMON) { Moves(MOVE_DRAGON_ASCENT, MOVE_CELEBRATE); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, megaEvolve: TRUE); }
     } SCENE {
-        MESSAGE("1's fervent wish has reached Rayquaza!");
+        MESSAGE("1's fervent wish has reached Geogreymon!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, player);
-        MESSAGE("Rayquaza has Mega Evolved into Mega Rayquaza!");
+        MESSAGE("Geogreymon has Mega Evolved into Mega Geogreymon!");
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_RAYQUAZA_MEGA);
+        EXPECT_EQ(player->species, SPECIES_GEOGREYMON_MEGA);
     }
 }
 
@@ -136,20 +136,20 @@ DOUBLE_BATTLE_TEST("Mega Evolution happens after switching, but before Focus Pun
 SINGLE_BATTLE_TEST("Regular Mega Evolution and Fervent Wish Mega Evolution can happen on the same turn")
 {
     GIVEN {
-        PLAYER(SPECIES_RAYQUAZA) { Moves(MOVE_DRAGON_ASCENT, MOVE_CELEBRATE); Speed(3); }
+        PLAYER(SPECIES_GEOGREYMON) { Moves(MOVE_DRAGON_ASCENT, MOVE_CELEBRATE); Speed(3); }
         OPPONENT(SPECIES_ARCADIAMON_CHAMPION) { Item(ITEM_ARCADIAMON_CHAMPIONITE); Speed(2); }
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, megaEvolve: TRUE); MOVE(opponent, MOVE_CELEBRATE, megaEvolve: TRUE); }
     } SCENE {
-        MESSAGE("1's fervent wish has reached Rayquaza!");
+        MESSAGE("1's fervent wish has reached Geogreymon!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, player);
-        MESSAGE("Rayquaza has Mega Evolved into Mega Rayquaza!");
+        MESSAGE("Geogreymon has Mega Evolved into Mega Geogreymon!");
 
         MESSAGE("Foe Arcadiamon_champion's Arcadiamon_championite is reacting to 2's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponent);
         MESSAGE("Foe Arcadiamon_champion has Mega Evolved into Mega Arcadiamon_champion!");
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_RAYQUAZA_MEGA);
+        EXPECT_EQ(player->species, SPECIES_GEOGREYMON_MEGA);
         EXPECT_EQ(opponent->species, SPECIES_ARCADIAMON_CHAMPION_MEGA);
     }
 }

@@ -255,15 +255,15 @@ DOUBLE_BATTLE_TEST("Roost suppresses the user's not-yet-aquired Flying-type this
 SINGLE_BATTLE_TEST("Roost prevents a Flying-type user from being protected by Delta Stream")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_RAYQUAZA].types[1] == TYPE_FLYING);
-        PLAYER(SPECIES_RAYQUAZA) { HP(1); Ability(ABILITY_DELTA_STREAM); }
+        ASSUME(gSpeciesInfo[SPECIES_GEOGREYMON].types[1] == TYPE_FLYING);
+        PLAYER(SPECIES_GEOGREYMON) { HP(1); Ability(ABILITY_DELTA_STREAM); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST); MOVE(opponent, MOVE_ICE_BEAM); }
     } SCENE {
-        MESSAGE("Rayquaza used Roost!");
+        MESSAGE("Geogreymon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Rayquaza regained health!");
+        MESSAGE("Geogreymon regained health!");
         MESSAGE("Foe Lopmonx used Ice Beam!");
         NOT MESSAGE("The mysterious strong winds weakened the attack!");
     }

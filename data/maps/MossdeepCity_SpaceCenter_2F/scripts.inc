@@ -329,23 +329,23 @@ MossdeepCity_SpaceCenter_2F_EventScript_StevenFacePlayerWest::
 	turnobject LOCALID_STEVEN, DIR_EAST
 	return
 
-MossdeepCity_SpaceCenter_2F_EventScript_RivalRayquazaCall::
+MossdeepCity_SpaceCenter_2F_EventScript_RivalGeogreymonCall::
 	lockall
 	checkplayergender
-	call_if_eq VAR_RESULT, MALE, MossdeepCity_SpaceCenter_2F_EventScript_MayRayquazaCall
-	call_if_eq VAR_RESULT, FEMALE, MossdeepCity_SpaceCenter_2F_EventScript_BrendanRayquazaCall
+	call_if_eq VAR_RESULT, MALE, MossdeepCity_SpaceCenter_2F_EventScript_MayGeogreymonCall
+	call_if_eq VAR_RESULT, FEMALE, MossdeepCity_SpaceCenter_2F_EventScript_BrendanGeogreymonCall
 	closemessage
 	clearflag FLAG_DEFEATED_MAGMA_SPACE_CENTER
 	releaseall
 	end
 
-MossdeepCity_SpaceCenter_2F_EventScript_MayRayquazaCall::
-	pokenavcall MatchCall_Text_MayRayquazaCall
+MossdeepCity_SpaceCenter_2F_EventScript_MayGeogreymonCall::
+	pokenavcall MatchCall_Text_MayGeogreymonCall
 	waitmessage
 	return
 
-MossdeepCity_SpaceCenter_2F_EventScript_BrendanRayquazaCall::
-	pokenavcall MatchCall_Text_BrendanRayquazaCall
+MossdeepCity_SpaceCenter_2F_EventScript_BrendanGeogreymonCall::
+	pokenavcall MatchCall_Text_BrendanGeogreymonCall
 	waitmessage
 	return
 

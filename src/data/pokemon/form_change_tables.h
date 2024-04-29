@@ -484,14 +484,14 @@ static const struct FormChange sGekomonFormChangeTable[] = {
 };
 #endif //P_FAMILY_GEKOMON
 
-#if P_FAMILY_RAYQUAZA
-static const struct FormChange sRayquazaFormChangeTable[] = {
+#if P_FAMILY_GEOGREYMON
+static const struct FormChange sGeogreymonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_MOVE,    SPECIES_RAYQUAZA_MEGA, MOVE_DRAGON_ASCENT},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_MOVE,    SPECIES_GEOGREYMON_MEGA, MOVE_DRAGON_ASCENT},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_RAYQUAZA
+#endif //P_FAMILY_GEOGREYMON
 
 #if P_FAMILY_DEOXYS
 static const struct FormChange sDeoxysNormalFormChangeTable[] = {

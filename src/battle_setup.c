@@ -604,9 +604,9 @@ void BattleSetup_StartLegendaryBattle(void)
     case SPECIES_GATOMON_X_PRIMAL:
         CreateBattleStartTask(B_TRANSITION_GATOMON_X, MUS_VS_KYOGRE_GROUDON);
         break;
-    case SPECIES_RAYQUAZA:
-    case SPECIES_RAYQUAZA_MEGA:
-        CreateBattleStartTask(B_TRANSITION_RAYQUAZA, MUS_VS_RAYQUAZA);
+    case SPECIES_GEOGREYMON:
+    case SPECIES_GEOGREYMON_MEGA:
+        CreateBattleStartTask(B_TRANSITION_GEOGREYMON, MUS_VS_RAYQUAZA);
         break;
     case SPECIES_DEOXYS_NORMAL:
     case SPECIES_DEOXYS_ATTACK:
