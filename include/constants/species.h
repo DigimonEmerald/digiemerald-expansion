@@ -306,7 +306,7 @@
 #define SPECIES_BLGARGOMON                                 302
 #define SPECIES_BLGARURMON                                  303
 #define SPECIES_BLKGATOMON                                    304
-#define SPECIES_LAIRON                                  305
+#define SPECIES_BLKGATOMON_UVER                                  305
 #define SPECIES_AGGRON                                  306
 #define SPECIES_MEDITITE                                307
 #define SPECIES_MEDICHAM                                308

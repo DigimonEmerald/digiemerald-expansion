@@ -834,7 +834,7 @@ gCryTable::
 .endif @ P_FAMILY_BLGARURMON
 .if P_FAMILY_BLKGATOMON == TRUE
 	cry Cry_Blkgatomon
-	cry Cry_Lairon
+	cry Cry_Blkgatomon_uver
 	cry Cry_Aggron
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_AggronMega
@@ -3260,7 +3260,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_BLGARURMON
 .if P_FAMILY_BLKGATOMON == TRUE
 	cry_reverse Cry_Blkgatomon
-	cry_reverse Cry_Lairon
+	cry_reverse Cry_Blkgatomon_uver
 	cry_reverse Cry_Aggron
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_AggronMega

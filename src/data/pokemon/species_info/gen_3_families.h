@@ -3694,10 +3694,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Blkgatomon)
         .levelUpLearnset = sBlkgatomonLevelUpLearnset,
         .teachableLearnset = sBlkgatomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_LAIRON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_BLKGATOMON_UVER}),
     },
 
-    [SPECIES_LAIRON] =
+    [SPECIES_BLKGATOMON_UVER] =
     {
         .baseHP        = 60,
         .baseAttack    = 90,
@@ -3717,14 +3717,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_STURDY, ABILITY_ROCK_HEAD, ABILITY_HEAVY_METAL },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Lairon"),
-        .cryId = CRY_LAIRON,
-        .natDexNum = NATIONAL_DEX_LAIRON,
+        .speciesName = _("Blkgatomon_uver"),
+        .cryId = CRY_BLKGATOMON_UVER,
+        .natDexNum = NATIONAL_DEX_BLKGATOMON_UVER,
         .categoryName = _("Iron Armor"),
         .height = 9,
         .weight = 1200,
         .description = COMPOUND_STRING(
-            "When two Lairon meet in the wild, they\n"
+            "When two Blkgatomon_uver meet in the wild, they\n"
             "fight for territory by bashing into each\n"
             "other with their steel bodies. The sound\n"
             "of their collision carries for miles."),
@@ -3732,22 +3732,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Lairon,
+        .frontPic = gMonFrontPic_Blkgatomon_uver,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Lairon,
+        .frontAnimFrames = sAnims_Blkgatomon_uver,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Lairon,
+        .backPic = gMonBackPic_Blkgatomon_uver,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 15,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Lairon,
-        .shinyPalette = gMonShinyPalette_Lairon,
-        .iconSprite = gMonIcon_Lairon,
+        .palette = gMonPalette_Blkgatomon_uver,
+        .shinyPalette = gMonShinyPalette_Blkgatomon_uver,
+        .iconSprite = gMonIcon_Blkgatomon_uver,
         .iconPalIndex = 2,
-        FOOTPRINT(Lairon)
-        .levelUpLearnset = sLaironLevelUpLearnset,
-        .teachableLearnset = sLaironTeachableLearnset,
+        FOOTPRINT(Blkgatomon_uver)
+        .levelUpLearnset = sBlkgatomon_uverLevelUpLearnset,
+        .teachableLearnset = sBlkgatomon_uverTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_AGGRON}),
     },
 

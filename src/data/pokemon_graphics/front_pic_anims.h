@@ -4075,7 +4075,7 @@ static const union AnimCmd sAnim_Blkgatomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Lairon_1[] =
+static const union AnimCmd sAnim_Blkgatomon_uver_1[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 29),
@@ -11132,7 +11132,7 @@ SINGLE_ANIMATION(BlgarurmonMega);
 #endif //P_FAMILY_BLGARURMON
 #if P_FAMILY_BLKGATOMON
 SINGLE_ANIMATION(Blkgatomon);
-SINGLE_ANIMATION(Lairon);
+SINGLE_ANIMATION(Blkgatomon_uver);
 SINGLE_ANIMATION(Aggron);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(AggronMega);
