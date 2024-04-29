@@ -3837,7 +3837,7 @@ static const struct TrainerMon sParty_Bethany[] = {
 static const struct TrainerMon sParty_Isabel1[] = {
     {
     .lvl = 14,
-    .species = SPECIES_PLUSLE,
+    .species = SPECIES_BOOGIEMON,
     .heldItem = ITEM_ORAN_BERRY
     },
     {
@@ -3851,7 +3851,7 @@ static const struct TrainerMon sParty_Isabel2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 26,
-    .species = SPECIES_PLUSLE,
+    .species = SPECIES_BOOGIEMON,
     .heldItem = ITEM_ORAN_BERRY
     },
     {
@@ -3866,7 +3866,7 @@ static const struct TrainerMon sParty_Isabel3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 29,
-    .species = SPECIES_PLUSLE,
+    .species = SPECIES_BOOGIEMON,
     .heldItem = ITEM_ORAN_BERRY
     },
     {
@@ -3881,7 +3881,7 @@ static const struct TrainerMon sParty_Isabel4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 32,
-    .species = SPECIES_PLUSLE,
+    .species = SPECIES_BOOGIEMON,
     .heldItem = ITEM_ORAN_BERRY
     },
     {
@@ -3896,7 +3896,7 @@ static const struct TrainerMon sParty_Isabel5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 35,
-    .species = SPECIES_PLUSLE,
+    .species = SPECIES_BOOGIEMON,
     .heldItem = ITEM_SITRUS_BERRY
     },
     {
@@ -5916,7 +5916,7 @@ static const struct TrainerMon sParty_Diana5[] = {
 static const struct TrainerMon sParty_AmyAndLiv1[] = {
     {
     .lvl = 15,
-    .species = SPECIES_PLUSLE,
+    .species = SPECIES_BOOGIEMON,
     },
     {
     .lvl = 15,
@@ -5928,7 +5928,7 @@ static const struct TrainerMon sParty_AmyAndLiv2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 27,
-    .species = SPECIES_PLUSLE,
+    .species = SPECIES_BOOGIEMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -5962,7 +5962,7 @@ static const struct TrainerMon sParty_MiuAndYuki[] = {
 static const struct TrainerMon sParty_AmyAndLiv3[] = {
     {
     .lvl = 9,
-    .species = SPECIES_PLUSLE,
+    .species = SPECIES_BOOGIEMON,
     },
     {
     .lvl = 9,
@@ -5987,7 +5987,7 @@ static const struct TrainerMon sParty_AmyAndLiv4[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 30,
-    .species = SPECIES_PLUSLE,
+    .species = SPECIES_BOOGIEMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -6000,7 +6000,7 @@ static const struct TrainerMon sParty_AmyAndLiv5[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 33,
-    .species = SPECIES_PLUSLE,
+    .species = SPECIES_BOOGIEMON,
     .moves = {MOVE_SPARK, MOVE_CHARGE, MOVE_FAKE_TEARS, MOVE_HELPING_HAND}
     },
     {
@@ -6015,7 +6015,7 @@ static const struct TrainerMon sParty_AmyAndLiv6[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 36,
-    .species = SPECIES_PLUSLE,
+    .species = SPECIES_BOOGIEMON,
     .moves = {MOVE_THUNDER, MOVE_CHARGE, MOVE_FAKE_TEARS, MOVE_HELPING_HAND}
     },
     {
@@ -8944,7 +8944,7 @@ static const struct TrainerMon sParty_Kaleb[] = {
     },
     {
     .lvl = 14,
-    .species = SPECIES_PLUSLE,
+    .species = SPECIES_BOOGIEMON,
     .heldItem = ITEM_ORAN_BERRY
     }
 };

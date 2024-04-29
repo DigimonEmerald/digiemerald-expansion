@@ -3164,7 +3164,7 @@ extern const u16 gPokedexAreaScreenAreaUnknown_Pal[];
 extern const u32 gStorageSystemMenu_Gfx[];
 extern const u16 gStorageSystemPartyMenu_Pal[];
 extern const u32 gStorageSystemPartyMenu_Tilemap[];
-extern const u32 gWallpaperIcon_Plusle[];
+extern const u32 gWallpaperIcon_Boogiemon[];
 extern const u32 gWallpaperIcon_Cross[];
 extern const u32 gWallpaperIcon_Bolt[];
 extern const u32 gWallpaperTiles_Ribbon[];

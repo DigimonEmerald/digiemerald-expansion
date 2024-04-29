@@ -868,7 +868,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [4] =
                     {
-                        .species = SPECIES_PLUSLE,
+                        .species = SPECIES_BOOGIEMON,
                         .heldItem = ITEM_SITRUS_BERRY,
                         .moves = {MOVE_RAIN_DANCE, MOVE_LIGHT_SCREEN, MOVE_HELPING_HAND, MOVE_THUNDER},
                         .hpEV = 252,
@@ -883,7 +883,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 15,
                         .abilityNum = 0,
                         .personality = 0x5,
-                        .nickname = _("PLUSLE"),
+                        .nickname = _("BOOGIEMON"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                     [5] =
@@ -2414,7 +2414,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         },
                                     [4] =
                                         {
-                                            .species = SPECIES_PLUSLE,
+                                            .species = SPECIES_BOOGIEMON,
                                             .heldItem = ITEM_BRIGHT_POWDER,
                                             .moves = {MOVE_HELPING_HAND, MOVE_THUNDERBOLT, MOVE_AGILITY, MOVE_BATON_PASS},
                                             .speedEV = 255,
@@ -2428,7 +2428,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 0,
                                             .personality = 0xF,
-                                            .nickname = _("PLUSLE"),
+                                            .nickname = _("BOOGIEMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [5] =

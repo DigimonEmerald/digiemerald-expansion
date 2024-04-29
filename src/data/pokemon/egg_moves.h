@@ -2464,8 +2464,8 @@ const u16 gEggMoves[] = {
         MOVE_EERIE_IMPULSE),
 #endif //P_FAMILY_BOARMON
 
-#if P_FAMILY_PLUSLE
-    egg_moves(PLUSLE,
+#if P_FAMILY_BOOGIEMON
+    egg_moves(BOOGIEMON,
         MOVE_WISH,
         MOVE_SING,
         MOVE_SWEET_KISS,
@@ -2474,7 +2474,7 @@ const u16 gEggMoves[] = {
         MOVE_CHARM,
         MOVE_FAKE_TEARS,
         MOVE_TEARFUL_LOOK),
-#endif //P_FAMILY_PLUSLE
+#endif //P_FAMILY_BOOGIEMON
 
 #if P_FAMILY_MINUN
     egg_moves(MINUN,

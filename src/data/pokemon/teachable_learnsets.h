@@ -14806,8 +14806,8 @@ static const u16 sBomnanimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BOARMON
 
-#if P_FAMILY_PLUSLE
-static const u16 sPlusleTeachableLearnset[] = {
+#if P_FAMILY_BOOGIEMON
+static const u16 sBoogiemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,
@@ -14842,7 +14842,7 @@ static const u16 sPlusleTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PLUSLE
+#endif //P_FAMILY_BOOGIEMON
 
 #if P_FAMILY_MINUN
 static const u16 sMinunTeachableLearnset[] = {

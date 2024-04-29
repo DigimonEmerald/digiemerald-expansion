@@ -4210,8 +4210,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BOARMON
 
-#if P_FAMILY_PLUSLE
-    [SPECIES_PLUSLE] =
+#if P_FAMILY_BOOGIEMON
+    [SPECIES_BOOGIEMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 50,
@@ -4231,9 +4231,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
         .abilities = { ABILITY_PLUS, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Plusle"),
-        .cryId = CRY_PLUSLE,
-        .natDexNum = NATIONAL_DEX_PLUSLE,
+        .speciesName = _("Boogiemon"),
+        .cryId = CRY_BOOGIEMON,
+        .natDexNum = NATIONAL_DEX_BOOGIEMON,
         .categoryName = _("Cheering"),
         .height = 4,
         .weight = 42,
@@ -4246,24 +4246,24 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = -9,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Plusle,
+        .frontPic = gMonFrontPic_Boogiemon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Plusle,
+        .frontAnimFrames = sAnims_Boogiemon,
         .frontAnimId = ANIM_V_JUMPS_H_JUMPS,
-        .backPic = gMonBackPic_Plusle,
+        .backPic = gMonBackPic_Boogiemon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Plusle,
-        .shinyPalette = gMonShinyPalette_Plusle,
-        .iconSprite = gMonIcon_Plusle,
+        .palette = gMonPalette_Boogiemon,
+        .shinyPalette = gMonShinyPalette_Boogiemon,
+        .iconSprite = gMonIcon_Boogiemon,
         .iconPalIndex = 0,
-        FOOTPRINT(Plusle)
-        .levelUpLearnset = sPlusleLevelUpLearnset,
-        .teachableLearnset = sPlusleTeachableLearnset,
+        FOOTPRINT(Boogiemon)
+        .levelUpLearnset = sBoogiemonLevelUpLearnset,
+        .teachableLearnset = sBoogiemonTeachableLearnset,
     },
-#endif //P_FAMILY_PLUSLE
+#endif //P_FAMILY_BOOGIEMON
 
 #if P_FAMILY_MINUN
     [SPECIES_MINUN] =
@@ -4295,7 +4295,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .description = COMPOUND_STRING(
             "At a meeting of Pokémon academics, it was\n"
             "announced that simultaneous exposure to\n"
-            "electricity from a Plusle and Minun will\n"
+            "electricity from a Boogiemon and Minun will\n"
             "promote circulation and boost vitality."),
         .pokemonScale = 512,
         .pokemonOffset = -7,

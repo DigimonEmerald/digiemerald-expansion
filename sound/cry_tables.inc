@@ -854,9 +854,9 @@ gCryTable::
 	cry Cry_BomnanimonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BOARMON
-.if P_FAMILY_PLUSLE == TRUE
-	cry Cry_Plusle
-.endif @ P_FAMILY_PLUSLE
+.if P_FAMILY_BOOGIEMON == TRUE
+	cry Cry_Boogiemon
+.endif @ P_FAMILY_BOOGIEMON
 .if P_FAMILY_MINUN == TRUE
 	cry Cry_Minun
 .endif @ P_FAMILY_MINUN
@@ -3280,9 +3280,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_BomnanimonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BOARMON
-.if P_FAMILY_PLUSLE == TRUE
-	cry_reverse Cry_Plusle
-.endif @ P_FAMILY_PLUSLE
+.if P_FAMILY_BOOGIEMON == TRUE
+	cry_reverse Cry_Boogiemon
+.endif @ P_FAMILY_BOOGIEMON
 .if P_FAMILY_MINUN == TRUE
 	cry_reverse Cry_Minun
 .endif @ P_FAMILY_MINUN

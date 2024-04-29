@@ -4628,16 +4628,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BOARMON
 
-#if P_FAMILY_PLUSLE
-    const u32 gMonFrontPic_Plusle[] = INCBIN_U32("graphics/pokemon/plusle/anim_front.4bpp.lz");
-    const u32 gMonPalette_Plusle[] = INCBIN_U32("graphics/pokemon/plusle/normal.gbapal.lz");
-    const u32 gMonBackPic_Plusle[] = INCBIN_U32("graphics/pokemon/plusle/back.4bpp.lz");
-    const u32 gMonShinyPalette_Plusle[] = INCBIN_U32("graphics/pokemon/plusle/shiny.gbapal.lz");
-    const u8 gMonIcon_Plusle[] = INCBIN_U8("graphics/pokemon/plusle/icon.4bpp");
+#if P_FAMILY_BOOGIEMON
+    const u32 gMonFrontPic_Boogiemon[] = INCBIN_U32("graphics/pokemon/boogiemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Boogiemon[] = INCBIN_U32("graphics/pokemon/boogiemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Boogiemon[] = INCBIN_U32("graphics/pokemon/boogiemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Boogiemon[] = INCBIN_U32("graphics/pokemon/boogiemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Boogiemon[] = INCBIN_U8("graphics/pokemon/boogiemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Plusle[] = INCBIN_U8("graphics/pokemon/plusle/footprint.1bpp");
+    const u8 gMonFootprint_Boogiemon[] = INCBIN_U8("graphics/pokemon/boogiemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_PLUSLE
+#endif //P_FAMILY_BOOGIEMON
 
 #if P_FAMILY_MINUN
     const u32 gMonFrontPic_Minun[] = INCBIN_U32("graphics/pokemon/minun/anim_front.4bpp.lz");

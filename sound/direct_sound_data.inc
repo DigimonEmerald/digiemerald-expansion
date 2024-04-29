@@ -2388,11 +2388,11 @@ Cry_BomnanimonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BOARMON
 
-.if P_FAMILY_PLUSLE == TRUE
+.if P_FAMILY_BOOGIEMON == TRUE
 	.align 2
-Cry_Plusle::
-	.incbin "sound/direct_sound_samples/cries/plusle.bin"
-.endif @ P_FAMILY_PLUSLE
+Cry_Boogiemon::
+	.incbin "sound/direct_sound_samples/cries/boogiemon.bin"
+.endif @ P_FAMILY_BOOGIEMON
 
 .if P_FAMILY_MINUN == TRUE
 	.align 2

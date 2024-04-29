@@ -4150,8 +4150,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(BomnanimonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BOARMON
 
-#if P_FAMILY_PLUSLE
-static const union AnimCmd sAnim_Plusle_1[] =
+#if P_FAMILY_BOOGIEMON
+static const union AnimCmd sAnim_Boogiemon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -4160,7 +4160,7 @@ static const union AnimCmd sAnim_Plusle_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_PLUSLE
+#endif //P_FAMILY_BOOGIEMON
 
 #if P_FAMILY_MINUN
 static const union AnimCmd sAnim_Minun_1[] =
@@ -11152,9 +11152,9 @@ SINGLE_ANIMATION(Bomnanimon);
 SINGLE_ANIMATION(BomnanimonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BOARMON
-#if P_FAMILY_PLUSLE
-SINGLE_ANIMATION(Plusle);
-#endif //P_FAMILY_PLUSLE
+#if P_FAMILY_BOOGIEMON
+SINGLE_ANIMATION(Boogiemon);
+#endif //P_FAMILY_BOOGIEMON
 #if P_FAMILY_MINUN
 SINGLE_ANIMATION(Minun);
 #endif //P_FAMILY_MINUN
