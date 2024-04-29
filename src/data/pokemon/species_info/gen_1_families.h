@@ -34,7 +34,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "Argomon has a habit of finding and \n"
             "converging at places with high data\n"
             "capacity. They generally gather up\n"
-            "and become a horde quickly.");
+            "and become a horde quickly."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -88,7 +88,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "Bombmon is a short tempered Digimon\n"
             "with a tendency to blow up on short\n"
             "notice. Although the explosions are \n"
-            "particularly weak.");
+            "particularly weak."),
         .pokemonScale = 335,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -142,7 +142,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "Bommons tail ignites from the moment it's\n"
             "born but because of it's fast growth it\n"
             "is said that no one has ever seen what\n"
-            "happens when it's tail goes out.");
+            "happens when it's tail goes out."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 388,
@@ -320,7 +320,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             "Botamon's surface is made up of slime but\n"
             "it has also grown a thick black fuzz atop\n"
             "the slime. It is unable to battle as it's\n"
-            "so freshly hatched.");
+            "so freshly hatched."),
         .pokemonScale = 444,
         .pokemonOffset = 18,
         .trainerScale = 256,

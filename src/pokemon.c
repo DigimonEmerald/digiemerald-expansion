@@ -4129,6 +4129,12 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
     bool32 consumeItem = FALSE;
     u16 evolutionTracker = GetMonData(mon, MON_DATA_EVOLUTION_TRACKER, 0);
     const struct Evolution *evolutions = GetSpeciesEvolutions(species);
+    u16 attack;
+    u16 defense;
+    u16 spatk;
+    u16 spdef;
+    u16 speed;
+    u16 health;
 
     if (evolutions == NULL)
         return SPECIES_NONE;
@@ -4174,6 +4180,12 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
     case EVO_MODE_NORMAL:
         level = GetMonData(mon, MON_DATA_LEVEL, 0);
         friendship = GetMonData(mon, MON_DATA_FRIENDSHIP, 0);
+        attack = GetMonData(mon, MON_DATA_ATK, 0);
+        defense = GetMonData(mon, MON_DATA_DEF, 0);
+        spatk = GetMonData(mon, MON_DATA_SPATK, 0);
+        spdef = GetMonData(mon, MON_DATA_SPDEF, 0);
+        speed = GetMonData(mon, MON_DATA_SPEED, 0);
+        health = GetMonData(mon, MON_DATA_HP, 0);
 
         for (i = 0; evolutions[i].method != EVOLUTIONS_END; i++)
         {
@@ -4407,6 +4419,36 @@ u16 GetEvolutionTargetSpecies(struct Pokemon *mon, u8 mode, u16 evolutionItem, s
             case EVO_LEVEL_RECOIL_DAMAGE_FEMALE:
                 if (evolutionTracker >= evolutions[i].param && GetMonGender(mon) == MON_FEMALE)
                     targetSpecies = evolutions[i].targetSpecies;
+                break;
+            case EVO_ATTACK:
+                if (evolutions[i].param <= attack)
+                    if (GetMonData(mon, MON_DATA_ATK, 0) > evolutions[i].param)
+                        targetSpecies = evolutions[i].targetSpecies;
+                break;
+            case EVO_DEFENSE:
+                if (evolutions[i].param <= defense)
+                    if (GetMonData(mon, MON_DATA_ATK, 0) > evolutions[i].param)
+                        targetSpecies = evolutions[i].targetSpecies;
+                break;
+            case EVO_SPATTACK:
+                if (evolutions[i].param <= spatk)
+                    if (GetMonData(mon, MON_DATA_ATK, 0) > evolutions[i].param)
+                        targetSpecies = evolutions[i].targetSpecies;
+                break;
+            case EVO_SPDEFENSE:
+                if (evolutions[i].param <= spdef)
+                    if (GetMonData(mon, MON_DATA_ATK, 0) > evolutions[i].param)
+                        targetSpecies = evolutions[i].targetSpecies;
+                break;
+            case EVO_SPEED:
+                if (evolutions[i].param <= speed)
+                    if (GetMonData(mon, MON_DATA_ATK, 0) > evolutions[i].param)
+                        targetSpecies = evolutions[i].targetSpecies;
+                break;
+            case EVO_HEALTH:
+                if (evolutions[i].param <= health)
+                    if (GetMonData(mon, MON_DATA_ATK, 0) > evolutions[i].param)
+                        targetSpecies = evolutions[i].targetSpecies;
                 break;
             }
         }

@@ -261,10 +261,10 @@
 #define EVO_LEVEL_ATK_GT_DEF              8      // Pokémon reaches the specified level with attack > defense
 #define EVO_LEVEL_ATK_EQ_DEF              9      // Pokémon reaches the specified level with attack = defense
 #define EVO_LEVEL_ATK_LT_DEF              10     // Pokémon reaches the specified level with attack < defense
-#define EVO_LEVEL_VEMMON                 11     // Pokémon reaches the specified level with a Vemmon personality value
+#define EVO_LEVEL_VEMMON                  11     // Pokémon reaches the specified level with a Vemmon personality value
 #define EVO_LEVEL_WORMMON                 12     // Pokémon reaches the specified level with a Wormmon personality value
-#define EVO_LEVEL_BALISTAMON                 13     // Pokémon reaches the specified level (special value for Balistamon)
-#define EVO_LEVEL_BALUCHIMON                14     // Pokémon reaches the specified level (special value for Baluchimon)
+#define EVO_LEVEL_BALISTAMON              13     // Pokémon reaches the specified level (special value for Balistamon)
+#define EVO_LEVEL_BALUCHIMON              14     // Pokémon reaches the specified level (special value for Baluchimon)
 #define EVO_BEAUTY                        15     // Pokémon levels up with beauty ≥ specified value
 #define EVO_LEVEL_FEMALE                  16     // Pokémon reaches the specified level, is female
 #define EVO_LEVEL_MALE                    17     // Pokémon reaches the specified level, is male
@@ -300,6 +300,12 @@
 #define EVO_LEVEL_MOVE_TWENTY_TIMES       47     // Pokémon levels up after having used a move for at least 20 times
 #define EVO_LEVEL_RECOIL_DAMAGE_MALE      48     // Pokémon levels up after having suffered specified amount of non-fainting recoil damage as a male
 #define EVO_LEVEL_RECOIL_DAMAGE_FEMALE    49     // Pokémon levels up after having suffered specified amount of non-fainting recoil damage as a female
+#define EVO_ATTACK                        50     // Species attack is at certain level
+#define EVO_DEFENSE                       51     // Species defense is at certain level
+#define EVO_SPATTACK                      52     // Species special attack is at certain level
+#define EVO_SPDEFENSE                     53     // Species special defense is at certain level
+#define EVO_SPEED                         54     // Species speed is at certain level
+#define EVO_HEALTH                        55     // Species health is at certain level
 
 // Evolution 'modes,' for GetEvolutionTargetSpecies
 #define EVO_MODE_NORMAL            0
