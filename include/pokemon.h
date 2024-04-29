@@ -558,13 +558,13 @@ struct Ability
     u8 failsOnImposter:1; // doesn't work on an Imposter mon; when can we actually use this?
 };
 
-#define SPINDA_SPOT_WIDTH 16
-#define SPINDA_SPOT_HEIGHT 16
+#define COREDRAMON_BLUE_SPOT_WIDTH 16
+#define COREDRAMON_BLUE_SPOT_HEIGHT 16
 
-struct SpindaSpot
+struct Coredramon_blueSpot
 {
     u8 x, y;
-    u16 image[SPINDA_SPOT_HEIGHT];
+    u16 image[COREDRAMON_BLUE_SPOT_HEIGHT];
 };
 
 struct LevelUpMove
@@ -732,7 +732,7 @@ u16 NationalToHoennOrder(u16 nationalNum);
 u16 SpeciesToNationalPokedexNum(u16 species);
 u16 SpeciesToHoennPokedexNum(u16 species);
 u16 HoennToNationalOrder(u16 hoennNum);
-void DrawSpindaSpots(u32 personality, u8 *dest, bool32 isSecondFrame);
+void DrawCoredramon_blueSpots(u32 personality, u8 *dest, bool32 isSecondFrame);
 void EvolutionRenameMon(struct Pokemon *mon, u16 oldSpecies, u16 newSpecies);
 u8 GetPlayerFlankId(void);
 u16 GetLinkTrainerFlankId(u8 id);

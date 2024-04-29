@@ -2635,8 +2635,8 @@ const u16 gEggMoves[] = {
         MOVE_SIMPLE_BEAM),
 #endif //P_FAMILY_CLOCKMON_FUSION
 
-#if P_FAMILY_SPINDA
-    egg_moves(SPINDA,
+#if P_FAMILY_COREDRAMON_BLUE
+    egg_moves(COREDRAMON_BLUE,
         MOVE_ENCORE,
         MOVE_ASSIST,
         MOVE_DISABLE,
@@ -2654,7 +2654,7 @@ const u16 gEggMoves[] = {
         MOVE_PSYCHO_SHIFT,
         MOVE_GUARD_SPLIT,
         MOVE_SPOTLIGHT),
-#endif //P_FAMILY_SPINDA
+#endif //P_FAMILY_COREDRAMON_BLUE
 
 #if P_FAMILY_TRAPINCH
     egg_moves(TRAPINCH,

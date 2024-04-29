@@ -2496,11 +2496,11 @@ Cry_Coelamon::
 	.incbin "sound/direct_sound_samples/cries/coelamon.bin"
 .endif @ P_FAMILY_CLOCKMON_FUSION
 
-.if P_FAMILY_SPINDA == TRUE
+.if P_FAMILY_COREDRAMON_BLUE == TRUE
 	.align 2
-Cry_Spinda::
-	.incbin "sound/direct_sound_samples/cries/spinda.bin"
-.endif @ P_FAMILY_SPINDA
+Cry_Coredramon_blue::
+	.incbin "sound/direct_sound_samples/cries/coredramon_blue.bin"
+.endif @ P_FAMILY_COREDRAMON_BLUE
 
 .if P_FAMILY_TRAPINCH == TRUE
 	.align 2

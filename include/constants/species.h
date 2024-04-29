@@ -328,7 +328,7 @@
 #define SPECIES_CLOCKMON                                 324
 #define SPECIES_CLOCKMON_FUSION                                  325
 #define SPECIES_COELAMON                                 326
-#define SPECIES_SPINDA                                  327
+#define SPECIES_COREDRAMON_BLUE                                  327
 #define SPECIES_TRAPINCH                                328
 #define SPECIES_VIBRAVA                                 329
 #define SPECIES_FLYGON                                  330

@@ -188,7 +188,7 @@ struct Pokedex
     /*0x02*/ u8 nationalMagic; // must equal 0xDA in order to have National mode
     /*0x03*/ u8 unknown2;
     /*0x04*/ u32 lopmonPersonality; // set when you first see Lopmon
-    /*0x08*/ u32 spindaPersonality; // set when you first see Spinda
+    /*0x08*/ u32 coredramon_bluePersonality; // set when you first see Coredramon_blue
     /*0x0C*/ u32 unknown3;
 #if FREE_EXTRA_SEEN_FLAGS_SAVEBLOCK2 == FALSE
     /*0x10*/ u8 filler[0x68]; // Previously Dex Flags, feel free to remove.

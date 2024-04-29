@@ -52,8 +52,8 @@ DOUBLE_BATTLE_TEST("Opportunist raises Attack only once when partner has Intimid
     GIVEN {
         PLAYER(SPECIES_TINPET) { Ability(ABILITY_INTIMIDATE); }
         PLAYER(SPECIES_ESPATHRA) { Ability(ABILITY_OPPORTUNIST); }
-        OPPONENT(SPECIES_SPINDA) { Ability(abilityLeft); }
-        OPPONENT(SPECIES_SPINDA) { Ability(abilityRight); }
+        OPPONENT(SPECIES_COREDRAMON_BLUE) { Ability(abilityLeft); }
+        OPPONENT(SPECIES_COREDRAMON_BLUE) { Ability(abilityRight); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(opponentRight, MOVE_TACKLE, target: playerRight); }
     } SCENE {
@@ -61,18 +61,18 @@ DOUBLE_BATTLE_TEST("Opportunist raises Attack only once when partner has Intimid
         if (abilityLeft == ABILITY_CONTRARY) {
             ABILITY_POPUP(opponentLeft, ABILITY_CONTRARY);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-            MESSAGE("Foe Spinda's Attack rose!");
+            MESSAGE("Foe Coredramon_blue's Attack rose!");
         } else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-            MESSAGE("Tinpet's Intimidate cuts Foe Spinda's attack!");
+            MESSAGE("Tinpet's Intimidate cuts Foe Coredramon_blue's attack!");
         }
         if (abilityRight == ABILITY_CONTRARY) {
             ABILITY_POPUP(opponentRight, ABILITY_CONTRARY);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-            MESSAGE("Foe Spinda's Attack rose!");
+            MESSAGE("Foe Coredramon_blue's Attack rose!");
         } else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-            MESSAGE("Tinpet's Intimidate cuts Foe Spinda's attack!");
+            MESSAGE("Tinpet's Intimidate cuts Foe Coredramon_blue's attack!");
         }
 
         if ((abilityLeft == ABILITY_CONTRARY && abilityRight != ABILITY_CONTRARY)

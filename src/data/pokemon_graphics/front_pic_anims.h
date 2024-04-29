@@ -4372,8 +4372,8 @@ static const union AnimCmd sAnim_Coelamon_1[] =
 };
 #endif //P_FAMILY_CLOCKMON_FUSION
 
-#if P_FAMILY_SPINDA
-static const union AnimCmd sAnim_Spinda_1[] =
+#if P_FAMILY_COREDRAMON_BLUE
+static const union AnimCmd sAnim_Coredramon_blue_1[] =
 {
     ANIMCMD_FRAME(0, 17),
     ANIMCMD_FRAME(1, 23),
@@ -4382,7 +4382,7 @@ static const union AnimCmd sAnim_Spinda_1[] =
     ANIMCMD_FRAME(0, 13),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SPINDA
+#endif //P_FAMILY_COREDRAMON_BLUE
 
 #if P_FAMILY_TRAPINCH
 static const union AnimCmd sAnim_Trapinch_1[] =
@@ -11200,9 +11200,9 @@ SINGLE_ANIMATION(Clockmon);
 SINGLE_ANIMATION(Clockmon_fusion);
 SINGLE_ANIMATION(Coelamon);
 #endif //P_FAMILY_CLOCKMON_FUSION
-#if P_FAMILY_SPINDA
-SINGLE_ANIMATION(Spinda);
-#endif //P_FAMILY_SPINDA
+#if P_FAMILY_COREDRAMON_BLUE
+SINGLE_ANIMATION(Coredramon_blue);
+#endif //P_FAMILY_COREDRAMON_BLUE
 #if P_FAMILY_TRAPINCH
 SINGLE_ANIMATION(Trapinch);
 SINGLE_ANIMATION(Vibrava);

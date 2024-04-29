@@ -240,7 +240,7 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(COELAMON),
     HOENN_TO_NATIONAL(POPOMON),
     HOENN_TO_NATIONAL(POYOMON),
-    HOENN_TO_NATIONAL(SPINDA),
+    HOENN_TO_NATIONAL(COREDRAMON_BLUE),
     HOENN_TO_NATIONAL(PHASCOMON),
     HOENN_TO_NATIONAL(TRAPINCH),
     HOENN_TO_NATIONAL(VIBRAVA),
@@ -349,12 +349,12 @@ static const u16 sHoennToNationalOrder[HOENN_DEX_COUNT - 1] =
     HOENN_TO_NATIONAL(DEOXYS),
 };
 
-const struct SpindaSpot gSpindaSpotGraphics[] =
+const struct Coredramon_blueSpot gCoredramon_blueSpotGraphics[] =
 {
-    {.x = 16, .y =  7, .image = INCBIN_U16("graphics/pokemon/spinda/spots/spot_0.1bpp")},
-    {.x = 40, .y =  8, .image = INCBIN_U16("graphics/pokemon/spinda/spots/spot_1.1bpp")},
-    {.x = 22, .y = 25, .image = INCBIN_U16("graphics/pokemon/spinda/spots/spot_2.1bpp")},
-    {.x = 34, .y = 26, .image = INCBIN_U16("graphics/pokemon/spinda/spots/spot_3.1bpp")}
+    {.x = 16, .y =  7, .image = INCBIN_U16("graphics/pokemon/coredramon_blue/spots/spot_0.1bpp")},
+    {.x = 40, .y =  8, .image = INCBIN_U16("graphics/pokemon/coredramon_blue/spots/spot_1.1bpp")},
+    {.x = 22, .y = 25, .image = INCBIN_U16("graphics/pokemon/coredramon_blue/spots/spot_2.1bpp")},
+    {.x = 34, .y = 26, .image = INCBIN_U16("graphics/pokemon/coredramon_blue/spots/spot_3.1bpp")}
 };
 
 const u8 *const gNatureNamePointers[NUM_NATURES] =
@@ -4621,19 +4621,19 @@ u16 HoennToNationalOrder(u16 hoennNum)
     return sHoennToNationalOrder[hoennNum - 1];
 }
 
-// Spots can be drawn on Spinda's color indexes 1, 2, or 3
+// Spots can be drawn on Coredramon_blue's color indexes 1, 2, or 3
 #define FIRST_SPOT_COLOR 1
 #define LAST_SPOT_COLOR  3
 
 // To draw a spot pixel, add 4 to the color index
 #define SPOT_COLOR_ADJUSTMENT 4
 /*
-    The function below handles drawing the randomly-placed spots on Spinda's front sprite.
-    Spinda has 4 spots, each with an entry in gSpindaSpotGraphics. Each entry contains
+    The function below handles drawing the randomly-placed spots on Coredramon_blue's front sprite.
+    Coredramon_blue has 4 spots, each with an entry in gCoredramon_blueSpotGraphics. Each entry contains
     a base x and y coordinate for the spot and a 16x16 binary image. Each bit in the image
     determines whether that pixel should be considered part of the spot.
 
-    The position of each spot is randomized using the Spinda's personality. The entire 32 bit
+    The position of each spot is randomized using the Coredramon_blue's personality. The entire 32 bit
     personality value is used, 4 bits for each coordinate of the 4 spots. If the personality
     value is 0x87654321, then 0x1 will be used for the 1st spot's x coord, 0x2 will be used for
     the 1st spot's y coord, 0x3 will be used for the 2nd spot's x coord, and so on. Each
@@ -4641,25 +4641,25 @@ u16 HoennToNationalOrder(u16 hoennNum)
     means each spot can start at any position -8 to +7 off of its base coordinates (256 possibilities).
 
     The function then loops over the 16x16 spot image. For each bit in the spot's binary image, if
-    the bit is set then it's part of the spot; try to draw it. A pixel is drawn on Spinda if the
-    pixel on Spinda satisfies the following formula: ((u8)(colorIndex - 1) <= 2). The -1 excludes
-    transparent pixels, as these are index 0. Therefore only colors 1, 2, or 3 on Spinda will
-    allow a spot to be drawn. These color indexes are Spinda's light brown body colors. To create
-    the spot it adds 4 to the color index, so Spinda's spots will be colors 5, 6, and 7.
+    the bit is set then it's part of the spot; try to draw it. A pixel is drawn on Coredramon_blue if the
+    pixel on Coredramon_blue satisfies the following formula: ((u8)(colorIndex - 1) <= 2). The -1 excludes
+    transparent pixels, as these are index 0. Therefore only colors 1, 2, or 3 on Coredramon_blue will
+    allow a spot to be drawn. These color indexes are Coredramon_blue's light brown body colors. To create
+    the spot it adds 4 to the color index, so Coredramon_blue's spots will be colors 5, 6, and 7.
 
     The above is done two different ways in the function: one with << 4, and one without. This
-    is because Spinda's sprite is a 4 bits per pixel image, but the pointer to Spinda's pixels
+    is because Coredramon_blue's sprite is a 4 bits per pixel image, but the pointer to Coredramon_blue's pixels
     (destPixels) is an 8 bit pointer, so it addresses two pixels. Shifting by 4 accesses the 2nd
     of these pixels, so this is done every other time.
 */
-void DrawSpindaSpots(u32 personality, u8 *dest, bool32 isSecondFrame)
+void DrawCoredramon_blueSpots(u32 personality, u8 *dest, bool32 isSecondFrame)
 {
     s32 i;
-    for (i = 0; i < (s32)ARRAY_COUNT(gSpindaSpotGraphics); i++)
+    for (i = 0; i < (s32)ARRAY_COUNT(gCoredramon_blueSpotGraphics); i++)
     {
         s32 row;
-        u8 x = gSpindaSpotGraphics[i].x + (personality & 0x0F);
-        u8 y = gSpindaSpotGraphics[i].y + ((personality & 0xF0) >> 4);
+        u8 x = gCoredramon_blueSpotGraphics[i].x + (personality & 0x0F);
+        u8 y = gCoredramon_blueSpotGraphics[i].y + ((personality & 0xF0) >> 4);
 
         if (isSecondFrame)
         {
@@ -4672,14 +4672,14 @@ void DrawSpindaSpots(u32 personality, u8 *dest, bool32 isSecondFrame)
             y -= 8;
         }
 
-        for (row = 0; row < SPINDA_SPOT_HEIGHT; row++)
+        for (row = 0; row < COREDRAMON_BLUE_SPOT_HEIGHT; row++)
         {
             s32 column;
-            s32 spotPixelRow = gSpindaSpotGraphics[i].image[row];
+            s32 spotPixelRow = gCoredramon_blueSpotGraphics[i].image[row];
 
-            for (column = x; column < x + SPINDA_SPOT_WIDTH; column++)
+            for (column = x; column < x + COREDRAMON_BLUE_SPOT_WIDTH; column++)
             {
-                /* Get target pixels on Spinda's sprite */
+                /* Get target pixels on Coredramon_blue's sprite */
                 u8 *destPixels = dest + ((column / 8) * TILE_SIZE_4BPP) +
                     ((column % 8) / 2) +
                     ((y / 8) * TILE_SIZE_4BPP * 8) +
@@ -4692,14 +4692,14 @@ void DrawSpindaSpots(u32 personality, u8 *dest, bool32 isSecondFrame)
                     /* of the two pixels is being considered for drawing */
                     if (column & 1)
                     {
-                        /* Draw spot pixel if this is Spinda's body color */
+                        /* Draw spot pixel if this is Coredramon_blue's body color */
                         if ((u8)((*destPixels & 0xF0) - (FIRST_SPOT_COLOR << 4))
                             <= ((LAST_SPOT_COLOR - FIRST_SPOT_COLOR) << 4))
                             *destPixels += (SPOT_COLOR_ADJUSTMENT << 4);
                     }
                     else
                     {
-                        /* Draw spot pixel if this is Spinda's body color */
+                        /* Draw spot pixel if this is Coredramon_blue's body color */
                         if ((u8)((*destPixels & 0xF) - FIRST_SPOT_COLOR)
                             <= (LAST_SPOT_COLOR - FIRST_SPOT_COLOR))
                             *destPixels += SPOT_COLOR_ADJUSTMENT;
@@ -5926,8 +5926,8 @@ void HandleSetPokedexFlag(u16 nationalNum, u8 caseId, u32 personality)
         GetSetPokedexFlag(nationalNum, caseId);
         if (NationalPokedexNumToSpecies(nationalNum) == SPECIES_LOPMON)
             gSaveBlock2Ptr->pokedex.lopmonPersonality = personality;
-        if (NationalPokedexNumToSpecies(nationalNum) == SPECIES_SPINDA)
-            gSaveBlock2Ptr->pokedex.spindaPersonality = personality;
+        if (NationalPokedexNumToSpecies(nationalNum) == SPECIES_COREDRAMON_BLUE)
+            gSaveBlock2Ptr->pokedex.coredramon_bluePersonality = personality;
     }
 }
 

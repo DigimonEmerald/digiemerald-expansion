@@ -902,9 +902,9 @@ gCryTable::
 	cry Cry_Clockmon_fusion
 	cry Cry_Coelamon
 .endif @ P_FAMILY_CLOCKMON_FUSION
-.if P_FAMILY_SPINDA == TRUE
-	cry Cry_Spinda
-.endif @ P_FAMILY_SPINDA
+.if P_FAMILY_COREDRAMON_BLUE == TRUE
+	cry Cry_Coredramon_blue
+.endif @ P_FAMILY_COREDRAMON_BLUE
 .if P_FAMILY_TRAPINCH == TRUE
 	cry Cry_Trapinch
 	cry Cry_Vibrava
@@ -3328,9 +3328,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Clockmon_fusion
 	cry_reverse Cry_Coelamon
 .endif @ P_FAMILY_CLOCKMON_FUSION
-.if P_FAMILY_SPINDA == TRUE
-	cry_reverse Cry_Spinda
-.endif @ P_FAMILY_SPINDA
+.if P_FAMILY_COREDRAMON_BLUE == TRUE
+	cry_reverse Cry_Coredramon_blue
+.endif @ P_FAMILY_COREDRAMON_BLUE
 .if P_FAMILY_TRAPINCH == TRUE
 	cry_reverse Cry_Trapinch
 	cry_reverse Cry_Vibrava

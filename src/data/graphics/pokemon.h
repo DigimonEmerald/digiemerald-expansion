@@ -4848,16 +4848,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_CLOCKMON_FUSION
 
-#if P_FAMILY_SPINDA
-    const u32 gMonFrontPic_Spinda[] = INCBIN_U32("graphics/pokemon/spinda/anim_front.4bpp.lz");
-    const u32 gMonPalette_Spinda[] = INCBIN_U32("graphics/pokemon/spinda/normal.gbapal.lz");
-    const u32 gMonBackPic_Spinda[] = INCBIN_U32("graphics/pokemon/spinda/back.4bpp.lz");
-    const u32 gMonShinyPalette_Spinda[] = INCBIN_U32("graphics/pokemon/spinda/shiny.gbapal.lz");
-    const u8 gMonIcon_Spinda[] = INCBIN_U8("graphics/pokemon/spinda/icon.4bpp");
+#if P_FAMILY_COREDRAMON_BLUE
+    const u32 gMonFrontPic_Coredramon_blue[] = INCBIN_U32("graphics/pokemon/coredramon_blue/anim_front.4bpp.lz");
+    const u32 gMonPalette_Coredramon_blue[] = INCBIN_U32("graphics/pokemon/coredramon_blue/normal.gbapal.lz");
+    const u32 gMonBackPic_Coredramon_blue[] = INCBIN_U32("graphics/pokemon/coredramon_blue/back.4bpp.lz");
+    const u32 gMonShinyPalette_Coredramon_blue[] = INCBIN_U32("graphics/pokemon/coredramon_blue/shiny.gbapal.lz");
+    const u8 gMonIcon_Coredramon_blue[] = INCBIN_U8("graphics/pokemon/coredramon_blue/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Spinda[] = INCBIN_U8("graphics/pokemon/spinda/footprint.1bpp");
+    const u8 gMonFootprint_Coredramon_blue[] = INCBIN_U8("graphics/pokemon/coredramon_blue/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_SPINDA
+#endif //P_FAMILY_COREDRAMON_BLUE
 
 #if P_FAMILY_TRAPINCH
     const u32 gMonFrontPic_Trapinch[] = INCBIN_U32("graphics/pokemon/trapinch/anim_front.4bpp.lz");

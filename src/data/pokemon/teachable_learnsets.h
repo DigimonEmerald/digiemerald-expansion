@@ -15480,8 +15480,8 @@ static const u16 sCoelamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_CLOCKMON_FUSION
 
-#if P_FAMILY_SPINDA
-static const u16 sSpindaTeachableLearnset[] = {
+#if P_FAMILY_COREDRAMON_BLUE
+static const u16 sCoredramon_blueTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
@@ -15531,7 +15531,7 @@ static const u16 sSpindaTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SPINDA
+#endif //P_FAMILY_COREDRAMON_BLUE
 
 #if P_FAMILY_TRAPINCH
 static const u16 sTrapinchTeachableLearnset[] = {

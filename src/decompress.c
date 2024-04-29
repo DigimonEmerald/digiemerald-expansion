@@ -105,10 +105,10 @@ void LoadSpecialPokePic(void *dest, s32 species, u32 personality, bool8 isFrontP
             LZ77UnCompWram(gSpeciesInfo[SPECIES_NONE].backPic, dest);
     }
 
-    if (species == SPECIES_SPINDA && isFrontPic)
+    if (species == SPECIES_COREDRAMON_BLUE && isFrontPic)
     {
-        DrawSpindaSpots(personality, dest, FALSE);
-        DrawSpindaSpots(personality, dest, TRUE);
+        DrawCoredramon_blueSpots(personality, dest, FALSE);
+        DrawCoredramon_blueSpots(personality, dest, TRUE);
     }
 }
 

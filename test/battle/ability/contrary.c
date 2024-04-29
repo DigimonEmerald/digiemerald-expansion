@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Contrary raises Attack when Intimidated in a single battle",
     PARAMETRIZE { ability = ABILITY_TANGLED_FEET; }
     GIVEN {
         PLAYER(SPECIES_TINPET) { Ability(ABILITY_INTIMIDATE); }
-        OPPONENT(SPECIES_SPINDA) { Ability(ability); }
+        OPPONENT(SPECIES_COREDRAMON_BLUE) { Ability(ability); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
@@ -21,7 +21,7 @@ SINGLE_BATTLE_TEST("Contrary raises Attack when Intimidated in a single battle",
         if (ability == ABILITY_CONTRARY) {
             ABILITY_POPUP(opponent, ABILITY_CONTRARY);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("Foe Spinda's Attack rose!");
+            MESSAGE("Foe Coredramon_blue's Attack rose!");
         }
         HP_BAR(player, captureDamage: &results[i].damage);
     }
@@ -42,8 +42,8 @@ DOUBLE_BATTLE_TEST("Contrary raises Attack when Intimidated in a double battle",
     GIVEN {
         PLAYER(SPECIES_TINPET) { Ability(ABILITY_INTIMIDATE); }
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_SPINDA) { Ability(abilityLeft); }
-        OPPONENT(SPECIES_SPINDA) { Ability(abilityRight); }
+        OPPONENT(SPECIES_COREDRAMON_BLUE) { Ability(abilityLeft); }
+        OPPONENT(SPECIES_COREDRAMON_BLUE) { Ability(abilityRight); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(opponentRight, MOVE_TACKLE, target: playerRight); }
     } SCENE {
@@ -51,18 +51,18 @@ DOUBLE_BATTLE_TEST("Contrary raises Attack when Intimidated in a double battle",
         if (abilityLeft == ABILITY_CONTRARY) {
             ABILITY_POPUP(opponentLeft, ABILITY_CONTRARY);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-            MESSAGE("Foe Spinda's Attack rose!");
+            MESSAGE("Foe Coredramon_blue's Attack rose!");
         } else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-            MESSAGE("Tinpet's Intimidate cuts Foe Spinda's attack!");
+            MESSAGE("Tinpet's Intimidate cuts Foe Coredramon_blue's attack!");
         }
         if (abilityRight == ABILITY_CONTRARY) {
             ABILITY_POPUP(opponentRight, ABILITY_CONTRARY);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-            MESSAGE("Foe Spinda's Attack rose!");
+            MESSAGE("Foe Coredramon_blue's Attack rose!");
         } else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-            MESSAGE("Tinpet's Intimidate cuts Foe Spinda's attack!");
+            MESSAGE("Tinpet's Intimidate cuts Foe Coredramon_blue's attack!");
         }
         HP_BAR(playerLeft, captureDamage: &results[i].damageLeft);
         HP_BAR(playerRight, captureDamage: &results[i].damageRight);
@@ -85,33 +85,33 @@ SINGLE_BATTLE_TEST("Contrary raises stats after using a move which would normall
         ASSUME(MoveHasAdditionalEffectSelf(MOVE_OVERHEAT, MOVE_EFFECT_SP_ATK_TWO_DOWN) == TRUE);
         ASSUME(gMovesInfo[MOVE_OVERHEAT].category == DAMAGE_CATEGORY_SPECIAL);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_SPINDA) { Ability(ability); }
+        OPPONENT(SPECIES_COREDRAMON_BLUE) { Ability(ability); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_OVERHEAT); }
         TURN { MOVE(opponent, MOVE_OVERHEAT); }
     } SCENE {
-        MESSAGE("Foe Spinda used Overheat!");
+        MESSAGE("Foe Coredramon_blue used Overheat!");
         HP_BAR(player, captureDamage: &results[i].damageBefore);
         if (ability == ABILITY_CONTRARY) {
             // ABILITY_POPUP(opponent, ABILITY_CONTRARY);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("Foe Spinda's Sp. Atk sharply rose!");
+            MESSAGE("Foe Coredramon_blue's Sp. Atk sharply rose!");
         }
         else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("Foe Spinda's Sp. Atk harshly fell!");
+            MESSAGE("Foe Coredramon_blue's Sp. Atk harshly fell!");
         }
 
-        // MESSAGE("Foe Spinda used Overheat!");
+        // MESSAGE("Foe Coredramon_blue used Overheat!");
         HP_BAR(player, captureDamage: &results[i].damageAfter);
         if (ability == ABILITY_CONTRARY) {
             // ABILITY_POPUP(opponent, ABILITY_CONTRARY);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("Foe Spinda's Sp. Atk sharply rose!");
+            MESSAGE("Foe Coredramon_blue's Sp. Atk sharply rose!");
         }
         else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("Foe Spinda's Sp. Atk harshly fell!");
+            MESSAGE("Foe Coredramon_blue's Sp. Atk harshly fell!");
         }
     }
     FINALLY {
@@ -128,27 +128,27 @@ SINGLE_BATTLE_TEST("Contrary lowers a stat after using a move which would normal
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SWORDS_DANCE].effect == EFFECT_ATTACK_UP_2);
         PLAYER(SPECIES_LOPMONX) { Defense(102); }
-        OPPONENT(SPECIES_SPINDA) { Ability(ability); Attack(100); }
+        OPPONENT(SPECIES_COREDRAMON_BLUE) { Ability(ability); Attack(100); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
         TURN { MOVE(opponent, MOVE_SWORDS_DANCE); }
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
-        MESSAGE("Foe Spinda used Tackle!");
+        MESSAGE("Foe Coredramon_blue used Tackle!");
         HP_BAR(player, captureDamage: &results[i].damageBefore);
 
-        //MESSAGE("Foe Spinda used Swords Dance!");
+        //MESSAGE("Foe Coredramon_blue used Swords Dance!");
         if (ability == ABILITY_CONTRARY) {
             // ABILITY_POPUP(opponent, ABILITY_CONTRARY);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("Foe Spinda's Attack harshly fell!");
+            MESSAGE("Foe Coredramon_blue's Attack harshly fell!");
         }
         else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("Foe Spinda's Attack sharply rose!");
+            MESSAGE("Foe Coredramon_blue's Attack sharply rose!");
         }
 
-        // MESSAGE("Foe Spinda used Tackle!");
+        // MESSAGE("Foe Coredramon_blue used Tackle!");
         HP_BAR(player, captureDamage: &results[i].damageAfter);
     }
     FINALLY {
@@ -165,7 +165,7 @@ SINGLE_BATTLE_TEST("Contrary raises a stat after using a move which would normal
     GIVEN {
         ASSUME(gMovesInfo[MOVE_GROWL].effect == EFFECT_ATTACK_DOWN);
         PLAYER(SPECIES_LOPMONX) { Speed(3); }
-        OPPONENT(SPECIES_SPINDA) { Ability(ability); Speed(2); }
+        OPPONENT(SPECIES_COREDRAMON_BLUE) { Ability(ability); Speed(2); }
     } WHEN {
         TURN { MOVE(player, MOVE_GROWL); MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
@@ -173,14 +173,14 @@ SINGLE_BATTLE_TEST("Contrary raises a stat after using a move which would normal
         if (ability == ABILITY_CONTRARY) {
             // ABILITY_POPUP(opponent, ABILITY_CONTRARY);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("Foe Spinda's Attack rose!");
+            MESSAGE("Foe Coredramon_blue's Attack rose!");
         }
         else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("Foe Spinda's Attack fell!");
+            MESSAGE("Foe Coredramon_blue's Attack fell!");
         }
 
-        MESSAGE("Foe Spinda used Tackle!");
+        MESSAGE("Foe Coredramon_blue used Tackle!");
         HP_BAR(player, captureDamage: &results[i].damage);
     }
     FINALLY {
@@ -196,22 +196,22 @@ SINGLE_BATTLE_TEST("Contrary lowers a stat after using a move which would normal
     GIVEN {
         ASSUME(gMovesInfo[MOVE_BELLY_DRUM].effect == EFFECT_BELLY_DRUM);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_SPINDA) { Ability(ability); }
+        OPPONENT(SPECIES_COREDRAMON_BLUE) { Ability(ability); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
         TURN { MOVE(opponent, MOVE_BELLY_DRUM); }
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
-        MESSAGE("Foe Spinda used Tackle!");
+        MESSAGE("Foe Coredramon_blue used Tackle!");
         HP_BAR(player, captureDamage: &results[i].damageBefore);
 
         if (ability == ABILITY_CONTRARY) {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("Foe Spinda cut its own HP and maximized ATTACK!"); //Message stays the same
+            MESSAGE("Foe Coredramon_blue cut its own HP and maximized ATTACK!"); //Message stays the same
         }
         else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("Foe Spinda cut its own HP and maximized ATTACK!");
+            MESSAGE("Foe Coredramon_blue cut its own HP and maximized ATTACK!");
         }
 
         HP_BAR(player, captureDamage: &results[i].damageAfter);

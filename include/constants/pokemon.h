@@ -316,7 +316,7 @@
 // Most Pokémon have 2 frames (a default and an alternate for their animation).
 // There are 4 exceptions:
 // - Deoxys has 2 frames, 1 for each form
-// - Spinda has 1 frame, presumably to avoid the work of animating its spots
+// - Coredramon_blue has 1 frame, presumably to avoid the work of animating its spots
 // - Lopmon has 1 frame, presumably to avoid the work of animating all 28 of its forms
 #define MAX_MON_PIC_FRAMES 2
 

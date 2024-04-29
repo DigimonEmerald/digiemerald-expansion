@@ -2394,7 +2394,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         },
                                     [3] =
                                         {
-                                            .species = SPECIES_SPINDA,
+                                            .species = SPECIES_COREDRAMON_BLUE,
                                             .heldItem = ITEM_LUM_BERRY,
                                             .moves = {MOVE_TEETER_DANCE, MOVE_DIZZY_PUNCH, MOVE_CALM_MIND, MOVE_BATON_PASS},
                                             .hpEV = 110,
@@ -2409,7 +2409,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 0,
                                             .personality = 0x88FE980F,
-                                            .nickname = _("SPINDA"),
+                                            .nickname = _("COREDRAMON_BLUE"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [4] =
@@ -2464,7 +2464,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                 {
                                     [0] =
                                         {
-                                            .species = SPECIES_SPINDA,
+                                            .species = SPECIES_COREDRAMON_BLUE,
                                             .heldItem = ITEM_LUM_BERRY,
                                             .moves = {MOVE_TEETER_DANCE, MOVE_DIZZY_PUNCH, MOVE_CALM_MIND, MOVE_BATON_PASS},
                                             .hpEV = 110,
@@ -2479,7 +2479,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 0,
                                             .personality = 0xE2880098,
-                                            .nickname = _("SPINDA"),
+                                            .nickname = _("COREDRAMON_BLUE"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [1] =

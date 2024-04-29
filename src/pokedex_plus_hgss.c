@@ -4550,16 +4550,16 @@ static u8 PrintCryScreenSpeciesName(u8 windowId, u16 num, u8 left, u8 top)
 
 #define MALE_PERSONALITY 0xFE
 
-// Lopmon and Spinda use the personality of the first seen individual of that species
+// Lopmon and Coredramon_blue use the personality of the first seen individual of that species
 // All others use personality 0
 static u32 GetPokedexMonPersonality(u16 species)
 {
-    if (species == SPECIES_LOPMON || species == SPECIES_SPINDA)
+    if (species == SPECIES_LOPMON || species == SPECIES_COREDRAMON_BLUE)
     {
         if (species == SPECIES_LOPMON)
             return gSaveBlock2Ptr->pokedex.lopmonPersonality;
         else
-            return gSaveBlock2Ptr->pokedex.spindaPersonality;
+            return gSaveBlock2Ptr->pokedex.coredramon_bluePersonality;
     }
     else
     {

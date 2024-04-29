@@ -5362,8 +5362,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_CLOCKMON_FUSION
 
-#if P_FAMILY_SPINDA
-    [SPECIES_SPINDA] =
+#if P_FAMILY_COREDRAMON_BLUE
+    [SPECIES_COREDRAMON_BLUE] =
     {
         .baseHP        = 60,
         .baseAttack    = 60,
@@ -5383,9 +5383,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .abilities = { ABILITY_OWN_TEMPO, ABILITY_TANGLED_FEET, ABILITY_CONTRARY },
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
-        .speciesName = _("Spinda"),
-        .cryId = CRY_SPINDA,
-        .natDexNum = NATIONAL_DEX_SPINDA,
+        .speciesName = _("Coredramon_blue"),
+        .cryId = CRY_COREDRAMON_BLUE,
+        .natDexNum = NATIONAL_DEX_COREDRAMON_BLUE,
         .categoryName = _("Spot Panda"),
         .height = 11,
         .weight = 50,
@@ -5398,24 +5398,24 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Spinda,
+        .frontPic = gMonFrontPic_Coredramon_blue,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Spinda,
+        .frontAnimFrames = sAnims_Coredramon_blue,
         .frontAnimId = ANIM_CIRCLE_INTO_BG,
-        .backPic = gMonBackPic_Spinda,
+        .backPic = gMonBackPic_Coredramon_blue,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_CIRCLE_COUNTERCLOCKWISE,
-        .palette = gMonPalette_Spinda,
-        .shinyPalette = gMonShinyPalette_Spinda,
-        .iconSprite = gMonIcon_Spinda,
+        .palette = gMonPalette_Coredramon_blue,
+        .shinyPalette = gMonShinyPalette_Coredramon_blue,
+        .iconSprite = gMonIcon_Coredramon_blue,
         .iconPalIndex = 1,
-        FOOTPRINT(Spinda)
-        .levelUpLearnset = sSpindaLevelUpLearnset,
-        .teachableLearnset = sSpindaTeachableLearnset,
+        FOOTPRINT(Coredramon_blue)
+        .levelUpLearnset = sCoredramon_blueLevelUpLearnset,
+        .teachableLearnset = sCoredramon_blueTeachableLearnset,
     },
-#endif //P_FAMILY_SPINDA
+#endif //P_FAMILY_COREDRAMON_BLUE
 
 #if P_FAMILY_TRAPINCH
     [SPECIES_TRAPINCH] =
