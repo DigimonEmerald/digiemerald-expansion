@@ -249,7 +249,7 @@
 #define P_FAMILY_FLYMON                   P_GEN_3_POKEMON
 #define P_FAMILY_FUGAMON                  P_GEN_3_POKEMON
 #define P_FAMILY_GARGOMON                P_GEN_3_POKEMON
-#define P_FAMILY_REGICE                  P_GEN_3_POKEMON
+#define P_FAMILY_GARGOYLMON                  P_GEN_3_POKEMON
 #define P_FAMILY_REGISTEEL               P_GEN_3_POKEMON
 #define P_FAMILY_LATIAS                  P_GEN_3_POKEMON
 #define P_FAMILY_LATIOS                  P_GEN_3_POKEMON

@@ -380,7 +380,7 @@
 #define SPECIES_GANEMON                                  375
 #define SPECIES_GAOGAMON                               376
 #define SPECIES_GARGOMON                                377
-#define SPECIES_REGICE                                  378
+#define SPECIES_GARGOYLMON                                  378
 #define SPECIES_REGISTEEL                               379
 #define SPECIES_LATIAS                                  380
 #define SPECIES_LATIOS                                  381

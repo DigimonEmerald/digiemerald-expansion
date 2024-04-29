@@ -8916,8 +8916,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_GARGOMON
 
-#if P_FAMILY_REGICE
-    [SPECIES_REGICE] =
+#if P_FAMILY_GARGOYLMON
+    [SPECIES_GARGOYLMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 50,
@@ -8942,9 +8942,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_CLEAR_BODY, ABILITY_NONE, ABILITY_ICE_BODY },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Regice"),
-        .cryId = CRY_REGICE,
-        .natDexNum = NATIONAL_DEX_REGICE,
+        .speciesName = _("Gargoylmon"),
+        .cryId = CRY_GARGOYLMON,
+        .natDexNum = NATIONAL_DEX_GARGOYLMON,
         .categoryName = _("Iceberg"),
         .height = 18,
         .weight = 1750,
@@ -8957,25 +8957,25 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 301,
         .trainerOffset = 2,
-        .frontPic = gMonFrontPic_Regice,
+        .frontPic = gMonFrontPic_Gargoylmon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Regice,
+        .frontAnimFrames = sAnims_Gargoylmon,
         .frontAnimId = ANIM_H_SLIDE_SLOW,
-        .backPic = gMonBackPic_Regice,
+        .backPic = gMonBackPic_Gargoylmon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Regice,
-        .shinyPalette = gMonShinyPalette_Regice,
-        .iconSprite = gMonIcon_Regice,
+        .palette = gMonPalette_Gargoylmon,
+        .shinyPalette = gMonShinyPalette_Gargoylmon,
+        .iconSprite = gMonIcon_Gargoylmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Regice)
+        FOOTPRINT(Gargoylmon)
         .isLegendary = TRUE,
-        .levelUpLearnset = sRegiceLevelUpLearnset,
-        .teachableLearnset = sRegiceTeachableLearnset,
+        .levelUpLearnset = sGargoylmonLevelUpLearnset,
+        .teachableLearnset = sGargoylmonTeachableLearnset,
     },
-#endif //P_FAMILY_REGICE
+#endif //P_FAMILY_GARGOYLMON
 
 #if P_FAMILY_REGISTEEL
     [SPECIES_REGISTEEL] =

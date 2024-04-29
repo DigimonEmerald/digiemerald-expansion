@@ -2807,11 +2807,11 @@ Cry_Gargomon::
 	.incbin "sound/direct_sound_samples/cries/gargomon.bin"
 .endif @ P_FAMILY_GARGOMON
 
-.if P_FAMILY_REGICE == TRUE
+.if P_FAMILY_GARGOYLMON == TRUE
 	.align 2
-Cry_Regice::
-	.incbin "sound/direct_sound_samples/cries/regice.bin"
-.endif @ P_FAMILY_REGICE
+Cry_Gargoylmon::
+	.incbin "sound/direct_sound_samples/cries/gargoylmon.bin"
+.endif @ P_FAMILY_GARGOYLMON
 
 .if P_FAMILY_REGISTEEL == TRUE
 	.align 2

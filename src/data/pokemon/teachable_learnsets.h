@@ -17477,8 +17477,8 @@ static const u16 sGargomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GARGOMON
 
-#if P_FAMILY_REGICE
-static const u16 sRegiceTeachableLearnset[] = {
+#if P_FAMILY_GARGOYLMON
+static const u16 sGargoylmonTeachableLearnset[] = {
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
     MOVE_DOUBLE_TEAM,
@@ -17522,7 +17522,7 @@ static const u16 sRegiceTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_REGICE
+#endif //P_FAMILY_GARGOYLMON
 
 #if P_FAMILY_REGISTEEL
 static const u16 sRegisteelTeachableLearnset[] = {

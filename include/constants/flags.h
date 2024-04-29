@@ -475,7 +475,7 @@
 #define FLAG_MOVE_TUTOR_TAUGHT_DOUBLE_EDGE   0x1B9
 #define FLAG_MOVE_TUTOR_TAUGHT_EXPLOSION     0x1BA
 #define FLAG_DEFEATED_GARGOMON               0x1BB
-#define FLAG_DEFEATED_REGICE                 0x1BC
+#define FLAG_DEFEATED_GARGOYLMON                 0x1BC
 #define FLAG_DEFEATED_REGISTEEL              0x1BD
 #define FLAG_DEFEATED_KYOGRE                 0x1BE
 #define FLAG_DEFEATED_GROUDON                0x1BF
@@ -980,7 +980,7 @@
 #define FLAG_HIDE_FORTREE_CITY_HOUSE_4_ANGEMON                      0x3A5
 #define FLAG_HIDE_MOSSDEEP_CITY_HOUSE_2_ANGEMON                     0x3A6
 #define FLAG_HIDE_GARGOMON                                          0x3A7
-#define FLAG_HIDE_REGICE                                            0x3A8
+#define FLAG_HIDE_GARGOYLMON                                            0x3A8
 #define FLAG_HIDE_REGISTEEL                                         0x3A9
 #define FLAG_HIDE_METEOR_FALLS_TEAM_AQUA                            0x3AA
 #define FLAG_HIDE_METEOR_FALLS_TEAM_MAGMA                           0x3AB
@@ -1436,7 +1436,7 @@
 #define FLAG_SYS_ENC_DOWN_ITEM                      (SYSTEM_FLAGS + 0x4E)
 #define FLAG_SYS_BRAILLE_DIG                        (SYSTEM_FLAGS + 0x4F)
 #define FLAG_SYS_GARGOMON_PUZZLE_COMPLETED          (SYSTEM_FLAGS + 0x50)
-#define FLAG_SYS_BRAILLE_REGICE_COMPLETED           (SYSTEM_FLAGS + 0x51)
+#define FLAG_SYS_BRAILLE_GARGOYLMON_COMPLETED           (SYSTEM_FLAGS + 0x51)
 #define FLAG_SYS_REGISTEEL_PUZZLE_COMPLETED         (SYSTEM_FLAGS + 0x52)
 #define FLAG_ENABLE_SHIP_SOUTHERN_ISLAND            (SYSTEM_FLAGS + 0x53)
 
@@ -1649,8 +1649,8 @@
 
 // Temp flag aliases
 #define FLAG_TEMP_SKIP_GABBY_INTERVIEW          FLAG_TEMP_1
-#define FLAG_TEMP_REGICE_PUZZLE_STARTED         FLAG_TEMP_2
-#define FLAG_TEMP_REGICE_PUZZLE_FAILED          FLAG_TEMP_3
+#define FLAG_TEMP_GARGOYLMON_PUZZLE_STARTED         FLAG_TEMP_2
+#define FLAG_TEMP_GARGOYLMON_PUZZLE_FAILED          FLAG_TEMP_3
 #define FLAG_TEMP_HIDE_MIRAGE_ISLAND_BERRY_TREE FLAG_TEMP_11
 
 #endif // GUARD_CONSTANTS_FLAGS_H

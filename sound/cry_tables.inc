@@ -1037,9 +1037,9 @@ gCryTable::
 .if P_FAMILY_GARGOMON == TRUE
 	cry Cry_Gargomon
 .endif @ P_FAMILY_GARGOMON
-.if P_FAMILY_REGICE == TRUE
-	cry Cry_Regice
-.endif @ P_FAMILY_REGICE
+.if P_FAMILY_GARGOYLMON == TRUE
+	cry Cry_Gargoylmon
+.endif @ P_FAMILY_GARGOYLMON
 .if P_FAMILY_REGISTEEL == TRUE
 	cry Cry_Registeel
 .endif @ P_FAMILY_REGISTEEL
@@ -3463,9 +3463,9 @@ gCryTable_Reverse::
 .if P_FAMILY_GARGOMON == TRUE
 	cry_reverse Cry_Gargomon
 .endif @ P_FAMILY_GARGOMON
-.if P_FAMILY_REGICE == TRUE
-	cry_reverse Cry_Regice
-.endif @ P_FAMILY_REGICE
+.if P_FAMILY_GARGOYLMON == TRUE
+	cry_reverse Cry_Gargoylmon
+.endif @ P_FAMILY_GARGOYLMON
 .if P_FAMILY_REGISTEEL == TRUE
 	cry_reverse Cry_Registeel
 .endif @ P_FAMILY_REGISTEEL

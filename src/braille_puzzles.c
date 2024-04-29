@@ -14,7 +14,7 @@
 
 EWRAM_DATA static bool8 sIsRegisteelPuzzle = 0;
 
-static const u8 sRegicePathCoords[][2] =
+static const u8 sGargoylmonPathCoords[][2] =
 {
     {4,  21},
     {5,  21},
@@ -278,52 +278,52 @@ bool8 FldEff_UsePuzzleEffect(void)
     return FALSE;
 }
 
-// The puzzle to unlock Regice's cave requires the player to interact with the braille message on the back wall,
+// The puzzle to unlock Gargoylmon's cave requires the player to interact with the braille message on the back wall,
 // step on every space on the perimeter of the cave (and only those spaces) then return to the back wall.
-bool8 ShouldDoBrailleRegicePuzzle(void)
+bool8 ShouldDoBrailleGargoylmonPuzzle(void)
 {
     u8 i;
 
     if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ISLAND_CAVE)
         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ISLAND_CAVE))
     {
-        if (FlagGet(FLAG_SYS_BRAILLE_REGICE_COMPLETED))
+        if (FlagGet(FLAG_SYS_BRAILLE_GARGOYLMON_COMPLETED))
             return FALSE;
         // Set when the player interacts with the braille message
-        if (FlagGet(FLAG_TEMP_REGICE_PUZZLE_STARTED) == FALSE)
+        if (FlagGet(FLAG_TEMP_GARGOYLMON_PUZZLE_STARTED) == FALSE)
             return FALSE;
         // Cleared when the player interacts with the braille message
-        if (FlagGet(FLAG_TEMP_REGICE_PUZZLE_FAILED) == TRUE)
+        if (FlagGet(FLAG_TEMP_GARGOYLMON_PUZZLE_FAILED) == TRUE)
             return FALSE;
 
-        for (i = 0; i < ARRAY_COUNT(sRegicePathCoords); i++)
+        for (i = 0; i < ARRAY_COUNT(sGargoylmonPathCoords); i++)
         {
-            u8 xPos = sRegicePathCoords[i][0];
-            u8 yPos = sRegicePathCoords[i][1];
+            u8 xPos = sGargoylmonPathCoords[i][0];
+            u8 yPos = sGargoylmonPathCoords[i][1];
             if (gSaveBlock1Ptr->pos.x == xPos && gSaveBlock1Ptr->pos.y == yPos)
             {
                 // Player is standing on a correct space, set the corresponding bit
                 if (i < 16)
                 {
-                    u16 val = VarGet(VAR_REGICE_STEPS_1);
+                    u16 val = VarGet(VAR_GARGOYLMON_STEPS_1);
                     val |= 1 << i;
-                    VarSet(VAR_REGICE_STEPS_1, val);
+                    VarSet(VAR_GARGOYLMON_STEPS_1, val);
                 }
                 else if (i < 32)
                 {
-                    u16 val = VarGet(VAR_REGICE_STEPS_2);
+                    u16 val = VarGet(VAR_GARGOYLMON_STEPS_2);
                     val |= 1 << (i - 16);
-                    VarSet(VAR_REGICE_STEPS_2, val);
+                    VarSet(VAR_GARGOYLMON_STEPS_2, val);
                 }
                 else
                 {
-                    u16 val = VarGet(VAR_REGICE_STEPS_3);
+                    u16 val = VarGet(VAR_GARGOYLMON_STEPS_3);
                     val |= 1 << (i - 32);
-                    VarSet(VAR_REGICE_STEPS_3, val);
+                    VarSet(VAR_GARGOYLMON_STEPS_3, val);
                 }
 
                 // Make sure a full lap has been completed. There are 36 steps in a lap, so 16+16+4 bits to check across the 3 vars.
-                if (VarGet(VAR_REGICE_STEPS_1) != 0xFFFF || VarGet(VAR_REGICE_STEPS_2) != 0xFFFF || VarGet(VAR_REGICE_STEPS_3) != 0xF)
+                if (VarGet(VAR_GARGOYLMON_STEPS_1) != 0xFFFF || VarGet(VAR_GARGOYLMON_STEPS_2) != 0xFFFF || VarGet(VAR_GARGOYLMON_STEPS_3) != 0xF)
                     return FALSE;
 
                 // A lap has been completed, the puzzle is complete when the player returns to the braille message.
@@ -335,8 +335,8 @@ bool8 ShouldDoBrailleRegicePuzzle(void)
         }
 
         // Player stepped on an incorrect space, puzzle failed.
-        FlagSet(FLAG_TEMP_REGICE_PUZZLE_FAILED);
-        FlagClear(FLAG_TEMP_REGICE_PUZZLE_STARTED);
+        FlagSet(FLAG_TEMP_GARGOYLMON_PUZZLE_FAILED);
+        FlagClear(FLAG_TEMP_GARGOYLMON_PUZZLE_STARTED);
     }
 
     return FALSE;

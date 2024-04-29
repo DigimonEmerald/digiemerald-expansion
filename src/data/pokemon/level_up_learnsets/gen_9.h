@@ -9770,8 +9770,8 @@ static const struct LevelUpMove sGargomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_GARGOMON
 
-#if P_FAMILY_REGICE
-static const struct LevelUpMove sRegiceLevelUpLearnset[] = {
+#if P_FAMILY_GARGOYLMON
+static const struct LevelUpMove sGargoylmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CHARGE_BEAM),
     LEVEL_UP_MOVE( 1, MOVE_ICY_WIND),
     LEVEL_UP_MOVE( 6, MOVE_BULLDOZE),
@@ -9789,7 +9789,7 @@ static const struct LevelUpMove sRegiceLevelUpLearnset[] = {
     LEVEL_UP_MOVE(78, MOVE_EXPLOSION),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_REGICE
+#endif //P_FAMILY_GARGOYLMON
 
 #if P_FAMILY_REGISTEEL
 static const struct LevelUpMove sRegisteelLevelUpLearnset[] = {

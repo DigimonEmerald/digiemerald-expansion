@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Future Sight uses Sp. Atk stat of the original user without 
     GIVEN {
         PLAYER(SPECIES_PETITMON) { Item(item); }
         PLAYER(SPECIES_PICHIMON) { Item(item); }
-        OPPONENT(SPECIES_REGICE);
+        OPPONENT(SPECIES_GARGOYLMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SEED_FLARE, WITH_RNG(RNG_SECONDARY_EFFECT, FALSE)); }
         TURN { MOVE(player, MOVE_FUTURE_SIGHT); }
@@ -30,7 +30,7 @@ SINGLE_BATTLE_TEST("Future Sight uses Sp. Atk stat of the original user without 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SEED_FLARE, player);
         HP_BAR(opponent, captureDamage: &seedFlareDmg);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FUTURE_SIGHT, player);
-        MESSAGE("Foe Regice took the Future Sight attack!");
+        MESSAGE("Foe Gargoylmon took the Future Sight attack!");
         HP_BAR(opponent, captureDamage: &futureSightDmg);
     } THEN {
         EXPECT_EQ(seedFlareDmg, futureSightDmg);
@@ -45,7 +45,7 @@ SINGLE_BATTLE_TEST("Future Sight is not boosted by Life Orb is original user if 
     GIVEN {
         PLAYER(SPECIES_PETITMON);
         PLAYER(SPECIES_PICHIMON) { Item(ITEM_LIFE_ORB); }
-        OPPONENT(SPECIES_REGICE);
+        OPPONENT(SPECIES_GARGOYLMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SEED_FLARE, WITH_RNG(RNG_SECONDARY_EFFECT, FALSE)); }
         TURN { MOVE(player, MOVE_FUTURE_SIGHT); }
@@ -56,7 +56,7 @@ SINGLE_BATTLE_TEST("Future Sight is not boosted by Life Orb is original user if 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SEED_FLARE, player);
         HP_BAR(opponent, captureDamage: &seedFlareDmg);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FUTURE_SIGHT, player);
-        MESSAGE("Foe Regice took the Future Sight attack!");
+        MESSAGE("Foe Gargoylmon took the Future Sight attack!");
         HP_BAR(opponent, captureDamage: &futureSightDmg);
         NOT MESSAGE("Pichimon was hurt by its Life Orb!");
     } THEN {
@@ -72,7 +72,7 @@ SINGLE_BATTLE_TEST("Future Sight receives STAB from party mon")
     GIVEN {
         PLAYER(SPECIES_APEMON);
         PLAYER(SPECIES_PICHIMON);
-        OPPONENT(SPECIES_REGICE);
+        OPPONENT(SPECIES_GARGOYLMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SEED_FLARE, WITH_RNG(RNG_SECONDARY_EFFECT, FALSE)); }
         TURN { MOVE(player, MOVE_FUTURE_SIGHT); }

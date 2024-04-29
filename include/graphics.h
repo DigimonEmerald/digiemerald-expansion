@@ -171,8 +171,8 @@ extern const u32 gDecorIcon_ChamblemonDoll[];
 extern const u32 gDecorIconPalette_ChamblemonDoll[];
 extern const u32 gDecorIcon_GargomonDoll[];
 extern const u32 gDecorIconPalette_GargomonDoll[];
-extern const u32 gDecorIcon_RegiceDoll[];
-extern const u32 gDecorIconPalette_RegiceDoll[];
+extern const u32 gDecorIcon_GargoylmonDoll[];
+extern const u32 gDecorIconPalette_GargoylmonDoll[];
 extern const u32 gDecorIcon_RegisteelDoll[];
 extern const u32 gDecorIconPalette_RegisteelDoll[];
 
