@@ -2446,8 +2446,8 @@ const u16 gEggMoves[] = {
         MOVE_QUICK_GUARD),
 #endif //P_FAMILY_SAWKUWAMON
 
-#if P_FAMILY_ELECTRIKE
-    egg_moves(ELECTRIKE,
+#if P_FAMILY_BOARMON
+    egg_moves(BOARMON,
         MOVE_CRUNCH,
         MOVE_HEADBUTT,
         MOVE_UPROAR,
@@ -2462,7 +2462,7 @@ const u16 gEggMoves[] = {
         MOVE_SHOCK_WAVE,
         MOVE_FLAME_BURST,
         MOVE_EERIE_IMPULSE),
-#endif //P_FAMILY_ELECTRIKE
+#endif //P_FAMILY_BOARMON
 
 #if P_FAMILY_PLUSLE
     egg_moves(PLUSLE,

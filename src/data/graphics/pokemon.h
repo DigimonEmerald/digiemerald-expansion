@@ -4600,14 +4600,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SAWKUWAMON
 
-#if P_FAMILY_ELECTRIKE
-    const u32 gMonFrontPic_Electrike[] = INCBIN_U32("graphics/pokemon/electrike/anim_front.4bpp.lz");
-    const u32 gMonPalette_Electrike[] = INCBIN_U32("graphics/pokemon/electrike/normal.gbapal.lz");
-    const u32 gMonBackPic_Electrike[] = INCBIN_U32("graphics/pokemon/electrike/back.4bpp.lz");
-    const u32 gMonShinyPalette_Electrike[] = INCBIN_U32("graphics/pokemon/electrike/shiny.gbapal.lz");
-    const u8 gMonIcon_Electrike[] = INCBIN_U8("graphics/pokemon/electrike/icon.4bpp");
+#if P_FAMILY_BOARMON
+    const u32 gMonFrontPic_Boarmon[] = INCBIN_U32("graphics/pokemon/boarmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Boarmon[] = INCBIN_U32("graphics/pokemon/boarmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Boarmon[] = INCBIN_U32("graphics/pokemon/boarmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Boarmon[] = INCBIN_U32("graphics/pokemon/boarmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Boarmon[] = INCBIN_U8("graphics/pokemon/boarmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Electrike[] = INCBIN_U8("graphics/pokemon/electrike/footprint.1bpp");
+    const u8 gMonFootprint_Boarmon[] = INCBIN_U8("graphics/pokemon/boarmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Manectric[] = INCBIN_U32("graphics/pokemon/manectric/anim_front.4bpp.lz");
@@ -4626,7 +4626,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_ManectricMega[] = INCBIN_U32("graphics/pokemon/manectric/mega/shiny.gbapal.lz");
     const u8 gMonIcon_ManectricMega[] = INCBIN_U8("graphics/pokemon/manectric/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_ELECTRIKE
+#endif //P_FAMILY_BOARMON
 
 #if P_FAMILY_PLUSLE
     const u32 gMonFrontPic_Plusle[] = INCBIN_U32("graphics/pokemon/plusle/anim_front.4bpp.lz");

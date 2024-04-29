@@ -829,7 +829,7 @@ static const u16 sBlimpmonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_SAWKUWAMON
 
-#if P_FAMILY_ELECTRIKE
+#if P_FAMILY_BOARMON
 static const u16 sManectricFormSpeciesIdTable[] = {
     SPECIES_MANECTRIC,
 #if P_MEGA_EVOLUTIONS
@@ -837,7 +837,7 @@ static const u16 sManectricFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_ELECTRIKE
+#endif //P_FAMILY_BOARMON
 
 #if P_FAMILY_CARVANHA
 static const u16 sSharpedoFormSpeciesIdTable[] = {

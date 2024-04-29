@@ -4124,8 +4124,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(BlimpmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SAWKUWAMON
 
-#if P_FAMILY_ELECTRIKE
-static const union AnimCmd sAnim_Electrike_1[] =
+#if P_FAMILY_BOARMON
+static const union AnimCmd sAnim_Boarmon_1[] =
 {
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_FRAME(1, 25),
@@ -4148,7 +4148,7 @@ static const union AnimCmd sAnim_Manectric_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(ManectricMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_ELECTRIKE
+#endif //P_FAMILY_BOARMON
 
 #if P_FAMILY_PLUSLE
 static const union AnimCmd sAnim_Plusle_1[] =
@@ -11145,13 +11145,13 @@ SINGLE_ANIMATION(Blimpmon);
 SINGLE_ANIMATION(BlimpmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SAWKUWAMON
-#if P_FAMILY_ELECTRIKE
-SINGLE_ANIMATION(Electrike);
+#if P_FAMILY_BOARMON
+SINGLE_ANIMATION(Boarmon);
 SINGLE_ANIMATION(Manectric);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(ManectricMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_ELECTRIKE
+#endif //P_FAMILY_BOARMON
 #if P_FAMILY_PLUSLE
 SINGLE_ANIMATION(Plusle);
 #endif //P_FAMILY_PLUSLE

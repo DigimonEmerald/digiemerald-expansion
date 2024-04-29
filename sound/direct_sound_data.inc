@@ -2372,10 +2372,10 @@ Cry_BlimpmonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SAWKUWAMON
 
-.if P_FAMILY_ELECTRIKE == TRUE
+.if P_FAMILY_BOARMON == TRUE
 	.align 2
-Cry_Electrike::
-	.incbin "sound/direct_sound_samples/cries/electrike.bin"
+Cry_Boarmon::
+	.incbin "sound/direct_sound_samples/cries/boarmon.bin"
 
 	.align 2
 Cry_Manectric::
@@ -2386,7 +2386,7 @@ Cry_Manectric::
 Cry_ManectricMega::
 	.incbin "sound/direct_sound_samples/cries/manectric_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_ELECTRIKE
+.endif @ P_FAMILY_BOARMON
 
 .if P_FAMILY_PLUSLE == TRUE
 	.align 2

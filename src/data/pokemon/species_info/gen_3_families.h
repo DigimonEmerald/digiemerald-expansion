@@ -4045,8 +4045,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_SAWKUWAMON
 
-#if P_FAMILY_ELECTRIKE
-    [SPECIES_ELECTRIKE] =
+#if P_FAMILY_BOARMON
+    [SPECIES_BOARMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 45,
@@ -4065,9 +4065,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_STATIC, ABILITY_LIGHTNING_ROD, ABILITY_MINUS },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Electrike"),
-        .cryId = CRY_ELECTRIKE,
-        .natDexNum = NATIONAL_DEX_ELECTRIKE,
+        .speciesName = _("Boarmon"),
+        .cryId = CRY_BOARMON,
+        .natDexNum = NATIONAL_DEX_BOARMON,
         .categoryName = _("Lightning"),
         .height = 6,
         .weight = 152,
@@ -4080,22 +4080,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Electrike,
+        .frontPic = gMonFrontPic_Boarmon,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Electrike,
+        .frontAnimFrames = sAnims_Boarmon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Electrike,
+        .backPic = gMonBackPic_Boarmon,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Electrike,
-        .shinyPalette = gMonShinyPalette_Electrike,
-        .iconSprite = gMonIcon_Electrike,
+        .palette = gMonPalette_Boarmon,
+        .shinyPalette = gMonShinyPalette_Boarmon,
+        .iconSprite = gMonIcon_Boarmon,
         .iconPalIndex = 1,
-        FOOTPRINT(Electrike)
-        .levelUpLearnset = sElectrikeLevelUpLearnset,
-        .teachableLearnset = sElectrikeTeachableLearnset,
+        FOOTPRINT(Boarmon)
+        .levelUpLearnset = sBoarmonLevelUpLearnset,
+        .teachableLearnset = sBoarmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_MANECTRIC}),
     },
 
@@ -4208,7 +4208,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .formChangeTable = sManectricFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_ELECTRIKE
+#endif //P_FAMILY_BOARMON
 
 #if P_FAMILY_PLUSLE
     [SPECIES_PLUSLE] =

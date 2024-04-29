@@ -847,13 +847,13 @@ gCryTable::
 	cry Cry_BlimpmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SAWKUWAMON
-.if P_FAMILY_ELECTRIKE == TRUE
-	cry Cry_Electrike
+.if P_FAMILY_BOARMON == TRUE
+	cry Cry_Boarmon
 	cry Cry_Manectric
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_ManectricMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_ELECTRIKE
+.endif @ P_FAMILY_BOARMON
 .if P_FAMILY_PLUSLE == TRUE
 	cry Cry_Plusle
 .endif @ P_FAMILY_PLUSLE
@@ -3273,13 +3273,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_BlimpmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_SAWKUWAMON
-.if P_FAMILY_ELECTRIKE == TRUE
-	cry_reverse Cry_Electrike
+.if P_FAMILY_BOARMON == TRUE
+	cry_reverse Cry_Boarmon
 	cry_reverse Cry_Manectric
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_ManectricMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_ELECTRIKE
+.endif @ P_FAMILY_BOARMON
 .if P_FAMILY_PLUSLE == TRUE
 	cry_reverse Cry_Plusle
 .endif @ P_FAMILY_PLUSLE
