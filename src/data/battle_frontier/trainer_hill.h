@@ -1877,7 +1877,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         },
                                     [5] =
                                         {
-                                            .species = SPECIES_ALTARIA,
+                                            .species = SPECIES_DARMAILMON,
                                             .heldItem = ITEM_BRIGHT_POWDER,
                                             .moves = {MOVE_DRAGON_DANCE, MOVE_AERIAL_ACE, MOVE_ATTRACT, MOVE_NONE},
                                             .hpEV = 85,
@@ -1895,7 +1895,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 5,
                                             .abilityNum = 0,
                                             .personality = 0x0,
-                                            .nickname = _("ALTARIA"),
+                                            .nickname = _("DARMAILMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                 },
@@ -4454,7 +4454,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [2] =
                                         {
-                                            .species = SPECIES_ALTARIA,
+                                            .species = SPECIES_DARMAILMON,
                                             .heldItem = ITEM_KINGS_ROCK,
                                             .moves = {MOVE_PERISH_SONG, MOVE_PROTECT, MOVE_DRAGON_CLAW, MOVE_FIRE_BLAST},
                                             .hpEV = 252,
@@ -4469,7 +4469,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x0,
-                                            .nickname = _("ALTARIA"),
+                                            .nickname = _("DARMAILMON"),
                                             .friendship = 0,
                                         },
                                     [3] =

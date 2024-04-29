@@ -910,8 +910,8 @@ const u32 gItemIconPalette_Centarumonnite[] = INCBIN_U32("graphics/items/icon_pa
 const u32 gItemIcon_Citramonite[] = INCBIN_U32("graphics/items/icons/citramonite.4bpp.lz");
 const u32 gItemIconPalette_Citramonite[] = INCBIN_U32("graphics/items/icon_palettes/citramonite.gbapal.lz");
 
-const u32 gItemIcon_Altarianite[] = INCBIN_U32("graphics/items/icons/altarianite.4bpp.lz");
-const u32 gItemIconPalette_Altarianite[] = INCBIN_U32("graphics/items/icon_palettes/altarianite.gbapal.lz");
+const u32 gItemIcon_Darmailmonnite[] = INCBIN_U32("graphics/items/icons/darmailmonnite.4bpp.lz");
+const u32 gItemIconPalette_Darmailmonnite[] = INCBIN_U32("graphics/items/icon_palettes/darmailmonnite.gbapal.lz");
 
 const u32 gItemIcon_Banettite[] = INCBIN_U32("graphics/items/icons/banettite.4bpp.lz");
 const u32 gItemIconPalette_Banettite[] = INCBIN_U32("graphics/items/icon_palettes/banettite.gbapal.lz");

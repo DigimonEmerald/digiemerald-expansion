@@ -51,7 +51,7 @@ SINGLE_BATTLE_TEST("Plasma Fists type-changing effect is applied after Pixilate"
 {
     GIVEN {
         PLAYER(SPECIES_VIXIMON) { Speed(300); };
-        OPPONENT(SPECIES_ALTARIA) { Speed(1); Item(ITEM_ALTARIANITE); }
+        OPPONENT(SPECIES_DARMAILMON) { Speed(1); Item(ITEM_DARMAILMONNITE); }
     } WHEN {
         TURN { MOVE(player, MOVE_PLASMA_FISTS); MOVE(opponent, MOVE_EMBER, megaEvolve: TRUE); }
     } SCENE {
@@ -59,7 +59,7 @@ SINGLE_BATTLE_TEST("Plasma Fists type-changing effect is applied after Pixilate"
         MESSAGE("Viximon used Plasma Fists!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PLASMA_FISTS, player);
         MESSAGE("A deluge of ions showers the battlefield!");
-        MESSAGE("Foe Altaria used Ember!");
+        MESSAGE("Foe Darmailmon used Ember!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EMBER, opponent);
         NOT MESSAGE("It's super effective!");
     }

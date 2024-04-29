@@ -15750,7 +15750,7 @@ static const u16 sDarlizamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sAltariaTeachableLearnset[] = {
+static const u16 sDarmailmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,

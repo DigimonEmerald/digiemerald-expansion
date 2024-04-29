@@ -335,7 +335,7 @@
 #define SPECIES_DARCMON                                  331
 #define SPECIES_TRAILMON_DARK                                332
 #define SPECIES_DARLIZAMON                                  333
-#define SPECIES_ALTARIA                                 334
+#define SPECIES_DARMAILMON                                 334
 #define SPECIES_ZANGOOSE                                335
 #define SPECIES_SEVIPER                                 336
 #define SPECIES_LUNATONE                                337
@@ -996,7 +996,7 @@
 #define SPECIES_BOMNANIMON_MEGA                          935
 #define SPECIES_CENTARUMON_MEGA                           936
 #define SPECIES_CITRAMON_MEGA                           937
-#define SPECIES_ALTARIA_MEGA                            938
+#define SPECIES_DARMAILMON_MEGA                            938
 #define SPECIES_BANETTE_MEGA                            939
 #define SPECIES_ABSOL_MEGA                              940
 #define SPECIES_GLALIE_MEGA                             941

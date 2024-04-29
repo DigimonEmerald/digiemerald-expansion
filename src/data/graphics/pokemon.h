@@ -4920,21 +4920,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Darlizamon[] = INCBIN_U8("graphics/pokemon/darlizamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Altaria[] = INCBIN_U32("graphics/pokemon/altaria/anim_front.4bpp.lz");
-    const u32 gMonPalette_Altaria[] = INCBIN_U32("graphics/pokemon/altaria/normal.gbapal.lz");
-    const u32 gMonBackPic_Altaria[] = INCBIN_U32("graphics/pokemon/altaria/back.4bpp.lz");
-    const u32 gMonShinyPalette_Altaria[] = INCBIN_U32("graphics/pokemon/altaria/shiny.gbapal.lz");
-    const u8 gMonIcon_Altaria[] = INCBIN_U8("graphics/pokemon/altaria/icon.4bpp");
+    const u32 gMonFrontPic_Darmailmon[] = INCBIN_U32("graphics/pokemon/darmailmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Darmailmon[] = INCBIN_U32("graphics/pokemon/darmailmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Darmailmon[] = INCBIN_U32("graphics/pokemon/darmailmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Darmailmon[] = INCBIN_U32("graphics/pokemon/darmailmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Darmailmon[] = INCBIN_U8("graphics/pokemon/darmailmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Altaria[] = INCBIN_U8("graphics/pokemon/altaria/footprint.1bpp");
+    const u8 gMonFootprint_Darmailmon[] = INCBIN_U8("graphics/pokemon/darmailmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_AltariaMega[] = INCBIN_U32("graphics/pokemon/altaria/mega/front.4bpp.lz");
-    const u32 gMonPalette_AltariaMega[] = INCBIN_U32("graphics/pokemon/altaria/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_AltariaMega[] = INCBIN_U32("graphics/pokemon/altaria/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_AltariaMega[] = INCBIN_U32("graphics/pokemon/altaria/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_AltariaMega[] = INCBIN_U8("graphics/pokemon/altaria/mega/icon.4bpp");
+    const u32 gMonFrontPic_DarmailmonMega[] = INCBIN_U32("graphics/pokemon/darmailmon/mega/front.4bpp.lz");
+    const u32 gMonPalette_DarmailmonMega[] = INCBIN_U32("graphics/pokemon/darmailmon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_DarmailmonMega[] = INCBIN_U32("graphics/pokemon/darmailmon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_DarmailmonMega[] = INCBIN_U32("graphics/pokemon/darmailmon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_DarmailmonMega[] = INCBIN_U8("graphics/pokemon/darmailmon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DARLIZAMON
 

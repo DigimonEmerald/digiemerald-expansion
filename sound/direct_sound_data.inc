@@ -2532,13 +2532,13 @@ Cry_Darlizamon::
 	.incbin "sound/direct_sound_samples/cries/darlizamon.bin"
 
 	.align 2
-Cry_Altaria::
-	.incbin "sound/direct_sound_samples/cries/altaria.bin"
+Cry_Darmailmon::
+	.incbin "sound/direct_sound_samples/cries/darmailmon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_AltariaMega::
-	.incbin "sound/direct_sound_samples/cries/altaria_mega.bin"
+Cry_DarmailmonMega::
+	.incbin "sound/direct_sound_samples/cries/darmailmon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_DARLIZAMON
 

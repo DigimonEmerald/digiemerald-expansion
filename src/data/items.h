@@ -5127,14 +5127,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_ALTARIANITE] =
+    [ITEM_DARMAILMONNITE] =
     {
-        .name = _("Altarianite"),
+        .name = _("Darmailmonnite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Altaria to Mega\n"
+            "Darmailmon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

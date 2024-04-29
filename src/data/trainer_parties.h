@@ -3177,7 +3177,7 @@ static const struct TrainerMon sParty_Drake[] = {
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .lvl = 54,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_DOUBLE_EDGE, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE, MOVE_AERIAL_ACE}
     },
@@ -3377,7 +3377,7 @@ static const struct TrainerMon sParty_Winona1[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 33,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_EARTHQUAKE, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE, MOVE_AERIAL_ACE}
     }
@@ -4872,12 +4872,12 @@ static const struct TrainerMon sParty_Nicolas1[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 37,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 37,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     }
 };
 
@@ -4885,12 +4885,12 @@ static const struct TrainerMon sParty_Nicolas2[] = {
     {
     .iv = TRAINER_PARTY_IVS(13, 13, 13, 13, 13, 13),
     .lvl = 41,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(13, 13, 13, 13, 13, 13),
     .lvl = 41,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     }
 };
 
@@ -4898,12 +4898,12 @@ static const struct TrainerMon sParty_Nicolas3[] = {
     {
     .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
     .lvl = 44,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
     .lvl = 44,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     }
 };
 
@@ -4916,12 +4916,12 @@ static const struct TrainerMon sParty_Nicolas4[] = {
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
     .lvl = 46,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(15, 15, 15, 15, 15, 15),
     .lvl = 46,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     }
 };
 
@@ -4929,13 +4929,13 @@ static const struct TrainerMon sParty_Nicolas5[] = {
     {
     .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),
     .lvl = 49,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     .heldItem = ITEM_NONE
     },
     {
     .iv = TRAINER_PARTY_IVS(17, 17, 17, 17, 17, 17),
     .lvl = 49,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     .heldItem = ITEM_NONE
     },
     {
@@ -5096,7 +5096,7 @@ static const struct TrainerMon sParty_Robert3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 35,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     }
 };
 
@@ -5109,7 +5109,7 @@ static const struct TrainerMon sParty_Robert4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 38,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     }
 };
 
@@ -5117,7 +5117,7 @@ static const struct TrainerMon sParty_Robert5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 41,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -5909,7 +5909,7 @@ static const struct TrainerMon sParty_Diana5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 40,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     }
 };
 
@@ -6383,7 +6383,7 @@ static const struct TrainerMon sParty_WallyVR1[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 44,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     .moves = {MOVE_AERIAL_ACE, MOVE_SAFEGUARD, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE}
     },
     {
@@ -8280,7 +8280,7 @@ static const struct TrainerMon sParty_WallyVR2[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 47,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     .moves = {MOVE_AERIAL_ACE, MOVE_SAFEGUARD, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE}
     },
     {
@@ -8313,7 +8313,7 @@ static const struct TrainerMon sParty_WallyVR3[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 50,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     .moves = {MOVE_AERIAL_ACE, MOVE_SAFEGUARD, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE}
     },
     {
@@ -8346,7 +8346,7 @@ static const struct TrainerMon sParty_WallyVR4[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 53,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     .moves = {MOVE_AERIAL_ACE, MOVE_SAFEGUARD, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE}
     },
     {
@@ -8379,7 +8379,7 @@ static const struct TrainerMon sParty_WallyVR5[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 56,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     .moves = {MOVE_AERIAL_ACE, MOVE_SAFEGUARD, MOVE_DRAGON_BREATH, MOVE_DRAGON_DANCE}
     },
     {
@@ -10475,7 +10475,7 @@ static const struct TrainerMon sParty_Winona2[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 45,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     .heldItem = ITEM_CHESTO_BERRY,
     .moves = {MOVE_AERIAL_ACE, MOVE_REST, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE}
     }
@@ -10520,7 +10520,7 @@ static const struct TrainerMon sParty_Winona3[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 50,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     .heldItem = ITEM_CHESTO_BERRY,
     .moves = {MOVE_AERIAL_ACE, MOVE_REST, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE}
     }
@@ -10565,7 +10565,7 @@ static const struct TrainerMon sParty_Winona4[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 55,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     .heldItem = ITEM_CHESTO_BERRY,
     .moves = {MOVE_AERIAL_ACE, MOVE_REST, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE}
     }
@@ -10610,7 +10610,7 @@ static const struct TrainerMon sParty_Winona5[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 60,
-    .species = SPECIES_ALTARIA,
+    .species = SPECIES_DARMAILMON,
     .heldItem = ITEM_CHESTO_BERRY,
     .moves = {MOVE_SKY_ATTACK, MOVE_REST, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE}
     }
