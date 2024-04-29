@@ -399,14 +399,14 @@ static const struct FormChange sExermonFormChangeTable[] = {
 };
 #endif //P_FAMILY_EXERMON
 
-#if P_FAMILY_SNORUNT
+#if P_FAMILY_EXVEEMON_VIRUS
 static const struct FormChange sGlalieFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_GLALIE_MEGA, ITEM_GLALITITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_SNORUNT
+#endif //P_FAMILY_EXVEEMON_VIRUS
 
 #if P_FAMILY_DOLPHMON
 static const struct FormChange sDolphmonFormChangeTable[] = {

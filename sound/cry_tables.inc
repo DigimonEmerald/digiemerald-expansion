@@ -992,8 +992,8 @@ gCryTable::
 	cry Cry_ExermonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_EXERMON
-.if P_FAMILY_SNORUNT == TRUE
-	cry Cry_Snorunt
+.if P_FAMILY_EXVEEMON_VIRUS == TRUE
+	cry Cry_Exveemon_virus
 	cry Cry_Glalie
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_GlalieMega
@@ -1001,7 +1001,7 @@ gCryTable::
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Froslass
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_SNORUNT
+.endif @ P_FAMILY_EXVEEMON_VIRUS
 .if P_FAMILY_SPHEAL == TRUE
 	cry Cry_Spheal
 	cry Cry_Sealeo
@@ -3418,8 +3418,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_ExermonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_EXERMON
-.if P_FAMILY_SNORUNT == TRUE
-	cry_reverse Cry_Snorunt
+.if P_FAMILY_EXVEEMON_VIRUS == TRUE
+	cry_reverse Cry_Exveemon_virus
 	cry_reverse Cry_Glalie
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_GlalieMega
@@ -3427,7 +3427,7 @@ gCryTable_Reverse::
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Froslass
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_SNORUNT
+.endif @ P_FAMILY_EXVEEMON_VIRUS
 .if P_FAMILY_SPHEAL == TRUE
 	cry_reverse Cry_Spheal
 	cry_reverse Cry_Sealeo

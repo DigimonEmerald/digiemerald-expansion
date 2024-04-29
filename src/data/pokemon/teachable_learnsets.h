@@ -16861,8 +16861,8 @@ static const u16 sExermonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_EXERMON
 
-#if P_FAMILY_SNORUNT
-static const u16 sSnoruntTeachableLearnset[] = {
+#if P_FAMILY_EXVEEMON_VIRUS
+static const u16 sExveemon_virusTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DOUBLE_TEAM,
@@ -16963,7 +16963,7 @@ static const u16 sFroslassTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_SNORUNT
+#endif //P_FAMILY_EXVEEMON_VIRUS
 
 #if P_FAMILY_SPHEAL
 static const u16 sSphealTeachableLearnset[] = {

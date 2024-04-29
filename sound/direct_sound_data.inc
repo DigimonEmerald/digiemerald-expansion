@@ -2700,10 +2700,10 @@ Cry_ExermonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_EXERMON
 
-.if P_FAMILY_SNORUNT == TRUE
+.if P_FAMILY_EXVEEMON_VIRUS == TRUE
 	.align 2
-Cry_Snorunt::
-	.incbin "sound/direct_sound_samples/cries/snorunt.bin"
+Cry_Exveemon_virus::
+	.incbin "sound/direct_sound_samples/cries/exveemon_virus.bin"
 
 	.align 2
 Cry_Glalie::
@@ -2719,7 +2719,7 @@ Cry_GlalieMega::
 Cry_Froslass::
 	.incbin "sound/direct_sound_samples/cries/froslass.bin"
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_SNORUNT
+.endif @ P_FAMILY_EXVEEMON_VIRUS
 
 .if P_FAMILY_SPHEAL == TRUE
 	.align 2

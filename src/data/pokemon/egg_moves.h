@@ -2937,8 +2937,8 @@ const u16 gEggMoves[] = {
         MOVE_PLAY_ROUGH),
 #endif //P_FAMILY_EXERMON
 
-#if P_FAMILY_SNORUNT
-    egg_moves(SNORUNT,
+#if P_FAMILY_EXVEEMON_VIRUS
+    egg_moves(EXVEEMON_VIRUS,
         MOVE_BLOCK,
         MOVE_SPIKES,
         MOVE_ROLLOUT,
@@ -2949,7 +2949,7 @@ const u16 gEggMoves[] = {
         MOVE_HEX,
         MOVE_FAKE_TEARS,
         MOVE_SWITCHEROO),
-#endif //P_FAMILY_SNORUNT
+#endif //P_FAMILY_EXVEEMON_VIRUS
 
 #if P_FAMILY_SPHEAL
     egg_moves(SPHEAL,

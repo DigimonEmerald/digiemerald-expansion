@@ -9564,8 +9564,8 @@ static const struct LevelUpMove sExermonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_EXERMON
 
-#if P_FAMILY_SNORUNT
-static const struct LevelUpMove sSnoruntLevelUpLearnset[] = {
+#if P_FAMILY_EXVEEMON_VIRUS
+static const struct LevelUpMove sExveemon_virusLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 5, MOVE_LEER),
@@ -9631,7 +9631,7 @@ static const struct LevelUpMove sFroslassLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_SNORUNT
+#endif //P_FAMILY_EXVEEMON_VIRUS
 
 #if P_FAMILY_SPHEAL
 static const struct LevelUpMove sSphealLevelUpLearnset[] = {

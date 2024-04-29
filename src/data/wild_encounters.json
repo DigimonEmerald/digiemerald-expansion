@@ -9147,7 +9147,7 @@
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_SNORUNT"
+                "species": "SPECIES_EXVEEMON_VIRUS"
               },
               {
                 "min_level": 32,
@@ -9162,7 +9162,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_SNORUNT"
+                "species": "SPECIES_EXVEEMON_VIRUS"
               },
               {
                 "min_level": 32,
@@ -9172,7 +9172,7 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_SNORUNT"
+                "species": "SPECIES_EXVEEMON_VIRUS"
               }
             ]
           }

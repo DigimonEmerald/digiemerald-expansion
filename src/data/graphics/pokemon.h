@@ -5256,14 +5256,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_EXERMON
 
-#if P_FAMILY_SNORUNT
-    const u32 gMonFrontPic_Snorunt[] = INCBIN_U32("graphics/pokemon/snorunt/anim_front.4bpp.lz");
-    const u32 gMonPalette_Snorunt[] = INCBIN_U32("graphics/pokemon/snorunt/normal.gbapal.lz");
-    const u32 gMonBackPic_Snorunt[] = INCBIN_U32("graphics/pokemon/snorunt/back.4bpp.lz");
-    const u32 gMonShinyPalette_Snorunt[] = INCBIN_U32("graphics/pokemon/snorunt/shiny.gbapal.lz");
-    const u8 gMonIcon_Snorunt[] = INCBIN_U8("graphics/pokemon/snorunt/icon.4bpp");
+#if P_FAMILY_EXVEEMON_VIRUS
+    const u32 gMonFrontPic_Exveemon_virus[] = INCBIN_U32("graphics/pokemon/exveemon_virus/anim_front.4bpp.lz");
+    const u32 gMonPalette_Exveemon_virus[] = INCBIN_U32("graphics/pokemon/exveemon_virus/normal.gbapal.lz");
+    const u32 gMonBackPic_Exveemon_virus[] = INCBIN_U32("graphics/pokemon/exveemon_virus/back.4bpp.lz");
+    const u32 gMonShinyPalette_Exveemon_virus[] = INCBIN_U32("graphics/pokemon/exveemon_virus/shiny.gbapal.lz");
+    const u8 gMonIcon_Exveemon_virus[] = INCBIN_U8("graphics/pokemon/exveemon_virus/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Snorunt[] = INCBIN_U8("graphics/pokemon/snorunt/footprint.1bpp");
+    const u8 gMonFootprint_Exveemon_virus[] = INCBIN_U8("graphics/pokemon/exveemon_virus/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Glalie[] = INCBIN_U32("graphics/pokemon/glalie/anim_front.4bpp.lz");
@@ -5293,7 +5293,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Froslass[] = INCBIN_U8("graphics/pokemon/froslass/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_SNORUNT
+#endif //P_FAMILY_EXVEEMON_VIRUS
 
 #if P_FAMILY_SPHEAL
     const u32 gMonFrontPic_Spheal[] = INCBIN_U32("graphics/pokemon/spheal/anim_front.4bpp.lz");

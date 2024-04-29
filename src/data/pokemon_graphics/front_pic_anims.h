@@ -4874,8 +4874,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(ExermonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_EXERMON
 
-#if P_FAMILY_SNORUNT
-static const union AnimCmd sAnim_Snorunt_1[] =
+#if P_FAMILY_EXVEEMON_VIRUS
+static const union AnimCmd sAnim_Exveemon_virus_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4908,7 +4908,7 @@ static const union AnimCmd sAnim_Froslass_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_SNORUNT
+#endif //P_FAMILY_EXVEEMON_VIRUS
 
 #if P_FAMILY_SPHEAL
 static const union AnimCmd sAnim_Spheal_1[] =
@@ -11293,8 +11293,8 @@ SINGLE_ANIMATION(Exermon);
 SINGLE_ANIMATION(ExermonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_EXERMON
-#if P_FAMILY_SNORUNT
-SINGLE_ANIMATION(Snorunt);
+#if P_FAMILY_EXVEEMON_VIRUS
+SINGLE_ANIMATION(Exveemon_virus);
 SINGLE_ANIMATION(Glalie);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(GlalieMega);
@@ -11302,7 +11302,7 @@ SINGLE_ANIMATION(GlalieMega);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Froslass);
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_SNORUNT
+#endif //P_FAMILY_EXVEEMON_VIRUS
 #if P_FAMILY_SPHEAL
 SINGLE_ANIMATION(Spheal);
 SINGLE_ANIMATION(Sealeo);

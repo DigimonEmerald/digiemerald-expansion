@@ -363,7 +363,7 @@
 #define SPECIES_EOSMON_CHAMPION                                358
 #define SPECIES_EXERMON                                   359
 #define SPECIES_EXVEEMON                                  360
-#define SPECIES_SNORUNT                                 361
+#define SPECIES_EXVEEMON_VIRUS                                 361
 #define SPECIES_GLALIE                                  362
 #define SPECIES_SPHEAL                                  363
 #define SPECIES_SEALEO                                  364

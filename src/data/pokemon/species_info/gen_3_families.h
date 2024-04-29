@@ -7719,8 +7719,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_EXERMON
 
-#if P_FAMILY_SNORUNT
-    [SPECIES_SNORUNT] =
+#if P_FAMILY_EXVEEMON_VIRUS
+    [SPECIES_EXVEEMON_VIRUS] =
     {
         .baseHP        = 50,
         .baseAttack    = 50,
@@ -7740,38 +7740,38 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_MINERAL),
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_ICE_BODY, ABILITY_MOODY },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Snorunt"),
-        .cryId = CRY_SNORUNT,
-        .natDexNum = NATIONAL_DEX_SNORUNT,
+        .speciesName = _("Exveemon_virus"),
+        .cryId = CRY_EXVEEMON_VIRUS,
+        .natDexNum = NATIONAL_DEX_EXVEEMON_VIRUS,
         .categoryName = _("Snow Hat"),
         .height = 7,
         .weight = 168,
         .description = COMPOUND_STRING(
             "They tend to move about in groups of\n"
-            "around five Snorunt. In snowy regions,\n"
+            "around five Exveemon_virus. In snowy regions,\n"
             "it is said that when they are seen late at\n"
             "night, snowfall will arrive by morning."),
         .pokemonScale = 380,
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Snorunt,
+        .frontPic = gMonFrontPic_Exveemon_virus,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Snorunt,
+        .frontAnimFrames = sAnims_Exveemon_virus,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
         .frontAnimDelay = 20,
-        .backPic = gMonBackPic_Snorunt,
+        .backPic = gMonBackPic_Exveemon_virus,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Snorunt,
-        .shinyPalette = gMonShinyPalette_Snorunt,
-        .iconSprite = gMonIcon_Snorunt,
+        .palette = gMonPalette_Exveemon_virus,
+        .shinyPalette = gMonShinyPalette_Exveemon_virus,
+        .iconSprite = gMonIcon_Exveemon_virus,
         .iconPalIndex = 2,
-        FOOTPRINT(Snorunt)
-        .levelUpLearnset = sSnoruntLevelUpLearnset,
-        .teachableLearnset = sSnoruntTeachableLearnset,
+        FOOTPRINT(Exveemon_virus)
+        .levelUpLearnset = sExveemon_virusLevelUpLearnset,
+        .teachableLearnset = sExveemon_virusTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_GLALIE},
                                 {EVO_ITEM_FEMALE, ITEM_DAWN_STONE, SPECIES_FROSLASS}),
     },
@@ -7942,7 +7942,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sFroslassTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_SNORUNT
+#endif //P_FAMILY_EXVEEMON_VIRUS
 
 #if P_FAMILY_SPHEAL
     [SPECIES_SPHEAL] =

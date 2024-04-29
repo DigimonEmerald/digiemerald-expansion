@@ -899,7 +899,7 @@ static const u16 sExermonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_EXERMON
 
-#if P_FAMILY_SNORUNT
+#if P_FAMILY_EXVEEMON_VIRUS
 static const u16 sGlalieFormSpeciesIdTable[] = {
     SPECIES_GLALIE,
 #if P_MEGA_EVOLUTIONS
@@ -907,7 +907,7 @@ static const u16 sGlalieFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_SNORUNT
+#endif //P_FAMILY_EXVEEMON_VIRUS
 
 #if P_FAMILY_BAGON
 static const u16 sSalamenceFormSpeciesIdTable[] = {
