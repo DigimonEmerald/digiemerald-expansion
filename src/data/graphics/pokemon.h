@@ -5314,13 +5314,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Fangmon[] = INCBIN_U8("graphics/pokemon/fangmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Walrein[] = INCBIN_U32("graphics/pokemon/walrein/anim_front.4bpp.lz");
-    const u32 gMonPalette_Walrein[] = INCBIN_U32("graphics/pokemon/walrein/normal.gbapal.lz");
-    const u32 gMonBackPic_Walrein[] = INCBIN_U32("graphics/pokemon/walrein/back.4bpp.lz");
-    const u32 gMonShinyPalette_Walrein[] = INCBIN_U32("graphics/pokemon/walrein/shiny.gbapal.lz");
-    const u8 gMonIcon_Walrein[] = INCBIN_U8("graphics/pokemon/walrein/icon.4bpp");
+    const u32 gMonFrontPic_Filmon[] = INCBIN_U32("graphics/pokemon/filmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Filmon[] = INCBIN_U32("graphics/pokemon/filmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Filmon[] = INCBIN_U32("graphics/pokemon/filmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Filmon[] = INCBIN_U32("graphics/pokemon/filmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Filmon[] = INCBIN_U8("graphics/pokemon/filmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Walrein[] = INCBIN_U8("graphics/pokemon/walrein/footprint.1bpp");
+    const u8 gMonFootprint_Filmon[] = INCBIN_U8("graphics/pokemon/filmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_EYESMON_SCATTERMODE
 

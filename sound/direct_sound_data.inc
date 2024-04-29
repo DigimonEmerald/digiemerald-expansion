@@ -2731,8 +2731,8 @@ Cry_Fangmon::
 	.incbin "sound/direct_sound_samples/cries/fangmon.bin"
 
 	.align 2
-Cry_Walrein::
-	.incbin "sound/direct_sound_samples/cries/walrein.bin"
+Cry_Filmon::
+	.incbin "sound/direct_sound_samples/cries/filmon.bin"
 .endif @ P_FAMILY_EYESMON_SCATTERMODE
 
 .if P_FAMILY_CLAMPERL == TRUE

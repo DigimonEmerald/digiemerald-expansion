@@ -17035,7 +17035,7 @@ static const u16 sFangmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sWalreinTeachableLearnset[] = {
+static const u16 sFilmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,

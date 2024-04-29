@@ -8588,7 +8588,7 @@ static const struct LevelUpMove sFangmonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sWalreinLevelUpLearnset[] = {
+static const struct LevelUpMove sFilmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CRUNCH),
     LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),

@@ -4934,7 +4934,7 @@ static const union AnimCmd sAnim_Fangmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Walrein_1[] =
+static const union AnimCmd sAnim_Filmon_1[] =
 {
     ANIMCMD_FRAME(0, 2),
     ANIMCMD_FRAME(1, 10),
@@ -11306,7 +11306,7 @@ SINGLE_ANIMATION(Froslass);
 #if P_FAMILY_EYESMON_SCATTERMODE
 SINGLE_ANIMATION(Eyesmon_scattermode);
 SINGLE_ANIMATION(Fangmon);
-SINGLE_ANIMATION(Walrein);
+SINGLE_ANIMATION(Filmon);
 #endif //P_FAMILY_EYESMON_SCATTERMODE
 #if P_FAMILY_CLAMPERL
 SINGLE_ANIMATION(Clamperl);

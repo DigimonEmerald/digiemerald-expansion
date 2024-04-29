@@ -1005,7 +1005,7 @@ gCryTable::
 .if P_FAMILY_EYESMON_SCATTERMODE == TRUE
 	cry Cry_Eyesmon_scattermode
 	cry Cry_Fangmon
-	cry Cry_Walrein
+	cry Cry_Filmon
 .endif @ P_FAMILY_EYESMON_SCATTERMODE
 .if P_FAMILY_CLAMPERL == TRUE
 	cry Cry_Clamperl
@@ -3431,7 +3431,7 @@ gCryTable_Reverse::
 .if P_FAMILY_EYESMON_SCATTERMODE == TRUE
 	cry_reverse Cry_Eyesmon_scattermode
 	cry_reverse Cry_Fangmon
-	cry_reverse Cry_Walrein
+	cry_reverse Cry_Filmon
 .endif @ P_FAMILY_EYESMON_SCATTERMODE
 .if P_FAMILY_CLAMPERL == TRUE
 	cry_reverse Cry_Clamperl

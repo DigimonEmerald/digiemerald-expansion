@@ -8049,10 +8049,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Fangmon)
         .levelUpLearnset = sFangmonLevelUpLearnset,
         .teachableLearnset = sFangmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 44, SPECIES_WALREIN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 44, SPECIES_FILMON}),
     },
 
-    [SPECIES_WALREIN] =
+    [SPECIES_FILMON] =
     {
         .baseHP        = 110,
         .baseAttack    = 80,
@@ -8077,9 +8077,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
         .abilities = { ABILITY_THICK_FAT, ABILITY_ICE_BODY, ABILITY_OBLIVIOUS },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Walrein"),
-        .cryId = CRY_WALREIN,
-        .natDexNum = NATIONAL_DEX_WALREIN,
+        .speciesName = _("Filmon"),
+        .cryId = CRY_FILMON,
+        .natDexNum = NATIONAL_DEX_FILMON,
         .categoryName = _("Ice Break"),
         .height = 14,
         .weight = 1506,
@@ -8092,22 +8092,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Walrein,
+        .frontPic = gMonFrontPic_Filmon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_Walrein,
+        .frontAnimFrames = sAnims_Filmon,
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Walrein,
+        .backPic = gMonBackPic_Filmon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Walrein,
-        .shinyPalette = gMonShinyPalette_Walrein,
-        .iconSprite = gMonIcon_Walrein,
+        .palette = gMonPalette_Filmon,
+        .shinyPalette = gMonShinyPalette_Filmon,
+        .iconSprite = gMonIcon_Filmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Walrein)
-        .levelUpLearnset = sWalreinLevelUpLearnset,
-        .teachableLearnset = sWalreinTeachableLearnset,
+        FOOTPRINT(Filmon)
+        .levelUpLearnset = sFilmonLevelUpLearnset,
+        .teachableLearnset = sFilmonTeachableLearnset,
     },
 #endif //P_FAMILY_EYESMON_SCATTERMODE
 
