@@ -336,7 +336,7 @@ static const struct TrainerMon sParty_Archie[] = {
 static const struct TrainerMon sParty_Leah[] = {
     {
     .lvl = 31,
-    .species = SPECIES_SPOINK,
+    .species = SPECIES_CLOCKMON_FUSION,
     }
 };
 
@@ -1336,7 +1336,7 @@ static const struct TrainerMon sParty_Valerie2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 31,
-    .species = SPECIES_SPOINK,
+    .species = SPECIES_CLOCKMON_FUSION,
     }
 };
 
@@ -1344,7 +1344,7 @@ static const struct TrainerMon sParty_Valerie3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 35,
-    .species = SPECIES_SPOINK,
+    .species = SPECIES_CLOCKMON_FUSION,
     },
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -1357,7 +1357,7 @@ static const struct TrainerMon sParty_Valerie4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 40,
-    .species = SPECIES_SPOINK,
+    .species = SPECIES_CLOCKMON_FUSION,
     },
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -7349,7 +7349,7 @@ static const struct TrainerMon sParty_Nate[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 36,
-    .species = SPECIES_SPOINK,
+    .species = SPECIES_CLOCKMON_FUSION,
     }
 };
 
@@ -9464,7 +9464,7 @@ static const struct TrainerMon sParty_Marlene[] = {
     },
     {
     .lvl = 18,
-    .species = SPECIES_SPOINK,
+    .species = SPECIES_CLOCKMON_FUSION,
     }
 };
 

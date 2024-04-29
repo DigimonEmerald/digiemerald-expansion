@@ -2620,8 +2620,8 @@ const u16 gEggMoves[] = {
         MOVE_SUPERPOWER),
 #endif //P_FAMILY_CLOCKMON
 
-#if P_FAMILY_SPOINK
-    egg_moves(SPOINK,
+#if P_FAMILY_CLOCKMON_FUSION
+    egg_moves(CLOCKMON_FUSION,
         MOVE_FUTURE_SIGHT,
         MOVE_EXTRASENSORY,
         MOVE_TRICK,
@@ -2633,7 +2633,7 @@ const u16 gEggMoves[] = {
         MOVE_LUCKY_CHANT,
         MOVE_ENDURE,
         MOVE_SIMPLE_BEAM),
-#endif //P_FAMILY_SPOINK
+#endif //P_FAMILY_CLOCKMON_FUSION
 
 #if P_FAMILY_SPINDA
     egg_moves(SPINDA,

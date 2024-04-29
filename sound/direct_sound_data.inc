@@ -2486,15 +2486,15 @@ Cry_Clockmon::
 	.incbin "sound/direct_sound_samples/cries/clockmon.bin"
 .endif @ P_FAMILY_CLOCKMON
 
-.if P_FAMILY_SPOINK == TRUE
+.if P_FAMILY_CLOCKMON_FUSION == TRUE
 	.align 2
-Cry_Spoink::
-	.incbin "sound/direct_sound_samples/cries/spoink.bin"
+Cry_Clockmon_fusion::
+	.incbin "sound/direct_sound_samples/cries/clockmon_fusion.bin"
 
 	.align 2
 Cry_Grumpig::
 	.incbin "sound/direct_sound_samples/cries/grumpig.bin"
-.endif @ P_FAMILY_SPOINK
+.endif @ P_FAMILY_CLOCKMON_FUSION
 
 .if P_FAMILY_SPINDA == TRUE
 	.align 2

@@ -8155,8 +8155,8 @@ static const struct LevelUpMove sClockmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_CLOCKMON
 
-#if P_FAMILY_SPOINK
-static const struct LevelUpMove sSpoinkLevelUpLearnset[] = {
+#if P_FAMILY_CLOCKMON_FUSION
+static const struct LevelUpMove sClockmon_fusionLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
     LEVEL_UP_MOVE( 7, MOVE_PSYWAVE),
     LEVEL_UP_MOVE(10, MOVE_ODOR_SLEUTH),
@@ -8196,7 +8196,7 @@ static const struct LevelUpMove sGrumpigLevelUpLearnset[] = {
     LEVEL_UP_MOVE(60, MOVE_BOUNCE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SPOINK
+#endif //P_FAMILY_CLOCKMON_FUSION
 
 #if P_FAMILY_SPINDA
 static const struct LevelUpMove sSpindaLevelUpLearnset[] = {

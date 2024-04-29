@@ -4344,8 +4344,8 @@ static const union AnimCmd sAnim_Clockmon_1[] =
 };
 #endif //P_FAMILY_CLOCKMON
 
-#if P_FAMILY_SPOINK
-static const union AnimCmd sAnim_Spoink_1[] =
+#if P_FAMILY_CLOCKMON_FUSION
+static const union AnimCmd sAnim_Clockmon_fusion_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 10),
@@ -4370,7 +4370,7 @@ static const union AnimCmd sAnim_Grumpig_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SPOINK
+#endif //P_FAMILY_CLOCKMON_FUSION
 
 #if P_FAMILY_SPINDA
 static const union AnimCmd sAnim_Spinda_1[] =
@@ -11196,10 +11196,10 @@ SINGLE_ANIMATION(CitramonMega);
 #if P_FAMILY_CLOCKMON
 SINGLE_ANIMATION(Clockmon);
 #endif //P_FAMILY_CLOCKMON
-#if P_FAMILY_SPOINK
-SINGLE_ANIMATION(Spoink);
+#if P_FAMILY_CLOCKMON_FUSION
+SINGLE_ANIMATION(Clockmon_fusion);
 SINGLE_ANIMATION(Grumpig);
-#endif //P_FAMILY_SPOINK
+#endif //P_FAMILY_CLOCKMON_FUSION
 #if P_FAMILY_SPINDA
 SINGLE_ANIMATION(Spinda);
 #endif //P_FAMILY_SPINDA

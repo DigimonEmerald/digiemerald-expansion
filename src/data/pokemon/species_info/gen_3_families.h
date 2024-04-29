@@ -5254,8 +5254,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_CLOCKMON
 
-#if P_FAMILY_SPOINK
-    [SPECIES_SPOINK] =
+#if P_FAMILY_CLOCKMON_FUSION
+    [SPECIES_CLOCKMON_FUSION] =
     {
         .baseHP        = 60,
         .baseAttack    = 25,
@@ -5274,9 +5274,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_THICK_FAT, ABILITY_OWN_TEMPO, ABILITY_GLUTTONY },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Spoink"),
-        .cryId = CRY_SPOINK,
-        .natDexNum = NATIONAL_DEX_SPOINK,
+        .speciesName = _("Clockmon_fusion"),
+        .cryId = CRY_CLOCKMON_FUSION,
+        .natDexNum = NATIONAL_DEX_CLOCKMON_FUSION,
         .categoryName = _("Bounce"),
         .height = 7,
         .weight = 306,
@@ -5289,22 +5289,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Spoink,
+        .frontPic = gMonFrontPic_Clockmon_fusion,
         .frontPicSize = MON_COORDS_SIZE(32, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Spoink,
+        .frontAnimFrames = sAnims_Clockmon_fusion,
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH_TWICE,
-        .backPic = gMonBackPic_Spoink,
+        .backPic = gMonBackPic_Clockmon_fusion,
         .backPicSize = MON_COORDS_SIZE(40, 64),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Spoink,
-        .shinyPalette = gMonShinyPalette_Spoink,
-        .iconSprite = gMonIcon_Spoink,
+        .palette = gMonPalette_Clockmon_fusion,
+        .shinyPalette = gMonShinyPalette_Clockmon_fusion,
+        .iconSprite = gMonIcon_Clockmon_fusion,
         .iconPalIndex = 0,
-        FOOTPRINT(Spoink)
-        .levelUpLearnset = sSpoinkLevelUpLearnset,
-        .teachableLearnset = sSpoinkTeachableLearnset,
+        FOOTPRINT(Clockmon_fusion)
+        .levelUpLearnset = sClockmon_fusionLevelUpLearnset,
+        .teachableLearnset = sClockmon_fusionTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_GRUMPIG}),
     },
 
@@ -5360,7 +5360,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sGrumpigLevelUpLearnset,
         .teachableLearnset = sGrumpigTeachableLearnset,
     },
-#endif //P_FAMILY_SPOINK
+#endif //P_FAMILY_CLOCKMON_FUSION
 
 #if P_FAMILY_SPINDA
     [SPECIES_SPINDA] =

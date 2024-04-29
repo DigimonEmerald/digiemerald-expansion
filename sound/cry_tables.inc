@@ -898,10 +898,10 @@ gCryTable::
 .if P_FAMILY_CLOCKMON == TRUE
 	cry Cry_Clockmon
 .endif @ P_FAMILY_CLOCKMON
-.if P_FAMILY_SPOINK == TRUE
-	cry Cry_Spoink
+.if P_FAMILY_CLOCKMON_FUSION == TRUE
+	cry Cry_Clockmon_fusion
 	cry Cry_Grumpig
-.endif @ P_FAMILY_SPOINK
+.endif @ P_FAMILY_CLOCKMON_FUSION
 .if P_FAMILY_SPINDA == TRUE
 	cry Cry_Spinda
 .endif @ P_FAMILY_SPINDA
@@ -3324,10 +3324,10 @@ gCryTable_Reverse::
 .if P_FAMILY_CLOCKMON == TRUE
 	cry_reverse Cry_Clockmon
 .endif @ P_FAMILY_CLOCKMON
-.if P_FAMILY_SPOINK == TRUE
-	cry_reverse Cry_Spoink
+.if P_FAMILY_CLOCKMON_FUSION == TRUE
+	cry_reverse Cry_Clockmon_fusion
 	cry_reverse Cry_Grumpig
-.endif @ P_FAMILY_SPOINK
+.endif @ P_FAMILY_CLOCKMON_FUSION
 .if P_FAMILY_SPINDA == TRUE
 	cry_reverse Cry_Spinda
 .endif @ P_FAMILY_SPINDA

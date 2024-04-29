@@ -15392,8 +15392,8 @@ static const u16 sClockmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_CLOCKMON
 
-#if P_FAMILY_SPOINK
-static const u16 sSpoinkTeachableLearnset[] = {
+#if P_FAMILY_CLOCKMON_FUSION
+static const u16 sClockmon_fusionTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
@@ -15478,7 +15478,7 @@ static const u16 sGrumpigTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SPOINK
+#endif //P_FAMILY_CLOCKMON_FUSION
 
 #if P_FAMILY_SPINDA
 static const u16 sSpindaTeachableLearnset[] = {

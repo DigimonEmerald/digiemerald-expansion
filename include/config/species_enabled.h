@@ -219,7 +219,7 @@
 #define P_FAMILY_CHAMBLEMON                 P_GEN_3_POKEMON
 #define P_FAMILY_CHRYSALMON                   P_GEN_3_POKEMON
 #define P_FAMILY_CLOCKMON                 P_GEN_3_POKEMON
-#define P_FAMILY_SPOINK                  P_GEN_3_POKEMON
+#define P_FAMILY_CLOCKMON_FUSION                  P_GEN_3_POKEMON
 #define P_FAMILY_SPINDA                  P_GEN_3_POKEMON
 #define P_FAMILY_TRAPINCH                P_GEN_3_POKEMON
 #define P_FAMILY_CACNEA                  P_GEN_3_POKEMON

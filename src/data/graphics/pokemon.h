@@ -4828,14 +4828,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_CLOCKMON
 
-#if P_FAMILY_SPOINK
-    const u32 gMonFrontPic_Spoink[] = INCBIN_U32("graphics/pokemon/spoink/anim_front.4bpp.lz");
-    const u32 gMonPalette_Spoink[] = INCBIN_U32("graphics/pokemon/spoink/normal.gbapal.lz");
-    const u32 gMonBackPic_Spoink[] = INCBIN_U32("graphics/pokemon/spoink/back.4bpp.lz");
-    const u32 gMonShinyPalette_Spoink[] = INCBIN_U32("graphics/pokemon/spoink/shiny.gbapal.lz");
-    const u8 gMonIcon_Spoink[] = INCBIN_U8("graphics/pokemon/spoink/icon.4bpp");
+#if P_FAMILY_CLOCKMON_FUSION
+    const u32 gMonFrontPic_Clockmon_fusion[] = INCBIN_U32("graphics/pokemon/clockmon_fusion/anim_front.4bpp.lz");
+    const u32 gMonPalette_Clockmon_fusion[] = INCBIN_U32("graphics/pokemon/clockmon_fusion/normal.gbapal.lz");
+    const u32 gMonBackPic_Clockmon_fusion[] = INCBIN_U32("graphics/pokemon/clockmon_fusion/back.4bpp.lz");
+    const u32 gMonShinyPalette_Clockmon_fusion[] = INCBIN_U32("graphics/pokemon/clockmon_fusion/shiny.gbapal.lz");
+    const u8 gMonIcon_Clockmon_fusion[] = INCBIN_U8("graphics/pokemon/clockmon_fusion/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Spoink[] = INCBIN_U8("graphics/pokemon/spoink/footprint.1bpp");
+    const u8 gMonFootprint_Clockmon_fusion[] = INCBIN_U8("graphics/pokemon/clockmon_fusion/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Grumpig[] = INCBIN_U32("graphics/pokemon/grumpig/anim_front.4bpp.lz");
@@ -4846,7 +4846,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Grumpig[] = INCBIN_U8("graphics/pokemon/grumpig/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_SPOINK
+#endif //P_FAMILY_CLOCKMON_FUSION
 
 #if P_FAMILY_SPINDA
     const u32 gMonFrontPic_Spinda[] = INCBIN_U32("graphics/pokemon/spinda/anim_front.4bpp.lz");
