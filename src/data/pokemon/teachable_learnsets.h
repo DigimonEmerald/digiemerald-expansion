@@ -17163,8 +17163,8 @@ static const u16 sFlawizamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_FIRAMON
 
-#if P_FAMILY_RELICANTH
-static const u16 sRelicanthTeachableLearnset[] = {
+#if P_FAMILY_FLARIZAMON
+static const u16 sFlarizamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,
@@ -17198,7 +17198,7 @@ static const u16 sRelicanthTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_RELICANTH
+#endif //P_FAMILY_FLARIZAMON
 
 #if P_FAMILY_LUVDISC
 static const u16 sLuvdiscTeachableLearnset[] = {

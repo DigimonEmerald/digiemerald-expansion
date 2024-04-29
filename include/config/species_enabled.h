@@ -244,7 +244,7 @@
 #define P_FAMILY_EXVEEMON_VIRUS                 P_GEN_3_POKEMON
 #define P_FAMILY_EYESMON_SCATTERMODE                  P_GEN_3_POKEMON
 #define P_FAMILY_FIRAMON                P_GEN_3_POKEMON
-#define P_FAMILY_RELICANTH               P_GEN_3_POKEMON
+#define P_FAMILY_FLARIZAMON               P_GEN_3_POKEMON
 #define P_FAMILY_LUVDISC                 P_GEN_3_POKEMON
 #define P_FAMILY_BAGON                   P_GEN_3_POKEMON
 #define P_FAMILY_BELDUM                  P_GEN_3_POKEMON

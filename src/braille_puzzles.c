@@ -89,15 +89,15 @@ void DoBrailleDigEffect(void)
     UnlockPlayerFieldControls();
 }
 
-bool8 CheckRelicanthChamelemon(void)
+bool8 CheckFlarizamonChamelemon(void)
 {
     // Emerald change: why did they flip it?
     // First comes Chamelemon
     if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_CHAMELEMON)
     {
         CalculatePlayerPartyCount();
-        // Last comes Relicanth
-        if (GetMonData(&gPlayerParty[gPlayerPartyCount - 1], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_RELICANTH)
+        // Last comes Flarizamon
+        if (GetMonData(&gPlayerParty[gPlayerPartyCount - 1], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_FLARIZAMON)
             return TRUE;
     }
     return FALSE;

@@ -4977,8 +4977,8 @@ static const union AnimCmd sAnim_Flawizamon_1[] =
 };
 #endif //P_FAMILY_FIRAMON
 
-#if P_FAMILY_RELICANTH
-static const union AnimCmd sAnim_Relicanth_1[] =
+#if P_FAMILY_FLARIZAMON
+static const union AnimCmd sAnim_Flarizamon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4987,7 +4987,7 @@ static const union AnimCmd sAnim_Relicanth_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_RELICANTH
+#endif //P_FAMILY_FLARIZAMON
 
 #if P_FAMILY_LUVDISC
 static const union AnimCmd sAnim_Luvdisc_1[] =
@@ -11313,9 +11313,9 @@ SINGLE_ANIMATION(Firamon);
 SINGLE_ANIMATION(Fladramon);
 SINGLE_ANIMATION(Flawizamon);
 #endif //P_FAMILY_FIRAMON
-#if P_FAMILY_RELICANTH
-SINGLE_ANIMATION(Relicanth);
-#endif //P_FAMILY_RELICANTH
+#if P_FAMILY_FLARIZAMON
+SINGLE_ANIMATION(Flarizamon);
+#endif //P_FAMILY_FLARIZAMON
 #if P_FAMILY_LUVDISC
 SINGLE_ANIMATION(Luvdisc);
 #endif //P_FAMILY_LUVDISC

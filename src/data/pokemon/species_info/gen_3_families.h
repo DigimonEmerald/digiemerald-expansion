@@ -8278,8 +8278,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_FIRAMON
 
-#if P_FAMILY_RELICANTH
-    [SPECIES_RELICANTH] =
+#if P_FAMILY_FLARIZAMON
+    [SPECIES_FLARIZAMON] =
     {
         .baseHP        = 100,
         .baseAttack    = 90,
@@ -8300,9 +8300,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_2),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_ROCK_HEAD, ABILITY_STURDY },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Relicanth"),
-        .cryId = CRY_RELICANTH,
-        .natDexNum = NATIONAL_DEX_RELICANTH,
+        .speciesName = _("Flarizamon"),
+        .cryId = CRY_FLARIZAMON,
+        .natDexNum = NATIONAL_DEX_FLARIZAMON,
         .categoryName = _("Longevity"),
         .height = 10,
         .weight = 234,
@@ -8315,28 +8315,28 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Relicanth,
-        .frontPicFemale = gMonFrontPic_RelicanthF,
+        .frontPic = gMonFrontPic_Flarizamon,
+        .frontPicFemale = gMonFrontPic_FlarizamonF,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Relicanth,
+        .frontAnimFrames = sAnims_Flarizamon,
         .frontAnimId = ANIM_TIP_MOVE_FORWARD,
-        .backPic = gMonBackPic_Relicanth,
-        .backPicFemale = gMonBackPic_RelicanthF,
+        .backPic = gMonBackPic_Flarizamon,
+        .backPicFemale = gMonBackPic_FlarizamonF,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Relicanth,
-        .shinyPalette = gMonShinyPalette_Relicanth,
-        .iconSprite = gMonIcon_Relicanth,
+        .palette = gMonPalette_Flarizamon,
+        .shinyPalette = gMonShinyPalette_Flarizamon,
+        .iconSprite = gMonIcon_Flarizamon,
         .iconPalIndex = 2,
-        FOOTPRINT(Relicanth)
-        .levelUpLearnset = sRelicanthLevelUpLearnset,
-        .teachableLearnset = sRelicanthTeachableLearnset,
+        FOOTPRINT(Flarizamon)
+        .levelUpLearnset = sFlarizamonLevelUpLearnset,
+        .teachableLearnset = sFlarizamonTeachableLearnset,
     },
-#endif //P_FAMILY_RELICANTH
+#endif //P_FAMILY_FLARIZAMON
 
 #if P_FAMILY_LUVDISC
     [SPECIES_LUVDISC] =

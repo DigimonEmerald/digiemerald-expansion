@@ -1012,9 +1012,9 @@ gCryTable::
 	cry Cry_Fladramon
 	cry Cry_Flawizamon
 .endif @ P_FAMILY_FIRAMON
-.if P_FAMILY_RELICANTH == TRUE
-	cry Cry_Relicanth
-.endif @ P_FAMILY_RELICANTH
+.if P_FAMILY_FLARIZAMON == TRUE
+	cry Cry_Flarizamon
+.endif @ P_FAMILY_FLARIZAMON
 .if P_FAMILY_LUVDISC == TRUE
 	cry Cry_Luvdisc
 .endif @ P_FAMILY_LUVDISC
@@ -3438,9 +3438,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Fladramon
 	cry_reverse Cry_Flawizamon
 .endif @ P_FAMILY_FIRAMON
-.if P_FAMILY_RELICANTH == TRUE
-	cry_reverse Cry_Relicanth
-.endif @ P_FAMILY_RELICANTH
+.if P_FAMILY_FLARIZAMON == TRUE
+	cry_reverse Cry_Flarizamon
+.endif @ P_FAMILY_FLARIZAMON
 .if P_FAMILY_LUVDISC == TRUE
 	cry_reverse Cry_Luvdisc
 .endif @ P_FAMILY_LUVDISC

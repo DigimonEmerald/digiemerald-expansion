@@ -9086,8 +9086,8 @@ static const struct LevelUpMove sFlawizamonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_FIRAMON
 
-#if P_FAMILY_RELICANTH
-static const struct LevelUpMove sRelicanthLevelUpLearnset[] = {
+#if P_FAMILY_FLARIZAMON
+static const struct LevelUpMove sFlarizamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 8, MOVE_WATER_GUN),
@@ -9103,7 +9103,7 @@ static const struct LevelUpMove sRelicanthLevelUpLearnset[] = {
     LEVEL_UP_MOVE(78, MOVE_HEAD_SMASH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_RELICANTH
+#endif //P_FAMILY_FLARIZAMON
 
 #if P_FAMILY_LUVDISC
 static const struct LevelUpMove sLuvdiscLevelUpLearnset[] = {
