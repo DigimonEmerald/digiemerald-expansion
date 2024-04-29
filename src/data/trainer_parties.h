@@ -1696,7 +1696,7 @@ static const struct TrainerMon sParty_Winston5[] = {
 static const struct TrainerMon sParty_Steve1[] = {
     {
     .lvl = 19,
-    .species = SPECIES_ARON,
+    .species = SPECIES_BLKGATOMON,
     }
 };
 
@@ -4127,7 +4127,7 @@ static const struct TrainerMon sParty_Jaylen[] = {
 static const struct TrainerMon sParty_Dillon[] = {
     {
     .lvl = 19,
-    .species = SPECIES_ARON,
+    .species = SPECIES_BLKGATOMON,
     }
 };
 
@@ -4213,7 +4213,7 @@ static const struct TrainerMon sParty_Allen[] = {
 static const struct TrainerMon sParty_Timmy[] = {
     {
     .lvl = 15,
-    .species = SPECIES_ARON,
+    .species = SPECIES_BLKGATOMON,
     },
     {
     .lvl = 13,
@@ -6681,7 +6681,7 @@ static const struct TrainerMon sParty_Isaac1[] = {
     },
     {
     .lvl = 11,
-    .species = SPECIES_ARON,
+    .species = SPECIES_BLKGATOMON,
     },
     {
     .lvl = 11,
@@ -6731,7 +6731,7 @@ static const struct TrainerMon sParty_Isaac2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 22,
-    .species = SPECIES_ARON,
+    .species = SPECIES_BLKGATOMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -6764,7 +6764,7 @@ static const struct TrainerMon sParty_Isaac3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 25,
-    .species = SPECIES_ARON,
+    .species = SPECIES_BLKGATOMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -6797,7 +6797,7 @@ static const struct TrainerMon sParty_Isaac4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 28,
-    .species = SPECIES_ARON,
+    .species = SPECIES_BLKGATOMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -9047,11 +9047,11 @@ static const struct TrainerMon sParty_Lawrence[] = {
 static const struct TrainerMon sParty_Wyatt[] = {
     {
     .lvl = 18,
-    .species = SPECIES_ARON,
+    .species = SPECIES_BLKGATOMON,
     },
     {
     .lvl = 18,
-    .species = SPECIES_ARON,
+    .species = SPECIES_BLKGATOMON,
     }
 };
 
@@ -9087,7 +9087,7 @@ static const struct TrainerMon sParty_Deandre[] = {
     },
     {
     .lvl = 14,
-    .species = SPECIES_ARON,
+    .species = SPECIES_BLKGATOMON,
     },
     {
     .lvl = 14,

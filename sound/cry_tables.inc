@@ -832,14 +832,14 @@ gCryTable::
 	cry Cry_BlgarurmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BLGARURMON
-.if P_FAMILY_ARON == TRUE
-	cry Cry_Aron
+.if P_FAMILY_BLKGATOMON == TRUE
+	cry Cry_Blkgatomon
 	cry Cry_Lairon
 	cry Cry_Aggron
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_AggronMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_ARON
+.endif @ P_FAMILY_BLKGATOMON
 .if P_FAMILY_MEDITITE == TRUE
 	cry Cry_Meditite
 	cry Cry_Medicham
@@ -3258,14 +3258,14 @@ gCryTable_Reverse::
 	cry_reverse Cry_BlgarurmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BLGARURMON
-.if P_FAMILY_ARON == TRUE
-	cry_reverse Cry_Aron
+.if P_FAMILY_BLKGATOMON == TRUE
+	cry_reverse Cry_Blkgatomon
 	cry_reverse Cry_Lairon
 	cry_reverse Cry_Aggron
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_AggronMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_ARON
+.endif @ P_FAMILY_BLKGATOMON
 .if P_FAMILY_MEDITITE == TRUE
 	cry_reverse Cry_Meditite
 	cry_reverse Cry_Medicham

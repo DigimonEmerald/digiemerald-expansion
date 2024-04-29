@@ -4529,14 +4529,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLGARURMON
 
-#if P_FAMILY_ARON
-    const u32 gMonFrontPic_Aron[] = INCBIN_U32("graphics/pokemon/aron/anim_front.4bpp.lz");
-    const u32 gMonPalette_Aron[] = INCBIN_U32("graphics/pokemon/aron/normal.gbapal.lz");
-    const u32 gMonBackPic_Aron[] = INCBIN_U32("graphics/pokemon/aron/back.4bpp.lz");
-    const u32 gMonShinyPalette_Aron[] = INCBIN_U32("graphics/pokemon/aron/shiny.gbapal.lz");
-    const u8 gMonIcon_Aron[] = INCBIN_U8("graphics/pokemon/aron/icon.4bpp");
+#if P_FAMILY_BLKGATOMON
+    const u32 gMonFrontPic_Blkgatomon[] = INCBIN_U32("graphics/pokemon/blkgatomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Blkgatomon[] = INCBIN_U32("graphics/pokemon/blkgatomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Blkgatomon[] = INCBIN_U32("graphics/pokemon/blkgatomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Blkgatomon[] = INCBIN_U32("graphics/pokemon/blkgatomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Blkgatomon[] = INCBIN_U8("graphics/pokemon/blkgatomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Aron[] = INCBIN_U8("graphics/pokemon/aron/footprint.1bpp");
+    const u8 gMonFootprint_Blkgatomon[] = INCBIN_U8("graphics/pokemon/blkgatomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Lairon[] = INCBIN_U32("graphics/pokemon/lairon/anim_front.4bpp.lz");
@@ -4564,7 +4564,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_AggronMega[] = INCBIN_U32("graphics/pokemon/aggron/mega/shiny.gbapal.lz");
     const u8 gMonIcon_AggronMega[] = INCBIN_U8("graphics/pokemon/aggron/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_ARON
+#endif //P_FAMILY_BLKGATOMON
 
 #if P_FAMILY_MEDITITE
     const u32 gMonFrontPic_Meditite[] = INCBIN_U32("graphics/pokemon/meditite/anim_front.4bpp.lz");

@@ -809,7 +809,7 @@ static const u16 sBlgarurmonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_BLGARURMON
 
-#if P_FAMILY_ARON
+#if P_FAMILY_BLKGATOMON
 static const u16 sAggronFormSpeciesIdTable[] = {
     SPECIES_AGGRON,
 #if P_MEGA_EVOLUTIONS
@@ -817,7 +817,7 @@ static const u16 sAggronFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_ARON
+#endif //P_FAMILY_BLKGATOMON
 
 #if P_FAMILY_MEDITITE
 static const u16 sMedichamFormSpeciesIdTable[] = {

@@ -2336,10 +2336,10 @@ Cry_BlgarurmonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BLGARURMON
 
-.if P_FAMILY_ARON == TRUE
+.if P_FAMILY_BLKGATOMON == TRUE
 	.align 2
-Cry_Aron::
-	.incbin "sound/direct_sound_samples/cries/aron.bin"
+Cry_Blkgatomon::
+	.incbin "sound/direct_sound_samples/cries/blkgatomon.bin"
 
 	.align 2
 Cry_Lairon::
@@ -2354,7 +2354,7 @@ Cry_Aggron::
 Cry_AggronMega::
 	.incbin "sound/direct_sound_samples/cries/aggron_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_ARON
+.endif @ P_FAMILY_BLKGATOMON
 
 .if P_FAMILY_MEDITITE == TRUE
 	.align 2

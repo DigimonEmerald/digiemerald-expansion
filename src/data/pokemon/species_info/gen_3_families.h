@@ -3642,8 +3642,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLGARURMON
 
-#if P_FAMILY_ARON
-    [SPECIES_ARON] =
+#if P_FAMILY_BLKGATOMON
+    [SPECIES_BLKGATOMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 70,
@@ -3663,9 +3663,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_STURDY, ABILITY_ROCK_HEAD, ABILITY_HEAVY_METAL },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Aron"),
-        .cryId = CRY_ARON,
-        .natDexNum = NATIONAL_DEX_ARON,
+        .speciesName = _("Blkgatomon"),
+        .cryId = CRY_BLKGATOMON,
+        .natDexNum = NATIONAL_DEX_BLKGATOMON,
         .categoryName = _("Iron Armor"),
         .height = 4,
         .weight = 600,
@@ -3678,22 +3678,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 23,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Aron,
+        .frontPic = gMonFrontPic_Blkgatomon,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Aron,
+        .frontAnimFrames = sAnims_Blkgatomon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Aron,
+        .backPic = gMonBackPic_Blkgatomon,
         .backPicSize = MON_COORDS_SIZE(48, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Aron,
-        .shinyPalette = gMonShinyPalette_Aron,
-        .iconSprite = gMonIcon_Aron,
+        .palette = gMonPalette_Blkgatomon,
+        .shinyPalette = gMonShinyPalette_Blkgatomon,
+        .iconSprite = gMonIcon_Blkgatomon,
         .iconPalIndex = 2,
-        FOOTPRINT(Aron)
-        .levelUpLearnset = sAronLevelUpLearnset,
-        .teachableLearnset = sAronTeachableLearnset,
+        FOOTPRINT(Blkgatomon)
+        .levelUpLearnset = sBlkgatomonLevelUpLearnset,
+        .teachableLearnset = sBlkgatomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_LAIRON}),
     },
 
@@ -3869,7 +3869,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .formChangeTable = sAggronFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_ARON
+#endif //P_FAMILY_BLKGATOMON
 
 #if P_FAMILY_MEDITITE
     [SPECIES_MEDITITE] =

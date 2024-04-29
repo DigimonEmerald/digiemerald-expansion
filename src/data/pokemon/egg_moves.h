@@ -2412,8 +2412,8 @@ const u16 gEggMoves[] = {
         MOVE_POWER_UP_PUNCH),
 #endif //P_FAMILY_BLGARURMON
 
-#if P_FAMILY_ARON
-    egg_moves(ARON,
+#if P_FAMILY_BLKGATOMON
+    egg_moves(BLKGATOMON,
         MOVE_ENDEAVOR,
         MOVE_BODY_SLAM,
         MOVE_STOMP,
@@ -2426,7 +2426,7 @@ const u16 gEggMoves[] = {
         MOVE_SUPERPOWER,
         MOVE_STEALTH_ROCK,
         MOVE_REVERSAL),
-#endif //P_FAMILY_ARON
+#endif //P_FAMILY_BLKGATOMON
 
 #if P_FAMILY_MEDITITE
     egg_moves(MEDITITE,

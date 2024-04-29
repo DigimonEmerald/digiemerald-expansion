@@ -4064,8 +4064,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(BlgarurmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLGARURMON
 
-#if P_FAMILY_ARON
-static const union AnimCmd sAnim_Aron_1[] =
+#if P_FAMILY_BLKGATOMON
+static const union AnimCmd sAnim_Blkgatomon_1[] =
 {
     ANIMCMD_FRAME(0, 33),
     ANIMCMD_FRAME(1, 44),
@@ -4096,7 +4096,7 @@ static const union AnimCmd sAnim_Aggron_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(AggronMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_ARON
+#endif //P_FAMILY_BLKGATOMON
 
 #if P_FAMILY_MEDITITE
 static const union AnimCmd sAnim_Meditite_1[] =
@@ -11130,14 +11130,14 @@ SINGLE_ANIMATION(Blgarurmon);
 SINGLE_ANIMATION(BlgarurmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLGARURMON
-#if P_FAMILY_ARON
-SINGLE_ANIMATION(Aron);
+#if P_FAMILY_BLKGATOMON
+SINGLE_ANIMATION(Blkgatomon);
 SINGLE_ANIMATION(Lairon);
 SINGLE_ANIMATION(Aggron);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(AggronMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_ARON
+#endif //P_FAMILY_BLKGATOMON
 #if P_FAMILY_MEDITITE
 SINGLE_ANIMATION(Meditite);
 SINGLE_ANIMATION(Medicham);

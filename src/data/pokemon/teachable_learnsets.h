@@ -14513,8 +14513,8 @@ static const u16 sBlgarurmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BLGARURMON
 
-#if P_FAMILY_ARON
-static const u16 sAronTeachableLearnset[] = {
+#if P_FAMILY_BLKGATOMON
+static const u16 sBlkgatomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CUT,
@@ -14641,7 +14641,7 @@ static const u16 sAggronTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ARON
+#endif //P_FAMILY_BLKGATOMON
 
 #if P_FAMILY_MEDITITE
 static const u16 sMedititeTeachableLearnset[] = {
