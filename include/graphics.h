@@ -173,8 +173,8 @@ extern const u32 gDecorIcon_GargomonDoll[];
 extern const u32 gDecorIconPalette_GargomonDoll[];
 extern const u32 gDecorIcon_GargoylmonDoll[];
 extern const u32 gDecorIconPalette_GargoylmonDoll[];
-extern const u32 gDecorIcon_RegisteelDoll[];
-extern const u32 gDecorIconPalette_RegisteelDoll[];
+extern const u32 gDecorIcon_GarurumonDoll[];
+extern const u32 gDecorIconPalette_GarurumonDoll[];
 
 extern const u32 gWallClock_Gfx[];
 extern const u16 gWallClockMale_Pal[];

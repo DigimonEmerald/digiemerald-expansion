@@ -27,10 +27,10 @@ SINGLE_BATTLE_TEST("Poison cannot be inflicted on Poison and Steel-type Pokémon
 {
     u32 mon;
     PARAMETRIZE { mon = SPECIES_PUSUMON; }
-    PARAMETRIZE { mon = SPECIES_REGISTEEL; }
+    PARAMETRIZE { mon = SPECIES_GARURUMON; }
     GIVEN {
         ASSUME(gSpeciesInfo[SPECIES_PUSUMON].types[0] == TYPE_POISON);
-        ASSUME(gSpeciesInfo[SPECIES_REGISTEEL].types[0] == TYPE_STEEL);
+        ASSUME(gSpeciesInfo[SPECIES_GARURUMON].types[0] == TYPE_STEEL);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(mon);
     } WHEN {

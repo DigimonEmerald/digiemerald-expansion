@@ -5474,16 +5474,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_GARGOYLMON
 
-#if P_FAMILY_REGISTEEL
-    const u32 gMonFrontPic_Registeel[] = INCBIN_U32("graphics/pokemon/registeel/anim_front.4bpp.lz");
-    const u32 gMonPalette_Registeel[] = INCBIN_U32("graphics/pokemon/registeel/normal.gbapal.lz");
-    const u32 gMonBackPic_Registeel[] = INCBIN_U32("graphics/pokemon/registeel/back.4bpp.lz");
-    const u32 gMonShinyPalette_Registeel[] = INCBIN_U32("graphics/pokemon/registeel/shiny.gbapal.lz");
-    const u8 gMonIcon_Registeel[] = INCBIN_U8("graphics/pokemon/registeel/icon.4bpp");
+#if P_FAMILY_GARURUMON
+    const u32 gMonFrontPic_Garurumon[] = INCBIN_U32("graphics/pokemon/garurumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Garurumon[] = INCBIN_U32("graphics/pokemon/garurumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Garurumon[] = INCBIN_U32("graphics/pokemon/garurumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Garurumon[] = INCBIN_U32("graphics/pokemon/garurumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Garurumon[] = INCBIN_U8("graphics/pokemon/garurumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Registeel[] = INCBIN_U8("graphics/pokemon/registeel/footprint.1bpp");
+    const u8 gMonFootprint_Garurumon[] = INCBIN_U8("graphics/pokemon/garurumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_REGISTEEL
+#endif //P_FAMILY_GARURUMON
 
 #if P_FAMILY_LATIAS
     const u32 gMonFrontPic_Latias[] = INCBIN_U32("graphics/pokemon/latias/anim_front.4bpp.lz");

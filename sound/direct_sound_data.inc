@@ -2813,11 +2813,11 @@ Cry_Gargoylmon::
 	.incbin "sound/direct_sound_samples/cries/gargoylmon.bin"
 .endif @ P_FAMILY_GARGOYLMON
 
-.if P_FAMILY_REGISTEEL == TRUE
+.if P_FAMILY_GARURUMON == TRUE
 	.align 2
-Cry_Registeel::
-	.incbin "sound/direct_sound_samples/cries/registeel.bin"
-.endif @ P_FAMILY_REGISTEEL
+Cry_Garurumon::
+	.incbin "sound/direct_sound_samples/cries/garurumon.bin"
+.endif @ P_FAMILY_GARURUMON
 
 .if P_FAMILY_LATIAS == TRUE
 	.align 2

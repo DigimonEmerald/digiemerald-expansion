@@ -8977,8 +8977,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_GARGOYLMON
 
-#if P_FAMILY_REGISTEEL
-    [SPECIES_REGISTEEL] =
+#if P_FAMILY_GARURUMON
+    [SPECIES_GARURUMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 75,
@@ -9004,9 +9004,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_CLEAR_BODY, ABILITY_NONE, ABILITY_LIGHT_METAL },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Registeel"),
-        .cryId = CRY_REGISTEEL,
-        .natDexNum = NATIONAL_DEX_REGISTEEL,
+        .speciesName = _("Garurumon"),
+        .cryId = CRY_GARURUMON,
+        .natDexNum = NATIONAL_DEX_GARURUMON,
         .categoryName = _("Iron"),
         .height = 19,
         .weight = 2050,
@@ -9019,25 +9019,25 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 359,
         .trainerOffset = 6,
-        .frontPic = gMonFrontPic_Registeel,
+        .frontPic = gMonFrontPic_Garurumon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_Registeel,
+        .frontAnimFrames = sAnims_Garurumon,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Registeel,
+        .backPic = gMonBackPic_Garurumon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Registeel,
-        .shinyPalette = gMonShinyPalette_Registeel,
-        .iconSprite = gMonIcon_Registeel,
+        .palette = gMonPalette_Garurumon,
+        .shinyPalette = gMonShinyPalette_Garurumon,
+        .iconSprite = gMonIcon_Garurumon,
         .iconPalIndex = 2,
-        FOOTPRINT(Registeel)
+        FOOTPRINT(Garurumon)
         .isLegendary = TRUE,
-        .levelUpLearnset = sRegisteelLevelUpLearnset,
-        .teachableLearnset = sRegisteelTeachableLearnset,
+        .levelUpLearnset = sGarurumonLevelUpLearnset,
+        .teachableLearnset = sGarurumonTeachableLearnset,
     },
-#endif //P_FAMILY_REGISTEEL
+#endif //P_FAMILY_GARURUMON
 
 #if P_FAMILY_LATIAS
     [SPECIES_LATIAS] =

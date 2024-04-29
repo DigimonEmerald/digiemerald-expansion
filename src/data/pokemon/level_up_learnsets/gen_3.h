@@ -7591,8 +7591,8 @@ static const struct LevelUpMove sGargoylmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_GARGOYLMON
 
-#if P_FAMILY_REGISTEEL
-static const struct LevelUpMove sRegisteelLevelUpLearnset[] = {
+#if P_FAMILY_GARURUMON
+static const struct LevelUpMove sGarurumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_EXPLOSION),
     LEVEL_UP_MOVE( 9, MOVE_METAL_CLAW),
     LEVEL_UP_MOVE(17, MOVE_CURSE),
@@ -7605,7 +7605,7 @@ static const struct LevelUpMove sRegisteelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(65, MOVE_HYPER_BEAM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_REGISTEEL
+#endif //P_FAMILY_GARURUMON
 
 #if P_FAMILY_LATIAS
 static const struct LevelUpMove sLatiasLevelUpLearnset[] = {

@@ -41,11 +41,11 @@ SINGLE_BATTLE_TEST("Sandstorm damage does not hurt Ground, Rock, and Steel-type 
     u32 mon;
     PARAMETRIZE { mon = SPECIES_POYOMON; }
     PARAMETRIZE { mon = SPECIES_BIOTHUNMON; }
-    PARAMETRIZE { mon = SPECIES_REGISTEEL; }
+    PARAMETRIZE { mon = SPECIES_GARURUMON; }
     GIVEN {
         ASSUME(gSpeciesInfo[SPECIES_POYOMON].types[0] == TYPE_GROUND);
         ASSUME(gSpeciesInfo[SPECIES_BIOTHUNMON].types[0] == TYPE_ROCK);
-        ASSUME(gSpeciesInfo[SPECIES_REGISTEEL].types[0] == TYPE_STEEL);
+        ASSUME(gSpeciesInfo[SPECIES_GARURUMON].types[0] == TYPE_STEEL);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(mon);
     } WHEN {
@@ -59,8 +59,8 @@ SINGLE_BATTLE_TEST("Sandstorm damage does not hurt Ground, Rock, and Steel-type 
         case SPECIES_BIOTHUNMON:
             NOT MESSAGE("Foe Biothunmon is buffeted by the sandstorm!");
             break;
-        case SPECIES_REGISTEEL:
-            NOT MESSAGE("Foe Registeel is buffeted by the sandstorm!");
+        case SPECIES_GARURUMON:
+            NOT MESSAGE("Foe Garurumon is buffeted by the sandstorm!");
             break;
         }
     }

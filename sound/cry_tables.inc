@@ -1040,9 +1040,9 @@ gCryTable::
 .if P_FAMILY_GARGOYLMON == TRUE
 	cry Cry_Gargoylmon
 .endif @ P_FAMILY_GARGOYLMON
-.if P_FAMILY_REGISTEEL == TRUE
-	cry Cry_Registeel
-.endif @ P_FAMILY_REGISTEEL
+.if P_FAMILY_GARURUMON == TRUE
+	cry Cry_Garurumon
+.endif @ P_FAMILY_GARURUMON
 .if P_FAMILY_LATIAS == TRUE
 	cry Cry_Latias
 .if P_MEGA_EVOLUTIONS == TRUE
@@ -3466,9 +3466,9 @@ gCryTable_Reverse::
 .if P_FAMILY_GARGOYLMON == TRUE
 	cry_reverse Cry_Gargoylmon
 .endif @ P_FAMILY_GARGOYLMON
-.if P_FAMILY_REGISTEEL == TRUE
-	cry_reverse Cry_Registeel
-.endif @ P_FAMILY_REGISTEEL
+.if P_FAMILY_GARURUMON == TRUE
+	cry_reverse Cry_Garurumon
+.endif @ P_FAMILY_GARURUMON
 .if P_FAMILY_LATIAS == TRUE
 	cry_reverse Cry_Latias
 .if P_MEGA_EVOLUTIONS == TRUE
