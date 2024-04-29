@@ -22,6 +22,7 @@ SINGLE_BATTLE_TEST("Eject Pack does not cause the new pokemon to lose hp due to 
         MESSAGE("Lopmonx is switched out with the Eject Pack!");
         MESSAGE("Go! Exveemon!");
         NOT MESSAGE("Exveemon was hurt by its Life Orb!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
     }
 }
 
