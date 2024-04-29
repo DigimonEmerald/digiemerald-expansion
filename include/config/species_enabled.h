@@ -205,7 +205,7 @@
 #define P_FAMILY_BETGAMAMON                P_GEN_3_POKEMON
 #define P_FAMILY_BIOTHUNMON                P_GEN_3_POKEMON
 #define P_FAMILY_BIRDRAMON                  P_GEN_3_POKEMON
-#define P_FAMILY_SABLEYE                 P_GEN_3_POKEMON
+#define P_FAMILY_BLGARGOMON                 P_GEN_3_POKEMON
 #define P_FAMILY_MAWILE                  P_GEN_3_POKEMON
 #define P_FAMILY_ARON                    P_GEN_3_POKEMON
 #define P_FAMILY_MEDITITE                P_GEN_3_POKEMON

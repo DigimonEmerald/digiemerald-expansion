@@ -165,22 +165,22 @@ SINGLE_BATTLE_TEST("Prankster-affected moves can still be bounced back by Dark-t
 
 SINGLE_BATTLE_TEST("Prankster-affected moves which are reflected by Magic Coat can affect Dark-type Pokémon, unless the Pokémon that bounced the move also has Prankster")
 {
-    u16 sableyeAbility;
+    u16 blgargomonAbility;
 
-    PARAMETRIZE { sableyeAbility = ABILITY_PRANKSTER; }
-    PARAMETRIZE { sableyeAbility = ABILITY_KEEN_EYE; }
+    PARAMETRIZE { blgargomonAbility = ABILITY_PRANKSTER; }
+    PARAMETRIZE { blgargomonAbility = ABILITY_KEEN_EYE; }
 
     GIVEN {
-        PLAYER(SPECIES_SABLEYE) { Ability(sableyeAbility); }
+        PLAYER(SPECIES_BLGARGOMON) { Ability(blgargomonAbility); }
         OPPONENT(SPECIES_LALAMON) { Ability(ABILITY_PRANKSTER); }
     } WHEN {
         TURN { MOVE(player, MOVE_MAGIC_COAT); MOVE(opponent, MOVE_CONFUSE_RAY); }
     } SCENE {
-        MESSAGE("Sableye used Magic Coat!");
+        MESSAGE("Blgargomon used Magic Coat!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MAGIC_COAT, player);
         MESSAGE("Foe Lalamon used Confuse Ray!");
         MESSAGE("Foe Lalamon's Confuse Ray was bounced back by MAGIC COAT!");
-        if (sableyeAbility == ABILITY_PRANKSTER) {
+        if (blgargomonAbility == ABILITY_PRANKSTER) {
             NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);
             MESSAGE("It doesn't affect Foe Lalamon…");
         } else {

@@ -14407,8 +14407,8 @@ static const u16 sBlgaogamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BIRDRAMON
 
-#if P_FAMILY_SABLEYE
-static const u16 sSableyeTeachableLearnset[] = {
+#if P_FAMILY_BLGARGOMON
+static const u16 sBlgargomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -14463,7 +14463,7 @@ static const u16 sSableyeTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SABLEYE
+#endif //P_FAMILY_BLGARGOMON
 
 #if P_FAMILY_MAWILE
 static const u16 sMawileTeachableLearnset[] = {

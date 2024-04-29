@@ -789,15 +789,15 @@ static const u16 sGalladeFormSpeciesIdTable[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_APEMON
 
-#if P_FAMILY_SABLEYE
-static const u16 sSableyeFormSpeciesIdTable[] = {
-    SPECIES_SABLEYE,
+#if P_FAMILY_BLGARGOMON
+static const u16 sBlgargomonFormSpeciesIdTable[] = {
+    SPECIES_BLGARGOMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_SABLEYE_MEGA,
+    SPECIES_BLGARGOMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_SABLEYE
+#endif //P_FAMILY_BLGARGOMON
 
 #if P_FAMILY_MAWILE
 static const u16 sMawileFormSpeciesIdTable[] = {

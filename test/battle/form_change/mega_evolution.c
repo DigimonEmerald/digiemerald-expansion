@@ -91,14 +91,14 @@ SINGLE_BATTLE_TEST("Abilities replaced by Mega Evolution do not affect turn orde
 {
     GIVEN {
         ASSUME(B_MEGA_EVO_TURN_ORDER >= GEN_7);
-        ASSUME(gSpeciesInfo[SPECIES_SABLEYE_MEGA].abilities[0] != ABILITY_STALL
-            && gSpeciesInfo[SPECIES_SABLEYE_MEGA].abilities[1] != ABILITY_STALL);
-        PLAYER(SPECIES_SABLEYE) { Item(ITEM_SABLENITE); Ability(ABILITY_STALL); Speed(105); }
+        ASSUME(gSpeciesInfo[SPECIES_BLGARGOMON_MEGA].abilities[0] != ABILITY_STALL
+            && gSpeciesInfo[SPECIES_BLGARGOMON_MEGA].abilities[1] != ABILITY_STALL);
+        PLAYER(SPECIES_BLGARGOMON) { Item(ITEM_SABLENITE); Ability(ABILITY_STALL); Speed(105); }
         OPPONENT(SPECIES_LOPMONX) { Speed(44); }
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, megaEvolve: TRUE); }
     } SCENE {
-        MESSAGE("Sableye used Celebrate!");
+        MESSAGE("Blgargomon used Celebrate!");
         MESSAGE("Foe Lopmonx used Celebrate!");
     } THEN {
         ASSUME(player->speed == 45);

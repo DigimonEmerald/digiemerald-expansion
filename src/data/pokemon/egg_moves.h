@@ -2378,8 +2378,8 @@ const u16 gEggMoves[] = {
         MOVE_COSMIC_POWER),
 #endif //P_FAMILY_BIRDRAMON
 
-#if P_FAMILY_SABLEYE
-    egg_moves(SABLEYE,
+#if P_FAMILY_BLGARGOMON
+    egg_moves(BLGARGOMON,
         MOVE_RECOVER,
         MOVE_MOONLIGHT,
         MOVE_NASTY_PLOT,
@@ -2391,7 +2391,7 @@ const u16 gEggMoves[] = {
         MOVE_MEAN_LOOK,
         MOVE_METAL_BURST,
         MOVE_IMPRISON),
-#endif //P_FAMILY_SABLEYE
+#endif //P_FAMILY_BLGARGOMON
 
 #if P_FAMILY_MAWILE
     egg_moves(MAWILE,

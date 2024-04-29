@@ -820,12 +820,12 @@ gCryTable::
 	cry Cry_Birdramon
 	cry Cry_Blgaogamon
 .endif @ P_FAMILY_BIRDRAMON
-.if P_FAMILY_SABLEYE == TRUE
-	cry Cry_Sableye
+.if P_FAMILY_BLGARGOMON == TRUE
+	cry Cry_Blgargomon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_SableyeMega
+	cry Cry_BlgargomonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SABLEYE
+.endif @ P_FAMILY_BLGARGOMON
 .if P_FAMILY_MAWILE == TRUE
 	cry Cry_Mawile
 .if P_MEGA_EVOLUTIONS == TRUE
@@ -3246,12 +3246,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Birdramon
 	cry_reverse Cry_Blgaogamon
 .endif @ P_FAMILY_BIRDRAMON
-.if P_FAMILY_SABLEYE == TRUE
-	cry_reverse Cry_Sableye
+.if P_FAMILY_BLGARGOMON == TRUE
+	cry_reverse Cry_Blgargomon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_SableyeMega
+	cry_reverse Cry_BlgargomonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SABLEYE
+.endif @ P_FAMILY_BLGARGOMON
 .if P_FAMILY_MAWILE == TRUE
 	cry_reverse Cry_Mawile
 .if P_MEGA_EVOLUTIONS == TRUE

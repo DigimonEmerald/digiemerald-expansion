@@ -2312,17 +2312,17 @@ Cry_Blgaogamon::
 	.incbin "sound/direct_sound_samples/cries/blgaogamon.bin"
 .endif @ P_FAMILY_BIRDRAMON
 
-.if P_FAMILY_SABLEYE == TRUE
+.if P_FAMILY_BLGARGOMON == TRUE
 	.align 2
-Cry_Sableye::
-	.incbin "sound/direct_sound_samples/cries/sableye.bin"
+Cry_Blgargomon::
+	.incbin "sound/direct_sound_samples/cries/blgargomon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_SableyeMega::
-	.incbin "sound/direct_sound_samples/cries/sableye_mega.bin"
+Cry_BlgargomonMega::
+	.incbin "sound/direct_sound_samples/cries/blgargomon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SABLEYE
+.endif @ P_FAMILY_BLGARGOMON
 
 .if P_FAMILY_MAWILE == TRUE
 	.align 2

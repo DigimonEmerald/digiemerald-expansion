@@ -63,14 +63,14 @@ SINGLE_BATTLE_TEST("Psychic Terrain increases power of Psychic-type moves by 30/
 SINGLE_BATTLE_TEST("Psychic Terrain doesn't block priority moves that target the user")
 {
     GIVEN {
-        PLAYER(SPECIES_SABLEYE) { Ability(ABILITY_PRANKSTER); HP(1); }
+        PLAYER(SPECIES_BLGARGOMON) { Ability(ABILITY_PRANKSTER); HP(1); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_PSYCHIC_TERRAIN); }
         TURN { MOVE(player, MOVE_RECOVER); }
     } SCENE {
-        MESSAGE("Sableye used PsychcTrrain!");
-        MESSAGE("Sableye used Recover!");
+        MESSAGE("Blgargomon used PsychcTrrain!");
+        MESSAGE("Blgargomon used Recover!");
         HP_BAR(player);
     }
 }
@@ -78,35 +78,35 @@ SINGLE_BATTLE_TEST("Psychic Terrain doesn't block priority moves that target the
 SINGLE_BATTLE_TEST("Psychic Terrain doesn't block priority moves that target all battlers")
 {
     GIVEN {
-        PLAYER(SPECIES_SABLEYE) { Ability(ABILITY_PRANKSTER); }
+        PLAYER(SPECIES_BLGARGOMON) { Ability(ABILITY_PRANKSTER); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_PSYCHIC_TERRAIN); }
         TURN { MOVE(player, MOVE_HAZE); }
     } SCENE {
-        MESSAGE("Sableye used PsychcTrrain!");
-        MESSAGE("Sableye used Haze!");
+        MESSAGE("Blgargomon used PsychcTrrain!");
+        MESSAGE("Blgargomon used Haze!");
     }
 }
 
 SINGLE_BATTLE_TEST("Psychic Terrain doesn't block priority moves that target all opponents")
 {
     GIVEN {
-        PLAYER(SPECIES_SABLEYE) { Ability(ABILITY_PRANKSTER); }
+        PLAYER(SPECIES_BLGARGOMON) { Ability(ABILITY_PRANKSTER); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_PSYCHIC_TERRAIN); }
         TURN { MOVE(player, MOVE_SPIKES); }
     } SCENE {
-        MESSAGE("Sableye used PsychcTrrain!");
-        MESSAGE("Sableye used Spikes!");
+        MESSAGE("Blgargomon used PsychcTrrain!");
+        MESSAGE("Blgargomon used Spikes!");
     }
 }
 
 DOUBLE_BATTLE_TEST("Psychic Terrain doesn't block priority moves that target allies")
 {
     GIVEN {
-        PLAYER(SPECIES_SABLEYE) { Ability(ABILITY_PRANKSTER); }
+        PLAYER(SPECIES_BLGARGOMON) { Ability(ABILITY_PRANKSTER); }
         PLAYER(SPECIES_LOPMONX) { HP(1); }
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
@@ -114,22 +114,22 @@ DOUBLE_BATTLE_TEST("Psychic Terrain doesn't block priority moves that target all
         TURN { MOVE(playerLeft, MOVE_PSYCHIC_TERRAIN); }
         TURN { MOVE(playerLeft, MOVE_HEAL_PULSE, target: playerRight); }
     } SCENE {
-        MESSAGE("Sableye used PsychcTrrain!");
-        MESSAGE("Sableye used Heal Pulse!");
+        MESSAGE("Blgargomon used PsychcTrrain!");
+        MESSAGE("Blgargomon used Heal Pulse!");
     }
 }
 
 SINGLE_BATTLE_TEST("Psychic Terrain doesn't block priority field moves")
 {
     GIVEN {
-        PLAYER(SPECIES_SABLEYE) { Ability(ABILITY_PRANKSTER); }
+        PLAYER(SPECIES_BLGARGOMON) { Ability(ABILITY_PRANKSTER); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_PSYCHIC_TERRAIN); }
         TURN { MOVE(player, MOVE_SUNNY_DAY); }
     } SCENE {
-        MESSAGE("Sableye used PsychcTrrain!");
-        MESSAGE("Sableye used Sunny Day!");
+        MESSAGE("Blgargomon used PsychcTrrain!");
+        MESSAGE("Blgargomon used Sunny Day!");
     }
 }
 

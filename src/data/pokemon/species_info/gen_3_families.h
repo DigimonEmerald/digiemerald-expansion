@@ -3405,8 +3405,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_BIRDRAMON
 
-#if P_FAMILY_SABLEYE
-    [SPECIES_SABLEYE] =
+#if P_FAMILY_BLGARGOMON
+    [SPECIES_BLGARGOMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 75,
@@ -3427,43 +3427,43 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_KEEN_EYE, ABILITY_STALL, ABILITY_PRANKSTER },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Sableye"),
-        .cryId = CRY_SABLEYE,
-        .natDexNum = NATIONAL_DEX_SABLEYE,
+        .speciesName = _("Blgargomon"),
+        .cryId = CRY_BLGARGOMON,
+        .natDexNum = NATIONAL_DEX_BLGARGOMON,
         .categoryName = _("Darkness"),
         .height = 5,
         .weight = 110,
         .description = COMPOUND_STRING(
             "It digs branching holes in caves using its\n"
             "sharp claws in search of food--raw gems.\n"
-            "A Sableye lurks in darkness and is seen\n"
+            "A Blgargomon lurks in darkness and is seen\n"
             "only rarely."),
         .pokemonScale = 451,
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Sableye,
+        .frontPic = gMonFrontPic_Blgargomon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Sableye,
+        .frontAnimFrames = sAnims_Blgargomon,
         .frontAnimId = ANIM_GLOW_BLACK,
-        .backPic = gMonBackPic_Sableye,
+        .backPic = gMonBackPic_Blgargomon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Sableye,
-        .shinyPalette = gMonShinyPalette_Sableye,
-        .iconSprite = gMonIcon_Sableye,
+        .palette = gMonPalette_Blgargomon,
+        .shinyPalette = gMonShinyPalette_Blgargomon,
+        .iconSprite = gMonIcon_Blgargomon,
         .iconPalIndex = 2,
-        FOOTPRINT(Sableye)
-        .levelUpLearnset = sSableyeLevelUpLearnset,
-        .teachableLearnset = sSableyeTeachableLearnset,
-        .formSpeciesIdTable = sSableyeFormSpeciesIdTable,
-        .formChangeTable = sSableyeFormChangeTable,
+        FOOTPRINT(Blgargomon)
+        .levelUpLearnset = sBlgargomonLevelUpLearnset,
+        .teachableLearnset = sBlgargomonTeachableLearnset,
+        .formSpeciesIdTable = sBlgargomonFormSpeciesIdTable,
+        .formChangeTable = sBlgargomonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_SABLEYE_MEGA] =
+    [SPECIES_BLGARGOMON_MEGA] =
     {
         .baseHP        = 50,
         .baseAttack    = 85,
@@ -3483,9 +3483,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Sableye"),
-        .cryId = CRY_SABLEYE_MEGA,
-        .natDexNum = NATIONAL_DEX_SABLEYE,
+        .speciesName = _("Blgargomon"),
+        .cryId = CRY_BLGARGOMON_MEGA,
+        .natDexNum = NATIONAL_DEX_BLGARGOMON,
         .categoryName = _("Darkness"),
         .height = 5,
         .weight = 1610,
@@ -3497,28 +3497,28 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_SableyeMega,
+        .frontPic = gMonFrontPic_BlgargomonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 5,
-        .frontAnimFrames = sAnims_SableyeMega,
+        .frontAnimFrames = sAnims_BlgargomonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_SableyeMega,
+        .backPic = gMonBackPic_BlgargomonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_SableyeMega,
-        .shinyPalette = gMonShinyPalette_SableyeMega,
-        .iconSprite = gMonIcon_SableyeMega,
+        .palette = gMonPalette_BlgargomonMega,
+        .shinyPalette = gMonShinyPalette_BlgargomonMega,
+        .iconSprite = gMonIcon_BlgargomonMega,
         .iconPalIndex = 2,
-        FOOTPRINT(Sableye)
+        FOOTPRINT(Blgargomon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sSableyeLevelUpLearnset,
-        .teachableLearnset = sSableyeTeachableLearnset,
-        .formSpeciesIdTable = sSableyeFormSpeciesIdTable,
-        .formChangeTable = sSableyeFormChangeTable,
+        .levelUpLearnset = sBlgargomonLevelUpLearnset,
+        .teachableLearnset = sBlgargomonTeachableLearnset,
+        .formSpeciesIdTable = sBlgargomonFormSpeciesIdTable,
+        .formChangeTable = sBlgargomonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SABLEYE
+#endif //P_FAMILY_BLGARGOMON
 
 #if P_FAMILY_MAWILE
 #if P_UPDATED_TYPES >= GEN_6

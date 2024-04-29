@@ -607,7 +607,7 @@ static void OpponentHandleChooseMove(u32 battler)
                     {SPECIES_SEVIPER,   SPECIES_ZANGOOSE},
                     {SPECIES_HEATMOR,   SPECIES_DURANT},
                     {SPECIES_DURANT,    SPECIES_HEATMOR},
-                    {SPECIES_SABLEYE,   SPECIES_CARBINK},
+                    {SPECIES_BLGARGOMON,   SPECIES_CARBINK},
                     {SPECIES_MAREANIE,  SPECIES_PATAMON},
                 };
                 speciesAttacker = gBattleMons[battler].species;

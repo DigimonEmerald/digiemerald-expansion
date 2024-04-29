@@ -4491,24 +4491,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_BIRDRAMON
 
-#if P_FAMILY_SABLEYE
-    const u32 gMonFrontPic_Sableye[] = INCBIN_U32("graphics/pokemon/sableye/anim_front.4bpp.lz");
-    const u32 gMonPalette_Sableye[] = INCBIN_U32("graphics/pokemon/sableye/normal.gbapal.lz");
-    const u32 gMonBackPic_Sableye[] = INCBIN_U32("graphics/pokemon/sableye/back.4bpp.lz");
-    const u32 gMonShinyPalette_Sableye[] = INCBIN_U32("graphics/pokemon/sableye/shiny.gbapal.lz");
-    const u8 gMonIcon_Sableye[] = INCBIN_U8("graphics/pokemon/sableye/icon.4bpp");
+#if P_FAMILY_BLGARGOMON
+    const u32 gMonFrontPic_Blgargomon[] = INCBIN_U32("graphics/pokemon/blgargomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Blgargomon[] = INCBIN_U32("graphics/pokemon/blgargomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Blgargomon[] = INCBIN_U32("graphics/pokemon/blgargomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Blgargomon[] = INCBIN_U32("graphics/pokemon/blgargomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Blgargomon[] = INCBIN_U8("graphics/pokemon/blgargomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Sableye[] = INCBIN_U8("graphics/pokemon/sableye/footprint.1bpp");
+    const u8 gMonFootprint_Blgargomon[] = INCBIN_U8("graphics/pokemon/blgargomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_SableyeMega[] = INCBIN_U32("graphics/pokemon/sableye/mega/front.4bpp.lz");
-    const u32 gMonPalette_SableyeMega[] = INCBIN_U32("graphics/pokemon/sableye/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_SableyeMega[] = INCBIN_U32("graphics/pokemon/sableye/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_SableyeMega[] = INCBIN_U32("graphics/pokemon/sableye/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_SableyeMega[] = INCBIN_U8("graphics/pokemon/sableye/mega/icon.4bpp");
+    const u32 gMonFrontPic_BlgargomonMega[] = INCBIN_U32("graphics/pokemon/blgargomon/mega/front.4bpp.lz");
+    const u32 gMonPalette_BlgargomonMega[] = INCBIN_U32("graphics/pokemon/blgargomon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_BlgargomonMega[] = INCBIN_U32("graphics/pokemon/blgargomon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_BlgargomonMega[] = INCBIN_U32("graphics/pokemon/blgargomon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_BlgargomonMega[] = INCBIN_U8("graphics/pokemon/blgargomon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SABLEYE
+#endif //P_FAMILY_BLGARGOMON
 
 #if P_FAMILY_MAWILE
     const u32 gMonFrontPic_Mawile[] = INCBIN_U32("graphics/pokemon/mawile/anim_front.4bpp.lz");

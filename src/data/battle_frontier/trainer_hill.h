@@ -1640,7 +1640,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         },
                                     [1] =
                                         {
-                                            .species = SPECIES_SABLEYE,
+                                            .species = SPECIES_BLGARGOMON,
                                             .heldItem = ITEM_SILK_SCARF,
                                             .moves = {MOVE_ASTONISH, MOVE_FEINT_ATTACK, MOVE_DETECT, MOVE_CONFUSE_RAY},
                                             .hpEV = 255,
@@ -1654,7 +1654,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 5,
                                             .abilityNum = 0,
                                             .personality = 0x87,
-                                            .nickname = _("SABLEYE"),
+                                            .nickname = _("BLGARGOMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [2] =

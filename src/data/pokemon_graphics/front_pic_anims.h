@@ -4030,8 +4030,8 @@ static const union AnimCmd sAnim_Blgaogamon_1[] =
 };
 #endif //P_FAMILY_BIRDRAMON
 
-#if P_FAMILY_SABLEYE
-static const union AnimCmd sAnim_Sableye_1[] =
+#if P_FAMILY_BLGARGOMON
+static const union AnimCmd sAnim_Blgargomon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -4042,9 +4042,9 @@ static const union AnimCmd sAnim_Sableye_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(SableyeMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(BlgargomonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SABLEYE
+#endif //P_FAMILY_BLGARGOMON
 
 #if P_FAMILY_MAWILE
 static const union AnimCmd sAnim_Mawile_1[] =
@@ -11118,12 +11118,12 @@ SINGLE_ANIMATION(Probopass);
 SINGLE_ANIMATION(Birdramon);
 SINGLE_ANIMATION(Blgaogamon);
 #endif //P_FAMILY_BIRDRAMON
-#if P_FAMILY_SABLEYE
-SINGLE_ANIMATION(Sableye);
+#if P_FAMILY_BLGARGOMON
+SINGLE_ANIMATION(Blgargomon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(SableyeMega);
+SINGLE_ANIMATION(BlgargomonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SABLEYE
+#endif //P_FAMILY_BLGARGOMON
 #if P_FAMILY_MAWILE
 SINGLE_ANIMATION(Mawile);
 #if P_MEGA_EVOLUTIONS
