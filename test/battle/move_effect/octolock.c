@@ -23,7 +23,7 @@ SINGLE_BATTLE_TEST("Octolock reduction is prevented by Clear Body, White Smoke a
     u32 species;
     u32 ability;
 
-    PARAMETRIZE { species = SPECIES_BELDUM; ability = ABILITY_CLEAR_BODY; }
+    PARAMETRIZE { species = SPECIES_FUGAMON; ability = ABILITY_CLEAR_BODY; }
     PARAMETRIZE { species = SPECIES_CLOCKMON; ability = ABILITY_WHITE_SMOKE; }
     PARAMETRIZE { species = SPECIES_SOLGALEO; ability = ABILITY_FULL_METAL_BODY; }
 
@@ -35,14 +35,14 @@ SINGLE_BATTLE_TEST("Octolock reduction is prevented by Clear Body, White Smoke a
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_OCTOLOCK, player);
         NOT ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        if (species == SPECIES_BELDUM)
+        if (species == SPECIES_FUGAMON)
         {
-            MESSAGE("Foe Beldum can no longer escape because of Octolock!");
+            MESSAGE("Foe Fugamon can no longer escape because of Octolock!");
             ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
-            MESSAGE("Foe Beldum's Clear Body prevents stat loss!");
+            MESSAGE("Foe Fugamon's Clear Body prevents stat loss!");
             NONE_OF {
-                MESSAGE("Foe Beldum's Defense fell!");
-                MESSAGE("Foe Beldum's Sp. Def fell!");
+                MESSAGE("Foe Fugamon's Defense fell!");
+                MESSAGE("Foe Fugamon's Sp. Def fell!");
             }
         }
         else if (species == SPECIES_CLOCKMON)

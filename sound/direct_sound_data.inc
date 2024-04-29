@@ -2781,10 +2781,10 @@ Cry_FrogmonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FLYMON
 
-.if P_FAMILY_BELDUM == TRUE
+.if P_FAMILY_FUGAMON == TRUE
 	.align 2
-Cry_Beldum::
-	.incbin "sound/direct_sound_samples/cries/beldum.bin"
+Cry_Fugamon::
+	.incbin "sound/direct_sound_samples/cries/fugamon.bin"
 
 	.align 2
 Cry_Metang::
@@ -2799,7 +2799,7 @@ Cry_Metagross::
 Cry_MetagrossMega::
 	.incbin "sound/direct_sound_samples/cries/metagross_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BELDUM
+.endif @ P_FAMILY_FUGAMON
 
 .if P_FAMILY_REGIROCK == TRUE
 	.align 2

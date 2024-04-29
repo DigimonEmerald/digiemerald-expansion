@@ -919,7 +919,7 @@ static const u16 sFrogmonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_FLYMON
 
-#if P_FAMILY_BELDUM
+#if P_FAMILY_FUGAMON
 static const u16 sMetagrossFormSpeciesIdTable[] = {
     SPECIES_METAGROSS,
 #if P_MEGA_EVOLUTIONS
@@ -927,7 +927,7 @@ static const u16 sMetagrossFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_BELDUM
+#endif //P_FAMILY_FUGAMON
 
 #if P_FAMILY_LATIAS
 static const u16 sLatiasFormSpeciesIdTable[] = {

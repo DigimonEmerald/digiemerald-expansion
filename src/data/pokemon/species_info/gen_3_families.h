@@ -8623,8 +8623,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FLYMON
 
-#if P_FAMILY_BELDUM
-    [SPECIES_BELDUM] =
+#if P_FAMILY_FUGAMON
+    [SPECIES_FUGAMON] =
     {
         .baseHP        = 40,
         .baseAttack    = 55,
@@ -8644,14 +8644,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_CLEAR_BODY, ABILITY_NONE, ABILITY_LIGHT_METAL },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Beldum"),
-        .cryId = CRY_BELDUM,
-        .natDexNum = NATIONAL_DEX_BELDUM,
+        .speciesName = _("Fugamon"),
+        .cryId = CRY_FUGAMON,
+        .natDexNum = NATIONAL_DEX_FUGAMON,
         .categoryName = _("Iron Ball"),
         .height = 6,
         .weight = 952,
         .description = COMPOUND_STRING(
-            "When Beldum gather in a swarm, they move\n"
+            "When Fugamon gather in a swarm, they move\n"
             "in perfect unison as if they were but one\n"
             "Pokémon. They communicate with each other\n"
             "using brain waves."),
@@ -8659,24 +8659,24 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = -1,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Beldum,
+        .frontPic = gMonFrontPic_Fugamon,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 15,
-        .frontAnimFrames = sAnims_Beldum,
+        .frontAnimFrames = sAnims_Fugamon,
         .frontAnimId = ANIM_H_SHAKE,
         .enemyMonElevation = 8,
-        .backPic = gMonBackPic_Beldum,
+        .backPic = gMonBackPic_Fugamon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Beldum,
-        .shinyPalette = gMonShinyPalette_Beldum,
-        .iconSprite = gMonIcon_Beldum,
+        .palette = gMonPalette_Fugamon,
+        .shinyPalette = gMonShinyPalette_Fugamon,
+        .iconSprite = gMonIcon_Fugamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Beldum)
+        FOOTPRINT(Fugamon)
         .tmIlliterate = TRUE,
-        .levelUpLearnset = sBeldumLevelUpLearnset,
-        .teachableLearnset = sBeldumTeachableLearnset,
+        .levelUpLearnset = sFugamonLevelUpLearnset,
+        .teachableLearnset = sFugamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_METANG}),
     },
 
@@ -8852,7 +8852,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .formChangeTable = sMetagrossFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BELDUM
+#endif //P_FAMILY_FUGAMON
 
 #if P_FAMILY_REGIROCK
     [SPECIES_REGIROCK] =

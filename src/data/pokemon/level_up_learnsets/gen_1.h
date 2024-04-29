@@ -7053,8 +7053,8 @@ static const struct LevelUpMove sFrogmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_FLYMON
 
-#if P_FAMILY_BELDUM
-static const struct LevelUpMove sBeldumLevelUpLearnset[] = {
+#if P_FAMILY_FUGAMON
+static const struct LevelUpMove sFugamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TAKE_DOWN),
     LEVEL_UP_END
 };
@@ -7089,7 +7089,7 @@ static const struct LevelUpMove sMetagrossLevelUpLearnset[] = {
     LEVEL_UP_MOVE(77, MOVE_HYPER_BEAM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_BELDUM
+#endif //P_FAMILY_FUGAMON
 
 #if P_FAMILY_REGIROCK
 static const struct LevelUpMove sRegirockLevelUpLearnset[] = {

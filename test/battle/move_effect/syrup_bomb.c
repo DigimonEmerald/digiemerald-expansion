@@ -71,7 +71,7 @@ SINGLE_BATTLE_TEST("Sticky Syrup speed reduction is prevented by Clear Body, Whi
     u32 species;
     u32 ability;
 
-    PARAMETRIZE { species = SPECIES_BELDUM; ability = ABILITY_CLEAR_BODY; }
+    PARAMETRIZE { species = SPECIES_FUGAMON; ability = ABILITY_CLEAR_BODY; }
     PARAMETRIZE { species = SPECIES_CLOCKMON; ability = ABILITY_WHITE_SMOKE; }
     PARAMETRIZE { species = SPECIES_SOLGALEO; ability = ABILITY_FULL_METAL_BODY; }
 
@@ -85,14 +85,14 @@ SINGLE_BATTLE_TEST("Sticky Syrup speed reduction is prevented by Clear Body, Whi
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SYRUP_BOMB, player);
         HP_BAR(opponent);
-        if (species == SPECIES_BELDUM)
+        if (species == SPECIES_FUGAMON)
         {
-            MESSAGE("Foe Beldum got covered in sticky syrup!");
+            MESSAGE("Foe Fugamon got covered in sticky syrup!");
             ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SYRUP_BOMB_SPEED_DROP, opponent);
-            MESSAGE("Foe Beldum's Clear Body prevents stat loss!");
+            MESSAGE("Foe Fugamon's Clear Body prevents stat loss!");
             NONE_OF {
-                MESSAGE("Foe Beldum's Speed fell!");
+                MESSAGE("Foe Fugamon's Speed fell!");
             }
         }
         else if (species == SPECIES_CLOCKMON)

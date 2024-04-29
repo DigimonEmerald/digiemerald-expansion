@@ -247,7 +247,7 @@
 #define P_FAMILY_FLARIZAMON               P_GEN_3_POKEMON
 #define P_FAMILY_FLYBEEMON                 P_GEN_3_POKEMON
 #define P_FAMILY_FLYMON                   P_GEN_3_POKEMON
-#define P_FAMILY_BELDUM                  P_GEN_3_POKEMON
+#define P_FAMILY_FUGAMON                  P_GEN_3_POKEMON
 #define P_FAMILY_REGIROCK                P_GEN_3_POKEMON
 #define P_FAMILY_REGICE                  P_GEN_3_POKEMON
 #define P_FAMILY_REGISTEEL               P_GEN_3_POKEMON

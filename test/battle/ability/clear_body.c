@@ -9,7 +9,7 @@ SINGLE_BATTLE_TEST("Clear Body prevents intimidate")
     GIVEN {
         PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_SHED_SKIN); };
         PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); };
-        OPPONENT(SPECIES_BELDUM) { Ability(ABILITY_CLEAR_BODY); };
+        OPPONENT(SPECIES_FUGAMON) { Ability(ABILITY_CLEAR_BODY); };
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
         TURN { SWITCH(player, 1); MOVE(opponent, MOVE_TACKLE); }
@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Clear Body prevents intimidate")
         ABILITY_POPUP(player, ABILITY_INTIMIDATE);
         NONE_OF { ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player); }
         ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
-        MESSAGE("Foe Beldum's Clear Body prevents stat loss!");
+        MESSAGE("Foe Fugamon's Clear Body prevents stat loss!");
         HP_BAR(player, captureDamage: &turnTwoHit);
     } THEN {
         EXPECT_EQ(turnOneHit, turnTwoHit);

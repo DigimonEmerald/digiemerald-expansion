@@ -5037,8 +5037,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(FrogmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FLYMON
 
-#if P_FAMILY_BELDUM
-static const union AnimCmd sAnim_Beldum_1[] =
+#if P_FAMILY_FUGAMON
+static const union AnimCmd sAnim_Fugamon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -5071,7 +5071,7 @@ static const union AnimCmd sAnim_Metagross_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(MetagrossMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BELDUM
+#endif //P_FAMILY_FUGAMON
 
 #if P_FAMILY_REGIROCK
 static const union AnimCmd sAnim_Regirock_1[] =
@@ -11327,14 +11327,14 @@ SINGLE_ANIMATION(Frogmon);
 SINGLE_ANIMATION(FrogmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FLYMON
-#if P_FAMILY_BELDUM
-SINGLE_ANIMATION(Beldum);
+#if P_FAMILY_FUGAMON
+SINGLE_ANIMATION(Fugamon);
 SINGLE_ANIMATION(Metang);
 SINGLE_ANIMATION(Metagross);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(MetagrossMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BELDUM
+#endif //P_FAMILY_FUGAMON
 #if P_FAMILY_REGIROCK
 SINGLE_ANIMATION(Regirock);
 #endif //P_FAMILY_REGIROCK

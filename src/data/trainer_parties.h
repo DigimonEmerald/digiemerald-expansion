@@ -11028,49 +11028,49 @@ static const struct TrainerMon sParty_Steven[] = {
 static const struct TrainerMon sParty_Anabel[] = {
     {
     .lvl = 5,
-    .species = SPECIES_BELDUM,
+    .species = SPECIES_FUGAMON,
     }
 };
 
 static const struct TrainerMon sParty_Tucker[] = {
     {
     .lvl = 5,
-    .species = SPECIES_BELDUM,
+    .species = SPECIES_FUGAMON,
     }
 };
 
 static const struct TrainerMon sParty_Spenser[] = {
     {
     .lvl = 5,
-    .species = SPECIES_BELDUM,
+    .species = SPECIES_FUGAMON,
     }
 };
 
 static const struct TrainerMon sParty_Greta[] = {
     {
     .lvl = 5,
-    .species = SPECIES_BELDUM,
+    .species = SPECIES_FUGAMON,
     }
 };
 
 static const struct TrainerMon sParty_Noland[] = {
     {
     .lvl = 5,
-    .species = SPECIES_BELDUM,
+    .species = SPECIES_FUGAMON,
     }
 };
 
 static const struct TrainerMon sParty_Lucy[] = {
     {
     .lvl = 5,
-    .species = SPECIES_BELDUM,
+    .species = SPECIES_FUGAMON,
     }
 };
 
 static const struct TrainerMon sParty_Brandon[] = {
     {
     .lvl = 5,
-    .species = SPECIES_BELDUM,
+    .species = SPECIES_FUGAMON,
     }
 };
 

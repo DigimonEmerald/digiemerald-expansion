@@ -5415,14 +5415,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FLYMON
 
-#if P_FAMILY_BELDUM
-    const u32 gMonFrontPic_Beldum[] = INCBIN_U32("graphics/pokemon/beldum/anim_front.4bpp.lz");
-    const u32 gMonPalette_Beldum[] = INCBIN_U32("graphics/pokemon/beldum/normal.gbapal.lz");
-    const u32 gMonBackPic_Beldum[] = INCBIN_U32("graphics/pokemon/beldum/back.4bpp.lz");
-    const u32 gMonShinyPalette_Beldum[] = INCBIN_U32("graphics/pokemon/beldum/shiny.gbapal.lz");
-    const u8 gMonIcon_Beldum[] = INCBIN_U8("graphics/pokemon/beldum/icon.4bpp");
+#if P_FAMILY_FUGAMON
+    const u32 gMonFrontPic_Fugamon[] = INCBIN_U32("graphics/pokemon/fugamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Fugamon[] = INCBIN_U32("graphics/pokemon/fugamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Fugamon[] = INCBIN_U32("graphics/pokemon/fugamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Fugamon[] = INCBIN_U32("graphics/pokemon/fugamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Fugamon[] = INCBIN_U8("graphics/pokemon/fugamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Beldum[] = INCBIN_U8("graphics/pokemon/beldum/footprint.1bpp");
+    const u8 gMonFootprint_Fugamon[] = INCBIN_U8("graphics/pokemon/fugamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Metang[] = INCBIN_U32("graphics/pokemon/metang/anim_front.4bpp.lz");
@@ -5450,7 +5450,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_MetagrossMega[] = INCBIN_U32("graphics/pokemon/metagross/mega/shiny.gbapal.lz");
     const u8 gMonIcon_MetagrossMega[] = INCBIN_U8("graphics/pokemon/metagross/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BELDUM
+#endif //P_FAMILY_FUGAMON
 
 #if P_FAMILY_REGIROCK
     const u32 gMonFrontPic_Regirock[] = INCBIN_U32("graphics/pokemon/regirock/anim_front.4bpp.lz");

@@ -376,7 +376,7 @@
 #define SPECIES_FLYMON                                   371
 #define SPECIES_FRIGIMON                                 372
 #define SPECIES_FROGMON                               373
-#define SPECIES_BELDUM                                  374
+#define SPECIES_FUGAMON                                  374
 #define SPECIES_METANG                                  375
 #define SPECIES_METAGROSS                               376
 #define SPECIES_REGIROCK                                377

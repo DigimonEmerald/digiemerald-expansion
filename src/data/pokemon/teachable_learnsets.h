@@ -17335,8 +17335,8 @@ static const u16 sFrogmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_FLYMON
 
-#if P_FAMILY_BELDUM
-static const u16 sBeldumTeachableLearnset[] = {
+#if P_FAMILY_FUGAMON
+static const u16 sFugamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
@@ -17429,7 +17429,7 @@ static const u16 sMetagrossTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BELDUM
+#endif //P_FAMILY_FUGAMON
 
 #if P_FAMILY_REGIROCK
 static const u16 sRegirockTeachableLearnset[] = {

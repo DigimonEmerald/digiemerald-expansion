@@ -1026,14 +1026,14 @@ gCryTable::
 	cry Cry_FrogmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FLYMON
-.if P_FAMILY_BELDUM == TRUE
-	cry Cry_Beldum
+.if P_FAMILY_FUGAMON == TRUE
+	cry Cry_Fugamon
 	cry Cry_Metang
 	cry Cry_Metagross
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_MetagrossMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BELDUM
+.endif @ P_FAMILY_FUGAMON
 .if P_FAMILY_REGIROCK == TRUE
 	cry Cry_Regirock
 .endif @ P_FAMILY_REGIROCK
@@ -3452,14 +3452,14 @@ gCryTable_Reverse::
 	cry_reverse Cry_FrogmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FLYMON
-.if P_FAMILY_BELDUM == TRUE
-	cry_reverse Cry_Beldum
+.if P_FAMILY_FUGAMON == TRUE
+	cry_reverse Cry_Fugamon
 	cry_reverse Cry_Metang
 	cry_reverse Cry_Metagross
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_MetagrossMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BELDUM
+.endif @ P_FAMILY_FUGAMON
 .if P_FAMILY_REGIROCK == TRUE
 	cry_reverse Cry_Regirock
 .endif @ P_FAMILY_REGIROCK
