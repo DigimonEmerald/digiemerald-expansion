@@ -14773,7 +14773,7 @@ static const u16 sBoarmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sManectricTeachableLearnset[] = {
+static const u16 sBomnanimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_FACADE,

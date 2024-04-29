@@ -4135,7 +4135,7 @@ static const union AnimCmd sAnim_Boarmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Manectric_1[] =
+static const union AnimCmd sAnim_Bomnanimon_1[] =
 {
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_FRAME(1, 33),
@@ -4146,7 +4146,7 @@ static const union AnimCmd sAnim_Manectric_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(ManectricMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(BomnanimonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BOARMON
 
@@ -11147,9 +11147,9 @@ SINGLE_ANIMATION(BlimpmonMega);
 #endif //P_FAMILY_SAWKUWAMON
 #if P_FAMILY_BOARMON
 SINGLE_ANIMATION(Boarmon);
-SINGLE_ANIMATION(Manectric);
+SINGLE_ANIMATION(Bomnanimon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(ManectricMega);
+SINGLE_ANIMATION(BomnanimonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BOARMON
 #if P_FAMILY_PLUSLE

@@ -2378,13 +2378,13 @@ Cry_Boarmon::
 	.incbin "sound/direct_sound_samples/cries/boarmon.bin"
 
 	.align 2
-Cry_Manectric::
-	.incbin "sound/direct_sound_samples/cries/manectric.bin"
+Cry_Bomnanimon::
+	.incbin "sound/direct_sound_samples/cries/bomnanimon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_ManectricMega::
-	.incbin "sound/direct_sound_samples/cries/manectric_mega.bin"
+Cry_BomnanimonMega::
+	.incbin "sound/direct_sound_samples/cries/bomnanimon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BOARMON
 

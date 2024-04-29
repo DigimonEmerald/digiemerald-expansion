@@ -4096,10 +4096,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Boarmon)
         .levelUpLearnset = sBoarmonLevelUpLearnset,
         .teachableLearnset = sBoarmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_MANECTRIC}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_BOMNANIMON}),
     },
 
-    [SPECIES_MANECTRIC] =
+    [SPECIES_BOMNANIMON] =
     {
         .baseHP        = 70,
         .baseAttack    = 75,
@@ -4118,43 +4118,43 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_STATIC, ABILITY_LIGHTNING_ROD, ABILITY_MINUS },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Manectric"),
-        .cryId = CRY_MANECTRIC,
-        .natDexNum = NATIONAL_DEX_MANECTRIC,
+        .speciesName = _("Bomnanimon"),
+        .cryId = CRY_BOMNANIMON,
+        .natDexNum = NATIONAL_DEX_BOMNANIMON,
         .categoryName = _("Discharge"),
         .height = 15,
         .weight = 402,
         .description = COMPOUND_STRING(
             "Because lightning falls in their vicinities,\n"
-            "Manectric were thought to have been born\n"
+            "Bomnanimon were thought to have been born\n"
             "from lightning. In battle, they create\n"
             "thunderclouds."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Manectric,
+        .frontPic = gMonFrontPic_Bomnanimon,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Manectric,
+        .frontAnimFrames = sAnims_Bomnanimon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Manectric,
+        .backPic = gMonBackPic_Bomnanimon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Manectric,
-        .shinyPalette = gMonShinyPalette_Manectric,
-        .iconSprite = gMonIcon_Manectric,
+        .palette = gMonPalette_Bomnanimon,
+        .shinyPalette = gMonShinyPalette_Bomnanimon,
+        .iconSprite = gMonIcon_Bomnanimon,
         .iconPalIndex = 0,
-        FOOTPRINT(Manectric)
-        .levelUpLearnset = sManectricLevelUpLearnset,
-        .teachableLearnset = sManectricTeachableLearnset,
-        .formSpeciesIdTable = sManectricFormSpeciesIdTable,
-        .formChangeTable = sManectricFormChangeTable,
+        FOOTPRINT(Bomnanimon)
+        .levelUpLearnset = sBomnanimonLevelUpLearnset,
+        .teachableLearnset = sBomnanimonTeachableLearnset,
+        .formSpeciesIdTable = sBomnanimonFormSpeciesIdTable,
+        .formChangeTable = sBomnanimonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_MANECTRIC_MEGA] =
+    [SPECIES_BOMNANIMON_MEGA] =
     {
         .baseHP        = 70,
         .baseAttack    = 75,
@@ -4173,39 +4173,39 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_INTIMIDATE, ABILITY_INTIMIDATE },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Manectric"),
-        .cryId = CRY_MANECTRIC_MEGA,
-        .natDexNum = NATIONAL_DEX_MANECTRIC,
+        .speciesName = _("Bomnanimon"),
+        .cryId = CRY_BOMNANIMON_MEGA,
+        .natDexNum = NATIONAL_DEX_BOMNANIMON,
         .categoryName = _("Discharge"),
         .height = 18,
         .weight = 440,
         .description = COMPOUND_STRING(
             "Too much electricity has built up in its\n"
-            "body, irritating Manectric. Its explosive\n"
+            "body, irritating Bomnanimon. Its explosive\n"
             "speed is equal to that of a lightning bolt."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_ManectricMega,
+        .frontPic = gMonFrontPic_BomnanimonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_ManectricMega,
+        .frontAnimFrames = sAnims_BomnanimonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_ManectricMega,
+        .backPic = gMonBackPic_BomnanimonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
-        .palette = gMonPalette_ManectricMega,
-        .shinyPalette = gMonShinyPalette_ManectricMega,
-        .iconSprite = gMonIcon_ManectricMega,
+        .palette = gMonPalette_BomnanimonMega,
+        .shinyPalette = gMonShinyPalette_BomnanimonMega,
+        .iconSprite = gMonIcon_BomnanimonMega,
         .iconPalIndex = 0,
-        FOOTPRINT(Manectric)
+        FOOTPRINT(Bomnanimon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sManectricLevelUpLearnset,
-        .teachableLearnset = sManectricTeachableLearnset,
-        .formSpeciesIdTable = sManectricFormSpeciesIdTable,
-        .formChangeTable = sManectricFormChangeTable,
+        .levelUpLearnset = sBomnanimonLevelUpLearnset,
+        .teachableLearnset = sBomnanimonTeachableLearnset,
+        .formSpeciesIdTable = sBomnanimonFormSpeciesIdTable,
+        .formChangeTable = sBomnanimonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BOARMON

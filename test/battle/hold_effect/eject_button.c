@@ -155,7 +155,7 @@ SINGLE_BATTLE_TEST("Eject Button has no chance to activate after Dragon Tail")
 SINGLE_BATTLE_TEST("Eject Button prevents Volt Switch / U-Turn from activating")
 {
     GIVEN {
-        PLAYER(SPECIES_MANECTRIC);
+        PLAYER(SPECIES_BOMNANIMON);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX) { Item(ITEM_EJECT_BUTTON); }
         OPPONENT(SPECIES_WYNAUT);

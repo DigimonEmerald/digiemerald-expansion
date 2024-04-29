@@ -311,7 +311,7 @@
 #define SPECIES_SAWKUWAMON                                307
 #define SPECIES_BLIMPMON                                308
 #define SPECIES_BOARMON                               309
-#define SPECIES_MANECTRIC                               310
+#define SPECIES_BOMNANIMON                               310
 #define SPECIES_PLUSLE                                  311
 #define SPECIES_MINUN                                   312
 #define SPECIES_VOLBEAT                                 313
@@ -993,7 +993,7 @@
 #define SPECIES_BLGARURMON_MEGA                             932
 #define SPECIES_BLGROWLMON_MEGA                             933
 #define SPECIES_BLIMPMON_MEGA                           934
-#define SPECIES_MANECTRIC_MEGA                          935
+#define SPECIES_BOMNANIMON_MEGA                          935
 #define SPECIES_SHARPEDO_MEGA                           936
 #define SPECIES_CAMERUPT_MEGA                           937
 #define SPECIES_ALTARIA_MEGA                            938
