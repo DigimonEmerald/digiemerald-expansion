@@ -8253,7 +8253,7 @@ static const struct LevelUpMove sDoggymonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sMiloticLevelUpLearnset[] = {
+static const struct LevelUpMove sDokugumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
     LEVEL_UP_MOVE( 1, MOVE_WRAP),
     LEVEL_UP_MOVE( 5, MOVE_WATER_SPORT),

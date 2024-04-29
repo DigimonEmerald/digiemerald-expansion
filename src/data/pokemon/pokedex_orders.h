@@ -577,7 +577,7 @@ const u16 gPokedexOrder_Alphabetical[] =
     NATIONAL_DEX_MIENSHAO,
     NATIONAL_DEX_TINPET,
     NATIONAL_DEX_MILCERY,
-    NATIONAL_DEX_MILOTIC,
+    NATIONAL_DEX_DOKUGUMON,
     NATIONAL_DEX_SHAMANMON,
     NATIONAL_DEX_MIME_JR,
     NATIONAL_DEX_MIMIKYU,
@@ -2682,7 +2682,7 @@ const u16 gPokedexOrder_Weight[] =
     // 354.9 lbs / 161.0 kg
     //NATIONAL_DEX_BLGARGOMON_MEGA,
     // 357.1 lbs / 162.0 kg
-    NATIONAL_DEX_MILOTIC,
+    NATIONAL_DEX_DOKUGUMON,
     // 358.2 lbs / 162.5 kg
     NATIONAL_DEX_IRON_BOULDER,
     // 370.4 lbs / 168.0 kg
@@ -4270,7 +4270,7 @@ const u16 gPokedexOrder_Height[] =
     // 19'00" / 5.8m
     NATIONAL_DEX_YVELTAL,
     // 20'04" / 6.2m
-    NATIONAL_DEX_MILOTIC,
+    NATIONAL_DEX_DOKUGUMON,
     //NATIONAL_DEX_PALKIA_ORIGIN,
     // 21'04" / 6.5m
     NATIONAL_DEX_COMMDRAMON,

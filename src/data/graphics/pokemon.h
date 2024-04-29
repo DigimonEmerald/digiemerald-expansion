@@ -5092,17 +5092,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Doggymon[] = INCBIN_U8("graphics/pokemon/doggymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Milotic[] = INCBIN_U32("graphics/pokemon/milotic/anim_front.4bpp.lz");
-    const u32 gMonPalette_Milotic[] = INCBIN_U32("graphics/pokemon/milotic/normal.gbapal.lz");
-    const u32 gMonBackPic_Milotic[] = INCBIN_U32("graphics/pokemon/milotic/back.4bpp.lz");
-    const u32 gMonShinyPalette_Milotic[] = INCBIN_U32("graphics/pokemon/milotic/shiny.gbapal.lz");
-    const u8 gMonIcon_Milotic[] = INCBIN_U8("graphics/pokemon/milotic/icon.4bpp");
+    const u32 gMonFrontPic_Dokugumon[] = INCBIN_U32("graphics/pokemon/dokugumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Dokugumon[] = INCBIN_U32("graphics/pokemon/dokugumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Dokugumon[] = INCBIN_U32("graphics/pokemon/dokugumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Dokugumon[] = INCBIN_U32("graphics/pokemon/dokugumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Dokugumon[] = INCBIN_U8("graphics/pokemon/dokugumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Milotic[] = INCBIN_U8("graphics/pokemon/milotic/footprint.1bpp");
+    const u8 gMonFootprint_Dokugumon[] = INCBIN_U8("graphics/pokemon/dokugumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_MiloticF[] = INCBIN_U32("graphics/pokemon/milotic/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_MiloticF[] = INCBIN_U32("graphics/pokemon/milotic/backf.4bpp.lz");
+    const u32 gMonFrontPic_DokugumonF[] = INCBIN_U32("graphics/pokemon/dokugumon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_DokugumonF[] = INCBIN_U32("graphics/pokemon/dokugumon/backf.4bpp.lz");
 #endif //P_FAMILY_DOGGYMON
 
 #if P_FAMILY_CASTFORM

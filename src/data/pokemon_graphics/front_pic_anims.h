@@ -4677,7 +4677,7 @@ static const union AnimCmd sAnim_Doggymon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Milotic_1[] =
+static const union AnimCmd sAnim_Dokugumon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -11253,7 +11253,7 @@ SINGLE_ANIMATION(Dobermon_x);
 #endif //P_FAMILY_DOBERMON
 #if P_FAMILY_DOGGYMON
 SINGLE_ANIMATION(Doggymon);
-SINGLE_ANIMATION(Milotic);
+SINGLE_ANIMATION(Dokugumon);
 #endif //P_FAMILY_DOGGYMON
 #if P_FAMILY_CASTFORM
 SINGLE_ANIMATION(CastformNormal);

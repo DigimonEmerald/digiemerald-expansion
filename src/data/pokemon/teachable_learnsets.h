@@ -16353,7 +16353,7 @@ static const u16 sDoggymonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sMiloticTeachableLearnset[] = {
+static const u16 sDokugumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
