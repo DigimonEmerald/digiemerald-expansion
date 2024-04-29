@@ -2654,10 +2654,10 @@ Cry_DorulumonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_DORUGAMON
 
-.if P_FAMILY_DUSKULL == TRUE
+.if P_FAMILY_DRIMOGEMON == TRUE
 	.align 2
-Cry_Duskull::
-	.incbin "sound/direct_sound_samples/cries/duskull.bin"
+Cry_Drimogemon::
+	.incbin "sound/direct_sound_samples/cries/drimogemon.bin"
 
 	.align 2
 Cry_Dusclops::
@@ -2668,7 +2668,7 @@ Cry_Dusclops::
 Cry_Dusknoir::
 	.incbin "sound/direct_sound_samples/cries/dusknoir.bin"
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_DUSKULL
+.endif @ P_FAMILY_DRIMOGEMON
 
 .if P_FAMILY_TROPIUS == TRUE
 	.align 2

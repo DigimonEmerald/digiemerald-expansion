@@ -1293,7 +1293,7 @@ static const struct TrainerMon sParty_Patricia[] = {
 static const struct TrainerMon sParty_Kindra[] = {
     {
     .lvl = 30,
-    .species = SPECIES_DUSKULL,
+    .species = SPECIES_DRIMOGEMON,
     },
     {
     .lvl = 30,
@@ -1304,7 +1304,7 @@ static const struct TrainerMon sParty_Kindra[] = {
 static const struct TrainerMon sParty_Tammy[] = {
     {
     .lvl = 29,
-    .species = SPECIES_DUSKULL,
+    .species = SPECIES_DRIMOGEMON,
     },
     {
     .lvl = 29,
@@ -1370,7 +1370,7 @@ static const struct TrainerMon sParty_Valerie5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 42,
-    .species = SPECIES_DUSKULL,
+    .species = SPECIES_DRIMOGEMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -5973,7 +5973,7 @@ static const struct TrainerMon sParty_AmyAndLiv3[] = {
 static const struct TrainerMon sParty_GinaAndMia2[] = {
     {
     .lvl = 10,
-    .species = SPECIES_DUSKULL,
+    .species = SPECIES_DRIMOGEMON,
     .moves = {MOVE_NIGHT_SHADE, MOVE_DISABLE, MOVE_NONE, MOVE_NONE}
     },
     {

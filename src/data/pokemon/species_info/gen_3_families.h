@@ -7252,8 +7252,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DORUGAMON
 
-#if P_FAMILY_DUSKULL
-    [SPECIES_DUSKULL] =
+#if P_FAMILY_DRIMOGEMON
+    [SPECIES_DRIMOGEMON] =
     {
         .baseHP        = 20,
         .baseAttack    = 40,
@@ -7274,9 +7274,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_FRISK },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Duskull"),
-        .cryId = CRY_DUSKULL,
-        .natDexNum = NATIONAL_DEX_DUSKULL,
+        .speciesName = _("Drimogemon"),
+        .cryId = CRY_DRIMOGEMON,
+        .natDexNum = NATIONAL_DEX_DRIMOGEMON,
         .categoryName = _("Requiem"),
         .height = 8,
         .weight = 150,
@@ -7289,23 +7289,23 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = -4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Duskull,
+        .frontPic = gMonFrontPic_Drimogemon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Duskull,
+        .frontAnimFrames = sAnims_Drimogemon,
         .frontAnimId = ANIM_ZIGZAG_FAST,
         .enemyMonElevation = 13,
-        .backPic = gMonBackPic_Duskull,
+        .backPic = gMonBackPic_Drimogemon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Duskull,
-        .shinyPalette = gMonShinyPalette_Duskull,
-        .iconSprite = gMonIcon_Duskull,
+        .palette = gMonPalette_Drimogemon,
+        .shinyPalette = gMonShinyPalette_Drimogemon,
+        .iconSprite = gMonIcon_Drimogemon,
         .iconPalIndex = 0,
-        FOOTPRINT(Duskull)
-        .levelUpLearnset = sDuskullLevelUpLearnset,
-        .teachableLearnset = sDuskullTeachableLearnset,
+        FOOTPRINT(Drimogemon)
+        .levelUpLearnset = sDrimogemonLevelUpLearnset,
+        .teachableLearnset = sDrimogemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_DUSCLOPS}),
     },
 
@@ -7428,7 +7428,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sDusknoirTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_DUSKULL
+#endif //P_FAMILY_DRIMOGEMON
 
 #if P_FAMILY_TROPIUS
     [SPECIES_TROPIUS] =

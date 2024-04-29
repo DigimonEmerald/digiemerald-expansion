@@ -970,13 +970,13 @@ gCryTable::
 	cry Cry_DorulumonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_DORUGAMON
-.if P_FAMILY_DUSKULL == TRUE
-	cry Cry_Duskull
+.if P_FAMILY_DRIMOGEMON == TRUE
+	cry Cry_Drimogemon
 	cry Cry_Dusclops
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Dusknoir
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_DUSKULL
+.endif @ P_FAMILY_DRIMOGEMON
 .if P_FAMILY_TROPIUS == TRUE
 	cry Cry_Tropius
 .endif @ P_FAMILY_TROPIUS
@@ -3396,13 +3396,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_DorulumonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_DORUGAMON
-.if P_FAMILY_DUSKULL == TRUE
-	cry_reverse Cry_Duskull
+.if P_FAMILY_DRIMOGEMON == TRUE
+	cry_reverse Cry_Drimogemon
 	cry_reverse Cry_Dusclops
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Dusknoir
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_DUSKULL
+.endif @ P_FAMILY_DRIMOGEMON
 .if P_FAMILY_TROPIUS == TRUE
 	cry_reverse Cry_Tropius
 .endif @ P_FAMILY_TROPIUS

@@ -5173,14 +5173,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DORUGAMON
 
-#if P_FAMILY_DUSKULL
-    const u32 gMonFrontPic_Duskull[] = INCBIN_U32("graphics/pokemon/duskull/anim_front.4bpp.lz");
-    const u32 gMonPalette_Duskull[] = INCBIN_U32("graphics/pokemon/duskull/normal.gbapal.lz");
-    const u32 gMonBackPic_Duskull[] = INCBIN_U32("graphics/pokemon/duskull/back.4bpp.lz");
-    const u32 gMonShinyPalette_Duskull[] = INCBIN_U32("graphics/pokemon/duskull/shiny.gbapal.lz");
-    const u8 gMonIcon_Duskull[] = INCBIN_U8("graphics/pokemon/duskull/icon.4bpp");
+#if P_FAMILY_DRIMOGEMON
+    const u32 gMonFrontPic_Drimogemon[] = INCBIN_U32("graphics/pokemon/drimogemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Drimogemon[] = INCBIN_U32("graphics/pokemon/drimogemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Drimogemon[] = INCBIN_U32("graphics/pokemon/drimogemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Drimogemon[] = INCBIN_U32("graphics/pokemon/drimogemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Drimogemon[] = INCBIN_U8("graphics/pokemon/drimogemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Duskull[] = INCBIN_U8("graphics/pokemon/duskull/footprint.1bpp");
+    const u8 gMonFootprint_Drimogemon[] = INCBIN_U8("graphics/pokemon/drimogemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Dusclops[] = INCBIN_U32("graphics/pokemon/dusclops/anim_front.4bpp.lz");
@@ -5202,7 +5202,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Dusknoir[] = INCBIN_U8("graphics/pokemon/dusknoir/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_DUSKULL
+#endif //P_FAMILY_DRIMOGEMON
 
 #if P_FAMILY_TROPIUS
     const u32 gMonFrontPic_Tropius[] = INCBIN_U32("graphics/pokemon/tropius/anim_front.4bpp.lz");

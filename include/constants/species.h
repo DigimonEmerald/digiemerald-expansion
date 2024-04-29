@@ -357,7 +357,7 @@
 #define SPECIES_DONSHOUMON                                 352
 #define SPECIES_DORUGAMON                                 353
 #define SPECIES_DORULUMON                                 354
-#define SPECIES_DUSKULL                                 355
+#define SPECIES_DRIMOGEMON                                 355
 #define SPECIES_DUSCLOPS                                356
 #define SPECIES_TROPIUS                                 357
 #define SPECIES_CHIMECHO                                358

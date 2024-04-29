@@ -4776,8 +4776,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(DorulumonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DORUGAMON
 
-#if P_FAMILY_DUSKULL
-static const union AnimCmd sAnim_Duskull_1[] =
+#if P_FAMILY_DRIMOGEMON
+static const union AnimCmd sAnim_Drimogemon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4813,7 +4813,7 @@ static const union AnimCmd sAnim_Dusknoir_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_DUSKULL
+#endif //P_FAMILY_DRIMOGEMON
 
 #if P_FAMILY_TROPIUS
 static const union AnimCmd sAnim_Tropius_1[] =
@@ -11271,13 +11271,13 @@ SINGLE_ANIMATION(Dorulumon);
 SINGLE_ANIMATION(DorulumonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DORUGAMON
-#if P_FAMILY_DUSKULL
-SINGLE_ANIMATION(Duskull);
+#if P_FAMILY_DRIMOGEMON
+SINGLE_ANIMATION(Drimogemon);
 SINGLE_ANIMATION(Dusclops);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Dusknoir);
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_DUSKULL
+#endif //P_FAMILY_DRIMOGEMON
 #if P_FAMILY_TROPIUS
 SINGLE_ANIMATION(Tropius);
 #endif //P_FAMILY_TROPIUS

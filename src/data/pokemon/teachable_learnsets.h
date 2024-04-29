@@ -16561,8 +16561,8 @@ static const u16 sDorulumonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DORUGAMON
 
-#if P_FAMILY_DUSKULL
-static const u16 sDuskullTeachableLearnset[] = {
+#if P_FAMILY_DRIMOGEMON
+static const u16 sDrimogemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,
@@ -16692,7 +16692,7 @@ static const u16 sDusknoirTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_DUSKULL
+#endif //P_FAMILY_DRIMOGEMON
 
 #if P_FAMILY_TROPIUS
 static const u16 sTropiusTeachableLearnset[] = {

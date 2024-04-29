@@ -2860,8 +2860,8 @@ const u16 gEggMoves[] = {
         MOVE_PHANTOM_FORCE),
 #endif //P_FAMILY_DORUGAMON
 
-#if P_FAMILY_DUSKULL
-    egg_moves(DUSKULL,
+#if P_FAMILY_DRIMOGEMON
+    egg_moves(DRIMOGEMON,
         MOVE_IMPRISON,
         MOVE_DESTINY_BOND,
         MOVE_PAIN_SPLIT,
@@ -2872,7 +2872,7 @@ const u16 gEggMoves[] = {
         MOVE_DARK_PULSE,
         MOVE_SKILL_SWAP,
         MOVE_HAZE),
-#endif //P_FAMILY_DUSKULL
+#endif //P_FAMILY_DRIMOGEMON
 
 #if P_FAMILY_TROPIUS
     egg_moves(TROPIUS,
