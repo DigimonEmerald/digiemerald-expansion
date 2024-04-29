@@ -9,7 +9,7 @@ ASSUMPTIONS
 DOUBLE_BATTLE_TEST("Quash-affected target will move last in the priority bracket")
 {
     GIVEN {
-        PLAYER(SPECIES_VOLBEAT) { Speed(10); Ability(ABILITY_PRANKSTER); }
+        PLAYER(SPECIES_BUCCHIEMON_GREEN) { Speed(10); Ability(ABILITY_PRANKSTER); }
         PLAYER(SPECIES_LOPMONX) { Speed(30); }
         OPPONENT(SPECIES_SYAKOMON_X) { Speed(20); }
         OPPONENT(SPECIES_SUNARZAMON) { Speed(40); }
@@ -28,7 +28,7 @@ DOUBLE_BATTLE_TEST("Quash is not affected by dynamic speed")
     GIVEN {
         ASSUME(B_RECALC_TURN_AFTER_ACTIONS >= GEN_8);
         ASSUME(gMovesInfo[MOVE_TAILWIND].effect == EFFECT_TAILWIND);
-        PLAYER(SPECIES_VOLBEAT) { Speed(10); Ability(ABILITY_PRANKSTER); }
+        PLAYER(SPECIES_BUCCHIEMON_GREEN) { Speed(10); Ability(ABILITY_PRANKSTER); }
         PLAYER(SPECIES_LOPMONX) { Speed(30); }
         OPPONENT(SPECIES_SYAKOMON_X) { Speed(50); }
         OPPONENT(SPECIES_SUNARZAMON) { Speed(40); }

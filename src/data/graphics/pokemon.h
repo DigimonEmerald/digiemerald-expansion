@@ -4650,14 +4650,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_BUCCHIEMON_RED
 
-#if P_FAMILY_VOLBEAT_ILLUMISE
-    const u32 gMonFrontPic_Volbeat[] = INCBIN_U32("graphics/pokemon/volbeat/anim_front.4bpp.lz");
-    const u32 gMonPalette_Volbeat[] = INCBIN_U32("graphics/pokemon/volbeat/normal.gbapal.lz");
-    const u32 gMonBackPic_Volbeat[] = INCBIN_U32("graphics/pokemon/volbeat/back.4bpp.lz");
-    const u32 gMonShinyPalette_Volbeat[] = INCBIN_U32("graphics/pokemon/volbeat/shiny.gbapal.lz");
-    const u8 gMonIcon_Volbeat[] = INCBIN_U8("graphics/pokemon/volbeat/icon.4bpp");
+#if P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
+    const u32 gMonFrontPic_Bucchiemon_green[] = INCBIN_U32("graphics/pokemon/bucchiemon_green/anim_front.4bpp.lz");
+    const u32 gMonPalette_Bucchiemon_green[] = INCBIN_U32("graphics/pokemon/bucchiemon_green/normal.gbapal.lz");
+    const u32 gMonBackPic_Bucchiemon_green[] = INCBIN_U32("graphics/pokemon/bucchiemon_green/back.4bpp.lz");
+    const u32 gMonShinyPalette_Bucchiemon_green[] = INCBIN_U32("graphics/pokemon/bucchiemon_green/shiny.gbapal.lz");
+    const u8 gMonIcon_Bucchiemon_green[] = INCBIN_U8("graphics/pokemon/bucchiemon_green/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Volbeat[] = INCBIN_U8("graphics/pokemon/volbeat/footprint.1bpp");
+    const u8 gMonFootprint_Bucchiemon_green[] = INCBIN_U8("graphics/pokemon/bucchiemon_green/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Illumise[] = INCBIN_U32("graphics/pokemon/illumise/anim_front.4bpp.lz");
@@ -4668,7 +4668,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Illumise[] = INCBIN_U8("graphics/pokemon/illumise/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_VOLBEAT_ILLUMISE
+#endif //P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
 
 #if P_FAMILY_ROSELIA
 #if P_GEN_4_CROSS_EVOS

@@ -4320,8 +4320,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_BUCCHIEMON_RED
 
-#if P_FAMILY_VOLBEAT_ILLUMISE
-    [SPECIES_VOLBEAT] =
+#if P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
+    [SPECIES_BUCCHIEMON_GREEN] =
     {
         .baseHP        = 65,
         .baseAttack    = 73,
@@ -4347,14 +4347,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_ILLUMINATE, ABILITY_SWARM, ABILITY_PRANKSTER },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Volbeat"),
-        .cryId = CRY_VOLBEAT,
-        .natDexNum = NATIONAL_DEX_VOLBEAT,
+        .speciesName = _("Bucchiemon_green"),
+        .cryId = CRY_BUCCHIEMON_GREEN,
+        .natDexNum = NATIONAL_DEX_BUCCHIEMON_GREEN,
         .categoryName = _("Firefly"),
         .height = 7,
         .weight = 177,
         .description = COMPOUND_STRING(
-            "With their taillights lit, Volbeat fly in\n"
+            "With their taillights lit, Bucchiemon_green fly in\n"
             "a swarm, drawing geometric designs in the\n"
             "night sky. They move their nests if their\n"
             "pond water becomes dirty."),
@@ -4362,22 +4362,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 16,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Volbeat,
+        .frontPic = gMonFrontPic_Bucchiemon_green,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Volbeat,
+        .frontAnimFrames = sAnims_Bucchiemon_green,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Volbeat,
+        .backPic = gMonBackPic_Bucchiemon_green,
         .backPicSize = MON_COORDS_SIZE(48, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Volbeat,
-        .shinyPalette = gMonShinyPalette_Volbeat,
-        .iconSprite = gMonIcon_Volbeat,
+        .palette = gMonPalette_Bucchiemon_green,
+        .shinyPalette = gMonShinyPalette_Bucchiemon_green,
+        .iconSprite = gMonIcon_Bucchiemon_green,
         .iconPalIndex = 0,
-        FOOTPRINT(Volbeat)
-        .levelUpLearnset = sVolbeatLevelUpLearnset,
-        .teachableLearnset = sVolbeatTeachableLearnset,
+        FOOTPRINT(Bucchiemon_green)
+        .levelUpLearnset = sBucchiemon_greenLevelUpLearnset,
+        .teachableLearnset = sBucchiemon_greenTeachableLearnset,
     },
 
     [SPECIES_ILLUMISE] =
@@ -4414,7 +4414,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .weight = 177,
         .description = COMPOUND_STRING(
             "A nocturnal Pokémon that becomes active\n"
-            "upon nightfall. It leads a Volbeat swarm\n"
+            "upon nightfall. It leads a Bucchiemon_green swarm\n"
             "to draw patterns in the night sky. Over 200\n"
             "different patterns have been confirmed."),
         .pokemonScale = 572,
@@ -4438,7 +4438,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sIllumiseLevelUpLearnset,
         .teachableLearnset = sIllumiseTeachableLearnset,
     },
-#endif //P_FAMILY_VOLBEAT_ILLUMISE
+#endif //P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
 
 #if P_FAMILY_ROSELIA
 #if P_GEN_4_CROSS_EVOS

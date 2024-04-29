@@ -4174,8 +4174,8 @@ static const union AnimCmd sAnim_Bucchiemon_red_1[] =
 };
 #endif //P_FAMILY_BUCCHIEMON_RED
 
-#if P_FAMILY_VOLBEAT_ILLUMISE
-static const union AnimCmd sAnim_Volbeat_1[] =
+#if P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
+static const union AnimCmd sAnim_Bucchiemon_green_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 11),
@@ -4196,7 +4196,7 @@ static const union AnimCmd sAnim_Illumise_1[] =
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_VOLBEAT_ILLUMISE
+#endif //P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
 
 #if P_FAMILY_ROSELIA
 #if P_GEN_4_CROSS_EVOS
@@ -11158,10 +11158,10 @@ SINGLE_ANIMATION(Boogiemon);
 #if P_FAMILY_BUCCHIEMON_RED
 SINGLE_ANIMATION(Bucchiemon_red);
 #endif //P_FAMILY_BUCCHIEMON_RED
-#if P_FAMILY_VOLBEAT_ILLUMISE
-SINGLE_ANIMATION(Volbeat);
+#if P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
+SINGLE_ANIMATION(Bucchiemon_green);
 SINGLE_ANIMATION(Illumise);
-#endif //P_FAMILY_VOLBEAT_ILLUMISE
+#endif //P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
 #if P_FAMILY_ROSELIA
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Budew);

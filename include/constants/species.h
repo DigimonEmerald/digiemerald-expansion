@@ -314,7 +314,7 @@
 #define SPECIES_BOMNANIMON                               310
 #define SPECIES_BOOGIEMON                                  311
 #define SPECIES_BUCCHIEMON_RED                                   312
-#define SPECIES_VOLBEAT                                 313
+#define SPECIES_BUCCHIEMON_GREEN                                 313
 #define SPECIES_ILLUMISE                                314
 #define SPECIES_ROSELIA                                 315
 #define SPECIES_GULPIN                                  316

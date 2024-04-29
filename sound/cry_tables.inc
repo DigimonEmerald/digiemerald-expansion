@@ -860,10 +860,10 @@ gCryTable::
 .if P_FAMILY_BUCCHIEMON_RED == TRUE
 	cry Cry_Bucchiemon_red
 .endif @ P_FAMILY_BUCCHIEMON_RED
-.if P_FAMILY_VOLBEAT_ILLUMISE == TRUE
-	cry Cry_Volbeat
+.if P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE == TRUE
+	cry Cry_Bucchiemon_green
 	cry Cry_Illumise
-.endif @ P_FAMILY_VOLBEAT_ILLUMISE
+.endif @ P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
 .if P_FAMILY_ROSELIA == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Budew
@@ -3286,10 +3286,10 @@ gCryTable_Reverse::
 .if P_FAMILY_BUCCHIEMON_RED == TRUE
 	cry_reverse Cry_Bucchiemon_red
 .endif @ P_FAMILY_BUCCHIEMON_RED
-.if P_FAMILY_VOLBEAT_ILLUMISE == TRUE
-	cry_reverse Cry_Volbeat
+.if P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE == TRUE
+	cry_reverse Cry_Bucchiemon_green
 	cry_reverse Cry_Illumise
-.endif @ P_FAMILY_VOLBEAT_ILLUMISE
+.endif @ P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
 .if P_FAMILY_ROSELIA == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Budew

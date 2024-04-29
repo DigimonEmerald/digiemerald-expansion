@@ -2400,15 +2400,15 @@ Cry_Bucchiemon_red::
 	.incbin "sound/direct_sound_samples/cries/bucchiemon_red.bin"
 .endif @ P_FAMILY_BUCCHIEMON_RED
 
-.if P_FAMILY_VOLBEAT_ILLUMISE == TRUE
+.if P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE == TRUE
 	.align 2
-Cry_Volbeat::
-	.incbin "sound/direct_sound_samples/cries/volbeat.bin"
+Cry_Bucchiemon_green::
+	.incbin "sound/direct_sound_samples/cries/bucchiemon_green.bin"
 
 	.align 2
 Cry_Illumise::
 	.incbin "sound/direct_sound_samples/cries/illumise.bin"
-.endif @ P_FAMILY_VOLBEAT_ILLUMISE
+.endif @ P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
 
 .if P_FAMILY_ROSELIA == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE

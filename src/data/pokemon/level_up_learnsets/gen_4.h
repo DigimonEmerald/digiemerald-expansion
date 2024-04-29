@@ -7508,8 +7508,8 @@ static const struct LevelUpMove sBucchiemon_redLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_BUCCHIEMON_RED
 
-#if P_FAMILY_VOLBEAT_ILLUMISE
-static const struct LevelUpMove sVolbeatLevelUpLearnset[] = {
+#if P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
+static const struct LevelUpMove sBucchiemon_greenLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FLASH),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 5, MOVE_DOUBLE_TEAM),
@@ -7541,7 +7541,7 @@ static const struct LevelUpMove sIllumiseLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_COVET),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_VOLBEAT_ILLUMISE
+#endif //P_FAMILY_BUCCHIEMON_GREEN_ILLUMISE
 
 #if P_FAMILY_ROSELIA
 #if P_GEN_4_CROSS_EVOS

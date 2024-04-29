@@ -11,7 +11,7 @@ SINGLE_BATTLE_TEST("Prankster-affected moves don't affect Dark-type Pokémon")
 {
     GIVEN {
         PLAYER(SPECIES_LABRAMON);
-        OPPONENT(SPECIES_VOLBEAT) { Ability(ABILITY_PRANKSTER); }
+        OPPONENT(SPECIES_BUCCHIEMON_GREEN) { Ability(ABILITY_PRANKSTER); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CONFUSE_RAY); }
     } SCENE {
@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Prankster-affected moves don't affect Dark-type Pokémon aft
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LABRAMON);
-        OPPONENT(SPECIES_VOLBEAT) { Ability(ABILITY_PRANKSTER); }
+        OPPONENT(SPECIES_BUCCHIEMON_GREEN) { Ability(ABILITY_PRANKSTER); }
     } WHEN {
         TURN { SWITCH(player, 1); MOVE(opponent, MOVE_CONFUSE_RAY); }
     } SCENE {
@@ -37,7 +37,7 @@ SINGLE_BATTLE_TEST("Prankster-affected moves don't affect Dark-type Pokémon aft
 DOUBLE_BATTLE_TEST("Prankster-affected moves affect Ally Dark-type Pokémon")
 {
     GIVEN {
-        PLAYER(SPECIES_VOLBEAT) { Ability(ABILITY_PRANKSTER); }
+        PLAYER(SPECIES_BUCCHIEMON_GREEN) { Ability(ABILITY_PRANKSTER); }
         PLAYER(SPECIES_LABRAMON);
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
@@ -53,7 +53,7 @@ SINGLE_BATTLE_TEST("Prankster-affected moves called via Assist don't affect Dark
 {
     GIVEN {
         PLAYER(SPECIES_LABRAMON);
-        OPPONENT(SPECIES_VOLBEAT) { Ability(ABILITY_PRANKSTER); }
+        OPPONENT(SPECIES_BUCCHIEMON_GREEN) { Ability(ABILITY_PRANKSTER); }
         OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_CONFUSE_RAY); };
     } WHEN {
         TURN { MOVE(opponent, MOVE_ASSIST); }
@@ -67,7 +67,7 @@ SINGLE_BATTLE_TEST("Prankster-affected moves called via Assist don't affect Dark
 DOUBLE_BATTLE_TEST("Prankster-affected moves called via Instruct do not affect Dark-type Pokémon")
 {
     GIVEN {
-        PLAYER(SPECIES_VOLBEAT) { Speed(20); Ability(ABILITY_PRANKSTER); }
+        PLAYER(SPECIES_BUCCHIEMON_GREEN) { Speed(20); Ability(ABILITY_PRANKSTER); }
         PLAYER(SPECIES_LOPMONX) { Speed(10);}
         OPPONENT(SPECIES_LABRAMON) { Speed(1); }
         OPPONENT(SPECIES_LOPMONX) { Speed(1); }
@@ -79,7 +79,7 @@ DOUBLE_BATTLE_TEST("Prankster-affected moves called via Instruct do not affect D
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, playerLeft);
         MESSAGE("It doesn't affect Foe Labramon…");
         MESSAGE("Lopmonx used Instruct!");
-        MESSAGE("Volbeat used Confuse Ray!");
+        MESSAGE("Bucchiemon_green used Confuse Ray!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, playerLeft);
         MESSAGE("It doesn't affect Foe Labramon…");
     }
@@ -89,7 +89,7 @@ SINGLE_BATTLE_TEST("Prankster increases the priority of moves by 1")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Speed(10); }
-        OPPONENT(SPECIES_VOLBEAT) { Speed(5); Ability(ABILITY_PRANKSTER); }
+        OPPONENT(SPECIES_BUCCHIEMON_GREEN) { Speed(5); Ability(ABILITY_PRANKSTER); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CONFUSE_RAY); MOVE(player, MOVE_CELEBRATE, WITH_RNG(RNG_CONFUSION, FALSE)); } // RNG_CONFUSION so that Wobb doesn't hit itself.
     } SCENE {
@@ -101,7 +101,7 @@ SINGLE_BATTLE_TEST("Prankster increases the priority of moves by 1")
 DOUBLE_BATTLE_TEST("Moves called via Prankster-affected After you affect Dark-type Pokémon")
 {
     GIVEN {
-        PLAYER(SPECIES_VOLBEAT) { Speed(1); Ability(ABILITY_PRANKSTER); }
+        PLAYER(SPECIES_BUCCHIEMON_GREEN) { Speed(1); Ability(ABILITY_PRANKSTER); }
         PLAYER(SPECIES_LOPMONX) { Speed(1);}
         OPPONENT(SPECIES_LABRAMON) { Speed(10); }
         OPPONENT(SPECIES_LOPMONX) { Speed(10); }
@@ -110,7 +110,7 @@ DOUBLE_BATTLE_TEST("Moves called via Prankster-affected After you affect Dark-ty
                MOVE(playerRight, MOVE_CONFUSE_RAY, target: opponentLeft);
         }
     } SCENE {
-        MESSAGE("Volbeat used After You!");
+        MESSAGE("Bucchiemon_green used After You!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_AFTER_YOU, playerLeft);
         MESSAGE("Lopmonx used Confuse Ray!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, playerRight);
@@ -122,7 +122,7 @@ SINGLE_BATTLE_TEST("Prankster is blocked by Quick Guard in Gen5+")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_VOLBEAT) { Ability(ABILITY_PRANKSTER); }
+        OPPONENT(SPECIES_BUCCHIEMON_GREEN) { Ability(ABILITY_PRANKSTER); }
     } WHEN {
         TURN { MOVE(player, MOVE_QUICK_GUARD); MOVE(opponent, MOVE_CONFUSE_RAY); }
     } SCENE {
@@ -136,7 +136,7 @@ DOUBLE_BATTLE_TEST("Prankster-affected moves that target all Pokémon are succes
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_CAPTIVATE].target == MOVE_TARGET_BOTH);
-        PLAYER(SPECIES_VOLBEAT) { Ability(ABILITY_PRANKSTER); }
+        PLAYER(SPECIES_BUCCHIEMON_GREEN) { Ability(ABILITY_PRANKSTER); }
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LABRAMON);
         OPPONENT(SPECIES_LOPMONX);
@@ -151,15 +151,15 @@ SINGLE_BATTLE_TEST("Prankster-affected moves can still be bounced back by Dark-t
 {
     GIVEN {
         PLAYER(SPECIES_LABRAMON);
-        OPPONENT(SPECIES_VOLBEAT) { Ability(ABILITY_PRANKSTER); }
+        OPPONENT(SPECIES_BUCCHIEMON_GREEN) { Ability(ABILITY_PRANKSTER); }
     } WHEN {
         TURN { MOVE(player, MOVE_MAGIC_COAT); MOVE(opponent, MOVE_CONFUSE_RAY); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MAGIC_COAT, player);
-        MESSAGE("Foe Volbeat used Confuse Ray!");
-        MESSAGE("Foe Volbeat's Confuse Ray was bounced back by MAGIC COAT!");
+        MESSAGE("Foe Bucchiemon_green used Confuse Ray!");
+        MESSAGE("Foe Bucchiemon_green's Confuse Ray was bounced back by MAGIC COAT!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);
-        MESSAGE("Foe Volbeat became confused!");
+        MESSAGE("Foe Bucchiemon_green became confused!");
     }
 }
 
@@ -194,11 +194,11 @@ SINGLE_BATTLE_TEST("Prankster-affected moves can still be bounced back by a Dark
 {
     GIVEN {
         PLAYER(SPECIES_ABSOL) { Item(ITEM_ABSOLITE); }
-        OPPONENT(SPECIES_VOLBEAT) { Ability(ABILITY_PRANKSTER); }
+        OPPONENT(SPECIES_BUCCHIEMON_GREEN) { Ability(ABILITY_PRANKSTER); }
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, megaEvolve: TRUE); MOVE(opponent, MOVE_CONFUSE_RAY); }
     } SCENE {
-        MESSAGE("Foe Volbeat's Confuse Ray was bounced back by Absol's Magic Bounce!");
+        MESSAGE("Foe Bucchiemon_green's Confuse Ray was bounced back by Absol's Magic Bounce!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);
     }
 }
