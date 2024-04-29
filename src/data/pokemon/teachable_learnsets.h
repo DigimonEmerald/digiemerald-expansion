@@ -17074,8 +17074,8 @@ static const u16 sFilmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_EYESMON_SCATTERMODE
 
-#if P_FAMILY_CLAMPERL
-static const u16 sClamperlTeachableLearnset[] = {
+#if P_FAMILY_FIRAMON
+static const u16 sFiramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -17161,7 +17161,7 @@ static const u16 sGorebyssTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CLAMPERL
+#endif //P_FAMILY_FIRAMON
 
 #if P_FAMILY_RELICANTH
 static const u16 sRelicanthTeachableLearnset[] = {

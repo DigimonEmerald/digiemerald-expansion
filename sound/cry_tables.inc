@@ -1007,11 +1007,11 @@ gCryTable::
 	cry Cry_Fangmon
 	cry Cry_Filmon
 .endif @ P_FAMILY_EYESMON_SCATTERMODE
-.if P_FAMILY_CLAMPERL == TRUE
-	cry Cry_Clamperl
+.if P_FAMILY_FIRAMON == TRUE
+	cry Cry_Firamon
 	cry Cry_Huntail
 	cry Cry_Gorebyss
-.endif @ P_FAMILY_CLAMPERL
+.endif @ P_FAMILY_FIRAMON
 .if P_FAMILY_RELICANTH == TRUE
 	cry Cry_Relicanth
 .endif @ P_FAMILY_RELICANTH
@@ -3433,11 +3433,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Fangmon
 	cry_reverse Cry_Filmon
 .endif @ P_FAMILY_EYESMON_SCATTERMODE
-.if P_FAMILY_CLAMPERL == TRUE
-	cry_reverse Cry_Clamperl
+.if P_FAMILY_FIRAMON == TRUE
+	cry_reverse Cry_Firamon
 	cry_reverse Cry_Huntail
 	cry_reverse Cry_Gorebyss
-.endif @ P_FAMILY_CLAMPERL
+.endif @ P_FAMILY_FIRAMON
 .if P_FAMILY_RELICANTH == TRUE
 	cry_reverse Cry_Relicanth
 .endif @ P_FAMILY_RELICANTH

@@ -8111,8 +8111,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_EYESMON_SCATTERMODE
 
-#if P_FAMILY_CLAMPERL
-    [SPECIES_CLAMPERL] =
+#if P_FAMILY_FIRAMON
+    [SPECIES_FIRAMON] =
     {
         .baseHP        = 35,
         .baseAttack    = 64,
@@ -8133,14 +8133,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
         .abilities = { ABILITY_SHELL_ARMOR, ABILITY_NONE, ABILITY_RATTLED },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Clamperl"),
-        .cryId = CRY_CLAMPERL,
-        .natDexNum = NATIONAL_DEX_CLAMPERL,
+        .speciesName = _("Firamon"),
+        .cryId = CRY_FIRAMON,
+        .natDexNum = NATIONAL_DEX_FIRAMON,
         .categoryName = _("Bivalve"),
         .height = 4,
         .weight = 525,
         .description = COMPOUND_STRING(
-            "A Clamperl slams its shell closed on prey\n"
+            "A Firamon slams its shell closed on prey\n"
             "to prevent escape. The pearl it creates\n"
             "upon evolution is said to be infused with\n"
             "a mysterious energy."),
@@ -8148,22 +8148,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 22,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Clamperl,
+        .frontPic = gMonFrontPic_Firamon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Clamperl,
+        .frontAnimFrames = sAnims_Firamon,
         .frontAnimId = ANIM_TWIST,
-        .backPic = gMonBackPic_Clamperl,
+        .backPic = gMonBackPic_Firamon,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Clamperl,
-        .shinyPalette = gMonShinyPalette_Clamperl,
-        .iconSprite = gMonIcon_Clamperl,
+        .palette = gMonPalette_Firamon,
+        .shinyPalette = gMonShinyPalette_Firamon,
+        .iconSprite = gMonIcon_Firamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Clamperl)
-        .levelUpLearnset = sClamperlLevelUpLearnset,
-        .teachableLearnset = sClamperlTeachableLearnset,
+        FOOTPRINT(Firamon)
+        .levelUpLearnset = sFiramonLevelUpLearnset,
+        .teachableLearnset = sFiramonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_DEEP_SEA_TOOTH, SPECIES_HUNTAIL},
                                 {EVO_TRADE_ITEM, ITEM_DEEP_SEA_SCALE, SPECIES_GOREBYSS},
                                 {EVO_ITEM, ITEM_DEEP_SEA_TOOTH, SPECIES_HUNTAIL},
@@ -8276,7 +8276,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sGorebyssLevelUpLearnset,
         .teachableLearnset = sGorebyssTeachableLearnset,
     },
-#endif //P_FAMILY_CLAMPERL
+#endif //P_FAMILY_FIRAMON
 
 #if P_FAMILY_RELICANTH
     [SPECIES_RELICANTH] =

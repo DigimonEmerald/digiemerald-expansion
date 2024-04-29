@@ -4945,8 +4945,8 @@ static const union AnimCmd sAnim_Filmon_1[] =
 };
 #endif //P_FAMILY_EYESMON_SCATTERMODE
 
-#if P_FAMILY_CLAMPERL
-static const union AnimCmd sAnim_Clamperl_1[] =
+#if P_FAMILY_FIRAMON
+static const union AnimCmd sAnim_Firamon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4975,7 +4975,7 @@ static const union AnimCmd sAnim_Gorebyss_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_CLAMPERL
+#endif //P_FAMILY_FIRAMON
 
 #if P_FAMILY_RELICANTH
 static const union AnimCmd sAnim_Relicanth_1[] =
@@ -11308,11 +11308,11 @@ SINGLE_ANIMATION(Eyesmon_scattermode);
 SINGLE_ANIMATION(Fangmon);
 SINGLE_ANIMATION(Filmon);
 #endif //P_FAMILY_EYESMON_SCATTERMODE
-#if P_FAMILY_CLAMPERL
-SINGLE_ANIMATION(Clamperl);
+#if P_FAMILY_FIRAMON
+SINGLE_ANIMATION(Firamon);
 SINGLE_ANIMATION(Huntail);
 SINGLE_ANIMATION(Gorebyss);
-#endif //P_FAMILY_CLAMPERL
+#endif //P_FAMILY_FIRAMON
 #if P_FAMILY_RELICANTH
 SINGLE_ANIMATION(Relicanth);
 #endif //P_FAMILY_RELICANTH

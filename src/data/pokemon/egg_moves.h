@@ -2968,8 +2968,8 @@ const u16 gEggMoves[] = {
         MOVE_BELLY_DRUM),
 #endif //P_FAMILY_EYESMON_SCATTERMODE
 
-#if P_FAMILY_CLAMPERL
-    egg_moves(CLAMPERL,
+#if P_FAMILY_FIRAMON
+    egg_moves(FIRAMON,
         MOVE_REFRESH,
         MOVE_MUD_SPORT,
         MOVE_BODY_SLAM,
@@ -2981,7 +2981,7 @@ const u16 gEggMoves[] = {
         MOVE_WATER_PULSE,
         MOVE_BRINE,
         MOVE_ENDURE),
-#endif //P_FAMILY_CLAMPERL
+#endif //P_FAMILY_FIRAMON
 
 #if P_FAMILY_RELICANTH
     egg_moves(RELICANTH,

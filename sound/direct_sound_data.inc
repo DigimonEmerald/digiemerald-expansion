@@ -2735,10 +2735,10 @@ Cry_Filmon::
 	.incbin "sound/direct_sound_samples/cries/filmon.bin"
 .endif @ P_FAMILY_EYESMON_SCATTERMODE
 
-.if P_FAMILY_CLAMPERL == TRUE
+.if P_FAMILY_FIRAMON == TRUE
 	.align 2
-Cry_Clamperl::
-	.incbin "sound/direct_sound_samples/cries/clamperl.bin"
+Cry_Firamon::
+	.incbin "sound/direct_sound_samples/cries/firamon.bin"
 
 	.align 2
 Cry_Huntail::
@@ -2747,7 +2747,7 @@ Cry_Huntail::
 	.align 2
 Cry_Gorebyss::
 	.incbin "sound/direct_sound_samples/cries/gorebyss.bin"
-.endif @ P_FAMILY_CLAMPERL
+.endif @ P_FAMILY_FIRAMON
 
 .if P_FAMILY_RELICANTH == TRUE
 	.align 2

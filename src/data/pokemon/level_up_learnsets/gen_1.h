@@ -6931,8 +6931,8 @@ static const struct LevelUpMove sFilmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_EYESMON_SCATTERMODE
 
-#if P_FAMILY_CLAMPERL
-static const struct LevelUpMove sClamperlLevelUpLearnset[] = {
+#if P_FAMILY_FIRAMON
+static const struct LevelUpMove sFiramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CLAMP),
     LEVEL_UP_MOVE( 1, MOVE_IRON_DEFENSE),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
@@ -6963,7 +6963,7 @@ static const struct LevelUpMove sGorebyssLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CLAMPERL
+#endif //P_FAMILY_FIRAMON
 
 #if P_FAMILY_RELICANTH
 static const struct LevelUpMove sRelicanthLevelUpLearnset[] = {

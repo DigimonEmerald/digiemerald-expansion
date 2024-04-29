@@ -368,7 +368,7 @@
 #define SPECIES_EYESMON_SCATTERMODE                                  363
 #define SPECIES_FANGMON                                  364
 #define SPECIES_FILMON                                 365
-#define SPECIES_CLAMPERL                                366
+#define SPECIES_FIRAMON                                366
 #define SPECIES_HUNTAIL                                 367
 #define SPECIES_GOREBYSS                                368
 #define SPECIES_RELICANTH                               369

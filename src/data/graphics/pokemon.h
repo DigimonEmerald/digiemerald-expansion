@@ -5324,14 +5324,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_EYESMON_SCATTERMODE
 
-#if P_FAMILY_CLAMPERL
-    const u32 gMonFrontPic_Clamperl[] = INCBIN_U32("graphics/pokemon/clamperl/anim_front.4bpp.lz");
-    const u32 gMonPalette_Clamperl[] = INCBIN_U32("graphics/pokemon/clamperl/normal.gbapal.lz");
-    const u32 gMonBackPic_Clamperl[] = INCBIN_U32("graphics/pokemon/clamperl/back.4bpp.lz");
-    const u32 gMonShinyPalette_Clamperl[] = INCBIN_U32("graphics/pokemon/clamperl/shiny.gbapal.lz");
-    const u8 gMonIcon_Clamperl[] = INCBIN_U8("graphics/pokemon/clamperl/icon.4bpp");
+#if P_FAMILY_FIRAMON
+    const u32 gMonFrontPic_Firamon[] = INCBIN_U32("graphics/pokemon/firamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Firamon[] = INCBIN_U32("graphics/pokemon/firamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Firamon[] = INCBIN_U32("graphics/pokemon/firamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Firamon[] = INCBIN_U32("graphics/pokemon/firamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Firamon[] = INCBIN_U8("graphics/pokemon/firamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Clamperl[] = INCBIN_U8("graphics/pokemon/clamperl/footprint.1bpp");
+    const u8 gMonFootprint_Firamon[] = INCBIN_U8("graphics/pokemon/firamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Huntail[] = INCBIN_U32("graphics/pokemon/huntail/anim_front.4bpp.lz");
@@ -5351,7 +5351,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Gorebyss[] = INCBIN_U8("graphics/pokemon/gorebyss/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_CLAMPERL
+#endif //P_FAMILY_FIRAMON
 
 #if P_FAMILY_RELICANTH
     const u32 gMonFrontPic_Relicanth[] = INCBIN_U32("graphics/pokemon/relicanth/anim_front.4bpp.lz");
