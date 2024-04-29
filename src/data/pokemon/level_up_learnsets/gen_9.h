@@ -8907,8 +8907,8 @@ static const struct LevelUpMove sDarktyrmon_xLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_DARKTYRMON_X
 
-#if P_FAMILY_LUNATONE
-static const struct LevelUpMove sLunatoneLevelUpLearnset[] = {
+#if P_FAMILY_DECKDRAMON
+static const struct LevelUpMove sDeckdramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_MOONBLAST),
     LEVEL_UP_MOVE( 1, MOVE_MOONLIGHT),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
@@ -8927,7 +8927,7 @@ static const struct LevelUpMove sLunatoneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_EXPLOSION),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_LUNATONE
+#endif //P_FAMILY_DECKDRAMON
 
 #if P_FAMILY_SOLROCK
 static const struct LevelUpMove sSolrockLevelUpLearnset[] = {

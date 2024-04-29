@@ -4960,16 +4960,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_DARKTYRMON_X
 
-#if P_FAMILY_LUNATONE
-    const u32 gMonFrontPic_Lunatone[] = INCBIN_U32("graphics/pokemon/lunatone/anim_front.4bpp.lz");
-    const u32 gMonPalette_Lunatone[] = INCBIN_U32("graphics/pokemon/lunatone/normal.gbapal.lz");
-    const u32 gMonBackPic_Lunatone[] = INCBIN_U32("graphics/pokemon/lunatone/back.4bpp.lz");
-    const u32 gMonShinyPalette_Lunatone[] = INCBIN_U32("graphics/pokemon/lunatone/shiny.gbapal.lz");
-    const u8 gMonIcon_Lunatone[] = INCBIN_U8("graphics/pokemon/lunatone/icon.4bpp");
+#if P_FAMILY_DECKDRAMON
+    const u32 gMonFrontPic_Deckdramon[] = INCBIN_U32("graphics/pokemon/deckdramon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Deckdramon[] = INCBIN_U32("graphics/pokemon/deckdramon/normal.gbapal.lz");
+    const u32 gMonBackPic_Deckdramon[] = INCBIN_U32("graphics/pokemon/deckdramon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Deckdramon[] = INCBIN_U32("graphics/pokemon/deckdramon/shiny.gbapal.lz");
+    const u8 gMonIcon_Deckdramon[] = INCBIN_U8("graphics/pokemon/deckdramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Lunatone[] = INCBIN_U8("graphics/pokemon/lunatone/footprint.1bpp");
+    const u8 gMonFootprint_Deckdramon[] = INCBIN_U8("graphics/pokemon/deckdramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_LUNATONE
+#endif //P_FAMILY_DECKDRAMON
 
 #if P_FAMILY_SOLROCK
     const u32 gMonFrontPic_Solrock[] = INCBIN_U32("graphics/pokemon/solrock/anim_front.4bpp.lz");

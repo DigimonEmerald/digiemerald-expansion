@@ -5991,8 +5991,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_DARKTYRMON_X
 
-#if P_FAMILY_LUNATONE
-    [SPECIES_LUNATONE] =
+#if P_FAMILY_DECKDRAMON
+    [SPECIES_DECKDRAMON] =
     {
         .baseHP        = P_UPDATED_STATS >= GEN_7 ? 90 : 70,
         .baseAttack    = 55,
@@ -6019,9 +6019,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Lunatone"),
-        .cryId = CRY_LUNATONE,
-        .natDexNum = NATIONAL_DEX_LUNATONE,
+        .speciesName = _("Deckdramon"),
+        .cryId = CRY_DECKDRAMON,
+        .natDexNum = NATIONAL_DEX_DECKDRAMON,
         .categoryName = _("Meteorite"),
         .height = 10,
         .weight = 1680,
@@ -6034,25 +6034,25 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Lunatone,
+        .frontPic = gMonFrontPic_Deckdramon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Lunatone,
+        .frontAnimFrames = sAnims_Deckdramon,
         .frontAnimId = ANIM_SWING_CONVEX_FAST,
         .enemyMonElevation = 13,
-        .backPic = gMonBackPic_Lunatone,
+        .backPic = gMonBackPic_Deckdramon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Lunatone,
-        .shinyPalette = gMonShinyPalette_Lunatone,
-        .iconSprite = gMonIcon_Lunatone,
+        .palette = gMonPalette_Deckdramon,
+        .shinyPalette = gMonShinyPalette_Deckdramon,
+        .iconSprite = gMonIcon_Deckdramon,
         .iconPalIndex = 1,
-        FOOTPRINT(Lunatone)
-        .levelUpLearnset = sLunatoneLevelUpLearnset,
-        .teachableLearnset = sLunatoneTeachableLearnset,
+        FOOTPRINT(Deckdramon)
+        .levelUpLearnset = sDeckdramonLevelUpLearnset,
+        .teachableLearnset = sDeckdramonTeachableLearnset,
     },
-#endif //P_FAMILY_LUNATONE
+#endif //P_FAMILY_DECKDRAMON
 
 #if P_FAMILY_SOLROCK
     [SPECIES_SOLROCK] =

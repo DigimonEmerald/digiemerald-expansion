@@ -15886,8 +15886,8 @@ static const u16 sDarktyrmon_xTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DARKTYRMON_X
 
-#if P_FAMILY_LUNATONE
-static const u16 sLunatoneTeachableLearnset[] = {
+#if P_FAMILY_DECKDRAMON
+static const u16 sDeckdramonTeachableLearnset[] = {
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
@@ -15925,7 +15925,7 @@ static const u16 sLunatoneTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_LUNATONE
+#endif //P_FAMILY_DECKDRAMON
 
 #if P_FAMILY_SOLROCK
 static const u16 sSolrockTeachableLearnset[] = {

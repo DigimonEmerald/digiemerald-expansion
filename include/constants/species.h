@@ -338,7 +338,7 @@
 #define SPECIES_DARMAILMON                                 334
 #define SPECIES_DARKTYRMON                                335
 #define SPECIES_DARKTYRMON_X                                 336
-#define SPECIES_LUNATONE                                337
+#define SPECIES_DECKDRAMON                                337
 #define SPECIES_SOLROCK                                 338
 #define SPECIES_BARBOACH                                339
 #define SPECIES_WHISCASH                                340
