@@ -431,9 +431,9 @@ static const struct FormChange sDolphmonFormChangeTable[] = {
 #endif //P_FAMILY_DOLPHMON
 
 #if P_FAMILY_FLYMON
-static const struct FormChange sSalamenceFormChangeTable[] = {
+static const struct FormChange sFrogmonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_SALAMENCE_MEGA, ITEM_SALAMENCITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_FROGMON_MEGA, ITEM_SALAMENCITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };

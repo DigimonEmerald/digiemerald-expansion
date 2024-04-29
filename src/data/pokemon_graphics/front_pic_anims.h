@@ -5022,7 +5022,7 @@ static const union AnimCmd sAnim_Frigimon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Salamence_1[] =
+static const union AnimCmd sAnim_Frogmon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -5033,7 +5033,7 @@ static const union AnimCmd sAnim_Salamence_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(SalamenceMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(FrogmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FLYMON
 
@@ -11322,9 +11322,9 @@ SINGLE_ANIMATION(Flybeemon);
 #if P_FAMILY_FLYMON
 SINGLE_ANIMATION(Flymon);
 SINGLE_ANIMATION(Frigimon);
-SINGLE_ANIMATION(Salamence);
+SINGLE_ANIMATION(Frogmon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(SalamenceMega);
+SINGLE_ANIMATION(FrogmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FLYMON
 #if P_FAMILY_BELDUM

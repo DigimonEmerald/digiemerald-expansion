@@ -910,10 +910,10 @@ static const u16 sEyesmonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_EXVEEMON_VIRUS
 
 #if P_FAMILY_FLYMON
-static const u16 sSalamenceFormSpeciesIdTable[] = {
-    SPECIES_SALAMENCE,
+static const u16 sFrogmonFormSpeciesIdTable[] = {
+    SPECIES_FROGMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_SALAMENCE_MEGA,
+    SPECIES_FROGMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };

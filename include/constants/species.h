@@ -375,7 +375,7 @@
 #define SPECIES_FLYBEEMON                                 370
 #define SPECIES_FLYMON                                   371
 #define SPECIES_FRIGIMON                                 372
-#define SPECIES_SALAMENCE                               373
+#define SPECIES_FROGMON                               373
 #define SPECIES_BELDUM                                  374
 #define SPECIES_METANG                                  375
 #define SPECIES_METAGROSS                               376
@@ -1000,7 +1000,7 @@
 #define SPECIES_DORULUMON_MEGA                            939
 #define SPECIES_EXERMON_MEGA                              940
 #define SPECIES_EYESMON_MEGA                             941
-#define SPECIES_SALAMENCE_MEGA                          942
+#define SPECIES_FROGMON_MEGA                          942
 #define SPECIES_METAGROSS_MEGA                          943
 #define SPECIES_LATIAS_MEGA                             944
 #define SPECIES_LATIOS_MEGA                             945

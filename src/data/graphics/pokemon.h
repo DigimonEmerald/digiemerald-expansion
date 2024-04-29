@@ -5397,21 +5397,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Frigimon[] = INCBIN_U8("graphics/pokemon/frigimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Salamence[] = INCBIN_U32("graphics/pokemon/salamence/anim_front.4bpp.lz");
-    const u32 gMonPalette_Salamence[] = INCBIN_U32("graphics/pokemon/salamence/normal.gbapal.lz");
-    const u32 gMonBackPic_Salamence[] = INCBIN_U32("graphics/pokemon/salamence/back.4bpp.lz");
-    const u32 gMonShinyPalette_Salamence[] = INCBIN_U32("graphics/pokemon/salamence/shiny.gbapal.lz");
-    const u8 gMonIcon_Salamence[] = INCBIN_U8("graphics/pokemon/salamence/icon.4bpp");
+    const u32 gMonFrontPic_Frogmon[] = INCBIN_U32("graphics/pokemon/frogmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Frogmon[] = INCBIN_U32("graphics/pokemon/frogmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Frogmon[] = INCBIN_U32("graphics/pokemon/frogmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Frogmon[] = INCBIN_U32("graphics/pokemon/frogmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Frogmon[] = INCBIN_U8("graphics/pokemon/frogmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Salamence[] = INCBIN_U8("graphics/pokemon/salamence/footprint.1bpp");
+    const u8 gMonFootprint_Frogmon[] = INCBIN_U8("graphics/pokemon/frogmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_SalamenceMega[] = INCBIN_U32("graphics/pokemon/salamence/mega/front.4bpp.lz");
-    const u32 gMonPalette_SalamenceMega[] = INCBIN_U32("graphics/pokemon/salamence/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_SalamenceMega[] = INCBIN_U32("graphics/pokemon/salamence/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_SalamenceMega[] = INCBIN_U32("graphics/pokemon/salamence/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_SalamenceMega[] = INCBIN_U8("graphics/pokemon/salamence/mega/icon.4bpp");
+    const u32 gMonFrontPic_FrogmonMega[] = INCBIN_U32("graphics/pokemon/frogmon/mega/front.4bpp.lz");
+    const u32 gMonPalette_FrogmonMega[] = INCBIN_U32("graphics/pokemon/frogmon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_FrogmonMega[] = INCBIN_U32("graphics/pokemon/frogmon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_FrogmonMega[] = INCBIN_U32("graphics/pokemon/frogmon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_FrogmonMega[] = INCBIN_U8("graphics/pokemon/frogmon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FLYMON
 

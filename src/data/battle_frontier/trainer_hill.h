@@ -4689,7 +4689,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                 {
                                     [0] =
                                         {
-                                            .species = SPECIES_SALAMENCE,
+                                            .species = SPECIES_FROGMON,
                                             .heldItem = ITEM_SHELL_BELL,
                                             .moves = {MOVE_ROCK_SLIDE, MOVE_FLAMETHROWER, MOVE_DRAGON_CLAW, MOVE_AERIAL_ACE},
                                             .attackEV = 255,
@@ -4703,7 +4703,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x95,
-                                            .nickname = _("SALAMENCE"),
+                                            .nickname = _("FROGMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [1] =

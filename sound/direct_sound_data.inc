@@ -2771,13 +2771,13 @@ Cry_Frigimon::
 	.incbin "sound/direct_sound_samples/cries/frigimon.bin"
 
 	.align 2
-Cry_Salamence::
-	.incbin "sound/direct_sound_samples/cries/salamence.bin"
+Cry_Frogmon::
+	.incbin "sound/direct_sound_samples/cries/frogmon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_SalamenceMega::
-	.incbin "sound/direct_sound_samples/cries/salamence_mega.bin"
+Cry_FrogmonMega::
+	.incbin "sound/direct_sound_samples/cries/frogmon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FLYMON
 

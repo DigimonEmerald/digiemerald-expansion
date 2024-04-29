@@ -1021,9 +1021,9 @@ gCryTable::
 .if P_FAMILY_FLYMON == TRUE
 	cry Cry_Flymon
 	cry Cry_Frigimon
-	cry Cry_Salamence
+	cry Cry_Frogmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_SalamenceMega
+	cry Cry_FrogmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FLYMON
 .if P_FAMILY_BELDUM == TRUE
@@ -3447,9 +3447,9 @@ gCryTable_Reverse::
 .if P_FAMILY_FLYMON == TRUE
 	cry_reverse Cry_Flymon
 	cry_reverse Cry_Frigimon
-	cry_reverse Cry_Salamence
+	cry_reverse Cry_Frogmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_SalamenceMega
+	cry_reverse Cry_FrogmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FLYMON
 .if P_FAMILY_BELDUM == TRUE
