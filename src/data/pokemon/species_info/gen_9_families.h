@@ -3995,7 +3995,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             "This species left the ocean and\n"
             "began living on land a very long time\n"
             "ago. It seems to be closely related\n"
-            "to Wailmer."),
+            "to Chamblemon."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,

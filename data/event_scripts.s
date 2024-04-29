@@ -954,7 +954,7 @@ gText_PlayerFoundTMHMs::
 
 gText_Junkmon_Attacked::
 	.string "The weird tree doesn't like the\n"
-	.string "WAILMER PAIL!\p"
+	.string "CHAMBLEMON PAIL!\p"
 	.string "The weird tree attacked!$"
 
 gText_LegendaryFlewAway::

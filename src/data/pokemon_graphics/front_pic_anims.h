@@ -4282,8 +4282,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(CentarumonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CHOUMON
 
-#if P_FAMILY_WAILMER
-static const union AnimCmd sAnim_Wailmer_1[] =
+#if P_FAMILY_CHAMBLEMON
+static const union AnimCmd sAnim_Chamblemon_1[] =
 {
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_FRAME(1, 22),
@@ -4302,7 +4302,7 @@ static const union AnimCmd sAnim_Wailord_1[] =
     ANIMCMD_FRAME(0, 33),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_WAILMER
+#endif //P_FAMILY_CHAMBLEMON
 
 #if P_FAMILY_NUMEL
 static const union AnimCmd sAnim_Numel_1[] =
@@ -11182,10 +11182,10 @@ SINGLE_ANIMATION(Centarumon);
 SINGLE_ANIMATION(CentarumonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CHOUMON
-#if P_FAMILY_WAILMER
-SINGLE_ANIMATION(Wailmer);
+#if P_FAMILY_CHAMBLEMON
+SINGLE_ANIMATION(Chamblemon);
 SINGLE_ANIMATION(Wailord);
-#endif //P_FAMILY_WAILMER
+#endif //P_FAMILY_CHAMBLEMON
 #if P_FAMILY_NUMEL
 SINGLE_ANIMATION(Numel);
 SINGLE_ANIMATION(Camerupt);

@@ -15221,8 +15221,8 @@ static const u16 sCentarumonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_CHOUMON
 
-#if P_FAMILY_WAILMER
-static const u16 sWailmerTeachableLearnset[] = {
+#if P_FAMILY_CHAMBLEMON
+static const u16 sChamblemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -15286,7 +15286,7 @@ static const u16 sWailordTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_WAILMER
+#endif //P_FAMILY_CHAMBLEMON
 
 #if P_FAMILY_NUMEL
 static const u16 sNumelTeachableLearnset[] = {

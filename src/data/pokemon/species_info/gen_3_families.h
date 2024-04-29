@@ -4915,8 +4915,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CHOUMON
 
-#if P_FAMILY_WAILMER
-    [SPECIES_WAILMER] =
+#if P_FAMILY_CHAMBLEMON
+    [SPECIES_CHAMBLEMON] =
     {
         .baseHP        = 130,
         .baseAttack    = 70,
@@ -4935,9 +4935,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_WATER_2),
         .abilities = { ABILITY_WATER_VEIL, ABILITY_OBLIVIOUS, ABILITY_PRESSURE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Wailmer"),
-        .cryId = CRY_WAILMER,
-        .natDexNum = NATIONAL_DEX_WAILMER,
+        .speciesName = _("Chamblemon"),
+        .cryId = CRY_CHAMBLEMON,
+        .natDexNum = NATIONAL_DEX_CHAMBLEMON,
         .categoryName = _("Ball Whale"),
         .height = 20,
         .weight = 1300,
@@ -4950,22 +4950,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 2,
         .trainerScale = 493,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Wailmer,
+        .frontPic = gMonFrontPic_Chamblemon,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Wailmer,
+        .frontAnimFrames = sAnims_Chamblemon,
         .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
-        .backPic = gMonBackPic_Wailmer,
+        .backPic = gMonBackPic_Chamblemon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
-        .palette = gMonPalette_Wailmer,
-        .shinyPalette = gMonShinyPalette_Wailmer,
-        .iconSprite = gMonIcon_Wailmer,
+        .palette = gMonPalette_Chamblemon,
+        .shinyPalette = gMonShinyPalette_Chamblemon,
+        .iconSprite = gMonIcon_Chamblemon,
         .iconPalIndex = 2,
-        FOOTPRINT(Wailmer)
-        .levelUpLearnset = sWailmerLevelUpLearnset,
-        .teachableLearnset = sWailmerTeachableLearnset,
+        FOOTPRINT(Chamblemon)
+        .levelUpLearnset = sChamblemonLevelUpLearnset,
+        .teachableLearnset = sChamblemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_WAILORD}),
     },
 
@@ -5021,7 +5021,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sWailordLevelUpLearnset,
         .teachableLearnset = sWailordTeachableLearnset,
     },
-#endif //P_FAMILY_WAILMER
+#endif //P_FAMILY_CHAMBLEMON
 
 #if P_FAMILY_NUMEL
     [SPECIES_NUMEL] =

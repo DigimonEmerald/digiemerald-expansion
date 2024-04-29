@@ -216,7 +216,7 @@
 #define P_FAMILY_BULLMON                 P_GEN_3_POKEMON
 #define P_FAMILY_BURAIMON                  P_GEN_3_POKEMON
 #define P_FAMILY_CHOUMON                P_GEN_3_POKEMON
-#define P_FAMILY_WAILMER                 P_GEN_3_POKEMON
+#define P_FAMILY_CHAMBLEMON                 P_GEN_3_POKEMON
 #define P_FAMILY_NUMEL                   P_GEN_3_POKEMON
 #define P_FAMILY_TORKOAL                 P_GEN_3_POKEMON
 #define P_FAMILY_SPOINK                  P_GEN_3_POKEMON

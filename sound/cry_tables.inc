@@ -884,10 +884,10 @@ gCryTable::
 	cry Cry_CentarumonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_CHOUMON
-.if P_FAMILY_WAILMER == TRUE
-	cry Cry_Wailmer
+.if P_FAMILY_CHAMBLEMON == TRUE
+	cry Cry_Chamblemon
 	cry Cry_Wailord
-.endif @ P_FAMILY_WAILMER
+.endif @ P_FAMILY_CHAMBLEMON
 .if P_FAMILY_NUMEL == TRUE
 	cry Cry_Numel
 	cry Cry_Camerupt
@@ -3310,10 +3310,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_CentarumonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_CHOUMON
-.if P_FAMILY_WAILMER == TRUE
-	cry_reverse Cry_Wailmer
+.if P_FAMILY_CHAMBLEMON == TRUE
+	cry_reverse Cry_Chamblemon
 	cry_reverse Cry_Wailord
-.endif @ P_FAMILY_WAILMER
+.endif @ P_FAMILY_CHAMBLEMON
 .if P_FAMILY_NUMEL == TRUE
 	cry_reverse Cry_Numel
 	cry_reverse Cry_Camerupt

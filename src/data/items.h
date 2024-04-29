@@ -3294,7 +3294,7 @@ const struct Item gItemsInfo[] =
         .pluralName = _("Wave Mail"),
         .price = 50,
         .description = COMPOUND_STRING(
-            "A Wailmer-print\n"
+            "A Chamblemon-print\n"
             "Mail to be held by\n"
             "a Pokémon."),
         .pocket = POCKET_ITEMS,
@@ -11143,9 +11143,9 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_PowderJar,
     },
 
-    [ITEM_WAILMER_PAIL] =
+    [ITEM_CHAMBLEMON_PAIL] =
     {
-        .name = _("Wailmer Pail"),
+        .name = _("Chamblemon Pail"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A tool used for\n"
@@ -11154,7 +11154,7 @@ const struct Item gItemsInfo[] =
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
-        .fieldUseFunc = ItemUseOutOfBattle_WailmerPail,
+        .fieldUseFunc = ItemUseOutOfBattle_ChamblemonPail,
     },
 
     [ITEM_POKE_RADAR] =

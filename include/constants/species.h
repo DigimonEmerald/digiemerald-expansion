@@ -321,7 +321,7 @@
 #define SPECIES_BURGERMON_CHAMPION                                  317
 #define SPECIES_CHOUMON                                318
 #define SPECIES_CENTARUMON                                319
-#define SPECIES_WAILMER                                 320
+#define SPECIES_CHAMBLEMON                                 320
 #define SPECIES_WAILORD                                 321
 #define SPECIES_NUMEL                                   322
 #define SPECIES_CAMERUPT                                323

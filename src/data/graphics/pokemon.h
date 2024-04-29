@@ -4763,14 +4763,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CHOUMON
 
-#if P_FAMILY_WAILMER
-    const u32 gMonFrontPic_Wailmer[] = INCBIN_U32("graphics/pokemon/wailmer/anim_front.4bpp.lz");
-    const u32 gMonPalette_Wailmer[] = INCBIN_U32("graphics/pokemon/wailmer/normal.gbapal.lz");
-    const u32 gMonBackPic_Wailmer[] = INCBIN_U32("graphics/pokemon/wailmer/back.4bpp.lz");
-    const u32 gMonShinyPalette_Wailmer[] = INCBIN_U32("graphics/pokemon/wailmer/shiny.gbapal.lz");
-    const u8 gMonIcon_Wailmer[] = INCBIN_U8("graphics/pokemon/wailmer/icon.4bpp");
+#if P_FAMILY_CHAMBLEMON
+    const u32 gMonFrontPic_Chamblemon[] = INCBIN_U32("graphics/pokemon/chamblemon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Chamblemon[] = INCBIN_U32("graphics/pokemon/chamblemon/normal.gbapal.lz");
+    const u32 gMonBackPic_Chamblemon[] = INCBIN_U32("graphics/pokemon/chamblemon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Chamblemon[] = INCBIN_U32("graphics/pokemon/chamblemon/shiny.gbapal.lz");
+    const u8 gMonIcon_Chamblemon[] = INCBIN_U8("graphics/pokemon/chamblemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Wailmer[] = INCBIN_U8("graphics/pokemon/wailmer/footprint.1bpp");
+    const u8 gMonFootprint_Chamblemon[] = INCBIN_U8("graphics/pokemon/chamblemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Wailord[] = INCBIN_U32("graphics/pokemon/wailord/anim_front.4bpp.lz");
@@ -4781,7 +4781,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Wailord[] = INCBIN_U8("graphics/pokemon/wailord/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_WAILMER
+#endif //P_FAMILY_CHAMBLEMON
 
 #if P_FAMILY_NUMEL
     const u32 gMonFrontPic_Numel[] = INCBIN_U32("graphics/pokemon/numel/anim_front.4bpp.lz");

@@ -1846,8 +1846,8 @@ const u32 gItemIconPalette_CoinCase[] = INCBIN_U32("graphics/items/icon_palettes
 const u32 gItemIcon_PowderJar[] = INCBIN_U32("graphics/items/icons/powder_jar.4bpp.lz");
 const u32 gItemIconPalette_PowderJar[] = INCBIN_U32("graphics/items/icon_palettes/powder_jar.gbapal.lz");
 
-const u32 gItemIcon_WailmerPail[] = INCBIN_U32("graphics/items/icons/wailmer_pail.4bpp.lz");
-const u32 gItemIconPalette_WailmerPail[] = INCBIN_U32("graphics/items/icon_palettes/wailmer_pail.gbapal.lz");
+const u32 gItemIcon_ChamblemonPail[] = INCBIN_U32("graphics/items/icons/chamblemon_pail.4bpp.lz");
+const u32 gItemIconPalette_ChamblemonPail[] = INCBIN_U32("graphics/items/icon_palettes/chamblemon_pail.gbapal.lz");
 
 const u32 gItemIcon_PokeRadar[] = INCBIN_U32("graphics/items/icons/poke_radar.4bpp.lz");
 const u32 gItemIconPalette_PokeRadar[] = INCBIN_U32("graphics/items/icon_palettes/poke_radar.gbapal.lz");

@@ -63,8 +63,8 @@ static void ItemUseOnFieldCB_Bike(u8);
 static void ItemUseOnFieldCB_Rod(u8);
 static void ItemUseOnFieldCB_Itemfinder(u8);
 static void ItemUseOnFieldCB_Berry(u8);
-static void ItemUseOnFieldCB_WailmerPailBerry(u8);
-static void ItemUseOnFieldCB_WailmerPailJunkmon(u8);
+static void ItemUseOnFieldCB_ChamblemonPailBerry(u8);
+static void ItemUseOnFieldCB_ChamblemonPailJunkmon(u8);
 static bool8 TryToWaterJunkmon(void);
 static void BootUpSoundTMHM(u8);
 static void Task_ShowTMHMContainedMessage(u8);
@@ -746,16 +746,16 @@ static void ItemUseOnFieldCB_Berry(u8 taskId)
     DestroyTask(taskId);
 }
 
-void ItemUseOutOfBattle_WailmerPail(u8 taskId)
+void ItemUseOutOfBattle_ChamblemonPail(u8 taskId)
 {
     if (TryToWaterJunkmon() == TRUE)
     {
-        sItemUseOnFieldCB = ItemUseOnFieldCB_WailmerPailJunkmon;
+        sItemUseOnFieldCB = ItemUseOnFieldCB_ChamblemonPailJunkmon;
         SetUpItemUseOnFieldCallback(taskId);
     }
     else if (TryToWaterBerryTree() == TRUE)
     {
-        sItemUseOnFieldCB = ItemUseOnFieldCB_WailmerPailBerry;
+        sItemUseOnFieldCB = ItemUseOnFieldCB_ChamblemonPailBerry;
         SetUpItemUseOnFieldCallback(taskId);
     }
     else
@@ -764,10 +764,10 @@ void ItemUseOutOfBattle_WailmerPail(u8 taskId)
     }
 }
 
-static void ItemUseOnFieldCB_WailmerPailBerry(u8 taskId)
+static void ItemUseOnFieldCB_ChamblemonPailBerry(u8 taskId)
 {
     LockPlayerFieldControls();
-    ScriptContext_SetupScript(BerryTree_EventScript_ItemUseWailmerPail);
+    ScriptContext_SetupScript(BerryTree_EventScript_ItemUseChamblemonPail);
     DestroyTask(taskId);
 }
 
@@ -785,7 +785,7 @@ static bool8 TryToWaterJunkmon(void)
         return TRUE;
 }
 
-static void ItemUseOnFieldCB_WailmerPailJunkmon(u8 taskId)
+static void ItemUseOnFieldCB_ChamblemonPailJunkmon(u8 taskId)
 {
     LockPlayerFieldControls();
     ScriptContext_SetupScript(BattleFrontier_OutsideEast_EventScript_WaterJunkmon);

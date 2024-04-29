@@ -2454,15 +2454,15 @@ Cry_CentarumonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_CHOUMON
 
-.if P_FAMILY_WAILMER == TRUE
+.if P_FAMILY_CHAMBLEMON == TRUE
 	.align 2
-Cry_Wailmer::
-	.incbin "sound/direct_sound_samples/cries/wailmer.bin"
+Cry_Chamblemon::
+	.incbin "sound/direct_sound_samples/cries/chamblemon.bin"
 
 	.align 2
 Cry_Wailord::
 	.incbin "sound/direct_sound_samples/cries/wailord.bin"
-.endif @ P_FAMILY_WAILMER
+.endif @ P_FAMILY_CHAMBLEMON
 
 .if P_FAMILY_NUMEL == TRUE
 	.align 2

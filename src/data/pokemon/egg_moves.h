@@ -2569,8 +2569,8 @@ const u16 gEggMoves[] = {
         MOVE_PSYCHIC_FANGS),
 #endif //P_FAMILY_CHOUMON
 
-#if P_FAMILY_WAILMER
-    egg_moves(WAILMER,
+#if P_FAMILY_CHAMBLEMON
+    egg_moves(CHAMBLEMON,
         MOVE_DOUBLE_EDGE,
         MOVE_THRASH,
         MOVE_SNORE,
@@ -2584,7 +2584,7 @@ const u16 gEggMoves[] = {
         MOVE_SOAK,
         MOVE_ZEN_HEADBUTT,
         MOVE_CLEAR_SMOG),
-#endif //P_FAMILY_WAILMER
+#endif //P_FAMILY_CHAMBLEMON
 
 #if P_FAMILY_NUMEL
     egg_moves(NUMEL,

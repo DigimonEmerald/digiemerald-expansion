@@ -8536,8 +8536,8 @@ static const struct LevelUpMove sCentarumonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_CHOUMON
 
-#if P_FAMILY_WAILMER
-static const struct LevelUpMove sWailmerLevelUpLearnset[] = {
+#if P_FAMILY_CHAMBLEMON
+static const struct LevelUpMove sChamblemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
     LEVEL_UP_MOVE( 3, MOVE_GROWL),
     LEVEL_UP_MOVE( 6, MOVE_ASTONISH),
@@ -8578,7 +8578,7 @@ static const struct LevelUpMove sWailordLevelUpLearnset[] = {
     LEVEL_UP_MOVE(54, MOVE_WATER_SPOUT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_WAILMER
+#endif //P_FAMILY_CHAMBLEMON
 
 #if P_FAMILY_NUMEL
 static const struct LevelUpMove sNumelLevelUpLearnset[] = {
