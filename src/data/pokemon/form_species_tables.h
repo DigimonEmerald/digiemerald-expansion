@@ -810,10 +810,10 @@ static const u16 sBlgarurmonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_BLGARURMON
 
 #if P_FAMILY_BLKGATOMON
-static const u16 sAggronFormSpeciesIdTable[] = {
-    SPECIES_AGGRON,
+static const u16 sBlgrowlmonFormSpeciesIdTable[] = {
+    SPECIES_BLGROWLMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_AGGRON_MEGA,
+    SPECIES_BLGROWLMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };

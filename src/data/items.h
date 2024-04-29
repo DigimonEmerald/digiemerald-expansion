@@ -5052,14 +5052,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_AGGRONITE] =
+    [ITEM_BLGROWLMONITE] =
     {
-        .name = _("Aggronite"),
+        .name = _("Blgrowlmonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Aggron to Mega\n"
+            "Blgrowlmon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

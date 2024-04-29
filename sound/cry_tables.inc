@@ -835,9 +835,9 @@ gCryTable::
 .if P_FAMILY_BLKGATOMON == TRUE
 	cry Cry_Blkgatomon
 	cry Cry_Blkgatomon_uver
-	cry Cry_Aggron
+	cry Cry_Blgrowlmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_AggronMega
+	cry Cry_BlgrowlmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BLKGATOMON
 .if P_FAMILY_MEDITITE == TRUE
@@ -3261,9 +3261,9 @@ gCryTable_Reverse::
 .if P_FAMILY_BLKGATOMON == TRUE
 	cry_reverse Cry_Blkgatomon
 	cry_reverse Cry_Blkgatomon_uver
-	cry_reverse Cry_Aggron
+	cry_reverse Cry_Blgrowlmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_AggronMega
+	cry_reverse Cry_BlgrowlmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BLKGATOMON
 .if P_FAMILY_MEDITITE == TRUE

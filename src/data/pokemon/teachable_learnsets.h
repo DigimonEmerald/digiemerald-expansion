@@ -14584,7 +14584,7 @@ static const u16 sBlkgatomon_uverTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sAggronTeachableLearnset[] = {
+static const u16 sBlgrowlmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,

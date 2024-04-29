@@ -4085,7 +4085,7 @@ static const union AnimCmd sAnim_Blkgatomon_uver_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Aggron_1[] =
+static const union AnimCmd sAnim_Blgrowlmon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 44),
@@ -4094,7 +4094,7 @@ static const union AnimCmd sAnim_Aggron_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(AggronMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(BlgrowlmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLKGATOMON
 
@@ -11133,9 +11133,9 @@ SINGLE_ANIMATION(BlgarurmonMega);
 #if P_FAMILY_BLKGATOMON
 SINGLE_ANIMATION(Blkgatomon);
 SINGLE_ANIMATION(Blkgatomon_uver);
-SINGLE_ANIMATION(Aggron);
+SINGLE_ANIMATION(Blgrowlmon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(AggronMega);
+SINGLE_ANIMATION(BlgrowlmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLKGATOMON
 #if P_FAMILY_MEDITITE

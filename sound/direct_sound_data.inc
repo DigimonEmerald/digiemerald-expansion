@@ -2346,13 +2346,13 @@ Cry_Blkgatomon_uver::
 	.incbin "sound/direct_sound_samples/cries/blkgatomon_uver.bin"
 
 	.align 2
-Cry_Aggron::
-	.incbin "sound/direct_sound_samples/cries/aggron.bin"
+Cry_Blgrowlmon::
+	.incbin "sound/direct_sound_samples/cries/blgrowlmon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_AggronMega::
-	.incbin "sound/direct_sound_samples/cries/aggron_mega.bin"
+Cry_BlgrowlmonMega::
+	.incbin "sound/direct_sound_samples/cries/blgrowlmon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BLKGATOMON
 

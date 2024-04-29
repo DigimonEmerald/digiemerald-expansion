@@ -3748,10 +3748,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Blkgatomon_uver)
         .levelUpLearnset = sBlkgatomon_uverLevelUpLearnset,
         .teachableLearnset = sBlkgatomon_uverTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_AGGRON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_BLGROWLMON}),
     },
 
-    [SPECIES_AGGRON] =
+    [SPECIES_BLGROWLMON] =
     {
         .baseHP        = 70,
         .baseAttack    = 110,
@@ -3777,43 +3777,43 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_STURDY, ABILITY_ROCK_HEAD, ABILITY_HEAVY_METAL },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Aggron"),
-        .cryId = CRY_AGGRON,
-        .natDexNum = NATIONAL_DEX_AGGRON,
+        .speciesName = _("Blgrowlmon"),
+        .cryId = CRY_BLGROWLMON,
+        .natDexNum = NATIONAL_DEX_BLGROWLMON,
         .categoryName = _("Iron Armor"),
         .height = 21,
         .weight = 3600,
         .description = COMPOUND_STRING(
             "Its iron horns grow longer a little at\n"
             "a time. They are used to determine the\n"
-            "Aggron's age. The gouges in its armor are\n"
+            "Blgrowlmon's age. The gouges in its armor are\n"
             "worn with pride as mementos from battles."),
         .pokemonScale = 256,
         .pokemonOffset = -1,
         .trainerScale = 350,
         .trainerOffset = 6,
-        .frontPic = gMonFrontPic_Aggron,
+        .frontPic = gMonFrontPic_Blgrowlmon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Aggron,
+        .frontAnimFrames = sAnims_Blgrowlmon,
         .frontAnimId = ANIM_V_SHAKE_TWICE,
-        .backPic = gMonBackPic_Aggron,
+        .backPic = gMonBackPic_Blgrowlmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Aggron,
-        .shinyPalette = gMonShinyPalette_Aggron,
-        .iconSprite = gMonIcon_Aggron,
+        .palette = gMonPalette_Blgrowlmon,
+        .shinyPalette = gMonShinyPalette_Blgrowlmon,
+        .iconSprite = gMonIcon_Blgrowlmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Aggron)
-        .levelUpLearnset = sAggronLevelUpLearnset,
-        .teachableLearnset = sAggronTeachableLearnset,
-        .formSpeciesIdTable = sAggronFormSpeciesIdTable,
-        .formChangeTable = sAggronFormChangeTable,
+        FOOTPRINT(Blgrowlmon)
+        .levelUpLearnset = sBlgrowlmonLevelUpLearnset,
+        .teachableLearnset = sBlgrowlmonTeachableLearnset,
+        .formSpeciesIdTable = sBlgrowlmonFormSpeciesIdTable,
+        .formChangeTable = sBlgrowlmonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_AGGRON_MEGA] =
+    [SPECIES_BLGROWLMON_MEGA] =
     {
         .baseHP        = 70,
         .baseAttack    = 140,
@@ -3833,40 +3833,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_FILTER, ABILITY_FILTER, ABILITY_FILTER },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Aggron"),
-        .cryId = CRY_AGGRON_MEGA,
-        .natDexNum = NATIONAL_DEX_AGGRON,
+        .speciesName = _("Blgrowlmon"),
+        .cryId = CRY_BLGROWLMON_MEGA,
+        .natDexNum = NATIONAL_DEX_BLGROWLMON,
         .categoryName = _("Iron Armor"),
         .height = 22,
         .weight = 3950,
         .description = COMPOUND_STRING(
-            "When Aggron Mega Evolves into\n"
-            "Mega Aggron, the destructive ability of\n"
+            "When Blgrowlmon Mega Evolves into\n"
+            "Mega Blgrowlmon, the destructive ability of\n"
             "its fearsome horns can turn a steel-clad\n"
             "tank into so much scrap metal."),
         .pokemonScale = 256,
         .pokemonOffset = -1,
         .trainerScale = 350,
         .trainerOffset = 6,
-        .frontPic = gMonFrontPic_AggronMega,
+        .frontPic = gMonFrontPic_BlgrowlmonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_AggronMega,
+        .frontAnimFrames = sAnims_BlgrowlmonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_AggronMega,
+        .backPic = gMonBackPic_BlgrowlmonMega,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_AggronMega,
-        .shinyPalette = gMonShinyPalette_AggronMega,
-        .iconSprite = gMonIcon_AggronMega,
+        .palette = gMonPalette_BlgrowlmonMega,
+        .shinyPalette = gMonShinyPalette_BlgrowlmonMega,
+        .iconSprite = gMonIcon_BlgrowlmonMega,
         .iconPalIndex = 2,
-        FOOTPRINT(Aggron)
+        FOOTPRINT(Blgrowlmon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sAggronLevelUpLearnset,
-        .teachableLearnset = sAggronTeachableLearnset,
-        .formSpeciesIdTable = sAggronFormSpeciesIdTable,
-        .formChangeTable = sAggronFormChangeTable,
+        .levelUpLearnset = sBlgrowlmonLevelUpLearnset,
+        .teachableLearnset = sBlgrowlmonTeachableLearnset,
+        .formSpeciesIdTable = sBlgrowlmonFormSpeciesIdTable,
+        .formChangeTable = sBlgrowlmonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLKGATOMON

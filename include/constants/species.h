@@ -307,7 +307,7 @@
 #define SPECIES_BLGARURMON                                  303
 #define SPECIES_BLKGATOMON                                    304
 #define SPECIES_BLKGATOMON_UVER                                  305
-#define SPECIES_AGGRON                                  306
+#define SPECIES_BLGROWLMON                                  306
 #define SPECIES_MEDITITE                                307
 #define SPECIES_MEDICHAM                                308
 #define SPECIES_ELECTRIKE                               309
@@ -991,7 +991,7 @@
 #define SPECIES_ARCADIAMON_CHAMPION_MEGA                          930
 #define SPECIES_BLGARGOMON_MEGA                            931
 #define SPECIES_BLGARURMON_MEGA                             932
-#define SPECIES_AGGRON_MEGA                             933
+#define SPECIES_BLGROWLMON_MEGA                             933
 #define SPECIES_MEDICHAM_MEGA                           934
 #define SPECIES_MANECTRIC_MEGA                          935
 #define SPECIES_SHARPEDO_MEGA                           936

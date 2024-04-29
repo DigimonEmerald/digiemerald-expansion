@@ -4548,21 +4548,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Blkgatomon_uver[] = INCBIN_U8("graphics/pokemon/blkgatomon_uver/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Aggron[] = INCBIN_U32("graphics/pokemon/aggron/anim_front.4bpp.lz");
-    const u32 gMonPalette_Aggron[] = INCBIN_U32("graphics/pokemon/aggron/normal.gbapal.lz");
-    const u32 gMonBackPic_Aggron[] = INCBIN_U32("graphics/pokemon/aggron/back.4bpp.lz");
-    const u32 gMonShinyPalette_Aggron[] = INCBIN_U32("graphics/pokemon/aggron/shiny.gbapal.lz");
-    const u8 gMonIcon_Aggron[] = INCBIN_U8("graphics/pokemon/aggron/icon.4bpp");
+    const u32 gMonFrontPic_Blgrowlmon[] = INCBIN_U32("graphics/pokemon/blgrowlmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Blgrowlmon[] = INCBIN_U32("graphics/pokemon/blgrowlmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Blgrowlmon[] = INCBIN_U32("graphics/pokemon/blgrowlmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Blgrowlmon[] = INCBIN_U32("graphics/pokemon/blgrowlmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Blgrowlmon[] = INCBIN_U8("graphics/pokemon/blgrowlmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Aggron[] = INCBIN_U8("graphics/pokemon/aggron/footprint.1bpp");
+    const u8 gMonFootprint_Blgrowlmon[] = INCBIN_U8("graphics/pokemon/blgrowlmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_AggronMega[] = INCBIN_U32("graphics/pokemon/aggron/mega/front.4bpp.lz");
-    const u32 gMonPalette_AggronMega[] = INCBIN_U32("graphics/pokemon/aggron/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_AggronMega[] = INCBIN_U32("graphics/pokemon/aggron/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_AggronMega[] = INCBIN_U32("graphics/pokemon/aggron/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_AggronMega[] = INCBIN_U8("graphics/pokemon/aggron/mega/icon.4bpp");
+    const u32 gMonFrontPic_BlgrowlmonMega[] = INCBIN_U32("graphics/pokemon/blgrowlmon/mega/front.4bpp.lz");
+    const u32 gMonPalette_BlgrowlmonMega[] = INCBIN_U32("graphics/pokemon/blgrowlmon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_BlgrowlmonMega[] = INCBIN_U32("graphics/pokemon/blgrowlmon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_BlgrowlmonMega[] = INCBIN_U32("graphics/pokemon/blgrowlmon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_BlgrowlmonMega[] = INCBIN_U8("graphics/pokemon/blgrowlmon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BLKGATOMON
 
