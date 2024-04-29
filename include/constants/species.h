@@ -325,7 +325,7 @@
 #define SPECIES_CHAMELEMON                                 321
 #define SPECIES_CHRYSALMON                                   322
 #define SPECIES_CITRAMON                                323
-#define SPECIES_TORKOAL                                 324
+#define SPECIES_CLOCKMON                                 324
 #define SPECIES_SPOINK                                  325
 #define SPECIES_GRUMPIG                                 326
 #define SPECIES_SPINDA                                  327

@@ -895,9 +895,9 @@ gCryTable::
 	cry Cry_CitramonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_CHRYSALMON
-.if P_FAMILY_TORKOAL == TRUE
-	cry Cry_Torkoal
-.endif @ P_FAMILY_TORKOAL
+.if P_FAMILY_CLOCKMON == TRUE
+	cry Cry_Clockmon
+.endif @ P_FAMILY_CLOCKMON
 .if P_FAMILY_SPOINK == TRUE
 	cry Cry_Spoink
 	cry Cry_Grumpig
@@ -3321,9 +3321,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_CitramonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_CHRYSALMON
-.if P_FAMILY_TORKOAL == TRUE
-	cry_reverse Cry_Torkoal
-.endif @ P_FAMILY_TORKOAL
+.if P_FAMILY_CLOCKMON == TRUE
+	cry_reverse Cry_Clockmon
+.endif @ P_FAMILY_CLOCKMON
 .if P_FAMILY_SPOINK == TRUE
 	cry_reverse Cry_Spoink
 	cry_reverse Cry_Grumpig

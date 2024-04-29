@@ -2607,8 +2607,8 @@ const u16 gEggMoves[] = {
         MOVE_HEAVY_SLAM),
 #endif //P_FAMILY_CHRYSALMON
 
-#if P_FAMILY_TORKOAL
-    egg_moves(TORKOAL,
+#if P_FAMILY_CLOCKMON
+    egg_moves(CLOCKMON,
         MOVE_ERUPTION,
         MOVE_ENDURE,
         MOVE_SLEEP_TALK,
@@ -2618,7 +2618,7 @@ const u16 gEggMoves[] = {
         MOVE_FLAME_BURST,
         MOVE_CLEAR_SMOG,
         MOVE_SUPERPOWER),
-#endif //P_FAMILY_TORKOAL
+#endif //P_FAMILY_CLOCKMON
 
 #if P_FAMILY_SPOINK
     egg_moves(SPOINK,

@@ -2515,7 +2515,7 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 15,
@@ -2535,12 +2535,12 @@
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 14,
@@ -9740,7 +9740,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 28,
@@ -9750,7 +9750,7 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 29,
@@ -9809,7 +9809,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 28,
@@ -9819,7 +9819,7 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 29,
@@ -9878,7 +9878,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 28,
@@ -9888,7 +9888,7 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 29,
@@ -9947,7 +9947,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 28,
@@ -9957,7 +9957,7 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 29,
@@ -10016,7 +10016,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 28,
@@ -10026,7 +10026,7 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 29,
@@ -10085,7 +10085,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 28,
@@ -10095,7 +10095,7 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 29,
@@ -10154,7 +10154,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 28,
@@ -10164,7 +10164,7 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 29,
@@ -10223,7 +10223,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 28,
@@ -10233,7 +10233,7 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CLOCKMON"
               },
               {
                 "min_level": 29,

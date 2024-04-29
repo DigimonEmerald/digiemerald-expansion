@@ -24,7 +24,7 @@ SINGLE_BATTLE_TEST("Octolock reduction is prevented by Clear Body, White Smoke a
     u32 ability;
 
     PARAMETRIZE { species = SPECIES_BELDUM; ability = ABILITY_CLEAR_BODY; }
-    PARAMETRIZE { species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; }
+    PARAMETRIZE { species = SPECIES_CLOCKMON; ability = ABILITY_WHITE_SMOKE; }
     PARAMETRIZE { species = SPECIES_SOLGALEO; ability = ABILITY_FULL_METAL_BODY; }
 
     GIVEN {
@@ -45,14 +45,14 @@ SINGLE_BATTLE_TEST("Octolock reduction is prevented by Clear Body, White Smoke a
                 MESSAGE("Foe Beldum's Sp. Def fell!");
             }
         }
-        else if (species == SPECIES_TORKOAL)
+        else if (species == SPECIES_CLOCKMON)
         {
-            MESSAGE("Foe Torkoal can no longer escape because of Octolock!");
+            MESSAGE("Foe Clockmon can no longer escape because of Octolock!");
             ABILITY_POPUP(opponent, ABILITY_WHITE_SMOKE);
-            MESSAGE("Foe Torkoal's White Smoke prevents stat loss!");
+            MESSAGE("Foe Clockmon's White Smoke prevents stat loss!");
             NONE_OF {
-                MESSAGE("Foe Torkoal's Defense fell!");
-                MESSAGE("Foe Torkoal's Sp. Def fell!");
+                MESSAGE("Foe Clockmon's Defense fell!");
+                MESSAGE("Foe Clockmon's Sp. Def fell!");
             }
         }
         else if (species == SPECIES_SOLGALEO)

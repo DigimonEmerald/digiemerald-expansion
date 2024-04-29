@@ -4332,8 +4332,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(CitramonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CHRYSALMON
 
-#if P_FAMILY_TORKOAL
-static const union AnimCmd sAnim_Torkoal_1[] =
+#if P_FAMILY_CLOCKMON
+static const union AnimCmd sAnim_Clockmon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4342,7 +4342,7 @@ static const union AnimCmd sAnim_Torkoal_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_TORKOAL
+#endif //P_FAMILY_CLOCKMON
 
 #if P_FAMILY_SPOINK
 static const union AnimCmd sAnim_Spoink_1[] =
@@ -11193,9 +11193,9 @@ SINGLE_ANIMATION(Citramon);
 SINGLE_ANIMATION(CitramonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CHRYSALMON
-#if P_FAMILY_TORKOAL
-SINGLE_ANIMATION(Torkoal);
-#endif //P_FAMILY_TORKOAL
+#if P_FAMILY_CLOCKMON
+SINGLE_ANIMATION(Clockmon);
+#endif //P_FAMILY_CLOCKMON
 #if P_FAMILY_SPOINK
 SINGLE_ANIMATION(Spoink);
 SINGLE_ANIMATION(Grumpig);

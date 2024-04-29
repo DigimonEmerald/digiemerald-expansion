@@ -72,7 +72,7 @@ SINGLE_BATTLE_TEST("Sticky Syrup speed reduction is prevented by Clear Body, Whi
     u32 ability;
 
     PARAMETRIZE { species = SPECIES_BELDUM; ability = ABILITY_CLEAR_BODY; }
-    PARAMETRIZE { species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; }
+    PARAMETRIZE { species = SPECIES_CLOCKMON; ability = ABILITY_WHITE_SMOKE; }
     PARAMETRIZE { species = SPECIES_SOLGALEO; ability = ABILITY_FULL_METAL_BODY; }
 
     GIVEN {
@@ -95,14 +95,14 @@ SINGLE_BATTLE_TEST("Sticky Syrup speed reduction is prevented by Clear Body, Whi
                 MESSAGE("Foe Beldum's Speed fell!");
             }
         }
-        else if (species == SPECIES_TORKOAL)
+        else if (species == SPECIES_CLOCKMON)
         {
-            MESSAGE("Foe Torkoal got covered in sticky syrup!");
+            MESSAGE("Foe Clockmon got covered in sticky syrup!");
             ABILITY_POPUP(opponent, ABILITY_WHITE_SMOKE);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SYRUP_BOMB_SPEED_DROP, opponent);
-            MESSAGE("Foe Torkoal's White Smoke prevents stat loss!");
+            MESSAGE("Foe Clockmon's White Smoke prevents stat loss!");
             NONE_OF {
-                MESSAGE("Foe Torkoal's Speed fell!");
+                MESSAGE("Foe Clockmon's Speed fell!");
             }
         }
         else if (species == SPECIES_SOLGALEO)

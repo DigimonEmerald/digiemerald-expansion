@@ -5199,8 +5199,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CHRYSALMON
 
-#if P_FAMILY_TORKOAL
-    [SPECIES_TORKOAL] =
+#if P_FAMILY_CLOCKMON
+    [SPECIES_CLOCKMON] =
     {
         .baseHP        = 70,
         .baseAttack    = 85,
@@ -5220,9 +5220,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_WHITE_SMOKE, ABILITY_DROUGHT, ABILITY_SHELL_ARMOR },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Torkoal"),
-        .cryId = CRY_TORKOAL,
-        .natDexNum = NATIONAL_DEX_TORKOAL,
+        .speciesName = _("Clockmon"),
+        .cryId = CRY_CLOCKMON,
+        .natDexNum = NATIONAL_DEX_CLOCKMON,
         .categoryName = _("Coal"),
         .height = 5,
         .weight = 804,
@@ -5235,24 +5235,24 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 9,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Torkoal,
+        .frontPic = gMonFrontPic_Clockmon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_Torkoal,
+        .frontAnimFrames = sAnims_Clockmon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Torkoal,
+        .backPic = gMonBackPic_Clockmon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_Torkoal,
-        .shinyPalette = gMonShinyPalette_Torkoal,
-        .iconSprite = gMonIcon_Torkoal,
+        .palette = gMonPalette_Clockmon,
+        .shinyPalette = gMonShinyPalette_Clockmon,
+        .iconSprite = gMonIcon_Clockmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Torkoal)
-        .levelUpLearnset = sTorkoalLevelUpLearnset,
-        .teachableLearnset = sTorkoalTeachableLearnset,
+        FOOTPRINT(Clockmon)
+        .levelUpLearnset = sClockmonLevelUpLearnset,
+        .teachableLearnset = sClockmonTeachableLearnset,
     },
-#endif //P_FAMILY_TORKOAL
+#endif //P_FAMILY_CLOCKMON
 
 #if P_FAMILY_SPOINK
     [SPECIES_SPOINK] =

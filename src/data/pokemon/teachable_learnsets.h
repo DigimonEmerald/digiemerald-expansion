@@ -15357,8 +15357,8 @@ static const u16 sCitramonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_CHRYSALMON
 
-#if P_FAMILY_TORKOAL
-static const u16 sTorkoalTeachableLearnset[] = {
+#if P_FAMILY_CLOCKMON
+static const u16 sClockmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_EARTHQUAKE,
@@ -15390,7 +15390,7 @@ static const u16 sTorkoalTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TORKOAL
+#endif //P_FAMILY_CLOCKMON
 
 #if P_FAMILY_SPOINK
 static const u16 sSpoinkTeachableLearnset[] = {

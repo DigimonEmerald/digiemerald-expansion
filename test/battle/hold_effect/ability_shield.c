@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Ability Shield prevents Neutralizing Gas")
     PARAMETRIZE { item = ITEM_NONE; }
 
     GIVEN {
-        PLAYER(SPECIES_TORKOAL) { Ability(ABILITY_DROUGHT); Item(item); }
+        PLAYER(SPECIES_CLOCKMON) { Ability(ABILITY_DROUGHT); Item(item); }
         OPPONENT(SPECIES_ARGOMON_ROOKIE) { Ability(ABILITY_NEUTRALIZING_GAS); }
     } WHEN {
         TURN { }
@@ -23,11 +23,11 @@ SINGLE_BATTLE_TEST("Ability Shield prevents Neutralizing Gas")
         MESSAGE("Neutralizing Gas filled the area!");
         if (item == ITEM_ABILITY_SHIELD) {
             ABILITY_POPUP(player, ABILITY_DROUGHT);
-            MESSAGE("Torkoal's Drought intensified the sun's rays!");
+            MESSAGE("Clockmon's Drought intensified the sun's rays!");
         } else {
             NONE_OF {
                 ABILITY_POPUP(player, ABILITY_DROUGHT);
-                MESSAGE("Torkoal's Drought intensified the sun's rays!");
+                MESSAGE("Clockmon's Drought intensified the sun's rays!");
             }
         }
     }

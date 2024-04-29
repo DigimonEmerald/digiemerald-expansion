@@ -2480,11 +2480,11 @@ Cry_CitramonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_CHRYSALMON
 
-.if P_FAMILY_TORKOAL == TRUE
+.if P_FAMILY_CLOCKMON == TRUE
 	.align 2
-Cry_Torkoal::
-	.incbin "sound/direct_sound_samples/cries/torkoal.bin"
-.endif @ P_FAMILY_TORKOAL
+Cry_Clockmon::
+	.incbin "sound/direct_sound_samples/cries/clockmon.bin"
+.endif @ P_FAMILY_CLOCKMON
 
 .if P_FAMILY_SPOINK == TRUE
 	.align 2
