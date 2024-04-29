@@ -16002,7 +16002,7 @@ static const u16 sDepthmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sWhiscashTeachableLearnset[] = {
+static const u16 sDeputymonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,

@@ -6169,10 +6169,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Depthmon)
         .levelUpLearnset = sDepthmonLevelUpLearnset,
         .teachableLearnset = sDepthmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_WHISCASH}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_DEPUTYMON}),
     },
 
-    [SPECIES_WHISCASH] =
+    [SPECIES_DEPUTYMON] =
     {
         .baseHP        = 110,
         .baseAttack    = 78,
@@ -6191,9 +6191,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_ANTICIPATION, ABILITY_HYDRATION },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Whiscash"),
-        .cryId = CRY_WHISCASH,
-        .natDexNum = NATIONAL_DEX_WHISCASH,
+        .speciesName = _("Deputymon"),
+        .cryId = CRY_DEPUTYMON,
+        .natDexNum = NATIONAL_DEX_DEPUTYMON,
         .categoryName = _("Whiskers"),
         .height = 9,
         .weight = 236,
@@ -6206,22 +6206,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 1,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Whiscash,
+        .frontPic = gMonFrontPic_Deputymon,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Whiscash,
+        .frontAnimFrames = sAnims_Deputymon,
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SLOW,
-        .backPic = gMonBackPic_Whiscash,
+        .backPic = gMonBackPic_Deputymon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Whiscash,
-        .shinyPalette = gMonShinyPalette_Whiscash,
-        .iconSprite = gMonIcon_Whiscash,
+        .palette = gMonPalette_Deputymon,
+        .shinyPalette = gMonShinyPalette_Deputymon,
+        .iconSprite = gMonIcon_Deputymon,
         .iconPalIndex = 0,
-        FOOTPRINT(Whiscash)
-        .levelUpLearnset = sWhiscashLevelUpLearnset,
-        .teachableLearnset = sWhiscashTeachableLearnset,
+        FOOTPRINT(Deputymon)
+        .levelUpLearnset = sDeputymonLevelUpLearnset,
+        .teachableLearnset = sDeputymonTeachableLearnset,
     },
 #endif //P_FAMILY_DEPTHMON
 

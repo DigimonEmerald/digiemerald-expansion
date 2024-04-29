@@ -1643,7 +1643,7 @@ static const struct TrainerMon sParty_Winston1[] = {
 static const struct TrainerMon sParty_Mollie[] = {
     {
     .lvl = 33,
-    .species = SPECIES_WHISCASH,
+    .species = SPECIES_DEPUTYMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -3425,7 +3425,7 @@ static const struct TrainerMon sParty_Juan1[] = {
     {
     .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
     .lvl = 41,
-    .species = SPECIES_WHISCASH,
+    .species = SPECIES_DEPUTYMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_AMNESIA, MOVE_EARTHQUAKE}
     },
@@ -4246,7 +4246,7 @@ static const struct TrainerMon sParty_Wallace[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 56,
-    .species = SPECIES_WHISCASH,
+    .species = SPECIES_DEPUTYMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_EARTHQUAKE, MOVE_SURF, MOVE_AMNESIA, MOVE_HYPER_BEAM}
     },
@@ -10800,7 +10800,7 @@ static const struct TrainerMon sParty_Juan2[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 46,
-    .species = SPECIES_WHISCASH,
+    .species = SPECIES_DEPUTYMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_FISSURE}
     },
@@ -10838,7 +10838,7 @@ static const struct TrainerMon sParty_Juan3[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 51,
-    .species = SPECIES_WHISCASH,
+    .species = SPECIES_DEPUTYMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_FISSURE}
     },
@@ -10876,7 +10876,7 @@ static const struct TrainerMon sParty_Juan4[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 58,
-    .species = SPECIES_WHISCASH,
+    .species = SPECIES_DEPUTYMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_FISSURE}
     },
@@ -10921,7 +10921,7 @@ static const struct TrainerMon sParty_Juan5[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 63,
-    .species = SPECIES_WHISCASH,
+    .species = SPECIES_DEPUTYMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_RAIN_DANCE, MOVE_WATER_PULSE, MOVE_DOUBLE_TEAM, MOVE_FISSURE}
     },

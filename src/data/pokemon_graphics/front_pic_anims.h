@@ -4547,7 +4547,7 @@ static const union AnimCmd sAnim_Depthmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Whiscash_1[] =
+static const union AnimCmd sAnim_Deputymon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -11233,7 +11233,7 @@ SINGLE_ANIMATION(Deltamon);
 #endif //P_FAMILY_DELTAMON
 #if P_FAMILY_DEPTHMON
 SINGLE_ANIMATION(Depthmon);
-SINGLE_ANIMATION(Whiscash);
+SINGLE_ANIMATION(Deputymon);
 #endif //P_FAMILY_DEPTHMON
 #if P_FAMILY_CORPHISH
 SINGLE_ANIMATION(Corphish);

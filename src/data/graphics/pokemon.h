@@ -4992,13 +4992,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Depthmon[] = INCBIN_U8("graphics/pokemon/depthmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Whiscash[] = INCBIN_U32("graphics/pokemon/whiscash/anim_front.4bpp.lz");
-    const u32 gMonPalette_Whiscash[] = INCBIN_U32("graphics/pokemon/whiscash/normal.gbapal.lz");
-    const u32 gMonBackPic_Whiscash[] = INCBIN_U32("graphics/pokemon/whiscash/back.4bpp.lz");
-    const u32 gMonShinyPalette_Whiscash[] = INCBIN_U32("graphics/pokemon/whiscash/shiny.gbapal.lz");
-    const u8 gMonIcon_Whiscash[] = INCBIN_U8("graphics/pokemon/whiscash/icon.4bpp");
+    const u32 gMonFrontPic_Deputymon[] = INCBIN_U32("graphics/pokemon/deputymon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Deputymon[] = INCBIN_U32("graphics/pokemon/deputymon/normal.gbapal.lz");
+    const u32 gMonBackPic_Deputymon[] = INCBIN_U32("graphics/pokemon/deputymon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Deputymon[] = INCBIN_U32("graphics/pokemon/deputymon/shiny.gbapal.lz");
+    const u8 gMonIcon_Deputymon[] = INCBIN_U8("graphics/pokemon/deputymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Whiscash[] = INCBIN_U8("graphics/pokemon/whiscash/footprint.1bpp");
+    const u8 gMonFootprint_Deputymon[] = INCBIN_U8("graphics/pokemon/deputymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_DEPTHMON
 

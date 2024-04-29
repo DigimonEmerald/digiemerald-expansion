@@ -2572,8 +2572,8 @@ Cry_Depthmon::
 	.incbin "sound/direct_sound_samples/cries/depthmon.bin"
 
 	.align 2
-Cry_Whiscash::
-	.incbin "sound/direct_sound_samples/cries/whiscash.bin"
+Cry_Deputymon::
+	.incbin "sound/direct_sound_samples/cries/deputymon.bin"
 .endif @ P_FAMILY_DEPTHMON
 
 .if P_FAMILY_CORPHISH == TRUE
