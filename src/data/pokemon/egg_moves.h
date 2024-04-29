@@ -2773,8 +2773,8 @@ const u16 gEggMoves[] = {
         MOVE_SWITCHEROO),
 #endif //P_FAMILY_DEVIDRAMON
 
-#if P_FAMILY_LILEEP
-    egg_moves(LILEEP,
+#if P_FAMILY_DIGMON
+    egg_moves(DIGMON,
         MOVE_BARRIER,
         MOVE_RECOVER,
         MOVE_MIRROR_COAT,
@@ -2784,7 +2784,7 @@ const u16 gEggMoves[] = {
         MOVE_MEGA_DRAIN,
         MOVE_ENDURE,
         MOVE_STEALTH_ROCK),
-#endif //P_FAMILY_LILEEP
+#endif //P_FAMILY_DIGMON
 
 #if P_FAMILY_ANORITH
     egg_moves(ANORITH,

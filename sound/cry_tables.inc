@@ -945,10 +945,10 @@ gCryTable::
 	cry Cry_Dexdorumon
 	cry Cry_Diatrymon
 .endif @ P_FAMILY_DEXDORUMON
-.if P_FAMILY_LILEEP == TRUE
-	cry Cry_Lileep
+.if P_FAMILY_DIGMON == TRUE
+	cry Cry_Digmon
 	cry Cry_Cradily
-.endif @ P_FAMILY_LILEEP
+.endif @ P_FAMILY_DIGMON
 .if P_FAMILY_ANORITH == TRUE
 	cry Cry_Anorith
 	cry Cry_Armaldo
@@ -3371,10 +3371,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Dexdorumon
 	cry_reverse Cry_Diatrymon
 .endif @ P_FAMILY_DEXDORUMON
-.if P_FAMILY_LILEEP == TRUE
-	cry_reverse Cry_Lileep
+.if P_FAMILY_DIGMON == TRUE
+	cry_reverse Cry_Digmon
 	cry_reverse Cry_Cradily
-.endif @ P_FAMILY_LILEEP
+.endif @ P_FAMILY_DIGMON
 .if P_FAMILY_ANORITH == TRUE
 	cry_reverse Cry_Anorith
 	cry_reverse Cry_Armaldo

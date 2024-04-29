@@ -4616,8 +4616,8 @@ static const union AnimCmd sAnim_Diatrymon_1[] =
 };
 #endif //P_FAMILY_DEXDORUMON
 
-#if P_FAMILY_LILEEP
-static const union AnimCmd sAnim_Lileep_1[] =
+#if P_FAMILY_DIGMON
+static const union AnimCmd sAnim_Digmon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4638,7 +4638,7 @@ static const union AnimCmd sAnim_Cradily_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_LILEEP
+#endif //P_FAMILY_DIGMON
 
 #if P_FAMILY_ANORITH
 static const union AnimCmd sAnim_Anorith_1[] =
@@ -11243,10 +11243,10 @@ SINGLE_ANIMATION(Devimon);
 SINGLE_ANIMATION(Dexdorumon);
 SINGLE_ANIMATION(Diatrymon);
 #endif //P_FAMILY_DEXDORUMON
-#if P_FAMILY_LILEEP
-SINGLE_ANIMATION(Lileep);
+#if P_FAMILY_DIGMON
+SINGLE_ANIMATION(Digmon);
 SINGLE_ANIMATION(Cradily);
-#endif //P_FAMILY_LILEEP
+#endif //P_FAMILY_DIGMON
 #if P_FAMILY_ANORITH
 SINGLE_ANIMATION(Anorith);
 SINGLE_ANIMATION(Armaldo);

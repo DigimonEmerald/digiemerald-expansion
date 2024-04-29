@@ -6443,8 +6443,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_DEXDORUMON
 
-#if P_FAMILY_LILEEP
-    [SPECIES_LILEEP] =
+#if P_FAMILY_DIGMON
+    [SPECIES_DIGMON] =
     {
         .baseHP        = 66,
         .baseAttack    = 41,
@@ -6470,9 +6470,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
         .abilities = { ABILITY_SUCTION_CUPS, ABILITY_NONE, ABILITY_STORM_DRAIN },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Lileep"),
-        .cryId = CRY_LILEEP,
-        .natDexNum = NATIONAL_DEX_LILEEP,
+        .speciesName = _("Digmon"),
+        .cryId = CRY_DIGMON,
+        .natDexNum = NATIONAL_DEX_DIGMON,
         .categoryName = _("Sea Lily"),
         .height = 10,
         .weight = 238,
@@ -6485,22 +6485,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Lileep,
+        .frontPic = gMonFrontPic_Digmon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_Lileep,
+        .frontAnimFrames = sAnims_Digmon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Lileep,
+        .backPic = gMonBackPic_Digmon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_H_STRETCH,
-        .palette = gMonPalette_Lileep,
-        .shinyPalette = gMonShinyPalette_Lileep,
-        .iconSprite = gMonIcon_Lileep,
+        .palette = gMonPalette_Digmon,
+        .shinyPalette = gMonShinyPalette_Digmon,
+        .iconSprite = gMonIcon_Digmon,
         .iconPalIndex = 2,
-        FOOTPRINT(Lileep)
-        .levelUpLearnset = sLileepLevelUpLearnset,
-        .teachableLearnset = sLileepTeachableLearnset,
+        FOOTPRINT(Digmon)
+        .levelUpLearnset = sDigmonLevelUpLearnset,
+        .teachableLearnset = sDigmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_CRADILY}),
     },
 
@@ -6562,7 +6562,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sCradilyLevelUpLearnset,
         .teachableLearnset = sCradilyTeachableLearnset,
     },
-#endif //P_FAMILY_LILEEP
+#endif //P_FAMILY_DIGMON
 
 #if P_FAMILY_ANORITH
     [SPECIES_ANORITH] =

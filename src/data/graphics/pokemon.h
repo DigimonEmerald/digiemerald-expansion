@@ -5042,14 +5042,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_DEXDORUMON
 
-#if P_FAMILY_LILEEP
-    const u32 gMonFrontPic_Lileep[] = INCBIN_U32("graphics/pokemon/lileep/anim_front.4bpp.lz");
-    const u32 gMonPalette_Lileep[] = INCBIN_U32("graphics/pokemon/lileep/normal.gbapal.lz");
-    const u32 gMonBackPic_Lileep[] = INCBIN_U32("graphics/pokemon/lileep/back.4bpp.lz");
-    const u32 gMonShinyPalette_Lileep[] = INCBIN_U32("graphics/pokemon/lileep/shiny.gbapal.lz");
-    const u8 gMonIcon_Lileep[] = INCBIN_U8("graphics/pokemon/lileep/icon.4bpp");
+#if P_FAMILY_DIGMON
+    const u32 gMonFrontPic_Digmon[] = INCBIN_U32("graphics/pokemon/digmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Digmon[] = INCBIN_U32("graphics/pokemon/digmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Digmon[] = INCBIN_U32("graphics/pokemon/digmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Digmon[] = INCBIN_U32("graphics/pokemon/digmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Digmon[] = INCBIN_U8("graphics/pokemon/digmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Lileep[] = INCBIN_U8("graphics/pokemon/lileep/footprint.1bpp");
+    const u8 gMonFootprint_Digmon[] = INCBIN_U8("graphics/pokemon/digmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Cradily[] = INCBIN_U32("graphics/pokemon/cradily/anim_front.4bpp.lz");
@@ -5060,7 +5060,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #if P_FOOTPRINTS
     const u8 gMonFootprint_Cradily[] = INCBIN_U8("graphics/pokemon/cradily/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_LILEEP
+#endif //P_FAMILY_DIGMON
 
 #if P_FAMILY_ANORITH
     const u32 gMonFrontPic_Anorith[] = INCBIN_U32("graphics/pokemon/anorith/anim_front.4bpp.lz");

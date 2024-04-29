@@ -214,7 +214,7 @@ DOUBLE_BATTLE_TEST("Pledge moves can not be redirected by absorbing abilities")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LILEEP) { Ability(ABILITY_STORM_DRAIN); }
+        OPPONENT(SPECIES_DIGMON) { Ability(ABILITY_STORM_DRAIN); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_WATER_PLEDGE, target: opponentRight);}

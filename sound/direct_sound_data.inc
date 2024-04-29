@@ -2596,15 +2596,15 @@ Cry_Diatrymon::
 	.incbin "sound/direct_sound_samples/cries/diatrymon.bin"
 .endif @ P_FAMILY_DEXDORUMON
 
-.if P_FAMILY_LILEEP == TRUE
+.if P_FAMILY_DIGMON == TRUE
 	.align 2
-Cry_Lileep::
-	.incbin "sound/direct_sound_samples/cries/lileep.bin"
+Cry_Digmon::
+	.incbin "sound/direct_sound_samples/cries/digmon.bin"
 
 	.align 2
 Cry_Cradily::
 	.incbin "sound/direct_sound_samples/cries/cradily.bin"
-.endif @ P_FAMILY_LILEEP
+.endif @ P_FAMILY_DIGMON
 
 .if P_FAMILY_ANORITH == TRUE
 	.align 2
