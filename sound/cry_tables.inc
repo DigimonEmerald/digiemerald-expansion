@@ -943,7 +943,7 @@ gCryTable::
 .endif @ P_FAMILY_DEVIDRAMON
 .if P_FAMILY_DEXDORUMON == TRUE
 	cry Cry_Dexdorumon
-	cry Cry_Claydol
+	cry Cry_Diatrymon
 .endif @ P_FAMILY_DEXDORUMON
 .if P_FAMILY_LILEEP == TRUE
 	cry Cry_Lileep
@@ -3369,7 +3369,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_DEVIDRAMON
 .if P_FAMILY_DEXDORUMON == TRUE
 	cry_reverse Cry_Dexdorumon
-	cry_reverse Cry_Claydol
+	cry_reverse Cry_Diatrymon
 .endif @ P_FAMILY_DEXDORUMON
 .if P_FAMILY_LILEEP == TRUE
 	cry_reverse Cry_Lileep

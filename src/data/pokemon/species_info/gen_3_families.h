@@ -6385,10 +6385,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Dexdorumon)
         .levelUpLearnset = sDexdorumonLevelUpLearnset,
         .teachableLearnset = sDexdorumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CLAYDOL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_DIATRYMON}),
     },
 
-    [SPECIES_CLAYDOL] =
+    [SPECIES_DIATRYMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 70,
@@ -6408,14 +6408,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Claydol"),
-        .cryId = CRY_CLAYDOL,
-        .natDexNum = NATIONAL_DEX_CLAYDOL,
+        .speciesName = _("Diatrymon"),
+        .cryId = CRY_DIATRYMON,
+        .natDexNum = NATIONAL_DEX_DIATRYMON,
         .categoryName = _("Clay Doll"),
         .height = 15,
         .weight = 1080,
         .description = COMPOUND_STRING(
-            "A Claydol sleeps while hovering in midair.\n"
+            "A Diatrymon sleeps while hovering in midair.\n"
             "Its arms are separate from its body.\n"
             "They are kept floating by the Pokémon's\n"
             "manipulation of psychic power."),
@@ -6423,23 +6423,23 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 3,
         .trainerScale = 280,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Claydol,
+        .frontPic = gMonFrontPic_Diatrymon,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_Claydol,
+        .frontAnimFrames = sAnims_Diatrymon,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE_SMALL,
         .enemyMonElevation = 10,
-        .backPic = gMonBackPic_Claydol,
+        .backPic = gMonBackPic_Diatrymon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Claydol,
-        .shinyPalette = gMonShinyPalette_Claydol,
-        .iconSprite = gMonIcon_Claydol,
+        .palette = gMonPalette_Diatrymon,
+        .shinyPalette = gMonShinyPalette_Diatrymon,
+        .iconSprite = gMonIcon_Diatrymon,
         .iconPalIndex = 0,
-        FOOTPRINT(Claydol)
-        .levelUpLearnset = sClaydolLevelUpLearnset,
-        .teachableLearnset = sClaydolTeachableLearnset,
+        FOOTPRINT(Diatrymon)
+        .levelUpLearnset = sDiatrymonLevelUpLearnset,
+        .teachableLearnset = sDiatrymonTeachableLearnset,
     },
 #endif //P_FAMILY_DEXDORUMON
 

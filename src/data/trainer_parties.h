@@ -374,7 +374,7 @@ static const struct TrainerMon sParty_Felix[] = {
     },
     {
     .lvl = 43,
-    .species = SPECIES_CLAYDOL,
+    .species = SPECIES_DIATRYMON,
     .moves = {MOVE_SKILL_SWAP, MOVE_EARTHQUAKE, MOVE_NONE, MOVE_NONE}
     }
 };
@@ -1154,7 +1154,7 @@ static const struct TrainerMon sParty_Shannon[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 45,
-    .species = SPECIES_CLAYDOL,
+    .species = SPECIES_DIATRYMON,
     }
 };
 
@@ -3387,7 +3387,7 @@ static const struct TrainerMon sParty_TateAndLiza1[] = {
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .lvl = 41,
-    .species = SPECIES_CLAYDOL,
+    .species = SPECIES_DIATRYMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_EARTHQUAKE, MOVE_ANCIENT_POWER, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN}
     },
@@ -5167,7 +5167,7 @@ static const struct TrainerMon sParty_Takashi[] = {
 static const struct TrainerMon sParty_Dianne[] = {
     {
     .lvl = 43,
-    .species = SPECIES_CLAYDOL,
+    .species = SPECIES_DIATRYMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SKILL_SWAP, MOVE_EARTHQUAKE, MOVE_NONE, MOVE_NONE}
     },
@@ -10627,7 +10627,7 @@ static const struct TrainerMon sParty_TateAndLiza2[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 49,
-    .species = SPECIES_CLAYDOL,
+    .species = SPECIES_DIATRYMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_EARTHQUAKE, MOVE_ANCIENT_POWER, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN}
     },
@@ -10672,7 +10672,7 @@ static const struct TrainerMon sParty_TateAndLiza3[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 54,
-    .species = SPECIES_CLAYDOL,
+    .species = SPECIES_DIATRYMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_EARTHQUAKE, MOVE_EXPLOSION, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN}
     },
@@ -10710,7 +10710,7 @@ static const struct TrainerMon sParty_TateAndLiza4[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 59,
-    .species = SPECIES_CLAYDOL,
+    .species = SPECIES_DIATRYMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_EARTHQUAKE, MOVE_EXPLOSION, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN}
     },
@@ -10755,7 +10755,7 @@ static const struct TrainerMon sParty_TateAndLiza5[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 64,
-    .species = SPECIES_CLAYDOL,
+    .species = SPECIES_DIATRYMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_EARTHQUAKE, MOVE_EXPLOSION, MOVE_PSYCHIC, MOVE_LIGHT_SCREEN}
     },
@@ -10991,7 +10991,7 @@ static const struct TrainerMon sParty_Steven[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 75,
-    .species = SPECIES_CLAYDOL,
+    .species = SPECIES_DIATRYMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_ANCIENT_POWER, MOVE_EARTHQUAKE}
     },

@@ -5,13 +5,13 @@ SINGLE_BATTLE_TEST("Misty Terrain protects grounded battlers from non-volatile s
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_CLAYDOL) { Ability(ABILITY_LEVITATE); }
+        OPPONENT(SPECIES_DIATRYMON) { Ability(ABILITY_LEVITATE); }
     } WHEN {
         TURN { MOVE(player, MOVE_MISTY_TERRAIN); MOVE(opponent, MOVE_TOXIC); }
         TURN { MOVE(player, MOVE_TOXIC); }
     } SCENE {
         MESSAGE("Lopmonx used MistyTerrain!");
-        MESSAGE("Foe Claydol used Toxic!");
+        MESSAGE("Foe Diatrymon used Toxic!");
         MESSAGE("Lopmonx surrounds itself with a protective mist!");
         NOT { STATUS_ICON(opponent, badPoison: TRUE); }
         MESSAGE("Lopmonx used Toxic!");

@@ -4603,7 +4603,7 @@ static const union AnimCmd sAnim_Dexdorumon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Claydol_1[] =
+static const union AnimCmd sAnim_Diatrymon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -11241,7 +11241,7 @@ SINGLE_ANIMATION(Devimon);
 #endif //P_FAMILY_DEVIDRAMON
 #if P_FAMILY_DEXDORUMON
 SINGLE_ANIMATION(Dexdorumon);
-SINGLE_ANIMATION(Claydol);
+SINGLE_ANIMATION(Diatrymon);
 #endif //P_FAMILY_DEXDORUMON
 #if P_FAMILY_LILEEP
 SINGLE_ANIMATION(Lileep);

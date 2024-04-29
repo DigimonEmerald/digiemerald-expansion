@@ -16158,7 +16158,7 @@ static const u16 sDexdorumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sClaydolTeachableLearnset[] = {
+static const u16 sDiatrymonTeachableLearnset[] = {
     MOVE_CALM_MIND,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,

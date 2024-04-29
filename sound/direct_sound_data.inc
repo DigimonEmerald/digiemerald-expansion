@@ -2592,8 +2592,8 @@ Cry_Dexdorumon::
 	.incbin "sound/direct_sound_samples/cries/dexdorumon.bin"
 
 	.align 2
-Cry_Claydol::
-	.incbin "sound/direct_sound_samples/cries/claydol.bin"
+Cry_Diatrymon::
+	.incbin "sound/direct_sound_samples/cries/diatrymon.bin"
 .endif @ P_FAMILY_DEXDORUMON
 
 .if P_FAMILY_LILEEP == TRUE

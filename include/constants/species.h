@@ -345,7 +345,7 @@
 #define SPECIES_DEVIDRAMON                                341
 #define SPECIES_DEVIMON                               342
 #define SPECIES_DEXDORUMON                                  343
-#define SPECIES_CLAYDOL                                 344
+#define SPECIES_DIATRYMON                                 344
 #define SPECIES_LILEEP                                  345
 #define SPECIES_CRADILY                                 346
 #define SPECIES_ANORITH                                 347

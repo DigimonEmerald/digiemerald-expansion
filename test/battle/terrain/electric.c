@@ -5,16 +5,16 @@ SINGLE_BATTLE_TEST("Electric Terrain protects grounded battlers from falling asl
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_CLAYDOL) { Ability(ABILITY_LEVITATE); }
+        OPPONENT(SPECIES_DIATRYMON) { Ability(ABILITY_LEVITATE); }
     } WHEN {
         TURN { MOVE(player, MOVE_ELECTRIC_TERRAIN); MOVE(opponent, MOVE_SPORE); }
         TURN { MOVE(player, MOVE_SPORE); }
     } SCENE {
         MESSAGE("Lopmonx used ElctrcTrrain!");
-        MESSAGE("Foe Claydol used Spore!");
+        MESSAGE("Foe Diatrymon used Spore!");
         MESSAGE("Lopmonx surrounds itself with electrified terrain!");
         MESSAGE("Lopmonx used Spore!");
-        MESSAGE("Foe Claydol fell asleep!");
+        MESSAGE("Foe Diatrymon fell asleep!");
         STATUS_ICON(opponent, sleep: TRUE);
     }
 }

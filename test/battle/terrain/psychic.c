@@ -4,14 +4,14 @@
 SINGLE_BATTLE_TEST("Psychic Terrain protects grounded battlers from priority moves")
 {
     GIVEN {
-        PLAYER(SPECIES_CLAYDOL) { Ability(ABILITY_LEVITATE); }
+        PLAYER(SPECIES_DIATRYMON) { Ability(ABILITY_LEVITATE); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_PSYCHIC_TERRAIN); }
         TURN { MOVE(player, MOVE_QUICK_ATTACK); MOVE(opponent, MOVE_QUICK_ATTACK); }
     } SCENE {
-        MESSAGE("Claydol used PsychcTrrain!");
-        MESSAGE("Claydol cannot use Quick Attack!");
+        MESSAGE("Diatrymon used PsychcTrrain!");
+        MESSAGE("Diatrymon cannot use Quick Attack!");
         NOT { HP_BAR(opponent); }
         MESSAGE("Foe Lopmonx used Quick Attack!");
         HP_BAR(player);
