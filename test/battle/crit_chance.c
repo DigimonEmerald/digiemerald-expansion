@@ -26,7 +26,7 @@ SINGLE_BATTLE_TEST("Battle Armor and Shell Armor block critical hits")
     u32 ability;
 
     PARAMETRIZE { species = SPECIES_WANYAMON; ability = ABILITY_SHELL_ARMOR; }
-    PARAMETRIZE { species = SPECIES_ARMALDO; ability = ABILITY_BATTLE_ARMOR; }
+    PARAMETRIZE { species = SPECIES_DOBERMON_X; ability = ABILITY_BATTLE_ARMOR; }
 
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
@@ -45,7 +45,7 @@ SINGLE_BATTLE_TEST("Flag ignoresTargetAbility ignores Battle Armor and Shell Arm
     u32 ability;
 
     PARAMETRIZE { species = SPECIES_WANYAMON; ability = ABILITY_SHELL_ARMOR; }
-    PARAMETRIZE { species = SPECIES_ARMALDO; ability = ABILITY_BATTLE_ARMOR; }
+    PARAMETRIZE { species = SPECIES_DOBERMON_X; ability = ABILITY_BATTLE_ARMOR; }
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SUNSTEEL_STRIKE].ignoresTargetAbility == TRUE);
@@ -86,7 +86,7 @@ SINGLE_BATTLE_TEST("Mold Breaker, Teravolt and Turboblaze ignore Battle Armor an
         PARAMETRIZE {
             speciesPlayer = pokemonPlayer[j][0];
             abilityPlayer = pokemonPlayer[j][1];
-            speciesOpponent = SPECIES_ARMALDO;
+            speciesOpponent = SPECIES_DOBERMON_X;
             abilityOpponent = ABILITY_BATTLE_ARMOR;
         }
     }

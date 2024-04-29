@@ -6621,10 +6621,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Dobermon)
         .levelUpLearnset = sDobermonLevelUpLearnset,
         .teachableLearnset = sDobermonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_ARMALDO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_DOBERMON_X}),
     },
 
-    [SPECIES_ARMALDO] =
+    [SPECIES_DOBERMON_X] =
     {
         .baseHP        = 75,
         .baseAttack    = 125,
@@ -6649,14 +6649,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
         .abilities = { ABILITY_BATTLE_ARMOR, ABILITY_NONE, ABILITY_SWIFT_SWIM },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Armaldo"),
-        .cryId = CRY_ARMALDO,
-        .natDexNum = NATIONAL_DEX_ARMALDO,
+        .speciesName = _("Dobermon_x"),
+        .cryId = CRY_DOBERMON_X,
+        .natDexNum = NATIONAL_DEX_DOBERMON_X,
         .categoryName = _("Plate"),
         .height = 15,
         .weight = 682,
         .description = COMPOUND_STRING(
-            "Armaldo usually lives on land. However,\n"
+            "Dobermon_x usually lives on land. However,\n"
             "when it hunts for prey, it dives beneath\n"
             "the ocean. It swims around using its two\n"
             "large wings."),
@@ -6664,22 +6664,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 3,
         .trainerScale = 271,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Armaldo,
+        .frontPic = gMonFrontPic_Dobermon_x,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Armaldo,
+        .frontAnimFrames = sAnims_Dobermon_x,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Armaldo,
+        .backPic = gMonBackPic_Dobermon_x,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Armaldo,
-        .shinyPalette = gMonShinyPalette_Armaldo,
-        .iconSprite = gMonIcon_Armaldo,
+        .palette = gMonPalette_Dobermon_x,
+        .shinyPalette = gMonShinyPalette_Dobermon_x,
+        .iconSprite = gMonIcon_Dobermon_x,
         .iconPalIndex = 2,
-        FOOTPRINT(Armaldo)
-        .levelUpLearnset = sArmaldoLevelUpLearnset,
-        .teachableLearnset = sArmaldoTeachableLearnset,
+        FOOTPRINT(Dobermon_x)
+        .levelUpLearnset = sDobermon_xLevelUpLearnset,
+        .teachableLearnset = sDobermon_xTeachableLearnset,
     },
 #endif //P_FAMILY_DOBERMON
 

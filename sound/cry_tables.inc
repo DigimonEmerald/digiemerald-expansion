@@ -951,7 +951,7 @@ gCryTable::
 .endif @ P_FAMILY_DIGMON
 .if P_FAMILY_DOBERMON == TRUE
 	cry Cry_Dobermon
-	cry Cry_Armaldo
+	cry Cry_Dobermon_x
 .endif @ P_FAMILY_DOBERMON
 .if P_FAMILY_FEEBAS == TRUE
 	cry Cry_Feebas
@@ -3377,7 +3377,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_DIGMON
 .if P_FAMILY_DOBERMON == TRUE
 	cry_reverse Cry_Dobermon
-	cry_reverse Cry_Armaldo
+	cry_reverse Cry_Dobermon_x
 .endif @ P_FAMILY_DOBERMON
 .if P_FAMILY_FEEBAS == TRUE
 	cry_reverse Cry_Feebas

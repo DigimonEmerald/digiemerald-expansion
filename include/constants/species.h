@@ -349,7 +349,7 @@
 #define SPECIES_DIGMON                                  345
 #define SPECIES_DINOHYUMON                                 346
 #define SPECIES_DOBERMON                                 347
-#define SPECIES_ARMALDO                                 348
+#define SPECIES_DOBERMON_X                                 348
 #define SPECIES_FEEBAS                                  349
 #define SPECIES_MILOTIC                                 350
 #define SPECIES_CASTFORM                                SPECIES_CASTFORM_NORMAL

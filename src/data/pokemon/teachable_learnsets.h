@@ -16290,7 +16290,7 @@ static const u16 sDobermonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sArmaldoTeachableLearnset[] = {
+static const u16 sDobermon_xTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
