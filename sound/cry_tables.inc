@@ -933,10 +933,10 @@ gCryTable::
 .if P_FAMILY_DELTAMON == TRUE
 	cry Cry_Deltamon
 .endif @ P_FAMILY_DELTAMON
-.if P_FAMILY_BARBOACH == TRUE
-	cry Cry_Barboach
+.if P_FAMILY_DEPTHMON == TRUE
+	cry Cry_Depthmon
 	cry Cry_Whiscash
-.endif @ P_FAMILY_BARBOACH
+.endif @ P_FAMILY_DEPTHMON
 .if P_FAMILY_CORPHISH == TRUE
 	cry Cry_Corphish
 	cry Cry_Crawdaunt
@@ -3359,10 +3359,10 @@ gCryTable_Reverse::
 .if P_FAMILY_DELTAMON == TRUE
 	cry_reverse Cry_Deltamon
 .endif @ P_FAMILY_DELTAMON
-.if P_FAMILY_BARBOACH == TRUE
-	cry_reverse Cry_Barboach
+.if P_FAMILY_DEPTHMON == TRUE
+	cry_reverse Cry_Depthmon
 	cry_reverse Cry_Whiscash
-.endif @ P_FAMILY_BARBOACH
+.endif @ P_FAMILY_DEPTHMON
 .if P_FAMILY_CORPHISH == TRUE
 	cry_reverse Cry_Corphish
 	cry_reverse Cry_Crawdaunt

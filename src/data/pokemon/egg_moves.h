@@ -2742,8 +2742,8 @@ const u16 gEggMoves[] = {
         MOVE_FINAL_GAMBIT),
 #endif //P_FAMILY_DARKTYRMON_X
 
-#if P_FAMILY_BARBOACH
-    egg_moves(BARBOACH,
+#if P_FAMILY_DEPTHMON
+    egg_moves(DEPTHMON,
         MOVE_THRASH,
         MOVE_WHIRLPOOL,
         MOVE_SPARK,
@@ -2754,7 +2754,7 @@ const u16 gEggMoves[] = {
         MOVE_EARTH_POWER,
         MOVE_MUD_SHOT,
         MOVE_MUDDY_WATER),
-#endif //P_FAMILY_BARBOACH
+#endif //P_FAMILY_DEPTHMON
 
 #if P_FAMILY_CORPHISH
     egg_moves(CORPHISH,

@@ -4307,7 +4307,7 @@ static const struct TrainerMon sParty_Claude[] = {
     },
     {
     .lvl = 18,
-    .species = SPECIES_BARBOACH,
+    .species = SPECIES_DEPTHMON,
     }
 };
 
@@ -4356,7 +4356,7 @@ static const struct TrainerMon sParty_Dale[] = {
 static const struct TrainerMon sParty_Nolan[] = {
     {
     .lvl = 19,
-    .species = SPECIES_BARBOACH,
+    .species = SPECIES_DEPTHMON,
     }
 };
 
@@ -9069,7 +9069,7 @@ static const struct TrainerMon sParty_Angelina[] = {
 static const struct TrainerMon sParty_Kai[] = {
     {
     .lvl = 19,
-    .species = SPECIES_BARBOACH,
+    .species = SPECIES_DEPTHMON,
     }
 };
 

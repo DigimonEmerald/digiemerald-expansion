@@ -6117,8 +6117,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_DELTAMON
 
-#if P_FAMILY_BARBOACH
-    [SPECIES_BARBOACH] =
+#if P_FAMILY_DEPTHMON
+    [SPECIES_DEPTHMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 48,
@@ -6137,9 +6137,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_ANTICIPATION, ABILITY_HYDRATION },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Barboach"),
-        .cryId = CRY_BARBOACH,
-        .natDexNum = NATIONAL_DEX_BARBOACH,
+        .speciesName = _("Depthmon"),
+        .cryId = CRY_DEPTHMON,
+        .natDexNum = NATIONAL_DEX_DEPTHMON,
         .categoryName = _("Whiskers"),
         .height = 4,
         .weight = 19,
@@ -6147,28 +6147,28 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "Its body is covered with a slimy film.\n"
             "The film acts as a barrier to prevent germs\n"
             "in muddy water from entering the\n"
-            "Barboach's body."),
+            "Depthmon's body."),
         .pokemonScale = 581,
         .pokemonOffset = -3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Barboach,
+        .frontPic = gMonFrontPic_Depthmon,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 15,
-        .frontAnimFrames = sAnims_Barboach,
+        .frontAnimFrames = sAnims_Depthmon,
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SLOW,
         .enemyMonElevation = 7,
-        .backPic = gMonBackPic_Barboach,
+        .backPic = gMonBackPic_Depthmon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Barboach,
-        .shinyPalette = gMonShinyPalette_Barboach,
-        .iconSprite = gMonIcon_Barboach,
+        .palette = gMonPalette_Depthmon,
+        .shinyPalette = gMonShinyPalette_Depthmon,
+        .iconSprite = gMonIcon_Depthmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Barboach)
-        .levelUpLearnset = sBarboachLevelUpLearnset,
-        .teachableLearnset = sBarboachTeachableLearnset,
+        FOOTPRINT(Depthmon)
+        .levelUpLearnset = sDepthmonLevelUpLearnset,
+        .teachableLearnset = sDepthmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_WHISCASH}),
     },
 
@@ -6223,7 +6223,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sWhiscashLevelUpLearnset,
         .teachableLearnset = sWhiscashTeachableLearnset,
     },
-#endif //P_FAMILY_BARBOACH
+#endif //P_FAMILY_DEPTHMON
 
 #if P_FAMILY_CORPHISH
     [SPECIES_CORPHISH] =

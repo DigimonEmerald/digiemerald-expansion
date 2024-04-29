@@ -2566,15 +2566,15 @@ Cry_Deltamon::
 	.incbin "sound/direct_sound_samples/cries/deltamon.bin"
 .endif @ P_FAMILY_DELTAMON
 
-.if P_FAMILY_BARBOACH == TRUE
+.if P_FAMILY_DEPTHMON == TRUE
 	.align 2
-Cry_Barboach::
-	.incbin "sound/direct_sound_samples/cries/barboach.bin"
+Cry_Depthmon::
+	.incbin "sound/direct_sound_samples/cries/depthmon.bin"
 
 	.align 2
 Cry_Whiscash::
 	.incbin "sound/direct_sound_samples/cries/whiscash.bin"
-.endif @ P_FAMILY_BARBOACH
+.endif @ P_FAMILY_DEPTHMON
 
 .if P_FAMILY_CORPHISH == TRUE
 	.align 2

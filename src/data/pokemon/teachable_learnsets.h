@@ -15970,8 +15970,8 @@ static const u16 sDeltamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DELTAMON
 
-#if P_FAMILY_BARBOACH
-static const u16 sBarboachTeachableLearnset[] = {
+#if P_FAMILY_DEPTHMON
+static const u16 sDepthmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -16037,7 +16037,7 @@ static const u16 sWhiscashTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BARBOACH
+#endif //P_FAMILY_DEPTHMON
 
 #if P_FAMILY_CORPHISH
 static const u16 sCorphishTeachableLearnset[] = {
