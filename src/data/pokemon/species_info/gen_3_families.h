@@ -7772,11 +7772,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Exveemon_virus)
         .levelUpLearnset = sExveemon_virusLevelUpLearnset,
         .teachableLearnset = sExveemon_virusTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_GLALIE},
+        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_EYESMON},
                                 {EVO_ITEM_FEMALE, ITEM_DAWN_STONE, SPECIES_FROSLASS}),
     },
 
-    [SPECIES_GLALIE] =
+    [SPECIES_EYESMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 80,
@@ -7795,14 +7795,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_MINERAL),
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_ICE_BODY, ABILITY_MOODY },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Glalie"),
-        .cryId = CRY_GLALIE,
-        .natDexNum = NATIONAL_DEX_GLALIE,
+        .speciesName = _("Eyesmon"),
+        .cryId = CRY_EYESMON,
+        .natDexNum = NATIONAL_DEX_EYESMON,
         .categoryName = _("Face"),
         .height = 15,
         .weight = 2565,
         .description = COMPOUND_STRING(
-            "A Glalie has the power to instantaneously\n"
+            "A Eyesmon has the power to instantaneously\n"
             "freeze moisture in the atmosphere.\n"
             "A dazzling cloud of diamondlike ice\n"
             "crystals forms around its body."),
@@ -7810,29 +7810,29 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 3,
         .trainerScale = 344,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Glalie,
+        .frontPic = gMonFrontPic_Eyesmon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Glalie,
+        .frontAnimFrames = sAnims_Eyesmon,
         .frontAnimId = ANIM_ZIGZAG_FAST,
         .enemyMonElevation = 12,
-        .backPic = gMonBackPic_Glalie,
+        .backPic = gMonBackPic_Eyesmon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Glalie,
-        .shinyPalette = gMonShinyPalette_Glalie,
-        .iconSprite = gMonIcon_Glalie,
+        .palette = gMonPalette_Eyesmon,
+        .shinyPalette = gMonShinyPalette_Eyesmon,
+        .iconSprite = gMonIcon_Eyesmon,
         .iconPalIndex = 0,
-        FOOTPRINT(Glalie)
-        .levelUpLearnset = sGlalieLevelUpLearnset,
-        .teachableLearnset = sGlalieTeachableLearnset,
-        .formSpeciesIdTable = sGlalieFormSpeciesIdTable,
-        .formChangeTable = sGlalieFormChangeTable,
+        FOOTPRINT(Eyesmon)
+        .levelUpLearnset = sEyesmonLevelUpLearnset,
+        .teachableLearnset = sEyesmonTeachableLearnset,
+        .formSpeciesIdTable = sEyesmonFormSpeciesIdTable,
+        .formChangeTable = sEyesmonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_GLALIE_MEGA] =
+    [SPECIES_EYESMON_MEGA] =
     {
         .baseHP        = 80,
         .baseAttack    = 120,
@@ -7851,40 +7851,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_MINERAL),
         .abilities = { ABILITY_REFRIGERATE, ABILITY_REFRIGERATE, ABILITY_REFRIGERATE },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Glalie"),
-        .cryId = CRY_GLALIE_MEGA,
-        .natDexNum = NATIONAL_DEX_GLALIE,
+        .speciesName = _("Eyesmon"),
+        .cryId = CRY_EYESMON_MEGA,
+        .natDexNum = NATIONAL_DEX_EYESMON,
         .categoryName = _("Face"),
         .height = 21,
         .weight = 3502,
         .description = COMPOUND_STRING(
             "The power of Mega Evolution was so strong\n"
-            "that it smashed Glalie's jaw. Its inability\n"
-            "to eat very well leaves Glalie irritated."),
+            "that it smashed Eyesmon's jaw. Its inability\n"
+            "to eat very well leaves Eyesmon irritated."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 344,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_GlalieMega,
+        .frontPic = gMonFrontPic_EyesmonMega,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_GlalieMega,
+        .frontAnimFrames = sAnims_EyesmonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 8,
-        .backPic = gMonBackPic_GlalieMega,
+        .backPic = gMonBackPic_EyesmonMega,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_GlalieMega,
-        .shinyPalette = gMonShinyPalette_GlalieMega,
-        .iconSprite = gMonIcon_GlalieMega,
+        .palette = gMonPalette_EyesmonMega,
+        .shinyPalette = gMonShinyPalette_EyesmonMega,
+        .iconSprite = gMonIcon_EyesmonMega,
         .iconPalIndex = 0,
-        FOOTPRINT(Glalie)
+        FOOTPRINT(Eyesmon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sGlalieLevelUpLearnset,
-        .teachableLearnset = sGlalieTeachableLearnset,
-        .formSpeciesIdTable = sGlalieFormSpeciesIdTable,
-        .formChangeTable = sGlalieFormChangeTable,
+        .levelUpLearnset = sEyesmonLevelUpLearnset,
+        .teachableLearnset = sEyesmonTeachableLearnset,
+        .formSpeciesIdTable = sEyesmonFormSpeciesIdTable,
+        .formChangeTable = sEyesmonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 

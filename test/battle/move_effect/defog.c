@@ -297,11 +297,11 @@ DOUBLE_BATTLE_TEST("Defog lowers evasiveness by 1 and removes Aurora Veil from p
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_HAIL].effect == EFFECT_HAIL);
-        ASSUME(gSpeciesInfo[SPECIES_GLALIE].types[0] == TYPE_ICE);
-        PLAYER(SPECIES_GLALIE) { Speed(4); }
-        PLAYER(SPECIES_GLALIE) { Speed(3); }
-        OPPONENT(SPECIES_GLALIE) { Speed(2); }
-        OPPONENT(SPECIES_GLALIE) { Speed(1); }
+        ASSUME(gSpeciesInfo[SPECIES_EYESMON].types[0] == TYPE_ICE);
+        PLAYER(SPECIES_EYESMON) { Speed(4); }
+        PLAYER(SPECIES_EYESMON) { Speed(3); }
+        OPPONENT(SPECIES_EYESMON) { Speed(2); }
+        OPPONENT(SPECIES_EYESMON) { Speed(1); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_HAIL); MOVE(playerRight, MOVE_AURORA_VEIL); }
         TURN { MOVE(opponentLeft, move, target: playerLeft); }
@@ -312,12 +312,12 @@ DOUBLE_BATTLE_TEST("Defog lowers evasiveness by 1 and removes Aurora Veil from p
         ANIMATION(ANIM_TYPE_MOVE, move, opponentLeft);
         if (move == MOVE_DEFOG) {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-            MESSAGE("Glalie's evasiveness fell!");
+            MESSAGE("Eyesmon's evasiveness fell!");
             MESSAGE("Ally's Aurora Veil wore off!");
         }
-        MESSAGE("Foe Glalie used Tackle!");
+        MESSAGE("Foe Eyesmon used Tackle!");
         HP_BAR(playerLeft, captureDamage: &results[i].damagePhysical);
-        MESSAGE("Foe Glalie used Gust!");
+        MESSAGE("Foe Eyesmon used Gust!");
         HP_BAR(playerRight, captureDamage: &results[i].damageSpecial);
     } FINALLY {
         EXPECT_MUL_EQ(results[1].damagePhysical, Q_4_12(1.5), results[0].damagePhysical);
@@ -329,15 +329,15 @@ DOUBLE_BATTLE_TEST("Defog lowers evasiveness by 1 and removes everything it can"
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_HAIL].effect == EFFECT_HAIL);
-        ASSUME(gSpeciesInfo[SPECIES_GLALIE].types[0] == TYPE_ICE);
-        PLAYER(SPECIES_GLALIE) { Speed(4); }
-        PLAYER(SPECIES_GLALIE) { Speed(3); }
-        PLAYER(SPECIES_GLALIE) { Speed(12); }
-        PLAYER(SPECIES_GLALIE) { Speed(3); }
-        OPPONENT(SPECIES_GLALIE) { Speed(2); }
-        OPPONENT(SPECIES_GLALIE) { Speed(1); }
-        OPPONENT(SPECIES_GLALIE) { Speed(1); }
-        OPPONENT(SPECIES_GLALIE) { Speed(1); }
+        ASSUME(gSpeciesInfo[SPECIES_EYESMON].types[0] == TYPE_ICE);
+        PLAYER(SPECIES_EYESMON) { Speed(4); }
+        PLAYER(SPECIES_EYESMON) { Speed(3); }
+        PLAYER(SPECIES_EYESMON) { Speed(12); }
+        PLAYER(SPECIES_EYESMON) { Speed(3); }
+        OPPONENT(SPECIES_EYESMON) { Speed(2); }
+        OPPONENT(SPECIES_EYESMON) { Speed(1); }
+        OPPONENT(SPECIES_EYESMON) { Speed(1); }
+        OPPONENT(SPECIES_EYESMON) { Speed(1); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_STICKY_WEB); MOVE(playerRight, MOVE_SPIKES); MOVE(opponentLeft, MOVE_STICKY_WEB); MOVE(opponentRight, MOVE_SPIKES); }
         TURN { SWITCH(playerLeft, 2); SWITCH(playerRight, 3); SWITCH(opponentLeft, 2); SWITCH(opponentRight, 3); }
@@ -346,8 +346,8 @@ DOUBLE_BATTLE_TEST("Defog lowers evasiveness by 1 and removes everything it can"
         TURN { MOVE(playerLeft, MOVE_REFLECT); MOVE(playerRight, MOVE_LIGHT_SCREEN); MOVE(opponentLeft, MOVE_REFLECT); MOVE(opponentRight, MOVE_SAFEGUARD); }
         TURN { MOVE(playerLeft, MOVE_MIST); MOVE(playerRight, MOVE_SAFEGUARD); MOVE(opponentLeft, MOVE_MIST); MOVE(opponentRight, MOVE_DEFOG, target: playerLeft); }
     } SCENE {
-        MESSAGE("Foe Glalie used Defog!");
-        MESSAGE("Glalie is protected by MIST!");
+        MESSAGE("Foe Eyesmon used Defog!");
+        MESSAGE("Eyesmon is protected by MIST!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DEFOG, opponentRight);
         // Player side
         MESSAGE("Ally's Reflect wore off!");

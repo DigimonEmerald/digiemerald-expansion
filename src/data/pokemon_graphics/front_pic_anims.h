@@ -4885,7 +4885,7 @@ static const union AnimCmd sAnim_Exveemon_virus_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Glalie_1[] =
+static const union AnimCmd sAnim_Eyesmon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4896,7 +4896,7 @@ static const union AnimCmd sAnim_Glalie_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(GlalieMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(EyesmonMega);
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GEN_4_CROSS_EVOS
@@ -11295,9 +11295,9 @@ SINGLE_ANIMATION(ExermonMega);
 #endif //P_FAMILY_EXERMON
 #if P_FAMILY_EXVEEMON_VIRUS
 SINGLE_ANIMATION(Exveemon_virus);
-SINGLE_ANIMATION(Glalie);
+SINGLE_ANIMATION(Eyesmon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(GlalieMega);
+SINGLE_ANIMATION(EyesmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Froslass);

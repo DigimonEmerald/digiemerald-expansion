@@ -5266,21 +5266,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Exveemon_virus[] = INCBIN_U8("graphics/pokemon/exveemon_virus/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Glalie[] = INCBIN_U32("graphics/pokemon/glalie/anim_front.4bpp.lz");
-    const u32 gMonPalette_Glalie[] = INCBIN_U32("graphics/pokemon/glalie/normal.gbapal.lz");
-    const u32 gMonBackPic_Glalie[] = INCBIN_U32("graphics/pokemon/glalie/back.4bpp.lz");
-    const u32 gMonShinyPalette_Glalie[] = INCBIN_U32("graphics/pokemon/glalie/shiny.gbapal.lz");
-    const u8 gMonIcon_Glalie[] = INCBIN_U8("graphics/pokemon/glalie/icon.4bpp");
+    const u32 gMonFrontPic_Eyesmon[] = INCBIN_U32("graphics/pokemon/eyesmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Eyesmon[] = INCBIN_U32("graphics/pokemon/eyesmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Eyesmon[] = INCBIN_U32("graphics/pokemon/eyesmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Eyesmon[] = INCBIN_U32("graphics/pokemon/eyesmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Eyesmon[] = INCBIN_U8("graphics/pokemon/eyesmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Glalie[] = INCBIN_U8("graphics/pokemon/glalie/footprint.1bpp");
+    const u8 gMonFootprint_Eyesmon[] = INCBIN_U8("graphics/pokemon/eyesmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_GlalieMega[] = INCBIN_U32("graphics/pokemon/glalie/mega/front.4bpp.lz");
-    const u32 gMonPalette_GlalieMega[] = INCBIN_U32("graphics/pokemon/glalie/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_GlalieMega[] = INCBIN_U32("graphics/pokemon/glalie/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_GlalieMega[] = INCBIN_U32("graphics/pokemon/glalie/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_GlalieMega[] = INCBIN_U8("graphics/pokemon/glalie/mega/icon.4bpp");
+    const u32 gMonFrontPic_EyesmonMega[] = INCBIN_U32("graphics/pokemon/eyesmon/mega/front.4bpp.lz");
+    const u32 gMonPalette_EyesmonMega[] = INCBIN_U32("graphics/pokemon/eyesmon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_EyesmonMega[] = INCBIN_U32("graphics/pokemon/eyesmon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_EyesmonMega[] = INCBIN_U32("graphics/pokemon/eyesmon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_EyesmonMega[] = INCBIN_U8("graphics/pokemon/eyesmon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 
 #if P_GEN_4_CROSS_EVOS

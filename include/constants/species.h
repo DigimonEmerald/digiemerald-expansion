@@ -364,7 +364,7 @@
 #define SPECIES_EXERMON                                   359
 #define SPECIES_EXVEEMON                                  360
 #define SPECIES_EXVEEMON_VIRUS                                 361
-#define SPECIES_GLALIE                                  362
+#define SPECIES_EYESMON                                  362
 #define SPECIES_SPHEAL                                  363
 #define SPECIES_SEALEO                                  364
 #define SPECIES_WALREIN                                 365
@@ -999,7 +999,7 @@
 #define SPECIES_DARMAILMON_MEGA                            938
 #define SPECIES_DORULUMON_MEGA                            939
 #define SPECIES_EXERMON_MEGA                              940
-#define SPECIES_GLALIE_MEGA                             941
+#define SPECIES_EYESMON_MEGA                             941
 #define SPECIES_SALAMENCE_MEGA                          942
 #define SPECIES_METAGROSS_MEGA                          943
 #define SPECIES_LATIAS_MEGA                             944

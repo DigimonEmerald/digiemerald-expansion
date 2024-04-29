@@ -994,9 +994,9 @@ gCryTable::
 .endif @ P_FAMILY_EXERMON
 .if P_FAMILY_EXVEEMON_VIRUS == TRUE
 	cry Cry_Exveemon_virus
-	cry Cry_Glalie
+	cry Cry_Eyesmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_GlalieMega
+	cry Cry_EyesmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Froslass
@@ -3420,9 +3420,9 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_EXERMON
 .if P_FAMILY_EXVEEMON_VIRUS == TRUE
 	cry_reverse Cry_Exveemon_virus
-	cry_reverse Cry_Glalie
+	cry_reverse Cry_Eyesmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_GlalieMega
+	cry_reverse Cry_EyesmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Froslass

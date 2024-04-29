@@ -10,14 +10,14 @@ SINGLE_BATTLE_TEST("Sheer Cold doesn't affect Ice-type Pokémon")
 {
     GIVEN {
         ASSUME(B_SHEER_COLD_IMMUNITY >= GEN_7);
-        ASSUME(gSpeciesInfo[SPECIES_GLALIE].types[0] == TYPE_ICE);
+        ASSUME(gSpeciesInfo[SPECIES_EYESMON].types[0] == TYPE_ICE);
         PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_GLALIE);
+        OPPONENT(SPECIES_EYESMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SHEER_COLD); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SHEER_COLD, player);
-        MESSAGE("It doesn't affect Foe Glalie…");
+        MESSAGE("It doesn't affect Foe Eyesmon…");
     }
 }
 TO_DO_BATTLE_TEST("Fissure faints the target, skipping regular damage calculations")

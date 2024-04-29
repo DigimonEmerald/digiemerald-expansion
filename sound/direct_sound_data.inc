@@ -2706,13 +2706,13 @@ Cry_Exveemon_virus::
 	.incbin "sound/direct_sound_samples/cries/exveemon_virus.bin"
 
 	.align 2
-Cry_Glalie::
-	.incbin "sound/direct_sound_samples/cries/glalie.bin"
+Cry_Eyesmon::
+	.incbin "sound/direct_sound_samples/cries/eyesmon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_GlalieMega::
-	.incbin "sound/direct_sound_samples/cries/glalie_mega.bin"
+Cry_EyesmonMega::
+	.incbin "sound/direct_sound_samples/cries/eyesmon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2

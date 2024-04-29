@@ -400,9 +400,9 @@ static const struct FormChange sExermonFormChangeTable[] = {
 #endif //P_FAMILY_EXERMON
 
 #if P_FAMILY_EXVEEMON_VIRUS
-static const struct FormChange sGlalieFormChangeTable[] = {
+static const struct FormChange sEyesmonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_GLALIE_MEGA, ITEM_GLALITITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_EYESMON_MEGA, ITEM_GLALITITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };

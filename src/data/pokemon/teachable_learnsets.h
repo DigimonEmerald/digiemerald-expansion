@@ -16889,7 +16889,7 @@ static const u16 sExveemon_virusTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGlalieTeachableLearnset[] = {
+static const u16 sEyesmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DOUBLE_TEAM,

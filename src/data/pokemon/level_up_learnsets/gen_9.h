@@ -9436,7 +9436,7 @@ static const struct LevelUpMove sExveemon_virusLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sGlalieLevelUpLearnset[] = {
+static const struct LevelUpMove sEyesmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_FREEZE_DRY),
     LEVEL_UP_MOVE( 1, MOVE_HEADBUTT),
     LEVEL_UP_MOVE( 1, MOVE_LEER),

@@ -7,7 +7,7 @@ SINGLE_BATTLE_TEST("Hail deals 1/16 damage per turn")
     s16 hailDamage;
 
     GIVEN {
-        PLAYER(SPECIES_GLALIE);
+        PLAYER(SPECIES_EYESMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN {MOVE(player, MOVE_HAIL);}
@@ -20,12 +20,12 @@ SINGLE_BATTLE_TEST("Hail deals 1/16 damage per turn")
 SINGLE_BATTLE_TEST("Hail damage does not affect Ice-type Pokémon")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_GLALIE].types[0] == TYPE_ICE);
+        ASSUME(gSpeciesInfo[SPECIES_EYESMON].types[0] == TYPE_ICE);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_GLALIE);
+        OPPONENT(SPECIES_EYESMON);
     } WHEN {
         TURN {MOVE(player, MOVE_HAIL);}
     } SCENE {
-        NOT MESSAGE("Foe Glalie is pelted by HAIL!");
+        NOT MESSAGE("Foe Eyesmon is pelted by HAIL!");
     }
 }

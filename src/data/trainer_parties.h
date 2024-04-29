@@ -3139,7 +3139,7 @@ static const struct TrainerMon sParty_Glacia[] = {
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .lvl = 50,
-    .species = SPECIES_GLALIE,
+    .species = SPECIES_EYESMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_LIGHT_SCREEN, MOVE_CRUNCH, MOVE_ICY_WIND, MOVE_ICE_BEAM}
     },
@@ -3153,7 +3153,7 @@ static const struct TrainerMon sParty_Glacia[] = {
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .lvl = 52,
-    .species = SPECIES_GLALIE,
+    .species = SPECIES_EYESMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SHADOW_BALL, MOVE_EXPLOSION, MOVE_HAIL, MOVE_ICE_BEAM}
     },
