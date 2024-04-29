@@ -2616,15 +2616,15 @@ Cry_Dobermon_x::
 	.incbin "sound/direct_sound_samples/cries/dobermon_x.bin"
 .endif @ P_FAMILY_DOBERMON
 
-.if P_FAMILY_FEEBAS == TRUE
+.if P_FAMILY_DOGGYMON == TRUE
 	.align 2
-Cry_Feebas::
-	.incbin "sound/direct_sound_samples/cries/feebas.bin"
+Cry_Doggymon::
+	.incbin "sound/direct_sound_samples/cries/doggymon.bin"
 
 	.align 2
 Cry_Milotic::
 	.incbin "sound/direct_sound_samples/cries/milotic.bin"
-.endif @ P_FAMILY_FEEBAS
+.endif @ P_FAMILY_DOGGYMON
 
 .if P_FAMILY_CASTFORM == TRUE
 	.align 2

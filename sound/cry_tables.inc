@@ -953,10 +953,10 @@ gCryTable::
 	cry Cry_Dobermon
 	cry Cry_Dobermon_x
 .endif @ P_FAMILY_DOBERMON
-.if P_FAMILY_FEEBAS == TRUE
-	cry Cry_Feebas
+.if P_FAMILY_DOGGYMON == TRUE
+	cry Cry_Doggymon
 	cry Cry_Milotic
-.endif @ P_FAMILY_FEEBAS
+.endif @ P_FAMILY_DOGGYMON
 .if P_FAMILY_CASTFORM == TRUE
 	cry Cry_Castform
 .endif @ P_FAMILY_CASTFORM
@@ -3379,10 +3379,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Dobermon
 	cry_reverse Cry_Dobermon_x
 .endif @ P_FAMILY_DOBERMON
-.if P_FAMILY_FEEBAS == TRUE
-	cry_reverse Cry_Feebas
+.if P_FAMILY_DOGGYMON == TRUE
+	cry_reverse Cry_Doggymon
 	cry_reverse Cry_Milotic
-.endif @ P_FAMILY_FEEBAS
+.endif @ P_FAMILY_DOGGYMON
 .if P_FAMILY_CASTFORM == TRUE
 	cry_reverse Cry_Castform
 .endif @ P_FAMILY_CASTFORM

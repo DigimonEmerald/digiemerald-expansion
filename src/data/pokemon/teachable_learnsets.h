@@ -16325,8 +16325,8 @@ static const u16 sDobermon_xTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DOBERMON
 
-#if P_FAMILY_FEEBAS
-static const u16 sFeebasTeachableLearnset[] = {
+#if P_FAMILY_DOGGYMON
+static const u16 sDoggymonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -16384,7 +16384,7 @@ static const u16 sMiloticTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_FEEBAS
+#endif //P_FAMILY_DOGGYMON
 
 #if P_FAMILY_CASTFORM
 static const u16 sCastformTeachableLearnset[] = {

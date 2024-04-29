@@ -4664,8 +4664,8 @@ static const union AnimCmd sAnim_Dobermon_x_1[] =
 };
 #endif //P_FAMILY_DOBERMON
 
-#if P_FAMILY_FEEBAS
-static const union AnimCmd sAnim_Feebas_1[] =
+#if P_FAMILY_DOGGYMON
+static const union AnimCmd sAnim_Doggymon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4688,7 +4688,7 @@ static const union AnimCmd sAnim_Milotic_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_FEEBAS
+#endif //P_FAMILY_DOGGYMON
 
 #if P_FAMILY_CASTFORM
 static const union AnimCmd sAnim_CastformNormal_1[] =
@@ -11251,10 +11251,10 @@ SINGLE_ANIMATION(Dinohyumon);
 SINGLE_ANIMATION(Dobermon);
 SINGLE_ANIMATION(Dobermon_x);
 #endif //P_FAMILY_DOBERMON
-#if P_FAMILY_FEEBAS
-SINGLE_ANIMATION(Feebas);
+#if P_FAMILY_DOGGYMON
+SINGLE_ANIMATION(Doggymon);
 SINGLE_ANIMATION(Milotic);
-#endif //P_FAMILY_FEEBAS
+#endif //P_FAMILY_DOGGYMON
 #if P_FAMILY_CASTFORM
 SINGLE_ANIMATION(CastformNormal);
 SINGLE_ANIMATION(CastformSunny);

@@ -2799,8 +2799,8 @@ const u16 gEggMoves[] = {
         MOVE_AQUA_JET),
 #endif //P_FAMILY_DOBERMON
 
-#if P_FAMILY_FEEBAS
-    egg_moves(FEEBAS,
+#if P_FAMILY_DOGGYMON
+    egg_moves(DOGGYMON,
         MOVE_MIRROR_COAT,
         MOVE_DRAGON_BREATH,
         MOVE_MUD_SPORT,
@@ -2813,7 +2813,7 @@ const u16 gEggMoves[] = {
         MOVE_IRON_TAIL,
         MOVE_DRAGON_PULSE,
         MOVE_CAPTIVATE),
-#endif //P_FAMILY_FEEBAS
+#endif //P_FAMILY_DOGGYMON
 
 #if P_FAMILY_CASTFORM
     egg_moves(CASTFORM,

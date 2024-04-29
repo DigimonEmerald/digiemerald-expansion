@@ -6683,8 +6683,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_DOBERMON
 
-#if P_FAMILY_FEEBAS
-    [SPECIES_FEEBAS] =
+#if P_FAMILY_DOGGYMON
+    [SPECIES_DOGGYMON] =
     {
         .baseHP        = 20,
         .baseAttack    = 15,
@@ -6703,14 +6703,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_OBLIVIOUS, ABILITY_ADAPTABILITY },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Feebas"),
-        .cryId = CRY_FEEBAS,
-        .natDexNum = NATIONAL_DEX_FEEBAS,
+        .speciesName = _("Doggymon"),
+        .cryId = CRY_DOGGYMON,
+        .natDexNum = NATIONAL_DEX_DOGGYMON,
         .categoryName = _("Fish"),
         .height = 6,
         .weight = 74,
         .description = COMPOUND_STRING(
-            "Feebas live in ponds that are heavily\n"
+            "Doggymon live in ponds that are heavily\n"
             "infested with weeds. Because of its\n"
             "hopelessly shabby appearance, it\n"
             "seems as if few Trainers raise it."),
@@ -6718,22 +6718,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = -4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Feebas,
+        .frontPic = gMonFrontPic_Doggymon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 10,
-        .frontAnimFrames = sAnims_Feebas,
+        .frontAnimFrames = sAnims_Doggymon,
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SLOW,
-        .backPic = gMonBackPic_Feebas,
+        .backPic = gMonBackPic_Doggymon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_H_SPRING,
-        .palette = gMonPalette_Feebas,
-        .shinyPalette = gMonShinyPalette_Feebas,
-        .iconSprite = gMonIcon_Feebas,
+        .palette = gMonPalette_Doggymon,
+        .shinyPalette = gMonShinyPalette_Doggymon,
+        .iconSprite = gMonIcon_Doggymon,
         .iconPalIndex = 2,
-        FOOTPRINT(Feebas)
-        .levelUpLearnset = sFeebasLevelUpLearnset,
-        .teachableLearnset = sFeebasTeachableLearnset,
+        FOOTPRINT(Doggymon)
+        .levelUpLearnset = sDoggymonLevelUpLearnset,
+        .teachableLearnset = sDoggymonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_BEAUTY, 170, SPECIES_MILOTIC},
                                 {EVO_TRADE_ITEM, ITEM_PRISM_SCALE, SPECIES_MILOTIC},
                                 {EVO_ITEM, ITEM_PRISM_SCALE, SPECIES_MILOTIC}),
@@ -6795,7 +6795,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sMiloticLevelUpLearnset,
         .teachableLearnset = sMiloticTeachableLearnset,
     },
-#endif //P_FAMILY_FEEBAS
+#endif //P_FAMILY_DOGGYMON
 
 #if P_FAMILY_CASTFORM
     [SPECIES_CASTFORM_NORMAL] =

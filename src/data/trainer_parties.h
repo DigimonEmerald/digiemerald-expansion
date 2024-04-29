@@ -6193,14 +6193,14 @@ static const struct TrainerMon sParty_Annika[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 39,
-    .species = SPECIES_FEEBAS,
+    .species = SPECIES_DOGGYMON,
     .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_FLAIL, MOVE_WATER_PULSE, MOVE_RETURN, MOVE_ATTRACT}
     },
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 39,
-    .species = SPECIES_FEEBAS,
+    .species = SPECIES_DOGGYMON,
     .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_FLAIL, MOVE_WATER_PULSE, MOVE_RETURN, MOVE_ATTRACT}
     }
@@ -8877,7 +8877,7 @@ static const struct TrainerMon sParty_Chris[] = {
     },
     {
     .lvl = 26,
-    .species = SPECIES_FEEBAS,
+    .species = SPECIES_DOGGYMON,
     },
     {
     .lvl = 23,

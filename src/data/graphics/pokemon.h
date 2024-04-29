@@ -5082,14 +5082,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_DOBERMON
 
-#if P_FAMILY_FEEBAS
-    const u32 gMonFrontPic_Feebas[] = INCBIN_U32("graphics/pokemon/feebas/anim_front.4bpp.lz");
-    const u32 gMonPalette_Feebas[] = INCBIN_U32("graphics/pokemon/feebas/normal.gbapal.lz");
-    const u32 gMonBackPic_Feebas[] = INCBIN_U32("graphics/pokemon/feebas/back.4bpp.lz");
-    const u32 gMonShinyPalette_Feebas[] = INCBIN_U32("graphics/pokemon/feebas/shiny.gbapal.lz");
-    const u8 gMonIcon_Feebas[] = INCBIN_U8("graphics/pokemon/feebas/icon.4bpp");
+#if P_FAMILY_DOGGYMON
+    const u32 gMonFrontPic_Doggymon[] = INCBIN_U32("graphics/pokemon/doggymon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Doggymon[] = INCBIN_U32("graphics/pokemon/doggymon/normal.gbapal.lz");
+    const u32 gMonBackPic_Doggymon[] = INCBIN_U32("graphics/pokemon/doggymon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Doggymon[] = INCBIN_U32("graphics/pokemon/doggymon/shiny.gbapal.lz");
+    const u8 gMonIcon_Doggymon[] = INCBIN_U8("graphics/pokemon/doggymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Feebas[] = INCBIN_U8("graphics/pokemon/feebas/footprint.1bpp");
+    const u8 gMonFootprint_Doggymon[] = INCBIN_U8("graphics/pokemon/doggymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Milotic[] = INCBIN_U32("graphics/pokemon/milotic/anim_front.4bpp.lz");
@@ -5103,7 +5103,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
     const u32 gMonFrontPic_MiloticF[] = INCBIN_U32("graphics/pokemon/milotic/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_MiloticF[] = INCBIN_U32("graphics/pokemon/milotic/backf.4bpp.lz");
-#endif //P_FAMILY_FEEBAS
+#endif //P_FAMILY_DOGGYMON
 
 #if P_FAMILY_CASTFORM
     const u32 gMonFrontPic_CastformNormal[] = INCBIN_U32("graphics/pokemon/castform/anim_front.4bpp.lz");
