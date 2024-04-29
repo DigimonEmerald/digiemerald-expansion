@@ -937,10 +937,10 @@ gCryTable::
 	cry Cry_Depthmon
 	cry Cry_Deputymon
 .endif @ P_FAMILY_DEPTHMON
-.if P_FAMILY_CORPHISH == TRUE
-	cry Cry_Corphish
+.if P_FAMILY_DEVIDRAMON == TRUE
+	cry Cry_Devidramon
 	cry Cry_Crawdaunt
-.endif @ P_FAMILY_CORPHISH
+.endif @ P_FAMILY_DEVIDRAMON
 .if P_FAMILY_BALTOY == TRUE
 	cry Cry_Baltoy
 	cry Cry_Claydol
@@ -3363,10 +3363,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Depthmon
 	cry_reverse Cry_Deputymon
 .endif @ P_FAMILY_DEPTHMON
-.if P_FAMILY_CORPHISH == TRUE
-	cry_reverse Cry_Corphish
+.if P_FAMILY_DEVIDRAMON == TRUE
+	cry_reverse Cry_Devidramon
 	cry_reverse Cry_Crawdaunt
-.endif @ P_FAMILY_CORPHISH
+.endif @ P_FAMILY_DEVIDRAMON
 .if P_FAMILY_BALTOY == TRUE
 	cry_reverse Cry_Baltoy
 	cry_reverse Cry_Claydol

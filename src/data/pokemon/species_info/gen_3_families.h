@@ -6225,8 +6225,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_DEPTHMON
 
-#if P_FAMILY_CORPHISH
-    [SPECIES_CORPHISH] =
+#if P_FAMILY_DEVIDRAMON
+    [SPECIES_DEVIDRAMON] =
     {
         .baseHP        = 43,
         .baseAttack    = 80,
@@ -6245,9 +6245,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
         .abilities = { ABILITY_HYPER_CUTTER, ABILITY_SHELL_ARMOR, ABILITY_ADAPTABILITY },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Corphish"),
-        .cryId = CRY_CORPHISH,
-        .natDexNum = NATIONAL_DEX_CORPHISH,
+        .speciesName = _("Devidramon"),
+        .cryId = CRY_DEVIDRAMON,
+        .natDexNum = NATIONAL_DEX_DEVIDRAMON,
         .categoryName = _("Ruffian"),
         .height = 6,
         .weight = 115,
@@ -6260,22 +6260,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Corphish,
+        .frontPic = gMonFrontPic_Devidramon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Corphish,
+        .frontAnimFrames = sAnims_Devidramon,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Corphish,
+        .backPic = gMonBackPic_Devidramon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Corphish,
-        .shinyPalette = gMonShinyPalette_Corphish,
-        .iconSprite = gMonIcon_Corphish,
+        .palette = gMonPalette_Devidramon,
+        .shinyPalette = gMonShinyPalette_Devidramon,
+        .iconSprite = gMonIcon_Devidramon,
         .iconPalIndex = 0,
-        FOOTPRINT(Corphish)
-        .levelUpLearnset = sCorphishLevelUpLearnset,
-        .teachableLearnset = sCorphishTeachableLearnset,
+        FOOTPRINT(Devidramon)
+        .levelUpLearnset = sDevidramonLevelUpLearnset,
+        .teachableLearnset = sDevidramonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_CRAWDAUNT}),
     },
 
@@ -6330,7 +6330,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sCrawdauntLevelUpLearnset,
         .teachableLearnset = sCrawdauntTeachableLearnset,
     },
-#endif //P_FAMILY_CORPHISH
+#endif //P_FAMILY_DEVIDRAMON
 
 #if P_FAMILY_BALTOY
     [SPECIES_BALTOY] =

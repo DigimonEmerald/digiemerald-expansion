@@ -229,7 +229,7 @@
 #define P_FAMILY_DECKDRAMON                P_GEN_3_POKEMON
 #define P_FAMILY_DELTAMON                 P_GEN_3_POKEMON
 #define P_FAMILY_DEPTHMON                P_GEN_3_POKEMON
-#define P_FAMILY_CORPHISH                P_GEN_3_POKEMON
+#define P_FAMILY_DEVIDRAMON                P_GEN_3_POKEMON
 #define P_FAMILY_BALTOY                  P_GEN_3_POKEMON
 #define P_FAMILY_LILEEP                  P_GEN_3_POKEMON
 #define P_FAMILY_ANORITH                 P_GEN_3_POKEMON

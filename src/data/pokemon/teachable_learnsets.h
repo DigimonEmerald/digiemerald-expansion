@@ -16039,8 +16039,8 @@ static const u16 sDeputymonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DEPTHMON
 
-#if P_FAMILY_CORPHISH
-static const u16 sCorphishTeachableLearnset[] = {
+#if P_FAMILY_DEVIDRAMON
+static const u16 sDevidramonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -16120,7 +16120,7 @@ static const u16 sCrawdauntTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CORPHISH
+#endif //P_FAMILY_DEVIDRAMON
 
 #if P_FAMILY_BALTOY
 static const u16 sBaltoyTeachableLearnset[] = {

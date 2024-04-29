@@ -4566,8 +4566,8 @@ static const union AnimCmd sAnim_Deputymon_1[] =
 };
 #endif //P_FAMILY_DEPTHMON
 
-#if P_FAMILY_CORPHISH
-static const union AnimCmd sAnim_Corphish_1[] =
+#if P_FAMILY_DEVIDRAMON
+static const union AnimCmd sAnim_Devidramon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4588,7 +4588,7 @@ static const union AnimCmd sAnim_Crawdaunt_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_CORPHISH
+#endif //P_FAMILY_DEVIDRAMON
 
 #if P_FAMILY_BALTOY
 static const union AnimCmd sAnim_Baltoy_1[] =
@@ -11235,10 +11235,10 @@ SINGLE_ANIMATION(Deltamon);
 SINGLE_ANIMATION(Depthmon);
 SINGLE_ANIMATION(Deputymon);
 #endif //P_FAMILY_DEPTHMON
-#if P_FAMILY_CORPHISH
-SINGLE_ANIMATION(Corphish);
+#if P_FAMILY_DEVIDRAMON
+SINGLE_ANIMATION(Devidramon);
 SINGLE_ANIMATION(Crawdaunt);
-#endif //P_FAMILY_CORPHISH
+#endif //P_FAMILY_DEVIDRAMON
 #if P_FAMILY_BALTOY
 SINGLE_ANIMATION(Baltoy);
 SINGLE_ANIMATION(Claydol);

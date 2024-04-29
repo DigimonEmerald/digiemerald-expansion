@@ -2756,8 +2756,8 @@ const u16 gEggMoves[] = {
         MOVE_MUDDY_WATER),
 #endif //P_FAMILY_DEPTHMON
 
-#if P_FAMILY_CORPHISH
-    egg_moves(CORPHISH,
+#if P_FAMILY_DEVIDRAMON
+    egg_moves(DEVIDRAMON,
         MOVE_MUD_SPORT,
         MOVE_ENDEAVOR,
         MOVE_BODY_SLAM,
@@ -2771,7 +2771,7 @@ const u16 gEggMoves[] = {
         MOVE_DOUBLE_EDGE,
         MOVE_AQUA_JET,
         MOVE_SWITCHEROO),
-#endif //P_FAMILY_CORPHISH
+#endif //P_FAMILY_DEVIDRAMON
 
 #if P_FAMILY_LILEEP
     egg_moves(LILEEP,

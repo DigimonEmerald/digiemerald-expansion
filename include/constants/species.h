@@ -342,7 +342,7 @@
 #define SPECIES_DELTAMON                                 338
 #define SPECIES_DEPTHMON                                339
 #define SPECIES_DEPUTYMON                                340
-#define SPECIES_CORPHISH                                341
+#define SPECIES_DEVIDRAMON                                341
 #define SPECIES_CRAWDAUNT                               342
 #define SPECIES_BALTOY                                  343
 #define SPECIES_CLAYDOL                                 344

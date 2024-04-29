@@ -2576,15 +2576,15 @@ Cry_Deputymon::
 	.incbin "sound/direct_sound_samples/cries/deputymon.bin"
 .endif @ P_FAMILY_DEPTHMON
 
-.if P_FAMILY_CORPHISH == TRUE
+.if P_FAMILY_DEVIDRAMON == TRUE
 	.align 2
-Cry_Corphish::
-	.incbin "sound/direct_sound_samples/cries/corphish.bin"
+Cry_Devidramon::
+	.incbin "sound/direct_sound_samples/cries/devidramon.bin"
 
 	.align 2
 Cry_Crawdaunt::
 	.incbin "sound/direct_sound_samples/cries/crawdaunt.bin"
-.endif @ P_FAMILY_CORPHISH
+.endif @ P_FAMILY_DEVIDRAMON
 
 .if P_FAMILY_BALTOY == TRUE
 	.align 2
