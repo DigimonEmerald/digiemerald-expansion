@@ -5305,10 +5305,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Clockmon_fusion)
         .levelUpLearnset = sClockmon_fusionLevelUpLearnset,
         .teachableLearnset = sClockmon_fusionTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_GRUMPIG}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_COELAMON}),
     },
 
-    [SPECIES_GRUMPIG] =
+    [SPECIES_COELAMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 45,
@@ -5327,9 +5327,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_THICK_FAT, ABILITY_OWN_TEMPO, ABILITY_GLUTTONY },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Grumpig"),
-        .cryId = CRY_GRUMPIG,
-        .natDexNum = NATIONAL_DEX_GRUMPIG,
+        .speciesName = _("Coelamon"),
+        .cryId = CRY_COELAMON,
+        .natDexNum = NATIONAL_DEX_COELAMON,
         .categoryName = _("Manipulate"),
         .height = 9,
         .weight = 715,
@@ -5342,23 +5342,23 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Grumpig,
+        .frontPic = gMonFrontPic_Coelamon,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Grumpig,
+        .frontAnimFrames = sAnims_Coelamon,
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
         .frontAnimDelay = 15,
-        .backPic = gMonBackPic_Grumpig,
+        .backPic = gMonBackPic_Coelamon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Grumpig,
-        .shinyPalette = gMonShinyPalette_Grumpig,
-        .iconSprite = gMonIcon_Grumpig,
+        .palette = gMonPalette_Coelamon,
+        .shinyPalette = gMonShinyPalette_Coelamon,
+        .iconSprite = gMonIcon_Coelamon,
         .iconPalIndex = 2,
-        FOOTPRINT(Grumpig)
-        .levelUpLearnset = sGrumpigLevelUpLearnset,
-        .teachableLearnset = sGrumpigTeachableLearnset,
+        FOOTPRINT(Coelamon)
+        .levelUpLearnset = sCoelamonLevelUpLearnset,
+        .teachableLearnset = sCoelamonTeachableLearnset,
     },
 #endif //P_FAMILY_CLOCKMON_FUSION
 

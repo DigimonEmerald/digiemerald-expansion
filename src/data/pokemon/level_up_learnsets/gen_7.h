@@ -8704,7 +8704,7 @@ static const struct LevelUpMove sClockmon_fusionLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sGrumpigLevelUpLearnset[] = {
+static const struct LevelUpMove sCoelamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_TEETER_DANCE),
     LEVEL_UP_MOVE( 1, MOVE_TEETER_DANCE),
     LEVEL_UP_MOVE( 1, MOVE_BELCH),

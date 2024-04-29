@@ -900,7 +900,7 @@ gCryTable::
 .endif @ P_FAMILY_CLOCKMON
 .if P_FAMILY_CLOCKMON_FUSION == TRUE
 	cry Cry_Clockmon_fusion
-	cry Cry_Grumpig
+	cry Cry_Coelamon
 .endif @ P_FAMILY_CLOCKMON_FUSION
 .if P_FAMILY_SPINDA == TRUE
 	cry Cry_Spinda
@@ -3326,7 +3326,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_CLOCKMON
 .if P_FAMILY_CLOCKMON_FUSION == TRUE
 	cry_reverse Cry_Clockmon_fusion
-	cry_reverse Cry_Grumpig
+	cry_reverse Cry_Coelamon
 .endif @ P_FAMILY_CLOCKMON_FUSION
 .if P_FAMILY_SPINDA == TRUE
 	cry_reverse Cry_Spinda

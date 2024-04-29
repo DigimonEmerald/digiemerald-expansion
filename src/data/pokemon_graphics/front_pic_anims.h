@@ -4361,7 +4361,7 @@ static const union AnimCmd sAnim_Clockmon_fusion_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Grumpig_1[] =
+static const union AnimCmd sAnim_Coelamon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -11198,7 +11198,7 @@ SINGLE_ANIMATION(Clockmon);
 #endif //P_FAMILY_CLOCKMON
 #if P_FAMILY_CLOCKMON_FUSION
 SINGLE_ANIMATION(Clockmon_fusion);
-SINGLE_ANIMATION(Grumpig);
+SINGLE_ANIMATION(Coelamon);
 #endif //P_FAMILY_CLOCKMON_FUSION
 #if P_FAMILY_SPINDA
 SINGLE_ANIMATION(Spinda);

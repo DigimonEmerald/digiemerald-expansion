@@ -4838,13 +4838,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Clockmon_fusion[] = INCBIN_U8("graphics/pokemon/clockmon_fusion/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Grumpig[] = INCBIN_U32("graphics/pokemon/grumpig/anim_front.4bpp.lz");
-    const u32 gMonPalette_Grumpig[] = INCBIN_U32("graphics/pokemon/grumpig/normal.gbapal.lz");
-    const u32 gMonBackPic_Grumpig[] = INCBIN_U32("graphics/pokemon/grumpig/back.4bpp.lz");
-    const u32 gMonShinyPalette_Grumpig[] = INCBIN_U32("graphics/pokemon/grumpig/shiny.gbapal.lz");
-    const u8 gMonIcon_Grumpig[] = INCBIN_U8("graphics/pokemon/grumpig/icon.4bpp");
+    const u32 gMonFrontPic_Coelamon[] = INCBIN_U32("graphics/pokemon/coelamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Coelamon[] = INCBIN_U32("graphics/pokemon/coelamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Coelamon[] = INCBIN_U32("graphics/pokemon/coelamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Coelamon[] = INCBIN_U32("graphics/pokemon/coelamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Coelamon[] = INCBIN_U8("graphics/pokemon/coelamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Grumpig[] = INCBIN_U8("graphics/pokemon/grumpig/footprint.1bpp");
+    const u8 gMonFootprint_Coelamon[] = INCBIN_U8("graphics/pokemon/coelamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_CLOCKMON_FUSION
 

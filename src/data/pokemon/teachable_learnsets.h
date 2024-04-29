@@ -15429,7 +15429,7 @@ static const u16 sClockmon_fusionTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGrumpigTeachableLearnset[] = {
+static const u16 sCoelamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
