@@ -5023,8 +5023,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_CHAMBLEMON
 
-#if P_FAMILY_NUMEL
-    [SPECIES_NUMEL] =
+#if P_FAMILY_CHRYSALMON
+    [SPECIES_CHRYSALMON] =
     {
         .baseHP        = 60,
         .baseAttack    = 60,
@@ -5043,14 +5043,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_SIMPLE, ABILITY_OWN_TEMPO },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Numel"),
-        .cryId = CRY_NUMEL,
-        .natDexNum = NATIONAL_DEX_NUMEL,
+        .speciesName = _("Chrysalmon"),
+        .cryId = CRY_CHRYSALMON,
+        .natDexNum = NATIONAL_DEX_CHRYSALMON,
         .categoryName = _("Numb"),
         .height = 7,
         .weight = 240,
         .description = COMPOUND_STRING(
-            "A Numel stores boiling magma in the hump\n"
+            "A Chrysalmon stores boiling magma in the hump\n"
             "on its back. It is a hardy Pokémon that can\n"
             "transport a 220-pound load. It has served\n"
             "humans at work since long ago."),
@@ -5058,26 +5058,26 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Numel,
-        .frontPicFemale = gMonFrontPic_NumelF,
+        .frontPic = gMonFrontPic_Chrysalmon,
+        .frontPicFemale = gMonFrontPic_ChrysalmonF,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicSizeFemale = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_Numel,
+        .frontAnimFrames = sAnims_Chrysalmon,
         .frontAnimId = ANIM_V_SLIDE,
-        .backPic = gMonBackPic_Numel,
-        .backPicFemale = gMonBackPic_NumelF,
+        .backPic = gMonBackPic_Chrysalmon,
+        .backPicFemale = gMonBackPic_ChrysalmonF,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Numel,
-        .shinyPalette = gMonShinyPalette_Numel,
-        .iconSprite = gMonIcon_Numel,
+        .palette = gMonPalette_Chrysalmon,
+        .shinyPalette = gMonShinyPalette_Chrysalmon,
+        .iconSprite = gMonIcon_Chrysalmon,
         .iconPalIndex = 1,
-        FOOTPRINT(Numel)
-        .levelUpLearnset = sNumelLevelUpLearnset,
-        .teachableLearnset = sNumelTeachableLearnset,
+        FOOTPRINT(Chrysalmon)
+        .levelUpLearnset = sChrysalmonLevelUpLearnset,
+        .teachableLearnset = sChrysalmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_CAMERUPT}),
     },
 
@@ -5197,7 +5197,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .formChangeTable = sCameruptFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_NUMEL
+#endif //P_FAMILY_CHRYSALMON
 
 #if P_FAMILY_TORKOAL
     [SPECIES_TORKOAL] =

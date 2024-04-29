@@ -4783,18 +4783,18 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_CHAMBLEMON
 
-#if P_FAMILY_NUMEL
-    const u32 gMonFrontPic_Numel[] = INCBIN_U32("graphics/pokemon/numel/anim_front.4bpp.lz");
-    const u32 gMonPalette_Numel[] = INCBIN_U32("graphics/pokemon/numel/normal.gbapal.lz");
-    const u32 gMonBackPic_Numel[] = INCBIN_U32("graphics/pokemon/numel/back.4bpp.lz");
-    const u32 gMonShinyPalette_Numel[] = INCBIN_U32("graphics/pokemon/numel/shiny.gbapal.lz");
-    const u8 gMonIcon_Numel[] = INCBIN_U8("graphics/pokemon/numel/icon.4bpp");
+#if P_FAMILY_CHRYSALMON
+    const u32 gMonFrontPic_Chrysalmon[] = INCBIN_U32("graphics/pokemon/chrysalmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Chrysalmon[] = INCBIN_U32("graphics/pokemon/chrysalmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Chrysalmon[] = INCBIN_U32("graphics/pokemon/chrysalmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Chrysalmon[] = INCBIN_U32("graphics/pokemon/chrysalmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Chrysalmon[] = INCBIN_U8("graphics/pokemon/chrysalmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Numel[] = INCBIN_U8("graphics/pokemon/numel/footprint.1bpp");
+    const u8 gMonFootprint_Chrysalmon[] = INCBIN_U8("graphics/pokemon/chrysalmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_NumelF[] = INCBIN_U32("graphics/pokemon/numel/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_NumelF[] = INCBIN_U32("graphics/pokemon/numel/backf.4bpp.lz");
+    const u32 gMonFrontPic_ChrysalmonF[] = INCBIN_U32("graphics/pokemon/chrysalmon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_ChrysalmonF[] = INCBIN_U32("graphics/pokemon/chrysalmon/backf.4bpp.lz");
 
     const u32 gMonFrontPic_Camerupt[] = INCBIN_U32("graphics/pokemon/camerupt/anim_front.4bpp.lz");
     const u32 gMonPalette_Camerupt[] = INCBIN_U32("graphics/pokemon/camerupt/normal.gbapal.lz");
@@ -4815,7 +4815,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_CameruptMega[] = INCBIN_U32("graphics/pokemon/camerupt/mega/shiny.gbapal.lz");
     const u8 gMonIcon_CameruptMega[] = INCBIN_U8("graphics/pokemon/camerupt/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_NUMEL
+#endif //P_FAMILY_CHRYSALMON
 
 #if P_FAMILY_TORKOAL
     const u32 gMonFrontPic_Torkoal[] = INCBIN_U32("graphics/pokemon/torkoal/anim_front.4bpp.lz");

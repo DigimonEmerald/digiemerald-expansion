@@ -888,13 +888,13 @@ gCryTable::
 	cry Cry_Chamblemon
 	cry Cry_Chamelemon
 .endif @ P_FAMILY_CHAMBLEMON
-.if P_FAMILY_NUMEL == TRUE
-	cry Cry_Numel
+.if P_FAMILY_CHRYSALMON == TRUE
+	cry Cry_Chrysalmon
 	cry Cry_Camerupt
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_CameruptMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_NUMEL
+.endif @ P_FAMILY_CHRYSALMON
 .if P_FAMILY_TORKOAL == TRUE
 	cry Cry_Torkoal
 .endif @ P_FAMILY_TORKOAL
@@ -3314,13 +3314,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Chamblemon
 	cry_reverse Cry_Chamelemon
 .endif @ P_FAMILY_CHAMBLEMON
-.if P_FAMILY_NUMEL == TRUE
-	cry_reverse Cry_Numel
+.if P_FAMILY_CHRYSALMON == TRUE
+	cry_reverse Cry_Chrysalmon
 	cry_reverse Cry_Camerupt
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_CameruptMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_NUMEL
+.endif @ P_FAMILY_CHRYSALMON
 .if P_FAMILY_TORKOAL == TRUE
 	cry_reverse Cry_Torkoal
 .endif @ P_FAMILY_TORKOAL

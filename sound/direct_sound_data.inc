@@ -2464,10 +2464,10 @@ Cry_Chamelemon::
 	.incbin "sound/direct_sound_samples/cries/chamelemon.bin"
 .endif @ P_FAMILY_CHAMBLEMON
 
-.if P_FAMILY_NUMEL == TRUE
+.if P_FAMILY_CHRYSALMON == TRUE
 	.align 2
-Cry_Numel::
-	.incbin "sound/direct_sound_samples/cries/numel.bin"
+Cry_Chrysalmon::
+	.incbin "sound/direct_sound_samples/cries/chrysalmon.bin"
 
 	.align 2
 Cry_Camerupt::
@@ -2478,7 +2478,7 @@ Cry_Camerupt::
 Cry_CameruptMega::
 	.incbin "sound/direct_sound_samples/cries/camerupt_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_NUMEL
+.endif @ P_FAMILY_CHRYSALMON
 
 .if P_FAMILY_TORKOAL == TRUE
 	.align 2

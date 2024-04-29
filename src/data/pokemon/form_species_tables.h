@@ -849,7 +849,7 @@ static const u16 sCentarumonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_CHOUMON
 
-#if P_FAMILY_NUMEL
+#if P_FAMILY_CHRYSALMON
 static const u16 sCameruptFormSpeciesIdTable[] = {
     SPECIES_CAMERUPT,
 #if P_MEGA_EVOLUTIONS
@@ -857,7 +857,7 @@ static const u16 sCameruptFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_NUMEL
+#endif //P_FAMILY_CHRYSALMON
 
 #if P_FAMILY_SWABLU
 static const u16 sAltariaFormSpeciesIdTable[] = {

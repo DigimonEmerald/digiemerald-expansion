@@ -2586,8 +2586,8 @@ const u16 gEggMoves[] = {
         MOVE_CLEAR_SMOG),
 #endif //P_FAMILY_CHAMBLEMON
 
-#if P_FAMILY_NUMEL
-    egg_moves(NUMEL,
+#if P_FAMILY_CHRYSALMON
+    egg_moves(CHRYSALMON,
         MOVE_HOWL,
         MOVE_SCARY_FACE,
         MOVE_BODY_SLAM,
@@ -2605,7 +2605,7 @@ const u16 gEggMoves[] = {
         MOVE_IRON_HEAD,
         MOVE_GROWTH,
         MOVE_HEAVY_SLAM),
-#endif //P_FAMILY_NUMEL
+#endif //P_FAMILY_CHRYSALMON
 
 #if P_FAMILY_TORKOAL
     egg_moves(TORKOAL,

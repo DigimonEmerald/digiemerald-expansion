@@ -15288,8 +15288,8 @@ static const u16 sChamelemonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_CHAMBLEMON
 
-#if P_FAMILY_NUMEL
-static const u16 sNumelTeachableLearnset[] = {
+#if P_FAMILY_CHRYSALMON
+static const u16 sChrysalmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -15355,7 +15355,7 @@ static const u16 sCameruptTeachableLearnset[] = {
     MOVE_SWAGGER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_NUMEL
+#endif //P_FAMILY_CHRYSALMON
 
 #if P_FAMILY_TORKOAL
 static const u16 sTorkoalTeachableLearnset[] = {

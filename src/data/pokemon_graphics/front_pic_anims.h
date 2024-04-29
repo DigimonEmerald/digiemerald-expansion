@@ -4304,8 +4304,8 @@ static const union AnimCmd sAnim_Chamelemon_1[] =
 };
 #endif //P_FAMILY_CHAMBLEMON
 
-#if P_FAMILY_NUMEL
-static const union AnimCmd sAnim_Numel_1[] =
+#if P_FAMILY_CHRYSALMON
+static const union AnimCmd sAnim_Chrysalmon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4330,7 +4330,7 @@ static const union AnimCmd sAnim_Camerupt_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(CameruptMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_NUMEL
+#endif //P_FAMILY_CHRYSALMON
 
 #if P_FAMILY_TORKOAL
 static const union AnimCmd sAnim_Torkoal_1[] =
@@ -11186,13 +11186,13 @@ SINGLE_ANIMATION(CentarumonMega);
 SINGLE_ANIMATION(Chamblemon);
 SINGLE_ANIMATION(Chamelemon);
 #endif //P_FAMILY_CHAMBLEMON
-#if P_FAMILY_NUMEL
-SINGLE_ANIMATION(Numel);
+#if P_FAMILY_CHRYSALMON
+SINGLE_ANIMATION(Chrysalmon);
 SINGLE_ANIMATION(Camerupt);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(CameruptMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_NUMEL
+#endif //P_FAMILY_CHRYSALMON
 #if P_FAMILY_TORKOAL
 SINGLE_ANIMATION(Torkoal);
 #endif //P_FAMILY_TORKOAL
