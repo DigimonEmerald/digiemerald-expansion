@@ -4516,8 +4516,8 @@ static const union AnimCmd sAnim_Deckdramon_1[] =
 };
 #endif //P_FAMILY_DECKDRAMON
 
-#if P_FAMILY_SOLROCK
-static const union AnimCmd sAnim_Solrock_1[] =
+#if P_FAMILY_DELTAMON
+static const union AnimCmd sAnim_Deltamon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -4526,7 +4526,7 @@ static const union AnimCmd sAnim_Solrock_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SOLROCK
+#endif //P_FAMILY_DELTAMON
 
 #if P_FAMILY_BARBOACH
 static const union AnimCmd sAnim_Barboach_1[] =
@@ -11228,9 +11228,9 @@ SINGLE_ANIMATION(Darktyrmon_x);
 #if P_FAMILY_DECKDRAMON
 SINGLE_ANIMATION(Deckdramon);
 #endif //P_FAMILY_DECKDRAMON
-#if P_FAMILY_SOLROCK
-SINGLE_ANIMATION(Solrock);
-#endif //P_FAMILY_SOLROCK
+#if P_FAMILY_DELTAMON
+SINGLE_ANIMATION(Deltamon);
+#endif //P_FAMILY_DELTAMON
 #if P_FAMILY_BARBOACH
 SINGLE_ANIMATION(Barboach);
 SINGLE_ANIMATION(Whiscash);

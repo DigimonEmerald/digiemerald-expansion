@@ -15927,8 +15927,8 @@ static const u16 sDeckdramonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DECKDRAMON
 
-#if P_FAMILY_SOLROCK
-static const u16 sSolrockTeachableLearnset[] = {
+#if P_FAMILY_DELTAMON
+static const u16 sDeltamonTeachableLearnset[] = {
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
     MOVE_EARTHQUAKE,
@@ -15968,7 +15968,7 @@ static const u16 sSolrockTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SOLROCK
+#endif //P_FAMILY_DELTAMON
 
 #if P_FAMILY_BARBOACH
 static const u16 sBarboachTeachableLearnset[] = {

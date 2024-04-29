@@ -2560,11 +2560,11 @@ Cry_Deckdramon::
 	.incbin "sound/direct_sound_samples/cries/deckdramon.bin"
 .endif @ P_FAMILY_DECKDRAMON
 
-.if P_FAMILY_SOLROCK == TRUE
+.if P_FAMILY_DELTAMON == TRUE
 	.align 2
-Cry_Solrock::
-	.incbin "sound/direct_sound_samples/cries/solrock.bin"
-.endif @ P_FAMILY_SOLROCK
+Cry_Deltamon::
+	.incbin "sound/direct_sound_samples/cries/deltamon.bin"
+.endif @ P_FAMILY_DELTAMON
 
 .if P_FAMILY_BARBOACH == TRUE
 	.align 2

@@ -930,9 +930,9 @@ gCryTable::
 .if P_FAMILY_DECKDRAMON == TRUE
 	cry Cry_Deckdramon
 .endif @ P_FAMILY_DECKDRAMON
-.if P_FAMILY_SOLROCK == TRUE
-	cry Cry_Solrock
-.endif @ P_FAMILY_SOLROCK
+.if P_FAMILY_DELTAMON == TRUE
+	cry Cry_Deltamon
+.endif @ P_FAMILY_DELTAMON
 .if P_FAMILY_BARBOACH == TRUE
 	cry Cry_Barboach
 	cry Cry_Whiscash
@@ -3356,9 +3356,9 @@ gCryTable_Reverse::
 .if P_FAMILY_DECKDRAMON == TRUE
 	cry_reverse Cry_Deckdramon
 .endif @ P_FAMILY_DECKDRAMON
-.if P_FAMILY_SOLROCK == TRUE
-	cry_reverse Cry_Solrock
-.endif @ P_FAMILY_SOLROCK
+.if P_FAMILY_DELTAMON == TRUE
+	cry_reverse Cry_Deltamon
+.endif @ P_FAMILY_DELTAMON
 .if P_FAMILY_BARBOACH == TRUE
 	cry_reverse Cry_Barboach
 	cry_reverse Cry_Whiscash

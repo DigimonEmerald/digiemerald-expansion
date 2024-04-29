@@ -8994,8 +8994,8 @@ static const struct LevelUpMove sDeckdramonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_DECKDRAMON
 
-#if P_FAMILY_SOLROCK
-static const struct LevelUpMove sSolrockLevelUpLearnset[] = {
+#if P_FAMILY_DELTAMON
+static const struct LevelUpMove sDeltamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FLARE_BLITZ),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
@@ -9015,7 +9015,7 @@ static const struct LevelUpMove sSolrockLevelUpLearnset[] = {
     LEVEL_UP_MOVE(49, MOVE_WONDER_ROOM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SOLROCK
+#endif //P_FAMILY_DELTAMON
 
 #if P_FAMILY_BARBOACH
 static const struct LevelUpMove sBarboachLevelUpLearnset[] = {

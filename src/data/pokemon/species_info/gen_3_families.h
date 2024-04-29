@@ -6054,8 +6054,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_DECKDRAMON
 
-#if P_FAMILY_SOLROCK
-    [SPECIES_SOLROCK] =
+#if P_FAMILY_DELTAMON
+    [SPECIES_DELTAMON] =
     {
         .baseHP        = P_UPDATED_STATS >= GEN_7 ? 90 : 70,
         .baseAttack    = 95,
@@ -6082,40 +6082,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Solrock"),
-        .cryId = CRY_SOLROCK,
-        .natDexNum = NATIONAL_DEX_SOLROCK,
+        .speciesName = _("Deltamon"),
+        .cryId = CRY_DELTAMON,
+        .natDexNum = NATIONAL_DEX_DELTAMON,
         .categoryName = _("Meteorite"),
         .height = 12,
         .weight = 1540,
         .description = COMPOUND_STRING(
             "Solar energy is the source of this \n"
             "Pokémon's power. On sunny days, groups of\n"
-            "Solrock line up facing the sun and absorb\n"
+            "Deltamon line up facing the sun and absorb\n"
             "its light."),
         .pokemonScale = 328,
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Solrock,
+        .frontPic = gMonFrontPic_Deltamon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Solrock,
+        .frontAnimFrames = sAnims_Deltamon,
         .frontAnimId = ANIM_ROTATE_TO_SIDES_TWICE,
         .enemyMonElevation = 4,
-        .backPic = gMonBackPic_Solrock,
+        .backPic = gMonBackPic_Deltamon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Solrock,
-        .shinyPalette = gMonShinyPalette_Solrock,
-        .iconSprite = gMonIcon_Solrock,
+        .palette = gMonPalette_Deltamon,
+        .shinyPalette = gMonShinyPalette_Deltamon,
+        .iconSprite = gMonIcon_Deltamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Solrock)
-        .levelUpLearnset = sSolrockLevelUpLearnset,
-        .teachableLearnset = sSolrockTeachableLearnset,
+        FOOTPRINT(Deltamon)
+        .levelUpLearnset = sDeltamonLevelUpLearnset,
+        .teachableLearnset = sDeltamonTeachableLearnset,
     },
-#endif //P_FAMILY_SOLROCK
+#endif //P_FAMILY_DELTAMON
 
 #if P_FAMILY_BARBOACH
     [SPECIES_BARBOACH] =

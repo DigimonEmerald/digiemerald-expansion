@@ -2784,14 +2784,14 @@ static const struct TrainerMon sParty_Joshua[] = {
     },
     {
     .lvl = 41,
-    .species = SPECIES_SOLROCK,
+    .species = SPECIES_DELTAMON,
     }
 };
 
 static const struct TrainerMon sParty_Cameron1[] = {
     {
     .lvl = 31,
-    .species = SPECIES_SOLROCK,
+    .species = SPECIES_DELTAMON,
     }
 };
 
@@ -2804,7 +2804,7 @@ static const struct TrainerMon sParty_Cameron2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 33,
-    .species = SPECIES_SOLROCK,
+    .species = SPECIES_DELTAMON,
     }
 };
 
@@ -2817,7 +2817,7 @@ static const struct TrainerMon sParty_Cameron3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 38,
-    .species = SPECIES_SOLROCK,
+    .species = SPECIES_DELTAMON,
     }
 };
 
@@ -2830,7 +2830,7 @@ static const struct TrainerMon sParty_Cameron4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 41,
-    .species = SPECIES_SOLROCK,
+    .species = SPECIES_DELTAMON,
     }
 };
 
@@ -2838,7 +2838,7 @@ static const struct TrainerMon sParty_Cameron5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 45,
-    .species = SPECIES_SOLROCK,
+    .species = SPECIES_DELTAMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -3408,7 +3408,7 @@ static const struct TrainerMon sParty_TateAndLiza1[] = {
     {
     .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
     .lvl = 42,
-    .species = SPECIES_SOLROCK,
+    .species = SPECIES_DELTAMON,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER}
     }
@@ -6712,7 +6712,7 @@ static const struct TrainerMon sParty_Mitchell[] = {
     },
     {
     .lvl = 43,
-    .species = SPECIES_SOLROCK,
+    .species = SPECIES_DELTAMON,
     .moves = {MOVE_EXPLOSION, MOVE_REFLECT, MOVE_LIGHT_SCREEN, MOVE_SHADOW_BALL}
     }
 };
@@ -10648,7 +10648,7 @@ static const struct TrainerMon sParty_TateAndLiza2[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 50,
-    .species = SPECIES_SOLROCK,
+    .species = SPECIES_DELTAMON,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER}
     }
@@ -10693,7 +10693,7 @@ static const struct TrainerMon sParty_TateAndLiza3[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 55,
-    .species = SPECIES_SOLROCK,
+    .species = SPECIES_DELTAMON,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER}
     }
@@ -10738,7 +10738,7 @@ static const struct TrainerMon sParty_TateAndLiza4[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 60,
-    .species = SPECIES_SOLROCK,
+    .species = SPECIES_DELTAMON,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER}
     }
@@ -10783,7 +10783,7 @@ static const struct TrainerMon sParty_TateAndLiza5[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 65,
-    .species = SPECIES_SOLROCK,
+    .species = SPECIES_DELTAMON,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_PSYCHIC, MOVE_FLAMETHROWER}
     }

@@ -400,7 +400,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [1] =
                     {
-                        .species = SPECIES_SOLROCK,
+                        .species = SPECIES_DELTAMON,
                         .heldItem = ITEM_FOCUS_BAND,
                         .moves = {MOVE_PSYCHIC, MOVE_FLAMETHROWER, MOVE_ROCK_SLIDE, MOVE_CALM_MIND},
                         .hpEV = 200,
@@ -416,7 +416,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 24,
                         .abilityNum = 0,
                         .personality = 0xF,
-                        .nickname = _("SOLROCK"),
+                        .nickname = _("DELTAMON"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                     [2] =
