@@ -2891,7 +2891,7 @@ const u16 gEggMoves[] = {
         MOVE_DRAGON_HAMMER),
 #endif //P_FAMILY_ELEPHANMON
 
-#if P_FAMILY_CHIMECHO
+#if P_FAMILY_EOSMON_CHAMPION
 #if P_GEN_4_CROSS_EVOS
     egg_moves(CHINGLING,
         MOVE_DISABLE,
@@ -2904,7 +2904,7 @@ const u16 gEggMoves[] = {
         MOVE_SKILL_SWAP,
         MOVE_COSMIC_POWER),
 #endif //P_GEN_4_CROSS_EVOS
-    egg_moves(CHIMECHO,
+    egg_moves(EOSMON_CHAMPION,
         MOVE_DISABLE,
         MOVE_CURSE,
         MOVE_HYPNOSIS,
@@ -2916,7 +2916,7 @@ const u16 gEggMoves[] = {
         MOVE_COSMIC_POWER,
         MOVE_CRAFTY_SHIELD,
         MOVE_PERISH_SONG),
-#endif //P_FAMILY_CHIMECHO
+#endif //P_FAMILY_EOSMON_CHAMPION
 
 #if P_FAMILY_ABSOL
     egg_moves(ABSOL,

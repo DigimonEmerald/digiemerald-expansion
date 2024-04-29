@@ -980,12 +980,12 @@ gCryTable::
 .if P_FAMILY_ELEPHANMON == TRUE
 	cry Cry_Elephanmon
 .endif @ P_FAMILY_ELEPHANMON
-.if P_FAMILY_CHIMECHO == TRUE
+.if P_FAMILY_EOSMON_CHAMPION == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Chingling
 .endif @ P_GEN_4_CROSS_EVOS
-	cry Cry_Chimecho
-.endif @ P_FAMILY_CHIMECHO
+	cry Cry_Eosmon_champion
+.endif @ P_FAMILY_EOSMON_CHAMPION
 .if P_FAMILY_ABSOL == TRUE
 	cry Cry_Absol
 .if P_MEGA_EVOLUTIONS == TRUE
@@ -3406,12 +3406,12 @@ gCryTable_Reverse::
 .if P_FAMILY_ELEPHANMON == TRUE
 	cry_reverse Cry_Elephanmon
 .endif @ P_FAMILY_ELEPHANMON
-.if P_FAMILY_CHIMECHO == TRUE
+.if P_FAMILY_EOSMON_CHAMPION == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Chingling
 .endif @ P_GEN_4_CROSS_EVOS
-	cry_reverse Cry_Chimecho
-.endif @ P_FAMILY_CHIMECHO
+	cry_reverse Cry_Eosmon_champion
+.endif @ P_FAMILY_EOSMON_CHAMPION
 .if P_FAMILY_ABSOL == TRUE
 	cry_reverse Cry_Absol
 .if P_MEGA_EVOLUTIONS == TRUE

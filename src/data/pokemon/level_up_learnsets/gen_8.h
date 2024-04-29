@@ -9504,7 +9504,7 @@ static const struct LevelUpMove sElephanmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_ELEPHANMON
 
-#if P_FAMILY_CHIMECHO
+#if P_FAMILY_EOSMON_CHAMPION
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sChinglingLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WRAP),
@@ -9519,7 +9519,7 @@ static const struct LevelUpMove sChinglingLevelUpLearnset[] = {
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const struct LevelUpMove sChimechoLevelUpLearnset[] = {
+static const struct LevelUpMove sEosmon_championLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HEALING_WISH),
     LEVEL_UP_MOVE( 1, MOVE_WRAP),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
@@ -9543,7 +9543,7 @@ static const struct LevelUpMove sChimechoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(57, MOVE_HEALING_WISH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CHIMECHO
+#endif //P_FAMILY_EOSMON_CHAMPION
 
 #if P_FAMILY_ABSOL
 static const struct LevelUpMove sAbsolLevelUpLearnset[] = {

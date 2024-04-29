@@ -16732,7 +16732,7 @@ static const u16 sElephanmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_ELEPHANMON
 
-#if P_FAMILY_CHIMECHO
+#if P_FAMILY_EOSMON_CHAMPION
 #if P_GEN_4_CROSS_EVOS
 static const u16 sChinglingTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -16770,7 +16770,7 @@ static const u16 sChinglingTeachableLearnset[] = {
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const u16 sChimechoTeachableLearnset[] = {
+static const u16 sEosmon_championTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
@@ -16805,7 +16805,7 @@ static const u16 sChimechoTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CHIMECHO
+#endif //P_FAMILY_EOSMON_CHAMPION
 
 #if P_FAMILY_ABSOL
 static const u16 sAbsolTeachableLearnset[] = {

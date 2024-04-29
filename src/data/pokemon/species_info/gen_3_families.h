@@ -7484,7 +7484,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_ELEPHANMON
 
-#if P_FAMILY_CHIMECHO
+#if P_FAMILY_EOSMON_CHAMPION
 #if P_GEN_4_CROSS_EVOS
     [SPECIES_CHINGLING] =
     {
@@ -7537,11 +7537,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Chingling)
         .levelUpLearnset = sChinglingLevelUpLearnset,
         .teachableLearnset = sChinglingTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP_NIGHT, 0, SPECIES_CHIMECHO}),
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP_NIGHT, 0, SPECIES_EOSMON_CHAMPION}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 
-    [SPECIES_CHIMECHO] =
+    [SPECIES_EOSMON_CHAMPION] =
     {
         .baseHP        = P_UPDATED_STATS >= GEN_7 ? 75 : 65,
         .baseAttack    = 50,
@@ -7568,9 +7568,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Chimecho"),
-        .cryId = CRY_CHIMECHO,
-        .natDexNum = NATIONAL_DEX_CHIMECHO,
+        .speciesName = _("Eosmon_champion"),
+        .cryId = CRY_EOSMON_CHAMPION,
+        .natDexNum = NATIONAL_DEX_EOSMON_CHAMPION,
         .categoryName = _("Wind Chime"),
         .height = 6,
         .weight = 10,
@@ -7583,25 +7583,25 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Chimecho,
+        .frontPic = gMonFrontPic_Eosmon_champion,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Chimecho,
+        .frontAnimFrames = sAnims_Eosmon_champion,
         .frontAnimId = ANIM_H_SLIDE_WOBBLE,
         .enemyMonElevation = 16,
-        .backPic = gMonBackPic_Chimecho,
+        .backPic = gMonBackPic_Eosmon_champion,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Chimecho,
-        .shinyPalette = gMonShinyPalette_Chimecho,
-        .iconSprite = gMonIcon_Chimecho,
+        .palette = gMonPalette_Eosmon_champion,
+        .shinyPalette = gMonShinyPalette_Eosmon_champion,
+        .iconSprite = gMonIcon_Eosmon_champion,
         .iconPalIndex = 0,
-        FOOTPRINT(Chimecho)
-        .levelUpLearnset = sChimechoLevelUpLearnset,
-        .teachableLearnset = sChimechoTeachableLearnset,
+        FOOTPRINT(Eosmon_champion)
+        .levelUpLearnset = sEosmon_championLevelUpLearnset,
+        .teachableLearnset = sEosmon_championTeachableLearnset,
     },
-#endif //P_FAMILY_CHIMECHO
+#endif //P_FAMILY_EOSMON_CHAMPION
 
 #if P_FAMILY_ABSOL
     [SPECIES_ABSOL] =

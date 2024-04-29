@@ -2676,7 +2676,7 @@ Cry_Elephanmon::
 	.incbin "sound/direct_sound_samples/cries/elephanmon.bin"
 .endif @ P_FAMILY_ELEPHANMON
 
-.if P_FAMILY_CHIMECHO == TRUE
+.if P_FAMILY_EOSMON_CHAMPION == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
 Cry_Chingling::
@@ -2684,9 +2684,9 @@ Cry_Chingling::
 .endif @ P_GEN_4_CROSS_EVOS
 
 	.align 2
-Cry_Chimecho::
-	.incbin "sound/direct_sound_samples/cries/chimecho.bin"
-.endif @ P_FAMILY_CHIMECHO
+Cry_Eosmon_champion::
+	.incbin "sound/direct_sound_samples/cries/eosmon_champion.bin"
+.endif @ P_FAMILY_EOSMON_CHAMPION
 
 .if P_FAMILY_ABSOL == TRUE
 	.align 2

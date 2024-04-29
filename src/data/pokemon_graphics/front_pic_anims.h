@@ -4827,7 +4827,7 @@ static const union AnimCmd sAnim_Elephanmon_1[] =
 };
 #endif //P_FAMILY_ELEPHANMON
 
-#if P_FAMILY_CHIMECHO
+#if P_FAMILY_EOSMON_CHAMPION
 #if P_GEN_4_CROSS_EVOS
 static const union AnimCmd sAnim_Chingling_1[] =
 {
@@ -4843,7 +4843,7 @@ static const union AnimCmd sAnim_Chingling_1[] =
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const union AnimCmd sAnim_Chimecho_1[] =
+static const union AnimCmd sAnim_Eosmon_champion_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4856,7 +4856,7 @@ static const union AnimCmd sAnim_Chimecho_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_CHIMECHO
+#endif //P_FAMILY_EOSMON_CHAMPION
 
 #if P_FAMILY_ABSOL
 static const union AnimCmd sAnim_Absol_1[] =
@@ -11281,12 +11281,12 @@ SINGLE_ANIMATION(Dusknoir);
 #if P_FAMILY_ELEPHANMON
 SINGLE_ANIMATION(Elephanmon);
 #endif //P_FAMILY_ELEPHANMON
-#if P_FAMILY_CHIMECHO
+#if P_FAMILY_EOSMON_CHAMPION
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Chingling);
 #endif //P_GEN_4_CROSS_EVOS
-SINGLE_ANIMATION(Chimecho);
-#endif //P_FAMILY_CHIMECHO
+SINGLE_ANIMATION(Eosmon_champion);
+#endif //P_FAMILY_EOSMON_CHAMPION
 #if P_FAMILY_ABSOL
 SINGLE_ANIMATION(Absol);
 #if P_MEGA_EVOLUTIONS
