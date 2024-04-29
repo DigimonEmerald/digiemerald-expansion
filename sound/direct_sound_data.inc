@@ -2688,17 +2688,17 @@ Cry_Eosmon_champion::
 	.incbin "sound/direct_sound_samples/cries/eosmon_champion.bin"
 .endif @ P_FAMILY_EOSMON_CHAMPION
 
-.if P_FAMILY_ABSOL == TRUE
+.if P_FAMILY_EXERMON == TRUE
 	.align 2
-Cry_Absol::
-	.incbin "sound/direct_sound_samples/cries/absol.bin"
+Cry_Exermon::
+	.incbin "sound/direct_sound_samples/cries/exermon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_AbsolMega::
-	.incbin "sound/direct_sound_samples/cries/absol_mega.bin"
+Cry_ExermonMega::
+	.incbin "sound/direct_sound_samples/cries/exermon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_ABSOL
+.endif @ P_FAMILY_EXERMON
 
 .if P_FAMILY_SNORUNT == TRUE
 	.align 2

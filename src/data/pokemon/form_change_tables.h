@@ -390,14 +390,14 @@ static const struct FormChange sDorulumonFormChangeTable[] = {
 };
 #endif //P_FAMILY_DORUGAMON
 
-#if P_FAMILY_ABSOL
-static const struct FormChange sAbsolFormChangeTable[] = {
+#if P_FAMILY_EXERMON
+static const struct FormChange sExermonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_ABSOL_MEGA, ITEM_ABSOLITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_EXERMON_MEGA, ITEM_EXERMONITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_ABSOL
+#endif //P_FAMILY_EXERMON
 
 #if P_FAMILY_SNORUNT
 static const struct FormChange sGlalieFormChangeTable[] = {

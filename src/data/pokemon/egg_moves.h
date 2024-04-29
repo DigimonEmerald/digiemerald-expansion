@@ -2918,8 +2918,8 @@ const u16 gEggMoves[] = {
         MOVE_PERISH_SONG),
 #endif //P_FAMILY_EOSMON_CHAMPION
 
-#if P_FAMILY_ABSOL
-    egg_moves(ABSOL,
+#if P_FAMILY_EXERMON
+    egg_moves(EXERMON,
         MOVE_BATON_PASS,
         MOVE_FEINT_ATTACK,
         MOVE_DOUBLE_EDGE,
@@ -2935,7 +2935,7 @@ const u16 gEggMoves[] = {
         MOVE_HEX,
         MOVE_PERISH_SONG,
         MOVE_PLAY_ROUGH),
-#endif //P_FAMILY_ABSOL
+#endif //P_FAMILY_EXERMON
 
 #if P_FAMILY_SNORUNT
     egg_moves(SNORUNT,

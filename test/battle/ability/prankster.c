@@ -193,12 +193,12 @@ SINGLE_BATTLE_TEST("Prankster-affected moves which are reflected by Magic Coat c
 SINGLE_BATTLE_TEST("Prankster-affected moves can still be bounced back by a Dark-type with Magic Bounce")
 {
     GIVEN {
-        PLAYER(SPECIES_ABSOL) { Item(ITEM_ABSOLITE); }
+        PLAYER(SPECIES_EXERMON) { Item(ITEM_EXERMONITE); }
         OPPONENT(SPECIES_BUCCHIEMON_GREEN) { Ability(ABILITY_PRANKSTER); }
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, megaEvolve: TRUE); MOVE(opponent, MOVE_CONFUSE_RAY); }
     } SCENE {
-        MESSAGE("Foe Bucchiemon_green's Confuse Ray was bounced back by Absol's Magic Bounce!");
+        MESSAGE("Foe Bucchiemon_green's Confuse Ray was bounced back by Exermon's Magic Bounce!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);
     }
 }
@@ -206,12 +206,12 @@ SINGLE_BATTLE_TEST("Prankster-affected moves can still be bounced back by a Dark
 SINGLE_BATTLE_TEST("Prankster-affected moves that are bounced back by Magic Bounce can affect Dark-type Pokémon")
 {
     GIVEN {
-        PLAYER(SPECIES_ABSOL) { Item(ITEM_ABSOLITE); }
+        PLAYER(SPECIES_EXERMON) { Item(ITEM_EXERMONITE); }
         OPPONENT(SPECIES_LALAMON) { Ability(ABILITY_PRANKSTER); }
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, megaEvolve: TRUE); MOVE(opponent, MOVE_CONFUSE_RAY); }
     } SCENE {
-        MESSAGE("Foe Lalamon's Confuse Ray was bounced back by Absol's Magic Bounce!");
+        MESSAGE("Foe Lalamon's Confuse Ray was bounced back by Exermon's Magic Bounce!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);
         MESSAGE("Foe Lalamon became confused!");
     }

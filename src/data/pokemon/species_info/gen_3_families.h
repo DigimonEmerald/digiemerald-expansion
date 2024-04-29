@@ -7603,8 +7603,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_EOSMON_CHAMPION
 
-#if P_FAMILY_ABSOL
-    [SPECIES_ABSOL] =
+#if P_FAMILY_EXERMON
+    [SPECIES_EXERMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 130,
@@ -7624,9 +7624,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .abilities = { ABILITY_PRESSURE, ABILITY_SUPER_LUCK, ABILITY_JUSTIFIED },
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
-        .speciesName = _("Absol"),
-        .cryId = CRY_ABSOL,
-        .natDexNum = NATIONAL_DEX_ABSOL,
+        .speciesName = _("Exermon"),
+        .cryId = CRY_EXERMON,
+        .natDexNum = NATIONAL_DEX_EXERMON,
         .categoryName = _("Disaster"),
         .height = 12,
         .weight = 470,
@@ -7639,29 +7639,29 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Absol,
+        .frontPic = gMonFrontPic_Exermon,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_Absol,
+        .frontAnimFrames = sAnims_Exermon,
         .frontAnimId = ANIM_CIRCULAR_VIBRATE,
         .frontAnimDelay = 45,
-        .backPic = gMonBackPic_Absol,
+        .backPic = gMonBackPic_Exermon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Absol,
-        .shinyPalette = gMonShinyPalette_Absol,
-        .iconSprite = gMonIcon_Absol,
+        .palette = gMonPalette_Exermon,
+        .shinyPalette = gMonShinyPalette_Exermon,
+        .iconSprite = gMonIcon_Exermon,
         .iconPalIndex = 0,
-        FOOTPRINT(Absol)
-        .levelUpLearnset = sAbsolLevelUpLearnset,
-        .teachableLearnset = sAbsolTeachableLearnset,
-        .formSpeciesIdTable = sAbsolFormSpeciesIdTable,
-        .formChangeTable = sAbsolFormChangeTable,
+        FOOTPRINT(Exermon)
+        .levelUpLearnset = sExermonLevelUpLearnset,
+        .teachableLearnset = sExermonTeachableLearnset,
+        .formSpeciesIdTable = sExermonFormSpeciesIdTable,
+        .formChangeTable = sExermonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_ABSOL_MEGA] =
+    [SPECIES_EXERMON_MEGA] =
     {
         .baseHP        = 65,
         .baseAttack    = 150,
@@ -7681,9 +7681,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .abilities = { ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE, ABILITY_MAGIC_BOUNCE },
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
-        .speciesName = _("Absol"),
-        .cryId = CRY_ABSOL_MEGA,
-        .natDexNum = NATIONAL_DEX_ABSOL,
+        .speciesName = _("Exermon"),
+        .cryId = CRY_EXERMON_MEGA,
+        .natDexNum = NATIONAL_DEX_EXERMON,
         .categoryName = _("Disaster"),
         .height = 12,
         .weight = 490,
@@ -7696,28 +7696,28 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_AbsolMega,
+        .frontPic = gMonFrontPic_ExermonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
-        .frontAnimFrames = sAnims_AbsolMega,
+        .frontAnimFrames = sAnims_ExermonMega,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_AbsolMega,
+        .backPic = gMonBackPic_ExermonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_AbsolMega,
-        .shinyPalette = gMonShinyPalette_AbsolMega,
-        .iconSprite = gMonIcon_AbsolMega,
+        .palette = gMonPalette_ExermonMega,
+        .shinyPalette = gMonShinyPalette_ExermonMega,
+        .iconSprite = gMonIcon_ExermonMega,
         .iconPalIndex = 0,
-        FOOTPRINT(Absol)
+        FOOTPRINT(Exermon)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sAbsolLevelUpLearnset,
-        .teachableLearnset = sAbsolTeachableLearnset,
-        .formSpeciesIdTable = sAbsolFormSpeciesIdTable,
-        .formChangeTable = sAbsolFormChangeTable,
+        .levelUpLearnset = sExermonLevelUpLearnset,
+        .teachableLearnset = sExermonTeachableLearnset,
+        .formSpeciesIdTable = sExermonFormSpeciesIdTable,
+        .formChangeTable = sExermonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_ABSOL
+#endif //P_FAMILY_EXERMON
 
 #if P_FAMILY_SNORUNT
     [SPECIES_SNORUNT] =

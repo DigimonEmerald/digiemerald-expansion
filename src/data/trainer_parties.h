@@ -3084,7 +3084,7 @@ static const struct TrainerMon sParty_Sidney[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 49,
-    .species = SPECIES_ABSOL,
+    .species = SPECIES_EXERMON,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_AERIAL_ACE, MOVE_ROCK_SLIDE, MOVE_SWORDS_DANCE, MOVE_SLASH}
     }
@@ -6209,7 +6209,7 @@ static const struct TrainerMon sParty_Annika[] = {
 static const struct TrainerMon sParty_Jazmyn[] = {
     {
     .lvl = 27,
-    .species = SPECIES_ABSOL,
+    .species = SPECIES_EXERMON,
     }
 };
 
@@ -6883,7 +6883,7 @@ static const struct TrainerMon sParty_Halle[] = {
     },
     {
     .lvl = 43,
-    .species = SPECIES_ABSOL,
+    .species = SPECIES_EXERMON,
     }
 };
 

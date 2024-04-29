@@ -4858,8 +4858,8 @@ static const union AnimCmd sAnim_Eosmon_champion_1[] =
 };
 #endif //P_FAMILY_EOSMON_CHAMPION
 
-#if P_FAMILY_ABSOL
-static const union AnimCmd sAnim_Absol_1[] =
+#if P_FAMILY_EXERMON
+static const union AnimCmd sAnim_Exermon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4870,9 +4870,9 @@ static const union AnimCmd sAnim_Absol_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(AbsolMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(ExermonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_ABSOL
+#endif //P_FAMILY_EXERMON
 
 #if P_FAMILY_SNORUNT
 static const union AnimCmd sAnim_Snorunt_1[] =
@@ -11287,12 +11287,12 @@ SINGLE_ANIMATION(Chingling);
 #endif //P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Eosmon_champion);
 #endif //P_FAMILY_EOSMON_CHAMPION
-#if P_FAMILY_ABSOL
-SINGLE_ANIMATION(Absol);
+#if P_FAMILY_EXERMON
+SINGLE_ANIMATION(Exermon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(AbsolMega);
+SINGLE_ANIMATION(ExermonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_ABSOL
+#endif //P_FAMILY_EXERMON
 #if P_FAMILY_SNORUNT
 SINGLE_ANIMATION(Snorunt);
 SINGLE_ANIMATION(Glalie);

@@ -361,7 +361,7 @@
 #define SPECIES_EBIDRAMON                                356
 #define SPECIES_ELEPHANMON                                 357
 #define SPECIES_EOSMON_CHAMPION                                358
-#define SPECIES_ABSOL                                   359
+#define SPECIES_EXERMON                                   359
 #define SPECIES_WYNAUT                                  360
 #define SPECIES_SNORUNT                                 361
 #define SPECIES_GLALIE                                  362
@@ -998,7 +998,7 @@
 #define SPECIES_CITRAMON_MEGA                           937
 #define SPECIES_DARMAILMON_MEGA                            938
 #define SPECIES_DORULUMON_MEGA                            939
-#define SPECIES_ABSOL_MEGA                              940
+#define SPECIES_EXERMON_MEGA                              940
 #define SPECIES_GLALIE_MEGA                             941
 #define SPECIES_SALAMENCE_MEGA                          942
 #define SPECIES_METAGROSS_MEGA                          943

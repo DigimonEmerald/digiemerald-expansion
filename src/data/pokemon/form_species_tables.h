@@ -889,15 +889,15 @@ static const u16 sDorulumonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_DORUGAMON
 
-#if P_FAMILY_ABSOL
-static const u16 sAbsolFormSpeciesIdTable[] = {
-    SPECIES_ABSOL,
+#if P_FAMILY_EXERMON
+static const u16 sExermonFormSpeciesIdTable[] = {
+    SPECIES_EXERMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_ABSOL_MEGA,
+    SPECIES_EXERMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_ABSOL
+#endif //P_FAMILY_EXERMON
 
 #if P_FAMILY_SNORUNT
 static const u16 sGlalieFormSpeciesIdTable[] = {

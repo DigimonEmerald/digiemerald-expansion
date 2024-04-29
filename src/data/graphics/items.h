@@ -916,8 +916,8 @@ const u32 gItemIconPalette_Darmailmonnite[] = INCBIN_U32("graphics/items/icon_pa
 const u32 gItemIcon_Banettite[] = INCBIN_U32("graphics/items/icons/banettite.4bpp.lz");
 const u32 gItemIconPalette_Banettite[] = INCBIN_U32("graphics/items/icon_palettes/banettite.gbapal.lz");
 
-const u32 gItemIcon_Absolite[] = INCBIN_U32("graphics/items/icons/absolite.4bpp.lz");
-const u32 gItemIconPalette_Absolite[] = INCBIN_U32("graphics/items/icon_palettes/absolite.gbapal.lz");
+const u32 gItemIcon_Exermonite[] = INCBIN_U32("graphics/items/icons/exermonite.4bpp.lz");
+const u32 gItemIconPalette_Exermonite[] = INCBIN_U32("graphics/items/icon_palettes/exermonite.gbapal.lz");
 
 const u32 gItemIcon_Glalitite[] = INCBIN_U32("graphics/items/icons/glalitite.4bpp.lz");
 const u32 gItemIconPalette_Glalitite[] = INCBIN_U32("graphics/items/icon_palettes/glalitite.gbapal.lz");

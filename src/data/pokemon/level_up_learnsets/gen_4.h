@@ -8470,8 +8470,8 @@ static const struct LevelUpMove sEosmon_championLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_EOSMON_CHAMPION
 
-#if P_FAMILY_ABSOL
-static const struct LevelUpMove sAbsolLevelUpLearnset[] = {
+#if P_FAMILY_EXERMONON
+static const struct LevelUpMove sExermononLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FEINT),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 4, MOVE_LEER),
@@ -8492,7 +8492,7 @@ static const struct LevelUpMove sAbsolLevelUpLearnset[] = {
     LEVEL_UP_MOVE(65, MOVE_PERISH_SONG),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_ABSOL
+#endif //P_FAMILY_EXERMONON
 
 #if P_FAMILY_SNORUNT
 static const struct LevelUpMove sSnoruntLevelUpLearnset[] = {

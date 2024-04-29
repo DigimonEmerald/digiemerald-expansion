@@ -5157,14 +5157,14 @@ const struct Item gItemsInfo[] =
         .flingPower = 80,
     },
 
-    [ITEM_ABSOLITE] =
+    [ITEM_EXERMONITE] =
     {
-        .name = _("Absolite"),
+        .name = _("Exermonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Absol to Mega\n"
+            "Exermon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,

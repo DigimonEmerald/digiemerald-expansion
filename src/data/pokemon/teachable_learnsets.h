@@ -16807,8 +16807,8 @@ static const u16 sEosmon_championTeachableLearnset[] = {
 };
 #endif //P_FAMILY_EOSMON_CHAMPION
 
-#if P_FAMILY_ABSOL
-static const u16 sAbsolTeachableLearnset[] = {
+#if P_FAMILY_EXERMON
+static const u16 sExermonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -16859,7 +16859,7 @@ static const u16 sAbsolTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ABSOL
+#endif //P_FAMILY_EXERMON
 
 #if P_FAMILY_SNORUNT
 static const u16 sSnoruntTeachableLearnset[] = {

@@ -5237,24 +5237,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_EOSMON_CHAMPION
 
-#if P_FAMILY_ABSOL
-    const u32 gMonFrontPic_Absol[] = INCBIN_U32("graphics/pokemon/absol/anim_front.4bpp.lz");
-    const u32 gMonPalette_Absol[] = INCBIN_U32("graphics/pokemon/absol/normal.gbapal.lz");
-    const u32 gMonBackPic_Absol[] = INCBIN_U32("graphics/pokemon/absol/back.4bpp.lz");
-    const u32 gMonShinyPalette_Absol[] = INCBIN_U32("graphics/pokemon/absol/shiny.gbapal.lz");
-    const u8 gMonIcon_Absol[] = INCBIN_U8("graphics/pokemon/absol/icon.4bpp");
+#if P_FAMILY_EXERMON
+    const u32 gMonFrontPic_Exermon[] = INCBIN_U32("graphics/pokemon/exermon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Exermon[] = INCBIN_U32("graphics/pokemon/exermon/normal.gbapal.lz");
+    const u32 gMonBackPic_Exermon[] = INCBIN_U32("graphics/pokemon/exermon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Exermon[] = INCBIN_U32("graphics/pokemon/exermon/shiny.gbapal.lz");
+    const u8 gMonIcon_Exermon[] = INCBIN_U8("graphics/pokemon/exermon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Absol[] = INCBIN_U8("graphics/pokemon/absol/footprint.1bpp");
+    const u8 gMonFootprint_Exermon[] = INCBIN_U8("graphics/pokemon/exermon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_AbsolMega[] = INCBIN_U32("graphics/pokemon/absol/mega/front.4bpp.lz");
-    const u32 gMonPalette_AbsolMega[] = INCBIN_U32("graphics/pokemon/absol/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_AbsolMega[] = INCBIN_U32("graphics/pokemon/absol/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_AbsolMega[] = INCBIN_U32("graphics/pokemon/absol/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_AbsolMega[] = INCBIN_U8("graphics/pokemon/absol/mega/icon.4bpp");
+    const u32 gMonFrontPic_ExermonMega[] = INCBIN_U32("graphics/pokemon/exermon/mega/front.4bpp.lz");
+    const u32 gMonPalette_ExermonMega[] = INCBIN_U32("graphics/pokemon/exermon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_ExermonMega[] = INCBIN_U32("graphics/pokemon/exermon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_ExermonMega[] = INCBIN_U32("graphics/pokemon/exermon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_ExermonMega[] = INCBIN_U8("graphics/pokemon/exermon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_ABSOL
+#endif //P_FAMILY_EXERMON
 
 #if P_FAMILY_SNORUNT
     const u32 gMonFrontPic_Snorunt[] = INCBIN_U32("graphics/pokemon/snorunt/anim_front.4bpp.lz");

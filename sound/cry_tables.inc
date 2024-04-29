@@ -986,12 +986,12 @@ gCryTable::
 .endif @ P_GEN_4_CROSS_EVOS
 	cry Cry_Eosmon_champion
 .endif @ P_FAMILY_EOSMON_CHAMPION
-.if P_FAMILY_ABSOL == TRUE
-	cry Cry_Absol
+.if P_FAMILY_EXERMON == TRUE
+	cry Cry_Exermon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_AbsolMega
+	cry Cry_ExermonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_ABSOL
+.endif @ P_FAMILY_EXERMON
 .if P_FAMILY_SNORUNT == TRUE
 	cry Cry_Snorunt
 	cry Cry_Glalie
@@ -3412,12 +3412,12 @@ gCryTable_Reverse::
 .endif @ P_GEN_4_CROSS_EVOS
 	cry_reverse Cry_Eosmon_champion
 .endif @ P_FAMILY_EOSMON_CHAMPION
-.if P_FAMILY_ABSOL == TRUE
-	cry_reverse Cry_Absol
+.if P_FAMILY_EXERMON == TRUE
+	cry_reverse Cry_Exermon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_AbsolMega
+	cry_reverse Cry_ExermonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_ABSOL
+.endif @ P_FAMILY_EXERMON
 .if P_FAMILY_SNORUNT == TRUE
 	cry_reverse Cry_Snorunt
 	cry_reverse Cry_Glalie
