@@ -910,10 +910,10 @@ gCryTable::
 	cry Cry_Cyclonemon
 	cry Cry_Damemon_fusion
 .endif @ P_FAMILY_COREDRAMON_GREEN
-.if P_FAMILY_CACNEA == TRUE
-	cry Cry_Cacnea
+.if P_FAMILY_DARCMON == TRUE
+	cry Cry_Darcmon
 	cry Cry_Cacturne
-.endif @ P_FAMILY_CACNEA
+.endif @ P_FAMILY_DARCMON
 .if P_FAMILY_SWABLU == TRUE
 	cry Cry_Swablu
 	cry Cry_Altaria
@@ -3336,10 +3336,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Cyclonemon
 	cry_reverse Cry_Damemon_fusion
 .endif @ P_FAMILY_COREDRAMON_GREEN
-.if P_FAMILY_CACNEA == TRUE
-	cry_reverse Cry_Cacnea
+.if P_FAMILY_DARCMON == TRUE
+	cry_reverse Cry_Darcmon
 	cry_reverse Cry_Cacturne
-.endif @ P_FAMILY_CACNEA
+.endif @ P_FAMILY_DARCMON
 .if P_FAMILY_SWABLU == TRUE
 	cry_reverse Cry_Swablu
 	cry_reverse Cry_Altaria

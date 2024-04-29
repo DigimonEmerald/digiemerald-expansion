@@ -4888,14 +4888,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_COREDRAMON_GREEN
 
-#if P_FAMILY_CACNEA
-    const u32 gMonFrontPic_Cacnea[] = INCBIN_U32("graphics/pokemon/cacnea/anim_front.4bpp.lz");
-    const u32 gMonPalette_Cacnea[] = INCBIN_U32("graphics/pokemon/cacnea/normal.gbapal.lz");
-    const u32 gMonBackPic_Cacnea[] = INCBIN_U32("graphics/pokemon/cacnea/back.4bpp.lz");
-    const u32 gMonShinyPalette_Cacnea[] = INCBIN_U32("graphics/pokemon/cacnea/shiny.gbapal.lz");
-    const u8 gMonIcon_Cacnea[] = INCBIN_U8("graphics/pokemon/cacnea/icon.4bpp");
+#if P_FAMILY_DARCMON
+    const u32 gMonFrontPic_Darcmon[] = INCBIN_U32("graphics/pokemon/darcmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Darcmon[] = INCBIN_U32("graphics/pokemon/darcmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Darcmon[] = INCBIN_U32("graphics/pokemon/darcmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Darcmon[] = INCBIN_U32("graphics/pokemon/darcmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Darcmon[] = INCBIN_U8("graphics/pokemon/darcmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Cacnea[] = INCBIN_U8("graphics/pokemon/cacnea/footprint.1bpp");
+    const u8 gMonFootprint_Darcmon[] = INCBIN_U8("graphics/pokemon/darcmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Cacturne[] = INCBIN_U32("graphics/pokemon/cacturne/anim_front.4bpp.lz");
@@ -4908,7 +4908,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_CacturneF[] = INCBIN_U32("graphics/pokemon/cacturne/anim_frontf.4bpp.lz");
-#endif //P_FAMILY_CACNEA
+#endif //P_FAMILY_DARCMON
 
 #if P_FAMILY_SWABLU
     const u32 gMonFrontPic_Swablu[] = INCBIN_U32("graphics/pokemon/swablu/anim_front.4bpp.lz");

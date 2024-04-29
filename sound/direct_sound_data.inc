@@ -2516,15 +2516,15 @@ Cry_Damemon_fusion::
 	.incbin "sound/direct_sound_samples/cries/damemon_fusion.bin"
 .endif @ P_FAMILY_COREDRAMON_GREEN
 
-.if P_FAMILY_CACNEA == TRUE
+.if P_FAMILY_DARCMON == TRUE
 	.align 2
-Cry_Cacnea::
-	.incbin "sound/direct_sound_samples/cries/cacnea.bin"
+Cry_Darcmon::
+	.incbin "sound/direct_sound_samples/cries/darcmon.bin"
 
 	.align 2
 Cry_Cacturne::
 	.incbin "sound/direct_sound_samples/cries/cacturne.bin"
-.endif @ P_FAMILY_CACNEA
+.endif @ P_FAMILY_DARCMON
 
 .if P_FAMILY_SWABLU == TRUE
 	.align 2

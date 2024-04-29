@@ -2670,8 +2670,8 @@ const u16 gEggMoves[] = {
         MOVE_SIGNAL_BEAM),
 #endif //P_FAMILY_COREDRAMON_GREEN
 
-#if P_FAMILY_CACNEA
-    egg_moves(CACNEA,
+#if P_FAMILY_DARCMON
+    egg_moves(DARCMON,
         MOVE_GRASS_WHISTLE,
         MOVE_ACID,
         MOVE_TEETER_DANCE,
@@ -2690,7 +2690,7 @@ const u16 gEggMoves[] = {
         MOVE_BELCH,
         MOVE_ROTOTILLER,
         MOVE_POWER_UP_PUNCH),
-#endif //P_FAMILY_CACNEA
+#endif //P_FAMILY_DARCMON
 
 #if P_FAMILY_SWABLU
     egg_moves(SWABLU,

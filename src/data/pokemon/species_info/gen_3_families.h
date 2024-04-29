@@ -5599,8 +5599,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_COREDRAMON_GREEN
 
-#if P_FAMILY_CACNEA
-    [SPECIES_CACNEA] =
+#if P_FAMILY_DARCMON
+    [SPECIES_DARCMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 85,
@@ -5620,14 +5620,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS, EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_SAND_VEIL, ABILITY_NONE, ABILITY_WATER_ABSORB },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Cacnea"),
-        .cryId = CRY_CACNEA,
-        .natDexNum = NATIONAL_DEX_CACNEA,
+        .speciesName = _("Darcmon"),
+        .cryId = CRY_DARCMON,
+        .natDexNum = NATIONAL_DEX_DARCMON,
         .categoryName = _("Cactus"),
         .height = 4,
         .weight = 513,
         .description = COMPOUND_STRING(
-            "Cacnea live in deserts with virtually no\n"
+            "Darcmon live in deserts with virtually no\n"
             "rainfall. It battles by swinging its thick,\n"
             "spiked arms. Once a year, a yellow flower\n"
             "blooms."),
@@ -5635,22 +5635,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Cacnea,
+        .frontPic = gMonFrontPic_Darcmon,
         .frontPicSize = MON_COORDS_SIZE(56, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Cacnea,
+        .frontAnimFrames = sAnims_Darcmon,
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SLOW,
-        .backPic = gMonBackPic_Cacnea,
+        .backPic = gMonBackPic_Darcmon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Cacnea,
-        .shinyPalette = gMonShinyPalette_Cacnea,
-        .iconSprite = gMonIcon_Cacnea,
+        .palette = gMonPalette_Darcmon,
+        .shinyPalette = gMonShinyPalette_Darcmon,
+        .iconSprite = gMonIcon_Darcmon,
         .iconPalIndex = 1,
-        FOOTPRINT(Cacnea)
-        .levelUpLearnset = sCacneaLevelUpLearnset,
-        .teachableLearnset = sCacneaTeachableLearnset,
+        FOOTPRINT(Darcmon)
+        .levelUpLearnset = sDarcmonLevelUpLearnset,
+        .teachableLearnset = sDarcmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_CACTURNE}),
     },
 
@@ -5709,7 +5709,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sCacturneLevelUpLearnset,
         .teachableLearnset = sCacturneTeachableLearnset,
     },
-#endif //P_FAMILY_CACNEA
+#endif //P_FAMILY_DARCMON
 
 #if P_FAMILY_SWABLU
     [SPECIES_SWABLU] =

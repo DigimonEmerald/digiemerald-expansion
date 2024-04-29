@@ -4420,8 +4420,8 @@ static const union AnimCmd sAnim_Damemon_fusion_1[] =
 };
 #endif //P_FAMILY_COREDRAMON_GREEN
 
-#if P_FAMILY_CACNEA
-static const union AnimCmd sAnim_Cacnea_1[] =
+#if P_FAMILY_DARCMON
+static const union AnimCmd sAnim_Darcmon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4446,7 +4446,7 @@ static const union AnimCmd sAnim_Cacturne_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_CACNEA
+#endif //P_FAMILY_DARCMON
 
 #if P_FAMILY_SWABLU
 static const union AnimCmd sAnim_Swablu_1[] =
@@ -11208,10 +11208,10 @@ SINGLE_ANIMATION(Coredramon_green);
 SINGLE_ANIMATION(Cyclonemon);
 SINGLE_ANIMATION(Damemon_fusion);
 #endif //P_FAMILY_COREDRAMON_GREEN
-#if P_FAMILY_CACNEA
-SINGLE_ANIMATION(Cacnea);
+#if P_FAMILY_DARCMON
+SINGLE_ANIMATION(Darcmon);
 SINGLE_ANIMATION(Cacturne);
-#endif //P_FAMILY_CACNEA
+#endif //P_FAMILY_DARCMON
 #if P_FAMILY_SWABLU
 SINGLE_ANIMATION(Swablu);
 SINGLE_ANIMATION(Altaria);

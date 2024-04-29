@@ -15639,8 +15639,8 @@ static const u16 sDamemon_fusionTeachableLearnset[] = {
 };
 #endif //P_FAMILY_COREDRAMON_GREEN
 
-#if P_FAMILY_CACNEA
-static const u16 sCacneaTeachableLearnset[] = {
+#if P_FAMILY_DARCMON
+static const u16 sDarcmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULLET_SEED,
@@ -15718,7 +15718,7 @@ static const u16 sCacturneTeachableLearnset[] = {
     MOVE_THUNDER_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CACNEA
+#endif //P_FAMILY_DARCMON
 
 #if P_FAMILY_SWABLU
 static const u16 sSwabluTeachableLearnset[] = {

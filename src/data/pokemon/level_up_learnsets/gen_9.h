@@ -8778,8 +8778,8 @@ static const struct LevelUpMove sDamemon_fusionLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_COREDRAMON_GREEN
 
-#if P_FAMILY_CACNEA
-static const struct LevelUpMove sCacneaLevelUpLearnset[] = {
+#if P_FAMILY_DARCMON
+static const struct LevelUpMove sDarcmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 4, MOVE_ABSORB),
@@ -8821,7 +8821,7 @@ static const struct LevelUpMove sCacturneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(54, MOVE_SANDSTORM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CACNEA
+#endif //P_FAMILY_DARCMON
 
 #if P_FAMILY_SWABLU
 static const struct LevelUpMove sSwabluLevelUpLearnset[] = {
