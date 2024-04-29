@@ -996,7 +996,7 @@ const u16 gPokedexOrder_Alphabetical[] =
     NATIONAL_DEX_RELEMON,
 
     NATIONAL_DEX_CHAMBLEMON,
-    NATIONAL_DEX_WAILORD,
+    NATIONAL_DEX_CHAMELEMON,
     NATIONAL_DEX_WALKING_WAKE,
     NATIONAL_DEX_WALREIN,
     NATIONAL_DEX_COTSUCOMON,
@@ -2865,7 +2865,7 @@ const u16 gPokedexOrder_Weight[] =
     // 870.8 lbs / 395.0 kg
     //NATIONAL_DEX_BLGROWLMON_MEGA,
     // 877.4 lbs / 398.0 kg
-    NATIONAL_DEX_WAILORD,
+    NATIONAL_DEX_CHAMELEMON,
     // 881.8 lbs / 400.0 kg
     NATIONAL_DEX_KODEKACMON,
     // 916.2 lbs / 415.6 kg
@@ -4301,7 +4301,7 @@ const u16 gPokedexOrder_Height[] =
     // 12m
     NATIONAL_DEX_DONDOZO,
     // 47'07" / 14.5m
-    NATIONAL_DEX_WAILORD,
+    NATIONAL_DEX_CHAMELEMON,
     // 65'07" / 20m
     NATIONAL_DEX_ETERNATUS,
     // 328'01" / 100m

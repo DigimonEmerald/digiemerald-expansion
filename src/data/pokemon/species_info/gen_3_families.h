@@ -4966,10 +4966,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Chamblemon)
         .levelUpLearnset = sChamblemonLevelUpLearnset,
         .teachableLearnset = sChamblemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_WAILORD}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_CHAMELEMON}),
     },
 
-    [SPECIES_WAILORD] =
+    [SPECIES_CHAMELEMON] =
     {
         .baseHP        = 170,
         .baseAttack    = 90,
@@ -4988,38 +4988,38 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_WATER_2),
         .abilities = { ABILITY_WATER_VEIL, ABILITY_OBLIVIOUS, ABILITY_PRESSURE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Wailord"),
-        .cryId = CRY_WAILORD,
-        .natDexNum = NATIONAL_DEX_WAILORD,
+        .speciesName = _("Chamelemon"),
+        .cryId = CRY_CHAMELEMON,
+        .natDexNum = NATIONAL_DEX_CHAMELEMON,
         .categoryName = _("Float Whale"),
         .height = 145,
         .weight = 3980,
         .description = COMPOUND_STRING(
             "It breathes through nostrils that it\n"
             "raises above the sea. By inhaling to its\n"
-            "maximum capacity, a Wailord can dive close\n"
+            "maximum capacity, a Chamelemon can dive close\n"
             "to 10,000 feet beneath the waves."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 1352,
         .trainerOffset = 18,
-        .frontPic = gMonFrontPic_Wailord,
+        .frontPic = gMonFrontPic_Chamelemon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Wailord,
+        .frontAnimFrames = sAnims_Chamelemon,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .frontAnimDelay = 10,
-        .backPic = gMonBackPic_Wailord,
+        .backPic = gMonBackPic_Chamelemon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 14,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
-        .palette = gMonPalette_Wailord,
-        .shinyPalette = gMonShinyPalette_Wailord,
-        .iconSprite = gMonIcon_Wailord,
+        .palette = gMonPalette_Chamelemon,
+        .shinyPalette = gMonShinyPalette_Chamelemon,
+        .iconSprite = gMonIcon_Chamelemon,
         .iconPalIndex = 0,
-        FOOTPRINT(Wailord)
-        .levelUpLearnset = sWailordLevelUpLearnset,
-        .teachableLearnset = sWailordTeachableLearnset,
+        FOOTPRINT(Chamelemon)
+        .levelUpLearnset = sChamelemonLevelUpLearnset,
+        .teachableLearnset = sChamelemonTeachableLearnset,
     },
 #endif //P_FAMILY_CHAMBLEMON
 

@@ -4295,7 +4295,7 @@ static const union AnimCmd sAnim_Chamblemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Wailord_1[] =
+static const union AnimCmd sAnim_Chamelemon_1[] =
 {
     ANIMCMD_FRAME(0, 26),
     ANIMCMD_FRAME(1, 48),
@@ -11184,7 +11184,7 @@ SINGLE_ANIMATION(CentarumonMega);
 #endif //P_FAMILY_CHOUMON
 #if P_FAMILY_CHAMBLEMON
 SINGLE_ANIMATION(Chamblemon);
-SINGLE_ANIMATION(Wailord);
+SINGLE_ANIMATION(Chamelemon);
 #endif //P_FAMILY_CHAMBLEMON
 #if P_FAMILY_NUMEL
 SINGLE_ANIMATION(Numel);

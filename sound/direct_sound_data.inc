@@ -2460,8 +2460,8 @@ Cry_Chamblemon::
 	.incbin "sound/direct_sound_samples/cries/chamblemon.bin"
 
 	.align 2
-Cry_Wailord::
-	.incbin "sound/direct_sound_samples/cries/wailord.bin"
+Cry_Chamelemon::
+	.incbin "sound/direct_sound_samples/cries/chamelemon.bin"
 .endif @ P_FAMILY_CHAMBLEMON
 
 .if P_FAMILY_NUMEL == TRUE

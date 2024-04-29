@@ -886,7 +886,7 @@ gCryTable::
 .endif @ P_FAMILY_CHOUMON
 .if P_FAMILY_CHAMBLEMON == TRUE
 	cry Cry_Chamblemon
-	cry Cry_Wailord
+	cry Cry_Chamelemon
 .endif @ P_FAMILY_CHAMBLEMON
 .if P_FAMILY_NUMEL == TRUE
 	cry Cry_Numel
@@ -3312,7 +3312,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_CHOUMON
 .if P_FAMILY_CHAMBLEMON == TRUE
 	cry_reverse Cry_Chamblemon
-	cry_reverse Cry_Wailord
+	cry_reverse Cry_Chamelemon
 .endif @ P_FAMILY_CHAMBLEMON
 .if P_FAMILY_NUMEL == TRUE
 	cry_reverse Cry_Numel

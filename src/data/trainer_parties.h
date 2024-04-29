@@ -963,7 +963,7 @@ static const struct TrainerMon sParty_Owen[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
     .lvl = 42,
-    .species = SPECIES_WAILORD,
+    .species = SPECIES_CHAMELEMON,
     }
 };
 
@@ -4225,7 +4225,7 @@ static const struct TrainerMon sParty_Wallace[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 57,
-    .species = SPECIES_WAILORD,
+    .species = SPECIES_CHAMELEMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_RAIN_DANCE, MOVE_WATER_SPOUT, MOVE_DOUBLE_EDGE, MOVE_BLIZZARD}
     },
@@ -11743,7 +11743,7 @@ static const struct TrainerMon sParty_Thalia5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 40,
-    .species = SPECIES_WAILORD,
+    .species = SPECIES_CHAMELEMON,
     },
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
