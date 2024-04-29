@@ -2548,11 +2548,11 @@ Cry_Darktyrmon::
 	.incbin "sound/direct_sound_samples/cries/darktyrmon.bin"
 .endif @ P_FAMILY_DARKTYRMON
 
-.if P_FAMILY_SEVIPER == TRUE
+.if P_FAMILY_DARKTYRMON_X == TRUE
 	.align 2
-Cry_Seviper::
-	.incbin "sound/direct_sound_samples/cries/seviper.bin"
-.endif @ P_FAMILY_SEVIPER
+Cry_Darktyrmon_x::
+	.incbin "sound/direct_sound_samples/cries/darktyrmon_x.bin"
+.endif @ P_FAMILY_DARKTYRMON_X
 
 .if P_FAMILY_LUNATONE == TRUE
 	.align 2

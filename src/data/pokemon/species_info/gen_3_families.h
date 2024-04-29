@@ -5910,7 +5910,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             "When it battles, it stands on its hind legs\n"
             "and attacks with its sharply clawed\n"
             "forelegs. Its fur bristles if it encounters\n"
-            "any Seviper."),
+            "any Darktyrmon_x."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -5934,8 +5934,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_DARKTYRMON
 
-#if P_FAMILY_SEVIPER
-    [SPECIES_SEVIPER] =
+#if P_FAMILY_DARKTYRMON_X
+    [SPECIES_DARKTYRMON_X] =
     {
         .baseHP        = 73,
         .baseAttack    = 100,
@@ -5957,14 +5957,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_INFILTRATOR },
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
-        .speciesName = _("Seviper"),
-        .cryId = CRY_SEVIPER,
-        .natDexNum = NATIONAL_DEX_SEVIPER,
+        .speciesName = _("Darktyrmon_x"),
+        .cryId = CRY_DARKTYRMON_X,
+        .natDexNum = NATIONAL_DEX_DARKTYRMON_X,
         .categoryName = _("Fang Snake"),
         .height = 27,
         .weight = 525,
         .description = COMPOUND_STRING(
-            "Seviper and Darktyrmon are eternal rivals.\n"
+            "Darktyrmon_x and Darktyrmon are eternal rivals.\n"
             "It counters a Darktyrmon's dazzling agility\n"
             "with its swordlike tail, which also oozes\n"
             "a horrible poison."),
@@ -5972,24 +5972,24 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Seviper,
+        .frontPic = gMonFrontPic_Darktyrmon_x,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Seviper,
+        .frontAnimFrames = sAnims_Darktyrmon_x,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Seviper,
+        .backPic = gMonBackPic_Darktyrmon_x,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Seviper,
-        .shinyPalette = gMonShinyPalette_Seviper,
-        .iconSprite = gMonIcon_Seviper,
+        .palette = gMonPalette_Darktyrmon_x,
+        .shinyPalette = gMonShinyPalette_Darktyrmon_x,
+        .iconSprite = gMonIcon_Darktyrmon_x,
         .iconPalIndex = 2,
-        FOOTPRINT(Seviper)
-        .levelUpLearnset = sSeviperLevelUpLearnset,
-        .teachableLearnset = sSeviperTeachableLearnset,
+        FOOTPRINT(Darktyrmon_x)
+        .levelUpLearnset = sDarktyrmon_xLevelUpLearnset,
+        .teachableLearnset = sDarktyrmon_xTeachableLearnset,
     },
-#endif //P_FAMILY_SEVIPER
+#endif //P_FAMILY_DARKTYRMON_X
 
 #if P_FAMILY_LUNATONE
     [SPECIES_LUNATONE] =

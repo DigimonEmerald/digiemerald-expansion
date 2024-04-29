@@ -8943,8 +8943,8 @@ static const struct LevelUpMove sDarktyrmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_DARKTYRMON
 
-#if P_FAMILY_SEVIPER
-static const struct LevelUpMove sSeviperLevelUpLearnset[] = {
+#if P_FAMILY_DARKTYRMON_X
+static const struct LevelUpMove sDarktyrmon_xLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WRAP),
     LEVEL_UP_MOVE( 1, MOVE_SWAGGER),
     LEVEL_UP_MOVE( 4, MOVE_BITE),
@@ -8967,7 +8967,7 @@ static const struct LevelUpMove sSeviperLevelUpLearnset[] = {
     LEVEL_UP_MOVE(46, MOVE_WRING_OUT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SEVIPER
+#endif //P_FAMILY_DARKTYRMON_X
 
 #if P_FAMILY_LUNATONE
 static const struct LevelUpMove sLunatoneLevelUpLearnset[] = {

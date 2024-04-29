@@ -123,7 +123,7 @@ static const struct TrainerMon sParty_Ed[] = {
     },
     {
     .lvl = 30,
-    .species = SPECIES_SEVIPER,
+    .species = SPECIES_DARKTYRMON_X,
     }
 };
 
@@ -1517,7 +1517,7 @@ static const struct TrainerMon sParty_Jessica1[] = {
     },
     {
     .lvl = 29,
-    .species = SPECIES_SEVIPER,
+    .species = SPECIES_DARKTYRMON_X,
     .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
     }
 };
@@ -1582,7 +1582,7 @@ static const struct TrainerMon sParty_Jessica2[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 35,
-    .species = SPECIES_SEVIPER,
+    .species = SPECIES_DARKTYRMON_X,
     .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
     }
 };
@@ -1597,7 +1597,7 @@ static const struct TrainerMon sParty_Jessica3[] = {
     {
     .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
     .lvl = 38,
-    .species = SPECIES_SEVIPER,
+    .species = SPECIES_DARKTYRMON_X,
     .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
     }
 };
@@ -1612,7 +1612,7 @@ static const struct TrainerMon sParty_Jessica4[] = {
     {
     .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
     .lvl = 41,
-    .species = SPECIES_SEVIPER,
+    .species = SPECIES_DARKTYRMON_X,
     .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
     }
 };
@@ -1627,7 +1627,7 @@ static const struct TrainerMon sParty_Jessica5[] = {
     {
     .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
     .lvl = 44,
-    .species = SPECIES_SEVIPER,
+    .species = SPECIES_DARKTYRMON_X,
     .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
     }
 };
@@ -6313,7 +6313,7 @@ static const struct TrainerMon sParty_Hector[] = {
     },
     {
     .lvl = 18,
-    .species = SPECIES_SEVIPER,
+    .species = SPECIES_DARKTYRMON_X,
     }
 };
 

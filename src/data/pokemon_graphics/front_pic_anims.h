@@ -4490,8 +4490,8 @@ static const union AnimCmd sAnim_Darktyrmon_1[] =
 };
 #endif //P_FAMILY_DARKTYRMON
 
-#if P_FAMILY_SEVIPER
-static const union AnimCmd sAnim_Seviper_1[] =
+#if P_FAMILY_DARKTYRMON_X
+static const union AnimCmd sAnim_Darktyrmon_x_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4502,7 +4502,7 @@ static const union AnimCmd sAnim_Seviper_1[] =
     ANIMCMD_FRAME(0, 50),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SEVIPER
+#endif //P_FAMILY_DARKTYRMON_X
 
 #if P_FAMILY_LUNATONE
 static const union AnimCmd sAnim_Lunatone_1[] =
@@ -11222,9 +11222,9 @@ SINGLE_ANIMATION(DarmailmonMega);
 #if P_FAMILY_DARKTYRMON
 SINGLE_ANIMATION(Darktyrmon);
 #endif //P_FAMILY_DARKTYRMON
-#if P_FAMILY_SEVIPER
-SINGLE_ANIMATION(Seviper);
-#endif //P_FAMILY_SEVIPER
+#if P_FAMILY_DARKTYRMON_X
+SINGLE_ANIMATION(Darktyrmon_x);
+#endif //P_FAMILY_DARKTYRMON_X
 #if P_FAMILY_LUNATONE
 SINGLE_ANIMATION(Lunatone);
 #endif //P_FAMILY_LUNATONE

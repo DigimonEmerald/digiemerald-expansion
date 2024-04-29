@@ -4949,16 +4949,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_DARKTYRMON
 
-#if P_FAMILY_SEVIPER
-    const u32 gMonFrontPic_Seviper[] = INCBIN_U32("graphics/pokemon/seviper/anim_front.4bpp.lz");
-    const u32 gMonPalette_Seviper[] = INCBIN_U32("graphics/pokemon/seviper/normal.gbapal.lz");
-    const u32 gMonBackPic_Seviper[] = INCBIN_U32("graphics/pokemon/seviper/back.4bpp.lz");
-    const u32 gMonShinyPalette_Seviper[] = INCBIN_U32("graphics/pokemon/seviper/shiny.gbapal.lz");
-    const u8 gMonIcon_Seviper[] = INCBIN_U8("graphics/pokemon/seviper/icon.4bpp");
+#if P_FAMILY_DARKTYRMON_X
+    const u32 gMonFrontPic_Darktyrmon_x[] = INCBIN_U32("graphics/pokemon/darktyrmon_x/anim_front.4bpp.lz");
+    const u32 gMonPalette_Darktyrmon_x[] = INCBIN_U32("graphics/pokemon/darktyrmon_x/normal.gbapal.lz");
+    const u32 gMonBackPic_Darktyrmon_x[] = INCBIN_U32("graphics/pokemon/darktyrmon_x/back.4bpp.lz");
+    const u32 gMonShinyPalette_Darktyrmon_x[] = INCBIN_U32("graphics/pokemon/darktyrmon_x/shiny.gbapal.lz");
+    const u8 gMonIcon_Darktyrmon_x[] = INCBIN_U8("graphics/pokemon/darktyrmon_x/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Seviper[] = INCBIN_U8("graphics/pokemon/seviper/footprint.1bpp");
+    const u8 gMonFootprint_Darktyrmon_x[] = INCBIN_U8("graphics/pokemon/darktyrmon_x/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_SEVIPER
+#endif //P_FAMILY_DARKTYRMON_X
 
 #if P_FAMILY_LUNATONE
     const u32 gMonFrontPic_Lunatone[] = INCBIN_U32("graphics/pokemon/lunatone/anim_front.4bpp.lz");

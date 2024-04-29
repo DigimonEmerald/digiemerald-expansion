@@ -15849,8 +15849,8 @@ static const u16 sDarktyrmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DARKTYRMON
 
-#if P_FAMILY_SEVIPER
-static const u16 sSeviperTeachableLearnset[] = {
+#if P_FAMILY_DARKTYRMON_X
+static const u16 sDarktyrmon_xTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
@@ -15884,7 +15884,7 @@ static const u16 sSeviperTeachableLearnset[] = {
     MOVE_SWORDS_DANCE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SEVIPER
+#endif //P_FAMILY_DARKTYRMON_X
 
 #if P_FAMILY_LUNATONE
 static const u16 sLunatoneTeachableLearnset[] = {

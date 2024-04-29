@@ -924,9 +924,9 @@ gCryTable::
 .if P_FAMILY_DARKTYRMON == TRUE
 	cry Cry_Darktyrmon
 .endif @ P_FAMILY_DARKTYRMON
-.if P_FAMILY_SEVIPER == TRUE
-	cry Cry_Seviper
-.endif @ P_FAMILY_SEVIPER
+.if P_FAMILY_DARKTYRMON_X == TRUE
+	cry Cry_Darktyrmon_x
+.endif @ P_FAMILY_DARKTYRMON_X
 .if P_FAMILY_LUNATONE == TRUE
 	cry Cry_Lunatone
 .endif @ P_FAMILY_LUNATONE
@@ -3350,9 +3350,9 @@ gCryTable_Reverse::
 .if P_FAMILY_DARKTYRMON == TRUE
 	cry_reverse Cry_Darktyrmon
 .endif @ P_FAMILY_DARKTYRMON
-.if P_FAMILY_SEVIPER == TRUE
-	cry_reverse Cry_Seviper
-.endif @ P_FAMILY_SEVIPER
+.if P_FAMILY_DARKTYRMON_X == TRUE
+	cry_reverse Cry_Darktyrmon_x
+.endif @ P_FAMILY_DARKTYRMON_X
 .if P_FAMILY_LUNATONE == TRUE
 	cry_reverse Cry_Lunatone
 .endif @ P_FAMILY_LUNATONE
