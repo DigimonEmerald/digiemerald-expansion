@@ -17130,7 +17130,7 @@ static const u16 sFladramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGorebyssTeachableLearnset[] = {
+static const u16 sFlawizamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,

@@ -370,7 +370,7 @@
 #define SPECIES_FILMON                                 365
 #define SPECIES_FIRAMON                                366
 #define SPECIES_FLADRAMON                                 367
-#define SPECIES_GOREBYSS                                368
+#define SPECIES_FLAWIZAMON                                368
 #define SPECIES_RELICANTH                               369
 #define SPECIES_LUVDISC                                 370
 #define SPECIES_BAGON                                   371

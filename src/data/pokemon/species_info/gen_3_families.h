@@ -8165,9 +8165,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sFiramonLevelUpLearnset,
         .teachableLearnset = sFiramonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_DEEP_SEA_TOOTH, SPECIES_FLADRAMON},
-                                {EVO_TRADE_ITEM, ITEM_DEEP_SEA_SCALE, SPECIES_GOREBYSS},
+                                {EVO_TRADE_ITEM, ITEM_DEEP_SEA_SCALE, SPECIES_FLAWIZAMON},
                                 {EVO_ITEM, ITEM_DEEP_SEA_TOOTH, SPECIES_FLADRAMON},
-                                {EVO_ITEM, ITEM_DEEP_SEA_SCALE, SPECIES_GOREBYSS}),
+                                {EVO_ITEM, ITEM_DEEP_SEA_SCALE, SPECIES_FLAWIZAMON}),
     },
 
     [SPECIES_FLADRAMON] =
@@ -8224,7 +8224,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sFladramonTeachableLearnset,
     },
 
-    [SPECIES_GOREBYSS] =
+    [SPECIES_FLAWIZAMON] =
     {
         .baseHP        = 55,
         .baseAttack    = 84,
@@ -8244,14 +8244,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_HYDRATION },
         .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Gorebyss"),
-        .cryId = CRY_GOREBYSS,
-        .natDexNum = NATIONAL_DEX_GOREBYSS,
+        .speciesName = _("Flawizamon"),
+        .cryId = CRY_FLAWIZAMON,
+        .natDexNum = NATIONAL_DEX_FLAWIZAMON,
         .categoryName = _("South Sea"),
         .height = 18,
         .weight = 226,
         .description = COMPOUND_STRING(
-            "A Gorebyss siphons the body fluids of prey\n"
+            "A Flawizamon siphons the body fluids of prey\n"
             "through its thin, tubular mouth. Its light\n"
             "pink body color turns vivid when it\n"
             "finishes feeding."),
@@ -8259,22 +8259,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 5,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Gorebyss,
+        .frontPic = gMonFrontPic_Flawizamon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Gorebyss,
+        .frontAnimFrames = sAnims_Flawizamon,
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
-        .backPic = gMonBackPic_Gorebyss,
+        .backPic = gMonBackPic_Flawizamon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Gorebyss,
-        .shinyPalette = gMonShinyPalette_Gorebyss,
-        .iconSprite = gMonIcon_Gorebyss,
+        .palette = gMonPalette_Flawizamon,
+        .shinyPalette = gMonShinyPalette_Flawizamon,
+        .iconSprite = gMonIcon_Flawizamon,
         .iconPalIndex = 0,
-        FOOTPRINT(Gorebyss)
-        .levelUpLearnset = sGorebyssLevelUpLearnset,
-        .teachableLearnset = sGorebyssTeachableLearnset,
+        FOOTPRINT(Flawizamon)
+        .levelUpLearnset = sFlawizamonLevelUpLearnset,
+        .teachableLearnset = sFlawizamonTeachableLearnset,
     },
 #endif //P_FAMILY_FIRAMON
 

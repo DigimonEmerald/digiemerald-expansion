@@ -4966,7 +4966,7 @@ static const union AnimCmd sAnim_Fladramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Gorebyss_1[] =
+static const union AnimCmd sAnim_Flawizamon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -11311,7 +11311,7 @@ SINGLE_ANIMATION(Filmon);
 #if P_FAMILY_FIRAMON
 SINGLE_ANIMATION(Firamon);
 SINGLE_ANIMATION(Fladramon);
-SINGLE_ANIMATION(Gorebyss);
+SINGLE_ANIMATION(Flawizamon);
 #endif //P_FAMILY_FIRAMON
 #if P_FAMILY_RELICANTH
 SINGLE_ANIMATION(Relicanth);

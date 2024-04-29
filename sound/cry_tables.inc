@@ -1010,7 +1010,7 @@ gCryTable::
 .if P_FAMILY_FIRAMON == TRUE
 	cry Cry_Firamon
 	cry Cry_Fladramon
-	cry Cry_Gorebyss
+	cry Cry_Flawizamon
 .endif @ P_FAMILY_FIRAMON
 .if P_FAMILY_RELICANTH == TRUE
 	cry Cry_Relicanth
@@ -3436,7 +3436,7 @@ gCryTable_Reverse::
 .if P_FAMILY_FIRAMON == TRUE
 	cry_reverse Cry_Firamon
 	cry_reverse Cry_Fladramon
-	cry_reverse Cry_Gorebyss
+	cry_reverse Cry_Flawizamon
 .endif @ P_FAMILY_FIRAMON
 .if P_FAMILY_RELICANTH == TRUE
 	cry_reverse Cry_Relicanth

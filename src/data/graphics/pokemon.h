@@ -5343,13 +5343,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Fladramon[] = INCBIN_U8("graphics/pokemon/fladramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Gorebyss[] = INCBIN_U32("graphics/pokemon/gorebyss/anim_front.4bpp.lz");
-    const u32 gMonPalette_Gorebyss[] = INCBIN_U32("graphics/pokemon/gorebyss/normal.gbapal.lz");
-    const u32 gMonBackPic_Gorebyss[] = INCBIN_U32("graphics/pokemon/gorebyss/back.4bpp.lz");
-    const u32 gMonShinyPalette_Gorebyss[] = INCBIN_U32("graphics/pokemon/gorebyss/shiny.gbapal.lz");
-    const u8 gMonIcon_Gorebyss[] = INCBIN_U8("graphics/pokemon/gorebyss/icon.4bpp");
+    const u32 gMonFrontPic_Flawizamon[] = INCBIN_U32("graphics/pokemon/flawizamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Flawizamon[] = INCBIN_U32("graphics/pokemon/flawizamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Flawizamon[] = INCBIN_U32("graphics/pokemon/flawizamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Flawizamon[] = INCBIN_U32("graphics/pokemon/flawizamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Flawizamon[] = INCBIN_U8("graphics/pokemon/flawizamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Gorebyss[] = INCBIN_U8("graphics/pokemon/gorebyss/footprint.1bpp");
+    const u8 gMonFootprint_Flawizamon[] = INCBIN_U8("graphics/pokemon/flawizamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_FIRAMON
 

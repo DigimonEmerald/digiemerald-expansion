@@ -2745,8 +2745,8 @@ Cry_Fladramon::
 	.incbin "sound/direct_sound_samples/cries/fladramon.bin"
 
 	.align 2
-Cry_Gorebyss::
-	.incbin "sound/direct_sound_samples/cries/gorebyss.bin"
+Cry_Flawizamon::
+	.incbin "sound/direct_sound_samples/cries/flawizamon.bin"
 .endif @ P_FAMILY_FIRAMON
 
 .if P_FAMILY_RELICANTH == TRUE
