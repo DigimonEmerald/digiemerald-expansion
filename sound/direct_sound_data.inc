@@ -2881,11 +2881,11 @@ Cry_GeogreymonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_GEOGREYMON
 
-.if P_FAMILY_JIRACHI == TRUE
+.if P_FAMILY_GEREMON == TRUE
 	.align 2
-Cry_Jirachi::
-	.incbin "sound/direct_sound_samples/cries/jirachi.bin"
-.endif @ P_FAMILY_JIRACHI
+Cry_Geremon::
+	.incbin "sound/direct_sound_samples/cries/geremon.bin"
+.endif @ P_FAMILY_GEREMON
 
 .if P_FAMILY_DEOXYS == TRUE
 	.align 2

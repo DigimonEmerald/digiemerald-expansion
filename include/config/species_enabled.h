@@ -256,7 +256,7 @@
 #define P_FAMILY_GATOMON_X                  P_GEN_3_POKEMON
 #define P_FAMILY_GEKOMON                 P_GEN_3_POKEMON
 #define P_FAMILY_GEOGREYMON                P_GEN_3_POKEMON
-#define P_FAMILY_JIRACHI                 P_GEN_3_POKEMON
+#define P_FAMILY_GEREMON                 P_GEN_3_POKEMON
 #define P_FAMILY_DEOXYS                  P_GEN_3_POKEMON
 
 #define P_FAMILY_TURTWIG                 P_GEN_4_POKEMON

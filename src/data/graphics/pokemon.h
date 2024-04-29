@@ -5580,16 +5580,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_GEOGREYMON
 
-#if P_FAMILY_JIRACHI
-    const u32 gMonFrontPic_Jirachi[] = INCBIN_U32("graphics/pokemon/jirachi/anim_front.4bpp.lz");
-    const u32 gMonPalette_Jirachi[] = INCBIN_U32("graphics/pokemon/jirachi/normal.gbapal.lz");
-    const u32 gMonBackPic_Jirachi[] = INCBIN_U32("graphics/pokemon/jirachi/back.4bpp.lz");
-    const u32 gMonShinyPalette_Jirachi[] = INCBIN_U32("graphics/pokemon/jirachi/shiny.gbapal.lz");
-    const u8 gMonIcon_Jirachi[] = INCBIN_U8("graphics/pokemon/jirachi/icon.4bpp");
+#if P_FAMILY_GEREMON
+    const u32 gMonFrontPic_Geremon[] = INCBIN_U32("graphics/pokemon/geremon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Geremon[] = INCBIN_U32("graphics/pokemon/geremon/normal.gbapal.lz");
+    const u32 gMonBackPic_Geremon[] = INCBIN_U32("graphics/pokemon/geremon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Geremon[] = INCBIN_U32("graphics/pokemon/geremon/shiny.gbapal.lz");
+    const u8 gMonIcon_Geremon[] = INCBIN_U8("graphics/pokemon/geremon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Jirachi[] = INCBIN_U8("graphics/pokemon/jirachi/footprint.1bpp");
+    const u8 gMonFootprint_Geremon[] = INCBIN_U8("graphics/pokemon/geremon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_JIRACHI
+#endif //P_FAMILY_GEREMON
 
 #if P_FAMILY_DEOXYS
     const u32 gMonFrontPic_DeoxysNormal[] = INCBIN_U32("graphics/pokemon/deoxys/anim_front.4bpp.lz");

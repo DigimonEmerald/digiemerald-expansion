@@ -9653,8 +9653,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_GEOGREYMON
 
-#if P_FAMILY_JIRACHI
-    [SPECIES_JIRACHI] =
+#if P_FAMILY_GEREMON
+    [SPECIES_GEREMON] =
     {
         .baseHP        = 100,
         .baseAttack    = 100,
@@ -9681,14 +9681,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_SERENE_GRACE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Jirachi"),
-        .cryId = CRY_JIRACHI,
-        .natDexNum = NATIONAL_DEX_JIRACHI,
+        .speciesName = _("Geremon"),
+        .cryId = CRY_GEREMON,
+        .natDexNum = NATIONAL_DEX_GEREMON,
         .categoryName = _("Wish"),
         .height = 3,
         .weight = 11,
         .description = COMPOUND_STRING(
-            "Jirachi is said to make wishes come true.\n"
+            "Geremon is said to make wishes come true.\n"
             "While it sleeps, a tough crystalline shell\n"
             "envelops the body to protect it from\n"
             "enemies."),
@@ -9696,26 +9696,26 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = -8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Jirachi,
+        .frontPic = gMonFrontPic_Geremon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Jirachi,
+        .frontAnimFrames = sAnims_Geremon,
         .frontAnimId = ANIM_RISING_WOBBLE,
         .enemyMonElevation = 14,
-        .backPic = gMonBackPic_Jirachi,
+        .backPic = gMonBackPic_Geremon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Jirachi,
-        .shinyPalette = gMonShinyPalette_Jirachi,
-        .iconSprite = gMonIcon_Jirachi,
+        .palette = gMonPalette_Geremon,
+        .shinyPalette = gMonShinyPalette_Geremon,
+        .iconSprite = gMonIcon_Geremon,
         .iconPalIndex = 0,
-        FOOTPRINT(Jirachi)
+        FOOTPRINT(Geremon)
         .isMythical = TRUE,
-        .levelUpLearnset = sJirachiLevelUpLearnset,
-        .teachableLearnset = sJirachiTeachableLearnset,
+        .levelUpLearnset = sGeremonLevelUpLearnset,
+        .teachableLearnset = sGeremonTeachableLearnset,
     },
-#endif //P_FAMILY_JIRACHI
+#endif //P_FAMILY_GEREMON
 
 #if P_FAMILY_DEOXYS
 #if P_UPDATED_EXP_YIELDS >= GEN_8

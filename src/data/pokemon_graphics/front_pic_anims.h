@@ -5189,8 +5189,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(GeogreymonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_GEOGREYMON
 
-#if P_FAMILY_JIRACHI
-static const union AnimCmd sAnim_Jirachi_1[] =
+#if P_FAMILY_GEREMON
+static const union AnimCmd sAnim_Geremon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -5204,7 +5204,7 @@ static const union AnimCmd sAnim_Jirachi_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_JIRACHI
+#endif //P_FAMILY_GEREMON
 
 #if P_FAMILY_DEOXYS
 static const union AnimCmd sAnim_DeoxysNormal_1[] =
@@ -11374,9 +11374,9 @@ SINGLE_ANIMATION(Geogreymon);
 SINGLE_ANIMATION(GeogreymonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_GEOGREYMON
-#if P_FAMILY_JIRACHI
-SINGLE_ANIMATION(Jirachi);
-#endif //P_FAMILY_JIRACHI
+#if P_FAMILY_GEREMON
+SINGLE_ANIMATION(Geremon);
+#endif //P_FAMILY_GEREMON
 #if P_FAMILY_DEOXYS
 SINGLE_ANIMATION(DeoxysNormal);
 SINGLE_ANIMATION(DeoxysAttack);

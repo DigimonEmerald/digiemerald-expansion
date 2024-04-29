@@ -33,7 +33,7 @@ SINGLE_BATTLE_TEST("Salt Cure inflicts 1/4 to Water/Steel types of their maximum
     u32 species;
 
     PARAMETRIZE { species = SPECIES_CORONAMON; };
-    PARAMETRIZE { species = SPECIES_JIRACHI; };
+    PARAMETRIZE { species = SPECIES_GEREMON; };
 
     GIVEN {
         PLAYER(SPECIES_LOPMONX);

@@ -1073,9 +1073,9 @@ gCryTable::
 	cry Cry_GeogreymonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_GEOGREYMON
-.if P_FAMILY_JIRACHI == TRUE
-	cry Cry_Jirachi
-.endif @ P_FAMILY_JIRACHI
+.if P_FAMILY_GEREMON == TRUE
+	cry Cry_Geremon
+.endif @ P_FAMILY_GEREMON
 .if P_FAMILY_DEOXYS == TRUE
 	cry Cry_Deoxys
 .endif @ P_FAMILY_DEOXYS
@@ -3499,9 +3499,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_GeogreymonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_GEOGREYMON
-.if P_FAMILY_JIRACHI == TRUE
-	cry_reverse Cry_Jirachi
-.endif @ P_FAMILY_JIRACHI
+.if P_FAMILY_GEREMON == TRUE
+	cry_reverse Cry_Geremon
+.endif @ P_FAMILY_GEREMON
 .if P_FAMILY_DEOXYS == TRUE
 	cry_reverse Cry_Deoxys
 .endif @ P_FAMILY_DEOXYS

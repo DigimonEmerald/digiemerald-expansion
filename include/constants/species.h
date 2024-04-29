@@ -387,7 +387,7 @@
 #define SPECIES_GATOMON_X                                  382
 #define SPECIES_GEKOMON                                 383
 #define SPECIES_GEOGREYMON                                384
-#define SPECIES_JIRACHI                                 385
+#define SPECIES_GEREMON                                 385
 #define SPECIES_DEOXYS                                  SPECIES_DEOXYS_NORMAL
 #define SPECIES_DEOXYS_NORMAL                           386
 #define SPECIES_TURTWIG                                 387

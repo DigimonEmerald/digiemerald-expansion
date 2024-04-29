@@ -17828,8 +17828,8 @@ static const u16 sGeogreymonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GEOGREYMON
 
-#if P_FAMILY_JIRACHI
-static const u16 sJirachiTeachableLearnset[] = {
+#if P_FAMILY_GEREMON
+static const u16 sGeremonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
@@ -17874,7 +17874,7 @@ static const u16 sJirachiTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_JIRACHI
+#endif //P_FAMILY_GEREMON
 
 #if P_FAMILY_DEOXYS
 static const u16 sDeoxysNormalTeachableLearnset[] = {

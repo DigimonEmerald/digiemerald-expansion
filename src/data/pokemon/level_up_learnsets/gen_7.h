@@ -10063,8 +10063,8 @@ static const struct LevelUpMove sGeogreymonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_GEOGREYMON
 
-#if P_FAMILY_JIRACHI
-static const struct LevelUpMove sJirachiLevelUpLearnset[] = {
+#if P_FAMILY_GEREMON
+static const struct LevelUpMove sGeremonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WISH),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 5, MOVE_REST),
@@ -10083,7 +10083,7 @@ static const struct LevelUpMove sJirachiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(70, MOVE_DOOM_DESIRE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_JIRACHI
+#endif //P_FAMILY_GEREMON
 
 #if P_FAMILY_DEOXYS
 static const struct LevelUpMove sDeoxysNormalLevelUpLearnset[] = {
