@@ -9143,7 +9143,7 @@ static const struct LevelUpMove sDevidramonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sCrawdauntLevelUpLearnset[] = {
+static const struct LevelUpMove sDevimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SWIFT),
     LEVEL_UP_MOVE( 1, MOVE_SWIFT),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),

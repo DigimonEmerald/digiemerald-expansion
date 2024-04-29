@@ -16079,7 +16079,7 @@ static const u16 sDevidramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sCrawdauntTeachableLearnset[] = {
+static const u16 sDevimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,

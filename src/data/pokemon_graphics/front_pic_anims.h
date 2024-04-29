@@ -4579,7 +4579,7 @@ static const union AnimCmd sAnim_Devidramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Crawdaunt_1[] =
+static const union AnimCmd sAnim_Devimon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -11237,7 +11237,7 @@ SINGLE_ANIMATION(Deputymon);
 #endif //P_FAMILY_DEPTHMON
 #if P_FAMILY_DEVIDRAMON
 SINGLE_ANIMATION(Devidramon);
-SINGLE_ANIMATION(Crawdaunt);
+SINGLE_ANIMATION(Devimon);
 #endif //P_FAMILY_DEVIDRAMON
 #if P_FAMILY_BALTOY
 SINGLE_ANIMATION(Baltoy);

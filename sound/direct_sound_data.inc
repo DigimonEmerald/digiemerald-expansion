@@ -2582,8 +2582,8 @@ Cry_Devidramon::
 	.incbin "sound/direct_sound_samples/cries/devidramon.bin"
 
 	.align 2
-Cry_Crawdaunt::
-	.incbin "sound/direct_sound_samples/cries/crawdaunt.bin"
+Cry_Devimon::
+	.incbin "sound/direct_sound_samples/cries/devimon.bin"
 .endif @ P_FAMILY_DEVIDRAMON
 
 .if P_FAMILY_BALTOY == TRUE

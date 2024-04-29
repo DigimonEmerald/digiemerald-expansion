@@ -6276,10 +6276,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Devidramon)
         .levelUpLearnset = sDevidramonLevelUpLearnset,
         .teachableLearnset = sDevidramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_CRAWDAUNT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_DEVIMON}),
     },
 
-    [SPECIES_CRAWDAUNT] =
+    [SPECIES_DEVIMON] =
     {
         .baseHP        = 63,
         .baseAttack    = 120,
@@ -6298,37 +6298,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
         .abilities = { ABILITY_HYPER_CUTTER, ABILITY_SHELL_ARMOR, ABILITY_ADAPTABILITY },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Crawdaunt"),
-        .cryId = CRY_CRAWDAUNT,
-        .natDexNum = NATIONAL_DEX_CRAWDAUNT,
+        .speciesName = _("Devimon"),
+        .cryId = CRY_DEVIMON,
+        .natDexNum = NATIONAL_DEX_DEVIMON,
         .categoryName = _("Rogue"),
         .height = 11,
         .weight = 328,
         .description = COMPOUND_STRING(
             "A brutish Pokémon that loves to battle.\n"
-            "A veteran Crawdaunt that has prevailed in\n"
+            "A veteran Devimon that has prevailed in\n"
             "hundreds of battles has giant pincers\n"
             "marked with countless scars."),
         .pokemonScale = 365,
         .pokemonOffset = 9,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Crawdaunt,
+        .frontPic = gMonFrontPic_Devimon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 4,
-        .frontAnimFrames = sAnims_Crawdaunt,
+        .frontAnimFrames = sAnims_Devimon,
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Crawdaunt,
+        .backPic = gMonBackPic_Devimon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Crawdaunt,
-        .shinyPalette = gMonShinyPalette_Crawdaunt,
-        .iconSprite = gMonIcon_Crawdaunt,
+        .palette = gMonPalette_Devimon,
+        .shinyPalette = gMonShinyPalette_Devimon,
+        .iconSprite = gMonIcon_Devimon,
         .iconPalIndex = 0,
-        FOOTPRINT(Crawdaunt)
-        .levelUpLearnset = sCrawdauntLevelUpLearnset,
-        .teachableLearnset = sCrawdauntTeachableLearnset,
+        FOOTPRINT(Devimon)
+        .levelUpLearnset = sDevimonLevelUpLearnset,
+        .teachableLearnset = sDevimonTeachableLearnset,
     },
 #endif //P_FAMILY_DEVIDRAMON
 

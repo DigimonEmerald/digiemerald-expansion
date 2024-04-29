@@ -5012,13 +5012,13 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Devidramon[] = INCBIN_U8("graphics/pokemon/devidramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Crawdaunt[] = INCBIN_U32("graphics/pokemon/crawdaunt/anim_front.4bpp.lz");
-    const u32 gMonPalette_Crawdaunt[] = INCBIN_U32("graphics/pokemon/crawdaunt/normal.gbapal.lz");
-    const u32 gMonBackPic_Crawdaunt[] = INCBIN_U32("graphics/pokemon/crawdaunt/back.4bpp.lz");
-    const u32 gMonShinyPalette_Crawdaunt[] = INCBIN_U32("graphics/pokemon/crawdaunt/shiny.gbapal.lz");
-    const u8 gMonIcon_Crawdaunt[] = INCBIN_U8("graphics/pokemon/crawdaunt/icon.4bpp");
+    const u32 gMonFrontPic_Devimon[] = INCBIN_U32("graphics/pokemon/devimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Devimon[] = INCBIN_U32("graphics/pokemon/devimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Devimon[] = INCBIN_U32("graphics/pokemon/devimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Devimon[] = INCBIN_U32("graphics/pokemon/devimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Devimon[] = INCBIN_U8("graphics/pokemon/devimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Crawdaunt[] = INCBIN_U8("graphics/pokemon/crawdaunt/footprint.1bpp");
+    const u8 gMonFootprint_Devimon[] = INCBIN_U8("graphics/pokemon/devimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_DEVIDRAMON
 
