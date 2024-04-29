@@ -15677,7 +15677,7 @@ static const u16 sDarcmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sCacturneTeachableLearnset[] = {
+static const u16 sTrailmon_darkTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULLET_SEED,

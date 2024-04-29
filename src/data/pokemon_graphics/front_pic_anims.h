@@ -4437,7 +4437,7 @@ static const union AnimCmd sAnim_Darcmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Cacturne_1[] =
+static const union AnimCmd sAnim_Trailmon_dark_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -11210,7 +11210,7 @@ SINGLE_ANIMATION(Damemon_fusion);
 #endif //P_FAMILY_COREDRAMON_GREEN
 #if P_FAMILY_DARCMON
 SINGLE_ANIMATION(Darcmon);
-SINGLE_ANIMATION(Cacturne);
+SINGLE_ANIMATION(Trailmon_dark);
 #endif //P_FAMILY_DARCMON
 #if P_FAMILY_SWABLU
 SINGLE_ANIMATION(Swablu);

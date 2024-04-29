@@ -912,7 +912,7 @@ gCryTable::
 .endif @ P_FAMILY_COREDRAMON_GREEN
 .if P_FAMILY_DARCMON == TRUE
 	cry Cry_Darcmon
-	cry Cry_Cacturne
+	cry Cry_Trailmon_dark
 .endif @ P_FAMILY_DARCMON
 .if P_FAMILY_SWABLU == TRUE
 	cry Cry_Swablu
@@ -3338,7 +3338,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_COREDRAMON_GREEN
 .if P_FAMILY_DARCMON == TRUE
 	cry_reverse Cry_Darcmon
-	cry_reverse Cry_Cacturne
+	cry_reverse Cry_Trailmon_dark
 .endif @ P_FAMILY_DARCMON
 .if P_FAMILY_SWABLU == TRUE
 	cry_reverse Cry_Swablu

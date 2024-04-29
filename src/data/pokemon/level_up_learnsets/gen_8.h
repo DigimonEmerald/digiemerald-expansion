@@ -8925,7 +8925,7 @@ static const struct LevelUpMove sDarcmonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sCacturneLevelUpLearnset[] = {
+static const struct LevelUpMove sTrailmon_darkLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SPIKY_SHIELD),
     LEVEL_UP_MOVE( 1, MOVE_SPIKY_SHIELD),
     LEVEL_UP_MOVE( 1, MOVE_DESTINY_BOND),

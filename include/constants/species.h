@@ -333,7 +333,7 @@
 #define SPECIES_CYCLONEMON                                 329
 #define SPECIES_DAMEMON_FUSION                                  330
 #define SPECIES_DARCMON                                  331
-#define SPECIES_CACTURNE                                332
+#define SPECIES_TRAILMON_DARK                                332
 #define SPECIES_SWABLU                                  333
 #define SPECIES_ALTARIA                                 334
 #define SPECIES_ZANGOOSE                                335

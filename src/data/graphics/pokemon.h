@@ -4898,16 +4898,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Darcmon[] = INCBIN_U8("graphics/pokemon/darcmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Cacturne[] = INCBIN_U32("graphics/pokemon/cacturne/anim_front.4bpp.lz");
-    const u32 gMonPalette_Cacturne[] = INCBIN_U32("graphics/pokemon/cacturne/normal.gbapal.lz");
-    const u32 gMonBackPic_Cacturne[] = INCBIN_U32("graphics/pokemon/cacturne/back.4bpp.lz");
-    const u32 gMonShinyPalette_Cacturne[] = INCBIN_U32("graphics/pokemon/cacturne/shiny.gbapal.lz");
-    const u8 gMonIcon_Cacturne[] = INCBIN_U8("graphics/pokemon/cacturne/icon.4bpp");
+    const u32 gMonFrontPic_Trailmon_dark[] = INCBIN_U32("graphics/pokemon/trailmon_dark/anim_front.4bpp.lz");
+    const u32 gMonPalette_Trailmon_dark[] = INCBIN_U32("graphics/pokemon/trailmon_dark/normal.gbapal.lz");
+    const u32 gMonBackPic_Trailmon_dark[] = INCBIN_U32("graphics/pokemon/trailmon_dark/back.4bpp.lz");
+    const u32 gMonShinyPalette_Trailmon_dark[] = INCBIN_U32("graphics/pokemon/trailmon_dark/shiny.gbapal.lz");
+    const u8 gMonIcon_Trailmon_dark[] = INCBIN_U8("graphics/pokemon/trailmon_dark/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Cacturne[] = INCBIN_U8("graphics/pokemon/cacturne/footprint.1bpp");
+    const u8 gMonFootprint_Trailmon_dark[] = INCBIN_U8("graphics/pokemon/trailmon_dark/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_CacturneF[] = INCBIN_U32("graphics/pokemon/cacturne/anim_frontf.4bpp.lz");
+    const u32 gMonFrontPic_Trailmon_darkF[] = INCBIN_U32("graphics/pokemon/trailmon_dark/anim_frontf.4bpp.lz");
 #endif //P_FAMILY_DARCMON
 
 #if P_FAMILY_SWABLU

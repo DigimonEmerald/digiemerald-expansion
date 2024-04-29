@@ -5651,10 +5651,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Darcmon)
         .levelUpLearnset = sDarcmonLevelUpLearnset,
         .teachableLearnset = sDarcmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_CACTURNE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_TRAILMON_DARK}),
     },
 
-    [SPECIES_CACTURNE] =
+    [SPECIES_TRAILMON_DARK] =
     {
         .baseHP        = 70,
         .baseAttack    = 115,
@@ -5675,9 +5675,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS, EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_SAND_VEIL, ABILITY_NONE, ABILITY_WATER_ABSORB },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Cacturne"),
-        .cryId = CRY_CACTURNE,
-        .natDexNum = NATIONAL_DEX_CACTURNE,
+        .speciesName = _("Trailmon_dark"),
+        .cryId = CRY_TRAILMON_DARK,
+        .natDexNum = NATIONAL_DEX_TRAILMON_DARK,
         .categoryName = _("Scarecrow"),
         .height = 13,
         .weight = 774,
@@ -5690,24 +5690,24 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 5,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Cacturne,
-        .frontPicFemale = gMonFrontPic_CacturneF,
+        .frontPic = gMonFrontPic_Trailmon_dark,
+        .frontPicFemale = gMonFrontPic_Trailmon_darkF,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Cacturne,
+        .frontAnimFrames = sAnims_Trailmon_dark,
         .frontAnimId = ANIM_V_SLIDE,
-        .backPic = gMonBackPic_Cacturne,
+        .backPic = gMonBackPic_Trailmon_dark,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_H_SHAKE,
-        .palette = gMonPalette_Cacturne,
-        .shinyPalette = gMonShinyPalette_Cacturne,
-        .iconSprite = gMonIcon_Cacturne,
+        .palette = gMonPalette_Trailmon_dark,
+        .shinyPalette = gMonShinyPalette_Trailmon_dark,
+        .iconSprite = gMonIcon_Trailmon_dark,
         .iconPalIndex = 1,
-        FOOTPRINT(Cacturne)
-        .levelUpLearnset = sCacturneLevelUpLearnset,
-        .teachableLearnset = sCacturneTeachableLearnset,
+        FOOTPRINT(Trailmon_dark)
+        .levelUpLearnset = sTrailmon_darkLevelUpLearnset,
+        .teachableLearnset = sTrailmon_darkTeachableLearnset,
     },
 #endif //P_FAMILY_DARCMON
 
