@@ -5157,8 +5157,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Gatomon_xPrimal);
 #endif //P_PRIMAL_REVERSIONS
 #endif //P_FAMILY_GATOMON_X
 
-#if P_FAMILY_GROUDON
-static const union AnimCmd sAnim_Groudon_1[] =
+#if P_FAMILY_GEKOMON
+static const union AnimCmd sAnim_Gekomon_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 10),
@@ -5169,9 +5169,9 @@ static const union AnimCmd sAnim_Groudon_1[] =
 };
 
 #if P_PRIMAL_REVERSIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(GroudonPrimal);
+PLACEHOLDER_ANIM_SINGLE_FRAME(GekomonPrimal);
 #endif //P_PRIMAL_REVERSIONS
-#endif //P_FAMILY_GROUDON
+#endif //P_FAMILY_GEKOMON
 
 #if P_FAMILY_RAYQUAZA
 static const union AnimCmd sAnim_Rayquaza_1[] =
@@ -11362,12 +11362,12 @@ SINGLE_ANIMATION(Gatomon_x);
 SINGLE_ANIMATION(Gatomon_xPrimal);
 #endif //P_PRIMAL_REVERSIONS
 #endif //P_FAMILY_GATOMON_X
-#if P_FAMILY_GROUDON
-SINGLE_ANIMATION(Groudon);
+#if P_FAMILY_GEKOMON
+SINGLE_ANIMATION(Gekomon);
 #if P_PRIMAL_REVERSIONS
-SINGLE_ANIMATION(GroudonPrimal);
+SINGLE_ANIMATION(GekomonPrimal);
 #endif //P_PRIMAL_REVERSIONS
-#endif //P_FAMILY_GROUDON
+#endif //P_FAMILY_GEKOMON
 #if P_FAMILY_RAYQUAZA
 SINGLE_ANIMATION(Rayquaza);
 #if P_MEGA_EVOLUTIONS

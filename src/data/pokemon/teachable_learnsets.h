@@ -17718,8 +17718,8 @@ static const u16 sGatomon_xTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GATOMON_X
 
-#if P_FAMILY_GROUDON
-static const u16 sGroudonTeachableLearnset[] = {
+#if P_FAMILY_GEKOMON
+static const u16 sGekomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -17773,7 +17773,7 @@ static const u16 sGroudonTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_GROUDON
+#endif //P_FAMILY_GEKOMON
 
 #if P_FAMILY_RAYQUAZA
 static const u16 sRayquazaTeachableLearnset[] = {

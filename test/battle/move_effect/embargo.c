@@ -363,7 +363,7 @@ SINGLE_BATTLE_TEST("Embargo doesn't prevent Primal Reversion")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_GROUDON) { Item(ITEM_RED_ORB); };
+        OPPONENT(SPECIES_GEKOMON) { Item(ITEM_RED_ORB); };
     } WHEN {
         TURN { MOVE(player, MOVE_EMBARGO); }
         TURN { MOVE(opponent, MOVE_BATON_PASS); SEND_OUT(opponent, 1); }
@@ -375,12 +375,12 @@ SINGLE_BATTLE_TEST("Embargo doesn't prevent Primal Reversion")
         // Turn 2
         MESSAGE("Foe Lopmonx used Baton Pass!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BATON_PASS, opponent);
-        MESSAGE("2 sent out Groudon!");
+        MESSAGE("2 sent out Gekomon!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, opponent);
-        MESSAGE("Foe Groudon's Primal Reversion! It reverted to its primal form!");
+        MESSAGE("Foe Gekomon's Primal Reversion! It reverted to its primal form!");
         ABILITY_POPUP(opponent);
         // Turn 3
-        MESSAGE("Foe Groudon used Fling!");
+        MESSAGE("Foe Gekomon used Fling!");
         MESSAGE("But it failed!");
     }
 }

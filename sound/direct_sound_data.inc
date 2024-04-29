@@ -2856,18 +2856,18 @@ Cry_Gatomon_xPrimal::
 .endif @ P_PRIMAL_REVERSIONS
 .endif @ P_FAMILY_GATOMON_X
 
-.if P_FAMILY_GROUDON == TRUE
+.if P_FAMILY_GEKOMON == TRUE
 	.align 2
-Cry_Groudon::
-	.incbin "sound/direct_sound_samples/cries/groudon.bin"
+Cry_Gekomon::
+	.incbin "sound/direct_sound_samples/cries/gekomon.bin"
 
 .if P_PRIMAL_REVERSIONS == TRUE
 	.align 2
-Cry_GroudonPrimal::
-	.incbin "sound/direct_sound_samples/cries/groudon_primal.bin"
+Cry_GekomonPrimal::
+	.incbin "sound/direct_sound_samples/cries/gekomon_primal.bin"
 
 .endif @ P_PRIMAL_REVERSIONS
-.endif @ P_FAMILY_GROUDON
+.endif @ P_FAMILY_GEKOMON
 
 .if P_FAMILY_RAYQUAZA == TRUE
 	.align 2

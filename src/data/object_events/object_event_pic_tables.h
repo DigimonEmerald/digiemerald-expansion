@@ -953,16 +953,16 @@ static const struct SpriteFrameImage sPicTable_Gatomon_xFront[] = {
     overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 1),
 };
 
-static const struct SpriteFrameImage sPicTable_GroudonFront[] = {
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 1),
+static const struct SpriteFrameImage sPicTable_GekomonFront[] = {
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 1),
 };
 
 static const struct SpriteFrameImage sPicTable_Gatomon_xSide[] = {
@@ -977,16 +977,16 @@ static const struct SpriteFrameImage sPicTable_Gatomon_xSide[] = {
     overworld_frame(gObjectEventPic_Gatomon_x, 4, 4, 3),
 };
 
-static const struct SpriteFrameImage sPicTable_GroudonSide[] = {
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Groudon, 4, 4, 3),
+static const struct SpriteFrameImage sPicTable_GekomonSide[] = {
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Gekomon, 4, 4, 3),
 };
 
 static const struct SpriteFrameImage sPicTable_Fossil[] = {

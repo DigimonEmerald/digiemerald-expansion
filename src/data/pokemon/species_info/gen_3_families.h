@@ -9320,7 +9320,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .description = COMPOUND_STRING(
             "Gatomon_x has appeared in mythology as the\n"
             "creator of the sea. After long years of\n"
-            "feuding with Groudon, it took to sleep at\n"
+            "feuding with Gekomon, it took to sleep at\n"
             "the bottom of the sea."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
@@ -9406,8 +9406,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_PRIMAL_REVERSIONS
 #endif //P_FAMILY_GATOMON_X
 
-#if P_FAMILY_GROUDON
-    [SPECIES_GROUDON] =
+#if P_FAMILY_GEKOMON
+    [SPECIES_GEKOMON] =
     {
         .baseHP        = 100,
         .baseAttack    = 150,
@@ -9432,14 +9432,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_DROUGHT, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Groudon"),
-        .cryId = CRY_GROUDON,
-        .natDexNum = NATIONAL_DEX_GROUDON,
+        .speciesName = _("Gekomon"),
+        .cryId = CRY_GEKOMON,
+        .natDexNum = NATIONAL_DEX_GEKOMON,
         .categoryName = _("Continent"),
         .height = 35,
         .weight = 9500,
         .description = COMPOUND_STRING(
-            "Groudon has appeared in mythology as the\n"
+            "Gekomon has appeared in mythology as the\n"
             "creator of the land. It sleeps in magma\n"
             "underground and is said to make volcanoes\n"
             "erupt on awakening."),
@@ -9447,29 +9447,29 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 515,
         .trainerOffset = 14,
-        .frontPic = gMonFrontPic_Groudon,
+        .frontPic = gMonFrontPic_Gekomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Groudon,
+        .frontAnimFrames = sAnims_Gekomon,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Groudon,
+        .backPic = gMonBackPic_Gekomon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_Groudon,
-        .shinyPalette = gMonShinyPalette_Groudon,
-        .iconSprite = gMonIcon_Groudon,
+        .palette = gMonPalette_Gekomon,
+        .shinyPalette = gMonShinyPalette_Gekomon,
+        .iconSprite = gMonIcon_Gekomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Groudon)
+        FOOTPRINT(Gekomon)
         .isLegendary = TRUE,
-        .levelUpLearnset = sGroudonLevelUpLearnset,
-        .teachableLearnset = sGroudonTeachableLearnset,
-        .formSpeciesIdTable = sGroudonFormSpeciesIdTable,
-        .formChangeTable = sGroudonFormChangeTable,
+        .levelUpLearnset = sGekomonLevelUpLearnset,
+        .teachableLearnset = sGekomonTeachableLearnset,
+        .formSpeciesIdTable = sGekomonFormSpeciesIdTable,
+        .formChangeTable = sGekomonFormChangeTable,
     },
 
 #if P_PRIMAL_REVERSIONS
-    [SPECIES_GROUDON_PRIMAL] =
+    [SPECIES_GEKOMON_PRIMAL] =
     {
         .baseHP        = 100,
         .baseAttack    = 180,
@@ -9488,14 +9488,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_DESOLATE_LAND, ABILITY_DESOLATE_LAND },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Groudon"),
-        .cryId = CRY_GROUDON,
-        .natDexNum = NATIONAL_DEX_GROUDON,
+        .speciesName = _("Gekomon"),
+        .cryId = CRY_GEKOMON,
+        .natDexNum = NATIONAL_DEX_GEKOMON,
         .categoryName = _("Continent"),
         .height = 50,
         .weight = 9997,
         .description = COMPOUND_STRING(
-            "When Groudon howled, the earth swelled and\n"
+            "When Gekomon howled, the earth swelled and\n"
             "the land grew wide. The sun blazed atop\n"
             "and all the world around the creature\n"
             "was enveloped in incandescent heat."),
@@ -9503,29 +9503,29 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 515,
         .trainerOffset = 14,
-        .frontPic = gMonFrontPic_GroudonPrimal,
+        .frontPic = gMonFrontPic_GekomonPrimal,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_GroudonPrimal,
+        .frontAnimFrames = sAnims_GekomonPrimal,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_GroudonPrimal,
+        .backPic = gMonBackPic_GekomonPrimal,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_GroudonPrimal,
-        .shinyPalette = gMonShinyPalette_GroudonPrimal,
-        .iconSprite = gMonIcon_GroudonPrimal,
+        .palette = gMonPalette_GekomonPrimal,
+        .shinyPalette = gMonShinyPalette_GekomonPrimal,
+        .iconSprite = gMonIcon_GekomonPrimal,
         .iconPalIndex = 0,
-        FOOTPRINT(Groudon)
+        FOOTPRINT(Gekomon)
         .isLegendary = TRUE,
         .isPrimalReversion = TRUE,
-        .levelUpLearnset = sGroudonLevelUpLearnset,
-        .teachableLearnset = sGroudonTeachableLearnset,
-        .formSpeciesIdTable = sGroudonFormSpeciesIdTable,
-        .formChangeTable = sGroudonFormChangeTable,
+        .levelUpLearnset = sGekomonLevelUpLearnset,
+        .teachableLearnset = sGekomonTeachableLearnset,
+        .formSpeciesIdTable = sGekomonFormSpeciesIdTable,
+        .formChangeTable = sGekomonFormChangeTable,
     },
 #endif //P_PRIMAL_REVERSIONS
-#endif //P_FAMILY_GROUDON
+#endif //P_FAMILY_GEKOMON
 
 #if P_FAMILY_RAYQUAZA
     [SPECIES_RAYQUAZA] =
@@ -9563,7 +9563,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .description = COMPOUND_STRING(
             "A Pokémon that flies endlessly in the\n"
             "ozone layer. It is said it would descend\n"
-            "to the ground if Gatomon_x and Groudon\n"
+            "to the ground if Gatomon_x and Gekomon\n"
             "were to fight."),
         .pokemonScale = 256,
         .pokemonOffset = 0,

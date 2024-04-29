@@ -762,10 +762,10 @@ void DrawMainBattleBackground(void)
     {
         switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
         {
-        case SPECIES_GROUDON:
+        case SPECIES_GEKOMON:
             LZDecompressVram(gBattleTerrainTiles_Cave, (void*)(BG_CHAR_ADDR(2)));
             LZDecompressVram(gBattleTerrainTilemap_Cave, (void*)(BG_SCREEN_ADDR(26)));
-            LoadCompressedPalette(gBattleTerrainPalette_Groudon, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            LoadCompressedPalette(gBattleTerrainPalette_Gekomon, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             break;
         case SPECIES_GATOMON_X:
             LZDecompressVram(gBattleTerrainTiles_Water, (void*)(BG_CHAR_ADDR(2)));
@@ -1167,7 +1167,7 @@ void DrawBattleEntryBackground(void)
     {
         switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
         {
-        case SPECIES_GROUDON:
+        case SPECIES_GEKOMON:
             LZDecompressVram(gBattleTerrainAnimTiles_Cave, (void*)(BG_CHAR_ADDR(1)));
             LZDecompressVram(gBattleTerrainAnimTilemap_Cave, (void*)(BG_SCREEN_ADDR(28)));
             break;
@@ -1242,7 +1242,7 @@ bool8 LoadChosenBattleElement(u8 caseId)
         {
             switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
             {
-            case SPECIES_GROUDON:
+            case SPECIES_GEKOMON:
                 LZDecompressVram(gBattleTerrainTiles_Cave, (void*)(BG_CHAR_ADDR(2)));
                 break;
             case SPECIES_GATOMON_X:
@@ -1307,7 +1307,7 @@ bool8 LoadChosenBattleElement(u8 caseId)
         }
         else if (gBattleTypeFlags & BATTLE_TYPE_LEGENDARY)
         {
-            if (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL) == SPECIES_GROUDON)
+            if (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL) == SPECIES_GEKOMON)
                 LZDecompressVram(gBattleTerrainTilemap_Cave, (void*)(BG_SCREEN_ADDR(26)));
             else
                 LZDecompressVram(gBattleTerrainTilemap_Water, (void *)(BG_SCREEN_ADDR(26)));
@@ -1369,8 +1369,8 @@ bool8 LoadChosenBattleElement(u8 caseId)
         }
         else if (gBattleTypeFlags & BATTLE_TYPE_LEGENDARY)
         {
-            if (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL) == SPECIES_GROUDON)
-                LoadCompressedPalette(gBattleTerrainPalette_Groudon, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
+            if (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL) == SPECIES_GEKOMON)
+                LoadCompressedPalette(gBattleTerrainPalette_Gekomon, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
             else
                 LoadCompressedPalette(gBattleTerrainPalette_Gatomon_x, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
         }

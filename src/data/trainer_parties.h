@@ -11794,7 +11794,7 @@ static const struct TrainerMon sParty_Leaf[] = {
 static const struct TrainerMon sParty_BrendanLinkPlaceholder[] = {
     {
     .lvl = 5,
-    .species = SPECIES_GROUDON,
+    .species = SPECIES_GEKOMON,
     }
 };
 

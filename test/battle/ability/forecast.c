@@ -159,7 +159,7 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon in weather from an ability")
 {
     u32 species, ability;
     PARAMETRIZE { species = SPECIES_GATOMON_X; ability = ABILITY_DRIZZLE; }
-    PARAMETRIZE { species = SPECIES_GROUDON; ability = ABILITY_DROUGHT; }
+    PARAMETRIZE { species = SPECIES_GEKOMON; ability = ABILITY_DROUGHT; }
     PARAMETRIZE { species = SPECIES_ABOMASNOW; ability = ABILITY_SNOW_WARNING; }
     GIVEN {
         PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); }
@@ -191,7 +191,7 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon in primal weather")
 {
     u32 species, item, ability;
     PARAMETRIZE { species = SPECIES_GATOMON_X; ability = ABILITY_PRIMORDIAL_SEA; item = ITEM_BLUE_ORB; }
-    PARAMETRIZE { species = SPECIES_GROUDON; ability = ABILITY_DESOLATE_LAND; item = ITEM_RED_ORB; }
+    PARAMETRIZE { species = SPECIES_GEKOMON; ability = ABILITY_DESOLATE_LAND; item = ITEM_RED_ORB; }
     GIVEN {
         PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); }
         OPPONENT(SPECIES_LOPMONX);

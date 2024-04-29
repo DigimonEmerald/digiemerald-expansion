@@ -5542,24 +5542,24 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_PRIMAL_REVERSIONS
 #endif //P_FAMILY_GATOMON_X
 
-#if P_FAMILY_GROUDON
-    const u32 gMonFrontPic_Groudon[] = INCBIN_U32("graphics/pokemon/groudon/anim_front.4bpp.lz");
-    const u32 gMonPalette_Groudon[] = INCBIN_U32("graphics/pokemon/groudon/normal.gbapal.lz");
-    const u32 gMonBackPic_Groudon[] = INCBIN_U32("graphics/pokemon/groudon/back.4bpp.lz");
-    const u32 gMonShinyPalette_Groudon[] = INCBIN_U32("graphics/pokemon/groudon/shiny.gbapal.lz");
-    const u8 gMonIcon_Groudon[] = INCBIN_U8("graphics/pokemon/groudon/icon.4bpp");
+#if P_FAMILY_GEKOMON
+    const u32 gMonFrontPic_Gekomon[] = INCBIN_U32("graphics/pokemon/gekomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gekomon[] = INCBIN_U32("graphics/pokemon/gekomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Gekomon[] = INCBIN_U32("graphics/pokemon/gekomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gekomon[] = INCBIN_U32("graphics/pokemon/gekomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Gekomon[] = INCBIN_U8("graphics/pokemon/gekomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Groudon[] = INCBIN_U8("graphics/pokemon/groudon/footprint.1bpp");
+    const u8 gMonFootprint_Gekomon[] = INCBIN_U8("graphics/pokemon/gekomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_PRIMAL_REVERSIONS
-    const u32 gMonFrontPic_GroudonPrimal[] = INCBIN_U32("graphics/pokemon/groudon/primal/front.4bpp.lz");
-    const u32 gMonPalette_GroudonPrimal[] = INCBIN_U32("graphics/pokemon/groudon/primal/normal.gbapal.lz");
-    const u32 gMonBackPic_GroudonPrimal[] = INCBIN_U32("graphics/pokemon/groudon/primal/back.4bpp.lz");
-    const u32 gMonShinyPalette_GroudonPrimal[] = INCBIN_U32("graphics/pokemon/groudon/primal/shiny.gbapal.lz");
-    const u8 gMonIcon_GroudonPrimal[] = INCBIN_U8("graphics/pokemon/groudon/primal/icon.4bpp");
+    const u32 gMonFrontPic_GekomonPrimal[] = INCBIN_U32("graphics/pokemon/gekomon/primal/front.4bpp.lz");
+    const u32 gMonPalette_GekomonPrimal[] = INCBIN_U32("graphics/pokemon/gekomon/primal/normal.gbapal.lz");
+    const u32 gMonBackPic_GekomonPrimal[] = INCBIN_U32("graphics/pokemon/gekomon/primal/back.4bpp.lz");
+    const u32 gMonShinyPalette_GekomonPrimal[] = INCBIN_U32("graphics/pokemon/gekomon/primal/shiny.gbapal.lz");
+    const u8 gMonIcon_GekomonPrimal[] = INCBIN_U8("graphics/pokemon/gekomon/primal/icon.4bpp");
 #endif //P_PRIMAL_REVERSIONS
-#endif //P_FAMILY_GROUDON
+#endif //P_FAMILY_GEKOMON
 
 #if P_FAMILY_RAYQUAZA
     const u32 gMonFrontPic_Rayquaza[] = INCBIN_U32("graphics/pokemon/rayquaza/anim_front.4bpp.lz");

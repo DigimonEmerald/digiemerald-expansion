@@ -1132,7 +1132,7 @@ SECTIONS {
         sound/songs/midi/mus_vs_gym_leader.o(.rodata);
         sound/songs/midi/mus_vs_champion.o(.rodata);
         sound/songs/midi/mus_vs_regi.o(.rodata);
-        sound/songs/midi/mus_vs_gatomon_x_groudon.o(.rodata);
+        sound/songs/midi/mus_vs_kyogre_groudon.o(.rodata);
         sound/songs/midi/mus_vs_rival.o(.rodata);
         sound/songs/midi/mus_vs_elite_four.o(.rodata);
         sound/songs/midi/mus_vs_aqua_magma_leader.o(.rodata);

@@ -214,7 +214,7 @@ SINGLE_BATTLE_TEST("Toxic Spikes inflicts poison on switch in after Primal Rever
     GIVEN {
         ASSUME(gMovesInfo[MOVE_MEMENTO].effect == EFFECT_MEMENTO); // Faints the user.
         PLAYER(SPECIES_LOPMONX) {Speed(5); }
-        PLAYER(SPECIES_GROUDON) { Item(ITEM_RED_ORB); Speed(1); }
+        PLAYER(SPECIES_GEKOMON) { Item(ITEM_RED_ORB); Speed(1); }
         PLAYER(SPECIES_EXVEEMON) {Speed(5); }
         OPPONENT(SPECIES_LOPMONX) {Speed(15); }
     } WHEN {
@@ -226,14 +226,14 @@ SINGLE_BATTLE_TEST("Toxic Spikes inflicts poison on switch in after Primal Rever
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC_SPIKES, opponent);
         MESSAGE("Poison Spikes were scattered all around your team's feet!");
         // Switch in
-        MESSAGE("Go! Groudon!");
+        MESSAGE("Go! Gekomon!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, player);
         STATUS_ICON(player, poison: TRUE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, player);
-        MESSAGE("Groudon's Primal Reversion! It reverted to its primal form!");
+        MESSAGE("Gekomon's Primal Reversion! It reverted to its primal form!");
         // Memento
-        MESSAGE("Groudon used Memento!");
-        MESSAGE("Groudon fainted!");
+        MESSAGE("Gekomon used Memento!");
+        MESSAGE("Gekomon fainted!");
         // 2nd switch-in
         MESSAGE("Go! Exveemon!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, player);

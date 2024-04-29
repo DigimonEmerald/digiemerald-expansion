@@ -959,15 +959,15 @@ static const u16 sGatomon_xFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_GATOMON_X
 
-#if P_FAMILY_GROUDON
-static const u16 sGroudonFormSpeciesIdTable[] = {
-    SPECIES_GROUDON,
+#if P_FAMILY_GEKOMON
+static const u16 sGekomonFormSpeciesIdTable[] = {
+    SPECIES_GEKOMON,
 #if P_PRIMAL_REVERSIONS
-    SPECIES_GROUDON_PRIMAL,
+    SPECIES_GEKOMON_PRIMAL,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_GROUDON
+#endif //P_FAMILY_GEKOMON
 
 #if P_FAMILY_RAYQUAZA
 static const u16 sRayquazaFormSpeciesIdTable[] = {
