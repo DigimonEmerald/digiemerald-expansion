@@ -15063,8 +15063,8 @@ static const u16 sRoseradeTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BULLMON
 
-#if P_FAMILY_GULPIN
-static const u16 sGulpinTeachableLearnset[] = {
+#if P_FAMILY_BURAIMON
+static const u16 sBuraimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_DOUBLE_TEAM,
@@ -15151,7 +15151,7 @@ static const u16 sSwalotTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_GULPIN
+#endif //P_FAMILY_BURAIMON
 
 #if P_FAMILY_CARVANHA
 static const u16 sCarvanhaTeachableLearnset[] = {

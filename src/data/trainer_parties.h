@@ -4082,7 +4082,7 @@ static const struct TrainerMon sParty_Ben[] = {
     {
     .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
     .lvl = 17,
-    .species = SPECIES_GULPIN,
+    .species = SPECIES_BURAIMON,
     .moves = {MOVE_AMNESIA, MOVE_SLUDGE, MOVE_YAWN, MOVE_POUND}
     }
 };
@@ -9431,7 +9431,7 @@ static const struct TrainerMon sParty_Jaiden[] = {
     },
     {
     .lvl = 26,
-    .species = SPECIES_GULPIN,
+    .species = SPECIES_BURAIMON,
     }
 };
 
@@ -9640,7 +9640,7 @@ static const struct TrainerMon sParty_Pat[] = {
     {
     .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
     .lvl = 25,
-    .species = SPECIES_GULPIN,
+    .species = SPECIES_BURAIMON,
     }
 };
 

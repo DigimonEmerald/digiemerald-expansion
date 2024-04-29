@@ -214,7 +214,7 @@
 #define P_FAMILY_BUCCHIEMON_RED                   P_GEN_3_POKEMON
 #define P_FAMILY_BUCCHIEMON_GREEN_BULKMON        P_GEN_3_POKEMON
 #define P_FAMILY_BULLMON                 P_GEN_3_POKEMON
-#define P_FAMILY_GULPIN                  P_GEN_3_POKEMON
+#define P_FAMILY_BURAIMON                  P_GEN_3_POKEMON
 #define P_FAMILY_CARVANHA                P_GEN_3_POKEMON
 #define P_FAMILY_WAILMER                 P_GEN_3_POKEMON
 #define P_FAMILY_NUMEL                   P_GEN_3_POKEMON

@@ -4626,8 +4626,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BULLMON
 
-#if P_FAMILY_GULPIN
-    [SPECIES_GULPIN] =
+#if P_FAMILY_BURAIMON
+    [SPECIES_BURAIMON] =
     {
         .baseHP        = 70,
         .baseAttack    = 43,
@@ -4648,9 +4648,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_LIQUID_OOZE, ABILITY_STICKY_HOLD, ABILITY_GLUTTONY },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Gulpin"),
-        .cryId = CRY_GULPIN,
-        .natDexNum = NATIONAL_DEX_GULPIN,
+        .speciesName = _("Buraimon"),
+        .cryId = CRY_BURAIMON,
+        .natDexNum = NATIONAL_DEX_BURAIMON,
         .categoryName = _("Stomach"),
         .height = 4,
         .weight = 103,
@@ -4663,26 +4663,26 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 23,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Gulpin,
-        .frontPicFemale = gMonFrontPic_GulpinF,
+        .frontPic = gMonFrontPic_Buraimon,
+        .frontPicFemale = gMonFrontPic_BuraimonF,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicSizeFemale = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 15,
-        .frontAnimFrames = sAnims_Gulpin,
+        .frontAnimFrames = sAnims_Buraimon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Gulpin,
-        .backPicFemale = gMonBackPic_GulpinF,
+        .backPic = gMonBackPic_Buraimon,
+        .backPicFemale = gMonBackPic_BuraimonF,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicSizeFemale = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Gulpin,
-        .shinyPalette = gMonShinyPalette_Gulpin,
-        .iconSprite = gMonIcon_Gulpin,
+        .palette = gMonPalette_Buraimon,
+        .shinyPalette = gMonShinyPalette_Buraimon,
+        .iconSprite = gMonIcon_Buraimon,
         .iconPalIndex = 1,
-        FOOTPRINT(Gulpin)
-        .levelUpLearnset = sGulpinLevelUpLearnset,
-        .teachableLearnset = sGulpinTeachableLearnset,
+        FOOTPRINT(Buraimon)
+        .levelUpLearnset = sBuraimonLevelUpLearnset,
+        .teachableLearnset = sBuraimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_SWALOT}),
     },
 
@@ -4743,7 +4743,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sSwalotLevelUpLearnset,
         .teachableLearnset = sSwalotTeachableLearnset,
     },
-#endif //P_FAMILY_GULPIN
+#endif //P_FAMILY_BURAIMON
 
 #if P_FAMILY_CARVANHA
     [SPECIES_CARVANHA] =

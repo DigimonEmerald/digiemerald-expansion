@@ -4709,18 +4709,18 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BULLMON
 
-#if P_FAMILY_GULPIN
-    const u32 gMonFrontPic_Gulpin[] = INCBIN_U32("graphics/pokemon/gulpin/anim_front.4bpp.lz");
-    const u32 gMonPalette_Gulpin[] = INCBIN_U32("graphics/pokemon/gulpin/normal.gbapal.lz");
-    const u32 gMonBackPic_Gulpin[] = INCBIN_U32("graphics/pokemon/gulpin/back.4bpp.lz");
-    const u32 gMonShinyPalette_Gulpin[] = INCBIN_U32("graphics/pokemon/gulpin/shiny.gbapal.lz");
-    const u8 gMonIcon_Gulpin[] = INCBIN_U8("graphics/pokemon/gulpin/icon.4bpp");
+#if P_FAMILY_BURAIMON
+    const u32 gMonFrontPic_Buraimon[] = INCBIN_U32("graphics/pokemon/buraimon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Buraimon[] = INCBIN_U32("graphics/pokemon/buraimon/normal.gbapal.lz");
+    const u32 gMonBackPic_Buraimon[] = INCBIN_U32("graphics/pokemon/buraimon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Buraimon[] = INCBIN_U32("graphics/pokemon/buraimon/shiny.gbapal.lz");
+    const u8 gMonIcon_Buraimon[] = INCBIN_U8("graphics/pokemon/buraimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Gulpin[] = INCBIN_U8("graphics/pokemon/gulpin/footprint.1bpp");
+    const u8 gMonFootprint_Buraimon[] = INCBIN_U8("graphics/pokemon/buraimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_GulpinF[] = INCBIN_U32("graphics/pokemon/gulpin/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_GulpinF[] = INCBIN_U32("graphics/pokemon/gulpin/backf.4bpp.lz");
+    const u32 gMonFrontPic_BuraimonF[] = INCBIN_U32("graphics/pokemon/buraimon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_BuraimonF[] = INCBIN_U32("graphics/pokemon/buraimon/backf.4bpp.lz");
 
     const u32 gMonFrontPic_Swalot[] = INCBIN_U32("graphics/pokemon/swalot/anim_front.4bpp.lz");
     const u32 gMonPalette_Swalot[] = INCBIN_U32("graphics/pokemon/swalot/normal.gbapal.lz");
@@ -4733,7 +4733,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 
     const u32 gMonFrontPic_SwalotF[] = INCBIN_U32("graphics/pokemon/swalot/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_SwalotF[] = INCBIN_U32("graphics/pokemon/swalot/backf.4bpp.lz");
-#endif //P_FAMILY_GULPIN
+#endif //P_FAMILY_BURAIMON
 
 #if P_FAMILY_CARVANHA
     const u32 gMonFrontPic_Carvanha[] = INCBIN_U32("graphics/pokemon/carvanha/anim_front.4bpp.lz");
@@ -11053,11 +11053,11 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Cramorant[] = INCBIN_U8("graphics/pokemon/cramorant/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_CramorantGulping[] = INCBIN_U32("graphics/pokemon/cramorant/gulping/front.4bpp.lz");
-    const u32 gMonPalette_CramorantGulping[] = INCBIN_U32("graphics/pokemon/cramorant/gulping/normal.gbapal.lz");
-    const u32 gMonBackPic_CramorantGulping[] = INCBIN_U32("graphics/pokemon/cramorant/gulping/back.4bpp.lz");
-    const u32 gMonShinyPalette_CramorantGulping[] = INCBIN_U32("graphics/pokemon/cramorant/gulping/shiny.gbapal.lz");
-    const u8 gMonIcon_CramorantGulping[] = INCBIN_U8("graphics/pokemon/cramorant/gulping/icon.4bpp");
+    const u32 gMonFrontPic_CramorantBuraimong[] = INCBIN_U32("graphics/pokemon/cramorant/buraimong/front.4bpp.lz");
+    const u32 gMonPalette_CramorantBuraimong[] = INCBIN_U32("graphics/pokemon/cramorant/buraimong/normal.gbapal.lz");
+    const u32 gMonBackPic_CramorantBuraimong[] = INCBIN_U32("graphics/pokemon/cramorant/buraimong/back.4bpp.lz");
+    const u32 gMonShinyPalette_CramorantBuraimong[] = INCBIN_U32("graphics/pokemon/cramorant/buraimong/shiny.gbapal.lz");
+    const u8 gMonIcon_CramorantBuraimong[] = INCBIN_U8("graphics/pokemon/cramorant/buraimong/icon.4bpp");
 
     const u32 gMonFrontPic_CramorantGorging[] = INCBIN_U32("graphics/pokemon/cramorant/gorging/front.4bpp.lz");
     const u32 gMonPalette_CramorantGorging[] = INCBIN_U32("graphics/pokemon/cramorant/gorging/normal.gbapal.lz");

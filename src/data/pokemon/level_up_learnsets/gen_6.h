@@ -8298,8 +8298,8 @@ static const struct LevelUpMove sRoseradeLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BULLMON
 
-#if P_FAMILY_GULPIN
-static const struct LevelUpMove sGulpinLevelUpLearnset[] = {
+#if P_FAMILY_BURAIMON
+static const struct LevelUpMove sBuraimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 5, MOVE_YAWN),
     LEVEL_UP_MOVE( 8, MOVE_POISON_GAS),
@@ -8344,7 +8344,7 @@ static const struct LevelUpMove sSwalotLevelUpLearnset[] = {
     LEVEL_UP_MOVE(61, MOVE_GUNK_SHOT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_GULPIN
+#endif //P_FAMILY_BURAIMON
 
 #if P_FAMILY_CARVANHA
 static const struct LevelUpMove sCarvanhaLevelUpLearnset[] = {

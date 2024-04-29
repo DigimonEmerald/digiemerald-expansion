@@ -5620,7 +5620,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                     gBattlescriptCurrInstr = BattleScript_GulpMissileGorging;
                     effect++;
                 }
-                else if (gBattleMons[gBattlerTarget].species == SPECIES_CRAMORANT_GULPING)
+                else if (gBattleMons[gBattlerTarget].species == SPECIES_CRAMORANT_BURAIMONG)
                 {
                     gBattleMons[gBattlerTarget].species = SPECIES_CRAMORANT;
                     if (GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD)
@@ -5630,7 +5630,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                             gBattleMoveDamage = 1;
                     }
                     BattleScriptPushCursor();
-                    gBattlescriptCurrInstr = BattleScript_GulpMissileGulping;
+                    gBattlescriptCurrInstr = BattleScript_GulpMissileBuraimong;
                     effect++;
                 }
             }

@@ -317,7 +317,7 @@
 #define SPECIES_BUCCHIEMON_GREEN                                 313
 #define SPECIES_BULKMON                                314
 #define SPECIES_BULLMON                                 315
-#define SPECIES_GULPIN                                  316
+#define SPECIES_BURAIMON                                  316
 #define SPECIES_SWALOT                                  317
 #define SPECIES_CARVANHA                                318
 #define SPECIES_SHARPEDO                                319
@@ -1282,7 +1282,7 @@
 #define SPECIES_NECROZMA_DAWN_WINGS                     1208
 #define SPECIES_NECROZMA_ULTRA                          1209
 #define SPECIES_MAGEARNA_ORIGINAL_COLOR                 1210
-#define SPECIES_CRAMORANT_GULPING                       1211
+#define SPECIES_CRAMORANT_BURAIMONG                       1211
 #define SPECIES_CRAMORANT_GORGING                       1212
 #define SPECIES_TOXTRICITY_LOW_KEY                      1213
 #define SPECIES_SINISTEA_ANTIQUE                        1214

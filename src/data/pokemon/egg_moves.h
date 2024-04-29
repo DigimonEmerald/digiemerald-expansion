@@ -2545,8 +2545,8 @@ const u16 gEggMoves[] = {
         MOVE_POWER_WHIP),
 #endif //P_FAMILY_BULLMON
 
-#if P_FAMILY_GULPIN
-    egg_moves(GULPIN,
+#if P_FAMILY_BURAIMON
+    egg_moves(BURAIMON,
         MOVE_ACID_ARMOR,
         MOVE_SMOG,
         MOVE_PAIN_SPLIT,
@@ -2555,7 +2555,7 @@ const u16 gEggMoves[] = {
         MOVE_MUD_SLAP,
         MOVE_GUNK_SHOT,
         MOVE_VENOM_DRENCH),
-#endif //P_FAMILY_GULPIN
+#endif //P_FAMILY_BURAIMON
 
 #if P_FAMILY_CARVANHA
     egg_moves(CARVANHA,

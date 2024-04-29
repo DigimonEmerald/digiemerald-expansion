@@ -2428,15 +2428,15 @@ Cry_Roserade::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_BULLMON
 
-.if P_FAMILY_GULPIN == TRUE
+.if P_FAMILY_BURAIMON == TRUE
 	.align 2
-Cry_Gulpin::
-	.incbin "sound/direct_sound_samples/cries/gulpin.bin"
+Cry_Buraimon::
+	.incbin "sound/direct_sound_samples/cries/buraimon.bin"
 
 	.align 2
 Cry_Swalot::
 	.incbin "sound/direct_sound_samples/cries/swalot.bin"
-.endif @ P_FAMILY_GULPIN
+.endif @ P_FAMILY_BURAIMON
 
 .if P_FAMILY_CARVANHA == TRUE
 	.align 2

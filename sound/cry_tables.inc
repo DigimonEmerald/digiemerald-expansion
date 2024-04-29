@@ -873,10 +873,10 @@ gCryTable::
 	cry Cry_Roserade
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_BULLMON
-.if P_FAMILY_GULPIN == TRUE
-	cry Cry_Gulpin
+.if P_FAMILY_BURAIMON == TRUE
+	cry Cry_Buraimon
 	cry Cry_Swalot
-.endif @ P_FAMILY_GULPIN
+.endif @ P_FAMILY_BURAIMON
 .if P_FAMILY_CARVANHA == TRUE
 	cry Cry_Carvanha
 	cry Cry_Sharpedo
@@ -3299,10 +3299,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Roserade
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_BULLMON
-.if P_FAMILY_GULPIN == TRUE
-	cry_reverse Cry_Gulpin
+.if P_FAMILY_BURAIMON == TRUE
+	cry_reverse Cry_Buraimon
 	cry_reverse Cry_Swalot
-.endif @ P_FAMILY_GULPIN
+.endif @ P_FAMILY_BURAIMON
 .if P_FAMILY_CARVANHA == TRUE
 	cry_reverse Cry_Carvanha
 	cry_reverse Cry_Sharpedo

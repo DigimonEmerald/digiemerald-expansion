@@ -6379,7 +6379,7 @@ BattleScript_GulpMissileNoSecondEffectGorging:
 	waitanimation
 	return
 
-BattleScript_GulpMissileGulping::
+BattleScript_GulpMissileBuraimong::
 	call BattleScript_AbilityPopUp
 	playanimation BS_ATTACKER, B_ANIM_GULP_MISSILE
 	waitanimation
@@ -6387,17 +6387,17 @@ BattleScript_GulpMissileGulping::
 	effectivenesssound
 	hitanimation BS_ATTACKER
 	waitstate
-	jumpifability BS_ATTACKER, ABILITY_MAGIC_GUARD, BattleScript_GulpMissileNoDmgGulping
+	jumpifability BS_ATTACKER, ABILITY_MAGIC_GUARD, BattleScript_GulpMissileNoDmgBuraimong
 	healthbarupdate BS_ATTACKER
 	datahpupdate BS_ATTACKER
 	tryfaintmon BS_ATTACKER
-	jumpiffainted BS_ATTACKER, TRUE, BattleScript_GulpMissileNoSecondEffectGulping
-	jumpifholdeffect BS_ATTACKER, HOLD_EFFECT_CLEAR_AMULET, BattleScript_GulpMissileNoSecondEffectGulping
-	jumpifability BS_ATTACKER, ABILITY_CLEAR_BODY, BattleScript_GulpMissileNoSecondEffectGulping
-	jumpifability BS_ATTACKER, ABILITY_FULL_METAL_BODY, BattleScript_GulpMissileNoSecondEffectGulping
-	jumpifability BS_ATTACKER, ABILITY_WHITE_SMOKE, BattleScript_GulpMissileNoSecondEffectGulping
-	jumpifflowerveilattacker BattleScript_GulpMissileNoSecondEffectGulping
-BattleScript_GulpMissileNoDmgGulping:
+	jumpiffainted BS_ATTACKER, TRUE, BattleScript_GulpMissileNoSecondEffectBuraimong
+	jumpifholdeffect BS_ATTACKER, HOLD_EFFECT_CLEAR_AMULET, BattleScript_GulpMissileNoSecondEffectBuraimong
+	jumpifability BS_ATTACKER, ABILITY_CLEAR_BODY, BattleScript_GulpMissileNoSecondEffectBuraimong
+	jumpifability BS_ATTACKER, ABILITY_FULL_METAL_BODY, BattleScript_GulpMissileNoSecondEffectBuraimong
+	jumpifability BS_ATTACKER, ABILITY_WHITE_SMOKE, BattleScript_GulpMissileNoSecondEffectBuraimong
+	jumpifflowerveilattacker BattleScript_GulpMissileNoSecondEffectBuraimong
+BattleScript_GulpMissileNoDmgBuraimong:
 	handleformchange BS_TARGET, 0
 	playanimation BS_TARGET, B_ANIM_FORM_CHANGE
 	waitanimation
@@ -6410,7 +6410,7 @@ BattleScript_GulpMissileNoDmgGulping:
 	waitmessage B_WAIT_TIME_LONG
 	swapattackerwithtarget @ restore the battlers, just in case
 	return
-BattleScript_GulpMissileNoSecondEffectGulping:
+BattleScript_GulpMissileNoSecondEffectBuraimong:
 	handleformchange BS_TARGET, 0
 	playanimation BS_TARGET, B_ANIM_FORM_CHANGE
 	waitanimation

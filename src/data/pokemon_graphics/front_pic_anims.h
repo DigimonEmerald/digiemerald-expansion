@@ -4227,8 +4227,8 @@ static const union AnimCmd sAnim_Roserade_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BULLMON
 
-#if P_FAMILY_GULPIN
-static const union AnimCmd sAnim_Gulpin_1[] =
+#if P_FAMILY_BURAIMON
+static const union AnimCmd sAnim_Buraimon_1[] =
 {
     ANIMCMD_FRAME(0, 14),
     ANIMCMD_FRAME(1, 14),
@@ -4246,7 +4246,7 @@ static const union AnimCmd sAnim_Swalot_1[] =
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_GULPIN
+#endif //P_FAMILY_BURAIMON
 
 #if P_FAMILY_CARVANHA
 static const union AnimCmd sAnim_Carvanha_1[] =
@@ -11171,10 +11171,10 @@ SINGLE_ANIMATION(Bullmon);
 SINGLE_ANIMATION(Roserade);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_BULLMON
-#if P_FAMILY_GULPIN
-SINGLE_ANIMATION(Gulpin);
+#if P_FAMILY_BURAIMON
+SINGLE_ANIMATION(Buraimon);
 SINGLE_ANIMATION(Swalot);
-#endif //P_FAMILY_GULPIN
+#endif //P_FAMILY_BURAIMON
 #if P_FAMILY_CARVANHA
 SINGLE_ANIMATION(Carvanha);
 SINGLE_ANIMATION(Sharpedo);

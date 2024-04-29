@@ -6,7 +6,7 @@ ASSUMPTIONS
     // ASSUME(gMovesInfo[MOVE_AERIAL_ACE].category == DAMAGE_CATEGORY_PHYSICAL);
 }
 
-SINGLE_BATTLE_TEST("(Gulp Missile) If base Cramorant hits target with Surf it transforms into Gulping form if max HP is over 1/2")
+SINGLE_BATTLE_TEST("(Gulp Missile) If base Cramorant hits target with Surf it transforms into Buraimong form if max HP is over 1/2")
 {
     GIVEN {
         PLAYER(SPECIES_CRAMORANT) { Ability(ABILITY_GULP_MISSILE); }
@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("(Gulp Missile) If base Cramorant hits target with Surf it tr
         HP_BAR(opponent);
         ABILITY_POPUP(player, ABILITY_GULP_MISSILE);
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_CRAMORANT_GULPING);
+        EXPECT_EQ(player->species, SPECIES_CRAMORANT_BURAIMONG);
     }
 }
 
@@ -50,7 +50,7 @@ SINGLE_BATTLE_TEST("(Gulp Missile) If base Cramorant is under water it transform
         NOT HP_BAR(opponent);
         ABILITY_POPUP(player, ABILITY_GULP_MISSILE);
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_CRAMORANT_GULPING);
+        EXPECT_EQ(player->species, SPECIES_CRAMORANT_BURAIMONG);
     }
 }
 
@@ -67,11 +67,11 @@ SINGLE_BATTLE_TEST("(Gulp Missile) Power Herb does not prevent Cramaront from tr
         ABILITY_POPUP(player, ABILITY_GULP_MISSILE);
         HP_BAR(opponent);
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_CRAMORANT_GULPING);
+        EXPECT_EQ(player->species, SPECIES_CRAMORANT_BURAIMONG);
     }
 }
 
-SINGLE_BATTLE_TEST("(Gulp Missile) Transformed Cramorant deal 1/4 of damage opposing mon if hit by a damaging move, Gulping also lowers defense")
+SINGLE_BATTLE_TEST("(Gulp Missile) Transformed Cramorant deal 1/4 of damage opposing mon if hit by a damaging move, Buraimong also lowers defense")
 {
     s16 gulpMissileDamage;
 

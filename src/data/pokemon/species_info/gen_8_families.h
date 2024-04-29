@@ -2621,7 +2621,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formChangeTable = sCramorantFormChangeTable,
     },
 
-    [SPECIES_CRAMORANT_GULPING] =
+    [SPECIES_CRAMORANT_BURAIMONG] =
     {
         .baseHP        = 70,
         .baseAttack    = 85,
@@ -2655,18 +2655,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_CramorantGulping,
+        .frontPic = gMonFrontPic_CramorantBuraimong,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Cramorant,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_CramorantGulping,
+        .backPic = gMonBackPic_CramorantBuraimong,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_CramorantGulping,
-        .shinyPalette = gMonShinyPalette_CramorantGulping,
-        .iconSprite = gMonIcon_CramorantGulping,
+        .palette = gMonPalette_CramorantBuraimong,
+        .shinyPalette = gMonShinyPalette_CramorantBuraimong,
+        .iconSprite = gMonIcon_CramorantBuraimong,
         .iconPalIndex = 0,
         FOOTPRINT(Cramorant)
         .levelUpLearnset = sCramorantLevelUpLearnset,
