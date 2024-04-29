@@ -5452,16 +5452,16 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FUGAMON
 
-#if P_FAMILY_REGIROCK
-    const u32 gMonFrontPic_Regirock[] = INCBIN_U32("graphics/pokemon/regirock/anim_front.4bpp.lz");
-    const u32 gMonPalette_Regirock[] = INCBIN_U32("graphics/pokemon/regirock/normal.gbapal.lz");
-    const u32 gMonBackPic_Regirock[] = INCBIN_U32("graphics/pokemon/regirock/back.4bpp.lz");
-    const u32 gMonShinyPalette_Regirock[] = INCBIN_U32("graphics/pokemon/regirock/shiny.gbapal.lz");
-    const u8 gMonIcon_Regirock[] = INCBIN_U8("graphics/pokemon/regirock/icon.4bpp");
+#if P_FAMILY_GARGOMON
+    const u32 gMonFrontPic_Gargomon[] = INCBIN_U32("graphics/pokemon/gargomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Gargomon[] = INCBIN_U32("graphics/pokemon/gargomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Gargomon[] = INCBIN_U32("graphics/pokemon/gargomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Gargomon[] = INCBIN_U32("graphics/pokemon/gargomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Gargomon[] = INCBIN_U8("graphics/pokemon/gargomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Regirock[] = INCBIN_U8("graphics/pokemon/regirock/footprint.1bpp");
+    const u8 gMonFootprint_Gargomon[] = INCBIN_U8("graphics/pokemon/gargomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_REGIROCK
+#endif //P_FAMILY_GARGOMON
 
 #if P_FAMILY_REGICE
     const u32 gMonFrontPic_Regice[] = INCBIN_U32("graphics/pokemon/regice/anim_front.4bpp.lz");

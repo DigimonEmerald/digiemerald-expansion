@@ -183,7 +183,7 @@ AI_SINGLE_BATTLE_TEST("AI chooses moves with secondary effect that have a 100% c
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_OCTAZOOKA, MOVE_EFFECT_ACC_MINUS_1, 50));
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_REGICE);
-        OPPONENT(SPECIES_REGIROCK) { Ability(ability); Moves(MOVE_SHADOW_BALL, MOVE_OCTAZOOKA); }
+        OPPONENT(SPECIES_GARGOMON) { Ability(ability); Moves(MOVE_SHADOW_BALL, MOVE_OCTAZOOKA); }
     } WHEN {
         if (ability == ABILITY_NONE)
             TURN { EXPECT_MOVE(opponent, MOVE_SHADOW_BALL); }

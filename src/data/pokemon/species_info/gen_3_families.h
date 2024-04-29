@@ -8854,8 +8854,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FUGAMON
 
-#if P_FAMILY_REGIROCK
-    [SPECIES_REGIROCK] =
+#if P_FAMILY_GARGOMON
+    [SPECIES_GARGOMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 100,
@@ -8881,40 +8881,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .abilities = { ABILITY_CLEAR_BODY, ABILITY_NONE, ABILITY_STURDY },
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = TRUE,
-        .speciesName = _("Regirock"),
-        .cryId = CRY_REGIROCK,
-        .natDexNum = NATIONAL_DEX_REGIROCK,
+        .speciesName = _("Gargomon"),
+        .cryId = CRY_GARGOMON,
+        .natDexNum = NATIONAL_DEX_GARGOMON,
         .categoryName = _("Rock Peak"),
         .height = 17,
         .weight = 2300,
         .description = COMPOUND_STRING(
             "A Pokémon that is made entirely of rocks\n"
             "and boulders. If parts of its body chip off\n"
-            "in battle, Regirock repairs itself by\n"
+            "in battle, Gargomon repairs itself by\n"
             "adding new rocks."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 309,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Regirock,
+        .frontPic = gMonFrontPic_Gargomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
-        .frontAnimFrames = sAnims_Regirock,
+        .frontAnimFrames = sAnims_Gargomon,
         .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
-        .backPic = gMonBackPic_Regirock,
+        .backPic = gMonBackPic_Gargomon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Regirock,
-        .shinyPalette = gMonShinyPalette_Regirock,
-        .iconSprite = gMonIcon_Regirock,
+        .palette = gMonPalette_Gargomon,
+        .shinyPalette = gMonShinyPalette_Gargomon,
+        .iconSprite = gMonIcon_Gargomon,
         .iconPalIndex = 2,
-        FOOTPRINT(Regirock)
+        FOOTPRINT(Gargomon)
         .isLegendary = TRUE,
-        .levelUpLearnset = sRegirockLevelUpLearnset,
-        .teachableLearnset = sRegirockTeachableLearnset,
+        .levelUpLearnset = sGargomonLevelUpLearnset,
+        .teachableLearnset = sGargomonTeachableLearnset,
     },
-#endif //P_FAMILY_REGIROCK
+#endif //P_FAMILY_GARGOMON
 
 #if P_FAMILY_REGICE
     [SPECIES_REGICE] =

@@ -2801,11 +2801,11 @@ Cry_GaogamonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FUGAMON
 
-.if P_FAMILY_REGIROCK == TRUE
+.if P_FAMILY_GARGOMON == TRUE
 	.align 2
-Cry_Regirock::
-	.incbin "sound/direct_sound_samples/cries/regirock.bin"
-.endif @ P_FAMILY_REGIROCK
+Cry_Gargomon::
+	.incbin "sound/direct_sound_samples/cries/gargomon.bin"
+.endif @ P_FAMILY_GARGOMON
 
 .if P_FAMILY_REGICE == TRUE
 	.align 2

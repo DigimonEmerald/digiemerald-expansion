@@ -9,7 +9,7 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Protean changes the type of the user only once per switch in")
 {
     GIVEN {
-        PLAYER(SPECIES_REGIROCK);
+        PLAYER(SPECIES_GARGOMON);
         OPPONENT(SPECIES_DONSHOUMON) { Ability(ABILITY_PROTEAN); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {

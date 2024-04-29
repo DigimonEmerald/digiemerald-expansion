@@ -5073,8 +5073,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(GaogamonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FUGAMON
 
-#if P_FAMILY_REGIROCK
-static const union AnimCmd sAnim_Regirock_1[] =
+#if P_FAMILY_GARGOMON
+static const union AnimCmd sAnim_Gargomon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -5083,7 +5083,7 @@ static const union AnimCmd sAnim_Regirock_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_REGIROCK
+#endif //P_FAMILY_GARGOMON
 
 #if P_FAMILY_REGICE
 static const union AnimCmd sAnim_Regice_1[] =
@@ -11335,9 +11335,9 @@ SINGLE_ANIMATION(Gaogamon);
 SINGLE_ANIMATION(GaogamonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_FUGAMON
-#if P_FAMILY_REGIROCK
-SINGLE_ANIMATION(Regirock);
-#endif //P_FAMILY_REGIROCK
+#if P_FAMILY_GARGOMON
+SINGLE_ANIMATION(Gargomon);
+#endif //P_FAMILY_GARGOMON
 #if P_FAMILY_REGICE
 SINGLE_ANIMATION(Regice);
 #endif //P_FAMILY_REGICE

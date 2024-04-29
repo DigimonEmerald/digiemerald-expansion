@@ -5063,7 +5063,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .weight = 4200,
         .description = COMPOUND_STRING(
             "There is an enduring legend that\n"
-            "states this Pokémon shaped Regirock,\n"
+            "states this Pokémon shaped Gargomon,\n"
             "Regice, and Registeel out of clay, ice,\n"
             "and magma."),
         .pokemonScale = 256,

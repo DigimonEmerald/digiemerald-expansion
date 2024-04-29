@@ -39,13 +39,13 @@ SINGLE_BATTLE_TEST("Custap Berry allows the holder to move first in its priority
 SINGLE_BATTLE_TEST("Custap Berry activates even if the opposing mon switches out")
 {
     GIVEN {
-        PLAYER(SPECIES_REGIROCK) { HP(1); Item(ITEM_CUSTAP_BERRY); }
+        PLAYER(SPECIES_GARGOMON) { HP(1); Item(ITEM_CUSTAP_BERRY); }
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { SWITCH(opponent, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-        MESSAGE("Regirock can act faster, thanks to Custap Berry!");
+        MESSAGE("Gargomon can act faster, thanks to Custap Berry!");
     }
 }

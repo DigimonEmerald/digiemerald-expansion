@@ -1034,9 +1034,9 @@ gCryTable::
 	cry Cry_GaogamonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FUGAMON
-.if P_FAMILY_REGIROCK == TRUE
-	cry Cry_Regirock
-.endif @ P_FAMILY_REGIROCK
+.if P_FAMILY_GARGOMON == TRUE
+	cry Cry_Gargomon
+.endif @ P_FAMILY_GARGOMON
 .if P_FAMILY_REGICE == TRUE
 	cry Cry_Regice
 .endif @ P_FAMILY_REGICE
@@ -3460,9 +3460,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_GaogamonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_FUGAMON
-.if P_FAMILY_REGIROCK == TRUE
-	cry_reverse Cry_Regirock
-.endif @ P_FAMILY_REGIROCK
+.if P_FAMILY_GARGOMON == TRUE
+	cry_reverse Cry_Gargomon
+.endif @ P_FAMILY_GARGOMON
 .if P_FAMILY_REGICE == TRUE
 	cry_reverse Cry_Regice
 .endif @ P_FAMILY_REGICE
