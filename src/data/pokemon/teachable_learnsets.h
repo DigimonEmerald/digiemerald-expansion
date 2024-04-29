@@ -16522,7 +16522,7 @@ static const u16 sDorugamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBanetteTeachableLearnset[] = {
+static const u16 sDorulumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,

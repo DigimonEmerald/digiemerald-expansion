@@ -2644,13 +2644,13 @@ Cry_Dorugamon::
 	.incbin "sound/direct_sound_samples/cries/dorugamon.bin"
 
 	.align 2
-Cry_Banette::
-	.incbin "sound/direct_sound_samples/cries/banette.bin"
+Cry_Dorulumon::
+	.incbin "sound/direct_sound_samples/cries/dorulumon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_BanetteMega::
-	.incbin "sound/direct_sound_samples/cries/banette_mega.bin"
+Cry_DorulumonMega::
+	.incbin "sound/direct_sound_samples/cries/dorulumon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_DORUGAMON
 

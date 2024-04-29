@@ -8328,7 +8328,7 @@ static const struct LevelUpMove sDorugamonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sBanetteLevelUpLearnset[] = {
+static const struct LevelUpMove sDorulumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_KNOCK_OFF),
     LEVEL_UP_MOVE( 1, MOVE_SCREECH),
     LEVEL_UP_MOVE( 1, MOVE_NIGHT_SHADE),

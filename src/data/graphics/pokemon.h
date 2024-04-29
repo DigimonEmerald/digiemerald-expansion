@@ -5155,21 +5155,21 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u8 gMonFootprint_Dorugamon[] = INCBIN_U8("graphics/pokemon/dorugamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Banette[] = INCBIN_U32("graphics/pokemon/banette/anim_front.4bpp.lz");
-    const u32 gMonPalette_Banette[] = INCBIN_U32("graphics/pokemon/banette/normal.gbapal.lz");
-    const u32 gMonBackPic_Banette[] = INCBIN_U32("graphics/pokemon/banette/back.4bpp.lz");
-    const u32 gMonShinyPalette_Banette[] = INCBIN_U32("graphics/pokemon/banette/shiny.gbapal.lz");
-    const u8 gMonIcon_Banette[] = INCBIN_U8("graphics/pokemon/banette/icon.4bpp");
+    const u32 gMonFrontPic_Dorulumon[] = INCBIN_U32("graphics/pokemon/dorulumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Dorulumon[] = INCBIN_U32("graphics/pokemon/dorulumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Dorulumon[] = INCBIN_U32("graphics/pokemon/dorulumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Dorulumon[] = INCBIN_U32("graphics/pokemon/dorulumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Dorulumon[] = INCBIN_U8("graphics/pokemon/dorulumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Banette[] = INCBIN_U8("graphics/pokemon/banette/footprint.1bpp");
+    const u8 gMonFootprint_Dorulumon[] = INCBIN_U8("graphics/pokemon/dorulumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_BanetteMega[] = INCBIN_U32("graphics/pokemon/banette/mega/front.4bpp.lz");
-    const u32 gMonPalette_BanetteMega[] = INCBIN_U32("graphics/pokemon/banette/mega/normal.gbapal.lz");
-    const u32 gMonBackPic_BanetteMega[] = INCBIN_U32("graphics/pokemon/banette/mega/back.4bpp.lz");
-    const u32 gMonShinyPalette_BanetteMega[] = INCBIN_U32("graphics/pokemon/banette/mega/shiny.gbapal.lz");
-    const u8 gMonIcon_BanetteMega[] = INCBIN_U8("graphics/pokemon/banette/mega/icon.4bpp");
+    const u32 gMonFrontPic_DorulumonMega[] = INCBIN_U32("graphics/pokemon/dorulumon/mega/front.4bpp.lz");
+    const u32 gMonPalette_DorulumonMega[] = INCBIN_U32("graphics/pokemon/dorulumon/mega/normal.gbapal.lz");
+    const u32 gMonBackPic_DorulumonMega[] = INCBIN_U32("graphics/pokemon/dorulumon/mega/back.4bpp.lz");
+    const u32 gMonShinyPalette_DorulumonMega[] = INCBIN_U32("graphics/pokemon/dorulumon/mega/shiny.gbapal.lz");
+    const u8 gMonIcon_DorulumonMega[] = INCBIN_U8("graphics/pokemon/dorulumon/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DORUGAMON
 

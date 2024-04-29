@@ -4759,7 +4759,7 @@ static const union AnimCmd sAnim_Dorugamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Banette_1[] =
+static const union AnimCmd sAnim_Dorulumon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4772,7 +4772,7 @@ static const union AnimCmd sAnim_Banette_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(BanetteMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(DorulumonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DORUGAMON
 
@@ -11266,9 +11266,9 @@ SINGLE_ANIMATION(Donshoumon);
 #endif //P_FAMILY_DONSHOUMON
 #if P_FAMILY_DORUGAMON
 SINGLE_ANIMATION(Dorugamon);
-SINGLE_ANIMATION(Banette);
+SINGLE_ANIMATION(Dorulumon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(BanetteMega);
+SINGLE_ANIMATION(DorulumonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DORUGAMON
 #if P_FAMILY_DUSKULL

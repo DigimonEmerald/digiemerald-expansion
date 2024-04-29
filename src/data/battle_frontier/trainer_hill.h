@@ -4235,7 +4235,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [5] =
                                         {
-                                            .species = SPECIES_BANETTE,
+                                            .species = SPECIES_DORULUMON,
                                             .heldItem = ITEM_FOCUS_BAND,
                                             .moves = {MOVE_SHADOW_BALL, MOVE_FEINT_ATTACK, MOVE_ATTRACT, MOVE_WILL_O_WISP},
                                             .hpEV = 252,
@@ -4250,7 +4250,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x85,
-                                            .nickname = _("BANETTE"),
+                                            .nickname = _("DORULUMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                 },
@@ -4658,7 +4658,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [5] =
                                         {
-                                            .species = SPECIES_BANETTE,
+                                            .species = SPECIES_DORULUMON,
                                             .heldItem = ITEM_BRIGHT_POWDER,
                                             .moves = {MOVE_IMPRISON, MOVE_PROTECT, MOVE_THUNDERBOLT, MOVE_THUNDER},
                                             .hpEV = 255,
@@ -4672,7 +4672,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x96,
-                                            .nickname = _("BANETTE"),
+                                            .nickname = _("DORULUMON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                 },

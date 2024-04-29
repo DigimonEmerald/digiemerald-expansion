@@ -356,7 +356,7 @@
 #define SPECIES_DOLPHMON_NORMAL                         351
 #define SPECIES_DONSHOUMON                                 352
 #define SPECIES_DORUGAMON                                 353
-#define SPECIES_BANETTE                                 354
+#define SPECIES_DORULUMON                                 354
 #define SPECIES_DUSKULL                                 355
 #define SPECIES_DUSCLOPS                                356
 #define SPECIES_TROPIUS                                 357
@@ -997,7 +997,7 @@
 #define SPECIES_CENTARUMON_MEGA                           936
 #define SPECIES_CITRAMON_MEGA                           937
 #define SPECIES_DARMAILMON_MEGA                            938
-#define SPECIES_BANETTE_MEGA                            939
+#define SPECIES_DORULUMON_MEGA                            939
 #define SPECIES_ABSOL_MEGA                              940
 #define SPECIES_GLALIE_MEGA                             941
 #define SPECIES_SALAMENCE_MEGA                          942
