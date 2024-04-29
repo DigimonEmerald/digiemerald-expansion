@@ -5009,7 +5009,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_ARCADIAMON_CHAMPIONITE] =
     {
-        .name = _("Arcadiamon_championite"),
+        .name = _("Arcadiamonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
