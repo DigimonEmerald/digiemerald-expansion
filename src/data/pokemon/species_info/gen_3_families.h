@@ -4745,8 +4745,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_BURAIMON
 
-#if P_FAMILY_CARVANHA
-    [SPECIES_CARVANHA] =
+#if P_FAMILY_CHOUMON
+    [SPECIES_CHOUMON] =
     {
         .baseHP        = 45,
         .baseAttack    = 90,
@@ -4766,14 +4766,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_ROUGH_SKIN, ABILITY_NONE, ABILITY_SPEED_BOOST },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Carvanha"),
-        .cryId = CRY_CARVANHA,
-        .natDexNum = NATIONAL_DEX_CARVANHA,
+        .speciesName = _("Choumon"),
+        .cryId = CRY_CHOUMON,
+        .natDexNum = NATIONAL_DEX_CHOUMON,
         .categoryName = _("Savage"),
         .height = 8,
         .weight = 208,
         .description = COMPOUND_STRING(
-            "Carvanha attack ships in swarms, making\n"
+            "Choumon attack ships in swarms, making\n"
             "them sink. Although it is said to be a very\n"
             "vicious Pokémon, it timidly flees as soon\n"
             "as it finds itself alone."),
@@ -4781,22 +4781,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Carvanha,
+        .frontPic = gMonFrontPic_Choumon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 6,
-        .frontAnimFrames = sAnims_Carvanha,
+        .frontAnimFrames = sAnims_Choumon,
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SLOW,
-        .backPic = gMonBackPic_Carvanha,
+        .backPic = gMonBackPic_Choumon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_H_SPRING_REPEATED,
-        .palette = gMonPalette_Carvanha,
-        .shinyPalette = gMonShinyPalette_Carvanha,
-        .iconSprite = gMonIcon_Carvanha,
+        .palette = gMonPalette_Choumon,
+        .shinyPalette = gMonShinyPalette_Choumon,
+        .iconSprite = gMonIcon_Choumon,
         .iconPalIndex = 0,
-        FOOTPRINT(Carvanha)
-        .levelUpLearnset = sCarvanhaLevelUpLearnset,
-        .teachableLearnset = sCarvanhaTeachableLearnset,
+        FOOTPRINT(Choumon)
+        .levelUpLearnset = sChoumonLevelUpLearnset,
+        .teachableLearnset = sChoumonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SHARPEDO}),
     },
 
@@ -4913,7 +4913,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .formChangeTable = sSharpedoFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_CARVANHA
+#endif //P_FAMILY_CHOUMON
 
 #if P_FAMILY_WAILMER
     [SPECIES_WAILMER] =

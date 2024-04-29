@@ -1104,7 +1104,7 @@ extern const u8 gTrickHouse_Mechadoll_Aresdramon[];
 extern const u8 gTrickHouse_Mechadoll_Toyagumon2[];
 extern const u8 gTrickHouse_Mechadoll_Tinkermon3[];
 extern const u8 gTrickHouse_Mechadoll_Icebotamon2[];
-extern const u8 gTrickHouse_Mechadoll_Carvanha[];
+extern const u8 gTrickHouse_Mechadoll_Choumon[];
 extern const u8 gTrickHouse_Mechadoll_BurnHeal[];
 extern const u8 gTrickHouse_Mechadoll_HarborMail[];
 extern const u8 gTrickHouse_Mechadoll_SamePrice[];

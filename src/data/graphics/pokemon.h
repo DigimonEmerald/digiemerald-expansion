@@ -4735,14 +4735,14 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonBackPic_Burgermon_championF[] = INCBIN_U32("graphics/pokemon/burgermon_champion/backf.4bpp.lz");
 #endif //P_FAMILY_BURAIMON
 
-#if P_FAMILY_CARVANHA
-    const u32 gMonFrontPic_Carvanha[] = INCBIN_U32("graphics/pokemon/carvanha/anim_front.4bpp.lz");
-    const u32 gMonPalette_Carvanha[] = INCBIN_U32("graphics/pokemon/carvanha/normal.gbapal.lz");
-    const u32 gMonBackPic_Carvanha[] = INCBIN_U32("graphics/pokemon/carvanha/back.4bpp.lz");
-    const u32 gMonShinyPalette_Carvanha[] = INCBIN_U32("graphics/pokemon/carvanha/shiny.gbapal.lz");
-    const u8 gMonIcon_Carvanha[] = INCBIN_U8("graphics/pokemon/carvanha/icon.4bpp");
+#if P_FAMILY_CHOUMON
+    const u32 gMonFrontPic_Choumon[] = INCBIN_U32("graphics/pokemon/choumon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Choumon[] = INCBIN_U32("graphics/pokemon/choumon/normal.gbapal.lz");
+    const u32 gMonBackPic_Choumon[] = INCBIN_U32("graphics/pokemon/choumon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Choumon[] = INCBIN_U32("graphics/pokemon/choumon/shiny.gbapal.lz");
+    const u8 gMonIcon_Choumon[] = INCBIN_U8("graphics/pokemon/choumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Carvanha[] = INCBIN_U8("graphics/pokemon/carvanha/footprint.1bpp");
+    const u8 gMonFootprint_Choumon[] = INCBIN_U8("graphics/pokemon/choumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
     const u32 gMonFrontPic_Sharpedo[] = INCBIN_U32("graphics/pokemon/sharpedo/anim_front.4bpp.lz");
@@ -4761,7 +4761,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonShinyPalette_SharpedoMega[] = INCBIN_U32("graphics/pokemon/sharpedo/mega/shiny.gbapal.lz");
     const u8 gMonIcon_SharpedoMega[] = INCBIN_U8("graphics/pokemon/sharpedo/mega/icon.4bpp");
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_CARVANHA
+#endif //P_FAMILY_CHOUMON
 
 #if P_FAMILY_WAILMER
     const u32 gMonFrontPic_Wailmer[] = INCBIN_U32("graphics/pokemon/wailmer/anim_front.4bpp.lz");

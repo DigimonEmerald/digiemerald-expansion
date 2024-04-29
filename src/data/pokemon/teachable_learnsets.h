@@ -15153,8 +15153,8 @@ static const u16 sBurgermon_championTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BURAIMON
 
-#if P_FAMILY_CARVANHA
-static const u16 sCarvanhaTeachableLearnset[] = {
+#if P_FAMILY_CHOUMON
+static const u16 sChoumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -15219,7 +15219,7 @@ static const u16 sSharpedoTeachableLearnset[] = {
     MOVE_SWIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CARVANHA
+#endif //P_FAMILY_CHOUMON
 
 #if P_FAMILY_WAILMER
 static const u16 sWailmerTeachableLearnset[] = {

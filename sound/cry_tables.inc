@@ -877,13 +877,13 @@ gCryTable::
 	cry Cry_Buraimon
 	cry Cry_Burgermon_champion
 .endif @ P_FAMILY_BURAIMON
-.if P_FAMILY_CARVANHA == TRUE
-	cry Cry_Carvanha
+.if P_FAMILY_CHOUMON == TRUE
+	cry Cry_Choumon
 	cry Cry_Sharpedo
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_SharpedoMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_CARVANHA
+.endif @ P_FAMILY_CHOUMON
 .if P_FAMILY_WAILMER == TRUE
 	cry Cry_Wailmer
 	cry Cry_Wailord
@@ -3303,13 +3303,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Buraimon
 	cry_reverse Cry_Burgermon_champion
 .endif @ P_FAMILY_BURAIMON
-.if P_FAMILY_CARVANHA == TRUE
-	cry_reverse Cry_Carvanha
+.if P_FAMILY_CHOUMON == TRUE
+	cry_reverse Cry_Choumon
 	cry_reverse Cry_Sharpedo
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_SharpedoMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_CARVANHA
+.endif @ P_FAMILY_CHOUMON
 .if P_FAMILY_WAILMER == TRUE
 	cry_reverse Cry_Wailmer
 	cry_reverse Cry_Wailord

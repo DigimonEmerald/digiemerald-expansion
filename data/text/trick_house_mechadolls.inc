@@ -49,8 +49,8 @@ gTrickHouse_Mechadoll_Tinkermon3::
 gTrickHouse_Mechadoll_Icebotamon2::
 	.string "ICEBOTAMON$"
 
-gTrickHouse_Mechadoll_Carvanha::
-	.string "CARVANHA$"
+gTrickHouse_Mechadoll_Choumon::
+	.string "CHOUMON$"
 
 gTrickHouse_Mechadoll_BurnHeal::
 	.string "BURN HEAL$"

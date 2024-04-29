@@ -839,7 +839,7 @@ static const u16 sBomnanimonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_BOARMON
 
-#if P_FAMILY_CARVANHA
+#if P_FAMILY_CHOUMON
 static const u16 sSharpedoFormSpeciesIdTable[] = {
     SPECIES_SHARPEDO,
 #if P_MEGA_EVOLUTIONS
@@ -847,7 +847,7 @@ static const u16 sSharpedoFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_CARVANHA
+#endif //P_FAMILY_CHOUMON
 
 #if P_FAMILY_NUMEL
 static const u16 sCameruptFormSpeciesIdTable[] = {

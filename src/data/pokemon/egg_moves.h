@@ -2557,8 +2557,8 @@ const u16 gEggMoves[] = {
         MOVE_VENOM_DRENCH),
 #endif //P_FAMILY_BURAIMON
 
-#if P_FAMILY_CARVANHA
-    egg_moves(CARVANHA,
+#if P_FAMILY_CHOUMON
+    egg_moves(CHOUMON,
         MOVE_HYDRO_PUMP,
         MOVE_DOUBLE_EDGE,
         MOVE_THRASH,
@@ -2567,7 +2567,7 @@ const u16 gEggMoves[] = {
         MOVE_BRINE,
         MOVE_DESTINY_BOND,
         MOVE_PSYCHIC_FANGS),
-#endif //P_FAMILY_CARVANHA
+#endif //P_FAMILY_CHOUMON
 
 #if P_FAMILY_WAILMER
     egg_moves(WAILMER,

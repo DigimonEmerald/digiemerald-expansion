@@ -6321,8 +6321,8 @@ static const struct LevelUpMove sBurgermon_championLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_BURAIMON
 
-#if P_FAMILY_CARVANHA
-static const struct LevelUpMove sCarvanhaLevelUpLearnset[] = {
+#if P_FAMILY_CHOUMON
+static const struct LevelUpMove sChoumonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 7, MOVE_RAGE),
@@ -6353,7 +6353,7 @@ static const struct LevelUpMove sSharpedoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(53, MOVE_AGILITY),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CARVANHA
+#endif //P_FAMILY_CHOUMON
 
 #if P_FAMILY_WAILMER
 static const struct LevelUpMove sWailmerLevelUpLearnset[] = {

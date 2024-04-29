@@ -319,7 +319,7 @@
 #define SPECIES_BULLMON                                 315
 #define SPECIES_BURAIMON                                  316
 #define SPECIES_BURGERMON_CHAMPION                                  317
-#define SPECIES_CARVANHA                                318
+#define SPECIES_CHOUMON                                318
 #define SPECIES_SHARPEDO                                319
 #define SPECIES_WAILMER                                 320
 #define SPECIES_WAILORD                                 321

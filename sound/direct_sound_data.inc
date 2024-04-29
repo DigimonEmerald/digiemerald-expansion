@@ -2438,10 +2438,10 @@ Cry_Burgermon_champion::
 	.incbin "sound/direct_sound_samples/cries/burgermon_champion.bin"
 .endif @ P_FAMILY_BURAIMON
 
-.if P_FAMILY_CARVANHA == TRUE
+.if P_FAMILY_CHOUMON == TRUE
 	.align 2
-Cry_Carvanha::
-	.incbin "sound/direct_sound_samples/cries/carvanha.bin"
+Cry_Choumon::
+	.incbin "sound/direct_sound_samples/cries/choumon.bin"
 
 	.align 2
 Cry_Sharpedo::
@@ -2452,7 +2452,7 @@ Cry_Sharpedo::
 Cry_SharpedoMega::
 	.incbin "sound/direct_sound_samples/cries/sharpedo_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_CARVANHA
+.endif @ P_FAMILY_CHOUMON
 
 .if P_FAMILY_WAILMER == TRUE
 	.align 2

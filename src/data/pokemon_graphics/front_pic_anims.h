@@ -4248,8 +4248,8 @@ static const union AnimCmd sAnim_Burgermon_champion_1[] =
 };
 #endif //P_FAMILY_BURAIMON
 
-#if P_FAMILY_CARVANHA
-static const union AnimCmd sAnim_Carvanha_1[] =
+#if P_FAMILY_CHOUMON
+static const union AnimCmd sAnim_Choumon_1[] =
 {
     ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(1, 6),
@@ -4280,7 +4280,7 @@ static const union AnimCmd sAnim_Sharpedo_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(SharpedoMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_CARVANHA
+#endif //P_FAMILY_CHOUMON
 
 #if P_FAMILY_WAILMER
 static const union AnimCmd sAnim_Wailmer_1[] =
@@ -11175,13 +11175,13 @@ SINGLE_ANIMATION(Roserade);
 SINGLE_ANIMATION(Buraimon);
 SINGLE_ANIMATION(Burgermon_champion);
 #endif //P_FAMILY_BURAIMON
-#if P_FAMILY_CARVANHA
-SINGLE_ANIMATION(Carvanha);
+#if P_FAMILY_CHOUMON
+SINGLE_ANIMATION(Choumon);
 SINGLE_ANIMATION(Sharpedo);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(SharpedoMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_CARVANHA
+#endif //P_FAMILY_CHOUMON
 #if P_FAMILY_WAILMER
 SINGLE_ANIMATION(Wailmer);
 SINGLE_ANIMATION(Wailord);
