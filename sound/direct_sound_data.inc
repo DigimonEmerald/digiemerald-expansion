@@ -2410,7 +2410,7 @@ Cry_Bulkmon::
 	.incbin "sound/direct_sound_samples/cries/bulkmon.bin"
 .endif @ P_FAMILY_BUCCHIEMON_GREEN_BULKMON
 
-.if P_FAMILY_ROSELIA == TRUE
+.if P_FAMILY_BULLMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
 Cry_Budew::
@@ -2418,15 +2418,15 @@ Cry_Budew::
 .endif @ P_GEN_4_CROSS_EVOS
 
 	.align 2
-Cry_Roselia::
-	.incbin "sound/direct_sound_samples/cries/roselia.bin"
+Cry_Bullmon::
+	.incbin "sound/direct_sound_samples/cries/bullmon.bin"
 
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
 Cry_Roserade::
 	.incbin "sound/direct_sound_samples/cries/roserade.bin"
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_ROSELIA
+.endif @ P_FAMILY_BULLMON
 
 .if P_FAMILY_GULPIN == TRUE
 	.align 2

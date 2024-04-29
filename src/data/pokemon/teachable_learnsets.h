@@ -14970,7 +14970,7 @@ static const u16 sBulkmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BUCCHIEMON_GREEN_BULKMON
 
-#if P_FAMILY_ROSELIA
+#if P_FAMILY_BULLMON
 #if P_GEN_4_CROSS_EVOS
 static const u16 sBudewTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -15000,7 +15000,7 @@ static const u16 sBudewTeachableLearnset[] = {
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const u16 sRoseliaTeachableLearnset[] = {
+static const u16 sBullmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,
@@ -15061,7 +15061,7 @@ static const u16 sRoseradeTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_ROSELIA
+#endif //P_FAMILY_BULLMON
 
 #if P_FAMILY_GULPIN
 static const u16 sGulpinTeachableLearnset[] = {

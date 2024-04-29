@@ -316,7 +316,7 @@
 #define SPECIES_BUCCHIEMON_RED                                   312
 #define SPECIES_BUCCHIEMON_GREEN                                 313
 #define SPECIES_BULKMON                                314
-#define SPECIES_ROSELIA                                 315
+#define SPECIES_BULLMON                                 315
 #define SPECIES_GULPIN                                  316
 #define SPECIES_SWALOT                                  317
 #define SPECIES_CARVANHA                                318

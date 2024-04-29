@@ -4670,7 +4670,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_FAMILY_BUCCHIEMON_GREEN_BULKMON
 
-#if P_FAMILY_ROSELIA
+#if P_FAMILY_BULLMON
 #if P_GEN_4_CROSS_EVOS
     const u32 gMonFrontPic_Budew[] = INCBIN_U32("graphics/pokemon/budew/anim_front.4bpp.lz");
     const u32 gMonPalette_Budew[] = INCBIN_U32("graphics/pokemon/budew/normal.gbapal.lz");
@@ -4682,17 +4682,17 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_FOOTPRINTS
 #endif //P_GEN_4_CROSS_EVOS
 
-    const u32 gMonFrontPic_Roselia[] = INCBIN_U32("graphics/pokemon/roselia/anim_front.4bpp.lz");
-    const u32 gMonPalette_Roselia[] = INCBIN_U32("graphics/pokemon/roselia/normal.gbapal.lz");
-    const u32 gMonBackPic_Roselia[] = INCBIN_U32("graphics/pokemon/roselia/back.4bpp.lz");
-    const u32 gMonShinyPalette_Roselia[] = INCBIN_U32("graphics/pokemon/roselia/shiny.gbapal.lz");
-    const u8 gMonIcon_Roselia[] = INCBIN_U8("graphics/pokemon/roselia/icon.4bpp");
+    const u32 gMonFrontPic_Bullmon[] = INCBIN_U32("graphics/pokemon/bullmon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Bullmon[] = INCBIN_U32("graphics/pokemon/bullmon/normal.gbapal.lz");
+    const u32 gMonBackPic_Bullmon[] = INCBIN_U32("graphics/pokemon/bullmon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Bullmon[] = INCBIN_U32("graphics/pokemon/bullmon/shiny.gbapal.lz");
+    const u8 gMonIcon_Bullmon[] = INCBIN_U8("graphics/pokemon/bullmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Roselia[] = INCBIN_U8("graphics/pokemon/roselia/footprint.1bpp");
+    const u8 gMonFootprint_Bullmon[] = INCBIN_U8("graphics/pokemon/bullmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_RoseliaF[] = INCBIN_U32("graphics/pokemon/roselia/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_RoseliaF[] = INCBIN_U32("graphics/pokemon/roselia/backf.4bpp.lz");
+    const u32 gMonFrontPic_BullmonF[] = INCBIN_U32("graphics/pokemon/bullmon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_BullmonF[] = INCBIN_U32("graphics/pokemon/bullmon/backf.4bpp.lz");
 
 #if P_GEN_4_CROSS_EVOS
     const u32 gMonFrontPic_Roserade[] = INCBIN_U32("graphics/pokemon/roserade/anim_front.4bpp.lz");
@@ -4707,7 +4707,7 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
     const u32 gMonFrontPic_RoseradeF[] = INCBIN_U32("graphics/pokemon/roserade/anim_frontf.4bpp.lz");
     const u32 gMonBackPic_RoseradeF[] = INCBIN_U32("graphics/pokemon/roserade/backf.4bpp.lz");
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_ROSELIA
+#endif //P_FAMILY_BULLMON
 
 #if P_FAMILY_GULPIN
     const u32 gMonFrontPic_Gulpin[] = INCBIN_U32("graphics/pokemon/gulpin/anim_front.4bpp.lz");

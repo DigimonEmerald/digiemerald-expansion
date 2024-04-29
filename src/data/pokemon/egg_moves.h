@@ -2511,7 +2511,7 @@ const u16 gEggMoves[] = {
         MOVE_AROMATHERAPY),
 #endif //P_FAMILY_BUCCHIEMON_GREEN_BULKMON
 
-#if P_FAMILY_ROSELIA
+#if P_FAMILY_BULLMON
 #if P_GEN_4_CROSS_EVOS
     egg_moves(BUDEW,
         MOVE_SPIKES,
@@ -2528,7 +2528,7 @@ const u16 gEggMoves[] = {
         MOVE_NATURAL_GIFT,
         MOVE_GRASS_WHISTLE),
 #endif //P_GEN_4_CROSS_EVOS
-    egg_moves(ROSELIA,
+    egg_moves(BULLMON,
         MOVE_SPIKES,
         MOVE_SYNTHESIS,
         MOVE_PIN_MISSILE,
@@ -2543,7 +2543,7 @@ const u16 gEggMoves[] = {
         MOVE_GRASS_WHISTLE,
         MOVE_BULLET_SEED,
         MOVE_POWER_WHIP),
-#endif //P_FAMILY_ROSELIA
+#endif //P_FAMILY_BULLMON
 
 #if P_FAMILY_GULPIN
     egg_moves(GULPIN,

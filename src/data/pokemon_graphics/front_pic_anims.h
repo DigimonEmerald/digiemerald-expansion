@@ -4198,7 +4198,7 @@ static const union AnimCmd sAnim_Bulkmon_1[] =
 };
 #endif //P_FAMILY_BUCCHIEMON_GREEN_BULKMON
 
-#if P_FAMILY_ROSELIA
+#if P_FAMILY_BULLMON
 #if P_GEN_4_CROSS_EVOS
 static const union AnimCmd sAnim_Budew_1[] =
 {
@@ -4209,7 +4209,7 @@ static const union AnimCmd sAnim_Budew_1[] =
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const union AnimCmd sAnim_Roselia_1[] =
+static const union AnimCmd sAnim_Bullmon_1[] =
 {
     ANIMCMD_FRAME(0, 18),
     ANIMCMD_FRAME(1, 44),
@@ -4225,7 +4225,7 @@ static const union AnimCmd sAnim_Roserade_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_ROSELIA
+#endif //P_FAMILY_BULLMON
 
 #if P_FAMILY_GULPIN
 static const union AnimCmd sAnim_Gulpin_1[] =
@@ -11162,15 +11162,15 @@ SINGLE_ANIMATION(Bucchiemon_red);
 SINGLE_ANIMATION(Bucchiemon_green);
 SINGLE_ANIMATION(Bulkmon);
 #endif //P_FAMILY_BUCCHIEMON_GREEN_BULKMON
-#if P_FAMILY_ROSELIA
+#if P_FAMILY_BULLMON
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Budew);
 #endif //P_GEN_4_CROSS_EVOS
-SINGLE_ANIMATION(Roselia);
+SINGLE_ANIMATION(Bullmon);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Roserade);
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_ROSELIA
+#endif //P_FAMILY_BULLMON
 #if P_FAMILY_GULPIN
 SINGLE_ANIMATION(Gulpin);
 SINGLE_ANIMATION(Swalot);

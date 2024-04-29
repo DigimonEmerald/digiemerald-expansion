@@ -8501,7 +8501,7 @@ static const struct LevelUpMove sBulkmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_BUCCHIEMON_GREEN_BULKMON
 
-#if P_FAMILY_ROSELIA
+#if P_FAMILY_BULLMON
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sBudewLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
@@ -8512,7 +8512,7 @@ static const struct LevelUpMove sBudewLevelUpLearnset[] = {
 };
 #endif //P_GEN_4_CROSS_EVOS
 
-static const struct LevelUpMove sRoseliaLevelUpLearnset[] = {
+static const struct LevelUpMove sBullmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
@@ -8558,7 +8558,7 @@ static const struct LevelUpMove sRoseradeLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_ROSELIA
+#endif //P_FAMILY_BULLMON
 
 #if P_FAMILY_GULPIN
 static const struct LevelUpMove sGulpinLevelUpLearnset[] = {

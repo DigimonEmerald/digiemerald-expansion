@@ -4440,7 +4440,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 #endif //P_FAMILY_BUCCHIEMON_GREEN_BULKMON
 
-#if P_FAMILY_ROSELIA
+#if P_FAMILY_BULLMON
 #if P_GEN_4_CROSS_EVOS
     [SPECIES_BUDEW] =
     {
@@ -4494,11 +4494,11 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Budew)
         .levelUpLearnset = sBudewLevelUpLearnset,
         .teachableLearnset = sBudewTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP_DAY, 0, SPECIES_ROSELIA}),
+        .evolutions = EVOLUTION({EVO_FRIENDSHIP_DAY, 0, SPECIES_BULLMON}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 
-    [SPECIES_ROSELIA] =
+    [SPECIES_BULLMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 60,
@@ -4519,14 +4519,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .abilities = { ABILITY_NATURAL_CURE, ABILITY_POISON_POINT, ABILITY_LEAF_GUARD },
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
-        .speciesName = _("Roselia"),
-        .cryId = CRY_ROSELIA,
-        .natDexNum = NATIONAL_DEX_ROSELIA,
+        .speciesName = _("Bullmon"),
+        .cryId = CRY_BULLMON,
+        .natDexNum = NATIONAL_DEX_BULLMON,
         .categoryName = _("Thorn"),
         .height = 3,
         .weight = 20,
         .description = COMPOUND_STRING(
-            "A Roselia that drinks nutritionally rich\n"
+            "A Bullmon that drinks nutritionally rich\n"
             "springwater blooms with lovely flowers.\n"
             "The fragrance of its flowers has the\n"
             "effect of making its foes careless."),
@@ -4534,26 +4534,26 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Roselia,
-        .frontPicFemale = gMonFrontPic_RoseliaF,
+        .frontPic = gMonFrontPic_Bullmon,
+        .frontPicFemale = gMonFrontPic_BullmonF,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 11,
-        .frontAnimFrames = sAnims_Roselia,
+        .frontAnimFrames = sAnims_Bullmon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Roselia,
-        .backPicFemale = gMonBackPic_RoseliaF,
+        .backPic = gMonBackPic_Bullmon,
+        .backPicFemale = gMonBackPic_BullmonF,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_GREEN,
-        .palette = gMonPalette_Roselia,
-        .shinyPalette = gMonShinyPalette_Roselia,
-        .iconSprite = gMonIcon_Roselia,
+        .palette = gMonPalette_Bullmon,
+        .shinyPalette = gMonShinyPalette_Bullmon,
+        .iconSprite = gMonIcon_Bullmon,
         .iconPalIndex = 4,
-        FOOTPRINT(Roselia)
-        .levelUpLearnset = sRoseliaLevelUpLearnset,
-        .teachableLearnset = sRoseliaTeachableLearnset,
+        FOOTPRINT(Bullmon)
+        .levelUpLearnset = sBullmonLevelUpLearnset,
+        .teachableLearnset = sBullmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_SHINY_STONE, SPECIES_ROSERADE}),
     },
 
@@ -4624,7 +4624,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sRoseradeTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_ROSELIA
+#endif //P_FAMILY_BULLMON
 
 #if P_FAMILY_GULPIN
     [SPECIES_GULPIN] =

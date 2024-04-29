@@ -864,15 +864,15 @@ gCryTable::
 	cry Cry_Bucchiemon_green
 	cry Cry_Bulkmon
 .endif @ P_FAMILY_BUCCHIEMON_GREEN_BULKMON
-.if P_FAMILY_ROSELIA == TRUE
+.if P_FAMILY_BULLMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Budew
 .endif @ P_GEN_4_CROSS_EVOS
-	cry Cry_Roselia
+	cry Cry_Bullmon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Roserade
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_ROSELIA
+.endif @ P_FAMILY_BULLMON
 .if P_FAMILY_GULPIN == TRUE
 	cry Cry_Gulpin
 	cry Cry_Swalot
@@ -3290,15 +3290,15 @@ gCryTable_Reverse::
 	cry_reverse Cry_Bucchiemon_green
 	cry_reverse Cry_Bulkmon
 .endif @ P_FAMILY_BUCCHIEMON_GREEN_BULKMON
-.if P_FAMILY_ROSELIA == TRUE
+.if P_FAMILY_BULLMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Budew
 .endif @ P_GEN_4_CROSS_EVOS
-	cry_reverse Cry_Roselia
+	cry_reverse Cry_Bullmon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Roserade
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_ROSELIA
+.endif @ P_FAMILY_BULLMON
 .if P_FAMILY_GULPIN == TRUE
 	cry_reverse Cry_Gulpin
 	cry_reverse Cry_Swalot
