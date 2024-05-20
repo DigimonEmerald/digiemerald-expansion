@@ -8150,7 +8150,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_PagumonGalarian,
         .shinyPalette = gMonShinyPalette_PagumonGalarian,
         .iconSprite = gMonIcon_PagumonGalarian,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         FOOTPRINT(Pagumon)
         .isGalarianForm = TRUE,
         .levelUpLearnset = sPagumonGalarianLevelUpLearnset,
@@ -8262,7 +8262,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_LiollmonGalarian,
         .shinyPalette = gMonShinyPalette_LiollmonGalarian,
         .iconSprite = gMonIcon_LiollmonGalarian,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         FOOTPRINT(Liollmon)
         .isGalarianForm = TRUE,
         .levelUpLearnset = sLiollmonGalarianLevelUpLearnset,
@@ -12166,8 +12166,12 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .baseSpeed     = 90,
         .baseSpAttack  = 100,
         .baseSpDefense = 120,
+    #if P_UPDATED_TYPES >= GEN_6
+        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FAIRY),
+    #else
         .types = MON_TYPES(TYPE_PSYCHIC),
         .attribute =
+    #endif
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 161 : 136,
         .evYield_SpDefense = 2,
