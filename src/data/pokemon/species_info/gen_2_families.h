@@ -3218,8 +3218,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_LUCEMON
 
-#if P_FAMILY_PINECO
-    [SPECIES_PINECO] =
+#if P_FAMILY_LUDOMON
+    [SPECIES_LUDOMON] =
     {
         .baseHP        = 50,
         .baseAttack    = 65,
@@ -3238,14 +3238,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_OVERCOAT },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Pineco"),
-        .cryId = CRY_PINECO,
-        .natDexNum = NATIONAL_DEX_PINECO,
+        .speciesName = _("Ludomon"),
+        .cryId = CRY_LUDOMON,
+        .natDexNum = NATIONAL_DEX_LUDOMON,
         .categoryName = _("Bagworm"),
         .height = 6,
         .weight = 72,
         .description = COMPOUND_STRING(
-            "A Pineco hangs from a tree branch and\n"
+            "A Ludomon hangs from a tree branch and\n"
             "waits for prey. While eating, if it is\n"
             "disturbed by someone shaking its tree, it\n"
             "falls on the ground and suddenly explodes."),
@@ -3253,26 +3253,26 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 2,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Pineco,
+        .frontPic = gMonFrontPic_Ludomon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Pineco,
+        .frontAnimFrames = sAnims_Ludomon,
         .frontAnimId = ANIM_SWING_CONCAVE,
-        .backPic = gMonBackPic_Pineco,
+        .backPic = gMonBackPic_Ludomon,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_H_SHAKE,
-        .palette = gMonPalette_Pineco,
-        .shinyPalette = gMonShinyPalette_Pineco,
-        .iconSprite = gMonIcon_Pineco,
+        .palette = gMonPalette_Ludomon,
+        .shinyPalette = gMonShinyPalette_Ludomon,
+        .iconSprite = gMonIcon_Ludomon,
         .iconPalIndex = 0,
-        FOOTPRINT(Pineco)
-        .levelUpLearnset = sPinecoLevelUpLearnset,
-        .teachableLearnset = sPinecoTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_FORRETRESS}),
+        FOOTPRINT(Ludomon)
+        .levelUpLearnset = sLudomonLevelUpLearnset,
+        .teachableLearnset = sLudomonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_LUNAMON}),
     },
 
-    [SPECIES_FORRETRESS] =
+    [SPECIES_LUNAMON] =
     {
         .baseHP        = 75,
         .baseAttack    = 90,
@@ -3291,9 +3291,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_OVERCOAT },
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Forretress"),
-        .cryId = CRY_FORRETRESS,
-        .natDexNum = NATIONAL_DEX_FORRETRESS,
+        .speciesName = _("Lunamon"),
+        .cryId = CRY_LUNAMON,
+        .natDexNum = NATIONAL_DEX_LUNAMON,
         .categoryName = _("Bagworm"),
         .height = 12,
         .weight = 1258,
@@ -3306,24 +3306,24 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 5,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Forretress,
+        .frontPic = gMonFrontPic_Lunamon,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 8,
-        .frontAnimFrames = sAnims_Forretress,
+        .frontAnimFrames = sAnims_Lunamon,
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Forretress,
+        .backPic = gMonBackPic_Lunamon,
         .backPicSize = MON_COORDS_SIZE(64, 32),
         .backPicYOffset = 16,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Forretress,
-        .shinyPalette = gMonShinyPalette_Forretress,
-        .iconSprite = gMonIcon_Forretress,
+        .palette = gMonPalette_Lunamon,
+        .shinyPalette = gMonShinyPalette_Lunamon,
+        .iconSprite = gMonIcon_Lunamon,
         .iconPalIndex = 2,
-        FOOTPRINT(Forretress)
-        .levelUpLearnset = sForretressLevelUpLearnset,
-        .teachableLearnset = sForretressTeachableLearnset,
+        FOOTPRINT(Lunamon)
+        .levelUpLearnset = sLunamonLevelUpLearnset,
+        .teachableLearnset = sLunamonTeachableLearnset,
     },
-#endif //P_FAMILY_PINECO
+#endif //P_FAMILY_LUDOMON
 
 #if P_FAMILY_LUXMON
     [SPECIES_LUXMON] =

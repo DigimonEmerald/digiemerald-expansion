@@ -1742,15 +1742,15 @@ Cry_Farigiraf::
 .endif @ P_GEN_9_CROSS_EVOS
 .endif @ P_FAMILY_LUCEMON
 
-.if P_FAMILY_PINECO == TRUE
+.if P_FAMILY_LUDOMON == TRUE
 	.align 2
-Cry_Pineco::
-	.incbin "sound/direct_sound_samples/cries/pineco.bin"
+Cry_Ludomon::
+	.incbin "sound/direct_sound_samples/cries/ludomon.bin"
 
 	.align 2
-Cry_Forretress::
-	.incbin "sound/direct_sound_samples/cries/forretress.bin"
-.endif @ P_FAMILY_PINECO
+Cry_Lunamon::
+	.incbin "sound/direct_sound_samples/cries/lunamon.bin"
+.endif @ P_FAMILY_LUDOMON
 
 .if P_FAMILY_LUXMON == TRUE
 	.align 2

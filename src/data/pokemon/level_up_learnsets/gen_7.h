@@ -5896,8 +5896,8 @@ static const struct LevelUpMove sFarigirafLevelUpLearnset[] = {
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_LUCEMON
 
-#if P_FAMILY_PINECO
-static const struct LevelUpMove sPinecoLevelUpLearnset[] = {
+#if P_FAMILY_LUDOMON
+static const struct LevelUpMove sLudomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_PROTECT),
     LEVEL_UP_MOVE( 6, MOVE_SELF_DESTRUCT),
@@ -5915,7 +5915,7 @@ static const struct LevelUpMove sPinecoLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sForretressLevelUpLearnset[] = {
+static const struct LevelUpMove sLunamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_AUTOTOMIZE),
     LEVEL_UP_MOVE( 0, MOVE_MIRROR_SHOT),
     LEVEL_UP_MOVE( 1, MOVE_MIRROR_SHOT),
@@ -5945,7 +5945,7 @@ static const struct LevelUpMove sForretressLevelUpLearnset[] = {
     LEVEL_UP_MOVE(64, MOVE_HEAVY_SLAM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_PINECO
+#endif //P_FAMILY_LUDOMON
 
 #if P_FAMILY_LUXMON
 static const struct LevelUpMove sLuxmonLevelUpLearnset[] = {

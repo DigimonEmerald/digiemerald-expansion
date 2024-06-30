@@ -3312,25 +3312,25 @@ const u8 gMonFootprint_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mar
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_LUCEMON
 
-#if P_FAMILY_PINECO
-    const u32 gMonFrontPic_Pineco[] = INCBIN_U32("graphics/pokemon/pineco/anim_front.4bpp.lz");
-    const u32 gMonPalette_Pineco[] = INCBIN_U32("graphics/pokemon/pineco/normal.gbapal.lz");
-    const u32 gMonBackPic_Pineco[] = INCBIN_U32("graphics/pokemon/pineco/back.4bpp.lz");
-    const u32 gMonShinyPalette_Pineco[] = INCBIN_U32("graphics/pokemon/pineco/shiny.gbapal.lz");
-    const u8 gMonIcon_Pineco[] = INCBIN_U8("graphics/pokemon/pineco/icon.4bpp");
+#if P_FAMILY_LUDOMON
+    const u32 gMonFrontPic_Ludomon[] = INCBIN_U32("graphics/pokemon/ludomon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Ludomon[] = INCBIN_U32("graphics/pokemon/ludomon/normal.gbapal.lz");
+    const u32 gMonBackPic_Ludomon[] = INCBIN_U32("graphics/pokemon/ludomon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Ludomon[] = INCBIN_U32("graphics/pokemon/ludomon/shiny.gbapal.lz");
+    const u8 gMonIcon_Ludomon[] = INCBIN_U8("graphics/pokemon/ludomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Pineco[] = INCBIN_U8("graphics/pokemon/pineco/footprint.1bpp");
+    const u8 gMonFootprint_Ludomon[] = INCBIN_U8("graphics/pokemon/ludomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Forretress[] = INCBIN_U32("graphics/pokemon/forretress/anim_front.4bpp.lz");
-    const u32 gMonPalette_Forretress[] = INCBIN_U32("graphics/pokemon/forretress/normal.gbapal.lz");
-    const u32 gMonBackPic_Forretress[] = INCBIN_U32("graphics/pokemon/forretress/back.4bpp.lz");
-    const u32 gMonShinyPalette_Forretress[] = INCBIN_U32("graphics/pokemon/forretress/shiny.gbapal.lz");
-    const u8 gMonIcon_Forretress[] = INCBIN_U8("graphics/pokemon/forretress/icon.4bpp");
+    const u32 gMonFrontPic_Lunamon[] = INCBIN_U32("graphics/pokemon/lunamon/anim_front.4bpp.lz");
+    const u32 gMonPalette_Lunamon[] = INCBIN_U32("graphics/pokemon/lunamon/normal.gbapal.lz");
+    const u32 gMonBackPic_Lunamon[] = INCBIN_U32("graphics/pokemon/lunamon/back.4bpp.lz");
+    const u32 gMonShinyPalette_Lunamon[] = INCBIN_U32("graphics/pokemon/lunamon/shiny.gbapal.lz");
+    const u8 gMonIcon_Lunamon[] = INCBIN_U8("graphics/pokemon/lunamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Forretress[] = INCBIN_U8("graphics/pokemon/forretress/footprint.1bpp");
+    const u8 gMonFootprint_Lunamon[] = INCBIN_U8("graphics/pokemon/lunamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
-#endif //P_FAMILY_PINECO
+#endif //P_FAMILY_LUDOMON
 
 #if P_FAMILY_LUXMON
     const u32 gMonFrontPic_Luxmon[] = INCBIN_U32("graphics/pokemon/luxmon/anim_front.4bpp.lz");

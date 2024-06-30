@@ -2941,8 +2941,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Farigiraf);
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_LUCEMON
 
-#if P_FAMILY_PINECO
-static const union AnimCmd sAnim_Pineco_1[] =
+#if P_FAMILY_LUDOMON
+static const union AnimCmd sAnim_Ludomon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -2955,7 +2955,7 @@ static const union AnimCmd sAnim_Pineco_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Forretress_1[] =
+static const union AnimCmd sAnim_Lunamon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -2963,7 +2963,7 @@ static const union AnimCmd sAnim_Forretress_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_PINECO
+#endif //P_FAMILY_LUDOMON
 
 #if P_FAMILY_LUXMON
 static const union AnimCmd sAnim_Luxmon_1[] =
@@ -10868,10 +10868,10 @@ SINGLE_ANIMATION(Lucemon);
 SINGLE_ANIMATION(Farigiraf);
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_LUCEMON
-#if P_FAMILY_PINECO
-SINGLE_ANIMATION(Pineco);
-SINGLE_ANIMATION(Forretress);
-#endif //P_FAMILY_PINECO
+#if P_FAMILY_LUDOMON
+SINGLE_ANIMATION(Ludomon);
+SINGLE_ANIMATION(Lunamon);
+#endif //P_FAMILY_LUDOMON
 #if P_FAMILY_LUXMON
 SINGLE_ANIMATION(Luxmon);
 #if P_GEN_9_CROSS_EVOS

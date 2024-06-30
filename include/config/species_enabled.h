@@ -157,7 +157,7 @@
 #define P_FAMILY_LOPMON                   P_GEN_2_POKEMON
 #define P_FAMILY_LOPMONX               P_GEN_2_POKEMON
 #define P_FAMILY_LUCEMON               P_GEN_2_POKEMON
-#define P_FAMILY_PINECO                  P_GEN_2_POKEMON
+#define P_FAMILY_LUDOMON                  P_GEN_2_POKEMON
 #define P_FAMILY_LUXMON               P_GEN_2_POKEMON
 #define P_FAMILY_METABEE                  P_GEN_2_POKEMON
 #define P_FAMILY_MODBETAMON                P_GEN_2_POKEMON

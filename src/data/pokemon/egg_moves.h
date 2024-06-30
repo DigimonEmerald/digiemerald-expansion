@@ -1709,8 +1709,8 @@ const u16 gEggMoves[] = {
         MOVE_PSYCHIC_FANGS),
 #endif //P_FAMILY_LUCEMON
 
-#if P_FAMILY_PINECO
-    egg_moves(PINECO,
+#if P_FAMILY_LUDOMON
+    egg_moves(LUDOMON,
         MOVE_PIN_MISSILE,
         MOVE_FLAIL,
         MOVE_SWIFT,
@@ -1722,7 +1722,7 @@ const u16 gEggMoves[] = {
         MOVE_POWER_TRICK,
         MOVE_ENDURE,
         MOVE_STEALTH_ROCK),
-#endif //P_FAMILY_PINECO
+#endif //P_FAMILY_LUDOMON
 
 #if P_FAMILY_LUXMON
     egg_moves(LUXMON,

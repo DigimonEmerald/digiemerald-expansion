@@ -10383,8 +10383,8 @@ static const u16 sFarigirafTeachableLearnset[] = {
 #endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_LUCEMON
 
-#if P_FAMILY_PINECO
-static const u16 sPinecoTeachableLearnset[] = {
+#if P_FAMILY_LUDOMON
+static const u16 sLudomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -10418,7 +10418,7 @@ static const u16 sPinecoTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sForretressTeachableLearnset[] = {
+static const u16 sLunamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
@@ -10453,7 +10453,7 @@ static const u16 sForretressTeachableLearnset[] = {
     MOVE_THUNDER_WAVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PINECO
+#endif //P_FAMILY_LUDOMON
 
 #if P_FAMILY_LUXMON
 static const u16 sLuxmonTeachableLearnset[] = {
