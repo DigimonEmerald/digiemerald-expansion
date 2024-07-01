@@ -12,7 +12,7 @@ SINGLE_BATTLE_TEST("Mummy/Lingering Aroma replace the attacker's ability on cont
     GIVEN {
         ASSUME(gMovesInfo[MOVE_AQUA_JET].makesContact);
         ASSUME(!gMovesInfo[MOVE_WATER_GUN].makesContact);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, move); }
@@ -20,16 +20,16 @@ SINGLE_BATTLE_TEST("Mummy/Lingering Aroma replace the attacker's ability on cont
         if (gMovesInfo[move].makesContact) {
             ABILITY_POPUP(opponent, ability);
             if (ability == ABILITY_MUMMY)
-                MESSAGE("Wobbuffet acquired Mummy!");
+                MESSAGE("Lopmonx acquired Mummy!");
             else
-                MESSAGE("Wobbuffet acquired Lingering Aroma!");
+                MESSAGE("Lopmonx acquired Lingering Aroma!");
         } else {
             NONE_OF {
                 ABILITY_POPUP(opponent, ability);
                 if (ability == ABILITY_MUMMY)
-                    MESSAGE("Wobbuffet acquired Mummy!");
+                    MESSAGE("Lopmonx acquired Mummy!");
                 else
-                    MESSAGE("Wobbuffet acquired Lingering Aroma!");
+                    MESSAGE("Lopmonx acquired Lingering Aroma!");
             }
         }
     }

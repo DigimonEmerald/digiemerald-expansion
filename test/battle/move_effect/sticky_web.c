@@ -64,14 +64,14 @@ DOUBLE_BATTLE_TEST("Sticky Web lowers Speed by 1 in a double battle after Explos
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STICKY_WEB, playerRight);
         MESSAGE("A sticky web spreads out on the ground around the opposing team!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, playerLeft);
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
         MESSAGE("2 sent out Alakazam!");
         MESSAGE("Foe Alakazam was caught in a Sticky Web!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
         MESSAGE("Foe Alakazam's Speed fell!");
-        MESSAGE("Foe Wynaut was caught in a Sticky Web!");
+        MESSAGE("Foe Exveemon was caught in a Sticky Web!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-        MESSAGE("Foe Wynaut's Speed fell!");
+        MESSAGE("Foe Exveemon's Speed fell!");
     }
 }
 

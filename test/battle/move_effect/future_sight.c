@@ -138,9 +138,9 @@ SINGLE_BATTLE_TEST("Future Sight will miss timing if target faints before it is 
 SINGLE_BATTLE_TEST("Future Sight will miss timing if target faints by residual damage")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(10); }
-        OPPONENT(SPECIES_WYNAUT);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { HP(10); }
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_FUTURE_SIGHT); }
         TURN { MOVE(player, MOVE_CELEBRATE); }
@@ -150,9 +150,9 @@ SINGLE_BATTLE_TEST("Future Sight will miss timing if target faints by residual d
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FUTURE_SIGHT, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WRAP, player);
-        MESSAGE("Foe Wobbuffet fainted!");
-        MESSAGE("2 sent out Wynaut!");
-        NOT MESSAGE("Foe Wynaut took the Future Sight attack!");
+        MESSAGE("Foe Lopmonx fainted!");
+        MESSAGE("2 sent out Exveemon!");
+        NOT MESSAGE("Foe Exveemon took the Future Sight attack!");
     }
 }
 
@@ -161,7 +161,7 @@ SINGLE_BATTLE_TEST("Future Sight breaks Focus Sash and doesn't make the holder e
     ASSUME(gMovesInfo[MOVE_PSYCHIC].power > 0);
     ASSUME(gItemsInfo[ITEM_FOCUS_SASH].holdEffect == HOLD_EFFECT_FOCUS_SASH);
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PIDGEY) { Level(1); Item(ITEM_FOCUS_SASH); }
     } WHEN {
         TURN { MOVE(player, MOVE_FUTURE_SIGHT); }

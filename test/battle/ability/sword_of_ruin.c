@@ -34,10 +34,10 @@ SINGLE_BATTLE_TEST("Sword of Ruin's message displays correctly after all battler
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_EXPLOSION].effect == EFFECT_EXPLOSION);
-        PLAYER(SPECIES_WOBBUFFET) { HP(1);}
+        PLAYER(SPECIES_LOPMONX) { HP(1);}
         PLAYER(SPECIES_CHIEN_PAO);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EXPLOSION); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
         TURN { MOVE(player, MOVE_TACKLE); MOVE(opponent, MOVE_RUINATION); }
@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Sword of Ruin's message displays correctly after all battler
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, opponent);
         // Everyone faints.
         MESSAGE("Go! Chien-Pao!");
-        MESSAGE("2 sent out Wobbuffet!");
+        MESSAGE("2 sent out Lopmonx!");
         ABILITY_POPUP(player, ABILITY_SWORD_OF_RUIN);
         MESSAGE("Chien-Pao's Sword of Ruin weakened the Defense of all surrounding Pokémon!");
     }
@@ -56,9 +56,9 @@ SINGLE_BATTLE_TEST("Sword of Ruin's message displays correctly after all battler
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_EXPLOSION].effect == EFFECT_EXPLOSION);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1);}
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { HP(1);}
         OPPONENT(SPECIES_CHIEN_PAO);
     } WHEN {
         TURN { MOVE(player, MOVE_EXPLOSION); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
@@ -67,7 +67,7 @@ SINGLE_BATTLE_TEST("Sword of Ruin's message displays correctly after all battler
         HP_BAR(player, hp: 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, player);
         // Everyone faints.
-        MESSAGE("Go! Wobbuffet!");
+        MESSAGE("Go! Lopmonx!");
         MESSAGE("2 sent out Chien-Pao!");
         ABILITY_POPUP(opponent, ABILITY_SWORD_OF_RUIN);
         MESSAGE("Foe Chien-Pao's Sword of Ruin weakened the Defense of all surrounding Pokémon!");

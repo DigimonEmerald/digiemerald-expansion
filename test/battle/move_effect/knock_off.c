@@ -55,11 +55,11 @@ SINGLE_BATTLE_TEST("Knock Off activates after Rocky Helmet and Weakness Policy")
 SINGLE_BATTLE_TEST("Knock Off doesn't knock off items from Pokemon behind substitutes")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_POKE_BALL); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_POKE_BALL); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUBSTITUTE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
-        NOT MESSAGE("Wobbuffet knocked off Foe Wobbuffet's Poké Ball");
+        NOT MESSAGE("Lopmonx knocked off Foe Lopmonx's Poké Ball");
     }
 }

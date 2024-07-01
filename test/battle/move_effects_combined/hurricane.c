@@ -43,14 +43,14 @@ SINGLE_BATTLE_TEST("Hurricane can hit airborne targets (Fly, Bounce)")
         ASSUME(UNCOMPRESS_BITS(HIHALF(gMovesInfo[MOVE_FLY].argument)) == STATUS3_ON_AIR);
         ASSUME(gMovesInfo[MOVE_BOUNCE].effect == EFFECT_SEMI_INVULNERABLE);
         ASSUME(UNCOMPRESS_BITS(HIHALF(gMovesInfo[MOVE_BOUNCE].argument)) == STATUS3_ON_AIR);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(move); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Moves(move); }
     } WHEN {
         TURN { MOVE(opponent, move); MOVE(player, MOVE_HURRICANE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HURRICANE, player);
-        NONE_OF { MESSAGE("Wobbuffet's attack missed!"); }
+        NONE_OF { MESSAGE("Lopmonx's attack missed!"); }
     }
 }
 
@@ -59,15 +59,15 @@ DOUBLE_BATTLE_TEST("Hurricane can hit airborne targets (Sky Drop)")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SKY_DROP].effect == EFFECT_SKY_DROP);
         ASSUME(UNCOMPRESS_BITS(HIHALF(gMovesInfo[MOVE_SKY_DROP].argument)) == STATUS3_ON_AIR);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SKY_DROP, target: opponentLeft); MOVE(playerRight, MOVE_HURRICANE, target: playerLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SKY_DROP, playerLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HURRICANE, playerRight);
-        NONE_OF { MESSAGE("Wobbuffet's attack missed!"); }
+        NONE_OF { MESSAGE("Lopmonx's attack missed!"); }
     }
 }

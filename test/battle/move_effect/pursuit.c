@@ -30,18 +30,18 @@ SINGLE_BATTLE_TEST("Pursuit becomes a locked move after being used on switch-out
 {
     GIVEN {
         ASSUME(gItemsInfo[ITEM_CHOICE_BAND].holdEffect == HOLD_EFFECT_CHOICE_BAND);
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_CHOICE_BAND); MovesWithPP({MOVE_PURSUIT, 1}, {MOVE_CELEBRATE, 10}, {MOVE_WATER_GUN, 10}, {MOVE_TACKLE, 10}); }
-        OPPONENT(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_CHOICE_BAND); MovesWithPP({MOVE_PURSUIT, 1}, {MOVE_CELEBRATE, 10}, {MOVE_WATER_GUN, 10}, {MOVE_TACKLE, 10}); }
+        OPPONENT(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { SWITCH(opponent, 1); MOVE(player, MOVE_PURSUIT); }
         TURN { FORCED_MOVE(player); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PURSUIT, player);
         HP_BAR(opponent);
-        MESSAGE("2 sent out Wobbuffet!");
+        MESSAGE("2 sent out Lopmonx!");
 
-        MESSAGE("Wobbuffet used Struggle!");
+        MESSAGE("Lopmonx used Struggle!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STRUGGLE, player);
     }
 }

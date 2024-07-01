@@ -9,7 +9,7 @@ SINGLE_BATTLE_TEST("Switch-in abilities trigger in Speed Order at the battle's s
     PARAMETRIZE { spdOpponent = 5; spdPlayer = 1; }
 
     GIVEN {
-        PLAYER(SPECIES_EKANS) { Speed(spdPlayer); Ability(ABILITY_INTIMIDATE); }
+        PLAYER(SPECIES_PAFUMON) { Speed(spdPlayer); Ability(ABILITY_INTIMIDATE); }
         OPPONENT(SPECIES_NINETALES) { Speed(spdOpponent); Ability(ABILITY_DROUGHT); }
     } WHEN {
         TURN { ; }
@@ -67,15 +67,15 @@ SINGLE_BATTLE_TEST("Switch-in abilities trigger in Speed Order after post-KO swi
     PARAMETRIZE { spdOpponent = 5; spdPlayer = 1; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); Speed(1); }
-        PLAYER(SPECIES_EKANS) { Speed(spdPlayer); Ability(ABILITY_INTIMIDATE); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); Speed(1); }
+        PLAYER(SPECIES_LOPMONX) { HP(1); Speed(1); }
+        PLAYER(SPECIES_PAFUMON) { Speed(spdPlayer); Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_LOPMONX) { HP(1); Speed(1); }
         OPPONENT(SPECIES_PORYGON2) { Speed(spdOpponent); Ability(ABILITY_DOWNLOAD); }
     } WHEN {
         TURN { MOVE(player, MOVE_EXPLOSION); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
         TURN { ; }
     } SCENE {
-        MESSAGE("Wobbuffet used Explosion!");
+        MESSAGE("Lopmonx used Explosion!");
         if (spdPlayer > spdOpponent) {
             ABILITY_POPUP(player, ABILITY_INTIMIDATE);
             ABILITY_POPUP(opponent, ABILITY_DOWNLOAD);
@@ -95,19 +95,19 @@ DOUBLE_BATTLE_TEST("Switch-in abilities trigger in Speed Order after post-KO swi
     PARAMETRIZE { spdPlayer1 = 4; spdPlayer2 = 3; spdOpponent1 = 5; spdOpponent2 = 2; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); Speed(1); }
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); Speed(1); }
+        PLAYER(SPECIES_LOPMONX) { HP(1); Speed(1); }
+        PLAYER(SPECIES_LOPMONX) { HP(1); Speed(1); }
         PLAYER(SPECIES_TYRANITAR) { Speed(spdPlayer1); Ability(ABILITY_SAND_STREAM); }
         PLAYER(SPECIES_GYARADOS) { Speed(spdPlayer2); Ability(ABILITY_INTIMIDATE); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); Speed(1); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); Speed(1); }
+        OPPONENT(SPECIES_LOPMONX) { HP(1); Speed(1); }
+        OPPONENT(SPECIES_LOPMONX) { HP(1); Speed(1); }
         OPPONENT(SPECIES_WEEZING_GALARIAN) { Speed(spdOpponent1); Ability(ABILITY_MISTY_SURGE); }
         OPPONENT(SPECIES_VULPIX_ALOLAN) { Speed(spdOpponent2); Ability(ABILITY_SNOW_WARNING); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EXPLOSION); SEND_OUT(playerLeft, 2); SEND_OUT(opponentLeft, 2); SEND_OUT(playerRight, 3); SEND_OUT(opponentRight, 3); }
         TURN { ; }
     } SCENE {
-        MESSAGE("Wobbuffet used Explosion!");
+        MESSAGE("Lopmonx used Explosion!");
         if (spdPlayer1 == 5) {
             ABILITY_POPUP(playerLeft, ABILITY_SAND_STREAM);
             ABILITY_POPUP(playerRight, ABILITY_INTIMIDATE);

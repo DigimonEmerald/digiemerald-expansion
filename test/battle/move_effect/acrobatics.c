@@ -13,8 +13,8 @@ SINGLE_BATTLE_TEST("Acrobatics doubles in power if the user has no held item", s
     PARAMETRIZE { heldItem = ITEM_POTION; }
     PARAMETRIZE { heldItem = ITEM_NONE; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(heldItem); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(heldItem); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_ACROBATICS); }
     } SCENE {
@@ -33,8 +33,8 @@ SINGLE_BATTLE_TEST("Acrobatics still doubles in power when Flying Gem is consume
         ASSUME(I_GEM_BOOST_POWER >= GEN_6);
         ASSUME(gItemsInfo[ITEM_FLYING_GEM].holdEffect == HOLD_EFFECT_GEMS);
         ASSUME(gItemsInfo[ITEM_FLYING_GEM].secondaryId == TYPE_FLYING);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(heldItem); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(heldItem); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_ACROBATICS); }
     } SCENE {

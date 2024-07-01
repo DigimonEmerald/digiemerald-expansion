@@ -34,10 +34,10 @@ SINGLE_BATTLE_TEST("Beads of Ruin's message displays correctly after all battler
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_EXPLOSION].effect == EFFECT_EXPLOSION);
-        PLAYER(SPECIES_WOBBUFFET) { HP(1);}
+        PLAYER(SPECIES_LOPMONX) { HP(1);}
         PLAYER(SPECIES_CHI_YU);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EXPLOSION); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
         TURN { MOVE(player, MOVE_TACKLE); MOVE(opponent, MOVE_RUINATION); }
@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Beads of Ruin's message displays correctly after all battler
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, opponent);
         // Everyone faints.
         MESSAGE("Go! Chi-Yu!");
-        MESSAGE("2 sent out Wobbuffet!");
+        MESSAGE("2 sent out Lopmonx!");
         ABILITY_POPUP(player, ABILITY_BEADS_OF_RUIN);
         MESSAGE("Chi-Yu's Beads of Ruin weakened the Sp. Def of all surrounding Pokémon!");
     }
@@ -56,9 +56,9 @@ SINGLE_BATTLE_TEST("Beads of Ruin's message displays correctly after all battler
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_EXPLOSION].effect == EFFECT_EXPLOSION);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1);}
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { HP(1);}
         OPPONENT(SPECIES_CHI_YU);
     } WHEN {
         TURN { MOVE(player, MOVE_EXPLOSION); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
@@ -67,7 +67,7 @@ SINGLE_BATTLE_TEST("Beads of Ruin's message displays correctly after all battler
         HP_BAR(player, hp: 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, player);
         // Everyone faints.
-        MESSAGE("Go! Wobbuffet!");
+        MESSAGE("Go! Lopmonx!");
         MESSAGE("2 sent out Chi-Yu!");
         ABILITY_POPUP(opponent, ABILITY_BEADS_OF_RUIN);
         MESSAGE("Foe Chi-Yu's Beads of Ruin weakened the Sp. Def of all surrounding Pokémon!");

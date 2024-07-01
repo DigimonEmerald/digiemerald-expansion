@@ -90,9 +90,9 @@ SINGLE_BATTLE_TEST("Thrash confuses the user if it is canceled on turn 3 of 3, I
 {
     GIVEN {
         ASSUME(B_RAMPAGE_CANCELLING >= GEN_5);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_GENGAR);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_TSUMEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_THRASH); }
         TURN { SKIP_TURN(player); }

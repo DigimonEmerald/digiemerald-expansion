@@ -58,7 +58,7 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke prevent stat st
         ASSUME(gMovesInfo[MOVE_SCARY_FACE].effect == EFFECT_SPEED_DOWN_2);
         ASSUME(gMovesInfo[MOVE_SWEET_SCENT].effect == (B_UPDATED_MOVE_DATA >= GEN_6 ? EFFECT_EVASION_DOWN_2 : EFFECT_EVASION_DOWN));
         ASSUME(gMovesInfo[MOVE_SAND_ATTACK].effect == EFFECT_ACCURACY_DOWN);
-        PLAYER(SPECIES_WOBBUFFET)
+        PLAYER(SPECIES_LOPMONX)
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, move); }
@@ -85,8 +85,8 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke prevent Sticky 
     PARAMETRIZE{ species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_STICKY_WEB].effect == EFFECT_STICKY_WEB);
-        PLAYER(SPECIES_WOBBUFFET)
-        OPPONENT(SPECIES_WOBBUFFET)
+        PLAYER(SPECIES_LOPMONX)
+        OPPONENT(SPECIES_LOPMONX)
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_STICKY_WEB); }
@@ -113,7 +113,7 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent s
     PARAMETRIZE{ species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; }
     GIVEN {
         ASSUME(MoveHasAdditionalEffectSelf(MOVE_SUPERPOWER, MOVE_EFFECT_ATK_DEF_DOWN) == TRUE);
-        PLAYER(SPECIES_WOBBUFFET)
+        PLAYER(SPECIES_LOPMONX)
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUPERPOWER); }
@@ -166,7 +166,7 @@ SINGLE_BATTLE_TEST("Mold Breaker, Teravolt, and Turboblaze ignore Clear Body and
         ASSUME(gMovesInfo[MOVE_SCARY_FACE].effect == EFFECT_SPEED_DOWN_2);
         ASSUME(gMovesInfo[MOVE_SWEET_SCENT].effect == (B_UPDATED_MOVE_DATA >= GEN_6 ? EFFECT_EVASION_DOWN_2 : EFFECT_EVASION_DOWN));
         ASSUME(gMovesInfo[MOVE_SAND_ATTACK].effect == EFFECT_ACCURACY_DOWN);
-        PLAYER(SPECIES_WOBBUFFET) { Ability(breakerAbility); }
+        PLAYER(SPECIES_LOPMONX) { Ability(breakerAbility); }
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, move); }
@@ -204,14 +204,14 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent S
     }
     GIVEN {
         ASSUME(gItemsInfo[ITEM_IRON_BALL].holdEffect == HOLD_EFFECT_IRON_BALL);
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); }
         OPPONENT(species) { Speed(6); Ability(ability); Item(heldItem); }
     } WHEN {
         TURN { }
     } SCENE {
         NOT ABILITY_POPUP(opponent, ability);
         if (heldItem == ITEM_IRON_BALL) {
-            MESSAGE("Wobbuffet used Celebrate!");
+            MESSAGE("Lopmonx used Celebrate!");
             if (ability == ABILITY_FULL_METAL_BODY)
                 MESSAGE("Foe Solgaleo used Celebrate!");
             else if (ability == ABILITY_WHITE_SMOKE)
@@ -225,7 +225,7 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent S
                 MESSAGE("Foe Torkoal used Celebrate!");
             else
                 MESSAGE("Foe Metang used Celebrate!");
-            MESSAGE("Wobbuffet used Celebrate!");
+            MESSAGE("Lopmonx used Celebrate!");
         }
     }
 }
@@ -239,7 +239,7 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent S
     PARAMETRIZE{ species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); }
         OPPONENT(species) { Speed(6); Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_THUNDER_WAVE); }
@@ -251,10 +251,10 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent S
             MESSAGE("Foe Torkoal used Celebrate!");
         else
             MESSAGE("Foe Metang used Celebrate!");
-        MESSAGE("Wobbuffet used Thunder Wave!");
+        MESSAGE("Lopmonx used Thunder Wave!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDER_WAVE, player);
         NOT ABILITY_POPUP(opponent, ability);
-        MESSAGE("Wobbuffet used Thunder Wave!");
+        MESSAGE("Lopmonx used Thunder Wave!");
         ONE_OF {
             MESSAGE("Foe Metang used Celebrate!");
             MESSAGE("Foe Metang is paralyzed! It can't move!");
@@ -278,7 +278,7 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent A
     PARAMETRIZE{ species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; burned = TRUE; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].category == DAMAGE_CATEGORY_PHYSICAL);
-        PLAYER(SPECIES_WOBBUFFET)
+        PLAYER(SPECIES_LOPMONX)
         OPPONENT(species) { Ability(ability); if (burned) Status1(STATUS1_BURN); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
@@ -301,14 +301,14 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent r
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SCARY_FACE].effect == EFFECT_SPEED_DOWN_2);
         ASSUME(gMovesInfo[MOVE_BATON_PASS].effect == EFFECT_BATON_PASS);
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(3); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(3); }
         OPPONENT(species) { Speed(6); Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_SCARY_FACE); MOVE(opponent, MOVE_BATON_PASS); SEND_OUT(opponent, 1); }
         TURN { MOVE(player, MOVE_SCARY_FACE); }
     } SCENE {
-        MESSAGE("Wobbuffet used Scary Face!");
+        MESSAGE("Lopmonx used Scary Face!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCARY_FACE, player);
         ABILITY_POPUP(opponent, ability);
         if (ability == ABILITY_FULL_METAL_BODY)
@@ -332,15 +332,15 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent T
         ASSUME(gMovesInfo[MOVE_TOPSY_TURVY].effect == EFFECT_TOPSY_TURVY);
         ASSUME(gMovesInfo[MOVE_SCARY_FACE].effect == EFFECT_SPEED_DOWN_2);
         ASSUME(gMovesInfo[MOVE_BATON_PASS].effect == EFFECT_BATON_PASS);
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(3); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(3); }
         OPPONENT(species) { Speed(6); Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_SCARY_FACE); MOVE(opponent, MOVE_BATON_PASS); SEND_OUT(opponent, 1); }
         TURN { MOVE(player, MOVE_TOPSY_TURVY); }
         TURN { MOVE(player, MOVE_SCARY_FACE); }
     } SCENE {
-        MESSAGE("Wobbuffet used Topsy-Turvy!");
+        MESSAGE("Lopmonx used Topsy-Turvy!");
         NOT ABILITY_POPUP(opponent, ability);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOPSY_TURVY, player);
         if (ability == ABILITY_FULL_METAL_BODY) {
@@ -355,7 +355,7 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent T
             MESSAGE("Foe Metang used Celebrate!");
             MESSAGE("Foe Metang used Celebrate!");
         }
-        MESSAGE("Wobbuffet used Scary Face!");
+        MESSAGE("Lopmonx used Scary Face!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SCARY_FACE, player);
         ABILITY_POPUP(opponent, ability);
     }
@@ -372,7 +372,7 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent S
     GIVEN {
         ASSUME(MoveHasAdditionalEffect(MOVE_SPECTRAL_THIEF, MOVE_EFFECT_SPECTRAL_THIEF) == TRUE);
         ASSUME(gMovesInfo[MOVE_AGILITY].effect == EFFECT_SPEED_UP_2);
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); }
         OPPONENT(species) { Speed(5); Ability(ability); }
     } WHEN {
         TURN{ MOVE(opponent, MOVE_AGILITY); }
@@ -386,17 +386,17 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent S
         else
             MESSAGE("Foe Metang used Agility!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_AGILITY, opponent);
-        MESSAGE("Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
         if (ability == ABILITY_FULL_METAL_BODY)
             MESSAGE("Foe Solgaleo used Celebrate!");
         else if (ability == ABILITY_WHITE_SMOKE)
             MESSAGE("Foe Torkoal used Celebrate!");
         else
             MESSAGE("Foe Metang used Celebrate!");
-        MESSAGE("Wobbuffet used SpectrlThief!");
+        MESSAGE("Lopmonx used SpectrlThief!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPECTRAL_THIEF, player);
         NOT ABILITY_POPUP(opponent, ability);
-        MESSAGE("Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
         if (ability == ABILITY_FULL_METAL_BODY)
             MESSAGE("Foe Solgaleo used Celebrate!");
         else if (ability == ABILITY_WHITE_SMOKE)

@@ -835,8 +835,8 @@ AI_SINGLE_BATTLE_TEST("AI will only choose Surf 1/3 times if the opposing mon ha
         TURN { EXPECT_MOVE(opponent, MOVE_SURF); }
         TURN { EXPECT_MOVE(opponent, MOVE_SURF); }
     } SCENE {
-        MESSAGE("Foe Lanturn used Surf!");
-        MESSAGE("Foe Lanturn used Surf!");
+        MESSAGE("Foe Guilmon used Surf!");
+        MESSAGE("Foe Guilmon used Surf!");
     }
 }
 
@@ -846,14 +846,14 @@ AI_SINGLE_BATTLE_TEST("AI will choose Thunderbolt then Surf 2/3 times if the opp
     GIVEN {
         ASSUME(gMovesInfo[MOVE_THUNDERBOLT].type == TYPE_ELECTRIC);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_LANTURN) { Ability(ABILITY_VOLT_ABSORB); };
-        OPPONENT(SPECIES_LANTURN) { Moves(MOVE_THUNDERBOLT, MOVE_ICE_BEAM, MOVE_SURF); }
+        PLAYER(SPECIES_GUILMON) { Ability(ABILITY_VOLT_ABSORB); };
+        OPPONENT(SPECIES_GUILMON) { Moves(MOVE_THUNDERBOLT, MOVE_ICE_BEAM, MOVE_SURF); }
     } WHEN {
         TURN { EXPECT_MOVE(opponent, MOVE_THUNDERBOLT); }
         TURN { EXPECT_MOVE(opponent, MOVE_SURF); }
     } SCENE {
-        MESSAGE("Foe Lanturn used Thunderbolt!");
-        MESSAGE("Foe Lanturn used Surf!");
+        MESSAGE("Foe Guilmon used Thunderbolt!");
+        MESSAGE("Foe Guilmon used Surf!");
     }
 }
 
@@ -920,8 +920,8 @@ AI_DOUBLE_BATTLE_TEST("AI will not choose Earthquake if it damages the partner")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_EARTHQUAKE].target == MOVE_TARGET_FOES_AND_ALLY);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PHANPY) { Moves(MOVE_EARTHQUAKE, MOVE_TACKLE); }
         OPPONENT(species) { Moves(MOVE_CELEBRATE); }
     } WHEN {
@@ -937,9 +937,9 @@ AI_DOUBLE_BATTLE_TEST("AI will choose Earthquake if partner is not alive")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_EARTHQUAKE].target == MOVE_TARGET_FOES_AND_ALLY);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_EARTHQUAKE, MOVE_TACKLE); }
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_EARTHQUAKE, MOVE_TACKLE); }
         OPPONENT(SPECIES_PIKACHU) { HP(1); Moves(MOVE_CELEBRATE); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentRight); }
@@ -952,9 +952,9 @@ AI_DOUBLE_BATTLE_TEST("AI will choose Earthquake if it kill an opposing mon and 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_EARTHQUAKE].target == MOVE_TARGET_FOES_AND_ALLY);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_EARTHQUAKE, MOVE_TACKLE); }
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_EARTHQUAKE, MOVE_TACKLE); }
         OPPONENT(SPECIES_PARAS) { Moves(MOVE_CELEBRATE); }
     } WHEN {
         TURN { EXPECT_MOVE(opponentLeft, MOVE_EARTHQUAKE); }
@@ -970,9 +970,9 @@ AI_DOUBLE_BATTLE_TEST("AI will the see a corresponding absorbing ability on part
     GIVEN {
         ASSUME(gMovesInfo[MOVE_DISCHARGE].target == MOVE_TARGET_FOES_AND_ALLY);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_DISCHARGE, MOVE_TACKLE); }
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_DISCHARGE, MOVE_TACKLE); }
         OPPONENT(SPECIES_PIKACHU) { HP(1); Ability(ability); Moves(MOVE_CELEBRATE); }
     } WHEN {
         if (ability == ABILITY_LIGHTNING_ROD)
@@ -996,7 +996,7 @@ AI_SINGLE_BATTLE_TEST("AI calculates guaranteed criticals and detects critical i
         ASSUME(gMovesInfo[MOVE_STORM_THROW].category == gMovesInfo[MOVE_BRICK_BREAK].category);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
         PLAYER(SPECIES_OMASTAR) { Ability(ability); }
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_STORM_THROW, MOVE_BRICK_BREAK); }
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_STORM_THROW, MOVE_BRICK_BREAK); }
     } WHEN {
         if (ability == ABILITY_SHELL_ARMOR)
             TURN { EXPECT_MOVE(opponent, MOVE_BRICK_BREAK); }
@@ -1034,8 +1034,8 @@ AI_SINGLE_BATTLE_TEST("AI avoids contact moves against rocky helmet")
         ASSUME(gMovesInfo[MOVE_BRANCH_POKE].type == gMovesInfo[MOVE_LEAFAGE].type);
         ASSUME(gMovesInfo[MOVE_BRANCH_POKE].category == gMovesInfo[MOVE_LEAFAGE].category);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
-        PLAYER(SPECIES_WOBBUFFET) { Item(item); }
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_BRANCH_POKE, MOVE_LEAFAGE); }
+        PLAYER(SPECIES_LOPMONX) { Item(item); }
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_BRANCH_POKE, MOVE_LEAFAGE); }
     } WHEN {
         if (item == ITEM_ROCKY_HELMET)
             TURN { EXPECT_MOVE(opponent, MOVE_LEAFAGE); }

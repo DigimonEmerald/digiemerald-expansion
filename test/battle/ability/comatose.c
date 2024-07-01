@@ -12,7 +12,7 @@ SINGLE_BATTLE_TEST("Comatose prevents status-inducing moves")
 
     GIVEN {
         PLAYER(SPECIES_KOMALA) { Ability(ABILITY_COMATOSE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
@@ -35,15 +35,15 @@ SINGLE_BATTLE_TEST("Comatose may be suppressed if pokemon transformed into a pok
 
     GIVEN {
         PLAYER(SPECIES_KOMALA) { Ability(ABILITY_COMATOSE); Speed(30); }
-        OPPONENT(SPECIES_DITTO) { Speed(20); }
+        OPPONENT(SPECIES_CRABMON) { Speed(20); }
     } WHEN {
         TURN { MOVE(player, MOVE_GASTRO_ACID); MOVE(opponent, MOVE_TRANSFORM); }
         TURN { MOVE(player, move); }
     } SCENE {
         MESSAGE("Komala is drowsing!");
         MESSAGE("Komala used Gastro Acid!");
-        MESSAGE("Foe Ditto used Transform!");
-        MESSAGE("Foe Ditto transformed into Komala!");
+        MESSAGE("Foe Crabmon used Transform!");
+        MESSAGE("Foe Crabmon transformed into Komala!");
 
         ANIMATION(ANIM_TYPE_MOVE, move, player);
         if (move == MOVE_POISONPOWDER)      { STATUS_ICON(opponent, poison: TRUE); }

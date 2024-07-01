@@ -123,7 +123,7 @@ SINGLE_BATTLE_TEST("Mind Blown hp loss is prevented by Magic Guard")
 SINGLE_BATTLE_TEST("Mind Blown is blocked by Damp")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(400); MaxHP(400); }
+        PLAYER(SPECIES_LOPMONX) { HP(400); MaxHP(400); }
         OPPONENT(SPECIES_GOLDUCK) { Ability(ABILITY_DAMP); }
     } WHEN {
         TURN { MOVE(player, MOVE_MIND_BLOWN); }
@@ -133,15 +133,15 @@ SINGLE_BATTLE_TEST("Mind Blown is blocked by Damp")
             HP_BAR(player, damage: 200);
         }
         ABILITY_POPUP(opponent, ABILITY_DAMP);
-        MESSAGE("Foe Golduck's Damp prevents Wobbuffet from using Mind Blown!");
+        MESSAGE("Foe Golduck's Damp prevents Lopmonx from using Mind Blown!");
     }
 }
 
 SINGLE_BATTLE_TEST("Mind Blown makes the user lose HP even if the opposing mon protected")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_PROTECT); MOVE(player, MOVE_MIND_BLOWN); }
     } SCENE {
@@ -155,7 +155,7 @@ SINGLE_BATTLE_TEST("Mind Blown makes the user lose HP even if it is absorbed by 
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_MIND_BLOWN].type == TYPE_FIRE);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_CYNDAQUIL) { Ability(ABILITY_FLASH_FIRE); }
     } WHEN {
         TURN { MOVE(player, MOVE_MIND_BLOWN); }
@@ -169,9 +169,9 @@ SINGLE_BATTLE_TEST("Mind Blown makes the user lose HP even if it is absorbed by 
 SINGLE_BATTLE_TEST("Mind Blown does not cause the user to lose HP if there is no target")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_MEMENTO); MOVE(player, MOVE_MIND_BLOWN); SEND_OUT(opponent, 1); }
     } SCENE {
@@ -180,8 +180,8 @@ SINGLE_BATTLE_TEST("Mind Blown does not cause the user to lose HP if there is no
             ANIMATION(ANIM_TYPE_MOVE, MOVE_MIND_BLOWN, player);
             HP_BAR(player);
         }
-        MESSAGE("Wobbuffet used Mind Blown!");
+        MESSAGE("Lopmonx used Mind Blown!");
         MESSAGE("But it failed!");
-        MESSAGE("2 sent out Wobbuffet!");
+        MESSAGE("2 sent out Lopmonx!");
     }
 }

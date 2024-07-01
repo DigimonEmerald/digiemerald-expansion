@@ -59,7 +59,7 @@ SINGLE_BATTLE_TEST("ignoresTargetAbility moves do ignore target's abilities", s1
     ASSUME(gAbilitiesInfo[ABILITY_MULTISCALE].breakable);
 
     GIVEN {
-        PLAYER(SPECIES_AZUMARILL);
+        PLAYER(SPECIES_JELLYMON);
         OPPONENT(SPECIES_DRAGONITE) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, move); }

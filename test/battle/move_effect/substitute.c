@@ -58,14 +58,14 @@ SINGLE_BATTLE_TEST("Substitute's HP cost can trigger a berry")
 SINGLE_BATTLE_TEST("Substitute's HP cost doesn't trigger effects that trigger on damage taken")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_AIR_BALLOON); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_AIR_BALLOON); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SUBSTITUTE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SUBSTITUTE, player);
-        MESSAGE("Wobbuffet made a SUBSTITUTE!");
-        NOT MESSAGE("Wobbuffet's Air Balloon popped!");
+        MESSAGE("Lopmonx made a SUBSTITUTE!");
+        NOT MESSAGE("Lopmonx's Air Balloon popped!");
     }
 }
 

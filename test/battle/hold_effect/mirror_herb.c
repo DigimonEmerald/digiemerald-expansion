@@ -52,19 +52,19 @@ SINGLE_BATTLE_TEST("Mirror Herb copies all of Stuff Cheeks' stat boosts")
 DOUBLE_BATTLE_TEST("Mirror Herb does not trigger for Ally's Soul Heart's stat raise")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_MIRROR_HERB); }
-        PLAYER(SPECIES_WYNAUT) { Ability(ABILITY_SOUL_HEART); } // Raises Sp. Atk after fainting am on
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_MIRROR_HERB); }
+        PLAYER(SPECIES_EXVEEMON) { Ability(ABILITY_SOUL_HEART); } // Raises Sp. Atk after fainting am on
+        OPPONENT(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerRight, MOVE_TACKLE, target:opponentLeft); }
     } SCENE {
-        MESSAGE("Wynaut used Tackle!");
-        MESSAGE("Foe Wobbuffet fainted!");
+        MESSAGE("Exveemon used Tackle!");
+        MESSAGE("Foe Lopmonx fainted!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerLeft);
-            MESSAGE("Wobbuffet used its Mirror Herb to mirror its opponent's stat changes!");
+            MESSAGE("Lopmonx used its Mirror Herb to mirror its opponent's stat changes!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
         }
     }

@@ -140,7 +140,7 @@ SINGLE_BATTLE_TEST("Corrosion cannot bypass moves that prevent poisoning such as
         ASSUME(gMovesInfo[MOVE_TOXIC].effect == EFFECT_TOXIC);
         ASSUME(gMovesInfo[MOVE_POISON_POWDER].effect == EFFECT_POISON);
         PLAYER(SPECIES_SALANDIT) { Ability(ABILITY_CORROSION); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SAFEGUARD); MOVE(player, move); }
     } SCENE {
@@ -162,7 +162,7 @@ SINGLE_BATTLE_TEST("Corrosion cannot bypass abilities that prevent poisoning suc
         ASSUME(gMovesInfo[MOVE_TOXIC].effect == EFFECT_TOXIC);
         ASSUME(gMovesInfo[MOVE_POISON_POWDER].effect == EFFECT_POISON);
         PLAYER(SPECIES_SALANDIT) { Ability(ABILITY_CORROSION); }
-        OPPONENT(SPECIES_SNORLAX) { Ability(ABILITY_IMMUNITY); }
+        OPPONENT(SPECIES_DRACOMON) { Ability(ABILITY_IMMUNITY); }
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
@@ -209,7 +209,7 @@ SINGLE_BATTLE_TEST("Corrosion's effect is lost if the move used by the Pokémon 
         ASSUME(gMovesInfo[MOVE_POISON_POWDER].effect == EFFECT_POISON);
         ASSUME(gMovesInfo[MOVE_MAGIC_COAT].effect == EFFECT_MAGIC_COAT);
         PLAYER(SPECIES_SALANDIT) { Ability(ABILITY_CORROSION); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_MAGIC_COAT); MOVE(player, move); }
     } SCENE {

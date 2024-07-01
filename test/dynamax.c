@@ -1480,12 +1480,12 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Moxie clones can be triggered by Max Moves faintin
     ASSUME(gMovesInfo[MOVE_WATERFALL].power > 0);
     GIVEN {
         PLAYER(SPECIES_GYARADOS) { Ability(ABILITY_MOXIE); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_WATERFALL, dynamax: TRUE); SEND_OUT(opponent, 1); }
     } SCENE {
-        MESSAGE("Foe Wobbuffet fainted!");
+        MESSAGE("Foe Lopmonx fainted!");
         ABILITY_POPUP(player, ABILITY_MOXIE);
         MESSAGE("Gyarados's Moxie raised its Attack!");
     }

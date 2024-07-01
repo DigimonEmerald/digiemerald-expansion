@@ -60,7 +60,7 @@ DOUBLE_BATTLE_TEST("Stealth Rock damages the correct pokemon when Eject Button i
         PLAYER(SPECIES_METAPOD) { Item(ITEM_EJECT_BUTTON); }
         PLAYER(SPECIES_METAPOD);
         OPPONENT(SPECIES_JOLTEON);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_STEALTH_ROCK); MOVE(opponentRight, MOVE_TACKLE, target: playerLeft); SEND_OUT(playerLeft, 2); }
     } SCENE {

@@ -77,7 +77,7 @@ DOUBLE_BATTLE_TEST("Intimidate doesn't activate on an empty field in a double ba
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, playerLeft);
         // Everyone faints.
 
-        MESSAGE("Go! Ekans!");
+        MESSAGE("Go! Pafumon!");
         NONE_OF {
             ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
@@ -88,17 +88,17 @@ DOUBLE_BATTLE_TEST("Intimidate doesn't activate on an empty field in a double ba
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
         }
         MESSAGE("Go! Abra!");
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
         // Intimidate activates after all battlers have been brought out
         ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-        MESSAGE("Ekans's Intimidate cuts Foe Arbok's attack!");
+        MESSAGE("Pafumon's Intimidate cuts Foe Arbok's attack!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("Ekans's Intimidate cuts Foe Wynaut's attack!");
+        MESSAGE("Pafumon's Intimidate cuts Foe Exveemon's attack!");
 
         ABILITY_POPUP(opponentLeft, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-        MESSAGE("Foe Arbok's Intimidate cuts Ekans's attack!");
+        MESSAGE("Foe Arbok's Intimidate cuts Pafumon's attack!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
         MESSAGE("Foe Arbok's Intimidate cuts Abra's attack!");
     }
@@ -220,11 +220,11 @@ SINGLE_BATTLE_TEST("Intimidate can not further lower opponents Atk stat if it is
 DOUBLE_BATTLE_TEST("Intimidate is not going to trigger if a mon switches out through u-turn and the opposing field is empty")
 {
     GIVEN {
-        PLAYER(SPECIES_WYNAUT);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE); }
-        OPPONENT(SPECIES_WYNAUT) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_EXVEEMON) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_TREECKO);
         OPPONENT(SPECIES_TORCHIC);
     } WHEN {

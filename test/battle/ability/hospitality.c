@@ -72,19 +72,19 @@ DOUBLE_BATTLE_TEST("Hospitality ignores Substitute")
 DOUBLE_BATTLE_TEST("Hospitality does not trigger if there is no ally on the field")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1);  }
-        PLAYER(SPECIES_WOBBUFFET) { HP(1);  }
+        PLAYER(SPECIES_LOPMONX) { HP(1);  }
+        PLAYER(SPECIES_LOPMONX) { HP(1);  }
         PLAYER(SPECIES_POLTCHAGEIST) { Ability(ABILITY_HOSPITALITY); }
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_BLIZZARD); SEND_OUT(playerLeft, 2); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BLIZZARD, opponentLeft);
         HP_BAR(playerLeft);
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmonx fainted!");
         HP_BAR(playerRight);
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmonx fainted!");
         MESSAGE("Go! Ptchageist!");
         NOT ABILITY_POPUP(playerLeft, ABILITY_HOSPITALITY);
     }

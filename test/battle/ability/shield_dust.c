@@ -152,7 +152,7 @@ SINGLE_BATTLE_TEST("Shield Dust blocks Sparkling Aria in singles")
 {
     KNOWN_FAILING;
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_VIVILLON) { Ability(ABILITY_SHIELD_DUST); Status1(STATUS1_BURN); }
     } WHEN {
         TURN { MOVE(player, MOVE_SPARKLING_ARIA); }

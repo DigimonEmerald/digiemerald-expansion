@@ -9,9 +9,9 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Stone Axe sets up hazards after hitting the target")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_STONE_AXE); }
         TURN { SWITCH(opponent, 1); }
@@ -20,18 +20,18 @@ SINGLE_BATTLE_TEST("Stone Axe sets up hazards after hitting the target")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STONE_AXE, player);
         HP_BAR(opponent);
         MESSAGE("Pointed stones float in the air around the opposing team!");
-        MESSAGE("2 sent out Wobbuffet!");
+        MESSAGE("2 sent out Lopmonx!");
         HP_BAR(opponent, damage: maxHP / 8);
-        MESSAGE("Pointed stones dug into Foe Wobbuffet!");
+        MESSAGE("Pointed stones dug into Foe Lopmonx!");
     }
 }
 
 SINGLE_BATTLE_TEST("Stone Axe can set up pointed stones only once")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WYNAUT);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_STONE_AXE); }
         TURN { MOVE(player, MOVE_STONE_AXE); }
@@ -57,9 +57,9 @@ SINGLE_BATTLE_TEST("Stone Axe can set up pointed stones only once")
         HP_BAR(opponent);
         NOT MESSAGE("Pointed stones float in the air around the opposing team!");
 
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
         HP_BAR(opponent, damage: maxHP / 8);
-        MESSAGE("Pointed stones dug into Foe Wynaut!");
+        MESSAGE("Pointed stones dug into Foe Exveemon!");
     }
 }
 

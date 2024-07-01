@@ -94,7 +94,7 @@ DOUBLE_BATTLE_TEST("Explosion causes everyone to faint in a double battle")
 SINGLE_BATTLE_TEST("Explosion is blocked by Ability Damp")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_GOLDUCK) { Ability(ABILITY_DAMP); }
     } WHEN {
         TURN { MOVE(player, MOVE_EXPLOSION); }
@@ -104,15 +104,15 @@ SINGLE_BATTLE_TEST("Explosion is blocked by Ability Damp")
             HP_BAR(player, hp: 0);
         }
         ABILITY_POPUP(opponent, ABILITY_DAMP);
-        MESSAGE("Foe Golduck's Damp prevents Wobbuffet from using Explosion!");
+        MESSAGE("Foe Golduck's Damp prevents Lopmonx from using Explosion!");
     }
 }
 
 SINGLE_BATTLE_TEST("Explosion does not trigger Destiny Bond")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); };
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(1); };
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_DESTINY_BOND); MOVE(opponent, MOVE_EXPLOSION);}
     } SCENE {
@@ -128,9 +128,9 @@ DOUBLE_BATTLE_TEST("Explosion boosted by Galvanize is correctly blocked by Volt 
 {
     GIVEN {
         PLAYER(SPECIES_GEODUDE_ALOLAN) { Ability(ABILITY_GALVANIZE); }
-        PLAYER(SPECIES_WYNAUT) { HP(1); }
-        OPPONENT(SPECIES_LANTURN) { Ability(ABILITY_VOLT_ABSORB); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        PLAYER(SPECIES_EXVEEMON) { HP(1); }
+        OPPONENT(SPECIES_GUILMON) { Ability(ABILITY_VOLT_ABSORB); }
+        OPPONENT(SPECIES_LOPMONX) { HP(1); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EXPLOSION); }
     } SCENE {
@@ -139,9 +139,9 @@ DOUBLE_BATTLE_TEST("Explosion boosted by Galvanize is correctly blocked by Volt 
         ABILITY_POPUP(opponentLeft, ABILITY_VOLT_ABSORB);
         NOT HP_BAR(opponentLeft, hp: 0);
         HP_BAR(playerRight, hp: 0);
-        MESSAGE("Wynaut fainted!");
+        MESSAGE("Exveemon fainted!");
         HP_BAR(opponentRight, hp: 0);
-        MESSAGE("Foe Wobbuffet fainted!");
+        MESSAGE("Foe Lopmonx fainted!");
         MESSAGE("Geodude fainted!");
     }
 }

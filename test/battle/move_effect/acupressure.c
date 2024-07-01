@@ -11,16 +11,16 @@ TO_DO_BATTLE_TEST("Acupressure fails on its ally if it's behind a Substitute");
 DOUBLE_BATTLE_TEST("Acupressure works on the ally if the user targeted itself but switched positions via Ally Switch")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_KADABRA);
         OPPONENT(SPECIES_ABRA);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(playerRight, MOVE_ACUPRESSURE, target:playerRight); }
     } SCENE {
-        MESSAGE("Wobbuffet used Ally Switch!");
+        MESSAGE("Lopmonx used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
-        MESSAGE("Wobbuffet and Wynaut switched places!");
+        MESSAGE("Lopmonx and Exveemon switched places!");
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ACUPRESSURE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
@@ -32,16 +32,16 @@ DOUBLE_BATTLE_TEST("Acupressure fails on the user if it targeted its ally but sw
 {
     KNOWN_FAILING; // Tested in Gen 5, Acupressure fails here
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_KADABRA);
         OPPONENT(SPECIES_ABRA);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(playerRight, MOVE_ACUPRESSURE, target:playerLeft); }
     } SCENE {
-        MESSAGE("Wobbuffet used Ally Switch!");
+        MESSAGE("Lopmonx used Ally Switch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLY_SWITCH, playerLeft);
-        MESSAGE("Wobbuffet and Wynaut switched places!");
+        MESSAGE("Lopmonx and Exveemon switched places!");
 
         MESSAGE("But it failed!");
         NONE_OF {

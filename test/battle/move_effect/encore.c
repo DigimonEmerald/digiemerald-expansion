@@ -9,8 +9,8 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Encore forces consecutive move uses for 3 turns for player: Encore used before move")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(10); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(20); }
+        PLAYER(SPECIES_LOPMONX) { Speed(10); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(20); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_CELEBRATE); }
         TURN { MOVE(opponent, MOVE_ENCORE); MOVE(player, MOVE_CELEBRATE); }
@@ -53,8 +53,8 @@ SINGLE_BATTLE_TEST("Encore forces consecutive move uses for 3 turns for player: 
 SINGLE_BATTLE_TEST("Encore forces consecutive move uses for 3 turns for opponent: Encore used before move")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(20); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(10); }
+        PLAYER(SPECIES_LOPMONX) { Speed(20); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(10); }
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_CELEBRATE); }
         TURN { MOVE(player, MOVE_ENCORE); MOVE(opponent, MOVE_CELEBRATE); }

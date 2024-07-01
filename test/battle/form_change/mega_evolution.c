@@ -161,7 +161,7 @@ SINGLE_BATTLE_TEST("Mega Evolved Pokemon do not change abilities after fainting"
         ASSUME(gSpeciesInfo[SPECIES_GARCHOMP_MEGA].abilities[0] != ABILITY_ROUGH_SKIN);
         ASSUME(gSpeciesInfo[SPECIES_GARCHOMP_MEGA].abilities[1] != ABILITY_ROUGH_SKIN);
         ASSUME(gSpeciesInfo[SPECIES_GARCHOMP_MEGA].abilities[2] != ABILITY_ROUGH_SKIN);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_GARCHOMP) { Ability(ABILITY_ROUGH_SKIN); Item(ITEM_GARCHOMPITE); HP(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_CRUNCH); MOVE(opponent, MOVE_CELEBRATE, megaEvolve: TRUE); }
@@ -171,7 +171,7 @@ SINGLE_BATTLE_TEST("Mega Evolved Pokemon do not change abilities after fainting"
         MESSAGE("Foe Garchomp fainted!");
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_ROUGH_SKIN);
-            MESSAGE("Wobbuffet was hurt by Foe Garchomp's Rough Skin!");
+            MESSAGE("Lopmonx was hurt by Foe Garchomp's Rough Skin!");
             HP_BAR(player);
         }
     }
