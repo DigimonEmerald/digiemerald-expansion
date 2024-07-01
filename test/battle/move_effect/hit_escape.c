@@ -126,6 +126,7 @@ SINGLE_BATTLE_TEST("Held items are consumed immediately after a mon switched in 
         ABILITY_POPUP(player, ABILITY_ELECTRIC_SURGE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
         HP_BAR(opponent);
+        ABILITY_POPUP(player, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         MESSAGE("2 sent out Exveemon!");
@@ -137,7 +138,6 @@ SINGLE_BATTLE_TEST("Held items are consumed immediately after a mon switched in 
 
 SINGLE_BATTLE_TEST("Held items are consumed immediately after a mon switched in by U-turn and Intimidate activates after it: opposing side")
 {
-    KNOWN_FAILING;
     GIVEN {
         PLAYER(SPECIES_TAPU_KOKO) { Ability(ABILITY_ELECTRIC_SURGE); };
         PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE);  }

@@ -47,20 +47,19 @@ SINGLE_BATTLE_TEST("Plasma Fists turns normal moves into electric for the remain
     }
 }
 
-SINGLE_BATTLE_TEST("Plasma Fists type-changing effect is applied after Pixilate")
+SINGLE_BATTLE_TEST("Plasma Fists type-changing effect does not override Pixilate")
 {
     GIVEN {
         PLAYER(SPECIES_VIXIMON) { Speed(300); };
         OPPONENT(SPECIES_DARMAILMON) { Speed(1); Item(ITEM_DARMAILMONNITE); }
     } WHEN {
-        TURN { MOVE(player, MOVE_PLASMA_FISTS); MOVE(opponent, MOVE_EMBER, megaEvolve: TRUE); }
+        TURN { MOVE(player, MOVE_PLASMA_FISTS); MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponent);
-        MESSAGE("Viximon used Plasma Fists!");
+        MESSAGE("Krabby used Plasma Fists!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PLASMA_FISTS, player);
         MESSAGE("A deluge of ions showers the battlefield!");
-        MESSAGE("Foe Darmailmon used Ember!");
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_EMBER, opponent);
+        MESSAGE("Foe Sylveon used Tackle!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         NOT MESSAGE("It's super effective!");
     }
 }

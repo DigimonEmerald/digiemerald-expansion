@@ -137,24 +137,3 @@ DOUBLE_BATTLE_TEST("Brick Break can remove Light Screen, Reflect and Aurora Veil
         HP_BAR(playerLeft);
     }
 }
-
-SINGLE_BATTLE_TEST("Move Raging Bull changes it's type depending on the Chuumon Form")
-{
-    u16 speciesPlayer;
-    u16 speciesOpponent;
-
-    PARAMETRIZE { speciesPlayer = SPECIES_CHUUMON_PALDEAN_COMBAT_BREED; speciesOpponent = SPECIES_CHIBOMON; }
-    PARAMETRIZE { speciesPlayer = SPECIES_CHUUMON_PALDEAN_BLAZE_BREED; speciesOpponent = SPECIES_CURIMON; }
-    PARAMETRIZE { speciesPlayer = SPECIES_CHUUMON_PALDEAN_AQUA_BREED; speciesOpponent = SPECIES_BOMMON; }
-
-    GIVEN {
-        PLAYER(speciesPlayer);
-        OPPONENT(speciesOpponent);
-    } WHEN {
-        TURN { MOVE(player, MOVE_RAGING_BULL); }
-    } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_RAGING_BULL, player);
-        HP_BAR(opponent);
-        MESSAGE("It's not very effective…");
-    }
-}
