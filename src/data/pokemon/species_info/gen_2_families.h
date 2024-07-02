@@ -6,34 +6,36 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_FALCOMON_06
     [SPECIES_FALCOMON_06] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 49,
-        .baseDefense   = 65,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 49,
-        .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_GRASS),
-        .catchRate = 45,
-        .expYield = 64,
-        .evYield_SpDefense = 1,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .baseHP        = 49,
+        .baseAttack    = 60,
+        .baseDefense   = 51,
+        .baseSpeed     = 67,
+        .baseSpAttack  = 47,
+        .baseSpDefense = 49,
+        .types = MON_TYPES(TYPE_DARK, TYPE_FLYING),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 155,
+        .expYield = 100,
+        .evYield_Attack    = 1,
+        .evYield_Speed     = 2,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_SLOW,
+        .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_LEAF_GUARD },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Falcomon"),
         .cryId = CRY_FALCOMON_06,
         .natDexNum = NATIONAL_DEX_FALCOMON_06,
-        .categoryName = _("Leaf"),
-        .height = 9,
-        .weight = 64,
+        .categoryName = _("Ninja Bird"),
+        .height = 12,
+        .weight = 273,
         .description = COMPOUND_STRING(
-            "It waves its leaf around to keep foes\n"
-            "at bay. However, a sweet fragrance also\n"
-            "wafts from the leaf, creating a friendly\n"
-            "atmosphere that becalms the battlers."),
+            "These Falcomon are a subspecies of\n"
+            "Falcomon who have learnt to fly and have\n"
+            "a strong interest ninjutsu. They will use\n"
+            "their ability to fly to drop atop targets."),
         .pokemonScale = 512,
         .pokemonOffset = 20,
         .trainerScale = 256,
@@ -54,40 +56,40 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Falcomon_06)
         .levelUpLearnset = sFalcomon_06LevelUpLearnset,
         .teachableLearnset = sFalcomon_06TeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_FANBEEMON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_AIRDRAMON}),
     },
 
     [SPECIES_FANBEEMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 62,
-        .baseDefense   = 80,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 63,
-        .baseSpDefense = 80,
-        .types = MON_TYPES(TYPE_GRASS),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 141,
-        .evYield_Defense = 1,
-        .evYield_SpDefense = 1,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .baseHP        = 42,
+        .baseAttack    = 52,
+        .baseDefense   = 48,
+        .baseSpeed     = 76,
+        .baseSpAttack  = 43,
+        .baseSpDefense = 44,
+        .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 155,
+        .expYield = 100,
+        .evYield_Speed     = 3,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_SLOW,
+        .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_LEAF_GUARD },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Fanbeemon"),
         .cryId = CRY_FANBEEMON,
         .natDexNum = NATIONAL_DEX_FANBEEMON,
-        .categoryName = _("Leaf"),
-        .height = 12,
-        .weight = 158,
+        .categoryName = _("X Antibody"),
+        .height = 8,
+        .weight = 135,
         .description = COMPOUND_STRING(
-            "A Fanbeemon's neck is ringed by curled-up\n"
-            "leaves. Inside each leaf is a small tree\n"
-            "shoot. The fragrance of this shoot\n"
-            "makes people peppy."),
+            "Although a single Fanbeemon is incredibly\n"
+            "weak, you should be incredibly careful\n"
+            "when interacting with them as they can\n"
+            "call the whole hive if threatened."),
         .pokemonScale = 296,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -108,46 +110,40 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Fanbeemon)
         .levelUpLearnset = sFanbeemonLevelUpLearnset,
         .teachableLearnset = sFanbeemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_FLAMEMON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_FLYMON}),
     },
 
     [SPECIES_FLAMEMON] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 82,
-        .baseDefense   = 100,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 83,
-        .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_GRASS),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 263,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 236,
-    #else
-        .expYield = 208,
-    #endif
-        .evYield_Defense = 1,
-        .evYield_SpDefense = 2,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .baseHP        = 44,
+        .baseAttack    = 43,
+        .baseDefense   = 52,
+        .baseSpeed     = 49,
+        .baseSpAttack  = 72,
+        .baseSpDefense = 58,
+        .types = MON_TYPES(TYPE_FIRE),
+        .attribute = TYPE_FREE,
+        .catchRate = 155,
+        .expYield = 100,
+        .evYield_SpAttack  = 3,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_SLOW,
+        .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
         .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_LEAF_GUARD },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Flamemon"),
         .cryId = CRY_FLAMEMON,
         .natDexNum = NATIONAL_DEX_FLAMEMON,
-        .categoryName = _("Herb"),
+        .categoryName = _("Hybrid"),
         .height = 18,
-        .weight = 1005,
+        .weight = 397,
         .description = COMPOUND_STRING(
-            "The fragrance of a Flamemon's flower\n"
-            "soothes and calms emotions. In battle,\n"
-            "it gives off more of its becalming scent\n"
-            "to blunt the foe's fighting spirit."),
+            "Flamemon is the weakened form of Agnuimon\n"
+            "however it can still pack an incredible\n"
+            "punch as it is still a being that has\n"
+            "inherited the Human Spirit of Flame."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 277,
@@ -172,40 +168,44 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Flamemon)
         .levelUpLearnset = sFlamemonLevelUpLearnset,
         .teachableLearnset = sFlamemonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_AGUNIMON}),
     },
 #endif //P_FAMILY_FALCOMON_06
 
 #if P_FAMILY_FLORAMON
     [SPECIES_FLORAMON] =
     {
-        .baseHP        = 39,
-        .baseAttack    = 52,
-        .baseDefense   = 43,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_FIRE),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 62 : 65,
-        .evYield_Speed = 1,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .baseHP        = 52,
+        .baseAttack    = 53,
+        .baseDefense   = 59,
+        .baseSpeed     = 49,
+        .baseSpAttack  = 54,
+        .baseSpDefense = 51,
+        .types = MON_TYPES(TYPE_GRASS),
+        .attribute = TYPE_DATA,
+        .catchRate = 155,
+        .expYield = 100,
+        .evYield_Attack    = 1,
+        .evYield_Defense   = 1,
+        .evYield_SpAttack  = 1,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_SLOW,
+        .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_FLASH_FIRE },
-        .bodyColor = BODY_COLOR_YELLOW,
+        .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Floramon"),
         .cryId = CRY_FLORAMON,
         .natDexNum = NATIONAL_DEX_FLORAMON,
-        .categoryName = _("Fire Mouse"),
-        .height = 5,
-        .weight = 79,
+        .categoryName = _("Flora"),
+        .height = 12,
+        .weight = 175,
         .description = COMPOUND_STRING(
-            "It flares flames from its back to protect\n"
-            "itself. The fire burns vigorously if the\n"
-            "Pokémon is angry. When it is tired,\n"
-            "it sputters with incomplete combustion."),
+            "Despite the fact that its whole body is\n"
+            "made of vegetation, it's head is \n"
+            "incredibly tough. The petals on its body\n"
+            "can open up wide when its feeling happy."),
         .pokemonScale = 539,
         .pokemonOffset = 21,
         .trainerScale = 256,
@@ -226,7 +226,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Floramon)
         .levelUpLearnset = sFloramonLevelUpLearnset,
         .teachableLearnset = sFloramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_GABUMON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_BLKGATOMON}),
     },
 
     [SPECIES_GABUMON] =
@@ -242,7 +242,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .expYield = 142,
         .evYield_Speed = 1,
         .evYield_SpAttack = 1,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
@@ -304,7 +304,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .catchRate = 45,
         .expYield = GABUMON_X_EXP_YIELD,
         .evYield_SpAttack = 3,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
@@ -359,7 +359,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .catchRate = 45,
         .expYield = GABUMON_X_EXP_YIELD,
         .evYield_SpAttack = 3,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
@@ -416,7 +416,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 63 : 66,
         .evYield_Attack = 1,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
@@ -470,7 +470,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 143,
         .evYield_Attack = 1,
         .evYield_Defense = 1,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
@@ -531,7 +531,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #endif
         .evYield_Attack = 2,
         .evYield_Defense = 1,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
@@ -1146,7 +1146,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .catchRate = 190,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 49 : 74,
         .evYield_SpDefense = 1,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 10,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
@@ -1199,7 +1199,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .catchRate = 75,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 114,
         .evYield_SpDefense = 2,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 10,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
@@ -1260,7 +1260,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #endif
         .evYield_SpAttack = 2,
         .evYield_SpDefense = 1,
-        .genderRatio = PERCENT_FEMALE(12.5),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 10,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,

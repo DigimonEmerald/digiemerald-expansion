@@ -15348,44 +15348,39 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_FAMILY_EBIBURGMON
     [SPECIES_EBIBURGMON] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 90,
-        .baseDefense   = 85,
-        .baseSpeed     = 100,
-        .baseSpAttack  = 125,
-        .baseSpDefense = 90,
-        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_FLYING),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 290,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 261,
-    #else
-        .expYield = 216,
-    #endif
-        .evYield_SpAttack = 3,
+        .baseHP        = 70,
+        .baseAttack    = 34,
+        .baseDefense   = 52,
+        .baseSpeed     = 48,
+        .baseSpAttack  = 32,
+        .baseSpDefense = 66,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_WATER),
+        .attribute = TYPE_DATA,
+        .catchRate = 155,
+        .expYield = 100,
+        .evYield_HP        = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 80,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
     #if P_UPDATED_ABILITIES >= GEN_6
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_STATIC },
     #else
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
     #endif
-        .bodyColor = BODY_COLOR_YELLOW,
+        .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Ebiburgmon"),
         .cryId = CRY_EBIBURGMON,
         .natDexNum = NATIONAL_DEX_EBIBURGMON,
-        .categoryName = _("Electric"),
-        .height = 16,
-        .weight = 526,
+        .categoryName = _("Burger"),
+        .height = 10,
+        .weight = 126,
         .description = COMPOUND_STRING(
-            "Ebiburgmon is a legendary bird Pokémon that\n"
-            "has the ability to control electricity.\n"
-            "It usually lives in thunderclouds. It gains\n"
-            "power if it is stricken by lightning bolts."),
+            "Although Burgermon are usually good cooks,\n"
+            "EbiBurgamons food is generally disgusting\n"
+            "as it will try to mix seafood into dishes\n"
+            "that do not need seafood."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 318,
@@ -15409,6 +15404,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sEbiburgmonLevelUpLearnset,
         .teachableLearnset = sEbiburgmonTeachableLearnset,
         .formSpeciesIdTable = sEbiburgmonFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_BURGERMON_CHAMPION}),
     },
 
 #if P_GALARIAN_FORMS
@@ -15472,40 +15468,35 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_FAMILY_EKAKIMON
     [SPECIES_EKAKIMON] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 100,
-        .baseDefense   = 90,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 125,
-        .baseSpDefense = 85,
-        .types = MON_TYPES(TYPE_FIRE, TYPE_FLYING),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 290,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 261,
-    #else
-        .expYield = 217,
-    #endif
+        .baseHP        = 49,
+        .baseAttack    = 52,
+        .baseDefense   = 52,
+        .baseSpeed     = 51,
+        .baseSpAttack  = 73,
+        .baseSpDefense = 52,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_FAIRY),
+        .attribute = TYPE_DATA,
+        .catchRate = 155,
+        .expYield = 100,
         .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 80,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_FLAME_BODY },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Ekakimon"),
         .cryId = CRY_EKAKIMON,
         .natDexNum = NATIONAL_DEX_EKAKIMON,
-        .categoryName = _("Flame"),
-        .height = 20,
-        .weight = 700,
+        .categoryName = _("Pencil"),
+        .height = 7,
+        .weight = 114,
         .description = COMPOUND_STRING(
-            "Ekakimon is a legendary bird Pokémon\n"
-            "that can control fire. If injured, it is said\n"
-            "to dip its body in the molten magma of\n"
-            "a volcano to burn and heal itself."),
+            "Many people do not trust Ekakimon as it has\n"
+            "a sinister smile on its face at all times\n"
+            "but thats just because it is so happy for\n"
+            "the pictures it is usually drawing."),
         .pokemonScale = 270,
         .pokemonOffset = 0,
         .trainerScale = 387,
@@ -15591,35 +15582,36 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_FAMILY_ELECMON
     [SPECIES_ELECMON] =
     {
-        .baseHP        = 41,
-        .baseAttack    = 64,
-        .baseDefense   = 45,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_DRAGON),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 70 : 67,
-        .evYield_Attack = 1,
+        .baseHP        = 54,
+        .baseAttack    = 51,
+        .baseDefense   = 52,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 59,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_ELECTRIC),
+        .attribute = TYPE_DATA,
+        .catchRate = 155,
+        .expYield = 100,
+        .evYield_SpAttack  = 3,
         .itemRare = ITEM_DRAGON_SCALE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_MARVEL_SCALE },
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Elecmon"),
         .cryId = CRY_ELECMON,
         .natDexNum = NATIONAL_DEX_ELECMON,
-        .categoryName = _("Dragon"),
-        .height = 18,
-        .weight = 33,
+        .categoryName = _("Electricity"),
+        .height = 9,
+        .weight = 226,
         .description = COMPOUND_STRING(
-            "A Elecmon continually molts and sloughs\n"
-            "off its old skin. It does so because the\n"
-            "life energy within its body steadily builds\n"
-            "to reach uncontrollable levels."),
+            "Elecmon is a very curious and lively\n"
+            "Digimon. It's nine tails are likely caused\n"
+            "by taking in peacock data at one point as it\n"
+            "is used in similiar way to a peacocks tail."),
         .pokemonScale = 256,
         .pokemonOffset = 8,
         .trainerScale = 386,
@@ -15640,40 +15632,43 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Elecmon)
         .levelUpLearnset = sElecmonLevelUpLearnset,
         .teachableLearnset = sElecmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ELECMON_VIOLET}),
+        .evolutions = EVOLUTION({EVO_SPEED, 58, SPECIES_BLGARURMON},
+                                {EVO_LEVEL, 33, SPECIES_AEGIOMON}),
     },
 
     [SPECIES_ELECMON_VIOLET] =
     {
-        .baseHP        = 61,
-        .baseAttack    = 84,
-        .baseDefense   = 65,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_DRAGON),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 147 : 144,
-        .evYield_Attack = 2,
+        .baseHP        = 52,
+        .baseAttack    = 53,
+        .baseDefense   = 52,
+        .baseSpeed     = 54,
+        .baseSpAttack  = 58,
+        .baseSpDefense = 56,
+        .types = MON_TYPES(TYPE_ELECTRIC),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 155,
+        .expYield = 100,
+        .evYield_SpAttack  = 2,
+        .evYield_SpDefense = 1,
         .itemRare = ITEM_DRAGON_SCALE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_MARVEL_SCALE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Elecmon"),
         .cryId = CRY_ELECMON_VIOLET,
         .natDexNum = NATIONAL_DEX_ELECMON_VIOLET,
-        .categoryName = _("Dragon"),
-        .height = 40,
-        .weight = 165,
+        .categoryName = _("Electricity"),
+        .height = 7,
+        .weight = 287,
         .description = COMPOUND_STRING(
-            "A Elecmon_violet stores an enormous amount of\n"
-            "energy inside its body. It is said to alter\n"
-            "the weather around it by loosing energy\n"
-            "from the crystals on its neck and tail."),
+            "This Elecmon is a much more violent Elecmon\n"
+            "as it has gained the Virus typing. It will\n"
+            "indiscriminately attack anyone who it sees\n"
+            "however it can be easily handled as it's weak."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 411,
@@ -15694,46 +15689,42 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Elecmon_violet)
         .levelUpLearnset = sElecmon_violetLevelUpLearnset,
         .teachableLearnset = sElecmon_violetTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_ESPIMON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_BOARMON}),
     },
 
     [SPECIES_ESPIMON] =
     {
-        .baseHP        = 91,
-        .baseAttack    = 134,
-        .baseDefense   = 95,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_FLYING),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 300,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 270,
-    #else
-        .expYield = 218,
-    #endif
-        .evYield_Attack = 3,
+        .baseHP        = 51,
+        .baseAttack    = 49,
+        .baseDefense   = 50,
+        .baseSpeed     = 64,
+        .baseSpAttack  = 71,
+        .baseSpDefense = 53,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_STEEL),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 155,
+        .expYield = 100,
+        .evYield_Speed     = 1,
+        .evYield_SpAttack  = 2,
         .itemRare = ITEM_DRAGON_SCALE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_NONE, ABILITY_MULTISCALE },
-        .bodyColor = BODY_COLOR_BROWN,
+        .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Espimon"),
         .cryId = CRY_ESPIMON,
         .natDexNum = NATIONAL_DEX_ESPIMON,
-        .categoryName = _("Dragon"),
-        .height = 22,
-        .weight = 2100,
+        .categoryName = _("Espionage"),
+        .height = 7,
+        .weight = 412,
         .description = COMPOUND_STRING(
-            "It can circle the globe in just 16 hours.\n"
-            "It is a kindhearted Pokémon that leads\n"
-            "lost and foundering ships in a storm\n"
-            "to the safety of land."),
+            "Despite it's small and dumb looks, Espimon\n"
+            "is actually an incredibly smart Digimon\n"
+            "with the ability to swiftly infiltrate\n"
+            "any location it so desires."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 309,
@@ -15754,46 +15745,43 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Espimon)
         .levelUpLearnset = sEspimonLevelUpLearnset,
         .teachableLearnset = sEspimonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_BLKGATOMON_UVER}),
     },
 #endif //P_FAMILY_ELECMON
 
 #if P_FAMILY_AGUMON_FAKE_EXPERT
     [SPECIES_AGUMON_FAKE_EXPERT] =
     {
-        .baseHP        = 106,
-        .baseAttack    = 110,
-        .baseDefense   = 90,
-        .baseSpeed     = 130,
-        .baseSpAttack  = 154,
-        .baseSpDefense = 90,
-        .types = MON_TYPES(TYPE_PSYCHIC),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 340,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 306,
-    #else
-        .expYield = 220,
-    #endif
-        .evYield_SpAttack = 3,
+        .baseHP        = 51,
+        .baseAttack    = 60,
+        .baseDefense   = 48,
+        .baseSpeed     = 52,
+        .baseSpAttack  = 56,
+        .baseSpDefense = 59,
+        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_DRAGON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 155,
+        .expYield = 100,
+        .evYield_Attack    = 2,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 0,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_UNNERVE },
-        .bodyColor = BODY_COLOR_PURPLE,
+        .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Agumon"),
         .cryId = CRY_AGUMON_FAKE_EXPERT,
         .natDexNum = NATIONAL_DEX_AGUMON_FAKE_EXPERT,
-        .categoryName = _("Genetic"),
-        .height = 20,
-        .weight = 1220,
+        .categoryName = _("Plagiarist"),
+        .height = 11,
+        .weight = 213,
         .description = COMPOUND_STRING(
-            "A Pokémon that was created by genetic\n"
-            "manipulation. However, even though the\n"
-            "scientific power of humans made its body,\n"
-            "they failed to give it a warm heart."),
+            "Even though it is a very smart Digimon,\n"
+            "NiseAgumon, it still plagiarises other\n"
+            "Digimon works. Many question if its own\n"
+            "title is legitimate or just a fake."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 309,
@@ -15817,6 +15805,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sAgumon_fake_expertTeachableLearnset,
         .formSpeciesIdTable = sAgumon_fake_expertFormSpeciesIdTable,
         .formChangeTable = sAgumon_fake_expertFormChangeTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GEOGREYMON}),
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -15938,42 +15927,37 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_FAMILY_FALCOMON
     [SPECIES_FALCOMON] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 100,
-        .baseDefense   = 100,
-        .baseSpeed     = 100,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_PSYCHIC),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 300,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 270,
-    #else
-        .expYield = 64,
-    #endif
-        .evYield_HP = 3,
+        .baseHP        = 52,
+        .baseAttack    = 58,
+        .baseDefense   = 51,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 49,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 155,
+        .expYield = 100,
+        .evYield_Speed     = 3,
         .itemCommon = ITEM_LUM_BERRY,
         .itemRare = ITEM_LUM_BERRY,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 100,
-        .growthRate = GROWTH_MEDIUM_SLOW,
+        .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_SYNCHRONIZE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_PINK,
+        .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Falcomon"),
         .cryId = CRY_FALCOMON,
         .natDexNum = NATIONAL_DEX_FALCOMON,
-        .categoryName = _("New Species"),
-        .height = 4,
-        .weight = 40,
+        .categoryName = _("Falcon"),
+        .height = 9,
+        .weight = 263,
         .description = COMPOUND_STRING(
-            "A Falcomon is said to possess the genes of all\n"
-            "Pokémon. It is capable of making itself\n"
-            "invisible at will, so it entirely avoids\n"
-            "notice even if it approaches people."),
+            "Despite the fact that it loves on tall\n"
+            "mountains and is full of Falcon Data, \n"
+            "Falcomon can barely fly and instead has\n"
+            "incredibly strong legs for movement."),
         .pokemonScale = 457,
         .pokemonOffset = -2,
         .trainerScale = 256,
@@ -15996,6 +15980,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .isMythical = TRUE,
         .levelUpLearnset = sFalcomonLevelUpLearnset,
         .teachableLearnset = sFalcomonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_DIATRYMON}),
     },
 #endif //P_FAMILY_FALCOMON
 
