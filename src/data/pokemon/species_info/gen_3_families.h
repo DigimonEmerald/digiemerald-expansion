@@ -1508,10 +1508,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Aegiomon)
         .levelUpLearnset = sAegiomonLevelUpLearnset,
         .teachableLearnset = sAegiomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_LUDICOLO}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_AGUNIMON}),
     },
 
-    [SPECIES_LUDICOLO] =
+    [SPECIES_AGUNIMON] =
     {
         .baseHP        = 80,
         .baseAttack    = 70,
@@ -1537,9 +1537,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_GRASS),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_RAIN_DISH, ABILITY_OWN_TEMPO },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Ludicolo"),
-        .cryId = CRY_LUDICOLO,
-        .natDexNum = NATIONAL_DEX_LUDICOLO,
+        .speciesName = _("Agunimon"),
+        .cryId = CRY_AGUNIMON,
+        .natDexNum = NATIONAL_DEX_AGUNIMON,
         .categoryName = _("Carefree"),
         .height = 15,
         .weight = 550,
@@ -1552,26 +1552,26 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonOffset = 0,
         .trainerScale = 268,
         .trainerOffset = -1,
-        .frontPic = gMonFrontPic_Ludicolo,
-        .frontPicFemale = gMonFrontPic_LudicoloF,
+        .frontPic = gMonFrontPic_Agunimon,
+        .frontPicFemale = gMonFrontPic_AgunimonF,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_Ludicolo,
+        .frontAnimFrames = sAnims_Agunimon,
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SLOW,
-        .backPic = gMonBackPic_Ludicolo,
-        .backPicFemale = gMonBackPic_LudicoloF,
+        .backPic = gMonBackPic_Agunimon,
+        .backPicFemale = gMonBackPic_AgunimonF,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Ludicolo,
-        .shinyPalette = gMonShinyPalette_Ludicolo,
-        .iconSprite = gMonIcon_Ludicolo,
+        .palette = gMonPalette_Agunimon,
+        .shinyPalette = gMonShinyPalette_Agunimon,
+        .iconSprite = gMonIcon_Agunimon,
         .iconPalIndex = 1,
-        FOOTPRINT(Ludicolo)
-        .levelUpLearnset = sLudicoloLevelUpLearnset,
-        .teachableLearnset = sLudicoloTeachableLearnset,
+        FOOTPRINT(Agunimon)
+        .levelUpLearnset = sAgunimonLevelUpLearnset,
+        .teachableLearnset = sAgunimonTeachableLearnset,
     },
 #endif //P_FAMILY_ZUBAMON
 

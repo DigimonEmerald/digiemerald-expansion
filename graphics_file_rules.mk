@@ -590,7 +590,7 @@ $(WALLPAPERGFXDIR)/legendary/tiles.4bpp: $(WALLPAPERGFXDIR)/friends_frame2.4bpp 
 $(WALLPAPERGFXDIR)/ebidramon/tiles.4bpp: $(WALLPAPERGFXDIR)/friends_frame2.4bpp $(WALLPAPERGFXDIR)/ebidramon/bg.4bpp
 	@cat $^ >$@
 
-$(WALLPAPERGFXDIR)/ludicolo/tiles.4bpp: $(WALLPAPERGFXDIR)/friends_frame2.4bpp $(WALLPAPERGFXDIR)/ludicolo/bg.4bpp
+$(WALLPAPERGFXDIR)/agunimon/tiles.4bpp: $(WALLPAPERGFXDIR)/friends_frame2.4bpp $(WALLPAPERGFXDIR)/agunimon/bg.4bpp
 	@cat $^ >$@
 
 $(WALLPAPERGFXDIR)/deputymon/tiles.4bpp: $(WALLPAPERGFXDIR)/friends_frame2.4bpp $(WALLPAPERGFXDIR)/deputymon/bg.4bpp

@@ -3648,7 +3648,7 @@ static const union AnimCmd sAnim_Aegiomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Ludicolo_1[] =
+static const union AnimCmd sAnim_Agunimon_1[] =
 {
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_FRAME(1, 22),
@@ -11064,7 +11064,7 @@ SINGLE_ANIMATION(Zenimon);
 #if P_FAMILY_ZUBAMON
 SINGLE_ANIMATION(Zubamon);
 SINGLE_ANIMATION(Aegiomon);
-SINGLE_ANIMATION(Ludicolo);
+SINGLE_ANIMATION(Agunimon);
 #endif //P_FAMILY_ZUBAMON
 #if P_FAMILY_AIRDRAMON
 SINGLE_ANIMATION(Airdramon);

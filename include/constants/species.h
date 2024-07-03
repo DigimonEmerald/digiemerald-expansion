@@ -273,7 +273,7 @@
 #define SPECIES_ZENIMON                                  269
 #define SPECIES_ZUBAMON                                   270
 #define SPECIES_AEGIOMON                                  271
-#define SPECIES_LUDICOLO                                272
+#define SPECIES_AGUNIMON                                272
 #define SPECIES_AIRDRAMON                                  273
 #define SPECIES_AKATORIMON                                 274
 #define SPECIES_ALLOMON                                 275
