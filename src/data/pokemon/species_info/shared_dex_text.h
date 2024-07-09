@@ -38,10 +38,10 @@ const u8 gCrabmon_xPokedexText[] = _(
 
 // Gen 2 families
 const u8 gLopmonPokedexText[] = _(
-    "This Pokémon is shaped like ancient text\n"
-    "characters. Although research is ongoing,\n"
-    "it is a mystery as to which came first,\n"
-    "the ancient writings or the various Lopmon.");
+    "Unlike its twin, Terriormon, Lopmon is a\n"
+    "crybaby that often needs consoling. Its\n"
+    "twin is often instrumental in making it\n"
+    "feel better.");
 
 // Gen 3 families
 const u8 gGesomonNormalPokedexText[] = _(
