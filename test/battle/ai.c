@@ -1043,3 +1043,4 @@ AI_SINGLE_BATTLE_TEST("AI avoids contact moves against rocky helmet")
             TURN { EXPECT_MOVES(opponent, MOVE_LEAFAGE, MOVE_BRANCH_POKE); }
     }
 }
+
