@@ -188,7 +188,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_SLOW,
+        .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_LIGHTNING_ROD, ABILITY_LIGHTNING_ROD },
         .bodyColor = BODY_COLOR_GREEN,
@@ -425,7 +425,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_SLOW,
+        .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SPEED_BOOST, ABILITY_SPEED_BOOST, ABILITY_SPEED_BOOST },
         .bodyColor = BODY_COLOR_RED,
@@ -653,7 +653,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_SLOW,
+        .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_SWIFT_SWIM, ABILITY_SWIFT_SWIM },
         .bodyColor = BODY_COLOR_BLUE,
@@ -2071,7 +2071,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .attribute = TYPE_VACCINE,
         .catchRate = 115,
         .expYield = 150,
-        .evYield_Speed     = 3,
+        .evYield_Speed     = 4,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = 35,
@@ -2184,7 +2184,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = APEMON_FAMILY_EGG_GROUPS,
         .abilities = { ABILITY_PIXILATE, ABILITY_PIXILATE, ABILITY_PIXILATE },
         .bodyColor = BODY_COLOR_WHITE,
@@ -2244,10 +2244,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .expYield = 208,
     #endif
         .evYield_Attack = 3,
-        .genderRatio = MON_MALE,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = APEMON_FAMILY_EGG_GROUPS,
     #if P_UPDATED_ABILITIES >= GEN_9
         .abilities = { ABILITY_STEADFAST, ABILITY_SHARPNESS, ABILITY_JUSTIFIED },
@@ -2303,10 +2303,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 309 : 278,
         .evYield_Attack = 3,
-        .genderRatio = MON_MALE,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = APEMON_FAMILY_EGG_GROUPS,
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_INNER_FOCUS, ABILITY_INNER_FOCUS },
         .bodyColor = BODY_COLOR_WHITE,
@@ -2362,7 +2362,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .attribute = TYPE_DATA,
         .catchRate = 115,
         .expYield = 150,
-        .evYield_Defense   = 3,
+        .evYield_Defense   = 4,
         .itemCommon = ITEM_HONEY,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
@@ -2476,7 +2476,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .attribute = TYPE_VACCINE,
         .catchRate = 115,
         .expYield = 150,
-        .evYield_Attack    = 3,
+        .evYield_Attack    = 4,
         .itemCommon = ITEM_TINY_MUSHROOM,
         .itemRare = ITEM_BIG_MUSHROOM,
         .genderRatio = MON_GENDERLESS,
@@ -2598,7 +2598,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .attribute = TYPE_VIRUS,
         .catchRate = 115,
         .expYield = 150,
-        .evYield_Speed     = 3,
+        .evYield_Speed     = 4,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
@@ -2695,40 +2695,36 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_BABOONMON] =
     {
-        .baseHP        = 150,
-        .baseAttack    = 160,
-        .baseDefense   = 100,
-        .baseSpeed     = 100,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_NORMAL),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 285,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 252,
-    #else
-        .expYield = 210,
-    #endif
-        .evYield_HP = 3,
+        .baseHP        = 74,
+        .baseAttack    = 76,
+        .baseDefense   = 91,
+        .baseSpeed     = 61,
+        .baseSpAttack  = 62,
+        .baseSpDefense = 81,
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_ROCK),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense   = 2,
+        .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_TRUANT, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Baboonmon"),
         .cryId = CRY_BABOONMON,
         .natDexNum = NATIONAL_DEX_BABOONMON,
-        .categoryName = _("Lazy"),
-        .height = 20,
-        .weight = 1305,
+        .categoryName = _("Baboon"),
+        .height = 30,
+        .weight = 963,
         .description = COMPOUND_STRING(
-            "Hordes of Baboonmon gather around trees\n"
-            "when fruits come into season. They wait\n"
-            "around patiently for ripened fruits to fall\n"
-            "out of the trees."),
+            "The rocks on Baboongamons skin regenerate\n"
+            "everytime they break, in doing so they become\n"
+            "even tougher. The Baboongamon with the\n"
+            "toughest rocks is the leader."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 300,
@@ -2755,35 +2751,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_BAKEMON
     [SPECIES_BAKEMON] =
     {
-        .baseHP        = 31,
-        .baseAttack    = 45,
-        .baseDefense   = 90,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 30,
-        .types = MON_TYPES(TYPE_BUG, TYPE_GROUND),
-        .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 53 : 65,
-        .evYield_Defense = 1,
+        .baseHP        = 62,
+        .baseAttack    = 69,
+        .baseDefense   = 91,
+        .baseSpeed     = 72,
+        .baseSpAttack  = 77,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_DARK),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense   = 3,
+        .evYield_SpAttack  = 1,
         .itemRare = ITEM_SOFT_SAND,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_COMPOUND_EYES, ABILITY_NONE, ABILITY_RUN_AWAY },
-        .bodyColor = BODY_COLOR_GRAY,
+        .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Bakemon"),
         .cryId = CRY_BAKEMON,
         .natDexNum = NATIONAL_DEX_BAKEMON,
-        .categoryName = _("Trainee"),
-        .height = 5,
+        .categoryName = _("Ghost"),
+        .height = 12,
         .weight = 55,
         .description = COMPOUND_STRING(
-            "It makes its nest at the roots of a mighty\n"
-            "tree. Using its whiskerlike antennae, it\n"
-            "probes its surroundings in the\n"
-            "pitch-black darkness of soil."),
+            "Everything about Bakemons true form is a\n"
+            "complete mystery. The only thing that is\n"
+            "known is that its covered in a white cloth.\n"
+            "It prefers curses when fighting."),
         .pokemonScale = 405,
         .pokemonOffset = 21,
         .trainerScale = 256,
@@ -2804,40 +2802,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Bakemon)
         .levelUpLearnset = sBakemonLevelUpLearnset,
         .teachableLearnset = sBakemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL_BALISTAMON, 20, SPECIES_BALISTAMON},
-                                {EVO_LEVEL_BALUCHIMON, 20, SPECIES_BALUCHIMON}),
     },
 
     [SPECIES_BALISTAMON] =
     {
-        .baseHP        = 61,
-        .baseAttack    = 90,
-        .baseDefense   = 45,
-        .baseSpeed     = 160,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
-        .catchRate = 120,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 160 : 155,
-        .evYield_Speed = 2,
+        .baseHP        = 74,
+        .baseAttack    = 94,
+        .baseDefense   = 78,
+        .baseSpeed     = 66,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 73,
+        .types = MON_TYPES(TYPE_BUG, TYPE_STEEL),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 3,
+        .evYield_Defense   = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
         .abilities = { ABILITY_SPEED_BOOST, ABILITY_NONE, ABILITY_INFILTRATOR },
-        .bodyColor = BODY_COLOR_YELLOW,
+        .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Balistamon"),
         .cryId = CRY_BALISTAMON,
         .natDexNum = NATIONAL_DEX_BALISTAMON,
-        .categoryName = _("Ninja"),
-        .height = 8,
-        .weight = 120,
+        .categoryName = _("Beetle"),
+        .height = 21,
+        .weight = 876,
         .description = COMPOUND_STRING(
-            "Because it darts about vigorously at high\n"
-            "speed, it is very difficult to see. Hearing\n"
-            "its distinctive cries for too long induces\n"
-            "a headache."),
+            "Many people mistake its emotionless and\n"
+            "warlike appearence to mean it is a violent\n"
+            "Digimon however Ballistamon generally avoid\n"
+            "combat where possible."),
         .pokemonScale = 383,
         .pokemonOffset = -9,
         .trainerScale = 256,
@@ -2863,34 +2861,38 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_BALUCHIMON] =
     {
-        .baseHP        = 1,
-        .baseAttack    = 90,
-        .baseDefense   = 45,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 30,
-        .types = MON_TYPES(TYPE_BUG, TYPE_GHOST),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 83 : 95,
-        .evYield_HP = 2,
+        .baseHP        = 71,
+        .baseAttack    = 76,
+        .baseDefense   = 75,
+        .baseSpeed     = 89,
+        .baseSpAttack  = 76,
+        .baseSpDefense = 78,
+        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_LIGHT),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 1,
+        .evYield_Speed     = 1,
+        .evYield_SpAttack  = 1,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_WONDER_GUARD, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BROWN,
+        .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Baluchimon"),
         .cryId = CRY_BALUCHIMON,
         .natDexNum = NATIONAL_DEX_BALUCHIMON,
-        .categoryName = _("Shed"),
-        .height = 8,
-        .weight = 12,
+        .categoryName = _("Holy"),
+        .height = 30,
+        .weight = 653,
         .description = COMPOUND_STRING(
-            "A peculiar Pokémon that floats in air even\n"
-            "though its wings remain completely still.\n"
-            "The inside of its body is hollow and\n"
-            "utterly dark."),
+            "Baluchimon were first discovered in ruins\n"
+            "beneath Folder Continent. These ruins were\n"
+            "once a fortress used by Angel Digimon. Balu-\n"
+            "chimon are the fortress's protectors."),
         .pokemonScale = 372,
         .pokemonOffset = -8,
         .trainerScale = 256,
@@ -2918,34 +2920,36 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_BAOHUCKMON
     [SPECIES_BAOHUCKMON] =
     {
-        .baseHP        = 64,
-        .baseAttack    = 51,
-        .baseDefense   = 23,
-        .baseSpeed     = 28,
-        .baseSpAttack  = 51,
-        .baseSpDefense = 23,
-        .types = MON_TYPES(TYPE_NORMAL),
-        .catchRate = 190,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 48 : 68,
-        .evYield_HP = 1,
+        .baseHP        = 91,
+        .baseAttack    = 79,
+        .baseDefense   = 73,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 73,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_DRAGON),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 2,
+        .evYield_Attack    = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
         .abilities = { ABILITY_SOUNDPROOF, ABILITY_NONE, ABILITY_RATTLED },
-        .bodyColor = BODY_COLOR_PINK,
+        .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Baohuckmon"),
         .cryId = CRY_BAOHUCKMON,
         .natDexNum = NATIONAL_DEX_BAOHUCKMON,
-        .categoryName = _("Whisper"),
-        .height = 6,
-        .weight = 163,
+        .categoryName = _("Training"),
+        .height = 15,
+        .weight = 352,
         .description = COMPOUND_STRING(
-            "Its cries equal a jet plane in volume.\n"
-            "It inhales through its ear canals. Because\n"
-            "of this system, it can cry continually\n"
-            "without having to catch its breath."),
+            "BaoHuckmon go through strick training to\n"
+            "reach this point. Its desires to join the\n"
+            "Royal Knights means it is willing to fight\n"
+            "in any situation it can do so."),
         .pokemonScale = 373,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -2966,39 +2970,41 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Baohuckmon)
         .levelUpLearnset = sBaohuckmonLevelUpLearnset,
         .teachableLearnset = sBaohuckmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_BAROMON}),
     },
 
     [SPECIES_BAROMON] =
     {
-        .baseHP        = 84,
-        .baseAttack    = 71,
-        .baseDefense   = 43,
-        .baseSpeed     = 48,
-        .baseSpAttack  = 71,
-        .baseSpDefense = 43,
-        .types = MON_TYPES(TYPE_NORMAL),
-        .catchRate = 120,
-        .expYield = 126,
-        .evYield_HP = 2,
+        .baseHP        = 68,
+        .baseAttack    = 65,
+        .baseDefense   = 70,
+        .baseSpeed     = 63,
+        .baseSpAttack  = 84,
+        .baseSpDefense = 72,
+        .types = MON_TYPES(TYPE_PSYCHIC),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense   = 1,
+        .evYield_SpAttack  = 2,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
         .abilities = { ABILITY_SOUNDPROOF, ABILITY_NONE, ABILITY_SCRAPPY },
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Baromon"),
         .cryId = CRY_BAROMON,
         .natDexNum = NATIONAL_DEX_BAROMON,
-        .categoryName = _("Big Voice"),
-        .height = 10,
-        .weight = 405,
+        .categoryName = _("Foresight"),
+        .height = 23,
+        .weight = 505,
         .description = COMPOUND_STRING(
-            "It positions the round speakers on its\n"
-            "head to assail foes with ultrasonic waves\n"
-            "at massive volume. It builds power by\n"
-            "stomping the ground."),
+            "Despite being relatively weak, Baromons use\n"
+            "of the ancient lost technology, its third\n"
+            "eye, lets it swiftly deal with opponents\n"
+            "and forewarn others of incoming danger."),
         .pokemonScale = 356,
         .pokemonOffset = 10,
         .trainerScale = 256,
@@ -3019,29 +3025,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Baromon)
         .levelUpLearnset = sBaromonLevelUpLearnset,
         .teachableLearnset = sBaromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_TRAILMON_BATTLE_ARMAMENT}),
     },
 
     [SPECIES_TRAILMON_BATTLE_ARMAMENT] =
     {
-        .baseHP        = 104,
-        .baseAttack    = 91,
-        .baseDefense   = 63,
-        .baseSpeed     = 68,
-        .baseSpAttack  = 91,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 73 : 63,
-        .types = MON_TYPES(TYPE_NORMAL),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 245,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 221,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 216,
-    #else
-        .expYield = 184,
-    #endif
-        .evYield_HP = 3,
+        .baseHP        = 79,
+        .baseAttack    = 102,
+        .baseDefense   = 78,
+        .baseSpeed     = 89,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 77,
+        .types = MON_TYPES(TYPE_STEEL),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 2,
+        .evYield_Speed     = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -3052,14 +3051,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .speciesName = _("Trailmon"),
         .cryId = CRY_TRAILMON_BATTLE_ARMAMENT,
         .natDexNum = NATIONAL_DEX_TRAILMON_BATTLE_ARMAMENT,
-        .categoryName = _("Loud Noise"),
-        .height = 15,
-        .weight = 840,
+        .categoryName = _("Train"),
+        .height = 65,
+        .weight = 2460,
         .description = COMPOUND_STRING(
-            "It has sound-generating organs all over\n"
-            "its body. It communicates with others by\n"
-            "adjusting the tone and volume of the cries\n"
-            "it emits."),
+            "Unlike most Trailmon, this Trailmon is\n"
+            "heavily geared towards combat, sporting an\n"
+            "insane amount of armour and weapons. All this\n"
+            "added weight barely inhibits its speed as well."),
         .pokemonScale = 284,
         .pokemonOffset = 1,
         .trainerScale = 256,
@@ -3086,35 +3085,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_BETGAMAMON
     [SPECIES_BETGAMAMON] =
     {
-        .baseHP        = 72,
-        .baseAttack    = 60,
-        .baseDefense   = 30,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 20,
-        .baseSpDefense = 30,
-        .types = MON_TYPES(TYPE_FIGHTING),
-        .catchRate = 180,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 47 : 87,
-        .evYield_HP = 1,
+        .baseHP        = 62,
+        .baseAttack    = 83,
+        .baseDefense   = 64,
+        .baseSpeed     = 94,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 61,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_DRAGON),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 2,
+        .evYield_SpAttack  = 2,
         .itemRare = ITEM_BLACK_BELT,
-        .genderRatio = PERCENT_FEMALE(25),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FLUCTUATING,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_THICK_FAT, ABILITY_GUTS, ABILITY_SHEER_FORCE },
-        .bodyColor = BODY_COLOR_YELLOW,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Betgamamon"),
         .cryId = CRY_BETGAMAMON,
         .natDexNum = NATIONAL_DEX_BETGAMAMON,
-        .categoryName = _("Guts"),
-        .height = 10,
-        .weight = 864,
+        .categoryName = _("Spirit"),
+        .height = 16,
+        .weight = 311,
         .description = COMPOUND_STRING(
-            "It loves to toughen up its body above all\n"
-            "else. If you hear quaking rumbles in a cave,\n"
-            "it is the sound of Betgamamon undertaking\n"
-            "strenuous training."),
+            "Although BetelGammamon is very strong when\n"
+            "they evolve, they often get stronger in\n"
+            "battle as excitement can nearly double its\n"
+            "attack power."),
         .pokemonScale = 256,
         .pokemonOffset = 10,
         .trainerScale = 256,
@@ -3135,40 +3136,41 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Betgamamon)
         .levelUpLearnset = sBetgamamonLevelUpLearnset,
         .teachableLearnset = sBetgamamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_BIOQUETMON}),
     },
 
     [SPECIES_BIOQUETMON] =
     {
-        .baseHP        = 144,
-        .baseAttack    = 120,
-        .baseDefense   = 60,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_FIGHTING),
-        .catchRate = 200,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 166 : 184,
-        .evYield_HP = 2,
+        .baseHP        = 78,
+        .baseAttack    = 78,
+        .baseDefense   = 69,
+        .baseSpeed     = 96,
+        .baseSpAttack  = 74,
+        .baseSpDefense = 71,
+        .types = MON_TYPES(TYPE_LIGHT, TYPE_STEEL),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 2,
+        .evYield_Speed     = 2,
         .itemRare = ITEM_KINGS_ROCK,
-        .genderRatio = PERCENT_FEMALE(25),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FLUCTUATING,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_THICK_FAT, ABILITY_GUTS, ABILITY_SHEER_FORCE },
-        .bodyColor = BODY_COLOR_BROWN,
+        .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Bioquetmon"),
         .cryId = CRY_BIOQUETMON,
         .natDexNum = NATIONAL_DEX_BIOQUETMON,
-        .categoryName = _("Arm Thrust"),
-        .height = 23,
-        .weight = 2538,
+        .categoryName = _("Bio-Hybrid"),
+        .height = 47,
+        .weight = 885,
         .description = COMPOUND_STRING(
-            "It has the habit of challenging others\n"
-            "without hesitation to tests of strength.\n"
-            "It's been known to stand on train tracks\n"
-            "and stop trains using forearm thrusts."),
+            "BioQuetzalmon are incredibly rare, enough\n"
+            "so that scientists theorise that they need\n"
+            "Human data to even exist. They are much\n"
+            "faster and stronger than normal Quetzalmon."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 343,
@@ -3195,35 +3197,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_BIOTHUNMON
     [SPECIES_BIOTHUNMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 45,
-        .baseDefense   = 135,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 90,
-        .types = MON_TYPES(TYPE_ROCK),
-        .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 75 : 108,
-        .evYield_Defense = 1,
+        .baseHP        = 61,
+        .baseAttack    = 81,
+        .baseDefense   = 71,
+        .baseSpeed     = 101,
+        .baseSpAttack  = 79,
+        .baseSpDefense = 66,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_STEEL),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 1,
+        .evYield_Speed     = 3,
         .itemRare = ITEM_MAGNET,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_STURDY, ABILITY_MAGNET_PULL, ABILITY_SAND_FORCE },
-        .bodyColor = BODY_COLOR_GRAY,
+        .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Biothunmon"),
         .cryId = CRY_BIOTHUNMON,
         .natDexNum = NATIONAL_DEX_BIOTHUNMON,
-        .categoryName = _("Compass"),
-        .height = 10,
-        .weight = 970,
+        .categoryName = _("Bio-Hybrid"),
+        .height = 61,
+        .weight = 799,
         .description = COMPOUND_STRING(
-            "Its body emits a powerful magnetism.\n"
-            "It feeds on prey that is pulled in by the\n"
-            "force. Its magnetism is stronger in cold\n"
-            "seasons."),
+            "It is unsure what makes BioThunderbirdmon\n"
+            "stronger than normal Thunderbirdmon. There\n"
+            "are still ongoing efforts to capture one\n"
+            "despite their elusive nature."),
         .pokemonScale = 256,
         .pokemonOffset = 9,
         .trainerScale = 289,
@@ -3244,8 +3248,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Biothunmon)
         .levelUpLearnset = sBiothunmonLevelUpLearnset,
         .teachableLearnset = sBiothunmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_MAPSEC, MAPSEC_NEW_MAUVILLE, SPECIES_PROBOPASS},
-                                {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_PROBOPASS}),
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -3266,7 +3268,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_STURDY, ABILITY_MAGNET_PULL, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_GRAY,
@@ -3309,38 +3311,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_BIRDRAMON
     [SPECIES_BIRDRAMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 45,
-        .baseDefense   = 45,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 35,
-        .types = MON_TYPES(TYPE_NORMAL),
-        .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 52 : 65,
-        .evYield_Speed = 1,
-        .genderRatio = PERCENT_FEMALE(75),
+        .baseHP        = 76,
+        .baseAttack    = 74,
+        .baseDefense   = 69,
+        .baseSpeed     = 92,
+        .baseSpAttack  = 78,
+        .baseSpDefense = 71,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_FLYING),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed     = 3,
+        .evYield_SpAttack  = 1,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_CUTE_CHARM, ABILITY_NORMALIZE, ABILITY_WONDER_SKIN },
     #else
         .abilities = { ABILITY_CUTE_CHARM, ABILITY_NONE, ABILITY_WONDER_SKIN },
     #endif
-        .bodyColor = BODY_COLOR_PINK,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Birdramon"),
         .cryId = CRY_BIRDRAMON,
         .natDexNum = NATIONAL_DEX_BIRDRAMON,
-        .categoryName = _("Kitten"),
-        .height = 6,
-        .weight = 110,
+        .categoryName = _("Phoenix"),
+        .height = 60,
+        .weight = 678,
         .description = COMPOUND_STRING(
-            "A Birdramon's adorably cute behavior makes it\n"
-            "highly popular. In battle, it makes its tail\n"
-            "puff out. It threatens foes with a sharp\n"
-            "growl."),
+            "Thought to be generated from the internets\n"
+            "defensive 'firewall', Birdramon is actually\n"
+            "not a very combative Digimon. However when\n"
+            "it is forced into fighting, it is vicious."),
         .pokemonScale = 492,
         .pokemonOffset = 19,
         .trainerScale = 256,
@@ -3361,50 +3365,44 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Birdramon)
         .levelUpLearnset = sBirdramonLevelUpLearnset,
         .teachableLearnset = sBirdramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_BLGAOGAMON}),
     },
 
     [SPECIES_BLGAOGAMON] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 65,
-        .baseDefense   = 65,
-        .baseSpeed     = P_UPDATED_STATS >= GEN_7 ? 90 : 70,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_NORMAL),
-        .catchRate = 60,
-    #if P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 140,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 133,
-    #else
-        .expYield = 138,
-    #endif
-        .evYield_HP = 1,
-        .evYield_Speed = 1,
-        .genderRatio = PERCENT_FEMALE(75),
+        .baseHP        = 75,
+        .baseAttack    = 92,
+        .baseDefense   = 79,
+        .baseSpeed     = 74,
+        .baseSpAttack  = 69,
+        .baseSpDefense = 66,
+        .types = MON_TYPES(TYPE_DARK, TYPE_FIGHTING),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 2,
+        .evYield_Defense   = 2,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_CUTE_CHARM, ABILITY_NORMALIZE, ABILITY_WONDER_SKIN },
     #else
         .abilities = { ABILITY_CUTE_CHARM, ABILITY_NONE, ABILITY_WONDER_SKIN },
     #endif
-        .bodyColor = BODY_COLOR_PURPLE,
+        .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Blgaogamon"),
         .cryId = CRY_BLGAOGAMON,
         .natDexNum = NATIONAL_DEX_BLGAOGAMON,
-        .categoryName = _("Prim"),
-        .height = 11,
-        .weight = 326,
+        .categoryName = _("Akita Inu"),
+        .height = 38,
+        .weight = 775,
         .description = COMPOUND_STRING(
-            "Rather than keeping a permanent lair,\n"
-            "it habitually seeks comfortable spots and\n"
-            "sleeps there. It is nocturnal and becomes\n"
-            "active at dusk."),
+            "During evolution, Black Digitron is mixed\n"
+            "in, creating BlackGaogamon. Unlike other\n"
+            "Digimon that go through this process,\n"
+            "BlackGaogamon is relatively peaceful."),
         .pokemonScale = 322,
         .pokemonOffset = 10,
         .trainerScale = 256,
@@ -3431,17 +3429,18 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_BLGARGOMON
     [SPECIES_BLGARGOMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 75,
-        .baseDefense   = 75,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_DARK, TYPE_GHOST),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 133 : 98,
-        .evYield_Attack = 1,
-        .evYield_Defense = 1,
+        .baseHP        = 79,
+        .baseAttack    = 77,
+        .baseDefense   = 73,
+        .baseSpeed     = 69,
+        .baseSpAttack  = 91,
+        .baseSpDefense = 72,
+        .types = MON_TYPES(TYPE_DARK, TYPE_NORMAL),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 2,
+        .evYield_SpAttack  = 2,
         .itemRare = ITEM_WIDE_LENS,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
@@ -3453,18 +3452,18 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #else
         .abilities = { ABILITY_KEEN_EYE, ABILITY_NONE, ABILITY_PRANKSTER },
     #endif
-        .bodyColor = BODY_COLOR_PURPLE,
+        .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Blgargomon"),
         .cryId = CRY_BLGARGOMON,
         .natDexNum = NATIONAL_DEX_BLGARGOMON,
-        .categoryName = _("Darkness"),
-        .height = 5,
-        .weight = 110,
+        .categoryName = _("Dog Rabbit"),
+        .height = 50,
+        .weight = 762,
         .description = COMPOUND_STRING(
-            "It digs branching holes in caves using its\n"
-            "sharp claws in search of food--raw gems.\n"
-            "A Blgargomon lurks in darkness and is seen\n"
-            "only rarely."),
+            "BlackGargomon specialises in ambushing\n"
+            "Enemies in the dark. Rather than using its\n"
+            "gatling arms to fire from range, it\n"
+            "instead gets close and pummels them."),
         .pokemonScale = 451,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -3556,36 +3555,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_BLGARURMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 85,
-        .baseDefense   = 85,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 55,
-        .types = BLGARURMON_TYPES,
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 133 : 98,
-        .evYield_Attack = 1,
-        .evYield_Defense = 1,
+        .baseHP        = 74,
+        .baseAttack    = 77,
+        .baseDefense   = 71,
+        .baseSpeed     = 93,
+        .baseSpAttack  = 78,
+        .baseSpDefense = 73,
+        .types = MON_TYPES(TYPE_ICE, TYPE_DARK),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed     = 2,
+        .evYield_SpAttack  = 2,
         .itemRare = ITEM_IRON_BALL,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
         .abilities = { ABILITY_HYPER_CUTTER, ABILITY_INTIMIDATE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Blgarurmon"),
         .cryId = CRY_BLGARURMON,
         .natDexNum = NATIONAL_DEX_BLGARURMON,
-        .categoryName = _("Deceiver"),
-        .height = 6,
-        .weight = 115,
+        .categoryName = _("canine"),
+        .height = 56,
+        .weight = 653,
         .description = COMPOUND_STRING(
-            "Its giant jaws are actually steel horns\n"
-            "that transformed. It fools foes into\n"
-            "complacency with its adorable gestures,\n"
-            "then chomps them with its huge jaws."),
+            "Other than being more vicious than\n"
+            "normal Garurumon, BlackGarurumon's blades\n"
+            "on its shoulders are sharp enough to\n"
+            "dice up just about anything."),
         .pokemonScale = 466,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -3627,7 +3627,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
         .abilities = { ABILITY_HUGE_POWER, ABILITY_HUGE_POWER, ABILITY_HUGE_POWER },
         .bodyColor = BODY_COLOR_BLACK,
@@ -3672,35 +3672,36 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_BLKGATOMON
     [SPECIES_BLKGATOMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 70,
-        .baseDefense   = 100,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 40,
-        .types = MON_TYPES(TYPE_STEEL, TYPE_ROCK),
-        .catchRate = 180,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 66 : 96,
-        .evYield_Defense = 1,
+        .baseHP        = 66,
+        .baseAttack    = 65,
+        .baseDefense   = 62,
+        .baseSpeed     = 89,
+        .baseSpAttack  = 67,
+        .baseSpDefense = 68,
+        .types = MON_TYPES(TYPE_DARK),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed     = 4,
         .itemRare = ITEM_HARD_STONE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 35,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_STURDY, ABILITY_ROCK_HEAD, ABILITY_HEAVY_METAL },
-        .bodyColor = BODY_COLOR_GRAY,
+        .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Blkgatomon"),
         .cryId = CRY_BLKGATOMON,
         .natDexNum = NATIONAL_DEX_BLKGATOMON,
-        .categoryName = _("Iron Armor"),
-        .height = 4,
-        .weight = 600,
+        .categoryName = _("Fallen Cat"),
+        .height = 6,
+        .weight = 107,
         .description = COMPOUND_STRING(
-            "A Pokémon that is clad in steel armor.\n"
-            "A new suit of armor is made when it evolves.\n"
-            "The old, discarded armor is salvaged as\n"
-            "metal for making iron products."),
+            "Even in comparison to other dark mutated\n"
+            "Digimon, BlackGatomon is incredibly rare.\n"
+            "This is likely because of it's mutation\n"
+            "not being caused by Black Digitron at all."),
         .pokemonScale = 419,
         .pokemonOffset = 23,
         .trainerScale = 256,
@@ -3721,40 +3722,41 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Blkgatomon)
         .levelUpLearnset = sBlkgatomonLevelUpLearnset,
         .teachableLearnset = sBlkgatomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_BLKGATOMON_UVER}),
     },
 
     [SPECIES_BLKGATOMON_UVER] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 90,
-        .baseDefense   = 140,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_STEEL, TYPE_ROCK),
-        .catchRate = 90,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 151 : 152,
-        .evYield_Defense = 2,
+        .baseHP        = 83,
+        .baseAttack    = 61,
+        .baseDefense   = 62,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 62,
+        .baseSpDefense = 68,
+        .types = MON_TYPES(TYPE_DARK),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 2,
+        .evYield_Speed     = 2,
         .itemRare = ITEM_HARD_STONE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 35,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_STURDY, ABILITY_ROCK_HEAD, ABILITY_HEAVY_METAL },
-        .bodyColor = BODY_COLOR_GRAY,
+        .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Blkgatomon"),
         .cryId = CRY_BLKGATOMON_UVER,
         .natDexNum = NATIONAL_DEX_BLKGATOMON_UVER,
-        .categoryName = _("Iron Armor"),
-        .height = 9,
-        .weight = 1200,
+        .categoryName = _("Courier"),
+        .height = 6,
+        .weight = 231,
         .description = COMPOUND_STRING(
-            "When two Blkgatomon_uver meet in the wild, they\n"
-            "fight for territory by bashing into each\n"
-            "other with their steel bodies. The sound\n"
-            "of their collision carries for miles."),
+            "BlackGatomon Uver is a very peaceful Digimon\n"
+            "who dedicates itself wholly to protecting\n"
+            "and delivering packages. Everything in its\n"
+            "bag is stored in the optimum state."),
         .pokemonScale = 275,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -3775,46 +3777,41 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Blkgatomon_uver)
         .levelUpLearnset = sBlkgatomon_uverLevelUpLearnset,
         .teachableLearnset = sBlkgatomon_uverTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_BLGROWLMON}),
     },
 
     [SPECIES_BLGROWLMON] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 110,
-        .baseDefense   = 180,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_STEEL, TYPE_ROCK),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 265,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 239,
-    #else
-        .expYield = 205,
-    #endif
-        .evYield_Defense = 3,
+        .baseHP        = 84,
+        .baseAttack    = 73,
+        .baseDefense   = 75,
+        .baseSpeed     = 63,
+        .baseSpAttack  = 98,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_DARK),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 2,
+        .evYield_SpAttack  = 2,
         .itemRare = ITEM_HARD_STONE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 35,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_STURDY, ABILITY_ROCK_HEAD, ABILITY_HEAVY_METAL },
-        .bodyColor = BODY_COLOR_GRAY,
+        .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Blgrowlmon"),
         .cryId = CRY_BLGROWLMON,
         .natDexNum = NATIONAL_DEX_BLGROWLMON,
-        .categoryName = _("Iron Armor"),
-        .height = 21,
-        .weight = 3600,
+        .categoryName = _("Dark Hazard"),
+        .height = 51,
+        .weight = 876,
         .description = COMPOUND_STRING(
-            "Its iron horns grow longer a little at\n"
-            "a time. They are used to determine the\n"
-            "Blgrowlmon's age. The gouges in its armor are\n"
-            "worn with pride as mementos from battles."),
+            "As the name implies, dark mutated Digimon\n"
+            "are usually mutations of a Digimon however\n"
+            "their is a growing belief that Black-\n"
+            "Growlmon is the natural form of Growlmon."),
         .pokemonScale = 256,
         .pokemonOffset = -1,
         .trainerScale = 350,
@@ -3856,7 +3853,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 35,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_FILTER, ABILITY_FILTER, ABILITY_FILTER },
         .bodyColor = BODY_COLOR_GRAY,
@@ -3901,34 +3898,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_SAWKUWAMON
     [SPECIES_SAWKUWAMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 40,
-        .baseDefense   = 55,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_FIGHTING, TYPE_PSYCHIC),
-        .catchRate = 180,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 56 : 91,
-        .evYield_Speed = 1,
+        .baseHP        = 51,
+        .baseAttack    = 78,
+        .baseDefense   = 77,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 61,
+        .baseSpDefense = 52,
+        .types = MON_TYPES(TYPE_STEEL, TYPE_BUG),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 1,
+        .evYield_Defense   = 1,
+        .evYield_Speed     = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_PURE_POWER, ABILITY_NONE, ABILITY_TELEPATHY },
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Sawkuwamon"),
         .cryId = CRY_SAWKUWAMON,
         .natDexNum = NATIONAL_DEX_SAWKUWAMON,
-        .categoryName = _("Meditate"),
-        .height = 6,
+        .categoryName = _("Blade Bug"),
+        .height = 13,
         .weight = 112,
         .description = COMPOUND_STRING(
-            "It continually meditates for hours every\n"
-            "day. As a result of rigorous and dedicated\n"
-            "yoga training, it has tempered its\n"
-            "spiritual power so much it can fly."),
+            "BladeKuwagamon are not particularly powerful\n"
+            "on their, even for a champion level Digimon\n"
+            "so they have adapted to group up and swarm\n"
+            "anything they deem a foe."),
         .pokemonScale = 465,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -3953,39 +3953,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Sawkuwamon)
         .levelUpLearnset = sSawkuwamonLevelUpLearnset,
         .teachableLearnset = sSawkuwamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_BLIMPMON}),
     },
 
     [SPECIES_BLIMPMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 60,
-        .baseDefense   = 75,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_FIGHTING, TYPE_PSYCHIC),
-        .catchRate = 90,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 144 : 153,
-        .evYield_Speed = 2,
+        .baseHP        = 62,
+        .baseAttack    = 68,
+        .baseDefense   = 69,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 69,
+        .types = MON_TYPES(TYPE_FLYING, TYPE_STEEL),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed     = 2,
+        .evYield_SpAttack  = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_PURE_POWER, ABILITY_NONE, ABILITY_TELEPATHY },
-        .bodyColor = BODY_COLOR_RED,
+        .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Blimpmon"),
         .cryId = CRY_BLIMPMON,
         .natDexNum = NATIONAL_DEX_BLIMPMON,
-        .categoryName = _("Meditate"),
-        .height = 13,
-        .weight = 315,
+        .categoryName = _("Blimp"),
+        .height = 140,
+        .weight = 1001,
         .description = COMPOUND_STRING(
-            "Through crushingly harsh yoga training, it\n"
-            "gained the power to foretell its foe's\n"
-            "actions. It battles with elegant, dance-\n"
-            "like movement."),
+            "Blimpmon is a particular favourite for\n"
+            "vehicle Digimon for its carefree nature.\n"
+            "Despite how delicate the balloon portion\n"
+            "is, it is only partially covered."),
         .pokemonScale = 298,
         .pokemonOffset = 5,
         .trainerScale = 256,
@@ -4030,7 +4031,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_PURE_POWER, ABILITY_PURE_POWER, ABILITY_PURE_POWER },
         .bodyColor = BODY_COLOR_RED,
@@ -4075,34 +4076,38 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_BOARMON
     [SPECIES_BOARMON] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 45,
-        .baseDefense   = 40,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 40,
-        .types = MON_TYPES(TYPE_ELECTRIC),
+        .baseHP        = 81,
+        .baseAttack    = 79,
+        .baseDefense   = 80,
+        .baseSpeed     = 92,
+        .baseSpAttack  = 69,
+        .baseSpDefense = 66,
+        .types = MON_TYPES(TYPE_FIRE),
+        .attribute = TYPE_VACCINE,
         .catchRate = 120,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 59 : 104,
-        .evYield_Speed = 1,
+        .expYield = 104,
+        .evYield_HP        = 1,
+        .evYield_Attack    = 1,
+        .evYield_Defense   = 1,
+        .evYield_Speed     = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_STATIC, ABILITY_LIGHTNING_ROD, ABILITY_MINUS },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Boarmon"),
         .cryId = CRY_BOARMON,
         .natDexNum = NATIONAL_DEX_BOARMON,
-        .categoryName = _("Lightning"),
-        .height = 6,
-        .weight = 152,
+        .categoryName = _("Boar"),
+        .height = 17,
+        .weight = 462,
         .description = COMPOUND_STRING(
-            "It generates electricity using friction\n"
-            "from the atmosphere. In seasons with\n"
-            "especially arid air, its entire body blazes\n"
-            "with violent showers of sparks."),
+            "When Boarmon starts stampeding, it is next\n"
+            "to impossible to stop it until it tires\n"
+            "itself out. Their is a leading theory that\n"
+            "Boarmon has no concept of turning."),
         .pokemonScale = 290,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -4123,39 +4128,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Boarmon)
         .levelUpLearnset = sBoarmonLevelUpLearnset,
         .teachableLearnset = sBoarmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_BOMNANIMON}),
     },
 
     [SPECIES_BOMNANIMON] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 75,
-        .baseDefense   = 60,
-        .baseSpeed     = 105,
-        .baseSpAttack  = 105,
-        .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_ELECTRIC),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 166 : 168,
-        .evYield_Speed = 2,
+        .baseHP        = 66,
+        .baseAttack    = 84,
+        .baseDefense   = 71,
+        .baseSpeed     = 72,
+        .baseSpAttack  = 96,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_FIGHTING),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 2,
+        .evYield_SpAttack  = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_STATIC, ABILITY_LIGHTNING_ROD, ABILITY_MINUS },
-        .bodyColor = BODY_COLOR_YELLOW,
+        .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Bomnanimon"),
         .cryId = CRY_BOMNANIMON,
         .natDexNum = NATIONAL_DEX_BOMNANIMON,
-        .categoryName = _("Discharge"),
-        .height = 15,
-        .weight = 402,
+        .categoryName = _("Bomb"),
+        .height = 10,
+        .weight = 382,
         .description = COMPOUND_STRING(
-            "Because lightning falls in their vicinities,\n"
-            "Bomnanimon were thought to have been born\n"
-            "from lightning. In battle, they create\n"
-            "thunderclouds."),
+            "Although it is very clearly a subspecies\n"
+            "of Nanimon, BomberNanimon will always\n"
+            "deny this claim. If pushed too hard on\n"
+            "this idea, it will light its fuse."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 257,
@@ -4196,7 +4202,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_INTIMIDATE, ABILITY_INTIMIDATE },
         .bodyColor = BODY_COLOR_YELLOW,
@@ -4240,39 +4246,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_BOOGIEMON
     [SPECIES_BOOGIEMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 50,
-        .baseDefense   = 40,
-        .baseSpeed     = 95,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_ELECTRIC),
-        .catchRate = 200,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 120,
+        .baseHP        = 73,
+        .baseAttack    = 70,
+        .baseDefense   = 77,
+        .baseSpeed     = 74,
+        .baseSpAttack  = 92,
+        .baseSpDefense = 71,
+        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_DARK),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
         .evYield_Speed = 1,
         .itemRare = ITEM_CELL_BATTERY,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
     #if P_UPDATED_ABILITIES >= GEN_6
         .abilities = { ABILITY_PLUS, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
     #else
         .abilities = { ABILITY_PLUS, ABILITY_NONE, ABILITY_NONE },
     #endif
-        .bodyColor = BODY_COLOR_YELLOW,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Boogiemon"),
         .cryId = CRY_BOOGIEMON,
         .natDexNum = NATIONAL_DEX_BOOGIEMON,
-        .categoryName = _("Cheering"),
-        .height = 4,
-        .weight = 42,
+        .categoryName = _("Devil"),
+        .height = 22,
+        .weight = 574,
         .description = COMPOUND_STRING(
-            "It has the trait of cheering on its fellow\n"
-            "Pokémon. By shorting out the electricity\n"
-            "it releases from its paws, it creates\n"
-            "pom-poms for cheering."),
+            "When battling a Boogiemon, it is a good\n"
+            "idea to count how many tattoos it has as\n"
+            "that amount of spells it can cast is\n"
+            "always equal to the amount of tattoos."),
         .pokemonScale = 515,
         .pokemonOffset = -9,
         .trainerScale = 256,
@@ -4299,39 +4306,42 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_BUCCHIEMON_RED
     [SPECIES_BUCCHIEMON_RED] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 40,
-        .baseDefense   = 50,
-        .baseSpeed     = 95,
-        .baseSpAttack  = 75,
-        .baseSpDefense = 85,
-        .types = MON_TYPES(TYPE_ELECTRIC),
-        .catchRate = 200,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 120,
-        .evYield_Speed = 1,
+        .baseHP        = 67,
+        .baseAttack    = 63,
+        .baseDefense   = 65,
+        .baseSpeed     = 67,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 64,
+        .types = MON_TYPES(TYPE_FAIRY),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 1,
+        .evYield_Speed     = 1,
+        .evYield_SpAttack  = 2,
         .itemRare = ITEM_CELL_BATTERY,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
     #if P_UPDATED_ABILITIES >= GEN_6
         .abilities = { ABILITY_MINUS, ABILITY_NONE, ABILITY_VOLT_ABSORB },
     #else
         .abilities = { ABILITY_MINUS, ABILITY_NONE, ABILITY_NONE },
     #endif
-        .bodyColor = BODY_COLOR_YELLOW,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Bucchiemon"),
         .cryId = CRY_BUCCHIEMON_RED,
         .natDexNum = NATIONAL_DEX_BUCCHIEMON_RED,
-        .categoryName = _("Cheering"),
-        .height = 4,
-        .weight = 42,
+        .categoryName = _("Calming"),
+        .height = 12,
+        .weight = 206,
         .description = COMPOUND_STRING(
-            "At a meeting of Pokémon academics, it was\n"
-            "announced that simultaneous exposure to\n"
-            "electricity from a Boogiemon and Bucchiemon_red will\n"
-            "promote circulation and boost vitality."),
+            "In battle, Bucchiemon is pretty weak\n"
+            "however what makes it special is the\n"
+            "ability to calm down just about any\n"
+            "Digimon it wants."),
         .pokemonScale = 512,
         .pokemonOffset = -7,
         .trainerScale = 256,
@@ -4359,40 +4369,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_BUCCHIEMON_GREEN] =
     {
         .baseHP        = 65,
-        .baseAttack    = 73,
-        .baseDefense   = P_UPDATED_STATS >= GEN_7 ? 75 : 55,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 47,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_7 ? 85 : 75,
-        .types = MON_TYPES(TYPE_BUG),
-        .catchRate = 150,
-    #if P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 151,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 140,
-    #else
-        .expYield = 146,
-    #endif
-        .evYield_Speed = 1,
+        .baseAttack    = 63,
+        .baseDefense   = 63,
+        .baseSpeed     = 69,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 66,
+        .types = MON_TYPES(TYPE_FAIRY),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 1,
+        .evYield_Speed     = 1,
+        .evYield_SpAttack  = 2,
         .itemRare = ITEM_BRIGHT_POWDER,
-        .genderRatio = MON_MALE,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_ILLUMINATE, ABILITY_SWARM, ABILITY_PRANKSTER },
-        .bodyColor = BODY_COLOR_GRAY,
+        .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Bucchiemon"),
         .cryId = CRY_BUCCHIEMON_GREEN,
         .natDexNum = NATIONAL_DEX_BUCCHIEMON_GREEN,
-        .categoryName = _("Firefly"),
-        .height = 7,
-        .weight = 177,
+        .categoryName = _("Calming"),
+        .height = 12,
+        .weight = 206,
         .description = COMPOUND_STRING(
-            "With their taillights lit, Bucchiemon_green fly in\n"
-            "a swarm, drawing geometric designs in the\n"
-            "night sky. They move their nests if their\n"
-            "pond water becomes dirty."),
+            "Their are very few differences between\n"
+            "Green and Red Bucchiemon other than green\n"
+            "ones being much rarer. Both colours despise\n"
+            "having their tail played with."),
         .pokemonScale = 442,
         .pokemonOffset = 16,
         .trainerScale = 256,
@@ -4417,45 +4424,41 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_BULKMON] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 47,
-        .baseDefense   = P_UPDATED_STATS >= GEN_7 ? 75 : 55,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 73,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_7 ? 85 : 75,
-        .types = MON_TYPES(TYPE_BUG),
-        .catchRate = 150,
-    #if P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 151,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 140,
-    #else
-        .expYield = 146,
-    #endif
-        .evYield_Speed = 1,
+        .baseHP        = 95,
+        .baseAttack    = 82,
+        .baseDefense   = 77,
+        .baseSpeed     = 79,
+        .baseSpAttack  = 74,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DRAGON),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 2,
+        .evYield_Attack    = 2,
         .itemRare = ITEM_BRIGHT_POWDER,
-        .genderRatio = MON_FEMALE,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FLUCTUATING,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_HUMAN_LIKE),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_TINTED_LENS, ABILITY_PRANKSTER },
     #else
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_NONE, ABILITY_PRANKSTER },
     #endif
-        .bodyColor = BODY_COLOR_PURPLE,
+        .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Bulkmon"),
         .cryId = CRY_BULKMON,
         .natDexNum = NATIONAL_DEX_BULKMON,
-        .categoryName = _("Firefly"),
-        .height = 6,
-        .weight = 177,
+        .categoryName = _("Fitness"),
+        .height = 32,
+        .weight = 865,
         .description = COMPOUND_STRING(
-            "A nocturnal Pokémon that becomes active\n"
-            "upon nightfall. It leads a Bucchiemon_green swarm\n"
-            "to draw patterns in the night sky. Over 200\n"
-            "different patterns have been confirmed."),
+            "Bulkmon is an incredibly well developed\n"
+            "Digimon that has put its all into training\n"
+            "itself. It's strength, reaction speed\n"
+            "and health outclass many bulky Digimon."),
         .pokemonScale = 572,
         .pokemonOffset = 19,
         .trainerScale = 256,
@@ -4539,16 +4542,18 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_BULLMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 60,
-        .baseDefense   = 45,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 80,
-        .types = MON_TYPES(TYPE_GRASS, TYPE_POISON),
-        .catchRate = 150,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 140 : 152,
-        .evYield_SpAttack = (P_UPDATED_EVS >= GEN_4) ? 2 : 1,
+        .baseHP        = 69,
+        .baseAttack    = 78,
+        .baseDefense   = 76,
+        .baseSpeed     = 93,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 71,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_STEEL),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 1,
+        .evYield_Speed     = 3,
         .itemRare = ITEM_POISON_BARB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
@@ -4556,19 +4561,19 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_GRASS),
         .abilities = { ABILITY_NATURAL_CURE, ABILITY_POISON_POINT, ABILITY_LEAF_GUARD },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_BLUE,
         .noFlip = TRUE,
         .speciesName = _("Bullmon"),
         .cryId = CRY_BULLMON,
         .natDexNum = NATIONAL_DEX_BULLMON,
-        .categoryName = _("Thorn"),
-        .height = 3,
-        .weight = 20,
+        .categoryName = _("Bull"),
+        .height = 20,
+        .weight = 553,
         .description = COMPOUND_STRING(
-            "A Bullmon that drinks nutritionally rich\n"
-            "springwater blooms with lovely flowers.\n"
-            "The fragrance of its flowers has the\n"
-            "effect of making its foes careless."),
+            "Bullmon are particularly short tempered\n"
+            "and will charge others for various minor\n"
+            "reasons. When charging, it is incapable\n"
+            "of turning or reversing."),
         .pokemonScale = 677,
         .pokemonOffset = 20,
         .trainerScale = 256,
@@ -4593,7 +4598,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Bullmon)
         .levelUpLearnset = sBullmonLevelUpLearnset,
         .teachableLearnset = sBullmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SHINY_STONE, SPECIES_ROSERADE}),
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -4668,36 +4672,38 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_BURAIMON
     [SPECIES_BURAIMON] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 43,
-        .baseDefense   = 53,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 43,
-        .baseSpDefense = 53,
-        .types = MON_TYPES(TYPE_POISON),
-        .catchRate = 225,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 75,
-        .evYield_HP = 1,
+        .baseHP        = 68,
+        .baseAttack    = 83,
+        .baseDefense   = 70,
+        .baseSpeed     = 97,
+        .baseSpAttack  = 71,
+        .baseSpDefense = 66,
+        .types = MON_TYPES(TYPE_FLYING, TYPE_FIGHTING),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 2,
+        .evYield_Speed     = 2,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_SITRUS_BERRY,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FLUCTUATING,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_LIQUID_OOZE, ABILITY_STICKY_HOLD, ABILITY_GLUTTONY },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Buraimon"),
         .cryId = CRY_BURAIMON,
         .natDexNum = NATIONAL_DEX_BURAIMON,
-        .categoryName = _("Stomach"),
-        .height = 4,
-        .weight = 103,
+        .categoryName = _("Vagrant"),
+        .height = 24,
+        .weight = 657,
         .description = COMPOUND_STRING(
-            "This Pokémon's stomach fluid can even\n"
-            "digest scrap iron. In one gulp, it can\n"
-            "swallow something that is as large as\n"
-            "itself."),
+            "Continuing its training from when it was\n"
+            "a Chicchimon, Buraimon is now a rogue. It\n"
+            "will take on bodyguard jobs and protect\n"
+            "the weak while wandering."),
         .pokemonScale = 593,
         .pokemonOffset = 23,
         .trainerScale = 256,
@@ -4722,41 +4728,43 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Buraimon)
         .levelUpLearnset = sBuraimonLevelUpLearnset,
         .teachableLearnset = sBuraimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_BURGERMON_CHAMPION}),
     },
 
     [SPECIES_BURGERMON_CHAMPION] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 73,
-        .baseDefense   = 83,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 73,
-        .baseSpDefense = 83,
-        .types = MON_TYPES(TYPE_POISON),
-        .catchRate = 75,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 163 : 168,
-        .evYield_HP = 2,
+        .baseHP        = 62,
+        .baseAttack    = 60,
+        .baseDefense   = 63,
+        .baseSpeed     = 66,
+        .baseSpAttack  = 67,
+        .baseSpDefense = 68,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed     = 1,
+        .evYield_SpAttack  = 1,
+        .evYield_SpDefense = 2,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_SITRUS_BERRY,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FLUCTUATING,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_LIQUID_OOZE, ABILITY_STICKY_HOLD, ABILITY_GLUTTONY },
-        .bodyColor = BODY_COLOR_PURPLE,
+        .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Burgermon"),
         .cryId = CRY_BURGERMON_CHAMPION,
         .natDexNum = NATIONAL_DEX_BURGERMON_CHAMPION,
-        .categoryName = _("Poison Bag"),
-        .height = 17,
-        .weight = 800,
+        .categoryName = _("Burger"),
+        .height = 10,
+        .weight = 193,
         .description = COMPOUND_STRING(
-            "Its powerful stomach acid is capable of\n"
-            "digesting almost anything. The one thing\n"
-            "in the whole world a Burgermon_champion can't digest is\n"
-            "its own stomach."),
+            "Burgermon are very king Digimon who dedicate\n"
+            "themselves to feeding everyone they can\n"
+            "without asking anything in return. Its food\n"
+            "can cause others to lose all fighting spirit"),
         .pokemonScale = 256,
         .pokemonOffset = 6,
         .trainerScale = 345,
@@ -4787,35 +4795,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_CHOUMON
     [SPECIES_CHOUMON] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 90,
-        .baseDefense   = 20,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 20,
-        .types = MON_TYPES(TYPE_WATER, TYPE_DARK),
-        .catchRate = 225,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 61 : 88,
-        .evYield_Attack = 1,
+        .baseHP        = 75,
+        .baseAttack    = 73,
+        .baseDefense   = 71,
+        .baseSpeed     = 89,
+        .baseSpAttack  = 78,
+        .baseSpDefense = 67,
+        .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed     = 2,
+        .evYield_SpAttack  = 2,
         .itemRare = ITEM_DEEP_SEA_TOOTH,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_ROUGH_SKIN, ABILITY_NONE, ABILITY_SPEED_BOOST },
-        .bodyColor = BODY_COLOR_RED,
+        .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Choumon"),
         .cryId = CRY_CHOUMON,
         .natDexNum = NATIONAL_DEX_CHOUMON,
-        .categoryName = _("Savage"),
-        .height = 8,
+        .categoryName = _("Butterfly"),
+        .height = 18,
         .weight = 208,
         .description = COMPOUND_STRING(
-            "Choumon attack ships in swarms, making\n"
-            "them sink. Although it is said to be a very\n"
-            "vicious Pokémon, it timidly flees as soon\n"
-            "as it finds itself alone."),
+            "Often found in warmer climates and meadows,\n"
+            "Butterflymon is a very kind and warm Digimon\n"
+            "who will help anyone it can. If in danger, it\n"
+            "can inflict hallucinations on foes."),
         .pokemonScale = 362,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4836,40 +4846,41 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Choumon)
         .levelUpLearnset = sChoumonLevelUpLearnset,
         .teachableLearnset = sChoumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_CENTARUMON}),
     },
 
     [SPECIES_CENTARUMON] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 120,
-        .baseDefense   = 40,
+        .baseHP        = 76,
+        .baseAttack    = 78,
+        .baseDefense   = 77,
         .baseSpeed     = 95,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 40,
-        .types = MON_TYPES(TYPE_WATER, TYPE_DARK),
-        .catchRate = 60,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 161 : 175,
-        .evYield_Attack = 2,
+        .baseSpAttack  = 76,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 1,
+        .evYield_Speed     = 3,
         .itemRare = ITEM_DEEP_SEA_TOOTH,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_ROUGH_SKIN, ABILITY_NONE, ABILITY_SPEED_BOOST },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Centarumon"),
         .cryId = CRY_CENTARUMON,
         .natDexNum = NATIONAL_DEX_CENTARUMON,
-        .categoryName = _("Brutal"),
-        .height = 18,
-        .weight = 888,
+        .categoryName = _("Centaur"),
+        .height = 31,
+        .weight = 703,
         .description = COMPOUND_STRING(
-            "The vicious and sly gangster of the sea.\n"
-            "Its skin is specially textured to minimize\n"
-            "drag in water. Its speed tops out at over\n"
-            "75 miles per hour."),
+            "Centarumon is an extremely prideful Digimon\n"
+            "who is exceptional is just about every area.\n"
+            "The ducts on its back spout high pressure\n"
+            "vapor that let it move at sub-sonic speeds."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 317,
@@ -4911,7 +4922,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_STRONG_JAW, ABILITY_STRONG_JAW, ABILITY_STRONG_JAW },
         .bodyColor = BODY_COLOR_BLUE,
@@ -4957,34 +4968,36 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_CHAMBLEMON
     [SPECIES_CHAMBLEMON] =
     {
-        .baseHP        = 130,
-        .baseAttack    = 70,
-        .baseDefense   = 35,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 35,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 125,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 80 : 137,
-        .evYield_HP = 1,
+        .baseHP        = 74,
+        .baseAttack    = 71,
+        .baseDefense   = 73,
+        .baseSpeed     = 66,
+        .baseSpAttack  = 88,
+        .baseSpDefense = 77,
+        .types = MON_TYPES(TYPE_POISON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_SpAttack  = 2,
+        .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FLUCTUATING,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_WATER_2),
         .abilities = { ABILITY_WATER_VEIL, ABILITY_OBLIVIOUS, ABILITY_PRESSURE },
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Chamblemon"),
         .cryId = CRY_CHAMBLEMON,
         .natDexNum = NATIONAL_DEX_CHAMBLEMON,
-        .categoryName = _("Ball Whale"),
-        .height = 20,
-        .weight = 1300,
+        .categoryName = _("Mushroom"),
+        .height = 33,
+        .weight = 407,
         .description = COMPOUND_STRING(
-            "While this Pokémon usually lives in the sea,\n"
-            "it can survive on land, although not too\n"
-            "long. It loses vitality if its body becomes\n"
-            "dried out."),
+            "While often mistaken to be Rookies like\n"
+            "Mushroomon, Chamblemon is actually a tricky\n"
+            "Champion to fight. Its use of spores\n"
+            "makes it dangerous to the unprepared."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 493,
@@ -5005,39 +5018,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Chamblemon)
         .levelUpLearnset = sChamblemonLevelUpLearnset,
         .teachableLearnset = sChamblemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_CHAMELEMON}),
     },
 
     [SPECIES_CHAMELEMON] =
     {
-        .baseHP        = 170,
-        .baseAttack    = 90,
-        .baseDefense   = 45,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 60,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 175 : 206,
-        .evYield_HP = 2,
+        .baseHP        = 62,
+        .baseAttack    = 72,
+        .baseDefense   = 74,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 77,
+        .baseSpDefense = 76,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed     = 2,
+        .evYield_SpAttack  = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FLUCTUATING,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_WATER_2),
         .abilities = { ABILITY_WATER_VEIL, ABILITY_OBLIVIOUS, ABILITY_PRESSURE },
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Chamelemon"),
         .cryId = CRY_CHAMELEMON,
         .natDexNum = NATIONAL_DEX_CHAMELEMON,
-        .categoryName = _("Float Whale"),
-        .height = 145,
-        .weight = 3980,
+        .categoryName = _("Camouflage"),
+        .height = 16,
+        .weight = 275,
         .description = COMPOUND_STRING(
-            "It breathes through nostrils that it\n"
-            "raises above the sea. By inhaling to its\n"
-            "maximum capacity, a Chamelemon can dive close\n"
-            "to 10,000 feet beneath the waves."),
+            "Although not particularly strong, Chamelemon\n"
+            "makes up for it by being exceptional at\n"
+            "infiltration. Competiting groups are known\n"
+            "to hire Chamelemon to spy on eachother."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 1352,
@@ -5065,38 +5079,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_CHRYSALMON
     [SPECIES_CHRYSALMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 60,
-        .baseDefense   = 40,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_FIRE, TYPE_GROUND),
-        .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 61 : 88,
-        .evYield_SpAttack = 1,
+        .baseHP        = 83,
+        .baseAttack    = 77,
+        .baseDefense   = 99,
+        .baseSpeed     = 52,
+        .baseSpAttack  = 66,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_DARK),
+        .attribute = TYPE_UKNOWN,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense   = 2,
+        .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_SIMPLE, ABILITY_OWN_TEMPO },
     #else
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_NONE, ABILITY_OWN_TEMPO },
     #endif
-        .bodyColor = BODY_COLOR_YELLOW,
+        .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Chrysalmon"),
         .cryId = CRY_CHRYSALMON,
         .natDexNum = NATIONAL_DEX_CHRYSALMON,
-        .categoryName = _("Numb"),
-        .height = 7,
-        .weight = 240,
+        .categoryName = _("Virus"),
+        .height = 42,
+        .weight = 972,
         .description = COMPOUND_STRING(
-            "A Chrysalmon stores boiling magma in the hump\n"
-            "on its back. It is a hardy Pokémon that can\n"
-            "transport a 220-pound load. It has served\n"
-            "humans at work since long ago."),
+            "Compared to it's previous evolutions more\n"
+            "agile nature, Chrysalimon is almost\n"
+            "completely immobile however its shell is\n"
+            "incredibly strong, protecting it well."),
         .pokemonScale = 342,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -5121,26 +5137,26 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Chrysalmon)
         .levelUpLearnset = sChrysalmonLevelUpLearnset,
         .teachableLearnset = sChrysalmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_CITRAMON}),
     },
 
     [SPECIES_CITRAMON] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 100,
-        .baseDefense   = 70,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 105,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_FIRE, TYPE_GROUND),
-        .catchRate = 150,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 161 : 175,
-        .evYield_Attack = 1,
-        .evYield_SpAttack = 1,
+        .baseHP        = 63,
+        .baseAttack    = 87,
+        .baseDefense   = 69,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 69,
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_GRASS),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 2,
+        .evYield_SpAttack  = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_MAGMA_ARMOR, ABILITY_SOLID_ROCK, ABILITY_ANGER_POINT },
@@ -5151,14 +5167,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .speciesName = _("Citramon"),
         .cryId = CRY_CITRAMON,
         .natDexNum = NATIONAL_DEX_CITRAMON,
-        .categoryName = _("Eruption"),
-        .height = 19,
-        .weight = 2200,
+        .categoryName = _("Citrus"),
+        .height = 10,
+        .weight = 162,
         .description = COMPOUND_STRING(
-            "A Pokémon that lives in the crater of\n"
-            "a volcano. Every 10 years, the volcanoes\n"
-            "on its back erupt violently. Research is\n"
-            "under way on the cause of eruption."),
+            "Although it has a comical appearance,\n"
+            "Citramon can be quite rough to fight.\n"
+            "It will use its own citrous juice\n"
+            "ito blind opponents and irritate wounds."),
         .pokemonScale = 256,
         .pokemonOffset = 7,
         .trainerScale = 345,
@@ -5204,7 +5220,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_SHEER_FORCE, ABILITY_SHEER_FORCE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_RED,
@@ -5249,39 +5265,41 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_CLOCKMON
     [SPECIES_CLOCKMON] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 85,
-        .baseDefense   = 140,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_FIRE),
-        .catchRate = 90,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 165 : 161,
-        .evYield_Defense = 2,
+        .baseHP        = 65,
+        .baseAttack    = 79,
+        .baseDefense   = 69,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 92,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_STEEL),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed     = 2,
+        .evYield_SpAttack  = 2,
         .itemRare = ITEM_CHARCOAL,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
     #if P_UPDATED_ABILITIES >= GEN_7
         .abilities = { ABILITY_WHITE_SMOKE, ABILITY_DROUGHT, ABILITY_SHELL_ARMOR },
     #else
         .abilities = { ABILITY_WHITE_SMOKE, ABILITY_NONE, ABILITY_SHELL_ARMOR },
     #endif
-        .bodyColor = BODY_COLOR_BROWN,
+        .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Clockmon"),
         .cryId = CRY_CLOCKMON,
         .natDexNum = NATIONAL_DEX_CLOCKMON,
-        .categoryName = _("Coal"),
-        .height = 5,
-        .weight = 804,
+        .categoryName = _("Time"),
+        .height = 25,
+        .weight = 884,
         .description = COMPOUND_STRING(
-            "It battles using energy it gets from\n"
-            "burning coal. When loosing smoke from its\n"
-            "nostrils, it lets off a sound that is\n"
-            "similar to a locomotive's horn."),
+            "Clockmon is a Digimon that is extremely\n"
+            "dangerous even compared to Ultra Digimon\n"
+            "If it is between the year 1900 and 1999, \n"
+            "it has near unlimited power of time."),
         .pokemonScale = 390,
         .pokemonOffset = 9,
         .trainerScale = 256,
@@ -5308,34 +5326,35 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_CLOCKMON_FUSION
     [SPECIES_CLOCKMON_FUSION] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 25,
-        .baseDefense   = 35,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 80,
-        .types = MON_TYPES(TYPE_PSYCHIC),
-        .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 66 : 89,
+        .baseHP        = 65,
+        .baseAttack    = 74,
+        .baseDefense   = 69,
+        .baseSpeed     = 77,
+        .baseSpAttack  = 92,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_STEEL),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
         .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_THICK_FAT, ABILITY_OWN_TEMPO, ABILITY_GLUTTONY },
-        .bodyColor = BODY_COLOR_BLACK,
+        .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Clockmon"),
         .cryId = CRY_CLOCKMON_FUSION,
         .natDexNum = NATIONAL_DEX_CLOCKMON_FUSION,
-        .categoryName = _("Bounce"),
-        .height = 7,
-        .weight = 306,
+        .categoryName = _("Time"),
+        .height = 19,
+        .weight = 760,
         .description = COMPOUND_STRING(
-            "A Pokémon that manipulates psychic power\n"
-            "at will. It doesn't stop bouncing even when\n"
-            "it is asleep. It loves eating mushrooms\n"
-            "that grow underground."),
+            "Because it has lost its upper half, this\n"
+            "Clockmon is worse in many ways. It\n"
+            "struggles to use its control of time as\n"
+            "efficiently making it an easier opponent."),
         .pokemonScale = 423,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -5356,39 +5375,39 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Clockmon_fusion)
         .levelUpLearnset = sClockmon_fusionLevelUpLearnset,
         .teachableLearnset = sClockmon_fusionTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_COELAMON}),
     },
 
     [SPECIES_COELAMON] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 45,
-        .baseDefense   = 65,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 110,
-        .types = MON_TYPES(TYPE_PSYCHIC),
-        .catchRate = 60,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 165 : 164,
+        .baseHP        = 73,
+        .baseAttack    = 78,
+        .baseDefense   = 92,
+        .baseSpeed     = 72,
+        .baseSpAttack  = 73,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_WATER, TYPE_ROCK),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
         .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_THICK_FAT, ABILITY_OWN_TEMPO, ABILITY_GLUTTONY },
-        .bodyColor = BODY_COLOR_PURPLE,
+        .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Coelamon"),
         .cryId = CRY_COELAMON,
         .natDexNum = NATIONAL_DEX_COELAMON,
-        .categoryName = _("Manipulate"),
-        .height = 9,
-        .weight = 715,
+        .categoryName = _("Primitive"),
+        .height = 12,
+        .weight = 598,
         .description = COMPOUND_STRING(
-            "It stores power in the black pearls on its\n"
-            "forehead. When it uses psychic power, it\n"
-            "performs an odd dance step. Its style of\n"
-            "dancing became hugely popular overseas."),
+            "Thought to be extinct, after a deep search\n"
+            "of the Net Ocean, it was found to be alive\n"
+            "and thriving. It looks to be in the early\n"
+            "stages of evolution as it has hands and feet."),
         .pokemonScale = 358,
         .pokemonOffset = 10,
         .trainerScale = 256,
@@ -5416,39 +5435,41 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_COREDRAMON_BLUE
     [SPECIES_COREDRAMON_BLUE] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 60,
-        .baseDefense   = 60,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_NORMAL),
-        .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 126 : 85,
-        .evYield_SpAttack = 1,
+        .baseHP        = 75,
+        .baseAttack    = 79,
+        .baseDefense   = 77,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 91,
+        .baseSpDefense = 78,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_FLYING),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 1,
+        .evYield_SpAttack  = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_OWN_TEMPO, ABILITY_TANGLED_FEET, ABILITY_CONTRARY },
     #else
         .abilities = { ABILITY_OWN_TEMPO, ABILITY_NONE, ABILITY_CONTRARY },
     #endif
-        .bodyColor = BODY_COLOR_BROWN,
+        .bodyColor = BODY_COLOR_BLUE,
         .noFlip = TRUE,
         .speciesName = _("Coredramon"),
         .cryId = CRY_COREDRAMON_BLUE,
         .natDexNum = NATIONAL_DEX_COREDRAMON_BLUE,
-        .categoryName = _("Spot Panda"),
-        .height = 11,
-        .weight = 50,
+        .categoryName = _("Dragon"),
+        .height = 53,
+        .weight = 2536,
         .description = COMPOUND_STRING(
-            "It is distinguished by a pattern of\n"
-            "spots that is always different. Its\n"
-            "unsteady, tottering walk has the\n"
-            "effect of fouling its foe's aim."),
+            "Coredramon is one of the purest Dragon type\n"
+            "Digimon out there. The blue variant happens\n"
+            "when it comes into plenty of Blue Diamante\n"
+            "mined from moutainous regions."),
         .pokemonScale = 321,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -5475,16 +5496,19 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_COREDRAMON_GREEN
     [SPECIES_COREDRAMON_GREEN] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 100,
-        .baseDefense   = 45,
-        .baseSpeed     = 10,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_GROUND),
-        .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 58 : 73,
-        .evYield_Attack = 1,
+        .baseHP        = 74,
+        .baseAttack    = 79,
+        .baseDefense   = 75,
+        .baseSpeed     = 79,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 78,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_GRASS),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 1,
+        .evYield_Speed     = 1,
+        .evYield_SpAttack  = 2,
         .itemRare = ITEM_SOFT_SAND,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
@@ -5496,18 +5520,18 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
     #endif
         .abilities = { ABILITY_HYPER_CUTTER, ABILITY_ARENA_TRAP, ABILITY_SHEER_FORCE },
-        .bodyColor = BODY_COLOR_BROWN,
+        .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Coredramon"),
         .cryId = CRY_COREDRAMON_GREEN,
         .natDexNum = NATIONAL_DEX_COREDRAMON_GREEN,
-        .categoryName = _("Ant Pit"),
-        .height = 7,
-        .weight = 150,
+        .categoryName = _("Dragon"),
+        .height = 53,
+        .weight = 2947,
         .description = COMPOUND_STRING(
-            "Its big jaws crunch through boulders.\n"
-            "Because its head is so big, it has a hard\n"
-            "time getting back upright if it tips over\n"
-            "onto its back."),
+            "Unlike blue Coredramon, Green Coredramon\n"
+            "can barely fly, instead developing stronger\n"
+            "legs. Green Malachite, found in forest areas\n"
+            "is the reason for the way it is."),
         .pokemonScale = 298,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -5528,22 +5552,21 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Coredramon_green)
         .levelUpLearnset = sCoredramon_greenLevelUpLearnset,
         .teachableLearnset = sCoredramon_greenTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_CYCLONEMON}),
     },
 
     [SPECIES_CYCLONEMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 70,
-        .baseDefense   = 50,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_GROUND, TYPE_DRAGON),
-        .catchRate = 120,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 119 : 126,
-        .evYield_Attack = 1,
-        .evYield_Speed = 1,
+        .baseHP        = 78,
+        .baseAttack    = 103,
+        .baseDefense   = 72,
+        .baseSpeed     = 69,
+        .baseSpAttack  = 74,
+        .baseSpDefense = 71,
+        .types = MON_TYPES(TYPE_DRAGON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 4,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -5554,18 +5577,18 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
     #endif
         .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Cyclonemon"),
         .cryId = CRY_CYCLONEMON,
         .natDexNum = NATIONAL_DEX_CYCLONEMON,
-        .categoryName = _("Vibration"),
-        .height = 11,
-        .weight = 153,
+        .categoryName = _("Cyclops"),
+        .height = 30,
+        .weight = 1134,
         .description = COMPOUND_STRING(
-            "It looses ultrasonic waves by rubbing its\n"
-            "wings together. Since a Cyclonemon's wings\n"
-            "are still in the process of growing, it can\n"
-            "only fly short distances."),
+            "Cyclonemon has developed its right arm to\n"
+            "an extreme extent just for the sake of\n"
+            "defeating Leomon who is believed to have\n"
+            "been the cause of its lost right eye."),
         .pokemonScale = 370,
         .pokemonOffset = 11,
         .trainerScale = 256,
@@ -5586,28 +5609,23 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Cyclonemon)
         .levelUpLearnset = sCyclonemonLevelUpLearnset,
         .teachableLearnset = sCyclonemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_DAMEMON_FUSION}),
     },
 
     [SPECIES_DAMEMON_FUSION] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 100,
-        .baseDefense   = 80,
-        .baseSpeed     = 100,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 80,
-        .types = MON_TYPES(TYPE_GROUND, TYPE_DRAGON),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 260,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 234,
-    #else
-        .expYield = 197,
-    #endif
-        .evYield_Attack = 1,
-        .evYield_Speed = 2,
+        .baseHP        = 70,
+        .baseAttack    = 86,
+        .baseDefense   = 71,
+        .baseSpeed     = 66,
+        .baseSpAttack  = 74,
+        .baseSpDefense = 73,
+        .types = MON_TYPES(TYPE_STEEL),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 2,
+        .evYield_SpAttack  = 1,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -5618,18 +5636,18 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
     #endif
         .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Damemon"),
         .cryId = CRY_DAMEMON_FUSION,
         .natDexNum = NATIONAL_DEX_DAMEMON_FUSION,
-        .categoryName = _("Mystic"),
-        .height = 20,
-        .weight = 820,
+        .categoryName = _("No Good"),
+        .height = 9,
+        .weight = 246,
         .description = COMPOUND_STRING(
-            "The flapping of its wings sounds like\n"
-            "singing. To prevent detection by enemies,\n"
-            "it hides itself by flapping up a cloud of\n"
-            "desert sand."),
+            "Damemon is a very socially awkward Digimon\n"
+            "that often struggles to read the room. It\n"
+            "has a special place for ChuuChuumon to ride\n"
+            "so that they can have fun together."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 268,
@@ -5657,16 +5675,18 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_DARCMON
     [SPECIES_DARCMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 85,
-        .baseDefense   = 40,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 40,
-        .types = MON_TYPES(TYPE_GRASS),
-        .catchRate = 190,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 67 : 97,
-        .evYield_SpAttack = 1,
+        .baseHP        = 83,
+        .baseAttack    = 93,
+        .baseDefense   = 72,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 71,
+        .baseSpDefense = 74,
+        .types = MON_TYPES(TYPE_LIGHT, TYPE_FLYING),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 2,
+        .evYield_Attack    = 2,
         .itemRare = ITEM_STICKY_BARB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
@@ -5674,18 +5694,18 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS, EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_SAND_VEIL, ABILITY_NONE, ABILITY_WATER_ABSORB },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Darcmon"),
         .cryId = CRY_DARCMON,
         .natDexNum = NATIONAL_DEX_DARCMON,
-        .categoryName = _("Cactus"),
-        .height = 4,
-        .weight = 513,
+        .categoryName = _("Hero"),
+        .height = 19,
+        .weight = 629,
         .description = COMPOUND_STRING(
-            "Darcmon live in deserts with virtually no\n"
-            "rainfall. It battles by swinging its thick,\n"
-            "spiked arms. Once a year, a yellow flower\n"
-            "blooms."),
+            "As a low-ranking angel Digimon, Darcmon\n"
+            "doesn't have much sway however that\n"
+            "doesn't make it weak, often found in the\n"
+            "advanced forces acting as the vanguard."),
         .pokemonScale = 455,
         .pokemonOffset = 20,
         .trainerScale = 256,
@@ -5706,22 +5726,21 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Darcmon)
         .levelUpLearnset = sDarcmonLevelUpLearnset,
         .teachableLearnset = sDarcmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_TRAILMON_DARK}),
     },
 
     [SPECIES_TRAILMON_DARK] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 115,
-        .baseDefense   = 60,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 115,
-        .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_GRASS, TYPE_DARK),
-        .catchRate = 60,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 166 : 177,
-        .evYield_Attack = 1,
-        .evYield_SpAttack = 1,
+        .baseHP        = 79,
+        .baseAttack    = 65,
+        .baseDefense   = 76,
+        .baseSpeed     = 102,
+        .baseSpAttack  = 62,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_DARK, TYPE_STEEL),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed     = 4,
         .itemRare = ITEM_STICKY_BARB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
@@ -5729,18 +5748,18 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS, EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_SAND_VEIL, ABILITY_NONE, ABILITY_WATER_ABSORB },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Trailmon"),
         .cryId = CRY_TRAILMON_DARK,
         .natDexNum = NATIONAL_DEX_TRAILMON_DARK,
-        .categoryName = _("Scarecrow"),
-        .height = 13,
-        .weight = 774,
+        .categoryName = _("Train"),
+        .height = 40,
+        .weight = 1964,
         .description = COMPOUND_STRING(
-            "After spending thousands of years in\n"
-            "harsh deserts, its blood transformed into\n"
-            "the same substances as sand. It is\n"
-            "nocturnal, so it hunts at night."),
+            "Although often mistaken as a Digimon of\n"
+            "Evil, it's actually a well-tempered\n"
+            "Digimon who has no qualms helping out\n"
+            "although it can be strict with rules."),
         .pokemonScale = 327,
         .pokemonOffset = 5,
         .trainerScale = 256,
@@ -5769,34 +5788,36 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_DARLIZAMON
     [SPECIES_DARLIZAMON] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 40,
-        .baseDefense   = 60,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
-        .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 62 : 74,
-        .evYield_SpDefense = 1,
+        .baseHP        = 93,
+        .baseAttack    = 78,
+        .baseDefense   = 72,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 71,
+        .types = MON_TYPES(TYPE_DARK, TYPE_DRAGON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 2,
+        .evYield_SpAttack  = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_NATURAL_CURE, ABILITY_NONE, ABILITY_CLOUD_NINE },
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Darlizamon"),
         .cryId = CRY_DARLIZAMON,
         .natDexNum = NATIONAL_DEX_DARLIZAMON,
-        .categoryName = _("Cotton Bird"),
-        .height = 4,
-        .weight = 12,
+        .categoryName = _("Evil Twin"),
+        .height = 29,
+        .weight = 974,
         .description = COMPOUND_STRING(
-            "A Pokémon that has wings like cottony\n"
-            "clouds. After enduring winter, in which\n"
-            "little food is available, Darlizamon flocks\n"
-            "move closer to towns in the spring."),
+            "Unlike Flarerizamons more tempered nature,\n"
+            "DarkLizardmon is much more aggressive,\n"
+            "seemingly lack any logic in its actions\n"
+            "other than that of pure violence."),
         .pokemonScale = 422,
         .pokemonOffset = -8,
         .trainerScale = 256,
@@ -5817,39 +5838,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Darlizamon)
         .levelUpLearnset = sDarlizamonLevelUpLearnset,
         .teachableLearnset = sDarlizamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_DARMAILMON}),
     },
 
     [SPECIES_DARMAILMON] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 70,
+        .baseHP        = 67,
+        .baseAttack    = 71,
         .baseDefense   = 90,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 105,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_FLYING),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 172 : 188,
-        .evYield_SpDefense = 2,
+        .baseSpeed     = 73,
+        .baseSpAttack  = 79,
+        .baseSpDefense = 76,
+        .types = MON_TYPES(TYPE_DARK, TYPE_DRAGON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense   = 2,
+        .evYield_SpAttack  = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_NATURAL_CURE, ABILITY_NONE, ABILITY_CLOUD_NINE },
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Darmailmon"),
         .cryId = CRY_DARMAILMON,
         .natDexNum = NATIONAL_DEX_DARMAILMON,
-        .categoryName = _("Humming"),
-        .height = 11,
-        .weight = 206,
+        .categoryName = _("Mount"),
+        .height = 174,
+        .weight = 4964,
         .description = COMPOUND_STRING(
-            "It hums in a beautiful soprano voice.\n"
-            "It flies among white clouds in the blue\n"
-            "sky. It launches intensely hot fireballs\n"
-            "from its mouth."),
+            "DarkMaildramon spends its time bullying\n"
+            "the weak and searching for Knight Digimon\n"
+            "who have a heart of darkness to serve. If\n"
+            "its master ever changes, it will crush them."),
         .pokemonScale = 327,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5890,7 +5912,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_PIXILATE, ABILITY_PIXILATE, ABILITY_PIXILATE },
         .bodyColor = BODY_COLOR_BLUE,
@@ -5936,36 +5958,38 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_DARKTYRMON
     [SPECIES_DARKTYRMON] =
     {
-        .baseHP        = 73,
-        .baseAttack    = 115,
-        .baseDefense   = 60,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_NORMAL),
-        .catchRate = 90,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 160 : 165,
-        .evYield_Attack = 2,
+        .baseHP        = 76,
+        .baseAttack    = 93,
+        .baseDefense   = 73,
+        .baseSpeed     = 66,
+        .baseSpAttack  = 83,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_DARK, TYPE_DRAGON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 2,
+        .evYield_SpAttack  = 2,
         .itemRare = ITEM_QUICK_CLAW,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_IMMUNITY, ABILITY_NONE, ABILITY_TOXIC_BOOST },
-        .bodyColor = BODY_COLOR_WHITE,
+        .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
         .speciesName = _("Darktyrmon"),
         .cryId = CRY_DARKTYRMON,
         .natDexNum = NATIONAL_DEX_DARKTYRMON,
-        .categoryName = _("Cat Ferret"),
-        .height = 13,
-        .weight = 403,
+        .categoryName = _("Frenzy"),
+        .height = 88,
+        .weight = 1432,
         .description = COMPOUND_STRING(
-            "When it battles, it stands on its hind legs\n"
-            "and attacks with its sharply clawed\n"
-            "forelegs. Its fur bristles if it encounters\n"
-            "any Darktyrmon_x."),
+            "DarkTyrannomon is in a constant frenzy\n"
+            "attacking anything that passes its eyes.\n"
+            "Its viciousness makes it a highly desired\n"
+            "minion for evil Digimon."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -5986,28 +6010,30 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Darktyrmon)
         .levelUpLearnset = sDarktyrmonLevelUpLearnset,
         .teachableLearnset = sDarktyrmonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_DARKTYRMON_X}), // X ANTIBODY
     },
 #endif //P_FAMILY_DARKTYRMON
 
 #if P_FAMILY_DARKTYRMON_X
     [SPECIES_DARKTYRMON_X] =
     {
-        .baseHP        = 73,
-        .baseAttack    = 100,
-        .baseDefense   = 60,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_POISON),
-        .catchRate = 90,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 160 : 165,
-        .evYield_Attack = 1,
-        .evYield_SpAttack = 1,
+        .baseHP        = 79,
+        .baseAttack    = 95,
+        .baseDefense   = 78,
+        .baseSpeed     = 64,
+        .baseSpAttack  = 82,
+        .baseSpDefense = 72,
+        .types = MON_TYPES(TYPE_DARK, TYPE_DRAGON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 2,
+        .evYield_SpAttack  = 2,
         .itemRare = ITEM_SHED_SHELL,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FLUCTUATING,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_INFILTRATOR },
         .bodyColor = BODY_COLOR_BLACK,
@@ -6015,14 +6041,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .speciesName = _("Darktyrmon"),
         .cryId = CRY_DARKTYRMON_X,
         .natDexNum = NATIONAL_DEX_DARKTYRMON_X,
-        .categoryName = _("Fang Snake"),
-        .height = 27,
-        .weight = 525,
+        .categoryName = _("X Antibody"),
+        .height = 60,
+        .weight = 1248,
         .description = COMPOUND_STRING(
-            "Darktyrmon_x and Darktyrmon are eternal rivals.\n"
-            "It counters a Darktyrmon's dazzling agility\n"
-            "with its swordlike tail, which also oozes\n"
-            "a horrible poison."),
+            "Unlike a normal DarkTyrannomon,\n"
+            "DarkTyrannomon X is much more composed\n"
+            "letting it pick its battles more carefully\n"
+            "and fight with more strategy."),
         .pokemonScale = 275,
         .pokemonOffset = 7,
         .trainerScale = 256,
@@ -6049,42 +6075,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_DECKDRAMON
     [SPECIES_DECKDRAMON] =
     {
-        .baseHP        = P_UPDATED_STATS >= GEN_7 ? 90 : 70,
-        .baseAttack    = 55,
-        .baseDefense   = 65,
+        .baseHP        = 66,
+        .baseAttack    = 71,
+        .baseDefense   = 76,
         .baseSpeed     = 70,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 85,
-        .types = MON_TYPES(TYPE_ROCK, TYPE_PSYCHIC),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 161,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 154,
-    #else
+        .baseSpAttack  = 112,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_STEEL, TYPE_DRAGON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
         .expYield = 150,
-    #endif
-        .evYield_SpAttack = 2,
+        .evYield_SpAttack  = 4,
         .itemCommon = ITEM_STARDUST,
         .itemRare = ITEM_MOON_STONE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_YELLOW,
+        .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Deckdramon"),
         .cryId = CRY_DECKDRAMON,
         .natDexNum = NATIONAL_DEX_DECKDRAMON,
-        .categoryName = _("Meteorite"),
-        .height = 10,
-        .weight = 1680,
+        .categoryName = _("Anti-Air"),
+        .height = 49,
+        .weight = 1180,
         .description = COMPOUND_STRING(
-            "It becomes very active on the night of\n"
-            "a full moon. This Pokémon was first\n"
-            "discovered 40 years ago at the site of\n"
-            "a meteor strike."),
+            "Hyper-specialised in taking down Flying\n"
+            "Digimon, Deckerdramon is a beast of pure\n"
+            "fury. When fighting grounded, it will use\n"
+            "its tail to deal devastating attacks."),
         .pokemonScale = 300,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -6112,42 +6133,38 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_DELTAMON
     [SPECIES_DELTAMON] =
     {
-        .baseHP        = P_UPDATED_STATS >= GEN_7 ? 90 : 70,
-        .baseAttack    = 95,
-        .baseDefense   = 85,
+        .baseHP        = 73,
+        .baseAttack    = 90,
+        .baseDefense   = 74,
         .baseSpeed     = 70,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_ROCK, TYPE_PSYCHIC),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 161,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 154,
-    #else
+        .baseSpAttack  = 77,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_DRAGON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
         .expYield = 150,
-    #endif
-        .evYield_Attack = 2,
+        .evYield_Attack    = 2,
+        .evYield_SpAttack  = 2,
         .itemCommon = ITEM_STARDUST,
         .itemRare = ITEM_SUN_STONE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_RED,
+        .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Deltamon"),
         .cryId = CRY_DELTAMON,
         .natDexNum = NATIONAL_DEX_DELTAMON,
-        .categoryName = _("Meteorite"),
-        .height = 12,
-        .weight = 1540,
+        .categoryName = _("Tripartite"),
+        .height = 177,
+        .weight = 3540,
         .description = COMPOUND_STRING(
-            "Solar energy is the source of this \n"
-            "Pokémon's power. On sunny days, groups of\n"
-            "Deltamon line up facing the sun and absorb\n"
-            "its light."),
+            "Deltamon are formed from the fusion of\n"
+            "three different Digimon. The ferocious\n"
+            "nature of each of these Digimon makes it\n"
+            "particularly destructive."),
         .pokemonScale = 328,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6175,38 +6192,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_DEPTHMON
     [SPECIES_DEPTHMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 48,
-        .baseDefense   = 43,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 46,
-        .baseSpDefense = 41,
-        .types = MON_TYPES(TYPE_WATER, TYPE_GROUND),
-        .catchRate = 190,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 58 : 92,
-        .evYield_HP = 1,
+        .baseHP        = 64,
+        .baseAttack    = 72,
+        .baseDefense   = 96,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 69,
+        .baseSpDefense = 84,
+        .types = MON_TYPES(TYPE_WATER, TYPE_STEEL),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,  
+        .evYield_Defense   = 2,
+        .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_ANTICIPATION, ABILITY_HYDRATION },
     #else
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_NONE, ABILITY_HYDRATION },
     #endif
-        .bodyColor = BODY_COLOR_GRAY,
+        .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Depthmon"),
         .cryId = CRY_DEPTHMON,
         .natDexNum = NATIONAL_DEX_DEPTHMON,
-        .categoryName = _("Whiskers"),
-        .height = 4,
-        .weight = 19,
+        .categoryName = _("Diving"),
+        .height = 23,
+        .weight = 864,
         .description = COMPOUND_STRING(
-            "Its body is covered with a slimy film.\n"
-            "The film acts as a barrier to prevent germs\n"
-            "in muddy water from entering the\n"
-            "Depthmon's body."),
+            "Depthmon specialises in underwater activities\n"
+            "due to its armour having high resistance to\n"
+            "pressure while being very mobile. It can\n"
+            "often get competitive with Whamon."),
         .pokemonScale = 581,
         .pokemonOffset = -3,
         .trainerScale = 256,
@@ -6228,43 +6247,43 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Depthmon)
         .levelUpLearnset = sDepthmonLevelUpLearnset,
         .teachableLearnset = sDepthmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_DEPUTYMON}),
     },
 
     [SPECIES_DEPUTYMON] =
     {
-        .baseHP        = 110,
-        .baseAttack    = 78,
-        .baseDefense   = 73,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 76,
-        .baseSpDefense = 71,
-        .types = MON_TYPES(TYPE_WATER, TYPE_GROUND),
-        .catchRate = 75,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 164 : 158,
+        .baseHP        = 75,
+        .baseAttack    = 66,
+        .baseDefense   = 70,
+        .baseSpeed     = 72,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 73,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_STEEL),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
         .evYield_HP = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_ANTICIPATION, ABILITY_HYDRATION },
     #else
         .abilities = { ABILITY_OBLIVIOUS, ABILITY_NONE, ABILITY_HYDRATION },
     #endif
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Deputymon"),
         .cryId = CRY_DEPUTYMON,
         .natDexNum = NATIONAL_DEX_DEPUTYMON,
-        .categoryName = _("Whiskers"),
-        .height = 9,
-        .weight = 236,
+        .categoryName = _("Revolver"),
+        .height = 19,
+        .weight = 781,
         .description = COMPOUND_STRING(
-            "Mysteriously, it can foretell earthquakes.\n"
-            "In the daytime, it sleeps in mud at the\n"
-            "bottom of a pond. When it awakens, it\n"
-            "continually feeds throughout the night."),
+            "Its knack for playing Russian Roulette\n"
+            "makes Deputymon an interesting Digimon to\n"
+            "encounter. Anyone who can 'win' Russian\n"
+            "Roulette can easily befriend Deputymon."),
         .pokemonScale = 317,
         .pokemonOffset = 1,
         .trainerScale = 256,
@@ -6291,34 +6310,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_DEVIDRAMON
     [SPECIES_DEVIDRAMON] =
     {
-        .baseHP        = 43,
-        .baseAttack    = 80,
-        .baseDefense   = 65,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 35,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 205,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 62 : 111,
-        .evYield_Attack = 1,
+        .baseHP        = 73,
+        .baseAttack    = 78,
+        .baseDefense   = 68,
+        .baseSpeed     = 78,
+        .baseSpAttack  = 93,
+        .baseSpDefense = 71,
+        .types = MON_TYPES(TYPE_DARK, TYPE_DRAGON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 1,
+        .evYield_Speed     = 1,
+        .evYield_SpAttack  = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FLUCTUATING,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
         .abilities = { ABILITY_HYPER_CUTTER, ABILITY_SHELL_ARMOR, ABILITY_ADAPTABILITY },
-        .bodyColor = BODY_COLOR_RED,
+        .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Devidramon"),
         .cryId = CRY_DEVIDRAMON,
         .natDexNum = NATIONAL_DEX_DEVIDRAMON,
-        .categoryName = _("Ruffian"),
-        .height = 6,
-        .weight = 115,
+        .categoryName = _("Dark Beast"),
+        .height = 70,
+        .weight = 1875,
         .description = COMPOUND_STRING(
-            "Once it grips prey with its large pincers,\n"
-            "it will never let go, no matter what.\n"
-            "It is a hardy Pokémon that can thrive\n"
-            "in any environment."),
+            "Although it is a Dragon type Digimon, \n"
+            "Devidramon is unusually developed, using\n"
+            "its elongated arms to shred any foes it\n"
+            "comes across on its patrols."),
         .pokemonScale = 484,
         .pokemonOffset = 19,
         .trainerScale = 256,
@@ -6339,39 +6361,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Devidramon)
         .levelUpLearnset = sDevidramonLevelUpLearnset,
         .teachableLearnset = sDevidramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_DEVIMON}),
     },
 
     [SPECIES_DEVIMON] =
     {
-        .baseHP        = 63,
-        .baseAttack    = 120,
-        .baseDefense   = 85,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_WATER, TYPE_DARK),
-        .catchRate = 155,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 164 : 161,
-        .evYield_Attack = 2,
+        .baseHP        = 74,
+        .baseAttack    = 89,
+        .baseDefense   = 73,
+        .baseSpeed     = 69,
+        .baseSpAttack  = 77,
+        .baseSpDefense = 74,
+        .types = MON_TYPES(TYPE_DARK),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 2,
+        .evYield_SpAttack  = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FLUCTUATING,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
         .abilities = { ABILITY_HYPER_CUTTER, ABILITY_SHELL_ARMOR, ABILITY_ADAPTABILITY },
-        .bodyColor = BODY_COLOR_RED,
+        .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Devimon"),
         .cryId = CRY_DEVIMON,
         .natDexNum = NATIONAL_DEX_DEVIMON,
-        .categoryName = _("Rogue"),
-        .height = 11,
-        .weight = 328,
+        .categoryName = _("Devil"),
+        .height = 30,
+        .weight = 908,
         .description = COMPOUND_STRING(
-            "A brutish Pokémon that loves to battle.\n"
-            "A veteran Devimon that has prevailed in\n"
-            "hundreds of battles has giant pincers\n"
-            "marked with countless scars."),
+            "Lured to the dark side by DemiDevimon, \n"
+            "Devimon is originally a form of Angemon.\n"
+            "It's fiendish and cunning personality often\n"
+            "puts it as the leader of many evil Digimon."),
         .pokemonScale = 365,
         .pokemonOffset = 9,
         .trainerScale = 256,
@@ -6398,35 +6421,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_DEXDORUMON
     [SPECIES_DEXDORUMON] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 40,
-        .baseDefense   = 55,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_GROUND, TYPE_PSYCHIC),
-        .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 58,
+        .baseHP        = 74,
+        .baseAttack    = 93,
+        .baseDefense   = 71,
+        .baseSpeed     = 74,
+        .baseSpAttack  = 71,
+        .baseSpDefense = 76,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_DRAGON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 3,
         .evYield_SpDefense = 1,
         .itemRare = ITEM_LIGHT_CLAY,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BROWN,
+        .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Dexdorumon"),
         .cryId = CRY_DEXDORUMON,
         .natDexNum = NATIONAL_DEX_DEXDORUMON,
-        .categoryName = _("Clay Doll"),
-        .height = 5,
-        .weight = 215,
+        .categoryName = _("X Antibody"),
+        .height = 31,
+        .weight = 657,
         .description = COMPOUND_STRING(
-            "A Dexdorumon moves by spinning on its single\n"
-            "foot. It has been depicted in murals \n"
-            "adorning the walls of a once-bustling city\n"
-            "in an ancient age."),
+            "Dexdorugamon was formed from the\n"
+            "experiments performed to find further\n"
+            "evolutions. Its malformed mind has an obsess-\n"
+            "ion with preying on others DigiCores"),
         .pokemonScale = 457,
         .pokemonOffset = 21,
         .trainerScale = 256,
@@ -6448,40 +6473,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Dexdorumon)
         .levelUpLearnset = sDexdorumonLevelUpLearnset,
         .teachableLearnset = sDexdorumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_DIATRYMON}),
     },
 
     [SPECIES_DIATRYMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 70,
-        .baseDefense   = 105,
-        .baseSpeed     = 75,
+        .baseHP        = 73,
+        .baseAttack    = 77,
+        .baseDefense   = 75,
+        .baseSpeed     = 91,
         .baseSpAttack  = 70,
-        .baseSpDefense = 120,
-        .types = MON_TYPES(TYPE_GROUND, TYPE_PSYCHIC),
-        .catchRate = 90,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 175 : 189,
-        .evYield_SpDefense = 2,
+        .baseSpDefense = 72,
+        .types = MON_TYPES(TYPE_FLYING),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed     = 4,
         .itemRare = ITEM_LIGHT_CLAY,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLACK,
+        .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Diatrymon"),
         .cryId = CRY_DIATRYMON,
         .natDexNum = NATIONAL_DEX_DIATRYMON,
-        .categoryName = _("Clay Doll"),
-        .height = 15,
-        .weight = 1080,
+        .categoryName = _("Fossil Bird"),
+        .height = 37,
+        .weight = 999,
         .description = COMPOUND_STRING(
-            "A Diatrymon sleeps while hovering in midair.\n"
-            "Its arms are separate from its body.\n"
-            "They are kept floating by the Pokémon's\n"
-            "manipulation of psychic power."),
+            "Although it is very clearly flying type\n"
+            "and has wings, Diatrymon is incapable of\n"
+            "however its powerful legs let it easily\n"
+            "sprint upwards of 200km/h."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 280,
@@ -6509,41 +6534,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_DIGMON
     [SPECIES_DIGMON] =
     {
-        .baseHP        = 66,
-        .baseAttack    = 41,
-        .baseDefense   = 77,
-        .baseSpeed     = 23,
-        .baseSpAttack  = 61,
-        .baseSpDefense = 87,
-        .types = MON_TYPES(TYPE_ROCK, TYPE_GRASS),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 71,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_4
-        .expYield = 99,
-    #else
-        .expYield = 121,
-    #endif
-        .evYield_SpDefense = 1,
+        .baseHP        = 95,
+        .baseAttack    = 79,
+        .baseDefense   = 74,
+        .baseSpeed     = 71,
+        .baseSpAttack  = 66,
+        .baseSpDefense = 72,
+        .types = MON_TYPES(TYPE_BUG, TYPE_GROUND),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 3,
+        .evYield_Attack    = 1,
         .itemRare = ITEM_BIG_ROOT,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
         .abilities = { ABILITY_SUCTION_CUPS, ABILITY_NONE, ABILITY_STORM_DRAIN },
-        .bodyColor = BODY_COLOR_PURPLE,
+        .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Digmon"),
         .cryId = CRY_DIGMON,
         .natDexNum = NATIONAL_DEX_DIGMON,
-        .categoryName = _("Sea Lily"),
-        .height = 10,
-        .weight = 238,
+        .categoryName = _("Drill"),
+        .height = 26,
+        .weight = 776,
         .description = COMPOUND_STRING(
-            "It disguises itself as seaweed by making\n"
-            "its tentacles sway. Unsuspecting prey\n"
-            "that come too close are swallowed whole.\n"
-            "It became extinct 100 million years ago."),
+            "Once a Digmon decides to start tunnelling,\n"
+            "it is basically impossible to catch. Even\n"
+            "Ultra level Digimon will struggle to catch\n"
+            "it without destroying the terrain completely."),
         .pokemonScale = 305,
         .pokemonOffset = 8,
         .trainerScale = 256,
@@ -6564,46 +6585,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Digmon)
         .levelUpLearnset = sDigmonLevelUpLearnset,
         .teachableLearnset = sDigmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_DINOHYUMON}),
     },
 
     [SPECIES_DINOHYUMON] =
     {
-        .baseHP        = 86,
-        .baseAttack    = 81,
-        .baseDefense   = 97,
-        .baseSpeed     = 43,
-        .baseSpAttack  = 81,
-        .baseSpDefense = 107,
-        .types = MON_TYPES(TYPE_ROCK, TYPE_GRASS),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 173,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_4
-        .expYield = 199,
-    #else
-        .expYield = 201,
-    #endif
-        .evYield_SpDefense = 2,
+        .baseHP        = 76,
+        .baseAttack    = 90,
+        .baseDefense   = 71,
+        .baseSpeed     = 72,
+        .baseSpAttack  = 68,
+        .baseSpDefense = 71,
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_DRAGON),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 4,
         .itemRare = ITEM_BIG_ROOT,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
         .abilities = { ABILITY_SUCTION_CUPS, ABILITY_NONE, ABILITY_STORM_DRAIN },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Dinohyumon"),
         .cryId = CRY_DINOHYUMON,
         .natDexNum = NATIONAL_DEX_DINOHYUMON,
-        .categoryName = _("Barnacle"),
-        .height = 15,
-        .weight = 604,
+        .categoryName = _("Tribal"),
+        .height = 21,
+        .weight = 801,
         .description = COMPOUND_STRING(
-            "It drags its heavy body along the\n"
-            "seafloor. It makes its nest in the shallows\n"
-            "of warm seas. Dinohyumon can be seen on\n"
-            "beaches when the tide goes out."),
+            "Dinohyumon comes from a tribe in which all\n"
+            "tribesman are trained in combat. It is a\n"
+            "great warrior that boasts great strength\n"
+            "and deep understanding of all its weapons."),
         .pokemonScale = 267,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -6630,40 +6645,36 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_DOBERMON
     [SPECIES_DOBERMON] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 95,
-        .baseDefense   = 50,
-        .baseSpeed     = 75,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_ROCK, TYPE_BUG),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 71,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_4
-        .expYield = 99,
-    #else
-        .expYield = 119,
-    #endif
-        .evYield_Attack = 1,
+        .baseHP        = 65,
+        .baseAttack    = 75,
+        .baseDefense   = 71,
+        .baseSpeed     = 93,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 68,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_DARK),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed     = 2,
+        .evYield_SpAttack  = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
         .abilities = { ABILITY_BATTLE_ARMOR, ABILITY_NONE, ABILITY_SWIFT_SWIM },
-        .bodyColor = BODY_COLOR_GRAY,
+        .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Dobermon"),
         .cryId = CRY_DOBERMON,
         .natDexNum = NATIONAL_DEX_DOBERMON,
-        .categoryName = _("Old Shrimp"),
-        .height = 7,
-        .weight = 125,
+        .categoryName = _("Hunting"),
+        .height = 11,
+        .weight = 365,
         .description = COMPOUND_STRING(
-            "It was resurrected from a fossil using the\n"
-            "power of science. It swims by undulating\n"
-            "the eight wings at its sides. They were\n"
-            "feet that adapted to life in the sea."),
+            "Originally a Virus type Digimon, Dobermon\n"
+            "changed to a Vaccine type after a mutation.\n"
+            "It still retains its ferocious nature\n"
+            "making it perfect for hunting Virus types."),
         .pokemonScale = 296,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -6684,45 +6695,42 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Dobermon)
         .levelUpLearnset = sDobermonLevelUpLearnset,
         .teachableLearnset = sDobermonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_DOBERMON_X}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_DOBERMON_X}), //X ANTIBODY
     },
 
     [SPECIES_DOBERMON_X] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 125,
-        .baseDefense   = 100,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 80,
-        .types = MON_TYPES(TYPE_ROCK, TYPE_BUG),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 173,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_4
-        .expYield = 199,
-    #else
-        .expYield = 200,
-    #endif
-        .evYield_Attack = 2,
+        .baseHP        = 65,
+        .baseAttack    = 80,
+        .baseDefense   = 68,
+        .baseSpeed     = 92,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 66,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_DARK),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 1,
+        .evYield_Speed     = 2,
+        .evYield_SpAttack  = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
         .abilities = { ABILITY_BATTLE_ARMOR, ABILITY_NONE, ABILITY_SWIFT_SWIM },
-        .bodyColor = BODY_COLOR_GRAY,
+        .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Dobermon"),
         .cryId = CRY_DOBERMON_X,
         .natDexNum = NATIONAL_DEX_DOBERMON_X,
-        .categoryName = _("Plate"),
-        .height = 15,
-        .weight = 682,
+        .categoryName = _("X Antibody"),
+        .height = 13,
+        .weight = 402,
         .description = COMPOUND_STRING(
-            "Dobermon_x usually lives on land. However,\n"
-            "when it hunts for prey, it dives beneath\n"
-            "the ocean. It swims around using its two\n"
-            "large wings."),
+            "Upon encountering the X Antibody, Dobermon\n"
+            "reverts back to its Virus typing, becoming\n"
+            "Dobermon X. Its even more ferocious meaning\n"
+            "only the best can control it."),
         .pokemonScale = 312,
         .pokemonOffset = 3,
         .trainerScale = 271,
@@ -6749,38 +6757,41 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_DOGGYMON
     [SPECIES_DOGGYMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 15,
-        .baseDefense   = 20,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 10,
-        .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 40 : 61,
-        .evYield_Speed = 1,
+        .baseHP        = 97,
+        .baseAttack    = 60,
+        .baseDefense   = 85,
+        .baseSpeed     = 61,
+        .baseSpAttack  = 64,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 2,
+        .evYield_Defense   = 1,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_OBLIVIOUS, ABILITY_ADAPTABILITY },
     #else
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_ADAPTABILITY },
     #endif
-        .bodyColor = BODY_COLOR_BROWN,
+        .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Doggymon"),
         .cryId = CRY_DOGGYMON,
         .natDexNum = NATIONAL_DEX_DOGGYMON,
-        .categoryName = _("Fish"),
-        .height = 6,
-        .weight = 74,
+        .categoryName = _("Cartoon"),
+        .height = 8,
+        .weight = 211,
         .description = COMPOUND_STRING(
-            "Doggymon live in ponds that are heavily\n"
-            "infested with weeds. Because of its\n"
-            "hopelessly shabby appearance, it\n"
-            "seems as if few Trainers raise it."),
+            "Doggymon is likely produced from stray\n"
+            "data released by American cartoon\n"
+            "production. It has incredibly stretchy skin\n"
+            "letting it absorb most attacks."),
         .pokemonScale = 423,
         .pokemonOffset = -4,
         .trainerScale = 256,
@@ -6801,45 +6812,44 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Doggymon)
         .levelUpLearnset = sDoggymonLevelUpLearnset,
         .teachableLearnset = sDoggymonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_BEAUTY, 170, SPECIES_DOKUGUMON},
-                                {EVO_TRADE_ITEM, ITEM_PRISM_SCALE, SPECIES_DOKUGUMON},
-                                {EVO_ITEM, ITEM_PRISM_SCALE, SPECIES_DOKUGUMON}),
     },
 
     [SPECIES_DOKUGUMON] =
     {
-        .baseHP        = 95,
-        .baseAttack    = 60,
-        .baseDefense   = 79,
-        .baseSpeed     = 81,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 125,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 60,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 189 : 213,
-        .evYield_SpDefense = 2,
+        .baseHP        = 67,
+        .baseAttack    = 65,
+        .baseDefense   = 70,
+        .baseSpeed     = 99,
+        .baseSpAttack  = 83,
+        .baseSpDefense = 71,
+        .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed     = 3,
+        .evYield_SpAttack  = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_MARVEL_SCALE, ABILITY_COMPETITIVE, ABILITY_CUTE_CHARM },
     #else
         .abilities = { ABILITY_MARVEL_SCALE, ABILITY_NONE, ABILITY_CUTE_CHARM },
     #endif
-        .bodyColor = BODY_COLOR_PINK,
+        .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Dokugumon"),
         .cryId = CRY_DOKUGUMON,
         .natDexNum = NATIONAL_DEX_DOKUGUMON,
-        .categoryName = _("Tender"),
-        .height = 62,
-        .weight = 1620,
+        .categoryName = _("Spider"),
+        .height = 21,
+        .weight = 685,
         .description = COMPOUND_STRING(
-            "It is said to live at the bottom of\n"
-            "large lakes. Considered to be the most\n"
-            "beautiful of all Pokémon, it has been\n"
-            "depicted in paintings and statues."),
+            "Without preparation, Dokugumon will\n"
+            "struggle in most fights. However given\n"
+            "some time to set up webs and survey the\n"
+            "area, it is terrifying beast in battle."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 360,
@@ -6872,35 +6882,38 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     [SPECIES_DOLPHMON_NORMAL] =
     {
         .baseHP        = 70,
-        .baseAttack    = 70,
-        .baseDefense   = 70,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_NORMAL),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 147 : 145,
-        .evYield_HP = 1,
+        .baseAttack    = 68,
+        .baseDefense   = 72,
+        .baseSpeed     = 96,
+        .baseSpAttack  = 82,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_WATER),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed     = 2,
+        .evYield_SpAttack  = 1,
+        .evYield_SpDefense = 1,
         .itemCommon = ITEM_MYSTIC_WATER,
         .itemRare = ITEM_MYSTIC_WATER,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_FORECAST, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GRAY,
+        .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Dolphmon"),
         .cryId = CRY_DOLPHMON,
         .natDexNum = NATIONAL_DEX_DOLPHMON,
-        .categoryName = _("Weather"),
-        .height = 3,
-        .weight = 8,
+        .categoryName = _("Dolphin"),
+        .height = 12,
+        .weight = 329,
         .description = COMPOUND_STRING(
-            "It alters its form depending on the\n"
-            "weather. Changes in the climate such as\n"
-            "the temperature and humidity appear to\n"
-            "affect its cellular structure."),
+            "Dolphmon is in incredibly intelligent\n"
+            "Digimon that can outsmart just about\n"
+            "anyone it encounters. It uses this intell-\n"
+            "igence to swiftly deal with battles."),
         .pokemonScale = 435,
         .pokemonOffset = -5,
         .trainerScale = 256,
@@ -6943,7 +6956,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_FORECAST, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
@@ -7000,7 +7013,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_FORECAST, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
@@ -7057,7 +7070,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_FORECAST, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_WHITE,
@@ -7101,16 +7114,18 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_DONSHOUMON
     [SPECIES_DONSHOUMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 90,
-        .baseDefense   = 70,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 120,
+        .baseHP        = 78,
+        .baseAttack    = 80,
+        .baseDefense   = 75,
+        .baseSpeed     = 68,
+        .baseSpAttack  = 72,
+        .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_NORMAL),
-        .catchRate = 200,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 154 : 132,
-        .evYield_SpDefense = 1,
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 2,
+        .evYield_Attack    = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -7121,18 +7136,18 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #else
         .abilities = { ABILITY_COLOR_CHANGE, ABILITY_NONE, ABILITY_NONE },
     #endif
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Donshoumon"),
         .cryId = CRY_DONSHOUMON,
         .natDexNum = NATIONAL_DEX_DONSHOUMON,
-        .categoryName = _("Color Swap"),
-        .height = 10,
+        .categoryName = _("Rhythm"),
+        .height = 7,
         .weight = 220,
         .description = COMPOUND_STRING(
-            "A Pokémon that has the ability to alter its\n"
-            "body colors to match its surroundings.\n"
-            "A Donshoumon reverts to its original colors if\n"
-            "it is startled."),
+            "When a DonShoutmon is around, it is almost\n"
+            "guaranteed that any fights and arguments are\n"
+            "going to get worse as it will throw itself\n"
+            "into any altercation."),
         .pokemonScale = 316,
         .pokemonOffset = 10,
         .trainerScale = 256,
@@ -7160,21 +7175,23 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_DORUGAMON
     [SPECIES_DORUGAMON] =
     {
-        .baseHP        = 44,
-        .baseAttack    = 75,
-        .baseDefense   = 35,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 63,
-        .baseSpDefense = 33,
-        .types = MON_TYPES(TYPE_GHOST),
-        .catchRate = 225,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 59 : 97,
-        .evYield_Attack = 1,
+        .baseHP        = 75,
+        .baseAttack    = 86,
+        .baseDefense   = 72,
+        .baseSpeed     = 74,
+        .baseSpAttack  = 69,
+        .baseSpDefense = 71,
+        .types = MON_TYPES(TYPE_DRAGON),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 2,
+        .evYield_Attack    = 2,
         .itemRare = ITEM_SPELL_TAG,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = 35,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_INSOMNIA, ABILITY_FRISK, ABILITY_CURSED_BODY },
@@ -7185,14 +7202,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .speciesName = _("Dorugamon"),
         .cryId = CRY_DORUGAMON,
         .natDexNum = NATIONAL_DEX_DORUGAMON,
-        .categoryName = _("Puppet"),
-        .height = 6,
-        .weight = 23,
+        .categoryName = _("X Antibody"),
+        .height = 30,
+        .weight = 954,
         .description = COMPOUND_STRING(
-            "This Pokémon roams about deep in the\n"
-            "night seeking such negative emotions as\n"
-            "grudges and envy. It retreats to its nest\n"
-            "when the sun begins to rise."),
+            "Dorugamon can very easily flip personalities;\n"
+            "when in battle, it is almost indistinguishable\n"
+            "from a wild however when outside battle, it\n"
+            "is a very intelligent and docile Digimon."),
         .pokemonScale = 440,
         .pokemonOffset = 20,
         .trainerScale = 256,
@@ -7214,44 +7231,45 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Dorugamon)
         .levelUpLearnset = sDorugamonLevelUpLearnset,
         .teachableLearnset = sDorugamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_DORULUMON}),
     },
 
     [SPECIES_DORULUMON] =
     {
-        .baseHP        = 64,
-        .baseAttack    = 115,
-        .baseDefense   = 65,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 83,
-        .baseSpDefense = 63,
-        .types = MON_TYPES(TYPE_GHOST),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 159 : 179,
-        .evYield_Attack = 2,
+        .baseHP        = 78,
+        .baseAttack    = 92,
+        .baseDefense   = 74,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 68,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_GROUND),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 1,
+        .evYield_Attack    = 3,
         .itemRare = ITEM_SPELL_TAG,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = 35,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_INSOMNIA, ABILITY_FRISK, ABILITY_CURSED_BODY },
     #else
         .abilities = { ABILITY_INSOMNIA, ABILITY_NONE, ABILITY_CURSED_BODY },
     #endif
-        .bodyColor = BODY_COLOR_BLACK,
+        .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Dorulumon"),
         .cryId = CRY_DORULUMON,
         .natDexNum = NATIONAL_DEX_DORULUMON,
-        .categoryName = _("Marionette"),
-        .height = 11,
-        .weight = 125,
+        .categoryName = _("Drill Wolf"),
+        .height = 21,
+        .weight = 796,
         .description = COMPOUND_STRING(
-            "An abandoned plush doll became this\n"
-            "Pokémon. They are said to live in garbage\n"
-            "dumps and wander about in search of the\n"
-            "children that threw them away."),
+            "Dorulumon is a faithful Digimon that will\n"
+            "always stick to its word. When in battle,\n"
+            "it prefers to use hit and run tactics to\n"
+            "overwhelm opponents."),
         .pokemonScale = 262,
         .pokemonOffset = 9,
         .trainerScale = 256,
@@ -7293,7 +7311,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = 35,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_PRANKSTER, ABILITY_PRANKSTER, ABILITY_PRANKSTER },
         .bodyColor = BODY_COLOR_BLACK,
@@ -7338,40 +7356,41 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_DRIMOGEMON
     [SPECIES_DRIMOGEMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 40,
-        .baseDefense   = 90,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 90,
-        .types = MON_TYPES(TYPE_GHOST),
-        .catchRate = 190,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 59 : 97,
-        .evYield_Defense = (P_UPDATED_EVS >= GEN_4) ? 0 : 1,
-        .evYield_SpDefense = 1,
+        .baseHP        = 93,
+        .baseAttack    = 82,
+        .baseDefense   = 77,
+        .baseSpeed     = 67,
+        .baseSpAttack  = 62,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_GROUND),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 2,
+        .evYield_Attack    = 2,
         .itemRare = ITEM_SPELL_TAG,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = 35,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
     #if P_UPDATED_ABILITIES >= GEN_6
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_FRISK },
     #else
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
     #endif
-        .bodyColor = BODY_COLOR_BLACK,
+        .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Drimogemon"),
         .cryId = CRY_DRIMOGEMON,
         .natDexNum = NATIONAL_DEX_DRIMOGEMON,
-        .categoryName = _("Requiem"),
-        .height = 8,
-        .weight = 150,
+        .categoryName = _("Mole"),
+        .height = 23,
+        .weight = 908,
         .description = COMPOUND_STRING(
-            "A glare from its single scarlet eye makes\n"
-            "even burly grown-ups freeze in utter fear.\n"
-            "It is a nocturnal Pokémon that roams\n"
-            "about under the cloak of darkness."),
+            "Drimogemon are rarely found however this\n"
+            "is not due to a smaller population but rather\n"
+            "because it spends most of its time burrrowing\n"
+            "deep underground."),
         .pokemonScale = 406,
         .pokemonOffset = -4,
         .trainerScale = 256,
@@ -7393,45 +7412,45 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Drimogemon)
         .levelUpLearnset = sDrimogemonLevelUpLearnset,
         .teachableLearnset = sDrimogemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_EBIDRAMON}),
     },
 
     [SPECIES_EBIDRAMON] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 70,
-        .baseDefense   = 130,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 130,
-        .types = MON_TYPES(TYPE_GHOST),
-        .catchRate = 90,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 159 : 179,
-        .evYield_Defense = 1,
-        .evYield_SpDefense = (P_UPDATED_EVS >= GEN_4) ? 1 : 2,
+        .baseHP        = 70,
+        .baseAttack    = 91,
+        .baseDefense   = 80,
+        .baseSpeed     = 66,
+        .baseSpAttack  = 73,
+        .baseSpDefense = 67,
+        .types = MON_TYPES(TYPE_WATER, TYPE_DRAGON),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 2,
+        .evYield_Defense   = 2,
         .itemRare = ITEM_SPELL_TAG,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = 35,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
     #if P_UPDATED_ABILITIES >= GEN_6
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_FRISK },
     #else
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_NONE },
     #endif
-        .bodyColor = BODY_COLOR_BLACK,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Ebidramon"),
         .cryId = CRY_EBIDRAMON,
         .natDexNum = NATIONAL_DEX_EBIDRAMON,
-        .categoryName = _("Beckon"),
-        .height = 16,
-        .weight = 306,
+        .categoryName = _("Shrimp"),
+        .height = 18,
+        .weight = 792,
         .description = COMPOUND_STRING(
-            "It is thought that its body is hollow with\n"
-            "only a spectral ball of fire burning inside.\n"
-            "However, no one has been able to\n"
-            "confirm this theory as fact."),
+            "Ebidramons tough outer shell can sometimes\n"
+            "lead others to mistake it as not being\n"
+            "very good at fighting back however its\n"
+            "gigantic pincers quickly show otherwise."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 299,
@@ -7453,8 +7472,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Ebidramon)
         .levelUpLearnset = sEbidramonLevelUpLearnset,
         .teachableLearnset = sEbidramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_REAPER_CLOTH, SPECIES_DUSKNOIR},
-                                {EVO_ITEM, ITEM_REAPER_CLOTH, SPECIES_DUSKNOIR}),
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -7481,7 +7498,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = 35,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
     #if P_UPDATED_ABILITIES >= GEN_6
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_FRISK },
@@ -7528,38 +7545,39 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_ELEPHANMON
     [SPECIES_ELEPHANMON] =
     {
-        .baseHP        = 99,
-        .baseAttack    = 68,
-        .baseDefense   = 83,
-        .baseSpeed     = 51,
-        .baseSpAttack  = 72,
-        .baseSpDefense = 87,
-        .types = MON_TYPES(TYPE_GRASS, TYPE_FLYING),
-        .catchRate = 200,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 161 : 169,
+        .baseHP        = 77,
+        .baseAttack    = 74,
+        .baseDefense   = 75,
+        .baseSpeed     = 89,
+        .baseSpAttack  = 76,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_STEEL),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
         .evYield_HP = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_SOLAR_POWER, ABILITY_HARVEST },
     #else
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_NONE, ABILITY_HARVEST },
     #endif
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Elephanmon"),
         .cryId = CRY_ELEPHANMON,
         .natDexNum = NATIONAL_DEX_ELEPHANMON,
-        .categoryName = _("Fruit"),
-        .height = 20,
-        .weight = 1000,
+        .categoryName = _("Elephant"),
+        .height = 55,
+        .weight = 2350,
         .description = COMPOUND_STRING(
-            "It flies by flapping its broad leaves.\n"
-            "The bunch of fruit that grows around its\n"
-            "neck is deliciously sweet. In the spring,\n"
-            "it scatters pollen from its neck."),
+            "Contrary to its large build, Elephantmon\n"
+            "is incredibly fast Digimon due to the giant\n"
+            "turbines that make up its ears. It can't\n"
+            "fly but it can float indefinitely."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 344,
@@ -7601,7 +7619,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_YELLOW,
@@ -7642,42 +7660,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_EOSMON_CHAMPION] =
     {
-        .baseHP        = P_UPDATED_STATS >= GEN_7 ? 75 : 65,
-        .baseAttack    = 50,
-        .baseDefense   = P_UPDATED_STATS >= GEN_7 ? 80 : 70,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 95,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_7 ? 90 : 80,
-        .types = MON_TYPES(TYPE_PSYCHIC),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 159,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 149,
-    #else
-        .expYield = 147,
-    #endif
-        .evYield_SpAttack = 1,
-        .evYield_SpDefense = 1,
+        .baseHP        = 70,
+        .baseAttack    = 74,
+        .baseDefense   = 87,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_STEEL, TYPE_BUG),
+        .attribute = TYPE_UKNOWN,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense   = 2,
+        .evYield_SpDefense = 2,
         .itemRare = ITEM_CLEANSE_TAG,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Eosmon"),
         .cryId = CRY_EOSMON_CHAMPION,
         .natDexNum = NATIONAL_DEX_EOSMON_CHAMPION,
-        .categoryName = _("Wind Chime"),
-        .height = 6,
-        .weight = 10,
+        .categoryName = _("Artificial"),
+        .height = 11,
+        .weight = 582,
         .description = COMPOUND_STRING(
-            "They fly about very actively when the hot\n"
-            "season arrives. They communicate among\n"
-            "themselves using seven different and\n"
-            "distinguishing cries."),
+            "Produced from the mad research into\n"
+            "artificial Digimon, Eosmon is the first\n"
+            "Champion level Digimon. Before then, the\n"
+            "highest level achieved was Rookie level."),
         .pokemonScale = 505,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7705,16 +7718,18 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_EXERMON
     [SPECIES_EXERMON] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 130,
-        .baseDefense   = 60,
-        .baseSpeed     = 75,
-        .baseSpAttack  = 75,
-        .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_DARK),
-        .catchRate = 30,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 163 : 174,
-        .evYield_Attack = 2,
+        .baseHP        = 77,
+        .baseAttack    = 75,
+        .baseDefense   = 70,
+        .baseSpeed     = 89,
+        .baseSpAttack  = 76,
+        .baseSpDefense = 68,
+        .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 1,
+        .evYield_Speed     = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = 35,
@@ -7725,19 +7740,19 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #else
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_JUSTIFIED },
     #endif
-        .bodyColor = BODY_COLOR_WHITE,
+        .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
         .speciesName = _("Exermon"),
         .cryId = CRY_EXERMON,
         .natDexNum = NATIONAL_DEX_EXERMON,
-        .categoryName = _("Disaster"),
-        .height = 12,
-        .weight = 470,
+        .categoryName = _("Yoga"),
+        .height = 25,
+        .weight = 872,
         .description = COMPOUND_STRING(
-            "It sharply senses even subtle changes in\n"
-            "the sky and the land to predict natural\n"
-            "disasters. It is a long-lived Pokémon that\n"
-            "has a life-span of 100 years."),
+            "Exermon spends most of its time atop high\n"
+            "mountainous regions in which it practises\n"
+            "yoga and taijutsu. All this practise has\n"
+            "led it to perfect its sense of balance."),
         .pokemonScale = 301,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -7825,39 +7840,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_EXVEEMON_VIRUS
     [SPECIES_EXVEEMON_VIRUS] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 50,
-        .baseDefense   = 50,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_ICE),
-        .catchRate = 190,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 74,
+        .baseHP        = 77,
+        .baseAttack    = 75,
+        .baseDefense   = 70,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 89,
+        .baseSpDefense = 69,
+        .types = MON_TYPES(TYPE_DARK, TYPE_DRAGON),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
         .evYield_HP = 1,
         .itemRare = ITEM_SNOWBALL,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_MINERAL),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_ICE_BODY, ABILITY_MOODY },
     #else
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_NONE, ABILITY_MOODY },
     #endif
-        .bodyColor = BODY_COLOR_GRAY,
+        .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Exveemon"),
         .cryId = CRY_EXVEEMON_VIRUS,
         .natDexNum = NATIONAL_DEX_EXVEEMON_VIRUS,
-        .categoryName = _("Snow Hat"),
-        .height = 7,
-        .weight = 168,
+        .categoryName = _("Dragon Man"),
+        .height = 44,
+        .weight = 1397,
         .description = COMPOUND_STRING(
-            "They tend to move about in groups of\n"
-            "around five Exveemon_virus. In snowy regions,\n"
-            "it is said that when they are seen late at\n"
-            "night, snowfall will arrive by morning."),
+            "Very little is known about this variant of\n"
+            "ExVeemon. It is an incredibly rare virus\n"
+            "type, its personality is percieved to be\n"
+            "slightly more vicious."),
         .pokemonScale = 380,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -7879,44 +7895,44 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Exveemon_virus)
         .levelUpLearnset = sExveemon_virusLevelUpLearnset,
         .teachableLearnset = sExveemon_virusTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_EYESMON},
-                                {EVO_ITEM_FEMALE, ITEM_DAWN_STONE, SPECIES_FROSLASS}),
     },
 
     [SPECIES_EYESMON] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 80,
-        .baseDefense   = 80,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 80,
-        .types = MON_TYPES(TYPE_ICE),
-        .catchRate = 75,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 168 : 187,
-        .evYield_HP = 2,
+        .baseHP        = 77,
+        .baseAttack    = 66,
+        .baseDefense   = 71,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 69,
+        .baseSpDefense = 67,
+        .types = MON_TYPES(TYPE_DARK),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 2,
+        .evYield_Speed     = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_MINERAL),
     #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_ICE_BODY, ABILITY_MOODY },
     #else
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_NONE, ABILITY_MOODY },
     #endif
-        .bodyColor = BODY_COLOR_GRAY,
+        .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Eyesmon"),
         .cryId = CRY_EYESMON,
         .natDexNum = NATIONAL_DEX_EYESMON,
-        .categoryName = _("Face"),
-        .height = 15,
-        .weight = 2565,
+        .categoryName = _("Shadow"),
+        .height = 69,
+        .weight = 53,
         .description = COMPOUND_STRING(
-            "A Eyesmon has the power to instantaneously\n"
-            "freeze moisture in the atmosphere.\n"
-            "A dazzling cloud of diamondlike ice\n"
-            "crystals forms around its body."),
+            "Capable of hiding itself in the shadows, \n"
+            "Eyesmon is a frustrating Digimon to fight.\n"
+            "As it accumulates more data, it gets\n"
+            "stronger letting it defeat Ultimates."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 344,
@@ -7958,7 +7974,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_MINERAL),
         .abilities = { ABILITY_REFRIGERATE, ABILITY_REFRIGERATE, ABILITY_REFRIGERATE },
         .bodyColor = BODY_COLOR_GRAY,
@@ -8012,10 +8028,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .catchRate = 75,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 168 : 187,
         .evYield_Speed = 2,
-        .genderRatio = MON_FEMALE,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_MINERAL),
         .abilities = { ABILITY_SNOW_CLOAK, ABILITY_NONE, ABILITY_CURSED_BODY },
         .bodyColor = BODY_COLOR_WHITE,
@@ -8058,15 +8074,16 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_EYESMON_SCATTERMODE
     [SPECIES_EYESMON_SCATTERMODE] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 40,
-        .baseDefense   = 50,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_ICE, TYPE_WATER),
-        .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 58 : 75,
+        .baseHP        = 9,
+        .baseAttack    = 7,
+        .baseDefense   = 8,
+        .baseSpeed     = 9,
+        .baseSpAttack  = 8,
+        .baseSpDefense = 8,
+        .types = MON_TYPES(TYPE_DARK),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
         .evYield_HP = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
@@ -8078,18 +8095,18 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #else
         .abilities = { ABILITY_THICK_FAT, ABILITY_NONE, ABILITY_OBLIVIOUS },
     #endif
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Eyesmon"),
         .cryId = CRY_EYESMON_SCATTERMODE,
         .natDexNum = NATIONAL_DEX_EYESMON_SCATTERMODE,
-        .categoryName = _("Clap"),
-        .height = 8,
-        .weight = 395,
+        .categoryName = _("Shadow"),
+        .height = 3,
+        .weight = 1,
         .description = COMPOUND_STRING(
-            "It is completely covered with plushy fur.\n"
-            "As a result, it never feels the cold even\n"
-            "when it is rolling about on ice floes or\n"
-            "diving in the sea."),
+            "Although it is still a part of Eyesmon, it\n"
+            "is so incredibly weak that it basically has\n"
+            "no fighting capabilities, instead being\n"
+            "used for monitoring far and wide."),
         .pokemonScale = 315,
         .pokemonOffset = 16,
         .trainerScale = 256,
@@ -8111,21 +8128,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Eyesmon_scattermode)
         .levelUpLearnset = sEyesmon_scattermodeLevelUpLearnset,
         .teachableLearnset = sEyesmon_scattermodeTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_FANGMON}),
     },
 
     [SPECIES_FANGMON] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 60,
+        .baseHP        = 77,
+        .baseAttack    = 75,
         .baseDefense   = 70,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 75,
-        .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_ICE, TYPE_WATER),
-        .catchRate = 120,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 144 : 128,
-        .evYield_HP = 2,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 69,
+        .baseSpDefense = 69,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_DARK),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 1,
+        .evYield_Speed     = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -8136,18 +8154,18 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #else
         .abilities = { ABILITY_THICK_FAT, ABILITY_NONE, ABILITY_OBLIVIOUS },
     #endif
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Fangmon"),
         .cryId = CRY_FANGMON,
         .natDexNum = NATIONAL_DEX_FANGMON,
-        .categoryName = _("Ball Roll"),
-        .height = 11,
-        .weight = 876,
+        .categoryName = _("Grimms Wolf"),
+        .height = 28,
+        .weight = 753,
         .description = COMPOUND_STRING(
-            "Fangmon live in herds on ice floes. Using its\n"
-            "powerful flippers, it shatters ice.\n"
-            "It dives into the sea to hunt prey five\n"
-            "times a day."),
+            "Living in the depths of forests, Fangmon\n"
+            "likes to prey on those who lose their way.\n"
+            "It is believed to be composed of data from\n"
+            "children fairy tales."),
         .pokemonScale = 338,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -8168,27 +8186,22 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Fangmon)
         .levelUpLearnset = sFangmonLevelUpLearnset,
         .teachableLearnset = sFangmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 44, SPECIES_FILMON}),
     },
 
     [SPECIES_FILMON] =
     {
-        .baseHP        = 110,
-        .baseAttack    = 80,
-        .baseDefense   = 90,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 90,
-        .types = MON_TYPES(TYPE_ICE, TYPE_WATER),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 265,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 239,
-    #else
-        .expYield = 192,
-    #endif
-        .evYield_HP = 3,
+        .baseHP        = 73,
+        .baseAttack    = 88,
+        .baseDefense   = 73,
+        .baseSpeed     = 72,
+        .baseSpAttack  = 77,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_ELECTRIC),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 2,
+        .evYield_SpAttack  = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -8199,18 +8212,18 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     #else
         .abilities = { ABILITY_THICK_FAT, ABILITY_NONE, ABILITY_OBLIVIOUS },
     #endif
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Filmon"),
         .cryId = CRY_FILMON,
         .natDexNum = NATIONAL_DEX_FILMON,
-        .categoryName = _("Ice Break"),
-        .height = 14,
-        .weight = 1506,
+        .categoryName = _("Hedgehog"),
+        .height = 19,
+        .weight = 634,
         .description = COMPOUND_STRING(
-            "To protect its herd, the leader battles\n"
-            "anything that invades its territory, even\n"
-            "at the cost of its life. Its tusks may snap\n"
-            "off in battle."),
+            "Filmon likes to wonder about collecting soft\n"
+            "materials for bedding. It has to be careful\n"
+            "when near others as its quills can unleash a\n"
+            "storm of electricity if they pierce something."),
         .pokemonScale = 316,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -8237,36 +8250,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_FIRAMON
     [SPECIES_FIRAMON] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 64,
-        .baseDefense   = 85,
-        .baseSpeed     = 32,
-        .baseSpAttack  = 74,
-        .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 69 : 142,
-        .evYield_Defense = 1,
+        .baseHP        = 74,
+        .baseAttack    = 75,
+        .baseDefense   = 71,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 73,
+        .baseSpDefense = 69,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_FLYING),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed     = 4,
         .itemCommon = ITEM_PEARL,
         .itemRare = ITEM_BIG_PEARL,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
         .abilities = { ABILITY_SHELL_ARMOR, ABILITY_NONE, ABILITY_RATTLED },
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Firamon"),
         .cryId = CRY_FIRAMON,
         .natDexNum = NATIONAL_DEX_FIRAMON,
-        .categoryName = _("Bivalve"),
-        .height = 4,
-        .weight = 525,
+        .categoryName = _("Sky Lion"),
+        .height = 30,
+        .weight = 1102,
         .description = COMPOUND_STRING(
-            "A Firamon slams its shell closed on prey\n"
-            "to prevent escape. The pearl it creates\n"
-            "upon evolution is said to be infused with\n"
-            "a mysterious energy."),
+            "Although they do not wish it, Firamon are\n"
+            "often thrusted into leadership positions.\n"
+            "It is considered a very wise and strong\n"
+            "leader who protects all."),
         .pokemonScale = 691,
         .pokemonOffset = 22,
         .trainerScale = 256,
@@ -8287,44 +8301,42 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Firamon)
         .levelUpLearnset = sFiramonLevelUpLearnset,
         .teachableLearnset = sFiramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE_ITEM, ITEM_DEEP_SEA_TOOTH, SPECIES_FLADRAMON},
-                                {EVO_TRADE_ITEM, ITEM_DEEP_SEA_SCALE, SPECIES_FLAWIZAMON},
-                                {EVO_ITEM, ITEM_DEEP_SEA_TOOTH, SPECIES_FLADRAMON},
-                                {EVO_ITEM, ITEM_DEEP_SEA_SCALE, SPECIES_FLAWIZAMON}),
     },
 
     [SPECIES_FLADRAMON] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 104,
-        .baseDefense   = 105,
-        .baseSpeed     = 52,
-        .baseSpAttack  = 94,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 60,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 170 : 178,
-        .evYield_Attack = 1,
-        .evYield_Defense = 1,
+        .baseHP        = 66,
+        .baseAttack    = 81,
+        .baseDefense   = 75,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 93,
+        .baseSpDefense = 77,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_DRAGON),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 1,
+        .evYield_Speed     = 1,
+        .evYield_SpAttack  = 2,
         .itemRare = ITEM_DEEP_SEA_TOOTH,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_WATER_VEIL },
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Fladramon"),
         .cryId = CRY_FLADRAMON,
         .natDexNum = NATIONAL_DEX_FLADRAMON,
-        .categoryName = _("Deep Sea"),
-        .height = 17,
-        .weight = 270,
+        .categoryName = _("Courage"),
+        .height = 23,
+        .weight = 885,
         .description = COMPOUND_STRING(
-            "To withstand the crushing pressure of\n"
-            "water deep under the sea, its spine is very\n"
-            "thick and sturdy. Its tail, which is shaped\n"
-            "like a small fish, has eyes that light up."),
+            "With the use of the Digi-Egg of courage, \n"
+            "Fladramons power increasess as if though it\n"
+            "is a blazing flame. It uses this power to\n"
+            "unleash fast and devestating attacks."),
         .pokemonScale = 307,
         .pokemonOffset = 1,
         .trainerScale = 256,
@@ -8349,35 +8361,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_FLAWIZAMON] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 84,
-        .baseDefense   = 105,
-        .baseSpeed     = 52,
-        .baseSpAttack  = 114,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 60,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 170 : 178,
-        .evYield_SpAttack = 2,
+        .baseHP        = 76,
+        .baseAttack    = 63,
+        .baseDefense   = 70,
+        .baseSpeed     = 77,
+        .baseSpAttack  = 98,
+        .baseSpDefense = 82,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_PSYCHIC),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_SpAttack  = 3,
+        .evYield_SpDefense = 1,
         .itemRare = ITEM_DEEP_SEA_SCALE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_HYDRATION },
-        .bodyColor = BODY_COLOR_PINK,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Flawizamon"),
         .cryId = CRY_FLAWIZAMON,
         .natDexNum = NATIONAL_DEX_FLAWIZAMON,
-        .categoryName = _("South Sea"),
-        .height = 18,
-        .weight = 226,
+        .categoryName = _("Fire Wizard"),
+        .height = 17,
+        .weight = 402,
         .description = COMPOUND_STRING(
-            "A Flawizamon siphons the body fluids of prey\n"
-            "through its thin, tubular mouth. Its light\n"
-            "pink body color turns vivid when it\n"
-            "finishes feeding."),
+            "Unlike the shy Wizardmon, FlameWizardmon\n"
+            "is a very confident Digimon. It wields\n"
+            "two matchstick-like canes which lets its\n"
+            "fire magic reach its true potential."),
         .pokemonScale = 278,
         .pokemonOffset = 5,
         .trainerScale = 256,
@@ -8404,36 +8418,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_FLARIZAMON
     [SPECIES_FLARIZAMON] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 90,
-        .baseDefense   = 130,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_WATER, TYPE_ROCK),
-        .catchRate = 25,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 170 : 198,
-        .evYield_HP = 1,
-        .evYield_Defense = 1,
+        .baseHP        = 99,
+        .baseAttack    = 72,
+        .baseDefense   = 70,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 69,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_DRAGON),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 2,
+        .evYield_SpAttack  = 2,
         .itemRare = ITEM_DEEP_SEA_SCALE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_2),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_ROCK_HEAD, ABILITY_STURDY },
-        .bodyColor = BODY_COLOR_GRAY,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Flarizamon"),
         .cryId = CRY_FLARIZAMON,
         .natDexNum = NATIONAL_DEX_FLARIZAMON,
-        .categoryName = _("Longevity"),
-        .height = 10,
-        .weight = 234,
+        .categoryName = _("Fire Lizard"),
+        .height = 32,
+        .weight = 964,
         .description = COMPOUND_STRING(
-            "A Pokémon that was once believed to have\n"
-            "been extinct. The species has not changed\n"
-            "its form for 100 million years. It walks on\n"
-            "the seafloor using its pectoral fins."),
+            "The flames that make up its body are formed\n"
+            "from its own skin combusting. To keep up\n"
+            "with the constant self damage, it has\n"
+            "developed incredibly regenerative skin."),
         .pokemonScale = 316,
         .pokemonOffset = 7,
         .trainerScale = 256,
@@ -8464,35 +8479,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_FLYBEEMON
     [SPECIES_FLYBEEMON] =
     {
-        .baseHP        = 43,
-        .baseAttack    = 30,
-        .baseDefense   = 55,
-        .baseSpeed     = 97,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 225,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 116 : 110,
-        .evYield_Speed = 1,
+        .baseHP        = 64,
+        .baseAttack    = 75,
+        .baseDefense   = 77,
+        .baseSpeed     = 93,
+        .baseSpAttack  = 73,
+        .baseSpDefense = 67,
+        .types = MON_TYPES(TYPE_BUG, TYPE_STEEL),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense   = 1,
+        .evYield_Speed     = 3,
         .itemCommon = ITEM_HEART_SCALE,
-        .genderRatio = PERCENT_FEMALE(75),
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FAST,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_HYDRATION },
-        .bodyColor = BODY_COLOR_PINK,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Flybeemon"),
         .cryId = CRY_FLYBEEMON,
         .natDexNum = NATIONAL_DEX_FLYBEEMON,
-        .categoryName = _("Rendezvous"),
-        .height = 6,
-        .weight = 87,
+        .categoryName = _("Wasp"),
+        .height = 10,
+        .weight = 392,
         .description = COMPOUND_STRING(
-            "Flybeemon make the branches of Patamon\n"
-            "their nests. There is a custom from long\n"
-            "ago of giving a Flybeemon as a gift to\n"
-            "express one's feelings of love."),
+            "Although it has evolved due to the Digi-Egg\n"
+            "of Knowledge, it is not particularly smart.\n"
+            "When Digimon enter its territory, it will try\n"
+            "to repel even if they are Mega level"),
         .pokemonScale = 371,
         .pokemonOffset = 2,
         .trainerScale = 256,
@@ -8519,35 +8536,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_FLYMON
     [SPECIES_FLYMON] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 75,
-        .baseDefense   = 60,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 30,
-        .types = MON_TYPES(TYPE_DRAGON),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 89,
-        .evYield_Attack = 1,
+        .baseHP        = 67,
+        .baseAttack    = 77,
+        .baseDefense   = 78,
+        .baseSpeed     = 88,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 66,
+        .types = MON_TYPES(TYPE_FLYING, TYPE_BUG),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense   = 2,
+        .evYield_Speed     = 2,
         .itemRare = ITEM_DRAGON_FANG,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON),
         .abilities = { ABILITY_ROCK_HEAD, ABILITY_NONE, ABILITY_SHEER_FORCE },
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Flymon"),
         .cryId = CRY_FLYMON,
         .natDexNum = NATIONAL_DEX_FLYMON,
-        .categoryName = _("Rock Head"),
-        .height = 6,
-        .weight = 421,
+        .categoryName = _("Bee"),
+        .height = 23,
+        .weight = 707,
         .description = COMPOUND_STRING(
-            "Although it is small, this Pokémon is very\n"
-            "powerful because its body is a bundle of\n"
-            "muscles. It launches head-butts with its\n"
-            "ironlike skull."),
+            "Flymons body is protected by a hard shell\n"
+            "that lets it get aggressive in fights.\n"
+            "When it catches an opponent, it will hold\n"
+            "them down with its talons."),
         .pokemonScale = 448,
         .pokemonOffset = 18,
         .trainerScale = 256,
@@ -8568,40 +8587,41 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Flymon)
         .levelUpLearnset = sFlymonLevelUpLearnset,
         .teachableLearnset = sFlymonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_FRIGIMON}),
     },
 
     [SPECIES_FRIGIMON] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 95,
-        .baseDefense   = 100,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_DRAGON),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 147 : 144,
-        .evYield_Defense = 2,
+        .baseHP        = 63,
+        .baseAttack    = 73,
+        .baseDefense   = 71,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 64,
+        .types = MON_TYPES(TYPE_ICE),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 1,
+        .evYield_SpAttack  = 3,
         .itemRare = ITEM_DRAGON_FANG,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON),
         .abilities = { ABILITY_ROCK_HEAD, ABILITY_NONE, ABILITY_OVERCOAT },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Frigimon"),
         .cryId = CRY_FRIGIMON,
         .natDexNum = NATIONAL_DEX_FRIGIMON,
-        .categoryName = _("Endurance"),
-        .height = 11,
-        .weight = 1105,
+        .categoryName = _("Snowman"),
+        .height = 20,
+        .weight = 578,
         .description = COMPOUND_STRING(
-            "It hardly eats while it awaits evolution.\n"
-            "It becomes hardier by enduring hunger.\n"
-            "Its shell peels off the instant it begins\n"
-            "to evolve."),
+            "Many mistake Frigimons to be cold hearted\n"
+            "Digimon however it is actually incredibly\n"
+            "loving, willing to look after any Digimon\n"
+            "that crosses its path."),
         .pokemonScale = 311,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -8622,46 +8642,41 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Frigimon)
         .levelUpLearnset = sFrigimonLevelUpLearnset,
         .teachableLearnset = sFrigimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_FROGMON}),
     },
 
     [SPECIES_FROGMON] =
     {
-        .baseHP        = 95,
-        .baseAttack    = 135,
-        .baseDefense   = 80,
-        .baseSpeed     = 100,
-        .baseSpAttack  = 110,
-        .baseSpDefense = 80,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_FLYING),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 300,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 270,
-    #else
-        .expYield = 218,
-    #endif
-        .evYield_Attack = 3,
+        .baseHP        = 72,
+        .baseAttack    = 89,
+        .baseDefense   = 72,
+        .baseSpeed     = 77,
+        .baseSpAttack  = 73,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_WATER),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 3,
+        .evYield_Speed     = 1,
         .itemRare = ITEM_DRAGON_FANG,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON),
         .abilities = { ABILITY_INTIMIDATE, ABILITY_NONE, ABILITY_MOXIE },
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Frogmon"),
         .cryId = CRY_FROGMON,
         .natDexNum = NATIONAL_DEX_FROGMON,
-        .categoryName = _("Dragon"),
-        .height = 15,
-        .weight = 1026,
+        .categoryName = _("Frog"),
+        .height = 14,
+        .weight = 492,
         .description = COMPOUND_STRING(
-            "After many long years, its cellular\n"
-            "structure underwent a sudden mutation to\n"
-            "grow wings. When angered, it loses all\n"
-            "thought and rampages out of control."),
+            "Not much is known about Frogmon as they\n"
+            "have spent most of their existence in\n"
+            "hiding. The wheels on its back let it\n"
+            "fly for a considerable amount of time."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -8704,7 +8719,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON),
         .abilities = { ABILITY_AERILATE, ABILITY_AERILATE, ABILITY_AERILATE },
         .bodyColor = BODY_COLOR_BLUE,
@@ -8749,35 +8764,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_FUGAMON
     [SPECIES_FUGAMON] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 55,
-        .baseDefense   = 80,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_STEEL, TYPE_PSYCHIC),
-        .catchRate = 3,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 103,
-        .evYield_Defense = 1,
+        .baseHP        = 73,
+        .baseAttack    = 88,
+        .baseDefense   = 72,
+        .baseSpeed     = 68,
+        .baseSpAttack  = 77,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_FIGHTING),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 2,
+        .evYield_SpAttack  = 2,
         .itemRare = ITEM_METAL_COAT,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_CLEAR_BODY, ABILITY_NONE, ABILITY_LIGHT_METAL },
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Fugamon"),
         .cryId = CRY_FUGAMON,
         .natDexNum = NATIONAL_DEX_FUGAMON,
-        .categoryName = _("Iron Ball"),
-        .height = 6,
+        .categoryName = _("Oni"),
+        .height = 27,
         .weight = 952,
         .description = COMPOUND_STRING(
-            "When Fugamon gather in a swarm, they move\n"
-            "in perfect unison as if they were but one\n"
-            "Pokémon. They communicate with each other\n"
-            "using brain waves."),
+            "Fugamon comes from the same family as\n"
+            "Ogremon however it appears to have been\n"
+            "formed from data based on eastern Oni. Its\n"
+            "punches let it fire out small hurricanes."),
         .pokemonScale = 414,
         .pokemonOffset = -1,
         .trainerScale = 256,
@@ -8800,40 +8817,41 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sFugamonLevelUpLearnset,
         .teachableLearnset = sFugamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_GANEMON}),
     },
 
     [SPECIES_GANEMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 75,
-        .baseDefense   = 100,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 80,
-        .types = MON_TYPES(TYPE_STEEL, TYPE_PSYCHIC),
-        .catchRate = 3,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 147 : 153,
-        .evYield_Defense = 2,
+        .baseHP        = 94,
+        .baseAttack    = 69,
+        .baseDefense   = 80,
+        .baseSpeed     = 68,
+        .baseSpAttack  = 72,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_STEEL),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 2,
+        .evYield_Defense   = 2,
         .itemRare = ITEM_METAL_COAT,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_CLEAR_BODY, ABILITY_NONE, ABILITY_LIGHT_METAL },
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Ganemon"),
         .cryId = CRY_GANEMON,
         .natDexNum = NATIONAL_DEX_GANEMON,
-        .categoryName = _("Iron Claw"),
-        .height = 12,
-        .weight = 2025,
+        .categoryName = _("Yen"),
+        .height = 18,
+        .weight = 45,
         .description = COMPOUND_STRING(
-            "The claws tipping its arms pack the\n"
-            "destructive power to tear through thick\n"
-            "iron sheets as if they were silk. It flies\n"
-            "at over 60 miles per hour."),
+            "Although initially small in size, Ganemon\n"
+            "grows larger and stronger the more money it\n"
+            "eats. It is able to detect Zenimon with\n"
+            "money letting it grow its personal wealth."),
         .pokemonScale = 256,
         .pokemonOffset = 6,
         .trainerScale = 256,
@@ -8854,46 +8872,40 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Ganemon)
         .levelUpLearnset = sGanemonLevelUpLearnset,
         .teachableLearnset = sGanemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_GAOGAMON}),
     },
 
     [SPECIES_GAOGAMON] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 135,
-        .baseDefense   = 130,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 90,
-        .types = MON_TYPES(TYPE_STEEL, TYPE_PSYCHIC),
-        .catchRate = 3,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 300,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 270,
-    #else
-        .expYield = 210,
-    #endif
-        .evYield_Defense = 3,
+        .baseHP        = 76,
+        .baseAttack    = 91,
+        .baseDefense   = 75,
+        .baseSpeed     = 78,
+        .baseSpAttack  = 69,
+        .baseSpDefense = 66,
+        .types = MON_TYPES(TYPE_FIGHTING),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 4,
         .itemRare = ITEM_METAL_COAT,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_CLEAR_BODY, ABILITY_NONE, ABILITY_LIGHT_METAL },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Gaogamon"),
         .cryId = CRY_GAOGAMON,
         .natDexNum = NATIONAL_DEX_GAOGAMON,
-        .categoryName = _("Iron Leg"),
-        .height = 16,
-        .weight = 5500,
+        .categoryName = _("Akita Inu"),
+        .height = 38,
+        .weight = 744,
         .description = COMPOUND_STRING(
-            "Gaogamon has four brains that are joined\n"
-            "by a complex neural network. As a result of\n"
-            "integration, this Pokémon is smarter than\n"
-            "a supercomputer."),
+            "Although it is now on four legs, it still\n"
+            "has the capabilities to fight like a martial\n"
+            "artist by standing on its rear legs like a\n"
+            "bear."),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 447,
@@ -8916,6 +8928,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sGaogamonTeachableLearnset,
         .formSpeciesIdTable = sGaogamonFormSpeciesIdTable,
         .formChangeTable = sGaogamonFormChangeTable,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_BLGAOGAMON}), // DARK DIGITRON
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -8935,7 +8948,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
         .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS },
         .bodyColor = BODY_COLOR_BLUE,
@@ -8980,41 +8993,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_GARGOMON
     [SPECIES_GARGOMON] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 100,
-        .baseDefense   = 200,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_ROCK),
-        .catchRate = 3,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 290,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 261,
-    #else
-        .expYield = 217,
-    #endif
-        .evYield_Defense = 3,
+        .baseHP        = 89,
+        .baseAttack    = 74,
+        .baseDefense   = 75,
+        .baseSpeed     = 72,
+        .baseSpAttack  = 78,
+        .baseSpDefense = 73,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 2,
+        .evYield_SpAttack  = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 80,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_CLEAR_BODY, ABILITY_NONE, ABILITY_STURDY },
-        .bodyColor = BODY_COLOR_BROWN,
+        .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
         .speciesName = _("Gargomon"),
         .cryId = CRY_GARGOMON,
         .natDexNum = NATIONAL_DEX_GARGOMON,
-        .categoryName = _("Rock Peak"),
-        .height = 17,
-        .weight = 2300,
+        .categoryName = _("Dog Rabbit"),
+        .height = 50,
+        .weight = 762,
         .description = COMPOUND_STRING(
-            "A Pokémon that is made entirely of rocks\n"
-            "and boulders. If parts of its body chip off\n"
-            "in battle, Gargomon repairs itself by\n"
-            "adding new rocks."),
+            "Despite its large size, Gargomon is a pretty\n"
+            "nimble Digimon. Combined with its incredible\n"
+            "aim, it can quickly take down opponents. It\n"
+            "cherishes its jeans."),
         .pokemonScale = 256,
         .pokemonOffset = 2,
         .trainerScale = 309,
@@ -9036,46 +9045,43 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .isLegendary = TRUE,
         .levelUpLearnset = sGargomonLevelUpLearnset,
         .teachableLearnset = sGargomonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_BLGARGOMON}), // DARK DIGITRON
     },
 #endif //P_FAMILY_GARGOMON
 
 #if P_FAMILY_GARGOYLMON
     [SPECIES_GARGOYLMON] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 50,
-        .baseDefense   = 100,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 200,
-        .types = MON_TYPES(TYPE_ICE),
-        .catchRate = 3,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 290,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 261,
-    #else
-        .expYield = 216,
-    #endif
-        .evYield_SpDefense = 3,
+        .baseHP        = 70,
+        .baseAttack    = 67,
+        .baseDefense   = 70,
+        .baseSpeed     = 77,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_LIGHT, TYPE_DARK),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_SpAttack  = 2,
+        .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 80,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_CLEAR_BODY, ABILITY_NONE, ABILITY_ICE_BODY },
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Gargoylmon"),
         .cryId = CRY_GARGOYLMON,
         .natDexNum = NATIONAL_DEX_GARGOYLMON,
-        .categoryName = _("Iceberg"),
-        .height = 18,
-        .weight = 1750,
+        .categoryName = _("Holy Demon"),
+        .height = 93,
+        .weight = 1461,
         .description = COMPOUND_STRING(
-            "Its entire body is made of Antarctic ice.\n"
-            "After extensive studies, researchers\n"
-            "believe the ice was formed during an\n"
-            "ice age."),
+            "Originally a Demon Digimon, it has suppressed\n"
+            "its own powers giving it greater control over\n"
+            "its urges. Gargoylemon is often used as a\n"
+            "familiar by other Angel Digimon."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 301,
@@ -9103,41 +9109,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_GARURUMON
     [SPECIES_GARURUMON] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 75,
-        .baseDefense   = 150,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 75,
-        .baseSpDefense = 150,
-        .types = MON_TYPES(TYPE_STEEL),
-        .catchRate = 3,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 290,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 261,
-    #else
-        .expYield = 215,
-    #endif
-        .evYield_Defense = 2,
-        .evYield_SpDefense = 1,
+        .baseHP        = 72,
+        .baseAttack    = 76,
+        .baseDefense   = 73,
+        .baseSpeed     = 94,
+        .baseSpAttack  = 76,
+        .baseSpDefense = 73,
+        .types = MON_TYPES(TYPE_ICE),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 1,
+        .evYield_Speed     = 2,
+        .evYield_SpAttack  = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 80,
         .friendship = 35,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_CLEAR_BODY, ABILITY_NONE, ABILITY_LIGHT_METAL },
-        .bodyColor = BODY_COLOR_GRAY,
+        .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Garurumon"),
         .cryId = CRY_GARURUMON,
         .natDexNum = NATIONAL_DEX_GARURUMON,
-        .categoryName = _("Iron"),
-        .height = 19,
-        .weight = 2050,
+        .categoryName = _("Canine"),
+        .height = 56,
+        .weight = 621,
         .description = COMPOUND_STRING(
-            "Its body is harder than any other kind of\n"
-            "metal. The body metal is composed of a\n"
-            "mysterious substance. Not only is it hard,\n"
-            "it shrinks and stretches flexibly."),
+            "Garurumon is both a very strong Digimon and\n"
+            "very intelligent Digimon making is very\n"
+            "fearsome to fight against. When fighting, it\n"
+            "can also use its sharp shoulders to attack."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 359,
@@ -9159,46 +9161,45 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .isLegendary = TRUE,
         .levelUpLearnset = sGarurumonLevelUpLearnset,
         .teachableLearnset = sGarurumonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_BLGARURMON}, // DARK DIGITRON
+                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_GARURUMON_X}), // X ANTIBODY
     },
 #endif //P_FAMILY_GARURUMON
 
 #if P_FAMILY_GARURUMON_X
     [SPECIES_GARURUMON_X] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 80,
-        .baseDefense   = 90,
-        .baseSpeed     = 110,
-        .baseSpAttack  = 110,
-        .baseSpDefense = 130,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_PSYCHIC),
-        .catchRate = 3,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 300,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 270,
-    #else
-        .expYield = 211,
-    #endif
-        .evYield_SpDefense = 3,
-        .genderRatio = MON_FEMALE,
+        .baseHP        = 70,
+        .baseAttack    = 79,
+        .baseDefense   = 77,
+        .baseSpeed     = 92,
+        .baseSpAttack  = 76,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_ICE),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 1,
+        .evYield_Defense   = 1,
+        .evYield_Speed     = 2,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 90,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_RED,
+        .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Garurumon"),
         .cryId = CRY_GARURUMON_X,
         .natDexNum = NATIONAL_DEX_GARURUMON_X,
-        .categoryName = _("Eon"),
-        .height = 14,
-        .weight = 400,
+        .categoryName = _("X Antibody"),
+        .height = 60,
+        .weight = 691,
         .description = COMPOUND_STRING(
-            "They make a small herd of only several\n"
-            "members. They rarely make contact with\n"
-            "people or other Pokémon. They disappear\n"
-            "if they sense enemies."),
+            "Very few Digimon are willing to fight\n"
+            "Garurumon X as it has honed its fighting\n"
+            "capabilities down to an art. Its hard fur\n"
+            "provides excellent defense as well."),
         .pokemonScale = 304,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -9238,10 +9239,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .catchRate = 3,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 350 : 315,
         .evYield_SpDefense = 3,
-        .genderRatio = MON_FEMALE,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 90,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE },
         .bodyColor = BODY_COLOR_PURPLE,
@@ -9288,40 +9289,35 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_GATOMON
     [SPECIES_GATOMON] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 90,
-        .baseDefense   = 80,
-        .baseSpeed     = 110,
-        .baseSpAttack  = 130,
-        .baseSpDefense = 110,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_PSYCHIC),
-        .catchRate = 3,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 300,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 270,
-    #else
-        .expYield = 211,
-    #endif
-        .evYield_SpAttack = 3,
-        .genderRatio = MON_MALE,
+        .baseHP        = 66,
+        .baseAttack    = 67,
+        .baseDefense   = 62,
+        .baseSpeed     = 89,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 68,
+        .types = MON_TYPES(TYPE_LIGHT),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed     = 4,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 90,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Gatomon"),
         .cryId = CRY_GATOMON,
         .natDexNum = NATIONAL_DEX_GATOMON,
-        .categoryName = _("Eon"),
-        .height = 20,
-        .weight = 600,
+        .categoryName = _("Holy Cat"),
+        .height = 6,
+        .weight = 107,
         .description = COMPOUND_STRING(
-            "Even in hiding, it can detect the locations\n"
-            "of others and sense their emotions since\n"
-            "it has telepathy. Its intelligence allows\n"
-            "it to understand human languages."),
+            "Its small size is highly misleading as it\n"
+            "packs a pretty strong punch. Its far\n"
+            "stronger than a rookie and only mildly\n"
+            "weaker than the average champion."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 294,
@@ -9346,6 +9342,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sGatomonTeachableLearnset,
         .formSpeciesIdTable = sGatomonFormSpeciesIdTable,
         .formChangeTable = sGatomonFormChangeTable,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_CHOUFLYMON}, // KNOWLEDGE EGG
+                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_BLKGATOMON}, // DARK DIGITRON
+                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_GATOMON_X}), // X ANTIBODY
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -9361,10 +9360,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .catchRate = 3,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 350 : 315,
         .evYield_SpAttack = 3,
-        .genderRatio = MON_MALE,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 90,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_LEVITATE, ABILITY_LEVITATE, ABILITY_LEVITATE },
         .bodyColor = BODY_COLOR_PURPLE,
@@ -9411,40 +9410,35 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_GATOMON_X
     [SPECIES_GATOMON_X] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 100,
-        .baseDefense   = 90,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 150,
-        .baseSpDefense = 140,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 3,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 335,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 302,
-    #else
-        .expYield = 218,
-    #endif
-        .evYield_SpAttack = 3,
+        .baseHP        = 66,
+        .baseAttack    = 65,
+        .baseDefense   = 62,
+        .baseSpeed     = 87,
+        .baseSpAttack  = 74,
+        .baseSpDefense = 72,
+        .types = MON_TYPES(TYPE_LIGHT),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed     = 4,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 0,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_DRIZZLE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLUE,
+        .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Gatomon"),
         .cryId = CRY_GATOMON_X,
         .natDexNum = NATIONAL_DEX_GATOMON_X,
-        .categoryName = _("Sea Basin"),
-        .height = 45,
-        .weight = 3520,
+        .categoryName = _("X Antibody"),
+        .height = 4,
+        .weight = 87,
         .description = COMPOUND_STRING(
-            "Gatomon_x has appeared in mythology as the\n"
-            "creator of the sea. After long years of\n"
-            "feuding with Gekomon, it took to sleep at\n"
-            "the bottom of the sea."),
+            "To draw out more Holy power, Gatomon X\n"
+            "cuts away a lot of redundant parts of\n"
+            "normal Gatomon. This leaves it much\n"
+            "smaller and a bit more mischevious."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 614,
@@ -9486,7 +9480,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 0,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_PRIMORDIAL_SEA, ABILITY_PRIMORDIAL_SEA },
         .bodyColor = BODY_COLOR_BLUE,
@@ -9532,40 +9526,37 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_GEKOMON
     [SPECIES_GEKOMON] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 150,
-        .baseDefense   = 140,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 90,
-        .types = MON_TYPES(TYPE_GROUND),
-        .catchRate = 3,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 335,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 302,
-    #else
-        .expYield = 218,
-    #endif
-        .evYield_Attack = 3,
+        .baseHP        = 73,
+        .baseAttack    = 66,
+        .baseDefense   = 69,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 92,
+        .baseSpDefense = 76,
+        .types = MON_TYPES(TYPE_WATER),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed     = 1,
+        .evYield_SpAttack  = 2,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 0,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_DROUGHT, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_RED,
+        .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Gekomon"),
         .cryId = CRY_GEKOMON,
         .natDexNum = NATIONAL_DEX_GEKOMON,
-        .categoryName = _("Continent"),
-        .height = 35,
-        .weight = 9500,
+        .categoryName = _("Gecko"),
+        .height = 9,
+        .weight = 284,
         .description = COMPOUND_STRING(
-            "Gekomon has appeared in mythology as the\n"
-            "creator of the land. It sleeps in magma\n"
-            "underground and is said to make volcanoes\n"
-            "erupt on awakening."),
+            "Gekomon is renowned by musicians of the\n"
+            "Digital world as it is one of few species\n"
+            "born from music composition software giving\n"
+            "it a natural edge when making music."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 515,
@@ -9607,7 +9598,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 0,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_DESOLATE_LAND, ABILITY_DESOLATE_LAND },
         .bodyColor = BODY_COLOR_RED,
@@ -9653,41 +9644,36 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_GEOGREYMON
     [SPECIES_GEOGREYMON] =
     {
-        .baseHP        = 105,
-        .baseAttack    = 150,
-        .baseDefense   = 90,
-        .baseSpeed     = 95,
-        .baseSpAttack  = 150,
-        .baseSpDefense = 90,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_FLYING),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 340,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 306,
-    #else
-        .expYield = 220,
-    #endif
-        .evYield_Attack = 2,
-        .evYield_SpAttack = 1,
+        .baseHP        = 74,
+        .baseAttack    = 94,
+        .baseDefense   = 76,
+        .baseSpeed     = 73,
+        .baseSpAttack  = 79,
+        .baseSpDefense = 73,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_DRAGON),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 2,
+        .evYield_SpAttack  = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 0,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_AIR_LOCK, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
+        .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Geogreymon"),
         .cryId = CRY_GEOGREYMON,
         .natDexNum = NATIONAL_DEX_GEOGREYMON,
-        .categoryName = _("Sky High"),
-        .height = 70,
-        .weight = 2065,
+        .categoryName = _("Dinosaur"),
+        .height = 78,
+        .weight = 1102,
         .description = COMPOUND_STRING(
-            "A Pokémon that flies endlessly in the\n"
-            "ozone layer. It is said it would descend\n"
-            "to the ground if Gatomon_x and Gekomon\n"
-            "were to fight."),
+            "GeoGreymon is a subspecies of Greymon that\n"
+            "has developed further for physical fighting.\n"
+            "The sharp points on its body have grown even\n"
+            "more and it has a better build for moving."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 448,
@@ -9732,7 +9718,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 0,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_DELTA_STREAM, ABILITY_DELTA_STREAM, ABILITY_DELTA_STREAM },
         .bodyColor = BODY_COLOR_GREEN,
@@ -9779,42 +9765,38 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_GEREMON
     [SPECIES_GEREMON] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 100,
-        .baseDefense   = 100,
-        .baseSpeed     = 100,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_STEEL, TYPE_PSYCHIC),
-        .catchRate = 3,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 300,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 270,
-    #else
-        .expYield = 215,
-    #endif
-        .evYield_HP = 3,
+        .baseHP        = 84,
+        .baseAttack    = 64,
+        .baseDefense   = 65,
+        .baseSpeed     = 62,
+        .baseSpAttack  = 73,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_BUG),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 2,
+        .evYield_SpAttack  = 2,
         .itemCommon = ITEM_STAR_PIECE,
         .itemRare = ITEM_STAR_PIECE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 100,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_SERENE_GRACE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Geremon"),
         .cryId = CRY_GEREMON,
         .natDexNum = NATIONAL_DEX_GEREMON,
-        .categoryName = _("Wish"),
-        .height = 3,
-        .weight = 11,
+        .categoryName = _("Slug"),
+        .height = 10,
+        .weight = 273,
         .description = COMPOUND_STRING(
-            "Geremon is said to make wishes come true.\n"
-            "While it sleeps, a tough crystalline shell\n"
-            "envelops the body to protect it from\n"
-            "enemies."),
+            "A Tamer who has a Geremon is usually a bad\n"
+            "Tamer as Geremon are only produced from\n"
+            "negligent care. Its a frustratingly weak\n"
+            "Digimon that never lets up."),
         .pokemonScale = 608,
         .pokemonOffset = -8,
         .trainerScale = 256,
@@ -9851,32 +9833,36 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 
     [SPECIES_GESOMON_NORMAL] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 150,
-        .baseDefense   = 50,
-        .baseSpeed     = 150,
-        .baseSpAttack  = 150,
-        .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_PSYCHIC),
-        .catchRate = 3,
-        .expYield = GESOMON_EXP_YIELD,
-        .evYield_Attack = 1,
-        .evYield_Speed = 1,
-        .evYield_SpAttack = 1,
+        .baseHP        = 73,
+        .baseAttack    = 90,
+        .baseDefense   = 74,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 69,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_WATER),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack    = 2,
+        .evYield_Speed     = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 0,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_RED,
+        .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Gesomon"),
         .cryId = CRY_GESOMON,
         .natDexNum = NATIONAL_DEX_GESOMON,
-        .categoryName = _("DNA"),
-        .height = 17,
-        .weight = 608,
-        .description = gGesomonNormalPokedexText,
+        .categoryName = _("Squid"),
+        .height = 30,
+        .weight = 836,
+        .description = COMPOUND_STRING(
+            "Gesomon is highly intelligent, often\n"
+            "attending to its territory. It rarely\n"
+            "attacks Digimon outside its territory\n"
+            "but anything that enters is obliterated."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 290,
@@ -9918,7 +9904,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 0,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
@@ -9970,7 +9956,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 0,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
@@ -10021,7 +10007,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 0,
-        .growthRate = GROWTH_SLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
         .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,

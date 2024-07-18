@@ -363,12 +363,12 @@ struct SpeciesInfo /*0x8C*/
  /* 0x08 */ u8 catchRate;
  /* 0x09 */ u8 padding1;
  /* 0x0A */ u16 expYield; // expYield was changed from u8 to u16 for the new Exp System.
- /* 0x0C */ u16 evYield_HP:2;
-            u16 evYield_Attack:2;
-            u16 evYield_Defense:2;
-            u16 evYield_Speed:2;
- /* 0x0D */ u16 evYield_SpAttack:2;
-            u16 evYield_SpDefense:2;
+ /* 0x0C */ u16 evYield_HP:5;
+            u16 evYield_Attack:5;
+            u16 evYield_Defense:5;
+            u16 evYield_Speed:5;
+ /* 0x0D */ u16 evYield_SpAttack:5;
+            u16 evYield_SpDefense:5;
             u16 padding2:4;
  /* 0x0E */ u16 itemCommon;
  /* 0x10 */ u16 itemRare;
