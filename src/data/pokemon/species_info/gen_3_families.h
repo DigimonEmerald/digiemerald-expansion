@@ -995,7 +995,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconPalIndex = 0,
         FOOTPRINT(Toyagumon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sToyagumonGalarianLevelUpLearnset,
+        .levelUpLearnset = sToyagumonLevelUpLearnset,
         .teachableLearnset = sToyagumonGalarianTeachableLearnset,
         .formSpeciesIdTable = sToyagumonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_TSUKAIMON_GALARIAN}),
@@ -1050,7 +1050,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconPalIndex = 0,
         FOOTPRINT(Tsukaimon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sTsukaimonGalarianLevelUpLearnset,
+        .levelUpLearnset = sTsukaimonLevelUpLearnset,
         .teachableLearnset = sTsukaimonGalarianTeachableLearnset,
         .formSpeciesIdTable = sTsukaimonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL_NIGHT, 35, SPECIES_OBSTAGOON}),
@@ -1104,7 +1104,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconSprite = gMonIcon_Obstagoon,
         .iconPalIndex = 0,
         FOOTPRINT(Obstagoon)
-        .levelUpLearnset = sObstagoonLevelUpLearnset,
+        .levelUpLearnset = sIceGobiMonLevelUpLearnset,
         .teachableLearnset = sObstagoonTeachableLearnset,
     },
 #endif //P_GALARIAN_FORMS
@@ -9342,7 +9342,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sGatomonTeachableLearnset,
         .formSpeciesIdTable = sGatomonFormSpeciesIdTable,
         .formChangeTable = sGatomonFormChangeTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_CHOUFLYMON}, // KNOWLEDGE EGG
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_CHOUMON}, // KNOWLEDGE EGG
                                 {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_BLKGATOMON}, // DARK DIGITRON
                                 {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_GATOMON_X}), // X ANTIBODY
     },

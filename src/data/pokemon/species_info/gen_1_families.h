@@ -1798,7 +1798,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 2,
         FOOTPRINT(Choromon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sChoromonAlolanLevelUpLearnset,
+        .levelUpLearnset = sChoromonLevelUpLearnset,
         .teachableLearnset = sChoromonAlolanTeachableLearnset,
         .formSpeciesIdTable = sChoromonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL_NIGHT, 20, SPECIES_MOKUMON_ALOLAN},
@@ -1851,7 +1851,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 2,
         FOOTPRINT(Mokumon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sMokumonAlolanLevelUpLearnset,
+        .levelUpLearnset = sMokumonLevelUpLearnset,
         .teachableLearnset = sMokumonAlolanTeachableLearnset,
         .formSpeciesIdTable = sMokumonFormSpeciesIdTable,
     },
@@ -1903,7 +1903,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Mokumon)
         .isTotem = TRUE,
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sMokumonAlolanLevelUpLearnset,
+        .levelUpLearnset = sChoromonLevelUpLearnset,
         .teachableLearnset = sMokumonAlolanTeachableLearnset,
         .formSpeciesIdTable = sMokumonFormSpeciesIdTable,
     },
@@ -3311,7 +3311,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 2,
         FOOTPRINT(Pichimon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sPichimonAlolanLevelUpLearnset,
+        .levelUpLearnset = sChoromonLevelUpLearnset,
         .teachableLearnset = sPichimonAlolanTeachableLearnset,
         .formSpeciesIdTable = sPichimonFormSpeciesIdTable,
     },
@@ -3487,7 +3487,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         FOOTPRINT(Popomon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sPopomonAlolanLevelUpLearnset,
+        .levelUpLearnset = sChoromonLevelUpLearnset,
         .teachableLearnset = sPopomonAlolanTeachableLearnset,
         .formSpeciesIdTable = sPopomonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_ICE_STONE, SPECIES_POYOMON_ALOLAN}),
@@ -3543,7 +3543,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         FOOTPRINT(Poyomon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sPoyomonAlolanLevelUpLearnset,
+        .levelUpLearnset = sChoromonLevelUpLearnset,
         .teachableLearnset = sPoyomonAlolanTeachableLearnset,
         .formSpeciesIdTable = sPoyomonFormSpeciesIdTable,
     },
@@ -4228,7 +4228,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 2,
         FOOTPRINT(Relemon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sRelemonAlolanLevelUpLearnset,
+        .levelUpLearnset = sRelemonLevelUpLearnset,
         .teachableLearnset = sRelemonAlolanTeachableLearnset,
         .formSpeciesIdTable = sRelemonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_ICE_STONE, SPECIES_SAKUMON_ALOLAN}),
@@ -4285,7 +4285,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 2,
         FOOTPRINT(Sakumon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sSakumonAlolanLevelUpLearnset,
+        .levelUpLearnset = sSakumonLevelUpLearnset,
         .teachableLearnset = sSakumonAlolanTeachableLearnset,
         .formSpeciesIdTable = sSakumonFormSpeciesIdTable,
     },
@@ -4528,7 +4528,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Icebotamon,
         .iconPalIndex = 2,
         FOOTPRINT(Icebotamon)
-        .levelUpLearnset = sIcebotamonLevelUpLearnset,
+        .levelUpLearnset = sIceBotamonLevelUpLearnset,
         .teachableLearnset = sIcebotamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ATTACK, 7, SPECIES_TSUNOMON},
                                 {EVO_SPEED, 7, SPECIES_NYAROMON},
@@ -5325,7 +5325,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 2,
         FOOTPRINT(Budmon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sBudmonAlolanLevelUpLearnset,
+        .levelUpLearnset = sBudmonLevelUpLearnset,
         .teachableLearnset = sBudmonAlolanTeachableLearnset,
         .formSpeciesIdTable = sBudmonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_BUKAMON_ALOLAN}),
@@ -5382,7 +5382,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 2,
         FOOTPRINT(Bukamon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sBukamonAlolanLevelUpLearnset,
+        .levelUpLearnset = sBukamonLevelUpLearnset,
         .teachableLearnset = sBukamonAlolanTeachableLearnset,
         .formSpeciesIdTable = sBukamonFormSpeciesIdTable,
     },
@@ -5561,7 +5561,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 2,
         FOOTPRINT(Calumon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sCalumonAlolanLevelUpLearnset,
+        .levelUpLearnset = sCalumonLevelUpLearnset,
         .teachableLearnset = sCalumonAlolanTeachableLearnset,
         .formSpeciesIdTable = sCalumonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_CHAPMON_ALOLAN}),
@@ -5617,7 +5617,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 2,
         FOOTPRINT(Chapmon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sChapmonAlolanLevelUpLearnset,
+        .levelUpLearnset = sChapmonLevelUpLearnset,
         .teachableLearnset = sChapmonAlolanTeachableLearnset,
         .formSpeciesIdTable = sChapmonFormSpeciesIdTable,
     },
@@ -5673,7 +5673,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         FOOTPRINT(Calumon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sCalumonGalarianLevelUpLearnset,
+        .levelUpLearnset = sCalumonLevelUpLearnset,
         .teachableLearnset = sCalumonGalarianTeachableLearnset,
         .formSpeciesIdTable = sCalumonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PERRSERKER}),
@@ -5726,7 +5726,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Perrserker,
         .iconPalIndex = 2,
         FOOTPRINT(Perrserker)
-        .levelUpLearnset = sPerrserkerLevelUpLearnset,
+        .levelUpLearnset = sCalumonLevelUpLearnset,
         .teachableLearnset = sPerrserkerTeachableLearnset,
     },
 #endif //P_GALARIAN_FORMS
@@ -6073,7 +6073,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Annihilape,
         .iconPalIndex = 0,
         FOOTPRINT(Annihilape)
-        .levelUpLearnset = sAnnihilapeLevelUpLearnset,
+        .levelUpLearnset = sCalumonLevelUpLearnset,
         .teachableLearnset = sAnnihilapeTeachableLearnset,
     },
 #endif //P_GEN_9_CROSS_EVOS
@@ -6250,7 +6250,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         FOOTPRINT(Frimon)
         .isHisuianForm = TRUE,
-        .levelUpLearnset = sFrimonHisuianLevelUpLearnset,
+        .levelUpLearnset = sFrimonLevelUpLearnset,
         .teachableLearnset = sFrimonHisuianTeachableLearnset,
         .formSpeciesIdTable = sFrimonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_GIGIMON_HISUIAN}),
@@ -6305,7 +6305,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         FOOTPRINT(Gigimon)
         .isHisuianForm = TRUE,
-        .levelUpLearnset = sGigimonHisuianLevelUpLearnset,
+        .levelUpLearnset = sGigimonLevelUpLearnset,
         .teachableLearnset = sGigimonHisuianTeachableLearnset,
         .formSpeciesIdTable = sGigimonFormSpeciesIdTable,
     },
@@ -7603,7 +7603,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 2,
         FOOTPRINT(Monimon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sMonimonAlolanLevelUpLearnset,
+        .levelUpLearnset = sMonimonLevelUpLearnset,
         .teachableLearnset = sMonimonAlolanTeachableLearnset,
         .formSpeciesIdTable = sMonimonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_MOONMON_ALOLAN}),
@@ -7659,7 +7659,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 2,
         FOOTPRINT(Moonmon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sMoonmonAlolanLevelUpLearnset,
+        .levelUpLearnset = sMoonmonLevelUpLearnset,
         .teachableLearnset = sMoonmonAlolanTeachableLearnset,
         .formSpeciesIdTable = sMoonmonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_MOTIMON_ALOLAN},
@@ -7716,7 +7716,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 2,
         FOOTPRINT(Motimon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sMotimonAlolanLevelUpLearnset,
+        .levelUpLearnset = sMotimonLevelUpLearnset,
         .teachableLearnset = sMotimonAlolanTeachableLearnset,
         .formSpeciesIdTable = sMotimonFormSpeciesIdTable,
     },
@@ -7891,7 +7891,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 2,
         FOOTPRINT(Negamon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sNegamonGalarianLevelUpLearnset,
+        .levelUpLearnset = sNegamonLevelUpLearnset,
         .teachableLearnset = sNegamonGalarianTeachableLearnset,
         .formSpeciesIdTable = sNegamonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_NYAROMON_GALARIAN}),
@@ -7946,7 +7946,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 2,
         FOOTPRINT(Nyaromon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sNyaromonGalarianLevelUpLearnset,
+        .levelUpLearnset = sNyaromonLevelUpLearnset,
         .teachableLearnset = sNyaromonGalarianTeachableLearnset,
         .formSpeciesIdTable = sNyaromonFormSpeciesIdTable,
     },
@@ -8241,7 +8241,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         FOOTPRINT(Pagumon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sPagumonGalarianLevelUpLearnset,
+        .levelUpLearnset = sPagumonLevelUpLearnset,
         .teachableLearnset = sPagumonGalarianTeachableLearnset,
         .formSpeciesIdTable = sPagumonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_GALARICA_CUFF, SPECIES_PICKMON_SILVER_GALARIAN},
@@ -8298,7 +8298,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         FOOTPRINT(Pickmon_silver)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sPickmon_silverGalarianLevelUpLearnset,
+        .levelUpLearnset = sPickmon_silverLevelUpLearnset,
         .teachableLearnset = sPickmon_silverGalarianTeachableLearnset,
         .formSpeciesIdTable = sPickmon_silverFormSpeciesIdTable,
     },
@@ -8353,7 +8353,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         FOOTPRINT(Liollmon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sLiollmonGalarianLevelUpLearnset,
+        .levelUpLearnset = sLiollmonLevelUpLearnset,
         .teachableLearnset = sLiollmonGalarianTeachableLearnset,
         .formSpeciesIdTable = sLiollmonFormSpeciesIdTable,
     },
@@ -8532,7 +8532,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Magnezone,
         .iconPalIndex = 0,
         FOOTPRINT(Magnezone)
-        .levelUpLearnset = sMagnezoneLevelUpLearnset,
+        .levelUpLearnset = sCalumonLevelUpLearnset,
         .teachableLearnset = sMagnezoneTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
@@ -8660,7 +8660,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 1,
         FOOTPRINT(Pinamon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sPinamonGalarianLevelUpLearnset,
+        .levelUpLearnset = sPinamonLevelUpLearnset,
         .teachableLearnset = sPinamonGalarianTeachableLearnset,
         .formSpeciesIdTable = sPinamonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_CRITICAL_HITS, 3, SPECIES_SIRFETCHD}),
@@ -8715,7 +8715,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Sirfetchd,
         .iconPalIndex = 1,
         FOOTPRINT(Sirfetchd)
-        .levelUpLearnset = sSirfetchdLevelUpLearnset,
+        .levelUpLearnset = sCalumonLevelUpLearnset,
         .teachableLearnset = sSirfetchdTeachableLearnset,
     },
 #endif //P_GALARIAN_FORMS
@@ -9131,7 +9131,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 1,
         FOOTPRINT(Sakuttomon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sSakuttomonAlolanLevelUpLearnset,
+        .levelUpLearnset = sSakuttomonLevelUpLearnset,
         .teachableLearnset = sSakuttomonAlolanTeachableLearnset,
         .formSpeciesIdTable = sSakuttomonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_SUNMON_ALOLAN}),
@@ -9189,7 +9189,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         FOOTPRINT(Sunmon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sSunmonAlolanLevelUpLearnset,
+        .levelUpLearnset = sSunmonLevelUpLearnset,
         .teachableLearnset = sSunmonAlolanTeachableLearnset,
         .formSpeciesIdTable = sSunmonFormSpeciesIdTable,
     },
@@ -9431,7 +9431,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Torballmon,
         .iconPalIndex = 2,
         FOOTPRINT(Torballmon)
-        .levelUpLearnset = sTorballmonLevelUpLearnset,
+        .levelUpLearnset = sTorBallmonLevelUpLearnset,
         .teachableLearnset = sTorballmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ATTACK, 15, SPECIES_EBIBURGMON},
                                 {EVO_LEVEL, 13, SPECIES_BURGERMON}),
@@ -10286,7 +10286,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         FOOTPRINT(Xiaomon)
         .isHisuianForm = TRUE,
-        .levelUpLearnset = sXiaomonHisuianLevelUpLearnset,
+        .levelUpLearnset = sXiaomonLevelUpLearnset,
         .teachableLearnset = sXiaomonHisuianTeachableLearnset,
         .formSpeciesIdTable = sXiaomonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_YAAMON_HISUIAN}),
@@ -10341,7 +10341,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 1,
         FOOTPRINT(Yaamon)
         .isHisuianForm = TRUE,
-        .levelUpLearnset = sYaamonHisuianLevelUpLearnset,
+        .levelUpLearnset = sYaamonLevelUpLearnset,
         .teachableLearnset = sYaamonHisuianTeachableLearnset,
         .formSpeciesIdTable = sYaamonFormSpeciesIdTable,
     },
@@ -10527,7 +10527,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 1,
         FOOTPRINT(Agumon)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sAgumonAlolanLevelUpLearnset,
+        .levelUpLearnset = sAgumonLevelUpLearnset,
         .teachableLearnset = sAgumonAlolanTeachableLearnset,
         .formSpeciesIdTable = sAgumonFormSpeciesIdTable,
     },
@@ -10695,7 +10695,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 1,
         FOOTPRINT(Agumon_expert)
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sAgumon_expertAlolanLevelUpLearnset,
+        .levelUpLearnset = sAgumon_expertLevelUpLearnset,
         .teachableLearnset = sAgumon_expertAlolanTeachableLearnset,
         .formSpeciesIdTable = sAgumon_expertFormSpeciesIdTable,
     },
@@ -10747,7 +10747,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Agumon_expert)
         .isTotem = TRUE,
         .isAlolanForm = TRUE,
-        .levelUpLearnset = sAgumon_expertAlolanLevelUpLearnset,
+        .levelUpLearnset = sAgumon_expertLevelUpLearnset,
         .teachableLearnset = sAgumon_expertAlolanTeachableLearnset,
         .formSpeciesIdTable = sAgumon_expertFormSpeciesIdTable,
     },
@@ -10864,7 +10864,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Agumon_x,
         .iconPalIndex = 2,
         FOOTPRINT(Agumon_x)
-        .levelUpLearnset = sAgumon_xLevelUpLearnset,
+        .levelUpLearnset = sAgumon_XLevelUpLearnset,
         .teachableLearnset = sAgumon_xTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_BLKAGUMON_X}, //DARK DIGITRON
                                 {EVO_LEVEL, 36, SPECIES_GEOGREYMON}),
@@ -11090,7 +11090,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Lickilicky,
         .iconPalIndex = 1,
         FOOTPRINT(Lickilicky)
-        .levelUpLearnset = sLickilickyLevelUpLearnset,
+        .levelUpLearnset = sArcadiamon_rookieLevelUpLearnset,
         .teachableLearnset = sLickilickyTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
@@ -11276,7 +11276,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 1,
         FOOTPRINT(Armadilmon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sArmadilmonGalarianLevelUpLearnset,
+        .levelUpLearnset = sArmadilmonLevelUpLearnset,
         .teachableLearnset = sArmadilmonGalarianTeachableLearnset,
         .formSpeciesIdTable = sArmadilmonFormSpeciesIdTable,
     },
@@ -11461,7 +11461,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Rhyperior,
         .iconPalIndex = 0,
         FOOTPRINT(Rhyperior)
-        .levelUpLearnset = sRhyperiorLevelUpLearnset,
+        .levelUpLearnset = sArcadiamon_rookieLevelUpLearnset,
         .teachableLearnset = sRhyperiorTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
@@ -11518,7 +11518,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Happiny,
         .iconPalIndex = 0,
         FOOTPRINT(Happiny)
-        .levelUpLearnset = sHappinyLevelUpLearnset,
+        .levelUpLearnset = sArcadiamon_rookieLevelUpLearnset,
         .teachableLearnset = sHappinyTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM_HOLD_DAY, ITEM_OVAL_STONE, SPECIES_BEARMON},
                                 {EVO_ITEM_DAY, ITEM_OVAL_STONE, SPECIES_BEARMON}),
@@ -11749,7 +11749,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Tangrowth,
         .iconPalIndex = 0,
         FOOTPRINT(Tangrowth)
-        .levelUpLearnset = sTangrowthLevelUpLearnset,
+        .levelUpLearnset = sArcadiamon_rookieLevelUpLearnset,
         .teachableLearnset = sTangrowthTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
@@ -12343,7 +12343,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_MimeJr,
         .iconPalIndex = 0,
         FOOTPRINT(MimeJr)
-        .levelUpLearnset = sMimeJrLevelUpLearnset,
+        .levelUpLearnset = sArcadiamon_rookieLevelUpLearnset,
         .teachableLearnset = sMimeJrTeachableLearnset,
         .evolutions = EVOLUTION({EVO_MOVE, MOVE_MIMIC, SPECIES_BULUCOMON},
                                 {EVO_NONE, 0, SPECIES_BULUCOMON_GALARIAN}),
@@ -12454,7 +12454,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         FOOTPRINT(Bulucomon)
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sBulucomonGalarianLevelUpLearnset,
+        .levelUpLearnset = sBulucomonLevelUpLearnset,
         .teachableLearnset = sBulucomonGalarianTeachableLearnset,
         .formSpeciesIdTable = sBulucomonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_MR_RIME}),
@@ -12507,7 +12507,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_MrRime,
         .iconPalIndex = 0,
         FOOTPRINT(MrRime)
-        .levelUpLearnset = sMrRimeLevelUpLearnset,
+        .levelUpLearnset = sArcadiamon_rookieLevelUpLearnset,
         .teachableLearnset = sMrRimeTeachableLearnset,
     },
 #endif //P_GALARIAN_FORMS
@@ -12742,7 +12742,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Kleavor,
         .iconPalIndex = 2,
         FOOTPRINT(Kleavor)
-        .levelUpLearnset = sKleavorLevelUpLearnset,
+        .levelUpLearnset = sArcadiamon_rookieLevelUpLearnset,
         .teachableLearnset = sKleavorTeachableLearnset,
     },
 #endif //P_GEN_8_CROSS_EVOS
@@ -12860,7 +12860,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Samuagumon,
         .iconPalIndex = 2,
         FOOTPRINT(Samuagumon)
-        .levelUpLearnset = sSamuagumonLevelUpLearnset,
+        .levelUpLearnset = sSamuAgumonLevelUpLearnset,
         .teachableLearnset = sSamuagumonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_ARESDRAMON}),
     },
@@ -12919,7 +12919,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Santaagumon,
         .iconPalIndex = 1,
         FOOTPRINT(Santaagumon)
-        .levelUpLearnset = sSantaagumonLevelUpLearnset,
+        .levelUpLearnset = sSantaAgumonLevelUpLearnset,
         .teachableLearnset = sSantaagumonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_CENTARUMON}),
     },
@@ -13039,7 +13039,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Electivire,
         .iconPalIndex = 1,
         FOOTPRINT(Electivire)
-        .levelUpLearnset = sElectivireLevelUpLearnset,
+        .levelUpLearnset = sCandlemonLevelUpLearnset,
         .teachableLearnset = sElectivireTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
@@ -13218,7 +13218,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Magmortar,
         .iconPalIndex = 0,
         FOOTPRINT(Magmortar)
-        .levelUpLearnset = sMagmortarLevelUpLearnset,
+        .levelUpLearnset = sCandlemonLevelUpLearnset,
         .teachableLearnset = sMagmortarTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
@@ -13447,7 +13447,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         FOOTPRINT(Chuumon)
         .isPaldeanForm = TRUE,
-        .levelUpLearnset = sChuumonPaldeanCombatBreedLevelUpLearnset,
+        .levelUpLearnset = sCandlemonLevelUpLearnset,
         .teachableLearnset = sChuumonPaldeanCombatBreedTeachableLearnset,
         .formSpeciesIdTable = sChuumonFormSpeciesIdTable,
     },
@@ -13501,7 +13501,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         FOOTPRINT(Chuumon)
         .isPaldeanForm = TRUE,
-        .levelUpLearnset = sChuumonPaldeanBlazeBreedLevelUpLearnset,
+        .levelUpLearnset = sCandlemonLevelUpLearnset,
         .teachableLearnset = sChuumonPaldeanBlazeBreedTeachableLearnset,
         .formSpeciesIdTable = sChuumonFormSpeciesIdTable,
     },
@@ -13555,7 +13555,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         FOOTPRINT(Chuumon)
         .isPaldeanForm = TRUE,
-        .levelUpLearnset = sChuumonPaldeanAquaBreedLevelUpLearnset,
+        .levelUpLearnset = sCandlemonLevelUpLearnset,
         .teachableLearnset = sChuumonPaldeanAquaBreedTeachableLearnset,
         .formSpeciesIdTable = sChuumonFormSpeciesIdTable,
     },
@@ -13618,7 +13618,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconPalIndex = 0,
         FOOTPRINT(Hazyagumon)
         .tmIlliterate = TRUE,
-        .levelUpLearnset = sHazyagumonLevelUpLearnset,
+        .levelUpLearnset = sHazyAgumonLevelUpLearnset,
         .teachableLearnset = sHazyagumonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ELEPHANMON}, // Miracles Egg
                                 {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_BLKTOYAMON}, // Dark Digitron
@@ -14432,7 +14432,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Leafeon,
         .iconPalIndex = 1,
         FOOTPRINT(Leafeon)
-        .levelUpLearnset = sLeafeonLevelUpLearnset,
+        .levelUpLearnset = sHazyAgumonLevelUpLearnset,
         .teachableLearnset = sLeafeonTeachableLearnset,
     },
 
@@ -14484,7 +14484,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Glaceon,
         .iconPalIndex = 0,
         FOOTPRINT(Glaceon)
-        .levelUpLearnset = sGlaceonLevelUpLearnset,
+        .levelUpLearnset = sHazyAgumonLevelUpLearnset,
         .teachableLearnset = sGlaceonTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
@@ -14539,7 +14539,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Sylveon,
         .iconPalIndex = 0,
         FOOTPRINT(Sylveon)
-        .levelUpLearnset = sSylveonLevelUpLearnset,
+        .levelUpLearnset = sHazyAgumonLevelUpLearnset,
         .teachableLearnset = sSylveonTeachableLearnset,
     },
 #endif //P_GEN_6_CROSS_EVOS
@@ -14713,7 +14713,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_DokunemonZ,
         .iconPalIndex = 0,
         FOOTPRINT(DokunemonZ)
-        .levelUpLearnset = sDokunemonZLevelUpLearnset,
+        .levelUpLearnset = sHazyAgumonLevelUpLearnset,
         .teachableLearnset = sDokunemonZTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
@@ -15118,7 +15118,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .iconSprite = gMonIcon_Munchlax,
         .iconPalIndex = 3,
         FOOTPRINT(Munchlax)
-        .levelUpLearnset = sMunchlaxLevelUpLearnset,
+        .levelUpLearnset = sHazyAgumonLevelUpLearnset,
         .teachableLearnset = sMunchlaxTeachableLearnset,
         .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_DRACOMON}),
     },
@@ -15355,7 +15355,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Dracomon_x)
         .isLegendary = TRUE,
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sDracomon_xGalarianLevelUpLearnset,
+        .levelUpLearnset = sDracomon_xLevelUpLearnset,
         .teachableLearnset = sDracomon_xGalarianTeachableLearnset,
         .formSpeciesIdTable = sDracomon_xFormSpeciesIdTable,
     },
@@ -15475,7 +15475,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Ebiburgmon)
         .isLegendary = TRUE,
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sEbiburgmonGalarianLevelUpLearnset,
+        .levelUpLearnset = sEbiburgmonLevelUpLearnset,
         .teachableLearnset = sEbiburgmonGalarianTeachableLearnset,
         .formSpeciesIdTable = sEbiburgmonFormSpeciesIdTable,
     },
@@ -15589,7 +15589,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         FOOTPRINT(Ekakimon)
         .isLegendary = TRUE,
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sEkakimonGalarianLevelUpLearnset,
+        .levelUpLearnset = sEkakimonLevelUpLearnset,
         .teachableLearnset = sEkakimonGalarianTeachableLearnset,
         .formSpeciesIdTable = sEkakimonFormSpeciesIdTable,
     },
