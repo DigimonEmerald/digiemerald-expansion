@@ -2284,7 +2284,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconSprite = gMonIcon_Gallade,
         .iconPalIndex = 1,
         FOOTPRINT(Gallade)
-        .levelUpLearnset = sGalladeLevelUpLearnset,
+        .levelUpLearnset = sArcadiamon_championLevelUpLearnset,
         .teachableLearnset = sGalladeTeachableLearnset,
         .formSpeciesIdTable = sGalladeFormSpeciesIdTable,
         .formChangeTable = sGalladeFormChangeTable,
@@ -2340,7 +2340,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconPalIndex = 1,
         FOOTPRINT(Gallade)
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sGalladeLevelUpLearnset,
+        .levelUpLearnset = sArcadiamon_championLevelUpLearnset,
         .teachableLearnset = sGalladeTeachableLearnset,
         .formSpeciesIdTable = sGalladeFormSpeciesIdTable,
         .formChangeTable = sGalladeFormChangeTable,
@@ -3302,7 +3302,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconSprite = gMonIcon_Probopass,
         .iconPalIndex = 0,
         FOOTPRINT(Probopass)
-        .levelUpLearnset = sProbopassLevelUpLearnset,
+        .levelUpLearnset = sArcadiamon_championLevelUpLearnset,
         .teachableLearnset = sProbopassTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
@@ -4534,7 +4534,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconSprite = gMonIcon_Budew,
         .iconPalIndex = 1,
         FOOTPRINT(Budew)
-        .levelUpLearnset = sBudewLevelUpLearnset,
+        .levelUpLearnset = sArcadiamon_championLevelUpLearnset,
         .teachableLearnset = sBudewTeachableLearnset,
         .evolutions = EVOLUTION({EVO_FRIENDSHIP_DAY, 0, SPECIES_BULLMON}),
     },
@@ -4663,7 +4663,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconSprite = gMonIcon_Roserade,
         .iconPalIndex = 0,
         FOOTPRINT(Roserade)
-        .levelUpLearnset = sRoseradeLevelUpLearnset,
+        .levelUpLearnset = sArcadiamon_championLevelUpLearnset,
         .teachableLearnset = sRoseradeTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
@@ -5667,7 +5667,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconSprite = gMonIcon_Damemon_fusion,
         .iconPalIndex = 1,
         FOOTPRINT(Damemon_fusion)
-        .levelUpLearnset = sDamemon_fusionLevelUpLearnset,
+        .levelUpLearnset = sDamemon_FusionLevelUpLearnset,
         .teachableLearnset = sDamemon_fusionTeachableLearnset,
     },
 #endif //P_FAMILY_COREDRAMON_GREEN
@@ -7536,7 +7536,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconSprite = gMonIcon_Dusknoir,
         .iconPalIndex = 2,
         FOOTPRINT(Dusknoir)
-        .levelUpLearnset = sDusknoirLevelUpLearnset,
+        .levelUpLearnset = sArcadiamon_championLevelUpLearnset,
         .teachableLearnset = sDusknoirTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
@@ -7652,7 +7652,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconSprite = gMonIcon_Chingling,
         .iconPalIndex = 1,
         FOOTPRINT(Chingling)
-        .levelUpLearnset = sChinglingLevelUpLearnset,
+        .levelUpLearnset = sArcadiamon_championLevelUpLearnset,
         .teachableLearnset = sChinglingTeachableLearnset,
         .evolutions = EVOLUTION({EVO_FRIENDSHIP_NIGHT, 0, SPECIES_EOSMON_CHAMPION}),
     },
@@ -8065,7 +8065,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconSprite = gMonIcon_Froslass,
         .iconPalIndex = 0,
         FOOTPRINT(Froslass)
-        .levelUpLearnset = sFroslassLevelUpLearnset,
+        .levelUpLearnset = sArcadiamon_championLevelUpLearnset,
         .teachableLearnset = sFroslassTeachableLearnset,
     },
 #endif //P_GEN_4_CROSS_EVOS
@@ -9882,7 +9882,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .iconPalIndex = 0,
         FOOTPRINT(Gesomon)
         .isMythical = TRUE,
-        .levelUpLearnset = sGesomonNormalLevelUpLearnset,
+        .levelUpLearnset = sGesomonLevelUpLearnset,
         .teachableLearnset = sGesomonNormalTeachableLearnset,
         .formSpeciesIdTable = sGesomonFormSpeciesIdTable,
         .formChangeTable = sGesomonNormalFormChangeTable,
