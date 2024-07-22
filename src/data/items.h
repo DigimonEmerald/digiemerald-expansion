@@ -12626,4 +12626,354 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
+
+    [ITEM_X_ANTIBODY] =
+    {
+        .name = _("X Antibody"),
+        .price = 2100,
+        .description = COMPOUND_STRING(
+            "Mutates some\n"
+            "species of\n"
+            "Digimon."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .effect = gItemEffect_EvoItem,
+    },
+    
+    [ITEM_DARK_DIGITRON] =
+    {
+        .name = _("Dark Digitron"),
+        .price = 2100,
+        .description = COMPOUND_STRING(
+            "Mutates some\n"
+            "species of\n"
+            "Digimon."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .effect = gItemEffect_EvoItem,
+    },
+
+    [ITEM_COURAGE_EGG] =
+    {
+        .name = _("Courage Egg"),
+        .price = 2100,
+        .description = COMPOUND_STRING(
+            "Allows Digimon\n"
+            "to draw on\n"
+            "external power."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .effect = gItemEffect_EvoItem,
+    },
+
+    [ITEM_FRIEND_EGG] =
+    {
+        .name = _("Friend Egg"),
+        .price = 2100,
+        .description = COMPOUND_STRING(
+            "Allows Digimon\n"
+            "to draw on\n"
+            "external power."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .effect = gItemEffect_EvoItem,
+    },
+
+    [ITEM_LOVE_EGG] =
+    {
+        .name = _("Love Egg"),
+        .price = 2100,
+        .description = COMPOUND_STRING(
+            "Allows Digimon\n"
+            "to draw on\n"
+            "external power."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .effect = gItemEffect_EvoItem,
+    },
+
+    [ITEM_PURITY_EGG] =
+    {
+        .name = _("Purity Egg"),
+        .price = 2100,
+        .description = COMPOUND_STRING(
+            "Allows Digimon\n"
+            "to draw on\n"
+            "external power."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .effect = gItemEffect_EvoItem,
+    },
+
+    [ITEM_KNOWLEDGE_EGG] =
+    {
+        .name = _("Knowledge Egg"),
+        .price = 2100,
+        .description = COMPOUND_STRING(
+            "Allows Digimon\n"
+            "to draw on\n"
+            "external power."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .effect = gItemEffect_EvoItem,
+    },
+
+    [ITEM_SINCERITY_EGG] =
+    {
+        .name = _("Sincerity Egg"),
+        .price = 2100,
+        .description = COMPOUND_STRING(
+            "Allows Digimon\n"
+            "to draw on\n"
+            "external power."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .effect = gItemEffect_EvoItem,
+    },
+
+    [ITEM_HOPE_EGG] =
+    {
+        .name = _("Hope Egg"),
+        .price = 2100,
+        .description = COMPOUND_STRING(
+            "Allows Digimon\n"
+            "to draw on\n"
+            "external power."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .effect = gItemEffect_EvoItem,
+    },
+
+    [ITEM_LIGHT_EGG] =
+    {
+        .name = _("Light Egg"),
+        .price = 2100,
+        .description = COMPOUND_STRING(
+            "Allows Digimon\n"
+            "to draw on\n"
+            "external power."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .effect = gItemEffect_EvoItem,
+    },
+
+    [ITEM_KINDNESS_EGG] =
+    {
+        .name = _("Kindness Egg"),
+        .price = 2100,
+        .description = COMPOUND_STRING(
+            "Allows Digimon\n"
+            "to draw on\n"
+            "external power."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .effect = gItemEffect_EvoItem,
+    },
+
+    [ITEM_MIRACLES_EGG] =
+    {
+        .name = _("Miracles Egg"),
+        .price = 2100,
+        .description = COMPOUND_STRING(
+            "Allows Digimon\n"
+            "to draw on\n"
+            "external power."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .effect = gItemEffect_EvoItem,
+    },
+
+    [ITEM_FATE_EGG] =
+    {
+        .name = _("Fate Egg"),
+        .price = 2100,
+        .description = COMPOUND_STRING(
+            "Allows Digimon\n"
+            "to draw on\n"
+            "external power."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
+        .effect = gItemEffect_EvoItem,
+    },
+
+    [ITEM_ROTTEN_MEAT] =
+    {
+        .name = _("Rotten Meat"),
+        .price = 1100,
+        .description = COMPOUND_STRING(
+            "Meat so rotten, it\n"
+            "decreases a Digimons\n"
+            "inherent HP"),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_ReduceIV,
+        .secondaryId = STAT_HP,
+    },
+
+    [ITEM_CHOCOLATE] =
+    {
+        .name = _("Chocolate"),
+        .price = 1100,
+        .description = COMPOUND_STRING(
+            "Chocolate that\n"
+            "decreases a Digimons\n"
+            "inherent Attack"),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_ReduceIV,
+        .secondaryId = STAT_ATK,
+    },
+
+    [ITEM_COFFEE] =
+    {
+        .name = _("Coffee"),
+        .price = 1100,
+        .description = COMPOUND_STRING(
+            "Coffee that\n"
+            "decreases a Digimons\n"
+            "inherent Defense"),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_ReduceIV,
+        .secondaryId = STAT_DEF,
+    },
+
+    [ITEM_ICE_CREAM] =
+    {
+        .name = _("Ice Cream"),
+        .price = 1100,
+        .description = COMPOUND_STRING(
+            "Ice Cream that\n"
+            "decreases a Digimons\n"
+            "inherent Speed"),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_ReduceIV,
+        .secondaryId = STAT_SPEED,
+    },
+
+    [ITEM_FRENCH_FRIES] =
+    {
+        .name = _("French Fries"),
+        .price = 1100,
+        .description = COMPOUND_STRING(
+            "French Fries that\n"
+            "decreases a Digimons\n"
+            "inherent SpAtk"),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_ReduceIV,
+        .secondaryId = STAT_SPATK,
+    },
+
+    [ITEM_BEER] =
+    {
+        .name = _("Beer"),
+        .price = 1100,
+        .description = COMPOUND_STRING(
+            "Beer that\n"
+            "decreases a Digimons\n"
+            "inherent SpDef"),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_ReduceIV,
+        .secondaryId = STAT_SPDEF,
+    },
+
+    [ITEM_MEAT] =
+    {
+        .name = _("Meat"),
+        .price = 1100,
+        .description = COMPOUND_STRING(
+            "Meat that can\n"
+            "increase a Digimons\n"
+            "inherent HP"),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_IncreaseIV,
+        .secondaryId = STAT_HP,
+    },
+
+    [ITEM_POWER_FRUIT] =
+    {
+        .name = _("Power Fruit"),
+        .price = 1100,
+        .description = COMPOUND_STRING(
+            "A fruit that\n"
+            "increases a Digimons\n"
+            "inherent Attack"),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_IncreaseIV,
+        .secondaryId = STAT_ATK,
+    },
+
+    [ITEM_MUSCLE_YAM] =
+    {
+        .name = _("Muscle Yam"),
+        .price = 1100,
+        .description = COMPOUND_STRING(
+            "A yam that\n"
+            "increases a Digimons\n"
+            "inherent Defense"),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_IncreaseIV,
+        .secondaryId = STAT_DEF,
+    },
+
+    [ITEM_SUPER_CARROT] =
+    {
+        .name = _("Super Carrot"),
+        .price = 1100,
+        .description = COMPOUND_STRING(
+            "A carrot that\n"
+            "increases a Digimons\n"
+            "inherent Speed"),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_IncreaseIV,
+        .secondaryId = STAT_SPEED,
+    },
+
+    [ITEM_HAWK_RADISH] =
+    {
+        .name = _("Hawk Radish"),
+        .price = 1100,
+        .description = COMPOUND_STRING(
+            "A Radish that\n"
+            "increases a Digimons\n"
+            "inherent SpAtk"),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_IncreaseIV,
+        .secondaryId = STAT_SPATK,
+    },
+
+    [ITEM_DIGIPINE] =
+    {
+        .name = _("Digipine"),
+        .price = 1100,
+        .description = COMPOUND_STRING(
+            "A fruit that\n"
+            "increases a Digimons\n"
+            "inherent SpDef"),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_IncreaseIV,
+        .secondaryId = STAT_SPDEF,
+    },
 };

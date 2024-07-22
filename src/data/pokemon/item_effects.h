@@ -459,3 +459,4 @@ const u8 gItemEffect_TamatoBerry[10] = {
     [6] = ITEM6_SUBTRACT_EV,
     EV_BERRY_FRIENDSHIP_CHANGE,
 };
+

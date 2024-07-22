@@ -3347,6 +3347,52 @@ extern const u8 gMailTilemap_Fab[];
 extern const u8 gMailTiles_Retro[];
 extern const u8 gMailTilemap_Retro[];
 
+// Digimon Additions
+// Evo Items
+extern const u32 gItemIcon_XAntibody[];
+extern const u32 gItemIconPalette_XAntibody[];
+extern const u32 gItemIcon_DarkDigitron[];
+extern const u32 gItemIconPalette_DarkDigitron[];
+extern const u32 gItemIcon_CourageEgg[];
+extern const u32 gItemIconPalette_CourageEgg[];
+extern const u32 gItemIcon_FriendEgg[];
+extern const u32 gItemIconPalette_FriendEgg[];
+extern const u32 gItemIcon_LoveEgg[];
+extern const u32 gItemIconPalette_LoveEgg[];
+extern const u32 gItemIcon_PurityEgg[];
+extern const u32 gItemIconPalette_PurityEgg[];
+extern const u32 gItemIcon_KnowledgeEgg[];
+extern const u32 gItemIconPalette_KnowledgeEgg[];
+extern const u32 gItemIcon_SincerityEgg[];
+extern const u32 gItemIconPalette_SincerityEgg[];
+extern const u32 gItemIcon_HopeEgg[];
+extern const u32 gItemIconPalette_HopeEgg[];
+extern const u32 gItemIcon_LightEgg[];
+extern const u32 gItemIconPalette_LightEgg[];
+extern const u32 gItemIcon_KindnessEgg[];
+extern const u32 gItemIconPalette_KindnessEgg[];
+extern const u32 gItemIcon_MiraclesEgg[];
+extern const u32 gItemIconPalette_MiraclesEgg[];
+extern const u32 gItemIcon_FateEgg[];
+extern const u32 gItemIconPalette_FateEgg[];
+
+// IV Items
+
+extern const u32 gItemIcon_RottenMeat[];
+extern const u32 gItemIconPalette_RottenMeat[];
+extern const u32 gItemIcon_Meat[];
+extern const u32 gItemIconPalette_Meat[];
+extern const u32 gItemIcon_PowerFruit[];
+extern const u32 gItemIconPalette_PowerFruit[];
+extern const u32 gItemIcon_MuscleYam[];
+extern const u32 gItemIconPalette_MuscleYam[];
+extern const u32 gItemIcon_SuperCarrot[];
+extern const u32 gItemIconPalette_SuperCarrot[];
+extern const u32 gItemIcon_HawkRadish[];
+extern const u32 gItemIconPalette_HawkRadish[];
+extern const u32 gItemIcon_DigiPine[];
+extern const u32 gItemIconPalette_DigiPine[];
+
 extern const u8 gMonMarkingsMenu_Gfx[];
 extern const u16 gMonMarkingsMenu_Pal[];
 

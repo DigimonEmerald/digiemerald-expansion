@@ -1502,4 +1502,16 @@ void Task_ItemUse_CloseMessageBoxAndReturnToField_VsSeeker(u8 taskId)
     Task_CloseCantUseKeyItemMessage(taskId);
 }
 
+void ItemUseOutOfBattle_ReduceIV(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_ReduceIV;
+    SetUpItemUseCallback(taskId);
+}
+
+void ItemUseOutOfBattle_IncreaseIV(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_IncreaseIV;
+    SetUpItemUseCallback(taskId);
+}
+
 #undef tUsingRegisteredKeyItem

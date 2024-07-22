@@ -168,7 +168,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sSyakomonTeachableLearnset,
         .formSpeciesIdTable = sSyakomonFormSpeciesIdTable,
         .formChangeTable = sSyakomonFormChangeTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_SYAKOMON_X}, // X ANTIBODY
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_SYAKOMON_X}, // X ANTIBODY
                                 {EVO_LEVEL, 35, SPECIES_GESOMON}),
     },
 
@@ -406,7 +406,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sTentomonTeachableLearnset,
         .formSpeciesIdTable = sTentomonFormSpeciesIdTable,
         .formChangeTable = sTentomonFormChangeTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_FLAWIZAMON}), // COURAGE EGG
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_COURAGE_EGG, SPECIES_FLAWIZAMON}), // COURAGE EGG
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -521,8 +521,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Terriermon)
         .levelUpLearnset = sTerriermonLevelUpLearnset,
         .teachableLearnset = sTerriermonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_BLGARGOMON}, // DARK DIGITRON
-                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_TERRIERMON_X}, // X Antibody
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_BLGARGOMON}, // DARK DIGITRON
+                                {EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_TERRIERMON_X}, // X Antibody
                                 {EVO_LEVEL, 30, SPECIES_GARGOMON}),
     },
 
@@ -577,7 +577,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Terriermon_assistant)
         .levelUpLearnset = sTerriermon_assistantLevelUpLearnset,
         .teachableLearnset = sTerriermon_assistantTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_BLGARGOMON}, // DARK DIGITRON
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_BLGARGOMON}, // DARK DIGITRON
                                 {EVO_LEVEL, 30, SPECIES_GARGOMON}),
     },
 
@@ -1166,10 +1166,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sVeemonLevelUpLearnset,
         .teachableLearnset = sVeemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_EXVEEMON_VIRUS}, // DARK DIGITRON
-                                {EVO_ITEM, ITEM_MOON_STONE, SPECIES_FLADRAMON}, // COURAGE EGG
-                                {EVO_ITEM, ITEM_MOON_STONE, SPECIES_DEPTHMON}, // SINCERITY EGG
-                                {EVO_ITEM, ITEM_MOON_STONE, SPECIES_GARGOYLMON}, // LIGHT EGG
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_EXVEEMON_VIRUS}, // DARK DIGITRON
+                                {EVO_ITEM, ITEM_COURAGE_EGG, SPECIES_FLADRAMON}, // COURAGE EGG
+                                {EVO_ITEM, ITEM_SINCERITY_EGG, SPECIES_DEPTHMON}, // SINCERITY EGG
+                                {EVO_ITEM, ITEM_LIGHT_EGG, SPECIES_GARGOYLMON}, // LIGHT EGG
                                 {EVO_LEVEL, 36, SPECIES_EXVEEMON}),
     },
 
@@ -1344,10 +1344,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sWormmonLevelUpLearnset,
         .teachableLearnset = sWormmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_AURUMON}, // LOVE EGG
-                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_BUCCHIEMON_RED}, // KINDNESS EGG
-                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_BULLMON}, // HOPE EGG
-                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ARCHELOMON}, // SINCERITY EGG
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LOVE_EGG, SPECIES_AURUMON}, // LOVE EGG
+                                {EVO_ITEM, ITEM_KINDNESS_EGG, SPECIES_BUCCHIEMON_RED}, // KINDNESS EGG
+                                {EVO_ITEM, ITEM_HOPE_EGG, SPECIES_BULLMON}, // HOPE EGG
+                                {EVO_ITEM, ITEM_SINCERITY_EGG, SPECIES_ARCHELOMON}, // SINCERITY EGG
                                 {EVO_LEVEL, 34, SPECIES_BUCCHIEMON_GREEN}),
     },
 
@@ -1760,7 +1760,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Allomon)
         .levelUpLearnset = sAllomonLevelUpLearnset,
         .teachableLearnset = sAllomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ALLOMON_X}), // X ANTIBODY
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_ALLOMON_X}), // X ANTIBODY
     },
 #endif //P_FAMILY_AIRDRAMON
 
@@ -6010,7 +6010,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Darktyrmon)
         .levelUpLearnset = sDarktyrmonLevelUpLearnset,
         .teachableLearnset = sDarktyrmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_DARKTYRMON_X}), // X ANTIBODY
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_DARKTYRMON_X}), // X ANTIBODY
     },
 #endif //P_FAMILY_DARKTYRMON
 
@@ -8928,7 +8928,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sGaogamonTeachableLearnset,
         .formSpeciesIdTable = sGaogamonFormSpeciesIdTable,
         .formChangeTable = sGaogamonFormChangeTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_BLGAOGAMON}), // DARK DIGITRON
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_BLGAOGAMON}), // DARK DIGITRON
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -9045,7 +9045,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .isLegendary = TRUE,
         .levelUpLearnset = sGargomonLevelUpLearnset,
         .teachableLearnset = sGargomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_BLGARGOMON}), // DARK DIGITRON
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_BLGARGOMON}), // DARK DIGITRON
     },
 #endif //P_FAMILY_GARGOMON
 
@@ -9161,8 +9161,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .isLegendary = TRUE,
         .levelUpLearnset = sGarurumonLevelUpLearnset,
         .teachableLearnset = sGarurumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_BLGARURMON}, // DARK DIGITRON
-                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_GARURUMON_X}), // X ANTIBODY
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_BLGARURMON}, // DARK DIGITRON
+                                {EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_GARURUMON_X}), // X ANTIBODY
     },
 #endif //P_FAMILY_GARURUMON
 
@@ -9342,9 +9342,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sGatomonTeachableLearnset,
         .formSpeciesIdTable = sGatomonFormSpeciesIdTable,
         .formChangeTable = sGatomonFormChangeTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_CHOUMON}, // KNOWLEDGE EGG
-                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_BLKGATOMON}, // DARK DIGITRON
-                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_GATOMON_X}), // X ANTIBODY
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_KNOWLEDGE_EGG, SPECIES_CHOUMON}, // KNOWLEDGE EGG
+                                {EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_BLKGATOMON}, // DARK DIGITRON
+                                {EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_GATOMON_X}), // X ANTIBODY
     },
 
 #if P_MEGA_EVOLUTIONS

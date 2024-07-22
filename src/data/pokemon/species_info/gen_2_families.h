@@ -280,8 +280,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Gabumon)
         .levelUpLearnset = sGabumonLevelUpLearnset,
         .teachableLearnset = sGabumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_BLKGABUMON}, // Dark Digitron
-                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_GABUMON_X}, // X Antibody
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_BLKGABUMON}, // Dark Digitron
+                                {EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_GABUMON_X}, // X Antibody
                                 {EVO_LEVEL, 36, SPECIES_GARURUMON}),
     },
 
@@ -515,7 +515,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sGaomonLevelUpLearnset,
         .teachableLearnset = sGaomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_DEFENSE, 61, SPECIES_BABOONMON},
-                                {EVO_ITEM, ITEM_MOON_STONE, SPECIES_BLGAOGAMON}, // DARK DIGITRON
+                                {EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_BLGAOGAMON}, // DARK DIGITRON
                                 {EVO_LEVEL, 37, SPECIES_GAOGAMON}),
     },
 
@@ -628,7 +628,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sGazimonLevelUpLearnset,
         .teachableLearnset = sGazimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_SPDEFENSE, 62, SPECIES_DEVIDRAMON},
-                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_GAZIMON_X}, // X ANTIBODY
+                                {EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_GAZIMON_X}, // X ANTIBODY
                                 {EVO_ATTACK, 69, SPECIES_APEMON},
                                 {EVO_SPEED, 67, SPECIES_BLGARURMON},
                                 {EVO_LEVEL, 38, SPECIES_DELTAMON}),
@@ -971,7 +971,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Gomamon)
         .levelUpLearnset = sGomamonLevelUpLearnset,
         .teachableLearnset = sGomamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_GOMAMON_X}, // x antibody
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_GOMAMON_X}, // x antibody
                                 {EVO_LEVEL, 35, SPECIES_GAOGAMON}),
     },
 
@@ -1143,7 +1143,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sGuilmonLevelUpLearnset,
         .teachableLearnset = sGuilmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_SPATTACK, 70, SPECIES_BALUCHIMON},
-                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_GUILMON_X}, // X Antibody
+                                {EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_GUILMON_X}, // X Antibody
                                 {EVO_LEVEL, 37, SPECIES_BLGROWLMON}),
     },
 #endif //P_FAMILY_GOTSUMON_X
@@ -1203,7 +1203,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Hagurumon)
         .levelUpLearnset = sHagurumonLevelUpLearnset,
         .teachableLearnset = sHagurumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_HAGURUMON_X}, // X ANTIBODY
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_HAGURUMON_X}, // X ANTIBODY
                                 {EVO_LEVEL, 32, SPECIES_BALISTAMON}),
     },
 
@@ -1382,8 +1382,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Hawkmon)
         .levelUpLearnset = sHawkmonLevelUpLearnset,
         .teachableLearnset = sHawkmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ALLOMON}, // COURAGE EGG
-                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_FLYBEEMON}, // KNOWLEDGE EGG
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_COURAGE_EGG, SPECIES_ALLOMON}, // COURAGE EGG
+                                {EVO_ITEM, ITEM_KNOWLEDGE_EGG, SPECIES_FLYBEEMON}, // KNOWLEDGE EGG
                                 {EVO_LEVEL, 30, SPECIES_AQUILAMON}),
     },
 
@@ -1615,7 +1615,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .evolutions = EVOLUTION({EVO_SPEED, 52, SPECIES_BIOTHUNMON},
                                 {EVO_HEALTH, 81, SPECIES_BIOQUETMON},
                                 {EVO_SPATTACK, 55, SPECIES_BOOGIEMON},
-                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_IMPMON_X}, // X ANTIBODY
+                                {EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_IMPMON_X}, // X ANTIBODY
                                 {EVO_LEVEL, 30, SPECIES_DEVIMON}),
     },
 
@@ -2014,7 +2014,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Keramon)
         .levelUpLearnset = sKeramonLevelUpLearnset,
         .teachableLearnset = sKeramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_KERAMON_X}, // X ANTIBODY
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_KERAMON_X}, // X ANTIBODY
                                 {EVO_LEVEL, 40, SPECIES_CHRYSALMON}),
     },
 
@@ -2300,7 +2300,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Kokuwamon)
         .levelUpLearnset = sKokuwamonLevelUpLearnset,
         .teachableLearnset = sKokuwamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_KOKUWAMON_X}, // X ANTIBODY
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_KOKUWAMON_X}, // X ANTIBODY
                                 {EVO_LEVEL, 45, SPECIES_TRAILMON_BATTLE_ARMAMENT}),
     },
 
@@ -2987,7 +2987,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sLopmonTeachableLearnset,                                                   
         .tmIlliterate = TRUE,                                                                            
         .formSpeciesIdTable = sLopmonFormSpeciesIdTable,                                                 
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_LOPMON_X},                             // X ANTIBODY
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_LOPMON_X},                             // X ANTIBODY
                                 {EVO_LEVEL, 39, SPECIES_GARGOYLMON}),                                    
     },
 
@@ -3050,7 +3050,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sExveemonLevelUpLearnset,
         .teachableLearnset = sExveemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_EXVEEMON_VIRUS}), // DARK DIGITRON
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_EXVEEMON_VIRUS}), // DARK DIGITRON
     },
 #endif //P_GEN_3_CROSS_EVOS
 
@@ -4468,7 +4468,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Otamamon)
         .levelUpLearnset = sOtamamonLevelUpLearnset,
         .teachableLearnset = sOtamamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_OTAMAMON_X}, // X ANTIBODY
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_OTAMAMON_X}, // X ANTIBODY
                                 {EVO_LEVEL, 29, SPECIES_GEKOMON}),
     },
 
@@ -4749,7 +4749,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Palmon)
         .levelUpLearnset = sPalmonLevelUpLearnset,
         .teachableLearnset = sPalmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_PALMON_X}, // X ANTIBODY
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_PALMON_X}, // X ANTIBODY
                                 {EVO_LEVEL, 33, SPECIES_FANGMON}),
     },
 
@@ -4944,7 +4944,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sPatamonLevelUpLearnset,
         .teachableLearnset = sPatamonTeachableLearnset,
         .formSpeciesIdTable = sPatamonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_BAROMON}, // COURAGE EGG
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_COURAGE_EGG, SPECIES_BAROMON}, // COURAGE EGG
                                 {EVO_LEVEL, 26, SPECIES_ANGEMON}),
     },
 
@@ -5692,7 +5692,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Renamon)
         .levelUpLearnset = sRenamonLevelUpLearnset,
         .teachableLearnset = sRenamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_RENAMON_X}, // X ANTIBODY
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_RENAMON_X}, // X ANTIBODY
                                 {EVO_LEVEL, 28, SPECIES_BLKGATOMON}),
     },
 #endif //P_FAMILY_PULSEMON
