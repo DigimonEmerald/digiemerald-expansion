@@ -23,7 +23,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_UNBURDEN },
+        .abilities = { ABILITY_SAND_VEIL, ABILITY_SAND_STREAM, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Sunarzamon"),
         .cryId = CRY_SUNARZAMON,
@@ -78,7 +78,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_UNBURDEN },
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Swimmon"),
         .cryId = CRY_SWIMMON,
@@ -133,7 +133,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_UNBURDEN },
+        .abilities = { ABILITY_WATER_VEIL, ABILITY_SHELL_ARMOR, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Syakomon"),
         .cryId = CRY_SYAKOMON,
@@ -168,7 +168,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sSyakomonTeachableLearnset,
         .formSpeciesIdTable = sSyakomonFormSpeciesIdTable,
         .formChangeTable = sSyakomonFormChangeTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_SYAKOMON_X}, // X ANTIBODY
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_SYAKOMON_X},
                                 {EVO_LEVEL, 35, SPECIES_GESOMON}),
     },
 
@@ -250,7 +250,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_SPEED_BOOST },
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_SHELL_ARMOR, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Syakomon"),
         .cryId = CRY_SYAKOMON_X,
@@ -307,7 +307,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_SPEED_BOOST },
+        .abilities = { ABILITY_SHADOW_TAG, ABILITY_NONE, ABILITY_NONE }, // EPIPHANY
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Tapirmon"),
         .cryId = CRY_TAPIRMON,
@@ -367,7 +367,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_SPEED_BOOST },
+        .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_SWARM, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Tentomon"),
         .cryId = CRY_TENTOMON,
@@ -406,7 +406,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sTentomonTeachableLearnset,
         .formSpeciesIdTable = sTentomonFormSpeciesIdTable,
         .formChangeTable = sTentomonFormChangeTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_COURAGE_EGG, SPECIES_FLAWIZAMON}), // COURAGE EGG
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_COURAGE_EGG, SPECIES_FLAWIZAMON}),
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -488,7 +488,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_DAMP },
+        .abilities = { ABILITY_PLUS, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Terriermon"),
         .cryId = CRY_TERRIERMON,
@@ -521,8 +521,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Terriermon)
         .levelUpLearnset = sTerriermonLevelUpLearnset,
         .teachableLearnset = sTerriermonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_BLGARGOMON}, // DARK DIGITRON
-                                {EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_TERRIERMON_X}, // X Antibody
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_BLGARGOMON},
+                                {EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_TERRIERMON_X},
                                 {EVO_LEVEL, 30, SPECIES_GARGOMON}),
     },
 
@@ -544,7 +544,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_DAMP },
+        .abilities = { ABILITY_PLUS, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Terriermon"),
         .cryId = CRY_TERRIERMON_ASSISTANT,
@@ -577,7 +577,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         FOOTPRINT(Terriermon_assistant)
         .levelUpLearnset = sTerriermon_assistantLevelUpLearnset,
         .teachableLearnset = sTerriermon_assistantTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_BLGARGOMON}, // DARK DIGITRON
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_BLGARGOMON},
                                 {EVO_LEVEL, 30, SPECIES_GARGOMON}),
     },
 
@@ -599,7 +599,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_DAMP },
+        .abilities = { ABILITY_PLUS, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Terriermon"),
         .cryId = CRY_TERRIERMON_X,
@@ -714,11 +714,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-    #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_RUN_AWAY, ABILITY_QUICK_FEET, ABILITY_RATTLED },
-    #else
-        .abilities = { ABILITY_RUN_AWAY, ABILITY_NONE, ABILITY_RATTLED },
-    #endif
+        .abilities = { ABILITY_SERENE_GRACE, ABILITY_SPEED_BOOST, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Tinkermon"),
         .cryId = CRY_TINKERMON,
@@ -771,11 +767,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-    #if P_UPDATED_ABILITIES >= GEN_4
         .abilities = { ABILITY_INTIMIDATE, ABILITY_QUICK_FEET, ABILITY_MOXIE },
-    #else
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_NONE, ABILITY_MOXIE },
-    #endif
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Tinpet"),
         .cryId = CRY_TINPET,
@@ -842,11 +834,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-    #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_PICKUP, ABILITY_GLUTTONY, ABILITY_QUICK_FEET },
-    #else
-        .abilities = { ABILITY_PICKUP, ABILITY_NONE, ABILITY_QUICK_FEET },
-    #endif
+        .abilities = { ABILITY_ROUGH_SKIN, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Toyagumon"),
         .cryId = CRY_TOYAGUMON,
@@ -903,11 +891,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-    #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_PICKUP, ABILITY_GLUTTONY, ABILITY_QUICK_FEET },
-    #else
-        .abilities = { ABILITY_PICKUP, ABILITY_NONE, ABILITY_QUICK_FEET },
-    #endif
+        .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Tsukaimon"),
         .cryId = CRY_TSUKAIMON,
@@ -1132,7 +1116,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SHIELD_DUST, ABILITY_NONE, ABILITY_RUN_AWAY },
+        .abilities = { ABILITY_VITAL_SPIRIT, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Veemon"),
         .cryId = CRY_VEEMON,
@@ -1166,10 +1150,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sVeemonLevelUpLearnset,
         .teachableLearnset = sVeemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_EXVEEMON_VIRUS}, // DARK DIGITRON
-                                {EVO_ITEM, ITEM_COURAGE_EGG, SPECIES_FLADRAMON}, // COURAGE EGG
-                                {EVO_ITEM, ITEM_SINCERITY_EGG, SPECIES_DEPTHMON}, // SINCERITY EGG
-                                {EVO_ITEM, ITEM_LIGHT_EGG, SPECIES_GARGOYLMON}, // LIGHT EGG
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_EXVEEMON_VIRUS},
+                                {EVO_ITEM, ITEM_COURAGE_EGG, SPECIES_FLADRAMON},
+                                {EVO_ITEM, ITEM_SINCERITY_EGG, SPECIES_DEPTHMON},
+                                {EVO_ITEM, ITEM_LIGHT_EGG, SPECIES_GARGOYLMON},
                                 {EVO_LEVEL, 36, SPECIES_EXVEEMON}),
     },
 
@@ -1192,7 +1176,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_ROCK_HEAD, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Vemmon"),
         .cryId = CRY_VEMMON,
@@ -1250,7 +1234,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SWARM, ABILITY_NONE, ABILITY_RIVALRY },
+        .abilities = { ABILITY_MAGMA_ARMOR, ABILITY_LEVITATE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Vorvomon"),
         .cryId = CRY_VORVOMON,
@@ -1310,7 +1294,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_SWARM, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("Wormmon"),
         .cryId = CRY_WORMMON,
@@ -1344,10 +1328,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sWormmonLevelUpLearnset,
         .teachableLearnset = sWormmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LOVE_EGG, SPECIES_AURUMON}, // LOVE EGG
-                                {EVO_ITEM, ITEM_KINDNESS_EGG, SPECIES_BUCCHIEMON_RED}, // KINDNESS EGG
-                                {EVO_ITEM, ITEM_HOPE_EGG, SPECIES_BULLMON}, // HOPE EGG
-                                {EVO_ITEM, ITEM_SINCERITY_EGG, SPECIES_ARCHELOMON}, // SINCERITY EGG
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LOVE_EGG, SPECIES_AURUMON},
+                                {EVO_ITEM, ITEM_KINDNESS_EGG, SPECIES_BUCCHIEMON_RED},
+                                {EVO_ITEM, ITEM_HOPE_EGG, SPECIES_BULLMON},
+                                {EVO_ITEM, ITEM_SINCERITY_EGG, SPECIES_ARCHELOMON},
                                 {EVO_LEVEL, 34, SPECIES_BUCCHIEMON_GREEN}),
     },
 
@@ -1370,7 +1354,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SHIELD_DUST, ABILITY_NONE, ABILITY_COMPOUND_EYES },
+        .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Zenimon"),
         .cryId = CRY_ZENIMON,
@@ -1432,7 +1416,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_RAIN_DISH, ABILITY_OWN_TEMPO },
+        .abilities = { ABILITY_HYPER_CUTTER, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Zubamon"),
         .cryId = CRY_ZUBAMON,
