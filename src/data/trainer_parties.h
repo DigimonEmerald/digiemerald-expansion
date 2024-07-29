@@ -3207,7 +3207,7 @@ static const struct TrainerMon sParty_Drake[] = {
 static const struct TrainerMon sParty_Roxanne1[] = {
     {
     .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 12,
+    .lvl = 10,
     .species = SPECIES_FRIMON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
@@ -3219,13 +3219,6 @@ static const struct TrainerMon sParty_Roxanne1[] = {
     .heldItem = ITEM_NONE,
     .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
     },
-    {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 15,
-    .species = SPECIES_GOTSUMON,
-    .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_BLOCK, MOVE_HARDEN, MOVE_TACKLE, MOVE_ROCK_TOMB}
-    }
 };
 
 static const struct TrainerMon sParty_Brawly1[] = {
@@ -7726,7 +7719,7 @@ static const struct TrainerMon sParty_Rick[] = {
     },
     {
     .lvl = 4,
-    .species = SPECIES_PAFUMON,
+    .species = SPECIES_PABUMON,
     }
 };
 
