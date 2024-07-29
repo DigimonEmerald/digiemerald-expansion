@@ -2607,4 +2607,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
     },
+
+    [ABILITY_EPIPHANY] =
+    {
+        .name = _("Epiphany"),
+        .description = COMPOUND_STRING("Ups Light moves in a pinch."),
+        .aiRating = 5,
+    },
 };
