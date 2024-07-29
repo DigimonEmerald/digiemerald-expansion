@@ -2614,4 +2614,11 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Ups Light moves in a pinch."),
         .aiRating = 5,
     },
+
+    [ABILITY_NIGHT_VISION] =
+    {
+        .name = _("Night Vision"),
+        .description = COMPOUND_STRING("Boosts accuracy at night."),
+        .aiRating = 6,
+    },
 };
