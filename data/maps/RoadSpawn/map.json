@@ -17,7 +17,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_TRUCK",
       "x": 14,
-      "y": 11,
+      "y": 19,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -25,13 +25,13 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_TRUCK_INTRO"
     }
   ],
   "warp_events": [
     {
       "x": 16,
-      "y": 11,
+      "y": 19,
       "elevation": 0,
       "dest_map": "MAP_ROAD_SPAWN",
       "dest_warp_id": "0"
@@ -41,11 +41,290 @@
     {
       "type": "trigger",
       "x": 16,
-      "y": 10,
+      "y": 18,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_ROAD_SPAWN_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "RoadSpawn_EventScript_StepOutTruck"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "0",
+      "script": "RoadSpawn_EventScript_StepOnPavement"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 26,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 27,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROAD_SPAWN_STATE",
+      "var_value": "1",
+      "script": "RoadSpawn_EventScript_StepOnRoad"
     }
   ],
   "bg_events": [

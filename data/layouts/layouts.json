@@ -4414,8 +4414,8 @@
     {
       "id": "LAYOUT_ROAD_SPAWN",
       "name": "RoadSpawn_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 30,
+      "height": 35,
       "primary_tileset": "gTileset_Road",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/RoadSpawn/border.bin",

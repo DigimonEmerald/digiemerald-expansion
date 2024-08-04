@@ -1,0 +1,43 @@
+mapscripts RoadSpawn_MapScripts {
+}
+
+script RoadSpawn_EventScript_StepOutTruck {
+    lockall
+    msgbox(format("Its dangerous to step out from behind a truck!"))
+    applymovement(OBJ_EVENT_ID_PLAYER, RoadSpawn_Movement_ExitRoad)
+    waitmovement(0)
+    releaseall
+    end
+}
+
+script RoadSpawn_EventScript_StepOnPavement {
+    lockall
+    setvar(VAR_ROAD_SPAWN_STATE, 1)
+    msgbox(format("Driver: Stay safe kid, avoid playing on the road!"))
+    applymovement(1, RoadSpawn_Movement_TruckLeave)
+    waitmovement(0)
+    removeobject(1)
+    setflag(FLAG_TRUCK_INTRO)
+    applymovement(OBJ_EVENT_ID_PLAYER, RoadSpawn_Movement_ExitRoad)
+    waitmovement(0)
+    releaseall
+    end
+}
+
+script RoadSpawn_EventScript_StepOnRoad {
+    lockall
+    msgbox(format("Its dangerous to play on the road!"))
+    applymovement(OBJ_EVENT_ID_PLAYER, RoadSpawn_Movement_ExitRoad)
+    waitmovement(0)
+    releaseall
+    end
+}
+
+movement RoadSpawn_Movement_TruckLeave {
+    walk_faster_left * 10
+}
+
+movement RoadSpawn_Movement_ExitRoad {
+    walk_down
+}
+
