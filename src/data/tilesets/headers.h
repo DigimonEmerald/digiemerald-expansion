@@ -836,3 +836,14 @@ const struct Tileset gTileset_Road =
     .metatileAttributes = gMetatileAttributes_Road,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_IntroRoad =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_IntroRoad,
+    .palettes = gTilesetPalettes_IntroRoad,
+    .metatiles = gMetatiles_IntroRoad,
+    .metatileAttributes = gMetatileAttributes_IntroRoad,
+    .callback = NULL,
+};

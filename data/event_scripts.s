@@ -1074,3 +1074,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/birch_speech.inc"
 
 	.include "data/maps/RoadSpawn/scripts.inc"
+
+	.include "data/maps/BrushonTown/scripts.inc"
+
+	.include "data/maps/BrushonTownFlood/scripts.inc"

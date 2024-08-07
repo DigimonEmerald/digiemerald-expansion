@@ -4420,6 +4420,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/RoadSpawn/border.bin",
       "blockdata_filepath": "data/layouts/RoadSpawn/map.bin"
+    },
+    {
+      "id": "LAYOUT_BRUSHON_TOWN",
+      "name": "BrushonTown_Layout",
+      "width": 46,
+      "height": 45,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/BrushonTown/border.bin",
+      "blockdata_filepath": "data/layouts/BrushonTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_BRUSHON_TOWN_FLOOD",
+      "name": "BrushonTownFlood_Layout",
+      "width": 46,
+      "height": 45,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/BrushonTownFlood/border.bin",
+      "blockdata_filepath": "data/layouts/BrushonTownFlood/map.bin"
     }
   ]
 }
