@@ -1,5 +1,10 @@
 #include "global.h"
+<<<<<<< HEAD:src/geogreymon_scene.c
 #include "geogreymon_scene.h"
+=======
+#include "rayquaza_scene.h"
+#include "event_object_movement.h"
+>>>>>>> upstream/master:src/rayquaza_scene.c
 #include "sprite.h"
 #include "task.h"
 #include "graphics.h"
@@ -15,6 +20,7 @@
 #include "sound.h"
 #include "constants/songs.h"
 #include "constants/rgb.h"
+#include "constants/event_objects.h"
 #include "random.h"
 
 /*
@@ -1296,9 +1302,15 @@ void DoGeogreymonScene(u8 animId, bool8 endEarly, void (*exitCallback)(void))
 
 static void CB2_InitGeogreymonScene(void)
 {
+    u32 i;
     SetVBlankHBlankCallbacksToNull();
     ClearScheduledBgCopiesToVram();
     ScanlineEffect_Stop();
+    for (i = 0; i < OBJECT_EVENTS_COUNT; i++)
+    {
+        if (gObjectEvents[i].graphicsId == OBJ_EVENT_GFX_RAYQUAZA)
+            gObjectEvents[i].invisible = FALSE;
+    }
     FreeAllSpritePalettes();
     ResetPaletteFade();
     ResetSpriteData();

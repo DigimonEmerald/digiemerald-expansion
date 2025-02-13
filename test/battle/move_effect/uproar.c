@@ -8,6 +8,7 @@ ASSUMPTIONS
 
 DOUBLE_BATTLE_TEST("Uproar status causes sleeping pokemon to wake up during an attack")
 {
+    PASSES_RANDOMLY(1, 2, RNG_RANDOM_TARGET); // test fails if we target soundproof mon
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX) { Status1(STATUS1_SLEEP); }
@@ -18,11 +19,11 @@ DOUBLE_BATTLE_TEST("Uproar status causes sleeping pokemon to wake up during an a
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_UPROAR, playerLeft);
         HP_BAR(opponentRight);
-        MESSAGE("Lopmonx woke up in the UPROAR!");
+        MESSAGE("The uproar woke Lopmonx!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerRight);
-        MESSAGE("Foe Xiaomon woke up in the UPROAR!");
+        MESSAGE("The uproar woke the opposing Xiaomon!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentLeft);
-        MESSAGE("Foe Lopmonx woke up in the UPROAR!");
+        MESSAGE("The uproar woke the opposing Lopmonx!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentRight);
     }
 }

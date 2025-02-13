@@ -26,12 +26,19 @@ SINGLE_BATTLE_TEST("Keen Eye, Gen9+ Illuminate & Minds Eye prevent accuracy stag
     } SCENE {
         ABILITY_POPUP(opponent, ability);
         NOT ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
+<<<<<<< HEAD
         if (species == SPECIES_ANGORAMON)
             MESSAGE("Foe Angoramon's Keen Eye prevents accuracy loss!");
         else if (species == SPECIES_BLKGUILMON)
             MESSAGE("Foe Blkguilmon's Illuminate prevents accuracy loss!");
+=======
+        if (species == SPECIES_HITMONCHAN)
+            MESSAGE("The opposing Hitmonchan's Keen Eye prevents accuracy loss!");
+        else if (species == SPECIES_STARYU)
+            MESSAGE("The opposing Staryu's Illuminate prevents accuracy loss!");
+>>>>>>> upstream/master
         else
-            MESSAGE("Foe Ursaluna's Mind's Eye prevents accuracy loss!");
+            MESSAGE("The opposing Ursaluna's Mind's Eye prevents accuracy loss!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
     }
 }
@@ -110,23 +117,39 @@ SINGLE_BATTLE_TEST("Keen Eye, Gen9+ Illuminate & Minds Eye don't prevent Topsy-T
         TURN { MOVE(opponent, MOVE_HONE_CLAWS); MOVE(player, MOVE_TOPSY_TURVY); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HONE_CLAWS, opponent);
+<<<<<<< HEAD
         if (species == SPECIES_ANGORAMON) {
             MESSAGE("Foe Angoramon's Attack rose!");
             MESSAGE("Foe Angoramon's accuracy rose!");
         } else if (species == SPECIES_BLKGUILMON) {
             MESSAGE("Foe Blkguilmon's Attack rose!");
             MESSAGE("Foe Blkguilmon's accuracy rose!");
+=======
+        if (species == SPECIES_HITMONCHAN) {
+            MESSAGE("The opposing Hitmonchan's Attack rose!");
+            MESSAGE("The opposing Hitmonchan's accuracy rose!");
+        } else if (species == SPECIES_STARYU) {
+            MESSAGE("The opposing Staryu's Attack rose!");
+            MESSAGE("The opposing Staryu's accuracy rose!");
+>>>>>>> upstream/master
         } else {
-            MESSAGE("Foe Ursaluna's Attack rose!");
-            MESSAGE("Foe Ursaluna's accuracy rose!");
+            MESSAGE("The opposing Ursaluna's Attack rose!");
+            MESSAGE("The opposing Ursaluna's accuracy rose!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOPSY_TURVY, player);
+<<<<<<< HEAD
         if (species == SPECIES_ANGORAMON)
             MESSAGE("Foe Angoramon's stat changes were all reversed!");
         else if (species == SPECIES_BLKGUILMON)
             MESSAGE("Foe Blkguilmon's stat changes were all reversed!");
+=======
+        if (species == SPECIES_HITMONCHAN)
+            MESSAGE("All stat changes on the opposing Hitmonchan were inverted!");
+        else if (species == SPECIES_STARYU)
+            MESSAGE("All stat changes on the opposing Staryu were inverted!");
+>>>>>>> upstream/master
         else
-            MESSAGE("Foe Ursaluna's stat changes were all reversed!");
+            MESSAGE("All stat changes on the opposing Ursaluna were inverted!");
     } THEN {
         EXPECT_EQ(opponent->statStages[STAT_ACC], DEFAULT_STAT_STAGE - 1);
     }
@@ -174,8 +197,13 @@ SINGLE_BATTLE_TEST("Keen Eye & Gen9+ Illuminate don't prevent Spectral Thief fro
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_HONE_CLAWS].effect == EFFECT_ATTACK_ACCURACY_UP);
+<<<<<<< HEAD
         ASSUME(MoveHasAdditionalEffect(MOVE_SPECTRAL_THIEF, MOVE_EFFECT_SPECTRAL_THIEF) == TRUE);
         PLAYER(SPECIES_LOPMONX);
+=======
+        ASSUME(gMovesInfo[MOVE_SPECTRAL_THIEF].effect == EFFECT_SPECTRAL_THIEF);
+        PLAYER(SPECIES_WOBBUFFET);
+>>>>>>> upstream/master
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_HONE_CLAWS); MOVE(player, MOVE_SPECTRAL_THIEF); }
@@ -183,6 +211,7 @@ SINGLE_BATTLE_TEST("Keen Eye & Gen9+ Illuminate don't prevent Spectral Thief fro
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HONE_CLAWS, opponent);
         if (species == SPECIES_ANGORAMON)
         {
+<<<<<<< HEAD
             MESSAGE("Foe Angoramon's Attack rose!");
             MESSAGE("Foe Angoramon's accuracy rose!");
         }
@@ -193,6 +222,18 @@ SINGLE_BATTLE_TEST("Keen Eye & Gen9+ Illuminate don't prevent Spectral Thief fro
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPECTRAL_THIEF, player);
         MESSAGE("Lopmonx stole the target's boosted stats!");
+=======
+            MESSAGE("The opposing Hitmonchan's Attack rose!");
+            MESSAGE("The opposing Hitmonchan's accuracy rose!");
+        }
+        else
+        {
+            MESSAGE("The opposing Staryu's Attack rose!");
+            MESSAGE("The opposing Staryu's accuracy rose!");
+        }
+        MESSAGE("Wobbuffet stole the target's boosted stats!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SPECTRAL_THIEF, player);
+>>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(opponent->statStages[STAT_ACC], DEFAULT_STAT_STAGE);
     }

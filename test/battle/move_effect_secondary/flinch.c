@@ -25,20 +25,20 @@ SINGLE_BATTLE_TEST("Headbutt flinches the target if attacker is faster")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEADBUTT, player);
         HP_BAR(opponent);
         if (isFaster) {
-            MESSAGE("Foe Lopmonx flinched!");
+            MESSAGE("The opposing Lopmonx flinched and couldn't move!");
             NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
         } else {
-            NOT MESSAGE("Foe Lopmonx flinched!");
+            NOT MESSAGE("The opposing Lopmonx flinched and couldn't move!");
         }
 
         // 2nd turn
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEADBUTT, player);
         HP_BAR(opponent);
         if (isFaster) {
-            MESSAGE("Foe Lopmonx flinched!");
+            MESSAGE("The opposing Lopmonx flinched and couldn't move!");
             NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
         } else {
-            NOT MESSAGE("Foe Lopmonx flinched!");
+            NOT MESSAGE("The opposing Lopmonx flinched and couldn't move!");
         }
     }
 }
@@ -60,7 +60,7 @@ SINGLE_BATTLE_TEST("Protect always works when used after flinching")
         // 2nd turn
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEADBUTT, opponent);
         HP_BAR(player);
-        MESSAGE("Lopmonx flinched!");
+        MESSAGE("Lopmonx flinched and couldn't move!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
 
         // 3rd turn

@@ -1,5 +1,6 @@
 #include "global.h"
 #include "event_data.h"
+#include "event_object_movement.h"
 #include "field_camera.h"
 #include "field_effect.h"
 #include "script.h"
@@ -86,7 +87,6 @@ void DoBrailleDigEffect(void)
     DrawWholeMapView();
     PlaySE(SE_BANG);
     FlagSet(FLAG_SYS_BRAILLE_DIG);
-    UnlockPlayerFieldControls();
 }
 
 bool8 CheckFlarizamonChamelemon(void)
@@ -214,6 +214,7 @@ static void DoBrailleGargomonEffect(void)
     PlaySE(SE_BANG);
     FlagSet(FLAG_SYS_GARGOMON_PUZZLE_COMPLETED);
     UnlockPlayerFieldControls();
+    UnfreezeObjectEvents();
 }
 
 bool8 ShouldDoBrailleGarurumonEffect(void)
@@ -253,6 +254,7 @@ static void DoBrailleGarurumonEffect(void)
     PlaySE(SE_BANG);
     FlagSet(FLAG_SYS_GARURUMON_PUZZLE_COMPLETED);
     UnlockPlayerFieldControls();
+    UnfreezeObjectEvents();
 }
 
 // theory: another commented out DoBrailleWait and Task_BrailleWait.

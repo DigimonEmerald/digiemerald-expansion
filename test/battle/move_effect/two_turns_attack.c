@@ -208,29 +208,29 @@ SINGLE_BATTLE_TEST("Solar Beam and Solar Blade can be used instantly in Sunlight
         TURN { SKIP_TURN(player); }
     } SCENE {
         if (move1 == MOVE_SUNNY_DAY) {
-            NOT MESSAGE("Lopmonx took in sunlight!");
+            NOT MESSAGE("Lopmonx absorbed light!");
         } else {
             if (move2 == MOVE_SOLAR_BEAM) {
                 if (B_UPDATED_MOVE_DATA >= GEN_5)
                 {
                     MESSAGE("Lopmonx used Solar Beam!");
-                    MESSAGE("Lopmonx took in sunlight!");
+                    MESSAGE("Lopmonx absorbed light!");
                     ANIMATION(ANIM_TYPE_MOVE, move2, player);
                 } else {
                     NOT MESSAGE("Lopmonx used Solar Beam!");
                     ANIMATION(ANIM_TYPE_MOVE, move2, player);
-                    MESSAGE("Lopmonx took in sunlight!");
+                    MESSAGE("Lopmonx absorbed light!");
                 }
                 MESSAGE("Lopmonx used Solar Beam!");
             } else {
                 if (B_UPDATED_MOVE_DATA >= GEN_5) {
                     MESSAGE("Lopmonx used Solar Blade!");
-                    MESSAGE("Lopmonx took in sunlight!");
+                    MESSAGE("Lopmonx absorbed light!");
                     ANIMATION(ANIM_TYPE_MOVE, move2, player);
                 } else {
                     NOT MESSAGE("Lopmonx used Solar Blade!");
                     ANIMATION(ANIM_TYPE_MOVE, move2, player);
-                    MESSAGE("Lopmonx took in sunlight!");
+                    MESSAGE("Lopmonx absorbed light!");
                 }
                 MESSAGE("Lopmonx used Solar Blade!");
             }

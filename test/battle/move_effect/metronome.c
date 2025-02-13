@@ -16,7 +16,11 @@ SINGLE_BATTLE_TEST("Metronome picks a random move")
     } SCENE {
         MESSAGE("Lopmonx used Metronome!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_METRONOME, player);
+<<<<<<< HEAD
         MESSAGE("Lopmonx used Scratch!");
+=======
+        MESSAGE("Waggling a finger let it use Scratch!");
+>>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
         HP_BAR(opponent);
     }
@@ -35,9 +39,15 @@ SINGLE_BATTLE_TEST("Metronome's called powder move fails against Grass Types")
     } SCENE {
         MESSAGE("Lopmonx used Metronome!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_METRONOME, player);
+<<<<<<< HEAD
         MESSAGE("Lopmonx used PoisonPowder!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_POISON_POWDER, player);
         MESSAGE("It doesn't affect Foe Betamon…");
+=======
+        MESSAGE("Waggling a finger let it use Poison Powder!");
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_POISON_POWDER, player);
+        MESSAGE("It doesn't affect the opposing Tangela…");
+>>>>>>> upstream/master
         NOT STATUS_ICON(opponent, poison: TRUE);
     }
 }
@@ -53,9 +63,13 @@ SINGLE_BATTLE_TEST("Metronome's called multi-hit move hits multiple times")
     } SCENE {
         MESSAGE("Lopmonx used Metronome!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_METRONOME, player);
+<<<<<<< HEAD
         MESSAGE("Lopmonx used Rock Blast!");
+=======
+        MESSAGE("Waggling a finger let it use Rock Blast!");
+>>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROCK_BLAST, player);
         HP_BAR(opponent);
-        MESSAGE("Hit 5 time(s)!");
+        MESSAGE("The Pokémon was hit 5 time(s)!");
     }
 }

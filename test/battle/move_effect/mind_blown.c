@@ -77,7 +77,11 @@ SINGLE_BATTLE_TEST("Mind Blown causes the user & the target to faint when below 
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MIND_BLOWN, player);
         HP_BAR(opponent, hp: 0);
+<<<<<<< HEAD
         MESSAGE("Foe Lopmonx fainted!");
+=======
+        MESSAGE("The opposing Wobbuffet fainted!");
+>>>>>>> upstream/master
         HP_BAR(player, hp: 0);
         MESSAGE("Lopmonx fainted!");
     }
@@ -96,11 +100,19 @@ DOUBLE_BATTLE_TEST("Mind Blown causes everyone to faint in a double battle")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MIND_BLOWN, playerLeft);
         HP_BAR(opponentLeft, hp: 0);
+<<<<<<< HEAD
         MESSAGE("Foe Hopmon fainted!");
+=======
+        MESSAGE("The opposing Abra fainted!");
+>>>>>>> upstream/master
         HP_BAR(playerRight, hp: 0);
         MESSAGE("Exveemon fainted!");
         HP_BAR(opponentRight, hp: 0);
+<<<<<<< HEAD
         MESSAGE("Foe Kakkinmon fainted!");
+=======
+        MESSAGE("The opposing Kadabra fainted!");
+>>>>>>> upstream/master
         HP_BAR(playerLeft, hp: 0);
         MESSAGE("Lopmonx fainted!");
     }
@@ -133,7 +145,11 @@ SINGLE_BATTLE_TEST("Mind Blown is blocked by Damp")
             HP_BAR(player, damage: 200);
         }
         ABILITY_POPUP(opponent, ABILITY_DAMP);
+<<<<<<< HEAD
         MESSAGE("Foe Golduck's Damp prevents Lopmonx from using Mind Blown!");
+=======
+        MESSAGE("The opposing Golduck's Damp prevents Wobbuffet from using Mind Blown!");
+>>>>>>> upstream/master
     }
 }
 

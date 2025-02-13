@@ -22,7 +22,11 @@ SINGLE_BATTLE_TEST("Download raises Attack if player has lower Def than Sp. Def"
         {
             ABILITY_POPUP(opponent, ABILITY_DOWNLOAD);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
+<<<<<<< HEAD
             MESSAGE("Foe Dokunemon's Download raised its Attack!");
+=======
+            MESSAGE("The opposing Porygon's Download raised its Attack!");
+>>>>>>> upstream/master
         }
         HP_BAR(player, captureDamage: &results[i].damage);
     } FINALLY {
@@ -73,7 +77,7 @@ SINGLE_BATTLE_TEST("Download doesn't activate if target hasn't been sent out yet
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, player);
         // Everyone faints.
 
-        MESSAGE("Go! Porygon!");
+        SEND_IN_MESSAGE("Porygon");
         NONE_OF {
             ABILITY_POPUP(player, ABILITY_DOWNLOAD);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
@@ -85,12 +89,41 @@ SINGLE_BATTLE_TEST("Download doesn't activate if target hasn't been sent out yet
         {
             ABILITY_POPUP(opponent, ABILITY_DOWNLOAD);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
+<<<<<<< HEAD
             MESSAGE("Foe Renamon_x's Download raised its Sp. Atk!");
+=======
+            MESSAGE("The opposing Porygon2's Download raised its Sp. Atk!");
+>>>>>>> upstream/master
         }
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TRI_ATTACK, opponent);
         HP_BAR(player, captureDamage: &results[i].damageSpecial);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damageSpecial, Q_4_12(1.5), results[1].damageSpecial);
+    }
+}
+
+DOUBLE_BATTLE_TEST("Download raises Sp.Attack if enemies have lower total Sp. Def than Def", s16 damage)
+{
+    u32 ability;
+    PARAMETRIZE { ability = ABILITY_TRACE; }
+    PARAMETRIZE { ability = ABILITY_DOWNLOAD; }
+    GIVEN {
+        PLAYER(SPECIES_PORYGON) { Ability(ability); SpAttack(100); }
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET) { Defense(200); SpDefense(100); }
+        OPPONENT(SPECIES_WOBBUFFET) { Defense(100); SpDefense(150); }
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_TRI_ATTACK, target: opponentLeft ); }
+    } SCENE {
+        if (ability == ABILITY_DOWNLOAD)
+        {
+            ABILITY_POPUP(playerLeft, ABILITY_DOWNLOAD);
+            ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
+            MESSAGE("Porygon's Download raised its Sp. Atk!");
+        }
+        HP_BAR(opponentLeft, captureDamage: &results[i].damage);
+    } FINALLY {
+        EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
     }
 }

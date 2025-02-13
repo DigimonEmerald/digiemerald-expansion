@@ -59,8 +59,13 @@ DOUBLE_BATTLE_TEST("Mirror Herb does not trigger for Ally's Soul Heart's stat ra
     } WHEN {
         TURN { MOVE(playerRight, MOVE_TACKLE, target:opponentLeft); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Exveemon used Tackle!");
         MESSAGE("Foe Lopmonx fainted!");
+=======
+        MESSAGE("Wynaut used Tackle!");
+        MESSAGE("The opposing Wobbuffet fainted!");
+>>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerLeft);

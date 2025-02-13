@@ -18,8 +18,8 @@ SINGLE_BATTLE_TEST("Telekinesis makes the target unable to avoid any attacks mad
         TURN { MOVE(player, MOVE_SCREECH, hit:FALSE); }
     } SCENE {
         MESSAGE("Lopmonx used Telekinesis!");
-        MESSAGE("Foe Exveemon was hurled into the air!");
-        MESSAGE("Foe Exveemon used Minimize!");
+        MESSAGE("The opposing Exveemon was hurled into the air!");
+        MESSAGE("The opposing Exveemon used Minimize!");
         MESSAGE("Lopmonx used Screech!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCREECH, player);
         NOT MESSAGE("Lopmonx's attack missed!");
@@ -37,10 +37,10 @@ SINGLE_BATTLE_TEST("Telekinesis ends after 3 turns")
         TURN { }
     } SCENE {
         MESSAGE("Lopmonx used Telekinesis!");
-        MESSAGE("Foe Exveemon was hurled into the air!");
+        MESSAGE("The opposing Exveemon was hurled into the air!");
         MESSAGE("Lopmonx used Celebrate!");
         MESSAGE("Lopmonx used Celebrate!");
-        MESSAGE("Foe Exveemon was freed from the telekinesis!");
+        MESSAGE("The opposing Exveemon was freed from the telekinesis!");
     }
 }
 
@@ -59,16 +59,16 @@ SINGLE_BATTLE_TEST("Telekinesis makes the target immune to Ground-type attacks")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BULLDOZE, player);
         HP_BAR(opponent);
         MESSAGE("Lopmonx used Telekinesis!");
-        MESSAGE("Foe Exveemon was hurled into the air!");
+        MESSAGE("The opposing Exveemon was hurled into the air!");
         MESSAGE("Lopmonx used Bulldoze!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_BULLDOZE, player);
             HP_BAR(opponent);
         }
-        MESSAGE("It doesn't affect Foe Exveemon…");
+        MESSAGE("It doesn't affect the opposing Exveemon…");
     }
 }
 
 TO_DO_BATTLE_TEST("Baton Pass passes Telekinesis' effect");
 //Bulbapedia doesn't confirm what happens with Diglett, Dugtrio, Sandygast and Palossand, so it needs to be tested in-game.
-TO_DO_BATTLE_TEST("Baton Pass removes Telekinesis' effect disappears if the switching-in mon is Mega Tsumemon"); 
+TO_DO_BATTLE_TEST("Baton Pass removes Telekinesis' effect disappears if the switching-in mon is Mega Tsumemon");

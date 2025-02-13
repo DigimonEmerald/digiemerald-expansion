@@ -58,7 +58,7 @@ SINGLE_BATTLE_TEST("Semi-invulnerable moves make the user semi-invulnerable turn
                     break;
                 case MOVE_PHANTOM_FORCE:
                     NOT MESSAGE("Lopmonx vanished instantly!");
-                    MESSAGE("Lopmonx used PhantomForce!");
+                    MESSAGE("Lopmonx used Phantom Force!");
                     break;
                 case MOVE_SHADOW_FORCE:
                     NOT MESSAGE("Lopmonx vanished instantly!");
@@ -94,8 +94,8 @@ SINGLE_BATTLE_TEST("Semi-invulnerable moves make the user semi-invulnerable turn
             ANIMATION(ANIM_TYPE_MOVE, move, player);
 
         // Aerial Ace cannot miss unless the target is semi-invulnerable
-        MESSAGE("Foe Lopmonx used Aerial Ace!");
-        MESSAGE("Foe Lopmonx's attack missed!");
+        MESSAGE("The opposing Lopmonx used Aerial Ace!");
+        MESSAGE("The opposing Lopmonx's attack missed!");
         // Attack turn
         switch (move)
         {
@@ -112,7 +112,7 @@ SINGLE_BATTLE_TEST("Semi-invulnerable moves make the user semi-invulnerable turn
                 MESSAGE("Lopmonx used Dive!");
                 break;
             case MOVE_PHANTOM_FORCE:
-                MESSAGE("Lopmonx used PhantomForce!");
+                MESSAGE("Lopmonx used Phantom Force!");
                 break;
             case MOVE_SHADOW_FORCE:
                 MESSAGE("Lopmonx used Shadow Force!");
@@ -163,7 +163,7 @@ SINGLE_BATTLE_TEST("Semi-invulnerable moves don't need to charge with Power Herb
                     break;
                 case MOVE_PHANTOM_FORCE:
                     NOT MESSAGE("Lopmonx vanished instantly!");
-                    MESSAGE("Lopmonx used PhantomForce!");
+                    MESSAGE("Lopmonx used Phantom Force!");
                     break;
                 case MOVE_SHADOW_FORCE:
                     NOT MESSAGE("Lopmonx vanished instantly!");
@@ -215,7 +215,7 @@ SINGLE_BATTLE_TEST("Semi-invulnerable moves don't need to charge with Power Herb
                     MESSAGE("Lopmonx used Dive!");
                     break;
                 case MOVE_PHANTOM_FORCE:
-                    MESSAGE("Lopmonx used PhantomForce!");
+                    MESSAGE("Lopmonx used Phantom Force!");
                     break;
                 case MOVE_SHADOW_FORCE:
                     MESSAGE("Lopmonx used Shadow Force!");

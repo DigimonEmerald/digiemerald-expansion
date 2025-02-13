@@ -19,6 +19,7 @@ SINGLE_BATTLE_TEST("Corrosive Gas destroys the target's item or fails if the tar
     } WHEN {
         TURN { MOVE(player, MOVE_CORROSIVE_GAS); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Lopmonx used CorrosiveGas!");
         if (item == ITEM_POTION) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_CORROSIVE_GAS, player);
@@ -26,6 +27,15 @@ SINGLE_BATTLE_TEST("Corrosive Gas destroys the target's item or fails if the tar
         }
         else {
             MESSAGE("It had no effect on Foe Lopmonx!");
+=======
+        MESSAGE("Wobbuffet used Corrosive Gas!");
+        if (item == ITEM_POTION) {
+            ANIMATION(ANIM_TYPE_MOVE, MOVE_CORROSIVE_GAS, player);
+            MESSAGE("Wobbuffet corroded the opposing Wobbuffet's Potion!");
+        }
+        else {
+            MESSAGE("It won't have any effect on the opposing Wobbuffet!");
+>>>>>>> upstream/master
         }
     } THEN {
         EXPECT_EQ(opponent->item, ITEM_NONE);
@@ -40,11 +50,19 @@ SINGLE_BATTLE_TEST("Corrosive Gas doesn't destroy the item of a Pokemon with the
     } WHEN {
         TURN { MOVE(player, MOVE_CORROSIVE_GAS); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Lopmonx used CorrosiveGas!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CORROSIVE_GAS, player);
         NOT MESSAGE("Lopmonx corroded Foe Lopmonx's Potion!");
         ABILITY_POPUP(opponent, ABILITY_STICKY_HOLD);
         MESSAGE("Foe Sunmon's Sticky Hold made CorrosiveGas ineffective!");
+=======
+        MESSAGE("Wobbuffet used Corrosive Gas!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_CORROSIVE_GAS, player);
+        NOT MESSAGE("Wobbuffet corroded the opposing Wobbuffet's Potion!");
+        ABILITY_POPUP(opponent, ABILITY_STICKY_HOLD);
+        MESSAGE("The opposing Muk's Sticky Hold made Corrosive Gas ineffective!");
+>>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(opponent->item, ITEM_POISON_BARB);
     }
@@ -59,10 +77,17 @@ SINGLE_BATTLE_TEST("Items lost to Corrosive Gas cannot be restored by Recycle")
     } WHEN {
         TURN { MOVE(player, MOVE_CORROSIVE_GAS); MOVE(opponent, MOVE_RECYCLE); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Lopmonx used CorrosiveGas!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CORROSIVE_GAS, player);
         MESSAGE("Lopmonx corroded Foe Lopmonx's Oran Berry!");
         MESSAGE("Foe Lopmonx used Recycle!");
+=======
+        MESSAGE("Wobbuffet used Corrosive Gas!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_CORROSIVE_GAS, player);
+        MESSAGE("Wobbuffet corroded the opposing Wobbuffet's Oran Berry!");
+        MESSAGE("The opposing Wobbuffet used Recycle!");
+>>>>>>> upstream/master
         MESSAGE("But it failed!");
     } THEN {
         EXPECT_EQ(opponent->item, ITEM_NONE);
@@ -93,10 +118,15 @@ DOUBLE_BATTLE_TEST("Corrosive Gas destroys foes and ally's items if they have on
     } WHEN {
         TURN { MOVE(playerRight, MOVE_CORROSIVE_GAS); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Exveemon used CorrosiveGas!");
+=======
+        MESSAGE("Wynaut used Corrosive Gas!");
+>>>>>>> upstream/master
         if (itemPlayerLeft == ITEM_CHERI_BERRY) {
             MESSAGE("Exveemon corroded Lopmonx's Cheri Berry!");
         } else {
+<<<<<<< HEAD
             MESSAGE("It had no effect on Lopmonx!");
         }
         if (itemOpponentLeft == ITEM_ORAN_BERRY) {
@@ -108,6 +138,19 @@ DOUBLE_BATTLE_TEST("Corrosive Gas destroys foes and ally's items if they have on
             MESSAGE("Exveemon corroded Foe Kakkinmon's Chesto Berry!");
         } else {
             MESSAGE("It had no effect on Foe Kakkinmon!");
+=======
+            MESSAGE("It won't have any effect on Wobbuffet!");
+        }
+        if (itemOpponentLeft == ITEM_ORAN_BERRY) {
+            MESSAGE("Wynaut corroded the opposing Abra's Oran Berry!");
+        } else {
+            MESSAGE("It won't have any effect on the opposing Abra!");
+        }
+        if (itemOpponentRight == ITEM_CHESTO_BERRY) {
+            MESSAGE("Wynaut corroded the opposing Kadabra's Chesto Berry!");
+        } else {
+            MESSAGE("It won't have any effect on the opposing Kadabra!");
+>>>>>>> upstream/master
         }
 
     } THEN {
@@ -117,3 +160,6 @@ DOUBLE_BATTLE_TEST("Corrosive Gas destroys foes and ally's items if they have on
         EXPECT_EQ(opponentRight->item, ITEM_NONE);
     }
 }
+
+TO_DO_BATTLE_TEST("Corrosive Gas doesn't destroy the item of a Pokemon behind a Substitute");
+TO_DO_BATTLE_TEST("Corrosive Gas doesn't destroy items if they change the Pokémon's form"); // Giratina, Genesect, Silvally, Zacian, Zamazenta. Bulbapedia hasn't confirmed Arceus or Ogerpon, but it's a safe assumption that they will also fail.

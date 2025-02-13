@@ -17,8 +17,13 @@ SINGLE_BATTLE_TEST("Air Balloon prevents the holder from taking damage from grou
     } WHEN {
         TURN { MOVE(opponent, MOVE_EARTHQUAKE); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Lopmonx floats in the air with its Air Balloon!");
         MESSAGE("Foe Lopmonx used Earthquake!");
+=======
+        MESSAGE("Wobbuffet floats in the air with its Air Balloon!");
+        MESSAGE("The opposing Wobbuffet used Earthquake!");
+>>>>>>> upstream/master
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
         MESSAGE("It doesn't affect Lopmonx…");
     }
@@ -32,9 +37,15 @@ SINGLE_BATTLE_TEST("Air Balloon pops when the holder is hit by a move that is no
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Lopmonx floats in the air with its Air Balloon!");
         MESSAGE("Foe Lopmonx used Tackle!");
         MESSAGE("Lopmonx's Air Balloon popped!");
+=======
+        MESSAGE("Wobbuffet floats in the air with its Air Balloon!");
+        MESSAGE("The opposing Wobbuffet used Tackle!");
+        MESSAGE("Wobbuffet's Air Balloon popped!");
+>>>>>>> upstream/master
     }
 }
 
@@ -47,10 +58,17 @@ SINGLE_BATTLE_TEST("Air Balloon no longer prevents the holder from taking damage
         TURN { MOVE(opponent, MOVE_TACKLE); }
         TURN { MOVE(opponent, MOVE_EARTHQUAKE); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Lopmonx floats in the air with its Air Balloon!");
         MESSAGE("Foe Lopmonx used Tackle!");
         MESSAGE("Lopmonx's Air Balloon popped!");
         MESSAGE("Foe Lopmonx used Earthquake!");
+=======
+        MESSAGE("Wobbuffet floats in the air with its Air Balloon!");
+        MESSAGE("The opposing Wobbuffet used Tackle!");
+        MESSAGE("Wobbuffet's Air Balloon popped!");
+        MESSAGE("The opposing Wobbuffet used Earthquake!");
+>>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
         NOT MESSAGE("It doesn't affect Lopmonx…");
     }
@@ -67,10 +85,17 @@ SINGLE_BATTLE_TEST("Air Balloon can not be restored with Recycle after it has be
             MOVE(player, MOVE_RECYCLE);
         }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Lopmonx floats in the air with its Air Balloon!");
         MESSAGE("Foe Lopmonx used Tackle!");
         MESSAGE("Lopmonx's Air Balloon popped!");
         MESSAGE("Lopmonx used Recycle!");
+=======
+        MESSAGE("Wobbuffet floats in the air with its Air Balloon!");
+        MESSAGE("The opposing Wobbuffet used Tackle!");
+        MESSAGE("Wobbuffet's Air Balloon popped!");
+        MESSAGE("Wobbuffet used Recycle!");
+>>>>>>> upstream/master
         MESSAGE("But it failed!");
     }
 }
@@ -115,8 +140,14 @@ SINGLE_BATTLE_TEST("Air Balloon pops before it can be stolen with Thief or Covet
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Lopmonx floats in the air with its Air Balloon!");
         MESSAGE("Lopmonx's Air Balloon popped!");
         NOT MESSAGE("Foe Lopmonx stole Lopmonx's Air Balloon!");
+=======
+        MESSAGE("Wobbuffet floats in the air with its Air Balloon!");
+        MESSAGE("Wobbuffet's Air Balloon popped!");
+        NOT MESSAGE("The opposing Wobbuffet stole Wobbuffet's Air Balloon!");
+>>>>>>> upstream/master
     }
 }

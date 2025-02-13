@@ -58,7 +58,7 @@ SINGLE_BATTLE_TEST("Thunder, Ice and Fire Fang cause the opponent to flinch 10% 
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, player);
         HP_BAR(opponent);
-        MESSAGE("Foe Lopmonx flinched!");
+        MESSAGE("The opposing Lopmonx flinched and couldn't move!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
     }
 }

@@ -6,13 +6,18 @@ ASSUMPTIONS
     ASSUME(gMovesInfo[MOVE_DOUBLE_TEAM].effect == EFFECT_EVASION_UP);
 }
 
-SINGLE_BATTLE_TEST("Double Team raises Evasion")
+SINGLE_BATTLE_TEST("Double Team raises Evasion by 1 stage")
 {
-    ASSUME(gMovesInfo[MOVE_SCRATCH].accuracy == 100);
     PASSES_RANDOMLY(gMovesInfo[MOVE_SCRATCH].accuracy * 3 / 4, 100, RNG_ACCURACY);
     GIVEN {
+<<<<<<< HEAD
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
+=======
+        ASSUME(gMovesInfo[MOVE_SCRATCH].accuracy == 100);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+>>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_DOUBLE_TEAM); MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {

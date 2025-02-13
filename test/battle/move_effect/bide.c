@@ -25,7 +25,11 @@ SINGLE_BATTLE_TEST("Bide deals twice the taken damage over two turns")
         MESSAGE("Lopmonx is storing energy!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         HP_BAR(player, captureDamage: &damage2);
+<<<<<<< HEAD
         MESSAGE("Lopmonx unleashed energy!");
+=======
+        MESSAGE("Wobbuffet unleashed its energy!");
+>>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BIDE, player);
         HP_BAR(opponent, captureDamage: &bideDamage);
     } THEN {

@@ -3,7 +3,7 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_WATER_GUN].power != 0);
+    ASSUME(!IS_MOVE_STATUS(MOVE_WATER_GUN));
 }
 
 SINGLE_BATTLE_TEST("Battle Bond does not transform species other than Greninja")
@@ -16,7 +16,11 @@ SINGLE_BATTLE_TEST("Battle Bond does not transform species other than Greninja")
         TURN { MOVE(player, MOVE_WATER_GUN); SEND_OUT(opponent, 1); }
     } SCENE {
         HP_BAR(opponent);
+<<<<<<< HEAD
         MESSAGE("Foe Lopmonx fainted!");
+=======
+        MESSAGE("The opposing Wobbuffet fainted!");
+>>>>>>> upstream/master
         NONE_OF {
             ABILITY_POPUP(player, ABILITY_BATTLE_BOND);
             MESSAGE("Lopmonx became fully charged due to its bond with its trainer!");
@@ -54,7 +58,11 @@ SINGLE_BATTLE_TEST("Battle Bond transforms player's Greninja - Singles")
 
     } SCENE {
         HP_BAR(opponent);
+<<<<<<< HEAD
         MESSAGE("Foe Lopmonx fainted!");
+=======
+        MESSAGE("The opposing Wobbuffet fainted!");
+>>>>>>> upstream/master
         if (monsCountOpponent != 1) {
             ABILITY_POPUP(player, ABILITY_BATTLE_BOND);
             MESSAGE("Greninja became fully charged due to its bond with its trainer!");
@@ -104,12 +112,12 @@ SINGLE_BATTLE_TEST("Battle Bond transforms opponent's Greninja - Singles")
         MESSAGE("Lopmonx fainted!");
         if (monsCountPlayer != 1) {
             ABILITY_POPUP(opponent, ABILITY_BATTLE_BOND);
-            MESSAGE("Foe Greninja became fully charged due to its bond with its trainer!");
-            MESSAGE("Foe Greninja became Ash-Greninja!");
+            MESSAGE("The opposing Greninja became fully charged due to its bond with its trainer!");
+            MESSAGE("The opposing Greninja became Ash-Greninja!");
         } else {
             NONE_OF {
                 ABILITY_POPUP(opponent, ABILITY_BATTLE_BOND);
-                MESSAGE("Foe Greninja became fully charged due to its bond with its trainer!");
+                MESSAGE("The opposing Greninja became fully charged due to its bond with its trainer!");
             }
         }
     } FINALLY {

@@ -19,19 +19,19 @@ SINGLE_BATTLE_TEST("Tailwind applies for 4 turns")
         TURN {}
         TURN {}
     } SCENE {
-        MESSAGE("Foe Lopmonx used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
         MESSAGE("Lopmonx used Tailwind!");
 
         MESSAGE("Lopmonx used Celebrate!");
-        MESSAGE("Foe Lopmonx used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 
         MESSAGE("Lopmonx used Celebrate!");
-        MESSAGE("Foe Lopmonx used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 
         MESSAGE("Lopmonx used Celebrate!");
-        MESSAGE("Foe Lopmonx used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 
-        MESSAGE("Foe Lopmonx used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
         MESSAGE("Lopmonx used Celebrate!");
     }
 }
@@ -49,7 +49,7 @@ DOUBLE_BATTLE_TEST("Tailwind affects partner on first turn")
     } SCENE {
         MESSAGE("Lopmonx used Tailwind!");
         MESSAGE("Exveemon used Celebrate!");
-        MESSAGE("Foe Lopmonx used Celebrate!");
-        MESSAGE("Foe Exveemon used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
+        MESSAGE("The opposing Exveemon used Celebrate!");
     }
 }

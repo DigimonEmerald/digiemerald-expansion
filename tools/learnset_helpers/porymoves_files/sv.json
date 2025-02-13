@@ -36838,7 +36838,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "WORMADAM_PLANT_CLOAK": {
+  "WORMADAM_PLANT": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -58132,7 +58132,7 @@
     ],
     "TutorMoves": []
   },
-  "MEOWSTIC_MALE": {
+  "MEOWSTIC_M": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -72171,7 +72171,7 @@
     ],
     "TutorMoves": []
   },
-  "INDEEDEE_MALE": {
+  "INDEEDEE_M": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -73494,7 +73494,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "URSHIFU_SINGLE_STRIKE_STYLE": {
+  "URSHIFU_SINGLE_STRIKE": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -89091,21 +89091,21 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "CHOROMON_ALOLAN": {
+  "CHOROMON_ALOLA": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
-  "MOKUMON_ALOLAN": {
+  "MOKUMON_ALOLA": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
-  "PICHIMON_ALOLAN": {
+  "PICHIMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -89263,7 +89263,7 @@
     ],
     "TutorMoves": []
   },
-  "POPOMON_ALOLAN": {
+  "POPOMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -89398,7 +89398,7 @@
     ],
     "TutorMoves": []
   },
-  "POYOMON_ALOLAN": {
+  "POYOMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -89568,7 +89568,7 @@
     ],
     "TutorMoves": []
   },
-  "RELEMON_ALOLAN": {
+  "RELEMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -89687,7 +89687,7 @@
     ],
     "TutorMoves": []
   },
-  "SAKUMON_ALOLAN": {
+  "SAKUMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -89833,7 +89833,7 @@
     ],
     "TutorMoves": []
   },
-  "BUDMON_ALOLAN": {
+  "BUDMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -89944,7 +89944,7 @@
     ],
     "TutorMoves": []
   },
-  "BUKAMON_ALOLAN": {
+  "BUKAMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -90075,7 +90075,7 @@
     ],
     "TutorMoves": []
   },
-  "CALUMON_ALOLAN": {
+  "CALUMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -90192,7 +90192,7 @@
     ],
     "TutorMoves": []
   },
-  "CHAPMON_ALOLAN": {
+  "CHAPMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -90327,7 +90327,7 @@
     ],
     "TutorMoves": []
   },
-  "MONIMON_ALOLAN": {
+  "MONIMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -90453,7 +90453,7 @@
     ],
     "TutorMoves": []
   },
-  "MOONMON_ALOLAN": {
+  "MOONMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -90585,7 +90585,7 @@
     ],
     "TutorMoves": []
   },
-  "MOTIMON_ALOLAN": {
+  "MOTIMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -90723,7 +90723,7 @@
     ],
     "TutorMoves": []
   },
-  "SAKUTTOMON_ALOLAN": {
+  "SAKUTTOMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -90862,7 +90862,7 @@
     ],
     "TutorMoves": []
   },
-  "SUNMON_ALOLAN": {
+  "SUNMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -91005,7 +91005,7 @@
     ],
     "TutorMoves": []
   },
-  "AGUMON_ALOLAN": {
+  "AGUMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -91150,14 +91150,14 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "AGUMON_EXPERT_ALOLAN": {
+  "AGUMON_EXPERT_ALOLA": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
-  "CALUMON_GALARIAN": {
+  "CALUMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -91279,21 +91279,21 @@
     ],
     "TutorMoves": []
   },
-  "NEGAMON_GALARIAN": {
+  "NEGAMON_GALAR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
-  "NYAROMON_GALARIAN": {
+  "NYAROMON_GALAR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
-  "PAGUMON_GALARIAN": {
+  "PAGUMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -91427,7 +91427,7 @@
     ],
     "TutorMoves": []
   },
-  "PICKMON_SILVER_GALARIAN": {
+  "PICKMON_SILVER_GALAR": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -91596,14 +91596,14 @@
     ],
     "TutorMoves": []
   },
-  "PINAMON_GALARIAN": {
+  "PINAMON_GALAR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
-  "ARMADILMON_GALARIAN": {
+  "ARMADILMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -91750,7 +91750,7 @@
     ],
     "TutorMoves": []
   },
-  "DRACOMON_X_GALARIAN": {
+  "DRACOMON_X_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -91860,7 +91860,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "EBIBURGMON_GALARIAN": {
+  "EBIBURGMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -91973,7 +91973,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "EKAKIMON_GALARIAN": {
+  "EKAKIMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -92085,7 +92085,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "LIOLLMON_GALARIAN": {
+  "LIOLLMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -92280,56 +92280,56 @@
     ],
     "TutorMoves": []
   },
-  "PATAMON_GALARIAN": {
+  "PATAMON_GALAR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
-  "TOYAGUMON_GALARIAN": {
+  "TOYAGUMON_GALAR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
-  "TSUKAIMON_GALARIAN": {
+  "TSUKAIMON_GALAR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
-  "DARUMAKA_GALARIAN": {
+  "DARUMAKA_GALAR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
-  "DARMANITAN_GALARIAN": {
+  "DARMANITAN_GALAR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
-  "YAMASK_GALARIAN": {
+  "YAMASK_GALAR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
-  "STUNFISK_GALARIAN": {
+  "STUNFISK_GALAR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
-  "FRIMON_HISUIAN": {
+  "FRIMON_HISUI": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -92448,7 +92448,7 @@
     ],
     "TutorMoves": []
   },
-  "GIGIMON_HISUIAN": {
+  "GIGIMON_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -92594,7 +92594,7 @@
     ],
     "TutorMoves": []
   },
-  "XIAOMON_HISUIAN": {
+  "XIAOMON_HISUI": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -92711,7 +92711,7 @@
     ],
     "TutorMoves": []
   },
-  "YAAMON_HISUIAN": {
+  "YAAMON_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -92837,7 +92837,7 @@
     ],
     "TutorMoves": []
   },
-  "GABUMON_X_HISUIAN": {
+  "GABUMON_X_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -92982,7 +92982,7 @@
     ],
     "TutorMoves": []
   },
-  "MONMON_HISUIAN": {
+  "MONMON_HISUI": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -93118,7 +93118,7 @@
     ],
     "TutorMoves": []
   },
-  "MUSHROOMON_HISUIAN": {
+  "MUSHROOMON_HISUI": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -93237,7 +93237,7 @@
     ],
     "TutorMoves": []
   },
-  "SAMUROTT_HISUIAN": {
+  "SAMUROTT_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -93379,7 +93379,7 @@
     ],
     "TutorMoves": []
   },
-  "LILLIGANT_HISUIAN": {
+  "LILLIGANT_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -93642,7 +93642,7 @@
     ],
     "TutorMoves": []
   },
-  "ZORUA_HISUIAN": {
+  "ZORUA_HISUI": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -93754,7 +93754,7 @@
     ],
     "TutorMoves": []
   },
-  "ZOROARK_HISUIAN": {
+  "ZOROARK_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -93894,7 +93894,7 @@
     ],
     "TutorMoves": []
   },
-  "BRAVIARY_HISUIAN": {
+  "BRAVIARY_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -94030,7 +94030,7 @@
     ],
     "TutorMoves": []
   },
-  "SLIGGOO_HISUIAN": {
+  "SLIGGOO_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -94135,7 +94135,7 @@
     ],
     "TutorMoves": []
   },
-  "GOODRA_HISUIAN": {
+  "GOODRA_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -94280,7 +94280,7 @@
     ],
     "TutorMoves": []
   },
-  "AVALUGG_HISUIAN": {
+  "AVALUGG_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -94416,7 +94416,7 @@
     ],
     "TutorMoves": []
   },
-  "DECIDUEYE_HISUIAN": {
+  "DECIDUEYE_HISUI": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -94555,7 +94555,7 @@
     ],
     "TutorMoves": []
   },
-  "CHUUMON_PALDEAN_COMBAT_BREED": {
+  "CHUUMON_PALDEA_COMBAT": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -94664,7 +94664,7 @@
     ],
     "TutorMoves": []
   },
-  "CHUUMON_PALDEAN_BLAZE_BREED": {
+  "CHUUMON_PALDEA_BLAZE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -94779,7 +94779,7 @@
     ],
     "TutorMoves": []
   },
-  "CHUUMON_PALDEAN_AQUA_BREED": {
+  "CHUUMON_PALDEA_AQUA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -94891,7 +94891,7 @@
     ],
     "TutorMoves": []
   },
-  "KUDAMON_PALDEAN": {
+  "KUDAMON_PALDEA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -95417,14 +95417,14 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "WORMADAM_SANDY_CLOAK": {
+  "WORMADAM_SANDY": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": []
   },
-  "WORMADAM_TRASH_CLOAK": {
+  "WORMADAM_TRASH": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],
@@ -96274,7 +96274,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "FLOETTE_ETERNAL_FLOWER": {
+  "FLOETTE_ETERNAL": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -96381,7 +96381,7 @@
     ],
     "TutorMoves": []
   },
-  "MEOWSTIC_FEMALE": {
+  "MEOWSTIC_F": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -97091,7 +97091,7 @@
     ],
     "TutorMoves": []
   },
-  "INDEEDEE_FEMALE": {
+  "INDEEDEE_F": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -97190,7 +97190,7 @@
     ],
     "TutorMoves": []
   },
-  "URSHIFU_RAPID_STRIKE_STYLE": {
+  "URSHIFU_RAPID_STRIKE": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -97318,7 +97318,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "CALYREX_ICE_RIDER": {
+  "CALYREX_ICE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -97525,7 +97525,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "CALYREX_SHADOW_RIDER": {
+  "CALYREX_SHADOW": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -97873,7 +97873,7 @@
     ],
     "TutorMoves": []
   },
-  "OINKOLOGNE_MALE": {
+  "OINKOLOGNE_M": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -97941,7 +97941,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "OINKOLOGNE_FEMALE": {
+  "OINKOLOGNE_F": {
     "LevelMoves": [
       {
         "Level": 1,

@@ -16,7 +16,11 @@ SINGLE_BATTLE_TEST("Teeter Dance confuses target")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TEETER_DANCE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, opponent);
+<<<<<<< HEAD
         MESSAGE("Foe Lopmonx became confused!");
+=======
+        MESSAGE("The opposing Wobbuffet became confused!");
+>>>>>>> upstream/master
     }
 }
 
@@ -32,7 +36,11 @@ SINGLE_BATTLE_TEST("Teeter Dance confusion is blocked by Own Tempo")
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_TEETER_DANCE, player);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, opponent);
+<<<<<<< HEAD
             MESSAGE("Foe Lopmonx became confused!");
+=======
+            MESSAGE("The opposing Wobbuffet became confused!");
+>>>>>>> upstream/master
         }
     }
 }
@@ -49,10 +57,18 @@ DOUBLE_BATTLE_TEST("Teeter Dance can confuse foes and allies")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TEETER_DANCE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, opponentLeft);
+<<<<<<< HEAD
         MESSAGE("Foe Lopmonx became confused!");
+=======
+        MESSAGE("The opposing Wobbuffet became confused!");
+>>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, playerRight);
         MESSAGE("Exveemon became confused!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, opponentRight);
+<<<<<<< HEAD
         MESSAGE("Foe Exveemon became confused!");
+=======
+        MESSAGE("The opposing Wynaut became confused!");
+>>>>>>> upstream/master
     }
 }

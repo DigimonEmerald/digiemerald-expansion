@@ -54679,7 +54679,7 @@
       "MOVE_EXPANDING_FORCE"
     ]
   },
-  "MEOWSTIC_MALE": {
+  "MEOWSTIC_M": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -75050,7 +75050,7 @@
     ],
     "TutorMoves": []
   },
-  "INDEEDEE_MALE": {
+  "INDEEDEE_M": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -76790,7 +76790,7 @@
       "MOVE_COACHING"
     ]
   },
-  "URSHIFU_SINGLE_STRIKE_STYLE": {
+  "URSHIFU_SINGLE_STRIKE": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -77588,7 +77588,7 @@
       "MOVE_EXPANDING_FORCE"
     ]
   },
-  "PICHIMON_ALOLAN": {
+  "PICHIMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -77747,7 +77747,7 @@
     ],
     "TutorMoves": []
   },
-  "POPOMON_ALOLAN": {
+  "POPOMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -77873,7 +77873,7 @@
       "MOVE_STEEL_BEAM"
     ]
   },
-  "POYOMON_ALOLAN": {
+  "POYOMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -78022,7 +78022,7 @@
       "MOVE_STEEL_BEAM"
     ]
   },
-  "RELEMON_ALOLAN": {
+  "RELEMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -78135,7 +78135,7 @@
     ],
     "TutorMoves": []
   },
-  "SAKUMON_ALOLAN": {
+  "SAKUMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -78272,7 +78272,7 @@
     ],
     "TutorMoves": []
   },
-  "BUDMON_ALOLAN": {
+  "BUDMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -78376,7 +78376,7 @@
       "MOVE_STEEL_BEAM"
     ]
   },
-  "BUKAMON_ALOLAN": {
+  "BUKAMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -78503,7 +78503,7 @@
       "MOVE_STEEL_BEAM"
     ]
   },
-  "CALUMON_ALOLAN": {
+  "CALUMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -78611,7 +78611,7 @@
     ],
     "TutorMoves": []
   },
-  "CHAPMON_ALOLAN": {
+  "CHAPMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -78741,7 +78741,7 @@
     ],
     "TutorMoves": []
   },
-  "AGUMON_ALOLAN": {
+  "AGUMON_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -78885,7 +78885,7 @@
       "MOVE_DRACO_METEOR"
     ]
   },
-  "AGUMON_EXPERT_ALOLAN": {
+  "AGUMON_EXPERT_ALOLA": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -79045,7 +79045,7 @@
     ],
     "TutorMoves": []
   },
-  "CALUMON_GALARIAN": {
+  "CALUMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -79158,7 +79158,7 @@
       "MOVE_LASH_OUT"
     ]
   },
-  "NEGAMON_GALARIAN": {
+  "NEGAMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -79256,7 +79256,7 @@
       "MOVE_EXPANDING_FORCE"
     ]
   },
-  "NYAROMON_GALARIAN": {
+  "NYAROMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -79385,7 +79385,7 @@
       "MOVE_EXPANDING_FORCE"
     ]
   },
-  "PAGUMON_GALARIAN": {
+  "PAGUMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -79522,7 +79522,7 @@
       "MOVE_EXPANDING_FORCE"
     ]
   },
-  "PICKMON_SILVER_GALARIAN": {
+  "PICKMON_SILVER_GALAR": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -79690,7 +79690,7 @@
       "MOVE_EXPANDING_FORCE"
     ]
   },
-  "PINAMON_GALARIAN": {
+  "PINAMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -79801,7 +79801,7 @@
       "MOVE_DUAL_WINGBEAT"
     ]
   },
-  "ARMADILMON_GALARIAN": {
+  "ARMADILMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -79958,7 +79958,7 @@
       "MOVE_MISTY_EXPLOSION"
     ]
   },
-  "BULUCOMON_GALARIAN": {
+  "BULUCOMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -80147,7 +80147,7 @@
       "MOVE_TRIPLE_AXEL"
     ]
   },
-  "DRACOMON_X_GALARIAN": {
+  "DRACOMON_X_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -80258,7 +80258,7 @@
       "MOVE_EXPANDING_FORCE"
     ]
   },
-  "EBIBURGMON_GALARIAN": {
+  "EBIBURGMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -80373,7 +80373,7 @@
       "MOVE_COACHING"
     ]
   },
-  "EKAKIMON_GALARIAN": {
+  "EKAKIMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -80480,7 +80480,7 @@
       "MOVE_LASH_OUT"
     ]
   },
-  "LIOLLMON_GALARIAN": {
+  "LIOLLMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -80657,7 +80657,7 @@
       "MOVE_EXPANDING_FORCE"
     ]
   },
-  "PATAMON_GALARIAN": {
+  "PATAMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -80776,7 +80776,7 @@
       "MOVE_METEOR_BEAM"
     ]
   },
-  "TOYAGUMON_GALARIAN": {
+  "TOYAGUMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -80890,7 +80890,7 @@
       "MOVE_LASH_OUT"
     ]
   },
-  "TSUKAIMON_GALARIAN": {
+  "TSUKAIMON_GALAR": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -81030,7 +81030,7 @@
       "MOVE_LASH_OUT"
     ]
   },
-  "DARUMAKA_GALARIAN": {
+  "DARUMAKA_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -81147,7 +81147,7 @@
     ],
     "TutorMoves": []
   },
-  "DARMANITAN_GALARIAN": {
+  "DARMANITAN_GALAR": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -81289,7 +81289,7 @@
       "MOVE_LASH_OUT"
     ]
   },
-  "YAMASK_GALARIAN": {
+  "YAMASK_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -81403,7 +81403,7 @@
       "MOVE_POLTERGEIST"
     ]
   },
-  "STUNFISK_GALARIAN": {
+  "STUNFISK_GALAR": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -82254,7 +82254,7 @@
       "MOVE_SCALE_SHOT"
     ]
   },
-  "MEOWSTIC_FEMALE": {
+  "MEOWSTIC_F": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -82839,7 +82839,7 @@
       "MOVE_RISING_VOLTAGE"
     ]
   },
-  "INDEEDEE_FEMALE": {
+  "INDEEDEE_F": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -82945,7 +82945,7 @@
       "MOVE_EXPANDING_FORCE"
     ]
   },
-  "URSHIFU_RAPID_STRIKE_STYLE": {
+  "URSHIFU_RAPID_STRIKE": {
     "LevelMoves": [
       {
         "Level": 0,
@@ -83081,7 +83081,7 @@
       "MOVE_COACHING"
     ]
   },
-  "CALYREX_ICE_RIDER": {
+  "CALYREX_ICE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -83292,7 +83292,7 @@
       "MOVE_LASH_OUT"
     ]
   },
-  "CALYREX_SHADOW_RIDER": {
+  "CALYREX_SHADOW": {
     "LevelMoves": [
       {
         "Level": 1,

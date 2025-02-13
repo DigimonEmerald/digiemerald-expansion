@@ -6,7 +6,7 @@ ASSUMPTIONS
     ASSUME(gMovesInfo[MOVE_U_TURN].effect == EFFECT_HIT_ESCAPE);
 }
 
-SINGLE_BATTLE_TEST("U-turn switches the user out")
+SINGLE_BATTLE_TEST("Hit Escape: U-turn switches the user out")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
@@ -17,11 +17,15 @@ SINGLE_BATTLE_TEST("U-turn switches the user out")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
         HP_BAR(opponent);
+<<<<<<< HEAD
         MESSAGE("Go! Exveemon!");
+=======
+        SEND_IN_MESSAGE("Wynaut");
+>>>>>>> upstream/master
     }
 }
 
-SINGLE_BATTLE_TEST("U-turn does not switch the user out if the battle ends")
+SINGLE_BATTLE_TEST("Hit Escape: U-turn does not switch the user out if the battle ends")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
@@ -35,7 +39,7 @@ SINGLE_BATTLE_TEST("U-turn does not switch the user out if the battle ends")
     }
 }
 
-SINGLE_BATTLE_TEST("U-turn does not switch the user out if no replacements")
+SINGLE_BATTLE_TEST("Hit Escape: U-turn does not switch the user out if no replacements")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
@@ -48,7 +52,7 @@ SINGLE_BATTLE_TEST("U-turn does not switch the user out if no replacements")
     }
 }
 
-SINGLE_BATTLE_TEST("U-turn does not switch the user out if replacements fainted")
+SINGLE_BATTLE_TEST("Hit Escape: U-turn does not switch the user out if replacements fainted")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
@@ -62,7 +66,7 @@ SINGLE_BATTLE_TEST("U-turn does not switch the user out if replacements fainted"
     }
 }
 
-SINGLE_BATTLE_TEST("U-turn does not switch the user out if Wimp Out activates")
+SINGLE_BATTLE_TEST("Hit Escape: U-turn does not switch the user out if Wimp Out activates")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
@@ -79,7 +83,7 @@ SINGLE_BATTLE_TEST("U-turn does not switch the user out if Wimp Out activates")
     }
 }
 
-SINGLE_BATTLE_TEST("U-turn switches the user out if Wimp Out fails to activate")
+SINGLE_BATTLE_TEST("Hit Escape: U-turn switches the user out if Wimp Out fails to activate")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
@@ -91,11 +95,15 @@ SINGLE_BATTLE_TEST("U-turn switches the user out if Wimp Out fails to activate")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
         HP_BAR(opponent);
         NOT ABILITY_POPUP(opponent);
+<<<<<<< HEAD
         MESSAGE("Go for it, Exveemon!");
+=======
+        SEND_IN_MESSAGE("Wynaut");
+>>>>>>> upstream/master
     }
 }
 
-SINGLE_BATTLE_TEST("U-turn switches the user out after Ice Face activates")
+SINGLE_BATTLE_TEST("Hit Escape: U-turn switches the user out after Ice Face activates")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_U_TURN].category == DAMAGE_CATEGORY_PHYSICAL);
@@ -108,12 +116,17 @@ SINGLE_BATTLE_TEST("U-turn switches the user out after Ice Face activates")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
         HP_BAR(opponent);
         ABILITY_POPUP(opponent, ABILITY_ICE_FACE);
+<<<<<<< HEAD
         MESSAGE("Foe Eiscue transformed!");
         MESSAGE("Go! Exveemon!");
+=======
+        MESSAGE("The opposing Eiscue transformed!");
+        SEND_IN_MESSAGE("Wynaut");
+>>>>>>> upstream/master
     }
 }
 
-SINGLE_BATTLE_TEST("Held items are consumed immediately after a mon switched in by U-turn and Intimidate activates after it: player side")
+SINGLE_BATTLE_TEST("Hit Escape: Held items are consumed immediately after a mon switched in by U-turn and Intimidate activates after it: player side")
 {
     GIVEN {
         PLAYER(SPECIES_TAPU_KOKO) { Ability(ABILITY_ELECTRIC_SURGE); };
@@ -136,7 +149,7 @@ SINGLE_BATTLE_TEST("Held items are consumed immediately after a mon switched in 
     }
 }
 
-SINGLE_BATTLE_TEST("Held items are consumed immediately after a mon switched in by U-turn and Intimidate activates after it: opposing side")
+SINGLE_BATTLE_TEST("Hit Escape: Held items are consumed immediately after a mon switched in by U-turn and Intimidate activates after it: opposing side")
 {
     GIVEN {
         PLAYER(SPECIES_TAPU_KOKO) { Ability(ABILITY_ELECTRIC_SURGE); };
@@ -159,7 +172,7 @@ SINGLE_BATTLE_TEST("Held items are consumed immediately after a mon switched in 
     }
 }
 
-SINGLE_BATTLE_TEST("Electric Seed boost is received by the right pokemon after U-turn and Intimidate")
+SINGLE_BATTLE_TEST("Hit Escape: Electric Seed boost is received by the right pokemon after U-turn and Intimidate")
 {
     GIVEN {
         PLAYER(SPECIES_TAPU_KOKO) { Ability(ABILITY_ELECTRIC_SURGE); };

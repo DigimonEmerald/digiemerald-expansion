@@ -32,17 +32,27 @@ SINGLE_BATTLE_TEST("Dream Eater fails on awake targets")
     } WHEN {
         TURN { MOVE(player, MOVE_DREAM_EATER); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Lopmonx used Dream Eater!");
         MESSAGE("Foe Lopmonx wasn't affected!");
+=======
+        MESSAGE("Wobbuffet used Dream Eater!");
+        MESSAGE("The opposing Wobbuffet wasn't affected!");
+>>>>>>> upstream/master
     }
 }
 
 SINGLE_BATTLE_TEST("Dream Eater fails if Heal Block applies")
 {
-    ASSUME(B_HEAL_BLOCKING >= GEN_6);
     GIVEN {
+<<<<<<< HEAD
         PLAYER(SPECIES_LOPMONX) { HP(1); }
         OPPONENT(SPECIES_LOPMONX);
+=======
+        ASSUME(B_HEAL_BLOCKING >= GEN_6);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET);
+>>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(opponent, MOVE_HEAL_BLOCK); MOVE(player, MOVE_DREAM_EATER); }
     } SCENE {
@@ -54,3 +64,7 @@ SINGLE_BATTLE_TEST("Dream Eater fails if Heal Block applies")
         }
     }
 }
+
+TO_DO_BATTLE_TEST("Dream Eater works on targets with Comatose");
+TO_DO_BATTLE_TEST("Dream Eater fails if the target is behind a Substitute (Gen 1-4)");
+TO_DO_BATTLE_TEST("Dream Eater works if the target is behind a Substitute (Gen 5+)");

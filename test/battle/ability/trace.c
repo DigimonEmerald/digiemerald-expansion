@@ -10,7 +10,11 @@ SINGLE_BATTLE_TEST("Trace copies opponents ability")
         TURN { }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_TRACE);
+<<<<<<< HEAD
         MESSAGE("Apemon TRACED Foe Syakomon_x's Blaze!");
+=======
+        MESSAGE("It traced the opposing Torchic's Blaze!");
+>>>>>>> upstream/master
     }
 }
 
@@ -24,7 +28,11 @@ SINGLE_BATTLE_TEST("Trace copies opponents ability on switch-in")
         TURN { SWITCH(player, 1); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_TRACE);
+<<<<<<< HEAD
         MESSAGE("Apemon TRACED Foe Syakomon_x's Blaze!");
+=======
+        MESSAGE("It traced the opposing Torchic's Blaze!");
+>>>>>>> upstream/master
     }
 }
 
@@ -40,7 +48,11 @@ SINGLE_BATTLE_TEST("Trace copies opponents ability on switch-in even if opponent
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MISTY_EXPLOSION);
         ABILITY_POPUP(player, ABILITY_TRACE);
+<<<<<<< HEAD
         MESSAGE("Apemon TRACED Foe Syakomon_x's Blaze!");
+=======
+        MESSAGE("It traced the opposing Torchic's Blaze!");
+>>>>>>> upstream/master
     }
 }
 
@@ -61,7 +73,11 @@ DOUBLE_BATTLE_TEST("Trace copies opponents ability randomly")
         TURN { }
     } SCENE {
         ABILITY_POPUP(playerLeft, ABILITY_TRACE);
+<<<<<<< HEAD
         MESSAGE("Apemon TRACED Foe Syakomon_x's Blaze!");
+=======
+        MESSAGE("It traced the opposing Torchic's Blaze!");
+>>>>>>> upstream/master
     }
 }
 
@@ -76,7 +92,26 @@ SINGLE_BATTLE_TEST("Trace will copy an opponent's ability whenever it has the ch
     } SCENE {
         // TURN 2
         ABILITY_POPUP(player, ABILITY_TRACE);
+<<<<<<< HEAD
         MESSAGE("Apemon TRACED Foe Syakomon_x's Blaze!");
+=======
+        MESSAGE("It traced the opposing Torchic's Blaze!");
+    }
+}
+
+
+SINGLE_BATTLE_TEST("Trace copies opponent's Intimidate and triggers it immediately")
+{
+    GIVEN {
+        PLAYER(SPECIES_RALTS) { Ability(ABILITY_TRACE); }
+        OPPONENT(SPECIES_MASQUERAIN) { Ability(ABILITY_INTIMIDATE); }
+    } WHEN {
+        TURN { }
+    } SCENE {
+        ABILITY_POPUP(player, ABILITY_TRACE);
+        ABILITY_POPUP(player, ABILITY_INTIMIDATE);
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
+>>>>>>> upstream/master
     }
 }
 

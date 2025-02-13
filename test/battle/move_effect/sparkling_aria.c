@@ -18,8 +18,8 @@ DOUBLE_BATTLE_TEST("Sparkling Aria cures burns from all Pokemon on the field and
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_SUBSTITUTE); MOVE(opponentRight, MOVE_CELEBRATE); MOVE(playerRight, MOVE_CELEBRATE); MOVE(playerLeft, MOVE_SPARKLING_ARIA); }
     } SCENE {
-        MESSAGE("Foe Lopmonx's burn was healed.");
-        MESSAGE("Lopmonx's burn was healed.");
-        MESSAGE("Foe Exveemon's burn was healed.");
+        MESSAGE("The opposing Lopmonx's burn was cured!");
+        MESSAGE("Lopmonx's burn was cured!");
+        MESSAGE("The opposing Exveemon's burn was cured!");
     }
 }

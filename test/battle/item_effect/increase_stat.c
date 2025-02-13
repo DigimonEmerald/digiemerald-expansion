@@ -39,7 +39,11 @@ SINGLE_BATTLE_TEST("X Defense sharply raises battler's Defense stat", s16 damage
         if (useItem) TURN { USE_ITEM(player, ITEM_X_DEFENSE); }
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Tackle!");
+=======
+        MESSAGE("The opposing Wobbuffet used Tackle!");
+>>>>>>> upstream/master
         HP_BAR(player, captureDamage: &results[i].damage);
     } FINALLY {
         if (B_X_ITEMS_BUFF >= GEN_7)
@@ -63,7 +67,11 @@ SINGLE_BATTLE_TEST("X Sp. Atk sharply raises battler's Sp. Attack stat", s16 dam
         if (useItem) TURN { USE_ITEM(player, ITEM_X_SP_ATK); }
         TURN { MOVE(player, MOVE_DISARMING_VOICE); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Lopmonx used DisrmngVoice!");
+=======
+        MESSAGE("Wobbuffet used Disarming Voice!");
+>>>>>>> upstream/master
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         if (B_X_ITEMS_BUFF >= GEN_7)
@@ -87,7 +95,11 @@ SINGLE_BATTLE_TEST("X Sp. Def sharply raises battler's Sp. Defense stat", s16 da
         if (useItem) TURN { USE_ITEM(player, ITEM_X_SP_DEF); }
         TURN { MOVE(opponent, MOVE_DISARMING_VOICE); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Foe Lopmonx used DisrmngVoice!");
+=======
+        MESSAGE("The opposing Wobbuffet used Disarming Voice!");
+>>>>>>> upstream/master
         HP_BAR(player, captureDamage: &results[i].damage);
     } FINALLY {
         if (B_X_ITEMS_BUFF >= GEN_7)
@@ -120,6 +132,7 @@ SINGLE_BATTLE_TEST("X Speed sharply raises battler's Speed stat", s16 damage)
     } SCENE {
         if (useItem)
         {
+<<<<<<< HEAD
             MESSAGE("Lopmonx used Tackle!");
             MESSAGE("Foe Lopmonx used Tackle!");
         }
@@ -127,6 +140,15 @@ SINGLE_BATTLE_TEST("X Speed sharply raises battler's Speed stat", s16 damage)
         {
             MESSAGE("Foe Lopmonx used Tackle!");
             MESSAGE("Lopmonx used Tackle!");
+=======
+            MESSAGE("Wobbuffet used Tackle!");
+            MESSAGE("The opposing Wobbuffet used Tackle!");
+        }
+        else
+        {
+            MESSAGE("The opposing Wobbuffet used Tackle!");
+            MESSAGE("Wobbuffet used Tackle!");
+>>>>>>> upstream/master
         }
     }
 }
@@ -147,8 +169,13 @@ SINGLE_BATTLE_TEST("X Accuracy sharply raises battler's Accuracy stat")
         TURN { USE_ITEM(player, ITEM_X_ACCURACY); }
         TURN { MOVE(player, MOVE_SING); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Lopmonx used Sing!");
         MESSAGE("Foe Lopmonx fell asleep!");
+=======
+        MESSAGE("Wobbuffet used Sing!");
+        MESSAGE("The opposing Wobbuffet fell asleep!");
+>>>>>>> upstream/master
     }
 }
 
@@ -185,7 +212,11 @@ SINGLE_BATTLE_TEST("Max Mushrooms raises battler's Defense stat", s16 damage)
         if (useItem) TURN { USE_ITEM(player, ITEM_MAX_MUSHROOMS); }
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Tackle!");
+=======
+        MESSAGE("The opposing Wobbuffet used Tackle!");
+>>>>>>> upstream/master
         HP_BAR(player, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(0.66), results[1].damage);
@@ -205,7 +236,11 @@ SINGLE_BATTLE_TEST("Max Mushrooms raises battler's Sp. Attack stat", s16 damage)
         if (useItem) TURN { USE_ITEM(player, ITEM_MAX_MUSHROOMS); }
         TURN { MOVE(player, MOVE_DISARMING_VOICE); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Lopmonx used DisrmngVoice!");
+=======
+        MESSAGE("Wobbuffet used Disarming Voice!");
+>>>>>>> upstream/master
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
@@ -225,7 +260,11 @@ SINGLE_BATTLE_TEST("Max Mushrooms battler's Sp. Defense stat", s16 damage)
         if (useItem) TURN { USE_ITEM(player, ITEM_MAX_MUSHROOMS); }
         TURN { MOVE(opponent, MOVE_DISARMING_VOICE); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Foe Lopmonx used DisrmngVoice!");
+=======
+        MESSAGE("The opposing Wobbuffet used Disarming Voice!");
+>>>>>>> upstream/master
         HP_BAR(player, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(0.66), results[1].damage);
@@ -247,6 +286,7 @@ SINGLE_BATTLE_TEST("Max Mushrooms raises battler's Speed stat", s16 damage)
     } SCENE {
         if (useItem)
         {
+<<<<<<< HEAD
             MESSAGE("Lopmonx used Tackle!");
             MESSAGE("Foe Lopmonx used Tackle!");
         }
@@ -254,6 +294,15 @@ SINGLE_BATTLE_TEST("Max Mushrooms raises battler's Speed stat", s16 damage)
         {
             MESSAGE("Foe Lopmonx used Tackle!");
             MESSAGE("Lopmonx used Tackle!");
+=======
+            MESSAGE("Wobbuffet used Tackle!");
+            MESSAGE("The opposing Wobbuffet used Tackle!");
+        }
+        else
+        {
+            MESSAGE("The opposing Wobbuffet used Tackle!");
+            MESSAGE("Wobbuffet used Tackle!");
+>>>>>>> upstream/master
         }
     }
 }

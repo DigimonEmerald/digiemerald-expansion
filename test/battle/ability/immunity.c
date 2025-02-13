@@ -26,7 +26,11 @@ SINGLE_BATTLE_TEST("Immunity prevents Toxic bad poison")
     } SCENE {
         MESSAGE("Lopmonx used Toxic!");
         ABILITY_POPUP(opponent, ABILITY_IMMUNITY);
+<<<<<<< HEAD
         MESSAGE("Foe Dracomon's Immunity prevents poisoning!");
+=======
+        MESSAGE("The opposing Snorlax's Immunity prevents poisoning!");
+>>>>>>> upstream/master
         NOT STATUS_ICON(opponent, poison: TRUE);
     }
 }

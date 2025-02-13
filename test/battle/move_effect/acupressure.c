@@ -8,6 +8,7 @@ TO_DO_BATTLE_TEST("Acupressure fails on the ally if all of its stats are maximiz
 TO_DO_BATTLE_TEST("Acupressure works on the user if it's behind a Substitute (Gen5+)");
 TO_DO_BATTLE_TEST("Acupressure fails on its ally if it's behind a Substitute");
 
+<<<<<<< HEAD
 DOUBLE_BATTLE_TEST("Acupressure works on the ally if the user targeted itself but switched positions via Ally Switch")
 {
     GIVEN {
@@ -28,9 +29,10 @@ DOUBLE_BATTLE_TEST("Acupressure works on the ally if the user targeted itself bu
     }
 }
 
+=======
+>>>>>>> upstream/master
 DOUBLE_BATTLE_TEST("Acupressure fails on the user if it targeted its ally but switched positions via Ally Switch")
 {
-    KNOWN_FAILING; // Tested in Gen 5, Acupressure fails here
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_EXVEEMON);

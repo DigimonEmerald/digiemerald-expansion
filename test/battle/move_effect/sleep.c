@@ -24,15 +24,15 @@ SINGLE_BATTLE_TEST("Hypnosis inflicts 1-3 turns of sleep")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HYPNOSIS, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("Foe Lopmonx fell asleep!");
+        MESSAGE("The opposing Lopmonx fell asleep!");
         STATUS_ICON(opponent, sleep: TRUE);
         for (count = 0; count < turns; ++count)
         {
             if (count < turns - 1)
-                MESSAGE("Foe Lopmonx is fast asleep.");
+                MESSAGE("The opposing Lopmonx is fast asleep.");
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
         }
-        MESSAGE("Foe Lopmonx woke up!");
+        MESSAGE("The opposing Lopmonx woke up!");
         STATUS_ICON(opponent, none: TRUE);
     }
 }

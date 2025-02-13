@@ -3,8 +3,8 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_TACKLE].power != 0);
-    ASSUME(gMovesInfo[MOVE_GUST].power != 0);
+    ASSUME(!IS_MOVE_STATUS(MOVE_TACKLE));
+    ASSUME(!IS_MOVE_STATUS(MOVE_GUST));
     ASSUME(gMovesInfo[MOVE_GUST].category == DAMAGE_CATEGORY_SPECIAL);
     ASSUME(gMovesInfo[MOVE_TACKLE].category == DAMAGE_CATEGORY_PHYSICAL);
     ASSUME(B_WEAK_ARMOR_SPEED >= GEN_7);
@@ -95,7 +95,11 @@ SINGLE_BATTLE_TEST("Weak Armor still lowers boosts Speed if Defense can't go any
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
             MESSAGE("Otamamon_red's Weak Armor lowered its Defense!");
         }
+<<<<<<< HEAD
         MESSAGE("Otamamon_red's Defense won't go lower!");
+=======
+        MESSAGE("Slugma's Defense won't go any lower!");
+>>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         MESSAGE("Otamamon_red's Weak Armor raised its Speed!");
     } THEN {
@@ -124,7 +128,11 @@ SINGLE_BATTLE_TEST("Weak Armor still lowers Defense if Speed can't go any higher
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
             MESSAGE("Otamamon_red's Weak Armor raised its Speed!");
         }
+<<<<<<< HEAD
         MESSAGE("Otamamon_red's Speed won't go higher!");
+=======
+        MESSAGE("Slugma's Speed won't go any higher!");
+>>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->statStages[STAT_DEF], DEFAULT_STAT_STAGE - 1);
         EXPECT_EQ(player->statStages[STAT_SPEED], MAX_STAT_STAGE);
@@ -151,16 +159,26 @@ SINGLE_BATTLE_TEST("Weak Armor doesn't interrupt multi hit moves if Defense can'
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FURY_SWIPES, opponent);
         ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
+<<<<<<< HEAD
         MESSAGE("Otamamon_x's Defense won't go lower!");
         MESSAGE("Otamamon_x's Weak Armor raised its Speed!");
+=======
+        MESSAGE("Magcargo's Defense won't go any lower!");
+        MESSAGE("Magcargo's Weak Armor raised its Speed!");
+>>>>>>> upstream/master
         for (j = 0; j < 2; j++)
         {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FURY_SWIPES, opponent);
             // Ability doesn't activate if neither stat can be changed.
             NONE_OF {
                 ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
+<<<<<<< HEAD
                 MESSAGE("Otamamon_x's Defense won't go lower!");
                 MESSAGE("Otamamon_x's Speed won't go higher!");
+=======
+                MESSAGE("Magcargo's Defense won't go any lower!");
+                MESSAGE("Magcargo's Speed won't go any higher!");
+>>>>>>> upstream/master
             }
         }
     } THEN {
@@ -188,8 +206,13 @@ SINGLE_BATTLE_TEST("Weak Armor doesn't interrupt multi hit moves if Speed can't 
         {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FURY_SWIPES, opponent);
             ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
+<<<<<<< HEAD
             MESSAGE("Otamamon_x's Weak Armor lowered its Defense!");
             MESSAGE("Otamamon_x's Speed won't go higher!");
+=======
+            MESSAGE("Magcargo's Weak Armor lowered its Defense!");
+            MESSAGE("Magcargo's Speed won't go any higher!");
+>>>>>>> upstream/master
         }
     } THEN {
         EXPECT_EQ(player->statStages[STAT_DEF], DEFAULT_STAT_STAGE - 5);

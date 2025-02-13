@@ -11,16 +11,23 @@ SINGLE_BATTLE_TEST("Zero to Hero transforms Palafin when it switches out")
         TURN { SWITCH(player, 1); }
         TURN { SWITCH(player, 0); }
     } SCENE {
+<<<<<<< HEAD
         MESSAGE("Palafin, that's enough! Come back!");
         MESSAGE("Go! Lopmonx!");
         MESSAGE("Lopmonx, that's enough! Come back!");
         MESSAGE("Go! Palafin!");
+=======
+        SWITCH_OUT_MESSAGE("Palafin");
+        SEND_IN_MESSAGE("Wobbuffet");
+        SWITCH_OUT_MESSAGE("Wobbuffet");
+        SEND_IN_MESSAGE("Palafin");
+>>>>>>> upstream/master
         ABILITY_POPUP(player, ABILITY_ZERO_TO_HERO);
         MESSAGE("Palafin underwent a heroic transformation!");
     } THEN { EXPECT_EQ(player->species, SPECIES_PALAFIN_HERO); }
 }
 
-SINGLE_BATTLE_TEST("Zero to Hero can't be surpressed by Neutralizing Gas")
+SINGLE_BATTLE_TEST("Zero to Hero can't be suppressed by Neutralizing Gas")
 {
     GIVEN {
         PLAYER(SPECIES_PALAFIN_ZERO) { Ability(ABILITY_ZERO_TO_HERO); }
@@ -50,7 +57,7 @@ SINGLE_BATTLE_TEST("Zero to Hero transforms both player and opponent")
         ABILITY_POPUP(player, ABILITY_ZERO_TO_HERO);
         MESSAGE("Palafin underwent a heroic transformation!");
         ABILITY_POPUP(opponent, ABILITY_ZERO_TO_HERO);
-        MESSAGE("Foe Palafin underwent a heroic transformation!");
+        MESSAGE("The opposing Palafin underwent a heroic transformation!");
     } THEN {
         EXPECT_EQ(player->species, SPECIES_PALAFIN_HERO);
         EXPECT_EQ(opponent->species, SPECIES_PALAFIN_HERO);
@@ -109,7 +116,11 @@ SINGLE_BATTLE_TEST("Transform doesn't apply the heroic transformation message wh
         ABILITY_POPUP(player, ABILITY_ZERO_TO_HERO);
         MESSAGE("Palafin underwent a heroic transformation!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TRANSFORM, opponent);
+<<<<<<< HEAD
         MESSAGE("Foe Lopmonx transformed into Palafin!");
+=======
+        MESSAGE("The opposing Wobbuffet transformed into Palafin!");
+>>>>>>> upstream/master
         NOT ABILITY_POPUP(opponent, ABILITY_ZERO_TO_HERO);
     } THEN { EXPECT_EQ(player->species, SPECIES_PALAFIN_HERO); }
 }
@@ -128,10 +139,17 @@ SINGLE_BATTLE_TEST("Imposter doesn't apply the heroic transformation message whe
         ABILITY_POPUP(player, ABILITY_ZERO_TO_HERO);
         MESSAGE("Palafin underwent a heroic transformation!");
         ABILITY_POPUP(opponent, ABILITY_IMPOSTER);
+<<<<<<< HEAD
         MESSAGE("Foe Crabmon transformed into Palafin using Imposter!");
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_ZERO_TO_HERO);
             MESSAGE("Foe Crabmon underwent a heroic transformation!");
+=======
+        MESSAGE("The opposing Ditto transformed into Palafin using Imposter!");
+        NONE_OF {
+            ABILITY_POPUP(opponent, ABILITY_ZERO_TO_HERO);
+            MESSAGE("The opposing Ditto underwent a heroic transformation!");
+>>>>>>> upstream/master
         }
     } THEN { EXPECT_EQ(player->species, SPECIES_PALAFIN_HERO); }
 }
@@ -152,8 +170,13 @@ SINGLE_BATTLE_TEST("Zero to Hero's message displays correctly after all battlers
         HP_BAR(opponent, hp: 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, opponent);
         // Everyone faints.
+<<<<<<< HEAD
         MESSAGE("Go! Palafin!");
         MESSAGE("2 sent out Lopmonx!");
+=======
+        SEND_IN_MESSAGE("Palafin");
+        MESSAGE("2 sent out Wobbuffet!");
+>>>>>>> upstream/master
         ABILITY_POPUP(player, ABILITY_ZERO_TO_HERO);
         MESSAGE("Palafin underwent a heroic transformation!");
     }
@@ -175,10 +198,14 @@ SINGLE_BATTLE_TEST("Zero to Hero's message displays correctly after all battlers
         HP_BAR(player, hp: 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, player);
         // Everyone faints.
+<<<<<<< HEAD
         MESSAGE("Go! Lopmonx!");
+=======
+        SEND_IN_MESSAGE("Wobbuffet");
+>>>>>>> upstream/master
         MESSAGE("2 sent out Palafin!");
         ABILITY_POPUP(opponent, ABILITY_ZERO_TO_HERO);
-        MESSAGE("Foe Palafin underwent a heroic transformation!");
+        MESSAGE("The opposing Palafin underwent a heroic transformation!");
     }
 }
 
@@ -193,7 +220,11 @@ SINGLE_BATTLE_TEST("Zero to Hero cannot be copied by Trace")
     } SCENE {
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_TRACE);
+<<<<<<< HEAD
             MESSAGE("Foe Apemon Traced Palafin's Zero to Hero!");
+=======
+            MESSAGE("The opposing Ralts Traced Palafin's Zero to Hero!");
+>>>>>>> upstream/master
         }
     }
 }

@@ -17,14 +17,14 @@ SINGLE_BATTLE_TEST("Paralysis reduces Speed by 50%")
         if (playerFirst) {
             ONE_OF {
                 MESSAGE("Lopmonx used Celebrate!");
-                MESSAGE("Lopmonx is paralyzed! It can't move!");
+                MESSAGE("Lopmonx is paralyzed, so it may be unable to move!");
             }
-            MESSAGE("Foe Lopmonx used Celebrate!");
+            MESSAGE("The opposing Lopmonx used Celebrate!");
         } else {
-            MESSAGE("Foe Lopmonx used Celebrate!");
+            MESSAGE("The opposing Lopmonx used Celebrate!");
             ONE_OF {
                 MESSAGE("Lopmonx used Celebrate!");
-                MESSAGE("Lopmonx is paralyzed! It can't move!");
+                MESSAGE("Lopmonx is paralyzed, so it may be unable to move!");
             }
         }
     }
@@ -39,7 +39,7 @@ SINGLE_BATTLE_TEST("Paralysis has a 25% chance of skipping the turn")
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE); }
     } SCENE {
-        MESSAGE("Lopmonx is paralyzed! It can't move!");
+        MESSAGE("Lopmonx couldn't move because it's paralyzed!");
     }
 }
 

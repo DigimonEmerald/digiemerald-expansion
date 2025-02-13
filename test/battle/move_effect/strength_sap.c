@@ -22,9 +22,9 @@ SINGLE_BATTLE_TEST("Strength Sap lowers Attack by 1 and restores HP based on tar
         MESSAGE("Lopmonx used Strength Sap!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STRENGTH_SAP, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("Foe Lopmonx's Attack fell!");
+        MESSAGE("The opposing Lopmonx's Attack fell!");
         HP_BAR(player, captureDamage: &results[i].hp);
-        MESSAGE("Foe Lopmonx had its energy drained!");
+        MESSAGE("The opposing Lopmonx had its energy drained!");
     } THEN {
         EXPECT_EQ(results[i].hp * -1, atkStat);
     }
@@ -49,10 +49,10 @@ SINGLE_BATTLE_TEST("Strength Sap works exactly the same when attacker is behind 
         MESSAGE("Lopmonx used Strength Sap!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STRENGTH_SAP, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("Foe Lopmonx's Attack fell!");
+        MESSAGE("The opposing Lopmonx's Attack fell!");
         HP_BAR(player, captureDamage: &results[i].hp);
-        NOT MESSAGE("The SUBSTITUTE took damage for Foe Lopmonx!");
-        MESSAGE("Foe Lopmonx had its energy drained!");
+        NOT MESSAGE("The substitute took damage for the opposing Lopmonx!");
+        MESSAGE("The opposing Lopmonx had its energy drained!");
     } THEN {
         EXPECT_EQ(results[i].hp * -1, atkStat);
     }
@@ -97,9 +97,9 @@ SINGLE_BATTLE_TEST("Strength Sap lowers Attack by 1 and restores HP based on tar
         MESSAGE("Lopmonx used Strength Sap!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STRENGTH_SAP, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("Foe Lopmonx's Attack fell!");
+        MESSAGE("The opposing Lopmonx's Attack fell!");
         HP_BAR(player, captureDamage: &results[i].hp);
-        MESSAGE("Foe Lopmonx had its energy drained!");
+        MESSAGE("The opposing Lopmonx had its energy drained!");
     } THEN {
         if (statStage < DEFAULT_STAT_STAGE) {
             EXPECT_EQ(results[i].hp * -1, (60 * gStatStageRatios[statStage + 1][0] / gStatStageRatios[statStage + 1][1]));
@@ -133,11 +133,11 @@ SINGLE_BATTLE_TEST("Strength Sap fails if target is at -6 Atk")
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_STRENGTH_SAP, player);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("Foe Lopmonx's Attack fell!");
+            MESSAGE("The opposing Lopmonx's Attack fell!");
             HP_BAR(player);
-            MESSAGE("Foe Lopmonx had its energy drained!");
+            MESSAGE("The opposing Lopmonx had its energy drained!");
         }
-        MESSAGE("Foe Lopmonx's Attack won't go lower!");
+        MESSAGE("The opposing Lopmonx's Attack won't go any lower!");
     }
 }
 
@@ -158,41 +158,11 @@ SINGLE_BATTLE_TEST("Strength Sap restores more HP if Big Root is held", s16 hp)
         MESSAGE("Lopmonx used Strength Sap!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STRENGTH_SAP, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("Foe Lopmonx's Attack fell!");
+        MESSAGE("The opposing Lopmonx's Attack fell!");
         HP_BAR(player, captureDamage: &results[i].hp);
-        MESSAGE("Foe Lopmonx had its energy drained!");
+        MESSAGE("The opposing Lopmonx had its energy drained!");
     } FINALLY {
         EXPECT_GT(abs(results[1].hp), abs(results[0].hp));
     }
 }
 
-SINGLE_BATTLE_TEST("Strength Sap makes attacker lose HP if target's ability is Liquid Ooze")
-{
-    s16 lostHp;
-    s32 atkStat;
-
-    PARAMETRIZE { atkStat = 100; }
-    PARAMETRIZE { atkStat = 490; } // Checks that attacker can faint with no problems.
-
-    GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Attack(atkStat); Ability(ABILITY_LIQUID_OOZE); }
-    } WHEN {
-        TURN { MOVE(player, MOVE_STRENGTH_SAP); if (atkStat == 490) { SEND_OUT(player, 1); } }
-    } SCENE {
-        MESSAGE("Lopmonx used Strength Sap!");
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_STRENGTH_SAP, player);
-        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("Foe Lopmonx's Attack fell!");
-        ABILITY_POPUP(opponent, ABILITY_LIQUID_OOZE);
-        HP_BAR(player, captureDamage: &lostHp);
-        MESSAGE("It sucked up the liquid ooze!");
-        if (atkStat >= 490) {
-            MESSAGE("Lopmonx fainted!");
-            MESSAGE("Go! Lopmonx!");
-        }
-    } THEN {
-        EXPECT_EQ(lostHp, atkStat);
-    }
-}

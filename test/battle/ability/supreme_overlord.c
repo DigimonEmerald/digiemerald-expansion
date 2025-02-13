@@ -106,8 +106,13 @@ SINGLE_BATTLE_TEST("Supreme Overlord's message displays correctly after all batt
         HP_BAR(opponent, hp: 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, opponent);
         // Everyone faints.
+<<<<<<< HEAD
         MESSAGE("Go! Kingambit!");
         MESSAGE("2 sent out Lopmonx!");
+=======
+        SEND_IN_MESSAGE("Kingambit");
+        MESSAGE("2 sent out Wobbuffet!");
+>>>>>>> upstream/master
         ABILITY_POPUP(player, ABILITY_SUPREME_OVERLORD);
         MESSAGE("Kingambit gained strength from the fallen!");
     }
@@ -127,9 +132,13 @@ SINGLE_BATTLE_TEST("Supreme Overlord's message displays correctly after all batt
         HP_BAR(player, hp: 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, player);
         // Everyone faints.
+<<<<<<< HEAD
         MESSAGE("Go! Lopmonx!");
+=======
+        SEND_IN_MESSAGE("Wobbuffet");
+>>>>>>> upstream/master
         MESSAGE("2 sent out Kingambit!");
         ABILITY_POPUP(opponent, ABILITY_SUPREME_OVERLORD);
-        MESSAGE("Foe Kingambit gained strength from the fallen!");
+        MESSAGE("The opposing Kingambit gained strength from the fallen!");
     }
 }

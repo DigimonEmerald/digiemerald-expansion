@@ -23,7 +23,7 @@ SINGLE_BATTLE_TEST("Frostbite reduces the special attack by 50 percent")
    } THEN { EXPECT_EQ(reducedDamage * 2, normaleDamage); }
 }
 
-SINGLE_BATTLE_TEST("Frostbite deals 1/16 damage to effected pokemon")
+SINGLE_BATTLE_TEST("Frostbite deals 1/16th (Gen7+) or 1/8th damage to affected pokemon")
 {
     s16 frostbiteDamage;
 
@@ -33,10 +33,10 @@ SINGLE_BATTLE_TEST("Frostbite deals 1/16 damage to effected pokemon")
     } WHEN {
         TURN {}
     } SCENE {
-        MESSAGE("Foe Lopmonx is hurt by its frostbite!");
+        MESSAGE("The opposing Lopmonx was hurt by its frostbite!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_FRZ, opponent);
         HP_BAR(opponent, captureDamage: &frostbiteDamage);
-   } THEN { EXPECT_EQ(frostbiteDamage, opponent->maxHP / 16); }
+   } THEN { EXPECT_EQ(frostbiteDamage, opponent->maxHP / ((B_BURN_DAMAGE >= GEN_7) ? 16 : 8)); }
 }
 
 SINGLE_BATTLE_TEST("Frostbite is healed if hit with a thawing move")
@@ -58,10 +58,10 @@ SINGLE_BATTLE_TEST("Frostbite is healed if hit with a thawing move")
         ANIMATION(ANIM_TYPE_MOVE, move, player);
         if (move == MOVE_EMBER) {
             NONE_OF {
-                MESSAGE("Foe Lopmonx's frostbite was healed!");
+                MESSAGE("The opposing Lopmonx's frostbite was cured!");
             }
         } else {
-            MESSAGE("Foe Lopmonx's frostbite was healed!");
+            MESSAGE("The opposing Lopmonx's frostbite was cured!");
         }
    }
 }
@@ -85,11 +85,11 @@ SINGLE_BATTLE_TEST("Frostbite is healed when the user uses a thawing move")
         ANIMATION(ANIM_TYPE_MOVE, move, player);
         HP_BAR(opponent);
         if (move == MOVE_EMBER) {
-            MESSAGE("Lopmonx is hurt by its frostbite!");
+            MESSAGE("Lopmonx was hurt by its frostbite!");
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_FRZ, player);
         } else {
             NONE_OF {
-                MESSAGE("Lopmonx is hurt by its frostbite!");
+                MESSAGE("Lopmonx was hurt by its frostbite!");
                 ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_FRZ, player);
             }
         }

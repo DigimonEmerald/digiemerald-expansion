@@ -22,7 +22,7 @@ SINGLE_BATTLE_TEST("Triple Arrows may lower Defense by one stage")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TRIPLE_ARROWS, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("Foe Lopmonx's Defense fell!");
+        MESSAGE("The opposing Lopmonx's Defense fell!");
     }
 }
 
@@ -40,16 +40,16 @@ SINGLE_BATTLE_TEST("Triple Arrows makes the foe flinch 30% of the time")
         TURN { MOVE(player, MOVE_TRIPLE_ARROWS); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TRIPLE_ARROWS, player);
-        MESSAGE("Foe Lopmonx flinched!");
+        MESSAGE("The opposing Lopmonx flinched and couldn't move!");
     }
 }
 
 SINGLE_BATTLE_TEST("Triple Arrows lands a critical hit")
 {
-    ASSUME(B_CRIT_CHANCE >= GEN_7);
-    ASSUME(gMovesInfo[MOVE_TRIPLE_ARROWS].criticalHitStage == 1);
     PASSES_RANDOMLY(1, 8, RNG_CRITICAL_HIT);
     GIVEN {
+        ASSUME(B_CRIT_CHANCE >= GEN_7);
+        ASSUME(gMovesInfo[MOVE_TRIPLE_ARROWS].criticalHitStage == 1);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
@@ -70,8 +70,8 @@ SINGLE_BATTLE_TEST("Triple Arrows can lower Defense and cause flinch at the time
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TRIPLE_ARROWS, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("Foe Lopmonx's Defense fell!");
-        MESSAGE("Foe Lopmonx flinched!");
+        MESSAGE("The opposing Lopmonx's Defense fell!");
+        MESSAGE("The opposing Lopmonx flinched and couldn't move!");
     }
 }
 
@@ -86,7 +86,7 @@ SINGLE_BATTLE_TEST("Triple Arrows's flinching is prevented by Inner Focus")
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TRIPLE_ARROWS, player);
-        NONE_OF { MESSAGE("Foe Lopmonx flinched!"); }
+        NONE_OF { MESSAGE("The opposing Lopmonx flinched and couldn't move!"); }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
     }
 }
