@@ -116,7 +116,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
+Icebotamon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -133,7 +133,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
+Icebotamon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -185,7 +185,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
+Icebotamon
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -335,7 +335,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
+Icebotamon
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -373,7 +373,7 @@ Poochyena
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
+Icebotamon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -403,7 +403,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
+Icebotamon
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -433,7 +433,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
+Icebotamon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -502,7 +502,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
+Icebotamon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -537,7 +537,7 @@ Mightyena
 Level: 34
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Golbat
+Yuramon
 Level: 34
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -695,7 +695,7 @@ Roselia
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Gloom
+Zurumon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -729,7 +729,7 @@ Shroomish
 Level: 28
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Gloom
+Zurumon
 Level: 28
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -750,7 +750,7 @@ Shroomish
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Gloom
+Zurumon
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -771,7 +771,7 @@ Breloom
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Gloom
+Zurumon
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -788,7 +788,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
+Poyomon
 Level: 23
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Dig
@@ -813,7 +813,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Sandstorm
 - Ancient Power
 
-Sandshrew
+Popomon
 Level: 27
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Dig
@@ -821,7 +821,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Sand Attack
 - Poison Sting
 
-Sandslash
+Poyomon
 Level: 27
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Dig
@@ -838,7 +838,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
+Popomon
 Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Dig
@@ -846,7 +846,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Sand Attack
 - Poison Sting
 
-Sandslash
+Poyomon
 Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Dig
@@ -863,7 +863,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
+Poyomon
 Level: 27
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 - Dig
@@ -880,7 +880,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
+Poyomon
 Level: 30
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 - Dig
@@ -897,7 +897,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
+Poyomon
 Level: 33
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 - Dig
@@ -914,7 +914,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
+Poyomon
 Level: 36
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 - Dig
@@ -1675,7 +1675,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Wigglytuff
+Tsubumon
 Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Defense Curl
@@ -1864,11 +1864,11 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Sandslash
+Poyomon
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Ninetales
+Sakumon
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -3391,7 +3391,7 @@ Poochyena
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
+Icebotamon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3706,7 +3706,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
+Popomon
 Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Dig
@@ -3731,7 +3731,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psybeam
 - Rock Tomb
 
-Sandshrew
+Popomon
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Poison Sting
@@ -3769,7 +3769,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
+Popomon
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3829,7 +3829,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
+Popomon
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3876,7 +3876,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
+Popomon
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -3901,7 +3901,7 @@ Swellow
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Sandslash
+Poyomon
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -5163,7 +5163,7 @@ Numel
 Level: 15
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Oddish
+Zerimon
 Level: 15
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -5647,7 +5647,7 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Pikachu @ Oran Berry
+Petitmon @ Oran Berry
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8532,7 +8532,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
+Popomon
 Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Dig
@@ -8557,7 +8557,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
+Popomon
 Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sand Attack
@@ -8637,7 +8637,7 @@ Shroomish
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Oddish
+Zerimon
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8692,7 +8692,7 @@ Shroomish
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Gloom
+Zurumon
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -8713,7 +8713,7 @@ Breloom
 Level: 28
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Gloom
+Zurumon
 Level: 28
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -8734,7 +8734,7 @@ Breloom
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Gloom
+Zurumon
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -9379,7 +9379,7 @@ Mightyena
 Level: 38
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Golbat
+Yuramon
 Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -10094,7 +10094,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandslash
+Poyomon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10350,7 +10350,7 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Gloom
+Zurumon
 Level: 26
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -10408,7 +10408,7 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Gloom
+Zurumon
 Level: 30
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
@@ -10426,7 +10426,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Gloom
+Zurumon
 Level: 33
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
@@ -10444,7 +10444,7 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Gloom
+Zurumon
 Level: 36
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
@@ -10496,7 +10496,7 @@ Mightyena
 Level: 35
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Golbat
+Yuramon
 Level: 35
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -10513,7 +10513,7 @@ Wailmer
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
+Icebotamon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10530,7 +10530,7 @@ Wailmer
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
+Icebotamon
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10678,7 +10678,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
+Icebotamon
 Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10769,7 +10769,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
+Icebotamon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10799,7 +10799,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
+Icebotamon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10915,7 +10915,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
+Icebotamon
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10944,7 +10944,7 @@ Numel
 Level: 22
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Zubat
+Icebotamon
 Level: 22
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -11036,7 +11036,7 @@ Mightyena
 Level: 24
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-Zubat
+Icebotamon
 Level: 24
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -11193,7 +11193,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Oddish
+Zerimon
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -12464,7 +12464,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Gloom
+Zurumon
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -13092,7 +13092,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
+Popomon
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13182,7 +13182,7 @@ Baltoy
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Sandshrew
+Popomon
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13276,7 +13276,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
+Icebotamon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13319,7 +13319,7 @@ Baltoy
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
+Icebotamon
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13362,7 +13362,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
+Icebotamon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13388,7 +13388,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
+Icebotamon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13440,7 +13440,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
+Icebotamon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13500,7 +13500,7 @@ Mightyena
 Level: 28
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
-Zubat
+Icebotamon
 Level: 30
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
@@ -13582,11 +13582,11 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
+Popomon
 Level: 25
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Sandshrew
+Popomon
 Level: 25
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -13706,11 +13706,11 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
+Popomon
 Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Sandslash
+Poyomon
 Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14093,7 +14093,7 @@ Marill
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Sandshrew
+Popomon
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -14597,7 +14597,7 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 
-Pikachu
+Petitmon
 Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
@@ -14647,7 +14647,7 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 
-Raichu
+Pichimon
 Level: 44
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
@@ -14705,7 +14705,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder Punch
 - Light Screen
 
-Raichu
+Pichimon
 Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
@@ -16011,11 +16011,11 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
+Popomon
 Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Sandshrew
+Popomon
 Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -16032,11 +16032,11 @@ Nosepass
 Level: 33
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Sandshrew
+Popomon
 Level: 33
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Sandshrew
+Popomon
 Level: 33
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -16053,11 +16053,11 @@ Nosepass
 Level: 35
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Sandshrew
+Popomon
 Level: 35
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Sandshrew
+Popomon
 Level: 35
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -16074,11 +16074,11 @@ Nosepass
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Sandslash
+Poyomon
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Sandslash
+Poyomon
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -16834,7 +16834,7 @@ Gender: Male
 Music: Male
 Double Battle: No
 
-Charmander
+Botamon
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 

@@ -77,8 +77,8 @@ DOUBLE_BATTLE_TEST("Retaliate works with passive damage")
         PLAYER(SPECIES_WYNAUT) { Ability(ABILITY_SHADOW_TAG); HP(18); }
         PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SHADOW_TAG); }
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_CLEFABLE) { Ability(ABILITY_MAGIC_GUARD); Level(1); }
-        OPPONENT(SPECIES_CLEFABLE) { Ability(ABILITY_MAGIC_GUARD); }
+        OPPONENT(SPECIES_PYONMON) { Ability(ABILITY_MAGIC_GUARD); Level(1); }
+        OPPONENT(SPECIES_PYONMON) { Ability(ABILITY_MAGIC_GUARD); }
     } WHEN {
         TURN { MOVE(opponentRight, move2, target: moveTarget); MOVE(opponentLeft, move, target: moveTarget); MOVE(playerLeft, MOVE_CELEBRATE); SEND_OUT(playerLeft, 2); }
         TURN { MOVE(opponentRight, MOVE_CELEBRATE, target: moveTarget); MOVE(playerLeft, MOVE_RETALIATE, target: opponentRight); }

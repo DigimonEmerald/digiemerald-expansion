@@ -908,10 +908,10 @@ AI_SINGLE_BATTLE_TEST("AI will choose Scratch over Power-up Punch with Contrary"
         ASSUME(gMovesInfo[MOVE_SCRATCH].type == TYPE_NORMAL);
         ASSUME(gMovesInfo[MOVE_POWER_UP_PUNCH].power == 40);
         ASSUME(gMovesInfo[MOVE_POWER_UP_PUNCH].type == TYPE_FIGHTING);
-        ASSUME(gSpeciesInfo[SPECIES_SQUIRTLE].types[0] == TYPE_WATER);
-        ASSUME(gSpeciesInfo[SPECIES_SQUIRTLE].types[1] == TYPE_WATER);
+        ASSUME(gSpeciesInfo[SPECIES_CONOMON].types[0] == TYPE_WATER);
+        ASSUME(gSpeciesInfo[SPECIES_CONOMON].types[1] == TYPE_WATER);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_SQUIRTLE) { };
+        PLAYER(SPECIES_CONOMON) { };
         OPPONENT(SPECIES_MALAMAR) { Ability(ability); Moves(MOVE_SCRATCH, MOVE_POWER_UP_PUNCH); }
     } WHEN {
         TURN {
@@ -934,10 +934,10 @@ AI_SINGLE_BATTLE_TEST("AI will choose Superpower over Outrage with Contrary")
         ASSUME(gMovesInfo[MOVE_SUPERPOWER].type == TYPE_FIGHTING);
         ASSUME(gMovesInfo[MOVE_OUTRAGE].power == 120);
         ASSUME(gMovesInfo[MOVE_OUTRAGE].type == TYPE_DRAGON);
-        ASSUME(gSpeciesInfo[SPECIES_SQUIRTLE].types[0] == TYPE_WATER);
-        ASSUME(gSpeciesInfo[SPECIES_SQUIRTLE].types[1] == TYPE_WATER);
+        ASSUME(gSpeciesInfo[SPECIES_CONOMON].types[0] == TYPE_WATER);
+        ASSUME(gSpeciesInfo[SPECIES_CONOMON].types[1] == TYPE_WATER);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_SQUIRTLE) { };
+        PLAYER(SPECIES_CONOMON) { };
         OPPONENT(SPECIES_MALAMAR) { Ability(ability); Moves(MOVE_OUTRAGE, MOVE_SUPERPOWER); }
     } WHEN {
         TURN {
@@ -953,8 +953,8 @@ AI_DOUBLE_BATTLE_TEST("AI will not choose Earthquake if it damages the partner")
 {
     u32 species;
 
-    PARAMETRIZE { species = SPECIES_CHARIZARD; }
-    PARAMETRIZE { species = SPECIES_CHARMANDER; }
+    PARAMETRIZE { species = SPECIES_CHIBOMON; }
+    PARAMETRIZE { species = SPECIES_BOTAMON; }
     PARAMETRIZE { species = SPECIES_CHIKORITA; }
 
     GIVEN {
@@ -965,7 +965,7 @@ AI_DOUBLE_BATTLE_TEST("AI will not choose Earthquake if it damages the partner")
         OPPONENT(SPECIES_PHANPY) { Moves(MOVE_EARTHQUAKE, MOVE_TACKLE); }
         OPPONENT(species) { Moves(MOVE_CELEBRATE); }
     } WHEN {
-        if (species == SPECIES_CHARIZARD)
+        if (species == SPECIES_CHIBOMON)
             TURN { EXPECT_MOVE(opponentLeft, MOVE_EARTHQUAKE); }
         else
             TURN { EXPECT_MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); }
@@ -980,7 +980,7 @@ AI_DOUBLE_BATTLE_TEST("AI will choose Earthquake if partner is not alive")
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_EARTHQUAKE, MOVE_TACKLE); }
-        OPPONENT(SPECIES_PIKACHU) { HP(1); Moves(MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_PETITMON) { HP(1); Moves(MOVE_CELEBRATE); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentRight); }
         TURN { EXPECT_MOVE(opponentLeft, MOVE_EARTHQUAKE); }
@@ -1013,7 +1013,7 @@ AI_DOUBLE_BATTLE_TEST("AI will the see a corresponding absorbing ability on part
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_DISCHARGE, MOVE_TACKLE); }
-        OPPONENT(SPECIES_PIKACHU) { HP(1); Ability(ability); Moves(MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_PETITMON) { HP(1); Ability(ability); Moves(MOVE_CELEBRATE); }
     } WHEN {
         if (ability == ABILITY_LIGHTNING_ROD)
             TURN { EXPECT_MOVE(opponentLeft, MOVE_DISCHARGE); }

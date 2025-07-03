@@ -60,7 +60,7 @@ SINGLE_BATTLE_TEST("Magic Bounce cannot bounce back powder moves against Grass T
 <<<<<<< HEAD
         MESSAGE("Zerimon's Stun Spore was bounced back by Foe Kunemon's Magic Bounce!");
 =======
-        MESSAGE("Oddish's Stun Spore was bounced back by the opposing Espeon's Magic Bounce!");
+        MESSAGE("Zerimon's Stun Spore was bounced back by the opposing Espeon's Magic Bounce!");
 >>>>>>> upstream/master
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_STUN_SPORE, opponent);
         MESSAGE("It doesn't affect Zerimon…");

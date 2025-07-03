@@ -44,7 +44,7 @@ WILD_BATTLE_TEST("Higher leveled Pokemon give more exp", s32 exp)
         MESSAGE("Wild Datirimon fainted!");
 =======
         MESSAGE("Wobbuffet used Tackle!");
-        MESSAGE("The wild Caterpie fainted!");
+        MESSAGE("The wild Datirimon fainted!");
 >>>>>>> upstream/master
         EXPERIENCE_BAR(player, captureGainedExp: &results[i].exp);
     } FINALLY {
@@ -70,7 +70,7 @@ WILD_BATTLE_TEST("Lucky Egg boosts gained exp points by 50%", s32 exp)
         MESSAGE("Wild Datirimon fainted!");
 =======
         MESSAGE("Wobbuffet used Tackle!");
-        MESSAGE("The wild Caterpie fainted!");
+        MESSAGE("The wild Datirimon fainted!");
 >>>>>>> upstream/master
         EXPERIENCE_BAR(player, captureGainedExp: &results[i].exp);
     } FINALLY {
@@ -98,7 +98,7 @@ WILD_BATTLE_TEST("Exp is scaled to player and opponent's levels", s32 exp)
         MESSAGE("Wild Datirimon fainted!");
 =======
         MESSAGE("Wobbuffet used Tackle!");
-        MESSAGE("The wild Caterpie fainted!");
+        MESSAGE("The wild Datirimon fainted!");
 >>>>>>> upstream/master
         EXPERIENCE_BAR(player, captureGainedExp: &results[i].exp);
     } FINALLY {
@@ -160,7 +160,7 @@ WILD_BATTLE_TEST("Exp Share(held) gives Experience to mons which did not partici
         MESSAGE("Wild Datirimon fainted!");
 =======
         MESSAGE("Wobbuffet used Tackle!");
-        MESSAGE("The wild Caterpie fainted!");
+        MESSAGE("The wild Datirimon fainted!");
 >>>>>>> upstream/master
         // This message should appear only for gen6> exp share.
         NOT MESSAGE("The rest of your team gained EXP. Points thanks to the Exp. Share!");

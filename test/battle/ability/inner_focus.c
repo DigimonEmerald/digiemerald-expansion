@@ -23,7 +23,7 @@ SINGLE_BATTLE_TEST("Inner Focus prevents intimidate")
 <<<<<<< HEAD
         MESSAGE("Foe Icebotamon's Inner Focus prevents stat loss!");
 =======
-        MESSAGE("The opposing Zubat's Inner Focus prevents stat loss!");
+        MESSAGE("The opposing Icebotamon's Inner Focus prevents stat loss!");
 >>>>>>> upstream/master
         HP_BAR(player, captureDamage: &turnTwoHit);
     } THEN {
@@ -45,7 +45,7 @@ SINGLE_BATTLE_TEST("Inner Focus prevents flinching")
 <<<<<<< HEAD
         NONE_OF { MESSAGE("Foe Icebotamon flinched!"); }
 =======
-        NONE_OF { MESSAGE("The opposing Zubat flinched and couldn't move!"); }
+        NONE_OF { MESSAGE("The opposing Icebotamon flinched and couldn't move!"); }
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
     }
@@ -63,7 +63,7 @@ SINGLE_BATTLE_TEST("Inner Focus is ignored by Mold Breaker")
 <<<<<<< HEAD
         MESSAGE("Foe Icebotamon flinched!");
 =======
-        MESSAGE("The opposing Zubat flinched and couldn't move!");
+        MESSAGE("The opposing Icebotamon flinched and couldn't move!");
 >>>>>>> upstream/master
     }
 }

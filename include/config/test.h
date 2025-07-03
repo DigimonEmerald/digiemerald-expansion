@@ -24,12 +24,12 @@
 #define P_HISUIAN_FORMS                  TRUE
 #undef P_PALDEAN_FORMS
 #define P_PALDEAN_FORMS                  TRUE
-#undef P_PIKACHU_EXTRA_FORMS
-#define P_PIKACHU_EXTRA_FORMS            TRUE
-#undef P_COSPLAY_PIKACHU_FORMS
-#define P_COSPLAY_PIKACHU_FORMS          TRUE
-#undef P_CAP_PIKACHU_FORMS
-#define P_CAP_PIKACHU_FORMS              TRUE
+#undef P_PETITMON_EXTRA_FORMS
+#define P_PETITMON_EXTRA_FORMS            TRUE
+#undef P_COSPLAY_PETITMON_FORMS
+#define P_COSPLAY_PETITMON_FORMS          TRUE
+#undef P_CAP_PETITMON_FORMS
+#define P_CAP_PETITMON_FORMS              TRUE
 #undef P_GEN_2_CROSS_EVOS
 #define P_GEN_2_CROSS_EVOS               TRUE
 #undef P_GEN_3_CROSS_EVOS
@@ -45,38 +45,38 @@
 
 #undef P_FAMILY_BULBASAUR
 #define P_FAMILY_BULBASAUR               TRUE
-#undef P_FAMILY_CHARMANDER
-#define P_FAMILY_CHARMANDER              TRUE
-#undef P_FAMILY_SQUIRTLE
-#define P_FAMILY_SQUIRTLE                TRUE
-#undef P_FAMILY_CATERPIE
-#define P_FAMILY_CATERPIE                TRUE
-#undef P_FAMILY_WEEDLE
-#define P_FAMILY_WEEDLE                  TRUE
-#undef P_FAMILY_PIDGEY
-#define P_FAMILY_PIDGEY                  TRUE
-#undef P_FAMILY_RATTATA
-#define P_FAMILY_RATTATA                 TRUE
-#undef P_FAMILY_SPEAROW
-#define P_FAMILY_SPEAROW                 TRUE
-#undef P_FAMILY_EKANS
-#define P_FAMILY_EKANS                   TRUE
-#undef P_FAMILY_PIKACHU
-#define P_FAMILY_PIKACHU                 TRUE
-#undef P_FAMILY_SANDSHREW
-#define P_FAMILY_SANDSHREW               TRUE
+#undef P_FAMILY_BOTAMON
+#define P_FAMILY_BOTAMON              TRUE
+#undef P_FAMILY_CONOMON
+#define P_FAMILY_CONOMON                TRUE
+#undef P_FAMILY_DATIRIMON
+#define P_FAMILY_DATIRIMON                TRUE
+#undef P_FAMILY_FUFUMON
+#define P_FAMILY_FUFUMON                  TRUE
+#undef P_FAMILY_KETOMON
+#define P_FAMILY_KETOMON                  TRUE
+#undef P_FAMILY_CHOROMON
+#define P_FAMILY_CHOROMON                 TRUE
+#undef P_FAMILY_NYOKIMON
+#define P_FAMILY_NYOKIMON                 TRUE
+#undef P_FAMILY_PAFUMON
+#define P_FAMILY_PAFUMON                   TRUE
+#undef P_FAMILY_PETITMON
+#define P_FAMILY_PETITMON                 TRUE
+#undef P_FAMILY_POPOMON
+#define P_FAMILY_POPOMON               TRUE
 #undef P_FAMILY_NIDORAN
 #define P_FAMILY_NIDORAN                 TRUE
-#undef P_FAMILY_CLEFAIRY
-#define P_FAMILY_CLEFAIRY                TRUE
-#undef P_FAMILY_VULPIX
-#define P_FAMILY_VULPIX                  TRUE
-#undef P_FAMILY_JIGGLYPUFF
-#define P_FAMILY_JIGGLYPUFF              TRUE
-#undef P_FAMILY_ZUBAT
-#define P_FAMILY_ZUBAT                   TRUE
-#undef P_FAMILY_ODDISH
-#define P_FAMILY_ODDISH                  TRUE
+#undef P_FAMILY_PUYOMON
+#define P_FAMILY_PUYOMON                TRUE
+#undef P_FAMILY_RELEMON
+#define P_FAMILY_RELEMON                  TRUE
+#undef P_FAMILY_SANDMON
+#define P_FAMILY_SANDMON              TRUE
+#undef P_FAMILY_ICEBOTAMON
+#define P_FAMILY_ICEBOTAMON                   TRUE
+#undef P_FAMILY_ZERIMON
+#define P_FAMILY_ZERIMON                  TRUE
 #undef P_FAMILY_PARAS
 #define P_FAMILY_PARAS                   TRUE
 #undef P_FAMILY_VENONAT

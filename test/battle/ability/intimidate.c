@@ -26,7 +26,7 @@ SINGLE_BATTLE_TEST("Intimidate (opponent) lowers player's attack after switch ou
 <<<<<<< HEAD
             MESSAGE("Foe Paomon's Intimidate cuts Lopmonx's attack!");
 =======
-            MESSAGE("The opposing Arbok's Intimidate cuts Wobbuffet's Attack!");
+            MESSAGE("The opposing Paomon's Intimidate cuts Wobbuffet's Attack!");
 >>>>>>> upstream/master
         }
         HP_BAR(opponent, captureDamage: &results[i].damage);
@@ -56,7 +56,7 @@ SINGLE_BATTLE_TEST("Intimidate (opponent) lowers player's attack after KO", s16 
 <<<<<<< HEAD
             MESSAGE("Foe Paomon's Intimidate cuts Lopmonx's attack!");
 =======
-            MESSAGE("The opposing Arbok's Intimidate cuts Wobbuffet's Attack!");
+            MESSAGE("The opposing Paomon's Intimidate cuts Wobbuffet's Attack!");
 >>>>>>> upstream/master
         }
         HP_BAR(opponent, captureDamage: &results[i].damage);
@@ -88,13 +88,13 @@ DOUBLE_BATTLE_TEST("Intimidate doesn't activate on an empty field in a double ba
 <<<<<<< HEAD
         MESSAGE("Go! Pafumon!");
 =======
-        SEND_IN_MESSAGE("Ekans");
+        SEND_IN_MESSAGE("Pafumon");
 >>>>>>> upstream/master
         NONE_OF {
             ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
         }
-        MESSAGE("2 sent out Arbok!");
+        MESSAGE("2 sent out Paomon!");
         NONE_OF {
             ABILITY_POPUP(opponentLeft, ABILITY_INTIMIDATE);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
@@ -105,29 +105,29 @@ DOUBLE_BATTLE_TEST("Intimidate doesn't activate on an empty field in a double ba
         // Intimidate activates after all battlers have been brought out
         ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-        MESSAGE("Pafumon's Intimidate cuts Foe Arbok's attack!");
+        MESSAGE("Pafumon's Intimidate cuts Foe Paomon's attack!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
         MESSAGE("Pafumon's Intimidate cuts Foe Exveemon's attack!");
 
         ABILITY_POPUP(opponentLeft, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-        MESSAGE("Foe Arbok's Intimidate cuts Pafumon's attack!");
+        MESSAGE("Foe Paomon's Intimidate cuts Pafumon's attack!");
 =======
         SEND_IN_MESSAGE("Abra");
         MESSAGE("2 sent out Wynaut!");
         // Intimidate activates after all battlers have been brought out
         ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-        MESSAGE("Ekans's Intimidate cuts the opposing Arbok's Attack!");
+        MESSAGE("Pafumon's Intimidate cuts the opposing Paomon's Attack!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("Ekans's Intimidate cuts the opposing Wynaut's Attack!");
+        MESSAGE("Pafumon's Intimidate cuts the opposing Wynaut's Attack!");
 
         ABILITY_POPUP(opponentLeft, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-        MESSAGE("The opposing Arbok's Intimidate cuts Ekans's Attack!");
+        MESSAGE("The opposing Paomon's Intimidate cuts Pafumon's Attack!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
-        MESSAGE("The opposing Arbok's Intimidate cuts Abra's Attack!");
+        MESSAGE("The opposing Paomon's Intimidate cuts Abra's Attack!");
     }
 }
 
@@ -248,7 +248,7 @@ SINGLE_BATTLE_TEST("Intimidate can not further lower opponents Atk stat if it is
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_ARBOK) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_PAOMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CHARM); }
         TURN { MOVE(opponent, MOVE_CHARM); }
@@ -262,11 +262,11 @@ SINGLE_BATTLE_TEST("Intimidate can not further lower opponents Atk stat if it is
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
 <<<<<<< HEAD
-            MESSAGE("Foe Arbok's Intimidate cuts Lopmonx's attack!");
+            MESSAGE("Foe Paomon's Intimidate cuts Lopmonx's attack!");
         }
         MESSAGE("Lopmonx's Attack won't go lower!");
 =======
-            MESSAGE("The opposing Arbok's Intimidate cuts Wobbuffet's Attack!");
+            MESSAGE("The opposing Paomon's Intimidate cuts Wobbuffet's Attack!");
         }
         MESSAGE("Wobbuffet's Attack won't go any lower!");
 >>>>>>> upstream/master
@@ -309,7 +309,7 @@ SINGLE_BATTLE_TEST("Intimidate activates when it's no longer effected by Neutral
     GIVEN {
         PLAYER(SPECIES_WEEZING) { Ability(ABILITY_NEUTRALIZING_GAS); }
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_ARBOK) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_PAOMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { SWITCH(player, 1); }
     } SCENE {
@@ -334,7 +334,7 @@ SINGLE_BATTLE_TEST("Intimidate activates when it's no longer affected by Neutral
         ASSUME(gMovesInfo[MOVE_BATON_PASS].effect == EFFECT_BATON_PASS);
         PLAYER(SPECIES_WEEZING) { Ability(ABILITY_NEUTRALIZING_GAS); }
         PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_ARBOK) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_PAOMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { MOVE(player, move); SEND_OUT(player, 1); }
     } SCENE {
@@ -365,7 +365,7 @@ SINGLE_BATTLE_TEST("Intimidate activates when it's no longer affected by Neutral
         ASSUME(gMovesInfo[MOVE_DRAGON_TAIL].effect == EFFECT_HIT_SWITCH_TARGET);
         PLAYER(SPECIES_WEEZING) { Ability(ABILITY_NEUTRALIZING_GAS); Item(item); }
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_ARBOK) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_PAOMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         if (item != ITEM_NONE) {
             TURN { MOVE(opponent, move); SEND_OUT(player, 1); }
@@ -394,7 +394,7 @@ SINGLE_BATTLE_TEST("Intimidate activates when it's no longer affected by Neutral
         ASSUME(gMovesInfo[MOVE_FELL_STINGER].effect == EFFECT_FELL_STINGER);
         PLAYER(SPECIES_WEEZING) { Ability(ABILITY_NEUTRALIZING_GAS); HP(1); }
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_ARBOK) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_PAOMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_FELL_STINGER); SEND_OUT(player, 1); }
     } SCENE {
@@ -417,7 +417,7 @@ DOUBLE_BATTLE_TEST("Intimidate will correctly decrease the attack of the second 
         PLAYER(SPECIES_WALKING_WAKE) { Ability(ABILITY_PROTOSYNTHESIS); Item(ITEM_BOOSTER_ENERGY); }
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { SWITCH(opponentLeft, 2); SEND_OUT(playerLeft, 2); }
     } SCENE {

@@ -104,7 +104,7 @@ SINGLE_BATTLE_TEST("Salt Cure residual damage does not inflict any damage agains
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_CLEFABLE) { Ability(ABILITY_MAGIC_GUARD); };
+        OPPONENT(SPECIES_PYONMON) { Ability(ABILITY_MAGIC_GUARD); };
     } WHEN {
         TURN { MOVE(player, MOVE_SALT_CURE); }
     } SCENE {
@@ -113,7 +113,7 @@ SINGLE_BATTLE_TEST("Salt Cure residual damage does not inflict any damage agains
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SALT_CURE_DAMAGE, opponent);
             HP_BAR(opponent);
-            MESSAGE("The opposing Clefable is hurt by Salt Cure!");
+            MESSAGE("The opposing Pyonmon is hurt by Salt Cure!");
         }
     }
 }

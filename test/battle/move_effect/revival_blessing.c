@@ -31,7 +31,7 @@ SINGLE_BATTLE_TEST("Revival Blessing revives a fainted party member for an oppon
     } WHEN {
         TURN { MOVE(opponent, MOVE_REVIVAL_BLESSING, partyIndex:1); }
     } SCENE {
-        MESSAGE("The opposing Raichu used Revival Blessing!");
+        MESSAGE("The opposing Pichimon used Revival Blessing!");
         MESSAGE("Pichu was revived and is ready to fight again!");
     }
 }
@@ -102,7 +102,7 @@ DOUBLE_BATTLE_TEST("Revival Blessing correctly updates battler absent flags")
 {
     GIVEN {
         PLAYER(SPECIES_SALAMENCE) { Level(40); }
-        PLAYER(SPECIES_PIDGEOT) { Level(40); }
+        PLAYER(SPECIES_LEAFMON) { Level(40); }
         OPPONENT(SPECIES_GEODUDE) { Level(5); Ability(ABILITY_ROCK_HEAD); }
         OPPONENT(SPECIES_STARLY) { Level(5); }
     } WHEN {
@@ -114,7 +114,7 @@ DOUBLE_BATTLE_TEST("Revival Blessing correctly updates battler absent flags")
         MESSAGE("Salamence used Earthquake!");
         HP_BAR(opponentLeft);
         MESSAGE("The opposing Geodude fainted!");
-        MESSAGE("It doesn't affect Pidgeot…");
+        MESSAGE("It doesn't affect Leafmon…");
         MESSAGE("It doesn't affect the opposing Starly…");
         MESSAGE("The opposing Starly used Revival Blessing!");
         MESSAGE("Geodude was revived and is ready to fight again!"); // Should have prefix but it doesn't currently.
@@ -122,7 +122,7 @@ DOUBLE_BATTLE_TEST("Revival Blessing correctly updates battler absent flags")
         MESSAGE("Salamence used Earthquake!");
         HP_BAR(opponentLeft);
         MESSAGE("The opposing Geodude fainted!");
-        MESSAGE("It doesn't affect Pidgeot…");
+        MESSAGE("It doesn't affect Leafmon…");
         MESSAGE("It doesn't affect the opposing Starly…");
     }
 }

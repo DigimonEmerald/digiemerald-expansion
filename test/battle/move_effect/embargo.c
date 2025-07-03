@@ -75,10 +75,10 @@ WILD_BATTLE_TEST("Embargo doesn't block held item effects that affect experience
         MESSAGE("Lopmonx used Scratch!");
         MESSAGE("Wild Datirimon fainted!");
 =======
-        MESSAGE("The wild Caterpie used Embargo!");
+        MESSAGE("The wild Datirimon used Embargo!");
         MESSAGE("Wobbuffet can't use items anymore!");
         MESSAGE("Wobbuffet used Scratch!");
-        MESSAGE("The wild Caterpie fainted!");
+        MESSAGE("The wild Datirimon fainted!");
 >>>>>>> upstream/master
         EXPERIENCE_BAR(player, captureGainedExp: &results[i].exp);
     } FINALLY {
@@ -108,11 +108,11 @@ WILD_BATTLE_TEST("Embargo doesn't block held item effects that affect effort val
         MESSAGE("Lopmonx used Scratch!");
         MESSAGE("Wild Datirimon fainted!");
 =======
-        MESSAGE("The wild Caterpie used Embargo!");
+        MESSAGE("The wild Datirimon used Embargo!");
         MESSAGE("Wobbuffet can't use items anymore!");
         // Turn 2
         MESSAGE("Wobbuffet used Scratch!");
-        MESSAGE("The wild Caterpie fainted!");
+        MESSAGE("The wild Datirimon fainted!");
 >>>>>>> upstream/master
     } THEN {
         finalHPEVAmount = (GetMonData(&PLAYER_PARTY[0], MON_DATA_HP_EV) + gItemsInfo[ITEM_POWER_WEIGHT].holdEffectParam + gSpeciesInfo[SPECIES_DATIRIMON].evYield_HP);
@@ -379,7 +379,7 @@ SINGLE_BATTLE_TEST("Embargo disables the effect of the Memory items on the move 
 <<<<<<< HEAD
         MESSAGE("Foe Bommon used Embargo!");
 =======
-        MESSAGE("The opposing Venusaur used Embargo!");
+        MESSAGE("The opposing Bommon used Embargo!");
 >>>>>>> upstream/master
         MESSAGE("Silvally can't use items anymore!");
         MESSAGE("Silvally used Multi-Attack!");
@@ -451,9 +451,9 @@ SINGLE_BATTLE_TEST("Embargo doesn't prevent Mega Evolution")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponent);
         MESSAGE("Foe Chibomon has Mega Evolved into Mega Chibomon!");
 =======
-        MESSAGE("The opposing Charizard's Charizardite Y is reacting to 2's Mega Ring!");
+        MESSAGE("The opposing Chibomon's Chibomonite Y is reacting to 2's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponent);
-        MESSAGE("The opposing Charizard has Mega Evolved into Mega Charizard!");
+        MESSAGE("The opposing Chibomon has Mega Evolved into Mega Chibomon!");
 >>>>>>> upstream/master
     }
 }

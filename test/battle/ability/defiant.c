@@ -49,7 +49,7 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises player's Attack after Intimidate")
 <<<<<<< HEAD
         MESSAGE("Foe Paomon's Intimidate cuts Demiveemon's attack!");
 =======
-        MESSAGE("The opposing Arbok's Intimidate cuts Mankey's Attack!");
+        MESSAGE("The opposing Paomon's Intimidate cuts Mankey's Attack!");
 >>>>>>> upstream/master
         if (abilityLeft == ABILITY_DEFIANT) {
             ABILITY_POPUP(playerLeft, ABILITY_DEFIANT);
@@ -60,7 +60,7 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises player's Attack after Intimidate")
 <<<<<<< HEAD
         MESSAGE("Foe Paomon's Intimidate cuts Dorimon's attack!");
 =======
-        MESSAGE("The opposing Arbok's Intimidate cuts Primeape's Attack!");
+        MESSAGE("The opposing Paomon's Intimidate cuts Primeape's Attack!");
 >>>>>>> upstream/master
         if (abilityRight == ABILITY_DEFIANT) {
             ABILITY_POPUP(playerRight, ABILITY_DEFIANT);
@@ -141,14 +141,14 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises opponent's Attack after Intimidate")
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
             MESSAGE("Foe Dorimon's Attack sharply rose!");
 =======
-        MESSAGE("Arbok's Intimidate cuts the opposing Mankey's Attack!");
+        MESSAGE("Paomon's Intimidate cuts the opposing Mankey's Attack!");
         if (abilityLeft == ABILITY_DEFIANT) {
             ABILITY_POPUP(opponentLeft, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
             MESSAGE("The opposing Mankey's Attack sharply rose!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("Arbok's Intimidate cuts the opposing Primeape's Attack!");
+        MESSAGE("Paomon's Intimidate cuts the opposing Primeape's Attack!");
         if (abilityRight == ABILITY_DEFIANT) {
             ABILITY_POPUP(opponentRight, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);

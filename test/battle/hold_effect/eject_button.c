@@ -77,12 +77,12 @@ SINGLE_BATTLE_TEST("Eject Button will not activate under Substitute")
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
             MESSAGE("Foe Pichimon is switched out with the Eject Button!");
 =======
-        MESSAGE("The opposing Raichu put in a substitute!");
+        MESSAGE("The opposing Pichimon put in a substitute!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
-        MESSAGE("The substitute took damage for the opposing Raichu!");
+        MESSAGE("The substitute took damage for the opposing Pichimon!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-            MESSAGE("The opposing Raichu is switched out with the Eject Button!");
+            MESSAGE("The opposing Pichimon is switched out with the Eject Button!");
 >>>>>>> upstream/master
         }
     }

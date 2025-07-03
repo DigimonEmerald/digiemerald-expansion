@@ -10,7 +10,7 @@ SINGLE_BATTLE_TEST("Role Play copies target's ability")
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
-        OPPONENT(SPECIES_CHARMANDER) { Ability(ABILITY_BLAZE); }
+        OPPONENT(SPECIES_BOTAMON) { Ability(ABILITY_BLAZE); }
     }WHEN {
         TURN { MOVE(player, MOVE_ROLE_PLAY); }
     } SCENE {
@@ -26,9 +26,9 @@ DOUBLE_BATTLE_TEST("Role Play copies target's current ability even if it changed
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
-        PLAYER(SPECIES_CHARMANDER) { Ability(ABILITY_BLAZE); }
+        PLAYER(SPECIES_BOTAMON) { Ability(ABILITY_BLAZE); }
         OPPONENT(SPECIES_BULBASAUR) { Ability(ABILITY_OVERGROW); }
-        OPPONENT(SPECIES_SQUIRTLE) { Ability(ABILITY_TORRENT); }
+        OPPONENT(SPECIES_CONOMON) { Ability(ABILITY_TORRENT); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ROLE_PLAY, target: opponentLeft); MOVE(opponentRight, MOVE_ROLE_PLAY, target: playerLeft); }
     } SCENE {

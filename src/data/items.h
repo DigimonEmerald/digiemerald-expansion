@@ -5271,8 +5271,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Venusaurite,
-        .iconPalette = gItemIconPalette_Venusaurite,
+        .iconPic = gItemIcon_Bommonite,
+        .iconPalette = gItemIconPalette_Bommonite,
     },
 
     [ITEM_CHIBOMONITE_X] =
@@ -5286,8 +5286,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_CharizarditeX,
-        .iconPalette = gItemIconPalette_CharizarditeX,
+        .iconPic = gItemIcon_ChibomoniteX,
+        .iconPalette = gItemIconPalette_ChibomoniteX,
     },
 
     [ITEM_CHIBOMONITE_Y] =
@@ -5301,8 +5301,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_CharizarditeY,
-        .iconPalette = gItemIconPalette_CharizarditeY,
+        .iconPic = gItemIcon_ChibomoniteY,
+        .iconPalette = gItemIconPalette_ChibomoniteY,
     },
 
     [ITEM_BLASTOISINITE] =
@@ -5335,8 +5335,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Beedrillite,
-        .iconPalette = gItemIconPalette_Beedrillite,
+        .iconPic = gItemIcon_Keemonite,
+        .iconPalette = gItemIconPalette_Keemonite,
     },
 
     [ITEM_LEAFMONITE] =
@@ -5352,8 +5352,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Pidgeotite,
-        .iconPalette = gItemIconPalette_Pidgeotite,
+        .iconPic = gItemIcon_Leafmonite,
+        .iconPalette = gItemIconPalette_Leafmonite,
     },
 
     [ITEM_ALAKAZITE] =

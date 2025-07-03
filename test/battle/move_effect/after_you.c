@@ -61,7 +61,7 @@ DOUBLE_BATTLE_TEST("After You calculates correct turn order if only one pokemon 
     GIVEN {
         PLAYER(SPECIES_GRENINJA) { Speed(120); }
         PLAYER(SPECIES_REGIROCK) { Speed(10); }
-        OPPONENT(SPECIES_PIDGEOT) { Speed(100); }
+        OPPONENT(SPECIES_LEAFMON) { Speed(100); }
         OPPONENT(SPECIES_DRAGONITE) { Speed(60); }
     } WHEN {
         TURN {
@@ -79,7 +79,7 @@ DOUBLE_BATTLE_TEST("After You calculates correct turn order if only one pokemon 
         MESSAGE("Regirock took the kind offer!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STONE_EDGE, playerRight);
         HP_BAR(opponentLeft);
-        MESSAGE("The opposing Pidgeot fainted!");
+        MESSAGE("The opposing Leafmon fainted!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentRight);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_AFTER_YOU, playerLeft);

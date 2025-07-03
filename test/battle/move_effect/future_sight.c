@@ -191,15 +191,15 @@ SINGLE_BATTLE_TEST("Future Sight breaks Focus Sash and doesn't make the holder e
         ASSUME(gItemsInfo[ITEM_FOCUS_SASH].holdEffect == HOLD_EFFECT_FOCUS_SASH);
         PLAYER(SPECIES_WOBBUFFET);
 >>>>>>> upstream/master
-        OPPONENT(SPECIES_PIDGEY) { Level(1); Item(ITEM_FOCUS_SASH); }
+        OPPONENT(SPECIES_KETOMON) { Level(1); Item(ITEM_FOCUS_SASH); }
     } WHEN {
         TURN { MOVE(player, MOVE_FUTURE_SIGHT); }
         TURN { }
         TURN { }
         TURN { MOVE(player, MOVE_PSYCHIC); }
     } SCENE {
-        MESSAGE("The opposing Pidgey hung on using its Focus Sash!");
+        MESSAGE("The opposing Ketomon hung on using its Focus Sash!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PSYCHIC, player);
-        MESSAGE("The opposing Pidgey fainted!");
+        MESSAGE("The opposing Ketomon fainted!");
     }
 }

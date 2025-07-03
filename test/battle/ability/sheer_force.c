@@ -244,7 +244,7 @@ SINGLE_BATTLE_TEST("Sheer Force doesn't boost Double Shock", s16 damage)
     PARAMETRIZE { move = MOVE_SKILL_SWAP; }
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     GIVEN {
-        PLAYER(SPECIES_PIKACHU);
+        PLAYER(SPECIES_PETITMON);
         OPPONENT(SPECIES_TAUROS) { Ability(ABILITY_SHEER_FORCE); };
     } WHEN {
         TURN { MOVE(opponent, move); MOVE(player, MOVE_DOUBLE_SHOCK); }

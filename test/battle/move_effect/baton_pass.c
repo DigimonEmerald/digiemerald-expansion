@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Baton Pass used after Memento works correctly")
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_CATERPIE);
+        OPPONENT(SPECIES_DATIRIMON);
     } WHEN {
         TURN { MOVE(player, MOVE_MEMENTO); SEND_OUT(player, 1); MOVE(opponent, MOVE_BATON_PASS); SEND_OUT(opponent, 1); }
     } SCENE {
@@ -26,7 +26,7 @@ SINGLE_BATTLE_TEST("Baton Pass used after Memento works correctly")
         MESSAGE("Wobbuffet fainted!");
         MESSAGE("The opposing Wynaut used Baton Pass!");
 >>>>>>> upstream/master
-        MESSAGE("2 sent out Caterpie!");
+        MESSAGE("2 sent out Datirimon!");
         MESSAGE("Go! Lopmonx!");
     }
 }

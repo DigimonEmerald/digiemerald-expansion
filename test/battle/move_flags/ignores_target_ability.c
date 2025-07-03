@@ -24,7 +24,7 @@ SINGLE_BATTLE_TEST("ignoresTargetAbility moves do not ignore the attacker's own 
     ASSUME(gMovesInfo[MOVE_AMNESIA].effect == EFFECT_SPECIAL_DEFENSE_UP_2);
 
     GIVEN {
-        PLAYER(SPECIES_CLEFABLE) { Speed(1); Ability(ability); }
+        PLAYER(SPECIES_PYONMON) { Speed(1); Ability(ability); }
         OPPONENT(SPECIES_ARON) { Speed(2); }
     } WHEN {
         if (gMovesInfo[move].category == DAMAGE_CATEGORY_PHYSICAL)

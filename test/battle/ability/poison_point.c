@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Poison Point triggers 30% of the time")
         ASSUME(B_ABILITY_TRIGGER_CHANCE >= GEN_4);
         ASSUME(gMovesInfo[MOVE_TACKLE].makesContact);
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_NIDORAN_M) { Ability(ABILITY_POISON_POINT); }
+        OPPONENT(SPECIES_PUSUMON) { Ability(ABILITY_POISON_POINT); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
         TURN {}

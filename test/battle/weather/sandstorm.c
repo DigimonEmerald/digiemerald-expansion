@@ -87,7 +87,7 @@ SINGLE_BATTLE_TEST("Sandstorm damage rounds properly when maxHP < 16")
 {
     GIVEN {
         PLAYER(SPECIES_MAGIKARP) { Level(1); MaxHP(11); HP(11); }
-        OPPONENT(SPECIES_SANDSLASH);
+        OPPONENT(SPECIES_POYOMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SANDSTORM); }
     } SCENE {

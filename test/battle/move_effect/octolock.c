@@ -77,12 +77,12 @@ SINGLE_BATTLE_TEST("Octolock Defense reduction is prevented by Big Pecks")
         TURN { MOVE(player, MOVE_OCTOLOCK); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_OCTOLOCK, player);
-        MESSAGE("The opposing Pidgey can no longer escape because of Octolock!");
+        MESSAGE("The opposing Ketomon can no longer escape because of Octolock!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        NOT MESSAGE("The opposing Pidgey's Defense fell!");
+        NOT MESSAGE("The opposing Ketomon's Defense fell!");
         ABILITY_POPUP(opponent, ABILITY_BIG_PECKS);
-        MESSAGE("The opposing Pidgey's Big Pecks prevents Defense loss!");
-        MESSAGE("The opposing Pidgey's Sp. Def fell!");
+        MESSAGE("The opposing Ketomon's Big Pecks prevents Defense loss!");
+        MESSAGE("The opposing Ketomon's Sp. Def fell!");
     }
 }
 

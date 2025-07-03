@@ -85,12 +85,12 @@ SINGLE_BATTLE_TEST("Innards Out does not damage Magic Guard Pokemon")
         MESSAGE("Foe Pyonmon used Psychic!");
 =======
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_CLEFABLE) { Ability(ABILITY_MAGIC_GUARD); }
+        OPPONENT(SPECIES_PYONMON) { Ability(ABILITY_MAGIC_GUARD); }
         ASSUME(!IS_MOVE_STATUS(MOVE_PSYCHIC));
     } WHEN {
         TURN { MOVE(opponent, MOVE_PSYCHIC); SEND_OUT(player, 1); }
     } SCENE {
-        MESSAGE("The opposing Clefable used Psychic!");
+        MESSAGE("The opposing Pyonmon used Psychic!");
 >>>>>>> upstream/master
         HP_BAR(player);
         ABILITY_POPUP(player, ABILITY_INNARDS_OUT);

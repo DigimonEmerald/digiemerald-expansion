@@ -1280,16 +1280,16 @@ static const struct SpriteFrameImage sPicTable_AzumarillOld[] = {
     overworld_frame(gObjectEventPic_AzumarillOld, 2, 2, 2),
 };
 
-static const struct SpriteFrameImage sPicTable_PikachuOld[] = {
-    overworld_frame(gObjectEventPic_PikachuOld, 2, 2, 0),
-    overworld_frame(gObjectEventPic_PikachuOld, 2, 2, 1),
-    overworld_frame(gObjectEventPic_PikachuOld, 2, 2, 2),
-    overworld_frame(gObjectEventPic_PikachuOld, 2, 2, 0),
-    overworld_frame(gObjectEventPic_PikachuOld, 2, 2, 0),
-    overworld_frame(gObjectEventPic_PikachuOld, 2, 2, 1),
-    overworld_frame(gObjectEventPic_PikachuOld, 2, 2, 1),
-    overworld_frame(gObjectEventPic_PikachuOld, 2, 2, 2),
-    overworld_frame(gObjectEventPic_PikachuOld, 2, 2, 2),
+static const struct SpriteFrameImage sPicTable_PetitmonOld[] = {
+    overworld_frame(gObjectEventPic_PetitmonOld, 2, 2, 0),
+    overworld_frame(gObjectEventPic_PetitmonOld, 2, 2, 1),
+    overworld_frame(gObjectEventPic_PetitmonOld, 2, 2, 2),
+    overworld_frame(gObjectEventPic_PetitmonOld, 2, 2, 0),
+    overworld_frame(gObjectEventPic_PetitmonOld, 2, 2, 0),
+    overworld_frame(gObjectEventPic_PetitmonOld, 2, 2, 1),
+    overworld_frame(gObjectEventPic_PetitmonOld, 2, 2, 1),
+    overworld_frame(gObjectEventPic_PetitmonOld, 2, 2, 2),
+    overworld_frame(gObjectEventPic_PetitmonOld, 2, 2, 2),
 };
 
 static const struct SpriteFrameImage sPicTable_ZigzagoonOld[] = {

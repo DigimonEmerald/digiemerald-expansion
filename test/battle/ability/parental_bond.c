@@ -97,8 +97,8 @@ DOUBLE_BATTLE_TEST("Parental Bond does not convert multi-target moves into a two
         MESSAGE("It doesn't affect Ketomon…");
         MESSAGE("It doesn't affect Foe Ketomon…");
 =======
-        MESSAGE("It doesn't affect Pidgey…");
-        MESSAGE("It doesn't affect the opposing Pidgey…");
+        MESSAGE("It doesn't affect Ketomon…");
+        MESSAGE("It doesn't affect the opposing Ketomon…");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentLeft);

@@ -111,7 +111,7 @@ SINGLE_BATTLE_TEST("Shed Tail creates a Substitute with 1/4 of user maximum heal
         ASSUME(gMovesInfo[MOVE_DRAGON_RAGE].effect == EFFECT_FIXED_DAMAGE_ARG);
         PLAYER(SPECIES_BULBASAUR) { MaxHP(hp); }
         PLAYER(SPECIES_BULBASAUR);
-        OPPONENT(SPECIES_CHARMANDER);
+        OPPONENT(SPECIES_BOTAMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SHED_TAIL); MOVE(opponent, MOVE_DRAGON_RAGE); SEND_OUT(player, 1); }
     } SCENE {
@@ -148,7 +148,7 @@ SINGLE_BATTLE_TEST("Shed Tail creates a Substitute with 1/4 of user maximum heal
         ASSUME(gMovesInfo[MOVE_DRAGON_RAGE].effect == EFFECT_FIXED_DAMAGE_ARG);
         PLAYER(SPECIES_BULBASAUR) { MaxHP(hp); }
         PLAYER(SPECIES_BULBASAUR);
-        OPPONENT(SPECIES_CHARMANDER);
+        OPPONENT(SPECIES_BOTAMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SHED_TAIL); MOVE(opponent, MOVE_DRAGON_RAGE); SEND_OUT(player, 1); }
     } SCENE {

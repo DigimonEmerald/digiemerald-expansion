@@ -36,7 +36,7 @@ DOUBLE_BATTLE_TEST("Mega Evolution's order is determined by Speed - opponent fas
         MESSAGE("The opposing Gardevoir's Gardevoirite is reacting to 2's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponentLeft);
         MESSAGE("The opposing Gardevoir has Mega Evolved into Mega Gardevoir!");
-        MESSAGE("Venusaur's Venusaurite is reacting to 1's Mega Ring!");
+        MESSAGE("Bommon's Bommonite is reacting to 1's Mega Ring!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, playerLeft);
         MESSAGE("Bommon has Mega Evolved into Mega Bommon!");
@@ -61,7 +61,7 @@ DOUBLE_BATTLE_TEST("Mega Evolution's order is determined by Speed - player faste
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponentLeft);
         MESSAGE("Foe Arcadiamon_champion has Mega Evolved into Mega Arcadiamon_champion!");
 =======
-        MESSAGE("Venusaur has Mega Evolved into Mega Venusaur!");
+        MESSAGE("Bommon has Mega Evolved into Mega Bommon!");
         MESSAGE("The opposing Gardevoir's Gardevoirite is reacting to 2's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponentLeft);
         MESSAGE("The opposing Gardevoir has Mega Evolved into Mega Gardevoir!");

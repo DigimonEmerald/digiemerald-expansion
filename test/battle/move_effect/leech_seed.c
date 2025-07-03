@@ -20,7 +20,7 @@ SINGLE_BATTLE_TEST("Leech Seed doesn't affect Grass-type Pokémon")
 <<<<<<< HEAD
         MESSAGE("It doesn't affect Foe Zerimon…");
 =======
-        MESSAGE("It doesn't affect the opposing Oddish…");
+        MESSAGE("It doesn't affect the opposing Zerimon…");
 >>>>>>> upstream/master
     }
 }

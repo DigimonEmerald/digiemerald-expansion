@@ -522,7 +522,7 @@ SINGLE_BATTLE_TEST("(Z-MOVE) 10,000,000 Volt Thunderbolt has an increased critic
     GIVEN {
         ASSUME(B_CRIT_CHANCE >= GEN_6);
         ASSUME(gMovesInfo[MOVE_10_000_000_VOLT_THUNDERBOLT].criticalHitStage == 2);
-        PLAYER(SPECIES_PIKACHU_PARTNER) { Item(ITEM_PIKASHUNIUM_Z); }
+        PLAYER(SPECIES_PETITMON_PARTNER) { Item(ITEM_PIKASHUNIUM_Z); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_THUNDERBOLT, gimmick: GIMMICK_Z_MOVE); }
@@ -537,7 +537,7 @@ SINGLE_BATTLE_TEST("(Z-MOVE) Stoked Sparksurfer paralyzes the target")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_STOKED_SPARKSURFER].additionalEffects[0].moveEffect == MOVE_EFFECT_PARALYSIS);
-        PLAYER(SPECIES_RAICHU_ALOLA) { Item(ITEM_ALORAICHIUM_Z); }
+        PLAYER(SPECIES_PICHIMON_ALOLA) { Item(ITEM_ALORAICHIUM_Z); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_THUNDERBOLT, gimmick: GIMMICK_Z_MOVE); }

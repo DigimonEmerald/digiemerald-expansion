@@ -22,7 +22,7 @@ DOUBLE_BATTLE_TEST("Stalwart stops Lightning Rod and Storm Drain from redirectin
 {
     u32 ability, species;
     PARAMETRIZE { ability = ABILITY_STORM_DRAIN; species = SPECIES_LUMINEON; }
-    PARAMETRIZE { ability = ABILITY_LIGHTNING_ROD; species = SPECIES_RAICHU; }
+    PARAMETRIZE { ability = ABILITY_LIGHTNING_ROD; species = SPECIES_PICHIMON; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SPARK].type == TYPE_ELECTRIC);
         ASSUME(gMovesInfo[MOVE_WATER_GUN].type == TYPE_WATER);
@@ -43,7 +43,7 @@ DOUBLE_BATTLE_TEST("Stalwart stops Lightning Rod and Storm Drain from redirectin
             NONE_OF {
                 ABILITY_POPUP(opponentLeft, ability);
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-                MESSAGE("The opposing Raichu's Sp. Atk rose!");
+                MESSAGE("The opposing Pichimon's Sp. Atk rose!");
             }
         } else {
             HP_BAR(opponentRight);

@@ -88,13 +88,13 @@ SINGLE_BATTLE_TEST("Roar fails against target with Guard Dog")
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_OKIDOGI) { Ability(ABILITY_GUARD_DOG); }
-        OPPONENT(SPECIES_CHARMANDER);
+        OPPONENT(SPECIES_BOTAMON);
     } WHEN {
         TURN { MOVE(player, MOVE_ROAR); }
     } SCENE {
         NONE_OF {        
             ANIMATION(ANIM_TYPE_MOVE, MOVE_ROAR, player);
-            MESSAGE("The opposing Charmander was dragged out!");
+            MESSAGE("The opposing Botamon was dragged out!");
         }
         MESSAGE("Wobbuffet used Roar!");
         MESSAGE("But it failed!");
@@ -106,7 +106,7 @@ SINGLE_BATTLE_TEST("Roar fails to switch out target with Suction Cups")
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_OCTILLERY) { Ability(ABILITY_SUCTION_CUPS); }
-        OPPONENT(SPECIES_CHARMANDER);
+        OPPONENT(SPECIES_BOTAMON);
     } WHEN {
         TURN { MOVE(player, MOVE_ROAR); }
     } SCENE {
@@ -114,6 +114,6 @@ SINGLE_BATTLE_TEST("Roar fails to switch out target with Suction Cups")
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_ROAR, player);
         ABILITY_POPUP(opponent, ABILITY_SUCTION_CUPS);
         MESSAGE("The opposing Octillery anchors itself with Suction Cups!");
-        NOT MESSAGE("The opposing Charmander was dragged out!");
+        NOT MESSAGE("The opposing Botamon was dragged out!");
     }
 }

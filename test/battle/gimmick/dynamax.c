@@ -578,7 +578,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon that changes forms does not gain
         OPPONENT(SPECIES_EXVEEMON);
 =======
         PLAYER(SPECIES_GRENINJA_BATTLE_BOND) { Ability(ABILITY_BATTLE_BOND); HP(100); Speed(100); }
-        OPPONENT(SPECIES_CATERPIE) { HP(1); Speed(1000); }
+        OPPONENT(SPECIES_DATIRIMON) { HP(1); Speed(1000); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(10); }
 >>>>>>> upstream/master:test/battle/gimmick/dynamax.c
     } WHEN {
@@ -712,8 +712,8 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Pokemon with Gigantamax forms change upon Dynamaxi
     PARAMETRIZE { gigantamaxFactor = FALSE; species = SPECIES_BOMMON; }
     PARAMETRIZE { gigantamaxFactor = TRUE; species = SPECIES_BOMMON_GIGANTAMAX; }
 =======
-    PARAMETRIZE { gigantamaxFactor = FALSE; species = SPECIES_VENUSAUR; }
-    PARAMETRIZE { gigantamaxFactor = TRUE; species = SPECIES_VENUSAUR_GMAX; }
+    PARAMETRIZE { gigantamaxFactor = FALSE; species = SPECIES_BOMMON; }
+    PARAMETRIZE { gigantamaxFactor = TRUE; species = SPECIES_BOMMON_GMAX; }
 >>>>>>> upstream/master:test/battle/gimmick/dynamax.c
     GIVEN {
         PLAYER(SPECIES_BOMMON) { GigantamaxFactor(gigantamaxFactor); }
@@ -1679,7 +1679,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Wildfire sets a field effect that damages no
         // turn 4
         MESSAGE("Foe Exveemon is burning up within G-Max Wildfire's flames!");
 =======
-        MESSAGE("Charizard used G-Max Wildfire!");
+        MESSAGE("Chibomon used G-Max Wildfire!");
         MESSAGE("The opposing Pokémon were surrounded by fire!");
         MESSAGE("The opposing Wobbuffet is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentLeft, captureDamage: &damage);
@@ -2031,7 +2031,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Max Moves don't bypass absorbing abilities")
     PARAMETRIZE { move = MOVE_SPARK; ability = ABILITY_VOLT_ABSORB; species = SPECIES_LANTURN; }
     PARAMETRIZE { move = MOVE_WATER_GUN; ability = ABILITY_WATER_ABSORB; species = SPECIES_LANTURN; }
     PARAMETRIZE { move = MOVE_EMBER; ability = ABILITY_FLASH_FIRE; species = SPECIES_HEATRAN; }
-    PARAMETRIZE { move = MOVE_SPARK; ability = ABILITY_LIGHTNING_ROD; species = SPECIES_PIKACHU; }
+    PARAMETRIZE { move = MOVE_SPARK; ability = ABILITY_LIGHTNING_ROD; species = SPECIES_PETITMON; }
     PARAMETRIZE { move = MOVE_WATER_GUN; ability = ABILITY_STORM_DRAIN; species = SPECIES_GASTRODON; }
     PARAMETRIZE { move = MOVE_EMBER; ability = ABILITY_WELL_BAKED_BODY; species = SPECIES_DACHSBUN; }
     PARAMETRIZE { move = MOVE_SPARK; ability = ABILITY_MOTOR_DRIVE; species = SPECIES_ELECTIVIRE; }

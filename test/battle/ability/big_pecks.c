@@ -6,12 +6,12 @@ SINGLE_BATTLE_TEST("Big Pecks prevents Defense stage reduction from moves")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_LEER].effect == EFFECT_DEFENSE_DOWN);
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_PIDGEY) { Ability(ABILITY_BIG_PECKS); }
+        OPPONENT(SPECIES_KETOMON) { Ability(ABILITY_BIG_PECKS); }
     } WHEN {
         TURN { MOVE(player, MOVE_LEER); }
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_BIG_PECKS);
-        MESSAGE("The opposing Pidgey's Big Pecks prevents Defense loss!");
+        MESSAGE("The opposing Ketomon's Big Pecks prevents Defense loss!");
     }
 }
 
@@ -20,17 +20,17 @@ SINGLE_BATTLE_TEST("Big Pecks is ignored by Mold Breaker")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_LEER].effect == EFFECT_DEFENSE_DOWN);
         PLAYER(SPECIES_PINSIR) { Ability(ABILITY_MOLD_BREAKER); }
-        OPPONENT(SPECIES_PIDGEY) { Ability(ABILITY_BIG_PECKS); }
+        OPPONENT(SPECIES_KETOMON) { Ability(ABILITY_BIG_PECKS); }
     } WHEN {
         TURN { MOVE(player, MOVE_LEER); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_MOLD_BREAKER);
         MESSAGE("Pinsir breaks the mold!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_LEER, player);
-        MESSAGE("The opposing Pidgey's Defense fell!");
+        MESSAGE("The opposing Ketomon's Defense fell!");
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_BIG_PECKS);
-            MESSAGE("The opposing Pidgey's Big Pecks prevents Defense loss!");
+            MESSAGE("The opposing Ketomon's Big Pecks prevents Defense loss!");
         }
     }
 }
@@ -40,14 +40,14 @@ SINGLE_BATTLE_TEST("Big Pecks doesn't prevent Defense stage reduction from moves
     GIVEN {
         ASSUME(MoveHasAdditionalEffectSelf(MOVE_SUPERPOWER, MOVE_EFFECT_ATK_DEF_DOWN) == TRUE);
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_PIDGEY) { Ability(ABILITY_BIG_PECKS); }
+        OPPONENT(SPECIES_KETOMON) { Ability(ABILITY_BIG_PECKS); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUPERPOWER); }
         TURN {}
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SUPERPOWER, opponent);
-        MESSAGE("The opposing Pidgey's Attack fell!");
-        MESSAGE("The opposing Pidgey's Defense fell!");
+        MESSAGE("The opposing Ketomon's Attack fell!");
+        MESSAGE("The opposing Ketomon's Defense fell!");
     } THEN {
         EXPECT_EQ(opponent->statStages[STAT_DEF], DEFAULT_STAT_STAGE - 1);
     }
@@ -59,14 +59,14 @@ SINGLE_BATTLE_TEST("Big Pecks doesn't prevent Topsy-Turvy")
         ASSUME(gMovesInfo[MOVE_HARDEN].effect == EFFECT_DEFENSE_UP);
         ASSUME(gMovesInfo[MOVE_TOPSY_TURVY].effect == EFFECT_TOPSY_TURVY);
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_PIDGEY) { Ability(ABILITY_BIG_PECKS); }
+        OPPONENT(SPECIES_KETOMON) { Ability(ABILITY_BIG_PECKS); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_HARDEN); MOVE(player, MOVE_TOPSY_TURVY); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HARDEN, opponent);
-        MESSAGE("The opposing Pidgey's Defense rose!");
+        MESSAGE("The opposing Ketomon's Defense rose!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOPSY_TURVY, player);
-        MESSAGE("All stat changes on the opposing Pidgey were inverted!");
+        MESSAGE("All stat changes on the opposing Ketomon were inverted!");
     } THEN {
         EXPECT_EQ(opponent->statStages[STAT_DEF], DEFAULT_STAT_STAGE - 1);
     }
@@ -79,13 +79,13 @@ SINGLE_BATTLE_TEST("Big Pecks doesn't prevent Spectral Thief from resetting posi
         ASSUME(gMovesInfo[MOVE_SPECTRAL_THIEF].effect == EFFECT_SPECTRAL_THIEF);
         ASSUME(gMovesInfo[MOVE_SOAK].effect == EFFECT_SOAK);
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_PIDGEY) { Ability(ABILITY_BIG_PECKS); }
+        OPPONENT(SPECIES_KETOMON) { Ability(ABILITY_BIG_PECKS); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player,MOVE_SOAK); }
         TURN { MOVE(opponent, MOVE_HARDEN); MOVE(player, MOVE_SPECTRAL_THIEF); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HARDEN, opponent);
-        MESSAGE("The opposing Pidgey's Defense rose!");
+        MESSAGE("The opposing Ketomon's Defense rose!");
         MESSAGE("Wobbuffet stole the target's boosted stats!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPECTRAL_THIEF, player);
     } THEN {
@@ -100,7 +100,7 @@ SINGLE_BATTLE_TEST("Big Pecks doesn't prevent receiving negative Defense stage c
         ASSUME(gMovesInfo[MOVE_BATON_PASS].effect == EFFECT_BATON_PASS);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_PIDGEY) { Ability(ABILITY_BIG_PECKS); }
+        OPPONENT(SPECIES_KETOMON) { Ability(ABILITY_BIG_PECKS); }
     } WHEN {
         TURN { MOVE(player, MOVE_LEER);
                MOVE(opponent, MOVE_BATON_PASS);
@@ -109,7 +109,7 @@ SINGLE_BATTLE_TEST("Big Pecks doesn't prevent receiving negative Defense stage c
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_LEER, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BATON_PASS, opponent);
-        MESSAGE("2 sent out Pidgey!");
+        MESSAGE("2 sent out Ketomon!");
     } THEN {
         EXPECT_EQ(opponent->statStages[STAT_DEF], DEFAULT_STAT_STAGE - 1);
     }

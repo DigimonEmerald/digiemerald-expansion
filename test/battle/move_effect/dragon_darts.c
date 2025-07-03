@@ -4,7 +4,7 @@
 ASSUMPTIONS
 {
     ASSUME(gMovesInfo[MOVE_DRAGON_DARTS].effect == EFFECT_DRAGON_DARTS);
-    ASSUME(gSpeciesInfo[SPECIES_CLEFAIRY].types[0] == TYPE_FAIRY || gSpeciesInfo[SPECIES_CLEFAIRY].types[1] == TYPE_FAIRY);
+    ASSUME(gSpeciesInfo[SPECIES_PUYOMON].types[0] == TYPE_FAIRY || gSpeciesInfo[SPECIES_PUYOMON].types[1] == TYPE_FAIRY);
 }
 
 SINGLE_BATTLE_TEST("Dragon Darts strikes twice")
@@ -72,12 +72,12 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes an opponent twice if the other one is F
     struct BattlePokemon *chosenTarget = NULL;
     struct BattlePokemon *finalTarget = NULL;
     u32 speciesLeft, speciesRight;
-    PARAMETRIZE { chosenTarget = opponentLeft;  finalTarget = opponentRight; speciesLeft = SPECIES_CLEFAIRY;  speciesRight = SPECIES_WOBBUFFET; }
-    PARAMETRIZE { chosenTarget = opponentRight; finalTarget = opponentRight; speciesLeft = SPECIES_CLEFAIRY;  speciesRight = SPECIES_WOBBUFFET; }
-    PARAMETRIZE { chosenTarget = opponentLeft;  finalTarget = opponentLeft;  speciesLeft = SPECIES_WOBBUFFET; speciesRight = SPECIES_CLEFAIRY; }
-    PARAMETRIZE { chosenTarget = opponentRight; finalTarget = opponentLeft;  speciesLeft = SPECIES_WOBBUFFET; speciesRight = SPECIES_CLEFAIRY; }
+    PARAMETRIZE { chosenTarget = opponentLeft;  finalTarget = opponentRight; speciesLeft = SPECIES_PUYOMON;  speciesRight = SPECIES_WOBBUFFET; }
+    PARAMETRIZE { chosenTarget = opponentRight; finalTarget = opponentRight; speciesLeft = SPECIES_PUYOMON;  speciesRight = SPECIES_WOBBUFFET; }
+    PARAMETRIZE { chosenTarget = opponentLeft;  finalTarget = opponentLeft;  speciesLeft = SPECIES_WOBBUFFET; speciesRight = SPECIES_PUYOMON; }
+    PARAMETRIZE { chosenTarget = opponentRight; finalTarget = opponentLeft;  speciesLeft = SPECIES_WOBBUFFET; speciesRight = SPECIES_PUYOMON; }
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_CLEFAIRY].types[0] == TYPE_FAIRY || gSpeciesInfo[SPECIES_CLEFAIRY].types[1] == TYPE_FAIRY);
+        ASSUME(gSpeciesInfo[SPECIES_PUYOMON].types[0] == TYPE_FAIRY || gSpeciesInfo[SPECIES_PUYOMON].types[1] == TYPE_FAIRY);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(speciesLeft);

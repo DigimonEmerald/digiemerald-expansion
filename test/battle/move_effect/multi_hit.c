@@ -170,15 +170,15 @@ SINGLE_BATTLE_TEST("Scale Shot is immune to Fairy types and will end the move co
         OPPONENT(SPECIES_LOPMONX) { HP(1); }
 =======
         ASSUME(gMovesInfo[MOVE_SCALE_SHOT].type == TYPE_DRAGON);
-        ASSUME(gSpeciesInfo[SPECIES_CLEFAIRY].types[0] == TYPE_FAIRY || gSpeciesInfo[SPECIES_CLEFAIRY].types[1] == TYPE_FAIRY);
+        ASSUME(gSpeciesInfo[SPECIES_PUYOMON].types[0] == TYPE_FAIRY || gSpeciesInfo[SPECIES_PUYOMON].types[1] == TYPE_FAIRY);
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_CLEFAIRY) { HP(1); }
+        OPPONENT(SPECIES_PUYOMON) { HP(1); }
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_SCALE_SHOT); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SCALE_SHOT, player);
-        MESSAGE("It doesn't affect the opposing Clefairy…");
+        MESSAGE("It doesn't affect the opposing Puyomon…");
     }
 }
 

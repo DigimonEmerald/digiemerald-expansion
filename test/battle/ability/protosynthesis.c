@@ -161,7 +161,7 @@ SINGLE_BATTLE_TEST("Protosynthesis activates in Sun before Booster Energy")
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); Item(ITEM_BOOSTER_ENERGY); }
-        OPPONENT(SPECIES_NINETALES) { Ability(ABILITY_DROUGHT); }
+        OPPONENT(SPECIES_SAKUMON) { Ability(ABILITY_DROUGHT); }
     } WHEN {
         TURN { SWITCH(player, 1); }
     } SCENE {
@@ -177,7 +177,7 @@ SINGLE_BATTLE_TEST("Protosynthesis doesn't activate for a transformed battler")
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); Item(ITEM_BOOSTER_ENERGY); }
-        OPPONENT(SPECIES_NINETALES) { Ability(ABILITY_DROUGHT); Item(ITEM_BOOSTER_ENERGY); }
+        OPPONENT(SPECIES_SAKUMON) { Ability(ABILITY_DROUGHT); Item(ITEM_BOOSTER_ENERGY); }
     } WHEN {
         TURN { SWITCH(player, 1); MOVE(opponent, MOVE_TRANSFORM); }
     } SCENE {
@@ -196,7 +196,7 @@ SINGLE_BATTLE_TEST("Protosynthesis activates even if the Pokémon is holding an 
 {
     GIVEN {
         PLAYER(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); Item(ITEM_UTILITY_UMBRELLA); }
-        OPPONENT(SPECIES_NINETALES) { Ability(ABILITY_DROUGHT); }
+        OPPONENT(SPECIES_SAKUMON) { Ability(ABILITY_DROUGHT); }
     } WHEN {
         TURN { }
     } SCENE {

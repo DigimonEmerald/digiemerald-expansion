@@ -64,7 +64,7 @@ SINGLE_BATTLE_TEST("Ion Deluge makes Normal type moves Electric type")
 <<<<<<< HEAD
         MESSAGE("Foe Yuramon used Ion Deluge!");
 =======
-        MESSAGE("The opposing Golbat used Ion Deluge!");
+        MESSAGE("The opposing Yuramon used Ion Deluge!");
 >>>>>>> upstream/master
         MESSAGE("A deluge of ions showers the battlefield!");
         MESSAGE("Lopmonx used Tackle!");
