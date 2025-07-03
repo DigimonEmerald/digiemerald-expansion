@@ -10,8 +10,8 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Galvanize turns a normal type move into Electric")
 {
     GIVEN {
-        PLAYER(SPECIES_KRABBY);
-        OPPONENT(SPECIES_GEODUDE_ALOLA) { Ability(ABILITY_GALVANIZE); }
+        PLAYER(SPECIES_VIXIMON);
+        OPPONENT(SPECIES_MONIMON_ALOLA) { Ability(ABILITY_GALVANIZE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
@@ -32,8 +32,8 @@ SINGLE_BATTLE_TEST("Galvanize can not turn certain moves into Electric type move
         ASSUME(gMovesInfo[MOVE_HIDDEN_POWER].effect == EFFECT_HIDDEN_POWER);
         ASSUME(gMovesInfo[MOVE_WEATHER_BALL].effect == EFFECT_WEATHER_BALL);
         ASSUME(gMovesInfo[MOVE_MULTI_ATTACK].effect == EFFECT_CHANGE_TYPE_ON_ITEM);
-        PLAYER(SPECIES_KRABBY);
-        OPPONENT(SPECIES_GEODUDE_ALOLA) { Ability(ABILITY_GALVANIZE); }
+        PLAYER(SPECIES_VIXIMON);
+        OPPONENT(SPECIES_MONIMON_ALOLA) { Ability(ABILITY_GALVANIZE); }
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {

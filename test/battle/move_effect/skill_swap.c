@@ -28,7 +28,7 @@ DOUBLE_BATTLE_TEST("Skill Swap only swaps user's ability with target's ability")
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
         PLAYER(SPECIES_BOTAMON) { Ability(ABILITY_BLAZE); }
-        OPPONENT(SPECIES_BULBASAUR) { Ability(ABILITY_OVERGROW); }
+        OPPONENT(SPECIES_ARGOMON_F) { Ability(ABILITY_OVERGROW); }
         OPPONENT(SPECIES_CONOMON) { Ability(ABILITY_TORRENT); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SKILL_SWAP, target: opponentLeft); }
@@ -49,7 +49,7 @@ DOUBLE_BATTLE_TEST("Skill Swap doesn't display ability popups when swapping with
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
         PLAYER(SPECIES_BOTAMON) { Ability(ABILITY_BLAZE); }
-        OPPONENT(SPECIES_BULBASAUR) { Ability(ABILITY_OVERGROW); }
+        OPPONENT(SPECIES_ARGOMON_F) { Ability(ABILITY_OVERGROW); }
         OPPONENT(SPECIES_CONOMON) { Ability(ABILITY_TORRENT); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SKILL_SWAP, target: playerRight); }
@@ -82,7 +82,7 @@ SINGLE_BATTLE_TEST("Skill Swap fails if user or target has an ability that can't
     PARAMETRIZE { species = SPECIES_KOMALA; ability = ABILITY_COMATOSE; }
     PARAMETRIZE { species = SPECIES_SILVALLY; ability = ABILITY_RKS_SYSTEM; }
     PARAMETRIZE { species = SPECIES_EISCUE; ability = ABILITY_ICE_FACE; }
-    PARAMETRIZE { species = SPECIES_KOFFING; ability = ABILITY_NEUTRALIZING_GAS; }
+    PARAMETRIZE { species = SPECIES_ARGOMON_ROOKIE; ability = ABILITY_NEUTRALIZING_GAS; }
     PARAMETRIZE { species = SPECIES_MORPEKO; ability = ABILITY_HUNGER_SWITCH; }
     PARAMETRIZE { species = SPECIES_CALYREX_ICE; ability = ABILITY_AS_ONE_ICE_RIDER; }
     PARAMETRIZE { species = SPECIES_CALYREX_SHADOW; ability = ABILITY_AS_ONE_SHADOW_RIDER; }

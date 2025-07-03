@@ -23,7 +23,7 @@ SINGLE_BATTLE_TEST("Dragon Tail switches the target with a random non-fainted re
 <<<<<<< HEAD
         MESSAGE("Foe Argomon_f was dragged out!");
 =======
-        MESSAGE("The opposing Bulbasaur was dragged out!");
+        MESSAGE("The opposing Argomon_f was dragged out!");
 >>>>>>> upstream/master
     }
 }
@@ -46,7 +46,7 @@ DOUBLE_BATTLE_TEST("Dragon Tail switches the target with a random non-battler, n
 <<<<<<< HEAD
         MESSAGE("Foe Argomon_f was dragged out!");
 =======
-        MESSAGE("The opposing Bulbasaur was dragged out!");
+        MESSAGE("The opposing Argomon_f was dragged out!");
 >>>>>>> upstream/master
     }
 }

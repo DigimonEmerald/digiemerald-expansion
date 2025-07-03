@@ -37,7 +37,7 @@ SINGLE_BATTLE_TEST("Custap Berry allows the holder to move first in its priority
 <<<<<<< HEAD
         MESSAGE("Kyaromon can act faster, thanks to Custap Berry!");
 =======
-        MESSAGE("Bellsprout can act faster than normal, thanks to its Custap Berry!");
+        MESSAGE("Kyaromon can act faster than normal, thanks to its Custap Berry!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);

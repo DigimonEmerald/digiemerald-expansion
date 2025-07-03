@@ -7,7 +7,7 @@ SINGLE_BATTLE_TEST("Liquid Ooze causes Absorb users to lose HP instead of heal")
     s16 healed;
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_TENTACOOL) { Ability(ABILITY_LIQUID_OOZE); }
+        OPPONENT(SPECIES_MINOMON) { Ability(ABILITY_LIQUID_OOZE); }
     } WHEN {
         TURN { MOVE(player, MOVE_ABSORB); }
     } SCENE {
@@ -27,7 +27,7 @@ SINGLE_BATTLE_TEST("Liquid Ooze causes Leech Seed users to lose HP instead of he
 
     GIVEN {
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_TENTACOOL) { Ability(ABILITY_LIQUID_OOZE); }
+        OPPONENT(SPECIES_MINOMON) { Ability(ABILITY_LIQUID_OOZE); }
     } WHEN {
         TURN { MOVE(player, MOVE_LEECH_SEED); }
     } SCENE {
@@ -45,7 +45,7 @@ DOUBLE_BATTLE_TEST("Liquid Ooze causes Matcha Gatcha users to lose HP instead of
         ASSUME(gMovesInfo[MOVE_MATCHA_GOTCHA].effect == EFFECT_ABSORB);
         PLAYER(SPECIES_WOBBUFFET) { HP(1); }
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_TENTACOOL) { Ability(ABILITY_LIQUID_OOZE); }
+        OPPONENT(SPECIES_MINOMON) { Ability(ABILITY_LIQUID_OOZE); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_MATCHA_GOTCHA); }
@@ -64,7 +64,7 @@ DOUBLE_BATTLE_TEST("Liquid Ooze will faint Matcha Gatcha users if it deals enoug
         ASSUME(gMovesInfo[MOVE_MATCHA_GOTCHA].effect == EFFECT_ABSORB);
         PLAYER(SPECIES_WOBBUFFET) { HP(1); }
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_TENTACOOL) { Ability(ABILITY_LIQUID_OOZE); }
+        OPPONENT(SPECIES_MINOMON) { Ability(ABILITY_LIQUID_OOZE); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_MATCHA_GOTCHA); }
@@ -115,22 +115,22 @@ SINGLE_BATTLE_TEST("Liquid Ooze causes leech seedee to faint before seeder")
     PARAMETRIZE { ability = ABILITY_CLEAR_BODY; }
     PARAMETRIZE { ability = ABILITY_LIQUID_OOZE; }
     GIVEN {
-        PLAYER(SPECIES_BULBASAUR)   { HP(1); }
-        OPPONENT(SPECIES_TENTACOOL) { HP(1); Ability(ability); }
+        PLAYER(SPECIES_ARGOMON_F)   { HP(1); }
+        OPPONENT(SPECIES_MINOMON) { HP(1); Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_LEECH_SEED); }
     } SCENE {
-        MESSAGE("Bulbasaur used Leech Seed!");
+        MESSAGE("Argomon_f used Leech Seed!");
         // Drain at end of turn
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_LEECH_SEED_DRAIN, opponent);
         if (ability != ABILITY_LIQUID_OOZE) {
-            MESSAGE("The opposing Tentacool's health is sapped by Leech Seed!");
-            MESSAGE("The opposing Tentacool fainted!");
+            MESSAGE("The opposing Minomon's health is sapped by Leech Seed!");
+            MESSAGE("The opposing Minomon fainted!");
         } else {
             ABILITY_POPUP(opponent, ABILITY_LIQUID_OOZE);
-            MESSAGE("Bulbasaur sucked up the liquid ooze!");
-            MESSAGE("The opposing Tentacool fainted!");
-            MESSAGE("Bulbasaur fainted!");
+            MESSAGE("Argomon_f sucked up the liquid ooze!");
+            MESSAGE("The opposing Minomon fainted!");
+            MESSAGE("Argomon_f fainted!");
         }
     }
 }

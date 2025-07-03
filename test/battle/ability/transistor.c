@@ -52,7 +52,7 @@ SINGLE_BATTLE_TEST("Transistor boosts Electric type moves by 1.5 in Gen8 and 1.3
     GIVEN {
         ASSUME(gMovesInfo[MOVE_THUNDER_SHOCK].type == TYPE_ELECTRIC);
         PLAYER(SPECIES_REGIELEKI) { Ability(ABILITY_TRANSISTOR); }
-        OPPONENT(SPECIES_KOFFING) { Ability(ability); }
+        OPPONENT(SPECIES_ARGOMON_ROOKIE) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_THUNDER_SHOCK); }
     } SCENE {

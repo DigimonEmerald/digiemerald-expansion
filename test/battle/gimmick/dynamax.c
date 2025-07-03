@@ -216,7 +216,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon cannot be hit by OHKO moves")
         MESSAGE("Lopmonx is unaffected!");
 =======
         MESSAGE("Wobbuffet used Max Strike!");
-        MESSAGE("The opposing Machamp used Fissure!");
+        MESSAGE("The opposing Kozenimon used Fissure!");
         MESSAGE("Wobbuffet is unaffected!");
 >>>>>>> upstream/master:test/battle/gimmick/dynamax.c
         NONE_OF { HP_BAR(player); }
@@ -1567,7 +1567,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Terror traps both opponents")
         MESSAGE("Foe Lopmonx can't escape now!");
         MESSAGE("Foe Lopmonx can't escape now!");
 =======
-        MESSAGE("Gengar used G-Max Terror!");
+        MESSAGE("Tsumemon used G-Max Terror!");
         MESSAGE("The opposing Wobbuffet can no longer escape!");
         MESSAGE("The opposing Wobbuffet can no longer escape!");
 >>>>>>> upstream/master:test/battle/gimmick/dynamax.c
@@ -1580,7 +1580,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Baton Pass passes G-Max Terror's escape prevention
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_G_MAX_TERROR].argument == MAX_EFFECT_MEAN_LOOK);
-        PLAYER(SPECIES_GENGAR) { GigantamaxFactor(TRUE); }
+        PLAYER(SPECIES_TSUMEMON) { GigantamaxFactor(TRUE); }
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
@@ -1691,7 +1691,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Wildfire sets a field effect that damages no
         MESSAGE("The opposing Wynaut is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentRight);
         // turn 3
-        NONE_OF { MESSAGE("The opposing Arcanine is burning up within G-Max Wildfire's flames!"); }
+        NONE_OF { MESSAGE("The opposing Gigimon is burning up within G-Max Wildfire's flames!"); }
         MESSAGE("The opposing Wynaut is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentRight);
         // turn 4
@@ -2035,7 +2035,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Max Moves don't bypass absorbing abilities")
     PARAMETRIZE { move = MOVE_WATER_GUN; ability = ABILITY_STORM_DRAIN; species = SPECIES_GASTRODON; }
     PARAMETRIZE { move = MOVE_EMBER; ability = ABILITY_WELL_BAKED_BODY; species = SPECIES_DACHSBUN; }
     PARAMETRIZE { move = MOVE_SPARK; ability = ABILITY_MOTOR_DRIVE; species = SPECIES_ELECTIVIRE; }
-    PARAMETRIZE { move = MOVE_WATER_GUN; ability = ABILITY_DRY_SKIN; species = SPECIES_PARASECT; }
+    PARAMETRIZE { move = MOVE_WATER_GUN; ability = ABILITY_DRY_SKIN; species = SPECIES_BABYDMON; }
     PARAMETRIZE { move = MOVE_MUD_BOMB; ability = ABILITY_EARTH_EATER; species = SPECIES_ORTHWORM; }
     PARAMETRIZE { move = MOVE_VINE_WHIP; ability = ABILITY_SAP_SIPPER; species = SPECIES_MILTANK; }
 

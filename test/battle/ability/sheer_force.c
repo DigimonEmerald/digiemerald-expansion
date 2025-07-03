@@ -279,7 +279,7 @@ SINGLE_BATTLE_TEST("Sheer Force doesn't boost Synchronoise", s16 damage)
     PARAMETRIZE { ability = ABILITY_ANGER_POINT; }
     GIVEN {
         PLAYER(SPECIES_TAUROS) { Ability(ability); HP(1); Item(ITEM_SITRUS_BERRY); }
-        OPPONENT(SPECIES_CHANSEY);
+        OPPONENT(SPECIES_BEARMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SYNCHRONOISE); }
     } SCENE {

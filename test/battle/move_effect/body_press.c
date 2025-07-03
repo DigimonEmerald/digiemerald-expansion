@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("Body Press uses physical defense stat of target", s16 damage
         ASSUME(gMovesInfo[MOVE_DRILL_PECK].power == gMovesInfo[MOVE_BODY_PRESS].power);
         ASSUME(gMovesInfo[MOVE_CHARM].effect == EFFECT_ATTACK_DOWN_2);
         PLAYER(SPECIES_MEW);
-        OPPONENT(SPECIES_SHELLDER);
+        OPPONENT(SPECIES_TANEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_CHARM); MOVE(player, move); }
     } SCENE {

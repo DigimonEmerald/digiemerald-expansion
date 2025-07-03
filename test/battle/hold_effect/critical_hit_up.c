@@ -55,7 +55,7 @@ SINGLE_BATTLE_TEST("Lansat Berry raises the holder's critical-hit-ratio by two s
 <<<<<<< HEAD
         MESSAGE("Kyaromon used Lansat Berry to get pumped!");
 =======
-        MESSAGE("Bellsprout used the Lansat Berry to get pumped!");
+        MESSAGE("Kyaromon used the Lansat Berry to get pumped!");
 >>>>>>> upstream/master
     }
 }

@@ -61,7 +61,7 @@ SINGLE_BATTLE_TEST("Intrepid Sword activates when it's no longer effected by Neu
         MESSAGE("The effects of Neutralizing Gas wore off!");
 =======
         MESSAGE("Neutralizing gas filled the area!");
-        SWITCH_OUT_MESSAGE("Weezing");
+        SWITCH_OUT_MESSAGE("Armadilmon");
         MESSAGE("The effects of the neutralizing gas wore off!");
 >>>>>>> upstream/master
         ABILITY_POPUP(opponent, ABILITY_INTREPID_SWORD);

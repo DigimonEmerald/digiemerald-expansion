@@ -1,5 +1,7 @@
 List of which Digimon swapped with which Pokemon
 
+Baby List
+
 Argomon - Bulbasaur
 Bombmon - Ivysaur
 Bommon - Venusaur
@@ -28,10 +30,10 @@ Petitmon - Pikachu
 Pichimon - Raichu
 Popomon - Sandshrew
 Poyomon - Sandslash
-Punimon - Nidoran(F)
+Punimon - Nidoran (F)
 Pupumon - Nidorina
 Pururumon - Nidoqueen
-Pusumon - Nidoran(M)
+Pusumon - Nidoran (M)
 Puttimon - Nidorino
 Puwamon - Nidoking
 Puyomon - Clefairy
@@ -44,3 +46,79 @@ IceBotamon - Zubat
 Yuramon - Golbat
 Zerimon - Oddish
 Zurumon - Gloom
+
+In-Training List
+
+Arcadiamon - Vileplume
+Argomon - Paras
+Babydmon - Parasect
+Bibimon - Venonat
+Bosamon - Venomoth
+Budmon - Diglett
+Bukamon - Dugtrio
+Calumon - Meowth
+Chapmon - Persian
+Chiccimon - Psyduck
+Demimeramon - Golduck
+Demiveemon - Mankey
+Dorimon - Primeape
+Frimon - Growlithe
+Gigimon - Arcanine
+Gummymon - Poliwag
+Gurimon - Poliwhirl
+Hiyarimon - Poliwrath
+Hopmon - Abra
+Kakkinmon - Kadabra
+Kapurimon - Alakazam
+Kokomon - Machop
+Koromon - Machoke
+Kozenimon - Machamp
+Kyaromon - Bellsprout
+Kyokyomon - Weepinbell
+Kyupimon - Victreebel
+Minomon - Tentacool
+Missimon - Tentacruel
+Monimon - Geodude
+Moonmon - Graveler
+Motimon - Golem
+Negamon - Ponyta
+Nyaromon - Rapidash
+Pagumon - Slowpoke
+Pickmon (Silver) - Slowbro
+Pickmon (White) - Magnemite
+Pickmon (Red) - Magneton
+Pinamon - Farfetch'd
+Poromon - Doduo
+Puroromon - Dodrio
+Pusurimon - Seel
+Puyoyomon - Dewgong
+Sakuttomon - Grimer
+Sunmon - Muk
+Tanemon - Shellder
+Tokomon - Cloyster
+Tokomon X - Gastly
+Torballmon - Haunter
+Tsumemon - Gengar
+Tsunomon - Onix
+Tumblemon - Drowzee
+Upamon - Hypno
+Viximon - Krabby
+Wanyamon - Kingler
+Xiaomon - Voltorb
+Yaamon - Electrode
+Yokomon - Exeggcute
+
+Rookie List
+
+Agumon - Exeggutor
+Agumon (06) - Cubone
+Agumon (Expert) - Marowak
+Agumon X - Hitmonlee
+Angoramon - Hitmonchan
+Arcadiamon - Lickitung
+Argomon - Koffing
+Armadilmon - Weezing
+Aruraumon - Rhyhorn
+Bakomon - Rhydon
+Bearmon - Chansey
+Betamon - Tangela

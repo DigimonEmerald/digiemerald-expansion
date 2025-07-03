@@ -47,7 +47,7 @@ AI_SINGLE_BATTLE_TEST("AI avoids Thunder Wave when it can not paralyse target")
 {
     u32 species, ability;
 
-    PARAMETRIZE { species = SPECIES_HITMONLEE; ability = ABILITY_LIMBER; }
+    PARAMETRIZE { species = SPECIES_AGUMON_X; ability = ABILITY_LIMBER; }
     PARAMETRIZE { species = SPECIES_KOMALA; ability = ABILITY_COMATOSE; }
     PARAMETRIZE { species = SPECIES_NACLI; ability = ABILITY_PURIFYING_SALT; }
     PARAMETRIZE { species = SPECIES_PETITMON; ability = ABILITY_STATIC; }

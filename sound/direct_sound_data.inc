@@ -872,7 +872,7 @@ Cry_Pickmon_silverMega::
 .if P_GALARIAN_FORMS == TRUE
 	.align 2
 Cry_PagumonGalarian::
-	.incbin "sound/direct_sound_samples/cries/pagumon_galarian.bin"
+	.incbin "sound/direct_sound_samples/cries/slowpoke_galar.bin"
 
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_PAGUMON

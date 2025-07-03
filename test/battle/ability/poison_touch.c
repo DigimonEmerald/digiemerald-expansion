@@ -7,7 +7,7 @@ SINGLE_BATTLE_TEST("Poison Touch has a 30% chance to poison when attacking with 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].power > 0);
         ASSUME(gMovesInfo[MOVE_TACKLE].makesContact);
-        PLAYER(SPECIES_GRIMER) { Ability(ABILITY_POISON_TOUCH); }
+        PLAYER(SPECIES_SAKUTTOMON) { Ability(ABILITY_POISON_TOUCH); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
@@ -16,9 +16,9 @@ SINGLE_BATTLE_TEST("Poison Touch has a 30% chance to poison when attacking with 
         ABILITY_POPUP(player, ABILITY_POISON_TOUCH);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
 <<<<<<< HEAD
-        MESSAGE("Foe Lopmonx was poisoned by Grimer's Poison Touch!");
+        MESSAGE("Foe Lopmonx was poisoned by Sakuttomon's Poison Touch!");
 =======
-        MESSAGE("The opposing Wobbuffet was poisoned by Grimer's Poison Touch!");
+        MESSAGE("The opposing Wobbuffet was poisoned by Sakuttomon's Poison Touch!");
 >>>>>>> upstream/master
         STATUS_ICON(opponent, poison: TRUE);
     }
@@ -33,7 +33,7 @@ SINGLE_BATTLE_TEST("Poison Touch only applies when using contact moves")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].makesContact);
         ASSUME(!gMovesInfo[MOVE_SWIFT].makesContact);
-        PLAYER(SPECIES_GRIMER) { Ability(ABILITY_POISON_TOUCH); }
+        PLAYER(SPECIES_SAKUTTOMON) { Ability(ABILITY_POISON_TOUCH); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, move); }
@@ -43,9 +43,9 @@ SINGLE_BATTLE_TEST("Poison Touch only applies when using contact moves")
             ABILITY_POPUP(player, ABILITY_POISON_TOUCH);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
 <<<<<<< HEAD
-            MESSAGE("Foe Lopmonx was poisoned by Grimer's Poison Touch!");
+            MESSAGE("Foe Lopmonx was poisoned by Sakuttomon's Poison Touch!");
 =======
-            MESSAGE("The opposing Wobbuffet was poisoned by Grimer's Poison Touch!");
+            MESSAGE("The opposing Wobbuffet was poisoned by Sakuttomon's Poison Touch!");
 >>>>>>> upstream/master
             STATUS_ICON(opponent, poison: TRUE);
         } else {
@@ -53,9 +53,9 @@ SINGLE_BATTLE_TEST("Poison Touch only applies when using contact moves")
                 ABILITY_POPUP(player, ABILITY_POISON_TOUCH);
                 ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
 <<<<<<< HEAD
-                MESSAGE("Foe Lopmonx was poisoned by Grimer's Poison Touch!");
+                MESSAGE("Foe Lopmonx was poisoned by Sakuttomon's Poison Touch!");
 =======
-                MESSAGE("The opposing Wobbuffet was poisoned by Grimer's Poison Touch!");
+                MESSAGE("The opposing Wobbuffet was poisoned by Sakuttomon's Poison Touch!");
 >>>>>>> upstream/master
                 STATUS_ICON(opponent, poison: TRUE);
             }
@@ -69,7 +69,7 @@ SINGLE_BATTLE_TEST("Poison Touch applies between multi-hit move hits")
         ASSUME(gMovesInfo[MOVE_ARM_THRUST].effect == EFFECT_MULTI_HIT);
         ASSUME(gMovesInfo[MOVE_ARM_THRUST].makesContact);
         ASSUME(gItemsInfo[ITEM_PECHA_BERRY].holdEffect == HOLD_EFFECT_CURE_PSN);
-        PLAYER(SPECIES_GRIMER) { Ability(ABILITY_POISON_TOUCH); }
+        PLAYER(SPECIES_SAKUTTOMON) { Ability(ABILITY_POISON_TOUCH); }
         OPPONENT(SPECIES_LOPMONX) { Item(ITEM_PECHA_BERRY); };
     } WHEN {
         TURN { MOVE(player, MOVE_ARM_THRUST); }
@@ -78,21 +78,21 @@ SINGLE_BATTLE_TEST("Poison Touch applies between multi-hit move hits")
         ABILITY_POPUP(player, ABILITY_POISON_TOUCH);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
 <<<<<<< HEAD
-        MESSAGE("Foe Lopmonx was poisoned by Grimer's Poison Touch!");
+        MESSAGE("Foe Lopmonx was poisoned by Sakuttomon's Poison Touch!");
         STATUS_ICON(opponent, poison: TRUE);
         MESSAGE("Foe Lopmonx's Pecha Berry cured poison!");
         STATUS_ICON(opponent, poison: FALSE);
         ABILITY_POPUP(player, ABILITY_POISON_TOUCH);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
-        MESSAGE("Foe Lopmonx was poisoned by Grimer's Poison Touch!");
+        MESSAGE("Foe Lopmonx was poisoned by Sakuttomon's Poison Touch!");
 =======
-        MESSAGE("The opposing Wobbuffet was poisoned by Grimer's Poison Touch!");
+        MESSAGE("The opposing Wobbuffet was poisoned by Sakuttomon's Poison Touch!");
         STATUS_ICON(opponent, poison: TRUE);
         MESSAGE("The opposing Wobbuffet's Pecha Berry cured its poison!");
         STATUS_ICON(opponent, poison: FALSE);
         ABILITY_POPUP(player, ABILITY_POISON_TOUCH);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
-        MESSAGE("The opposing Wobbuffet was poisoned by Grimer's Poison Touch!");
+        MESSAGE("The opposing Wobbuffet was poisoned by Sakuttomon's Poison Touch!");
 >>>>>>> upstream/master
         STATUS_ICON(opponent, poison: TRUE);
     }

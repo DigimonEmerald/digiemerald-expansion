@@ -2339,7 +2339,7 @@ static const u16 sBukamonTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sDiglettAlolaTeachableLearnset[] = {
+static const u16 sBudmonAlolaTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DIG,
@@ -2365,7 +2365,7 @@ static const u16 sDiglettAlolaTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDugtrioAlolaTeachableLearnset[] = {
+static const u16 sBukamonAlolaTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DIG,
@@ -2477,7 +2477,7 @@ static const u16 sChapmonTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sMeowthAlolaTeachableLearnset[] = {
+static const u16 sCalumonAlolaTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DIG,
@@ -2512,7 +2512,7 @@ static const u16 sMeowthAlolaTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sPersianAlolaTeachableLearnset[] = {
+static const u16 sChapmonAlolaTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DIG,
@@ -2551,7 +2551,7 @@ static const u16 sPersianAlolaTeachableLearnset[] = {
 #endif //P_ALOLAN_FORMS
 
 #if P_GALARIAN_FORMS
-static const u16 sMeowthGalarTeachableLearnset[] = {
+static const u16 sCalumonGalarTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -2910,7 +2910,7 @@ static const u16 sGigimonTeachableLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const u16 sGrowlitheHisuiTeachableLearnset[] = {
+static const u16 sFrimonHisuiTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_DIG,
     MOVE_FACADE,
@@ -2934,7 +2934,7 @@ static const u16 sGrowlitheHisuiTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sArcanineHisuiTeachableLearnset[] = {
+static const u16 sGigimonHisuiTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_DIG,
     MOVE_FACADE,
@@ -3677,7 +3677,7 @@ static const u16 sMotimonTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sGeodudeAlolaTeachableLearnset[] = {
+static const u16 sMonimonAlolaTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
@@ -3715,7 +3715,7 @@ static const u16 sGeodudeAlolaTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGravelerAlolaTeachableLearnset[] = {
+static const u16 sMoonmonAlolaTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
@@ -3755,7 +3755,7 @@ static const u16 sGravelerAlolaTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGolemAlolaTeachableLearnset[] = {
+static const u16 sMotimonAlolaTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
@@ -3854,7 +3854,7 @@ static const u16 sNyaromonTeachableLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const u16 sPonytaGalarTeachableLearnset[] = {
+static const u16 sNegamonGalarTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_FACADE,
@@ -3873,7 +3873,7 @@ static const u16 sPonytaGalarTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sRapidashGalarTeachableLearnset[] = {
+static const u16 sNyaromonGalarTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_FACADE,
@@ -4064,7 +4064,7 @@ static const u16 sLiollmonTeachableLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 
 #if P_GALARIAN_FORMS
-static const u16 sSlowpokeGalarTeachableLearnset[] = {
+static const u16 sPagumonGalarTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CALM_MIND,
@@ -4100,7 +4100,7 @@ static const u16 sSlowpokeGalarTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSlowbroGalarTeachableLearnset[] = {
+static const u16 sPickmon_silverGalarTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
@@ -4320,7 +4320,7 @@ static const u16 sPinamonTeachableLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const u16 sFarfetchdGalarTeachableLearnset[] = {
+static const u16 sPinamonGalarTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_FACADE,
@@ -4567,7 +4567,7 @@ static const u16 sSunmonTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sGrimerAlolaTeachableLearnset[] = {
+static const u16 sSakuttomonAlolaTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
@@ -4608,7 +4608,7 @@ static const u16 sGrimerAlolaTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sMukAlolaTeachableLearnset[] = {
+static const u16 sSunmonAlolaTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
@@ -5128,7 +5128,7 @@ static const u16 sYaamonTeachableLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const u16 sVoltorbHisuiTeachableLearnset[] = {
+static const u16 sXiaomonHisuiTeachableLearnset[] = {
     MOVE_BULLET_SEED,
     MOVE_FACADE,
     MOVE_GIGA_DRAIN,
@@ -5151,7 +5151,7 @@ static const u16 sVoltorbHisuiTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sElectrodeHisuiTeachableLearnset[] = {
+static const u16 sYaamonHisuiTeachableLearnset[] = {
     MOVE_BULLET_SEED,
     MOVE_FACADE,
     MOVE_GIGA_DRAIN,
@@ -5247,7 +5247,7 @@ static const u16 sAgumonTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sExeggutorAlolaTeachableLearnset[] = {
+static const u16 sAgumonAlolaTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULLET_SEED,
@@ -5378,7 +5378,7 @@ static const u16 sAgumon_expertTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sMarowakAlolaTeachableLearnset[] = {
+static const u16 sAgumon_expertAlolaTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -5754,7 +5754,7 @@ static const u16 sArmadilmonTeachableLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const u16 sWeezingGalarTeachableLearnset[] = {
+static const u16 sArmadilmonGalarTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_FACADE,
     MOVE_FIRE_BLAST,

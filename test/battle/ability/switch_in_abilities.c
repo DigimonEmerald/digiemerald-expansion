@@ -102,12 +102,12 @@ DOUBLE_BATTLE_TEST("Switch-in abilities trigger in Speed Order after post-KO swi
 <<<<<<< HEAD
         OPPONENT(SPECIES_LOPMONX) { HP(1); Speed(1); }
         OPPONENT(SPECIES_LOPMONX) { HP(1); Speed(1); }
-        OPPONENT(SPECIES_WEEZING_GALARIAN) { Speed(spdOpponent1); Ability(ABILITY_MISTY_SURGE); }
+        OPPONENT(SPECIES_ARMADILMON_GALARIAN) { Speed(spdOpponent1); Ability(ABILITY_MISTY_SURGE); }
         OPPONENT(SPECIES_RELEMON_ALOLAN) { Speed(spdOpponent2); Ability(ABILITY_SNOW_WARNING); }
 =======
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); Speed(1); }
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); Speed(1); }
-        OPPONENT(SPECIES_WEEZING_GALAR) { Speed(spdOpponent1); Ability(ABILITY_MISTY_SURGE); }
+        OPPONENT(SPECIES_ARMADILMON_GALAR) { Speed(spdOpponent1); Ability(ABILITY_MISTY_SURGE); }
         OPPONENT(SPECIES_RELEMON_ALOLA) { Speed(spdOpponent2); Ability(ABILITY_SNOW_WARNING); }
 >>>>>>> upstream/master
     } WHEN {

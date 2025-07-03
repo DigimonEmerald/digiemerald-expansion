@@ -34,39 +34,39 @@ SINGLE_BATTLE_TEST("Tera Blast has correct effectiveness for every Tera Type")
     PARAMETRIZE { species = SPECIES_CYNDAQUIL; type = TYPE_GROUND;   }
     PARAMETRIZE { species = SPECIES_CYNDAQUIL; type = TYPE_ROCK;     }
     PARAMETRIZE { species = SPECIES_CYNDAQUIL; type = TYPE_WATER;    }
-    PARAMETRIZE { species = SPECIES_GASTLY;    type = TYPE_NORMAL;   }
-    PARAMETRIZE { species = SPECIES_GASTLY;    type = TYPE_GHOST;    }
-    PARAMETRIZE { species = SPECIES_GASTLY;    type = TYPE_PSYCHIC;  }
+    PARAMETRIZE { species = SPECIES_TOKOMON_X;    type = TYPE_NORMAL;   }
+    PARAMETRIZE { species = SPECIES_TOKOMON_X;    type = TYPE_GHOST;    }
+    PARAMETRIZE { species = SPECIES_TOKOMON_X;    type = TYPE_PSYCHIC;  }
     PARAMETRIZE { species = SPECIES_TOTODILE;  type = TYPE_GRASS;    }
     PARAMETRIZE { species = SPECIES_TOTODILE;  type = TYPE_ELECTRIC; }
     PARAMETRIZE { species = SPECIES_DRATINI;   type = TYPE_DRAGON;   }
     PARAMETRIZE { species = SPECIES_DRATINI;   type = TYPE_FAIRY;    }
     PARAMETRIZE { species = SPECIES_SNEASEL;   type = TYPE_FIGHTING; }
     PARAMETRIZE { species = SPECIES_SNEASEL;   type = TYPE_STEEL;    }
-    PARAMETRIZE { species = SPECIES_ABRA;      type = TYPE_DARK;     }
+    PARAMETRIZE { species = SPECIES_HOPMON;      type = TYPE_DARK;     }
 
     GIVEN {
         ASSUME(gSpeciesInfo[SPECIES_CHIKORITA].types[0] == TYPE_GRASS);
         ASSUME(gSpeciesInfo[SPECIES_CHIKORITA].types[1] == TYPE_GRASS);
         ASSUME(gSpeciesInfo[SPECIES_CYNDAQUIL].types[0] == TYPE_FIRE);
         ASSUME(gSpeciesInfo[SPECIES_CYNDAQUIL].types[1] == TYPE_FIRE);
-        ASSUME(gSpeciesInfo[SPECIES_GASTLY].types[0] == TYPE_GHOST);
-        ASSUME(gSpeciesInfo[SPECIES_GASTLY].types[1] == TYPE_POISON);
+        ASSUME(gSpeciesInfo[SPECIES_TOKOMON_X].types[0] == TYPE_GHOST);
+        ASSUME(gSpeciesInfo[SPECIES_TOKOMON_X].types[1] == TYPE_POISON);
         ASSUME(gSpeciesInfo[SPECIES_TOTODILE].types[0] == TYPE_WATER);
         ASSUME(gSpeciesInfo[SPECIES_TOTODILE].types[1] == TYPE_WATER);
         ASSUME(gSpeciesInfo[SPECIES_DRATINI].types[0] == TYPE_DRAGON);
         ASSUME(gSpeciesInfo[SPECIES_DRATINI].types[1] == TYPE_DRAGON);
         ASSUME(gSpeciesInfo[SPECIES_SNEASEL].types[0] == TYPE_DARK);
         ASSUME(gSpeciesInfo[SPECIES_SNEASEL].types[1] == TYPE_ICE);
-        ASSUME(gSpeciesInfo[SPECIES_ABRA].types[0] == TYPE_PSYCHIC);
-        ASSUME(gSpeciesInfo[SPECIES_ABRA].types[1] == TYPE_PSYCHIC);
+        ASSUME(gSpeciesInfo[SPECIES_HOPMON].types[0] == TYPE_PSYCHIC);
+        ASSUME(gSpeciesInfo[SPECIES_HOPMON].types[1] == TYPE_PSYCHIC);
         PLAYER(SPECIES_WOBBUFFET) { TeraType(type); }
         OPPONENT(species);
     } WHEN {
         TURN { MOVE(player, MOVE_TERA_BLAST, gimmick: GIMMICK_TERA); }
     } SCENE {
-        if (species == SPECIES_GASTLY && type == TYPE_NORMAL)
-            MESSAGE("It doesn't affect the opposing Gastly…");
+        if (species == SPECIES_TOKOMON_X && type == TYPE_NORMAL)
+            MESSAGE("It doesn't affect the opposing Tokomon_x…");
         else
             MESSAGE("It's super effective!");
     }

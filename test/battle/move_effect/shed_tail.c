@@ -109,17 +109,17 @@ SINGLE_BATTLE_TEST("Shed Tail creates a Substitute with 1/4 of user maximum heal
     GIVEN {
         ASSUME(gMovesInfo[MOVE_DRAGON_RAGE].argument == 40);
         ASSUME(gMovesInfo[MOVE_DRAGON_RAGE].effect == EFFECT_FIXED_DAMAGE_ARG);
-        PLAYER(SPECIES_BULBASAUR) { MaxHP(hp); }
-        PLAYER(SPECIES_BULBASAUR);
+        PLAYER(SPECIES_ARGOMON_F) { MaxHP(hp); }
+        PLAYER(SPECIES_ARGOMON_F);
         OPPONENT(SPECIES_BOTAMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SHED_TAIL); MOVE(opponent, MOVE_DRAGON_RAGE); SEND_OUT(player, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SHED_TAIL, player);
         if (hp == 160)
-            MESSAGE("Bulbasaur's substitute faded!");
+            MESSAGE("Argomon_f's substitute faded!");
         else
-            NOT MESSAGE("Bulbasaur's substitute faded!");
+            NOT MESSAGE("Argomon_f's substitute faded!");
     }
 }
 
@@ -146,16 +146,16 @@ SINGLE_BATTLE_TEST("Shed Tail creates a Substitute with 1/4 of user maximum heal
     GIVEN {
         ASSUME(gMovesInfo[MOVE_DRAGON_RAGE].argument == 40);
         ASSUME(gMovesInfo[MOVE_DRAGON_RAGE].effect == EFFECT_FIXED_DAMAGE_ARG);
-        PLAYER(SPECIES_BULBASAUR) { MaxHP(hp); }
-        PLAYER(SPECIES_BULBASAUR);
+        PLAYER(SPECIES_ARGOMON_F) { MaxHP(hp); }
+        PLAYER(SPECIES_ARGOMON_F);
         OPPONENT(SPECIES_BOTAMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SHED_TAIL); MOVE(opponent, MOVE_DRAGON_RAGE); SEND_OUT(player, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SHED_TAIL, player);
         if (hp == 160)
-            MESSAGE("Bulbasaur's substitute faded!");
+            MESSAGE("Argomon_f's substitute faded!");
         else
-            NOT MESSAGE("Bulbasaur's substitute faded!");
+            NOT MESSAGE("Argomon_f's substitute faded!");
     }
 }

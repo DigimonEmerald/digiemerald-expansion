@@ -96,8 +96,8 @@ DOUBLE_BATTLE_TEST("Revive works for a partner in a double battle")
         ASSUME(gItemsInfo[ITEM_REVIVE].battleUsage == EFFECT_ITEM_REVIVE);
         PLAYER(SPECIES_EXVEEMON) { HP(1); MaxHP(200); Moves(MOVE_IRON_DEFENSE, MOVE_CELEBRATE); Speed(5); }
         PLAYER(SPECIES_LOPMONX) { HP(1); Speed(4); }
-        OPPONENT(SPECIES_ABRA) { Speed(3); Moves(MOVE_TACKLE, MOVE_PSYCHIC, MOVE_CELEBRATE); }
-        OPPONENT(SPECIES_KADABRA) { Speed(2); Moves(MOVE_TACKLE, MOVE_PSYCHIC, MOVE_CELEBRATE, MOVE_EXPLOSION); }
+        OPPONENT(SPECIES_HOPMON) { Speed(3); Moves(MOVE_TACKLE, MOVE_PSYCHIC, MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_KAKKINMON) { Speed(2); Moves(MOVE_TACKLE, MOVE_PSYCHIC, MOVE_CELEBRATE, MOVE_EXPLOSION); }
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_PSYCHIC, target:playerLeft); MOVE(playerLeft, MOVE_CELEBRATE); } // Exveemon faints
         TURN { USE_ITEM(playerRight, ITEM_REVIVE, partyIndex: 0); MOVE(opponentRight, MOVE_PSYCHIC, target:playerRight); } // Exveemon gets revived, Wobb faints

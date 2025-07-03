@@ -31,7 +31,7 @@ SINGLE_BATTLE_TEST("Blunder Policy will never trigger if the move fails due to a
     GIVEN {
         ASSUME(gMovesInfo[MOVE_FOCUS_BLAST].accuracy == 70);
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_BLUNDER_POLICY); }
-        OPPONENT(SPECIES_GASTLY);
+        OPPONENT(SPECIES_TOKOMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_FOCUS_BLAST); }
     } SCENE {

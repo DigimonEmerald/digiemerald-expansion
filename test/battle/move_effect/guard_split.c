@@ -9,7 +9,7 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Guard Split averages users and targets Def and Sp. Def stats")
 {
     GIVEN {
-        PLAYER(SPECIES_BULBASAUR);
+        PLAYER(SPECIES_ARGOMON_F);
         OPPONENT(SPECIES_BOMBMON);
     } WHEN {
         TURN { MOVE(player, MOVE_GUARD_SPLIT); }

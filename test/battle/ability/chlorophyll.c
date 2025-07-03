@@ -21,7 +21,7 @@ SINGLE_BATTLE_TEST("Chlorophyll doesn't double speed if Cloud Nine/Air Lock is o
 {
     GIVEN {
         PLAYER(SPECIES_BOMMON) { Ability(ABILITY_CHLOROPHYLL); Speed(100); }
-        OPPONENT(SPECIES_GOLDUCK) { Speed(199); Ability(ABILITY_CLOUD_NINE); }
+        OPPONENT(SPECIES_DEMMERAMON) { Speed(199); Ability(ABILITY_CLOUD_NINE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_SUNNY_DAY); }
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_CELEBRATE); }

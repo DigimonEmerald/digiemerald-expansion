@@ -16,10 +16,10 @@ SINGLE_BATTLE_TEST("Revelation Dance changes its type depending on the user's 1s
     u16 speciesPlayer;
     u16 speciesOpponent;
 
-    PARAMETRIZE { speciesPlayer = SPECIES_ORICORIO_POM_POM; speciesOpponent = SPECIES_DUGTRIO; }
+    PARAMETRIZE { speciesPlayer = SPECIES_ORICORIO_POM_POM; speciesOpponent = SPECIES_BUKAMON; }
     PARAMETRIZE { speciesPlayer = SPECIES_ORICORIO_BAILE; speciesOpponent = SPECIES_CURIMON; }
     PARAMETRIZE { speciesPlayer = SPECIES_ORICORIO_PAU; speciesOpponent = SPECIES_LIEPARD; }
-    PARAMETRIZE { speciesPlayer = SPECIES_ORICORIO_SENSU; speciesOpponent = SPECIES_PERSIAN; }
+    PARAMETRIZE { speciesPlayer = SPECIES_ORICORIO_SENSU; speciesOpponent = SPECIES_CHAPMON; }
 
     GIVEN {
         PLAYER(speciesPlayer);
@@ -66,7 +66,7 @@ SINGLE_BATTLE_TEST("Revelation Dance changes its type depending on the user's 2n
 SINGLE_BATTLE_TEST("Revelation Dance changes its type depending on the user's 3rd Type if it has no 1st or 2nd type")
 {
     GIVEN {
-        PLAYER(SPECIES_GROWLITHE);
+        PLAYER(SPECIES_FRIMON);
         OPPONENT(SPECIES_TREVENANT);
     } WHEN {
         TURN { MOVE(player, MOVE_BURN_UP); MOVE(opponent, MOVE_FORESTS_CURSE); }
@@ -90,11 +90,11 @@ SINGLE_BATTLE_TEST("Revelation Dance becomes Typeless if its user is Typeless")
     PARAMETRIZE { speciesOpponent = SPECIES_CURIMON; }
     PARAMETRIZE { speciesOpponent = SPECIES_CHIBOMON; }
     PARAMETRIZE { speciesOpponent = SPECIES_BOMMON; }
-    PARAMETRIZE { speciesOpponent = SPECIES_GOLEM; }
+    PARAMETRIZE { speciesOpponent = SPECIES_MOTIMON; }
     PARAMETRIZE { speciesOpponent = SPECIES_AEGISLASH; }
 
     GIVEN {
-        PLAYER(SPECIES_GROWLITHE);
+        PLAYER(SPECIES_FRIMON);
         OPPONENT(speciesOpponent);
     } WHEN {
         TURN { MOVE(player, MOVE_BURN_UP); }

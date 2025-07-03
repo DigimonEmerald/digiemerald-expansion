@@ -11,8 +11,8 @@ DOUBLE_BATTLE_TEST("Grim Neigh raises Sp. Attack by one stage after directly cau
         PLAYER(species) { Ability(ability); }
         PLAYER(SPECIES_SNORUNT) { HP(1); }
         OPPONENT(SPECIES_GLALIE) { HP(1); }
-        OPPONENT(SPECIES_ABRA) { HP(1); }
-        OPPONENT(SPECIES_ABRA);
+        OPPONENT(SPECIES_HOPMON) { HP(1); }
+        OPPONENT(SPECIES_HOPMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_DISCHARGE); SEND_OUT(opponentLeft, 2);  }
     } SCENE {
@@ -23,7 +23,7 @@ DOUBLE_BATTLE_TEST("Grim Neigh raises Sp. Attack by one stage after directly cau
             ONE_OF {
                 MESSAGE("Snorunt fainted!");
                 MESSAGE("The opposing Glalie fainted!");
-                MESSAGE("The opposing Abra fainted!");
+                MESSAGE("The opposing Hopmon fainted!");
             }
             ABILITY_POPUP(playerLeft, abilityPopUp);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
@@ -46,8 +46,8 @@ DOUBLE_BATTLE_TEST("Grim Neigh does not trigger if Pokemon faint to indirect dam
         PLAYER(species) { Ability(ability); }
         PLAYER(SPECIES_SNORUNT) { HP(1); Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_GLALIE) { HP(1); Status1(STATUS1_BURN); }
-        OPPONENT(SPECIES_ABRA) { HP(1); }
-        OPPONENT(SPECIES_ABRA);
+        OPPONENT(SPECIES_HOPMON) { HP(1); }
+        OPPONENT(SPECIES_HOPMON);
     } WHEN {
         TURN { MOVE(playerRight, MOVE_QUICK_ATTACK, target: opponentRight); SEND_OUT(opponentLeft, 2);  }
     } SCENE {
@@ -58,7 +58,7 @@ DOUBLE_BATTLE_TEST("Grim Neigh does not trigger if Pokemon faint to indirect dam
             ONE_OF {
                 MESSAGE("Snorunt fainted!");
                 MESSAGE("The opposing Glalie fainted!");
-                MESSAGE("The opposing Abra fainted!");
+                MESSAGE("The opposing Hopmon fainted!");
             }
             NONE_OF {
                 ABILITY_POPUP(playerLeft, abilityPopUp);
@@ -84,17 +84,17 @@ DOUBLE_BATTLE_TEST("Grim Neigh does not increase damage done by the same move th
     GIVEN {
         ASSUME(gMovesInfo[MOVE_DISCHARGE].target == MOVE_TARGET_FOES_AND_ALLY);
         PLAYER(species) { Ability(ability); }
-        PLAYER(SPECIES_ABRA) { HP(1); }
+        PLAYER(SPECIES_HOPMON) { HP(1); }
         OPPONENT(SPECIES_GLALIE);
         OPPONENT(SPECIES_GLALIE);
-        OPPONENT(SPECIES_ABRA);
+        OPPONENT(SPECIES_HOPMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_DISCHARGE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DISCHARGE, playerLeft);
         HP_BAR(opponentLeft, captureDamage: &damage[0]);
         HP_BAR(playerRight);
-        MESSAGE("Abra fainted!");
+        MESSAGE("Hopmon fainted!");
         ABILITY_POPUP(playerLeft, abilityPopUp);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
         if (species == SPECIES_SPECTRIER)

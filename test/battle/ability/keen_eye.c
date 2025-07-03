@@ -32,8 +32,8 @@ SINGLE_BATTLE_TEST("Keen Eye, Gen9+ Illuminate & Minds Eye prevent accuracy stag
         else if (species == SPECIES_BLKGUILMON)
             MESSAGE("Foe Blkguilmon's Illuminate prevents accuracy loss!");
 =======
-        if (species == SPECIES_HITMONCHAN)
-            MESSAGE("The opposing Hitmonchan's Keen Eye prevents accuracy loss!");
+        if (species == SPECIES_ANGORAMON)
+            MESSAGE("The opposing Angoramon's Keen Eye prevents accuracy loss!");
         else if (species == SPECIES_STARYU)
             MESSAGE("The opposing Staryu's Illuminate prevents accuracy loss!");
 >>>>>>> upstream/master
@@ -125,9 +125,9 @@ SINGLE_BATTLE_TEST("Keen Eye, Gen9+ Illuminate & Minds Eye don't prevent Topsy-T
             MESSAGE("Foe Blkguilmon's Attack rose!");
             MESSAGE("Foe Blkguilmon's accuracy rose!");
 =======
-        if (species == SPECIES_HITMONCHAN) {
-            MESSAGE("The opposing Hitmonchan's Attack rose!");
-            MESSAGE("The opposing Hitmonchan's accuracy rose!");
+        if (species == SPECIES_ANGORAMON) {
+            MESSAGE("The opposing Angoramon's Attack rose!");
+            MESSAGE("The opposing Angoramon's accuracy rose!");
         } else if (species == SPECIES_STARYU) {
             MESSAGE("The opposing Staryu's Attack rose!");
             MESSAGE("The opposing Staryu's accuracy rose!");
@@ -143,8 +143,8 @@ SINGLE_BATTLE_TEST("Keen Eye, Gen9+ Illuminate & Minds Eye don't prevent Topsy-T
         else if (species == SPECIES_BLKGUILMON)
             MESSAGE("Foe Blkguilmon's stat changes were all reversed!");
 =======
-        if (species == SPECIES_HITMONCHAN)
-            MESSAGE("All stat changes on the opposing Hitmonchan were inverted!");
+        if (species == SPECIES_ANGORAMON)
+            MESSAGE("All stat changes on the opposing Angoramon were inverted!");
         else if (species == SPECIES_STARYU)
             MESSAGE("All stat changes on the opposing Staryu were inverted!");
 >>>>>>> upstream/master
@@ -223,8 +223,8 @@ SINGLE_BATTLE_TEST("Keen Eye & Gen9+ Illuminate don't prevent Spectral Thief fro
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPECTRAL_THIEF, player);
         MESSAGE("Lopmonx stole the target's boosted stats!");
 =======
-            MESSAGE("The opposing Hitmonchan's Attack rose!");
-            MESSAGE("The opposing Hitmonchan's accuracy rose!");
+            MESSAGE("The opposing Angoramon's Attack rose!");
+            MESSAGE("The opposing Angoramon's accuracy rose!");
         }
         else
         {

@@ -61,7 +61,7 @@ SINGLE_BATTLE_TEST("Dauntless Shield activates when it's no longer effected by N
         MESSAGE("The effects of Neutralizing Gas wore off!");
 =======
         MESSAGE("Neutralizing gas filled the area!");
-        SWITCH_OUT_MESSAGE("Weezing");
+        SWITCH_OUT_MESSAGE("Armadilmon");
         MESSAGE("The effects of the neutralizing gas wore off!");
 >>>>>>> upstream/master
         ABILITY_POPUP(opponent, ABILITY_DAUNTLESS_SHIELD);

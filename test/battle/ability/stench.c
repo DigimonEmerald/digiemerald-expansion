@@ -89,7 +89,7 @@ DOUBLE_BATTLE_TEST("Stench doesn't trigger if partner uses a move")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);
         NOT MESSAGE("Exveemon flinched!");
 =======
-        MESSAGE("The opposing Grimer flinched and couldn't move!");
+        MESSAGE("The opposing Sakuttomon flinched and couldn't move!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);
         NOT MESSAGE("Wynaut flinched and couldn't move!");
 >>>>>>> upstream/master

@@ -103,7 +103,7 @@ DOUBLE_BATTLE_TEST("Mind Blown causes everyone to faint in a double battle")
 <<<<<<< HEAD
         MESSAGE("Foe Hopmon fainted!");
 =======
-        MESSAGE("The opposing Abra fainted!");
+        MESSAGE("The opposing Hopmon fainted!");
 >>>>>>> upstream/master
         HP_BAR(playerRight, hp: 0);
         MESSAGE("Exveemon fainted!");
@@ -111,7 +111,7 @@ DOUBLE_BATTLE_TEST("Mind Blown causes everyone to faint in a double battle")
 <<<<<<< HEAD
         MESSAGE("Foe Kakkinmon fainted!");
 =======
-        MESSAGE("The opposing Kadabra fainted!");
+        MESSAGE("The opposing Kakkinmon fainted!");
 >>>>>>> upstream/master
         HP_BAR(playerLeft, hp: 0);
         MESSAGE("Lopmonx fainted!");
@@ -136,7 +136,7 @@ SINGLE_BATTLE_TEST("Mind Blown is blocked by Damp")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { HP(400); MaxHP(400); }
-        OPPONENT(SPECIES_GOLDUCK) { Ability(ABILITY_DAMP); }
+        OPPONENT(SPECIES_DEMMERAMON) { Ability(ABILITY_DAMP); }
     } WHEN {
         TURN { MOVE(player, MOVE_MIND_BLOWN); }
     } SCENE {
@@ -146,9 +146,9 @@ SINGLE_BATTLE_TEST("Mind Blown is blocked by Damp")
         }
         ABILITY_POPUP(opponent, ABILITY_DAMP);
 <<<<<<< HEAD
-        MESSAGE("Foe Golduck's Damp prevents Lopmonx from using Mind Blown!");
+        MESSAGE("Foe Demmeramon's Damp prevents Lopmonx from using Mind Blown!");
 =======
-        MESSAGE("The opposing Golduck's Damp prevents Wobbuffet from using Mind Blown!");
+        MESSAGE("The opposing Demmeramon's Damp prevents Wobbuffet from using Mind Blown!");
 >>>>>>> upstream/master
     }
 }

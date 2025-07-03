@@ -11,11 +11,11 @@ AI_SINGLE_BATTLE_TEST("AI_FLAG_SEQUENCE_SWITCHING: AI will always switch after a
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | aiSequenceSwitchingFlag);
         PLAYER(SPECIES_SWELLOW) { Level (50); }
-        OPPONENT(SPECIES_MACHOP) { Level(5); }
-        OPPONENT(SPECIES_MACHOKE) { Level(5); }
-        OPPONENT(SPECIES_MACHAMP) { Level(5); }
-        OPPONENT(SPECIES_MANKEY) { Level(5); }
-        OPPONENT(SPECIES_PRIMEAPE) { Level(5); }
+        OPPONENT(SPECIES_KOKOMON) { Level(5); }
+        OPPONENT(SPECIES_KOROMON) { Level(5); }
+        OPPONENT(SPECIES_KOZENIMON) { Level(5); }
+        OPPONENT(SPECIES_DEMIVEEMON) { Level(5); }
+        OPPONENT(SPECIES_DORIMON) { Level(5); }
         OPPONENT(SPECIES_MAGNEZONE) { Level(100); }
     } WHEN {
         TURN { MOVE(player, MOVE_WING_ATTACK); }
@@ -27,10 +27,10 @@ AI_SINGLE_BATTLE_TEST("AI_FLAG_SEQUENCE_SWITCHING: AI will always switch after a
         }
     } SCENE {
         if (aiSequenceSwitchingFlag) {
-            MESSAGE(AI_TRAINER_NAME " sent out Machoke!");
-            MESSAGE(AI_TRAINER_NAME " sent out Machamp!");
-            MESSAGE(AI_TRAINER_NAME " sent out Mankey!");
-            MESSAGE(AI_TRAINER_NAME " sent out Primeape!");
+            MESSAGE(AI_TRAINER_NAME " sent out Koromon!");
+            MESSAGE(AI_TRAINER_NAME " sent out Kozenimon!");
+            MESSAGE(AI_TRAINER_NAME " sent out Demiveemon!");
+            MESSAGE(AI_TRAINER_NAME " sent out Dorimon!");
             MESSAGE(AI_TRAINER_NAME " sent out Magnezone!");
         }
         else {
@@ -53,14 +53,14 @@ AI_SINGLE_BATTLE_TEST("AI_FLAG_SEQUENCE_SWITCHING: Roar and Dragon Tail still fo
         AI_FLAGS(AI_FLAG_SEQUENCE_SWITCHING);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_BULBASAUR);
+        OPPONENT(SPECIES_ARGOMON_F);
         OPPONENT(SPECIES_BOTAMON);
         OPPONENT(SPECIES_CONOMON) { HP(0); }
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, player);
-        MESSAGE("The opposing Bulbasaur was dragged out!");
+        MESSAGE("The opposing Argomon_f was dragged out!");
     }
 }
 
@@ -88,11 +88,11 @@ AI_SINGLE_BATTLE_TEST("AI_FLAG_SEQUENCE_SWITCHING: AI will always switch into lo
         ASSUME(gMovesInfo[MOVE_CHILLY_RECEPTION].effect == EFFECT_CHILLY_RECEPTION);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | aiSequenceSwitchingFlag);
         PLAYER(SPECIES_SWELLOW) { Level (50); }
-        OPPONENT(SPECIES_MACHOP) { Level(1); Moves(move); }
-        OPPONENT(SPECIES_MACHOP) { Level(2); Moves(move); }
-        OPPONENT(SPECIES_MACHOP) { Level(3); Moves(move); }
-        OPPONENT(SPECIES_MACHOP) { Level(4); Moves(move); }
-        OPPONENT(SPECIES_MACHOP) { Level(5); Moves(move); }
+        OPPONENT(SPECIES_KOKOMON) { Level(1); Moves(move); }
+        OPPONENT(SPECIES_KOKOMON) { Level(2); Moves(move); }
+        OPPONENT(SPECIES_KOKOMON) { Level(3); Moves(move); }
+        OPPONENT(SPECIES_KOKOMON) { Level(4); Moves(move); }
+        OPPONENT(SPECIES_KOKOMON) { Level(5); Moves(move); }
         OPPONENT(SPECIES_MAGNEZONE) { Level(100); Moves(move); }
     } WHEN {
         if (aiSequenceSwitchingFlag) {
@@ -118,7 +118,7 @@ AI_SINGLE_BATTLE_TEST("AI_FLAG_SEQUENCE_SWITCHING: AI will not switch mid-battle
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | aiSequenceSwitchingFlag);
         PLAYER(SPECIES_ZIGZAGOON) { Moves(MOVE_LICK); }
-        OPPONENT(SPECIES_GASTLY) { Moves(MOVE_SHADOW_BALL); }
+        OPPONENT(SPECIES_TOKOMON_X) { Moves(MOVE_SHADOW_BALL); }
         OPPONENT(SPECIES_ZIGZAGOON) { Moves(MOVE_KARATE_CHOP); }
     } WHEN {
         if (aiSequenceSwitchingFlag == AI_FLAG_SEQUENCE_SWITCHING) {

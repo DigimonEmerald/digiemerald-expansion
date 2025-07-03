@@ -10,7 +10,7 @@ SINGLE_BATTLE_TEST("Pastel Veil prevents Poison Sting poison")
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
 =======
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_PONYTA_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
+        OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_POISON_STING); }
@@ -32,7 +32,7 @@ DOUBLE_BATTLE_TEST("Pastel Veil prevents Poison Sting poison on partner")
 =======
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_PONYTA_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
+        OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
         OPPONENT(SPECIES_WYNAUT);
 >>>>>>> upstream/master
     } WHEN {
@@ -53,7 +53,7 @@ SINGLE_BATTLE_TEST("Pastel Veil immediately cures Mold Breaker poison")
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
 =======
         PLAYER(SPECIES_PINSIR) { Ability(ABILITY_MOLD_BREAKER); }
-        OPPONENT(SPECIES_PONYTA_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
+        OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC); MOVE(opponent, MOVE_TACKLE); }
@@ -64,7 +64,7 @@ SINGLE_BATTLE_TEST("Pastel Veil immediately cures Mold Breaker poison")
 <<<<<<< HEAD
         MESSAGE("Foe Negamon's Pastel Veil cured its poison problem!");
 =======
-        MESSAGE("The opposing Ponyta's Pastel Veil cured its poison problem!");
+        MESSAGE("The opposing Negamon's Pastel Veil cured its poison problem!");
 >>>>>>> upstream/master
         STATUS_ICON(opponent, none: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
@@ -83,7 +83,7 @@ DOUBLE_BATTLE_TEST("Pastel Veil does not cure Mold Breaker poison on partner")
 =======
         PLAYER(SPECIES_PINSIR) { Ability(ABILITY_MOLD_BREAKER); }
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_PONYTA_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
+        OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
         OPPONENT(SPECIES_WYNAUT);
 >>>>>>> upstream/master
     } WHEN {
@@ -104,7 +104,7 @@ SINGLE_BATTLE_TEST("Pastel Veil prevents Toxic bad poison")
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
 =======
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_PONYTA_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
+        OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC); }
@@ -114,7 +114,7 @@ SINGLE_BATTLE_TEST("Pastel Veil prevents Toxic bad poison")
 <<<<<<< HEAD
         MESSAGE("Foe Negamon is protected by a pastel veil!");
 =======
-        MESSAGE("The opposing Ponyta is protected by a pastel veil!");
+        MESSAGE("The opposing Negamon is protected by a pastel veil!");
 >>>>>>> upstream/master
         NOT STATUS_ICON(opponent, badPoison: TRUE);
     }
@@ -132,7 +132,7 @@ DOUBLE_BATTLE_TEST("Pastel Veil prevents Toxic bad poison on partner")
 =======
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_PONYTA_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
+        OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
         OPPONENT(SPECIES_WYNAUT);
 >>>>>>> upstream/master
     } WHEN {
@@ -160,7 +160,7 @@ SINGLE_BATTLE_TEST("Pastel Veil prevents Toxic Spikes poison")
 =======
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_PONYTA_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
+        OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
@@ -184,7 +184,7 @@ DOUBLE_BATTLE_TEST("Pastel Veil prevents Toxic Spikes poison on partner")
 =======
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_PONYTA_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
+        OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WYNAUT);
 >>>>>>> upstream/master
@@ -209,7 +209,7 @@ DOUBLE_BATTLE_TEST("Pastel Veil cures partner's poison on initial switch in")
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_WOBBUFFET) { Status1(STATUS1_POISON); }
-        OPPONENT(SPECIES_PONYTA_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
+        OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
 >>>>>>> upstream/master
     } WHEN {
         TURN {}
@@ -239,7 +239,7 @@ DOUBLE_BATTLE_TEST("Pastel Veil cures partner's poison on switch in")
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_WOBBUFFET) { Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_PONYTA_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
+        OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
 >>>>>>> upstream/master
     } WHEN {
         TURN { SWITCH(opponentRight, 2); }

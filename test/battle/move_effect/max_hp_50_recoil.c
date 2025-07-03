@@ -139,7 +139,7 @@ SINGLE_BATTLE_TEST("Steel Beam is not blocked by Damp")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { HP(400); MaxHP(400); }
-        OPPONENT(SPECIES_GOLDUCK) { Ability(ABILITY_DAMP); }
+        OPPONENT(SPECIES_DEMMERAMON) { Ability(ABILITY_DAMP); }
     } WHEN {
         TURN { MOVE(player, MOVE_STEEL_BEAM); }
     } SCENE {
@@ -148,9 +148,9 @@ SINGLE_BATTLE_TEST("Steel Beam is not blocked by Damp")
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_DAMP);
 <<<<<<< HEAD
-            MESSAGE("Foe Golduck's Damp prevents Lopmonx from using Steel Beam!");
+            MESSAGE("Foe Demmeramon's Damp prevents Lopmonx from using Steel Beam!");
 =======
-            MESSAGE("The opposing Golduck's Damp prevents Wobbuffet from using Steel Beam!");
+            MESSAGE("The opposing Demmeramon's Damp prevents Wobbuffet from using Steel Beam!");
 >>>>>>> upstream/master
         }
     }

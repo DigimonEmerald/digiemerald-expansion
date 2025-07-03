@@ -16,8 +16,8 @@ SINGLE_BATTLE_TEST("Foul Play uses physical attack stat of target", s16 damage)
     GIVEN {
         ASSUME(gMovesInfo[MOVE_HIGH_HORSEPOWER].power == gMovesInfo[MOVE_FOUL_PLAY].power);
         ASSUME(gMovesInfo[MOVE_SWORDS_DANCE].effect == EFFECT_ATTACK_UP_2);
-        PLAYER(SPECIES_SHELLDER);
-        OPPONENT(SPECIES_SHELLDER);
+        PLAYER(SPECIES_TANEMON);
+        OPPONENT(SPECIES_TANEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SWORDS_DANCE); MOVE(player, move); }
     } SCENE {

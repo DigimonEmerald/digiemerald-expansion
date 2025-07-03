@@ -180,10 +180,10 @@ SINGLE_BATTLE_TEST("Eject Button has no chance to activate after Dragon Tail")
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
             MESSAGE("Foe Bearmon is switched out with the Eject Button!");
 =======
-        MESSAGE("The opposing Chansey was dragged out!");
+        MESSAGE("The opposing Bearmon was dragged out!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-            MESSAGE("The opposing Chansey is switched out with the Eject Button!");
+            MESSAGE("The opposing Bearmon is switched out with the Eject Button!");
 >>>>>>> upstream/master
         }
     }

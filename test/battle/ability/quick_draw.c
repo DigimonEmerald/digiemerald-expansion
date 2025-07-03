@@ -9,7 +9,7 @@ SINGLE_BATTLE_TEST("Quick Draw has a 30% chance of going first")
         PLAYER(SPECIES_PICKMON_SILVER_GALARIAN) { Ability(ABILITY_QUICK_DRAW); Speed(1); }
         OPPONENT(SPECIES_LOPMONX) { Speed(100); }
 =======
-        PLAYER(SPECIES_SLOWBRO_GALAR) { Ability(ABILITY_QUICK_DRAW); Speed(1); }
+        PLAYER(SPECIES_PICKMON_SILVER_GALAR) { Ability(ABILITY_QUICK_DRAW); Speed(1); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(100); }
 >>>>>>> upstream/master
     } WHEN {
@@ -20,7 +20,7 @@ SINGLE_BATTLE_TEST("Quick Draw has a 30% chance of going first")
         MESSAGE("Pickmon_silver used Tackle!");
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("Slowbro used Tackle!");
+        MESSAGE("Pickmon_silver used Tackle!");
         MESSAGE("The opposing Wobbuffet used Celebrate!");
 >>>>>>> upstream/master
     }
@@ -34,7 +34,7 @@ SINGLE_BATTLE_TEST("Quick Draw does not activate 70% of the time")
         PLAYER(SPECIES_PICKMON_SILVER_GALARIAN) { Ability(ABILITY_QUICK_DRAW); Speed(1); }
         OPPONENT(SPECIES_LOPMONX) { Speed(100); }
 =======
-        PLAYER(SPECIES_SLOWBRO_GALAR) { Ability(ABILITY_QUICK_DRAW); Speed(1); }
+        PLAYER(SPECIES_PICKMON_SILVER_GALAR) { Ability(ABILITY_QUICK_DRAW); Speed(1); }
         OPPONENT(SPECIES_WOBBUFFET) { Speed(100); }
 >>>>>>> upstream/master
     } WHEN {
@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Quick Draw does not activate 70% of the time")
         MESSAGE("Pickmon_silver used Tackle!");
 =======
         MESSAGE("The opposing Wobbuffet used Celebrate!");
-        MESSAGE("Slowbro used Tackle!");
+        MESSAGE("Pickmon_silver used Tackle!");
 >>>>>>> upstream/master
     }
 }

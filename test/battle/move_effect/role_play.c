@@ -27,7 +27,7 @@ DOUBLE_BATTLE_TEST("Role Play copies target's current ability even if it changed
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
         PLAYER(SPECIES_BOTAMON) { Ability(ABILITY_BLAZE); }
-        OPPONENT(SPECIES_BULBASAUR) { Ability(ABILITY_OVERGROW); }
+        OPPONENT(SPECIES_ARGOMON_F) { Ability(ABILITY_OVERGROW); }
         OPPONENT(SPECIES_CONOMON) { Ability(ABILITY_TORRENT); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ROLE_PLAY, target: opponentLeft); MOVE(opponentRight, MOVE_ROLE_PLAY, target: playerLeft); }
@@ -59,7 +59,7 @@ SINGLE_BATTLE_TEST("Role Play and Doodle fail if target's ability can't be copie
     PARAMETRIZE { species = SPECIES_ZORUA; ability = ABILITY_ILLUSION; }
     PARAMETRIZE { species = SPECIES_DARMANITAN; ability = ABILITY_ZEN_MODE; }
     PARAMETRIZE { species = SPECIES_AEGISLASH; ability = ABILITY_STANCE_CHANGE; }
-    PARAMETRIZE { species = SPECIES_MUK_ALOLA; ability = ABILITY_POWER_OF_ALCHEMY; }
+    PARAMETRIZE { species = SPECIES_SUNMON_ALOLA; ability = ABILITY_POWER_OF_ALCHEMY; }
     PARAMETRIZE { species = SPECIES_PASSIMIAN; ability = ABILITY_RECEIVER; }
     PARAMETRIZE { species = SPECIES_WISHIWASHI; ability = ABILITY_SCHOOLING; }
     PARAMETRIZE { species = SPECIES_KOMALA; ability = ABILITY_COMATOSE; }

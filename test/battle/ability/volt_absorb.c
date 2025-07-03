@@ -55,7 +55,7 @@ SINGLE_BATTLE_TEST("Volt Absorb is only triggered once on multi strike moves")
         OPPONENT(SPECIES_MOONMON_ALOLAN) { Ability(ABILITY_GALVANIZE); }
 =======
         PLAYER(SPECIES_JOLTEON) { Ability(ABILITY_VOLT_ABSORB); HP(1); MaxHP(100); }
-        OPPONENT(SPECIES_GRAVELER_ALOLA) { Ability(ABILITY_GALVANIZE); }
+        OPPONENT(SPECIES_MOONMON_ALOLA) { Ability(ABILITY_GALVANIZE); }
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(opponent, MOVE_FURY_SWIPES); }
@@ -79,8 +79,8 @@ DOUBLE_BATTLE_TEST("Volt Absorb does not stop Electric Typed Explosion from dama
         OPPONENT(SPECIES_EXVEEMON);
 =======
         PLAYER(SPECIES_JOLTEON) { Ability(ABILITY_VOLT_ABSORB); HP(1); MaxHP(100); }
-        PLAYER(SPECIES_ABRA);
-        OPPONENT(SPECIES_GRAVELER_ALOLA) { Ability(ABILITY_GALVANIZE); }
+        PLAYER(SPECIES_HOPMON);
+        OPPONENT(SPECIES_MOONMON_ALOLA) { Ability(ABILITY_GALVANIZE); }
         OPPONENT(SPECIES_WYNAUT);
 >>>>>>> upstream/master
     } WHEN {

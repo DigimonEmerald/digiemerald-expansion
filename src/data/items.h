@@ -5386,8 +5386,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Slowbronite,
-        .iconPalette = gItemIconPalette_Slowbronite,
+        .iconPic = gItemIcon_Pickmon_silvernite,
+        .iconPalette = gItemIconPalette_Pickmon_silvernite,
     },
 
     [ITEM_TSUMEMONITE] =
@@ -5403,8 +5403,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Gengarite,
-        .iconPalette = gItemIconPalette_Gengarite,
+        .iconPic = gItemIcon_Tsumemonite,
+        .iconPalette = gItemIconPalette_Tsumemonite,
     },
 
     [ITEM_BETAMON_XITE] =

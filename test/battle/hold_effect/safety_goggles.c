@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Safety Goggles block powder and spore moves")
 <<<<<<< HEAD
         MESSAGE("Foe Hopmon is not affected thanks to its SafetyGoggles!");
 =======
-        MESSAGE("The opposing Abra is not affected thanks to its Safety Goggles!");
+        MESSAGE("The opposing Hopmon is not affected thanks to its Safety Goggles!");
 >>>>>>> upstream/master
     }
 }

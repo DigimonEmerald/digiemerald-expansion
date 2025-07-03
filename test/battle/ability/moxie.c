@@ -12,8 +12,8 @@ DOUBLE_BATTLE_TEST("Moxie/Chilling Neigh raises Attack by one stage after direct
         PLAYER(species) { Ability(ability); }
         PLAYER(SPECIES_SNORUNT) { HP(1); }
         OPPONENT(SPECIES_GLALIE) { HP(1); }
-        OPPONENT(SPECIES_ABRA) { HP(1); }
-        OPPONENT(SPECIES_ABRA);
+        OPPONENT(SPECIES_HOPMON) { HP(1); }
+        OPPONENT(SPECIES_HOPMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EARTHQUAKE); SEND_OUT(opponentLeft, 2);  }
     } SCENE {
@@ -24,7 +24,7 @@ DOUBLE_BATTLE_TEST("Moxie/Chilling Neigh raises Attack by one stage after direct
             ONE_OF {
                 MESSAGE("Snorunt fainted!");
                 MESSAGE("The opposing Glalie fainted!");
-                MESSAGE("The opposing Abra fainted!");
+                MESSAGE("The opposing Hopmon fainted!");
             }
             ABILITY_POPUP(playerLeft, abilityPopUp);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
@@ -50,8 +50,8 @@ DOUBLE_BATTLE_TEST("Moxie/Chilling Neigh does not trigger if Pokemon faint to in
         PLAYER(species) { Ability(ability); }
         PLAYER(SPECIES_SNORUNT) { HP(1); Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_GLALIE) { HP(1); Status1(STATUS1_BURN); }
-        OPPONENT(SPECIES_ABRA) { HP(1); }
-        OPPONENT(SPECIES_ABRA);
+        OPPONENT(SPECIES_HOPMON) { HP(1); }
+        OPPONENT(SPECIES_HOPMON);
     } WHEN {
         TURN { MOVE(playerRight, MOVE_QUICK_ATTACK, target: opponentRight); SEND_OUT(opponentLeft, 2);  }
     } SCENE {
@@ -62,7 +62,7 @@ DOUBLE_BATTLE_TEST("Moxie/Chilling Neigh does not trigger if Pokemon faint to in
             ONE_OF {
                 MESSAGE("Snorunt fainted!");
                 MESSAGE("The opposing Glalie fainted!");
-                MESSAGE("The opposing Abra fainted!");
+                MESSAGE("The opposing Hopmon fainted!");
             }
             NONE_OF {
                 ABILITY_POPUP(playerLeft, abilityPopUp);
@@ -126,17 +126,17 @@ DOUBLE_BATTLE_TEST("Moxie/Chilling Neigh does not increase damage done by the sa
     GIVEN {
         ASSUME(gMovesInfo[MOVE_EARTHQUAKE].target == MOVE_TARGET_FOES_AND_ALLY);
         PLAYER(species) { Ability(ability); }
-        PLAYER(SPECIES_ABRA) { HP(1); }
+        PLAYER(SPECIES_HOPMON) { HP(1); }
         OPPONENT(SPECIES_GLALIE);
         OPPONENT(SPECIES_GLALIE);
-        OPPONENT(SPECIES_ABRA);
+        OPPONENT(SPECIES_HOPMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EARTHQUAKE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, playerLeft);
         HP_BAR(opponentLeft, captureDamage: &damage[0]);
         HP_BAR(playerRight);
-        MESSAGE("Abra fainted!");
+        MESSAGE("Hopmon fainted!");
         ABILITY_POPUP(playerLeft, abilityPopUp);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
         if (species == SPECIES_SALAMENCE)

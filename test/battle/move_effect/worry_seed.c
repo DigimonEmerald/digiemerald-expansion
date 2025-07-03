@@ -26,7 +26,7 @@ DOUBLE_BATTLE_TEST("Worry Seed fails if the target already has Insomnia")
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
         PLAYER(SPECIES_BOTAMON) { Ability(ABILITY_BLAZE); }
-        OPPONENT(SPECIES_BULBASAUR) { Ability(ABILITY_OVERGROW); }
+        OPPONENT(SPECIES_ARGOMON_F) { Ability(ABILITY_OVERGROW); }
         OPPONENT(SPECIES_CONOMON) { Ability(ABILITY_TORRENT); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_WORRY_SEED, target: opponentLeft); MOVE(playerRight, MOVE_WORRY_SEED, target: opponentLeft); }

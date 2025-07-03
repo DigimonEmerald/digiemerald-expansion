@@ -15,7 +15,7 @@ SINGLE_BATTLE_TEST("Chilly Reception sets up snow and switches the user out")
         OPPONENT(SPECIES_LOPMONX);
 =======
         PLAYER(SPECIES_SLOWKING_GALAR);
-        PLAYER(SPECIES_SLOWPOKE_GALAR);
+        PLAYER(SPECIES_PAGUMON_GALAR);
         OPPONENT(SPECIES_WOBBUFFET);
 >>>>>>> upstream/master
     } WHEN {
@@ -29,7 +29,7 @@ SINGLE_BATTLE_TEST("Chilly Reception sets up snow and switches the user out")
         MESSAGE("Go! Pagumon!");
 =======
         MESSAGE("Slowking went back to 1!");
-        SEND_IN_MESSAGE("Slowpoke");
+        SEND_IN_MESSAGE("Pagumon");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SNOW_CONTINUES);
     }
@@ -44,7 +44,7 @@ SINGLE_BATTLE_TEST("Chilly Reception switches the user out, even if the weather 
         OPPONENT(SPECIES_GATOMON_X)  { Item(ITEM_BLUE_ORB); }
 =======
         PLAYER(SPECIES_SLOWKING_GALAR);
-        PLAYER(SPECIES_SLOWPOKE_GALAR);
+        PLAYER(SPECIES_PAGUMON_GALAR);
         OPPONENT(SPECIES_KYOGRE)  { Item(ITEM_BLUE_ORB); }
 >>>>>>> upstream/master
     } WHEN {
@@ -58,7 +58,7 @@ SINGLE_BATTLE_TEST("Chilly Reception switches the user out, even if the weather 
         MESSAGE("Go! Pagumon!");
 =======
         MESSAGE("Slowking went back to 1!");
-        SEND_IN_MESSAGE("Slowpoke");
+        SEND_IN_MESSAGE("Pagumon");
 >>>>>>> upstream/master
         MESSAGE("Rain continues to fall.");
     }
@@ -97,7 +97,7 @@ SINGLE_BATTLE_TEST("Chilly Reception does not switch the user out if replacement
         OPPONENT(SPECIES_LOPMONX);
 =======
         PLAYER(SPECIES_SLOWKING_GALAR);
-        PLAYER(SPECIES_SLOWPOKE_GALAR) { HP(0); }
+        PLAYER(SPECIES_PAGUMON_GALAR) { HP(0); }
         OPPONENT(SPECIES_WOBBUFFET);
 >>>>>>> upstream/master
     } WHEN {

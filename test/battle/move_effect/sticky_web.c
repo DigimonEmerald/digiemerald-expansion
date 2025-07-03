@@ -65,10 +65,10 @@ DOUBLE_BATTLE_TEST("Sticky Web lowers Speed by 1 in a double battle after Explos
         MESSAGE("A sticky web has been laid out on the ground around the opposing team!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, playerLeft);
         MESSAGE("2 sent out Exveemon!");
-        MESSAGE("2 sent out Alakazam!");
-        MESSAGE("The opposing Alakazam was caught in a sticky web!");
+        MESSAGE("2 sent out Kapurimon!");
+        MESSAGE("The opposing Kapurimon was caught in a sticky web!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("The opposing Alakazam's Speed fell!");
+        MESSAGE("The opposing Kapurimon's Speed fell!");
         MESSAGE("The opposing Exveemon was caught in a sticky web!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
         MESSAGE("The opposing Exveemon's Speed fell!");

@@ -57,7 +57,7 @@ DOUBLE_BATTLE_TEST("Ally Switch changes the position of battlers")
 <<<<<<< HEAD
         MESSAGE("Foe Kakkinmon used Screech!");
 =======
-        MESSAGE("The opposing Kadabra used Screech!");
+        MESSAGE("The opposing Kakkinmon used Screech!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
         MESSAGE("Exveemon's Defense harshly fell!");
@@ -65,7 +65,7 @@ DOUBLE_BATTLE_TEST("Ally Switch changes the position of battlers")
 <<<<<<< HEAD
         MESSAGE("Foe Hopmon used Screech!");
 =======
-        MESSAGE("The opposing Abra used Screech!");
+        MESSAGE("The opposing Hopmon used Screech!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
         MESSAGE("Exveemon's Defense harshly fell!");
@@ -95,7 +95,7 @@ DOUBLE_BATTLE_TEST("Ally Switch does not redirect the target of Snipe Shot")
 <<<<<<< HEAD
         MESSAGE("Foe Kakkinmon used Snipe Shot!");
 =======
-        MESSAGE("The opposing Kadabra used Snipe Shot!");
+        MESSAGE("The opposing Kakkinmon used Snipe Shot!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SNIPE_SHOT, opponentLeft);
         HP_BAR(playerRight);
@@ -124,7 +124,7 @@ DOUBLE_BATTLE_TEST("Ally Switch does not redirect moves done by pokemon with Sta
 <<<<<<< HEAD
         MESSAGE("Foe Kakkinmon used Tackle!");
 =======
-        MESSAGE("The opposing Kadabra used Tackle!");
+        MESSAGE("The opposing Kakkinmon used Tackle!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
         HP_BAR((ability == ABILITY_STALWART || ability == ABILITY_PROPELLER_TAIL) ? playerLeft : playerRight);

@@ -20,11 +20,11 @@ SINGLE_BATTLE_TEST("Own Tempo prevents Intimidate but no other stat down changes
             ABILITY_POPUP(opponent, ABILITY_OWN_TEMPO);
             MESSAGE("Foe Pagumon's Own Tempo prevents stat loss!");
 =======
-        MESSAGE("The opposing Slowpoke's Own Tempo prevents stat loss!");
+        MESSAGE("The opposing Pagumon's Own Tempo prevents stat loss!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCARY_FACE, player);
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_OWN_TEMPO);
-            MESSAGE("The opposing Slowpoke's Own Tempo prevents stat loss!");
+            MESSAGE("The opposing Pagumon's Own Tempo prevents stat loss!");
 >>>>>>> upstream/master
         }
     }
@@ -43,7 +43,7 @@ SINGLE_BATTLE_TEST("Own Tempo prevents confusion from moves by the opponent")
 <<<<<<< HEAD
         MESSAGE("Foe Pagumon's Own Tempo prevents confusion!");
 =======
-        MESSAGE("The opposing Slowpoke's Own Tempo prevents confusion!");
+        MESSAGE("The opposing Pagumon's Own Tempo prevents confusion!");
 >>>>>>> upstream/master
     }
 }
@@ -67,7 +67,7 @@ SINGLE_BATTLE_TEST("Own Tempo prevents confusion from moves by the user")
 <<<<<<< HEAD
         NONE_OF { MESSAGE("Foe Pagumon became confused due to fatigue!"); }
 =======
-        NONE_OF { MESSAGE("The opposing Slowpoke became confused due to fatigue!"); }
+        NONE_OF { MESSAGE("The opposing Pagumon became confused due to fatigue!"); }
 >>>>>>> upstream/master
     }
 }
@@ -78,13 +78,13 @@ SINGLE_BATTLE_TEST("Own Tempo is ignored by Mold Breaker")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_CONFUSE_RAY].effect == EFFECT_CONFUSE);
         PLAYER(SPECIES_PINSIR) { Ability(ABILITY_MOLD_BREAKER); }
-        OPPONENT(SPECIES_SLOWPOKE) { Ability(ABILITY_OWN_TEMPO); };
+        OPPONENT(SPECIES_PAGUMON) { Ability(ABILITY_OWN_TEMPO); };
     } WHEN {
         TURN { MOVE(player, MOVE_CONFUSE_RAY); }
     } SCENE {
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_OWN_TEMPO);
-            MESSAGE("The opposing Slowpoke's Own Tempo prevents confusion!");
+            MESSAGE("The opposing Pagumon's Own Tempo prevents confusion!");
         }
     }
 }
@@ -103,7 +103,7 @@ SINGLE_BATTLE_TEST("Own Tempo cures confusion obtained from an opponent with Mol
 <<<<<<< HEAD
         MESSAGE("Foe Pagumon became confused!");
 =======
-        MESSAGE("The opposing Slowpoke became confused!");
+        MESSAGE("The opposing Pagumon became confused!");
 >>>>>>> upstream/master
         NONE_OF {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, opponent);
@@ -112,7 +112,7 @@ SINGLE_BATTLE_TEST("Own Tempo cures confusion obtained from an opponent with Mol
 <<<<<<< HEAD
         MESSAGE("Foe Pagumon's Own Tempo cured its confusion problem!");
 =======
-        MESSAGE("The opposing Slowpoke's Own Tempo cured its confusion problem!");
+        MESSAGE("The opposing Pagumon's Own Tempo cured its confusion problem!");
 >>>>>>> upstream/master
     }
 }

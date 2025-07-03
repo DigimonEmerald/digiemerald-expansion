@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Red Card switches the attacker with a random non-fainted rep
         MESSAGE("Foe Argomon_f was dragged out!");
 =======
         MESSAGE("Wobbuffet held up its Red Card against the opposing Wobbuffet!");
-        MESSAGE("The opposing Bulbasaur was dragged out!");
+        MESSAGE("The opposing Argomon_f was dragged out!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT(player->item == ITEM_NONE);
@@ -53,7 +53,7 @@ DOUBLE_BATTLE_TEST("Red Card switches the target with a random non-battler, non-
         MESSAGE("Foe Argomon_f was dragged out!");
 =======
         MESSAGE("Wobbuffet held up its Red Card against the opposing Wobbuffet!");
-        MESSAGE("The opposing Bulbasaur was dragged out!");
+        MESSAGE("The opposing Argomon_f was dragged out!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT(playerLeft->item == ITEM_NONE);

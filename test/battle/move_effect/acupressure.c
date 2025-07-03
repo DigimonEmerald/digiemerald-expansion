@@ -14,8 +14,8 @@ DOUBLE_BATTLE_TEST("Acupressure works on the ally if the user targeted itself bu
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_KADABRA);
-        OPPONENT(SPECIES_ABRA);
+        OPPONENT(SPECIES_KAKKINMON);
+        OPPONENT(SPECIES_HOPMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(playerRight, MOVE_ACUPRESSURE, target:playerRight); }
     } SCENE {
@@ -36,8 +36,8 @@ DOUBLE_BATTLE_TEST("Acupressure fails on the user if it targeted its ally but sw
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_KADABRA);
-        OPPONENT(SPECIES_ABRA);
+        OPPONENT(SPECIES_KAKKINMON);
+        OPPONENT(SPECIES_HOPMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); MOVE(playerRight, MOVE_ACUPRESSURE, target:playerLeft); }
     } SCENE {

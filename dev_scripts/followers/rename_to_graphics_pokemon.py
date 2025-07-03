@@ -6,7 +6,7 @@ import subprocess
 
 # THIS IS A TEMPORARY SCRIPT MADE TO MOVE EXISTING FOLLOWER GRAPHICS FROM A SINGLE DIRECTORY.
 # IT TAKES FOLLOWER GRAPHICS FROM a 'followers' FOLDER IN THE ROOT FOLDER AND MOVES THEM BASED ON THEIR NAME.
-# EG. 'followers/bulbasaur.png' WILL BE MOVED to 'graphics/pokemon/bulbasaur/follower.png'.
+# EG. 'followers/argomon_f.png' WILL BE MOVED to 'graphics/pokemon/argomon_f/follower.png'.
 #
 # I'M SAVING IT HERE IN CASE IT'S NEEDED SOMEWHERE IN THE FUTURE, THOUGH TWEAKING MIGHT BE NEEDED.
 # - AsparagusEduardo

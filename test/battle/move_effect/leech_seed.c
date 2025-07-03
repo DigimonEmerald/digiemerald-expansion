@@ -32,7 +32,7 @@ SINGLE_BATTLE_TEST("Leech Seeded targets lose 1/8 of its max HP every turn and g
 
     GIVEN {
         PLAYER(SPECIES_WYNAUT) { HP(1); }
-        OPPONENT(SPECIES_SHELLDER);
+        OPPONENT(SPECIES_TANEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_LEECH_SEED); }
         TURN {}
@@ -51,7 +51,7 @@ SINGLE_BATTLE_TEST("Leech Seed recovery is prevented by Heal Block")
 {
     GIVEN {
         PLAYER(SPECIES_WYNAUT) { HP(1); }
-        OPPONENT(SPECIES_SHELLDER);
+        OPPONENT(SPECIES_TANEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_HEAL_BLOCK); MOVE(player, MOVE_LEECH_SEED); }
     } SCENE {

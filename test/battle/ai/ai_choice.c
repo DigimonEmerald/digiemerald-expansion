@@ -28,7 +28,7 @@ AI_SINGLE_BATTLE_TEST("Choiced Pokémon switch out after using a status move onc
         ASSUME(gMovesInfo[MOVE_YAWN].category == DAMAGE_CATEGORY_STATUS);
         ASSUME(gMovesInfo[MOVE_YAWN].effect == EFFECT_YAWN);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_RHYDON)
+        PLAYER(SPECIES_BAKOMON)
         OPPONENT(SPECIES_LOPUNNY) { Moves(MOVE_YAWN, MOVE_TACKLE); Item(heldItem); Ability(ability); }
         OPPONENT(SPECIES_SWAMPERT) { Moves(MOVE_WATERFALL); }
     } WHEN {
@@ -62,7 +62,7 @@ AI_SINGLE_BATTLE_TEST("Choiced Pokémon won't use stat boosting moves")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SWORDS_DANCE].target == MOVE_TARGET_USER);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_RHYDON)
+        PLAYER(SPECIES_BAKOMON)
         OPPONENT(SPECIES_LOPUNNY) { Moves(MOVE_SWORDS_DANCE, MOVE_TACKLE); Item(heldItem); Ability(ability); }
         OPPONENT(SPECIES_SWAMPERT) { Moves(MOVE_WATERFALL); }
     } WHEN {
@@ -97,7 +97,7 @@ AI_SINGLE_BATTLE_TEST("Choiced Pokémon won't use status move if they are the on
         ASSUME(gMovesInfo[MOVE_YAWN].category == DAMAGE_CATEGORY_STATUS);
         ASSUME(gMovesInfo[MOVE_YAWN].effect == EFFECT_YAWN);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_RHYDON)
+        PLAYER(SPECIES_BAKOMON)
         OPPONENT(SPECIES_LOPUNNY) { Moves(MOVE_YAWN, MOVE_TACKLE); Item(heldItem); Ability(ability); }
         OPPONENT(SPECIES_SWAMPERT) { HP(isAlive); Moves(MOVE_WATERFALL); }
     } WHEN {
@@ -132,7 +132,7 @@ AI_SINGLE_BATTLE_TEST("Choiced Pokémon won't use status move if they don't have
         ASSUME(gMovesInfo[MOVE_YAWN].category == DAMAGE_CATEGORY_STATUS);
         ASSUME(gMovesInfo[MOVE_YAWN].effect == EFFECT_YAWN);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_RHYDON)
+        PLAYER(SPECIES_BAKOMON)
         OPPONENT(SPECIES_LOPUNNY) { Moves(MOVE_YAWN, MOVE_TACKLE); Item(heldItem); Ability(ability); }
         OPPONENT(species) { Moves(move); }
     } WHEN {
@@ -157,10 +157,10 @@ AI_SINGLE_BATTLE_TEST("Choiced Pokémon won't use status move if they are trappe
 
     for (j = 0; j < ARRAY_COUNT(choiceItems); j++)
     {
-        PARAMETRIZE { aiAbility = ABILITY_NONE;    heldItem = choiceItems[j]; species = SPECIES_RHYDON; playerAbility = ABILITY_LIGHTNING_ROD; }
-        PARAMETRIZE { aiAbility = ABILITY_KLUTZ;   heldItem = choiceItems[j]; species = SPECIES_RHYDON; playerAbility = ABILITY_LIGHTNING_ROD; }
-        PARAMETRIZE { aiAbility = ABILITY_NONE;    heldItem = choiceItems[j]; species = SPECIES_DUGTRIO; playerAbility = ABILITY_ARENA_TRAP; }
-        PARAMETRIZE { aiAbility = ABILITY_KLUTZ;   heldItem = choiceItems[j]; species = SPECIES_DUGTRIO; playerAbility = ABILITY_ARENA_TRAP; }
+        PARAMETRIZE { aiAbility = ABILITY_NONE;    heldItem = choiceItems[j]; species = SPECIES_BAKOMON; playerAbility = ABILITY_LIGHTNING_ROD; }
+        PARAMETRIZE { aiAbility = ABILITY_KLUTZ;   heldItem = choiceItems[j]; species = SPECIES_BAKOMON; playerAbility = ABILITY_LIGHTNING_ROD; }
+        PARAMETRIZE { aiAbility = ABILITY_NONE;    heldItem = choiceItems[j]; species = SPECIES_BUKAMON; playerAbility = ABILITY_ARENA_TRAP; }
+        PARAMETRIZE { aiAbility = ABILITY_KLUTZ;   heldItem = choiceItems[j]; species = SPECIES_BUKAMON; playerAbility = ABILITY_ARENA_TRAP; }
     }
 
     GIVEN {

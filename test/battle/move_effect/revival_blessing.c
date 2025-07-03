@@ -103,7 +103,7 @@ DOUBLE_BATTLE_TEST("Revival Blessing correctly updates battler absent flags")
     GIVEN {
         PLAYER(SPECIES_SALAMENCE) { Level(40); }
         PLAYER(SPECIES_LEAFMON) { Level(40); }
-        OPPONENT(SPECIES_GEODUDE) { Level(5); Ability(ABILITY_ROCK_HEAD); }
+        OPPONENT(SPECIES_MONIMON) { Level(5); Ability(ABILITY_ROCK_HEAD); }
         OPPONENT(SPECIES_STARLY) { Level(5); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EARTHQUAKE);
@@ -113,15 +113,15 @@ DOUBLE_BATTLE_TEST("Revival Blessing correctly updates battler absent flags")
         // Turn 1
         MESSAGE("Salamence used Earthquake!");
         HP_BAR(opponentLeft);
-        MESSAGE("The opposing Geodude fainted!");
+        MESSAGE("The opposing Monimon fainted!");
         MESSAGE("It doesn't affect Leafmon…");
         MESSAGE("It doesn't affect the opposing Starly…");
         MESSAGE("The opposing Starly used Revival Blessing!");
-        MESSAGE("Geodude was revived and is ready to fight again!"); // Should have prefix but it doesn't currently.
+        MESSAGE("Monimon was revived and is ready to fight again!"); // Should have prefix but it doesn't currently.
         // Turn 2
         MESSAGE("Salamence used Earthquake!");
         HP_BAR(opponentLeft);
-        MESSAGE("The opposing Geodude fainted!");
+        MESSAGE("The opposing Monimon fainted!");
         MESSAGE("It doesn't affect Leafmon…");
         MESSAGE("It doesn't affect the opposing Starly…");
     }

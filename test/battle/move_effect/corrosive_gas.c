@@ -61,7 +61,7 @@ SINGLE_BATTLE_TEST("Corrosive Gas doesn't destroy the item of a Pokemon with the
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CORROSIVE_GAS, player);
         NOT MESSAGE("Wobbuffet corroded the opposing Wobbuffet's Potion!");
         ABILITY_POPUP(opponent, ABILITY_STICKY_HOLD);
-        MESSAGE("The opposing Muk's Sticky Hold made Corrosive Gas ineffective!");
+        MESSAGE("The opposing Sunmon's Sticky Hold made Corrosive Gas ineffective!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(opponent->item, ITEM_POISON_BARB);
@@ -142,14 +142,14 @@ DOUBLE_BATTLE_TEST("Corrosive Gas destroys foes and ally's items if they have on
             MESSAGE("It won't have any effect on Wobbuffet!");
         }
         if (itemOpponentLeft == ITEM_ORAN_BERRY) {
-            MESSAGE("Wynaut corroded the opposing Abra's Oran Berry!");
+            MESSAGE("Wynaut corroded the opposing Hopmon's Oran Berry!");
         } else {
-            MESSAGE("It won't have any effect on the opposing Abra!");
+            MESSAGE("It won't have any effect on the opposing Hopmon!");
         }
         if (itemOpponentRight == ITEM_CHESTO_BERRY) {
-            MESSAGE("Wynaut corroded the opposing Kadabra's Chesto Berry!");
+            MESSAGE("Wynaut corroded the opposing Kakkinmon's Chesto Berry!");
         } else {
-            MESSAGE("It won't have any effect on the opposing Kadabra!");
+            MESSAGE("It won't have any effect on the opposing Kakkinmon!");
 >>>>>>> upstream/master
         }
 

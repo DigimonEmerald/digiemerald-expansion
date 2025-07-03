@@ -21,11 +21,11 @@ AI_DOUBLE_BATTLE_TEST("AI_FLAG_DOUBLE_ACE_POKEMON: U-Turn won't send out any of 
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
 
-        OPPONENT(SPECIES_GASTLY) { Moves(MOVE_U_TURN); }
+        OPPONENT(SPECIES_TOKOMON_X) { Moves(MOVE_U_TURN); }
         OPPONENT(SPECIES_DUSKULL) { Moves(MOVE_U_TURN); }
 
-        OPPONENT(SPECIES_HAUNTER) { Moves(MOVE_U_TURN); }
-        OPPONENT(SPECIES_GENGAR) { Moves(MOVE_U_TURN); }
+        OPPONENT(SPECIES_TORBALLMON) { Moves(MOVE_U_TURN); }
+        OPPONENT(SPECIES_TSUMEMON) { Moves(MOVE_U_TURN); }
 
         // Aces
         // Crunch is super effective against Wobbuffet Psychic type, so normally the AI would switch them in
@@ -55,7 +55,7 @@ AI_DOUBLE_BATTLE_TEST("AI_FLAG_DOUBLE_ACE_POKEMON: U-Turn will send out an Ace M
         PLAYER(SPECIES_WOBBUFFET) { Level(50); }
         PLAYER(SPECIES_WOBBUFFET) { Level(50); }
 
-        OPPONENT(SPECIES_GASTLY) { Moves(MOVE_U_TURN); Level(50); }
+        OPPONENT(SPECIES_TOKOMON_X) { Moves(MOVE_U_TURN); Level(50); }
         OPPONENT(SPECIES_DUSKULL) { Moves(MOVE_U_TURN); Level(5); }
 
         // Aces
@@ -76,16 +76,16 @@ AI_DOUBLE_BATTLE_TEST("AI_FLAG_DOUBLE_ACE_POKEMON: U-Turn will send out an Ace M
 AI_DOUBLE_BATTLE_TEST("AI_FLAG_DOUBLE_ACE_POKEMON: Ace mons won't be switched in even if they are the best candidates")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_GENGAR].types[0] == TYPE_GHOST);
+        ASSUME(gSpeciesInfo[SPECIES_TSUMEMON].types[0] == TYPE_GHOST);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_SMART_SWITCHING | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_DOUBLE_ACE_POKEMON);
 
-        PLAYER(SPECIES_GENGAR) { Level(10); }
-        PLAYER(SPECIES_GENGAR) { Level(10); }
+        PLAYER(SPECIES_TSUMEMON) { Level(10); }
+        PLAYER(SPECIES_TSUMEMON) { Level(10); }
 
         OPPONENT(SPECIES_CHOROMON) { Moves(MOVE_TACKLE); Level(10); }
-        OPPONENT(SPECIES_PSYDUCK) { Moves(MOVE_TACKLE); Level(10); }
+        OPPONENT(SPECIES_CHICCIMON) { Moves(MOVE_TACKLE); Level(10); }
 
-        OPPONENT(SPECIES_ABRA) { Moves(MOVE_ABSORB); Level(20); }
+        OPPONENT(SPECIES_HOPMON) { Moves(MOVE_ABSORB); Level(20); }
 
         // Aces
         OPPONENT(SPECIES_MIGHTYENA) { Moves(MOVE_CRUNCH); Level(50); }

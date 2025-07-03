@@ -33,7 +33,7 @@ SINGLE_BATTLE_TEST("Snow Cloak doesn't increase evasion if Cloud Nine/Air Lock i
     PASSES_RANDOMLY(10, 10, RNG_ACCURACY);
     GIVEN {
         PLAYER(SPECIES_GLACEON) { Ability(ABILITY_SNOW_CLOAK); }
-        OPPONENT(SPECIES_GOLDUCK) { Ability(ABILITY_CLOUD_NINE); }
+        OPPONENT(SPECIES_DEMMERAMON) { Ability(ABILITY_CLOUD_NINE); }
     } WHEN {
         TURN { MOVE(player, MOVE_HAIL); MOVE(opponent, MOVE_TACKLE); }
     } SCENE {

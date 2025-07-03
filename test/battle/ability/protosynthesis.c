@@ -209,7 +209,7 @@ SINGLE_BATTLE_TEST("Protosynthesis doesn't activate if Cloud Nine/Air Lock is on
 {
     u32 species, ability;
     PARAMETRIZE { species = SPECIES_RAYQUAZA; ability = ABILITY_AIR_LOCK; }
-    PARAMETRIZE { species = SPECIES_GOLDUCK; ability = ABILITY_CLOUD_NINE; }
+    PARAMETRIZE { species = SPECIES_DEMMERAMON; ability = ABILITY_CLOUD_NINE; }
 
     GIVEN {
         PLAYER(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); }

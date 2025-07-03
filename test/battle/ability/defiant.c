@@ -24,7 +24,7 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises player's Attack after Intimidate")
 <<<<<<< HEAD
         MESSAGE("Foe Commdramon's Intimidate cuts Demiveemon's attack!");
 =======
-        MESSAGE("The opposing Gyarados's Intimidate cuts Mankey's Attack!");
+        MESSAGE("The opposing Gyarados's Intimidate cuts Demiveemon's Attack!");
 >>>>>>> upstream/master
         if (abilityLeft == ABILITY_DEFIANT) {
             ABILITY_POPUP(playerLeft, ABILITY_DEFIANT);
@@ -35,7 +35,7 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises player's Attack after Intimidate")
 <<<<<<< HEAD
         MESSAGE("Foe Commdramon's Intimidate cuts Dorimon's attack!");
 =======
-        MESSAGE("The opposing Gyarados's Intimidate cuts Primeape's Attack!");
+        MESSAGE("The opposing Gyarados's Intimidate cuts Dorimon's Attack!");
 >>>>>>> upstream/master
         if (abilityRight == ABILITY_DEFIANT) {
             ABILITY_POPUP(playerRight, ABILITY_DEFIANT);
@@ -49,7 +49,7 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises player's Attack after Intimidate")
 <<<<<<< HEAD
         MESSAGE("Foe Paomon's Intimidate cuts Demiveemon's attack!");
 =======
-        MESSAGE("The opposing Paomon's Intimidate cuts Mankey's Attack!");
+        MESSAGE("The opposing Paomon's Intimidate cuts Demiveemon's Attack!");
 >>>>>>> upstream/master
         if (abilityLeft == ABILITY_DEFIANT) {
             ABILITY_POPUP(playerLeft, ABILITY_DEFIANT);
@@ -60,7 +60,7 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises player's Attack after Intimidate")
 <<<<<<< HEAD
         MESSAGE("Foe Paomon's Intimidate cuts Dorimon's attack!");
 =======
-        MESSAGE("The opposing Paomon's Intimidate cuts Primeape's Attack!");
+        MESSAGE("The opposing Paomon's Intimidate cuts Dorimon's Attack!");
 >>>>>>> upstream/master
         if (abilityRight == ABILITY_DEFIANT) {
             ABILITY_POPUP(playerRight, ABILITY_DEFIANT);
@@ -109,18 +109,18 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises opponent's Attack after Intimidate")
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
             MESSAGE("Foe Dorimon's Attack sharply rose!");
 =======
-        MESSAGE("Gyarados's Intimidate cuts the opposing Mankey's Attack!");
+        MESSAGE("Gyarados's Intimidate cuts the opposing Demiveemon's Attack!");
         if (abilityLeft == ABILITY_DEFIANT) {
             ABILITY_POPUP(opponentLeft, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-            MESSAGE("The opposing Mankey's Attack sharply rose!");
+            MESSAGE("The opposing Demiveemon's Attack sharply rose!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("Gyarados's Intimidate cuts the opposing Primeape's Attack!");
+        MESSAGE("Gyarados's Intimidate cuts the opposing Dorimon's Attack!");
         if (abilityRight == ABILITY_DEFIANT) {
             ABILITY_POPUP(opponentRight, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-            MESSAGE("The opposing Primeape's Attack sharply rose!");
+            MESSAGE("The opposing Dorimon's Attack sharply rose!");
 >>>>>>> upstream/master
         }
 
@@ -141,18 +141,18 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises opponent's Attack after Intimidate")
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
             MESSAGE("Foe Dorimon's Attack sharply rose!");
 =======
-        MESSAGE("Paomon's Intimidate cuts the opposing Mankey's Attack!");
+        MESSAGE("Paomon's Intimidate cuts the opposing Demiveemon's Attack!");
         if (abilityLeft == ABILITY_DEFIANT) {
             ABILITY_POPUP(opponentLeft, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-            MESSAGE("The opposing Mankey's Attack sharply rose!");
+            MESSAGE("The opposing Demiveemon's Attack sharply rose!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("Paomon's Intimidate cuts the opposing Primeape's Attack!");
+        MESSAGE("Paomon's Intimidate cuts the opposing Dorimon's Attack!");
         if (abilityRight == ABILITY_DEFIANT) {
             ABILITY_POPUP(opponentRight, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-            MESSAGE("The opposing Primeape's Attack sharply rose!");
+            MESSAGE("The opposing Dorimon's Attack sharply rose!");
 >>>>>>> upstream/master
         }
     } FINALLY {
@@ -178,8 +178,8 @@ SINGLE_BATTLE_TEST("Defiant activates after Sticky Web lowers Speed")
         MESSAGE("Go! Demiveemon!");
         MESSAGE("Demiveemon was caught in a Sticky Web!");
 =======
-        SEND_IN_MESSAGE("Mankey");
-        MESSAGE("Mankey was caught in a sticky web!");
+        SEND_IN_MESSAGE("Demiveemon");
+        MESSAGE("Demiveemon was caught in a sticky web!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         MESSAGE("Demiveemon's Speed fell!");
@@ -194,7 +194,7 @@ SINGLE_BATTLE_TEST("Defiant doesn't activate after Sticky Web lowers Speed if Co
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_MANKEY) { Ability(ABILITY_DEFIANT); }
+        PLAYER(SPECIES_DEMIVEEMON) { Ability(ABILITY_DEFIANT); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_STICKY_WEB); MOVE(opponent, MOVE_COURT_CHANGE); }
@@ -203,15 +203,15 @@ SINGLE_BATTLE_TEST("Defiant doesn't activate after Sticky Web lowers Speed if Co
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STICKY_WEB, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_COURT_CHANGE, opponent);
         // Switch-in - Sticky Web activates
-        SEND_IN_MESSAGE("Mankey");
-        MESSAGE("Mankey was caught in a sticky web!");
+        SEND_IN_MESSAGE("Demiveemon");
+        MESSAGE("Demiveemon was caught in a sticky web!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Mankey's Speed fell!");
+        MESSAGE("Demiveemon's Speed fell!");
         // Defiant doesn't activate
         NONE_OF {
             ABILITY_POPUP(player, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-            MESSAGE("Mankey's Attack sharply rose!");
+            MESSAGE("Demiveemon's Attack sharply rose!");
         }
     }
 }
@@ -220,7 +220,7 @@ SINGLE_BATTLE_TEST("Defiant correctly activates after Sticky Web lowers Speed if
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_MANKEY) { Ability(ABILITY_DEFIANT); }
+        PLAYER(SPECIES_DEMIVEEMON) { Ability(ABILITY_DEFIANT); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_STICKY_WEB); MOVE(opponent, MOVE_COURT_CHANGE); }
@@ -230,23 +230,23 @@ SINGLE_BATTLE_TEST("Defiant correctly activates after Sticky Web lowers Speed if
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STICKY_WEB, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_COURT_CHANGE, opponent);
         // Switch-in - Sticky Web activates
-        SEND_IN_MESSAGE("Mankey");
-        MESSAGE("Mankey was caught in a sticky web!");
+        SEND_IN_MESSAGE("Demiveemon");
+        MESSAGE("Demiveemon was caught in a sticky web!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Mankey's Speed fell!");
+        MESSAGE("Demiveemon's Speed fell!");
         // Defiant doesn't activate
         NONE_OF {
             ABILITY_POPUP(player, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-            MESSAGE("Mankey's Attack sharply rose!");
+            MESSAGE("Demiveemon's Attack sharply rose!");
         }
         // Defiant triggers correctly after Sticky Web
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GROWL, opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Mankey's Attack fell!");
+        MESSAGE("Demiveemon's Attack fell!");
         ABILITY_POPUP(player, ABILITY_DEFIANT);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Mankey's Attack sharply rose!");
+        MESSAGE("Demiveemon's Attack sharply rose!");
     }
 }
 
@@ -279,7 +279,7 @@ DOUBLE_BATTLE_TEST("Defiant is activated by Cotton Down for non-ally pokemon")
 <<<<<<< HEAD
         MESSAGE("Foe Demiveemon's Speed fell!");
 =======
-        MESSAGE("The opposing Mankey's Speed fell!");
+        MESSAGE("The opposing Demiveemon's Speed fell!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(playerLeft->statStages[STAT_SPEED], DEFAULT_STAT_STAGE - 1);
@@ -319,11 +319,11 @@ SINGLE_BATTLE_TEST("Defiant activates before White Herb")
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
                 MESSAGE("Demiveemon's White Herb restored its status!");
 =======
-            MESSAGE("Mankey returned its stats to normal using its White Herb!");
+            MESSAGE("Demiveemon returned its stats to normal using its White Herb!");
         } else {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-                MESSAGE("Mankey returned its stats to normal using its White Herb!");
+                MESSAGE("Demiveemon returned its stats to normal using its White Herb!");
 >>>>>>> upstream/master
             }
         }

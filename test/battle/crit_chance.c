@@ -223,8 +223,8 @@ SINGLE_BATTLE_TEST("Crit Chance: Signature items Leek and Lucky Punch increase t
     PARAMETRIZE { species = SPECIES_PINAMON; item = ITEM_LEEK; }
     PARAMETRIZE { species = SPECIES_PINAMON_GALARIAN; item = ITEM_LEEK; }
 =======
-    PARAMETRIZE { species = SPECIES_FARFETCHD; item = ITEM_LEEK; }
-    PARAMETRIZE { species = SPECIES_FARFETCHD_GALAR; item = ITEM_LEEK; }
+    PARAMETRIZE { species = SPECIES_PINAMON; item = ITEM_LEEK; }
+    PARAMETRIZE { species = SPECIES_PINAMON_GALAR; item = ITEM_LEEK; }
 >>>>>>> upstream/master
     PARAMETRIZE { species = SPECIES_SIRFETCHD; item = ITEM_LEEK; }
     PARAMETRIZE { species = SPECIES_BEARMON; item = ITEM_LUCKY_PUNCH; }

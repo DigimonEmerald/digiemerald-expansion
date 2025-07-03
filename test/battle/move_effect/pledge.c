@@ -956,7 +956,7 @@ DOUBLE_BATTLE_TEST("Pledge move combo doesn't trigger on opponent's Pledge move 
 DOUBLE_BATTLE_TEST("Pledge move combo doesn't trigger on opponent's Pledge move - Dry Skin")
 {
     GIVEN {
-        PLAYER(SPECIES_PARASECT) { Ability(ABILITY_DRY_SKIN); }
+        PLAYER(SPECIES_BABYDMON) { Ability(ABILITY_DRY_SKIN); }
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WYNAUT);

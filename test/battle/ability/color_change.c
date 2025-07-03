@@ -59,14 +59,14 @@ SINGLE_BATTLE_TEST("Color Change does not change the type of a dual-type Pokemon
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_SLOWBRO) { Ability(ABILITY_COLOR_CHANGE); }
+        OPPONENT(SPECIES_PICKMON_SILVER) { Ability(ABILITY_COLOR_CHANGE); }
     } WHEN {
         TURN { MOVE(player, MOVE_PSYCHO_CUT); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PSYCHO_CUT, player);
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_COLOR_CHANGE);
-            MESSAGE("The opposing Slowbro's Color Change made it the Psychic type!");
+            MESSAGE("The opposing Pickmon_silver's Color Change made it the Psychic type!");
         }
     }
 }

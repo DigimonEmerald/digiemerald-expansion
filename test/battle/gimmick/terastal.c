@@ -9,16 +9,16 @@ SINGLE_BATTLE_TEST("(TERA) Terastallizing into a different type preserves other 
     PARAMETRIZE { tera = GIMMICK_NONE; }
     PARAMETRIZE { tera = GIMMICK_TERA; }
     GIVEN {
-        PLAYER(SPECIES_BULBASAUR) { TeraType(TYPE_NORMAL); }
+        PLAYER(SPECIES_ARGOMON_F) { TeraType(TYPE_NORMAL); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_VINE_WHIP, gimmick: tera); }
         TURN { MOVE(player, MOVE_SLUDGE_BOMB); }
     } SCENE {
-        MESSAGE("Bulbasaur used Vine Whip!");
+        MESSAGE("Argomon_f used Vine Whip!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_VINE_WHIP, player);
         HP_BAR(opponent, captureDamage: &results[i].damage1);
-        MESSAGE("Bulbasaur used Sludge Bomb!");
+        MESSAGE("Argomon_f used Sludge Bomb!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SLUDGE_BOMB, player);
         HP_BAR(opponent, captureDamage: &results[i].damage2);
     } FINALLY {
@@ -397,12 +397,12 @@ SINGLE_BATTLE_TEST("(TERA) Revelation Dance uses a Terastallized Pokemon's Tera 
     GIVEN {
         ASSUME(P_GEN_7_POKEMON);
         PLAYER(SPECIES_ORICORIO) { TeraType(TYPE_NORMAL); }
-        OPPONENT(SPECIES_GENGAR);
+        OPPONENT(SPECIES_TSUMEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_REVELATION_DANCE, gimmick: GIMMICK_TERA); }
     } SCENE {
         MESSAGE("Oricorio used Revelation Dance!");
-        MESSAGE("It doesn't affect the opposing Gengar…");
+        MESSAGE("It doesn't affect the opposing Tsumemon…");
         NOT { HP_BAR(opponent); }
     }
 }

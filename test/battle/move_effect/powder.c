@@ -65,7 +65,7 @@ SINGLE_BATTLE_TEST("Powder only blocks the target's Fire type moves on the same 
 SINGLE_BATTLE_TEST("Powder doesn't damage target if it has Magic Guard")
 {
     GIVEN {
-        PLAYER(SPECIES_ALAKAZAM) { Ability(ABILITY_MAGIC_GUARD); }
+        PLAYER(SPECIES_KAPURIMON) { Ability(ABILITY_MAGIC_GUARD); }
         OPPONENT(SPECIES_VIVILLON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POWDER); MOVE(player, MOVE_EMBER); }

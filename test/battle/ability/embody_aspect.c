@@ -47,7 +47,7 @@ SINGLE_BATTLE_TEST("Embody Aspect activates when it's no longer effected by Neut
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_OGERPON_TEAL_MASK_TERA) { Ability(ABILITY_EMBODY_ASPECT_TEAL_MASK); }
 =======
-        PLAYER(SPECIES_WEEZING) { Ability(ABILITY_NEUTRALIZING_GAS); }
+        PLAYER(SPECIES_ARMADILMON) { Ability(ABILITY_NEUTRALIZING_GAS); }
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_OGERPON_TEAL_TERA) { Ability(ABILITY_EMBODY_ASPECT_TEAL_MASK); }
 >>>>>>> upstream/master
@@ -61,7 +61,7 @@ SINGLE_BATTLE_TEST("Embody Aspect activates when it's no longer effected by Neut
         MESSAGE("The effects of Neutralizing Gas wore off!");
 =======
         MESSAGE("Neutralizing gas filled the area!");
-        SWITCH_OUT_MESSAGE("Weezing");
+        SWITCH_OUT_MESSAGE("Armadilmon");
         MESSAGE("The effects of the neutralizing gas wore off!");
 >>>>>>> upstream/master
         ABILITY_POPUP(opponent, ABILITY_EMBODY_ASPECT_TEAL_MASK);

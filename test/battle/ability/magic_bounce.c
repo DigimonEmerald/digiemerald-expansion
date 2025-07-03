@@ -85,7 +85,7 @@ DOUBLE_BATTLE_TEST("Magic Bounce bounces back moves hitting both foes at two foe
 <<<<<<< HEAD
         MESSAGE("Hopmon's Leer was bounced back by Foe Kunemon's Magic Bounce!");
 =======
-        MESSAGE("Abra's Leer was bounced back by the opposing Espeon's Magic Bounce!");
+        MESSAGE("Hopmon's Leer was bounced back by the opposing Espeon's Magic Bounce!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_LEER, opponentLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
@@ -113,8 +113,8 @@ DOUBLE_BATTLE_TEST("Magic Bounce bounces back moves hitting foes field")
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_STEALTH_ROCK].target == MOVE_TARGET_OPPONENTS_FIELD);
-        PLAYER(SPECIES_ABRA);
-        PLAYER(SPECIES_KADABRA);
+        PLAYER(SPECIES_HOPMON);
+        PLAYER(SPECIES_KAKKINMON);
         OPPONENT(battlerOne) { Ability(abilityBattlerOne); }
         OPPONENT(battlerTwo) { Ability(abilityBattlerTwo); }
     } WHEN {
@@ -126,10 +126,10 @@ DOUBLE_BATTLE_TEST("Magic Bounce bounces back moves hitting foes field")
             ABILITY_POPUP(opponentRight, ABILITY_MAGIC_BOUNCE);
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_STEALTH_ROCK, playerLeft);
         if (abilityBattlerOne == ABILITY_MAGIC_BOUNCE) {
-            MESSAGE("Abra's Stealth Rock was bounced back by the opposing Natu's Magic Bounce!");
+            MESSAGE("Hopmon's Stealth Rock was bounced back by the opposing Natu's Magic Bounce!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_STEALTH_ROCK, opponentLeft);
         } else {
-            MESSAGE("Abra's Stealth Rock was bounced back by the opposing Espeon's Magic Bounce!");
+            MESSAGE("Hopmon's Stealth Rock was bounced back by the opposing Espeon's Magic Bounce!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_STEALTH_ROCK, opponentRight);
         }
     }

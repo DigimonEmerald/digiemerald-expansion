@@ -22,7 +22,7 @@ SINGLE_BATTLE_TEST("Hyper Cutter prevents intimidate")
 <<<<<<< HEAD
         MESSAGE("Foe Viximon's Hyper Cutter prevents Attack loss!");
 =======
-        MESSAGE("The opposing Krabby's Hyper Cutter prevents Attack loss!");
+        MESSAGE("The opposing Viximon's Hyper Cutter prevents Attack loss!");
 >>>>>>> upstream/master
         HP_BAR(player, captureDamage: &turnTwoHit);
     } THEN {
@@ -43,7 +43,7 @@ SINGLE_BATTLE_TEST("Hyper Cutter prevents Attack stage reduction from moves")
 <<<<<<< HEAD
         MESSAGE("Foe Viximon's Hyper Cutter prevents Attack loss!");
 =======
-        MESSAGE("The opposing Krabby's Hyper Cutter prevents Attack loss!");
+        MESSAGE("The opposing Viximon's Hyper Cutter prevents Attack loss!");
 >>>>>>> upstream/master
     }
 }
@@ -61,7 +61,7 @@ SINGLE_BATTLE_TEST("Hyper Cutter doesn't prevent Attack reduction from burn")
 <<<<<<< HEAD
         MESSAGE("Foe Viximon was burned!");
 =======
-        MESSAGE("The opposing Krabby was burned!");
+        MESSAGE("The opposing Viximon was burned!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(opponent->statStages[STAT_ATK], DEFAULT_STAT_STAGE);
@@ -86,10 +86,10 @@ SINGLE_BATTLE_TEST("Hyper Cutter is ignored by Mold Breaker")
             ABILITY_POPUP(opponent, ABILITY_HYPER_CUTTER);
             MESSAGE("Foe Viximon's Hyper Cutter prevents Attack loss!");
 =======
-        MESSAGE("The opposing Krabby's Attack fell!");
+        MESSAGE("The opposing Viximon's Attack fell!");
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_HYPER_CUTTER);
-            MESSAGE("The opposing Krabby's Hyper Cutter prevents Attack loss!");
+            MESSAGE("The opposing Viximon's Hyper Cutter prevents Attack loss!");
 >>>>>>> upstream/master
         }
     }
@@ -110,8 +110,8 @@ SINGLE_BATTLE_TEST("Hyper Cutter doesn't prevent Attack stage reduction from mov
         MESSAGE("Foe Viximon's Attack fell!");
         MESSAGE("Foe Viximon's Defense fell!");
 =======
-        MESSAGE("The opposing Krabby's Attack fell!");
-        MESSAGE("The opposing Krabby's Defense fell!");
+        MESSAGE("The opposing Viximon's Attack fell!");
+        MESSAGE("The opposing Viximon's Defense fell!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(opponent->statStages[STAT_ATK], DEFAULT_STAT_STAGE - 1);
@@ -134,9 +134,9 @@ SINGLE_BATTLE_TEST("Hyper Cutter doesn't prevent Topsy-Turvy")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOPSY_TURVY, player);
         MESSAGE("Foe Viximon's stat changes were all reversed!");
 =======
-        MESSAGE("The opposing Krabby's Attack sharply rose!");
+        MESSAGE("The opposing Viximon's Attack sharply rose!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOPSY_TURVY, player);
-        MESSAGE("All stat changes on the opposing Krabby were inverted!");
+        MESSAGE("All stat changes on the opposing Viximon were inverted!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(opponent->statStages[STAT_ATK], DEFAULT_STAT_STAGE - 2);
@@ -154,7 +154,7 @@ SINGLE_BATTLE_TEST("Hyper Cutter doesn't prevent Spectral Thief from resetting p
 =======
         ASSUME(gMovesInfo[MOVE_SPECTRAL_THIEF].effect == EFFECT_SPECTRAL_THIEF);
         PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_KRABBY) { Ability(ABILITY_HYPER_CUTTER); }
+        OPPONENT(SPECIES_VIXIMON) { Ability(ABILITY_HYPER_CUTTER); }
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(opponent, MOVE_SWORDS_DANCE); MOVE(player, MOVE_SPECTRAL_THIEF); }
@@ -165,7 +165,7 @@ SINGLE_BATTLE_TEST("Hyper Cutter doesn't prevent Spectral Thief from resetting p
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPECTRAL_THIEF, player);
         MESSAGE("Lopmonx stole the target's boosted stats!");
 =======
-        MESSAGE("The opposing Krabby's Attack sharply rose!");
+        MESSAGE("The opposing Viximon's Attack sharply rose!");
         MESSAGE("Wobbuffet stole the target's boosted stats!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPECTRAL_THIEF, player);
 >>>>>>> upstream/master

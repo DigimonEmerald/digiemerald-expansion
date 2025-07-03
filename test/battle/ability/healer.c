@@ -16,11 +16,11 @@ DOUBLE_BATTLE_TEST("Healer cures adjacent ally's status condition 30% of the tim
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET) { Status1(status); }
-        OPPONENT(SPECIES_CHANSEY) { Ability(ABILITY_HEALER); }
+        OPPONENT(SPECIES_BEARMON) { Ability(ABILITY_HEALER); }
     } WHEN {
         TURN { }
     } SCENE {
-        MESSAGE("The opposing Chansey's Healer cured the opposing Wobbuffet's problem!");
+        MESSAGE("The opposing Bearmon's Healer cured the opposing Wobbuffet's problem!");
     }
 }
 
@@ -38,14 +38,14 @@ DOUBLE_BATTLE_TEST("Healer cures status condition before burn or poison damage i
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); Status1(status); }
-        OPPONENT(SPECIES_CHANSEY) { Ability(ABILITY_HEALER); }
+        OPPONENT(SPECIES_BEARMON) { Ability(ABILITY_HEALER); }
     } WHEN {
         TURN {}
     } SCENE {
         NOT {
             MESSAGE("The opposing Wobbuffet fainted!");
         }
-        MESSAGE("The opposing Chansey's Healer cured Foe Wobbuffet's problem!");
+        MESSAGE("The opposing Bearmon's Healer cured Foe Wobbuffet's problem!");
     }
 }
 

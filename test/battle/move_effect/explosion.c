@@ -70,7 +70,7 @@ SINGLE_BATTLE_TEST("Explosion causes the user to faint even if it has no effect"
 <<<<<<< HEAD
         MESSAGE("It doesn't affect Foe Tokomon_x…");
 =======
-        MESSAGE("It doesn't affect the opposing Gastly…");
+        MESSAGE("It doesn't affect the opposing Tokomon_x…");
 >>>>>>> upstream/master
         NOT HP_BAR(opponent);
         MESSAGE("Lopmonx fainted!");
@@ -94,7 +94,7 @@ DOUBLE_BATTLE_TEST("Explosion causes everyone to faint in a double battle")
 <<<<<<< HEAD
         MESSAGE("Foe Hopmon fainted!");
 =======
-        MESSAGE("The opposing Abra fainted!");
+        MESSAGE("The opposing Hopmon fainted!");
 >>>>>>> upstream/master
         HP_BAR(playerRight, hp: 0);
         MESSAGE("Exveemon fainted!");
@@ -103,7 +103,7 @@ DOUBLE_BATTLE_TEST("Explosion causes everyone to faint in a double battle")
         MESSAGE("Foe Kakkinmon fainted!");
         MESSAGE("Lopmonx fainted!");
 =======
-        MESSAGE("The opposing Kadabra fainted!");
+        MESSAGE("The opposing Kakkinmon fainted!");
         MESSAGE("Wobbuffet fainted!");
 >>>>>>> upstream/master
     }
@@ -113,7 +113,7 @@ SINGLE_BATTLE_TEST("Explosion is blocked by Ability Damp")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_GOLDUCK) { Ability(ABILITY_DAMP); }
+        OPPONENT(SPECIES_DEMMERAMON) { Ability(ABILITY_DAMP); }
     } WHEN {
         TURN { MOVE(player, MOVE_EXPLOSION); }
     } SCENE {
@@ -123,9 +123,9 @@ SINGLE_BATTLE_TEST("Explosion is blocked by Ability Damp")
         }
         ABILITY_POPUP(opponent, ABILITY_DAMP);
 <<<<<<< HEAD
-        MESSAGE("Foe Golduck's Damp prevents Lopmonx from using Explosion!");
+        MESSAGE("Foe Demmeramon's Damp prevents Lopmonx from using Explosion!");
 =======
-        MESSAGE("The opposing Golduck's Damp prevents Wobbuffet from using Explosion!");
+        MESSAGE("The opposing Demmeramon's Damp prevents Wobbuffet from using Explosion!");
 >>>>>>> upstream/master
     }
 }
@@ -150,12 +150,12 @@ DOUBLE_BATTLE_TEST("Explosion boosted by Galvanize is correctly blocked by Volt 
 {
     GIVEN {
 <<<<<<< HEAD
-        PLAYER(SPECIES_GEODUDE_ALOLAN) { Ability(ABILITY_GALVANIZE); }
+        PLAYER(SPECIES_MONIMON_ALOLAN) { Ability(ABILITY_GALVANIZE); }
         PLAYER(SPECIES_EXVEEMON) { HP(1); }
         OPPONENT(SPECIES_GUILMON) { Ability(ABILITY_VOLT_ABSORB); }
         OPPONENT(SPECIES_LOPMONX) { HP(1); }
 =======
-        PLAYER(SPECIES_GEODUDE_ALOLA) { Ability(ABILITY_GALVANIZE); }
+        PLAYER(SPECIES_MONIMON_ALOLA) { Ability(ABILITY_GALVANIZE); }
         PLAYER(SPECIES_WYNAUT) { HP(1); }
         OPPONENT(SPECIES_LANTURN) { Ability(ABILITY_VOLT_ABSORB); }
         OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
@@ -163,7 +163,7 @@ DOUBLE_BATTLE_TEST("Explosion boosted by Galvanize is correctly blocked by Volt 
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EXPLOSION); }
     } SCENE {
-        MESSAGE("Geodude used Explosion!");
+        MESSAGE("Monimon used Explosion!");
         HP_BAR(playerLeft, hp: 0);
         ABILITY_POPUP(opponentLeft, ABILITY_VOLT_ABSORB);
         NOT HP_BAR(opponentLeft, hp: 0);
@@ -175,6 +175,6 @@ DOUBLE_BATTLE_TEST("Explosion boosted by Galvanize is correctly blocked by Volt 
 =======
         MESSAGE("The opposing Wobbuffet fainted!");
 >>>>>>> upstream/master
-        MESSAGE("Geodude fainted!");
+        MESSAGE("Monimon fainted!");
     }
 }
