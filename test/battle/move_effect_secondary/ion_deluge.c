@@ -22,7 +22,7 @@ SINGLE_BATTLE_TEST("Ion Duldge turns normal moves into electric for the remainde
 <<<<<<< HEAD:test/battle/move_effect/plasma_fists.c
         MESSAGE("Foe Lopmonx used Tackle!");
 =======
-        MESSAGE("The opposing Wobbuffet used Tackle!");
+        MESSAGE("The opposing Lopmonx used Tackle!");
 >>>>>>> upstream/master:test/battle/move_effect_secondary/ion_deluge.c
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         MESSAGE("It's super effective!");
@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Plasma Fists turns normal moves into electric for the remain
 <<<<<<< HEAD:test/battle/move_effect/plasma_fists.c
         MESSAGE("Foe Lopmonx used Tackle!");
 =======
-        MESSAGE("The opposing Wobbuffet used Tackle!");
+        MESSAGE("The opposing Lopmonx used Tackle!");
 >>>>>>> upstream/master:test/battle/move_effect_secondary/ion_deluge.c
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         MESSAGE("It's super effective!");
@@ -58,9 +58,9 @@ SINGLE_BATTLE_TEST("Plasma Fists turns normal moves into electric for the remain
 SINGLE_BATTLE_TEST("Plasma Fists does not set up Ion Deluge if it does not connect")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_PHANPY].types[0] == TYPE_GROUND || gSpeciesInfo[SPECIES_PHANPY].types[1] == TYPE_GROUND);
+        ASSUME(gSpeciesInfo[SPECIES_PULSEMON].types[0] == TYPE_GROUND || gSpeciesInfo[SPECIES_PULSEMON].types[1] == TYPE_GROUND);
         PLAYER(SPECIES_VIXIMON);
-        OPPONENT(SPECIES_PHANPY);
+        OPPONENT(SPECIES_PULSEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_PLASMA_FISTS); MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
@@ -69,7 +69,7 @@ SINGLE_BATTLE_TEST("Plasma Fists does not set up Ion Deluge if it does not conne
             ANIMATION(ANIM_TYPE_MOVE, MOVE_PLASMA_FISTS, player);
             MESSAGE("A deluge of ions showers the battlefield!");
         }
-        MESSAGE("The opposing Phanpy used Tackle!");
+        MESSAGE("The opposing Pulsemon used Tackle!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         NOT MESSAGE("It's super effective!");
     }
@@ -127,7 +127,7 @@ SINGLE_BATTLE_TEST("Plasma Fists turns normal type dynamax-moves into electric t
 <<<<<<< HEAD:test/battle/move_effect/plasma_fists.c
         MESSAGE("Foe Lopmonx used Max Lightning!");
 =======
-        MESSAGE("The opposing Wobbuffet used Max Lightning!");
+        MESSAGE("The opposing Lopmonx used Max Lightning!");
 >>>>>>> upstream/master:test/battle/move_effect_secondary/ion_deluge.c
         MESSAGE("It's super effective!");
     }

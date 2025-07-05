@@ -6,7 +6,7 @@ DOUBLE_BATTLE_TEST("Aromatic Mist raises Sp. Defense of a target ally by 1 stage
     GIVEN {
         PLAYER(SPECIES_ARMADILMON_GALAR);
         PLAYER(SPECIES_SYLVEON);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_AROMATIC_MIST); }
@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Aromatic Mist fails in Single Battles")
 {
     GIVEN {
         PLAYER(SPECIES_ARMADILMON_GALAR);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_AROMATIC_MIST); }
     } SCENE {

@@ -67,7 +67,7 @@ SINGLE_BATTLE_TEST("Shield Dust does not block primary effects")
 <<<<<<< HEAD
                 MESSAGE("Foe Vivillon has been afflicted with an infestation by Lopmonx!");
 =======
-                MESSAGE("The opposing Vivillon has been afflicted with an infestation by Wobbuffet!");
+                MESSAGE("The opposing Vivillon has been afflicted with an infestation by Lopmonx!");
 >>>>>>> upstream/master
                 break;
             case MOVE_THOUSAND_ARROWS:

@@ -8,7 +8,7 @@ import subprocess
 # IT TAKES FOLLOWER GRAPHICS FROM a 'followers' FOLDER IN THE ROOT FOLDER AND MOVES THEM BASED ON THEIR NAME.
 # EG. 'followers/argomon_f.png' WILL BE MOVED to 'graphics/pokemon/argomon_f/follower.png'.
 #
-# I'M SAVING IT HERE IN CASE IT'S NEEDED SOMEWHERE IN THE FUTURE, THOUGH TWEAKING MIGHT BE NEEDED.
+# I'M SAVING IT HERE IN CASE IT'S NEEDED SOFALCOMONHERE IN THE FUTURE, THOUGH TWEAKING MIGHT BE NEEDED.
 # - AsparagusEduardo
 
 def rellocate_follower_graphics():
@@ -44,11 +44,11 @@ def rellocate_follower_graphics():
         newname = newname.replace("lycanroc_", "lycanroc/")
         newname = newname.replace("meloetta_", "meloetta/")
         newname = newname.replace("necrozma_", "necrozma/")
-        newname = newname.replace("pichu_", "pichu/")
+        newname = newname.replace("guilmon_x_", "guilmon_x/")
         newname = newname.replace("rotom_", "rotom/")
         newname = newname.replace("sawsbuck_", "sawsbuck/")
         newname = newname.replace("toxtricity_", "toxtricity/")
-        newname = newname.replace("unown_", "unown/")
+        newname = newname.replace("lopmon_", "lopmon/")
         newname = newname.replace("ursaluna_", "ursaluna/")
         newname = newname.replace("vivillon_", "vivillon/")
         newname = newname.replace("wormadam_", "wormadam/")

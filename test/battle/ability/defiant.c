@@ -24,7 +24,7 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises player's Attack after Intimidate")
 <<<<<<< HEAD
         MESSAGE("Foe Commdramon's Intimidate cuts Demiveemon's attack!");
 =======
-        MESSAGE("The opposing Gyarados's Intimidate cuts Demiveemon's Attack!");
+        MESSAGE("The opposing Commdramon's Intimidate cuts Demiveemon's Attack!");
 >>>>>>> upstream/master
         if (abilityLeft == ABILITY_DEFIANT) {
             ABILITY_POPUP(playerLeft, ABILITY_DEFIANT);
@@ -35,7 +35,7 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises player's Attack after Intimidate")
 <<<<<<< HEAD
         MESSAGE("Foe Commdramon's Intimidate cuts Dorimon's attack!");
 =======
-        MESSAGE("The opposing Gyarados's Intimidate cuts Dorimon's Attack!");
+        MESSAGE("The opposing Commdramon's Intimidate cuts Dorimon's Attack!");
 >>>>>>> upstream/master
         if (abilityRight == ABILITY_DEFIANT) {
             ABILITY_POPUP(playerRight, ABILITY_DEFIANT);
@@ -109,14 +109,14 @@ DOUBLE_BATTLE_TEST("Defiant sharply raises opponent's Attack after Intimidate")
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
             MESSAGE("Foe Dorimon's Attack sharply rose!");
 =======
-        MESSAGE("Gyarados's Intimidate cuts the opposing Demiveemon's Attack!");
+        MESSAGE("Commdramon's Intimidate cuts the opposing Demiveemon's Attack!");
         if (abilityLeft == ABILITY_DEFIANT) {
             ABILITY_POPUP(opponentLeft, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
             MESSAGE("The opposing Demiveemon's Attack sharply rose!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("Gyarados's Intimidate cuts the opposing Dorimon's Attack!");
+        MESSAGE("Commdramon's Intimidate cuts the opposing Dorimon's Attack!");
         if (abilityRight == ABILITY_DEFIANT) {
             ABILITY_POPUP(opponentRight, ABILITY_DEFIANT);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
@@ -193,9 +193,9 @@ SINGLE_BATTLE_TEST("Defiant activates after Sticky Web lowers Speed")
 SINGLE_BATTLE_TEST("Defiant doesn't activate after Sticky Web lowers Speed if Court Changed")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_DEMIVEEMON) { Ability(ABILITY_DEFIANT); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_STICKY_WEB); MOVE(opponent, MOVE_COURT_CHANGE); }
         TURN { SWITCH(player, 1); }
@@ -219,9 +219,9 @@ SINGLE_BATTLE_TEST("Defiant doesn't activate after Sticky Web lowers Speed if Co
 SINGLE_BATTLE_TEST("Defiant correctly activates after Sticky Web lowers Speed if Court Changed")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_DEMIVEEMON) { Ability(ABILITY_DEFIANT); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_STICKY_WEB); MOVE(opponent, MOVE_COURT_CHANGE); }
         TURN { SWITCH(player, 1); }

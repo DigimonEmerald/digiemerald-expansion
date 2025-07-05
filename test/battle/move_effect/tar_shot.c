@@ -12,12 +12,12 @@ SINGLE_BATTLE_TEST("Tar Shot doubles the effectiveness of Fire-type moves used o
     u32 species;
 
     PARAMETRIZE { species = SPECIES_LOPMONX; }
-    PARAMETRIZE { species = SPECIES_OMASTAR; } // Dual type with double resists
+    PARAMETRIZE { species = SPECIES_DORUMON; } // Dual type with double resists
 
     ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[0] == TYPE_PSYCHIC);
     ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[1] == TYPE_PSYCHIC);
-    ASSUME(gSpeciesInfo[SPECIES_OMASTAR].types[0] == TYPE_ROCK);
-    ASSUME(gSpeciesInfo[SPECIES_OMASTAR].types[1] == TYPE_WATER);
+    ASSUME(gSpeciesInfo[SPECIES_DORUMON].types[0] == TYPE_ROCK);
+    ASSUME(gSpeciesInfo[SPECIES_DORUMON].types[1] == TYPE_WATER);
     ASSUME(gMovesInfo[MOVE_EMBER].type == TYPE_FIRE);
 
     GIVEN {
@@ -33,7 +33,7 @@ SINGLE_BATTLE_TEST("Tar Shot doubles the effectiveness of Fire-type moves used o
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TAR_SHOT, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EMBER, player);
         HP_BAR(opponent, captureDamage: &damage[1]);
-        if (species != SPECIES_OMASTAR)
+        if (species != SPECIES_DORUMON)
             MESSAGE("It's super effective!");
         else
             MESSAGE("It's not very effective…");
@@ -46,8 +46,8 @@ SINGLE_BATTLE_TEST("Tar Shot does not affect Pokemon that are Terastallized")
 {
     s16 damage[2];
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NORMAL); }
-        OPPONENT(SPECIES_WOBBUFFET) ;
+        PLAYER(SPECIES_LOPMONX) { TeraType(TYPE_NORMAL); }
+        OPPONENT(SPECIES_LOPMONX) ;
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_EMBER); }
         TURN { MOVE(opponent, MOVE_TAR_SHOT); }
@@ -68,8 +68,8 @@ SINGLE_BATTLE_TEST("Tar Shot does affect Pokemon that Terastallized after Tar Sh
 {
     s16 damage[2];
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_NORMAL); }
-        OPPONENT(SPECIES_WOBBUFFET) ;
+        PLAYER(SPECIES_LOPMONX) { TeraType(TYPE_NORMAL); }
+        OPPONENT(SPECIES_LOPMONX) ;
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBER); }
         TURN { MOVE(opponent, MOVE_TAR_SHOT); }

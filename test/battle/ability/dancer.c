@@ -93,7 +93,7 @@ SINGLE_BATTLE_TEST("Dancer doesn't trigger if the original user flinches")
 <<<<<<< HEAD
         MESSAGE("Lopmonx flinched!");
 =======
-        MESSAGE("Wobbuffet flinched and couldn't move!");
+        MESSAGE("Lopmonx flinched and couldn't move!");
 >>>>>>> upstream/master
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_DANCER);
@@ -121,7 +121,7 @@ DOUBLE_BATTLE_TEST("Dancer still triggers if another dancer flinches")
 <<<<<<< HEAD
         MESSAGE("Lopmonx flinched!");
 =======
-        MESSAGE("Wobbuffet flinched and couldn't move!");
+        MESSAGE("Lopmonx flinched and couldn't move!");
 >>>>>>> upstream/master
         NONE_OF {
             MESSAGE("Lopmonx used Dragon Dance!");
@@ -159,10 +159,10 @@ DOUBLE_BATTLE_TEST("Dancer doesn't trigger on a snatched move")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_DRAGON_DANCE].danceMove == TRUE);
         ASSUME(gMovesInfo[MOVE_SNATCH].effect == EFFECT_SNATCH);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_ORICORIO);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_SNATCH); MOVE(playerRight, MOVE_DRAGON_DANCE); }
     } SCENE {
@@ -184,10 +184,10 @@ DOUBLE_BATTLE_TEST("Dancer triggers on Instructed dance moves")
         ASSUME(gMovesInfo[MOVE_DRAGON_DANCE].danceMove == TRUE);
         ASSUME(gMovesInfo[MOVE_DRAGON_DANCE].instructBanned == FALSE);
         ASSUME(gMovesInfo[MOVE_INSTRUCT].effect == EFFECT_INSTRUCT);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_ORICORIO);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerRight, MOVE_DRAGON_DANCE); MOVE(playerLeft, MOVE_INSTRUCT, target: playerRight); }
     } SCENE {
@@ -211,10 +211,10 @@ DOUBLE_BATTLE_TEST("Dancer-called move doesn't update move to be Instructed")
         ASSUME(gMovesInfo[MOVE_DRAGON_DANCE].danceMove == TRUE);
         ASSUME(gMovesInfo[MOVE_TACKLE].instructBanned == FALSE);
         ASSUME(gMovesInfo[MOVE_INSTRUCT].effect == EFFECT_INSTRUCT);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_ORICORIO);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerLeft); MOVE(playerRight, MOVE_DRAGON_DANCE); MOVE(opponentRight, MOVE_INSTRUCT, target: opponentLeft); }
     } SCENE {

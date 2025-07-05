@@ -123,8 +123,8 @@ DOUBLE_BATTLE_TEST("A spread move will do correct damage to the second mon if th
     GIVEN {
         PLAYER(SPECIES_REGIROCK);
         PLAYER(SPECIES_REGIROCK);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(200); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX) { HP(200); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ROCK_SLIDE); }
         TURN { MOVE(playerLeft, MOVE_ROCK_SLIDE); MOVE(playerRight, MOVE_ROCK_SLIDE); }

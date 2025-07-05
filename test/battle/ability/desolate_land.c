@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Desolate Land blocks damaging Water-type moves")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Water Gun!");
 =======
-        MESSAGE("The opposing Wobbuffet used Water Gun!");
+        MESSAGE("The opposing Lopmonx used Water Gun!");
 >>>>>>> upstream/master
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_WATER_GUN, opponent);
         MESSAGE("The Water-type attack evaporated in the extremely harsh sunlight!");
@@ -27,7 +27,7 @@ SINGLE_BATTLE_TEST("Desolate Land blocks damaging Water-type moves")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Water Gun!");
 =======
-        MESSAGE("The opposing Wobbuffet used Water Gun!");
+        MESSAGE("The opposing Lopmonx used Water Gun!");
 >>>>>>> upstream/master
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_WATER_GUN, opponent);
         MESSAGE("The Water-type attack evaporated in the extremely harsh sunlight!");
@@ -53,7 +53,7 @@ DOUBLE_BATTLE_TEST("Desolate Land blocks damaging Water-type moves and prints th
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Surf!");
 =======
-        MESSAGE("The opposing Wobbuffet used Surf!");
+        MESSAGE("The opposing Lopmonx used Surf!");
 >>>>>>> upstream/master
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SURF, opponentLeft);
         MESSAGE("The Water-type attack evaporated in the extremely harsh sunlight!");
@@ -78,7 +78,7 @@ SINGLE_BATTLE_TEST("Desolate Land does not block a move if pokemon is asleep and
         MESSAGE("Foe Lopmonx is fast asleep.");
 =======
         NOT MESSAGE("The Water-type attack evaporated in the extremely harsh sunlight!");
-        MESSAGE("The opposing Wobbuffet is fast asleep.");
+        MESSAGE("The opposing Lopmonx is fast asleep.");
 >>>>>>> upstream/master
     }
 }

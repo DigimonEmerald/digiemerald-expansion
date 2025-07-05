@@ -41,10 +41,10 @@ DOUBLE_BATTLE_TEST("Court Change swaps entry hazards used by the opponent")
         MESSAGE("Foe Lopmonx was poisoned!");
         MESSAGE("Foe Lopmonx was caught in a Sticky Web!");
 =======
-        MESSAGE("The opposing Wobbuffet used Sticky Web!");
-        MESSAGE("The opposing Wobbuffet used Stealth Rock!");
-        MESSAGE("The opposing Wobbuffet used Spikes!");
-        MESSAGE("The opposing Wobbuffet used Toxic Spikes!");
+        MESSAGE("The opposing Lopmonx used Sticky Web!");
+        MESSAGE("The opposing Lopmonx used Stealth Rock!");
+        MESSAGE("The opposing Lopmonx used Spikes!");
+        MESSAGE("The opposing Lopmonx used Toxic Spikes!");
         MESSAGE("Wynaut used Court Change!");
         MESSAGE("Wynaut swapped the battle effects affecting each side of the field!");
         SEND_IN_MESSAGE("Wynaut");
@@ -54,11 +54,11 @@ DOUBLE_BATTLE_TEST("Court Change swaps entry hazards used by the opponent")
             MESSAGE("Wynaut was poisoned!");
             MESSAGE("Wynaut was caught in a sticky web!");
         }
-        MESSAGE("2 sent out Wobbuffet!");
-        MESSAGE("The opposing Wobbuffet was hurt by the spikes!");
-        MESSAGE("Pointed stones dug into the opposing Wobbuffet!");
-        MESSAGE("The opposing Wobbuffet was poisoned!");
-        MESSAGE("The opposing Wobbuffet was caught in a sticky web!");
+        MESSAGE("2 sent out Lopmonx!");
+        MESSAGE("The opposing Lopmonx was hurt by the spikes!");
+        MESSAGE("Pointed stones dug into the opposing Lopmonx!");
+        MESSAGE("The opposing Lopmonx was poisoned!");
+        MESSAGE("The opposing Lopmonx was caught in a sticky web!");
 >>>>>>> upstream/master
     }
 }
@@ -97,17 +97,17 @@ DOUBLE_BATTLE_TEST("Court Change swaps entry hazards used by the player")
             MESSAGE("Foe Exveemon was poisoned!");
             MESSAGE("Foe Exveemon was caught in a Sticky Web!");
 =======
-        MESSAGE("Wobbuffet used Sticky Web!");
-        MESSAGE("Wobbuffet used Stealth Rock!");
-        MESSAGE("Wobbuffet used Spikes!");
-        MESSAGE("Wobbuffet used Toxic Spikes!");
+        MESSAGE("Lopmonx used Sticky Web!");
+        MESSAGE("Lopmonx used Stealth Rock!");
+        MESSAGE("Lopmonx used Spikes!");
+        MESSAGE("Lopmonx used Toxic Spikes!");
         MESSAGE("The opposing Wynaut used Court Change!");
         MESSAGE("The opposing Wynaut swapped the battle effects affecting each side of the field!");
-        SEND_IN_MESSAGE("Wobbuffet");
-        MESSAGE("Wobbuffet was hurt by the spikes!");
-        MESSAGE("Pointed stones dug into Wobbuffet!");
-        MESSAGE("Wobbuffet was poisoned!");
-        MESSAGE("Wobbuffet was caught in a sticky web!");
+        SEND_IN_MESSAGE("Lopmonx");
+        MESSAGE("Lopmonx was hurt by the spikes!");
+        MESSAGE("Pointed stones dug into Lopmonx!");
+        MESSAGE("Lopmonx was poisoned!");
+        MESSAGE("Lopmonx was caught in a sticky web!");
         MESSAGE("2 sent out Wynaut!");
         NONE_OF {
             MESSAGE("The opposing Wynaut was hurt by the spikes!");
@@ -156,12 +156,12 @@ DOUBLE_BATTLE_TEST("Court Change used by the player swaps Mist, Safeguard, Auror
         MESSAGE("Ally's Light Screen wore off!");
 =======
         MESSAGE("Wynaut used Snowscape!");
-        MESSAGE("The opposing Wobbuffet used Mist!");
-        MESSAGE("The opposing Wobbuffet used Safeguard!");
-        MESSAGE("The opposing Wobbuffet used Aurora Veil!");
-        MESSAGE("The opposing Wobbuffet used Reflect!");
-        MESSAGE("The opposing Wobbuffet used Light Screen!");
-        MESSAGE("The opposing Wobbuffet used Tailwind!");
+        MESSAGE("The opposing Lopmonx used Mist!");
+        MESSAGE("The opposing Lopmonx used Safeguard!");
+        MESSAGE("The opposing Lopmonx used Aurora Veil!");
+        MESSAGE("The opposing Lopmonx used Reflect!");
+        MESSAGE("The opposing Lopmonx used Light Screen!");
+        MESSAGE("The opposing Lopmonx used Tailwind!");
         MESSAGE("Wynaut used Court Change!");
         MESSAGE("Wynaut swapped the battle effects affecting each side of the field!");
         // The effects now end for the player side.        
@@ -204,12 +204,12 @@ DOUBLE_BATTLE_TEST("Court Change used by the opponent swaps Mist, Safeguard, Aur
         MESSAGE("Foe Exveemon used Court Change!");
         MESSAGE("Foe Exveemon swapped the battle effects affecting each side!");
 =======
-        MESSAGE("Wobbuffet used Mist!");
-        MESSAGE("Wobbuffet used Safeguard!");
-        MESSAGE("Wobbuffet used Aurora Veil!");
-        MESSAGE("Wobbuffet used Reflect!");
-        MESSAGE("Wobbuffet used Light Screen!");
-        MESSAGE("Wobbuffet used Tailwind!");
+        MESSAGE("Lopmonx used Mist!");
+        MESSAGE("Lopmonx used Safeguard!");
+        MESSAGE("Lopmonx used Aurora Veil!");
+        MESSAGE("Lopmonx used Reflect!");
+        MESSAGE("Lopmonx used Light Screen!");
+        MESSAGE("Lopmonx used Tailwind!");
         MESSAGE("The opposing Wynaut used Court Change!");
         MESSAGE("The opposing Wynaut swapped the battle effects affecting each side of the field!");
 >>>>>>> upstream/master

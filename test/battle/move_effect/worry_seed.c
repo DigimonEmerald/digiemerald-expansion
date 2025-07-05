@@ -9,7 +9,7 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Worry Seed replaces target's ability with Insomnia")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
+        PLAYER(SPECIES_LOPMONX) { Ability(ABILITY_TELEPATHY); }
         OPPONENT(SPECIES_BOTAMON) { Ability(ABILITY_BLAZE); }
     }WHEN {
         TURN { MOVE(player, MOVE_WORRY_SEED); }
@@ -24,7 +24,7 @@ SINGLE_BATTLE_TEST("Worry Seed replaces target's ability with Insomnia")
 DOUBLE_BATTLE_TEST("Worry Seed fails if the target already has Insomnia")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
+        PLAYER(SPECIES_LOPMONX) { Ability(ABILITY_TELEPATHY); }
         PLAYER(SPECIES_BOTAMON) { Ability(ABILITY_BLAZE); }
         OPPONENT(SPECIES_ARGOMON_F) { Ability(ABILITY_OVERGROW); }
         OPPONENT(SPECIES_CONOMON) { Ability(ABILITY_TORRENT); }
@@ -63,7 +63,7 @@ SINGLE_BATTLE_TEST("Worry Seed fails if target has an ability that can't be over
     PARAMETRIZE { species = SPECIES_TATSUGIRI; ability = ABILITY_COMMANDER; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
+        PLAYER(SPECIES_LOPMONX) { Ability(ABILITY_TELEPATHY); }
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_WORRY_SEED); }

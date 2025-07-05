@@ -254,7 +254,7 @@ SINGLE_BATTLE_TEST("Player Pokemon can be further poisoned with Toxic spikes aft
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Toxic Spikes!");
 =======
-        MESSAGE("The opposing Wobbuffet used Toxic Spikes!");
+        MESSAGE("The opposing Lopmonx used Toxic Spikes!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC_SPIKES, opponent);
         MESSAGE("Poison spikes were scattered on the ground all around your team!");
@@ -262,7 +262,7 @@ SINGLE_BATTLE_TEST("Player Pokemon can be further poisoned with Toxic spikes aft
 <<<<<<< HEAD
         MESSAGE("Go! Lopmonx!");
 =======
-        SEND_IN_MESSAGE("Wobbuffet");
+        SEND_IN_MESSAGE("Lopmonx");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, player);
         STATUS_ICON(player, poison: TRUE);
@@ -271,7 +271,7 @@ SINGLE_BATTLE_TEST("Player Pokemon can be further poisoned with Toxic spikes aft
 <<<<<<< HEAD
             MESSAGE("Lopmonx's Pecha Berry cured poison!");
 =======
-            MESSAGE("Wobbuffet's Pecha Berry cured its poison!");
+            MESSAGE("Lopmonx's Pecha Berry cured its poison!");
 >>>>>>> upstream/master
         } else {
             MESSAGE("Lopmonx's Lum Berry cured its poison problem!");
@@ -291,13 +291,13 @@ SINGLE_BATTLE_TEST("Player Pokemon can be further poisoned with Toxic spikes aft
 DOUBLE_BATTLE_TEST("Lum Berry correctly cures all battlers if multiple fainted the previous turn")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_DATIRIMON) { HP(1); }
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_LUM_BERRY); Status1(STATUS1_BURN); }
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_LUM_BERRY); Status1(STATUS1_POISON); }
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_LUM_BERRY); Status1(STATUS1_BURN); }
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_LUM_BERRY); Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_DATIRIMON) { HP(1); }
         OPPONENT(SPECIES_DATIRIMON) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_LUM_BERRY); Status1(STATUS1_PARALYSIS); }
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_LUM_BERRY); Status1(STATUS1_PARALYSIS); }
         OPPONENT(SPECIES_DATIRIMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EXPLOSION);

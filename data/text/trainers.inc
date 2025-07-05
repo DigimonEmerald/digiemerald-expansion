@@ -1598,7 +1598,7 @@ Route112_Text_BryantPostBattle:
 Route112_Text_ShaylaIntro:
 	.string "Oh, aren't you an adorable TRAINER!\n"
 	.string "Please, I need a romantic battle!\l"
-	.string "I'm somewhat decent!$"
+	.string "I'm sofalcomonhat decent!$"
 
 Route112_Text_ShaylaDefeat:
 	.string "Oh, how strong you are!\n"
@@ -2749,7 +2749,7 @@ Route119_Text_GregDefeat:
 	.string "You're pretty strong!$"
 
 Route119_Text_GregPostBattle:
-	.string "Until you go away somewhere, we'll\n"
+	.string "Until you go away sofalcomonhere, we'll\n"
 	.string "keep on mimicking your every move.$"
 
 Route119_Text_KentIntro:

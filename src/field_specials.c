@@ -2178,11 +2178,11 @@ void ShowFrontierManiacMessage(void)
             winStreak = gSaveBlock2Ptr->frontier.towerWinStreaks[facility][FRONTIER_LVL_OPEN];
         break;
     case FRONTIER_MANIAC_DOME:
-        if (gSaveBlock2Ptr->frontier.domeWinStreaks[FRONTIER_MODE_SINGLES][FRONTIER_LVL_50]
-            >= gSaveBlock2Ptr->frontier.domeWinStreaks[FRONTIER_MODE_SINGLES][FRONTIER_LVL_OPEN])
-            winStreak = gSaveBlock2Ptr->frontier.domeWinStreaks[FRONTIER_MODE_SINGLES][FRONTIER_LVL_50];
+        if (gSaveBlock2Ptr->frontier.dofalcomoninStreaks[FRONTIER_MODE_SINGLES][FRONTIER_LVL_50]
+            >= gSaveBlock2Ptr->frontier.dofalcomoninStreaks[FRONTIER_MODE_SINGLES][FRONTIER_LVL_OPEN])
+            winStreak = gSaveBlock2Ptr->frontier.dofalcomoninStreaks[FRONTIER_MODE_SINGLES][FRONTIER_LVL_50];
         else
-            winStreak = gSaveBlock2Ptr->frontier.domeWinStreaks[FRONTIER_MODE_SINGLES][FRONTIER_LVL_OPEN];
+            winStreak = gSaveBlock2Ptr->frontier.dofalcomoninStreaks[FRONTIER_MODE_SINGLES][FRONTIER_LVL_OPEN];
         break;
     case FRONTIER_MANIAC_FACTORY:
         if (gSaveBlock2Ptr->frontier.factoryWinStreaks[FRONTIER_MODE_SINGLES][FRONTIER_LVL_50]

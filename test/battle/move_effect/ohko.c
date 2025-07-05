@@ -25,8 +25,8 @@ SINGLE_BATTLE_TEST("OHKO moves can hit semi-invulnerable mons when the user has 
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SHEER_COLD].effect == EFFECT_OHKO);
-        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_NO_GUARD); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Ability(ABILITY_NO_GUARD); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_FLY); }
         TURN { MOVE(player, MOVE_SHEER_COLD); }

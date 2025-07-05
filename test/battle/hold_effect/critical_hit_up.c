@@ -32,11 +32,11 @@ SINGLE_BATTLE_TEST("Lansat Berry raises the holder's critical-hit-ratio by two s
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
             MESSAGE("Lopmonx used Lansat Berry to get pumped!");
 =======
-                MESSAGE("Wobbuffet used the Lansat Berry to get pumped!");
+                MESSAGE("Lopmonx used the Lansat Berry to get pumped!");
             }
         } else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Wobbuffet used the Lansat Berry to get pumped!");
+            MESSAGE("Lopmonx used the Lansat Berry to get pumped!");
 >>>>>>> upstream/master
         }
     }
@@ -76,7 +76,7 @@ SINGLE_BATTLE_TEST("Lansat Berry raises the holder's critical-hit-ratio by two s
 <<<<<<< HEAD
         MESSAGE("Lopmonx used Lansat Berry to get pumped!");
 =======
-        MESSAGE("Wobbuffet used the Lansat Berry to get pumped!");
+        MESSAGE("Lopmonx used the Lansat Berry to get pumped!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         MESSAGE("A critical hit!");

@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("Aegislash reverts to Shield Form upon switching out")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->species, SPECIES_AEGISLASH_SHIELD);

@@ -42,7 +42,7 @@ SINGLE_BATTLE_TEST("Enigma Berry does nothing if not hit by super effective move
 <<<<<<< HEAD
             MESSAGE("Tinpet's Enigma Berry restored health!");
 =======
-            MESSAGE("Mightyena restored its health using its Enigma Berry!");
+            MESSAGE("Tinpet restored its health using its Enigma Berry!");
 >>>>>>> upstream/master
         }
     }
@@ -74,9 +74,9 @@ SINGLE_BATTLE_TEST("Enigma Berry does nothing if Heal Block applies")
 DOUBLE_BATTLE_TEST("Enigma Berry doesn't trigger if partner was hit")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT) { Item(ITEM_ENIGMA_BERRY); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft); }

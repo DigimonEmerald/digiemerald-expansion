@@ -2088,7 +2088,7 @@ void CreateTask_LinkMysteryGiftWithFriend(u32 activity)
 static void Task_CardOrNewsWithFriend(u8 taskId)
 {
     s32 id;
-    struct WindowTemplate listWinTemplate, playerNameWinTemplate;
+    struct WindowTemplate listWinTemplate, playerNafalcomoninTemplate;
     struct WirelessLink_Group *data = sWirelessLinkMain.group;
 
     switch (data->state)
@@ -2116,9 +2116,9 @@ static void Task_CardOrNewsWithFriend(u8 taskId)
         listWinTemplate.paletteNum = 12;
         data->listWindowId = AddWindow(&listWinTemplate);
 
-        playerNameWinTemplate = sWindowTemplate_PlayerNameAndId;
-        playerNameWinTemplate.paletteNum = 12;
-        data->playerNameAndIdWindowId = AddWindow(&playerNameWinTemplate);
+        playerNafalcomoninTemplate = sWindowTemplate_PlayerNameAndId;
+        playerNafalcomoninTemplate.paletteNum = 12;
+        data->playerNameAndIdWindowId = AddWindow(&playerNafalcomoninTemplate);
 
         MG_DrawTextBorder(data->listWindowId);
         gMultiuseListMenuTemplate = sListMenuTemplate_UnionRoomGroups;
@@ -3660,7 +3660,7 @@ static u8 CreateTradeBoardWindow(const struct WindowTemplate * template)
     u8 windowId = AddWindow(template);
     DrawStdWindowFrame(windowId, FALSE);
     FillWindowPixelBuffer(windowId, PIXEL_FILL(15));
-    PrintUnionRoomText(windowId, FONT_NORMAL, sText_NameWantedOfferLv, 8, 1, UR_COLOR_TRADE_BOARD_OTHER);
+    PrintUnionRoomText(windowId, FONT_NORMAL, sText_NafalcomonantedOfferLv, 8, 1, UR_COLOR_TRADE_BOARD_OTHER);
     CopyWindowToVram(windowId, COPYWIN_GFX);
     PutWindowTilemap(windowId);
     return windowId;

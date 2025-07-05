@@ -55,7 +55,7 @@ SINGLE_BATTLE_TEST("Drizzle fails if Desolate Land is active")
 
     GIVEN {
         PLAYER(SPECIES_GROUDON) { Item(item); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_RAIN_DANCE); }
     } SCENE {

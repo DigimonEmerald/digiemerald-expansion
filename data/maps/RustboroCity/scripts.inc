@@ -602,7 +602,7 @@ RustboroCity_EventScript_ReturnGoods::
 	msgbox RustboroCity_Text_YouGotItThankYou, MSGBOX_DEFAULT
 	giveitem ITEM_GREAT_BALL
 	call_if_eq VAR_RESULT, FALSE, RustboroCity_EventScript_BagFull
-	msgbox RustboroCity_Text_PleaseComeWithMe, MSGBOX_DEFAULT
+	msgbox RustboroCity_Text_PleaseCofalcomonithMe, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_RETURNED_DEVON_GOODS
 	setflag FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1
@@ -1130,7 +1130,7 @@ RustboroCity_Text_YoureLoadedWithItems:
 	.string "You're loaded with items.\n"
 	.string "I can't give you this GREAT BALL.$"
 
-RustboroCity_Text_PleaseComeWithMe:
+RustboroCity_Text_PleaseCofalcomonithMe:
 	.string "Excuse me, please!\n"
 	.string "Please come with me!$"
 

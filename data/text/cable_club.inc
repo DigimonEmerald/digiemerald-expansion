@@ -1,4 +1,4 @@
-CableClub_Text_WelcomeWhichCableClubService:
+CableClub_Text_WelcofalcomonhichCableClubService:
 	.string "Welcome to the POKéMON CABLE\n"
 	.string "CLUB.\p"
 	.string "Which of our services do you wish\n"
@@ -331,7 +331,7 @@ MossdeepCity_GameCorner_1F_Text_RetryPlease:
 	.string "Could you retry this from the start\n"
 	.string "again, please?$"
 
-CableClub_Text_WelcomeWhichDirectCornerRoom:
+CableClub_Text_WelcofalcomonhichDirectCornerRoom:
 	.string "Welcome to the POKéMON WIRELESS\n"
 	.string "CLUB DIRECT CORNER.\p"
 	.string "You may interact directly with\n"

@@ -34,9 +34,9 @@ DOUBLE_BATTLE_TEST("Switch-in abilities trigger in Speed Order at the battle's s
 
     GIVEN {
         PLAYER(SPECIES_KYOGRE) { Speed(spdPlayer1); Ability(ABILITY_DRIZZLE); }
-        PLAYER(SPECIES_GYARADOS) { Speed(spdPlayer2); Ability(ABILITY_INTIMIDATE); }
-        OPPONENT(SPECIES_PORYGON2) { Speed(spdOpponent1); Ability(ABILITY_DOWNLOAD); }
-        OPPONENT(SPECIES_PINSIR) { Speed(spdOpponent2); Ability(ABILITY_MOLD_BREAKER); }
+        PLAYER(SPECIES_COMMDRAMON) { Speed(spdPlayer2); Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_RENAMON_X) { Speed(spdOpponent1); Ability(ABILITY_DOWNLOAD); }
+        OPPONENT(SPECIES_TYUTYUMON) { Speed(spdOpponent2); Ability(ABILITY_MOLD_BREAKER); }
     } WHEN {
         TURN { ; }
     } SCENE {
@@ -70,7 +70,7 @@ SINGLE_BATTLE_TEST("Switch-in abilities trigger in Speed Order after post-KO swi
         PLAYER(SPECIES_LOPMONX) { HP(1); Speed(1); }
         PLAYER(SPECIES_PAFUMON) { Speed(spdPlayer); Ability(ABILITY_INTIMIDATE); }
         OPPONENT(SPECIES_LOPMONX) { HP(1); Speed(1); }
-        OPPONENT(SPECIES_PORYGON2) { Speed(spdOpponent); Ability(ABILITY_DOWNLOAD); }
+        OPPONENT(SPECIES_RENAMON_X) { Speed(spdOpponent); Ability(ABILITY_DOWNLOAD); }
     } WHEN {
         TURN { MOVE(player, MOVE_EXPLOSION); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
         TURN { ; }
@@ -97,16 +97,16 @@ DOUBLE_BATTLE_TEST("Switch-in abilities trigger in Speed Order after post-KO swi
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { HP(1); Speed(1); }
         PLAYER(SPECIES_LOPMONX) { HP(1); Speed(1); }
-        PLAYER(SPECIES_TYRANITAR) { Speed(spdPlayer1); Ability(ABILITY_SAND_STREAM); }
-        PLAYER(SPECIES_GYARADOS) { Speed(spdPlayer2); Ability(ABILITY_INTIMIDATE); }
+        PLAYER(SPECIES_SPADAMON) { Speed(spdPlayer1); Ability(ABILITY_SAND_STREAM); }
+        PLAYER(SPECIES_COMMDRAMON) { Speed(spdPlayer2); Ability(ABILITY_INTIMIDATE); }
 <<<<<<< HEAD
         OPPONENT(SPECIES_LOPMONX) { HP(1); Speed(1); }
         OPPONENT(SPECIES_LOPMONX) { HP(1); Speed(1); }
         OPPONENT(SPECIES_ARMADILMON_GALARIAN) { Speed(spdOpponent1); Ability(ABILITY_MISTY_SURGE); }
         OPPONENT(SPECIES_RELEMON_ALOLAN) { Speed(spdOpponent2); Ability(ABILITY_SNOW_WARNING); }
 =======
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); Speed(1); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); Speed(1); }
+        OPPONENT(SPECIES_LOPMONX) { HP(1); Speed(1); }
+        OPPONENT(SPECIES_LOPMONX) { HP(1); Speed(1); }
         OPPONENT(SPECIES_ARMADILMON_GALAR) { Speed(spdOpponent1); Ability(ABILITY_MISTY_SURGE); }
         OPPONENT(SPECIES_RELEMON_ALOLA) { Speed(spdOpponent2); Ability(ABILITY_SNOW_WARNING); }
 >>>>>>> upstream/master

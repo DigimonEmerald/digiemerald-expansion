@@ -22,8 +22,8 @@ SINGLE_BATTLE_TEST("Cute Charm inflicts infatuation on contact")
             MESSAGE("Foe Puyomon's Cute Charm infatuated Lopmonx!");
             MESSAGE("Lopmonx is in love with Foe Puyomon!");
 =======
-            MESSAGE("The opposing Puyomon's Cute Charm infatuated Wobbuffet!");
-            MESSAGE("Wobbuffet is in love with the opposing Puyomon!");
+            MESSAGE("The opposing Puyomon's Cute Charm infatuated Lopmonx!");
+            MESSAGE("Lopmonx is in love with the opposing Puyomon!");
 >>>>>>> upstream/master
         } else {
             NONE_OF {
@@ -33,8 +33,8 @@ SINGLE_BATTLE_TEST("Cute Charm inflicts infatuation on contact")
                 MESSAGE("Foe Puyomon's Cute Charm infatuated Lopmonx!");
                 MESSAGE("Lopmonx is in love with Foe Puyomon!");
 =======
-                MESSAGE("The opposing Puyomon's Cute Charm infatuated Wobbuffet!");
-                MESSAGE("Wobbuffet is in love with the opposing Puyomon!");
+                MESSAGE("The opposing Puyomon's Cute Charm infatuated Lopmonx!");
+                MESSAGE("Lopmonx is in love with the opposing Puyomon!");
 >>>>>>> upstream/master
             }
         }
@@ -62,7 +62,7 @@ SINGLE_BATTLE_TEST("Cute Charm triggers 30% of the time")
     GIVEN {
         ASSUME(B_ABILITY_TRIGGER_CHANCE >= GEN_4);
         ASSUME(gMovesInfo[MOVE_TACKLE].makesContact);
-        PLAYER(SPECIES_WOBBUFFET) { Gender(MON_MALE); }
+        PLAYER(SPECIES_LOPMONX) { Gender(MON_MALE); }
         OPPONENT(SPECIES_PUYOMON) { Gender(MON_FEMALE); Ability(ABILITY_CUTE_CHARM); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
@@ -70,7 +70,7 @@ SINGLE_BATTLE_TEST("Cute Charm triggers 30% of the time")
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_CUTE_CHARM);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_INFATUATION, player);
-        MESSAGE("The opposing Puyomon's Cute Charm infatuated Wobbuffet!");
-        MESSAGE("Wobbuffet is in love with the opposing Puyomon!");
+        MESSAGE("The opposing Puyomon's Cute Charm infatuated Lopmonx!");
+        MESSAGE("Lopmonx is in love with the opposing Puyomon!");
     }
 }

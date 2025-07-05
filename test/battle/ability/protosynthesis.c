@@ -159,7 +159,7 @@ SINGLE_BATTLE_TEST("Protosynthesis boosts Special Defense 4th in case of a stat 
 SINGLE_BATTLE_TEST("Protosynthesis activates in Sun before Booster Energy")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); Item(ITEM_BOOSTER_ENERGY); }
         OPPONENT(SPECIES_SAKUMON) { Ability(ABILITY_DROUGHT); }
     } WHEN {
@@ -175,7 +175,7 @@ SINGLE_BATTLE_TEST("Protosynthesis activates in Sun before Booster Energy")
 SINGLE_BATTLE_TEST("Protosynthesis doesn't activate for a transformed battler")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); Item(ITEM_BOOSTER_ENERGY); }
         OPPONENT(SPECIES_SAKUMON) { Ability(ABILITY_DROUGHT); Item(ITEM_BOOSTER_ENERGY); }
     } WHEN {

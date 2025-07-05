@@ -244,7 +244,7 @@ CableClub_Movement_PlayerApproachCounter:
 	step_end
 
 CableClub_EventScript_WelcomeToCableClub::
-	message CableClub_Text_WelcomeWhichCableClubService
+	message CableClub_Text_WelcofalcomonhichCableClubService
 	waitmessage
 	delay 28
 	goto CableClub_EventScript_SelectCableClubRoom
@@ -960,7 +960,7 @@ CableClub_EventScript_DirectCornerAttendant::
 	goto_if_eq VAR_RESULT, TRUE, CableClub_EventScript_AbortLinkPlayerHasBadEgg
 	specialvar VAR_RESULT, IsWirelessAdapterConnected
 	goto_if_eq VAR_RESULT, FALSE, CableClub_EventScript_WelcomeToCableClub
-	message CableClub_Text_WelcomeWhichDirectCornerRoom
+	message CableClub_Text_WelcofalcomonhichDirectCornerRoom
 	waitmessage
 	delay 28
 	goto CableClub_EventScript_DirectCornerSelectService

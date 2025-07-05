@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Battle Bond does not transform species other than Greninja")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx fainted!");
 =======
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmonx fainted!");
 >>>>>>> upstream/master
         NONE_OF {
             ABILITY_POPUP(player, ABILITY_BATTLE_BOND);
@@ -61,7 +61,7 @@ SINGLE_BATTLE_TEST("Battle Bond transforms player's Greninja - Singles")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx fainted!");
 =======
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmonx fainted!");
 >>>>>>> upstream/master
         if (monsCountOpponent != 1) {
             ABILITY_POPUP(player, ABILITY_BATTLE_BOND);

@@ -735,12 +735,12 @@ LilycoveCity_Text_ExplainBerryBlender:
 	.string "its condition will improve by a lot.$"
 
 LilycoveCity_Text_HeardTowerCalledSkyPillar:
-	.string "I heard there's a tower somewhere out\n"
+	.string "I heard there's a tower sofalcomonhere out\n"
 	.string "on the sea routes.\p"
 	.string "It's called the SKY PILLAR, I hear.$"
 
 LilycoveCity_Text_SawTallTowerOnRoute131:
-	.string "I saw this tall tower somewhere\n"
+	.string "I saw this tall tower sofalcomonhere\n"
 	.string "around ROUTE 131.\p"
 	.string "Could that possibly be…?$"
 

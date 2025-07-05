@@ -6,7 +6,7 @@ SINGLE_BATTLE_TEST("Ice Face blocks physical moves, changing Eiscue into its Noi
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].category == DAMAGE_CATEGORY_PHYSICAL);
         PLAYER(SPECIES_EISCUE);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
@@ -21,7 +21,7 @@ SINGLE_BATTLE_TEST("Ice Face does not block special moves, Eiscue stays in Ice F
         ASSUME(gMovesInfo[MOVE_TACKLE].category == DAMAGE_CATEGORY_PHYSICAL);
         ASSUME(gMovesInfo[MOVE_EMBER].category == DAMAGE_CATEGORY_SPECIAL);
         PLAYER(SPECIES_EISCUE);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBER); }
     } SCENE {
@@ -39,7 +39,7 @@ SINGLE_BATTLE_TEST("Ice Face is restored if hail or snow begins while Noice Face
         ASSUME(gMovesInfo[MOVE_SNOWSCAPE].effect == EFFECT_SNOWSCAPE);
         ASSUME(gMovesInfo[MOVE_HAIL].effect == EFFECT_HAIL);
         PLAYER(SPECIES_EISCUE);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
         TURN { MOVE(opponent, move); }
@@ -64,8 +64,8 @@ SINGLE_BATTLE_TEST("Ice Face is restored if Noice Face Eiscue is sent in while h
         ASSUME(gMovesInfo[MOVE_SNOWSCAPE].effect == EFFECT_SNOWSCAPE);
         ASSUME(gMovesInfo[MOVE_HAIL].effect == EFFECT_HAIL);
         PLAYER(SPECIES_EISCUE);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_TACKLE); }
         TURN { SWITCH(player, 1); MOVE(opponent, move); }
@@ -90,7 +90,7 @@ SINGLE_BATTLE_TEST("Ice Face is not restored if Eiscue changes into Noice Face f
         ASSUME(gMovesInfo[MOVE_SNOWSCAPE].effect == EFFECT_SNOWSCAPE);
         ASSUME(gMovesInfo[MOVE_HAIL].effect == EFFECT_HAIL);
         PLAYER(SPECIES_EISCUE) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, move); MOVE(opponent, MOVE_TACKLE); }
         TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_TACKLE); }
@@ -107,8 +107,8 @@ SINGLE_BATTLE_TEST("Ice Face form change persists after switching out")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].category == DAMAGE_CATEGORY_PHYSICAL);
         PLAYER(SPECIES_EISCUE) { HP(1); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
         TURN { SWITCH(player, 1); MOVE(opponent, MOVE_CELEBRATE); }
@@ -146,7 +146,7 @@ SINGLE_BATTLE_TEST("Ice Face is not restored if hail or snow and Eiscue are alre
         ASSUME(gMovesInfo[MOVE_SNOWSCAPE].effect == EFFECT_SNOWSCAPE);
         ASSUME(gMovesInfo[MOVE_HAIL].effect == EFFECT_HAIL);
         PLAYER(SPECIES_EISCUE);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); MOVE(player, move); }

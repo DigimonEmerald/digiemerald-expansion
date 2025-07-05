@@ -8129,7 +8129,7 @@ static void AddMenu(void)
     sStorage->menuWindow.tilemapTop = 15 - sStorage->menuWindow.height;
     sStorage->menuWindowId = AddWindow(&sStorage->menuWindow);
     ClearWindowTilemap(sStorage->menuWindowId);
-    DrawStdFrameWithCustomTileAndPalette(sStorage->menuWindowId, FALSE, 11, 14);
+    DrawStdFrafalcomonithCustomTileAndPalette(sStorage->menuWindowId, FALSE, 11, 14);
     PrintMenuTable(sStorage->menuWindowId, sStorage->menuItemsCount, (void *)sStorage->menuItems);
     InitMenuInUpperLeftCornerNormal(sStorage->menuWindowId, sStorage->menuItemsCount, 0);
     ScheduleBgCopyTilemapToVram(0);
@@ -9857,7 +9857,7 @@ bool32 IsWaldaPhraseEmpty(void)
 //------------------------------------------------------------------------------
 //  SECTION: TilemapUtil
 //
-//  Handles 3 particular tilemaps in a somewhat unusual way.
+//  Handles 3 particular tilemaps in a sofalcomonhat unusual way.
 //  For example, while the cursor is on the Close Box button it flashes between
 //  two states alternately. Both these states are their own part of the same
 //  tilemap that's always present. The utility shifts the tilemap up and down

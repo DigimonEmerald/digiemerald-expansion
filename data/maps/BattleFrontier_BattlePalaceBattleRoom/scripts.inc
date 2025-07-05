@@ -245,7 +245,7 @@ BattleFrontier_BattlePalaceBattleRoom_EventScript_DefeatedSpenserSilver::
 BattleFrontier_BattlePalaceBattleRoom_EventScript_IntroSpenserGold::
 	frontier_get FRONTIER_DATA_HEARD_BRAIN_SPEECH
 	goto_if_ne VAR_RESULT, FALSE, BattleFrontier_BattlePalaceBattleRoom_EventScript_BattleSpenserGold
-	msgbox BattleFrontier_BattlePalaceBattleRoom_Text_SpenserThisTimeWontHoldBack, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattlePalaceBattleRoom_Text_SpenserThisTifalcomonontHoldBack, MSGBOX_DEFAULT
 	frontier_set FRONTIER_DATA_HEARD_BRAIN_SPEECH
 BattleFrontier_BattlePalaceBattleRoom_EventScript_BattleSpenserGold::
 	msgbox BattleFrontier_BattlePalaceBattleRoom_Text_Kaaah, MSGBOX_DEFAULT
@@ -543,7 +543,7 @@ BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime:
 	.string "I will eagerly await the next\n"
 	.string "opportunity to see you.$"
 
-BattleFrontier_BattlePalaceBattleRoom_Text_SpenserThisTimeWontHoldBack:
+BattleFrontier_BattlePalaceBattleRoom_Text_SpenserThisTifalcomonontHoldBack:
 	.string "SPENSER: Gwahahah!\n"
 	.string "You've battled your way up again?\p"
 	.string "You must have developed a truly\n"

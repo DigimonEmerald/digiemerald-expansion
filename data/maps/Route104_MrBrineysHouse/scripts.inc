@@ -67,7 +67,7 @@ Route104_MrBrineysHouse_EventScript_DeclineDeliverySailing::
 	end
 
 Route104_MrBrineysHouse_EventScript_DeclineSailing::
-	msgbox Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail, MSGBOX_DEFAULT
+	msgbox Route104_MrBrineysHouse_Text_TellFalcomonheneverYouWantToSail, MSGBOX_DEFAULT
 	release
 	end
 
@@ -150,7 +150,7 @@ Route104_MrBrineysHouse_Text_WhereAreWeBound:
 	.string "For you, I'll go out to sea anytime!\p"
 	.string "Now, my friend, where are we bound?$"
 
-Route104_MrBrineysHouse_Text_TellMeWheneverYouWantToSail:
+Route104_MrBrineysHouse_Text_TellFalcomonheneverYouWantToSail:
 	.string "MR. BRINEY: Is that so?\n"
 	.string "Well, PEEKO owes her life to you.\p"
 	.string "You just go on and tell me whenever\n"

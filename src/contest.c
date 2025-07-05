@@ -93,9 +93,9 @@ static void Task_ContestReturnToField(u8);
 static void FieldCB_ContestReturnToField(void);
 static bool8 IsPlayerLinkLeader(void);
 static void PrintContestantTrainerName(u8);
-static void PrintContestantTrainerNameWithColor(u8, u8);
+static void PrintContestantTrainerNafalcomonithColor(u8, u8);
 static void PrintContestantMonName(u8);
-static void PrintContestantMonNameWithColor(u8, u8);
+static void PrintContestantMonNafalcomonithColor(u8, u8);
 static u8 CreateJudgeSprite(void);
 static u8 CreateJudgeSpeechBubbleSprite(void);
 static u8 CreateContestantSprite(u16, bool8, u32, u32);
@@ -3121,10 +3121,10 @@ static u8 *Contest_CopyStringWithColor(const u8 *string, u8 color)
 
 static void PrintContestantTrainerName(u8 contestant)
 {
-    PrintContestantTrainerNameWithColor(contestant, contestant + CONTESTANT_TEXT_COLOR_START);
+    PrintContestantTrainerNafalcomonithColor(contestant, contestant + CONTESTANT_TEXT_COLOR_START);
 }
 
-static void PrintContestantTrainerNameWithColor(u8 contestant, u8 color)
+static void PrintContestantTrainerNafalcomonithColor(u8 contestant, u8 color)
 {
     u8 buffer[32];
     s32 offset;
@@ -3140,10 +3140,10 @@ static void PrintContestantTrainerNameWithColor(u8 contestant, u8 color)
 
 static void PrintContestantMonName(u8 contestant)
 {
-    PrintContestantMonNameWithColor(contestant, contestant + CONTESTANT_TEXT_COLOR_START);
+    PrintContestantMonNafalcomonithColor(contestant, contestant + CONTESTANT_TEXT_COLOR_START);
 }
 
-static void PrintContestantMonNameWithColor(u8 contestant, u8 color)
+static void PrintContestantMonNafalcomonithColor(u8 contestant, u8 color)
 {
     Contest_CopyStringWithColor(gContestMons[contestant].nickname, color);
     Contest_PrintTextToBg0WindowAt(gContestantTurnOrder[contestant], gDisplayedStringBattle, 5, 1, GetFontIdToFit(gContestMons[contestant].nickname, FONT_NARROW, 0, 50));

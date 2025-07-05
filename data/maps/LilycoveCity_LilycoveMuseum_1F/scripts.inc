@@ -34,7 +34,7 @@ LilycoveCity_LilycoveMuseum_1F_EventScript_NotInterested::
 	end
 
 LilycoveCity_LilycoveMuseum_1F_EventScript_InterestedInPaintings::
-	msgbox LilycoveCity_LilycoveMuseum_1F_Text_ExcellentCanYouComeWithMe, MSGBOX_SIGN
+	msgbox LilycoveCity_LilycoveMuseum_1F_Text_ExcellentCanYouCofalcomonithMe, MSGBOX_SIGN
 	applymovement LOCALID_CURATOR, LilycoveCity_LilycoveMuseum_1F_Movement_CuratorEnterStairs
 	waitmovement 0
 	removeobject LOCALID_CURATOR
@@ -190,7 +190,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_HonoredYoudVisitInSpiteOfThat:
 	.string "I'm honored that you would visit\n"
 	.string "us in spite of that.$"
 
-LilycoveCity_LilycoveMuseum_1F_Text_ExcellentCanYouComeWithMe:
+LilycoveCity_LilycoveMuseum_1F_Text_ExcellentCanYouCofalcomonithMe:
 	.string "Ah, excellent!\n"
 	.string "You do like paintings!\p"
 	.string "Then, may I ask you to come with me?$"

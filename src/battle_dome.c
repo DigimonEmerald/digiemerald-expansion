@@ -125,7 +125,7 @@ static void CB2_TourneyTree(void);
 static void VblankCb_TourneyInfoCard(void);
 static void DisplayMatchInfoOnCard(u8, u8);
 static void DisplayTrainerInfoOnCard(u8, u8);
-static int BufferDomeWinString(u8, u8 *);
+static int BufferDofalcomoninString(u8, u8 *);
 static void CopyDomeTrainerName(u8 *, u16);
 static void HblankCb_TourneyTree(void);
 static void VblankCb_TourneyTree(void);
@@ -154,7 +154,7 @@ static void ResetSketchedMoves(void);
 static void RestoreDomePlayerPartyHeldItems(void);
 static void ReduceDomePlayerPartyToSelectedMons(void);
 static void GetPlayerSeededBeforeOpponent(void);
-static void BufferLastDomeWinnerName(void);
+static void BufferLastDofalcomoninnerName(void);
 static void InitRandomTourneyTreeResults(void);
 static void InitDomeTrainers(void);
 
@@ -781,7 +781,7 @@ static void (* const sBattleDomeFunctions[])(void) =
     [BATTLE_DOME_FUNC_RESTORE_HELD_ITEMS]       = RestoreDomePlayerPartyHeldItems,
     [BATTLE_DOME_FUNC_REDUCE_PARTY]             = ReduceDomePlayerPartyToSelectedMons,
     [BATTLE_DOME_FUNC_COMPARE_SEEDS]            = GetPlayerSeededBeforeOpponent,
-    [BATTLE_DOME_FUNC_GET_WINNER_NAME]          = BufferLastDomeWinnerName,
+    [BATTLE_DOME_FUNC_GET_WINNER_NAME]          = BufferLastDofalcomoninnerName,
     [BATTLE_DOME_FUNC_INIT_RESULTS_TREE]        = InitRandomTourneyTreeResults,
     [BATTLE_DOME_FUNC_INIT_TRAINERS]            = InitDomeTrainers,
 };
@@ -1007,7 +1007,7 @@ static const u8 *const sBattleDomeMatchNumberTexts[DOME_TOURNAMENT_MATCHES_COUNT
     BattleDome_Text_FinalMatch,
 };
 
-static const u8 *const sBattleDomeWinTexts[] =
+static const u8 *const sBattleDofalcomoninTexts[] =
 {
     [DOME_TEXT_NO_WINNER_YET]    = BattleDome_Text_LetTheBattleBegin,
     [DOME_TEXT_WON_USING_MOVE]   = BattleDome_Text_TrainerWonUsingMove,
@@ -1779,7 +1779,7 @@ static void InitDomeChallenge(void)
     gSaveBlock2Ptr->frontier.challengePaused = FALSE;
     gSaveBlock2Ptr->frontier.disableRecordBattle = FALSE;
     if (!(gSaveBlock2Ptr->frontier.winStreakActiveFlags & sWinStreakFlags[battleMode][lvlMode]))
-        gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode] = 0;
+        gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode] = 0;
 
     SetDynamicWarp(0, gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, WARP_ID_NONE);
     gTrainerBattleOpponent_A = 0;
@@ -1793,7 +1793,7 @@ static void GetDomeData(void)
     switch (gSpecialVar_0x8005)
     {
     case DOME_DATA_WIN_STREAK:
-        gSpecialVar_Result = gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode];
+        gSpecialVar_Result = gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode];
         break;
     case DOME_DATA_WIN_STREAK_ACTIVE:
         gSpecialVar_Result = ((gSaveBlock2Ptr->frontier.winStreakActiveFlags & sWinStreakFlags[battleMode][lvlMode]) != 0);
@@ -1861,7 +1861,7 @@ static void SetDomeData(void)
     switch (gSpecialVar_0x8005)
     {
     case DOME_DATA_WIN_STREAK:
-        gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode] = gSpecialVar_0x8006;
+        gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode] = gSpecialVar_0x8006;
         break;
     case DOME_DATA_WIN_STREAK_ACTIVE:
         if (gSpecialVar_0x8006)
@@ -2605,13 +2605,13 @@ static void IncrementDomeStreaks(void)
     u8 lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
     u8 battleMode = VarGet(VAR_FRONTIER_BATTLE_MODE);
 
-    if (gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode] < 999)
-        gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode]++;
+    if (gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode] < 999)
+        gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode]++;
     if (gSaveBlock2Ptr->frontier.domeTotalChampionships[battleMode][lvlMode] < 999)
         gSaveBlock2Ptr->frontier.domeTotalChampionships[battleMode][lvlMode]++;
 
-    if (gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode] > gSaveBlock2Ptr->frontier.domeRecordWinStreaks[battleMode][lvlMode])
-        gSaveBlock2Ptr->frontier.domeRecordWinStreaks[battleMode][lvlMode] = gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode];
+    if (gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode] > gSaveBlock2Ptr->frontier.domeRecordWinStreaks[battleMode][lvlMode])
+        gSaveBlock2Ptr->frontier.domeRecordWinStreaks[battleMode][lvlMode] = gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode];
 }
 
 // For showing the opponent info card of the upcoming trainer
@@ -3128,7 +3128,7 @@ static void Task_HandleInfoCardInput(u8 taskId)
                 if (sInfoCard->pos == 0)
                 {
                     matchNo = gTasks[taskId2].data[1] - 16;
-                    BufferDomeWinString(matchNo, sInfoCard->tournamentIds);
+                    BufferDofalcomoninString(matchNo, sInfoCard->tournamentIds);
                     gBattle_BG2_X = 0;
                     gBattle_BG2_Y = DISPLAY_HEIGHT * 2;
                     trainerTourneyId = sInfoCard->tournamentIds[0];
@@ -3137,7 +3137,7 @@ static void Task_HandleInfoCardInput(u8 taskId)
                 else if (sInfoCard->pos == 2)
                 {
                     matchNo = gTasks[taskId2].data[1] - 16;
-                    BufferDomeWinString(matchNo, sInfoCard->tournamentIds);
+                    BufferDofalcomoninString(matchNo, sInfoCard->tournamentIds);
                     gBattle_BG2_X = 0;
                     gBattle_BG2_Y = DISPLAY_HEIGHT * 2;
                     trainerTourneyId = sInfoCard->tournamentIds[1];
@@ -3244,7 +3244,7 @@ static void Task_HandleInfoCardInput(u8 taskId)
                 if (sInfoCard->pos == 0)
                 {
                     matchNo = gTasks[taskId2].data[1] - 16;
-                    BufferDomeWinString(matchNo, sInfoCard->tournamentIds);
+                    BufferDofalcomoninString(matchNo, sInfoCard->tournamentIds);
                     gBattle_BG2_X = 0;
                     gBattle_BG2_Y = DISPLAY_HEIGHT;
                     trainerTourneyId = sInfoCard->tournamentIds[0];
@@ -3253,7 +3253,7 @@ static void Task_HandleInfoCardInput(u8 taskId)
                 else if (sInfoCard->pos == 2)
                 {
                     matchNo = gTasks[taskId2].data[1] - 16;
-                    BufferDomeWinString(matchNo, sInfoCard->tournamentIds);
+                    BufferDofalcomoninString(matchNo, sInfoCard->tournamentIds);
                     gBattle_BG2_X = 0;
                     gBattle_BG2_Y = DISPLAY_HEIGHT;
                     trainerTourneyId = sInfoCard->tournamentIds[1];
@@ -4573,7 +4573,7 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
     Free(allocatedArray);
 }
 
-static int BufferDomeWinString(u8 matchNum, u8 *tournamentIds)
+static int BufferDofalcomoninString(u8 matchNum, u8 *tournamentIds)
 {
     int i;
     u8 tournamentId;
@@ -4614,10 +4614,10 @@ static int BufferDomeWinString(u8 matchNum, u8 *tournamentIds)
             if (DOME_TRAINERS[tournamentId].eliminatedAt == sCompetitorRangeByMatch[matchNum][2])
             {
                 // Set initial winStringId offset
-                StringCopy(gStringVar2, GetMoveName(gSaveBlock2Ptr->frontier.domeWinningMoves[tournamentId]));
+                StringCopy(gStringVar2, GetMoveName(gSaveBlock2Ptr->frontier.dofalcomoninningMoves[tournamentId]));
                 winStringId = DOME_TRAINERS[tournamentId].forfeited * 2; // (DOME_TEXT_WON_USING_MOVE - 1) or (DOME_TEXT_WON_ON_FORFEIT - 1)
 
-                if (gSaveBlock2Ptr->frontier.domeWinningMoves[tournamentId] == MOVE_NONE && DOME_TRAINERS[tournamentId].forfeited == FALSE)
+                if (gSaveBlock2Ptr->frontier.dofalcomoninningMoves[tournamentId] == MOVE_NONE && DOME_TRAINERS[tournamentId].forfeited == FALSE)
                     winStringId = DOME_TEXT_WON_NO_MOVES - 1;
             }
             else
@@ -4666,7 +4666,7 @@ static void DisplayMatchInfoOnCard(u8 flags, u8 matchNo)
         y = -DISPLAY_HEIGHT;
 
     // Copy trainers information to handy arrays.
-    winStringId = BufferDomeWinString(matchNo, sInfoCard->tournamentIds);
+    winStringId = BufferDofalcomoninString(matchNo, sInfoCard->tournamentIds);
     for (i = 0; i < NUM_INFOCARD_TRAINERS; i++)
     {
         tournamentIds[i] = sInfoCard->tournamentIds[i];
@@ -4795,7 +4795,7 @@ static void DisplayMatchInfoOnCard(u8 flags, u8 matchNo)
     textPrinter.fgColor = TEXT_DYNAMIC_COLOR_5;
     textPrinter.bgColor = TEXT_COLOR_TRANSPARENT;
     textPrinter.shadowColor = TEXT_DYNAMIC_COLOR_4;
-    StringExpandPlaceholders(gStringVar4, sBattleDomeWinTexts[winStringId]);
+    StringExpandPlaceholders(gStringVar4, sBattleDofalcomoninTexts[winStringId]);
     textPrinter.currentChar = gStringVar4;
     textPrinter.windowId = windowId + WIN_MATCH_WIN_TEXT;
     textPrinter.fontId = FONT_NORMAL;
@@ -5063,7 +5063,7 @@ static void ResolveDomeRoundWinners(void)
     {
         DOME_TRAINERS[TrainerIdToTournamentId(gTrainerBattleOpponent_A)].isEliminated = TRUE;
         DOME_TRAINERS[TrainerIdToTournamentId(gTrainerBattleOpponent_A)].eliminatedAt = gSaveBlock2Ptr->frontier.curChallengeBattleNum;
-        gSaveBlock2Ptr->frontier.domeWinningMoves[TrainerIdToTournamentId(gTrainerBattleOpponent_A)] = gBattleResults.lastUsedMovePlayer;
+        gSaveBlock2Ptr->frontier.dofalcomoninningMoves[TrainerIdToTournamentId(gTrainerBattleOpponent_A)] = gBattleResults.lastUsedMovePlayer;
 
         // If the player's match was the final one, no NPC vs NPC matches to decide
         if (gSaveBlock2Ptr->frontier.curChallengeBattleNum < DOME_FINAL)
@@ -5073,7 +5073,7 @@ static void ResolveDomeRoundWinners(void)
     {
         DOME_TRAINERS[TrainerIdToTournamentId(TRAINER_PLAYER)].isEliminated = TRUE;
         DOME_TRAINERS[TrainerIdToTournamentId(TRAINER_PLAYER)].eliminatedAt = gSaveBlock2Ptr->frontier.curChallengeBattleNum;
-        gSaveBlock2Ptr->frontier.domeWinningMoves[TrainerIdToTournamentId(TRAINER_PLAYER)] = gBattleResults.lastUsedMoveOpponent;
+        gSaveBlock2Ptr->frontier.dofalcomoninningMoves[TrainerIdToTournamentId(TRAINER_PLAYER)] = gBattleResults.lastUsedMoveOpponent;
 
         if (gBattleOutcome == B_OUTCOME_FORFEITED || gSpecialVar_0x8005 == DOME_PLAYER_RETIRED)
             DOME_TRAINERS[TrainerIdToTournamentId(TRAINER_PLAYER)].forfeited = TRUE;
@@ -5162,7 +5162,7 @@ static u16 GetWinningMove(int winnerTournamentId, int loserTournamentId, u8 roun
     {
         for (i = 0; i < roundId - 1; i++)
         {
-            if (gSaveBlock2Ptr->frontier.domeWinningMoves[GetOpposingNPCTournamentIdByRound(winnerTournamentId, i)] == moveIds[j])
+            if (gSaveBlock2Ptr->frontier.dofalcomoninningMoves[GetOpposingNPCTournamentIdByRound(winnerTournamentId, i)] == moveIds[j])
                 break;
         }
         if (i != roundId - 1)
@@ -5697,7 +5697,7 @@ static void GetPlayerSeededBeforeOpponent(void)
         gSpecialVar_Result = 2;
 }
 
-static void BufferLastDomeWinnerName(void)
+static void BufferLastDofalcomoninnerName(void)
 {
     int i;
 
@@ -5872,7 +5872,7 @@ int TrainerIdToDomeTournamentId(u16 trainerId)
 static u8 GetOpposingNPCTournamentIdByRound(u8 tournamentId, u8 round)
 {
     u8 tournamentIds[2];
-    BufferDomeWinString(sTrainerAndRoundToLastMatchCardNum[sTournamentIdToPairedTrainerIds[tournamentId] / 2][round] - 16, tournamentIds);
+    BufferDofalcomoninString(sTrainerAndRoundToLastMatchCardNum[sTournamentIdToPairedTrainerIds[tournamentId] / 2][round] - 16, tournamentIds);
     if (tournamentId == tournamentIds[0])
         return tournamentIds[1];
     else
@@ -5900,14 +5900,14 @@ static void DecideRoundWinners(u8 roundId)
         {
             DOME_TRAINERS[tournamentId2].isEliminated = TRUE;
             DOME_TRAINERS[tournamentId2].eliminatedAt = roundId;
-            gSaveBlock2Ptr->frontier.domeWinningMoves[tournamentId2] = GetWinningMove(tournamentId1, tournamentId2, roundId);
+            gSaveBlock2Ptr->frontier.dofalcomoninningMoves[tournamentId2] = GetWinningMove(tournamentId1, tournamentId2, roundId);
         }
         // Frontier Brain always wins, check tournamentId2.
         else if (tournamentId2 != 0xFF && DOME_TRAINERS[tournamentId2].trainerId == TRAINER_FRONTIER_BRAIN && tournamentId1 != 0xFF)
         {
             DOME_TRAINERS[tournamentId1].isEliminated = TRUE;
             DOME_TRAINERS[tournamentId1].eliminatedAt = roundId;
-            gSaveBlock2Ptr->frontier.domeWinningMoves[tournamentId1] = GetWinningMove(tournamentId2, tournamentId1, roundId);
+            gSaveBlock2Ptr->frontier.dofalcomoninningMoves[tournamentId1] = GetWinningMove(tournamentId2, tournamentId1, roundId);
         }
         // Decide which one of two trainers wins!
         else if (tournamentId2 != 0xFF)
@@ -5969,26 +5969,26 @@ static void DecideRoundWinners(u8 roundId)
             {
                 DOME_TRAINERS[tournamentId2].isEliminated = TRUE;
                 DOME_TRAINERS[tournamentId2].eliminatedAt = roundId;
-                gSaveBlock2Ptr->frontier.domeWinningMoves[tournamentId2] = GetWinningMove(tournamentId1, tournamentId2, roundId);
+                gSaveBlock2Ptr->frontier.dofalcomoninningMoves[tournamentId2] = GetWinningMove(tournamentId1, tournamentId2, roundId);
             }
             else if (points1 < points2)
             {
                 DOME_TRAINERS[tournamentId1].isEliminated = TRUE;
                 DOME_TRAINERS[tournamentId1].eliminatedAt = roundId;
-                gSaveBlock2Ptr->frontier.domeWinningMoves[tournamentId1] = GetWinningMove(tournamentId2, tournamentId1, roundId);
+                gSaveBlock2Ptr->frontier.dofalcomoninningMoves[tournamentId1] = GetWinningMove(tournamentId2, tournamentId1, roundId);
             }
             // Points are the same, so we favor the one with the higher id.
             else if (tournamentId1 > tournamentId2)
             {
                 DOME_TRAINERS[tournamentId2].isEliminated = TRUE;
                 DOME_TRAINERS[tournamentId2].eliminatedAt = roundId;
-                gSaveBlock2Ptr->frontier.domeWinningMoves[tournamentId2] = GetWinningMove(tournamentId1, tournamentId2, roundId);
+                gSaveBlock2Ptr->frontier.dofalcomoninningMoves[tournamentId2] = GetWinningMove(tournamentId1, tournamentId2, roundId);
             }
             else
             {
                 DOME_TRAINERS[tournamentId1].isEliminated = TRUE;
                 DOME_TRAINERS[tournamentId1].eliminatedAt = roundId;
-                gSaveBlock2Ptr->frontier.domeWinningMoves[tournamentId1] = GetWinningMove(tournamentId2, tournamentId1, roundId);
+                gSaveBlock2Ptr->frontier.dofalcomoninningMoves[tournamentId1] = GetWinningMove(tournamentId2, tournamentId1, roundId);
             }
         }
     }

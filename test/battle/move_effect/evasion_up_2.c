@@ -14,14 +14,14 @@ SINGLE_BATTLE_TEST("Double Team raises Evasion by 1 stage")
     PASSES_RANDOMLY(gMovesInfo[MOVE_SCRATCH].accuracy * 3 / 5, 100, RNG_ACCURACY);
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SCRATCH].accuracy == 100);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_X); MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_X, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Wobbuffet's evasiveness sharply rose!");
+        MESSAGE("Lopmonx's evasiveness sharply rose!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
     }
 }

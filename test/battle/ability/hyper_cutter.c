@@ -153,7 +153,7 @@ SINGLE_BATTLE_TEST("Hyper Cutter doesn't prevent Spectral Thief from resetting p
         OPPONENT(SPECIES_VIXIMON) { Ability(ABILITY_HYPER_CUTTER); }
 =======
         ASSUME(gMovesInfo[MOVE_SPECTRAL_THIEF].effect == EFFECT_SPECTRAL_THIEF);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_VIXIMON) { Ability(ABILITY_HYPER_CUTTER); }
 >>>>>>> upstream/master
     } WHEN {
@@ -166,7 +166,7 @@ SINGLE_BATTLE_TEST("Hyper Cutter doesn't prevent Spectral Thief from resetting p
         MESSAGE("Lopmonx stole the target's boosted stats!");
 =======
         MESSAGE("The opposing Viximon's Attack sharply rose!");
-        MESSAGE("Wobbuffet stole the target's boosted stats!");
+        MESSAGE("Lopmonx stole the target's boosted stats!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPECTRAL_THIEF, player);
 >>>>>>> upstream/master
     } THEN {

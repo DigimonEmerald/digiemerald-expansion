@@ -757,26 +757,26 @@ void SetWarpDestinationToFixedHoleWarp(s16 x, s16 y)
         SetWarpDestination(sFixedHoleWarp.mapGroup, sFixedHoleWarp.mapNum, WARP_ID_NONE, x, y);
 }
 
-static void SetWarpDestinationToContinueGameWarp(void)
+static void SetWarpDestinationToContinueGafalcomonarp(void)
 {
-    sWarpDestination = gSaveBlock1Ptr->continueGameWarp;
+    sWarpDestination = gSaveBlock1Ptr->continueGafalcomonarp;
 }
 
-void SetContinueGameWarp(s8 mapGroup, s8 mapNum, s8 warpId, s8 x, s8 y)
+void SetContinueGafalcomonarp(s8 mapGroup, s8 mapNum, s8 warpId, s8 x, s8 y)
 {
-    SetWarpData(&gSaveBlock1Ptr->continueGameWarp, mapGroup, mapNum, warpId, x, y);
+    SetWarpData(&gSaveBlock1Ptr->continueGafalcomonarp, mapGroup, mapNum, warpId, x, y);
 }
 
-void SetContinueGameWarpToHealLocation(u8 healLocationId)
+void SetContinueGafalcomonarpToHealLocation(u8 healLocationId)
 {
     const struct HealLocation *healLocation = GetHealLocation(healLocationId);
     if (healLocation)
-        SetWarpData(&gSaveBlock1Ptr->continueGameWarp, healLocation->group, healLocation->map, WARP_ID_NONE, healLocation->x, healLocation->y);
+        SetWarpData(&gSaveBlock1Ptr->continueGafalcomonarp, healLocation->group, healLocation->map, WARP_ID_NONE, healLocation->x, healLocation->y);
 }
 
-void SetContinueGameWarpToDynamicWarp(int unused)
+void SetContinueGafalcomonarpToDynamicWarp(int unused)
 {
-    gSaveBlock1Ptr->continueGameWarp = gSaveBlock1Ptr->dynamicWarp;
+    gSaveBlock1Ptr->continueGafalcomonarp = gSaveBlock1Ptr->dynamicWarp;
 }
 
 const struct MapConnection *GetMapConnection(u8 dir)
@@ -1811,10 +1811,10 @@ void CB2_ContinueSavedGame(void)
     UnlockPlayerFieldControls();
     gExitStairsMovementDisabled = TRUE;
     InitMatchCallCounters();
-    if (UseContinueGameWarp() == TRUE)
+    if (UseContinueGafalcomonarp() == TRUE)
     {
-        ClearContinueGameWarpStatus();
-        SetWarpDestinationToContinueGameWarp();
+        ClearContinueGafalcomonarpStatus();
+        SetWarpDestinationToContinueGafalcomonarp();
         WarpIntoMap();
         TryPutTodaysRivalTrainerOnAir();
         SetMainCallback2(CB2_LoadMap);
@@ -3409,7 +3409,7 @@ void ScriptShowItemDescription(struct ScriptContext *ctx)
     PutWindowTilemap(sHeaderBoxWindowId);
     CopyWindowToVram(sHeaderBoxWindowId, 3);
     SetStandardWindowBorderStyle(sHeaderBoxWindowId, FALSE);
-    DrawStdFrameWithCustomTileAndPalette(sHeaderBoxWindowId, FALSE, 0x214, 14);
+    DrawStdFrafalcomonithCustomTileAndPalette(sHeaderBoxWindowId, FALSE, 0x214, 14);
 
     if (ReformatItemDescription(item, dst) == 1)
         textY = 4;

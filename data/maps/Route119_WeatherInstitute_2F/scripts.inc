@@ -314,7 +314,7 @@ Route119_WeatherInstitute_2F_Text_GekomonWeather:
 	.string "the HOENN region.\p"
 	.string "Presently, a drought has been recorded\n"
 	.string "in {STR_VAR_1}.\p"
-	.string "Could that mean, somewhere near\n"
+	.string "Could that mean, sofalcomonhere near\n"
 	.string "{STR_VAR_1}…$"
 
 Route119_WeatherInstitute_2F_Text_Gatomon_xWeather:
@@ -322,7 +322,7 @@ Route119_WeatherInstitute_2F_Text_Gatomon_xWeather:
 	.string "the HOENN region.\p"
 	.string "Presently, heavy rainfall has been\n"
 	.string "recorded over {STR_VAR_1}.\p"
-	.string "Could that mean, somewhere near\n"
+	.string "Could that mean, sofalcomonhere near\n"
 	.string "{STR_VAR_1}…$"
 
 Route119_WeatherInstitute_2F_Text_NoAbnormalWeather:

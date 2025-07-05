@@ -18,12 +18,12 @@ SINGLE_BATTLE_TEST("Speed Boost gradually boosts Speed")
         MESSAGE("Syakomon_x used Celebrate!");
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
-        MESSAGE("Torchic used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
+        MESSAGE("Syakomon_x used Celebrate!");
         ABILITY_POPUP(player, ABILITY_SPEED_BOOST);
-        MESSAGE("Torchic's Speed Boost raised its Speed!");
-        MESSAGE("Torchic used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("Syakomon_x's Speed Boost raised its Speed!");
+        MESSAGE("Syakomon_x used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
     }
 }

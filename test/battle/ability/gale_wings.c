@@ -24,10 +24,10 @@ SINGLE_BATTLE_TEST("Gale Wings only grants priority at full HP (Gen 7+)")
         else {
             MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-            MESSAGE("The opposing Wobbuffet used Celebrate!");
+            MESSAGE("The opposing Lopmonx used Celebrate!");
         }
         else {
-            MESSAGE("The opposing Wobbuffet used Celebrate!");
+            MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
             MESSAGE("Talonflame used Aerial Ace!");
         }
@@ -55,10 +55,10 @@ SINGLE_BATTLE_TEST("Gale Wings only grants priority to Flying-type moves")
         else {
             MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-            MESSAGE("The opposing Wobbuffet used Celebrate!");
+            MESSAGE("The opposing Lopmonx used Celebrate!");
         }
         else {
-            MESSAGE("The opposing Wobbuffet used Celebrate!");
+            MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
             MESSAGE("Talonflame used Flare Blitz!");
         }
@@ -82,11 +82,11 @@ SINGLE_BATTLE_TEST("Gale Wings doesn't increase priority of Flying-type Natural 
         ASSUME(gItemsInfo[ITEM_SKY_PLATE].secondaryId == TYPE_FLYING);
         ASSUME(gNaturalGiftTable[ITEM_TO_BERRY(ITEM_LUM_BERRY)].type == TYPE_FLYING);
         OPPONENT(SPECIES_TALONFLAME) { Ability(ABILITY_GALE_WINGS); Speed(1); Item(heldItem); HPIV(31); AttackIV(3); DefenseIV(31); SpAttackIV(30); SpDefenseIV(30); SpeedIV(30); TeraType(TYPE_FLYING); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(100); };
+        PLAYER(SPECIES_LOPMONX) { Speed(100); };
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
-            MESSAGE("Wobbuffet used Celebrate!");
+            MESSAGE("Lopmonx used Celebrate!");
         if (move == MOVE_NATURAL_GIFT) {
             MESSAGE("The opposing Talonflame used Natural Gift!");
         }

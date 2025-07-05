@@ -15,14 +15,14 @@ SINGLE_BATTLE_TEST("Rapid Spin activates after Toxic Debris")
 {
     GIVEN {
         PLAYER(SPECIES_GLIMMORA) { Ability(ABILITY_TOXIC_DEBRIS); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_RAPID_SPIN); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_RAPID_SPIN, opponent);
         ABILITY_POPUP(player, ABILITY_TOXIC_DEBRIS);
         MESSAGE("Poison spikes were scattered on the ground all around the opposing team!");
-        MESSAGE("The opposing Wobbuffet blew away Toxic Spikes!");
+        MESSAGE("The opposing Lopmonx blew away Toxic Spikes!");
     }
 }
 
@@ -46,8 +46,8 @@ SINGLE_BATTLE_TEST("Rapid Spin blows away Wrap, hazards and raises Speed (Gen 8+
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         MESSAGE("Lopmonx's Speed rose!");
     #endif
-        MESSAGE("Wobbuffet got free of the opposing Wobbuffet's Wrap!");
-        MESSAGE("Wobbuffet blew away Stealth Rock!");
+        MESSAGE("Lopmonx got free of the opposing Lopmonx's Wrap!");
+        MESSAGE("Lopmonx blew away Stealth Rock!");
     }
 }
 
@@ -67,10 +67,10 @@ SINGLE_BATTLE_TEST("Rapid Spin: Mortal Spin blows away Wrap, hazards and poisons
         MESSAGE("Lopmonx blew away Stealth Rock!");
         MESSAGE("Foe Lopmonx was poisoned!");
 =======
-        MESSAGE("The opposing Wobbuffet was poisoned!");
+        MESSAGE("The opposing Lopmonx was poisoned!");
 >>>>>>> upstream/master:test/battle/move_effect/rapid_spin.c
         STATUS_ICON(opponent, poison: TRUE);
-        MESSAGE("Wobbuffet got free of the opposing Wobbuffet's Wrap!");
-        MESSAGE("Wobbuffet blew away Stealth Rock!");
+        MESSAGE("Lopmonx got free of the opposing Lopmonx's Wrap!");
+        MESSAGE("Lopmonx blew away Stealth Rock!");
     }
 }

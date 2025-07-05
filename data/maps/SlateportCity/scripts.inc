@@ -606,7 +606,7 @@ SlateportCity_EventScript_CaptStern::
 	applymovement LOCALID_CAPT_STERN, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	msgbox SlateportCity_Text_FromHarborTryingToTakeSub, MSGBOX_DEFAULT
-	msgbox SlateportCity_Text_PleaseComeWithMe, MSGBOX_DEFAULT
+	msgbox SlateportCity_Text_PleaseCofalcomonithMe, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_CAPT_STERN, SlateportCity_Movement_SternEnterHarbor
 	applymovement OBJ_EVENT_ID_PLAYER, SlateportCity_Movement_PlayerEnterHarbor
@@ -1216,7 +1216,7 @@ SlateportCity_Text_FromHarborTryingToTakeSub:
 	.string "The submarine!\n"
 	.string "They're trying to take it!$"
 
-SlateportCity_Text_PleaseComeWithMe:
+SlateportCity_Text_PleaseCofalcomonithMe:
 	.string "{PLAYER}{KUN}!\n"
 	.string "Please, come with me!$"
 
@@ -1335,7 +1335,7 @@ SlateportCity_Text_ComeBackToTradeBerryPowder:
 
 SlateportCity_Text_YouDroveTeamAquaAway:
 	.string "SCOTT: Huh?\n"
-	.string "I'm sure I met you somewhere before.\p"
+	.string "I'm sure I met you sofalcomonhere before.\p"
 	.string "Have I introduced myself to you?\n"
 	.string "If not, my name's SCOTT.\p"
 	.string "I just saw TEAM AQUA run away from\n"

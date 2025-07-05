@@ -1571,7 +1571,7 @@ static void Chat_SaveAndExit(void)
     case 7:
         if (!IsDisplaySubtaskActive(0))
         {
-            SetContinueGameWarpStatusToDynamicWarp();
+            SetContinueGafalcomonarpStatusToDynamicWarp();
             TrySavingData(SAVE_NORMAL);
             sChat->funcState = 8;
         }
@@ -1584,7 +1584,7 @@ static void Chat_SaveAndExit(void)
         if (!IsDisplaySubtaskActive(0))
         {
             PlaySE(SE_SAVE);
-            ClearContinueGameWarpStatus2();
+            ClearContinueGafalcomonarpStatus2();
             sChat->funcState = 10;
         }
         break;

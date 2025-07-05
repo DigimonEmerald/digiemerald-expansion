@@ -92,7 +92,7 @@ SINGLE_BATTLE_TEST("(Gulp Missile) Transformed Cramorant deal 1/4 of damage oppo
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx's Defense fell!");
 =======
-        MESSAGE("The opposing Wobbuffet's Defense fell!");
+        MESSAGE("The opposing Lopmonx's Defense fell!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(gulpMissileDamage, opponent->maxHP / 4);

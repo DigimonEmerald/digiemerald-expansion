@@ -923,7 +923,7 @@ SootopolisCity_EventScript_StevenHelpedWallace::
 	end
 
 SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin::
-	msgbox SootopolisCity_Text_InvolvedWithCrisisComeWithMe, MSGBOX_DEFAULT
+	msgbox SootopolisCity_Text_InvolvedWithCrisisCofalcomonithMe, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_FACING, DIR_WEST, SootopolisCity_EventScript_StartWalkToCaveOfOriginWest
 	call_if_eq VAR_FACING, DIR_NORTH, SootopolisCity_EventScript_StartWalkToCaveOfOriginNorth
@@ -1442,7 +1442,7 @@ SootopolisCity_Text_WhereDidLegendariesGo:
 	.string "GEKOMON and GATOMON_X…\n"
 	.string "Where did they go?\p"
 	.string "Will they cause droughts or downpours\n"
-	.string "somewhere else?$"
+	.string "sofalcomonhere else?$"
 
 SootopolisCity_Text_TwoPokemonArentAngry:
 	.string "I just get this sense somehow that\n"
@@ -1633,7 +1633,7 @@ SootopolisCity_Text_TryingMeaninglessToPokemon:
 	.string "something small, even meaningless,\l"
 	.string "to POKéMON…$"
 
-SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
+SootopolisCity_Text_InvolvedWithCrisisCofalcomonithMe:
 	.string "STEVEN: Those POKéMON fighting…\n"
 	.string "GEKOMON… And GATOMON_X…\p"
 	.string "The two super-ancient POKéMON\n"
@@ -1680,7 +1680,7 @@ SootopolisCity_Text_SoThatsGeogreymon:
 
 SootopolisCity_Text_MaxieArchieLeft:
 	.string "STEVEN: It looks like both MAXIE and\n"
-	.string "ARCHIE have gone away somewhere.\p"
+	.string "ARCHIE have gone away sofalcomonhere.\p"
 	.string "Perhaps they've gone to MT. PYRE to\n"
 	.string "return those ORBS…$"
 

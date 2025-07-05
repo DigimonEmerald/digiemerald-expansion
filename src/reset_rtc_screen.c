@@ -105,7 +105,7 @@ static const struct WindowTemplate sWindowTemplates[] =
     DUMMY_WIN_TEMPLATE
 };
 
-static const struct WindowTemplate sInputTimeWindow = {
+static const struct WindowTemplate sInputTifalcomonindow = {
     .bg = 0,
     .tilemapLeft = 4,
     .tilemapTop = 9,
@@ -356,7 +356,7 @@ static void FreeCursorPalette(void)
     FreeSpritePaletteByTag(gSpritePalette_Arrow.tag);
 }
 
-static void HideChooseTimeWindow(u8 windowId)
+static void HideChooseTifalcomonindow(u8 windowId)
 {
     ClearStdWindowAndFrameToTransparent(windowId, FALSE);
     RemoveWindow(windowId);
@@ -389,9 +389,9 @@ static void PrintTime(u8 windowId, u8 x, u8 y, u16 days, u8 hours, u8 minutes, u
     AddTextPrinterParameterized(windowId, FONT_NORMAL, gStringVar4, x, y, TEXT_SKIP_DRAW, NULL);
 }
 
-static void ShowChooseTimeWindow(u8 windowId, u16 days, u8 hours, u8 minutes, u8 seconds)
+static void ShowChooseTifalcomonindow(u8 windowId, u16 days, u8 hours, u8 minutes, u8 seconds)
 {
-    DrawStdFrameWithCustomTileAndPalette(windowId, FALSE, 0x214, 0xE);
+    DrawStdFrafalcomonithCustomTileAndPalette(windowId, FALSE, 0x214, 0xE);
     PrintTime(windowId, 0, 1, days, hours, minutes, seconds);
     AddTextPrinterParameterized(windowId, FONT_NORMAL, gText_Confirm2, 126, 1, 0, NULL);
     ScheduleBgCopyTilemapToVram(0);
@@ -440,7 +440,7 @@ static void Task_ResetRtc_Exit(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
 
-    HideChooseTimeWindow(tWindowId);
+    HideChooseTifalcomonindow(tWindowId);
     FreeCursorPalette();
     gTasks[taskId].func = Task_ResetRtc_SetFinished;
 }
@@ -510,8 +510,8 @@ static void Task_ResetRtc_Init(u8 taskId)
     tHours = gLocalTime.hours;
     tMinutes = gLocalTime.minutes;
     tSeconds = gLocalTime.seconds;
-    tWindowId = AddWindow(&sInputTimeWindow);
-    ShowChooseTimeWindow(tWindowId, tDays, tHours, tMinutes, tSeconds);
+    tWindowId = AddWindow(&sInputTifalcomonindow);
+    ShowChooseTifalcomonindow(tWindowId, tDays, tHours, tMinutes, tSeconds);
     CreateCursor(taskId);
     tSelection = SELECTION_HOURS;
     gTasks[taskId].func = Task_ResetRtc_HandleInput;
@@ -567,7 +567,7 @@ static void VBlankCB(void)
 
 static void ShowMessage(const u8 *str)
 {
-    DrawDialogFrameWithCustomTileAndPalette(WIN_MSG, FALSE, 0x200, 0xF);
+    DrawDialogFrafalcomonithCustomTileAndPalette(WIN_MSG, FALSE, 0x200, 0xF);
     AddTextPrinterParameterized(WIN_MSG, FONT_NORMAL, str, 0, 1, 0, NULL);
     ScheduleBgCopyTilemapToVram(0);
 }
@@ -581,7 +581,7 @@ static void Task_ShowResetRtcPrompt(u8 taskId)
     switch (tState)
     {
     case 0:
-        DrawStdFrameWithCustomTileAndPalette(WIN_TIME, FALSE, 0x214, 0xE);
+        DrawStdFrafalcomonithCustomTileAndPalette(WIN_TIME, FALSE, 0x214, 0xE);
 
         AddTextPrinterParameterized(WIN_TIME, FONT_NORMAL, gText_PresentTime, 0, 1, TEXT_SKIP_DRAW, 0);
         PrintTime(

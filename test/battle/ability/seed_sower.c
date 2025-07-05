@@ -12,7 +12,7 @@ SINGLE_BATTLE_TEST("Seed Sower sets up Grassy Terrain when hit by an attack")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Tackle!");
 =======
-        MESSAGE("The opposing Wobbuffet used Tackle!");
+        MESSAGE("The opposing Lopmonx used Tackle!");
 >>>>>>> upstream/master
         HP_BAR(player);
         ABILITY_POPUP(player);

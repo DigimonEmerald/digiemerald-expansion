@@ -15,7 +15,7 @@ SINGLE_BATTLE_TEST("Cursed Body triggers 30% of the time")
 <<<<<<< HEAD
         MESSAGE("Lopmonx's Aqua Jet was disabled by Foe Frillish's Cursed Body!");
 =======
-        MESSAGE("Wobbuffet's Aqua Jet was disabled by the opposing Frillish's Cursed Body!");
+        MESSAGE("Lopmonx's Aqua Jet was disabled by the opposing Frillish's Cursed Body!");
 >>>>>>> upstream/master
     }
 }

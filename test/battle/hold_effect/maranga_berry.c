@@ -26,7 +26,7 @@ SINGLE_BATTLE_TEST("Maranga Berry raises the holder's Sp. Def by one stage when 
 <<<<<<< HEAD
             MESSAGE("Using Maranga Berry, the Sp. Def of Foe Lopmonx rose!");
 =======
-            MESSAGE("Using Maranga Berry, the Sp. Def of the opposing Wobbuffet rose!");
+            MESSAGE("Using Maranga Berry, the Sp. Def of the opposing Lopmonx rose!");
 >>>>>>> upstream/master
         }
         else {
@@ -35,7 +35,7 @@ SINGLE_BATTLE_TEST("Maranga Berry raises the holder's Sp. Def by one stage when 
 <<<<<<< HEAD
                 MESSAGE("Using Maranga Berry, the Sp. Def of Foe Lopmonx rose!");
 =======
-                MESSAGE("Using Maranga Berry, the Sp. Def of the opposing Wobbuffet rose!");
+                MESSAGE("Using Maranga Berry, the Sp. Def of the opposing Lopmonx rose!");
 >>>>>>> upstream/master
             }
         }
@@ -85,9 +85,9 @@ SINGLE_BATTLE_TEST("Maranga Berry doesn't trigger if the item hold user used a s
 DOUBLE_BATTLE_TEST("Maranga Berry doesn't trigger if partner was hit")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT) { Item(ITEM_MARANGA_BERRY); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft); }

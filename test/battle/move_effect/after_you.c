@@ -62,7 +62,7 @@ DOUBLE_BATTLE_TEST("After You calculates correct turn order if only one pokemon 
         PLAYER(SPECIES_GRENINJA) { Speed(120); }
         PLAYER(SPECIES_REGIROCK) { Speed(10); }
         OPPONENT(SPECIES_LEAFMON) { Speed(100); }
-        OPPONENT(SPECIES_DRAGONITE) { Speed(60); }
+        OPPONENT(SPECIES_ESPIMON) { Speed(60); }
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_AFTER_YOU, target: playerRight);
@@ -94,9 +94,9 @@ DOUBLE_BATTLE_TEST("After You doesn't fail if the turn order remains the same af
 {
     GIVEN {
         ASSUME(B_AFTER_YOU_TURN_ORDER >= GEN_8);
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); }
         PLAYER(SPECIES_WYNAUT) { Speed(1); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(2); }
         OPPONENT(SPECIES_WYNAUT) { Speed(3); }
     } WHEN {
         TURN {
@@ -117,9 +117,9 @@ DOUBLE_BATTLE_TEST("After You ignores the effects of Quash")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_QUASH].effect == EFFECT_QUASH);
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); }
         PLAYER(SPECIES_WYNAUT) { Speed(1); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(2); }
         OPPONENT(SPECIES_WYNAUT) { Speed(3); }
     } WHEN {
         TURN {

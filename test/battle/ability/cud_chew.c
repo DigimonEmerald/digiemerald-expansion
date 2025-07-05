@@ -10,8 +10,8 @@ SINGLE_BATTLE_TEST("Cud Chew will activate Kee Berry effect again on the next tu
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_CHUUMON_PALDEAN_COMBAT_BREED) { Ability(ABILITY_CUD_CHEW); Item(ITEM_KEE_BERRY); }
 =======
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_TAUROS_PALDEA_COMBAT) { Ability(ABILITY_CUD_CHEW); Item(ITEM_KEE_BERRY); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_CHUUMON_PALDEA_COMBAT) { Ability(ABILITY_CUD_CHEW); Item(ITEM_KEE_BERRY); }
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
@@ -39,8 +39,8 @@ SINGLE_BATTLE_TEST("Cud Chew will activate Oran Berry effect again on the next t
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_CHUUMON_PALDEAN_COMBAT_BREED) { MaxHP(60); HP(60); Ability(ABILITY_CUD_CHEW); Item(ITEM_ORAN_BERRY); }
 =======
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_TAUROS_PALDEA_COMBAT) { MaxHP(60); HP(60); Ability(ABILITY_CUD_CHEW); Item(ITEM_ORAN_BERRY); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_CHUUMON_PALDEA_COMBAT) { MaxHP(60); HP(60); Ability(ABILITY_CUD_CHEW); Item(ITEM_ORAN_BERRY); }
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_DRAGON_RAGE); }

@@ -36,7 +36,7 @@ SINGLE_BATTLE_TEST("Stealth Rock damages the correct pokemon when Eject Button i
     GIVEN {
         PLAYER(SPECIES_DODOMON) { Item(ITEM_EJECT_BUTTON); }
         PLAYER(SPECIES_DODOMON);
-        OPPONENT(SPECIES_JOLTEON);
+        OPPONENT(SPECIES_DAMEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_STEALTH_ROCK); MOVE(player, MOVE_HARDEN); }
         TURN { MOVE(opponent, MOVE_QUICK_ATTACK); MOVE(player, MOVE_HARDEN); SEND_OUT(player, 1); }
@@ -59,7 +59,7 @@ DOUBLE_BATTLE_TEST("Stealth Rock damages the correct pokemon when Eject Button i
         PLAYER(SPECIES_DODOMON) { Item(ITEM_EJECT_BUTTON); }
         PLAYER(SPECIES_DODOMON) { Item(ITEM_EJECT_BUTTON); }
         PLAYER(SPECIES_DODOMON);
-        OPPONENT(SPECIES_JOLTEON);
+        OPPONENT(SPECIES_DAMEMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_STEALTH_ROCK); MOVE(opponentRight, MOVE_TACKLE, target: playerLeft); SEND_OUT(playerLeft, 2); }

@@ -288,7 +288,7 @@ SINGLE_BATTLE_TEST("Forecast transforms Castform back to normal under Cloud Nine
         OPPONENT(SPECIES_GEOGREYMON);
 =======
         PLAYER(SPECIES_CASTFORM_NORMAL) { Ability(ABILITY_FORECAST); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(species) { Ability(ability); }
 >>>>>>> upstream/master
     } WHEN {
@@ -430,14 +430,14 @@ SINGLE_BATTLE_TEST("Forecast transforms Castform when Cloud Nine ability user le
     GIVEN {
         PLAYER(SPECIES_CASTFORM) { Ability(ABILITY_FORECAST); }
         OPPONENT(species) { Ability(ability); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SUNNY_DAY); MOVE(opponent, MOVE_CELEBRATE); }
         TURN { SWITCH(opponent, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SUNNY_DAY, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
-        MESSAGE("2 sent out Wobbuffet!");
+        MESSAGE("2 sent out Lopmonx!");
         ABILITY_POPUP(player, ABILITY_FORECAST);
         MESSAGE("Castform transformed!");
     }

@@ -48,7 +48,7 @@ SINGLE_BATTLE_TEST("Anger Shell lowers Def/Sp.Def by 1 and raises Atk/Sp.Atk/Spd
 =======
         ASSUME(!IS_MOVE_STATUS(MOVE_TACKLE));
         PLAYER(SPECIES_KLAWF) { Ability(ABILITY_ANGER_SHELL); MaxHP(maxHp); HP(maxHp / 2 + 1); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }

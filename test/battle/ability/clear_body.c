@@ -242,7 +242,7 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent S
             MESSAGE("Lopmonx used Celebrate!");
 =======
                 MESSAGE("The opposing Metang used Celebrate!");
-            MESSAGE("Wobbuffet used Celebrate!");
+            MESSAGE("Lopmonx used Celebrate!");
 >>>>>>> upstream/master
         }
     }
@@ -273,7 +273,7 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent S
         MESSAGE("Lopmonx used Thunder Wave!");
 =======
             MESSAGE("The opposing Metang used Celebrate!");
-        MESSAGE("Wobbuffet used Thunder Wave!");
+        MESSAGE("Lopmonx used Thunder Wave!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDER_WAVE, player);
         NOT ABILITY_POPUP(opponent, ability);
@@ -420,7 +420,7 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent S
         MESSAGE("Lopmonx used SpectrlThief!");
 =======
             MESSAGE("The opposing Metang used Celebrate!");
-        MESSAGE("Wobbuffet used Spectral Thief!");
+        MESSAGE("Lopmonx used Spectral Thief!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPECTRAL_THIEF, player);
         NOT ABILITY_POPUP(opponent, ability);

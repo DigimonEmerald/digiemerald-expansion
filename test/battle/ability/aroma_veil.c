@@ -10,8 +10,8 @@ DOUBLE_BATTLE_TEST("Aroma Veil protects the Pokémon's side from Taunt")
         ASSUME(gMovesInfo[MOVE_TAUNT].effect == EFFECT_TAUNT);
         ASSUME(gMovesInfo[MOVE_HARDEN].category == DAMAGE_CATEGORY_STATUS);
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_TAUNT, target: moveTarget); MOVE(moveTarget, MOVE_HARDEN); }
@@ -31,8 +31,8 @@ DOUBLE_BATTLE_TEST("Aroma Veil protects the Pokémon's side from Torment")
         ASSUME(gMovesInfo[MOVE_TORMENT].effect == EFFECT_TORMENT);
         ASSUME(gMovesInfo[MOVE_HARDEN].category == DAMAGE_CATEGORY_STATUS);
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_TORMENT, target: moveTarget); MOVE(moveTarget, MOVE_HARDEN); }
@@ -54,8 +54,8 @@ DOUBLE_BATTLE_TEST("Aroma Veil protects the Pokémon's side from Encore")
         ASSUME(gMovesInfo[MOVE_ENCORE].effect == EFFECT_ENCORE);
         ASSUME(gMovesInfo[MOVE_HARDEN].category == DAMAGE_CATEGORY_STATUS);
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_ENCORE, target: moveTarget); MOVE(moveTarget, MOVE_HARDEN); }
@@ -77,8 +77,8 @@ DOUBLE_BATTLE_TEST("Aroma Veil protects the Pokémon's side from Disable")
         ASSUME(gMovesInfo[MOVE_DISABLE].effect == EFFECT_DISABLE);
         ASSUME(gMovesInfo[MOVE_HARDEN].category == DAMAGE_CATEGORY_STATUS);
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_DISABLE, target: moveTarget); MOVE(moveTarget, MOVE_HARDEN); }
@@ -96,7 +96,7 @@ DOUBLE_BATTLE_TEST("Aroma Veil protects the Pokémon's side from Cursed Body")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_PECK].makesContact);
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_JELLICENT) { Ability(ABILITY_CURSED_BODY); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
@@ -121,8 +121,8 @@ DOUBLE_BATTLE_TEST("Aroma Veil protects the Pokémon's side from Heal Block")
         ASSUME(gMovesInfo[MOVE_HEAL_BLOCK].effect == EFFECT_HEAL_BLOCK);
         ASSUME(gMovesInfo[MOVE_RECOVER].effect == EFFECT_RESTORE_HP);
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); HP(1); }
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_HEAL_BLOCK, target: moveTarget); MOVE(moveTarget, MOVE_RECOVER); }
@@ -141,8 +141,8 @@ DOUBLE_BATTLE_TEST("Aroma Veil protects the Pokémon's side from Infatuation")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_ATTRACT].effect == EFFECT_ATTRACT);
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_ATTRACT, target: moveTarget); MOVE(moveTarget, MOVE_CELEBRATE); }
@@ -158,8 +158,8 @@ DOUBLE_BATTLE_TEST("Aroma Veil does not protect the Pokémon's side from Impriso
     GIVEN {
         ASSUME(gMovesInfo[MOVE_IMPRISON].effect == EFFECT_IMPRISON);
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) {Moves(MOVE_IMPRISON, MOVE_CELEBRATE); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) {Moves(MOVE_IMPRISON, MOVE_CELEBRATE); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_IMPRISON); MOVE(playerLeft, MOVE_CELEBRATE); MOVE(playerRight, MOVE_CELEBRATE); MOVE(opponentRight, MOVE_SPLASH); }
@@ -182,8 +182,8 @@ DOUBLE_BATTLE_TEST("Aroma Veil prevents Psychic Noise's effect")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_PSYCHIC_NOISE].additionalEffects[0].moveEffect == MOVE_EFFECT_PSYCHIC_NOISE);
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_PSYCHIC_NOISE, target: moveTarget); MOVE(moveTarget, MOVE_RECOVER); }

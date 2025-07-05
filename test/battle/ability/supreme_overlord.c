@@ -111,7 +111,7 @@ SINGLE_BATTLE_TEST("Supreme Overlord's message displays correctly after all batt
         MESSAGE("2 sent out Lopmonx!");
 =======
         SEND_IN_MESSAGE("Kingambit");
-        MESSAGE("2 sent out Wobbuffet!");
+        MESSAGE("2 sent out Lopmonx!");
 >>>>>>> upstream/master
         ABILITY_POPUP(player, ABILITY_SUPREME_OVERLORD);
         MESSAGE("Kingambit gained strength from the fallen!");
@@ -135,7 +135,7 @@ SINGLE_BATTLE_TEST("Supreme Overlord's message displays correctly after all batt
 <<<<<<< HEAD
         MESSAGE("Go! Lopmonx!");
 =======
-        SEND_IN_MESSAGE("Wobbuffet");
+        SEND_IN_MESSAGE("Lopmonx");
 >>>>>>> upstream/master
         MESSAGE("2 sent out Kingambit!");
         ABILITY_POPUP(opponent, ABILITY_SUPREME_OVERLORD);

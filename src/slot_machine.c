@@ -557,8 +557,8 @@ static void ReelTime_ExplodeMachine(struct Task *);
 static void ReelTime_WaitExplode(struct Task *);
 static void ReelTime_WaitSmoke(struct Task *);
 static void ReelTime_EndFailure(struct Task *);
-static void LoadReelTimeWindowTilemap(s16, s16);
-static void ClearReelTimeWindowTilemap(s16);
+static void LoadReelTifalcomonindowTilemap(s16, s16);
+static void ClearReelTifalcomonindowTilemap(s16);
 static void OpenInfoBox(u8);
 static bool8 IsInfoBoxClosed(void);
 static void Task_InfoBox(u8 );
@@ -720,7 +720,7 @@ static const u8 sBetToMatchLineIds[MAX_BET][2];
 static const u8 sMatchLinesPerBet[MAX_BET];
 static const u16 *const sFlashingLightsPalTable[];
 static const u16 *const sSlotMachineMenu_Pal;
-static const u16 sReelTimeWindow_Tilemap[];
+static const u16 sReelTifalcomonindow_Tilemap[];
 static const u16 sEmptyTilemap[];
 static void (*const sDigitalDisplaySceneExitCallbacks[])(void);
 static const struct SpriteTemplate sSpriteTemplate_ReelTimeBolt;
@@ -3560,7 +3560,7 @@ static void ReelTime_Init(struct Task *task)
     gSpriteCoordOffsetY = 0;
     SetGpuReg(REG_OFFSET_BG1HOFS, 0);
     SetGpuReg(REG_OFFSET_BG1VOFS, 0);
-    LoadReelTimeWindowTilemap(REG_OFFSET_BG3VOFS, 0);
+    LoadReelTifalcomonindowTilemap(REG_OFFSET_BG3VOFS, 0);
     CreateReelTimeMachineSprites();
     CreateReelTimePetitmonSprite();
     CreateReelTimeNumberSprites();
@@ -3582,7 +3582,7 @@ static void ReelTime_WindowEnter(struct Task *task)
     {
         task->data[2] = r3;
         task->data[3] = task->data[1] >> 3;
-        LoadReelTimeWindowTilemap(r3, task->data[3]);
+        LoadReelTifalcomonindowTilemap(r3, task->data[3]);
     }
     if (task->data[1] >= 200)
     {
@@ -3753,7 +3753,7 @@ static void ReelTime_CloseWindow(struct Task *task)
     r4 = ((task->data[1] - 8) & 0xff) >> 3;
     SetGpuReg(REG_OFFSET_BG1HOFS, task->data[1] & 0x1ff);
     if (task->data[3] >> 3 <= 25)
-        ClearReelTimeWindowTilemap(r4);
+        ClearReelTifalcomonindowTilemap(r4);
     else
         task->tState++; // RT_TASK_DESTROY_SPRITES
 }
@@ -3861,14 +3861,14 @@ static void ReelTime_EndFailure(struct Task *task)
     DestroyTask(FindTaskIdByFunc(Task_ReelTime));
 }
 
-static void LoadReelTimeWindowTilemap(s16 a0, s16 a1)
+static void LoadReelTifalcomonindowTilemap(s16 a0, s16 a1)
 {
     s16 i;
     for (i = 4; i < 15; i++)
-        LoadBgTilemap(1, &sReelTimeWindow_Tilemap[a1 + (i - 4) * 20], 2, 32 * i + a0);
+        LoadBgTilemap(1, &sReelTifalcomonindow_Tilemap[a1 + (i - 4) * 20], 2, 32 * i + a0);
 }
 
-static void ClearReelTimeWindowTilemap(s16 a0)
+static void ClearReelTifalcomonindowTilemap(s16 a0)
 {
     u8 i;
     for (i = 4; i < 15; i++)
@@ -7946,5 +7946,5 @@ static const struct SpritePalette sSlotMachineSpritePalettes[] =
 };
 
 static const u32 sReelTimeGfx[] = INCBIN_U32("graphics/slot_machine/reel_time_gfx.4bpp.lz"); // reel_time_machine and reel_time_petitmon
-static const u16 sReelTimeWindow_Tilemap[] = INCBIN_U16("graphics/slot_machine/reel_time_window.bin");
+static const u16 sReelTifalcomonindow_Tilemap[] = INCBIN_U16("graphics/slot_machine/reel_time_window.bin");
 static const u16 sEmptyTilemap[] =  {0};

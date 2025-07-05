@@ -26,7 +26,7 @@ AI_SINGLE_BATTLE_TEST("AI avoids hypnosis when it can not put target to sleep")
 {
     u32 species, ability;
 
-    PARAMETRIZE { species = SPECIES_HOOTHOOT; ability = ABILITY_INSOMNIA; }
+    PARAMETRIZE { species = SPECIES_GHOSTMON; ability = ABILITY_INSOMNIA; }
     PARAMETRIZE { species = SPECIES_DEMIVEEMON; ability = ABILITY_VITAL_SPIRIT; }
     PARAMETRIZE { species = SPECIES_KOMALA; ability = ABILITY_COMATOSE; }
     PARAMETRIZE { species = SPECIES_NACLI; ability = ABILITY_PURIFYING_SALT; }
@@ -34,7 +34,7 @@ AI_SINGLE_BATTLE_TEST("AI avoids hypnosis when it can not put target to sleep")
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
         PLAYER(species) { Ability(ability); }
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_CELEBRATE, MOVE_HYPNOSIS); }
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_CELEBRATE, MOVE_HYPNOSIS); }
     } WHEN {
         TURN { SCORE_EQ(opponent, MOVE_CELEBRATE, MOVE_HYPNOSIS); } // Both get -10
     }

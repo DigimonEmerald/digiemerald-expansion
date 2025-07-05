@@ -15,12 +15,12 @@ DOUBLE_BATTLE_TEST("Heal Bell cures the entire party")
     PARAMETRIZE { move = MOVE_AROMATHERAPY; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_POISON); }
-        PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_POISON); }
-        PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_POISON); }
-        PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_POISON); }
-        PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_POISON); }
-        PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_POISON); }
+        PLAYER(SPECIES_LOPMONX) { Status1(STATUS1_POISON); }
+        PLAYER(SPECIES_LOPMONX) { Status1(STATUS1_POISON); }
+        PLAYER(SPECIES_LOPMONX) { Status1(STATUS1_POISON); }
+        PLAYER(SPECIES_LOPMONX) { Status1(STATUS1_POISON); }
+        PLAYER(SPECIES_LOPMONX) { Status1(STATUS1_POISON); }
+        PLAYER(SPECIES_LOPMONX) { Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
@@ -30,7 +30,7 @@ DOUBLE_BATTLE_TEST("Heal Bell cures the entire party")
         int i;
 
         ANIMATION(ANIM_TYPE_MOVE, move, playerLeft);
-        NOT MESSAGE("Wobbuffet was hurt by its poisoning!");
+        NOT MESSAGE("Lopmonx was hurt by its poisoning!");
         for (i = 0; i < 6; i++)
             EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_STATUS), STATUS1_NONE);
     }
@@ -46,7 +46,7 @@ DOUBLE_BATTLE_TEST("Heal Bell does not cure soundproof partners")
     ASSUME(B_HEAL_BELL_SOUNDPROOF != GEN_5);
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_EXPLOUD) { Ability(ability); Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_WYNAUT);
@@ -72,7 +72,7 @@ SINGLE_BATTLE_TEST("Heal Bell cures inactive soundproof Pokemon")
     ASSUME(B_HEAL_BELL_SOUNDPROOF >= GEN_5);
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_POISON); }
+        PLAYER(SPECIES_LOPMONX) { Status1(STATUS1_POISON); }
         PLAYER(SPECIES_EXPLOUD) { Ability(ability); Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {

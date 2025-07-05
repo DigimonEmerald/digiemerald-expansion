@@ -9,11 +9,11 @@ DOUBLE_BATTLE_TEST("Curious Medicine resets ally's stat stages upon entering bat
     PARAMETRIZE { ability = ABILITY_OWN_TEMPO; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_SCOLIPEDE);
         OPPONENT(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_SLOWKING_GALAR) { Ability(ability); }
+        OPPONENT(SPECIES_LIOLLMON_GALAR) { Ability(ability); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_QUIVER_DANCE); MOVE(playerLeft, MOVE_CHARM, target: opponentLeft); }
         TURN { SWITCH(opponentRight, 2); MOVE(playerLeft, MOVE_CELEBRATE); }
@@ -21,8 +21,8 @@ DOUBLE_BATTLE_TEST("Curious Medicine resets ally's stat stages upon entering bat
         // Turn 1 - buff up
         MESSAGE("The opposing Scolipede used Quiver Dance!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-        // Turn 2 - Switch into Slowking
-        MESSAGE("2 sent out Slowking!");
+        // Turn 2 - Switch into Liollmon
+        MESSAGE("2 sent out Liollmon!");
         if (ability == ABILITY_CURIOUS_MEDICINE)
         {
             ABILITY_POPUP(opponentRight, ABILITY_CURIOUS_MEDICINE);

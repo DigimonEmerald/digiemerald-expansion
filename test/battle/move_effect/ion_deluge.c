@@ -18,7 +18,7 @@ WILD_BATTLE_TEST("Ion Deluge works the same way as always when used by a mon wit
 <<<<<<< HEAD
         MESSAGE("Wild Guilmon used Ion Deluge!");
 =======
-        MESSAGE("The wild Lanturn used Ion Deluge!");
+        MESSAGE("The wild Guilmon used Ion Deluge!");
 >>>>>>> upstream/master
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_VOLT_ABSORB);

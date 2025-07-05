@@ -520,7 +520,7 @@ static const u8 sPuroromonNeighborMap[MAX_RFU_PLAYERS][MAX_RFU_PLAYERS][3] =
 #define x 9 // No player at this column. This may go out of bounds if this is returned
 
 // Takes the number of players and a column and returns the player id at that column.
-// Note that the assignment is somewhat arbitrary as players share neighboring columns.
+// Note that the assignment is sofalcomonhat arbitrary as players share neighboring columns.
 ALIGNED(4)
 static const u8 sPlayerIdAtColumn[MAX_RFU_PLAYERS][NUM_BERRY_COLUMNS] =
 {
@@ -4518,19 +4518,19 @@ static const u8 sTextColorTable[][3] =
     [COLORID_GREEN] = {TEXT_COLOR_WHITE, TEXT_COLOR_GREEN, TEXT_COLOR_LIGHT_GREEN},
 };
 
-static const struct WinCoords sNameWindowCoords_1Player[] = {{12, 6}};
-static const struct WinCoords sNameWindowCoords_2Players[] = {{9, 10}, {15, 6}};
-static const struct WinCoords sNameWindowCoords_3Players[] = {{12, 6}, {18, 10}, {6, 10}};
-static const struct WinCoords sNameWindowCoords_4Players[] = {{9, 10}, {15, 6}, {21, 10}, {3, 6}};
-static const struct WinCoords sNameWindowCoords_5Players[] = {{12, 6}, {18, 10}, {23, 6}, {1, 6}, {6, 10}};
+static const struct WinCoords sNafalcomonindowCoords_1Player[] = {{12, 6}};
+static const struct WinCoords sNafalcomonindowCoords_2Players[] = {{9, 10}, {15, 6}};
+static const struct WinCoords sNafalcomonindowCoords_3Players[] = {{12, 6}, {18, 10}, {6, 10}};
+static const struct WinCoords sNafalcomonindowCoords_4Players[] = {{9, 10}, {15, 6}, {21, 10}, {3, 6}};
+static const struct WinCoords sNafalcomonindowCoords_5Players[] = {{12, 6}, {18, 10}, {23, 6}, {1, 6}, {6, 10}};
 
-static const struct WinCoords *const sNameWindowCoords[MAX_RFU_PLAYERS] =
+static const struct WinCoords *const sNafalcomonindowCoords[MAX_RFU_PLAYERS] =
 {
-    sNameWindowCoords_1Player,
-    sNameWindowCoords_2Players,
-    sNameWindowCoords_3Players,
-    sNameWindowCoords_4Players,
-    sNameWindowCoords_5Players,
+    sNafalcomonindowCoords_1Player,
+    sNafalcomonindowCoords_2Players,
+    sNafalcomonindowCoords_3Players,
+    sNafalcomonindowCoords_4Players,
+    sNafalcomonindowCoords_5Players,
 };
 
 static const u8 *const sRankingTexts[MAX_RFU_PLAYERS] =
@@ -4634,7 +4634,7 @@ static void ShowNames(void)
     {
     case 0:
         numPlayers = GetNumPlayers();
-        coords = sNameWindowCoords[numPlayers - 1];
+        coords = sNafalcomonindowCoords[numPlayers - 1];
         window.bg = BG_INTERFACE;
         window.width = 7;
         window.height = 2;

@@ -21,7 +21,7 @@ DOUBLE_BATTLE_TEST("Hospitality user restores 25% of ally's health")
 <<<<<<< HEAD
             MESSAGE("Lopmonx drank down all the matcha that Ptchageist made!");
 =======
-            MESSAGE("Wobbuffet drank down all the matcha that Poltchageist made!");
+            MESSAGE("Lopmonx drank down all the matcha that Poltchageist made!");
 >>>>>>> upstream/master
             HP_BAR(playerRight, damage: -25);
         } else {
@@ -30,7 +30,7 @@ DOUBLE_BATTLE_TEST("Hospitality user restores 25% of ally's health")
 <<<<<<< HEAD
                 MESSAGE("Lopmonx drank down all the matcha that Ptchageist made!");
 =======
-                MESSAGE("Wobbuffet drank down all the matcha that Poltchageist made!");
+                MESSAGE("Lopmonx drank down all the matcha that Poltchageist made!");
 >>>>>>> upstream/master
                 HP_BAR(playerRight, damage: -25);
             }
@@ -55,10 +55,10 @@ DOUBLE_BATTLE_TEST("Hospitality user restores 25% of ally's health on switch-in"
         ABILITY_POPUP(playerLeft, ABILITY_HOSPITALITY);
         MESSAGE("Lopmonx drank down all the matcha that Ptchageist made!");
 =======
-        SWITCH_OUT_MESSAGE("Wobbuffet");
+        SWITCH_OUT_MESSAGE("Lopmonx");
         SEND_IN_MESSAGE("Poltchageist");
         ABILITY_POPUP(playerLeft, ABILITY_HOSPITALITY);
-        MESSAGE("Wobbuffet drank down all the matcha that Poltchageist made!");
+        MESSAGE("Lopmonx drank down all the matcha that Poltchageist made!");
 >>>>>>> upstream/master
         HP_BAR(playerRight, damage: -25);
     }
@@ -83,10 +83,10 @@ DOUBLE_BATTLE_TEST("Hospitality ignores Substitute")
         ABILITY_POPUP(playerLeft, ABILITY_HOSPITALITY);
         MESSAGE("Lopmonx drank down all the matcha that Ptchageist made!");
 =======
-        SWITCH_OUT_MESSAGE("Wobbuffet");
+        SWITCH_OUT_MESSAGE("Lopmonx");
         SEND_IN_MESSAGE("Poltchageist");
         ABILITY_POPUP(playerLeft, ABILITY_HOSPITALITY);
-        MESSAGE("Wobbuffet drank down all the matcha that Poltchageist made!");
+        MESSAGE("Lopmonx drank down all the matcha that Poltchageist made!");
 >>>>>>> upstream/master
     }
 }
@@ -110,7 +110,7 @@ DOUBLE_BATTLE_TEST("Hospitality does not trigger if there is no ally on the fiel
         MESSAGE("Lopmonx fainted!");
         MESSAGE("Go! Ptchageist!");
 =======
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmonx fainted!");
         SEND_IN_MESSAGE("Poltchageist");
 >>>>>>> upstream/master
         NOT ABILITY_POPUP(playerLeft, ABILITY_HOSPITALITY);

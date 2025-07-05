@@ -98,7 +98,7 @@ SINGLE_BATTLE_TEST("Weak Armor still lowers boosts Speed if Defense can't go any
 <<<<<<< HEAD
         MESSAGE("Otamamon_red's Defense won't go lower!");
 =======
-        MESSAGE("Slugma's Defense won't go any lower!");
+        MESSAGE("Otamamon_red's Defense won't go any lower!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         MESSAGE("Otamamon_red's Weak Armor raised its Speed!");
@@ -131,7 +131,7 @@ SINGLE_BATTLE_TEST("Weak Armor still lowers Defense if Speed can't go any higher
 <<<<<<< HEAD
         MESSAGE("Otamamon_red's Speed won't go higher!");
 =======
-        MESSAGE("Slugma's Speed won't go any higher!");
+        MESSAGE("Otamamon_red's Speed won't go any higher!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->statStages[STAT_DEF], DEFAULT_STAT_STAGE - 1);
@@ -163,8 +163,8 @@ SINGLE_BATTLE_TEST("Weak Armor doesn't interrupt multi hit moves if Defense can'
         MESSAGE("Otamamon_x's Defense won't go lower!");
         MESSAGE("Otamamon_x's Weak Armor raised its Speed!");
 =======
-        MESSAGE("Magcargo's Defense won't go any lower!");
-        MESSAGE("Magcargo's Weak Armor raised its Speed!");
+        MESSAGE("Otamamon_x's Defense won't go any lower!");
+        MESSAGE("Otamamon_x's Weak Armor raised its Speed!");
 >>>>>>> upstream/master
         for (j = 0; j < 2; j++)
         {
@@ -176,8 +176,8 @@ SINGLE_BATTLE_TEST("Weak Armor doesn't interrupt multi hit moves if Defense can'
                 MESSAGE("Otamamon_x's Defense won't go lower!");
                 MESSAGE("Otamamon_x's Speed won't go higher!");
 =======
-                MESSAGE("Magcargo's Defense won't go any lower!");
-                MESSAGE("Magcargo's Speed won't go any higher!");
+                MESSAGE("Otamamon_x's Defense won't go any lower!");
+                MESSAGE("Otamamon_x's Speed won't go any higher!");
 >>>>>>> upstream/master
             }
         }
@@ -210,8 +210,8 @@ SINGLE_BATTLE_TEST("Weak Armor doesn't interrupt multi hit moves if Speed can't 
             MESSAGE("Otamamon_x's Weak Armor lowered its Defense!");
             MESSAGE("Otamamon_x's Speed won't go higher!");
 =======
-            MESSAGE("Magcargo's Weak Armor lowered its Defense!");
-            MESSAGE("Magcargo's Speed won't go any higher!");
+            MESSAGE("Otamamon_x's Weak Armor lowered its Defense!");
+            MESSAGE("Otamamon_x's Speed won't go any higher!");
 >>>>>>> upstream/master
         }
     } THEN {

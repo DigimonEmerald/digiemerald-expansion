@@ -30,7 +30,7 @@ AI_SINGLE_BATTLE_TEST("Choiced Pokémon switch out after using a status move onc
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_BAKOMON)
         OPPONENT(SPECIES_LOPUNNY) { Moves(MOVE_YAWN, MOVE_TACKLE); Item(heldItem); Ability(ability); }
-        OPPONENT(SPECIES_SWAMPERT) { Moves(MOVE_WATERFALL); }
+        OPPONENT(SPECIES_TERRIERMON_X) { Moves(MOVE_WATERFALL); }
     } WHEN {
         TURN { EXPECT_MOVE(opponent, MOVE_YAWN); }
         if (ability == ABILITY_KLUTZ) { // Klutz ignores item
@@ -64,7 +64,7 @@ AI_SINGLE_BATTLE_TEST("Choiced Pokémon won't use stat boosting moves")
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_BAKOMON)
         OPPONENT(SPECIES_LOPUNNY) { Moves(MOVE_SWORDS_DANCE, MOVE_TACKLE); Item(heldItem); Ability(ability); }
-        OPPONENT(SPECIES_SWAMPERT) { Moves(MOVE_WATERFALL); }
+        OPPONENT(SPECIES_TERRIERMON_X) { Moves(MOVE_WATERFALL); }
     } WHEN {
         if (ability == ABILITY_KLUTZ) { // Klutz ignores item
             TURN { EXPECT_MOVE(opponent, MOVE_SWORDS_DANCE); }
@@ -99,7 +99,7 @@ AI_SINGLE_BATTLE_TEST("Choiced Pokémon won't use status move if they are the on
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_BAKOMON)
         OPPONENT(SPECIES_LOPUNNY) { Moves(MOVE_YAWN, MOVE_TACKLE); Item(heldItem); Ability(ability); }
-        OPPONENT(SPECIES_SWAMPERT) { HP(isAlive); Moves(MOVE_WATERFALL); }
+        OPPONENT(SPECIES_TERRIERMON_X) { HP(isAlive); Moves(MOVE_WATERFALL); }
     } WHEN {
         if (isAlive == 1 || ability == ABILITY_KLUTZ) {
             TURN { EXPECT_MOVE(opponent, MOVE_YAWN); }
@@ -122,10 +122,10 @@ AI_SINGLE_BATTLE_TEST("Choiced Pokémon won't use status move if they don't have
 
     for (j = 0; j < ARRAY_COUNT(choiceItems); j++)
     {
-        PARAMETRIZE { ability = ABILITY_NONE;    heldItem = choiceItems[j]; species = SPECIES_SWAMPERT; move = MOVE_WATERFALL; }
-        PARAMETRIZE { ability = ABILITY_KLUTZ;   heldItem = choiceItems[j]; species = SPECIES_SWAMPERT; move = MOVE_WATERFALL; }
-        PARAMETRIZE { ability = ABILITY_NONE;    heldItem = choiceItems[j]; species = SPECIES_ELEKID; move = MOVE_THUNDER_WAVE; }
-        PARAMETRIZE { ability = ABILITY_KLUTZ;   heldItem = choiceItems[j]; species = SPECIES_ELEKID; move = MOVE_THUNDER_WAVE; }
+        PARAMETRIZE { ability = ABILITY_NONE;    heldItem = choiceItems[j]; species = SPECIES_TERRIERMON_X; move = MOVE_WATERFALL; }
+        PARAMETRIZE { ability = ABILITY_KLUTZ;   heldItem = choiceItems[j]; species = SPECIES_TERRIERMON_X; move = MOVE_WATERFALL; }
+        PARAMETRIZE { ability = ABILITY_NONE;    heldItem = choiceItems[j]; species = SPECIES_SANTAAGUMON; move = MOVE_THUNDER_WAVE; }
+        PARAMETRIZE { ability = ABILITY_KLUTZ;   heldItem = choiceItems[j]; species = SPECIES_SANTAAGUMON; move = MOVE_THUNDER_WAVE; }
     }
 
     GIVEN {
@@ -136,7 +136,7 @@ AI_SINGLE_BATTLE_TEST("Choiced Pokémon won't use status move if they don't have
         OPPONENT(SPECIES_LOPUNNY) { Moves(MOVE_YAWN, MOVE_TACKLE); Item(heldItem); Ability(ability); }
         OPPONENT(species) { Moves(move); }
     } WHEN {
-        if (species == SPECIES_SWAMPERT || ability == ABILITY_KLUTZ) {
+        if (species == SPECIES_TERRIERMON_X || ability == ABILITY_KLUTZ) {
             TURN { EXPECT_MOVE(opponent, MOVE_YAWN); }
         }
         else {
@@ -169,7 +169,7 @@ AI_SINGLE_BATTLE_TEST("Choiced Pokémon won't use status move if they are trappe
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(species) { Ability(playerAbility); }
         OPPONENT(SPECIES_LOPUNNY) { Moves(MOVE_YAWN, MOVE_TACKLE); Item(heldItem); Ability(aiAbility); }
-        OPPONENT(SPECIES_SWAMPERT) { Moves(MOVE_WATERFALL); }
+        OPPONENT(SPECIES_TERRIERMON_X) { Moves(MOVE_WATERFALL); }
     } WHEN {
         if (playerAbility != ABILITY_ARENA_TRAP || aiAbility == ABILITY_KLUTZ) {
             TURN { EXPECT_MOVE(opponent, MOVE_YAWN); }

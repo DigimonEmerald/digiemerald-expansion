@@ -993,7 +993,7 @@ gText_PokerusExplanation::
 
 gText_DoorOpenedFarAway::
 	.string "It sounded as if a door opened\n"
-	.string "somewhere far away.$"
+	.string "sofalcomonhere far away.$"
 
 gText_BigHoleInTheWall::
 	.string "There is a big hole in the wall.$"

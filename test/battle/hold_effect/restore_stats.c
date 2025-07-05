@@ -20,7 +20,7 @@ SINGLE_BATTLE_TEST("White Herb restores stats when they're lowered")
 <<<<<<< HEAD
         MESSAGE("Lopmonx's White Herb restored its status!");
 =======
-        MESSAGE("Wobbuffet returned its stats to normal using its White Herb!");
+        MESSAGE("Lopmonx returned its stats to normal using its White Herb!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT(player->item == ITEM_NONE);
@@ -42,7 +42,7 @@ SINGLE_BATTLE_TEST("White Herb restores stats after Attack was lowered by Intimi
 <<<<<<< HEAD
         MESSAGE("Lopmonx's White Herb restored its status!");
 =======
-        MESSAGE("Wobbuffet returned its stats to normal using its White Herb!");
+        MESSAGE("Lopmonx returned its stats to normal using its White Herb!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT(player->item == ITEM_NONE);
@@ -71,7 +71,7 @@ DOUBLE_BATTLE_TEST("White Herb restores stats after Attack was lowered by Intimi
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponentRight);
         MESSAGE("Foe Exveemon's White Herb restored its status!");
 =======
-        MESSAGE("The opposing Wobbuffet returned its stats to normal using its White Herb!");
+        MESSAGE("The opposing Lopmonx returned its stats to normal using its White Herb!");
 
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponentRight);
@@ -104,11 +104,11 @@ SINGLE_BATTLE_TEST("White Herb restores stats after Attack was lowered by Intimi
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
             MESSAGE("Lopmonx's White Herb restored its status!");
 =======
-        MESSAGE("Wobbuffet returned its stats to normal using its White Herb!");
+        MESSAGE("Lopmonx returned its stats to normal using its White Herb!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CLOSE_COMBAT, player);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Wobbuffet returned its stats to normal using its White Herb!");
+            MESSAGE("Lopmonx returned its stats to normal using its White Herb!");
 >>>>>>> upstream/master
         }
     } THEN {
@@ -149,7 +149,7 @@ SINGLE_BATTLE_TEST("White Herb restores stats after all hits of a multi hit move
 <<<<<<< HEAD
         MESSAGE("Lopmonx's White Herb restored its status!");
 =======
-        MESSAGE("Wobbuffet returned its stats to normal using its White Herb!");
+        MESSAGE("Lopmonx returned its stats to normal using its White Herb!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT(player->item == ITEM_NONE);
@@ -177,7 +177,7 @@ SINGLE_BATTLE_TEST("White Herb wont have time to activate if it is knocked off o
 <<<<<<< HEAD
             MESSAGE("Foe Lopmonx stole Otamamon_red's White Herb!");
 =======
-            MESSAGE("The opposing Wobbuffet stole Slugma's White Herb!");
+            MESSAGE("The opposing Lopmonx stole Otamamon_red's White Herb!");
 >>>>>>> upstream/master
         }
         ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
@@ -192,11 +192,11 @@ SINGLE_BATTLE_TEST("White Herb wont have time to activate if it is knocked off o
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
             MESSAGE("Lopmonx's White Herb restored its status!");
 =======
-            MESSAGE("The opposing Wobbuffet knocked off Slugma's White Herb!");
+            MESSAGE("The opposing Lopmonx knocked off Otamamon_red's White Herb!");
         }
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Wobbuffet returned its stats to normal using its White Herb!");
+            MESSAGE("Lopmonx returned its stats to normal using its White Herb!");
 >>>>>>> upstream/master
         }
     } THEN {
@@ -225,10 +225,10 @@ SINGLE_BATTLE_TEST("White Herb wont have time to activate if Magician steals it"
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
             MESSAGE("Lopmonx's White Herb restored its status!");
 =======
-        MESSAGE("The opposing Fennekin stole Slugma's White Herb!");
+        MESSAGE("The opposing Fennekin stole Otamamon_red's White Herb!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Wobbuffet returned its stats to normal using its White Herb!");
+            MESSAGE("Lopmonx returned its stats to normal using its White Herb!");
 >>>>>>> upstream/master
         }
     } THEN {
@@ -260,7 +260,7 @@ SINGLE_BATTLE_TEST("White Herb has correct interactions with Intimidate triggere
 <<<<<<< HEAD
             MESSAGE("Hackmon's White Herb restored its status!");
 =======
-            MESSAGE("Igglybuff returned its stats to normal using its White Herb!");
+            MESSAGE("Hackmon returned its stats to normal using its White Herb!");
 >>>>>>> upstream/master
         }
     } THEN {

@@ -80,7 +80,7 @@ SINGLE_BATTLE_TEST("Mind Blown causes the user & the target to faint when below 
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx fainted!");
 =======
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmonx fainted!");
 >>>>>>> upstream/master
         HP_BAR(player, hp: 0);
         MESSAGE("Lopmonx fainted!");
@@ -148,7 +148,7 @@ SINGLE_BATTLE_TEST("Mind Blown is blocked by Damp")
 <<<<<<< HEAD
         MESSAGE("Foe Demmeramon's Damp prevents Lopmonx from using Mind Blown!");
 =======
-        MESSAGE("The opposing Demmeramon's Damp prevents Wobbuffet from using Mind Blown!");
+        MESSAGE("The opposing Demmeramon's Damp prevents Lopmonx from using Mind Blown!");
 >>>>>>> upstream/master
     }
 }
@@ -172,7 +172,7 @@ SINGLE_BATTLE_TEST("Mind Blown makes the user lose HP even if it is absorbed by 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_MIND_BLOWN].type == TYPE_FIRE);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_CYNDAQUIL) { Ability(ABILITY_FLASH_FIRE); }
+        OPPONENT(SPECIES_FLORAMON) { Ability(ABILITY_FLASH_FIRE); }
     } WHEN {
         TURN { MOVE(player, MOVE_MIND_BLOWN); }
     } SCENE {

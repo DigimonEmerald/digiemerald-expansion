@@ -36,8 +36,8 @@ SINGLE_BATTLE_TEST("Dream Eater fails on awake targets")
         MESSAGE("Lopmonx used Dream Eater!");
         MESSAGE("Foe Lopmonx wasn't affected!");
 =======
-        MESSAGE("Wobbuffet used Dream Eater!");
-        MESSAGE("The opposing Wobbuffet wasn't affected!");
+        MESSAGE("Lopmonx used Dream Eater!");
+        MESSAGE("The opposing Lopmonx wasn't affected!");
 >>>>>>> upstream/master
     }
 }
@@ -50,8 +50,8 @@ SINGLE_BATTLE_TEST("Dream Eater fails if Heal Block applies")
         OPPONENT(SPECIES_LOPMONX);
 =======
         ASSUME(B_HEAL_BLOCKING >= GEN_6);
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(opponent, MOVE_HEAL_BLOCK); MOVE(player, MOVE_DREAM_EATER); }

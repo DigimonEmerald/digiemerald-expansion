@@ -83,7 +83,7 @@ struct FollowerMsgInfoExtended
 #define MATCH_NEAR_MB(mb, distance) MATCH_U8(MSG_COND_NEAR_MB, mb, distance, 0)
 
 enum {
-    COND_MSG_CELEBI,
+    COND_MSG_STRABIMON,
     COND_MSG_FIRE,
     COND_MSG_EVER_GRANDE,
     COND_MSG_ROUTE_112,

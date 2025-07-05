@@ -6,7 +6,7 @@ SINGLE_BATTLE_TEST("Liquid Ooze causes Absorb users to lose HP instead of heal")
     s16 damage;
     s16 healed;
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_MINOMON) { Ability(ABILITY_LIQUID_OOZE); }
     } WHEN {
         TURN { MOVE(player, MOVE_ABSORB); }
@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Liquid Ooze causes Absorb users to lose HP instead of heal")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ABSORB, player);
         HP_BAR(opponent, captureDamage: &damage);
         HP_BAR(player, captureDamage: &healed);
-        MESSAGE("Wobbuffet sucked up the liquid ooze!");
+        MESSAGE("Lopmonx sucked up the liquid ooze!");
     } THEN {
         EXPECT_MUL_EQ(damage, Q_4_12(0.5), healed);
     }
@@ -43,18 +43,18 @@ DOUBLE_BATTLE_TEST("Liquid Ooze causes Matcha Gatcha users to lose HP instead of
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_MATCHA_GOTCHA].effect == EFFECT_ABSORB);
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_MINOMON) { Ability(ABILITY_LIQUID_OOZE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_MATCHA_GOTCHA); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MATCHA_GOTCHA, playerLeft);
         HP_BAR(opponentLeft);
         HP_BAR(playerLeft);
-        MESSAGE("Wobbuffet sucked up the liquid ooze!");
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmonx sucked up the liquid ooze!");
+        MESSAGE("Lopmonx fainted!");
     }
 }
 
@@ -62,18 +62,18 @@ DOUBLE_BATTLE_TEST("Liquid Ooze will faint Matcha Gatcha users if it deals enoug
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_MATCHA_GOTCHA].effect == EFFECT_ABSORB);
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_MINOMON) { Ability(ABILITY_LIQUID_OOZE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_MATCHA_GOTCHA); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MATCHA_GOTCHA, playerLeft);
         HP_BAR(opponentLeft);
         HP_BAR(playerLeft);
-        MESSAGE("Wobbuffet sucked up the liquid ooze!");
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmonx sucked up the liquid ooze!");
+        MESSAGE("Lopmonx fainted!");
     }
 }
 
@@ -86,22 +86,22 @@ SINGLE_BATTLE_TEST("Liquid Ooze causes Strength Sap users to lose HP instead of 
     PARAMETRIZE { atkStat = 490; } // Checks that attacker can faint with no problems.
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Attack(atkStat); Ability(ABILITY_LIQUID_OOZE); }
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Attack(atkStat); Ability(ABILITY_LIQUID_OOZE); }
     } WHEN {
         TURN { MOVE(player, MOVE_STRENGTH_SAP); if (atkStat == 490) { SEND_OUT(player, 1); } }
     } SCENE {
-        MESSAGE("Wobbuffet used Strength Sap!");
+        MESSAGE("Lopmonx used Strength Sap!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STRENGTH_SAP, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("The opposing Wobbuffet's Attack fell!");
+        MESSAGE("The opposing Lopmonx's Attack fell!");
         ABILITY_POPUP(opponent, ABILITY_LIQUID_OOZE);
         HP_BAR(player, captureDamage: &lostHp);
-        MESSAGE("Wobbuffet sucked up the liquid ooze!");
+        MESSAGE("Lopmonx sucked up the liquid ooze!");
         if (atkStat >= 490) {
-            MESSAGE("Wobbuffet fainted!");
-            SEND_IN_MESSAGE("Wobbuffet");
+            MESSAGE("Lopmonx fainted!");
+            SEND_IN_MESSAGE("Lopmonx");
         }
     } THEN {
         EXPECT_EQ(lostHp, atkStat);

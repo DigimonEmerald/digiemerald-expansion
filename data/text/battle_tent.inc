@@ -395,7 +395,7 @@ VerdanturfTown_BattleTentLobby_Text_ExplainMoveRules:
 	.string "There are defensive moves that are\n"
 	.string "used to prepare for enemy attacks or\l"
 	.string "used to heal HP and so on.\p"
-	.string "There are also other somewhat-odd\n"
+	.string "There are also other sofalcomonhat-odd\n"
 	.string "moves that may enfeeble the foes with\l"
 	.string "stat problems including poison and \l"
 	.string "paralysis.\p"

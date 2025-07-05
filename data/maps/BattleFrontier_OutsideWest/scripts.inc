@@ -519,7 +519,7 @@ BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers:
 BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier:
 	.string "I heard a rumor that someone saw\n"
 	.string "a POKéMON with an unusually long tail\l"
-	.string "somewhere in the BATTLE FRONTIER.\p"
+	.string "sofalcomonhere in the BATTLE FRONTIER.\p"
 	.string "It must be adorable. I'm sure of it…\p"
 	.string "Oh, challenges can wait. I feel driven\n"
 	.string "to find the delightful creature!$"

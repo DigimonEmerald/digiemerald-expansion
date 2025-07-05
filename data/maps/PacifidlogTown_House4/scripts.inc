@@ -23,7 +23,7 @@ PacifidlogTown_House4_EventScript_Yes::
 	end
 
 PacifidlogTown_House4_EventScript_No::
-	msgbox PacifidlogTown_House4_Text_YouHaveToComeFromSomewhere, MSGBOX_DEFAULT
+	msgbox PacifidlogTown_House4_Text_YouHaveToComeFromSofalcomonhere, MSGBOX_DEFAULT
 	release
 	end
 
@@ -31,7 +31,7 @@ PacifidlogTown_House4_Text_PeopleSawHighFlyingPokemon:
 	.string "People were saying they saw a POKéMON\n"
 	.string "flying high above HOENN.\p"
 	.string "Is it flying around all the time?\n"
-	.string "Doesn't it need to rest somewhere?$"
+	.string "Doesn't it need to rest sofalcomonhere?$"
 
 PacifidlogTown_House4_Text_SkyPokemon:
 	.string "A sky POKéMON!\n"
@@ -45,9 +45,9 @@ PacifidlogTown_House4_Text_YesTown:
 	.string "YES TOWN?\p"
 	.string "I've never heard of a place like that.$"
 
-PacifidlogTown_House4_Text_YouHaveToComeFromSomewhere:
+PacifidlogTown_House4_Text_YouHaveToComeFromSofalcomonhere:
 	.string "No? That doesn't make any sense.\n"
-	.string "You have to come from somewhere.\p"
+	.string "You have to come from sofalcomonhere.\p"
 	.string "Oh! Wait! You're not going to say you\n"
 	.string "were born at the bottom of the sea?$"
 

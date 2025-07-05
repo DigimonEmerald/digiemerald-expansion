@@ -27,9 +27,9 @@ DOUBLE_BATTLE_TEST("Beak Blast's charging message is shown before other moves ar
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentRight);
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentRight);
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentLeft);
 
@@ -71,18 +71,18 @@ DOUBLE_BATTLE_TEST("Beak Blast burns all who make contact with the pokemon")
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentRight);
         MESSAGE("Foe Lopmonx was burned!");
 =======
-        MESSAGE("The opposing Wobbuffet used Tackle!");
+        MESSAGE("The opposing Lopmonx used Tackle!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
         HP_BAR(playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentLeft);
-        MESSAGE("The opposing Wobbuffet was burned!");
+        MESSAGE("The opposing Lopmonx was burned!");
         STATUS_ICON(opponentLeft, burn: TRUE);
 
-        MESSAGE("The opposing Wobbuffet used Tackle!");
+        MESSAGE("The opposing Lopmonx used Tackle!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);
         HP_BAR(playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentRight);
-        MESSAGE("The opposing Wobbuffet was burned!");
+        MESSAGE("The opposing Lopmonx was burned!");
 >>>>>>> upstream/master
         STATUS_ICON(opponentRight, burn: TRUE);
 
@@ -119,7 +119,7 @@ SINGLE_BATTLE_TEST("Beak Blast burns only when contact moves are used")
 <<<<<<< HEAD
             MESSAGE("Foe Lopmonx was burned!");
 =======
-            MESSAGE("The opposing Wobbuffet was burned!");
+            MESSAGE("The opposing Lopmonx was burned!");
 >>>>>>> upstream/master
             STATUS_ICON(opponent, burn: TRUE);
         }
@@ -129,7 +129,7 @@ SINGLE_BATTLE_TEST("Beak Blast burns only when contact moves are used")
 <<<<<<< HEAD
                 MESSAGE("Foe Lopmonx was burned!");
 =======
-                MESSAGE("The opposing Wobbuffet was burned!");
+                MESSAGE("The opposing Lopmonx was burned!");
 >>>>>>> upstream/master
                 STATUS_ICON(opponent, burn: TRUE);
             }

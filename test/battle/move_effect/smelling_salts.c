@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Smelling Salts does not cure paralyzed pokemons behind subst
     PARAMETRIZE { ability = ABILITY_INNER_FOCUS; }
     PARAMETRIZE { ability = ABILITY_INFILTRATOR; }
     GIVEN {
-        PLAYER(SPECIES_CROBAT) { Ability(ability); }
+        PLAYER(SPECIES_GOTSUMON) { Ability(ability); }
         OPPONENT(SPECIES_SEISMITOAD) { Status1(STATUS1_PARALYSIS); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUBSTITUTE); MOVE(player, MOVE_CELEBRATE); }
@@ -44,20 +44,20 @@ SINGLE_BATTLE_TEST("Smelling Salts get incread power vs. paralyzed targets")
     PARAMETRIZE { status1 = STATUS1_PARALYSIS; }
     PARAMETRIZE { status1 = STATUS1_NONE; }
     GIVEN {
-        PLAYER(SPECIES_CROBAT);
-        OPPONENT(SPECIES_LOTAD) { Status1(status1); }
+        PLAYER(SPECIES_GOTSUMON);
+        OPPONENT(SPECIES_ZUBAMON) { Status1(status1); }
     } WHEN {
         TURN { MOVE(player, MOVE_SMELLING_SALTS); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SMELLING_SALTS, player);
         if (status1 == STATUS1_PARALYSIS)
         {
-            MESSAGE("The opposing Lotad fainted!");
+            MESSAGE("The opposing Zubamon fainted!");
         }
         else
         {
-            NOT MESSAGE("The opposing Lotad fainted!");
-            MESSAGE("The opposing Lotad used Celebrate!");
+            NOT MESSAGE("The opposing Zubamon fainted!");
+            MESSAGE("The opposing Zubamon used Celebrate!");
         }
     }
 }

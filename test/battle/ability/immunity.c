@@ -29,7 +29,7 @@ SINGLE_BATTLE_TEST("Immunity prevents Toxic bad poison")
 <<<<<<< HEAD
         MESSAGE("Foe Dracomon's Immunity prevents poisoning!");
 =======
-        MESSAGE("The opposing Snorlax's Immunity prevents poisoning!");
+        MESSAGE("The opposing Dracomon's Immunity prevents poisoning!");
 >>>>>>> upstream/master
         NOT STATUS_ICON(opponent, poison: TRUE);
     }

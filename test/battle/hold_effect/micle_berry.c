@@ -70,8 +70,8 @@ SINGLE_BATTLE_TEST("Micle Berry increases the accuracy of the next used move acr
     GIVEN {
         ASSUME(gMovesInfo[MOVE_ROCK_SLIDE].accuracy == 90);
         PASSES_RANDOMLY(100, 100, RNG_ACCURACY);
-        PLAYER(SPECIES_WOBBUFFET) { MaxHP(100); HP(26); Item(ITEM_MICLE_BERRY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { MaxHP(100); HP(26); Item(ITEM_MICLE_BERRY); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
         TURN { MOVE(player, MOVE_ROCK_SLIDE); }
@@ -87,8 +87,8 @@ SINGLE_BATTLE_TEST("Micle Berry increases the accuracy of the next used move the
     GIVEN {
         ASSUME(gMovesInfo[MOVE_ROCK_SLIDE].accuracy == 90);
         PASSES_RANDOMLY(100, 100, RNG_ACCURACY);
-        PLAYER(SPECIES_WOBBUFFET) { MaxHP(100); HP(26); Item(ITEM_MICLE_BERRY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { MaxHP(100); HP(26); Item(ITEM_MICLE_BERRY); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); MOVE(player, MOVE_ROCK_SLIDE); }
     } SCENE {

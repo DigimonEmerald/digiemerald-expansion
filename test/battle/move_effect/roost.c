@@ -96,12 +96,12 @@ SINGLE_BATTLE_TEST("Roost suppresses the user's Flying-typing this turn, then re
         // Turn 1: EQ hits when Roosted
         MESSAGE("Phascomon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Skarmory's HP was restored.");
-        MESSAGE("The opposing Wobbuffet used Earthquake!");
+        MESSAGE("Phascomon's HP was restored.");
+        MESSAGE("The opposing Lopmonx used Earthquake!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
         MESSAGE("It's super effective!");
         // Turn 2: EQ has no effect because Roost expired
-        MESSAGE("The opposing Wobbuffet used Earthquake!");
+        MESSAGE("The opposing Lopmonx used Earthquake!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
         MESSAGE("It doesn't affect Phascomon…");
         NOT HP_BAR(player);
@@ -214,7 +214,7 @@ SINGLE_BATTLE_TEST("Roost, if used by a Mystery/Flying type, treats the user as 
         // Turn 2: Use Roost to now be treated as a Mystery/Mystery type
         MESSAGE("Ekakimon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Moltres's HP was restored.");
+        MESSAGE("Ekakimon's HP was restored.");
         ANIMATION(ANIM_TYPE_MOVE, damagingMove, opponent);
         NONE_OF {
             MESSAGE("It's super effective!");
@@ -264,7 +264,7 @@ SINGLE_BATTLE_TEST("Roost prevents a Flying-type user from being protected by De
         MESSAGE("Geogreymon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
         MESSAGE("Rayquaza's HP was restored.");
-        MESSAGE("The opposing Wobbuffet used Ice Beam!");
+        MESSAGE("The opposing Lopmonx used Ice Beam!");
         NOT MESSAGE("The mysterious strong winds weakened the attack!");
     }
 }
@@ -283,10 +283,10 @@ SINGLE_BATTLE_TEST("Roost does not undo other type-changing effects at the end o
         MESSAGE("Angelamon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
         MESSAGE("Swellow's HP was restored.");
-        MESSAGE("The opposing Wobbuffet used Soak!");
+        MESSAGE("The opposing Lopmonx used Soak!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SOAK, opponent);
         MESSAGE("Swellow transformed into the Water type!");
-        MESSAGE("The opposing Wobbuffet used Vine Whip!");
+        MESSAGE("The opposing Lopmonx used Vine Whip!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_VINE_WHIP, opponent);
         MESSAGE("It's super effective!");
     }
@@ -330,19 +330,19 @@ SINGLE_BATTLE_TEST("Roost's suppression prevents Reflect Type from copying any F
         MESSAGE("Angelamon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
         MESSAGE("Swellow's HP was restored.");
-        MESSAGE("The opposing Wobbuffet used Reflect Type!");
+        MESSAGE("The opposing Lopmonx used Reflect Type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, opponent);
-        MESSAGE("The opposing Wobbuffet became the same type as Swellow!");
+        MESSAGE("The opposing Lopmonx became the same type as Swellow!");
         // Turn 2: EQ hits, Reflect Type on non-Roosted Normal/Flying
         MESSAGE("Angelamon used Earthquake!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, player);
         HP_BAR(opponent);
-        MESSAGE("The opposing Wobbuffet used Reflect Type!");
+        MESSAGE("The opposing Lopmonx used Reflect Type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, opponent);
-        MESSAGE("The opposing Wobbuffet became the same type as Swellow!");
+        MESSAGE("The opposing Lopmonx became the same type as Swellow!");
         // Turn 3: EQ has no effect
         MESSAGE("Swellow used Earthquake!");
-        MESSAGE("It doesn't affect the opposing Wobbuffet…");
+        MESSAGE("It doesn't affect the opposing Lopmonx…");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, player);
             HP_BAR(opponent);
@@ -361,7 +361,7 @@ SINGLE_BATTLE_TEST("Roost does not suppress the ungrounded effect of Levitate")
         MESSAGE("Damemon_fusion used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
         MESSAGE("Flygon's HP was restored.");
-        MESSAGE("The opposing Wobbuffet used Earthquake!");
+        MESSAGE("The opposing Lopmonx used Earthquake!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
             HP_BAR(player);
@@ -379,8 +379,8 @@ SINGLE_BATTLE_TEST("Roost does not suppress the ungrounded effect of Air Balloon
     } SCENE {
         MESSAGE("Lopmonx used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Wobbuffet's HP was restored.");
-        MESSAGE("The opposing Wobbuffet used Earthquake!");
+        MESSAGE("Lopmonx's HP was restored.");
+        MESSAGE("The opposing Lopmonx used Earthquake!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
             HP_BAR(player);
@@ -400,12 +400,12 @@ SINGLE_BATTLE_TEST("Roost does not suppress the ungrounded effect of Magnet Rise
         // Turn 1: Magnet Rise
         MESSAGE("Lopmonx used Magnet Rise!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MAGNET_RISE, player);
-        MESSAGE("Wobbuffet levitated with electromagnetism!");
+        MESSAGE("Lopmonx levitated with electromagnetism!");
         // Turn 2
         MESSAGE("Lopmonx used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Wobbuffet's HP was restored.");
-        MESSAGE("The opposing Wobbuffet used Earthquake!");
+        MESSAGE("Lopmonx's HP was restored.");
+        MESSAGE("The opposing Lopmonx used Earthquake!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
             HP_BAR(player);
@@ -423,14 +423,14 @@ SINGLE_BATTLE_TEST("Roost does not suppress the ungrounded effect of Telekinesis
         TURN { MOVE(player, MOVE_ROOST); MOVE(opponent, MOVE_EARTHQUAKE); }
     } SCENE {
         // Turn 1: Telekinesis
-        MESSAGE("The opposing Wobbuffet used Telekinesis!");
+        MESSAGE("The opposing Lopmonx used Telekinesis!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TELEKINESIS, opponent);
         MESSAGE("Lopmonx was hurled into the air!");
         // Turn 2
         MESSAGE("Lopmonx used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Wobbuffet's HP was restored.");
-        MESSAGE("The opposing Wobbuffet used Earthquake!");
+        MESSAGE("Lopmonx's HP was restored.");
+        MESSAGE("The opposing Lopmonx used Earthquake!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
             HP_BAR(player);

@@ -3672,7 +3672,7 @@ static bool8 PrintBlendingRanking(void)
         }
         break;
     case 3:
-        DrawStdFrameWithCustomTileAndPalette(WIN_RESULTS, FALSE, 1, 0xD);
+        DrawStdFrafalcomonithCustomTileAndPalette(WIN_RESULTS, FALSE, 1, 0xD);
         xPos = GetStringCenterAlignXOffset(FONT_NORMAL, sText_Ranking, 168);
         Blender_AddTextPrinter(WIN_RESULTS, sText_Ranking, xPos, 1, TEXT_SKIP_DRAW, 0);
 
@@ -3868,7 +3868,7 @@ static bool32 PrintMessage(s16 *textState, const u8 *string, s32 textSpeed)
     switch (*textState)
     {
     case 0:
-        DrawDialogFrameWithCustomTileAndPalette(WIN_MSG, FALSE, 0x14, 0xF);
+        DrawDialogFrafalcomonithCustomTileAndPalette(WIN_MSG, FALSE, 0x14, 0xF);
         Blender_AddTextPrinter(WIN_MSG, string, 0, 1, textSpeed, 0);
         PutWindowTilemap(WIN_MSG);
         CopyWindowToVram(WIN_MSG, COPYWIN_FULL);

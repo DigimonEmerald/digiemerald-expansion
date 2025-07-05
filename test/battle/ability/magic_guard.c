@@ -24,7 +24,7 @@ SINGLE_BATTLE_TEST("Magic Guard ignores immobilization that can be caused by par
         PASSES_RANDOMLY(75, 100, RNG_PARALYSIS);
     GIVEN {
         PLAYER(SPECIES_PYONMON) { Ability(ABILITY_MAGIC_GUARD); Status1(STATUS1_PARALYSIS);}
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE); }
     } SCENE {
@@ -36,7 +36,7 @@ SINGLE_BATTLE_TEST("Magic Guard does not ignore speed stat changes caused by par
 {
     GIVEN {
         PLAYER(SPECIES_PYONMON) { Speed(100); Ability(ABILITY_MAGIC_GUARD); Status1(STATUS1_PARALYSIS);}
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(99); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(99); }
     } WHEN {
         TURN { }
     } SCENE {

@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Charm lowers Attack by 2 stages", s16 damage)
 <<<<<<< HEAD
             MESSAGE("Foe Lopmonx's Attack harshly fell!");
 =======
-            MESSAGE("The opposing Wobbuffet's Attack harshly fell!");
+            MESSAGE("The opposing Lopmonx's Attack harshly fell!");
 >>>>>>> upstream/master
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);

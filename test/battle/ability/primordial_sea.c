@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Primordial Sea blocks damaging Fire-type moves")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Ember!");
 =======
-        MESSAGE("The opposing Wobbuffet used Ember!");
+        MESSAGE("The opposing Lopmonx used Ember!");
 >>>>>>> upstream/master
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_EMBER, opponent);
         MESSAGE("The Fire-type attack fizzled out in the heavy rain!");
@@ -27,7 +27,7 @@ SINGLE_BATTLE_TEST("Primordial Sea blocks damaging Fire-type moves")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Ember!");
 =======
-        MESSAGE("The opposing Wobbuffet used Ember!");
+        MESSAGE("The opposing Lopmonx used Ember!");
 >>>>>>> upstream/master
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_EMBER, opponent);
         MESSAGE("The Fire-type attack fizzled out in the heavy rain!");
@@ -53,7 +53,7 @@ DOUBLE_BATTLE_TEST("Primordial Sea blocks damaging Fire-type moves and prints th
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Eruption!");
 =======
-        MESSAGE("The opposing Wobbuffet used Eruption!");
+        MESSAGE("The opposing Lopmonx used Eruption!");
 >>>>>>> upstream/master
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_ERUPTION, opponentLeft);
         MESSAGE("The Fire-type attack fizzled out in the heavy rain!");
@@ -77,7 +77,7 @@ SINGLE_BATTLE_TEST("Primordial Sea does not block a move if pokemon is asleep an
         MESSAGE("Foe Lopmonx is fast asleep.");
 =======
         NOT MESSAGE("The Fire-type attack fizzled out in the heavy rain!");
-        MESSAGE("The opposing Wobbuffet is fast asleep.");
+        MESSAGE("The opposing Lopmonx is fast asleep.");
 >>>>>>> upstream/master
     }
 }

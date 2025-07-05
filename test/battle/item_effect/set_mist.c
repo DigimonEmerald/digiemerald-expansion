@@ -18,8 +18,8 @@ SINGLE_BATTLE_TEST("Guard Spec. sets Mist effect on the battlers side")
         MESSAGE("Lopmonx is protected by MIST!");
 =======
         MESSAGE("Your team became shrouded in mist!");
-        MESSAGE("The opposing Wobbuffet used Growl!");
-        MESSAGE("Wobbuffet is protected by the mist!");
+        MESSAGE("The opposing Lopmonx used Growl!");
+        MESSAGE("Lopmonx is protected by the mist!");
 >>>>>>> upstream/master
     }
 }

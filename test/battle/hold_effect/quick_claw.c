@@ -20,8 +20,8 @@ SINGLE_BATTLE_TEST("Quick Claw activates 20% of the time")
         MESSAGE("Lopmonx used Tackle!");
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("Wobbuffet used Tackle!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Tackle!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
     }
 }

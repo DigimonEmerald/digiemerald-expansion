@@ -677,7 +677,7 @@ Route111_Text_TrainerTipsSpAtkSpDef:
 
 Route111_Text_ShouldBeMirageTowerAroundHere:
 	.string "There should be a tower made of sand\n"
-	.string "around here somewhere.\p"
+	.string "around here sofalcomonhere.\p"
 	.string "But for some reason, it can be seen\n"
 	.string "sometimes, and sometimes not.\p"
 	.string "That's why I call it the MIRAGE TOWER.$"

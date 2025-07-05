@@ -32,11 +32,11 @@ SINGLE_BATTLE_TEST("Kee Berry raises the holder's Defense by one stage when hit 
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
                 MESSAGE("Using Kee Berry, the Defense of Foe Lopmonx rose!");
 =======
-            MESSAGE("Using Kee Berry, the Defense of the opposing Wobbuffet rose!");
+            MESSAGE("Using Kee Berry, the Defense of the opposing Lopmonx rose!");
         } else {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-                MESSAGE("Using Kee Berry, the Defense of the opposing Wobbuffet rose!");
+                MESSAGE("Using Kee Berry, the Defense of the opposing Lopmonx rose!");
 >>>>>>> upstream/master
             }
         }
@@ -85,9 +85,9 @@ SINGLE_BATTLE_TEST("Kee Berry doesn't trigger if the item hold user used a physi
 DOUBLE_BATTLE_TEST("Kee Berry doesn't trigger if partner was hit")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT) { Item(ITEM_KEE_BERRY); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft); }

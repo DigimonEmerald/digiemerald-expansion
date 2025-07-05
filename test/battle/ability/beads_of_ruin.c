@@ -70,7 +70,7 @@ SINGLE_BATTLE_TEST("Beads of Ruin's message displays correctly after all battler
 <<<<<<< HEAD
         MESSAGE("Go! Lopmonx!");
 =======
-        SEND_IN_MESSAGE("Wobbuffet");
+        SEND_IN_MESSAGE("Lopmonx");
 >>>>>>> upstream/master
         MESSAGE("2 sent out Chi-Yu!");
         ABILITY_POPUP(opponent, ABILITY_BEADS_OF_RUIN);

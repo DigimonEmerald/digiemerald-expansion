@@ -4156,8 +4156,8 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 80,
-        .iconPic = gItemIcon_Magmarizer,
-        .iconPalette = gItemIconPalette_Magmarizer,
+        .iconPic = gItemIcon_Chikurimonizer,
+        .iconPalette = gItemIconPalette_Chikurimonizer,
     },
 
     [ITEM_DUBIOUS_DISC] =
@@ -5420,8 +5420,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Kangaskhanite,
-        .iconPalette = gItemIconPalette_Kangaskhanite,
+        .iconPic = gItemIcon_betamon_xite,
+        .iconPalette = gItemIconPalette_betamon_xite,
     },
 
     [ITEM_TYUTYUMONITE] =
@@ -5437,8 +5437,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Pinsirite,
-        .iconPalette = gItemIconPalette_Pinsirite,
+        .iconPic = gItemIcon_Tyutyumonite,
+        .iconPalette = gItemIconPalette_Tyutyumonite,
     },
 
     [ITEM_COMMDRAMONITE] =
@@ -5454,8 +5454,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Gyaradosite,
-        .iconPalette = gItemIconPalette_Gyaradosite,
+        .iconPic = gItemIcon_Commdramonite,
+        .iconPalette = gItemIconPalette_Commdramonite,
     },
 
     [ITEM_DRACMONITE] =
@@ -5471,8 +5471,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Aerodactylite,
-        .iconPalette = gItemIconPalette_Aerodactylite,
+        .iconPic = gItemIcon_Dracmonite,
+        .iconPalette = gItemIconPalette_Dracmonite,
     },
 
     [ITEM_AGUMON_FAKE_EXPERTNITE_X] =
@@ -5486,8 +5486,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_MewtwoniteX,
-        .iconPalette = gItemIconPalette_MewtwoniteX,
+        .iconPic = gItemIcon_Agumon_fake_expertniteX,
+        .iconPalette = gItemIconPalette_Agumon_fake_expertniteX,
     },
 
     [ITEM_AGUMON_FAKE_EXPERTNITE_Y] =
@@ -5501,8 +5501,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_MewtwoniteY,
-        .iconPalette = gItemIconPalette_MewtwoniteY,
+        .iconPic = gItemIcon_Agumon_fake_expertniteY,
+        .iconPalette = gItemIconPalette_Agumon_fake_expertniteY,
     },
 
     [ITEM_IMPMONITE] =
@@ -5518,8 +5518,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Ampharosite,
-        .iconPalette = gItemIconPalette_Ampharosite,
+        .iconPic = gItemIcon_Impmonite,
+        .iconPalette = gItemIconPalette_Impmonite,
     },
 
     [ITEM_KODEKACMONITE] =
@@ -5535,8 +5535,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Steelixite,
-        .iconPalette = gItemIconPalette_Steelixite,
+        .iconPic = gItemIcon_Kodekacmonite,
+        .iconPalette = gItemIconPalette_Kodekacmonite,
     },
 
     [ITEM_MONODRAMONITE] =
@@ -5552,8 +5552,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Scizorite,
-        .iconPalette = gItemIconPalette_Scizorite,
+        .iconPic = gItemIcon_Monodramonite,
+        .iconPalette = gItemIconPalette_Monodramonite,
     },
 
     [ITEM_HERACRONITE] =
@@ -5586,8 +5586,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Houndoominite,
-        .iconPalette = gItemIconPalette_Houndoominite,
+        .iconPic = gItemIcon_Pomumoninite,
+        .iconPalette = gItemIconPalette_Pomumoninite,
     },
 
     [ITEM_SPADAMONITE] =
@@ -5603,8 +5603,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Tyranitarite,
-        .iconPalette = gItemIconPalette_Tyranitarite,
+        .iconPic = gItemIcon_Spadamonite,
+        .iconPalette = gItemIconPalette_Spadamonite,
     },
 
     [ITEM_SCEPTILITE] =
@@ -5637,8 +5637,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Blazikenite,
-        .iconPalette = gItemIconPalette_Blazikenite,
+        .iconPic = gItemIcon_Tentomonite,
+        .iconPalette = gItemIconPalette_Tentomonite,
     },
 
     [ITEM_TERRIERMON_XITE] =
@@ -5654,8 +5654,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Swampertite,
-        .iconPalette = gItemIconPalette_Swampertite,
+        .iconPic = gItemIcon_Terriermon_xite,
+        .iconPalette = gItemIconPalette_Terriermon_xite,
     },
 
     [ITEM_ARCADIAMON_CHAMPIONITE] =
@@ -6747,8 +6747,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
-        .iconPic = gItemIcon_MewniumZ,
-        .iconPalette = gItemIconPalette_MewniumZ,
+        .iconPic = gItemIcon_FalcomonniumZ,
+        .iconPalette = gItemIconPalette_FalcomonniumZ,
     },
 
     [ITEM_DECIDIUM_Z] =

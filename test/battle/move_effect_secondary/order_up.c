@@ -16,7 +16,7 @@ DOUBLE_BATTLE_TEST("Order Up increases a stat based on Tatsugiri's form")
     GIVEN {
         PLAYER(species) { Ability(ABILITY_COMMANDER); }
         PLAYER(SPECIES_DONDOZO);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_VOLBEAT) { Ability(ABILITY_PRANKSTER); };
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_HAZE); MOVE(playerRight, MOVE_ORDER_UP, target: opponentLeft); }
@@ -64,7 +64,7 @@ DOUBLE_BATTLE_TEST("Order Up increases a stat based on Tatsugiri's form even if 
     GIVEN {
         PLAYER(species) { HP(1); Status1(STATUS1_POISON); Ability(ABILITY_COMMANDER); }
         PLAYER(SPECIES_DONDOZO);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_VOLBEAT) { Ability(ABILITY_PRANKSTER); };
     } WHEN {
         TURN { }
@@ -109,10 +109,10 @@ DOUBLE_BATTLE_TEST("Order Up increases a stat based on Tatsugiri's form even if 
 DOUBLE_BATTLE_TEST("Order up does not boosts any stats if Dondozo is not affected by Commander")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_DONDOZO);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerRight, MOVE_ORDER_UP, target: opponentLeft); }
     } SCENE {
@@ -126,12 +126,12 @@ DOUBLE_BATTLE_TEST("Order Up is boosted by Sheer Force without removing the stat
         ASSUME(gMovesInfo[MOVE_ENTRAINMENT].effect == EFFECT_ENTRAINMENT);
         PLAYER(SPECIES_DONDOZO) { Speed(10); }
         PLAYER(SPECIES_TATSUGIRI_CURLY) { Speed(9); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(8); }
-        OPPONENT(SPECIES_TAUROS) { Speed(21); Ability(ABILITY_SHEER_FORCE); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(8); }
+        OPPONENT(SPECIES_CHUUMON) { Speed(21); Ability(ABILITY_SHEER_FORCE); }
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_ENTRAINMENT, target: playerLeft); MOVE(playerLeft, MOVE_ORDER_UP, target: opponentLeft); }
     } SCENE {
-        MESSAGE("The opposing Tauros used Entrainment!");
+        MESSAGE("The opposing Chuumon used Entrainment!");
         MESSAGE("Dondozo acquired Sheer Force!");
         MESSAGE("Dondozo used Order Up!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
@@ -150,17 +150,17 @@ DOUBLE_BATTLE_TEST("Order Up is always boosted by Sheer Force", s16 damage)
         ASSUME(gMovesInfo[MOVE_ENTRAINMENT].effect == EFFECT_ENTRAINMENT);
         PLAYER(SPECIES_DONDOZO) { Speed(10); }
         PLAYER(SPECIES_TATSUGIRI_CURLY) { Speed(9); Ability(ability); }
-        OPPONENT(SPECIES_TAUROS) { Speed(21); Ability(ABILITY_SHEER_FORCE); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(22); }
+        OPPONENT(SPECIES_CHUUMON) { Speed(21); Ability(ABILITY_SHEER_FORCE); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(22); }
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_HAZE);
                MOVE(opponentLeft, move, target: playerLeft);
                MOVE(playerLeft, MOVE_ORDER_UP, target: opponentRight); }
     } SCENE {
-        MESSAGE("The opposing Wobbuffet used Haze!");
+        MESSAGE("The opposing Lopmonx used Haze!");
         if (move == MOVE_ENTRAINMENT)
         {
-            MESSAGE("The opposing Tauros used Entrainment!");
+            MESSAGE("The opposing Chuumon used Entrainment!");
             MESSAGE("Dondozo acquired Sheer Force!");
         }
         MESSAGE("Dondozo used Order Up!");

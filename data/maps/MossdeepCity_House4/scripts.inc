@@ -54,7 +54,7 @@ MossdeepCity_House4_Text_YouMadeSecretBaseNearX:
 
 MossdeepCity_House4_Text_MakeSecretBase:
 	.string "You should make a SECRET BASE\n"
-	.string "somewhere. I'll go find it!$"
+	.string "sofalcomonhere. I'll go find it!$"
 
 MossdeepCity_House4_Text_Birdramon:
 	.string "BIRDRAMON: Miyaan?$"

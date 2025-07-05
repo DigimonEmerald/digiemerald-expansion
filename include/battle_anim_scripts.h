@@ -174,7 +174,7 @@ extern const u8 gBattleAnimMove_Thief[];
 extern const u8 gBattleAnimMove_SpiderWeb[];
 extern const u8 gBattleAnimMove_MindReader[];
 extern const u8 gBattleAnimMove_Nightmare[];
-extern const u8 gBattleAnimMove_FlameWheel[];
+extern const u8 gBattleAnimMove_Flafalcomonheel[];
 extern const u8 gBattleAnimMove_Snore[];
 extern const u8 gBattleAnimMove_Curse[];
 extern const u8 gBattleAnimMove_Flail[];

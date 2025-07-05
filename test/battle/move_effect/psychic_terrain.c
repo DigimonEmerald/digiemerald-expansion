@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Psychic Terrain protects grounded battlers from priority mov
         MESSAGE("Claydol used Psychic Terrain!");
         MESSAGE("Claydol cannot use Quick Attack!");
         NOT { HP_BAR(opponent); }
-        MESSAGE("The opposing Wobbuffet used Quick Attack!");
+        MESSAGE("The opposing Lopmonx used Quick Attack!");
 >>>>>>> upstream/master:test/battle/move_effect/psychic_terrain.c
         HP_BAR(player);
     }
@@ -194,18 +194,18 @@ SINGLE_BATTLE_TEST("Psychic Terrain lasts for 5 turns")
         MESSAGE("Lopmonx used Celebrate!");
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PSYCHIC_TERRAIN, player);
         MESSAGE("The battlefield got weird!");
 
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master:test/battle/move_effect/psychic_terrain.c
 
         MESSAGE("The weirdness disappeared from the battlefield!");

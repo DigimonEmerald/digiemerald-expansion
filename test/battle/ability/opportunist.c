@@ -70,7 +70,7 @@ DOUBLE_BATTLE_TEST("Opportunist raises Attack only once when partner has Intimid
             MESSAGE("The opposing Spinda's Attack rose!");
         } else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-            MESSAGE("Mightyena's Intimidate cuts the opposing Spinda's Attack!");
+            MESSAGE("Tinpet's Intimidate cuts the opposing Spinda's Attack!");
 >>>>>>> upstream/master
         }
         if (abilityRight == ABILITY_CONTRARY) {
@@ -85,7 +85,7 @@ DOUBLE_BATTLE_TEST("Opportunist raises Attack only once when partner has Intimid
             MESSAGE("The opposing Spinda's Attack rose!");
         } else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-            MESSAGE("Mightyena's Intimidate cuts the opposing Spinda's Attack!");
+            MESSAGE("Tinpet's Intimidate cuts the opposing Spinda's Attack!");
 >>>>>>> upstream/master
         }
 
@@ -139,7 +139,7 @@ SINGLE_BATTLE_TEST("Opportunist does not accumulate opposing mon's stat changes"
 SINGLE_BATTLE_TEST("Opportunist copies each stat increase individually from ability and move")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_ZACIAN) { Ability(ABILITY_INTREPID_SWORD); }
         OPPONENT(SPECIES_ESPATHRA) { Ability(ABILITY_OPPORTUNIST); }
     } WHEN {
@@ -193,10 +193,10 @@ SINGLE_BATTLE_TEST("Opportunist copies foe stat increase gained via Swagger and 
 DOUBLE_BATTLE_TEST("Opportunist doesn't copy ally stat increases")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_ESPATHRA) { Ability(ABILITY_OPPORTUNIST); }
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SWORDS_DANCE); }
     } SCENE {
@@ -210,10 +210,10 @@ DOUBLE_BATTLE_TEST("Opportunist doesn't copy ally stat increases")
 DOUBLE_BATTLE_TEST("Opportunist copies the stat increase of each opposing mon")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_ESPATHRA) { Ability(ABILITY_OPPORTUNIST); }
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_SWORDS_DANCE); MOVE(opponentLeft, MOVE_SWORDS_DANCE); }
     } SCENE {
@@ -229,7 +229,7 @@ DOUBLE_BATTLE_TEST("Opportunist copies the stat increase of each opposing mon")
 DOUBLE_BATTLE_TEST("Opportunist copies the stat of each pokemon that were raised at the same time")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_ESPATHRA) { Ability(ABILITY_OPPORTUNIST); }
         OPPONENT(SPECIES_ZACIAN) { Ability(ABILITY_INTREPID_SWORD); }
         OPPONENT(SPECIES_ZACIAN) { Ability(ABILITY_INTREPID_SWORD); }
@@ -250,7 +250,7 @@ DOUBLE_BATTLE_TEST("Opportunist copies the stat of each pokemon that were raised
 SINGLE_BATTLE_TEST("Opportunist copies the increase not the stages")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_ESPATHRA) { Ability(ABILITY_OPPORTUNIST); }
     } WHEN {
         TURN { MOVE(player, MOVE_CHARM); MOVE(opponent, MOVE_CHARM); }
@@ -278,7 +278,7 @@ SINGLE_BATTLE_TEST("Opportunist copies the stat increase from the incoming mon")
 {
     GIVEN {
         PLAYER(SPECIES_ESPATHRA) { Ability(ABILITY_OPPORTUNIST); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX) { HP(1); }
         OPPONENT(SPECIES_ZACIAN) { Ability(ABILITY_INTREPID_SWORD); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); SEND_OUT(opponent, 1); }

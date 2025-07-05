@@ -84,7 +84,7 @@
 #define MOVE_CARD_UP        (1 << 4)
 #define MOVE_CARD           (MOVE_CARD_RIGHT | MOVE_CARD_DOWN | MOVE_CARD_LEFT | MOVE_CARD_UP)
 
-// Text IDs for sBattleDomeWinTexts
+// Text IDs for sBattleDofalcomoninTexts
 #define DOME_TEXT_NO_WINNER_YET     0
 #define DOME_TEXT_WON_USING_MOVE    1
 #define DOME_TEXT_CHAMP_USING_MOVE  2

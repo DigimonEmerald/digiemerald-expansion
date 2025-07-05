@@ -205,7 +205,7 @@ static bool8 AreElevationsCompatible(u8, u8);
 static void CopyObjectGraphicsInfoToSpriteTemplate_WithMovementType(u16 graphicsId, u16 movementType, struct SpriteTemplate *spriteTemplate, const struct SubspriteTable **subspriteTables);
 
 static u16 GetGraphicsIdForMon(u32 species, bool32 shiny, bool32 female);
-static u16 GetUnownSpecies(struct Pokemon *mon);
+static u16 GetLopmonSpecies(struct Pokemon *mon);
 
 static const struct SpriteFrameImage sPicTable_PechaBerryTree[];
 
@@ -1951,7 +1951,7 @@ static const struct ObjectEventGraphicsInfo *SpeciesToGraphicsInfo(u32 species, 
 #if OW_POKEMON_OBJECT_EVENTS
     switch (species)
     {
-    case SPECIES_UNOWN: // Deal with Unown forms later
+    case SPECIES_LOPMON: // Deal with Lopmon forms later
         graphicsInfo = &gSpeciesInfo[species].overworldData;
         break;
     default:
@@ -2140,8 +2140,8 @@ static bool8 GetMonInfo(struct Pokemon *mon, u32 *species, bool32 *shiny, bool32
     *female = GetMonGender(mon) == MON_FEMALE ? OBJ_EVENT_MON_FEMALE : 0;
     switch (*species)
     {
-    case SPECIES_UNOWN:
-        *species = GetUnownSpecies(mon);
+    case SPECIES_LOPMON:
+        *species = GetLopmonSpecies(mon);
         break;
     case SPECIES_CASTFORM: // form is based on overworld weather
         *species = GetOverworldCastformSpecies();
@@ -5288,7 +5288,7 @@ static bool32 TryStartFollowerTransformEffect(struct ObjectEvent *objectEvent, s
         return TRUE;
     }
     else if ((Random() & 0xFFFF) < 18 && GetLocalWildMon(FALSE)
-            && (OW_SPECIES(objectEvent) == SPECIES_MEW || OW_SPECIES(objectEvent) == SPECIES_DITTO))
+            && (OW_SPECIES(objectEvent) == SPECIES_FALCOMON || OW_SPECIES(objectEvent) == SPECIES_CRABMON))
     {
         sprite->data[7] = TRANSFORM_TYPE_RANDOM_WILD << 8;
         PlaySE(SE_M_MINIMIZE);
@@ -11013,10 +11013,10 @@ static u16 GetGraphicsIdForMon(u32 species, bool32 shiny, bool32 female)
     return graphicsId;
 }
 
-static u16 GetUnownSpecies(struct Pokemon *mon)
+static u16 GetLopmonSpecies(struct Pokemon *mon)
 {
-    u32 form = GET_UNOWN_LETTER(mon->box.personality);
+    u32 form = GET_LOPMON_LETTER(mon->box.personality);
     if (form == 0)
-        return SPECIES_UNOWN;
-    return SPECIES_UNOWN_B + form - 1;
+        return SPECIES_LOPMON;
+    return SPECIES_LOPMON_B + form - 1;
 }

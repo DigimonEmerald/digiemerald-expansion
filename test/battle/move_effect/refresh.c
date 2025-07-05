@@ -15,12 +15,12 @@ SINGLE_BATTLE_TEST("Refresh cures the user of burn, frostbite, poison, and paral
     PARAMETRIZE { status1 = STATUS1_TOXIC_POISON; }
     PARAMETRIZE { status1 = STATUS1_FROSTBITE; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Status1(status1); };
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Status1(status1); };
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_REFRESH); }
     } SCENE {
-        MESSAGE("Wobbuffet's status returned to normal!");
+        MESSAGE("Lopmonx's status returned to normal!");
         STATUS_ICON(player, none: TRUE);
     }
 }
@@ -29,12 +29,12 @@ SINGLE_BATTLE_TEST("Refresh does not cure the user of Freeze")
 {
     PASSES_RANDOMLY(20, 100, RNG_FROZEN);
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_FREEZE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Status1(STATUS1_FREEZE); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_REFRESH); }
     } SCENE {
-        MESSAGE("Wobbuffet used Refresh!");
+        MESSAGE("Lopmonx used Refresh!");
         NONE_OF { 
             ANIMATION(ANIM_TYPE_MOVE, MOVE_REFRESH, player);
             STATUS_ICON(player, none: TRUE); }
@@ -47,19 +47,19 @@ SINGLE_BATTLE_TEST("Refresh does not cure sleep when used by Sleep Talk")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SPORE].effect == EFFECT_SLEEP);
         ASSUME(gMovesInfo[MOVE_SLEEP_TALK].effect == EFFECT_SLEEP_TALK);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_SLEEP_TALK, MOVE_REFRESH); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_SLEEP_TALK, MOVE_REFRESH); }
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); MOVE(opponent, MOVE_SLEEP_TALK); }
         TURN { MOVE(player, MOVE_SPORE); MOVE(opponent, MOVE_REFRESH); }
     } SCENE {
-        MESSAGE("Wobbuffet used Spore!");
+        MESSAGE("Lopmonx used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Wobbuffet fell asleep!");
-        MESSAGE("The opposing Wobbuffet used Sleep Talk!");
+        MESSAGE("The opposing Lopmonx fell asleep!");
+        MESSAGE("The opposing Lopmonx used Sleep Talk!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SLEEP_TALK, opponent);
-        MESSAGE("The opposing Wobbuffet used Refresh!");
+        MESSAGE("The opposing Lopmonx used Refresh!");
         NONE_OF { 
             ANIMATION(ANIM_TYPE_MOVE, MOVE_REFRESH, player);
             STATUS_ICON(player, none: TRUE); }

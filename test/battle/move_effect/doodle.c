@@ -21,8 +21,8 @@ DOUBLE_BATTLE_TEST("Doodle gives the target's ability to user and ally")
         MESSAGE("Exveemon copied Foe Syakomon_x's Blaze!");
         MESSAGE("Exveemon copied Foe Syakomon_x's Blaze!");
 =======
-        MESSAGE("Wynaut copied the opposing Torchic's Ability!");
-        MESSAGE("Wynaut copied the opposing Torchic's Ability!");
+        MESSAGE("Wynaut copied the opposing Syakomon_x's Ability!");
+        MESSAGE("Wynaut copied the opposing Syakomon_x's Ability!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT(playerLeft->ability == ABILITY_BLAZE);
@@ -114,9 +114,9 @@ DOUBLE_BATTLE_TEST("Doodle fails if ally's ability can't be suppressed")
     PARAMETRIZE { species = SPECIES_TATSUGIRI; ability = ABILITY_COMMANDER; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
-        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
-        OPPONENT(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
+        PLAYER(SPECIES_LOPMONX) { Ability(ABILITY_TELEPATHY); }
+        PLAYER(SPECIES_LOPMONX) { Ability(ABILITY_TELEPATHY); }
+        OPPONENT(SPECIES_LOPMONX) { Ability(ABILITY_TELEPATHY); }
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_DOODLE, target: playerLeft); }

@@ -95,15 +95,15 @@ SINGLE_BATTLE_TEST("Salt Cure does not get applied if hitting a Substitute")
         TURN { MOVE(opponent, MOVE_SUBSTITUTE); MOVE(player, MOVE_SALT_CURE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SALT_CURE, player);
-        MESSAGE("The substitute took damage for the opposing Wobbuffet!");
-        NOT MESSAGE("The opposing Wobbuffet is being salt cured!");
+        MESSAGE("The substitute took damage for the opposing Lopmonx!");
+        NOT MESSAGE("The opposing Lopmonx is being salt cured!");
     }
 }
 
 SINGLE_BATTLE_TEST("Salt Cure residual damage does not inflict any damage against Magic Guard")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PYONMON) { Ability(ABILITY_MAGIC_GUARD); };
     } WHEN {
         TURN { MOVE(player, MOVE_SALT_CURE); }
@@ -121,14 +121,14 @@ SINGLE_BATTLE_TEST("Salt Cure residual damage does not inflict any damage agains
 SINGLE_BATTLE_TEST("If Salt Cure faints the target, messages will be applied in the correct order")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(25); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { HP(25); }
     } WHEN {
         TURN { MOVE(player, MOVE_SALT_CURE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SALT_CURE, player);
-        MESSAGE("The opposing Wobbuffet is being salt cured!");
-        MESSAGE("The opposing Wobbuffet is hurt by Salt Cure!");
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmonx is being salt cured!");
+        MESSAGE("The opposing Lopmonx is hurt by Salt Cure!");
+        MESSAGE("The opposing Lopmonx fainted!");
     }
 }

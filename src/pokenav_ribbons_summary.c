@@ -60,7 +60,7 @@ struct Pokenav_RibbonsSummaryMenu
 {
     u32 (*callback)(void);
     u32 loopedTaskId;
-    u16 nameWindowId;
+    u16 nafalcomonindowId;
     u16 ribbonCountWindowId;
     u16 listIdxWindowId;
     u16 unusedWindowId;
@@ -87,7 +87,7 @@ static void SlideMonSpriteOff(struct Pokenav_RibbonsSummaryMenu *);
 static void SlideMonSpriteOn(struct Pokenav_RibbonsSummaryMenu *);
 static void AddRibbonCountWindow(struct Pokenav_RibbonsSummaryMenu *);
 static void CreateBigRibbonSprite(struct Pokenav_RibbonsSummaryMenu *);
-static void AddRibbonSummaryMonNameWindow(struct Pokenav_RibbonsSummaryMenu *);
+static void AddRibbonSummaryMonNafalcomonindow(struct Pokenav_RibbonsSummaryMenu *);
 static void DrawAllRibbonsSmall(struct Pokenav_RibbonsSummaryMenu *);
 static bool32 IsRibbonAnimating(struct Pokenav_RibbonsSummaryMenu *);
 static bool32 IsMonSpriteAnimating(struct Pokenav_RibbonsSummaryMenu *);
@@ -542,7 +542,7 @@ void FreeRibbonsSummaryScreen2(void)
 {
     struct Pokenav_RibbonsSummaryMenu *menu = GetSubstructPtr(POKENAV_SUBSTRUCT_RIBBONS_SUMMARY_MENU);
     RemoveWindow(menu->ribbonCountWindowId);
-    RemoveWindow(menu->nameWindowId);
+    RemoveWindow(menu->nafalcomonindowId);
     RemoveWindow(menu->listIdxWindowId);
 #ifndef BUGFIX
     RemoveWindow(menu->unusedWindowId); // Removing window, but window id is never set
@@ -601,7 +601,7 @@ static u32 LoopedTask_OpenRibbonsSummaryMenu(s32 state)
     case 3:
         if (!FreeTempTileDataBuffersIfPossible())
         {
-            AddRibbonSummaryMonNameWindow(menu);
+            AddRibbonSummaryMonNafalcomonindow(menu);
             return LT_INC_AND_PAUSE;
         }
         return LT_PAUSE;
@@ -849,7 +849,7 @@ static void PrintRibbonNameAndDescription(struct Pokenav_RibbonsSummaryMenu *men
     CopyWindowToVram(menu->ribbonCountWindowId, COPYWIN_GFX);
 }
 
-static const struct WindowTemplate sRibbonSummaryMonNameWindowTemplate =
+static const struct WindowTemplate sRibbonSummaryMonNafalcomonindowTemplate =
 {
     .bg = 2,
     .tilemapLeft = 14,
@@ -860,10 +860,10 @@ static const struct WindowTemplate sRibbonSummaryMonNameWindowTemplate =
     .baseBlock = 0x54,
 };
 
-static void AddRibbonSummaryMonNameWindow(struct Pokenav_RibbonsSummaryMenu *menu)
+static void AddRibbonSummaryMonNafalcomonindow(struct Pokenav_RibbonsSummaryMenu *menu)
 {
-    menu->nameWindowId = AddWindow(&sRibbonSummaryMonNameWindowTemplate);
-    PutWindowTilemap(menu->nameWindowId);
+    menu->nafalcomonindowId = AddWindow(&sRibbonSummaryMonNafalcomonindowTemplate);
+    PutWindowTilemap(menu->nafalcomonindowId);
     PrintRibbbonsSummaryMonInfo(menu);
 }
 
@@ -876,7 +876,7 @@ static void PrintRibbbonsSummaryMonInfo(struct Pokenav_RibbonsSummaryMenu *menu)
     const u8 *genderTxt;
     u8 *txtPtr;
     u8 level, gender;
-    u16 windowId = menu->nameWindowId;
+    u16 windowId = menu->nafalcomonindowId;
 
     FillWindowPixelBuffer(windowId, PIXEL_FILL(1));
     GetMonNicknameLevelGender(gStringVar3, &level, &gender);

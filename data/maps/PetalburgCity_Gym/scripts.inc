@@ -174,7 +174,7 @@ PetalburgCity_Gym_EventScript_BeginWallyTutorial::
 	call_if_eq VAR_0x8008, 1, PetalburgCity_Gym_EventScript_WallyFaceDown
 	call_if_eq VAR_0x8008, 2, PetalburgCity_Gym_EventScript_WallyFacePlayer
 	call_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_WallyFacePlayer
-	msgbox PetalburgCity_Gym_Text_WouldYouReallyComeWithMe, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Gym_Text_WouldYouReallyCofalcomonithMe, MSGBOX_DEFAULT
 	closemessage
 	setflag FLAG_DONT_TRANSITION_MUSIC
 	playbgm MUS_FOLLOW_ME, FALSE
@@ -435,7 +435,7 @@ PetalburgCity_Gym_EventScript_WallysDadArrives::
 	call_if_eq VAR_0x8008, 1, PetalburgCity_Gym_EventScript_WallysDadApproachPlayerNorth
 	call_if_eq VAR_0x8008, 2, PetalburgCity_Gym_EventScript_WallysDadApproachPlayerEast
 	call_if_eq VAR_0x8008, 3, PetalburgCity_Gym_EventScript_WallysDadApproachPlayerWest
-	msgbox PetalburgCity_Gym_Text_PleaseComeWithMe, MSGBOX_DEFAULT
+	msgbox PetalburgCity_Gym_Text_PleaseCofalcomonithMe, MSGBOX_DEFAULT
 	closemessage
 	delay 20
 	call_if_eq VAR_0x8008, 1, PetalburgCity_Gym_EventScript_WallysDadFaceNormanNorth
@@ -1194,7 +1194,7 @@ PetalburgCity_Gym_Text_WallyOhWowThankYou:
 	.string "WALLY: Oh, wow!\n"
 	.string "Thank you!$"
 
-PetalburgCity_Gym_Text_WouldYouReallyComeWithMe:
+PetalburgCity_Gym_Text_WouldYouReallyCofalcomonithMe:
 	.string "{PLAYER}… Would you really come\n"
 	.string "with me?$"
 
@@ -1304,7 +1304,7 @@ PetalburgCity_Gym_Text_DadHappyAndSad:
 	.string "But as a father, it makes me both\n"
 	.string "happy and a little sad. It's odd…$"
 
-PetalburgCity_Gym_Text_PleaseComeWithMe:
+PetalburgCity_Gym_Text_PleaseCofalcomonithMe:
 	.string "Ah, there you are, {PLAYER}{KUN}!\p"
 	.string "Please come with me.\n"
 	.string "I have something I want you to have.$"

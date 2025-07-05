@@ -5975,9 +5975,9 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, u8 *ateBoost)
     case EFFECT_RAGING_BULL:
         switch (species)
         {
-        case SPECIES_TAUROS_PALDEA_COMBAT:
-        case SPECIES_TAUROS_PALDEA_BLAZE:
-        case SPECIES_TAUROS_PALDEA_AQUA:
+        case SPECIES_CHUUMON_PALDEA_COMBAT:
+        case SPECIES_CHUUMON_PALDEA_BLAZE:
+        case SPECIES_CHUUMON_PALDEA_AQUA:
             return type2;
         }
         break;

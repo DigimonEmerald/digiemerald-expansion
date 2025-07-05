@@ -1072,7 +1072,7 @@ static void ShowTowerResultsWindow(u8 battleMode)
 // Battle Dome records.
 static u16 DomeGetWinStreak(u8 battleMode, u8 lvlMode)
 {
-    u16 winStreak = gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode];
+    u16 winStreak = gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode];
     if (winStreak > MAX_STREAK)
         return MAX_STREAK;
     else
@@ -1570,16 +1570,16 @@ static void CheckPutFrontierTVShowOnAir(void)
         }
         break;
     case FRONTIER_FACILITY_DOME:
-        if (gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode] > gSaveBlock2Ptr->frontier.domeRecordWinStreaks[battleMode][lvlMode])
+        if (gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode] > gSaveBlock2Ptr->frontier.domeRecordWinStreaks[battleMode][lvlMode])
         {
-            gSaveBlock2Ptr->frontier.domeRecordWinStreaks[battleMode][lvlMode] = gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode];
-            if (gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode] > 1
+            gSaveBlock2Ptr->frontier.domeRecordWinStreaks[battleMode][lvlMode] = gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode];
+            if (gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode] > 1
                 && ShouldAirFrontierTVShow())
             {
                 if (battleMode == FRONTIER_MODE_SINGLES)
-                    TryPutFrontierTVShowOnAir(gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode], FRONTIER_SHOW_DOME_SINGLES);
+                    TryPutFrontierTVShowOnAir(gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode], FRONTIER_SHOW_DOME_SINGLES);
                 else
-                    TryPutFrontierTVShowOnAir(gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode], FRONTIER_SHOW_DOME_DOUBLES);
+                    TryPutFrontierTVShowOnAir(gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode], FRONTIER_SHOW_DOME_DOUBLES);
             }
         }
         break;
@@ -1796,7 +1796,7 @@ void ResetWinStreaks(void)
             gSaveBlock2Ptr->frontier.towerWinStreaks[battleMode][lvlMode] = 0;
             if (battleMode < FRONTIER_MODE_MULTIS)
             {
-                gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode] = 0;
+                gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode] = 0;
                 gSaveBlock2Ptr->frontier.palaceWinStreaks[battleMode][lvlMode] = 0;
                 gSaveBlock2Ptr->frontier.factoryWinStreaks[battleMode][lvlMode] = 0;
             }
@@ -1823,7 +1823,7 @@ u32 GetCurrentFacilityWinStreak(void)
     case FRONTIER_FACILITY_TOWER:
         return gSaveBlock2Ptr->frontier.towerWinStreaks[battleMode][lvlMode];
     case FRONTIER_FACILITY_DOME:
-        return gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode];
+        return gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode];
     case FRONTIER_FACILITY_PALACE:
         return gSaveBlock2Ptr->frontier.palaceWinStreaks[battleMode][lvlMode];
     case FRONTIER_FACILITY_ARENA:
@@ -1875,7 +1875,7 @@ static void GiveBattlePoints(void)
         challengeNum = gSaveBlock2Ptr->frontier.towerWinStreaks[battleMode][lvlMode] / FRONTIER_STAGES_PER_CHALLENGE;
         break;
     case FRONTIER_FACILITY_DOME:
-        challengeNum = gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode];
+        challengeNum = gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode];
         break;
     case FRONTIER_FACILITY_PALACE:
         challengeNum = gSaveBlock2Ptr->frontier.palaceWinStreaks[battleMode][lvlMode] / FRONTIER_STAGES_PER_CHALLENGE;
@@ -2129,8 +2129,8 @@ static void IncrementWinStreak(void)
         }
         break;
     case FRONTIER_FACILITY_DOME:
-        if (gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode] < MAX_STREAK)
-            gSaveBlock2Ptr->frontier.domeWinStreaks[battleMode][lvlMode]++;
+        if (gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode] < MAX_STREAK)
+            gSaveBlock2Ptr->frontier.dofalcomoninStreaks[battleMode][lvlMode]++;
         if (gSaveBlock2Ptr->frontier.domeTotalChampionships[battleMode][lvlMode] < MAX_STREAK)
             gSaveBlock2Ptr->frontier.domeTotalChampionships[battleMode][lvlMode]++;
         break;
@@ -2435,9 +2435,9 @@ void SaveGameFrontier(void)
 
     i = gPlayerPartyCount;
     LoadPlayerParty();
-    SetContinueGameWarpStatusToDynamicWarp();
+    SetContinueGafalcomonarpStatusToDynamicWarp();
     TrySavingData(SAVE_LINK);
-    ClearContinueGameWarpStatus2();
+    ClearContinueGafalcomonarpStatus2();
     gPlayerPartyCount = i;
 
     for (i = 0; i < PARTY_SIZE; i++)

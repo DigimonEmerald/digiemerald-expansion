@@ -1363,7 +1363,7 @@ Cry_Renamon_x::
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
 Cry_DokunemonZ::
-	.incbin "sound/direct_sound_samples/cries/dokunemon_z.bin"
+	.incbin "sound/direct_sound_samples/cries/porygon_z.bin"
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_DOKUNEMON

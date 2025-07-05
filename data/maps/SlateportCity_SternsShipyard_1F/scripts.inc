@@ -81,7 +81,7 @@ SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern:
 	.string "Are they DEVON GOODS?\p"
 	.string "But, hmm…\n"
 	.string "This won't do…\p"
-	.string "CAPT. STERN went off somewhere.\n"
+	.string "CAPT. STERN went off sofalcomonhere.\n"
 	.string "He said he had some work to do.\p"
 	.string "Could I get you to go find CAPT.\n"
 	.string "STERN and deliver that to him?$"

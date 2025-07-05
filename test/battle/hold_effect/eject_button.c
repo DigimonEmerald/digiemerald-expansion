@@ -24,7 +24,7 @@ SINGLE_BATTLE_TEST("Eject Button is not triggered when there is nothing to switc
 <<<<<<< HEAD
             MESSAGE("Foe Lopmonx is switched out with the Eject Button!");
 =======
-            MESSAGE("The opposing Wobbuffet is switched out with the Eject Button!");
+            MESSAGE("The opposing Lopmonx is switched out with the Eject Button!");
 >>>>>>> upstream/master
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
@@ -49,7 +49,7 @@ SINGLE_BATTLE_TEST("Eject Button is not activated by a Sheer Force boosted move"
 <<<<<<< HEAD
             MESSAGE("Foe Lopmonx is switched out with the Eject Button!");
 =======
-            MESSAGE("The opposing Wobbuffet is switched out with the Eject Button!");
+            MESSAGE("The opposing Lopmonx is switched out with the Eject Button!");
 >>>>>>> upstream/master
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
@@ -106,8 +106,8 @@ SINGLE_BATTLE_TEST("Eject Button is not blocked by trapping abilities or moves")
         MESSAGE("Foe Lopmonx is switched out with the Eject Button!");
         MESSAGE("2 sent out Lopmonx!");
 =======
-        MESSAGE("The opposing Wobbuffet is switched out with the Eject Button!");
-        MESSAGE("2 sent out Wobbuffet!");
+        MESSAGE("The opposing Lopmonx is switched out with the Eject Button!");
+        MESSAGE("2 sent out Lopmonx!");
 >>>>>>> upstream/master
     }
 }
@@ -130,7 +130,7 @@ SINGLE_BATTLE_TEST("Eject Button is not triggered after the mon loses Eject Butt
 <<<<<<< HEAD
             MESSAGE("Foe Lopmonx is switched out with the Eject Button!");
 =======
-            MESSAGE("The opposing Wobbuffet is switched out with the Eject Button!");
+            MESSAGE("The opposing Lopmonx is switched out with the Eject Button!");
 >>>>>>> upstream/master
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
@@ -155,7 +155,7 @@ SINGLE_BATTLE_TEST("Eject Button is not triggered after given to player by Picke
 <<<<<<< HEAD
         MESSAGE("Foe Mushroomon stole Regieleki's Eject Button!");
 =======
-        MESSAGE("The opposing Sneasel stole Regieleki's Eject Button!");
+        MESSAGE("The opposing Mushroomon stole Regieleki's Eject Button!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
     }
@@ -206,7 +206,7 @@ SINGLE_BATTLE_TEST("Eject Button prevents Volt Switch / U-Turn from activating")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx is switched out with the Eject Button!");
 =======
-        MESSAGE("The opposing Wobbuffet is switched out with the Eject Button!");
+        MESSAGE("The opposing Lopmonx is switched out with the Eject Button!");
 >>>>>>> upstream/master
     }
 }
@@ -248,10 +248,10 @@ SINGLE_BATTLE_TEST("Eject Button is not triggered after High Jump Kick crash dam
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
             MESSAGE("Foe Lopmonx is switched out with the Eject Button!");
 =======
-        MESSAGE("The opposing Wobbuffet kept going and crashed!");
+        MESSAGE("The opposing Lopmonx kept going and crashed!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-            MESSAGE("The opposing Wobbuffet is switched out with the Eject Button!");
+            MESSAGE("The opposing Lopmonx is switched out with the Eject Button!");
         }
     }
 }
@@ -260,22 +260,22 @@ DOUBLE_BATTLE_TEST("Eject Button activation will not trigger an attack from the 
 {
     GIVEN {
         PLAYER(SPECIES_TATSUGIRI) { Speed(10); Ability(ABILITY_COMMANDER); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(100); Item(ITEM_EJECT_BUTTON); }
+        PLAYER(SPECIES_LOPMONX) { Speed(100); Item(ITEM_EJECT_BUTTON); }
         PLAYER(SPECIES_DONDOZO) { Speed(20); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(50); Item(ITEM_EJECT_PACK); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(10); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(50); Item(ITEM_EJECT_PACK); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(10); }
         OPPONENT(SPECIES_WYNAUT) { Speed(1); }
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_MAKE_IT_RAIN); SEND_OUT(playerRight, 2); SEND_OUT(opponentRight, 2); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MAKE_IT_RAIN, opponentRight);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerRight);
-        MESSAGE("Wobbuffet is switched out with the Eject Button!");
+        MESSAGE("Lopmonx is switched out with the Eject Button!");
         ABILITY_POPUP(playerLeft, ABILITY_COMMANDER);
         MESSAGE("Tatsugiri was swallowed by Dondozo and became Dondozo's commander!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponentLeft);
-            MESSAGE("Wobbuffet is switched out with the Eject Pack!");
+            MESSAGE("Lopmonx is switched out with the Eject Pack!");
 >>>>>>> upstream/master
         }
     }

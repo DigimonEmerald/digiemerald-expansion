@@ -225,7 +225,7 @@ DOUBLE_BATTLE_TEST("Ally switch swaps sky drop targets if being used by partner"
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SKY_DROP].effect == EFFECT_SKY_DROP);
         PLAYER(SPECIES_PABUMON) { Speed(100); }
-        PLAYER(SPECIES_XATU)   { Speed(150); }
+        PLAYER(SPECIES_HERISSMON)   { Speed(150); }
         OPPONENT(SPECIES_ARON) { Speed(25); Ability(ABILITY_STURDY); }
         OPPONENT(SPECIES_WYNAUT) { Speed(30); }
     } WHEN {
@@ -235,8 +235,8 @@ DOUBLE_BATTLE_TEST("Ally switch swaps sky drop targets if being used by partner"
         MESSAGE("Pabumon used Sky Drop!");
         MESSAGE("Pabumon took the opposing Aron into the sky!");
         // turn 2
-        MESSAGE("Xatu used Ally Switch!");
-        MESSAGE("Xatu and Pabumon switched places!");
+        MESSAGE("Herissmon used Ally Switch!");
+        MESSAGE("Herissmon and Pabumon switched places!");
         MESSAGE("Pabumon used Sky Drop!");
         HP_BAR(opponentLeft);
         MESSAGE("The opposing Wynaut used Mud Sport!");
@@ -264,7 +264,7 @@ DOUBLE_BATTLE_TEST("Ally switch swaps opposing sky drop targets if partner is be
         PLAYER(SPECIES_ARON) { Speed(25); Ability(ABILITY_STURDY); }
         PLAYER(SPECIES_WYNAUT) { Speed(30); }
         OPPONENT(SPECIES_PABUMON) { Speed(100); }
-        OPPONENT(SPECIES_XATU)   { Speed(150); }
+        OPPONENT(SPECIES_HERISSMON)   { Speed(150); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_SKY_DROP, target: playerLeft); }
         TURN { MOVE(opponentRight, MOVE_ALLY_SWITCH); SKIP_TURN(opponentLeft); MOVE(playerRight, MOVE_MUD_SPORT); MOVE(playerLeft, MOVE_IRON_DEFENSE); }
@@ -272,8 +272,8 @@ DOUBLE_BATTLE_TEST("Ally switch swaps opposing sky drop targets if partner is be
         MESSAGE("The opposing Pabumon used Sky Drop!");
         MESSAGE("The opposing Pabumon took Aron into the sky!");
         // turn 2
-        MESSAGE("The opposing Xatu used Ally Switch!");
-        MESSAGE("The opposing Xatu and the opposing Pabumon switched places!");
+        MESSAGE("The opposing Herissmon used Ally Switch!");
+        MESSAGE("The opposing Herissmon and the opposing Pabumon switched places!");
         MESSAGE("The opposing Pabumon used Sky Drop!");
         HP_BAR(playerLeft);
         MESSAGE("Wynaut used Mud Sport!");
@@ -302,8 +302,8 @@ DOUBLE_BATTLE_TEST("Ally Switch swaps Illusion data")
         PLAYER(SPECIES_HOOPA);
         PLAYER(SPECIES_ZOROARK);
         PLAYER(SPECIES_MAMOSWINE); // the third member here is required for zoroark
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ALLY_SWITCH); }
     } THEN {

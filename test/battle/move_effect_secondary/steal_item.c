@@ -13,8 +13,8 @@ SINGLE_BATTLE_TEST("Thief and Covet steal target's held item")
     PARAMETRIZE { move = MOVE_THIEF; }
     PARAMETRIZE { move = MOVE_COVET; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_HYPER_POTION); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_HYPER_POTION); }
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
@@ -34,8 +34,8 @@ SINGLE_BATTLE_TEST("Thief and Covet steal player's held item if opponent is a tr
     PARAMETRIZE { move = MOVE_COVET; }
     GIVEN {
         ASSUME(B_TRAINERS_KNOCK_OFF_ITEMS == TRUE);
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_HYPER_POTION); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_HYPER_POTION); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
@@ -55,8 +55,8 @@ WILD_BATTLE_TEST("Thief and Covet don't steal player's held item if opponent is 
     PARAMETRIZE { move = MOVE_COVET; }
     GIVEN {
         ASSUME(B_TRAINERS_KNOCK_OFF_ITEMS == TRUE);
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_HYPER_POTION); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_HYPER_POTION); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
@@ -75,8 +75,8 @@ SINGLE_BATTLE_TEST("Thief and Covet don't steal target's held item if user is ho
     PARAMETRIZE { move = MOVE_THIEF; }
     PARAMETRIZE { move = MOVE_COVET; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_POTION); }
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_HYPER_POTION); }
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_POTION); }
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_HYPER_POTION); }
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
@@ -95,8 +95,8 @@ SINGLE_BATTLE_TEST("Thief and Covet don't steal target's held item if target has
     PARAMETRIZE { move = MOVE_THIEF; }
     PARAMETRIZE { move = MOVE_COVET; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
@@ -114,8 +114,8 @@ WILD_BATTLE_TEST("Thief and Covet steal target's held item and it's added to Bag
     PARAMETRIZE { move = MOVE_COVET; }
     GIVEN {
         ASSUME(B_STEAL_WILD_ITEMS >= GEN_9);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_HYPER_POTION); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_HYPER_POTION); }
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {

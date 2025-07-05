@@ -241,15 +241,15 @@ DOUBLE_BATTLE_TEST("Sticky Web has correct interactions with Mirror Armor - no o
 SINGLE_BATTLE_TEST("Sticky Web is placed on the correct side after Explosion")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_EXPLOSION); MOVE(opponent, MOVE_STICKY_WEB); SEND_OUT(player, 1);}
     } SCENE {
         HP_BAR(player, hp: 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, player);
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmonx fainted!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STICKY_WEB, opponent);
         MESSAGE("A sticky web has been laid out on the ground around your team!");
    }
@@ -258,15 +258,15 @@ SINGLE_BATTLE_TEST("Sticky Web is placed on the correct side after Explosion")
 SINGLE_BATTLE_TEST("Sticky Web is placed on the correct side after Memento")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_MEMENTO); MOVE(opponent, MOVE_STICKY_WEB); SEND_OUT(player, 1); }
     } SCENE {
         HP_BAR(player, hp: 0);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MEMENTO, player);
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmonx fainted!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STICKY_WEB, opponent);
         MESSAGE("A sticky web has been laid out on the ground around your team!");
     }
@@ -279,7 +279,7 @@ DOUBLE_BATTLE_TEST("Sticky Web setter has their speed lowered with Mirror Armor 
         PLAYER(SPECIES_BOTAMON);
         PLAYER(SPECIES_CORVIKNIGHT) { Ability(ABILITY_MIRROR_ARMOR); Item(ITEM_IRON_BALL); } // Iron Ball, so that flying type Corviknight is affected by Sticky Web.
         OPPONENT(SPECIES_DATIRIMON);
-        OPPONENT(SPECIES_NATU);
+        OPPONENT(SPECIES_HAWKMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_STICKY_WEB); }
         TURN { MOVE(opponentRight, MOVE_ALLY_SWITCH); }
@@ -289,7 +289,7 @@ DOUBLE_BATTLE_TEST("Sticky Web setter has their speed lowered with Mirror Armor 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STICKY_WEB, opponentLeft);
         MESSAGE("A sticky web has been laid out on the ground around your team!");
         // Turn 2 - ally switch
-        MESSAGE("The opposing Natu used Ally Switch!");
+        MESSAGE("The opposing Hawkmon used Ally Switch!");
         // turn 3 - send our corviknight
         SEND_IN_MESSAGE("Corviknight");
         MESSAGE("Corviknight was caught in a sticky web!");

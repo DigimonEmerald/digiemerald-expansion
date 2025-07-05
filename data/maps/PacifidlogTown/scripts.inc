@@ -31,7 +31,7 @@ PacifidlogTown_Text_FastRunningCurrent:
 	.string "The sea between PACIFIDLOG and\n"
 	.string "SLATEPORT has a fast-running tide.\p"
 	.string "If you decide to SURF, you could end\n"
-	.string "up swept away somewhere else.$"
+	.string "up swept away sofalcomonhere else.$"
 
 PacifidlogTown_Text_NeatHousesOnWater:
 	.string "See, isn't it neat?\n"

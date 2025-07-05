@@ -9,7 +9,7 @@ SINGLE_BATTLE_TEST("Shed Skin triggers 33% of the time")
         PASSES_RANDOMLY(33, 100, RNG_SHED_SKIN);
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].makesContact);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PAOMON) { Status1(STATUS1_POISON); Ability(ABILITY_SHED_SKIN); }
     } WHEN {
         TURN;

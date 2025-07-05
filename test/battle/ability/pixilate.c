@@ -10,7 +10,7 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Pixilate turns a Normal-type move into a Fairy-type move")
 {
     GIVEN {
-        PLAYER(SPECIES_DRAGONITE);
+        PLAYER(SPECIES_ESPIMON);
         OPPONENT(SPECIES_ALTARIA) { Item(ITEM_ALTARIANITE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE, gimmick: GIMMICK_MEGA); }

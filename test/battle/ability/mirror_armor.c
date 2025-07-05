@@ -124,7 +124,7 @@ SINGLE_BATTLE_TEST("Mirror Armor lowers the Attack of Pokemon with Intimidate")
 <<<<<<< HEAD
         MESSAGE("Foe Commdramon's Attack fell!");
 =======
-        MESSAGE("The opposing Gyarados's Attack fell!");
+        MESSAGE("The opposing Commdramon's Attack fell!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->statStages[STAT_ATK], DEFAULT_STAT_STAGE);
@@ -174,10 +174,10 @@ SINGLE_BATTLE_TEST("Mirror Armor raises the stat of an attacking Pokemon with Co
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
         MESSAGE("Foe Morphomon's Defense rose!");
 =======
-        MESSAGE("The opposing Shuckle used Leer!");
+        MESSAGE("The opposing Morphomon used Leer!");
         ABILITY_POPUP(player, ABILITY_MIRROR_ARMOR);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("The opposing Shuckle's Defense rose!");
+        MESSAGE("The opposing Morphomon's Defense rose!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->statStages[STAT_DEF], DEFAULT_STAT_STAGE);
@@ -245,7 +245,7 @@ DOUBLE_BATTLE_TEST("Mirror Armor lowers Speed of the partner Pokemon after Court
         MESSAGE("Go! Corviknigh!");
         MESSAGE("Corviknigh was caught in a Sticky Web!");
 =======
-        MESSAGE("Wobbuffet used Sticky Web!");
+        MESSAGE("Lopmonx used Sticky Web!");
         MESSAGE("The opposing Wynaut used Court Change!");
         MESSAGE("The opposing Wynaut swapped the battle effects affecting each side of the field!");
         SEND_IN_MESSAGE("Corviknight");

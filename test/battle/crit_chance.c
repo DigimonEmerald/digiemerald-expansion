@@ -169,8 +169,8 @@ SINGLE_BATTLE_TEST("Crit Chance: Super Luck increases the critical hit ratio by 
         OPPONENT(SPECIES_LOPMONX);
 =======
         ASSUME(B_CRIT_CHANCE >= GEN_7);
-        PLAYER(SPECIES_TOGEPI) { Ability(ABILITY_SUPER_LUCK); };
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_HAGURUMON) { Ability(ABILITY_SUPER_LUCK); };
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
@@ -260,8 +260,8 @@ SINGLE_BATTLE_TEST("Crit Chance: Dire Hit increases a battler's critical hit cha
         MESSAGE("Lopmonx used Dire Hit to get pumped!");
         MESSAGE("Lopmonx used Scratch!");
 =======
-        MESSAGE("Wobbuffet used the Dire Hit to get pumped!");
-        MESSAGE("Wobbuffet used Scratch!");
+        MESSAGE("Lopmonx used the Dire Hit to get pumped!");
+        MESSAGE("Lopmonx used Scratch!");
 >>>>>>> upstream/master
         MESSAGE("A critical hit!");
     }

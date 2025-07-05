@@ -36,7 +36,7 @@ RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 	delay 80
 	applymovement LOCALID_DEVON_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_EmployeeReturnToPlayer
 	waitmovement 0
-	msgbox RustboroCity_DevonCorp_3F_Text_WordWithPresidentComeWithMe, MSGBOX_DEFAULT
+	msgbox RustboroCity_DevonCorp_3F_Text_WordWithPresidentCofalcomonithMe, MSGBOX_DEFAULT
 	closemessage
 	playbgm MUS_FOLLOW_ME, FALSE
 	applymovement LOCALID_DEVON_EMPLOYEE, RustboroCity_DevonCorp_3F_Movement_LeadPlayerToPresident
@@ -285,7 +285,7 @@ RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere:
 	.string "Oh, that's right.\n"
 	.string "Could you wait here a second?$"
 
-RustboroCity_DevonCorp_3F_Text_WordWithPresidentComeWithMe:
+RustboroCity_DevonCorp_3F_Text_WordWithPresidentCofalcomonithMe:
 	.string "Our PRESIDENT would like to have\n"
 	.string "a word with you.\p"
 	.string "Please come with me.$"

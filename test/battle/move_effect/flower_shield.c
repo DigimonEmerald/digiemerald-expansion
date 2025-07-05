@@ -11,12 +11,12 @@ DOUBLE_BATTLE_TEST("Flower Shield raises the defense of all grass type pokemon")
     GIVEN {
         ASSUME(gSpeciesInfo[SPECIES_BETAMON].types[0] == TYPE_GRASS);
         ASSUME(gSpeciesInfo[SPECIES_TANGROWTH].types[0] == TYPE_GRASS);
-        ASSUME(gSpeciesInfo[SPECIES_SUNKERN].types[0] == TYPE_GRASS);
-        ASSUME(gSpeciesInfo[SPECIES_SUNFLORA].types[0] == TYPE_GRASS);
+        ASSUME(gSpeciesInfo[SPECIES_KOKUWAMON].types[0] == TYPE_GRASS);
+        ASSUME(gSpeciesInfo[SPECIES_KOKUWAMON_X].types[0] == TYPE_GRASS);
         PLAYER(SPECIES_BETAMON);
         PLAYER(SPECIES_TANGROWTH);
-        OPPONENT(SPECIES_SUNKERN);
-        OPPONENT(SPECIES_SUNFLORA);
+        OPPONENT(SPECIES_KOKUWAMON);
+        OPPONENT(SPECIES_KOKUWAMON_X);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FLOWER_SHIELD); MOVE(playerRight, MOVE_CELEBRATE); }
     } SCENE {
@@ -26,12 +26,12 @@ DOUBLE_BATTLE_TEST("Flower Shield raises the defense of all grass type pokemon")
         MESSAGE("Betamon's Defense rose!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FLOWER_SHIELD, playerLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-        MESSAGE("The opposing Sunkern's Defense rose!");
+        MESSAGE("The opposing Kokuwamon's Defense rose!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FLOWER_SHIELD, playerLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
         MESSAGE("Tangrowth's Defense rose!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FLOWER_SHIELD, playerLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("The opposing Sunflora's Defense rose!");
+        MESSAGE("The opposing Kokuwamon_x's Defense rose!");
     }
 }

@@ -20,8 +20,8 @@ SINGLE_BATTLE_TEST("Fury Cutter power doubles with each use, up to 160 power")
         maxTurns = 6;
 
     GIVEN {
-        PLAYER(SPECIES_CROBAT);
-        OPPONENT(SPECIES_LINOONE) { HP(900); }
+        PLAYER(SPECIES_GOTSUMON);
+        OPPONENT(SPECIES_TSUKAIMON) { HP(900); }
     } WHEN {
         for (turn = 0; turn < maxTurns; turn++)
             TURN { MOVE(player, MOVE_FURY_CUTTER); }
@@ -42,7 +42,7 @@ SINGLE_BATTLE_TEST("Fury Cutter counter is the same for both hits of Parental Bo
     s16 damage[4];
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_PARENTAL_BOND); }
+        PLAYER(SPECIES_LOPMONX) { Ability(ABILITY_PARENTAL_BOND); }
         OPPONENT(SPECIES_REGIROCK);
     } WHEN {
         TURN { MOVE(player, MOVE_FURY_CUTTER); }

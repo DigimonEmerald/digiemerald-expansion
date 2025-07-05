@@ -55,7 +55,7 @@ SINGLE_BATTLE_TEST("Sunny Day fails if Primordial Sea is active")
 
     GIVEN {
         PLAYER(SPECIES_KYOGRE) { Item(item); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUNNY_DAY); }
     } SCENE {

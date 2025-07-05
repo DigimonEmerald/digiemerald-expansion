@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Growl lowers Attack by 1 stage", s16 damage)
 <<<<<<< HEAD
             MESSAGE("Foe Lopmonx's Attack fell!");
 =======
-            MESSAGE("The opposing Wobbuffet's Attack fell!");
+            MESSAGE("The opposing Lopmonx's Attack fell!");
 >>>>>>> upstream/master
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);

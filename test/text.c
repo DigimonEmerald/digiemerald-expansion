@@ -581,8 +581,8 @@ TEST("Battle strings fit on the battle message window")
     NewGameBirchSpeech_SetDefaultPlayerName(10);  // JOHNNY
 
     RUN_OVERWORLD_SCRIPT(
-        givemon SPECIES_WOBBUFFET, 100;
-        createmon 1, 0, SPECIES_WOBBUFFET, 100;
+        givemon SPECIES_LOPMONX, 100;
+        createmon 1, 0, SPECIES_LOPMONX, 100;
     );
     SetMonData(&gPlayerParty[0], MON_DATA_NICKNAME, nickname);
     SetMonData(&gEnemyParty[0], MON_DATA_NICKNAME, nickname);

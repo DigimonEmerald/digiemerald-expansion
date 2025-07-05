@@ -106,20 +106,20 @@ static const struct MenuAction MultichoiceList_LevelMode[] =
 static const struct MenuAction MultichoiceList_Mechadoll1_Q1[] =
 {
     {COMPOUND_STRING("ZERIMON")},
-    {COMPOUND_STRING("POOCHYENA")},
+    {COMPOUND_STRING("TINKERMON")},
     {COMPOUND_STRING("TAILLOW")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q2[] =
 {
     {COMPOUND_STRING("AZURILL")},
-    {COMPOUND_STRING("LOTAD")},
+    {COMPOUND_STRING("ZUBAMON")},
     {COMPOUND_STRING("WINGULL")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q3[] =
 {
-    {COMPOUND_STRING("DUSTOX")},
+    {COMPOUND_STRING("ZENIMON")},
     {COMPOUND_STRING("ICEBOTAMON")},
     {COMPOUND_STRING("NINCADA")},
 };
@@ -127,20 +127,20 @@ static const struct MenuAction MultichoiceList_Mechadoll1_Q3[] =
 static const struct MenuAction MultichoiceList_Mechadoll2_Q1[] =
 {
     {COMPOUND_STRING("RALTS")},
-    {COMPOUND_STRING("ZIGZAGOON")},
+    {COMPOUND_STRING("TOYAGUMON")},
     {COMPOUND_STRING("SLAKOTH")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q2[] =
 {
-    {COMPOUND_STRING("POOCHYENA")},
+    {COMPOUND_STRING("TINKERMON")},
     {COMPOUND_STRING("SHROOMISH")},
-    {COMPOUND_STRING("ZIGZAGOON")},
+    {COMPOUND_STRING("TOYAGUMON")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q3[] =
 {
-    {COMPOUND_STRING("POOCHYENA")},
+    {COMPOUND_STRING("TINKERMON")},
     {COMPOUND_STRING("ICEBOTAMON")},
     {COMPOUND_STRING("CARVANHA")},
 };

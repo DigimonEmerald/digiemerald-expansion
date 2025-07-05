@@ -14,9 +14,9 @@ SINGLE_BATTLE_TEST("Chilly Reception sets up snow and switches the user out")
         PLAYER(SPECIES_PAGUMON_GALARIAN);
         OPPONENT(SPECIES_LOPMONX);
 =======
-        PLAYER(SPECIES_SLOWKING_GALAR);
+        PLAYER(SPECIES_LIOLLMON_GALAR);
         PLAYER(SPECIES_PAGUMON_GALAR);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_CHILLY_RECEPTION); SEND_OUT(player, 1); }
@@ -28,7 +28,7 @@ SINGLE_BATTLE_TEST("Chilly Reception sets up snow and switches the user out")
         MESSAGE("Liollmon went back to  1");
         MESSAGE("Go! Pagumon!");
 =======
-        MESSAGE("Slowking went back to 1!");
+        MESSAGE("Liollmon went back to 1!");
         SEND_IN_MESSAGE("Pagumon");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SNOW_CONTINUES);
@@ -43,7 +43,7 @@ SINGLE_BATTLE_TEST("Chilly Reception switches the user out, even if the weather 
         PLAYER(SPECIES_PAGUMON_GALARIAN);
         OPPONENT(SPECIES_GATOMON_X)  { Item(ITEM_BLUE_ORB); }
 =======
-        PLAYER(SPECIES_SLOWKING_GALAR);
+        PLAYER(SPECIES_LIOLLMON_GALAR);
         PLAYER(SPECIES_PAGUMON_GALAR);
         OPPONENT(SPECIES_KYOGRE)  { Item(ITEM_BLUE_ORB); }
 >>>>>>> upstream/master
@@ -57,7 +57,7 @@ SINGLE_BATTLE_TEST("Chilly Reception switches the user out, even if the weather 
         MESSAGE("Liollmon went back to  1");
         MESSAGE("Go! Pagumon!");
 =======
-        MESSAGE("Slowking went back to 1!");
+        MESSAGE("Liollmon went back to 1!");
         SEND_IN_MESSAGE("Pagumon");
 >>>>>>> upstream/master
         MESSAGE("Rain continues to fall.");
@@ -71,8 +71,8 @@ SINGLE_BATTLE_TEST("Chilly Reception does not switch the user out if no replacem
         PLAYER(SPECIES_LIOLLMON_GALARIAN);
         OPPONENT(SPECIES_LOPMONX);
 =======
-        PLAYER(SPECIES_SLOWKING_GALAR);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LIOLLMON_GALAR);
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_CHILLY_RECEPTION); }
@@ -83,7 +83,7 @@ SINGLE_BATTLE_TEST("Chilly Reception does not switch the user out if no replacem
 <<<<<<< HEAD
         NOT MESSAGE("Liollmon went back to  1");
 =======
-        NOT MESSAGE("Slowking went back to 1!");
+        NOT MESSAGE("Liollmon went back to 1!");
 >>>>>>> upstream/master
     }
 }
@@ -96,9 +96,9 @@ SINGLE_BATTLE_TEST("Chilly Reception does not switch the user out if replacement
         PLAYER(SPECIES_PAGUMON_GALARIAN) { HP(0); }
         OPPONENT(SPECIES_LOPMONX);
 =======
-        PLAYER(SPECIES_SLOWKING_GALAR);
+        PLAYER(SPECIES_LIOLLMON_GALAR);
         PLAYER(SPECIES_PAGUMON_GALAR) { HP(0); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_CHILLY_RECEPTION); }
@@ -109,7 +109,7 @@ SINGLE_BATTLE_TEST("Chilly Reception does not switch the user out if replacement
 <<<<<<< HEAD
         NOT MESSAGE("Liollmon went back to  1");
 =======
-        NOT MESSAGE("Slowking went back to 1!");
+        NOT MESSAGE("Liollmon went back to 1!");
 >>>>>>> upstream/master
     }
 }
@@ -121,8 +121,8 @@ SINGLE_BATTLE_TEST("Chilly Reception changes the weather, even if the user canno
         PLAYER(SPECIES_LIOLLMON_GALARIAN);
         OPPONENT(SPECIES_LOPMONX);
 =======
-        PLAYER(SPECIES_SLOWKING_GALAR);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LIOLLMON_GALAR);
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_CHILLY_RECEPTION); }
@@ -133,7 +133,7 @@ SINGLE_BATTLE_TEST("Chilly Reception changes the weather, even if the user canno
 <<<<<<< HEAD
         NOT MESSAGE("Liollmon went back to  1");
 =======
-        NOT MESSAGE("Slowking went back to 1!");
+        NOT MESSAGE("Liollmon went back to 1!");
 >>>>>>> upstream/master
     }
 }

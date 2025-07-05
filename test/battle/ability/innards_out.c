@@ -17,9 +17,9 @@ SINGLE_BATTLE_TEST("Innards Out deal dmg on fainting equal to the amount of dmg 
         OPPONENT(SPECIES_LOPMONX);
         ASSUME(gMovesInfo[MOVE_PSYCHIC].power != 0);
 =======
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(70); SpAttack(1000); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { HP(70); SpAttack(1000); }
+        OPPONENT(SPECIES_LOPMONX);
         ASSUME(!IS_MOVE_STATUS(MOVE_PSYCHIC));
 >>>>>>> upstream/master
         ASSUME(gMovesInfo[MOVE_PSYCHIC].category == DAMAGE_CATEGORY_SPECIAL);
@@ -29,7 +29,7 @@ SINGLE_BATTLE_TEST("Innards Out deal dmg on fainting equal to the amount of dmg 
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Psychic!");
 =======
-        MESSAGE("The opposing Wobbuffet used Psychic!");
+        MESSAGE("The opposing Lopmonx used Psychic!");
 >>>>>>> upstream/master
         HP_BAR(player, hp);
         ABILITY_POPUP(player, ABILITY_INNARDS_OUT);
@@ -46,8 +46,8 @@ SINGLE_BATTLE_TEST("Innards Out does not trigger after Gastro Acid has been used
         OPPONENT(SPECIES_LOPMONX);
         ASSUME(gMovesInfo[MOVE_PSYCHIC].power != 0);
 =======
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         ASSUME(!IS_MOVE_STATUS(MOVE_PSYCHIC));
 >>>>>>> upstream/master
         ASSUME(gMovesInfo[MOVE_GASTRO_ACID].effect == EFFECT_GASTRO_ACID);
@@ -59,8 +59,8 @@ SINGLE_BATTLE_TEST("Innards Out does not trigger after Gastro Acid has been used
         MESSAGE("Foe Lopmonx used Gastro Acid!");
         MESSAGE("Foe Lopmonx used Psychic!");
 =======
-        MESSAGE("The opposing Wobbuffet used Gastro Acid!");
-        MESSAGE("The opposing Wobbuffet used Psychic!");
+        MESSAGE("The opposing Lopmonx used Gastro Acid!");
+        MESSAGE("The opposing Lopmonx used Psychic!");
 >>>>>>> upstream/master
         HP_BAR(player);
         NONE_OF {
@@ -84,7 +84,7 @@ SINGLE_BATTLE_TEST("Innards Out does not damage Magic Guard Pokemon")
     } SCENE {
         MESSAGE("Foe Pyonmon used Psychic!");
 =======
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PYONMON) { Ability(ABILITY_MAGIC_GUARD); }
         ASSUME(!IS_MOVE_STATUS(MOVE_PSYCHIC));
     } WHEN {
@@ -103,7 +103,7 @@ SINGLE_BATTLE_TEST("Innards Out uses correct damage amount for Future Sight")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_FUTURE_SIGHT].effect == EFFECT_FUTURE_SIGHT);
         PLAYER(SPECIES_PYUKUMUKU) { HP(1); Ability(ABILITY_INNARDS_OUT); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponent, MOVE_FUTURE_SIGHT); }
@@ -123,8 +123,8 @@ SINGLE_BATTLE_TEST("Innards Out doesn't trigger if Future Sight user is not on f
     GIVEN {
         ASSUME(gMovesInfo[MOVE_FUTURE_SIGHT].effect == EFFECT_FUTURE_SIGHT);
         PLAYER(SPECIES_PYUKUMUKU) { HP(1); Ability(ABILITY_INNARDS_OUT); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponent, MOVE_FUTURE_SIGHT); }
@@ -146,7 +146,7 @@ SINGLE_BATTLE_TEST("Innards Out triggers if Future Sight user is back on the fie
     GIVEN {
         ASSUME(gMovesInfo[MOVE_FUTURE_SIGHT].effect == EFFECT_FUTURE_SIGHT);
         PLAYER(SPECIES_PYUKUMUKU) { HP(1); Ability(ABILITY_INNARDS_OUT); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponent, MOVE_FUTURE_SIGHT); }

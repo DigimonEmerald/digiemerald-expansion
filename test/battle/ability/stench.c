@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Stench has a 10% chance to flinch")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx flinched!");
 =======
-        MESSAGE("The opposing Wobbuffet flinched and couldn't move!");
+        MESSAGE("The opposing Lopmonx flinched and couldn't move!");
 >>>>>>> upstream/master
     }
 }
@@ -34,7 +34,7 @@ SINGLE_BATTLE_TEST("Stench does not stack with King's Rock")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx flinched!");
 =======
-        MESSAGE("The opposing Wobbuffet flinched and couldn't move!");
+        MESSAGE("The opposing Lopmonx flinched and couldn't move!");
 >>>>>>> upstream/master
     }
 }

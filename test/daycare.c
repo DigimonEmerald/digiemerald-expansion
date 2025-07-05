@@ -26,7 +26,7 @@ TEST("(Daycare) Pokémon generate Eggs of the lowest member of the evolutionary 
     );
     STORE_IN_DAYCARE_AND_GET_EGG();
 
-    EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_PICHU);
+    EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_GUILMON_X);
 }
 
 TEST("(Daycare) Pokémon offspring species is based off the mother's species")
@@ -38,13 +38,13 @@ TEST("(Daycare) Pokémon offspring species is based off the mother's species")
 
     ZeroPlayerPartyMons();
     PARAMETRIZE { offspring = SPECIES_RIOLU; RUN_OVERWORLD_SCRIPT(givemon SPECIES_PETITMON, 100, gender=MON_MALE;   givemon SPECIES_LUCARIO, 100, gender=MON_FEMALE, item=ITEM_NONE;     ); }
-    PARAMETRIZE { offspring = SPECIES_PICHU; RUN_OVERWORLD_SCRIPT(givemon SPECIES_PETITMON, 100, gender=MON_FEMALE; givemon SPECIES_LUCARIO, 100, gender=MON_MALE;); }
+    PARAMETRIZE { offspring = SPECIES_GUILMON_X; RUN_OVERWORLD_SCRIPT(givemon SPECIES_PETITMON, 100, gender=MON_FEMALE; givemon SPECIES_LUCARIO, 100, gender=MON_MALE;); }
     STORE_IN_DAYCARE_AND_GET_EGG();
 
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), offspring);
 }
 
-TEST("(Daycare) Pokémon can breed with Ditto if they don't belong to the Ditto or No Eggs Discovered group")
+TEST("(Daycare) Pokémon can breed with Crabmon if they don't belong to the Crabmon or No Eggs Discovered group")
 {
     u32 j = 0;
     u32 parentSpecies = 0;
@@ -54,12 +54,12 @@ TEST("(Daycare) Pokémon can breed with Ditto if they don't belong to the Ditto 
         PARAMETRIZE { parentSpecies = j; }
     VarSet(VAR_TEMP_C, parentSpecies);
     RUN_OVERWORLD_SCRIPT(
-        givemon SPECIES_DITTO, 100; givemon VAR_TEMP_C, 100;
+        givemon SPECIES_CRABMON, 100; givemon VAR_TEMP_C, 100;
     );
     STORE_IN_DAYCARE_AND_GET_EGG();
 
     if (gSpeciesInfo[parentSpecies].eggGroups[0] != EGG_GROUP_NO_EGGS_DISCOVERED
-     && gSpeciesInfo[parentSpecies].eggGroups[0] != EGG_GROUP_DITTO)
+     && gSpeciesInfo[parentSpecies].eggGroups[0] != EGG_GROUP_CRABMON)
         EXPECT_NE(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_NONE);
     else
         EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_NONE);
@@ -124,27 +124,27 @@ TEST("(Daycare) Pokémon with regional forms give the correct offspring")
     }
 
     if (region == REGION_HISUI) {
-        PARAMETRIZE { offspring=SPECIES_SNEASEL_HISUI; species1=SPECIES_SNEASEL;       item1=ITEM_NONE;      species2=SPECIES_SNEASEL_HISUI, item2=ITEM_NONE;      }
-        PARAMETRIZE { offspring=SPECIES_SNEASEL;       species1=SPECIES_SNEASEL;       item1=ITEM_EVERSTONE; species2=SPECIES_SNEASEL_HISUI, item2=ITEM_NONE;      }
-        PARAMETRIZE { offspring=SPECIES_SNEASEL_HISUI; species1=SPECIES_SNEASEL;       item1=ITEM_NONE;      species2=SPECIES_SNEASEL_HISUI, item2=ITEM_EVERSTONE; }
-        PARAMETRIZE { offspring=SPECIES_SNEASEL;       species1=SPECIES_SNEASLER;      item1=ITEM_EVERSTONE; species2=SPECIES_WEAVILE,       item2=ITEM_EVERSTONE; }
+        PARAMETRIZE { offspring=SPECIES_MUSHROOMON_HISUI; species1=SPECIES_MUSHROOMON;       item1=ITEM_NONE;      species2=SPECIES_MUSHROOMON_HISUI, item2=ITEM_NONE;      }
+        PARAMETRIZE { offspring=SPECIES_MUSHROOMON;       species1=SPECIES_MUSHROOMON;       item1=ITEM_EVERSTONE; species2=SPECIES_MUSHROOMON_HISUI, item2=ITEM_NONE;      }
+        PARAMETRIZE { offspring=SPECIES_MUSHROOMON_HISUI; species1=SPECIES_MUSHROOMON;       item1=ITEM_NONE;      species2=SPECIES_MUSHROOMON_HISUI, item2=ITEM_EVERSTONE; }
+        PARAMETRIZE { offspring=SPECIES_MUSHROOMON;       species1=SPECIES_SNEASLER;      item1=ITEM_EVERSTONE; species2=SPECIES_WEAVILE,       item2=ITEM_EVERSTONE; }
     } else {
-        PARAMETRIZE { offspring=SPECIES_SNEASEL;       species1=SPECIES_SNEASEL;       item1=ITEM_NONE;      species2=SPECIES_SNEASEL_HISUI, item2=ITEM_NONE;      }
-        PARAMETRIZE { offspring=SPECIES_SNEASEL;       species1=SPECIES_SNEASEL;       item1=ITEM_EVERSTONE; species2=SPECIES_SNEASEL_HISUI, item2=ITEM_NONE;      }
-        PARAMETRIZE { offspring=SPECIES_SNEASEL_HISUI; species1=SPECIES_SNEASEL;       item1=ITEM_NONE;      species2=SPECIES_SNEASEL_HISUI, item2=ITEM_EVERSTONE; }
-        PARAMETRIZE { offspring=SPECIES_SNEASEL;       species1=SPECIES_SNEASLER;      item1=ITEM_EVERSTONE; species2=SPECIES_WEAVILE,       item2=ITEM_EVERSTONE; }
+        PARAMETRIZE { offspring=SPECIES_MUSHROOMON;       species1=SPECIES_MUSHROOMON;       item1=ITEM_NONE;      species2=SPECIES_MUSHROOMON_HISUI, item2=ITEM_NONE;      }
+        PARAMETRIZE { offspring=SPECIES_MUSHROOMON;       species1=SPECIES_MUSHROOMON;       item1=ITEM_EVERSTONE; species2=SPECIES_MUSHROOMON_HISUI, item2=ITEM_NONE;      }
+        PARAMETRIZE { offspring=SPECIES_MUSHROOMON_HISUI; species1=SPECIES_MUSHROOMON;       item1=ITEM_NONE;      species2=SPECIES_MUSHROOMON_HISUI, item2=ITEM_EVERSTONE; }
+        PARAMETRIZE { offspring=SPECIES_MUSHROOMON;       species1=SPECIES_SNEASLER;      item1=ITEM_EVERSTONE; species2=SPECIES_WEAVILE,       item2=ITEM_EVERSTONE; }
     }
 
     if (region == REGION_PALDEA) {
-        PARAMETRIZE { offspring=SPECIES_WOOPER_PALDEA; species1=SPECIES_WOOPER;        item1=ITEM_NONE;      species2=SPECIES_WOOPER_PALDEA, item2=ITEM_NONE;      }
-        PARAMETRIZE { offspring=SPECIES_WOOPER;        species1=SPECIES_WOOPER;        item1=ITEM_EVERSTONE; species2=SPECIES_WOOPER_PALDEA, item2=ITEM_NONE;      }
-        PARAMETRIZE { offspring=SPECIES_WOOPER_PALDEA; species1=SPECIES_WOOPER;        item1=ITEM_NONE;      species2=SPECIES_WOOPER_PALDEA, item2=ITEM_EVERSTONE; }
-        PARAMETRIZE { offspring=SPECIES_WOOPER;        species1=SPECIES_CLODSIRE;      item1=ITEM_EVERSTONE; species2=SPECIES_QUAGSIRE,      item2=ITEM_EVERSTONE; }
+        PARAMETRIZE { offspring=SPECIES_KUDAMON_PALDEA; species1=SPECIES_KUDAMON;        item1=ITEM_NONE;      species2=SPECIES_KUDAMON_PALDEA, item2=ITEM_NONE;      }
+        PARAMETRIZE { offspring=SPECIES_KUDAMON;        species1=SPECIES_KUDAMON;        item1=ITEM_EVERSTONE; species2=SPECIES_KUDAMON_PALDEA, item2=ITEM_NONE;      }
+        PARAMETRIZE { offspring=SPECIES_KUDAMON_PALDEA; species1=SPECIES_KUDAMON;        item1=ITEM_NONE;      species2=SPECIES_KUDAMON_PALDEA, item2=ITEM_EVERSTONE; }
+        PARAMETRIZE { offspring=SPECIES_KUDAMON;        species1=SPECIES_CLODSIRE;      item1=ITEM_EVERSTONE; species2=SPECIES_KUDAMON_06,      item2=ITEM_EVERSTONE; }
     } else {
-        PARAMETRIZE { offspring=SPECIES_WOOPER;        species1=SPECIES_WOOPER;        item1=ITEM_NONE;      species2=SPECIES_WOOPER_PALDEA, item2=ITEM_NONE;      }
-        PARAMETRIZE { offspring=SPECIES_WOOPER;        species1=SPECIES_WOOPER;        item1=ITEM_EVERSTONE; species2=SPECIES_WOOPER_PALDEA, item2=ITEM_NONE;      }
-        PARAMETRIZE { offspring=SPECIES_WOOPER_PALDEA; species1=SPECIES_WOOPER;        item1=ITEM_NONE;      species2=SPECIES_WOOPER_PALDEA, item2=ITEM_EVERSTONE; }
-        PARAMETRIZE { offspring=SPECIES_WOOPER;        species1=SPECIES_CLODSIRE;      item1=ITEM_EVERSTONE; species2=SPECIES_QUAGSIRE,      item2=ITEM_EVERSTONE; }
+        PARAMETRIZE { offspring=SPECIES_KUDAMON;        species1=SPECIES_KUDAMON;        item1=ITEM_NONE;      species2=SPECIES_KUDAMON_PALDEA, item2=ITEM_NONE;      }
+        PARAMETRIZE { offspring=SPECIES_KUDAMON;        species1=SPECIES_KUDAMON;        item1=ITEM_EVERSTONE; species2=SPECIES_KUDAMON_PALDEA, item2=ITEM_NONE;      }
+        PARAMETRIZE { offspring=SPECIES_KUDAMON_PALDEA; species1=SPECIES_KUDAMON;        item1=ITEM_NONE;      species2=SPECIES_KUDAMON_PALDEA, item2=ITEM_EVERSTONE; }
+        PARAMETRIZE { offspring=SPECIES_KUDAMON;        species1=SPECIES_CLODSIRE;      item1=ITEM_EVERSTONE; species2=SPECIES_KUDAMON_06,      item2=ITEM_EVERSTONE; }
     }
     ASSUME(IsSpeciesEnabled(species1) == TRUE);
     ASSUME(IsSpeciesEnabled(species2) == TRUE);

@@ -101,7 +101,7 @@ SINGLE_BATTLE_TEST("Disguised Mimikyu takes damage from Rocky Helmet without bre
 <<<<<<< HEAD
         MESSAGE("Mimikyu was hurt by Foe Lopmonx's Rocky Helmet!");
 =======
-        MESSAGE("Mimikyu was hurt by the opposing Wobbuffet's Rocky Helmet!");
+        MESSAGE("Mimikyu was hurt by the opposing Lopmonx's Rocky Helmet!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->species, SPECIES_MIMIKYU_DISGUISED);
@@ -134,7 +134,7 @@ SINGLE_BATTLE_TEST("Disguised Mimikyu is ignored by Mold Breaker")
 {
     GIVEN {
         PLAYER(SPECIES_MIMIKYU_DISGUISED) { Ability(ABILITY_DISGUISE); }
-        OPPONENT(SPECIES_PINSIR) { Ability(ABILITY_MOLD_BREAKER); }
+        OPPONENT(SPECIES_TYUTYUMON) { Ability(ABILITY_MOLD_BREAKER); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_AERIAL_ACE); }
     } SCENE {
@@ -148,17 +148,17 @@ SINGLE_BATTLE_TEST("Disguised Mimikyu's types revert back to Ghost/Fairy when Di
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SHADOW_CLAW].type == TYPE_GHOST);
         PLAYER(SPECIES_MIMIKYU_DISGUISED) { Ability(ABILITY_DISGUISE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SOAK); }
         TURN { MOVE(opponent, MOVE_TACKLE); }
         TURN { MOVE(opponent, MOVE_SHADOW_CLAW); }
     } SCENE {
-        MESSAGE("The opposing Wobbuffet used Soak!");
+        MESSAGE("The opposing Lopmonx used Soak!");
         MESSAGE("Mimikyu transformed into the Water type!");
-        MESSAGE("The opposing Wobbuffet used Tackle!");
+        MESSAGE("The opposing Lopmonx used Tackle!");
         ABILITY_POPUP(player, ABILITY_DISGUISE);
-        MESSAGE("The opposing Wobbuffet used Shadow Claw!");
+        MESSAGE("The opposing Lopmonx used Shadow Claw!");
         MESSAGE("It's super effective!");
     }
 }
@@ -167,15 +167,15 @@ SINGLE_BATTLE_TEST("Disguised Mimikyu blocks a move after getting Gastro Acid Ba
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_BATON_PASS].effect == EFFECT_BATON_PASS);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_MIMIKYU_DISGUISED) { Ability(ABILITY_DISGUISE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_GASTRO_ACID); MOVE(player, MOVE_BATON_PASS); SEND_OUT(player, 1); }
         TURN { MOVE(opponent, MOVE_SHADOW_CLAW); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GASTRO_ACID, opponent);
-        MESSAGE("Wobbuffet's Ability was suppressed!");
+        MESSAGE("Lopmonx's Ability was suppressed!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BATON_PASS, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SHADOW_CLAW, opponent);
         ABILITY_POPUP(player, ABILITY_DISGUISE);
@@ -188,7 +188,7 @@ SINGLE_BATTLE_TEST("Disguise does not break from a teammate's Wish")
         ASSUME(gMovesInfo[MOVE_WISH].effect == EFFECT_WISH);
         PLAYER(SPECIES_JIRACHI);
         PLAYER(SPECIES_MIMIKYU_DISGUISED) { Ability(ABILITY_DISGUISE); HP(219); MaxHP(220); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_WISH); }
         TURN { SWITCH(player, 1); }

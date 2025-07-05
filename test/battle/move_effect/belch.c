@@ -15,7 +15,7 @@ AI_SINGLE_BATTLE_TEST("AI: Belch has nonzero score after eating a berry")
 {
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_BAYLEEF) { Level(18); Moves(MOVE_MUD_SHOT, MOVE_TACKLE); }
+        PLAYER(SPECIES_FANBEEMON) { Level(18); Moves(MOVE_MUD_SHOT, MOVE_TACKLE); }
         OPPONENT(SPECIES_PETITMON) { Level(15); Item(ITEM_SHUCA_BERRY); Moves(MOVE_BELCH, MOVE_TACKLE); }
     } WHEN {
         TURN { MOVE(player, MOVE_MUD_SHOT); EXPECT_MOVE(opponent, MOVE_TACKLE); }
@@ -59,7 +59,7 @@ SINGLE_BATTLE_TEST("Belch can still be used after switching out")
         ASSUME(gMovesInfo[MOVE_STUFF_CHEEKS].effect == EFFECT_STUFF_CHEEKS);
         PLAYER(SPECIES_GREEDENT) { Item(ITEM_ORAN_BERRY); }
         PLAYER(SPECIES_SKWOVET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_STUFF_CHEEKS); }
         TURN { SWITCH(player, 1); }
@@ -81,7 +81,7 @@ SINGLE_BATTLE_TEST("Belch can still be used after fainting")
         ASSUME(gMovesInfo[MOVE_REVIVAL_BLESSING].effect == EFFECT_REVIVAL_BLESSING);
         PLAYER(SPECIES_GREEDENT) { Item(ITEM_ORAN_BERRY); }
         PLAYER(SPECIES_SKWOVET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_STUFF_CHEEKS); MOVE(opponent, MOVE_FISSURE); SEND_OUT(player, 1); }
         TURN { MOVE(player, MOVE_REVIVAL_BLESSING, partyIndex: 0); }
@@ -103,7 +103,7 @@ SINGLE_BATTLE_TEST("Belch can still be used after restoring the consumed berry")
         ASSUME(gMovesInfo[MOVE_RECYCLE].effect == EFFECT_RECYCLE);
         PLAYER(SPECIES_GREEDENT) { Item(ITEM_ORAN_BERRY); }
         PLAYER(SPECIES_SKWOVET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_STUFF_CHEEKS); }
         TURN { MOVE(player, MOVE_RECYCLE); }

@@ -170,7 +170,7 @@ AI_SINGLE_BATTLE_TEST("AI can choose Counter or Mirror Coat if the predicted mov
 <<<<<<< HEAD:test/battle/ai_check_viability.c
         MESSAGE("Foe Lopmonx fainted!");
 =======
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmonx fainted!");
 >>>>>>> upstream/master:test/battle/ai/ai_check_viability.c
     }
 }
@@ -209,8 +209,8 @@ AI_DOUBLE_BATTLE_TEST("AI chooses moves that cure self or partner")
         ASSUME(gMovesInfo[MOVE_HEAL_BELL].effect == EFFECT_HEAL_BELL);
         ASSUME(B_HEAL_BELL_SOUNDPROOF >= GEN_8);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_REGIROCK) { Moves(MOVE_ROCK_SLIDE, MOVE_HEAL_BELL, MOVE_ACID); Status1(status1_0); }
         OPPONENT(SPECIES_EXPLOUD) { Status1(status1_1); Ability(partnerAbility); }
     } WHEN {
@@ -233,7 +233,7 @@ AI_SINGLE_BATTLE_TEST("AI chooses moves that cure inactive party members")
         ASSUME(gMovesInfo[MOVE_HEAL_BELL].effect == EFFECT_HEAL_BELL);
         ASSUME(B_HEAL_BELL_SOUNDPROOF >= GEN_5);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_REGIROCK) { Moves(MOVE_BODY_PRESS, MOVE_HEAL_BELL); }
         OPPONENT(SPECIES_EXPLOUD) { Status1(status); Ability(ability); }
     } WHEN {
@@ -250,8 +250,8 @@ AI_DOUBLE_BATTLE_TEST("AI prioritizes Skill Swapping Contrary to allied mons tha
         ASSUME(gMovesInfo[MOVE_SKILL_SWAP].effect == EFFECT_SKILL_SWAP);
         ASSUME(gMovesInfo[MOVE_OVERHEAT].additionalEffects[0].moveEffect == MOVE_EFFECT_SP_ATK_MINUS_2);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE);
-        PLAYER(SPECIES_WOBBUFFET) { Speed(3); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(3); }
+        PLAYER(SPECIES_LOPMONX) { Speed(3); }
+        PLAYER(SPECIES_LOPMONX) { Speed(3); }
         OPPONENT(SPECIES_SPINDA) { Ability(ABILITY_CONTRARY); Speed(5); Moves(MOVE_SKILL_SWAP, MOVE_ENCORE, MOVE_FAKE_TEARS, MOVE_SWAGGER); }
         OPPONENT(SPECIES_GIGIMON) { Ability(ABILITY_INTIMIDATE); Speed(4); Moves (MOVE_OVERHEAT); }
     } WHEN {

@@ -77,12 +77,12 @@ SINGLE_BATTLE_TEST("Jump Kick's recoil happens after Spiky Shield damage and Pok
         TURN { ; }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPIKY_SHIELD, opponent);
-        MESSAGE("Wobbuffet used Jump Kick!");
-        MESSAGE("The opposing Wobbuffet protected itself!");
+        MESSAGE("Lopmonx used Jump Kick!");
+        MESSAGE("The opposing Lopmonx protected itself!");
         HP_BAR(player, damage: maxHp / 8);
-        MESSAGE("Wobbuffet was hurt by the opposing Wobbuffet's Spiky Shield!");
+        MESSAGE("Lopmonx was hurt by the opposing Lopmonx's Spiky Shield!");
         if (faintOnSpiky){
-            MESSAGE("Wobbuffet fainted!");
+            MESSAGE("Lopmonx fainted!");
             SEND_IN_MESSAGE("Wynaut");
             NONE_OF {
                 MESSAGE("Lopmonx kept going and crashed!");
@@ -92,7 +92,7 @@ SINGLE_BATTLE_TEST("Jump Kick's recoil happens after Spiky Shield damage and Pok
             MESSAGE("Lopmonx kept going and crashed!");
             HP_BAR(player);
             if (faintOnJumpKick) {
-                MESSAGE("Wobbuffet fainted!");
+                MESSAGE("Lopmonx fainted!");
                 SEND_IN_MESSAGE("Wynaut");
             }
         }

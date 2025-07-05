@@ -16,7 +16,7 @@ SINGLE_BATTLE_TEST("Dark Void inflicts 1-3 turns of sleep")
     PASSES_RANDOMLY(1, 3, RNG_SLEEP_TURNS);
     GIVEN {
         PLAYER(SPECIES_DARKRAI);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_DARK_VOID); MOVE(opponent, MOVE_CELEBRATE); }
         for (count = 0; count < turns; ++count)
@@ -24,15 +24,15 @@ SINGLE_BATTLE_TEST("Dark Void inflicts 1-3 turns of sleep")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DARK_VOID, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Wobbuffet fell asleep!");
+        MESSAGE("The opposing Lopmonx fell asleep!");
         STATUS_ICON(opponent, sleep: TRUE);
         for (count = 0; count < turns; ++count)
         {
             if (count < turns - 1)
-                MESSAGE("The opposing Wobbuffet is fast asleep.");
+                MESSAGE("The opposing Lopmonx is fast asleep.");
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
         }
-        MESSAGE("The opposing Wobbuffet woke up!");
+        MESSAGE("The opposing Lopmonx woke up!");
         STATUS_ICON(opponent, none: TRUE);
     }
 }

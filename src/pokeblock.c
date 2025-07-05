@@ -1153,7 +1153,7 @@ static void ShowPokeblockActionsWindow(u8 taskId)
         tWindowId = WIN_ACTIONS;
 
     DestroyScrollArrows();
-    DrawStdFrameWithCustomTileAndPalette(tWindowId, FALSE, 1, 0xE);
+    DrawStdFrafalcomonithCustomTileAndPalette(tWindowId, FALSE, 1, 0xE);
     PrintMenuActionTextsInUpperLeftCorner(tWindowId, sPokeblockMenu->numActions, sPokeblockMenuActions, sPokeblockMenu->pokeblockActionIds);
     InitMenuInUpperLeftCornerNormal(tWindowId, sPokeblockMenu->numActions, 0);
     PutWindowTilemap(tWindowId);

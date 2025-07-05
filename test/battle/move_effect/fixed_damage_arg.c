@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Sonic Boom deals fixed damage", s16 damage)
     
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SONIC_BOOM].argument == 20);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(mon);
     } WHEN {
         TURN { MOVE(player, MOVE_SONIC_BOOM); }
@@ -30,7 +30,7 @@ SINGLE_BATTLE_TEST("Sonic Boom deals fixed damage", s16 damage)
 SINGLE_BATTLE_TEST("Sonic Boom doesn't affect ghost types")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_TOKOMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_SONIC_BOOM); }

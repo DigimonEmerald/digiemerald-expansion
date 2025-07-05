@@ -647,7 +647,7 @@ MatchCall_PersonalizedText1::
 	.string "Well, since we met, have you grown\n"
 	.string "to appreciate the mountains more?\p"
 	.string "I rarely see you in the mountains…\p"
-	.string "Next time, we'll meet somewhere\n"
+	.string "Next time, we'll meet sofalcomonhere\n"
 	.string "around {STR_VAR_2}.$"
 
 MatchCall_PersonalizedText2::
@@ -2302,7 +2302,7 @@ MatchCall_Text_Wallace::
 	.string "Instead, he would rather look for\n"
 	.string "rare stones.\p"
 	.string "I'm sure he's digging in a cave or\n"
-	.string "a craggy mountain somewhere.\p"
+	.string "a craggy mountain sofalcomonhere.\p"
 	.string "But what is a rare stone exactly?\n"
 	.string "All I can think of is a METEORITE…$"
 
@@ -2665,7 +2665,7 @@ MatchCall_Text_Scott3::
 	.string "MT. PYRE?\p"
 	.string "The place is a memorial to POKéMON\n"
 	.string "that have passed away.\p"
-	.string "It's somewhere every TRAINER\n"
+	.string "It's sofalcomonhere every TRAINER\n"
 	.string "should climb to the top of once.$"
 
 MatchCall_Text_Scott4::
@@ -2694,7 +2694,7 @@ MatchCall_Text_Scott6::
 	.string "With your talent, becoming the\n"
 	.string "CHAMPION isn't a pipe dream.\p"
 	.string "But did you know?\n"
-	.string "There's somewhere even better.\p"
+	.string "There's sofalcomonhere even better.\p"
 	.string "But, that's all I'm willing to say\n"
 	.string "for the time being.\p"
 	.string "It's something you can look\n"
@@ -2829,7 +2829,7 @@ MatchCall_Text_Steven7::
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "I hope we can meet again\n"
-	.string "somewhere!$"
+	.string "sofalcomonhere!$"
 
 MatchCall_Text_BirchRegisterCall:
 	.string "PROF. BIRCH: Oh, {PLAYER}{KUN}!\n"

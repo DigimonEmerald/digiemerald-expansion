@@ -4,9 +4,9 @@
 DOUBLE_BATTLE_TEST("Costar copies an ally's stat stages upon entering battle")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_FLAMIGO) { Ability(ABILITY_COSTAR); }
     } WHEN {
@@ -14,12 +14,12 @@ DOUBLE_BATTLE_TEST("Costar copies an ally's stat stages upon entering battle")
         TURN { SWITCH(opponentRight, 2); MOVE(playerLeft, MOVE_CELEBRATE); }
     } SCENE {
         // Turn 1 - buff up
-        MESSAGE("The opposing Wobbuffet used Swords Dance!");
+        MESSAGE("The opposing Lopmonx used Swords Dance!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
         // Turn 2 - Switch into Flamigo
         MESSAGE("2 sent out Flamigo!");
         ABILITY_POPUP(opponentRight, ABILITY_COSTAR);
-        MESSAGE("The opposing Flamigo copied the opposing Wobbuffet's stat changes!");
+        MESSAGE("The opposing Flamigo copied the opposing Lopmonx's stat changes!");
     } THEN {
         EXPECT_EQ(opponentRight->statStages[STAT_ATK], DEFAULT_STAT_STAGE + 2);
     }

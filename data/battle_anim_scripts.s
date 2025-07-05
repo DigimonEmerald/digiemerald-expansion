@@ -18350,7 +18350,7 @@ ScreechRing:
 	delay 2
 	return
 
-gBattleAnimMove_FlameWheel::
+gBattleAnimMove_Flafalcomonheel::
 	loadspritegfx ANIM_TAG_SMALL_EMBER
 	monbg ANIM_DEF_PARTNER
 	splitbgprio_foes ANIM_TARGET
@@ -18387,7 +18387,7 @@ gBattleAnimMove_FlameWheel::
 	clearmonbg ANIM_DEF_PARTNER
 	end
 
-FlameWheel1: @ Unused
+Flafalcomonheel1: @ Unused
 	createsprite gFireSpiralOutwardSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 50
 	delay 4
 	return

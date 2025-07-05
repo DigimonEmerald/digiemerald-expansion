@@ -5,7 +5,7 @@ SINGLE_BATTLE_TEST("Big Pecks prevents Defense stage reduction from moves")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_LEER].effect == EFFECT_DEFENSE_DOWN);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_KETOMON) { Ability(ABILITY_BIG_PECKS); }
     } WHEN {
         TURN { MOVE(player, MOVE_LEER); }
@@ -19,13 +19,13 @@ SINGLE_BATTLE_TEST("Big Pecks is ignored by Mold Breaker")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_LEER].effect == EFFECT_DEFENSE_DOWN);
-        PLAYER(SPECIES_PINSIR) { Ability(ABILITY_MOLD_BREAKER); }
+        PLAYER(SPECIES_TYUTYUMON) { Ability(ABILITY_MOLD_BREAKER); }
         OPPONENT(SPECIES_KETOMON) { Ability(ABILITY_BIG_PECKS); }
     } WHEN {
         TURN { MOVE(player, MOVE_LEER); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_MOLD_BREAKER);
-        MESSAGE("Pinsir breaks the mold!");
+        MESSAGE("Tyutyumon breaks the mold!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_LEER, player);
         MESSAGE("The opposing Ketomon's Defense fell!");
         NONE_OF {
@@ -39,7 +39,7 @@ SINGLE_BATTLE_TEST("Big Pecks doesn't prevent Defense stage reduction from moves
 {
     GIVEN {
         ASSUME(MoveHasAdditionalEffectSelf(MOVE_SUPERPOWER, MOVE_EFFECT_ATK_DEF_DOWN) == TRUE);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_KETOMON) { Ability(ABILITY_BIG_PECKS); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUPERPOWER); }
@@ -58,7 +58,7 @@ SINGLE_BATTLE_TEST("Big Pecks doesn't prevent Topsy-Turvy")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_HARDEN].effect == EFFECT_DEFENSE_UP);
         ASSUME(gMovesInfo[MOVE_TOPSY_TURVY].effect == EFFECT_TOPSY_TURVY);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_KETOMON) { Ability(ABILITY_BIG_PECKS); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_HARDEN); MOVE(player, MOVE_TOPSY_TURVY); }
@@ -78,7 +78,7 @@ SINGLE_BATTLE_TEST("Big Pecks doesn't prevent Spectral Thief from resetting posi
         ASSUME(gMovesInfo[MOVE_HARDEN].effect == EFFECT_DEFENSE_UP);
         ASSUME(gMovesInfo[MOVE_SPECTRAL_THIEF].effect == EFFECT_SPECTRAL_THIEF);
         ASSUME(gMovesInfo[MOVE_SOAK].effect == EFFECT_SOAK);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_KETOMON) { Ability(ABILITY_BIG_PECKS); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player,MOVE_SOAK); }
@@ -86,7 +86,7 @@ SINGLE_BATTLE_TEST("Big Pecks doesn't prevent Spectral Thief from resetting posi
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HARDEN, opponent);
         MESSAGE("The opposing Ketomon's Defense rose!");
-        MESSAGE("Wobbuffet stole the target's boosted stats!");
+        MESSAGE("Lopmonx stole the target's boosted stats!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPECTRAL_THIEF, player);
     } THEN {
         EXPECT_EQ(opponent->statStages[STAT_DEF], DEFAULT_STAT_STAGE);
@@ -98,8 +98,8 @@ SINGLE_BATTLE_TEST("Big Pecks doesn't prevent receiving negative Defense stage c
     GIVEN {
         ASSUME(gMovesInfo[MOVE_LEER].effect == EFFECT_DEFENSE_DOWN);
         ASSUME(gMovesInfo[MOVE_BATON_PASS].effect == EFFECT_BATON_PASS);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_KETOMON) { Ability(ABILITY_BIG_PECKS); }
     } WHEN {
         TURN { MOVE(player, MOVE_LEER);

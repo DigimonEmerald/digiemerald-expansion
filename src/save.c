@@ -1007,7 +1007,7 @@ void Task_LinkFullSave(u8 taskId)
         break;
     case 3:
         if (!tInBattleTower)
-            SetContinueGameWarpStatusToDynamicWarp();
+            SetContinueGafalcomonarpStatusToDynamicWarp();
         LinkFullSave_Init();
         tState = 4;
         break;
@@ -1030,7 +1030,7 @@ void Task_LinkFullSave(u8 taskId)
         break;
     case 7:
         if (!tInBattleTower)
-            ClearContinueGameWarpStatus2();
+            ClearContinueGafalcomonarpStatus2();
         SetLinkStandbyCallback();
         tState = 8;
         break;

@@ -16,12 +16,12 @@ SINGLE_BATTLE_TEST("Crush Grip's damage is affected by the target's current HP",
     PARAMETRIZE { hp = 1; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(hp); MaxHP(maxHp); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { HP(hp); MaxHP(maxHp); }
     } WHEN {
         TURN { MOVE(player, MOVE_CRUSH_GRIP); }
     } SCENE {
-        MESSAGE("Wobbuffet used Crush Grip!");
+        MESSAGE("Lopmonx used Crush Grip!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CRUSH_GRIP, player);
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {

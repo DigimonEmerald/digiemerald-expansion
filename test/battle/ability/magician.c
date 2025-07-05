@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("Magician does not get self-damage recoil after stealing Life
 <<<<<<< HEAD
         MESSAGE("Delphox stole Foe Lopmonx's Life Orb!");
 =======
-        MESSAGE("Delphox stole the opposing Wobbuffet's Life Orb!");
+        MESSAGE("Delphox stole the opposing Lopmonx's Life Orb!");
 >>>>>>> upstream/master
         NONE_OF {
             HP_BAR(player);

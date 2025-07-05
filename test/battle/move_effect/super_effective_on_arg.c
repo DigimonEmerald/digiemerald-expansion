@@ -9,7 +9,7 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Freeze Dry is super effective on water types")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_TANEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_FREEZE_DRY); }

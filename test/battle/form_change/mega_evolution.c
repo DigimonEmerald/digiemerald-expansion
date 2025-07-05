@@ -99,7 +99,7 @@ SINGLE_BATTLE_TEST("Mega Evolution affects turn order")
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
         MESSAGE("Gardevoir used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
     } THEN {
         ASSUME(player->speed == 205);
@@ -122,7 +122,7 @@ SINGLE_BATTLE_TEST("Abilities replaced by Mega Evolution do not affect turn orde
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
         MESSAGE("Sableye used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
     } THEN {
         ASSUME(player->speed == 45);
@@ -204,7 +204,7 @@ SINGLE_BATTLE_TEST("Mega Evolved Pokemon do not change abilities after fainting"
 <<<<<<< HEAD
             MESSAGE("Lopmonx was hurt by Foe Garchomp's Rough Skin!");
 =======
-            MESSAGE("Wobbuffet was hurt by the opposing Garchomp's Rough Skin!");
+            MESSAGE("Lopmonx was hurt by the opposing Garchomp's Rough Skin!");
 >>>>>>> upstream/master
             HP_BAR(player);
         }

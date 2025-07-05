@@ -49,7 +49,7 @@ AI_SINGLE_BATTLE_TEST("AI avoids Will-o-Wisp when it can not burn target")
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
         PLAYER(species) { Ability(ability); }
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_CELEBRATE, MOVE_WILL_O_WISP); }
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_CELEBRATE, MOVE_WILL_O_WISP); }
     } WHEN {
         TURN { SCORE_EQ(opponent, MOVE_CELEBRATE, MOVE_WILL_O_WISP); } // Both get -10
     }

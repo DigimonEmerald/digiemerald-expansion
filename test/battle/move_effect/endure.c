@@ -8,8 +8,8 @@ SINGLE_BATTLE_TEST("Endure does not prevent multiple hits and stat changes occur
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SCALE_SHOT].effect == EFFECT_MULTI_HIT);
         ASSUME(gMovesInfo[MOVE_ENDURE].effect == EFFECT_ENDURE);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { HP(1); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_ENDURE); MOVE(player, MOVE_SCALE_SHOT); }
     } SCENE {
@@ -21,9 +21,9 @@ SINGLE_BATTLE_TEST("Endure does not prevent multiple hits and stat changes occur
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCALE_SHOT, player);
         MESSAGE("The Pokémon was hit 5 time(s)!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Wobbuffet's Defense fell!");
+        MESSAGE("Lopmonx's Defense fell!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Wobbuffet's Speed rose!");
+        MESSAGE("Lopmonx's Speed rose!");
     }
 }
 

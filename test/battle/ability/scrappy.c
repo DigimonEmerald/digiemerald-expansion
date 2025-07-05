@@ -23,7 +23,7 @@ SINGLE_BATTLE_TEST("Scrappy prevents intimidate")
 <<<<<<< HEAD
         MESSAGE("Foe Betamon_x's Scrappy prevents stat loss!");
 =======
-        MESSAGE("The opposing Kangaskhan's Scrappy prevents stat loss!");
+        MESSAGE("The opposing betamon_x's Scrappy prevents stat loss!");
 >>>>>>> upstream/master
         HP_BAR(player, captureDamage: &turnTwoHit);
     } THEN {

@@ -28,7 +28,7 @@ SINGLE_BATTLE_TEST("Schooling switches Level 20+ Wishiwashi's form when HP is 25
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Super Fang!");
 =======
-        MESSAGE("The opposing Wobbuffet used Super Fang!");
+        MESSAGE("The opposing Lopmonx used Super Fang!");
 >>>>>>> upstream/master
         HP_BAR(player);
         if (level >= 20)
@@ -71,7 +71,7 @@ SINGLE_BATTLE_TEST("Schooling switches Level 20+ Wishiwashi's form when HP is ov
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
     } THEN {
         if (level >= 20 && overQuarterHP)
@@ -103,7 +103,7 @@ SINGLE_BATTLE_TEST("Schooling switches Level 20+ Wishiwashi's form when HP is he
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Heal Pulse!");
 =======
-        MESSAGE("The opposing Wobbuffet used Heal Pulse!");
+        MESSAGE("The opposing Lopmonx used Heal Pulse!");
 >>>>>>> upstream/master
         HP_BAR(player);
         if (level >= 20)

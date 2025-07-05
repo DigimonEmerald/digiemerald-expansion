@@ -488,7 +488,7 @@
 #define SPECIES_GLACEON                                 471
 #define SPECIES_GLISCOR                                 472
 #define SPECIES_MAMOSWINE                               473
-#define SPECIES_DOKUNEMON_Z                               474
+#define SPECIES_PORYGON_Z                               474
 #define SPECIES_GALLADE                                 475
 #define SPECIES_PROBOPASS                               476
 #define SPECIES_DUSKNOIR                                477

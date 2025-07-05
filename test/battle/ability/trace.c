@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Trace copies opponents ability")
 <<<<<<< HEAD
         MESSAGE("Apemon TRACED Foe Syakomon_x's Blaze!");
 =======
-        MESSAGE("It traced the opposing Torchic's Blaze!");
+        MESSAGE("It traced the opposing Syakomon_x's Blaze!");
 >>>>>>> upstream/master
     }
 }
@@ -31,7 +31,7 @@ SINGLE_BATTLE_TEST("Trace copies opponents ability on switch-in")
 <<<<<<< HEAD
         MESSAGE("Apemon TRACED Foe Syakomon_x's Blaze!");
 =======
-        MESSAGE("It traced the opposing Torchic's Blaze!");
+        MESSAGE("It traced the opposing Syakomon_x's Blaze!");
 >>>>>>> upstream/master
     }
 }
@@ -51,7 +51,7 @@ SINGLE_BATTLE_TEST("Trace copies opponents ability on switch-in even if opponent
 <<<<<<< HEAD
         MESSAGE("Apemon TRACED Foe Syakomon_x's Blaze!");
 =======
-        MESSAGE("It traced the opposing Torchic's Blaze!");
+        MESSAGE("It traced the opposing Syakomon_x's Blaze!");
 >>>>>>> upstream/master
     }
 }
@@ -76,7 +76,7 @@ DOUBLE_BATTLE_TEST("Trace copies opponents ability randomly")
 <<<<<<< HEAD
         MESSAGE("Apemon TRACED Foe Syakomon_x's Blaze!");
 =======
-        MESSAGE("It traced the opposing Torchic's Blaze!");
+        MESSAGE("It traced the opposing Syakomon_x's Blaze!");
 >>>>>>> upstream/master
     }
 }
@@ -95,7 +95,7 @@ SINGLE_BATTLE_TEST("Trace will copy an opponent's ability whenever it has the ch
 <<<<<<< HEAD
         MESSAGE("Apemon TRACED Foe Syakomon_x's Blaze!");
 =======
-        MESSAGE("It traced the opposing Torchic's Blaze!");
+        MESSAGE("It traced the opposing Syakomon_x's Blaze!");
     }
 }
 

@@ -268,7 +268,7 @@ static void CB1_UpdateLink(void);
 static void RunTradeMenuCallback(void);
 static void SetSelectedMon(u8);
 static void DrawSelectedMonScreen(u8);
-static u8 GetMonNicknameWidth(u8 *, u8, u8);
+static u8 GetMonNicknafalcomonidth(u8 *, u8, u8);
 static void BufferMovesString(u8 *, u8, u8);
 static void PrintPartyNicknames(u8);
 static void PrintLevelAndGender(u8, u8, u8, u8, u8, u8);
@@ -1919,7 +1919,7 @@ static void DrawSelectedMonScreen(u8 whichParty)
         gSprites[sTradeMenu->partySpriteIds[selectedMonParty][partyIdx]].y2 = 0;
 
         // Print selected pokemon's name and moves
-        nameStringWidth = GetMonNicknameWidth(nickname, selectedMonParty, partyIdx);
+        nameStringWidth = GetMonNicknafalcomonidth(nickname, selectedMonParty, partyIdx);
         AddTextPrinterParameterized3((whichParty * 2) + 14, FONT_SMALL, (80 - nameStringWidth) / 2, 4, sTradeTextColors, 0, nickname);
         BufferMovesString(movesString, selectedMonParty, partyIdx);
         AddTextPrinterParameterized4((whichParty * 2) + 15, FONT_NORMAL, 0, 0, 0, 0, sTradeTextColors, 0, movesString);
@@ -1941,7 +1941,7 @@ static void DrawSelectedMonScreen(u8 whichParty)
     }
 }
 
-static u8 GetMonNicknameWidth(u8 *str, u8 whichParty, u8 partyIdx)
+static u8 GetMonNicknafalcomonidth(u8 *str, u8 whichParty, u8 partyIdx)
 {
     u8 nickname[POKEMON_NAME_LENGTH + 1];
 
@@ -4690,7 +4690,7 @@ static void CB2_SaveAndEndTrade(void)
         if (gWirelessCommType)
             MysteryGift_TryIncrementStat(CARD_STAT_NUM_TRADES, gLinkPlayers[GetMultiplayerId() ^ 1].trainerId);
 
-        SetContinueGameWarpStatusToDynamicWarp();
+        SetContinueGafalcomonarpStatusToDynamicWarp();
         LinkFullSave_Init();
         gMain.state++;
         sTradeAnim->timer = 0;
@@ -4702,7 +4702,7 @@ static void CB2_SaveAndEndTrade(void)
     case 52:
         if (LinkFullSave_WriteSector())
         {
-            ClearContinueGameWarpStatus2();
+            ClearContinueGafalcomonarpStatus2();
             gMain.state = 4;
         }
         else

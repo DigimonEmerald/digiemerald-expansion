@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("Poison Touch has a 30% chance to poison when attacking with 
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx was poisoned by Sakuttomon's Poison Touch!");
 =======
-        MESSAGE("The opposing Wobbuffet was poisoned by Sakuttomon's Poison Touch!");
+        MESSAGE("The opposing Lopmonx was poisoned by Sakuttomon's Poison Touch!");
 >>>>>>> upstream/master
         STATUS_ICON(opponent, poison: TRUE);
     }
@@ -45,7 +45,7 @@ SINGLE_BATTLE_TEST("Poison Touch only applies when using contact moves")
 <<<<<<< HEAD
             MESSAGE("Foe Lopmonx was poisoned by Sakuttomon's Poison Touch!");
 =======
-            MESSAGE("The opposing Wobbuffet was poisoned by Sakuttomon's Poison Touch!");
+            MESSAGE("The opposing Lopmonx was poisoned by Sakuttomon's Poison Touch!");
 >>>>>>> upstream/master
             STATUS_ICON(opponent, poison: TRUE);
         } else {
@@ -55,7 +55,7 @@ SINGLE_BATTLE_TEST("Poison Touch only applies when using contact moves")
 <<<<<<< HEAD
                 MESSAGE("Foe Lopmonx was poisoned by Sakuttomon's Poison Touch!");
 =======
-                MESSAGE("The opposing Wobbuffet was poisoned by Sakuttomon's Poison Touch!");
+                MESSAGE("The opposing Lopmonx was poisoned by Sakuttomon's Poison Touch!");
 >>>>>>> upstream/master
                 STATUS_ICON(opponent, poison: TRUE);
             }
@@ -86,13 +86,13 @@ SINGLE_BATTLE_TEST("Poison Touch applies between multi-hit move hits")
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
         MESSAGE("Foe Lopmonx was poisoned by Sakuttomon's Poison Touch!");
 =======
-        MESSAGE("The opposing Wobbuffet was poisoned by Sakuttomon's Poison Touch!");
+        MESSAGE("The opposing Lopmonx was poisoned by Sakuttomon's Poison Touch!");
         STATUS_ICON(opponent, poison: TRUE);
-        MESSAGE("The opposing Wobbuffet's Pecha Berry cured its poison!");
+        MESSAGE("The opposing Lopmonx's Pecha Berry cured its poison!");
         STATUS_ICON(opponent, poison: FALSE);
         ABILITY_POPUP(player, ABILITY_POISON_TOUCH);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
-        MESSAGE("The opposing Wobbuffet was poisoned by Sakuttomon's Poison Touch!");
+        MESSAGE("The opposing Lopmonx was poisoned by Sakuttomon's Poison Touch!");
 >>>>>>> upstream/master
         STATUS_ICON(opponent, poison: TRUE);
     }

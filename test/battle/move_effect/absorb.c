@@ -32,8 +32,8 @@ SINGLE_BATTLE_TEST("Absorb fails if Heal Block applies")
         OPPONENT(SPECIES_LOPMONX);
 =======
         ASSUME(B_HEAL_BLOCKING >= GEN_6);
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(opponent, MOVE_HEAL_BLOCK); MOVE(player, MOVE_ABSORB); }
@@ -79,8 +79,8 @@ SINGLE_BATTLE_TEST("Draining Kiss recovers 75% of the damage dealt")
     s16 damage;
     s16 healed;
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_DRAINING_KISS); }
     } SCENE {
@@ -95,15 +95,15 @@ SINGLE_BATTLE_TEST("Draining Kiss recovers 75% of the damage dealt")
 SINGLE_BATTLE_TEST("Absorb does not drain any HP if user flinched")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_FAKE_OUT); MOVE(player, MOVE_ABSORB); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FAKE_OUT, opponent);
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_ABSORB, player);
-            MESSAGE("The opposing Wobbuffet had its energy drained!");
+            MESSAGE("The opposing Lopmonx had its energy drained!");
         }
     }
 }

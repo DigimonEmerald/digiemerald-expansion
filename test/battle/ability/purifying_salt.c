@@ -26,7 +26,7 @@ SINGLE_BATTLE_TEST("Purifying Salt halves damage from dynamic Ghost-type moves",
     PARAMETRIZE { ability = ABILITY_PURIFYING_SALT; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TERA_BLAST].effect == EFFECT_TERA_BLAST);
-        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_GHOST); }
+        PLAYER(SPECIES_LOPMONX) { TeraType(TYPE_GHOST); }
         OPPONENT(SPECIES_GARGANACL) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_TERA_BLAST, gimmick: GIMMICK_TERA); }
@@ -88,9 +88,9 @@ SINGLE_BATTLE_TEST("Purifying Salt grants immunity to status effects")
 SINGLE_BATTLE_TEST("Purifying Salt user can't be poisoned by Toxic Spikes")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_GARGANACL) { Ability(ABILITY_PURIFYING_SALT); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TOXIC_SPIKES); }
         TURN { SWITCH(player, 1); }

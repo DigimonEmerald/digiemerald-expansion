@@ -72,13 +72,13 @@ SINGLE_BATTLE_TEST("Roar fails if replacements fainted")
 SINGLE_BATTLE_TEST("Roar fails against target with Guard Dog")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT) { HP(0); }
     } WHEN {
         TURN { MOVE(player, MOVE_ROAR); }
     } SCENE {
-        MESSAGE("Wobbuffet used Roar!");
+        MESSAGE("Lopmonx used Roar!");
         MESSAGE("But it failed!");
     }
 }
@@ -86,7 +86,7 @@ SINGLE_BATTLE_TEST("Roar fails against target with Guard Dog")
 SINGLE_BATTLE_TEST("Roar fails against target with Guard Dog")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_OKIDOGI) { Ability(ABILITY_GUARD_DOG); }
         OPPONENT(SPECIES_BOTAMON);
     } WHEN {
@@ -96,7 +96,7 @@ SINGLE_BATTLE_TEST("Roar fails against target with Guard Dog")
             ANIMATION(ANIM_TYPE_MOVE, MOVE_ROAR, player);
             MESSAGE("The opposing Botamon was dragged out!");
         }
-        MESSAGE("Wobbuffet used Roar!");
+        MESSAGE("Lopmonx used Roar!");
         MESSAGE("But it failed!");
     }
 }
@@ -104,16 +104,16 @@ SINGLE_BATTLE_TEST("Roar fails against target with Guard Dog")
 SINGLE_BATTLE_TEST("Roar fails to switch out target with Suction Cups")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_OCTILLERY) { Ability(ABILITY_SUCTION_CUPS); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_PAWNMON_WHITE) { Ability(ABILITY_SUCTION_CUPS); }
         OPPONENT(SPECIES_BOTAMON);
     } WHEN {
         TURN { MOVE(player, MOVE_ROAR); }
     } SCENE {
-        MESSAGE("Wobbuffet used Roar!");
+        MESSAGE("Lopmonx used Roar!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_ROAR, player);
         ABILITY_POPUP(opponent, ABILITY_SUCTION_CUPS);
-        MESSAGE("The opposing Octillery anchors itself with Suction Cups!");
+        MESSAGE("The opposing Pawnmon_white anchors itself with Suction Cups!");
         NOT MESSAGE("The opposing Botamon was dragged out!");
     }
 }

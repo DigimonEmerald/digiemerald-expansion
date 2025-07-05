@@ -408,7 +408,7 @@ Route120_Text_StevenGoodbye:
 	.string "I enjoy seeing POKéMON and TRAINERS\n"
 	.string "who strive together.\p"
 	.string "I think you're doing great.\p"
-	.string "Well, let's meet again somewhere.$"
+	.string "Well, let's meet again sofalcomonhere.$"
 
 Donshoumon_Text_SomethingUnseeable:
 	.string "Something unseeable is in the way.$"

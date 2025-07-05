@@ -142,8 +142,8 @@ SINGLE_BATTLE_TEST("Rage Fist base power is not increased if a substitute was hi
         HP_BAR(opponent, captureDamage: &timesGotHit[0]);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SUBSTITUTE, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CRUNCH, opponent);
-        MESSAGE("The substitute took damage for Wobbuffet!");
-        MESSAGE("Wobbuffet's substitute faded!");
+        MESSAGE("The substitute took damage for Lopmonx!");
+        MESSAGE("Lopmonx's substitute faded!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_RAGE_FIST, player);
         HP_BAR(opponent, captureDamage: &timesGotHit[1]);
     } THEN {
@@ -167,7 +167,7 @@ SINGLE_BATTLE_TEST("Rage Fist base power is not lost if user switches out")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_RAGE_FIST, player);
         HP_BAR(opponent, captureDamage: &timesGotHit[0]);
-        SWITCH_OUT_MESSAGE("Wobbuffet");
+        SWITCH_OUT_MESSAGE("Lopmonx");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         SWITCH_OUT_MESSAGE("Wynaut");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_RAGE_FIST, player);

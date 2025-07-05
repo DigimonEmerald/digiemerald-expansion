@@ -1215,7 +1215,7 @@ static void HallOfFame_PrintPlayerInfo(u8 unused1, u8 unused2)
 
     FillWindowPixelBuffer(1, PIXEL_FILL(1));
     PutWindowTilemap(1);
-    DrawStdFrameWithCustomTileAndPalette(1, FALSE, 0x21D, 0xD);
+    DrawStdFrafalcomonithCustomTileAndPalette(1, FALSE, 0x21D, 0xD);
     AddTextPrinterParameterized3(1, FONT_NORMAL, 0, 1, sPlayerInfoTextColors, TEXT_SKIP_DRAW, gText_Name);
 
     width = GetStringRightAlignXOffset(FONT_NORMAL, gSaveBlock2Ptr->playerName, 0x70);

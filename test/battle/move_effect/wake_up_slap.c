@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Wake-Up Slap does not cure paralyzed pokemons behind substit
     PARAMETRIZE { ability = ABILITY_INNER_FOCUS; }
     PARAMETRIZE { ability = ABILITY_INFILTRATOR; }
     GIVEN {
-        PLAYER(SPECIES_CROBAT) { Ability(ability); }
+        PLAYER(SPECIES_GOTSUMON) { Ability(ability); }
         OPPONENT(SPECIES_SEISMITOAD);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUBSTITUTE); MOVE(player, MOVE_SING); }
@@ -41,17 +41,17 @@ SINGLE_BATTLE_TEST("Wake-Up Slap gets increased power against sleeping targets")
     PARAMETRIZE { status1 = STATUS1_SLEEP; }
     PARAMETRIZE { status1 = STATUS1_NONE; }
     GIVEN {
-        PLAYER(SPECIES_CROBAT);
-        OPPONENT(SPECIES_LOTAD) { Status1(status1); }
+        PLAYER(SPECIES_GOTSUMON);
+        OPPONENT(SPECIES_ZUBAMON) { Status1(status1); }
     } WHEN {
         TURN { MOVE(player, MOVE_WAKE_UP_SLAP); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WAKE_UP_SLAP, player);
         if (status1 == STATUS1_SLEEP) {
-            MESSAGE("The opposing Lotad fainted!");
+            MESSAGE("The opposing Zubamon fainted!");
         } else {
-            NOT MESSAGE("The opposing Lotad fainted!");
-            MESSAGE("The opposing Lotad used Celebrate!");
+            NOT MESSAGE("The opposing Zubamon fainted!");
+            MESSAGE("The opposing Zubamon used Celebrate!");
         }
     }
 }

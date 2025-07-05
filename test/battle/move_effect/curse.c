@@ -9,23 +9,23 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Curse lowers Speed, raises Attack, and raises Defense when used by non-Ghost-types")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_CURSE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CURSE, player);
-        MESSAGE("Wobbuffet's Speed fell!");
-        MESSAGE("Wobbuffet's Attack rose!");
-        MESSAGE("Wobbuffet's Defense rose!");
+        MESSAGE("Lopmonx's Speed fell!");
+        MESSAGE("Lopmonx's Attack rose!");
+        MESSAGE("Lopmonx's Defense rose!");
     }
 }
 
 SINGLE_BATTLE_TEST("Curse cuts the user's HP in half when used by Ghost-types")
 {
     GIVEN {
-        PLAYER(SPECIES_MISDREAVUS);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOOGAMON);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_CURSE); }
     } SCENE {
@@ -39,7 +39,7 @@ SINGLE_BATTLE_TEST("Curse applies to the user if used with Protean")
 {
     GIVEN {
         PLAYER(SPECIES_KECLEON) { Ability(ABILITY_PROTEAN); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_CURSE, target: player); }
     } SCENE {
@@ -54,8 +54,8 @@ SINGLE_BATTLE_TEST("Curse applies to the user if used with Protean")
 SINGLE_BATTLE_TEST("Curse applies to the opponent if user is afflicted by Trick-or-Treat in the same turn")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TRICK_OR_TREAT); MOVE(player, MOVE_CURSE, target: player); }
     } SCENE {

@@ -10,8 +10,8 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Dragon Darts strikes twice")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_DRAGON_DARTS); }
     } SCENE {
@@ -29,10 +29,10 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes each opponent once in a double battle")
     PARAMETRIZE { chosenTarget = opponentRight; secondaryTarget = opponentLeft; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_DRAGON_DARTS, target: chosenTarget); }
     } SCENE {
@@ -51,10 +51,10 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes the ally twice if the target protects")
     PARAMETRIZE { chosenTarget = opponentLeft; secondaryTarget = opponentRight; }
     PARAMETRIZE { chosenTarget = opponentRight; secondaryTarget = opponentLeft; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(chosenTarget, MOVE_PROTECT); MOVE(playerLeft, MOVE_DRAGON_DARTS, target: opponentLeft); }
     } SCENE {
@@ -72,14 +72,14 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes an opponent twice if the other one is F
     struct BattlePokemon *chosenTarget = NULL;
     struct BattlePokemon *finalTarget = NULL;
     u32 speciesLeft, speciesRight;
-    PARAMETRIZE { chosenTarget = opponentLeft;  finalTarget = opponentRight; speciesLeft = SPECIES_PUYOMON;  speciesRight = SPECIES_WOBBUFFET; }
-    PARAMETRIZE { chosenTarget = opponentRight; finalTarget = opponentRight; speciesLeft = SPECIES_PUYOMON;  speciesRight = SPECIES_WOBBUFFET; }
-    PARAMETRIZE { chosenTarget = opponentLeft;  finalTarget = opponentLeft;  speciesLeft = SPECIES_WOBBUFFET; speciesRight = SPECIES_PUYOMON; }
-    PARAMETRIZE { chosenTarget = opponentRight; finalTarget = opponentLeft;  speciesLeft = SPECIES_WOBBUFFET; speciesRight = SPECIES_PUYOMON; }
+    PARAMETRIZE { chosenTarget = opponentLeft;  finalTarget = opponentRight; speciesLeft = SPECIES_PUYOMON;  speciesRight = SPECIES_LOPMONX; }
+    PARAMETRIZE { chosenTarget = opponentRight; finalTarget = opponentRight; speciesLeft = SPECIES_PUYOMON;  speciesRight = SPECIES_LOPMONX; }
+    PARAMETRIZE { chosenTarget = opponentLeft;  finalTarget = opponentLeft;  speciesLeft = SPECIES_LOPMONX; speciesRight = SPECIES_PUYOMON; }
+    PARAMETRIZE { chosenTarget = opponentRight; finalTarget = opponentLeft;  speciesLeft = SPECIES_LOPMONX; speciesRight = SPECIES_PUYOMON; }
     GIVEN {
         ASSUME(gSpeciesInfo[SPECIES_PUYOMON].types[0] == TYPE_FAIRY || gSpeciesInfo[SPECIES_PUYOMON].types[1] == TYPE_FAIRY);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(speciesLeft);
         OPPONENT(speciesRight);
     } WHEN {
@@ -104,10 +104,10 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes an opponent twice if electrified and th
     PARAMETRIZE { chosenTarget = opponentRight; finalTarget = opponentRight; abilityLeft = ABILITY_VOLT_ABSORB;  abilityRight = ABILITY_WATER_ABSORB; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_ELECTRIFY].effect == EFFECT_ELECTRIFY);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_LANTURN) { Ability(abilityLeft); };
-        OPPONENT(SPECIES_LANTURN) { Ability(abilityRight); };
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_GUILMON) { Ability(abilityLeft); };
+        OPPONENT(SPECIES_GUILMON) { Ability(abilityRight); };
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_ELECTRIFY, target: playerLeft); MOVE(playerLeft, MOVE_DRAGON_DARTS, target: chosenTarget); }
     } SCENE {
@@ -130,8 +130,8 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes an opponent twice if electrified and th
     PARAMETRIZE { chosenTarget = opponentRight; finalTarget = opponentRight; abilityLeft = ABILITY_MOTOR_DRIVE;  abilityRight = ABILITY_VITAL_SPIRIT; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_ELECTRIFY].effect == EFFECT_ELECTRIFY);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_ELECTIVIRE) { Ability(abilityLeft); };
         OPPONENT(SPECIES_ELECTIVIRE) { Ability(abilityRight); };
     } WHEN {
@@ -153,10 +153,10 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes an opponent twice if the other one is i
     PARAMETRIZE { chosenTarget = opponentRight; finalTarget = opponentLeft; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_FLY].effect == EFFECT_SEMI_INVULNERABLE);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(chosenTarget, MOVE_FLY, target: playerLeft); MOVE(playerLeft, MOVE_DRAGON_DARTS, target: chosenTarget); }
     } SCENE {
@@ -172,10 +172,10 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes an opponent twice if the other one is i
 DOUBLE_BATTLE_TEST("Dragon Darts is not effected by Wide Guard")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_WIDE_GUARD); MOVE(playerLeft, MOVE_DRAGON_DARTS, target: opponentLeft); }
     } SCENE {
@@ -196,10 +196,10 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes an opponent twice if the other one is f
     PARAMETRIZE { chosenTarget = opponentLeft;  finalTarget = opponentRight; hpLeft = 1; hpRight = 101; }
     PARAMETRIZE { chosenTarget = opponentRight; finalTarget = opponentLeft;  hpLeft = 101; hpRight = 1; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(hpLeft); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(hpRight); }
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { HP(hpLeft); }
+        OPPONENT(SPECIES_LOPMONX) { HP(hpRight); }
     } WHEN {
         TURN { MOVE(playerRight, MOVE_SONIC_BOOM, target: chosenTarget); MOVE(playerLeft, MOVE_DRAGON_DARTS, target: chosenTarget); }
     } SCENE {
@@ -220,10 +220,10 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes left ally twice if one strike misses")
     PARAMETRIZE { chosenTarget = opponentLeft;  finalTarget = opponentRight; itemLeft = ITEM_BRIGHT_POWDER;  itemRight = ITEM_NONE; }
     PARAMETRIZE { chosenTarget = opponentRight; finalTarget = opponentLeft;  itemLeft = ITEM_NONE;           itemRight = ITEM_BRIGHT_POWDER; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(itemLeft); };
-        OPPONENT(SPECIES_WOBBUFFET) { Item(itemRight); };
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(itemLeft); };
+        OPPONENT(SPECIES_LOPMONX) { Item(itemRight); };
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_DRAGON_DARTS, target: chosenTarget, hit: FALSE); }
     } SCENE {
@@ -238,10 +238,10 @@ DOUBLE_BATTLE_TEST("Dragon Darts strikes left ally twice if one strike misses")
 DOUBLE_BATTLE_TEST("Dragon Darts strikes right ally twice if one strike misses")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_BRIGHT_POWDER); };
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_BRIGHT_POWDER); };
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_DRAGON_DARTS, target: opponentLeft, hit: FALSE); }
     } SCENE {

@@ -13,8 +13,8 @@ SINGLE_BATTLE_TEST("Screech lowers Defense by 2 stages", s16 damage)
     PARAMETRIZE { lowerDefense = TRUE; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].category == DAMAGE_CATEGORY_PHYSICAL);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         if (lowerDefense) TURN { MOVE(player, MOVE_SCREECH); }
         TURN { MOVE(player, MOVE_TACKLE); }
@@ -22,7 +22,7 @@ SINGLE_BATTLE_TEST("Screech lowers Defense by 2 stages", s16 damage)
         if (lowerDefense) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SCREECH, player);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("The opposing Wobbuffet's Defense harshly fell!");
+            MESSAGE("The opposing Lopmonx's Defense harshly fell!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         HP_BAR(opponent, captureDamage: &results[i].damage);

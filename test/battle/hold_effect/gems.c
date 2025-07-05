@@ -24,11 +24,11 @@ SINGLE_BATTLE_TEST("Gem is consumed when it corresponds to the type of a move")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         MESSAGE("Normal Gem strengthened Lopmonx's power!");
 =======
-            MESSAGE("The Fire Gem strengthened Wobbuffet's power!");
+            MESSAGE("The Fire Gem strengthened Lopmonx's power!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EMBER, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-        MESSAGE("The Normal Gem strengthened Wobbuffet's power!");
+        MESSAGE("The Normal Gem strengthened Lopmonx's power!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
     }
@@ -51,7 +51,7 @@ SINGLE_BATTLE_TEST("Gem boost is only applied once")
 <<<<<<< HEAD
         MESSAGE("Normal Gem strengthened Lopmonx's power!");
 =======
-        MESSAGE("The Normal Gem strengthened Wobbuffet's power!");
+        MESSAGE("The Normal Gem strengthened Lopmonx's power!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         HP_BAR(opponent, captureDamage: &boostedHit);

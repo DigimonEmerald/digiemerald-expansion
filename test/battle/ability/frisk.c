@@ -34,9 +34,9 @@ SINGLE_BATTLE_TEST("Frisk triggers in a Single Battle")
         ABILITY_POPUP(opponent, ABILITY_FRISK);
         MESSAGE("Foe Gazimon frisked Gazimon_x and found its Potion!");
 =======
-        MESSAGE("Furret frisked the opposing Sentret and found its Potion!");
+        MESSAGE("Gazimon_x frisked the opposing Gazimon and found its Potion!");
         ABILITY_POPUP(opponent, ABILITY_FRISK);
-        MESSAGE("The opposing Sentret frisked Furret and found its Potion!");
+        MESSAGE("The opposing Gazimon frisked Gazimon_x and found its Potion!");
 >>>>>>> upstream/master
     }
 }
@@ -57,9 +57,9 @@ DOUBLE_BATTLE_TEST("Frisk triggers for player in a Double Battle after switching
         OPPONENT(SPECIES_EXVEEMON);
 =======
         ASSUME(!IS_MOVE_STATUS(MOVE_POUND));
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        PLAYER(SPECIES_FURRET) { Ability(ABILITY_FRISK); };
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        PLAYER(SPECIES_GAZIMON_X) { Ability(ABILITY_FRISK); };
         OPPONENT(SPECIES_WYNAUT) { Item(ITEM_POTION); }
         OPPONENT(SPECIES_WYNAUT);
 >>>>>>> upstream/master
@@ -73,9 +73,9 @@ DOUBLE_BATTLE_TEST("Frisk triggers for player in a Double Battle after switching
         MESSAGE("Gazimon_x frisked Foe Exveemon and found its Potion!");
 =======
         MESSAGE("The opposing Wynaut used Pound!");
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmonx fainted!");
         ABILITY_POPUP(target, ABILITY_FRISK);
-        MESSAGE("Furret frisked the opposing Wynaut and found its Potion!");
+        MESSAGE("Gazimon_x frisked the opposing Wynaut and found its Potion!");
 >>>>>>> upstream/master
     }
 }
@@ -98,9 +98,9 @@ DOUBLE_BATTLE_TEST("Frisk triggers for opponent in a Double Battle after switchi
         ASSUME(!IS_MOVE_STATUS(MOVE_POUND));
         PLAYER(SPECIES_WYNAUT) { Item(ITEM_POTION); }
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_FURRET) { Ability(ABILITY_FRISK); };
+        OPPONENT(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_GAZIMON_X) { Ability(ABILITY_FRISK); };
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_POUND, target: target); SEND_OUT(target, 2); }
@@ -112,9 +112,9 @@ DOUBLE_BATTLE_TEST("Frisk triggers for opponent in a Double Battle after switchi
         MESSAGE("Foe Gazimon_x frisked Exveemon and found its Potion!");
 =======
         MESSAGE("Wynaut used Pound!");
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmonx fainted!");
         ABILITY_POPUP(target, ABILITY_FRISK);
-        MESSAGE("The opposing Furret frisked Wynaut and found its Potion!");
+        MESSAGE("The opposing Gazimon_x frisked Wynaut and found its Potion!");
 >>>>>>> upstream/master
     }
 }

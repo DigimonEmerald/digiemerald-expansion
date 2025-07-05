@@ -174,7 +174,7 @@ DOUBLE_BATTLE_TEST("Shell Trap targets correctly if one of the opponents has fai
         PLAYER(SPECIES_GRENINJA) { Speed(60); }
         PLAYER(SPECIES_TURTONATOR) { Speed(10); }
         OPPONENT(SPECIES_CURIMON) { Speed(120); }
-        OPPONENT(SPECIES_SCIZOR) { Speed(100); }
+        OPPONENT(SPECIES_MONODRAMON) { Speed(100); }
     } WHEN {
         TURN {
             MOVE(opponentLeft, MOVE_TACKLE, target: playerRight);
@@ -188,7 +188,7 @@ DOUBLE_BATTLE_TEST("Shell Trap targets correctly if one of the opponents has fai
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SHELL_TRAP_SETUP, playerRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SHELL_TRAP, playerRight);
-        MESSAGE("The opposing Scizor fainted!");
+        MESSAGE("The opposing Monodramon fainted!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerLeft);
 

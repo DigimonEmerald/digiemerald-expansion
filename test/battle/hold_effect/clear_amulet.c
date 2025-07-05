@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Clear Amulet prevents Intimidate")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx's Clear Amulet prevents its stats from being lowered!");
 =======
-        MESSAGE("The effects of the Clear Amulet held by the opposing Wobbuffet prevents its stats from being lowered!");
+        MESSAGE("The effects of the Clear Amulet held by the opposing Lopmonx prevents its stats from being lowered!");
 >>>>>>> upstream/master
         HP_BAR(player, captureDamage: &turnTwoHit);
     } THEN {
@@ -62,7 +62,7 @@ SINGLE_BATTLE_TEST("Clear Amulet prevents stat reducing effects")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx's Clear Amulet prevents its stats from being lowered!");
 =======
-        MESSAGE("The effects of the Clear Amulet held by the opposing Wobbuffet prevents its stats from being lowered!");
+        MESSAGE("The effects of the Clear Amulet held by the opposing Lopmonx prevents its stats from being lowered!");
 >>>>>>> upstream/master
     }
 }
@@ -95,7 +95,7 @@ SINGLE_BATTLE_TEST("Clear Amulet prevents secondary effects that reduce stats")
 <<<<<<< HEAD
             MESSAGE("Foe Lopmonx's Clear Amulet prevents its stats from being lowered!");
 =======
-            MESSAGE("The effects of the Clear Amulet held by the opposing Wobbuffet prevents its stats from being lowered!");
+            MESSAGE("The effects of the Clear Amulet held by the opposing Lopmonx prevents its stats from being lowered!");
 >>>>>>> upstream/master
         }
     }

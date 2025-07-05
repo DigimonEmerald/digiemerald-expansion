@@ -40,12 +40,12 @@ SINGLE_BATTLE_TEST("Rattled boosts speed by 1 when hit by Bug, Dark or Ghost typ
         if (move != MOVE_TACKLE){
             MESSAGE("Foe Junkmon used Celebrate!");
 =======
-            MESSAGE("The opposing Sudowoodo's Speed rose!");
+            MESSAGE("The opposing Junkmon's Speed rose!");
         }
-        MESSAGE("The opposing Sudowoodo used Celebrate!");
-        // Sudowoodo is now faster
+        MESSAGE("The opposing Junkmon used Celebrate!");
+        // Junkmon is now faster
         if (move != MOVE_TACKLE){
-            MESSAGE("The opposing Sudowoodo used Celebrate!");
+            MESSAGE("The opposing Junkmon used Celebrate!");
 >>>>>>> upstream/master
             ANIMATION(ANIM_TYPE_MOVE, move, player);
             HP_BAR(opponent);
@@ -54,7 +54,7 @@ SINGLE_BATTLE_TEST("Rattled boosts speed by 1 when hit by Bug, Dark or Ghost typ
 <<<<<<< HEAD
             MESSAGE("Foe Junkmon's Speed rose!");
 =======
-            MESSAGE("The opposing Sudowoodo's Speed rose!");
+            MESSAGE("The opposing Junkmon's Speed rose!");
 >>>>>>> upstream/master
         }
         else {
@@ -63,7 +63,7 @@ SINGLE_BATTLE_TEST("Rattled boosts speed by 1 when hit by Bug, Dark or Ghost typ
 <<<<<<< HEAD
             MESSAGE("Foe Junkmon used Celebrate!");
 =======
-            MESSAGE("The opposing Sudowoodo used Celebrate!");
+            MESSAGE("The opposing Junkmon used Celebrate!");
 >>>>>>> upstream/master
         }
     }
@@ -86,10 +86,10 @@ SINGLE_BATTLE_TEST("Rattled boosts speed by 1 when affected by Intimidate")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
         MESSAGE("Foe Junkmon's Speed rose!");
 =======
-        MESSAGE("Gyarados's Intimidate cuts the opposing Sudowoodo's Attack!");
+        MESSAGE("Commdramon's Intimidate cuts the opposing Junkmon's Attack!");
         ABILITY_POPUP(opponent, ABILITY_RATTLED);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("The opposing Sudowoodo's Speed rose!");
+        MESSAGE("The opposing Junkmon's Speed rose!");
 >>>>>>> upstream/master
     }
 }
@@ -115,7 +115,7 @@ SINGLE_BATTLE_TEST("Rattled triggers correctly when hit by U-Turn") // Specific 
         MESSAGE("Foe Junkmon's Speed rose!");
         MESSAGE("Go! Exveemon!");
 =======
-        MESSAGE("The opposing Sudowoodo's Speed rose!");
+        MESSAGE("The opposing Junkmon's Speed rose!");
         SEND_IN_MESSAGE("Wynaut");
 >>>>>>> upstream/master
     }

@@ -23,8 +23,8 @@ DOUBLE_BATTLE_TEST("Water and Fire Pledge create a rainbow on the user's side of
         TURN {}
         TURN {}
     } SCENE {
-        MESSAGE("Wobbuffet used Water Pledge!");
-        MESSAGE("Wobbuffet is waiting for Wynaut's move…{PAUSE 16}");
+        MESSAGE("Lopmonx used Water Pledge!");
+        MESSAGE("Lopmonx is waiting for Wynaut's move…{PAUSE 16}");
         MESSAGE("Wynaut used Fire Pledge!");
         MESSAGE("The two moves have become one! It's a combined move!{PAUSE 16}");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WATER_PLEDGE, playerRight);
@@ -91,8 +91,8 @@ DOUBLE_BATTLE_TEST("Fire and Grass Pledge summons Sea Of Fire for four turns tha
         TURN {}
         TURN {}
     } SCENE {
-        MESSAGE("Wobbuffet used Fire Pledge!");
-        MESSAGE("Wobbuffet is waiting for Wynaut's move…{PAUSE 16}");
+        MESSAGE("Lopmonx used Fire Pledge!");
+        MESSAGE("Lopmonx is waiting for Wynaut's move…{PAUSE 16}");
         MESSAGE("Wynaut used Grass Pledge!");
         MESSAGE("The two moves have become one! It's a combined move!{PAUSE 16}");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerRight);
@@ -100,15 +100,15 @@ DOUBLE_BATTLE_TEST("Fire and Grass Pledge summons Sea Of Fire for four turns tha
         MESSAGE("A sea of fire enveloped the opposing team!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_SEA_OF_FIRE, opponentRight);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentLeft);
-        MESSAGE("The opposing Wobbuffet was hurt by the sea of fire!");
+        MESSAGE("The opposing Lopmonx was hurt by the sea of fire!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentRight);
         MESSAGE("The opposing Wynaut was hurt by the sea of fire!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentLeft);
-        MESSAGE("The opposing Wobbuffet was hurt by the sea of fire!");
+        MESSAGE("The opposing Lopmonx was hurt by the sea of fire!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentRight);
         MESSAGE("The opposing Wynaut was hurt by the sea of fire!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentLeft);
-        MESSAGE("The opposing Wobbuffet was hurt by the sea of fire!");
+        MESSAGE("The opposing Lopmonx was hurt by the sea of fire!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, opponentRight);
         MESSAGE("The opposing Wynaut was hurt by the sea of fire!");
         MESSAGE("The sea of fire around the opposing team disappeared!");
@@ -149,8 +149,8 @@ DOUBLE_BATTLE_TEST("Grass and Water Pledge create a swamp on the user's side of 
         TURN {}
         TURN {}
     } SCENE {
-        MESSAGE("Wobbuffet used Grass Pledge!");
-        MESSAGE("Wobbuffet is waiting for Wynaut's move…{PAUSE 16}");
+        MESSAGE("Lopmonx used Grass Pledge!");
+        MESSAGE("Lopmonx is waiting for Wynaut's move…{PAUSE 16}");
         MESSAGE("Wynaut used Water Pledge!");
         MESSAGE("The two moves have become one! It's a combined move!{PAUSE 16}");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GRASS_PLEDGE, playerRight);
@@ -345,9 +345,9 @@ DOUBLE_BATTLE_TEST("Pledge move combo interactions with Powder are correct")
     PARAMETRIZE { moveLeft = MOVE_GRASS_PLEDGE; moveRight = MOVE_FIRE_PLEDGE; speedLeft = 3; speedRight = 4; } // FAIL 2
     GIVEN {
         ASSUME(gMovesInfo[MOVE_FIRE_PLEDGE].type == TYPE_FIRE);
-        PLAYER(SPECIES_WOBBUFFET) { Speed(speedLeft); }
+        PLAYER(SPECIES_LOPMONX) { Speed(speedLeft); }
         PLAYER(SPECIES_WYNAUT) { Speed(speedRight); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(8); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(8); }
         OPPONENT(SPECIES_VIVILLON) { Speed(5); }
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(playerLeft, moveLeft, target: opponentLeft); MOVE(playerRight, moveRight, target: opponentLeft); }
@@ -392,9 +392,9 @@ DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Sleep Right")
     PARAMETRIZE { speedPLeft = 30; speedPRight = 40; speedOLeft = 8; speedORight = 5; }
     PARAMETRIZE { speedPLeft = 30; speedPRight = 40; speedOLeft = 8; speedORight = 1; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(speedPLeft); }
+        PLAYER(SPECIES_LOPMONX) { Speed(speedPLeft); }
         PLAYER(SPECIES_WYNAUT) { Speed(speedPRight); Status1(STATUS1_SLEEP_TURN(2)); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(speedOLeft); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(speedOLeft); }
         OPPONENT(SPECIES_WYNAUT) { Speed(speedORight); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentRight); MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight); }
@@ -430,19 +430,19 @@ DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Sleep Left")
     PARAMETRIZE { speedPLeft = 30; speedPRight = 40; speedOLeft = 8; speedORight = 5; }
     PARAMETRIZE { speedPLeft = 30; speedPRight = 40; speedOLeft = 8; speedORight = 1; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(speedPLeft); Status1(STATUS1_SLEEP_TURN(2)); }
+        PLAYER(SPECIES_LOPMONX) { Speed(speedPLeft); Status1(STATUS1_SLEEP_TURN(2)); }
         PLAYER(SPECIES_WYNAUT) { Speed(speedPRight); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(speedOLeft); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(speedOLeft); }
         OPPONENT(SPECIES_WYNAUT) { Speed(speedORight); }
     } WHEN {
         TURN { MOVE(playerRight, MOVE_FIRE_PLEDGE, target: opponentRight); MOVE(playerLeft, MOVE_GRASS_PLEDGE, target: opponentRight); }
     } SCENE {
         if (speedPRight < speedPLeft) {
-            MESSAGE("Wobbuffet is fast asleep.");
+            MESSAGE("Lopmonx is fast asleep.");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerRight);
         } else {
             NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerRight);
-            MESSAGE("Wobbuffet is fast asleep.");
+            MESSAGE("Lopmonx is fast asleep.");
         }
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerLeft);
@@ -463,9 +463,9 @@ DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Flinch Right"
     PARAMETRIZE { speedPLeft = 3; speedPRight = 4; speedOLeft = 8; speedORight = 1; }
     GIVEN {
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_FAKE_OUT, MOVE_EFFECT_FLINCH, 100));
-        PLAYER(SPECIES_WOBBUFFET) { Speed(speedPLeft); }
+        PLAYER(SPECIES_LOPMONX) { Speed(speedPLeft); }
         PLAYER(SPECIES_WYNAUT) { Speed(speedPRight); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(speedOLeft); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(speedOLeft); }
         OPPONENT(SPECIES_WYNAUT) { Speed(speedORight); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_FAKE_OUT, target: playerRight); MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentRight); MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight); }
@@ -496,19 +496,19 @@ DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Flinch Left")
     PARAMETRIZE { speedPLeft = 3; speedPRight = 4; speedOLeft = 8; speedORight = 1; }
     GIVEN {
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_FAKE_OUT, MOVE_EFFECT_FLINCH, 100));
-        PLAYER(SPECIES_WOBBUFFET) { Speed(speedPLeft); }
+        PLAYER(SPECIES_LOPMONX) { Speed(speedPLeft); }
         PLAYER(SPECIES_WYNAUT) { Speed(speedPRight); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(speedOLeft); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(speedOLeft); }
         OPPONENT(SPECIES_WYNAUT) { Speed(speedORight); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_FAKE_OUT, target: playerLeft); MOVE(playerRight, MOVE_FIRE_PLEDGE, target: opponentRight); MOVE(playerLeft, MOVE_GRASS_PLEDGE, target: opponentRight); }
     } SCENE {
         if (speedPRight < speedPLeft) {
-            MESSAGE("Wobbuffet flinched and couldn't move!");
+            MESSAGE("Lopmonx flinched and couldn't move!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerRight);
         } else {
             NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerRight);
-            MESSAGE("Wobbuffet flinched and couldn't move!");
+            MESSAGE("Lopmonx flinched and couldn't move!");
         }
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerLeft);
@@ -525,15 +525,15 @@ DOUBLE_BATTLE_TEST("Pledge move combo doesn't fail if any mon wakes up")
     PARAMETRIZE { statusLeft = 0; statusRight = STATUS1_SLEEP_TURN(1); }
     PARAMETRIZE { statusLeft = STATUS1_SLEEP_TURN(1); statusRight = STATUS1_SLEEP_TURN(1); }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); Status1(statusLeft); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); Status1(statusLeft); }
         PLAYER(SPECIES_WYNAUT) { Speed(3); Status1(statusRight); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(8); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(8); }
         OPPONENT(SPECIES_WYNAUT) { Speed(2); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentRight); MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight); }
     } SCENE {
         NONE_OF {
-            MESSAGE("Wobbuffet is fast asleep.");
+            MESSAGE("Lopmonx is fast asleep.");
             MESSAGE("Wynaut is fast asleep.");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerLeft);
             ANIMATION(ANIM_TYPE_MOVE, MOVE_GRASS_PLEDGE, playerRight);
@@ -550,15 +550,15 @@ DOUBLE_BATTLE_TEST("Pledge move combo doesn't fail if any mon thaws out")
     PARAMETRIZE { statusLeft = 0; statusRight = STATUS1_FREEZE; }
     PARAMETRIZE { statusLeft = STATUS1_FREEZE; statusRight = STATUS1_FREEZE; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); Status1(statusLeft); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); Status1(statusLeft); }
         PLAYER(SPECIES_WYNAUT) { Speed(3); Status1(statusRight); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(8); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(8); }
         OPPONENT(SPECIES_WYNAUT) { Speed(2); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentRight, WITH_RNG(RNG_FROZEN, 1)); MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight, WITH_RNG(RNG_FROZEN, 1)); }
     } SCENE {
         NONE_OF {
-            MESSAGE("Wobbuffet is frozen solid!");
+            MESSAGE("Lopmonx is frozen solid!");
             MESSAGE("Wynaut is frozen solid!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerLeft);
             ANIMATION(ANIM_TYPE_MOVE, MOVE_GRASS_PLEDGE, playerRight);
@@ -574,9 +574,9 @@ DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Sleep Both Le
     PARAMETRIZE { speedLeft = 4; speedRight = 3; }
     PARAMETRIZE { speedLeft = 3; speedRight = 4; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(speedLeft); Status1(STATUS1_SLEEP_TURN(1)); }
+        PLAYER(SPECIES_LOPMONX) { Speed(speedLeft); Status1(STATUS1_SLEEP_TURN(1)); }
         PLAYER(SPECIES_WYNAUT) { Speed(speedRight); Status1(STATUS1_SLEEP_TURN(2)); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(8); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(8); }
         OPPONENT(SPECIES_WYNAUT) { Speed(2); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentRight); MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight); }
@@ -602,19 +602,19 @@ DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Sleep Both Ri
     PARAMETRIZE { speedLeft = 4; speedRight = 3; }
     PARAMETRIZE { speedLeft = 3; speedRight = 4; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(speedLeft); Status1(STATUS1_SLEEP_TURN(2)); }
+        PLAYER(SPECIES_LOPMONX) { Speed(speedLeft); Status1(STATUS1_SLEEP_TURN(2)); }
         PLAYER(SPECIES_WYNAUT) { Speed(speedRight); Status1(STATUS1_SLEEP_TURN(1)); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(8); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(8); }
         OPPONENT(SPECIES_WYNAUT) { Speed(2); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentRight); MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight); }
     } SCENE {
         if (speedRight < speedLeft) {
-            MESSAGE("Wobbuffet is fast asleep.");
+            MESSAGE("Lopmonx is fast asleep.");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_GRASS_PLEDGE, playerRight);
         } else {
             NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_GRASS_PLEDGE, playerRight);
-            MESSAGE("Wobbuffet is fast asleep.");
+            MESSAGE("Lopmonx is fast asleep.");
         }
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerLeft);
@@ -631,14 +631,14 @@ DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Sleep Both Le
     PARAMETRIZE { status1 = STATUS1_SLEEP_TURN(3); }
     PARAMETRIZE { status1 = STATUS1_SLEEP_TURN(4); }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); Status1(status1); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); Status1(status1); }
         PLAYER(SPECIES_WYNAUT) { Speed(3); Status1(status1); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(8); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(8); }
         OPPONENT(SPECIES_WYNAUT) { Speed(2); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentRight); MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight); }
     } SCENE {
-        MESSAGE("Wobbuffet is fast asleep.");
+        MESSAGE("Lopmonx is fast asleep.");
         MESSAGE("Wynaut is fast asleep.");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerLeft);
@@ -657,15 +657,15 @@ DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Sleep Both Ri
     PARAMETRIZE { status1 = STATUS1_SLEEP_TURN(3); }
     PARAMETRIZE { status1 = STATUS1_SLEEP_TURN(4); }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(3); Status1(status1); }
+        PLAYER(SPECIES_LOPMONX) { Speed(3); Status1(status1); }
         PLAYER(SPECIES_WYNAUT) { Speed(4); Status1(status1); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(8); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(8); }
         OPPONENT(SPECIES_WYNAUT) { Speed(2); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentRight); MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight); }
     } SCENE {
         MESSAGE("Wynaut is fast asleep.");
-        MESSAGE("Wobbuffet is fast asleep.");
+        MESSAGE("Lopmonx is fast asleep.");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerLeft);
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerRight);
@@ -679,14 +679,14 @@ DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Sleep Both Ri
 DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Frozen Both Left Faster")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); Status1(STATUS1_FREEZE); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); Status1(STATUS1_FREEZE); }
         PLAYER(SPECIES_WYNAUT) { Speed(3); Status1(STATUS1_FREEZE); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(8); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(8); }
         OPPONENT(SPECIES_WYNAUT) { Speed(2); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentRight, WITH_RNG(RNG_FROZEN, 0)); MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight, WITH_RNG(RNG_FROZEN, 0)); }
     } SCENE {
-        MESSAGE("Wobbuffet is frozen solid!");
+        MESSAGE("Lopmonx is frozen solid!");
         MESSAGE("Wynaut is frozen solid!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerLeft);
@@ -701,15 +701,15 @@ DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Frozen Both L
 DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Frozen Both Right Faster")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(3); Status1(STATUS1_FREEZE); }
+        PLAYER(SPECIES_LOPMONX) { Speed(3); Status1(STATUS1_FREEZE); }
         PLAYER(SPECIES_WYNAUT) { Speed(4); Status1(STATUS1_FREEZE); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(8); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(8); }
         OPPONENT(SPECIES_WYNAUT) { Speed(2); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentRight, WITH_RNG(RNG_FROZEN, 0)); MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight, WITH_RNG(RNG_FROZEN, 0)); }
     } SCENE {
         MESSAGE("Wynaut is frozen solid!");
-        MESSAGE("Wobbuffet is frozen solid!");
+        MESSAGE("Lopmonx is frozen solid!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerLeft);
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerRight);
@@ -723,14 +723,14 @@ DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Frozen Both R
 DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Paralyzed Both Left Faster")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(40); Status1(STATUS1_PARALYSIS); }
+        PLAYER(SPECIES_LOPMONX) { Speed(40); Status1(STATUS1_PARALYSIS); }
         PLAYER(SPECIES_WYNAUT) { Speed(30); Status1(STATUS1_PARALYSIS); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(80); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(80); }
         OPPONENT(SPECIES_WYNAUT) { Speed(2); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentRight, WITH_RNG(RNG_PARALYSIS, 0)); MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight, WITH_RNG(RNG_PARALYSIS, 0)); }
     } SCENE {
-        MESSAGE("Wobbuffet couldn't move because it's paralyzed!");
+        MESSAGE("Lopmonx couldn't move because it's paralyzed!");
         MESSAGE("Wynaut couldn't move because it's paralyzed!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerLeft);
@@ -745,15 +745,15 @@ DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Paralyzed Bot
 DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Paralyzed Both Right Faster")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(30); Status1(STATUS1_PARALYSIS); }
+        PLAYER(SPECIES_LOPMONX) { Speed(30); Status1(STATUS1_PARALYSIS); }
         PLAYER(SPECIES_WYNAUT) { Speed(40); Status1(STATUS1_PARALYSIS); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(80); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(80); }
         OPPONENT(SPECIES_WYNAUT) { Speed(2); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentRight, WITH_RNG(RNG_PARALYSIS, 0)); MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight, WITH_RNG(RNG_PARALYSIS, 0)); }
     } SCENE {
         MESSAGE("Wynaut couldn't move because it's paralyzed!");
-        MESSAGE("Wobbuffet couldn't move because it's paralyzed!");
+        MESSAGE("Lopmonx couldn't move because it's paralyzed!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerLeft);
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerRight);
@@ -768,16 +768,16 @@ DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Flinch Both L
 {
     GIVEN {
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_FAKE_OUT, MOVE_EFFECT_FLINCH, 100));
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); }
         PLAYER(SPECIES_WYNAUT) { Speed(3); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(8); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(8); }
         OPPONENT(SPECIES_WYNAUT) { Speed(2); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_FAKE_OUT, target: playerLeft); MOVE(opponentRight, MOVE_FAKE_OUT, target: playerRight); MOVE(playerRight, MOVE_FIRE_PLEDGE, target: opponentRight); MOVE(playerLeft, MOVE_GRASS_PLEDGE, target: opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FAKE_OUT, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FAKE_OUT, opponentRight);
-        MESSAGE("Wobbuffet flinched and couldn't move!");
+        MESSAGE("Lopmonx flinched and couldn't move!");
         MESSAGE("Wynaut flinched and couldn't move!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerRight);
@@ -793,9 +793,9 @@ DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Flinch Both R
 {
     GIVEN {
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_FAKE_OUT, MOVE_EFFECT_FLINCH, 100));
-        PLAYER(SPECIES_WOBBUFFET) { Speed(3); }
+        PLAYER(SPECIES_LOPMONX) { Speed(3); }
         PLAYER(SPECIES_WYNAUT) { Speed(4); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(8); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(8); }
         OPPONENT(SPECIES_WYNAUT) { Speed(2); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_FAKE_OUT, target: playerLeft); MOVE(opponentRight, MOVE_FAKE_OUT, target: playerRight); MOVE(playerRight, MOVE_FIRE_PLEDGE, target: opponentRight); MOVE(playerLeft, MOVE_GRASS_PLEDGE, target: opponentRight); }
@@ -803,7 +803,7 @@ DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Flinch Both R
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FAKE_OUT, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FAKE_OUT, opponentRight);
         MESSAGE("Wynaut flinched and couldn't move!");
-        MESSAGE("Wobbuffet flinched and couldn't move!");
+        MESSAGE("Lopmonx flinched and couldn't move!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerRight);
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerLeft);
@@ -817,9 +817,9 @@ DOUBLE_BATTLE_TEST("Pledge move combo fails if ally fails to act - Flinch Both R
 DOUBLE_BATTLE_TEST("Pledge move combo doesn't trigger on opponent's Pledge move - Sleep")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); }
         PLAYER(SPECIES_WYNAUT) { Speed(3); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(8); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(8); }
         OPPONENT(SPECIES_WYNAUT) { Speed(5); Status1(STATUS1_SLEEP_TURN(2)); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_FIRE_PLEDGE, target: playerLeft);
@@ -840,9 +840,9 @@ DOUBLE_BATTLE_TEST("Pledge move combo doesn't trigger on opponent's Pledge move 
 DOUBLE_BATTLE_TEST("Pledge move combo doesn't trigger on opponent's Pledge move - Freeze")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); }
         PLAYER(SPECIES_WYNAUT) { Speed(3); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(8); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(8); }
         OPPONENT(SPECIES_WYNAUT) { Speed(5); Status1(STATUS1_FREEZE); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_FIRE_PLEDGE, target: playerLeft); MOVE(opponentRight, MOVE_GRASS_PLEDGE, target: playerLeft, WITH_RNG(RNG_FROZEN, 0)); MOVE(playerLeft, MOVE_GRASS_PLEDGE, target: opponentRight); }
@@ -861,9 +861,9 @@ DOUBLE_BATTLE_TEST("Pledge move combo doesn't trigger on opponent's Pledge move 
 DOUBLE_BATTLE_TEST("Pledge move combo doesn't trigger on opponent's Pledge move - Powder")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_POWDER, target: opponentRight);
@@ -887,8 +887,8 @@ DOUBLE_BATTLE_TEST("Pledge move combo doesn't trigger on opponent's Pledge move 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_ELECTRIFY].effect == EFFECT_ELECTRIFY);
         PLAYER(SPECIES_ELECTIVIRE) { Ability(ABILITY_MOTOR_DRIVE); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(playerRight, MOVE_ELECTRIFY, target: opponentRight);
@@ -911,8 +911,8 @@ DOUBLE_BATTLE_TEST("Pledge move combo doesn't trigger on opponent's Pledge move 
 {
     GIVEN {
         PLAYER(SPECIES_GASTRODON) { Ability(ABILITY_STORM_DRAIN); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_FIRE_PLEDGE, target: playerLeft);
@@ -934,8 +934,8 @@ DOUBLE_BATTLE_TEST("Pledge move combo doesn't trigger on opponent's Pledge move 
 {
     GIVEN {
         PLAYER(SPECIES_GOODRA) { Ability(ABILITY_SAP_SIPPER); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_WATER_PLEDGE, target: playerLeft);
@@ -957,8 +957,8 @@ DOUBLE_BATTLE_TEST("Pledge move combo doesn't trigger on opponent's Pledge move 
 {
     GIVEN {
         PLAYER(SPECIES_BABYDMON) { Ability(ABILITY_DRY_SKIN); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_FIRE_PLEDGE, target: playerLeft);
@@ -980,8 +980,8 @@ DOUBLE_BATTLE_TEST("Pledge move combo doesn't trigger on opponent's Pledge move 
 {
     GIVEN {
         PLAYER(SPECIES_HEATRAN) { Ability(ABILITY_FLASH_FIRE); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_GRASS_PLEDGE, target: playerLeft);
@@ -1004,8 +1004,8 @@ DOUBLE_BATTLE_TEST("Pledge move combo doesn't trigger on opponent's Pledge move 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_ELECTRIFY].effect == EFFECT_ELECTRIFY);
         PLAYER(SPECIES_ELECTIVIRE) { Ability(ABILITY_MOTOR_DRIVE); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(playerRight, MOVE_ELECTRIFY, target: opponentRight);
@@ -1028,9 +1028,9 @@ DOUBLE_BATTLE_TEST("Pledge move combo doesn't trigger on opponent's Pledge move 
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_ELECTRIFY].effect == EFFECT_ELECTRIFY);
-        PLAYER(SPECIES_JOLTEON) { Ability(ABILITY_VOLT_ABSORB); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_DAMEMON) { Ability(ABILITY_VOLT_ABSORB); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(playerRight, MOVE_ELECTRIFY, target: opponentRight);
@@ -1052,9 +1052,9 @@ DOUBLE_BATTLE_TEST("Pledge move combo doesn't trigger on opponent's Pledge move 
 DOUBLE_BATTLE_TEST("Pledge move combo doesn't trigger on opponent's Pledge move - Water Absorb")
 {
     GIVEN {
-        PLAYER(SPECIES_VAPOREON) { Ability(ABILITY_WATER_ABSORB); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_CUTEMON) { Ability(ABILITY_WATER_ABSORB); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_FIRE_PLEDGE, target: playerLeft);
@@ -1076,8 +1076,8 @@ DOUBLE_BATTLE_TEST("Pledge move combo doesn't trigger on opponent's Pledge move 
 {
     GIVEN {
         PLAYER(SPECIES_DACHSBUN) { Ability(ABILITY_WELL_BAKED_BODY); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_GRASS_PLEDGE, target: playerLeft);

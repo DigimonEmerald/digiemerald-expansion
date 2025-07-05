@@ -10,11 +10,11 @@ SINGLE_BATTLE_TEST("Octolock decreases Defense and Sp. Def by at the end of the 
         TURN { MOVE(player, MOVE_OCTOLOCK); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_OCTOLOCK, player);
-        MESSAGE("The opposing Wobbuffet can no longer escape because of Octolock!");
+        MESSAGE("The opposing Lopmonx can no longer escape because of Octolock!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("The opposing Wobbuffet's Defense fell!");
+        MESSAGE("The opposing Lopmonx's Defense fell!");
         NOT ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("The opposing Wobbuffet's Sp. Def fell!");
+        MESSAGE("The opposing Lopmonx's Sp. Def fell!");
     }
 }
 
@@ -96,12 +96,12 @@ SINGLE_BATTLE_TEST("Octolock reduction is prevented by Clear Amulet")
         TURN {}
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_OCTOLOCK, player);
-        MESSAGE("The opposing Wobbuffet can no longer escape because of Octolock!");
-        MESSAGE("The effects of the Clear Amulet held by the opposing Wobbuffet prevents its stats from being lowered!");
+        MESSAGE("The opposing Lopmonx can no longer escape because of Octolock!");
+        MESSAGE("The effects of the Clear Amulet held by the opposing Lopmonx prevents its stats from being lowered!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("The opposing Wobbuffet's Defense fell!");
-            MESSAGE("The opposing Wobbuffet's Sp. Def fell!");
+            MESSAGE("The opposing Lopmonx's Defense fell!");
+            MESSAGE("The opposing Lopmonx's Sp. Def fell!");
         }
     }
 }
@@ -120,14 +120,14 @@ SINGLE_BATTLE_TEST("Octolock will not decrease Defense and Sp. Def further then 
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_OCTOLOCK, player);
         for (j = 0; j < 5; j++) {
-            MESSAGE("The opposing Wobbuffet's Defense fell!");
-            MESSAGE("The opposing Wobbuffet's Sp. Def fell!");
+            MESSAGE("The opposing Lopmonx's Defense fell!");
+            MESSAGE("The opposing Lopmonx's Sp. Def fell!");
         }
-        MESSAGE("The opposing Wobbuffet's Defense won't go any lower!");
-        MESSAGE("The opposing Wobbuffet's Sp. Def won't go any lower!");
+        MESSAGE("The opposing Lopmonx's Defense won't go any lower!");
+        MESSAGE("The opposing Lopmonx's Sp. Def won't go any lower!");
         NONE_OF {
-            MESSAGE("The opposing Wobbuffet's Defense fell!");
-            MESSAGE("The opposing Wobbuffet's Sp. Def fell!");
+            MESSAGE("The opposing Lopmonx's Defense fell!");
+            MESSAGE("The opposing Lopmonx's Sp. Def fell!");
         }
     }
 }
@@ -135,7 +135,7 @@ SINGLE_BATTLE_TEST("Octolock will not decrease Defense and Sp. Def further then 
 SINGLE_BATTLE_TEST("Octolock triggers Defiant for both stat reductions")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_BISHARP) { Ability(ABILITY_DEFIANT); }
     } WHEN {
         TURN { MOVE(player, MOVE_OCTOLOCK); }
@@ -156,7 +156,7 @@ SINGLE_BATTLE_TEST("Octolock triggers Defiant for both stat reductions")
 SINGLE_BATTLE_TEST("Octolock triggers Defiant for both stat reductions")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_BISHARP) { Ability(ABILITY_DEFIANT); }
     } WHEN {
         TURN { MOVE(player, MOVE_OCTOLOCK); }

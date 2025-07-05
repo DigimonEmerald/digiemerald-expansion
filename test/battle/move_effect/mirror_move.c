@@ -55,8 +55,8 @@ SINGLE_BATTLE_TEST("Mirror Move's called powder move fails against Grass Types")
         MESSAGE("Foe Lopmonx used Mirror Move!");
         MESSAGE("Foe Lopmonx used Stun Spore!");
 =======
-        MESSAGE("The opposing Wobbuffet used Mirror Move!");
-        MESSAGE("The opposing Wobbuffet used Stun Spore!");
+        MESSAGE("The opposing Lopmonx used Mirror Move!");
+        MESSAGE("The opposing Lopmonx used Stun Spore!");
 >>>>>>> upstream/master
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_STUN_SPORE, opponent);
         MESSAGE("It doesn't affect Zerimon…");
@@ -81,8 +81,8 @@ SINGLE_BATTLE_TEST("Mirror Move's called multi-hit move hits multiple times")
         MESSAGE("Foe Lopmonx used Bullet Seed!");
 =======
         MESSAGE("The Pokémon was hit 5 time(s)!");
-        MESSAGE("The opposing Wobbuffet used Mirror Move!");
-        MESSAGE("The opposing Wobbuffet used Bullet Seed!");
+        MESSAGE("The opposing Lopmonx used Mirror Move!");
+        MESSAGE("The opposing Lopmonx used Bullet Seed!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BULLET_SEED, opponent);
         HP_BAR(player);

@@ -78,7 +78,7 @@
         {
             {
 #line 106
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 108
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -217,7 +217,7 @@
         {
             {
 #line 162
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 164
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -326,7 +326,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 205
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 207
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -337,7 +337,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 209
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 211
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -348,7 +348,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 213
-            .species = SPECIES_LOTAD,
+            .species = SPECIES_ZUBAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 215
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -402,7 +402,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 234
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 236
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -490,7 +490,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 269
-            .species = SPECIES_XATU,
+            .species = SPECIES_HERISSMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 271
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -599,7 +599,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 312
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 314
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -631,7 +631,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 325
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 327
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -674,7 +674,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 342
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 344
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -706,7 +706,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 355
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 357
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -749,7 +749,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 372
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 374
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -974,7 +974,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 462
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 464
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -1164,7 +1164,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 536
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 538
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -1252,7 +1252,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 570
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 572
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -1297,7 +1297,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 587
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 589
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -1331,7 +1331,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 601
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 603
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -1342,7 +1342,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 605
-            .species = SPECIES_CROBAT,
+            .species = SPECIES_GOTSUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 607
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -2478,7 +2478,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1061
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1063
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -2512,7 +2512,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1074
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1076
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -2546,7 +2546,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1087
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1089
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -2557,7 +2557,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 1091
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1093
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -2591,7 +2591,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1104
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1106
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -2602,7 +2602,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 1108
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1110
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -2636,7 +2636,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1121
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1123
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -2647,7 +2647,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 1125
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1127
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -2681,7 +2681,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1138
-            .species = SPECIES_AZUMARILL,
+            .species = SPECIES_JELLYMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1140
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -2692,7 +2692,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 1142
-            .species = SPECIES_AZUMARILL,
+            .species = SPECIES_JELLYMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1144
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -2724,7 +2724,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1155
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1157
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -2774,7 +2774,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 1176
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1178
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -2806,7 +2806,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1189
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1191
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -2838,7 +2838,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1202
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1204
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -2877,7 +2877,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1219
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1221
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -2916,7 +2916,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1236
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1238
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -2955,7 +2955,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1253
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1255
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -3337,7 +3337,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 1414
-            .species = SPECIES_STARMIE,
+            .species = SPECIES_BOKOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1416
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -4441,7 +4441,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 1849
-            .species = SPECIES_SKARMORY,
+            .species = SPECIES_PHASCOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1851
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -5172,7 +5172,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2126
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2126
             .heldItem = ITEM_NUGGET,
@@ -5271,7 +5271,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2165
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2167
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -5282,7 +5282,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 2169
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2171
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -5329,7 +5329,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2187
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2187
             .heldItem = ITEM_NUGGET,
@@ -5372,7 +5372,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2203
-            .species = SPECIES_SEAKING,
+            .species = SPECIES_BLKGABUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2203
             .heldItem = ITEM_NUGGET,
@@ -5448,7 +5448,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2231
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2231
             .heldItem = ITEM_NUGGET,
@@ -5486,7 +5486,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2245
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2245
             .heldItem = ITEM_NUGGET,
@@ -5524,7 +5524,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2259
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2259
             .heldItem = ITEM_NUGGET,
@@ -5562,7 +5562,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2273
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2273
             .heldItem = ITEM_NUGGET,
@@ -5605,7 +5605,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2290
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2292
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -5766,7 +5766,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2354
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_BLKAGUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2356
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -5800,7 +5800,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2367
-            .species = SPECIES_AZUMARILL,
+            .species = SPECIES_JELLYMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2369
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -6191,7 +6191,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2530
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2530
             .heldItem = ITEM_NUGGET,
@@ -6272,7 +6272,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2561
-            .species = SPECIES_AZUMARILL,
+            .species = SPECIES_JELLYMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2561
             .heldItem = ITEM_NUGGET,
@@ -6308,7 +6308,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2575
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2575
             .heldItem = ITEM_NUGGET,
@@ -6344,7 +6344,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2589
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2589
             .heldItem = ITEM_NUGGET,
@@ -6380,7 +6380,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2603
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2603
             .heldItem = ITEM_NUGGET,
@@ -6416,7 +6416,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2617
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2617
             .heldItem = ITEM_NUGGET,
@@ -6502,7 +6502,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 2651
-            .species = SPECIES_HORSEA,
+            .species = SPECIES_BIYOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2653
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -7168,7 +7168,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2917
-            .species = SPECIES_HORSEA,
+            .species = SPECIES_BIYOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2919
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -7200,7 +7200,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2930
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2932
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -7286,7 +7286,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 2964
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 2966
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -7532,7 +7532,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3063
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3065
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -7725,7 +7725,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3140
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3142
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -7768,7 +7768,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3157
-            .species = SPECIES_STARMIE,
+            .species = SPECIES_BOKOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3159
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -8354,7 +8354,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3390
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3392
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -8806,7 +8806,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3568
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3570
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -8817,7 +8817,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 3572
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3574
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -8881,7 +8881,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3598
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3600
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -8913,7 +8913,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3611
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3613
             .iv = TRAINER_PARTY_IVS(14, 14, 14, 14, 14, 14),
@@ -8945,7 +8945,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3624
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3626
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -8988,7 +8988,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3641
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3643
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -9031,7 +9031,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3658
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3660
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -9074,7 +9074,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3675
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3677
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -9117,7 +9117,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3692
-            .species = SPECIES_MAGCARGO,
+            .species = SPECIES_OTAMAMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3694
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -9381,7 +9381,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3802
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3804
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -9490,7 +9490,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3845
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3847
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -9533,7 +9533,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3862
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3864
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -9598,7 +9598,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 3887
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3889
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -9652,7 +9652,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 3908
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3910
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -9716,7 +9716,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3934
-            .species = SPECIES_WURMPLE,
+            .species = SPECIES_VEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3936
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -9727,7 +9727,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 3938
-            .species = SPECIES_SILCOON,
+            .species = SPECIES_VEMMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3940
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -9738,7 +9738,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 3942
-            .species = SPECIES_BEAUTIFLY,
+            .species = SPECIES_VORVOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3944
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -9770,7 +9770,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3955
-            .species = SPECIES_WURMPLE,
+            .species = SPECIES_VEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3957
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -9781,7 +9781,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 3959
-            .species = SPECIES_CASCOON,
+            .species = SPECIES_WORMMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3961
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -9792,7 +9792,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 3963
-            .species = SPECIES_DUSTOX,
+            .species = SPECIES_ZENIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3965
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -9878,7 +9878,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 3997
-            .species = SPECIES_DUSTOX,
+            .species = SPECIES_ZENIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 3999
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -9889,7 +9889,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 4001
-            .species = SPECIES_BEAUTIFLY,
+            .species = SPECIES_VORVOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4003
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -10040,7 +10040,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 4060
-            .species = SPECIES_WURMPLE,
+            .species = SPECIES_VEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4062
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -10105,7 +10105,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 4085
-            .species = SPECIES_DUSTOX,
+            .species = SPECIES_ZENIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4087
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -10140,7 +10140,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 4097
-            .species = SPECIES_BEAUTIFLY,
+            .species = SPECIES_VORVOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4099
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -10272,7 +10272,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 4150
-            .species = SPECIES_GIRAFARIG,
+            .species = SPECIES_LUCEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4152
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -10679,7 +10679,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 4309
-            .species = SPECIES_XATU,
+            .species = SPECIES_HERISSMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4311
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -10747,7 +10747,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 4335
-            .species = SPECIES_WOBBUFFET,
+            .species = SPECIES_LOPMONX,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4337
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -10814,7 +10814,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 4360
-            .species = SPECIES_XATU,
+            .species = SPECIES_HERISSMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4362
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -11210,7 +11210,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 4514
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4516
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -11267,7 +11267,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 4539
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4541
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -11323,7 +11323,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 4563
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4565
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -11403,7 +11403,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 4598
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4600
             .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
@@ -11797,7 +11797,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 4767
-            .species = SPECIES_KINGDRA,
+            .species = SPECIES_PSYCHEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4769
             .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
@@ -12153,7 +12153,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 4919
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4921
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -12268,7 +12268,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 4969
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4971
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -12385,7 +12385,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 5019
-            .species = SPECIES_SKARMORY,
+            .species = SPECIES_PHASCOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5021
             .iv = TRAINER_PARTY_IVS(26, 26, 26, 26, 26, 26),
@@ -12464,7 +12464,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 5053
-            .species = SPECIES_XATU,
+            .species = SPECIES_HERISSMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5055
             .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
@@ -12617,7 +12617,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 5119
-            .species = SPECIES_KINGDRA,
+            .species = SPECIES_PSYCHEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5119
             .heldItem = ITEM_CHESTO_BERRY,
@@ -13006,7 +13006,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 5272
-            .species = SPECIES_BEAUTIFLY,
+            .species = SPECIES_VORVOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5274
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -13275,7 +13275,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 5378
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5380
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -13331,7 +13331,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 5402
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5404
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -13387,7 +13387,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 5426
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5428
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -13443,7 +13443,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 5450
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5452
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -13499,7 +13499,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 5474
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5476
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -13568,7 +13568,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 5502
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5502
             .heldItem = ITEM_ORAN_BERRY,
@@ -14000,7 +14000,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 5667
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5667
             .heldItem = ITEM_ORAN_BERRY,
@@ -14013,7 +14013,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 5671
-            .species = SPECIES_AZUMARILL,
+            .species = SPECIES_JELLYMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5671
             .heldItem = ITEM_ORAN_BERRY,
@@ -14746,7 +14746,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 5952
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5954
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -14778,7 +14778,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 5965
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5967
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -14932,7 +14932,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6026
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6028
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -15173,7 +15173,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6129
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6131
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -15216,7 +15216,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6146
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6148
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -15259,7 +15259,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6163
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6165
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -15270,7 +15270,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6167
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6169
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -15313,7 +15313,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6184
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6186
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -15324,7 +15324,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6188
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6190
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -15356,7 +15356,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6201
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6203
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -15367,7 +15367,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6205
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6207
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -15399,7 +15399,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6218
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6220
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -15562,7 +15562,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6286
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6288
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -15621,7 +15621,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6311
-            .species = SPECIES_MAGIKARP,
+            .species = SPECIES_HAZYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6313
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -15643,7 +15643,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6319
-            .species = SPECIES_MAGIKARP,
+            .species = SPECIES_HAZYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6321
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -15675,7 +15675,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6332
-            .species = SPECIES_MAGIKARP,
+            .species = SPECIES_HAZYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6334
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -15686,7 +15686,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6336
-            .species = SPECIES_MAGIKARP,
+            .species = SPECIES_HAZYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6338
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -15697,7 +15697,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6340
-            .species = SPECIES_MAGIKARP,
+            .species = SPECIES_HAZYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6342
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -15729,7 +15729,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6353
-            .species = SPECIES_MAGIKARP,
+            .species = SPECIES_HAZYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6355
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -15740,7 +15740,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6357
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_BLKAGUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6359
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -15783,7 +15783,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6374
-            .species = SPECIES_MAGIKARP,
+            .species = SPECIES_HAZYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6376
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -15805,7 +15805,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6382
-            .species = SPECIES_MAGIKARP,
+            .species = SPECIES_HAZYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6384
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -16095,7 +16095,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6497
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6499
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -16106,7 +16106,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6501
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6503
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -16138,7 +16138,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6514
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6516
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -16171,7 +16171,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6526
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6528
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -16203,7 +16203,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6539
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6541
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -16236,7 +16236,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6551
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6553
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -16268,7 +16268,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6564
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6566
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -16290,7 +16290,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6572
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6574
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -16333,7 +16333,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6589
-            .species = SPECIES_MAGIKARP,
+            .species = SPECIES_HAZYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6591
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -16344,7 +16344,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6593
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6595
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -16355,7 +16355,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6597
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6599
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -16366,7 +16366,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6601
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6603
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -16377,7 +16377,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6605
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6607
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -16388,7 +16388,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6609
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6611
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -17233,7 +17233,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6941
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6943
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -17244,7 +17244,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6945
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6947
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -17276,7 +17276,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6958
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6960
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -17319,7 +17319,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6975
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6977
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -17351,7 +17351,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 6988
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6990
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -17362,7 +17362,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6992
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6994
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -17405,7 +17405,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 7009
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7011
             .iv = TRAINER_PARTY_IVS(9, 9, 9, 9, 9, 9),
@@ -17437,7 +17437,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7022
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7024
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -17469,7 +17469,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7035
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7037
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -17501,7 +17501,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7048
-            .species = SPECIES_STARMIE,
+            .species = SPECIES_BOKOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7050
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -17533,7 +17533,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7061
-            .species = SPECIES_STARMIE,
+            .species = SPECIES_BOKOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7063
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -17567,7 +17567,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7074
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7076
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -17612,7 +17612,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 7091
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7093
             .iv = TRAINER_PARTY_IVS(19, 19, 19, 19, 19, 19),
@@ -17646,7 +17646,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7104
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7106
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -17680,7 +17680,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7117
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7119
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -17725,7 +17725,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 7134
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7136
             .iv = TRAINER_PARTY_IVS(29, 29, 29, 29, 29, 29),
@@ -17759,7 +17759,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7147
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7149
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -17793,7 +17793,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7160
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7162
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -17827,7 +17827,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7173
-            .species = SPECIES_STARMIE,
+            .species = SPECIES_BOKOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7175
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -17861,7 +17861,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7186
-            .species = SPECIES_STARMIE,
+            .species = SPECIES_BOKOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7188
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -18289,7 +18289,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 7356
-            .species = SPECIES_SKARMORY,
+            .species = SPECIES_PHASCOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7358
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -18332,7 +18332,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7373
-            .species = SPECIES_SKARMORY,
+            .species = SPECIES_PHASCOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7375
             .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
@@ -18375,7 +18375,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 7390
-            .species = SPECIES_XATU,
+            .species = SPECIES_HERISSMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7392
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -18547,7 +18547,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 7458
-            .species = SPECIES_XATU,
+            .species = SPECIES_HERISSMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7460
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -18762,7 +18762,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 7543
-            .species = SPECIES_XATU,
+            .species = SPECIES_HERISSMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7545
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -18962,7 +18962,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 7622
-            .species = SPECIES_LANTURN,
+            .species = SPECIES_GUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7624
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -18999,7 +18999,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7636
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7638
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20232,7 +20232,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8132
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8134
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20311,7 +20311,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 8162
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_BLKAGUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8164
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20345,7 +20345,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8175
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_BLKAGUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8177
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20379,7 +20379,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8188
-            .species = SPECIES_HORSEA,
+            .species = SPECIES_BIYOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8190
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20390,7 +20390,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 8192
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8194
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20424,7 +20424,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8205
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_BLKAGUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8207
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20458,7 +20458,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8218
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_BLKAGUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8220
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20480,7 +20480,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 8226
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_BLKAGUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8228
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20548,7 +20548,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8252
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8254
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20616,7 +20616,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8278
-            .species = SPECIES_SEAKING,
+            .species = SPECIES_BLKGABUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8280
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20650,7 +20650,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8291
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8293
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20695,7 +20695,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8308
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_BLKAGUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8310
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20729,7 +20729,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8321
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_BLKAGUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8323
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20808,7 +20808,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8351
-            .species = SPECIES_SEAKING,
+            .species = SPECIES_BLKGABUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8353
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20842,7 +20842,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8364
-            .species = SPECIES_AZUMARILL,
+            .species = SPECIES_JELLYMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8366
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20921,7 +20921,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8394
-            .species = SPECIES_SEAKING,
+            .species = SPECIES_BLKGABUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8396
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20955,7 +20955,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8407
-            .species = SPECIES_HORSEA,
+            .species = SPECIES_BIYOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8409
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -20966,7 +20966,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 8411
-            .species = SPECIES_SEADRA,
+            .species = SPECIES_BLKAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8413
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -21000,7 +21000,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8424
-            .species = SPECIES_LANTURN,
+            .species = SPECIES_GUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8426
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -21090,7 +21090,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8458
-            .species = SPECIES_SEAKING,
+            .species = SPECIES_BLKGABUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8460
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -21192,7 +21192,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8497
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8499
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -21259,7 +21259,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 8522
-            .species = SPECIES_STARMIE,
+            .species = SPECIES_BOKOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8524
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -21370,7 +21370,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 8568
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8570
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -21456,7 +21456,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8602
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8604
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -21600,7 +21600,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8657
-            .species = SPECIES_WOBBUFFET,
+            .species = SPECIES_LOPMONX,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8659
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -21652,7 +21652,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 8678
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8680
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -22005,7 +22005,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 8813
-            .species = SPECIES_LOTAD,
+            .species = SPECIES_ZUBAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8815
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -22037,7 +22037,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 8826
-            .species = SPECIES_BEAUTIFLY,
+            .species = SPECIES_VORVOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8828
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -22048,7 +22048,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 8830
-            .species = SPECIES_DUSTOX,
+            .species = SPECIES_ZENIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8832
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -23278,7 +23278,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9323
-            .species = SPECIES_CHINCHOU,
+            .species = SPECIES_GOTSUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9325
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -23418,7 +23418,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9378
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9380
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -23726,7 +23726,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9504
-    [TRAINER_BRENDAN_ROUTE_103_MUDKIP] =
+    [TRAINER_BRENDAN_ROUTE_103_TERRIERMON] =
     {
 #line 9505
         .trainerName = _("BRENDAN"),
@@ -23746,7 +23746,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9513
-            .species = SPECIES_TREECKO,
+            .species = SPECIES_SUNARZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9515
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -23758,7 +23758,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9517
-    [TRAINER_BRENDAN_ROUTE_110_MUDKIP] =
+    [TRAINER_BRENDAN_ROUTE_110_TERRIERMON] =
     {
 #line 9518
         .trainerName = _("BRENDAN"),
@@ -23778,7 +23778,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9526
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9528
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -23800,7 +23800,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9534
-            .species = SPECIES_GROVYLE,
+            .species = SPECIES_SWIMMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9536
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -23812,7 +23812,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9538
-    [TRAINER_BRENDAN_ROUTE_119_MUDKIP] =
+    [TRAINER_BRENDAN_ROUTE_119_TERRIERMON] =
     {
 #line 9539
         .trainerName = _("BRENDAN"),
@@ -23832,7 +23832,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9547
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9549
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -23854,7 +23854,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9555
-            .species = SPECIES_GROVYLE,
+            .species = SPECIES_SWIMMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9557
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -23866,7 +23866,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9559
-    [TRAINER_BRENDAN_ROUTE_103_TREECKO] =
+    [TRAINER_BRENDAN_ROUTE_103_SUNARZAMON] =
     {
 #line 9560
         .trainerName = _("BRENDAN"),
@@ -23886,7 +23886,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9568
-            .species = SPECIES_TORCHIC,
+            .species = SPECIES_SYAKOMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9570
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -23898,7 +23898,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9572
-    [TRAINER_BRENDAN_ROUTE_110_TREECKO] =
+    [TRAINER_BRENDAN_ROUTE_110_SUNARZAMON] =
     {
 #line 9573
         .trainerName = _("BRENDAN"),
@@ -23940,7 +23940,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9589
-            .species = SPECIES_COMBUSKEN,
+            .species = SPECIES_TAPIRMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9591
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -23952,7 +23952,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9593
-    [TRAINER_BRENDAN_ROUTE_119_TREECKO] =
+    [TRAINER_BRENDAN_ROUTE_119_SUNARZAMON] =
     {
 #line 9594
         .trainerName = _("BRENDAN"),
@@ -23994,7 +23994,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9610
-            .species = SPECIES_COMBUSKEN,
+            .species = SPECIES_TAPIRMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9612
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -24006,7 +24006,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9614
-    [TRAINER_BRENDAN_ROUTE_103_TORCHIC] =
+    [TRAINER_BRENDAN_ROUTE_103_SYAKOMON_X] =
     {
 #line 9615
         .trainerName = _("BRENDAN"),
@@ -24026,7 +24026,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9623
-            .species = SPECIES_MUDKIP,
+            .species = SPECIES_TERRIERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9625
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -24038,7 +24038,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9627
-    [TRAINER_BRENDAN_ROUTE_110_TORCHIC] =
+    [TRAINER_BRENDAN_ROUTE_110_SYAKOMON_X] =
     {
 #line 9628
         .trainerName = _("BRENDAN"),
@@ -24069,7 +24069,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9640
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9642
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -24080,7 +24080,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9644
-            .species = SPECIES_MARSHTOMP,
+            .species = SPECIES_TERRIERMON_ASSISTANT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9646
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -24092,7 +24092,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9648
-    [TRAINER_BRENDAN_ROUTE_119_TORCHIC] =
+    [TRAINER_BRENDAN_ROUTE_119_SYAKOMON_X] =
     {
 #line 9649
         .trainerName = _("BRENDAN"),
@@ -24123,7 +24123,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9661
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9663
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -24134,7 +24134,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9665
-            .species = SPECIES_MARSHTOMP,
+            .species = SPECIES_TERRIERMON_ASSISTANT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9667
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -24146,7 +24146,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9669
-    [TRAINER_MAY_ROUTE_103_MUDKIP] =
+    [TRAINER_MAY_ROUTE_103_TERRIERMON] =
     {
 #line 9670
         .trainerName = _("MAY"),
@@ -24168,7 +24168,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9678
-            .species = SPECIES_TREECKO,
+            .species = SPECIES_SUNARZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9680
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -24180,7 +24180,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9682
-    [TRAINER_MAY_ROUTE_110_MUDKIP] =
+    [TRAINER_MAY_ROUTE_110_TERRIERMON] =
     {
 #line 9683
         .trainerName = _("MAY"),
@@ -24213,7 +24213,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9695
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9697
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -24224,7 +24224,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9699
-            .species = SPECIES_GROVYLE,
+            .species = SPECIES_SWIMMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9701
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -24236,7 +24236,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9703
-    [TRAINER_MAY_ROUTE_119_MUDKIP] =
+    [TRAINER_MAY_ROUTE_119_TERRIERMON] =
     {
 #line 9704
         .trainerName = _("MAY"),
@@ -24258,7 +24258,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9712
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9714
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -24280,7 +24280,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9720
-            .species = SPECIES_GROVYLE,
+            .species = SPECIES_SWIMMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9722
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -24292,7 +24292,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9724
-    [TRAINER_MAY_ROUTE_103_TREECKO] =
+    [TRAINER_MAY_ROUTE_103_SUNARZAMON] =
     {
 #line 9725
         .trainerName = _("MAY"),
@@ -24314,7 +24314,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9733
-            .species = SPECIES_TORCHIC,
+            .species = SPECIES_SYAKOMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9735
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -24326,7 +24326,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9737
-    [TRAINER_MAY_ROUTE_110_TREECKO] =
+    [TRAINER_MAY_ROUTE_110_SUNARZAMON] =
     {
 #line 9738
         .trainerName = _("MAY"),
@@ -24370,7 +24370,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9754
-            .species = SPECIES_COMBUSKEN,
+            .species = SPECIES_TAPIRMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9756
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -24382,7 +24382,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9758
-    [TRAINER_MAY_ROUTE_119_TREECKO] =
+    [TRAINER_MAY_ROUTE_119_SUNARZAMON] =
     {
 #line 9759
         .trainerName = _("MAY"),
@@ -24426,7 +24426,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9775
-            .species = SPECIES_COMBUSKEN,
+            .species = SPECIES_TAPIRMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9777
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -24438,7 +24438,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9779
-    [TRAINER_MAY_ROUTE_103_TORCHIC] =
+    [TRAINER_MAY_ROUTE_103_SYAKOMON_X] =
     {
 #line 9780
         .trainerName = _("MAY"),
@@ -24460,7 +24460,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9788
-            .species = SPECIES_MUDKIP,
+            .species = SPECIES_TERRIERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9790
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -24472,7 +24472,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9792
-    [TRAINER_MAY_ROUTE_110_TORCHIC] =
+    [TRAINER_MAY_ROUTE_110_SYAKOMON_X] =
     {
 #line 9793
         .trainerName = _("MAY"),
@@ -24505,7 +24505,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9805
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9807
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -24516,7 +24516,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9809
-            .species = SPECIES_MARSHTOMP,
+            .species = SPECIES_TERRIERMON_ASSISTANT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9811
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -24528,7 +24528,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 9813
-    [TRAINER_MAY_ROUTE_119_TORCHIC] =
+    [TRAINER_MAY_ROUTE_119_SYAKOMON_X] =
     {
 #line 9814
         .trainerName = _("MAY"),
@@ -24561,7 +24561,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9826
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9828
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -24572,7 +24572,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9830
-            .species = SPECIES_MARSHTOMP,
+            .species = SPECIES_TERRIERMON_ASSISTANT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9832
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -24615,7 +24615,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9847
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9849
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -24637,7 +24637,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9855
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9857
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -24691,7 +24691,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 9876
-            .species = SPECIES_PINSIR,
+            .species = SPECIES_TYUTYUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9878
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -24791,7 +24791,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9918
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9920
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -24813,7 +24813,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9926
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9928
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -24878,7 +24878,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9951
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9953
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -24900,7 +24900,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9959
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9961
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -24965,7 +24965,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9984
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9986
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -24987,7 +24987,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 9992
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9994
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -25052,7 +25052,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10017
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10019
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -25074,7 +25074,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10025
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10027
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -25152,7 +25152,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10054
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10056
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -25185,7 +25185,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10066
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_BLKAGUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10068
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -25320,7 +25320,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10118
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10120
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -25353,7 +25353,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10130
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_BLKAGUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10132
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -25409,7 +25409,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10151
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10153
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -25442,7 +25442,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10163
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_BLKAGUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10165
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -25498,7 +25498,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10184
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10186
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -25531,7 +25531,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10196
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_BLKAGUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10198
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -25587,7 +25587,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10217
-            .species = SPECIES_AZUMARILL,
+            .species = SPECIES_JELLYMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10219
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -25620,7 +25620,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10229
-            .species = SPECIES_SEAKING,
+            .species = SPECIES_BLKGABUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10231
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -25974,7 +25974,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 10371
-            .species = SPECIES_LOTAD,
+            .species = SPECIES_ZUBAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10373
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -26220,7 +26220,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 10465
-            .species = SPECIES_BELLOSSOM,
+            .species = SPECIES_IMPMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10467
             .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
@@ -26295,7 +26295,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 10495
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10497
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -26428,7 +26428,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 10546
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10548
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -26699,7 +26699,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10653
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10655
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -26834,7 +26834,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 10707
-            .species = SPECIES_GIRAFARIG,
+            .species = SPECIES_LUCEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10709
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -26932,7 +26932,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 10746
-            .species = SPECIES_GIRAFARIG,
+            .species = SPECIES_LUCEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10748
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -26964,7 +26964,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 10759
-            .species = SPECIES_WOBBUFFET,
+            .species = SPECIES_LOPMONX,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10761
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -27009,7 +27009,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10776
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10778
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -27105,7 +27105,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 10815
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10817
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -27183,7 +27183,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 10845
-    [TRAINER_BRENDAN_RUSTBORO_TREECKO] =
+    [TRAINER_BRENDAN_RUSTBORO_SUNARZAMON] =
     {
 #line 10846
         .trainerName = _("BRENDAN"),
@@ -27203,7 +27203,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 10854
-            .species = SPECIES_LOTAD,
+            .species = SPECIES_ZUBAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10856
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -27214,7 +27214,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10858
-            .species = SPECIES_TORCHIC,
+            .species = SPECIES_SYAKOMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10860
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -27226,7 +27226,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 10862
-    [TRAINER_BRENDAN_RUSTBORO_MUDKIP] =
+    [TRAINER_BRENDAN_RUSTBORO_TERRIERMON] =
     {
 #line 10863
         .trainerName = _("BRENDAN"),
@@ -27257,7 +27257,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10875
-            .species = SPECIES_TREECKO,
+            .species = SPECIES_SUNARZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10877
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -27334,7 +27334,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 10905
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10907
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -27379,7 +27379,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10922
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10924
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -27422,7 +27422,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10939
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10941
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -27501,7 +27501,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 10969
-    [TRAINER_BRENDAN_RUSTBORO_TORCHIC] =
+    [TRAINER_BRENDAN_RUSTBORO_SYAKOMON_X] =
     {
 #line 10970
         .trainerName = _("BRENDAN"),
@@ -27521,7 +27521,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 10978
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10980
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -27532,7 +27532,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10982
-            .species = SPECIES_MUDKIP,
+            .species = SPECIES_TERRIERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10984
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -27544,7 +27544,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 10986
-    [TRAINER_MAY_RUSTBORO_MUDKIP] =
+    [TRAINER_MAY_RUSTBORO_TERRIERMON] =
     {
 #line 10987
         .trainerName = _("MAY"),
@@ -27577,7 +27577,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 10999
-            .species = SPECIES_TREECKO,
+            .species = SPECIES_SUNARZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11001
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -27611,7 +27611,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11013
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11015
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -27622,7 +27622,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 11017
-            .species = SPECIES_CROBAT,
+            .species = SPECIES_GOTSUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11019
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -27667,7 +27667,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11035
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11037
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -27723,7 +27723,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11056
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11058
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -27768,7 +27768,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11073
-            .species = SPECIES_LOTAD,
+            .species = SPECIES_ZUBAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11075
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -27813,7 +27813,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11090
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11092
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -27847,7 +27847,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11103
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11105
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -28150,7 +28150,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 11217
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11219
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -28218,7 +28218,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11243
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_BLKAGUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11245
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -28261,7 +28261,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11260
-            .species = SPECIES_WURMPLE,
+            .species = SPECIES_VEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11262
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -28272,7 +28272,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 11264
-            .species = SPECIES_WURMPLE,
+            .species = SPECIES_VEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11266
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -28304,7 +28304,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11277
-            .species = SPECIES_WURMPLE,
+            .species = SPECIES_VEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11279
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -28315,7 +28315,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 11281
-            .species = SPECIES_WURMPLE,
+            .species = SPECIES_VEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11283
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -28326,7 +28326,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 11285
-            .species = SPECIES_WURMPLE,
+            .species = SPECIES_VEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11287
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -28337,7 +28337,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 11289
-            .species = SPECIES_WURMPLE,
+            .species = SPECIES_VEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11291
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -28369,7 +28369,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11302
-            .species = SPECIES_WURMPLE,
+            .species = SPECIES_VEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11304
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -28605,7 +28605,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11396
-            .species = SPECIES_DUSTOX,
+            .species = SPECIES_ZENIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11398
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -28659,7 +28659,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 11417
-            .species = SPECIES_DUSTOX,
+            .species = SPECIES_ZENIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11419
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -28724,7 +28724,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 11442
-            .species = SPECIES_DUSTOX,
+            .species = SPECIES_ZENIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11444
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -29132,7 +29132,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 11603
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11605
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -29786,7 +29786,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 11858
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_BLKAGUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11860
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -30141,7 +30141,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12010
-            .species = SPECIES_XATU,
+            .species = SPECIES_HERISSMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12012
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -30693,7 +30693,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 12248
-    [TRAINER_BRENDAN_LILYCOVE_MUDKIP] =
+    [TRAINER_BRENDAN_LILYCOVE_TERRIERMON] =
     {
 #line 12249
         .trainerName = _("BRENDAN"),
@@ -30724,7 +30724,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12261
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12263
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -30746,7 +30746,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12269
-            .species = SPECIES_GROVYLE,
+            .species = SPECIES_SWIMMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12271
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -30758,7 +30758,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 12273
-    [TRAINER_BRENDAN_LILYCOVE_TREECKO] =
+    [TRAINER_BRENDAN_LILYCOVE_SUNARZAMON] =
     {
 #line 12274
         .trainerName = _("BRENDAN"),
@@ -30811,7 +30811,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12294
-            .species = SPECIES_COMBUSKEN,
+            .species = SPECIES_TAPIRMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12296
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -30823,7 +30823,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 12298
-    [TRAINER_BRENDAN_LILYCOVE_TORCHIC] =
+    [TRAINER_BRENDAN_LILYCOVE_SYAKOMON_X] =
     {
 #line 12299
         .trainerName = _("BRENDAN"),
@@ -30865,7 +30865,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12315
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12317
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -30876,7 +30876,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12319
-            .species = SPECIES_MARSHTOMP,
+            .species = SPECIES_TERRIERMON_ASSISTANT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12321
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -30888,7 +30888,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 12323
-    [TRAINER_MAY_LILYCOVE_MUDKIP] =
+    [TRAINER_MAY_LILYCOVE_TERRIERMON] =
     {
 #line 12324
         .trainerName = _("MAY"),
@@ -30921,7 +30921,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12336
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12338
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -30943,7 +30943,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12344
-            .species = SPECIES_GROVYLE,
+            .species = SPECIES_SWIMMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12346
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -30955,7 +30955,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 12348
-    [TRAINER_MAY_LILYCOVE_TREECKO] =
+    [TRAINER_MAY_LILYCOVE_SUNARZAMON] =
     {
 #line 12349
         .trainerName = _("MAY"),
@@ -31010,7 +31010,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12369
-            .species = SPECIES_COMBUSKEN,
+            .species = SPECIES_TAPIRMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12371
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -31022,7 +31022,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 12373
-    [TRAINER_MAY_LILYCOVE_TORCHIC] =
+    [TRAINER_MAY_LILYCOVE_SYAKOMON_X] =
     {
 #line 12374
         .trainerName = _("MAY"),
@@ -31066,7 +31066,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12390
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12392
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -31077,7 +31077,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12394
-            .species = SPECIES_MARSHTOMP,
+            .species = SPECIES_TERRIERMON_ASSISTANT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12396
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
@@ -31206,7 +31206,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12445
-            .species = SPECIES_MAGIKARP,
+            .species = SPECIES_HAZYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12447
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -31217,7 +31217,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12449
-            .species = SPECIES_MAGIKARP,
+            .species = SPECIES_HAZYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12451
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -31228,7 +31228,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12453
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_COMMDRAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12455
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -31275,7 +31275,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12471
-            .species = SPECIES_AZUMARILL,
+            .species = SPECIES_JELLYMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12473
             .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
@@ -31449,7 +31449,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12540
-            .species = SPECIES_SKARMORY,
+            .species = SPECIES_PHASCOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12542
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -31526,7 +31526,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12570
-            .species = SPECIES_CHINCHOU,
+            .species = SPECIES_GOTSUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12572
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -31715,7 +31715,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12650
-            .species = SPECIES_DUSTOX,
+            .species = SPECIES_ZENIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12652
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -31733,7 +31733,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12658
-            .species = SPECIES_BEAUTIFLY,
+            .species = SPECIES_VORVOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12660
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -32057,7 +32057,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12800
-            .species = SPECIES_AZUMARILL,
+            .species = SPECIES_JELLYMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12802
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -32100,7 +32100,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12817
-            .species = SPECIES_CHINCHOU,
+            .species = SPECIES_GOTSUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12819
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -32143,7 +32143,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12834
-            .species = SPECIES_CHINCHOU,
+            .species = SPECIES_GOTSUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12836
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -32186,7 +32186,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12851
-            .species = SPECIES_LANTURN,
+            .species = SPECIES_GUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12853
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -32229,7 +32229,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12868
-            .species = SPECIES_LANTURN,
+            .species = SPECIES_GUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12870
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -32272,7 +32272,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12885
-            .species = SPECIES_LANTURN,
+            .species = SPECIES_GUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12887
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -32315,7 +32315,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12902
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_BLKAGUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12904
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -32358,7 +32358,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12919
-            .species = SPECIES_MAGIKARP,
+            .species = SPECIES_HAZYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12921
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -32423,7 +32423,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12944
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12944
             .heldItem = ITEM_NUGGET,
@@ -32436,7 +32436,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12948
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12950
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -32472,7 +32472,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12962
-            .species = SPECIES_LOTAD,
+            .species = SPECIES_ZUBAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12964
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -32483,7 +32483,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 12966
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12966
             .heldItem = ITEM_NUGGET,
@@ -32517,7 +32517,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12979
-            .species = SPECIES_MAGIKARP,
+            .species = SPECIES_HAZYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12981
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -32551,7 +32551,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12992
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12994
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -32948,7 +32948,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13147
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13149
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -32991,7 +32991,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13164
-            .species = SPECIES_SKARMORY,
+            .species = SPECIES_PHASCOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13166
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -33133,7 +33133,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 13219
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13221
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -33231,7 +33231,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13258
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13260
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -33317,7 +33317,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13292
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13294
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -33467,7 +33467,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13352
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13354
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -33531,7 +33531,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13378
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13380
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -33595,7 +33595,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13404
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13406
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -33725,7 +33725,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13456
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13458
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -33836,7 +33836,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 13499
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13501
             .iv = TRAINER_PARTY_IVS(9, 9, 9, 9, 9, 9),
@@ -33937,7 +33937,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13538
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13540
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -33948,7 +33948,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 13542
-            .species = SPECIES_CROBAT,
+            .species = SPECIES_GOTSUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13544
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -34025,7 +34025,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13572
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13574
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -34143,7 +34143,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13619
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13621
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -34287,7 +34287,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13675
-            .species = SPECIES_SKARMORY,
+            .species = SPECIES_PHASCOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13677
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -34298,7 +34298,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 13679
-            .species = SPECIES_SKARMORY,
+            .species = SPECIES_PHASCOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13681
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -34332,7 +34332,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13692
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13694
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -34472,7 +34472,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 13747
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13749
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -34826,7 +34826,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 13883
-            .species = SPECIES_LOTAD,
+            .species = SPECIES_ZUBAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13885
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -35039,7 +35039,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13966
-            .species = SPECIES_SLUGMA,
+            .species = SPECIES_OTAMAMON_RED,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13968
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -35084,7 +35084,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13983
-            .species = SPECIES_GOLDEEN,
+            .species = SPECIES_BLKAGUMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13985
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -35201,7 +35201,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 14030
-            .species = SPECIES_DUSTOX,
+            .species = SPECIES_ZENIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14032
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -35212,7 +35212,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14034
-            .species = SPECIES_BEAUTIFLY,
+            .species = SPECIES_VORVOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14036
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -35277,7 +35277,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14059
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14061
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -35333,7 +35333,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 14080
-            .species = SPECIES_POOCHYENA,
+            .species = SPECIES_TINKERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14082
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -35366,7 +35366,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14092
-            .species = SPECIES_MARILL,
+            .species = SPECIES_JAZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14094
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -35447,7 +35447,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 14122
-    [TRAINER_MAY_RUSTBORO_TREECKO] =
+    [TRAINER_MAY_RUSTBORO_SUNARZAMON] =
     {
 #line 14123
         .trainerName = _("MAY"),
@@ -35469,7 +35469,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 14131
-            .species = SPECIES_LOTAD,
+            .species = SPECIES_ZUBAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14133
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -35480,7 +35480,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14135
-            .species = SPECIES_TORCHIC,
+            .species = SPECIES_SYAKOMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14137
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -35492,7 +35492,7 @@ F_TRAINER_FEMALE |
         },
     },
 #line 14139
-    [TRAINER_MAY_RUSTBORO_TORCHIC] =
+    [TRAINER_MAY_RUSTBORO_SYAKOMON_X] =
     {
 #line 14140
         .trainerName = _("MAY"),
@@ -35525,7 +35525,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14152
-            .species = SPECIES_MUDKIP,
+            .species = SPECIES_TERRIERMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14154
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
@@ -35579,7 +35579,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14174
-            .species = SPECIES_KABUTO,
+            .species = SPECIES_DOTAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14174
             .heldItem = ITEM_SITRUS_BERRY,
@@ -35662,7 +35662,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 14208
-            .species = SPECIES_OMANYTE,
+            .species = SPECIES_DONDOKOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14210
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -35698,7 +35698,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14224
-            .species = SPECIES_KABUTOPS,
+            .species = SPECIES_DOTFALCMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14224
             .heldItem = ITEM_SITRUS_BERRY,
@@ -35781,7 +35781,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 14258
-            .species = SPECIES_OMASTAR,
+            .species = SPECIES_DORUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14260
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -35817,7 +35817,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14274
-            .species = SPECIES_KABUTOPS,
+            .species = SPECIES_DOTFALCMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14274
             .heldItem = ITEM_SITRUS_BERRY,
@@ -35900,7 +35900,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 14308
-            .species = SPECIES_AERODACTYL,
+            .species = SPECIES_DRACMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14310
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -35936,7 +35936,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14324
-            .species = SPECIES_OMASTAR,
+            .species = SPECIES_DORUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14326
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -35954,7 +35954,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14332
-            .species = SPECIES_KABUTOPS,
+            .species = SPECIES_DOTFALCMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14332
             .heldItem = ITEM_SITRUS_BERRY,
@@ -35974,7 +35974,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14340
-            .species = SPECIES_STEELIX,
+            .species = SPECIES_KODEKACMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14342
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -36073,7 +36073,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14382
-            .species = SPECIES_HITMONTOP,
+            .species = SPECIES_SALAMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14384
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -36172,7 +36172,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14424
-            .species = SPECIES_HITMONTOP,
+            .species = SPECIES_SALAMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14426
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -36289,7 +36289,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14474
-            .species = SPECIES_HITMONTOP,
+            .species = SPECIES_SALAMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14476
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -36424,7 +36424,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14532
-            .species = SPECIES_HITMONTOP,
+            .species = SPECIES_SALAMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14534
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -36485,7 +36485,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 14558
-            .species = SPECIES_MAREEP,
+            .species = SPECIES_HYOKOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14560
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -36602,7 +36602,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14608
-            .species = SPECIES_FLAAFFY,
+            .species = SPECIES_IGNITEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14610
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -36719,7 +36719,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14658
-            .species = SPECIES_AMPHAROS,
+            .species = SPECIES_IMPMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14660
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -36818,7 +36818,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 14700
-            .species = SPECIES_ELECTABUZZ,
+            .species = SPECIES_CANDLEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14702
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -36854,7 +36854,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14716
-            .species = SPECIES_AMPHAROS,
+            .species = SPECIES_IMPMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14718
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -36955,7 +36955,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 14758
-            .species = SPECIES_MAGCARGO,
+            .species = SPECIES_OTAMAMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14758
             .heldItem = ITEM_WHITE_HERB,
@@ -37076,7 +37076,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14808
-            .species = SPECIES_MAGCARGO,
+            .species = SPECIES_OTAMAMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14808
             .heldItem = ITEM_WHITE_HERB,
@@ -37179,7 +37179,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 14850
-            .species = SPECIES_HOUNDOUR,
+            .species = SPECIES_PILLOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14852
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -37215,7 +37215,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14866
-            .species = SPECIES_MAGCARGO,
+            .species = SPECIES_OTAMAMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14866
             .heldItem = ITEM_WHITE_HERB,
@@ -37336,7 +37336,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14916
-            .species = SPECIES_MAGCARGO,
+            .species = SPECIES_OTAMAMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14916
             .heldItem = ITEM_WHITE_HERB,
@@ -37356,7 +37356,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 14924
-            .species = SPECIES_HOUNDOOM,
+            .species = SPECIES_POMUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 14926
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -37592,7 +37592,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15024
-            .species = SPECIES_KANGASKHAN,
+            .species = SPECIES_BETAMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15026
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -37691,7 +37691,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15066
-            .species = SPECIES_BLISSEY,
+            .species = SPECIES_SHOUTMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15068
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -37709,7 +37709,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15074
-            .species = SPECIES_KANGASKHAN,
+            .species = SPECIES_BETAMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15076
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -37808,7 +37808,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15116
-            .species = SPECIES_BLISSEY,
+            .species = SPECIES_SHOUTMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15118
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -37826,7 +37826,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15124
-            .species = SPECIES_KANGASKHAN,
+            .species = SPECIES_BETAMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15126
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -37844,7 +37844,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15132
-            .species = SPECIES_TAUROS,
+            .species = SPECIES_CHUUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15134
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -37925,7 +37925,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 15166
-            .species = SPECIES_DRATINI,
+            .species = SPECIES_ELECMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15166
             .heldItem = ITEM_SITRUS_BERRY,
@@ -37981,7 +37981,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15190
-            .species = SPECIES_SKARMORY,
+            .species = SPECIES_PHASCOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15192
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -38044,7 +38044,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 15216
-            .species = SPECIES_HOOTHOOT,
+            .species = SPECIES_GHOSTMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15218
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -38080,7 +38080,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15232
-            .species = SPECIES_DRAGONAIR,
+            .species = SPECIES_ELECMON_VIOLET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15232
             .heldItem = ITEM_SITRUS_BERRY,
@@ -38118,7 +38118,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15248
-            .species = SPECIES_SKARMORY,
+            .species = SPECIES_PHASCOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15250
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -38181,7 +38181,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 15274
-            .species = SPECIES_NOCTOWL,
+            .species = SPECIES_GIZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15276
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -38217,7 +38217,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15290
-            .species = SPECIES_DRAGONAIR,
+            .species = SPECIES_ELECMON_VIOLET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15290
             .heldItem = ITEM_SITRUS_BERRY,
@@ -38255,7 +38255,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15306
-            .species = SPECIES_SKARMORY,
+            .species = SPECIES_PHASCOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15308
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -38318,7 +38318,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 15332
-            .species = SPECIES_NOCTOWL,
+            .species = SPECIES_GIZAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15334
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -38372,7 +38372,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15356
-            .species = SPECIES_DRAGONITE,
+            .species = SPECIES_ESPIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15356
             .heldItem = ITEM_SITRUS_BERRY,
@@ -38392,7 +38392,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15364
-            .species = SPECIES_SKARMORY,
+            .species = SPECIES_PHASCOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15366
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -38489,7 +38489,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15406
-            .species = SPECIES_XATU,
+            .species = SPECIES_HERISSMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15406
             .heldItem = ITEM_CHESTO_BERRY,
@@ -38626,7 +38626,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15464
-            .species = SPECIES_XATU,
+            .species = SPECIES_HERISSMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15464
             .heldItem = ITEM_CHESTO_BERRY,
@@ -38763,7 +38763,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15522
-            .species = SPECIES_XATU,
+            .species = SPECIES_HERISSMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15522
             .heldItem = ITEM_CHESTO_BERRY,
@@ -38882,7 +38882,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15572
-            .species = SPECIES_SLOWKING,
+            .species = SPECIES_LIOLLMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15574
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -38900,7 +38900,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15580
-            .species = SPECIES_XATU,
+            .species = SPECIES_HERISSMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15580
             .heldItem = ITEM_CHESTO_BERRY,
@@ -39057,7 +39057,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15646
-            .species = SPECIES_KINGDRA,
+            .species = SPECIES_PSYCHEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15646
             .heldItem = ITEM_CHESTO_BERRY,
@@ -39174,7 +39174,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15696
-            .species = SPECIES_KINGDRA,
+            .species = SPECIES_PSYCHEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15696
             .heldItem = ITEM_CHESTO_BERRY,
@@ -39217,7 +39217,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 15714
-            .species = SPECIES_LAPRAS,
+            .species = SPECIES_CORONAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15716
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -39309,7 +39309,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15754
-            .species = SPECIES_KINGDRA,
+            .species = SPECIES_PSYCHEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15754
             .heldItem = ITEM_CHESTO_BERRY,
@@ -39352,7 +39352,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 15772
-            .species = SPECIES_LAPRAS,
+            .species = SPECIES_CORONAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15774
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -39388,7 +39388,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15788
-            .species = SPECIES_POLITOED,
+            .species = SPECIES_KAMEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15790
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -39444,7 +39444,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 15812
-            .species = SPECIES_KINGDRA,
+            .species = SPECIES_PSYCHEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15812
             .heldItem = ITEM_CHESTO_BERRY,
@@ -39574,7 +39574,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 15866
-            .species = SPECIES_SKARMORY,
+            .species = SPECIES_PHASCOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15868
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -40356,7 +40356,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 16178
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16180
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -40367,7 +40367,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16182
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16184
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -40410,7 +40410,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16199
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16201
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -40421,7 +40421,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16203
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16205
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -40464,7 +40464,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16220
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16222
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -40475,7 +40475,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16224
-            .species = SPECIES_STARYU,
+            .species = SPECIES_BLKGUILMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16226
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -40518,7 +40518,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16241
-            .species = SPECIES_STARMIE,
+            .species = SPECIES_BOKOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16243
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -40529,7 +40529,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16245
-            .species = SPECIES_STARMIE,
+            .species = SPECIES_BOKOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16247
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -41421,7 +41421,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16590
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16592
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -41432,7 +41432,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16594
-            .species = SPECIES_ZIGZAGOON,
+            .species = SPECIES_TOYAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16596
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -41443,7 +41443,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16598
-            .species = SPECIES_LOTAD,
+            .species = SPECIES_ZUBAMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16600
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -41510,7 +41510,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16623
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16625
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -41521,7 +41521,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16627
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16629
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -41599,7 +41599,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16656
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16658
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -41610,7 +41610,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16660
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16662
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -41688,7 +41688,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16689
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_TINPET,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16691
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -41699,7 +41699,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16693
-            .species = SPECIES_LINOONE,
+            .species = SPECIES_TSUKAIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16695
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -41777,7 +41777,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16722
-            .species = SPECIES_HORSEA,
+            .species = SPECIES_BIYOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16724
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -41833,7 +41833,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16743
-            .species = SPECIES_SEADRA,
+            .species = SPECIES_BLKAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16745
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -41889,7 +41889,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16764
-            .species = SPECIES_SEADRA,
+            .species = SPECIES_BLKAGUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16766
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -41945,7 +41945,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 16785
-            .species = SPECIES_KINGDRA,
+            .species = SPECIES_PSYCHEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16787
             .iv = TRAINER_PARTY_IVS(4, 4, 4, 4, 4, 4),
@@ -42048,7 +42048,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 16825
-            .species = SPECIES_WOBBUFFET,
+            .species = SPECIES_LOPMONX,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16827
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),

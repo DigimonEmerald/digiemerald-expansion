@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Leftovers recovers 1/16th HP at end of turn")
 <<<<<<< HEAD
         MESSAGE("Lopmonx's Leftovers restored its HP a little!");
 =======
-        MESSAGE("Wobbuffet restored a little HP using its Leftovers!");
+        MESSAGE("Lopmonx restored a little HP using its Leftovers!");
 >>>>>>> upstream/master
         HP_BAR(player, damage: -maxHP / 16);
     }
@@ -38,7 +38,7 @@ SINGLE_BATTLE_TEST("Leftovers does nothing if max HP")
 <<<<<<< HEAD
             MESSAGE("Lopmonx's Leftovers restored its HP a little!");
 =======
-            MESSAGE("Wobbuffet restored a little HP using its Leftovers!");
+            MESSAGE("Lopmonx restored a little HP using its Leftovers!");
 >>>>>>> upstream/master
             HP_BAR(player);
         }
@@ -58,7 +58,7 @@ SINGLE_BATTLE_TEST("Leftovers does nothing if Heal Block applies")
 <<<<<<< HEAD
             MESSAGE("Lopmonx's Leftovers restored its HP a little!");
 =======
-            MESSAGE("Wobbuffet restored a little HP using its Leftovers!");
+            MESSAGE("Lopmonx restored a little HP using its Leftovers!");
 >>>>>>> upstream/master
             HP_BAR(player);
         }

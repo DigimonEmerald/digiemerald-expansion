@@ -1200,7 +1200,7 @@ const union AnimCmd *const sAnimTable_Following_Asym[] = {
     [ANIM_EXIT_POKEBALL_FAST_EAST] = sAnim_ExitPokeballFastEast_Asym,
 };
 
-static const union AnimCmd *const sAnimTable_HoOh[] = {
+static const union AnimCmd *const sAnimTable_Starmon_2010[] = {
     [ANIM_STD_FACE_SOUTH] = sAnim_FaceSouth,
     [ANIM_STD_FACE_NORTH] = sAnim_FaceNorth2F,
     [ANIM_STD_FACE_WEST] = sAnim_FaceWest2F,

@@ -49,14 +49,14 @@ SINGLE_BATTLE_TEST("Freeze isn't thawed if opponent is asleep during thawing att
     PASSES_RANDOMLY(80, 100, RNG_FROZEN);
     GIVEN {
         ASSUME(GetMoveType(MOVE_EMBER) == TYPE_FIRE);
-        PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_FREEZE); }
-        OPPONENT(SPECIES_WOBBUFFET) { Status1(STATUS1_SLEEP); };
+        PLAYER(SPECIES_LOPMONX) { Status1(STATUS1_FREEZE); }
+        OPPONENT(SPECIES_LOPMONX) { Status1(STATUS1_SLEEP); };
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBER); MOVE(player, MOVE_CELEBRATE); }
     } SCENE {
         NONE_OF {
-            MESSAGE("The opposing Wobbuffet used Ember!");
-            MESSAGE("Wobbuffet thawed out!");
+            MESSAGE("The opposing Lopmonx used Ember!");
+            MESSAGE("Lopmonx thawed out!");
             STATUS_ICON(player, none: TRUE);
         }
     }
@@ -67,14 +67,14 @@ SINGLE_BATTLE_TEST("Freeze isn't thawed if opponent is asleep during thawing att
     PASSES_RANDOMLY(80, 100, RNG_FROZEN);
     GIVEN {
         ASSUME(GetMoveType(MOVE_EMBER) == TYPE_FIRE);
-        PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_FREEZE); }
-        OPPONENT(SPECIES_WOBBUFFET) { Status1(STATUS1_SLEEP); };
+        PLAYER(SPECIES_LOPMONX) { Status1(STATUS1_FREEZE); }
+        OPPONENT(SPECIES_LOPMONX) { Status1(STATUS1_SLEEP); };
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBER); MOVE(player, MOVE_CELEBRATE); }
     } SCENE {
         NONE_OF {
-            MESSAGE("The opposing Wobbuffet used Ember!");
-            MESSAGE("Wobbuffet thawed out!");
+            MESSAGE("The opposing Lopmonx used Ember!");
+            MESSAGE("Lopmonx thawed out!");
             STATUS_ICON(player, none: TRUE);
         }
     }

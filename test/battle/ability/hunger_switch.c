@@ -16,7 +16,7 @@ SINGLE_BATTLE_TEST("Hunger Switch switches Morpeko's forms at the end of the tur
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
     } THEN {

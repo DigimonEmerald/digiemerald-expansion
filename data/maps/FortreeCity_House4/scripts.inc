@@ -84,7 +84,7 @@ FortreeCity_House4_Text_WelcomeAngemonTakeMentalHerb:
 	.string "Huh? What is this?\n"
 	.string "What is it holding?\p"
 	.string "A MENTAL HERB?\n"
-	.string "It must have picked it up somewhere.\p"
+	.string "It must have picked it up sofalcomonhere.\p"
 	.string "But I'm not a TRAINER, so you can\n"
 	.string "have it.$"
 

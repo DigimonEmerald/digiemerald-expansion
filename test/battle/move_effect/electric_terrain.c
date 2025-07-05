@@ -17,10 +17,10 @@ SINGLE_BATTLE_TEST("Electric Terrain protects grounded battlers from falling asl
         MESSAGE("Lopmonx used Spore!");
         MESSAGE("Foe Diatrymon fell asleep!");
 =======
-        MESSAGE("Wobbuffet used Electric Terrain!");
+        MESSAGE("Lopmonx used Electric Terrain!");
         MESSAGE("The opposing Claydol used Spore!");
-        MESSAGE("Wobbuffet surrounds itself with electrified terrain!");
-        MESSAGE("Wobbuffet used Spore!");
+        MESSAGE("Lopmonx surrounds itself with electrified terrain!");
+        MESSAGE("Lopmonx used Spore!");
         MESSAGE("The opposing Claydol fell asleep!");
 >>>>>>> upstream/master:test/battle/move_effect/electric_terrain.c
         STATUS_ICON(opponent, sleep: TRUE);
@@ -65,7 +65,7 @@ SINGLE_BATTLE_TEST("Electric Terrain increases power of Electric-type moves by 3
 <<<<<<< HEAD:test/battle/terrain/electric.c
         MESSAGE("Lopmonx used ThunderShock!");
 =======
-        MESSAGE("Wobbuffet used Thunder Shock!");
+        MESSAGE("Lopmonx used Thunder Shock!");
 >>>>>>> upstream/master:test/battle/move_effect/electric_terrain.c
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
@@ -91,7 +91,7 @@ SINGLE_BATTLE_TEST("Electric Terrain lasts for 5 turns")
 <<<<<<< HEAD:test/battle/terrain/electric.c
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master:test/battle/move_effect/electric_terrain.c
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ELECTRIC_TERRAIN, player);
         MESSAGE("An electric current ran across the battlefield!");
@@ -106,14 +106,14 @@ SINGLE_BATTLE_TEST("Electric Terrain lasts for 5 turns")
         MESSAGE("Lopmonx used Celebrate!");
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master:test/battle/move_effect/electric_terrain.c
 
         MESSAGE("The electricity disappeared from the battlefield.");

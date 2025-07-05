@@ -69,7 +69,7 @@ DOUBLE_BATTLE_TEST("Focus Punch activation is based on Speed")
 
         MESSAGE("Foe Exveemon used Focus Punch!");
 =======
-        MESSAGE("The opposing Wobbuffet is tightening its focus!");
+        MESSAGE("The opposing Lopmonx is tightening its focus!");
 
         MESSAGE("The opposing Wynaut used Focus Punch!");
 >>>>>>> upstream/master
@@ -84,8 +84,8 @@ DOUBLE_BATTLE_TEST("Focus Punch activation is based on Speed")
         MESSAGE("Lopmonx lost its focus and couldn't move!");
         MESSAGE("Foe Lopmonx lost its focus and couldn't move!");
 =======
-        MESSAGE("Wobbuffet lost its focus and couldn't move!");
-        MESSAGE("The opposing Wobbuffet lost its focus and couldn't move!");
+        MESSAGE("Lopmonx lost its focus and couldn't move!");
+        MESSAGE("The opposing Lopmonx lost its focus and couldn't move!");
     }
 }
 

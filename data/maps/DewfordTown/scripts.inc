@@ -47,7 +47,7 @@ DewfordTown_EventScript_ChooseSlateport::
 	end
 
 DewfordTown_EventScript_CancelSailSelect::
-	msgbox DewfordTown_Text_JustTellMeWhenYouNeedToSetSail, MSGBOX_DEFAULT
+	msgbox DewfordTown_Text_JustTellFalcomonhenYouNeedToSetSail, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
@@ -613,7 +613,7 @@ DewfordTown_EventScript_ConfirmTrendyPhrase::
 	end
 
 DewfordTown_EventScript_RejectTrendyPhrase::
-	msgbox DewfordTown_Text_TellMeWhatsNewAndIn, MSGBOX_DEFAULT
+	msgbox DewfordTown_Text_TellFalcomonhatsNewAndIn, MSGBOX_DEFAULT
 	setvar VAR_0x8004, EASY_CHAT_TYPE_TRENDY_PHRASE
 	call Common_ShowEasyChatScreen
 	lock
@@ -699,7 +699,7 @@ DewfordTown_Text_SlateportWereSettingSail:
 	.string "Anchors aweigh!\n"
 	.string "PEEKO, we're setting sail, my darling!$"
 
-DewfordTown_Text_JustTellMeWhenYouNeedToSetSail:
+DewfordTown_Text_JustTellFalcomonhenYouNeedToSetSail:
 	.string "MR. BRINEY: You just tell me whenever\n"
 	.string "you need to set sail again!$"
 
@@ -762,7 +762,7 @@ DewfordTown_Text_XIsTheBiggestHappeningThingRight:
 	.string "“{STR_VAR_1}”\l"
 	.string "is the biggest happening thing, right?$"
 
-DewfordTown_Text_TellMeWhatsNewAndIn:
+DewfordTown_Text_TellFalcomonhatsNewAndIn:
 	.string "Hunh?\n"
 	.string "It's not the hip and happening thing?\p"
 	.string "Well, hey, you have to tell me,\n"

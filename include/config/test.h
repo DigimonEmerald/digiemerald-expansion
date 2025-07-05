@@ -145,176 +145,176 @@
 #define P_FAMILY_BEARMON                 TRUE
 #undef P_FAMILY_BETAMON
 #define P_FAMILY_BETAMON                 TRUE
-#undef P_FAMILY_KANGASKHAN
-#define P_FAMILY_KANGASKHAN              TRUE
-#undef P_FAMILY_HORSEA
-#define P_FAMILY_HORSEA                  TRUE
-#undef P_FAMILY_GOLDEEN
-#define P_FAMILY_GOLDEEN                 TRUE
-#undef P_FAMILY_STARYU
-#define P_FAMILY_STARYU                  TRUE
-#undef P_FAMILY_MR_MIME
-#define P_FAMILY_MR_MIME                 TRUE
-#undef P_FAMILY_SCYTHER
-#define P_FAMILY_SCYTHER                 TRUE
-#undef P_FAMILY_JYNX
-#define P_FAMILY_JYNX                    TRUE
-#undef P_FAMILY_ELECTABUZZ
-#define P_FAMILY_ELECTABUZZ              TRUE
-#undef P_FAMILY_MAGMAR
-#define P_FAMILY_MAGMAR                  TRUE
-#undef P_FAMILY_PINSIR
-#define P_FAMILY_PINSIR                  TRUE
-#undef P_FAMILY_TAUROS
-#define P_FAMILY_TAUROS                  TRUE
-#undef P_FAMILY_MAGIKARP
-#define P_FAMILY_MAGIKARP                TRUE
-#undef P_FAMILY_LAPRAS
-#define P_FAMILY_LAPRAS                  TRUE
-#undef P_FAMILY_DITTO
-#define P_FAMILY_DITTO                   TRUE
-#undef P_FAMILY_EEVEE
-#define P_FAMILY_EEVEE                   TRUE
-#undef P_FAMILY_PORYGON
-#define P_FAMILY_PORYGON                 TRUE
-#undef P_FAMILY_OMANYTE
-#define P_FAMILY_OMANYTE                 TRUE
-#undef P_FAMILY_KABUTO
-#define P_FAMILY_KABUTO                  TRUE
-#undef P_FAMILY_AERODACTYL
-#define P_FAMILY_AERODACTYL              TRUE
-#undef P_FAMILY_SNORLAX
-#define P_FAMILY_SNORLAX                 TRUE
-#undef P_FAMILY_ARTICUNO
-#define P_FAMILY_ARTICUNO                TRUE
+#undef P_FAMILY_BETAMON_X
+#define P_FAMILY_BETAMON_X            TRUE
+#undef P_FAMILY_BIYOMON
+#define P_FAMILY_BIYOMON                  TRUE
+#undef P_FAMILY_BLKAGUMON_X
+#define P_FAMILY_BLKAGUMON_X                 TRUE
+#undef P_FAMILY_BLKGUILMON
+#define P_FAMILY_BLKGUILMON                  TRUE
+#undef P_FAMILY_BULUCOMON
+#define P_FAMILY_BULUCOMON                 TRUE
+#undef P_FAMILY_BURGERMON
+#define P_FAMILY_BURGERMON                 TRUE
+#undef P_FAMILY_SAMUAGUMON
+#define P_FAMILY_SAMUAGUMON                    TRUE
+#undef P_FAMILY_CANDLEMON
+#define P_FAMILY_CANDLEMON              TRUE
+#undef P_FAMILY_CHIKURIMON
+#define P_FAMILY_CHIKURIMON                  TRUE
+#undef P_FAMILY_TYUTYUMON
+#define P_FAMILY_TYUTYUMON                  TRUE
+#undef P_FAMILY_CHUUMON
+#define P_FAMILY_CHUUMON                  TRUE
+#undef P_FAMILY_HAZYAGUMON
+#define P_FAMILY_HAZYAGUMON                TRUE
+#undef P_FAMILY_CORONAMON
+#define P_FAMILY_CORONAMON                  TRUE
+#undef P_FAMILY_CRABMON
+#define P_FAMILY_CRABMON                   TRUE
+#undef P_FAMILY_CRABMON_X
+#define P_FAMILY_CRABMON_X                   TRUE
+#undef P_FAMILY_DOKUNEMON
+#define P_FAMILY_DOKUNEMON                 TRUE
+#undef P_FAMILY_DONDOKOMON
+#define P_FAMILY_DONDOKOMON                 TRUE
+#undef P_FAMILY_DOTAGUMON
+#define P_FAMILY_DOTAGUMON                  TRUE
+#undef P_FAMILY_DRACMON
+#define P_FAMILY_DRACMON              TRUE
+#undef P_FAMILY_DRACOMON
+#define P_FAMILY_DRACOMON                 TRUE
+#undef P_FAMILY_DRACOMON_X
+#define P_FAMILY_DRACOMON_X                TRUE
 #undef P_FAMILY_ZAPDOS
 #define P_FAMILY_ZAPDOS                  TRUE
-#undef P_FAMILY_MOLTRES
-#define P_FAMILY_MOLTRES                 TRUE
-#undef P_FAMILY_DRATINI
-#define P_FAMILY_DRATINI                 TRUE
-#undef P_FAMILY_MEWTWO
-#define P_FAMILY_MEWTWO                  TRUE
-#undef P_FAMILY_MEW
-#define P_FAMILY_MEW                     TRUE
+#undef P_FAMILY_EKAKIMON
+#define P_FAMILY_EKAKIMON                 TRUE
+#undef P_FAMILY_ELECMON
+#define P_FAMILY_ELECMON                 TRUE
+#undef P_FAMILY_AGUMON_FAKE_EXPERT
+#define P_FAMILY_AGUMON_FAKE_EXPERT                  TRUE
+#undef P_FAMILY_FALCOMON
+#define P_FAMILY_FALCOMON                     TRUE
 
-#undef P_FAMILY_CHIKORITA
-#define P_FAMILY_CHIKORITA               TRUE
-#undef P_FAMILY_CYNDAQUIL
-#define P_FAMILY_CYNDAQUIL               TRUE
-#undef P_FAMILY_TOTODILE
-#define P_FAMILY_TOTODILE                TRUE
-#undef P_FAMILY_SENTRET
-#define P_FAMILY_SENTRET                 TRUE
-#undef P_FAMILY_HOOTHOOT
-#define P_FAMILY_HOOTHOOT                TRUE
-#undef P_FAMILY_LEDYBA
-#define P_FAMILY_LEDYBA                  TRUE
-#undef P_FAMILY_SPINARAK
-#define P_FAMILY_SPINARAK                TRUE
-#undef P_FAMILY_CHINCHOU
-#define P_FAMILY_CHINCHOU                TRUE
-#undef P_FAMILY_TOGEPI
-#define P_FAMILY_TOGEPI                  TRUE
-#undef P_FAMILY_NATU
-#define P_FAMILY_NATU                    TRUE
-#undef P_FAMILY_MAREEP
-#define P_FAMILY_MAREEP                  TRUE
-#undef P_FAMILY_MARILL
-#define P_FAMILY_MARILL                  TRUE
-#undef P_FAMILY_SUDOWOODO
-#define P_FAMILY_SUDOWOODO               TRUE
-#undef P_FAMILY_HOPPIP
-#define P_FAMILY_HOPPIP                  TRUE
-#undef P_FAMILY_AIPOM
-#define P_FAMILY_AIPOM                   TRUE
-#undef P_FAMILY_SUNKERN
-#define P_FAMILY_SUNKERN                 TRUE
-#undef P_FAMILY_YANMA
-#define P_FAMILY_YANMA                   TRUE
-#undef P_FAMILY_WOOPER
-#define P_FAMILY_WOOPER                  TRUE
-#undef P_FAMILY_MURKROW
-#define P_FAMILY_MURKROW                 TRUE
-#undef P_FAMILY_MISDREAVUS
-#define P_FAMILY_MISDREAVUS              TRUE
-#undef P_FAMILY_UNOWN
-#define P_FAMILY_UNOWN                   TRUE
-#undef P_FAMILY_WOBBUFFET
-#define P_FAMILY_WOBBUFFET               TRUE
-#undef P_FAMILY_GIRAFARIG
-#define P_FAMILY_GIRAFARIG               TRUE
+#undef P_FAMILY_FALCOMON_06
+#define P_FAMILY_FALCOMON_06               TRUE
+#undef P_FAMILY_FLORAMON
+#define P_FAMILY_FLORAMON               TRUE
+#undef P_FAMILY_GAMMAMON
+#define P_FAMILY_GAMMAMON                TRUE
+#undef P_FAMILY_GAZIMON
+#define P_FAMILY_GAZIMON                 TRUE
+#undef P_FAMILY_GHOSTMON
+#define P_FAMILY_GHOSTMON                TRUE
+#undef P_FAMILY_GIZUMON
+#define P_FAMILY_GIZUMON                  TRUE
+#undef P_FAMILY_GOMAMON
+#define P_FAMILY_GOMAMON                TRUE
+#undef P_FAMILY_GOTSUMON_X
+#define P_FAMILY_GOTSUMON_X                TRUE
+#undef P_FAMILY_HAGURUMON
+#define P_FAMILY_HAGURUMON                  TRUE
+#undef P_FAMILY_HAWKMON
+#define P_FAMILY_HAWKMON                    TRUE
+#undef P_FAMILY_HYOKOMON
+#define P_FAMILY_HYOKOMON                  TRUE
+#undef P_FAMILY_JAZAMON
+#define P_FAMILY_JAZAMON                  TRUE
+#undef P_FAMILY_JUNKMON
+#define P_FAMILY_JUNKMON               TRUE
+#undef P_FAMILY_KERAMON
+#define P_FAMILY_KERAMON                  TRUE
+#undef P_FAMILY_KOKABUIMON
+#define P_FAMILY_KOKABUIMON                   TRUE
+#undef P_FAMILY_KOKUWAMON
+#define P_FAMILY_KOKUWAMON                 TRUE
+#undef P_FAMILY_KOTEMON
+#define P_FAMILY_KOTEMON                   TRUE
+#undef P_FAMILY_KUDAMON
+#define P_FAMILY_KUDAMON                  TRUE
+#undef P_FAMILY_LALAMON
+#define P_FAMILY_LALAMON                 TRUE
+#undef P_FAMILY_LOOGAMON
+#define P_FAMILY_LOOGAMON              TRUE
+#undef P_FAMILY_LOPMON
+#define P_FAMILY_LOPMON                   TRUE
+#undef P_FAMILY_LOPMONX
+#define P_FAMILY_LOPMONX               TRUE
+#undef P_FAMILY_LUCEMON
+#define P_FAMILY_LUCEMON               TRUE
 #undef P_FAMILY_PINECO
 #define P_FAMILY_PINECO                  TRUE
-#undef P_FAMILY_DUNSPARCE
-#define P_FAMILY_DUNSPARCE               TRUE
-#undef P_FAMILY_GLIGAR
-#define P_FAMILY_GLIGAR                  TRUE
-#undef P_FAMILY_SNUBBULL
-#define P_FAMILY_SNUBBULL                TRUE
-#undef P_FAMILY_QWILFISH
-#define P_FAMILY_QWILFISH                TRUE
-#undef P_FAMILY_SHUCKLE
-#define P_FAMILY_SHUCKLE                 TRUE
-#undef P_FAMILY_HERACROSS
-#define P_FAMILY_HERACROSS               TRUE
-#undef P_FAMILY_SNEASEL
-#define P_FAMILY_SNEASEL                 TRUE
-#undef P_FAMILY_TEDDIURSA
-#define P_FAMILY_TEDDIURSA               TRUE
-#undef P_FAMILY_SLUGMA
-#define P_FAMILY_SLUGMA                  TRUE
-#undef P_FAMILY_SWINUB
-#define P_FAMILY_SWINUB                  TRUE
-#undef P_FAMILY_CORSOLA
-#define P_FAMILY_CORSOLA                 TRUE
-#undef P_FAMILY_REMORAID
-#define P_FAMILY_REMORAID                TRUE
-#undef P_FAMILY_DELIBIRD
-#define P_FAMILY_DELIBIRD                TRUE
-#undef P_FAMILY_MANTINE
-#define P_FAMILY_MANTINE                 TRUE
-#undef P_FAMILY_SKARMORY
-#define P_FAMILY_SKARMORY                TRUE
-#undef P_FAMILY_HOUNDOUR
-#define P_FAMILY_HOUNDOUR                TRUE
-#undef P_FAMILY_PHANPY
-#define P_FAMILY_PHANPY                  TRUE
-#undef P_FAMILY_STANTLER
-#define P_FAMILY_STANTLER                TRUE
-#undef P_FAMILY_SMEARGLE
-#define P_FAMILY_SMEARGLE                TRUE
-#undef P_FAMILY_MILTANK
-#define P_FAMILY_MILTANK                 TRUE
-#undef P_FAMILY_RAIKOU
-#define P_FAMILY_RAIKOU                  TRUE
-#undef P_FAMILY_ENTEI
-#define P_FAMILY_ENTEI                   TRUE
-#undef P_FAMILY_SUICUNE
-#define P_FAMILY_SUICUNE                 TRUE
-#undef P_FAMILY_LARVITAR
-#define P_FAMILY_LARVITAR                TRUE
-#undef P_FAMILY_LUGIA
-#define P_FAMILY_LUGIA                   TRUE
+#undef P_FAMILY_LUXMON
+#define P_FAMILY_LUXMON               TRUE
+#undef P_FAMILY_METABEE
+#define P_FAMILY_METABEE                  TRUE
+#undef P_FAMILY_MODBETAMON
+#define P_FAMILY_MODBETAMON                TRUE
+#undef P_FAMILY_MONMON
+#define P_FAMILY_MONMON                TRUE
+#undef P_FAMILY_MORPHOMON
+#define P_FAMILY_MORPHOMON                 TRUE
+#undef P_FAMILY_MUCHOMON
+#define P_FAMILY_MUCHOMON               TRUE
+#undef P_FAMILY_MUSHROOMON
+#define P_FAMILY_MUSHROOMON                 TRUE
+#undef P_FAMILY_NEEMON
+#define P_FAMILY_NEEMON               TRUE
+#undef P_FAMILY_OTAMAMON_RED
+#define P_FAMILY_OTAMAMON_RED                  TRUE
+#undef P_FAMILY_PALMON
+#define P_FAMILY_PALMON                  TRUE
+#undef P_FAMILY_PATAMON
+#define P_FAMILY_PATAMON                 TRUE
+#undef P_FAMILY_PAWNMON_BLACK
+#define P_FAMILY_PAWNMON_BLACK                TRUE
+#undef P_FAMILY_PENGUINMON
+#define P_FAMILY_PENGUINMON                TRUE
+#undef P_FAMILY_PETITMAMON
+#define P_FAMILY_PETITMAMON                 TRUE
+#undef P_FAMILY_PHASCOMON
+#define P_FAMILY_PHASCOMON                TRUE
+#undef P_FAMILY_PILLOMON
+#define P_FAMILY_PILLOMON                TRUE
+#undef P_FAMILY_PULSEMON
+#define P_FAMILY_PULSEMON                  TRUE
+#undef P_FAMILY_ROKUSHO
+#define P_FAMILY_ROKUSHO                TRUE
+#undef P_FAMILY_RYUDAMON
+#define P_FAMILY_RYUDAMON                TRUE
+#undef P_FAMILY_SHAMANMON
+#define P_FAMILY_SHAMANMON                 TRUE
+#undef P_FAMILY_YUKIAGUMON
+#define P_FAMILY_YUKIAGUMON                  TRUE
+#undef P_FAMILY_YUKIAGUMON_06
+#define P_FAMILY_YUKIAGUMON_06                   TRUE
+#undef P_FAMILY_ICEGOBIMON
+#define P_FAMILY_ICEGOBIMON                 TRUE
+#undef P_FAMILY_SOLARMON
+#define P_FAMILY_SOLARMON                TRUE
+#undef P_FAMILY_SPARROWMON
+#define P_FAMILY_SPARROWMON                   TRUE
 #undef P_FAMILY_HO_OH
 #define P_FAMILY_HO_OH                   TRUE
-#undef P_FAMILY_CELEBI
-#define P_FAMILY_CELEBI                  TRUE
+#undef P_FAMILY_STRABIMON
+#define P_FAMILY_STRABIMON                  TRUE
 
-#undef P_FAMILY_TREECKO
-#define P_FAMILY_TREECKO                 TRUE
-#undef P_FAMILY_TORCHIC
-#define P_FAMILY_TORCHIC                 TRUE
-#undef P_FAMILY_MUDKIP
-#define P_FAMILY_MUDKIP                  TRUE
-#undef P_FAMILY_POOCHYENA
-#define P_FAMILY_POOCHYENA               TRUE
-#undef P_FAMILY_ZIGZAGOON
-#define P_FAMILY_ZIGZAGOON               TRUE
-#undef P_FAMILY_WURMPLE
-#define P_FAMILY_WURMPLE                 TRUE
-#undef P_FAMILY_LOTAD
-#define P_FAMILY_LOTAD                   TRUE
+#undef P_FAMILY_SUNARZAMON
+#define P_FAMILY_SUNARZAMON                 TRUE
+#undef P_FAMILY_SYAKOMON_X
+#define P_FAMILY_SYAKOMON_X                 TRUE
+#undef P_FAMILY_TERRIERMON
+#define P_FAMILY_TERRIERMON                  TRUE
+#undef P_FAMILY_TINKERMON
+#define P_FAMILY_TINKERMON               TRUE
+#undef P_FAMILY_TOYAGUMON
+#define P_FAMILY_TOYAGUMON               TRUE
+#undef P_FAMILY_VEEMON
+#define P_FAMILY_VEEMON                 TRUE
+#undef P_FAMILY_ZUBAMON
+#define P_FAMILY_ZUBAMON                   TRUE
 #undef P_FAMILY_SEEDOT
 #define P_FAMILY_SEEDOT                  TRUE
 #undef P_FAMILY_TAILLOW

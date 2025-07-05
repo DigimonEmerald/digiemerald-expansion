@@ -4,15 +4,15 @@
 SINGLE_BATTLE_TEST("Destiny Bond faints the opposing mon if it fainted from the attack")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_DESTINY_BOND); MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DESTINY_BOND, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-        MESSAGE("Wobbuffet took its attacker down with it!");
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("Lopmonx took its attacker down with it!");
+        MESSAGE("The opposing Lopmonx fainted!");
     }
 }
 
@@ -35,14 +35,14 @@ TO_DO_BATTLE_TEST("Destiny Bond cannot be used in Raids");
 SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon are not affected by Destiny Bond")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(50); };
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); Speed(100); }
+        PLAYER(SPECIES_LOPMONX) { Speed(50); };
+        OPPONENT(SPECIES_LOPMONX) { HP(1); Speed(100); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_DESTINY_BOND); MOVE(player, MOVE_TACKLE, gimmick: GIMMICK_DYNAMAX); }
     } SCENE {
-        MESSAGE("The opposing Wobbuffet used Destiny Bond!");
-        MESSAGE("Wobbuffet used Max Strike!");
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmonx used Destiny Bond!");
+        MESSAGE("Lopmonx used Max Strike!");
+        MESSAGE("The opposing Lopmonx fainted!");
         NONE_OF { HP_BAR(player); }
     }
 }

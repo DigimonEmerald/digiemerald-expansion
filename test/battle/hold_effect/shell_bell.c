@@ -4,8 +4,8 @@
 SINGLE_BATTLE_TEST("Shell Bell restores 1/8 HP of damage dealt")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Level(16); Item(ITEM_SHELL_BELL); HP(10); }
-        OPPONENT(SPECIES_WOBBUFFET) { Level(16); };
+        PLAYER(SPECIES_LOPMONX) { Level(16); Item(ITEM_SHELL_BELL); HP(10); }
+        OPPONENT(SPECIES_LOPMONX) { Level(16); };
     } WHEN {
         TURN { MOVE(player, MOVE_SEISMIC_TOSS); }
     } SCENE {
@@ -19,15 +19,15 @@ SINGLE_BATTLE_TEST("Shell Bell doesn't restore HP for damage dealt by a foreseen
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_FUTURE_SIGHT].effect == EFFECT_FUTURE_SIGHT);
-        PLAYER(SPECIES_WOBBUFFET) { Level(16); Item(ITEM_SHELL_BELL); HP(10); }
-        OPPONENT(SPECIES_WOBBUFFET) { Level(16); };
+        PLAYER(SPECIES_LOPMONX) { Level(16); Item(ITEM_SHELL_BELL); HP(10); }
+        OPPONENT(SPECIES_LOPMONX) { Level(16); };
     } WHEN {
         TURN { MOVE(player, MOVE_FUTURE_SIGHT); }
         TURN { }
         TURN { }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FUTURE_SIGHT, player);
-        MESSAGE("The opposing Wobbuffet took the Future Sight attack!");
+        MESSAGE("The opposing Lopmonx took the Future Sight attack!");
         HP_BAR(opponent);
         NONE_OF {
             HP_BAR(player);
@@ -41,7 +41,7 @@ SINGLE_BATTLE_TEST("Shell Bell does not activate on Future Sight if the original
     s16 healed = 0;
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); Item(ITEM_SHELL_BELL); }
+        PLAYER(SPECIES_LOPMONX) { HP(1); Item(ITEM_SHELL_BELL); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(player, MOVE_FUTURE_SIGHT); }

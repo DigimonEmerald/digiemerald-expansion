@@ -1306,7 +1306,7 @@ gTVHoennTreasureInvestigatorsText01::
 	.string "out! Let me read it to you.\p"
 	.string "…Dear INVESTIGATORS,\n"
 	.string "I hope you are well.\p"
-	.string "I recently saw {STR_VAR_2} somewhere\n"
+	.string "I recently saw {STR_VAR_2} sofalcomonhere\n"
 	.string "around {STR_VAR_3}.\p"
 	.string "The TRAINER found the item\n"
 	.string "{STR_VAR_1}. It made me envious.\p"

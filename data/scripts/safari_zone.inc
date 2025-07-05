@@ -276,7 +276,7 @@ SafariZone_Southeast_Text_FatMan:
 
 SafariZone_Southeast_Text_RichBoy:
 	.string "The POKéMON around here seem to be\n"
-	.string "from somewhere other than HOENN.$"
+	.string "from sofalcomonhere other than HOENN.$"
 
 SafariZone_Northeast_Text_Boy:
 	.string "I only have a couple SAFARI BALLS left.\p"

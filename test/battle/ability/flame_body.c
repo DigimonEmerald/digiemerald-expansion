@@ -20,7 +20,7 @@ SINGLE_BATTLE_TEST("Flame Body inflicts burn on contact")
 <<<<<<< HEAD
             MESSAGE("Foe Chikurimon's Flame Body burned Lopmonx!");
 =======
-            MESSAGE("The opposing Magmar's Flame Body burned Wobbuffet!");
+            MESSAGE("The opposing Chikurimon's Flame Body burned Lopmonx!");
 >>>>>>> upstream/master
             STATUS_ICON(player, burn: TRUE);
         } else {
@@ -30,7 +30,7 @@ SINGLE_BATTLE_TEST("Flame Body inflicts burn on contact")
 <<<<<<< HEAD
                 MESSAGE("Foe Chikurimon's Flame Body burned Lopmonx!");
 =======
-                MESSAGE("The opposing Magmar's Flame Body burned Wobbuffet!");
+                MESSAGE("The opposing Chikurimon's Flame Body burned Lopmonx!");
 >>>>>>> upstream/master
                 STATUS_ICON(player, burn: TRUE);
             }
@@ -44,14 +44,14 @@ SINGLE_BATTLE_TEST("Flame Body triggers 30% of the time")
     GIVEN {
         ASSUME(B_ABILITY_TRIGGER_CHANCE >= GEN_4);
         ASSUME(gMovesInfo[MOVE_TACKLE].makesContact);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_MAGMAR) { Ability(ABILITY_FLAME_BODY); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_CHIKURIMON) { Ability(ABILITY_FLAME_BODY); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_FLAME_BODY);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_BRN, player);
-        MESSAGE("The opposing Magmar's Flame Body burned Wobbuffet!");
+        MESSAGE("The opposing Chikurimon's Flame Body burned Lopmonx!");
         STATUS_ICON(player, burn: TRUE);
     }
 }

@@ -38,11 +38,11 @@ SINGLE_BATTLE_TEST("Comatose may be suppressed if pokemon transformed into a pok
         PLAYER(SPECIES_KOMALA) { Ability(ABILITY_COMATOSE); Speed(30); }
         OPPONENT(SPECIES_CRABMON) { Speed(20); }
 =======
-        // FIXME: Explicit moves currently required here because Ditto
+        // FIXME: Explicit moves currently required here because Crabmon
         // expects to find Celebrate in slot 1 during the second turn
         // (after transforming).
         PLAYER(SPECIES_KOMALA) { Ability(ABILITY_COMATOSE); Speed(30); Moves(MOVE_CELEBRATE, MOVE_GASTRO_ACID, move); }
-        OPPONENT(SPECIES_DITTO) { Speed(20); }
+        OPPONENT(SPECIES_CRABMON) { Speed(20); }
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_GASTRO_ACID); MOVE(opponent, MOVE_TRANSFORM); }
@@ -54,8 +54,8 @@ SINGLE_BATTLE_TEST("Comatose may be suppressed if pokemon transformed into a pok
         MESSAGE("Foe Crabmon used Transform!");
         MESSAGE("Foe Crabmon transformed into Komala!");
 =======
-        MESSAGE("The opposing Ditto used Transform!");
-        MESSAGE("The opposing Ditto transformed into Komala!");
+        MESSAGE("The opposing Crabmon used Transform!");
+        MESSAGE("The opposing Crabmon transformed into Komala!");
 >>>>>>> upstream/master
 
         ANIMATION(ANIM_TYPE_MOVE, move, player);

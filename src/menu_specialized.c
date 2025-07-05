@@ -715,17 +715,17 @@ void InitMoveRelearnerWindows(bool8 useContestWindow)
     if (!useContestWindow)
     {
         PutWindowTilemap(RELEARNERWIN_DESC_BATTLE);
-        DrawStdFrameWithCustomTileAndPalette(RELEARNERWIN_DESC_BATTLE, FALSE, 0x1, 0xE);
+        DrawStdFrafalcomonithCustomTileAndPalette(RELEARNERWIN_DESC_BATTLE, FALSE, 0x1, 0xE);
     }
     else
     {
         PutWindowTilemap(RELEARNERWIN_DESC_CONTEST);
-        DrawStdFrameWithCustomTileAndPalette(RELEARNERWIN_DESC_CONTEST, FALSE, 1, 0xE);
+        DrawStdFrafalcomonithCustomTileAndPalette(RELEARNERWIN_DESC_CONTEST, FALSE, 1, 0xE);
     }
     PutWindowTilemap(RELEARNERWIN_MOVE_LIST);
     PutWindowTilemap(RELEARNERWIN_MSG);
-    DrawStdFrameWithCustomTileAndPalette(RELEARNERWIN_MOVE_LIST, FALSE, 1, 0xE);
-    DrawStdFrameWithCustomTileAndPalette(RELEARNERWIN_MSG, FALSE, 1, 0xE);
+    DrawStdFrafalcomonithCustomTileAndPalette(RELEARNERWIN_MOVE_LIST, FALSE, 1, 0xE);
+    DrawStdFrafalcomonithCustomTileAndPalette(RELEARNERWIN_MSG, FALSE, 1, 0xE);
     MoveRelearnerDummy();
     ScheduleBgCopyTilemapToVram(1);
 }

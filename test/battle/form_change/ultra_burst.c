@@ -68,7 +68,7 @@ SINGLE_BATTLE_TEST("Ultra Burst affects turn order")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
     } THEN {
         ASSUME(player->speed == 263);

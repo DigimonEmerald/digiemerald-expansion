@@ -216,8 +216,8 @@ static void CB2_SaveFailedScreen(void)
         LoadPalette(sSaveFailedClockPal, OBJ_PLTT_ID(0), PLTT_SIZE_4BPP);
         LoadPalette(gTextWindowFrame1_Pal, BG_PLTT_ID(14), PLTT_SIZE_4BPP);
         LoadPalette(gStandardMenuPalette, BG_PLTT_ID(15), PLTT_SIZE_4BPP);
-        DrawStdFrameWithCustomTileAndPalette(sWindowIds[TEXT_WIN_ID], FALSE, 0x214, 0xE);
-        DrawStdFrameWithCustomTileAndPalette(sWindowIds[CLOCK_WIN_ID], FALSE, 0x214, 0xE);
+        DrawStdFrafalcomonithCustomTileAndPalette(sWindowIds[TEXT_WIN_ID], FALSE, 0x214, 0xE);
+        DrawStdFrafalcomonithCustomTileAndPalette(sWindowIds[CLOCK_WIN_ID], FALSE, 0x214, 0xE);
         FillWindowPixelBuffer(sWindowIds[CLOCK_WIN_ID], PIXEL_FILL(1)); // backwards?
         FillWindowPixelBuffer(sWindowIds[TEXT_WIN_ID], PIXEL_FILL(1));
         CopyWindowToVram(sWindowIds[CLOCK_WIN_ID], COPYWIN_GFX); // again?
@@ -435,7 +435,7 @@ void CB2_FlashNotDetectedScreen(void)
     LoadPalette(gTextWindowFrame1_Pal, 0xE0, 0x20);
     LoadPalette(gStandardMenuPalette, 0xF0, 0x20);
     InitWindows(textWin);
-    DrawStdFrameWithCustomTileAndPalette(0, TRUE, 0x214, 0xE);
+    DrawStdFrafalcomonithCustomTileAndPalette(0, TRUE, 0x214, 0xE);
     static const u8 saveFailedMessage[] =_(
         "{COLOR RED}ERROR! {COLOR DARK_GRAY}Flash memory not detected!\n"
         "\n"

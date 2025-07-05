@@ -70,7 +70,7 @@ SINGLE_BATTLE_TEST("Tablets of Ruin's message displays correctly after all battl
 <<<<<<< HEAD
         MESSAGE("Go! Lopmonx!");
 =======
-        SEND_IN_MESSAGE("Wobbuffet");
+        SEND_IN_MESSAGE("Lopmonx");
 >>>>>>> upstream/master
         MESSAGE("2 sent out Wo-Chien!");
         ABILITY_POPUP(opponent, ABILITY_TABLETS_OF_RUIN);

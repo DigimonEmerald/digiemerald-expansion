@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Full Restore restores a battler's HP and cures any primary s
 <<<<<<< HEAD
         MESSAGE("Lopmonx had its HP restored!");
 =======
-        MESSAGE("Wobbuffet had its HP restored.");
+        MESSAGE("Lopmonx had its HP restored.");
 >>>>>>> upstream/master
         if (status != STATUS1_NONE) {
             MESSAGE("Lopmonx had its status healed!"); // The message is not printed if status wasn't healed.
@@ -88,8 +88,8 @@ SINGLE_BATTLE_TEST("Full Restore heals a battler from any primary status")
         NOT MESSAGE("Lopmonx had its HP restored!"); // The message is not printed if mon has max HP.
         MESSAGE("Lopmonx had its status healed!");
 =======
-        NOT MESSAGE("Wobbuffet had its HP restored."); // The message is not printed if mon has max HP.
-        MESSAGE("Wobbuffet had its status healed!");
+        NOT MESSAGE("Lopmonx had its HP restored."); // The message is not printed if mon has max HP.
+        MESSAGE("Lopmonx had its status healed!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->status1, STATUS1_NONE);
@@ -140,8 +140,8 @@ SINGLE_BATTLE_TEST("Full Restore restores a battler's HP and cures confusion")
         MESSAGE("Lopmonx had its HP restored!");
         NONE_OF { MESSAGE("Lopmonx is confused!"); }
 =======
-        MESSAGE("Wobbuffet had its HP restored.");
-        NONE_OF { MESSAGE("Wobbuffet is confused!"); }
+        MESSAGE("Lopmonx had its HP restored.");
+        NONE_OF { MESSAGE("Lopmonx is confused!"); }
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->hp, player->maxHP);
@@ -163,9 +163,9 @@ SINGLE_BATTLE_TEST("Full Restore resets Toxic Counter")
         MESSAGE("Lopmonx had its HP restored!");
         MESSAGE("Lopmonx had its status healed!");
 =======
-        MESSAGE("The opposing Wobbuffet used Toxic!");
-        MESSAGE("Wobbuffet had its HP restored.");
-        MESSAGE("Wobbuffet had its status healed!");
+        MESSAGE("The opposing Lopmonx used Toxic!");
+        MESSAGE("Lopmonx had its HP restored.");
+        MESSAGE("Lopmonx had its status healed!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->status1, STATUS1_NONE);

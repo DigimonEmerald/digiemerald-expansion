@@ -10,9 +10,9 @@ SINGLE_BATTLE_TEST("Battle Message: Send-in message depends on foe HP")
     PARAMETRIZE { hp = 39; }
     PARAMETRIZE { hp = 9; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(hp); MaxHP(100); }
+        OPPONENT(SPECIES_LOPMONX) { HP(hp); MaxHP(100); }
     } WHEN {
         TURN { SWITCH(player, 1);  }
     } SCENE {
@@ -31,8 +31,8 @@ TO_DO_BATTLE_TEST("Battle Message: Switch-out message changes based on condition
 /*{
     GIVEN {
         PLAYER(SPECIES_WYNAUT);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { SWITCH(player, 1);  }
     } SCENE {

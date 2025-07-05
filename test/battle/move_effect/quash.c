@@ -50,7 +50,7 @@ DOUBLE_BATTLE_TEST("Quash calculates correct turn order if only one pokemon is l
         PLAYER(SPECIES_GRENINJA) { Speed(120); }
         PLAYER(SPECIES_REGIROCK) { Speed(100); }
         OPPONENT(SPECIES_LEAFMON) { Speed(10); }
-        OPPONENT(SPECIES_DRAGONITE) { Speed(60); }
+        OPPONENT(SPECIES_ESPIMON) { Speed(60); }
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_QUASH, target: playerRight);
@@ -84,9 +84,9 @@ DOUBLE_BATTLE_TEST("Quash-affected targets move from fastest to slowest (Gen 8+)
     PARAMETRIZE { speedLeft = 50; speedRight = 60; }
     GIVEN {
         PLAYER(SPECIES_VOLBEAT) { Speed(10); Ability(ABILITY_PRANKSTER); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(70); }
-        OPPONENT(SPECIES_TORCHIC) { Speed(speedLeft); }
-        OPPONENT(SPECIES_TREECKO) { Speed(speedRight); }
+        PLAYER(SPECIES_LOPMONX) { Speed(70); }
+        OPPONENT(SPECIES_SYAKOMON_X) { Speed(speedLeft); }
+        OPPONENT(SPECIES_SUNARZAMON) { Speed(speedRight); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_QUASH, target: opponentRight);
                MOVE(playerRight, MOVE_QUASH, target: opponentLeft);
@@ -116,9 +116,9 @@ DOUBLE_BATTLE_TEST("Quash-affected mon that acted early via After You is not aff
         ASSUME(gMovesInfo[MOVE_TAILWIND].effect == EFFECT_TAILWIND);
         ASSUME(gMovesInfo[MOVE_AFTER_YOU].effect == EFFECT_AFTER_YOU);
         PLAYER(SPECIES_VOLBEAT) { Speed(20); Ability(ABILITY_PRANKSTER); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(30); }
-        OPPONENT(SPECIES_TORCHIC) { Speed(10); }
-        OPPONENT(SPECIES_TREECKO) { Speed(40); }
+        PLAYER(SPECIES_LOPMONX) { Speed(30); }
+        OPPONENT(SPECIES_SYAKOMON_X) { Speed(10); }
+        OPPONENT(SPECIES_SUNARZAMON) { Speed(40); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_QUASH, target: opponentLeft);
                MOVE(opponentRight, MOVE_AFTER_YOU, target: opponentLeft);

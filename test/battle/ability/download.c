@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Download raises Attack if player has lower Def than Sp. Def"
 <<<<<<< HEAD
             MESSAGE("Foe Dokunemon's Download raised its Attack!");
 =======
-            MESSAGE("The opposing Porygon's Download raised its Attack!");
+            MESSAGE("The opposing Dokunemon's Download raised its Attack!");
 >>>>>>> upstream/master
         }
         HP_BAR(player, captureDamage: &results[i].damage);
@@ -77,13 +77,13 @@ SINGLE_BATTLE_TEST("Download doesn't activate if target hasn't been sent out yet
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, player);
         // Everyone faints.
 
-        SEND_IN_MESSAGE("Porygon");
+        SEND_IN_MESSAGE("Dokunemon");
         NONE_OF {
             ABILITY_POPUP(player, ABILITY_DOWNLOAD);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
             MESSAGE("Dokunemon's Download raised its Attack!");
         }
-        MESSAGE("2 sent out Porygon2!");
+        MESSAGE("2 sent out Renamon_x!");
 
         if (ability == ABILITY_DOWNLOAD)
         {
@@ -92,7 +92,7 @@ SINGLE_BATTLE_TEST("Download doesn't activate if target hasn't been sent out yet
 <<<<<<< HEAD
             MESSAGE("Foe Renamon_x's Download raised its Sp. Atk!");
 =======
-            MESSAGE("The opposing Porygon2's Download raised its Sp. Atk!");
+            MESSAGE("The opposing Renamon_x's Download raised its Sp. Atk!");
 >>>>>>> upstream/master
         }
 
@@ -109,10 +109,10 @@ DOUBLE_BATTLE_TEST("Download raises Sp.Attack if enemies have lower total Sp. De
     PARAMETRIZE { ability = ABILITY_TRACE; }
     PARAMETRIZE { ability = ABILITY_DOWNLOAD; }
     GIVEN {
-        PLAYER(SPECIES_PORYGON) { Ability(ability); SpAttack(100); }
+        PLAYER(SPECIES_DOKUNEMON) { Ability(ability); SpAttack(100); }
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET) { Defense(200); SpDefense(100); }
-        OPPONENT(SPECIES_WOBBUFFET) { Defense(100); SpDefense(150); }
+        OPPONENT(SPECIES_LOPMONX) { Defense(200); SpDefense(100); }
+        OPPONENT(SPECIES_LOPMONX) { Defense(100); SpDefense(150); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TRI_ATTACK, target: opponentLeft ); }
     } SCENE {
@@ -120,7 +120,7 @@ DOUBLE_BATTLE_TEST("Download raises Sp.Attack if enemies have lower total Sp. De
         {
             ABILITY_POPUP(playerLeft, ABILITY_DOWNLOAD);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-            MESSAGE("Porygon's Download raised its Sp. Atk!");
+            MESSAGE("Dokunemon's Download raised its Sp. Atk!");
         }
         HP_BAR(opponentLeft, captureDamage: &results[i].damage);
     } FINALLY {

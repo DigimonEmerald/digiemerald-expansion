@@ -261,7 +261,7 @@ Route118_Text_StevenQuestions:
 	.string "what do you think?\p"
 	.string "Of course, it's not any of my business.\p"
 	.string "It would be nice if we were to meet\n"
-	.string "again somewhere.$"
+	.string "again sofalcomonhere.$"
 
 Route118_Text_YouAgreeGoodRodIsGood:
 	.string "Hmm!\n"

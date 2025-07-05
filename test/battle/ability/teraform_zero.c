@@ -5,7 +5,7 @@ DOUBLE_BATTLE_TEST("Teraform Zero clears weather and terrain upon activation")
 {
     GIVEN {
         PLAYER(SPECIES_TERAPAGOS_TERASTAL);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_KYOGRE) {Ability(ABILITY_DRIZZLE); }
         OPPONENT(SPECIES_TAPU_KOKO) {Ability(ABILITY_ELECTRIC_SURGE); }
     } WHEN {
@@ -21,7 +21,7 @@ DOUBLE_BATTLE_TEST("Teraform Zero can be supressed")
 {
     GIVEN {
         PLAYER(SPECIES_TERAPAGOS_TERASTAL);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_ARMADILMON) {Ability(ABILITY_NEUTRALIZING_GAS); }
         OPPONENT(SPECIES_KYOGRE) {Ability(ABILITY_DRIZZLE); }
         OPPONENT(SPECIES_TAPU_KOKO) {Ability(ABILITY_ELECTRIC_SURGE); }
@@ -59,11 +59,11 @@ SINGLE_BATTLE_TEST("Teraform Zero cannot be swapped")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SKILL_SWAP].effect == EFFECT_SKILL_SWAP);
         PLAYER(SPECIES_TERAPAGOS);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_SKILL_SWAP); }
     } SCENE {
-        MESSAGE("The opposing Wobbuffet used Skill Swap!");
+        MESSAGE("The opposing Lopmonx used Skill Swap!");
         MESSAGE("But it failed!");
     }
 }
@@ -73,11 +73,11 @@ SINGLE_BATTLE_TEST("Teraform Zero cannot be copied")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_ROLE_PLAY].effect == EFFECT_ROLE_PLAY);
         PLAYER(SPECIES_TERAPAGOS);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_ROLE_PLAY); }
     } SCENE {
-        MESSAGE("The opposing Wobbuffet used Role Play!");
+        MESSAGE("The opposing Lopmonx used Role Play!");
         MESSAGE("But it failed!");
     }
 }

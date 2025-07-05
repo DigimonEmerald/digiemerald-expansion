@@ -144,21 +144,21 @@ SINGLE_BATTLE_TEST("Parental Bond has no affect on multi hit moves and they stil
         ASSUME(B_MULTI_HIT_CHANCE >= GEN_5);
         ASSUME(gMovesInfo[MOVE_COMET_PUNCH].category != DAMAGE_CATEGORY_STATUS);
         ASSUME(gMovesInfo[MOVE_COMET_PUNCH].effect == EFFECT_MULTI_HIT);
-        PLAYER(SPECIES_KANGASKHAN) { Item(ITEM_KANGASKHANITE); }
+        PLAYER(SPECIES_BETAMON_X) { Item(ITEM_BETAMON_XITE); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_COMET_PUNCH, gimmick: GIMMICK_MEGA); }
     } SCENE {
-        MESSAGE("Kangaskhan's Kangaskhanite is reacting to 1's Mega Ring!");
+        MESSAGE("betamon_x's betamon_xite is reacting to 1's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, player);
-        MESSAGE("Kangaskhan has Mega Evolved into Mega Kangaskhan!");
+        MESSAGE("betamon_x has Mega Evolved into Mega betamon_x!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_COMET_PUNCH, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_COMET_PUNCH, player);
         MESSAGE("The Pokémon was hit 2 time(s)!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
     }
     THEN {
-        EXPECT_EQ(player->species, SPECIES_KANGASKHAN_MEGA);
+        EXPECT_EQ(player->species, SPECIES_betamon_x_MEGA);
     }
 }
 
@@ -170,14 +170,14 @@ SINGLE_BATTLE_TEST("Parental Bond has no affect on multi hit moves and they stil
         ASSUME(B_MULTI_HIT_CHANCE >= GEN_5);
         ASSUME(gMovesInfo[MOVE_COMET_PUNCH].category != DAMAGE_CATEGORY_STATUS);
         ASSUME(gMovesInfo[MOVE_COMET_PUNCH].effect == EFFECT_MULTI_HIT);
-        PLAYER(SPECIES_KANGASKHAN) { Item(ITEM_KANGASKHANITE); }
+        PLAYER(SPECIES_BETAMON_X) { Item(ITEM_BETAMON_XITE); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_COMET_PUNCH, gimmick: GIMMICK_MEGA); }
     } SCENE {
-        MESSAGE("Kangaskhan's Kangaskhanite is reacting to 1's Mega Ring!");
+        MESSAGE("betamon_x's betamon_xite is reacting to 1's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, player);
-        MESSAGE("Kangaskhan has Mega Evolved into Mega Kangaskhan!");
+        MESSAGE("betamon_x has Mega Evolved into Mega betamon_x!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_COMET_PUNCH, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_COMET_PUNCH, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_COMET_PUNCH, player);
@@ -185,7 +185,7 @@ SINGLE_BATTLE_TEST("Parental Bond has no affect on multi hit moves and they stil
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
     }
     THEN {
-        EXPECT_EQ(player->species, SPECIES_KANGASKHAN_MEGA);
+        EXPECT_EQ(player->species, SPECIES_betamon_x_MEGA);
     }
 }
 
@@ -197,14 +197,14 @@ SINGLE_BATTLE_TEST("Parental Bond has no affect on multi hit moves and they stil
         ASSUME(B_MULTI_HIT_CHANCE >= GEN_5);
         ASSUME(gMovesInfo[MOVE_COMET_PUNCH].category != DAMAGE_CATEGORY_STATUS);
         ASSUME(gMovesInfo[MOVE_COMET_PUNCH].effect == EFFECT_MULTI_HIT);
-        PLAYER(SPECIES_KANGASKHAN) { Item(ITEM_KANGASKHANITE); }
+        PLAYER(SPECIES_BETAMON_X) { Item(ITEM_BETAMON_XITE); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_COMET_PUNCH, gimmick: GIMMICK_MEGA); }
     } SCENE {
-        MESSAGE("Kangaskhan's Kangaskhanite is reacting to 1's Mega Ring!");
+        MESSAGE("betamon_x's betamon_xite is reacting to 1's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, player);
-        MESSAGE("Kangaskhan has Mega Evolved into Mega Kangaskhan!");
+        MESSAGE("betamon_x has Mega Evolved into Mega betamon_x!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_COMET_PUNCH, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_COMET_PUNCH, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_COMET_PUNCH, player);
@@ -213,7 +213,7 @@ SINGLE_BATTLE_TEST("Parental Bond has no affect on multi hit moves and they stil
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
     }
     THEN {
-        EXPECT_EQ(player->species, SPECIES_KANGASKHAN_MEGA);
+        EXPECT_EQ(player->species, SPECIES_BETAMON_X_MEGA);
     }
 }
 
@@ -225,7 +225,7 @@ SINGLE_BATTLE_TEST("Parental Bond has no affect on multi hit moves and they stil
         ASSUME(B_MULTI_HIT_CHANCE >= GEN_5);
         ASSUME(gMovesInfo[MOVE_COMET_PUNCH].category != DAMAGE_CATEGORY_STATUS);
         ASSUME(gMovesInfo[MOVE_COMET_PUNCH].effect == EFFECT_MULTI_HIT);
-        PLAYER(SPECIES_KANGASKHAN) { Item(ITEM_KANGASKHANITE); }
+        PLAYER(SPECIES_BETAMON_X) { Item(ITEM_BETAMON_XITE); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_COMET_PUNCH, gimmick: GIMMICK_MEGA); }
@@ -240,7 +240,7 @@ SINGLE_BATTLE_TEST("Parental Bond has no affect on multi hit moves and they stil
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
     }
     THEN {
-        EXPECT_EQ(player->species, SPECIES_KANGASKHAN_MEGA);
+        EXPECT_EQ(player->species, SPECIES_BETAMON_X_MEGA);
     }
 }
 
@@ -250,21 +250,21 @@ SINGLE_BATTLE_TEST("Parental Bond Smack Down effect triggers after 2nd hit")
         ASSUME(gMovesInfo[MOVE_SMACK_DOWN].category != DAMAGE_CATEGORY_STATUS);
         ASSUME(gMovesInfo[MOVE_SMACK_DOWN].strikeCount < 2);
         ASSUME(MoveHasAdditionalEffect(MOVE_SMACK_DOWN, MOVE_EFFECT_SMACK_DOWN));
-        PLAYER(SPECIES_KANGASKHAN) { Item(ITEM_KANGASKHANITE); }
-        OPPONENT(SPECIES_SKARMORY);
+        PLAYER(SPECIES_BETAMON_X) { Item(ITEM_BETAMON_XITE); }
+        OPPONENT(SPECIES_PHASCOMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SMACK_DOWN, gimmick: GIMMICK_MEGA); }
     } SCENE {
-        MESSAGE("Kangaskhan's Kangaskhanite is reacting to 1's Mega Ring!");
+        MESSAGE("betamon_x's betamon_xite is reacting to 1's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, player);
-        MESSAGE("Kangaskhan has Mega Evolved into Mega Kangaskhan!");
+        MESSAGE("betamon_x has Mega Evolved into Mega betamon_x!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SMACK_DOWN, player);
         HP_BAR(opponent);
-        NOT MESSAGE("The opposing Skarmory fell straight down!");
+        NOT MESSAGE("The opposing Phascomon fell straight down!");
         HP_BAR(opponent);
-        MESSAGE("The opposing Skarmory fell straight down!");
+        MESSAGE("The opposing Phascomon fell straight down!");
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_KANGASKHAN_MEGA);
+        EXPECT_EQ(player->species, SPECIES_betamon_x_MEGA);
     }
 }
 
@@ -273,12 +273,12 @@ SINGLE_BATTLE_TEST("Parental Bond Snore strikes twice while asleep")
     s16 damage[2];
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SNORE].effect == EFFECT_SNORE);
-        PLAYER(SPECIES_KANGASKHAN_MEGA) { Status1(STATUS1_SLEEP); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_BETAMON_X_MEGA) { Status1(STATUS1_SLEEP); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SNORE); }
     } SCENE {
-        MESSAGE("Kangaskhan is fast asleep.");
+        MESSAGE("betamon_x is fast asleep.");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SNORE, player);
         HP_BAR(opponent, captureDamage: &damage[0]);
         HP_BAR(opponent, captureDamage: &damage[1]);
@@ -295,8 +295,8 @@ SINGLE_BATTLE_TEST("Parental Bond only triggers Dragon Tail's target switch out 
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_DRAGON_TAIL].effect == EFFECT_HIT_SWITCH_TARGET);
-        PLAYER(SPECIES_KANGASKHAN) { Item(ITEM_KANGASKHANITE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_BETAMON_X) { Item(ITEM_BETAMON_XITE); }
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_DRAGON_TAIL, gimmick: GIMMICK_MEGA); }
@@ -307,7 +307,7 @@ SINGLE_BATTLE_TEST("Parental Bond only triggers Dragon Tail's target switch out 
         MESSAGE("The opposing Wynaut was dragged out!");
     }
     THEN {
-        EXPECT_EQ(player->species, SPECIES_KANGASKHAN_MEGA);
+        EXPECT_EQ(player->species, SPECIES_BETAMON_X_MEGA);
     }
 }
 

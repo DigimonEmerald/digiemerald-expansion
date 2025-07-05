@@ -35,7 +35,7 @@ SINGLE_BATTLE_TEST("Safety Goggles blocks damage from Hail")
 <<<<<<< HEAD
         NOT MESSAGE("Foe Lopmonx is pelted by HAIL!");
 =======
-        NOT MESSAGE("The opposing Wobbuffet is buffeted by the hail!");
+        NOT MESSAGE("The opposing Lopmonx is buffeted by the hail!");
 >>>>>>> upstream/master
     }
 }
@@ -51,7 +51,7 @@ SINGLE_BATTLE_TEST("Safety Goggles blocks damage from Sandstorm")
 <<<<<<< HEAD
         NOT MESSAGE("Foe Lopmonx is buffeted by the sandstorm!");
 =======
-        NOT MESSAGE("The opposing Wobbuffet is buffeted by the sandstorm!");
+        NOT MESSAGE("The opposing Lopmonx is buffeted by the sandstorm!");
 >>>>>>> upstream/master
     }
 }

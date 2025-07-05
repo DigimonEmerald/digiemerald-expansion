@@ -72,7 +72,7 @@ SINGLE_BATTLE_TEST("Terrain started after the one which started the battle lasts
         OPPONENT(SPECIES_LOPMONX);
 =======
         PLAYER(SPECIES_TAPU_BULU) { Ability(viaMove == TRUE ? ABILITY_TELEPATHY : ABILITY_GRASSY_SURGE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master:test/battle/starting_status/terrain.c
     } WHEN {
         // More than 5 turns
@@ -114,13 +114,13 @@ SINGLE_BATTLE_TEST("Terrain started after the one which started the battle lasts
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
         MESSAGE("Tapu Bulu used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 
         MESSAGE("Tapu Bulu used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 
         MESSAGE("Tapu Bulu used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master:test/battle/starting_status/terrain.c
 
         MESSAGE("The grass disappeared from the battlefield.");

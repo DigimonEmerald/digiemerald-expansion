@@ -5,7 +5,7 @@ SINGLE_BATTLE_TEST("Lightning Rod absorbs Electric-type moves and increases the 
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_THUNDERBOLT].type == TYPE_ELECTRIC);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PICHIMON) { Ability(ABILITY_LIGHTNING_ROD); }
     } WHEN {
         TURN { MOVE(player, MOVE_THUNDERBOLT); MOVE(opponent, MOVE_CELEBRATE); }
@@ -35,10 +35,10 @@ DOUBLE_BATTLE_TEST("Lightning Rod forces single-target Electric-type moves to ta
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_THUNDERBOLT].type == TYPE_ELECTRIC);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PICHIMON) { Ability(ABILITY_LIGHTNING_ROD); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_THUNDERBOLT, target: opponentRight);
@@ -76,14 +76,14 @@ DOUBLE_BATTLE_TEST("Lightning Rod redirects an ally's attack")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_THUNDERBOLT].type == TYPE_ELECTRIC);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PICHIMON) { Ability(ABILITY_LIGHTNING_ROD); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_THUNDERBOLT, target: playerLeft); }
     } SCENE {
-        MESSAGE("The opposing Wobbuffet used Thunderbolt!");
+        MESSAGE("The opposing Lopmonx used Thunderbolt!");
         if (B_REDIRECT_ABILITY_ALLIES >= GEN_5)
         {
             NOT HP_BAR(playerLeft);

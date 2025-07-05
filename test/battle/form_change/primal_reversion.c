@@ -163,9 +163,9 @@ SINGLE_BATTLE_TEST("Primal reversion happens after a mon is sent out after a mon
         OPPONENT(SPECIES_LOPMONX);
 =======
         ASSUME(!IS_MOVE_STATUS(MOVE_TACKLE));
-        PLAYER(SPECIES_WOBBUFFET) {HP(1); }
+        PLAYER(SPECIES_LOPMONX) {HP(1); }
         PLAYER(SPECIES_GROUDON) { Item(ITEM_RED_ORB); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); SEND_OUT(player, 1); }
@@ -222,7 +222,7 @@ SINGLE_BATTLE_TEST("Primal reversion happens after a switch-in caused by Eject B
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, player);
         MESSAGE("Gekomon's Primal Reversion! It reverted to its primal form!");
 =======
-        MESSAGE("Wobbuffet is switched out with the Eject Button!");
+        MESSAGE("Lopmonx is switched out with the Eject Button!");
         SEND_IN_MESSAGE("Groudon");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, player);
         MESSAGE("Groudon's Primal Reversion! It reverted to its primal state!");
@@ -249,7 +249,7 @@ SINGLE_BATTLE_TEST("Primal reversion happens after a switch-in caused by Red Car
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, player);
         MESSAGE("Gekomon's Primal Reversion! It reverted to its primal form!");
 =======
-        MESSAGE("The opposing Wobbuffet held up its Red Card against Wobbuffet!");
+        MESSAGE("The opposing Lopmonx held up its Red Card against Lopmonx!");
         MESSAGE("Groudon was dragged out!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, player);
         MESSAGE("Groudon's Primal Reversion! It reverted to its primal state!");
@@ -318,7 +318,7 @@ DOUBLE_BATTLE_TEST("Primal reversion triggers for multiple battlers if multiple 
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_EARTHQUAKE].target == MOVE_TARGET_FOES_AND_ALLY);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_DATIRIMON) { HP(1); }
         PLAYER(SPECIES_RESHIRAM);
         OPPONENT(SPECIES_DATIRIMON) { HP(1); }
@@ -342,7 +342,7 @@ DOUBLE_BATTLE_TEST("Primal reversion triggers for all battlers if multiple faint
     GIVEN {
         ASSUME(gMovesInfo[MOVE_EXPLOSION].effect == EFFECT_EXPLOSION);
         ASSUME(gMovesInfo[MOVE_EXPLOSION].target == MOVE_TARGET_FOES_AND_ALLY);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_DATIRIMON) { HP(1); }
         PLAYER(SPECIES_KYOGRE) { Item(ITEM_BLUE_ORB); }
         PLAYER(SPECIES_GROUDON) { Item(ITEM_RED_ORB); }
@@ -373,7 +373,7 @@ DOUBLE_BATTLE_TEST("Primal reversion and other switch-in effects trigger for all
         ASSUME(gMovesInfo[MOVE_STICKY_WEB].effect == EFFECT_STICKY_WEB);
         ASSUME(gMovesInfo[MOVE_SPIKES].effect == EFFECT_SPIKES);
         ASSUME(gMovesInfo[MOVE_TOXIC_SPIKES].effect == EFFECT_TOXIC_SPIKES);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_DATIRIMON) { HP(1); }
         PLAYER(SPECIES_SCRAFTY) { Ability(ABILITY_INTIMIDATE); }
         PLAYER(SPECIES_RESHIRAM);

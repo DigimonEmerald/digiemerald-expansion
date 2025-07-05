@@ -49,8 +49,8 @@ SINGLE_BATTLE_TEST("Sap Sipper does not increase Attack if already maxed")
         PLAYER(SPECIES_JAZAMON) { Ability(ABILITY_SAP_SIPPER); }
         OPPONENT(SPECIES_LOPMONX) { Speed(1); }
 =======
-        PLAYER(SPECIES_MARILL) { Ability(ABILITY_SAP_SIPPER); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_JAZAMON) { Ability(ABILITY_SAP_SIPPER); }
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_BELLY_DRUM); MOVE(opponent, MOVE_VINE_WHIP); }

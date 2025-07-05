@@ -4419,7 +4419,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_SUNNY_DAY},
-        .battleAnimScript = gBattleAnimMove_FlameWheel,
+        .battleAnimScript = gBattleAnimMove_Flafalcomonheel,
     },
 
     [MOVE_SNORE] =

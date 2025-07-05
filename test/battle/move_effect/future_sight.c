@@ -119,8 +119,8 @@ SINGLE_BATTLE_TEST("Future Sight is affected by type effectiveness")
         MESSAGE("Foe Pomumon took the Future Sight attack!");
         MESSAGE("It doesn't affect Foe Pomumon…");
 =======
-        MESSAGE("The opposing Houndoom took the Future Sight attack!");
-        MESSAGE("It doesn't affect the opposing Houndoom…");
+        MESSAGE("The opposing Pomumon took the Future Sight attack!");
+        MESSAGE("It doesn't affect the opposing Pomumon…");
 >>>>>>> upstream/master
         NOT HP_BAR(opponent);
     }
@@ -147,7 +147,7 @@ SINGLE_BATTLE_TEST("Future Sight will miss timing if target faints before it is 
         MESSAGE("2 sent out Exveemon!");
         NOT MESSAGE("Foe Exveemon took the Future Sight attack!");
 =======
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmonx fainted!");
         MESSAGE("2 sent out Wynaut!");
         NOT MESSAGE("The opposing Wynaut took the Future Sight attack!");
 >>>>>>> upstream/master
@@ -174,7 +174,7 @@ SINGLE_BATTLE_TEST("Future Sight will miss timing if target faints by residual d
         MESSAGE("2 sent out Exveemon!");
         NOT MESSAGE("Foe Exveemon took the Future Sight attack!");
 =======
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmonx fainted!");
         MESSAGE("2 sent out Wynaut!");
         NOT MESSAGE("The opposing Wynaut took the Future Sight attack!");
 >>>>>>> upstream/master
@@ -189,7 +189,7 @@ SINGLE_BATTLE_TEST("Future Sight breaks Focus Sash and doesn't make the holder e
 =======
         ASSUME(gMovesInfo[MOVE_PSYCHIC].power > 0);
         ASSUME(gItemsInfo[ITEM_FOCUS_SASH].holdEffect == HOLD_EFFECT_FOCUS_SASH);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
 >>>>>>> upstream/master
         OPPONENT(SPECIES_KETOMON) { Level(1); Item(ITEM_FOCUS_SASH); }
     } WHEN {

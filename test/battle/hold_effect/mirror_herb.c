@@ -64,7 +64,7 @@ DOUBLE_BATTLE_TEST("Mirror Herb does not trigger for Ally's Soul Heart's stat ra
         MESSAGE("Foe Lopmonx fainted!");
 =======
         MESSAGE("Wynaut used Tackle!");
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmonx fainted!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
         NONE_OF {
@@ -83,7 +83,7 @@ SINGLE_BATTLE_TEST("Mirror Herb copies the boost gained by an ability")
 {
     GIVEN {
         PLAYER(SPECIES_ZACIAN) { Ability(ABILITY_INTREPID_SWORD); }
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_MIRROR_HERB); }
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_MIRROR_HERB); }
     } WHEN {
         TURN { }
     } SCENE {

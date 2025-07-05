@@ -15,8 +15,8 @@ SINGLE_BATTLE_TEST("Double Team raises Evasion by 1 stage")
         OPPONENT(SPECIES_LOPMONX);
 =======
         ASSUME(gMovesInfo[MOVE_SCRATCH].accuracy == 100);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_DOUBLE_TEAM); MOVE(opponent, MOVE_SCRATCH); }

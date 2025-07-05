@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Aegislash reverts to Shield Form upon fainting")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Gust!");
 =======
-        MESSAGE("The opposing Wobbuffet used Gust!");
+        MESSAGE("The opposing Lopmonx used Gust!");
 >>>>>>> upstream/master
         MESSAGE("Aegislash fainted!");
     } THEN {

@@ -36,7 +36,7 @@ BattleFrontier_ExchangeServiceCorner_EventScript_TryGiveDecor::
 	adddecoration VAR_0x8009
 	special UpdateBattlePointsWindow
 	playse SE_SHOP
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_WellSencrabmonPC, MSGBOX_DEFAULT
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_WellSendItToPC, MSGBOX_DEFAULT
 	goto_if_eq VAR_TEMP_2, EXCHANGE_CORNER_DECOR1_CLERK, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor2
 	end
@@ -565,7 +565,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmLeftovers:
 	.string "You've chosen the LEFTOVERS.\n"
 	.string "Is that correct?$"
 
-BattleFrontier_ExchangeServiceCorner_Text_WellSencrabmonPC:
+BattleFrontier_ExchangeServiceCorner_Text_WellSendItToPC:
 	.string "Thank you!\n"
 	.string "We'll send it to your PC at home.$"
 

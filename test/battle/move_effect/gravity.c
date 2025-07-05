@@ -10,7 +10,7 @@ DOUBLE_BATTLE_TEST("Gravity cancels fly and sky drop if they are in the air")
 {
     u8 visibility;
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(100); }
+        PLAYER(SPECIES_LOPMONX) { Speed(100); }
         PLAYER(SPECIES_WYNAUT) { Speed(90); }
         OPPONENT(SPECIES_KETOMON) { Speed(50); }
         OPPONENT(SPECIES_ROOKIDEE) { Speed(45); }
@@ -25,7 +25,7 @@ DOUBLE_BATTLE_TEST("Gravity cancels fly and sky drop if they are in the air")
         MESSAGE("The opposing Rookidee used Fly!");
         MESSAGE("The opposing Rookidee flew up high!");
         // turn 2
-        MESSAGE("Wobbuffet used Gravity!");
+        MESSAGE("Lopmonx used Gravity!");
         MESSAGE("Gravity intensified!");
         MESSAGE("The opposing Ketomon fell from the sky due to the gravity!");
         MESSAGE("The opposing Rookidee fell from the sky due to the gravity!");

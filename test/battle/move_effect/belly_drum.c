@@ -38,7 +38,7 @@ SINGLE_BATTLE_TEST("Belly Drum maximizes the user's Attack stat", s16 damage)
 <<<<<<< HEAD
             MESSAGE("Lopmonx cut its own HP and maximized ATTACK!");
 =======
-            MESSAGE("Wobbuffet cut its own HP and maximized its Attack!");
+            MESSAGE("Lopmonx cut its own HP and maximized its Attack!");
 >>>>>>> upstream/master
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
@@ -108,8 +108,8 @@ SINGLE_BATTLE_TEST("Belly Drum's HP cost doesn't trigger effects that trigger on
         MESSAGE("Lopmonx cut its own HP and maximized ATTACK!");
         NOT MESSAGE("Lopmonx's Air Balloon popped!");
 =======
-        MESSAGE("Wobbuffet cut its own HP and maximized its Attack!");
-        NOT MESSAGE("Wobbuffet's Air Balloon popped!");
+        MESSAGE("Lopmonx cut its own HP and maximized its Attack!");
+        NOT MESSAGE("Lopmonx's Air Balloon popped!");
 >>>>>>> upstream/master
     }
 }
@@ -121,8 +121,8 @@ SINGLE_BATTLE_TEST("Belly Drum minimizes the user's Attack stat with Contrary", 
     PARAMETRIZE { raiseAttack = TRUE; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].category == DAMAGE_CATEGORY_PHYSICAL);
-        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_CONTRARY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Ability(ABILITY_CONTRARY); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         if (raiseAttack) TURN { MOVE(player, MOVE_BELLY_DRUM); }
         TURN { MOVE(player, MOVE_TACKLE); }
@@ -130,7 +130,7 @@ SINGLE_BATTLE_TEST("Belly Drum minimizes the user's Attack stat with Contrary", 
         if (raiseAttack) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_BELLY_DRUM, player);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-            MESSAGE("Wobbuffet cut its own HP and maximized its Attack!");  // Message unaffected by Contrary
+            MESSAGE("Lopmonx cut its own HP and maximized its Attack!");  // Message unaffected by Contrary
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         HP_BAR(opponent, captureDamage: &results[i].damage);

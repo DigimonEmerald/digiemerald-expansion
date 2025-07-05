@@ -186,9 +186,9 @@ SINGLE_BATTLE_TEST("Berserk Gene does not confuse when Safeguard is active")
         MESSAGE("Lopmonx's party is protected by Safeguard!");
         NOT MESSAGE("Lopmonx became confused!");
 =======
-        MESSAGE("Using Berserk Gene, the Attack of Wobbuffet sharply rose!");
-        MESSAGE("Wobbuffet is protected by Safeguard!");
-        NOT MESSAGE("Wobbuffet became confused!");
+        MESSAGE("Using Berserk Gene, the Attack of Lopmonx sharply rose!");
+        MESSAGE("Lopmonx is protected by Safeguard!");
+        NOT MESSAGE("Lopmonx became confused!");
 >>>>>>> upstream/master
     }
 }

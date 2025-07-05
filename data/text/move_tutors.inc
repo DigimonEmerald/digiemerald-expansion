@@ -104,7 +104,7 @@ MoveTutor_Text_MetronomeDeclined:
 	.string "Okay. I'll be here if you change\n"
 	.string "your mind.$"
 
-MoveTutor_Text_MetronomeWhichMon:
+MoveTutor_Text_MetronofalcomonhichMon:
 	.string "Okay! I'll teach it!\n"
 	.string "Which POKéMON should I teach?$"
 

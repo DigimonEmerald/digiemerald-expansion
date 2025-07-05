@@ -55,7 +55,7 @@ AI_SINGLE_BATTLE_TEST("AI avoids Thunder Wave when it can not paralyse target")
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
         PLAYER(species) { Ability(ability); }
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_CELEBRATE, MOVE_THUNDER_WAVE); }
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_CELEBRATE, MOVE_THUNDER_WAVE); }
     } WHEN {
         TURN { SCORE_EQ(opponent, MOVE_CELEBRATE, MOVE_THUNDER_WAVE); } // Both get -10
     }

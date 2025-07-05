@@ -2,7 +2,7 @@ const u8 gEasyChatWord_MatchUp[] = _("MATCH UP");
 const u8 gEasyChatWord_Go[] = _("GO");
 const u8 gEasyChatWord_No1[] = _("NO. 1");
 const u8 gEasyChatWord_Decide[] = _("DECIDE");
-const u8 gEasyChatWord_LetMeWin[] = _("LET ME WIN");
+const u8 gEasyChatWord_LetFalcomonin[] = _("LET ME WIN");
 const u8 gEasyChatWord_Wins[] = _("WINS");
 const u8 gEasyChatWord_Win[] = _("WIN");
 const u8 gEasyChatWord_Won[] = _("WON");
@@ -89,7 +89,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Battle[] = {
     },
     [EC_INDEX(EC_WORD_LET_ME_WIN)] =
     {
-        .text = gEasyChatWord_LetMeWin,
+        .text = gEasyChatWord_LetFalcomonin,
         .alphabeticalOrder = 11,
         .enabled = TRUE,
     },

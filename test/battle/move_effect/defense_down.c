@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Tail Whip lowers Defense by 1 stage", s16 damage)
 <<<<<<< HEAD
             MESSAGE("Foe Lopmonx's Defense fell!");
 =======
-            MESSAGE("The opposing Wobbuffet's Defense fell!");
+            MESSAGE("The opposing Lopmonx's Defense fell!");
 >>>>>>> upstream/master
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);

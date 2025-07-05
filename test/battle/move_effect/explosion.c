@@ -36,8 +36,8 @@ SINGLE_BATTLE_TEST("Explosion causes the user & the target to faint")
         MESSAGE("Foe Lopmonx fainted!");
         MESSAGE("Lopmonx fainted!");
 =======
-        MESSAGE("The opposing Wobbuffet fainted!");
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmonx fainted!");
+        MESSAGE("Lopmonx fainted!");
 >>>>>>> upstream/master
     }
 }
@@ -104,7 +104,7 @@ DOUBLE_BATTLE_TEST("Explosion causes everyone to faint in a double battle")
         MESSAGE("Lopmonx fainted!");
 =======
         MESSAGE("The opposing Kakkinmon fainted!");
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmonx fainted!");
 >>>>>>> upstream/master
     }
 }
@@ -125,7 +125,7 @@ SINGLE_BATTLE_TEST("Explosion is blocked by Ability Damp")
 <<<<<<< HEAD
         MESSAGE("Foe Demmeramon's Damp prevents Lopmonx from using Explosion!");
 =======
-        MESSAGE("The opposing Demmeramon's Damp prevents Wobbuffet from using Explosion!");
+        MESSAGE("The opposing Demmeramon's Damp prevents Lopmonx from using Explosion!");
 >>>>>>> upstream/master
     }
 }
@@ -157,8 +157,8 @@ DOUBLE_BATTLE_TEST("Explosion boosted by Galvanize is correctly blocked by Volt 
 =======
         PLAYER(SPECIES_MONIMON_ALOLA) { Ability(ABILITY_GALVANIZE); }
         PLAYER(SPECIES_WYNAUT) { HP(1); }
-        OPPONENT(SPECIES_LANTURN) { Ability(ABILITY_VOLT_ABSORB); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_GUILMON) { Ability(ABILITY_VOLT_ABSORB); }
+        OPPONENT(SPECIES_LOPMONX) { HP(1); }
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EXPLOSION); }
@@ -173,7 +173,7 @@ DOUBLE_BATTLE_TEST("Explosion boosted by Galvanize is correctly blocked by Volt 
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx fainted!");
 =======
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmonx fainted!");
 >>>>>>> upstream/master
         MESSAGE("Monimon fainted!");
     }

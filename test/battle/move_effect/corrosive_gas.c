@@ -28,13 +28,13 @@ SINGLE_BATTLE_TEST("Corrosive Gas destroys the target's item or fails if the tar
         else {
             MESSAGE("It had no effect on Foe Lopmonx!");
 =======
-        MESSAGE("Wobbuffet used Corrosive Gas!");
+        MESSAGE("Lopmonx used Corrosive Gas!");
         if (item == ITEM_POTION) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_CORROSIVE_GAS, player);
-            MESSAGE("Wobbuffet corroded the opposing Wobbuffet's Potion!");
+            MESSAGE("Lopmonx corroded the opposing Lopmonx's Potion!");
         }
         else {
-            MESSAGE("It won't have any effect on the opposing Wobbuffet!");
+            MESSAGE("It won't have any effect on the opposing Lopmonx!");
 >>>>>>> upstream/master
         }
     } THEN {
@@ -57,9 +57,9 @@ SINGLE_BATTLE_TEST("Corrosive Gas doesn't destroy the item of a Pokemon with the
         ABILITY_POPUP(opponent, ABILITY_STICKY_HOLD);
         MESSAGE("Foe Sunmon's Sticky Hold made CorrosiveGas ineffective!");
 =======
-        MESSAGE("Wobbuffet used Corrosive Gas!");
+        MESSAGE("Lopmonx used Corrosive Gas!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CORROSIVE_GAS, player);
-        NOT MESSAGE("Wobbuffet corroded the opposing Wobbuffet's Potion!");
+        NOT MESSAGE("Lopmonx corroded the opposing Lopmonx's Potion!");
         ABILITY_POPUP(opponent, ABILITY_STICKY_HOLD);
         MESSAGE("The opposing Sunmon's Sticky Hold made Corrosive Gas ineffective!");
 >>>>>>> upstream/master
@@ -83,10 +83,10 @@ SINGLE_BATTLE_TEST("Items lost to Corrosive Gas cannot be restored by Recycle")
         MESSAGE("Lopmonx corroded Foe Lopmonx's Oran Berry!");
         MESSAGE("Foe Lopmonx used Recycle!");
 =======
-        MESSAGE("Wobbuffet used Corrosive Gas!");
+        MESSAGE("Lopmonx used Corrosive Gas!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CORROSIVE_GAS, player);
-        MESSAGE("Wobbuffet corroded the opposing Wobbuffet's Oran Berry!");
-        MESSAGE("The opposing Wobbuffet used Recycle!");
+        MESSAGE("Lopmonx corroded the opposing Lopmonx's Oran Berry!");
+        MESSAGE("The opposing Lopmonx used Recycle!");
 >>>>>>> upstream/master
         MESSAGE("But it failed!");
     } THEN {
@@ -139,7 +139,7 @@ DOUBLE_BATTLE_TEST("Corrosive Gas destroys foes and ally's items if they have on
         } else {
             MESSAGE("It had no effect on Foe Kakkinmon!");
 =======
-            MESSAGE("It won't have any effect on Wobbuffet!");
+            MESSAGE("It won't have any effect on Lopmonx!");
         }
         if (itemOpponentLeft == ITEM_ORAN_BERRY) {
             MESSAGE("Wynaut corroded the opposing Hopmon's Oran Berry!");

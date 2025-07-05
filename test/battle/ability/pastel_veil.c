@@ -9,7 +9,7 @@ SINGLE_BATTLE_TEST("Pastel Veil prevents Poison Sting poison")
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
 =======
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
 >>>>>>> upstream/master
     } WHEN {
@@ -30,7 +30,7 @@ DOUBLE_BATTLE_TEST("Pastel Veil prevents Poison Sting poison on partner")
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
         OPPONENT(SPECIES_EXVEEMON);
 =======
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
         OPPONENT(SPECIES_WYNAUT);
@@ -52,7 +52,7 @@ SINGLE_BATTLE_TEST("Pastel Veil immediately cures Mold Breaker poison")
         PLAYER(SPECIES_TYUTYUMON) { Ability(ABILITY_MOLD_BREAKER); }
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
 =======
-        PLAYER(SPECIES_PINSIR) { Ability(ABILITY_MOLD_BREAKER); }
+        PLAYER(SPECIES_TYUTYUMON) { Ability(ABILITY_MOLD_BREAKER); }
         OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
 >>>>>>> upstream/master
     } WHEN {
@@ -81,7 +81,7 @@ DOUBLE_BATTLE_TEST("Pastel Veil does not cure Mold Breaker poison on partner")
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
         OPPONENT(SPECIES_EXVEEMON);
 =======
-        PLAYER(SPECIES_PINSIR) { Ability(ABILITY_MOLD_BREAKER); }
+        PLAYER(SPECIES_TYUTYUMON) { Ability(ABILITY_MOLD_BREAKER); }
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
         OPPONENT(SPECIES_WYNAUT);
@@ -103,7 +103,7 @@ SINGLE_BATTLE_TEST("Pastel Veil prevents Toxic bad poison")
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
 =======
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
 >>>>>>> upstream/master
     } WHEN {
@@ -130,7 +130,7 @@ DOUBLE_BATTLE_TEST("Pastel Veil prevents Toxic bad poison on partner")
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
         OPPONENT(SPECIES_EXVEEMON);
 =======
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
         OPPONENT(SPECIES_WYNAUT);
@@ -158,8 +158,8 @@ SINGLE_BATTLE_TEST("Pastel Veil prevents Toxic Spikes poison")
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
 =======
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
 >>>>>>> upstream/master
     } WHEN {
@@ -182,10 +182,10 @@ DOUBLE_BATTLE_TEST("Pastel Veil prevents Toxic Spikes poison on partner")
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_EXVEEMON);
 =======
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
 >>>>>>> upstream/master
     } WHEN {
@@ -206,9 +206,9 @@ DOUBLE_BATTLE_TEST("Pastel Veil cures partner's poison on initial switch in")
         OPPONENT(SPECIES_LOPMONX) { Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
 =======
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET) { Status1(STATUS1_POISON); }
+        OPPONENT(SPECIES_LOPMONX) { Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
 >>>>>>> upstream/master
     } WHEN {
@@ -219,7 +219,7 @@ DOUBLE_BATTLE_TEST("Pastel Veil cures partner's poison on initial switch in")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx was cured of its poisoning!");
 =======
-        MESSAGE("The opposing Wobbuffet was cured of its poisoning!");
+        MESSAGE("The opposing Lopmonx was cured of its poisoning!");
 >>>>>>> upstream/master
         STATUS_ICON(opponentLeft, none: TRUE);
     }
@@ -235,9 +235,9 @@ DOUBLE_BATTLE_TEST("Pastel Veil cures partner's poison on switch in")
         OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
 =======
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET) { Status1(STATUS1_POISON); }
+        OPPONENT(SPECIES_LOPMONX) { Status1(STATUS1_POISON); }
         OPPONENT(SPECIES_WYNAUT);
         OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
 >>>>>>> upstream/master
@@ -249,7 +249,7 @@ DOUBLE_BATTLE_TEST("Pastel Veil cures partner's poison on switch in")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx was cured of its poisoning!");
 =======
-        MESSAGE("The opposing Wobbuffet was cured of its poisoning!");
+        MESSAGE("The opposing Lopmonx was cured of its poisoning!");
 >>>>>>> upstream/master
         STATUS_ICON(opponentLeft, none: TRUE);
     }

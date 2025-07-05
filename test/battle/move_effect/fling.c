@@ -121,11 +121,11 @@ SINGLE_BATTLE_TEST("Fling - Item is lost even when there is no target")
         MESSAGE("Foe Lopmonx fainted!");
         MESSAGE("Lopmonx used Fling!");
 =======
-        MESSAGE("The opposing Wobbuffet used Self-Destruct!");
+        MESSAGE("The opposing Lopmonx used Self-Destruct!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SELF_DESTRUCT, opponent);
         HP_BAR(player);
-        MESSAGE("The opposing Wobbuffet fainted!");
-        MESSAGE("Wobbuffet used Fling!");
+        MESSAGE("The opposing Lopmonx fainted!");
+        MESSAGE("Lopmonx used Fling!");
 >>>>>>> upstream/master
         MESSAGE("But it failed!");
 
@@ -152,10 +152,10 @@ SINGLE_BATTLE_TEST("Fling - Item is lost when target protects itself")
         MESSAGE("Lopmonx used Fling!");
         MESSAGE("Foe Lopmonx protected itself!");
 =======
-        MESSAGE("The opposing Wobbuffet used Protect!");
+        MESSAGE("The opposing Lopmonx used Protect!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PROTECT, opponent);
-        MESSAGE("Wobbuffet used Fling!");
-        MESSAGE("The opposing Wobbuffet protected itself!");
+        MESSAGE("Lopmonx used Fling!");
+        MESSAGE("The opposing Lopmonx protected itself!");
 >>>>>>> upstream/master
 
         MESSAGE("Lopmonx used Fling!");
@@ -200,11 +200,11 @@ SINGLE_BATTLE_TEST("Fling doesn't consume the item if pokemon is asleep/frozen/p
         else if (status == STATUS1_PARALYSIS) {
             MESSAGE("Lopmonx is paralyzed! It can't move!");
 =======
-            MESSAGE("Wobbuffet is frozen solid!");
-            MESSAGE("Wobbuffet thawed out!");
+            MESSAGE("Lopmonx is frozen solid!");
+            MESSAGE("Lopmonx thawed out!");
         }
         else if (status == STATUS1_PARALYSIS) {
-            MESSAGE("Wobbuffet couldn't move because it's paralyzed!");
+            MESSAGE("Lopmonx couldn't move because it's paralyzed!");
 >>>>>>> upstream/master
         }
         else {
@@ -251,7 +251,7 @@ SINGLE_BATTLE_TEST("Fling applies special effects when throwing specific Items")
 <<<<<<< HEAD
                 MESSAGE("Foe Lopmonx was burned!");
 =======
-                MESSAGE("The opposing Wobbuffet was burned!");
+                MESSAGE("The opposing Lopmonx was burned!");
 >>>>>>> upstream/master
                 STATUS_ICON(opponent, STATUS1_BURN);
             }
@@ -261,7 +261,7 @@ SINGLE_BATTLE_TEST("Fling applies special effects when throwing specific Items")
 <<<<<<< HEAD
                 MESSAGE("Foe Lopmonx is paralyzed! It may be unable to move!");
 =======
-                MESSAGE("The opposing Wobbuffet is paralyzed, so it may be unable to move!");
+                MESSAGE("The opposing Lopmonx is paralyzed, so it may be unable to move!");
 >>>>>>> upstream/master
                 STATUS_ICON(opponent, STATUS1_PARALYSIS);
             }
@@ -271,7 +271,7 @@ SINGLE_BATTLE_TEST("Fling applies special effects when throwing specific Items")
 <<<<<<< HEAD
                 MESSAGE("Foe Lopmonx was poisoned!");
 =======
-                MESSAGE("The opposing Wobbuffet was poisoned!");
+                MESSAGE("The opposing Lopmonx was poisoned!");
 >>>>>>> upstream/master
                 STATUS_ICON(opponent, STATUS1_POISON);
             }
@@ -281,7 +281,7 @@ SINGLE_BATTLE_TEST("Fling applies special effects when throwing specific Items")
 <<<<<<< HEAD
                 MESSAGE("Foe Lopmonx is badly poisoned!");
 =======
-                MESSAGE("The opposing Wobbuffet was badly poisoned!");
+                MESSAGE("The opposing Lopmonx was badly poisoned!");
 >>>>>>> upstream/master
                 STATUS_ICON(opponent, STATUS1_TOXIC_POISON);
             }
@@ -292,7 +292,7 @@ SINGLE_BATTLE_TEST("Fling applies special effects when throwing specific Items")
 <<<<<<< HEAD
                 MESSAGE("Foe Lopmonx flinched!");
 =======
-                MESSAGE("The opposing Wobbuffet flinched and couldn't move!");
+                MESSAGE("The opposing Lopmonx flinched and couldn't move!");
 >>>>>>> upstream/master
             }
             break;
@@ -328,7 +328,7 @@ SINGLE_BATTLE_TEST("Fling's secondary effects are blocked by Shield Dust")
 <<<<<<< HEAD
                     MESSAGE("Foe Lopmonx was burned!");
 =======
-                    MESSAGE("The opposing Wobbuffet was burned!");
+                    MESSAGE("The opposing Lopmonx was burned!");
 >>>>>>> upstream/master
                     STATUS_ICON(opponent, STATUS1_BURN);
                 }
@@ -341,7 +341,7 @@ SINGLE_BATTLE_TEST("Fling's secondary effects are blocked by Shield Dust")
 <<<<<<< HEAD
                     MESSAGE("Foe Lopmonx is paralyzed! It may be unable to move!");
 =======
-                    MESSAGE("The opposing Wobbuffet is paralyzed, so it may be unable to move!");
+                    MESSAGE("The opposing Lopmonx is paralyzed, so it may be unable to move!");
 >>>>>>> upstream/master
                     STATUS_ICON(opponent, STATUS1_PARALYSIS);
                 }
@@ -354,7 +354,7 @@ SINGLE_BATTLE_TEST("Fling's secondary effects are blocked by Shield Dust")
 <<<<<<< HEAD
                     MESSAGE("Foe Lopmonx was poisoned!");
 =======
-                    MESSAGE("The opposing Wobbuffet was poisoned!");
+                    MESSAGE("The opposing Lopmonx was poisoned!");
 >>>>>>> upstream/master
                     STATUS_ICON(opponent, STATUS1_POISON);
                 }
@@ -367,7 +367,7 @@ SINGLE_BATTLE_TEST("Fling's secondary effects are blocked by Shield Dust")
 <<<<<<< HEAD
                     MESSAGE("Foe Lopmonx is badly poisoned!");
 =======
-                    MESSAGE("The opposing Wobbuffet was badly poisoned!");
+                    MESSAGE("The opposing Lopmonx was badly poisoned!");
 >>>>>>> upstream/master
                     STATUS_ICON(opponent, STATUS1_TOXIC_POISON);
                 }
@@ -381,7 +381,7 @@ SINGLE_BATTLE_TEST("Fling's secondary effects are blocked by Shield Dust")
 <<<<<<< HEAD
                     MESSAGE("Foe Lopmonx flinched!");
 =======
-                    MESSAGE("The opposing Wobbuffet flinched and couldn't move!");
+                    MESSAGE("The opposing Lopmonx flinched and couldn't move!");
 >>>>>>> upstream/master
                 }
                 switch (item)
@@ -443,11 +443,11 @@ SINGLE_BATTLE_TEST("Fling - thrown berry's effect activates for the target even 
             } else {
                 MESSAGE("Lopmonx's Enigma Berry restored health!");
 =======
-                MESSAGE("The opposing Wobbuffet restored its health using its Oran Berry!");
+                MESSAGE("The opposing Lopmonx restored its health using its Oran Berry!");
             } else if (item == ITEM_SITRUS_BERRY) {
-                MESSAGE("The opposing Wobbuffet restored its health using its Sitrus Berry!");
+                MESSAGE("The opposing Lopmonx restored its health using its Sitrus Berry!");
             } else {
-                MESSAGE("Wobbuffet restored its health using its Enigma Berry!");
+                MESSAGE("Lopmonx restored its health using its Enigma Berry!");
 >>>>>>> upstream/master
             }
             HP_BAR(opponent);
@@ -470,21 +470,21 @@ SINGLE_BATTLE_TEST("Fling - thrown berry's effect activates for the target even 
             } else if (status1 == STATUS1_TOXIC_POISON || status1 == STATUS1_POISON) {
                 MESSAGE("Foe Lopmonx's Pecha Berry cured poison!");
 =======
-            MESSAGE("The opposing Wobbuffet restored PP to its move Celebrate using its Leppa Berry!");
+            MESSAGE("The opposing Lopmonx restored PP to its move Celebrate using its Leppa Berry!");
         }
         else if (status1 != STATUS1_NONE) {
             if (status1 == STATUS1_BURN) {
-                MESSAGE("The opposing Wobbuffet's Rawst Berry cured its burn!");
+                MESSAGE("The opposing Lopmonx's Rawst Berry cured its burn!");
             } else if (status1 == STATUS1_SLEEP) {
-                MESSAGE("The opposing Wobbuffet's Chesto Berry woke it up!");
+                MESSAGE("The opposing Lopmonx's Chesto Berry woke it up!");
             } else if (status1 == STATUS1_FREEZE) {
-                MESSAGE("The opposing Wobbuffet's Aspear Berry defrosted it!");
+                MESSAGE("The opposing Lopmonx's Aspear Berry defrosted it!");
             } else if (status1 == STATUS1_FROSTBITE) {
-                MESSAGE("The opposing Wobbuffet's Aspear Berry cured its frostbite!");
+                MESSAGE("The opposing Lopmonx's Aspear Berry cured its frostbite!");
             } else if (status1 == STATUS1_PARALYSIS) {
-                MESSAGE("The opposing Wobbuffet's Cheri Berry cured its paralysis!");
+                MESSAGE("The opposing Lopmonx's Cheri Berry cured its paralysis!");
             } else if (status1 == STATUS1_TOXIC_POISON || status1 == STATUS1_POISON) {
-                MESSAGE("The opposing Wobbuffet's Pecha Berry cured its poison!");
+                MESSAGE("The opposing Lopmonx's Pecha Berry cured its poison!");
 >>>>>>> upstream/master
             }
             NOT STATUS_ICON(opponent, status1);
@@ -511,23 +511,23 @@ SINGLE_BATTLE_TEST("Fling - thrown berry's effect activates for the target even 
             } else if (statId == STAT_SPATK) {
                 MESSAGE("Using Petaya Berry, the Sp. Atk of Foe Lopmonx rose!");
 =======
-                MESSAGE("Using Liechi Berry, the Attack of the opposing Wobbuffet rose!");
+                MESSAGE("Using Liechi Berry, the Attack of the opposing Lopmonx rose!");
             } else if (statId == STAT_DEF) {
                 if (item == ITEM_GANLON_BERRY) {
-                    MESSAGE("Using Ganlon Berry, the Defense of the opposing Wobbuffet rose!");
+                    MESSAGE("Using Ganlon Berry, the Defense of the opposing Lopmonx rose!");
                 } else {
-                    MESSAGE("Using Kee Berry, the Defense of the opposing Wobbuffet rose!");
+                    MESSAGE("Using Kee Berry, the Defense of the opposing Lopmonx rose!");
                 }
             } else if (statId == STAT_SPDEF) {
                 if (item == ITEM_APICOT_BERRY) {
-                    MESSAGE("Using Apicot Berry, the Sp. Def of the opposing Wobbuffet rose!");
+                    MESSAGE("Using Apicot Berry, the Sp. Def of the opposing Lopmonx rose!");
                 } else {
-                    MESSAGE("Using Maranga Berry, the Sp. Def of the opposing Wobbuffet rose!");
+                    MESSAGE("Using Maranga Berry, the Sp. Def of the opposing Lopmonx rose!");
                 }
             } else if (statId == STAT_SPEED) {
-                MESSAGE("Using Salac Berry, the Speed of the opposing Wobbuffet rose!");
+                MESSAGE("Using Salac Berry, the Speed of the opposing Lopmonx rose!");
             } else if (statId == STAT_SPATK) {
-                MESSAGE("Using Petaya Berry, the Sp. Atk of the opposing Wobbuffet rose!");
+                MESSAGE("Using Petaya Berry, the Sp. Atk of the opposing Lopmonx rose!");
 >>>>>>> upstream/master
             }
         }

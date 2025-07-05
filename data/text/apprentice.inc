@@ -2225,7 +2225,7 @@ gText_ApprenticeWinSpeechThanks3::
 	.string "I promise to do my best from now on.\p"
 	.string "I'm sure you'll quickly forget about\n"
 	.string "someone like me, but let's meet\l"
-	.string "somewhere again!$"
+	.string "sofalcomonhere again!$"
 
 gText_ApprenticePickWinSpeech4::
 	.string "Oh, {PLAYER}{KUN}.\n"

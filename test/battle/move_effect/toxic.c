@@ -53,7 +53,7 @@ AI_SINGLE_BATTLE_TEST("AI avoids toxic when it can not poison target")
 {
     u32 species, ability;
 
-    PARAMETRIZE { species = SPECIES_SNORLAX; ability = ABILITY_IMMUNITY; }
+    PARAMETRIZE { species = SPECIES_DRACOMON; ability = ABILITY_IMMUNITY; }
     PARAMETRIZE { species = SPECIES_KOMALA; ability = ABILITY_COMATOSE; }
     PARAMETRIZE { species = SPECIES_NACLI; ability = ABILITY_PURIFYING_SALT; }
     PARAMETRIZE { species = SPECIES_ARGOMON_F; ability = ABILITY_OVERGROW; }
@@ -61,7 +61,7 @@ AI_SINGLE_BATTLE_TEST("AI avoids toxic when it can not poison target")
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
         PLAYER(species) { Ability(ability); }
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_CELEBRATE, MOVE_TOXIC); }
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_CELEBRATE, MOVE_TOXIC); }
     } WHEN {
         TURN { SCORE_EQ(opponent, MOVE_CELEBRATE, MOVE_TOXIC); } // Both get -10
     }

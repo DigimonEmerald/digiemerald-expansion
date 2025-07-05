@@ -70,7 +70,7 @@ SINGLE_BATTLE_TEST("Vessel of Ruin's message displays correctly after all battle
 <<<<<<< HEAD
         MESSAGE("Go! Lopmonx!");
 =======
-        SEND_IN_MESSAGE("Wobbuffet");
+        SEND_IN_MESSAGE("Lopmonx");
 >>>>>>> upstream/master
         MESSAGE("2 sent out Ting-Lu!");
         ABILITY_POPUP(opponent, ABILITY_VESSEL_OF_RUIN);

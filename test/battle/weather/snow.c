@@ -33,13 +33,13 @@ SINGLE_BATTLE_TEST("Snowscape fails if Desolate Land or Primordial Sea are activ
     u32 species;
     u32 item;
 
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; item = ITEM_NONE; }
+    PARAMETRIZE { species = SPECIES_LOPMONX; item = ITEM_NONE; }
     PARAMETRIZE { species = SPECIES_GROUDON; item = ITEM_RED_ORB; }
     PARAMETRIZE { species = SPECIES_KYOGRE; item = ITEM_BLUE_ORB; }
 
     GIVEN {
         PLAYER(species) { Item(item); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SNOWSCAPE); }
     } SCENE {

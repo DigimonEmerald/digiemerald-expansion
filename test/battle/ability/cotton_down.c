@@ -58,7 +58,7 @@ DOUBLE_BATTLE_TEST("Cotton Down drops speed by one of all other battlers on the 
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx's Speed fell!");
 =======
-        MESSAGE("The opposing Wobbuffet's Speed fell!");
+        MESSAGE("The opposing Lopmonx's Speed fell!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(playerLeft->statStages[STAT_SPEED], DEFAULT_STAT_STAGE - 1);

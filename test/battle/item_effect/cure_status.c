@@ -61,8 +61,8 @@ SINGLE_BATTLE_TEST("Antidote resets Toxic Counter")
         MESSAGE("Foe Lopmonx used Toxic!");
         MESSAGE("Lopmonx had its status healed!");
 =======
-        MESSAGE("The opposing Wobbuffet used Toxic!");
-        MESSAGE("Wobbuffet had its status healed!");
+        MESSAGE("The opposing Lopmonx used Toxic!");
+        MESSAGE("Lopmonx had its status healed!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->status1, STATUS1_NONE);
@@ -110,8 +110,8 @@ SINGLE_BATTLE_TEST("Ice Heal heals a battler from being frozen or frostbite")
         PLAYER(SPECIES_LOPMONX) { Status1(STATUS1_FREEZE); }
         OPPONENT(SPECIES_LOPMONX);
 =======
-        PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Status1(status); }
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { USE_ITEM(player, ITEM_ICE_HEAL, partyIndex: 0); }
@@ -364,12 +364,12 @@ SINGLE_BATTLE_TEST("Jubilife Muffin heals a battler from any primary status")
     PARAMETRIZE { status = STATUS1_FROSTBITE; }
     GIVEN {
         ASSUME(gItemsInfo[ITEM_JUBILIFE_MUFFIN].battleUsage == EFFECT_ITEM_CURE_STATUS);
-        PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
+        PLAYER(SPECIES_LOPMONX) { Status1(status); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { USE_ITEM(player, ITEM_JUBILIFE_MUFFIN, partyIndex: 0); }
     } SCENE {
-        MESSAGE("Wobbuffet had its status healed!");
+        MESSAGE("Lopmonx had its status healed!");
     } THEN {
         EXPECT_EQ(player->status1, STATUS1_NONE);
     }

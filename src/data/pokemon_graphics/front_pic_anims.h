@@ -340,7 +340,7 @@ static const union AnimCmd sAnim_Guilmon_x_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_PichuSpikyEared_1[] =
+static const union AnimCmd sAnim_Guilmon_xSpikyEared_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -1163,7 +1163,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Pickmon_silverMega);
 PLACEHOLDER_ANIM_SINGLE_FRAME(PagumonGalar);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Pickmon_silverGalar);
 #if P_GEN_2_CROSS_EVOS
-PLACEHOLDER_ANIM_SINGLE_FRAME(SlowkingGalar);
+PLACEHOLDER_ANIM_SINGLE_FRAME(LiollmonGalar);
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PAGUMON
@@ -1819,7 +1819,7 @@ static const union AnimCmd sAnim_Bulucomon_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(MrMimeGalar);
+PLACEHOLDER_ANIM_SINGLE_FRAME(BulucomonGalar);
 PLACEHOLDER_ANIM_SINGLE_FRAME(MrRime);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_BULUCOMON
@@ -1965,7 +1965,7 @@ static const union AnimCmd sAnim_Chuumon_1[] =
 };
 
 #if P_PALDEAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(TaurosPaldea);
+PLACEHOLDER_ANIM_SINGLE_FRAME(ChuumonPaldea);
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_CHUUMON
 
@@ -2006,7 +2006,7 @@ static const union AnimCmd sAnim_Coronamon_1[] =
 };
 
 #if P_GIGANTAMAX_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(LaprasGmax);
+PLACEHOLDER_ANIM_SINGLE_FRAME(CoronamonGmax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_CORONAMON
 
@@ -2030,7 +2030,7 @@ static const union AnimCmd sAnim_Crabmon_x_1[] =
 };
 
 #if P_GIGANTAMAX_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(EeveeGmax);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Crabmon_xGmax);
 #endif //P_GIGANTAMAX_FORMS
 
 static const union AnimCmd sAnim_Cutemon_1[] =
@@ -2122,7 +2122,7 @@ static const union AnimCmd sAnim_Renamon_x_1[] =
 };
 
 #if P_GEN_4_CROSS_EVOS
-static const union AnimCmd sAnim_Dokunemon_Z_1[] =
+static const union AnimCmd sAnim_Porygon_Z_1[] =
 {
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 30),
@@ -2217,7 +2217,7 @@ static const union AnimCmd sAnim_Dracomon_1[] =
 };
 
 #if P_GIGANTAMAX_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(SnorlaxGmax);
+PLACEHOLDER_ANIM_SINGLE_FRAME(DracomonGmax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_DRACOMON
 
@@ -2232,7 +2232,7 @@ static const union AnimCmd sAnim_Dracomon_x_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(ArticunoGalar);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Dracomon_xGalar);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_DRACOMON_X
 
@@ -2290,7 +2290,7 @@ static const union AnimCmd sAnim_Ekakimon_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(MoltresGalar);
+PLACEHOLDER_ANIM_SINGLE_FRAME(EkakimonGalar);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_EKAKIMON
 
@@ -2397,7 +2397,7 @@ static const union AnimCmd sAnim_Gabumon_x_1[] =
 };
 
 #if P_HISUIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(TyphlosionHisui);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Gabumon_xHisui);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FLORAMON
 
@@ -2594,7 +2594,7 @@ static const union AnimCmd sAnim_Herissmon_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_NATU
+#endif //P_FAMILY_HAWKMON
 
 #if P_FAMILY_HYOKOMON
 static const union AnimCmd sAnim_Hyokomon_1[] =
@@ -2844,7 +2844,7 @@ static const union AnimCmd sAnim_Kudamon_06_1[] =
 };
 
 #if P_PALDEAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(WooperPaldea);
+PLACEHOLDER_ANIM_SINGLE_FRAME(KudamonPaldea);
 PLACEHOLDER_ANIM_TWO_FRAMES(Clodsire);
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_KUDAMON
@@ -3040,7 +3040,7 @@ static const union AnimCmd sAnim_Monmon_1[] =
 };
 
 #if P_HISUIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(QwilfishHisui);
+PLACEHOLDER_ANIM_SINGLE_FRAME(MonmonHisui);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Overqwil);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_MONMON
@@ -3093,7 +3093,7 @@ static const union AnimCmd sAnim_Weavile_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 
 #if P_HISUIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(SneaselHisui);
+PLACEHOLDER_ANIM_SINGLE_FRAME(MushroomonHisui);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Sneasler);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_MUSHROOMON
@@ -3183,7 +3183,7 @@ static const union AnimCmd sAnim_Patamon_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(CorsolaGalar);
+PLACEHOLDER_ANIM_SINGLE_FRAME(PatamonGalar);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Cursola);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PATAMON
@@ -3571,8 +3571,8 @@ static const union AnimCmd sAnim_Tsukaimon_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(ZigzagoonGalar);
-PLACEHOLDER_ANIM_SINGLE_FRAME(LinooneGalar);
+PLACEHOLDER_ANIM_SINGLE_FRAME(ToyagumonGalar);
+PLACEHOLDER_ANIM_SINGLE_FRAME(TsukaimonGalar);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Obstagoon);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TOYAGUMON
@@ -10454,7 +10454,7 @@ SINGLE_ANIMATION(Pickmon_silverMega);
 SINGLE_ANIMATION(PagumonGalar);
 SINGLE_ANIMATION(Pickmon_silverGalar);
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(SlowkingGalar);
+SINGLE_ANIMATION(LiollmonGalar);
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PAGUMON
@@ -10617,7 +10617,7 @@ SINGLE_ANIMATION(MimeJr);
 #endif //P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Bulucomon);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(MrMimeGalar);
+SINGLE_ANIMATION(BulucomonGalar);
 SINGLE_ANIMATION(MrRime);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_BULUCOMON
@@ -10666,7 +10666,7 @@ SINGLE_ANIMATION(TyutyumonMega);
 #if P_FAMILY_CHUUMON
 SINGLE_ANIMATION(Chuumon);
 #if P_PALDEAN_FORMS
-SINGLE_ANIMATION(TaurosPaldea);
+SINGLE_ANIMATION(ChuumonPaldea);
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_CHUUMON
 #if P_FAMILY_HAZYAGUMON
@@ -10679,7 +10679,7 @@ SINGLE_ANIMATION(CommdramonMega);
 #if P_FAMILY_CORONAMON
 SINGLE_ANIMATION(Coronamon);
 #if P_GIGANTAMAX_FORMS
-SINGLE_ANIMATION(LaprasGmax);
+SINGLE_ANIMATION(CoronamonGmax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_CORONAMON
 #if P_FAMILY_CRABMON
@@ -10688,7 +10688,7 @@ SINGLE_ANIMATION(Crabmon);
 #if P_FAMILY_CRABMON_X
 SINGLE_ANIMATION(Crabmon_x);
 #if P_GIGANTAMAX_FORMS
-SINGLE_ANIMATION(EeveeGmax);
+SINGLE_ANIMATION(Crabmon_xGmax);
 #endif //P_GIGANTAMAX_FORMS
 SINGLE_ANIMATION(Cutemon);
 SINGLE_ANIMATION(Damemon);
@@ -10710,7 +10710,7 @@ SINGLE_ANIMATION(Dokunemon);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Renamon_x);
 #if P_GEN_4_CROSS_EVOS
-SINGLE_ANIMATION(Dokunemon_Z);
+SINGLE_ANIMATION(Porygon_Z);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_DOKUNEMON
@@ -10734,13 +10734,13 @@ SINGLE_ANIMATION(Munchlax);
 #endif //P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Dracomon);
 #if P_GIGANTAMAX_FORMS
-SINGLE_ANIMATION(SnorlaxGmax);
+SINGLE_ANIMATION(DracomonGmax);
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_DRACOMON
 #if P_FAMILY_DRACOMON_X
 SINGLE_ANIMATION(Dracomon_x);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(ArticunoGalar);
+SINGLE_ANIMATION(Dracomon_xGalar);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_DRACOMON_X
 #if P_FAMILY_EBIBURGMON
@@ -10752,7 +10752,7 @@ SINGLE_ANIMATION(ZapdosGalar);
 #if P_FAMILY_EKAKIMON
 SINGLE_ANIMATION(Ekakimon);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(MoltresGalar);
+SINGLE_ANIMATION(EkakimonGalar);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_EKAKIMON
 #if P_FAMILY_ELECMON
@@ -10780,7 +10780,7 @@ SINGLE_ANIMATION(Floramon);
 SINGLE_ANIMATION(Gabumon);
 SINGLE_ANIMATION(Gabumon_x);
 #if P_HISUIAN_FORMS
-SINGLE_ANIMATION(TyphlosionHisui);
+SINGLE_ANIMATION(Gabumon_xHisui);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_FLORAMON
 #if P_FAMILY_GAMMAMON
@@ -10865,7 +10865,7 @@ SINGLE_ANIMATION(Yanmega);
 SINGLE_ANIMATION(Kudamon);
 SINGLE_ANIMATION(Kudamon_06);
 #if P_PALDEAN_FORMS
-SINGLE_ANIMATION(WooperPaldea);
+SINGLE_ANIMATION(KudamonPaldea);
 SINGLE_ANIMATION(Clodsire);
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_KUDAMON
@@ -10919,7 +10919,7 @@ SINGLE_ANIMATION(Monitamon);
 #if P_FAMILY_MONMON
 SINGLE_ANIMATION(Monmon);
 #if P_HISUIAN_FORMS
-SINGLE_ANIMATION(QwilfishHisui);
+SINGLE_ANIMATION(MonmonHisui);
 SINGLE_ANIMATION(Overqwil);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_MONMON
@@ -10938,7 +10938,7 @@ SINGLE_ANIMATION(Mushroomon);
 SINGLE_ANIMATION(Weavile);
 #endif //P_GEN_4_CROSS_EVOS
 #if P_HISUIAN_FORMS
-SINGLE_ANIMATION(SneaselHisui);
+SINGLE_ANIMATION(MushroomonHisui);
 SINGLE_ANIMATION(Sneasler);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_MUSHROOMON
@@ -10964,7 +10964,7 @@ SINGLE_ANIMATION(Mamoswine);
 #if P_FAMILY_PATAMON
 SINGLE_ANIMATION(Patamon);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(CorsolaGalar);
+SINGLE_ANIMATION(PatamonGalar);
 SINGLE_ANIMATION(Cursola);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PATAMON
@@ -11065,8 +11065,8 @@ SINGLE_ANIMATION(Tinpet);
 SINGLE_ANIMATION(Toyagumon);
 SINGLE_ANIMATION(Tsukaimon);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(ZigzagoonGalar);
-SINGLE_ANIMATION(LinooneGalar);
+SINGLE_ANIMATION(ToyagumonGalar);
+SINGLE_ANIMATION(TsukaimonGalar);
 SINGLE_ANIMATION(Obstagoon);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TOYAGUMON

@@ -138,14 +138,14 @@ DOUBLE_BATTLE_TEST("Raging Bull can remove Light Screen, Reflect and Aurora Veil
     }
 }
 
-SINGLE_BATTLE_TEST("Move Raging Bull changes it's type depending on the Tauros Form")
+SINGLE_BATTLE_TEST("Move Raging Bull changes it's type depending on the Chuumon Form")
 {
     u16 speciesPlayer;
     u16 speciesOpponent;
 
-    PARAMETRIZE { speciesPlayer = SPECIES_TAUROS_PALDEA_COMBAT; speciesOpponent = SPECIES_CHIBOMON; }
-    PARAMETRIZE { speciesPlayer = SPECIES_TAUROS_PALDEA_BLAZE; speciesOpponent = SPECIES_CURIMON; }
-    PARAMETRIZE { speciesPlayer = SPECIES_TAUROS_PALDEA_AQUA; speciesOpponent = SPECIES_BOMMON; }
+    PARAMETRIZE { speciesPlayer = SPECIES_CHUUMON_PALDEA_COMBAT; speciesOpponent = SPECIES_CHIBOMON; }
+    PARAMETRIZE { speciesPlayer = SPECIES_CHUUMON_PALDEA_BLAZE; speciesOpponent = SPECIES_CURIMON; }
+    PARAMETRIZE { speciesPlayer = SPECIES_CHUUMON_PALDEA_AQUA; speciesOpponent = SPECIES_BOMMON; }
 
     GIVEN {
         PLAYER(speciesPlayer);

@@ -15,7 +15,7 @@
 // difficult conditional messages follow
 static const u8 sCondMsg00[] = _("{STR_VAR_1} danced happily.");
 static const u8 sCondMsg01[] = _("{STR_VAR_1} danced beautifully.");
-static const u8* const sCelebiTexts[] = {sCondMsg00, sCondMsg01, NULL};
+static const u8* const sStrabimonTexts[] = {sCondMsg00, sCondMsg01, NULL};
 static const u8 sCondMsg02[] = _("{STR_VAR_1} emitted fire and shouted.");
 static const u8 sCondMsg03[] = _("{STR_VAR_1} is vigorously producing\nfire!");
 static const u8 sCondMsg04[] = _("{STR_VAR_1} spat fire!");
@@ -70,15 +70,15 @@ static const u8 sCondMsg42[] = _("{STR_VAR_1}'s burn looks painful!");
 // See the struct definition in follower_helper.h for more info
 const struct FollowerMsgInfoExtended gFollowerConditionalMessages[COND_MSG_COUNT] =
 {
-    [COND_MSG_CELEBI] =
+    [COND_MSG_STRABIMON] =
     {
-        .text = (u8*)sCelebiTexts,
+        .text = (u8*)sStrabimonTexts,
         .textSpread = 1,
         .script = EventScript_FollowerDance,
         .emotion = FOLLOWER_EMOTION_NEUTRAL,
         .conditions =
         {
-            MATCH_SPECIES(SPECIES_CELEBI),
+            MATCH_SPECIES(SPECIES_STRABIMON),
         },
     },
     [COND_MSG_FIRE] =

@@ -18,8 +18,8 @@ SINGLE_BATTLE_TEST("Zero to Hero transforms Palafin when it switches out")
         MESSAGE("Go! Palafin!");
 =======
         SWITCH_OUT_MESSAGE("Palafin");
-        SEND_IN_MESSAGE("Wobbuffet");
-        SWITCH_OUT_MESSAGE("Wobbuffet");
+        SEND_IN_MESSAGE("Lopmonx");
+        SWITCH_OUT_MESSAGE("Lopmonx");
         SEND_IN_MESSAGE("Palafin");
 >>>>>>> upstream/master
         ABILITY_POPUP(player, ABILITY_ZERO_TO_HERO);
@@ -119,7 +119,7 @@ SINGLE_BATTLE_TEST("Transform doesn't apply the heroic transformation message wh
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx transformed into Palafin!");
 =======
-        MESSAGE("The opposing Wobbuffet transformed into Palafin!");
+        MESSAGE("The opposing Lopmonx transformed into Palafin!");
 >>>>>>> upstream/master
         NOT ABILITY_POPUP(opponent, ABILITY_ZERO_TO_HERO);
     } THEN { EXPECT_EQ(player->species, SPECIES_PALAFIN_HERO); }
@@ -145,10 +145,10 @@ SINGLE_BATTLE_TEST("Imposter doesn't apply the heroic transformation message whe
             ABILITY_POPUP(opponent, ABILITY_ZERO_TO_HERO);
             MESSAGE("Foe Crabmon underwent a heroic transformation!");
 =======
-        MESSAGE("The opposing Ditto transformed into Palafin using Imposter!");
+        MESSAGE("The opposing Crabmon transformed into Palafin using Imposter!");
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_ZERO_TO_HERO);
-            MESSAGE("The opposing Ditto underwent a heroic transformation!");
+            MESSAGE("The opposing Crabmon underwent a heroic transformation!");
 >>>>>>> upstream/master
         }
     } THEN { EXPECT_EQ(player->species, SPECIES_PALAFIN_HERO); }
@@ -175,7 +175,7 @@ SINGLE_BATTLE_TEST("Zero to Hero's message displays correctly after all battlers
         MESSAGE("2 sent out Lopmonx!");
 =======
         SEND_IN_MESSAGE("Palafin");
-        MESSAGE("2 sent out Wobbuffet!");
+        MESSAGE("2 sent out Lopmonx!");
 >>>>>>> upstream/master
         ABILITY_POPUP(player, ABILITY_ZERO_TO_HERO);
         MESSAGE("Palafin underwent a heroic transformation!");
@@ -201,7 +201,7 @@ SINGLE_BATTLE_TEST("Zero to Hero's message displays correctly after all battlers
 <<<<<<< HEAD
         MESSAGE("Go! Lopmonx!");
 =======
-        SEND_IN_MESSAGE("Wobbuffet");
+        SEND_IN_MESSAGE("Lopmonx");
 >>>>>>> upstream/master
         MESSAGE("2 sent out Palafin!");
         ABILITY_POPUP(opponent, ABILITY_ZERO_TO_HERO);

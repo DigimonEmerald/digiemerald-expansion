@@ -10,9 +10,9 @@ SINGLE_BATTLE_TEST("Stomping Tatrum will deal double damage if user flinched on 
 {
     s16 damage[3];
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_STOMPING_TANTRUM); SWITCH(opponent, 1); }
         TURN { MOVE(opponent, MOVE_FAKE_OUT); MOVE(player, MOVE_CELEBRATE); }
@@ -41,8 +41,8 @@ SINGLE_BATTLE_TEST("Stomping Tatrum will deal double damage if user failed to at
     s16 damage[3];
     PASSES_RANDOMLY(25, 100, RNG_PARALYSIS);
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(100); Item(ITEM_POTION); };
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(10); Item(ITEM_LUM_BERRY); };
+        PLAYER(SPECIES_LOPMONX) { Speed(100); Item(ITEM_POTION); };
+        OPPONENT(SPECIES_LOPMONX) { Speed(10); Item(ITEM_LUM_BERRY); };
     } WHEN {
         TURN { MOVE(player, MOVE_STOMPING_TANTRUM); MOVE(opponent, MOVE_THUNDER_WAVE); }
         TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_TRICK);  }
@@ -70,8 +70,8 @@ SINGLE_BATTLE_TEST("Stomping Tatrum will not deal double damage if target protec
 {
     s16 damage[2];
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_STOMPING_TANTRUM); }
         TURN { MOVE(opponent, MOVE_PROTECT); MOVE(player, MOVE_STOMPING_TANTRUM); }
@@ -81,7 +81,7 @@ SINGLE_BATTLE_TEST("Stomping Tatrum will not deal double damage if target protec
         HP_BAR(opponent, captureDamage: &damage[0]);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PROTECT, opponent);
-        MESSAGE("The opposing Wobbuffet protected itself!");
+        MESSAGE("The opposing Lopmonx protected itself!");
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
         HP_BAR(opponent, captureDamage: &damage[1]);
@@ -94,8 +94,8 @@ SINGLE_BATTLE_TEST("Stomping Tatrum will not deal double damage if it failed on 
 {
     s16 damage[2];
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_BRIGHTPOWDER); };
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_BRIGHTPOWDER); };
     } WHEN {
         TURN { MOVE(player, MOVE_STOMPING_TANTRUM); }
         TURN { MOVE(player, MOVE_STOMPING_TANTRUM, hit: FALSE); }
@@ -103,7 +103,7 @@ SINGLE_BATTLE_TEST("Stomping Tatrum will not deal double damage if it failed on 
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
         HP_BAR(opponent, captureDamage: &damage[0]);
-        MESSAGE("Wobbuffet's attack missed!");
+        MESSAGE("Lopmonx's attack missed!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STOMPING_TANTRUM, player);
         HP_BAR(opponent, captureDamage: &damage[1]);
     } THEN {
@@ -115,9 +115,9 @@ SINGLE_BATTLE_TEST("Stomping Tatrum will deal double damage if user was immune t
 {
     s16 damage[2];
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_KETOMON);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_STOMPING_TANTRUM); SWITCH(opponent, 1); }
         TURN { MOVE(player, MOVE_STOMPING_TANTRUM); SWITCH(opponent, 0); }

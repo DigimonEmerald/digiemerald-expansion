@@ -771,7 +771,7 @@ LilycoveCity_PokemonCenter_1F_Text_ReadyToEnterContests:
 	.string "Hmm…\p"
 	.string "I think we may be ready to enter\n"
 	.string "some CONTESTS.\p"
-	.string "If you see us in one somewhere,\n"
+	.string "If you see us in one sofalcomonhere,\n"
 	.string "I hope you'll cheer for us.$"
 
 LilycoveCity_PokemonCenter_1F_Text_Toyagumon:

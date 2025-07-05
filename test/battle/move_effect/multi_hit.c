@@ -171,7 +171,7 @@ SINGLE_BATTLE_TEST("Scale Shot is immune to Fairy types and will end the move co
 =======
         ASSUME(gMovesInfo[MOVE_SCALE_SHOT].type == TYPE_DRAGON);
         ASSUME(gSpeciesInfo[SPECIES_PUYOMON].types[0] == TYPE_FAIRY || gSpeciesInfo[SPECIES_PUYOMON].types[1] == TYPE_FAIRY);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PUYOMON) { HP(1); }
 >>>>>>> upstream/master
     } WHEN {
@@ -186,12 +186,12 @@ DOUBLE_BATTLE_TEST("Scale Shot does not corrupt the next turn move used")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SCALE_SHOT].effect == EFFECT_MULTI_HIT);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerRight, MOVE_SCALE_SHOT, target: opponentRight); SWITCH(playerLeft, 2); SEND_OUT(opponentRight, 2); }
         TURN { MOVE(playerRight, MOVE_BULLDOZE); MOVE(playerLeft, MOVE_CELEBRATE); MOVE(opponentRight, MOVE_CELEBRATE); MOVE(opponentLeft, MOVE_CELEBRATE); }
@@ -211,8 +211,8 @@ SINGLE_BATTLE_TEST("Scale Shot decreases defense and increases speed after the 4
     PASSES_RANDOMLY(50, 100, RNG_LOADED_DICE);
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SCALE_SHOT].effect == EFFECT_MULTI_HIT);
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_LOADED_DICE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_LOADED_DICE); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SCALE_SHOT); }
     } SCENE {
@@ -237,15 +237,15 @@ SINGLE_BATTLE_TEST("Scale Shot decreases defense and increases speed after killi
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SCALE_SHOT].effect == EFFECT_MULTI_HIT);
         PLAYER(SPECIES_BAGON) { Item(item); }
-        OPPONENT(SPECIES_SLUGMA) { Ability(ABILITY_WEAK_ARMOR); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_OTAMAMON_RED) { Ability(ABILITY_WEAK_ARMOR); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SCALE_SHOT); SEND_OUT(opponent, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCALE_SHOT, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCALE_SHOT, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCALE_SHOT, player);
-        MESSAGE("The opposing Slugma fainted!");
+        MESSAGE("The opposing Otamamon_red fainted!");
         MESSAGE("The Pokémon was hit 3 time(s)!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         MESSAGE("Bagon's Defense fell!");
@@ -260,8 +260,8 @@ SINGLE_BATTLE_TEST("Multi Hit moves will not disrupt Destiny Bond flag")
     PARAMETRIZE { hp = 11; }
     PARAMETRIZE { hp = 55; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(55); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(55); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_DESTINY_BOND); MOVE(opponent, MOVE_BULLET_SEED); }
     } SCENE {
@@ -274,7 +274,7 @@ SINGLE_BATTLE_TEST("Multi Hit moves will not disrupt Destiny Bond flag")
             ANIMATION(ANIM_TYPE_MOVE, MOVE_BULLET_SEED, opponent);
             ANIMATION(ANIM_TYPE_MOVE, MOVE_BULLET_SEED, opponent);
         }
-        MESSAGE("Wobbuffet took its attacker down with it!");
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("Lopmonx took its attacker down with it!");
+        MESSAGE("The opposing Lopmonx fainted!");
     }
 }

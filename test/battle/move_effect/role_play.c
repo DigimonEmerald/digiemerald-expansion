@@ -9,7 +9,7 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Role Play copies target's ability")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
+        PLAYER(SPECIES_LOPMONX) { Ability(ABILITY_TELEPATHY); }
         OPPONENT(SPECIES_BOTAMON) { Ability(ABILITY_BLAZE); }
     }WHEN {
         TURN { MOVE(player, MOVE_ROLE_PLAY); }
@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Role Play copies target's ability")
 DOUBLE_BATTLE_TEST("Role Play copies target's current ability even if it changed during that turn")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); }
+        PLAYER(SPECIES_LOPMONX) { Ability(ABILITY_TELEPATHY); }
         PLAYER(SPECIES_BOTAMON) { Ability(ABILITY_BLAZE); }
         OPPONENT(SPECIES_ARGOMON_F) { Ability(ABILITY_OVERGROW); }
         OPPONENT(SPECIES_CONOMON) { Ability(ABILITY_TORRENT); }

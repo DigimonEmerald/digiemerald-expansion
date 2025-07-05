@@ -56,7 +56,7 @@ BattleFrontier_BattlePikeRoomNormal_EventScript_WonSingleBattle::
 BattleFrontier_BattlePikeRoomNormal_EventScript_EnterHardBattleRoom::
 	lockall
 	delay 16
-	msgbox BattleFrontier_BattlePikeRoomNormal_Text_BattleSomewhatToughTrainer, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattlePikeRoomNormal_Text_BattleSofalcomonhatToughTrainer, MSGBOX_DEFAULT
 	waitmessage
 	closemessage
 	applymovement LOCALID_OBJ_0, BattleFrontier_BattlePikeRoomNormal_Movement_ApproachPlayer
@@ -658,7 +658,7 @@ BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge:
 
 BattleFrontier_BattlePikeRoomNormal_Text_WillRestoreOneMon:
 	.string "Ah, you're a lucky one.\n"
-	.string "I'm in somewhat-good spirits now.\p"
+	.string "I'm in sofalcomonhat-good spirits now.\p"
 	.string "I will restore one of your POKéMON\n"
 	.string "to full health.$"
 
@@ -750,10 +750,10 @@ BattleFrontier_BattlePikeRoomNormal_Text_Silence:
 	.string "… … … … … …\n"
 	.string "… … … … … …$"
 
-BattleFrontier_BattlePikeRoomNormal_Text_BattleSomewhatToughTrainer:
+BattleFrontier_BattlePikeRoomNormal_Text_BattleSofalcomonhatToughTrainer:
 	.string "Welcome…\p"
 	.string "Here, we will have you battle\n"
-	.string "a somewhat-tough TRAINER…$"
+	.string "a sofalcomonhat-tough TRAINER…$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_RestoreToFullHealth:
 	.string "How wonderful…\p"

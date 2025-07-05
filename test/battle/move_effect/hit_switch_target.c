@@ -82,18 +82,18 @@ SINGLE_BATTLE_TEST("Dragon Tail switches the target after Rocky Helmet and Iron 
 {
     PASSES_RANDOMLY(1, 2, RNG_FORCE_RANDOM_SWITCH);
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_TOGEDEMARU) { Ability(ABILITY_IRON_BARBS); Item(ITEM_ROCKY_HELMET); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_BOTAMON);
     } WHEN {
         TURN { MOVE(player, MOVE_DRAGON_TAIL); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_TAIL, player);
         HP_BAR(player);
-        MESSAGE("Wobbuffet was hurt by the opposing Togedemaru's Iron Barbs!");
+        MESSAGE("Lopmonx was hurt by the opposing Togedemaru's Iron Barbs!");
         HP_BAR(player);
-        MESSAGE("Wobbuffet was hurt by the opposing Togedemaru's Rocky Helmet!");
+        MESSAGE("Lopmonx was hurt by the opposing Togedemaru's Rocky Helmet!");
         MESSAGE("The opposing Botamon was dragged out!");
     }
 }
@@ -101,7 +101,7 @@ SINGLE_BATTLE_TEST("Dragon Tail switches the target after Rocky Helmet and Iron 
 SINGLE_BATTLE_TEST("Dragon Tail effect fails against target with Guard Dog")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_OKIDOGI) { Ability(ABILITY_GUARD_DOG); }
         OPPONENT(SPECIES_BOTAMON);
     } WHEN {
@@ -115,15 +115,15 @@ SINGLE_BATTLE_TEST("Dragon Tail effect fails against target with Guard Dog")
 SINGLE_BATTLE_TEST("Dragon Tail effect fails against target with Suction Cups")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_OCTILLERY) { Ability(ABILITY_SUCTION_CUPS); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_PAWNMON_WHITE) { Ability(ABILITY_SUCTION_CUPS); }
         OPPONENT(SPECIES_BOTAMON);
     } WHEN {
         TURN { MOVE(player, MOVE_DRAGON_TAIL); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_TAIL, player);
         ABILITY_POPUP(opponent, ABILITY_SUCTION_CUPS);
-        MESSAGE("The opposing Octillery anchors itself with Suction Cups!");
+        MESSAGE("The opposing Pawnmon_white anchors itself with Suction Cups!");
         NOT MESSAGE("The opposing Botamon was dragged out!");
     }
 }

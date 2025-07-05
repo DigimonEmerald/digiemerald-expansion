@@ -42,7 +42,7 @@ SINGLE_BATTLE_TEST("X Defense sharply raises battler's Defense stat", s16 damage
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Tackle!");
 =======
-        MESSAGE("The opposing Wobbuffet used Tackle!");
+        MESSAGE("The opposing Lopmonx used Tackle!");
 >>>>>>> upstream/master
         HP_BAR(player, captureDamage: &results[i].damage);
     } FINALLY {
@@ -70,7 +70,7 @@ SINGLE_BATTLE_TEST("X Sp. Atk sharply raises battler's Sp. Attack stat", s16 dam
 <<<<<<< HEAD
         MESSAGE("Lopmonx used DisrmngVoice!");
 =======
-        MESSAGE("Wobbuffet used Disarming Voice!");
+        MESSAGE("Lopmonx used Disarming Voice!");
 >>>>>>> upstream/master
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
@@ -98,7 +98,7 @@ SINGLE_BATTLE_TEST("X Sp. Def sharply raises battler's Sp. Defense stat", s16 da
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used DisrmngVoice!");
 =======
-        MESSAGE("The opposing Wobbuffet used Disarming Voice!");
+        MESSAGE("The opposing Lopmonx used Disarming Voice!");
 >>>>>>> upstream/master
         HP_BAR(player, captureDamage: &results[i].damage);
     } FINALLY {
@@ -141,13 +141,13 @@ SINGLE_BATTLE_TEST("X Speed sharply raises battler's Speed stat", s16 damage)
             MESSAGE("Foe Lopmonx used Tackle!");
             MESSAGE("Lopmonx used Tackle!");
 =======
-            MESSAGE("Wobbuffet used Tackle!");
-            MESSAGE("The opposing Wobbuffet used Tackle!");
+            MESSAGE("Lopmonx used Tackle!");
+            MESSAGE("The opposing Lopmonx used Tackle!");
         }
         else
         {
-            MESSAGE("The opposing Wobbuffet used Tackle!");
-            MESSAGE("Wobbuffet used Tackle!");
+            MESSAGE("The opposing Lopmonx used Tackle!");
+            MESSAGE("Lopmonx used Tackle!");
 >>>>>>> upstream/master
         }
     }
@@ -173,8 +173,8 @@ SINGLE_BATTLE_TEST("X Accuracy sharply raises battler's Accuracy stat")
         MESSAGE("Lopmonx used Sing!");
         MESSAGE("Foe Lopmonx fell asleep!");
 =======
-        MESSAGE("Wobbuffet used Sing!");
-        MESSAGE("The opposing Wobbuffet fell asleep!");
+        MESSAGE("Lopmonx used Sing!");
+        MESSAGE("The opposing Lopmonx fell asleep!");
 >>>>>>> upstream/master
     }
 }
@@ -215,7 +215,7 @@ SINGLE_BATTLE_TEST("Max Mushrooms raises battler's Defense stat", s16 damage)
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Tackle!");
 =======
-        MESSAGE("The opposing Wobbuffet used Tackle!");
+        MESSAGE("The opposing Lopmonx used Tackle!");
 >>>>>>> upstream/master
         HP_BAR(player, captureDamage: &results[i].damage);
     } FINALLY {
@@ -239,7 +239,7 @@ SINGLE_BATTLE_TEST("Max Mushrooms raises battler's Sp. Attack stat", s16 damage)
 <<<<<<< HEAD
         MESSAGE("Lopmonx used DisrmngVoice!");
 =======
-        MESSAGE("Wobbuffet used Disarming Voice!");
+        MESSAGE("Lopmonx used Disarming Voice!");
 >>>>>>> upstream/master
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
@@ -263,7 +263,7 @@ SINGLE_BATTLE_TEST("Max Mushrooms battler's Sp. Defense stat", s16 damage)
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used DisrmngVoice!");
 =======
-        MESSAGE("The opposing Wobbuffet used Disarming Voice!");
+        MESSAGE("The opposing Lopmonx used Disarming Voice!");
 >>>>>>> upstream/master
         HP_BAR(player, captureDamage: &results[i].damage);
     } FINALLY {
@@ -295,13 +295,13 @@ SINGLE_BATTLE_TEST("Max Mushrooms raises battler's Speed stat", s16 damage)
             MESSAGE("Foe Lopmonx used Tackle!");
             MESSAGE("Lopmonx used Tackle!");
 =======
-            MESSAGE("Wobbuffet used Tackle!");
-            MESSAGE("The opposing Wobbuffet used Tackle!");
+            MESSAGE("Lopmonx used Tackle!");
+            MESSAGE("The opposing Lopmonx used Tackle!");
         }
         else
         {
-            MESSAGE("The opposing Wobbuffet used Tackle!");
-            MESSAGE("Wobbuffet used Tackle!");
+            MESSAGE("The opposing Lopmonx used Tackle!");
+            MESSAGE("Lopmonx used Tackle!");
 >>>>>>> upstream/master
         }
     }

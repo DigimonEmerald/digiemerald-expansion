@@ -174,7 +174,7 @@ SINGLE_BATTLE_TEST("Quark Drive boosts Special Defense 4th in case of a stat tie
 SINGLE_BATTLE_TEST("Quark Drive activates in Electric Terrain before Booster Energy")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_IRON_TREADS) { Ability(ABILITY_QUARK_DRIVE); Item(ITEM_BOOSTER_ENERGY); }
         OPPONENT(SPECIES_TAPU_KOKO) { Ability(ABILITY_ELECTRIC_SURGE); }
     } WHEN {
@@ -190,7 +190,7 @@ SINGLE_BATTLE_TEST("Quark Drive activates in Electric Terrain before Booster Ene
 SINGLE_BATTLE_TEST("Quark Drive doesn't activate for a transformed battler")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_IRON_TREADS) { Ability(ABILITY_QUARK_DRIVE); Item(ITEM_BOOSTER_ENERGY); }
         OPPONENT(SPECIES_TAPU_KOKO) { Ability(ABILITY_ELECTRIC_SURGE); Item(ITEM_BOOSTER_ENERGY); }
     } WHEN {

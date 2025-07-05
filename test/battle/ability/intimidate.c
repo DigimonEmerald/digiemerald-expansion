@@ -26,7 +26,7 @@ SINGLE_BATTLE_TEST("Intimidate (opponent) lowers player's attack after switch ou
 <<<<<<< HEAD
             MESSAGE("Foe Paomon's Intimidate cuts Lopmonx's attack!");
 =======
-            MESSAGE("The opposing Paomon's Intimidate cuts Wobbuffet's Attack!");
+            MESSAGE("The opposing Paomon's Intimidate cuts Lopmonx's Attack!");
 >>>>>>> upstream/master
         }
         HP_BAR(opponent, captureDamage: &results[i].damage);
@@ -56,7 +56,7 @@ SINGLE_BATTLE_TEST("Intimidate (opponent) lowers player's attack after KO", s16 
 <<<<<<< HEAD
             MESSAGE("Foe Paomon's Intimidate cuts Lopmonx's attack!");
 =======
-            MESSAGE("The opposing Paomon's Intimidate cuts Wobbuffet's Attack!");
+            MESSAGE("The opposing Paomon's Intimidate cuts Lopmonx's Attack!");
 >>>>>>> upstream/master
         }
         HP_BAR(opponent, captureDamage: &results[i].damage);
@@ -156,13 +156,13 @@ SINGLE_BATTLE_TEST("Intimidate and Eject Button force the opponent to Attack")
             ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
             MESSAGE("Foe Salamon_x used Tackle!");
 =======
-        MESSAGE("The opposing Wobbuffet is switched out with the Eject Button!");
-        MESSAGE("2 sent out Hitmontop!");
+        MESSAGE("The opposing Lopmonx is switched out with the Eject Button!");
+        MESSAGE("2 sent out Salamon_x!");
         ABILITY_POPUP(opponent, ABILITY_INTIMIDATE);
-        MESSAGE("The opposing Hitmontop's Intimidate cuts Wobbuffet's Attack!");
+        MESSAGE("The opposing Salamon_x's Intimidate cuts Lopmonx's Attack!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-            MESSAGE("The opposing Hitmontop used Tackle!");
+            MESSAGE("The opposing Salamon_x used Tackle!");
 >>>>>>> upstream/master
         }
     }
@@ -204,18 +204,18 @@ DOUBLE_BATTLE_TEST("Intimidate activates on an empty slot")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
         MESSAGE("Salamon_x's Intimidate cuts Foe Biostegmon's attack!");
 =======
-        SWITCH_OUT_MESSAGE("Wobbuffet");
+        SWITCH_OUT_MESSAGE("Lopmonx");
         SEND_IN_MESSAGE("Wynaut");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GUNK_SHOT, playerRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPLASH, opponentRight);
         SWITCH_OUT_MESSAGE("Wynaut");
-        SEND_IN_MESSAGE("Hitmontop");
+        SEND_IN_MESSAGE("Salamon_x");
         ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
         NONE_OF {
-            MESSAGE("Hitmontop's Intimidate cuts the opposing Ralts's Attack!");
+            MESSAGE("Salamon_x's Intimidate cuts the opposing Ralts's Attack!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("Hitmontop's Intimidate cuts the opposing Azurill's Attack!");
+        MESSAGE("Salamon_x's Intimidate cuts the opposing Azurill's Attack!");
 >>>>>>> upstream/master
     }
 }
@@ -266,9 +266,9 @@ SINGLE_BATTLE_TEST("Intimidate can not further lower opponents Atk stat if it is
         }
         MESSAGE("Lopmonx's Attack won't go lower!");
 =======
-            MESSAGE("The opposing Paomon's Intimidate cuts Wobbuffet's Attack!");
+            MESSAGE("The opposing Paomon's Intimidate cuts Lopmonx's Attack!");
         }
-        MESSAGE("Wobbuffet's Attack won't go any lower!");
+        MESSAGE("Lopmonx's Attack won't go any lower!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->statStages[STAT_ATK], MIN_STAT_STAGE);
@@ -283,8 +283,8 @@ DOUBLE_BATTLE_TEST("Intimidate is not going to trigger if a mon switches out thr
         PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); }
         OPPONENT(SPECIES_EXVEEMON) { HP(1); }
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_TREECKO);
-        OPPONENT(SPECIES_TORCHIC);
+        OPPONENT(SPECIES_SUNARZAMON);
+        OPPONENT(SPECIES_SYAKOMON_X);
     } WHEN {
         TURN {
             MOVE(opponentRight, MOVE_HEALING_WISH);
@@ -298,8 +298,8 @@ DOUBLE_BATTLE_TEST("Intimidate is not going to trigger if a mon switches out thr
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEALING_WISH, opponentRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, playerLeft);
         HP_BAR(opponentLeft);
-        MESSAGE("2 sent out Treecko!");
-        MESSAGE("2 sent out Torchic!");
+        MESSAGE("2 sent out Sunarzamon!");
+        MESSAGE("2 sent out Syakomon_x!");
         NOT ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
     }
 }
@@ -308,7 +308,7 @@ SINGLE_BATTLE_TEST("Intimidate activates when it's no longer effected by Neutral
 {
     GIVEN {
         PLAYER(SPECIES_ARMADILMON) { Ability(ABILITY_NEUTRALIZING_GAS); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PAOMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { SWITCH(player, 1); }
@@ -318,7 +318,7 @@ SINGLE_BATTLE_TEST("Intimidate activates when it's no longer effected by Neutral
         SWITCH_OUT_MESSAGE("Armadilmon");
         MESSAGE("The effects of the neutralizing gas wore off!");
         ABILITY_POPUP(opponent, ABILITY_INTIMIDATE);
-        SEND_IN_MESSAGE("Wobbuffet");
+        SEND_IN_MESSAGE("Lopmonx");
     }
 }
 
@@ -333,7 +333,7 @@ SINGLE_BATTLE_TEST("Intimidate activates when it's no longer affected by Neutral
         ASSUME(gMovesInfo[MOVE_HEALING_WISH].effect == EFFECT_HEALING_WISH);
         ASSUME(gMovesInfo[MOVE_BATON_PASS].effect == EFFECT_BATON_PASS);
         PLAYER(SPECIES_ARMADILMON) { Ability(ABILITY_NEUTRALIZING_GAS); }
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
         OPPONENT(SPECIES_PAOMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { MOVE(player, move); SEND_OUT(player, 1); }
@@ -343,7 +343,7 @@ SINGLE_BATTLE_TEST("Intimidate activates when it's no longer affected by Neutral
         ANIMATION(ANIM_TYPE_MOVE, move, player);
         MESSAGE("The effects of the neutralizing gas wore off!");
         ABILITY_POPUP(opponent, ABILITY_INTIMIDATE);
-        SEND_IN_MESSAGE("Wobbuffet");
+        SEND_IN_MESSAGE("Lopmonx");
     } THEN {
         if (move == MOVE_HEALING_WISH)
             EXPECT_EQ(player->hp, player->maxHP);
@@ -364,7 +364,7 @@ SINGLE_BATTLE_TEST("Intimidate activates when it's no longer affected by Neutral
         ASSUME(gMovesInfo[MOVE_ROAR].effect == EFFECT_ROAR);
         ASSUME(gMovesInfo[MOVE_DRAGON_TAIL].effect == EFFECT_HIT_SWITCH_TARGET);
         PLAYER(SPECIES_ARMADILMON) { Ability(ABILITY_NEUTRALIZING_GAS); Item(item); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PAOMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         if (item != ITEM_NONE) {
@@ -381,9 +381,9 @@ SINGLE_BATTLE_TEST("Intimidate activates when it's no longer affected by Neutral
         MESSAGE("The effects of the neutralizing gas wore off!");
         ABILITY_POPUP(opponent, ABILITY_INTIMIDATE);
         if (item != ITEM_NONE) {
-            SEND_IN_MESSAGE("Wobbuffet");
+            SEND_IN_MESSAGE("Lopmonx");
         } else {
-            MESSAGE("Wobbuffet was dragged out!");
+            MESSAGE("Lopmonx was dragged out!");
         }
     }
 }
@@ -393,7 +393,7 @@ SINGLE_BATTLE_TEST("Intimidate activates when it's no longer affected by Neutral
     GIVEN {
         ASSUME(gMovesInfo[MOVE_FELL_STINGER].effect == EFFECT_FELL_STINGER);
         PLAYER(SPECIES_ARMADILMON) { Ability(ABILITY_NEUTRALIZING_GAS); HP(1); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PAOMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_FELL_STINGER); SEND_OUT(player, 1); }
@@ -405,18 +405,18 @@ SINGLE_BATTLE_TEST("Intimidate activates when it's no longer affected by Neutral
         ABILITY_POPUP(opponent, ABILITY_INTIMIDATE);
         MESSAGE("Armadilmon fainted!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        SEND_IN_MESSAGE("Wobbuffet");
+        SEND_IN_MESSAGE("Lopmonx");
     }
 }
 
 DOUBLE_BATTLE_TEST("Intimidate will correctly decrease the attack of the second mon after Protosynthesis activated")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_EJECT_PACK); }
         PLAYER(SPECIES_WYNAUT);
         PLAYER(SPECIES_WALKING_WAKE) { Ability(ABILITY_PROTOSYNTHESIS); Item(ITEM_BOOSTER_ENERGY); }
         OPPONENT(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { SWITCH(opponentLeft, 2); SEND_OUT(playerLeft, 2); }

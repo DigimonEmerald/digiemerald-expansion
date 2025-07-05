@@ -77,7 +77,7 @@ SINGLE_BATTLE_TEST("Own Tempo is ignored by Mold Breaker")
     KNOWN_FAILING; // Ideally the func CanBeConfused should be split into AttackerCanBeConfused and TargetCanBeConfused or we do it in the same func but have a check for when battlerAtk == battlerDef
     GIVEN {
         ASSUME(gMovesInfo[MOVE_CONFUSE_RAY].effect == EFFECT_CONFUSE);
-        PLAYER(SPECIES_PINSIR) { Ability(ABILITY_MOLD_BREAKER); }
+        PLAYER(SPECIES_TYUTYUMON) { Ability(ABILITY_MOLD_BREAKER); }
         OPPONENT(SPECIES_PAGUMON) { Ability(ABILITY_OWN_TEMPO); };
     } WHEN {
         TURN { MOVE(player, MOVE_CONFUSE_RAY); }
@@ -137,10 +137,10 @@ SINGLE_BATTLE_TEST("Own Tempo cures confusion if it's obtained via Skill Swap")
         ABILITY_POPUP(opponent, ABILITY_OWN_TEMPO);
         MESSAGE("Foe Lopmonx's Own Tempo cured its confusion problem!");
 =======
-        MESSAGE("The opposing Wobbuffet became confused!");
+        MESSAGE("The opposing Lopmonx became confused!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SKILL_SWAP, player);
         ABILITY_POPUP(opponent, ABILITY_OWN_TEMPO);
-        MESSAGE("The opposing Wobbuffet's Own Tempo cured its confusion problem!");
+        MESSAGE("The opposing Lopmonx's Own Tempo cured its confusion problem!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
     }

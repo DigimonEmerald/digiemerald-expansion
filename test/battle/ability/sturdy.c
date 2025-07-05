@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Sturdy prevents OHKO moves")
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Fissure!");
 =======
-        MESSAGE("The opposing Wobbuffet used Fissure!");
+        MESSAGE("The opposing Lopmonx used Fissure!");
 >>>>>>> upstream/master
         ABILITY_POPUP(player, ABILITY_STURDY);
         MESSAGE("Monimon was protected by Sturdy!");

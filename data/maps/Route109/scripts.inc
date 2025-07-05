@@ -308,7 +308,7 @@ Route109_EventScript_StayHere::
 	end
 
 Route109_EventScript_ChoseNotToSail::
-	msgbox Route109_Text_BrineyTellMeWhenYouNeedToSail, MSGBOX_DEFAULT
+	msgbox Route109_Text_BrineyTellFalcomonhenYouNeedToSail, MSGBOX_DEFAULT
 	release
 	end
 
@@ -508,7 +508,7 @@ Route109_Text_BrineyWhereAreWeBound:
 	.string "For you, I'll go out to sea anytime!\p"
 	.string "Now, my friend, where are we bound?$"
 
-Route109_Text_BrineyTellMeWhenYouNeedToSail:
+Route109_Text_BrineyTellFalcomonhenYouNeedToSail:
 	.string "MR. BRINEY: You just tell me whenever\n"
 	.string "you need to set sail again!$"
 

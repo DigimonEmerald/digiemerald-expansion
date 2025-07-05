@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("Bad Dreams causes the sleeping enemy Pokemon to lose 1/8 of 
 <<<<<<< HEAD
             MESSAGE("Foe Lopmonx is tormented!");
 =======
-            MESSAGE("The opposing Wobbuffet is tormented!");
+            MESSAGE("The opposing Lopmonx is tormented!");
 >>>>>>> upstream/master
             HP_BAR(opponent);
         }
@@ -28,7 +28,7 @@ SINGLE_BATTLE_TEST("Bad Dreams causes the sleeping enemy Pokemon to lose 1/8 of 
 <<<<<<< HEAD
                 MESSAGE("Foe Lopmonx is tormented!");
 =======
-                MESSAGE("The opposing Wobbuffet is tormented!");
+                MESSAGE("The opposing Lopmonx is tormented!");
 >>>>>>> upstream/master
                 HP_BAR(opponent);
             };
@@ -131,12 +131,12 @@ DOUBLE_BATTLE_TEST("Bad Dreams faints both sleeping Pokemon on opponent side")
         HP_BAR(opponentRight);
         MESSAGE("Foe Lopmonx fainted!");
 =======
-        MESSAGE("The opposing Wobbuffet is tormented!");
+        MESSAGE("The opposing Lopmonx is tormented!");
         HP_BAR(opponentLeft);
-        MESSAGE("The opposing Wobbuffet fainted!");
-        MESSAGE("The opposing Wobbuffet is tormented!");
+        MESSAGE("The opposing Lopmonx fainted!");
+        MESSAGE("The opposing Lopmonx is tormented!");
         HP_BAR(opponentRight);
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmonx fainted!");
 >>>>>>> upstream/master
     }
 }

@@ -7,16 +7,16 @@ SINGLE_BATTLE_TEST("Burn Up user loses its Fire-type")
         ASSUME(gMovesInfo[MOVE_BURN_UP].effect == EFFECT_FAIL_IF_NOT_ARG_TYPE);
         ASSUME(MoveHasAdditionalEffectSelfArg(MOVE_BURN_UP, MOVE_EFFECT_REMOVE_ARG_TYPE, TYPE_FIRE) == TRUE);
         ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[0] != TYPE_FIRE || gSpeciesInfo[SPECIES_LOPMONX].types[1] != TYPE_FIRE);
-        ASSUME(gSpeciesInfo[SPECIES_CYNDAQUIL].types[0] == TYPE_FIRE || gSpeciesInfo[SPECIES_CYNDAQUIL].types[1] == TYPE_FIRE);
-        PLAYER(SPECIES_CYNDAQUIL);
+        ASSUME(gSpeciesInfo[SPECIES_FLORAMON].types[0] == TYPE_FIRE || gSpeciesInfo[SPECIES_FLORAMON].types[1] == TYPE_FIRE);
+        PLAYER(SPECIES_FLORAMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_BURN_UP); }
         TURN { MOVE(player, MOVE_BURN_UP); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BURN_UP, player);
-        MESSAGE("Cyndaquil burned itself out!");
-        MESSAGE("Cyndaquil used Burn Up!");
+        MESSAGE("Floramon burned itself out!");
+        MESSAGE("Floramon used Burn Up!");
         MESSAGE("But it failed!");
     }
 }
@@ -44,15 +44,15 @@ SINGLE_BATTLE_TEST("Burn Up user loses its Fire-type if enemy faints")
         ASSUME(gMovesInfo[MOVE_BURN_UP].effect == EFFECT_FAIL_IF_NOT_ARG_TYPE);
         ASSUME(MoveHasAdditionalEffectSelfArg(MOVE_BURN_UP, MOVE_EFFECT_REMOVE_ARG_TYPE, TYPE_FIRE) == TRUE);
         ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[0] != TYPE_FIRE || gSpeciesInfo[SPECIES_LOPMONX].types[1] != TYPE_FIRE);
-        ASSUME(gSpeciesInfo[SPECIES_CYNDAQUIL].types[0] == TYPE_FIRE || gSpeciesInfo[SPECIES_CYNDAQUIL].types[1] == TYPE_FIRE);
-        PLAYER(SPECIES_CYNDAQUIL);
+        ASSUME(gSpeciesInfo[SPECIES_FLORAMON].types[0] == TYPE_FIRE || gSpeciesInfo[SPECIES_FLORAMON].types[1] == TYPE_FIRE);
+        PLAYER(SPECIES_FLORAMON);
         OPPONENT(SPECIES_LOPMONX) { HP(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_BURN_UP); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BURN_UP, player);
         HP_BAR(opponent, hp: 0);
-        MESSAGE("Cyndaquil burned itself out!");
+        MESSAGE("Floramon burned itself out!");
     }
 }
 

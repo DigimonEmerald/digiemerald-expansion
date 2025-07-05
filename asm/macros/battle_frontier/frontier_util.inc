@@ -11,7 +11,7 @@
 	special CallFrontierUtilFunc
 	.endm
 
-	@ Set the value of some FRONTIER_DATA_*. Some data types do not need a val argument because the value is set directly from somewhere else. See SetFrontierData for the data types that can be set
+	@ Set the value of some FRONTIER_DATA_*. Some data types do not need a val argument because the value is set directly from sofalcomonhere else. See SetFrontierData for the data types that can be set
 	.macro frontier_set data:req, val=0xFFFF
 	setvar VAR_0x8004, FRONTIER_UTIL_FUNC_SET_DATA
 	setvar VAR_0x8005, \data

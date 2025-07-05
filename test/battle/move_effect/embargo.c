@@ -21,8 +21,8 @@ SINGLE_BATTLE_TEST("Embargo blocks the effect of an affected Pokémon's held ite
         MESSAGE("Lopmonx used Embargo!");
         MESSAGE("Foe Lopmonx can't use items anymore!");
 =======
-        MESSAGE("Wobbuffet used Embargo!");
-        MESSAGE("The opposing Wobbuffet can't use items anymore!");
+        MESSAGE("Lopmonx used Embargo!");
+        MESSAGE("The opposing Lopmonx can't use items anymore!");
 >>>>>>> upstream/master
         // Turn 2
         MESSAGE("Lopmonx used Fissure!");
@@ -47,8 +47,8 @@ SINGLE_BATTLE_TEST("Embargo blocks an affected Pokémon's trainer from using ite
         MESSAGE("Lopmonx used Embargo!");
         MESSAGE("Foe Lopmonx can't use items anymore!");
 =======
-        MESSAGE("Wobbuffet used Embargo!");
-        MESSAGE("The opposing Wobbuffet can't use items anymore!");
+        MESSAGE("Lopmonx used Embargo!");
+        MESSAGE("The opposing Lopmonx can't use items anymore!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(opponent->hp, 1);
@@ -76,8 +76,8 @@ WILD_BATTLE_TEST("Embargo doesn't block held item effects that affect experience
         MESSAGE("Wild Datirimon fainted!");
 =======
         MESSAGE("The wild Datirimon used Embargo!");
-        MESSAGE("Wobbuffet can't use items anymore!");
-        MESSAGE("Wobbuffet used Scratch!");
+        MESSAGE("Lopmonx can't use items anymore!");
+        MESSAGE("Lopmonx used Scratch!");
         MESSAGE("The wild Datirimon fainted!");
 >>>>>>> upstream/master
         EXPERIENCE_BAR(player, captureGainedExp: &results[i].exp);
@@ -109,9 +109,9 @@ WILD_BATTLE_TEST("Embargo doesn't block held item effects that affect effort val
         MESSAGE("Wild Datirimon fainted!");
 =======
         MESSAGE("The wild Datirimon used Embargo!");
-        MESSAGE("Wobbuffet can't use items anymore!");
+        MESSAGE("Lopmonx can't use items anymore!");
         // Turn 2
-        MESSAGE("Wobbuffet used Scratch!");
+        MESSAGE("Lopmonx used Scratch!");
         MESSAGE("The wild Datirimon fainted!");
 >>>>>>> upstream/master
     } THEN {
@@ -138,11 +138,11 @@ SINGLE_BATTLE_TEST("Embargo negates a held item's Speed reduction")
         MESSAGE("Foe Lopmonx used Scratch!");
         MESSAGE("Lopmonx used Scratch!");
 =======
-        MESSAGE("Wobbuffet used Embargo!");
-        MESSAGE("The opposing Wobbuffet can't use items anymore!");
+        MESSAGE("Lopmonx used Embargo!");
+        MESSAGE("The opposing Lopmonx can't use items anymore!");
         // Turn 2
-        MESSAGE("The opposing Wobbuffet used Scratch!");
-        MESSAGE("Wobbuffet used Scratch!");
+        MESSAGE("The opposing Lopmonx used Scratch!");
+        MESSAGE("Lopmonx used Scratch!");
 >>>>>>> upstream/master
     }
 }
@@ -209,8 +209,8 @@ SINGLE_BATTLE_TEST("Embargo makes Fling and Natural Gift fail")
         MESSAGE("Foe Lopmonx used Embargo!");
         MESSAGE("Lopmonx can't use items anymore!");
 =======
-        MESSAGE("The opposing Wobbuffet used Embargo!");
-        MESSAGE("Wobbuffet can't use items anymore!");
+        MESSAGE("The opposing Lopmonx used Embargo!");
+        MESSAGE("Lopmonx can't use items anymore!");
 >>>>>>> upstream/master
         // Turn 2
         if (moveId == MOVE_FLING)
@@ -235,8 +235,8 @@ SINGLE_BATTLE_TEST("Embargo doesn't stop an item flung at an affected target fro
         MESSAGE("Lopmonx used Embargo!");
         MESSAGE("Foe Lopmonx can't use items anymore!");
 =======
-        MESSAGE("Wobbuffet used Embargo!");
-        MESSAGE("The opposing Wobbuffet can't use items anymore!");
+        MESSAGE("Lopmonx used Embargo!");
+        MESSAGE("The opposing Lopmonx can't use items anymore!");
 >>>>>>> upstream/master
         // Turn 2
         MESSAGE("Lopmonx used Fling!");
@@ -245,7 +245,7 @@ SINGLE_BATTLE_TEST("Embargo doesn't stop an item flung at an affected target fro
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx is paralyzed! It may be unable to move!");
 =======
-        MESSAGE("The opposing Wobbuffet is paralyzed, so it may be unable to move!");
+        MESSAGE("The opposing Lopmonx is paralyzed, so it may be unable to move!");
 >>>>>>> upstream/master
     }
 }
@@ -266,8 +266,8 @@ SINGLE_BATTLE_TEST("Baton Pass passes Embargo's effect")
         MESSAGE("Foe Lopmonx used Embargo!");
         MESSAGE("Lopmonx can't use items anymore!");
 =======
-        MESSAGE("The opposing Wobbuffet used Embargo!");
-        MESSAGE("Wobbuffet can't use items anymore!");
+        MESSAGE("The opposing Lopmonx used Embargo!");
+        MESSAGE("Lopmonx can't use items anymore!");
 >>>>>>> upstream/master
         // Turn 2
         MESSAGE("Lopmonx used Baton Pass!");
@@ -299,8 +299,8 @@ SINGLE_BATTLE_TEST("Embargo doesn't block the effects of berries obtained throug
         MESSAGE("Foe Lopmonx used Embargo!");
         MESSAGE("Lopmonx can't use items anymore!");
 =======
-        MESSAGE("The opposing Wobbuffet used Embargo!");
-        MESSAGE("Wobbuffet can't use items anymore!");
+        MESSAGE("The opposing Lopmonx used Embargo!");
+        MESSAGE("Lopmonx can't use items anymore!");
 >>>>>>> upstream/master
         // Turn 2
         MESSAGE("Lopmonx used Pluck!");
@@ -308,7 +308,7 @@ SINGLE_BATTLE_TEST("Embargo doesn't block the effects of berries obtained throug
 <<<<<<< HEAD
         MESSAGE("Lopmonx stole and ate Foe Lopmonx's Oran Berry!");
 =======
-        MESSAGE("Wobbuffet stole and ate its target's Oran Berry!");
+        MESSAGE("Lopmonx stole and ate its target's Oran Berry!");
 >>>>>>> upstream/master
         HP_BAR(player, damage: -hp);
     }
@@ -329,7 +329,7 @@ SINGLE_BATTLE_TEST("Embargo disables the effect of the Plate items on the move J
 <<<<<<< HEAD
         MESSAGE("Foe Espimon used Embargo!");
 =======
-        MESSAGE("The opposing Dragonite used Embargo!");
+        MESSAGE("The opposing Espimon used Embargo!");
 >>>>>>> upstream/master
         MESSAGE("Arceus can't use items anymore!");
         MESSAGE("Arceus used Judgment!");
@@ -354,7 +354,7 @@ SINGLE_BATTLE_TEST("Embargo disables the effect of the Drive items on the move T
 <<<<<<< HEAD
         MESSAGE("Foe Commdramon used Embargo!");
 =======
-        MESSAGE("The opposing Gyarados used Embargo!");
+        MESSAGE("The opposing Commdramon used Embargo!");
 >>>>>>> upstream/master
         MESSAGE("Genesect can't use items anymore!");
         MESSAGE("Genesect used Techno Blast!");
@@ -408,13 +408,13 @@ SINGLE_BATTLE_TEST("Embargo can be reflected by Magic Coat")
         // Turn 2
         MESSAGE("Foe Lopmonx used Fling!");
 =======
-        MESSAGE("Wobbuffet used Magic Coat!");
-        MESSAGE("Wobbuffet shrouded itself with Magic Coat!");
-        MESSAGE("The opposing Wobbuffet used Embargo!");
-        MESSAGE("Wobbuffet bounced the Embargo back!");
-        MESSAGE("The opposing Wobbuffet can't use items anymore!");
+        MESSAGE("Lopmonx used Magic Coat!");
+        MESSAGE("Lopmonx shrouded itself with Magic Coat!");
+        MESSAGE("The opposing Lopmonx used Embargo!");
+        MESSAGE("Lopmonx bounced the Embargo back!");
+        MESSAGE("The opposing Lopmonx can't use items anymore!");
         // Turn 2
-        MESSAGE("The opposing Wobbuffet used Fling!");
+        MESSAGE("The opposing Lopmonx used Fling!");
 >>>>>>> upstream/master
         MESSAGE("But it failed!");
     }
@@ -438,10 +438,10 @@ SINGLE_BATTLE_TEST("Embargo doesn't prevent Mega Evolution")
         // Turn 2
         MESSAGE("Foe Lopmonx used Baton Pass!");
 =======
-        MESSAGE("Wobbuffet used Embargo!");
-        MESSAGE("The opposing Wobbuffet can't use items anymore!");
+        MESSAGE("Lopmonx used Embargo!");
+        MESSAGE("The opposing Lopmonx can't use items anymore!");
         // Turn 2
-        MESSAGE("The opposing Wobbuffet used Baton Pass!");
+        MESSAGE("The opposing Lopmonx used Baton Pass!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BATON_PASS, opponent);
         MESSAGE("2 sent out Chibomon!");
@@ -476,10 +476,10 @@ SINGLE_BATTLE_TEST("Embargo doesn't prevent Primal Reversion")
         // Turn 2
         MESSAGE("Foe Lopmonx used Baton Pass!");
 =======
-        MESSAGE("Wobbuffet used Embargo!");
-        MESSAGE("The opposing Wobbuffet can't use items anymore!");
+        MESSAGE("Lopmonx used Embargo!");
+        MESSAGE("The opposing Lopmonx can't use items anymore!");
         // Turn 2
-        MESSAGE("The opposing Wobbuffet used Baton Pass!");
+        MESSAGE("The opposing Lopmonx used Baton Pass!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BATON_PASS, opponent);
         MESSAGE("2 sent out Gekomon!");

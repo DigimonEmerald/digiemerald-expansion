@@ -41,12 +41,12 @@ SINGLE_BATTLE_TEST("Covert Cloak blocks secondary effects")
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
             MESSAGE("Foe Lopmonx was prevented from healing!");
 =======
-            MESSAGE("The opposing Wobbuffet is paralyzed, so it may be unable to move!");
-            MESSAGE("The opposing Wobbuffet was burned!");
-            MESSAGE("The opposing Wobbuffet was poisoned!");
-            MESSAGE("The opposing Wobbuffet flinched and couldn't move!");
+            MESSAGE("The opposing Lopmonx is paralyzed, so it may be unable to move!");
+            MESSAGE("The opposing Lopmonx was burned!");
+            MESSAGE("The opposing Lopmonx was poisoned!");
+            MESSAGE("The opposing Lopmonx flinched and couldn't move!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("The opposing Wobbuffet was prevented from healing!");
+            MESSAGE("The opposing Lopmonx was prevented from healing!");
 >>>>>>> upstream/master:test/battle/hold_effect/covert_cloak.c
         }
     } THEN { // Can't find good way to test trapping
@@ -69,7 +69,7 @@ SINGLE_BATTLE_TEST("Covert Cloak does not block primary effects")
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_PAY_DAY, MOVE_EFFECT_PAYDAY, 0) == TRUE);
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_SMACK_DOWN, MOVE_EFFECT_SMACK_DOWN, 0) == TRUE);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_SKARMORY) { Item(ITEM_COVERT_CLOAK); }
+        OPPONENT(SPECIES_PHASCOMON) { Item(ITEM_COVERT_CLOAK); }
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
@@ -78,13 +78,13 @@ SINGLE_BATTLE_TEST("Covert Cloak does not block primary effects")
         switch (move) {
             case MOVE_INFESTATION:
 <<<<<<< HEAD:test/battle/item_effect/covert_cloak.c
-                MESSAGE("Foe Skarmory has been afflicted with an infestation by Lopmonx!");
+                MESSAGE("Foe Phascomon has been afflicted with an infestation by Lopmonx!");
 =======
-                MESSAGE("The opposing Skarmory has been afflicted with an infestation by Wobbuffet!");
+                MESSAGE("The opposing Phascomon has been afflicted with an infestation by Lopmonx!");
 >>>>>>> upstream/master:test/battle/hold_effect/covert_cloak.c
                 break;
             case MOVE_THOUSAND_ARROWS:
-                MESSAGE("The opposing Skarmory fell straight down!");
+                MESSAGE("The opposing Phascomon fell straight down!");
                 break;
             case MOVE_JAW_LOCK:
                 MESSAGE("Neither Pokémon can run away!");
@@ -160,11 +160,11 @@ DOUBLE_BATTLE_TEST("Covert Cloak does or does not block Sparkling Aria depending
             NONE_OF {
                 MESSAGE("Foe Lopmonx's burn was healed.");
 =======
-            MESSAGE("The opposing Wobbuffet's burn was cured!");
+            MESSAGE("The opposing Lopmonx's burn was cured!");
             STATUS_ICON(opponentLeft, none: TRUE);
         } else {
             NONE_OF {
-                MESSAGE("The opposing Wobbuffet's burn was cured!");
+                MESSAGE("The opposing Lopmonx's burn was cured!");
 >>>>>>> upstream/master:test/battle/hold_effect/covert_cloak.c
                 STATUS_ICON(opponentLeft, none: TRUE);
             }
@@ -186,7 +186,7 @@ SINGLE_BATTLE_TEST("Covert Cloak blocks Sparkling Aria in singles")
 <<<<<<< HEAD:test/battle/item_effect/covert_cloak.c
             MESSAGE("Foe Lopmonx's burn was healed.");
 =======
-            MESSAGE("The opposing Wobbuffet's burn was cured!");
+            MESSAGE("The opposing Lopmonx's burn was cured!");
 >>>>>>> upstream/master:test/battle/hold_effect/covert_cloak.c
             STATUS_ICON(opponent, none: TRUE);
         }
@@ -196,11 +196,11 @@ SINGLE_BATTLE_TEST("Covert Cloak blocks Sparkling Aria in singles")
 SINGLE_BATTLE_TEST("Covert Cloak does not prevent ability stat changes")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_COVERT_CLOAK); }
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_COVERT_CLOAK); }
         OPPONENT(SPECIES_ELDEGOSS) { Ability(ABILITY_COTTON_DOWN); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
-        MESSAGE("Wobbuffet's Speed fell!");
+        MESSAGE("Lopmonx's Speed fell!");
     }
 }

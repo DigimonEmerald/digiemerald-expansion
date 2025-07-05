@@ -80,7 +80,7 @@ SINGLE_BATTLE_TEST("Steel Beam causes the user & the target to faint when below 
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx fainted!");
 =======
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmonx fainted!");
 >>>>>>> upstream/master
         HP_BAR(player, hp: 0);
         MESSAGE("Lopmonx fainted!");
@@ -150,7 +150,7 @@ SINGLE_BATTLE_TEST("Steel Beam is not blocked by Damp")
 <<<<<<< HEAD
             MESSAGE("Foe Demmeramon's Damp prevents Lopmonx from using Steel Beam!");
 =======
-            MESSAGE("The opposing Demmeramon's Damp prevents Wobbuffet from using Steel Beam!");
+            MESSAGE("The opposing Demmeramon's Damp prevents Lopmonx from using Steel Beam!");
 >>>>>>> upstream/master
         }
     }

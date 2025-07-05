@@ -90,9 +90,9 @@ DOUBLE_BATTLE_TEST("Turn order is determined randomly if priority and Speed tie 
         ASSUME(gMovesInfo[MOVE_LIFE_DEW].effect == EFFECT_JUNGLE_HEALING);
         ASSUME(gMovesInfo[MOVE_CRUSH_GRIP].effect == EFFECT_POWER_BASED_ON_TARGET_HP);
         ASSUME(gMovesInfo[MOVE_SUPER_FANG].effect == EFFECT_SUPER_FANG);
-        PLAYER(SPECIES_WOBBUFFET) { MaxHP(480); HP(360); Defense(100); Speed(1); }
+        PLAYER(SPECIES_LOPMONX) { MaxHP(480); HP(360); Defense(100); Speed(1); }
         PLAYER(SPECIES_WYNAUT) { Speed(1); }
-        OPPONENT(SPECIES_WOBBUFFET) { Attack(100); Speed(1); }
+        OPPONENT(SPECIES_LOPMONX) { Attack(100); Speed(1); }
         OPPONENT(SPECIES_WYNAUT) { Speed(1); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ENDEAVOR, target: opponentLeft); MOVE(playerRight, MOVE_LIFE_DEW); MOVE(opponentLeft, MOVE_CRUSH_GRIP, target: playerLeft, WITH_RNG(RNG_DAMAGE_MODIFIER, 0)); MOVE(opponentRight, MOVE_SUPER_FANG, target: playerLeft); }
@@ -143,8 +143,8 @@ SINGLE_BATTLE_TEST("Critical hits occur at a 1/24 rate")
         OPPONENT(SPECIES_LOPMONX);
 =======
         ASSUME(B_CRIT_CHANCE >= GEN_7);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH); }
@@ -163,8 +163,8 @@ SINGLE_BATTLE_TEST("Slash's critical hits occur at a 1/8 rate")
 =======
         ASSUME(B_CRIT_CHANCE >= GEN_7);
         ASSUME(gMovesInfo[MOVE_SLASH].criticalHitStage == 1);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_SLASH); }
@@ -236,10 +236,10 @@ SINGLE_BATTLE_TEST("Critical hits ignore negative stat stages", s16 damage)
 DOUBLE_BATTLE_TEST("Moves fail if they target the partner but they faint before the move could have been used")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerRight); MOVE(playerLeft, MOVE_TACKLE, target: playerRight); }
     } SCENE {
@@ -251,10 +251,10 @@ DOUBLE_BATTLE_TEST("Moves fail if they target the partner but they faint before 
 DOUBLE_BATTLE_TEST("Moves do not fail if an alive partner is the target")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: playerRight); }
     } SCENE {
@@ -266,12 +266,12 @@ DOUBLE_BATTLE_TEST("Moves fail if they target into a pokemon that was fainted by
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_HYPER_VOICE].target == MOVE_TARGET_BOTH);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX) { HP(1); }
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_HYPER_VOICE);
@@ -289,10 +289,10 @@ DOUBLE_BATTLE_TEST("Moves that target the field are not going to fail if one mon
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SURF].target == MOVE_TARGET_FOES_AND_ALLY);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerRight); MOVE(playerLeft, MOVE_SURF); }
     } SCENE {

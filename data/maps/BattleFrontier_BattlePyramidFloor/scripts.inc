@@ -186,19 +186,19 @@ BattlePyramid_Text_ExitHintDown3::
 	.string "that {DOWN_ARROW} way.$"
 
 BattlePyramid_Text_ExitHintUp4::
-	.string "On this floor, the exit is somewhere\n"
+	.string "On this floor, the exit is sofalcomonhere\n"
 	.string "in the {UP_ARROW} direction.$"
 
 BattlePyramid_Text_ExitHintLeft4::
-	.string "On this floor, the exit is somewhere\n"
+	.string "On this floor, the exit is sofalcomonhere\n"
 	.string "in the {LEFT_ARROW} direction.$"
 
 BattlePyramid_Text_ExitHintRight4::
-	.string "On this floor, the exit is somewhere\n"
+	.string "On this floor, the exit is sofalcomonhere\n"
 	.string "in the {RIGHT_ARROW} direction.$"
 
 BattlePyramid_Text_ExitHintDown4::
-	.string "On this floor, the exit is somewhere\n"
+	.string "On this floor, the exit is sofalcomonhere\n"
 	.string "in the {DOWN_ARROW} direction.$"
 
 BattlePyramid_Text_ExitHintUp5::

@@ -23,7 +23,7 @@ SINGLE_BATTLE_TEST("Zen Mode switches Darmanitan's form when HP is half or less 
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Tackle!");
 =======
-        MESSAGE("The opposing Wobbuffet used Tackle!");
+        MESSAGE("The opposing Lopmonx used Tackle!");
 >>>>>>> upstream/master
         HP_BAR(player);
         ABILITY_POPUP(player, ABILITY_ZEN_MODE);
@@ -58,7 +58,7 @@ SINGLE_BATTLE_TEST("Zen Mode switches Darmanitan's form when HP is half or less 
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_LE(player->hp, player->maxHP / 2);
@@ -90,7 +90,7 @@ SINGLE_BATTLE_TEST("Zen Mode switches Darmanitan's form when HP is healed above 
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx used Heal Pulse!");
 =======
-        MESSAGE("The opposing Wobbuffet used Heal Pulse!");
+        MESSAGE("The opposing Lopmonx used Heal Pulse!");
 >>>>>>> upstream/master
         HP_BAR(player);
         ABILITY_POPUP(player, ABILITY_ZEN_MODE);

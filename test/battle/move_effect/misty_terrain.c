@@ -15,9 +15,9 @@ SINGLE_BATTLE_TEST("Misty Terrain protects grounded battlers from non-volatile s
         MESSAGE("Foe Diatrymon used Toxic!");
         MESSAGE("Lopmonx surrounds itself with a protective mist!");
 =======
-        MESSAGE("Wobbuffet used Misty Terrain!");
+        MESSAGE("Lopmonx used Misty Terrain!");
         MESSAGE("The opposing Claydol used Toxic!");
-        MESSAGE("Wobbuffet surrounds itself with a protective mist!");
+        MESSAGE("Lopmonx surrounds itself with a protective mist!");
 >>>>>>> upstream/master:test/battle/move_effect/misty_terrain.c
         NOT { STATUS_ICON(opponent, badPoison: TRUE); }
         MESSAGE("Lopmonx used Toxic!");
@@ -102,7 +102,7 @@ SINGLE_BATTLE_TEST("Misty Terrain lasts for 5 turns")
 <<<<<<< HEAD:test/battle/terrain/misty.c
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master:test/battle/move_effect/misty_terrain.c
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MISTY_TERRAIN, player);
         MESSAGE("Mist swirled around the battlefield!");
@@ -117,14 +117,14 @@ SINGLE_BATTLE_TEST("Misty Terrain lasts for 5 turns")
         MESSAGE("Lopmonx used Celebrate!");
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master:test/battle/move_effect/misty_terrain.c
 
         MESSAGE("The mist disappeared from the battlefield.");

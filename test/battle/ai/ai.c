@@ -445,7 +445,7 @@ AI_DOUBLE_BATTLE_TEST("AI will not use Helping Hand if partner does not have any
 <<<<<<< HEAD:test/battle/ai.c
         NOT MESSAGE("Foe Lopmonx used Helping Hand!");
 =======
-        NOT MESSAGE("The opposing Wobbuffet used Helping Hand!");
+        NOT MESSAGE("The opposing Lopmonx used Helping Hand!");
 >>>>>>> upstream/master:test/battle/ai/ai.c
     }
 }
@@ -478,7 +478,7 @@ AI_DOUBLE_BATTLE_TEST("AI will not use a status move if partner already chose He
 <<<<<<< HEAD:test/battle/ai.c
         MESSAGE("Foe Lopmonx used Helping Hand!");
 =======
-        MESSAGE("The opposing Wobbuffet used Helping Hand!");
+        MESSAGE("The opposing Lopmonx used Helping Hand!");
 >>>>>>> upstream/master:test/battle/ai/ai.c
     }
 }
@@ -719,9 +719,9 @@ AI_SINGLE_BATTLE_TEST("AI_FLAG_SMART_MON_CHOICES: U-Turn will send out Ace Mon i
     GIVEN {
         ASSUME(gMovesInfo[MOVE_U_TURN].effect == EFFECT_HIT_ESCAPE);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_ACE_POKEMON);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_U_TURN); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_U_TURN); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { EXPECT_MOVE(opponent, MOVE_U_TURN); EXPECT_SEND_OUT(opponent, 1); }
     }
@@ -869,8 +869,8 @@ AI_SINGLE_BATTLE_TEST("AI will only choose Surf 1/3 times if the opposing mon ha
         MESSAGE("Foe Guilmon used Surf!");
         MESSAGE("Foe Guilmon used Surf!");
 =======
-        MESSAGE("The opposing Lanturn used Surf!");
-        MESSAGE("The opposing Lanturn used Surf!");
+        MESSAGE("The opposing Guilmon used Surf!");
+        MESSAGE("The opposing Guilmon used Surf!");
 >>>>>>> upstream/master:test/battle/ai/ai.c
     }
 }
@@ -891,8 +891,8 @@ AI_SINGLE_BATTLE_TEST("AI will choose Thunderbolt then Surf 2/3 times if the opp
         MESSAGE("Foe Guilmon used Thunderbolt!");
         MESSAGE("Foe Guilmon used Surf!");
 =======
-        MESSAGE("The opposing Lanturn used Thunderbolt!");
-        MESSAGE("The opposing Lanturn used Surf!");
+        MESSAGE("The opposing Guilmon used Thunderbolt!");
+        MESSAGE("The opposing Guilmon used Surf!");
 >>>>>>> upstream/master:test/battle/ai/ai.c
     }
 }
@@ -955,14 +955,14 @@ AI_DOUBLE_BATTLE_TEST("AI will not choose Earthquake if it damages the partner")
 
     PARAMETRIZE { species = SPECIES_CHIBOMON; }
     PARAMETRIZE { species = SPECIES_BOTAMON; }
-    PARAMETRIZE { species = SPECIES_CHIKORITA; }
+    PARAMETRIZE { species = SPECIES_FALCOMON_06; }
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_EARTHQUAKE].target == MOVE_TARGET_FOES_AND_ALLY);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_PHANPY) { Moves(MOVE_EARTHQUAKE, MOVE_TACKLE); }
+        OPPONENT(SPECIES_PULSEMON) { Moves(MOVE_EARTHQUAKE, MOVE_TACKLE); }
         OPPONENT(species) { Moves(MOVE_CELEBRATE); }
     } WHEN {
         if (species == SPECIES_CHIBOMON)
@@ -1035,7 +1035,7 @@ AI_SINGLE_BATTLE_TEST("AI calculates guaranteed criticals and detects critical i
         ASSUME(gMovesInfo[MOVE_STORM_THROW].type == gMovesInfo[MOVE_BRICK_BREAK].type);
         ASSUME(gMovesInfo[MOVE_STORM_THROW].category == gMovesInfo[MOVE_BRICK_BREAK].category);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
-        PLAYER(SPECIES_OMASTAR) { Ability(ability); }
+        PLAYER(SPECIES_DORUMON) { Ability(ability); }
         OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_STORM_THROW, MOVE_BRICK_BREAK); }
     } WHEN {
         if (ability == ABILITY_SHELL_ARMOR)
@@ -1052,8 +1052,8 @@ AI_DOUBLE_BATTLE_TEST("AI recognizes Volt Absorb received from Trace")
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_PICKMON_RED);
         PLAYER(SPECIES_GARDEVOIR) { Ability(ABILITY_TRACE); }
-        OPPONENT(SPECIES_JOLTEON) { Ability(ABILITY_VOLT_ABSORB); Moves(MOVE_THUNDER_WAVE, MOVE_THUNDERSHOCK, MOVE_WATER_GUN); }
-        OPPONENT(SPECIES_JOLTEON) { Ability(ABILITY_VOLT_ABSORB); Moves(MOVE_THUNDER_WAVE, MOVE_THUNDERSHOCK, MOVE_WATER_GUN); }
+        OPPONENT(SPECIES_DAMEMON) { Ability(ABILITY_VOLT_ABSORB); Moves(MOVE_THUNDER_WAVE, MOVE_THUNDERSHOCK, MOVE_WATER_GUN); }
+        OPPONENT(SPECIES_DAMEMON) { Ability(ABILITY_VOLT_ABSORB); Moves(MOVE_THUNDER_WAVE, MOVE_THUNDERSHOCK, MOVE_WATER_GUN); }
     } WHEN {
         TURN { NOT_EXPECT_MOVE(opponentLeft, MOVE_THUNDERSHOCK); NOT_EXPECT_MOVE(opponentLeft, MOVE_THUNDER_WAVE); NOT_EXPECT_MOVE(opponentRight, MOVE_THUNDER_WAVE); }
     } THEN {
@@ -1099,7 +1099,7 @@ AI_SINGLE_BATTLE_TEST("AI uses a guaranteed KO move instead of the move with the
         ASSUME(gMovesInfo[MOVE_SLASH].type == gMovesInfo[MOVE_STRENGTH].type);
         ASSUME(gMovesInfo[MOVE_SLASH].category == gMovesInfo[MOVE_STRENGTH].category);
         AI_FLAGS(flags);
-        PLAYER(SPECIES_WOBBUFFET) { HP(225); }
+        PLAYER(SPECIES_LOPMONX) { HP(225); }
         OPPONENT(SPECIES_ABSOL) { Ability(ABILITY_SUPER_LUCK); Moves(MOVE_SLASH, MOVE_STRENGTH); }
     } WHEN {
         TURN { EXPECT_MOVE(opponent, MOVE_SLASH); }
@@ -1109,9 +1109,9 @@ AI_SINGLE_BATTLE_TEST("AI uses a guaranteed KO move instead of the move with the
             TURN { EXPECT_MOVE(opponent, MOVE_SLASH); }
     } SCENE {
         if (flags & AI_FLAG_TRY_TO_FAINT)
-            MESSAGE("Wobbuffet fainted!");
+            MESSAGE("Lopmonx fainted!");
         else
-            NOT MESSAGE("Wobbuffet fainted!");
+            NOT MESSAGE("Lopmonx fainted!");
     }
 }
 
@@ -1131,9 +1131,9 @@ AI_SINGLE_BATTLE_TEST("AI stays choice locked into moves in spite of the player'
         ASSUME(gMovesInfo[MOVE_BULLET_SEED].ballisticMove == TRUE);
         ASSUME(gMovesInfo[MOVE_TAIL_WHIP].category == DAMAGE_CATEGORY_STATUS);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(playerMon) { Ability(ability); }
-        OPPONENT(SPECIES_SMEARGLE) { Item(ITEM_CHOICE_BAND); Moves(aiMove, MOVE_TACKLE); }
+        OPPONENT(SPECIES_RYUDAMON) { Item(ITEM_CHOICE_BAND); Moves(aiMove, MOVE_TACKLE); }
     } WHEN {
         TURN { SWITCH(player, 1); EXPECT_MOVE(opponent, aiMove); }
         TURN { EXPECT_MOVE(opponent, aiMove); }

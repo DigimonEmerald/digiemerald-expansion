@@ -51,7 +51,7 @@ SINGLE_BATTLE_TEST("Protective Pads doesn't invalid unseen fist")
         OPPONENT(SPECIES_LOPMONX);
 =======
         PLAYER(SPECIES_URSHIFU_RAPID_STRIKE) { Ability(ABILITY_UNSEEN_FIST); Item(ITEM_PROTECTIVE_PADS); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(opponent, MOVE_PROTECT); MOVE(player, MOVE_TACKLE); }
@@ -77,7 +77,7 @@ SINGLE_BATTLE_TEST("Protective Pads protects from Rocly Helmet Damage")
 <<<<<<< HEAD
             MESSAGE("Lopmonx was hurt by Foe Lopmonx's Rocky Helmet!");
 =======
-            MESSAGE("Wobbuffet was hurt by the opposing Wobbuffet's Rocky Helmet!");
+            MESSAGE("Lopmonx was hurt by the opposing Lopmonx's Rocky Helmet!");
 >>>>>>> upstream/master
         }
     }

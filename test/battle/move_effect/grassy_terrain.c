@@ -33,16 +33,16 @@ SINGLE_BATTLE_TEST("Grassy Terrain activates Grassy Seed and Mimicry")
     } THEN {
         EXPECT_EQ(gBattleMons[B_POSITION_OPPONENT_LEFT].type1, TYPE_GRASS);
 =======
-        PLAYER(SPECIES_WOBBUFFET) { MaxHP(100); HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET) { MaxHP(100); HP(1); };
+        PLAYER(SPECIES_LOPMONX) { MaxHP(100); HP(1); }
+        OPPONENT(SPECIES_LOPMONX) { MaxHP(100); HP(1); };
     } WHEN {
         TURN { MOVE(player, MOVE_GRASSY_TERRAIN); }
     } SCENE {
         s32 maxHPPlayer = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
         s32 maxHPOpponent = GetMonData(&OPPONENT_PARTY[0], MON_DATA_MAX_HP);
-        MESSAGE("Wobbuffet is healed by the grassy terrain!");
+        MESSAGE("Lopmonx is healed by the grassy terrain!");
         HP_BAR(player, damage: -maxHPPlayer / 16);
-        MESSAGE("The opposing Wobbuffet is healed by the grassy terrain!");
+        MESSAGE("The opposing Lopmonx is healed by the grassy terrain!");
         HP_BAR(opponent, damage: -maxHPOpponent / 16);
 >>>>>>> upstream/master:test/battle/move_effect/grassy_terrain.c
     }
@@ -97,18 +97,18 @@ SINGLE_BATTLE_TEST("Grassy Terrain lasts for 5 turns")
         MESSAGE("Lopmonx used Celebrate!");
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GRASSY_TERRAIN, player);
         MESSAGE("Grass grew to cover the battlefield!");
 
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 
-        MESSAGE("Wobbuffet used Celebrate!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master:test/battle/move_effect/grassy_terrain.c
 
         MESSAGE("The grass disappeared from the battlefield.");
@@ -118,8 +118,8 @@ SINGLE_BATTLE_TEST("Grassy Terrain lasts for 5 turns")
 SINGLE_BATTLE_TEST("Grassy Terrain heals the pokemon on the field for the duration of the terrain, including last turn")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); };
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { HP(1); };
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_GRASSY_TERRAIN); }
         TURN {}
@@ -127,14 +127,14 @@ SINGLE_BATTLE_TEST("Grassy Terrain heals the pokemon on the field for the durati
         TURN {}
         TURN {}
     } SCENE {
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GRASSY_TERRAIN, player);
         MESSAGE("Grass grew to cover the battlefield!");
-        MESSAGE("The opposing Wobbuffet is healed by the grassy terrain!");
-        MESSAGE("The opposing Wobbuffet is healed by the grassy terrain!");
-        MESSAGE("The opposing Wobbuffet is healed by the grassy terrain!");
-        MESSAGE("The opposing Wobbuffet is healed by the grassy terrain!");
-        MESSAGE("The opposing Wobbuffet is healed by the grassy terrain!");
+        MESSAGE("The opposing Lopmonx is healed by the grassy terrain!");
+        MESSAGE("The opposing Lopmonx is healed by the grassy terrain!");
+        MESSAGE("The opposing Lopmonx is healed by the grassy terrain!");
+        MESSAGE("The opposing Lopmonx is healed by the grassy terrain!");
+        MESSAGE("The opposing Lopmonx is healed by the grassy terrain!");
         MESSAGE("The grass disappeared from the battlefield.");
     }
 }

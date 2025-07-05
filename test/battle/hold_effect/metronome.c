@@ -124,9 +124,9 @@ SINGLE_BATTLE_TEST("Metronome Item counts charging turn of moves for its attacki
         MESSAGE("Lopmonx took in sunlight!");
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("Wobbuffet used Solar Beam!");
-        MESSAGE("Wobbuffet absorbed light!");
-        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("Lopmonx used Solar Beam!");
+        MESSAGE("Lopmonx absorbed light!");
+        MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
         MESSAGE("Congratulations, 1!");
         MESSAGE("Lopmonx used Solar Beam!");

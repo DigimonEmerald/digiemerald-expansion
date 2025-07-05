@@ -24,7 +24,7 @@ SINGLE_BATTLE_TEST("Zacian changes into its Crowned Form when holding the Rusted
         OPPONENT(SPECIES_LOPMONX);
 =======
         PLAYER(SPECIES_ZACIAN_HERO) { Item(item); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE); }
@@ -44,7 +44,7 @@ SINGLE_BATTLE_TEST("Zacian's Iron Head becomes Behemoth Blade upon form change")
         OPPONENT(SPECIES_LOPMONX);
 =======
         PLAYER(SPECIES_ZACIAN_HERO) { Item(ITEM_RUSTED_SWORD); Moves(MOVE_IRON_HEAD, MOVE_CELEBRATE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE); }
@@ -65,7 +65,7 @@ SINGLE_BATTLE_TEST("Zamazenta changes into its Crowned Form when holding the Rus
         OPPONENT(SPECIES_LOPMONX);
 =======
         PLAYER(SPECIES_ZAMAZENTA_HERO) { Item(item); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE); }
@@ -85,7 +85,7 @@ SINGLE_BATTLE_TEST("Zamazenta's Iron Head becomes Behemoth Bash upon form change
         OPPONENT(SPECIES_LOPMONX);
 =======
         PLAYER(SPECIES_ZAMAZENTA_HERO) { Item(ITEM_RUSTED_SHIELD); Moves(MOVE_IRON_HEAD, MOVE_CELEBRATE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE); }
