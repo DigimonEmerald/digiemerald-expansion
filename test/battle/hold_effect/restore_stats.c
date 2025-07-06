@@ -125,7 +125,7 @@ SINGLE_BATTLE_TEST("White Herb restores stats after all hits of a multi hit move
 
 <<<<<<< HEAD
     PARAMETRIZE { species = SPECIES_SLIGGOO_HISUIAN; ability = ABILITY_GOOEY; }
-    PARAMETRIZE { species = SPECIES_BUKAMON_ALOLAN; ability = ABILITY_TANGLING_HAIR; }
+    PARAMETRIZE { species = SPECIES_BUKAMON_ALOLA; ability = ABILITY_TANGLING_HAIR; }
 =======
     PARAMETRIZE { species = SPECIES_SLIGGOO_HISUI; ability = ABILITY_GOOEY; }
     PARAMETRIZE { species = SPECIES_BUKAMON_ALOLA; ability = ABILITY_TANGLING_HAIR; }

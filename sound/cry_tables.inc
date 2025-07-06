@@ -415,7 +415,7 @@ gCryTable::
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Renamon_x
 .if P_GEN_4_CROSS_EVOS == TRUE
-	cry Cry_DokunemonZ
+	cry Cry_Porygonz
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_DOKUNEMON
@@ -2843,7 +2843,7 @@ gCryTable_Reverse::
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Renamon_x
 .if P_GEN_4_CROSS_EVOS == TRUE
-	cry_reverse Cry_DokunemonZ
+	cry_reverse Cry_Porygonz
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_DOKUNEMON

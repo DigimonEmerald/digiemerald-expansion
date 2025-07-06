@@ -5420,8 +5420,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_betamon_xite,
-        .iconPalette = gItemIconPalette_betamon_xite,
+        .iconPic = gItemIcon_Betamon_xite,
+        .iconPalette = gItemIconPalette_Betamon_xite,
     },
 
     [ITEM_TYUTYUMONITE] =
@@ -14138,7 +14138,7 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
-        .iconPic = gItemIcon_CourageEggy,
+        .iconPic = gItemIcon_CourageEgg,
         .iconPalette = gItemIconPalette_CourageEgg,
     },
 

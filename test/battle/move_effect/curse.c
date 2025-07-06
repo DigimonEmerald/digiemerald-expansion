@@ -38,7 +38,7 @@ SINGLE_BATTLE_TEST("Curse cuts the user's HP in half when used by Ghost-types")
 SINGLE_BATTLE_TEST("Curse applies to the user if used with Protean")
 {
     GIVEN {
-        PLAYER(SPECIES_DONSHOUMOON) { Ability(ABILITY_PROTEAN); }
+        PLAYER(SPECIES_DONSHOUMON) { Ability(ABILITY_PROTEAN); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_CURSE, target: player); }

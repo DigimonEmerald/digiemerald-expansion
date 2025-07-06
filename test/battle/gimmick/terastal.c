@@ -283,12 +283,12 @@ SINGLE_BATTLE_TEST("(TERA) Terastallization changes the effect of Curse")
 SINGLE_BATTLE_TEST("(TERA) Roost does not remove the user's Flying type while Terastallized")
 {
     GIVEN {
-        PLAYER(SPECIES_ZAPDOS) { HP(1); TeraType(TYPE_FLYING); }
+        PLAYER(SPECIES_EBIBURGMON) { HP(1); TeraType(TYPE_FLYING); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_ICE_BEAM); }
     } SCENE {
-        MESSAGE("Zapdos used Roost!");
+        MESSAGE("Ebiburgmon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
         MESSAGE("The opposing Lopmonx used Ice Beam!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ICE_BEAM, opponent);
@@ -551,12 +551,12 @@ SINGLE_BATTLE_TEST("(TERA) Conversion2 fails if last hit by a Stellar-type move"
 SINGLE_BATTLE_TEST("(TERA) Roost does not remove Flying-type ground immunity when Terastallized into the Stellar type")
 {
     GIVEN {
-        PLAYER(SPECIES_ZAPDOS) { HP(1); TeraType(TYPE_STELLAR); }
+        PLAYER(SPECIES_EBIBURGMON) { HP(1); TeraType(TYPE_STELLAR); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_ICE_BEAM); }
     } SCENE {
-        MESSAGE("Zapdos used Roost!");
+        MESSAGE("Ebiburgmon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
         MESSAGE("The opposing Lopmonx used Ice Beam!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ICE_BEAM, opponent);

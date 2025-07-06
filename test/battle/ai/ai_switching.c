@@ -132,7 +132,7 @@ AI_SINGLE_BATTLE_TEST("AI_FLAG_SMART_MON_CHOICES: Number of hits to KO calculati
         // Scenario courtesy of Duke, who triggered the bug in the first place
         OPPONENT(SPECIES_MONIMON) { Level(100); Moves(MOVE_TACKLE); }
         OPPONENT(SPECIES_MONIMON) { Level(100); Moves(MOVE_TACKLE); }
-        OPPONENT(SPECIES_NOSEPASS) { Level(100); Moves(MOVE_TACKLE); }
+        OPPONENT(SPECIES_BIOTHUNMON) { Level(100); Moves(MOVE_TACKLE); }
     } WHEN {
             TURN { MOVE(player, MOVE_SWORDS_DANCE); EXPECT_MOVES(opponent, MOVE_TACKLE); }
     } SCENE {
@@ -150,7 +150,7 @@ AI_SINGLE_BATTLE_TEST("AI_FLAG_SMART_MON_CHOICES: Avoid infinite loop if damage 
         OPPONENT(SPECIES_CALUMON_GALAR) { Level(5); Moves(MOVE_GROWL, MOVE_FAKE_OUT, MOVE_HONE_CLAWS); }
         OPPONENT(SPECIES_MONIMON) { Level(5); Moves(MOVE_DOUBLE_EDGE); }
         OPPONENT(SPECIES_MONIMON) { Level(5); Moves(MOVE_DOUBLE_EDGE); }
-        OPPONENT(SPECIES_NOSEPASS) { Level(5); Moves(MOVE_DOUBLE_EDGE); }
+        OPPONENT(SPECIES_BIOTHUNMON) { Level(5); Moves(MOVE_DOUBLE_EDGE); }
         OPPONENT(SPECIES_HOUNDSTONE) { Level(5); Moves(MOVE_NIGHT_SHADE, MOVE_BODY_PRESS, MOVE_WILL_O_WISP, MOVE_PROTECT); Item(ITEM_LEFTOVERS); }
     } WHEN {
             TURN { MOVE(player, MOVE_FAKE_OUT); EXPECT_MOVES(opponent, MOVE_FAKE_OUT); }

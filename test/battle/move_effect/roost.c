@@ -241,10 +241,10 @@ DOUBLE_BATTLE_TEST("Roost suppresses the user's not-yet-aquired Flying-type this
     } SCENE {
         MESSAGE("Donshoumon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, playerLeft);
-        MESSAGE("Donshoumoon's HP was restored.");
+        MESSAGE("Donshoumon's HP was restored.");
         MESSAGE("The opposing Ketomon used Gust!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GUST, opponentLeft);
-        MESSAGE("Donshoumoon's Color Change made it the Flying type!");
+        MESSAGE("Donshoumon's Color Change made it the Flying type!");
         MESSAGE("The opposing Popomon used Earthquake!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponentRight);
         MESSAGE("Donshoumon's Color Change made it the Ground type!");

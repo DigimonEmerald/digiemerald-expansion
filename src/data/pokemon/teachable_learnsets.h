@@ -7705,7 +7705,7 @@ static const u16 sRenamon_xTeachableLearnset[] = {
 };
 
 #if P_GEN_4_CROSS_EVOS
-static const u16 sDokunemonZTeachableLearnset[] = {
+static const u16 sPorygonzTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BLIZZARD,
     MOVE_DOUBLE_TEAM,
@@ -8136,7 +8136,7 @@ static const u16 sEbiburgmonTeachableLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const u16 sZapdosGalarTeachableLearnset[] = {
+static const u16 sEbiburgmonGalarTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,

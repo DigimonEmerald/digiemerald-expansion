@@ -489,8 +489,8 @@ static const u16 sCalumonGalarEggMoveLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_CALUMON
 
-#if P_FAMILY_CHICCIMON
-static const u16 sChiccimonEggMoveLearnset[] = {
+#if P_FAMILY_CHICCHIMON
+static const u16 sChicchimonEggMoveLearnset[] = {
     MOVE_HYPNOSIS,
     MOVE_PSYBEAM,
     MOVE_FORESIGHT,
@@ -508,7 +508,7 @@ static const u16 sChiccimonEggMoveLearnset[] = {
     MOVE_CLEAR_SMOG,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CHICCIMON
+#endif //P_FAMILY_CHICCHIMON
 
 #if P_FAMILY_DEMIVEEMON
 static const u16 sDemiveemonEggMoveLearnset[] = {
@@ -1920,8 +1920,8 @@ static const u16 sLucemonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_LUCEMON
 
-#if P_FAMILY_PINECO
-static const u16 sPinecoEggMoveLearnset[] = {
+#if P_FAMILY_LUDOMON
+static const u16 sLudomonEggMoveLearnset[] = {
     MOVE_PIN_MISSILE,
     MOVE_FLAIL,
     MOVE_SWIFT,
@@ -1935,7 +1935,7 @@ static const u16 sPinecoEggMoveLearnset[] = {
     MOVE_STEALTH_ROCK,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PINECO
+#endif //P_FAMILY_LUDOMON
 
 #if P_FAMILY_LUXMON
 static const u16 sLuxmonEggMoveLearnset[] = {
@@ -2640,8 +2640,8 @@ static const u16 sBetgamamonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_BETGAMAMON
 
-#if P_FAMILY_NOSEPASS
-static const u16 sNosepassEggMoveLearnset[] = {
+#if P_FAMILY_BIOTHUNMON
+static const u16 sBiothunmonEggMoveLearnset[] = {
     MOVE_MAGNITUDE,
     MOVE_ROLLOUT,
     MOVE_DOUBLE_EDGE,
@@ -2651,7 +2651,7 @@ static const u16 sNosepassEggMoveLearnset[] = {
     MOVE_WIDE_GUARD,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_NOSEPASS
+#endif //P_FAMILY_BIOTHUNMON
 
 #if P_FAMILY_BIRDRAMON
 static const u16 sBirdramonEggMoveLearnset[] = {
@@ -3182,8 +3182,8 @@ static const u16 sDolphmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_DOLPHMON
 
-#if P_FAMILY_DONSHOUMOON
-static const u16 sDonshoumoonEggMoveLearnset[] = {
+#if P_FAMILY_DONSHOUMON
+static const u16 sDonshoumonEggMoveLearnset[] = {
     MOVE_DISABLE,
     MOVE_MAGIC_COAT,
     MOVE_TRICK,
@@ -3198,7 +3198,7 @@ static const u16 sDonshoumoonEggMoveLearnset[] = {
     MOVE_POWER_UP_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DONSHOUMOON
+#endif //P_FAMILY_DONSHOUMON
 
 #if P_FAMILY_DORUGAMON
 static const u16 sDorugamonEggMoveLearnset[] = {

@@ -2982,7 +2982,6 @@ u8 DoBattlerEndTurnEffects(void)
             if ((gBattleMons[battler].status1 & STATUS1_BURN)
                 && gBattleMons[battler].hp != 0)
             {
-                MAGIC_GUARD_CHECK;
                 gBattleMoveDamage = GetNonDynamaxMaxHP(battler) / 16;
                 if (gBattleMoveDamage == 0)
                     gBattleMoveDamage = 1;

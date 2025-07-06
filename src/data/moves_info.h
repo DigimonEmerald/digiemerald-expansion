@@ -586,7 +586,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
         .assistBanned = TRUE,
-        .argument = TWO_TURN_ARG(STRINGID_PKMNFLEWHIGH, COMPRESS_BITS(STATUS3_ON_AIR)),
+        .argument = TWO_TURN_ARG(STRINGID_PKMNFLEWHIGH),
         .contestEffect = CONTEST_EFFECT_AVOID_STARTLE,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
@@ -2370,7 +2370,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .instructBanned = TRUE,
         .assistBanned = TRUE,
         .skyBattleBanned = TRUE,
-        .argument = TWO_TURN_ARG(STRINGID_PKMNDUGHOLE, COMPRESS_BITS(STATUS3_UNDERGROUND)),
+        .argument = TWO_TURN_ARG(STRINGID_PKMNDUGHOLE),
         .contestEffect = CONTEST_EFFECT_AVOID_STARTLE,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
@@ -7388,7 +7388,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .instructBanned = TRUE,
         .assistBanned = TRUE,
         .skyBattleBanned = TRUE,
-        .argument = TWO_TURN_ARG(STRINGID_PKMNHIDUNDERWATER, COMPRESS_BITS(STATUS3_UNDERWATER)),
+        .argument = TWO_TURN_ARG(STRINGID_PKMNHIDUNDERWATER),
         .contestEffect = CONTEST_EFFECT_AVOID_STARTLE_ONCE,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
         .contestComboStarterId = COMBO_STARTER_DIVE,
@@ -8596,7 +8596,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
         .assistBanned = TRUE,
-        .argument = TWO_TURN_ARG(STRINGID_PKMNSPRANGUP, COMPRESS_BITS(STATUS3_ON_AIR)),
+        .argument = TWO_TURN_ARG(STRINGID_PKMNSPRANGUP),
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_PARALYSIS,
             .chance = 30,
@@ -11699,7 +11699,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
         .assistBanned = TRUE,
-        .argument = TWO_TURN_ARG(STRINGID_VANISHEDINSTANTLY, COMPRESS_BITS(STATUS3_PHANTOM_FORCE)),
+        .argument = TWO_TURN_ARG(STRINGID_VANISHEDINSTANTLY),
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_FEINT,
         }),
@@ -12666,7 +12666,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
         .assistBanned = TRUE,
-        .argument = TWO_TURN_ARG(STRINGID_PKMNTOOKTARGETHIGH, COMPRESS_BITS(STATUS3_ON_AIR)),
+        .argument = TWO_TURN_ARG(STRINGID_PKMNTOOKTARGETHIGH),
         .contestEffect = CONTEST_EFFECT_AVOID_STARTLE,
         .contestCategory = CONTEST_CATEGORY_SMART,
         .contestComboStarterId = 0,
@@ -14104,7 +14104,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
         .assistBanned = TRUE,
-        .argument = TWO_TURN_ARG(STRINGID_VANISHEDINSTANTLY, COMPRESS_BITS(STATUS3_PHANTOM_FORCE)),
+        .argument = TWO_TURN_ARG(STRINGID_VANISHEDINSTANTLY),
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_FEINT,
         }),
@@ -20784,7 +20784,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_DRAGLESS_SPIKER] =
     {
-        .name = HANDLE_EXPANDED_MOVE_NAME("Drglss Spikr", "Dragless Spiker"),
+        .name = COMPOUND_STRING("Dragless Spiker"),
         .description = COMPOUND_STRING(
             "Bisects the enemy with its.\n"
             "claws. High Crit Ratio."),
@@ -20807,7 +20807,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_ELECTRO_SHOCKER] =
     {
-        .name = HANDLE_EXPANDED_MOVE_NAME("Electroshock", "Electro Shocker"),
+        .name = COMPOUND_STRING("Electro Shocker"),
         .description = COMPOUND_STRING(
             "The user discharges an electric\n"
             "orb. May cause paralysis."),
@@ -20878,7 +20878,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_PEPPER_BREATH] =
     {
-        .name = HANDLE_EXPANDED_MOVE_NAME("Baby Flame", "Pepper Breath"),
+        .name = COMPOUND_STRING("Pepper Breath"),
         .description = COMPOUND_STRING(
             "The user breathes out spicy\n"
             "flames that always burn."),
@@ -20947,7 +20947,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_DASH_DOUBLE_CLAW] =
     {
-        .name = HANDLE_EXPANDED_MOVE_NAME("Dsh Dbl Claw", "Dash Double Claw"),
+        .name = COMPOUND_STRING("Dash Double Claw"),
         .description = COMPOUND_STRING(
             "The user slams both forepaws\n"
             "into the foe. Hits Twice."),
@@ -21074,7 +21074,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
 
     [MOVE_CELESTIAL_CROSS] =
     {
-        .name = HANDLE_EXPANDED_MOVE_NAME("Celstl Cross", "Celestial Cross"),
+        .name = COMPOUND_STRING("Celestial Cross"),
         .description = COMPOUND_STRING(
             "The user passes judgement with\n"
             "with a holy sword. Converts for"),

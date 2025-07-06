@@ -1531,7 +1531,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Donshoumoon
+Donshoumon
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1645,7 +1645,7 @@ Moonmon
 Level: 33
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Ludicolo
+Agunimon
 Level: 33
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1832,7 +1832,7 @@ Blimpmon
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Ludicolo
+Agunimon
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -2326,7 +2326,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Donshoumoon
+Donshoumon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bind
@@ -2426,7 +2426,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Donshoumoon
+Donshoumon
 Level: 35
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 - Bind
@@ -2451,7 +2451,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Donshoumoon
+Donshoumon
 Level: 38
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 - Bind
@@ -2476,7 +2476,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Donshoumoon
+Donshoumon
 Level: 41
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Bind
@@ -2501,7 +2501,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Donshoumoon
+Donshoumon
 Level: 44
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Bind
@@ -3786,7 +3786,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Donshoumoon
+Donshoumon
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4814,7 +4814,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rock Throw
 - Rock Tomb
 
-Nosepass @ Oran Berry
+Biothunmon @ Oran Berry
 Level: 15
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Block
@@ -6267,7 +6267,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sludge Bomb
 - Ice Beam
 
-Ludicolo
+Agunimon
 Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Giga Drain
@@ -8755,7 +8755,7 @@ Atamademon
 Level: 40
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Arcadiamon_IT
+Arcadiamon_it
 Level: 40
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -9443,7 +9443,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Ludicolo
+Agunimon
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10332,7 +10332,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Donshoumoon
+Donshoumon
 Level: 39
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
@@ -10958,7 +10958,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Donshoumoon
+Donshoumon
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11532,7 +11532,7 @@ Monimon
 Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nosepass
+Biothunmon
 Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11869,7 +11869,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Donshoumoon
+Donshoumon
 Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Flamethrower
@@ -12287,7 +12287,7 @@ Ankylomon
 Level: 32
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-Ludicolo
+Agunimon
 Level: 32
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -12308,7 +12308,7 @@ Elephanmon
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-Ludicolo
+Agunimon
 Level: 32
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -12362,7 +12362,7 @@ Ankylomon
 Level: 32
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-Ludicolo
+Agunimon
 Level: 32
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -12383,7 +12383,7 @@ Elephanmon
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-Ludicolo
+Agunimon
 Level: 32
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -12486,7 +12486,7 @@ Allomon
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Nosepass
+Biothunmon
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -14187,7 +14187,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Roar
 - Rock Slide
 
-Nosepass @ Sitrus Berry
+Biothunmon @ Sitrus Berry
 Level: 37
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Double Team
@@ -14237,7 +14237,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Roar
 - Rock Slide
 
-Nosepass @ Sitrus Berry
+Biothunmon @ Sitrus Berry
 Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Double Team
@@ -14287,7 +14287,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Roar
 - Rock Slide
 
-Nosepass @ Sitrus Berry
+Biothunmon @ Sitrus Berry
 Level: 47
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Double Team
@@ -14345,7 +14345,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Roar
 - Rock Slide
 
-Nosepass @ Sitrus Berry
+Biothunmon @ Sitrus Berry
 Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Double Team
@@ -16028,7 +16028,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Nosepass
+Biothunmon
 Level: 33
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -16049,7 +16049,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Nosepass
+Biothunmon
 Level: 35
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -16070,7 +16070,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Nosepass
+Biothunmon
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -16694,7 +16694,7 @@ Tsukaimon
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Ludicolo
+Agunimon
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 

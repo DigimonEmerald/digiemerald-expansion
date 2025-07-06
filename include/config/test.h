@@ -85,8 +85,8 @@
 #define P_FAMILY_BUDMON                 TRUE
 #undef P_FAMILY_CALUMON
 #define P_FAMILY_CALUMON                  TRUE
-#undef P_FAMILY_CHICCIMON
-#define P_FAMILY_CHICCIMON                 TRUE
+#undef P_FAMILY_CHICCHIMON
+#define P_FAMILY_CHICCHIMON                 TRUE
 #undef P_FAMILY_DEMIVEEMON
 #define P_FAMILY_DEMIVEEMON                  TRUE
 #undef P_FAMILY_FRIMON
@@ -187,8 +187,8 @@
 #define P_FAMILY_DRACOMON                 TRUE
 #undef P_FAMILY_DRACOMON_X
 #define P_FAMILY_DRACOMON_X                TRUE
-#undef P_FAMILY_ZAPDOS
-#define P_FAMILY_ZAPDOS                  TRUE
+#undef P_FAMILY_EBIBURGMON
+#define P_FAMILY_EBIBURGMON                  TRUE
 #undef P_FAMILY_EKAKIMON
 #define P_FAMILY_EKAKIMON                 TRUE
 #undef P_FAMILY_ELECMON
@@ -244,8 +244,8 @@
 #define P_FAMILY_LOPMONX               TRUE
 #undef P_FAMILY_LUCEMON
 #define P_FAMILY_LUCEMON               TRUE
-#undef P_FAMILY_PINECO
-#define P_FAMILY_PINECO                  TRUE
+#undef P_FAMILY_LUDOMON
+#define P_FAMILY_LUDOMON                  TRUE
 #undef P_FAMILY_LUXMON
 #define P_FAMILY_LUXMON               TRUE
 #undef P_FAMILY_METABEE
@@ -296,8 +296,8 @@
 #define P_FAMILY_SOLARMON                TRUE
 #undef P_FAMILY_SPARROWMON
 #define P_FAMILY_SPARROWMON                   TRUE
-#undef P_FAMILY_HO_OH
-#define P_FAMILY_HO_OH                   TRUE
+#undef P_FAMILY_STARMON_2010
+#define P_FAMILY_STARMON_2010                   TRUE
 #undef P_FAMILY_STRABIMON
 #define P_FAMILY_STRABIMON                  TRUE
 
@@ -335,8 +335,8 @@
 #define P_FAMILY_BAOHUCKMON                 TRUE
 #undef P_FAMILY_BETGAMAMON
 #define P_FAMILY_BETGAMAMON                TRUE
-#undef P_FAMILY_NOSEPASS
-#define P_FAMILY_NOSEPASS                TRUE
+#undef P_FAMILY_BIOTHUNMON
+#define P_FAMILY_BIOTHUNMON                TRUE
 #undef P_FAMILY_BIRDRAMON
 #define P_FAMILY_BIRDRAMON                  TRUE
 #undef P_FAMILY_BLGARGOMON
@@ -399,8 +399,8 @@
 #define P_FAMILY_DOGGYMON                  TRUE
 #undef P_FAMILY_DOLPHMON
 #define P_FAMILY_DOLPHMON                TRUE
-#undef P_FAMILY_DONSHOUMOON
-#define P_FAMILY_DONSHOUMOON                 TRUE
+#undef P_FAMILY_DONSHOUMON
+#define P_FAMILY_DONSHOUMON                 TRUE
 #undef P_FAMILY_DORUGAMON
 #define P_FAMILY_DORUGAMON                 TRUE
 #undef P_FAMILY_DRIMOGEMON

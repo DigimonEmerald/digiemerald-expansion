@@ -1,10 +1,6 @@
 #include "global.h"
-<<<<<<< HEAD:src/rayquaza_scene.c
-#include "rayquaza_scene.h"
-=======
-#include "rayquaza_scene.h"
+#include "geogreymon_scene.h"
 #include "event_object_movement.h"
->>>>>>> upstream/master:src/rayquaza_scene.c
 #include "sprite.h"
 #include "task.h"
 #include "graphics.h"

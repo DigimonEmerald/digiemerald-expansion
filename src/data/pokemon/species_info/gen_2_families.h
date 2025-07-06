@@ -3490,100 +3490,69 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_LOOGAMON
 
-#if P_FAMILY_LOPMON
-#define LOPMON_MISC_INFO(letter, _noFlip, frontWidth, frontHeight, backWidth, backHeight, backYOffset)   \
-    {                                                                                                   \
-        .baseHP        = 48,                                                                            \
-        .baseAttack    = 72,                                                                            \
-        .baseDefense   = 48,                                                                            \
-        .baseSpeed     = 48,                                                                            \
-        .baseSpAttack  = 72,                                                                            \
-        .baseSpDefense = 48,                                                                            \
-        .types = MON_TYPES(TYPE_PSYCHIC),                                                               \
-        .catchRate = 225,                                                                               \
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 118 : 61,                                         \
-        .evYield_Attack = 1,                                                                            \
-        .evYield_SpAttack = 1,                                                                          \
-        .genderRatio = MON_GENDERLESS,                                                                  \
-        .eggCycles = 40,                                                                                \
-        .friendship = STANDARD_FRIENDSHIP,                                                              \
-        .growthRate = GROWTH_MEDIUM_FAST,                                                               \
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),                                      \
-        .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },                                  \
-        .bodyColor = BODY_COLOR_BLACK,                                                                  \
-        .noFlip = _noFlip,                                                                              \
-        .speciesName = _("Lopmon"),                                                                      \
-        .cryId = CRY_LOPMON,                                                                             \
-        .natDexNum = NATIONAL_DEX_LOPMON,                                                                \
-        .categoryName = _("Symbol"),                                                                    \
-        .height = 5,                                                                                    \
-        .weight = 50,                                                                                   \
-        .description = gLopmonPokedexText,                                                               \
-        .pokemonScale = 411,                                                                            \
-        .pokemonOffset = 2,                                                                             \
-        .trainerScale = 256,                                                                            \
-        .trainerOffset = 0,                                                                             \
-        .frontPic = gMonFrontPic_Lopmon ##letter,                                                        \
-        .frontPicSize = MON_COORDS_SIZE(frontWidth, frontHeight),                                       \
-        .frontPicYOffset = 16,                                                                          \
-        .frontAnimFrames = sAnims_Lopmon,                                                                \
-        .frontAnimId = ANIM_ZIGZAG_FAST,                                                                \
-        .enemyMonElevation = 8,                                                                         \
-        .backPic = gMonBackPic_Lopmon ##letter,                                                          \
-        .backPicSize = MON_COORDS_SIZE(backWidth, backHeight),                                          \
-        .backPicYOffset = backYOffset,                                                                  \
-        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,                                                    \
-        .palette = gMonPalette_Lopmon,                                                                   \
-        .shinyPalette = gMonShinyPalette_Lopmon,                                                         \
-        .iconSprite = gMonIcon_Lopmon ##letter,                                                          \
-        .iconPalIndex = 0,                                                                              \
-        SHADOW(0, 3, SHADOW_SIZE_S)                                                                     \
-        FOOTPRINT(Lopmon)                                                                                \
-        OVERWORLD(                                                                                      \
-            sPicTable_Lopmon ##letter,                                                                   \
-            SIZE_32x32,                                                                                 \
-            SHADOW_SIZE_M,                                                                              \
-            TRACKS_NONE,                                                                                \
-            gOverworldPalette_Lopmon,                                                                    \
-            gShinyOverworldPalette_Lopmon,                                                               \
-        )                                                                                               \
+    [SPECIES_LOPMON] =  \
+    {                                                                                                   
+        .baseHP        = 48,                                                                            
+        .baseAttack    = 72,                                                                            
+        .baseDefense   = 48,                                                                            
+        .baseSpeed     = 48,                                                                            
+        .baseSpAttack  = 72,                                                                            
+        .baseSpDefense = 48,                                                                            
+        .types = MON_TYPES(TYPE_PSYCHIC),                                                               
+        .catchRate = 225,                                                                               
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 118 : 61,                                         
+        .evYield_Attack = 1,                                                                            
+        .evYield_SpAttack = 1,                                                                          
+        .genderRatio = MON_GENDERLESS,                                                                  
+        .eggCycles = 40,                                                                               
+        .friendship = STANDARD_FRIENDSHIP,                                                              
+        .growthRate = GROWTH_MEDIUM_FAST,                                                              
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),                                      
+        .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },                                  
+        .bodyColor = BODY_COLOR_BLACK,                                                                  
+        .noFlip = FALSE,                                                                              
+        .speciesName = _("Lopmon"),                                                                     
+        .cryId = CRY_LOPMON,                                                                             
+        .natDexNum = NATIONAL_DEX_LOPMON,                                                                
+        .categoryName = _("Symbol"),                                                                    
+        .height = 5,                                                                                    
+        .weight = 50,                                                                                   
+        .description = gLopmonPokedexText,                                                               
+        .pokemonScale = 411,                                                                            
+        .pokemonOffset = 2,                                                                             
+        .trainerScale = 256,                                                                            
+        .trainerOffset = 0,                                                                             
+        .frontPic = gMonFrontPic_LopmonA,                                                        
+        .frontPicSize = MON_COORDS_SIZE(24, 40),                                       
+        .frontPicYOffset = 16,                                                                          
+        .frontAnimFrames = sAnims_Lopmon,                                                                
+        .frontAnimId = ANIM_ZIGZAG_FAST,                                                                
+        .enemyMonElevation = 8,                                                                         
+        .backPic = gMonBackPic_LopmonA,                                                          
+        .backPicSize = MON_COORDS_SIZE(24, 48),                                          
+        .backPicYOffset = 8,                                                                  
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,                                                   
+        .palette = gMonPalette_Lopmon,                                                                   
+        .shinyPalette = gMonShinyPalette_Lopmon,                                                         
+        .iconSprite = gMonIcon_LopmonA,                                                          
+        .iconPalIndex = 0,                                                                              
+        SHADOW(0, 3, SHADOW_SIZE_S)                                                                     
+        FOOTPRINT(Lopmon)                                                                                
+        OVERWORLD(
+            sPicTable_Mismagius,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            gOverworldPalette_Mismagius,
+            gShinyOverworldPalette_Mismagius
+        )                                                                                           \
         .levelUpLearnset = sLopmonLevelUpLearnset,                                                       \
         .teachableLearnset = sLopmonTeachableLearnset,                                                   \
         .tmIlliterate = TRUE,                                                                           \
         .formSpeciesIdTable = sLopmonFormSpeciesIdTable,                                                 \
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_LOPMON_X},
                                 {EVO_LEVEL, 39, SPECIES_GARGOYLMON}),  
-    }
-
-    [SPECIES_LOPMON]             = LOPMON_MISC_INFO(A,           FALSE, 24, 40, 24, 48,  8 ),
-    [SPECIES_LOPMON_B]           = LOPMON_MISC_INFO(B,           TRUE,  24, 32, 40, 48,  9 ),
-    [SPECIES_LOPMON_C]           = LOPMON_MISC_INFO(C,           TRUE,  32, 32, 48, 56,  6 ),
-    [SPECIES_LOPMON_D]           = LOPMON_MISC_INFO(D,           TRUE,  32, 32, 40, 48,  8 ),
-    [SPECIES_LOPMON_E]           = LOPMON_MISC_INFO(E,           TRUE,  32, 32, 40, 48, 10 ),
-    [SPECIES_LOPMON_F]           = LOPMON_MISC_INFO(F,           TRUE,  32, 32, 48, 48, 10 ),
-    [SPECIES_LOPMON_G]           = LOPMON_MISC_INFO(G,           TRUE,  24, 40, 40, 56,  5 ),
-    [SPECIES_LOPMON_H]           = LOPMON_MISC_INFO(H,           TRUE,  32, 32, 48, 48,  8 ),
-    [SPECIES_LOPMON_I]           = LOPMON_MISC_INFO(I,           FALSE, 24, 32, 24, 56,  7 ),
-    [SPECIES_LOPMON_J]           = LOPMON_MISC_INFO(J,           TRUE,  24, 32, 32, 48,  9 ),
-    [SPECIES_LOPMON_K]           = LOPMON_MISC_INFO(K,           TRUE,  32, 32, 40, 56,  7 ),
-    [SPECIES_LOPMON_L]           = LOPMON_MISC_INFO(L,           TRUE,  24, 32, 32, 48, 10 ),
-    [SPECIES_LOPMON_M]           = LOPMON_MISC_INFO(M,           FALSE, 32, 32, 48, 40, 13 ),
-    [SPECIES_LOPMON_N]           = LOPMON_MISC_INFO(N,           TRUE,  32, 24, 48, 40, 13 ),
-    [SPECIES_LOPMON_O]           = LOPMON_MISC_INFO(O,           FALSE, 32, 32, 48, 48,  8 ),
-    [SPECIES_LOPMON_P]           = LOPMON_MISC_INFO(P,           TRUE,  24, 32, 32, 48, 10 ),
-    [SPECIES_LOPMON_Q]           = LOPMON_MISC_INFO(Q,           TRUE,  32, 24, 40, 40, 15 ),
-    [SPECIES_LOPMON_R]           = LOPMON_MISC_INFO(R,           TRUE,  24, 32, 32, 40, 12 ),
-    [SPECIES_LOPMON_S]           = LOPMON_MISC_INFO(S,           TRUE,  32, 40, 40, 56,  4 ),
-    [SPECIES_LOPMON_T]           = LOPMON_MISC_INFO(T,           FALSE, 24, 32, 32, 40, 13 ),
-    [SPECIES_LOPMON_U]           = LOPMON_MISC_INFO(U,           FALSE, 32, 32, 48, 40, 13 ),
-    [SPECIES_LOPMON_V]           = LOPMON_MISC_INFO(V,           TRUE,  32, 32, 40, 48, 11 ),
-    [SPECIES_LOPMON_W]           = LOPMON_MISC_INFO(W,           FALSE, 32, 32, 40, 40, 13 ),
-    [SPECIES_LOPMON_X]           = LOPMON_MISC_INFO(X,           FALSE, 24, 24, 40, 40, 15 ),
-    [SPECIES_LOPMON_Y]           = LOPMON_MISC_INFO(Y,           FALSE, 24, 32, 32, 48, 10 ),
-    [SPECIES_LOPMON_Z]           = LOPMON_MISC_INFO(Z,           TRUE,  24, 32, 32, 48, 10 ),
-    [SPECIES_LOPMON_EXCLAMATION] = LOPMON_MISC_INFO(Exclamation, FALSE, 24, 40, 24, 56,  6 ),
-    [SPECIES_LOPMON_QUESTION]    = LOPMON_MISC_INFO(Question,    TRUE,  24, 40, 32, 56,  6 ),
-#endif //P_FAMILY_LOPMON
+    },
 
 #if P_FAMILY_LOPMONX
 #if P_GEN_3_CROSS_EVOS
@@ -3916,12 +3885,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 2,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Pineco,
+        .frontPic = gMonFrontPic_Ludomon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 48) : MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 10 : 12,
-        .frontAnimFrames = sAnims_Pineco,
+        .frontAnimFrames = sAnims_Ludomon,
         .frontAnimId = ANIM_SWING_CONCAVE,
-        .backPic = gMonBackPic_Pineco,
+        .backPic = gMonBackPic_Ludomon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 40) : MON_COORDS_SIZE(56, 40),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 15 : 13,
         .backAnimId = BACK_ANIM_H_SHAKE,
@@ -3930,18 +3899,18 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .iconSprite = gMonIcon_Ludomon,
         .iconPalIndex = 0,
         SHADOW(0, 2, SHADOW_SIZE_S)
-        FOOTPRINT(Pineco)
+        FOOTPRINT(Ludomon)
         OVERWORLD(
-            sPicTable_Pineco,
+            sPicTable_Ludomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_SPOT,
-            gOverworldPalette_Pineco,
-            gShinyOverworldPalette_Pineco
+            gOverworldPalette_Ludomon,
+            gShinyOverworldPalette_Ludomon
         )
-        .levelUpLearnset = sPinecoLevelUpLearnset,
-        .teachableLearnset = sPinecoTeachableLearnset,
-        .eggMoveLearnset = sPinecoEggMoveLearnset,
+        .levelUpLearnset = sLudomonLevelUpLearnset,
+        .teachableLearnset = sLudomonTeachableLearnset,
+        .eggMoveLearnset = sLudomonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_BLKGATOMON_UVER}),
     },
 
@@ -3981,10 +3950,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 5,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Forretress,
+        .frontPic = gMonFrontPic_Lunamon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 9 : 8,
-        .frontAnimFrames = sAnims_Forretress,
+        .frontAnimFrames = sAnims_Lunamon,
         .frontAnimId = ANIM_V_SHAKE,
         .backPic = gMonBackPic_Lunamon,
         .backPicSize = MON_COORDS_SIZE(64, 32),
@@ -3995,17 +3964,17 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .iconSprite = gMonIcon_Lunamon,
         .iconPalIndex = 2,
         SHADOW(0, 6, SHADOW_SIZE_L)
-        FOOTPRINT(Forretress)
+        FOOTPRINT(Lunamon)
         OVERWORLD(
-            sPicTable_Forretress,
+            sPicTable_Lunamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_SPOT,
-            gOverworldPalette_Forretress,
-            gShinyOverworldPalette_Forretress
+            gOverworldPalette_Lunamon,
+            gShinyOverworldPalette_Lunamon
         )
-        .levelUpLearnset = sForretressLevelUpLearnset,
-        .teachableLearnset = sForretressTeachableLearnset,
+        .levelUpLearnset = sLunamonLevelUpLearnset,
+        .teachableLearnset = sLunamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_COREDRAMON_BLUE}),
     },
 #endif //P_FAMILY_LUDOMON
@@ -6639,7 +6608,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .attribute = TYPE_VACCINE,
         .catchRate = 155,
         .expYield = 100,
-        .evYield_HP = 3,
+        .evYield_HP = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -7340,28 +7309,28 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .frontPic = gMonFrontPic_Sounbrdmon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 9 : 11,
-        .frontAnimFrames = sAnims_Sounbirdmon,
+        .frontAnimFrames = sAnims_Sounbrdmon,
         .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_V_SHAKE : ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Sounbirdmon,
+        .backPic = gMonBackPic_Sounbrdmon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 5 : 9,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Sounbirdmon,
-        .shinyPalette = gMonShinyPalette_Sounbirdmon,
-        .iconSprite = gMonIcon_Sounbirdmon,
+        .palette = gMonPalette_Sounbrdmon,
+        .shinyPalette = gMonShinyPalette_Sounbrdmon,
+        .iconSprite = gMonIcon_Sounbrdmon,
         .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 2,
         SHADOW(3, 3, SHADOW_SIZE_S)
-        FOOTPRINT(Sounbirdmon)
+        FOOTPRINT(Sounbrdmon)
         OVERWORLD(
-            sPicTable_Sounbirdmon,
+            sPicTable_Sounbrdmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_SPOT,
-            gOverworldPalette_Sounbirdmon,
-            gShinyOverworldPalette_Sounbirdmon
+            gOverworldPalette_Sounbrdmon,
+            gShinyOverworldPalette_Sounbrdmon
         )
-        .levelUpLearnset = sSounbirdmonLevelUpLearnset,
-        .teachableLearnset = sSounbirdmonTeachableLearnset,
+        .levelUpLearnset = sSounbrdmonLevelUpLearnset,
+        .teachableLearnset = sSounbrdmonTeachableLearnset,
     },
 
     [SPECIES_SPADAMON] =

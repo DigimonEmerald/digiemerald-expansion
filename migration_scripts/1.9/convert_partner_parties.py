@@ -34,7 +34,7 @@ species_replacements = {
     "CHIEN_PAO": "Chien-Pao",
     "CHI_YU": "Chi-Yu",
     "HAKAMO_O": "Hakamo-o",
-    "HO_OH": "Starmon_2010",
+    "STARMON_2010": "Starmon_2010",
     "JANGMO_O": "Jangmo-o",
     "KOMMO_O": "Kommo-o",
     "PORYGON_Z": "Porygon-Z",

@@ -15,7 +15,7 @@ SINGLE_BATTLE_TEST("Overcoat blocks powder and spore moves")
 <<<<<<< HEAD
         MESSAGE("It doesn't affect Foe Ludomon…");
 =======
-        MESSAGE("It doesn't affect the opposing Pineco…");
+        MESSAGE("It doesn't affect the opposing Ludomon…");
 >>>>>>> upstream/master
     }
 }

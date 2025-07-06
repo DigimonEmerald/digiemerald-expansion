@@ -150,7 +150,7 @@ SINGLE_BATTLE_TEST("Powder fails if the target is Grass type")
 SINGLE_BATTLE_TEST("Powder fails if the target has Overcoat")
 {
     GIVEN {
-        PLAYER(SPECIES_FORRETRESS) { Ability(ABILITY_OVERCOAT); }
+        PLAYER(SPECIES_LUNAMON) { Ability(ABILITY_OVERCOAT); }
         OPPONENT(SPECIES_VIVILLON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POWDER); MOVE(player, MOVE_EMBER); }
@@ -188,7 +188,7 @@ DOUBLE_BATTLE_TEST("Powder still blocks the target's Fire type moves even if it 
         ASSUME(gMovesInfo[MOVE_DOODLE].effect == EFFECT_DOODLE);
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_FORRETRESS) { Ability(ABILITY_OVERCOAT); }
+        OPPONENT(SPECIES_LUNAMON) { Ability(ABILITY_OVERCOAT); }
         OPPONENT(SPECIES_VIVILLON);
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(playerRight, MOVE_DOODLE, target: opponentLeft); MOVE(playerLeft, MOVE_EMBER, target: opponentRight); }

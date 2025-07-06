@@ -408,18 +408,18 @@
 #define MOVE_EFFECT_FLORAL_HEALING      78
 #define MOVE_EFFECT_SECRET_POWER        79
 #define MOVE_EFFECT_PSYCHIC_NOISE       80
-#define MOVE_EFFECT_TERA_BLAST          77
-#define MOVE_EFFECT_ORDER_UP            78
-#define MOVE_EFFECT_ION_DELUGE          79
-#define MOVE_EFFECT_AROMATHERAPY        80 // No functionality yet
-#define MOVE_EFFECT_HAZE                81
-#define MOVE_EFFECT_LEECH_SEED          82
-#define MOVE_EFFECT_REFLECT             83
-#define MOVE_EFFECT_LIGHT_SCREEN        84
-#define MOVE_EFFECT_SALT_CURE           85
-#define MOVE_EFFECT_EERIE_SPELL         86
+#define MOVE_EFFECT_TERA_BLAST          81
+#define MOVE_EFFECT_ORDER_UP            82
+#define MOVE_EFFECT_ION_DELUGE          83
+#define MOVE_EFFECT_AROMATHERAPY        84 // No functionality yet
+#define MOVE_EFFECT_HAZE                85
+#define MOVE_EFFECT_LEECH_SEED          86
+#define MOVE_EFFECT_REFLECT             87
+#define MOVE_EFFECT_LIGHT_SCREEN        88
+#define MOVE_EFFECT_SALT_CURE           89
+#define MOVE_EFFECT_EERIE_SPELL         90
 
-#define NUM_MOVE_EFFECTS                87
+#define NUM_MOVE_EFFECTS                91
 
 #define MOVE_EFFECT_AFFECTS_USER        0x2000
 #define MOVE_EFFECT_CERTAIN             0x4000

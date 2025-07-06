@@ -150,7 +150,7 @@ DOUBLE_BATTLE_TEST("Explosion boosted by Galvanize is correctly blocked by Volt 
 {
     GIVEN {
 <<<<<<< HEAD
-        PLAYER(SPECIES_MONIMON_ALOLAN) { Ability(ABILITY_GALVANIZE); }
+        PLAYER(SPECIES_MONIMON_ALOLA) { Ability(ABILITY_GALVANIZE); }
         PLAYER(SPECIES_EXVEEMON) { HP(1); }
         OPPONENT(SPECIES_GUILMON) { Ability(ABILITY_VOLT_ABSORB); }
         OPPONENT(SPECIES_LOPMONX) { HP(1); }

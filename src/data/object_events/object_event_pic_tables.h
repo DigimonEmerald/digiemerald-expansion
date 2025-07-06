@@ -1068,12 +1068,12 @@ static const struct SpriteFrameImage sPicTable_JunkmonTree[] = {
     overworld_frame(gObjectEventPic_JunkmonTree, 2, 4, 2),
 };
 
-static const struct SpriteFrameImage sPicTable_GesomonCutscene[] = {
-    overworld_frame(gObjectEventPic_GesomonCutscene, 8, 8, 0),
-    overworld_frame(gObjectEventPic_GesomonCutscene, 8, 8, 1),
-    overworld_frame(gObjectEventPic_GesomonCutscene, 8, 8, 2),
-    overworld_frame(gObjectEventPic_GesomonCutscene, 8, 8, 3),
-    overworld_frame(gObjectEventPic_GesomonCutscene, 8, 8, 4),
+static const struct SpriteFrameImage sPicTable_GeogreymonCutscene[] = {
+    overworld_frame(gObjectEventPic_GeogreymonCutscene, 8, 8, 0),
+    overworld_frame(gObjectEventPic_GeogreymonCutscene, 8, 8, 1),
+    overworld_frame(gObjectEventPic_GeogreymonCutscene, 8, 8, 2),
+    overworld_frame(gObjectEventPic_GeogreymonCutscene, 8, 8, 3),
+    overworld_frame(gObjectEventPic_GeogreymonCutscene, 8, 8, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_BirthIslandStone[] = {
@@ -1244,16 +1244,16 @@ static const struct SpriteFrameImage sPicTable_BiostegmonOld[] = {
     overworld_frame(gObjectEventPic_BiostegmonOld, 2, 2, 2),
 };
 
-static const struct SpriteFrameImage sPicTable_DonshoumoonOld[] = {
-    overworld_frame(gObjectEventPic_DonshoumoonOld, 2, 2, 0),
-    overworld_frame(gObjectEventPic_DonshoumoonOld, 2, 2, 1),
-    overworld_frame(gObjectEventPic_DonshoumoonOld, 2, 2, 2),
-    overworld_frame(gObjectEventPic_DonshoumoonOld, 2, 2, 0),
-    overworld_frame(gObjectEventPic_DonshoumoonOld, 2, 2, 0),
-    overworld_frame(gObjectEventPic_DonshoumoonOld, 2, 2, 1),
-    overworld_frame(gObjectEventPic_DonshoumoonOld, 2, 2, 1),
-    overworld_frame(gObjectEventPic_DonshoumoonOld, 2, 2, 2),
-    overworld_frame(gObjectEventPic_DonshoumoonOld, 2, 2, 2),
+static const struct SpriteFrameImage sPicTable_DonshoumonOld[] = {
+    overworld_frame(gObjectEventPic_DonshoumonOld, 2, 2, 0),
+    overworld_frame(gObjectEventPic_DonshoumonOld, 2, 2, 1),
+    overworld_frame(gObjectEventPic_DonshoumonOld, 2, 2, 2),
+    overworld_frame(gObjectEventPic_DonshoumonOld, 2, 2, 0),
+    overworld_frame(gObjectEventPic_DonshoumonOld, 2, 2, 0),
+    overworld_frame(gObjectEventPic_DonshoumonOld, 2, 2, 1),
+    overworld_frame(gObjectEventPic_DonshoumonOld, 2, 2, 1),
+    overworld_frame(gObjectEventPic_DonshoumonOld, 2, 2, 2),
+    overworld_frame(gObjectEventPic_DonshoumonOld, 2, 2, 2),
 };
 
 static const struct SpriteFrameImage sPicTable_AngemonOld[] = {

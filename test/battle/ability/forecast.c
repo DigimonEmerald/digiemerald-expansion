@@ -279,7 +279,7 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back to normal under Cloud Nine
 >>>>>>> upstream/master
 {
     u32 species = 0, ability = 0;
-    PARAMETRIZE { species = SPECIES_CHICCIMON;  ability = ABILITY_CLOUD_NINE; }
+    PARAMETRIZE { species = SPECIES_CHICCHIMON;  ability = ABILITY_CLOUD_NINE; }
     PARAMETRIZE { species = SPECIES_GEOGREYMON; ability = ABILITY_AIR_LOCK; }
     GIVEN {
 <<<<<<< HEAD
@@ -424,7 +424,7 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back when it uses a move that f
 SINGLE_BATTLE_TEST("Forecast transforms Dolphmon when Cloud Nine ability user leaves the field")
 {
     u32 species = 0, ability = 0;
-    PARAMETRIZE { species = SPECIES_CHICCIMON;  ability = ABILITY_CLOUD_NINE; }
+    PARAMETRIZE { species = SPECIES_CHICCHIMON;  ability = ABILITY_CLOUD_NINE; }
     PARAMETRIZE { species = SPECIES_GEOGREYMON; ability = ABILITY_AIR_LOCK; }
 
     GIVEN {

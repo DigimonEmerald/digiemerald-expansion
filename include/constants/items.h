@@ -1000,36 +1000,36 @@
 // Digimon Additions
 // Evo Items
 
-#define ITEM_X_ANTIBODY 828
-#define ITEM_DARK_DIGITRON 829
-#define ITEM_COURAGE_EGG 830
-#define ITEM_FRIEND_EGG 831
-#define ITEM_LOVE_EGG 832
-#define ITEM_PURITY_EGG 833
-#define ITEM_KNOWLEDGE_EGG 834
-#define ITEM_SINCERITY_EGG 835
-#define ITEM_HOPE_EGG 836
-#define ITEM_LIGHT_EGG 837
-#define ITEM_KINDNESS_EGG 838
-#define ITEM_MIRACLES_EGG 839
-#define ITEM_FATE_EGG 840
+#define ITEM_X_ANTIBODY 829
+#define ITEM_DARK_DIGITRON 830
+#define ITEM_COURAGE_EGG 831
+#define ITEM_FRIEND_EGG 832
+#define ITEM_LOVE_EGG 833
+#define ITEM_PURITY_EGG 834
+#define ITEM_KNOWLEDGE_EGG 835
+#define ITEM_SINCERITY_EGG 836
+#define ITEM_HOPE_EGG 837
+#define ITEM_LIGHT_EGG 838
+#define ITEM_KINDNESS_EGG 839
+#define ITEM_MIRACLES_EGG 840
+#define ITEM_FATE_EGG 841
 
 // IV Items
 
-#define ITEM_ROTTEN_MEAT 841 // HP Down
-#define ITEM_CHOCOLATE 842 // ATK Down
-#define ITEM_COFFEE 843 // Def Down
-#define ITEM_ICE_CREAM 844 // SPD Down
-#define ITEM_FRENCH_FRIES 845 // SPATK Down
-#define ITEM_BEER 846 // SPDEF Down
-#define ITEM_MEAT 847 // HP Up
-#define ITEM_POWER_FRUIT 848 // ATK Up
-#define ITEM_MUSCLE_YAM 849 // Def Up
-#define ITEM_SUPER_CARROT 850 // SPD Up
-#define ITEM_HAWK_RADISH 851 // SPATK Up
-#define ITEM_DIGIPINE 852 // SPDEF Up
+#define ITEM_ROTTEN_MEAT 842 // HP Down
+#define ITEM_CHOCOLATE 843 // ATK Down
+#define ITEM_COFFEE 844 // Def Down
+#define ITEM_ICE_CREAM 845 // SPD Down
+#define ITEM_FRENCH_FRIES 846 // SPATK Down
+#define ITEM_BEER 847 // SPDEF Down
+#define ITEM_MEAT 848 // HP Up
+#define ITEM_POWER_FRUIT 849 // ATK Up
+#define ITEM_MUSCLE_YAM 850 // Def Up
+#define ITEM_SUPER_CARROT 851 // SPD Up
+#define ITEM_HAWK_RADISH 852 // SPATK Up
+#define ITEM_DIGIPINE 853 // SPDEF Up
 
-#define ITEMS_COUNT 853
+#define ITEMS_COUNT 854
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

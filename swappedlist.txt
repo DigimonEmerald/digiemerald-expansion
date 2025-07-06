@@ -212,6 +212,8 @@ Loogamon - Misdreavus
 Lopmon - Unown
 Lopmon (X) - Wobbuffet
 Lucemon - Girafarig
+Ludomon - Pineco
+Lunamon - Forretress
 Luxmon - Dunsparce
 Metabee - Gligar
 Kodekacmon - Steelix
@@ -280,6 +282,7 @@ Zubamon - Lotad
 Champion List
 
 Aegiomon - Lombre
+Agunimon - Ludicolo
 Airdramon - Seedot
 Akatorimon - Nuzleaf
 Allomon - Shiftry

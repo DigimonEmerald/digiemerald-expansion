@@ -34,7 +34,7 @@
 #include "pokemon.h"
 #include "pokemon_storage_system.h"
 #include "random.h"
-#include "rayquaza_scene.h"
+#include "geogreymon_scene.h"
 #include "region_map.h"
 #include "rtc.h"
 #include "script.h"

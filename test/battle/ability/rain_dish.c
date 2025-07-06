@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("Rain Dish recovers 1/16th of Max HP in Rain")
         MESSAGE("Agunimon's Rain Dish restored its HP a little!");
         HP_BAR(player, damage: -(100 / 16));
 =======
-        MESSAGE("Ludicolo's Rain Dish restored its HP a little!");
+        MESSAGE("Agunimon's Rain Dish restored its HP a little!");
         HP_BAR(player, damage:  -(100 / 16));
     }
 }
@@ -26,7 +26,7 @@ SINGLE_BATTLE_TEST("Rain Dish recovers 1/16th of Max HP in Rain")
 SINGLE_BATTLE_TEST("Rain Dish doesn't recover HP if Cloud Nine/Air Lock is on the field")
 {
     GIVEN {
-        PLAYER(SPECIES_LUDICOLO) { Ability(ABILITY_RAIN_DISH); HP(1); MaxHP(100); }
+        PLAYER(SPECIES_AGUNIMON) { Ability(ABILITY_RAIN_DISH); HP(1); MaxHP(100); }
         OPPONENT(SPECIES_DEMMERAMON) { Ability(ABILITY_CLOUD_NINE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_RAIN_DANCE); }

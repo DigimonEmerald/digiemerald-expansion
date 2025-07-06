@@ -31,15 +31,15 @@ SINGLE_BATTLE_TEST("Protean changes the type of the user only once per switch in
         ABILITY_POPUP(opponent, ABILITY_PROTEAN);
         MESSAGE("Foe Donshoumon transformed into the Water type!");
 =======
-        MESSAGE("The opposing Donshoumoon transformed into the Water type!");
+        MESSAGE("The opposing Donshoumon transformed into the Water type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WATER_GUN, opponent);
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_PROTEAN);
-            MESSAGE("The opposing Donshoumoon transformed into the Normal type!");
+            MESSAGE("The opposing Donshoumon transformed into the Normal type!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
         ABILITY_POPUP(opponent, ABILITY_PROTEAN);
-        MESSAGE("The opposing Donshoumoon transformed into the Water type!");
+        MESSAGE("The opposing Donshoumon transformed into the Water type!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WATER_GUN, opponent);
     }

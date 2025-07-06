@@ -1228,57 +1228,6 @@ static const union AnimCmd *const sAnimTable_Starmon_2010[] = {
     [ANIM_EXIT_POKEBALL_FAST_EAST] = sAnim_ExitPokeballFastEast,
 };
 
-// Like the above, but has separate frames for facing right
-const union AnimCmd *const sAnimTable_Following_Asym[] = {
-    [ANIM_STD_FACE_SOUTH] = sAnim_FaceSouth,
-    [ANIM_STD_FACE_NORTH] = sAnim_FaceNorth2F,
-    [ANIM_STD_FACE_WEST] = sAnim_FaceWest2F,
-    [ANIM_STD_FACE_EAST] = sAnim_FaceEast2F_Asym,
-    [ANIM_STD_GO_SOUTH] = sAnim_GoSouth2F,
-    [ANIM_STD_GO_NORTH] = sAnim_GoNorth2F,
-    [ANIM_STD_GO_WEST] = sAnim_GoWest2F,
-    [ANIM_STD_GO_EAST] = sAnim_GoEast2F_Asym,
-    [ANIM_STD_GO_FAST_SOUTH] = sAnim_GoFastSouth2F,
-    [ANIM_STD_GO_FAST_NORTH] = sAnim_GoFastNorth2F,
-    [ANIM_STD_GO_FAST_WEST] = sAnim_GoFastWest2F,
-    [ANIM_STD_GO_FAST_EAST] = sAnim_GoFastEast2F_Asym,
-    [ANIM_STD_GO_FASTER_SOUTH] = sAnim_EnterSouth,
-    [ANIM_STD_GO_FASTER_NORTH] = sAnim_EnterNorth,
-    [ANIM_STD_GO_FASTER_WEST] = sAnim_EnterWest,
-    [ANIM_STD_GO_FASTER_EAST] = sAnim_EnterEast_Asym,
-    [ANIM_STD_GO_FASTEST_SOUTH] = sAnim_ExitPokeballSouth,
-    [ANIM_STD_GO_FASTEST_NORTH] = sAnim_ExitPokeballNorth,
-    [ANIM_STD_GO_FASTEST_WEST] = sAnim_ExitPokeballWest,
-    [ANIM_STD_GO_FASTEST_EAST] = sAnim_ExitPokeballEast_Asym,
-    [ANIM_EXIT_POKEBALL_FAST_SOUTH] = sAnim_ExitPokeballFastSouth,
-    [ANIM_EXIT_POKEBALL_FAST_NORTH] = sAnim_ExitPokeballFastNorth,
-    [ANIM_EXIT_POKEBALL_FAST_WEST] = sAnim_ExitPokeballFastWest,
-    [ANIM_EXIT_POKEBALL_FAST_EAST] = sAnim_ExitPokeballFastEast_Asym,
-};
-
-static const union AnimCmd *const sAnimTable_Starmon_2010[] = {
-    [ANIM_STD_FACE_SOUTH] = sAnim_FaceSouth,
-    [ANIM_STD_FACE_NORTH] = sAnim_FaceNorth,
-    [ANIM_STD_FACE_WEST] = sAnim_FaceWest,
-    [ANIM_STD_FACE_EAST] = sAnim_FaceEast,
-    [ANIM_STD_GO_SOUTH] = sAnim_Starmon_2010FlapWings,
-    [ANIM_STD_GO_NORTH] = sAnim_Starmon_2010StayStill,
-    [ANIM_STD_GO_WEST] = sAnim_GoWest,
-    [ANIM_STD_GO_EAST] = sAnim_GoEast,
-    [ANIM_STD_GO_FAST_SOUTH] = sAnim_GoFastSouth,
-    [ANIM_STD_GO_FAST_NORTH] = sAnim_GoFastNorth,
-    [ANIM_STD_GO_FAST_WEST] = sAnim_GoFastWest,
-    [ANIM_STD_GO_FAST_EAST] = sAnim_GoFastEast,
-    [ANIM_STD_GO_FASTER_SOUTH] = sAnim_GoFasterSouth,
-    [ANIM_STD_GO_FASTER_NORTH] = sAnim_GoFasterNorth,
-    [ANIM_STD_GO_FASTER_WEST] = sAnim_GoFasterWest,
-    [ANIM_STD_GO_FASTER_EAST] = sAnim_GoFasterEast,
-    [ANIM_STD_GO_FASTEST_SOUTH] = sAnim_GoFastestSouth,
-    [ANIM_STD_GO_FASTEST_NORTH] = sAnim_GoFastestNorth,
-    [ANIM_STD_GO_FASTEST_WEST] = sAnim_GoFastestWest,
-    [ANIM_STD_GO_FASTEST_EAST] = sAnim_GoFastestEast,
-};
-
 // The movements for going up use the animations for going right instead.
 static const union AnimCmd *const sAnimTable_GekomonSide[] = {
     [ANIM_STD_FACE_SOUTH] = sAnim_FaceSouth,
