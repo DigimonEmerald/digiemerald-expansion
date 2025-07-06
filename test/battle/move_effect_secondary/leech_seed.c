@@ -9,7 +9,7 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Sappy Seed can seed the target")
 {
     GIVEN {
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SAPPY_SEED); }
@@ -23,7 +23,7 @@ SINGLE_BATTLE_TEST("Sappy Seed can seed the target")
 SINGLE_BATTLE_TEST("Sappy Seed is not going to seed the target if it fails")
 {
     GIVEN {
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SAPPY_SEED, hit: FALSE); }

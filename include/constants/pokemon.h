@@ -267,8 +267,8 @@ enum EvolutionMethods {
     EVO_LEVEL_ATK_LT_DEF,                // Pokémon reaches the specified level with attack < defense
     EVO_LEVEL_VEMMON,                   // Pokémon reaches the specified level with a Vemmon personality value
     EVO_LEVEL_WORMMON,                   // Pokémon reaches the specified level with a Wormmon personality value
-    EVO_LEVEL_BALISTAMON,                   // Pokémon reaches the specified level (special value for Ninjask)
-    EVO_LEVEL_BALUCHIMON,                  // Pokémon reaches the specified level (special value for Shedinja)
+    EVO_LEVEL_BALISTAMON,                   // Pokémon reaches the specified level (special value for Balistamon)
+    EVO_LEVEL_BALUCHIMON,                  // Pokémon reaches the specified level (special value for Baluchimon)
     EVO_BEAUTY,                          // Pokémon levels up with beauty ≥ specified value
     EVO_LEVEL_FEMALE,                    // Pokémon reaches the specified level, is female
     EVO_LEVEL_MALE,                      // Pokémon reaches the specified level, is male

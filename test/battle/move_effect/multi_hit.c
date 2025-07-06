@@ -236,7 +236,7 @@ SINGLE_BATTLE_TEST("Scale Shot decreases defense and increases speed after killi
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SCALE_SHOT].effect == EFFECT_MULTI_HIT);
-        PLAYER(SPECIES_BAGON) { Item(item); }
+        PLAYER(SPECIES_FLYMON) { Item(item); }
         OPPONENT(SPECIES_OTAMAMON_RED) { Ability(ABILITY_WEAK_ARMOR); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
@@ -248,9 +248,9 @@ SINGLE_BATTLE_TEST("Scale Shot decreases defense and increases speed after killi
         MESSAGE("The opposing Otamamon_red fainted!");
         MESSAGE("The Pokémon was hit 3 time(s)!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Bagon's Defense fell!");
+        MESSAGE("Flymon's Defense fell!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Bagon's Speed rose!");
+        MESSAGE("Flymon's Speed rose!");
     }
 }
 

@@ -300,7 +300,7 @@ u32 GetIndicatorTileTag(u32 battler)
 
     if (IsBattlerPrimalReverted(battler))
     {
-        if (gBattleMons[battler].species == SPECIES_GROUDON_PRIMAL)
+        if (gBattleMons[battler].species == SPECIES_GEKOMON_PRIMAL)
             return TAG_OMEGA_INDICATOR_TILE;
         else
             return TAG_ALPHA_INDICATOR_TILE;

@@ -16,7 +16,7 @@ SINGLE_BATTLE_TEST("Revive restores a fainted battler's HP to half")
 <<<<<<< HEAD
         MESSAGE("Exveemon had its HP restored!");
 =======
-        MESSAGE("Wynaut had its HP restored.");
+        MESSAGE("Exveemon had its HP restored.");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->hp, 100);
@@ -38,7 +38,7 @@ SINGLE_BATTLE_TEST("Max Revive restores a fainted battler's HP fully")
 <<<<<<< HEAD
         MESSAGE("Exveemon had its HP restored!");
 =======
-        MESSAGE("Wynaut had its HP restored.");
+        MESSAGE("Exveemon had its HP restored.");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->hp, 200);
@@ -60,7 +60,7 @@ SINGLE_BATTLE_TEST("Revival Herb restores a fainted battler's HP fully")
 <<<<<<< HEAD
         MESSAGE("Exveemon had its HP restored!");
 =======
-        MESSAGE("Wynaut had its HP restored.");
+        MESSAGE("Exveemon had its HP restored.");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->hp, 200);
@@ -82,7 +82,7 @@ SINGLE_BATTLE_TEST("Max Honey restores a fainted battler's HP fully")
 <<<<<<< HEAD
         MESSAGE("Exveemon had its HP restored!");
 =======
-        MESSAGE("Wynaut had its HP restored.");
+        MESSAGE("Exveemon had its HP restored.");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->hp, 200);

@@ -52,8 +52,8 @@ SINGLE_BATTLE_TEST("Role Play and Doodle fail if target's ability can't be copie
 {
     u32 species, ability;
 
-    PARAMETRIZE { species = SPECIES_SHEDINJA; ability = ABILITY_WONDER_GUARD; }
-    PARAMETRIZE { species = SPECIES_CASTFORM; ability = ABILITY_FORECAST; }
+    PARAMETRIZE { species = SPECIES_BALUCHIMON; ability = ABILITY_WONDER_GUARD; }
+    PARAMETRIZE { species = SPECIES_DOLPHMON; ability = ABILITY_FORECAST; }
     PARAMETRIZE { species = SPECIES_ARCEUS; ability = ABILITY_MULTITYPE; }
     PARAMETRIZE { species = SPECIES_CHERRIM; ability = ABILITY_FLOWER_GIFT; }
     PARAMETRIZE { species = SPECIES_ZORUA; ability = ABILITY_ILLUSION; }

@@ -6,7 +6,7 @@ SINGLE_BATTLE_TEST("Anger Point raises Attack stage to maximum after receiving a
     GIVEN {
         ASSUME(gMovesInfo[MOVE_FROST_BREATH].alwaysCriticalHit);
         PLAYER(SPECIES_DORIMON) { Ability(ABILITY_ANGER_POINT); }
-        OPPONENT(SPECIES_SNORUNT);
+        OPPONENT(SPECIES_EXVEEMON_VIRUS);
     } WHEN {
         TURN { MOVE(opponent, MOVE_FROST_BREATH); }
     } SCENE {
@@ -26,7 +26,7 @@ SINGLE_BATTLE_TEST("Anger Point does not trigger when already at maximum Attack 
         ASSUME(gMovesInfo[MOVE_FROST_BREATH].alwaysCriticalHit);
         ASSUME(gMovesInfo[MOVE_BELLY_DRUM].effect == EFFECT_BELLY_DRUM);
         PLAYER(SPECIES_DORIMON) { Ability(ABILITY_ANGER_POINT); Speed(2); }
-        OPPONENT(SPECIES_SNORUNT) { Speed(1); }
+        OPPONENT(SPECIES_EXVEEMON_VIRUS) { Speed(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_BELLY_DRUM); MOVE(opponent, MOVE_FROST_BREATH); }
     } SCENE {
@@ -53,7 +53,7 @@ SINGLE_BATTLE_TEST("Anger Point does not trigger when a substitute takes the hit
         ASSUME(gMovesInfo[MOVE_FROST_BREATH].alwaysCriticalHit);
         ASSUME(gMovesInfo[MOVE_SUBSTITUTE].effect == EFFECT_SUBSTITUTE);
         PLAYER(SPECIES_DORIMON) { Ability(ABILITY_ANGER_POINT); Speed(2); }
-        OPPONENT(SPECIES_SNORUNT) { Speed(1); }
+        OPPONENT(SPECIES_EXVEEMON_VIRUS) { Speed(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_SUBSTITUTE); MOVE(opponent, MOVE_FROST_BREATH); }
     } SCENE {

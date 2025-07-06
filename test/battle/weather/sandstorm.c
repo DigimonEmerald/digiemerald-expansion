@@ -70,9 +70,9 @@ DOUBLE_BATTLE_TEST("Sandstorm deals damage based on turn order")
 {
     GIVEN {
         PLAYER(SPECIES_PULSEMON) { Speed(4); }
-        PLAYER(SPECIES_WYNAUT) { Speed(1); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(1); }
         OPPONENT(SPECIES_LOPMONX) { Speed(2); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(3); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(3); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SANDSTORM); }
     } SCENE {

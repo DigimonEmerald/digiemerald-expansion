@@ -16,7 +16,7 @@ SINGLE_BATTLE_TEST("Magic Bounce bounces back status moves")
 <<<<<<< HEAD
         MESSAGE("Exveemon's Toxic was bounced back by Foe Kunemon's Magic Bounce!");
 =======
-        MESSAGE("Wynaut's Toxic was bounced back by the opposing Kunemon's Magic Bounce!");
+        MESSAGE("Exveemon's Toxic was bounced back by the opposing Kunemon's Magic Bounce!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC, opponent);
         STATUS_ICON(player, badPoison: TRUE);
@@ -38,7 +38,7 @@ SINGLE_BATTLE_TEST("Magic Bounce bounces back powder moves")
 <<<<<<< HEAD
         MESSAGE("Exveemon's Stun Spore was bounced back by Foe Kunemon's Magic Bounce!");
 =======
-        MESSAGE("Wynaut's Stun Spore was bounced back by the opposing Kunemon's Magic Bounce!");
+        MESSAGE("Exveemon's Stun Spore was bounced back by the opposing Kunemon's Magic Bounce!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STUN_SPORE, opponent);
         STATUS_ICON(player, paralysis: TRUE);
@@ -97,7 +97,7 @@ DOUBLE_BATTLE_TEST("Magic Bounce bounces back moves hitting both foes at two foe
 <<<<<<< HEAD
         MESSAGE("Foe Exveemon's Defense fell!");
 =======
-        MESSAGE("The opposing Wynaut's Defense fell!");
+        MESSAGE("The opposing Exveemon's Defense fell!");
 >>>>>>> upstream/master
     }
 }

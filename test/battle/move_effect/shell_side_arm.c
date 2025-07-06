@@ -5,7 +5,7 @@ SINGLE_BATTLE_TEST("Shell Side Arm can be countered if it is physical")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Moves(MOVE_SHELL_SIDE_ARM); }
-        OPPONENT(SPECIES_REGICE) { Defense(100); SpDefense(200); }
+        OPPONENT(SPECIES_GARGOYLMON) { Defense(100); SpDefense(200); }
     } WHEN {
         TURN { MOVE(player, MOVE_SHELL_SIDE_ARM); MOVE(opponent, MOVE_COUNTER); }
     } SCENE {
@@ -20,7 +20,7 @@ SINGLE_BATTLE_TEST("Shell Side Arm can be mirror coated if it is special")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Moves(MOVE_SHELL_SIDE_ARM); }
-        OPPONENT(SPECIES_REGIROCK) { Defense(200); SpDefense(100); }
+        OPPONENT(SPECIES_GARGOMON) { Defense(200); SpDefense(100); }
     } WHEN {
         TURN { MOVE(player, MOVE_SHELL_SIDE_ARM); MOVE(opponent, MOVE_MIRROR_COAT); }
     } SCENE {
@@ -61,8 +61,8 @@ DOUBLE_BATTLE_TEST("Shell Side Arm chooses its category for each battler on the 
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Speed(10); Moves(MOVE_SHELL_SIDE_ARM); }
         PLAYER(SPECIES_LOPMONX) { Speed(20); }
-        OPPONENT(SPECIES_REGIROCK) { Speed(30); Defense(200); SpDefense(100); }
-        OPPONENT(SPECIES_REGICE) { Speed(30); Defense(100); SpDefense(200); }
+        OPPONENT(SPECIES_GARGOMON) { Speed(30); Defense(200); SpDefense(100); }
+        OPPONENT(SPECIES_GARGOYLMON) { Speed(30); Defense(100); SpDefense(200); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SHELL_SIDE_ARM, target: opponentRight); MOVE(opponentRight, MOVE_COUNTER); }
         TURN { MOVE(playerLeft, MOVE_SHELL_SIDE_ARM, target: opponentLeft); MOVE(opponentLeft, MOVE_MIRROR_COAT); }

@@ -223,7 +223,7 @@ SINGLE_BATTLE_TEST("Zero to Hero cannot be copied by Trace")
 <<<<<<< HEAD
             MESSAGE("Foe Apemon Traced Palafin's Zero to Hero!");
 =======
-            MESSAGE("The opposing Ralts Traced Palafin's Zero to Hero!");
+            MESSAGE("The opposing Apemon Traced Palafin's Zero to Hero!");
 >>>>>>> upstream/master
         }
     }

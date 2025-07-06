@@ -38,7 +38,7 @@ SINGLE_BATTLE_TEST("Ice Body recovers 1/16th of Max HP in hail.")
 =======
 >>>>>>> upstream/master
         HP_BAR(player, damage: -(100 / 16));
-        MESSAGE("Glalie's Ice Body healed it a little bit!");
+        MESSAGE("Eyesmon's Ice Body healed it a little bit!");
     }
 }
 
@@ -48,7 +48,7 @@ SINGLE_BATTLE_TEST("Ice Body doesn't recover HP if Cloud Nine/Air Lock is on the
     PARAMETRIZE { move = MOVE_HAIL; }
     PARAMETRIZE { move = MOVE_SNOWSCAPE; }
     GIVEN {
-        PLAYER(SPECIES_GLALIE) { Ability(ABILITY_ICE_BODY); HP(1); MaxHP(100); }
+        PLAYER(SPECIES_EYESMON) { Ability(ABILITY_ICE_BODY); HP(1); MaxHP(100); }
         OPPONENT(SPECIES_DEMMERAMON) { Ability(ABILITY_CLOUD_NINE); }
     } WHEN {
         TURN { MOVE(opponent, move); }

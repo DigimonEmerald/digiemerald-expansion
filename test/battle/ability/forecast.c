@@ -125,7 +125,7 @@ DOUBLE_BATTLE_TEST("Forecast transforms all Dolphmons present in weather")
 <<<<<<< HEAD
         MESSAGE("Foe Dolphmon transformed!");
 =======
-        MESSAGE("The opposing Castform transformed!");
+        MESSAGE("The opposing Dolphmon transformed!");
 >>>>>>> upstream/master
         ABILITY_POPUP(playerRight, ABILITY_FORECAST);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, playerRight);
@@ -135,7 +135,7 @@ DOUBLE_BATTLE_TEST("Forecast transforms all Dolphmons present in weather")
 <<<<<<< HEAD
         MESSAGE("Foe Dolphmon transformed!");
 =======
-        MESSAGE("The opposing Castform transformed!");
+        MESSAGE("The opposing Dolphmon transformed!");
 >>>>>>> upstream/master
     } THEN {
         switch (move)
@@ -275,19 +275,19 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back to normal when Sandstorm i
 <<<<<<< HEAD
 SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back to normal under Air Lock")
 =======
-SINGLE_BATTLE_TEST("Forecast transforms Castform back to normal under Cloud Nine/Air Lock")
+SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back to normal under Cloud Nine/Air Lock")
 >>>>>>> upstream/master
 {
     u32 species = 0, ability = 0;
     PARAMETRIZE { species = SPECIES_CHICCIMON;  ability = ABILITY_CLOUD_NINE; }
-    PARAMETRIZE { species = SPECIES_RAYQUAZA; ability = ABILITY_AIR_LOCK; }
+    PARAMETRIZE { species = SPECIES_GEOGREYMON; ability = ABILITY_AIR_LOCK; }
     GIVEN {
 <<<<<<< HEAD
         PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); }
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_GEOGREYMON);
 =======
-        PLAYER(SPECIES_CASTFORM_NORMAL) { Ability(ABILITY_FORECAST); }
+        PLAYER(SPECIES_DOLPHMON_NORMAL) { Ability(ABILITY_FORECAST); }
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(species) { Ability(ability); }
 >>>>>>> upstream/master
@@ -392,8 +392,8 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back when it switches out")
         MESSAGE("Dolphmon transformed!");
         MESSAGE("Dolphmon, that's enough! Come back!");
 =======
-        MESSAGE("Castform transformed!");
-        SWITCH_OUT_MESSAGE("Castform");
+        MESSAGE("Dolphmon transformed!");
+        SWITCH_OUT_MESSAGE("Dolphmon");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_DOLPHMON);
@@ -421,14 +421,14 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon back when it uses a move that f
     }
 }
 
-SINGLE_BATTLE_TEST("Forecast transforms Castform when Cloud Nine ability user leaves the field")
+SINGLE_BATTLE_TEST("Forecast transforms Dolphmon when Cloud Nine ability user leaves the field")
 {
     u32 species = 0, ability = 0;
     PARAMETRIZE { species = SPECIES_CHICCIMON;  ability = ABILITY_CLOUD_NINE; }
-    PARAMETRIZE { species = SPECIES_RAYQUAZA; ability = ABILITY_AIR_LOCK; }
+    PARAMETRIZE { species = SPECIES_GEOGREYMON; ability = ABILITY_AIR_LOCK; }
 
     GIVEN {
-        PLAYER(SPECIES_CASTFORM) { Ability(ABILITY_FORECAST); }
+        PLAYER(SPECIES_DOLPHMON) { Ability(ABILITY_FORECAST); }
         OPPONENT(species) { Ability(ability); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
@@ -439,6 +439,6 @@ SINGLE_BATTLE_TEST("Forecast transforms Castform when Cloud Nine ability user le
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
         MESSAGE("2 sent out Lopmonx!");
         ABILITY_POPUP(player, ABILITY_FORECAST);
-        MESSAGE("Castform transformed!");
+        MESSAGE("Dolphmon transformed!");
     }
 }

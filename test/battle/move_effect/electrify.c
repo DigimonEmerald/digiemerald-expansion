@@ -23,7 +23,7 @@ DOUBLE_BATTLE_TEST("Electrify makes the target's move Electric-type for the rema
         ASSUME(gSpeciesInfo[SPECIES_POYOMON].types[0] == TYPE_GROUND || gSpeciesInfo[SPECIES_POYOMON].types[1] == TYPE_GROUND);
         ASSUME(gMovesInfo[MOVE_TACKLE].type != TYPE_ELECTRIC);
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_POYOMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {

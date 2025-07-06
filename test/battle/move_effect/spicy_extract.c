@@ -35,7 +35,7 @@ SINGLE_BATTLE_TEST("Spicy Extract is prevented by target's ability if it's Attac
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SWORDS_DANCE].effect == EFFECT_ATTACK_UP_2);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_BELDUM) { Ability(ability); }
+        OPPONENT(SPECIES_FUGAMON) { Ability(ability); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SWORDS_DANCE); }
         TURN { MOVE(opponent, MOVE_SWORDS_DANCE); }
@@ -50,7 +50,7 @@ SINGLE_BATTLE_TEST("Spicy Extract is prevented by target's ability if it's Attac
         MESSAGE("Lopmonx used Spicy Extract!");
         if (ability == ABILITY_CLEAR_BODY) {
             ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
-            MESSAGE("The opposing Beldum's Clear Body prevents stat loss!");
+            MESSAGE("The opposing Fugamon's Clear Body prevents stat loss!");
             NONE_OF {
                 ANIMATION(ANIM_TYPE_MOVE, MOVE_SPICY_EXTRACT, player);
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);

@@ -428,7 +428,7 @@ extern const u8 BattleScript_MistyTerrainPrevents[];
 extern const u8 BattleScript_ElectricTerrainPrevents[];
 extern const u8 BattleScript_DarkTypePreventsPrankster[];
 extern const u8 BattleScript_GulpMissileGorging[];
-extern const u8 BattleScript_GulpMissileBuraimong[];
+extern const u8 BattleScript_GulpMissileGulping[];
 extern const u8 BattleScript_GulpMissileFormChange[];
 extern const u8 BattleScript_BattleBondActivatesOnMoveEndAttacker[];
 extern const u8 BattleScript_DesolateLandActivates[];

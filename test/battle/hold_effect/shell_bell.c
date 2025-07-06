@@ -42,7 +42,7 @@ SINGLE_BATTLE_TEST("Shell Bell does not activate on Future Sight if the original
 
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { HP(1); Item(ITEM_SHELL_BELL); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_FUTURE_SIGHT); }
         TURN {}
@@ -50,7 +50,7 @@ SINGLE_BATTLE_TEST("Shell Bell does not activate on Future Sight if the original
         TURN { MOVE(player, MOVE_DRAGON_RAGE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FUTURE_SIGHT, player);
-        MESSAGE("The opposing Wynaut took the Future Sight attack!");
+        MESSAGE("The opposing Exveemon took the Future Sight attack!");
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_RAGE, player);
         HP_BAR(opponent, captureDamage: &damage);

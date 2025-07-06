@@ -57,7 +57,7 @@ SINGLE_BATTLE_TEST("Custap Berry activates even if the opposing mon switches out
 <<<<<<< HEAD
         MESSAGE("Gargomon can act faster, thanks to Custap Berry!");
 =======
-        MESSAGE("Regirock can act faster than normal, thanks to its Custap Berry!");
+        MESSAGE("Gargomon can act faster than normal, thanks to its Custap Berry!");
 >>>>>>> upstream/master
     }
 }

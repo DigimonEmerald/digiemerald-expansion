@@ -115,8 +115,8 @@ SINGLE_BATTLE_TEST("Revelation Dance becomes Normal type if used by a Typeless P
 {
     u16 speciesOpponent;
 
-    PARAMETRIZE { speciesOpponent = SPECIES_SABLEYE; }
-    PARAMETRIZE { speciesOpponent = SPECIES_AGGRON; }
+    PARAMETRIZE { speciesOpponent = SPECIES_BLGARGOMON; }
+    PARAMETRIZE { speciesOpponent = SPECIES_BLGROWLMON; }
 
     ASSUME(B_ROOST_PURE_FLYING >= GEN_5);
 
@@ -133,7 +133,7 @@ SINGLE_BATTLE_TEST("Revelation Dance becomes Normal type if used by a Typeless P
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REVELATION_DANCE, opponent);
         HP_BAR(player);
         ABILITY_POPUP(player, ABILITY_DANCER);
-        if (speciesOpponent == SPECIES_AGGRON) {
+        if (speciesOpponent == SPECIES_BLGROWLMON) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_REVELATION_DANCE, player);
             HP_BAR(opponent);
             MESSAGE("It's not very effective…");

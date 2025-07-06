@@ -185,7 +185,7 @@ SINGLE_BATTLE_TEST("Corrosion allows the Pokémon with the ability to poison a S
         ASSUME(gMovesInfo[MOVE_POISON_POWDER].effect == EFFECT_POISON);
         ASSUME(gMovesInfo[MOVE_MAGIC_COAT].effect == EFFECT_MAGIC_COAT);
         PLAYER(SPECIES_SALANDIT) { Ability(ABILITY_CORROSION); }
-        OPPONENT(SPECIES_BELDUM);
+        OPPONENT(SPECIES_FUGAMON);
     } WHEN {
         TURN { MOVE(player, MOVE_MAGIC_COAT); MOVE(opponent, move); }
     } SCENE {

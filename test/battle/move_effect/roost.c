@@ -241,10 +241,10 @@ DOUBLE_BATTLE_TEST("Roost suppresses the user's not-yet-aquired Flying-type this
     } SCENE {
         MESSAGE("Donshoumon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, playerLeft);
-        MESSAGE("Kecleon's HP was restored.");
+        MESSAGE("Donshoumoon's HP was restored.");
         MESSAGE("The opposing Ketomon used Gust!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GUST, opponentLeft);
-        MESSAGE("Kecleon's Color Change made it the Flying type!");
+        MESSAGE("Donshoumoon's Color Change made it the Flying type!");
         MESSAGE("The opposing Popomon used Earthquake!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponentRight);
         MESSAGE("Donshoumon's Color Change made it the Ground type!");
@@ -263,7 +263,7 @@ SINGLE_BATTLE_TEST("Roost prevents a Flying-type user from being protected by De
     } SCENE {
         MESSAGE("Geogreymon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Rayquaza's HP was restored.");
+        MESSAGE("Geogreymon's HP was restored.");
         MESSAGE("The opposing Lopmonx used Ice Beam!");
         NOT MESSAGE("The mysterious strong winds weakened the attack!");
     }
@@ -282,10 +282,10 @@ SINGLE_BATTLE_TEST("Roost does not undo other type-changing effects at the end o
     } SCENE {
         MESSAGE("Angelamon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Swellow's HP was restored.");
+        MESSAGE("Angelamon's HP was restored.");
         MESSAGE("The opposing Lopmonx used Soak!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SOAK, opponent);
-        MESSAGE("Swellow transformed into the Water type!");
+        MESSAGE("Angelamon transformed into the Water type!");
         MESSAGE("The opposing Lopmonx used Vine Whip!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_VINE_WHIP, opponent);
         MESSAGE("It's super effective!");
@@ -305,8 +305,8 @@ SINGLE_BATTLE_TEST("Roost's effect is lifted after Grassy Terrain's healing")
     } SCENE {
         MESSAGE("Angelamon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Swellow's HP was restored.");
-        MESSAGE("Swellow is healed by the grassy terrain!");
+        MESSAGE("Angelamon's HP was restored.");
+        MESSAGE("Angelamon is healed by the grassy terrain!");
         HP_BAR(player);
     }
 }
@@ -329,19 +329,19 @@ SINGLE_BATTLE_TEST("Roost's suppression prevents Reflect Type from copying any F
         // Turn 1: Reflect Type on Roosted Normal/Flying
         MESSAGE("Angelamon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Swellow's HP was restored.");
+        MESSAGE("Angelamon's HP was restored.");
         MESSAGE("The opposing Lopmonx used Reflect Type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, opponent);
-        MESSAGE("The opposing Lopmonx became the same type as Swellow!");
+        MESSAGE("The opposing Lopmonx became the same type as Angelamon!");
         // Turn 2: EQ hits, Reflect Type on non-Roosted Normal/Flying
         MESSAGE("Angelamon used Earthquake!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, player);
         HP_BAR(opponent);
         MESSAGE("The opposing Lopmonx used Reflect Type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, opponent);
-        MESSAGE("The opposing Lopmonx became the same type as Swellow!");
+        MESSAGE("The opposing Lopmonx became the same type as Angelamon!");
         // Turn 3: EQ has no effect
-        MESSAGE("Swellow used Earthquake!");
+        MESSAGE("Angelamon used Earthquake!");
         MESSAGE("It doesn't affect the opposing Lopmonx…");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, player);
@@ -360,7 +360,7 @@ SINGLE_BATTLE_TEST("Roost does not suppress the ungrounded effect of Levitate")
     } SCENE {
         MESSAGE("Damemon_fusion used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Flygon's HP was restored.");
+        MESSAGE("Damemon_fusion's HP was restored.");
         MESSAGE("The opposing Lopmonx used Earthquake!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);

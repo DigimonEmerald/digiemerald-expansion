@@ -57,7 +57,7 @@ SINGLE_BATTLE_TEST("Full Restore restores a party members HP and cures any prima
 <<<<<<< HEAD
         MESSAGE("Exveemon had its HP restored!");
 =======
-        MESSAGE("Wynaut had its HP restored.");
+        MESSAGE("Exveemon had its HP restored.");
 >>>>>>> upstream/master
         if (status != STATUS1_NONE) {
             MESSAGE("Exveemon had its status healed!"); // The message is not printed if status wasn't healed.
@@ -117,8 +117,8 @@ SINGLE_BATTLE_TEST("Full Restore heals a party member from any primary status")
         NOT MESSAGE("Exveemon had its HP restored!"); // The message is not printed if mon has max HP.
         MESSAGE("Exveemon had its status healed!");
 =======
-        NOT MESSAGE("Wynaut had its HP restored."); // The message is not printed if mon has max HP.
-        MESSAGE("Wynaut had its status healed!");
+        NOT MESSAGE("Exveemon had its HP restored."); // The message is not printed if mon has max HP.
+        MESSAGE("Exveemon had its status healed!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->species, SPECIES_EXVEEMON);

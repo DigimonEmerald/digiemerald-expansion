@@ -106,7 +106,7 @@ SINGLE_BATTLE_TEST("Plasma Fists type-changing effect is applied after Normalize
 <<<<<<< HEAD:test/battle/move_effect/plasma_fists.c
         MESSAGE("Foe Birdramon used Ember!");
 =======
-        MESSAGE("The opposing Skitty used Ember!");
+        MESSAGE("The opposing Birdramon used Ember!");
 >>>>>>> upstream/master:test/battle/move_effect_secondary/ion_deluge.c
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EMBER, opponent);
         MESSAGE("It's super effective!");

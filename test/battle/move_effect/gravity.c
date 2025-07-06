@@ -11,7 +11,7 @@ DOUBLE_BATTLE_TEST("Gravity cancels fly and sky drop if they are in the air")
     u8 visibility;
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Speed(100); }
-        PLAYER(SPECIES_WYNAUT) { Speed(90); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(90); }
         OPPONENT(SPECIES_KETOMON) { Speed(50); }
         OPPONENT(SPECIES_ROOKIDEE) { Speed(45); }
     } WHEN {
@@ -20,7 +20,7 @@ DOUBLE_BATTLE_TEST("Gravity cancels fly and sky drop if they are in the air")
     } SCENE {
         // turn 1
         MESSAGE("The opposing Ketomon used Sky Drop!");
-        MESSAGE("The opposing Ketomon took Wynaut into the sky!");
+        MESSAGE("The opposing Ketomon took Exveemon into the sky!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SKY_DROP, opponentLeft);
         MESSAGE("The opposing Rookidee used Fly!");
         MESSAGE("The opposing Rookidee flew up high!");

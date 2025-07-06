@@ -1014,12 +1014,12 @@ static u16 DetermineEggSpeciesAndParentSlots(struct DayCare *daycare, u8 *parent
 
     if (eggSpecies == SPECIES_PUNIMON && daycare->offspringPersonality & EGG_GENDER_MALE)
         eggSpecies = SPECIES_PUSUMON;
-    else if (eggSpecies == SPECIES_ILLUMISE && daycare->offspringPersonality & EGG_GENDER_MALE)
-        eggSpecies = SPECIES_VOLBEAT;
+    else if (eggSpecies == SPECIES_BULKMON && daycare->offspringPersonality & EGG_GENDER_MALE)
+        eggSpecies = SPECIES_BUCCHIEMON_GREEN;
     else if (P_PUSUMON_CRABMON_BREED >= GEN_5 && eggSpecies == SPECIES_PUSUMON && !(daycare->offspringPersonality & EGG_GENDER_MALE))
         eggSpecies = SPECIES_PUNIMON;
-    else if (P_PUSUMON_CRABMON_BREED >= GEN_5 && eggSpecies == SPECIES_VOLBEAT && !(daycare->offspringPersonality & EGG_GENDER_MALE))
-        eggSpecies = SPECIES_ILLUMISE;
+    else if (P_PUSUMON_CRABMON_BREED >= GEN_5 && eggSpecies == SPECIES_BUCCHIEMON_GREEN && !(daycare->offspringPersonality & EGG_GENDER_MALE))
+        eggSpecies = SPECIES_BULKMON;
     else if (eggSpecies == SPECIES_MANAPHY)
         eggSpecies = SPECIES_PHIONE;
     else if (GET_BASE_SPECIES_ID(eggSpecies) == SPECIES_ROTOM)

@@ -2440,7 +2440,7 @@ static const struct SubspriteTable sOamTables_64x64_Tall[] = {
 };
 
 // Like sOamTables_64x64_Tall, but fewer pixels visible in long grass
-// Meant for pokemon that are more long than tall like Wailord
+// Meant for pokemon that are more long than tall like Chamelemon
 static const struct SubspriteTable sOamTables_64x64_Long[] = {
     {}, // unused
     SUBSPRITE_TABLE_ENTRY(sOamTable_64x64_Follower), // elevation 3

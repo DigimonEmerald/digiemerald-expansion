@@ -356,26 +356,26 @@ const u32 gObjectEventPic_Lucy[] = INCBIN_U32("graphics/object_events/pics/peopl
 const u32 gObjectEventPic_Brandon[] = INCBIN_U32("graphics/object_events/pics/people/frontier_brains/brandon.4bpp");
 const u32 gObjectEventPic_PokeBall[] = INCBIN_U32("graphics/object_events/pics/misc/ball_poke.4bpp");
 
-const u32 gObjectEventPic_DeoxysOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/deoxys.4bpp");
+const u32 gObjectEventPic_GesomonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/gesomon.4bpp");
 const u32 gObjectEventPic_FalcomonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/falcomon.4bpp");
-const u32 gObjectEventPic_DusclopsOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/dusclops.4bpp");
-const u32 gObjectEventPic_KirliaOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/kirlia.4bpp");
-const u32 gObjectEventPic_AzurillOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/azurill.4bpp");
-const u32 gObjectEventPic_KecleonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/kecleon.4bpp");
-const u32 gObjectEventPic_WingullOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/wingull.4bpp");
+const u32 gObjectEventPic_EbidramonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/ebidramon.4bpp");
+const u32 gObjectEventPic_AquilamonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/aquilamon.4bpp");
+const u32 gObjectEventPic_BiostegmonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/biostegmon.4bpp");
+const u32 gObjectEventPic_DonshoumoonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/donshoumoon.4bpp");
+const u32 gObjectEventPic_AngemonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/angemon.4bpp");
 const u32 gObjectEventPic_JellymonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/jellymon.4bpp");
 const u32 gObjectEventPic_PetitmonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/petitmon.4bpp");
 const u32 gObjectEventPic_ToyagumonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/toyagumon.4bpp");
-const u32 gObjectEventPic_SkittyOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/skitty.4bpp");
+const u32 gObjectEventPic_BirdramonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/birdramon.4bpp");
 const u32 gObjectEventPic_TinkermonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/tinkermon.4bpp");
 const u32 gObjectEventPic_SparrowmonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/sparrowmon.4bpp");
 const u32 gObjectEventPic_Starmon_2010Old[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/ho_oh.4bpp");
-const u32 gObjectEventPic_GroudonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/groudon.4bpp");
-const u32 gObjectEventPic_KyogreOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/kyogre.4bpp");
+const u32 gObjectEventPic_GekomonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/gekomon.4bpp");
+const u32 gObjectEventPic_Gatomon_xOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/gatomon_x.4bpp");
 
-const u32 gObjectEventPic_VigorothMover[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/vigoroth_mover.4bpp");
+const u32 gObjectEventPic_AxemonMover[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/axemon_mover.4bpp");
 const u32 gObjectEventPic_JunkmonTree[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/junkmon_tree.4bpp");
-const u32 gObjectEventPic_RayquazaCutscene[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/rayquaza_cutscene.4bpp");
+const u32 gObjectEventPic_GeogreymonCutscene[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/geogreymon_cutscene.4bpp");
 
 const u16 gObjectEventPal_Starmon_2010[] = INCBIN_U16("graphics/object_events/palettes/ho_oh.gbapal");
 const u16 gObjectEventPal_Sparrowmon[] = INCBIN_U16("graphics/object_events/palettes/sparrowmon.gbapal");

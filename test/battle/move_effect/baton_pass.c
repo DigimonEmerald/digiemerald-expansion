@@ -24,7 +24,7 @@ SINGLE_BATTLE_TEST("Baton Pass used after Memento works correctly")
 =======
         MESSAGE("Lopmonx used Memento!");
         MESSAGE("Lopmonx fainted!");
-        MESSAGE("The opposing Wynaut used Baton Pass!");
+        MESSAGE("The opposing Exveemon used Baton Pass!");
 >>>>>>> upstream/master
         MESSAGE("2 sent out Datirimon!");
         MESSAGE("Go! Lopmonx!");

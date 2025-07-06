@@ -69,8 +69,8 @@ SINGLE_BATTLE_TEST("Healing Wish effect activates only if the switched pokemon c
             MESSAGE("The healing wish came true for Exveemon!");
             MESSAGE("Exveemon regained health!");
 =======
-            MESSAGE("The healing wish came true for Wynaut!");
-            MESSAGE("Wynaut's HP was restored.");
+            MESSAGE("The healing wish came true for Exveemon!");
+            MESSAGE("Exveemon's HP was restored.");
 >>>>>>> upstream/master
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);

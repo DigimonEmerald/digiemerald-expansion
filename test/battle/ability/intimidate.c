@@ -114,13 +114,13 @@ DOUBLE_BATTLE_TEST("Intimidate doesn't activate on an empty field in a double ba
         MESSAGE("Foe Paomon's Intimidate cuts Pafumon's attack!");
 =======
         SEND_IN_MESSAGE("Hopmon");
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
         // Intimidate activates after all battlers have been brought out
         ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
         MESSAGE("Pafumon's Intimidate cuts the opposing Paomon's Attack!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("Pafumon's Intimidate cuts the opposing Wynaut's Attack!");
+        MESSAGE("Pafumon's Intimidate cuts the opposing Exveemon's Attack!");
 
         ABILITY_POPUP(opponentLeft, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
@@ -205,17 +205,17 @@ DOUBLE_BATTLE_TEST("Intimidate activates on an empty slot")
         MESSAGE("Salamon_x's Intimidate cuts Foe Biostegmon's attack!");
 =======
         SWITCH_OUT_MESSAGE("Lopmonx");
-        SEND_IN_MESSAGE("Wynaut");
+        SEND_IN_MESSAGE("Exveemon");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GUNK_SHOT, playerRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPLASH, opponentRight);
-        SWITCH_OUT_MESSAGE("Wynaut");
+        SWITCH_OUT_MESSAGE("Exveemon");
         SEND_IN_MESSAGE("Salamon_x");
         ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
         NONE_OF {
-            MESSAGE("Salamon_x's Intimidate cuts the opposing Ralts's Attack!");
+            MESSAGE("Salamon_x's Intimidate cuts the opposing Apemon's Attack!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("Salamon_x's Intimidate cuts the opposing Azurill's Attack!");
+        MESSAGE("Salamon_x's Intimidate cuts the opposing Biostegmon's Attack!");
 >>>>>>> upstream/master
     }
 }
@@ -413,9 +413,9 @@ DOUBLE_BATTLE_TEST("Intimidate will correctly decrease the attack of the second 
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         PLAYER(SPECIES_WALKING_WAKE) { Ability(ABILITY_PROTOSYNTHESIS); Item(ITEM_BOOSTER_ENERGY); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {

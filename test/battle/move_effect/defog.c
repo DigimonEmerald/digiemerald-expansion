@@ -424,12 +424,12 @@ DOUBLE_BATTLE_TEST("Defog removes Aurora Veil from target's side", s16 damagePhy
         HP_BAR(playerLeft, captureDamage: &results[i].damagePhysical);
         MESSAGE("Foe Eyesmon used Gust!");
 =======
-            MESSAGE("Glalie's evasiveness fell!");
+            MESSAGE("Eyesmon's evasiveness fell!");
             MESSAGE("Your team's Aurora Veil wore off!");
         }
-        MESSAGE("The opposing Glalie used Tackle!");
+        MESSAGE("The opposing Eyesmon used Tackle!");
         HP_BAR(playerLeft, captureDamage: &results[i].damagePhysical);
-        MESSAGE("The opposing Glalie used Gust!");
+        MESSAGE("The opposing Eyesmon used Gust!");
 >>>>>>> upstream/master
         HP_BAR(playerRight, captureDamage: &results[i].damageSpecial);
     } FINALLY {
@@ -463,8 +463,8 @@ DOUBLE_BATTLE_TEST("Defog removes everything it can")
         MESSAGE("Foe Eyesmon used Defog!");
         MESSAGE("Eyesmon is protected by MIST!");
 =======
-        MESSAGE("The opposing Glalie used Defog!");
-        MESSAGE("Glalie is protected by the mist!");
+        MESSAGE("The opposing Eyesmon used Defog!");
+        MESSAGE("Eyesmon is protected by the mist!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DEFOG, opponentRight);
         // Player side

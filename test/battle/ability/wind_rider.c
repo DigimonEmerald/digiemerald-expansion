@@ -66,7 +66,7 @@ SINGLE_BATTLE_TEST("Wind Rider raises Attack by one stage if switched into Tailw
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_BRAMBLIN) { Ability(ABILITY_WIND_RIDER); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TAILWIND); }

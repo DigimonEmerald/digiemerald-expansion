@@ -169,7 +169,7 @@ SINGLE_BATTLE_TEST("Rage Fist base power is not lost if user switches out")
         HP_BAR(opponent, captureDamage: &timesGotHit[0]);
         SWITCH_OUT_MESSAGE("Lopmonx");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
-        SWITCH_OUT_MESSAGE("Wynaut");
+        SWITCH_OUT_MESSAGE("Exveemon");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_RAGE_FIST, player);
         HP_BAR(opponent, captureDamage: &timesGotHit[1]);
     } THEN {
@@ -241,7 +241,7 @@ SINGLE_BATTLE_TEST("Rage Fist base power is not increased if move had no affect"
         for (turns = 0; turns < 2; turns++) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_RAGE_FIST, player);
             HP_BAR(opponent, captureDamage: &timesGotHit[turns]);
-            MESSAGE("The opposing Regirock used Tackle!");
+            MESSAGE("The opposing Gargomon used Tackle!");
             MESSAGE("It doesn't affect Tokomon_x…");
         }
     } THEN {

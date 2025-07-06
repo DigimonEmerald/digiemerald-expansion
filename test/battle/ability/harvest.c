@@ -227,7 +227,7 @@ SINGLE_BATTLE_TEST("Harvest can restore a Berry that was transferred from anothe
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TRICK].effect == EFFECT_TRICK);
-        PLAYER(SPECIES_TORKOAL) { Ability(ABILITY_DROUGHT); Item(ITEM_SITRUS_BERRY); }
+        PLAYER(SPECIES_CLOCKMON) { Ability(ABILITY_DROUGHT); Item(ITEM_SITRUS_BERRY); }
         OPPONENT(SPECIES_AGUMON) { Ability(ABILITY_HARVEST); HP(100); MaxHP(500); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TRICK); MOVE(player, MOVE_TACKLE); }
@@ -247,7 +247,7 @@ SINGLE_BATTLE_TEST("Harvest can only restore the newest berry consumed that was 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TRICK].effect == EFFECT_TRICK);
         ASSUME(gItemsInfo[ITEM_APICOT_BERRY].holdEffect == HOLD_EFFECT_SP_DEFENSE_UP);
-        PLAYER(SPECIES_TORKOAL) { Ability(ABILITY_DROUGHT); Item(ITEM_SITRUS_BERRY); }
+        PLAYER(SPECIES_CLOCKMON) { Ability(ABILITY_DROUGHT); Item(ITEM_SITRUS_BERRY); }
         OPPONENT(SPECIES_AGUMON) { Ability(ABILITY_HARVEST); HP(100); MaxHP(500); Item(ITEM_APICOT_BERRY); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TRICK); MOVE(player, MOVE_TACKLE); }

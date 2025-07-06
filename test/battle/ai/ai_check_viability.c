@@ -211,8 +211,8 @@ AI_DOUBLE_BATTLE_TEST("AI chooses moves that cure self or partner")
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_REGIROCK) { Moves(MOVE_ROCK_SLIDE, MOVE_HEAL_BELL, MOVE_ACID); Status1(status1_0); }
-        OPPONENT(SPECIES_EXPLOUD) { Status1(status1_1); Ability(partnerAbility); }
+        OPPONENT(SPECIES_GARGOMON) { Moves(MOVE_ROCK_SLIDE, MOVE_HEAL_BELL, MOVE_ACID); Status1(status1_0); }
+        OPPONENT(SPECIES_TRAILMON_BATTLE_ARMAMENT) { Status1(status1_1); Ability(partnerAbility); }
     } WHEN {
         if (status1_0 != STATUS1_NONE || (status1_1 != STATUS1_NONE && partnerAbility != ABILITY_SOUNDPROOF))
             TURN { EXPECT_MOVE(opponentLeft, MOVE_HEAL_BELL); }
@@ -234,8 +234,8 @@ AI_SINGLE_BATTLE_TEST("AI chooses moves that cure inactive party members")
         ASSUME(B_HEAL_BELL_SOUNDPROOF >= GEN_5);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_REGIROCK) { Moves(MOVE_BODY_PRESS, MOVE_HEAL_BELL); }
-        OPPONENT(SPECIES_EXPLOUD) { Status1(status); Ability(ability); }
+        OPPONENT(SPECIES_GARGOMON) { Moves(MOVE_BODY_PRESS, MOVE_HEAL_BELL); }
+        OPPONENT(SPECIES_TRAILMON_BATTLE_ARMAMENT) { Status1(status); Ability(ability); }
     } WHEN {
         if (status == STATUS1_NONE)
             TURN { EXPECT_MOVE(opponent, MOVE_BODY_PRESS); }
@@ -252,7 +252,7 @@ AI_DOUBLE_BATTLE_TEST("AI prioritizes Skill Swapping Contrary to allied mons tha
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE);
         PLAYER(SPECIES_LOPMONX) { Speed(3); }
         PLAYER(SPECIES_LOPMONX) { Speed(3); }
-        OPPONENT(SPECIES_SPINDA) { Ability(ABILITY_CONTRARY); Speed(5); Moves(MOVE_SKILL_SWAP, MOVE_ENCORE, MOVE_FAKE_TEARS, MOVE_SWAGGER); }
+        OPPONENT(SPECIES_COREDRAMON_BLUE) { Ability(ABILITY_CONTRARY); Speed(5); Moves(MOVE_SKILL_SWAP, MOVE_ENCORE, MOVE_FAKE_TEARS, MOVE_SWAGGER); }
         OPPONENT(SPECIES_GIGIMON) { Ability(ABILITY_INTIMIDATE); Speed(4); Moves (MOVE_OVERHEAT); }
     } WHEN {
         TURN { EXPECT_MOVE(opponentLeft, MOVE_SKILL_SWAP, target:opponentRight); EXPECT_MOVE(opponentRight, MOVE_OVERHEAT); }

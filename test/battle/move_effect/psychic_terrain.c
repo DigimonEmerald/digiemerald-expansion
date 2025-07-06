@@ -16,8 +16,8 @@ SINGLE_BATTLE_TEST("Psychic Terrain protects grounded battlers from priority mov
         NOT { HP_BAR(opponent); }
         MESSAGE("Foe Lopmonx used Quick Attack!");
 =======
-        MESSAGE("Claydol used Psychic Terrain!");
-        MESSAGE("Claydol cannot use Quick Attack!");
+        MESSAGE("Diatrymon used Psychic Terrain!");
+        MESSAGE("Diatrymon cannot use Quick Attack!");
         NOT { HP_BAR(opponent); }
         MESSAGE("The opposing Lopmonx used Quick Attack!");
 >>>>>>> upstream/master:test/battle/move_effect/psychic_terrain.c
@@ -83,8 +83,8 @@ SINGLE_BATTLE_TEST("Psychic Terrain doesn't block priority moves that target the
         MESSAGE("Blgargomon used PsychcTrrain!");
         MESSAGE("Blgargomon used Recover!");
 =======
-        MESSAGE("Sableye used Psychic Terrain!");
-        MESSAGE("Sableye used Recover!");
+        MESSAGE("Blgargomon used Psychic Terrain!");
+        MESSAGE("Blgargomon used Recover!");
 >>>>>>> upstream/master:test/battle/move_effect/psychic_terrain.c
         HP_BAR(player);
     }
@@ -103,8 +103,8 @@ SINGLE_BATTLE_TEST("Psychic Terrain doesn't block priority moves that target all
         MESSAGE("Blgargomon used PsychcTrrain!");
         MESSAGE("Blgargomon used Haze!");
 =======
-        MESSAGE("Sableye used Psychic Terrain!");
-        MESSAGE("Sableye used Haze!");
+        MESSAGE("Blgargomon used Psychic Terrain!");
+        MESSAGE("Blgargomon used Haze!");
 >>>>>>> upstream/master:test/battle/move_effect/psychic_terrain.c
     }
 }
@@ -122,8 +122,8 @@ SINGLE_BATTLE_TEST("Psychic Terrain doesn't block priority moves that target all
         MESSAGE("Blgargomon used PsychcTrrain!");
         MESSAGE("Blgargomon used Spikes!");
 =======
-        MESSAGE("Sableye used Psychic Terrain!");
-        MESSAGE("Sableye used Spikes!");
+        MESSAGE("Blgargomon used Psychic Terrain!");
+        MESSAGE("Blgargomon used Spikes!");
 >>>>>>> upstream/master:test/battle/move_effect/psychic_terrain.c
     }
 }
@@ -143,8 +143,8 @@ DOUBLE_BATTLE_TEST("Psychic Terrain doesn't block priority moves that target all
         MESSAGE("Blgargomon used PsychcTrrain!");
         MESSAGE("Blgargomon used Heal Pulse!");
 =======
-        MESSAGE("Sableye used Psychic Terrain!");
-        MESSAGE("Sableye used Heal Pulse!");
+        MESSAGE("Blgargomon used Psychic Terrain!");
+        MESSAGE("Blgargomon used Heal Pulse!");
 >>>>>>> upstream/master:test/battle/move_effect/psychic_terrain.c
     }
 }
@@ -162,8 +162,8 @@ SINGLE_BATTLE_TEST("Psychic Terrain doesn't block priority field moves")
         MESSAGE("Blgargomon used PsychcTrrain!");
         MESSAGE("Blgargomon used Sunny Day!");
 =======
-        MESSAGE("Sableye used Psychic Terrain!");
-        MESSAGE("Sableye used Sunny Day!");
+        MESSAGE("Blgargomon used Psychic Terrain!");
+        MESSAGE("Blgargomon used Sunny Day!");
 >>>>>>> upstream/master:test/battle/move_effect/psychic_terrain.c
     }
 }

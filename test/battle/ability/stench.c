@@ -62,7 +62,7 @@ DOUBLE_BATTLE_TEST("Stench only triggers if target takes damage")
 <<<<<<< HEAD
         NONE_OF { MESSAGE("Exveemon flinched!"); }
 =======
-        NONE_OF { MESSAGE("Wynaut flinched and couldn't move!"); }
+        NONE_OF { MESSAGE("Exveemon flinched and couldn't move!"); }
 >>>>>>> upstream/master
     }
 }
@@ -91,7 +91,7 @@ DOUBLE_BATTLE_TEST("Stench doesn't trigger if partner uses a move")
 =======
         MESSAGE("The opposing Sakuttomon flinched and couldn't move!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);
-        NOT MESSAGE("Wynaut flinched and couldn't move!");
+        NOT MESSAGE("Exveemon flinched and couldn't move!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerRight);
     }

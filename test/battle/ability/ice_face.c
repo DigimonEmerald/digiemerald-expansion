@@ -125,7 +125,7 @@ SINGLE_BATTLE_TEST("Ice Face doesn't transform Eiscue if Cloud Nine/Air Lock is 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].category == DAMAGE_CATEGORY_PHYSICAL);
         PLAYER(SPECIES_EISCUE) { HP(1); }
-        OPPONENT(SPECIES_RAYQUAZA) { Ability(ABILITY_AIR_LOCK); }
+        OPPONENT(SPECIES_GEOGREYMON) { Ability(ABILITY_AIR_LOCK); }
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_TACKLE); }
         TURN { MOVE(player, MOVE_SNOWSCAPE); MOVE(opponent, MOVE_TACKLE); }
@@ -147,7 +147,7 @@ SINGLE_BATTLE_TEST("Ice Face is not restored if hail or snow and Eiscue are alre
         ASSUME(gMovesInfo[MOVE_HAIL].effect == EFFECT_HAIL);
         PLAYER(SPECIES_EISCUE);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); MOVE(player, move); }
         TURN { MOVE(opponent, MOVE_TACKLE); }

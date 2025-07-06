@@ -67,7 +67,7 @@ SINGLE_BATTLE_TEST("Jaboca Berry tirggers before Bug Bite can steal it")
         NOT MESSAGE("Exveemon stole and ate Foe Lopmonx's Jaboca Berry!");
 =======
         MESSAGE("Wyanut was hurt by the opposing Lopmonx's Jaboca Berry!");
-        NOT MESSAGE("Wynaut stole and ate the opposing its target's Jaboca Berry!");
+        NOT MESSAGE("Exveemon stole and ate the opposing its target's Jaboca Berry!");
 >>>>>>> upstream/master
     }
 }

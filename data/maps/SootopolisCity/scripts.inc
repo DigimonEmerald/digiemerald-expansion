@@ -495,7 +495,7 @@ SootopolisCity_EventScript_GeogreymonSceneFromPokeCenter::
 	removeobject LOCALID_GEKOMON
 	removeobject LOCALID_GATOMON_X
 	addobject LOCALID_GEOGREYMON
-	hideobjectat LOCALID_RAYQUAZA, MAP_SOOTOPOLIS_CITY
+	hideobjectat LOCALID_GEOGREYMON, MAP_SOOTOPOLIS_CITY
 	setvar VAR_0x8004, TRUE
 	special Script_DoGeogreymonScene
 	waitstate

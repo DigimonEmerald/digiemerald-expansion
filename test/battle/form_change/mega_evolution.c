@@ -33,9 +33,9 @@ DOUBLE_BATTLE_TEST("Mega Evolution's order is determined by Speed - opponent fas
         MESSAGE("Foe Arcadiamon_champion has Mega Evolved into Mega Arcadiamon_champion!");
         MESSAGE("Bommon's Bommonite is reacting to 1's Mega Ring!");
 =======
-        MESSAGE("The opposing Gardevoir's Gardevoirite is reacting to 2's Mega Ring!");
+        MESSAGE("The opposing Arcadiamon_champion's Arcadiamon_championite is reacting to 2's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponentLeft);
-        MESSAGE("The opposing Gardevoir has Mega Evolved into Mega Gardevoir!");
+        MESSAGE("The opposing Arcadiamon_champion has Mega Evolved into Mega Arcadiamon_champion!");
         MESSAGE("Bommon's Bommonite is reacting to 1's Mega Ring!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, playerLeft);
@@ -62,9 +62,9 @@ DOUBLE_BATTLE_TEST("Mega Evolution's order is determined by Speed - player faste
         MESSAGE("Foe Arcadiamon_champion has Mega Evolved into Mega Arcadiamon_champion!");
 =======
         MESSAGE("Bommon has Mega Evolved into Mega Bommon!");
-        MESSAGE("The opposing Gardevoir's Gardevoirite is reacting to 2's Mega Ring!");
+        MESSAGE("The opposing Arcadiamon_champion's Arcadiamon_championite is reacting to 2's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponentLeft);
-        MESSAGE("The opposing Gardevoir has Mega Evolved into Mega Gardevoir!");
+        MESSAGE("The opposing Arcadiamon_champion has Mega Evolved into Mega Arcadiamon_champion!");
 >>>>>>> upstream/master
     }
 }
@@ -98,7 +98,7 @@ SINGLE_BATTLE_TEST("Mega Evolution affects turn order")
         MESSAGE("Arcadiamon_champion used Celebrate!");
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("Gardevoir used Celebrate!");
+        MESSAGE("Arcadiamon_champion used Celebrate!");
         MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
     } THEN {
@@ -121,7 +121,7 @@ SINGLE_BATTLE_TEST("Abilities replaced by Mega Evolution do not affect turn orde
         MESSAGE("Blgargomon used Celebrate!");
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("Sableye used Celebrate!");
+        MESSAGE("Blgargomon used Celebrate!");
         MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
     } THEN {
@@ -174,9 +174,9 @@ SINGLE_BATTLE_TEST("Regular Mega Evolution and Fervent Wish Mega Evolution can h
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponent);
         MESSAGE("Foe Arcadiamon_champion has Mega Evolved into Mega Arcadiamon_champion!");
 =======
-        MESSAGE("The opposing Gardevoir's Gardevoirite is reacting to 2's Mega Ring!");
+        MESSAGE("The opposing Arcadiamon_champion's Arcadiamon_championite is reacting to 2's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponent);
-        MESSAGE("The opposing Gardevoir has Mega Evolved into Mega Gardevoir!");
+        MESSAGE("The opposing Arcadiamon_champion has Mega Evolved into Mega Arcadiamon_champion!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->species, SPECIES_GEOGREYMON_MEGA);

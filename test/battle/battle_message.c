@@ -11,38 +11,38 @@ SINGLE_BATTLE_TEST("Battle Message: Send-in message depends on foe HP")
     PARAMETRIZE { hp = 9; }
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX) { HP(hp); MaxHP(100); }
     } WHEN {
         TURN { SWITCH(player, 1);  }
     } SCENE {
         if (hp > 69)
-            MESSAGE("Go! Wynaut!");
+            MESSAGE("Go! Exveemon!");
         else if (hp > 39)
-            MESSAGE("You're in charge, Wynaut!");
+            MESSAGE("You're in charge, Exveemon!");
         else if (hp > 9)
-            MESSAGE("Go for it, Wynaut!");
+            MESSAGE("Go for it, Exveemon!");
         else
-            MESSAGE("Your opponent's weak! Get 'em, Wynaut!");
+            MESSAGE("Your opponent's weak! Get 'em, Exveemon!");
     }
 }
 
 TO_DO_BATTLE_TEST("Battle Message: Switch-out message changes based on conditions")
 /*{
     GIVEN {
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { SWITCH(player, 1);  }
     } SCENE {
         if (???)
-            MESSAGE("Wynaut, that's enough! Come back!");
+            MESSAGE("Exveemon, that's enough! Come back!");
         else if (???)
-            MESSAGE("Wynaut, come back!");
+            MESSAGE("Exveemon, come back!");
         else if (???)
-            MESSAGE("Wynaut, OK! Come back!");
+            MESSAGE("Exveemon, OK! Come back!");
         else
-            MESSAGE("Wynaut, good! Come back!");
+            MESSAGE("Exveemon, good! Come back!");
     }
 }*/

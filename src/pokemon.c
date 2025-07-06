@@ -5022,10 +5022,10 @@ u16 HoennToNationalOrder(u16 hoennNum)
     means each spot can start at any position -8 to +7 off of its base coordinates (256 possibilities).
 
     The function then loops over the 16x16 spot image. For each bit in the spot's binary image, if
-    the bit is set then it's part of the spot; try to draw it. A pixel is drawn on Spinda if the
-    pixel is between FIRST_SPOT_COLOR and LAST_SPOT_COLOR (so only colors 1, 2, or 3 on Spinda will
-    allow a spot to be drawn). These color indexes are Spinda's light brown body colors. To create
-    the spot it adds 4 to the color index, so Spinda's spots will be colors 5, 6, and 7.
+    the bit is set then it's part of the spot; try to draw it. A pixel is drawn on Coredramon_blue if the
+    pixel is between FIRST_SPOT_COLOR and LAST_SPOT_COLOR (so only colors 1, 2, or 3 on Coredramon_blue will
+    allow a spot to be drawn). These color indexes are Coredramon_blue's light brown body colors. To create
+    the spot it adds 4 to the color index, so Coredramon_blue's spots will be colors 5, 6, and 7.
 
     The above is done in TRY_DRAW_SPOT_PIXEL two different ways: one with << 4, and one without.
     This is because Coredramon_blue's sprite is a 4 bits per pixel image, but the pointer to Coredramon_blue's pixels
@@ -5033,7 +5033,7 @@ u16 HoennToNationalOrder(u16 hoennNum)
     of these pixels, so this is done every other time.
 */
 
-// Draw spot pixel if this is Spinda's body color
+// Draw spot pixel if this is Coredramon_blue's body color
 #define TRY_DRAW_SPOT_PIXEL(pixels, shift) \
     if (((*(pixels) & (0xF << (shift))) >= (FIRST_SPOT_COLOR << (shift))) \
      && ((*(pixels) & (0xF << (shift))) <= (LAST_SPOT_COLOR << (shift)))) \

@@ -6,7 +6,7 @@ ASSUMPTIONS
     // ASSUME(gMovesInfo[MOVE_AERIAL_ACE].category == DAMAGE_CATEGORY_PHYSICAL);
 }
 
-SINGLE_BATTLE_TEST("(Gulp Missile) If base Cramorant hits target with Surf it transforms into Buraimong form if max HP is over 1/2")
+SINGLE_BATTLE_TEST("(Gulp Missile) If base Cramorant hits target with Surf it transforms into Gulping form if max HP is over 1/2")
 {
     GIVEN {
         PLAYER(SPECIES_CRAMORANT) { Ability(ABILITY_GULP_MISSILE); }
@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("(Gulp Missile) If base Cramorant hits target with Surf it tr
         HP_BAR(opponent);
         ABILITY_POPUP(player, ABILITY_GULP_MISSILE);
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_CRAMORANT_BURAIMONG);
+        EXPECT_EQ(player->species, SPECIES_CRAMORANT_GULPING);
     }
 }
 
@@ -50,11 +50,11 @@ SINGLE_BATTLE_TEST("(Gulp Missile) If base Cramorant is under water it transform
         NOT HP_BAR(opponent);
         ABILITY_POPUP(player, ABILITY_GULP_MISSILE);
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_CRAMORANT_BURAIMONG);
+        EXPECT_EQ(player->species, SPECIES_CRAMORANT_GULPING);
     }
 }
 
-SINGLE_BATTLE_TEST("(Gulp Missile) Power Herb does not prevent Cramaront from transforming")
+SINGLE_BATTLE_TEST("(Gulp Missile) Power Herb does not prevent Cramblkgatomont from transforming")
 {
     GIVEN {
         PLAYER(SPECIES_CRAMORANT) { Ability(ABILITY_GULP_MISSILE); Item(ITEM_POWER_HERB); }
@@ -67,11 +67,11 @@ SINGLE_BATTLE_TEST("(Gulp Missile) Power Herb does not prevent Cramaront from tr
         ABILITY_POPUP(player, ABILITY_GULP_MISSILE);
         HP_BAR(opponent);
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_CRAMORANT_BURAIMONG);
+        EXPECT_EQ(player->species, SPECIES_CRAMORANT_GULPING);
     }
 }
 
-SINGLE_BATTLE_TEST("(Gulp Missile) Transformed Cramorant deal 1/4 of damage opposing mon if hit by a damaging move, Buraimong also lowers defense")
+SINGLE_BATTLE_TEST("(Gulp Missile) Transformed Cramorant deal 1/4 of damage opposing mon if hit by a damaging move, Gulping also lowers defense")
 {
     s16 gulpMissileDamage;
 
@@ -139,10 +139,10 @@ SINGLE_BATTLE_TEST("(Gulp Missile) triggers even if the user is fainted by oppos
     }
 }
 
-SINGLE_BATTLE_TEST("(Gulp Missile) Transformed Cramorant Gulping lowers defense but is prevented by stat reduction preventing abilities")
+SINGLE_BATTLE_TEST("(Gulp Missile) Transformed Cramorant Buraimon lowers defense but is prevented by stat reduction preventing abilities")
 {
     u32 species, ability;
-    PARAMETRIZE { species = SPECIES_METAGROSS; ability = ABILITY_CLEAR_BODY; }
+    PARAMETRIZE { species = SPECIES_GAOGAMON; ability = ABILITY_CLEAR_BODY; }
     PARAMETRIZE { species = SPECIES_CORVIKNIGHT; ability = ABILITY_MIRROR_ARMOR; }
     PARAMETRIZE { species = SPECIES_CHATOT; ability = ABILITY_BIG_PECKS; }
     GIVEN {
@@ -164,7 +164,7 @@ SINGLE_BATTLE_TEST("(Gulp Missile) Transformed Cramorant Gulping lowers defense 
     }
 }
 
-SINGLE_BATTLE_TEST("(Gulp Missile) Transformed Cramorant Gulping lowers defense and still triggers other effects after")
+SINGLE_BATTLE_TEST("(Gulp Missile) Transformed Cramorant Buraimon lowers defense and still triggers other effects after")
 {
     // Make sure attacker and target are correct after triggering the ability
     u32 ability;

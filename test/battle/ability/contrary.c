@@ -24,7 +24,7 @@ SINGLE_BATTLE_TEST("Contrary raises Attack when Intimidated in a single battle",
 <<<<<<< HEAD
             MESSAGE("Foe Coredramon_blue's Attack rose!");
 =======
-            MESSAGE("The opposing Spinda's Attack rose!");
+            MESSAGE("The opposing Coredramon_blue's Attack rose!");
 >>>>>>> upstream/master
         }
         HP_BAR(player, captureDamage: &results[i].damage);
@@ -61,10 +61,10 @@ DOUBLE_BATTLE_TEST("Contrary raises Attack when Intimidated in a double battle",
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
             MESSAGE("Tinpet's Intimidate cuts Foe Coredramon_blue's attack!");
 =======
-            MESSAGE("The opposing Spinda's Attack rose!");
+            MESSAGE("The opposing Coredramon_blue's Attack rose!");
         } else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-            MESSAGE("Tinpet's Intimidate cuts the opposing Spinda's Attack!");
+            MESSAGE("Tinpet's Intimidate cuts the opposing Coredramon_blue's Attack!");
 >>>>>>> upstream/master
         }
         if (abilityRight == ABILITY_CONTRARY) {
@@ -76,10 +76,10 @@ DOUBLE_BATTLE_TEST("Contrary raises Attack when Intimidated in a double battle",
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
             MESSAGE("Tinpet's Intimidate cuts Foe Coredramon_blue's attack!");
 =======
-            MESSAGE("The opposing Spinda's Attack rose!");
+            MESSAGE("The opposing Coredramon_blue's Attack rose!");
         } else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-            MESSAGE("Tinpet's Intimidate cuts the opposing Spinda's Attack!");
+            MESSAGE("Tinpet's Intimidate cuts the opposing Coredramon_blue's Attack!");
 >>>>>>> upstream/master
         }
         HP_BAR(playerLeft, captureDamage: &results[i].damageLeft);
@@ -111,7 +111,7 @@ SINGLE_BATTLE_TEST("Contrary raises stats after using a move which would normall
 <<<<<<< HEAD
         MESSAGE("Foe Coredramon_blue used Overheat!");
 =======
-        MESSAGE("The opposing Spinda used Overheat!");
+        MESSAGE("The opposing Coredramon_blue used Overheat!");
 >>>>>>> upstream/master
         HP_BAR(player, captureDamage: &results[i].damageBefore);
         if (ability == ABILITY_CONTRARY) {
@@ -127,14 +127,14 @@ SINGLE_BATTLE_TEST("Contrary raises stats after using a move which would normall
 
         // MESSAGE("Foe Coredramon_blue used Overheat!");
 =======
-            MESSAGE("The opposing Spinda's Sp. Atk sharply rose!");
+            MESSAGE("The opposing Coredramon_blue's Sp. Atk sharply rose!");
         }
         else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("The opposing Spinda's Sp. Atk harshly fell!");
+            MESSAGE("The opposing Coredramon_blue's Sp. Atk harshly fell!");
         }
 
-        // MESSAGE("The opposing Spinda used Overheat!");
+        // MESSAGE("The opposing Coredramon_blue used Overheat!");
 >>>>>>> upstream/master
         HP_BAR(player, captureDamage: &results[i].damageAfter);
         if (ability == ABILITY_CONTRARY) {
@@ -147,11 +147,11 @@ SINGLE_BATTLE_TEST("Contrary raises stats after using a move which would normall
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
             MESSAGE("Foe Coredramon_blue's Sp. Atk harshly fell!");
 =======
-            MESSAGE("The opposing Spinda's Sp. Atk sharply rose!");
+            MESSAGE("The opposing Coredramon_blue's Sp. Atk sharply rose!");
         }
         else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("The opposing Spinda's Sp. Atk harshly fell!");
+            MESSAGE("The opposing Coredramon_blue's Sp. Atk harshly fell!");
 >>>>>>> upstream/master
         }
     }
@@ -192,21 +192,21 @@ SINGLE_BATTLE_TEST("Contrary lowers a stat after using a move which would normal
 
         // MESSAGE("Foe Coredramon_blue used Tackle!");
 =======
-        MESSAGE("The opposing Spinda used Tackle!");
+        MESSAGE("The opposing Coredramon_blue used Tackle!");
         HP_BAR(player, captureDamage: &results[i].damageBefore);
 
-        //MESSAGE("The opposing Spinda used Swords Dance!");
+        //MESSAGE("The opposing Coredramon_blue used Swords Dance!");
         if (ability == ABILITY_CONTRARY) {
             // ABILITY_POPUP(opponent, ABILITY_CONTRARY);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("The opposing Spinda's Attack harshly fell!");
+            MESSAGE("The opposing Coredramon_blue's Attack harshly fell!");
         }
         else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("The opposing Spinda's Attack sharply rose!");
+            MESSAGE("The opposing Coredramon_blue's Attack sharply rose!");
         }
 
-        // MESSAGE("The opposing Spinda used Tackle!");
+        // MESSAGE("The opposing Coredramon_blue used Tackle!");
 >>>>>>> upstream/master
         HP_BAR(player, captureDamage: &results[i].damageAfter);
     }
@@ -242,14 +242,14 @@ SINGLE_BATTLE_TEST("Contrary raises a stat after using a move which would normal
 
         MESSAGE("Foe Coredramon_blue used Tackle!");
 =======
-            MESSAGE("The opposing Spinda's Attack rose!");
+            MESSAGE("The opposing Coredramon_blue's Attack rose!");
         }
         else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("The opposing Spinda's Attack fell!");
+            MESSAGE("The opposing Coredramon_blue's Attack fell!");
         }
 
-        MESSAGE("The opposing Spinda used Tackle!");
+        MESSAGE("The opposing Coredramon_blue used Tackle!");
 >>>>>>> upstream/master
         HP_BAR(player, captureDamage: &results[i].damage);
     }
@@ -275,7 +275,7 @@ SINGLE_BATTLE_TEST("Contrary lowers a stat after using a move which would normal
 <<<<<<< HEAD
         MESSAGE("Foe Coredramon_blue used Tackle!");
 =======
-        MESSAGE("The opposing Spinda used Tackle!");
+        MESSAGE("The opposing Coredramon_blue used Tackle!");
 >>>>>>> upstream/master
         HP_BAR(player, captureDamage: &results[i].damageBefore);
 
@@ -288,11 +288,11 @@ SINGLE_BATTLE_TEST("Contrary lowers a stat after using a move which would normal
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
             MESSAGE("Foe Coredramon_blue cut its own HP and maximized ATTACK!");
 =======
-            MESSAGE("The opposing Spinda cut its own HP and maximized its Attack!"); //Message stays the same
+            MESSAGE("The opposing Coredramon_blue cut its own HP and maximized its Attack!"); //Message stays the same
         }
         else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("The opposing Spinda cut its own HP and maximized its Attack!");
+            MESSAGE("The opposing Coredramon_blue cut its own HP and maximized its Attack!");
 >>>>>>> upstream/master
         }
 

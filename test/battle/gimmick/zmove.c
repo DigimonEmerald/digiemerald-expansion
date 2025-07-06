@@ -23,9 +23,9 @@ SINGLE_BATTLE_TEST("(Z-MOVE) Z-Moves are not affected by -ate abilities")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].type == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_SWELLOW].types[1] == TYPE_FLYING);
+        ASSUME(gSpeciesInfo[SPECIES_ANGELAMON].types[1] == TYPE_FLYING);
         PLAYER(SPECIES_AURORUS) { Ability(ABILITY_REFRIGERATE); Item(ITEM_NORMALIUM_Z); }
-        OPPONENT(SPECIES_SWELLOW);
+        OPPONENT(SPECIES_ANGELAMON);
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE, gimmick: GIMMICK_Z_MOVE); }
     } SCENE {
@@ -41,7 +41,7 @@ SINGLE_BATTLE_TEST("(Z-MOVE) Z-Moves are affected by Ion Deluge")
         ASSUME(gMovesInfo[MOVE_TACKLE].type == TYPE_NORMAL);
         ASSUME(gMovesInfo[MOVE_ION_DELUGE].effect == EFFECT_ION_DELUGE);
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_NORMALIUM_Z); }
-        OPPONENT(SPECIES_SWELLOW);
+        OPPONENT(SPECIES_ANGELAMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_ION_DELUGE); MOVE(player, MOVE_TACKLE, gimmick: GIMMICK_Z_MOVE); }
     } SCENE {
@@ -139,9 +139,9 @@ DOUBLE_BATTLE_TEST("(Z-MOVE) Z_EFFECT_FOLLOW_ME redirects attacks to the user")
         ASSUME(gMovesInfo[MOVE_DESTINY_BOND].type == TYPE_GHOST);
         ASSUME(gMovesInfo[MOVE_DESTINY_BOND].zMove.effect == Z_EFFECT_FOLLOW_ME);
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_GHOSTIUM_Z); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_DESTINY_BOND, gimmick: GIMMICK_Z_MOVE);
                MOVE(opponentLeft, MOVE_TACKLE, target: playerRight); }
@@ -160,7 +160,7 @@ SINGLE_BATTLE_TEST("(Z-MOVE) Z_EFFECT_RESTORE_REPLACEMENT_HP fully heals the rep
         ASSUME(gMovesInfo[MOVE_PARTING_SHOT].type == TYPE_DARK);
         ASSUME(gMovesInfo[MOVE_PARTING_SHOT].zMove.effect == Z_EFFECT_RESTORE_REPLACEMENT_HP);
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_DARKINIUM_Z); }
-        PLAYER(SPECIES_WYNAUT) { HP(1); }
+        PLAYER(SPECIES_EXVEEMON) { HP(1); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_PARTING_SHOT, gimmick: GIMMICK_Z_MOVE); SEND_OUT(player, 1); }
@@ -169,7 +169,7 @@ SINGLE_BATTLE_TEST("(Z-MOVE) Z_EFFECT_RESTORE_REPLACEMENT_HP fully heals the rep
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PARTING_SHOT, player);
         HP_BAR(player);
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_WYNAUT);
+        EXPECT_EQ(player->species, SPECIES_EXVEEMON);
         EXPECT_EQ(player->hp, player->maxHP);
     }
 }
@@ -179,12 +179,12 @@ SINGLE_BATTLE_TEST("(Z-MOVE) Z_EFFECT_CURSE activates Z_EFFECT_RECOVER_HP or Z_E
 {
     u32 species;
     PARAMETRIZE { species = SPECIES_LOPMONX; }
-    PARAMETRIZE { species = SPECIES_DUSCLOPS; }
+    PARAMETRIZE { species = SPECIES_EBIDRAMON; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_CURSE].type == TYPE_GHOST);
         ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[0] != TYPE_GHOST);
         ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[1] != TYPE_GHOST);
-        ASSUME(gSpeciesInfo[SPECIES_DUSCLOPS].types[0] == TYPE_GHOST);
+        ASSUME(gSpeciesInfo[SPECIES_EBIDRAMON].types[0] == TYPE_GHOST);
         ASSUME(gMovesInfo[MOVE_CURSE].zMove.effect == Z_EFFECT_CURSE);
         PLAYER(species) { Item(ITEM_GHOSTIUM_Z); HP(1); }
         OPPONENT(SPECIES_LOPMONX);
@@ -192,7 +192,7 @@ SINGLE_BATTLE_TEST("(Z-MOVE) Z_EFFECT_CURSE activates Z_EFFECT_RECOVER_HP or Z_E
         TURN { MOVE(player, MOVE_CURSE, gimmick: GIMMICK_Z_MOVE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ZMOVE_ACTIVATE, player);
-        if (species == SPECIES_DUSCLOPS) {
+        if (species == SPECIES_EBIDRAMON) {
             HP_BAR(player);
             NOT { ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player); }
             ANIMATION(ANIM_TYPE_MOVE, MOVE_CURSE, player);
@@ -204,7 +204,7 @@ SINGLE_BATTLE_TEST("(Z-MOVE) Z_EFFECT_CURSE activates Z_EFFECT_RECOVER_HP or Z_E
             NOT { HP_BAR(player); }
         }
     } THEN {
-        if (species == SPECIES_DUSCLOPS) {
+        if (species == SPECIES_EBIDRAMON) {
             EXPECT_MUL_EQ(player->maxHP, UQ_4_12(0.50), player->hp); // heal to full HP then cut by half
             EXPECT_EQ(player->statStages[STAT_ATK], DEFAULT_STAT_STAGE);
         } else {
@@ -457,16 +457,16 @@ DOUBLE_BATTLE_TEST("(Z-MOVE) Instruct fails if the target last used a Z-Move")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].type == TYPE_NORMAL);
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_NORMALIUM_Z); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft, gimmick: GIMMICK_Z_MOVE);
                MOVE(playerRight, MOVE_INSTRUCT, target: playerLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ZMOVE_ACTIVATE, playerLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BREAKNECK_BLITZ, playerLeft);
-        MESSAGE("Wynaut used Instruct!");
+        MESSAGE("Exveemon used Instruct!");
         MESSAGE("But it failed!");
     }
 }
@@ -476,9 +476,9 @@ DOUBLE_BATTLE_TEST("(Z-MOVE) Dancer does not use a Z-Move if the battler has use
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].type == TYPE_NORMAL);
         PLAYER(SPECIES_LOPMONX) { Ability(ABILITY_DANCER); Item(ITEM_NORMALIUM_Z); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft, gimmick: GIMMICK_Z_MOVE);
                MOVE(playerRight, MOVE_FIERY_DANCE, target: opponentRight); }

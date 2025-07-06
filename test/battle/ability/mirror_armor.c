@@ -41,22 +41,22 @@ SINGLE_BATTLE_TEST("Mirror Armor lowers a stat of the attacking pokemon")
         case STAT_SPDEF:
             MESSAGE("Foe Exveemon's Sp. Def harshly fell!");
 =======
-            MESSAGE("The opposing Wynaut's Defense fell!");
+            MESSAGE("The opposing Exveemon's Defense fell!");
             break;
         case STAT_ATK:
-            MESSAGE("The opposing Wynaut's Attack fell!");
+            MESSAGE("The opposing Exveemon's Attack fell!");
             break;
         case STAT_EVASION:
-            MESSAGE("The opposing Wynaut's evasiveness harshly fell!");
+            MESSAGE("The opposing Exveemon's evasiveness harshly fell!");
             break;
         case STAT_ACC:
-            MESSAGE("The opposing Wynaut's accuracy fell!");
+            MESSAGE("The opposing Exveemon's accuracy fell!");
             break;
         case STAT_SPATK:
-            MESSAGE("The opposing Wynaut's Sp. Atk fell!");
+            MESSAGE("The opposing Exveemon's Sp. Atk fell!");
             break;
         case STAT_SPDEF:
-            MESSAGE("The opposing Wynaut's Sp. Def harshly fell!");
+            MESSAGE("The opposing Exveemon's Sp. Def harshly fell!");
 >>>>>>> upstream/master
             break;
         }
@@ -99,10 +99,10 @@ SINGLE_BATTLE_TEST("Mirror Armor doesn't lower the stats of an attacking Pokemon
         ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
         MESSAGE("Foe Exveemon's Clear Body prevents stat loss!");
 =======
-        MESSAGE("The opposing Wynaut used Leer!");
+        MESSAGE("The opposing Exveemon used Leer!");
         ABILITY_POPUP(player, ABILITY_MIRROR_ARMOR);
         ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
-        MESSAGE("The opposing Wynaut's Clear Body prevents stat loss!");
+        MESSAGE("The opposing Exveemon's Clear Body prevents stat loss!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->statStages[STAT_DEF], DEFAULT_STAT_STAGE);
@@ -148,9 +148,9 @@ SINGLE_BATTLE_TEST("Mirror Armor doesn't lower the stats of an attacking Pokemon
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SUBSTITUTE, opponent);
         MESSAGE("Foe Exveemon used Leer!");
 =======
-        MESSAGE("The opposing Wynaut used Substitute!");
+        MESSAGE("The opposing Exveemon used Substitute!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SUBSTITUTE, opponent);
-        MESSAGE("The opposing Wynaut used Leer!");
+        MESSAGE("The opposing Exveemon used Leer!");
 >>>>>>> upstream/master
         ABILITY_POPUP(player, ABILITY_MIRROR_ARMOR);
         NOT ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
@@ -208,10 +208,10 @@ SINGLE_BATTLE_TEST("Mirror Armor doesn't lower the stat of the attacking Pokemon
         MESSAGE("Corviknight used Screech!");
         MESSAGE("Corviknight used Screech!");
         MESSAGE("Corviknight used Screech!");
-        MESSAGE("The opposing Wynaut used Leer!");
+        MESSAGE("The opposing Exveemon used Leer!");
         ABILITY_POPUP(player, ABILITY_MIRROR_ARMOR);
         NOT ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("The opposing Wynaut's Defense won't go any lower!");
+        MESSAGE("The opposing Exveemon's Defense won't go any lower!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->statStages[STAT_DEF], DEFAULT_STAT_STAGE);
@@ -246,8 +246,8 @@ DOUBLE_BATTLE_TEST("Mirror Armor lowers Speed of the partner Pokemon after Court
         MESSAGE("Corviknigh was caught in a Sticky Web!");
 =======
         MESSAGE("Lopmonx used Sticky Web!");
-        MESSAGE("The opposing Wynaut used Court Change!");
-        MESSAGE("The opposing Wynaut swapped the battle effects affecting each side of the field!");
+        MESSAGE("The opposing Exveemon used Court Change!");
+        MESSAGE("The opposing Exveemon swapped the battle effects affecting each side of the field!");
         SEND_IN_MESSAGE("Corviknight");
         MESSAGE("Corviknight was caught in a sticky web!");
 >>>>>>> upstream/master

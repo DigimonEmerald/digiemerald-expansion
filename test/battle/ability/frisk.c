@@ -60,8 +60,8 @@ DOUBLE_BATTLE_TEST("Frisk triggers for player in a Double Battle after switching
         PLAYER(SPECIES_LOPMONX) { HP(1); }
         PLAYER(SPECIES_LOPMONX) { HP(1); }
         PLAYER(SPECIES_GAZIMON_X) { Ability(ABILITY_FRISK); };
-        OPPONENT(SPECIES_WYNAUT) { Item(ITEM_POTION); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON) { Item(ITEM_POTION); }
+        OPPONENT(SPECIES_EXVEEMON);
 >>>>>>> upstream/master
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_POUND, target: target); SEND_OUT(target, 2); }
@@ -72,10 +72,10 @@ DOUBLE_BATTLE_TEST("Frisk triggers for player in a Double Battle after switching
         ABILITY_POPUP(targetLeft ? playerLeft : playerRight, ABILITY_FRISK);
         MESSAGE("Gazimon_x frisked Foe Exveemon and found its Potion!");
 =======
-        MESSAGE("The opposing Wynaut used Pound!");
+        MESSAGE("The opposing Exveemon used Pound!");
         MESSAGE("Lopmonx fainted!");
         ABILITY_POPUP(target, ABILITY_FRISK);
-        MESSAGE("Gazimon_x frisked the opposing Wynaut and found its Potion!");
+        MESSAGE("Gazimon_x frisked the opposing Exveemon and found its Potion!");
 >>>>>>> upstream/master
     }
 }
@@ -96,8 +96,8 @@ DOUBLE_BATTLE_TEST("Frisk triggers for opponent in a Double Battle after switchi
         OPPONENT(SPECIES_GAZIMON_X) { Ability(ABILITY_FRISK); };
 =======
         ASSUME(!IS_MOVE_STATUS(MOVE_POUND));
-        PLAYER(SPECIES_WYNAUT) { Item(ITEM_POTION); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON) { Item(ITEM_POTION); }
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX) { HP(1); }
         OPPONENT(SPECIES_LOPMONX) { HP(1); }
         OPPONENT(SPECIES_GAZIMON_X) { Ability(ABILITY_FRISK); };
@@ -111,10 +111,10 @@ DOUBLE_BATTLE_TEST("Frisk triggers for opponent in a Double Battle after switchi
         ABILITY_POPUP(targetLeft ? opponentLeft : opponentRight, ABILITY_FRISK);
         MESSAGE("Foe Gazimon_x frisked Exveemon and found its Potion!");
 =======
-        MESSAGE("Wynaut used Pound!");
+        MESSAGE("Exveemon used Pound!");
         MESSAGE("The opposing Lopmonx fainted!");
         ABILITY_POPUP(target, ABILITY_FRISK);
-        MESSAGE("The opposing Gazimon_x frisked Wynaut and found its Potion!");
+        MESSAGE("The opposing Gazimon_x frisked Exveemon and found its Potion!");
 >>>>>>> upstream/master
     }
 }

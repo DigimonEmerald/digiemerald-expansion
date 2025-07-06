@@ -25,8 +25,8 @@ SINGLE_BATTLE_TEST("Eject Pack does not cause the new Pokémon to lose HP due to
         NOT MESSAGE("Exveemon was hurt by its Life Orb!");
 =======
         MESSAGE("Lopmonx is switched out with the Eject Pack!");
-        SEND_IN_MESSAGE("Wynaut");
-        NOT MESSAGE("Wynaut was hurt by its Life Orb!");
+        SEND_IN_MESSAGE("Exveemon");
+        NOT MESSAGE("Exveemon was hurt by its Life Orb!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
     }
@@ -84,7 +84,7 @@ SINGLE_BATTLE_TEST("Eject Pack is triggered by self-inflicting stat decreases")
         MESSAGE("Go! Exveemon!");
 =======
         MESSAGE("Lopmonx is switched out with the Eject Pack!");
-        SEND_IN_MESSAGE("Wynaut");
+        SEND_IN_MESSAGE("Exveemon");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
     }
@@ -94,9 +94,9 @@ SINGLE_BATTLE_TEST("Eject Pack will miss timing to switch out user if Emergency 
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_GOLISOPOD) { Ability(ABILITY_EMERGENCY_EXIT); MaxHP(263); HP(133); };
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_OVERHEAT); SEND_OUT(opponent, 1); }
     } SCENE {
@@ -109,7 +109,7 @@ SINGLE_BATTLE_TEST("Eject Pack will miss timing to switch out user if Emergency 
         ABILITY_POPUP(opponent, ABILITY_EMERGENCY_EXIT);
     } THEN {
         EXPECT(player->species == SPECIES_LOPMONX);
-        EXPECT(opponent->species == SPECIES_WYNAUT);
+        EXPECT(opponent->species == SPECIES_EXVEEMON);
     }
 }
 
@@ -151,10 +151,10 @@ DOUBLE_BATTLE_TEST("Eject Pack will not trigger if the conditions are not met")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_BELDUM) { Ability(ABILITY_CLEAR_BODY); };
-        PLAYER(SPECIES_RALTS) { Ability(ABILITY_TRACE); Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WYNAUT);
+        PLAYER(SPECIES_FUGAMON) { Ability(ABILITY_CLEAR_BODY); };
+        PLAYER(SPECIES_APEMON) { Ability(ABILITY_TRACE); Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {

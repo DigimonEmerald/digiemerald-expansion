@@ -30,7 +30,7 @@ SINGLE_BATTLE_TEST("Tangling Hair drops opposing mon's speed if ability user got
 <<<<<<< HEAD
             MESSAGE("Foe Exveemon's Speed fell!");
 =======
-            MESSAGE("The opposing Wynaut's Speed fell!");
+            MESSAGE("The opposing Exveemon's Speed fell!");
 >>>>>>> upstream/master
         }
     }
@@ -53,9 +53,9 @@ SINGLE_BATTLE_TEST("Tangling Hair does not cause Rocky Helmet miss activation")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         MESSAGE("Foe Exveemon was hurt by Bukamon's Rocky Helmet!");
 =======
-        MESSAGE("The opposing Wynaut's Speed fell!");
+        MESSAGE("The opposing Exveemon's Speed fell!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-        MESSAGE("The opposing Wynaut was hurt by Bukamon's Rocky Helmet!");
+        MESSAGE("The opposing Exveemon was hurt by Bukamon's Rocky Helmet!");
 >>>>>>> upstream/master
     }
 }

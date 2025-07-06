@@ -305,7 +305,7 @@ DOUBLE_BATTLE_TEST("Red Card activates for only the fastest target")
         MESSAGE("Exveemon held up its Red Card against Foe Exveemon!");
         MESSAGE("Foe Lopmonx was dragged out!");
 =======
-        MESSAGE("Wynaut held up its Red Card against the opposing Wynaut!");
+        MESSAGE("Exveemon held up its Red Card against the opposing Exveemon!");
         MESSAGE("The opposing Lopmonx was dragged out!");
 >>>>>>> upstream/master
     } THEN {
@@ -348,7 +348,7 @@ DOUBLE_BATTLE_TEST("Red Card activates but fails if the attacker is rooted")
             MESSAGE("Exveemon held up its Red Card against Foe Exveemon!");
 =======
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerLeft);
-            MESSAGE("Lopmonx held up its Red Card against the opposing Wynaut!");
+            MESSAGE("Lopmonx held up its Red Card against the opposing Exveemon!");
 >>>>>>> upstream/master
         }
     }
@@ -387,7 +387,7 @@ DOUBLE_BATTLE_TEST("Red Card activates but fails if the attacker has Suction Cup
             MESSAGE("Exveemon held up its Red Card against Foe Exveemon!");
 =======
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerLeft);
-            MESSAGE("Lopmonx held up its Red Card against the opposing Wynaut!");
+            MESSAGE("Lopmonx held up its Red Card against the opposing Exveemon!");
         }
     }
 }
@@ -396,9 +396,9 @@ DOUBLE_BATTLE_TEST("Red Card activates but fails if the attacker has Guard Dog")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_OKIDOGI) { Ability(ABILITY_GUARD_DOG); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMON);
     } WHEN {
         TURN {
@@ -415,7 +415,7 @@ DOUBLE_BATTLE_TEST("Red Card activates but fails if the attacker has Guard Dog")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerLeft);
-            MESSAGE("Lopmonx held up its Red Card against the opposing Wynaut!");
+            MESSAGE("Lopmonx held up its Red Card against the opposing Exveemon!");
 >>>>>>> upstream/master
         }
     }
@@ -554,8 +554,8 @@ SINGLE_BATTLE_TEST("Red Card is consumed after dragged out replacement has its S
         MESSAGE("Exveemon was caught in a Sticky Web!");
 =======
         MESSAGE("The opposing Lopmonx held up its Red Card against Lopmonx!");
-        MESSAGE("Wynaut was dragged out!");
-        MESSAGE("Wynaut was caught in a sticky web!");
+        MESSAGE("Exveemon was dragged out!");
+        MESSAGE("Exveemon was caught in a sticky web!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         // 3rd turn, Red Card was consumed, it can't trigger again
@@ -564,7 +564,7 @@ SINGLE_BATTLE_TEST("Red Card is consumed after dragged out replacement has its S
 <<<<<<< HEAD
             MESSAGE("Foe Lopmonx held up its Red Card against Exveemon!");
 =======
-            MESSAGE("The opposing Lopmonx held up its Red Card against Wynaut!");
+            MESSAGE("The opposing Lopmonx held up its Red Card against Exveemon!");
 >>>>>>> upstream/master
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         }
@@ -590,8 +590,8 @@ SINGLE_BATTLE_TEST("Red Card does not cause the dragged out mon to lose hp due t
         NOT MESSAGE("Exveemon was hurt by its Life Orb!");
 =======
         MESSAGE("The opposing Lopmonx held up its Red Card against Lopmonx!");
-        MESSAGE("Wynaut was dragged out!");
-        NOT MESSAGE("Wynaut was hurt by its Life Orb!");
+        MESSAGE("Exveemon was dragged out!");
+        NOT MESSAGE("Exveemon was hurt by its Life Orb!");
 >>>>>>> upstream/master
     }
 }
@@ -625,7 +625,7 @@ SINGLE_BATTLE_TEST("Red Card prevents Emergency Exit activation when triggered")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_GOLISOPOD) { Item(ITEM_RED_CARD); Ability(ABILITY_EMERGENCY_EXIT); MaxHP(263); HP(262); };
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
@@ -645,9 +645,9 @@ SINGLE_BATTLE_TEST("Red Card activates before Eject Pack")
     GIVEN {
         ASSUME(MoveHasAdditionalEffectSelf(MOVE_OVERHEAT, MOVE_EFFECT_SP_ATK_MINUS_2) == TRUE);
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_OVERHEAT); MOVE(opponent, MOVE_TACKLE); }
     } SCENE {

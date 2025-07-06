@@ -18,10 +18,10 @@ SINGLE_BATTLE_TEST("Electric Terrain protects grounded battlers from falling asl
         MESSAGE("Foe Diatrymon fell asleep!");
 =======
         MESSAGE("Lopmonx used Electric Terrain!");
-        MESSAGE("The opposing Claydol used Spore!");
+        MESSAGE("The opposing Diatrymon used Spore!");
         MESSAGE("Lopmonx surrounds itself with electrified terrain!");
         MESSAGE("Lopmonx used Spore!");
-        MESSAGE("The opposing Claydol fell asleep!");
+        MESSAGE("The opposing Diatrymon fell asleep!");
 >>>>>>> upstream/master:test/battle/move_effect/electric_terrain.c
         STATUS_ICON(opponent, sleep: TRUE);
     }

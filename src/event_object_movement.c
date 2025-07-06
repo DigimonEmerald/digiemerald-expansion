@@ -2109,21 +2109,21 @@ static void RefreshFollowerGraphics(struct ObjectEvent *objEvent)
     }
 }
 
-static u16 GetOverworldCastformSpecies(void)
+static u16 GetOverworldDolphmonSpecies(void)
 {
     switch (GetCurrentWeather())
     {
     case WEATHER_SUNNY_CLOUDS:
     case WEATHER_DROUGHT:
-        return SPECIES_CASTFORM_SUNNY;
+        return SPECIES_DOLPHMON_SUNNY;
     case WEATHER_RAIN:
     case WEATHER_RAIN_THUNDERSTORM:
     case WEATHER_DOWNPOUR:
-        return SPECIES_CASTFORM_RAINY;
+        return SPECIES_DOLPHMON_RAINY;
     case WEATHER_SNOW:
-        return SPECIES_CASTFORM_SNOWY;
+        return SPECIES_DOLPHMON_SNOWY;
     }
-    return SPECIES_CASTFORM_NORMAL;
+    return SPECIES_DOLPHMON_NORMAL;
 }
 
 static bool8 GetMonInfo(struct Pokemon *mon, u32 *species, bool32 *shiny, bool32 *female)
@@ -2143,8 +2143,8 @@ static bool8 GetMonInfo(struct Pokemon *mon, u32 *species, bool32 *shiny, bool32
     case SPECIES_LOPMON:
         *species = GetLopmonSpecies(mon);
         break;
-    case SPECIES_CASTFORM: // form is based on overworld weather
-        *species = GetOverworldCastformSpecies();
+    case SPECIES_DOLPHMON: // form is based on overworld weather
+        *species = GetOverworldDolphmonSpecies();
         break;
     }
     return TRUE;
@@ -2585,7 +2585,7 @@ void RemoveObjectEventsOutsideView(void)
             struct ObjectEvent *objectEvent = &gObjectEvents[i];
 
             // Followers should not go OOB, or their sprites may be freed early during a cross-map scripting event,
-            // such as Wally's Ralts catch sequence
+            // such as Wally's Apemon catch sequence
             if (objectEvent->active && !objectEvent->isPlayer && objectEvent->localId != OBJ_EVENT_ID_FOLLOWER)
                 RemoveObjectEventIfOutsideView(objectEvent);
         }
@@ -5281,8 +5281,8 @@ static bool32 EndFollowerTransformEffect(struct ObjectEvent *objectEvent, struct
 static bool32 TryStartFollowerTransformEffect(struct ObjectEvent *objectEvent, struct Sprite *sprite)
 {
     u32 multi;
-    if (GET_BASE_SPECIES_ID(OW_SPECIES(objectEvent)) == SPECIES_CASTFORM
-        && OW_SPECIES(objectEvent) != (multi = GetOverworldCastformSpecies()))
+    if (GET_BASE_SPECIES_ID(OW_SPECIES(objectEvent)) == SPECIES_DOLPHMON
+        && OW_SPECIES(objectEvent) != (multi = GetOverworldDolphmonSpecies()))
     {
         sprite->data[7] = TRANSFORM_TYPE_WEATHER << 8;
         return TRUE;
@@ -5322,7 +5322,7 @@ static bool8 UpdateFollowerTransformEffect(struct ObjectEvent *objectEvent, stru
             break;
         case TRANSFORM_TYPE_WEATHER:
             multi = objectEvent->graphicsId;
-            objectEvent->graphicsId = GetOverworldCastformSpecies();
+            objectEvent->graphicsId = GetOverworldDolphmonSpecies();
             if (!objectEvent->graphicsId)
             {
                 objectEvent->graphicsId = multi;

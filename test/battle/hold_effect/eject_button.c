@@ -264,7 +264,7 @@ DOUBLE_BATTLE_TEST("Eject Button activation will not trigger an attack from the 
         PLAYER(SPECIES_DONDOZO) { Speed(20); }
         OPPONENT(SPECIES_LOPMONX) { Speed(50); Item(ITEM_EJECT_PACK); }
         OPPONENT(SPECIES_LOPMONX) { Speed(10); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(1); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(1); }
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_MAKE_IT_RAIN); SEND_OUT(playerRight, 2); SEND_OUT(opponentRight, 2); }
     } SCENE {

@@ -68,7 +68,7 @@ SINGLE_BATTLE_TEST("Scrappy doesn't bypass a Ghost-type's Wonder Guard")
 <<<<<<< HEAD
         MESSAGE("Foe Baluchimon avoided damage with Wonder Guard!");
 =======
-        MESSAGE("The opposing Shedinja avoided damage with Wonder Guard!");
+        MESSAGE("The opposing Baluchimon avoided damage with Wonder Guard!");
 >>>>>>> upstream/master
     }
 }

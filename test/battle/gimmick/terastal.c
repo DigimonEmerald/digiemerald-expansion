@@ -496,7 +496,7 @@ SINGLE_BATTLE_TEST("(TERA) Stellar type does not change the user's defensive pro
 SINGLE_BATTLE_TEST("(TERA) Reflect Type copies a Stellar-type Pokemon's base type")
 {
     GIVEN {
-        PLAYER(SPECIES_BANETTE) { TeraType(TYPE_STELLAR); }
+        PLAYER(SPECIES_DORULUMON) { TeraType(TYPE_STELLAR); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); }
@@ -507,7 +507,7 @@ SINGLE_BATTLE_TEST("(TERA) Reflect Type copies a Stellar-type Pokemon's base typ
         MESSAGE("The opposing Lopmonx used Reflect Type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, opponent);
         // turn 3
-        MESSAGE("Banette used Tackle!");
+        MESSAGE("Dorulumon used Tackle!");
         MESSAGE("It doesn't affect the opposing Lopmonx…");
         NOT { HP_BAR(opponent); }
     }
@@ -708,7 +708,7 @@ SINGLE_BATTLE_TEST("(TERA) Stellar type's one-time boost factors in dynamically-
     s16 damage[4];
     GIVEN {
         ASSUME(gMovesInfo[MOVE_WEATHER_BALL].type == TYPE_NORMAL);
-        PLAYER(SPECIES_PELIPPER) { Ability(ABILITY_DRIZZLE); TeraType(TYPE_STELLAR); }
+        PLAYER(SPECIES_ANKYLOMON) { Ability(ABILITY_DRIZZLE); TeraType(TYPE_STELLAR); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_WEATHER_BALL, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_RECOVER); }
@@ -717,22 +717,22 @@ SINGLE_BATTLE_TEST("(TERA) Stellar type's one-time boost factors in dynamically-
         TURN { MOVE(player, MOVE_WATER_PULSE); MOVE(opponent, MOVE_RECOVER); }
         TURN { MOVE(player, MOVE_WATER_PULSE); MOVE(opponent, MOVE_RECOVER); }
     } SCENE {
-        MESSAGE("Pelipper used Weather Ball!");
+        MESSAGE("Ankylomon used Weather Ball!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WEATHER_BALL, player);
         // turn 2
-        MESSAGE("Pelipper used Take Down!");
+        MESSAGE("Ankylomon used Take Down!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TAKE_DOWN, player);
         HP_BAR(opponent, captureDamage: &damage[0]);
         // turn 3
-        MESSAGE("Pelipper used Take Down!");
+        MESSAGE("Ankylomon used Take Down!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TAKE_DOWN, player);
         HP_BAR(opponent, captureDamage: &damage[1]);
         // turn 4
-        MESSAGE("Pelipper used Water Pulse!");
+        MESSAGE("Ankylomon used Water Pulse!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WATER_PULSE, player);
         HP_BAR(opponent, captureDamage: &damage[2]);
         // turn 5
-        MESSAGE("Pelipper used Water Pulse!");
+        MESSAGE("Ankylomon used Water Pulse!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WATER_PULSE, player);
         HP_BAR(opponent, captureDamage: &damage[3]);
     } THEN {

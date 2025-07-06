@@ -218,9 +218,9 @@ SINGLE_BATTLE_TEST("Opponent Pokemon can be further poisoned with Toxic spikes a
         } else {
             MESSAGE("Foe Exveemon's Lum Berry cured its poison problem!");
 =======
-            MESSAGE("The opposing Wynaut's Pecha Berry cured its poison!");
+            MESSAGE("The opposing Exveemon's Pecha Berry cured its poison!");
         } else {
-            MESSAGE("The opposing Wynaut's Lum Berry cured its poison problem!");
+            MESSAGE("The opposing Exveemon's Lum Berry cured its poison problem!");
 >>>>>>> upstream/master
         }
         STATUS_ICON(opponent, poison: FALSE);
@@ -281,7 +281,7 @@ SINGLE_BATTLE_TEST("Player Pokemon can be further poisoned with Toxic spikes aft
 <<<<<<< HEAD
         MESSAGE("Go! Exveemon!");
 =======
-        SEND_IN_MESSAGE("Wynaut");
+        SEND_IN_MESSAGE("Exveemon");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, player);
         STATUS_ICON(player, poison: TRUE);

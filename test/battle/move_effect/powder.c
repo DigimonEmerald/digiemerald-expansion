@@ -84,7 +84,7 @@ SINGLE_BATTLE_TEST("Powder doesn't damage target under heavy rain")
 {
     GIVEN {
         ASSUME(B_POWDER_RAIN >= GEN_7);
-        PLAYER(SPECIES_KYOGRE_PRIMAL) { Ability(ABILITY_PRIMORDIAL_SEA); }
+        PLAYER(SPECIES_GATOMON_X_PRIMAL) { Ability(ABILITY_PRIMORDIAL_SEA); }
         OPPONENT(SPECIES_VIVILLON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POWDER); MOVE(player, MOVE_EMBER); }
@@ -104,7 +104,7 @@ DOUBLE_BATTLE_TEST("Powder blocks the target's Fire type moves even if it doesn'
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_VIVILLON);
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(playerLeft, MOVE_EMBER, target: opponentLeft); }
@@ -275,7 +275,7 @@ DOUBLE_BATTLE_TEST("Powder damages a target using Shell Trap even if it wasn't h
         ASSUME(gMovesInfo[MOVE_TICKLE].effect == EFFECT_TICKLE);
         PLAYER(SPECIES_TURTONATOR);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_VIVILLON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SHELL_TRAP); MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(opponentLeft, move, target: playerLeft); }

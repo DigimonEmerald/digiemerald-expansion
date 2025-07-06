@@ -26,7 +26,7 @@ SINGLE_BATTLE_TEST("Hail damage does not affect Ice-type Pokémon")
     } WHEN {
         TURN {MOVE(player, MOVE_HAIL);}
     } SCENE {
-        NOT MESSAGE("The opposing Glalie is buffeted by the hail!");
+        NOT MESSAGE("The opposing Eyesmon is buffeted by the hail!");
     }
 }
 
@@ -36,8 +36,8 @@ SINGLE_BATTLE_TEST("Hail fails if Desolate Land or Primordial Sea are active")
     u32 item;
 
     PARAMETRIZE { species = SPECIES_LOPMONX; item = ITEM_NONE; }
-    PARAMETRIZE { species = SPECIES_GROUDON; item = ITEM_RED_ORB; }
-    PARAMETRIZE { species = SPECIES_KYOGRE; item = ITEM_BLUE_ORB; }
+    PARAMETRIZE { species = SPECIES_GEKOMON; item = ITEM_RED_ORB; }
+    PARAMETRIZE { species = SPECIES_GATOMON_X; item = ITEM_BLUE_ORB; }
 
     GIVEN {
         PLAYER(species) { Item(item); }
@@ -57,10 +57,10 @@ SINGLE_BATTLE_TEST("Hail fails if Desolate Land or Primordial Sea are active")
 DOUBLE_BATTLE_TEST("Hail deals damage based on turn order")
 {
     GIVEN {
-        PLAYER(SPECIES_GLALIE) { Speed(4); }
-        PLAYER(SPECIES_WYNAUT) { Speed(1); }
+        PLAYER(SPECIES_EYESMON) { Speed(4); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(1); }
         OPPONENT(SPECIES_LOPMONX) { Speed(2); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(3); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(3); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_HAIL); }
     } SCENE {
@@ -75,7 +75,7 @@ SINGLE_BATTLE_TEST("Hail damage rounds properly when maxHP < 16")
 {
     GIVEN {
         PLAYER(SPECIES_HAZYAGUMON) { Level(1); MaxHP(11); HP(11); }
-        OPPONENT(SPECIES_GLALIE);
+        OPPONENT(SPECIES_EYESMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_HAIL); }
     } SCENE {

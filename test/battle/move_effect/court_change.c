@@ -45,14 +45,14 @@ DOUBLE_BATTLE_TEST("Court Change swaps entry hazards used by the opponent")
         MESSAGE("The opposing Lopmonx used Stealth Rock!");
         MESSAGE("The opposing Lopmonx used Spikes!");
         MESSAGE("The opposing Lopmonx used Toxic Spikes!");
-        MESSAGE("Wynaut used Court Change!");
-        MESSAGE("Wynaut swapped the battle effects affecting each side of the field!");
-        SEND_IN_MESSAGE("Wynaut");
+        MESSAGE("Exveemon used Court Change!");
+        MESSAGE("Exveemon swapped the battle effects affecting each side of the field!");
+        SEND_IN_MESSAGE("Exveemon");
         NONE_OF {
-            MESSAGE("Wynaut was hurt by the spikes!");
-            MESSAGE("Pointed stones dug into Wynaut!");
-            MESSAGE("Wynaut was poisoned!");
-            MESSAGE("Wynaut was caught in a sticky web!");
+            MESSAGE("Exveemon was hurt by the spikes!");
+            MESSAGE("Pointed stones dug into Exveemon!");
+            MESSAGE("Exveemon was poisoned!");
+            MESSAGE("Exveemon was caught in a sticky web!");
         }
         MESSAGE("2 sent out Lopmonx!");
         MESSAGE("The opposing Lopmonx was hurt by the spikes!");
@@ -101,19 +101,19 @@ DOUBLE_BATTLE_TEST("Court Change swaps entry hazards used by the player")
         MESSAGE("Lopmonx used Stealth Rock!");
         MESSAGE("Lopmonx used Spikes!");
         MESSAGE("Lopmonx used Toxic Spikes!");
-        MESSAGE("The opposing Wynaut used Court Change!");
-        MESSAGE("The opposing Wynaut swapped the battle effects affecting each side of the field!");
+        MESSAGE("The opposing Exveemon used Court Change!");
+        MESSAGE("The opposing Exveemon swapped the battle effects affecting each side of the field!");
         SEND_IN_MESSAGE("Lopmonx");
         MESSAGE("Lopmonx was hurt by the spikes!");
         MESSAGE("Pointed stones dug into Lopmonx!");
         MESSAGE("Lopmonx was poisoned!");
         MESSAGE("Lopmonx was caught in a sticky web!");
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("2 sent out Exveemon!");
         NONE_OF {
-            MESSAGE("The opposing Wynaut was hurt by the spikes!");
-            MESSAGE("Pointed stones dug into the opposing Wynaut!");
-            MESSAGE("The opposing Wynaut was poisoned!");
-            MESSAGE("The opposing Wynaut was caught in a sticky web!");
+            MESSAGE("The opposing Exveemon was hurt by the spikes!");
+            MESSAGE("Pointed stones dug into the opposing Exveemon!");
+            MESSAGE("The opposing Exveemon was poisoned!");
+            MESSAGE("The opposing Exveemon was caught in a sticky web!");
 >>>>>>> upstream/master
         }
     }
@@ -155,15 +155,15 @@ DOUBLE_BATTLE_TEST("Court Change used by the player swaps Mist, Safeguard, Auror
         MESSAGE("Your team's tailwind petered out!");
         MESSAGE("Ally's Light Screen wore off!");
 =======
-        MESSAGE("Wynaut used Snowscape!");
+        MESSAGE("Exveemon used Snowscape!");
         MESSAGE("The opposing Lopmonx used Mist!");
         MESSAGE("The opposing Lopmonx used Safeguard!");
         MESSAGE("The opposing Lopmonx used Aurora Veil!");
         MESSAGE("The opposing Lopmonx used Reflect!");
         MESSAGE("The opposing Lopmonx used Light Screen!");
         MESSAGE("The opposing Lopmonx used Tailwind!");
-        MESSAGE("Wynaut used Court Change!");
-        MESSAGE("Wynaut swapped the battle effects affecting each side of the field!");
+        MESSAGE("Exveemon used Court Change!");
+        MESSAGE("Exveemon swapped the battle effects affecting each side of the field!");
         // The effects now end for the player side.        
         MESSAGE("Your team's Mist wore off!");
         MESSAGE("Your team is no longer protected by Safeguard!");
@@ -210,8 +210,8 @@ DOUBLE_BATTLE_TEST("Court Change used by the opponent swaps Mist, Safeguard, Aur
         MESSAGE("Lopmonx used Reflect!");
         MESSAGE("Lopmonx used Light Screen!");
         MESSAGE("Lopmonx used Tailwind!");
-        MESSAGE("The opposing Wynaut used Court Change!");
-        MESSAGE("The opposing Wynaut swapped the battle effects affecting each side of the field!");
+        MESSAGE("The opposing Exveemon used Court Change!");
+        MESSAGE("The opposing Exveemon swapped the battle effects affecting each side of the field!");
 >>>>>>> upstream/master
         // The effects now end for the player side.
         MESSAGE("The opposing team's Mist wore off!");

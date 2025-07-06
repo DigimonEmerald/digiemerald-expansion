@@ -351,7 +351,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon can be switched out by Eject But
 =======
         ASSUME(gItemsInfo[ITEM_EJECT_BUTTON].holdEffect == HOLD_EFFECT_EJECT_BUTTON);
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_EJECT_BUTTON); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master:test/battle/gimmick/dynamax.c
     } WHEN {
@@ -680,7 +680,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) Feint bypasses Max Guard but doesn't break it")
         MESSAGE("Lopmonx used Max Guard!");
         MESSAGE("The opposing Lopmonx used Feint!");
         HP_BAR(playerLeft);
-        MESSAGE("The opposing Wynaut used Tackle!");
+        MESSAGE("The opposing Exveemon used Tackle!");
 >>>>>>> upstream/master:test/battle/gimmick/dynamax.c
         NONE_OF { HP_BAR(playerLeft); }
     }
@@ -1020,7 +1020,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) Max Knuckle raises both allies' attack")
         MESSAGE("Foe Exveemon used Celebrate!");
 =======
         MESSAGE("The opposing Lopmonx used Celebrate!");
-        MESSAGE("The opposing Wynaut used Celebrate!");
+        MESSAGE("The opposing Exveemon used Celebrate!");
 >>>>>>> upstream/master:test/battle/gimmick/dynamax.c
         // turn 2
         MESSAGE("Lopmonx used Max Knuckle!");
@@ -1306,7 +1306,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Volt Crash paralyzes both opponents")
         MESSAGE("The opposing Lopmonx is paralyzed, so it may be unable to move!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PRZ, opponentRight);
         STATUS_ICON(opponentRight, paralysis: TRUE);
-        MESSAGE("The opposing Wynaut is paralyzed, so it may be unable to move!");
+        MESSAGE("The opposing Exveemon is paralyzed, so it may be unable to move!");
 >>>>>>> upstream/master:test/battle/gimmick/dynamax.c
     }
 }
@@ -1359,11 +1359,11 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Stun Shock paralyzes or poisons both opponen
             STATUS_ICON(opponentRight, paralysis: TRUE);
             MESSAGE("Foe Exveemon is paralyzed! It may be unable to move!");
 =======
-            MESSAGE("The opposing Wynaut was poisoned!");
+            MESSAGE("The opposing Exveemon was poisoned!");
         }
         else {
             STATUS_ICON(opponentRight, paralysis: TRUE);
-            MESSAGE("The opposing Wynaut is paralyzed, so it may be unable to move!");
+            MESSAGE("The opposing Exveemon is paralyzed, so it may be unable to move!");
 >>>>>>> upstream/master:test/battle/gimmick/dynamax.c
         }
     }
@@ -1582,7 +1582,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Baton Pass passes G-Max Terror's escape prevention
         ASSUME(gMovesInfo[MOVE_G_MAX_TERROR].argument == MAX_EFFECT_MEAN_LOOK);
         PLAYER(SPECIES_TSUMEMON) { GigantamaxFactor(TRUE); }
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_LICK, gimmick: GIMMICK_DYNAMAX); MOVE(opponent, MOVE_BATON_PASS); SEND_OUT(opponent, 1); }
     } SCENE {
@@ -1628,15 +1628,15 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Meltdown torments both opponents for 3 turns
         MESSAGE("Foe Exveemon is tormented no more!");
 =======
         MESSAGE("The opposing Lopmonx was subjected to torment!");
-        MESSAGE("The opposing Wynaut was subjected to torment!");
+        MESSAGE("The opposing Exveemon was subjected to torment!");
         MESSAGE("The opposing Lopmonx used Splash!");
-        MESSAGE("The opposing Wynaut used Splash!");
+        MESSAGE("The opposing Exveemon used Splash!");
         // turn 2
         MESSAGE("The opposing Lopmonx used Celebrate!");
-        MESSAGE("The opposing Wynaut used Celebrate!");
+        MESSAGE("The opposing Exveemon used Celebrate!");
         // end of turn 3
         MESSAGE("The opposing Lopmonx is no longer tormented!");
-        MESSAGE("The opposing Wynaut is no longer tormented!");
+        MESSAGE("The opposing Exveemon is no longer tormented!");
 >>>>>>> upstream/master:test/battle/gimmick/dynamax.c
     }
 }
@@ -1683,19 +1683,19 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Wildfire sets a field effect that damages no
         MESSAGE("The opposing Pokémon were surrounded by fire!");
         MESSAGE("The opposing Lopmonx is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentLeft, captureDamage: &damage);
-        MESSAGE("The opposing Wynaut is burning up within G-Max Wildfire's flames!");
+        MESSAGE("The opposing Exveemon is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentRight);
         // turn 2
         MESSAGE("The opposing Lopmonx is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentLeft);
-        MESSAGE("The opposing Wynaut is burning up within G-Max Wildfire's flames!");
+        MESSAGE("The opposing Exveemon is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentRight);
         // turn 3
         NONE_OF { MESSAGE("The opposing Gigimon is burning up within G-Max Wildfire's flames!"); }
-        MESSAGE("The opposing Wynaut is burning up within G-Max Wildfire's flames!");
+        MESSAGE("The opposing Exveemon is burning up within G-Max Wildfire's flames!");
         HP_BAR(opponentRight);
         // turn 4
-        MESSAGE("The opposing Wynaut is burning up within G-Max Wildfire's flames!");
+        MESSAGE("The opposing Exveemon is burning up within G-Max Wildfire's flames!");
 >>>>>>> upstream/master:test/battle/gimmick/dynamax.c
         HP_BAR(opponentRight);
         // turn 5
@@ -1704,7 +1704,7 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Wildfire sets a field effect that damages no
 <<<<<<< HEAD:test/dynamax.c
             MESSAGE("Foe Exveemon is burning up within G-Max Wildfire's flames!");
 =======
-            MESSAGE("The opposing Wynaut is burning up within G-Max Wildfire's flames!");
+            MESSAGE("The opposing Exveemon is burning up within G-Max Wildfire's flames!");
 >>>>>>> upstream/master:test/battle/gimmick/dynamax.c
         }
     } THEN {
@@ -1852,12 +1852,12 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Centiferno traps both opponents in Fire Spin
         MESSAGE("Centiskorch used G-Max Centiferno!");
         MESSAGE("The opposing Lopmonx is hurt by Fire Spin!");
         HP_BAR(opponentLeft);
-        MESSAGE("The opposing Wynaut is hurt by Fire Spin!");
+        MESSAGE("The opposing Exveemon is hurt by Fire Spin!");
         HP_BAR(opponentRight);
         // turn 2 - Fire Spin continues even after Centiskorch switches out
         MESSAGE("The opposing Lopmonx is hurt by Fire Spin!");
         HP_BAR(opponentLeft);
-        MESSAGE("The opposing Wynaut is hurt by Fire Spin!");
+        MESSAGE("The opposing Exveemon is hurt by Fire Spin!");
 >>>>>>> upstream/master:test/battle/gimmick/dynamax.c
         HP_BAR(opponentRight);
     }
@@ -1914,9 +1914,9 @@ DOUBLE_BATTLE_TEST("(DYNAMAX) G-Max Depletion takes away 2 PP from the target's 
         MESSAGE("Duraludon used G-Max Depletion!");
         MESSAGE("Reduced Foe Blgargomon's Celebrate by 2!");
 =======
-        MESSAGE("The opposing Sableye used Celebrate!");
+        MESSAGE("The opposing Blgargomon used Celebrate!");
         MESSAGE("Duraludon used G-Max Depletion!");
-        MESSAGE("The opposing Sableye's PP was reduced!");
+        MESSAGE("The opposing Blgargomon's PP was reduced!");
 >>>>>>> upstream/master:test/battle/gimmick/dynamax.c
     }
 }

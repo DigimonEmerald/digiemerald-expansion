@@ -104,7 +104,7 @@ SINGLE_BATTLE_TEST("Innards Out uses correct damage amount for Future Sight")
         ASSUME(gMovesInfo[MOVE_FUTURE_SIGHT].effect == EFFECT_FUTURE_SIGHT);
         PLAYER(SPECIES_PYUKUMUKU) { HP(1); Ability(ABILITY_INNARDS_OUT); }
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_FUTURE_SIGHT); }
         TURN { }
@@ -125,7 +125,7 @@ SINGLE_BATTLE_TEST("Innards Out doesn't trigger if Future Sight user is not on f
         PLAYER(SPECIES_PYUKUMUKU) { HP(1); Ability(ABILITY_INNARDS_OUT); }
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_FUTURE_SIGHT); }
         TURN { SWITCH(opponent, 1); }
@@ -147,7 +147,7 @@ SINGLE_BATTLE_TEST("Innards Out triggers if Future Sight user is back on the fie
         ASSUME(gMovesInfo[MOVE_FUTURE_SIGHT].effect == EFFECT_FUTURE_SIGHT);
         PLAYER(SPECIES_PYUKUMUKU) { HP(1); Ability(ABILITY_INNARDS_OUT); }
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_FUTURE_SIGHT); }
         TURN { SWITCH(opponent, 1); }

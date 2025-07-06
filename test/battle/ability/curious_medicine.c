@@ -12,7 +12,7 @@ DOUBLE_BATTLE_TEST("Curious Medicine resets ally's stat stages upon entering bat
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_SCOLIPEDE);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LIOLLMON_GALAR) { Ability(ability); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_QUIVER_DANCE); MOVE(playerLeft, MOVE_CHARM, target: opponentLeft); }

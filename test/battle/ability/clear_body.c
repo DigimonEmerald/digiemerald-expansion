@@ -7,9 +7,9 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke prevent intimid
     s16 turnTwoHit;
     u32 species, ability;
 
-    PARAMETRIZE{ species = SPECIES_METANG; ability = ABILITY_CLEAR_BODY; }
+    PARAMETRIZE{ species = SPECIES_GANEMON; ability = ABILITY_CLEAR_BODY; }
     PARAMETRIZE{ species = SPECIES_SOLGALEO; ability = ABILITY_FULL_METAL_BODY; }
-    PARAMETRIZE{ species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; }
+    PARAMETRIZE{ species = SPECIES_CLOCKMON; ability = ABILITY_WHITE_SMOKE; }
     GIVEN {
         PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_SHED_SKIN); };
         PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); };
@@ -33,9 +33,9 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke prevent intimid
         if (ability == ABILITY_FULL_METAL_BODY)
             MESSAGE("The opposing Solgaleo's Full Metal Body prevents stat loss!");
         else if (ability == ABILITY_WHITE_SMOKE)
-            MESSAGE("The opposing Torkoal's White Smoke prevents stat loss!");
+            MESSAGE("The opposing Clockmon's White Smoke prevents stat loss!");
         else
-            MESSAGE("The opposing Metang's Clear Body prevents stat loss!");
+            MESSAGE("The opposing Ganemon's Clear Body prevents stat loss!");
 >>>>>>> upstream/master
         HP_BAR(player, captureDamage: &turnTwoHit);
     } THEN {
@@ -58,9 +58,9 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke prevent stat st
     };
     for (j = 0; j < ARRAY_COUNT(statReductionMoves); j++)
         {
-            PARAMETRIZE{ species = SPECIES_METANG; ability = ABILITY_CLEAR_BODY; move = statReductionMoves[j]; }
+            PARAMETRIZE{ species = SPECIES_GANEMON; ability = ABILITY_CLEAR_BODY; move = statReductionMoves[j]; }
             PARAMETRIZE{ species = SPECIES_SOLGALEO; ability = ABILITY_FULL_METAL_BODY; move = statReductionMoves[j]; }
-            PARAMETRIZE{ species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; move = statReductionMoves[j]; }
+            PARAMETRIZE{ species = SPECIES_CLOCKMON; ability = ABILITY_WHITE_SMOKE; move = statReductionMoves[j]; }
         }
 
     GIVEN {
@@ -84,18 +84,18 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke prevent stat st
         if (ability == ABILITY_FULL_METAL_BODY)
             MESSAGE("The opposing Solgaleo's Full Metal Body prevents stat loss!");
         else if (ability == ABILITY_WHITE_SMOKE)
-            MESSAGE("The opposing Torkoal's White Smoke prevents stat loss!");
+            MESSAGE("The opposing Clockmon's White Smoke prevents stat loss!");
         else
-            MESSAGE("The opposing Metang's Clear Body prevents stat loss!");
+            MESSAGE("The opposing Ganemon's Clear Body prevents stat loss!");
     }
 }
 
 SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke prevent Sticky Web effect on switchin")
 {
     u32 species, ability;
-    PARAMETRIZE{ species = SPECIES_METANG; ability = ABILITY_CLEAR_BODY; }
+    PARAMETRIZE{ species = SPECIES_GANEMON; ability = ABILITY_CLEAR_BODY; }
     PARAMETRIZE{ species = SPECIES_SOLGALEO; ability = ABILITY_FULL_METAL_BODY; }
-    PARAMETRIZE{ species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; }
+    PARAMETRIZE{ species = SPECIES_CLOCKMON; ability = ABILITY_WHITE_SMOKE; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_STICKY_WEB].effect == EFFECT_STICKY_WEB);
         PLAYER(SPECIES_LOPMONX)
@@ -112,18 +112,18 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke prevent Sticky 
         if (ability == ABILITY_FULL_METAL_BODY)
             MESSAGE("The opposing Solgaleo's Full Metal Body prevents stat loss!");
         else if (ability == ABILITY_WHITE_SMOKE)
-            MESSAGE("The opposing Torkoal's White Smoke prevents stat loss!");
+            MESSAGE("The opposing Clockmon's White Smoke prevents stat loss!");
         else
-            MESSAGE("The opposing Metang's Clear Body prevents stat loss!");
+            MESSAGE("The opposing Ganemon's Clear Body prevents stat loss!");
     }
 }
 
 SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent stat stage reduction from moves used by the user")
 {
     u32 species, ability;
-    PARAMETRIZE{ species = SPECIES_METANG; ability = ABILITY_CLEAR_BODY; }
+    PARAMETRIZE{ species = SPECIES_GANEMON; ability = ABILITY_CLEAR_BODY; }
     PARAMETRIZE{ species = SPECIES_SOLGALEO; ability = ABILITY_FULL_METAL_BODY; }
-    PARAMETRIZE{ species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; }
+    PARAMETRIZE{ species = SPECIES_CLOCKMON; ability = ABILITY_WHITE_SMOKE; }
     GIVEN {
         ASSUME(MoveHasAdditionalEffectSelf(MOVE_SUPERPOWER, MOVE_EFFECT_ATK_DEF_DOWN) == TRUE);
         PLAYER(SPECIES_LOPMONX)
@@ -135,8 +135,8 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent s
         NONE_OF {
             ABILITY_POPUP(opponent, ability);
             MESSAGE("The opposing Solgaleo's Full Metal Body prevents stat loss!");
-            MESSAGE("The opposing Torkoal's White Smoke prevents stat loss!");
-            MESSAGE("The opposing Metang's Clear Body prevents stat loss!");
+            MESSAGE("The opposing Clockmon's White Smoke prevents stat loss!");
+            MESSAGE("The opposing Ganemon's Clear Body prevents stat loss!");
         }
     }
 }
@@ -165,9 +165,9 @@ SINGLE_BATTLE_TEST("Mold Breaker, Teravolt, and Turboblaze ignore Clear Body and
     {
         for (k = 0; k < ARRAY_COUNT(breakerAbilities); k++)
         {
-            PARAMETRIZE{ species = SPECIES_METANG; ability = ABILITY_CLEAR_BODY; move = statReductionMoves[j]; breakerAbility = breakerAbilities[k]; }
+            PARAMETRIZE{ species = SPECIES_GANEMON; ability = ABILITY_CLEAR_BODY; move = statReductionMoves[j]; breakerAbility = breakerAbilities[k]; }
             PARAMETRIZE{ species = SPECIES_SOLGALEO; ability = ABILITY_FULL_METAL_BODY; move = statReductionMoves[j]; breakerAbility = breakerAbilities[k]; }
-            PARAMETRIZE{ species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; move = statReductionMoves[j]; breakerAbility = breakerAbilities[k]; }
+            PARAMETRIZE{ species = SPECIES_CLOCKMON; ability = ABILITY_WHITE_SMOKE; move = statReductionMoves[j]; breakerAbility = breakerAbilities[k]; }
         }
     }
 
@@ -194,8 +194,8 @@ SINGLE_BATTLE_TEST("Mold Breaker, Teravolt, and Turboblaze ignore Clear Body and
             NONE_OF {
                 ABILITY_POPUP(opponent, ability);
                 MESSAGE("The opposing Solgaleo's Full Metal Body prevents stat loss!");
-                MESSAGE("The opposing Torkoal's White Smoke prevents stat loss!");
-                MESSAGE("The opposing Metang's Clear Body prevents stat loss!");
+                MESSAGE("The opposing Clockmon's White Smoke prevents stat loss!");
+                MESSAGE("The opposing Ganemon's Clear Body prevents stat loss!");
             }
         }
     }
@@ -211,9 +211,9 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent S
     };
     for (j = 0; j < ARRAY_COUNT(heldItems); j++)
     {
-        PARAMETRIZE{ species = SPECIES_METANG; ability = ABILITY_CLEAR_BODY; heldItem = heldItems[j]; }
+        PARAMETRIZE{ species = SPECIES_GANEMON; ability = ABILITY_CLEAR_BODY; heldItem = heldItems[j]; }
         PARAMETRIZE{ species = SPECIES_SOLGALEO; ability = ABILITY_FULL_METAL_BODY; heldItem = heldItems[j]; }
-        PARAMETRIZE{ species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; heldItem = heldItems[j]; }
+        PARAMETRIZE{ species = SPECIES_CLOCKMON; ability = ABILITY_WHITE_SMOKE; heldItem = heldItems[j]; }
     }
     GIVEN {
         ASSUME(gItemsInfo[ITEM_IRON_BALL].holdEffect == HOLD_EFFECT_IRON_BALL);
@@ -228,20 +228,20 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent S
             if (ability == ABILITY_FULL_METAL_BODY)
                 MESSAGE("The opposing Solgaleo used Celebrate!");
             else if (ability == ABILITY_WHITE_SMOKE)
-                MESSAGE("The opposing Torkoal used Celebrate!");
+                MESSAGE("The opposing Clockmon used Celebrate!");
             else
-                MESSAGE("The opposing Metang used Celebrate!");
+                MESSAGE("The opposing Ganemon used Celebrate!");
         } else {
             if (ability == ABILITY_FULL_METAL_BODY)
                 MESSAGE("The opposing Solgaleo used Celebrate!");
             else if (ability == ABILITY_WHITE_SMOKE)
-                MESSAGE("The opposing Torkoal used Celebrate!");
+                MESSAGE("The opposing Clockmon used Celebrate!");
             else
 <<<<<<< HEAD
-                MESSAGE("Foe Metang used Celebrate!");
+                MESSAGE("Foe Ganemon used Celebrate!");
             MESSAGE("Lopmonx used Celebrate!");
 =======
-                MESSAGE("The opposing Metang used Celebrate!");
+                MESSAGE("The opposing Ganemon used Celebrate!");
             MESSAGE("Lopmonx used Celebrate!");
 >>>>>>> upstream/master
         }
@@ -252,9 +252,9 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent S
 {
     u32 species, ability;
 
-    PARAMETRIZE{ species = SPECIES_METANG; ability = ABILITY_CLEAR_BODY; }
+    PARAMETRIZE{ species = SPECIES_GANEMON; ability = ABILITY_CLEAR_BODY; }
     PARAMETRIZE{ species = SPECIES_SOLGALEO; ability = ABILITY_FULL_METAL_BODY; }
-    PARAMETRIZE{ species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; }
+    PARAMETRIZE{ species = SPECIES_CLOCKMON; ability = ABILITY_WHITE_SMOKE; }
 
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Speed(4); }
@@ -266,25 +266,25 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent S
         if (ability == ABILITY_FULL_METAL_BODY)
             MESSAGE("The opposing Solgaleo used Celebrate!");
         else if (ability == ABILITY_WHITE_SMOKE)
-            MESSAGE("The opposing Torkoal used Celebrate!");
+            MESSAGE("The opposing Clockmon used Celebrate!");
         else
 <<<<<<< HEAD
-            MESSAGE("Foe Metang used Celebrate!");
+            MESSAGE("Foe Ganemon used Celebrate!");
         MESSAGE("Lopmonx used Thunder Wave!");
 =======
-            MESSAGE("The opposing Metang used Celebrate!");
+            MESSAGE("The opposing Ganemon used Celebrate!");
         MESSAGE("Lopmonx used Thunder Wave!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THUNDER_WAVE, player);
         NOT ABILITY_POPUP(opponent, ability);
         MESSAGE("Lopmonx used Thunder Wave!");
         ONE_OF {
-            MESSAGE("The opposing Metang used Celebrate!");
-            MESSAGE("The opposing Metang couldn't move because it's paralyzed!");
+            MESSAGE("The opposing Ganemon used Celebrate!");
+            MESSAGE("The opposing Ganemon couldn't move because it's paralyzed!");
             MESSAGE("The opposing Solgaleo used Celebrate!");
             MESSAGE("The opposing Solgaleo couldn't move because it's paralyzed!");
-            MESSAGE("The opposing Torkoal used Celebrate!");
-            MESSAGE("The opposing Torkoal couldn't move because it's paralyzed!");
+            MESSAGE("The opposing Clockmon used Celebrate!");
+            MESSAGE("The opposing Clockmon couldn't move because it's paralyzed!");
         }
     }
 }
@@ -293,12 +293,12 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent A
 {
     bool32 burned = FALSE;
     u32 species, ability;
-    PARAMETRIZE{ species = SPECIES_METANG; ability = ABILITY_CLEAR_BODY; burned = FALSE; }
-    PARAMETRIZE{ species = SPECIES_METANG; ability = ABILITY_CLEAR_BODY; burned = TRUE; }
+    PARAMETRIZE{ species = SPECIES_GANEMON; ability = ABILITY_CLEAR_BODY; burned = FALSE; }
+    PARAMETRIZE{ species = SPECIES_GANEMON; ability = ABILITY_CLEAR_BODY; burned = TRUE; }
     PARAMETRIZE{ species = SPECIES_SOLGALEO; ability = ABILITY_FULL_METAL_BODY; burned = FALSE; }
     PARAMETRIZE{ species = SPECIES_SOLGALEO; ability = ABILITY_FULL_METAL_BODY; burned = TRUE; }
-    PARAMETRIZE{ species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; burned = FALSE; }
-    PARAMETRIZE{ species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; burned = TRUE; }
+    PARAMETRIZE{ species = SPECIES_CLOCKMON; ability = ABILITY_WHITE_SMOKE; burned = FALSE; }
+    PARAMETRIZE{ species = SPECIES_CLOCKMON; ability = ABILITY_WHITE_SMOKE; burned = TRUE; }
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TACKLE].category == DAMAGE_CATEGORY_PHYSICAL);
         PLAYER(SPECIES_LOPMONX)
@@ -317,9 +317,9 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent r
 {
     u32 species, ability;
 
-    PARAMETRIZE{ species = SPECIES_METANG; ability = ABILITY_CLEAR_BODY; }
+    PARAMETRIZE{ species = SPECIES_GANEMON; ability = ABILITY_CLEAR_BODY; }
     PARAMETRIZE{ species = SPECIES_SOLGALEO; ability = ABILITY_FULL_METAL_BODY; }
-    PARAMETRIZE{ species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; }
+    PARAMETRIZE{ species = SPECIES_CLOCKMON; ability = ABILITY_WHITE_SMOKE; }
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SCARY_FACE].effect == EFFECT_SPEED_DOWN_2);
@@ -337,9 +337,9 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent r
         if (ability == ABILITY_FULL_METAL_BODY)
             MESSAGE("The opposing Solgaleo used Celebrate!");
         else if (ability == ABILITY_WHITE_SMOKE)
-            MESSAGE("The opposing Torkoal used Celebrate!");
+            MESSAGE("The opposing Clockmon used Celebrate!");
         else
-            MESSAGE("The opposing Metang used Celebrate!");
+            MESSAGE("The opposing Ganemon used Celebrate!");
     }
 }
 
@@ -347,9 +347,9 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent T
 {
     u32 species, ability;
 
-    PARAMETRIZE{ species = SPECIES_METANG; ability = ABILITY_CLEAR_BODY; }
+    PARAMETRIZE{ species = SPECIES_GANEMON; ability = ABILITY_CLEAR_BODY; }
     PARAMETRIZE{ species = SPECIES_SOLGALEO; ability = ABILITY_FULL_METAL_BODY; }
-    PARAMETRIZE{ species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; }
+    PARAMETRIZE{ species = SPECIES_CLOCKMON; ability = ABILITY_WHITE_SMOKE; }
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_TOPSY_TURVY].effect == EFFECT_TOPSY_TURVY);
@@ -371,12 +371,12 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent T
             MESSAGE("The opposing Solgaleo used Celebrate!");
         }
         else if (ability == ABILITY_WHITE_SMOKE) {
-            MESSAGE("The opposing Torkoal used Celebrate!");
-            MESSAGE("The opposing Torkoal used Celebrate!");
+            MESSAGE("The opposing Clockmon used Celebrate!");
+            MESSAGE("The opposing Clockmon used Celebrate!");
         }
         else {
-            MESSAGE("The opposing Metang used Celebrate!");
-            MESSAGE("The opposing Metang used Celebrate!");
+            MESSAGE("The opposing Ganemon used Celebrate!");
+            MESSAGE("The opposing Ganemon used Celebrate!");
         }
         MESSAGE("Lopmonx used Scary Face!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SCARY_FACE, player);
@@ -388,9 +388,9 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent S
 {
     u32 species, ability;
 
-    PARAMETRIZE{ species = SPECIES_METANG; ability = ABILITY_CLEAR_BODY; }
+    PARAMETRIZE{ species = SPECIES_GANEMON; ability = ABILITY_CLEAR_BODY; }
     PARAMETRIZE{ species = SPECIES_SOLGALEO; ability = ABILITY_FULL_METAL_BODY; }
-    PARAMETRIZE{ species = SPECIES_TORKOAL; ability = ABILITY_WHITE_SMOKE; }
+    PARAMETRIZE{ species = SPECIES_CLOCKMON; ability = ABILITY_WHITE_SMOKE; }
 
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SPECTRAL_THIEF].effect == EFFECT_SPECTRAL_THIEF);
@@ -405,21 +405,21 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent S
         if (ability == ABILITY_FULL_METAL_BODY)
             MESSAGE("The opposing Solgaleo used Agility!");
         else if (ability == ABILITY_WHITE_SMOKE)
-            MESSAGE("The opposing Torkoal used Agility!");
+            MESSAGE("The opposing Clockmon used Agility!");
         else
-            MESSAGE("The opposing Metang used Agility!");
+            MESSAGE("The opposing Ganemon used Agility!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_AGILITY, opponent);
         MESSAGE("Lopmonx used Celebrate!");
         if (ability == ABILITY_FULL_METAL_BODY)
             MESSAGE("The opposing Solgaleo used Celebrate!");
         else if (ability == ABILITY_WHITE_SMOKE)
-            MESSAGE("The opposing Torkoal used Celebrate!");
+            MESSAGE("The opposing Clockmon used Celebrate!");
         else
 <<<<<<< HEAD
-            MESSAGE("Foe Metang used Celebrate!");
+            MESSAGE("Foe Ganemon used Celebrate!");
         MESSAGE("Lopmonx used SpectrlThief!");
 =======
-            MESSAGE("The opposing Metang used Celebrate!");
+            MESSAGE("The opposing Ganemon used Celebrate!");
         MESSAGE("Lopmonx used Spectral Thief!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPECTRAL_THIEF, player);
@@ -428,8 +428,8 @@ SINGLE_BATTLE_TEST("Clear Body, Full Metal Body, and White Smoke don't prevent S
         if (ability == ABILITY_FULL_METAL_BODY)
             MESSAGE("The opposing Solgaleo used Celebrate!");
         else if (ability == ABILITY_WHITE_SMOKE)
-            MESSAGE("The opposing Torkoal used Celebrate!");
+            MESSAGE("The opposing Clockmon used Celebrate!");
         else
-            MESSAGE("The opposing Metang used Celebrate!");
+            MESSAGE("The opposing Ganemon used Celebrate!");
     }
 }

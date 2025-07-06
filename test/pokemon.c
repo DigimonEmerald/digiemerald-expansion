@@ -217,7 +217,7 @@ TEST("givemon respects perfectIVCount")
 
     ASSUME(gSpeciesInfo[SPECIES_FALCOMON].perfectIVCount == 3);
     ASSUME(gSpeciesInfo[SPECIES_STRABIMON].perfectIVCount == 3);
-    ASSUME(gSpeciesInfo[SPECIES_JIRACHI].perfectIVCount == 3);
+    ASSUME(gSpeciesInfo[SPECIES_GEREMON].perfectIVCount == 3);
     ASSUME(gSpeciesInfo[SPECIES_MANAPHY].perfectIVCount == 3);
     ASSUME(gSpeciesInfo[SPECIES_VICTINI].perfectIVCount == 3);
     ASSUME(gSpeciesInfo[SPECIES_DIANCIE].perfectIVCount == 3);
@@ -225,7 +225,7 @@ TEST("givemon respects perfectIVCount")
     RUN_OVERWORLD_SCRIPT(
         givemon SPECIES_FALCOMON, 100;
         givemon SPECIES_STRABIMON, 100;
-        givemon SPECIES_JIRACHI, 100;
+        givemon SPECIES_GEREMON, 100;
         givemon SPECIES_MANAPHY, 100;
         givemon SPECIES_VICTINI, 100;
         givemon SPECIES_DIANCIE, 100;
@@ -233,7 +233,7 @@ TEST("givemon respects perfectIVCount")
 
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_FALCOMON);
     EXPECT_EQ(GetMonData(&gPlayerParty[1], MON_DATA_SPECIES), SPECIES_STRABIMON);
-    EXPECT_EQ(GetMonData(&gPlayerParty[2], MON_DATA_SPECIES), SPECIES_JIRACHI);
+    EXPECT_EQ(GetMonData(&gPlayerParty[2], MON_DATA_SPECIES), SPECIES_GEREMON);
     EXPECT_EQ(GetMonData(&gPlayerParty[3], MON_DATA_SPECIES), SPECIES_MANAPHY);
     EXPECT_EQ(GetMonData(&gPlayerParty[4], MON_DATA_SPECIES), SPECIES_VICTINI);
     EXPECT_EQ(GetMonData(&gPlayerParty[5], MON_DATA_SPECIES), SPECIES_DIANCIE);
@@ -391,12 +391,12 @@ TEST("createmon [simple]")
 
     RUN_OVERWORLD_SCRIPT(
         createmon 1, 0, SPECIES_LOPMONX, 100;
-        createmon 1, 1, SPECIES_WYNAUT, 10;
+        createmon 1, 1, SPECIES_EXVEEMON, 10;
     );
 
     EXPECT_EQ(GetMonData(&gEnemyParty[0], MON_DATA_SPECIES), SPECIES_LOPMONX);
     EXPECT_EQ(GetMonData(&gEnemyParty[0], MON_DATA_LEVEL), 100);
-    EXPECT_EQ(GetMonData(&gEnemyParty[1], MON_DATA_SPECIES), SPECIES_WYNAUT);
+    EXPECT_EQ(GetMonData(&gEnemyParty[1], MON_DATA_SPECIES), SPECIES_EXVEEMON);
     EXPECT_EQ(GetMonData(&gEnemyParty[1], MON_DATA_LEVEL), 10);
 }
 

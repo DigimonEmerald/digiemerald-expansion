@@ -7,12 +7,12 @@ DOUBLE_BATTLE_TEST("Symbiosis transfers its item to an ally after it consumes an
         ASSUME(gItemsInfo[ITEM_ROOM_SERVICE].holdEffect == HOLD_EFFECT_ROOM_SERVICE);
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_ROOM_SERVICE); }
         PLAYER(SPECIES_ORANGURU) { Ability(ABILITY_SYMBIOSIS); Item(ITEM_TOXIC_ORB); }
-        OPPONENT(SPECIES_KIRLIA);
+        OPPONENT(SPECIES_AQUILAMON);
         OPPONENT(SPECIES_MORPHOMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_TRICK_ROOM); }
     } SCENE {
-        MESSAGE("The opposing Kirlia used Trick Room!");
+        MESSAGE("The opposing Aquilamon used Trick Room!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, playerLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
         MESSAGE("Using Room Service, the Speed of Lopmonx fell!");

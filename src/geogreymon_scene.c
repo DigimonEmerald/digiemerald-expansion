@@ -1,6 +1,6 @@
 #include "global.h"
-<<<<<<< HEAD:src/geogreymon_scene.c
-#include "geogreymon_scene.h"
+<<<<<<< HEAD:src/rayquaza_scene.c
+#include "rayquaza_scene.h"
 =======
 #include "rayquaza_scene.h"
 #include "event_object_movement.h"
@@ -1308,7 +1308,7 @@ static void CB2_InitGeogreymonScene(void)
     ScanlineEffect_Stop();
     for (i = 0; i < OBJECT_EVENTS_COUNT; i++)
     {
-        if (gObjectEvents[i].graphicsId == OBJ_EVENT_GFX_RAYQUAZA)
+        if (gObjectEvents[i].graphicsId == OBJ_EVENT_GFX_GEOGREYMON)
             gObjectEvents[i].invisible = FALSE;
     }
     FreeAllSpritePalettes();

@@ -20,7 +20,7 @@ SINGLE_BATTLE_TEST("Hit Escape: U-turn switches the user out")
 <<<<<<< HEAD
         MESSAGE("Go! Exveemon!");
 =======
-        SEND_IN_MESSAGE("Wynaut");
+        SEND_IN_MESSAGE("Exveemon");
 >>>>>>> upstream/master
     }
 }
@@ -98,7 +98,7 @@ SINGLE_BATTLE_TEST("Hit Escape: U-turn switches the user out if Wimp Out fails t
 <<<<<<< HEAD
         MESSAGE("Go for it, Exveemon!");
 =======
-        SEND_IN_MESSAGE("Wynaut");
+        SEND_IN_MESSAGE("Exveemon");
 >>>>>>> upstream/master
     }
 }
@@ -121,7 +121,7 @@ SINGLE_BATTLE_TEST("Hit Escape: U-turn switches the user out after Ice Face acti
         MESSAGE("Go! Exveemon!");
 =======
         MESSAGE("The opposing Eiscue transformed!");
-        SEND_IN_MESSAGE("Wynaut");
+        SEND_IN_MESSAGE("Exveemon");
 >>>>>>> upstream/master
     }
 }

@@ -116,7 +116,7 @@ SINGLE_BATTLE_TEST("Rattled triggers correctly when hit by U-Turn") // Specific 
         MESSAGE("Go! Exveemon!");
 =======
         MESSAGE("The opposing Junkmon's Speed rose!");
-        SEND_IN_MESSAGE("Wynaut");
+        SEND_IN_MESSAGE("Exveemon");
 >>>>>>> upstream/master
     }
 }

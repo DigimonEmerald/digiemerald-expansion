@@ -2988,7 +2988,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formChangeTable = sCramorantFormChangeTable,
     },
 
-    [SPECIES_CRAMORANT_BURAIMONG] =
+    [SPECIES_CRAMORANT_GULPING] =
     {
         .baseHP        = 70,
         .baseAttack    = 85,
@@ -3022,18 +3022,18 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_CramorantBuraimong,
+        .frontPic = gMonFrontPic_CramorantGulping,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_Cramorant,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_CramorantBuraimong,
+        .backPic = gMonBackPic_CramorantGulping,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_CramorantBuraimong,
-        .shinyPalette = gMonShinyPalette_CramorantBuraimong,
-        .iconSprite = gMonIcon_CramorantBuraimong,
+        .palette = gMonPalette_CramorantGulping,
+        .shinyPalette = gMonShinyPalette_CramorantGulping,
+        .iconSprite = gMonIcon_CramorantGulping,
         .iconPalIndex = 0,
         SHADOW(5, 14, SHADOW_SIZE_M)
         FOOTPRINT(Cramorant)

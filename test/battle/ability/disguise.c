@@ -123,7 +123,7 @@ SINGLE_BATTLE_TEST("Disguised Mimikyu takes damage from Rough Skin without break
 <<<<<<< HEAD
         MESSAGE("Mimikyu was hurt by Foe Choumon's Rough Skin!");
 =======
-        MESSAGE("Mimikyu was hurt by the opposing Carvanha's Rough Skin!");
+        MESSAGE("Mimikyu was hurt by the opposing Choumon's Rough Skin!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->species, SPECIES_MIMIKYU_DISGUISED);
@@ -186,7 +186,7 @@ SINGLE_BATTLE_TEST("Disguise does not break from a teammate's Wish")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_WISH].effect == EFFECT_WISH);
-        PLAYER(SPECIES_JIRACHI);
+        PLAYER(SPECIES_GEREMON);
         PLAYER(SPECIES_MIMIKYU_DISGUISED) { Ability(ABILITY_DISGUISE); HP(219); MaxHP(220); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {

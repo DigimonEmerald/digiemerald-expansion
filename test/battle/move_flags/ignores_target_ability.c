@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("ignoresTargetAbility moves do not ignore the attacker's own 
 
     GIVEN {
         PLAYER(SPECIES_PYONMON) { Speed(1); Ability(ability); }
-        OPPONENT(SPECIES_ARON) { Speed(2); }
+        OPPONENT(SPECIES_BLKGATOMON) { Speed(2); }
     } WHEN {
         if (gMovesInfo[move].category == DAMAGE_CATEGORY_PHYSICAL)
             TURN { MOVE(opponent, MOVE_IRON_DEFENSE); MOVE(player, move); }

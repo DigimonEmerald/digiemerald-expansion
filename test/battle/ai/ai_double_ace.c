@@ -22,7 +22,7 @@ AI_DOUBLE_BATTLE_TEST("AI_FLAG_DOUBLE_ACE_POKEMON: U-Turn won't send out any of 
         PLAYER(SPECIES_LOPMONX);
 
         OPPONENT(SPECIES_TOKOMON_X) { Moves(MOVE_U_TURN); }
-        OPPONENT(SPECIES_DUSKULL) { Moves(MOVE_U_TURN); }
+        OPPONENT(SPECIES_DRIMOGEMON) { Moves(MOVE_U_TURN); }
 
         OPPONENT(SPECIES_TORBALLMON) { Moves(MOVE_U_TURN); }
         OPPONENT(SPECIES_TSUMEMON) { Moves(MOVE_U_TURN); }
@@ -56,7 +56,7 @@ AI_DOUBLE_BATTLE_TEST("AI_FLAG_DOUBLE_ACE_POKEMON: U-Turn will send out an Ace M
         PLAYER(SPECIES_LOPMONX) { Level(50); }
 
         OPPONENT(SPECIES_TOKOMON_X) { Moves(MOVE_U_TURN); Level(50); }
-        OPPONENT(SPECIES_DUSKULL) { Moves(MOVE_U_TURN); Level(5); }
+        OPPONENT(SPECIES_DRIMOGEMON) { Moves(MOVE_U_TURN); Level(5); }
 
         // Aces
         // Should choose Tinkermon as its level is higher.

@@ -226,22 +226,22 @@ DOUBLE_BATTLE_TEST("Ally switch swaps sky drop targets if being used by partner"
         ASSUME(gMovesInfo[MOVE_SKY_DROP].effect == EFFECT_SKY_DROP);
         PLAYER(SPECIES_PABUMON) { Speed(100); }
         PLAYER(SPECIES_HERISSMON)   { Speed(150); }
-        OPPONENT(SPECIES_ARON) { Speed(25); Ability(ABILITY_STURDY); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(30); }
+        OPPONENT(SPECIES_BLKGATOMON) { Speed(25); Ability(ABILITY_STURDY); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(30); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SKY_DROP, target: opponentLeft); }
         TURN { MOVE(playerRight, MOVE_ALLY_SWITCH); SKIP_TURN(playerLeft); MOVE(opponentRight, MOVE_MUD_SPORT); MOVE(opponentLeft, MOVE_IRON_DEFENSE); }
     } SCENE {
         MESSAGE("Pabumon used Sky Drop!");
-        MESSAGE("Pabumon took the opposing Aron into the sky!");
+        MESSAGE("Pabumon took the opposing Blkgatomon into the sky!");
         // turn 2
         MESSAGE("Herissmon used Ally Switch!");
         MESSAGE("Herissmon and Pabumon switched places!");
         MESSAGE("Pabumon used Sky Drop!");
         HP_BAR(opponentLeft);
-        MESSAGE("The opposing Wynaut used Mud Sport!");
+        MESSAGE("The opposing Exveemon used Mud Sport!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MUD_SPORT, opponentRight);
-        MESSAGE("The opposing Aron used Iron Defense!");
+        MESSAGE("The opposing Blkgatomon used Iron Defense!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_IRON_DEFENSE, opponentLeft);
     } THEN {
         // all battlers should be visible
@@ -261,8 +261,8 @@ DOUBLE_BATTLE_TEST("Ally switch swaps opposing sky drop targets if partner is be
     u8 visibility;
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SKY_DROP].effect == EFFECT_SKY_DROP);
-        PLAYER(SPECIES_ARON) { Speed(25); Ability(ABILITY_STURDY); }
-        PLAYER(SPECIES_WYNAUT) { Speed(30); }
+        PLAYER(SPECIES_BLKGATOMON) { Speed(25); Ability(ABILITY_STURDY); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(30); }
         OPPONENT(SPECIES_PABUMON) { Speed(100); }
         OPPONENT(SPECIES_HERISSMON)   { Speed(150); }
     } WHEN {
@@ -270,15 +270,15 @@ DOUBLE_BATTLE_TEST("Ally switch swaps opposing sky drop targets if partner is be
         TURN { MOVE(opponentRight, MOVE_ALLY_SWITCH); SKIP_TURN(opponentLeft); MOVE(playerRight, MOVE_MUD_SPORT); MOVE(playerLeft, MOVE_IRON_DEFENSE); }
     } SCENE {
         MESSAGE("The opposing Pabumon used Sky Drop!");
-        MESSAGE("The opposing Pabumon took Aron into the sky!");
+        MESSAGE("The opposing Pabumon took Blkgatomon into the sky!");
         // turn 2
         MESSAGE("The opposing Herissmon used Ally Switch!");
         MESSAGE("The opposing Herissmon and the opposing Pabumon switched places!");
         MESSAGE("The opposing Pabumon used Sky Drop!");
         HP_BAR(playerLeft);
-        MESSAGE("Wynaut used Mud Sport!");
+        MESSAGE("Exveemon used Mud Sport!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MUD_SPORT, playerRight);
-        MESSAGE("Aron used Iron Defense!");
+        MESSAGE("Blkgatomon used Iron Defense!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_IRON_DEFENSE, playerLeft);
     } THEN {
         // all battlers should be visible

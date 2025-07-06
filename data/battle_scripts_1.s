@@ -6366,7 +6366,7 @@ BattleScript_GulpMissileNoSecondEffectGorging:
 	waitanimation
 	return
 
-BattleScript_GulpMissileBuraimong::
+BattleScript_GulpMissileGulping::
 	call BattleScript_AbilityPopUp
 	playanimation BS_ATTACKER, B_ANIM_GULP_MISSILE
 	waitanimation
@@ -6374,34 +6374,34 @@ BattleScript_GulpMissileBuraimong::
 	effectivenesssound
 	hitanimation BS_ATTACKER
 	waitstate
-	jumpifability BS_ATTACKER, ABILITY_MAGIC_GUARD, BattleScript_GulpMissileNoDmgBuraimong
+	jumpifability BS_ATTACKER, ABILITY_MAGIC_GUARD, BattleScript_GulpMissileNoDmgGulping
 	healthbarupdate BS_ATTACKER
 	datahpupdate BS_ATTACKER
 	tryfaintmon BS_ATTACKER
-	jumpiffainted BS_ATTACKER, TRUE, BattleScript_GulpMissileNoSecondEffectBuraimong
-BattleScript_GulpMissileNoDmgBuraimong:
+	jumpiffainted BS_ATTACKER, TRUE, BattleScript_GulpMissileNoSecondEffectGulping
+BattleScript_GulpMissileNoDmgGulping:
 	handleformchange BS_TARGET, 0
 	playanimation BS_TARGET, B_ANIM_FORM_CHANGE
 	waitanimation
 	swapattackerwithtarget @ to make gStatDownStringIds down below print the right battler
 	setstatchanger STAT_DEF, 1, TRUE
-	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_GulpMissileGulpingEnd
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_GulpMissileGulpingTargetDefenseCantGoLower
+	statbuffchange STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_ALLOW_PTR, BattleScript_GulpMissileBuraimonEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_GulpMissileBuraimonTargetDefenseCantGoLower
 	setgraphicalstatchangevalues
 	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
 	printfromtable gStatDownStringIds
 	waitmessage B_WAIT_TIME_LONG
 	swapattackerwithtarget @ restore the battlers, just in case
 	return
-BattleScript_GulpMissileNoSecondEffectBuraimong:
+BattleScript_GulpMissileNoSecondEffectGulping:
 	handleformchange BS_TARGET, 0
 	playanimation BS_TARGET, B_ANIM_FORM_CHANGE
 	waitanimation
 	return
-BattleScript_GulpMissileGulpingTargetDefenseCantGoLower:
+BattleScript_GulpMissileBuraimonTargetDefenseCantGoLower:
 	printstring STRINGID_STATSWONTDECREASE
 	waitmessage B_WAIT_TIME_LONG
-BattleScript_GulpMissileGulpingEnd:
+BattleScript_GulpMissileBuraimonEnd:
 	swapattackerwithtarget @ restore the battlers, just in case
 	return
 

@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Forced abilities activate on switch-in")
     GIVEN {
         PLAYER(SPECIES_KAPURIMON);
         PLAYER(SPECIES_KAKKINMON) { Ability(ABILITY_QUARK_DRIVE); SpAttack(400);}
-        OPPONENT(SPECIES_ARON);
+        OPPONENT(SPECIES_BLKGATOMON);
         OPPONENT(SPECIES_KAPURIMON) { Ability(ABILITY_ELECTRIC_SURGE); };
     } WHEN {
         TURN { SWITCH(player, 1); SWITCH(opponent, 1);}

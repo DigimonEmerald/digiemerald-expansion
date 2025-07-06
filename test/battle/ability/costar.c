@@ -7,7 +7,7 @@ DOUBLE_BATTLE_TEST("Costar copies an ally's stat stages upon entering battle")
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_FLAMIGO) { Ability(ABILITY_COSTAR); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_SWORDS_DANCE); }

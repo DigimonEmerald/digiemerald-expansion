@@ -120,9 +120,9 @@ SINGLE_BATTLE_TEST("Ultra Burst and Mega Evolution can happen on the same turn")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponent);
         MESSAGE("Foe Arcadiamon_champion has Mega Evolved into Mega Arcadiamon_champion!");
 =======
-        MESSAGE("The opposing Gardevoir's Gardevoirite is reacting to 2's Mega Ring!");
+        MESSAGE("The opposing Arcadiamon_champion's Arcadiamon_championite is reacting to 2's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponent);
-        MESSAGE("The opposing Gardevoir has Mega Evolved into Mega Gardevoir!");
+        MESSAGE("The opposing Arcadiamon_champion has Mega Evolved into Mega Arcadiamon_champion!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->species, SPECIES_NECROZMA_ULTRA);

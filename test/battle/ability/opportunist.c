@@ -67,10 +67,10 @@ DOUBLE_BATTLE_TEST("Opportunist raises Attack only once when partner has Intimid
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
             MESSAGE("Tinpet's Intimidate cuts Foe Coredramon_blue's attack!");
 =======
-            MESSAGE("The opposing Spinda's Attack rose!");
+            MESSAGE("The opposing Coredramon_blue's Attack rose!");
         } else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-            MESSAGE("Tinpet's Intimidate cuts the opposing Spinda's Attack!");
+            MESSAGE("Tinpet's Intimidate cuts the opposing Coredramon_blue's Attack!");
 >>>>>>> upstream/master
         }
         if (abilityRight == ABILITY_CONTRARY) {
@@ -82,10 +82,10 @@ DOUBLE_BATTLE_TEST("Opportunist raises Attack only once when partner has Intimid
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
             MESSAGE("Tinpet's Intimidate cuts Foe Coredramon_blue's attack!");
 =======
-            MESSAGE("The opposing Spinda's Attack rose!");
+            MESSAGE("The opposing Coredramon_blue's Attack rose!");
         } else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-            MESSAGE("Tinpet's Intimidate cuts the opposing Spinda's Attack!");
+            MESSAGE("Tinpet's Intimidate cuts the opposing Coredramon_blue's Attack!");
 >>>>>>> upstream/master
         }
 

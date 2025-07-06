@@ -33,7 +33,7 @@ DOUBLE_BATTLE_TEST("Switch-in abilities trigger in Speed Order at the battle's s
     PARAMETRIZE { spdPlayer1 = 4; spdPlayer2 = 3; spdOpponent1 = 5; spdOpponent2 = 2; }
 
     GIVEN {
-        PLAYER(SPECIES_KYOGRE) { Speed(spdPlayer1); Ability(ABILITY_DRIZZLE); }
+        PLAYER(SPECIES_GATOMON_X) { Speed(spdPlayer1); Ability(ABILITY_DRIZZLE); }
         PLAYER(SPECIES_COMMDRAMON) { Speed(spdPlayer2); Ability(ABILITY_INTIMIDATE); }
         OPPONENT(SPECIES_RENAMON_X) { Speed(spdOpponent1); Ability(ABILITY_DOWNLOAD); }
         OPPONENT(SPECIES_TYUTYUMON) { Speed(spdOpponent2); Ability(ABILITY_MOLD_BREAKER); }

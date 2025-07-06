@@ -521,16 +521,16 @@ DOUBLE_BATTLE_TEST("Crafty Shield protects self and ally from Confide and Decora
         ASSUME(gMovesInfo[MOVE_DECORATE].effect == EFFECT_DECORATE);
         ASSUME(gMovesInfo[MOVE_DECORATE].ignoresProtect == TRUE);
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_CRAFTY_SHIELD); MOVE(playerLeft, move, target: opponentLeft); MOVE(playerRight, move, target: opponentRight); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, move, playerLeft);
         MESSAGE("The opposing Lopmonx protected itself!");
         NOT ANIMATION(ANIM_TYPE_MOVE, move, playerRight);
-        MESSAGE("The opposing Wynaut protected itself!");
+        MESSAGE("The opposing Exveemon protected itself!");
     }
 }
 

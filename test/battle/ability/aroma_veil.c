@@ -12,7 +12,7 @@ DOUBLE_BATTLE_TEST("Aroma Veil protects the Pokémon's side from Taunt")
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); }
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_TAUNT, target: moveTarget); MOVE(moveTarget, MOVE_HARDEN); }
     } SCENE {
@@ -33,7 +33,7 @@ DOUBLE_BATTLE_TEST("Aroma Veil protects the Pokémon's side from Torment")
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); }
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_TORMENT, target: moveTarget); MOVE(moveTarget, MOVE_HARDEN); }
         TURN { MOVE(moveTarget, MOVE_HARDEN); }
@@ -56,7 +56,7 @@ DOUBLE_BATTLE_TEST("Aroma Veil protects the Pokémon's side from Encore")
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); }
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_ENCORE, target: moveTarget); MOVE(moveTarget, MOVE_HARDEN); }
         TURN { MOVE(moveTarget, MOVE_CELEBRATE); }
@@ -79,7 +79,7 @@ DOUBLE_BATTLE_TEST("Aroma Veil protects the Pokémon's side from Disable")
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); }
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_DISABLE, target: moveTarget); MOVE(moveTarget, MOVE_HARDEN); }
         TURN { MOVE(moveTarget, MOVE_HARDEN); }
@@ -98,7 +98,7 @@ DOUBLE_BATTLE_TEST("Aroma Veil protects the Pokémon's side from Cursed Body")
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); }
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_JELLICENT) { Ability(ABILITY_CURSED_BODY); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_PECK, target: opponentLeft); MOVE(playerRight, MOVE_PECK, target: opponentLeft); }
         TURN { MOVE(playerLeft, MOVE_PECK, target: opponentLeft); MOVE(playerRight, MOVE_PECK, target: opponentLeft); }
@@ -123,7 +123,7 @@ DOUBLE_BATTLE_TEST("Aroma Veil protects the Pokémon's side from Heal Block")
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); HP(1); }
         PLAYER(SPECIES_LOPMONX) { HP(1); }
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_HEAL_BLOCK, target: moveTarget); MOVE(moveTarget, MOVE_RECOVER); }
     } SCENE {
@@ -143,7 +143,7 @@ DOUBLE_BATTLE_TEST("Aroma Veil protects the Pokémon's side from Infatuation")
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); }
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_ATTRACT, target: moveTarget); MOVE(moveTarget, MOVE_CELEBRATE); }
     } SCENE {
@@ -160,7 +160,7 @@ DOUBLE_BATTLE_TEST("Aroma Veil does not protect the Pokémon's side from Impriso
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); }
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX) {Moves(MOVE_IMPRISON, MOVE_CELEBRATE); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_IMPRISON); MOVE(playerLeft, MOVE_CELEBRATE); MOVE(playerRight, MOVE_CELEBRATE); MOVE(opponentRight, MOVE_SPLASH); }
     } SCENE {
@@ -184,7 +184,7 @@ DOUBLE_BATTLE_TEST("Aroma Veil prevents Psychic Noise's effect")
         PLAYER(SPECIES_AROMATISSE) { Ability(ABILITY_AROMA_VEIL); }
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_PSYCHIC_NOISE, target: moveTarget); MOVE(moveTarget, MOVE_RECOVER); }
     } SCENE {

@@ -40,7 +40,7 @@
         {
             {
 #line 15
-            .species = SPECIES_METANG,
+            .species = SPECIES_GANEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 19
             .ev = TRAINER_PARTY_EVS(0, 252, 252, 0, 6, 0),
@@ -82,7 +82,7 @@
             },
             {
 #line 35
-            .species = SPECIES_AGGRON,
+            .species = SPECIES_BLGROWLMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 39
             .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 252, 6),

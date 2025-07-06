@@ -9,8 +9,8 @@ DOUBLE_BATTLE_TEST("Grim Neigh raises Sp. Attack by one stage after directly cau
     GIVEN {
         ASSUME(gMovesInfo[MOVE_DISCHARGE].target == MOVE_TARGET_FOES_AND_ALLY);
         PLAYER(species) { Ability(ability); }
-        PLAYER(SPECIES_SNORUNT) { HP(1); }
-        OPPONENT(SPECIES_GLALIE) { HP(1); }
+        PLAYER(SPECIES_EXVEEMON_VIRUS) { HP(1); }
+        OPPONENT(SPECIES_EYESMON) { HP(1); }
         OPPONENT(SPECIES_HOPMON) { HP(1); }
         OPPONENT(SPECIES_HOPMON);
     } WHEN {
@@ -21,8 +21,8 @@ DOUBLE_BATTLE_TEST("Grim Neigh raises Sp. Attack by one stage after directly cau
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DISCHARGE, playerLeft);
         for (i = 0; i < 3; i++) {
             ONE_OF {
-                MESSAGE("Snorunt fainted!");
-                MESSAGE("The opposing Glalie fainted!");
+                MESSAGE("Exveemon_virus fainted!");
+                MESSAGE("The opposing Eyesmon fainted!");
                 MESSAGE("The opposing Hopmon fainted!");
             }
             ABILITY_POPUP(playerLeft, abilityPopUp);
@@ -44,8 +44,8 @@ DOUBLE_BATTLE_TEST("Grim Neigh does not trigger if Pokemon faint to indirect dam
     PARAMETRIZE { species = SPECIES_CALYREX_SHADOW; ability = ABILITY_AS_ONE_SHADOW_RIDER; abilityPopUp = ABILITY_GRIM_NEIGH; }
     GIVEN {
         PLAYER(species) { Ability(ability); }
-        PLAYER(SPECIES_SNORUNT) { HP(1); Status1(STATUS1_POISON); }
-        OPPONENT(SPECIES_GLALIE) { HP(1); Status1(STATUS1_BURN); }
+        PLAYER(SPECIES_EXVEEMON_VIRUS) { HP(1); Status1(STATUS1_POISON); }
+        OPPONENT(SPECIES_EYESMON) { HP(1); Status1(STATUS1_BURN); }
         OPPONENT(SPECIES_HOPMON) { HP(1); }
         OPPONENT(SPECIES_HOPMON);
     } WHEN {
@@ -56,14 +56,14 @@ DOUBLE_BATTLE_TEST("Grim Neigh does not trigger if Pokemon faint to indirect dam
         ANIMATION(ANIM_TYPE_MOVE, MOVE_QUICK_ATTACK, playerRight);
         for (i = 0; i < 3; i++) {
             ONE_OF {
-                MESSAGE("Snorunt fainted!");
-                MESSAGE("The opposing Glalie fainted!");
+                MESSAGE("Exveemon_virus fainted!");
+                MESSAGE("The opposing Eyesmon fainted!");
                 MESSAGE("The opposing Hopmon fainted!");
             }
             NONE_OF {
                 ABILITY_POPUP(playerLeft, abilityPopUp);
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-                MESSAGE("Salamence's Moxie raised its Sp. Atk!");
+                MESSAGE("Frogmon's Moxie raised its Sp. Atk!");
                 MESSAGE("Spectrier's Grim Neigh raised its Sp. Atk!");
                 MESSAGE("Calyrex's Grim Neigh raised its Sp. Atk!");
             }
@@ -85,8 +85,8 @@ DOUBLE_BATTLE_TEST("Grim Neigh does not increase damage done by the same move th
         ASSUME(gMovesInfo[MOVE_DISCHARGE].target == MOVE_TARGET_FOES_AND_ALLY);
         PLAYER(species) { Ability(ability); }
         PLAYER(SPECIES_HOPMON) { HP(1); }
-        OPPONENT(SPECIES_GLALIE);
-        OPPONENT(SPECIES_GLALIE);
+        OPPONENT(SPECIES_EYESMON);
+        OPPONENT(SPECIES_EYESMON);
         OPPONENT(SPECIES_HOPMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_DISCHARGE); }

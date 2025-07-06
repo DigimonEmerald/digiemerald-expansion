@@ -103,8 +103,8 @@ SINGLE_BATTLE_TEST("Trace will copy an opponent's ability whenever it has the ch
 SINGLE_BATTLE_TEST("Trace copies opponent's Intimidate and triggers it immediately")
 {
     GIVEN {
-        PLAYER(SPECIES_RALTS) { Ability(ABILITY_TRACE); }
-        OPPONENT(SPECIES_MASQUERAIN) { Ability(ABILITY_INTIMIDATE); }
+        PLAYER(SPECIES_APEMON) { Ability(ABILITY_TRACE); }
+        OPPONENT(SPECIES_ARGOMON_CHAMPION) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { }
     } SCENE {
@@ -118,10 +118,10 @@ SINGLE_BATTLE_TEST("Trace copies opponent's Intimidate and triggers it immediate
 DOUBLE_BATTLE_TEST("Trace respects the turn order")
 {
     GIVEN {
-        PLAYER(SPECIES_DEOXYS_SPEED) { Speed(40); Ability(ABILITY_PRESSURE); }
-        PLAYER(SPECIES_GARDEVOIR) { Speed(20); Ability(ABILITY_TRACE); }
+        PLAYER(SPECIES_GESOMON_SPEED) { Speed(40); Ability(ABILITY_PRESSURE); }
+        PLAYER(SPECIES_ARCADIAMON_CHAMPION) { Speed(20); Ability(ABILITY_TRACE); }
         OPPONENT(SPECIES_HIPPOWDON) { Speed(10); Ability(ABILITY_SAND_STREAM); }
-        OPPONENT(SPECIES_DEOXYS_SPEED) { Speed(30); Ability(ABILITY_PRESSURE); }
+        OPPONENT(SPECIES_GESOMON_SPEED) { Speed(30); Ability(ABILITY_PRESSURE); }
     } WHEN {
         TURN { }
     } SCENE {

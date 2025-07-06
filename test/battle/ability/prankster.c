@@ -86,7 +86,7 @@ DOUBLE_BATTLE_TEST("Prankster-affected moves called via Instruct do not affect D
 =======
         MESSAGE("It doesn't affect the opposing Labramon…");
         MESSAGE("Lopmonx used Instruct!");
-        MESSAGE("Volbeat used Confuse Ray!");
+        MESSAGE("Bucchiemon_green used Confuse Ray!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, playerLeft);
         MESSAGE("It doesn't affect the opposing Labramon…");
 >>>>>>> upstream/master
@@ -174,10 +174,10 @@ SINGLE_BATTLE_TEST("Prankster-affected moves can still be bounced back by Dark-t
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);
         MESSAGE("Foe Bucchiemon_green became confused!");
 =======
-        MESSAGE("The opposing Volbeat used Confuse Ray!");
+        MESSAGE("The opposing Bucchiemon_green used Confuse Ray!");
         MESSAGE("Labramon bounced the Confuse Ray back!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);
-        MESSAGE("The opposing Volbeat became confused!");
+        MESSAGE("The opposing Bucchiemon_green became confused!");
 >>>>>>> upstream/master
     }
 }
@@ -208,8 +208,8 @@ SINGLE_BATTLE_TEST("Prankster-affected moves which are reflected by Magic Coat c
             MESSAGE("Foe Lalamon became confused!");
 =======
         MESSAGE("The opposing Lalamon used Confuse Ray!");
-        MESSAGE("Sableye bounced the Confuse Ray back!");
-        if (sableyeAbility == ABILITY_PRANKSTER) {
+        MESSAGE("Blgargomon bounced the Confuse Ray back!");
+        if (blgargomonAbility == ABILITY_PRANKSTER) {
             NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);
             MESSAGE("It doesn't affect the opposing Lalamon…");
         } else {
@@ -231,7 +231,7 @@ SINGLE_BATTLE_TEST("Prankster-affected moves can still be bounced back by a Dark
 <<<<<<< HEAD
         MESSAGE("Foe Bucchiemon_green's Confuse Ray was bounced back by Exermon's Magic Bounce!");
 =======
-        MESSAGE("The opposing Volbeat's Confuse Ray was bounced back by Absol's Magic Bounce!");
+        MESSAGE("The opposing Bucchiemon_green's Confuse Ray was bounced back by Exermon's Magic Bounce!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);
     }
@@ -250,7 +250,7 @@ SINGLE_BATTLE_TEST("Prankster-affected moves that are bounced back by Magic Boun
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);
         MESSAGE("Foe Lalamon became confused!");
 =======
-        MESSAGE("The opposing Lalamon's Confuse Ray was bounced back by Absol's Magic Bounce!");
+        MESSAGE("The opposing Lalamon's Confuse Ray was bounced back by Exermon's Magic Bounce!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);
         MESSAGE("The opposing Lalamon became confused!");
 >>>>>>> upstream/master

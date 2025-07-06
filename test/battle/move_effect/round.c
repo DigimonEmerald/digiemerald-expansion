@@ -12,7 +12,7 @@ DOUBLE_BATTLE_TEST("Round allows other battlers which also selected the moves to
         ASSUME(gItemsInfo[ITEM_LAGGING_TAIL].holdEffect == HOLD_EFFECT_LAGGING_TAIL);
         ASSUME(gMovesInfo[MOVE_IRON_HEAD].additionalEffects[0].moveEffect == MOVE_EFFECT_FLINCH);
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX) { Item(ITEM_LAGGING_TAIL); }
     } WHEN {
@@ -36,7 +36,7 @@ DOUBLE_BATTLE_TEST("Round usages beyond the first one has double base power")
     s16 damage[2];
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
@@ -56,7 +56,7 @@ DOUBLE_BATTLE_TEST("Round still preserves the turn order outside of the other Ro
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
@@ -76,7 +76,7 @@ DOUBLE_BATTLE_TEST("Round still preserves the turn order outside of the other Ro
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
@@ -99,7 +99,7 @@ DOUBLE_BATTLE_TEST("Round causes opposing pokemon to use Round immediately")
     GIVEN {
         ASSUME(gItemsInfo[ITEM_LAGGING_TAIL].holdEffect == HOLD_EFFECT_LAGGING_TAIL);
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX) { Item(ITEM_LAGGING_TAIL); }
     } WHEN {

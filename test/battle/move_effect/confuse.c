@@ -68,7 +68,7 @@ DOUBLE_BATTLE_TEST("Teeter Dance can confuse foes and allies")
 <<<<<<< HEAD
         MESSAGE("Foe Exveemon became confused!");
 =======
-        MESSAGE("The opposing Wynaut became confused!");
+        MESSAGE("The opposing Exveemon became confused!");
 >>>>>>> upstream/master
     }
 }

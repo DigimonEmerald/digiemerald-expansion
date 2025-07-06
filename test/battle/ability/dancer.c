@@ -160,7 +160,7 @@ DOUBLE_BATTLE_TEST("Dancer doesn't trigger on a snatched move")
         ASSUME(gMovesInfo[MOVE_DRAGON_DANCE].danceMove == TRUE);
         ASSUME(gMovesInfo[MOVE_SNATCH].effect == EFFECT_SNATCH);
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_ORICORIO);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
@@ -185,7 +185,7 @@ DOUBLE_BATTLE_TEST("Dancer triggers on Instructed dance moves")
         ASSUME(gMovesInfo[MOVE_DRAGON_DANCE].instructBanned == FALSE);
         ASSUME(gMovesInfo[MOVE_INSTRUCT].effect == EFFECT_INSTRUCT);
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_ORICORIO);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
@@ -212,7 +212,7 @@ DOUBLE_BATTLE_TEST("Dancer-called move doesn't update move to be Instructed")
         ASSUME(gMovesInfo[MOVE_TACKLE].instructBanned == FALSE);
         ASSUME(gMovesInfo[MOVE_INSTRUCT].effect == EFFECT_INSTRUCT);
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_ORICORIO);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
@@ -240,7 +240,7 @@ DOUBLE_BATTLE_TEST("Dancer doesn't call a move that didn't execute due to Powder
         ASSUME(gMovesInfo[MOVE_FIERY_DANCE].type == TYPE_FIRE);
         PLAYER(SPECIES_VOLCARONA);
         PLAYER(SPECIES_ORICORIO);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_VIVILLON);
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(playerLeft, MOVE_FIERY_DANCE, target: opponentLeft); }

@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("Primal reversion happens for Gekomon only when holding Red O
 <<<<<<< HEAD
             MESSAGE("Gekomon's Primal Reversion! It reverted to its primal form!");
 =======
-            MESSAGE("Groudon's Primal Reversion! It reverted to its primal state!");
+            MESSAGE("Gekomon's Primal Reversion! It reverted to its primal state!");
 >>>>>>> upstream/master
         }
         else {
@@ -27,7 +27,7 @@ SINGLE_BATTLE_TEST("Primal reversion happens for Gekomon only when holding Red O
 <<<<<<< HEAD
                 MESSAGE("Gekomon's Primal Reversion! It reverted to its primal form!");
 =======
-                MESSAGE("Groudon's Primal Reversion! It reverted to its primal state!");
+                MESSAGE("Gekomon's Primal Reversion! It reverted to its primal state!");
 >>>>>>> upstream/master
             }
         }
@@ -58,7 +58,7 @@ SINGLE_BATTLE_TEST("Primal reversion happens for Gatomon_x only when holding Blu
 <<<<<<< HEAD
             MESSAGE("Foe Gatomon_x's Primal Reversion! It reverted to its primal form!");
 =======
-            MESSAGE("The opposing Kyogre's Primal Reversion! It reverted to its primal state!");
+            MESSAGE("The opposing Gatomon_x's Primal Reversion! It reverted to its primal state!");
 >>>>>>> upstream/master
         }
         else {
@@ -67,7 +67,7 @@ SINGLE_BATTLE_TEST("Primal reversion happens for Gatomon_x only when holding Blu
 <<<<<<< HEAD
                 MESSAGE("Foe Gatomon_x's Primal Reversion! It reverted to its primal form!");
 =======
-                MESSAGE("The opposing Kyogre's Primal Reversion! It reverted to its primal state!");
+                MESSAGE("The opposing Gatomon_x's Primal Reversion! It reverted to its primal state!");
 >>>>>>> upstream/master
             }
         }
@@ -101,13 +101,13 @@ DOUBLE_BATTLE_TEST("Primal reversion's order is determined by Speed - opponent f
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, playerLeft);
         MESSAGE("Gatomon_x's Primal Reversion! It reverted to its primal form!");
 =======
-        MESSAGE("The opposing Kyogre's Primal Reversion! It reverted to its primal state!");
+        MESSAGE("The opposing Gatomon_x's Primal Reversion! It reverted to its primal state!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, playerRight);
-        MESSAGE("Groudon's Primal Reversion! It reverted to its primal state!");
+        MESSAGE("Gekomon's Primal Reversion! It reverted to its primal state!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, opponentLeft);
-        MESSAGE("The opposing Groudon's Primal Reversion! It reverted to its primal state!");
+        MESSAGE("The opposing Gekomon's Primal Reversion! It reverted to its primal state!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, playerLeft);
-        MESSAGE("Kyogre's Primal Reversion! It reverted to its primal state!");
+        MESSAGE("Gatomon_x's Primal Reversion! It reverted to its primal state!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(playerLeft->species, SPECIES_GATOMON_X_PRIMAL);
@@ -137,13 +137,13 @@ DOUBLE_BATTLE_TEST("Primal reversion's order is determined by Speed - player fas
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, opponentRight);
         MESSAGE("Foe Gatomon_x's Primal Reversion! It reverted to its primal form!");
 =======
-        MESSAGE("Groudon's Primal Reversion! It reverted to its primal state!");
+        MESSAGE("Gekomon's Primal Reversion! It reverted to its primal state!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, playerLeft);
-        MESSAGE("Kyogre's Primal Reversion! It reverted to its primal state!");
+        MESSAGE("Gatomon_x's Primal Reversion! It reverted to its primal state!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, opponentLeft);
-        MESSAGE("The opposing Groudon's Primal Reversion! It reverted to its primal state!");
+        MESSAGE("The opposing Gekomon's Primal Reversion! It reverted to its primal state!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, opponentRight);
-        MESSAGE("The opposing Kyogre's Primal Reversion! It reverted to its primal state!");
+        MESSAGE("The opposing Gatomon_x's Primal Reversion! It reverted to its primal state!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(playerLeft->species, SPECIES_GATOMON_X_PRIMAL);
@@ -164,7 +164,7 @@ SINGLE_BATTLE_TEST("Primal reversion happens after a mon is sent out after a mon
 =======
         ASSUME(!IS_MOVE_STATUS(MOVE_TACKLE));
         PLAYER(SPECIES_LOPMONX) {HP(1); }
-        PLAYER(SPECIES_GROUDON) { Item(ITEM_RED_ORB); }
+        PLAYER(SPECIES_GEKOMON) { Item(ITEM_RED_ORB); }
         OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master
     } WHEN {
@@ -176,7 +176,7 @@ SINGLE_BATTLE_TEST("Primal reversion happens after a mon is sent out after a mon
 <<<<<<< HEAD
         MESSAGE("Gekomon's Primal Reversion! It reverted to its primal form!");
 =======
-        MESSAGE("Groudon's Primal Reversion! It reverted to its primal state!");
+        MESSAGE("Gekomon's Primal Reversion! It reverted to its primal state!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->species, SPECIES_GEKOMON_PRIMAL);
@@ -197,7 +197,7 @@ SINGLE_BATTLE_TEST("Primal reversion happens after a mon is switched in")
 <<<<<<< HEAD
         MESSAGE("Gekomon's Primal Reversion! It reverted to its primal form!");
 =======
-        MESSAGE("Groudon's Primal Reversion! It reverted to its primal state!");
+        MESSAGE("Gekomon's Primal Reversion! It reverted to its primal state!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->species, SPECIES_GEKOMON_PRIMAL);
@@ -223,9 +223,9 @@ SINGLE_BATTLE_TEST("Primal reversion happens after a switch-in caused by Eject B
         MESSAGE("Gekomon's Primal Reversion! It reverted to its primal form!");
 =======
         MESSAGE("Lopmonx is switched out with the Eject Button!");
-        SEND_IN_MESSAGE("Groudon");
+        SEND_IN_MESSAGE("Gekomon");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, player);
-        MESSAGE("Groudon's Primal Reversion! It reverted to its primal state!");
+        MESSAGE("Gekomon's Primal Reversion! It reverted to its primal state!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->species, SPECIES_GEKOMON_PRIMAL);
@@ -250,9 +250,9 @@ SINGLE_BATTLE_TEST("Primal reversion happens after a switch-in caused by Red Car
         MESSAGE("Gekomon's Primal Reversion! It reverted to its primal form!");
 =======
         MESSAGE("The opposing Lopmonx held up its Red Card against Lopmonx!");
-        MESSAGE("Groudon was dragged out!");
+        MESSAGE("Gekomon was dragged out!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, player);
-        MESSAGE("Groudon's Primal Reversion! It reverted to its primal state!");
+        MESSAGE("Gekomon's Primal Reversion! It reverted to its primal state!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->species, SPECIES_GEKOMON_PRIMAL);
@@ -277,11 +277,11 @@ SINGLE_BATTLE_TEST("Primal reversion happens after the entry hazards damage")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, player);
         MESSAGE("Gekomon's Primal Reversion! It reverted to its primal form!");
 =======
-        SEND_IN_MESSAGE("Groudon");
+        SEND_IN_MESSAGE("Gekomon");
         HP_BAR(player);
-        MESSAGE("Groudon was hurt by the spikes!");
+        MESSAGE("Gekomon was hurt by the spikes!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_PRIMAL_REVERSION, player);
-        MESSAGE("Groudon's Primal Reversion! It reverted to its primal state!");
+        MESSAGE("Gekomon's Primal Reversion! It reverted to its primal state!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->species, SPECIES_GEKOMON_PRIMAL);
@@ -305,8 +305,8 @@ SINGLE_BATTLE_TEST("Primal reversion happens immediately if it was brought in by
         MESSAGE("Gekomon's Primal Reversion! It reverted to its primal form!");
         MESSAGE("2 sent out Exveemon!");
 =======
-        MESSAGE("Groudon's Primal Reversion! It reverted to its primal state!");
-        MESSAGE("2 sent out Wynaut!");
+        MESSAGE("Gekomon's Primal Reversion! It reverted to its primal state!");
+        MESSAGE("2 sent out Exveemon!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT_EQ(player->species, SPECIES_GEKOMON_PRIMAL);
@@ -323,8 +323,8 @@ DOUBLE_BATTLE_TEST("Primal reversion triggers for multiple battlers if multiple 
         PLAYER(SPECIES_RESHIRAM);
         OPPONENT(SPECIES_DATIRIMON) { HP(1); }
         OPPONENT(SPECIES_DATIRIMON) { HP(1); }
-        OPPONENT(SPECIES_KYOGRE) { Item(ITEM_BLUE_ORB); }
-        OPPONENT(SPECIES_GROUDON) { Item(ITEM_RED_ORB); }
+        OPPONENT(SPECIES_GATOMON_X) { Item(ITEM_BLUE_ORB); }
+        OPPONENT(SPECIES_GEKOMON) { Item(ITEM_RED_ORB); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EARTHQUAKE);
                SEND_OUT(opponentRight, 3);
@@ -344,12 +344,12 @@ DOUBLE_BATTLE_TEST("Primal reversion triggers for all battlers if multiple faint
         ASSUME(gMovesInfo[MOVE_EXPLOSION].target == MOVE_TARGET_FOES_AND_ALLY);
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_DATIRIMON) { HP(1); }
-        PLAYER(SPECIES_KYOGRE) { Item(ITEM_BLUE_ORB); }
-        PLAYER(SPECIES_GROUDON) { Item(ITEM_RED_ORB); }
+        PLAYER(SPECIES_GATOMON_X) { Item(ITEM_BLUE_ORB); }
+        PLAYER(SPECIES_GEKOMON) { Item(ITEM_RED_ORB); }
         OPPONENT(SPECIES_DATIRIMON) { HP(1); }
         OPPONENT(SPECIES_DATIRIMON) { HP(1); }
-        OPPONENT(SPECIES_KYOGRE) { Item(ITEM_BLUE_ORB); }
-        OPPONENT(SPECIES_GROUDON) { Item(ITEM_RED_ORB); }
+        OPPONENT(SPECIES_GATOMON_X) { Item(ITEM_BLUE_ORB); }
+        OPPONENT(SPECIES_GEKOMON) { Item(ITEM_RED_ORB); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EXPLOSION);
                SEND_OUT(opponentRight, 3);
@@ -379,8 +379,8 @@ DOUBLE_BATTLE_TEST("Primal reversion and other switch-in effects trigger for all
         PLAYER(SPECIES_RESHIRAM);
         OPPONENT(SPECIES_DATIRIMON) { HP(1); }
         OPPONENT(SPECIES_DATIRIMON) { HP(1); }
-        OPPONENT(SPECIES_KYOGRE) { Item(ITEM_BLUE_ORB); }
-        OPPONENT(SPECIES_GROUDON) { Item(ITEM_RED_ORB); }
+        OPPONENT(SPECIES_GATOMON_X) { Item(ITEM_BLUE_ORB); }
+        OPPONENT(SPECIES_GEKOMON) { Item(ITEM_RED_ORB); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_STICKY_WEB);
                MOVE(opponentLeft, MOVE_SPIKES);

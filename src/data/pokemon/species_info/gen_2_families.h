@@ -2012,32 +2012,32 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 23,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Azurill,
+        .frontPic = gMonFrontPic_Biostegmon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 40) : MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 15 : 11,
-        .frontAnimFrames = sAnims_Azurill,
+        .frontAnimFrames = sAnims_Biostegmon,
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Azurill,
+        .backPic = gMonBackPic_Biostegmon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 48) : MON_COORDS_SIZE(64, 56),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 10 : 6,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Azurill,
-        .shinyPalette = gMonShinyPalette_Azurill,
-        .iconSprite = gMonIcon_Azurill,
+        .palette = gMonPalette_Biostegmon,
+        .shinyPalette = gMonShinyPalette_Biostegmon,
+        .iconSprite = gMonIcon_Biostegmon,
         .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 2 : 0,
         SHADOW(-4, 3, SHADOW_SIZE_S)
-        FOOTPRINT(Azurill)
+        FOOTPRINT(Biostegmon)
         OVERWORLD(
-            sPicTable_Azurill,
+            sPicTable_Biostegmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            gOverworldPalette_Azurill,
-            gShinyOverworldPalette_Azurill
+            gOverworldPalette_Biostegmon,
+            gShinyOverworldPalette_Biostegmon
         )
-        .levelUpLearnset = sAzurillLevelUpLearnset,
-        .teachableLearnset = sAzurillTeachableLearnset,
-        .eggMoveLearnset = sAzurillEggMoveLearnset,
+        .levelUpLearnset = sBiostegmonLevelUpLearnset,
+        .teachableLearnset = sBiostegmonTeachableLearnset,
+        .eggMoveLearnset = sBiostegmonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_JAZAMON}),
     },
 #endif //P_GEN_3_CROSS_EVOS
@@ -3624,13 +3624,13 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Wynaut,
+        .frontPic = gMonFrontPic_Exveemon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 40) : MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 12,
         .frontAnimFrames = sAnims_Exveemon,
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
         .frontAnimDelay = 15,
-        .backPic = gMonBackPic_Wynaut,
+        .backPic = gMonBackPic_Exveemon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(48, 48),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 7 : 11,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
@@ -3639,14 +3639,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .iconSprite = gMonIcon_Exveemon,
         .iconPalIndex = 0,
         SHADOW(-1, 2, SHADOW_SIZE_S)
-        FOOTPRINT(Wynaut)
+        FOOTPRINT(Exveemon)
         OVERWORLD(
-            sPicTable_Wynaut,
+            sPicTable_Exveemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
-            gOverworldPalette_Wynaut,
-            gShinyOverworldPalette_Wynaut
+            gOverworldPalette_Exveemon,
+            gShinyOverworldPalette_Exveemon
         )
         .tmIlliterate = TRUE,
         .levelUpLearnset = sExveemonLevelUpLearnset,

@@ -21,8 +21,8 @@ DOUBLE_BATTLE_TEST("Doodle gives the target's ability to user and ally")
         MESSAGE("Exveemon copied Foe Syakomon_x's Blaze!");
         MESSAGE("Exveemon copied Foe Syakomon_x's Blaze!");
 =======
-        MESSAGE("Wynaut copied the opposing Syakomon_x's Ability!");
-        MESSAGE("Wynaut copied the opposing Syakomon_x's Ability!");
+        MESSAGE("Exveemon copied the opposing Syakomon_x's Ability!");
+        MESSAGE("Exveemon copied the opposing Syakomon_x's Ability!");
 >>>>>>> upstream/master
     } THEN {
         EXPECT(playerLeft->ability == ABILITY_BLAZE);
@@ -46,8 +46,8 @@ DOUBLE_BATTLE_TEST("Doodle can't copy a banned ability")
             MESSAGE("Exveemon copied Foe Great Tusk's Protosynthesis!");
 =======
             ANIMATION(ANIM_TYPE_MOVE, MOVE_DOODLE, playerLeft);
-            MESSAGE("Wynaut copied the opposing Great Tusk's Ability!");
-            MESSAGE("Wynaut copied the opposing Great Tusk's Ability!");
+            MESSAGE("Exveemon copied the opposing Great Tusk's Ability!");
+            MESSAGE("Exveemon copied the opposing Great Tusk's Ability!");
 >>>>>>> upstream/master
         }
     } THEN {

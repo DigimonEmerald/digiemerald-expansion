@@ -17223,10 +17223,10 @@ void BS_TryActivateGulpMissile(void)
                 TryBattleFormChange(gBattlerTarget, FORM_CHANGE_HIT_BY_MOVE);
                 gBattlescriptCurrInstr = BattleScript_GulpMissileGorging;
                 return;
-            case SPECIES_CRAMORANT_BURAIMONG:
+            case SPECIES_CRAMORANT_GULPING:
                 BattleScriptPushCursor();
                 TryBattleFormChange(gBattlerTarget, FORM_CHANGE_HIT_BY_MOVE);
-                gBattlescriptCurrInstr = BattleScript_GulpMissileBuraimong;
+                gBattlescriptCurrInstr = BattleScript_GulpMissileGulping;
                 return;
         }
     }

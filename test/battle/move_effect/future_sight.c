@@ -35,7 +35,7 @@ SINGLE_BATTLE_TEST("Future Sight uses Sp. Atk stat of the original user without 
 <<<<<<< HEAD
         MESSAGE("Foe Gargoylmon took the Future Sight attack!");
 =======
-        MESSAGE("The opposing Regice took the Future Sight attack!");
+        MESSAGE("The opposing Gargoylmon took the Future Sight attack!");
 >>>>>>> upstream/master
         HP_BAR(opponent, captureDamage: &futureSightDmg);
     } THEN {
@@ -65,7 +65,7 @@ SINGLE_BATTLE_TEST("Future Sight is not boosted by Life Orb is original user if 
 <<<<<<< HEAD
         MESSAGE("Foe Gargoylmon took the Future Sight attack!");
 =======
-        MESSAGE("The opposing Regice took the Future Sight attack!");
+        MESSAGE("The opposing Gargoylmon took the Future Sight attack!");
 >>>>>>> upstream/master
         HP_BAR(opponent, captureDamage: &futureSightDmg);
         NOT MESSAGE("Pichimon was hurt by its Life Orb!");
@@ -148,8 +148,8 @@ SINGLE_BATTLE_TEST("Future Sight will miss timing if target faints before it is 
         NOT MESSAGE("Foe Exveemon took the Future Sight attack!");
 =======
         MESSAGE("The opposing Lopmonx fainted!");
-        MESSAGE("2 sent out Wynaut!");
-        NOT MESSAGE("The opposing Wynaut took the Future Sight attack!");
+        MESSAGE("2 sent out Exveemon!");
+        NOT MESSAGE("The opposing Exveemon took the Future Sight attack!");
 >>>>>>> upstream/master
     }
 }
@@ -175,8 +175,8 @@ SINGLE_BATTLE_TEST("Future Sight will miss timing if target faints by residual d
         NOT MESSAGE("Foe Exveemon took the Future Sight attack!");
 =======
         MESSAGE("The opposing Lopmonx fainted!");
-        MESSAGE("2 sent out Wynaut!");
-        NOT MESSAGE("The opposing Wynaut took the Future Sight attack!");
+        MESSAGE("2 sent out Exveemon!");
+        NOT MESSAGE("The opposing Exveemon took the Future Sight attack!");
 >>>>>>> upstream/master
     }
 }

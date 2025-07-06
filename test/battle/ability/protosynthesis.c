@@ -104,7 +104,7 @@ SINGLE_BATTLE_TEST("Protosynthesis boosts Attack 1st in case of a stat tie")
 {
     GIVEN {
         PLAYER(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); Attack(5); Defense(5); SpAttack(5); SpDefense(5); Speed(5); }
-        OPPONENT(SPECIES_GROUDON) { Ability(ABILITY_DROUGHT); Speed(5); }
+        OPPONENT(SPECIES_GEKOMON) { Ability(ABILITY_DROUGHT); Speed(5); }
     } WHEN {
         TURN { }
     } SCENE {
@@ -118,7 +118,7 @@ SINGLE_BATTLE_TEST("Protosynthesis boosts Defense 2nd in case of a stat tie")
 {
     GIVEN {
         PLAYER(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); Attack(4); Defense(5); SpAttack(5); SpDefense(5); Speed(5); }
-        OPPONENT(SPECIES_GROUDON) { Ability(ABILITY_DROUGHT); Speed(5); }
+        OPPONENT(SPECIES_GEKOMON) { Ability(ABILITY_DROUGHT); Speed(5); }
     } WHEN {
         TURN { }
     } SCENE {
@@ -132,7 +132,7 @@ SINGLE_BATTLE_TEST("Protosynthesis boosts Special Attack 3rd in case of a stat t
 {
     GIVEN {
         PLAYER(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); Attack(4); Defense(4); SpAttack(5); SpDefense(5); Speed(5); }
-        OPPONENT(SPECIES_GROUDON) { Ability(ABILITY_DROUGHT); Speed(5); }
+        OPPONENT(SPECIES_GEKOMON) { Ability(ABILITY_DROUGHT); Speed(5); }
     } WHEN {
         TURN { }
     } SCENE {
@@ -146,7 +146,7 @@ SINGLE_BATTLE_TEST("Protosynthesis boosts Special Defense 4th in case of a stat 
 {
     GIVEN {
         PLAYER(SPECIES_GREAT_TUSK) { Ability(ABILITY_PROTOSYNTHESIS); Attack(4); Defense(4); SpAttack(4); SpDefense(5); Speed(5); }
-        OPPONENT(SPECIES_GROUDON) { Ability(ABILITY_DROUGHT); Speed(5); }
+        OPPONENT(SPECIES_GEKOMON) { Ability(ABILITY_DROUGHT); Speed(5); }
     } WHEN {
         TURN { }
     } SCENE {
@@ -208,7 +208,7 @@ SINGLE_BATTLE_TEST("Protosynthesis activates even if the Pokémon is holding an 
 SINGLE_BATTLE_TEST("Protosynthesis doesn't activate if Cloud Nine/Air Lock is on the field")
 {
     u32 species, ability;
-    PARAMETRIZE { species = SPECIES_RAYQUAZA; ability = ABILITY_AIR_LOCK; }
+    PARAMETRIZE { species = SPECIES_GEOGREYMON; ability = ABILITY_AIR_LOCK; }
     PARAMETRIZE { species = SPECIES_DEMMERAMON; ability = ABILITY_CLOUD_NINE; }
 
     GIVEN {

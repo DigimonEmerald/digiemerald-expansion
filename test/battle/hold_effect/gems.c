@@ -98,7 +98,7 @@ SINGLE_BATTLE_TEST("Gem is consumed if the move type is changed")
 <<<<<<< HEAD
         MESSAGE("Normal Gem strengthened Blgaogamon's power!");
 =======
-        MESSAGE("The Normal Gem strengthened Delcatty's power!");
+        MESSAGE("The Normal Gem strengthened Blgaogamon's power!");
 >>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FEINT_ATTACK, player);
     }

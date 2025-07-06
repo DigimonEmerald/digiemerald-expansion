@@ -10,7 +10,7 @@ SINGLE_BATTLE_TEST("Spectral Thief steals opponents boost before attacking", s16
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SWORDS_DANCE].effect == EFFECT_ATTACK_UP_2);
         ASSUME(gMovesInfo[MOVE_SPECTRAL_THIEF].effect == EFFECT_SPECTRAL_THIEF);
-        PLAYER(SPECIES_REGIROCK);
+        PLAYER(SPECIES_GARGOMON);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         if (move == MOVE_CELEBRATE)

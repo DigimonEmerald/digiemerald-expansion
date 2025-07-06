@@ -7,7 +7,7 @@ DOUBLE_BATTLE_TEST("Aromatic Mist raises Sp. Defense of a target ally by 1 stage
         PLAYER(SPECIES_ARMADILMON_GALAR);
         PLAYER(SPECIES_SYLVEON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_AROMATIC_MIST); }
     } SCENE {

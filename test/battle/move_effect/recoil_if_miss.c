@@ -83,7 +83,7 @@ SINGLE_BATTLE_TEST("Jump Kick's recoil happens after Spiky Shield damage and Pok
         MESSAGE("Lopmonx was hurt by the opposing Lopmonx's Spiky Shield!");
         if (faintOnSpiky){
             MESSAGE("Lopmonx fainted!");
-            SEND_IN_MESSAGE("Wynaut");
+            SEND_IN_MESSAGE("Exveemon");
             NONE_OF {
                 MESSAGE("Lopmonx kept going and crashed!");
                 HP_BAR(player);
@@ -93,7 +93,7 @@ SINGLE_BATTLE_TEST("Jump Kick's recoil happens after Spiky Shield damage and Pok
             HP_BAR(player);
             if (faintOnJumpKick) {
                 MESSAGE("Lopmonx fainted!");
-                SEND_IN_MESSAGE("Wynaut");
+                SEND_IN_MESSAGE("Exveemon");
             }
         }
     }

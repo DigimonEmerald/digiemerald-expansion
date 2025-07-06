@@ -1743,7 +1743,7 @@ const u32 gPokeblockGold_Pal[] = INCBIN_U32("graphics/pokeblock/gold.gbapal.lz")
 const u32 gPokeblockFeedBg_Tilemap[] = INCBIN_U32("graphics/pokeblock/feeding_bg.bin.lz");
 
 #include "data/graphics/berries.h"
-#include "data/graphics/geogreymon_scene.h"
+#include "data/graphics/rayquaza_scene.h"
 #include "data/graphics/items.h"
 #include "data/graphics/decorations.h"
 

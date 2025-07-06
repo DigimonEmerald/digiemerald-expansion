@@ -110,7 +110,7 @@ DOUBLE_BATTLE_TEST("Download raises Sp.Attack if enemies have lower total Sp. De
     PARAMETRIZE { ability = ABILITY_DOWNLOAD; }
     GIVEN {
         PLAYER(SPECIES_DOKUNEMON) { Ability(ability); SpAttack(100); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX) { Defense(200); SpDefense(100); }
         OPPONENT(SPECIES_LOPMONX) { Defense(100); SpDefense(150); }
     } WHEN {

@@ -121,7 +121,7 @@ DOUBLE_BATTLE_TEST("Corrosive Gas destroys foes and ally's items if they have on
 <<<<<<< HEAD
         MESSAGE("Exveemon used CorrosiveGas!");
 =======
-        MESSAGE("Wynaut used Corrosive Gas!");
+        MESSAGE("Exveemon used Corrosive Gas!");
 >>>>>>> upstream/master
         if (itemPlayerLeft == ITEM_CHERI_BERRY) {
             MESSAGE("Exveemon corroded Lopmonx's Cheri Berry!");
@@ -142,12 +142,12 @@ DOUBLE_BATTLE_TEST("Corrosive Gas destroys foes and ally's items if they have on
             MESSAGE("It won't have any effect on Lopmonx!");
         }
         if (itemOpponentLeft == ITEM_ORAN_BERRY) {
-            MESSAGE("Wynaut corroded the opposing Hopmon's Oran Berry!");
+            MESSAGE("Exveemon corroded the opposing Hopmon's Oran Berry!");
         } else {
             MESSAGE("It won't have any effect on the opposing Hopmon!");
         }
         if (itemOpponentRight == ITEM_CHESTO_BERRY) {
-            MESSAGE("Wynaut corroded the opposing Kakkinmon's Chesto Berry!");
+            MESSAGE("Exveemon corroded the opposing Kakkinmon's Chesto Berry!");
         } else {
             MESSAGE("It won't have any effect on the opposing Kakkinmon!");
 >>>>>>> upstream/master

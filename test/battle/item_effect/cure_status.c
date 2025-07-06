@@ -365,7 +365,7 @@ SINGLE_BATTLE_TEST("Jubilife Muffin heals a battler from any primary status")
     GIVEN {
         ASSUME(gItemsInfo[ITEM_JUBILIFE_MUFFIN].battleUsage == EFFECT_ITEM_CURE_STATUS);
         PLAYER(SPECIES_LOPMONX) { Status1(status); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { USE_ITEM(player, ITEM_JUBILIFE_MUFFIN, partyIndex: 0); }
     } SCENE {

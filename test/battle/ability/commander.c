@@ -178,9 +178,9 @@ DOUBLE_BATTLE_TEST("Commander Tatsugiri is not damaged by a double target move i
         ASSUME(gMovesInfo[MOVE_SURF].target == MOVE_TARGET_FOES_AND_ALLY);
         PLAYER(SPECIES_DONDOZO) { HP(1); };
         PLAYER(SPECIES_TATSUGIRI) { Ability(ABILITY_COMMANDER); }
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_SURF); SEND_OUT(playerLeft, 2); }
     } SCENE {
@@ -200,7 +200,7 @@ DOUBLE_BATTLE_TEST("Commander Tatsugiri takes no damage from multi-target damagi
         PLAYER(SPECIES_TATSUGIRI) { Ability(ABILITY_COMMANDER); }
         PLAYER(SPECIES_DONDOZO);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_SURF); MOVE(opponentRight, MOVE_SURF); SWITCH(playerLeft, 2); }
     } SCENE {
@@ -260,7 +260,7 @@ DOUBLE_BATTLE_TEST("Commander Tatsugiri is still affected by Perish Song while c
         PLAYER(SPECIES_DONDOZO);
         PLAYER(SPECIES_TATSUGIRI) { Ability(ABILITY_COMMANDER); }
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_PERISH_SONG); }
         TURN {}
@@ -279,8 +279,8 @@ DOUBLE_BATTLE_TEST("Commander Tatsugiri is still affected by Perish Song while c
             MESSAGE("Tatsugiri's perish count fell to 0!");
             MESSAGE("Tatsugiri fainted!");
         }
-        MESSAGE("The opposing Wynaut's perish count fell to 0!");
-        MESSAGE("The opposing Wynaut fainted!");
+        MESSAGE("The opposing Exveemon's perish count fell to 0!");
+        MESSAGE("The opposing Exveemon fainted!");
     }
 }
 
@@ -385,7 +385,7 @@ DOUBLE_BATTLE_TEST("Commander Tatsugiri does not get hit by Dragon Darts when a 
         PLAYER(SPECIES_DONDOZO) { HP(1); }
         PLAYER(SPECIES_TATSUGIRI) { Ability(ABILITY_COMMANDER); }
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { SWITCH(playerLeft, 2); MOVE(opponentRight, MOVE_DRAGON_DARTS, target: playerRight); SEND_OUT(playerRight, 0); }
     } SCENE {
@@ -406,7 +406,7 @@ DOUBLE_BATTLE_TEST("Commander Tatsugiri does not get hit by Dragon Darts when co
         PLAYER(SPECIES_TATSUGIRI) { Ability(ABILITY_COMMANDER); }
         PLAYER(SPECIES_DONDOZO);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         if (targetPlayerRight == TRUE)
             TURN { MOVE(opponentRight, MOVE_DRAGON_DARTS, target: playerRight); }

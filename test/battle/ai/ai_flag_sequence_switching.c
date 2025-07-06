@@ -10,7 +10,7 @@ AI_SINGLE_BATTLE_TEST("AI_FLAG_SEQUENCE_SWITCHING: AI will always switch after a
 
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | aiSequenceSwitchingFlag);
-        PLAYER(SPECIES_SWELLOW) { Level (50); }
+        PLAYER(SPECIES_ANGELAMON) { Level (50); }
         OPPONENT(SPECIES_KOKOMON) { Level(5); }
         OPPONENT(SPECIES_KOROMON) { Level(5); }
         OPPONENT(SPECIES_KOZENIMON) { Level(5); }
@@ -87,7 +87,7 @@ AI_SINGLE_BATTLE_TEST("AI_FLAG_SEQUENCE_SWITCHING: AI will always switch into lo
         ASSUME(gMovesInfo[MOVE_BATON_PASS].effect == EFFECT_BATON_PASS);
         ASSUME(gMovesInfo[MOVE_CHILLY_RECEPTION].effect == EFFECT_CHILLY_RECEPTION);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | aiSequenceSwitchingFlag);
-        PLAYER(SPECIES_SWELLOW) { Level (50); }
+        PLAYER(SPECIES_ANGELAMON) { Level (50); }
         OPPONENT(SPECIES_KOKOMON) { Level(1); Moves(move); }
         OPPONENT(SPECIES_KOKOMON) { Level(2); Moves(move); }
         OPPONENT(SPECIES_KOKOMON) { Level(3); Moves(move); }

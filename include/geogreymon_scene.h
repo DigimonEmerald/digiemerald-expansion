@@ -1,6 +1,6 @@
-#ifndef GUARD_GEOGREYMON_SCENE_H
-#define GUARD_GEOGREYMON_SCENE_H
+#ifndef GUARD_RAYQUAZA_SCENE_H
+#define GUARD_RAYQUAZA_SCENE_H
 
 void DoGeogreymonScene(u8 animId, bool8 endEarly, void (*callback)(void));
 
-#endif // GUARD_GEOGREYMON_SCENE_H
+#endif // GUARD_RAYQUAZA_SCENE_H

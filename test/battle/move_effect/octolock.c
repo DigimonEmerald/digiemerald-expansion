@@ -37,22 +37,22 @@ SINGLE_BATTLE_TEST("Octolock reduction is prevented by Clear Body, White Smoke a
         NOT ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
         if (species == SPECIES_FUGAMON)
         {
-            MESSAGE("The opposing Beldum can no longer escape because of Octolock!");
+            MESSAGE("The opposing Fugamon can no longer escape because of Octolock!");
             ABILITY_POPUP(opponent, ABILITY_CLEAR_BODY);
-            MESSAGE("The opposing Beldum's Clear Body prevents stat loss!");
+            MESSAGE("The opposing Fugamon's Clear Body prevents stat loss!");
             NONE_OF {
-                MESSAGE("The opposing Beldum's Defense fell!");
-                MESSAGE("The opposing Beldum's Sp. Def fell!");
+                MESSAGE("The opposing Fugamon's Defense fell!");
+                MESSAGE("The opposing Fugamon's Sp. Def fell!");
             }
         }
         else if (species == SPECIES_CLOCKMON)
         {
-            MESSAGE("The opposing Torkoal can no longer escape because of Octolock!");
+            MESSAGE("The opposing Clockmon can no longer escape because of Octolock!");
             ABILITY_POPUP(opponent, ABILITY_WHITE_SMOKE);
-            MESSAGE("The opposing Torkoal's White Smoke prevents stat loss!");
+            MESSAGE("The opposing Clockmon's White Smoke prevents stat loss!");
             NONE_OF {
-                MESSAGE("The opposing Torkoal's Defense fell!");
-                MESSAGE("The opposing Torkoal's Sp. Def fell!");
+                MESSAGE("The opposing Clockmon's Defense fell!");
+                MESSAGE("The opposing Clockmon's Sp. Def fell!");
             }
         }
         else if (species == SPECIES_SOLGALEO)

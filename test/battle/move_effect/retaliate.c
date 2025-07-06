@@ -10,7 +10,7 @@ SINGLE_BATTLE_TEST("Retaliate doubles in base power the turn after an ally faint
 {
     s16 damage[2];
     GIVEN {
-        PLAYER(SPECIES_WYNAUT) { HP(1); }
+        PLAYER(SPECIES_EXVEEMON) { HP(1); }
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
@@ -30,7 +30,7 @@ SINGLE_BATTLE_TEST("Retaliate doubles in base power the turn after an ally faint
     s16 damage[2];
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT) { HP(1); }
+        OPPONENT(SPECIES_EXVEEMON) { HP(1); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); SEND_OUT(opponent, 1); }
@@ -74,7 +74,7 @@ DOUBLE_BATTLE_TEST("Retaliate works with passive damage")
         ASSUME(gMovesInfo[MOVE_LEECH_SEED].effect == EFFECT_LEECH_SEED);
         ASSUME(gMovesInfo[MOVE_MAGMA_STORM].additionalEffects[0].moveEffect == MOVE_EFFECT_WRAP);
         ASSUME(gMovesInfo[MOVE_FLAME_BURST].additionalEffects[0].moveEffect == MOVE_EFFECT_FLAME_BURST);
-        PLAYER(SPECIES_WYNAUT) { Ability(ABILITY_SHADOW_TAG); HP(18); }
+        PLAYER(SPECIES_EXVEEMON) { Ability(ABILITY_SHADOW_TAG); HP(18); }
         PLAYER(SPECIES_LOPMONX) { Ability(ABILITY_SHADOW_TAG); }
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PYONMON) { Ability(ABILITY_MAGIC_GUARD); Level(1); }
@@ -85,7 +85,7 @@ DOUBLE_BATTLE_TEST("Retaliate works with passive damage")
         TURN { MOVE(opponentRight, MOVE_CELEBRATE, target: moveTarget); MOVE(playerLeft, MOVE_RETALIATE, target: opponentRight); }
     } SCENE {
         if (move != MOVE_FLAME_BURST)
-            MESSAGE("Wynaut used Celebrate!");
+            MESSAGE("Exveemon used Celebrate!");
         HP_BAR(opponentRight, captureDamage: &damage[0]);
         HP_BAR(opponentRight, captureDamage: &damage[1]);
     } THEN {
@@ -98,7 +98,7 @@ SINGLE_BATTLE_TEST("Retaliate works with Perish Song")
     s16 damage[2];
     GIVEN {
         ASSUME(gMovesInfo[MOVE_PERISH_SONG].effect == EFFECT_PERISH_SONG);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_KOMMO_O) { Ability(ABILITY_SOUNDPROOF); }
     } WHEN {
@@ -121,7 +121,7 @@ SINGLE_BATTLE_TEST("Retaliate works with self-inflicted fainting")
     s16 damage[2];
     GIVEN {
         ASSUME(gMovesInfo[MOVE_HEALING_WISH].effect == EFFECT_HEALING_WISH);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {

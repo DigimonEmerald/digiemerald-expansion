@@ -16,7 +16,7 @@ SINGLE_BATTLE_TEST("Misty Terrain protects grounded battlers from non-volatile s
         MESSAGE("Lopmonx surrounds itself with a protective mist!");
 =======
         MESSAGE("Lopmonx used Misty Terrain!");
-        MESSAGE("The opposing Claydol used Toxic!");
+        MESSAGE("The opposing Diatrymon used Toxic!");
         MESSAGE("Lopmonx surrounds itself with a protective mist!");
 >>>>>>> upstream/master:test/battle/move_effect/misty_terrain.c
         NOT { STATUS_ICON(opponent, badPoison: TRUE); }

@@ -230,11 +230,11 @@ SINGLE_BATTLE_TEST("Knock Off does knock off Mega Stones from Pokemon that don't
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_ABSOLITE); }
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_EXERMONITE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
-        MESSAGE("Lopmonx knocked off the opposing Lopmonx's Absolite!");
+        MESSAGE("Lopmonx knocked off the opposing Lopmonx's Exermonite!");
     }
 }
 
@@ -242,11 +242,11 @@ SINGLE_BATTLE_TEST("Knock Off doesn't knock off Mega Stones from Pokemon that ac
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_ABSOL) { Item(ITEM_ABSOLITE); }
+        OPPONENT(SPECIES_EXERMON) { Item(ITEM_EXERMONITE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
-        NOT MESSAGE("Lopmonx knocked off the opposing Absol's Absolite!");
+        NOT MESSAGE("Lopmonx knocked off the opposing Exermon's Exermonite!");
     }
 }
 
@@ -266,11 +266,11 @@ SINGLE_BATTLE_TEST("Knock Off doesn't knock off Orbs for Primal Reversion from P
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_GROUDON) { Item(ITEM_RED_ORB); }
+        OPPONENT(SPECIES_GEKOMON) { Item(ITEM_RED_ORB); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
-        NOT MESSAGE("Lopmonx knocked off the opposing Groudon's Red Orb!");
+        NOT MESSAGE("Lopmonx knocked off the opposing Gekomon's Red Orb!");
     }
 }
 

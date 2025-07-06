@@ -275,7 +275,7 @@ SINGLE_BATTLE_TEST("Baton Pass passes Embargo's effect")
 <<<<<<< HEAD
         MESSAGE("Go! Exveemon!");
 =======
-        SEND_IN_MESSAGE("Wynaut");
+        SEND_IN_MESSAGE("Exveemon");
 >>>>>>> upstream/master
         // Turn 3
         MESSAGE("Exveemon used Fling!");
@@ -490,10 +490,10 @@ SINGLE_BATTLE_TEST("Embargo doesn't prevent Primal Reversion")
         // Turn 3
         MESSAGE("Foe Gekomon used Fling!");
 =======
-        MESSAGE("The opposing Groudon's Primal Reversion! It reverted to its primal state!");
+        MESSAGE("The opposing Gekomon's Primal Reversion! It reverted to its primal state!");
         ABILITY_POPUP(opponent);
         // Turn 3
-        MESSAGE("The opposing Groudon used Fling!");
+        MESSAGE("The opposing Gekomon used Fling!");
 >>>>>>> upstream/master
         MESSAGE("But it failed!");
     }

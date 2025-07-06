@@ -49,7 +49,7 @@ DOUBLE_BATTLE_TEST("After You does nothing if the target has already moved")
 <<<<<<< HEAD
         MESSAGE("Foe Exveemon used After You!");
 =======
-        MESSAGE("The opposing Wynaut used After You!");
+        MESSAGE("The opposing Exveemon used After You!");
 >>>>>>> upstream/master
         MESSAGE("But it failed!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerRight);
@@ -60,7 +60,7 @@ DOUBLE_BATTLE_TEST("After You calculates correct turn order if only one pokemon 
 {
     GIVEN {
         PLAYER(SPECIES_GRENINJA) { Speed(120); }
-        PLAYER(SPECIES_REGIROCK) { Speed(10); }
+        PLAYER(SPECIES_GARGOMON) { Speed(10); }
         OPPONENT(SPECIES_LEAFMON) { Speed(100); }
         OPPONENT(SPECIES_ESPIMON) { Speed(60); }
     } WHEN {
@@ -76,14 +76,14 @@ DOUBLE_BATTLE_TEST("After You calculates correct turn order if only one pokemon 
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_AFTER_YOU, playerLeft);
-        MESSAGE("Regirock took the kind offer!");
+        MESSAGE("Gargomon took the kind offer!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STONE_EDGE, playerRight);
         HP_BAR(opponentLeft);
         MESSAGE("The opposing Leafmon fainted!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentRight);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_AFTER_YOU, playerLeft);
-        MESSAGE("Regirock took the kind offer!");
+        MESSAGE("Gargomon took the kind offer!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STONE_EDGE, playerRight);
         HP_BAR(opponentRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentRight);
@@ -95,9 +95,9 @@ DOUBLE_BATTLE_TEST("After You doesn't fail if the turn order remains the same af
     GIVEN {
         ASSUME(B_AFTER_YOU_TURN_ORDER >= GEN_8);
         PLAYER(SPECIES_LOPMONX) { Speed(4); }
-        PLAYER(SPECIES_WYNAUT) { Speed(1); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(1); }
         OPPONENT(SPECIES_LOPMONX) { Speed(2); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(3); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(3); }
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_CELEBRATE);
@@ -118,9 +118,9 @@ DOUBLE_BATTLE_TEST("After You ignores the effects of Quash")
     GIVEN {
         ASSUME(gMovesInfo[MOVE_QUASH].effect == EFFECT_QUASH);
         PLAYER(SPECIES_LOPMONX) { Speed(4); }
-        PLAYER(SPECIES_WYNAUT) { Speed(1); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(1); }
         OPPONENT(SPECIES_LOPMONX) { Speed(2); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(3); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(3); }
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_QUASH, target: opponentLeft);

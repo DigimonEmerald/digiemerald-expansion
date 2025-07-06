@@ -21,7 +21,7 @@ SINGLE_BATTLE_TEST("Enigma Berry recovers 25% of HP if hit by super effective mo
 <<<<<<< HEAD
         MESSAGE("Exveemon's Enigma Berry restored health!");
 =======
-        MESSAGE("Wynaut restored its health using its Enigma Berry!");
+        MESSAGE("Exveemon restored its health using its Enigma Berry!");
 >>>>>>> upstream/master
         HP_BAR(player, damage: -maxHP / 4);
     }
@@ -65,7 +65,7 @@ SINGLE_BATTLE_TEST("Enigma Berry does nothing if Heal Block applies")
 <<<<<<< HEAD
             MESSAGE("Exveemon's Enigma Berry restored health!");
 =======
-            MESSAGE("Wynaut restored its health using its Enigma Berry!");
+            MESSAGE("Exveemon restored its health using its Enigma Berry!");
 >>>>>>> upstream/master
         }
     }
@@ -75,9 +75,9 @@ DOUBLE_BATTLE_TEST("Enigma Berry doesn't trigger if partner was hit")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT) { Item(ITEM_ENIGMA_BERRY); }
+        OPPONENT(SPECIES_EXVEEMON) { Item(ITEM_ENIGMA_BERRY); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft); }
     } SCENE {

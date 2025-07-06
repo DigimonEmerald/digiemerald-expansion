@@ -17,7 +17,7 @@ SINGLE_BATTLE_TEST("Revival Blessing revives a chosen fainted party member for t
         TURN { MOVE(player, MOVE_REVIVAL_BLESSING, partyIndex:2); }
     } SCENE {
         MESSAGE("Lopmonx used Revival Blessing!");
-        MESSAGE("Wynaut was revived and is ready to fight again!");
+        MESSAGE("Exveemon was revived and is ready to fight again!");
     }
 }
 
@@ -63,9 +63,9 @@ DOUBLE_BATTLE_TEST("Revival Blessing cannot revive a partner's party member")
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WYNAUT) { HP(0); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_EXVEEMON) { HP(0); }
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(user, MOVE_REVIVAL_BLESSING, partyIndex:4); }
     } SCENE {
@@ -73,8 +73,8 @@ DOUBLE_BATTLE_TEST("Revival Blessing cannot revive a partner's party member")
             MESSAGE("The opposing Lopmonx used Revival Blessing!");
             MESSAGE("But it failed!");
         } else {
-            MESSAGE("The opposing Wynaut used Revival Blessing!");
-            MESSAGE("Wynaut was revived and is ready to fight again!");
+            MESSAGE("The opposing Exveemon used Revival Blessing!");
+            MESSAGE("Exveemon was revived and is ready to fight again!");
         }
     }
 }
@@ -83,25 +83,25 @@ DOUBLE_BATTLE_TEST("Revival Blessing doesn't prevent revived battlers from losin
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT) { HP(1); }
+        OPPONENT(SPECIES_EXVEEMON) { HP(1); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentRight);
                MOVE(opponentLeft, MOVE_REVIVAL_BLESSING, partyIndex: 1); }
     } SCENE {
         MESSAGE("Lopmonx used Tackle!");
-        MESSAGE("The opposing Wynaut fainted!");
+        MESSAGE("The opposing Exveemon fainted!");
         MESSAGE("The opposing Lopmonx used Revival Blessing!");
-        MESSAGE("Wynaut was revived and is ready to fight again!");
-        NOT { MESSAGE("Wynaut used Celebrate!"); }
+        MESSAGE("Exveemon was revived and is ready to fight again!");
+        NOT { MESSAGE("Exveemon used Celebrate!"); }
     }
 }
 
 DOUBLE_BATTLE_TEST("Revival Blessing correctly updates battler absent flags")
 {
     GIVEN {
-        PLAYER(SPECIES_SALAMENCE) { Level(40); }
+        PLAYER(SPECIES_FROGMON) { Level(40); }
         PLAYER(SPECIES_LEAFMON) { Level(40); }
         OPPONENT(SPECIES_MONIMON) { Level(5); Ability(ABILITY_ROCK_HEAD); }
         OPPONENT(SPECIES_STARLY) { Level(5); }
@@ -111,7 +111,7 @@ DOUBLE_BATTLE_TEST("Revival Blessing correctly updates battler absent flags")
         TURN { MOVE(playerLeft, MOVE_EARTHQUAKE); }
     } SCENE {
         // Turn 1
-        MESSAGE("Salamence used Earthquake!");
+        MESSAGE("Frogmon used Earthquake!");
         HP_BAR(opponentLeft);
         MESSAGE("The opposing Monimon fainted!");
         MESSAGE("It doesn't affect Leafmon…");
@@ -119,7 +119,7 @@ DOUBLE_BATTLE_TEST("Revival Blessing correctly updates battler absent flags")
         MESSAGE("The opposing Starly used Revival Blessing!");
         MESSAGE("Monimon was revived and is ready to fight again!"); // Should have prefix but it doesn't currently.
         // Turn 2
-        MESSAGE("Salamence used Earthquake!");
+        MESSAGE("Frogmon used Earthquake!");
         HP_BAR(opponentLeft);
         MESSAGE("The opposing Monimon fainted!");
         MESSAGE("It doesn't affect Leafmon…");

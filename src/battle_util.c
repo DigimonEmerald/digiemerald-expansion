@@ -6069,10 +6069,10 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                         gBattlescriptCurrInstr = BattleScript_GulpMissileGorging;
                         effect++;
                         break;
-                    case SPECIES_CRAMORANT_BURAIMONG:
+                    case SPECIES_CRAMORANT_GULPING:
                         TryBattleFormChange(battler, FORM_CHANGE_HIT_BY_MOVE);
                         BattleScriptPushCursor();
-                        gBattlescriptCurrInstr = BattleScript_GulpMissileBuraimong;
+                        gBattlescriptCurrInstr = BattleScript_GulpMissileGulping;
                         effect++;
                         break;
                 }

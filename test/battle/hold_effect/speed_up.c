@@ -74,16 +74,16 @@ DOUBLE_BATTLE_TEST("Salac Berry does not miss timing miss timing")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT) { MaxHP(100); HP(26); Item(ITEM_SALAC_BERRY); }
+        OPPONENT(SPECIES_EXVEEMON) { MaxHP(100); HP(26); Item(ITEM_SALAC_BERRY); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FIRE_PLEDGE, target: opponentRight); MOVE(playerRight, MOVE_GRASS_PLEDGE, target: opponentRight); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FIRE_PLEDGE, playerRight);
         MESSAGE("A sea of fire enveloped the opposing team!");
-        MESSAGE("The opposing Wynaut was hurt by the sea of fire!");
+        MESSAGE("The opposing Exveemon was hurt by the sea of fire!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponentLeft);
-        MESSAGE("Using Salac Berry, the Speed of the opposing Wynaut rose!");
+        MESSAGE("Using Salac Berry, the Speed of the opposing Exveemon rose!");
         MESSAGE("The opposing Lopmonx was hurt by the sea of fire!");
     }
 }

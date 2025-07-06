@@ -86,9 +86,9 @@ DOUBLE_BATTLE_TEST("Kee Berry doesn't trigger if partner was hit")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT) { Item(ITEM_KEE_BERRY); }
+        OPPONENT(SPECIES_EXVEEMON) { Item(ITEM_KEE_BERRY); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TACKLE, target: opponentLeft); }
     } SCENE {

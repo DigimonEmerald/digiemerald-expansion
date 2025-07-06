@@ -26,7 +26,7 @@ SINGLE_BATTLE_TEST("Liquid Ooze causes Leech Seed users to lose HP instead of he
     s16 healed;
 
     GIVEN {
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_MINOMON) { Ability(ABILITY_LIQUID_OOZE); }
     } WHEN {
         TURN { MOVE(player, MOVE_LEECH_SEED); }

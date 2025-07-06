@@ -1287,7 +1287,7 @@
 #define SPECIES_NECROZMA_DAWN_WINGS                     1208
 #define SPECIES_NECROZMA_ULTRA                          1209
 #define SPECIES_MAGEARNA_ORIGINAL                       1210
-#define SPECIES_CRAMORANT_BURAIMONG                       1211
+#define SPECIES_CRAMORANT_GULPING                       1211
 #define SPECIES_CRAMORANT_GORGING                       1212
 #define SPECIES_TOXTRICITY_LOW_KEY                      1213
 #define SPECIES_SINISTEA_ANTIQUE                        1214

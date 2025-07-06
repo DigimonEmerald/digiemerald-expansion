@@ -74,7 +74,7 @@ SINGLE_BATTLE_TEST("Roar fails against target with Guard Dog")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_WYNAUT) { HP(0); }
+        OPPONENT(SPECIES_EXVEEMON) { HP(0); }
     } WHEN {
         TURN { MOVE(player, MOVE_ROAR); }
     } SCENE {

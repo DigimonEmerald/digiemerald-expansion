@@ -1863,7 +1863,7 @@ static const u16 sSandacondaFormSpeciesIdTable[] = {
 #if P_FAMILY_CRAMORANT
 static const u16 sCramorantFormSpeciesIdTable[] = {
     SPECIES_CRAMORANT,
-    SPECIES_CRAMORANT_BURAIMONG,
+    SPECIES_CRAMORANT_GULPING,
     SPECIES_CRAMORANT_GORGING,
     FORM_SPECIES_END,
 };
