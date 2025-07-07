@@ -216,13 +216,13 @@ def convert_methods(data):
 
 
 species_files = [
-    "gen_1_families.h",
-    "gen_2_families.h",
-    "gen_3_families.h",
-    "gen_4_families.h",
-    "gen_5_families.h",
-    "gen_6_families.h",
-    "gen_7_families.h",
+    "baby_collection.h",
+    "in_training_collection.h",
+    "rookie_collection.h",
+    "champion_collection.h",
+    "ultimate_collection.h",
+    "mega_collection.h",
+    "ultra_collection.h",
     "gen_8_families.h",
     "gen_9_families.h",
 ]

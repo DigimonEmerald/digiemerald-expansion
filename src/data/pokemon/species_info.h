@@ -151,13 +151,13 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .eggMoveLearnset = sNoneEggMoveLearnset,
     },
 
-    #include "species_info/gen_1_families.h"
-    #include "species_info/gen_2_families.h"
-    #include "species_info/gen_3_families.h"
-    #include "species_info/gen_4_families.h"
-    #include "species_info/gen_5_families.h"
-    #include "species_info/gen_6_families.h"
-    #include "species_info/gen_7_families.h"
+    #include "species_info/baby_collection.h"
+    #include "species_info/in_training_collection.h"
+    #include "species_info/rookie_collection.h"
+    #include "species_info/champion_collection.h"
+    #include "species_info/ultimate_collection.h"
+    #include "species_info/mega_collection.h"
+    #include "species_info/ultra_collection.h"
     #include "species_info/gen_8_families.h"
     #include "species_info/gen_9_families.h"
 
