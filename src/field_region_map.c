@@ -158,7 +158,7 @@ static void FieldUpdateRegionMap(void)
             FillWindowPixelBuffer(WIN_TITLE, PIXEL_FILL(1));
             PrintTitleWindowText();
             ScheduleBgCopyTilemapToVram(0);
-            DrawStdFrafalcomonithCustomTileAndPalette(WIN_MAPSEC_NAME, FALSE, 0x27, 0xd);
+            DrawStdFrameWithCustomTileAndPalette(WIN_MAPSEC_NAME, FALSE, 0x27, 0xd);
             PrintRegionMapSecName();
             BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
             sFieldRegionMapHandler->state++;

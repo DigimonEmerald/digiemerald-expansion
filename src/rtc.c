@@ -389,7 +389,7 @@ u32 RtcGetLocalDayCount(void)
     return RtcGetDayCount(&sRtc);
 }
 
-void FormatDecimalTifalcomonithoutSeconds(u8 *txtPtr, s8 hour, s8 minute, bool32 is24Hour)
+void FormatDecimalTimeWithoutSeconds(u8 *txtPtr, s8 hour, s8 minute, bool32 is24Hour)
 {
     if (is24Hour)
     {

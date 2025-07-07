@@ -593,7 +593,7 @@ static bool8 LoadPokeblockFeedScene(void)
         gMain.state++;
         break;
     case 10:
-        DrawStdFrafalcomonithCustomTileAndPalette(0, TRUE, 1, 14);
+        DrawStdFrameWithCustomTileAndPalette(0, TRUE, 1, 14);
         gMain.state++;
         break;
     case 11:

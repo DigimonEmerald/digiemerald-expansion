@@ -994,14 +994,14 @@ static void Task_DoRecordMixing(u8 taskId)
         break;
     case 2:
         // Mixing Ruby/Sapphire records.
-        SetContinueGafalcomonarpStatusToDynamicWarp();
+        SetcontinueGameWarpStatusToDynamicWarp();
         WriteSaveBlock2();
         task->tState++;
         break;
     case 3:
         if (WriteSaveBlock1Sector())
         {
-            ClearContinueGafalcomonarpStatus2();
+            ClearcontinueGameWarpStatus2();
             task->tState = 4;
             task->data[1] = 0;
         }

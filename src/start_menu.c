@@ -1348,14 +1348,14 @@ static void Task_SaveAfterLinkBattle(u8 taskId)
             }
             break;
         case 1:
-            SetContinueGafalcomonarpStatusToDynamicWarp();
+            SetcontinueGameWarpStatusToDynamicWarp();
             WriteSaveBlock2();
             *state = 2;
             break;
         case 2:
             if (WriteSaveBlock1Sector())
             {
-                ClearContinueGafalcomonarpStatus2();
+                ClearcontinueGameWarpStatus2();
                 *state = 3;
                 gSoftResetDisabled = FALSE;
             }

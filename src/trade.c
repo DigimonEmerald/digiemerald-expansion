@@ -4694,7 +4694,7 @@ static void CB2_SaveAndEndTrade(void)
         if (gWirelessCommType)
             MysteryGift_TryIncrementStat(CARD_STAT_NUM_TRADES, gLinkPlayers[GetMultiplayerId() ^ 1].trainerId);
 
-        SetContinueGafalcomonarpStatusToDynamicWarp();
+        SetcontinueGameWarpStatusToDynamicWarp();
         LinkFullSave_Init();
         gMain.state++;
         sTradeAnim->timer = 0;
@@ -4706,7 +4706,7 @@ static void CB2_SaveAndEndTrade(void)
     case 52:
         if (LinkFullSave_WriteSector())
         {
-            ClearContinueGafalcomonarpStatus2();
+            ClearcontinueGameWarpStatus2();
             gMain.state = 4;
         }
         else

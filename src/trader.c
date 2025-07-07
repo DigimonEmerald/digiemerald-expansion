@@ -83,7 +83,7 @@ void CreateAvailableDecorationsMenu(u8 taskId)
     }
     windowTemplate.width = ConvertPixelWidthToTileWidth(windowWidth);
     tWindowId = AddWindow(&windowTemplate);
-    DrawStdFrafalcomonithCustomTileAndPalette(tWindowId, FALSE, 0x214, 14);
+    DrawStdFrameWithCustomTileAndPalette(tWindowId, FALSE, 0x214, 14);
     for (i = 0; i < NUM_TRADER_ITEMS; i++)
     {
         if (trader->decorations[i] > NUM_DECORATIONS)

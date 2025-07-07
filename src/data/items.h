@@ -4143,7 +4143,7 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_Electirizer,
     },
 
-    [ITEM_CHIKURIMONIZER] =
+    [ITEM_MAGMARIZER] =
     {
         .name = _("Chikurizer"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
@@ -4156,8 +4156,8 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
         .flingPower = 80,
-        .iconPic = gItemIcon_Chikurimonizer,
-        .iconPalette = gItemIconPalette_Chikurimonizer,
+        .iconPic = gItemIcon_Magmarizer,
+        .iconPalette = gItemIconPalette_Magmarizer,
     },
 
     [ITEM_DUBIOUS_DISC] =

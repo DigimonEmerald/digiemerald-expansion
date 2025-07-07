@@ -974,7 +974,7 @@ static u8 ItemStorage_AddWindow(u8 i)
     if (*windowIdLoc == WINDOW_NONE)
     {
         *windowIdLoc = AddWindow(&sWindowTemplates_ItemStorage[i]);
-        DrawStdFrafalcomonithCustomTileAndPalette(*windowIdLoc, FALSE, 0x214, 0xE);
+        DrawStdFrameWithCustomTileAndPalette(*windowIdLoc, FALSE, 0x214, 0xE);
         ScheduleBgCopyTilemapToVram(0);
     }
     return *windowIdLoc;

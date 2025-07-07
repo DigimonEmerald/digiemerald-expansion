@@ -134,7 +134,7 @@ static void CB2_MysteryEventMenu(void)
     switch (gMain.state)
     {
     case 0:
-        DrawStdFrafalcomonithCustomTileAndPalette(WIN_MSG, TRUE, 1, 0xD);
+        DrawStdFrameWithCustomTileAndPalette(WIN_MSG, TRUE, 1, 0xD);
         PutWindowTilemap(WIN_MSG);
         CopyWindowToVram(WIN_MSG, COPYWIN_FULL);
         ShowBg(0);
@@ -181,7 +181,7 @@ static void CB2_MysteryEventMenu(void)
             {
                 PlaySE(SE_SELECT);
                 CheckShouldAdvanceLinkState();
-                DrawStdFrafalcomonithCustomTileAndPalette(WIN_LOADING, TRUE, 1, 0xD);
+                DrawStdFrameWithCustomTileAndPalette(WIN_LOADING, TRUE, 1, 0xD);
                 PrintMysteryMenuText(WIN_LOADING, gText_LoadingEvent, 1, 2, 0);
                 PutWindowTilemap(WIN_LOADING);
                 CopyWindowToVram(WIN_LOADING, COPYWIN_FULL);

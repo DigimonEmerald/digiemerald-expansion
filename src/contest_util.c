@@ -616,9 +616,9 @@ static void Task_ShowContestResults(u8 taskId)
             gCurContestWinnerSaveIdx = GetContestWinnerSaveIdx(CONTEST_SAVE_FOR_ARTIST, FALSE);
             var = VarGet(VAR_CONTEST_HALL_STATE);
             VarSet(VAR_CONTEST_HALL_STATE, 0);
-            SetContinueGafalcomonarpStatusToDynamicWarp();
+            SetcontinueGameWarpStatusToDynamicWarp();
             TrySavingData(SAVE_LINK);
-            ClearContinueGafalcomonarpStatus2();
+            ClearcontinueGameWarpStatus2();
             VarSet(VAR_CONTEST_HALL_STATE, var);
             gTasks[taskId].tState++;
             break;

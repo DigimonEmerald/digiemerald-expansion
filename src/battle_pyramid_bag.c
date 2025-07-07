@@ -1487,7 +1487,7 @@ static void PyramidBagPrint_Quantity(u8 windowId, const u8 *src, u8 x, u8 y, u8 
 
 static void DrawTossNumberWindow(u8 windowId)
 {
-    DrawStdFrafalcomonithCustomTileAndPalette(windowId, FALSE, 1, 0xE);
+    DrawStdFrameWithCustomTileAndPalette(windowId, FALSE, 1, 0xE);
     ScheduleBgCopyTilemapToVram(1);
 }
 
@@ -1502,7 +1502,7 @@ static u8 OpenMenuActionWindowById(u8 windowArrayId)
     if (*windowId == WINDOW_NONE)
     {
         *windowId = AddWindow(&sWindowTemplates_MenuActions[windowArrayId]);
-        DrawStdFrafalcomonithCustomTileAndPalette(*windowId, FALSE, 1, 0xE);
+        DrawStdFrameWithCustomTileAndPalette(*windowId, FALSE, 1, 0xE);
         ScheduleBgCopyTilemapToVram(1);
     }
     return *windowId;

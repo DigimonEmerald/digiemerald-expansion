@@ -144,28 +144,28 @@ void MoveSaveBlocks_ResetHeap(void)
     gSaveBlock2Ptr->encryptionKey = encryptionKey;
 }
 
-u32 UseContinueGafalcomonarp(void)
+u32 UsecontinueGameWarp(void)
 {
     return gSaveBlock2Ptr->specialSaveWarpFlags & CONTINUE_GAME_WARP;
 }
 
-void ClearContinueGafalcomonarpStatus(void)
+void ClearcontinueGameWarpStatus(void)
 {
     gSaveBlock2Ptr->specialSaveWarpFlags &= ~CONTINUE_GAME_WARP;
 }
 
-void SetContinueGafalcomonarpStatus(void)
+void SetcontinueGameWarpStatus(void)
 {
     gSaveBlock2Ptr->specialSaveWarpFlags |= CONTINUE_GAME_WARP;
 }
 
-void SetContinueGafalcomonarpStatusToDynamicWarp(void)
+void SetcontinueGameWarpStatusToDynamicWarp(void)
 {
-    SetContinueGafalcomonarpToDynamicWarp(0);
+    SetcontinueGameWarpToDynamicWarp(0);
     gSaveBlock2Ptr->specialSaveWarpFlags |= CONTINUE_GAME_WARP;
 }
 
-void ClearContinueGafalcomonarpStatus2(void)
+void ClearcontinueGameWarpStatus2(void)
 {
     gSaveBlock2Ptr->specialSaveWarpFlags &= ~CONTINUE_GAME_WARP;
 }

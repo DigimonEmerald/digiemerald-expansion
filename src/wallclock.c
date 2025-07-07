@@ -832,7 +832,7 @@ static void Task_SetClock_HandleInput(u8 taskId)
 
 static void Task_SetClock_AskConfirm(u8 taskId)
 {
-    DrawStdFrafalcomonithCustomTileAndPalette(WIN_MSG, FALSE, 0x250, 0x0d);
+    DrawStdFrameWithCustomTileAndPalette(WIN_MSG, FALSE, 0x250, 0x0d);
     AddTextPrinterParameterized(WIN_MSG, FONT_NORMAL, gText_IsThisTheCorrectTime, 0, 1, 0, NULL);
     PutWindowTilemap(WIN_MSG);
     ScheduleBgCopyTilemapToVram(0);
