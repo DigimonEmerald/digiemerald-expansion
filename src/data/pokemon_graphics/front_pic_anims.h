@@ -427,7 +427,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(PoyomonAlola);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_POPOMON
 
-#if P_FAMILY_NIDORAN
+#if P_FAMILY_PUNIMON
 static const union AnimCmd sAnim_Punimon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
@@ -480,7 +480,7 @@ static const union AnimCmd sAnim_Puwamon_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_NIDORAN
+#endif //P_FAMILY_PUNIMON
 
 #if P_FAMILY_PUYOMON
 #if P_GEN_2_CROSS_EVOS
@@ -10295,14 +10295,14 @@ SINGLE_ANIMATION(PopomonAlola);
 SINGLE_ANIMATION(PoyomonAlola);
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_POPOMON
-#if P_FAMILY_NIDORAN
+#if P_FAMILY_PUNIMON
 SINGLE_ANIMATION(Punimon);
 SINGLE_ANIMATION(Pupumon);
 SINGLE_ANIMATION(Pururumon);
 SINGLE_ANIMATION(Pusumon);
 SINGLE_ANIMATION(Puttimon);
 SINGLE_ANIMATION(Puwamon);
-#endif //P_FAMILY_NIDORAN
+#endif //P_FAMILY_PUNIMON
 #if P_FAMILY_PUYOMON
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Gumdramon);

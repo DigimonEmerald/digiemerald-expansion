@@ -27,8 +27,8 @@ SINGLE_BATTLE_TEST("Illusion breaks if the target faints")
 {
     GIVEN {
         PLAYER(SPECIES_ZOROARK) { HP(1); }
-        PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SCRATCH); SEND_OUT(player, 1); }
     } SCENE {
@@ -44,8 +44,8 @@ SINGLE_BATTLE_TEST("Illusion breaks if the attacker faints")
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_FINAL_GAMBIT) == EFFECT_FINAL_GAMBIT);
         PLAYER(SPECIES_ZOROARK) { HP(1); }
-        PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_FINAL_GAMBIT); SEND_OUT(player, 1); }
     } SCENE {
@@ -59,9 +59,9 @@ SINGLE_BATTLE_TEST("Illusion breaks if the attacker faints")
 SINGLE_BATTLE_TEST("Illusion cannot imitate if the user is on the last slot")
 {
     GIVEN {
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         PLAYER(SPECIES_ZOROARK);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { SWITCH(player, 1); }
     } THEN {
@@ -74,8 +74,8 @@ SINGLE_BATTLE_TEST("Illusion breaks in Neutralizing Gas")
 {
     GIVEN {
         PLAYER(SPECIES_ZOROARK);
-        PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WEEZING) { Ability(ABILITY_NEUTRALIZING_GAS); }
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_ARMADILMON) { Ability(ABILITY_NEUTRALIZING_GAS); }
     } WHEN {
         TURN { }
     } SCENE {
@@ -89,8 +89,8 @@ SINGLE_BATTLE_TEST("Illusion breaks if affected by Gastro Acid")
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_GASTRO_ACID) == EFFECT_GASTRO_ACID);
         PLAYER(SPECIES_ZOROARK);
-        PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, MOVE_GASTRO_ACID); }
     } SCENE {
@@ -104,8 +104,8 @@ SINGLE_BATTLE_TEST("Illusion breaks if user loses Illusion due to Worry Seed")
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_WORRY_SEED) == EFFECT_WORRY_SEED);
         PLAYER(SPECIES_ZOROARK);
-        PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, MOVE_WORRY_SEED); }
     } SCENE {

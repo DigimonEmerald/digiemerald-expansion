@@ -13,10 +13,10 @@ DOUBLE_BATTLE_TEST("Throat Spray activates after both hits of a spread move")
 
     GIVEN {
         ASSUME(GetMoveTarget(MOVE_HYPER_VOICE) == MOVE_TARGET_BOTH);
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_THROAT_SPRAY); }
-        PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_THROAT_SPRAY); }
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_HYPER_VOICE); }
     } SCENE {
@@ -35,8 +35,8 @@ SINGLE_BATTLE_TEST("Throat Spray increases Sp. Atk by one stage")
     s16 boostedHit;
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_THROAT_SPRAY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_THROAT_SPRAY); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_HYPER_VOICE); }
         TURN { MOVE(player, MOVE_HYPER_VOICE); }
@@ -60,8 +60,8 @@ SINGLE_BATTLE_TEST("Throat Spray activates when a sound move is used")
 
     GIVEN {
         ASSUME(IsSoundMove(MOVE_SWIFT) != IsSoundMove(MOVE_HYPER_VOICE));
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_THROAT_SPRAY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_THROAT_SPRAY); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
@@ -76,8 +76,8 @@ SINGLE_BATTLE_TEST("Throat Spray activates when a sound move is used")
 SINGLE_BATTLE_TEST("Throat Spray does not activate if move fails")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_THROAT_SPRAY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_THROAT_SPRAY); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, MOVE_PROTECT); MOVE(player, MOVE_HYPER_VOICE); }
     } SCENE {

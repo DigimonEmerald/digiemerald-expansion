@@ -24,12 +24,12 @@ SINGLE_BATTLE_TEST("Limber prevents paralysis from Thunder Wave")
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_THUNDER_WAVE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_THUNDER_WAVE) == MOVE_EFFECT_PARALYSIS);
-        PLAYER(SPECIES_PERSIAN) { Ability(ABILITY_LIMBER); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_CHAPMON) { Ability(ABILITY_LIMBER); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, MOVE_THUNDER_WAVE); }
     } SCENE {
-        MESSAGE("Persian's Limber prevents paralysis!");
+        MESSAGE("Chapmon's Limber prevents paralysis!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PRZ, player);
             STATUS_ICON(player, paralysis: TRUE);

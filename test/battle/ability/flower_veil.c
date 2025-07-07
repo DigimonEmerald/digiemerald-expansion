@@ -26,16 +26,16 @@ DOUBLE_BATTLE_TEST("Flower Veil prevents Toxic bad poison on partner - right tar
     PARAMETRIZE { move = MOVE_HYPNOSIS; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_COMFEY) { Ability(ABILITY_FLOWER_VEIL); }
-        OPPONENT(SPECIES_CHIKORITA);
+        OPPONENT(SPECIES_FALCOMON_06);
     } WHEN {
         TURN { MOVE(playerLeft, move, target: opponentRight); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, move, playerLeft);
         ABILITY_POPUP(opponentLeft, ABILITY_FLOWER_VEIL);
-        MESSAGE("The opposing Chikorita surrounded itself with a veil of petals!");
+        MESSAGE("The opposing Falcomon_06 surrounded itself with a veil of petals!");
     }
 }
 
@@ -50,15 +50,15 @@ DOUBLE_BATTLE_TEST("Flower Veil prevents Toxic bad poison on partner - left targ
     PARAMETRIZE { move = MOVE_HYPNOSIS; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_CHIKORITA);
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_FALCOMON_06);
         OPPONENT(SPECIES_COMFEY) { Ability(ABILITY_FLOWER_VEIL); }
     } WHEN {
         TURN { MOVE(playerLeft, move, target: opponentLeft); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, move, playerLeft);
         ABILITY_POPUP(opponentRight, ABILITY_FLOWER_VEIL);
-        MESSAGE("The opposing Chikorita surrounded itself with a veil of petals!");
+        MESSAGE("The opposing Falcomon_06 surrounded itself with a veil of petals!");
     }
 }

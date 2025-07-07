@@ -185,12 +185,12 @@ SINGLE_BATTLE_TEST("Reflect Type defaults to Normal type for the user's 1st and 
 SINGLE_BATTLE_TEST("Reflect Type fails if the user is Terastallized")
 {
     GIVEN {
-        PLAYER(SPECIES_ARCANINE) { TeraType(TYPE_NORMAL); }
-        OPPONENT(SPECIES_POLIWRATH);
+        PLAYER(SPECIES_GIGIMON) { TeraType(TYPE_NORMAL); }
+        OPPONENT(SPECIES_HIYARIMON);
     } WHEN {
         TURN { MOVE(player, MOVE_REFLECT_TYPE, gimmick: GIMMICK_TERA); }
     } SCENE {
-        MESSAGE("Arcanine used Reflect Type!");
+        MESSAGE("Gigimon used Reflect Type!");
         MESSAGE("But it failed!");
     } THEN {
         EXPECT_EQ(player->types[0], TYPE_FIRE);
@@ -202,14 +202,14 @@ SINGLE_BATTLE_TEST("Reflect Type fails if the user is Terastallized")
 SINGLE_BATTLE_TEST("Reflect Type succeeds against a Terastallized target and copies its Tera type")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_POLIWRATH].types[0] != TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_POLIWRATH].types[1] != TYPE_NORMAL);
-        PLAYER(SPECIES_ARCANINE) { TeraType(TYPE_NORMAL); }
-        OPPONENT(SPECIES_POLIWRATH);
+        ASSUME(gSpeciesInfo[SPECIES_HIYARIMON].types[0] != TYPE_NORMAL);
+        ASSUME(gSpeciesInfo[SPECIES_HIYARIMON].types[1] != TYPE_NORMAL);
+        PLAYER(SPECIES_GIGIMON) { TeraType(TYPE_NORMAL); }
+        OPPONENT(SPECIES_HIYARIMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_REFLECT_TYPE); }
     } SCENE {
-        MESSAGE("The opposing Poliwrath used Reflect Type!");
+        MESSAGE("The opposing Hiyarimon used Reflect Type!");
     } THEN {
         EXPECT_EQ(opponent->types[0], TYPE_NORMAL);
         EXPECT_EQ(opponent->types[1], TYPE_NORMAL);

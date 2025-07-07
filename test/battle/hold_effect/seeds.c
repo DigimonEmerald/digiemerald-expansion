@@ -146,8 +146,8 @@ SINGLE_BATTLE_TEST("Seeds get consumed in Terrain even if holder is not affected
     PARAMETRIZE { species = SPECIES_TAPU_FINI; ability = ABILITY_MISTY_SURGE; item = ITEM_MISTY_SEED; }
     PARAMETRIZE { species = SPECIES_TAPU_LELE; ability = ABILITY_PSYCHIC_SURGE; item = ITEM_PSYCHIC_SEED; }
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_PIDGEY].types[0] == TYPE_FLYING || gSpeciesInfo[SPECIES_PIDGEY].types[1] == TYPE_FLYING);
-        PLAYER(SPECIES_PIDGEY) { Item(item); }
+        ASSUME(gSpeciesInfo[SPECIES_KETOMON].types[0] == TYPE_FLYING || gSpeciesInfo[SPECIES_KETOMON].types[1] == TYPE_FLYING);
+        PLAYER(SPECIES_KETOMON) { Item(item); }
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { }
@@ -179,14 +179,14 @@ SINGLE_BATTLE_TEST("Electric Seed is consumed on Electric Terrain before other a
 SINGLE_BATTLE_TEST("Electric Seed doesn't activate on existing Electric Terrain before user's ability changes the terrain")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
         PLAYER(SPECIES_TAPU_BULU) { Ability(ABILITY_GRASSY_SURGE); Item(ITEM_ELECTRIC_SEED); }
         OPPONENT(SPECIES_TAPU_KOKO) { Ability(ABILITY_ELECTRIC_SURGE); }
     } WHEN {
         TURN { SWITCH(player, 1); }
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_ELECTRIC_SURGE);
-        SWITCH_OUT_MESSAGE("Wobbuffet");
+        SWITCH_OUT_MESSAGE("Lopmon_x");
         SEND_IN_MESSAGE("Tapu Bulu");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);

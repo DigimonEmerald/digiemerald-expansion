@@ -425,12 +425,12 @@ DOUBLE_BATTLE_TEST("Commander Tatsugiri does not get hit by Dragon Darts when co
 DOUBLE_BATTLE_TEST("Commander will not activate if Dondozo fainted right before Tatsugiri came in")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
         PLAYER(SPECIES_DONDOZO) { HP(1); }
         PLAYER(SPECIES_TATSUGIRI) { Ability(ABILITY_COMMANDER); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_SCRATCH, target: playerRight); MOVE(playerLeft, MOVE_SHED_TAIL); SEND_OUT(playerLeft, 2); SEND_OUT(playerRight, 3); }
     } SCENE {
@@ -444,14 +444,14 @@ DOUBLE_BATTLE_TEST("Commander prevent Dondozo from switch out by Dragon Tail")
         ASSUME(GetMoveEffect(MOVE_DRAGON_TAIL) == EFFECT_HIT_SWITCH_TARGET);
         PLAYER(SPECIES_DONDOZO);
         PLAYER(SPECIES_TATSUGIRI) { Ability(ABILITY_COMMANDER); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_DRAGON_TAIL, target: playerLeft); }
     } SCENE {
         ABILITY_POPUP(playerRight, ABILITY_COMMANDER);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_TAIL, opponentLeft);
-        NOT MESSAGE("Wobbuffet was dragged out!");
+        NOT MESSAGE("Lopmon_x was dragged out!");
     }
 }

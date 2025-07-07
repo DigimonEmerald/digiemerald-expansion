@@ -69,9 +69,9 @@ SINGLE_BATTLE_TEST("Comatose may be suppressed if pokemon transformed into a pok
 SINGLE_BATTLE_TEST("Comatose pokemon doesn't get poisoned by Toxic Spikes on switch-in")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
         PLAYER(SPECIES_KOMALA) { Ability(ABILITY_COMATOSE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TOXIC_SPIKES); }
         TURN { SWITCH(player, 1); }
@@ -85,9 +85,9 @@ SINGLE_BATTLE_TEST("Comatose pokemon doesn't get poisoned by Toxic Spikes on swi
 SINGLE_BATTLE_TEST("Comatose pokemon don't get poisoned by Toxic Spikes on switch-in if forced in by phazing with Mold Breaker")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
         PLAYER(SPECIES_KOMALA) { Ability(ABILITY_COMATOSE); }
-        OPPONENT(SPECIES_PINSIR) { Ability(ABILITY_MOLD_BREAKER); }
+        OPPONENT(SPECIES_TYUTYUMON) { Ability(ABILITY_MOLD_BREAKER); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TOXIC_SPIKES); }
         TURN { MOVE(opponent, MOVE_DRAGON_TAIL); }

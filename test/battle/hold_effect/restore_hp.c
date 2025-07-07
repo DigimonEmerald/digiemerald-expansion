@@ -68,8 +68,8 @@ DOUBLE_BATTLE_TEST("Restore HP Item effects do not miss timing after a recoil mo
 SINGLE_BATTLE_TEST("Restore HP Berry triggers only during the end turn")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WYNAUT) { MaxHP(100); HP(51); Item(ITEM_ORAN_BERRY); }
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_EXVEEMON) { MaxHP(100); HP(51); Item(ITEM_ORAN_BERRY); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
         TURN {}

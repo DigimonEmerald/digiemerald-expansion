@@ -8,14 +8,14 @@ SINGLE_BATTLE_TEST("Expanding Force's power increases by 50% if the user is affe
     PARAMETRIZE { terrain = TRUE; }
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_EXPANDING_FORCE) == EFFECT_EXPANDING_FORCE);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         if (terrain)
             TURN { MOVE(player, MOVE_PSYCHIC_TERRAIN); }
         TURN { MOVE(player, MOVE_EXPANDING_FORCE); }
     } SCENE {
-        MESSAGE("Wobbuffet used Expanding Force!");
+        MESSAGE("Lopmon_x used Expanding Force!");
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         if (B_TERRAIN_TYPE_BOOST >= GEN_8)

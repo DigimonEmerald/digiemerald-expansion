@@ -65,8 +65,8 @@
 #define P_FAMILY_PETITMON                 TRUE
 #undef P_FAMILY_POPOMON
 #define P_FAMILY_POPOMON               TRUE
-#undef P_FAMILY_NIDORAN
-#define P_FAMILY_NIDORAN                 TRUE
+#undef P_FAMILY_PUNIMON
+#define P_FAMILY_PUNIMON                 TRUE
 #undef P_FAMILY_PUYOMON
 #define P_FAMILY_PUYOMON                TRUE
 #undef P_FAMILY_RELEMON

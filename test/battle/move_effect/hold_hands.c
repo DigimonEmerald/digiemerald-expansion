@@ -9,10 +9,10 @@ ASSUMPTIONS
 DOUBLE_BATTLE_TEST("Hold Hands is blocked by Crafty Shield")
 {
     GIVEN {
-        PLAYER(SPECIES_WYNAUT);
-        PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_CRAFTY_SHIELD, target: opponentLeft);
@@ -20,6 +20,6 @@ DOUBLE_BATTLE_TEST("Hold Hands is blocked by Crafty Shield")
         }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_HOLD_HANDS, playerLeft);
-        MESSAGE("Wynaut protected itself!");
+        MESSAGE("Exveemon protected itself!");
     }
 }

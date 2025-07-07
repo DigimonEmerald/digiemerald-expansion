@@ -65,10 +65,10 @@ SINGLE_BATTLE_TEST("Leech Seed recovery is prevented by Heal Block")
 DOUBLE_BATTLE_TEST("Leech Seed will drain HP based on speed of the drained mon")
 {
     GIVEN {
-        PLAYER(SPECIES_WYNAUT) { Speed(1); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(2); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(3); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(4); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(1); }
+        PLAYER(SPECIES_LOPMON_X) { Speed(2); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(3); }
+        OPPONENT(SPECIES_LOPMON_X) { Speed(4); }
     } WHEN {
         TURN { 
             MOVE(playerLeft, MOVE_LEECH_SEED, target: opponentLeft); 

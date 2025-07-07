@@ -9,8 +9,8 @@ SINGLE_BATTLE_TEST("Solar Power increases a Sp. Attack by x1.5 in Sun", s16 dama
     GIVEN {
         ASSUME(GetMovePower(MOVE_HYPER_VOICE) > 0);
         ASSUME(GetMoveCategory(MOVE_HYPER_VOICE) == DAMAGE_CATEGORY_SPECIAL);
-        PLAYER(SPECIES_CHARIZARD) { Ability(ABILITY_SOLAR_POWER); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_CHIBOMON) { Ability(ABILITY_SOLAR_POWER); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, move); MOVE(player, MOVE_HYPER_VOICE); }
     } SCENE {
@@ -30,8 +30,8 @@ SINGLE_BATTLE_TEST("Solar Power doesn't increases a Sp. Attack if Cloud Nine/Air
     GIVEN {
         ASSUME(GetMovePower(MOVE_HYPER_VOICE) > 0);
         ASSUME(GetMoveCategory(MOVE_HYPER_VOICE) == DAMAGE_CATEGORY_SPECIAL);
-        PLAYER(SPECIES_CHARIZARD) { Ability(ABILITY_SOLAR_POWER); }
-        OPPONENT(SPECIES_GOLDUCK) { Ability(ABILITY_CLOUD_NINE); }
+        PLAYER(SPECIES_CHIBOMON) { Ability(ABILITY_SOLAR_POWER); }
+        OPPONENT(SPECIES_DEMMERAMON) { Ability(ABILITY_CLOUD_NINE); }
     } WHEN {
         TURN { MOVE(opponent, move); MOVE(player, MOVE_HYPER_VOICE); }
     } SCENE {
@@ -44,8 +44,8 @@ SINGLE_BATTLE_TEST("Solar Power doesn't increases a Sp. Attack if Cloud Nine/Air
 SINGLE_BATTLE_TEST("Solar Power causes the Pokémon to lose 1/8 max HP in Sun")
 {
     GIVEN {
-        PLAYER(SPECIES_CHARIZARD) { Ability(ABILITY_SOLAR_POWER); MaxHP(80); HP(80); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_CHIBOMON) { Ability(ABILITY_SOLAR_POWER); MaxHP(80); HP(80); }
+        OPPONENT(SPECIES_LOPMON_X);
     } SCENE {
         TURN { MOVE(opponent, MOVE_SUNNY_DAY); }
     } SCENE {
@@ -58,8 +58,8 @@ SINGLE_BATTLE_TEST("Solar Power causes the Pokémon to lose 1/8 max HP in Sun")
 SINGLE_BATTLE_TEST("Solar Power doesn't cause the Pokémon to lose 1/8 max HP if Cloud Nine/Air Lock is on the field")
 {
     GIVEN {
-        PLAYER(SPECIES_CHARIZARD) { Ability(ABILITY_SOLAR_POWER); MaxHP(80); HP(80); }
-        OPPONENT(SPECIES_GOLDUCK) { Ability(ABILITY_CLOUD_NINE); }
+        PLAYER(SPECIES_CHIBOMON) { Ability(ABILITY_SOLAR_POWER); MaxHP(80); HP(80); }
+        OPPONENT(SPECIES_DEMMERAMON) { Ability(ABILITY_CLOUD_NINE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUNNY_DAY); }
     } SCENE {

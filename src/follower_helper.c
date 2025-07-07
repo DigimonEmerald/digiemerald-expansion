@@ -386,9 +386,9 @@ const struct FollowerMsgInfoExtended gFollowerConditionalMessages[COND_MSG_COUNT
         .conditions =
         {
             MATCH_MUSIC(MUS_ABNORMAL_WEATHER),
-            MATCH_NOT_SPECIES(SPECIES_KYOGRE),
-            MATCH_NOT_SPECIES(SPECIES_GROUDON),
-            MATCH_NOT_SPECIES(SPECIES_RAYQUAZA),
+            MATCH_NOT_SPECIES(SPECIES_GATOMON_X),
+            MATCH_NOT_SPECIES(SPECIES_GEKOMON),
+            MATCH_NOT_SPECIES(SPECIES_GEOGREYMON),
         }
     },
 };

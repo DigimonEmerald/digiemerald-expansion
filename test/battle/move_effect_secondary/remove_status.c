@@ -9,7 +9,7 @@ SINGLE_BATTLE_TEST("Smelling Salts does not cure paralyzed pokemons behind subst
     GIVEN {
         ASSUME(MoveHasAdditionalEffect(MOVE_SMELLING_SALTS, MOVE_EFFECT_REMOVE_STATUS) == TRUE);
         ASSUME(GetMoveEffectArg_Status(MOVE_SMELLING_SALTS) == STATUS1_PARALYSIS);
-        PLAYER(SPECIES_CROBAT) { Ability(ability); }
+        PLAYER(SPECIES_GOTSUMON) { Ability(ability); }
         OPPONENT(SPECIES_SEISMITOAD) { Status1(STATUS1_PARALYSIS); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUBSTITUTE); MOVE(player, MOVE_CELEBRATE); }
@@ -42,20 +42,20 @@ SINGLE_BATTLE_TEST("Smelling Salts get incread power vs. paralyzed targets")
     GIVEN {
         ASSUME(MoveHasAdditionalEffect(MOVE_SMELLING_SALTS, MOVE_EFFECT_REMOVE_STATUS) == TRUE);
         ASSUME(GetMoveEffectArg_Status(MOVE_SMELLING_SALTS) == STATUS1_PARALYSIS);
-        PLAYER(SPECIES_CROBAT);
-        OPPONENT(SPECIES_LOTAD) { Status1(status1); }
+        PLAYER(SPECIES_GOTSUMON);
+        OPPONENT(SPECIES_ZUBAMON) { Status1(status1); }
     } WHEN {
         TURN { MOVE(player, MOVE_SMELLING_SALTS); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SMELLING_SALTS, player);
         if (status1 == STATUS1_PARALYSIS)
         {
-            MESSAGE("The opposing Lotad fainted!");
+            MESSAGE("The opposing Zubamon fainted!");
         }
         else
         {
-            NOT MESSAGE("The opposing Lotad fainted!");
-            MESSAGE("The opposing Lotad used Celebrate!");
+            NOT MESSAGE("The opposing Zubamon fainted!");
+            MESSAGE("The opposing Zubamon used Celebrate!");
         }
     }
 }
@@ -68,7 +68,7 @@ SINGLE_BATTLE_TEST("Wake-Up Slap does not cure paralyzed pokemons behind substit
     GIVEN {
         ASSUME(MoveHasAdditionalEffect(MOVE_WAKE_UP_SLAP, MOVE_EFFECT_REMOVE_STATUS) == TRUE);
         ASSUME(GetMoveEffectArg_Status(MOVE_WAKE_UP_SLAP) == STATUS1_SLEEP);
-        PLAYER(SPECIES_CROBAT) { Ability(ability); }
+        PLAYER(SPECIES_GOTSUMON) { Ability(ability); }
         OPPONENT(SPECIES_SEISMITOAD);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUBSTITUTE); MOVE(player, MOVE_SING); }
@@ -98,17 +98,17 @@ SINGLE_BATTLE_TEST("Wake-Up Slap gets increased power against sleeping targets")
     GIVEN {
         ASSUME(MoveHasAdditionalEffect(MOVE_WAKE_UP_SLAP, MOVE_EFFECT_REMOVE_STATUS) == TRUE);
         ASSUME(GetMoveEffectArg_Status(MOVE_WAKE_UP_SLAP) == STATUS1_SLEEP);
-        PLAYER(SPECIES_CROBAT);
-        OPPONENT(SPECIES_LOTAD) { Status1(status1); }
+        PLAYER(SPECIES_GOTSUMON);
+        OPPONENT(SPECIES_ZUBAMON) { Status1(status1); }
     } WHEN {
         TURN { MOVE(player, MOVE_WAKE_UP_SLAP); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WAKE_UP_SLAP, player);
         if (status1 == STATUS1_SLEEP) {
-            MESSAGE("The opposing Lotad fainted!");
+            MESSAGE("The opposing Zubamon fainted!");
         } else {
-            NOT MESSAGE("The opposing Lotad fainted!");
-            MESSAGE("The opposing Lotad used Celebrate!");
+            NOT MESSAGE("The opposing Zubamon fainted!");
+            MESSAGE("The opposing Zubamon used Celebrate!");
         }
     }
 }
@@ -119,14 +119,14 @@ DOUBLE_BATTLE_TEST("Sparkling Aria cures burns from all Pokemon on the field and
         ASSUME(MoveHasAdditionalEffect(MOVE_SPARKLING_ARIA, MOVE_EFFECT_REMOVE_STATUS) == TRUE);
         ASSUME(GetMoveEffectArg_Status(MOVE_SPARKLING_ARIA) == STATUS1_BURN);
         PLAYER(SPECIES_PRIMARINA);
-        PLAYER(SPECIES_WOBBUFFET) { Status1(STATUS1_BURN); }
-        OPPONENT(SPECIES_WOBBUFFET) { Status1(STATUS1_BURN); }
-        OPPONENT(SPECIES_WYNAUT) { Status1(STATUS1_BURN); }
+        PLAYER(SPECIES_LOPMON_X) { Status1(STATUS1_BURN); }
+        OPPONENT(SPECIES_LOPMON_X) { Status1(STATUS1_BURN); }
+        OPPONENT(SPECIES_EXVEEMON) { Status1(STATUS1_BURN); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_SUBSTITUTE); MOVE(opponentRight, MOVE_CELEBRATE); MOVE(playerRight, MOVE_CELEBRATE); MOVE(playerLeft, MOVE_SPARKLING_ARIA); }
     } SCENE {
-        MESSAGE("The opposing Wobbuffet's burn was cured!");
-        MESSAGE("Wobbuffet's burn was cured!");
-        MESSAGE("The opposing Wynaut's burn was cured!");
+        MESSAGE("The opposing Lopmon_x's burn was cured!");
+        MESSAGE("Lopmon_x's burn was cured!");
+        MESSAGE("The opposing Exveemon's burn was cured!");
     }
 }

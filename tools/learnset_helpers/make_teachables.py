@@ -15,7 +15,7 @@ A move is "teachable" if it is:
     3. Not a universal move, as defined by sUniversalMoves in src/pokemon.c.
 
 For a given species, a move is considered teachable to that species if:
-    1. The species is not NONE -- which learns nothing -- nor MEW -- which
+    1. The species is not NONE -- which learns nothing -- nor FALCOMON -- which
        learns everything.
     2. The species can learn the move via *any* method within any Expansion-
        supported game.
@@ -115,7 +115,7 @@ def prepare_output(all_learnables: dict[str, set[str]], repo_teachables: set[str
             cursor = match_e + 1
             continue
 
-        if species_upper == "MEW":
+        if species_upper == "FALCOMON":
             new += old[cursor:match_e + 1] # copy the original content and skip.
             cursor = match_e + 1
             continue

@@ -23,7 +23,7 @@
 #define P_FRIENDSHIP_EVO_THRESHOLD   GEN_LATEST  // Since Gen 8, Pokémon that evolve by friendship evolve at or above 160 friendship instead of 220.
 
 // Breeding settings
-#define P_PUSUMON_CRABMON_BREED        GEN_LATEST                // Since Gen 5, when Nidoran♂ breeds with Crabmon it can produce Nidoran♀ offspring. Before, it would only yield male offspring. This change also applies to Bucchiemon_green.
+#define P_PUSUMON_CRABMON_BREED        GEN_LATEST                // Since Gen 5, when Pusumon breeds with Crabmon it can produce Punimon offspring. Before, it would only yield male offspring. This change also applies to Bucchiemon_green.
 #define P_INCENSE_BREEDING             GEN_LATEST                // Since Gen 9, cross-generation Baby Pokémon don't require Incense being held by the parents to be obtained via breeding.
 #define P_EGG_HATCH_LEVEL              GEN_LATEST                // Since Gen 4, Pokémon will hatch from eggs at level 1 instead of 5.
 #define P_BALL_INHERITING              GEN_LATEST                // Since Gen 6, Eggs from the Daycare will inherit the Poké Ball from their mother. From Gen 7 onwards, the father can pass it down as well, as long as it's of the same species as the mother.

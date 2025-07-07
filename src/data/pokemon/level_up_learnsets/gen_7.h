@@ -638,7 +638,7 @@ static const struct LevelUpMove sPoyomonAlolaLevelUpLearnset[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_POPOMON
 
-#if P_FAMILY_NIDORAN
+#if P_FAMILY_PUNIMON
 static const struct LevelUpMove sPunimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
@@ -732,7 +732,7 @@ static const struct LevelUpMove sPuwamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(58, MOVE_MEGAHORN),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_NIDORAN
+#endif //P_FAMILY_PUNIMON
 
 #if P_FAMILY_PUYOMON
 #if P_GEN_2_CROSS_EVOS
@@ -4301,7 +4301,7 @@ static const struct LevelUpMove sRenamon_xLevelUpLearnset[] = {
 };
 
 #if P_GEN_4_CROSS_EVOS
-static const struct LevelUpMove sPorygonzLevelUpLearnset[] = {
+static const struct LevelUpMove sPorygonZLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TRICK_ROOM),
     LEVEL_UP_MOVE( 1, MOVE_ZAP_CANNON),
     LEVEL_UP_MOVE( 1, MOVE_MAGIC_COAT),

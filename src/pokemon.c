@@ -4484,6 +4484,10 @@ bool32 DoesMonMeetAdditionalConditions(struct Pokemon *mon, const struct Evoluti
     u32 friendship = GetMonData(mon, MON_DATA_FRIENDSHIP, 0);
     u32 attack = GetMonData(mon, MON_DATA_ATK, 0);
     u32 defense = GetMonData(mon, MON_DATA_DEF, 0);
+    u32 spattack = GetMonData(mon, MON_DATA_SPATK, 0);
+    u32 spdefense = GetMonData(mon, MON_DATA_SPDEF, 0);
+    u32 speed = GetMonData(mon, MON_DATA_SPEED, 0);
+    u32 hp = GetMonData(mon, MON_DATA_HP, 0);
     u32 personality = GetMonData(mon, MON_DATA_PERSONALITY, 0);
     u16 upperPersonality = personality >> 16;
     u32 weather = GetCurrentWeather();
@@ -4772,6 +4776,30 @@ bool32 DoesMonMeetAdditionalConditions(struct Pokemon *mon, const struct Evoluti
                     *canStopEvo = FALSE;
             }
             break;
+        case IF_ATK:
+            if (attack > params[i].arg1)
+                currentCondition = TRUE;
+            break;
+        case IF_DEF:
+            if (defense > params[i].arg1)
+                currentCondition = TRUE;
+            break;
+        case IF_SPATK:
+            if (spattack > params[i].arg1)
+                currentCondition = TRUE;
+            break;
+        case IF_SPDEF:
+            if (spdefense > params[i].arg1)
+                currentCondition = TRUE;
+            break;
+        case IF_SPD:
+            if (speed > params[i].arg1)
+                currentCondition = TRUE;
+            break;
+        case IF_HP:
+            if (hp > params[i].arg1)
+                currentCondition = TRUE;
+            break;
         case CONDITIONS_END:
             break;
         }
@@ -4821,7 +4849,7 @@ u32 GetEvolutionTargetSpecies(struct Pokemon *mon, enum EvolutionMode mode, u16 
     // Prevent evolution with Everstone, unless we're just viewing the party menu with an evolution item
     if (holdEffect == HOLD_EFFECT_PREVENT_EVOLVE
         && mode != EVO_MODE_ITEM_CHECK
-        && (P_KADABRA_EVERSTONE < GEN_4 || species != SPECIES_KADABRA))
+        && (P_KAKKINMON_EVERSTONE < GEN_4 || species != SPECIES_KAKKINMON))
         return SPECIES_NONE;
 
     switch (mode)

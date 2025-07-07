@@ -39,7 +39,7 @@ Music: Male
 Battle Type: Singles
 Difficulty: Normal
 
-Mewtwo
+Agumon_fake_expert
 Level: 5
 
 === 2 ===
@@ -51,7 +51,7 @@ Music: Male
 Battle Type: Singles
 Difficulty: Normal
 
-Mewtwo
+Agumon_fake_expert
 Level: 50
 
 === 2 ===
@@ -63,7 +63,7 @@ Music: Male
 Battle Type: Singles
 Difficulty: Easy
 
-Metapod
+Dodomon
 Level: 1
 
 === 2 ===
@@ -87,13 +87,13 @@ Music: Male
 Battle Type: Singles
 Party Size: 1
 
-Wynaut
+Exveemon
 
-Wobbuffet
+Lopmon_x
 
-Eevee
+Crabmon_x
 
-Mew
+Falcomon
 
 === 4 ===
 Name: Test4
@@ -104,20 +104,20 @@ Music: Male
 Battle Type: Singles
 Party Size: 3
 
-Wynaut
+Exveemon
 
-Wobbuffet
+Lopmon_x
 Tags: Lead
 
-Eevee
+Crabmon_x
 Tags: Ace
 
-Mew
+Falcomon
 
-Oddish
+Zerimon
 Tags: Ace
 
-Aron
+Blkgatomon
 Tags: Lead
 
 === 5 ===
@@ -130,33 +130,33 @@ Battle Type: Doubles
 Party Size: 3
 Pool Rules: Weather Doubles
 
-Wynaut
+Exveemon
 Tags: Lead
 
-Wobbuffet
+Lopmon_x
 Tags: Lead
 
-Vulpix
+Relemon
 Tags: Lead / Weather Setter
 
-Bulbasaur
+Argomon
 Tags: Lead / Weather Abuser
 
-Torkoal
+Clockmon
 Tags: Lead / Weather Setter
 
 Cherrim
 Tags: Lead / Weather Abuser
 
-Mew
+Falcomon
 Tags: Lead
 
-Aron
+Blkgatomon
 Tags: Lead
 
-Oddish
+Zerimon
 
-Eevee
+Crabmon_x
 
 === 6 ===
 Name: Test6
@@ -168,13 +168,13 @@ Battle Type: Singles
 Party Size: 2
 Pool Rules: Basic
 
-Wynaut
+Exveemon
 Tags: Lead
 
-Wobbuffet
+Lopmon_x
 Tags: Lead
 
-Eevee
+Crabmon_x
 Tags: Lead
 
 === 7 ===
@@ -188,12 +188,12 @@ Party Size: 2
 Pool Rules: Basic
 Pool Prune: Test
 
-Wynaut
+Exveemon
 
-Wobbuffet
+Lopmon_x
 Tags: Lead
 
-Eevee
+Crabmon_x
 
 === 8 ===
 Name: Test1
@@ -206,12 +206,12 @@ Party Size: 2
 Pool Rules: Basic
 Pool Pick Functions: Lowest
 
-Wynaut
+Exveemon
 Tags: Ace
 
-Wobbuffet
+Lopmon_x
 
-Eevee
+Crabmon_x
 Tags: Lead
 
 === 9 ===
@@ -223,9 +223,9 @@ Music: Male
 Double Battle: Yes
 Party Size: 2
 
-Wynaut
+Exveemon
 
-Wobbuffet
+Lopmon_x
 
 === 10 ===
 Name: Test10
@@ -236,6 +236,6 @@ Music: Male
 Battle Type: Doubles
 Party Size: 2
 
-Wynaut
+Exveemon
 
-Wobbuffet
+Lopmon_x

@@ -70,7 +70,7 @@ SINGLE_BATTLE_TEST("Fluffy halves damage taken from moves that make direct conta
     PARAMETRIZE { ability = ABILITY_KLUTZ; }
     PARAMETRIZE { ability = ABILITY_FLUFFY; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_PROTECTIVE_PADS); }
+        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_PROTECTIVE_PADS); }
         OPPONENT(SPECIES_STUFFUL) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH); }
@@ -88,7 +88,7 @@ SINGLE_BATTLE_TEST("Fluffy does not halve damage taken from moves that make dire
     PARAMETRIZE { ability = ABILITY_KLUTZ; }
     PARAMETRIZE { ability = ABILITY_FLUFFY; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_PUNCHING_GLOVE); }
+        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_PUNCHING_GLOVE); }
         OPPONENT(SPECIES_STUFFUL) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_THUNDER_PUNCH); }

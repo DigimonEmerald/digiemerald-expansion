@@ -10,7 +10,7 @@ SINGLE_BATTLE_TEST("Sand Force prevents damage from sandstorm")
         ASSUME(type1 != TYPE_GROUND && type2 != TYPE_GROUND);
         ASSUME(type1 != TYPE_STEEL && type2 != TYPE_STEEL);
         PLAYER(SPECIES_SHELLOS) { Ability(ABILITY_SAND_FORCE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_SANDSTORM); }
     } SCENE {
@@ -32,7 +32,7 @@ SINGLE_BATTLE_TEST("Sand Force increases the power of Rock-, Ground- and Steel-t
         ASSUME(GetMoveType(MOVE_EARTHQUAKE) == TYPE_GROUND);
         ASSUME(GetMoveType(MOVE_IRON_HEAD) == TYPE_STEEL);
         PLAYER(SPECIES_SHELLOS) { Ability(ABILITY_SAND_FORCE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, moveOpponent); MOVE(player, movePlayer); }
     } SCENE {
@@ -52,7 +52,7 @@ SINGLE_BATTLE_TEST("Sand Force don't increase move power if Cloud Nine/Air Lock 
     GIVEN {
         ASSUME(GetMoveType(MOVE_ROCK_THROW) == TYPE_ROCK);
         PLAYER(SPECIES_SHELLOS) { Ability(ABILITY_SAND_FORCE); }
-        OPPONENT(SPECIES_GOLDUCK) { Ability(ABILITY_CLOUD_NINE); }
+        OPPONENT(SPECIES_DEMMERAMON) { Ability(ABILITY_CLOUD_NINE); }
     } WHEN {
         TURN { MOVE(opponent, move); MOVE(player, MOVE_ROCK_THROW); }
     } SCENE {

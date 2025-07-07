@@ -561,7 +561,7 @@ Cry_Poyomon::
 	.incbin "sound/direct_sound_samples/cries/poyomon.bin"
 .endif @ P_FAMILY_POPOMON
 
-.if P_FAMILY_NIDORAN == TRUE
+.if P_FAMILY_PUNIMON == TRUE
 	.align 2
 Cry_Punimon::
 	.incbin "sound/direct_sound_samples/cries/punimon.bin"
@@ -585,7 +585,7 @@ Cry_Puttimon::
 	.align 2
 Cry_Puwamon::
 	.incbin "sound/direct_sound_samples/cries/puwamon.bin"
-.endif @ P_FAMILY_NIDORAN
+.endif @ P_FAMILY_PUNIMON
 
 .if P_FAMILY_PUYOMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
@@ -872,7 +872,7 @@ Cry_Pickmon_silverMega::
 .if P_GALARIAN_FORMS == TRUE
 	.align 2
 Cry_PagumonGalarian::
-	.incbin "sound/direct_sound_samples/cries/slowpoke_galar.bin"
+	.incbin "sound/direct_sound_samples/cries/pagumon_galar.bin"
 
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_PAGUMON
@@ -1362,7 +1362,7 @@ Cry_Renamon_x::
 
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
-Cry_Porygonz::
+Cry_PorygonZ::
 	.incbin "sound/direct_sound_samples/cries/porygon_z.bin"
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_GEN_2_CROSS_EVOS

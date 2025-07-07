@@ -93,7 +93,7 @@ BattleFrontier_OutsideEast_EventScript_Twin::
 
 BattleFrontier_OutsideEast_EventScript_Man2::
 	lock
-	msgbox BattleFrontier_OutsideEast_Text_GoRackUpSofalcomoninsForDaddy, MSGBOX_DEFAULT
+	msgbox BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForDaddy, MSGBOX_DEFAULT
 	release
 	end
 
@@ -331,7 +331,7 @@ BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon:
 	.string "I'm better than my daddy\n"
 	.string "at POKéMON.$"
 
-BattleFrontier_OutsideEast_Text_GoRackUpSofalcomoninsForDaddy:
+BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForDaddy:
 	.string "Go on, my baby sweetie!\n"
 	.string "Go rack up some wins for Daddy!\p"
 	.string "You're just like your mother,\n"

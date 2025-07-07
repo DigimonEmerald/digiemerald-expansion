@@ -38,8 +38,8 @@ SINGLE_BATTLE_TEST("Type-enhancing items increase the base power of moves by 20%
             ASSUME(GetItemHoldEffect(item) == HOLD_EFFECT_TYPE_POWER);
             ASSUME(GetItemSecondaryId(item) == type);
         }
-        PLAYER(SPECIES_WOBBUFFET) { Item(item); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X) { Item(item); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {

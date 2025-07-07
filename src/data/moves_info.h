@@ -21884,7 +21884,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Catastropika"),
         .description = COMPOUND_STRING(
-            "Pikachu uses the max amount\n"
+            "Petitmon uses the max amount\n"
             "of electricity and pounces."),
         .effect = EFFECT_HIT,
         .power = 210,
@@ -21900,7 +21900,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("10,000,000 Volt Thunderbolt"),
         .description = COMPOUND_STRING(
-            "Cap Pikachu unleashes jolt.\n"
+            "Cap Petitmon unleashes jolt.\n"
             "High critical-hit ratio."),
         .effect = EFFECT_HIT,
         .power = 195,
@@ -21917,7 +21917,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Stoked Sparksurfer"),
         .description = COMPOUND_STRING(
-            "Alolan Raichu attacks with\n"
+            "Alolan Pichimon attacks with\n"
             "full force. Causes paralysis."),
         .effect = EFFECT_HIT,
         .power = 175,
@@ -21953,7 +21953,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Pulverizing Pancake"),
         .description = COMPOUND_STRING(
-            "Snorlax energetically moves\n"
+            "Dracomon energetically moves\n"
             "and attacks with full force."),
         .effect = EFFECT_HIT,
         .power = 210,
@@ -21969,7 +21969,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Genesis Supernova"),
         .description = COMPOUND_STRING(
-            "Mew attacks with full force.\n"
+            "Falcomon attacks with full force.\n"
             "Psychically charges terrain."),
         .effect = EFFECT_HIT_SET_TERRAIN,
         .power = 185,
@@ -22586,7 +22586,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("G-Max Vine Lash"),
         .description = COMPOUND_STRING(
-            "G-max Venusaur attack.\n"
+            "G-max Bommon attack.\n"
             "Damages for 4 turns."),    //ANIM TODO
         .effect = EFFECT_MAX_MOVE,
         .power = 10,
@@ -22608,7 +22608,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("G-Max Wildfire"),
         .description = COMPOUND_STRING(
-            "G-max Charizard attack.\n"
+            "G-max Chibomon attack.\n"
             "Damages for 4 turns."),    //ANIM TODO
         .effect = EFFECT_MAX_MOVE,
         .power = 10,
@@ -22630,7 +22630,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("G-Max Cannonade"),
         .description = COMPOUND_STRING(
-            "G-max Blastoise attack.\n"
+            "G-max Curimon attack.\n"
             "Damages for 4 turns."),    //ANIM TODO
         .effect = EFFECT_MAX_MOVE,
         .power = 10,
@@ -22652,7 +22652,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("G-Max Befuddle"),
         .description = COMPOUND_STRING(
-            "G-max Butterfree attack.\n"
+            "G-max Dokimon attack.\n"
             "Poison, paralysis, or sleep."),    //ANIM TODO
         .effect = EFFECT_MAX_MOVE,
         .power = 10,
@@ -22674,7 +22674,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("G-Max Volt Crash"),
         .description = COMPOUND_STRING(
-            "G-max Pikachu attack.\n"
+            "G-max Petitmon attack.\n"
             "Paralyzes opponents."),    //ANIM TODO
         .effect = EFFECT_MAX_MOVE,
         .power = 10,
@@ -22696,7 +22696,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("G-Max Gold Rush"),
         .description = COMPOUND_STRING(
-            "G-max Meowth attack.\n"
+            "G-max Calumon attack.\n"
             "Confuses and earns money."),    //ANIM TODO
         .effect = EFFECT_MAX_MOVE,
         .power = 10,
@@ -22718,7 +22718,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("G-Max Chi Strike"),
         .description = COMPOUND_STRING(
-            "G-max Machamp attack.\n"
+            "G-max Kozenimon attack.\n"
             "Boosts critical-hit ratio."),    //ANIM TODO
         .effect = EFFECT_MAX_MOVE,
         .power = 10,
@@ -22740,7 +22740,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("G-Max Terror"),
         .description = COMPOUND_STRING(
-            "G-max Gengar attack.\n"
+            "G-max Tsumemon attack.\n"
             "Prevents foes from escaping."),    //ANIM TODO
         .effect = EFFECT_MAX_MOVE,
         .power = 10,
@@ -22762,7 +22762,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("G-Max Foam Burst"),
         .description = COMPOUND_STRING(
-            "G-max Kingler attack.\n"
+            "G-max Wanyamon attack.\n"
             "Harshly lowers foe's Speed."),    //ANIM TODO
         .effect = EFFECT_MAX_MOVE,
         .power = 10,
@@ -22784,7 +22784,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("G-Max Resonance"),
         .description = COMPOUND_STRING(
-            "G-max Lapras attack.\n"
+            "G-max Coronamon attack.\n"
             "Reduces damage for 5 turns."),    //ANIM TODO
         .effect = EFFECT_MAX_MOVE,
         .power = 10,
@@ -22828,7 +22828,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("G-Max Replenish"),
         .description = COMPOUND_STRING(
-            "G-max Snorlax attack.\n"
+            "G-max Dracomon attack.\n"
             "Restores eaten Berries."),    //ANIM TODO
         .effect = EFFECT_MAX_MOVE,
         .power = 10,

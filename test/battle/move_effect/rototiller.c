@@ -9,12 +9,12 @@ ASSUMPTIONS
 DOUBLE_BATTLE_TEST("Rototiller boosts Attack and Special Attack of all Grass types on the field")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_TANGELA].types[0] == TYPE_GRASS);
+        ASSUME(gSpeciesInfo[SPECIES_BETAMON].types[0] == TYPE_GRASS);
         ASSUME(gSpeciesInfo[SPECIES_SNIVY].types[0] == TYPE_GRASS);
-        PLAYER(SPECIES_TANGELA);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_BETAMON);
+        PLAYER(SPECIES_LOPMON_X);
         OPPONENT(SPECIES_SNIVY);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(playerRight, MOVE_ROTOTILLER); MOVE(playerLeft, MOVE_CELEBRATE); MOVE(opponentLeft, MOVE_CELEBRATE); MOVE(opponentRight, MOVE_CELEBRATE); }
     } SCENE {
@@ -38,15 +38,15 @@ DOUBLE_BATTLE_TEST("Rototiller boosts Attack and Special Attack of all Grass typ
 SINGLE_BATTLE_TEST("Rototiller fails if there are no valid targets")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[0] != TYPE_GRASS);
-        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[1] != TYPE_GRASS);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        ASSUME(gSpeciesInfo[SPECIES_LOPMON_X].types[0] != TYPE_GRASS);
+        ASSUME(gSpeciesInfo[SPECIES_LOPMON_X].types[1] != TYPE_GRASS);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_ROTOTILLER); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_ROTOTILLER, player);
-        MESSAGE("Wobbuffet used Rototiller!");
+        MESSAGE("Lopmon_x used Rototiller!");
         MESSAGE("But it failed!");
     }
 }
@@ -54,17 +54,17 @@ SINGLE_BATTLE_TEST("Rototiller fails if there are no valid targets")
 SINGLE_BATTLE_TEST("Rototiller doesn't affect pokemon that are semi-invulnerable")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_TANGELA].types[0] == TYPE_GRASS);
+        ASSUME(gSpeciesInfo[SPECIES_BETAMON].types[0] == TYPE_GRASS);
         ASSUME(GetMoveEffect(MOVE_DIG) == EFFECT_SEMI_INVULNERABLE);
-        PLAYER(SPECIES_TANGELA);
-        OPPONENT(SPECIES_TANGELA);
+        PLAYER(SPECIES_BETAMON);
+        OPPONENT(SPECIES_BETAMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DIG); MOVE(player, MOVE_ROTOTILLER); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DIG, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROTOTILLER, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("It won't have any effect on the opposing Tangela!");
+        MESSAGE("It won't have any effect on the opposing Betamon!");
     } THEN {
         EXPECT_EQ(player->statStages[STAT_ATK], DEFAULT_STAT_STAGE + 1);
         EXPECT_EQ(player->statStages[STAT_SPATK], DEFAULT_STAT_STAGE + 1);
@@ -76,17 +76,17 @@ SINGLE_BATTLE_TEST("Rototiller doesn't affect pokemon that are semi-invulnerable
 SINGLE_BATTLE_TEST("Rototiller fails if the only valid target is semi-invulnerable")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_TANGELA].types[0] == TYPE_GRASS);
-        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[0] != TYPE_GRASS);
-        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[1] != TYPE_GRASS);
+        ASSUME(gSpeciesInfo[SPECIES_BETAMON].types[0] == TYPE_GRASS);
+        ASSUME(gSpeciesInfo[SPECIES_LOPMON_X].types[0] != TYPE_GRASS);
+        ASSUME(gSpeciesInfo[SPECIES_LOPMON_X].types[1] != TYPE_GRASS);
         ASSUME(GetMoveEffect(MOVE_DIG) == EFFECT_SEMI_INVULNERABLE);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_TANGELA);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_BETAMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DIG); MOVE(player, MOVE_ROTOTILLER); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DIG, opponent);
-        MESSAGE("Wobbuffet used Rototiller!");
+        MESSAGE("Lopmon_x used Rototiller!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_ROTOTILLER, player);
         MESSAGE("But it failed!");
     } THEN {

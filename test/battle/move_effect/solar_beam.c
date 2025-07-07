@@ -15,8 +15,8 @@ SINGLE_BATTLE_TEST("Solar Beam does not need a charging turn if Sun is up")
     PARAMETRIZE { ability = ABILITY_WHITE_SMOKE; }
 
     GIVEN {
-        PLAYER(SPECIES_TORKOAL) { Ability(ability); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_CLOCKMON) { Ability(ability); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_SOLAR_BEAM); }
         if (ability == ABILITY_WHITE_SMOKE) {
@@ -24,11 +24,11 @@ SINGLE_BATTLE_TEST("Solar Beam does not need a charging turn if Sun is up")
         }
     } SCENE {
         if (ability == ABILITY_WHITE_SMOKE) {
-            MESSAGE("Torkoal used Solar Beam!");
-            MESSAGE("Torkoal absorbed light!");
+            MESSAGE("Clockmon used Solar Beam!");
+            MESSAGE("Clockmon absorbed light!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
         }
-        MESSAGE("Torkoal used Solar Beam!");
+        MESSAGE("Clockmon used Solar Beam!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SOLAR_BEAM, player);
     }
 }

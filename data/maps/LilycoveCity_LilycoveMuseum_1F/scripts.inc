@@ -187,7 +187,7 @@ LilycoveCity_LilycoveMuseum_1F_Text_HonoredYoudVisitInSpiteOfThat:
 	.string "I'm honored that you would visit\n"
 	.string "us in spite of that.$"
 
-LilycoveCity_LilycoveMuseum_1F_Text_ExcellentCanYouCofalcomonithMe:
+LilycoveCity_LilycoveMuseum_1F_Text_ExcellentCanYouComeWithMe:
 	.string "Ah, excellent!\n"
 	.string "You do like paintings!\p"
 	.string "Then, may I ask you to come with me?$"

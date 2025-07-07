@@ -9,53 +9,53 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Chloroblast makes the user lose 1/2 of its Max HP")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(400); MaxHP(400); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X) { HP(400); MaxHP(400); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_CHLOROBLAST); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CHLOROBLAST, player);
         HP_BAR(player, damage: 200);
-        NOT MESSAGE("Wobbuffet fainted!"); // Wobb had more than 1/2 of its HP, so it can't faint.
+        NOT MESSAGE("Lopmon_x fainted!"); // Wobb had more than 1/2 of its HP, so it can't faint.
     }
 }
 
 SINGLE_BATTLE_TEST("Chloroblast causes the user to faint when below 1/2 of its Max HP")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(200); MaxHP(400); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X) { HP(200); MaxHP(400); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_CHLOROBLAST); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CHLOROBLAST, player);
         HP_BAR(player, hp: 0);
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmon_x fainted!");
     }
 }
 
 SINGLE_BATTLE_TEST("Chloroblast causes the user & the target to faint when below 1/2 of its Max HP")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(200) ; MaxHP(400); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X) { HP(200) ; MaxHP(400); }
+        OPPONENT(SPECIES_LOPMON_X) { HP(1); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_CHLOROBLAST); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CHLOROBLAST, player);
         HP_BAR(opponent, hp: 0);
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmon_x fainted!");
         HP_BAR(player, hp: 0);
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmon_x fainted!");
     }
 }
 
 SINGLE_BATTLE_TEST("Chloroblast hp loss is prevented by Magic Guard")
 {
     GIVEN {
-        PLAYER(SPECIES_CLEFAIRY) { Ability(ABILITY_MAGIC_GUARD); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_PUYOMON) { Ability(ABILITY_MAGIC_GUARD); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_CHLOROBLAST); }
     } SCENE {
@@ -68,8 +68,8 @@ SINGLE_BATTLE_TEST("Chloroblast hp loss is prevented by Magic Guard")
 SINGLE_BATTLE_TEST("Chloroblast does not cause recoil damage if the user has Rock Head")
 {
     GIVEN {
-        PLAYER(SPECIES_AERODACTYL) { Ability(ABILITY_ROCK_HEAD); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(400); MaxHP(400); }
+        PLAYER(SPECIES_DRACMON) { Ability(ABILITY_ROCK_HEAD); }
+        OPPONENT(SPECIES_LOPMON_X) { HP(400); MaxHP(400); }
     } WHEN {
         TURN { MOVE(player, MOVE_CHLOROBLAST); }
     } SCENE {
@@ -82,8 +82,8 @@ SINGLE_BATTLE_TEST("Chloroblast does not cause recoil damage if the user has Roc
 SINGLE_BATTLE_TEST("Chloroblast does not cause the user to lose HP even if the opposing mon protected")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, MOVE_PROTECT); MOVE(player, MOVE_CHLOROBLAST); }
     } SCENE {
@@ -99,7 +99,7 @@ SINGLE_BATTLE_TEST("Chloroblast does not cause the user to lose HP even if it is
 {
     GIVEN {
         ASSUME(GetMoveType(MOVE_CHLOROBLAST) == TYPE_GRASS);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
         OPPONENT(SPECIES_GOGOAT) { Ability(ABILITY_SAP_SIPPER); }
     } WHEN {
         TURN { MOVE(player, MOVE_CHLOROBLAST); }
@@ -115,9 +115,9 @@ SINGLE_BATTLE_TEST("Chloroblast does not cause the user to lose HP even if it is
 SINGLE_BATTLE_TEST("Chloroblast does not cause the user to lose HP if there is no target")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, MOVE_MEMENTO); MOVE(player, MOVE_CHLOROBLAST); SEND_OUT(opponent, 1); }
     } SCENE {
@@ -126,9 +126,9 @@ SINGLE_BATTLE_TEST("Chloroblast does not cause the user to lose HP if there is n
             ANIMATION(ANIM_TYPE_MOVE, MOVE_CHLOROBLAST, player);
             HP_BAR(player);
         }
-        MESSAGE("Wobbuffet used Chloroblast!");
+        MESSAGE("Lopmon_x used Chloroblast!");
         MESSAGE("But it failed!");
-        MESSAGE("2 sent out Wobbuffet!");
+        MESSAGE("2 sent out Lopmon_x!");
     }
 }
 
@@ -140,8 +140,8 @@ SINGLE_BATTLE_TEST("Chloroblast is not affected by Reckless", s16 damage)
     PARAMETRIZE { move = MOVE_FRENZY_PLANT; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {

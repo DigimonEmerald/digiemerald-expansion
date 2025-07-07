@@ -190,8 +190,8 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_FRONTIER_SUDOWOODO",
-      "graphics_id": "OBJ_EVENT_GFX_SUDOWOODO",
+      "local_id": "LOCALID_FRONTIER_JUNKMON",
+      "graphics_id": "OBJ_EVENT_GFX_JUNKMON",
       "x": 54,
       "y": 62,
       "elevation": 3,

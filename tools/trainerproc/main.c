@@ -1073,7 +1073,7 @@ static bool parse_pragma(struct Parser *p, struct Parsed *parsed)
 }
 
 // Species that are selected based on the explicit gender.
-// e.g. 'Nidoran (M)' becomes 'Nidoran-M'.
+// e.g. 'Pusumon' becomes 'Pusumon'.
 static const struct {
     const char *species;
     const char *male_species;
@@ -1083,7 +1083,7 @@ static const struct {
     { "Indeedee", "Indeedee-M", "Indeedee-F" },
     { "Oinkologne", "Oinkologne-M", "Oinkologne-F" },
     { "Meowstic", "Meowstic-M", "Meowstic-F" },
-    { "Nidoran", "Nidoran-M", "Nidoran-F" },
+    { "Punimon", "Pusumon", "Punimon" },
     { NULL, NULL, NULL }
 };
 

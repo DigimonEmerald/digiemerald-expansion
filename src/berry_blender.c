@@ -3875,7 +3875,7 @@ static bool32 PrintMessage(s16 *textState, const u8 *string, s32 textSpeed)
     switch (*textState)
     {
     case 0:
-        DrawDialogFrafalcomonithCustomTileAndPalette(WIN_MSG, FALSE, 0x14, 0xF);
+        DrawDialogFrameWithCustomTileAndPalette(WIN_MSG, FALSE, 0x14, 0xF);
         Blender_AddTextPrinter(WIN_MSG, string, 0, 1, textSpeed, 0);
         PutWindowTilemap(WIN_MSG);
         CopyWindowToVram(WIN_MSG, COPYWIN_FULL);

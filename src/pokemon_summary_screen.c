@@ -1866,7 +1866,7 @@ static void ShowMonSkillsInfo(u8 taskId, s16 mode)
 
 void ExtractMonSkillStatsData(struct Pokemon *mon, struct PokeSummary *sum)
 {
-    if (sMonSummaryScreen->monList.mons == gPlayerParty || sMonSummaryScreen->mode == SUMMARY_MODE_BOX || sMonSummaryScreen->handleDeoxys == TRUE)
+    if (sMonSummaryScreen->monList.mons == gPlayerParty || sMonSummaryScreen->mode == SUMMARY_MODE_BOX || sMonSummaryScreen->handleGesomon == TRUE)
     {
         sum->nature = GetNature(mon);
         sum->mintNature = GetMonData(mon, MON_DATA_HIDDEN_NATURE);

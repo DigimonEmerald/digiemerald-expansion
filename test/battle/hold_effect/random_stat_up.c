@@ -10,14 +10,14 @@ SINGLE_BATTLE_TEST("Starf Berry randomly raises the holder's Attack, Defense, Sp
 {
     PASSES_RANDOMLY(1, 5, RNG_RANDOM_STAT_UP);
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_STARF_BERRY); HP(100); MaxHP(400); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_STARF_BERRY); HP(100); MaxHP(400); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Using Starf Berry, the Attack of Wobbuffet sharply rose!");
+        MESSAGE("Using Starf Berry, the Attack of Lopmon_x sharply rose!");
     } THEN {
         EXPECT_EQ(player->statStages[STAT_ATK], DEFAULT_STAT_STAGE + 2);
     }
@@ -26,8 +26,8 @@ SINGLE_BATTLE_TEST("Starf Berry randomly raises the holder's Attack, Defense, Sp
 SINGLE_BATTLE_TEST("Starf Berry randomly raises the holder's Attack, Defense, Sp. Atk, Sp. Def, or Speed by two stages when the holder's HP drop to 1/4 or below")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_STARF_BERRY); HP(101); MaxHP(400); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_STARF_BERRY); HP(101); MaxHP(400); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {
@@ -54,7 +54,7 @@ SINGLE_BATTLE_TEST("Starf Berry randomly raises the holder's Attack, Defense, Sp
 {
     GIVEN {
         PLAYER(SPECIES_MUNCHLAX) { Item(ITEM_STARF_BERRY); HP(201); MaxHP(400); Ability(ABILITY_GLUTTONY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {
@@ -81,7 +81,7 @@ SINGLE_BATTLE_TEST("Starf Berry randomly raises the holder's Attack, Defense, Sp
 {
     GIVEN {
         PLAYER(SPECIES_FLAPPLE) { Item(ITEM_STARF_BERRY); HP(101); MaxHP(400); Ability(ABILITY_RIPEN); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {

@@ -5,7 +5,7 @@ SINGLE_BATTLE_TEST("Slush Rush doubles speed from hail")
 {
     GIVEN {
         PLAYER(SPECIES_CETITAN) { Ability(ABILITY_SLUSH_RUSH); Speed(100); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(199); }
+        OPPONENT(SPECIES_LOPMON_X) { Speed(199); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_HAIL); }
         TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_CELEBRATE); }
@@ -21,7 +21,7 @@ SINGLE_BATTLE_TEST("Slush Rush doubles speed from snow")
 {
     GIVEN {
         PLAYER(SPECIES_CETITAN) { Ability(ABILITY_SLUSH_RUSH); Speed(100); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(199); }
+        OPPONENT(SPECIES_LOPMON_X) { Speed(199); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_SNOWSCAPE); }
         TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_CELEBRATE); }
@@ -37,7 +37,7 @@ SINGLE_BATTLE_TEST("Slush Rush doesn't double speed if Cloud Nine/Air Lock is on
 {
     GIVEN {
         PLAYER(SPECIES_CETITAN) { Ability(ABILITY_SLUSH_RUSH); Speed(100); }
-        OPPONENT(SPECIES_GOLDUCK) { Speed(199); Ability(ABILITY_CLOUD_NINE); }
+        OPPONENT(SPECIES_DEMMERAMON) { Speed(199); Ability(ABILITY_CLOUD_NINE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_SNOWSCAPE); }
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_CELEBRATE); }
@@ -52,9 +52,9 @@ SINGLE_BATTLE_TEST("Slush Rush doesn't double speed if Cloud Nine/Air Lock is on
 SINGLE_BATTLE_TEST("Slush Rush doesn't prevent non-Ice types from taking damage in Hail")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[0] != TYPE_ICE);
-        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[1] != TYPE_ICE);
-        PLAYER(SPECIES_WOBBUFFET);
+        ASSUME(gSpeciesInfo[SPECIES_LOPMON_X].types[0] != TYPE_ICE);
+        ASSUME(gSpeciesInfo[SPECIES_LOPMON_X].types[1] != TYPE_ICE);
+        PLAYER(SPECIES_LOPMON_X);
         OPPONENT(SPECIES_CETITAN) { Ability(ABILITY_SLUSH_RUSH); }
     } WHEN {
         TURN { MOVE(player, MOVE_HAIL); MOVE(opponent, MOVE_SKILL_SWAP); }

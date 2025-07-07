@@ -49,11 +49,11 @@ DOUBLE_BATTLE_TEST("Frisk triggers for player in a Double Battle after switching
 
     GIVEN {
         ASSUME(!IsBattleMoveStatus(MOVE_POUND));
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        PLAYER(SPECIES_FURRET) { Ability(ABILITY_FRISK); };
-        OPPONENT(SPECIES_WYNAUT) { Item(ITEM_POTION); }
-        OPPONENT(SPECIES_WYNAUT);
+        PLAYER(SPECIES_LOPMON_X) { HP(1); }
+        PLAYER(SPECIES_LOPMON_X) { HP(1); }
+        PLAYER(SPECIES_GAZIMON_X) { Ability(ABILITY_FRISK); };
+        OPPONENT(SPECIES_EXVEEMON) { Item(ITEM_POTION); }
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_POUND, target: target); SEND_OUT(target, 2); }
     } SCENE {
@@ -79,11 +79,11 @@ DOUBLE_BATTLE_TEST("Frisk triggers for opponent in a Double Battle after switchi
 
     GIVEN {
         ASSUME(!IsBattleMoveStatus(MOVE_POUND));
-        PLAYER(SPECIES_WYNAUT) { Item(ITEM_POTION); }
-        PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_FURRET) { Ability(ABILITY_FRISK); };
+        PLAYER(SPECIES_EXVEEMON) { Item(ITEM_POTION); }
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_LOPMON_X) { HP(1); }
+        OPPONENT(SPECIES_LOPMON_X) { HP(1); }
+        OPPONENT(SPECIES_GAZIMON_X) { Ability(ABILITY_FRISK); };
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_POUND, target: target); SEND_OUT(target, 2); }
     } SCENE {

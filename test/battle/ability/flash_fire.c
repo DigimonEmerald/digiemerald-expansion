@@ -7,7 +7,7 @@ SINGLE_BATTLE_TEST("Flash Fire boosts fire type moves by 50% but no subsequent i
 
     GIVEN {
         PLAYER(SPECIES_HEATRAN) { Ability(ABILITY_FLASH_FIRE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_EMBER); MOVE(opponent, MOVE_EMBER); }
         TURN { MOVE(player, MOVE_EMBER); MOVE(opponent, MOVE_EMBER); }

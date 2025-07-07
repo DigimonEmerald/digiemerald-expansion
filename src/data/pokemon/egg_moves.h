@@ -210,7 +210,7 @@ static const u16 sPopomonAlolaEggMoveLearnset[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_POPOMON
 
-#if P_FAMILY_NIDORAN
+#if P_FAMILY_PUNIMON
 static const u16 sPunimonEggMoveLearnset[] = {
     MOVE_SUPERSONIC,
     MOVE_DISABLE,
@@ -246,7 +246,7 @@ static const u16 sPusumonEggMoveLearnset[] = {
     MOVE_VENOM_DRENCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_NIDORAN
+#endif //P_FAMILY_PUNIMON
 
 #if P_FAMILY_PUYOMON
 #if P_GEN_2_CROSS_EVOS

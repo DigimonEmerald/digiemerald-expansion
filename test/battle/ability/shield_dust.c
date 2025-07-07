@@ -156,8 +156,8 @@ DOUBLE_BATTLE_TEST("Shield Dust blocks Sparkling Aria if all other targets avoid
     GIVEN {
         PLAYER(SPECIES_PRIMARINA);
         PLAYER(SPECIES_VIVILLON) { Ability(ABILITY_SHIELD_DUST); Status1(STATUS1_BURN); }
-        OPPONENT(SPECIES_WOBBUFFET) { Status1(STATUS1_BURN); }
-        OPPONENT(SPECIES_WYNAUT) { Status1(STATUS1_BURN); }
+        OPPONENT(SPECIES_LOPMON_X) { Status1(STATUS1_BURN); }
+        OPPONENT(SPECIES_EXVEEMON) { Status1(STATUS1_BURN); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_FLY, target:playerLeft); MOVE(opponentRight, MOVE_PROTECT); MOVE(playerRight, MOVE_CELEBRATE); MOVE(playerLeft, MOVE_SPARKLING_ARIA); }
     } SCENE {

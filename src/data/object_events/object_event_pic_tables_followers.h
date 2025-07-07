@@ -291,7 +291,7 @@ static const struct SpriteFrameImage sPicTable_PoyomonAlola[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_POPOMON
 
-#if P_FAMILY_NIDORAN
+#if P_FAMILY_PUNIMON
 static const struct SpriteFrameImage sPicTable_Punimon[] = {
     overworld_ascending_frames(gObjectEventPic_Punimon, 4, 4),
 };
@@ -310,7 +310,7 @@ static const struct SpriteFrameImage sPicTable_Puttimon[] = {
 static const struct SpriteFrameImage sPicTable_Puwamon[] = {
     overworld_ascending_frames(gObjectEventPic_Puwamon, 4, 4),
 };
-#endif //P_FAMILY_NIDORAN
+#endif //P_FAMILY_PUNIMON
 
 #if P_FAMILY_PUYOMON
 #if P_GEN_2_CROSS_EVOS
@@ -1269,8 +1269,8 @@ static const struct SpriteFrameImage sPicTable_Renamon_x[] = {
     overworld_ascending_frames(gObjectEventPic_Renamon_x, 4, 4),
 };
 #if P_GEN_4_CROSS_EVOS
-static const struct SpriteFrameImage sPicTable_Porygonz[] = {
-    overworld_ascending_frames(gObjectEventPic_Porygonz, 4, 4),
+static const struct SpriteFrameImage sPicTable_PorygonZ[] = {
+    overworld_ascending_frames(gObjectEventPic_PorygonZ, 4, 4),
 };
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_GEN_2_CROSS_EVOS
@@ -5790,8 +5790,8 @@ static const struct SpriteFrameImage sPicTable_Sandaconda[] = {
 static const struct SpriteFrameImage sPicTable_Cramorant[] = {
     overworld_ascending_frames(gObjectEventPic_Cramorant, 4, 4),
 };
-/*static const struct SpriteFrameImage sPicTable_CramorantBuraimon[] = {
-    overworld_ascending_frames(gObjectEventPic_CramorantBuraimon, 4, 4),
+/*static const struct SpriteFrameImage sPicTable_CramorantGulping[] = {
+    overworld_ascending_frames(gObjectEventPic_CramorantGulping, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_CramorantGorging[] = {
     overworld_ascending_frames(gObjectEventPic_CramorantGorging, 4, 4),

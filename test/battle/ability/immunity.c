@@ -56,9 +56,9 @@ SINGLE_BATTLE_TEST("Immunity doesn't prevent pokemon from being poisoned by Toxi
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_DRAGON_TAIL) == EFFECT_HIT_SWITCH_TARGET);
         ASSUME(GetMoveEffect(MOVE_TOXIC_SPIKES) == EFFECT_TOXIC_SPIKES);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_SNORLAX) { Ability(ABILITY_IMMUNITY); }
-        OPPONENT(SPECIES_PINSIR) { Ability(ABILITY_MOLD_BREAKER); }
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_DRACOMON) { Ability(ABILITY_IMMUNITY); }
+        OPPONENT(SPECIES_TYUTYUMON) { Ability(ABILITY_MOLD_BREAKER); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TOXIC_SPIKES); }
         TURN { MOVE(opponent, MOVE_DRAGON_TAIL); }

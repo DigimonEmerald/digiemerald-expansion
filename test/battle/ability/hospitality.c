@@ -105,7 +105,7 @@ DOUBLE_BATTLE_TEST("Hospitality does not trigger if there is no ally on the fiel
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BLIZZARD, opponentLeft);
         HP_BAR(playerLeft);
         HP_BAR(playerRight);
-        MESSAGE("Wobbuffet fainted!");
+        MESSAGE("Lopmon_x fainted!");
 <<<<<<< HEAD
         MESSAGE("Lopmonx fainted!");
         MESSAGE("Go! Ptchageist!");
@@ -121,11 +121,11 @@ DOUBLE_BATTLE_TEST("Hospitality is blocked by Heal Block")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_HEAL_BLOCK) == EFFECT_HEAL_BLOCK);
-        PLAYER(SPECIES_WOBBUFFET)
-        PLAYER(SPECIES_WOBBUFFET) { HP(75); MaxHP(100); }
+        PLAYER(SPECIES_LOPMON_X)
+        PLAYER(SPECIES_LOPMON_X) { HP(75); MaxHP(100); }
         PLAYER(SPECIES_POLTCHAGEIST) { Ability(ABILITY_HOSPITALITY); }
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_HEAL_BLOCK, target: playerRight); }
         TURN { SWITCH(playerLeft, 2); }
@@ -133,7 +133,7 @@ DOUBLE_BATTLE_TEST("Hospitality is blocked by Heal Block")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_BLOCK, opponentLeft);
         NONE_OF {
             ABILITY_POPUP(playerLeft, ABILITY_HOSPITALITY);
-            MESSAGE("Wobbuffet drank down all the matcha that Poltchageist made!");
+            MESSAGE("Lopmon_x drank down all the matcha that Poltchageist made!");
             HP_BAR(playerRight, damage: -25);
         }
     }

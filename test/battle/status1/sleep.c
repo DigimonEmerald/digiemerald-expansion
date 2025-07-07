@@ -27,8 +27,8 @@ SINGLE_BATTLE_TEST("Sleep: Spore doesn't affect grass types (Gen 6+)")
     GIVEN {
         ASSUME(IsPowderMove(MOVE_SPORE));
         ASSUME(B_POWDER_GRASS >= GEN_6);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_CHIKORITA);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_FALCOMON_06);
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
     } SCENE {

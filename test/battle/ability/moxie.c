@@ -18,13 +18,13 @@ DOUBLE_BATTLE_TEST("Moxie/Chilling Neigh raises Attack by one stage after direct
         TURN { MOVE(playerLeft, MOVE_EARTHQUAKE); SEND_OUT(opponentLeft, 2);  }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, playerLeft);
-        MESSAGE("The opposing Glalie fainted!");
-        MESSAGE("Snorunt fainted!");
-        MESSAGE("The opposing Abra fainted!");
+        MESSAGE("The opposing Eyesmon fainted!");
+        MESSAGE("Exveemon_virus fainted!");
+        MESSAGE("The opposing Hopmon fainted!");
         ABILITY_POPUP(playerLeft, abilityPopUp);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-        if (species == SPECIES_SALAMENCE)
-            MESSAGE("Salamence's Attack drastically rose!");
+        if (species == SPECIES_FROGMON)
+            MESSAGE("Frogmon's Attack drastically rose!");
         else if (species == SPECIES_GLASTRIER)
             MESSAGE("Glastrier's Attack drastically rose!");
         else

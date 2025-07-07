@@ -5,9 +5,9 @@
 ASSUMPTIONS
 {
     ASSUME(GetMoveEffect(MOVE_HAIL) == EFFECT_HAIL);
-    ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[0] != TYPE_ICE && gSpeciesInfo[SPECIES_WOBBUFFET].types[1] != TYPE_ICE);
-    ASSUME(gSpeciesInfo[SPECIES_WYNAUT].types[0] != TYPE_ICE && gSpeciesInfo[SPECIES_WYNAUT].types[1] != TYPE_ICE);
-    ASSUME(gSpeciesInfo[SPECIES_GLALIE].types[0] == TYPE_ICE || gSpeciesInfo[SPECIES_GLALIE].types[1] == TYPE_ICE);
+    ASSUME(gSpeciesInfo[SPECIES_LOPMON_X].types[0] != TYPE_ICE && gSpeciesInfo[SPECIES_LOPMON_X].types[1] != TYPE_ICE);
+    ASSUME(gSpeciesInfo[SPECIES_EXVEEMON].types[0] != TYPE_ICE && gSpeciesInfo[SPECIES_EXVEEMON].types[1] != TYPE_ICE);
+    ASSUME(gSpeciesInfo[SPECIES_EYESMON].types[0] == TYPE_ICE || gSpeciesInfo[SPECIES_EYESMON].types[1] == TYPE_ICE);
 }
 
 SINGLE_BATTLE_TEST("Hail deals 1/16 damage per turn")
@@ -94,10 +94,10 @@ SINGLE_BATTLE_TEST("Hail damage rounds properly when maxHP < 16")
 SINGLE_BATTLE_TEST("Hail doesn't do damage when weather is negated")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[0] != TYPE_ICE);
-        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].types[1] != TYPE_ICE);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_GOLDUCK) { Ability(ABILITY_CLOUD_NINE); }
+        ASSUME(gSpeciesInfo[SPECIES_LOPMON_X].types[0] != TYPE_ICE);
+        ASSUME(gSpeciesInfo[SPECIES_LOPMON_X].types[1] != TYPE_ICE);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_DEMMERAMON) { Ability(ABILITY_CLOUD_NINE); }
     } WHEN {
         TURN { MOVE(player, MOVE_HAIL); }
     } SCENE {

@@ -14,8 +14,8 @@ SINGLE_BATTLE_TEST("Big Root increases healing from absorbing moves", s16 damage
     PARAMETRIZE { item = ITEM_BIG_ROOT; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(200); Item(item); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X) { HP(200); Item(item); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_ABSORB); }
     } SCENE {
@@ -41,8 +41,8 @@ SINGLE_BATTLE_TEST("Big Root increases the damage restored from Leech Seed, Ingr
     PARAMETRIZE { item = ITEM_BIG_ROOT; move = MOVE_AQUA_RING;  }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(200); Item(item); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X) { HP(200); Item(item); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
@@ -65,8 +65,8 @@ SINGLE_BATTLE_TEST("Big Root increases damage from absorbing Liquid Ooze", s16 d
     PARAMETRIZE { item = ITEM_BIG_ROOT; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(200); Item(item); }
-        OPPONENT(SPECIES_TENTACOOL) { Ability(ABILITY_LIQUID_OOZE); }
+        PLAYER(SPECIES_LOPMON_X) { HP(200); Item(item); }
+        OPPONENT(SPECIES_MINOMON) { Ability(ABILITY_LIQUID_OOZE); }
     } WHEN {
         TURN { MOVE(player, MOVE_ABSORB); }
     } SCENE {

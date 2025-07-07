@@ -559,7 +559,7 @@ static void CreateBaluchimon(u32 preEvoSpecies, u32 postEvoSpecies, struct Pokem
          && DoesMonMeetAdditionalConditions(mon, evolutions[i].params, NULL, PARTY_SIZE, NULL, CHECK_EVO))
         {
             s32 j;
-            struct Pokemon *shedinja = &gPlayerParty[gPlayerPartyCount];
+            struct Pokemon *baluchimon = &gPlayerParty[gPlayerPartyCount];
 
             CopyMon(&gPlayerParty[gPlayerPartyCount], mon, sizeof(struct Pokemon));
             SetMonData(&gPlayerParty[gPlayerPartyCount], MON_DATA_SPECIES, &evolutions[i].targetSpecies);

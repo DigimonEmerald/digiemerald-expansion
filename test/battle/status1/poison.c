@@ -21,13 +21,13 @@ SINGLE_BATTLE_TEST("Poison can't bad poison a poison or steel type")
 {
     u32 species;
 
-    PARAMETRIZE { species = SPECIES_BELDUM; }
-    PARAMETRIZE { species = SPECIES_BULBASAUR; }
+    PARAMETRIZE { species = SPECIES_FUGAMON; }
+    PARAMETRIZE { species = SPECIES_ARGOMON; }
 
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_POISON_GAS) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_POISON_GAS) == MOVE_EFFECT_POISON);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
         OPPONENT(species);
     } WHEN {
         TURN { MOVE(player, MOVE_POISON_GAS); }

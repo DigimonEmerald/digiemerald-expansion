@@ -10,8 +10,8 @@ SINGLE_BATTLE_TEST("Laser Focus causes the user's move used on the next turn to 
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_LASER_FOCUS) == EFFECT_LASER_FOCUS);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_LASER_FOCUS); }
         TURN { MOVE(player, MOVE_SCRATCH); }

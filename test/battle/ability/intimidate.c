@@ -438,9 +438,9 @@ SINGLE_BATTLE_TEST("Intimdate does not lose timing after mega evolution and swit
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_U_TURN) == EFFECT_HIT_ESCAPE);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_MANECTRIC) { Item(ITEM_MANECTITE); }
-        OPPONENT(SPECIES_ARBOK) { Ability(ABILITY_INTIMIDATE); }
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_BOMNANIMON) { Item(ITEM_MANECTITE); }
+        OPPONENT(SPECIES_PAOMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_U_TURN, gimmick: GIMMICK_MEGA); SEND_OUT(opponent, 1); }
     } SCENE {
@@ -452,12 +452,12 @@ SINGLE_BATTLE_TEST("Intimdate does not lose timing after mega evolution and swit
 DOUBLE_BATTLE_TEST("Intimidate drop down both opposing atk before eject pack has the chance to activate")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_WYNAUT);
-        PLAYER(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE); }
-        OPPONENT(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE); }
+        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { SWITCH(opponentLeft, 2); SEND_OUT(playerLeft, 2); }
     } SCENE {
@@ -474,12 +474,12 @@ DOUBLE_BATTLE_TEST("Intimidate drop down both opposing atk before eject pack has
 DOUBLE_BATTLE_TEST("Intimidate will not miss timing for competitive")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_MILOTIC) { Ability(ABILITY_COMPETITIVE); }
-        PLAYER(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE); }
-        OPPONENT(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE); }
+        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_DOKUGUMON) { Ability(ABILITY_COMPETITIVE); }
+        PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN { SWITCH(opponentLeft, 2); SEND_OUT(playerLeft, 2); }
     } SCENE {

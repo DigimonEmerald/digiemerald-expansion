@@ -82,9 +82,9 @@ SINGLE_BATTLE_TEST("Stealth Rock damage terastalized mons with the correct amoun
     PARAMETRIZE { tera = TRUE; }
 
     GIVEN {
-        PLAYER(SPECIES_CHARIZARD) { TeraType(TYPE_NORMAL); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_CHIBOMON) { TeraType(TYPE_NORMAL); }
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         if (tera == TRUE)
             TURN { MOVE(opponent, MOVE_STEALTH_ROCK); MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); }

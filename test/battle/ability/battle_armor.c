@@ -6,11 +6,11 @@ SINGLE_BATTLE_TEST("Battle Armor and Shell Armor block critical hits")
     u32 species;
     u32 ability;
 
-    PARAMETRIZE { species = SPECIES_KINGLER; ability = ABILITY_SHELL_ARMOR; }
-    PARAMETRIZE { species = SPECIES_ARMALDO; ability = ABILITY_BATTLE_ARMOR; }
+    PARAMETRIZE { species = SPECIES_WANYAMON; ability = ABILITY_SHELL_ARMOR; }
+    PARAMETRIZE { species = SPECIES_DOBERMON_X; ability = ABILITY_BATTLE_ARMOR; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH, criticalHit: TRUE); }
@@ -26,15 +26,15 @@ SINGLE_BATTLE_TEST("Mold Breaker, Teravolt and Turboblaze ignore Battle Armor an
     u32 species1, species2, ability1, ability2;
     static const u32 breakerData[][2] =
     {
-        {SPECIES_PINSIR,   ABILITY_MOLD_BREAKER},
+        {SPECIES_TYUTYUMON,   ABILITY_MOLD_BREAKER},
         {SPECIES_ZEKROM,   ABILITY_TERAVOLT},
         {SPECIES_RESHIRAM, ABILITY_TURBOBLAZE},
     };
 
     for (j = 0; j < ARRAY_COUNT(breakerData); j++)
     {
-        PARAMETRIZE { species1 = breakerData[j][0]; ability1 = breakerData[j][1]; species2 = SPECIES_KINGLER; ability2 = ABILITY_SHELL_ARMOR; }
-        PARAMETRIZE { species1 = breakerData[j][0]; ability1 = breakerData[j][1]; species2 = SPECIES_ARMALDO; ability2 = ABILITY_BATTLE_ARMOR; }
+        PARAMETRIZE { species1 = breakerData[j][0]; ability1 = breakerData[j][1]; species2 = SPECIES_WANYAMON; ability2 = ABILITY_SHELL_ARMOR; }
+        PARAMETRIZE { species1 = breakerData[j][0]; ability1 = breakerData[j][1]; species2 = SPECIES_DOBERMON_X; ability2 = ABILITY_BATTLE_ARMOR; }
     }
 
     GIVEN {

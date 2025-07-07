@@ -57,8 +57,8 @@ SINGLE_BATTLE_TEST("Aerilate boosts power of affected moves by 20% (Gen7+) or 30
         WITH_CONFIG(GEN_CONFIG_ATE_MULTIPLIER, genConfig);
         ASSUME(GetMoveType(MOVE_TACKLE) == TYPE_NORMAL);
         ASSUME(GetMoveEffect(MOVE_SKILL_SWAP) == EFFECT_SKILL_SWAP);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_SALAMENCE) { Ability(ABILITY_MOXIE); Item(ITEM_SALAMENCITE); }
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_FROGMON) { Ability(ABILITY_MOXIE); Item(ITEM_SALAMENCITE); }
     } WHEN {
         TURN { MOVE(opponent, move, gimmick: GIMMICK_MEGA); MOVE(player, MOVE_TACKLE); }
     } SCENE {
@@ -82,9 +82,9 @@ SINGLE_BATTLE_TEST("Aerilate doesn't affect Weather Ball's type", s16 damage)
         ASSUME(GetMoveEffect(MOVE_WEATHER_BALL) == EFFECT_WEATHER_BALL);
         ASSUME(GetMoveType(MOVE_WEATHER_BALL) == TYPE_NORMAL);
         ASSUME(GetMoveEffect(MOVE_SKILL_SWAP) == EFFECT_SKILL_SWAP);
-        ASSUME(gSpeciesInfo[SPECIES_PINSIR].types[0] == TYPE_BUG);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_PINSIR) { Ability(ABILITY_HYPER_CUTTER); Item(ITEM_PINSIRITE); }
+        ASSUME(gSpeciesInfo[SPECIES_TYUTYUMON].types[0] == TYPE_BUG);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_TYUTYUMON) { Ability(ABILITY_HYPER_CUTTER); Item(ITEM_TYUTYUMONITE); }
     } WHEN {
         TURN { MOVE(opponent, move2, gimmick: GIMMICK_MEGA); MOVE(player, move1); }
         TURN { MOVE(player, MOVE_WEATHER_BALL); }
@@ -111,15 +111,15 @@ SINGLE_BATTLE_TEST("Aerilate doesn't affect Natural Gift's type")
         ASSUME(GetMoveEffect(MOVE_NATURAL_GIFT) == EFFECT_NATURAL_GIFT);
         ASSUME(GetMoveEffect(MOVE_SKILL_SWAP) == EFFECT_SKILL_SWAP);
         ASSUME(gNaturalGiftTable[ITEM_TO_BERRY(ITEM_PERSIM_BERRY)].type == TYPE_GROUND);
-        ASSUME(gSpeciesInfo[SPECIES_SALAMENCE_MEGA].types[0] == TYPE_FLYING || gSpeciesInfo[SPECIES_SALAMENCE_MEGA].types[1] == TYPE_FLYING);
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_PERSIM_BERRY); }
-        OPPONENT(SPECIES_SALAMENCE) { Item(ITEM_SALAMENCITE); }
+        ASSUME(gSpeciesInfo[SPECIES_FROGMON_MEGA].types[0] == TYPE_FLYING || gSpeciesInfo[SPECIES_FROGMON_MEGA].types[1] == TYPE_FLYING);
+        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_PERSIM_BERRY); }
+        OPPONENT(SPECIES_FROGMON) { Item(ITEM_SALAMENCITE); }
     } WHEN {
         TURN { MOVE(opponent, move, gimmick: GIMMICK_MEGA); MOVE(player, MOVE_NATURAL_GIFT); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
         NOT { ANIMATION(ANIM_TYPE_MOVE, MOVE_NATURAL_GIFT, player); }
-        MESSAGE("It doesn't affect the opposing Salamence…");
+        MESSAGE("It doesn't affect the opposing Frogmon…");
     }
 }
 
@@ -140,17 +140,17 @@ SINGLE_BATTLE_TEST("Aerilate doesn't affect Judgment / Techno Blast / Multi-Atta
         ASSUME(gItemsInfo[ITEM_SHOCK_DRIVE].secondaryId == TYPE_ELECTRIC);
         ASSUME(gItemsInfo[ITEM_ELECTRIC_MEMORY].holdEffect == HOLD_EFFECT_MEMORY);
         ASSUME(gItemsInfo[ITEM_ELECTRIC_MEMORY].secondaryId == TYPE_ELECTRIC);
-        ASSUME(gSpeciesInfo[SPECIES_DIGLETT].types[0] == TYPE_GROUND);
-        PLAYER(SPECIES_WOBBUFFET) { Item(item); }
-        OPPONENT(SPECIES_SALAMENCE) { Item(ITEM_SALAMENCITE); }
-        OPPONENT(SPECIES_DIGLETT);
+        ASSUME(gSpeciesInfo[SPECIES_BUDMON].types[0] == TYPE_GROUND);
+        PLAYER(SPECIES_LOPMON_X) { Item(item); }
+        OPPONENT(SPECIES_FROGMON) { Item(ITEM_SALAMENCITE); }
+        OPPONENT(SPECIES_BUDMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SKILL_SWAP, gimmick: GIMMICK_MEGA); }
         TURN { SWITCH(opponent, 1); MOVE(player, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SKILL_SWAP, opponent);
         NOT { ANIMATION(ANIM_TYPE_MOVE, move, player); }
-        MESSAGE("It doesn't affect the opposing Diglett…");
+        MESSAGE("It doesn't affect the opposing Budmon…");
     }
 }
 
@@ -159,14 +159,14 @@ SINGLE_BATTLE_TEST("Aerilate doesn't affect Hidden Power's type")
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_HIDDEN_POWER) == EFFECT_HIDDEN_POWER);
         ASSUME(gTypesInfo[TYPE_ELECTRIC].isHiddenPowerType == TRUE);
-        ASSUME(gSpeciesInfo[SPECIES_DIGLETT].types[0] == TYPE_GROUND);
-        PLAYER(SPECIES_PINSIR) { Ability(ABILITY_AERILATE); HPIV(31); AttackIV(31); DefenseIV(31); SpAttackIV(30); SpDefenseIV(31); SpeedIV(31); } // HP Electric
-        OPPONENT(SPECIES_DIGLETT);
+        ASSUME(gSpeciesInfo[SPECIES_BUDMON].types[0] == TYPE_GROUND);
+        PLAYER(SPECIES_TYUTYUMON) { Ability(ABILITY_AERILATE); HPIV(31); AttackIV(31); DefenseIV(31); SpAttackIV(30); SpDefenseIV(31); SpeedIV(31); } // HP Electric
+        OPPONENT(SPECIES_BUDMON);
     } WHEN {
         TURN { MOVE(player, MOVE_HIDDEN_POWER); }
     } SCENE {
         NOT { ANIMATION(ANIM_TYPE_MOVE, MOVE_HIDDEN_POWER, player); }
-        MESSAGE("It doesn't affect the opposing Diglett…");
+        MESSAGE("It doesn't affect the opposing Budmon…");
     }
 }
 

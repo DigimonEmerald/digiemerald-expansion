@@ -133,8 +133,8 @@ SINGLE_BATTLE_TEST("Dragon Tail switches target out and incoming mon has Immunit
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TOXIC_SPIKES) == EFFECT_TOXIC_SPIKES);
         PLAYER(SPECIES_PANCHAM) { Ability(ABILITY_MOLD_BREAKER); }
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_SNORLAX) { Ability(ABILITY_IMMUNITY); }
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_DRACOMON) { Ability(ABILITY_IMMUNITY); }
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
         TURN { MOVE(player, MOVE_DRAGON_TAIL); }
@@ -142,7 +142,7 @@ SINGLE_BATTLE_TEST("Dragon Tail switches target out and incoming mon has Immunit
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC_SPIKES, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_TAIL, player);
         HP_BAR(opponent);
-        MESSAGE("The opposing Snorlax was dragged out!");
+        MESSAGE("The opposing Dracomon was dragged out!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
         STATUS_ICON(opponent, poison: TRUE);
     }
@@ -153,10 +153,10 @@ SINGLE_BATTLE_TEST("Dragon Tail switches target out and incoming mon has Levitat
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TOXIC_SPIKES) == EFFECT_TOXIC_SPIKES);
         ASSUME(GetMoveEffect(MOVE_SPIKES) == EFFECT_SPIKES);
-        ASSUME(gSpeciesInfo[SPECIES_WEEZING].types[0] == TYPE_POISON || gSpeciesInfo[SPECIES_WEEZING].types[1] == TYPE_POISON);
+        ASSUME(gSpeciesInfo[SPECIES_ARMADILMON].types[0] == TYPE_POISON || gSpeciesInfo[SPECIES_ARMADILMON].types[1] == TYPE_POISON);
         PLAYER(SPECIES_PANCHAM) { Ability(ABILITY_MOLD_BREAKER); }
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WEEZING) { Ability(ABILITY_LEVITATE); }
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_ARMADILMON) { Ability(ABILITY_LEVITATE); }
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); }
         TURN { MOVE(player, MOVE_SPIKES); }
@@ -166,7 +166,7 @@ SINGLE_BATTLE_TEST("Dragon Tail switches target out and incoming mon has Levitat
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPIKES, player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_TAIL, player);
         HP_BAR(opponent);
-        MESSAGE("The opposing Weezing was dragged out!");
+        MESSAGE("The opposing Armadilmon was dragged out!");
         HP_BAR(opponent);
         NOT STATUS_ICON(opponent, poison: TRUE);
         MESSAGE("The poison spikes disappeared from the ground around the opposing team!");

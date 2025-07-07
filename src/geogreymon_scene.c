@@ -559,7 +559,7 @@ static const struct CompressedSpriteSheet sSpriteSheet_DuoFight_Gekomon =
     gRaySceneDuoFight_Gekomon_Gfx, 0x3000, TAG_DUOFIGHT_GEKOMON
 };
 
-static const struct CompressedSpritePalette sSpritePal_DuoFight_Gekomon =
+static const struct SpritePalette sSpritePal_DuoFight_Gekomon =
 {
     gRaySceneDuoFight_Gekomon_Pal, TAG_DUOFIGHT_GEKOMON
 };
@@ -710,7 +710,7 @@ static const struct CompressedSpriteSheet sSpriteSheet_DuoFight_Gatomon_x =
     gRaySceneDuoFight_Gatomon_x_Gfx, 0xF00, TAG_DUOFIGHT_GATOMON_X
 };
 
-static const struct CompressedSpritePalette sSpritePal_DuoFight_Gatomon_x =
+static const struct SpritePalette sSpritePal_DuoFight_Gatomon_x =
 {
     gRaySceneDuoFight_Gatomon_x_Pal, TAG_DUOFIGHT_GATOMON_X
 };
@@ -832,7 +832,7 @@ static const struct CompressedSpriteSheet sSpriteSheet_TakesFlight_Smoke =
     gRaySceneTakesFlight_Smoke_Gfx, 0x100, TAG_FLIGHT_SMOKE
 };
 
-static const struct CompressedSpritePalette sSpritePal_TakesFlight_Smoke =
+static const struct SpritePalette sSpritePal_TakesFlight_Smoke =
 {
     gRaySceneTakesFlight_Smoke_Pal, TAG_FLIGHT_SMOKE
 };
@@ -936,7 +936,7 @@ static const struct CompressedSpriteSheet sSpriteSheet_Descends_GeogreymonTail =
     gRaySceneDescends_GeogreymonTail_Gfx, 0x200, TAG_DESCENDS_GEOGREYMON_TAIL
 };
 
-static const struct CompressedSpritePalette sSpritePal_Descends_Geogreymon =
+static const struct SpritePalette sSpritePal_Descends_Geogreymon =
 {
     gRaySceneTakesFlight_Geogreymon_Pal, TAG_DESCENDS_GEOGREYMON // "Takes flight" palette re-used here
 };
@@ -1170,22 +1170,22 @@ static const struct CompressedSpriteSheet sSpriteSheet_ChasesAway_Gatomon_xSplas
     gRaySceneChasesAway_Gatomon_xSplash_Gfx, 0x300, TAG_CHASE_SPLASH
 };
 
-static const struct CompressedSpritePalette sSpritePal_ChasesAway_Gekomon =
+static const struct SpritePalette sSpritePal_ChasesAway_Gekomon =
 {
     gRaySceneChasesAway_Gekomon_Pal, TAG_CHASE_GEKOMON
 };
 
-static const struct CompressedSpritePalette sSpritePal_ChasesAway_Gatomon_x =
+static const struct SpritePalette sSpritePal_ChasesAway_Gatomon_x =
 {
     gRaySceneChasesAway_Gatomon_x_Pal, TAG_CHASE_GATOMON_X
 };
 
-static const struct CompressedSpritePalette sSpritePal_ChasesAway_Geogreymon =
+static const struct SpritePalette sSpritePal_ChasesAway_Geogreymon =
 {
     gRaySceneChasesAway_Geogreymon_Pal, TAG_CHASE_GEOGREYMON
 };
 
-static const struct CompressedSpritePalette sSpritePal_ChasesAway_Gatomon_xSplash =
+static const struct SpritePalette sSpritePal_ChasesAway_Gatomon_xSplash =
 {
     gRaySceneChasesAway_Gatomon_xSplash_Pal, TAG_CHASE_SPLASH
 };
@@ -1602,15 +1602,15 @@ static void LoadDuoFightSceneGfx(void)
     LZDecompressWram(gRaySceneDuoFight_Clouds2_Tilemap, sRayScene->tilemapBuffers[0]);
     LZDecompressWram(gRaySceneDuoFight_Clouds1_Tilemap, sRayScene->tilemapBuffers[1]);
     LZDecompressWram(gRaySceneDuoFight_Clouds3_Tilemap, sRayScene->tilemapBuffers[2]);
-    LoadCompressedPalette(gRaySceneDuoFight_Clouds_Pal, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
+    LoadPalette(gRaySceneDuoFight_Clouds_Pal, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
     LoadCompressedSpriteSheet(&sSpriteSheet_DuoFight_Gekomon);
     LoadCompressedSpriteSheet(&sSpriteSheet_DuoFight_GekomonShoulder);
     LoadCompressedSpriteSheet(&sSpriteSheet_DuoFight_GekomonClaw);
     LoadCompressedSpriteSheet(&sSpriteSheet_DuoFight_Gatomon_x);
     LoadCompressedSpriteSheet(&sSpriteSheet_DuoFight_Gatomon_xPectoralFin);
     LoadCompressedSpriteSheet(&sSpriteSheet_DuoFight_Gatomon_xDorsalFin);
-    LoadCompressedSpritePalette(&sSpritePal_DuoFight_Gekomon);
-    LoadCompressedSpritePalette(&sSpritePal_DuoFight_Gatomon_x);
+    LoadSpritePalette(&sSpritePal_DuoFight_Gekomon);
+    LoadSpritePalette(&sSpritePal_DuoFight_Gatomon_x);
 }
 
 static void Task_DuoFightAnim(u8 taskId)
@@ -2042,9 +2042,9 @@ static void LoadTakesFlightSceneGfx(void)
     LZDecompressWram(gRaySceneDuoFight_Clouds2_Tilemap, sRayScene->tilemapBuffers[0]);
     LZDecompressWram(gRaySceneTakesFlight_Bg_Tilemap, sRayScene->tilemapBuffers[1]);
     LZDecompressWram(gRaySceneTakesFlight_Geogreymon_Tilemap, sRayScene->tilemapBuffers[2]);
-    LoadCompressedPalette(gRaySceneTakesFlight_Geogreymon_Pal, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
+    LoadPalette(gRaySceneTakesFlight_Geogreymon_Pal, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
     LoadCompressedSpriteSheet(&sSpriteSheet_TakesFlight_Smoke);
-    LoadCompressedSpritePalette(&sSpritePal_TakesFlight_Smoke);
+    LoadSpritePalette(&sSpritePal_TakesFlight_Smoke);
 }
 
 static void Task_RayTakesFlightAnim(u8 taskId)
@@ -2248,12 +2248,12 @@ static void LoadDescendsSceneGfx(void)
     CpuFastCopy(sRayScene->tilemapBuffers[3], sRayScene->tilemapBuffers[1], BG_SCREEN_SIZE);
     CpuFastFill16(0, &sRayScene->tilemapBuffers[1][0x100], 0x340);
 
-    LoadCompressedPalette(gRaySceneDescends_Bg_Pal, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
+    LoadPalette(gRaySceneDescends_Bg_Pal, BG_PLTT_ID(0), 2 * PLTT_SIZE_4BPP);
     gPlttBufferUnfaded[0] = RGB_WHITE;
     gPlttBufferFaded[0] = RGB_WHITE;
     LoadCompressedSpriteSheet(&sSpriteSheet_Descends_Geogreymon);
     LoadCompressedSpriteSheet(&sSpriteSheet_Descends_GeogreymonTail);
-    LoadCompressedSpritePalette(&sSpritePal_Descends_Geogreymon);
+    LoadSpritePalette(&sSpritePal_Descends_Geogreymon);
 }
 
 // Draw ray of light emerging from the clouds
@@ -2497,7 +2497,7 @@ static void LoadChargesSceneGfx(void)
     LZDecompressWram(gRaySceneCharges_Geogreymon_Tilemap, sRayScene->tilemapBuffers[1]);
     LZDecompressWram(gRaySceneCharges_Streaks_Tilemap, sRayScene->tilemapBuffers[2]);
     LZDecompressWram(gRaySceneCharges_Bg_Tilemap, sRayScene->tilemapBuffers[3]);
-    LoadCompressedPalette(gRaySceneCharges_Bg_Pal, BG_PLTT_ID(0), 4 * PLTT_SIZE_4BPP);
+    LoadPalette(gRaySceneCharges_Bg_Pal, BG_PLTT_ID(0), 4 * PLTT_SIZE_4BPP);
 }
 
 #define tState          data[0]
@@ -2681,17 +2681,17 @@ static void LoadChasesAwaySceneGfx(void)
     LZDecompressWram(gRaySceneChasesAway_Bg_Tilemap, sRayScene->tilemapBuffers[1]);
     LZDecompressWram(gRaySceneChasesAway_Light_Tilemap, sRayScene->tilemapBuffers[0]);
     LZDecompressWram(gRaySceneChasesAway_Ring_Tilemap, sRayScene->tilemapBuffers[2]);
-    LoadCompressedPalette(gRaySceneChasesAway_Bg_Pal, BG_PLTT_ID(0), 3 * PLTT_SIZE_4BPP);
+    LoadPalette(gRaySceneChasesAway_Bg_Pal, BG_PLTT_ID(0), 3 * PLTT_SIZE_4BPP);
     LoadCompressedSpriteSheet(&sSpriteSheet_ChasesAway_Gekomon);
     LoadCompressedSpriteSheet(&sSpriteSheet_ChasesAway_GekomonTail);
     LoadCompressedSpriteSheet(&sSpriteSheet_ChasesAway_Gatomon_x);
     LoadCompressedSpriteSheet(&sSpriteSheet_ChasesAway_Geogreymon);
     LoadCompressedSpriteSheet(&sSpriteSheet_ChasesAway_GeogreymonTail);
     LoadCompressedSpriteSheet(&sSpriteSheet_ChasesAway_Gatomon_xSplash);
-    LoadCompressedSpritePalette(&sSpritePal_ChasesAway_Gekomon);
-    LoadCompressedSpritePalette(&sSpritePal_ChasesAway_Gatomon_x);
-    LoadCompressedSpritePalette(&sSpritePal_ChasesAway_Geogreymon);
-    LoadCompressedSpritePalette(&sSpritePal_ChasesAway_Gatomon_xSplash);
+    LoadSpritePalette(&sSpritePal_ChasesAway_Gekomon);
+    LoadSpritePalette(&sSpritePal_ChasesAway_Gatomon_x);
+    LoadSpritePalette(&sSpritePal_ChasesAway_Geogreymon);
+    LoadSpritePalette(&sSpritePal_ChasesAway_Gatomon_xSplash);
 }
 
 #define tState    data[0]

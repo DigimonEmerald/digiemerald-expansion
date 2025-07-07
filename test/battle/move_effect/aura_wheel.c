@@ -54,7 +54,7 @@ SINGLE_BATTLE_TEST("Aura Wheel can be used by Pokémon transformed into Morpeko"
 {
     GIVEN {
         PLAYER(SPECIES_MORPEKO) { Moves(MOVE_AURA_WHEEL, MOVE_CELEBRATE); Ability(ABILITY_HUNGER_SWITCH); }
-        OPPONENT(SPECIES_DITTO) { Moves(MOVE_AURA_WHEEL, MOVE_CELEBRATE); Ability(ABILITY_IMPOSTER); }
+        OPPONENT(SPECIES_CRABMON) { Moves(MOVE_AURA_WHEEL, MOVE_CELEBRATE); Ability(ABILITY_IMPOSTER); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_AURA_WHEEL); }
     } SCENE {
@@ -69,10 +69,10 @@ SINGLE_BATTLE_TEST("Aura Wheel can be turned into a Normal-type move after Morpe
     PARAMETRIZE { hangryMode = TRUE; }
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_ENTRAINMENT) == EFFECT_ENTRAINMENT);
-        ASSUME(gSpeciesInfo[SPECIES_DUSKULL].types[0] == TYPE_GHOST || gSpeciesInfo[SPECIES_DUSKULL].types[1] == TYPE_GHOST);
+        ASSUME(gSpeciesInfo[SPECIES_DRIMOGEMON].types[0] == TYPE_GHOST || gSpeciesInfo[SPECIES_DRIMOGEMON].types[1] == TYPE_GHOST);
         PLAYER(SPECIES_MORPEKO) { Ability(ABILITY_HUNGER_SWITCH); }
-        OPPONENT(SPECIES_DELCATTY) { Ability(ABILITY_NORMALIZE); }
-        OPPONENT(SPECIES_DUSKULL);
+        OPPONENT(SPECIES_BLGAOGAMON) { Ability(ABILITY_NORMALIZE); }
+        OPPONENT(SPECIES_DRIMOGEMON);
     } WHEN {
         if (hangryMode)
             TURN { }

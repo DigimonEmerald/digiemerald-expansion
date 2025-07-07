@@ -13,8 +13,8 @@ SINGLE_BATTLE_TEST("Counter is not affected by Protect effects")
     PARAMETRIZE { move = MOVE_OBSTRUCT; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, move); MOVE(player, MOVE_COUNTER); }
     } SCENE {
@@ -28,11 +28,11 @@ SINGLE_BATTLE_TEST("Counter is not affected by Protect effects")
             } else if (move == MOVE_BURNING_BULWARK) {
                 STATUS_ICON(player, STATUS1_BURN);
             } else if (move == MOVE_KINGS_SHIELD) {
-                MESSAGE("Wobbuffet's Attack fell!");
+                MESSAGE("Lopmon_x's Attack fell!");
             } else if (move == MOVE_SILK_TRAP) {
-                MESSAGE("Wobbuffet's Speed fell!");
+                MESSAGE("Lopmon_x's Speed fell!");
             } else if (move == MOVE_OBSTRUCT) {
-                MESSAGE("Wobbuffet's Defense harshly fell!");
+                MESSAGE("Lopmon_x's Defense harshly fell!");
             }
         }
     }

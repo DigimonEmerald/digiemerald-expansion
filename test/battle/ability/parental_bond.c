@@ -319,7 +319,7 @@ SINGLE_BATTLE_TEST("Parental Bond only triggers Dragon Tail's target switch out 
         MESSAGE("The opposing Exveemon was dragged out!");
     }
     THEN {
-        EXPECT_EQ(player->species, SPECIES_KANGASKHAN_MEGA);
+        EXPECT_EQ(player->species, SPECIES_BETAMON_X_MEGA);
     }
 }
 
@@ -329,8 +329,8 @@ SINGLE_BATTLE_TEST("Parental Bond does not trigger on semi-invulnerable moves")
         ASSUME(GetMoveCategory(MOVE_FLY) != DAMAGE_CATEGORY_STATUS);
         ASSUME(GetMoveStrikeCount(MOVE_FLY) < 2);
         ASSUME(GetMoveEffect(MOVE_FLY) == EFFECT_SEMI_INVULNERABLE);
-        PLAYER(SPECIES_KANGASKHAN) { Item(ITEM_KANGASKHANITE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_BETAMON_X) { Item(ITEM_BETAMON_XITE); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_FLY, gimmick: GIMMICK_MEGA); MOVE(opponent, MOVE_CELEBRATE); }
         TURN { SKIP_TURN(player); }
@@ -346,8 +346,8 @@ SINGLE_BATTLE_TEST("Parental Bond does not trigger on two turn attacks")
         ASSUME(GetMoveCategory(MOVE_RAZOR_WIND) != DAMAGE_CATEGORY_STATUS);
         ASSUME(GetMoveStrikeCount(MOVE_RAZOR_WIND) < 2);
         ASSUME(GetMoveEffect(MOVE_RAZOR_WIND) == EFFECT_TWO_TURNS_ATTACK);
-        PLAYER(SPECIES_KANGASKHAN) { Item(ITEM_KANGASKHANITE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_BETAMON_X) { Item(ITEM_BETAMON_XITE); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_RAZOR_WIND, gimmick: GIMMICK_MEGA); MOVE(opponent, MOVE_CELEBRATE); }
         TURN { SKIP_TURN(player); }

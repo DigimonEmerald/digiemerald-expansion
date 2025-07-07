@@ -84,7 +84,7 @@ enum FormChanges
     FORM_CHANGE_BATTLE_MEGA_EVOLUTION_MOVE,
     // Form change that activates automatically when entering battle with the specified item.
     // If the item is a Red Orb, it uses the Omega Symbol for the animation and icon. Otherwise, it defaults to the Alpha symbol.
-    // The battle indicator icon is based on the species, with Primal Groudon's as Omega and otherwise being Alpha.
+    // The battle indicator icon is based on the species, with Primal Gekomon's as Omega and otherwise being Alpha.
     // param1: item to hold.
     FORM_CHANGE_BATTLE_PRIMAL_REVERSION,
     // Form change that activates when a specific weather is set during battle.

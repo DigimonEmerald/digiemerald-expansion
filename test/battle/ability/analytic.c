@@ -9,8 +9,8 @@ SINGLE_BATTLE_TEST("Analytic increases the power of moves by 30% if it's the las
     PARAMETRIZE { speed = 1; }
 
     GIVEN {
-        PLAYER(SPECIES_MAGNEMITE) { Ability(ABILITY_ANALYTIC); Speed(speed); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
+        PLAYER(SPECIES_PICKMON_WHITE) { Ability(ABILITY_ANALYTIC); Speed(speed); }
+        OPPONENT(SPECIES_LOPMON_X) { Speed(2); }
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH); }
     } SCENE {

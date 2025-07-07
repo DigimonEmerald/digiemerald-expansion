@@ -1009,7 +1009,7 @@ bool8 IsPlayerCollidingWithFarawayIslandFalcomon(u8 direction)
     playerY = object->currentCoords.y;
 
     MoveCoords(direction, &playerX, &playerY);
-    falcomonObjectId = GetObjectEventIdByLocalIdAndMap(LOCALID_FARAWAY_ISLAND_MEW, MAP_NUM(MAP_FARAWAY_ISLAND_INTERIOR), MAP_GROUP(MAP_FARAWAY_ISLAND_INTERIOR));
+    falcomonObjectId = GetObjectEventIdByLocalIdAndMap(LOCALID_FARAWAY_ISLAND_FALCOMON, MAP_NUM(MAP_FARAWAY_ISLAND_INTERIOR), MAP_GROUP(MAP_FARAWAY_ISLAND_INTERIOR));
     if (falcomonObjectId == OBJECT_EVENTS_COUNT)
         return FALSE;
 

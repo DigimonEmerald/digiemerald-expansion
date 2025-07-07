@@ -107,7 +107,7 @@
         {
             {
 #line 42
-            .species = SPECIES_MEWTWO,
+            .species = SPECIES_AGUMON_FAKE_EXPERT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 44
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -138,7 +138,7 @@
         {
             {
 #line 54
-            .species = SPECIES_MEWTWO,
+            .species = SPECIES_AGUMON_FAKE_EXPERT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 56
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -169,7 +169,7 @@
         {
             {
 #line 66
-            .species = SPECIES_METAPOD,
+            .species = SPECIES_DODOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 68
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -232,7 +232,7 @@
         {
             {
 #line 90
-            .species = SPECIES_WYNAUT,
+            .species = SPECIES_EXVEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 91
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -243,7 +243,7 @@
             },
             {
 #line 92
-            .species = SPECIES_WOBBUFFET,
+            .species = SPECIES_LOPMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 93
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -254,7 +254,7 @@
             },
             {
 #line 94
-            .species = SPECIES_EEVEE,
+            .species = SPECIES_CRABMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 95
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -265,7 +265,7 @@
             },
             {
 #line 96
-            .species = SPECIES_MEW,
+            .species = SPECIES_FALCOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 97
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -297,7 +297,7 @@
         {
             {
 #line 107
-            .species = SPECIES_WYNAUT,
+            .species = SPECIES_EXVEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 108
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -308,7 +308,7 @@
             },
             {
 #line 109
-            .species = SPECIES_WOBBUFFET,
+            .species = SPECIES_LOPMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 111
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -321,7 +321,7 @@
             },
             {
 #line 112
-            .species = SPECIES_EEVEE,
+            .species = SPECIES_CRABMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 114
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -334,7 +334,7 @@
             },
             {
 #line 115
-            .species = SPECIES_MEW,
+            .species = SPECIES_FALCOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 116
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -345,7 +345,7 @@
             },
             {
 #line 117
-            .species = SPECIES_ODDISH,
+            .species = SPECIES_ZERIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 119
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -358,7 +358,7 @@
             },
             {
 #line 120
-            .species = SPECIES_ARON,
+            .species = SPECIES_BLKGATOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 122
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -394,7 +394,7 @@
         {
             {
 #line 133
-            .species = SPECIES_WYNAUT,
+            .species = SPECIES_EXVEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 135
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -407,7 +407,7 @@
             },
             {
 #line 136
-            .species = SPECIES_WOBBUFFET,
+            .species = SPECIES_LOPMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 138
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -420,7 +420,7 @@
             },
             {
 #line 139
-            .species = SPECIES_VULPIX,
+            .species = SPECIES_RELEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 141
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -433,7 +433,7 @@
             },
             {
 #line 142
-            .species = SPECIES_BULBASAUR,
+            .species = SPECIES_ARGOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 144
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -446,7 +446,7 @@
             },
             {
 #line 145
-            .species = SPECIES_TORKOAL,
+            .species = SPECIES_CLOCKMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 147
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -472,7 +472,7 @@
             },
             {
 #line 151
-            .species = SPECIES_MEW,
+            .species = SPECIES_FALCOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 153
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -485,7 +485,7 @@
             },
             {
 #line 154
-            .species = SPECIES_ARON,
+            .species = SPECIES_BLKGATOMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 156
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -498,7 +498,7 @@
             },
             {
 #line 157
-            .species = SPECIES_ODDISH,
+            .species = SPECIES_ZERIMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 158
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -509,7 +509,7 @@
             },
             {
 #line 159
-            .species = SPECIES_EEVEE,
+            .species = SPECIES_CRABMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 160
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -543,7 +543,7 @@
         {
             {
 #line 171
-            .species = SPECIES_WYNAUT,
+            .species = SPECIES_EXVEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 173
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -556,7 +556,7 @@
             },
             {
 #line 174
-            .species = SPECIES_WOBBUFFET,
+            .species = SPECIES_LOPMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 176
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -569,7 +569,7 @@
             },
             {
 #line 177
-            .species = SPECIES_EEVEE,
+            .species = SPECIES_CRABMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 179
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -607,7 +607,7 @@
         {
             {
 #line 191
-            .species = SPECIES_WYNAUT,
+            .species = SPECIES_EXVEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 192
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -618,7 +618,7 @@
             },
             {
 #line 193
-            .species = SPECIES_WOBBUFFET,
+            .species = SPECIES_LOPMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 195
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -631,7 +631,7 @@
             },
             {
 #line 196
-            .species = SPECIES_EEVEE,
+            .species = SPECIES_CRABMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 197
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -667,7 +667,7 @@
         {
             {
 #line 209
-            .species = SPECIES_WYNAUT,
+            .species = SPECIES_EXVEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 211
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -680,7 +680,7 @@
             },
             {
 #line 212
-            .species = SPECIES_WOBBUFFET,
+            .species = SPECIES_LOPMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 213
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -691,7 +691,7 @@
             },
             {
 #line 214
-            .species = SPECIES_EEVEE,
+            .species = SPECIES_CRABMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 216
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -725,7 +725,7 @@
         {
             {
 #line 226
-            .species = SPECIES_WYNAUT,
+            .species = SPECIES_EXVEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 227
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -736,7 +736,7 @@
             },
             {
 #line 228
-            .species = SPECIES_WOBBUFFET,
+            .species = SPECIES_LOPMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 229
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -768,7 +768,7 @@
         {
             {
 #line 239
-            .species = SPECIES_WYNAUT,
+            .species = SPECIES_EXVEEMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 240
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -779,7 +779,7 @@
             },
             {
 #line 241
-            .species = SPECIES_WOBBUFFET,
+            .species = SPECIES_LOPMON_X,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 242
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),

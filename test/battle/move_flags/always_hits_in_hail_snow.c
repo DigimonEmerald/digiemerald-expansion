@@ -10,11 +10,11 @@ SINGLE_BATTLE_TEST("Blizzard bypasses accuracy checks in Hail and Snow")
     GIVEN {
         ASSUME(GetMoveAccuracy(MOVE_BLIZZARD) == 70);
         ASSUME(MoveAlwaysHitsInHailSnow(MOVE_BLIZZARD));
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, move); MOVE(player, MOVE_BLIZZARD); }
     } SCENE {
-        NOT MESSAGE("Wobbuffet's attack missed!");
+        NOT MESSAGE("Lopmon_x's attack missed!");
     }
 }

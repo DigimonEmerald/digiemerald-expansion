@@ -11,8 +11,8 @@ SINGLE_BATTLE_TEST("Thunder's accuracy is lowered to 50% in Sunlight")
 {
     PASSES_RANDOMLY(50, 100, RNG_ACCURACY);
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_SUNNY_DAY); MOVE(opponent, MOVE_THUNDER); }
     } SCENE {

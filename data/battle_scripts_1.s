@@ -916,7 +916,7 @@ BattleScript_EffectTarShot::
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_TryTarShot:
 	trytarshot BattleScript_MoveEnd
-	printstring STRINGID_PKMNBECAFALCOMONEAKERTOFIRE
+	printstring STRINGID_PKMNBECAMEWEAKERTOFIRE
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 

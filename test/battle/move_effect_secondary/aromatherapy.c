@@ -18,22 +18,22 @@ DOUBLE_BATTLE_TEST("Sparkly Swirl cures the entire party of the user from primar
     PARAMETRIZE { status = STATUS1_TOXIC_POISON; }
     PARAMETRIZE { status = STATUS1_FROSTBITE; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             if (status != STATUS1_SLEEP && status != STATUS1_FREEZE)
                 Status1(status);
         }
-        PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
-        PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
-        PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
-        PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
-        PLAYER(SPECIES_WOBBUFFET) { Status1(status); }
-        OPPONENT(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WYNAUT);
+        PLAYER(SPECIES_LOPMON_X) { Status1(status); }
+        PLAYER(SPECIES_LOPMON_X) { Status1(status); }
+        PLAYER(SPECIES_LOPMON_X) { Status1(status); }
+        PLAYER(SPECIES_LOPMON_X) { Status1(status); }
+        PLAYER(SPECIES_LOPMON_X) { Status1(status); }
+        OPPONENT(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SPARKLY_SWIRL, target: opponentLeft); }
         TURN { SWITCH(playerLeft, 2); SWITCH(playerRight, 3); }
     } SCENE {
-        MESSAGE("Wobbuffet used Sparkly Swirl!");
+        MESSAGE("Lopmon_x used Sparkly Swirl!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPARKLY_SWIRL, playerLeft);
         switch(status)
         {

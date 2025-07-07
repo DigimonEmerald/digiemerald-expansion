@@ -274,7 +274,7 @@ SINGLE_BATTLE_TEST("Mirror Armor reflects Tangling Hair speed drop")
 SINGLE_BATTLE_TEST("Mirror Armor reflects Obstruct defense drop")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
         OPPONENT(SPECIES_CORVIKNIGHT) { Ability(ABILITY_MIRROR_ARMOR); }
     } WHEN {
         TURN { MOVE(player, MOVE_OBSTRUCT); MOVE(opponent, MOVE_SCRATCH); }

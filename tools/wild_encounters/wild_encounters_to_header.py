@@ -688,18 +688,18 @@ if __name__ == "__main__":
 
 const struct WildPokemon gRoute101_LandMons_Day[] =
 {
-    { 2, 2, SPECIES_WURMPLE },
-    { 2, 2, SPECIES_POOCHYENA },
-    { 2, 2, SPECIES_WURMPLE },
-    { 3, 3, SPECIES_WURMPLE },
-    { 3, 3, SPECIES_POOCHYENA },
-    { 3, 3, SPECIES_POOCHYENA },
-    { 3, 3, SPECIES_WURMPLE },
-    { 3, 3, SPECIES_POOCHYENA },
-    { 2, 2, SPECIES_ZIGZAGOON },
-    { 2, 2, SPECIES_ZIGZAGOON },
-    { 3, 3, SPECIES_ZIGZAGOON },
-    { 3, 3, SPECIES_ZIGZAGOON },
+    { 2, 2, SPECIES_VEEMON },
+    { 2, 2, SPECIES_TINKERMON },
+    { 2, 2, SPECIES_VEEMON },
+    { 3, 3, SPECIES_VEEMON },
+    { 3, 3, SPECIES_TINKERMON },
+    { 3, 3, SPECIES_TINKERMON },
+    { 3, 3, SPECIES_VEEMON },
+    { 3, 3, SPECIES_TINKERMON },
+    { 2, 2, SPECIES_TOYAGUMON },
+    { 2, 2, SPECIES_TOYAGUMON },
+    { 3, 3, SPECIES_TOYAGUMON },
+    { 3, 3, SPECIES_TOYAGUMON },
 };
 
 const struct WildPokemonInfo gRoute101_Day_LandMonsInfo= { 20, gRoute101_Day_LandMons };

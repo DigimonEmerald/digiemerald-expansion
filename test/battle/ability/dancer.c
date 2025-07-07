@@ -59,7 +59,7 @@ DOUBLE_BATTLE_TEST("Dancer triggers from slowest to fastest")
     GIVEN {
         ASSUME(IsDanceMove(MOVE_DRAGON_DANCE));
         PLAYER(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); Speed(10); }
-        PLAYER(SPECIES_WYNAUT) { Speed(50); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(50); }
         OPPONENT(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); Speed(20); }
         OPPONENT(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); Speed(3); }
     } WHEN {
@@ -108,7 +108,7 @@ DOUBLE_BATTLE_TEST("Dancer still triggers if another dancer flinches")
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_FAKE_OUT, MOVE_EFFECT_FLINCH, 100));
         ASSUME(IsDanceMove(MOVE_DRAGON_DANCE));
         PLAYER(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); Speed(10); }
-        PLAYER(SPECIES_WYNAUT) { Speed(5); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(5); }
         OPPONENT(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); Speed(20); }
         OPPONENT(SPECIES_LOPMONX) { Speed(3); }
     } WHEN {
@@ -255,22 +255,22 @@ DOUBLE_BATTLE_TEST("Dancer doesn't call a move that didn't execute due to Powder
 DOUBLE_BATTLE_TEST("Dancer still activates after Red Card")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) ;
+        PLAYER(SPECIES_LOPMON_X) ;
         PLAYER(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); }
-        PLAYER(SPECIES_CHANSEY);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
-        OPPONENT(SPECIES_BULBASAUR);
-        OPPONENT(SPECIES_SHUCKLE);
+        PLAYER(SPECIES_BEARMON);
+        OPPONENT(SPECIES_LOPMON_X) { Item(ITEM_RED_CARD); }
+        OPPONENT(SPECIES_ARGOMON);
+        OPPONENT(SPECIES_MORPHOMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FIERY_DANCE, target: opponentLeft); }
     } SCENE {
-        MESSAGE("Wobbuffet used Fiery Dance!");
+        MESSAGE("Lopmon_x used Fiery Dance!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FIERY_DANCE, playerLeft);
         HP_BAR(opponentLeft);
         // Red card trigger
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponentLeft);
-        MESSAGE("The opposing Wobbuffet held up its Red Card against Wobbuffet!");
-        MESSAGE("Chansey was dragged out!");
+        MESSAGE("The opposing Lopmon_x held up its Red Card against Lopmon_x!");
+        MESSAGE("Bearmon was dragged out!");
         // Dancer
         ABILITY_POPUP(playerRight, ABILITY_DANCER);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FIERY_DANCE, playerRight);
@@ -281,23 +281,23 @@ DOUBLE_BATTLE_TEST("Dancer still activates after Red Card")
 DOUBLE_BATTLE_TEST("Dancer still activate after Red Card even if blocked by Suction Cups")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_SUCTION_CUPS); }
+        PLAYER(SPECIES_LOPMON_X) { Ability(ABILITY_SUCTION_CUPS); }
         PLAYER(SPECIES_ORICORIO) { Ability(ABILITY_DANCER); }
-        PLAYER(SPECIES_CHANSEY);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_RED_CARD); }
-        OPPONENT(SPECIES_BULBASAUR);
-        OPPONENT(SPECIES_SHUCKLE);
+        PLAYER(SPECIES_BEARMON);
+        OPPONENT(SPECIES_LOPMON_X) { Item(ITEM_RED_CARD); }
+        OPPONENT(SPECIES_ARGOMON);
+        OPPONENT(SPECIES_MORPHOMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FIERY_DANCE, target: opponentLeft); }
     } SCENE {
-        MESSAGE("Wobbuffet used Fiery Dance!");
+        MESSAGE("Lopmon_x used Fiery Dance!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FIERY_DANCE, playerLeft);
         HP_BAR(opponentLeft);
         // red card trigger
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponentLeft);
-        MESSAGE("The opposing Wobbuffet held up its Red Card against Wobbuffet!");
-        MESSAGE("Wobbuffet anchors itself with Suction Cups!");
-        NOT MESSAGE("Chansey was dragged out!");
+        MESSAGE("The opposing Lopmon_x held up its Red Card against Lopmon_x!");
+        MESSAGE("Lopmon_x anchors itself with Suction Cups!");
+        NOT MESSAGE("Bearmon was dragged out!");
         // Dancer
         ABILITY_POPUP(playerRight, ABILITY_DANCER);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FIERY_DANCE, playerRight);

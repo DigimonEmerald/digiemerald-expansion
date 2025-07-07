@@ -8,9 +8,9 @@ AI_SINGLE_BATTLE_TEST("Sleep Clause: AI will not use sleep moves while sleep cla
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_BRELOOM) { Moves(MOVE_SPORE, MOVE_MACH_PUNCH); }
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_ATAMADEMON) { Moves(MOVE_SPORE, MOVE_MACH_PUNCH); }
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE); EXPECT_MOVE(opponent, MOVE_SPORE); }
         TURN { SWITCH(player, 1); EXPECT_MOVE(opponent, MOVE_MACH_PUNCH); }
@@ -25,11 +25,11 @@ AI_DOUBLE_BATTLE_TEST("Sleep Clause: AI will not use sleep moves while sleep cla
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_BRELOOM) { Moves(MOVE_SPORE, MOVE_MACH_PUNCH); }
-        OPPONENT(SPECIES_BRELOOM) { Moves(MOVE_MACH_PUNCH); }
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_ATAMADEMON) { Moves(MOVE_SPORE, MOVE_MACH_PUNCH); }
+        OPPONENT(SPECIES_ATAMADEMON) { Moves(MOVE_MACH_PUNCH); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_CELEBRATE); MOVE(playerRight, MOVE_CELEBRATE); EXPECT_MOVE(opponentLeft, MOVE_SPORE); EXPECT_MOVE(opponentRight, MOVE_MACH_PUNCH); }
         TURN { SWITCH(playerLeft, 2); MOVE(playerRight, MOVE_CELEBRATE); EXPECT_MOVE(opponentLeft, MOVE_MACH_PUNCH); EXPECT_MOVE(opponentRight, MOVE_MACH_PUNCH); }
@@ -44,11 +44,11 @@ AI_DOUBLE_BATTLE_TEST("Sleep Clause: AI will not use sleep move if partner is al
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_BRELOOM) { Moves(MOVE_SPORE, MOVE_MACH_PUNCH); }
-        OPPONENT(SPECIES_BRELOOM) { Moves(MOVE_SPORE, MOVE_MACH_PUNCH); }
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_ATAMADEMON) { Moves(MOVE_SPORE, MOVE_MACH_PUNCH); }
+        OPPONENT(SPECIES_ATAMADEMON) { Moves(MOVE_SPORE, MOVE_MACH_PUNCH); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_CELEBRATE); MOVE(playerRight, MOVE_CELEBRATE); EXPECT_MOVE(opponentLeft, MOVE_SPORE); EXPECT_MOVE(opponentRight, MOVE_MACH_PUNCH); }
     }
@@ -60,25 +60,25 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep moves fail when sleep clause is active")
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
         TURN { MOVE(player, MOVE_SPORE); SWITCH(opponent, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Wobbuffet fell asleep!");
+        MESSAGE("The opposing Lopmon_x fell asleep!");
         STATUS_ICON(opponent, sleep: TRUE);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-            MESSAGE("The opposing Wobbuffet fell asleep!");
+            MESSAGE("The opposing Lopmon_x fell asleep!");
             STATUS_ICON(opponent, sleep: TRUE);
         }
-        MESSAGE("Sleep Clause kept the opposing Wobbuffet awake!");
+        MESSAGE("Sleep Clause kept the opposing Lopmon_x awake!");
     }
 }
 
@@ -88,24 +88,24 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep moves fail when sleep clause is active (
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); MaxHP(100); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X) { HP(1); MaxHP(100); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SPORE, target: opponentRight); MOVE(playerRight, MOVE_SPORE, target: opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentRight);
-        MESSAGE("The opposing Wobbuffet fell asleep!");
+        MESSAGE("The opposing Lopmon_x fell asleep!");
         STATUS_ICON(opponentRight, sleep: TRUE);
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerRight);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentLeft);
-            MESSAGE("The opposing Wobbuffet fell asleep!");
+            MESSAGE("The opposing Lopmon_x fell asleep!");
             STATUS_ICON(opponentLeft, sleep: TRUE);
         }
-        MESSAGE("Sleep Clause kept the opposing Wobbuffet awake!");
+        MESSAGE("Sleep Clause kept the opposing Lopmon_x awake!");
     }
 }
 
@@ -116,16 +116,16 @@ SINGLE_BATTLE_TEST("Sleep Clause: Rest does not activate sleep clause")
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_REST) == EFFECT_REST);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH); MOVE(opponent, MOVE_REST); }
         TURN { MOVE(player, MOVE_SPORE); SWITCH(opponent, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Wobbuffet fell asleep!");
+        MESSAGE("The opposing Lopmon_x fell asleep!");
         STATUS_ICON(opponent, sleep: TRUE);
     }
 }
@@ -137,10 +137,10 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Rest does not activate sleep clause (Doubles)"
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_REST) == EFFECT_REST);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); MaxHP(100); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X) { HP(1); MaxHP(100); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_REST); MOVE(playerLeft, MOVE_SPORE, target: opponentRight); }
     } SCENE {
@@ -148,7 +148,7 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Rest does not activate sleep clause (Doubles)"
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REST, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentRight);
-        MESSAGE("The opposing Wobbuffet fell asleep!");
+        MESSAGE("The opposing Lopmon_x fell asleep!");
         STATUS_ICON(opponentRight, sleep: TRUE);
     }
 }
@@ -160,9 +160,9 @@ SINGLE_BATTLE_TEST("Sleep Clause: Rest can still be used when sleep clause is ac
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_REST) == EFFECT_REST);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
         TURN { MOVE(player, MOVE_SCRATCH); SWITCH(opponent, 1); }
@@ -170,7 +170,7 @@ SINGLE_BATTLE_TEST("Sleep Clause: Rest can still be used when sleep clause is ac
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Wobbuffet fell asleep!");
+        MESSAGE("The opposing Lopmon_x fell asleep!");
         STATUS_ICON(opponent, sleep: TRUE);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
         STATUS_ICON(opponent, sleep: TRUE);
@@ -185,16 +185,16 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Rest can still be used when sleep clause is ac
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_REST) == EFFECT_REST);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); MaxHP(100); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X) { HP(1); MaxHP(100); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SPORE, target: opponentRight); MOVE(opponentLeft, MOVE_REST); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentRight);
-        MESSAGE("The opposing Wobbuffet fell asleep!");
+        MESSAGE("The opposing Lopmon_x fell asleep!");
         STATUS_ICON(opponentRight, sleep: TRUE);
         STATUS_ICON(opponentLeft, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REST, opponentLeft);
@@ -209,10 +209,10 @@ SINGLE_BATTLE_TEST("Sleep Clause: Psycho Shift'ing sleep will fail if sleep clau
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_SLEEP_TALK) == EFFECT_SLEEP_TALK);
         ASSUME(GetMoveEffect(MOVE_PSYCHO_SHIFT) == EFFECT_PSYCHO_SHIFT);
-        PLAYER(SPECIES_WOBBUFFET)
-        PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_SLEEP_TALK, MOVE_PSYCHO_SHIFT); }
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X)
+        PLAYER(SPECIES_LOPMON_X) { Moves(MOVE_SLEEP_TALK, MOVE_PSYCHO_SHIFT); }
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
         TURN { SWITCH(player, 1); SWITCH(opponent, 1); }
@@ -224,7 +224,7 @@ SINGLE_BATTLE_TEST("Sleep Clause: Psycho Shift'ing sleep will fail if sleep clau
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
             STATUS_ICON(opponent, sleep: TRUE);
         }
-        MESSAGE("Sleep Clause kept the opposing Wobbuffet awake!");
+        MESSAGE("Sleep Clause kept the opposing Lopmon_x awake!");
     }
 }
 
@@ -236,10 +236,10 @@ SINGLE_BATTLE_TEST("Sleep Clause: Psycho Shift'ing sleep will activate sleep cla
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_SLEEP_TALK) == EFFECT_SLEEP_TALK);
         ASSUME(GetMoveEffect(MOVE_PSYCHO_SHIFT) == EFFECT_PSYCHO_SHIFT);
-        PLAYER(SPECIES_ZIGZAGOON)
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON) { Moves(MOVE_SLEEP_TALK, MOVE_PSYCHO_SHIFT); }
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON)
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON) { Moves(MOVE_SLEEP_TALK, MOVE_PSYCHO_SHIFT); }
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); MOVE(opponent, MOVE_SLEEP_TALK); }
         TURN { SWITCH(player, 1); SWITCH(opponent, 1); }
@@ -252,10 +252,10 @@ SINGLE_BATTLE_TEST("Sleep Clause: Psycho Shift'ing sleep will activate sleep cla
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-            MESSAGE("The opposing Wobbuffet fell asleep!");
+            MESSAGE("The opposing Lopmon_x fell asleep!");
             STATUS_ICON(opponent, sleep: TRUE);
         }
-        MESSAGE("Sleep Clause kept Zigzagoon awake!");
+        MESSAGE("Sleep Clause kept Toyagumon awake!");
     }
 }
 
@@ -265,9 +265,9 @@ AI_SINGLE_BATTLE_TEST("Sleep Clause: AI will not use Yawn while sleep clause is 
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_YAWN) == EFFECT_YAWN);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_BRELOOM) { Moves(MOVE_YAWN, MOVE_MACH_PUNCH); }
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_ATAMADEMON) { Moves(MOVE_YAWN, MOVE_MACH_PUNCH); }
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE); EXPECT_MOVE(opponent, MOVE_YAWN); }
         TURN { MOVE(player, MOVE_CELEBRATE); EXPECT_MOVE(opponent, MOVE_MACH_PUNCH); }
@@ -281,9 +281,9 @@ SINGLE_BATTLE_TEST("Sleep Clause: Yawn will fail when sleep clause is active")
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_YAWN) == EFFECT_YAWN);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, MOVE_YAWN); }
         TURN { }
@@ -291,14 +291,14 @@ SINGLE_BATTLE_TEST("Sleep Clause: Yawn will fail when sleep clause is active")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_YAWN, opponent);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-        MESSAGE("Wobbuffet fell asleep!");
+        MESSAGE("Lopmon_x fell asleep!");
         STATUS_ICON(player, sleep: TRUE);
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_YAWN, opponent);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
             STATUS_ICON(player, sleep: TRUE);
         }
-        MESSAGE("Sleep Clause kept Wobbuffet awake!");
+        MESSAGE("Sleep Clause kept Lopmon_x awake!");
     }
 }
 
@@ -311,9 +311,9 @@ SINGLE_BATTLE_TEST("Sleep Clause: Effect Spore causes sleep 11% of the time with
         ASSUME(MoveMakesContact(MOVE_SCRATCH));
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_ATAMADEMON) { Ability(ABILITY_EFFECT_SPORE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SPORE); }
         TURN { SWITCH(player, 1); }
@@ -322,7 +322,7 @@ SINGLE_BATTLE_TEST("Sleep Clause: Effect Spore causes sleep 11% of the time with
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_EFFECT_SPORE);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-        MESSAGE("The opposing Breloom's Effect Spore made Wobbuffet sleep!");
+        MESSAGE("The opposing Atamademon's Effect Spore made Lopmon_x sleep!");
         STATUS_ICON(player, sleep: TRUE);
     }
 }
@@ -336,20 +336,20 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Effect Spore causes sleep 11% of the time with
         ASSUME(MoveMakesContact(MOVE_SCRATCH));
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
-        OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_ATAMADEMON) { Ability(ABILITY_EFFECT_SPORE); }
+        OPPONENT(SPECIES_ATAMADEMON) { Ability(ABILITY_EFFECT_SPORE); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_SPORE, target:playerRight); MOVE(playerLeft, MOVE_SCRATCH, target:opponentLeft);}
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponentLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerRight);
-        MESSAGE("Wobbuffet fell asleep!");
+        MESSAGE("Lopmon_x fell asleep!");
         STATUS_ICON(playerRight, sleep: TRUE);
         ABILITY_POPUP(opponentLeft, ABILITY_EFFECT_SPORE);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerLeft);
-        MESSAGE("The opposing Breloom's Effect Spore made Wobbuffet sleep!");
+        MESSAGE("The opposing Atamademon's Effect Spore made Lopmon_x sleep!");
         STATUS_ICON(playerLeft, sleep: TRUE);
     }
 }
@@ -364,9 +364,9 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep from Effect Spore will not activate slee
         ASSUME(MoveMakesContact(MOVE_SCRATCH));
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_ATAMADEMON) { Ability(ABILITY_EFFECT_SPORE); }
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH); }
         TURN {}
@@ -374,11 +374,11 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep from Effect Spore will not activate slee
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_EFFECT_SPORE);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-        MESSAGE("The opposing Breloom's Effect Spore made Wobbuffet sleep!");
+        MESSAGE("The opposing Atamademon's Effect Spore made Lopmon_x sleep!");
         STATUS_ICON(player, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponent);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-        MESSAGE("Wobbuffet fell asleep!");
+        MESSAGE("Lopmon_x fell asleep!");
         STATUS_ICON(player, sleep: TRUE);
     }
 }
@@ -392,20 +392,20 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep from Effect Spore will not activate slee
         ASSUME(MoveMakesContact(MOVE_SCRATCH));
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
-        OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_ATAMADEMON) { Ability(ABILITY_EFFECT_SPORE); }
+        OPPONENT(SPECIES_ATAMADEMON) { Ability(ABILITY_EFFECT_SPORE); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SCRATCH, target:opponentLeft); MOVE(opponentLeft, MOVE_SPORE, target:playerRight); }
     } SCENE {
         ABILITY_POPUP(opponentLeft, ABILITY_EFFECT_SPORE);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerLeft);
-        MESSAGE("The opposing Breloom's Effect Spore made Wobbuffet sleep!");
+        MESSAGE("The opposing Atamademon's Effect Spore made Lopmon_x sleep!");
         STATUS_ICON(playerLeft, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponentLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerRight);
-        MESSAGE("Wobbuffet fell asleep!");
+        MESSAGE("Lopmon_x fell asleep!");
         STATUS_ICON(playerRight, sleep: TRUE);
     }
 }
@@ -418,9 +418,9 @@ SINGLE_BATTLE_TEST("Sleep Clause: Moves with sleep effect chance will activate s
         ASSUME(MoveHasAdditionalEffect(MOVE_RELIC_SONG, MOVE_EFFECT_SLEEP));
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_RELIC_SONG); }
         TURN { MOVE(player, MOVE_SPORE); SWITCH(opponent, 1); }
@@ -429,11 +429,11 @@ SINGLE_BATTLE_TEST("Sleep Clause: Moves with sleep effect chance will activate s
         HP_BAR(opponent);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
         STATUS_ICON(opponent, sleep: TRUE);
-        MESSAGE("Wobbuffet used Spore!");
+        MESSAGE("Lopmon_x used Spore!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-            MESSAGE("The opposing Wobbuffet fell asleep!");
+            MESSAGE("The opposing Lopmon_x fell asleep!");
             STATUS_ICON(opponent, sleep: TRUE);
         }
     }
@@ -447,9 +447,9 @@ SINGLE_BATTLE_TEST("Sleep Clause: Moves with sleep effect chance will still do d
         ASSUME(MoveHasAdditionalEffect(MOVE_RELIC_SONG, MOVE_EFFECT_SLEEP));
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
         TURN { MOVE(player, MOVE_RELIC_SONG); SWITCH(opponent, 1); }
@@ -461,7 +461,7 @@ SINGLE_BATTLE_TEST("Sleep Clause: Moves with sleep effect chance will still do d
         HP_BAR(opponent);
         NONE_OF {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-            MESSAGE("The opposing Wobbuffet fell asleep!");
+            MESSAGE("The opposing Lopmon_x fell asleep!");
             STATUS_ICON(opponent, sleep: TRUE);
         }
     }
@@ -475,9 +475,9 @@ SINGLE_BATTLE_TEST("Sleep Clause: Dire Claw cannot sleep a mon when sleep clause
         ASSUME(MoveHasAdditionalEffect(MOVE_DIRE_CLAW, MOVE_EFFECT_DIRE_CLAW));
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
         TURN { MOVE(player, MOVE_DIRE_CLAW); SWITCH(opponent, 1); }
@@ -489,7 +489,7 @@ SINGLE_BATTLE_TEST("Sleep Clause: Dire Claw cannot sleep a mon when sleep clause
         HP_BAR(opponent);
         NONE_OF {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-            MESSAGE("The opposing Wobbuffet fell asleep!");
+            MESSAGE("The opposing Lopmon_x fell asleep!");
             STATUS_ICON(opponent, sleep: TRUE);
         }
     }
@@ -502,21 +502,21 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Dark Void can only sleep one opposing mon if s
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_DARK_VOID) == EFFECT_DARK_VOID);
         PLAYER(SPECIES_DARKRAI);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_DARK_VOID); }
         TURN { MOVE(playerLeft, MOVE_DARK_VOID); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DARK_VOID, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentLeft);
-        MESSAGE("The opposing Wobbuffet fell asleep!");
+        MESSAGE("The opposing Lopmon_x fell asleep!");
         STATUS_ICON(opponentLeft, sleep: TRUE);
         NONE_OF {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentRight);
             STATUS_ICON(opponentRight, sleep: TRUE);
-            MESSAGE("The opposing Wobbuffet fell asleep!");
+            MESSAGE("The opposing Lopmon_x fell asleep!");
         }
     }
 }
@@ -526,22 +526,22 @@ DOUBLE_BATTLE_TEST("Sleep Clause: G-Max Befuddle can only sleep one opposing mon
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(MoveHasAdditionalEffect(MOVE_G_MAX_BEFUDDLE, MOVE_EFFECT_EFFECT_SPORE_SIDE));
-        PLAYER(SPECIES_BUTTERFREE) { GigantamaxFactor(TRUE); }
-        PLAYER(SPECIES_CATERPIE);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_DOKIMON) { GigantamaxFactor(TRUE); }
+        PLAYER(SPECIES_DATIRIMON);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_BUG_BITE, target: opponentLeft, gimmick: GIMMICK_DYNAMAX,
                WITH_RNG(RNG_G_MAX_BEFUDDLE, STATUS1_SLEEP)); }
     } SCENE {
-        MESSAGE("Butterfree used G-Max Befuddle!");
+        MESSAGE("Dokimon used G-Max Befuddle!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentLeft);
-        MESSAGE("The opposing Wobbuffet fell asleep!");
+        MESSAGE("The opposing Lopmon_x fell asleep!");
         STATUS_ICON(opponentLeft, sleep: TRUE);
         NONE_OF {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentRight);
             STATUS_ICON(opponentRight, sleep: TRUE);
-            MESSAGE("The opposing Wobbuffet fell asleep!");
+            MESSAGE("The opposing Lopmon_x fell asleep!");
         }
     }
 }
@@ -553,8 +553,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(B_SLEEP_TURNS >= GEN_5);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
         TURN {}
@@ -562,10 +562,10 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         TURN {}
         TURN { MOVE(player, MOVE_SPORE); }
     } SCENE {
-        MESSAGE("The opposing Wobbuffet woke up!");
-        MESSAGE("Wobbuffet used Spore!");
+        MESSAGE("The opposing Lopmon_x woke up!");
+        MESSAGE("Lopmon_x used Spore!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Wobbuffet fell asleep!");
+        MESSAGE("The opposing Lopmon_x fell asleep!");
         STATUS_ICON(opponent, sleep: TRUE);
     }
 }
@@ -589,11 +589,11 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         ASSUME(GetMoveEffect(MOVE_HEAL_BELL) == EFFECT_HEAL_BELL);
         ASSUME(MoveHasAdditionalEffect(MOVE_SPARKLY_SWIRL, MOVE_EFFECT_AROMATHERAPY));
         ASSUME(B_SLEEP_TURNS >= GEN_5);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SPORE, target:sporedSlot); }
         TURN { SWITCH(sporedSlot, 2); MOVE(playerLeft, MOVE_SPORE, target:healingSlot); }
@@ -602,39 +602,39 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         else
             TURN { SWITCH(sporedSlot, switchIndex); MOVE(healingSlot, move); MOVE(playerLeft, MOVE_SPORE, target:sporedSlot); }
     } SCENE {
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, sporedSlot);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
         STATUS_ICON(sporedSlot, sleep: TRUE);
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, healingSlot);
             STATUS_ICON(healingSlot, sleep: TRUE);
-            MESSAGE("The opposing Zigzagoon fell asleep!");
+            MESSAGE("The opposing Toyagumon fell asleep!");
         }
-        MESSAGE("Sleep Clause kept the opposing Zigzagoon awake!");
+        MESSAGE("Sleep Clause kept the opposing Toyagumon awake!");
         if (move == MOVE_AROMATHERAPY)
         {
-            MESSAGE("The opposing Zigzagoon used Aromatherapy!");
+            MESSAGE("The opposing Toyagumon used Aromatherapy!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_AROMATHERAPY, healingSlot);
         }
         else if (move == MOVE_HEAL_BELL)
         {
-            MESSAGE("The opposing Zigzagoon used Heal Bell!");
+            MESSAGE("The opposing Toyagumon used Heal Bell!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_BELL, healingSlot);
         }
         else
         {
-            MESSAGE("The opposing Zigzagoon used Sparkly Swirl!");
+            MESSAGE("The opposing Toyagumon used Sparkly Swirl!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPARKLY_SWIRL, healingSlot);
         }
         STATUS_ICON(sporedSlot, sleep: FALSE);
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, sporedSlot);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
     }
 }
 
@@ -645,38 +645,38 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(MoveHasAdditionalEffect(MOVE_WAKE_UP_SLAP, MOVE_EFFECT_REMOVE_STATUS));
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SPORE, target:opponentLeft); }
         TURN { SWITCH(opponentLeft, 2); MOVE(playerLeft, MOVE_SPORE, target:opponentRight); }
         TURN { SWITCH(opponentLeft, 0); MOVE(playerLeft, MOVE_WAKE_UP_SLAP, target:opponentLeft); }
         TURN { MOVE(playerLeft, MOVE_SPORE, target:opponentLeft); }
     } SCENE {
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentLeft);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
         STATUS_ICON(opponentLeft, sleep: TRUE);
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentRight);
             STATUS_ICON(opponentRight, sleep: TRUE);
-            MESSAGE("The opposing Zigzagoon fell asleep!");
+            MESSAGE("The opposing Toyagumon fell asleep!");
         }
-        MESSAGE("Sleep Clause kept the opposing Zigzagoon awake!");
-        MESSAGE("Zigzagoon used Wake-Up Slap!");
+        MESSAGE("Sleep Clause kept the opposing Toyagumon awake!");
+        MESSAGE("Toyagumon used Wake-Up Slap!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_WAKE_UP_SLAP, playerLeft);
-        MESSAGE("The opposing Zigzagoon woke up!");
+        MESSAGE("The opposing Toyagumon woke up!");
         STATUS_ICON(opponentLeft, sleep: FALSE);
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentLeft);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
         STATUS_ICON(opponentLeft, sleep: TRUE);
     }
 }
@@ -688,31 +688,31 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_UPROAR) == EFFECT_UPROAR);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SPORE, target:opponentLeft); MOVE(playerRight, MOVE_UPROAR); MOVE(opponentRight, MOVE_ROAR, target:playerRight); }
         TURN { MOVE(playerLeft, MOVE_SPORE, target:opponentLeft); }
     } SCENE {
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentLeft);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
         STATUS_ICON(opponentLeft, sleep: TRUE);
-        MESSAGE("Zigzagoon used Uproar!");
+        MESSAGE("Toyagumon used Uproar!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_UPROAR, playerRight);
-        MESSAGE("Zigzagoon caused an uproar!");
-        MESSAGE("The uproar woke the opposing Zigzagoon!");
+        MESSAGE("Toyagumon caused an uproar!");
+        MESSAGE("The uproar woke the opposing Toyagumon!");
         STATUS_ICON(opponentLeft, sleep: FALSE);
-        MESSAGE("The opposing Zigzagoon used Roar!");
+        MESSAGE("The opposing Toyagumon used Roar!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROAR, opponentRight);
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentLeft);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
         STATUS_ICON(opponentLeft, sleep: TRUE);
     }
 }
@@ -737,44 +737,44 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         ASSUME(GetMoveEffect(MOVE_TAKE_HEART) == EFFECT_TAKE_HEART);
         ASSUME(GetMoveEffect(MOVE_AROMATHERAPY) == EFFECT_HEAL_BELL);
         ASSUME(gItemsInfo[ITEM_CHESTO_BERRY].holdEffect == HOLD_EFFECT_CURE_SLP);
-        PLAYER(SPECIES_ZIGZAGOON) { Item(ITEM_CHESTO_BERRY); }
-        OPPONENT(SPECIES_ZIGZAGOON) { Moves(MOVE_SLEEP_TALK, move); }
+        PLAYER(SPECIES_TOYAGUMON) { Item(ITEM_CHESTO_BERRY); }
+        OPPONENT(SPECIES_TOYAGUMON) { Moves(MOVE_SLEEP_TALK, move); }
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); MOVE(opponent, MOVE_SLEEP_TALK); }
         TURN { MOVE(player, MOVE_SPORE); MOVE(opponent, move); }
     } SCENE {
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
-        MESSAGE("The opposing Zigzagoon used Sleep Talk!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
+        MESSAGE("The opposing Toyagumon used Sleep Talk!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SLEEP_TALK, opponent);
         if (move == MOVE_PSYCHO_SHIFT)
         {
-            MESSAGE("The opposing Zigzagoon used Psycho Shift!");
+            MESSAGE("The opposing Toyagumon used Psycho Shift!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_PSYCHO_SHIFT, opponent);
         }
         else if (move == MOVE_JUNGLE_HEALING)
         {
-            MESSAGE("The opposing Zigzagoon used Jungle Healing!");
+            MESSAGE("The opposing Toyagumon used Jungle Healing!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_JUNGLE_HEALING, opponent);
         }
         else if (move == MOVE_LUNAR_BLESSING)
         {
-            MESSAGE("The opposing Zigzagoon used Lunar Blessing!");
+            MESSAGE("The opposing Toyagumon used Lunar Blessing!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_LUNAR_BLESSING, opponent);
         }
         else if (move == MOVE_TAKE_HEART)
         {
-            MESSAGE("The opposing Zigzagoon used Take Heart!");
+            MESSAGE("The opposing Toyagumon used Take Heart!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_TAKE_HEART, opponent);
         }
         else if (move == MOVE_AROMATHERAPY)
         {
-            MESSAGE("The opposing Zigzagoon used Aromatherapy!");
+            MESSAGE("The opposing Toyagumon used Aromatherapy!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_AROMATHERAPY, opponent);
         }
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
     }
@@ -786,22 +786,22 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_PELIPPER) { Ability(ABILITY_DRIZZLE); }
-        OPPONENT(SPECIES_LUVDISC) { Ability(ABILITY_HYDRATION); }
+        PLAYER(SPECIES_ANKYLOMON) { Ability(ABILITY_DRIZZLE); }
+        OPPONENT(SPECIES_FLYBEEMON) { Ability(ABILITY_HYDRATION); }
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
         TURN { MOVE(player, MOVE_SPORE); }
     } SCENE {
-        MESSAGE("Pelipper used Spore!");
+        MESSAGE("Ankylomon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Luvdisc fell asleep!");
-        MESSAGE("The opposing Luvdisc's Hydration cured its sleep problem!");
+        MESSAGE("The opposing Flybeemon fell asleep!");
+        MESSAGE("The opposing Flybeemon's Hydration cured its sleep problem!");
         STATUS_ICON(opponent, sleep: FALSE);
-        MESSAGE("Pelipper used Spore!");
+        MESSAGE("Ankylomon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Luvdisc fell asleep!");
+        MESSAGE("The opposing Flybeemon fell asleep!");
     }
 }
 
@@ -811,24 +811,24 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_SWABLU) { Ability(ABILITY_NATURAL_CURE); }
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_DARLIZAMON) { Ability(ABILITY_NATURAL_CURE); }
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
         TURN { SWITCH(opponent, 1); }
         TURN { SWITCH(opponent, 0); MOVE(player, MOVE_SPORE); }
     } SCENE {
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Swablu fell asleep!");
-        MESSAGE("2 withdrew Swablu!");
-        MESSAGE("2 sent out Swablu!");
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("The opposing Darlizamon fell asleep!");
+        MESSAGE("2 withdrew Darlizamon!");
+        MESSAGE("2 sent out Darlizamon!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Swablu fell asleep!");
+        MESSAGE("The opposing Darlizamon fell asleep!");
     }
 }
 
@@ -842,21 +842,21 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_DRATINI) { Ability(ABILITY_SHED_SKIN); }
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_ELECMON) { Ability(ABILITY_SHED_SKIN); }
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
         TURN { MOVE(player, MOVE_SPORE); }
     } SCENE {
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Dratini fell asleep!");
-        MESSAGE("The opposing Dratini's Shed Skin cured its sleep problem!");
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("The opposing Elecmon fell asleep!");
+        MESSAGE("The opposing Elecmon's Shed Skin cured its sleep problem!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Dratini fell asleep!");
+        MESSAGE("The opposing Elecmon fell asleep!");
     }
 }
 
@@ -867,23 +867,23 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_CHANSEY) { Ability(ABILITY_HEALER); }
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_BEARMON) { Ability(ABILITY_HEALER); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SPORE, target:opponentLeft); }
         TURN { MOVE(playerLeft, MOVE_SPORE, target:opponentLeft); }
     } SCENE {
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentLeft);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
-        MESSAGE("The opposing Chansey's Healer cured the opposing Zigzagoon's problem!");
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
+        MESSAGE("The opposing Bearmon's Healer cured the opposing Toyagumon's problem!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentLeft);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
     }
 }
 
@@ -898,24 +898,24 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(gItemsInfo[ITEM_CHESTO_BERRY].holdEffect == HOLD_EFFECT_CURE_SLP);
         ASSUME(gItemsInfo[ITEM_LUM_BERRY].holdEffect == HOLD_EFFECT_CURE_STATUS);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON) { Item(heldItem); }
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON) { Item(heldItem); }
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
         TURN { MOVE(player, MOVE_SPORE); }
     } SCENE {
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
         if (heldItem == ITEM_CHESTO_BERRY)
-            MESSAGE("The opposing Zigzagoon's Chesto Berry woke it up!");
+            MESSAGE("The opposing Toyagumon's Chesto Berry woke it up!");
         else
-            MESSAGE("The opposing Zigzagoon's Lum Berry cured its sleep problem!");
-        MESSAGE("Zigzagoon used Spore!");
+            MESSAGE("The opposing Toyagumon's Lum Berry cured its sleep problem!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
     }
 }
 
@@ -931,28 +931,28 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         ASSUME(GetMoveEffect(MOVE_FLING) == EFFECT_FLING);
         ASSUME(gItemsInfo[ITEM_CHESTO_BERRY].holdEffect == HOLD_EFFECT_CURE_SLP);
         ASSUME(gItemsInfo[ITEM_LUM_BERRY].holdEffect == HOLD_EFFECT_CURE_STATUS);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON) { Item(heldItem); }
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON) { Item(heldItem); }
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SPORE, target: opponentLeft); MOVE(playerRight, MOVE_FLING, target: opponentLeft); }
         TURN { MOVE(playerLeft, MOVE_SPORE, target: opponentLeft); }
     } SCENE {
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentLeft);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
-        MESSAGE("Zigzagoon used Fling!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
+        MESSAGE("Toyagumon used Fling!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FLING, playerRight);
         if (heldItem == ITEM_CHESTO_BERRY)
-            MESSAGE("The opposing Zigzagoon's Chesto Berry woke it up!");
+            MESSAGE("The opposing Toyagumon's Chesto Berry woke it up!");
         else
-            MESSAGE("The opposing Zigzagoon's Lum Berry cured its sleep problem!");
-        MESSAGE("Zigzagoon used Spore!");
+            MESSAGE("The opposing Toyagumon's Lum Berry cured its sleep problem!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentLeft);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
     }
 }
 
@@ -963,21 +963,21 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(gItemsInfo[ITEM_AWAKENING].battleUsage == EFFECT_ITEM_CURE_STATUS);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
         TURN { USE_ITEM(opponent, ITEM_AWAKENING, partyIndex: 0); MOVE(player, MOVE_SPORE); }
     } SCENE {
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
-        MESSAGE("Zigzagoon had its status healed!");
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
+        MESSAGE("Toyagumon had its status healed!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
     }
 }
 
@@ -987,23 +987,23 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON) { Level(5); }
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON) { Level(5); }
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
         TURN { MOVE(player, MOVE_SCRATCH); SEND_OUT(opponent, 1); }
         TURN { MOVE(player, MOVE_SPORE); }
     } SCENE {
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
-        MESSAGE("The opposing Zigzagoon fainted!");
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
+        MESSAGE("The opposing Toyagumon fainted!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
     }
 }
 
@@ -1013,23 +1013,23 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON) { Level(5); }
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON) { Level(5); }
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SPORE, target: opponentLeft); MOVE(playerRight, MOVE_SCRATCH, target: opponentLeft); }
         TURN { MOVE(playerLeft, MOVE_SPORE, target: opponentRight);}
     } SCENE {
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentLeft);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
-        MESSAGE("The opposing Zigzagoon fainted!");
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
+        MESSAGE("The opposing Toyagumon fainted!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentRight);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
     }
 }
 
@@ -1042,31 +1042,31 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_DELIBIRD) { Ability(ability); }
-        OPPONENT(SPECIES_ZIGZAGOON) { Moves(MOVE_SLEEP_TALK, MOVE_SKILL_SWAP); }
+        PLAYER(SPECIES_PENGUINMON) { Ability(ability); }
+        OPPONENT(SPECIES_TOYAGUMON) { Moves(MOVE_SLEEP_TALK, MOVE_SKILL_SWAP); }
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); MOVE(opponent, MOVE_SLEEP_TALK); }
         TURN { MOVE(opponent, MOVE_SKILL_SWAP); }
         TURN { MOVE(player, MOVE_SPORE); MOVE(opponent, MOVE_SKILL_SWAP); }
     } SCENE {
-        MESSAGE("Delibird used Spore!");
+        MESSAGE("Penguinmon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
-        MESSAGE("The opposing Zigzagoon used Sleep Talk!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
+        MESSAGE("The opposing Toyagumon used Sleep Talk!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SLEEP_TALK, opponent);
-        MESSAGE("The opposing Zigzagoon used Skill Swap!");
+        MESSAGE("The opposing Toyagumon used Skill Swap!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SKILL_SWAP, opponent);
         if (ability == ABILITY_VITAL_SPIRIT)
-            MESSAGE("The opposing Zigzagoon's Vital Spirit cured its sleep problem!");
+            MESSAGE("The opposing Toyagumon's Vital Spirit cured its sleep problem!");
         if (ability == ABILITY_INSOMNIA)
-            MESSAGE("The opposing Zigzagoon's Insomnia cured its sleep problem!");
-        MESSAGE("The opposing Zigzagoon used Skill Swap!");
+            MESSAGE("The opposing Toyagumon's Insomnia cured its sleep problem!");
+        MESSAGE("The opposing Toyagumon used Skill Swap!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SKILL_SWAP, opponent);
-        MESSAGE("Delibird used Spore!");
+        MESSAGE("Penguinmon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
     }
 }
 
@@ -1079,31 +1079,31 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_ZIGZAGOON)
-        PLAYER(SPECIES_DELIBIRD) { Ability(ability); }
-        OPPONENT(SPECIES_RALTS) { Ability(ABILITY_TRACE); }
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON)
+        PLAYER(SPECIES_PENGUINMON) { Ability(ability); }
+        OPPONENT(SPECIES_APEMON) { Ability(ABILITY_TRACE); }
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
         TURN { SWITCH(player, 1); SWITCH(opponent, 1); }
         TURN { SWITCH(opponent, 0); }
         TURN { SWITCH(opponent, 1); MOVE(player, MOVE_SPORE); }
     } SCENE {
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Ralts fell asleep!");
-        MESSAGE("2 sent out Zigzagoon!");
-        MESSAGE("2 sent out Ralts!");
+        MESSAGE("The opposing Apemon fell asleep!");
+        MESSAGE("2 sent out Toyagumon!");
+        MESSAGE("2 sent out Apemon!");
         if (ability == ABILITY_VITAL_SPIRIT)
-            MESSAGE("The opposing Ralts's Vital Spirit cured its sleep problem!");
+            MESSAGE("The opposing Apemon's Vital Spirit cured its sleep problem!");
         if (ability == ABILITY_INSOMNIA)
-            MESSAGE("The opposing Ralts's Insomnia cured its sleep problem!");
-        MESSAGE("2 sent out Zigzagoon!");
-        MESSAGE("Delibird used Spore!");
+            MESSAGE("The opposing Apemon's Insomnia cured its sleep problem!");
+        MESSAGE("2 sent out Toyagumon!");
+        MESSAGE("Penguinmon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
     }
 }
 
@@ -1118,32 +1118,32 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(gItemsInfo[ITEM_LAGGING_TAIL].holdEffect == HOLD_EFFECT_LAGGING_TAIL);
-        PLAYER(SPECIES_ZIGZAGOON)
-        PLAYER(SPECIES_DELIBIRD) { Ability(ability); }
-        OPPONENT(SPECIES_DITTO) { Ability(ABILITY_IMPOSTER); }
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON)
+        PLAYER(SPECIES_PENGUINMON) { Ability(ability); }
+        OPPONENT(SPECIES_CRABMON) { Ability(ABILITY_IMPOSTER); }
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
         TURN { SWITCH(player, 1); SWITCH(opponent, 1); }
         TURN { SWITCH(opponent, 0); }
         TURN { SWITCH(opponent, 1); MOVE(player, MOVE_SPORE); }
     } SCENE {
-        MESSAGE("The opposing Ditto transformed into Zigzagoon using Imposter!");
-        MESSAGE("Zigzagoon used Spore!");
+        MESSAGE("The opposing Crabmon transformed into Toyagumon using Imposter!");
+        MESSAGE("Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Ditto fell asleep!");
-        MESSAGE("2 sent out Zigzagoon!");
-        MESSAGE("2 sent out Ditto!");
+        MESSAGE("The opposing Crabmon fell asleep!");
+        MESSAGE("2 sent out Toyagumon!");
+        MESSAGE("2 sent out Crabmon!");
         if (ability == ABILITY_VITAL_SPIRIT)
-            MESSAGE("The opposing Ditto's Vital Spirit cured its sleep problem!");
+            MESSAGE("The opposing Crabmon's Vital Spirit cured its sleep problem!");
         else
-            MESSAGE("The opposing Ditto's Insomnia cured its sleep problem!");
-        MESSAGE("2 sent out Zigzagoon!");
-        MESSAGE("Delibird used Spore!");
+            MESSAGE("The opposing Crabmon's Insomnia cured its sleep problem!");
+        MESSAGE("2 sent out Toyagumon!");
+        MESSAGE("Penguinmon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
     }
 }
 
@@ -1155,8 +1155,8 @@ AI_SINGLE_BATTLE_TEST("Sleep Clause: AI will use sleep moves again when sleep cl
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(gItemsInfo[ITEM_CHESTO_BERRY].holdEffect == HOLD_EFFECT_CURE_SLP);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_CHESTO_BERRY); }
-        OPPONENT(SPECIES_BRELOOM) { Moves(MOVE_SPORE, MOVE_MACH_PUNCH); }
+        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_CHESTO_BERRY); }
+        OPPONENT(SPECIES_ATAMADEMON) { Moves(MOVE_SPORE, MOVE_MACH_PUNCH); }
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE); EXPECT_MOVE(opponent, MOVE_SPORE); }
         TURN { MOVE(player, MOVE_CELEBRATE); EXPECT_MOVE(opponent, MOVE_SPORE); }
@@ -1171,23 +1171,23 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep clause is deactivated when a sleeping mo
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_APPLETUN) { GigantamaxFactor(TRUE); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_SPORE, target: playerRight); }
         TURN { MOVE(playerLeft, MOVE_VINE_WHIP, target: opponentLeft, gimmick: GIMMICK_DYNAMAX); }
         TURN { MOVE(opponentRight, MOVE_SPORE, target: playerRight); }
     } SCENE {
-        MESSAGE("The opposing Wobbuffet used Spore!");
+        MESSAGE("The opposing Lopmon_x used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponentRight);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerRight);
-        MESSAGE("Wobbuffet fell asleep!");
+        MESSAGE("Lopmon_x fell asleep!");
         MESSAGE("Appletun used G-Max Sweetness!");
-        MESSAGE("The opposing Wobbuffet used Spore!");
+        MESSAGE("The opposing Lopmon_x used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponentRight);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerRight);
-        MESSAGE("Wobbuffet fell asleep!");
+        MESSAGE("Lopmon_x fell asleep!");
     }
 }
 
@@ -1197,15 +1197,15 @@ SINGLE_BATTLE_TEST("Sleep Clause: Pre-existing sleep condition doesn't activate 
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON) { Status1(STATUS1_SLEEP); }
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON) { Status1(STATUS1_SLEEP); }
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { SWITCH(opponent, 1); MOVE(player, MOVE_SPORE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
         STATUS_ICON(opponent, sleep: TRUE);
     }
 }
@@ -1220,10 +1220,10 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep caused by Effect Spore does not prevent 
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_AROMATHERAPY) == EFFECT_HEAL_BELL);
         ASSUME(MoveMakesContact(MOVE_SCRATCH));
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_ATAMADEMON) { Ability(ABILITY_EFFECT_SPORE); }
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH); }
         TURN { SWITCH(player, 1); MOVE(opponent, MOVE_SPORE); }
@@ -1231,19 +1231,19 @@ SINGLE_BATTLE_TEST("Sleep Clause: Sleep caused by Effect Spore does not prevent 
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_EFFECT_SPORE);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-        MESSAGE("The opposing Breloom's Effect Spore made Zigzagoon sleep!");
+        MESSAGE("The opposing Atamademon's Effect Spore made Toyagumon sleep!");
         STATUS_ICON(player, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponent);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-        MESSAGE("Zigzagoon fell asleep!");
+        MESSAGE("Toyagumon fell asleep!");
         STATUS_ICON(player, sleep: TRUE);
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponent);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-            MESSAGE("Zigzagoon fell asleep!");
+            MESSAGE("Toyagumon fell asleep!");
             STATUS_ICON(player, sleep: TRUE);
         }
-        MESSAGE("Sleep Clause kept Zigzagoon awake!");
+        MESSAGE("Sleep Clause kept Toyagumon awake!");
     }
 }
 
@@ -1256,9 +1256,9 @@ SINGLE_BATTLE_TEST("Sleep Clause: Waking up after Effect Spore doesn't deactivat
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(MoveMakesContact(MOVE_SCRATCH));
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_ATAMADEMON) { Ability(ABILITY_EFFECT_SPORE); }
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH); }
         TURN {}
@@ -1269,19 +1269,19 @@ SINGLE_BATTLE_TEST("Sleep Clause: Waking up after Effect Spore doesn't deactivat
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_EFFECT_SPORE);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-        MESSAGE("The opposing Breloom's Effect Spore made Zigzagoon sleep!");
+        MESSAGE("The opposing Atamademon's Effect Spore made Toyagumon sleep!");
         STATUS_ICON(player, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponent);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-        MESSAGE("Zigzagoon fell asleep!");
+        MESSAGE("Toyagumon fell asleep!");
         STATUS_ICON(player, sleep: TRUE);
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponent);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-            MESSAGE("Zigzagoon fell asleep!");
+            MESSAGE("Toyagumon fell asleep!");
             STATUS_ICON(player, sleep: TRUE);
         }
-        MESSAGE("Sleep Clause kept Zigzagoon awake!");
+        MESSAGE("Sleep Clause kept Toyagumon awake!");
     }
 }
 
@@ -1295,11 +1295,11 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Waking up after Effect Spore doesn't deactivat
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_AROMATHERAPY) == EFFECT_HEAL_BELL);
         ASSUME(MoveMakesContact(MOVE_SCRATCH));
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_ATAMADEMON) { Ability(ABILITY_EFFECT_SPORE); }
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SCRATCH, target: opponentLeft); MOVE(opponentRight, MOVE_SPORE, target:playerRight); }
         TURN { SWITCH(playerLeft, 2); }
@@ -1307,24 +1307,24 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Waking up after Effect Spore doesn't deactivat
     } SCENE {
         ABILITY_POPUP(opponentLeft, ABILITY_EFFECT_SPORE);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerLeft);
-        MESSAGE("The opposing Breloom's Effect Spore made Zigzagoon sleep!");
+        MESSAGE("The opposing Atamademon's Effect Spore made Toyagumon sleep!");
         STATUS_ICON(playerLeft, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponentRight);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerRight);
-        MESSAGE("Zigzagoon fell asleep!");
+        MESSAGE("Toyagumon fell asleep!");
         STATUS_ICON(playerRight, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_AROMATHERAPY, playerLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponentRight);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerRight);
-        MESSAGE("Zigzagoon fell asleep!");
+        MESSAGE("Toyagumon fell asleep!");
         STATUS_ICON(playerRight, sleep: TRUE);
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponentLeft);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerLeft);
-            MESSAGE("Zigzagoon fell asleep!");
+            MESSAGE("Toyagumon fell asleep!");
             STATUS_ICON(playerLeft, sleep: TRUE);
         }
-        MESSAGE("Sleep Clause kept Zigzagoon awake!");
+        MESSAGE("Sleep Clause kept Toyagumon awake!");
     }
 }
 
@@ -1335,9 +1335,9 @@ SINGLE_BATTLE_TEST("Sleep Clause: Waking up after Rest doesn't deactivate sleep 
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_REST) == EFFECT_REST);
-        PLAYER(SPECIES_ZIGZAGOON) { HP(1); MaxHP(100); }
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON) { HP(1); MaxHP(100); }
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(player, MOVE_REST); }
         TURN {}
@@ -1346,22 +1346,22 @@ SINGLE_BATTLE_TEST("Sleep Clause: Waking up after Rest doesn't deactivate sleep 
         TURN { MOVE(opponent, MOVE_SPORE); }
         TURN { SWITCH(player, 1); MOVE(opponent, MOVE_SPORE); }
     } SCENE {
-        MESSAGE("Zigzagoon went to sleep!");
+        MESSAGE("Toyagumon went to sleep!");
         STATUS_ICON(player, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REST, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-        MESSAGE("Zigzagoon woke up!");
+        MESSAGE("Toyagumon woke up!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponent);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-        MESSAGE("Zigzagoon fell asleep!");
+        MESSAGE("Toyagumon fell asleep!");
         STATUS_ICON(player, sleep: TRUE);
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponent);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-            MESSAGE("Zigzagoon fell asleep!");
+            MESSAGE("Toyagumon fell asleep!");
             STATUS_ICON(player, sleep: TRUE);
         }
-        MESSAGE("Sleep Clause kept Zigzagoon awake!");
+        MESSAGE("Sleep Clause kept Toyagumon awake!");
     }
 }
 
@@ -1372,11 +1372,11 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Waking up after Rest doesn't deactivate sleep 
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_REST) == EFFECT_REST);
-        PLAYER(SPECIES_ZIGZAGOON) { HP(1); MaxHP(100); }
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON) { HP(1); MaxHP(100); }
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_REST); MOVE(opponentRight, MOVE_SPORE, target:playerRight); }
         TURN { SWITCH(playerRight, 2); }
@@ -1384,20 +1384,20 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Waking up after Rest doesn't deactivate sleep 
         TURN {}
         TURN { MOVE(opponentRight, MOVE_SPORE, target:playerRight); }
     } SCENE {
-        MESSAGE("Zigzagoon went to sleep!");
+        MESSAGE("Toyagumon went to sleep!");
         STATUS_ICON(playerLeft, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REST, playerLeft);
-        MESSAGE("The opposing Zigzagoon used Spore!");
+        MESSAGE("The opposing Toyagumon used Spore!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponentRight);
-        MESSAGE("Zigzagoon fell asleep!");
+        MESSAGE("Toyagumon fell asleep!");
         STATUS_ICON(playerRight, sleep: TRUE);
-        MESSAGE("Zigzagoon woke up!");
+        MESSAGE("Toyagumon woke up!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponentRight);
-            MESSAGE("Zigzagoon fell asleep!");
+            MESSAGE("Toyagumon fell asleep!");
             STATUS_ICON(playerRight, sleep: TRUE);
         }
-        MESSAGE("Sleep Clause kept Zigzagoon awake!");
+        MESSAGE("Sleep Clause kept Toyagumon awake!");
     }
 }
 
@@ -1410,9 +1410,9 @@ SINGLE_BATTLE_TEST("Sleep Clause: Suppressing and then sleeping Vital Spirit / I
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_DELIBIRD) { Ability(ability); }
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_PENGUINMON) { Ability(ability); }
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(player, MOVE_GASTRO_ACID); }
         TURN { MOVE(player, MOVE_SPORE); }
@@ -1422,12 +1422,12 @@ SINGLE_BATTLE_TEST("Sleep Clause: Suppressing and then sleeping Vital Spirit / I
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Delibird fell asleep!");
+        MESSAGE("The opposing Penguinmon fell asleep!");
         STATUS_ICON(opponent, sleep: TRUE);
-        MESSAGE("Sleep Clause kept the opposing Zigzagoon awake!");
+        MESSAGE("Sleep Clause kept the opposing Toyagumon awake!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
         STATUS_ICON(opponent, sleep: TRUE);
     }
 }
@@ -1442,8 +1442,8 @@ SINGLE_BATTLE_TEST("Sleep Clause: Mold Breaker Pokémon sleeping Vital Spirit / 
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         PLAYER(SPECIES_PANCHAM) { Ability(ABILITY_MOLD_BREAKER); }
-        OPPONENT(SPECIES_DELIBIRD) { Ability(ability); }
-        OPPONENT(SPECIES_ZIGZAGOON);
+        OPPONENT(SPECIES_PENGUINMON) { Ability(ability); }
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
         TURN { SWITCH(opponent, 1); MOVE(player, MOVE_SPORE); }
@@ -1452,12 +1452,12 @@ SINGLE_BATTLE_TEST("Sleep Clause: Mold Breaker Pokémon sleeping Vital Spirit / 
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Delibird fell asleep!");
+        MESSAGE("The opposing Penguinmon fell asleep!");
         STATUS_ICON(opponent, sleep: TRUE);
         ABILITY_POPUP(opponent, ability);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
         STATUS_ICON(opponent, sleep: TRUE);
     }
 }
@@ -1471,22 +1471,22 @@ SINGLE_BATTLE_TEST("Sleep Clause: Yawn'd Pokémon slept due to Effect Spore befo
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_YAWN) == EFFECT_YAWN);
         ASSUME(MoveMakesContact(MOVE_SCRATCH));
-        PLAYER(SPECIES_BRELOOM) { Ability(ABILITY_EFFECT_SPORE); }
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_ATAMADEMON) { Ability(ABILITY_EFFECT_SPORE); }
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(player, MOVE_YAWN); }
         TURN { MOVE(opponent, MOVE_SCRATCH); }
         TURN { SWITCH(opponent, 1); MOVE(player, MOVE_SPORE); }
     } SCENE {
-        MESSAGE("The opposing Zigzagoon grew drowsy!");
+        MESSAGE("The opposing Toyagumon grew drowsy!");
         ABILITY_POPUP(player, ABILITY_EFFECT_SPORE);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("Breloom's Effect Spore made the opposing Zigzagoon sleep!");
+        MESSAGE("Atamademon's Effect Spore made the opposing Toyagumon sleep!");
         STATUS_ICON(opponent, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
         STATUS_ICON(opponent, sleep: TRUE);
     }
 }
@@ -1498,22 +1498,22 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Yawn'd Pokémon who's partner is slept before 
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_YAWN) == EFFECT_YAWN);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_YAWN, target: opponentLeft); MOVE(playerRight, MOVE_YAWN, target: opponentRight); }
         TURN { MOVE(playerLeft, MOVE_SPORE, target: opponentLeft); }
     } SCENE {
-        MESSAGE("The opposing Zigzagoon grew drowsy!");
-        MESSAGE("The opposing Zigzagoon grew drowsy!");
+        MESSAGE("The opposing Toyagumon grew drowsy!");
+        MESSAGE("The opposing Toyagumon grew drowsy!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentLeft);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
         STATUS_ICON(opponentLeft, sleep: TRUE);
         NONE_OF {
-            MESSAGE( "The opposing Zigzagoon fell asleep!");
+            MESSAGE( "The opposing Toyagumon fell asleep!");
             STATUS_ICON(opponentRight, sleep: TRUE);
         }
     }
@@ -1526,20 +1526,20 @@ DOUBLE_BATTLE_TEST("Sleep Clause: If both Pokémon on one side are Yawn'd at the
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_YAWN) == EFFECT_YAWN);
-        PLAYER(SPECIES_ZIGZAGOON) { Speed(5); }
-        PLAYER(SPECIES_ZIGZAGOON) { Speed(4); }
-        OPPONENT(SPECIES_ZIGZAGOON) { Speed(3); }
-        OPPONENT(SPECIES_ZIGZAGOON) { Speed(2); }
+        PLAYER(SPECIES_TOYAGUMON) { Speed(5); }
+        PLAYER(SPECIES_TOYAGUMON) { Speed(4); }
+        OPPONENT(SPECIES_TOYAGUMON) { Speed(3); }
+        OPPONENT(SPECIES_TOYAGUMON) { Speed(2); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_YAWN, target: opponentLeft); MOVE(playerRight, MOVE_YAWN, target: opponentRight); }
         TURN { }
     } SCENE {
-        MESSAGE("The opposing Zigzagoon grew drowsy!");
-        MESSAGE("The opposing Zigzagoon grew drowsy!");
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon grew drowsy!");
+        MESSAGE("The opposing Toyagumon grew drowsy!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
         STATUS_ICON(opponentLeft, sleep: TRUE);
         NONE_OF {
-            MESSAGE( "The opposing Zigzagoon fell asleep!");
+            MESSAGE( "The opposing Toyagumon fell asleep!");
             STATUS_ICON(opponentRight, sleep: TRUE);
         }
     }
@@ -1552,10 +1552,10 @@ SINGLE_BATTLE_TEST("Sleep Clause: Reflection moves (ie. Magic Coat) fail if slee
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_MAGIC_COAT) == EFFECT_MAGIC_COAT);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SPORE); }
         TURN { SWITCH(opponent, 1); }
@@ -1563,11 +1563,11 @@ SINGLE_BATTLE_TEST("Sleep Clause: Reflection moves (ie. Magic Coat) fail if slee
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
         STATUS_ICON(opponent, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MAGIC_COAT, player);
-        MESSAGE("Zigzagoon bounced the Spore back!");
-        MESSAGE("Sleep Clause kept the opposing Zigzagoon awake!");
+        MESSAGE("Toyagumon bounced the Spore back!");
+        MESSAGE("Sleep Clause kept the opposing Toyagumon awake!");
     }
 }
 
@@ -1578,26 +1578,26 @@ SINGLE_BATTLE_TEST("Sleep Clause: Reflection moves (ie. Magic Coat) that reflect
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_MAGIC_COAT) == EFFECT_MAGIC_COAT);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(player, MOVE_MAGIC_COAT); MOVE(opponent, MOVE_SPORE); }
         TURN { SWITCH(opponent, 1); }
         TURN { MOVE(player, MOVE_SPORE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MAGIC_COAT, player);
-        MESSAGE("Zigzagoon bounced the Spore back!");
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("Toyagumon bounced the Spore back!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
         STATUS_ICON(opponent, sleep: TRUE);
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, player);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-            MESSAGE("The opposing Zigzagoon fell asleep!");
+            MESSAGE("The opposing Toyagumon fell asleep!");
             STATUS_ICON(opponent, sleep: TRUE);
         }
-        MESSAGE("Sleep Clause kept the opposing Zigzagoon awake!");
+        MESSAGE("Sleep Clause kept the opposing Toyagumon awake!");
     }
 }
 
@@ -1608,8 +1608,8 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Reflection moves (ie. Magic Coat) that reflect
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_MAGIC_COAT) == EFFECT_MAGIC_COAT);
         ASSUME(GetMoveEffect(MOVE_DARK_VOID) == EFFECT_DARK_VOID);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
         OPPONENT(SPECIES_DARKRAI);
         OPPONENT(SPECIES_DARKRAI);
     } WHEN {
@@ -1633,26 +1633,26 @@ SINGLE_BATTLE_TEST("Sleep Clause: Magic Bounce'ing a sleep move activates sleep 
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_ESPEON) { Ability(ABILITY_MAGIC_BOUNCE); }
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_KUNEMON) { Ability(ABILITY_MAGIC_BOUNCE); }
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SPORE); }
         TURN { SWITCH(opponent, 1); }
         TURN { MOVE(opponent, MOVE_SPORE); }
     } SCENE {
-        MESSAGE("The opposing Zigzagoon's Spore was bounced back by Espeon's Magic Bounce!");
+        MESSAGE("The opposing Toyagumon's Spore was bounced back by Kunemon's Magic Bounce!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
         STATUS_ICON(opponent, sleep: TRUE);
-        MESSAGE("The opposing Zigzagoon's Spore was bounced back by Espeon's Magic Bounce!");
+        MESSAGE("The opposing Toyagumon's Spore was bounced back by Kunemon's Magic Bounce!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-            MESSAGE("The opposing Zigzagoon fell asleep!");
+            MESSAGE("The opposing Toyagumon fell asleep!");
             STATUS_ICON(opponent, sleep: TRUE);
         }
-        MESSAGE("Sleep Clause kept the opposing Zigzagoon awake!");
+        MESSAGE("Sleep Clause kept the opposing Toyagumon awake!");
     }
 }
 
@@ -1662,14 +1662,14 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Magic Bounce reflecting Dark Void only sleeps 
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_DARK_VOID) == EFFECT_DARK_VOID);
-        PLAYER(SPECIES_ESPEON) { Ability(ABILITY_MAGIC_BOUNCE); }
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_KUNEMON) { Ability(ABILITY_MAGIC_BOUNCE); }
+        PLAYER(SPECIES_LOPMON_X);
         OPPONENT(SPECIES_DARKRAI);
         OPPONENT(SPECIES_DARKRAI);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_DARK_VOID); }
     } SCENE {
-        MESSAGE("The opposing Darkrai's Dark Void was bounced back by Espeon's Magic Bounce!");
+        MESSAGE("The opposing Darkrai's Dark Void was bounced back by Kunemon's Magic Bounce!");
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentLeft);
         MESSAGE("The opposing Darkrai fell asleep!");
         STATUS_ICON(opponentLeft, sleep: TRUE);
@@ -1687,14 +1687,14 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep Clause does not prevent sleeping your pa
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SPORE, target: playerRight); }
         TURN { SWITCH(playerRight, 2); MOVE(playerLeft, MOVE_SPORE, target: playerRight); }
@@ -1704,23 +1704,23 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep Clause does not prevent sleeping your pa
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerRight);
-        MESSAGE("Zigzagoon fell asleep!");
+        MESSAGE("Toyagumon fell asleep!");
         STATUS_ICON(playerRight, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerRight);
-        MESSAGE("Zigzagoon fell asleep!");
+        MESSAGE("Toyagumon fell asleep!");
         STATUS_ICON(playerRight, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerRight);
-        MESSAGE("Zigzagoon fell asleep!");
+        MESSAGE("Toyagumon fell asleep!");
         STATUS_ICON(playerRight, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerRight);
-        MESSAGE("Zigzagoon fell asleep!");
+        MESSAGE("Toyagumon fell asleep!");
         STATUS_ICON(playerRight, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerRight);
-        MESSAGE("Zigzagoon fell asleep!");
+        MESSAGE("Toyagumon fell asleep!");
         STATUS_ICON(playerRight, sleep: TRUE);
     }
 }
@@ -1730,14 +1730,14 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep Clause does not prevent sleeping your pa
     GIVEN {
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_YAWN) == EFFECT_YAWN);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_YAWN, target: playerRight); }
         TURN {}
@@ -1751,19 +1751,19 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep Clause does not prevent sleeping your pa
         TURN {}
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_YAWN, playerLeft);
-        MESSAGE("Zigzagoon grew drowsy!");
+        MESSAGE("Toyagumon grew drowsy!");
         STATUS_ICON(playerRight, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_YAWN, playerLeft);
-        MESSAGE("Zigzagoon grew drowsy!");
+        MESSAGE("Toyagumon grew drowsy!");
         STATUS_ICON(playerRight, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_YAWN, playerLeft);
-        MESSAGE("Zigzagoon grew drowsy!");
+        MESSAGE("Toyagumon grew drowsy!");
         STATUS_ICON(playerRight, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_YAWN, playerLeft);
-        MESSAGE("Zigzagoon grew drowsy!");
+        MESSAGE("Toyagumon grew drowsy!");
         STATUS_ICON(playerRight, sleep: TRUE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_YAWN, playerLeft);
-        MESSAGE("Zigzagoon grew drowsy!");
+        MESSAGE("Toyagumon grew drowsy!");
         STATUS_ICON(playerRight, sleep: TRUE);
     }
 }
@@ -1774,25 +1774,25 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Sleep moves used after being Encore'd are prev
         FLAG_SET(B_FLAG_SLEEP_CLAUSE);
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_SPORE, target: playerLeft); MOVE(playerRight, MOVE_ENCORE, target: opponentLeft); }
         TURN { SWITCH(playerLeft, 2); FORCED_MOVE(opponentLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponentLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerLeft);
-        MESSAGE("Zigzagoon fell asleep!");
+        MESSAGE("Toyagumon fell asleep!");
         STATUS_ICON(playerLeft, sleep: TRUE);
-        MESSAGE("Zigzagoon used Encore!");
-        MESSAGE("Go! Zigzagoon!");
+        MESSAGE("Toyagumon used Encore!");
+        MESSAGE("Go! Toyagumon!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponentLeft);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerLeft);
-            MESSAGE("Zigzagoon fell asleep!");
+            MESSAGE("Toyagumon fell asleep!");
             STATUS_ICON(playerLeft, sleep: TRUE);
         }
     }
@@ -1805,11 +1805,11 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Spore'ing opponent after Yawn'ing partner does
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_YAWN) == EFFECT_YAWN);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SPORE, target: playerRight); }
         TURN { SWITCH(playerRight, 2); MOVE(playerLeft, MOVE_YAWN, target: playerRight); }
@@ -1817,22 +1817,22 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Spore'ing opponent after Yawn'ing partner does
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerRight);
-        MESSAGE("Zigzagoon fell asleep!");
+        MESSAGE("Toyagumon fell asleep!");
         STATUS_ICON(playerRight, sleep: TRUE);
-        MESSAGE("Go! Zigzagoon!");
+        MESSAGE("Go! Toyagumon!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_YAWN, playerLeft);
-        MESSAGE("Zigzagoon grew drowsy!");
+        MESSAGE("Toyagumon grew drowsy!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentLeft);
-        MESSAGE("The opposing Zigzagoon fell asleep!");
+        MESSAGE("The opposing Toyagumon fell asleep!");
         STATUS_ICON(opponentLeft, sleep: TRUE);
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, playerRight);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponentRight);
-            MESSAGE("The opposing Zigzagoon fell asleep!");
+            MESSAGE("The opposing Toyagumon fell asleep!");
             STATUS_ICON(opponentRight, sleep: TRUE);
         }
-        MESSAGE("Zigzagoon fell asleep!");
+        MESSAGE("Toyagumon fell asleep!");
     }
 }
 
@@ -1843,27 +1843,27 @@ DOUBLE_BATTLE_TEST("Sleep Clause: Opponent Spore'ing player's partner after part
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_YAWN) == EFFECT_YAWN);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        PLAYER(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
-        OPPONENT(SPECIES_ZIGZAGOON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        PLAYER(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
+        OPPONENT(SPECIES_TOYAGUMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_YAWN, target: playerRight); }
         TURN { MOVE(opponentLeft, MOVE_SPORE, target: playerRight); MOVE(opponentRight, MOVE_SPORE, target:playerLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_YAWN, playerLeft);
-        MESSAGE("Zigzagoon grew drowsy!");
+        MESSAGE("Toyagumon grew drowsy!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponentLeft);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerRight);
-        MESSAGE("Zigzagoon fell asleep!");
+        MESSAGE("Toyagumon fell asleep!");
         STATUS_ICON(playerRight, sleep: TRUE);
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SPORE, opponentRight);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, playerLeft);
-            MESSAGE("Zigzagoon fell asleep!");
+            MESSAGE("Toyagumon fell asleep!");
             STATUS_ICON(playerLeft, sleep: TRUE);
         }
-        MESSAGE("Sleep Clause kept Zigzagoon awake!");
+        MESSAGE("Sleep Clause kept Toyagumon awake!");
     }
 }

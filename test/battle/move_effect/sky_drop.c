@@ -9,15 +9,15 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Sky Drop does no damage to Flying type Pokémon")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_PIDGEY].weight < 2000);
-        ASSUME(gSpeciesInfo[SPECIES_PIDGEY].types[1] == TYPE_FLYING);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_PIDGEY);
+        ASSUME(gSpeciesInfo[SPECIES_KETOMON].weight < 2000);
+        ASSUME(gSpeciesInfo[SPECIES_KETOMON].types[1] == TYPE_FLYING);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_KETOMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SKY_DROP); }
         TURN { SKIP_TURN(player); }
     } SCENE {
-        MESSAGE("Wobbuffet took the opposing Pidgey into the sky!");
+        MESSAGE("Lopmon_x took the opposing Ketomon into the sky!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SKY_DROP, player);
         NOT HP_BAR(opponent);
     }
@@ -26,8 +26,8 @@ SINGLE_BATTLE_TEST("Sky Drop does no damage to Flying type Pokémon")
 SINGLE_BATTLE_TEST("Sky Drop fails if target is behind a substitute")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUBSTITUTE); MOVE(player, MOVE_SKY_DROP); }
     } SCENE {
@@ -39,8 +39,8 @@ SINGLE_BATTLE_TEST("Sky Drop fails if target is behind a substitute")
 SINGLE_BATTLE_TEST("Sky Drop fails if target is in a Semi-Invulnerable state")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, MOVE_FLY); MOVE(player, MOVE_SKY_DROP); }
     } SCENE {
@@ -52,10 +52,10 @@ SINGLE_BATTLE_TEST("Sky Drop fails if target is in a Semi-Invulnerable state")
 DOUBLE_BATTLE_TEST("Sky Drop is cancelled if Gravity activated")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_SKY_DROP, target: opponentLeft);
@@ -64,29 +64,29 @@ DOUBLE_BATTLE_TEST("Sky Drop is cancelled if Gravity activated")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SKY_DROP, playerLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GRAVITY, playerRight);
-        MESSAGE("Wobbuffet fell from the sky due to the gravity!");
+        MESSAGE("Lopmon_x fell from the sky due to the gravity!");
     }
 }
 
 SINGLE_BATTLE_TEST("Sky Drop fails on heavy targets")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_METAGROSS].weight >= 2000);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_METAGROSS);
+        ASSUME(gSpeciesInfo[SPECIES_GAOGAMON].weight >= 2000);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_GAOGAMON);
     } WHEN {
         TURN { MOVE(player, MOVE_SKY_DROP); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SKY_DROP, player);
-        MESSAGE("The opposing Metagross is too heavy to be lifted!");
+        MESSAGE("The opposing Gaogamon is too heavy to be lifted!");
     }
 }
 
 SINGLE_BATTLE_TEST("Sky Drop cancels targets two turn moves")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN {
             MOVE(opponent, MOVE_SOLAR_BEAM);
@@ -104,8 +104,8 @@ SINGLE_BATTLE_TEST("Sky Drop cancels targets two turn moves")
 SINGLE_BATTLE_TEST("Sky Drop stops the confusion count until the target is dropped")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_THRASH); }
         TURN { SKIP_TURN(player); }

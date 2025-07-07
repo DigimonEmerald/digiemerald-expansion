@@ -19,9 +19,9 @@ SINGLE_BATTLE_TEST("Poison Point inflicts poison on contact")
             ABILITY_POPUP(opponent, ABILITY_POISON_POINT);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, player);
 <<<<<<< HEAD
-            MESSAGE("Lopmonx was poisoned by Foe Nidoran♂'s Poison Point!");
+            MESSAGE("Lopmonx was poisoned by Foe Pusumon's Poison Point!");
 =======
-            MESSAGE("Lopmonx was poisoned by the opposing Nidoran♂'s Poison Point!");
+            MESSAGE("Lopmonx was poisoned by the opposing Pusumon's Poison Point!");
 >>>>>>> upstream/master
             STATUS_ICON(player, poison: TRUE);
         } else {
@@ -29,9 +29,9 @@ SINGLE_BATTLE_TEST("Poison Point inflicts poison on contact")
                 ABILITY_POPUP(opponent, ABILITY_POISON_POINT);
                 ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, player);
 <<<<<<< HEAD
-                MESSAGE("Lopmonx was poisoned by Foe Nidoran♂'s Poison Point!");
+                MESSAGE("Lopmonx was poisoned by Foe Pusumon's Poison Point!");
 =======
-                MESSAGE("Lopmonx was poisoned by the opposing Nidoran♂'s Poison Point!");
+                MESSAGE("Lopmonx was poisoned by the opposing Pusumon's Poison Point!");
 >>>>>>> upstream/master
                 STATUS_ICON(player, poison: TRUE);
             }
@@ -53,7 +53,7 @@ SINGLE_BATTLE_TEST("Poison Point triggers 30% of the time")
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_POISON_POINT);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, player);
-        MESSAGE("Lopmonx was poisoned by the opposing Nidoran♂'s Poison Point!");
+        MESSAGE("Lopmonx was poisoned by the opposing Pusumon's Poison Point!");
         STATUS_ICON(player, poison: TRUE);
     }
 }
@@ -63,7 +63,7 @@ SINGLE_BATTLE_TEST("Poison Point will not poison Poison-Type targets with corros
     GIVEN {
         ASSUME(MoveMakesContact(MOVE_TACKLE));
         PLAYER(SPECIES_SALANDIT) { Ability(ABILITY_CORROSION); }
-        OPPONENT(SPECIES_NIDORAN_M) { Ability(ABILITY_POISON_POINT); }
+        OPPONENT(SPECIES_PUSUMON) { Ability(ABILITY_POISON_POINT); }
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
         TURN {}
@@ -71,7 +71,7 @@ SINGLE_BATTLE_TEST("Poison Point will not poison Poison-Type targets with corros
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_POISON_POINT);
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, player);
-            MESSAGE("Salandit was poisoned by the opposing Nidoran♂'s Poison Point!");
+            MESSAGE("Salandit was poisoned by the opposing Pusumon's Poison Point!");
             STATUS_ICON(player, poison: TRUE);
         }
     }

@@ -293,7 +293,7 @@ static bool8 DisplayPartyPokemonDataForMoveTutorOrEvolutionItem(u8);
 static void DisplayPartyPokemonData(u8);
 static void DisplayPartyPokemonNickname(struct Pokemon *, struct PartyMenuBox *, u8);
 static void DisplayPartyPokemonLevelCheck(struct Pokemon *, struct PartyMenuBox *, u8);
-static void DisplayPartyPokemonGenderNidoranCheck(struct Pokemon *, struct PartyMenuBox *, u8);
+static void DisplayPartyPokemonGenderPunimonCheck(struct Pokemon *, struct PartyMenuBox *, u8);
 static void DisplayPartyPokemonHPCheck(struct Pokemon *, struct PartyMenuBox *, u8);
 static void DisplayPartyPokemonMaxHPCheck(struct Pokemon *, struct PartyMenuBox *, u8);
 static void DisplayPartyPokemonHPBarCheck(struct Pokemon *, struct PartyMenuBox *);
@@ -1048,7 +1048,7 @@ static void DisplayPartyPokemonData(u8 slot)
         sPartyMenuBoxes[slot].infoRects->blitFunc(sPartyMenuBoxes[slot].windowId, 0, 0, 0, 0, FALSE);
         DisplayPartyPokemonNickname(&gPlayerParty[slot], &sPartyMenuBoxes[slot], 0);
         DisplayPartyPokemonLevelCheck(&gPlayerParty[slot], &sPartyMenuBoxes[slot], 0);
-        DisplayPartyPokemonGenderNidoranCheck(&gPlayerParty[slot], &sPartyMenuBoxes[slot], 0);
+        DisplayPartyPokemonGenderPunimonCheck(&gPlayerParty[slot], &sPartyMenuBoxes[slot], 0);
         DisplayPartyPokemonHPCheck(&gPlayerParty[slot], &sPartyMenuBoxes[slot], 0);
         DisplayPartyPokemonMaxHPCheck(&gPlayerParty[slot], &sPartyMenuBoxes[slot], 0);
         DisplayPartyPokemonHPBarCheck(&gPlayerParty[slot], &sPartyMenuBoxes[slot]);
@@ -1064,7 +1064,7 @@ static void DisplayPartyPokemonDescriptionData(u8 slot, u8 stringID)
     if (!GetMonData(mon, MON_DATA_IS_EGG))
     {
         DisplayPartyPokemonLevelCheck(mon, &sPartyMenuBoxes[slot], 0);
-        DisplayPartyPokemonGenderNidoranCheck(mon, &sPartyMenuBoxes[slot], 0);
+        DisplayPartyPokemonGenderPunimonCheck(mon, &sPartyMenuBoxes[slot], 0);
     }
     DisplayPartyPokemonDescriptionText(stringID, &sPartyMenuBoxes[slot], 0);
 }
@@ -2541,7 +2541,7 @@ static void DisplayPartyPokemonLevel(u8 level, struct PartyMenuBox *menuBox)
     DisplayPartyPokemonBarDetail(menuBox->windowId, gStringVar1, 0, &menuBox->infoRects->dimensions[4]);
 }
 
-static void DisplayPartyPokemonGenderNidoranCheck(struct Pokemon *mon, struct PartyMenuBox *menuBox, u8 c)
+static void DisplayPartyPokemonGenderPunimonCheck(struct Pokemon *mon, struct PartyMenuBox *menuBox, u8 c)
 {
     u8 nickname[POKEMON_NAME_LENGTH + 1];
 
@@ -2741,7 +2741,7 @@ void DisplayPartyMenuStdMessage(u32 stringId)
             if (gPlayerPartyCount == 0)
                 stringId = PARTY_MSG_NO_POKEMON;
         }
-        DrawStdFrafalcomonithCustomTileAndPalette(*windowPtr, FALSE, 0x4F, 13);
+        DrawStdFrameWithCustomTileAndPalette(*windowPtr, FALSE, 0x4F, 13);
         StringExpandPlaceholders(gStringVar4, sActionStringTable[stringId]);
         AddTextPrinterParameterized(*windowPtr, FONT_NORMAL, gStringVar4, 0, 1, 0, 0);
         ScheduleBgCopyTilemapToVram(2);
@@ -2797,7 +2797,7 @@ static u8 DisplaySelectionWindow(u8 windowType)
     }
 
     sPartyMenuInternal->windowId[0] = AddWindow(&window);
-    DrawStdFrafalcomonithCustomTileAndPalette(sPartyMenuInternal->windowId[0], FALSE, 0x4F, 13);
+    DrawStdFrameWithCustomTileAndPalette(sPartyMenuInternal->windowId[0], FALSE, 0x4F, 13);
     if (windowType == SELECTWINDOW_MOVES)
         return sPartyMenuInternal->windowId[0];
     cursorDimension = GetMenuCursorDimensionByFont(FONT_NORMAL, 0);
@@ -2823,7 +2823,7 @@ static u8 DisplaySelectionWindow(u8 windowType)
 
 static void PrintMessage(const u8 *text)
 {
-    DrawStdFrafalcomonithCustomTileAndPalette(WIN_MSG, FALSE, 0x4F, 13);
+    DrawStdFrameWithCustomTileAndPalette(WIN_MSG, FALSE, 0x4F, 13);
     gTextFlags.canABSpeedUpPrint = TRUE;
     AddTextPrinterParameterized2(WIN_MSG, FONT_NORMAL, text, GetPlayerTextSpeedDelay(), 0, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_WHITE, TEXT_COLOR_LIGHT_GRAY);
 }
@@ -2836,7 +2836,7 @@ static void PartyMenuDisplayYesNoMenu(void)
 static u8 CreateLevelUpStatsWindow(void)
 {
     sPartyMenuInternal->windowId[0] = AddWindow(&sLevelUpStatsWindowTemplate);
-    DrawStdFrafalcomonithCustomTileAndPalette(sPartyMenuInternal->windowId[0], FALSE, 0x4F, 13);
+    DrawStdFrameWithCustomTileAndPalette(sPartyMenuInternal->windowId[0], FALSE, 0x4F, 13);
     return sPartyMenuInternal->windowId[0];
 }
 
@@ -8041,7 +8041,7 @@ void ItemUseCB_ReduceIV(u8 taskId, TaskFunc task)
     u8 spDefense = GetMonData(mon, MON_DATA_SPDEF_IV);
     bool8 didActivate = FALSE;
 
-    switch (ItemId_GetSecondaryId(item))
+    switch (GetItemSecondaryId(item))
     {
     case STAT_HP:
         if (health != 0)
@@ -8134,7 +8134,7 @@ void ItemUseCB_IncreaseIV(u8 taskId, TaskFunc task)
     u8 spDefense = GetMonData(mon, MON_DATA_SPDEF_IV);
     bool8 didActivate = FALSE;
 
-    switch (ItemId_GetSecondaryId(item))
+    switch (GetItemSecondaryId(item))
     {
     case STAT_HP:
         if (health != MAX_PER_STAT_IVS)

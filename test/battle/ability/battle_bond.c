@@ -151,13 +151,13 @@ SINGLE_BATTLE_TEST("Battle Bond increases Atk, SpAtk and Speed by 1 stage (Gen9+
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_BATTLE_BOND, GEN_9);
         PLAYER(SPECIES_GRENINJA_BATTLE_BOND) { Ability(ABILITY_BATTLE_BOND); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMON_X) { HP(1); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_WATER_GUN); SEND_OUT(opponent, 1); }
     } SCENE {
         HP_BAR(opponent);
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmon_x fainted!");
         ABILITY_POPUP(player, ABILITY_BATTLE_BOND);
     } THEN {
         EXPECT(player->species != SPECIES_GRENINJA_ASH);
@@ -172,8 +172,8 @@ SINGLE_BATTLE_TEST("Battle Bond increases a Stat even if only one can be increas
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_BATTLE_BOND, GEN_9);
         PLAYER(SPECIES_GRENINJA_BATTLE_BOND) { Ability(ABILITY_BATTLE_BOND); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMON_X) { HP(1); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_DRAGON_DANCE); }
         TURN { MOVE(player, MOVE_DRAGON_DANCE); }
@@ -184,7 +184,7 @@ SINGLE_BATTLE_TEST("Battle Bond increases a Stat even if only one can be increas
         TURN { MOVE(player, MOVE_WATER_GUN); SEND_OUT(opponent, 1); }
     } SCENE {
         HP_BAR(opponent);
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmon_x fainted!");
         ABILITY_POPUP(player, ABILITY_BATTLE_BOND);
     } THEN {
         EXPECT(player->species != SPECIES_GRENINJA_ASH);

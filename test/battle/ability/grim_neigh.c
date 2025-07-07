@@ -17,9 +17,9 @@ DOUBLE_BATTLE_TEST("Grim Neigh raises Sp. Attack by one stage after directly cau
         TURN { MOVE(playerLeft, MOVE_DISCHARGE); SEND_OUT(opponentLeft, 2);  }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DISCHARGE, playerLeft);
-        MESSAGE("The opposing Glalie fainted!");
-        MESSAGE("Snorunt fainted!");
-        MESSAGE("The opposing Abra fainted!");
+        MESSAGE("The opposing Eyesmon fainted!");
+        MESSAGE("Exveemon_virus fainted!");
+        MESSAGE("The opposing Hopmon fainted!");
         ABILITY_POPUP(playerLeft, abilityPopUp);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
         if (species == SPECIES_SPECTRIER)

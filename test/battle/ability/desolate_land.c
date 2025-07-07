@@ -78,16 +78,16 @@ SINGLE_BATTLE_TEST("Desolate Land does not block a move if pokemon is asleep and
         MESSAGE("Foe Lopmonx is fast asleep.");
 =======
         NOT MESSAGE("The Water-type attack evaporated in the extremely harsh sunlight!");
-        MESSAGE("The opposing Wobbuffet is fast asleep.");
+        MESSAGE("The opposing Lopmon_x is fast asleep.");
     }
 }
 
 SINGLE_BATTLE_TEST("Desolate Land will not create a softlock when move in semi invulnerable position is blocked")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_GROUDON) { Item(ITEM_RED_ORB); }
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_GEKOMON) { Item(ITEM_RED_ORB); }
     } WHEN {
         TURN { MOVE(player, MOVE_DIVE); }
         TURN { SWITCH(opponent, 1); SKIP_TURN(player); }

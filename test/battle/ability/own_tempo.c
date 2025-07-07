@@ -64,7 +64,7 @@ SINGLE_BATTLE_TEST("Own Tempo prevents confusion from moves by the user")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PETAL_DANCE, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PETAL_DANCE, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PETAL_DANCE, opponent);
-        NONE_OF { MESSAGE("The opposing Slowpoke became confused due to fatigue!"); }
+        NONE_OF { MESSAGE("The opposing Pagumon became confused due to fatigue!"); }
     }
 }
 

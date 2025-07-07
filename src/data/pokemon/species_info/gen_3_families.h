@@ -1217,7 +1217,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sTsukaimonLevelUpLearnset,
         .teachableLearnset = sTsukaimonTeachableLearnset,
         .formSpeciesIdTable = sTsukaimonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_SPATTACK, 57, SPECIES_DEVIDRAMON},
+        .evolutions = EVOLUTION({EVO_LEVEL, 57, SPECIES_DEVIDRAMON},
                                 {EVO_LEVEL, 35, SPECIES_DEVIMON}),
     },
 
@@ -1352,7 +1352,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sTsukaimonGalarLevelUpLearnset,
         .teachableLearnset = sTsukaimonGalarTeachableLearnset,
         .formSpeciesIdTable = sTsukaimonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL_NIGHT, 35, SPECIES_OBSTAGOON}),
     },
 
     [SPECIES_OBSTAGOON] =
@@ -5916,7 +5915,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sBudewLevelUpLearnset,
         .teachableLearnset = sBudewTeachableLearnset,
         .eggMoveLearnset = sBudewEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP_DAY, 0, SPECIES_BULLMON}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 
@@ -10024,7 +10022,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sChinglingLevelUpLearnset,
         .teachableLearnset = sChinglingTeachableLearnset,
         .eggMoveLearnset = sChinglingEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP_NIGHT, 0, SPECIES_EOSMON_CHAMPION}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 

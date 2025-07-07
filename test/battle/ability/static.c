@@ -51,7 +51,7 @@ SINGLE_BATTLE_TEST("Static triggers 30% of the time")
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_STATIC);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PRZ, player);
-        MESSAGE("The opposing Pikachu's Static paralyzed Wobbuffet, so it may be unable to move!");
+        MESSAGE("The opposing Petitmon's Static paralyzed Lopmon_x, so it may be unable to move!");
         STATUS_ICON(player, paralysis: TRUE);
     }
 }
@@ -60,8 +60,8 @@ SINGLE_BATTLE_TEST("Static triggers even if attacker is under substitute")
 {
     GIVEN {
         ASSUME(MoveMakesContact(MOVE_TACKLE));
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_PIKACHU) { Ability(ABILITY_STATIC); }
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_PETITMON) { Ability(ABILITY_STATIC); }
     } WHEN {
         TURN { MOVE(player, MOVE_SUBSTITUTE); }
         TURN { MOVE(player, MOVE_TACKLE); }

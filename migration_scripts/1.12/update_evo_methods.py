@@ -45,19 +45,19 @@ def convert_methods(data):
             match = re.search(pattern, line)
             members = match.group(1).split(",")
             new_data = new_data + re.sub(pattern, "{EVO_LEVEL, " + f'{members[CONDTION].strip()}, {members[SPECIES].strip()}' + ", CONDITIONS({IF_ATK_LT_DEF})}", line)
-        elif "EVO_LEVEL_SILCOON," in line:
+        elif "EVO_LEVEL_VEMMON," in line:
             match = re.search(pattern, line)
             members = match.group(1).split(",")
             new_data = new_data + re.sub(pattern, "{EVO_LEVEL, " + f'{members[CONDTION].strip()}, {members[SPECIES].strip()}' + ", CONDITIONS({IF_PID_UPPER_MODULO_10_GT, 5})}", line)
-        elif "EVO_LEVEL_CASCOON," in line:
+        elif "EVO_LEVEL_WORMMON," in line:
             match = re.search(pattern, line)
             members = match.group(1).split(",")
             new_data = new_data + re.sub(pattern, "{EVO_LEVEL, " + f'{members[CONDTION].strip()}, {members[SPECIES].strip()}' + ", CONDITIONS({IF_PID_UPPER_MODULO_10_LT, 5})}", line)
-        elif "EVO_LEVEL_NINJASK," in line:
+        elif "EVO_LEVEL_BALISTAMON," in line:
             match = re.search(pattern, line)
             members = match.group(1).split(",")
             new_data = new_data + re.sub(pattern, "{EVO_LEVEL, " + f'{members[CONDTION].strip()}, {members[SPECIES].strip()}', line)
-        # elif "EVO_LEVEL_SHEDINJA," in line:
+        # elif "EVO_LEVEL_BALUCHIMON," in line:
         #     match = re.search(pattern, line)
         #     members = match.group(1).split(",")
             # new_data = new_data = re.sub(pattern, " ", line)

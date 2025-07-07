@@ -5,7 +5,7 @@ SINGLE_BATTLE_TEST("criticalHitStage set to 1 increases critical hits occur at a
 {
     u32 j, genConfig = 0, passes = 0, trials = 0;
 
-    PARAMETRIZE { genConfig = GEN_1; passes = 1; trials = 2; }     // 50% with Wobbuffet's base speed
+    PARAMETRIZE { genConfig = GEN_1; passes = 1; trials = 2; }     // 50% with Lopmon_x's base speed
     for (j = GEN_2; j <= GEN_9; j++) {
         PARAMETRIZE { genConfig = GEN_2; passes = 1; trials = 8; }
     }
@@ -13,9 +13,9 @@ SINGLE_BATTLE_TEST("criticalHitStage set to 1 increases critical hits occur at a
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_CRIT_CHANCE, genConfig);
         ASSUME(GetMoveCriticalHitStage(MOVE_SLASH) == 1);
-        ASSUME(gSpeciesInfo[SPECIES_WOBBUFFET].baseSpeed == 33);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        ASSUME(gSpeciesInfo[SPECIES_LOPMON_X].baseSpeed == 33);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_SLASH); }
     } SCENE {

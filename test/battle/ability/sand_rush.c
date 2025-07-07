@@ -10,7 +10,7 @@ SINGLE_BATTLE_TEST("Sand Rush prevents damage from sandstorm")
         ASSUME(type1 != TYPE_GROUND && type2 != TYPE_GROUND);
         ASSUME(type1 != TYPE_STEEL && type2 != TYPE_STEEL);
         PLAYER(SPECIES_STOUTLAND) { Ability(ABILITY_SAND_RUSH); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_SANDSTORM); }
     } SCENE {
@@ -21,8 +21,8 @@ SINGLE_BATTLE_TEST("Sand Rush prevents damage from sandstorm")
 SINGLE_BATTLE_TEST("Sand Rush doubles speed from sandstorm")
 {
     GIVEN {
-        PLAYER(SPECIES_SANDSLASH) { Ability(ABILITY_SAND_RUSH); Speed(100); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(199); }
+        PLAYER(SPECIES_POYOMON) { Ability(ABILITY_SAND_RUSH); Speed(100); }
+        OPPONENT(SPECIES_LOPMON_X) { Speed(199); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_SANDSTORM); }
         TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_CELEBRATE); }
@@ -37,8 +37,8 @@ SINGLE_BATTLE_TEST("Sand Rush doubles speed from sandstorm")
 SINGLE_BATTLE_TEST("Sand Rush doesn't double speed if Cloud Nine/Air Lock is on the field")
 {
     GIVEN {
-        PLAYER(SPECIES_SANDSLASH) { Ability(ABILITY_SAND_RUSH); Speed(100); }
-        OPPONENT(SPECIES_GOLDUCK) { Speed(199); Ability(ABILITY_CLOUD_NINE); }
+        PLAYER(SPECIES_POYOMON) { Ability(ABILITY_SAND_RUSH); Speed(100); }
+        OPPONENT(SPECIES_DEMMERAMON) { Speed(199); Ability(ABILITY_CLOUD_NINE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_SANDSTORM); }
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_CELEBRATE); }

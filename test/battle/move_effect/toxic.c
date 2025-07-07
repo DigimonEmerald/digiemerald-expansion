@@ -26,11 +26,11 @@ SINGLE_BATTLE_TEST("Toxic can't bad poison a poison or steel type")
 {
     u32 species;
 
-    PARAMETRIZE { species = SPECIES_BELDUM; }
-    PARAMETRIZE { species = SPECIES_BULBASAUR; }
+    PARAMETRIZE { species = SPECIES_FUGAMON; }
+    PARAMETRIZE { species = SPECIES_ARGOMON; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
         OPPONENT(species);
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC); }

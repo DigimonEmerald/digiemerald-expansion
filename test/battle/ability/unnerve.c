@@ -80,8 +80,8 @@ SINGLE_BATTLE_TEST("Unnerve activates only once per switch-in")
     PARAMETRIZE { mon = SPECIES_JOLTIK, ability = ABILITY_UNNERVE; }
     PARAMETRIZE { mon = SPECIES_CALYREX_ICE, ability = ABILITY_AS_ONE_ICE_RIDER; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WEEZING) { Ability(ABILITY_NEUTRALIZING_GAS); }
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_ARMADILMON) { Ability(ABILITY_NEUTRALIZING_GAS); }
         OPPONENT(mon) { Ability(ability); }
         OPPONENT(mon) { Ability(ability); }
     } WHEN {

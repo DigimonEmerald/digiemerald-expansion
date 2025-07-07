@@ -60,10 +60,10 @@ DOUBLE_BATTLE_TEST("Dazzling, Queenly Majesty and Armor Tail don't protect the u
     PARAMETRIZE { species = SPECIES_TSAREENA; ability = ABILITY_QUEENLY_MAJESTY; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
         OPPONENT(species) { Ability(ability); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_AVALANCHE, target: opponentLeft); }
     } SCENE {
@@ -81,7 +81,7 @@ SINGLE_BATTLE_TEST("Dazzling, Queenly Majesty and Armor Tail protect from all mu
     PARAMETRIZE { species = SPECIES_TSAREENA; ability = ABILITY_QUEENLY_MAJESTY; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_WATER_SHURIKEN); }

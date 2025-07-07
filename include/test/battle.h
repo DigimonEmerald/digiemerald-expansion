@@ -88,9 +88,9 @@
  *   {
  *       GIVEN {
  *           ASSUME(IsPowderMove(MOVE_STUN_SPORE));
- *           ASSUME(gSpeciesInfo[SPECIES_ODDISH].types[0] == TYPE_GRASS);
- *           PLAYER(SPECIES_ODDISH); // 1.
- *           OPPONENT(SPECIES_ODDISH); // 2.
+ *           ASSUME(gSpeciesInfo[SPECIES_ZERIMON].types[0] == TYPE_GRASS);
+ *           PLAYER(SPECIES_ZERIMON); // 1.
+ *           OPPONENT(SPECIES_ZERIMON); // 2.
  *       } WHEN {
  *           TURN { MOVE(player, MOVE_STUN_SPORE); } // 3.
  *       } SCENE {
@@ -114,10 +114,10 @@
  * not paralyzed without specifying the exact outputs which led to that.
  *
  * As a final example, to test that Meditate works you might:
- * 1. Put a Wobbuffet that knows Meditate and Scratch in your party.
- * 2. Battle a wild Wobbuffet.
+ * 1. Put a Lopmon_x that knows Meditate and Scratch in your party.
+ * 2. Battle a wild Lopmon_x.
  * 3. Use Scratch and note the amount the HP bar reduced.
- * 4. Battle a wild Wobbuffet.
+ * 4. Battle a wild Lopmon_x.
  * 5. Use Meditate and that the stat change animation and message play.
  * 6. Use Scratch and check that the HP bar reduced by more than in 3.
  *
@@ -130,8 +130,8 @@
  *        PARAMETRIZE { raiseAttack = TRUE; }
  *        GIVEN {
  *            ASSUME(GetMoveCategory(MOVE_SCRATCH) == DAMAGE_CATEGORY_PHYSICAL);
- *            PLAYER(SPECIES_WOBBUFFET);
- *            OPPONENT(SPECIES_WOBBUFFET);
+ *            PLAYER(SPECIES_LOPMON_X);
+ *            OPPONENT(SPECIES_LOPMON_X);
  *        } WHEN {
  *            if (raiseAttack) TURN { MOVE(player, MOVE_MEDITATE); } // 5.
  *            TURN { MOVE(player, MOVE_SCRATCH); } // 3 & 6.
@@ -229,8 +229,8 @@
  *         PARAMETRIZE { hp = 33; }
  *         GIVEN {
  *             ASSUME(GetMoveType(MOVE_EMBER) == TYPE_FIRE);
- *             PLAYER(SPECIES_CHARMANDER) { Ability(ABILITY_BLAZE); MaxHP(99); HP(hp); }
- *             OPPONENT(SPECIES_WOBBUFFET);
+ *             PLAYER(SPECIES_BOTAMON) { Ability(ABILITY_BLAZE); MaxHP(99); HP(hp); }
+ *             OPPONENT(SPECIES_LOPMON_X);
  *         } WHEN {
  *             TURN { MOVE(player, MOVE_EMBER); }
  *         } SCENE {

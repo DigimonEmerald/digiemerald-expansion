@@ -110,9 +110,9 @@ SINGLE_BATTLE_TEST("Purifying Salt doesn't prevent pokemon from being poisoned b
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_DRAGON_TAIL) == EFFECT_HIT_SWITCH_TARGET);
         ASSUME(GetMoveEffect(MOVE_TOXIC_SPIKES) == EFFECT_TOXIC_SPIKES);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
         PLAYER(SPECIES_GARGANACL) { Ability(ABILITY_PURIFYING_SALT); }
-        OPPONENT(SPECIES_PINSIR) { Ability(ABILITY_MOLD_BREAKER); }
+        OPPONENT(SPECIES_TYUTYUMON) { Ability(ABILITY_MOLD_BREAKER); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TOXIC_SPIKES); }
         TURN { MOVE(opponent, MOVE_DRAGON_TAIL); }
@@ -127,7 +127,7 @@ SINGLE_BATTLE_TEST("Purifying Salt protects from secondary effect burn")
     GIVEN {
         ASSUME(MoveHasAdditionalEffect(MOVE_EMBER, MOVE_EFFECT_BURN));
         PLAYER(SPECIES_GARGANACL) { Ability(ABILITY_PURIFYING_SALT); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, MOVE_EMBER); }
     } SCENE {

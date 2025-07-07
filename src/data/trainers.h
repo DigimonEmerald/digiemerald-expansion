@@ -10758,7 +10758,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 4339
-            .species = SPECIES_HAWKMON,
+            .species = SPECIES_HAGURUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4341
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -18456,7 +18456,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 7424
-            .species = SPECIES_HAWKMON,
+            .species = SPECIES_HAGURUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7426
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
@@ -18617,7 +18617,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7488
-            .species = SPECIES_HAWKMON,
+            .species = SPECIES_HAGURUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7490
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
@@ -18660,7 +18660,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7505
-            .species = SPECIES_HAWKMON,
+            .species = SPECIES_HAGURUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7507
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
@@ -18703,7 +18703,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7522
-            .species = SPECIES_HAWKMON,
+            .species = SPECIES_HAGURUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7524
             .iv = TRAINER_PARTY_IVS(3, 3, 3, 3, 3, 3),
@@ -18789,7 +18789,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 7556
-            .species = SPECIES_HAWKMON,
+            .species = SPECIES_HAGURUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7558
             .iv = TRAINER_PARTY_IVS(18, 18, 18, 18, 18, 18),
@@ -27166,7 +27166,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 10841
-            .species = SPECIES_HAWKMON,
+            .species = SPECIES_HAGURUMON,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 10843
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),

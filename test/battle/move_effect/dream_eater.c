@@ -70,7 +70,7 @@ SINGLE_BATTLE_TEST("Dream Eater works on targets with Comatose")
     s16 damage;
     s16 healed;
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
+        PLAYER(SPECIES_LOPMON_X) { HP(1); }
         OPPONENT(SPECIES_KOMALA) { Ability(ABILITY_COMATOSE); }
     } WHEN {
         TURN { MOVE(player, MOVE_DREAM_EATER); }
@@ -90,15 +90,15 @@ SINGLE_BATTLE_TEST("Dream Eater fails if the target is behind a Substitute (Gen 
         ASSUME(GetMoveEffect(MOVE_YAWN) == EFFECT_YAWN);
         ASSUME(GetMoveEffect(MOVE_SUBSTITUTE) == EFFECT_SUBSTITUTE);
         ASSUME(!MoveIgnoresSubstitute(MOVE_DREAM_EATER));
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, MOVE_YAWN); MOVE(player, MOVE_SUBSTITUTE); }
         TURN { }
         TURN { MOVE(opponent, MOVE_DREAM_EATER); }
     } SCENE {
-        MESSAGE("The opposing Wobbuffet used Dream Eater!");
-        MESSAGE("Wobbuffet wasn't affected!");
+        MESSAGE("The opposing Lopmon_x used Dream Eater!");
+        MESSAGE("Lopmon_x wasn't affected!");
     }
 }
 #else
@@ -109,8 +109,8 @@ SINGLE_BATTLE_TEST("Dream Eater works if the target is behind a Substitute (Gen 
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_YAWN) == EFFECT_YAWN);
         ASSUME(GetMoveEffect(MOVE_SUBSTITUTE) == EFFECT_SUBSTITUTE);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X) { HP(1); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_YAWN); MOVE(player, MOVE_SUBSTITUTE); }
         TURN { }

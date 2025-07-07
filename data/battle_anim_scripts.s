@@ -29602,9 +29602,9 @@ FinishAcidDownpour:
 	monbg ANIM_ATTACKER
 	loopsewithpan SE_M_TOXIC, SOUND_PAN_TARGET, 0xd, 0x6
 	createvisualtask AnimTask_ShakeMon, 5, ANIM_ATTACKER, 0, 2, 50, 1
-	call AcidDownpourFlareOnAttacker
-	call AcidDownpourFlareOnAttacker
-	call AcidDownpourFlareOnAttacker
+	call AcidDownpourDemidevmonAttacker
+	call AcidDownpourDemidevmonAttacker
+	call AcidDownpourDemidevmonAttacker
 	delay 0x5
 	clearmonbg ANIM_ATTACKER
 	createvisualtask AnimTask_AllBattlersInvisibleExceptAttackerAndTarget, 0xA
@@ -29653,7 +29653,7 @@ AcidDownpourFlare:
 	createsprite gAcidDownpourAuraSpriteTemplate, ANIM_TARGET, 2, 0x0, 0x21, 0x1d0, 0x32, 0xa, 0xffce, ANIM_TARGET
 	delay 0x2
 	return
-AcidDownpourFlareOnAttacker:
+AcidDownpourDemidevmonAttacker:
 	createsprite gAcidDownpourAuraSpriteTemplate, ANIM_TARGET, 2, 0x0, 0x1c, 0x210, 0x1e, 0xd, 0x32, ANIM_ATTACKER
 	delay 0x2
 	createsprite gAcidDownpourAuraSpriteTemplate, ANIM_TARGET, 2, 0x0, 0x20, 0x1e0, 0x14, 0x10, 0xffd2, ANIM_ATTACKER

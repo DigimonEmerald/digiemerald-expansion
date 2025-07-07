@@ -29,17 +29,17 @@ static void ParametrizeMovesAndSpecies(u32 j, u32 *pMove, u32 *pSpecies)
     else if (gMovesInfo[j].effect == EFFECT_ROTOTILLER || gMovesInfo[j].effect == EFFECT_FLOWER_SHIELD) // User needs to be Grass-type
     {
         *pMove = j;
-        *pSpecies = SPECIES_TANGELA;
+        *pSpecies = SPECIES_BETAMON;
     }
     else if (gMovesInfo[j].effect == EFFECT_FAIL_IF_NOT_ARG_TYPE && gMovesInfo[j].argument.type == TYPE_FIRE) // User needs to be Fire-type
     {
         *pMove = j;
-        *pSpecies = SPECIES_FLAREON;
+        *pSpecies = SPECIES_DEMIDEVMON;
     }
     else if (gMovesInfo[j].effect == EFFECT_FAIL_IF_NOT_ARG_TYPE && gMovesInfo[j].argument.type == TYPE_ELECTRIC) // User needs to be Electric-type
     {
         *pMove = j;
-        *pSpecies = SPECIES_JOLTEON;
+        *pSpecies = SPECIES_DAMEMON;
     }
     else if (gMovesInfo[j].effect == EFFECT_MAGNETIC_FLUX || gMovesInfo[j].effect == EFFECT_GEAR_UP) // User needs to have Plus
     {
@@ -49,12 +49,12 @@ static void ParametrizeMovesAndSpecies(u32 j, u32 *pMove, u32 *pSpecies)
     else if (gMovesInfo[j].effect == EFFECT_PLACEHOLDER) // Ignore placeholder *pMoves
     {
         *pMove = MOVE_POUND;
-        *pSpecies = SPECIES_WOBBUFFET;
+        *pSpecies = SPECIES_LOPMON_X;
     }
     else // Everything else
     {
         *pMove = j;
-        *pSpecies = SPECIES_WOBBUFFET;
+        *pSpecies = SPECIES_LOPMON_X;
     }
 }
 
@@ -380,20 +380,20 @@ SINGLE_BATTLE_TEST("Move Animations don't leak when used - Singles (player to op
     GIVEN {
         PLAYER(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
-            if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+            if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
             if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
             if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
         }
-        PLAYER(SPECIES_WOBBUFFET)   {
+        PLAYER(SPECIES_LOPMON_X)   {
             Gender(MON_MALE); MaxHP(9999); Moves(MOVE_POUND);
             HP(gMovesInfo[move].effect == EFFECT_REVIVAL_BLESSING ? 0 : 9998);
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW)
                 Item(ITEM_ORAN_BERRY);
         }
-        OPPONENT(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
+        OPPONENT(SPECIES_LOPMON_X) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
     } WHEN {
         WhenSingles(move, player, opponent);
     } SCENE {
@@ -418,20 +418,20 @@ SINGLE_BATTLE_TEST("Move Animations don't leak when used - Singles (opponent to 
     GIVEN {
         OPPONENT(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
-            if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+            if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
             if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
             if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
         }
-        OPPONENT(SPECIES_WOBBUFFET)   {
+        OPPONENT(SPECIES_LOPMON_X)   {
             Gender(MON_MALE); MaxHP(9999); Moves(MOVE_POUND);
             HP(gMovesInfo[move].effect == EFFECT_REVIVAL_BLESSING ? 0 : 9998);
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW)
                 Item(ITEM_ORAN_BERRY);
         }
-        PLAYER(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
+        PLAYER(SPECIES_LOPMON_X) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
     } WHEN {
         WhenSingles(move, opponent, player);
     } SCENE {
@@ -461,7 +461,7 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (playerLeft t
         PLAYER(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == playerLeft) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
@@ -470,26 +470,26 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (playerLeft t
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == playerRight)
             {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); MaxHP(9999); Moves(MOVE_POUND, MOVE_CELEBRATE);
             HP(gMovesInfo[move].effect == EFFECT_REVIVAL_BLESSING ? 0 : 9998);
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW)
                 Item(ITEM_ORAN_BERRY);
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW)
                 Item(ITEM_ORAN_BERRY);
         }
-        OPPONENT(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
+        OPPONENT(SPECIES_LOPMON_X) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
     } WHEN {
         DoublesWhen(move, attacker, target, ignore1, ignore2);
     } SCENE {
@@ -519,7 +519,7 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (opponentLeft
         OPPONENT(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == opponentLeft) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
@@ -527,28 +527,28 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (opponentLeft
         OPPONENT(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == opponentRight) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMON_X) {
             Gender(MON_MALE); MaxHP(9999); Moves(MOVE_POUND, MOVE_CELEBRATE);
             HP(gMovesInfo[move].effect == EFFECT_REVIVAL_BLESSING ? 0 : 9998);
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
+        PLAYER(SPECIES_LOPMON_X) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
     } WHEN {
         DoublesWhen(move, attacker, target, ignore1, ignore2);
     } SCENE {
@@ -578,7 +578,7 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (playerLeft t
         PLAYER(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == playerLeft) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
@@ -586,28 +586,28 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (playerLeft t
         PLAYER(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == playerRight) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); MaxHP(9999); Moves(MOVE_POUND, MOVE_CELEBRATE);
             HP(gMovesInfo[move].effect == EFFECT_REVIVAL_BLESSING ? 0 : 9998);
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        OPPONENT(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
+        OPPONENT(SPECIES_LOPMON_X) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
     } WHEN {
         DoublesWhen(move, attacker, target, ignore1, ignore2);
     } SCENE {
@@ -637,7 +637,7 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (opponentRigh
         OPPONENT(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == opponentLeft) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
@@ -645,28 +645,28 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (opponentRigh
         OPPONENT(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == opponentRight) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMON_X) {
             Gender(MON_MALE); MaxHP(9999); Moves(MOVE_POUND, MOVE_CELEBRATE);
             HP(gMovesInfo[move].effect == EFFECT_REVIVAL_BLESSING ? 0 : 9998);
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
+        PLAYER(SPECIES_LOPMON_X) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
     } WHEN {
         DoublesWhen(move, attacker, target, ignore1, ignore2);
     } SCENE {
@@ -696,7 +696,7 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (playerRight 
         PLAYER(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == playerLeft) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
@@ -704,28 +704,28 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (playerRight 
         PLAYER(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == playerRight) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); MaxHP(9999); Moves(MOVE_POUND, MOVE_CELEBRATE);
             HP(gMovesInfo[move].effect == EFFECT_REVIVAL_BLESSING ? 0 : 9998);
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        OPPONENT(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
+        OPPONENT(SPECIES_LOPMON_X) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
     } WHEN {
         DoublesWhen(move, attacker, target, ignore1, ignore2);
     } SCENE {
@@ -755,7 +755,7 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (opponentLeft
         OPPONENT(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == opponentLeft) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
@@ -763,28 +763,28 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (opponentLeft
         OPPONENT(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == opponentRight) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMON_X) {
             Gender(MON_MALE); MaxHP(9999); Moves(MOVE_POUND, MOVE_CELEBRATE);
             HP(gMovesInfo[move].effect == EFFECT_REVIVAL_BLESSING ? 0 : 9998);
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
+        PLAYER(SPECIES_LOPMON_X) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
     } WHEN {
         DoublesWhen(move, attacker, target, ignore1, ignore2);
     } SCENE {
@@ -814,7 +814,7 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (playerRight 
         PLAYER(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == playerLeft) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
@@ -822,28 +822,28 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (playerRight 
         PLAYER(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == playerRight) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); MaxHP(9999); Moves(MOVE_POUND, MOVE_CELEBRATE);
             HP(gMovesInfo[move].effect == EFFECT_REVIVAL_BLESSING ? 0 : 9998);
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        OPPONENT(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
+        OPPONENT(SPECIES_LOPMON_X) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
     } WHEN {
         DoublesWhen(move, attacker, target, ignore1, ignore2);
     } SCENE {
@@ -873,7 +873,7 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (opponentRigh
         OPPONENT(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == opponentLeft) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
@@ -881,28 +881,28 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (opponentRigh
         OPPONENT(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == opponentRight) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMON_X) {
             Gender(MON_MALE); MaxHP(9999); Moves(MOVE_POUND, MOVE_CELEBRATE);
             HP(gMovesInfo[move].effect == EFFECT_REVIVAL_BLESSING ? 0 : 9998);
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
+        PLAYER(SPECIES_LOPMON_X) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
     } WHEN {
         DoublesWhen(move, attacker, target, ignore1, ignore2);
     } SCENE {
@@ -933,7 +933,7 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (playerLeft t
         OPPONENT(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == opponentLeft) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
@@ -941,28 +941,28 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (playerLeft t
         OPPONENT(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == opponentRight) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMON_X) {
             Gender(MON_MALE); MaxHP(9999); Moves(MOVE_POUND, MOVE_CELEBRATE);
             HP(gMovesInfo[move].effect == EFFECT_REVIVAL_BLESSING ? 0 : 9998);
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
+        PLAYER(SPECIES_LOPMON_X) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
     } WHEN {
         DoublesWhen(move, attacker, target, ignore1, ignore2);
     } SCENE {
@@ -992,7 +992,7 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (playerRight 
         OPPONENT(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == opponentLeft) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
@@ -1000,28 +1000,28 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (playerRight 
         OPPONENT(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == opponentRight) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMON_X) {
             Gender(MON_MALE); MaxHP(9999); Moves(MOVE_POUND, MOVE_CELEBRATE);
             HP(gMovesInfo[move].effect == EFFECT_REVIVAL_BLESSING ? 0 : 9998);
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
+        PLAYER(SPECIES_LOPMON_X) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
     } WHEN {
         DoublesWhen(move, attacker, target, ignore1, ignore2);
     } SCENE {
@@ -1051,7 +1051,7 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (opponentleft
         OPPONENT(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == opponentLeft) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
@@ -1059,28 +1059,28 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (opponentleft
         OPPONENT(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == opponentRight) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMON_X) {
             Gender(MON_MALE); MaxHP(9999); Moves(MOVE_POUND, MOVE_CELEBRATE);
             HP(gMovesInfo[move].effect == EFFECT_REVIVAL_BLESSING ? 0 : 9998);
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
+        PLAYER(SPECIES_LOPMON_X) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
     } WHEN {
         DoublesWhen(move, attacker, target, ignore1, ignore2);
     } SCENE {
@@ -1110,7 +1110,7 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (opponentRigh
         OPPONENT(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == opponentLeft) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
@@ -1118,28 +1118,28 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (opponentRigh
         OPPONENT(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
             if (attacker == opponentRight) {
-                if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+                if (species == SPECIES_LOPMON_X) Gender(MON_FEMALE);
                 if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
                 if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
             }
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMON_X) {
             Gender(MON_MALE); MaxHP(9999); Moves(MOVE_POUND, MOVE_CELEBRATE);
             HP(gMovesInfo[move].effect == EFFECT_REVIVAL_BLESSING ? 0 : 9998);
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) {
+        PLAYER(SPECIES_LOPMON_X) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW) {
                 Item(ITEM_ORAN_BERRY);
             }
         }
-        PLAYER(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
+        PLAYER(SPECIES_LOPMON_X) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
     } WHEN {
         DoublesWhen(move, attacker, target, ignore1, ignore2);
     } SCENE {
@@ -1154,28 +1154,28 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (opponentRigh
 */
 
 //  Z-Moves
-#define Z_MOVE_PARAMETERS PARAMETRIZE { zmove = MOVE_BREAKNECK_BLITZ; species = SPECIES_WOBBUFFET; move = MOVE_TACKLE; item = ITEM_NORMALIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_INFERNO_OVERDRIVE; species = SPECIES_WOBBUFFET; move = MOVE_EMBER; item = ITEM_FIRIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_HYDRO_VORTEX; species = SPECIES_WOBBUFFET; move = MOVE_BUBBLE; item = ITEM_WATERIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_GIGAVOLT_HAVOC; species = SPECIES_WOBBUFFET; move = MOVE_THUNDERBOLT; item = ITEM_ELECTRIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_BLOOM_DOOM; species = SPECIES_WOBBUFFET; move = MOVE_RAZOR_LEAF; item = ITEM_GRASSIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_SUBZERO_SLAMMER; species = SPECIES_WOBBUFFET; move = MOVE_ICE_BEAM; item = ITEM_ICIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_ALL_OUT_PUMMELING; species = SPECIES_WOBBUFFET; move = MOVE_KARATE_CHOP; item = ITEM_FIGHTINIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_ACID_DOWNPOUR; species = SPECIES_WOBBUFFET; move = MOVE_SLUDGE_BOMB; item = ITEM_POISONIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_TECTONIC_RAGE; species = SPECIES_WOBBUFFET; move = MOVE_MUD_SLAP; item = ITEM_GROUNDIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_SUPERSONIC_SKYSTRIKE; species = SPECIES_WOBBUFFET; move = MOVE_AERIAL_ACE; item = ITEM_FLYINIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_SHATTERED_PSYCHE; species = SPECIES_WOBBUFFET; move = MOVE_CONFUSION; item = ITEM_PSYCHIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_SAVAGE_SPIN_OUT; species = SPECIES_WOBBUFFET; move = MOVE_BUG_BUZZ; item = ITEM_BUGINIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_CONTINENTAL_CRUSH; species = SPECIES_WOBBUFFET; move = MOVE_ROCK_SLIDE; item = ITEM_ROCKIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_NEVER_ENDING_NIGHTMARE; species = SPECIES_WOBBUFFET; move = MOVE_SHADOW_BALL; item = ITEM_GHOSTIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_DEVASTATING_DRAKE; species = SPECIES_WOBBUFFET; move = MOVE_DRAGON_PULSE; item = ITEM_DRAGONIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_BLACK_HOLE_ECLIPSE; species = SPECIES_WOBBUFFET; move = MOVE_BITE; item = ITEM_DARKINIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_CORKSCREW_CRASH; species = SPECIES_WOBBUFFET; move = MOVE_METAL_CLAW; item = ITEM_STEELIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_TWINKLE_TACKLE; species = SPECIES_WOBBUFFET; move = MOVE_MOONBLAST; item = ITEM_FAIRIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_CATASTROPIKA; species = SPECIES_PIKACHU; move = MOVE_VOLT_TACKLE; item = ITEM_PIKANIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_EXTREME_EVOBOOST; species = SPECIES_EEVEE; move = MOVE_LAST_RESORT; item = ITEM_EEVIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_PULVERIZING_PANCAKE; species = SPECIES_SNORLAX; move = MOVE_GIGA_IMPACT; item = ITEM_SNORLIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_GENESIS_SUPERNOVA; species = SPECIES_MEW; move = MOVE_PSYCHIC; item = ITEM_MEWNIUM_Z; } \
+#define Z_MOVE_PARAMETERS PARAMETRIZE { zmove = MOVE_BREAKNECK_BLITZ; species = SPECIES_LOPMON_X; move = MOVE_TACKLE; item = ITEM_NORMALIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_INFERNO_OVERDRIVE; species = SPECIES_LOPMON_X; move = MOVE_EMBER; item = ITEM_FIRIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_HYDRO_VORTEX; species = SPECIES_LOPMON_X; move = MOVE_BUBBLE; item = ITEM_WATERIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_GIGAVOLT_HAVOC; species = SPECIES_LOPMON_X; move = MOVE_THUNDERBOLT; item = ITEM_ELECTRIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_BLOOM_DOOM; species = SPECIES_LOPMON_X; move = MOVE_RAZOR_LEAF; item = ITEM_GRASSIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_SUBZERO_SLAMMER; species = SPECIES_LOPMON_X; move = MOVE_ICE_BEAM; item = ITEM_ICIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_ALL_OUT_PUMMELING; species = SPECIES_LOPMON_X; move = MOVE_KARATE_CHOP; item = ITEM_FIGHTINIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_ACID_DOWNPOUR; species = SPECIES_LOPMON_X; move = MOVE_SLUDGE_BOMB; item = ITEM_POISONIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_TECTONIC_RAGE; species = SPECIES_LOPMON_X; move = MOVE_MUD_SLAP; item = ITEM_GROUNDIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_SUPERSONIC_SKYSTRIKE; species = SPECIES_LOPMON_X; move = MOVE_AERIAL_ACE; item = ITEM_FLYINIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_SHATTERED_PSYCHE; species = SPECIES_LOPMON_X; move = MOVE_CONFUSION; item = ITEM_PSYCHIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_SAVAGE_SPIN_OUT; species = SPECIES_LOPMON_X; move = MOVE_BUG_BUZZ; item = ITEM_BUGINIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_CONTINENTAL_CRUSH; species = SPECIES_LOPMON_X; move = MOVE_ROCK_SLIDE; item = ITEM_ROCKIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_NEVER_ENDING_NIGHTMARE; species = SPECIES_LOPMON_X; move = MOVE_SHADOW_BALL; item = ITEM_GHOSTIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_DEVASTATING_DRAKE; species = SPECIES_LOPMON_X; move = MOVE_DRAGON_PULSE; item = ITEM_DRAGONIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_BLACK_HOLE_ECLIPSE; species = SPECIES_LOPMON_X; move = MOVE_BITE; item = ITEM_DARKINIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_CORKSCREW_CRASH; species = SPECIES_LOPMON_X; move = MOVE_METAL_CLAW; item = ITEM_STEELIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_TWINKLE_TACKLE; species = SPECIES_LOPMON_X; move = MOVE_MOONBLAST; item = ITEM_FAIRIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_CATASTROPIKA; species = SPECIES_PETITMON; move = MOVE_VOLT_TACKLE; item = ITEM_PIKANIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_EXTREME_EVOBOOST; species = SPECIES_CRABMON_X; move = MOVE_LAST_RESORT; item = ITEM_EEVIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_PULVERIZING_PANCAKE; species = SPECIES_DRACOMON; move = MOVE_GIGA_IMPACT; item = ITEM_SNORLIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_GENESIS_SUPERNOVA; species = SPECIES_FALCOMON; move = MOVE_PSYCHIC; item = ITEM_FALCOMONNIUM_Z; } \
     PARAMETRIZE { zmove = MOVE_SINISTER_ARROW_RAID; species = SPECIES_DECIDUEYE; move = MOVE_SPIRIT_SHACKLE; item = ITEM_DECIDIUM_Z; } \
     PARAMETRIZE { zmove = MOVE_MALICIOUS_MOONSAULT; species = SPECIES_INCINEROAR; move = MOVE_DARKEST_LARIAT; item = ITEM_INCINIUM_Z; } \
     PARAMETRIZE { zmove = MOVE_OCEANIC_OPERETTA; species = SPECIES_PRIMARINA; move = MOVE_SPARKLING_ARIA; item = ITEM_PRIMARIUM_Z; } \
@@ -1188,8 +1188,8 @@ DOUBLE_BATTLE_TEST("Move Animations don't leak when used - Doubles (opponentRigh
     PARAMETRIZE { zmove = MOVE_SEARING_SUNRAZE_SMASH; species = SPECIES_SOLGALEO; move = MOVE_SUNSTEEL_STRIKE; item = ITEM_SOLGANIUM_Z; } \
     PARAMETRIZE { zmove = MOVE_MENACING_MOONRAZE_MAELSTROM; species = SPECIES_LUNALA; move = MOVE_MOONGEIST_BEAM; item = ITEM_LUNALIUM_Z; } \
     PARAMETRIZE { zmove = MOVE_SOUL_STEALING_7_STAR_STRIKE; species = SPECIES_MARSHADOW; move = MOVE_SPECTRAL_THIEF; item = ITEM_MARSHADIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_STOKED_SPARKSURFER; species = SPECIES_RAICHU_ALOLA; move = MOVE_THUNDERBOLT; item = ITEM_ALORAICHIUM_Z; } \
-    PARAMETRIZE { zmove = MOVE_10_000_000_VOLT_THUNDERBOLT; species = SPECIES_PIKACHU_ALOLA; move = MOVE_THUNDERBOLT; item = ITEM_PIKASHUNIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_STOKED_SPARKSURFER; species = SPECIES_PICHIMON_ALOLA; move = MOVE_THUNDERBOLT; item = ITEM_ALORAICHIUM_Z; } \
+    PARAMETRIZE { zmove = MOVE_10_000_000_VOLT_THUNDERBOLT; species = SPECIES_PETITMON_ALOLA; move = MOVE_THUNDERBOLT; item = ITEM_PIKASHUNIUM_Z; } \
     PARAMETRIZE { zmove = MOVE_LIGHT_THAT_BURNS_THE_SKY; species = SPECIES_NECROZMA_DAWN_WINGS; move = MOVE_PHOTON_GEYSER; item = ITEM_ULTRANECROZIUM_Z; }
 
 SINGLE_BATTLE_TEST("Z-Moves don't leak when used - Singles (player to opponent)")
@@ -1199,7 +1199,7 @@ SINGLE_BATTLE_TEST("Z-Moves don't leak when used - Singles (player to opponent)"
     Z_MOVE_PARAMETERS;
     GIVEN {
         PLAYER(species) { Item(item); }
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
+        OPPONENT(SPECIES_LOPMON_X) { Item(ITEM_FOCUS_SASH); }
     } WHEN {
         if (species == SPECIES_NECROZMA_DAWN_WINGS)
         {
@@ -1227,7 +1227,7 @@ SINGLE_BATTLE_TEST("Z-Moves don't leak when used - Singles (opponent to player)"
     u32 species, move, item, zmove;
     Z_MOVE_PARAMETERS;
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
+        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_FOCUS_SASH); }
         OPPONENT(species) { Item(item); }
     } WHEN {
         if (species == SPECIES_NECROZMA_DAWN_WINGS)
@@ -1257,9 +1257,9 @@ DOUBLE_BATTLE_TEST("Z-Moves don't leak when used - Doubles (playerLeft to oppone
     Z_MOVE_PARAMETERS;
     GIVEN {
         PLAYER(species) { Item(item); }
-        PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
-        OPPONENT(SPECIES_WYNAUT) { Item(ITEM_FOCUS_SASH); }
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_LOPMON_X) { Item(ITEM_FOCUS_SASH); }
+        OPPONENT(SPECIES_EXVEEMON) { Item(ITEM_FOCUS_SASH); }
     } WHEN {
         if (species == SPECIES_NECROZMA_DAWN_WINGS)
         {
@@ -1288,9 +1288,9 @@ DOUBLE_BATTLE_TEST("Z-Moves don't leak when used - Doubles (playerLeft to oppone
     Z_MOVE_PARAMETERS;
     GIVEN {
         PLAYER(species) { Item(item); }
-        PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
-        OPPONENT(SPECIES_WYNAUT) { Item(ITEM_FOCUS_SASH); }
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_LOPMON_X) { Item(ITEM_FOCUS_SASH); }
+        OPPONENT(SPECIES_EXVEEMON) { Item(ITEM_FOCUS_SASH); }
     } WHEN {
         if (species == SPECIES_NECROZMA_DAWN_WINGS)
         {
@@ -1318,10 +1318,10 @@ DOUBLE_BATTLE_TEST("Z-Moves don't leak when used - Doubles (playerRight to oppon
     u32 species, move, item, zmove;
     Z_MOVE_PARAMETERS;
     GIVEN {
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         PLAYER(species) { Item(item); }
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
-        OPPONENT(SPECIES_WYNAUT) { Item(ITEM_FOCUS_SASH); }
+        OPPONENT(SPECIES_LOPMON_X) { Item(ITEM_FOCUS_SASH); }
+        OPPONENT(SPECIES_EXVEEMON) { Item(ITEM_FOCUS_SASH); }
     } WHEN {
         if (species == SPECIES_NECROZMA_DAWN_WINGS)
         {
@@ -1349,10 +1349,10 @@ DOUBLE_BATTLE_TEST("Z-Moves don't leak when used - Doubles (playerRight to oppon
     u32 species, move, item, zmove;
     Z_MOVE_PARAMETERS;
     GIVEN {
-        PLAYER(SPECIES_WYNAUT);
+        PLAYER(SPECIES_EXVEEMON);
         PLAYER(species) { Item(item); }
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
-        OPPONENT(SPECIES_WYNAUT) { Item(ITEM_FOCUS_SASH); }
+        OPPONENT(SPECIES_LOPMON_X) { Item(ITEM_FOCUS_SASH); }
+        OPPONENT(SPECIES_EXVEEMON) { Item(ITEM_FOCUS_SASH); }
     } WHEN {
         if (species == SPECIES_NECROZMA_DAWN_WINGS)
         {
@@ -1380,10 +1380,10 @@ DOUBLE_BATTLE_TEST("Z-Moves don't leak when used - Doubles (opponentLeft to play
     u32 species, move, item, zmove;
     Z_MOVE_PARAMETERS;
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
-        PLAYER(SPECIES_WYNAUT) { Item(ITEM_FOCUS_SASH); }
+        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_FOCUS_SASH); }
+        PLAYER(SPECIES_EXVEEMON) { Item(ITEM_FOCUS_SASH); }
         OPPONENT(species) { Item(item); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         if (species == SPECIES_NECROZMA_DAWN_WINGS)
         {
@@ -1411,10 +1411,10 @@ DOUBLE_BATTLE_TEST("Z-Moves don't leak when used - Doubles (opponentLeft to play
     u32 species, move, item, zmove;
     Z_MOVE_PARAMETERS;
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
-        PLAYER(SPECIES_WYNAUT) { Item(ITEM_FOCUS_SASH); }
+        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_FOCUS_SASH); }
+        PLAYER(SPECIES_EXVEEMON) { Item(ITEM_FOCUS_SASH); }
         OPPONENT(species) { Item(item); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         if (species == SPECIES_NECROZMA_DAWN_WINGS)
         {
@@ -1442,9 +1442,9 @@ DOUBLE_BATTLE_TEST("Z-Moves don't leak when used - Doubles (opponentRight to pla
     u32 species, move, item, zmove;
     Z_MOVE_PARAMETERS;
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
-        PLAYER(SPECIES_WYNAUT) { Item(ITEM_FOCUS_SASH); }
-        OPPONENT(SPECIES_WYNAUT);
+        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_FOCUS_SASH); }
+        PLAYER(SPECIES_EXVEEMON) { Item(ITEM_FOCUS_SASH); }
+        OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(species) { Item(item); }
     } WHEN {
         if (species == SPECIES_NECROZMA_DAWN_WINGS)
@@ -1473,9 +1473,9 @@ DOUBLE_BATTLE_TEST("Z-Moves don't leak when used - Doubles (opponentRight to pla
     u32 species, move, item, zmove;
     Z_MOVE_PARAMETERS;
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
-        PLAYER(SPECIES_WYNAUT) { Item(ITEM_FOCUS_SASH); }
-        OPPONENT(SPECIES_WYNAUT);
+        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_FOCUS_SASH); }
+        PLAYER(SPECIES_EXVEEMON) { Item(ITEM_FOCUS_SASH); }
+        OPPONENT(SPECIES_EXVEEMON);
         OPPONENT(species) { Item(item); }
     } WHEN {
         if (species == SPECIES_NECROZMA_DAWN_WINGS)

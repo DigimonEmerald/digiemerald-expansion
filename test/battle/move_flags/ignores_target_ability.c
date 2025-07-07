@@ -78,12 +78,12 @@ SINGLE_BATTLE_TEST("ignoresTargetAbility allows Pokémon with Battle Armor and S
     u32 species;
     u32 ability;
 
-    PARAMETRIZE { species = SPECIES_KINGLER; ability = ABILITY_SHELL_ARMOR; }
-    PARAMETRIZE { species = SPECIES_ARMALDO; ability = ABILITY_BATTLE_ARMOR; }
+    PARAMETRIZE { species = SPECIES_WANYAMON; ability = ABILITY_SHELL_ARMOR; }
+    PARAMETRIZE { species = SPECIES_DOBERMON_X; ability = ABILITY_BATTLE_ARMOR; }
 
     GIVEN {
         ASSUME(MoveIgnoresTargetAbility(MOVE_SUNSTEEL_STRIKE));
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_SUNSTEEL_STRIKE, criticalHit: TRUE); }

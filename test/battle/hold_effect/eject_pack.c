@@ -167,10 +167,10 @@ DOUBLE_BATTLE_TEST("Eject Pack will not trigger if the conditions are not met")
 SINGLE_BATTLE_TEST("Eject Pack will miss timing to switch out user if Eject Button was activated on target")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(10); Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_WYNAUT) { Speed(10); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(5); Item(ITEM_EJECT_BUTTON); }
-        OPPONENT(SPECIES_WYNAUT) { Speed(10); }
+        PLAYER(SPECIES_LOPMON_X) { Speed(10); Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(10); }
+        OPPONENT(SPECIES_LOPMON_X) { Speed(5); Item(ITEM_EJECT_BUTTON); }
+        OPPONENT(SPECIES_EXVEEMON) { Speed(10); }
     } WHEN {
         TURN { MOVE(player, MOVE_OVERHEAT); SEND_OUT(opponent, 1); }
     } SCENE {
@@ -178,12 +178,12 @@ SINGLE_BATTLE_TEST("Eject Pack will miss timing to switch out user if Eject Butt
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Wobbuffet is switched out with the Eject Pack!");
+            MESSAGE("Lopmon_x is switched out with the Eject Pack!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
     } THEN {
-        EXPECT(player->species == SPECIES_WOBBUFFET);
-        EXPECT(opponent->species == SPECIES_WYNAUT);
+        EXPECT(player->species == SPECIES_LOPMON_X);
+        EXPECT(opponent->species == SPECIES_EXVEEMON);
     }
 }
 
@@ -192,18 +192,18 @@ DOUBLE_BATTLE_TEST("Eject Pack: Only the fastest Eject Pack will activate after 
     u32 speed;
     u32 species, ability;
 
-    PARAMETRIZE { species = SPECIES_EKANS; ability = ABILITY_INTIMIDATE; speed = 1; }
-    PARAMETRIZE { species = SPECIES_EKANS; ability = ABILITY_INTIMIDATE; speed = 11; }
+    PARAMETRIZE { species = SPECIES_PAFUMON; ability = ABILITY_INTIMIDATE; speed = 1; }
+    PARAMETRIZE { species = SPECIES_PAFUMON; ability = ABILITY_INTIMIDATE; speed = 11; }
 
     PARAMETRIZE { species = SPECIES_DIPPLIN; ability = ABILITY_SUPERSWEET_SYRUP; speed = 1; }
     PARAMETRIZE { species = SPECIES_DIPPLIN; ability = ABILITY_SUPERSWEET_SYRUP; speed = 11; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(10); Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_WYNAUT) { Speed(speed); Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(3); }
-        OPPONENT(SPECIES_WYNAUT)  { Speed(4); }
-        OPPONENT(SPECIES_WOBBUFFET)  { Speed(5); }
+        PLAYER(SPECIES_LOPMON_X) { Speed(10); Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(speed); Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_LOPMON_X) { Speed(3); }
+        OPPONENT(SPECIES_EXVEEMON)  { Speed(4); }
+        OPPONENT(SPECIES_LOPMON_X)  { Speed(5); }
         OPPONENT(species) { Speed(6); Ability(ability); }
     } WHEN {
         TURN {
@@ -239,11 +239,11 @@ DOUBLE_BATTLE_TEST("Eject Pack: Only the fastest Eject Pack will activate after 
     PARAMETRIZE { speed = 11; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(10); Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_WYNAUT) { Speed(speed); Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(3); }
-        OPPONENT(SPECIES_WYNAUT)  { Speed(4); }
-        OPPONENT(SPECIES_WOBBUFFET)  { Speed(5); }
+        PLAYER(SPECIES_LOPMON_X) { Speed(10); Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_EXVEEMON) { Speed(speed); Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_LOPMON_X) { Speed(3); }
+        OPPONENT(SPECIES_EXVEEMON)  { Speed(4); }
+        OPPONENT(SPECIES_LOPMON_X)  { Speed(5); }
     } WHEN {
         TURN {
             MOVE(opponentLeft, MOVE_BUBBLE);

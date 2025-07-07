@@ -127,13 +127,13 @@ SINGLE_BATTLE_TEST("Liquid Ooze causes leech seed victim to faint before seeder"
         // Drain at end of turn
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_LEECH_SEED_DRAIN, opponent);
         if (ability != ABILITY_LIQUID_OOZE) {
-            MESSAGE("The opposing Tentacool fainted!");
+            MESSAGE("The opposing Minomon fainted!");
             MESSAGE("The opposing Minomon's health is sapped by Leech Seed!");
         } else {
             MESSAGE("The opposing Minomon fainted!");
             ABILITY_POPUP(opponent, ABILITY_LIQUID_OOZE);
-            MESSAGE("Bulbasaur sucked up the liquid ooze!");
-            MESSAGE("Bulbasaur fainted!");
+            MESSAGE("Argomon sucked up the liquid ooze!");
+            MESSAGE("Argomon fainted!");
         }
     }
 }
@@ -145,8 +145,8 @@ SINGLE_BATTLE_TEST("Liquid Ooze causes Dream Eater users to lose HP instead of h
         ASSUME(GetMoveEffect(MOVE_SPORE) == EFFECT_NON_VOLATILE_STATUS);
         ASSUME(GetMoveNonVolatileStatus(MOVE_SPORE) == MOVE_EFFECT_SLEEP);
         ASSUME(GetMoveEffect(MOVE_DREAM_EATER) == EFFECT_DREAM_EATER);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_TENTACRUEL) { Ability(ABILITY_LIQUID_OOZE); }
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_MISSIMON) { Ability(ABILITY_LIQUID_OOZE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SCRATCH); MOVE(player, MOVE_SPORE); }
         TURN { MOVE(player, MOVE_DREAM_EATER); }

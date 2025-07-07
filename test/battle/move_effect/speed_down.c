@@ -10,10 +10,10 @@ DOUBLE_BATTLE_TEST("Speed Down: Cotton Spore does not fail if it is blocked by o
 
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_COTTON_SPORE) == EFFECT_SPEED_DOWN_2);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_SHELLDER) { Ability(abilityOne); }
-        OPPONENT(SPECIES_SHELLDER) { Ability(abilityTwo); }
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_TANEMON) { Ability(abilityOne); }
+        OPPONENT(SPECIES_TANEMON) { Ability(abilityTwo); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_COTTON_SPORE); }
     } SCENE {

@@ -4,20 +4,20 @@
 ASSUMPTIONS
 {
     ASSUME(GetMoveEffect(MOVE_ATTRACT) == EFFECT_ATTRACT);
-    ASSUME(gSpeciesInfo[SPECIES_NIDOKING].genderRatio == MON_MALE);
-    ASSUME(gSpeciesInfo[SPECIES_NIDOQUEEN].genderRatio == MON_FEMALE);
+    ASSUME(gSpeciesInfo[SPECIES_PUWAMON].genderRatio == MON_MALE);
+    ASSUME(gSpeciesInfo[SPECIES_PURURUMON].genderRatio == MON_FEMALE);
 }
 
 SINGLE_BATTLE_TEST("Attract causes the target to become infatuated with the user if they have opposite genders")
 {
     GIVEN {
-        PLAYER(SPECIES_NIDOQUEEN);
-        OPPONENT(SPECIES_NIDOKING);
+        PLAYER(SPECIES_PURURUMON);
+        OPPONENT(SPECIES_PUWAMON);
     } WHEN {
         TURN { MOVE(player, MOVE_ATTRACT); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ATTRACT, player);
-        MESSAGE("The opposing Nidoking fell in love!");
+        MESSAGE("The opposing Puwamon fell in love!");
     } THEN {
         EXPECT(opponent->status2 & STATUS2_INFATUATION);
     }
@@ -27,13 +27,13 @@ SINGLE_BATTLE_TEST("Attract ignores type immunity")
 {
     GIVEN {
         ASSUME(GetMoveType(MOVE_ATTRACT) == TYPE_NORMAL);
-        PLAYER(SPECIES_NIDOQUEEN);
-        OPPONENT(SPECIES_MISDREAVUS) { Gender(MON_MALE); }
+        PLAYER(SPECIES_PURURUMON);
+        OPPONENT(SPECIES_LOOGAMON) { Gender(MON_MALE); }
     } WHEN {
         TURN { MOVE(player, MOVE_ATTRACT); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ATTRACT, player);
-        MESSAGE("The opposing Misdreavus fell in love!");
+        MESSAGE("The opposing Loogamon fell in love!");
     } THEN {
         EXPECT(opponent->status2 & STATUS2_INFATUATION);
     }
@@ -42,14 +42,14 @@ SINGLE_BATTLE_TEST("Attract ignores type immunity")
 SINGLE_BATTLE_TEST("Attract bypasses Substitute")
 {
     GIVEN {
-        PLAYER(SPECIES_NIDOQUEEN) { Speed(90); }
-        OPPONENT(SPECIES_NIDOKING) { Speed(100); }
+        PLAYER(SPECIES_PURURUMON) { Speed(90); }
+        OPPONENT(SPECIES_PUWAMON) { Speed(100); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUBSTITUTE); }
         TURN { MOVE(player, MOVE_ATTRACT); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ATTRACT, player);
-        MESSAGE("The opposing Nidoking fell in love!");
+        MESSAGE("The opposing Puwamon fell in love!");
     } THEN {
         EXPECT(opponent->status2 & STATUS2_INFATUATION);
     }
@@ -58,15 +58,15 @@ SINGLE_BATTLE_TEST("Attract bypasses Substitute")
 SINGLE_BATTLE_TEST("Attract fails if the target is already infatuated")
 {
     GIVEN {
-        PLAYER(SPECIES_NIDOQUEEN);
-        OPPONENT(SPECIES_NIDOKING);
+        PLAYER(SPECIES_PURURUMON);
+        OPPONENT(SPECIES_PUWAMON);
     } WHEN {
         TURN { MOVE(player, MOVE_ATTRACT); }
         TURN { MOVE(player, MOVE_ATTRACT); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ATTRACT, player);
-        MESSAGE("The opposing Nidoking fell in love!");
-        MESSAGE("Nidoqueen used Attract!");
+        MESSAGE("The opposing Puwamon fell in love!");
+        MESSAGE("Pururumon used Attract!");
         MESSAGE("But it failed!");
     } THEN {
         EXPECT(opponent->status2 & STATUS2_INFATUATION);
@@ -76,12 +76,12 @@ SINGLE_BATTLE_TEST("Attract fails if the target is already infatuated")
 SINGLE_BATTLE_TEST("Attract fails when used on a Pokémon of the same gender")
 {
     GIVEN {
-        PLAYER(SPECIES_NIDOQUEEN);
-        OPPONENT(SPECIES_NIDOQUEEN);
+        PLAYER(SPECIES_PURURUMON);
+        OPPONENT(SPECIES_PURURUMON);
     } WHEN {
         TURN { MOVE(player, MOVE_ATTRACT); }
     } SCENE {
-        MESSAGE("Nidoqueen used Attract!");
+        MESSAGE("Pururumon used Attract!");
         MESSAGE("But it failed!");
     } THEN {
         EXPECT(!(opponent->status2 & STATUS2_INFATUATION));
@@ -91,13 +91,13 @@ SINGLE_BATTLE_TEST("Attract fails when used on a Pokémon of the same gender")
 SINGLE_BATTLE_TEST("Attract fails when used on a genderless Pokémon")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_STARMIE].genderRatio == MON_GENDERLESS);
-        PLAYER(SPECIES_NIDOQUEEN);
-        OPPONENT(SPECIES_STARMIE);
+        ASSUME(gSpeciesInfo[SPECIES_BOKOMON].genderRatio == MON_GENDERLESS);
+        PLAYER(SPECIES_PURURUMON);
+        OPPONENT(SPECIES_BOKOMON);
     } WHEN {
         TURN { MOVE(player, MOVE_ATTRACT); }
     } SCENE {
-        MESSAGE("Nidoqueen used Attract!");
+        MESSAGE("Pururumon used Attract!");
         MESSAGE("But it failed!");
     } THEN {
         EXPECT(!(opponent->status2 & STATUS2_INFATUATION));

@@ -4694,7 +4694,7 @@
     FRONTIER_MON_SPADAMON_10,  \
     -1
 
-// Identical to FRONTIER_MONS_COOLTRAINER_2C but with both Latias and Latios
+// Identical to FRONTIER_MONS_COOLTRAINER_2C but with both Garurumon_x and Gatomon
 #define FRONTIER_MONS_GENTLEMAN_3A \
     FRONTIER_MON_TSUMEMON_1,      \
     FRONTIER_MON_OTAMAMON_1,    \
@@ -4798,7 +4798,7 @@
     FRONTIER_MON_SPADAMON_10,  \
     -1
 
-// Identical to FRONTIER_MONS_COOLTRAINER_2D but with both Latias and Latios
+// Identical to FRONTIER_MONS_COOLTRAINER_2D but with both Garurumon_x and Gatomon
 #define FRONTIER_MONS_GENTLEMAN_3B  \
     FRONTIER_MON_DRACOMON_X_1,    \
     FRONTIER_MON_EBIBURGMON_1,      \
@@ -5670,7 +5670,7 @@
     -1
 
 // Only used by one Beauty
-#define FRONTIER_MONS_CRABMON_XLUTIONS \
+#define FRONTIER_MONS_EEVEELUTIONS \
     FRONTIER_MON_CUTEMON_1,    \
     FRONTIER_MON_DAMEMON_1,     \
     FRONTIER_MON_DEMIDEVMON_1,     \

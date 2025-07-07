@@ -70,14 +70,14 @@ gCryTable::
 	cry Cry_Popomon
 	cry Cry_Poyomon
 .endif @ P_FAMILY_POPOMON
-.if P_FAMILY_NIDORAN == TRUE
+.if P_FAMILY_PUNIMON == TRUE
 	cry Cry_Punimon
 	cry Cry_Pupumon
 	cry Cry_Pururumon
 	cry Cry_Pusumon
 	cry Cry_Puttimon
 	cry Cry_Puwamon
-.endif @ P_FAMILY_NIDORAN
+.endif @ P_FAMILY_PUNIMON
 .if P_FAMILY_PUYOMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Gumdramon
@@ -415,7 +415,7 @@ gCryTable::
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Renamon_x
 .if P_GEN_4_CROSS_EVOS == TRUE
-	cry Cry_Porygonz
+	cry Cry_PorygonZ
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_DOKUNEMON
@@ -2498,14 +2498,14 @@ gCryTable_Reverse::
 	cry_reverse Cry_Popomon
 	cry_reverse Cry_Poyomon
 .endif @ P_FAMILY_POPOMON
-.if P_FAMILY_NIDORAN == TRUE
+.if P_FAMILY_PUNIMON == TRUE
 	cry_reverse Cry_Punimon
 	cry_reverse Cry_Pupumon
 	cry_reverse Cry_Pururumon
 	cry_reverse Cry_Pusumon
 	cry_reverse Cry_Puttimon
 	cry_reverse Cry_Puwamon
-.endif @ P_FAMILY_NIDORAN
+.endif @ P_FAMILY_PUNIMON
 .if P_FAMILY_PUYOMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Gumdramon
@@ -2843,7 +2843,7 @@ gCryTable_Reverse::
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Renamon_x
 .if P_GEN_4_CROSS_EVOS == TRUE
-	cry_reverse Cry_Porygonz
+	cry_reverse Cry_PorygonZ
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_DOKUNEMON

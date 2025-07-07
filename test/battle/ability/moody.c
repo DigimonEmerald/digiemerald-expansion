@@ -12,14 +12,14 @@ SINGLE_BATTLE_TEST("Moody randomly raises the user's Attack, Defense, Sp. Atk, S
     PASSES_RANDOMLY(1, statsNum - 1, RNG_MOODY_INCREASE);
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_MOODY_STATS, config);
-        PLAYER(SPECIES_OCTILLERY) { Ability(ABILITY_MOODY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_PAWNMON_WHITE) { Ability(ABILITY_MOODY); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_MOODY);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Octillery's Attack sharply rose!");
+        MESSAGE("Pawnmon_white's Attack sharply rose!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
     } THEN {
         EXPECT_EQ(player->statStages[STAT_ATK], DEFAULT_STAT_STAGE + 2);
@@ -37,15 +37,15 @@ SINGLE_BATTLE_TEST("Moody randomly lowers the user's Attack, Defense, Sp. Atk, S
     PASSES_RANDOMLY(1, statsNum - 2, RNG_MOODY_DECREASE);
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_MOODY_STATS, config);
-        PLAYER(SPECIES_OCTILLERY) { Ability(ABILITY_MOODY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_PAWNMON_WHITE) { Ability(ABILITY_MOODY); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_MOODY);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Octillery's Attack fell!");
+        MESSAGE("Pawnmon_white's Attack fell!");
     } THEN {
         EXPECT_EQ(player->statStages[STAT_ATK], DEFAULT_STAT_STAGE - 1);
     }
@@ -61,8 +61,8 @@ SINGLE_BATTLE_TEST("Moody randomly raises the holder's Attack, Defense, Sp. Atk,
     PASSES_RANDOMLY(statsNum - 1, statsNum - 1, RNG_MOODY_DECREASE);
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_MOODY_STATS, config);
-        PLAYER(SPECIES_OCTILLERY) { Ability(ABILITY_MOODY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_PAWNMON_WHITE) { Ability(ABILITY_MOODY); }
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { }
     } SCENE {

@@ -153,16 +153,16 @@ DOUBLE_BATTLE_TEST("Pastel Veil prevents Toxic bad poison on partner - right tar
 DOUBLE_BATTLE_TEST("Pastel Veil prevents Toxic bad poison on partner - left target")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_PONYTA_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
+        PLAYER(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TOXIC, target: opponentLeft); }
     } SCENE {
-        MESSAGE("Wobbuffet used Toxic!");
+        MESSAGE("Lopmon_x used Toxic!");
         ABILITY_POPUP(opponentRight, ABILITY_PASTEL_VEIL);
-        MESSAGE("The opposing Wynaut is protected by a pastel veil!");
+        MESSAGE("The opposing Exveemon is protected by a pastel veil!");
         NOT STATUS_ICON(opponentLeft, badPoison: TRUE);
     }
 }

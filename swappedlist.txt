@@ -58,7 +58,7 @@ Budmon - Diglett
 Bukamon - Dugtrio
 Calumon - Meowth
 Chapmon - Persian
-Chiccimon - Psyduck
+Chicchimon - Psyduck
 Demimeramon - Golduck
 Demiveemon - Mankey
 Dorimon - Primeape

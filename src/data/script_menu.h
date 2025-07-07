@@ -259,9 +259,9 @@ static const struct MenuAction MultichoiceList_UnusedAshVendor[] =
 
 static const struct MenuAction MultichoiceList_GameCornerDolls[] =
 {
-    {COMPOUND_STRING("TREECKO DOLL 1,000 COINS")},
-    {COMPOUND_STRING("TORCHIC DOLL 1,000 COINS")},
-    {COMPOUND_STRING("MUDKIP DOLL   1,000 COINS")},
+    {COMPOUND_STRING("SUNARZAMON DOLL 1,000 COINS")},
+    {COMPOUND_STRING("SYAKOMON_X DOLL 1,000 COINS")},
+    {COMPOUND_STRING("TERRIERMON DOLL   1,000 COINS")},
     {gText_Exit},
 };
 
@@ -507,7 +507,7 @@ static const struct MenuAction MultichoiceList_LinkServicesNoRecordBerry[] =
 static const struct MenuAction MultichoiceList_WirelessMinigame[] =
 {
     {COMPOUND_STRING("POKéMON JUMP")},
-    {COMPOUND_STRING("DODRIO BERRY-PICKING")},
+    {COMPOUND_STRING("PUROROMON BERRY-PICKING")},
     {gText_Exit},
 };
 

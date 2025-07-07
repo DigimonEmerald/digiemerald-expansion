@@ -207,8 +207,8 @@ static const u8 sText_EVO_Buttons_Decapped_PE[] = _("{DPAD_UPDOWN}Evos  {A_BUTTO
 static const u8 sText_EVO_Name[] = _("{STR_VAR_3}:");
 static const u8 sText_EVO_PreEvo[] = _("{STR_VAR_1} evolves from {STR_VAR_2}");
 static const u8 sText_EVO_PreEvo_PE_Mega[] = _("{STR_VAR_1} Mega Evolves with {STR_VAR_2}");
-static const u8 sText_EVO_LEVEL_SILCOON[] = _("{LV}{UP_ARROW} to {STR_VAR_2}, Silcoon persona");
-static const u8 sText_EVO_LEVEL_CASCOON[] = _("{LV}{UP_ARROW} to {STR_VAR_2}, Cascoon persona");
+static const u8 sText_EVO_LEVEL_VEMMON[] = _("{LV}{UP_ARROW} to {STR_VAR_2}, Vemmon persona");
+static const u8 sText_EVO_LEVEL_WORMMON[] = _("{LV}{UP_ARROW} to {STR_VAR_2}, Wormmon persona");
 static const u8 sText_EVO_MOVE[] = _("{LV}{UP_ARROW}, knows {STR_VAR_2}");
 static const u8 sText_EVO_LEVEL_RAIN[] = _("{LV}{UP_ARROW} to {STR_VAR_2} while raining");
 static const u8 sText_EVO_TRADE_SPECIFIC_MON[] = _("Traded for {STR_VAR_2}");
@@ -6765,6 +6765,12 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, u16 species, u8 dept
                 StringAppend(gStringVar4, gStringVar2);
                 StringAppend(gStringVar4, COMPOUND_STRING(" in bag"));
                 break;
+            case IF_ATK:
+            case IF_DEF:
+            case IF_SPATK:
+            case IF_SPDEF:
+            case IF_SPD:
+            case IF_HP:
             case CONDITIONS_END:
                 break;
             }

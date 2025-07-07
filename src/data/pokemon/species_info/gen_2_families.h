@@ -656,7 +656,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sGaomonLevelUpLearnset,
         .teachableLearnset = sGaomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_DEFENSE, 61, SPECIES_BABOONMON},
+        .evolutions = EVOLUTION({EVO_LEVEL, 61, SPECIES_BABOONMON},
                                 {EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_BLGAOGAMON},
                                 {EVO_LEVEL, 37, SPECIES_GAOGAMON}),
     },
@@ -802,10 +802,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sGazimonLevelUpLearnset,
         .teachableLearnset = sGazimonTeachableLearnset,
         .eggMoveLearnset = sGazimonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_SPDEFENSE, 62, SPECIES_DEVIDRAMON},
+        .evolutions = EVOLUTION({EVO_LEVEL, 62, SPECIES_DEVIDRAMON},
                                 {EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_GAZIMON_X},
-                                {EVO_ATTACK, 69, SPECIES_APEMON},
-                                {EVO_SPEED, 67, SPECIES_BLGARURMON},
+                                {EVO_LEVEL, 69, SPECIES_APEMON},
+                                {EVO_LEVEL, 67, SPECIES_BLGARURMON},
                                 {EVO_LEVEL, 38, SPECIES_DELTAMON}),
     },
 
@@ -1493,7 +1493,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sGuilmonLevelUpLearnset,
         .teachableLearnset = sGuilmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_SPATTACK, 70, SPECIES_BALUCHIMON},
+        .evolutions = EVOLUTION({EVO_LEVEL, 70, SPECIES_BALUCHIMON},
                                 {EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_GUILMON_X}, // X Antibody
                                 {EVO_LEVEL, 37, SPECIES_BLGROWLMON}),
     },
@@ -1641,8 +1641,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sHagurumon_xLevelUpLearnset,
         .teachableLearnset = sHagurumon_xTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_DEFENSE, 57, SPECIES_CLOCKMON},
-                                {EVO_SPEED, 59, SPECIES_BLIMPMON},
+        .evolutions = EVOLUTION({EVO_LEVEL, 57, SPECIES_CLOCKMON},
+                                {EVO_LEVEL, 59, SPECIES_BLIMPMON},
                                 {EVO_LEVEL, 32, SPECIES_DECKDRAMON}),
     },
 
@@ -2110,9 +2110,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sImpmonTeachableLearnset,
         .formSpeciesIdTable = sImpmonFormSpeciesIdTable,
         .formChangeTable = sImpmonFormChangeTable,
-        .evolutions = EVOLUTION({EVO_SPEED, 52, SPECIES_BIOTHUNMON},
-                                {EVO_HEALTH, 81, SPECIES_BIOQUETMON},
-                                {EVO_SPATTACK, 55, SPECIES_BOOGIEMON},
+        .evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_BIOTHUNMON},
+                                {EVO_LEVEL, 55, SPECIES_BOOGIEMON},
                                 {EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_IMPMON_X},
                                 {EVO_LEVEL, 30, SPECIES_DEVIMON}),
     },
@@ -2263,7 +2262,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sBiostegmonLevelUpLearnset,
         .teachableLearnset = sBiostegmonTeachableLearnset,
         .eggMoveLearnset = sBiostegmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_FRIENDSHIP, 0, SPECIES_JAZAMON}),
     },
 #endif //P_GEN_3_CROSS_EVOS
 
@@ -2481,7 +2479,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sBonslyLevelUpLearnset,
         .teachableLearnset = sBonslyTeachableLearnset,
         .eggMoveLearnset = sBonslyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_MOVE, MOVE_MIMIC, SPECIES_JUNKMON}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 
@@ -2873,7 +2870,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sKokabuimonLevelUpLearnset,
         .teachableLearnset = sKokabuimonTeachableLearnset,
         .eggMoveLearnset = sKokabuimonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ATTACK, 52, SPECIES_DEPUTYMON},
+        .evolutions = EVOLUTION({EVO_LEVEL, 52, SPECIES_DEPUTYMON},
                                 {EVO_LEVEL, 27, SPECIES_SAWKUWAMON}),
     },
 
@@ -3947,7 +3944,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .frontPic = gMonFrontPic_LopmonA,                                                        
         .frontPicSize = MON_COORDS_SIZE(24, 40),                                       
         .frontPicYOffset = 16,                                                                          
-        .frontAnimFrames = sAnims_Lopmon,                                                                
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,                                                                
         .frontAnimId = ANIM_ZIGZAG_FAST,                                                                
         .enemyMonElevation = 8,                                                                         
         .backPic = gMonBackPic_LopmonA,                                                          
@@ -3959,15 +3956,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .iconSprite = gMonIcon_LopmonA,                                                          
         .iconPalIndex = 0,                                                                              
         SHADOW(0, 3, SHADOW_SIZE_S)                                                                     
-        FOOTPRINT(Lopmon)                                                                                
-        OVERWORLD(
-            sPicTable_Mismagius,
-            SIZE_32x32,
-            SHADOW_SIZE_M,
-            TRACKS_FOOT,
-            gOverworldPalette_Mismagius,
-            gShinyOverworldPalette_Mismagius
-        )                                                                                           \
+        FOOTPRINT(Lopmon)                                                                                                                                                                      \
         .levelUpLearnset = sLopmonLevelUpLearnset,                                                       \
         .teachableLearnset = sLopmonTeachableLearnset,                                                   \
         .tmIlliterate = TRUE,                                                                           \
@@ -4730,8 +4719,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sMetabeeLevelUpLearnset,
         .teachableLearnset = sMetabeeTeachableLearnset,
         .eggMoveLearnset = sMetabeeEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM_HOLD_NIGHT, ITEM_RAZOR_FANG, SPECIES_GLISCOR},
-                                {EVO_ITEM_NIGHT, ITEM_RAZOR_FANG, SPECIES_GLISCOR}),
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -5099,7 +5086,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sMonmonHisuiLevelUpLearnset,
         .teachableLearnset = sMonmonHisuiTeachableLearnset,
         .formSpeciesIdTable = sMonmonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_MOVE, MOVE_BARB_BARRAGE, SPECIES_OVERQWIL}),
     },
 
     [SPECIES_OVERQWIL] =
@@ -5658,8 +5644,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sMushroomonHisuiLevelUpLearnset,
         .teachableLearnset = sMushroomonHisuiTeachableLearnset,
         .formSpeciesIdTable = sMushroomonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM_HOLD_DAY, ITEM_RAZOR_CLAW, SPECIES_SNEASLER},
-                                {EVO_ITEM_DAY, ITEM_RAZOR_CLAW, SPECIES_SNEASLER}),
     },
 
     [SPECIES_SNEASLER] =
@@ -6911,7 +6895,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sMantykeLevelUpLearnset,
         .teachableLearnset = sMantykeTeachableLearnset,
         .eggMoveLearnset = sMantykeEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_SPECIFIC_MON_IN_PARTY, SPECIES_PAWNMON_BLACK, SPECIES_PETITMAMON}),
     },
 #endif //P_GEN_4_CROSS_EVOS
 
@@ -7510,7 +7493,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sRokushoLevelUpLearnset,
         .teachableLearnset = sRokushoTeachableLearnset,
         .eggMoveLearnset = sRokushoEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_USE_MOVE_TWENTY_TIMES, MOVE_PSYSHIELD_BASH, SPECIES_WYRDEER}),
     },
 
 #if P_GEN_8_CROSS_EVOS

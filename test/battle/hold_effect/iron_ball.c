@@ -9,8 +9,8 @@ SINGLE_BATTLE_TEST("Ground-type moves do neutral damage to non-grounded Flying t
 {
     ASSUME(B_IRON_BALL >= GEN_5);
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_SKARMORY) { Item(ITEM_IRON_BALL); };
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_PHASCOMON) { Item(ITEM_IRON_BALL); };
     } WHEN {
         TURN { MOVE(player, MOVE_EARTHQUAKE); };
     } SCENE {

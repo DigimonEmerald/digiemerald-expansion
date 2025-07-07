@@ -12,15 +12,15 @@ SINGLE_BATTLE_TEST("Dire Hit increases a battler's critical hit chance by 2 stag
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_CRIT_CHANCE, genConfig);
         ASSUME(gItemsInfo[ITEM_DIRE_HIT].battleUsage == EFFECT_ITEM_SET_FOCUS_ENERGY);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { USE_ITEM(player, ITEM_DIRE_HIT, partyIndex: 0); }
         TURN { MOVE(player, MOVE_SCRATCH); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FOCUS_ENERGY, player);
-        MESSAGE("Wobbuffet used the Dire Hit to get pumped!");
-        MESSAGE("Wobbuffet used Scratch!");
+        MESSAGE("Lopmon_x used the Dire Hit to get pumped!");
+        MESSAGE("Lopmon_x used Scratch!");
         MESSAGE("A critical hit!");
     }
 }

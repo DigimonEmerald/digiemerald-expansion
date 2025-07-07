@@ -185,7 +185,7 @@ TEST("Difficulty default to Normal is the trainer doesn't have a member for the 
     struct Pokemon *testParty = Alloc(6 * sizeof(struct Pokemon));
     u32 currTrainer = 1;
     CreateNPCTrainerPartyFromTrainer(testParty, &sTestTrainers[GetTrainerDifficultyLevelTest(currTrainer)][currTrainer], TRUE, BATTLE_TYPE_TRAINER);
-    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_MEWTWO);
+    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_AGUMON_FAKE_EXPERT);
     Free(testParty);
 }
 
@@ -195,7 +195,7 @@ TEST("Difficulty changes which party if used for NPCs if defined for the difficu
     struct Pokemon *testParty = Alloc(6 * sizeof(struct Pokemon));
     u32 currTrainer = 2;
     CreateNPCTrainerPartyFromTrainer(testParty, &sTestTrainers[GetTrainerDifficultyLevelTest(currTrainer)][currTrainer], TRUE, BATTLE_TYPE_TRAINER);
-    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_METAPOD);
+    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_DODOMON);
     EXPECT(GetMonData(&testParty[0], MON_DATA_LEVEL) == 1);
     Free(testParty);
 }
@@ -217,7 +217,7 @@ TEST("Difficulty changes which party if used for NPCs if defined for the difficu
     struct Pokemon *testParty = Alloc(6 * sizeof(struct Pokemon));
     u32 currTrainer = 2;
     CreateNPCTrainerPartyFromTrainer(testParty, &sTestTrainers[GetTrainerDifficultyLevelTest(currTrainer)][currTrainer], TRUE, BATTLE_TYPE_TRAINER);
-    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_MEWTWO);
+    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_AGUMON_FAKE_EXPERT);
     EXPECT(GetMonData(&testParty[0], MON_DATA_LEVEL) == 50);
     Free(testParty);
 }
@@ -227,7 +227,7 @@ TEST("Trainer Party Pool generates a party from the trainer pool")
     struct Pokemon *testParty = Alloc(6 * sizeof(struct Pokemon));
     u32 currTrainer = 3;
     CreateNPCTrainerPartyFromTrainer(testParty, &sTestTrainers[GetTrainerDifficultyLevelTest(currTrainer)][currTrainer], TRUE, BATTLE_TYPE_TRAINER);
-    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_EEVEE);
+    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_CRABMON_X);
     Free(testParty);
 }
 
@@ -236,9 +236,9 @@ TEST("Trainer Party Pool picks a random lead and a random ace if tags exist in t
     struct Pokemon *testParty = Alloc(6 * sizeof(struct Pokemon));
     u32 currTrainer = 4;
     CreateNPCTrainerPartyFromTrainer(testParty, &sTestTrainers[GetTrainerDifficultyLevelTest(currTrainer)][currTrainer], TRUE, BATTLE_TYPE_TRAINER);
-    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_ARON);    //  Lead
-    EXPECT(GetMonData(&testParty[1], MON_DATA_SPECIES) == SPECIES_WYNAUT);  //  Not Lead or Ace
-    EXPECT(GetMonData(&testParty[2], MON_DATA_SPECIES) == SPECIES_EEVEE);   //  Ace
+    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_BLKGATOMON);    //  Lead
+    EXPECT(GetMonData(&testParty[1], MON_DATA_SPECIES) == SPECIES_EXVEEMON);  //  Not Lead or Ace
+    EXPECT(GetMonData(&testParty[2], MON_DATA_SPECIES) == SPECIES_CRABMON_X);   //  Ace
     Free(testParty);
 }
 
@@ -247,9 +247,9 @@ TEST("Trainer Party Pool picks according to custom rules")
     struct Pokemon *testParty = Alloc(6 * sizeof(struct Pokemon));
     u32 currTrainer = 5;
     CreateNPCTrainerPartyFromTrainer(testParty, &sTestTrainers[GetTrainerDifficultyLevelTest(currTrainer)][currTrainer], TRUE, BATTLE_TYPE_TRAINER | BATTLE_TYPE_DOUBLE);
-    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_TORKOAL);    //  Lead + Weather Setter
-    EXPECT(GetMonData(&testParty[1], MON_DATA_SPECIES) == SPECIES_BULBASAUR);  //  Lead + Weather Abuser
-    EXPECT(GetMonData(&testParty[2], MON_DATA_SPECIES) == SPECIES_EEVEE);      //  Anything else
+    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_CLOCKMON);    //  Lead + Weather Setter
+    EXPECT(GetMonData(&testParty[1], MON_DATA_SPECIES) == SPECIES_ARGOMON);  //  Lead + Weather Abuser
+    EXPECT(GetMonData(&testParty[2], MON_DATA_SPECIES) == SPECIES_CRABMON_X);      //  Anything else
     Free(testParty);
 }
 
@@ -258,8 +258,8 @@ TEST("Trainer Party Pool uses standard party creation if pool is illegal")
     struct Pokemon *testParty = Alloc(6 * sizeof(struct Pokemon));
     u32 currTrainer = 6;
     CreateNPCTrainerPartyFromTrainer(testParty, &sTestTrainers[GetTrainerDifficultyLevelTest(currTrainer)][currTrainer], TRUE, BATTLE_TYPE_TRAINER);
-    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_WYNAUT);
-    EXPECT(GetMonData(&testParty[1], MON_DATA_SPECIES) == SPECIES_WOBBUFFET);
+    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_EXVEEMON);
+    EXPECT(GetMonData(&testParty[1], MON_DATA_SPECIES) == SPECIES_LOPMON_X);
     Free(testParty);
 }
 
@@ -268,8 +268,8 @@ TEST("Trainer Party Pool can be pruned before picking")
     struct Pokemon *testParty = Alloc(6 * sizeof(struct Pokemon));
     u32 currTrainer = 7;
     CreateNPCTrainerPartyFromTrainer(testParty, &sTestTrainers[GetTrainerDifficultyLevelTest(currTrainer)][currTrainer], TRUE, BATTLE_TYPE_TRAINER);
-    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_EEVEE);
-    EXPECT(GetMonData(&testParty[1], MON_DATA_SPECIES) == SPECIES_WYNAUT);
+    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_CRABMON_X);
+    EXPECT(GetMonData(&testParty[1], MON_DATA_SPECIES) == SPECIES_EXVEEMON);
     Free(testParty);
 }
 
@@ -278,8 +278,8 @@ TEST("Trainer Party Pool can choose which functions to use for picking mons")
     struct Pokemon *testParty = Alloc(6 * sizeof(struct Pokemon));
     u32 currTrainer = 8;
     CreateNPCTrainerPartyFromTrainer(testParty, &sTestTrainers[GetTrainerDifficultyLevelTest(currTrainer)][currTrainer], TRUE, BATTLE_TYPE_TRAINER);
-    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_WYNAUT);
-    EXPECT(GetMonData(&testParty[1], MON_DATA_SPECIES) == SPECIES_WOBBUFFET);
+    EXPECT(GetMonData(&testParty[0], MON_DATA_SPECIES) == SPECIES_EXVEEMON);
+    EXPECT(GetMonData(&testParty[1], MON_DATA_SPECIES) == SPECIES_LOPMON_X);
     Free(testParty);
 }
 

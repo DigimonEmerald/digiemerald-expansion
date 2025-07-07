@@ -44,8 +44,8 @@ TEST("Script_HasNoEffect variables")
         checkitem ITEM_POTION, 1;
         checkitemtype ITEM_POTION;
         checkpcitem ITEM_POTION, 1;
-        checkdecorspace DECOR_SNORLAX_DOLL;
-        checkdecor DECOR_SNORLAX_DOLL;
+        checkdecorspace DECOR_DRACOMON_DOLL;
+        checkdecor DECOR_DRACOMON_DOLL;
         checkpartymove MOVE_CELEBRATE;
         random 2;
         checkmoney 5000;

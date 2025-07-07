@@ -9,8 +9,8 @@ SINGLE_BATTLE_TEST("Me First copies the move from the target and increases it's 
     PARAMETRIZE { move = MOVE_ME_FIRST; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, move); MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
@@ -23,12 +23,12 @@ SINGLE_BATTLE_TEST("Me First copies the move from the target and increases it's 
 SINGLE_BATTLE_TEST("Me First fails if target uses a status move")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_ME_FIRST); MOVE(opponent, MOVE_GROWL); }
     } SCENE {
-        MESSAGE("Wobbuffet used Me First!");
+        MESSAGE("Lopmon_x used Me First!");
         MESSAGE("But it failed!");
     }
 }
@@ -36,12 +36,12 @@ SINGLE_BATTLE_TEST("Me First fails if target uses a status move")
 SINGLE_BATTLE_TEST("Me First fails if target moves first")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(50); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(100); }
+        PLAYER(SPECIES_LOPMON_X) { Speed(50); }
+        OPPONENT(SPECIES_LOPMON_X) { Speed(100); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); MOVE(player, MOVE_ME_FIRST); }
     } SCENE {
-        MESSAGE("Wobbuffet used Me First!");
+        MESSAGE("Lopmon_x used Me First!");
         MESSAGE("But it failed!");
     }
 }
@@ -51,8 +51,8 @@ SINGLE_BATTLE_TEST("Me First: If a Consecutively Executed Move is copied, the bo
     s16 dmg[2];
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(100); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(50); }
+        PLAYER(SPECIES_LOPMON_X) { Speed(100); }
+        OPPONENT(SPECIES_LOPMON_X) { Speed(50); }
     } WHEN {
         TURN { MOVE(player, MOVE_ME_FIRST); MOVE(opponent, MOVE_OUTRAGE); }
     } SCENE {
@@ -68,8 +68,8 @@ SINGLE_BATTLE_TEST("Me First: If a Consecutively Executed Move is copied, the bo
 SINGLE_BATTLE_TEST("Me First can be selected if users holds Assault Vest")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(100); Item(ITEM_ASSAULT_VEST); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(50); }
+        PLAYER(SPECIES_LOPMON_X) { Speed(100); Item(ITEM_ASSAULT_VEST); }
+        OPPONENT(SPECIES_LOPMON_X) { Speed(50); }
     } WHEN {
         TURN { MOVE(player, MOVE_ME_FIRST); MOVE(opponent, MOVE_TACKLE); }
     } SCENE {

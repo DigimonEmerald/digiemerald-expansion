@@ -5,8 +5,8 @@ SINGLE_BATTLE_TEST("Sucker Punch hits targets that are about to attack")
 {
     GIVEN {
         ASSUME(GetMoveCategory(MOVE_SCRATCH) != DAMAGE_CATEGORY_STATUS);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_SUCKER_PUNCH); MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {
@@ -21,8 +21,8 @@ SINGLE_BATTLE_TEST("Sucker Punch doesn't hit targets using status moves")
 {
     GIVEN {
         ASSUME(GetMoveCategory(MOVE_GROWL) == DAMAGE_CATEGORY_STATUS);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_SUCKER_PUNCH); MOVE(opponent, MOVE_GROWL); }
     } SCENE {
@@ -38,8 +38,8 @@ SINGLE_BATTLE_TEST("Sucker Punch doesn't hit targets that has already moved")
 {
     GIVEN {
         ASSUME(GetMovePriority(MOVE_QUICK_ATTACK) == GetMovePriority(MOVE_SUCKER_PUNCH));
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(opponent, MOVE_QUICK_ATTACK); MOVE(player, MOVE_SUCKER_PUNCH); }
     } SCENE {

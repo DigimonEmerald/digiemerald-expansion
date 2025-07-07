@@ -172,8 +172,8 @@ SINGLE_BATTLE_TEST("Punching Glove vs Muscle Band Damage calculation")
     PARAMETRIZE { expectedDamagePlayer = 174, expectedDamageOpponent = 172; }
     PARAMETRIZE { expectedDamagePlayer = 172, expectedDamageOpponent = 169; }
     GIVEN {
-        PLAYER(SPECIES_MAKUHITA) { Item(ITEM_PUNCHING_GLOVE); }
-        OPPONENT(SPECIES_MAKUHITA) { Item(ITEM_MUSCLE_BAND); }
+        PLAYER(SPECIES_BETGAMAMON) { Item(ITEM_PUNCHING_GLOVE); }
+        OPPONENT(SPECIES_BETGAMAMON) { Item(ITEM_MUSCLE_BAND); }
     } WHEN {
         TURN {
             MOVE(player, MOVE_DRAIN_PUNCH, WITH_RNG(RNG_DAMAGE_MODIFIER, i));
@@ -213,8 +213,8 @@ SINGLE_BATTLE_TEST("Gem boosted Damage calculation")
     PARAMETRIZE { expectedDamage = 205; }
     PARAMETRIZE { expectedDamage = 204; }
     GIVEN {
-        PLAYER(SPECIES_MAKUHITA) { Item(ITEM_FIGHTING_GEM); }
-        OPPONENT(SPECIES_MAKUHITA);
+        PLAYER(SPECIES_BETGAMAMON) { Item(ITEM_FIGHTING_GEM); }
+        OPPONENT(SPECIES_BETGAMAMON);
     } WHEN {
         TURN {
             MOVE(player, MOVE_DRAIN_PUNCH, WITH_RNG(RNG_DAMAGE_MODIFIER, i));
