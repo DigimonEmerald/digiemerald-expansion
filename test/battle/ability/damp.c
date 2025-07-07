@@ -60,12 +60,12 @@ SINGLE_BATTLE_TEST("Damp prevents explosion-like moves from self")
 SINGLE_BATTLE_TEST("Damp prevents damage from Aftermath")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_TACKLE].makesContact);
+        ASSUME(MoveMakesContact(MOVE_SCRATCH));
         PLAYER(SPECIES_ARGOMON_IT) { Ability(ABILITY_DAMP); }
         OPPONENT(SPECIES_XIAOMON) { Ability(ABILITY_AFTERMATH); HP(1); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
-        TURN { MOVE(player, MOVE_TACKLE); SEND_OUT(opponent, 1); }
+        TURN { MOVE(player, MOVE_SCRATCH); SEND_OUT(opponent, 1); }
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_AFTERMATH);
         ABILITY_POPUP(player, ABILITY_DAMP);

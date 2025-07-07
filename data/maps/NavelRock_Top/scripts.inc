@@ -1,5 +1,3 @@
-.set LOCALID_STARMON_2010, 1
-
 NavelRock_Top_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, NavelRock_Top_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, NavelRock_Top_OnResume
@@ -29,7 +27,7 @@ NavelRock_Top_OnResume:
 NavelRock_Top_EventScript_TryRemoveStarmon_2010::
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
-	removeobject LOCALID_STARMON_2010
+	removeobject LOCALID_NAVEL_ROCK_STARMON_2010
 	return
 
 NavelRock_Top_EventScript_Starmon_2010::
@@ -39,8 +37,8 @@ NavelRock_Top_EventScript_Starmon_2010::
 	setvar VAR_0x8004, 3  @ num loops
 	setvar VAR_0x8005, 35 @ delay
 	special LoopWingFlapSE
-	applymovement LOCALID_STARMON_2010, NavelRock_Top_Movement_Starmon_2010Appear
-	applymovement OBJ_EVENT_ID_CAMERA, NavelRock_Top_Movement_CameraPanUp
+	applymovement LOCALID_NAVEL_ROCK_STARMON_2010, NavelRock_Top_Movement_Starmon_2010Appear
+	applymovement LOCALID_CAMERA, NavelRock_Top_Movement_CameraPanUp
 	waitmovement 0
 	delay 50
 	setweather WEATHER_NONE
@@ -53,8 +51,8 @@ NavelRock_Top_EventScript_Starmon_2010::
 	setvar VAR_0x8004, 3  @ num loops
 	setvar VAR_0x8005, 35 @ delay
 	special LoopWingFlapSE
-	applymovement OBJ_EVENT_ID_CAMERA, NavelRock_Top_Movement_CameraPanDown
-	applymovement LOCALID_STARMON_2010, NavelRock_Top_Movement_Starmon_2010Approach
+	applymovement LOCALID_CAMERA, NavelRock_Top_Movement_CameraPanDown
+	applymovement LOCALID_NAVEL_ROCK_STARMON_2010, NavelRock_Top_Movement_Starmon_2010Approach
 	waitmovement 0
 	special RemoveCameraObject
 	seteventmon SPECIES_STARMON_2010, 70
@@ -62,7 +60,7 @@ NavelRock_Top_EventScript_Starmon_2010::
 	special BattleSetup_StartLegendaryBattle
 	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
-	setvar VAR_LAST_TALKED, LOCALID_STARMON_2010
+	setvar VAR_LAST_TALKED, LOCALID_NAVEL_ROCK_STARMON_2010
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, NavelRock_Top_EventScript_DefeatedStarmon_2010
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, NavelRock_Top_EventScript_RanFromStarmon_2010

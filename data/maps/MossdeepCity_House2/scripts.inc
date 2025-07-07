@@ -1,5 +1,3 @@
-.set LOCALID_ANGEMON, 3
-
 MossdeepCity_House2_MapScripts::
 	.byte 0
 
@@ -23,17 +21,17 @@ MossdeepCity_House2_EventScript_Angemon::
 	clearflag FLAG_HIDE_FORTREE_CITY_HOUSE_4_ANGEMON
 	call_if_eq VAR_FACING, DIR_NORTH, MossdeepCity_House2_EventScript_AngemonExitNorth
 	call_if_eq VAR_FACING, DIR_WEST, MossdeepCity_House2_EventScript_AngemonExitWest
-	removeobject LOCALID_ANGEMON
+	removeobject LOCALID_MOSSDEEP_HOUSE_ANGEMON
 	release
 	end
 
 MossdeepCity_House2_EventScript_AngemonExitNorth::
-	applymovement LOCALID_ANGEMON, MossdeepCity_House2_Movement_AngemonExitNorth
+	applymovement LOCALID_MOSSDEEP_HOUSE_ANGEMON, MossdeepCity_House2_Movement_AngemonExitNorth
 	waitmovement 0
 	return
 
 MossdeepCity_House2_EventScript_AngemonExitWest::
-	applymovement LOCALID_ANGEMON, MossdeepCity_House2_Movement_AngemonExitEast
+	applymovement LOCALID_MOSSDEEP_HOUSE_ANGEMON, MossdeepCity_House2_Movement_AngemonExitEast
 	waitmovement 0
 	return
 

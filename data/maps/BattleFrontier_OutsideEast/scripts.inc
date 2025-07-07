@@ -1,5 +1,3 @@
-.set LOCALID_JUNKMON, 14
-
 BattleFrontier_OutsideEast_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, BattleFrontier_OutsideEast_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, BattleFrontier_OutsideEast_OnTransition
@@ -108,7 +106,7 @@ BattleFrontier_OutsideEast_EventScript_Junkmon::
 	faceplayer
 	waitse
 	playse SE_SUDOWOODO_SHAKE
-	applymovement LOCALID_JUNKMON, BattleFrontier_OutsideEast_Movement_JunkmonShake
+	applymovement LOCALID_FRONTIER_JUNKMON, BattleFrontier_OutsideEast_Movement_JunkmonShake
 	waitmovement 0
 	release
 	end
@@ -120,7 +118,7 @@ BattleFrontier_OutsideEast_EventScript_WaterJunkmon::
 	waitstate
 	waitse
 	playse SE_SUDOWOODO_SHAKE
-	applymovement LOCALID_JUNKMON, BattleFrontier_OutsideEast_Movement_JunkmonShake
+	applymovement LOCALID_FRONTIER_JUNKMON, BattleFrontier_OutsideEast_Movement_JunkmonShake
 	waitmovement 0
 	msgbox gText_Junkmon_Attacked, MSGBOX_DEFAULT
 	closemessage
@@ -128,7 +126,7 @@ BattleFrontier_OutsideEast_EventScript_WaterJunkmon::
 	playmoncry SPECIES_JUNKMON, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setvar VAR_LAST_TALKED, LOCALID_JUNKMON
+	setvar VAR_LAST_TALKED, LOCALID_FRONTIER_JUNKMON
 	setwildbattle SPECIES_JUNKMON, 40
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	dowildbattle

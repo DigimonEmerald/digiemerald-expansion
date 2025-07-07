@@ -5,7 +5,7 @@ SINGLE_BATTLE_TEST("Own Tempo prevents Intimidate but no other stat down changes
 {
     GIVEN {
         ASSUME(B_UPDATED_INTIMIDATE >= GEN_8);
-        ASSUME(gMovesInfo[MOVE_CONFUSE_RAY].effect == EFFECT_CONFUSE);
+        ASSUME(GetMoveEffect(MOVE_CONFUSE_RAY) == EFFECT_CONFUSE);
         PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); };
         OPPONENT(SPECIES_PAGUMON) { Ability(ABILITY_OWN_TEMPO); };
     } WHEN {
@@ -33,7 +33,7 @@ SINGLE_BATTLE_TEST("Own Tempo prevents Intimidate but no other stat down changes
 SINGLE_BATTLE_TEST("Own Tempo prevents confusion from moves by the opponent")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_CONFUSE_RAY].effect == EFFECT_CONFUSE);
+        ASSUME(GetMoveEffect(MOVE_CONFUSE_RAY) == EFFECT_CONFUSE);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PAGUMON) { Ability(ABILITY_OWN_TEMPO); };
     } WHEN {
@@ -64,36 +64,28 @@ SINGLE_BATTLE_TEST("Own Tempo prevents confusion from moves by the user")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PETAL_DANCE, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PETAL_DANCE, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PETAL_DANCE, opponent);
-<<<<<<< HEAD
-        NONE_OF { MESSAGE("Foe Pagumon became confused due to fatigue!"); }
-=======
-        NONE_OF { MESSAGE("The opposing Pagumon became confused due to fatigue!"); }
->>>>>>> upstream/master
+        NONE_OF { MESSAGE("The opposing Slowpoke became confused due to fatigue!"); }
     }
 }
 
-SINGLE_BATTLE_TEST("Own Tempo is ignored by Mold Breaker")
+SINGLE_BATTLE_TEST("Mold Breaker ignores Own Tempo")
 {
-    KNOWN_FAILING; // Ideally the func CanBeConfused should be split into AttackerCanBeConfused and TargetCanBeConfused or we do it in the same func but have a check for when battlerAtk == battlerDef
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_CONFUSE_RAY].effect == EFFECT_CONFUSE);
+        ASSUME(GetMoveEffect(MOVE_CONFUSE_RAY) == EFFECT_CONFUSE);
         PLAYER(SPECIES_TYUTYUMON) { Ability(ABILITY_MOLD_BREAKER); }
         OPPONENT(SPECIES_PAGUMON) { Ability(ABILITY_OWN_TEMPO); };
     } WHEN {
         TURN { MOVE(player, MOVE_CONFUSE_RAY); }
     } SCENE {
-        NONE_OF {
-            ABILITY_POPUP(opponent, ABILITY_OWN_TEMPO);
-            MESSAGE("The opposing Pagumon's Own Tempo prevents confusion!");
-        }
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);
+        NOT MESSAGE("The opposing Pagumon's Own Tempo prevents confusion!");
     }
 }
 
-SINGLE_BATTLE_TEST("Own Tempo cures confusion obtained from an opponent with Mold Breaker")
+SINGLE_BATTLE_TEST("Mold Breaker does not prevent Own Tempo from curing confusion right after")
 {
-    KNOWN_FAILING;
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_CONFUSE_RAY].effect == EFFECT_CONFUSE);
+        ASSUME(GetMoveEffect(MOVE_CONFUSE_RAY) == EFFECT_CONFUSE);
         PLAYER(SPECIES_TYUTYUMON) { Ability(ABILITY_MOLD_BREAKER); };
         OPPONENT(SPECIES_PAGUMON) { Ability(ABILITY_OWN_TEMPO); };
     } WHEN {
@@ -120,14 +112,14 @@ SINGLE_BATTLE_TEST("Own Tempo cures confusion obtained from an opponent with Mol
 SINGLE_BATTLE_TEST("Own Tempo cures confusion if it's obtained via Skill Swap")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_CONFUSE_RAY].effect == EFFECT_CONFUSE);
-        ASSUME(gMovesInfo[MOVE_SKILL_SWAP].effect == EFFECT_SKILL_SWAP);
+        ASSUME(GetMoveEffect(MOVE_CONFUSE_RAY) == EFFECT_CONFUSE);
+        ASSUME(GetMoveEffect(MOVE_SKILL_SWAP) == EFFECT_SKILL_SWAP);
         PLAYER(SPECIES_PAGUMON) { Ability(ABILITY_OWN_TEMPO); };
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_CONFUSE_RAY); }
         TURN { MOVE(player, MOVE_SKILL_SWAP);
-               MOVE(opponent, MOVE_TACKLE);
+               MOVE(opponent, MOVE_SCRATCH);
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CONFUSE_RAY, player);
@@ -142,7 +134,7 @@ SINGLE_BATTLE_TEST("Own Tempo cures confusion if it's obtained via Skill Swap")
         ABILITY_POPUP(opponent, ABILITY_OWN_TEMPO);
         MESSAGE("The opposing Lopmonx's Own Tempo cured its confusion problem!");
 >>>>>>> upstream/master
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
     }
 }
 
@@ -153,10 +145,10 @@ SINGLE_BATTLE_TEST("Own Tempo prevents confusion from items")
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PAGUMON) { Ability(ABILITY_OWN_TEMPO); Item(ITEM_BERSERK_GENE); };
     } WHEN {
-        TURN { MOVE(opponent, MOVE_TACKLE); }
+        TURN { MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
         ABILITY_POPUP(opponent, ABILITY_OWN_TEMPO);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
     }
 }

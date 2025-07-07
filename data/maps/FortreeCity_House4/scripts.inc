@@ -1,5 +1,3 @@
-.set LOCALID_ANGEMON, 3
-
 FortreeCity_House4_MapScripts::
 	.byte 0
 
@@ -16,9 +14,9 @@ FortreeCity_House4_EventScript_Boy::
 	closemessage
 	setflag FLAG_ANGEMON_SENT_ON_ERRAND
 	clearflag FLAG_HIDE_MOSSDEEP_CITY_HOUSE_2_ANGEMON
-	applymovement LOCALID_ANGEMON, FortreeCity_House4_Movement_AngemonExit
+	applymovement LOCALID_FORTREE_HOUSE_ANGEMON, FortreeCity_House4_Movement_AngemonExit
 	waitmovement 0
-	removeobject LOCALID_ANGEMON
+	removeobject LOCALID_FORTREE_HOUSE_ANGEMON
 	releaseall
 	end
 

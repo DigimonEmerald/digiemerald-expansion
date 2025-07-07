@@ -7,11 +7,7 @@ SINGLE_BATTLE_TEST("Cloud Nine/Air Lock prevent basic weather effects, but witho
     PARAMETRIZE { species = SPECIES_CHICCHIMON;  ability = ABILITY_CLOUD_NINE; }
     PARAMETRIZE { species = SPECIES_GEOGREYMON; ability = ABILITY_AIR_LOCK; }
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SANDSTORM].effect == EFFECT_SANDSTORM);
-<<<<<<< HEAD
-        PLAYER(SPECIES_CHICCHIMON) { Ability(ABILITY_CLOUD_NINE); }
-        OPPONENT(SPECIES_LOPMONX);
-=======
+        ASSUME(GetMoveEffect(MOVE_SANDSTORM) == EFFECT_SANDSTORM);
         PLAYER(species) { Ability(ability); }
         OPPONENT(SPECIES_LOPMONX);
 >>>>>>> upstream/master

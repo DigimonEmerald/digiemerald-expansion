@@ -1,7 +1,3 @@
-.set LOCALID_GESOMON, 2
-
-@ Note: LOCALID_BIRTH_ISLAND_EXTERIOR_ROCK is a local id for this map used elsewhere. It's defined in event_objects.h
-
 BirthIsland_Exterior_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, BirthIsland_Exterior_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, BirthIsland_Exterior_OnResume
@@ -39,7 +35,7 @@ BirthIsland_Exterior_OnResume:
 BirthIsland_Exterior_EventScript_TryRemoveGesomon::
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
-	removeobject LOCALID_GESOMON
+	removeobject LOCALID_BIRTH_ISLAND_GESOMON
 	return
 
 BirthIsland_Exterior_EventScript_Triangle::
@@ -72,19 +68,19 @@ BirthIsland_Exterior_EventScript_Complete::
 BirthIsland_Exterior_EventScript_Gesomon::
 	waitse
 	setfieldeffectargument 0, LOCALID_BIRTH_ISLAND_EXTERIOR_ROCK
-	setfieldeffectargument 1, MAP_NUM(BIRTH_ISLAND_EXTERIOR)
-	setfieldeffectargument 2, MAP_GROUP(BIRTH_ISLAND_EXTERIOR)
+	setfieldeffectargument 1, MAP_NUM(MAP_BIRTH_ISLAND_EXTERIOR)
+	setfieldeffectargument 2, MAP_GROUP(MAP_BIRTH_ISLAND_EXTERIOR)
 	dofieldeffect FLDEFF_DESTROY_GESOMON_ROCK
 	playbgm MUS_RG_ENCOUNTER_DEOXYS, FALSE
 	waitfieldeffect FLDEFF_DESTROY_GESOMON_ROCK
-	addobject LOCALID_GESOMON
-	applymovement LOCALID_GESOMON, BirthIsland_Exterior_Movement_GesomonApproach
+	addobject LOCALID_BIRTH_ISLAND_GESOMON
+	applymovement LOCALID_BIRTH_ISLAND_GESOMON, BirthIsland_Exterior_Movement_GesomonApproach
 	waitmovement 0
 	waitse
 	playmoncry SPECIES_GESOMON_NORMAL, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setvar VAR_LAST_TALKED, LOCALID_GESOMON
+	setvar VAR_LAST_TALKED, LOCALID_BIRTH_ISLAND_GESOMON
 	seteventmon SPECIES_GESOMON_NORMAL, 30
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle

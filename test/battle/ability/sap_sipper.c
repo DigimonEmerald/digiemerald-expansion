@@ -66,7 +66,7 @@ SINGLE_BATTLE_TEST("Sap Sipper does not increase Attack if already maxed")
 SINGLE_BATTLE_TEST("Sap Sipper blocks multi-hit grass type moves")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_BULLET_SEED].effect == EFFECT_MULTI_HIT);
+        ASSUME(GetMoveEffect(MOVE_BULLET_SEED) == EFFECT_MULTI_HIT);
         PLAYER(SPECIES_JAZAMON) { Ability(ABILITY_SAP_SIPPER); }
         OPPONENT(SPECIES_TANEMON) { Ability(ABILITY_SKILL_LINK); }
     } WHEN {

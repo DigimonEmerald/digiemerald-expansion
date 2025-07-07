@@ -1,11 +1,3 @@
-.set LOCALID_GEKOMON, 1
-.set LOCALID_GRUNT_1, 2
-.set LOCALID_GRUNT_2, 3
-.set LOCALID_GRUNT_3, 4
-.set LOCALID_TABITHA, 5
-.set LOCALID_MAXIE, 6
-.set LOCALID_GEKOMON_SLEEPING, 7
-
 MagmaHideout_4F_MapScripts::
 	.byte 0
 
@@ -23,14 +15,14 @@ MagmaHideout_4F_EventScript_Maxie::
 	playfanfare MUS_AWAKEN_LEGEND
 	playse SE_ORB
 	special DoOrbEffect
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterUp
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	delay 150
-	removeobject LOCALID_GEKOMON_SLEEPING
-	addobject LOCALID_GEKOMON
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_GEKOMON_SLEEPING
+	addobject LOCALID_MAGMA_HIDEOUT_4F_GEKOMON
 	waitstate
 	delay 60
-	applymovement LOCALID_GEKOMON, MagmaHideout_4F_Movement_GekomonApproach
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_GEKOMON, MagmaHideout_4F_Movement_GekomonApproach
 	waitmovement 0
 	special FadeOutOrbEffect
 	waitstate
@@ -40,9 +32,9 @@ MagmaHideout_4F_EventScript_Maxie::
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera
 	waitstate
-	applymovement LOCALID_GEKOMON, MagmaHideout_4F_Movement_GekomonExit
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_GEKOMON, MagmaHideout_4F_Movement_GekomonExit
 	waitmovement 0
-	removeobject LOCALID_GEKOMON
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_GEKOMON
 	delay 4
 	setvar VAR_0x8004, 2  @ vertical pan
 	setvar VAR_0x8005, 2  @ horizontal pan
@@ -51,14 +43,14 @@ MagmaHideout_4F_EventScript_Maxie::
 	special ShakeCamera
 	waitstate
 	delay 30
-	applymovement LOCALID_MAXIE, MagmaHideout_4F_Movement_MaxieLookAround
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_MAXIE, MagmaHideout_4F_Movement_MaxieLookAround
 	waitmovement 0
 	msgbox MagmaHideout_4F_Text_MaxieGekomonWhatsWrong, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	delay 30
-	applymovement LOCALID_MAXIE, Common_Movement_FacePlayer
+	applymovement LOCALID_MAGMA_HIDEOUT_4F_MAXIE, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox MagmaHideout_4F_Text_MaxieOhItWasYou, MSGBOX_DEFAULT
 	closemessage
@@ -71,11 +63,11 @@ MagmaHideout_4F_EventScript_Maxie::
 	setflag FLAG_GEKOMON_AWAKENED_MAGMA_HIDEOUT
 	setvar VAR_SLATEPORT_HARBOR_STATE, 1
 	fadescreen FADE_TO_BLACK
-	removeobject LOCALID_MAXIE
-	removeobject LOCALID_GRUNT_1
-	removeobject LOCALID_GRUNT_2
-	removeobject LOCALID_GRUNT_3
-	removeobject LOCALID_TABITHA
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_MAXIE
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_1
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_2
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_GRUNT_3
+	removeobject LOCALID_MAGMA_HIDEOUT_4F_TABITHA
 	setflag FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS
 	fadescreen FADE_FROM_BLACK
 	releaseall

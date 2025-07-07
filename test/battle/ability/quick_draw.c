@@ -13,14 +13,14 @@ SINGLE_BATTLE_TEST("Quick Draw has a 30% chance of going first")
         OPPONENT(SPECIES_LOPMONX) { Speed(100); }
 >>>>>>> upstream/master
     } WHEN {
-        TURN { MOVE(player, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_SCRATCH); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_QUICK_DRAW);
 <<<<<<< HEAD
         MESSAGE("Pickmon_silver used Tackle!");
         MESSAGE("Foe Lopmonx used Celebrate!");
 =======
-        MESSAGE("Pickmon_silver used Tackle!");
+        MESSAGE("Pickmon_silver used Scratch!");
         MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
     }
@@ -38,7 +38,7 @@ SINGLE_BATTLE_TEST("Quick Draw does not activate 70% of the time")
         OPPONENT(SPECIES_LOPMONX) { Speed(100); }
 >>>>>>> upstream/master
     } WHEN {
-        TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_TACKLE); }
+        TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_SCRATCH); }
     } SCENE {
         NOT ABILITY_POPUP(player, ABILITY_QUICK_DRAW);
 <<<<<<< HEAD
@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Quick Draw does not activate 70% of the time")
         MESSAGE("Pickmon_silver used Tackle!");
 =======
         MESSAGE("The opposing Lopmonx used Celebrate!");
-        MESSAGE("Pickmon_silver used Tackle!");
+        MESSAGE("Pickmon_silver used Scratch!");
 >>>>>>> upstream/master
     }
 }

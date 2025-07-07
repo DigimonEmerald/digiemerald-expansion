@@ -41,6 +41,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_FORTREE_HOUSE_ANGEMON",
       "graphics_id": "OBJ_EVENT_GFX_ANGEMON",
       "x": 2,
       "y": 3,

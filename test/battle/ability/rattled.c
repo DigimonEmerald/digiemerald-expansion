@@ -3,14 +3,14 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_FURY_CUTTER].type == TYPE_BUG);
-    ASSUME(!IS_MOVE_STATUS(MOVE_FURY_CUTTER));
-    ASSUME(gMovesInfo[MOVE_FEINT_ATTACK].type == TYPE_DARK);
-    ASSUME(!IS_MOVE_STATUS(MOVE_FEINT_ATTACK));
-    ASSUME(gMovesInfo[MOVE_SHADOW_PUNCH].type == TYPE_GHOST);
-    ASSUME(!IS_MOVE_STATUS(MOVE_SHADOW_PUNCH));
-    ASSUME(gMovesInfo[MOVE_TACKLE].type == TYPE_NORMAL);
-    ASSUME(!IS_MOVE_STATUS(MOVE_TACKLE));
+    ASSUME(GetMoveType(MOVE_FURY_CUTTER) == TYPE_BUG);
+    ASSUME(!IsBattleMoveStatus(MOVE_FURY_CUTTER));
+    ASSUME(GetMoveType(MOVE_FEINT_ATTACK) == TYPE_DARK);
+    ASSUME(!IsBattleMoveStatus(MOVE_FEINT_ATTACK));
+    ASSUME(GetMoveType(MOVE_SHADOW_PUNCH) == TYPE_GHOST);
+    ASSUME(!IsBattleMoveStatus(MOVE_SHADOW_PUNCH));
+    ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NORMAL);
+    ASSUME(!IsBattleMoveStatus(MOVE_SCRATCH));
 }
 
 SINGLE_BATTLE_TEST("Rattled boosts speed by 1 when hit by Bug, Dark or Ghost type move")
@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Rattled boosts speed by 1 when hit by Bug, Dark or Ghost typ
     PARAMETRIZE { move = MOVE_FURY_CUTTER; }
     PARAMETRIZE { move = MOVE_FEINT_ATTACK; }
     PARAMETRIZE { move = MOVE_SHADOW_PUNCH; }
-    PARAMETRIZE { move = MOVE_TACKLE; }
+    PARAMETRIZE { move = MOVE_SCRATCH; }
     GIVEN {
         PLAYER(SPECIES_LOPMONX) {Speed(42) ;}
         OPPONENT(SPECIES_JUNKMON) {Speed(40); Ability(ABILITY_RATTLED);}
@@ -29,7 +29,7 @@ SINGLE_BATTLE_TEST("Rattled boosts speed by 1 when hit by Bug, Dark or Ghost typ
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, player);
         HP_BAR(opponent);
-        if (move != MOVE_TACKLE) {
+        if (move != MOVE_SCRATCH) {
             ABILITY_POPUP(opponent, ABILITY_RATTLED);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
 <<<<<<< HEAD
@@ -44,7 +44,7 @@ SINGLE_BATTLE_TEST("Rattled boosts speed by 1 when hit by Bug, Dark or Ghost typ
         }
         MESSAGE("The opposing Junkmon used Celebrate!");
         // Junkmon is now faster
-        if (move != MOVE_TACKLE){
+        if (move != MOVE_SCRATCH){
             MESSAGE("The opposing Junkmon used Celebrate!");
 >>>>>>> upstream/master
             ANIMATION(ANIM_TYPE_MOVE, move, player);
@@ -97,8 +97,8 @@ SINGLE_BATTLE_TEST("Rattled boosts speed by 1 when affected by Intimidate")
 SINGLE_BATTLE_TEST("Rattled triggers correctly when hit by U-Turn") // Specific test here, because of #3124
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_U_TURN].effect == EFFECT_HIT_ESCAPE);
-        ASSUME(gMovesInfo[MOVE_U_TURN].type == TYPE_BUG);
+        ASSUME(GetMoveEffect(MOVE_U_TURN) == EFFECT_HIT_ESCAPE);
+        ASSUME(GetMoveType(MOVE_U_TURN) == TYPE_BUG);
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_EXVEEMON);
         OPPONENT(SPECIES_JUNKMON) {Ability(ABILITY_RATTLED); }

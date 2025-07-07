@@ -26,8 +26,6 @@ DOUBLE_BATTLE_TEST("Healer cures adjacent ally's status condition 30% of the tim
 
 DOUBLE_BATTLE_TEST("Healer cures status condition before burn or poison damage is dealt")
 {
-    KNOWN_FAILING; // According to Bulbapedia, Healer should trigger before status damage and Lopmonx should live
-    // Source: https://bulbapedia.bulbagarden.net/wiki/Healer_(Ability)#Effect
     u16 status;
     PARAMETRIZE { status = STATUS1_POISON; }
     PARAMETRIZE { status = STATUS1_BURN; }
@@ -42,10 +40,8 @@ DOUBLE_BATTLE_TEST("Healer cures status condition before burn or poison damage i
     } WHEN {
         TURN {}
     } SCENE {
-        NOT {
-            MESSAGE("The opposing Lopmonx fainted!");
-        }
-        MESSAGE("The opposing Bearmon's Healer cured Foe Lopmonx's problem!");
+        NOT MESSAGE("The opposing Lopmonx fainted!");
+        MESSAGE("The opposing Bearmon's Healer cured the opposing Lopmonx's problem!");
     }
 }
 

@@ -5,11 +5,11 @@ SINGLE_BATTLE_TEST("Stench has a 10% chance to flinch")
 {
     PASSES_RANDOMLY(1, 10, RNG_STENCH);
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_TACKLE].power > 0);
+        ASSUME(GetMovePower(MOVE_SCRATCH) > 0);
         PLAYER(SPECIES_SAKUTTOMON) { Ability(ABILITY_STENCH); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
-        TURN { MOVE(player, MOVE_TACKLE); MOVE(opponent, MOVE_CELEBRATE); }
+        TURN { MOVE(player, MOVE_SCRATCH); MOVE(opponent, MOVE_CELEBRATE); }
     } SCENE {
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx flinched!");
@@ -24,12 +24,12 @@ SINGLE_BATTLE_TEST("Stench does not stack with King's Rock")
     PASSES_RANDOMLY(1, 10, RNG_STENCH);
     GIVEN {
         ASSUME(gItemsInfo[ITEM_KINGS_ROCK].holdEffect == HOLD_EFFECT_FLINCH);
-        ASSUME(gMovesInfo[MOVE_TACKLE].power > 0);
+        ASSUME(GetMovePower(MOVE_SCRATCH) > 0);
 
         PLAYER(SPECIES_SAKUTTOMON) { Ability(ABILITY_STENCH); Item(ITEM_KINGS_ROCK); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
-        TURN { MOVE(player, MOVE_TACKLE); MOVE(opponent, MOVE_CELEBRATE); }
+        TURN { MOVE(player, MOVE_SCRATCH); MOVE(opponent, MOVE_CELEBRATE); }
     } SCENE {
 <<<<<<< HEAD
         MESSAGE("Foe Lopmonx flinched!");
@@ -42,7 +42,7 @@ SINGLE_BATTLE_TEST("Stench does not stack with King's Rock")
 DOUBLE_BATTLE_TEST("Stench only triggers if target takes damage")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_TACKLE].power > 0);
+        ASSUME(GetMovePower(MOVE_SCRATCH) > 0);
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_FAKE_OUT, MOVE_EFFECT_FLINCH, 100));
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_EXVEEMON);
@@ -51,12 +51,12 @@ DOUBLE_BATTLE_TEST("Stench only triggers if target takes damage")
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_FAKE_OUT, target: opponentLeft);
-            MOVE(opponentLeft, MOVE_TACKLE, WITH_RNG(RNG_STENCH, TRUE),  target: playerRight);
-            MOVE(playerRight, MOVE_TACKLE, target: opponentRight);
+            MOVE(opponentLeft, MOVE_SCRATCH, WITH_RNG(RNG_STENCH, TRUE),  target: playerRight);
+            MOVE(playerRight, MOVE_SCRATCH, target: opponentRight);
         }
         TURN {
             MOVE(opponentLeft, MOVE_SCARY_FACE, WITH_RNG(RNG_STENCH, TRUE),  target: playerRight);
-            MOVE(playerRight, MOVE_TACKLE, target: opponentRight);
+            MOVE(playerRight, MOVE_SCRATCH, target: opponentRight);
         }
     } SCENE {
 <<<<<<< HEAD
@@ -70,7 +70,7 @@ DOUBLE_BATTLE_TEST("Stench only triggers if target takes damage")
 DOUBLE_BATTLE_TEST("Stench doesn't trigger if partner uses a move")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_TACKLE].power > 0);
+        ASSUME(GetMovePower(MOVE_SCRATCH) > 0);
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_FAKE_OUT, MOVE_EFFECT_FLINCH, 100));
         PLAYER(SPECIES_LOPMONX) { Speed(20); }
         PLAYER(SPECIES_EXVEEMON) { Speed(10); }
@@ -79,8 +79,8 @@ DOUBLE_BATTLE_TEST("Stench doesn't trigger if partner uses a move")
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_FAKE_OUT, target: opponentLeft);
-            MOVE(opponentRight, MOVE_TACKLE, target: playerRight);
-            MOVE(playerRight, MOVE_TACKLE, target: opponentRight);
+            MOVE(opponentRight, MOVE_SCRATCH, target: playerRight);
+            MOVE(playerRight, MOVE_SCRATCH, target: opponentRight);
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FAKE_OUT, playerLeft);
@@ -90,10 +90,10 @@ DOUBLE_BATTLE_TEST("Stench doesn't trigger if partner uses a move")
         NOT MESSAGE("Exveemon flinched!");
 =======
         MESSAGE("The opposing Sakuttomon flinched and couldn't move!");
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentRight);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponentRight);
         NOT MESSAGE("Exveemon flinched and couldn't move!");
 >>>>>>> upstream/master
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerRight);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, playerRight);
     }
 }
 

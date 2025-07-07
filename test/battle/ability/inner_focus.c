@@ -12,8 +12,8 @@ SINGLE_BATTLE_TEST("Inner Focus prevents intimidate")
         PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); };
         OPPONENT(SPECIES_ICEBOTAMON) { Ability(ABILITY_INNER_FOCUS); };
     } WHEN {
-        TURN { MOVE(opponent, MOVE_TACKLE); }
-        TURN { SWITCH(player, 1); MOVE(opponent, MOVE_TACKLE); }
+        TURN { MOVE(opponent, MOVE_SCRATCH); }
+        TURN { SWITCH(player, 1); MOVE(opponent, MOVE_SCRATCH); }
 
     } SCENE {
         HP_BAR(player, captureDamage: &turnOneHit);
@@ -38,7 +38,7 @@ SINGLE_BATTLE_TEST("Inner Focus prevents flinching")
         OPPONENT(SPECIES_ICEBOTAMON) { Ability(ABILITY_INNER_FOCUS); };
     } WHEN {
         TURN { MOVE(player, MOVE_FAKE_OUT);
-               MOVE(opponent, MOVE_TACKLE);
+               MOVE(opponent, MOVE_SCRATCH);
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FAKE_OUT, player);
@@ -47,11 +47,11 @@ SINGLE_BATTLE_TEST("Inner Focus prevents flinching")
 =======
         NONE_OF { MESSAGE("The opposing Icebotamon flinched and couldn't move!"); }
 >>>>>>> upstream/master
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
     }
 }
 
-SINGLE_BATTLE_TEST("Inner Focus is ignored by Mold Breaker")
+SINGLE_BATTLE_TEST("Mold Breaker ignores Inner Focus")
 {
     GIVEN {
         PLAYER(SPECIES_TYUTYUMON) { Ability(ABILITY_MOLD_BREAKER); };

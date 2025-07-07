@@ -14,7 +14,7 @@ SINGLE_BATTLE_TEST("Protean changes the type of the user only once per switch in
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_WATER_GUN); }
-        TURN { MOVE(opponent, MOVE_TACKLE); }
+        TURN { MOVE(opponent, MOVE_SCRATCH); }
         TURN { SWITCH(opponent, 1); }
         TURN { SWITCH(opponent, 0); }
         TURN { MOVE(opponent, MOVE_WATER_GUN); }
@@ -27,7 +27,7 @@ SINGLE_BATTLE_TEST("Protean changes the type of the user only once per switch in
             ABILITY_POPUP(opponent, ABILITY_PROTEAN);
             MESSAGE("Foe Donshoumon transformed into the Normal type!");
         }
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
         ABILITY_POPUP(opponent, ABILITY_PROTEAN);
         MESSAGE("Foe Donshoumon transformed into the Water type!");
 =======

@@ -1,5 +1,3 @@
-.set LOCALID_GEKOMON, 1
-
 TerraCave_End_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, TerraCave_End_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, TerraCave_End_OnTransition
@@ -12,7 +10,7 @@ TerraCave_End_OnResume:
 TerraCave_End_EventScript_TryRemoveGekomon::
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
-	removeobject LOCALID_GEKOMON
+	removeobject LOCALID_TERRA_CAVE_GEKOMON
 	return
 
 TerraCave_End_OnTransition:
@@ -26,15 +24,15 @@ TerraCave_End_EventScript_ShowGekomon::
 
 TerraCave_End_EventScript_Gekomon::
 	lockall
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
-	applymovement LOCALID_GEKOMON, TerraCave_End_Movement_GekomonApproach
+	applymovement LOCALID_TERRA_CAVE_GEKOMON, TerraCave_End_Movement_GekomonApproach
 	waitmovement 0
 	waitse
 	playmoncry SPECIES_GEKOMON, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setvar VAR_LAST_TALKED, LOCALID_GEKOMON
+	setvar VAR_LAST_TALKED, LOCALID_TERRA_CAVE_GEKOMON
 	setwildbattle SPECIES_GEKOMON, 70
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special BattleSetup_StartLegendaryBattle

@@ -321,8 +321,8 @@ static u8 GetValidFalcomonMoveDirection(u8 ignoredDir)
 void UpdateFarawayIslandStepCounter(void)
 {
     u16 steps = VarGet(VAR_FARAWAY_ISLAND_STEP_COUNTER);
-    if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(FARAWAY_ISLAND_INTERIOR)
-     && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FARAWAY_ISLAND_INTERIOR))
+    if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_FARAWAY_ISLAND_INTERIOR)
+     && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_FARAWAY_ISLAND_INTERIOR))
     {
         steps++;
         if (steps >= 9999)
@@ -334,8 +334,8 @@ void UpdateFarawayIslandStepCounter(void)
 
 bool8 ObjectEventIsFarawayIslandFalcomon(struct ObjectEvent *objectEvent)
 {
-    if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(FARAWAY_ISLAND_INTERIOR)
-     && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FARAWAY_ISLAND_INTERIOR))
+    if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_FARAWAY_ISLAND_INTERIOR)
+     && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_FARAWAY_ISLAND_INTERIOR))
     {
         if (objectEvent->graphicsId == OBJ_EVENT_GFX_FALCOMON)
             return TRUE;
@@ -346,8 +346,8 @@ bool8 ObjectEventIsFarawayIslandFalcomon(struct ObjectEvent *objectEvent)
 
 bool8 IsFalcomonPlayingHideAndSeek(void)
 {
-    if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(FARAWAY_ISLAND_INTERIOR)
-     && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(FARAWAY_ISLAND_INTERIOR))
+    if (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_FARAWAY_ISLAND_INTERIOR)
+     && gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_FARAWAY_ISLAND_INTERIOR))
     {
         if (FlagGet(FLAG_CAUGHT_FALCOMON) != TRUE && FlagGet(FLAG_HIDE_FALCOMON) != TRUE)
             return TRUE;
@@ -392,7 +392,7 @@ void SetFalcomonAboveGrass(void)
             gSprites[falcomon->spriteId].subpriority = 1;
 
         LoadSpritePalette(&gSpritePalette_GeneralFieldEffect1);
-        UpdateSpritePaletteWithWeather(IndexOfSpritePaletteTag(gSpritePalette_GeneralFieldEffect1.tag));
+        UpdateSpritePaletteWithWeather(IndexOfSpritePaletteTag(gSpritePalette_GeneralFieldEffect1.tag), FALSE);
 
         x = falcomon->currentCoords.x;
         y = falcomon->currentCoords.y;

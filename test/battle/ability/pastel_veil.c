@@ -1,6 +1,12 @@
 #include "global.h"
 #include "test/battle.h"
 
+ASSUMPTIONS
+{
+    ASSUME(GetMoveEffect(MOVE_TOXIC) == EFFECT_NON_VOLATILE_STATUS);
+    ASSUME(GetMoveNonVolatileStatus(MOVE_TOXIC) == MOVE_EFFECT_TOXIC);
+}
+
 SINGLE_BATTLE_TEST("Pastel Veil prevents Poison Sting poison")
 {
     GIVEN {
@@ -45,9 +51,7 @@ DOUBLE_BATTLE_TEST("Pastel Veil prevents Poison Sting poison on partner")
 
 SINGLE_BATTLE_TEST("Pastel Veil immediately cures Mold Breaker poison")
 {
-    KNOWN_FAILING;
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_TOXIC].effect == EFFECT_TOXIC);
 <<<<<<< HEAD
         PLAYER(SPECIES_TYUTYUMON) { Ability(ABILITY_MOLD_BREAKER); }
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
@@ -56,7 +60,7 @@ SINGLE_BATTLE_TEST("Pastel Veil immediately cures Mold Breaker poison")
         OPPONENT(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
 >>>>>>> upstream/master
     } WHEN {
-        TURN { MOVE(player, MOVE_TOXIC); MOVE(opponent, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_TOXIC); MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC, player);
         STATUS_ICON(opponent, badPoison: TRUE);
@@ -67,14 +71,13 @@ SINGLE_BATTLE_TEST("Pastel Veil immediately cures Mold Breaker poison")
         MESSAGE("The opposing Negamon's Pastel Veil cured its poison problem!");
 >>>>>>> upstream/master
         STATUS_ICON(opponent, none: TRUE);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
     }
 }
 
 DOUBLE_BATTLE_TEST("Pastel Veil does not cure Mold Breaker poison on partner")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_TOXIC].effect == EFFECT_TOXIC);
 <<<<<<< HEAD
         PLAYER(SPECIES_TYUTYUMON) { Ability(ABILITY_MOLD_BREAKER); }
         PLAYER(SPECIES_EXVEEMON);
@@ -98,7 +101,6 @@ DOUBLE_BATTLE_TEST("Pastel Veil does not cure Mold Breaker poison on partner")
 SINGLE_BATTLE_TEST("Pastel Veil prevents Toxic bad poison")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_TOXIC].effect == EFFECT_TOXIC);
 <<<<<<< HEAD
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_NEGAMON_GALARIAN) { Ability(ABILITY_PASTEL_VEIL); }
@@ -120,10 +122,9 @@ SINGLE_BATTLE_TEST("Pastel Veil prevents Toxic bad poison")
     }
 }
 
-DOUBLE_BATTLE_TEST("Pastel Veil prevents Toxic bad poison on partner")
+DOUBLE_BATTLE_TEST("Pastel Veil prevents Toxic bad poison on partner - right target")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_TOXIC].effect == EFFECT_TOXIC);
 <<<<<<< HEAD
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_EXVEEMON);
@@ -149,10 +150,27 @@ DOUBLE_BATTLE_TEST("Pastel Veil prevents Toxic bad poison on partner")
     }
 }
 
+DOUBLE_BATTLE_TEST("Pastel Veil prevents Toxic bad poison on partner - left target")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_PONYTA_GALAR) { Ability(ABILITY_PASTEL_VEIL); }
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_TOXIC, target: opponentLeft); }
+    } SCENE {
+        MESSAGE("Wobbuffet used Toxic!");
+        ABILITY_POPUP(opponentRight, ABILITY_PASTEL_VEIL);
+        MESSAGE("The opposing Wynaut is protected by a pastel veil!");
+        NOT STATUS_ICON(opponentLeft, badPoison: TRUE);
+    }
+}
+
 SINGLE_BATTLE_TEST("Pastel Veil prevents Toxic Spikes poison")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_TOXIC_SPIKES].effect == EFFECT_TOXIC_SPIKES);
+        ASSUME(GetMoveEffect(MOVE_TOXIC_SPIKES) == EFFECT_TOXIC_SPIKES);
 <<<<<<< HEAD
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
@@ -174,7 +192,7 @@ SINGLE_BATTLE_TEST("Pastel Veil prevents Toxic Spikes poison")
 DOUBLE_BATTLE_TEST("Pastel Veil prevents Toxic Spikes poison on partner")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_TOXIC_SPIKES].effect == EFFECT_TOXIC_SPIKES);
+        ASSUME(GetMoveEffect(MOVE_TOXIC_SPIKES) == EFFECT_TOXIC_SPIKES);
 <<<<<<< HEAD
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_EXVEEMON);

@@ -41,6 +41,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_MOSSDEEP_HOUSE_ANGEMON",
       "graphics_id": "OBJ_EVENT_GFX_ANGEMON",
       "x": 4,
       "y": 5,

@@ -3,8 +3,8 @@
 
 ASSUMPTIONS
 {
-    ASSUME(!IS_MOVE_STATUS(MOVE_WATER_GUN));
-    ASSUME(gMovesInfo[MOVE_WATER_GUN].type == TYPE_WATER);
+    ASSUME(!IsBattleMoveStatus(MOVE_WATER_GUN));
+    ASSUME(GetMoveType(MOVE_WATER_GUN) == TYPE_WATER);
 }
 
 SINGLE_BATTLE_TEST("Desolate Land blocks damaging Water-type moves")
@@ -40,9 +40,9 @@ SINGLE_BATTLE_TEST("Desolate Land blocks damaging Water-type moves")
 DOUBLE_BATTLE_TEST("Desolate Land blocks damaging Water-type moves and prints the message only once with moves hitting multiple targets")
 {
     GIVEN {
-        ASSUME(!IS_MOVE_STATUS(MOVE_SURF));
-        ASSUME(gMovesInfo[MOVE_SURF].type == TYPE_WATER);
-        ASSUME(gMovesInfo[MOVE_SURF].target == MOVE_TARGET_FOES_AND_ALLY);
+        ASSUME(!IsBattleMoveStatus(MOVE_SURF));
+        ASSUME(GetMoveType(MOVE_SURF) == TYPE_WATER);
+        ASSUME(GetMoveTarget(MOVE_SURF) == MOVE_TARGET_FOES_AND_ALLY);
         PLAYER(SPECIES_GEKOMON) {Item(ITEM_RED_ORB); {Speed(5);}}
         PLAYER(SPECIES_LOPMONX) {Speed(5);}
         OPPONENT(SPECIES_LOPMONX) {Speed(10);}
@@ -78,7 +78,24 @@ SINGLE_BATTLE_TEST("Desolate Land does not block a move if pokemon is asleep and
         MESSAGE("Foe Lopmonx is fast asleep.");
 =======
         NOT MESSAGE("The Water-type attack evaporated in the extremely harsh sunlight!");
-        MESSAGE("The opposing Lopmonx is fast asleep.");
->>>>>>> upstream/master
+        MESSAGE("The opposing Wobbuffet is fast asleep.");
+    }
+}
+
+SINGLE_BATTLE_TEST("Desolate Land will not create a softlock when move in semi invulnerable position is blocked")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_GROUDON) { Item(ITEM_RED_ORB); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_DIVE); }
+        TURN { SWITCH(opponent, 1); SKIP_TURN(player); }
+        TURN { MOVE(player, MOVE_CELEBRATE); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_DIVE, player);
+        ABILITY_POPUP(opponent, ABILITY_DESOLATE_LAND);
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_DIVE, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, player);
     }
 }

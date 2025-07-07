@@ -20,9 +20,9 @@ SINGLE_BATTLE_TEST("Innards Out deal dmg on fainting equal to the amount of dmg 
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX) { HP(70); SpAttack(1000); }
         OPPONENT(SPECIES_LOPMONX);
-        ASSUME(!IS_MOVE_STATUS(MOVE_PSYCHIC));
+        ASSUME(!IsBattleMoveStatus(MOVE_PSYCHIC));
 >>>>>>> upstream/master
-        ASSUME(gMovesInfo[MOVE_PSYCHIC].category == DAMAGE_CATEGORY_SPECIAL);
+        ASSUME(GetMoveCategory(MOVE_PSYCHIC) == DAMAGE_CATEGORY_SPECIAL);
     } WHEN {
         TURN { MOVE(opponent, MOVE_PSYCHIC); SEND_OUT(player, 1); if (hp == 100) { SEND_OUT(opponent, 1); } }
     } SCENE {
@@ -48,9 +48,9 @@ SINGLE_BATTLE_TEST("Innards Out does not trigger after Gastro Acid has been used
 =======
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        ASSUME(!IS_MOVE_STATUS(MOVE_PSYCHIC));
+        ASSUME(!IsBattleMoveStatus(MOVE_PSYCHIC));
 >>>>>>> upstream/master
-        ASSUME(gMovesInfo[MOVE_GASTRO_ACID].effect == EFFECT_GASTRO_ACID);
+        ASSUME(GetMoveEffect(MOVE_GASTRO_ACID) == EFFECT_GASTRO_ACID);
     } WHEN {
         TURN { MOVE(opponent, MOVE_GASTRO_ACID); }
         TURN { MOVE(opponent, MOVE_PSYCHIC); SEND_OUT(player, 1); }
@@ -86,7 +86,7 @@ SINGLE_BATTLE_TEST("Innards Out does not damage Magic Guard Pokemon")
 =======
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_PYONMON) { Ability(ABILITY_MAGIC_GUARD); }
-        ASSUME(!IS_MOVE_STATUS(MOVE_PSYCHIC));
+        ASSUME(!IsBattleMoveStatus(MOVE_PSYCHIC));
     } WHEN {
         TURN { MOVE(opponent, MOVE_PSYCHIC); SEND_OUT(player, 1); }
     } SCENE {
@@ -101,7 +101,7 @@ SINGLE_BATTLE_TEST("Innards Out does not damage Magic Guard Pokemon")
 SINGLE_BATTLE_TEST("Innards Out uses correct damage amount for Future Sight")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_FUTURE_SIGHT].effect == EFFECT_FUTURE_SIGHT);
+        ASSUME(GetMoveEffect(MOVE_FUTURE_SIGHT) == EFFECT_FUTURE_SIGHT);
         PLAYER(SPECIES_PYUKUMUKU) { HP(1); Ability(ABILITY_INNARDS_OUT); }
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_EXVEEMON);
@@ -121,7 +121,7 @@ SINGLE_BATTLE_TEST("Innards Out uses correct damage amount for Future Sight")
 SINGLE_BATTLE_TEST("Innards Out doesn't trigger if Future Sight user is not on field")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_FUTURE_SIGHT].effect == EFFECT_FUTURE_SIGHT);
+        ASSUME(GetMoveEffect(MOVE_FUTURE_SIGHT) == EFFECT_FUTURE_SIGHT);
         PLAYER(SPECIES_PYUKUMUKU) { HP(1); Ability(ABILITY_INNARDS_OUT); }
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
@@ -144,7 +144,7 @@ SINGLE_BATTLE_TEST("Innards Out doesn't trigger if Future Sight user is not on f
 SINGLE_BATTLE_TEST("Innards Out triggers if Future Sight user is back on the field")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_FUTURE_SIGHT].effect == EFFECT_FUTURE_SIGHT);
+        ASSUME(GetMoveEffect(MOVE_FUTURE_SIGHT) == EFFECT_FUTURE_SIGHT);
         PLAYER(SPECIES_PYUKUMUKU) { HP(1); Ability(ABILITY_INNARDS_OUT); }
         OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_EXVEEMON);
