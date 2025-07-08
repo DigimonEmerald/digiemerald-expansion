@@ -21082,7 +21082,7 @@ static const u16 sD_meramon_cmon_digimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSerperiorTeachableLearnset[] = {
+static const u16 sD_metalgreymonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,

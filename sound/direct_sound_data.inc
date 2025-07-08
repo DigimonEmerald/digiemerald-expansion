@@ -3338,8 +3338,8 @@ Cry_D_meramon_cmon_digimon::
 	.incbin "sound/direct_sound_samples/cries/d_meramon_cmon_digimon.bin"
 
 	.align 2
-Cry_Serperior::
-	.incbin "sound/direct_sound_samples/cries/serperior.bin"
+Cry_D_metalgreymon::
+	.incbin "sound/direct_sound_samples/cries/d_metalgreymon.bin"
 .endif @ P_FAMILY_D_DEVIMON
 
 .if P_FAMILY_TEPIG == TRUE

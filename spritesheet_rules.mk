@@ -2739,7 +2739,7 @@ $(POKEMONGFXDIR)/d_devimon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/d_meramon_cmon_digimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/serperior/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/d_metalgreymon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/tepig/overworld.4bpp: %.4bpp: %.png

@@ -6266,7 +6266,7 @@ static const union AnimCmd sAnim_D_meramon_cmon_digimon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Serperior_1[] =
+static const union AnimCmd sAnim_D_metalgreymon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -11605,7 +11605,7 @@ SINGLE_ANIMATION(D_airdramon);
 #if P_FAMILY_D_DEVIMON
 SINGLE_ANIMATION(D_devimon);
 SINGLE_ANIMATION(D_meramon_cmon_digimon);
-SINGLE_ANIMATION(Serperior);
+SINGLE_ANIMATION(D_metalgreymon);
 #endif //P_FAMILY_D_DEVIMON
 #if P_FAMILY_TEPIG
 SINGLE_ANIMATION(Tepig);

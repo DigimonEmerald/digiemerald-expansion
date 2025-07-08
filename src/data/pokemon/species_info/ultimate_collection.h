@@ -220,44 +220,45 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sD_meramon_cmon_digimonLevelUpLearnset,
         .teachableLearnset = sD_meramon_cmon_digimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SERPERIOR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_D_METALGREYMON}),
     },
 
-    [SPECIES_SERPERIOR] =
+    [SPECIES_D_METALGREYMON] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 75,
-        .baseDefense   = 95,
-        .baseSpeed     = 113,
-        .baseSpAttack  = 75,
-        .baseSpDefense = 95,
-        .types = MON_TYPES(TYPE_GRASS),
+        .baseHP        = 115,
+        .baseAttack    = 85,
+        .baseDefense   = 90,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_DARK, TYPE_DRAGON),
+        .attribute = TYPE_FREE,
         .catchRate = 95,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 264 : 238,
+        .expYield = 200,
         .evYield_Speed = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_CONTRARY },
-        .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Serperior"),
-        .cryId = CRY_SERPERIOR,
-        .natDexNum = NATIONAL_DEX_SERPERIOR,
-        .categoryName = _("Regal"),
-        .height = 33,
-        .weight = 630,
+        .abilities = { ABILITY_POWER_OF_ALCHEMY, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("D-MtlGrymon"),
+        .cryId = CRY_D_METALGREYMON,
+        .natDexNum = NATIONAL_DEX_D_METALGREYMON,
+        .categoryName = _("Death"),
+        .height = 71,
+        .weight = 1331,
         .description = COMPOUND_STRING(
-            "They raise their heads to intimidate foes,\n"
-            "but only give it their all when fighting\n"
-            "powerful opponents who are not fazed\n"
-            "by the glare from its noble eyes."),
+            "Death Metal Greymon is the combined\n"
+            "form of Deathmon with Greymon's data\n"
+            "It gains the ability of Death Metal\n"
+            "Greymon but the nature of Deathmon."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 405,
         .trainerOffset = 8,
-        .frontPic = gMonFrontPic_Serperior,
+        .frontPic = gMonFrontPic_D_metalgreymon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
@@ -268,28 +269,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
-        .backPic = gMonBackPic_Serperior,
+        .backPic = gMonBackPic_D_metalgreymon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 1,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Serperior,
-        .shinyPalette = gMonShinyPalette_Serperior,
-        .iconSprite = gMonIcon_Serperior,
+        .palette = gMonPalette_D_metalgreymon,
+        .shinyPalette = gMonShinyPalette_D_metalgreymon,
+        .iconSprite = gMonIcon_D_metalgreymon,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 8, SHADOW_SIZE_XL_BATTLE_ONLY)
-        FOOTPRINT(Serperior)
+        FOOTPRINT(D_metalgreymon)
         OVERWORLD(
-            sPicTable_Serperior,
+            sPicTable_D_metalgreymon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Serperior,
-            gShinyOverworldPalette_Serperior
+            gOverworldPalette_D_metalgreymon,
+            gShinyOverworldPalette_D_metalgreymon
         )
-        .levelUpLearnset = sSerperiorLevelUpLearnset,
-        .teachableLearnset = sSerperiorTeachableLearnset,
+        .levelUpLearnset = sD_metalgreymonLevelUpLearnset,
+        .teachableLearnset = sD_metalgreymonTeachableLearnset,
     },
 #endif //P_FAMILY_D_DEVIMON
 

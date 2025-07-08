@@ -514,7 +514,7 @@
 #define SPECIES_D_AIRDRAMON                                 494
 #define SPECIES_D_DEVIMON                                   495
 #define SPECIES_D_MERAMON_CMON_DIGIMON                                 496
-#define SPECIES_SERPERIOR                               497
+#define SPECIES_D_METALGREYMON                               497
 #define SPECIES_TEPIG                                   498
 #define SPECIES_PIGNITE                                 499
 #define SPECIES_EMBOAR                                  500
