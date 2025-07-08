@@ -21017,8 +21017,8 @@ static const u16 sD_airdramonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_D_AIRDRAMON
 
-#if P_FAMILY_SNIVY
-static const u16 sSnivyTeachableLearnset[] = {
+#if P_FAMILY_D_DEVIMON
+static const u16 sD_devimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
@@ -21117,7 +21117,7 @@ static const u16 sSerperiorTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SNIVY
+#endif //P_FAMILY_D_DEVIMON
 
 #if P_FAMILY_TEPIG
 static const u16 sTepigTeachableLearnset[] = {

@@ -536,8 +536,8 @@
 #define P_FAMILY_ARCEUS                  TRUE
 #undef P_FAMILY_D_AIRDRAMON
 #define P_FAMILY_D_AIRDRAMON                 TRUE
-#undef P_FAMILY_SNIVY
-#define P_FAMILY_SNIVY                   TRUE
+#undef P_FAMILY_D_DEVIMON
+#define P_FAMILY_D_DEVIMON                   TRUE
 #undef P_FAMILY_TEPIG
 #define P_FAMILY_TEPIG                   TRUE
 #undef P_FAMILY_OSHAWOTT

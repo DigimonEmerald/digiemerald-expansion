@@ -3693,9 +3693,9 @@ static const struct SpriteFrameImage sPicTable_D_airdramon[] = {
 };
 #endif //P_FAMILY_D_AIRDRAMON
 
-#if P_FAMILY_SNIVY
-static const struct SpriteFrameImage sPicTable_Snivy[] = {
-    overworld_ascending_frames(gObjectEventPic_Snivy, 4, 4),
+#if P_FAMILY_D_DEVIMON
+static const struct SpriteFrameImage sPicTable_D_devimon[] = {
+    overworld_ascending_frames(gObjectEventPic_D_devimon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Servine[] = {
     overworld_ascending_frames(gObjectEventPic_Servine, 4, 4),
@@ -3703,7 +3703,7 @@ static const struct SpriteFrameImage sPicTable_Servine[] = {
 static const struct SpriteFrameImage sPicTable_Serperior[] = {
     overworld_ascending_frames(gObjectEventPic_Serperior, 4, 4),
 };
-#endif //P_FAMILY_SNIVY
+#endif //P_FAMILY_D_DEVIMON
 
 #if P_FAMILY_TEPIG
 static const struct SpriteFrameImage sPicTable_Tepig[] = {

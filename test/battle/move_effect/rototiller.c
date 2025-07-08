@@ -10,10 +10,10 @@ DOUBLE_BATTLE_TEST("Rototiller boosts Attack and Special Attack of all Grass typ
 {
     GIVEN {
         ASSUME(gSpeciesInfo[SPECIES_BETAMON].types[0] == TYPE_GRASS);
-        ASSUME(gSpeciesInfo[SPECIES_SNIVY].types[0] == TYPE_GRASS);
+        ASSUME(gSpeciesInfo[SPECIES_D_DEVIMON].types[0] == TYPE_GRASS);
         PLAYER(SPECIES_BETAMON);
         PLAYER(SPECIES_LOPMON_X);
-        OPPONENT(SPECIES_SNIVY);
+        OPPONENT(SPECIES_D_DEVIMON);
         OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(playerRight, MOVE_ROTOTILLER); MOVE(playerLeft, MOVE_CELEBRATE); MOVE(opponentLeft, MOVE_CELEBRATE); MOVE(opponentRight, MOVE_CELEBRATE); }

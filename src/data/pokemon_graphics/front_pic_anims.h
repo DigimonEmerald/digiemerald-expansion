@@ -6245,8 +6245,8 @@ static const union AnimCmd sAnim_D_airdramon_1[] =
 };
 #endif //P_FAMILY_D_AIRDRAMON
 
-#if P_FAMILY_SNIVY
-static const union AnimCmd sAnim_Snivy_1[] =
+#if P_FAMILY_D_DEVIMON
+static const union AnimCmd sAnim_D_devimon_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 36),
@@ -6275,7 +6275,7 @@ static const union AnimCmd sAnim_Serperior_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SNIVY
+#endif //P_FAMILY_D_DEVIMON
 
 #if P_FAMILY_TEPIG
 static const union AnimCmd sAnim_Tepig_1[] =
@@ -11602,11 +11602,11 @@ SINGLE_ANIMATION(Arceus);
 #if P_FAMILY_D_AIRDRAMON
 SINGLE_ANIMATION(D_airdramon);
 #endif //P_FAMILY_D_AIRDRAMON
-#if P_FAMILY_SNIVY
-SINGLE_ANIMATION(Snivy);
+#if P_FAMILY_D_DEVIMON
+SINGLE_ANIMATION(D_devimon);
 SINGLE_ANIMATION(Servine);
 SINGLE_ANIMATION(Serperior);
-#endif //P_FAMILY_SNIVY
+#endif //P_FAMILY_D_DEVIMON
 #if P_FAMILY_TEPIG
 SINGLE_ANIMATION(Tepig);
 SINGLE_ANIMATION(Pignite);

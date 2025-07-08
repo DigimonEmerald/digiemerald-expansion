@@ -3905,8 +3905,8 @@ static const u16 sSnoverEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_SNOVER
 
-#if P_FAMILY_SNIVY
-static const u16 sSnivyEggMoveLearnset[] = {
+#if P_FAMILY_D_DEVIMON
+static const u16 sD_devimonEggMoveLearnset[] = {
     MOVE_CAPTIVATE,
     MOVE_NATURAL_GIFT,
     MOVE_GLARE,
@@ -3920,7 +3920,7 @@ static const u16 sSnivyEggMoveLearnset[] = {
     MOVE_GRASSY_TERRAIN,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SNIVY
+#endif //P_FAMILY_D_DEVIMON
 
 #if P_FAMILY_TEPIG
 static const u16 sTepigEggMoveLearnset[] = {

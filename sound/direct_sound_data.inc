@@ -3328,10 +3328,10 @@ Cry_D_airdramon::
 	.incbin "sound/direct_sound_samples/cries/d_airdramon.bin"
 .endif @ P_FAMILY_D_AIRDRAMON
 
-.if P_FAMILY_SNIVY == TRUE
+.if P_FAMILY_D_DEVIMON == TRUE
 	.align 2
-Cry_Snivy::
-	.incbin "sound/direct_sound_samples/cries/snivy.bin"
+Cry_D_devimon::
+	.incbin "sound/direct_sound_samples/cries/d_devimon.bin"
 
 	.align 2
 Cry_Servine::
@@ -3340,7 +3340,7 @@ Cry_Servine::
 	.align 2
 Cry_Serperior::
 	.incbin "sound/direct_sound_samples/cries/serperior.bin"
-.endif @ P_FAMILY_SNIVY
+.endif @ P_FAMILY_D_DEVIMON
 
 .if P_FAMILY_TEPIG == TRUE
 	.align 2

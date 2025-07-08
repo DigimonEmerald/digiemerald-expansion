@@ -11,7 +11,7 @@ AI_SINGLE_BATTLE_TEST("AI will not try to lower opposing stats if target is prot
     PARAMETRIZE { ability = ABILITY_BIG_PECKS;    species = SPECIES_KETOMON;  move = MOVE_SCREECH; }
     PARAMETRIZE { ability = ABILITY_ILLUMINATE;   species = SPECIES_BLKGUILMON;  move = MOVE_SAND_ATTACK; }
     PARAMETRIZE { ability = ABILITY_KEEN_EYE;     species = SPECIES_KETOMON;  move = MOVE_SAND_ATTACK; }
-    PARAMETRIZE { ability = ABILITY_CONTRARY;     species = SPECIES_SNIVY;   move = MOVE_NOBLE_ROAR; }
+    PARAMETRIZE { ability = ABILITY_CONTRARY;     species = SPECIES_D_DEVIMON;   move = MOVE_NOBLE_ROAR; }
     PARAMETRIZE { ability = ABILITY_CLEAR_BODY;   species = SPECIES_FUGAMON;  move = MOVE_NOBLE_ROAR; }
 
     GIVEN {

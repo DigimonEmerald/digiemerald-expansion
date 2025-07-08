@@ -15901,20 +15901,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_D_AIRDRAMON
 
-#if P_FAMILY_SNIVY
-    const u32 gMonFrontPic_Snivy[] = INCBIN_U32("graphics/pokemon/snivy/anim_front.4bpp.lz");
-    const u16 gMonPalette_Snivy[] = INCBIN_U16("graphics/pokemon/snivy/normal.gbapal");
-    const u32 gMonBackPic_Snivy[] = INCBIN_U32("graphics/pokemon/snivy/back.4bpp.lz");
-    const u16 gMonShinyPalette_Snivy[] = INCBIN_U16("graphics/pokemon/snivy/shiny.gbapal");
-    const u8 gMonIcon_Snivy[] = INCBIN_U8("graphics/pokemon/snivy/icon.4bpp");
+#if P_FAMILY_D_DEVIMON
+    const u32 gMonFrontPic_D_devimon[] = INCBIN_U32("graphics/pokemon/d_devimon/anim_front.4bpp.lz");
+    const u16 gMonPalette_D_devimon[] = INCBIN_U16("graphics/pokemon/d_devimon/normal.gbapal");
+    const u32 gMonBackPic_D_devimon[] = INCBIN_U32("graphics/pokemon/d_devimon/back.4bpp.lz");
+    const u16 gMonShinyPalette_D_devimon[] = INCBIN_U16("graphics/pokemon/d_devimon/shiny.gbapal");
+    const u8 gMonIcon_D_devimon[] = INCBIN_U8("graphics/pokemon/d_devimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Snivy[] = INCBIN_U8("graphics/pokemon/snivy/footprint.1bpp");
+    const u8 gMonFootprint_D_devimon[] = INCBIN_U8("graphics/pokemon/d_devimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Snivy[] = INCBIN_COMP("graphics/pokemon/snivy/overworld.4bpp");
+    const u32 gObjectEventPic_D_devimon[] = INCBIN_COMP("graphics/pokemon/d_devimon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Snivy[] = INCBIN_U16("graphics/pokemon/snivy/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Snivy[] = INCBIN_U16("graphics/pokemon/snivy/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_D_devimon[] = INCBIN_U16("graphics/pokemon/d_devimon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_D_devimon[] = INCBIN_U16("graphics/pokemon/d_devimon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -15949,7 +15949,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Serperior[] = INCBIN_U16("graphics/pokemon/serperior/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_SNIVY
+#endif //P_FAMILY_D_DEVIMON
 
 #if P_FAMILY_TEPIG
     const u32 gMonFrontPic_Tepig[] = INCBIN_U32("graphics/pokemon/tepig/anim_front.4bpp.lz");

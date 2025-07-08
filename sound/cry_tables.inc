@@ -1262,11 +1262,11 @@ gCryTable::
 .if P_FAMILY_D_AIRDRAMON == TRUE
 	cry Cry_D_airdramon
 .endif @ P_FAMILY_D_AIRDRAMON
-.if P_FAMILY_SNIVY == TRUE
-	cry Cry_Snivy
+.if P_FAMILY_D_DEVIMON == TRUE
+	cry Cry_D_devimon
 	cry Cry_Servine
 	cry Cry_Serperior
-.endif @ P_FAMILY_SNIVY
+.endif @ P_FAMILY_D_DEVIMON
 .if P_FAMILY_TEPIG == TRUE
 	cry Cry_Tepig
 	cry Cry_Pignite
@@ -3690,11 +3690,11 @@ gCryTable_Reverse::
 .if P_FAMILY_D_AIRDRAMON == TRUE
 	cry_reverse Cry_D_airdramon
 .endif @ P_FAMILY_D_AIRDRAMON
-.if P_FAMILY_SNIVY == TRUE
-	cry_reverse Cry_Snivy
+.if P_FAMILY_D_DEVIMON == TRUE
+	cry_reverse Cry_D_devimon
 	cry_reverse Cry_Servine
 	cry_reverse Cry_Serperior
-.endif @ P_FAMILY_SNIVY
+.endif @ P_FAMILY_D_DEVIMON
 .if P_FAMILY_TEPIG == TRUE
 	cry_reverse Cry_Tepig
 	cry_reverse Cry_Pignite
