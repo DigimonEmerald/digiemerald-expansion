@@ -3687,11 +3687,11 @@ static const struct SpriteFrameImage sPicTable_ArceusFairy[] = {
 };
 #endif //P_FAMILY_ARCEUS
 
-#if P_FAMILY_VICTINI
-static const struct SpriteFrameImage sPicTable_Victini[] = {
-    overworld_ascending_frames(gObjectEventPic_Victini, 4, 4),
+#if P_FAMILY_D_AIRDRAMON
+static const struct SpriteFrameImage sPicTable_D_airdramon[] = {
+    overworld_ascending_frames(gObjectEventPic_D_airdramon, 4, 4),
 };
-#endif //P_FAMILY_VICTINI
+#endif //P_FAMILY_D_AIRDRAMON
 
 #if P_FAMILY_SNIVY
 static const struct SpriteFrameImage sPicTable_Snivy[] = {

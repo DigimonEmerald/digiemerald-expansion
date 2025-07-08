@@ -3,42 +3,44 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 {
 #endif
 
-#if P_FAMILY_VICTINI
-    [SPECIES_VICTINI] =
+#if P_FAMILY_D_AIRDRAMON
+    [SPECIES_D_AIRDRAMON] =
     {
-        .baseHP        = 100,
-        .baseAttack    = 100,
-        .baseDefense   = 100,
-        .baseSpeed     = 100,
+        .baseHP        = 110,
+        .baseAttack    = 70,
+        .baseDefense   = 55,
+        .baseSpeed     = 105,
         .baseSpAttack  = 100,
-        .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FIRE),
-        .catchRate = 3,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
-        .evYield_HP = 3,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_DARK, TYPE_FLYING),
+        .attribute = TYPE_FREE,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_SpAttack = 3,
+        .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 120,
         .friendship = 100,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_VICTORY_STAR, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Victini"),
-        .cryId = CRY_VICTINI,
-        .natDexNum = NATIONAL_DEX_VICTINI,
-        .categoryName = _("Victory"),
-        .height = 4,
-        .weight = 40,
+        .abilities = { ABILITY_POWER_OF_ALCHEMY, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("D-Airdramon"),
+        .cryId = CRY_D_AIRDRAMON,
+        .natDexNum = NATIONAL_DEX_D_AIRDRAMON,
+        .categoryName = _("Death"),
+        .height = 150,
+        .weight = 2643,
         .description = COMPOUND_STRING(
-            "This Pokémon brings victory.\n"
-            "It is said that Trainers with Victini\n"
-            "always win, regardless of the type\n"
-            "of encounter."),
+            "Death Airdramon is the combined form of\n"
+            "Deathmon when uploaded with the data\n"
+            "of Airdramon. It retains the ability\n"
+            "of Airdramon but the nature of Deathmon."),
         .pokemonScale = 491,
         .pokemonOffset = 16,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Victini,
+        .frontPic = gMonFrontPic_D_airdramon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 10,
         .frontAnimFrames = ANIM_FRAMES(
@@ -47,33 +49,33 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_H_JUMPS,
-        .backPic = gMonBackPic_Victini,
+        .backPic = gMonBackPic_D_airdramon,
         .backPicSize = MON_COORDS_SIZE(40, 64),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_H_SHAKE,
-        .palette = gMonPalette_Victini,
-        .shinyPalette = gMonShinyPalette_Victini,
-        .iconSprite = gMonIcon_Victini,
+        .palette = gMonPalette_D_airdramon,
+        .shinyPalette = gMonShinyPalette_D_airdramon,
+        .iconSprite = gMonIcon_D_airdramon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 4, SHADOW_SIZE_S)
-        FOOTPRINT(Victini)
+        FOOTPRINT(D_airdramon)
         OVERWORLD(
-            sPicTable_Victini,
+            sPicTable_D_airdramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Victini,
-            gShinyOverworldPalette_Victini
+            gOverworldPalette_D_airdramon,
+            gShinyOverworldPalette_D_airdramon
         )
         .isMythical = TRUE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
-        .levelUpLearnset = sVictiniLevelUpLearnset,
-        .teachableLearnset = sVictiniTeachableLearnset,
+        .levelUpLearnset = sD_airdramonLevelUpLearnset,
+        .teachableLearnset = sD_airdramonTeachableLearnset,
     },
-#endif //P_FAMILY_VICTINI
+#endif //P_FAMILY_D_AIRDRAMON
 
 #if P_FAMILY_SNIVY
     [SPECIES_SNIVY] =

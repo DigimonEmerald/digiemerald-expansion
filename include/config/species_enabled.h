@@ -304,7 +304,7 @@
 #define P_FAMILY_SHAYMIN                 P_GEN_4_POKEMON
 #define P_FAMILY_ARCEUS                  P_GEN_4_POKEMON
 
-#define P_FAMILY_VICTINI                 P_GEN_5_POKEMON
+#define P_FAMILY_D_AIRDRAMON                 P_GEN_5_POKEMON
 #define P_FAMILY_SNIVY                   P_GEN_5_POKEMON
 #define P_FAMILY_TEPIG                   P_GEN_5_POKEMON
 #define P_FAMILY_OSHAWOTT                P_GEN_5_POKEMON

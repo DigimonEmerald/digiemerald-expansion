@@ -10485,8 +10485,8 @@ static const struct LevelUpMove sArceusLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_ARCEUS
 
-#if P_FAMILY_VICTINI
-static const struct LevelUpMove sVictiniLevelUpLearnset[] = {
+#if P_FAMILY_D_AIRDRAMON
+static const struct LevelUpMove sD_airdramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SEARING_SHOT),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
@@ -10506,7 +10506,7 @@ static const struct LevelUpMove sVictiniLevelUpLearnset[] = {
     LEVEL_UP_MOVE(97, MOVE_OVERHEAT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_VICTINI
+#endif //P_FAMILY_D_AIRDRAMON
 
 #if P_FAMILY_SNIVY
 static const struct LevelUpMove sSnivyLevelUpLearnset[] = {

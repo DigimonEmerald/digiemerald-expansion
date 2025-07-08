@@ -219,7 +219,7 @@ TEST("givemon respects perfectIVCount")
     ASSUME(gSpeciesInfo[SPECIES_STRABIMON].perfectIVCount == 3);
     ASSUME(gSpeciesInfo[SPECIES_GEREMON].perfectIVCount == 3);
     ASSUME(gSpeciesInfo[SPECIES_MANAPHY].perfectIVCount == 3);
-    ASSUME(gSpeciesInfo[SPECIES_VICTINI].perfectIVCount == 3);
+    ASSUME(gSpeciesInfo[SPECIES_D_AIRDRAMON].perfectIVCount == 3);
     ASSUME(gSpeciesInfo[SPECIES_DIANCIE].perfectIVCount == 3);
 
     RUN_OVERWORLD_SCRIPT(
@@ -227,7 +227,7 @@ TEST("givemon respects perfectIVCount")
         givemon SPECIES_STRABIMON, 100;
         givemon SPECIES_GEREMON, 100;
         givemon SPECIES_MANAPHY, 100;
-        givemon SPECIES_VICTINI, 100;
+        givemon SPECIES_D_AIRDRAMON, 100;
         givemon SPECIES_DIANCIE, 100;
     );
 
@@ -235,7 +235,7 @@ TEST("givemon respects perfectIVCount")
     EXPECT_EQ(GetMonData(&gPlayerParty[1], MON_DATA_SPECIES), SPECIES_STRABIMON);
     EXPECT_EQ(GetMonData(&gPlayerParty[2], MON_DATA_SPECIES), SPECIES_GEREMON);
     EXPECT_EQ(GetMonData(&gPlayerParty[3], MON_DATA_SPECIES), SPECIES_MANAPHY);
-    EXPECT_EQ(GetMonData(&gPlayerParty[4], MON_DATA_SPECIES), SPECIES_VICTINI);
+    EXPECT_EQ(GetMonData(&gPlayerParty[4], MON_DATA_SPECIES), SPECIES_D_AIRDRAMON);
     EXPECT_EQ(GetMonData(&gPlayerParty[5], MON_DATA_SPECIES), SPECIES_DIANCIE);
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_LEVEL), 100);
     EXPECT_EQ(GetMonData(&gPlayerParty[1], MON_DATA_LEVEL), 100);

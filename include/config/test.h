@@ -534,8 +534,8 @@
 #define P_FAMILY_SHAYMIN                 TRUE
 #undef P_FAMILY_ARCEUS
 #define P_FAMILY_ARCEUS                  TRUE
-#undef P_FAMILY_VICTINI
-#define P_FAMILY_VICTINI                 TRUE
+#undef P_FAMILY_D_AIRDRAMON
+#define P_FAMILY_D_AIRDRAMON                 TRUE
 #undef P_FAMILY_SNIVY
 #define P_FAMILY_SNIVY                   TRUE
 #undef P_FAMILY_TEPIG

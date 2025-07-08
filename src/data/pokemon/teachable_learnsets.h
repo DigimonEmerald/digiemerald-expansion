@@ -20976,8 +20976,8 @@ static const u16 sArceusTeachableLearnset[] = {
 };
 #endif //P_FAMILY_ARCEUS
 
-#if P_FAMILY_VICTINI
-static const u16 sVictiniTeachableLearnset[] = {
+#if P_FAMILY_D_AIRDRAMON
+static const u16 sD_airdramonTeachableLearnset[] = {
     MOVE_BRICK_BREAK,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
@@ -21015,7 +21015,7 @@ static const u16 sVictiniTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_VICTINI
+#endif //P_FAMILY_D_AIRDRAMON
 
 #if P_FAMILY_SNIVY
 static const u16 sSnivyTeachableLearnset[] = {

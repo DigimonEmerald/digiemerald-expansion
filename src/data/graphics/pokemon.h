@@ -15883,23 +15883,23 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_ARCEUS
 
-#if P_FAMILY_VICTINI
-    const u32 gMonFrontPic_Victini[] = INCBIN_U32("graphics/pokemon/victini/anim_front.4bpp.lz");
-    const u16 gMonPalette_Victini[] = INCBIN_U16("graphics/pokemon/victini/normal.gbapal");
-    const u32 gMonBackPic_Victini[] = INCBIN_U32("graphics/pokemon/victini/back.4bpp.lz");
-    const u16 gMonShinyPalette_Victini[] = INCBIN_U16("graphics/pokemon/victini/shiny.gbapal");
-    const u8 gMonIcon_Victini[] = INCBIN_U8("graphics/pokemon/victini/icon.4bpp");
+#if P_FAMILY_D_AIRDRAMON
+    const u32 gMonFrontPic_D_airdramon[] = INCBIN_U32("graphics/pokemon/d_airdramon/anim_front.4bpp.lz");
+    const u16 gMonPalette_D_airdramon[] = INCBIN_U16("graphics/pokemon/d_airdramon/normal.gbapal");
+    const u32 gMonBackPic_D_airdramon[] = INCBIN_U32("graphics/pokemon/d_airdramon/back.4bpp.lz");
+    const u16 gMonShinyPalette_D_airdramon[] = INCBIN_U16("graphics/pokemon/d_airdramon/shiny.gbapal");
+    const u8 gMonIcon_D_airdramon[] = INCBIN_U8("graphics/pokemon/d_airdramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Victini[] = INCBIN_U8("graphics/pokemon/victini/footprint.1bpp");
+    const u8 gMonFootprint_D_airdramon[] = INCBIN_U8("graphics/pokemon/d_airdramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Victini[] = INCBIN_COMP("graphics/pokemon/victini/overworld.4bpp");
+    const u32 gObjectEventPic_D_airdramon[] = INCBIN_COMP("graphics/pokemon/d_airdramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Victini[] = INCBIN_U16("graphics/pokemon/victini/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Victini[] = INCBIN_U16("graphics/pokemon/victini/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_D_airdramon[] = INCBIN_U16("graphics/pokemon/d_airdramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_D_airdramon[] = INCBIN_U16("graphics/pokemon/d_airdramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_VICTINI
+#endif //P_FAMILY_D_AIRDRAMON
 
 #if P_FAMILY_SNIVY
     const u32 gMonFrontPic_Snivy[] = INCBIN_U32("graphics/pokemon/snivy/anim_front.4bpp.lz");

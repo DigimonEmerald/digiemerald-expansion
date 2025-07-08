@@ -6235,15 +6235,15 @@ static const union AnimCmd sAnim_Arceus_1[] =
 };
 #endif //P_FAMILY_ARCEUS
 
-#if P_FAMILY_VICTINI
-static const union AnimCmd sAnim_Victini_1[] =
+#if P_FAMILY_D_AIRDRAMON
+static const union AnimCmd sAnim_D_airdramon_1[] =
 {
     ANIMCMD_FRAME(0, 2),
     ANIMCMD_FRAME(1, 46),
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_VICTINI
+#endif //P_FAMILY_D_AIRDRAMON
 
 #if P_FAMILY_SNIVY
 static const union AnimCmd sAnim_Snivy_1[] =
@@ -11599,9 +11599,9 @@ SINGLE_ANIMATION(ShayminSky);
 #if P_FAMILY_ARCEUS
 SINGLE_ANIMATION(Arceus);
 #endif //P_FAMILY_ARCEUS
-#if P_FAMILY_VICTINI
-SINGLE_ANIMATION(Victini);
-#endif //P_FAMILY_VICTINI
+#if P_FAMILY_D_AIRDRAMON
+SINGLE_ANIMATION(D_airdramon);
+#endif //P_FAMILY_D_AIRDRAMON
 #if P_FAMILY_SNIVY
 SINGLE_ANIMATION(Snivy);
 SINGLE_ANIMATION(Servine);

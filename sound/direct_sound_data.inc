@@ -3322,11 +3322,11 @@ Cry_Arceus::
 	.incbin "sound/direct_sound_samples/cries/arceus.bin"
 .endif @ P_FAMILY_ARCEUS
 
-.if P_FAMILY_VICTINI == TRUE
+.if P_FAMILY_D_AIRDRAMON == TRUE
 	.align 2
-Cry_Victini::
-	.incbin "sound/direct_sound_samples/cries/victini.bin"
-.endif @ P_FAMILY_VICTINI
+Cry_D_airdramon::
+	.incbin "sound/direct_sound_samples/cries/d_airdramon.bin"
+.endif @ P_FAMILY_D_AIRDRAMON
 
 .if P_FAMILY_SNIVY == TRUE
 	.align 2

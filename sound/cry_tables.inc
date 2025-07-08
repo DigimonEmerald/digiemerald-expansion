@@ -1259,9 +1259,9 @@ gCryTable::
 .if P_FAMILY_ARCEUS == TRUE
 	cry Cry_Arceus
 .endif @ P_FAMILY_ARCEUS
-.if P_FAMILY_VICTINI == TRUE
-	cry Cry_Victini
-.endif @ P_FAMILY_VICTINI
+.if P_FAMILY_D_AIRDRAMON == TRUE
+	cry Cry_D_airdramon
+.endif @ P_FAMILY_D_AIRDRAMON
 .if P_FAMILY_SNIVY == TRUE
 	cry Cry_Snivy
 	cry Cry_Servine
@@ -3687,9 +3687,9 @@ gCryTable_Reverse::
 .if P_FAMILY_ARCEUS == TRUE
 	cry_reverse Cry_Arceus
 .endif @ P_FAMILY_ARCEUS
-.if P_FAMILY_VICTINI == TRUE
-	cry_reverse Cry_Victini
-.endif @ P_FAMILY_VICTINI
+.if P_FAMILY_D_AIRDRAMON == TRUE
+	cry_reverse Cry_D_airdramon
+.endif @ P_FAMILY_D_AIRDRAMON
 .if P_FAMILY_SNIVY == TRUE
 	cry_reverse Cry_Snivy
 	cry_reverse Cry_Servine
