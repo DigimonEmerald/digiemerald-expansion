@@ -146,44 +146,46 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sD_devimonLevelUpLearnset,
         .teachableLearnset = sD_devimonTeachableLearnset,
         .eggMoveLearnset = sD_devimonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_SERVINE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_D_MERAMON_CMON_DIGIMON}),
     },
 
-    [SPECIES_SERVINE] =
+    [SPECIES_D_MERAMON_CMON_DIGIMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 60,
-        .baseDefense   = 75,
-        .baseSpeed     = 83,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_GRASS),
+        .baseHP        = 80,
+        .baseAttack    = 80,
+        .baseDefense   = 70,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_DARK, TYPE_FIRE),
         .catchRate = 95,
-        .expYield = 145,
+        .expYield = 200,
         .evYield_Speed = 2,
+        .evYield_SpAttack = 2,
+        .evYield_Attack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_CONTRARY },
-        .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Servine"),
-        .cryId = CRY_SERVINE,
-        .natDexNum = NATIONAL_DEX_SERVINE,
-        .categoryName = _("Grass Snake"),
-        .height = 8,
-        .weight = 160,
+        .abilities = { ABILITY_POWER_OF_ALCHEMY, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("D-Meramon"),
+        .cryId = CRY_D_MERAMON_CMON_DIGIMON,
+        .natDexNum = NATIONAL_DEX_D_MERAMON_CMON_DIGIMON,
+        .categoryName = _("Death"),
+        .height = 23,
+        .weight = 534,
         .description = COMPOUND_STRING(
-            "When it gets dirty, its leaves can't be\n"
-            "used in photosynthesis, so it always keeps\n"
-            "clean. They avoid attacks by sinking into\n"
-            "the shadows of thick foliage."),
+            "Death Meramon is the combined form of\n"
+            "Deathmon when uploaded with the data\n"
+            "of Meramon. It retains the ability\n"
+            "of Meramon but the nature of Deathmon."),
         .pokemonScale = 366,
         .pokemonOffset = 9,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Servine,
+        .frontPic = gMonFrontPic_D_meramon_cmon_digimon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 7,
         .frontAnimFrames = ANIM_FRAMES(
@@ -196,28 +198,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 50),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Servine,
+        .backPic = gMonBackPic_D_meramon_cmon_digimon,
         .backPicSize = MON_COORDS_SIZE(48, 64),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Servine,
-        .shinyPalette = gMonShinyPalette_Servine,
-        .iconSprite = gMonIcon_Servine,
+        .palette = gMonPalette_D_meramon_cmon_digimon,
+        .shinyPalette = gMonShinyPalette_D_meramon_cmon_digimon,
+        .iconSprite = gMonIcon_D_meramon_cmon_digimon,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 7, SHADOW_SIZE_S)
-        FOOTPRINT(Servine)
+        FOOTPRINT(D_meramon_cmon_digimon)
         OVERWORLD(
-            sPicTable_Servine,
+            sPicTable_D_meramon_cmon_digimon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Servine,
-            gShinyOverworldPalette_Servine
+            gOverworldPalette_D_meramon_cmon_digimon,
+            gShinyOverworldPalette_D_meramon_cmon_digimon
         )
-        .levelUpLearnset = sServineLevelUpLearnset,
-        .teachableLearnset = sServineTeachableLearnset,
+        .levelUpLearnset = sD_meramon_cmon_digimonLevelUpLearnset,
+        .teachableLearnset = sD_meramon_cmon_digimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SERPERIOR}),
     },
 
@@ -603,7 +605,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 95,
-        .expYield = 145,
+        .expYield = 200,
         .evYield_SpAttack = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,

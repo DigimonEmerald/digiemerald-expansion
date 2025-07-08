@@ -513,7 +513,7 @@
 #define SPECIES_ARCEUS_NORMAL                           493
 #define SPECIES_D_AIRDRAMON                                 494
 #define SPECIES_D_DEVIMON                                   495
-#define SPECIES_SERVINE                                 496
+#define SPECIES_D_MERAMON_CMON_DIGIMON                                 496
 #define SPECIES_SERPERIOR                               497
 #define SPECIES_TEPIG                                   498
 #define SPECIES_PIGNITE                                 499

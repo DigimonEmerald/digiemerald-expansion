@@ -9254,7 +9254,7 @@ static const struct LevelUpMove sD_devimonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sServineLevelUpLearnset[] = {
+static const struct LevelUpMove sD_meramon_cmon_digimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_VINE_WHIP),

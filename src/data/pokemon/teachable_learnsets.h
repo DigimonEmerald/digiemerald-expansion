@@ -21050,7 +21050,7 @@ static const u16 sD_devimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sServineTeachableLearnset[] = {
+static const u16 sD_meramon_cmon_digimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,

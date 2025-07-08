@@ -3334,8 +3334,8 @@ Cry_D_devimon::
 	.incbin "sound/direct_sound_samples/cries/d_devimon.bin"
 
 	.align 2
-Cry_Servine::
-	.incbin "sound/direct_sound_samples/cries/servine.bin"
+Cry_D_meramon_cmon_digimon::
+	.incbin "sound/direct_sound_samples/cries/d_meramon_cmon_digimon.bin"
 
 	.align 2
 Cry_Serperior::

@@ -1264,7 +1264,7 @@ gCryTable::
 .endif @ P_FAMILY_D_AIRDRAMON
 .if P_FAMILY_D_DEVIMON == TRUE
 	cry Cry_D_devimon
-	cry Cry_Servine
+	cry Cry_D_meramon_cmon_digimon
 	cry Cry_Serperior
 .endif @ P_FAMILY_D_DEVIMON
 .if P_FAMILY_TEPIG == TRUE
@@ -3692,7 +3692,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_D_AIRDRAMON
 .if P_FAMILY_D_DEVIMON == TRUE
 	cry_reverse Cry_D_devimon
-	cry_reverse Cry_Servine
+	cry_reverse Cry_D_meramon_cmon_digimon
 	cry_reverse Cry_Serperior
 .endif @ P_FAMILY_D_DEVIMON
 .if P_FAMILY_TEPIG == TRUE

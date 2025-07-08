@@ -15918,19 +15918,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Servine[] = INCBIN_U32("graphics/pokemon/servine/anim_front.4bpp.lz");
-    const u16 gMonPalette_Servine[] = INCBIN_U16("graphics/pokemon/servine/normal.gbapal");
-    const u32 gMonBackPic_Servine[] = INCBIN_U32("graphics/pokemon/servine/back.4bpp.lz");
-    const u16 gMonShinyPalette_Servine[] = INCBIN_U16("graphics/pokemon/servine/shiny.gbapal");
-    const u8 gMonIcon_Servine[] = INCBIN_U8("graphics/pokemon/servine/icon.4bpp");
+    const u32 gMonFrontPic_D_meramon_cmon_digimon[] = INCBIN_U32("graphics/pokemon/d_meramon_cmon_digimon/anim_front.4bpp.lz");
+    const u16 gMonPalette_D_meramon_cmon_digimon[] = INCBIN_U16("graphics/pokemon/d_meramon_cmon_digimon/normal.gbapal");
+    const u32 gMonBackPic_D_meramon_cmon_digimon[] = INCBIN_U32("graphics/pokemon/d_meramon_cmon_digimon/back.4bpp.lz");
+    const u16 gMonShinyPalette_D_meramon_cmon_digimon[] = INCBIN_U16("graphics/pokemon/d_meramon_cmon_digimon/shiny.gbapal");
+    const u8 gMonIcon_D_meramon_cmon_digimon[] = INCBIN_U8("graphics/pokemon/d_meramon_cmon_digimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Servine[] = INCBIN_U8("graphics/pokemon/servine/footprint.1bpp");
+    const u8 gMonFootprint_D_meramon_cmon_digimon[] = INCBIN_U8("graphics/pokemon/d_meramon_cmon_digimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Servine[] = INCBIN_COMP("graphics/pokemon/servine/overworld.4bpp");
+    const u32 gObjectEventPic_D_meramon_cmon_digimon[] = INCBIN_COMP("graphics/pokemon/d_meramon_cmon_digimon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Servine[] = INCBIN_U16("graphics/pokemon/servine/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Servine[] = INCBIN_U16("graphics/pokemon/servine/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_D_meramon_cmon_digimon[] = INCBIN_U16("graphics/pokemon/d_meramon_cmon_digimon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_D_meramon_cmon_digimon[] = INCBIN_U16("graphics/pokemon/d_meramon_cmon_digimon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
