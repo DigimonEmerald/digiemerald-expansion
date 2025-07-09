@@ -538,8 +538,8 @@
 #define P_FAMILY_D_AIRDRAMON                 TRUE
 #undef P_FAMILY_D_DEVIMON
 #define P_FAMILY_D_DEVIMON                   TRUE
-#undef P_FAMILY_TEPIG
-#define P_FAMILY_TEPIG                   TRUE
+#undef P_FAMILY_D_TYRANNOMON
+#define P_FAMILY_D_TYRANNOMON                   TRUE
 #undef P_FAMILY_OSHAWOTT
 #define P_FAMILY_OSHAWOTT                TRUE
 #undef P_FAMILY_PATRAT

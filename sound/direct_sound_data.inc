@@ -3342,10 +3342,10 @@ Cry_D_metalgreymon::
 	.incbin "sound/direct_sound_samples/cries/d_metalgreymon.bin"
 .endif @ P_FAMILY_D_DEVIMON
 
-.if P_FAMILY_TEPIG == TRUE
+.if P_FAMILY_D_TYRANNOMON == TRUE
 	.align 2
-Cry_Tepig::
-	.incbin "sound/direct_sound_samples/cries/tepig.bin"
+Cry_D_tyrannomon::
+	.incbin "sound/direct_sound_samples/cries/d_tyrannomon.bin"
 
 	.align 2
 Cry_Pignite::
@@ -3354,7 +3354,7 @@ Cry_Pignite::
 	.align 2
 Cry_Emboar::
 	.incbin "sound/direct_sound_samples/cries/emboar.bin"
-.endif @ P_FAMILY_TEPIG
+.endif @ P_FAMILY_D_TYRANNOMON
 
 .if P_FAMILY_OSHAWOTT == TRUE
 	.align 2

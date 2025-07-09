@@ -3705,9 +3705,9 @@ static const struct SpriteFrameImage sPicTable_D_metalgreymon[] = {
 };
 #endif //P_FAMILY_D_DEVIMON
 
-#if P_FAMILY_TEPIG
-static const struct SpriteFrameImage sPicTable_Tepig[] = {
-    overworld_ascending_frames(gObjectEventPic_Tepig, 4, 4),
+#if P_FAMILY_D_TYRANNOMON
+static const struct SpriteFrameImage sPicTable_D_tyrannomon[] = {
+    overworld_ascending_frames(gObjectEventPic_D_tyrannomon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Pignite[] = {
     overworld_ascending_frames(gObjectEventPic_Pignite, 4, 4),
@@ -3715,7 +3715,7 @@ static const struct SpriteFrameImage sPicTable_Pignite[] = {
 static const struct SpriteFrameImage sPicTable_Emboar[] = {
     overworld_ascending_frames(gObjectEventPic_Emboar, 4, 4),
 };
-#endif //P_FAMILY_TEPIG
+#endif //P_FAMILY_D_TYRANNOMON
 
 #if P_FAMILY_OSHAWOTT
 static const struct SpriteFrameImage sPicTable_Oshawott[] = {

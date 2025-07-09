@@ -11609,8 +11609,8 @@ static const struct LevelUpMove sD_metalgreymonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_D_DEVIMON
 
-#if P_FAMILY_TEPIG
-static const struct LevelUpMove sTepigLevelUpLearnset[] = {
+#if P_FAMILY_D_TYRANNOMON
+static const struct LevelUpMove sD_tyrannomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 3, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 7, MOVE_EMBER),
@@ -11675,7 +11675,7 @@ static const struct LevelUpMove sEmboarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(62, MOVE_FLARE_BLITZ),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_TEPIG
+#endif //P_FAMILY_D_TYRANNOMON
 
 #if P_FAMILY_OSHAWOTT
 static const struct LevelUpMove sOshawottLevelUpLearnset[] = {

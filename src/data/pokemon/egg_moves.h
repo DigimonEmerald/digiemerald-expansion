@@ -3922,8 +3922,8 @@ static const u16 sD_devimonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_D_DEVIMON
 
-#if P_FAMILY_TEPIG
-static const u16 sTepigEggMoveLearnset[] = {
+#if P_FAMILY_D_TYRANNOMON
+static const u16 sD_tyrannomonEggMoveLearnset[] = {
     MOVE_COVET,
     MOVE_BODY_SLAM,
     MOVE_THRASH,
@@ -3938,7 +3938,7 @@ static const u16 sTepigEggMoveLearnset[] = {
     MOVE_BURN_UP,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TEPIG
+#endif //P_FAMILY_D_TYRANNOMON
 
 #if P_FAMILY_OSHAWOTT
 static const u16 sOshawottEggMoveLearnset[] = {

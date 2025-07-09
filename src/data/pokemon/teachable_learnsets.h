@@ -21119,8 +21119,8 @@ static const u16 sD_metalgreymonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_D_DEVIMON
 
-#if P_FAMILY_TEPIG
-static const u16 sTepigTeachableLearnset[] = {
+#if P_FAMILY_D_TYRANNOMON
+static const u16 sD_tyrannomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_DEFENSE_CURL,
@@ -21227,7 +21227,7 @@ static const u16 sEmboarTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TEPIG
+#endif //P_FAMILY_D_TYRANNOMON
 
 #if P_FAMILY_OSHAWOTT
 static const u16 sOshawottTeachableLearnset[] = {

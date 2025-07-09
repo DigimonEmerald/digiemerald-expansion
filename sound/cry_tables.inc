@@ -1267,11 +1267,11 @@ gCryTable::
 	cry Cry_D_meramon_cmon_digimon
 	cry Cry_D_metalgreymon
 .endif @ P_FAMILY_D_DEVIMON
-.if P_FAMILY_TEPIG == TRUE
-	cry Cry_Tepig
+.if P_FAMILY_D_TYRANNOMON == TRUE
+	cry Cry_D_tyrannomon
 	cry Cry_Pignite
 	cry Cry_Emboar
-.endif @ P_FAMILY_TEPIG
+.endif @ P_FAMILY_D_TYRANNOMON
 .if P_FAMILY_OSHAWOTT == TRUE
 	cry Cry_Oshawott
 	cry Cry_Dewott
@@ -3695,11 +3695,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_D_meramon_cmon_digimon
 	cry_reverse Cry_D_metalgreymon
 .endif @ P_FAMILY_D_DEVIMON
-.if P_FAMILY_TEPIG == TRUE
-	cry_reverse Cry_Tepig
+.if P_FAMILY_D_TYRANNOMON == TRUE
+	cry_reverse Cry_D_tyrannomon
 	cry_reverse Cry_Pignite
 	cry_reverse Cry_Emboar
-.endif @ P_FAMILY_TEPIG
+.endif @ P_FAMILY_D_TYRANNOMON
 .if P_FAMILY_OSHAWOTT == TRUE
 	cry_reverse Cry_Oshawott
 	cry_reverse Cry_Dewott

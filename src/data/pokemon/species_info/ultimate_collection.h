@@ -231,11 +231,13 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpeed     = 60,
         .baseSpAttack  = 90,
         .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_DARK, TYPE_DRAGON),
+        .types = MON_TYPES(TYPE_DARK, TYPE_STEEL),
         .attribute = TYPE_FREE,
         .catchRate = 95,
         .expYield = 200,
-        .evYield_Speed = 3,
+        .evYield_HP = 3,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
@@ -294,42 +296,44 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_D_DEVIMON
 
-#if P_FAMILY_TEPIG
-    [SPECIES_TEPIG] =
+#if P_FAMILY_D_TYRANNOMON
+    [SPECIES_D_TYRANNOMON] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 63,
-        .baseDefense   = 45,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_FIRE),
+        .baseHP        = 105,
+        .baseAttack    = 100,
+        .baseDefense   = 90,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_DARK, TYPE_DRAGON),
+        .attribute = TYPE_FREE,
         .catchRate = 95,
-        .expYield = 62,
-        .evYield_HP = 1,
+        .expYield = 200,
+        .evYield_HP = 3,
+        .evYield_Attack = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_THICK_FAT },
+        .abilities = { ABILITY_POWER_OF_ALCHEMY, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Tepig"),
-        .cryId = CRY_TEPIG,
-        .natDexNum = NATIONAL_DEX_TEPIG,
-        .categoryName = _("Fire Pig"),
-        .height = 5,
-        .weight = 99,
+        .speciesName = _("D-Tyranomon"),
+        .cryId = CRY_D_TYRANNOMON,
+        .natDexNum = NATIONAL_DEX_D_TYRANNOMON,
+        .categoryName = _("Death"),
+        .height = 47,
+        .weight = 867,
         .description = COMPOUND_STRING(
-            "It loves to eat roasted berries, but\n"
-            "sometimes it gets too excited and burns\n"
-            "them to a crisp. It blows fire through\n"
-            "its nose."),
+            "Death Tyrannomon is the combined form of\n"
+            "Deathmon when uploaded with the data\n"
+            "of Tyrannomon. It retains the ability\n"
+            "of Tyrannomon but the nature of Deathmon."),
         .pokemonScale = 432,
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Tepig,
+        .frontPic = gMonFrontPic_D_tyrannomon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 15,
         .frontAnimFrames = ANIM_FRAMES(
@@ -340,29 +344,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 1),
         ),
         .frontAnimId = ANIM_H_SLIDE,
-        .backPic = gMonBackPic_Tepig,
+        .backPic = gMonBackPic_D_tyrannomon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Tepig,
-        .shinyPalette = gMonShinyPalette_Tepig,
-        .iconSprite = gMonIcon_Tepig,
+        .palette = gMonPalette_D_tyrannomon,
+        .shinyPalette = gMonShinyPalette_D_tyrannomon,
+        .iconSprite = gMonIcon_D_tyrannomon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(0, -2, SHADOW_SIZE_S)
-        FOOTPRINT(Tepig)
+        FOOTPRINT(D_tyrannomon)
         OVERWORLD(
-            sPicTable_Tepig,
+            sPicTable_D_tyrannomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Tepig,
-            gShinyOverworldPalette_Tepig
+            gOverworldPalette_D_tyrannomon,
+            gShinyOverworldPalette_D_tyrannomon
         )
-        .levelUpLearnset = sTepigLevelUpLearnset,
-        .teachableLearnset = sTepigTeachableLearnset,
-        .eggMoveLearnset = sTepigEggMoveLearnset,
+        .levelUpLearnset = sD_tyrannomonLevelUpLearnset,
+        .teachableLearnset = sD_tyrannomonTeachableLearnset,
+        .eggMoveLearnset = sD_tyrannomonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_PIGNITE}),
     },
 
@@ -520,7 +524,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sEmboarLevelUpLearnset,
         .teachableLearnset = sEmboarTeachableLearnset,
     },
-#endif //P_FAMILY_TEPIG
+#endif //P_FAMILY_D_TYRANNOMON
 
 #if P_FAMILY_OSHAWOTT
     [SPECIES_OSHAWOTT] =
@@ -533,7 +537,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_WATER),
         .catchRate = 95,
-        .expYield = 62,
+        .expYield = 200,
         .evYield_SpAttack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
@@ -3502,7 +3506,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_BUG, TYPE_GRASS),
         .catchRate = 95,
-        .expYield = 62,
+        .expYield = 200,
         .evYield_Defense = 1,
         .itemRare = ITEM_MENTAL_HERB,
         .genderRatio = MON_GENDERLESS,

@@ -6277,8 +6277,8 @@ static const union AnimCmd sAnim_D_metalgreymon_1[] =
 };
 #endif //P_FAMILY_D_DEVIMON
 
-#if P_FAMILY_TEPIG
-static const union AnimCmd sAnim_Tepig_1[] =
+#if P_FAMILY_D_TYRANNOMON
+static const union AnimCmd sAnim_D_tyrannomon_1[] =
 {
     ANIMCMD_FRAME(0, 27),
     ANIMCMD_FRAME(1, 6),
@@ -6322,7 +6322,7 @@ static const union AnimCmd sAnim_Emboar_1[] =
     ANIMCMD_FRAME(0, 4),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_TEPIG
+#endif //P_FAMILY_D_TYRANNOMON
 
 #if P_FAMILY_OSHAWOTT
 static const union AnimCmd sAnim_Oshawott_1[] =
@@ -11607,11 +11607,11 @@ SINGLE_ANIMATION(D_devimon);
 SINGLE_ANIMATION(D_meramon_cmon_digimon);
 SINGLE_ANIMATION(D_metalgreymon);
 #endif //P_FAMILY_D_DEVIMON
-#if P_FAMILY_TEPIG
-SINGLE_ANIMATION(Tepig);
+#if P_FAMILY_D_TYRANNOMON
+SINGLE_ANIMATION(D_tyrannomon);
 SINGLE_ANIMATION(Pignite);
 SINGLE_ANIMATION(Emboar);
-#endif //P_FAMILY_TEPIG
+#endif //P_FAMILY_D_TYRANNOMON
 #if P_FAMILY_OSHAWOTT
 SINGLE_ANIMATION(Oshawott);
 SINGLE_ANIMATION(Dewott);
