@@ -7777,8 +7777,8 @@ static const struct LevelUpMove sGesomonSpeedLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_GESOMON
 
-#if P_FAMILY_TURTWIG
-static const struct LevelUpMove sTurtwigLevelUpLearnset[] = {
+#if P_FAMILY_DEATHMON_CMON_DIGIMON
+static const struct LevelUpMove sDeathmon_cmon_digimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 5, MOVE_WITHDRAW),
     LEVEL_UP_MOVE( 9, MOVE_ABSORB),
@@ -7831,7 +7831,7 @@ static const struct LevelUpMove sTorterraLevelUpLearnset[] = {
     LEVEL_UP_MOVE(57, MOVE_LEAF_STORM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_TURTWIG
+#endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 
 #if P_FAMILY_CHIMCHAR
 static const struct LevelUpMove sChimcharLevelUpLearnset[] = {

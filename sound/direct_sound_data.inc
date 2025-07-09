@@ -2894,10 +2894,10 @@ Cry_Gesomon::
 	.incbin "sound/direct_sound_samples/cries/gesomon.bin"
 .endif @ P_FAMILY_GESOMON
 
-.if P_FAMILY_TURTWIG == TRUE
+.if P_FAMILY_DEATHMON_CMON_DIGIMON == TRUE
 	.align 2
-Cry_Turtwig::
-	.incbin "sound/direct_sound_samples/cries/turtwig.bin"
+Cry_Deathmon_cmon_digimon::
+	.incbin "sound/direct_sound_samples/cries/deathmon_cmon_digimon.bin"
 
 	.align 2
 Cry_Grotle::
@@ -2906,7 +2906,7 @@ Cry_Grotle::
 	.align 2
 Cry_Torterra::
 	.incbin "sound/direct_sound_samples/cries/torterra.bin"
-.endif @ P_FAMILY_TURTWIG
+.endif @ P_FAMILY_DEATHMON_CMON_DIGIMON
 
 .if P_FAMILY_CHIMCHAR == TRUE
 	.align 2

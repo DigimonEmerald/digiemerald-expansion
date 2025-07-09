@@ -395,7 +395,7 @@
 #define SPECIES_GEREMON                                 385
 #define SPECIES_GESOMON                                  SPECIES_GESOMON_NORMAL
 #define SPECIES_GESOMON_NORMAL                           386
-#define SPECIES_TURTWIG                                 387
+#define SPECIES_DEATHMON_CMON_DIGIMON                                 387
 #define SPECIES_GROTLE                                  388
 #define SPECIES_TORTERRA                                389
 #define SPECIES_CHIMCHAR                                390

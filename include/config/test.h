@@ -446,8 +446,8 @@
 #undef P_FAMILY_GESOMON
 #define P_FAMILY_GESOMON                  TRUE
 
-#undef P_FAMILY_TURTWIG
-#define P_FAMILY_TURTWIG                 TRUE
+#undef P_FAMILY_DEATHMON_CMON_DIGIMON
+#define P_FAMILY_DEATHMON_CMON_DIGIMON                 TRUE
 #undef P_FAMILY_CHIMCHAR
 #define P_FAMILY_CHIMCHAR                TRUE
 #undef P_FAMILY_PIPLUP

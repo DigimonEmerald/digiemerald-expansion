@@ -18100,8 +18100,8 @@ static const u16 sGesomonSpeedTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GESOMON
 
-#if P_FAMILY_TURTWIG
-static const u16 sTurtwigTeachableLearnset[] = {
+#if P_FAMILY_DEATHMON_CMON_DIGIMON
+static const u16 sDeathmon_cmon_digimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BULLET_SEED,
@@ -18198,7 +18198,7 @@ static const u16 sTorterraTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TURTWIG
+#endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 
 #if P_FAMILY_CHIMCHAR
 static const u16 sChimcharTeachableLearnset[] = {

@@ -3406,8 +3406,8 @@ static const u16 sFlymonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_FLYMON
 
-#if P_FAMILY_TURTWIG
-static const u16 sTurtwigEggMoveLearnset[] = {
+#if P_FAMILY_DEATHMON_CMON_DIGIMON
+static const u16 sDeathmon_cmon_digimonEggMoveLearnset[] = {
     MOVE_WORRY_SEED,
     MOVE_GROWTH,
     MOVE_TICKLE,
@@ -3427,7 +3427,7 @@ static const u16 sTurtwigEggMoveLearnset[] = {
     MOVE_HEAVY_SLAM,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TURTWIG
+#endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 
 #if P_FAMILY_CHIMCHAR
 static const u16 sChimcharEggMoveLearnset[] = {

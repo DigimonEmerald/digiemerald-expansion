@@ -467,7 +467,7 @@ TEST("Species names fit on Battle Screen HP box for vanilla mons with the defaul
     const u32 fontId = FONT_SMALL, widthPx = 55;
     u32 species = SPECIES_NONE;
     genderWidthPx = GetStringWidth(fontId, COMPOUND_STRING("♂"), 0);
-    for (i = 1; i < SPECIES_TURTWIG; i++)
+    for (i = 1; i < SPECIES_DEATHMON_CMON_DIGIMON; i++)
     {
         if (IsSpeciesEnabled(i))
         {

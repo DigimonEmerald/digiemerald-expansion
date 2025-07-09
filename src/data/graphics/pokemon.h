@@ -13994,20 +13994,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_GESOMON
 
-#if P_FAMILY_TURTWIG
-    const u32 gMonFrontPic_Turtwig[] = INCBIN_U32("graphics/pokemon/turtwig/anim_front.4bpp.lz");
-    const u16 gMonPalette_Turtwig[] = INCBIN_U16("graphics/pokemon/turtwig/normal.gbapal");
-    const u32 gMonBackPic_Turtwig[] = INCBIN_U32("graphics/pokemon/turtwig/back.4bpp.lz");
-    const u16 gMonShinyPalette_Turtwig[] = INCBIN_U16("graphics/pokemon/turtwig/shiny.gbapal");
-    const u8 gMonIcon_Turtwig[] = INCBIN_U8("graphics/pokemon/turtwig/icon.4bpp");
+#if P_FAMILY_DEATHMON_CMON_DIGIMON
+    const u32 gMonFrontPic_Deathmon_cmon_digimon[] = INCBIN_U32("graphics/pokemon/deathmon_cmon_digimon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Deathmon_cmon_digimon[] = INCBIN_U16("graphics/pokemon/deathmon_cmon_digimon/normal.gbapal");
+    const u32 gMonBackPic_Deathmon_cmon_digimon[] = INCBIN_U32("graphics/pokemon/deathmon_cmon_digimon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Deathmon_cmon_digimon[] = INCBIN_U16("graphics/pokemon/deathmon_cmon_digimon/shiny.gbapal");
+    const u8 gMonIcon_Deathmon_cmon_digimon[] = INCBIN_U8("graphics/pokemon/deathmon_cmon_digimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Turtwig[] = INCBIN_U8("graphics/pokemon/turtwig/footprint.1bpp");
+    const u8 gMonFootprint_Deathmon_cmon_digimon[] = INCBIN_U8("graphics/pokemon/deathmon_cmon_digimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Turtwig[] = INCBIN_COMP("graphics/pokemon/turtwig/overworld.4bpp");
+    const u32 gObjectEventPic_Deathmon_cmon_digimon[] = INCBIN_COMP("graphics/pokemon/deathmon_cmon_digimon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Turtwig[] = INCBIN_U16("graphics/pokemon/turtwig/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Turtwig[] = INCBIN_U16("graphics/pokemon/turtwig/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Deathmon_cmon_digimon[] = INCBIN_U16("graphics/pokemon/deathmon_cmon_digimon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Deathmon_cmon_digimon[] = INCBIN_U16("graphics/pokemon/deathmon_cmon_digimon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -14042,7 +14042,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Torterra[] = INCBIN_U16("graphics/pokemon/torterra/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_TURTWIG
+#endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 
 #if P_FAMILY_CHIMCHAR
     const u32 gMonFrontPic_Chimchar[] = INCBIN_U32("graphics/pokemon/chimchar/anim_front.4bpp.lz");

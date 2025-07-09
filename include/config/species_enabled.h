@@ -259,7 +259,7 @@
 #define P_FAMILY_GEREMON                 P_GEN_3_POKEMON
 #define P_FAMILY_GESOMON                  P_GEN_3_POKEMON
 
-#define P_FAMILY_TURTWIG                 P_GEN_4_POKEMON
+#define P_FAMILY_DEATHMON_CMON_DIGIMON                 P_GEN_4_POKEMON
 #define P_FAMILY_CHIMCHAR                P_GEN_4_POKEMON
 #define P_FAMILY_PIPLUP                  P_GEN_4_POKEMON
 #define P_FAMILY_STARLY                  P_GEN_4_POKEMON

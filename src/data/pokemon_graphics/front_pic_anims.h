@@ -5257,8 +5257,8 @@ static const union AnimCmd sAnim_GesomonSpeed_1[] =
 };
 #endif //P_FAMILY_GESOMON
 
-#if P_FAMILY_TURTWIG
-static const union AnimCmd sAnim_Turtwig_1[] =
+#if P_FAMILY_DEATHMON_CMON_DIGIMON
+static const union AnimCmd sAnim_Deathmon_cmon_digimon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -5280,7 +5280,7 @@ static const union AnimCmd sAnim_Torterra_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_TURTWIG
+#endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 
 #if P_FAMILY_CHIMCHAR
 static const union AnimCmd sAnim_Chimchar_1[] =
@@ -11411,11 +11411,11 @@ SINGLE_ANIMATION(GesomonAttack);
 SINGLE_ANIMATION(GesomonDefense);
 SINGLE_ANIMATION(GesomonSpeed);
 #endif //P_FAMILY_GESOMON
-#if P_FAMILY_TURTWIG
-SINGLE_ANIMATION(Turtwig);
+#if P_FAMILY_DEATHMON_CMON_DIGIMON
+SINGLE_ANIMATION(Deathmon_cmon_digimon);
 SINGLE_ANIMATION(Grotle);
 SINGLE_ANIMATION(Torterra);
-#endif //P_FAMILY_TURTWIG
+#endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 #if P_FAMILY_CHIMCHAR
 SINGLE_ANIMATION(Chimchar);
 SINGLE_ANIMATION(Monferno);

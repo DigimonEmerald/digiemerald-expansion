@@ -3073,9 +3073,9 @@ static const struct SpriteFrameImage sPicTable_GesomonSpeed[] = {
 };
 #endif //P_FAMILY_GESOMON
 
-#if P_FAMILY_TURTWIG
-static const struct SpriteFrameImage sPicTable_Turtwig[] = {
-    overworld_ascending_frames(gObjectEventPic_Turtwig, 4, 4),
+#if P_FAMILY_DEATHMON_CMON_DIGIMON
+static const struct SpriteFrameImage sPicTable_Deathmon_cmon_digimon[] = {
+    overworld_ascending_frames(gObjectEventPic_Deathmon_cmon_digimon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Grotle[] = {
     overworld_ascending_frames(gObjectEventPic_Grotle, 4, 4),
@@ -3083,7 +3083,7 @@ static const struct SpriteFrameImage sPicTable_Grotle[] = {
 static const struct SpriteFrameImage sPicTable_Torterra[] = {
     overworld_ascending_frames(gObjectEventPic_Torterra, 4, 4),
 };
-#endif //P_FAMILY_TURTWIG
+#endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 
 #if P_FAMILY_CHIMCHAR
 static const struct SpriteFrameImage sPicTable_Chimchar[] = {
