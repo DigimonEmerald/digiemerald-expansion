@@ -18132,7 +18132,7 @@ static const u16 sDeathmon_cmon_digimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGrotleTeachableLearnset[] = {
+static const u16 sGreymonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BULLET_SEED,

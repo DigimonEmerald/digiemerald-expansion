@@ -2900,8 +2900,8 @@ Cry_Deathmon_cmon_digimon::
 	.incbin "sound/direct_sound_samples/cries/deathmon_cmon_digimon.bin"
 
 	.align 2
-Cry_Grotle::
-	.incbin "sound/direct_sound_samples/cries/grotle.bin"
+Cry_Greymon::
+	.incbin "sound/direct_sound_samples/cries/greymon.bin"
 
 	.align 2
 Cry_Torterra::

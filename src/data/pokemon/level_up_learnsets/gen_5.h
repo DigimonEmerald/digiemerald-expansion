@@ -9513,7 +9513,7 @@ static const struct LevelUpMove sDeathmon_cmon_digimonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sGrotleLevelUpLearnset[] = {
+static const struct LevelUpMove sGreymonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_WITHDRAW),
     LEVEL_UP_MOVE( 5, MOVE_WITHDRAW),

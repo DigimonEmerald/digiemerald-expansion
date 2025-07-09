@@ -3077,8 +3077,8 @@ static const struct SpriteFrameImage sPicTable_GesomonSpeed[] = {
 static const struct SpriteFrameImage sPicTable_Deathmon_cmon_digimon[] = {
     overworld_ascending_frames(gObjectEventPic_Deathmon_cmon_digimon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Grotle[] = {
-    overworld_ascending_frames(gObjectEventPic_Grotle, 4, 4),
+static const struct SpriteFrameImage sPicTable_Greymon[] = {
+    overworld_ascending_frames(gObjectEventPic_Greymon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Torterra[] = {
     overworld_ascending_frames(gObjectEventPic_Torterra, 4, 4),

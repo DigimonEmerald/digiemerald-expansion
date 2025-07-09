@@ -14011,19 +14011,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Grotle[] = INCBIN_U32("graphics/pokemon/grotle/anim_front.4bpp.lz");
-    const u16 gMonPalette_Grotle[] = INCBIN_U16("graphics/pokemon/grotle/normal.gbapal");
-    const u32 gMonBackPic_Grotle[] = INCBIN_U32("graphics/pokemon/grotle/back.4bpp.lz");
-    const u16 gMonShinyPalette_Grotle[] = INCBIN_U16("graphics/pokemon/grotle/shiny.gbapal");
-    const u8 gMonIcon_Grotle[] = INCBIN_U8("graphics/pokemon/grotle/icon.4bpp");
+    const u32 gMonFrontPic_Greymon[] = INCBIN_U32("graphics/pokemon/greymon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Greymon[] = INCBIN_U16("graphics/pokemon/greymon/normal.gbapal");
+    const u32 gMonBackPic_Greymon[] = INCBIN_U32("graphics/pokemon/greymon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Greymon[] = INCBIN_U16("graphics/pokemon/greymon/shiny.gbapal");
+    const u8 gMonIcon_Greymon[] = INCBIN_U8("graphics/pokemon/greymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Grotle[] = INCBIN_U8("graphics/pokemon/grotle/footprint.1bpp");
+    const u8 gMonFootprint_Greymon[] = INCBIN_U8("graphics/pokemon/greymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Grotle[] = INCBIN_COMP("graphics/pokemon/grotle/overworld.4bpp");
+    const u32 gObjectEventPic_Greymon[] = INCBIN_COMP("graphics/pokemon/greymon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Grotle[] = INCBIN_U16("graphics/pokemon/grotle/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Grotle[] = INCBIN_U16("graphics/pokemon/grotle/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Greymon[] = INCBIN_U16("graphics/pokemon/greymon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Greymon[] = INCBIN_U16("graphics/pokemon/greymon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
