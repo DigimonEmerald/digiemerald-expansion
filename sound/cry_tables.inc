@@ -1269,7 +1269,7 @@ gCryTable::
 .endif @ P_FAMILY_D_DEVIMON
 .if P_FAMILY_D_TYRANNOMON == TRUE
 	cry Cry_D_tyrannomon
-	cry Cry_Pignite
+	cry Cry_Mamemon
 	cry Cry_Emboar
 .endif @ P_FAMILY_D_TYRANNOMON
 .if P_FAMILY_OSHAWOTT == TRUE
@@ -3697,7 +3697,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_D_DEVIMON
 .if P_FAMILY_D_TYRANNOMON == TRUE
 	cry_reverse Cry_D_tyrannomon
-	cry_reverse Cry_Pignite
+	cry_reverse Cry_Mamemon
 	cry_reverse Cry_Emboar
 .endif @ P_FAMILY_D_TYRANNOMON
 .if P_FAMILY_OSHAWOTT == TRUE

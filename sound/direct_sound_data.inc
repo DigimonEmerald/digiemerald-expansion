@@ -3348,8 +3348,8 @@ Cry_D_tyrannomon::
 	.incbin "sound/direct_sound_samples/cries/d_tyrannomon.bin"
 
 	.align 2
-Cry_Pignite::
-	.incbin "sound/direct_sound_samples/cries/pignite.bin"
+Cry_Mamemon::
+	.incbin "sound/direct_sound_samples/cries/mamemon.bin"
 
 	.align 2
 Cry_Emboar::

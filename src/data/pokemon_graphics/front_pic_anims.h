@@ -6288,7 +6288,7 @@ static const union AnimCmd sAnim_D_tyrannomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Pignite_1[] =
+static const union AnimCmd sAnim_Mamemon_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 36),
@@ -11609,7 +11609,7 @@ SINGLE_ANIMATION(D_metalgreymon);
 #endif //P_FAMILY_D_DEVIMON
 #if P_FAMILY_D_TYRANNOMON
 SINGLE_ANIMATION(D_tyrannomon);
-SINGLE_ANIMATION(Pignite);
+SINGLE_ANIMATION(Mamemon);
 SINGLE_ANIMATION(Emboar);
 #endif //P_FAMILY_D_TYRANNOMON
 #if P_FAMILY_OSHAWOTT

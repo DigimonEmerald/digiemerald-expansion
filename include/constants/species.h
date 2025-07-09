@@ -516,7 +516,7 @@
 #define SPECIES_D_MERAMON_CMON_DIGIMON                                 496
 #define SPECIES_D_METALGREYMON                               497
 #define SPECIES_D_TYRANNOMON                                   498
-#define SPECIES_PIGNITE                                 499
+#define SPECIES_MAMEMON                                 499
 #define SPECIES_EMBOAR                                  500
 #define SPECIES_OSHAWOTT                                501
 #define SPECIES_DEWOTT                                  502
