@@ -14044,20 +14044,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 
-#if P_FAMILY_CHIMCHAR
-    const u32 gMonFrontPic_Chimchar[] = INCBIN_U32("graphics/pokemon/chimchar/anim_front.4bpp.lz");
-    const u16 gMonPalette_Chimchar[] = INCBIN_U16("graphics/pokemon/chimchar/normal.gbapal");
-    const u32 gMonBackPic_Chimchar[] = INCBIN_U32("graphics/pokemon/chimchar/back.4bpp.lz");
-    const u16 gMonShinyPalette_Chimchar[] = INCBIN_U16("graphics/pokemon/chimchar/shiny.gbapal");
-    const u8 gMonIcon_Chimchar[] = INCBIN_U8("graphics/pokemon/chimchar/icon.4bpp");
+#if P_FAMILY_MERAMON
+    const u32 gMonFrontPic_Meramon[] = INCBIN_U32("graphics/pokemon/meramon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Meramon[] = INCBIN_U16("graphics/pokemon/meramon/normal.gbapal");
+    const u32 gMonBackPic_Meramon[] = INCBIN_U32("graphics/pokemon/meramon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Meramon[] = INCBIN_U16("graphics/pokemon/meramon/shiny.gbapal");
+    const u8 gMonIcon_Meramon[] = INCBIN_U8("graphics/pokemon/meramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Chimchar[] = INCBIN_U8("graphics/pokemon/chimchar/footprint.1bpp");
+    const u8 gMonFootprint_Meramon[] = INCBIN_U8("graphics/pokemon/meramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Chimchar[] = INCBIN_COMP("graphics/pokemon/chimchar/overworld.4bpp");
+    const u32 gObjectEventPic_Meramon[] = INCBIN_COMP("graphics/pokemon/meramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Chimchar[] = INCBIN_U16("graphics/pokemon/chimchar/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Chimchar[] = INCBIN_U16("graphics/pokemon/chimchar/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Meramon[] = INCBIN_U16("graphics/pokemon/meramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Meramon[] = INCBIN_U16("graphics/pokemon/meramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -14092,7 +14092,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Infernape[] = INCBIN_U16("graphics/pokemon/infernape/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_CHIMCHAR
+#endif //P_FAMILY_MERAMON
 
 #if P_FAMILY_PIPLUP
     const u32 gMonFrontPic_Piplup[] = INCBIN_U32("graphics/pokemon/piplup/anim_front.4bpp.lz");

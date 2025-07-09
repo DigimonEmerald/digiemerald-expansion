@@ -18200,8 +18200,8 @@ static const u16 sKabuterimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 
-#if P_FAMILY_CHIMCHAR
-static const u16 sChimcharTeachableLearnset[] = {
+#if P_FAMILY_MERAMON
+static const u16 sMeramonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -18332,7 +18332,7 @@ static const u16 sInfernapeTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CHIMCHAR
+#endif //P_FAMILY_MERAMON
 
 #if P_FAMILY_PIPLUP
 static const u16 sPiplupTeachableLearnset[] = {

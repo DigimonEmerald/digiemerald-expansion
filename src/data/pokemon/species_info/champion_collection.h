@@ -11415,43 +11415,46 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 
-#if P_FAMILY_CHIMCHAR
-    [SPECIES_CHIMCHAR] =
+#if P_FAMILY_MERAMON
+    [SPECIES_MERAMON] =
     {
-        .baseHP        = 44,
-        .baseAttack    = 58,
-        .baseDefense   = 44,
-        .baseSpeed     = 61,
-        .baseSpAttack  = 58,
-        .baseSpDefense = 44,
+        .baseHP        = 60,
+        .baseAttack    = 75,
+        .baseDefense   = 60,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_FIRE),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 62 : 65,
-        .evYield_Speed = 1,
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack = 1,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_IRON_FIST },
-        .bodyColor = BODY_COLOR_BROWN,
+        .abilities = { ABILITY_FLAME_BODY, ABILITY_FLASH_FIRE, ABILITY_SOLAR_POWER },
+        .bodyColor = BODY_COLOR_RED,
         .noFlip = TRUE,
-        .speciesName = _("Chimchar"),
-        .cryId = CRY_CHIMCHAR,
-        .natDexNum = NATIONAL_DEX_CHIMCHAR,
-        .categoryName = _("Chimp"),
-        .height = 5,
-        .weight = 62,
+        .speciesName = _("Meramon"),
+        .cryId = CRY_MERAMON,
+        .natDexNum = NATIONAL_DEX_MERAMON,
+        .categoryName = _("Burning"),
+        .height = 24,
+        .weight = 483,
         .description = COMPOUND_STRING(
-            "Its fiery rear end is fueled by gas made\n"
-            "in its belly. Before going to sleep,\n"
-            "Chimchar extinguish the flame on their\n"
-            "tails to prevent fires."),
+            "Generated from the defensive\n"
+            "Firewall, Meramon possesses a\n"
+            "violent nature and tries to\n"
+            "incinerate everything it encounters."),
         .pokemonScale = 432,
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Chimchar,
+        .frontPic = gMonFrontPic_Meramon,
         .frontPicSize = MON_COORDS_SIZE(32, 48),
         .frontPicYOffset = 10,
         .frontAnimFrames = ANIM_FRAMES(
@@ -11463,29 +11466,29 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 8),
         ),
         .frontAnimId = ANIM_V_JUMPS_BIG,
-        .backPic = gMonBackPic_Chimchar,
+        .backPic = gMonBackPic_Meramon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Chimchar,
-        .shinyPalette = gMonShinyPalette_Chimchar,
-        .iconSprite = gMonIcon_Chimchar,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Meramon,
+        .shinyPalette = gMonShinyPalette_Meramon,
+        .iconSprite = gMonIcon_Meramon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(4, 3, SHADOW_SIZE_S)
-        FOOTPRINT(Chimchar)
+        FOOTPRINT(Meramon)
         OVERWORLD(
-            sPicTable_Chimchar,
+            sPicTable_Meramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Chimchar,
-            gShinyOverworldPalette_Chimchar
+            gOverworldPalette_Meramon,
+            gShinyOverworldPalette_Meramon
         )
-        .levelUpLearnset = sChimcharLevelUpLearnset,
-        .teachableLearnset = sChimcharTeachableLearnset,
-        .eggMoveLearnset = sChimcharEggMoveLearnset,
+        .levelUpLearnset = sMeramonLevelUpLearnset,
+        .teachableLearnset = sMeramonTeachableLearnset,
+        .eggMoveLearnset = sMeramonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_MONFERNO}),
     },
 
@@ -11635,7 +11638,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sInfernapeLevelUpLearnset,
         .teachableLearnset = sInfernapeTeachableLearnset,
     },
-#endif //P_FAMILY_CHIMCHAR
+#endif //P_FAMILY_MERAMON
 
 #if P_FAMILY_PIPLUP
     [SPECIES_PIPLUP] =

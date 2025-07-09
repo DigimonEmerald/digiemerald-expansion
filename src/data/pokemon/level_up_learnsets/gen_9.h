@@ -8062,21 +8062,18 @@ static const struct LevelUpMove sKabuterimonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 
-#if P_FAMILY_CHIMCHAR
-static const struct LevelUpMove sChimcharLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
+#if P_FAMILY_MERAMON
+static const struct LevelUpMove sMeramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 7, MOVE_EMBER),
-    LEVEL_UP_MOVE( 9, MOVE_TAUNT),
-    LEVEL_UP_MOVE(15, MOVE_FURY_SWIPES),
-    LEVEL_UP_MOVE(17, MOVE_FLAME_WHEEL),
-    LEVEL_UP_MOVE(23, MOVE_NASTY_PLOT),
-    LEVEL_UP_MOVE(25, MOVE_TORMENT),
-    LEVEL_UP_MOVE(31, MOVE_FACADE),
-    LEVEL_UP_MOVE(33, MOVE_FIRE_SPIN),
-    LEVEL_UP_MOVE(39, MOVE_ACROBATICS),
-    LEVEL_UP_MOVE(41, MOVE_SLACK_OFF),
-    LEVEL_UP_MOVE(47, MOVE_FLAMETHROWER),
+    LEVEL_UP_MOVE( 1, MOVE_POUND),
+    LEVEL_UP_MOVE( 1, MOVE_EMBER),
+    LEVEL_UP_MOVE( 1, MOVE_FLAME_CHARGE),
+    LEVEL_UP_MOVE(20, MOVE_FIRE_PUNCH),
+    LEVEL_UP_MOVE(24, MOVE_BURNING_JEALOUSY),
+    LEVEL_UP_MOVE(28, MOVE_FLAME_BURST),
+    LEVEL_UP_MOVE(32, MOVE_WILL_O_WISP),
+    LEVEL_UP_MOVE(36, MOVE_SUNNY_DAY),
+    LEVEL_UP_MOVE(40, MOVE_HEAT_WAVE),
     LEVEL_UP_END
 };
 
@@ -8117,7 +8114,7 @@ static const struct LevelUpMove sInfernapeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(65, MOVE_RAGING_FURY),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CHIMCHAR
+#endif //P_FAMILY_MERAMON
 
 #if P_FAMILY_PIPLUP
 static const struct LevelUpMove sPiplupLevelUpLearnset[] = {

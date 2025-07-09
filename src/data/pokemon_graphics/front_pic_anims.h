@@ -5282,8 +5282,8 @@ static const union AnimCmd sAnim_Kabuterimon_1[] =
 };
 #endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 
-#if P_FAMILY_CHIMCHAR
-static const union AnimCmd sAnim_Chimchar_1[] =
+#if P_FAMILY_MERAMON
+static const union AnimCmd sAnim_Meramon_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 8),
@@ -5311,7 +5311,7 @@ static const union AnimCmd sAnim_Infernape_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_CHIMCHAR
+#endif //P_FAMILY_MERAMON
 
 #if P_FAMILY_PIPLUP
 static const union AnimCmd sAnim_Piplup_1[] =
@@ -11416,11 +11416,11 @@ SINGLE_ANIMATION(Deathmon_cmon_digimon);
 SINGLE_ANIMATION(Greymon);
 SINGLE_ANIMATION(Kabuterimon);
 #endif //P_FAMILY_DEATHMON_CMON_DIGIMON
-#if P_FAMILY_CHIMCHAR
-SINGLE_ANIMATION(Chimchar);
+#if P_FAMILY_MERAMON
+SINGLE_ANIMATION(Meramon);
 SINGLE_ANIMATION(Monferno);
 SINGLE_ANIMATION(Infernape);
-#endif //P_FAMILY_CHIMCHAR
+#endif //P_FAMILY_MERAMON
 #if P_FAMILY_PIPLUP
 SINGLE_ANIMATION(Piplup);
 SINGLE_ANIMATION(Prinplup);

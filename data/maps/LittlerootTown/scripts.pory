@@ -1020,6 +1020,6 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 script LittlerootTown_EventScript_Test {
     lock
     msgbox(format("If you are seeing this, someone forgot to remove some testing stuff"))
-    givemon(SPECIES_GREYMON, 5)
+    givemon(SPECIES_MERAMON, 5)
     release
 }

@@ -400,6 +400,7 @@ Gesomon - Deoxys
 Deathmon (C'mon Digimon) - Turtwig
 Greymon - Grotle
 Kabuterimon - Torterra
+Meramon - Chimchar
 
 Ultimate List
 
@@ -408,5 +409,6 @@ Death Devimon - Snivy
 Death Meramon (C'mon Digimon) - Servine
 Death Metal Greymon - Serperior
 Death Tyrannomon - Tepig
+Mamemon - Pignite
 
 Mega List

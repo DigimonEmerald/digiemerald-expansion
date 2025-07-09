@@ -1085,11 +1085,11 @@ gCryTable::
 	cry Cry_Greymon
 	cry Cry_Kabuterimon
 .endif @ P_FAMILY_DEATHMON_CMON_DIGIMON
-.if P_FAMILY_CHIMCHAR == TRUE
-	cry Cry_Chimchar
+.if P_FAMILY_MERAMON == TRUE
+	cry Cry_Meramon
 	cry Cry_Monferno
 	cry Cry_Infernape
-.endif @ P_FAMILY_CHIMCHAR
+.endif @ P_FAMILY_MERAMON
 .if P_FAMILY_PIPLUP == TRUE
 	cry Cry_Piplup
 	cry Cry_Prinplup
@@ -3513,11 +3513,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Greymon
 	cry_reverse Cry_Kabuterimon
 .endif @ P_FAMILY_DEATHMON_CMON_DIGIMON
-.if P_FAMILY_CHIMCHAR == TRUE
-	cry_reverse Cry_Chimchar
+.if P_FAMILY_MERAMON == TRUE
+	cry_reverse Cry_Meramon
 	cry_reverse Cry_Monferno
 	cry_reverse Cry_Infernape
-.endif @ P_FAMILY_CHIMCHAR
+.endif @ P_FAMILY_MERAMON
 .if P_FAMILY_PIPLUP == TRUE
 	cry_reverse Cry_Piplup
 	cry_reverse Cry_Prinplup

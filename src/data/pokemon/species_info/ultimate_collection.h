@@ -422,7 +422,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .palette = gMonPalette_Mamemon,
         .shinyPalette = gMonShinyPalette_Mamemon,
         .iconSprite = gMonIcon_Mamemon,
-        .iconPalIndex = 9,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 6, SHADOW_SIZE_M)
         FOOTPRINT(Mamemon)

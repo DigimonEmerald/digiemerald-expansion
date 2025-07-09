@@ -2037,7 +2037,7 @@ LittlerootTown_EventScript_Test::
 # 1022 "data/maps/LittlerootTown/scripts.pory"
 	msgbox LittlerootTown_EventScript_Test_Text_0
 # 1023 "data/maps/LittlerootTown/scripts.pory"
-	givemon SPECIES_GREYMON, 5
+	givemon SPECIES_MERAMON, 5
 # 1024 "data/maps/LittlerootTown/scripts.pory"
 	release
 	return

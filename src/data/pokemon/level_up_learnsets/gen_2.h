@@ -7607,8 +7607,8 @@ static const struct LevelUpMove sKabuterimonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 
-#if P_FAMILY_CHIMCHAR
-static const struct LevelUpMove sChimcharLevelUpLearnset[] = {
+#if P_FAMILY_MERAMON
+static const struct LevelUpMove sMeramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 7, MOVE_EMBER),
@@ -7660,7 +7660,7 @@ static const struct LevelUpMove sInfernapeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(57, MOVE_FLARE_BLITZ),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CHIMCHAR
+#endif //P_FAMILY_MERAMON
 
 #if P_FAMILY_PIPLUP
 static const struct LevelUpMove sPiplupLevelUpLearnset[] = {

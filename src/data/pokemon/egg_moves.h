@@ -3429,8 +3429,8 @@ static const u16 sDeathmon_cmon_digimonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 
-#if P_FAMILY_CHIMCHAR
-static const u16 sChimcharEggMoveLearnset[] = {
+#if P_FAMILY_MERAMON
+static const u16 sMeramonEggMoveLearnset[] = {
     MOVE_FIRE_PUNCH,
     MOVE_THUNDER_PUNCH,
     MOVE_DOUBLE_KICK,
@@ -3448,7 +3448,7 @@ static const u16 sChimcharEggMoveLearnset[] = {
     MOVE_POWER_UP_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CHIMCHAR
+#endif //P_FAMILY_MERAMON
 
 #if P_FAMILY_PIPLUP
 static const u16 sPiplupEggMoveLearnset[] = {

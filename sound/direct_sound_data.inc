@@ -2908,10 +2908,10 @@ Cry_Kabuterimon::
 	.incbin "sound/direct_sound_samples/cries/kabuterimon.bin"
 .endif @ P_FAMILY_DEATHMON_CMON_DIGIMON
 
-.if P_FAMILY_CHIMCHAR == TRUE
+.if P_FAMILY_MERAMON == TRUE
 	.align 2
-Cry_Chimchar::
-	.incbin "sound/direct_sound_samples/cries/chimchar.bin"
+Cry_Meramon::
+	.incbin "sound/direct_sound_samples/cries/meramon.bin"
 
 	.align 2
 Cry_Monferno::
@@ -2920,7 +2920,7 @@ Cry_Monferno::
 	.align 2
 Cry_Infernape::
 	.incbin "sound/direct_sound_samples/cries/infernape.bin"
-.endif @ P_FAMILY_CHIMCHAR
+.endif @ P_FAMILY_MERAMON
 
 .if P_FAMILY_PIPLUP == TRUE
 	.align 2
