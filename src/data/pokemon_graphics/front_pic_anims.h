@@ -5274,7 +5274,7 @@ static const union AnimCmd sAnim_Greymon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Torterra_1[] =
+static const union AnimCmd sAnim_Kabuterimon_1[] =
 {
     ANIMCMD_FRAME(1, 45),
     ANIMCMD_FRAME(0, 10),
@@ -11414,7 +11414,7 @@ SINGLE_ANIMATION(GesomonSpeed);
 #if P_FAMILY_DEATHMON_CMON_DIGIMON
 SINGLE_ANIMATION(Deathmon_cmon_digimon);
 SINGLE_ANIMATION(Greymon);
-SINGLE_ANIMATION(Torterra);
+SINGLE_ANIMATION(Kabuterimon);
 #endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 #if P_FAMILY_CHIMCHAR
 SINGLE_ANIMATION(Chimchar);

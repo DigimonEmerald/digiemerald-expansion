@@ -2307,7 +2307,7 @@ $(POKEMONGFXDIR)/deathmon_cmon_digimon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/greymon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/torterra/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/kabuterimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/chimchar/overworld.4bpp: %.4bpp: %.png

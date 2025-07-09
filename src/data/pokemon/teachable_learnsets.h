@@ -18163,7 +18163,7 @@ static const u16 sGreymonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sTorterraTeachableLearnset[] = {
+static const u16 sKabuterimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BULLET_SEED,

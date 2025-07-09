@@ -3080,8 +3080,8 @@ static const struct SpriteFrameImage sPicTable_Deathmon_cmon_digimon[] = {
 static const struct SpriteFrameImage sPicTable_Greymon[] = {
     overworld_ascending_frames(gObjectEventPic_Greymon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Torterra[] = {
-    overworld_ascending_frames(gObjectEventPic_Torterra, 4, 4),
+static const struct SpriteFrameImage sPicTable_Kabuterimon[] = {
+    overworld_ascending_frames(gObjectEventPic_Kabuterimon, 4, 4),
 };
 #endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 

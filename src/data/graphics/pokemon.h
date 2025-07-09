@@ -14027,19 +14027,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Torterra[] = INCBIN_U32("graphics/pokemon/torterra/anim_front.4bpp.lz");
-    const u16 gMonPalette_Torterra[] = INCBIN_U16("graphics/pokemon/torterra/normal.gbapal");
-    const u32 gMonBackPic_Torterra[] = INCBIN_U32("graphics/pokemon/torterra/back.4bpp.lz");
-    const u16 gMonShinyPalette_Torterra[] = INCBIN_U16("graphics/pokemon/torterra/shiny.gbapal");
-    const u8 gMonIcon_Torterra[] = INCBIN_U8("graphics/pokemon/torterra/icon.4bpp");
+    const u32 gMonFrontPic_Kabuterimon[] = INCBIN_U32("graphics/pokemon/kabuterimon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Kabuterimon[] = INCBIN_U16("graphics/pokemon/kabuterimon/normal.gbapal");
+    const u32 gMonBackPic_Kabuterimon[] = INCBIN_U32("graphics/pokemon/kabuterimon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Kabuterimon[] = INCBIN_U16("graphics/pokemon/kabuterimon/shiny.gbapal");
+    const u8 gMonIcon_Kabuterimon[] = INCBIN_U8("graphics/pokemon/kabuterimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Torterra[] = INCBIN_U8("graphics/pokemon/torterra/footprint.1bpp");
+    const u8 gMonFootprint_Kabuterimon[] = INCBIN_U8("graphics/pokemon/kabuterimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Torterra[] = INCBIN_COMP("graphics/pokemon/torterra/overworld.4bpp");
+    const u32 gObjectEventPic_Kabuterimon[] = INCBIN_COMP("graphics/pokemon/kabuterimon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Torterra[] = INCBIN_U16("graphics/pokemon/torterra/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Torterra[] = INCBIN_U16("graphics/pokemon/torterra/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Kabuterimon[] = INCBIN_U16("graphics/pokemon/kabuterimon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Kabuterimon[] = INCBIN_U16("graphics/pokemon/kabuterimon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_DEATHMON_CMON_DIGIMON

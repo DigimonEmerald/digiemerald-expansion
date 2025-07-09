@@ -1083,7 +1083,7 @@ gCryTable::
 .if P_FAMILY_DEATHMON_CMON_DIGIMON == TRUE
 	cry Cry_Deathmon_cmon_digimon
 	cry Cry_Greymon
-	cry Cry_Torterra
+	cry Cry_Kabuterimon
 .endif @ P_FAMILY_DEATHMON_CMON_DIGIMON
 .if P_FAMILY_CHIMCHAR == TRUE
 	cry Cry_Chimchar
@@ -3511,7 +3511,7 @@ gCryTable_Reverse::
 .if P_FAMILY_DEATHMON_CMON_DIGIMON == TRUE
 	cry_reverse Cry_Deathmon_cmon_digimon
 	cry_reverse Cry_Greymon
-	cry_reverse Cry_Torterra
+	cry_reverse Cry_Kabuterimon
 .endif @ P_FAMILY_DEATHMON_CMON_DIGIMON
 .if P_FAMILY_CHIMCHAR == TRUE
 	cry_reverse Cry_Chimchar

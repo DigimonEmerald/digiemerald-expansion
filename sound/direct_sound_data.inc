@@ -2904,8 +2904,8 @@ Cry_Greymon::
 	.incbin "sound/direct_sound_samples/cries/greymon.bin"
 
 	.align 2
-Cry_Torterra::
-	.incbin "sound/direct_sound_samples/cries/torterra.bin"
+Cry_Kabuterimon::
+	.incbin "sound/direct_sound_samples/cries/kabuterimon.bin"
 .endif @ P_FAMILY_DEATHMON_CMON_DIGIMON
 
 .if P_FAMILY_CHIMCHAR == TRUE

@@ -11341,26 +11341,21 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sGreymonLevelUpLearnset,
         .teachableLearnset = sGreymonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_TORTERRA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_KABUTERIMON}),
     },
 
-    [SPECIES_TORTERRA] =
+    [SPECIES_KABUTERIMON] =
     {
-        .baseHP        = 95,
-        .baseAttack    = 109,
-        .baseDefense   = 105,
-        .baseSpeed     = 56,
-        .baseSpAttack  = 75,
-        .baseSpDefense = 85,
-        .types = MON_TYPES(TYPE_GRASS, TYPE_GROUND),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 263,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 236,
-    #else
-        .expYield = 208,
-    #endif
+        .baseHP        = 50,
+        .baseAttack    = 65,
+        .baseDefense   = 85,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
         .evYield_Attack = 2,
         .evYield_Defense = 1,
         .genderRatio = MON_GENDERLESS,
@@ -11368,25 +11363,25 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_SHELL_ARMOR },
-        .bodyColor = BODY_COLOR_GREEN,
+        .abilities = { ABILITY_STATIC, ABILITY_SWARM, ABILITY_BATTLE_ARMOR },
+        .bodyColor = BODY_COLOR_BLUE,
         .noFlip = TRUE,
-        .speciesName = _("Torterra"),
-        .cryId = CRY_TORTERRA,
-        .natDexNum = NATIONAL_DEX_TORTERRA,
-        .categoryName = _("Continent"),
-        .height = 22,
-        .weight = 3100,
+        .speciesName = _("Kabuterimon"),
+        .cryId = CRY_KABUTERIMON,
+        .natDexNum = NATIONAL_DEX_KABUTERIMON,
+        .categoryName = _("Rhino Beetle"),
+        .height = 60,
+        .weight = 1483,
         .description = COMPOUND_STRING(
-            "Some Pokémon are born on a Torterra's\n"
-            "back and spend their entire life there.\n"
-            "Ancient people imagined that beneath \n"
-            "the ground, a gigantic Torterra dwelled."),
+            "Although derived from beetle data, \n"
+            "Kabuterimon seems to have ant-like\n"
+            "abilties. Its head has been metallized\n"
+            "giving it even greater defense."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 348,
         .trainerOffset = 6,
-        .frontPic = gMonFrontPic_Torterra,
+        .frontPic = gMonFrontPic_Kabuterimon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -11394,28 +11389,28 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Torterra,
+        .backPic = gMonBackPic_Kabuterimon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_GREEN,
-        .palette = gMonPalette_Torterra,
-        .shinyPalette = gMonShinyPalette_Torterra,
-        .iconSprite = gMonIcon_Torterra,
+        .palette = gMonPalette_Kabuterimon,
+        .shinyPalette = gMonShinyPalette_Kabuterimon,
+        .iconSprite = gMonIcon_Kabuterimon,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 10, SHADOW_SIZE_L)
-        FOOTPRINT(Torterra)
+        FOOTPRINT(Kabuterimon)
         OVERWORLD(
-            sPicTable_Torterra,
+            sPicTable_Kabuterimon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Torterra,
-            gShinyOverworldPalette_Torterra
+            gOverworldPalette_Kabuterimon,
+            gShinyOverworldPalette_Kabuterimon
         )
-        .levelUpLearnset = sTorterraLevelUpLearnset,
-        .teachableLearnset = sTorterraTeachableLearnset,
+        .levelUpLearnset = sKabuterimonLevelUpLearnset,
+        .teachableLearnset = sKabuterimonTeachableLearnset,
     },
 #endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 

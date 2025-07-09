@@ -397,7 +397,7 @@
 #define SPECIES_GESOMON_NORMAL                           386
 #define SPECIES_DEATHMON_CMON_DIGIMON                                 387
 #define SPECIES_GREYMON                                  388
-#define SPECIES_TORTERRA                                389
+#define SPECIES_KABUTERIMON                                389
 #define SPECIES_CHIMCHAR                                390
 #define SPECIES_MONFERNO                                391
 #define SPECIES_INFERNAPE                               392
