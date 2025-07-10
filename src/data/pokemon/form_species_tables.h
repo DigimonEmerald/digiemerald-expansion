@@ -1142,7 +1142,7 @@ static const u16 sArceusFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_ARCEUS
 
-#if P_FAMILY_OSHAWOTT
+#if P_FAMILY_METALMAMEMON
 static const u16 sSamurottFormSpeciesIdTable[] = {
     SPECIES_SAMUROTT,
 #if P_HISUIAN_FORMS
@@ -1150,7 +1150,7 @@ static const u16 sSamurottFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_OSHAWOTT
+#endif //P_FAMILY_METALMAMEMON
 
 #if P_FAMILY_AUDINO
 static const u16 sAudinoFormSpeciesIdTable[] = {

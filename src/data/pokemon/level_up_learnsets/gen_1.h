@@ -8897,8 +8897,8 @@ static const struct LevelUpMove sMetalgreymon_virusLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_D_TYRANNOMON
 
-#if P_FAMILY_OSHAWOTT
-static const struct LevelUpMove sOshawottLevelUpLearnset[] = {
+#if P_FAMILY_METALMAMEMON
+static const struct LevelUpMove sMetalmamemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 5, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 7, MOVE_WATER_GUN),
@@ -8978,7 +8978,7 @@ static const struct LevelUpMove sSamurottHisuiLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_OSHAWOTT
+#endif //P_FAMILY_METALMAMEMON
 
 #if P_FAMILY_PATRAT
 static const struct LevelUpMove sPatratLevelUpLearnset[] = {

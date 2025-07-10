@@ -540,8 +540,8 @@
 #define P_FAMILY_D_DEVIMON                   TRUE
 #undef P_FAMILY_D_TYRANNOMON
 #define P_FAMILY_D_TYRANNOMON                   TRUE
-#undef P_FAMILY_OSHAWOTT
-#define P_FAMILY_OSHAWOTT                TRUE
+#undef P_FAMILY_METALMAMEMON
+#define P_FAMILY_METALMAMEMON                TRUE
 #undef P_FAMILY_PATRAT
 #define P_FAMILY_PATRAT                  TRUE
 #undef P_FAMILY_LILLIPUP

@@ -6324,8 +6324,8 @@ static const union AnimCmd sAnim_Metalgreymon_virus_1[] =
 };
 #endif //P_FAMILY_D_TYRANNOMON
 
-#if P_FAMILY_OSHAWOTT
-static const union AnimCmd sAnim_Oshawott_1[] =
+#if P_FAMILY_METALMAMEMON
+static const union AnimCmd sAnim_Metalmamemon_1[] =
 {
     ANIMCMD_FRAME(0, 13),
     ANIMCMD_FRAME(1, 7),
@@ -6357,7 +6357,7 @@ static const union AnimCmd sAnim_Samurott_1[] =
 #if P_HISUIAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(SamurottHisui);
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_OSHAWOTT
+#endif //P_FAMILY_METALMAMEMON
 
 #if P_FAMILY_PATRAT
 static const union AnimCmd sAnim_Patrat_1[] =
@@ -11612,14 +11612,14 @@ SINGLE_ANIMATION(D_tyrannomon);
 SINGLE_ANIMATION(Mamemon);
 SINGLE_ANIMATION(Metalgreymon_virus);
 #endif //P_FAMILY_D_TYRANNOMON
-#if P_FAMILY_OSHAWOTT
-SINGLE_ANIMATION(Oshawott);
+#if P_FAMILY_METALMAMEMON
+SINGLE_ANIMATION(Metalmamemon);
 SINGLE_ANIMATION(Dewott);
 SINGLE_ANIMATION(Samurott);
 #if P_HISUIAN_FORMS
 SINGLE_ANIMATION(SamurottHisui);
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_OSHAWOTT
+#endif //P_FAMILY_METALMAMEMON
 #if P_FAMILY_PATRAT
 SINGLE_ANIMATION(Patrat);
 SINGLE_ANIMATION(Watchog);

@@ -530,42 +530,44 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_D_TYRANNOMON
 
-#if P_FAMILY_OSHAWOTT
-    [SPECIES_OSHAWOTT] =
+#if P_FAMILY_METALMAMEMON
+    [SPECIES_METALMAMEMON] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 55,
-        .baseDefense   = 45,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 63,
-        .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_WATER),
+        .baseHP        = 65,
+        .baseAttack    = 85,
+        .baseDefense   = 135,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 115,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_STEEL),
+        .attribute = TYPE_DATA,
         .catchRate = 95,
         .expYield = 200,
-        .evYield_SpAttack = 1,
+        .evYield_Defense = 3,
+        .evYield_SpAttack = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_SHELL_ARMOR },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Oshawott"),
-        .cryId = CRY_OSHAWOTT,
-        .natDexNum = NATIONAL_DEX_OSHAWOTT,
-        .categoryName = _("Sea Otter"),
-        .height = 5,
-        .weight = 59,
+        .abilities = { ABILITY_NORMALIZE, ABILITY_AFTERMATH, ABILITY_MEGA_LAUNCHER },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("MetalMamemon"),
+        .cryId = CRY_METALMAMEMON,
+        .natDexNum = NATIONAL_DEX_METALMAMEMON,
+        .categoryName = _("Smile Bomber"),
+        .height = 9,
+        .weight = 645,
         .description = COMPOUND_STRING(
-            "The scalchop on its stomach isn't just\n"
-            "used for battle, it can be used to break\n"
-            "open hard berries as well. It is made\n"
-            "from the same element as its claws."),
+            "Despite its cute appearence, MetalMamemon\n"
+            "possesses tremendous destructive force\n"
+            "due its mechanised enhancements. Roughly\n"
+            "nine-tenth of its body is mechanised."),
         .pokemonScale = 432,
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Oshawott,
+        .frontPic = gMonFrontPic_Metalmamemon,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = 14,
         .frontAnimFrames = ANIM_FRAMES(
@@ -578,29 +580,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 11),
         ),
         .frontAnimId = ANIM_H_JUMPS,
-        .backPic = gMonBackPic_Oshawott,
+        .backPic = gMonBackPic_Metalmamemon,
         .backPicSize = MON_COORDS_SIZE(40, 48),
         .backPicYOffset = 14,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Oshawott,
-        .shinyPalette = gMonShinyPalette_Oshawott,
-        .iconSprite = gMonIcon_Oshawott,
+        .palette = gMonPalette_Metalmamemon,
+        .shinyPalette = gMonShinyPalette_Metalmamemon,
+        .iconSprite = gMonIcon_Metalmamemon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-3, 0, SHADOW_SIZE_S)
-        FOOTPRINT(Oshawott)
+        FOOTPRINT(Metalmamemon)
         OVERWORLD(
-            sPicTable_Oshawott,
+            sPicTable_Metalmamemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Oshawott,
-            gShinyOverworldPalette_Oshawott
+            gOverworldPalette_Metalmamemon,
+            gShinyOverworldPalette_Metalmamemon
         )
-        .levelUpLearnset = sOshawottLevelUpLearnset,
-        .teachableLearnset = sOshawottTeachableLearnset,
-        .eggMoveLearnset = sOshawottEggMoveLearnset,
+        .levelUpLearnset = sMetalmamemonLevelUpLearnset,
+        .teachableLearnset = sMetalmamemonTeachableLearnset,
+        .eggMoveLearnset = sMetalmamemonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_DEWOTT}),
     },
 
@@ -808,7 +810,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .formSpeciesIdTable = sSamurottFormSpeciesIdTable,
     },
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_OSHAWOTT
+#endif //P_FAMILY_METALMAMEMON
 
 #if P_FAMILY_PATRAT
     [SPECIES_PATRAT] =

@@ -1272,11 +1272,11 @@ gCryTable::
 	cry Cry_Mamemon
 	cry Cry_Metalgreymon_virus
 .endif @ P_FAMILY_D_TYRANNOMON
-.if P_FAMILY_OSHAWOTT == TRUE
-	cry Cry_Oshawott
+.if P_FAMILY_METALMAMEMON == TRUE
+	cry Cry_Metalmamemon
 	cry Cry_Dewott
 	cry Cry_Samurott
-.endif @ P_FAMILY_OSHAWOTT
+.endif @ P_FAMILY_METALMAMEMON
 .if P_FAMILY_PATRAT == TRUE
 	cry Cry_Patrat
 	cry Cry_Watchog
@@ -3700,11 +3700,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Mamemon
 	cry_reverse Cry_Metalgreymon_virus
 .endif @ P_FAMILY_D_TYRANNOMON
-.if P_FAMILY_OSHAWOTT == TRUE
-	cry_reverse Cry_Oshawott
+.if P_FAMILY_METALMAMEMON == TRUE
+	cry_reverse Cry_Metalmamemon
 	cry_reverse Cry_Dewott
 	cry_reverse Cry_Samurott
-.endif @ P_FAMILY_OSHAWOTT
+.endif @ P_FAMILY_METALMAMEMON
 .if P_FAMILY_PATRAT == TRUE
 	cry_reverse Cry_Patrat
 	cry_reverse Cry_Watchog

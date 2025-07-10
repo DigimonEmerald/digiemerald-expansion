@@ -16001,20 +16001,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_D_TYRANNOMON
 
-#if P_FAMILY_OSHAWOTT
-    const u32 gMonFrontPic_Oshawott[] = INCBIN_U32("graphics/pokemon/oshawott/anim_front.4bpp.lz");
-    const u16 gMonPalette_Oshawott[] = INCBIN_U16("graphics/pokemon/oshawott/normal.gbapal");
-    const u32 gMonBackPic_Oshawott[] = INCBIN_U32("graphics/pokemon/oshawott/back.4bpp.lz");
-    const u16 gMonShinyPalette_Oshawott[] = INCBIN_U16("graphics/pokemon/oshawott/shiny.gbapal");
-    const u8 gMonIcon_Oshawott[] = INCBIN_U8("graphics/pokemon/oshawott/icon.4bpp");
+#if P_FAMILY_METALMAMEMON
+    const u32 gMonFrontPic_Metalmamemon[] = INCBIN_U32("graphics/pokemon/metalmamemon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Metalmamemon[] = INCBIN_U16("graphics/pokemon/metalmamemon/normal.gbapal");
+    const u32 gMonBackPic_Metalmamemon[] = INCBIN_U32("graphics/pokemon/metalmamemon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Metalmamemon[] = INCBIN_U16("graphics/pokemon/metalmamemon/shiny.gbapal");
+    const u8 gMonIcon_Metalmamemon[] = INCBIN_U8("graphics/pokemon/metalmamemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Oshawott[] = INCBIN_U8("graphics/pokemon/oshawott/footprint.1bpp");
+    const u8 gMonFootprint_Metalmamemon[] = INCBIN_U8("graphics/pokemon/metalmamemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Oshawott[] = INCBIN_COMP("graphics/pokemon/oshawott/overworld.4bpp");
+    const u32 gObjectEventPic_Metalmamemon[] = INCBIN_COMP("graphics/pokemon/metalmamemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Oshawott[] = INCBIN_U16("graphics/pokemon/oshawott/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Oshawott[] = INCBIN_U16("graphics/pokemon/oshawott/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Metalmamemon[] = INCBIN_U16("graphics/pokemon/metalmamemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Metalmamemon[] = INCBIN_U16("graphics/pokemon/metalmamemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16064,7 +16064,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_OSHAWOTT
+#endif //P_FAMILY_METALMAMEMON
 
 #if P_FAMILY_PATRAT
     const u32 gMonFrontPic_Patrat[] = INCBIN_U32("graphics/pokemon/patrat/anim_front.4bpp.lz");

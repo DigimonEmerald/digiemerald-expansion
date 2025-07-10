@@ -518,7 +518,7 @@
 #define SPECIES_D_TYRANNOMON                                   498
 #define SPECIES_MAMEMON                                 499
 #define SPECIES_METALGREYMON_VIRUS                                  500
-#define SPECIES_OSHAWOTT                                501
+#define SPECIES_METALMAMEMON                                501
 #define SPECIES_DEWOTT                                  502
 #define SPECIES_SAMUROTT                                503
 #define SPECIES_PATRAT                                  504

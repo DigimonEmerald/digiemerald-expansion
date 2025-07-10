@@ -3356,10 +3356,10 @@ Cry_Metalgreymon_virus::
 	.incbin "sound/direct_sound_samples/cries/metalgreymon_virus.bin"
 .endif @ P_FAMILY_D_TYRANNOMON
 
-.if P_FAMILY_OSHAWOTT == TRUE
+.if P_FAMILY_METALMAMEMON == TRUE
 	.align 2
-Cry_Oshawott::
-	.incbin "sound/direct_sound_samples/cries/oshawott.bin"
+Cry_Metalmamemon::
+	.incbin "sound/direct_sound_samples/cries/metalmamemon.bin"
 
 	.align 2
 Cry_Dewott::
@@ -3368,7 +3368,7 @@ Cry_Dewott::
 	.align 2
 Cry_Samurott::
 	.incbin "sound/direct_sound_samples/cries/samurott.bin"
-.endif @ P_FAMILY_OSHAWOTT
+.endif @ P_FAMILY_METALMAMEMON
 
 .if P_FAMILY_PATRAT == TRUE
 	.align 2

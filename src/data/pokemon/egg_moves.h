@@ -3940,8 +3940,8 @@ static const u16 sD_tyrannomonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_D_TYRANNOMON
 
-#if P_FAMILY_OSHAWOTT
-static const u16 sOshawottEggMoveLearnset[] = {
+#if P_FAMILY_METALMAMEMON
+static const u16 sMetalmamemonEggMoveLearnset[] = {
     MOVE_COPYCAT,
     MOVE_DETECT,
     MOVE_AIR_SLASH,
@@ -3953,7 +3953,7 @@ static const u16 sOshawottEggMoveLearnset[] = {
     MOVE_SACRED_SWORD,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_OSHAWOTT
+#endif //P_FAMILY_METALMAMEMON
 
 #if P_FAMILY_PATRAT
 static const u16 sPatratEggMoveLearnset[] = {

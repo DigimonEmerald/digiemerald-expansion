@@ -3717,9 +3717,9 @@ static const struct SpriteFrameImage sPicTable_Metalgreymon_virus[] = {
 };
 #endif //P_FAMILY_D_TYRANNOMON
 
-#if P_FAMILY_OSHAWOTT
-static const struct SpriteFrameImage sPicTable_Oshawott[] = {
-    overworld_ascending_frames(gObjectEventPic_Oshawott, 4, 4),
+#if P_FAMILY_METALMAMEMON
+static const struct SpriteFrameImage sPicTable_Metalmamemon[] = {
+    overworld_ascending_frames(gObjectEventPic_Metalmamemon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Dewott[] = {
     overworld_ascending_frames(gObjectEventPic_Dewott, 4, 4),
@@ -3732,7 +3732,7 @@ static const struct SpriteFrameImage sPicTable_SamurottHisui[] = {
     overworld_ascending_frames(gObjectEventPic_SamurottHisui, 4, 4),
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_OSHAWOTT
+#endif //P_FAMILY_METALMAMEMON
 
 #if P_FAMILY_PATRAT
 static const struct SpriteFrameImage sPicTable_Patrat[] = {

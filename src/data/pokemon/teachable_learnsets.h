@@ -21229,8 +21229,8 @@ static const u16 sMetalgreymon_virusTeachableLearnset[] = {
 };
 #endif //P_FAMILY_D_TYRANNOMON
 
-#if P_FAMILY_OSHAWOTT
-static const u16 sOshawottTeachableLearnset[] = {
+#if P_FAMILY_METALMAMEMON
+static const u16 sMetalmamemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -21363,7 +21363,7 @@ static const u16 sSamurottHisuiTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_OSHAWOTT
+#endif //P_FAMILY_METALMAMEMON
 
 #if P_FAMILY_PATRAT
 static const u16 sPatratTeachableLearnset[] = {
