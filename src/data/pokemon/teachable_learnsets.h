@@ -21189,7 +21189,7 @@ static const u16 sMamemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sEmboarTeachableLearnset[] = {
+static const u16 sMetalgreymon_virusTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,

@@ -9116,7 +9116,7 @@ static const struct LevelUpMove sMamemonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sEmboarLevelUpLearnset[] = {
+static const struct LevelUpMove sMetalgreymon_virusLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HAMMER_ARM),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),

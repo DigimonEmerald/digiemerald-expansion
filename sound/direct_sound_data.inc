@@ -3352,8 +3352,8 @@ Cry_Mamemon::
 	.incbin "sound/direct_sound_samples/cries/mamemon.bin"
 
 	.align 2
-Cry_Emboar::
-	.incbin "sound/direct_sound_samples/cries/emboar.bin"
+Cry_Metalgreymon_virus::
+	.incbin "sound/direct_sound_samples/cries/metalgreymon_virus.bin"
 .endif @ P_FAMILY_D_TYRANNOMON
 
 .if P_FAMILY_OSHAWOTT == TRUE

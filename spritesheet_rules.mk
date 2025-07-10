@@ -2748,7 +2748,7 @@ $(POKEMONGFXDIR)/d_tyrannomon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/mamemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/emboar/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/metalgreymon_virus/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/oshawott/overworld.4bpp: %.4bpp: %.png

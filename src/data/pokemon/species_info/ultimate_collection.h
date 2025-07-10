@@ -437,45 +437,47 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sMamemonLevelUpLearnset,
         .teachableLearnset = sMamemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_EMBOAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_METALGREYMON_VIRUS}),
     },
 
-    [SPECIES_EMBOAR] =
+    [SPECIES_METALGREYMON_VIRUS] =
     {
-        .baseHP        = 110,
-        .baseAttack    = 123,
-        .baseDefense   = 65,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 100,
-        .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_FIRE, TYPE_FIGHTING),
+        .baseHP        = 100,
+        .baseAttack    = 110,
+        .baseDefense   = 90,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_STEEL),
+        .attribute = TYPE_VIRUS,
         .catchRate = 95,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 264 : 238,
+        .expYield = 200,
+        .evYield_HP = 2,
         .evYield_Attack = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_RECKLESS },
-        .bodyColor = BODY_COLOR_RED,
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_NONE, ABILITY_DEFIANT },
+        .bodyColor = BODY_COLOR_BLUE,
         .noFlip = TRUE,
-        .speciesName = _("Emboar"),
-        .cryId = CRY_EMBOAR,
-        .natDexNum = NATIONAL_DEX_EMBOAR,
-        .categoryName = _("Fire Pig"),
-        .height = 16,
-        .weight = 1500,
+        .speciesName = _("MetalGreymon"),
+        .cryId = CRY_METALGREYMON_VIRUS,
+        .natDexNum = NATIONAL_DEX_METALGREYMON_VIRUS,
+        .categoryName = _("Cyborg"),
+        .height = 87,
+        .weight = 1402,
         .description = COMPOUND_STRING(
-            "It is adept at using many different moves.\n"
-            "It can throw a fire punch by setting its\n"
-            "fists on fire with its fiery chin.\n"
-            "It cares deeply about its friends."),
+            "Once considered the strongest cyborg\n"
+            "Digimon, Metal Greymon (Virus) is\n"
+            "survival incarnate. It has reached\n"
+            "this point by beating formidable foes."),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Emboar,
+        .frontPic = gMonFrontPic_Metalgreymon_virus,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
         .frontAnimFrames = ANIM_FRAMES(
@@ -503,28 +505,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 4),
         ),
         .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Emboar,
+        .backPic = gMonBackPic_Metalgreymon_virus,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_Emboar,
-        .shinyPalette = gMonShinyPalette_Emboar,
-        .iconSprite = gMonIcon_Emboar,
+        .palette = gMonPalette_Metalgreymon_virus,
+        .shinyPalette = gMonShinyPalette_Metalgreymon_virus,
+        .iconSprite = gMonIcon_Metalgreymon_virus,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 12, SHADOW_SIZE_L)
-        FOOTPRINT(Emboar)
+        FOOTPRINT(Metalgreymon_virus)
         OVERWORLD(
-            sPicTable_Emboar,
+            sPicTable_Metalgreymon_virus,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Emboar,
-            gShinyOverworldPalette_Emboar
+            gOverworldPalette_Metalgreymon_virus,
+            gShinyOverworldPalette_Metalgreymon_virus
         )
-        .levelUpLearnset = sEmboarLevelUpLearnset,
-        .teachableLearnset = sEmboarTeachableLearnset,
+        .levelUpLearnset = sMetalgreymon_virusLevelUpLearnset,
+        .teachableLearnset = sMetalgreymon_virusTeachableLearnset,
     },
 #endif //P_FAMILY_D_TYRANNOMON
 

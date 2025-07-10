@@ -15984,19 +15984,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Emboar[] = INCBIN_U32("graphics/pokemon/emboar/anim_front.4bpp.lz");
-    const u16 gMonPalette_Emboar[] = INCBIN_U16("graphics/pokemon/emboar/normal.gbapal");
-    const u32 gMonBackPic_Emboar[] = INCBIN_U32("graphics/pokemon/emboar/back.4bpp.lz");
-    const u16 gMonShinyPalette_Emboar[] = INCBIN_U16("graphics/pokemon/emboar/shiny.gbapal");
-    const u8 gMonIcon_Emboar[] = INCBIN_U8("graphics/pokemon/emboar/icon.4bpp");
+    const u32 gMonFrontPic_Metalgreymon_virus[] = INCBIN_U32("graphics/pokemon/metalgreymon_virus/anim_front.4bpp.lz");
+    const u16 gMonPalette_Metalgreymon_virus[] = INCBIN_U16("graphics/pokemon/metalgreymon_virus/normal.gbapal");
+    const u32 gMonBackPic_Metalgreymon_virus[] = INCBIN_U32("graphics/pokemon/metalgreymon_virus/back.4bpp.lz");
+    const u16 gMonShinyPalette_Metalgreymon_virus[] = INCBIN_U16("graphics/pokemon/metalgreymon_virus/shiny.gbapal");
+    const u8 gMonIcon_Metalgreymon_virus[] = INCBIN_U8("graphics/pokemon/metalgreymon_virus/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Emboar[] = INCBIN_U8("graphics/pokemon/emboar/footprint.1bpp");
+    const u8 gMonFootprint_Metalgreymon_virus[] = INCBIN_U8("graphics/pokemon/metalgreymon_virus/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Emboar[] = INCBIN_COMP("graphics/pokemon/emboar/overworld.4bpp");
+    const u32 gObjectEventPic_Metalgreymon_virus[] = INCBIN_COMP("graphics/pokemon/metalgreymon_virus/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Emboar[] = INCBIN_U16("graphics/pokemon/emboar/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Emboar[] = INCBIN_U16("graphics/pokemon/emboar/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Metalgreymon_virus[] = INCBIN_U16("graphics/pokemon/metalgreymon_virus/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Metalgreymon_virus[] = INCBIN_U16("graphics/pokemon/metalgreymon_virus/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_D_TYRANNOMON

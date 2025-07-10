@@ -1270,7 +1270,7 @@ gCryTable::
 .if P_FAMILY_D_TYRANNOMON == TRUE
 	cry Cry_D_tyrannomon
 	cry Cry_Mamemon
-	cry Cry_Emboar
+	cry Cry_Metalgreymon_virus
 .endif @ P_FAMILY_D_TYRANNOMON
 .if P_FAMILY_OSHAWOTT == TRUE
 	cry Cry_Oshawott
@@ -3698,7 +3698,7 @@ gCryTable_Reverse::
 .if P_FAMILY_D_TYRANNOMON == TRUE
 	cry_reverse Cry_D_tyrannomon
 	cry_reverse Cry_Mamemon
-	cry_reverse Cry_Emboar
+	cry_reverse Cry_Metalgreymon_virus
 .endif @ P_FAMILY_D_TYRANNOMON
 .if P_FAMILY_OSHAWOTT == TRUE
 	cry_reverse Cry_Oshawott

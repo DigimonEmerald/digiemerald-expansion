@@ -3712,8 +3712,8 @@ static const struct SpriteFrameImage sPicTable_D_tyrannomon[] = {
 static const struct SpriteFrameImage sPicTable_Mamemon[] = {
     overworld_ascending_frames(gObjectEventPic_Mamemon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Emboar[] = {
-    overworld_ascending_frames(gObjectEventPic_Emboar, 4, 4),
+static const struct SpriteFrameImage sPicTable_Metalgreymon_virus[] = {
+    overworld_ascending_frames(gObjectEventPic_Metalgreymon_virus, 4, 4),
 };
 #endif //P_FAMILY_D_TYRANNOMON
 
