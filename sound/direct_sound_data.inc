@@ -2914,8 +2914,8 @@ Cry_Meramon::
 	.incbin "sound/direct_sound_samples/cries/meramon.bin"
 
 	.align 2
-Cry_Monferno::
-	.incbin "sound/direct_sound_samples/cries/monferno.bin"
+Cry_Numemon::
+	.incbin "sound/direct_sound_samples/cries/numemon.bin"
 
 	.align 2
 Cry_Infernape::

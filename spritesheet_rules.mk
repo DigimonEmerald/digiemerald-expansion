@@ -2313,7 +2313,7 @@ $(POKEMONGFXDIR)/kabuterimon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/meramon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/monferno/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/numemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/infernape/overworld.4bpp: %.4bpp: %.png

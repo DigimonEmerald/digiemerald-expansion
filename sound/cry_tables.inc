@@ -1087,7 +1087,7 @@ gCryTable::
 .endif @ P_FAMILY_DEATHMON_CMON_DIGIMON
 .if P_FAMILY_MERAMON == TRUE
 	cry Cry_Meramon
-	cry Cry_Monferno
+	cry Cry_Numemon
 	cry Cry_Infernape
 .endif @ P_FAMILY_MERAMON
 .if P_FAMILY_PIPLUP == TRUE
@@ -3515,7 +3515,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_DEATHMON_CMON_DIGIMON
 .if P_FAMILY_MERAMON == TRUE
 	cry_reverse Cry_Meramon
-	cry_reverse Cry_Monferno
+	cry_reverse Cry_Numemon
 	cry_reverse Cry_Infernape
 .endif @ P_FAMILY_MERAMON
 .if P_FAMILY_PIPLUP == TRUE

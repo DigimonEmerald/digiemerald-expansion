@@ -11489,46 +11489,47 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sMeramonLevelUpLearnset,
         .teachableLearnset = sMeramonTeachableLearnset,
         .eggMoveLearnset = sMeramonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_MONFERNO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_NUMEMON}),
     },
 
-    [SPECIES_MONFERNO] =
+    [SPECIES_NUMEMON] =
     {
-        .baseHP        = 64,
-        .baseAttack    = 78,
-        .baseDefense   = 52,
-        .baseSpeed     = 81,
-        .baseSpAttack  = 78,
-        .baseSpDefense = 52,
-        .types = MON_TYPES(TYPE_FIRE, TYPE_FIGHTING),
-        .catchRate = 45,
-        .expYield = 142,
-        .evYield_Speed = 1,
-        .evYield_SpAttack = 1,
+        .baseHP        = 60,
+        .baseAttack    = 55,
+        .baseDefense   = 50,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_POISON),
+        .attribute = TYPE_VIRUS, 
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed = 2,
+        .evYield_SpAttack = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_IRON_FIST },
-        .bodyColor = BODY_COLOR_BROWN,
+        .abilities = { ABILITY_STENCH, ABILITY_STICKY_HOLD, ABILITY_PRANKSTER },
+        .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
-        .speciesName = _("Monferno"),
-        .cryId = CRY_MONFERNO,
-        .natDexNum = NATIONAL_DEX_MONFERNO,
-        .categoryName = _("Playful"),
-        .height = 9,
-        .weight = 220,
+        .speciesName = _("Numemon"),
+        .cryId = CRY_NUMEMON,
+        .natDexNum = NATIONAL_DEX_NUMEMON,
+        .categoryName = _("Mollusk"),
+        .height = 22,
+        .weight = 329,
         .description = COMPOUND_STRING(
-            "It carefully controls the intensity of\n"
-            "the flame on its tail, so as to keep its\n"
-            "foes at an adequate distance.\n"
-            "Its fiery tail is but one weapon."),
+            "In dark, gloomy environments, you can\n"
+            "often find Numemon colonies. When they\n"
+            "feel threatened, they will attack by\n"
+            "throwing their own poop."),
         .pokemonScale = 338,
         .pokemonOffset = 9,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Monferno,
+        .frontPic = gMonFrontPic_Numemon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
@@ -11539,28 +11540,28 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
-        .backPic = gMonBackPic_Monferno,
+        .backPic = gMonBackPic_Numemon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Monferno,
-        .shinyPalette = gMonShinyPalette_Monferno,
-        .iconSprite = gMonIcon_Monferno,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Numemon,
+        .shinyPalette = gMonShinyPalette_Numemon,
+        .iconSprite = gMonIcon_Numemon,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-7, 6, SHADOW_SIZE_S)
-        FOOTPRINT(Monferno)
+        FOOTPRINT(Numemon)
         OVERWORLD(
-            sPicTable_Monferno,
+            sPicTable_Numemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Monferno,
-            gShinyOverworldPalette_Monferno
+            gOverworldPalette_Numemon,
+            gShinyOverworldPalette_Numemon
         )
-        .levelUpLearnset = sMonfernoLevelUpLearnset,
-        .teachableLearnset = sMonfernoTeachableLearnset,
+        .levelUpLearnset = sNumemonLevelUpLearnset,
+        .teachableLearnset = sNumemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_INFERNAPE}),
     },
 

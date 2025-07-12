@@ -14061,19 +14061,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Monferno[] = INCBIN_U32("graphics/pokemon/monferno/anim_front.4bpp.lz");
-    const u16 gMonPalette_Monferno[] = INCBIN_U16("graphics/pokemon/monferno/normal.gbapal");
-    const u32 gMonBackPic_Monferno[] = INCBIN_U32("graphics/pokemon/monferno/back.4bpp.lz");
-    const u16 gMonShinyPalette_Monferno[] = INCBIN_U16("graphics/pokemon/monferno/shiny.gbapal");
-    const u8 gMonIcon_Monferno[] = INCBIN_U8("graphics/pokemon/monferno/icon.4bpp");
+    const u32 gMonFrontPic_Numemon[] = INCBIN_U32("graphics/pokemon/numemon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Numemon[] = INCBIN_U16("graphics/pokemon/numemon/normal.gbapal");
+    const u32 gMonBackPic_Numemon[] = INCBIN_U32("graphics/pokemon/numemon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Numemon[] = INCBIN_U16("graphics/pokemon/numemon/shiny.gbapal");
+    const u8 gMonIcon_Numemon[] = INCBIN_U8("graphics/pokemon/numemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Monferno[] = INCBIN_U8("graphics/pokemon/monferno/footprint.1bpp");
+    const u8 gMonFootprint_Numemon[] = INCBIN_U8("graphics/pokemon/numemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Monferno[] = INCBIN_COMP("graphics/pokemon/monferno/overworld.4bpp");
+    const u32 gObjectEventPic_Numemon[] = INCBIN_COMP("graphics/pokemon/numemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Monferno[] = INCBIN_U16("graphics/pokemon/monferno/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Monferno[] = INCBIN_U16("graphics/pokemon/monferno/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Numemon[] = INCBIN_U16("graphics/pokemon/numemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Numemon[] = INCBIN_U16("graphics/pokemon/numemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

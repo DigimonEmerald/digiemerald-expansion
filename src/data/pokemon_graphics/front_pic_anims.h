@@ -5294,7 +5294,7 @@ static const union AnimCmd sAnim_Meramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Monferno_1[] =
+static const union AnimCmd sAnim_Numemon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 25),
@@ -11418,7 +11418,7 @@ SINGLE_ANIMATION(Kabuterimon);
 #endif //P_FAMILY_DEATHMON_CMON_DIGIMON
 #if P_FAMILY_MERAMON
 SINGLE_ANIMATION(Meramon);
-SINGLE_ANIMATION(Monferno);
+SINGLE_ANIMATION(Numemon);
 SINGLE_ANIMATION(Infernape);
 #endif //P_FAMILY_MERAMON
 #if P_FAMILY_PIPLUP

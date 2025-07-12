@@ -401,6 +401,7 @@ Deathmon (C'mon Digimon) - Turtwig
 Greymon - Grotle
 Kabuterimon - Torterra
 Meramon - Chimchar
+Numemon - Monferno
 
 Ultimate List
 

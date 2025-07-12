@@ -18243,7 +18243,7 @@ static const u16 sMeramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sMonfernoTeachableLearnset[] = {
+static const u16 sNumemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
