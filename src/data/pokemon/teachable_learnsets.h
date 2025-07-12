@@ -18334,8 +18334,8 @@ static const u16 sSeadramonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_MERAMON
 
-#if P_FAMILY_PIPLUP
-static const u16 sPiplupTeachableLearnset[] = {
+#if P_FAMILY_TYRANNOMON
+static const u16 sTyrannomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -18443,7 +18443,7 @@ static const u16 sEmpoleonTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PIPLUP
+#endif //P_FAMILY_TYRANNOMON
 
 #if P_FAMILY_STARLY
 static const u16 sStarlyTeachableLearnset[] = {

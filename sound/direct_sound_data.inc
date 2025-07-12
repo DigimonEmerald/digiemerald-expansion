@@ -2922,10 +2922,10 @@ Cry_Seadramon::
 	.incbin "sound/direct_sound_samples/cries/seadramon.bin"
 .endif @ P_FAMILY_MERAMON
 
-.if P_FAMILY_PIPLUP == TRUE
+.if P_FAMILY_TYRANNOMON == TRUE
 	.align 2
-Cry_Piplup::
-	.incbin "sound/direct_sound_samples/cries/piplup.bin"
+Cry_Tyrannomon::
+	.incbin "sound/direct_sound_samples/cries/tyrannomon.bin"
 
 	.align 2
 Cry_Prinplup::
@@ -2934,7 +2934,7 @@ Cry_Prinplup::
 	.align 2
 Cry_Empoleon::
 	.incbin "sound/direct_sound_samples/cries/empoleon.bin"
-.endif @ P_FAMILY_PIPLUP
+.endif @ P_FAMILY_TYRANNOMON
 
 .if P_FAMILY_STARLY == TRUE
 	.align 2

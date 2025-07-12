@@ -3097,9 +3097,9 @@ static const struct SpriteFrameImage sPicTable_Seadramon[] = {
 };
 #endif //P_FAMILY_MERAMON
 
-#if P_FAMILY_PIPLUP
-static const struct SpriteFrameImage sPicTable_Piplup[] = {
-    overworld_ascending_frames(gObjectEventPic_Piplup, 4, 4),
+#if P_FAMILY_TYRANNOMON
+static const struct SpriteFrameImage sPicTable_Tyrannomon[] = {
+    overworld_ascending_frames(gObjectEventPic_Tyrannomon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Prinplup[] = {
     overworld_ascending_frames(gObjectEventPic_Prinplup, 4, 4),
@@ -3107,7 +3107,7 @@ static const struct SpriteFrameImage sPicTable_Prinplup[] = {
 static const struct SpriteFrameImage sPicTable_Empoleon[] = {
     overworld_ascending_frames(gObjectEventPic_Empoleon, 4, 4),
 };
-#endif //P_FAMILY_PIPLUP
+#endif //P_FAMILY_TYRANNOMON
 
 #if P_FAMILY_STARLY
 static const struct SpriteFrameImage sPicTable_Starly[] = {

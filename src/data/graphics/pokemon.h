@@ -14094,20 +14094,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MERAMON
 
-#if P_FAMILY_PIPLUP
-    const u32 gMonFrontPic_Piplup[] = INCBIN_U32("graphics/pokemon/piplup/anim_front.4bpp.lz");
-    const u16 gMonPalette_Piplup[] = INCBIN_U16("graphics/pokemon/piplup/normal.gbapal");
-    const u32 gMonBackPic_Piplup[] = INCBIN_U32("graphics/pokemon/piplup/back.4bpp.lz");
-    const u16 gMonShinyPalette_Piplup[] = INCBIN_U16("graphics/pokemon/piplup/shiny.gbapal");
-    const u8 gMonIcon_Piplup[] = INCBIN_U8("graphics/pokemon/piplup/icon.4bpp");
+#if P_FAMILY_TYRANNOMON
+    const u32 gMonFrontPic_Tyrannomon[] = INCBIN_U32("graphics/pokemon/tyrannomon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Tyrannomon[] = INCBIN_U16("graphics/pokemon/tyrannomon/normal.gbapal");
+    const u32 gMonBackPic_Tyrannomon[] = INCBIN_U32("graphics/pokemon/tyrannomon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Tyrannomon[] = INCBIN_U16("graphics/pokemon/tyrannomon/shiny.gbapal");
+    const u8 gMonIcon_Tyrannomon[] = INCBIN_U8("graphics/pokemon/tyrannomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Piplup[] = INCBIN_U8("graphics/pokemon/piplup/footprint.1bpp");
+    const u8 gMonFootprint_Tyrannomon[] = INCBIN_U8("graphics/pokemon/tyrannomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Piplup[] = INCBIN_COMP("graphics/pokemon/piplup/overworld.4bpp");
+    const u32 gObjectEventPic_Tyrannomon[] = INCBIN_COMP("graphics/pokemon/tyrannomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Piplup[] = INCBIN_U16("graphics/pokemon/piplup/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Piplup[] = INCBIN_U16("graphics/pokemon/piplup/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Tyrannomon[] = INCBIN_U16("graphics/pokemon/tyrannomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Tyrannomon[] = INCBIN_U16("graphics/pokemon/tyrannomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -14142,7 +14142,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Empoleon[] = INCBIN_U16("graphics/pokemon/empoleon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_PIPLUP
+#endif //P_FAMILY_TYRANNOMON
 
 #if P_FAMILY_STARLY
     const u32 gMonFrontPic_Starly[] = INCBIN_U32("graphics/pokemon/starly/anim_front.4bpp.lz");

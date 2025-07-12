@@ -1090,11 +1090,11 @@ gCryTable::
 	cry Cry_Numemon
 	cry Cry_Seadramon
 .endif @ P_FAMILY_MERAMON
-.if P_FAMILY_PIPLUP == TRUE
-	cry Cry_Piplup
+.if P_FAMILY_TYRANNOMON == TRUE
+	cry Cry_Tyrannomon
 	cry Cry_Prinplup
 	cry Cry_Empoleon
-.endif @ P_FAMILY_PIPLUP
+.endif @ P_FAMILY_TYRANNOMON
 .if P_FAMILY_STARLY == TRUE
 	cry Cry_Starly
 	cry Cry_Staravia
@@ -3518,11 +3518,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Numemon
 	cry_reverse Cry_Seadramon
 .endif @ P_FAMILY_MERAMON
-.if P_FAMILY_PIPLUP == TRUE
-	cry_reverse Cry_Piplup
+.if P_FAMILY_TYRANNOMON == TRUE
+	cry_reverse Cry_Tyrannomon
 	cry_reverse Cry_Prinplup
 	cry_reverse Cry_Empoleon
-.endif @ P_FAMILY_PIPLUP
+.endif @ P_FAMILY_TYRANNOMON
 .if P_FAMILY_STARLY == TRUE
 	cry_reverse Cry_Starly
 	cry_reverse Cry_Staravia

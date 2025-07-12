@@ -11635,46 +11635,43 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_MERAMON
 
-#if P_FAMILY_PIPLUP
-    [SPECIES_PIPLUP] =
+#if P_FAMILY_TYRANNOMON
+    [SPECIES_TYRANNOMON] =
     {
-        .baseHP        = 53,
-        .baseAttack    = 51,
-        .baseDefense   = 53,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 61,
-        .baseSpDefense = 56,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 63 : 66,
+        .baseHP        = 75,
+        .baseAttack    = 90,
+        .baseDefense   = 65,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_DRAGON),
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack = 3,
         .evYield_SpAttack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
-    #if P_UPDATED_ABILITIES >= GEN_9
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_COMPETITIVE },
-    #else
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_DEFIANT },
-    #endif
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Piplup"),
-        .cryId = CRY_PIPLUP,
-        .natDexNum = NATIONAL_DEX_PIPLUP,
-        .categoryName = _("Penguin"),
-        .height = 4,
-        .weight = 52,
+        .abilities = { ABILITY_STRONG_JAW, ABILITY_NONE, ABILITY_TOUGH_CLAWS },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Tyrannomon"),
+        .cryId = CRY_TYRANNOMON,
+        .natDexNum = NATIONAL_DEX_TYRANNOMON,
+        .categoryName = _("Dinosaur"),
+        .height = 47,
+        .weight = 743,
         .description = COMPOUND_STRING(
-            "A poor walker, it often falls down. However,\n"
-            "its strong pride makes it puff up its chest\n"
-            "without a care. It's difficult to bond with\n"
-            "since it won't listen to its Trainer."),
+            "A docile Digimon, Tyrannomon is considered\n"
+            "to be one of the best Digimon for beginner\n"
+            "tamers. Some consider it to be the\n"
+            "representative figure of the basic Digimon."),
         .pokemonScale = 491,
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Piplup,
+        .frontPic = gMonFrontPic_Tyrannomon,
         .frontPicSize = MON_COORDS_SIZE(24, 40),
         .frontPicYOffset = 14,
         .frontAnimFrames = ANIM_FRAMES(
@@ -11683,29 +11680,29 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 1),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Piplup,
+        .backPic = gMonBackPic_Tyrannomon,
         .backPicSize = MON_COORDS_SIZE(40, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Piplup,
-        .shinyPalette = gMonShinyPalette_Piplup,
-        .iconSprite = gMonIcon_Piplup,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Tyrannomon,
+        .shinyPalette = gMonShinyPalette_Tyrannomon,
+        .iconSprite = gMonIcon_Tyrannomon,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, -1, SHADOW_SIZE_S)
-        FOOTPRINT(Piplup)
+        FOOTPRINT(Tyrannomon)
         OVERWORLD(
-            sPicTable_Piplup,
+            sPicTable_Tyrannomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Piplup,
-            gShinyOverworldPalette_Piplup
+            gOverworldPalette_Tyrannomon,
+            gShinyOverworldPalette_Tyrannomon
         )
-        .levelUpLearnset = sPiplupLevelUpLearnset,
-        .teachableLearnset = sPiplupTeachableLearnset,
-        .eggMoveLearnset = sPiplupEggMoveLearnset,
+        .levelUpLearnset = sTyrannomonLevelUpLearnset,
+        .teachableLearnset = sTyrannomonTeachableLearnset,
+        .eggMoveLearnset = sTyrannomonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_PRINPLUP}),
     },
 
@@ -11863,7 +11860,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sEmpoleonLevelUpLearnset,
         .teachableLearnset = sEmpoleonTeachableLearnset,
     },
-#endif //P_FAMILY_PIPLUP
+#endif //P_FAMILY_TYRANNOMON
 
 #if P_FAMILY_STARLY
     [SPECIES_STARLY] =

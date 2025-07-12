@@ -8107,21 +8107,18 @@ static const struct LevelUpMove sSeadramonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_MERAMON
 
-#if P_FAMILY_PIPLUP
-static const struct LevelUpMove sPiplupLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_POUND),
-    LEVEL_UP_MOVE( 4, MOVE_GROWL),
-    LEVEL_UP_MOVE( 8, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE(11, MOVE_CHARM),
-    LEVEL_UP_MOVE(15, MOVE_PECK),
-    LEVEL_UP_MOVE(18, MOVE_BUBBLE_BEAM),
-    LEVEL_UP_MOVE(22, MOVE_SWAGGER),
-    LEVEL_UP_MOVE(25, MOVE_FURY_ATTACK),
-    LEVEL_UP_MOVE(29, MOVE_BRINE),
-    LEVEL_UP_MOVE(32, MOVE_WHIRLPOOL),
-    LEVEL_UP_MOVE(36, MOVE_MIST),
-    LEVEL_UP_MOVE(39, MOVE_DRILL_PECK),
-    LEVEL_UP_MOVE(43, MOVE_HYDRO_PUMP),
+#if P_FAMILY_TYRANNOMON
+static const struct LevelUpMove sTyrannomonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
+    LEVEL_UP_MOVE( 1, MOVE_EMBER),
+    LEVEL_UP_MOVE( 1, MOVE_BITE),
+    LEVEL_UP_MOVE( 1, MOVE_LEER),
+    LEVEL_UP_MOVE(20, MOVE_FIRE_FANG),
+    LEVEL_UP_MOVE(24, MOVE_SLASH),
+    LEVEL_UP_MOVE(28, MOVE_HEADBUTT),
+    LEVEL_UP_MOVE(32, MOVE_CRUNCH),
+    LEVEL_UP_MOVE(36, MOVE_FLAMETHROWER),
+    LEVEL_UP_MOVE(40, MOVE_HEAD_CHARGE),
     LEVEL_UP_END
 };
 
@@ -8161,7 +8158,7 @@ static const struct LevelUpMove sEmpoleonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(66, MOVE_WAVE_CRASH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_PIPLUP
+#endif //P_FAMILY_TYRANNOMON
 
 #if P_FAMILY_STARLY
 static const struct LevelUpMove sStarlyLevelUpLearnset[] = {

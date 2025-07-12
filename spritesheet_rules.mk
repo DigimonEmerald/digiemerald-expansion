@@ -2319,7 +2319,7 @@ $(POKEMONGFXDIR)/numemon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/seadramon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/piplup/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/tyrannomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/prinplup/overworld.4bpp: %.4bpp: %.png

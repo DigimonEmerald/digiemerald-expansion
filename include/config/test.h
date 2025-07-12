@@ -450,8 +450,8 @@
 #define P_FAMILY_DEATHMON_CMON_DIGIMON                 TRUE
 #undef P_FAMILY_MERAMON
 #define P_FAMILY_MERAMON                TRUE
-#undef P_FAMILY_PIPLUP
-#define P_FAMILY_PIPLUP                  TRUE
+#undef P_FAMILY_TYRANNOMON
+#define P_FAMILY_TYRANNOMON                  TRUE
 #undef P_FAMILY_STARLY
 #define P_FAMILY_STARLY                  TRUE
 #undef P_FAMILY_BIDOOF

@@ -5313,8 +5313,8 @@ static const union AnimCmd sAnim_Seadramon_1[] =
 };
 #endif //P_FAMILY_MERAMON
 
-#if P_FAMILY_PIPLUP
-static const union AnimCmd sAnim_Piplup_1[] =
+#if P_FAMILY_TYRANNOMON
+static const union AnimCmd sAnim_Tyrannomon_1[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_FRAME(1, 30),
@@ -5343,7 +5343,7 @@ static const union AnimCmd sAnim_Empoleon_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_PIPLUP
+#endif //P_FAMILY_TYRANNOMON
 
 #if P_FAMILY_STARLY
 static const union AnimCmd sAnim_Starly_1[] =
@@ -11421,11 +11421,11 @@ SINGLE_ANIMATION(Meramon);
 SINGLE_ANIMATION(Numemon);
 SINGLE_ANIMATION(Seadramon);
 #endif //P_FAMILY_MERAMON
-#if P_FAMILY_PIPLUP
-SINGLE_ANIMATION(Piplup);
+#if P_FAMILY_TYRANNOMON
+SINGLE_ANIMATION(Tyrannomon);
 SINGLE_ANIMATION(Prinplup);
 SINGLE_ANIMATION(Empoleon);
-#endif //P_FAMILY_PIPLUP
+#endif //P_FAMILY_TYRANNOMON
 #if P_FAMILY_STARLY
 SINGLE_ANIMATION(Starly);
 SINGLE_ANIMATION(Staravia);

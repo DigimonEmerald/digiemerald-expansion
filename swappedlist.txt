@@ -403,6 +403,7 @@ Kabuterimon - Torterra
 Meramon - Chimchar
 Numemon - Monferno
 Seadramon - Infernape
+Tyrannomon - Piplup
 
 Ultimate List
 

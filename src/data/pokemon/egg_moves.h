@@ -3450,8 +3450,8 @@ static const u16 sMeramonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_MERAMON
 
-#if P_FAMILY_PIPLUP
-static const u16 sPiplupEggMoveLearnset[] = {
+#if P_FAMILY_TYRANNOMON
+static const u16 sTyrannomonEggMoveLearnset[] = {
     MOVE_DOUBLE_HIT,
     MOVE_SUPERSONIC,
     MOVE_YAWN,
@@ -3468,7 +3468,7 @@ static const u16 sPiplupEggMoveLearnset[] = {
     MOVE_POWER_TRIP,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PIPLUP
+#endif //P_FAMILY_TYRANNOMON
 
 #if P_FAMILY_STARLY
 static const u16 sStarlyEggMoveLearnset[] = {
