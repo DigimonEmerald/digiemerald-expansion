@@ -6355,7 +6355,7 @@ static const union AnimCmd sAnim_Skullgreymon_1[] =
 };
 
 #if P_HISUIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(SkullgreymonHisui);
+PLACEHOLDER_ANIM_SINGLE_FRAME(Vademon);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_METALMAMEMON
 
@@ -11617,7 +11617,7 @@ SINGLE_ANIMATION(Metalmamemon);
 SINGLE_ANIMATION(Monzaemon);
 SINGLE_ANIMATION(Skullgreymon);
 #if P_HISUIAN_FORMS
-SINGLE_ANIMATION(SkullgreymonHisui);
+SINGLE_ANIMATION(Vademon);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_METALMAMEMON
 #if P_FAMILY_PATRAT

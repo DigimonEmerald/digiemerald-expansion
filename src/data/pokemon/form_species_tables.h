@@ -1146,7 +1146,7 @@ static const u16 sArceusFormSpeciesIdTable[] = {
 static const u16 sSkullgreymonFormSpeciesIdTable[] = {
     SPECIES_SKULLGREYMON,
 #if P_HISUIAN_FORMS
-    SPECIES_SKULLGREYMON_HISUI,
+    SPECIES_VADEMON,
 #endif
     FORM_SPECIES_END,
 };

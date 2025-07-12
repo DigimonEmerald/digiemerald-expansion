@@ -417,6 +417,7 @@ MetalGreymon (Virus) - Emboar
 MetalMamemon - Oshawott
 Monzaemon - Dewott
 SkullGreymon - Samurott
+Vademon - Samurott Hisui
 
 Mega List
 

@@ -677,7 +677,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sMonzaemonLevelUpLearnset,
         .teachableLearnset = sMonzaemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SKULLGREYMON},
-                                {EVO_NONE, 0, SPECIES_SKULLGREYMON_HISUI}),
+                                {EVO_NONE, 0, SPECIES_VADEMON}),
     },
 
     [SPECIES_SKULLGREYMON] =
@@ -750,72 +750,72 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .formSpeciesIdTable = sSkullgreymonFormSpeciesIdTable,
     },
 
-#if P_HISUIAN_FORMS
-    [SPECIES_SKULLGREYMON_HISUI] =
+    [SPECIES_VADEMON] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 108,
-        .baseDefense   = 80,
-        .baseSpeed     = 85,
+        .baseHP        = 60,
+        .baseAttack    = 55,
+        .baseDefense   = 65,
+        .baseSpeed     = 70,
         .baseSpAttack  = 100,
-        .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_WATER, TYPE_DARK),
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_PSYCHIC),
+        .attribute = TYPE_VIRUS,
         .catchRate = 95,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 264 : 238,
-        .evYield_Attack = 3,
+        .expYield = 200,
+        .evYield_SpAttack = 3,
+        .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_SHARPNESS },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Skullgreymon"),
+        .abilities = { ABILITY_ADAPTABILITY, ABILITY_ANALYTIC, ABILITY_PSYCHIC_SURGE },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Vademon"),
         .cryId = CRY_SKULLGREYMON,
         .natDexNum = NATIONAL_DEX_SKULLGREYMON,
-        .categoryName = _("Formidable"),
-        .height = 15,
+        .categoryName = _("Alien"),
+        .height = 16,
         .weight = 582,
         .description = COMPOUND_STRING(
-            "Hard of heart and deft of blade,\n"
-            "this rare form of Skullgreymon is a\n"
-            "product of the Pokémon's evolution in the\n"
-            "region of Hisui."),
+            "The origin of Vademon is a point of\n"
+            "contention with scientists. Some believe\n"
+            "it is an alien that comes from space\n"
+            "while others believe it is from a seed"),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_SkullgreymonHisui,
+        .frontPic = gMonFrontPic_Vademon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_SkullgreymonHisui,
+        .backPic = gMonBackPic_Vademon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 8,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_SkullgreymonHisui,
-        .shinyPalette = gMonShinyPalette_SkullgreymonHisui,
-        .iconSprite = gMonIcon_SkullgreymonHisui,
+        .palette = gMonPalette_Vademon,
+        .shinyPalette = gMonShinyPalette_Vademon,
+        .iconSprite = gMonIcon_Vademon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 13, SHADOW_SIZE_L)
         FOOTPRINT(Skullgreymon)
         OVERWORLD(
-            sPicTable_SkullgreymonHisui,
+            sPicTable_Vademon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_SkullgreymonHisui,
-            gShinyOverworldPalette_SkullgreymonHisui
+            gOverworldPalette_Vademon,
+            gShinyOverworldPalette_Vademon
         )
         .isHisuianForm = TRUE,
-        .levelUpLearnset = sSkullgreymonHisuiLevelUpLearnset,
-        .teachableLearnset = sSkullgreymonHisuiTeachableLearnset,
+        .levelUpLearnset = sVademonLevelUpLearnset,
+        .teachableLearnset = sVademonTeachableLearnset,
         .formSpeciesIdTable = sSkullgreymonFormSpeciesIdTable,
     },
-#endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_METALMAMEMON
 
 #if P_FAMILY_PATRAT

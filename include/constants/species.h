@@ -1065,7 +1065,7 @@
 #define SPECIES_GABUMON_X_HISUI                        997
 #define SPECIES_MONMON_HISUI                          998
 #define SPECIES_MUSHROOMON_HISUI                           999
-#define SPECIES_SKULLGREYMON_HISUI                          1000
+#define SPECIES_VADEMON                          1000
 #define SPECIES_LILLIGANT_HISUI                         1001
 #define SPECIES_ZORUA_HISUI                             1002
 #define SPECIES_ZOROARK_HISUI                           1003

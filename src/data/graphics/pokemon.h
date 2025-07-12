@@ -16051,16 +16051,16 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_HISUIAN_FORMS
-    const u32 gMonFrontPic_SkullgreymonHisui[] = INCBIN_U32("graphics/pokemon/skullgreymon/hisui/front.4bpp.lz");
-    const u16 gMonPalette_SkullgreymonHisui[] = INCBIN_U16("graphics/pokemon/skullgreymon/hisui/normal.gbapal");
-    const u32 gMonBackPic_SkullgreymonHisui[] = INCBIN_U32("graphics/pokemon/skullgreymon/hisui/back.4bpp.lz");
-    const u16 gMonShinyPalette_SkullgreymonHisui[] = INCBIN_U16("graphics/pokemon/skullgreymon/hisui/shiny.gbapal");
-    const u8 gMonIcon_SkullgreymonHisui[] = INCBIN_U8("graphics/pokemon/skullgreymon/hisui/icon.4bpp");
+    const u32 gMonFrontPic_Vademon[] = INCBIN_U32("graphics/pokemon/vademon/front.4bpp.lz");
+    const u16 gMonPalette_Vademon[] = INCBIN_U16("graphics/pokemon/vademon/normal.gbapal");
+    const u32 gMonBackPic_Vademon[] = INCBIN_U32("graphics/pokemon/vademon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Vademon[] = INCBIN_U16("graphics/pokemon/vademon/shiny.gbapal");
+    const u8 gMonIcon_Vademon[] = INCBIN_U8("graphics/pokemon/vademon/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_SkullgreymonHisui[] = INCBIN_COMP("graphics/pokemon/skullgreymon/hisui/overworld.4bpp");
+    const u32 gObjectEventPic_Vademon[] = INCBIN_COMP("graphics/pokemon/vademon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_SkullgreymonHisui[] = INCBIN_U16("graphics/pokemon/skullgreymon/hisui/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_SkullgreymonHisui[] = INCBIN_U16("graphics/pokemon/skullgreymon/hisui/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Vademon[] = INCBIN_U16("graphics/pokemon/vademon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Vademon[] = INCBIN_U16("graphics/pokemon/vademon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_HISUIAN_FORMS

@@ -21335,7 +21335,7 @@ static const u16 sSkullgreymonTeachableLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const u16 sSkullgreymonHisuiTeachableLearnset[] = {
+static const u16 sVademonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
