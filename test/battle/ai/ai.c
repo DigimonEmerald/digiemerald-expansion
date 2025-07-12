@@ -1139,3 +1139,224 @@ AI_SINGLE_BATTLE_TEST("AI stays choice locked into moves in spite of the player'
         TURN { EXPECT_MOVE(opponent, aiMove); }
     }
 }
+
+AI_SINGLE_BATTLE_TEST("AI won't use Sucker Punch if it expects a move of the same priority bracket and the opponent is faster")
+{
+    GIVEN {
+        ASSUME(GetMovePriority(MOVE_QUICK_ATTACK) == 1);
+        ASSUME(GetMovePriority(MOVE_SUCKER_PUNCH) == 1);
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
+        PLAYER(SPECIES_LOPMONX) { Speed(300); Moves(MOVE_QUICK_ATTACK); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(100); Moves(MOVE_SUCKER_PUNCH, MOVE_SCRATCH); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_QUICK_ATTACK); EXPECT_MOVE(opponent, MOVE_SUCKER_PUNCH); }
+        TURN { MOVE(player, MOVE_QUICK_ATTACK); EXPECT_MOVE(opponent, MOVE_SCRATCH); }
+    }
+}
+
+AI_SINGLE_BATTLE_TEST("AI won't use thawing moves if target is frozen unless it is super effective or it has no other options")
+{
+    u32 aiFlags = 0; u32 status = 0; u32 aiMove = 0;
+    PARAMETRIZE { status = STATUS1_FREEZE;      aiMove = MOVE_SCALD;    aiFlags = 0; }
+    PARAMETRIZE { status = STATUS1_FREEZE;      aiMove = MOVE_SCALD;    aiFlags = AI_FLAG_CHECK_BAD_MOVE; }
+    PARAMETRIZE { status = STATUS1_FROSTBITE;   aiMove = MOVE_SCALD;    aiFlags = 0; }
+    PARAMETRIZE { status = STATUS1_FROSTBITE;   aiMove = MOVE_SCALD;    aiFlags = AI_FLAG_CHECK_BAD_MOVE; }
+    PARAMETRIZE { status = STATUS1_FREEZE;      aiMove = MOVE_EMBER;    aiFlags = 0; }
+    PARAMETRIZE { status = STATUS1_FREEZE;      aiMove = MOVE_EMBER;    aiFlags = AI_FLAG_CHECK_BAD_MOVE; }
+    PARAMETRIZE { status = STATUS1_FROSTBITE;   aiMove = MOVE_EMBER;    aiFlags = 0; }
+    PARAMETRIZE { status = STATUS1_FROSTBITE;   aiMove = MOVE_EMBER;    aiFlags = AI_FLAG_CHECK_BAD_MOVE; }
+
+    GIVEN {
+        ASSUME(GetMoveType(MOVE_EMBER) == TYPE_FIRE);
+        ASSUME(GetMoveCategory(MOVE_TACKLE) == DAMAGE_CATEGORY_PHYSICAL);
+        ASSUME(GetMoveCategory(MOVE_WATER_GUN) == DAMAGE_CATEGORY_SPECIAL);
+        ASSUME(gMovesInfo[MOVE_SCALD].thawsUser == TRUE);
+        AI_FLAGS(aiFlags | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
+        PLAYER(SPECIES_LOPMONX) { Moves(MOVE_TACKLE); Status1(status); }
+        OPPONENT(SPECIES_RELEMON) { Moves(MOVE_TACKLE, aiMove); }
+    } WHEN {
+        if (aiFlags == AI_FLAG_CHECK_BAD_MOVE)
+            TURN { MOVE(player, MOVE_TACKLE); EXPECT_MOVE(opponent, MOVE_TACKLE); }
+        else
+            TURN { MOVE(player, MOVE_TACKLE); EXPECT_MOVE(opponent, aiMove); }
+    }
+}
+
+AI_SINGLE_BATTLE_TEST("AI score for Mean Look will be decreased if target can escape")
+{
+    GIVEN {
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
+        PLAYER(SPECIES_ARGOMON_F) { Item(ITEM_SHED_SHELL); }
+        OPPONENT(SPECIES_ARGOMON_F) { Moves(MOVE_TACKLE, MOVE_MEAN_LOOK); }
+    } WHEN {
+        TURN { SCORE_EQ_VAL(opponent, MOVE_MEAN_LOOK, 90); }
+    }
+}
+
+AI_SINGLE_BATTLE_TEST("AI_FLAG_SMART_SWITCHING: AI considers Focus Sash when determining if it should switch out")
+{
+    GIVEN {
+        ASSUME(gItemsInfo[ITEM_FOCUS_SASH].holdEffect == HOLD_EFFECT_FOCUS_SASH);
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT);
+        PLAYER(SPECIES_VORVOMON) { Speed(10); Moves(MOVE_AIR_SLASH); }
+        OPPONENT(SPECIES_DARCMON) { Speed(1); Moves(MOVE_SCRATCH); }
+        OPPONENT(SPECIES_TAPIRMON) { Speed(1); Moves(MOVE_FLAMETHROWER); Item(ITEM_FOCUS_SASH); }
+        OPPONENT(SPECIES_GOTSUMON) { Speed(11); Moves(MOVE_SLUDGE); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_AIR_SLASH); EXPECT_MOVE(opponent, MOVE_SCRATCH); EXPECT_SEND_OUT(opponent, 1); }
+        TURN { MOVE(player, MOVE_AIR_SLASH); EXPECT_MOVE(opponent, MOVE_FLAMETHROWER); }
+    }
+}
+
+AI_SINGLE_BATTLE_TEST("AI sees popped Air Balloon")
+{
+    GIVEN {
+        ASSUME(GetItemHoldEffect(ITEM_AIR_BALLOON) == HOLD_EFFECT_AIR_BALLOON);
+        ASSUME(GetMoveType(MOVE_EARTHQUAKE) == TYPE_GROUND);
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT);
+        PLAYER(SPECIES_SYAKOMON_X) { Item(ITEM_AIR_BALLOON); Moves(MOVE_SCRATCH); }
+        OPPONENT(SPECIES_MONIMON) { Moves(MOVE_SCRATCH, MOVE_EARTHQUAKE); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_SCRATCH); EXPECT_MOVE(opponent, MOVE_SCRATCH); }
+        TURN { MOVE(player, MOVE_SCRATCH); EXPECT_MOVE(opponent, MOVE_EARTHQUAKE); }
+    }
+}
+
+AI_SINGLE_BATTLE_TEST("AI sees popped Air Balloon after Air Balloon mon switches out and back in")
+{
+    GIVEN {
+        ASSUME(GetItemHoldEffect(ITEM_AIR_BALLOON) == HOLD_EFFECT_AIR_BALLOON);
+        ASSUME(GetMoveType(MOVE_EARTHQUAKE) == TYPE_GROUND);
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT);
+        PLAYER(SPECIES_SYAKOMON_X) { Item(ITEM_AIR_BALLOON); Moves(MOVE_SCRATCH); }
+        PLAYER(SPECIES_SYAKOMON_X) { Item(ITEM_AIR_BALLOON); Moves(MOVE_SCRATCH); }
+        OPPONENT(SPECIES_MONIMON) { Moves(MOVE_SCRATCH, MOVE_EARTHQUAKE); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_SCRATCH); EXPECT_MOVE(opponent, MOVE_SCRATCH); }
+        TURN { SWITCH(player, 1); EXPECT_MOVE(opponent, MOVE_EARTHQUAKE); }
+        TURN { SWITCH(player, 0); EXPECT_MOVE(opponent, MOVE_SCRATCH); }
+        TURN { MOVE(player, MOVE_SCRATCH); EXPECT_MOVE(opponent, MOVE_EARTHQUAKE); SEND_OUT(player, 1); }
+    }
+}
+
+SINGLE_BATTLE_TEST("AI correctly records used moves")
+{
+    GIVEN {
+        PLAYER(SPECIES_LOPMONX) { Moves(MOVE_TACKLE, MOVE_GROWL, MOVE_FLOWER_TRICK, MOVE_TORCH_SONG); }
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_RAGE_FIST, MOVE_PSYCHIC, MOVE_SCRATCH, MOVE_EARTHQUAKE); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_TACKLE);       MOVE(opponent, MOVE_EARTHQUAKE); }
+        TURN { MOVE(player, MOVE_FLOWER_TRICK); MOVE(opponent, MOVE_SCRATCH);    }
+        TURN { MOVE(player, MOVE_TORCH_SONG);   MOVE(opponent, MOVE_PSYCHIC);    }
+        TURN { MOVE(player, MOVE_GROWL);        MOVE(opponent, MOVE_RAGE_FIST);  }
+    } THEN {
+        EXPECT_EQ(gBattleHistory->usedMoves[B_POSITION_PLAYER_LEFT][0], MOVE_TACKLE);
+        EXPECT_EQ(gBattleHistory->usedMoves[B_POSITION_PLAYER_LEFT][1], MOVE_GROWL);
+        EXPECT_EQ(gBattleHistory->usedMoves[B_POSITION_PLAYER_LEFT][2], MOVE_FLOWER_TRICK);
+        EXPECT_EQ(gBattleHistory->usedMoves[B_POSITION_PLAYER_LEFT][3], MOVE_TORCH_SONG);
+
+        EXPECT_EQ(gBattleHistory->usedMoves[B_POSITION_OPPONENT_LEFT][0], MOVE_RAGE_FIST);
+        EXPECT_EQ(gBattleHistory->usedMoves[B_POSITION_OPPONENT_LEFT][1], MOVE_PSYCHIC);
+        EXPECT_EQ(gBattleHistory->usedMoves[B_POSITION_OPPONENT_LEFT][2], MOVE_SCRATCH);
+        EXPECT_EQ(gBattleHistory->usedMoves[B_POSITION_OPPONENT_LEFT][3], MOVE_EARTHQUAKE);
+    }
+}
+
+AI_SINGLE_BATTLE_TEST("AI won't boost stats against opponent with Unaware")
+{
+    GIVEN {
+        MoveHasAdditionalEffectSelf(MOVE_SWORDS_DANCE, MOVE_EFFECT_ATK_PLUS_2);
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY);
+        PLAYER(SPECIES_KUDAMON_06) { Ability(ABILITY_UNAWARE); Moves(MOVE_TACKLE); }
+        OPPONENT(SPECIES_TOYAGUMON) { Moves(MOVE_BODY_SLAM, MOVE_SWORDS_DANCE); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_TACKLE); EXPECT_MOVE(opponent, MOVE_BODY_SLAM); }
+    }
+}
+
+AI_SINGLE_BATTLE_TEST("AI won't use status moves against opponents that would benefit")
+{
+    u32 aiMove;
+    PARAMETRIZE { aiMove = MOVE_WILL_O_WISP; }
+    PARAMETRIZE { aiMove = MOVE_TOXIC; }
+    PARAMETRIZE { aiMove = MOVE_THUNDER_WAVE; }
+    GIVEN {
+        ASSUME(GetMoveEffect(MOVE_WILL_O_WISP) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_WILL_O_WISP) == MOVE_EFFECT_BURN);
+        ASSUME(GetMoveEffect(MOVE_TOXIC) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_TOXIC) == MOVE_EFFECT_TOXIC);
+        ASSUME(GetMoveEffect(MOVE_THUNDER_WAVE) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_THUNDER_WAVE) == MOVE_EFFECT_PARALYSIS);
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
+        PLAYER(SPECIES_ANGELAMON) { Ability(ABILITY_GUTS); Moves(MOVE_TACKLE); }
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_TACKLE, aiMove); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_TACKLE); EXPECT_MOVE(opponent, MOVE_TACKLE); }
+    }
+}
+
+AI_SINGLE_BATTLE_TEST("AI sees that Primal weather can block a move by type")
+{
+    GIVEN {
+        ASSUME(GetMoveType(MOVE_HYDRO_PUMP) == TYPE_WATER);
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT);
+        PLAYER(SPECIES_GEKOMON) { Item(ITEM_RED_ORB); Moves(MOVE_SCRATCH); }
+        OPPONENT(SPECIES_CURIMON) { Moves(MOVE_HYDRO_PUMP, MOVE_POUND); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_SCRATCH); EXPECT_MOVE(opponent, MOVE_POUND); }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("AI sees opposing drain ability")
+{
+    GIVEN {
+        ASSUME(GetMoveType(MOVE_THUNDERBOLT) == TYPE_ELECTRIC);
+        ASSUME(GetMoveType(MOVE_RAZOR_LEAF) != TYPE_ELECTRIC);
+        ASSUME(GetMoveType(MOVE_METAL_CLAW) != TYPE_ELECTRIC);
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
+        PLAYER(SPECIES_PICHIMON) { Ability(ABILITY_LIGHTNING_ROD); Moves(MOVE_CELEBRATE); }
+        PLAYER(SPECIES_VIXIMON) { Ability(ABILITY_VOLT_ABSORB); Moves(MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_PICKMON_RED) { Moves(MOVE_THUNDERBOLT, MOVE_RAZOR_LEAF); }
+        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_THUNDERBOLT, MOVE_METAL_CLAW); }
+    } WHEN {
+        TURN {
+            NOT_EXPECT_MOVE(opponentLeft, MOVE_THUNDERBOLT);
+            NOT_EXPECT_MOVE(opponentRight, MOVE_THUNDERBOLT); }
+    }
+}
+
+AI_SINGLE_BATTLE_TEST("AI will not set up Weather if it wont have any affect")
+{
+    u32 ability;
+
+    PARAMETRIZE { ability = ABILITY_CLOUD_NINE; }
+    PARAMETRIZE { ability = ABILITY_DAMP; }
+
+    GIVEN {
+        ASSUME(GetMoveEffect(MOVE_RAIN_DANCE) == EFFECT_RAIN_DANCE);
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY);
+        PLAYER(SPECIES_DEMMERAMON) { Ability(ability); Moves(MOVE_SCRATCH); }
+        OPPONENT(SPECIES_DOTFALCMON) { Ability(ABILITY_SWIFT_SWIM); Moves(MOVE_RAIN_DANCE, MOVE_POUND); }
+    } WHEN {
+        if (ability == ABILITY_CLOUD_NINE)
+            TURN { MOVE(player, MOVE_SCRATCH); EXPECT_MOVE(opponent, MOVE_POUND); }
+        else
+            TURN { MOVE(player, MOVE_SCRATCH); EXPECT_MOVE(opponent, MOVE_RAIN_DANCE); }
+    }
+}
+
+AI_SINGLE_BATTLE_TEST("Move scoring comparison properly awards bonus point to best OHKO move")
+{
+    GIVEN {
+        ASSUME(MoveHasAdditionalEffect(MOVE_THUNDER, MOVE_EFFECT_PARALYSIS));
+        ASSUME(GetMoveAdditionalEffectCount(MOVE_WATER_SPOUT) == 0);
+        ASSUME(GetMoveAdditionalEffectCount(MOVE_WATER_GUN) == 0);
+        ASSUME(GetMoveAdditionalEffectCount(MOVE_ORIGIN_PULSE) == 0);
+        ASSUME(GetMoveAccuracy(MOVE_WATER_SPOUT) > GetMoveAccuracy(MOVE_THUNDER));
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY);
+        PLAYER(SPECIES_CHAMELEMON) { Level(50); }
+        OPPONENT(SPECIES_CHAMELEMON) { Moves(MOVE_THUNDER, MOVE_WATER_SPOUT, MOVE_WATER_GUN, MOVE_SURF); }
+    } WHEN {
+        TURN { EXPECT_MOVE(opponent, MOVE_WATER_SPOUT); }
+    }
+}
