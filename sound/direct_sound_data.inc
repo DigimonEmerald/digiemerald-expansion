@@ -2928,8 +2928,8 @@ Cry_Tyrannomon::
 	.incbin "sound/direct_sound_samples/cries/tyrannomon.bin"
 
 	.align 2
-Cry_Prinplup::
-	.incbin "sound/direct_sound_samples/cries/prinplup.bin"
+Cry_Vegiemon::
+	.incbin "sound/direct_sound_samples/cries/vegiemon.bin"
 
 	.align 2
 Cry_Empoleon::

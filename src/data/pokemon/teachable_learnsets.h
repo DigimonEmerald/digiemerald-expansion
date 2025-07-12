@@ -18368,7 +18368,7 @@ static const u16 sTyrannomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sPrinplupTeachableLearnset[] = {
+static const u16 sVegiemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,

@@ -14111,19 +14111,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Prinplup[] = INCBIN_U32("graphics/pokemon/prinplup/anim_front.4bpp.lz");
-    const u16 gMonPalette_Prinplup[] = INCBIN_U16("graphics/pokemon/prinplup/normal.gbapal");
-    const u32 gMonBackPic_Prinplup[] = INCBIN_U32("graphics/pokemon/prinplup/back.4bpp.lz");
-    const u16 gMonShinyPalette_Prinplup[] = INCBIN_U16("graphics/pokemon/prinplup/shiny.gbapal");
-    const u8 gMonIcon_Prinplup[] = INCBIN_U8("graphics/pokemon/prinplup/icon.4bpp");
+    const u32 gMonFrontPic_Vegiemon[] = INCBIN_U32("graphics/pokemon/vegiemon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Vegiemon[] = INCBIN_U16("graphics/pokemon/vegiemon/normal.gbapal");
+    const u32 gMonBackPic_Vegiemon[] = INCBIN_U32("graphics/pokemon/vegiemon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Vegiemon[] = INCBIN_U16("graphics/pokemon/vegiemon/shiny.gbapal");
+    const u8 gMonIcon_Vegiemon[] = INCBIN_U8("graphics/pokemon/vegiemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Prinplup[] = INCBIN_U8("graphics/pokemon/prinplup/footprint.1bpp");
+    const u8 gMonFootprint_Vegiemon[] = INCBIN_U8("graphics/pokemon/vegiemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Prinplup[] = INCBIN_COMP("graphics/pokemon/prinplup/overworld.4bpp");
+    const u32 gObjectEventPic_Vegiemon[] = INCBIN_COMP("graphics/pokemon/vegiemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Prinplup[] = INCBIN_U16("graphics/pokemon/prinplup/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Prinplup[] = INCBIN_U16("graphics/pokemon/prinplup/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Vegiemon[] = INCBIN_U16("graphics/pokemon/vegiemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Vegiemon[] = INCBIN_U16("graphics/pokemon/vegiemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

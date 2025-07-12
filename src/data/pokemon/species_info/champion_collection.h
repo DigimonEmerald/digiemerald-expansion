@@ -11703,48 +11703,46 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sTyrannomonLevelUpLearnset,
         .teachableLearnset = sTyrannomonTeachableLearnset,
         .eggMoveLearnset = sTyrannomonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_PRINPLUP}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_VEGIEMON}),
     },
 
-    [SPECIES_PRINPLUP] =
+    [SPECIES_VEGIEMON] =
     {
-        .baseHP        = 64,
-        .baseAttack    = 66,
-        .baseDefense   = 68,
+        .baseHP        = 70,
+        .baseAttack    = 60,
+        .baseDefense   = 80,
         .baseSpeed     = 50,
-        .baseSpAttack  = 81,
-        .baseSpDefense = 76,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 143,
-        .evYield_SpAttack = 2,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_GRASS),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense = 2,
+        .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
-    #if P_UPDATED_ABILITIES >= GEN_9
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_COMPETITIVE },
-    #else
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_DEFIANT },
-    #endif
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Prinplup"),
-        .cryId = CRY_PRINPLUP,
-        .natDexNum = NATIONAL_DEX_PRINPLUP,
-        .categoryName = _("Penguin"),
-        .height = 8,
-        .weight = 230,
+        .abilities = { ABILITY_HARVEST, ABILITY_RIPEN, ABILITY_PROTOSYNTHESIS },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Vegiemon"),
+        .cryId = CRY_VEGIEMON,
+        .natDexNum = NATIONAL_DEX_VEGIEMON,
+        .categoryName = _("Pitcher"),
+        .height = 9,
+        .weight = 269,
         .description = COMPOUND_STRING(
-            "Because every Prinplup considers itself\n"
-            "to be the most important, they can never\n"
-            "form a group. It searches for prey in\n"
-            "icy seas."),
+            "Although Vegiemon has an aggressive\n"
+            "temperament, it lacks the strength to\n"
+            "back it up. Instead it uses a sweet\n"
+            "scent to attract weaker Digimon."),
         .pokemonScale = 366,
         .pokemonOffset = 10,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Prinplup,
+        .frontPic = gMonFrontPic_Vegiemon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 7,
         .frontAnimFrames = ANIM_FRAMES(
@@ -11759,28 +11757,28 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 1),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Prinplup,
+        .backPic = gMonBackPic_Vegiemon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Prinplup,
-        .shinyPalette = gMonShinyPalette_Prinplup,
-        .iconSprite = gMonIcon_Prinplup,
+        .palette = gMonPalette_Vegiemon,
+        .shinyPalette = gMonShinyPalette_Vegiemon,
+        .iconSprite = gMonIcon_Vegiemon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 7, SHADOW_SIZE_M)
-        FOOTPRINT(Prinplup)
+        FOOTPRINT(Vegiemon)
         OVERWORLD(
-            sPicTable_Prinplup,
+            sPicTable_Vegiemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Prinplup,
-            gShinyOverworldPalette_Prinplup
+            gOverworldPalette_Vegiemon,
+            gShinyOverworldPalette_Vegiemon
         )
-        .levelUpLearnset = sPrinplupLevelUpLearnset,
-        .teachableLearnset = sPrinplupTeachableLearnset,
+        .levelUpLearnset = sVegiemonLevelUpLearnset,
+        .teachableLearnset = sVegiemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_EMPOLEON}),
     },
 
