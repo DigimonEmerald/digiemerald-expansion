@@ -1274,7 +1274,7 @@ gCryTable::
 .endif @ P_FAMILY_D_TYRANNOMON
 .if P_FAMILY_METALMAMEMON == TRUE
 	cry Cry_Metalmamemon
-	cry Cry_Dewott
+	cry Cry_Monzaemon
 	cry Cry_Samurott
 .endif @ P_FAMILY_METALMAMEMON
 .if P_FAMILY_PATRAT == TRUE
@@ -3702,7 +3702,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_D_TYRANNOMON
 .if P_FAMILY_METALMAMEMON == TRUE
 	cry_reverse Cry_Metalmamemon
-	cry_reverse Cry_Dewott
+	cry_reverse Cry_Monzaemon
 	cry_reverse Cry_Samurott
 .endif @ P_FAMILY_METALMAMEMON
 .if P_FAMILY_PATRAT == TRUE

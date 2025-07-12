@@ -2754,7 +2754,7 @@ $(POKEMONGFXDIR)/metalgreymon_virus/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/metalmamemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/dewott/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/monzaemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/samurott/overworld.4bpp: %.4bpp: %.png

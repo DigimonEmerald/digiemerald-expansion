@@ -3362,8 +3362,8 @@ Cry_Metalmamemon::
 	.incbin "sound/direct_sound_samples/cries/metalmamemon.bin"
 
 	.align 2
-Cry_Dewott::
-	.incbin "sound/direct_sound_samples/cries/dewott.bin"
+Cry_Monzaemon::
+	.incbin "sound/direct_sound_samples/cries/monzaemon.bin"
 
 	.align 2
 Cry_Samurott::

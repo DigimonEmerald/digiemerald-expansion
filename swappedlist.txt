@@ -412,5 +412,6 @@ Death Tyrannomon - Tepig
 Mamemon - Pignite
 MetalGreymon (Virus) - Emboar
 MetalMamemon - Oshawott
+Monzaemon - Dewott
 
 Mega List

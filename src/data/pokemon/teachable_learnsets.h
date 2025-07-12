@@ -21263,7 +21263,7 @@ static const u16 sMetalmamemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDewottTeachableLearnset[] = {
+static const u16 sMonzaemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,

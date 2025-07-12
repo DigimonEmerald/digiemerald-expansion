@@ -6337,7 +6337,7 @@ static const union AnimCmd sAnim_Metalmamemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Dewott_1[] =
+static const union AnimCmd sAnim_Monzaemon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 35),
@@ -11614,7 +11614,7 @@ SINGLE_ANIMATION(Metalgreymon_virus);
 #endif //P_FAMILY_D_TYRANNOMON
 #if P_FAMILY_METALMAMEMON
 SINGLE_ANIMATION(Metalmamemon);
-SINGLE_ANIMATION(Dewott);
+SINGLE_ANIMATION(Monzaemon);
 SINGLE_ANIMATION(Samurott);
 #if P_HISUIAN_FORMS
 SINGLE_ANIMATION(SamurottHisui);

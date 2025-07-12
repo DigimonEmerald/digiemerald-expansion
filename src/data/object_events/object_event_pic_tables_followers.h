@@ -3721,8 +3721,8 @@ static const struct SpriteFrameImage sPicTable_Metalgreymon_virus[] = {
 static const struct SpriteFrameImage sPicTable_Metalmamemon[] = {
     overworld_ascending_frames(gObjectEventPic_Metalmamemon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Dewott[] = {
-    overworld_ascending_frames(gObjectEventPic_Dewott, 4, 4),
+static const struct SpriteFrameImage sPicTable_Monzaemon[] = {
+    overworld_ascending_frames(gObjectEventPic_Monzaemon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Samurott[] = {
     overworld_ascending_frames(gObjectEventPic_Samurott, 4, 4),
