@@ -2757,7 +2757,7 @@ $(POKEMONGFXDIR)/metalmamemon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/monzaemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/samurott/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/skullgreymon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/patrat/overworld.4bpp: %.4bpp: %.png
@@ -4089,7 +4089,7 @@ $(POKEMONGFXDIR)/zorua/hisui/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/zoroark/hisui/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/samurott/hisui/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/skullgreymon/hisui/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/lilligant/hisui/overworld.4bpp: %.4bpp: %.png

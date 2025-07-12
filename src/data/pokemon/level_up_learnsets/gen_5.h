@@ -11206,7 +11206,7 @@ static const struct LevelUpMove sMonzaemonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sSamurottLevelUpLearnset[] = {
+static const struct LevelUpMove sSkullgreymonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_MEGAHORN),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
@@ -11231,7 +11231,7 @@ static const struct LevelUpMove sSamurottLevelUpLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const struct LevelUpMove sSamurottHisuiLevelUpLearnset[] = {
+static const struct LevelUpMove sSkullgreymonHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 6, MOVE_AQUA_JET),

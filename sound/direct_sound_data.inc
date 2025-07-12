@@ -3366,8 +3366,8 @@ Cry_Monzaemon::
 	.incbin "sound/direct_sound_samples/cries/monzaemon.bin"
 
 	.align 2
-Cry_Samurott::
-	.incbin "sound/direct_sound_samples/cries/samurott.bin"
+Cry_Skullgreymon::
+	.incbin "sound/direct_sound_samples/cries/skullgreymon.bin"
 .endif @ P_FAMILY_METALMAMEMON
 
 .if P_FAMILY_PATRAT == TRUE

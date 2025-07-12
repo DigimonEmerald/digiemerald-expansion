@@ -632,8 +632,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .cryId = CRY_MONZAEMON,
         .natDexNum = NATIONAL_DEX_MONZAEMON,
         .categoryName = _("Plush"),
-        .height = 90,
-        .weight = 1003,
+        .height = 27,
+        .weight = 411,
         .description = COMPOUND_STRING(
             "Monzaemon is shrouded in mystery. It\n"
             "looks like an intact bear plush toy so\n"
@@ -676,45 +676,48 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sMonzaemonLevelUpLearnset,
         .teachableLearnset = sMonzaemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SAMUROTT},
-                                {EVO_NONE, 0, SPECIES_SAMUROTT_HISUI}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SKULLGREYMON},
+                                {EVO_NONE, 0, SPECIES_SKULLGREYMON_HISUI}),
     },
 
-    [SPECIES_SAMUROTT] =
+    [SPECIES_SKULLGREYMON] =
     {
-        .baseHP        = 95,
-        .baseAttack    = 100,
-        .baseDefense   = 85,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 108,
+        .baseHP        = 120,
+        .baseAttack    = 110,
+        .baseDefense   = 75,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 120,
         .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_WATER),
+        .types = MON_TYPES(TYPE_GROUND, TYPE_GHOST),
+        .attribute = TYPE_VIRUS,
         .catchRate = 95,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 264 : 238,
-        .evYield_SpAttack = 3,
+        .expYield = 200,
+        .evYield_HP= 3,
+        .evYield_Attack = 1,
+        .evYield_SpAttack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_SHELL_ARMOR },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Samurott"),
-        .cryId = CRY_SAMUROTT,
-        .natDexNum = NATIONAL_DEX_SAMUROTT,
-        .categoryName = _("Formidable"),
-        .height = 15,
-        .weight = 946,
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_PRESSURE, ABILITY_BERSERK },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("SkullGreymon"),
+        .cryId = CRY_SKULLGREYMON,
+        .natDexNum = NATIONAL_DEX_SKULLGREYMON,
+        .categoryName = _("Skeleton"),
+        .height = 140,
+        .weight = 1961,
         .description = COMPOUND_STRING(
-            "One swing of the seamitars attached\n"
-            "to its armor can fell an opponent.\n"
-            "A simple glare from one of them is\n"
-            "enough to intimidate most enemies."),
+            "SkullGreymon are formed long past\n"
+            "Digimon who placed far too much\n"
+            "importance, with this and their size,\n"
+            "they are a considerable threat."),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Samurott,
+        .frontPic = gMonFrontPic_Skullgreymon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -722,33 +725,33 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Samurott,
+        .backPic = gMonBackPic_Skullgreymon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
-        .palette = gMonPalette_Samurott,
-        .shinyPalette = gMonShinyPalette_Samurott,
-        .iconSprite = gMonIcon_Samurott,
+        .palette = gMonPalette_Skullgreymon,
+        .shinyPalette = gMonShinyPalette_Skullgreymon,
+        .iconSprite = gMonIcon_Skullgreymon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 13, SHADOW_SIZE_L)
-        FOOTPRINT(Samurott)
+        FOOTPRINT(Skullgreymon)
         OVERWORLD(
-            sPicTable_Samurott,
+            sPicTable_Skullgreymon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Samurott,
-            gShinyOverworldPalette_Samurott
+            gOverworldPalette_Skullgreymon,
+            gShinyOverworldPalette_Skullgreymon
         )
-        .levelUpLearnset = sSamurottLevelUpLearnset,
-        .teachableLearnset = sSamurottTeachableLearnset,
-        .formSpeciesIdTable = sSamurottFormSpeciesIdTable,
+        .levelUpLearnset = sSkullgreymonLevelUpLearnset,
+        .teachableLearnset = sSkullgreymonTeachableLearnset,
+        .formSpeciesIdTable = sSkullgreymonFormSpeciesIdTable,
     },
 
 #if P_HISUIAN_FORMS
-    [SPECIES_SAMUROTT_HISUI] =
+    [SPECIES_SKULLGREYMON_HISUI] =
     {
         .baseHP        = 90,
         .baseAttack    = 108,
@@ -767,50 +770,50 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_SHARPNESS },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Samurott"),
-        .cryId = CRY_SAMUROTT,
-        .natDexNum = NATIONAL_DEX_SAMUROTT,
+        .speciesName = _("Skullgreymon"),
+        .cryId = CRY_SKULLGREYMON,
+        .natDexNum = NATIONAL_DEX_SKULLGREYMON,
         .categoryName = _("Formidable"),
         .height = 15,
         .weight = 582,
         .description = COMPOUND_STRING(
             "Hard of heart and deft of blade,\n"
-            "this rare form of Samurott is a\n"
+            "this rare form of Skullgreymon is a\n"
             "product of the Pokémon's evolution in the\n"
             "region of Hisui."),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_SamurottHisui,
+        .frontPic = gMonFrontPic_SkullgreymonHisui,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_SamurottHisui,
+        .backPic = gMonBackPic_SkullgreymonHisui,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 8,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_SamurottHisui,
-        .shinyPalette = gMonShinyPalette_SamurottHisui,
-        .iconSprite = gMonIcon_SamurottHisui,
+        .palette = gMonPalette_SkullgreymonHisui,
+        .shinyPalette = gMonShinyPalette_SkullgreymonHisui,
+        .iconSprite = gMonIcon_SkullgreymonHisui,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 13, SHADOW_SIZE_L)
-        FOOTPRINT(Samurott)
+        FOOTPRINT(Skullgreymon)
         OVERWORLD(
-            sPicTable_SamurottHisui,
+            sPicTable_SkullgreymonHisui,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_SamurottHisui,
-            gShinyOverworldPalette_SamurottHisui
+            gOverworldPalette_SkullgreymonHisui,
+            gShinyOverworldPalette_SkullgreymonHisui
         )
         .isHisuianForm = TRUE,
-        .levelUpLearnset = sSamurottHisuiLevelUpLearnset,
-        .teachableLearnset = sSamurottHisuiTeachableLearnset,
-        .formSpeciesIdTable = sSamurottFormSpeciesIdTable,
+        .levelUpLearnset = sSkullgreymonHisuiLevelUpLearnset,
+        .teachableLearnset = sSkullgreymonHisuiTeachableLearnset,
+        .formSpeciesIdTable = sSkullgreymonFormSpeciesIdTable,
     },
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_METALMAMEMON

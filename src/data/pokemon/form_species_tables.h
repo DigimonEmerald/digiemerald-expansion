@@ -1143,10 +1143,10 @@ static const u16 sArceusFormSpeciesIdTable[] = {
 #endif //P_FAMILY_ARCEUS
 
 #if P_FAMILY_METALMAMEMON
-static const u16 sSamurottFormSpeciesIdTable[] = {
-    SPECIES_SAMUROTT,
+static const u16 sSkullgreymonFormSpeciesIdTable[] = {
+    SPECIES_SKULLGREYMON,
 #if P_HISUIAN_FORMS
-    SPECIES_SAMUROTT_HISUI,
+    SPECIES_SKULLGREYMON_HISUI,
 #endif
     FORM_SPECIES_END,
 };

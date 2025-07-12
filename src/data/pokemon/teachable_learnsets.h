@@ -21297,7 +21297,7 @@ static const u16 sMonzaemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSamurottTeachableLearnset[] = {
+static const u16 sSkullgreymonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -21335,7 +21335,7 @@ static const u16 sSamurottTeachableLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const u16 sSamurottHisuiTeachableLearnset[] = {
+static const u16 sSkullgreymonHisuiTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,

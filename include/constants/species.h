@@ -520,7 +520,7 @@
 #define SPECIES_METALGREYMON_VIRUS                                  500
 #define SPECIES_METALMAMEMON                                501
 #define SPECIES_MONZAEMON                                  502
-#define SPECIES_SAMUROTT                                503
+#define SPECIES_SKULLGREYMON                                503
 #define SPECIES_PATRAT                                  504
 #define SPECIES_WATCHOG                                 505
 #define SPECIES_LILLIPUP                                506
@@ -1065,7 +1065,7 @@
 #define SPECIES_GABUMON_X_HISUI                        997
 #define SPECIES_MONMON_HISUI                          998
 #define SPECIES_MUSHROOMON_HISUI                           999
-#define SPECIES_SAMUROTT_HISUI                          1000
+#define SPECIES_SKULLGREYMON_HISUI                          1000
 #define SPECIES_LILLIGANT_HISUI                         1001
 #define SPECIES_ZORUA_HISUI                             1002
 #define SPECIES_ZOROARK_HISUI                           1003

@@ -415,5 +415,8 @@ Mamemon - Pignite
 MetalGreymon (Virus) - Emboar
 MetalMamemon - Oshawott
 Monzaemon - Dewott
+SkullGreymon - Samurott
 
 Mega List
+
+SPECIES NAME LENGTH MAX = 13

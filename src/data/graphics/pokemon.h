@@ -16034,33 +16034,33 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Samurott[] = INCBIN_U32("graphics/pokemon/samurott/anim_front.4bpp.lz");
-    const u16 gMonPalette_Samurott[] = INCBIN_U16("graphics/pokemon/samurott/normal.gbapal");
-    const u32 gMonBackPic_Samurott[] = INCBIN_U32("graphics/pokemon/samurott/back.4bpp.lz");
-    const u16 gMonShinyPalette_Samurott[] = INCBIN_U16("graphics/pokemon/samurott/shiny.gbapal");
-    const u8 gMonIcon_Samurott[] = INCBIN_U8("graphics/pokemon/samurott/icon.4bpp");
+    const u32 gMonFrontPic_Skullgreymon[] = INCBIN_U32("graphics/pokemon/skullgreymon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Skullgreymon[] = INCBIN_U16("graphics/pokemon/skullgreymon/normal.gbapal");
+    const u32 gMonBackPic_Skullgreymon[] = INCBIN_U32("graphics/pokemon/skullgreymon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Skullgreymon[] = INCBIN_U16("graphics/pokemon/skullgreymon/shiny.gbapal");
+    const u8 gMonIcon_Skullgreymon[] = INCBIN_U8("graphics/pokemon/skullgreymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Samurott[] = INCBIN_U8("graphics/pokemon/samurott/footprint.1bpp");
+    const u8 gMonFootprint_Skullgreymon[] = INCBIN_U8("graphics/pokemon/skullgreymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Samurott[] = INCBIN_COMP("graphics/pokemon/samurott/overworld.4bpp");
+    const u32 gObjectEventPic_Skullgreymon[] = INCBIN_COMP("graphics/pokemon/skullgreymon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Samurott[] = INCBIN_U16("graphics/pokemon/samurott/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Samurott[] = INCBIN_U16("graphics/pokemon/samurott/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Skullgreymon[] = INCBIN_U16("graphics/pokemon/skullgreymon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Skullgreymon[] = INCBIN_U16("graphics/pokemon/skullgreymon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_HISUIAN_FORMS
-    const u32 gMonFrontPic_SamurottHisui[] = INCBIN_U32("graphics/pokemon/samurott/hisui/front.4bpp.lz");
-    const u16 gMonPalette_SamurottHisui[] = INCBIN_U16("graphics/pokemon/samurott/hisui/normal.gbapal");
-    const u32 gMonBackPic_SamurottHisui[] = INCBIN_U32("graphics/pokemon/samurott/hisui/back.4bpp.lz");
-    const u16 gMonShinyPalette_SamurottHisui[] = INCBIN_U16("graphics/pokemon/samurott/hisui/shiny.gbapal");
-    const u8 gMonIcon_SamurottHisui[] = INCBIN_U8("graphics/pokemon/samurott/hisui/icon.4bpp");
+    const u32 gMonFrontPic_SkullgreymonHisui[] = INCBIN_U32("graphics/pokemon/skullgreymon/hisui/front.4bpp.lz");
+    const u16 gMonPalette_SkullgreymonHisui[] = INCBIN_U16("graphics/pokemon/skullgreymon/hisui/normal.gbapal");
+    const u32 gMonBackPic_SkullgreymonHisui[] = INCBIN_U32("graphics/pokemon/skullgreymon/hisui/back.4bpp.lz");
+    const u16 gMonShinyPalette_SkullgreymonHisui[] = INCBIN_U16("graphics/pokemon/skullgreymon/hisui/shiny.gbapal");
+    const u8 gMonIcon_SkullgreymonHisui[] = INCBIN_U8("graphics/pokemon/skullgreymon/hisui/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_SamurottHisui[] = INCBIN_COMP("graphics/pokemon/samurott/hisui/overworld.4bpp");
+    const u32 gObjectEventPic_SkullgreymonHisui[] = INCBIN_COMP("graphics/pokemon/skullgreymon/hisui/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_SamurottHisui[] = INCBIN_U16("graphics/pokemon/samurott/hisui/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_SamurottHisui[] = INCBIN_U16("graphics/pokemon/samurott/hisui/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_SkullgreymonHisui[] = INCBIN_U16("graphics/pokemon/skullgreymon/hisui/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_SkullgreymonHisui[] = INCBIN_U16("graphics/pokemon/skullgreymon/hisui/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_HISUIAN_FORMS

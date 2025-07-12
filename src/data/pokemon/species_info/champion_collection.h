@@ -11518,8 +11518,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .cryId = CRY_NUMEMON,
         .natDexNum = NATIONAL_DEX_NUMEMON,
         .categoryName = _("Mollusk"),
-        .height = 22,
-        .weight = 329,
+        .height = 6,
+        .weight = 151,
         .description = COMPOUND_STRING(
             "In dark, gloomy environments, you can\n"
             "often find Numemon colonies. When they\n"
@@ -11590,7 +11590,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .cryId = CRY_SEADRAMON,
         .natDexNum = NATIONAL_DEX_SEADRAMON,
         .categoryName = _("Sea Dragon"),
-        .height = 266,
+        .height = 81,
         .weight = 1285,
         .description = COMPOUND_STRING(
             "Using its long body, Seadramon wreathes\n"
