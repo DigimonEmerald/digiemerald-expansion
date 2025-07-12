@@ -400,7 +400,7 @@
 #define SPECIES_KABUTERIMON                                389
 #define SPECIES_MERAMON                                390
 #define SPECIES_NUMEMON                                391
-#define SPECIES_INFERNAPE                               392
+#define SPECIES_SEADRAMON                               392
 #define SPECIES_PIPLUP                                  393
 #define SPECIES_PRINPLUP                                394
 #define SPECIES_EMPOLEON                                395

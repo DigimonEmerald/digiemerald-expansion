@@ -402,6 +402,7 @@ Greymon - Grotle
 Kabuterimon - Torterra
 Meramon - Chimchar
 Numemon - Monferno
+Seadramon - Infernape
 
 Ultimate List
 

@@ -14077,19 +14077,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Infernape[] = INCBIN_U32("graphics/pokemon/infernape/anim_front.4bpp.lz");
-    const u16 gMonPalette_Infernape[] = INCBIN_U16("graphics/pokemon/infernape/normal.gbapal");
-    const u32 gMonBackPic_Infernape[] = INCBIN_U32("graphics/pokemon/infernape/back.4bpp.lz");
-    const u16 gMonShinyPalette_Infernape[] = INCBIN_U16("graphics/pokemon/infernape/shiny.gbapal");
-    const u8 gMonIcon_Infernape[] = INCBIN_U8("graphics/pokemon/infernape/icon.4bpp");
+    const u32 gMonFrontPic_Seadramon[] = INCBIN_U32("graphics/pokemon/seadramon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Seadramon[] = INCBIN_U16("graphics/pokemon/seadramon/normal.gbapal");
+    const u32 gMonBackPic_Seadramon[] = INCBIN_U32("graphics/pokemon/seadramon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Seadramon[] = INCBIN_U16("graphics/pokemon/seadramon/shiny.gbapal");
+    const u8 gMonIcon_Seadramon[] = INCBIN_U8("graphics/pokemon/seadramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Infernape[] = INCBIN_U8("graphics/pokemon/infernape/footprint.1bpp");
+    const u8 gMonFootprint_Seadramon[] = INCBIN_U8("graphics/pokemon/seadramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Infernape[] = INCBIN_COMP("graphics/pokemon/infernape/overworld.4bpp");
+    const u32 gObjectEventPic_Seadramon[] = INCBIN_COMP("graphics/pokemon/seadramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Infernape[] = INCBIN_U16("graphics/pokemon/infernape/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Infernape[] = INCBIN_U16("graphics/pokemon/infernape/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Seadramon[] = INCBIN_U16("graphics/pokemon/seadramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Seadramon[] = INCBIN_U16("graphics/pokemon/seadramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MERAMON

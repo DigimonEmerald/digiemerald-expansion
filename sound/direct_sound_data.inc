@@ -2918,8 +2918,8 @@ Cry_Numemon::
 	.incbin "sound/direct_sound_samples/cries/numemon.bin"
 
 	.align 2
-Cry_Infernape::
-	.incbin "sound/direct_sound_samples/cries/infernape.bin"
+Cry_Seadramon::
+	.incbin "sound/direct_sound_samples/cries/seadramon.bin"
 .endif @ P_FAMILY_MERAMON
 
 .if P_FAMILY_PIPLUP == TRUE

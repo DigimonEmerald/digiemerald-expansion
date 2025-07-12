@@ -11562,52 +11562,46 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sNumemonLevelUpLearnset,
         .teachableLearnset = sNumemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_INFERNAPE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SEADRAMON}),
     },
 
-    [SPECIES_INFERNAPE] =
+    [SPECIES_SEADRAMON] =
     {
-        .baseHP        = 76,
-        .baseAttack    = 104,
-        .baseDefense   = 71,
-        .baseSpeed     = 108,
-        .baseSpAttack  = 104,
-        .baseSpDefense = 71,
-        .types = MON_TYPES(TYPE_FIRE, TYPE_FIGHTING),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 267,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 240,
-    #else
-        .expYield = 209,
-    #endif
-        .evYield_Attack = 1,
-        .evYield_Speed = 1,
-        .evYield_SpAttack = 1,
+        .baseHP        = 70,
+        .baseAttack    = 65,
+        .baseDefense   = 55,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_WATER, TYPE_DRAGON),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed = 2,
+        .evYield_SpAttack = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_IRON_FIST },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Infernape"),
-        .cryId = CRY_INFERNAPE,
-        .natDexNum = NATIONAL_DEX_INFERNAPE,
-        .categoryName = _("Flame"),
-        .height = 12,
-        .weight = 550,
+        .abilities = { ABILITY_RAIN_DISH, ABILITY_WATER_ABSORB, ABILITY_COMPETITIVE },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Seadramon"),
+        .cryId = CRY_SEADRAMON,
+        .natDexNum = NATIONAL_DEX_SEADRAMON,
+        .categoryName = _("Sea Dragon"),
+        .height = 266,
+        .weight = 1285,
         .description = COMPOUND_STRING(
-            "Its crown of fire is indicative of its\n"
-            "fiery nature. It uses a special kind of\n"
-            "martial arts involving all of its limbs to\n"
-            "take on any opponent."),
+            "Using its long body, Seadramon wreathes\n"
+            "itself around enemies and constricts them\n"
+            "until they suffocate. It instinctually\n"
+            "swims around in the Net Ocean hunting."),
         .pokemonScale = 282,
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Infernape,
+        .frontPic = gMonFrontPic_Seadramon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
         .frontAnimFrames = ANIM_FRAMES(
@@ -11616,28 +11610,28 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Infernape,
+        .backPic = gMonBackPic_Seadramon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_RED,
-        .palette = gMonPalette_Infernape,
-        .shinyPalette = gMonShinyPalette_Infernape,
-        .iconSprite = gMonIcon_Infernape,
+        .palette = gMonPalette_Seadramon,
+        .shinyPalette = gMonShinyPalette_Seadramon,
+        .iconSprite = gMonIcon_Seadramon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 9, SHADOW_SIZE_L)
-        FOOTPRINT(Infernape)
+        FOOTPRINT(Seadramon)
         OVERWORLD(
-            sPicTable_Infernape,
+            sPicTable_Seadramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Infernape,
-            gShinyOverworldPalette_Infernape
+            gOverworldPalette_Seadramon,
+            gShinyOverworldPalette_Seadramon
         )
-        .levelUpLearnset = sInfernapeLevelUpLearnset,
-        .teachableLearnset = sInfernapeTeachableLearnset,
+        .levelUpLearnset = sSeadramonLevelUpLearnset,
+        .teachableLearnset = sSeadramonTeachableLearnset,
     },
 #endif //P_FAMILY_MERAMON
 

@@ -18285,7 +18285,7 @@ static const u16 sNumemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sInfernapeTeachableLearnset[] = {
+static const u16 sSeadramonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,

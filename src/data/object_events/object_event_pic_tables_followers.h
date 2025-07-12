@@ -3092,8 +3092,8 @@ static const struct SpriteFrameImage sPicTable_Meramon[] = {
 static const struct SpriteFrameImage sPicTable_Numemon[] = {
     overworld_ascending_frames(gObjectEventPic_Numemon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Infernape[] = {
-    overworld_ascending_frames(gObjectEventPic_Infernape, 4, 4),
+static const struct SpriteFrameImage sPicTable_Seadramon[] = {
+    overworld_ascending_frames(gObjectEventPic_Seadramon, 4, 4),
 };
 #endif //P_FAMILY_MERAMON
 
