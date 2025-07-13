@@ -16100,20 +16100,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_ANDROMON
 
-#if P_FAMILY_LILLIPUP
-    const u32 gMonFrontPic_Lillipup[] = INCBIN_U32("graphics/pokemon/lillipup/anim_front.4bpp.lz");
-    const u16 gMonPalette_Lillipup[] = INCBIN_U16("graphics/pokemon/lillipup/normal.gbapal");
-    const u32 gMonBackPic_Lillipup[] = INCBIN_U32("graphics/pokemon/lillipup/back.4bpp.lz");
-    const u16 gMonShinyPalette_Lillipup[] = INCBIN_U16("graphics/pokemon/lillipup/shiny.gbapal");
-    const u8 gMonIcon_Lillipup[] = INCBIN_U8("graphics/pokemon/lillipup/icon.4bpp");
+#if P_FAMILY_SCORPIOMON
+    const u32 gMonFrontPic_Scorpiomon[] = INCBIN_U32("graphics/pokemon/scorpiomon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Scorpiomon[] = INCBIN_U16("graphics/pokemon/scorpiomon/normal.gbapal");
+    const u32 gMonBackPic_Scorpiomon[] = INCBIN_U32("graphics/pokemon/scorpiomon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Scorpiomon[] = INCBIN_U16("graphics/pokemon/scorpiomon/shiny.gbapal");
+    const u8 gMonIcon_Scorpiomon[] = INCBIN_U8("graphics/pokemon/scorpiomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Lillipup[] = INCBIN_U8("graphics/pokemon/lillipup/footprint.1bpp");
+    const u8 gMonFootprint_Scorpiomon[] = INCBIN_U8("graphics/pokemon/scorpiomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Lillipup[] = INCBIN_COMP("graphics/pokemon/lillipup/overworld.4bpp");
+    const u32 gObjectEventPic_Scorpiomon[] = INCBIN_COMP("graphics/pokemon/scorpiomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Lillipup[] = INCBIN_U16("graphics/pokemon/lillipup/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Lillipup[] = INCBIN_U16("graphics/pokemon/lillipup/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Scorpiomon[] = INCBIN_U16("graphics/pokemon/scorpiomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Scorpiomon[] = INCBIN_U16("graphics/pokemon/scorpiomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16148,7 +16148,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Stoutland[] = INCBIN_U16("graphics/pokemon/stoutland/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_LILLIPUP
+#endif //P_FAMILY_SCORPIOMON
 
 #if P_FAMILY_PURRLOIN
     const u32 gMonFrontPic_Purrloin[] = INCBIN_U32("graphics/pokemon/purrloin/anim_front.4bpp.lz");

@@ -964,42 +964,45 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_ANDROMON
 
-#if P_FAMILY_LILLIPUP
-    [SPECIES_LILLIPUP] =
+#if P_FAMILY_SCORPIOMON
+    [SPECIES_SCORPIOMON] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 60,
-        .baseDefense   = 45,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_NORMAL),
+        .baseHP        = 90,
+        .baseAttack    = 110,
+        .baseDefense   = 90,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_WATER),
+        .attribute = TYPE_DATA,
         .catchRate = 95,
-        .expYield = 55,
-        .evYield_Attack = 1,
+        .expYield = 200,
+        .evYield_HP = 1,
+        .evYield_Attack = 3,
+        .evYield_Defense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_VITAL_SPIRIT, ABILITY_PICKUP, ABILITY_RUN_AWAY },
+        .abilities = { ABILITY_ANGER_SHELL, ABILITY_SHARPNESS, ABILITY_IMMUNITY },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Lillipup"),
-        .cryId = CRY_LILLIPUP,
-        .natDexNum = NATIONAL_DEX_LILLIPUP,
-        .categoryName = _("Puppy"),
-        .height = 4,
-        .weight = 41,
+        .speciesName = _("Scorpiomon"),
+        .cryId = CRY_SCORPIOMON,
+        .natDexNum = NATIONAL_DEX_SCORPIOMON,
+        .categoryName = _("Arthropod"),
+        .height = 135,
+        .weight = 2394,
         .description = COMPOUND_STRING(
-            "It faces strong opponents with great\n"
-            "courage. Because it doesn't yelp, it's\n"
-            "extremely popular with Trainers who live\n"
-            "in apartment buildings."),
+            "Using the tentacles that grow from its\n"
+            "head, Scorpiomon catches its prey and\n"
+            "uses the sharp blade on its tail\n"
+            "to kill."),
         .pokemonScale = 491,
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Lillipup,
+        .frontPic = gMonFrontPic_Scorpiomon,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = 12,
         .frontAnimFrames = ANIM_FRAMES(
@@ -1012,29 +1015,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 11),
         ),
         .frontAnimId = ANIM_H_JUMPS,
-        .backPic = gMonBackPic_Lillipup,
+        .backPic = gMonBackPic_Scorpiomon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Lillipup,
-        .shinyPalette = gMonShinyPalette_Lillipup,
-        .iconSprite = gMonIcon_Lillipup,
+        .palette = gMonPalette_Scorpiomon,
+        .shinyPalette = gMonShinyPalette_Scorpiomon,
+        .iconSprite = gMonIcon_Scorpiomon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(2, 1, SHADOW_SIZE_S)
-        FOOTPRINT(Lillipup)
+        FOOTPRINT(Scorpiomon)
         OVERWORLD(
-            sPicTable_Lillipup,
+            sPicTable_Scorpiomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Lillipup,
-            gShinyOverworldPalette_Lillipup
+            gOverworldPalette_Scorpiomon,
+            gShinyOverworldPalette_Scorpiomon
         )
-        .levelUpLearnset = sLillipupLevelUpLearnset,
-        .teachableLearnset = sLillipupTeachableLearnset,
-        .eggMoveLearnset = sLillipupEggMoveLearnset,
+        .levelUpLearnset = sScorpiomonLevelUpLearnset,
+        .teachableLearnset = sScorpiomonTeachableLearnset,
+        .eggMoveLearnset = sScorpiomonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_HERDIER}),
     },
 
@@ -1183,7 +1186,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sStoutlandLevelUpLearnset,
         .teachableLearnset = sStoutlandTeachableLearnset,
     },
-#endif //P_FAMILY_LILLIPUP
+#endif //P_FAMILY_SCORPIOMON
 
 #if P_FAMILY_PURRLOIN
     [SPECIES_PURRLOIN] =

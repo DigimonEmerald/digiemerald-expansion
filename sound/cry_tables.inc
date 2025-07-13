@@ -1281,11 +1281,11 @@ gCryTable::
 	cry Cry_Andromon
 	cry Cry_Angewomon
 .endif @ P_FAMILY_ANDROMON
-.if P_FAMILY_LILLIPUP == TRUE
-	cry Cry_Lillipup
+.if P_FAMILY_SCORPIOMON == TRUE
+	cry Cry_Scorpiomon
 	cry Cry_Herdier
 	cry Cry_Stoutland
-.endif @ P_FAMILY_LILLIPUP
+.endif @ P_FAMILY_SCORPIOMON
 .if P_FAMILY_PURRLOIN == TRUE
 	cry Cry_Purrloin
 	cry Cry_Liepard
@@ -3709,11 +3709,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Andromon
 	cry_reverse Cry_Angewomon
 .endif @ P_FAMILY_ANDROMON
-.if P_FAMILY_LILLIPUP == TRUE
-	cry_reverse Cry_Lillipup
+.if P_FAMILY_SCORPIOMON == TRUE
+	cry_reverse Cry_Scorpiomon
 	cry_reverse Cry_Herdier
 	cry_reverse Cry_Stoutland
-.endif @ P_FAMILY_LILLIPUP
+.endif @ P_FAMILY_SCORPIOMON
 .if P_FAMILY_PURRLOIN == TRUE
 	cry_reverse Cry_Purrloin
 	cry_reverse Cry_Liepard

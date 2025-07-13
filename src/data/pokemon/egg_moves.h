@@ -3970,8 +3970,8 @@ static const u16 sAndromonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_ANDROMON
 
-#if P_FAMILY_LILLIPUP
-static const u16 sLillipupEggMoveLearnset[] = {
+#if P_FAMILY_SCORPIOMON
+static const u16 sScorpiomonEggMoveLearnset[] = {
     MOVE_HOWL,
     MOVE_SAND_ATTACK,
     MOVE_MUD_SLAP,
@@ -3987,7 +3987,7 @@ static const u16 sLillipupEggMoveLearnset[] = {
     MOVE_PSYCHIC_FANGS,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_LILLIPUP
+#endif //P_FAMILY_SCORPIOMON
 
 #if P_FAMILY_PURRLOIN
 static const u16 sPurrloinEggMoveLearnset[] = {

@@ -3380,10 +3380,10 @@ Cry_Angewomon::
 	.incbin "sound/direct_sound_samples/cries/angewomon.bin"
 .endif @ P_FAMILY_ANDROMON
 
-.if P_FAMILY_LILLIPUP == TRUE
+.if P_FAMILY_SCORPIOMON == TRUE
 	.align 2
-Cry_Lillipup::
-	.incbin "sound/direct_sound_samples/cries/lillipup.bin"
+Cry_Scorpiomon::
+	.incbin "sound/direct_sound_samples/cries/scorpiomon.bin"
 
 	.align 2
 Cry_Herdier::
@@ -3392,7 +3392,7 @@ Cry_Herdier::
 	.align 2
 Cry_Stoutland::
 	.incbin "sound/direct_sound_samples/cries/stoutland.bin"
-.endif @ P_FAMILY_LILLIPUP
+.endif @ P_FAMILY_SCORPIOMON
 
 .if P_FAMILY_PURRLOIN == TRUE
 	.align 2
