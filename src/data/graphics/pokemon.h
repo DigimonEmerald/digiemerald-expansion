@@ -14127,19 +14127,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Empoleon[] = INCBIN_U32("graphics/pokemon/empoleon/anim_front.4bpp.lz");
-    const u16 gMonPalette_Empoleon[] = INCBIN_U16("graphics/pokemon/empoleon/normal.gbapal");
-    const u32 gMonBackPic_Empoleon[] = INCBIN_U32("graphics/pokemon/empoleon/back.4bpp.lz");
-    const u16 gMonShinyPalette_Empoleon[] = INCBIN_U16("graphics/pokemon/empoleon/shiny.gbapal");
-    const u8 gMonIcon_Empoleon[] = INCBIN_U8("graphics/pokemon/empoleon/icon.4bpp");
+    const u32 gMonFrontPic_Whamon[] = INCBIN_U32("graphics/pokemon/whamon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Whamon[] = INCBIN_U16("graphics/pokemon/whamon/normal.gbapal");
+    const u32 gMonBackPic_Whamon[] = INCBIN_U32("graphics/pokemon/whamon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Whamon[] = INCBIN_U16("graphics/pokemon/whamon/shiny.gbapal");
+    const u8 gMonIcon_Whamon[] = INCBIN_U8("graphics/pokemon/whamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Empoleon[] = INCBIN_U8("graphics/pokemon/empoleon/footprint.1bpp");
+    const u8 gMonFootprint_Whamon[] = INCBIN_U8("graphics/pokemon/whamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Empoleon[] = INCBIN_COMP("graphics/pokemon/empoleon/overworld.4bpp");
+    const u32 gObjectEventPic_Whamon[] = INCBIN_COMP("graphics/pokemon/whamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Empoleon[] = INCBIN_U16("graphics/pokemon/empoleon/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Empoleon[] = INCBIN_U16("graphics/pokemon/empoleon/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Whamon[] = INCBIN_U16("graphics/pokemon/whamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Whamon[] = INCBIN_U16("graphics/pokemon/whamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_TYRANNOMON

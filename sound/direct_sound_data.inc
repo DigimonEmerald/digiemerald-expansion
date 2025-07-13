@@ -2932,8 +2932,8 @@ Cry_Vegiemon::
 	.incbin "sound/direct_sound_samples/cries/vegiemon.bin"
 
 	.align 2
-Cry_Empoleon::
-	.incbin "sound/direct_sound_samples/cries/empoleon.bin"
+Cry_Whamon::
+	.incbin "sound/direct_sound_samples/cries/whamon.bin"
 .endif @ P_FAMILY_TYRANNOMON
 
 .if P_FAMILY_STARLY == TRUE

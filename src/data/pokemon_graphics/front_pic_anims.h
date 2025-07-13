@@ -5336,7 +5336,7 @@ static const union AnimCmd sAnim_Vegiemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Empoleon_1[] =
+static const union AnimCmd sAnim_Whamon_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 36),
@@ -11424,7 +11424,7 @@ SINGLE_ANIMATION(Seadramon);
 #if P_FAMILY_TYRANNOMON
 SINGLE_ANIMATION(Tyrannomon);
 SINGLE_ANIMATION(Vegiemon);
-SINGLE_ANIMATION(Empoleon);
+SINGLE_ANIMATION(Whamon);
 #endif //P_FAMILY_TYRANNOMON
 #if P_FAMILY_STARLY
 SINGLE_ANIMATION(Starly);

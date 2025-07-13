@@ -46,7 +46,7 @@ SINGLE_BATTLE_TEST("Revelation Dance changes its type depending on the user's 2n
 {
     GIVEN {
         PLAYER(SPECIES_ORICORIO_BAILE);
-        OPPONENT(SPECIES_EMPOLEON);
+        OPPONENT(SPECIES_WHAMON);
     } WHEN {
         TURN { MOVE(player, MOVE_BURN_UP); }
         TURN { MOVE(player, MOVE_REVELATION_DANCE); }

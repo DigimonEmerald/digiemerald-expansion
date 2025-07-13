@@ -11779,54 +11779,45 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sVegiemonLevelUpLearnset,
         .teachableLearnset = sVegiemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_EMPOLEON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_WHAMON}),
     },
 
-    [SPECIES_EMPOLEON] =
+    [SPECIES_WHAMON] =
     {
-        .baseHP        = 84,
-        .baseAttack    = 86,
-        .baseDefense   = 88,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 111,
-        .baseSpDefense = 101,
-        .types = MON_TYPES(TYPE_WATER, TYPE_STEEL),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 265,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 239,
-    #else
-        .expYield = 210,
-    #endif
+        .baseHP        = 110,
+        .baseAttack    = 50,
+        .baseDefense   = 70,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_WATER),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
         .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
-    #if P_UPDATED_ABILITIES >= GEN_9
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_COMPETITIVE },
-    #else
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_DEFIANT },
-    #endif
+        .abilities = { ABILITY_THICK_FAT, ABILITY_OBLIVIOUS, ABILITY_DRIZZLE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Empoleon"),
-        .cryId = CRY_EMPOLEON,
-        .natDexNum = NATIONAL_DEX_EMPOLEON,
-        .categoryName = _("Emperor"),
-        .height = 17,
-        .weight = 845,
+        .speciesName = _("Whamon"),
+        .cryId = CRY_WHAMON,
+        .natDexNum = NATIONAL_DEX_WHAMON,
+        .categoryName = _("Whale"),
+        .height = 90,
+        .weight = 3196,
         .description = COMPOUND_STRING(
-            "The three horns that extend from its\n"
-            "beak attest to its power. It avoids\n"
-            "unnecessary disputes, but it will decimate\n"
-            "anything that threatens its pride."),
+            "Often found in the deepest regions of \n"
+            "the Net Ocean, Whamon are ferocious Digimon\n"
+            "that will with tsunamis. It is believed\n"
+            "to be quick to attack due its weak eyes."),
         .pokemonScale = 259,
         .pokemonOffset = 0,
         .trainerScale = 290,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Empoleon,
+        .frontPic = gMonFrontPic_Whamon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -11835,28 +11826,28 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Empoleon,
+        .backPic = gMonBackPic_Whamon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
-        .palette = gMonPalette_Empoleon,
-        .shinyPalette = gMonShinyPalette_Empoleon,
-        .iconSprite = gMonIcon_Empoleon,
+        .palette = gMonPalette_Whamon,
+        .shinyPalette = gMonShinyPalette_Whamon,
+        .iconSprite = gMonIcon_Whamon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 12, SHADOW_SIZE_M)
-        FOOTPRINT(Empoleon)
+        FOOTPRINT(Whamon)
         OVERWORLD(
-            sPicTable_Empoleon,
+            sPicTable_Whamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Empoleon,
-            gShinyOverworldPalette_Empoleon
+            gOverworldPalette_Whamon,
+            gShinyOverworldPalette_Whamon
         )
-        .levelUpLearnset = sEmpoleonLevelUpLearnset,
-        .teachableLearnset = sEmpoleonTeachableLearnset,
+        .levelUpLearnset = sWhamonLevelUpLearnset,
+        .teachableLearnset = sWhamonTeachableLearnset,
     },
 #endif //P_FAMILY_TYRANNOMON
 

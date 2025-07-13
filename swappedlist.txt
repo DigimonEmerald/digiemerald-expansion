@@ -405,6 +405,7 @@ Numemon - Monferno
 Seadramon - Infernape
 Tyrannomon - Piplup
 Vegiemon - Prinplup
+Whamon - Empoleon
 
 Ultimate List
 

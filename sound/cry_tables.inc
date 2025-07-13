@@ -1093,7 +1093,7 @@ gCryTable::
 .if P_FAMILY_TYRANNOMON == TRUE
 	cry Cry_Tyrannomon
 	cry Cry_Vegiemon
-	cry Cry_Empoleon
+	cry Cry_Whamon
 .endif @ P_FAMILY_TYRANNOMON
 .if P_FAMILY_STARLY == TRUE
 	cry Cry_Starly
@@ -3521,7 +3521,7 @@ gCryTable_Reverse::
 .if P_FAMILY_TYRANNOMON == TRUE
 	cry_reverse Cry_Tyrannomon
 	cry_reverse Cry_Vegiemon
-	cry_reverse Cry_Empoleon
+	cry_reverse Cry_Whamon
 .endif @ P_FAMILY_TYRANNOMON
 .if P_FAMILY_STARLY == TRUE
 	cry_reverse Cry_Starly

@@ -403,7 +403,7 @@
 #define SPECIES_SEADRAMON                               392
 #define SPECIES_TYRANNOMON                                  393
 #define SPECIES_VEGIEMON                                394
-#define SPECIES_EMPOLEON                                395
+#define SPECIES_WHAMON                                395
 #define SPECIES_STARLY                                  396
 #define SPECIES_STARAVIA                                397
 #define SPECIES_STARAPTOR                               398
