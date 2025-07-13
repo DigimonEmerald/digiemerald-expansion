@@ -16083,19 +16083,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Watchog[] = INCBIN_U32("graphics/pokemon/watchog/anim_front.4bpp.lz");
-    const u16 gMonPalette_Watchog[] = INCBIN_U16("graphics/pokemon/watchog/normal.gbapal");
-    const u32 gMonBackPic_Watchog[] = INCBIN_U32("graphics/pokemon/watchog/back.4bpp.lz");
-    const u16 gMonShinyPalette_Watchog[] = INCBIN_U16("graphics/pokemon/watchog/shiny.gbapal");
-    const u8 gMonIcon_Watchog[] = INCBIN_U8("graphics/pokemon/watchog/icon.4bpp");
+    const u32 gMonFrontPic_Angewomon[] = INCBIN_U32("graphics/pokemon/angewomon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Angewomon[] = INCBIN_U16("graphics/pokemon/angewomon/normal.gbapal");
+    const u32 gMonBackPic_Angewomon[] = INCBIN_U32("graphics/pokemon/angewomon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Angewomon[] = INCBIN_U16("graphics/pokemon/angewomon/shiny.gbapal");
+    const u8 gMonIcon_Angewomon[] = INCBIN_U8("graphics/pokemon/angewomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Watchog[] = INCBIN_U8("graphics/pokemon/watchog/footprint.1bpp");
+    const u8 gMonFootprint_Angewomon[] = INCBIN_U8("graphics/pokemon/angewomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Watchog[] = INCBIN_COMP("graphics/pokemon/watchog/overworld.4bpp");
+    const u32 gObjectEventPic_Angewomon[] = INCBIN_COMP("graphics/pokemon/angewomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Watchog[] = INCBIN_U16("graphics/pokemon/watchog/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Watchog[] = INCBIN_U16("graphics/pokemon/watchog/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Angewomon[] = INCBIN_U16("graphics/pokemon/angewomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Angewomon[] = INCBIN_U16("graphics/pokemon/angewomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_ANDROMON

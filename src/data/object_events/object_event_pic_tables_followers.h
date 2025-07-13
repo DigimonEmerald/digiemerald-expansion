@@ -3738,8 +3738,8 @@ static const struct SpriteFrameImage sPicTable_Vademon[] = {
 static const struct SpriteFrameImage sPicTable_Andromon[] = {
     overworld_ascending_frames(gObjectEventPic_Andromon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Watchog[] = {
-    overworld_ascending_frames(gObjectEventPic_Watchog, 4, 4),
+static const struct SpriteFrameImage sPicTable_Angewomon[] = {
+    overworld_ascending_frames(gObjectEventPic_Angewomon, 4, 4),
 };
 #endif //P_FAMILY_ANDROMON
 

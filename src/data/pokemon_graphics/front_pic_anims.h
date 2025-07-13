@@ -6367,7 +6367,7 @@ static const union AnimCmd sAnim_Andromon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Watchog_1[] =
+static const union AnimCmd sAnim_Angewomon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -11622,7 +11622,7 @@ SINGLE_ANIMATION(Vademon);
 #endif //P_FAMILY_METALMAMEMON
 #if P_FAMILY_ANDROMON
 SINGLE_ANIMATION(Andromon);
-SINGLE_ANIMATION(Watchog);
+SINGLE_ANIMATION(Angewomon);
 #endif //P_FAMILY_ANDROMON
 #if P_FAMILY_LILLIPUP
 SINGLE_ANIMATION(Lillipup);

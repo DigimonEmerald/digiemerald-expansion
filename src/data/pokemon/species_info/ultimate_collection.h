@@ -887,44 +887,46 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sAndromonLevelUpLearnset,
         .teachableLearnset = sAndromonTeachableLearnset,
         .eggMoveLearnset = sAndromonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_WATCHOG}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_ANGEWOMON}),
     },
 
-    [SPECIES_WATCHOG] =
+    [SPECIES_ANGEWOMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 85,
-        .baseDefense   = 69,
-        .baseSpeed     = 77,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 69,
-        .types = MON_TYPES(TYPE_NORMAL),
+        .baseHP        = 70,
+        .baseAttack    = 70,
+        .baseDefense   = 60,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 120,
+        .types = MON_TYPES(TYPE_LIGHT),
+        .attribute = TYPE_VACCINE,
         .catchRate = 95,
         .expYield = 200,
-        .evYield_Attack = 2,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_ILLUMINATE, ABILITY_KEEN_EYE, ABILITY_ANALYTIC },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Watchog"),
-        .cryId = CRY_WATCHOG,
-        .natDexNum = NATIONAL_DEX_WATCHOG,
-        .categoryName = _("Lookout"),
-        .height = 11,
-        .weight = 270,
+        .abilities = { ABILITY_EPIPHANY, ABILITY_SERENE_GRACE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Angewomon"),
+        .cryId = CRY_ANGEWOMON,
+        .natDexNum = NATIONAL_DEX_ANGEWOMON,
+        .categoryName = _("Arch-Angel"),
+        .height = 27,
+        .weight = 802,
         .description = COMPOUND_STRING(
-            "Using luminescent matter, it makes its\n"
-            "eyes and body glow and stuns attacking\n"
-            "opponents. Keen eyesight lets them see\n"
-            "in the dark."),
+            "Originally believed to just be an\n"
+            "Angel Digimon, Angewomon has since been\n"
+            "reclassed as an Arch-Angel Digimon\n"
+            "due to its strong abilities."),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Watchog,
+        .frontPic = gMonFrontPic_Angewomon,
         .frontPicSize = MON_COORDS_SIZE(32, 64),
         .frontPicYOffset = 2,
         .frontAnimFrames = ANIM_FRAMES(
@@ -937,28 +939,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 50),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Watchog,
+        .backPic = gMonBackPic_Angewomon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Watchog,
-        .shinyPalette = gMonShinyPalette_Watchog,
-        .iconSprite = gMonIcon_Watchog,
+        .palette = gMonPalette_Angewomon,
+        .shinyPalette = gMonShinyPalette_Angewomon,
+        .iconSprite = gMonIcon_Angewomon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-4, 11, SHADOW_SIZE_S)
-        FOOTPRINT(Watchog)
+        FOOTPRINT(Angewomon)
         OVERWORLD(
-            sPicTable_Watchog,
+            sPicTable_Angewomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Watchog,
-            gShinyOverworldPalette_Watchog
+            gOverworldPalette_Angewomon,
+            gShinyOverworldPalette_Angewomon
         )
-        .levelUpLearnset = sWatchogLevelUpLearnset,
-        .teachableLearnset = sWatchogTeachableLearnset,
+        .levelUpLearnset = sAngewomonLevelUpLearnset,
+        .teachableLearnset = sAngewomonTeachableLearnset,
     },
 #endif //P_FAMILY_ANDROMON
 

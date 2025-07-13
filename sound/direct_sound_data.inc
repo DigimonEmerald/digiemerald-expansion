@@ -3376,8 +3376,8 @@ Cry_Andromon::
 	.incbin "sound/direct_sound_samples/cries/andromon.bin"
 
 	.align 2
-Cry_Watchog::
-	.incbin "sound/direct_sound_samples/cries/watchog.bin"
+Cry_Angewomon::
+	.incbin "sound/direct_sound_samples/cries/angewomon.bin"
 .endif @ P_FAMILY_ANDROMON
 
 .if P_FAMILY_LILLIPUP == TRUE

@@ -21389,7 +21389,7 @@ static const u16 sAndromonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sWatchogTeachableLearnset[] = {
+static const u16 sAngewomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,

@@ -522,7 +522,7 @@
 #define SPECIES_MONZAEMON                                  502
 #define SPECIES_SKULLGREYMON                                503
 #define SPECIES_ANDROMON                                  504
-#define SPECIES_WATCHOG                                 505
+#define SPECIES_ANGEWOMON                                 505
 #define SPECIES_LILLIPUP                                506
 #define SPECIES_HERDIER                                 507
 #define SPECIES_STOUTLAND                               508

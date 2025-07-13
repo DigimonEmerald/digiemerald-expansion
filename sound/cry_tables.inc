@@ -1279,7 +1279,7 @@ gCryTable::
 .endif @ P_FAMILY_METALMAMEMON
 .if P_FAMILY_ANDROMON == TRUE
 	cry Cry_Andromon
-	cry Cry_Watchog
+	cry Cry_Angewomon
 .endif @ P_FAMILY_ANDROMON
 .if P_FAMILY_LILLIPUP == TRUE
 	cry Cry_Lillipup
@@ -3707,7 +3707,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_METALMAMEMON
 .if P_FAMILY_ANDROMON == TRUE
 	cry_reverse Cry_Andromon
-	cry_reverse Cry_Watchog
+	cry_reverse Cry_Angewomon
 .endif @ P_FAMILY_ANDROMON
 .if P_FAMILY_LILLIPUP == TRUE
 	cry_reverse Cry_Lillipup
