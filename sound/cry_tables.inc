@@ -1283,7 +1283,7 @@ gCryTable::
 .endif @ P_FAMILY_ANDROMON
 .if P_FAMILY_SCORPIOMON == TRUE
 	cry Cry_Scorpiomon
-	cry Cry_Herdier
+	cry Cry_Megakabuterimon_blue
 	cry Cry_Stoutland
 .endif @ P_FAMILY_SCORPIOMON
 .if P_FAMILY_PURRLOIN == TRUE
@@ -3711,7 +3711,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_ANDROMON
 .if P_FAMILY_SCORPIOMON == TRUE
 	cry_reverse Cry_Scorpiomon
-	cry_reverse Cry_Herdier
+	cry_reverse Cry_Megakabuterimon_blue
 	cry_reverse Cry_Stoutland
 .endif @ P_FAMILY_SCORPIOMON
 .if P_FAMILY_PURRLOIN == TRUE

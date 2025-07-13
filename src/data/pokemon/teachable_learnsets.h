@@ -21454,7 +21454,7 @@ static const u16 sScorpiomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sHerdierTeachableLearnset[] = {
+static const u16 sMegakabuterimon_blueTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DIG,

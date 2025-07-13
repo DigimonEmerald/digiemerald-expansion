@@ -1038,44 +1038,46 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sScorpiomonLevelUpLearnset,
         .teachableLearnset = sScorpiomonTeachableLearnset,
         .eggMoveLearnset = sScorpiomonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_HERDIER}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_MEGAKABUTERIMON_BLUE}),
     },
 
-    [SPECIES_HERDIER] =
+    [SPECIES_MEGAKABUTERIMON_BLUE] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 80,
-        .baseDefense   = 65,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_NORMAL),
+        .baseHP        = 115,
+        .baseAttack    = 95,
+        .baseDefense   = 120,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
+        .attribute = TYPE_VACCINE,
         .catchRate = 95,
         .expYield = 200,
-        .evYield_Attack = 2,
+        .evYield_HP = 2,
+        .evYield_Defense = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_SAND_RUSH, ABILITY_SCRAPPY },
-        .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Herdier"),
-        .cryId = CRY_HERDIER,
-        .natDexNum = NATIONAL_DEX_HERDIER,
-        .categoryName = _("Loyal Dog"),
-        .height = 9,
-        .weight = 147,
+        .abilities = { ABILITY_STATIC, ABILITY_SHELL_ARMOR, ABILITY_LIGHTNING_ROD },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Megakabumon"),
+        .cryId = CRY_MEGAKABUTERIMON_BLUE,
+        .natDexNum = NATIONAL_DEX_MEGAKABUTERIMON_BLUE,
+        .categoryName = _("Atlas Beetle"),
+        .height = 152,
+        .weight = 3174,
         .description = COMPOUND_STRING(
-            "Its dense black fur grows continuously.\n"
-            "The high cost of keeping its hard fur\n"
-            "properly groomed makes this a\n"
-            "troublesome Pokémon to train."),
+            "MegaKabuterimon is considered one of the\n"
+            "largest insect Digimon giving it greater\n"
+            "power. This size does regress its\n"
+            "flight capabilities to a certain extent"),
         .pokemonScale = 338,
         .pokemonOffset = 9,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Herdier,
+        .frontPic = gMonFrontPic_Megakabuterimon_blue,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
@@ -1087,28 +1089,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 8),
         ),
         .frontAnimId = ANIM_H_STRETCH,
-        .backPic = gMonBackPic_Herdier,
+        .backPic = gMonBackPic_Megakabuterimon_blue,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_H_SHAKE,
-        .palette = gMonPalette_Herdier,
-        .shinyPalette = gMonShinyPalette_Herdier,
-        .iconSprite = gMonIcon_Herdier,
+        .palette = gMonPalette_Megakabuterimon_blue,
+        .shinyPalette = gMonShinyPalette_Megakabuterimon_blue,
+        .iconSprite = gMonIcon_Megakabuterimon_blue,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(3, 5, SHADOW_SIZE_M)
-        FOOTPRINT(Herdier)
+        FOOTPRINT(Megakabuterimon_blue)
         OVERWORLD(
-            sPicTable_Herdier,
+            sPicTable_Megakabuterimon_blue,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Herdier,
-            gShinyOverworldPalette_Herdier
+            gOverworldPalette_Megakabuterimon_blue,
+            gShinyOverworldPalette_Megakabuterimon_blue
         )
-        .levelUpLearnset = sHerdierLevelUpLearnset,
-        .teachableLearnset = sHerdierTeachableLearnset,
+        .levelUpLearnset = sMegakabuterimon_blueLevelUpLearnset,
+        .teachableLearnset = sMegakabuterimon_blueTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_STOUTLAND}),
     },
 

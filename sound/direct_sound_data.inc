@@ -3386,8 +3386,8 @@ Cry_Scorpiomon::
 	.incbin "sound/direct_sound_samples/cries/scorpiomon.bin"
 
 	.align 2
-Cry_Herdier::
-	.incbin "sound/direct_sound_samples/cries/herdier.bin"
+Cry_Megakabuterimon_blue::
+	.incbin "sound/direct_sound_samples/cries/megakabuterimon_blue.bin"
 
 	.align 2
 Cry_Stoutland::

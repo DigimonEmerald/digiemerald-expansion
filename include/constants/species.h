@@ -524,7 +524,7 @@
 #define SPECIES_ANDROMON                                  504
 #define SPECIES_ANGEWOMON                                 505
 #define SPECIES_SCORPIOMON                                506
-#define SPECIES_HERDIER                                 507
+#define SPECIES_MEGAKABUTERIMON_BLUE                                 507
 #define SPECIES_STOUTLAND                               508
 #define SPECIES_PURRLOIN                                509
 #define SPECIES_LIEPARD                                 510

@@ -16117,19 +16117,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Herdier[] = INCBIN_U32("graphics/pokemon/herdier/anim_front.4bpp.lz");
-    const u16 gMonPalette_Herdier[] = INCBIN_U16("graphics/pokemon/herdier/normal.gbapal");
-    const u32 gMonBackPic_Herdier[] = INCBIN_U32("graphics/pokemon/herdier/back.4bpp.lz");
-    const u16 gMonShinyPalette_Herdier[] = INCBIN_U16("graphics/pokemon/herdier/shiny.gbapal");
-    const u8 gMonIcon_Herdier[] = INCBIN_U8("graphics/pokemon/herdier/icon.4bpp");
+    const u32 gMonFrontPic_Megakabuterimon_blue[] = INCBIN_U32("graphics/pokemon/megakabuterimon_blue/anim_front.4bpp.lz");
+    const u16 gMonPalette_Megakabuterimon_blue[] = INCBIN_U16("graphics/pokemon/megakabuterimon_blue/normal.gbapal");
+    const u32 gMonBackPic_Megakabuterimon_blue[] = INCBIN_U32("graphics/pokemon/megakabuterimon_blue/back.4bpp.lz");
+    const u16 gMonShinyPalette_Megakabuterimon_blue[] = INCBIN_U16("graphics/pokemon/megakabuterimon_blue/shiny.gbapal");
+    const u8 gMonIcon_Megakabuterimon_blue[] = INCBIN_U8("graphics/pokemon/megakabuterimon_blue/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Herdier[] = INCBIN_U8("graphics/pokemon/herdier/footprint.1bpp");
+    const u8 gMonFootprint_Megakabuterimon_blue[] = INCBIN_U8("graphics/pokemon/megakabuterimon_blue/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Herdier[] = INCBIN_COMP("graphics/pokemon/herdier/overworld.4bpp");
+    const u32 gObjectEventPic_Megakabuterimon_blue[] = INCBIN_COMP("graphics/pokemon/megakabuterimon_blue/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Herdier[] = INCBIN_U16("graphics/pokemon/herdier/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Herdier[] = INCBIN_U16("graphics/pokemon/herdier/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Megakabuterimon_blue[] = INCBIN_U16("graphics/pokemon/megakabuterimon_blue/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Megakabuterimon_blue[] = INCBIN_U16("graphics/pokemon/megakabuterimon_blue/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

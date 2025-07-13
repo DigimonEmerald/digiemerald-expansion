@@ -422,6 +422,8 @@ SkullGreymon - Samurott
 Vademon - Samurott Hisui
 Andromon - Patrat
 Angewomon - Watchog
+Scorpiomon - Lillipup
+MegaKabuterimon (Blue) - Herdier
 
 Mega List
 
