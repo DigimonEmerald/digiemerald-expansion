@@ -3955,8 +3955,8 @@ static const u16 sMetalmamemonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_METALMAMEMON
 
-#if P_FAMILY_PATRAT
-static const u16 sPatratEggMoveLearnset[] = {
+#if P_FAMILY_ANDROMON
+static const u16 sAndromonEggMoveLearnset[] = {
     MOVE_FORESIGHT,
     MOVE_IRON_TAIL,
     MOVE_SCREECH,
@@ -3968,7 +3968,7 @@ static const u16 sPatratEggMoveLearnset[] = {
     MOVE_BULLET_SEED,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PATRAT
+#endif //P_FAMILY_ANDROMON
 
 #if P_FAMILY_LILLIPUP
 static const u16 sLillipupEggMoveLearnset[] = {

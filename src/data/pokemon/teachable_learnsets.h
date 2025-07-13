@@ -21365,8 +21365,8 @@ static const u16 sVademonTeachableLearnset[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_METALMAMEMON
 
-#if P_FAMILY_PATRAT
-static const u16 sPatratTeachableLearnset[] = {
+#if P_FAMILY_ANDROMON
+static const u16 sAndromonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,
@@ -21425,7 +21425,7 @@ static const u16 sWatchogTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PATRAT
+#endif //P_FAMILY_ANDROMON
 
 #if P_FAMILY_LILLIPUP
 static const u16 sLillipupTeachableLearnset[] = {

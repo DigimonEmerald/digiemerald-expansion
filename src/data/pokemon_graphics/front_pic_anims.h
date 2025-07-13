@@ -6359,8 +6359,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Vademon);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_METALMAMEMON
 
-#if P_FAMILY_PATRAT
-static const union AnimCmd sAnim_Patrat_1[] =
+#if P_FAMILY_ANDROMON
+static const union AnimCmd sAnim_Andromon_1[] =
 {
     ANIMCMD_FRAME(1, 32),
     ANIMCMD_FRAME(0, 20),
@@ -6378,7 +6378,7 @@ static const union AnimCmd sAnim_Watchog_1[] =
     ANIMCMD_FRAME(0, 50),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_PATRAT
+#endif //P_FAMILY_ANDROMON
 
 #if P_FAMILY_LILLIPUP
 static const union AnimCmd sAnim_Lillipup_1[] =
@@ -11620,10 +11620,10 @@ SINGLE_ANIMATION(Skullgreymon);
 SINGLE_ANIMATION(Vademon);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_METALMAMEMON
-#if P_FAMILY_PATRAT
-SINGLE_ANIMATION(Patrat);
+#if P_FAMILY_ANDROMON
+SINGLE_ANIMATION(Andromon);
 SINGLE_ANIMATION(Watchog);
-#endif //P_FAMILY_PATRAT
+#endif //P_FAMILY_ANDROMON
 #if P_FAMILY_LILLIPUP
 SINGLE_ANIMATION(Lillipup);
 SINGLE_ANIMATION(Herdier);

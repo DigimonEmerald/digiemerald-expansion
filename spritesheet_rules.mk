@@ -2760,7 +2760,7 @@ $(POKEMONGFXDIR)/monzaemon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/skullgreymon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/patrat/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/andromon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/watchog/overworld.4bpp: %.4bpp: %.png

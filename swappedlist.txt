@@ -420,6 +420,7 @@ MetalMamemon - Oshawott
 Monzaemon - Dewott
 SkullGreymon - Samurott
 Vademon - Samurott Hisui
+Andromon - Patrat
 
 Mega List
 

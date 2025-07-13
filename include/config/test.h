@@ -542,8 +542,8 @@
 #define P_FAMILY_D_TYRANNOMON                   TRUE
 #undef P_FAMILY_METALMAMEMON
 #define P_FAMILY_METALMAMEMON                TRUE
-#undef P_FAMILY_PATRAT
-#define P_FAMILY_PATRAT                  TRUE
+#undef P_FAMILY_ANDROMON
+#define P_FAMILY_ANDROMON                  TRUE
 #undef P_FAMILY_LILLIPUP
 #define P_FAMILY_LILLIPUP                TRUE
 #undef P_FAMILY_PURRLOIN

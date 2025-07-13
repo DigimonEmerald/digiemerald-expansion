@@ -308,7 +308,7 @@
 #define P_FAMILY_D_DEVIMON                   P_GEN_5_POKEMON
 #define P_FAMILY_D_TYRANNOMON                   P_GEN_5_POKEMON
 #define P_FAMILY_METALMAMEMON                P_GEN_5_POKEMON
-#define P_FAMILY_PATRAT                  P_GEN_5_POKEMON
+#define P_FAMILY_ANDROMON                  P_GEN_5_POKEMON
 #define P_FAMILY_LILLIPUP                P_GEN_5_POKEMON
 #define P_FAMILY_PURRLOIN                P_GEN_5_POKEMON
 #define P_FAMILY_PANSAGE                 P_GEN_5_POKEMON

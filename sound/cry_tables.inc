@@ -1277,10 +1277,10 @@ gCryTable::
 	cry Cry_Monzaemon
 	cry Cry_Skullgreymon
 .endif @ P_FAMILY_METALMAMEMON
-.if P_FAMILY_PATRAT == TRUE
-	cry Cry_Patrat
+.if P_FAMILY_ANDROMON == TRUE
+	cry Cry_Andromon
 	cry Cry_Watchog
-.endif @ P_FAMILY_PATRAT
+.endif @ P_FAMILY_ANDROMON
 .if P_FAMILY_LILLIPUP == TRUE
 	cry Cry_Lillipup
 	cry Cry_Herdier
@@ -3705,10 +3705,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Monzaemon
 	cry_reverse Cry_Skullgreymon
 .endif @ P_FAMILY_METALMAMEMON
-.if P_FAMILY_PATRAT == TRUE
-	cry_reverse Cry_Patrat
+.if P_FAMILY_ANDROMON == TRUE
+	cry_reverse Cry_Andromon
 	cry_reverse Cry_Watchog
-.endif @ P_FAMILY_PATRAT
+.endif @ P_FAMILY_ANDROMON
 .if P_FAMILY_LILLIPUP == TRUE
 	cry_reverse Cry_Lillipup
 	cry_reverse Cry_Herdier

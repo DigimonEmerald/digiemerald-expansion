@@ -9450,8 +9450,8 @@ static const struct LevelUpMove sVademonLevelUpLearnset[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_METALMAMEMON
 
-#if P_FAMILY_PATRAT
-static const struct LevelUpMove sPatratLevelUpLearnset[] = {
+#if P_FAMILY_ANDROMON
+static const struct LevelUpMove sAndromonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 3, MOVE_LEER),
     LEVEL_UP_MOVE( 6, MOVE_BITE),
@@ -9492,7 +9492,7 @@ static const struct LevelUpMove sWatchogLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_SLAM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_PATRAT
+#endif //P_FAMILY_ANDROMON
 
 #if P_FAMILY_LILLIPUP
 static const struct LevelUpMove sLillipupLevelUpLearnset[] = {

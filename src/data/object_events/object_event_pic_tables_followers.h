@@ -3734,14 +3734,14 @@ static const struct SpriteFrameImage sPicTable_Vademon[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_METALMAMEMON
 
-#if P_FAMILY_PATRAT
-static const struct SpriteFrameImage sPicTable_Patrat[] = {
-    overworld_ascending_frames(gObjectEventPic_Patrat, 4, 4),
+#if P_FAMILY_ANDROMON
+static const struct SpriteFrameImage sPicTable_Andromon[] = {
+    overworld_ascending_frames(gObjectEventPic_Andromon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Watchog[] = {
     overworld_ascending_frames(gObjectEventPic_Watchog, 4, 4),
 };
-#endif //P_FAMILY_PATRAT
+#endif //P_FAMILY_ANDROMON
 
 #if P_FAMILY_LILLIPUP
 static const struct SpriteFrameImage sPicTable_Lillipup[] = {

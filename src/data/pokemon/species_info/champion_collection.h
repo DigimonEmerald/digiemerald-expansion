@@ -9317,24 +9317,23 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 
     [SPECIES_FRIGIMON] =
     {
-        .baseHP        = 63,
-        .baseAttack    = 73,
-        .baseDefense   = 71,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 64,
+        .baseHP        = 90,
+        .baseAttack    = 65,
+        .baseDefense   = 55,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_ICE),
         .attribute = TYPE_VACCINE,
         .catchRate = 115,
         .expYield = 150,
-        .evYield_Attack    = 1,
-        .evYield_SpAttack  = 3,
-        .itemRare = ITEM_DRAGON_FANG,
+        .evYield_HP = 2,
+        .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
-        .eggCycles = 40,
-        .friendship = 35,
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_DRAGON),
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
         .abilities = { ABILITY_SNOW_CLOAK, ABILITY_ICE_BODY, ABILITY_SNOW_WARNING },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Frigimon"),
@@ -9342,37 +9341,37 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .natDexNum = NATIONAL_DEX_FRIGIMON,
         .categoryName = _("Snowman"),
         .height = 20,
-        .weight = 578,
+        .weight = 505,
         .description = COMPOUND_STRING(
-            "Many mistake Frigimons to be cold hearted\n"
-            "Digimon however it is actually incredibly\n"
-            "loving, willing to look after any Digimon\n"
-            "that crosses its path."),
-        .pokemonScale = 311,
-        .pokemonOffset = 12,
+            "Contrary to its cold appearance, it\n"
+            "has a very warm and gentle personality.\n"
+            "Frigimon hates fighting and so often\n"
+            "tries to befriend those that approach."),
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Frigimon,
-        .frontPicSize = MON_COORDS_SIZE(48, 48),
-        .frontPicYOffset = 9,
+        .frontPicSize = MON_COORDS_SIZE(40, 40),
+        .frontPicYOffset = 12,
         .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 15),
-            ANIMCMD_FRAME(1, 15),
-            ANIMCMD_FRAME(0, 15),
-            ANIMCMD_FRAME(1, 15),
-            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 35),
+            ANIMCMD_FRAME(0, 5),
         ),
-        .frontAnimId = ANIM_V_SLIDE,
+        .frontAnimId = ANIM_V_STRETCH,
         .backPic = gMonBackPic_Frigimon,
-        .backPicSize = MON_COORDS_SIZE(64, 40),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 13 : 12,
-        .backAnimId = BACK_ANIM_V_SHAKE,
+        .backPicSize = MON_COORDS_SIZE(56, 48),
+        .backPicYOffset = 11,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_Frigimon,
         .shinyPalette = gMonShinyPalette_Frigimon,
         .iconSprite = gMonIcon_Frigimon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(1, 2, SHADOW_SIZE_M)
+        SHADOW(-2, 1, SHADOW_SIZE_S)
         FOOTPRINT(Frigimon)
         OVERWORLD(
             sPicTable_Frigimon,
@@ -9385,6 +9384,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sFrigimonLevelUpLearnset,
         .teachableLearnset = sFrigimonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_STARAVIA}),
     },
 
     [SPECIES_FROGMON] =

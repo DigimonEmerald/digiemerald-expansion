@@ -16066,20 +16066,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_METALMAMEMON
 
-#if P_FAMILY_PATRAT
-    const u32 gMonFrontPic_Patrat[] = INCBIN_U32("graphics/pokemon/patrat/anim_front.4bpp.lz");
-    const u16 gMonPalette_Patrat[] = INCBIN_U16("graphics/pokemon/patrat/normal.gbapal");
-    const u32 gMonBackPic_Patrat[] = INCBIN_U32("graphics/pokemon/patrat/back.4bpp.lz");
-    const u16 gMonShinyPalette_Patrat[] = INCBIN_U16("graphics/pokemon/patrat/shiny.gbapal");
-    const u8 gMonIcon_Patrat[] = INCBIN_U8("graphics/pokemon/patrat/icon.4bpp");
+#if P_FAMILY_ANDROMON
+    const u32 gMonFrontPic_Andromon[] = INCBIN_U32("graphics/pokemon/andromon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Andromon[] = INCBIN_U16("graphics/pokemon/andromon/normal.gbapal");
+    const u32 gMonBackPic_Andromon[] = INCBIN_U32("graphics/pokemon/andromon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Andromon[] = INCBIN_U16("graphics/pokemon/andromon/shiny.gbapal");
+    const u8 gMonIcon_Andromon[] = INCBIN_U8("graphics/pokemon/andromon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Patrat[] = INCBIN_U8("graphics/pokemon/patrat/footprint.1bpp");
+    const u8 gMonFootprint_Andromon[] = INCBIN_U8("graphics/pokemon/andromon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Patrat[] = INCBIN_COMP("graphics/pokemon/patrat/overworld.4bpp");
+    const u32 gObjectEventPic_Andromon[] = INCBIN_COMP("graphics/pokemon/andromon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Patrat[] = INCBIN_U16("graphics/pokemon/patrat/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Patrat[] = INCBIN_U16("graphics/pokemon/patrat/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Andromon[] = INCBIN_U16("graphics/pokemon/andromon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Andromon[] = INCBIN_U16("graphics/pokemon/andromon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16098,7 +16098,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Watchog[] = INCBIN_U16("graphics/pokemon/watchog/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_PATRAT
+#endif //P_FAMILY_ANDROMON
 
 #if P_FAMILY_LILLIPUP
     const u32 gMonFrontPic_Lillipup[] = INCBIN_U32("graphics/pokemon/lillipup/anim_front.4bpp.lz");

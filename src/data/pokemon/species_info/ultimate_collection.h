@@ -776,7 +776,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .natDexNum = NATIONAL_DEX_SKULLGREYMON,
         .categoryName = _("Alien"),
         .height = 16,
-        .weight = 582,
+        .weight = 482,
         .description = COMPOUND_STRING(
             "The origin of Vademon is a point of\n"
             "contention with scientists. Some believe\n"
@@ -818,42 +818,45 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_METALMAMEMON
 
-#if P_FAMILY_PATRAT
-    [SPECIES_PATRAT] =
+#if P_FAMILY_ANDROMON
+    [SPECIES_ANDROMON] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 55,
-        .baseDefense   = 39,
-        .baseSpeed     = 42,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 39,
-        .types = MON_TYPES(TYPE_NORMAL),
+        .baseHP        = 75,
+        .baseAttack    = 80,
+        .baseDefense   = 100,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_STEEL),
+        .attribute = TYPE_VACCINE,
         .catchRate = 95,
-        .expYield = 51,
-        .evYield_Attack = 1,
+        .expYield = 200,
+        .evYield_Defense = 2,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_RUN_AWAY, ABILITY_KEEN_EYE, ABILITY_ANALYTIC },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Patrat"),
-        .cryId = CRY_PATRAT,
-        .natDexNum = NATIONAL_DEX_PATRAT,
-        .categoryName = _("Scout"),
-        .height = 5,
-        .weight = 116,
+        .abilities = { ABILITY_LIGHT_METAL, ABILITY_ANALYTIC, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Andromon"),
+        .cryId = CRY_ANDROMON,
+        .natDexNum = NATIONAL_DEX_ANDROMON,
+        .categoryName = _("Android"),
+        .height = 24,
+        .weight = 985,
         .description = COMPOUND_STRING(
-            "Extremely cautious, they take shifts to\n"
-            "maintain a constant watch of their nest.\n"
-            "Using food stored in cheek pouches,\n"
-            "they can keep watch for days."),
+            "As a prototype for cyborg\n"
+            "Digimon, Andromons technology can\n"
+            "be found in other cyborg Digimon\n"
+            "like MetalGreymon and Megadramon."),
         .pokemonScale = 432,
         .pokemonOffset = 14,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Patrat,
+        .frontPic = gMonFrontPic_Andromon,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 12,
         .frontAnimFrames = ANIM_FRAMES(
@@ -861,29 +864,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 20),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Patrat,
+        .backPic = gMonBackPic_Andromon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Patrat,
-        .shinyPalette = gMonShinyPalette_Patrat,
-        .iconSprite = gMonIcon_Patrat,
+        .palette = gMonPalette_Andromon,
+        .shinyPalette = gMonShinyPalette_Andromon,
+        .iconSprite = gMonIcon_Andromon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(1, 2, SHADOW_SIZE_S)
-        FOOTPRINT(Patrat)
+        FOOTPRINT(Andromon)
         OVERWORLD(
-            sPicTable_Patrat,
+            sPicTable_Andromon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Patrat,
-            gShinyOverworldPalette_Patrat
+            gOverworldPalette_Andromon,
+            gShinyOverworldPalette_Andromon
         )
-        .levelUpLearnset = sPatratLevelUpLearnset,
-        .teachableLearnset = sPatratTeachableLearnset,
-        .eggMoveLearnset = sPatratEggMoveLearnset,
+        .levelUpLearnset = sAndromonLevelUpLearnset,
+        .teachableLearnset = sAndromonTeachableLearnset,
+        .eggMoveLearnset = sAndromonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_WATCHOG}),
     },
 
@@ -957,7 +960,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sWatchogLevelUpLearnset,
         .teachableLearnset = sWatchogTeachableLearnset,
     },
-#endif //P_FAMILY_PATRAT
+#endif //P_FAMILY_ANDROMON
 
 #if P_FAMILY_LILLIPUP
     [SPECIES_LILLIPUP] =

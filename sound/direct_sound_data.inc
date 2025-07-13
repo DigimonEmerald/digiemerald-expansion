@@ -3370,15 +3370,15 @@ Cry_Skullgreymon::
 	.incbin "sound/direct_sound_samples/cries/skullgreymon.bin"
 .endif @ P_FAMILY_METALMAMEMON
 
-.if P_FAMILY_PATRAT == TRUE
+.if P_FAMILY_ANDROMON == TRUE
 	.align 2
-Cry_Patrat::
-	.incbin "sound/direct_sound_samples/cries/patrat.bin"
+Cry_Andromon::
+	.incbin "sound/direct_sound_samples/cries/andromon.bin"
 
 	.align 2
 Cry_Watchog::
 	.incbin "sound/direct_sound_samples/cries/watchog.bin"
-.endif @ P_FAMILY_PATRAT
+.endif @ P_FAMILY_ANDROMON
 
 .if P_FAMILY_LILLIPUP == TRUE
 	.align 2
