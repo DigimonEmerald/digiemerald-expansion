@@ -18445,8 +18445,8 @@ static const u16 sWhamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_TYRANNOMON
 
-#if P_FAMILY_STARLY
-static const u16 sStarlyTeachableLearnset[] = {
+#if P_FAMILY_KOKATORIMON
+static const u16 sKokatorimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_EDGE,
@@ -18515,7 +18515,7 @@ static const u16 sStaraptorTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_STARLY
+#endif //P_FAMILY_KOKATORIMON
 
 #if P_FAMILY_BIDOOF
 static const u16 sBidoofTeachableLearnset[] = {

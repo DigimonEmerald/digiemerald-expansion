@@ -3470,8 +3470,8 @@ static const u16 sTyrannomonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_TYRANNOMON
 
-#if P_FAMILY_STARLY
-static const u16 sStarlyEggMoveLearnset[] = {
+#if P_FAMILY_KOKATORIMON
+static const u16 sKokatorimonEggMoveLearnset[] = {
     MOVE_FEATHER_DANCE,
     MOVE_FURY_ATTACK,
     MOVE_PURSUIT,
@@ -3487,7 +3487,7 @@ static const u16 sStarlyEggMoveLearnset[] = {
     MOVE_MIRROR_MOVE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_STARLY
+#endif //P_FAMILY_KOKATORIMON
 
 #if P_FAMILY_BIDOOF
 static const u16 sBidoofEggMoveLearnset[] = {

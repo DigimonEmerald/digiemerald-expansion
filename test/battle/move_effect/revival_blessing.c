@@ -104,7 +104,7 @@ DOUBLE_BATTLE_TEST("Revival Blessing correctly updates battler absent flags")
         PLAYER(SPECIES_FROGMON) { Level(40); }
         PLAYER(SPECIES_LEAFMON) { Level(40); }
         OPPONENT(SPECIES_MONIMON) { Level(5); Ability(ABILITY_ROCK_HEAD); }
-        OPPONENT(SPECIES_STARLY) { Level(5); }
+        OPPONENT(SPECIES_KOKATORIMON) { Level(5); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_EARTHQUAKE);
                MOVE(opponentRight, MOVE_REVIVAL_BLESSING, partyIndex: 0); }
@@ -115,14 +115,14 @@ DOUBLE_BATTLE_TEST("Revival Blessing correctly updates battler absent flags")
         HP_BAR(opponentLeft);
         MESSAGE("The opposing Monimon fainted!");
         MESSAGE("It doesn't affect Leafmon…");
-        MESSAGE("It doesn't affect the opposing Starly…");
-        MESSAGE("The opposing Starly used Revival Blessing!");
+        MESSAGE("It doesn't affect the opposing Kokatorimon…");
+        MESSAGE("The opposing Kokatorimon used Revival Blessing!");
         MESSAGE("Monimon was revived and is ready to fight again!"); // Should have prefix but it doesn't currently.
         // Turn 2
         MESSAGE("Frogmon used Earthquake!");
         HP_BAR(opponentLeft);
         MESSAGE("The opposing Monimon fainted!");
         MESSAGE("It doesn't affect Leafmon…");
-        MESSAGE("It doesn't affect the opposing Starly…");
+        MESSAGE("It doesn't affect the opposing Kokatorimon…");
     }
 }

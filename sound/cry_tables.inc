@@ -1095,11 +1095,11 @@ gCryTable::
 	cry Cry_Vegiemon
 	cry Cry_Whamon
 .endif @ P_FAMILY_TYRANNOMON
-.if P_FAMILY_STARLY == TRUE
-	cry Cry_Starly
+.if P_FAMILY_KOKATORIMON == TRUE
+	cry Cry_Kokatorimon
 	cry Cry_Staravia
 	cry Cry_Staraptor
-.endif @ P_FAMILY_STARLY
+.endif @ P_FAMILY_KOKATORIMON
 .if P_FAMILY_BIDOOF == TRUE
 	cry Cry_Bidoof
 	cry Cry_Bibarel
@@ -3523,11 +3523,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Vegiemon
 	cry_reverse Cry_Whamon
 .endif @ P_FAMILY_TYRANNOMON
-.if P_FAMILY_STARLY == TRUE
-	cry_reverse Cry_Starly
+.if P_FAMILY_KOKATORIMON == TRUE
+	cry_reverse Cry_Kokatorimon
 	cry_reverse Cry_Staravia
 	cry_reverse Cry_Staraptor
-.endif @ P_FAMILY_STARLY
+.endif @ P_FAMILY_KOKATORIMON
 .if P_FAMILY_BIDOOF == TRUE
 	cry_reverse Cry_Bidoof
 	cry_reverse Cry_Bibarel

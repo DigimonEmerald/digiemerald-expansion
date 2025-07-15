@@ -14144,28 +14144,28 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_TYRANNOMON
 
-#if P_FAMILY_STARLY
-    const u32 gMonFrontPic_Starly[] = INCBIN_U32("graphics/pokemon/starly/anim_front.4bpp.lz");
-    const u16 gMonPalette_Starly[] = INCBIN_U16("graphics/pokemon/starly/normal.gbapal");
-    const u32 gMonBackPic_Starly[] = INCBIN_U32("graphics/pokemon/starly/back.4bpp.lz");
-    const u16 gMonShinyPalette_Starly[] = INCBIN_U16("graphics/pokemon/starly/shiny.gbapal");
-    const u8 gMonIcon_Starly[] = INCBIN_U8("graphics/pokemon/starly/icon.4bpp");
+#if P_FAMILY_KOKATORIMON
+    const u32 gMonFrontPic_Kokatorimon[] = INCBIN_U32("graphics/pokemon/kokatorimon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Kokatorimon[] = INCBIN_U16("graphics/pokemon/kokatorimon/normal.gbapal");
+    const u32 gMonBackPic_Kokatorimon[] = INCBIN_U32("graphics/pokemon/kokatorimon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Kokatorimon[] = INCBIN_U16("graphics/pokemon/kokatorimon/shiny.gbapal");
+    const u8 gMonIcon_Kokatorimon[] = INCBIN_U8("graphics/pokemon/kokatorimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Starly[] = INCBIN_U8("graphics/pokemon/starly/footprint.1bpp");
+    const u8 gMonFootprint_Kokatorimon[] = INCBIN_U8("graphics/pokemon/kokatorimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Starly[] = INCBIN_COMP("graphics/pokemon/starly/overworld.4bpp");
+    const u32 gObjectEventPic_Kokatorimon[] = INCBIN_COMP("graphics/pokemon/kokatorimon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Starly[] = INCBIN_U16("graphics/pokemon/starly/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Starly[] = INCBIN_U16("graphics/pokemon/starly/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Kokatorimon[] = INCBIN_U16("graphics/pokemon/kokatorimon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Kokatorimon[] = INCBIN_U16("graphics/pokemon/kokatorimon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_StarlyF[] = INCBIN_U32("graphics/pokemon/starly/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_StarlyF[] = INCBIN_U32("graphics/pokemon/starly/backf.4bpp.lz");
+    const u32 gMonFrontPic_KokatorimonF[] = INCBIN_U32("graphics/pokemon/kokatorimon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_KokatorimonF[] = INCBIN_U32("graphics/pokemon/kokatorimon/backf.4bpp.lz");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_StarlyF[] = INCBIN_COMP("graphics/pokemon/starly/overworldf.4bpp");
+    const u32 gObjectEventPic_KokatorimonF[] = INCBIN_COMP("graphics/pokemon/kokatorimon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
@@ -14215,7 +14215,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gObjectEventPic_StaraptorF[] = INCBIN_COMP("graphics/pokemon/staraptor/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_STARLY
+#endif //P_FAMILY_KOKATORIMON
 
 #if P_FAMILY_BIDOOF
     const u32 gMonFrontPic_Bidoof[] = INCBIN_U32("graphics/pokemon/bidoof/anim_front.4bpp.lz");

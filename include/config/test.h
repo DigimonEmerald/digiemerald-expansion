@@ -452,8 +452,8 @@
 #define P_FAMILY_MERAMON                TRUE
 #undef P_FAMILY_TYRANNOMON
 #define P_FAMILY_TYRANNOMON                  TRUE
-#undef P_FAMILY_STARLY
-#define P_FAMILY_STARLY                  TRUE
+#undef P_FAMILY_KOKATORIMON
+#define P_FAMILY_KOKATORIMON                  TRUE
 #undef P_FAMILY_BIDOOF
 #define P_FAMILY_BIDOOF                  TRUE
 #undef P_FAMILY_KRICKETOT

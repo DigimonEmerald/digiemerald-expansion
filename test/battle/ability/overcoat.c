@@ -26,7 +26,7 @@ DOUBLE_BATTLE_TEST("Overcoat blocks damage from sandstorm")
         PLAYER(SPECIES_EXVEEMON)    { Speed(50); } 
         PLAYER(SPECIES_HELIOLISK) { Speed(40); Ability(ABILITY_SAND_VEIL); }
         OPPONENT(SPECIES_LUDOMON)  { Speed(30); Ability(ABILITY_OVERCOAT); }
-        OPPONENT(SPECIES_STARLY)     { Speed(20); }
+        OPPONENT(SPECIES_KOKATORIMON)     { Speed(20); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SANDSTORM); }
     } SCENE {

@@ -262,7 +262,7 @@
 #define P_FAMILY_DEATHMON_CMON_DIGIMON                 P_GEN_4_POKEMON
 #define P_FAMILY_MERAMON                P_GEN_4_POKEMON
 #define P_FAMILY_TYRANNOMON                  P_GEN_4_POKEMON
-#define P_FAMILY_STARLY                  P_GEN_4_POKEMON
+#define P_FAMILY_KOKATORIMON                  P_GEN_4_POKEMON
 #define P_FAMILY_BIDOOF                  P_GEN_4_POKEMON
 #define P_FAMILY_KRICKETOT               P_GEN_4_POKEMON
 #define P_FAMILY_SHINX                   P_GEN_4_POKEMON

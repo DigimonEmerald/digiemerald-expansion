@@ -3109,13 +3109,13 @@ static const struct SpriteFrameImage sPicTable_Whamon[] = {
 };
 #endif //P_FAMILY_TYRANNOMON
 
-#if P_FAMILY_STARLY
-static const struct SpriteFrameImage sPicTable_Starly[] = {
-    overworld_ascending_frames(gObjectEventPic_Starly, 4, 4),
+#if P_FAMILY_KOKATORIMON
+static const struct SpriteFrameImage sPicTable_Kokatorimon[] = {
+    overworld_ascending_frames(gObjectEventPic_Kokatorimon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_StarlyF[] = {
-    overworld_ascending_frames(gObjectEventPic_StarlyF, 4, 4),
+static const struct SpriteFrameImage sPicTable_KokatorimonF[] = {
+    overworld_ascending_frames(gObjectEventPic_KokatorimonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 static const struct SpriteFrameImage sPicTable_Staravia[] = {
@@ -3134,7 +3134,7 @@ static const struct SpriteFrameImage sPicTable_StaraptorF[] = {
     overworld_ascending_frames(gObjectEventPic_StaraptorF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_STARLY
+#endif //P_FAMILY_KOKATORIMON
 
 #if P_FAMILY_BIDOOF
 static const struct SpriteFrameImage sPicTable_Bidoof[] = {

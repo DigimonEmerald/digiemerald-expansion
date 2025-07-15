@@ -5345,8 +5345,8 @@ static const union AnimCmd sAnim_Whamon_1[] =
 };
 #endif //P_FAMILY_TYRANNOMON
 
-#if P_FAMILY_STARLY
-static const union AnimCmd sAnim_Starly_1[] =
+#if P_FAMILY_KOKATORIMON
+static const union AnimCmd sAnim_Kokatorimon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 10),
@@ -5369,7 +5369,7 @@ static const union AnimCmd sAnim_Staraptor_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_STARLY
+#endif //P_FAMILY_KOKATORIMON
 
 #if P_FAMILY_BIDOOF
 static const union AnimCmd sAnim_Bidoof_1[] =
@@ -11426,11 +11426,11 @@ SINGLE_ANIMATION(Tyrannomon);
 SINGLE_ANIMATION(Vegiemon);
 SINGLE_ANIMATION(Whamon);
 #endif //P_FAMILY_TYRANNOMON
-#if P_FAMILY_STARLY
-SINGLE_ANIMATION(Starly);
+#if P_FAMILY_KOKATORIMON
+SINGLE_ANIMATION(Kokatorimon);
 SINGLE_ANIMATION(Staravia);
 SINGLE_ANIMATION(Staraptor);
-#endif //P_FAMILY_STARLY
+#endif //P_FAMILY_KOKATORIMON
 #if P_FAMILY_BIDOOF
 SINGLE_ANIMATION(Bidoof);
 SINGLE_ANIMATION(Bibarel);

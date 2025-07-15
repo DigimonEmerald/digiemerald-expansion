@@ -11851,36 +11851,35 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_TYRANNOMON
 
-#if P_FAMILY_STARLY
-    [SPECIES_STARLY] =
+#if P_FAMILY_KOKATORIMON
+    [SPECIES_KOKATORIMON] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 55,
-        .baseDefense   = 30,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 30,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
-        .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 49 : 56,
+        .baseHP        = 80,
+        .baseAttack    = 65,
+        .baseDefense   = 50,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_ROCK, TYPE_FLYING),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP = 2,
         .evYield_Speed = 1,
+        .evYield_SpAttack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-    #if P_UPDATED_ABILITIES >= GEN_6
-        .abilities = { ABILITY_KEEN_EYE, ABILITY_NONE, ABILITY_RECKLESS },
-    #else
-        .abilities = { ABILITY_KEEN_EYE, ABILITY_NONE, ABILITY_NONE },
-    #endif
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Starly"),
-        .cryId = CRY_STARLY,
-        .natDexNum = NATIONAL_DEX_STARLY,
-        .categoryName = _("Starling"),
-        .height = 3,
-        .weight = 20,
+        .abilities = { ABILITY_BIG_PECKS, ABILITY_EARLY_BIRD, ABILITY_NONE }, // Strong Legs
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Kokatorimon"),
+        .cryId = CRY_KOKATORIMON,
+        .natDexNum = NATIONAL_DEX_KOKATORIMON,
+        .categoryName = _("Giant Bird"),
+        .height = 23,
+        .weight = 745,
         .description = COMPOUND_STRING(
             "They flock around mountains and fields,\n"
             "chasing after bug Pokémon. However,\n"
@@ -11890,7 +11889,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Starly,
+        .frontPic = gMonFrontPic_Kokatorimon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 12,
         .frontAnimFrames = ANIM_FRAMES(
@@ -11901,42 +11900,42 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Starly,
+        .backPic = gMonBackPic_Kokatorimon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Starly,
-        .shinyPalette = gMonShinyPalette_Starly,
-        .iconSprite = gMonIcon_Starly,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Kokatorimon,
+        .shinyPalette = gMonShinyPalette_Kokatorimon,
+        .iconSprite = gMonIcon_Kokatorimon,
+        .iconPalIndex = 1,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_StarlyF,
+        .frontPicFemale = gMonFrontPic_KokatorimonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(40, 40),
-        .backPicFemale = gMonBackPic_StarlyF,
+        .backPicFemale = gMonBackPic_KokatorimonF,
         .backPicSizeFemale = MON_COORDS_SIZE(56, 48),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 1, SHADOW_SIZE_S)
-        FOOTPRINT(Starly)
+        FOOTPRINT(Kokatorimon)
         OVERWORLD(
-            sPicTable_Starly,
+            sPicTable_Kokatorimon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Starly,
-            gShinyOverworldPalette_Starly
+            gOverworldPalette_Kokatorimon,
+            gShinyOverworldPalette_Kokatorimon
         )
         OVERWORLD_FEMALE(
-            sPicTable_StarlyF,
+            sPicTable_KokatorimonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sStarlyLevelUpLearnset,
-        .teachableLearnset = sStarlyTeachableLearnset,
-        .eggMoveLearnset = sStarlyEggMoveLearnset,
+        .levelUpLearnset = sKokatorimonLevelUpLearnset,
+        .teachableLearnset = sKokatorimonTeachableLearnset,
+        .eggMoveLearnset = sKokatorimonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_STARAVIA}),
     },
 
@@ -12104,7 +12103,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sStaraptorLevelUpLearnset,
         .teachableLearnset = sStaraptorTeachableLearnset,
     },
-#endif //P_FAMILY_STARLY
+#endif //P_FAMILY_KOKATORIMON
 
 #if P_FAMILY_BIDOOF
     [SPECIES_BIDOOF] =
@@ -13288,7 +13287,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .weight = 65,
         .description = COMPOUND_STRING(
             "Its earthen skin is reasonably hard, it has\n"
-            "no problem repelling a Starly's pecking.\n"
+            "no problem repelling a Kokatorimon's pecking.\n"
             "It is said that a Wormadam that evolves\n"
             "on a cold day will have a thicker cloak."),
         .pokemonScale = 432,
@@ -13905,7 +13904,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .description = COMPOUND_STRING(
             "The small ball holds the nutrients needed\n"
             "for evolution. Apparently, it is also very\n"
-            "sweet and tasty. Pokémon like Starly and\n"
+            "sweet and tasty. Pokémon like Kokatorimon and\n"
             "Allomon_x try to peck it off."),
         .pokemonScale = 491,
         .pokemonOffset = 12,

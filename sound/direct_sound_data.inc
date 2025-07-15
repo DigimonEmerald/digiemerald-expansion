@@ -2936,10 +2936,10 @@ Cry_Whamon::
 	.incbin "sound/direct_sound_samples/cries/whamon.bin"
 .endif @ P_FAMILY_TYRANNOMON
 
-.if P_FAMILY_STARLY == TRUE
+.if P_FAMILY_KOKATORIMON == TRUE
 	.align 2
-Cry_Starly::
-	.incbin "sound/direct_sound_samples/cries/starly.bin"
+Cry_Kokatorimon::
+	.incbin "sound/direct_sound_samples/cries/kokatorimon.bin"
 
 	.align 2
 Cry_Staravia::
@@ -2948,7 +2948,7 @@ Cry_Staravia::
 	.align 2
 Cry_Staraptor::
 	.incbin "sound/direct_sound_samples/cries/staraptor.bin"
-.endif @ P_FAMILY_STARLY
+.endif @ P_FAMILY_KOKATORIMON
 
 .if P_FAMILY_BIDOOF == TRUE
 	.align 2
