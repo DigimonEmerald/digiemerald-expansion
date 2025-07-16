@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("Revelation Dance changes its type depending on the user's 1s
 
     PARAMETRIZE { speciesPlayer = SPECIES_ORICORIO_POM_POM; speciesOpponent = SPECIES_BUKAMON; }
     PARAMETRIZE { speciesPlayer = SPECIES_ORICORIO_BAILE; speciesOpponent = SPECIES_CURIMON; }
-    PARAMETRIZE { speciesPlayer = SPECIES_ORICORIO_PAU; speciesOpponent = SPECIES_LIEPARD; }
+    PARAMETRIZE { speciesPlayer = SPECIES_ORICORIO_PAU; speciesOpponent = SPECIES_ETEMON; }
     PARAMETRIZE { speciesPlayer = SPECIES_ORICORIO_SENSU; speciesOpponent = SPECIES_CHAPMON; }
 
     GIVEN {

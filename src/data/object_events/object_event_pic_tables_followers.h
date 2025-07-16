@@ -3759,8 +3759,8 @@ static const struct SpriteFrameImage sPicTable_Dragomon[] = {
 static const struct SpriteFrameImage sPicTable_Digitamamon[] = {
     overworld_ascending_frames(gObjectEventPic_Digitamamon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Liepard[] = {
-    overworld_ascending_frames(gObjectEventPic_Liepard, 4, 4),
+static const struct SpriteFrameImage sPicTable_Etemon[] = {
+    overworld_ascending_frames(gObjectEventPic_Etemon, 4, 4),
 };
 #endif //P_FAMILY_DIGITAMAMON
 

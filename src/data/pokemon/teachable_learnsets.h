@@ -21542,7 +21542,7 @@ static const u16 sDigitamamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sLiepardTeachableLearnset[] = {
+static const u16 sEtemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CUT,

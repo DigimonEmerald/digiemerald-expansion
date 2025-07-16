@@ -16167,19 +16167,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Liepard[] = INCBIN_U32("graphics/pokemon/liepard/anim_front.4bpp.lz");
-    const u16 gMonPalette_Liepard[] = INCBIN_U16("graphics/pokemon/liepard/normal.gbapal");
-    const u32 gMonBackPic_Liepard[] = INCBIN_U32("graphics/pokemon/liepard/back.4bpp.lz");
-    const u16 gMonShinyPalette_Liepard[] = INCBIN_U16("graphics/pokemon/liepard/shiny.gbapal");
-    const u8 gMonIcon_Liepard[] = INCBIN_U8("graphics/pokemon/liepard/icon.4bpp");
+    const u32 gMonFrontPic_Etemon[] = INCBIN_U32("graphics/pokemon/etemon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Etemon[] = INCBIN_U16("graphics/pokemon/etemon/normal.gbapal");
+    const u32 gMonBackPic_Etemon[] = INCBIN_U32("graphics/pokemon/etemon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Etemon[] = INCBIN_U16("graphics/pokemon/etemon/shiny.gbapal");
+    const u8 gMonIcon_Etemon[] = INCBIN_U8("graphics/pokemon/etemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Liepard[] = INCBIN_U8("graphics/pokemon/liepard/footprint.1bpp");
+    const u8 gMonFootprint_Etemon[] = INCBIN_U8("graphics/pokemon/etemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Liepard[] = INCBIN_COMP("graphics/pokemon/liepard/overworld.4bpp");
+    const u32 gObjectEventPic_Etemon[] = INCBIN_COMP("graphics/pokemon/etemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Liepard[] = INCBIN_U16("graphics/pokemon/liepard/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Liepard[] = INCBIN_U16("graphics/pokemon/liepard/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Etemon[] = INCBIN_U16("graphics/pokemon/etemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Etemon[] = INCBIN_U16("graphics/pokemon/etemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_DIGITAMAMON

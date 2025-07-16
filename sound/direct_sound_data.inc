@@ -3400,8 +3400,8 @@ Cry_Digitamamon::
 	.incbin "sound/direct_sound_samples/cries/digitamamon.bin"
 
 	.align 2
-Cry_Liepard::
-	.incbin "sound/direct_sound_samples/cries/liepard.bin"
+Cry_Etemon::
+	.incbin "sound/direct_sound_samples/cries/etemon.bin"
 .endif @ P_FAMILY_DIGITAMAMON
 
 .if P_FAMILY_PANSAGE == TRUE

@@ -527,7 +527,7 @@
 #define SPECIES_MEGAKABUTERIMON_BLUE                                 507
 #define SPECIES_DRAGOMON                               508
 #define SPECIES_DIGITAMAMON                                509
-#define SPECIES_LIEPARD                                 510
+#define SPECIES_ETEMON                                 510
 #define SPECIES_PANSAGE                                 511
 #define SPECIES_SIMISAGE                                512
 #define SPECIES_PANSEAR                                 513

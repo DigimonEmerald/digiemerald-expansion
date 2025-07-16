@@ -1239,7 +1239,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .palette = gMonPalette_Digitamamon,
         .shinyPalette = gMonShinyPalette_Digitamamon,
         .iconSprite = gMonIcon_Digitamamon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(0, 2, SHADOW_SIZE_S)
         FOOTPRINT(Digitamamon)
@@ -1255,44 +1255,47 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sDigitamamonLevelUpLearnset,
         .teachableLearnset = sDigitamamonTeachableLearnset,
         .eggMoveLearnset = sDigitamamonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_LIEPARD}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_ETEMON}),
     },
 
-    [SPECIES_LIEPARD] =
+    [SPECIES_ETEMON] =
     {
-        .baseHP        = 64,
-        .baseAttack    = 88,
-        .baseDefense   = 50,
-        .baseSpeed     = 106,
-        .baseSpAttack  = 88,
-        .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_DARK),
-        .catchRate = 90,
-        .expYield = 156,
-        .evYield_Speed = 2,
+        .baseHP        = 60,
+        .baseAttack    = 120,
+        .baseDefense   = 100,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_FIGHTING),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_Attack = 3,
+        .evYield_Defense = 1,
+        .evYield_Speed = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_LIMBER, ABILITY_UNBURDEN, ABILITY_PRANKSTER },
-        .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Liepard"),
-        .cryId = CRY_LIEPARD,
-        .natDexNum = NATIONAL_DEX_LIEPARD,
-        .categoryName = _("Cruel"),
-        .height = 11,
-        .weight = 375,
+        .abilities = { ABILITY_STURDY, ABILITY_PUNK_ROCK, ABILITY_PRANKSTER },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Etemon"),
+        .cryId = CRY_ETEMON,
+        .natDexNum = NATIONAL_DEX_ETEMON,
+        .categoryName = _("King"),
+        .height = 18,
+        .weight = 636,
         .description = COMPOUND_STRING(
-            "Many Trainers are drawn to their\n"
-            "beautiful form and fur. These Pokémon\n"
-            "vanish and appear unexpectedly.\n"
-            "They run silently in the night."),
+            "Appearing mysteriously in the digital\n"
+            "world, Etemon immediately annocounced\n"
+            "itself as the king of Digimon. It has\n"
+            "the fighting strength to back this claim."),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Liepard,
+        .frontPic = gMonFrontPic_Etemon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
@@ -1301,28 +1304,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Liepard,
+        .backPic = gMonBackPic_Etemon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_H_STRETCH,
-        .palette = gMonPalette_Liepard,
-        .shinyPalette = gMonShinyPalette_Liepard,
-        .iconSprite = gMonIcon_Liepard,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Etemon,
+        .shinyPalette = gMonShinyPalette_Etemon,
+        .iconSprite = gMonIcon_Etemon,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 11, SHADOW_SIZE_M)
-        FOOTPRINT(Liepard)
+        FOOTPRINT(Etemon)
         OVERWORLD(
-            sPicTable_Liepard,
+            sPicTable_Etemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Liepard,
-            gShinyOverworldPalette_Liepard
+            gOverworldPalette_Etemon,
+            gShinyOverworldPalette_Etemon
         )
-        .levelUpLearnset = sLiepardLevelUpLearnset,
-        .teachableLearnset = sLiepardTeachableLearnset,
+        .levelUpLearnset = sEtemonLevelUpLearnset,
+        .teachableLearnset = sEtemonTeachableLearnset,
     },
 #endif //P_FAMILY_DIGITAMAMON
 

@@ -6424,7 +6424,7 @@ static const union AnimCmd sAnim_Digitamamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Liepard_1[] =
+static const union AnimCmd sAnim_Etemon_1[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 45),
@@ -11631,7 +11631,7 @@ SINGLE_ANIMATION(Dragomon);
 #endif //P_FAMILY_SCORPIOMON
 #if P_FAMILY_DIGITAMAMON
 SINGLE_ANIMATION(Digitamamon);
-SINGLE_ANIMATION(Liepard);
+SINGLE_ANIMATION(Etemon);
 #endif //P_FAMILY_DIGITAMAMON
 #if P_FAMILY_PANSAGE
 SINGLE_ANIMATION(Pansage);

@@ -1288,7 +1288,7 @@ gCryTable::
 .endif @ P_FAMILY_SCORPIOMON
 .if P_FAMILY_DIGITAMAMON == TRUE
 	cry Cry_Digitamamon
-	cry Cry_Liepard
+	cry Cry_Etemon
 .endif @ P_FAMILY_DIGITAMAMON
 .if P_FAMILY_PANSAGE == TRUE
 	cry Cry_Pansage
@@ -3716,7 +3716,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_SCORPIOMON
 .if P_FAMILY_DIGITAMAMON == TRUE
 	cry_reverse Cry_Digitamamon
-	cry_reverse Cry_Liepard
+	cry_reverse Cry_Etemon
 .endif @ P_FAMILY_DIGITAMAMON
 .if P_FAMILY_PANSAGE == TRUE
 	cry_reverse Cry_Pansage
