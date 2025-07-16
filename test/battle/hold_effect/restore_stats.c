@@ -165,34 +165,22 @@ SINGLE_BATTLE_TEST("White Herb wont have time to activate if it is knocked off o
     PARAMETRIZE { move = MOVE_KNOCK_OFF; }
 
     GIVEN {
-        ASSUME(MoveHasAdditionalEffect(MOVE_THIEF, MOVE_EFFECT_STEAL_ITEM) == TRUE);
-        ASSUME(gMovesInfo[MOVE_KNOCK_OFF].effect == EFFECT_KNOCK_OFF);
+        ASSUME(GetMoveEffect(MOVE_KNOCK_OFF) == EFFECT_KNOCK_OFF);
+        ASSUME(GetMoveEffect(MOVE_THIEF) == EFFECT_STEAL_ITEM);
         PLAYER(SPECIES_OTAMAMON_RED) {  Ability(ABILITY_WEAK_ARMOR); Item(ITEM_WHITE_HERB); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
-        if (move == MOVE_THIEF) {
-<<<<<<< HEAD
-            MESSAGE("Foe Lopmonx stole Otamamon_red's White Herb!");
-=======
-            MESSAGE("The opposing Lopmonx stole Otamamon_red's White Herb!");
->>>>>>> upstream/master
-        }
         ABILITY_POPUP(player, ABILITY_WEAK_ARMOR);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         MESSAGE("Otamamon_red's Weak Armor lowered its Defense!");
         MESSAGE("Otamamon_red's Weak Armor raised its Speed!");
         if (move == MOVE_KNOCK_OFF) {
-<<<<<<< HEAD
-            MESSAGE("Foe Lopmonx knocked off Otamamon_red's White Herb!");
-        }
-        NONE_OF {
-            ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Lopmonx's White Herb restored its status!");
-=======
-            MESSAGE("The opposing Lopmonx knocked off Otamamon_red's White Herb!");
+            MESSAGE("The opposing Wobbuffet knocked off Slugma's White Herb!");
+        } else if (move == MOVE_THIEF) {
+            MESSAGE("The opposing Wobbuffet stole Slugma's White Herb!");
         }
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);

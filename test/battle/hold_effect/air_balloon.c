@@ -127,18 +127,14 @@ SINGLE_BATTLE_TEST("Air Balloon pops before it can be stolen with Magician")
     }
 }
 
-SINGLE_BATTLE_TEST("Air Balloon pops before it can be stolen with Thief or Covet")
+SINGLE_BATTLE_TEST("Air Balloon pops before it can be stolen by Thief")
 {
-    u32 move;
-    KNOWN_FAILING;
-    PARAMETRIZE { move = MOVE_THIEF; }
-    PARAMETRIZE { move = MOVE_COVET; }
     GIVEN {
-        ASSUME(MoveHasAdditionalEffect(move, MOVE_EFFECT_STEAL_ITEM) == TRUE);
+        ASSUME(GetMoveEffect(MOVE_THIEF) == EFFECT_STEAL_ITEM);
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_AIR_BALLOON); };
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
-        TURN { MOVE(opponent, move); }
+        TURN { MOVE(opponent, MOVE_THIEF); }
     } SCENE {
 <<<<<<< HEAD
         MESSAGE("Lopmonx floats in the air with its Air Balloon!");
