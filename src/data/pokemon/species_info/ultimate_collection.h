@@ -1186,42 +1186,44 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_SCORPIOMON
 
-#if P_FAMILY_PURRLOIN
-    [SPECIES_PURRLOIN] =
+#if P_FAMILY_DIGITAMAMON
+    [SPECIES_DIGITAMAMON] =
     {
-        .baseHP        = 41,
+        .baseHP        = 165,
         .baseAttack    = 50,
-        .baseDefense   = 37,
-        .baseSpeed     = 66,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 37,
-        .types = MON_TYPES(TYPE_DARK),
+        .baseDefense   = 50,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .attribute = TYPE_DATA,
         .catchRate = 95,
-        .expYield = 56,
-        .evYield_Speed = 1,
+        .expYield = 200,
+        .evYield_HP = 3,
+        .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_LIMBER, ABILITY_UNBURDEN, ABILITY_PRANKSTER },
-        .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Purrloin"),
-        .cryId = CRY_PURRLOIN,
-        .natDexNum = NATIONAL_DEX_PURRLOIN,
-        .categoryName = _("Devious"),
-        .height = 4,
-        .weight = 101,
+        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_INSOMNIA, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Digitamamon"),
+        .cryId = CRY_DIGITAMAMON,
+        .natDexNum = NATIONAL_DEX_DIGITAMAMON,
+        .categoryName = _("Egg"),
+        .height = 11,
+        .weight = 481,
         .description = COMPOUND_STRING(
-            "Their deceptively cute act is the\n"
-            "perfect ruse. They steal from people for\n"
-            "fun, but their victims can't help but\n"
-            "forgive them."),
+            "Digitamamon is considered the apex of\n"
+            "evolution. It is said that it will\n"
+            "never evolve from a normal digimon\n"
+            "and will only evolve when it jogresses"),
         .pokemonScale = 491,
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Purrloin,
+        .frontPic = gMonFrontPic_Digitamamon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 11,
         .frontAnimFrames = ANIM_FRAMES(
@@ -1230,29 +1232,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Purrloin,
+        .backPic = gMonBackPic_Digitamamon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Purrloin,
-        .shinyPalette = gMonShinyPalette_Purrloin,
-        .iconSprite = gMonIcon_Purrloin,
+        .palette = gMonPalette_Digitamamon,
+        .shinyPalette = gMonShinyPalette_Digitamamon,
+        .iconSprite = gMonIcon_Digitamamon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(0, 2, SHADOW_SIZE_S)
-        FOOTPRINT(Purrloin)
+        FOOTPRINT(Digitamamon)
         OVERWORLD(
-            sPicTable_Purrloin,
+            sPicTable_Digitamamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Purrloin,
-            gShinyOverworldPalette_Purrloin
+            gOverworldPalette_Digitamamon,
+            gShinyOverworldPalette_Digitamamon
         )
-        .levelUpLearnset = sPurrloinLevelUpLearnset,
-        .teachableLearnset = sPurrloinTeachableLearnset,
-        .eggMoveLearnset = sPurrloinEggMoveLearnset,
+        .levelUpLearnset = sDigitamamonLevelUpLearnset,
+        .teachableLearnset = sDigitamamonTeachableLearnset,
+        .eggMoveLearnset = sDigitamamonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_LIEPARD}),
     },
 
@@ -1322,7 +1324,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sLiepardLevelUpLearnset,
         .teachableLearnset = sLiepardTeachableLearnset,
     },
-#endif //P_FAMILY_PURRLOIN
+#endif //P_FAMILY_DIGITAMAMON
 
 #if P_FAMILY_PANSAGE
     [SPECIES_PANSAGE] =

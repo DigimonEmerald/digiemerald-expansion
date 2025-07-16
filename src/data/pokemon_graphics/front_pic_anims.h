@@ -6415,8 +6415,8 @@ static const union AnimCmd sAnim_Dragomon_1[] =
 };
 #endif //P_FAMILY_SCORPIOMON
 
-#if P_FAMILY_PURRLOIN
-static const union AnimCmd sAnim_Purrloin_1[] =
+#if P_FAMILY_DIGITAMAMON
+static const union AnimCmd sAnim_Digitamamon_1[] =
 {
     ANIMCMD_FRAME(0, 9),
     ANIMCMD_FRAME(1, 54),
@@ -6431,7 +6431,7 @@ static const union AnimCmd sAnim_Liepard_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_PURRLOIN
+#endif //P_FAMILY_DIGITAMAMON
 
 #if P_FAMILY_PANSAGE
 static const union AnimCmd sAnim_Pansage_1[] =
@@ -11629,10 +11629,10 @@ SINGLE_ANIMATION(Scorpiomon);
 SINGLE_ANIMATION(Megakabuterimon_blue);
 SINGLE_ANIMATION(Dragomon);
 #endif //P_FAMILY_SCORPIOMON
-#if P_FAMILY_PURRLOIN
-SINGLE_ANIMATION(Purrloin);
+#if P_FAMILY_DIGITAMAMON
+SINGLE_ANIMATION(Digitamamon);
 SINGLE_ANIMATION(Liepard);
-#endif //P_FAMILY_PURRLOIN
+#endif //P_FAMILY_DIGITAMAMON
 #if P_FAMILY_PANSAGE
 SINGLE_ANIMATION(Pansage);
 SINGLE_ANIMATION(Simisage);

@@ -16150,20 +16150,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_SCORPIOMON
 
-#if P_FAMILY_PURRLOIN
-    const u32 gMonFrontPic_Purrloin[] = INCBIN_U32("graphics/pokemon/purrloin/anim_front.4bpp.lz");
-    const u16 gMonPalette_Purrloin[] = INCBIN_U16("graphics/pokemon/purrloin/normal.gbapal");
-    const u32 gMonBackPic_Purrloin[] = INCBIN_U32("graphics/pokemon/purrloin/back.4bpp.lz");
-    const u16 gMonShinyPalette_Purrloin[] = INCBIN_U16("graphics/pokemon/purrloin/shiny.gbapal");
-    const u8 gMonIcon_Purrloin[] = INCBIN_U8("graphics/pokemon/purrloin/icon.4bpp");
+#if P_FAMILY_DIGITAMAMON
+    const u32 gMonFrontPic_Digitamamon[] = INCBIN_U32("graphics/pokemon/digitamamon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Digitamamon[] = INCBIN_U16("graphics/pokemon/digitamamon/normal.gbapal");
+    const u32 gMonBackPic_Digitamamon[] = INCBIN_U32("graphics/pokemon/digitamamon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Digitamamon[] = INCBIN_U16("graphics/pokemon/digitamamon/shiny.gbapal");
+    const u8 gMonIcon_Digitamamon[] = INCBIN_U8("graphics/pokemon/digitamamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Purrloin[] = INCBIN_U8("graphics/pokemon/purrloin/footprint.1bpp");
+    const u8 gMonFootprint_Digitamamon[] = INCBIN_U8("graphics/pokemon/digitamamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Purrloin[] = INCBIN_COMP("graphics/pokemon/purrloin/overworld.4bpp");
+    const u32 gObjectEventPic_Digitamamon[] = INCBIN_COMP("graphics/pokemon/digitamamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Purrloin[] = INCBIN_U16("graphics/pokemon/purrloin/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Purrloin[] = INCBIN_U16("graphics/pokemon/purrloin/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Digitamamon[] = INCBIN_U16("graphics/pokemon/digitamamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Digitamamon[] = INCBIN_U16("graphics/pokemon/digitamamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16182,7 +16182,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Liepard[] = INCBIN_U16("graphics/pokemon/liepard/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_PURRLOIN
+#endif //P_FAMILY_DIGITAMAMON
 
 #if P_FAMILY_PANSAGE
     const u32 gMonFrontPic_Pansage[] = INCBIN_U32("graphics/pokemon/pansage/anim_front.4bpp.lz");

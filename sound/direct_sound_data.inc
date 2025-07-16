@@ -3394,15 +3394,15 @@ Cry_Dragomon::
 	.incbin "sound/direct_sound_samples/cries/dragomon.bin"
 .endif @ P_FAMILY_SCORPIOMON
 
-.if P_FAMILY_PURRLOIN == TRUE
+.if P_FAMILY_DIGITAMAMON == TRUE
 	.align 2
-Cry_Purrloin::
-	.incbin "sound/direct_sound_samples/cries/purrloin.bin"
+Cry_Digitamamon::
+	.incbin "sound/direct_sound_samples/cries/digitamamon.bin"
 
 	.align 2
 Cry_Liepard::
 	.incbin "sound/direct_sound_samples/cries/liepard.bin"
-.endif @ P_FAMILY_PURRLOIN
+.endif @ P_FAMILY_DIGITAMAMON
 
 .if P_FAMILY_PANSAGE == TRUE
 	.align 2

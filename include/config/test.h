@@ -546,8 +546,8 @@
 #define P_FAMILY_ANDROMON                  TRUE
 #undef P_FAMILY_SCORPIOMON
 #define P_FAMILY_SCORPIOMON                TRUE
-#undef P_FAMILY_PURRLOIN
-#define P_FAMILY_PURRLOIN                TRUE
+#undef P_FAMILY_DIGITAMAMON
+#define P_FAMILY_DIGITAMAMON                TRUE
 #undef P_FAMILY_PANSAGE
 #define P_FAMILY_PANSAGE                 TRUE
 #undef P_FAMILY_PANSEAR

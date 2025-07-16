@@ -3989,8 +3989,8 @@ static const u16 sScorpiomonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_SCORPIOMON
 
-#if P_FAMILY_PURRLOIN
-static const u16 sPurrloinEggMoveLearnset[] = {
+#if P_FAMILY_DIGITAMAMON
+static const u16 sDigitamamonEggMoveLearnset[] = {
     MOVE_PAY_DAY,
     MOVE_FOUL_PLAY,
     MOVE_FEINT_ATTACK,
@@ -4002,7 +4002,7 @@ static const u16 sPurrloinEggMoveLearnset[] = {
     MOVE_COPYCAT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PURRLOIN
+#endif //P_FAMILY_DIGITAMAMON
 
 #if P_FAMILY_PANSAGE
 static const u16 sPansageEggMoveLearnset[] = {

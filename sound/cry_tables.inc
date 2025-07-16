@@ -1286,10 +1286,10 @@ gCryTable::
 	cry Cry_Megakabuterimon_blue
 	cry Cry_Dragomon
 .endif @ P_FAMILY_SCORPIOMON
-.if P_FAMILY_PURRLOIN == TRUE
-	cry Cry_Purrloin
+.if P_FAMILY_DIGITAMAMON == TRUE
+	cry Cry_Digitamamon
 	cry Cry_Liepard
-.endif @ P_FAMILY_PURRLOIN
+.endif @ P_FAMILY_DIGITAMAMON
 .if P_FAMILY_PANSAGE == TRUE
 	cry Cry_Pansage
 	cry Cry_Simisage
@@ -3714,10 +3714,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Megakabuterimon_blue
 	cry_reverse Cry_Dragomon
 .endif @ P_FAMILY_SCORPIOMON
-.if P_FAMILY_PURRLOIN == TRUE
-	cry_reverse Cry_Purrloin
+.if P_FAMILY_DIGITAMAMON == TRUE
+	cry_reverse Cry_Digitamamon
 	cry_reverse Cry_Liepard
-.endif @ P_FAMILY_PURRLOIN
+.endif @ P_FAMILY_DIGITAMAMON
 .if P_FAMILY_PANSAGE == TRUE
 	cry_reverse Cry_Pansage
 	cry_reverse Cry_Simisage

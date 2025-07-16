@@ -21513,8 +21513,8 @@ static const u16 sDragomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SCORPIOMON
 
-#if P_FAMILY_PURRLOIN
-static const u16 sPurrloinTeachableLearnset[] = {
+#if P_FAMILY_DIGITAMAMON
+static const u16 sDigitamamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CUT,
@@ -21571,7 +21571,7 @@ static const u16 sLiepardTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PURRLOIN
+#endif //P_FAMILY_DIGITAMAMON
 
 #if P_FAMILY_PANSAGE
 static const u16 sPansageTeachableLearnset[] = {
