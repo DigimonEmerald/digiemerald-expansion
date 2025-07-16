@@ -406,7 +406,8 @@ Seadramon - Infernape
 Tyrannomon - Piplup
 Vegiemon - Prinplup
 Whamon - Empoleon
-Cockatrimon - Starly
+Kokatorimon - Starly
+Vilemon - Staravia
 
 Ultimate List
 

@@ -18469,7 +18469,7 @@ static const u16 sKokatorimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sStaraviaTeachableLearnset[] = {
+static const u16 sVilemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_EDGE,

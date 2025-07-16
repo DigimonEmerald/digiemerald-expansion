@@ -9384,7 +9384,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sFrigimonLevelUpLearnset,
         .teachableLearnset = sFrigimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_STARAVIA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_VILEMON}),
     },
 
     [SPECIES_FROGMON] =
@@ -11936,44 +11936,46 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sKokatorimonLevelUpLearnset,
         .teachableLearnset = sKokatorimonTeachableLearnset,
         .eggMoveLearnset = sKokatorimonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_STARAVIA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_VILEMON}),
     },
 
-    [SPECIES_STARAVIA] =
+    [SPECIES_VILEMON] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 75,
+        .baseHP        = 60,
+        .baseAttack    = 55,
         .baseDefense   = 50,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 40,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
-        .catchRate = 120,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 119 : 113,
-        .evYield_Speed = 2,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_DARK),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed = 3,
+        .evYield_SpAttack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_NONE, ABILITY_RECKLESS },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Staravia"),
-        .cryId = CRY_STARAVIA,
-        .natDexNum = NATIONAL_DEX_STARAVIA,
-        .categoryName = _("Starling"),
-        .height = 6,
-        .weight = 155,
+        .abilities = { ABILITY_WIMP_OUT, ABILITY_RUN_AWAY, ABILITY_OPPORTUNIST },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Vilemon"),
+        .cryId = CRY_VILEMON,
+        .natDexNum = NATIONAL_DEX_VILEMON,
+        .categoryName = _("Coward"),
+        .height = 9,
+        .weight = 226,
         .description = COMPOUND_STRING(
-            "Recognizing their own weakness, they\n"
-            "maintain huge flocks. Fierce scuffles\n"
-            "break out between various flocks.\n"
-            "When alone, a Staravia cries noisily."),
+            "To avoid losing, Vilemon have developed\n"
+            "some of the most cowardly acts possible.\n"
+            "It will torment weak digimon but run\n"
+            "away as soon as its opposed in any way."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Staravia,
+        .frontPic = gMonFrontPic_Vilemon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
@@ -11981,41 +11983,41 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 20),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Staravia,
+        .backPic = gMonBackPic_Vilemon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Staravia,
-        .shinyPalette = gMonShinyPalette_Staravia,
-        .iconSprite = gMonIcon_Staravia,
+        .palette = gMonPalette_Vilemon,
+        .shinyPalette = gMonShinyPalette_Vilemon,
+        .iconSprite = gMonIcon_Vilemon,
         .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_StaraviaF,
+        .frontPicFemale = gMonFrontPic_VilemonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(40, 48),
-        .backPicFemale = gMonBackPic_StaraviaF,
+        .backPicFemale = gMonBackPic_VilemonF,
         .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 5, SHADOW_SIZE_S)
-        FOOTPRINT(Staravia)
+        FOOTPRINT(Vilemon)
         OVERWORLD(
-            sPicTable_Staravia,
+            sPicTable_Vilemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Staravia,
-            gShinyOverworldPalette_Staravia
+            gOverworldPalette_Vilemon,
+            gShinyOverworldPalette_Vilemon
         )
         OVERWORLD_FEMALE(
-            sPicTable_StaraviaF,
+            sPicTable_VilemonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sStaraviaLevelUpLearnset,
-        .teachableLearnset = sStaraviaTeachableLearnset,
+        .levelUpLearnset = sVilemonLevelUpLearnset,
+        .teachableLearnset = sVilemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_STARAPTOR}),
     },
 
@@ -12053,7 +12055,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 12,
         .weight = 249,
         .description = COMPOUND_STRING(
-            "When Staravia evolve into Staraptor,\n"
+            "When Vilemon evolve into Staraptor,\n"
             "they leave the flock to live alone. It has\n"
             "a savage nature. It will courageously\n"
             "challenge foes that are much larger."),

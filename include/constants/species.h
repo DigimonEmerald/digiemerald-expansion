@@ -405,7 +405,7 @@
 #define SPECIES_VEGIEMON                                394
 #define SPECIES_WHAMON                                395
 #define SPECIES_KOKATORIMON                                  396
-#define SPECIES_STARAVIA                                397
+#define SPECIES_VILEMON                                397
 #define SPECIES_STARAPTOR                               398
 #define SPECIES_BIDOOF                                  399
 #define SPECIES_BIBAREL                                 400

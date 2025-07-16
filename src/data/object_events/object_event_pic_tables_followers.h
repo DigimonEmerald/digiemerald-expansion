@@ -3118,12 +3118,12 @@ static const struct SpriteFrameImage sPicTable_KokatorimonF[] = {
     overworld_ascending_frames(gObjectEventPic_KokatorimonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_Staravia[] = {
-    overworld_ascending_frames(gObjectEventPic_Staravia, 4, 4),
+static const struct SpriteFrameImage sPicTable_Vilemon[] = {
+    overworld_ascending_frames(gObjectEventPic_Vilemon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_StaraviaF[] = {
-    overworld_ascending_frames(gObjectEventPic_StaraviaF, 4, 4),
+static const struct SpriteFrameImage sPicTable_VilemonF[] = {
+    overworld_ascending_frames(gObjectEventPic_VilemonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 static const struct SpriteFrameImage sPicTable_Staraptor[] = {

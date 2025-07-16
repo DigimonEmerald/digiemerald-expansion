@@ -5356,7 +5356,7 @@ static const union AnimCmd sAnim_Kokatorimon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Staravia_1[] =
+static const union AnimCmd sAnim_Vilemon_1[] =
 {
     ANIMCMD_FRAME(1, 32),
     ANIMCMD_FRAME(0, 20),
@@ -11428,7 +11428,7 @@ SINGLE_ANIMATION(Whamon);
 #endif //P_FAMILY_TYRANNOMON
 #if P_FAMILY_KOKATORIMON
 SINGLE_ANIMATION(Kokatorimon);
-SINGLE_ANIMATION(Staravia);
+SINGLE_ANIMATION(Vilemon);
 SINGLE_ANIMATION(Staraptor);
 #endif //P_FAMILY_KOKATORIMON
 #if P_FAMILY_BIDOOF

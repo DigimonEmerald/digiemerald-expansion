@@ -14169,27 +14169,27 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
-    const u32 gMonFrontPic_Staravia[] = INCBIN_U32("graphics/pokemon/staravia/anim_front.4bpp.lz");
-    const u16 gMonPalette_Staravia[] = INCBIN_U16("graphics/pokemon/staravia/normal.gbapal");
-    const u32 gMonBackPic_Staravia[] = INCBIN_U32("graphics/pokemon/staravia/back.4bpp.lz");
-    const u16 gMonShinyPalette_Staravia[] = INCBIN_U16("graphics/pokemon/staravia/shiny.gbapal");
-    const u8 gMonIcon_Staravia[] = INCBIN_U8("graphics/pokemon/staravia/icon.4bpp");
+    const u32 gMonFrontPic_Vilemon[] = INCBIN_U32("graphics/pokemon/vilemon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Vilemon[] = INCBIN_U16("graphics/pokemon/vilemon/normal.gbapal");
+    const u32 gMonBackPic_Vilemon[] = INCBIN_U32("graphics/pokemon/vilemon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Vilemon[] = INCBIN_U16("graphics/pokemon/vilemon/shiny.gbapal");
+    const u8 gMonIcon_Vilemon[] = INCBIN_U8("graphics/pokemon/vilemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Staravia[] = INCBIN_U8("graphics/pokemon/staravia/footprint.1bpp");
+    const u8 gMonFootprint_Vilemon[] = INCBIN_U8("graphics/pokemon/vilemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Staravia[] = INCBIN_COMP("graphics/pokemon/staravia/overworld.4bpp");
+    const u32 gObjectEventPic_Vilemon[] = INCBIN_COMP("graphics/pokemon/vilemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Staravia[] = INCBIN_U16("graphics/pokemon/staravia/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Staravia[] = INCBIN_U16("graphics/pokemon/staravia/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Vilemon[] = INCBIN_U16("graphics/pokemon/vilemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Vilemon[] = INCBIN_U16("graphics/pokemon/vilemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_StaraviaF[] = INCBIN_U32("graphics/pokemon/staravia/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_StaraviaF[] = INCBIN_U32("graphics/pokemon/staravia/back.4bpp.lz");
+    const u32 gMonFrontPic_VilemonF[] = INCBIN_U32("graphics/pokemon/vilemon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_VilemonF[] = INCBIN_U32("graphics/pokemon/vilemon/back.4bpp.lz");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_StaraviaF[] = INCBIN_COMP("graphics/pokemon/staravia/overworldf.4bpp");
+    const u32 gObjectEventPic_VilemonF[] = INCBIN_COMP("graphics/pokemon/vilemon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 

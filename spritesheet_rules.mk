@@ -2334,10 +2334,10 @@ $(POKEMONGFXDIR)/kokatorimon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/kokatorimon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/staravia/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/vilemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/staravia/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/vilemon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/staraptor/overworld.4bpp: %.4bpp: %.png

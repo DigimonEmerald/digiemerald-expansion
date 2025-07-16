@@ -1097,7 +1097,7 @@ gCryTable::
 .endif @ P_FAMILY_TYRANNOMON
 .if P_FAMILY_KOKATORIMON == TRUE
 	cry Cry_Kokatorimon
-	cry Cry_Staravia
+	cry Cry_Vilemon
 	cry Cry_Staraptor
 .endif @ P_FAMILY_KOKATORIMON
 .if P_FAMILY_BIDOOF == TRUE
@@ -3525,7 +3525,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_TYRANNOMON
 .if P_FAMILY_KOKATORIMON == TRUE
 	cry_reverse Cry_Kokatorimon
-	cry_reverse Cry_Staravia
+	cry_reverse Cry_Vilemon
 	cry_reverse Cry_Staraptor
 .endif @ P_FAMILY_KOKATORIMON
 .if P_FAMILY_BIDOOF == TRUE

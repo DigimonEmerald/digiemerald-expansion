@@ -2942,8 +2942,8 @@ Cry_Kokatorimon::
 	.incbin "sound/direct_sound_samples/cries/kokatorimon.bin"
 
 	.align 2
-Cry_Staravia::
-	.incbin "sound/direct_sound_samples/cries/staravia.bin"
+Cry_Vilemon::
+	.incbin "sound/direct_sound_samples/cries/vilemon.bin"
 
 	.align 2
 Cry_Staraptor::

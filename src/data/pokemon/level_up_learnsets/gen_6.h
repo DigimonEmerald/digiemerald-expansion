@@ -10142,7 +10142,7 @@ static const struct LevelUpMove sKokatorimonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sStaraviaLevelUpLearnset[] = {
+static const struct LevelUpMove sVilemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
