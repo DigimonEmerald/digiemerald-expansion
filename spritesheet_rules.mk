@@ -2772,7 +2772,7 @@ $(POKEMONGFXDIR)/scorpiomon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/megakabuterimon_blue/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/stoutland/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/dragomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/purrloin/overworld.4bpp: %.4bpp: %.png

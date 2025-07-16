@@ -16133,19 +16133,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Stoutland[] = INCBIN_U32("graphics/pokemon/stoutland/anim_front.4bpp.lz");
-    const u16 gMonPalette_Stoutland[] = INCBIN_U16("graphics/pokemon/stoutland/normal.gbapal");
-    const u32 gMonBackPic_Stoutland[] = INCBIN_U32("graphics/pokemon/stoutland/back.4bpp.lz");
-    const u16 gMonShinyPalette_Stoutland[] = INCBIN_U16("graphics/pokemon/stoutland/shiny.gbapal");
-    const u8 gMonIcon_Stoutland[] = INCBIN_U8("graphics/pokemon/stoutland/icon.4bpp");
+    const u32 gMonFrontPic_Dragomon[] = INCBIN_U32("graphics/pokemon/dragomon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Dragomon[] = INCBIN_U16("graphics/pokemon/dragomon/normal.gbapal");
+    const u32 gMonBackPic_Dragomon[] = INCBIN_U32("graphics/pokemon/dragomon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Dragomon[] = INCBIN_U16("graphics/pokemon/dragomon/shiny.gbapal");
+    const u8 gMonIcon_Dragomon[] = INCBIN_U8("graphics/pokemon/dragomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Stoutland[] = INCBIN_U8("graphics/pokemon/stoutland/footprint.1bpp");
+    const u8 gMonFootprint_Dragomon[] = INCBIN_U8("graphics/pokemon/dragomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Stoutland[] = INCBIN_COMP("graphics/pokemon/stoutland/overworld.4bpp");
+    const u32 gObjectEventPic_Dragomon[] = INCBIN_COMP("graphics/pokemon/dragomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Stoutland[] = INCBIN_U16("graphics/pokemon/stoutland/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Stoutland[] = INCBIN_U16("graphics/pokemon/stoutland/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Dragomon[] = INCBIN_U16("graphics/pokemon/dragomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Dragomon[] = INCBIN_U16("graphics/pokemon/dragomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_SCORPIOMON

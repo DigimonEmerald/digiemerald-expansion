@@ -3,13 +3,13 @@
 
 SINGLE_BATTLE_TEST("Sand Rush prevents damage from sandstorm")
 {
-    u32 type1 = gSpeciesInfo[SPECIES_STOUTLAND].types[0];
-    u32 type2 = gSpeciesInfo[SPECIES_STOUTLAND].types[1];
+    u32 type1 = gSpeciesInfo[SPECIES_DRAGOMON].types[0];
+    u32 type2 = gSpeciesInfo[SPECIES_DRAGOMON].types[1];
     GIVEN {
         ASSUME(type1 != TYPE_ROCK && type2 != TYPE_ROCK);
         ASSUME(type1 != TYPE_GROUND && type2 != TYPE_GROUND);
         ASSUME(type1 != TYPE_STEEL && type2 != TYPE_STEEL);
-        PLAYER(SPECIES_STOUTLAND) { Ability(ABILITY_SAND_RUSH); }
+        PLAYER(SPECIES_DRAGOMON) { Ability(ABILITY_SAND_RUSH); }
         OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
         TURN { MOVE(player, MOVE_SANDSTORM); }

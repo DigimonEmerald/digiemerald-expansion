@@ -21482,7 +21482,7 @@ static const u16 sMegakabuterimon_blueTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sStoutlandTeachableLearnset[] = {
+static const u16 sDragomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DIG,

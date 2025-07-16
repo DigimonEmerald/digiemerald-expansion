@@ -3390,8 +3390,8 @@ Cry_Megakabuterimon_blue::
 	.incbin "sound/direct_sound_samples/cries/megakabuterimon_blue.bin"
 
 	.align 2
-Cry_Stoutland::
-	.incbin "sound/direct_sound_samples/cries/stoutland.bin"
+Cry_Dragomon::
+	.incbin "sound/direct_sound_samples/cries/dragomon.bin"
 .endif @ P_FAMILY_SCORPIOMON
 
 .if P_FAMILY_PURRLOIN == TRUE

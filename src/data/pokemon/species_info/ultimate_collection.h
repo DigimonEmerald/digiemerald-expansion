@@ -1111,50 +1111,46 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sMegakabuterimon_blueLevelUpLearnset,
         .teachableLearnset = sMegakabuterimon_blueTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_STOUTLAND}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_DRAGOMON}),
     },
 
-    [SPECIES_STOUTLAND] =
+    [SPECIES_DRAGOMON] =
     {
-        .baseHP        = 85,
-        .baseAttack    = P_UPDATED_STATS >= GEN_6 ? 110 : 100,
-        .baseDefense   = 90,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 45,
+        .baseHP        = 110,
+        .baseAttack    = 90,
+        .baseDefense   = 60,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 110,
         .baseSpDefense = 90,
-        .types = MON_TYPES(TYPE_NORMAL),
+        .types = MON_TYPES(TYPE_DARK, TYPE_WATER),
+        .attribute = TYPE_VIRUS,
         .catchRate = 95,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 250,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 225,
-    #else
-        .expYield = 221,
-    #endif
-        .evYield_Attack = 3,
+        .expYield = 200,
+        .evYield_HP = 2,
+        .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_SAND_RUSH, ABILITY_SCRAPPY },
-        .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Stoutland"),
-        .cryId = CRY_STOUTLAND,
-        .natDexNum = NATIONAL_DEX_STOUTLAND,
-        .categoryName = _("Big-Hearted"),
-        .height = 12,
-        .weight = 610,
+        .abilities = { ABILITY_LIQUID_OOZE, ABILITY_POISON_HEAL, ABILITY_BEADS_OF_RUIN },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Dragomon"),
+        .cryId = CRY_DRAGOMON,
+        .natDexNum = NATIONAL_DEX_DRAGOMON,
+        .categoryName = _("Evil God"),
+        .height = 185,
+        .weight = 3106,
         .description = COMPOUND_STRING(
-            "Intelligent, good-natured, and valiant,\n"
-            "there could be no concern that it would\n"
-            "ever attack people. Some parents even\n"
-            "trust it to babysit."),
+            "Dragomon is thought to have evolved\n"
+            "from a computer virus that would\n"
+            "infect and sink ships in the\n"
+            "human world."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Stoutland,
+        .frontPic = gMonFrontPic_Dragomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
         .frontAnimFrames = ANIM_FRAMES(
@@ -1165,28 +1161,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 1),
         ),
         .frontAnimId = ANIM_H_SLIDE,
-        .backPic = gMonBackPic_Stoutland,
+        .backPic = gMonBackPic_Dragomon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Stoutland,
-        .shinyPalette = gMonShinyPalette_Stoutland,
-        .iconSprite = gMonIcon_Stoutland,
+        .palette = gMonPalette_Dragomon,
+        .shinyPalette = gMonShinyPalette_Dragomon,
+        .iconSprite = gMonIcon_Dragomon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-4, 9, SHADOW_SIZE_L)
-        FOOTPRINT(Stoutland)
+        FOOTPRINT(Dragomon)
         OVERWORLD(
-            sPicTable_Stoutland,
+            sPicTable_Dragomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Stoutland,
-            gShinyOverworldPalette_Stoutland
+            gOverworldPalette_Dragomon,
+            gShinyOverworldPalette_Dragomon
         )
-        .levelUpLearnset = sStoutlandLevelUpLearnset,
-        .teachableLearnset = sStoutlandTeachableLearnset,
+        .levelUpLearnset = sDragomonLevelUpLearnset,
+        .teachableLearnset = sDragomonTeachableLearnset,
     },
 #endif //P_FAMILY_SCORPIOMON
 

@@ -6404,7 +6404,7 @@ static const union AnimCmd sAnim_Megakabuterimon_blue_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Stoutland_1[] =
+static const union AnimCmd sAnim_Dragomon_1[] =
 {
     ANIMCMD_FRAME(0, 27),
     ANIMCMD_FRAME(1, 6),
@@ -11627,7 +11627,7 @@ SINGLE_ANIMATION(Angewomon);
 #if P_FAMILY_SCORPIOMON
 SINGLE_ANIMATION(Scorpiomon);
 SINGLE_ANIMATION(Megakabuterimon_blue);
-SINGLE_ANIMATION(Stoutland);
+SINGLE_ANIMATION(Dragomon);
 #endif //P_FAMILY_SCORPIOMON
 #if P_FAMILY_PURRLOIN
 SINGLE_ANIMATION(Purrloin);

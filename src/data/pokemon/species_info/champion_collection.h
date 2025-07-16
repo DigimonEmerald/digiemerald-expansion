@@ -11881,10 +11881,10 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .height = 23,
         .weight = 745,
         .description = COMPOUND_STRING(
-            "They flock around mountains and fields,\n"
-            "chasing after bug Pokémon. However,\n"
-            "they bicker if the group grows too big.\n"
-            "Their singing is noisy and annoying."),
+            "Due to living on the ground for so\n"
+            "long, Kokatorimon has evolved a body that\n"
+            "can't fly. It uses its giant size and\n"
+            "degraded wings to intimidate its foes."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,

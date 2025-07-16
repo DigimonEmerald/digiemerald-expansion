@@ -3750,8 +3750,8 @@ static const struct SpriteFrameImage sPicTable_Scorpiomon[] = {
 static const struct SpriteFrameImage sPicTable_Megakabuterimon_blue[] = {
     overworld_ascending_frames(gObjectEventPic_Megakabuterimon_blue, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Stoutland[] = {
-    overworld_ascending_frames(gObjectEventPic_Stoutland, 4, 4),
+static const struct SpriteFrameImage sPicTable_Dragomon[] = {
+    overworld_ascending_frames(gObjectEventPic_Dragomon, 4, 4),
 };
 #endif //P_FAMILY_SCORPIOMON
 
