@@ -311,7 +311,7 @@
 #define P_FAMILY_ANDROMON                  P_GEN_5_POKEMON
 #define P_FAMILY_SCORPIOMON                P_GEN_5_POKEMON
 #define P_FAMILY_DIGITAMAMON                P_GEN_5_POKEMON
-#define P_FAMILY_PANSAGE                 P_GEN_5_POKEMON
+#define P_FAMILY_EXTYRANNOMON                 P_GEN_5_POKEMON
 #define P_FAMILY_PANSEAR                 P_GEN_5_POKEMON
 #define P_FAMILY_PANPOUR                 P_GEN_5_POKEMON
 #define P_FAMILY_MUNNA                   P_GEN_5_POKEMON

@@ -3404,15 +3404,15 @@ Cry_Etemon::
 	.incbin "sound/direct_sound_samples/cries/etemon.bin"
 .endif @ P_FAMILY_DIGITAMAMON
 
-.if P_FAMILY_PANSAGE == TRUE
+.if P_FAMILY_EXTYRANNOMON == TRUE
 	.align 2
-Cry_Pansage::
-	.incbin "sound/direct_sound_samples/cries/pansage.bin"
+Cry_Extyrannomon::
+	.incbin "sound/direct_sound_samples/cries/extyrannomon.bin"
 
 	.align 2
 Cry_Simisage::
 	.incbin "sound/direct_sound_samples/cries/simisage.bin"
-.endif @ P_FAMILY_PANSAGE
+.endif @ P_FAMILY_EXTYRANNOMON
 
 .if P_FAMILY_PANSEAR == TRUE
 	.align 2

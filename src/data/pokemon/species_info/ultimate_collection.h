@@ -1329,42 +1329,43 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_DIGITAMAMON
 
-#if P_FAMILY_PANSAGE
-    [SPECIES_PANSAGE] =
+#if P_FAMILY_EXTYRANNOMON
+    [SPECIES_EXTYRANNOMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 53,
-        .baseDefense   = 48,
-        .baseSpeed     = 64,
-        .baseSpAttack  = 53,
-        .baseSpDefense = 48,
-        .types = MON_TYPES(TYPE_GRASS),
-        .catchRate = 190,
-        .expYield = 63,
+        .baseHP        = 100,
+        .baseAttack    = 70,
+        .baseDefense   = 75,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 110,
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_DARK),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 95,
+        .expYield = 200,
         .evYield_Speed = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_GLUTTONY, ABILITY_NONE, ABILITY_OVERGROW },
-        .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Pansage"),
-        .cryId = CRY_PANSAGE,
-        .natDexNum = NATIONAL_DEX_PANSAGE,
-        .categoryName = _("Grass Monkey"),
-        .height = 6,
-        .weight = 105,
+        .abilities = { ABILITY_FLUFFY, ABILITY_CURSED_BODY, ABILITY_CONTRARY },
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("ExTyrannomon"),
+        .cryId = CRY_EXTYRANNOMON,
+        .natDexNum = NATIONAL_DEX_EXTYRANNOMON,
+        .categoryName = _("Plush"),
+        .height = 25,
+        .weight = 795,
         .description = COMPOUND_STRING(
-            "This Pokémon dwells deep in the forest.\n"
-            "It's good at finding berries and gathers\n"
-            "them from all over. It's kind enough to\n"
-            "share them with friends."),
+            "Many mistake the Tyrannomon plush to be\n"
+            "the body of this Digimon however\n"
+            "ExTyrannomon actually inhabits the plush.\n"
+            "It is unknown why they choose this plush."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Pansage,
+        .frontPic = gMonFrontPic_Extyrannomon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
         .frontAnimFrames = ANIM_FRAMES(
@@ -1375,29 +1376,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 7),
         ),
         .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
-        .backPic = gMonBackPic_Pansage,
+        .backPic = gMonBackPic_Extyrannomon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Pansage,
-        .shinyPalette = gMonShinyPalette_Pansage,
-        .iconSprite = gMonIcon_Pansage,
+        .palette = gMonPalette_Extyrannomon,
+        .shinyPalette = gMonShinyPalette_Extyrannomon,
+        .iconSprite = gMonIcon_Extyrannomon,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 3, SHADOW_SIZE_S)
-        FOOTPRINT(Pansage)
+        FOOTPRINT(Extyrannomon)
         OVERWORLD(
-            sPicTable_Pansage,
+            sPicTable_Extyrannomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Pansage,
-            gShinyOverworldPalette_Pansage
+            gOverworldPalette_Extyrannomon,
+            gShinyOverworldPalette_Extyrannomon
         )
-        .levelUpLearnset = sPansageLevelUpLearnset,
-        .teachableLearnset = sPansageTeachableLearnset,
-        .eggMoveLearnset = sPansageEggMoveLearnset,
+        .levelUpLearnset = sExtyrannomonLevelUpLearnset,
+        .teachableLearnset = sExtyrannomonTeachableLearnset,
+        .eggMoveLearnset = sExtyrannomonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_SIMISAGE}),
     },
 
@@ -1467,7 +1468,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sSimisageLevelUpLearnset,
         .teachableLearnset = sSimisageTeachableLearnset,
     },
-#endif //P_FAMILY_PANSAGE
+#endif //P_FAMILY_EXTYRANNOMON
 
 #if P_FAMILY_PANSEAR
     [SPECIES_PANSEAR] =

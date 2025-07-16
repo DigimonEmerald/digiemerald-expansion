@@ -21573,8 +21573,8 @@ static const u16 sEtemonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DIGITAMAMON
 
-#if P_FAMILY_PANSAGE
-static const u16 sPansageTeachableLearnset[] = {
+#if P_FAMILY_EXTYRANNOMON
+static const u16 sExtyrannomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,
@@ -21630,7 +21630,7 @@ static const u16 sSimisageTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PANSAGE
+#endif //P_FAMILY_EXTYRANNOMON
 
 #if P_FAMILY_PANSEAR
 static const u16 sPansearTeachableLearnset[] = {

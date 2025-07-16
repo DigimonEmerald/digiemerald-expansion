@@ -548,8 +548,8 @@
 #define P_FAMILY_SCORPIOMON                TRUE
 #undef P_FAMILY_DIGITAMAMON
 #define P_FAMILY_DIGITAMAMON                TRUE
-#undef P_FAMILY_PANSAGE
-#define P_FAMILY_PANSAGE                 TRUE
+#undef P_FAMILY_EXTYRANNOMON
+#define P_FAMILY_EXTYRANNOMON                 TRUE
 #undef P_FAMILY_PANSEAR
 #define P_FAMILY_PANSEAR                 TRUE
 #undef P_FAMILY_PANPOUR

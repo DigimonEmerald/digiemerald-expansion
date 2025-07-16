@@ -16184,20 +16184,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_DIGITAMAMON
 
-#if P_FAMILY_PANSAGE
-    const u32 gMonFrontPic_Pansage[] = INCBIN_U32("graphics/pokemon/pansage/anim_front.4bpp.lz");
-    const u16 gMonPalette_Pansage[] = INCBIN_U16("graphics/pokemon/pansage/normal.gbapal");
-    const u32 gMonBackPic_Pansage[] = INCBIN_U32("graphics/pokemon/pansage/back.4bpp.lz");
-    const u16 gMonShinyPalette_Pansage[] = INCBIN_U16("graphics/pokemon/pansage/shiny.gbapal");
-    const u8 gMonIcon_Pansage[] = INCBIN_U8("graphics/pokemon/pansage/icon.4bpp");
+#if P_FAMILY_EXTYRANNOMON
+    const u32 gMonFrontPic_Extyrannomon[] = INCBIN_U32("graphics/pokemon/extyrannomon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Extyrannomon[] = INCBIN_U16("graphics/pokemon/extyrannomon/normal.gbapal");
+    const u32 gMonBackPic_Extyrannomon[] = INCBIN_U32("graphics/pokemon/extyrannomon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Extyrannomon[] = INCBIN_U16("graphics/pokemon/extyrannomon/shiny.gbapal");
+    const u8 gMonIcon_Extyrannomon[] = INCBIN_U8("graphics/pokemon/extyrannomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Pansage[] = INCBIN_U8("graphics/pokemon/pansage/footprint.1bpp");
+    const u8 gMonFootprint_Extyrannomon[] = INCBIN_U8("graphics/pokemon/extyrannomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Pansage[] = INCBIN_COMP("graphics/pokemon/pansage/overworld.4bpp");
+    const u32 gObjectEventPic_Extyrannomon[] = INCBIN_COMP("graphics/pokemon/extyrannomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Pansage[] = INCBIN_U16("graphics/pokemon/pansage/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Pansage[] = INCBIN_U16("graphics/pokemon/pansage/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Extyrannomon[] = INCBIN_U16("graphics/pokemon/extyrannomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Extyrannomon[] = INCBIN_U16("graphics/pokemon/extyrannomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16216,7 +16216,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Simisage[] = INCBIN_U16("graphics/pokemon/simisage/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_PANSAGE
+#endif //P_FAMILY_EXTYRANNOMON
 
 #if P_FAMILY_PANSEAR
     const u32 gMonFrontPic_Pansear[] = INCBIN_U32("graphics/pokemon/pansear/anim_front.4bpp.lz");

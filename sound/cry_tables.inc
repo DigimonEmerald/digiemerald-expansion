@@ -1290,10 +1290,10 @@ gCryTable::
 	cry Cry_Digitamamon
 	cry Cry_Etemon
 .endif @ P_FAMILY_DIGITAMAMON
-.if P_FAMILY_PANSAGE == TRUE
-	cry Cry_Pansage
+.if P_FAMILY_EXTYRANNOMON == TRUE
+	cry Cry_Extyrannomon
 	cry Cry_Simisage
-.endif @ P_FAMILY_PANSAGE
+.endif @ P_FAMILY_EXTYRANNOMON
 .if P_FAMILY_PANSEAR == TRUE
 	cry Cry_Pansear
 	cry Cry_Simisear
@@ -3718,10 +3718,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Digitamamon
 	cry_reverse Cry_Etemon
 .endif @ P_FAMILY_DIGITAMAMON
-.if P_FAMILY_PANSAGE == TRUE
-	cry_reverse Cry_Pansage
+.if P_FAMILY_EXTYRANNOMON == TRUE
+	cry_reverse Cry_Extyrannomon
 	cry_reverse Cry_Simisage
-.endif @ P_FAMILY_PANSAGE
+.endif @ P_FAMILY_EXTYRANNOMON
 .if P_FAMILY_PANSEAR == TRUE
 	cry_reverse Cry_Pansear
 	cry_reverse Cry_Simisear

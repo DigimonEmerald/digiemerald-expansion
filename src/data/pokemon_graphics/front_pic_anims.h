@@ -6433,8 +6433,8 @@ static const union AnimCmd sAnim_Etemon_1[] =
 };
 #endif //P_FAMILY_DIGITAMAMON
 
-#if P_FAMILY_PANSAGE
-static const union AnimCmd sAnim_Pansage_1[] =
+#if P_FAMILY_EXTYRANNOMON
+static const union AnimCmd sAnim_Extyrannomon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 8),
@@ -6451,7 +6451,7 @@ static const union AnimCmd sAnim_Simisage_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_PANSAGE
+#endif //P_FAMILY_EXTYRANNOMON
 
 #if P_FAMILY_PANSEAR
 static const union AnimCmd sAnim_Pansear_1[] =
@@ -11633,10 +11633,10 @@ SINGLE_ANIMATION(Dragomon);
 SINGLE_ANIMATION(Digitamamon);
 SINGLE_ANIMATION(Etemon);
 #endif //P_FAMILY_DIGITAMAMON
-#if P_FAMILY_PANSAGE
-SINGLE_ANIMATION(Pansage);
+#if P_FAMILY_EXTYRANNOMON
+SINGLE_ANIMATION(Extyrannomon);
 SINGLE_ANIMATION(Simisage);
-#endif //P_FAMILY_PANSAGE
+#endif //P_FAMILY_EXTYRANNOMON
 #if P_FAMILY_PANSEAR
 SINGLE_ANIMATION(Pansear);
 SINGLE_ANIMATION(Simisear);

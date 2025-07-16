@@ -2781,7 +2781,7 @@ $(POKEMONGFXDIR)/digitamamon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/etemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/pansage/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/extyrannomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/simisage/overworld.4bpp: %.4bpp: %.png
