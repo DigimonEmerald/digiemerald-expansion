@@ -699,8 +699,8 @@
 #undef P_FAMILY_GENESECT
 #define P_FAMILY_GENESECT                TRUE
 
-#undef P_FAMILY_CHESPIN
-#define P_FAMILY_CHESPIN                 TRUE
+#undef P_FAMILY_HERCULESKABUTERIMON
+#define P_FAMILY_HERCULESKABUTERIMON                 TRUE
 #undef P_FAMILY_FENNEKIN
 #define P_FAMILY_FENNEKIN                TRUE
 #undef P_FAMILY_FROAKIE

@@ -4556,9 +4556,9 @@ static const struct SpriteFrameImage sPicTable_Genesect[] = {
 
 #endif //P_FAMILY_GENESECT
 
-#if P_FAMILY_CHESPIN
-static const struct SpriteFrameImage sPicTable_Chespin[] = {
-    overworld_ascending_frames(gObjectEventPic_Chespin, 4, 4),
+#if P_FAMILY_HERCULESKABUTERIMON
+static const struct SpriteFrameImage sPicTable_Herculeskabuterimon[] = {
+    overworld_ascending_frames(gObjectEventPic_Herculeskabuterimon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Quilladin[] = {
     overworld_ascending_frames(gObjectEventPic_Quilladin, 4, 4),
@@ -4566,7 +4566,7 @@ static const struct SpriteFrameImage sPicTable_Quilladin[] = {
 static const struct SpriteFrameImage sPicTable_Chesnaught[] = {
     overworld_ascending_frames(gObjectEventPic_Chesnaught, 4, 4),
 };
-#endif //P_FAMILY_CHESPIN
+#endif //P_FAMILY_HERCULESKABUTERIMON
 
 #if P_FAMILY_FENNEKIN
 static const struct SpriteFrameImage sPicTable_Fennekin[] = {

@@ -4159,10 +4159,10 @@ Cry_Genesect::
 	.incbin "sound/direct_sound_samples/cries/genesect.bin"
 .endif @ P_FAMILY_GENESECT
 
-.if P_FAMILY_CHESPIN == TRUE
+.if P_FAMILY_HERCULESKABUTERIMON == TRUE
 	.align 2
-Cry_Chespin::
-	.incbin "sound/direct_sound_samples/cries/chespin.bin"
+Cry_Herculeskabuterimon::
+	.incbin "sound/direct_sound_samples/cries/herculeskabuterimon.bin"
 
 	.align 2
 Cry_Quilladin::
@@ -4171,7 +4171,7 @@ Cry_Quilladin::
 	.align 2
 Cry_Chesnaught::
 	.incbin "sound/direct_sound_samples/cries/chesnaught.bin"
-.endif @ P_FAMILY_CHESPIN
+.endif @ P_FAMILY_HERCULESKABUTERIMON
 
 .if P_FAMILY_FENNEKIN == TRUE
 	.align 2

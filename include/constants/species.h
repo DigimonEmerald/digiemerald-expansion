@@ -676,7 +676,7 @@
 #define SPECIES_MELOETTA                                SPECIES_MELOETTA_ARIA
 #define SPECIES_MELOETTA_ARIA                           648
 #define SPECIES_GENESECT                                649
-#define SPECIES_CHESPIN                                 650
+#define SPECIES_HERCULESKABUTERIMON                                 650
 #define SPECIES_QUILLADIN                               651
 #define SPECIES_CHESNAUGHT                              652
 #define SPECIES_FENNEKIN                                653

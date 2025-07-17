@@ -8095,8 +8095,8 @@ static const union AnimCmd sAnim_Genesect_1[] =
 };
 #endif //P_FAMILY_GENESECT
 
-#if P_FAMILY_CHESPIN
-static const union AnimCmd sAnim_Chespin_1[] =
+#if P_FAMILY_HERCULESKABUTERIMON
+static const union AnimCmd sAnim_Herculeskabuterimon_1[] =
 {
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_FRAME(1, 24),
@@ -8123,7 +8123,7 @@ static const union AnimCmd sAnim_Chesnaught_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_CHESPIN
+#endif //P_FAMILY_HERCULESKABUTERIMON
 
 #if P_FAMILY_FENNEKIN
 static const union AnimCmd sAnim_Fennekin_1[] =
@@ -11966,11 +11966,11 @@ SINGLE_ANIMATION(MeloettaPirouette);
 #if P_FAMILY_GENESECT
 SINGLE_ANIMATION(Genesect);
 #endif //P_FAMILY_GENESECT
-#if P_FAMILY_CHESPIN
-SINGLE_ANIMATION(Chespin);
+#if P_FAMILY_HERCULESKABUTERIMON
+SINGLE_ANIMATION(Herculeskabuterimon);
 SINGLE_ANIMATION(Quilladin);
 SINGLE_ANIMATION(Chesnaught);
-#endif //P_FAMILY_CHESPIN
+#endif //P_FAMILY_HERCULESKABUTERIMON
 #if P_FAMILY_FENNEKIN
 SINGLE_ANIMATION(Fennekin);
 SINGLE_ANIMATION(Braixen);

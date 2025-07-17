@@ -1598,11 +1598,11 @@ gCryTable::
 .if P_FAMILY_GENESECT == TRUE
 	cry Cry_Genesect
 .endif @ P_FAMILY_GENESECT
-.if P_FAMILY_CHESPIN == TRUE
-	cry Cry_Chespin
+.if P_FAMILY_HERCULESKABUTERIMON == TRUE
+	cry Cry_Herculeskabuterimon
 	cry Cry_Quilladin
 	cry Cry_Chesnaught
-.endif @ P_FAMILY_CHESPIN
+.endif @ P_FAMILY_HERCULESKABUTERIMON
 .if P_FAMILY_FENNEKIN == TRUE
 	cry Cry_Fennekin
 	cry Cry_Braixen
@@ -4026,11 +4026,11 @@ gCryTable_Reverse::
 .if P_FAMILY_GENESECT == TRUE
 	cry_reverse Cry_Genesect
 .endif @ P_FAMILY_GENESECT
-.if P_FAMILY_CHESPIN == TRUE
-	cry_reverse Cry_Chespin
+.if P_FAMILY_HERCULESKABUTERIMON == TRUE
+	cry_reverse Cry_Herculeskabuterimon
 	cry_reverse Cry_Quilladin
 	cry_reverse Cry_Chesnaught
-.endif @ P_FAMILY_CHESPIN
+.endif @ P_FAMILY_HERCULESKABUTERIMON
 .if P_FAMILY_FENNEKIN == TRUE
 	cry_reverse Cry_Fennekin
 	cry_reverse Cry_Braixen

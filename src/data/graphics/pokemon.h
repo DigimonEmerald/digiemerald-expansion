@@ -19048,20 +19048,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_GenesectChillDrive[] = INCBIN_U16("graphics/pokemon/genesect/chill_drive/shiny.gbapal");
 #endif //P_FAMILY_GENESECT
 
-#if P_FAMILY_CHESPIN
-    const u32 gMonFrontPic_Chespin[] = INCBIN_U32("graphics/pokemon/chespin/anim_front.4bpp.lz");
-    const u16 gMonPalette_Chespin[] = INCBIN_U16("graphics/pokemon/chespin/normal.gbapal");
-    const u32 gMonBackPic_Chespin[] = INCBIN_U32("graphics/pokemon/chespin/back.4bpp.lz");
-    const u16 gMonShinyPalette_Chespin[] = INCBIN_U16("graphics/pokemon/chespin/shiny.gbapal");
-    const u8 gMonIcon_Chespin[] = INCBIN_U8("graphics/pokemon/chespin/icon.4bpp");
+#if P_FAMILY_HERCULESKABUTERIMON
+    const u32 gMonFrontPic_Herculeskabuterimon[] = INCBIN_U32("graphics/pokemon/herculeskabuterimon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Herculeskabuterimon[] = INCBIN_U16("graphics/pokemon/herculeskabuterimon/normal.gbapal");
+    const u32 gMonBackPic_Herculeskabuterimon[] = INCBIN_U32("graphics/pokemon/herculeskabuterimon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Herculeskabuterimon[] = INCBIN_U16("graphics/pokemon/herculeskabuterimon/shiny.gbapal");
+    const u8 gMonIcon_Herculeskabuterimon[] = INCBIN_U8("graphics/pokemon/herculeskabuterimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Chespin[] = INCBIN_U8("graphics/pokemon/chespin/footprint.1bpp");
+    const u8 gMonFootprint_Herculeskabuterimon[] = INCBIN_U8("graphics/pokemon/herculeskabuterimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Chespin[] = INCBIN_COMP("graphics/pokemon/chespin/overworld.4bpp");
+    const u32 gObjectEventPic_Herculeskabuterimon[] = INCBIN_COMP("graphics/pokemon/herculeskabuterimon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Chespin[] = INCBIN_U16("graphics/pokemon/chespin/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Chespin[] = INCBIN_U16("graphics/pokemon/chespin/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Herculeskabuterimon[] = INCBIN_U16("graphics/pokemon/herculeskabuterimon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Herculeskabuterimon[] = INCBIN_U16("graphics/pokemon/herculeskabuterimon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -19096,7 +19096,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Chesnaught[] = INCBIN_U16("graphics/pokemon/chesnaught/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_CHESPIN
+#endif //P_FAMILY_HERCULESKABUTERIMON
 
 #if P_FAMILY_FENNEKIN
     const u32 gMonFrontPic_Fennekin[] = INCBIN_U32("graphics/pokemon/fennekin/anim_front.4bpp.lz");

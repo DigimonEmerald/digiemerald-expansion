@@ -26243,8 +26243,8 @@ static const u16 sGenesectTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GENESECT
 
-#if P_FAMILY_CHESPIN
-static const u16 sChespinTeachableLearnset[] = {
+#if P_FAMILY_HERCULESKABUTERIMON
+static const u16 sHerculeskabuterimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
@@ -26371,7 +26371,7 @@ static const u16 sChesnaughtTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CHESPIN
+#endif //P_FAMILY_HERCULESKABUTERIMON
 
 #if P_FAMILY_FENNEKIN
 static const u16 sFennekinTeachableLearnset[] = {

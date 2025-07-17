@@ -387,7 +387,7 @@
 #define P_FAMILY_MELOETTA                P_GEN_5_POKEMON
 #define P_FAMILY_GENESECT                P_GEN_5_POKEMON
 
-#define P_FAMILY_CHESPIN                 P_GEN_6_POKEMON
+#define P_FAMILY_HERCULESKABUTERIMON                 P_GEN_6_POKEMON
 #define P_FAMILY_FENNEKIN                P_GEN_6_POKEMON
 #define P_FAMILY_FROAKIE                 P_GEN_6_POKEMON
 #define P_FAMILY_BUNNELBY                P_GEN_6_POKEMON

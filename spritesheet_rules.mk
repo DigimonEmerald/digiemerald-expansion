@@ -3210,7 +3210,7 @@ $(POKEMONGFXDIR)/meloetta/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/genesect/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/chespin/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/herculeskabuterimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/quilladin/overworld.4bpp: %.4bpp: %.png

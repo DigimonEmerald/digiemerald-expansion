@@ -14013,8 +14013,8 @@ static const struct LevelUpMove sGenesectLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_GENESECT
 
-#if P_FAMILY_CHESPIN
-static const struct LevelUpMove sChespinLevelUpLearnset[] = {
+#if P_FAMILY_HERCULESKABUTERIMON
+static const struct LevelUpMove sHerculeskabuterimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 5, MOVE_VINE_WHIP),
@@ -14075,7 +14075,7 @@ static const struct LevelUpMove sChesnaughtLevelUpLearnset[] = {
     LEVEL_UP_MOVE(70, MOVE_GIGA_IMPACT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CHESPIN
+#endif //P_FAMILY_HERCULESKABUTERIMON
 
 #if P_FAMILY_FENNEKIN
 static const struct LevelUpMove sFennekinLevelUpLearnset[] = {

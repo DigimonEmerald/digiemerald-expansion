@@ -4915,8 +4915,8 @@ static const u16 sLarvestaEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_LARVESTA
 
-#if P_FAMILY_CHESPIN
-static const u16 sChespinEggMoveLearnset[] = {
+#if P_FAMILY_HERCULESKABUTERIMON
+static const u16 sHerculeskabuterimonEggMoveLearnset[] = {
     MOVE_SYNTHESIS,
     MOVE_BELLY_DRUM,
     MOVE_CURSE,
@@ -4927,7 +4927,7 @@ static const u16 sChespinEggMoveLearnset[] = {
     MOVE_POWER_UP_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CHESPIN
+#endif //P_FAMILY_HERCULESKABUTERIMON
 
 #if P_FAMILY_FENNEKIN
 static const u16 sFennekinEggMoveLearnset[] = {

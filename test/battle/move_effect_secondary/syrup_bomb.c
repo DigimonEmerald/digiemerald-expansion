@@ -58,12 +58,12 @@ SINGLE_BATTLE_TEST("Syrup Bomb is prevented by Bulletproof")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_CHESPIN) { Ability(ABILITY_BULLETPROOF); }
+        OPPONENT(SPECIES_HERCULESKABUTERIMON) { Ability(ABILITY_BULLETPROOF); }
     } WHEN {
         TURN { MOVE(player, MOVE_SYRUP_BOMB); }
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_BULLETPROOF);
-        MESSAGE("The opposing Chespin's Bulletproof blocks Syrup Bomb!");
+        MESSAGE("The opposing Herculeskabuterimon's Bulletproof blocks Syrup Bomb!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SYRUP_BOMB, player);
             HP_BAR(opponent);
