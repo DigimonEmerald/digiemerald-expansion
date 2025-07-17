@@ -407,7 +407,7 @@
 #define SPECIES_KOKATORIMON                                  396
 #define SPECIES_VILEMON                                397
 #define SPECIES_ROACHMON                               398
-#define SPECIES_BIDOOF                                  399
+#define SPECIES_GORILLAMON                                  399
 #define SPECIES_BIBAREL                                 400
 #define SPECIES_KRICKETOT                               401
 #define SPECIES_KRICKETUNE                              402

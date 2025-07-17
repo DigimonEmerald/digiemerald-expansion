@@ -5371,8 +5371,8 @@ static const union AnimCmd sAnim_Roachmon_1[] =
 };
 #endif //P_FAMILY_KOKATORIMON
 
-#if P_FAMILY_BIDOOF
-static const union AnimCmd sAnim_Bidoof_1[] =
+#if P_FAMILY_GORILLAMON
+static const union AnimCmd sAnim_Gorillamon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 15),
@@ -5393,7 +5393,7 @@ static const union AnimCmd sAnim_Bibarel_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_BIDOOF
+#endif //P_FAMILY_GORILLAMON
 
 #if P_FAMILY_KRICKETOT
 static const union AnimCmd sAnim_Kricketot_1[] =
@@ -11431,10 +11431,10 @@ SINGLE_ANIMATION(Kokatorimon);
 SINGLE_ANIMATION(Vilemon);
 SINGLE_ANIMATION(Roachmon);
 #endif //P_FAMILY_KOKATORIMON
-#if P_FAMILY_BIDOOF
-SINGLE_ANIMATION(Bidoof);
+#if P_FAMILY_GORILLAMON
+SINGLE_ANIMATION(Gorillamon);
 SINGLE_ANIMATION(Bibarel);
-#endif //P_FAMILY_BIDOOF
+#endif //P_FAMILY_GORILLAMON
 #if P_FAMILY_KRICKETOT
 SINGLE_ANIMATION(Kricketot);
 SINGLE_ANIMATION(Kricketune);

@@ -3136,13 +3136,13 @@ static const struct SpriteFrameImage sPicTable_RoachmonF[] = {
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_KOKATORIMON
 
-#if P_FAMILY_BIDOOF
-static const struct SpriteFrameImage sPicTable_Bidoof[] = {
-    overworld_ascending_frames(gObjectEventPic_Bidoof, 4, 4),
+#if P_FAMILY_GORILLAMON
+static const struct SpriteFrameImage sPicTable_Gorillamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Gorillamon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_BidoofF[] = {
-    overworld_ascending_frames(gObjectEventPic_BidoofF, 4, 4),
+static const struct SpriteFrameImage sPicTable_GorillamonF[] = {
+    overworld_ascending_frames(gObjectEventPic_GorillamonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 static const struct SpriteFrameImage sPicTable_Bibarel[] = {
@@ -3153,7 +3153,7 @@ static const struct SpriteFrameImage sPicTable_BibarelF[] = {
     overworld_ascending_frames(gObjectEventPic_BibarelF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_BIDOOF
+#endif //P_FAMILY_GORILLAMON
 
 #if P_FAMILY_KRICKETOT
 static const struct SpriteFrameImage sPicTable_Kricketot[] = {

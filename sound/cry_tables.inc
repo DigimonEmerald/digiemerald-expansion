@@ -1100,10 +1100,10 @@ gCryTable::
 	cry Cry_Vilemon
 	cry Cry_Roachmon
 .endif @ P_FAMILY_KOKATORIMON
-.if P_FAMILY_BIDOOF == TRUE
-	cry Cry_Bidoof
+.if P_FAMILY_GORILLAMON == TRUE
+	cry Cry_Gorillamon
 	cry Cry_Bibarel
-.endif @ P_FAMILY_BIDOOF
+.endif @ P_FAMILY_GORILLAMON
 .if P_FAMILY_KRICKETOT == TRUE
 	cry Cry_Kricketot
 	cry Cry_Kricketune
@@ -3528,10 +3528,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Vilemon
 	cry_reverse Cry_Roachmon
 .endif @ P_FAMILY_KOKATORIMON
-.if P_FAMILY_BIDOOF == TRUE
-	cry_reverse Cry_Bidoof
+.if P_FAMILY_GORILLAMON == TRUE
+	cry_reverse Cry_Gorillamon
 	cry_reverse Cry_Bibarel
-.endif @ P_FAMILY_BIDOOF
+.endif @ P_FAMILY_GORILLAMON
 .if P_FAMILY_KRICKETOT == TRUE
 	cry_reverse Cry_Kricketot
 	cry_reverse Cry_Kricketune

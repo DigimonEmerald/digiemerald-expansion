@@ -18517,8 +18517,8 @@ static const u16 sRoachmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_KOKATORIMON
 
-#if P_FAMILY_BIDOOF
-static const u16 sBidoofTeachableLearnset[] = {
+#if P_FAMILY_GORILLAMON
+static const u16 sGorillamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CUT,
@@ -18598,7 +18598,7 @@ static const u16 sBibarelTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BIDOOF
+#endif //P_FAMILY_GORILLAMON
 
 #if P_FAMILY_KRICKETOT
 static const u16 sKricketotTeachableLearnset[] = {

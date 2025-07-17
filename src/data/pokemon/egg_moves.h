@@ -3489,8 +3489,8 @@ static const u16 sKokatorimonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_KOKATORIMON
 
-#if P_FAMILY_BIDOOF
-static const u16 sBidoofEggMoveLearnset[] = {
+#if P_FAMILY_GORILLAMON
+static const u16 sGorillamonEggMoveLearnset[] = {
     MOVE_QUICK_ATTACK,
     MOVE_WATER_SPORT,
     MOVE_DOUBLE_EDGE,
@@ -3506,7 +3506,7 @@ static const u16 sBidoofEggMoveLearnset[] = {
     MOVE_MUD_SPORT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BIDOOF
+#endif //P_FAMILY_GORILLAMON
 
 #if P_FAMILY_SHINX
 static const u16 sShinxEggMoveLearnset[] = {

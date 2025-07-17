@@ -2950,15 +2950,15 @@ Cry_Roachmon::
 	.incbin "sound/direct_sound_samples/cries/roachmon.bin"
 .endif @ P_FAMILY_KOKATORIMON
 
-.if P_FAMILY_BIDOOF == TRUE
+.if P_FAMILY_GORILLAMON == TRUE
 	.align 2
-Cry_Bidoof::
-	.incbin "sound/direct_sound_samples/cries/bidoof.bin"
+Cry_Gorillamon::
+	.incbin "sound/direct_sound_samples/cries/gorillamon.bin"
 
 	.align 2
 Cry_Bibarel::
 	.incbin "sound/direct_sound_samples/cries/bibarel.bin"
-.endif @ P_FAMILY_BIDOOF
+.endif @ P_FAMILY_GORILLAMON
 
 .if P_FAMILY_KRICKETOT == TRUE
 	.align 2

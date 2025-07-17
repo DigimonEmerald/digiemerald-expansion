@@ -263,7 +263,7 @@
 #define P_FAMILY_MERAMON                P_GEN_4_POKEMON
 #define P_FAMILY_TYRANNOMON                  P_GEN_4_POKEMON
 #define P_FAMILY_KOKATORIMON                  P_GEN_4_POKEMON
-#define P_FAMILY_BIDOOF                  P_GEN_4_POKEMON
+#define P_FAMILY_GORILLAMON                  P_GEN_4_POKEMON
 #define P_FAMILY_KRICKETOT               P_GEN_4_POKEMON
 #define P_FAMILY_SHINX                   P_GEN_4_POKEMON
 #define P_FAMILY_CRANIDOS                P_GEN_4_POKEMON

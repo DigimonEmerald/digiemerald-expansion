@@ -454,8 +454,8 @@
 #define P_FAMILY_TYRANNOMON                  TRUE
 #undef P_FAMILY_KOKATORIMON
 #define P_FAMILY_KOKATORIMON                  TRUE
-#undef P_FAMILY_BIDOOF
-#define P_FAMILY_BIDOOF                  TRUE
+#undef P_FAMILY_GORILLAMON
+#define P_FAMILY_GORILLAMON                  TRUE
 #undef P_FAMILY_KRICKETOT
 #define P_FAMILY_KRICKETOT               TRUE
 #undef P_FAMILY_SHINX

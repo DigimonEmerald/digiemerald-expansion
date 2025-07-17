@@ -12030,6 +12030,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .baseSpAttack  = 35,
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
+        .attribute = TYPE_VIRUS,
         .catchRate = 115,
         .expYield = 150,
         .evYield_HP = 2,
@@ -12100,42 +12101,45 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_KOKATORIMON
 
-#if P_FAMILY_BIDOOF
-    [SPECIES_BIDOOF] =
+#if P_FAMILY_GORILLAMON
+    [SPECIES_GORILLAMON] =
     {
-        .baseHP        = 59,
-        .baseAttack    = 45,
-        .baseDefense   = 40,
-        .baseSpeed     = 31,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 40,
+        .baseHP        = 80,
+        .baseAttack    = 100,
+        .baseDefense   = 55,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_NORMAL),
-        .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 50 : 58,
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
         .evYield_HP = 1,
+        .evYield_Attack = 2,
+        .evYield_Speed = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SIMPLE, ABILITY_UNAWARE, ABILITY_MOODY },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Bidoof"),
-        .cryId = CRY_BIDOOF,
-        .natDexNum = NATIONAL_DEX_BIDOOF,
-        .categoryName = _("Plump Mouse"),
-        .height = 5,
-        .weight = 200,
+        .abilities = { ABILITY_HUSTLE, ABILITY_NONE, ABILITY_MEGA_LAUNCHER },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Gorillamon"),
+        .cryId = CRY_GORILLAMON,
+        .natDexNum = NATIONAL_DEX_GORILLAMON,
+        .categoryName = _("Gorilla"),
+        .height = 48,
+        .weight = 1643,
         .description = COMPOUND_STRING(
-            "A comparison revealed that Bidoof's front\n"
-            "teeth grow at the same rate as Choromon's.\n"
-            "It constantly gnaws on logs and rocks to\n"
-            "whittle down its front teeth."),
+            "The strength of both Gorillamons arm\n"
+            "and legs are near unparalleled. Its\n"
+            "bulk doesn't stop it from being\n"
+            "incredibly light on its feet as well."),
         .pokemonScale = 432,
         .pokemonOffset = 16,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Bidoof,
+        .frontPic = gMonFrontPic_Gorillamon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 12,
         .frontAnimFrames = ANIM_FRAMES(
@@ -12148,42 +12152,42 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_H_SLIDE_SLOW,
-        .backPic = gMonBackPic_Bidoof,
+        .backPic = gMonBackPic_Gorillamon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Bidoof,
-        .shinyPalette = gMonShinyPalette_Bidoof,
-        .iconSprite = gMonIcon_Bidoof,
+        .palette = gMonPalette_Gorillamon,
+        .shinyPalette = gMonShinyPalette_Gorillamon,
+        .iconSprite = gMonIcon_Gorillamon,
         .iconPalIndex = 2,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_BidoofF,
+        .frontPicFemale = gMonFrontPic_GorillamonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(40, 40),
-        .backPicFemale = gMonBackPic_BidoofF,
+        .backPicFemale = gMonBackPic_GorillamonF,
         .backPicSizeFemale = MON_COORDS_SIZE(64, 40),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(1, 1, SHADOW_SIZE_M)
-        FOOTPRINT(Bidoof)
+        FOOTPRINT(Gorillamon)
         OVERWORLD(
-            sPicTable_Bidoof,
+            sPicTable_Gorillamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Bidoof,
-            gShinyOverworldPalette_Bidoof
+            gOverworldPalette_Gorillamon,
+            gShinyOverworldPalette_Gorillamon
         )
         OVERWORLD_FEMALE(
-            sPicTable_BidoofF,
+            sPicTable_GorillamonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sBidoofLevelUpLearnset,
-        .teachableLearnset = sBidoofTeachableLearnset,
-        .eggMoveLearnset = sBidoofEggMoveLearnset,
+        .levelUpLearnset = sGorillamonLevelUpLearnset,
+        .teachableLearnset = sGorillamonTeachableLearnset,
+        .eggMoveLearnset = sGorillamonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_BIBAREL}),
     },
 
@@ -12266,7 +12270,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sBibarelLevelUpLearnset,
         .teachableLearnset = sBibarelTeachableLearnset,
     },
-#endif //P_FAMILY_BIDOOF
+#endif //P_FAMILY_GORILLAMON
 
 #if P_FAMILY_KRICKETOT
     [SPECIES_KRICKETOT] =

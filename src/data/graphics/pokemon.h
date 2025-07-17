@@ -14217,28 +14217,28 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_KOKATORIMON
 
-#if P_FAMILY_BIDOOF
-    const u32 gMonFrontPic_Bidoof[] = INCBIN_U32("graphics/pokemon/bidoof/anim_front.4bpp.lz");
-    const u16 gMonPalette_Bidoof[] = INCBIN_U16("graphics/pokemon/bidoof/normal.gbapal");
-    const u32 gMonBackPic_Bidoof[] = INCBIN_U32("graphics/pokemon/bidoof/back.4bpp.lz");
-    const u16 gMonShinyPalette_Bidoof[] = INCBIN_U16("graphics/pokemon/bidoof/shiny.gbapal");
-    const u8 gMonIcon_Bidoof[] = INCBIN_U8("graphics/pokemon/bidoof/icon.4bpp");
+#if P_FAMILY_GORILLAMON
+    const u32 gMonFrontPic_Gorillamon[] = INCBIN_U32("graphics/pokemon/gorillamon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Gorillamon[] = INCBIN_U16("graphics/pokemon/gorillamon/normal.gbapal");
+    const u32 gMonBackPic_Gorillamon[] = INCBIN_U32("graphics/pokemon/gorillamon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Gorillamon[] = INCBIN_U16("graphics/pokemon/gorillamon/shiny.gbapal");
+    const u8 gMonIcon_Gorillamon[] = INCBIN_U8("graphics/pokemon/gorillamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Bidoof[] = INCBIN_U8("graphics/pokemon/bidoof/footprint.1bpp");
+    const u8 gMonFootprint_Gorillamon[] = INCBIN_U8("graphics/pokemon/gorillamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Bidoof[] = INCBIN_COMP("graphics/pokemon/bidoof/overworld.4bpp");
+    const u32 gObjectEventPic_Gorillamon[] = INCBIN_COMP("graphics/pokemon/gorillamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Bidoof[] = INCBIN_U16("graphics/pokemon/bidoof/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Bidoof[] = INCBIN_U16("graphics/pokemon/bidoof/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Gorillamon[] = INCBIN_U16("graphics/pokemon/gorillamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Gorillamon[] = INCBIN_U16("graphics/pokemon/gorillamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_BidoofF[] = INCBIN_U32("graphics/pokemon/bidoof/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_BidoofF[] = INCBIN_U32("graphics/pokemon/bidoof/backf.4bpp.lz");
+    const u32 gMonFrontPic_GorillamonF[] = INCBIN_U32("graphics/pokemon/gorillamon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_GorillamonF[] = INCBIN_U32("graphics/pokemon/gorillamon/backf.4bpp.lz");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_BidoofF[] = INCBIN_COMP("graphics/pokemon/bidoof/overworldf.4bpp");
+    const u32 gObjectEventPic_GorillamonF[] = INCBIN_COMP("graphics/pokemon/gorillamon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
@@ -14264,7 +14264,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gObjectEventPic_BibarelF[] = INCBIN_COMP("graphics/pokemon/bibarel/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_BIDOOF
+#endif //P_FAMILY_GORILLAMON
 
 #if P_FAMILY_KRICKETOT
     const u32 gMonFrontPic_Kricketot[] = INCBIN_U32("graphics/pokemon/kricketot/anim_front.4bpp.lz");
