@@ -2946,8 +2946,8 @@ Cry_Vilemon::
 	.incbin "sound/direct_sound_samples/cries/vilemon.bin"
 
 	.align 2
-Cry_Staraptor::
-	.incbin "sound/direct_sound_samples/cries/staraptor.bin"
+Cry_Roachmon::
+	.incbin "sound/direct_sound_samples/cries/roachmon.bin"
 .endif @ P_FAMILY_KOKATORIMON
 
 .if P_FAMILY_BIDOOF == TRUE

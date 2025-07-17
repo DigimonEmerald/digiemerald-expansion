@@ -12018,52 +12018,45 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sVilemonLevelUpLearnset,
         .teachableLearnset = sVilemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_STARAPTOR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_ROACHMON}),
     },
 
-    [SPECIES_STARAPTOR] =
+    [SPECIES_ROACHMON] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 120,
-        .baseDefense   = 70,
+        .baseHP        = 110,
+        .baseAttack    = 40,
+        .baseDefense   = 80,
         .baseSpeed     = 100,
-        .baseSpAttack  = 50,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 60 : 50,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 243,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 218,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 214,
-    #else
-        .expYield = 172,
-    #endif
-        .evYield_Attack = 3,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP = 2,
+        .evYield_Speed = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_NONE, ABILITY_RECKLESS },
+        .abilities = { ABILITY_IMMUNITY, ABILITY_STURDY, ABILITY_STAMINA },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Staraptor"),
-        .cryId = CRY_STARAPTOR,
-        .natDexNum = NATIONAL_DEX_STARAPTOR,
-        .categoryName = _("Predator"),
-        .height = 12,
-        .weight = 249,
+        .speciesName = _("Roachmon"),
+        .cryId = CRY_ROACHMON,
+        .natDexNum = NATIONAL_DEX_ROACHMON,
+        .categoryName = _("Cockroach"),
+        .height = 23,
+        .weight = 613,
         .description = COMPOUND_STRING(
-            "When Vilemon evolve into Staraptor,\n"
-            "they leave the flock to live alone. It has\n"
-            "a savage nature. It will courageously\n"
-            "challenge foes that are much larger."),
+            "One of the most hated Digimon, Roachmon\n"
+            "moves around steathily and nimbly. What\n"
+            "it lacks in offensive power it more\n"
+            "than makes up in speed and stamina."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Staraptor,
+        .frontPic = gMonFrontPic_Roachmon,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 3,
         .frontAnimFrames = ANIM_FRAMES(
@@ -12071,39 +12064,39 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Staraptor,
+        .backPic = gMonBackPic_Roachmon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Staraptor,
-        .shinyPalette = gMonShinyPalette_Staraptor,
-        .iconSprite = gMonIcon_Staraptor,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Roachmon,
+        .shinyPalette = gMonShinyPalette_Roachmon,
+        .iconSprite = gMonIcon_Roachmon,
+        .iconPalIndex = 2,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_StaraptorF,
+        .frontPicFemale = gMonFrontPic_RoachmonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 64),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 10, SHADOW_SIZE_M)
-        FOOTPRINT(Staraptor)
+        FOOTPRINT(Roachmon)
         OVERWORLD(
-            sPicTable_Staraptor,
+            sPicTable_Roachmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Staraptor,
-            gShinyOverworldPalette_Staraptor
+            gOverworldPalette_Roachmon,
+            gShinyOverworldPalette_Roachmon
         )
         OVERWORLD_FEMALE(
-            sPicTable_StaraptorF,
+            sPicTable_RoachmonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sStaraptorLevelUpLearnset,
-        .teachableLearnset = sStaraptorTeachableLearnset,
+        .levelUpLearnset = sRoachmonLevelUpLearnset,
+        .teachableLearnset = sRoachmonTeachableLearnset,
     },
 #endif //P_FAMILY_KOKATORIMON
 

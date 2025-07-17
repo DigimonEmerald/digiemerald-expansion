@@ -18492,7 +18492,7 @@ static const u16 sVilemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sStaraptorTeachableLearnset[] = {
+static const u16 sRoachmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_EDGE,

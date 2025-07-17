@@ -14193,26 +14193,26 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
-    const u32 gMonFrontPic_Staraptor[] = INCBIN_U32("graphics/pokemon/staraptor/anim_front.4bpp.lz");
-    const u16 gMonPalette_Staraptor[] = INCBIN_U16("graphics/pokemon/staraptor/normal.gbapal");
-    const u32 gMonBackPic_Staraptor[] = INCBIN_U32("graphics/pokemon/staraptor/back.4bpp.lz");
-    const u16 gMonShinyPalette_Staraptor[] = INCBIN_U16("graphics/pokemon/staraptor/shiny.gbapal");
-    const u8 gMonIcon_Staraptor[] = INCBIN_U8("graphics/pokemon/staraptor/icon.4bpp");
+    const u32 gMonFrontPic_Roachmon[] = INCBIN_U32("graphics/pokemon/roachmon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Roachmon[] = INCBIN_U16("graphics/pokemon/roachmon/normal.gbapal");
+    const u32 gMonBackPic_Roachmon[] = INCBIN_U32("graphics/pokemon/roachmon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Roachmon[] = INCBIN_U16("graphics/pokemon/roachmon/shiny.gbapal");
+    const u8 gMonIcon_Roachmon[] = INCBIN_U8("graphics/pokemon/roachmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Staraptor[] = INCBIN_U8("graphics/pokemon/staraptor/footprint.1bpp");
+    const u8 gMonFootprint_Roachmon[] = INCBIN_U8("graphics/pokemon/roachmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Staraptor[] = INCBIN_COMP("graphics/pokemon/staraptor/overworld.4bpp");
+    const u32 gObjectEventPic_Roachmon[] = INCBIN_COMP("graphics/pokemon/roachmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Staraptor[] = INCBIN_U16("graphics/pokemon/staraptor/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Staraptor[] = INCBIN_U16("graphics/pokemon/staraptor/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Roachmon[] = INCBIN_U16("graphics/pokemon/roachmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Roachmon[] = INCBIN_U16("graphics/pokemon/roachmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_StaraptorF[] = INCBIN_U32("graphics/pokemon/staraptor/anim_frontf.4bpp.lz");
+    const u32 gMonFrontPic_RoachmonF[] = INCBIN_U32("graphics/pokemon/roachmon/anim_frontf.4bpp.lz");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_StaraptorF[] = INCBIN_COMP("graphics/pokemon/staraptor/overworldf.4bpp");
+    const u32 gObjectEventPic_RoachmonF[] = INCBIN_COMP("graphics/pokemon/roachmon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_KOKATORIMON
