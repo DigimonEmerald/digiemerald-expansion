@@ -1292,7 +1292,7 @@ gCryTable::
 .endif @ P_FAMILY_DIGITAMAMON
 .if P_FAMILY_EXTYRANNOMON == TRUE
 	cry Cry_Extyrannomon
-	cry Cry_Simisage
+	cry Cry_Giromon
 .endif @ P_FAMILY_EXTYRANNOMON
 .if P_FAMILY_PANSEAR == TRUE
 	cry Cry_Pansear
@@ -3720,7 +3720,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_DIGITAMAMON
 .if P_FAMILY_EXTYRANNOMON == TRUE
 	cry_reverse Cry_Extyrannomon
-	cry_reverse Cry_Simisage
+	cry_reverse Cry_Giromon
 .endif @ P_FAMILY_EXTYRANNOMON
 .if P_FAMILY_PANSEAR == TRUE
 	cry_reverse Cry_Pansear

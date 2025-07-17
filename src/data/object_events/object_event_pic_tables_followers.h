@@ -3768,8 +3768,8 @@ static const struct SpriteFrameImage sPicTable_Etemon[] = {
 static const struct SpriteFrameImage sPicTable_Extyrannomon[] = {
     overworld_ascending_frames(gObjectEventPic_Extyrannomon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Simisage[] = {
-    overworld_ascending_frames(gObjectEventPic_Simisage, 4, 4),
+static const struct SpriteFrameImage sPicTable_Giromon[] = {
+    overworld_ascending_frames(gObjectEventPic_Giromon, 4, 4),
 };
 #endif //P_FAMILY_EXTYRANNOMON
 

@@ -3410,8 +3410,8 @@ Cry_Extyrannomon::
 	.incbin "sound/direct_sound_samples/cries/extyrannomon.bin"
 
 	.align 2
-Cry_Simisage::
-	.incbin "sound/direct_sound_samples/cries/simisage.bin"
+Cry_Giromon::
+	.incbin "sound/direct_sound_samples/cries/giromon.bin"
 .endif @ P_FAMILY_EXTYRANNOMON
 
 .if P_FAMILY_PANSEAR == TRUE

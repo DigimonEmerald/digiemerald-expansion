@@ -21601,7 +21601,7 @@ static const u16 sExtyrannomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSimisageTeachableLearnset[] = {
+static const u16 sGiromonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULLET_SEED,

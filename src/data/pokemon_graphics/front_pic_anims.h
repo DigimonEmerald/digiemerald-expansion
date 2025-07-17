@@ -6444,7 +6444,7 @@ static const union AnimCmd sAnim_Extyrannomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Simisage_1[] =
+static const union AnimCmd sAnim_Giromon_1[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 45),
@@ -11635,7 +11635,7 @@ SINGLE_ANIMATION(Etemon);
 #endif //P_FAMILY_DIGITAMAMON
 #if P_FAMILY_EXTYRANNOMON
 SINGLE_ANIMATION(Extyrannomon);
-SINGLE_ANIMATION(Simisage);
+SINGLE_ANIMATION(Giromon);
 #endif //P_FAMILY_EXTYRANNOMON
 #if P_FAMILY_PANSEAR
 SINGLE_ANIMATION(Pansear);

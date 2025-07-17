@@ -529,7 +529,7 @@
 #define SPECIES_DIGITAMAMON                                509
 #define SPECIES_ETEMON                                 510
 #define SPECIES_EXTYRANNOMON                                 511
-#define SPECIES_SIMISAGE                                512
+#define SPECIES_GIROMON                                512
 #define SPECIES_PANSEAR                                 513
 #define SPECIES_SIMISEAR                                514
 #define SPECIES_PANPOUR                                 515

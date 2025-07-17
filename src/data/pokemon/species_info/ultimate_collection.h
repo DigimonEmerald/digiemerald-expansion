@@ -1399,44 +1399,48 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sExtyrannomonLevelUpLearnset,
         .teachableLearnset = sExtyrannomonTeachableLearnset,
         .eggMoveLearnset = sExtyrannomonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_SIMISAGE}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_GIROMON}),
     },
 
-    [SPECIES_SIMISAGE] =
+    [SPECIES_GIROMON] =
     {
         .baseHP        = 75,
-        .baseAttack    = 98,
-        .baseDefense   = 63,
-        .baseSpeed     = 101,
-        .baseSpAttack  = 98,
-        .baseSpDefense = 63,
-        .types = MON_TYPES(TYPE_GRASS),
-        .catchRate = 75,
-        .expYield = 174,
+        .baseAttack    = 90,
+        .baseDefense   = 90,
+        .baseSpeed     = 130,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 30,
+        .types = MON_TYPES(TYPE_STEEL),
+        .attribute = TYPE_VACCINE, 
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
         .evYield_Speed = 2,
+        .evYield_SpAttack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_GLUTTONY, ABILITY_NONE, ABILITY_OVERGROW },
-        .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Simisage"),
-        .cryId = CRY_SIMISAGE,
-        .natDexNum = NATIONAL_DEX_SIMISAGE,
-        .categoryName = _("Thorn Monkey"),
+        .abilities = { ABILITY_AFTERMATH, ABILITY_FLARE_BOOST, ABILITY_UNBURDEN },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Giromon"),
+        .cryId = CRY_GIROMON,
+        .natDexNum = NATIONAL_DEX_GIROMON,
+        .categoryName = _("Net Keeper"),
         .height = 11,
-        .weight = 305,
+        .weight = 353,
         .description = COMPOUND_STRING(
-            "Ill tempered, it attacks enemies by\n"
-            "swinging its barbed tail around wildly.\n"
-            "The leaf growing on its head is\n"
-            "very bitter."),
+            "Often on patrol, Giromon will lightly\n"
+            "float around the Computer Network.\n"
+            "It repels Digimon who illegally try\n"
+            "to enter the network"),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Simisage,
+        .frontPic = gMonFrontPic_Giromon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
         .frontAnimFrames = ANIM_FRAMES(
@@ -1445,28 +1449,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Simisage,
+        .backPic = gMonBackPic_Giromon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Simisage,
-        .shinyPalette = gMonShinyPalette_Simisage,
-        .iconSprite = gMonIcon_Simisage,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Giromon,
+        .shinyPalette = gMonShinyPalette_Giromon,
+        .iconSprite = gMonIcon_Giromon,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 12, SHADOW_SIZE_M)
-        FOOTPRINT(Simisage)
+        FOOTPRINT(Giromon)
         OVERWORLD(
-            sPicTable_Simisage,
+            sPicTable_Giromon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Simisage,
-            gShinyOverworldPalette_Simisage
+            gOverworldPalette_Giromon,
+            gShinyOverworldPalette_Giromon
         )
-        .levelUpLearnset = sSimisageLevelUpLearnset,
-        .teachableLearnset = sSimisageTeachableLearnset,
+        .levelUpLearnset = sGiromonLevelUpLearnset,
+        .teachableLearnset = sGiromonTeachableLearnset,
     },
 #endif //P_FAMILY_EXTYRANNOMON
 
