@@ -2956,8 +2956,8 @@ Cry_Gorillamon::
 	.incbin "sound/direct_sound_samples/cries/gorillamon.bin"
 
 	.align 2
-Cry_Bibarel::
-	.incbin "sound/direct_sound_samples/cries/bibarel.bin"
+Cry_Ikkakumon::
+	.incbin "sound/direct_sound_samples/cries/ikkakumon.bin"
 .endif @ P_FAMILY_GORILLAMON
 
 .if P_FAMILY_KRICKETOT == TRUE

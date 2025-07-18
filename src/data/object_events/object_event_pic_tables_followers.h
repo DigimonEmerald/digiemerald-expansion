@@ -3145,12 +3145,12 @@ static const struct SpriteFrameImage sPicTable_GorillamonF[] = {
     overworld_ascending_frames(gObjectEventPic_GorillamonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_Bibarel[] = {
-    overworld_ascending_frames(gObjectEventPic_Bibarel, 4, 4),
+static const struct SpriteFrameImage sPicTable_Ikkakumon[] = {
+    overworld_ascending_frames(gObjectEventPic_Ikkakumon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_BibarelF[] = {
-    overworld_ascending_frames(gObjectEventPic_BibarelF, 4, 4),
+static const struct SpriteFrameImage sPicTable_IkkakumonF[] = {
+    overworld_ascending_frames(gObjectEventPic_IkkakumonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_GORILLAMON

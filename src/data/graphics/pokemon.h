@@ -14242,26 +14242,26 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
-    const u32 gMonFrontPic_Bibarel[] = INCBIN_U32("graphics/pokemon/bibarel/anim_front.4bpp.lz");
-    const u16 gMonPalette_Bibarel[] = INCBIN_U16("graphics/pokemon/bibarel/normal.gbapal");
-    const u32 gMonBackPic_Bibarel[] = INCBIN_U32("graphics/pokemon/bibarel/back.4bpp.lz");
-    const u16 gMonShinyPalette_Bibarel[] = INCBIN_U16("graphics/pokemon/bibarel/shiny.gbapal");
-    const u8 gMonIcon_Bibarel[] = INCBIN_U8("graphics/pokemon/bibarel/icon.4bpp");
+    const u32 gMonFrontPic_Ikkakumon[] = INCBIN_U32("graphics/pokemon/ikkakumon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Ikkakumon[] = INCBIN_U16("graphics/pokemon/ikkakumon/normal.gbapal");
+    const u32 gMonBackPic_Ikkakumon[] = INCBIN_U32("graphics/pokemon/ikkakumon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Ikkakumon[] = INCBIN_U16("graphics/pokemon/ikkakumon/shiny.gbapal");
+    const u8 gMonIcon_Ikkakumon[] = INCBIN_U8("graphics/pokemon/ikkakumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Bibarel[] = INCBIN_U8("graphics/pokemon/bibarel/footprint.1bpp");
+    const u8 gMonFootprint_Ikkakumon[] = INCBIN_U8("graphics/pokemon/ikkakumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Bibarel[] = INCBIN_COMP("graphics/pokemon/bibarel/overworld.4bpp");
+    const u32 gObjectEventPic_Ikkakumon[] = INCBIN_COMP("graphics/pokemon/ikkakumon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Bibarel[] = INCBIN_U16("graphics/pokemon/bibarel/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Bibarel[] = INCBIN_U16("graphics/pokemon/bibarel/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Ikkakumon[] = INCBIN_U16("graphics/pokemon/ikkakumon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Ikkakumon[] = INCBIN_U16("graphics/pokemon/ikkakumon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_BibarelF[] = INCBIN_U32("graphics/pokemon/bibarel/anim_frontf.4bpp.lz");
+    const u32 gMonFrontPic_IkkakumonF[] = INCBIN_U32("graphics/pokemon/ikkakumon/anim_frontf.4bpp.lz");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_BibarelF[] = INCBIN_COMP("graphics/pokemon/bibarel/overworldf.4bpp");
+    const u32 gObjectEventPic_IkkakumonF[] = INCBIN_COMP("graphics/pokemon/ikkakumon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_GORILLAMON

@@ -5384,7 +5384,7 @@ static const union AnimCmd sAnim_Gorillamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Bibarel_1[] =
+static const union AnimCmd sAnim_Ikkakumon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -11433,7 +11433,7 @@ SINGLE_ANIMATION(Roachmon);
 #endif //P_FAMILY_KOKATORIMON
 #if P_FAMILY_GORILLAMON
 SINGLE_ANIMATION(Gorillamon);
-SINGLE_ANIMATION(Bibarel);
+SINGLE_ANIMATION(Ikkakumon);
 #endif //P_FAMILY_GORILLAMON
 #if P_FAMILY_KRICKETOT
 SINGLE_ANIMATION(Kricketot);

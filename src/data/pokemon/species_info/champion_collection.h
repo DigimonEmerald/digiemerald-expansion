@@ -12188,44 +12188,46 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sGorillamonLevelUpLearnset,
         .teachableLearnset = sGorillamonTeachableLearnset,
         .eggMoveLearnset = sGorillamonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_BIBAREL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_IKKAKUMON}),
     },
 
-    [SPECIES_BIBAREL] =
+    [SPECIES_IKKAKUMON] =
     {
-        .baseHP        = 79,
-        .baseAttack    = 85,
+        .baseHP        = 90,
+        .baseAttack    = 55,
         .baseDefense   = 60,
-        .baseSpeed     = 71,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_WATER),
-        .catchRate = 127,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 144 : 116,
-        .evYield_Attack = 2,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_ICE, TYPE_WATER),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP = 3,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SIMPLE, ABILITY_UNAWARE, ABILITY_MOODY },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Bibarel"),
-        .cryId = CRY_BIBAREL,
-        .natDexNum = NATIONAL_DEX_BIBAREL,
+        .abilities = { ABILITY_SNOW_CLOAK, ABILITY_THICK_FAT, ABILITY_SWIFT_SWIM },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Ikkakumon"),
+        .cryId = CRY_IKKAKUMON,
+        .natDexNum = NATIONAL_DEX_IKKAKUMON,
         .categoryName = _("Beaver"),
-        .height = 10,
-        .weight = 315,
+        .height = 55,
+        .weight = 2363,
         .description = COMPOUND_STRING(
-            "It makes its nest by damming streams\n"
-            "with bark and mud. A river dammed by\n"
-            "Bibarel will never overflow its banks,\n"
-            "which is appreciated by people nearby."),
+            "The thick fur and stout body of Ikkakumon\n"
+            "let it endure in the coldest of lands.\n"
+            "Its paws are able to heat up letting\n"
+            "it maintain a strong grip on ice."),
         .pokemonScale = 305,
         .pokemonOffset = 8,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Bibarel,
+        .frontPic = gMonFrontPic_Ikkakumon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
@@ -12236,39 +12238,39 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Bibarel,
+        .backPic = gMonBackPic_Ikkakumon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Bibarel,
-        .shinyPalette = gMonShinyPalette_Bibarel,
-        .iconSprite = gMonIcon_Bibarel,
+        .palette = gMonPalette_Ikkakumon,
+        .shinyPalette = gMonShinyPalette_Ikkakumon,
+        .iconSprite = gMonIcon_Ikkakumon,
         .iconPalIndex = 2,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_BibarelF,
+        .frontPicFemale = gMonFrontPic_IkkakumonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 48),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-5, 5, SHADOW_SIZE_M)
-        FOOTPRINT(Bibarel)
+        FOOTPRINT(Ikkakumon)
         OVERWORLD(
-            sPicTable_Bibarel,
+            sPicTable_Ikkakumon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Bibarel,
-            gShinyOverworldPalette_Bibarel
+            gOverworldPalette_Ikkakumon,
+            gShinyOverworldPalette_Ikkakumon
         )
         OVERWORLD_FEMALE(
-            sPicTable_BibarelF,
+            sPicTable_IkkakumonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sBibarelLevelUpLearnset,
-        .teachableLearnset = sBibarelTeachableLearnset,
+        .levelUpLearnset = sIkkakumonLevelUpLearnset,
+        .teachableLearnset = sIkkakumonTeachableLearnset,
     },
 #endif //P_FAMILY_GORILLAMON
 

@@ -2352,10 +2352,10 @@ $(POKEMONGFXDIR)/gorillamon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/gorillamon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/bibarel/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/ikkakumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/bibarel/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/ikkakumon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/kricketot/overworld.4bpp: %.4bpp: %.png

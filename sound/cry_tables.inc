@@ -1102,7 +1102,7 @@ gCryTable::
 .endif @ P_FAMILY_KOKATORIMON
 .if P_FAMILY_GORILLAMON == TRUE
 	cry Cry_Gorillamon
-	cry Cry_Bibarel
+	cry Cry_Ikkakumon
 .endif @ P_FAMILY_GORILLAMON
 .if P_FAMILY_KRICKETOT == TRUE
 	cry Cry_Kricketot
@@ -3530,7 +3530,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_KOKATORIMON
 .if P_FAMILY_GORILLAMON == TRUE
 	cry_reverse Cry_Gorillamon
-	cry_reverse Cry_Bibarel
+	cry_reverse Cry_Ikkakumon
 .endif @ P_FAMILY_GORILLAMON
 .if P_FAMILY_KRICKETOT == TRUE
 	cry_reverse Cry_Kricketot
