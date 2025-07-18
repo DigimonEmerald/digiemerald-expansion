@@ -14266,28 +14266,28 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_GORILLAMON
 
-#if P_FAMILY_KRICKETOT
-    const u32 gMonFrontPic_Kricketot[] = INCBIN_U32("graphics/pokemon/kricketot/anim_front.4bpp.lz");
-    const u16 gMonPalette_Kricketot[] = INCBIN_U16("graphics/pokemon/kricketot/normal.gbapal");
-    const u32 gMonBackPic_Kricketot[] = INCBIN_U32("graphics/pokemon/kricketot/back.4bpp.lz");
-    const u16 gMonShinyPalette_Kricketot[] = INCBIN_U16("graphics/pokemon/kricketot/shiny.gbapal");
-    const u8 gMonIcon_Kricketot[] = INCBIN_U8("graphics/pokemon/kricketot/icon.4bpp");
+#if P_FAMILY_KUWAGAMON
+    const u32 gMonFrontPic_Kuwagamon[] = INCBIN_U32("graphics/pokemon/kuwagamon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Kuwagamon[] = INCBIN_U16("graphics/pokemon/kuwagamon/normal.gbapal");
+    const u32 gMonBackPic_Kuwagamon[] = INCBIN_U32("graphics/pokemon/kuwagamon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Kuwagamon[] = INCBIN_U16("graphics/pokemon/kuwagamon/shiny.gbapal");
+    const u8 gMonIcon_Kuwagamon[] = INCBIN_U8("graphics/pokemon/kuwagamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Kricketot[] = INCBIN_U8("graphics/pokemon/kricketot/footprint.1bpp");
+    const u8 gMonFootprint_Kuwagamon[] = INCBIN_U8("graphics/pokemon/kuwagamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Kricketot[] = INCBIN_COMP("graphics/pokemon/kricketot/overworld.4bpp");
+    const u32 gObjectEventPic_Kuwagamon[] = INCBIN_COMP("graphics/pokemon/kuwagamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Kricketot[] = INCBIN_U16("graphics/pokemon/kricketot/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Kricketot[] = INCBIN_U16("graphics/pokemon/kricketot/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Kuwagamon[] = INCBIN_U16("graphics/pokemon/kuwagamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Kuwagamon[] = INCBIN_U16("graphics/pokemon/kuwagamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_KricketotF[] = INCBIN_U32("graphics/pokemon/kricketot/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_KricketotF[] = INCBIN_U32("graphics/pokemon/kricketot/backf.4bpp.lz");
+    const u32 gMonFrontPic_KuwagamonF[] = INCBIN_U32("graphics/pokemon/kuwagamon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_KuwagamonF[] = INCBIN_U32("graphics/pokemon/kuwagamon/backf.4bpp.lz");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_KricketotF[] = INCBIN_COMP("graphics/pokemon/kricketot/overworldf.4bpp");
+    const u32 gObjectEventPic_KuwagamonF[] = INCBIN_COMP("graphics/pokemon/kuwagamon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
@@ -14314,7 +14314,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gObjectEventPic_KricketuneF[] = INCBIN_COMP("graphics/pokemon/kricketune/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_KRICKETOT
+#endif //P_FAMILY_KUWAGAMON
 
 #if P_FAMILY_SHINX
     const u32 gMonFrontPic_Shinx[] = INCBIN_U32("graphics/pokemon/shinx/anim_front.4bpp.lz");

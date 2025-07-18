@@ -18600,8 +18600,8 @@ static const u16 sIkkakumonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GORILLAMON
 
-#if P_FAMILY_KRICKETOT
-static const u16 sKricketotTeachableLearnset[] = {
+#if P_FAMILY_KUWAGAMON
+static const u16 sKuwagamonTeachableLearnset[] = {
     MOVE_MUD_SLAP,
     MOVE_SNORE,
     MOVE_UNAVAILABLE,
@@ -18634,7 +18634,7 @@ static const u16 sKricketuneTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_KRICKETOT
+#endif //P_FAMILY_KUWAGAMON
 
 #if P_FAMILY_SHINX
 static const u16 sShinxTeachableLearnset[] = {

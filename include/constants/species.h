@@ -409,7 +409,7 @@
 #define SPECIES_ROACHMON                               398
 #define SPECIES_GORILLAMON                                  399
 #define SPECIES_IKKAKUMON                                 400
-#define SPECIES_KRICKETOT                               401
+#define SPECIES_KUWAGAMON                               401
 #define SPECIES_KRICKETUNE                              402
 #define SPECIES_SHINX                                   403
 #define SPECIES_LUXIO                                   404

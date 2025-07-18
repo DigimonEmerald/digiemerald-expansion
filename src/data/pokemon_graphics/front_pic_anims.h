@@ -5395,8 +5395,8 @@ static const union AnimCmd sAnim_Ikkakumon_1[] =
 };
 #endif //P_FAMILY_GORILLAMON
 
-#if P_FAMILY_KRICKETOT
-static const union AnimCmd sAnim_Kricketot_1[] =
+#if P_FAMILY_KUWAGAMON
+static const union AnimCmd sAnim_Kuwagamon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 5),
@@ -5428,7 +5428,7 @@ static const union AnimCmd sAnim_Kricketune_1[] =
     ANIMCMD_FRAME(0, 3),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_KRICKETOT
+#endif //P_FAMILY_KUWAGAMON
 
 #if P_FAMILY_SHINX
 static const union AnimCmd sAnim_Shinx_1[] =
@@ -11435,10 +11435,10 @@ SINGLE_ANIMATION(Roachmon);
 SINGLE_ANIMATION(Gorillamon);
 SINGLE_ANIMATION(Ikkakumon);
 #endif //P_FAMILY_GORILLAMON
-#if P_FAMILY_KRICKETOT
-SINGLE_ANIMATION(Kricketot);
+#if P_FAMILY_KUWAGAMON
+SINGLE_ANIMATION(Kuwagamon);
 SINGLE_ANIMATION(Kricketune);
-#endif //P_FAMILY_KRICKETOT
+#endif //P_FAMILY_KUWAGAMON
 #if P_FAMILY_SHINX
 SINGLE_ANIMATION(Shinx);
 SINGLE_ANIMATION(Luxio);

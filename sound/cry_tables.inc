@@ -1104,10 +1104,10 @@ gCryTable::
 	cry Cry_Gorillamon
 	cry Cry_Ikkakumon
 .endif @ P_FAMILY_GORILLAMON
-.if P_FAMILY_KRICKETOT == TRUE
-	cry Cry_Kricketot
+.if P_FAMILY_KUWAGAMON == TRUE
+	cry Cry_Kuwagamon
 	cry Cry_Kricketune
-.endif @ P_FAMILY_KRICKETOT
+.endif @ P_FAMILY_KUWAGAMON
 .if P_FAMILY_SHINX == TRUE
 	cry Cry_Shinx
 	cry Cry_Luxio
@@ -3532,10 +3532,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Gorillamon
 	cry_reverse Cry_Ikkakumon
 .endif @ P_FAMILY_GORILLAMON
-.if P_FAMILY_KRICKETOT == TRUE
-	cry_reverse Cry_Kricketot
+.if P_FAMILY_KUWAGAMON == TRUE
+	cry_reverse Cry_Kuwagamon
 	cry_reverse Cry_Kricketune
-.endif @ P_FAMILY_KRICKETOT
+.endif @ P_FAMILY_KUWAGAMON
 .if P_FAMILY_SHINX == TRUE
 	cry_reverse Cry_Shinx
 	cry_reverse Cry_Luxio

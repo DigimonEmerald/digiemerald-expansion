@@ -2960,15 +2960,15 @@ Cry_Ikkakumon::
 	.incbin "sound/direct_sound_samples/cries/ikkakumon.bin"
 .endif @ P_FAMILY_GORILLAMON
 
-.if P_FAMILY_KRICKETOT == TRUE
+.if P_FAMILY_KUWAGAMON == TRUE
 	.align 2
-Cry_Kricketot::
-	.incbin "sound/direct_sound_samples/cries/kricketot.bin"
+Cry_Kuwagamon::
+	.incbin "sound/direct_sound_samples/cries/kuwagamon.bin"
 
 	.align 2
 Cry_Kricketune::
 	.incbin "sound/direct_sound_samples/cries/kricketune.bin"
-.endif @ P_FAMILY_KRICKETOT
+.endif @ P_FAMILY_KUWAGAMON
 
 .if P_FAMILY_SHINX == TRUE
 	.align 2

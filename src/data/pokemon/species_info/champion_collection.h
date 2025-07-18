@@ -12274,18 +12274,20 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_GORILLAMON
 
-#if P_FAMILY_KRICKETOT
-    [SPECIES_KRICKETOT] =
+#if P_FAMILY_KUWAGAMON
+    [SPECIES_KUWAGAMON] =
     {
-        .baseHP        = 37,
-        .baseAttack    = 25,
-        .baseDefense   = 41,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 41,
-        .types = MON_TYPES(TYPE_BUG),
-        .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 39 : 54,
+        .baseHP        = 55,
+        .baseAttack    = 90,
+        .baseDefense   = 80,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_BUG, TYPE_FIGHTING),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack = 3,
         .evYield_Defense = 1,
         .itemRare = ITEM_METRONOME,
         .genderRatio = MON_GENDERLESS,
@@ -12293,24 +12295,24 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_RUN_AWAY },
+        .abilities = { ABILITY_HUSTLE, ABILITY_HYPER_CUTTER, ABILITY_ANGER_POINT },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Kricketot"),
-        .cryId = CRY_KRICKETOT,
-        .natDexNum = NATIONAL_DEX_KRICKETOT,
-        .categoryName = _("Cricket"),
-        .height = 3,
-        .weight = 22,
+        .speciesName = _("Kuwagamon"),
+        .cryId = CRY_KUWAGAMON,
+        .natDexNum = NATIONAL_DEX_KUWAGAMON,
+        .categoryName = _("Stag Beetle"),
+        .height = 58,
+        .weight = 1753,
         .description = COMPOUND_STRING(
-            "It shakes its head back to front,\n"
-            "causing its antennae to hit each other\n"
-            "and sound like a xylophone.\n"
-            "These sounds are fall hallmarks."),
+            "Kuwagamons sturdy shell allows its to\n"
+            "take risks that other champion Digimon\n"
+            "would be more hesitent to take. It uses\n"
+            "its powerful pincirs to clamp any foes."),
         .pokemonScale = 530,
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Kricketot,
+        .frontPic = gMonFrontPic_Kuwagamon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 11,
         .frontAnimFrames = ANIM_FRAMES(
@@ -12332,42 +12334,42 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_H_JUMPS,
-        .backPic = gMonBackPic_Kricketot,
+        .backPic = gMonBackPic_Kuwagamon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Kricketot,
-        .shinyPalette = gMonShinyPalette_Kricketot,
-        .iconSprite = gMonIcon_Kricketot,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Kuwagamon,
+        .shinyPalette = gMonShinyPalette_Kuwagamon,
+        .iconSprite = gMonIcon_Kuwagamon,
+        .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_KricketotF,
+        .frontPicFemale = gMonFrontPic_KuwagamonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 48),
-        .backPicFemale = gMonBackPic_KricketotF,
+        .backPicFemale = gMonBackPic_KuwagamonF,
         .backPicSizeFemale = MON_COORDS_SIZE(48, 56),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(-5, 2, SHADOW_SIZE_S)
-        FOOTPRINT(Kricketot)
+        FOOTPRINT(Kuwagamon)
         OVERWORLD(
-            sPicTable_Kricketot,
+            sPicTable_Kuwagamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Kricketot,
-            gShinyOverworldPalette_Kricketot
+            gOverworldPalette_Kuwagamon,
+            gShinyOverworldPalette_Kuwagamon
         )
         OVERWORLD_FEMALE(
-            sPicTable_KricketotF,
+            sPicTable_KuwagamonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
         .tmIlliterate = TRUE,
-        .levelUpLearnset = sKricketotLevelUpLearnset,
-        .teachableLearnset = sKricketotTeachableLearnset,
+        .levelUpLearnset = sKuwagamonLevelUpLearnset,
+        .teachableLearnset = sKuwagamonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_KRICKETUNE}),
     },
 
@@ -12455,7 +12457,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sKricketuneLevelUpLearnset,
         .teachableLearnset = sKricketuneTeachableLearnset,
     },
-#endif //P_FAMILY_KRICKETOT
+#endif //P_FAMILY_KUWAGAMON
 
 #if P_FAMILY_SHINX
     [SPECIES_SHINX] =
