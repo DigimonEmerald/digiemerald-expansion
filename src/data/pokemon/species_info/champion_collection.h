@@ -12370,45 +12370,47 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sKuwagamonLevelUpLearnset,
         .teachableLearnset = sKuwagamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_KRICKETUNE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_LEOMON}),
     },
 
-    [SPECIES_KRICKETUNE] =
+    [SPECIES_LEOMON] =
     {
-        .baseHP        = 77,
+        .baseHP        = 90,
         .baseAttack    = 85,
-        .baseDefense   = 51,
+        .baseDefense   = 80,
         .baseSpeed     = 65,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 51,
-        .types = MON_TYPES(TYPE_BUG),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 134 : 159,
-        .evYield_Attack = 2,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 35,
+        .types = MON_TYPES(TYPE_FIGHTING),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP = 3,
+        .evYield_Attack = 1,
         .itemRare = ITEM_METRONOME,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SWARM, ABILITY_NONE, ABILITY_TECHNICIAN },
+        .abilities = { ABILITY_JUSTIFIED, ABILITY_NONE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Kricketune"),
-        .cryId = CRY_KRICKETUNE,
-        .natDexNum = NATIONAL_DEX_KRICKETUNE,
-        .categoryName = _("Cricket"),
-        .height = 10,
-        .weight = 255,
+        .speciesName = _("Leomon"),
+        .cryId = CRY_LEOMON,
+        .natDexNum = NATIONAL_DEX_LEOMON,
+        .categoryName = _("Noble Hero"),
+        .height = 27,
+        .weight = 1014,
         .description = COMPOUND_STRING(
-            "It signals its emotions with its melodies.\n"
-            "There is a village that hosts a contest\n"
-            "based on the amazingly variable cries\n"
-            "of this Pokémon."),
+            "Leomon lacks the savagery that is\n"
+            "expected of many beast Digimon, instead\n"
+            "possessing a strong purpose and a\n"
+            "heart of justice that never wavers."),
         .pokemonScale = 305,
         .pokemonOffset = 8,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Kricketune,
+        .frontPic = gMonFrontPic_Leomon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 7,
         .frontAnimFrames = ANIM_FRAMES(
@@ -12421,41 +12423,41 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 3),
         ),
         .frontAnimId = ANIM_H_SLIDE_SLOW,
-        .backPic = gMonBackPic_Kricketune,
+        .backPic = gMonBackPic_Leomon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Kricketune,
-        .shinyPalette = gMonShinyPalette_Kricketune,
-        .iconSprite = gMonIcon_Kricketune,
+        .palette = gMonPalette_Leomon,
+        .shinyPalette = gMonShinyPalette_Leomon,
+        .iconSprite = gMonIcon_Leomon,
         .iconPalIndex = 2,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_KricketuneF,
+        .frontPicFemale = gMonFrontPic_LeomonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 56),
-        .backPicFemale = gMonBackPic_KricketuneF,
+        .backPicFemale = gMonBackPic_LeomonF,
         .backPicSizeFemale = MON_COORDS_SIZE(56, 64),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-3, 6, SHADOW_SIZE_S)
-        FOOTPRINT(Kricketune)
+        FOOTPRINT(Leomon)
         OVERWORLD(
-            sPicTable_Kricketune,
+            sPicTable_Leomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Kricketune,
-            gShinyOverworldPalette_Kricketune
+            gOverworldPalette_Leomon,
+            gShinyOverworldPalette_Leomon
         )
         OVERWORLD_FEMALE(
-            sPicTable_KricketuneF,
+            sPicTable_LeomonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sKricketuneLevelUpLearnset,
-        .teachableLearnset = sKricketuneTeachableLearnset,
+        .levelUpLearnset = sLeomonLevelUpLearnset,
+        .teachableLearnset = sLeomonTeachableLearnset,
     },
 #endif //P_FAMILY_KUWAGAMON
 

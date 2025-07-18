@@ -5417,7 +5417,7 @@ static const union AnimCmd sAnim_Kuwagamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Kricketune_1[] =
+static const union AnimCmd sAnim_Leomon_1[] =
 {
     ANIMCMD_FRAME(0, 27),
     ANIMCMD_FRAME(1, 27),
@@ -11437,7 +11437,7 @@ SINGLE_ANIMATION(Ikkakumon);
 #endif //P_FAMILY_GORILLAMON
 #if P_FAMILY_KUWAGAMON
 SINGLE_ANIMATION(Kuwagamon);
-SINGLE_ANIMATION(Kricketune);
+SINGLE_ANIMATION(Leomon);
 #endif //P_FAMILY_KUWAGAMON
 #if P_FAMILY_SHINX
 SINGLE_ANIMATION(Shinx);

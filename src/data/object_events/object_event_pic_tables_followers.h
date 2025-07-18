@@ -3164,12 +3164,12 @@ static const struct SpriteFrameImage sPicTable_KuwagamonF[] = {
     overworld_ascending_frames(gObjectEventPic_KuwagamonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_Kricketune[] = {
-    overworld_ascending_frames(gObjectEventPic_Kricketune, 4, 4),
+static const struct SpriteFrameImage sPicTable_Leomon[] = {
+    overworld_ascending_frames(gObjectEventPic_Leomon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_KricketuneF[] = {
-    overworld_ascending_frames(gObjectEventPic_KricketuneF, 4, 4),
+static const struct SpriteFrameImage sPicTable_LeomonF[] = {
+    overworld_ascending_frames(gObjectEventPic_LeomonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_KUWAGAMON

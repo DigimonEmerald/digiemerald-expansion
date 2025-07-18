@@ -2966,8 +2966,8 @@ Cry_Kuwagamon::
 	.incbin "sound/direct_sound_samples/cries/kuwagamon.bin"
 
 	.align 2
-Cry_Kricketune::
-	.incbin "sound/direct_sound_samples/cries/kricketune.bin"
+Cry_Leomon::
+	.incbin "sound/direct_sound_samples/cries/leomon.bin"
 .endif @ P_FAMILY_KUWAGAMON
 
 .if P_FAMILY_SHINX == TRUE

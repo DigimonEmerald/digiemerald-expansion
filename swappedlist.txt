@@ -412,6 +412,7 @@ Roachmon - Staraptor
 Gorillamon - Bidoof
 Ikkakumon - Bibarel
 Kuwagamon - Kricketot
+Leomon - Kricketune
 
 Ultimate List
 

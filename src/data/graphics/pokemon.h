@@ -14291,27 +14291,27 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
-    const u32 gMonFrontPic_Kricketune[] = INCBIN_U32("graphics/pokemon/kricketune/anim_front.4bpp.lz");
-    const u16 gMonPalette_Kricketune[] = INCBIN_U16("graphics/pokemon/kricketune/normal.gbapal");
-    const u32 gMonBackPic_Kricketune[] = INCBIN_U32("graphics/pokemon/kricketune/back.4bpp.lz");
-    const u16 gMonShinyPalette_Kricketune[] = INCBIN_U16("graphics/pokemon/kricketune/shiny.gbapal");
-    const u8 gMonIcon_Kricketune[] = INCBIN_U8("graphics/pokemon/kricketune/icon.4bpp");
+    const u32 gMonFrontPic_Leomon[] = INCBIN_U32("graphics/pokemon/leomon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Leomon[] = INCBIN_U16("graphics/pokemon/leomon/normal.gbapal");
+    const u32 gMonBackPic_Leomon[] = INCBIN_U32("graphics/pokemon/leomon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Leomon[] = INCBIN_U16("graphics/pokemon/leomon/shiny.gbapal");
+    const u8 gMonIcon_Leomon[] = INCBIN_U8("graphics/pokemon/leomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Kricketune[] = INCBIN_U8("graphics/pokemon/kricketune/footprint.1bpp");
+    const u8 gMonFootprint_Leomon[] = INCBIN_U8("graphics/pokemon/leomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Kricketune[] = INCBIN_COMP("graphics/pokemon/kricketune/overworld.4bpp");
+    const u32 gObjectEventPic_Leomon[] = INCBIN_COMP("graphics/pokemon/leomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Kricketune[] = INCBIN_U16("graphics/pokemon/kricketune/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Kricketune[] = INCBIN_U16("graphics/pokemon/kricketune/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Leomon[] = INCBIN_U16("graphics/pokemon/leomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Leomon[] = INCBIN_U16("graphics/pokemon/leomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_KricketuneF[] = INCBIN_U32("graphics/pokemon/kricketune/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_KricketuneF[] = INCBIN_U32("graphics/pokemon/kricketune/backf.4bpp.lz");
+    const u32 gMonFrontPic_LeomonF[] = INCBIN_U32("graphics/pokemon/leomon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_LeomonF[] = INCBIN_U32("graphics/pokemon/leomon/backf.4bpp.lz");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_KricketuneF[] = INCBIN_COMP("graphics/pokemon/kricketune/overworldf.4bpp");
+    const u32 gObjectEventPic_LeomonF[] = INCBIN_COMP("graphics/pokemon/leomon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_KUWAGAMON

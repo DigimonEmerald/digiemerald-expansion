@@ -1106,7 +1106,7 @@ gCryTable::
 .endif @ P_FAMILY_GORILLAMON
 .if P_FAMILY_KUWAGAMON == TRUE
 	cry Cry_Kuwagamon
-	cry Cry_Kricketune
+	cry Cry_Leomon
 .endif @ P_FAMILY_KUWAGAMON
 .if P_FAMILY_SHINX == TRUE
 	cry Cry_Shinx
@@ -3534,7 +3534,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_GORILLAMON
 .if P_FAMILY_KUWAGAMON == TRUE
 	cry_reverse Cry_Kuwagamon
-	cry_reverse Cry_Kricketune
+	cry_reverse Cry_Leomon
 .endif @ P_FAMILY_KUWAGAMON
 .if P_FAMILY_SHINX == TRUE
 	cry_reverse Cry_Shinx

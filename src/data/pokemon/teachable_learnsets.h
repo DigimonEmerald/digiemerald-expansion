@@ -18607,7 +18607,7 @@ static const u16 sKuwagamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sKricketuneTeachableLearnset[] = {
+static const u16 sLeomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
