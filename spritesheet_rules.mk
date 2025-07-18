@@ -2796,7 +2796,7 @@ $(POKEMONGFXDIR)/magnaangemon_priestmode/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/jagamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/simipour/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/ladydevimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/munna/overworld.4bpp: %.4bpp: %.png

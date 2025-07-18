@@ -1688,44 +1688,45 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sJagamonLevelUpLearnset,
         .teachableLearnset = sJagamonTeachableLearnset,
         .eggMoveLearnset = sJagamonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_SIMIPOUR}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_LADYDEVIMON}),
     },
 
-    [SPECIES_SIMIPOUR] =
+    [SPECIES_LADYDEVIMON] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 98,
-        .baseDefense   = 63,
-        .baseSpeed     = 101,
-        .baseSpAttack  = 98,
-        .baseSpDefense = 63,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 75,
-        .expYield = 174,
+        .baseHP        = 65,
+        .baseAttack    = 115,
+        .baseDefense   = 65,
+        .baseSpeed     = 115,
+        .baseSpAttack  = 115,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_DARK),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 95,
+        .expYield = 200,
         .evYield_Speed = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_GLUTTONY, ABILITY_NONE, ABILITY_TORRENT },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Simipour"),
-        .cryId = CRY_SIMIPOUR,
-        .natDexNum = NATIONAL_DEX_SIMIPOUR,
-        .categoryName = _("Geyser"),
-        .height = 10,
-        .weight = 290,
+        .abilities = { ABILITY_PURE_POWER, ABILITY_CUTE_CHARM, ABILITY_TOUGH_CLAWS }, // PURE EVIL
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("LadyDevimon"),
+        .cryId = CRY_LADYDEVIMON,
+        .natDexNum = NATIONAL_DEX_LADYDEVIMON,
+        .categoryName = _("Fallen Angel"),
+        .height = 25,
+        .weight = 876,
         .description = COMPOUND_STRING(
-            "It can shoot highly-pressurised water\n"
-            "from its tail with enough power to\n"
-            "break through a solid concrete wall.\n"
-            "It prefers places with clean water."),
+            "LadyDevimon has a very noble presence\n"
+            "rarely seen in Dark type Digimon. It\n"
+            "has no limits to its potential growth\n"
+            "because of its pure Dark Side Power"),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Simipour,
+        .frontPic = gMonFrontPic_Ladydevimon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 6,
         .frontAnimFrames = ANIM_FRAMES(
@@ -1733,28 +1734,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_H_STRETCH,
-        .backPic = gMonBackPic_Simipour,
+        .backPic = gMonBackPic_Ladydevimon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Simipour,
-        .shinyPalette = gMonShinyPalette_Simipour,
-        .iconSprite = gMonIcon_Simipour,
+        .palette = gMonPalette_Ladydevimon,
+        .shinyPalette = gMonShinyPalette_Ladydevimon,
+        .iconSprite = gMonIcon_Ladydevimon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 8, SHADOW_SIZE_M)
-        FOOTPRINT(Simipour)
+        FOOTPRINT(Ladydevimon)
         OVERWORLD(
-            sPicTable_Simipour,
+            sPicTable_Ladydevimon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Simipour,
-            gShinyOverworldPalette_Simipour
+            gOverworldPalette_Ladydevimon,
+            gShinyOverworldPalette_Ladydevimon
         )
-        .levelUpLearnset = sSimipourLevelUpLearnset,
-        .teachableLearnset = sSimipourTeachableLearnset,
+        .levelUpLearnset = sLadydevimonLevelUpLearnset,
+        .teachableLearnset = sLadydevimonTeachableLearnset,
     },
 #endif //P_FAMILY_JAGAMON
 

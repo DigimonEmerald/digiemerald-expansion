@@ -16269,19 +16269,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Simipour[] = INCBIN_U32("graphics/pokemon/simipour/anim_front.4bpp.lz");
-    const u16 gMonPalette_Simipour[] = INCBIN_U16("graphics/pokemon/simipour/normal.gbapal");
-    const u32 gMonBackPic_Simipour[] = INCBIN_U32("graphics/pokemon/simipour/back.4bpp.lz");
-    const u16 gMonShinyPalette_Simipour[] = INCBIN_U16("graphics/pokemon/simipour/shiny.gbapal");
-    const u8 gMonIcon_Simipour[] = INCBIN_U8("graphics/pokemon/simipour/icon.4bpp");
+    const u32 gMonFrontPic_Ladydevimon[] = INCBIN_U32("graphics/pokemon/ladydevimon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Ladydevimon[] = INCBIN_U16("graphics/pokemon/ladydevimon/normal.gbapal");
+    const u32 gMonBackPic_Ladydevimon[] = INCBIN_U32("graphics/pokemon/ladydevimon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Ladydevimon[] = INCBIN_U16("graphics/pokemon/ladydevimon/shiny.gbapal");
+    const u8 gMonIcon_Ladydevimon[] = INCBIN_U8("graphics/pokemon/ladydevimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Simipour[] = INCBIN_U8("graphics/pokemon/simipour/footprint.1bpp");
+    const u8 gMonFootprint_Ladydevimon[] = INCBIN_U8("graphics/pokemon/ladydevimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Simipour[] = INCBIN_COMP("graphics/pokemon/simipour/overworld.4bpp");
+    const u32 gObjectEventPic_Ladydevimon[] = INCBIN_COMP("graphics/pokemon/ladydevimon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Simipour[] = INCBIN_U16("graphics/pokemon/simipour/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Simipour[] = INCBIN_U16("graphics/pokemon/simipour/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Ladydevimon[] = INCBIN_U16("graphics/pokemon/ladydevimon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Ladydevimon[] = INCBIN_U16("graphics/pokemon/ladydevimon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_JAGAMON

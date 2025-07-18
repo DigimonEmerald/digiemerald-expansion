@@ -21726,7 +21726,7 @@ static const u16 sJagamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSimipourTeachableLearnset[] = {
+static const u16 sLadydevimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,

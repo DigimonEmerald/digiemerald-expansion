@@ -6481,7 +6481,7 @@ static const union AnimCmd sAnim_Jagamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Simipour_1[] =
+static const union AnimCmd sAnim_Ladydevimon_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 15),
@@ -11643,7 +11643,7 @@ SINGLE_ANIMATION(Magnaangemon_priestmode);
 #endif //P_FAMILY_MAGNAANGEMON
 #if P_FAMILY_JAGAMON
 SINGLE_ANIMATION(Jagamon);
-SINGLE_ANIMATION(Simipour);
+SINGLE_ANIMATION(Ladydevimon);
 #endif //P_FAMILY_JAGAMON
 #if P_FAMILY_MUNNA
 SINGLE_ANIMATION(Munna);

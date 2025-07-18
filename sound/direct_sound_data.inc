@@ -3430,8 +3430,8 @@ Cry_Jagamon::
 	.incbin "sound/direct_sound_samples/cries/jagamon.bin"
 
 	.align 2
-Cry_Simipour::
-	.incbin "sound/direct_sound_samples/cries/simipour.bin"
+Cry_Ladydevimon::
+	.incbin "sound/direct_sound_samples/cries/ladydevimon.bin"
 .endif @ P_FAMILY_JAGAMON
 
 .if P_FAMILY_MUNNA == TRUE

@@ -3786,8 +3786,8 @@ static const struct SpriteFrameImage sPicTable_Magnaangemon_priestmode[] = {
 static const struct SpriteFrameImage sPicTable_Jagamon[] = {
     overworld_ascending_frames(gObjectEventPic_Jagamon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Simipour[] = {
-    overworld_ascending_frames(gObjectEventPic_Simipour, 4, 4),
+static const struct SpriteFrameImage sPicTable_Ladydevimon[] = {
+    overworld_ascending_frames(gObjectEventPic_Ladydevimon, 4, 4),
 };
 #endif //P_FAMILY_JAGAMON
 

@@ -1300,7 +1300,7 @@ gCryTable::
 .endif @ P_FAMILY_MAGNAANGEMON
 .if P_FAMILY_JAGAMON == TRUE
 	cry Cry_Jagamon
-	cry Cry_Simipour
+	cry Cry_Ladydevimon
 .endif @ P_FAMILY_JAGAMON
 .if P_FAMILY_MUNNA == TRUE
 	cry Cry_Munna
@@ -3728,7 +3728,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_MAGNAANGEMON
 .if P_FAMILY_JAGAMON == TRUE
 	cry_reverse Cry_Jagamon
-	cry_reverse Cry_Simipour
+	cry_reverse Cry_Ladydevimon
 .endif @ P_FAMILY_JAGAMON
 .if P_FAMILY_MUNNA == TRUE
 	cry_reverse Cry_Munna
