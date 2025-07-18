@@ -1294,10 +1294,10 @@ gCryTable::
 	cry Cry_Extyrannomon
 	cry Cry_Giromon
 .endif @ P_FAMILY_EXTYRANNOMON
-.if P_FAMILY_PANSEAR == TRUE
-	cry Cry_Pansear
+.if P_FAMILY_MAGNAANGEMON == TRUE
+	cry Cry_Magnaangemon
 	cry Cry_Simisear
-.endif @ P_FAMILY_PANSEAR
+.endif @ P_FAMILY_MAGNAANGEMON
 .if P_FAMILY_PANPOUR == TRUE
 	cry Cry_Panpour
 	cry Cry_Simipour
@@ -3722,10 +3722,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Extyrannomon
 	cry_reverse Cry_Giromon
 .endif @ P_FAMILY_EXTYRANNOMON
-.if P_FAMILY_PANSEAR == TRUE
-	cry_reverse Cry_Pansear
+.if P_FAMILY_MAGNAANGEMON == TRUE
+	cry_reverse Cry_Magnaangemon
 	cry_reverse Cry_Simisear
-.endif @ P_FAMILY_PANSEAR
+.endif @ P_FAMILY_MAGNAANGEMON
 .if P_FAMILY_PANPOUR == TRUE
 	cry_reverse Cry_Panpour
 	cry_reverse Cry_Simipour

@@ -21632,8 +21632,8 @@ static const u16 sGiromonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_EXTYRANNOMON
 
-#if P_FAMILY_PANSEAR
-static const u16 sPansearTeachableLearnset[] = {
+#if P_FAMILY_MAGNAANGEMON
+static const u16 sMagnaangemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CUT,
     MOVE_DIG,
@@ -21691,7 +21691,7 @@ static const u16 sSimisearTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PANSEAR
+#endif //P_FAMILY_MAGNAANGEMON
 
 #if P_FAMILY_PANPOUR
 static const u16 sPanpourTeachableLearnset[] = {

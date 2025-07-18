@@ -550,8 +550,8 @@
 #define P_FAMILY_DIGITAMAMON                TRUE
 #undef P_FAMILY_EXTYRANNOMON
 #define P_FAMILY_EXTYRANNOMON                 TRUE
-#undef P_FAMILY_PANSEAR
-#define P_FAMILY_PANSEAR                 TRUE
+#undef P_FAMILY_MAGNAANGEMON
+#define P_FAMILY_MAGNAANGEMON                 TRUE
 #undef P_FAMILY_PANPOUR
 #define P_FAMILY_PANPOUR                 TRUE
 #undef P_FAMILY_MUNNA

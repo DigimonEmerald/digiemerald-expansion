@@ -6453,8 +6453,8 @@ static const union AnimCmd sAnim_Giromon_1[] =
 };
 #endif //P_FAMILY_EXTYRANNOMON
 
-#if P_FAMILY_PANSEAR
-static const union AnimCmd sAnim_Pansear_1[] =
+#if P_FAMILY_MAGNAANGEMON
+static const union AnimCmd sAnim_Magnaangemon_1[] =
 {
     ANIMCMD_FRAME(1, 32),
     ANIMCMD_FRAME(0, 20),
@@ -6470,7 +6470,7 @@ static const union AnimCmd sAnim_Simisear_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_PANSEAR
+#endif //P_FAMILY_MAGNAANGEMON
 
 #if P_FAMILY_PANPOUR
 static const union AnimCmd sAnim_Panpour_1[] =
@@ -11637,10 +11637,10 @@ SINGLE_ANIMATION(Etemon);
 SINGLE_ANIMATION(Extyrannomon);
 SINGLE_ANIMATION(Giromon);
 #endif //P_FAMILY_EXTYRANNOMON
-#if P_FAMILY_PANSEAR
-SINGLE_ANIMATION(Pansear);
+#if P_FAMILY_MAGNAANGEMON
+SINGLE_ANIMATION(Magnaangemon);
 SINGLE_ANIMATION(Simisear);
-#endif //P_FAMILY_PANSEAR
+#endif //P_FAMILY_MAGNAANGEMON
 #if P_FAMILY_PANPOUR
 SINGLE_ANIMATION(Panpour);
 SINGLE_ANIMATION(Simipour);

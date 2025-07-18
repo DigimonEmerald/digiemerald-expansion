@@ -3773,14 +3773,14 @@ static const struct SpriteFrameImage sPicTable_Giromon[] = {
 };
 #endif //P_FAMILY_EXTYRANNOMON
 
-#if P_FAMILY_PANSEAR
-static const struct SpriteFrameImage sPicTable_Pansear[] = {
-    overworld_ascending_frames(gObjectEventPic_Pansear, 4, 4),
+#if P_FAMILY_MAGNAANGEMON
+static const struct SpriteFrameImage sPicTable_Magnaangemon[] = {
+    overworld_ascending_frames(gObjectEventPic_Magnaangemon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Simisear[] = {
     overworld_ascending_frames(gObjectEventPic_Simisear, 4, 4),
 };
-#endif //P_FAMILY_PANSEAR
+#endif //P_FAMILY_MAGNAANGEMON
 
 #if P_FAMILY_PANPOUR
 static const struct SpriteFrameImage sPicTable_Panpour[] = {

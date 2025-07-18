@@ -1474,43 +1474,44 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_EXTYRANNOMON
 
-#if P_FAMILY_PANSEAR
-    [SPECIES_PANSEAR] =
+#if P_FAMILY_MAGNAANGEMON
+    [SPECIES_MAGNAANGEMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 53,
-        .baseDefense   = 48,
-        .baseSpeed     = 64,
-        .baseSpAttack  = 53,
-        .baseSpDefense = 48,
-        .types = MON_TYPES(TYPE_FIRE),
-        .catchRate = 190,
-        .expYield = 63,
-        .evYield_Speed = 1,
+        .baseHP        = 90,
+        .baseAttack    = 105,
+        .baseDefense   = 90,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_LIGHT),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_Attack = 5,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_GLUTTONY, ABILITY_NONE, ABILITY_BLAZE },
-        .bodyColor = BODY_COLOR_RED,
+        .abilities = { ABILITY_EPIPHANY, ABILITY_JUSTIFIED, ABILITY_SHARPNESS },
+        .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
-        .speciesName = _("Pansear"),
-        .cryId = CRY_PANSEAR,
-        .natDexNum = NATIONAL_DEX_PANSEAR,
-        .categoryName = _("High Temp"),
-        .height = 6,
-        .weight = 110,
+        .speciesName = _("MagnaAngemon"),
+        .cryId = CRY_MAGNAANGEMON,
+        .natDexNum = NATIONAL_DEX_MAGNAANGEMON,
+        .categoryName = _("Archangel"),
+        .height = 32,
+        .weight = 875,
         .description = COMPOUND_STRING(
-            "The fire within the tuft on its head can\n"
-            "reach up to 600ºF. Very intelligent,\n"
-            "it roasts berries before eating them.\n"
-            "It likes to help people."),
+            "MagnaAngemons mission is to act as a\n"
+            "law enforcement officer for Angel\n"
+            "Digimon. It is considered the\n"
+            "spokesperson for the essence of light."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Pansear,
+        .frontPic = gMonFrontPic_Magnaangemon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 11,
         .frontAnimFrames = ANIM_FRAMES(
@@ -1518,29 +1519,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 20),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Pansear,
+        .backPic = gMonBackPic_Magnaangemon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Pansear,
-        .shinyPalette = gMonShinyPalette_Pansear,
-        .iconSprite = gMonIcon_Pansear,
+        .palette = gMonPalette_Magnaangemon,
+        .shinyPalette = gMonShinyPalette_Magnaangemon,
+        .iconSprite = gMonIcon_Magnaangemon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(1, 3, SHADOW_SIZE_S)
-        FOOTPRINT(Pansear)
+        FOOTPRINT(Magnaangemon)
         OVERWORLD(
-            sPicTable_Pansear,
+            sPicTable_Magnaangemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Pansear,
-            gShinyOverworldPalette_Pansear
+            gOverworldPalette_Magnaangemon,
+            gShinyOverworldPalette_Magnaangemon
         )
-        .levelUpLearnset = sPansearLevelUpLearnset,
-        .teachableLearnset = sPansearTeachableLearnset,
-        .eggMoveLearnset = sPansearEggMoveLearnset,
+        .levelUpLearnset = sMagnaangemonLevelUpLearnset,
+        .teachableLearnset = sMagnaangemonTeachableLearnset,
+        .eggMoveLearnset = sMagnaangemonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_SIMISEAR}),
     },
 
@@ -1613,7 +1614,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sSimisearLevelUpLearnset,
         .teachableLearnset = sSimisearTeachableLearnset,
     },
-#endif //P_FAMILY_PANSEAR
+#endif //P_FAMILY_MAGNAANGEMON
 
 #if P_FAMILY_PANPOUR
     [SPECIES_PANPOUR] =

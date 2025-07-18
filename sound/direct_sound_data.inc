@@ -3414,15 +3414,15 @@ Cry_Giromon::
 	.incbin "sound/direct_sound_samples/cries/giromon.bin"
 .endif @ P_FAMILY_EXTYRANNOMON
 
-.if P_FAMILY_PANSEAR == TRUE
+.if P_FAMILY_MAGNAANGEMON == TRUE
 	.align 2
-Cry_Pansear::
-	.incbin "sound/direct_sound_samples/cries/pansear.bin"
+Cry_Magnaangemon::
+	.incbin "sound/direct_sound_samples/cries/magnaangemon.bin"
 
 	.align 2
 Cry_Simisear::
 	.incbin "sound/direct_sound_samples/cries/simisear.bin"
-.endif @ P_FAMILY_PANSEAR
+.endif @ P_FAMILY_MAGNAANGEMON
 
 .if P_FAMILY_PANPOUR == TRUE
 	.align 2

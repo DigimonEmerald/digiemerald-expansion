@@ -4022,8 +4022,8 @@ static const u16 sExtyrannomonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_EXTYRANNOMON
 
-#if P_FAMILY_PANSEAR
-static const u16 sPansearEggMoveLearnset[] = {
+#if P_FAMILY_MAGNAANGEMON
+static const u16 sMagnaangemonEggMoveLearnset[] = {
     MOVE_COVET,
     MOVE_LOW_KICK,
     MOVE_TICKLE,
@@ -4039,7 +4039,7 @@ static const u16 sPansearEggMoveLearnset[] = {
     MOVE_FLARE_BLITZ,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PANSEAR
+#endif //P_FAMILY_MAGNAANGEMON
 
 #if P_FAMILY_PANPOUR
 static const u16 sPanpourEggMoveLearnset[] = {

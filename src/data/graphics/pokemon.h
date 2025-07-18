@@ -16218,20 +16218,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_EXTYRANNOMON
 
-#if P_FAMILY_PANSEAR
-    const u32 gMonFrontPic_Pansear[] = INCBIN_U32("graphics/pokemon/pansear/anim_front.4bpp.lz");
-    const u16 gMonPalette_Pansear[] = INCBIN_U16("graphics/pokemon/pansear/normal.gbapal");
-    const u32 gMonBackPic_Pansear[] = INCBIN_U32("graphics/pokemon/pansear/back.4bpp.lz");
-    const u16 gMonShinyPalette_Pansear[] = INCBIN_U16("graphics/pokemon/pansear/shiny.gbapal");
-    const u8 gMonIcon_Pansear[] = INCBIN_U8("graphics/pokemon/pansear/icon.4bpp");
+#if P_FAMILY_MAGNAANGEMON
+    const u32 gMonFrontPic_Magnaangemon[] = INCBIN_U32("graphics/pokemon/magnaangemon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Magnaangemon[] = INCBIN_U16("graphics/pokemon/magnaangemon/normal.gbapal");
+    const u32 gMonBackPic_Magnaangemon[] = INCBIN_U32("graphics/pokemon/magnaangemon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Magnaangemon[] = INCBIN_U16("graphics/pokemon/magnaangemon/shiny.gbapal");
+    const u8 gMonIcon_Magnaangemon[] = INCBIN_U8("graphics/pokemon/magnaangemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Pansear[] = INCBIN_U8("graphics/pokemon/pansear/footprint.1bpp");
+    const u8 gMonFootprint_Magnaangemon[] = INCBIN_U8("graphics/pokemon/magnaangemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Pansear[] = INCBIN_COMP("graphics/pokemon/pansear/overworld.4bpp");
+    const u32 gObjectEventPic_Magnaangemon[] = INCBIN_COMP("graphics/pokemon/magnaangemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Pansear[] = INCBIN_U16("graphics/pokemon/pansear/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Pansear[] = INCBIN_U16("graphics/pokemon/pansear/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Magnaangemon[] = INCBIN_U16("graphics/pokemon/magnaangemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Magnaangemon[] = INCBIN_U16("graphics/pokemon/magnaangemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16250,7 +16250,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Simisear[] = INCBIN_U16("graphics/pokemon/simisear/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_PANSEAR
+#endif //P_FAMILY_MAGNAANGEMON
 
 #if P_FAMILY_PANPOUR
     const u32 gMonFrontPic_Panpour[] = INCBIN_U32("graphics/pokemon/panpour/anim_front.4bpp.lz");

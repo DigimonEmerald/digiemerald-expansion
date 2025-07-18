@@ -12200,8 +12200,8 @@ static const struct LevelUpMove sGiromonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_EXTYRANNOMON
 
-#if P_FAMILY_PANSEAR
-static const struct LevelUpMove sPansearLevelUpLearnset[] = {
+#if P_FAMILY_MAGNAANGEMON
+static const struct LevelUpMove sMagnaangemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_PLAY_NICE),
     LEVEL_UP_MOVE( 4, MOVE_LEER),
@@ -12228,7 +12228,7 @@ static const struct LevelUpMove sSimisearLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FLAME_BURST),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_PANSEAR
+#endif //P_FAMILY_MAGNAANGEMON
 
 #if P_FAMILY_PANPOUR
 static const struct LevelUpMove sPanpourLevelUpLearnset[] = {
