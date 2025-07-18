@@ -552,8 +552,8 @@
 #define P_FAMILY_EXTYRANNOMON                 TRUE
 #undef P_FAMILY_MAGNAANGEMON
 #define P_FAMILY_MAGNAANGEMON                 TRUE
-#undef P_FAMILY_PANPOUR
-#define P_FAMILY_PANPOUR                 TRUE
+#undef P_FAMILY_JAGAMON
+#define P_FAMILY_JAGAMON                 TRUE
 #undef P_FAMILY_MUNNA
 #define P_FAMILY_MUNNA                   TRUE
 #undef P_FAMILY_PIDOVE

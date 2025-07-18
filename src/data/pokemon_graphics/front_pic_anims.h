@@ -6472,8 +6472,8 @@ static const union AnimCmd sAnim_Magnaangemon_priestmode_1[] =
 };
 #endif //P_FAMILY_MAGNAANGEMON
 
-#if P_FAMILY_PANPOUR
-static const union AnimCmd sAnim_Panpour_1[] =
+#if P_FAMILY_JAGAMON
+static const union AnimCmd sAnim_Jagamon_1[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 45),
@@ -6487,7 +6487,7 @@ static const union AnimCmd sAnim_Simipour_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_PANPOUR
+#endif //P_FAMILY_JAGAMON
 
 #if P_FAMILY_MUNNA
 static const union AnimCmd sAnim_Munna_1[] =
@@ -11641,10 +11641,10 @@ SINGLE_ANIMATION(Giromon);
 SINGLE_ANIMATION(Magnaangemon);
 SINGLE_ANIMATION(Magnaangemon_priestmode);
 #endif //P_FAMILY_MAGNAANGEMON
-#if P_FAMILY_PANPOUR
-SINGLE_ANIMATION(Panpour);
+#if P_FAMILY_JAGAMON
+SINGLE_ANIMATION(Jagamon);
 SINGLE_ANIMATION(Simipour);
-#endif //P_FAMILY_PANPOUR
+#endif //P_FAMILY_JAGAMON
 #if P_FAMILY_MUNNA
 SINGLE_ANIMATION(Munna);
 SINGLE_ANIMATION(Musharna);

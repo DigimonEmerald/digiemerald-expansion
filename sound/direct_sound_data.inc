@@ -3424,15 +3424,15 @@ Cry_Magnaangemon_priestmode::
 	.incbin "sound/direct_sound_samples/cries/magnaangemon_priestmode.bin"
 .endif @ P_FAMILY_MAGNAANGEMON
 
-.if P_FAMILY_PANPOUR == TRUE
+.if P_FAMILY_JAGAMON == TRUE
 	.align 2
-Cry_Panpour::
-	.incbin "sound/direct_sound_samples/cries/panpour.bin"
+Cry_Jagamon::
+	.incbin "sound/direct_sound_samples/cries/jagamon.bin"
 
 	.align 2
 Cry_Simipour::
 	.incbin "sound/direct_sound_samples/cries/simipour.bin"
-.endif @ P_FAMILY_PANPOUR
+.endif @ P_FAMILY_JAGAMON
 
 .if P_FAMILY_MUNNA == TRUE
 	.align 2

@@ -21693,8 +21693,8 @@ static const u16 sMagnaangemon_priestmodeTeachableLearnset[] = {
 };
 #endif //P_FAMILY_MAGNAANGEMON
 
-#if P_FAMILY_PANPOUR
-static const u16 sPanpourTeachableLearnset[] = {
+#if P_FAMILY_JAGAMON
+static const u16 sJagamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CUT,
@@ -21760,7 +21760,7 @@ static const u16 sSimipourTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PANPOUR
+#endif //P_FAMILY_JAGAMON
 
 #if P_FAMILY_MUNNA
 static const u16 sMunnaTeachableLearnset[] = {

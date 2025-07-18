@@ -1619,42 +1619,44 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_MAGNAANGEMON
 
-#if P_FAMILY_PANPOUR
-    [SPECIES_PANPOUR] =
+#if P_FAMILY_JAGAMON
+    [SPECIES_JAGAMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 53,
-        .baseDefense   = 48,
-        .baseSpeed     = 64,
-        .baseSpAttack  = 53,
-        .baseSpDefense = 48,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 190,
-        .expYield = 63,
-        .evYield_Speed = 1,
+        .baseHP        = 80,
+        .baseAttack    = 70,
+        .baseDefense   = 135,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_ROCK, TYPE_GRASS),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_Defense = 4,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_GLUTTONY, ABILITY_NONE, ABILITY_TORRENT },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Panpour"),
-        .cryId = CRY_PANPOUR,
-        .natDexNum = NATIONAL_DEX_PANPOUR,
-        .categoryName = _("Spray"),
-        .height = 6,
-        .weight = 135,
+        .abilities = { ABILITY_OVERGROW, ABILITY_STURDY, ABILITY_DRY_SKIN },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Jagamon"),
+        .cryId = CRY_JAGAMON,
+        .natDexNum = NATIONAL_DEX_JAGAMON,
+        .categoryName = _("Potato"),
+        .height = 9,
+        .weight = 341,
         .description = COMPOUND_STRING(
-            "The water stored inside the tuft of its\n"
-            "head is rich in nutrients. It waters\n"
-            "plants using its tail, plants that\n"
-            "receive its water grow large."),
+            "Jagamon are a timid Digimon that likes\n"
+            "to spend its time peacefully sleeping\n"
+            "and potato. What lacks in ferocity, it\n"
+            "more than makes up in defensive power."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Panpour,
+        .frontPic = gMonFrontPic_Jagamon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 10,
         .frontAnimFrames = ANIM_FRAMES(
@@ -1663,29 +1665,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Panpour,
+        .backPic = gMonBackPic_Jagamon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Panpour,
-        .shinyPalette = gMonShinyPalette_Panpour,
-        .iconSprite = gMonIcon_Panpour,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Jagamon,
+        .shinyPalette = gMonShinyPalette_Jagamon,
+        .iconSprite = gMonIcon_Jagamon,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-3, 4, SHADOW_SIZE_S)
-        FOOTPRINT(Panpour)
+        FOOTPRINT(Jagamon)
         OVERWORLD(
-            sPicTable_Panpour,
+            sPicTable_Jagamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Panpour,
-            gShinyOverworldPalette_Panpour
+            gOverworldPalette_Jagamon,
+            gShinyOverworldPalette_Jagamon
         )
-        .levelUpLearnset = sPanpourLevelUpLearnset,
-        .teachableLearnset = sPanpourTeachableLearnset,
-        .eggMoveLearnset = sPanpourEggMoveLearnset,
+        .levelUpLearnset = sJagamonLevelUpLearnset,
+        .teachableLearnset = sJagamonTeachableLearnset,
+        .eggMoveLearnset = sJagamonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_SIMIPOUR}),
     },
 
@@ -1754,7 +1756,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sSimipourLevelUpLearnset,
         .teachableLearnset = sSimipourTeachableLearnset,
     },
-#endif //P_FAMILY_PANPOUR
+#endif //P_FAMILY_JAGAMON
 
 #if P_FAMILY_MUNNA
     [SPECIES_MUNNA] =

@@ -9657,8 +9657,8 @@ static const struct LevelUpMove sMagnaangemon_priestmodeLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_MAGNAANGEMON
 
-#if P_FAMILY_PANPOUR
-static const struct LevelUpMove sPanpourLevelUpLearnset[] = {
+#if P_FAMILY_JAGAMON
+static const struct LevelUpMove sJagamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 4, MOVE_LEER),
     LEVEL_UP_MOVE( 7, MOVE_LICK),
@@ -9684,7 +9684,7 @@ static const struct LevelUpMove sSimipourLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCALD),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_PANPOUR
+#endif //P_FAMILY_JAGAMON
 
 #if P_FAMILY_MUNNA
 static const struct LevelUpMove sMunnaLevelUpLearnset[] = {

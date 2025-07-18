@@ -4041,8 +4041,8 @@ static const u16 sMagnaangemonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_MAGNAANGEMON
 
-#if P_FAMILY_PANPOUR
-static const u16 sPanpourEggMoveLearnset[] = {
+#if P_FAMILY_JAGAMON
+static const u16 sJagamonEggMoveLearnset[] = {
     MOVE_COVET,
     MOVE_LOW_KICK,
     MOVE_TICKLE,
@@ -4056,7 +4056,7 @@ static const u16 sPanpourEggMoveLearnset[] = {
     MOVE_DISARMING_VOICE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PANPOUR
+#endif //P_FAMILY_JAGAMON
 
 #if P_FAMILY_MUNNA
 static const u16 sMunnaEggMoveLearnset[] = {

@@ -16252,20 +16252,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MAGNAANGEMON
 
-#if P_FAMILY_PANPOUR
-    const u32 gMonFrontPic_Panpour[] = INCBIN_U32("graphics/pokemon/panpour/anim_front.4bpp.lz");
-    const u16 gMonPalette_Panpour[] = INCBIN_U16("graphics/pokemon/panpour/normal.gbapal");
-    const u32 gMonBackPic_Panpour[] = INCBIN_U32("graphics/pokemon/panpour/back.4bpp.lz");
-    const u16 gMonShinyPalette_Panpour[] = INCBIN_U16("graphics/pokemon/panpour/shiny.gbapal");
-    const u8 gMonIcon_Panpour[] = INCBIN_U8("graphics/pokemon/panpour/icon.4bpp");
+#if P_FAMILY_JAGAMON
+    const u32 gMonFrontPic_Jagamon[] = INCBIN_U32("graphics/pokemon/jagamon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Jagamon[] = INCBIN_U16("graphics/pokemon/jagamon/normal.gbapal");
+    const u32 gMonBackPic_Jagamon[] = INCBIN_U32("graphics/pokemon/jagamon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Jagamon[] = INCBIN_U16("graphics/pokemon/jagamon/shiny.gbapal");
+    const u8 gMonIcon_Jagamon[] = INCBIN_U8("graphics/pokemon/jagamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Panpour[] = INCBIN_U8("graphics/pokemon/panpour/footprint.1bpp");
+    const u8 gMonFootprint_Jagamon[] = INCBIN_U8("graphics/pokemon/jagamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Panpour[] = INCBIN_COMP("graphics/pokemon/panpour/overworld.4bpp");
+    const u32 gObjectEventPic_Jagamon[] = INCBIN_COMP("graphics/pokemon/jagamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Panpour[] = INCBIN_U16("graphics/pokemon/panpour/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Panpour[] = INCBIN_U16("graphics/pokemon/panpour/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Jagamon[] = INCBIN_U16("graphics/pokemon/jagamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Jagamon[] = INCBIN_U16("graphics/pokemon/jagamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16284,7 +16284,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Simipour[] = INCBIN_U16("graphics/pokemon/simipour/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_PANPOUR
+#endif //P_FAMILY_JAGAMON
 
 #if P_FAMILY_MUNNA
     const u32 gMonFrontPic_Munna[] = INCBIN_U32("graphics/pokemon/munna/anim_front.4bpp.lz");

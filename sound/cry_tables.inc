@@ -1298,10 +1298,10 @@ gCryTable::
 	cry Cry_Magnaangemon
 	cry Cry_Magnaangemon_priestmode
 .endif @ P_FAMILY_MAGNAANGEMON
-.if P_FAMILY_PANPOUR == TRUE
-	cry Cry_Panpour
+.if P_FAMILY_JAGAMON == TRUE
+	cry Cry_Jagamon
 	cry Cry_Simipour
-.endif @ P_FAMILY_PANPOUR
+.endif @ P_FAMILY_JAGAMON
 .if P_FAMILY_MUNNA == TRUE
 	cry Cry_Munna
 	cry Cry_Musharna
@@ -3726,10 +3726,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Magnaangemon
 	cry_reverse Cry_Magnaangemon_priestmode
 .endif @ P_FAMILY_MAGNAANGEMON
-.if P_FAMILY_PANPOUR == TRUE
-	cry_reverse Cry_Panpour
+.if P_FAMILY_JAGAMON == TRUE
+	cry_reverse Cry_Jagamon
 	cry_reverse Cry_Simipour
-.endif @ P_FAMILY_PANPOUR
+.endif @ P_FAMILY_JAGAMON
 .if P_FAMILY_MUNNA == TRUE
 	cry_reverse Cry_Munna
 	cry_reverse Cry_Musharna
