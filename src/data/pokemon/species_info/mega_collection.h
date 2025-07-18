@@ -74,44 +74,47 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sHerculeskabuterimonLevelUpLearnset,
         .teachableLearnset = sHerculeskabuterimonTeachableLearnset,
         .eggMoveLearnset = sHerculeskabuterimonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_QUILLADIN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_MAGNADRAMON}),
     },
 
-    [SPECIES_QUILLADIN] =
+    [SPECIES_MAGNADRAMON] =
     {
-        .baseHP        = 61,
-        .baseAttack    = 78,
-        .baseDefense   = 95,
-        .baseSpeed     = 57,
-        .baseSpAttack  = 56,
-        .baseSpDefense = 58,
-        .types = MON_TYPES(TYPE_GRASS),
-        .catchRate = 45,
-        .expYield = 142,
-        .evYield_Defense = 2,
+        .baseHP        = 135,
+        .baseAttack    = 90,
+        .baseDefense   = 90,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 115,
+        .baseSpDefense = 125,
+        .types = MON_TYPES(TYPE_LIGHT, TYPE_DRAGON),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_HP = 3,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_BULLETPROOF },
-        .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Quilladin"),
-        .cryId = CRY_QUILLADIN,
-        .natDexNum = NATIONAL_DEX_QUILLADIN,
-        .categoryName = _("Spiny Armor"),
-        .height = 7,
-        .weight = 290,
+        .abilities = { ABILITY_UNAWARE, ABILITY_NONE, ABILITY_NONE }, // Great Purge
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("Magnadramon"),
+        .cryId = CRY_MAGNADRAMON,
+        .natDexNum = NATIONAL_DEX_MAGNADRAMON,
+        .categoryName = _("God Beast"),
+        .height = 64,
+        .weight = 1723,
         .description = COMPOUND_STRING(
-            "They strengthen the sturdy shell covering\n"
-            "their bodies by running into one another.\n"
-            "They are very kind and won't start fights,\n"
-            "but will counterattack with sharp quills."),
+            "Very few reports of Magnadramon as\n"
+            "it only appears when a great evil threatens\n"
+            "the Digital World. It lays waste to all\n"
+            "evil when it is called upon."),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Quilladin,
+        .frontPic = gMonFrontPic_Magnadramon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 10,
         .frontAnimFrames = ANIM_FRAMES(
@@ -122,28 +125,28 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_LUNGE_GROW,
-        .backPic = gMonBackPic_Quilladin,
+        .backPic = gMonBackPic_Magnadramon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_GROW,
-        .palette = gMonPalette_Quilladin,
-        .shinyPalette = gMonShinyPalette_Quilladin,
-        .iconSprite = gMonIcon_Quilladin,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Magnadramon,
+        .shinyPalette = gMonShinyPalette_Magnadramon,
+        .iconSprite = gMonIcon_Magnadramon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(2, 4, SHADOW_SIZE_M)
-        FOOTPRINT(Quilladin)
+        FOOTPRINT(Magnadramon)
         OVERWORLD(
-            sPicTable_Quilladin,
+            sPicTable_Magnadramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Quilladin,
-            gShinyOverworldPalette_Quilladin
+            gOverworldPalette_Magnadramon,
+            gShinyOverworldPalette_Magnadramon
         )
-        .levelUpLearnset = sQuilladinLevelUpLearnset,
-        .teachableLearnset = sQuilladinTeachableLearnset,
+        .levelUpLearnset = sMagnadramonLevelUpLearnset,
+        .teachableLearnset = sMagnadramonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CHESNAUGHT}),
     },
 

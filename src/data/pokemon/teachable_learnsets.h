@@ -21661,7 +21661,7 @@ static const u16 sMagnaangemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSimisearTeachableLearnset[] = {
+static const u16 sMagnaangemon_priestmodeTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_CUT,
@@ -26285,7 +26285,7 @@ static const u16 sHerculeskabuterimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sQuilladinTeachableLearnset[] = {
+static const u16 sMagnadramonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,

@@ -12243,7 +12243,7 @@ static const struct LevelUpMove sMagnaangemonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sSimisearLevelUpLearnset[] = {
+static const struct LevelUpMove sMagnaangemon_priestmodeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_LICK),
     LEVEL_UP_MOVE( 1, MOVE_FURY_SWIPES),
@@ -15507,7 +15507,7 @@ static const struct LevelUpMove sHerculeskabuterimonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sQuilladinLevelUpLearnset[] = {
+static const struct LevelUpMove sMagnadramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_NEEDLE_ARM),
     LEVEL_UP_MOVE( 1, MOVE_NEEDLE_ARM),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),

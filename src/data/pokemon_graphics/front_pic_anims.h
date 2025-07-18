@@ -6461,7 +6461,7 @@ static const union AnimCmd sAnim_Magnaangemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Simisear_1[] =
+static const union AnimCmd sAnim_Magnaangemon_priestmode_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -8106,7 +8106,7 @@ static const union AnimCmd sAnim_Herculeskabuterimon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Quilladin_1[] =
+static const union AnimCmd sAnim_Magnadramon_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 10),
@@ -11639,7 +11639,7 @@ SINGLE_ANIMATION(Giromon);
 #endif //P_FAMILY_EXTYRANNOMON
 #if P_FAMILY_MAGNAANGEMON
 SINGLE_ANIMATION(Magnaangemon);
-SINGLE_ANIMATION(Simisear);
+SINGLE_ANIMATION(Magnaangemon_priestmode);
 #endif //P_FAMILY_MAGNAANGEMON
 #if P_FAMILY_PANPOUR
 SINGLE_ANIMATION(Panpour);
@@ -11968,7 +11968,7 @@ SINGLE_ANIMATION(Genesect);
 #endif //P_FAMILY_GENESECT
 #if P_FAMILY_HERCULESKABUTERIMON
 SINGLE_ANIMATION(Herculeskabuterimon);
-SINGLE_ANIMATION(Quilladin);
+SINGLE_ANIMATION(Magnadramon);
 SINGLE_ANIMATION(Chesnaught);
 #endif //P_FAMILY_HERCULESKABUTERIMON
 #if P_FAMILY_FENNEKIN

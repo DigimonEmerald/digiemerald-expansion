@@ -16235,19 +16235,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Simisear[] = INCBIN_U32("graphics/pokemon/simisear/anim_front.4bpp.lz");
-    const u16 gMonPalette_Simisear[] = INCBIN_U16("graphics/pokemon/simisear/normal.gbapal");
-    const u32 gMonBackPic_Simisear[] = INCBIN_U32("graphics/pokemon/simisear/back.4bpp.lz");
-    const u16 gMonShinyPalette_Simisear[] = INCBIN_U16("graphics/pokemon/simisear/shiny.gbapal");
-    const u8 gMonIcon_Simisear[] = INCBIN_U8("graphics/pokemon/simisear/icon.4bpp");
+    const u32 gMonFrontPic_Magnaangemon_priestmode[] = INCBIN_U32("graphics/pokemon/magnaangemon_priestmode/anim_front.4bpp.lz");
+    const u16 gMonPalette_Magnaangemon_priestmode[] = INCBIN_U16("graphics/pokemon/magnaangemon_priestmode/normal.gbapal");
+    const u32 gMonBackPic_Magnaangemon_priestmode[] = INCBIN_U32("graphics/pokemon/magnaangemon_priestmode/back.4bpp.lz");
+    const u16 gMonShinyPalette_Magnaangemon_priestmode[] = INCBIN_U16("graphics/pokemon/magnaangemon_priestmode/shiny.gbapal");
+    const u8 gMonIcon_Magnaangemon_priestmode[] = INCBIN_U8("graphics/pokemon/magnaangemon_priestmode/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Simisear[] = INCBIN_U8("graphics/pokemon/simisear/footprint.1bpp");
+    const u8 gMonFootprint_Magnaangemon_priestmode[] = INCBIN_U8("graphics/pokemon/magnaangemon_priestmode/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Simisear[] = INCBIN_COMP("graphics/pokemon/simisear/overworld.4bpp");
+    const u32 gObjectEventPic_Magnaangemon_priestmode[] = INCBIN_COMP("graphics/pokemon/magnaangemon_priestmode/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Simisear[] = INCBIN_U16("graphics/pokemon/simisear/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Simisear[] = INCBIN_U16("graphics/pokemon/simisear/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Magnaangemon_priestmode[] = INCBIN_U16("graphics/pokemon/magnaangemon_priestmode/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Magnaangemon_priestmode[] = INCBIN_U16("graphics/pokemon/magnaangemon_priestmode/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MAGNAANGEMON
@@ -19065,19 +19065,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Quilladin[] = INCBIN_U32("graphics/pokemon/quilladin/anim_front.4bpp.lz");
-    const u16 gMonPalette_Quilladin[] = INCBIN_U16("graphics/pokemon/quilladin/normal.gbapal");
-    const u32 gMonBackPic_Quilladin[] = INCBIN_U32("graphics/pokemon/quilladin/back.4bpp.lz");
-    const u16 gMonShinyPalette_Quilladin[] = INCBIN_U16("graphics/pokemon/quilladin/shiny.gbapal");
-    const u8 gMonIcon_Quilladin[] = INCBIN_U8("graphics/pokemon/quilladin/icon.4bpp");
+    const u32 gMonFrontPic_Magnadramon[] = INCBIN_U32("graphics/pokemon/magnadramon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Magnadramon[] = INCBIN_U16("graphics/pokemon/magnadramon/normal.gbapal");
+    const u32 gMonBackPic_Magnadramon[] = INCBIN_U32("graphics/pokemon/magnadramon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Magnadramon[] = INCBIN_U16("graphics/pokemon/magnadramon/shiny.gbapal");
+    const u8 gMonIcon_Magnadramon[] = INCBIN_U8("graphics/pokemon/magnadramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Quilladin[] = INCBIN_U8("graphics/pokemon/quilladin/footprint.1bpp");
+    const u8 gMonFootprint_Magnadramon[] = INCBIN_U8("graphics/pokemon/magnadramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Quilladin[] = INCBIN_COMP("graphics/pokemon/quilladin/overworld.4bpp");
+    const u32 gObjectEventPic_Magnadramon[] = INCBIN_COMP("graphics/pokemon/magnadramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Quilladin[] = INCBIN_U16("graphics/pokemon/quilladin/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Quilladin[] = INCBIN_U16("graphics/pokemon/quilladin/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Magnadramon[] = INCBIN_U16("graphics/pokemon/magnadramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Magnadramon[] = INCBIN_U16("graphics/pokemon/magnadramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

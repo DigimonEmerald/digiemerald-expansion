@@ -2790,7 +2790,7 @@ $(POKEMONGFXDIR)/giromon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/magnaangemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/simisear/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/magnaangemon_priestmode/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/panpour/overworld.4bpp: %.4bpp: %.png
@@ -3213,7 +3213,7 @@ $(POKEMONGFXDIR)/genesect/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/herculeskabuterimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/quilladin/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/magnadramon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/chesnaught/overworld.4bpp: %.4bpp: %.png

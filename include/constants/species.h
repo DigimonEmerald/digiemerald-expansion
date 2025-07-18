@@ -531,7 +531,7 @@
 #define SPECIES_EXTYRANNOMON                                 511
 #define SPECIES_GIROMON                                512
 #define SPECIES_MAGNAANGEMON                                 513
-#define SPECIES_SIMISEAR                                514
+#define SPECIES_MAGNAANGEMON_PRIESTMODE                                514
 #define SPECIES_PANPOUR                                 515
 #define SPECIES_SIMIPOUR                                516
 #define SPECIES_MUNNA                                   517
@@ -677,7 +677,7 @@
 #define SPECIES_MELOETTA_ARIA                           648
 #define SPECIES_GENESECT                                649
 #define SPECIES_HERCULESKABUTERIMON                                 650
-#define SPECIES_QUILLADIN                               651
+#define SPECIES_MAGNADRAMON                               651
 #define SPECIES_CHESNAUGHT                              652
 #define SPECIES_FENNEKIN                                653
 #define SPECIES_BRAIXEN                                 654

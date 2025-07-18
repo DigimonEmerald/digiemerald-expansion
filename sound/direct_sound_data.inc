@@ -3420,8 +3420,8 @@ Cry_Magnaangemon::
 	.incbin "sound/direct_sound_samples/cries/magnaangemon.bin"
 
 	.align 2
-Cry_Simisear::
-	.incbin "sound/direct_sound_samples/cries/simisear.bin"
+Cry_Magnaangemon_priestmode::
+	.incbin "sound/direct_sound_samples/cries/magnaangemon_priestmode.bin"
 .endif @ P_FAMILY_MAGNAANGEMON
 
 .if P_FAMILY_PANPOUR == TRUE
@@ -4165,8 +4165,8 @@ Cry_Herculeskabuterimon::
 	.incbin "sound/direct_sound_samples/cries/herculeskabuterimon.bin"
 
 	.align 2
-Cry_Quilladin::
-	.incbin "sound/direct_sound_samples/cries/quilladin.bin"
+Cry_Magnadramon::
+	.incbin "sound/direct_sound_samples/cries/magnadramon.bin"
 
 	.align 2
 Cry_Chesnaught::

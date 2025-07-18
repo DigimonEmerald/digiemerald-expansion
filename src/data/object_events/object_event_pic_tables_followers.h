@@ -3777,8 +3777,8 @@ static const struct SpriteFrameImage sPicTable_Giromon[] = {
 static const struct SpriteFrameImage sPicTable_Magnaangemon[] = {
     overworld_ascending_frames(gObjectEventPic_Magnaangemon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Simisear[] = {
-    overworld_ascending_frames(gObjectEventPic_Simisear, 4, 4),
+static const struct SpriteFrameImage sPicTable_Magnaangemon_priestmode[] = {
+    overworld_ascending_frames(gObjectEventPic_Magnaangemon_priestmode, 4, 4),
 };
 #endif //P_FAMILY_MAGNAANGEMON
 
@@ -4560,8 +4560,8 @@ static const struct SpriteFrameImage sPicTable_Genesect[] = {
 static const struct SpriteFrameImage sPicTable_Herculeskabuterimon[] = {
     overworld_ascending_frames(gObjectEventPic_Herculeskabuterimon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Quilladin[] = {
-    overworld_ascending_frames(gObjectEventPic_Quilladin, 4, 4),
+static const struct SpriteFrameImage sPicTable_Magnadramon[] = {
+    overworld_ascending_frames(gObjectEventPic_Magnadramon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Chesnaught[] = {
     overworld_ascending_frames(gObjectEventPic_Chesnaught, 4, 4),

@@ -1542,45 +1542,48 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sMagnaangemonLevelUpLearnset,
         .teachableLearnset = sMagnaangemonTeachableLearnset,
         .eggMoveLearnset = sMagnaangemonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_SIMISEAR}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_MAGNAANGEMON_PRIESTMODE}),
     },
 
-    [SPECIES_SIMISEAR] =
+    [SPECIES_MAGNAANGEMON_PRIESTMODE] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 98,
-        .baseDefense   = 63,
-        .baseSpeed     = 101,
-        .baseSpAttack  = 98,
-        .baseSpDefense = 63,
-        .types = MON_TYPES(TYPE_FIRE),
-        .catchRate = 75,
-        .expYield = 174,
-        .evYield_Speed = 2,
+        .baseHP        = 110,
+        .baseAttack    = 65,
+        .baseDefense   = 110,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 110,
+        .types = MON_TYPES(TYPE_LIGHT),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_HP = 2,
+        .evYield_Defense = 2,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_GLUTTONY, ABILITY_NONE, ABILITY_BLAZE },
-        .bodyColor = BODY_COLOR_RED,
+        .abilities = { ABILITY_EPIPHANY, ABILITY_JUSTIFIED, ABILITY_HEALER },
+        .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
-        .speciesName = _("Simisear"),
-        .cryId = CRY_SIMISEAR,
-        .natDexNum = NATIONAL_DEX_SIMISEAR,
-        .categoryName = _("Ember"),
-        .height = 10,
-        .weight = 280,
+        .speciesName = _("MagnaAngemon"),
+        .cryId = CRY_MAGNAANGEMON_PRIESTMODE,
+        .natDexNum = NATIONAL_DEX_MAGNAANGEMON_PRIESTMODE,
+        .categoryName = _("Priest"),
+        .height = 32,
+        .weight = 812,
         .description = COMPOUND_STRING(
-            "It loves sweets because they become\n"
-            "energy for the fire burning inside its\n"
-            "body. It scatters embers from its head\n"
-            "and tail to sear its opponents."),
+            "When acting as the spokesperson of\n"
+            "light, this is the form that MagneAngemon\n"
+            "takes on. It is far more gentle\n"
+            "when it is in Priest mode"),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Simisear,
+        .frontPic = gMonFrontPic_Magnaangemon_priestmode,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 6,
         .frontAnimFrames = ANIM_FRAMES(
@@ -1591,28 +1594,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_SWING_CONCAVE_FAST,
-        .backPic = gMonBackPic_Simisear,
+        .backPic = gMonBackPic_Magnaangemon_priestmode,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Simisear,
-        .shinyPalette = gMonShinyPalette_Simisear,
-        .iconSprite = gMonIcon_Simisear,
+        .palette = gMonPalette_Magnaangemon_priestmode,
+        .shinyPalette = gMonShinyPalette_Magnaangemon_priestmode,
+        .iconSprite = gMonIcon_Magnaangemon_priestmode,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 8, SHADOW_SIZE_M)
-        FOOTPRINT(Simisear)
+        FOOTPRINT(Magnaangemon_priestmode)
         OVERWORLD(
-            sPicTable_Simisear,
+            sPicTable_Magnaangemon_priestmode,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Simisear,
-            gShinyOverworldPalette_Simisear
+            gOverworldPalette_Magnaangemon_priestmode,
+            gShinyOverworldPalette_Magnaangemon_priestmode
         )
-        .levelUpLearnset = sSimisearLevelUpLearnset,
-        .teachableLearnset = sSimisearTeachableLearnset,
+        .levelUpLearnset = sMagnaangemon_priestmodeLevelUpLearnset,
+        .teachableLearnset = sMagnaangemon_priestmodeTeachableLearnset,
     },
 #endif //P_FAMILY_MAGNAANGEMON
 

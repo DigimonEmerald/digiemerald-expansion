@@ -434,9 +434,11 @@ Etemon - Liepard
 ExTyrannomon - Pansage
 Giromon - Simisage
 MagnaAngemon - Pansear
+MagnaAngemon Priest Mode - Simisear
 
 Mega List
 
 HerculesKabuterimon - Chespin
+Holydramon - Quilladin
 
 SPECIES NAME LENGTH MAX = 13

@@ -1296,7 +1296,7 @@ gCryTable::
 .endif @ P_FAMILY_EXTYRANNOMON
 .if P_FAMILY_MAGNAANGEMON == TRUE
 	cry Cry_Magnaangemon
-	cry Cry_Simisear
+	cry Cry_Magnaangemon_priestmode
 .endif @ P_FAMILY_MAGNAANGEMON
 .if P_FAMILY_PANPOUR == TRUE
 	cry Cry_Panpour
@@ -1600,7 +1600,7 @@ gCryTable::
 .endif @ P_FAMILY_GENESECT
 .if P_FAMILY_HERCULESKABUTERIMON == TRUE
 	cry Cry_Herculeskabuterimon
-	cry Cry_Quilladin
+	cry Cry_Magnadramon
 	cry Cry_Chesnaught
 .endif @ P_FAMILY_HERCULESKABUTERIMON
 .if P_FAMILY_FENNEKIN == TRUE
@@ -3724,7 +3724,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_EXTYRANNOMON
 .if P_FAMILY_MAGNAANGEMON == TRUE
 	cry_reverse Cry_Magnaangemon
-	cry_reverse Cry_Simisear
+	cry_reverse Cry_Magnaangemon_priestmode
 .endif @ P_FAMILY_MAGNAANGEMON
 .if P_FAMILY_PANPOUR == TRUE
 	cry_reverse Cry_Panpour
@@ -4028,7 +4028,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_GENESECT
 .if P_FAMILY_HERCULESKABUTERIMON == TRUE
 	cry_reverse Cry_Herculeskabuterimon
-	cry_reverse Cry_Quilladin
+	cry_reverse Cry_Magnadramon
 	cry_reverse Cry_Chesnaught
 .endif @ P_FAMILY_HERCULESKABUTERIMON
 .if P_FAMILY_FENNEKIN == TRUE
