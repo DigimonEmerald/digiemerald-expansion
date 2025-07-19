@@ -554,8 +554,8 @@
 #define P_FAMILY_MAGNAANGEMON                 TRUE
 #undef P_FAMILY_JAGAMON
 #define P_FAMILY_JAGAMON                 TRUE
-#undef P_FAMILY_MUNNA
-#define P_FAMILY_MUNNA                   TRUE
+#undef P_FAMILY_MAMMOTHMON
+#define P_FAMILY_MAMMOTHMON                   TRUE
 #undef P_FAMILY_PIDOVE
 #define P_FAMILY_PIDOVE                  TRUE
 #undef P_FAMILY_BLITZLE

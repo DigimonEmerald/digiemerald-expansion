@@ -1302,10 +1302,10 @@ gCryTable::
 	cry Cry_Jagamon
 	cry Cry_Ladydevimon
 .endif @ P_FAMILY_JAGAMON
-.if P_FAMILY_MUNNA == TRUE
-	cry Cry_Munna
+.if P_FAMILY_MAMMOTHMON == TRUE
+	cry Cry_Mammothmon
 	cry Cry_Musharna
-.endif @ P_FAMILY_MUNNA
+.endif @ P_FAMILY_MAMMOTHMON
 .if P_FAMILY_PIDOVE == TRUE
 	cry Cry_Pidove
 	cry Cry_Tranquill
@@ -3730,10 +3730,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Jagamon
 	cry_reverse Cry_Ladydevimon
 .endif @ P_FAMILY_JAGAMON
-.if P_FAMILY_MUNNA == TRUE
-	cry_reverse Cry_Munna
+.if P_FAMILY_MAMMOTHMON == TRUE
+	cry_reverse Cry_Mammothmon
 	cry_reverse Cry_Musharna
-.endif @ P_FAMILY_MUNNA
+.endif @ P_FAMILY_MAMMOTHMON
 .if P_FAMILY_PIDOVE == TRUE
 	cry_reverse Cry_Pidove
 	cry_reverse Cry_Tranquill

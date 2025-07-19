@@ -314,7 +314,7 @@
 #define P_FAMILY_EXTYRANNOMON                 P_GEN_5_POKEMON
 #define P_FAMILY_MAGNAANGEMON                 P_GEN_5_POKEMON
 #define P_FAMILY_JAGAMON                 P_GEN_5_POKEMON
-#define P_FAMILY_MUNNA                   P_GEN_5_POKEMON
+#define P_FAMILY_MAMMOTHMON                   P_GEN_5_POKEMON
 #define P_FAMILY_PIDOVE                  P_GEN_5_POKEMON
 #define P_FAMILY_BLITZLE                 P_GEN_5_POKEMON
 #define P_FAMILY_ROGGENROLA              P_GEN_5_POKEMON

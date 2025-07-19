@@ -4058,8 +4058,8 @@ static const u16 sJagamonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_JAGAMON
 
-#if P_FAMILY_MUNNA
-static const u16 sMunnaEggMoveLearnset[] = {
+#if P_FAMILY_MAMMOTHMON
+static const u16 sMammothmonEggMoveLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_SECRET_POWER,
     MOVE_BARRIER,
@@ -4072,7 +4072,7 @@ static const u16 sMunnaEggMoveLearnset[] = {
     MOVE_HEALING_WISH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MUNNA
+#endif //P_FAMILY_MAMMOTHMON
 
 #if P_FAMILY_PIDOVE
 static const u16 sPidoveEggMoveLearnset[] = {

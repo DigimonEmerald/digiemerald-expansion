@@ -21762,8 +21762,8 @@ static const u16 sLadydevimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_JAGAMON
 
-#if P_FAMILY_MUNNA
-static const u16 sMunnaTeachableLearnset[] = {
+#if P_FAMILY_MAMMOTHMON
+static const u16 sMammothmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DEFENSE_CURL,
@@ -21827,7 +21827,7 @@ static const u16 sMusharnaTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MUNNA
+#endif //P_FAMILY_MAMMOTHMON
 
 #if P_FAMILY_PIDOVE
 static const u16 sPidoveTeachableLearnset[] = {

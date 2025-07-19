@@ -1759,42 +1759,44 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_JAGAMON
 
-#if P_FAMILY_MUNNA
-    [SPECIES_MUNNA] =
+#if P_FAMILY_MAMMOTHMON
+    [SPECIES_MAMMOTHMON] =
     {
-        .baseHP        = 76,
-        .baseAttack    = 25,
-        .baseDefense   = 45,
-        .baseSpeed     = 24,
-        .baseSpAttack  = 67,
-        .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_PSYCHIC),
-        .catchRate = 190,
-        .expYield = 58,
-        .evYield_HP = 1,
+        .baseHP        = 115,
+        .baseAttack    = 100,
+        .baseDefense   = 85,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_ICE, TYPE_GROUND),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_HP = 3,
+        .evYield_Attack = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 10,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_FOREWARN, ABILITY_SYNCHRONIZE, ABILITY_TELEPATHY },
-        .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Munna"),
-        .cryId = CRY_MUNNA,
-        .natDexNum = NATIONAL_DEX_MUNNA,
-        .categoryName = _("Dream Eater"),
-        .height = 6,
-        .weight = 233,
+        .abilities = { ABILITY_FLUFFY, ABILITY_OVERCOAT, ABILITY_SHEER_FORCE },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Mammothmon"),
+        .cryId = CRY_MAMMOTHMON,
+        .natDexNum = NATIONAL_DEX_MAMMOTHMON,
+        .categoryName = _("Mammoth"),
+        .height = 94,
+        .weight = 4451,
         .description = COMPOUND_STRING(
-            "This Pokémon appears before people\n"
-            "and Pokémon who are having nightmares\n"
-            "and eats those dreams. Munna always\n"
-            "float in the air. "),
+            "The crest engraved onto Mammothmons head\n"
+            "is an ancient symbol of wisdom granting\n"
+            "it the power of clairvoyance. Its thick\n"
+            "fur makes it very weak to heat. "),
         .pokemonScale = 422,
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Munna,
+        .frontPic = gMonFrontPic_Mammothmon,
         .frontPicSize = MON_COORDS_SIZE(32, 32),
         .frontPicYOffset = 16,
         .frontAnimFrames = ANIM_FRAMES(
@@ -1809,29 +1811,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ),
         .frontAnimId = ANIM_RISING_WOBBLE,
         .enemyMonElevation = 7,
-        .backPic = gMonBackPic_Munna,
+        .backPic = gMonBackPic_Mammothmon,
         .backPicSize = MON_COORDS_SIZE(48, 32),
         .backPicYOffset = 16,
         .backAnimId = BACK_ANIM_SHRINK_GROW,
-        .palette = gMonPalette_Munna,
-        .shinyPalette = gMonShinyPalette_Munna,
-        .iconSprite = gMonIcon_Munna,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Mammothmon,
+        .shinyPalette = gMonShinyPalette_Mammothmon,
+        .iconSprite = gMonIcon_Mammothmon,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 2, SHADOW_SIZE_S)
-        FOOTPRINT(Munna)
+        FOOTPRINT(Mammothmon)
         OVERWORLD(
-            sPicTable_Munna,
+            sPicTable_Mammothmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Munna,
-            gShinyOverworldPalette_Munna
+            gOverworldPalette_Mammothmon,
+            gShinyOverworldPalette_Mammothmon
         )
-        .levelUpLearnset = sMunnaLevelUpLearnset,
-        .teachableLearnset = sMunnaTeachableLearnset,
-        .eggMoveLearnset = sMunnaEggMoveLearnset,
+        .levelUpLearnset = sMammothmonLevelUpLearnset,
+        .teachableLearnset = sMammothmonTeachableLearnset,
+        .eggMoveLearnset = sMammothmonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_MUSHARNA}),
     },
 
@@ -1904,7 +1906,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sMusharnaLevelUpLearnset,
         .teachableLearnset = sMusharnaTeachableLearnset,
     },
-#endif //P_FAMILY_MUNNA
+#endif //P_FAMILY_MAMMOTHMON
 
 #if P_FAMILY_PIDOVE
     [SPECIES_PIDOVE] =

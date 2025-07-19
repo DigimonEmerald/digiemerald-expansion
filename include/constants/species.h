@@ -534,7 +534,7 @@
 #define SPECIES_MAGNAANGEMON_PRIESTMODE                                514
 #define SPECIES_JAGAMON                                 515
 #define SPECIES_LADYDEVIMON                                516
-#define SPECIES_MUNNA                                   517
+#define SPECIES_MAMMOTHMON                                   517
 #define SPECIES_MUSHARNA                                518
 #define SPECIES_PIDOVE                                  519
 #define SPECIES_TRANQUILL                               520

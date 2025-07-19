@@ -12260,8 +12260,8 @@ static const struct LevelUpMove sLadydevimonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_JAGAMON
 
-#if P_FAMILY_MUNNA
-static const struct LevelUpMove sMunnaLevelUpLearnset[] = {
+#if P_FAMILY_MAMMOTHMON
+static const struct LevelUpMove sMammothmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_STORED_POWER),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 4, MOVE_HYPNOSIS),
@@ -12299,7 +12299,7 @@ static const struct LevelUpMove sMusharnaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PSYBEAM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_MUNNA
+#endif //P_FAMILY_MAMMOTHMON
 
 #if P_FAMILY_PIDOVE
 static const struct LevelUpMove sPidoveLevelUpLearnset[] = {

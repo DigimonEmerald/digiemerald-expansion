@@ -3434,15 +3434,15 @@ Cry_Ladydevimon::
 	.incbin "sound/direct_sound_samples/cries/ladydevimon.bin"
 .endif @ P_FAMILY_JAGAMON
 
-.if P_FAMILY_MUNNA == TRUE
+.if P_FAMILY_MAMMOTHMON == TRUE
 	.align 2
-Cry_Munna::
-	.incbin "sound/direct_sound_samples/cries/munna.bin"
+Cry_Mammothmon::
+	.incbin "sound/direct_sound_samples/cries/mammothmon.bin"
 
 	.align 2
 Cry_Musharna::
 	.incbin "sound/direct_sound_samples/cries/musharna.bin"
-.endif @ P_FAMILY_MUNNA
+.endif @ P_FAMILY_MAMMOTHMON
 
 .if P_FAMILY_PIDOVE == TRUE
 	.align 2

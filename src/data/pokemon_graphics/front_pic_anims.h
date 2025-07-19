@@ -6489,8 +6489,8 @@ static const union AnimCmd sAnim_Ladydevimon_1[] =
 };
 #endif //P_FAMILY_JAGAMON
 
-#if P_FAMILY_MUNNA
-static const union AnimCmd sAnim_Munna_1[] =
+#if P_FAMILY_MAMMOTHMON
+static const union AnimCmd sAnim_Mammothmon_1[] =
 {
     ANIMCMD_FRAME(1, 12),
     ANIMCMD_FRAME(0, 12),
@@ -6512,7 +6512,7 @@ static const union AnimCmd sAnim_Musharna_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_MUNNA
+#endif //P_FAMILY_MAMMOTHMON
 
 #if P_FAMILY_PIDOVE
 static const union AnimCmd sAnim_Pidove_1[] =
@@ -11645,10 +11645,10 @@ SINGLE_ANIMATION(Magnaangemon_priestmode);
 SINGLE_ANIMATION(Jagamon);
 SINGLE_ANIMATION(Ladydevimon);
 #endif //P_FAMILY_JAGAMON
-#if P_FAMILY_MUNNA
-SINGLE_ANIMATION(Munna);
+#if P_FAMILY_MAMMOTHMON
+SINGLE_ANIMATION(Mammothmon);
 SINGLE_ANIMATION(Musharna);
-#endif //P_FAMILY_MUNNA
+#endif //P_FAMILY_MAMMOTHMON
 #if P_FAMILY_PIDOVE
 SINGLE_ANIMATION(Pidove);
 SINGLE_ANIMATION(Tranquill);

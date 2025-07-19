@@ -16286,20 +16286,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_JAGAMON
 
-#if P_FAMILY_MUNNA
-    const u32 gMonFrontPic_Munna[] = INCBIN_U32("graphics/pokemon/munna/anim_front.4bpp.lz");
-    const u16 gMonPalette_Munna[] = INCBIN_U16("graphics/pokemon/munna/normal.gbapal");
-    const u32 gMonBackPic_Munna[] = INCBIN_U32("graphics/pokemon/munna/back.4bpp.lz");
-    const u16 gMonShinyPalette_Munna[] = INCBIN_U16("graphics/pokemon/munna/shiny.gbapal");
-    const u8 gMonIcon_Munna[] = INCBIN_U8("graphics/pokemon/munna/icon.4bpp");
+#if P_FAMILY_MAMMOTHMON
+    const u32 gMonFrontPic_Mammothmon[] = INCBIN_U32("graphics/pokemon/mammothmon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Mammothmon[] = INCBIN_U16("graphics/pokemon/mammothmon/normal.gbapal");
+    const u32 gMonBackPic_Mammothmon[] = INCBIN_U32("graphics/pokemon/mammothmon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Mammothmon[] = INCBIN_U16("graphics/pokemon/mammothmon/shiny.gbapal");
+    const u8 gMonIcon_Mammothmon[] = INCBIN_U8("graphics/pokemon/mammothmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Munna[] = INCBIN_U8("graphics/pokemon/munna/footprint.1bpp");
+    const u8 gMonFootprint_Mammothmon[] = INCBIN_U8("graphics/pokemon/mammothmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Munna[] = INCBIN_COMP("graphics/pokemon/munna/overworld.4bpp");
+    const u32 gObjectEventPic_Mammothmon[] = INCBIN_COMP("graphics/pokemon/mammothmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Munna[] = INCBIN_U16("graphics/pokemon/munna/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Munna[] = INCBIN_U16("graphics/pokemon/munna/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Mammothmon[] = INCBIN_U16("graphics/pokemon/mammothmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Mammothmon[] = INCBIN_U16("graphics/pokemon/mammothmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16318,7 +16318,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Musharna[] = INCBIN_U16("graphics/pokemon/musharna/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_MUNNA
+#endif //P_FAMILY_MAMMOTHMON
 
 #if P_FAMILY_PIDOVE
     const u32 gMonFrontPic_Pidove[] = INCBIN_U32("graphics/pokemon/pidove/anim_front.4bpp.lz");
