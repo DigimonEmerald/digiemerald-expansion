@@ -3508,8 +3508,8 @@ static const u16 sGorillamonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_GORILLAMON
 
-#if P_FAMILY_SHINX
-static const u16 sShinxEggMoveLearnset[] = {
+#if P_FAMILY_SHADRAMON
+static const u16 sShadramonEggMoveLearnset[] = {
     MOVE_ICE_FANG,
     MOVE_FIRE_FANG,
     MOVE_THUNDER_FANG,
@@ -3526,7 +3526,7 @@ static const u16 sShinxEggMoveLearnset[] = {
     MOVE_FAKE_TEARS,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SHINX
+#endif //P_FAMILY_SHADRAMON
 
 #if P_FAMILY_CRANIDOS
 static const u16 sCranidosEggMoveLearnset[] = {

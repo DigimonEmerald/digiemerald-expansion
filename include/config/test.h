@@ -458,8 +458,8 @@
 #define P_FAMILY_GORILLAMON                  TRUE
 #undef P_FAMILY_KUWAGAMON
 #define P_FAMILY_KUWAGAMON               TRUE
-#undef P_FAMILY_SHINX
-#define P_FAMILY_SHINX                   TRUE
+#undef P_FAMILY_SHADRAMON
+#define P_FAMILY_SHADRAMON                   TRUE
 #undef P_FAMILY_CRANIDOS
 #define P_FAMILY_CRANIDOS                TRUE
 #undef P_FAMILY_SHIELDON

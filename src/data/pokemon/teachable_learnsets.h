@@ -18636,8 +18636,8 @@ static const u16 sLeomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_KUWAGAMON
 
-#if P_FAMILY_SHINX
-static const u16 sShinxTeachableLearnset[] = {
+#if P_FAMILY_SHADRAMON
+static const u16 sShadramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
@@ -18728,7 +18728,7 @@ static const u16 sLuxrayTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SHINX
+#endif //P_FAMILY_SHADRAMON
 
 #if P_FAMILY_CRANIDOS
 static const u16 sCranidosTeachableLearnset[] = {

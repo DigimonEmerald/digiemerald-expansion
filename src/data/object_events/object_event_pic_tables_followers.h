@@ -3174,13 +3174,13 @@ static const struct SpriteFrameImage sPicTable_LeomonF[] = {
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_KUWAGAMON
 
-#if P_FAMILY_SHINX
-static const struct SpriteFrameImage sPicTable_Shinx[] = {
-    overworld_ascending_frames(gObjectEventPic_Shinx, 4, 4),
+#if P_FAMILY_SHADRAMON
+static const struct SpriteFrameImage sPicTable_Shadramon[] = {
+    overworld_ascending_frames(gObjectEventPic_Shadramon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_ShinxF[] = {
-    overworld_ascending_frames(gObjectEventPic_ShinxF, 4, 4),
+static const struct SpriteFrameImage sPicTable_ShadramonF[] = {
+    overworld_ascending_frames(gObjectEventPic_ShadramonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 static const struct SpriteFrameImage sPicTable_Luxio[] = {
@@ -3199,7 +3199,7 @@ static const struct SpriteFrameImage sPicTable_LuxrayF[] = {
     overworld_ascending_frames(gObjectEventPic_LuxrayF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_SHINX
+#endif //P_FAMILY_SHADRAMON
 
 #if P_FAMILY_CRANIDOS
 static const struct SpriteFrameImage sPicTable_Cranidos[] = {

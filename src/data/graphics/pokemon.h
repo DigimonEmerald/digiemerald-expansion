@@ -14316,28 +14316,28 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_KUWAGAMON
 
-#if P_FAMILY_SHINX
-    const u32 gMonFrontPic_Shinx[] = INCBIN_U32("graphics/pokemon/shinx/anim_front.4bpp.lz");
-    const u16 gMonPalette_Shinx[] = INCBIN_U16("graphics/pokemon/shinx/normal.gbapal");
-    const u32 gMonBackPic_Shinx[] = INCBIN_U32("graphics/pokemon/shinx/back.4bpp.lz");
-    const u16 gMonShinyPalette_Shinx[] = INCBIN_U16("graphics/pokemon/shinx/shiny.gbapal");
-    const u8 gMonIcon_Shinx[] = INCBIN_U8("graphics/pokemon/shinx/icon.4bpp");
+#if P_FAMILY_SHADRAMON
+    const u32 gMonFrontPic_Shadramon[] = INCBIN_U32("graphics/pokemon/shadramon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Shadramon[] = INCBIN_U16("graphics/pokemon/shadramon/normal.gbapal");
+    const u32 gMonBackPic_Shadramon[] = INCBIN_U32("graphics/pokemon/shadramon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Shadramon[] = INCBIN_U16("graphics/pokemon/shadramon/shiny.gbapal");
+    const u8 gMonIcon_Shadramon[] = INCBIN_U8("graphics/pokemon/shadramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Shinx[] = INCBIN_U8("graphics/pokemon/shinx/footprint.1bpp");
+    const u8 gMonFootprint_Shadramon[] = INCBIN_U8("graphics/pokemon/shadramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Shinx[] = INCBIN_COMP("graphics/pokemon/shinx/overworld.4bpp");
+    const u32 gObjectEventPic_Shadramon[] = INCBIN_COMP("graphics/pokemon/shadramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Shinx[] = INCBIN_U16("graphics/pokemon/shinx/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Shinx[] = INCBIN_U16("graphics/pokemon/shinx/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Shadramon[] = INCBIN_U16("graphics/pokemon/shadramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Shadramon[] = INCBIN_U16("graphics/pokemon/shadramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_ShinxF[] = INCBIN_U32("graphics/pokemon/shinx/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_ShinxF[] = INCBIN_U32("graphics/pokemon/shinx/backf.4bpp.lz");
+    const u32 gMonFrontPic_ShadramonF[] = INCBIN_U32("graphics/pokemon/shadramon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_ShadramonF[] = INCBIN_U32("graphics/pokemon/shadramon/backf.4bpp.lz");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_ShinxF[] = INCBIN_COMP("graphics/pokemon/shinx/overworldf.4bpp");
+    const u32 gObjectEventPic_ShadramonF[] = INCBIN_COMP("graphics/pokemon/shadramon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
@@ -14388,7 +14388,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gObjectEventPic_LuxrayF[] = INCBIN_COMP("graphics/pokemon/luxray/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_SHINX
+#endif //P_FAMILY_SHADRAMON
 
 #if P_FAMILY_CRANIDOS
     const u32 gMonFrontPic_Cranidos[] = INCBIN_U32("graphics/pokemon/cranidos/anim_front.4bpp.lz");

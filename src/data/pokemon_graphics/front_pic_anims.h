@@ -5430,8 +5430,8 @@ static const union AnimCmd sAnim_Leomon_1[] =
 };
 #endif //P_FAMILY_KUWAGAMON
 
-#if P_FAMILY_SHINX
-static const union AnimCmd sAnim_Shinx_1[] =
+#if P_FAMILY_SHADRAMON
+static const union AnimCmd sAnim_Shadramon_1[] =
 {
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_FRAME(1, 10),
@@ -5455,7 +5455,7 @@ static const union AnimCmd sAnim_Luxray_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SHINX
+#endif //P_FAMILY_SHADRAMON
 
 #if P_FAMILY_CRANIDOS
 static const union AnimCmd sAnim_Cranidos_1[] =
@@ -11439,11 +11439,11 @@ SINGLE_ANIMATION(Ikkakumon);
 SINGLE_ANIMATION(Kuwagamon);
 SINGLE_ANIMATION(Leomon);
 #endif //P_FAMILY_KUWAGAMON
-#if P_FAMILY_SHINX
-SINGLE_ANIMATION(Shinx);
+#if P_FAMILY_SHADRAMON
+SINGLE_ANIMATION(Shadramon);
 SINGLE_ANIMATION(Luxio);
 SINGLE_ANIMATION(Luxray);
-#endif //P_FAMILY_SHINX
+#endif //P_FAMILY_SHADRAMON
 #if P_FAMILY_CRANIDOS
 SINGLE_ANIMATION(Cranidos);
 SINGLE_ANIMATION(Rampardos);

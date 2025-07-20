@@ -1108,11 +1108,11 @@ gCryTable::
 	cry Cry_Kuwagamon
 	cry Cry_Leomon
 .endif @ P_FAMILY_KUWAGAMON
-.if P_FAMILY_SHINX == TRUE
-	cry Cry_Shinx
+.if P_FAMILY_SHADRAMON == TRUE
+	cry Cry_Shadramon
 	cry Cry_Luxio
 	cry Cry_Luxray
-.endif @ P_FAMILY_SHINX
+.endif @ P_FAMILY_SHADRAMON
 .if P_FAMILY_CRANIDOS == TRUE
 	cry Cry_Cranidos
 	cry Cry_Rampardos
@@ -3536,11 +3536,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Kuwagamon
 	cry_reverse Cry_Leomon
 .endif @ P_FAMILY_KUWAGAMON
-.if P_FAMILY_SHINX == TRUE
-	cry_reverse Cry_Shinx
+.if P_FAMILY_SHADRAMON == TRUE
+	cry_reverse Cry_Shadramon
 	cry_reverse Cry_Luxio
 	cry_reverse Cry_Luxray
-.endif @ P_FAMILY_SHINX
+.endif @ P_FAMILY_SHADRAMON
 .if P_FAMILY_CRANIDOS == TRUE
 	cry_reverse Cry_Cranidos
 	cry_reverse Cry_Rampardos

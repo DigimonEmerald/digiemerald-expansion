@@ -12537,86 +12537,89 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_KUWAGAMON
 
-#if P_FAMILY_SHINX
-    [SPECIES_SHINX] =
+#if P_FAMILY_SHADRAMON
+    [SPECIES_SHADRAMON] =
     {
-        .baseHP        = 45,
+        .baseHP        = 60,
         .baseAttack    = 65,
-        .baseDefense   = 34,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 34,
-        .types = MON_TYPES(TYPE_ELECTRIC),
-        .catchRate = 235,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 53 : 60,
-        .evYield_Attack = 1,
+        .baseDefense   = 55,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_BUG, TYPE_FIRE),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed = 1,
+        .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_RIVALRY, ABILITY_INTIMIDATE, ABILITY_GUTS },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Shinx"),
-        .cryId = CRY_SHINX,
-        .natDexNum = NATIONAL_DEX_SHINX,
-        .categoryName = _("Flash"),
-        .height = 5,
-        .weight = 95,
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Shadramon"),
+        .cryId = CRY_SHADRAMON,
+        .natDexNum = NATIONAL_DEX_SHADRAMON,
+        .categoryName = _("Blazing"),
+        .height = 21,
+        .weight = 374,
         .description = COMPOUND_STRING(
-            "It rapidly contracts and relaxes its\n"
-            "muscles to generate electricity. Its\n"
-            "body shines if endangered. It flees\n"
-            "while the foe is momentarily blinded."),
+            "Due to having an adverse reaction to\n"
+            "the Digimental of Courage, Shadramon\n"
+            "has developed a fiendish personality.\n"
+            "It can manipulate flames with its hands."),
         .pokemonScale = 432,
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Shinx,
+        .frontPic = gMonFrontPic_Shadramon,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
-        .frontPicYOffset = 13,
+        .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 20),
             ANIMCMD_FRAME(1, 10),
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Shinx,
+        .enemyMonElevation = 3,
+        .backPic = gMonBackPic_Shadramon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
-        .backPicYOffset = 8,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Shinx,
-        .shinyPalette = gMonShinyPalette_Shinx,
-        .iconSprite = gMonIcon_Shinx,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Shadramon,
+        .shinyPalette = gMonShinyPalette_Shadramon,
+        .iconSprite = gMonIcon_Shadramon,
+        .iconPalIndex = 1,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_ShinxF,
+        .frontPicFemale = gMonFrontPic_ShadramonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 40),
-        .backPicFemale = gMonBackPic_ShinxF,
+        .backPicFemale = gMonBackPic_ShadramonF,
         .backPicSizeFemale = MON_COORDS_SIZE(64, 48),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
-        SHADOW(-1, 1, SHADOW_SIZE_S)
-        FOOTPRINT(Shinx)
+        SHADOW(-2, 14, SHADOW_SIZE_M)
+        FOOTPRINT(Shadramon)
         OVERWORLD(
-            sPicTable_Shinx,
+            sPicTable_Shadramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Shinx,
-            gShinyOverworldPalette_Shinx
+            gOverworldPalette_Shadramon,
+            gShinyOverworldPalette_Shadramon
         )
         OVERWORLD_FEMALE(
-            sPicTable_ShinxF,
+            sPicTable_ShadramonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sShinxLevelUpLearnset,
-        .teachableLearnset = sShinxTeachableLearnset,
-        .eggMoveLearnset = sShinxEggMoveLearnset,
+        .levelUpLearnset = sShadramonLevelUpLearnset,
+        .teachableLearnset = sShadramonTeachableLearnset,
+        .eggMoveLearnset = sShadramonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_LUXIO}),
     },
 
@@ -12787,7 +12790,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sLuxrayLevelUpLearnset,
         .teachableLearnset = sLuxrayTeachableLearnset,
     },
-#endif //P_FAMILY_SHINX
+#endif //P_FAMILY_SHADRAMON
 
 #if P_FAMILY_CRANIDOS
     [SPECIES_CRANIDOS] =

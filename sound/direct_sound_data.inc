@@ -2970,10 +2970,10 @@ Cry_Leomon::
 	.incbin "sound/direct_sound_samples/cries/leomon.bin"
 .endif @ P_FAMILY_KUWAGAMON
 
-.if P_FAMILY_SHINX == TRUE
+.if P_FAMILY_SHADRAMON == TRUE
 	.align 2
-Cry_Shinx::
-	.incbin "sound/direct_sound_samples/cries/shinx.bin"
+Cry_Shadramon::
+	.incbin "sound/direct_sound_samples/cries/shadramon.bin"
 
 	.align 2
 Cry_Luxio::
@@ -2982,7 +2982,7 @@ Cry_Luxio::
 	.align 2
 Cry_Luxray::
 	.incbin "sound/direct_sound_samples/cries/luxray.bin"
-.endif @ P_FAMILY_SHINX
+.endif @ P_FAMILY_SHADRAMON
 
 .if P_FAMILY_CRANIDOS == TRUE
 	.align 2
