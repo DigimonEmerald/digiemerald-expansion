@@ -5439,7 +5439,7 @@ static const union AnimCmd sAnim_Shadramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Luxio_1[] =
+static const union AnimCmd sAnim_Raidramon_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 20),
@@ -11441,7 +11441,7 @@ SINGLE_ANIMATION(Leomon);
 #endif //P_FAMILY_KUWAGAMON
 #if P_FAMILY_SHADRAMON
 SINGLE_ANIMATION(Shadramon);
-SINGLE_ANIMATION(Luxio);
+SINGLE_ANIMATION(Raidramon);
 SINGLE_ANIMATION(Luxray);
 #endif //P_FAMILY_SHADRAMON
 #if P_FAMILY_CRANIDOS

@@ -414,6 +414,7 @@ Ikkakumon - Bibarel
 Kuwagamon - Kricketot
 Leomon - Kricketune
 Shadramon - Shinx
+Raidramon - Luxio
 
 Ultimate List
 

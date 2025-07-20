@@ -1110,7 +1110,7 @@ gCryTable::
 .endif @ P_FAMILY_KUWAGAMON
 .if P_FAMILY_SHADRAMON == TRUE
 	cry Cry_Shadramon
-	cry Cry_Luxio
+	cry Cry_Raidramon
 	cry Cry_Luxray
 .endif @ P_FAMILY_SHADRAMON
 .if P_FAMILY_CRANIDOS == TRUE
@@ -3538,7 +3538,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_KUWAGAMON
 .if P_FAMILY_SHADRAMON == TRUE
 	cry_reverse Cry_Shadramon
-	cry_reverse Cry_Luxio
+	cry_reverse Cry_Raidramon
 	cry_reverse Cry_Luxray
 .endif @ P_FAMILY_SHADRAMON
 .if P_FAMILY_CRANIDOS == TRUE

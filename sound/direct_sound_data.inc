@@ -2976,8 +2976,8 @@ Cry_Shadramon::
 	.incbin "sound/direct_sound_samples/cries/shadramon.bin"
 
 	.align 2
-Cry_Luxio::
-	.incbin "sound/direct_sound_samples/cries/luxio.bin"
+Cry_Raidramon::
+	.incbin "sound/direct_sound_samples/cries/raidramon.bin"
 
 	.align 2
 Cry_Luxray::

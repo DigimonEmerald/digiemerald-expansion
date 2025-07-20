@@ -3183,12 +3183,12 @@ static const struct SpriteFrameImage sPicTable_ShadramonF[] = {
     overworld_ascending_frames(gObjectEventPic_ShadramonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_Luxio[] = {
-    overworld_ascending_frames(gObjectEventPic_Luxio, 4, 4),
+static const struct SpriteFrameImage sPicTable_Raidramon[] = {
+    overworld_ascending_frames(gObjectEventPic_Raidramon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_LuxioF[] = {
-    overworld_ascending_frames(gObjectEventPic_LuxioF, 4, 4),
+static const struct SpriteFrameImage sPicTable_RaidramonF[] = {
+    overworld_ascending_frames(gObjectEventPic_RaidramonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 static const struct SpriteFrameImage sPicTable_Luxray[] = {

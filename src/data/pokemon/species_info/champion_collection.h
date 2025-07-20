@@ -12547,7 +12547,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .baseSpAttack  = 90,
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_BUG, TYPE_FIRE),
-        .attribute = TYPE_VIRUS,
+        .attribute = TYPE_FREE,
         .catchRate = 115,
         .expYield = 150,
         .evYield_Speed = 1,
@@ -12620,86 +12620,88 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sShadramonLevelUpLearnset,
         .teachableLearnset = sShadramonTeachableLearnset,
         .eggMoveLearnset = sShadramonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_LUXIO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_RAIDRAMON}),
     },
 
-    [SPECIES_LUXIO] =
+    [SPECIES_RAIDRAMON] =
     {
         .baseHP        = 60,
-        .baseAttack    = 85,
-        .baseDefense   = 49,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 49,
+        .baseAttack    = 65,
+        .baseDefense   = 55,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_ELECTRIC),
-        .catchRate = 120,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 127 : 117,
-        .evYield_Attack = 2,
+        .attribute = TYPE_FREE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed = 3,
+        .evYield_SpAttack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = 100,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_RIVALRY, ABILITY_INTIMIDATE, ABILITY_GUTS },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Luxio"),
-        .cryId = CRY_LUXIO,
-        .natDexNum = NATIONAL_DEX_LUXIO,
-        .categoryName = _("Spark"),
-        .height = 9,
-        .weight = 305,
+        .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_QUICK_FEET, ABILITY_SPEED_BOOST },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Raidramon"),
+        .cryId = CRY_RAIDRAMON,
+        .natDexNum = NATIONAL_DEX_RAIDRAMON,
+        .categoryName = _("Thundering"),
+        .height = 21,
+        .weight = 874,
         .description = COMPOUND_STRING(
-            "Strong electricity courses through the\n"
-            "tips of its sharp claws. A light scratch\n"
-            "has enough amperage to cause fainting\n"
-            "in foes."),
+            "Raidramons nimble movements are like\n"
+            "lightning letting it quickly outpace\n"
+            "any foes. It is so fast that bystanders\n"
+            "believe it is flying when its running."),
         .pokemonScale = 338,
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Luxio,
+        .frontPic = gMonFrontPic_Raidramon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
-        .frontPicYOffset = 10,
+        .frontPicYOffset = 5,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 40),
             ANIMCMD_FRAME(0, 20),
         ),
         .frontAnimId = ANIM_H_STRETCH,
-        .backPic = gMonBackPic_Luxio,
+        .backPic = gMonBackPic_Raidramon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 4,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Luxio,
-        .shinyPalette = gMonShinyPalette_Luxio,
-        .iconSprite = gMonIcon_Luxio,
+        .palette = gMonPalette_Raidramon,
+        .shinyPalette = gMonShinyPalette_Raidramon,
+        .iconSprite = gMonIcon_Raidramon,
         .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_LuxioF,
+        .frontPicFemale = gMonFrontPic_RaidramonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 48),
-        .backPicFemale = gMonBackPic_LuxioF,
+        .backPicFemale = gMonBackPic_RaidramonF,
         .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-4, 2, SHADOW_SIZE_M)
-        FOOTPRINT(Luxio)
+        SHADOW(2, 5, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Raidramon)
         OVERWORLD(
-            sPicTable_Luxio,
+            sPicTable_Raidramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Luxio,
-            gShinyOverworldPalette_Luxio
+            gOverworldPalette_Raidramon,
+            gShinyOverworldPalette_Raidramon
         )
         OVERWORLD_FEMALE(
-            sPicTable_LuxioF,
+            sPicTable_RaidramonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sLuxioLevelUpLearnset,
-        .teachableLearnset = sLuxioTeachableLearnset,
+        .levelUpLearnset = sRaidramonLevelUpLearnset,
+        .teachableLearnset = sRaidramonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_LUXRAY}),
     },
 

@@ -2376,10 +2376,10 @@ $(POKEMONGFXDIR)/shadramon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/shadramon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/luxio/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/raidramon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/luxio/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/raidramon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/luxray/overworld.4bpp: %.4bpp: %.png

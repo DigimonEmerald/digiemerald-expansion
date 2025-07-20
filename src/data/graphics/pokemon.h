@@ -14341,27 +14341,27 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
-    const u32 gMonFrontPic_Luxio[] = INCBIN_U32("graphics/pokemon/luxio/anim_front.4bpp.lz");
-    const u16 gMonPalette_Luxio[] = INCBIN_U16("graphics/pokemon/luxio/normal.gbapal");
-    const u32 gMonBackPic_Luxio[] = INCBIN_U32("graphics/pokemon/luxio/back.4bpp.lz");
-    const u16 gMonShinyPalette_Luxio[] = INCBIN_U16("graphics/pokemon/luxio/shiny.gbapal");
-    const u8 gMonIcon_Luxio[] = INCBIN_U8("graphics/pokemon/luxio/icon.4bpp");
+    const u32 gMonFrontPic_Raidramon[] = INCBIN_U32("graphics/pokemon/raidramon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Raidramon[] = INCBIN_U16("graphics/pokemon/raidramon/normal.gbapal");
+    const u32 gMonBackPic_Raidramon[] = INCBIN_U32("graphics/pokemon/raidramon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Raidramon[] = INCBIN_U16("graphics/pokemon/raidramon/shiny.gbapal");
+    const u8 gMonIcon_Raidramon[] = INCBIN_U8("graphics/pokemon/raidramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Luxio[] = INCBIN_U8("graphics/pokemon/luxio/footprint.1bpp");
+    const u8 gMonFootprint_Raidramon[] = INCBIN_U8("graphics/pokemon/raidramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Luxio[] = INCBIN_COMP("graphics/pokemon/luxio/overworld.4bpp");
+    const u32 gObjectEventPic_Raidramon[] = INCBIN_COMP("graphics/pokemon/raidramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Luxio[] = INCBIN_U16("graphics/pokemon/luxio/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Luxio[] = INCBIN_U16("graphics/pokemon/luxio/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Raidramon[] = INCBIN_U16("graphics/pokemon/raidramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Raidramon[] = INCBIN_U16("graphics/pokemon/raidramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_LuxioF[] = INCBIN_U32("graphics/pokemon/luxio/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_LuxioF[] = INCBIN_U32("graphics/pokemon/luxio/backf.4bpp.lz");
+    const u32 gMonFrontPic_RaidramonF[] = INCBIN_U32("graphics/pokemon/raidramon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_RaidramonF[] = INCBIN_U32("graphics/pokemon/raidramon/backf.4bpp.lz");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_LuxioF[] = INCBIN_COMP("graphics/pokemon/luxio/overworldf.4bpp");
+    const u32 gObjectEventPic_RaidramonF[] = INCBIN_COMP("graphics/pokemon/raidramon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
