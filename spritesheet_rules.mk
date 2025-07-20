@@ -3216,7 +3216,7 @@ $(POKEMONGFXDIR)/herculeskabuterimon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/magnadramon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/chesnaught/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/magnamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/fennekin/overworld.4bpp: %.4bpp: %.png

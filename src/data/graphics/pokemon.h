@@ -19081,19 +19081,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Chesnaught[] = INCBIN_U32("graphics/pokemon/chesnaught/anim_front.4bpp.lz");
-    const u16 gMonPalette_Chesnaught[] = INCBIN_U16("graphics/pokemon/chesnaught/normal.gbapal");
-    const u32 gMonBackPic_Chesnaught[] = INCBIN_U32("graphics/pokemon/chesnaught/back.4bpp.lz");
-    const u16 gMonShinyPalette_Chesnaught[] = INCBIN_U16("graphics/pokemon/chesnaught/shiny.gbapal");
-    const u8 gMonIcon_Chesnaught[] = INCBIN_U8("graphics/pokemon/chesnaught/icon.4bpp");
+    const u32 gMonFrontPic_Magnamon[] = INCBIN_U32("graphics/pokemon/magnamon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Magnamon[] = INCBIN_U16("graphics/pokemon/magnamon/normal.gbapal");
+    const u32 gMonBackPic_Magnamon[] = INCBIN_U32("graphics/pokemon/magnamon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Magnamon[] = INCBIN_U16("graphics/pokemon/magnamon/shiny.gbapal");
+    const u8 gMonIcon_Magnamon[] = INCBIN_U8("graphics/pokemon/magnamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Chesnaught[] = INCBIN_U8("graphics/pokemon/chesnaught/footprint.1bpp");
+    const u8 gMonFootprint_Magnamon[] = INCBIN_U8("graphics/pokemon/magnamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Chesnaught[] = INCBIN_COMP("graphics/pokemon/chesnaught/overworld.4bpp");
+    const u32 gObjectEventPic_Magnamon[] = INCBIN_COMP("graphics/pokemon/magnamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Chesnaught[] = INCBIN_U16("graphics/pokemon/chesnaught/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Chesnaught[] = INCBIN_U16("graphics/pokemon/chesnaught/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Magnamon[] = INCBIN_U16("graphics/pokemon/magnamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Magnamon[] = INCBIN_U16("graphics/pokemon/magnamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_HERCULESKABUTERIMON

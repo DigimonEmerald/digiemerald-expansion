@@ -4563,8 +4563,8 @@ static const struct SpriteFrameImage sPicTable_Herculeskabuterimon[] = {
 static const struct SpriteFrameImage sPicTable_Magnadramon[] = {
     overworld_ascending_frames(gObjectEventPic_Magnadramon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Chesnaught[] = {
-    overworld_ascending_frames(gObjectEventPic_Chesnaught, 4, 4),
+static const struct SpriteFrameImage sPicTable_Magnamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Magnamon, 4, 4),
 };
 #endif //P_FAMILY_HERCULESKABUTERIMON
 

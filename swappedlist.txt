@@ -448,6 +448,7 @@ Mammothmon - Munna
 Mega List
 
 HerculesKabuterimon - Chespin
-Holydramon - Quilladin
+Magnadramon - Quilladin
+Magnamon - Chesnaught
 
 SPECIES NAME LENGTH MAX = 13

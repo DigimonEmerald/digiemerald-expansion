@@ -147,74 +147,76 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sMagnadramonLevelUpLearnset,
         .teachableLearnset = sMagnadramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CHESNAUGHT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_MAGNAMON}),
     },
 
-    [SPECIES_CHESNAUGHT] =
+    [SPECIES_MAGNAMON] =
     {
-        .baseHP        = 88,
-        .baseAttack    = 107,
-        .baseDefense   = 122,
-        .baseSpeed     = 64,
-        .baseSpAttack  = 74,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_GRASS, TYPE_FIGHTING),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 265 : 239,
+        .baseHP        = 85,
+        .baseAttack    = 110,
+        .baseDefense   = 115,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 115,
+        .types = MON_TYPES(TYPE_LIGHT, TYPE_STEEL),
+        .attribute = TYPE_FREE,
+        .catchRate = 55,
+        .expYield = 250,
         .evYield_Defense = 3,
+        .evYield_SpDefense = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_BULLETPROOF },
-        .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Chesnaught"),
-        .cryId = CRY_CHESNAUGHT,
-        .natDexNum = NATIONAL_DEX_CHESNAUGHT,
-        .categoryName = _("Spiny Armor"),
-        .height = 16,
-        .weight = 900,
+        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_NONE }, // Royal Knight
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Magnamon"),
+        .cryId = CRY_MAGNAMON,
+        .natDexNum = NATIONAL_DEX_MAGNAMON,
+        .categoryName = _("Royal Knight"),
+        .height = 23,
+        .weight = 1742,
         .description = COMPOUND_STRING(
-            "It shields its allies from danger with\n"
-            "its own body. When it takes a defensive\n"
-            "posture with its fists guarding its face,\n"
-            "it can withstand a bomb blast."),
+            "The armour that Magnamon wears is made\n"
+            "of Chrome Digizoid, one of the strongest\n"
+            "metals in the Digital World. It is a\n"
+            "member of the Royal Knights."),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Chesnaught,
+        .frontPic = gMonFrontPic_Magnamon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 4,
+        .frontPicYOffset = 1,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 50),
             ANIMCMD_FRAME(1, 40),
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_GROW_IN_STAGES,
-        .backPic = gMonBackPic_Chesnaught,
+        .backPic = gMonBackPic_Magnamon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
-        .backPicYOffset = 10,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Chesnaught,
-        .shinyPalette = gMonShinyPalette_Chesnaught,
-        .iconSprite = gMonIcon_Chesnaught,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Magnamon,
+        .shinyPalette = gMonShinyPalette_Magnamon,
+        .iconSprite = gMonIcon_Magnamon,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(4, 10, SHADOW_SIZE_L)
-        FOOTPRINT(Chesnaught)
+        SHADOW(3, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Magnamon)
         OVERWORLD(
-            sPicTable_Chesnaught,
+            sPicTable_Magnamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Chesnaught,
-            gShinyOverworldPalette_Chesnaught
+            gOverworldPalette_Magnamon,
+            gShinyOverworldPalette_Magnamon
         )
-        .levelUpLearnset = sChesnaughtLevelUpLearnset,
-        .teachableLearnset = sChesnaughtTeachableLearnset,
+        .levelUpLearnset = sMagnamonLevelUpLearnset,
+        .teachableLearnset = sMagnamonTeachableLearnset,
     },
 #endif //P_FAMILY_HERCULESKABUTERIMON
 

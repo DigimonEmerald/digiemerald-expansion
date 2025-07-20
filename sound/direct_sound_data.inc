@@ -4169,8 +4169,8 @@ Cry_Magnadramon::
 	.incbin "sound/direct_sound_samples/cries/magnadramon.bin"
 
 	.align 2
-Cry_Chesnaught::
-	.incbin "sound/direct_sound_samples/cries/chesnaught.bin"
+Cry_Magnamon::
+	.incbin "sound/direct_sound_samples/cries/magnamon.bin"
 .endif @ P_FAMILY_HERCULESKABUTERIMON
 
 .if P_FAMILY_FENNEKIN == TRUE

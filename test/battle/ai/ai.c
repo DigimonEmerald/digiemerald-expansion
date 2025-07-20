@@ -1122,7 +1122,7 @@ AI_SINGLE_BATTLE_TEST("AI stays choice locked into moves in spite of the player'
     PARAMETRIZE { ability = ABILITY_QUEENLY_MAJESTY;   playerMon = SPECIES_TSAREENA;      aiMove = MOVE_QUICK_ATTACK; }
     PARAMETRIZE { ability = ABILITY_ARMOR_TAIL;        playerMon = SPECIES_FARIGIRAF;     aiMove = MOVE_QUICK_ATTACK; }
     PARAMETRIZE { ability = ABILITY_SOUNDPROOF;        playerMon = SPECIES_TRAILMON_BATTLE_ARMAMENT;       aiMove = MOVE_BOOMBURST; }
-    PARAMETRIZE { ability = ABILITY_BULLETPROOF;       playerMon = SPECIES_CHESNAUGHT;    aiMove = MOVE_BULLET_SEED; }
+    PARAMETRIZE { ability = ABILITY_BULLETPROOF;       playerMon = SPECIES_MAGNAMON;    aiMove = MOVE_BULLET_SEED; }
 
     GIVEN {
         ASSUME(gItemsInfo[ITEM_CHOICE_BAND].holdEffect == HOLD_EFFECT_CHOICE_BAND);

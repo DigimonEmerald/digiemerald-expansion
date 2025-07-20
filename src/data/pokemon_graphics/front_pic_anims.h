@@ -8116,7 +8116,7 @@ static const union AnimCmd sAnim_Magnadramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Chesnaught_1[] =
+static const union AnimCmd sAnim_Magnamon_1[] =
 {
     ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(1, 40),
@@ -11969,7 +11969,7 @@ SINGLE_ANIMATION(Genesect);
 #if P_FAMILY_HERCULESKABUTERIMON
 SINGLE_ANIMATION(Herculeskabuterimon);
 SINGLE_ANIMATION(Magnadramon);
-SINGLE_ANIMATION(Chesnaught);
+SINGLE_ANIMATION(Magnamon);
 #endif //P_FAMILY_HERCULESKABUTERIMON
 #if P_FAMILY_FENNEKIN
 SINGLE_ANIMATION(Fennekin);

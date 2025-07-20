@@ -678,7 +678,7 @@
 #define SPECIES_GENESECT                                649
 #define SPECIES_HERCULESKABUTERIMON                                 650
 #define SPECIES_MAGNADRAMON                               651
-#define SPECIES_CHESNAUGHT                              652
+#define SPECIES_MAGNAMON                              652
 #define SPECIES_FENNEKIN                                653
 #define SPECIES_BRAIXEN                                 654
 #define SPECIES_DELPHOX                                 655
