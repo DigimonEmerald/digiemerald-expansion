@@ -1020,8 +1020,8 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 script LittlerootTown_EventScript_Test {
     lock
     msgbox(format("If you are seeing this, someone forgot to remove some testing stuff"))
-	setflag(FLAG_SYS_NATIONAL_DEX)
-	special(EnableNationalPokedex)
-    special(FillPokedex)
+	givemon(SPECIES_AGUMON, 5)
+	givemon(SPECIES_EXVEEMON, 5)
+	givemon(SPECIES_NUMEMON, 5)
     release
 }
