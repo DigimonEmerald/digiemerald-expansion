@@ -294,74 +294,77 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sWargreymonLevelUpLearnset,
         .teachableLearnset = sWargreymonTeachableLearnset,
         .eggMoveLearnset = sWargreymonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_BRAIXEN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_METALGARURUMON}),
     },
 
-    [SPECIES_BRAIXEN] =
+    [SPECIES_METALGARURUMON] =
     {
-        .baseHP        = 59,
-        .baseAttack    = 59,
-        .baseDefense   = 58,
-        .baseSpeed     = 73,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_FIRE),
-        .catchRate = 45,
-        .expYield = 143,
-        .evYield_SpAttack = 2,
+        .baseHP        = 80,
+        .baseAttack    = 100,
+        .baseDefense   = 115,
+        .baseSpeed     = 130,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 115,
+        .types = MON_TYPES(TYPE_ICE, TYPE_STEEL),
+        .attribute = TYPE_DATA,
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_Defense = 1,
+        .evYield_Speed = 4,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_MAGICIAN },
-        .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Braixen"),
-        .cryId = CRY_BRAIXEN,
-        .natDexNum = NATIONAL_DEX_BRAIXEN,
-        .categoryName = _("Fox"),
-        .height = 10,
-        .weight = 145,
+        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_NONE }, // Friendly Soul
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("MtlGarurumon"),
+        .cryId = CRY_METALGARURUMON,
+        .natDexNum = NATIONAL_DEX_METALGARURUMON,
+        .categoryName = _("Cyborg Wolf"),
+        .height = 20,
+        .weight = 1201,
         .description = COMPOUND_STRING(
-            "Braixen has a twig stuck in its tail.\n"
-            "When the twig is plucked from its tail,\n"
-            "friction sets the twig alight. The flame\n"
-            "is used to send signals to its allies."),
+            "After undergoing metallization, it has\n"
+            "retained its natural abilities. It has\n"
+            "numerous weapons such as lasers and\n"
+            "blades concealed on its body."),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Braixen,
+        .frontPic = gMonFrontPic_Metalgarurumon,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
-        .frontPicYOffset = 4,
+        .frontPicYOffset = 2,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 12),
             ANIMCMD_FRAME(1, 45),
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Braixen,
+        .backPic = gMonBackPic_Metalgarurumon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
-        .backPicYOffset = 10,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Braixen,
-        .shinyPalette = gMonShinyPalette_Braixen,
-        .iconSprite = gMonIcon_Braixen,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Metalgarurumon,
+        .shinyPalette = gMonShinyPalette_Metalgarurumon,
+        .iconSprite = gMonIcon_Metalgarurumon,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-2, 10, SHADOW_SIZE_M)
-        FOOTPRINT(Braixen)
+        SHADOW(-4, 4, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Metalgarurumon)
         OVERWORLD(
-            sPicTable_Braixen,
+            sPicTable_Metalgarurumon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Braixen,
-            gShinyOverworldPalette_Braixen
+            gOverworldPalette_Metalgarurumon,
+            gShinyOverworldPalette_Metalgarurumon
         )
-        .levelUpLearnset = sBraixenLevelUpLearnset,
-        .teachableLearnset = sBraixenTeachableLearnset,
+        .levelUpLearnset = sMetalgarurumonLevelUpLearnset,
+        .teachableLearnset = sMetalgarurumonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_DELPHOX}),
     },
 

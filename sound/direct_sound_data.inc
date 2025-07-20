@@ -4179,8 +4179,8 @@ Cry_Wargreymon::
 	.incbin "sound/direct_sound_samples/cries/wargreymon.bin"
 
 	.align 2
-Cry_Braixen::
-	.incbin "sound/direct_sound_samples/cries/braixen.bin"
+Cry_Metalgarurumon::
+	.incbin "sound/direct_sound_samples/cries/metalgarurumon.bin"
 
 	.align 2
 Cry_Delphox::

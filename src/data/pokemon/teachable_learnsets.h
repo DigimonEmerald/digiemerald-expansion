@@ -26406,7 +26406,7 @@ static const u16 sWargreymonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBraixenTeachableLearnset[] = {
+static const u16 sMetalgarurumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_CUT,

@@ -1605,7 +1605,7 @@ gCryTable::
 .endif @ P_FAMILY_HERCULESKABUTERIMON
 .if P_FAMILY_WARGREYMON == TRUE
 	cry Cry_Wargreymon
-	cry Cry_Braixen
+	cry Cry_Metalgarurumon
 	cry Cry_Delphox
 .endif @ P_FAMILY_WARGREYMON
 .if P_FAMILY_FROAKIE == TRUE
@@ -4033,7 +4033,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_HERCULESKABUTERIMON
 .if P_FAMILY_WARGREYMON == TRUE
 	cry_reverse Cry_Wargreymon
-	cry_reverse Cry_Braixen
+	cry_reverse Cry_Metalgarurumon
 	cry_reverse Cry_Delphox
 .endif @ P_FAMILY_WARGREYMON
 .if P_FAMILY_FROAKIE == TRUE
