@@ -3800,9 +3800,9 @@ static const struct SpriteFrameImage sPicTable_Metalgreymon[] = {
 };
 #endif //P_FAMILY_MAMMOTHMON
 
-#if P_FAMILY_PIDOVE
-static const struct SpriteFrameImage sPicTable_Pidove[] = {
-    overworld_ascending_frames(gObjectEventPic_Pidove, 4, 4),
+#if P_FAMILY_WEREGARURUMON
+static const struct SpriteFrameImage sPicTable_Weregarurumon[] = {
+    overworld_ascending_frames(gObjectEventPic_Weregarurumon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Tranquill[] = {
     overworld_ascending_frames(gObjectEventPic_Tranquill, 4, 4),
@@ -3816,7 +3816,7 @@ static const struct SpriteFrameImage sPicTable_UnfezantF[] = {
     overworld_ascending_frames(gObjectEventPic_UnfezantF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_PIDOVE
+#endif //P_FAMILY_WEREGARURUMON
 
 #if P_FAMILY_BLITZLE
 static const struct SpriteFrameImage sPicTable_Blitzle[] = {

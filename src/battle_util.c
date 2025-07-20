@@ -11190,7 +11190,7 @@ bool8 IsMonBannedFromSkyBattles(u16 species)
         case SPECIES_KOKATORIMON:
         case SPECIES_CHATOT:
         case SPECIES_SHAYMIN:
-        case SPECIES_PIDOVE:
+        case SPECIES_WEREGARURUMON:
         case SPECIES_ARCHEN:
         case SPECIES_DUCKLETT:
         case SPECIES_RUFFLET:

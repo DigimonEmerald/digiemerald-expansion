@@ -3444,10 +3444,10 @@ Cry_Metalgreymon::
 	.incbin "sound/direct_sound_samples/cries/metalgreymon.bin"
 .endif @ P_FAMILY_MAMMOTHMON
 
-.if P_FAMILY_PIDOVE == TRUE
+.if P_FAMILY_WEREGARURUMON == TRUE
 	.align 2
-Cry_Pidove::
-	.incbin "sound/direct_sound_samples/cries/pidove.bin"
+Cry_Weregarurumon::
+	.incbin "sound/direct_sound_samples/cries/weregarurumon.bin"
 
 	.align 2
 Cry_Tranquill::
@@ -3456,7 +3456,7 @@ Cry_Tranquill::
 	.align 2
 Cry_Unfezant::
 	.incbin "sound/direct_sound_samples/cries/unfezant.bin"
-.endif @ P_FAMILY_PIDOVE
+.endif @ P_FAMILY_WEREGARURUMON
 
 .if P_FAMILY_BLITZLE == TRUE
 	.align 2

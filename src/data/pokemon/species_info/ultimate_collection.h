@@ -1911,73 +1911,76 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_MAMMOTHMON
 
-#if P_FAMILY_PIDOVE
-    [SPECIES_PIDOVE] =
+#if P_FAMILY_WEREGARURUMON
+    [SPECIES_WEREGARURUMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 55,
-        .baseDefense   = 50,
-        .baseSpeed     = 43,
-        .baseSpAttack  = 36,
-        .baseSpDefense = 30,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
+        .baseHP        = 65,
+        .baseAttack    = 115,
+        .baseDefense   = 110,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_ICE, TYPE_FIGHTING),
+        .attribute = TYPE_VACCINE,
         .catchRate = 95,
-        .expYield = 53,
-        .evYield_Attack = 1,
+        .expYield = 200,
+        .evYield_Attack = 3,
+        .evYield_Defense = 2,
+        .evYield_Speed = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_BIG_PECKS, ABILITY_SUPER_LUCK, ABILITY_RIVALRY },
-        .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Pidove"),
-        .cryId = CRY_PIDOVE,
-        .natDexNum = NATIONAL_DEX_PIDOVE,
-        .categoryName = _("Tiny Pigeon"),
-        .height = 3,
-        .weight = 21,
+        .abilities = { ABILITY_DEFIANT, ABILITY_LIMBER, ABILITY_FUR_COAT },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("WereGarurmon"),
+        .cryId = CRY_WEREGARURUMON,
+        .natDexNum = NATIONAL_DEX_WEREGARURUMON,
+        .categoryName = _("Commando"),
+        .height = 29,
+        .weight = 745,
         .description = COMPOUND_STRING(
-            "This very forgetful Pokémon will wait for\n"
-            "a new order from its Trainer even though\n"
-            "it already has one. Flocks often gather\n"
-            "in parks and plazas."),
+            "A fiercely loyal Digimon, WereGarurumon\n"
+            "will use its strong legs and strong\n"
+            "defensive ability to protect anyone\n"
+            "it percieves to be friendly."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Pidove,
+        .frontPic = gMonFrontPic_Weregarurumon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
-        .frontPicYOffset = 12,
+        .frontPicYOffset = 7,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 2),
             ANIMCMD_FRAME(1, 46),
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_JUMPS_SMALL,
-        .backPic = gMonBackPic_Pidove,
+        .backPic = gMonBackPic_Weregarurumon,
         .backPicSize = MON_COORDS_SIZE(48, 40),
-        .backPicYOffset = 13,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Pidove,
-        .shinyPalette = gMonShinyPalette_Pidove,
-        .iconSprite = gMonIcon_Pidove,
+        .palette = gMonPalette_Weregarurumon,
+        .shinyPalette = gMonShinyPalette_Weregarurumon,
+        .iconSprite = gMonIcon_Weregarurumon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-2, 1, SHADOW_SIZE_S)
-        FOOTPRINT(Pidove)
+        SHADOW(-2, 2, SHADOW_SIZE_L)
+        FOOTPRINT(Weregarurumon)
         OVERWORLD(
-            sPicTable_Pidove,
+            sPicTable_Weregarurumon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Pidove,
-            gShinyOverworldPalette_Pidove
+            gOverworldPalette_Weregarurumon,
+            gShinyOverworldPalette_Weregarurumon
         )
-        .levelUpLearnset = sPidoveLevelUpLearnset,
-        .teachableLearnset = sPidoveTeachableLearnset,
-        .eggMoveLearnset = sPidoveEggMoveLearnset,
+        .levelUpLearnset = sWeregarurumonLevelUpLearnset,
+        .teachableLearnset = sWeregarurumonTeachableLearnset,
+        .eggMoveLearnset = sWeregarurumonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_TRANQUILL}),
     },
 
@@ -2140,7 +2143,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sUnfezantLevelUpLearnset,
         .teachableLearnset = sUnfezantTeachableLearnset,
     },
-#endif //P_FAMILY_PIDOVE
+#endif //P_FAMILY_WEREGARURUMON
 
 #if P_FAMILY_BLITZLE
     [SPECIES_BLITZLE] =

@@ -1306,11 +1306,11 @@ gCryTable::
 	cry Cry_Mammothmon
 	cry Cry_Metalgreymon
 .endif @ P_FAMILY_MAMMOTHMON
-.if P_FAMILY_PIDOVE == TRUE
-	cry Cry_Pidove
+.if P_FAMILY_WEREGARURUMON == TRUE
+	cry Cry_Weregarurumon
 	cry Cry_Tranquill
 	cry Cry_Unfezant
-.endif @ P_FAMILY_PIDOVE
+.endif @ P_FAMILY_WEREGARURUMON
 .if P_FAMILY_BLITZLE == TRUE
 	cry Cry_Blitzle
 	cry Cry_Zebstrika
@@ -3734,11 +3734,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Mammothmon
 	cry_reverse Cry_Metalgreymon
 .endif @ P_FAMILY_MAMMOTHMON
-.if P_FAMILY_PIDOVE == TRUE
-	cry_reverse Cry_Pidove
+.if P_FAMILY_WEREGARURUMON == TRUE
+	cry_reverse Cry_Weregarurumon
 	cry_reverse Cry_Tranquill
 	cry_reverse Cry_Unfezant
-.endif @ P_FAMILY_PIDOVE
+.endif @ P_FAMILY_WEREGARURUMON
 .if P_FAMILY_BLITZLE == TRUE
 	cry_reverse Cry_Blitzle
 	cry_reverse Cry_Zebstrika

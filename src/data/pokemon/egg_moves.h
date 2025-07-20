@@ -4074,8 +4074,8 @@ static const u16 sMammothmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_MAMMOTHMON
 
-#if P_FAMILY_PIDOVE
-static const u16 sPidoveEggMoveLearnset[] = {
+#if P_FAMILY_WEREGARURUMON
+static const u16 sWeregarurumonEggMoveLearnset[] = {
     MOVE_STEEL_WING,
     MOVE_HYPNOSIS,
     MOVE_UPROAR,
@@ -4086,7 +4086,7 @@ static const u16 sPidoveEggMoveLearnset[] = {
     MOVE_NIGHT_SLASH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PIDOVE
+#endif //P_FAMILY_WEREGARURUMON
 
 #if P_FAMILY_BLITZLE
 static const u16 sBlitzleEggMoveLearnset[] = {

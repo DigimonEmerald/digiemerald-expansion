@@ -6514,8 +6514,8 @@ static const union AnimCmd sAnim_Metalgreymon_1[] =
 };
 #endif //P_FAMILY_MAMMOTHMON
 
-#if P_FAMILY_PIDOVE
-static const union AnimCmd sAnim_Pidove_1[] =
+#if P_FAMILY_WEREGARURUMON
+static const union AnimCmd sAnim_Weregarurumon_1[] =
 {
     ANIMCMD_FRAME(0, 2),
     ANIMCMD_FRAME(1, 46),
@@ -6538,7 +6538,7 @@ static const union AnimCmd sAnim_Unfezant_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_PIDOVE
+#endif //P_FAMILY_WEREGARURUMON
 
 #if P_FAMILY_BLITZLE
 static const union AnimCmd sAnim_Blitzle_1[] =
@@ -11649,11 +11649,11 @@ SINGLE_ANIMATION(Ladydevimon);
 SINGLE_ANIMATION(Mammothmon);
 SINGLE_ANIMATION(Metalgreymon);
 #endif //P_FAMILY_MAMMOTHMON
-#if P_FAMILY_PIDOVE
-SINGLE_ANIMATION(Pidove);
+#if P_FAMILY_WEREGARURUMON
+SINGLE_ANIMATION(Weregarurumon);
 SINGLE_ANIMATION(Tranquill);
 SINGLE_ANIMATION(Unfezant);
-#endif //P_FAMILY_PIDOVE
+#endif //P_FAMILY_WEREGARURUMON
 #if P_FAMILY_BLITZLE
 SINGLE_ANIMATION(Blitzle);
 SINGLE_ANIMATION(Zebstrika);

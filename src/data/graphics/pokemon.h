@@ -16320,20 +16320,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MAMMOTHMON
 
-#if P_FAMILY_PIDOVE
-    const u32 gMonFrontPic_Pidove[] = INCBIN_U32("graphics/pokemon/pidove/anim_front.4bpp.lz");
-    const u16 gMonPalette_Pidove[] = INCBIN_U16("graphics/pokemon/pidove/normal.gbapal");
-    const u32 gMonBackPic_Pidove[] = INCBIN_U32("graphics/pokemon/pidove/back.4bpp.lz");
-    const u16 gMonShinyPalette_Pidove[] = INCBIN_U16("graphics/pokemon/pidove/shiny.gbapal");
-    const u8 gMonIcon_Pidove[] = INCBIN_U8("graphics/pokemon/pidove/icon.4bpp");
+#if P_FAMILY_WEREGARURUMON
+    const u32 gMonFrontPic_Weregarurumon[] = INCBIN_U32("graphics/pokemon/weregarurumon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Weregarurumon[] = INCBIN_U16("graphics/pokemon/weregarurumon/normal.gbapal");
+    const u32 gMonBackPic_Weregarurumon[] = INCBIN_U32("graphics/pokemon/weregarurumon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Weregarurumon[] = INCBIN_U16("graphics/pokemon/weregarurumon/shiny.gbapal");
+    const u8 gMonIcon_Weregarurumon[] = INCBIN_U8("graphics/pokemon/weregarurumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Pidove[] = INCBIN_U8("graphics/pokemon/pidove/footprint.1bpp");
+    const u8 gMonFootprint_Weregarurumon[] = INCBIN_U8("graphics/pokemon/weregarurumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Pidove[] = INCBIN_COMP("graphics/pokemon/pidove/overworld.4bpp");
+    const u32 gObjectEventPic_Weregarurumon[] = INCBIN_COMP("graphics/pokemon/weregarurumon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Pidove[] = INCBIN_U16("graphics/pokemon/pidove/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Pidove[] = INCBIN_U16("graphics/pokemon/pidove/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Weregarurumon[] = INCBIN_U16("graphics/pokemon/weregarurumon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Weregarurumon[] = INCBIN_U16("graphics/pokemon/weregarurumon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16383,7 +16383,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_PIDOVE
+#endif //P_FAMILY_WEREGARURUMON
 
 #if P_FAMILY_BLITZLE
     const u32 gMonFrontPic_Blitzle[] = INCBIN_U32("graphics/pokemon/blitzle/anim_front.4bpp.lz");

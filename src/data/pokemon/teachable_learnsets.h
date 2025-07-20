@@ -21829,8 +21829,8 @@ static const u16 sMetalgreymonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_MAMMOTHMON
 
-#if P_FAMILY_PIDOVE
-static const u16 sPidoveTeachableLearnset[] = {
+#if P_FAMILY_WEREGARURUMON
+static const u16 sWeregarurumonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
@@ -21894,7 +21894,7 @@ static const u16 sUnfezantTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PIDOVE
+#endif //P_FAMILY_WEREGARURUMON
 
 #if P_FAMILY_BLITZLE
 static const u16 sBlitzleTeachableLearnset[] = {
