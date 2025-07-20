@@ -1603,11 +1603,11 @@ gCryTable::
 	cry Cry_Magnadramon
 	cry Cry_Magnamon
 .endif @ P_FAMILY_HERCULESKABUTERIMON
-.if P_FAMILY_FENNEKIN == TRUE
-	cry Cry_Fennekin
+.if P_FAMILY_WARGREYMON == TRUE
+	cry Cry_Wargreymon
 	cry Cry_Braixen
 	cry Cry_Delphox
-.endif @ P_FAMILY_FENNEKIN
+.endif @ P_FAMILY_WARGREYMON
 .if P_FAMILY_FROAKIE == TRUE
 	cry Cry_Froakie
 	cry Cry_Frogadier
@@ -4031,11 +4031,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Magnadramon
 	cry_reverse Cry_Magnamon
 .endif @ P_FAMILY_HERCULESKABUTERIMON
-.if P_FAMILY_FENNEKIN == TRUE
-	cry_reverse Cry_Fennekin
+.if P_FAMILY_WARGREYMON == TRUE
+	cry_reverse Cry_Wargreymon
 	cry_reverse Cry_Braixen
 	cry_reverse Cry_Delphox
-.endif @ P_FAMILY_FENNEKIN
+.endif @ P_FAMILY_WARGREYMON
 .if P_FAMILY_FROAKIE == TRUE
 	cry_reverse Cry_Froakie
 	cry_reverse Cry_Frogadier

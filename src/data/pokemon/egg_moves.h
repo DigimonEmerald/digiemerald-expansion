@@ -4929,8 +4929,8 @@ static const u16 sHerculeskabuterimonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_HERCULESKABUTERIMON
 
-#if P_FAMILY_FENNEKIN
-static const u16 sFennekinEggMoveLearnset[] = {
+#if P_FAMILY_WARGREYMON
+static const u16 sWargreymonEggMoveLearnset[] = {
     MOVE_WISH,
     MOVE_HYPNOSIS,
     MOVE_HEAT_WAVE,
@@ -4938,7 +4938,7 @@ static const u16 sFennekinEggMoveLearnset[] = {
     MOVE_PSYCHIC_TERRAIN,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_FENNEKIN
+#endif //P_FAMILY_WARGREYMON
 
 #if P_FAMILY_FROAKIE
 static const u16 sFroakieEggMoveLearnset[] = {

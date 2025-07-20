@@ -451,5 +451,6 @@ Mega List
 HerculesKabuterimon - Chespin
 Magnadramon - Quilladin
 Magnamon - Chesnaught
+Wargreymon - Fennekin
 
 SPECIES NAME LENGTH MAX = 13

@@ -19098,20 +19098,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_HERCULESKABUTERIMON
 
-#if P_FAMILY_FENNEKIN
-    const u32 gMonFrontPic_Fennekin[] = INCBIN_U32("graphics/pokemon/fennekin/anim_front.4bpp.lz");
-    const u16 gMonPalette_Fennekin[] = INCBIN_U16("graphics/pokemon/fennekin/normal.gbapal");
-    const u32 gMonBackPic_Fennekin[] = INCBIN_U32("graphics/pokemon/fennekin/back.4bpp.lz");
-    const u16 gMonShinyPalette_Fennekin[] = INCBIN_U16("graphics/pokemon/fennekin/shiny.gbapal");
-    const u8 gMonIcon_Fennekin[] = INCBIN_U8("graphics/pokemon/fennekin/icon.4bpp");
+#if P_FAMILY_WARGREYMON
+    const u32 gMonFrontPic_Wargreymon[] = INCBIN_U32("graphics/pokemon/wargreymon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Wargreymon[] = INCBIN_U16("graphics/pokemon/wargreymon/normal.gbapal");
+    const u32 gMonBackPic_Wargreymon[] = INCBIN_U32("graphics/pokemon/wargreymon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Wargreymon[] = INCBIN_U16("graphics/pokemon/wargreymon/shiny.gbapal");
+    const u8 gMonIcon_Wargreymon[] = INCBIN_U8("graphics/pokemon/wargreymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Fennekin[] = INCBIN_U8("graphics/pokemon/fennekin/footprint.1bpp");
+    const u8 gMonFootprint_Wargreymon[] = INCBIN_U8("graphics/pokemon/wargreymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Fennekin[] = INCBIN_COMP("graphics/pokemon/fennekin/overworld.4bpp");
+    const u32 gObjectEventPic_Wargreymon[] = INCBIN_COMP("graphics/pokemon/wargreymon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Fennekin[] = INCBIN_U16("graphics/pokemon/fennekin/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Fennekin[] = INCBIN_U16("graphics/pokemon/fennekin/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Wargreymon[] = INCBIN_U16("graphics/pokemon/wargreymon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Wargreymon[] = INCBIN_U16("graphics/pokemon/wargreymon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -19146,7 +19146,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Delphox[] = INCBIN_U16("graphics/pokemon/delphox/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_FENNEKIN
+#endif //P_FAMILY_WARGREYMON
 
 #if P_FAMILY_FROAKIE
     const u32 gMonFrontPic_Froakie[] = INCBIN_U32("graphics/pokemon/froakie/anim_front.4bpp.lz");

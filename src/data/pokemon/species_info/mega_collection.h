@@ -220,44 +220,47 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
 #endif //P_FAMILY_HERCULESKABUTERIMON
 
-#if P_FAMILY_FENNEKIN
-    [SPECIES_FENNEKIN] =
+#if P_FAMILY_WARGREYMON
+    [SPECIES_WARGREYMON] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 45,
-        .baseDefense   = 40,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 62,
-        .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_FIRE),
-        .catchRate = 45,
-        .expYield = 61,
-        .evYield_SpAttack = 1,
+        .baseHP        = 100,
+        .baseAttack    = 130,
+        .baseDefense   = 90,
+        .baseSpeed     = 105,
+        .baseSpAttack  = 125,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_DRAGON),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_Attack = 3,
+        .evYield_Speed = 1,
+        .evYield_SpAttack = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_MAGICIAN },
-        .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Fennekin"),
-        .cryId = CRY_FENNEKIN,
-        .natDexNum = NATIONAL_DEX_FENNEKIN,
-        .categoryName = _("Fox"),
-        .height = 4,
-        .weight = 94,
+        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_NONE }, // Brave-Heart
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("WarGreymon"),
+        .cryId = CRY_WARGREYMON,
+        .natDexNum = NATIONAL_DEX_WARGREYMON,
+        .categoryName = _("Warrior"),
+        .height = 31,
+        .weight = 1834,
         .description = COMPOUND_STRING(
-            "As it walks, it munches on a twig to fill\n"
-            "itself with energy in place of a snack.\n"
-            "It intimidates opponents by puffing hot\n"
-            "air out of its roomy ears."),
+            "Considered the ultimate form of the\n"
+            "Greymon-spcies, WarGreymon gives up its\n"
+            "gigantic size in return for incredible\n"
+            "speed and compressed power."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Fennekin,
+        .frontPic = gMonFrontPic_Wargreymon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
-        .frontPicYOffset = 10,
+        .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 15),
             ANIMCMD_FRAME(1, 15),
@@ -268,29 +271,29 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Fennekin,
+        .backPic = gMonBackPic_Wargreymon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
-        .backPicYOffset = 8,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Fennekin,
-        .shinyPalette = gMonShinyPalette_Fennekin,
-        .iconSprite = gMonIcon_Fennekin,
+        .palette = gMonPalette_Wargreymon,
+        .shinyPalette = gMonShinyPalette_Wargreymon,
+        .iconSprite = gMonIcon_Wargreymon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
-        SHADOW(0, 4, SHADOW_SIZE_S)
-        FOOTPRINT(Fennekin)
+        SHADOW(-3, 14, SHADOW_SIZE_L)
+        FOOTPRINT(Wargreymon)
         OVERWORLD(
-            sPicTable_Fennekin,
+            sPicTable_Wargreymon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Fennekin,
-            gShinyOverworldPalette_Fennekin
+            gOverworldPalette_Wargreymon,
+            gShinyOverworldPalette_Wargreymon
         )
-        .levelUpLearnset = sFennekinLevelUpLearnset,
-        .teachableLearnset = sFennekinTeachableLearnset,
-        .eggMoveLearnset = sFennekinEggMoveLearnset,
+        .levelUpLearnset = sWargreymonLevelUpLearnset,
+        .teachableLearnset = sWargreymonTeachableLearnset,
+        .eggMoveLearnset = sWargreymonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_BRAIXEN}),
     },
 
@@ -432,7 +435,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sDelphoxLevelUpLearnset,
         .teachableLearnset = sDelphoxTeachableLearnset,
     },
-#endif //P_FAMILY_FENNEKIN
+#endif //P_FAMILY_WARGREYMON
 
 #if P_FAMILY_FROAKIE
     [SPECIES_FROAKIE] =

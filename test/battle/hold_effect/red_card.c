@@ -245,7 +245,7 @@ SINGLE_BATTLE_TEST("Red Card does not activate if stolen by Magician")
 
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_RED_CARD); }
-        OPPONENT(SPECIES_FENNEKIN) { Ability(ABILITY_MAGICIAN); Item(item); }
+        OPPONENT(SPECIES_WARGREYMON) { Ability(ABILITY_MAGICIAN); Item(item); }
         OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
@@ -254,17 +254,17 @@ SINGLE_BATTLE_TEST("Red Card does not activate if stolen by Magician")
         if (activate) {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
 <<<<<<< HEAD
-            MESSAGE("Lopmonx held up its Red Card against Foe Fennekin!");
+            MESSAGE("Lopmonx held up its Red Card against Foe Wargreymon!");
         } else {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-                MESSAGE("Lopmonx held up its Red Card against Foe Fennekin!");
+                MESSAGE("Lopmonx held up its Red Card against Foe Wargreymon!");
 =======
-            MESSAGE("Lopmonx held up its Red Card against the opposing Fennekin!");
+            MESSAGE("Lopmonx held up its Red Card against the opposing Wargreymon!");
         } else {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-                MESSAGE("Lopmonx held up its Red Card against the opposing Fennekin!");
+                MESSAGE("Lopmonx held up its Red Card against the opposing Wargreymon!");
 >>>>>>> upstream/master
             }
         }

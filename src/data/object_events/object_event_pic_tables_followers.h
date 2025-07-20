@@ -4568,9 +4568,9 @@ static const struct SpriteFrameImage sPicTable_Magnamon[] = {
 };
 #endif //P_FAMILY_HERCULESKABUTERIMON
 
-#if P_FAMILY_FENNEKIN
-static const struct SpriteFrameImage sPicTable_Fennekin[] = {
-    overworld_ascending_frames(gObjectEventPic_Fennekin, 4, 4),
+#if P_FAMILY_WARGREYMON
+static const struct SpriteFrameImage sPicTable_Wargreymon[] = {
+    overworld_ascending_frames(gObjectEventPic_Wargreymon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Braixen[] = {
     overworld_ascending_frames(gObjectEventPic_Braixen, 4, 4),
@@ -4578,7 +4578,7 @@ static const struct SpriteFrameImage sPicTable_Braixen[] = {
 static const struct SpriteFrameImage sPicTable_Delphox[] = {
     overworld_ascending_frames(gObjectEventPic_Delphox, 4, 4),
 };
-#endif //P_FAMILY_FENNEKIN
+#endif //P_FAMILY_WARGREYMON
 
 #if P_FAMILY_FROAKIE
 static const struct SpriteFrameImage sPicTable_Froakie[] = {

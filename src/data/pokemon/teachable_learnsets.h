@@ -26373,8 +26373,8 @@ static const u16 sMagnamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_HERCULESKABUTERIMON
 
-#if P_FAMILY_FENNEKIN
-static const u16 sFennekinTeachableLearnset[] = {
+#if P_FAMILY_WARGREYMON
+static const u16 sWargreymonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_CUT,
@@ -26481,7 +26481,7 @@ static const u16 sDelphoxTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_FENNEKIN
+#endif //P_FAMILY_WARGREYMON
 
 #if P_FAMILY_FROAKIE
 static const u16 sFroakieTeachableLearnset[] = {

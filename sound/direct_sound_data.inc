@@ -4173,10 +4173,10 @@ Cry_Magnamon::
 	.incbin "sound/direct_sound_samples/cries/magnamon.bin"
 .endif @ P_FAMILY_HERCULESKABUTERIMON
 
-.if P_FAMILY_FENNEKIN == TRUE
+.if P_FAMILY_WARGREYMON == TRUE
 	.align 2
-Cry_Fennekin::
-	.incbin "sound/direct_sound_samples/cries/fennekin.bin"
+Cry_Wargreymon::
+	.incbin "sound/direct_sound_samples/cries/wargreymon.bin"
 
 	.align 2
 Cry_Braixen::
@@ -4185,7 +4185,7 @@ Cry_Braixen::
 	.align 2
 Cry_Delphox::
 	.incbin "sound/direct_sound_samples/cries/delphox.bin"
-.endif @ P_FAMILY_FENNEKIN
+.endif @ P_FAMILY_WARGREYMON
 
 .if P_FAMILY_FROAKIE == TRUE
 	.align 2

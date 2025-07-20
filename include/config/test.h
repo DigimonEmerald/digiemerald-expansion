@@ -701,8 +701,8 @@
 
 #undef P_FAMILY_HERCULESKABUTERIMON
 #define P_FAMILY_HERCULESKABUTERIMON                 TRUE
-#undef P_FAMILY_FENNEKIN
-#define P_FAMILY_FENNEKIN                TRUE
+#undef P_FAMILY_WARGREYMON
+#define P_FAMILY_WARGREYMON                TRUE
 #undef P_FAMILY_FROAKIE
 #define P_FAMILY_FROAKIE                 TRUE
 #undef P_FAMILY_BUNNELBY

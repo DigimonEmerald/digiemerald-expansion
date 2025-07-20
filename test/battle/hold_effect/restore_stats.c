@@ -197,7 +197,7 @@ SINGLE_BATTLE_TEST("White Herb wont have time to activate if Magician steals it"
 {
     GIVEN {
         PLAYER(SPECIES_OTAMAMON_RED) {  Ability(ABILITY_WEAK_ARMOR); Item(ITEM_WHITE_HERB); }
-        OPPONENT(SPECIES_FENNEKIN) { Ability(ABILITY_MAGICIAN); }
+        OPPONENT(SPECIES_WARGREYMON) { Ability(ABILITY_MAGICIAN); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TACKLE); }
     } SCENE {
@@ -208,12 +208,12 @@ SINGLE_BATTLE_TEST("White Herb wont have time to activate if Magician steals it"
         MESSAGE("Otamamon_red's Weak Armor raised its Speed!");
         ABILITY_POPUP(opponent, ABILITY_MAGICIAN);
 <<<<<<< HEAD
-        MESSAGE("Foe Fennekin stole Otamamon_red's White Herb!");
+        MESSAGE("Foe Wargreymon stole Otamamon_red's White Herb!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
             MESSAGE("Lopmonx's White Herb restored its status!");
 =======
-        MESSAGE("The opposing Fennekin stole Otamamon_red's White Herb!");
+        MESSAGE("The opposing Wargreymon stole Otamamon_red's White Herb!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
             MESSAGE("Lopmonx returned its stats to normal using its White Herb!");

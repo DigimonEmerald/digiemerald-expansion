@@ -8125,8 +8125,8 @@ static const union AnimCmd sAnim_Magnamon_1[] =
 };
 #endif //P_FAMILY_HERCULESKABUTERIMON
 
-#if P_FAMILY_FENNEKIN
-static const union AnimCmd sAnim_Fennekin_1[] =
+#if P_FAMILY_WARGREYMON
+static const union AnimCmd sAnim_Wargreymon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -8157,7 +8157,7 @@ static const union AnimCmd sAnim_Delphox_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_FENNEKIN
+#endif //P_FAMILY_WARGREYMON
 
 #if P_FAMILY_FROAKIE
 static const union AnimCmd sAnim_Froakie_1[] =
@@ -11971,11 +11971,11 @@ SINGLE_ANIMATION(Herculeskabuterimon);
 SINGLE_ANIMATION(Magnadramon);
 SINGLE_ANIMATION(Magnamon);
 #endif //P_FAMILY_HERCULESKABUTERIMON
-#if P_FAMILY_FENNEKIN
-SINGLE_ANIMATION(Fennekin);
+#if P_FAMILY_WARGREYMON
+SINGLE_ANIMATION(Wargreymon);
 SINGLE_ANIMATION(Braixen);
 SINGLE_ANIMATION(Delphox);
-#endif //P_FAMILY_FENNEKIN
+#endif //P_FAMILY_WARGREYMON
 #if P_FAMILY_FROAKIE
 SINGLE_ANIMATION(Froakie);
 SINGLE_ANIMATION(Frogadier);
