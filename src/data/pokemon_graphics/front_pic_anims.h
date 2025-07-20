@@ -6503,7 +6503,7 @@ static const union AnimCmd sAnim_Mammothmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Musharna_1[] =
+static const union AnimCmd sAnim_Metalgreymon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -11647,7 +11647,7 @@ SINGLE_ANIMATION(Ladydevimon);
 #endif //P_FAMILY_JAGAMON
 #if P_FAMILY_MAMMOTHMON
 SINGLE_ANIMATION(Mammothmon);
-SINGLE_ANIMATION(Musharna);
+SINGLE_ANIMATION(Metalgreymon);
 #endif //P_FAMILY_MAMMOTHMON
 #if P_FAMILY_PIDOVE
 SINGLE_ANIMATION(Pidove);

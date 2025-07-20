@@ -16303,19 +16303,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Musharna[] = INCBIN_U32("graphics/pokemon/musharna/anim_front.4bpp.lz");
-    const u16 gMonPalette_Musharna[] = INCBIN_U16("graphics/pokemon/musharna/normal.gbapal");
-    const u32 gMonBackPic_Musharna[] = INCBIN_U32("graphics/pokemon/musharna/back.4bpp.lz");
-    const u16 gMonShinyPalette_Musharna[] = INCBIN_U16("graphics/pokemon/musharna/shiny.gbapal");
-    const u8 gMonIcon_Musharna[] = INCBIN_U8("graphics/pokemon/musharna/icon.4bpp");
+    const u32 gMonFrontPic_Metalgreymon[] = INCBIN_U32("graphics/pokemon/metalgreymon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Metalgreymon[] = INCBIN_U16("graphics/pokemon/metalgreymon/normal.gbapal");
+    const u32 gMonBackPic_Metalgreymon[] = INCBIN_U32("graphics/pokemon/metalgreymon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Metalgreymon[] = INCBIN_U16("graphics/pokemon/metalgreymon/shiny.gbapal");
+    const u8 gMonIcon_Metalgreymon[] = INCBIN_U8("graphics/pokemon/metalgreymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Musharna[] = INCBIN_U8("graphics/pokemon/musharna/footprint.1bpp");
+    const u8 gMonFootprint_Metalgreymon[] = INCBIN_U8("graphics/pokemon/metalgreymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Musharna[] = INCBIN_COMP("graphics/pokemon/musharna/overworld.4bpp");
+    const u32 gObjectEventPic_Metalgreymon[] = INCBIN_COMP("graphics/pokemon/metalgreymon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Musharna[] = INCBIN_U16("graphics/pokemon/musharna/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Musharna[] = INCBIN_U16("graphics/pokemon/musharna/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Metalgreymon[] = INCBIN_U16("graphics/pokemon/metalgreymon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Metalgreymon[] = INCBIN_U16("graphics/pokemon/metalgreymon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MAMMOTHMON

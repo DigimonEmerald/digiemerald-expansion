@@ -21795,7 +21795,7 @@ static const u16 sMammothmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sMusharnaTeachableLearnset[] = {
+static const u16 sMetalgreymonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DEFENSE_CURL,

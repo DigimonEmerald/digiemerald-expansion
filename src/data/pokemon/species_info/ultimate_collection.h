@@ -448,7 +448,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpeed     = 60,
         .baseSpAttack  = 90,
         .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_STEEL),
+        .types = MON_TYPES(TYPE_FIRE, TYPE_STEEL),
         .attribute = TYPE_VIRUS,
         .catchRate = 95,
         .expYield = 200,
@@ -1834,46 +1834,49 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sMammothmonLevelUpLearnset,
         .teachableLearnset = sMammothmonTeachableLearnset,
         .eggMoveLearnset = sMammothmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_MUSHARNA}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_METALGREYMON}),
     },
 
-    [SPECIES_MUSHARNA] =
+    [SPECIES_METALGREYMON] =
     {
-        .baseHP        = 116,
-        .baseAttack    = 55,
-        .baseDefense   = 85,
-        .baseSpeed     = 29,
-        .baseSpAttack  = 107,
-        .baseSpDefense = 95,
-        .types = MON_TYPES(TYPE_PSYCHIC),
-        .catchRate = 75,
-        .expYield = 170,
-        .evYield_HP = 2,
+        .baseHP        = 85,
+        .baseAttack    = 110,
+        .baseDefense   = 110,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_STEEL),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_Attack = 2,
+        .evYield_Defense = 2,
+        .evYield_SpAttack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 10,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_FOREWARN, ABILITY_SYNCHRONIZE, ABILITY_TELEPATHY },
-        .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Musharna"),
-        .cryId = CRY_MUSHARNA,
-        .natDexNum = NATIONAL_DEX_MUSHARNA,
-        .categoryName = _("Drowsing"),
-        .height = 11,
-        .weight = 605,
+        .abilities = { ABILITY_BLAZE, ABILITY_INTIMIDATE, ABILITY_STURDY },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("MetalGreymon"),
+        .cryId = CRY_METALGREYMON,
+        .natDexNum = NATIONAL_DEX_METALGREYMON,
+        .categoryName = _("Cyborg"),
+        .height = 89,
+        .weight = 1532,
         .description = COMPOUND_STRING(
-            "The mist emanating from their foreheads\n"
-            "is packed with the dreams of people and\n"
-            "Pokémon. It changes into different colors\n"
-            "depending on the dream that was eaten."),
+            "Unlike their Virus counterparts, this\n"
+            "MetalGreymon is a near perfect cyborg.\n"
+            "This grants it far more strength and\n"
+            "gives it greater evolution opportunities."),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Musharna,
+        .frontPic = gMonFrontPic_Metalgreymon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 6,
+        .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 15),
             ANIMCMD_FRAME(1, 20),
@@ -1882,29 +1885,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_ROTATE_TO_SIDES_TWICE,
-        .enemyMonElevation = 5,
-        .backPic = gMonBackPic_Musharna,
+        .enemyMonElevation = 6,
+        .backPic = gMonBackPic_Metalgreymon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 8,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_GROW,
-        .palette = gMonPalette_Musharna,
-        .shinyPalette = gMonShinyPalette_Musharna,
-        .iconSprite = gMonIcon_Musharna,
+        .palette = gMonPalette_Metalgreymon,
+        .shinyPalette = gMonShinyPalette_Metalgreymon,
+        .iconSprite = gMonIcon_Metalgreymon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(6, 10, SHADOW_SIZE_M)
-        FOOTPRINT(Musharna)
+        SHADOW(-4, 15, SHADOW_SIZE_L)
+        FOOTPRINT(Metalgreymon)
         OVERWORLD(
-            sPicTable_Musharna,
+            sPicTable_Metalgreymon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Musharna,
-            gShinyOverworldPalette_Musharna
+            gOverworldPalette_Metalgreymon,
+            gShinyOverworldPalette_Metalgreymon
         )
-        .levelUpLearnset = sMusharnaLevelUpLearnset,
-        .teachableLearnset = sMusharnaTeachableLearnset,
+        .levelUpLearnset = sMetalgreymonLevelUpLearnset,
+        .teachableLearnset = sMetalgreymonTeachableLearnset,
     },
 #endif //P_FAMILY_MAMMOTHMON
 

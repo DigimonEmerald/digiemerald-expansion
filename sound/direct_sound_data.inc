@@ -3440,8 +3440,8 @@ Cry_Mammothmon::
 	.incbin "sound/direct_sound_samples/cries/mammothmon.bin"
 
 	.align 2
-Cry_Musharna::
-	.incbin "sound/direct_sound_samples/cries/musharna.bin"
+Cry_Metalgreymon::
+	.incbin "sound/direct_sound_samples/cries/metalgreymon.bin"
 .endif @ P_FAMILY_MAMMOTHMON
 
 .if P_FAMILY_PIDOVE == TRUE

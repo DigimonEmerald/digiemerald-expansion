@@ -1304,7 +1304,7 @@ gCryTable::
 .endif @ P_FAMILY_JAGAMON
 .if P_FAMILY_MAMMOTHMON == TRUE
 	cry Cry_Mammothmon
-	cry Cry_Musharna
+	cry Cry_Metalgreymon
 .endif @ P_FAMILY_MAMMOTHMON
 .if P_FAMILY_PIDOVE == TRUE
 	cry Cry_Pidove
@@ -3732,7 +3732,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_JAGAMON
 .if P_FAMILY_MAMMOTHMON == TRUE
 	cry_reverse Cry_Mammothmon
-	cry_reverse Cry_Musharna
+	cry_reverse Cry_Metalgreymon
 .endif @ P_FAMILY_MAMMOTHMON
 .if P_FAMILY_PIDOVE == TRUE
 	cry_reverse Cry_Pidove
