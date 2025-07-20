@@ -57,14 +57,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
         .backPic = gMonBackPic_Agumon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 48),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 8,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
         .palette = gMonPalette_Agumon,
         .shinyPalette = gMonShinyPalette_Agumon,
         .iconSprite = gMonIcon_Agumon,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(2, 13, SHADOW_SIZE_L)
+        SHADOW(2, 9, SHADOW_SIZE_M)
         FOOTPRINT(Agumon)
         OVERWORLD(
             sPicTable_Agumon,
@@ -1620,7 +1620,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Betamon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 56) : MON_COORDS_SIZE(48, 40),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 7 : 12,
+        .frontPicYOffset = 9,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 40),
             ANIMCMD_FRAME(1, 24),
@@ -1629,14 +1629,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL : ANIM_H_JUMPS_V_STRETCH,
         .backPic = gMonBackPic_Betamon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 14 : 12,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_STRETCH,
         .palette = gMonPalette_Betamon,
         .shinyPalette = gMonShinyPalette_Betamon,
         .iconSprite = gMonIcon_Betamon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-1, 1, SHADOW_SIZE_M)
+        SHADOW(2, 0, SHADOW_SIZE_L)
         FOOTPRINT(Betamon)
         OVERWORLD(
             sPicTable_Betamon,
@@ -7496,7 +7496,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Gabumon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 48),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 9,
+        .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 30),
             ANIMCMD_FRAME(0, 20),
@@ -7504,14 +7504,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_V_STRETCH : ANIM_H_STRETCH,
         .backPic = gMonBackPic_Gabumon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 0,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
         .palette = gMonPalette_Gabumon,
         .shinyPalette = gMonShinyPalette_Gabumon,
         .iconSprite = gMonIcon_Gabumon,
         .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 2, SHADOW_SIZE_M)
+        SHADOW(0, 9, SHADOW_SIZE_M)
         FOOTPRINT(Gabumon)
         OVERWORLD(
             sPicTable_Gabumon,
@@ -8156,7 +8156,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Gizamon,
         .frontPicSize = MON_COORDS_SIZE(40, 64),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 3 : 2,
+        .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 40),
             ANIMCMD_FRAME(0, 20),
@@ -8164,14 +8164,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontAnimId = ANIM_V_STRETCH,
         .backPic = gMonBackPic_Gizamon,
         .backPicSize = MON_COORDS_SIZE(48, 64),
-        .backPicYOffset = 3,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
         .palette = gMonPalette_Gizamon,
         .shinyPalette = gMonShinyPalette_Gizamon,
         .iconSprite = gMonIcon_Gizamon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-2, 10, SHADOW_SIZE_S)
+        SHADOW(0, -1, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Gizamon)
         OVERWORLD(
             sPicTable_Gizamon,
@@ -8622,7 +8622,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Guilmon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 48),
-        .frontPicYOffset = 11,
+        .frontPicYOffset = 3,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 11),
             ANIMCMD_FRAME(1, 10),
@@ -8633,14 +8633,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontAnimId = ANIM_V_SLIDE_WOBBLE_SMALL,
         .backPic = gMonBackPic_Guilmon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 48) : MON_COORDS_SIZE(64, 56),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 6,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
         .palette = gMonPalette_Guilmon,
         .shinyPalette = gMonShinyPalette_Guilmon,
         .iconSprite = gMonIcon_Guilmon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(5, 4, SHADOW_SIZE_M)
+        SHADOW(2, 7, SHADOW_SIZE_L)
         FOOTPRINT(Guilmon)
         OVERWORLD(
             sPicTable_Guilmon,
@@ -11126,82 +11126,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     },
 
 #if P_FAMILY_LOPMONX
-#if P_GEN_3_CROSS_EVOS
-    [SPECIES_EXVEEMON] =
-    {
-        .baseHP        = 76,
-        .baseAttack    = 88,
-        .baseDefense   = 70,
-        .baseSpeed     = 71,
-        .baseSpAttack  = 76,
-        .baseSpDefense = 69,
-        .types = MON_TYPES(TYPE_DRAGON),
-        .attribute = TYPE_VACCINE,
-        .catchRate = 115,
-        .expYield = 150,
-        .evYield_HP        = 1,
-        .evYield_Attack    = 2,
-        .evYield_SpAttack  = 1,
-        .genderRatio = MON_GENDERLESS,
-        .eggCycles = 20,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_VITAL_SPIRIT, ABILITY_VICTORY_STAR, ABILITY_COMPETITIVE },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Exveemon"),
-        .cryId = CRY_EXVEEMON,
-        .natDexNum = NATIONAL_DEX_EXVEEMON,
-        .categoryName = _("Dragon Man"),
-        .height = 45,
-        .weight = 1432,
-        .description = COMPOUND_STRING(
-            "ExVeemon is the purebred form of Veedramon\n"
-            "making it the true form in some peoples eyes.\n"
-            "Its legs and arms are incredibly developed\n"
-            "letting it destory foes with ease."),
-        .pokemonScale = 484,
-        .pokemonOffset = 19,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Exveemon,
-        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 40) : MON_COORDS_SIZE(48, 40),
-        .frontPicYOffset = 12,
-        .frontAnimFrames = ANIM_FRAMES(
-            ANIMCMD_FRAME(0, 15),
-            ANIMCMD_FRAME(1, 15),
-            ANIMCMD_FRAME(0, 15),
-            ANIMCMD_FRAME(1, 15),
-            ANIMCMD_FRAME(0, 15),
-        ),
-        .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
-        .frontAnimDelay = 15,
-        .backPic = gMonBackPic_Exveemon,
-        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(48, 48),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 7 : 11,
-        .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Exveemon,
-        .shinyPalette = gMonShinyPalette_Exveemon,
-        .iconSprite = gMonIcon_Exveemon,
-        .iconPalIndex = 0,
-        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
-        SHADOW(-1, 2, SHADOW_SIZE_S)
-        FOOTPRINT(Exveemon)
-        OVERWORLD(
-            sPicTable_Exveemon,
-            SIZE_32x32,
-            SHADOW_SIZE_M,
-            TRACKS_FOOT,
-            sAnimTable_Following,
-            gOverworldPalette_Exveemon,
-            gShinyOverworldPalette_Exveemon
-        )
-        .tmIlliterate = TRUE,
-        .levelUpLearnset = sExveemonLevelUpLearnset,
-        .teachableLearnset = sExveemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_EXVEEMON_VIRUS}),
-    },
-#endif //P_GEN_3_CROSS_EVOS
 
     [SPECIES_LOPMONX] =
     {
@@ -13332,7 +13256,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Palmon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(32, 24) : MON_COORDS_SIZE(40, 32),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 20 : 18,
+        .frontPicYOffset = 1,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 10),
             ANIMCMD_FRAME(0, 10),
@@ -13342,14 +13266,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Palmon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 24) : MON_COORDS_SIZE(56, 40),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 21 : 15,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
         .palette = gMonPalette_Palmon,
         .shinyPalette = gMonShinyPalette_Palmon,
         .iconSprite = gMonIcon_Palmon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
-        SHADOW(-3, -6, SHADOW_SIZE_S)
+        SHADOW(-1, -9, SHADOW_SIZE_M)
         FOOTPRINT(Palmon)
         OVERWORLD(
             sPicTable_Palmon,
@@ -16993,7 +16917,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Veemon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(32, 40) : MON_COORDS_SIZE(40, 40),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 14 : 12,
+        .frontPicYOffset = 5,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 22),
             ANIMCMD_FRAME(1, 35),
@@ -17002,14 +16926,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Veemon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 56),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 11 : 6,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_STRETCH,
         .palette = gMonPalette_Veemon,
         .shinyPalette = gMonShinyPalette_Veemon,
         .iconSprite = gMonIcon_Veemon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
-        SHADOW(0, 1, SHADOW_SIZE_S)
+        SHADOW(-1, 7, SHADOW_SIZE_M)
         FOOTPRINT(Veemon)
         OVERWORLD(
             sPicTable_Veemon,
@@ -17231,7 +17155,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Wormmon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 32) : MON_COORDS_SIZE(56, 48),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 16 : 10,
+        .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 10),
             ANIMCMD_FRAME(1, 10),
@@ -17242,14 +17166,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontAnimId = ANIM_V_SLIDE,
         .backPic = gMonBackPic_Wormmon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 24) : MON_COORDS_SIZE(56, 40),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 20 : 15,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_H_SHAKE,
         .palette = gMonPalette_Wormmon,
         .shinyPalette = gMonShinyPalette_Wormmon,
         .iconSprite = gMonIcon_Wormmon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
-        SHADOW(0, -4, SHADOW_SIZE_M)
+        SHADOW(2, 6, SHADOW_SIZE_S)
         FOOTPRINT(Wormmon)
         OVERWORLD(
             sPicTable_Wormmon,

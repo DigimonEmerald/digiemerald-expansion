@@ -4361,3 +4361,14 @@ void GetCodeFeedback(void)
     else
         gSpecialVar_Result = 0;
 }
+
+void FillPokedex(void)
+{
+    u16 i;
+
+    for (i = SPECIES_ARGOMON_F; i <= SPECIES_PECHARUNT; i++)
+    {
+        GetSetPokedexFlag(i, FLAG_SET_SEEN);
+        GetSetPokedexFlag(i, FLAG_SET_CAUGHT);
+    }
+}

@@ -727,14 +727,14 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .frontAnimId = ANIM_V_SHAKE,
         .backPic = gMonBackPic_Skullgreymon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
-        .backPicYOffset = 8,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHAKE_GLOW_BLUE,
         .palette = gMonPalette_Skullgreymon,
         .shinyPalette = gMonShinyPalette_Skullgreymon,
         .iconSprite = gMonIcon_Skullgreymon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-2, 13, SHADOW_SIZE_L)
+        SHADOW(1, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Skullgreymon)
         OVERWORLD(
             sPicTable_Skullgreymon,

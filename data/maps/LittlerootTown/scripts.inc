@@ -2037,8 +2037,12 @@ LittlerootTown_EventScript_Test::
 # 1022 "data/maps/LittlerootTown/scripts.pory"
 	msgbox LittlerootTown_EventScript_Test_Text_0
 # 1023 "data/maps/LittlerootTown/scripts.pory"
-	givemon SPECIES_MERAMON, 5
+	setflag FLAG_SYS_NATIONAL_DEX
 # 1024 "data/maps/LittlerootTown/scripts.pory"
+	special EnableNationalPokedex
+# 1025 "data/maps/LittlerootTown/scripts.pory"
+	special FillPokedex
+# 1026 "data/maps/LittlerootTown/scripts.pory"
 	release
 	return
 
