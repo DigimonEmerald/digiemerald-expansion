@@ -2382,10 +2382,10 @@ $(POKEMONGFXDIR)/raidramon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/raidramon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/luxray/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/togemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/luxray/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/togemon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/budew/overworld.4bpp: %.4bpp: %.png

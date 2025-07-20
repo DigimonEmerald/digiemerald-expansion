@@ -413,7 +413,7 @@
 #define SPECIES_LEOMON                              402
 #define SPECIES_SHADRAMON                                   403
 #define SPECIES_RAIDRAMON                                   404
-#define SPECIES_LUXRAY                                  405
+#define SPECIES_TOGEMON                                  405
 #define SPECIES_BUDEW                                   406
 #define SPECIES_ROSERADE                                407
 #define SPECIES_CRANIDOS                                408

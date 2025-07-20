@@ -14365,27 +14365,27 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
-    const u32 gMonFrontPic_Luxray[] = INCBIN_U32("graphics/pokemon/luxray/anim_front.4bpp.lz");
-    const u16 gMonPalette_Luxray[] = INCBIN_U16("graphics/pokemon/luxray/normal.gbapal");
-    const u32 gMonBackPic_Luxray[] = INCBIN_U32("graphics/pokemon/luxray/back.4bpp.lz");
-    const u16 gMonShinyPalette_Luxray[] = INCBIN_U16("graphics/pokemon/luxray/shiny.gbapal");
-    const u8 gMonIcon_Luxray[] = INCBIN_U8("graphics/pokemon/luxray/icon.4bpp");
+    const u32 gMonFrontPic_Togemon[] = INCBIN_U32("graphics/pokemon/togemon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Togemon[] = INCBIN_U16("graphics/pokemon/togemon/normal.gbapal");
+    const u32 gMonBackPic_Togemon[] = INCBIN_U32("graphics/pokemon/togemon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Togemon[] = INCBIN_U16("graphics/pokemon/togemon/shiny.gbapal");
+    const u8 gMonIcon_Togemon[] = INCBIN_U8("graphics/pokemon/togemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Luxray[] = INCBIN_U8("graphics/pokemon/luxray/footprint.1bpp");
+    const u8 gMonFootprint_Togemon[] = INCBIN_U8("graphics/pokemon/togemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Luxray[] = INCBIN_COMP("graphics/pokemon/luxray/overworld.4bpp");
+    const u32 gObjectEventPic_Togemon[] = INCBIN_COMP("graphics/pokemon/togemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Luxray[] = INCBIN_U16("graphics/pokemon/luxray/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Luxray[] = INCBIN_U16("graphics/pokemon/luxray/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Togemon[] = INCBIN_U16("graphics/pokemon/togemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Togemon[] = INCBIN_U16("graphics/pokemon/togemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_LuxrayF[] = INCBIN_U32("graphics/pokemon/luxray/anim_frontf.4bpp.lz");
-    const u32 gMonBackPic_LuxrayF[] = INCBIN_U32("graphics/pokemon/luxray/backf.4bpp.lz");
+    const u32 gMonFrontPic_TogemonF[] = INCBIN_U32("graphics/pokemon/togemon/anim_frontf.4bpp.lz");
+    const u32 gMonBackPic_TogemonF[] = INCBIN_U32("graphics/pokemon/togemon/backf.4bpp.lz");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_LuxrayF[] = INCBIN_COMP("graphics/pokemon/luxray/overworldf.4bpp");
+    const u32 gObjectEventPic_TogemonF[] = INCBIN_COMP("graphics/pokemon/togemon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_SHADRAMON

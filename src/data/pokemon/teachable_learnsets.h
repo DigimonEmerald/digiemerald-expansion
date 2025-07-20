@@ -18697,7 +18697,7 @@ static const u16 sRaidramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sLuxrayTeachableLearnset[] = {
+static const u16 sTogemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_DOUBLE_EDGE,

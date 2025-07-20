@@ -12702,52 +12702,49 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sRaidramonLevelUpLearnset,
         .teachableLearnset = sRaidramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_LUXRAY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_TOGEMON}),
     },
 
-    [SPECIES_LUXRAY] =
+    [SPECIES_TOGEMON] =
     {
-        .baseHP        = 80,
-        .baseAttack    = 120,
-        .baseDefense   = 79,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 79,
-        .types = MON_TYPES(TYPE_ELECTRIC),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 262,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 235,
-    #else
-        .expYield = 194,
-    #endif
-        .evYield_Attack = 3,
+        .baseHP        = 75,
+        .baseAttack    = 80,
+        .baseDefense   = 75,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 45,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FIGHTING),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP = 1,
+        .evYield_Attack = 2,
+        .evYield_Defense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_RIVALRY, ABILITY_INTIMIDATE, ABILITY_GUTS },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Luxray"),
-        .cryId = CRY_LUXRAY,
-        .natDexNum = NATIONAL_DEX_LUXRAY,
-        .categoryName = _("Gleam Eyes"),
-        .height = 14,
-        .weight = 420,
+        .abilities = { ABILITY_IRON_FIST, ABILITY_ROUGH_SKIN, ABILITY_WATER_ABSORB },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Togemon"),
+        .cryId = CRY_TOGEMON,
+        .natDexNum = NATIONAL_DEX_TOGEMON,
+        .categoryName = _("Cactus"),
+        .height = 28,
+        .weight = 915,
         .description = COMPOUND_STRING(
-            "It has eyes which can see through\n"
-            "anything. Luxray's ability to see\n"
-            "through objects comes in handy when\n"
-            "it's scouting for danger."),
+            "Storing nutrient data within its\n"
+            "body, Togemon can survive for a long\n"
+            "time in harsh environments. Its face\n"
+            "makes it hard to discern its emotions."),
         .pokemonScale = 265,
         .pokemonOffset = 2,
         .trainerScale = 262,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Luxray,
+        .frontPic = gMonFrontPic_Togemon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 2,
+        .frontPicYOffset = 1,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 15),
             ANIMCMD_FRAME(1, 20),
@@ -12756,41 +12753,41 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_GLOW_YELLOW,
-        .backPic = gMonBackPic_Luxray,
+        .backPic = gMonBackPic_Togemon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Luxray,
-        .shinyPalette = gMonShinyPalette_Luxray,
-        .iconSprite = gMonIcon_Luxray,
+        .palette = gMonPalette_Togemon,
+        .shinyPalette = gMonShinyPalette_Togemon,
+        .iconSprite = gMonIcon_Togemon,
         .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_LuxrayF,
+        .frontPicFemale = gMonFrontPic_TogemonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
-        .backPicFemale = gMonBackPic_LuxrayF,
+        .backPicFemale = gMonBackPic_TogemonF,
         .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 10, SHADOW_SIZE_L)
-        FOOTPRINT(Luxray)
+        FOOTPRINT(Togemon)
         OVERWORLD(
-            sPicTable_Luxray,
+            sPicTable_Togemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Luxray,
-            gShinyOverworldPalette_Luxray
+            gOverworldPalette_Togemon,
+            gShinyOverworldPalette_Togemon
         )
         OVERWORLD_FEMALE(
-            sPicTable_LuxrayF,
+            sPicTable_TogemonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sLuxrayLevelUpLearnset,
-        .teachableLearnset = sLuxrayTeachableLearnset,
+        .levelUpLearnset = sTogemonLevelUpLearnset,
+        .teachableLearnset = sTogemonTeachableLearnset,
     },
 #endif //P_FAMILY_SHADRAMON
 

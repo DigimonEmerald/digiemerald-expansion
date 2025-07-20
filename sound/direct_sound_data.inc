@@ -2980,8 +2980,8 @@ Cry_Raidramon::
 	.incbin "sound/direct_sound_samples/cries/raidramon.bin"
 
 	.align 2
-Cry_Luxray::
-	.incbin "sound/direct_sound_samples/cries/luxray.bin"
+Cry_Togemon::
+	.incbin "sound/direct_sound_samples/cries/togemon.bin"
 .endif @ P_FAMILY_SHADRAMON
 
 .if P_FAMILY_CRANIDOS == TRUE

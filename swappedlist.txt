@@ -415,6 +415,7 @@ Kuwagamon - Kricketot
 Leomon - Kricketune
 Shadramon - Shinx
 Raidramon - Luxio
+Togemon - Luxray
 
 Ultimate List
 
