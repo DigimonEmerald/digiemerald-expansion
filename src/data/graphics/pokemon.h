@@ -16353,33 +16353,33 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Unfezant[] = INCBIN_U32("graphics/pokemon/unfezant/anim_front.4bpp.lz");
-    const u16 gMonPalette_Unfezant[] = INCBIN_U16("graphics/pokemon/unfezant/normal.gbapal");
-    const u32 gMonBackPic_Unfezant[] = INCBIN_U32("graphics/pokemon/unfezant/back.4bpp.lz");
-    const u16 gMonShinyPalette_Unfezant[] = INCBIN_U16("graphics/pokemon/unfezant/shiny.gbapal");
-    const u8 gMonIcon_Unfezant[] = INCBIN_U8("graphics/pokemon/unfezant/icon.4bpp");
+    const u32 gMonFrontPic_Paildramon[] = INCBIN_U32("graphics/pokemon/paildramon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Paildramon[] = INCBIN_U16("graphics/pokemon/paildramon/normal.gbapal");
+    const u32 gMonBackPic_Paildramon[] = INCBIN_U32("graphics/pokemon/paildramon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Paildramon[] = INCBIN_U16("graphics/pokemon/paildramon/shiny.gbapal");
+    const u8 gMonIcon_Paildramon[] = INCBIN_U8("graphics/pokemon/paildramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Unfezant[] = INCBIN_U8("graphics/pokemon/unfezant/footprint.1bpp");
+    const u8 gMonFootprint_Paildramon[] = INCBIN_U8("graphics/pokemon/paildramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Unfezant[] = INCBIN_COMP("graphics/pokemon/unfezant/overworld.4bpp");
+    const u32 gObjectEventPic_Paildramon[] = INCBIN_COMP("graphics/pokemon/paildramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Unfezant[] = INCBIN_U16("graphics/pokemon/unfezant/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Unfezant[] = INCBIN_U16("graphics/pokemon/unfezant/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Paildramon[] = INCBIN_U16("graphics/pokemon/paildramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Paildramon[] = INCBIN_U16("graphics/pokemon/paildramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_UnfezantF[] = INCBIN_U32("graphics/pokemon/unfezant/anim_frontf.4bpp.lz");
-    const u16 gMonPalette_UnfezantF[] = INCBIN_U16("graphics/pokemon/unfezant/normalf.gbapal");
-    const u32 gMonBackPic_UnfezantF[] = INCBIN_U32("graphics/pokemon/unfezant/backf.4bpp.lz");
-    const u16 gMonShinyPalette_UnfezantF[] = INCBIN_U16("graphics/pokemon/unfezant/shinyf.gbapal");
-    const u8 gMonIcon_UnfezantF[] = INCBIN_U8("graphics/pokemon/unfezant/iconf.4bpp");
+    const u32 gMonFrontPic_PaildramonF[] = INCBIN_U32("graphics/pokemon/paildramon/anim_frontf.4bpp.lz");
+    const u16 gMonPalette_PaildramonF[] = INCBIN_U16("graphics/pokemon/paildramon/normalf.gbapal");
+    const u32 gMonBackPic_PaildramonF[] = INCBIN_U32("graphics/pokemon/paildramon/backf.4bpp.lz");
+    const u16 gMonShinyPalette_PaildramonF[] = INCBIN_U16("graphics/pokemon/paildramon/shinyf.gbapal");
+    const u8 gMonIcon_PaildramonF[] = INCBIN_U8("graphics/pokemon/paildramon/iconf.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_UnfezantF[] = INCBIN_COMP("graphics/pokemon/unfezant/overworldf.4bpp");
+    const u32 gObjectEventPic_PaildramonF[] = INCBIN_COMP("graphics/pokemon/paildramon/overworldf.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_UnfezantF[] = INCBIN_U16("graphics/pokemon/unfezant/overworld_normalf.gbapal");
-    const u16 gShinyOverworldPalette_UnfezantF[] = INCBIN_U16("graphics/pokemon/unfezant/overworld_shinyf.gbapal");
+    const u16 gOverworldPalette_PaildramonF[] = INCBIN_U16("graphics/pokemon/paildramon/overworld_normalf.gbapal");
+    const u16 gShinyOverworldPalette_PaildramonF[] = INCBIN_U16("graphics/pokemon/paildramon/overworld_shinyf.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES

@@ -3454,8 +3454,8 @@ Cry_Dinobeemon::
 	.incbin "sound/direct_sound_samples/cries/dinobeemon.bin"
 
 	.align 2
-Cry_Unfezant::
-	.incbin "sound/direct_sound_samples/cries/unfezant.bin"
+Cry_Paildramon::
+	.incbin "sound/direct_sound_samples/cries/paildramon.bin"
 .endif @ P_FAMILY_WEREGARURUMON
 
 .if P_FAMILY_BLITZLE == TRUE

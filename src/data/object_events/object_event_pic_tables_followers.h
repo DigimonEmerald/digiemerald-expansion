@@ -3808,12 +3808,12 @@ static const struct SpriteFrameImage sPicTable_Dinobeemon[] = {
     overworld_ascending_frames(gObjectEventPic_Dinobeemon, 4, 4),
 };
 
-static const struct SpriteFrameImage sPicTable_Unfezant[] = {
-    overworld_ascending_frames(gObjectEventPic_Unfezant, 4, 4),
+static const struct SpriteFrameImage sPicTable_Paildramon[] = {
+    overworld_ascending_frames(gObjectEventPic_Paildramon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_UnfezantF[] = {
-    overworld_ascending_frames(gObjectEventPic_UnfezantF, 4, 4),
+static const struct SpriteFrameImage sPicTable_PaildramonF[] = {
+    overworld_ascending_frames(gObjectEventPic_PaildramonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_WEREGARURUMON

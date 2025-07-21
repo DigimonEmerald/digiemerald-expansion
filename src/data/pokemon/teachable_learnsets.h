@@ -21872,7 +21872,7 @@ static const u16 sDinobeemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sUnfezantTeachableLearnset[] = {
+static const u16 sPaildramonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,

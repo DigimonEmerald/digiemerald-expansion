@@ -538,7 +538,7 @@
 #define SPECIES_METALGREYMON                                518
 #define SPECIES_WEREGARURUMON                                  519
 #define SPECIES_DINOBEEMON                               520
-#define SPECIES_UNFEZANT                                521
+#define SPECIES_PAILDRAMON                                521
 #define SPECIES_BLITZLE                                 522
 #define SPECIES_ZEBSTRIKA                               523
 #define SPECIES_ROGGENROLA                              524

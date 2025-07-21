@@ -1997,6 +1997,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .catchRate = 95,
         .expYield = 200,
         .evYield_Attack = 2,
+        .evYield_Speed = 2,
+        .evYield_SpAttack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
@@ -2050,50 +2052,46 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sDinobeemonLevelUpLearnset,
         .teachableLearnset = sDinobeemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_UNFEZANT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_PAILDRAMON}),
     },
 
-    [SPECIES_UNFEZANT] =
+    [SPECIES_PAILDRAMON] =
     {
-        .baseHP        = 80,
-        .baseAttack    = P_UPDATED_STATS >= GEN_6 ? 115 : 105,
-        .baseDefense   = 80,
-        .baseSpeed     = 93,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
+        .baseHP        = 70,
+        .baseAttack    = 85,
+        .baseDefense   = 75,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 115,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_BUG),
+        .attribute = TYPE_FREE,
         .catchRate = 95,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 244,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 220,
-    #else
-        .expYield = 215,
-    #endif
-        .evYield_Attack = 3,
+        .expYield = 200,
+        .evYield_Speed = 2,
+        .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_BIG_PECKS, ABILITY_SUPER_LUCK, ABILITY_RIVALRY },
-        .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Unfezant"),
-        .cryId = CRY_UNFEZANT,
-        .natDexNum = NATIONAL_DEX_UNFEZANT,
-        .categoryName = _("Proud"),
-        .height = 12,
-        .weight = 290,
+        .abilities = { ABILITY_GUTS, ABILITY_TECHNICIAN, ABILITY_MEGA_LAUNCHER },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Paildramon"),
+        .cryId = CRY_PAILDRAMON,
+        .natDexNum = NATIONAL_DEX_PAILDRAMON,
+        .categoryName = _("Dragon Man"),
+        .height = 89,
+        .weight = 2103,
         .description = COMPOUND_STRING(
-            "Males have plumage on their heads.\n"
-            "The females' flying abilities surpass\n"
-            "those of the males. They will only let\n"
-            "themselves feel close to their Trainers."),
+            "Unlike Dinobeemon, Paildramon is a more\n"
+            "stable jogress evolution giving it\n"
+            "greater control of itself. It has an\n"
+            "unquestioning loyalty for its tamer."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Unfezant,
+        .frontPic = gMonFrontPic_Paildramon,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2102,47 +2100,47 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_SHRINK_GROW,
-        .backPic = gMonBackPic_Unfezant,
+        .backPic = gMonBackPic_Paildramon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 1,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Unfezant,
-        .shinyPalette = gMonShinyPalette_Unfezant,
-        .iconSprite = gMonIcon_Unfezant,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Paildramon,
+        .shinyPalette = gMonShinyPalette_Paildramon,
+        .iconSprite = gMonIcon_Paildramon,
+        .iconPalIndex = 4,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_UnfezantF,
+        .frontPicFemale = gMonFrontPic_PaildramonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 64),
-        .backPicFemale = gMonBackPic_UnfezantF,
+        .backPicFemale = gMonBackPic_PaildramonF,
         .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
-        .paletteFemale = gMonPalette_UnfezantF,
-        .shinyPaletteFemale = gMonShinyPalette_UnfezantF,
-        .iconSpriteFemale = gMonIcon_UnfezantF,
+        .paletteFemale = gMonPalette_PaildramonF,
+        .shinyPaletteFemale = gMonShinyPalette_PaildramonF,
+        .iconSpriteFemale = gMonIcon_PaildramonF,
         .iconPalIndexFemale = 1,
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-2, 12, SHADOW_SIZE_M)
-        FOOTPRINT(Unfezant)
+        SHADOW(1, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Paildramon)
         OVERWORLD(
-            sPicTable_Unfezant,
+            sPicTable_Paildramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Unfezant,
-            gShinyOverworldPalette_Unfezant
+            gOverworldPalette_Paildramon,
+            gShinyOverworldPalette_Paildramon
         )
         OVERWORLD_FEMALE(
-            sPicTable_UnfezantF,
+            sPicTable_PaildramonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_UnfezantF,
-            gShinyOverworldPalette_UnfezantF
+            gOverworldPalette_PaildramonF,
+            gShinyOverworldPalette_PaildramonF
         )
-        .levelUpLearnset = sUnfezantLevelUpLearnset,
-        .teachableLearnset = sUnfezantTeachableLearnset,
+        .levelUpLearnset = sPaildramonLevelUpLearnset,
+        .teachableLearnset = sPaildramonTeachableLearnset,
     },
 #endif //P_FAMILY_WEREGARURUMON
 

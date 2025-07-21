@@ -6531,7 +6531,7 @@ static const union AnimCmd sAnim_Dinobeemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Unfezant_1[] =
+static const union AnimCmd sAnim_Paildramon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 20),
@@ -11652,7 +11652,7 @@ SINGLE_ANIMATION(Metalgreymon);
 #if P_FAMILY_WEREGARURUMON
 SINGLE_ANIMATION(Weregarurumon);
 SINGLE_ANIMATION(Dinobeemon);
-SINGLE_ANIMATION(Unfezant);
+SINGLE_ANIMATION(Paildramon);
 #endif //P_FAMILY_WEREGARURUMON
 #if P_FAMILY_BLITZLE
 SINGLE_ANIMATION(Blitzle);
