@@ -3450,8 +3450,8 @@ Cry_Weregarurumon::
 	.incbin "sound/direct_sound_samples/cries/weregarurumon.bin"
 
 	.align 2
-Cry_Tranquill::
-	.incbin "sound/direct_sound_samples/cries/tranquill.bin"
+Cry_Dinobeemon::
+	.incbin "sound/direct_sound_samples/cries/dinobeemon.bin"
 
 	.align 2
 Cry_Unfezant::

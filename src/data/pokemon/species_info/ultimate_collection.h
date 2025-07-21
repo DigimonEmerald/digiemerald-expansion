@@ -1981,74 +1981,75 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sWeregarurumonLevelUpLearnset,
         .teachableLearnset = sWeregarurumonTeachableLearnset,
         .eggMoveLearnset = sWeregarurumonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_TRANQUILL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_DINOBEEMON}),
     },
 
-    [SPECIES_TRANQUILL] =
+    [SPECIES_DINOBEEMON] =
     {
-        .baseHP        = 62,
-        .baseAttack    = 77,
-        .baseDefense   = 62,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 42,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
+        .baseHP        = 65,
+        .baseAttack    = 120,
+        .baseDefense   = 75,
+        .baseSpeed     = 120,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_BUG),
+        .attribute = TYPE_FREE,
         .catchRate = 95,
-        .expYield = 125,
+        .expYield = 200,
         .evYield_Attack = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_BIG_PECKS, ABILITY_SUPER_LUCK, ABILITY_RIVALRY },
-        .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Tranquill"),
-        .cryId = CRY_TRANQUILL,
-        .natDexNum = NATIONAL_DEX_TRANQUILL,
-        .categoryName = _("Wild Pigeon"),
-        .height = 6,
-        .weight = 150,
+        .abilities = { ABILITY_SWARM, ABILITY_TECHNICIAN, ABILITY_CONTRARY },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Dinobeemon"),
+        .cryId = CRY_DINOBEEMON,
+        .natDexNum = NATIONAL_DEX_DINOBEEMON,
+        .categoryName = _("Terrible Bee"),
+        .height = 70,
+        .weight = 1946,
         .description = COMPOUND_STRING(
-            "No matter where in the world it goes,\n"
-            "it knows where its nest is, so it can\n"
-            "always return to its Trainer's location\n"
-            "regardless of the distance."),
+            "One of the possible jogress evolutions\n"
+            "that come from ExVeemon and Stingmon.\n"
+            "Dinobeemon is hard to classify as its\n"
+            "Dragon and Insect data are conflicted."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Tranquill,
+        .frontPic = gMonFrontPic_Dinobeemon,
         .frontPicSize = MON_COORDS_SIZE(40, 56),
-        .frontPicYOffset = 7,
+        .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 1),
             ANIMCMD_FRAME(1, 36),
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Tranquill,
+        .backPic = gMonBackPic_Dinobeemon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
-        .backPicYOffset = 9,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Tranquill,
-        .shinyPalette = gMonShinyPalette_Tranquill,
-        .iconSprite = gMonIcon_Tranquill,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Dinobeemon,
+        .shinyPalette = gMonShinyPalette_Dinobeemon,
+        .iconSprite = gMonIcon_Dinobeemon,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 6, SHADOW_SIZE_S)
-        FOOTPRINT(Tranquill)
+        SHADOW(-2, 7, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Dinobeemon)
         OVERWORLD(
-            sPicTable_Tranquill,
+            sPicTable_Dinobeemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Tranquill,
-            gShinyOverworldPalette_Tranquill
+            gOverworldPalette_Dinobeemon,
+            gShinyOverworldPalette_Dinobeemon
         )
-        .levelUpLearnset = sTranquillLevelUpLearnset,
-        .teachableLearnset = sTranquillTeachableLearnset,
+        .levelUpLearnset = sDinobeemonLevelUpLearnset,
+        .teachableLearnset = sDinobeemonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_UNFEZANT}),
     },
 

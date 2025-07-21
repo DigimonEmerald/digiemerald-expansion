@@ -1308,7 +1308,7 @@ gCryTable::
 .endif @ P_FAMILY_MAMMOTHMON
 .if P_FAMILY_WEREGARURUMON == TRUE
 	cry Cry_Weregarurumon
-	cry Cry_Tranquill
+	cry Cry_Dinobeemon
 	cry Cry_Unfezant
 .endif @ P_FAMILY_WEREGARURUMON
 .if P_FAMILY_BLITZLE == TRUE
@@ -3736,7 +3736,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_MAMMOTHMON
 .if P_FAMILY_WEREGARURUMON == TRUE
 	cry_reverse Cry_Weregarurumon
-	cry_reverse Cry_Tranquill
+	cry_reverse Cry_Dinobeemon
 	cry_reverse Cry_Unfezant
 .endif @ P_FAMILY_WEREGARURUMON
 .if P_FAMILY_BLITZLE == TRUE

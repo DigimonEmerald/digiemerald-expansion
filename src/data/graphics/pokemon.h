@@ -16337,19 +16337,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Tranquill[] = INCBIN_U32("graphics/pokemon/tranquill/anim_front.4bpp.lz");
-    const u16 gMonPalette_Tranquill[] = INCBIN_U16("graphics/pokemon/tranquill/normal.gbapal");
-    const u32 gMonBackPic_Tranquill[] = INCBIN_U32("graphics/pokemon/tranquill/back.4bpp.lz");
-    const u16 gMonShinyPalette_Tranquill[] = INCBIN_U16("graphics/pokemon/tranquill/shiny.gbapal");
-    const u8 gMonIcon_Tranquill[] = INCBIN_U8("graphics/pokemon/tranquill/icon.4bpp");
+    const u32 gMonFrontPic_Dinobeemon[] = INCBIN_U32("graphics/pokemon/dinobeemon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Dinobeemon[] = INCBIN_U16("graphics/pokemon/dinobeemon/normal.gbapal");
+    const u32 gMonBackPic_Dinobeemon[] = INCBIN_U32("graphics/pokemon/dinobeemon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Dinobeemon[] = INCBIN_U16("graphics/pokemon/dinobeemon/shiny.gbapal");
+    const u8 gMonIcon_Dinobeemon[] = INCBIN_U8("graphics/pokemon/dinobeemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Tranquill[] = INCBIN_U8("graphics/pokemon/tranquill/footprint.1bpp");
+    const u8 gMonFootprint_Dinobeemon[] = INCBIN_U8("graphics/pokemon/dinobeemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Tranquill[] = INCBIN_COMP("graphics/pokemon/tranquill/overworld.4bpp");
+    const u32 gObjectEventPic_Dinobeemon[] = INCBIN_COMP("graphics/pokemon/dinobeemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Tranquill[] = INCBIN_U16("graphics/pokemon/tranquill/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Tranquill[] = INCBIN_U16("graphics/pokemon/tranquill/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Dinobeemon[] = INCBIN_U16("graphics/pokemon/dinobeemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Dinobeemon[] = INCBIN_U16("graphics/pokemon/dinobeemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
