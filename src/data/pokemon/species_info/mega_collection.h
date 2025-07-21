@@ -365,44 +365,46 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sMetalgarurumonLevelUpLearnset,
         .teachableLearnset = sMetalgarurumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_DELPHOX}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_OMNIMON}),
     },
 
-    [SPECIES_DELPHOX] =
+    [SPECIES_OMNIMON] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 69,
-        .baseDefense   = 72,
-        .baseSpeed     = 104,
-        .baseSpAttack  = 114,
+        .baseHP        = 100,
+        .baseAttack    = 130,
+        .baseDefense   = 100,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 130,
         .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_FIRE, TYPE_PSYCHIC),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 267 : 240,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_ICE),
+        .attribute = TYPE_VACCINE, 
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_Attack = 3,
         .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_MAGICIAN },
-        .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Delphox"),
-        .cryId = CRY_DELPHOX,
-        .natDexNum = NATIONAL_DEX_DELPHOX,
-        .categoryName = _("Fox"),
-        .height = 15,
-        .weight = 390,
+        .abilities = { ABILITY_BLAZE, ABILITY_NONE, ABILITY_MAGICIAN }, // Royal Knight, Holy Royal Knight
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Omnimon"),
+        .cryId = CRY_OMNIMON,
+        .natDexNum = NATIONAL_DEX_OMNIMON,
+        .categoryName = _("Royal Knight"),
+        .height = 69,
+        .weight = 3953,
         .description = COMPOUND_STRING(
-            "It gazes into the flame at the tip of its\n"
-            "branch to achieve a focused state, which\n"
-            "allows it to see into the future. It uses\n"
-            "psychic power to incinerate its foes."),
+            "Omnimon is a member of the royal knights\n"
+            "whos duty is protect Yggdrasills justice.\n"
+            "Its use the powers of both WarGreymon\n"
+            "and MetalGarurumon to fulfil this duty."),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Delphox,
+        .frontPic = gMonFrontPic_Omnimon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -415,28 +417,29 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Delphox,
+        .enemyMonElevation = 3,
+        .backPic = gMonBackPic_Omnimon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 3,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_GROW_STUTTER,
-        .palette = gMonPalette_Delphox,
-        .shinyPalette = gMonShinyPalette_Delphox,
-        .iconSprite = gMonIcon_Delphox,
+        .palette = gMonPalette_Omnimon,
+        .shinyPalette = gMonShinyPalette_Omnimon,
+        .iconSprite = gMonIcon_Omnimon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(7, 14, SHADOW_SIZE_M)
-        FOOTPRINT(Delphox)
+        SHADOW(3, 12, SHADOW_SIZE_L)
+        FOOTPRINT(Omnimon)
         OVERWORLD(
-            sPicTable_Delphox,
+            sPicTable_Omnimon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Delphox,
-            gShinyOverworldPalette_Delphox
+            gOverworldPalette_Omnimon,
+            gShinyOverworldPalette_Omnimon
         )
-        .levelUpLearnset = sDelphoxLevelUpLearnset,
-        .teachableLearnset = sDelphoxTeachableLearnset,
+        .levelUpLearnset = sOmnimonLevelUpLearnset,
+        .teachableLearnset = sOmnimonTeachableLearnset,
     },
 #endif //P_FAMILY_WARGREYMON
 

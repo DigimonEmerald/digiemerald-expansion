@@ -4183,8 +4183,8 @@ Cry_Metalgarurumon::
 	.incbin "sound/direct_sound_samples/cries/metalgarurumon.bin"
 
 	.align 2
-Cry_Delphox::
-	.incbin "sound/direct_sound_samples/cries/delphox.bin"
+Cry_Omnimon::
+	.incbin "sound/direct_sound_samples/cries/omnimon.bin"
 .endif @ P_FAMILY_WARGREYMON
 
 .if P_FAMILY_FROAKIE == TRUE

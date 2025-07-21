@@ -26442,7 +26442,7 @@ static const u16 sMetalgarurumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDelphoxTeachableLearnset[] = {
+static const u16 sOmnimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_CUT,

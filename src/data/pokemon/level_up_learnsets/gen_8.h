@@ -15362,7 +15362,7 @@ static const struct LevelUpMove sMetalgarurumonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sDelphoxLevelUpLearnset[] = {
+static const struct LevelUpMove sOmnimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_MYSTICAL_FIRE),
     LEVEL_UP_MOVE( 1, MOVE_MYSTICAL_FIRE),
     LEVEL_UP_MOVE( 1, MOVE_FUTURE_SIGHT),

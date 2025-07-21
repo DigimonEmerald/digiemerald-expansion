@@ -681,7 +681,7 @@
 #define SPECIES_MAGNAMON                              652
 #define SPECIES_WARGREYMON                                653
 #define SPECIES_METALGARURUMON                                 654
-#define SPECIES_DELPHOX                                 655
+#define SPECIES_OMNIMON                                 655
 #define SPECIES_FROAKIE                                 656
 #define SPECIES_FROGADIER                               657
 #define SPECIES_GRENINJA                                658

@@ -8146,7 +8146,7 @@ static const union AnimCmd sAnim_Metalgarurumon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Delphox_1[] =
+static const union AnimCmd sAnim_Omnimon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -11974,7 +11974,7 @@ SINGLE_ANIMATION(Magnamon);
 #if P_FAMILY_WARGREYMON
 SINGLE_ANIMATION(Wargreymon);
 SINGLE_ANIMATION(Metalgarurumon);
-SINGLE_ANIMATION(Delphox);
+SINGLE_ANIMATION(Omnimon);
 #endif //P_FAMILY_WARGREYMON
 #if P_FAMILY_FROAKIE
 SINGLE_ANIMATION(Froakie);

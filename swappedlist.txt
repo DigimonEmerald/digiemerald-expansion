@@ -456,5 +456,6 @@ Magnadramon - Quilladin
 Magnamon - Chesnaught
 WarGreymon - Fennekin
 MetalGarurumon - Braixen
+Omnimon - Delphox
 
 SPECIES NAME LENGTH MAX = 13
