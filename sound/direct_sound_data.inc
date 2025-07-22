@@ -4187,10 +4187,10 @@ Cry_Omnimon::
 	.incbin "sound/direct_sound_samples/cries/omnimon.bin"
 .endif @ P_FAMILY_WARGREYMON
 
-.if P_FAMILY_FROAKIE == TRUE
+.if P_FAMILY_CRESGARURUMON == TRUE
 	.align 2
-Cry_Froakie::
-	.incbin "sound/direct_sound_samples/cries/froakie.bin"
+Cry_Cresgarurumon::
+	.incbin "sound/direct_sound_samples/cries/cresgarurumon.bin"
 
 	.align 2
 Cry_Frogadier::
@@ -4199,7 +4199,7 @@ Cry_Frogadier::
 	.align 2
 Cry_Greninja::
 	.incbin "sound/direct_sound_samples/cries/greninja.bin"
-.endif @ P_FAMILY_FROAKIE
+.endif @ P_FAMILY_CRESGARURUMON
 
 .if P_FAMILY_BUNNELBY == TRUE
 	.align 2

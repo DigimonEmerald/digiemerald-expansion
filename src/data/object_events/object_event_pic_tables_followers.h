@@ -4580,9 +4580,9 @@ static const struct SpriteFrameImage sPicTable_Omnimon[] = {
 };
 #endif //P_FAMILY_WARGREYMON
 
-#if P_FAMILY_FROAKIE
-static const struct SpriteFrameImage sPicTable_Froakie[] = {
-    overworld_ascending_frames(gObjectEventPic_Froakie, 4, 4),
+#if P_FAMILY_CRESGARURUMON
+static const struct SpriteFrameImage sPicTable_Cresgarurumon[] = {
+    overworld_ascending_frames(gObjectEventPic_Cresgarurumon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Frogadier[] = {
     overworld_ascending_frames(gObjectEventPic_Frogadier, 4, 4),
@@ -4593,7 +4593,7 @@ static const struct SpriteFrameImage sPicTable_Greninja[] = {
 /*static const struct SpriteFrameImage sPicTable_GreninjaAsh[] = {
     overworld_ascending_frames(gObjectEventPic_GreninjaAsh, 4, 4),
 };*/
-#endif //P_FAMILY_FROAKIE
+#endif //P_FAMILY_CRESGARURUMON
 
 #if P_FAMILY_BUNNELBY
 static const struct SpriteFrameImage sPicTable_Bunnelby[] = {

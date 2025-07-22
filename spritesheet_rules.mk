@@ -3228,7 +3228,7 @@ $(POKEMONGFXDIR)/metalgarurumon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/omnimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/froakie/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/cresgarurumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/frogadier/overworld.4bpp: %.4bpp: %.png

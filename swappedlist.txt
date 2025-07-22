@@ -460,5 +460,6 @@ Magnamon - Chesnaught
 WarGreymon - Fennekin
 MetalGarurumon - Braixen
 Omnimon - Delphox
+CresGarurumon - Froakie
 
 SPECIES NAME LENGTH MAX = 13

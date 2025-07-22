@@ -703,8 +703,8 @@
 #define P_FAMILY_HERCULESKABUTERIMON                 TRUE
 #undef P_FAMILY_WARGREYMON
 #define P_FAMILY_WARGREYMON                TRUE
-#undef P_FAMILY_FROAKIE
-#define P_FAMILY_FROAKIE                 TRUE
+#undef P_FAMILY_CRESGARURUMON
+#define P_FAMILY_CRESGARURUMON                 TRUE
 #undef P_FAMILY_BUNNELBY
 #define P_FAMILY_BUNNELBY                TRUE
 #undef P_FAMILY_FLETCHLING

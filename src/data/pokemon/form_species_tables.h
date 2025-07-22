@@ -1343,14 +1343,14 @@ static const u16 sGenesectFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_GENESECT
 
-#if P_FAMILY_FROAKIE
+#if P_FAMILY_CRESGARURUMON
 static const u16 sGreninjaFormSpeciesIdTable[] = {
     SPECIES_GRENINJA,
     SPECIES_GRENINJA_BATTLE_BOND,
     SPECIES_GRENINJA_ASH,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_FROAKIE
+#endif //P_FAMILY_CRESGARURUMON
 
 #if P_FAMILY_SCATTERBUG
 static const u16 sScatterbugFormSpeciesIdTable[] = {

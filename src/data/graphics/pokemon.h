@@ -19148,20 +19148,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_WARGREYMON
 
-#if P_FAMILY_FROAKIE
-    const u32 gMonFrontPic_Froakie[] = INCBIN_U32("graphics/pokemon/froakie/anim_front.4bpp.lz");
-    const u16 gMonPalette_Froakie[] = INCBIN_U16("graphics/pokemon/froakie/normal.gbapal");
-    const u32 gMonBackPic_Froakie[] = INCBIN_U32("graphics/pokemon/froakie/back.4bpp.lz");
-    const u16 gMonShinyPalette_Froakie[] = INCBIN_U16("graphics/pokemon/froakie/shiny.gbapal");
-    const u8 gMonIcon_Froakie[] = INCBIN_U8("graphics/pokemon/froakie/icon.4bpp");
+#if P_FAMILY_CRESGARURUMON
+    const u32 gMonFrontPic_Cresgarurumon[] = INCBIN_U32("graphics/pokemon/cresgarurumon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Cresgarurumon[] = INCBIN_U16("graphics/pokemon/cresgarurumon/normal.gbapal");
+    const u32 gMonBackPic_Cresgarurumon[] = INCBIN_U32("graphics/pokemon/cresgarurumon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Cresgarurumon[] = INCBIN_U16("graphics/pokemon/cresgarurumon/shiny.gbapal");
+    const u8 gMonIcon_Cresgarurumon[] = INCBIN_U8("graphics/pokemon/cresgarurumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Froakie[] = INCBIN_U8("graphics/pokemon/froakie/footprint.1bpp");
+    const u8 gMonFootprint_Cresgarurumon[] = INCBIN_U8("graphics/pokemon/cresgarurumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Froakie[] = INCBIN_COMP("graphics/pokemon/froakie/overworld.4bpp");
+    const u32 gObjectEventPic_Cresgarurumon[] = INCBIN_COMP("graphics/pokemon/cresgarurumon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Froakie[] = INCBIN_U16("graphics/pokemon/froakie/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Froakie[] = INCBIN_U16("graphics/pokemon/froakie/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Cresgarurumon[] = INCBIN_U16("graphics/pokemon/cresgarurumon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Cresgarurumon[] = INCBIN_U16("graphics/pokemon/cresgarurumon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -19209,7 +19209,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     // const u16 gShinyOverworldPalette_GreninjaAsh[] = INCBIN_U16("graphics/pokemon/greninja/ash/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_FROAKIE
+#endif //P_FAMILY_CRESGARURUMON
 
 #if P_FAMILY_BUNNELBY
     const u32 gMonFrontPic_Bunnelby[] = INCBIN_U32("graphics/pokemon/bunnelby/anim_front.4bpp.lz");

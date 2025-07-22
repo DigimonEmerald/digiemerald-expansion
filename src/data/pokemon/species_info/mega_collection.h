@@ -443,44 +443,46 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
 #endif //P_FAMILY_WARGREYMON
 
-#if P_FAMILY_FROAKIE
-    [SPECIES_FROAKIE] =
+#if P_FAMILY_CRESGARURUMON
+    [SPECIES_CRESGARURUMON] =
     {
-        .baseHP        = 41,
-        .baseAttack    = 56,
-        .baseDefense   = 40,
-        .baseSpeed     = 71,
-        .baseSpAttack  = 62,
-        .baseSpDefense = 44,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 45,
-        .expYield = 63,
-        .evYield_Speed = 1,
+        .baseHP        = 105,
+        .baseAttack    = 145,
+        .baseDefense   = 100,
+        .baseSpeed     = 130,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_STEEL),
+        .attribute = TYPE_DATA,
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_Attack = 4,
+        .evYield_Speed = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_PROTEAN },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Froakie"),
-        .cryId = CRY_FROAKIE,
-        .natDexNum = NATIONAL_DEX_FROAKIE,
-        .categoryName = _("Bubble Frog"),
-        .height = 3,
-        .weight = 70,
+        .abilities = { ABILITY_SNIPER, ABILITY_SHARPNESS, ABILITY_REFRIGERATE}, // Moonmadness
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("CresGarurmon"),
+        .cryId = CRY_CRESGARURUMON,
+        .natDexNum = NATIONAL_DEX_CRESGARURUMON,
+        .categoryName = _("Moon Wolf"),
+        .height = 244,
+        .weight = 6304,
         .description = COMPOUND_STRING(
-            "It protects its skin by covering its body\n"
-            "in bubbles it secretes from its chest and\n"
-            "back. Beneath its happy-go-lucky air, it\n"
-            "keeps a watchful eye on its surroundings."),
+            "Unlike MetalGarurumon, CresGarurumon retains\n"
+            "its bipedal stature letting it stay nimble.\n"
+            "Its armour is made up  of Gold Digizoid\n"
+            "letting it deflect many attacks."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Froakie,
+        .frontPic = gMonFrontPic_Cresgarurumon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
-        .frontPicYOffset = 12,
+        .frontPicYOffset = 3,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 13),
             ANIMCMD_FRAME(1, 7),
@@ -491,29 +493,29 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 11),
         ),
         .frontAnimId = ANIM_H_JUMPS,
-        .backPic = gMonBackPic_Froakie,
+        .backPic = gMonBackPic_Cresgarurumon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
-        .backPicYOffset = 7,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHRINK_GROW,
-        .palette = gMonPalette_Froakie,
-        .shinyPalette = gMonShinyPalette_Froakie,
-        .iconSprite = gMonIcon_Froakie,
+        .palette = gMonPalette_Cresgarurumon,
+        .shinyPalette = gMonShinyPalette_Cresgarurumon,
+        .iconSprite = gMonIcon_Cresgarurumon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
-        SHADOW(2, 0, SHADOW_SIZE_S)
-        FOOTPRINT(Froakie)
+        SHADOW(4, 7, SHADOW_SIZE_M)
+        FOOTPRINT(Cresgarurumon)
         OVERWORLD(
-            sPicTable_Froakie,
+            sPicTable_Cresgarurumon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Froakie,
-            gShinyOverworldPalette_Froakie
+            gOverworldPalette_Cresgarurumon,
+            gShinyOverworldPalette_Cresgarurumon
         )
-        .levelUpLearnset = sFroakieLevelUpLearnset,
-        .teachableLearnset = sFroakieTeachableLearnset,
-        .eggMoveLearnset = sFroakieEggMoveLearnset,
+        .levelUpLearnset = sCresgarurumonLevelUpLearnset,
+        .teachableLearnset = sCresgarurumonTeachableLearnset,
+        .eggMoveLearnset = sCresgarurumonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_FROGADIER}),
     },
 
@@ -765,7 +767,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .formSpeciesIdTable = sGreninjaFormSpeciesIdTable,
         .formChangeTable = sGreninjaBattleBondFormChangeTable,
     },
-#endif //P_FAMILY_FROAKIE
+#endif //P_FAMILY_CRESGARURUMON
 
 #if P_FAMILY_BUNNELBY
     [SPECIES_BUNNELBY] =

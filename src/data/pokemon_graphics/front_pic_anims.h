@@ -8159,8 +8159,8 @@ static const union AnimCmd sAnim_Omnimon_1[] =
 };
 #endif //P_FAMILY_WARGREYMON
 
-#if P_FAMILY_FROAKIE
-static const union AnimCmd sAnim_Froakie_1[] =
+#if P_FAMILY_CRESGARURUMON
+static const union AnimCmd sAnim_Cresgarurumon_1[] =
 {
     ANIMCMD_FRAME(0, 13),
     ANIMCMD_FRAME(1, 7),
@@ -8195,7 +8195,7 @@ static const union AnimCmd sAnim_GreninjaAsh_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_FROAKIE
+#endif //P_FAMILY_CRESGARURUMON
 
 #if P_FAMILY_BUNNELBY
 static const union AnimCmd sAnim_Bunnelby_1[] =
@@ -11976,12 +11976,12 @@ SINGLE_ANIMATION(Wargreymon);
 SINGLE_ANIMATION(Metalgarurumon);
 SINGLE_ANIMATION(Omnimon);
 #endif //P_FAMILY_WARGREYMON
-#if P_FAMILY_FROAKIE
-SINGLE_ANIMATION(Froakie);
+#if P_FAMILY_CRESGARURUMON
+SINGLE_ANIMATION(Cresgarurumon);
 SINGLE_ANIMATION(Frogadier);
 SINGLE_ANIMATION(Greninja);
 SINGLE_ANIMATION(GreninjaAsh);
-#endif //P_FAMILY_FROAKIE
+#endif //P_FAMILY_CRESGARURUMON
 #if P_FAMILY_BUNNELBY
 SINGLE_ANIMATION(Bunnelby);
 SINGLE_ANIMATION(Diggersby);

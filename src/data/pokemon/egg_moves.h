@@ -4940,8 +4940,8 @@ static const u16 sWargreymonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_WARGREYMON
 
-#if P_FAMILY_FROAKIE
-static const u16 sFroakieEggMoveLearnset[] = {
+#if P_FAMILY_CRESGARURUMON
+static const u16 sCresgarurumonEggMoveLearnset[] = {
     MOVE_BESTOW,
     MOVE_MIND_READER,
     MOVE_TOXIC_SPIKES,
@@ -4951,7 +4951,7 @@ static const u16 sFroakieEggMoveLearnset[] = {
     MOVE_POWER_UP_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_FROAKIE
+#endif //P_FAMILY_CRESGARURUMON
 
 #if P_FAMILY_BUNNELBY
 static const u16 sBunnelbyEggMoveLearnset[] = {

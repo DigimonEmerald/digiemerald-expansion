@@ -26483,8 +26483,8 @@ static const u16 sOmnimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_WARGREYMON
 
-#if P_FAMILY_FROAKIE
-static const u16 sFroakieTeachableLearnset[] = {
+#if P_FAMILY_CRESGARURUMON
+static const u16 sCresgarurumonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -26594,7 +26594,7 @@ static const u16 sGreninjaTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_FROAKIE
+#endif //P_FAMILY_CRESGARURUMON
 
 #if P_FAMILY_BUNNELBY
 static const u16 sBunnelbyTeachableLearnset[] = {

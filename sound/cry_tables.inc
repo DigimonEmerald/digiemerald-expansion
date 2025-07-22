@@ -1608,11 +1608,11 @@ gCryTable::
 	cry Cry_Metalgarurumon
 	cry Cry_Omnimon
 .endif @ P_FAMILY_WARGREYMON
-.if P_FAMILY_FROAKIE == TRUE
-	cry Cry_Froakie
+.if P_FAMILY_CRESGARURUMON == TRUE
+	cry Cry_Cresgarurumon
 	cry Cry_Frogadier
 	cry Cry_Greninja
-.endif @ P_FAMILY_FROAKIE
+.endif @ P_FAMILY_CRESGARURUMON
 .if P_FAMILY_BUNNELBY == TRUE
 	cry Cry_Bunnelby
 	cry Cry_Diggersby
@@ -4036,11 +4036,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Metalgarurumon
 	cry_reverse Cry_Omnimon
 .endif @ P_FAMILY_WARGREYMON
-.if P_FAMILY_FROAKIE == TRUE
-	cry_reverse Cry_Froakie
+.if P_FAMILY_CRESGARURUMON == TRUE
+	cry_reverse Cry_Cresgarurumon
 	cry_reverse Cry_Frogadier
 	cry_reverse Cry_Greninja
-.endif @ P_FAMILY_FROAKIE
+.endif @ P_FAMILY_CRESGARURUMON
 .if P_FAMILY_BUNNELBY == TRUE
 	cry_reverse Cry_Bunnelby
 	cry_reverse Cry_Diggersby
