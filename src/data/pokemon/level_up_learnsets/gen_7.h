@@ -12379,8 +12379,8 @@ static const struct LevelUpMove sPaildramonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_WEREGARURUMON
 
-#if P_FAMILY_BLITZLE
-static const struct LevelUpMove sBlitzleLevelUpLearnset[] = {
+#if P_FAMILY_WARGROWLMON
+static const struct LevelUpMove sWargrowlmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 4, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 8, MOVE_CHARGE),
@@ -12418,7 +12418,7 @@ static const struct LevelUpMove sZebstrikaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(58, MOVE_ION_DELUGE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_BLITZLE
+#endif //P_FAMILY_WARGROWLMON
 
 #if P_FAMILY_ROGGENROLA
 static const struct LevelUpMove sRoggenrolaLevelUpLearnset[] = {

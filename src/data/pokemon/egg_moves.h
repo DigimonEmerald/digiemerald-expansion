@@ -4088,8 +4088,8 @@ static const u16 sWeregarurumonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_WEREGARURUMON
 
-#if P_FAMILY_BLITZLE
-static const u16 sBlitzleEggMoveLearnset[] = {
+#if P_FAMILY_WARGROWLMON
+static const u16 sWargrowlmonEggMoveLearnset[] = {
     MOVE_ME_FIRST,
     MOVE_TAKE_DOWN,
     MOVE_SAND_ATTACK,
@@ -4103,7 +4103,7 @@ static const u16 sBlitzleEggMoveLearnset[] = {
     MOVE_FEINT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BLITZLE
+#endif //P_FAMILY_WARGROWLMON
 
 #if P_FAMILY_ROGGENROLA
 static const u16 sRoggenrolaEggMoveLearnset[] = {

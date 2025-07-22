@@ -450,6 +450,7 @@ MetalGreymon - Musharna
 WereGarurumon - Pidove
 Dinobeemon - Tranquill
 Paildramon - Unfezant
+WarGrowlmon - Blitzle
 
 Mega List
 

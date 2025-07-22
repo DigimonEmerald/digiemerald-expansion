@@ -2144,44 +2144,47 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_WEREGARURUMON
 
-#if P_FAMILY_BLITZLE
-    [SPECIES_BLITZLE] =
+#if P_FAMILY_WARGROWLMON
+    [SPECIES_WARGROWLMON] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 60,
-        .baseDefense   = 32,
-        .baseSpeed     = 76,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 32,
-        .types = MON_TYPES(TYPE_ELECTRIC),
-        .catchRate = 190,
-        .expYield = 59,
-        .evYield_Speed = 1,
+        .baseHP        = 80,
+        .baseAttack    = 110,
+        .baseDefense   = 90,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 90 ,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_STEEL),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_Attack= 3,
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_MOTOR_DRIVE, ABILITY_SAP_SIPPER },
-        .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Blitzle"),
-        .cryId = CRY_BLITZLE,
-        .natDexNum = NATIONAL_DEX_BLITZLE,
-        .categoryName = _("Electrified"),
-        .height = 8,
-        .weight = 298,
+        .abilities = { ABILITY_ANGER_POINT, ABILITY_FLASH_FIRE, ABILITY_HYPER_CUTTER },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("WarGrowlmon"),
+        .cryId = CRY_WARGROWLMON,
+        .natDexNum = NATIONAL_DEX_WARGROWLMON,
+        .categoryName = _("Cyborg"),
+        .height = 95,
+        .weight = 2632,
         .description = COMPOUND_STRING(
-            "Its mane shines when it discharges\n"
-            "electricity. They use the frequency and\n"
-            "rhythm of these flashes to communicate\n"
-            "with one another."),
+            "After metallizing only its upper\n"
+            "body, WarGrowlmon has gained the ability\n"
+            "to fly using its two vernier. It has a\n"
+            "built in limiter to maintain itself."),
         .pokemonScale = 366,
         .pokemonOffset = 8,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Blitzle,
+        .frontPic = gMonFrontPic_Wargrowlmon,
         .frontPicSize = MON_COORDS_SIZE(40, 56),
-        .frontPicYOffset = 5,
+        .frontPicYOffset = 2,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 8),
             ANIMCMD_FRAME(0, 8),
@@ -2191,29 +2194,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 8),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Blitzle,
+        .backPic = gMonBackPic_Wargrowlmon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
-        .backPicYOffset = 7,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Blitzle,
-        .shinyPalette = gMonShinyPalette_Blitzle,
-        .iconSprite = gMonIcon_Blitzle,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Wargrowlmon,
+        .shinyPalette = gMonShinyPalette_Wargrowlmon,
+        .iconSprite = gMonIcon_Wargrowlmon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(3, 9, SHADOW_SIZE_M)
-        FOOTPRINT(Blitzle)
+        SHADOW(-3, 9, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Wargrowlmon)
         OVERWORLD(
-            sPicTable_Blitzle,
+            sPicTable_Wargrowlmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Blitzle,
-            gShinyOverworldPalette_Blitzle
+            gOverworldPalette_Wargrowlmon,
+            gShinyOverworldPalette_Wargrowlmon
         )
-        .levelUpLearnset = sBlitzleLevelUpLearnset,
-        .teachableLearnset = sBlitzleTeachableLearnset,
-        .eggMoveLearnset = sBlitzleEggMoveLearnset,
+        .levelUpLearnset = sWargrowlmonLevelUpLearnset,
+        .teachableLearnset = sWargrowlmonTeachableLearnset,
+        .eggMoveLearnset = sWargrowlmonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_ZEBSTRIKA}),
     },
 
@@ -2283,7 +2286,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sZebstrikaLevelUpLearnset,
         .teachableLearnset = sZebstrikaTeachableLearnset,
     },
-#endif //P_FAMILY_BLITZLE
+#endif //P_FAMILY_WARGROWLMON
 
 #if P_FAMILY_ROGGENROLA
     [SPECIES_ROGGENROLA] =

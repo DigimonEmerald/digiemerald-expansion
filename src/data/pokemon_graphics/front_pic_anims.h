@@ -6540,8 +6540,8 @@ static const union AnimCmd sAnim_Paildramon_1[] =
 };
 #endif //P_FAMILY_WEREGARURUMON
 
-#if P_FAMILY_BLITZLE
-static const union AnimCmd sAnim_Blitzle_1[] =
+#if P_FAMILY_WARGROWLMON
+static const union AnimCmd sAnim_Wargrowlmon_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 8),
@@ -6559,7 +6559,7 @@ static const union AnimCmd sAnim_Zebstrika_1[] =
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_BLITZLE
+#endif //P_FAMILY_WARGROWLMON
 
 #if P_FAMILY_ROGGENROLA
 static const union AnimCmd sAnim_Roggenrola_1[] =
@@ -11654,10 +11654,10 @@ SINGLE_ANIMATION(Weregarurumon);
 SINGLE_ANIMATION(Dinobeemon);
 SINGLE_ANIMATION(Paildramon);
 #endif //P_FAMILY_WEREGARURUMON
-#if P_FAMILY_BLITZLE
-SINGLE_ANIMATION(Blitzle);
+#if P_FAMILY_WARGROWLMON
+SINGLE_ANIMATION(Wargrowlmon);
 SINGLE_ANIMATION(Zebstrika);
-#endif //P_FAMILY_BLITZLE
+#endif //P_FAMILY_WARGROWLMON
 #if P_FAMILY_ROGGENROLA
 SINGLE_ANIMATION(Roggenrola);
 SINGLE_ANIMATION(Boldore);

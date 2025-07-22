@@ -21896,8 +21896,8 @@ static const u16 sPaildramonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_WEREGARURUMON
 
-#if P_FAMILY_BLITZLE
-static const u16 sBlitzleTeachableLearnset[] = {
+#if P_FAMILY_WARGROWLMON
+static const u16 sWargrowlmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_DOUBLE_EDGE,
@@ -21953,7 +21953,7 @@ static const u16 sZebstrikaTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BLITZLE
+#endif //P_FAMILY_WARGROWLMON
 
 #if P_FAMILY_ROGGENROLA
 static const u16 sRoggenrolaTeachableLearnset[] = {

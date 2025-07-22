@@ -3818,14 +3818,14 @@ static const struct SpriteFrameImage sPicTable_PaildramonF[] = {
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_WEREGARURUMON
 
-#if P_FAMILY_BLITZLE
-static const struct SpriteFrameImage sPicTable_Blitzle[] = {
-    overworld_ascending_frames(gObjectEventPic_Blitzle, 4, 4),
+#if P_FAMILY_WARGROWLMON
+static const struct SpriteFrameImage sPicTable_Wargrowlmon[] = {
+    overworld_ascending_frames(gObjectEventPic_Wargrowlmon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Zebstrika[] = {
     overworld_ascending_frames(gObjectEventPic_Zebstrika, 4, 4),
 };
-#endif //P_FAMILY_BLITZLE
+#endif //P_FAMILY_WARGROWLMON
 
 #if P_FAMILY_ROGGENROLA
 static const struct SpriteFrameImage sPicTable_Roggenrola[] = {

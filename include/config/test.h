@@ -558,8 +558,8 @@
 #define P_FAMILY_MAMMOTHMON                   TRUE
 #undef P_FAMILY_WEREGARURUMON
 #define P_FAMILY_WEREGARURUMON                  TRUE
-#undef P_FAMILY_BLITZLE
-#define P_FAMILY_BLITZLE                 TRUE
+#undef P_FAMILY_WARGROWLMON
+#define P_FAMILY_WARGROWLMON                 TRUE
 #undef P_FAMILY_ROGGENROLA
 #define P_FAMILY_ROGGENROLA              TRUE
 #undef P_FAMILY_WOOBAT

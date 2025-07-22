@@ -3458,15 +3458,15 @@ Cry_Paildramon::
 	.incbin "sound/direct_sound_samples/cries/paildramon.bin"
 .endif @ P_FAMILY_WEREGARURUMON
 
-.if P_FAMILY_BLITZLE == TRUE
+.if P_FAMILY_WARGROWLMON == TRUE
 	.align 2
-Cry_Blitzle::
-	.incbin "sound/direct_sound_samples/cries/blitzle.bin"
+Cry_Wargrowlmon::
+	.incbin "sound/direct_sound_samples/cries/wargrowlmon.bin"
 
 	.align 2
 Cry_Zebstrika::
 	.incbin "sound/direct_sound_samples/cries/zebstrika.bin"
-.endif @ P_FAMILY_BLITZLE
+.endif @ P_FAMILY_WARGROWLMON
 
 .if P_FAMILY_ROGGENROLA == TRUE
 	.align 2

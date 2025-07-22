@@ -1311,10 +1311,10 @@ gCryTable::
 	cry Cry_Dinobeemon
 	cry Cry_Paildramon
 .endif @ P_FAMILY_WEREGARURUMON
-.if P_FAMILY_BLITZLE == TRUE
-	cry Cry_Blitzle
+.if P_FAMILY_WARGROWLMON == TRUE
+	cry Cry_Wargrowlmon
 	cry Cry_Zebstrika
-.endif @ P_FAMILY_BLITZLE
+.endif @ P_FAMILY_WARGROWLMON
 .if P_FAMILY_ROGGENROLA == TRUE
 	cry Cry_Roggenrola
 	cry Cry_Boldore
@@ -3739,10 +3739,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Dinobeemon
 	cry_reverse Cry_Paildramon
 .endif @ P_FAMILY_WEREGARURUMON
-.if P_FAMILY_BLITZLE == TRUE
-	cry_reverse Cry_Blitzle
+.if P_FAMILY_WARGROWLMON == TRUE
+	cry_reverse Cry_Wargrowlmon
 	cry_reverse Cry_Zebstrika
-.endif @ P_FAMILY_BLITZLE
+.endif @ P_FAMILY_WARGROWLMON
 .if P_FAMILY_ROGGENROLA == TRUE
 	cry_reverse Cry_Roggenrola
 	cry_reverse Cry_Boldore

@@ -16385,20 +16385,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_WEREGARURUMON
 
-#if P_FAMILY_BLITZLE
-    const u32 gMonFrontPic_Blitzle[] = INCBIN_U32("graphics/pokemon/blitzle/anim_front.4bpp.lz");
-    const u16 gMonPalette_Blitzle[] = INCBIN_U16("graphics/pokemon/blitzle/normal.gbapal");
-    const u32 gMonBackPic_Blitzle[] = INCBIN_U32("graphics/pokemon/blitzle/back.4bpp.lz");
-    const u16 gMonShinyPalette_Blitzle[] = INCBIN_U16("graphics/pokemon/blitzle/shiny.gbapal");
-    const u8 gMonIcon_Blitzle[] = INCBIN_U8("graphics/pokemon/blitzle/icon.4bpp");
+#if P_FAMILY_WARGROWLMON
+    const u32 gMonFrontPic_Wargrowlmon[] = INCBIN_U32("graphics/pokemon/wargrowlmon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Wargrowlmon[] = INCBIN_U16("graphics/pokemon/wargrowlmon/normal.gbapal");
+    const u32 gMonBackPic_Wargrowlmon[] = INCBIN_U32("graphics/pokemon/wargrowlmon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Wargrowlmon[] = INCBIN_U16("graphics/pokemon/wargrowlmon/shiny.gbapal");
+    const u8 gMonIcon_Wargrowlmon[] = INCBIN_U8("graphics/pokemon/wargrowlmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Blitzle[] = INCBIN_U8("graphics/pokemon/blitzle/footprint.1bpp");
+    const u8 gMonFootprint_Wargrowlmon[] = INCBIN_U8("graphics/pokemon/wargrowlmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Blitzle[] = INCBIN_COMP("graphics/pokemon/blitzle/overworld.4bpp");
+    const u32 gObjectEventPic_Wargrowlmon[] = INCBIN_COMP("graphics/pokemon/wargrowlmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Blitzle[] = INCBIN_U16("graphics/pokemon/blitzle/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Blitzle[] = INCBIN_U16("graphics/pokemon/blitzle/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Wargrowlmon[] = INCBIN_U16("graphics/pokemon/wargrowlmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Wargrowlmon[] = INCBIN_U16("graphics/pokemon/wargrowlmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16417,7 +16417,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Zebstrika[] = INCBIN_U16("graphics/pokemon/zebstrika/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_BLITZLE
+#endif //P_FAMILY_WARGROWLMON
 
 #if P_FAMILY_ROGGENROLA
     const u32 gMonFrontPic_Roggenrola[] = INCBIN_U32("graphics/pokemon/roggenrola/anim_front.4bpp.lz");
