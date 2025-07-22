@@ -460,8 +460,8 @@
 #define P_FAMILY_KUWAGAMON               TRUE
 #undef P_FAMILY_SHADRAMON
 #define P_FAMILY_SHADRAMON                   TRUE
-#undef P_FAMILY_CRANIDOS
-#define P_FAMILY_CRANIDOS                TRUE
+#undef P_FAMILY_GROWLMON
+#define P_FAMILY_GROWLMON                TRUE
 #undef P_FAMILY_SHIELDON
 #define P_FAMILY_SHIELDON                TRUE
 #undef P_FAMILY_BURMY

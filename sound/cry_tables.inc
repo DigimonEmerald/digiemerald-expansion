@@ -1113,10 +1113,10 @@ gCryTable::
 	cry Cry_Raidramon
 	cry Cry_Togemon
 .endif @ P_FAMILY_SHADRAMON
-.if P_FAMILY_CRANIDOS == TRUE
-	cry Cry_Cranidos
+.if P_FAMILY_GROWLMON == TRUE
+	cry Cry_Growlmon
 	cry Cry_Rampardos
-.endif @ P_FAMILY_CRANIDOS
+.endif @ P_FAMILY_GROWLMON
 .if P_FAMILY_SHIELDON == TRUE
 	cry Cry_Shieldon
 	cry Cry_Bastiodon
@@ -3541,10 +3541,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Raidramon
 	cry_reverse Cry_Togemon
 .endif @ P_FAMILY_SHADRAMON
-.if P_FAMILY_CRANIDOS == TRUE
-	cry_reverse Cry_Cranidos
+.if P_FAMILY_GROWLMON == TRUE
+	cry_reverse Cry_Growlmon
 	cry_reverse Cry_Rampardos
-.endif @ P_FAMILY_CRANIDOS
+.endif @ P_FAMILY_GROWLMON
 .if P_FAMILY_SHIELDON == TRUE
 	cry_reverse Cry_Shieldon
 	cry_reverse Cry_Bastiodon

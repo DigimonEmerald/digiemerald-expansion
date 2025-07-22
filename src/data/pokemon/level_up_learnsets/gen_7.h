@@ -10525,8 +10525,8 @@ static const struct LevelUpMove sTogemonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_SHADRAMON
 
-#if P_FAMILY_CRANIDOS
-static const struct LevelUpMove sCranidosLevelUpLearnset[] = {
+#if P_FAMILY_GROWLMON
+static const struct LevelUpMove sGrowlmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HEADBUTT),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 6, MOVE_FOCUS_ENERGY),
@@ -10561,7 +10561,7 @@ static const struct LevelUpMove sRampardosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(58, MOVE_HEAD_SMASH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CRANIDOS
+#endif //P_FAMILY_GROWLMON
 
 #if P_FAMILY_SHIELDON
 static const struct LevelUpMove sShieldonLevelUpLearnset[] = {

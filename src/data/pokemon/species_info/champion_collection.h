@@ -12791,42 +12791,44 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_SHADRAMON
 
-#if P_FAMILY_CRANIDOS
-    [SPECIES_CRANIDOS] =
+#if P_FAMILY_GROWLMON
+    [SPECIES_GROWLMON] =
     {
-        .baseHP        = 67,
-        .baseAttack    = 125,
-        .baseDefense   = 40,
-        .baseSpeed     = 58,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 30,
-        .types = MON_TYPES(TYPE_ROCK),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 70 : 99,
-        .evYield_Attack = 1,
+        .baseHP        = 70,
+        .baseAttack    = 75,
+        .baseDefense   = 75,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_FIRE),
+        .attribute = TYPE_VIRUS, 
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack = 2,
+        .evYield_Defense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
-        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_NONE, ABILITY_SHEER_FORCE },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Cranidos"),
-        .cryId = CRY_CRANIDOS,
-        .natDexNum = NATIONAL_DEX_CRANIDOS,
-        .categoryName = _("Head Butt"),
-        .height = 9,
-        .weight = 315,
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_GUTS, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Growlmon"),
+        .cryId = CRY_GROWLMON,
+        .natDexNum = NATIONAL_DEX_GROWLMON,
+        .categoryName = _("Demon Dragon"),
+        .height = 51,
+        .weight = 1734,
         .description = COMPOUND_STRING(
-            "A lifelong jungle dweller from 100 million\n"
-            "years ago, its skull is as hard as iron. \n"
-            "It would snap obstructing trees with\n"
-            "headbutts."),
+            "The childishness it had when it was a\n"
+            "Guilmon has completely dissapeared\n"
+            "making Growlmon a far more ferocious\n"
+            "and wild Digimon."),
         .pokemonScale = 338,
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Cranidos,
+        .frontPic = gMonFrontPic_Growlmon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 10,
         .frontAnimFrames = ANIM_FRAMES(
@@ -12834,29 +12836,29 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 20),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Cranidos,
+        .backPic = gMonBackPic_Growlmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Cranidos,
-        .shinyPalette = gMonShinyPalette_Cranidos,
-        .iconSprite = gMonIcon_Cranidos,
+        .palette = gMonPalette_Growlmon,
+        .shinyPalette = gMonShinyPalette_Growlmon,
+        .iconSprite = gMonIcon_Growlmon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(4, 4, SHADOW_SIZE_S)
-        FOOTPRINT(Cranidos)
+        FOOTPRINT(Growlmon)
         OVERWORLD(
-            sPicTable_Cranidos,
+            sPicTable_Growlmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Cranidos,
-            gShinyOverworldPalette_Cranidos
+            gOverworldPalette_Growlmon,
+            gShinyOverworldPalette_Growlmon
         )
-        .levelUpLearnset = sCranidosLevelUpLearnset,
-        .teachableLearnset = sCranidosTeachableLearnset,
-        .eggMoveLearnset = sCranidosEggMoveLearnset,
+        .levelUpLearnset = sGrowlmonLevelUpLearnset,
+        .teachableLearnset = sGrowlmonTeachableLearnset,
+        .eggMoveLearnset = sGrowlmonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_RAMPARDOS}),
     },
 
@@ -12875,7 +12877,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_MOLD_BREAKER, ABILITY_NONE, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BLUE,
@@ -12889,7 +12891,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             "The result of repeated headbutts\n"
             "is a skull grown thick and hard.\n"
             "However, its brain has shrunk in size\n"
-            "compared with Cranidos's."),
+            "compared with Growlmon's."),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
@@ -12928,7 +12930,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sRampardosLevelUpLearnset,
         .teachableLearnset = sRampardosTeachableLearnset,
     },
-#endif //P_FAMILY_CRANIDOS
+#endif //P_FAMILY_GROWLMON
 
 #if P_FAMILY_SHIELDON
     [SPECIES_SHIELDON] =
@@ -12946,7 +12948,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_SOUNDPROOF },
         .bodyColor = BODY_COLOR_GRAY,
@@ -13015,7 +13017,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
         .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_SOUNDPROOF },
         .bodyColor = BODY_COLOR_GRAY,
@@ -16496,7 +16498,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_STORM_DRAIN, ABILITY_WATER_VEIL },
         .bodyColor = BODY_COLOR_BLUE,
@@ -16583,7 +16585,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_ERRATIC,
+        .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_SWIFT_SWIM, ABILITY_STORM_DRAIN, ABILITY_WATER_VEIL },
         .bodyColor = BODY_COLOR_BLUE,

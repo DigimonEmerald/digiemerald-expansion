@@ -2984,15 +2984,15 @@ Cry_Togemon::
 	.incbin "sound/direct_sound_samples/cries/togemon.bin"
 .endif @ P_FAMILY_SHADRAMON
 
-.if P_FAMILY_CRANIDOS == TRUE
+.if P_FAMILY_GROWLMON == TRUE
 	.align 2
-Cry_Cranidos::
-	.incbin "sound/direct_sound_samples/cries/cranidos.bin"
+Cry_Growlmon::
+	.incbin "sound/direct_sound_samples/cries/growlmon.bin"
 
 	.align 2
 Cry_Rampardos::
 	.incbin "sound/direct_sound_samples/cries/rampardos.bin"
-.endif @ P_FAMILY_CRANIDOS
+.endif @ P_FAMILY_GROWLMON
 
 .if P_FAMILY_SHIELDON == TRUE
 	.align 2

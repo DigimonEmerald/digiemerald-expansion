@@ -266,7 +266,7 @@
 #define P_FAMILY_GORILLAMON                  P_GEN_4_POKEMON
 #define P_FAMILY_KUWAGAMON               P_GEN_4_POKEMON
 #define P_FAMILY_SHADRAMON                   P_GEN_4_POKEMON
-#define P_FAMILY_CRANIDOS                P_GEN_4_POKEMON
+#define P_FAMILY_GROWLMON                P_GEN_4_POKEMON
 #define P_FAMILY_SHIELDON                P_GEN_4_POKEMON
 #define P_FAMILY_BURMY                   P_GEN_4_POKEMON
 #define P_FAMILY_COMBEE                  P_GEN_4_POKEMON

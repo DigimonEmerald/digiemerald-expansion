@@ -3201,14 +3201,14 @@ static const struct SpriteFrameImage sPicTable_TogemonF[] = {
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_SHADRAMON
 
-#if P_FAMILY_CRANIDOS
-static const struct SpriteFrameImage sPicTable_Cranidos[] = {
-    overworld_ascending_frames(gObjectEventPic_Cranidos, 4, 4),
+#if P_FAMILY_GROWLMON
+static const struct SpriteFrameImage sPicTable_Growlmon[] = {
+    overworld_ascending_frames(gObjectEventPic_Growlmon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Rampardos[] = {
     overworld_ascending_frames(gObjectEventPic_Rampardos, 4, 4),
 };
-#endif //P_FAMILY_CRANIDOS
+#endif //P_FAMILY_GROWLMON
 
 #if P_FAMILY_SHIELDON
 static const struct SpriteFrameImage sPicTable_Shieldon[] = {

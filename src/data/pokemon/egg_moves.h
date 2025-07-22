@@ -3528,8 +3528,8 @@ static const u16 sShadramonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_SHADRAMON
 
-#if P_FAMILY_CRANIDOS
-static const u16 sCranidosEggMoveLearnset[] = {
+#if P_FAMILY_GROWLMON
+static const u16 sGrowlmonEggMoveLearnset[] = {
     MOVE_CRUNCH,
     MOVE_THRASH,
     MOVE_DOUBLE_EDGE,
@@ -3543,7 +3543,7 @@ static const u16 sCranidosEggMoveLearnset[] = {
     MOVE_IRON_HEAD,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CRANIDOS
+#endif //P_FAMILY_GROWLMON
 
 #if P_FAMILY_SHIELDON
 static const u16 sShieldonEggMoveLearnset[] = {

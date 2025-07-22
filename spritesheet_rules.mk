@@ -2397,7 +2397,7 @@ $(POKEMONGFXDIR)/roserade/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/roserade/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/cranidos/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/growlmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/rampardos/overworld.4bpp: %.4bpp: %.png

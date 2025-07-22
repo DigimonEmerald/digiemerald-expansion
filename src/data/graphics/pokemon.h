@@ -14390,20 +14390,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_SHADRAMON
 
-#if P_FAMILY_CRANIDOS
-    const u32 gMonFrontPic_Cranidos[] = INCBIN_U32("graphics/pokemon/cranidos/anim_front.4bpp.lz");
-    const u16 gMonPalette_Cranidos[] = INCBIN_U16("graphics/pokemon/cranidos/normal.gbapal");
-    const u32 gMonBackPic_Cranidos[] = INCBIN_U32("graphics/pokemon/cranidos/back.4bpp.lz");
-    const u16 gMonShinyPalette_Cranidos[] = INCBIN_U16("graphics/pokemon/cranidos/shiny.gbapal");
-    const u8 gMonIcon_Cranidos[] = INCBIN_U8("graphics/pokemon/cranidos/icon.4bpp");
+#if P_FAMILY_GROWLMON
+    const u32 gMonFrontPic_Growlmon[] = INCBIN_U32("graphics/pokemon/growlmon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Growlmon[] = INCBIN_U16("graphics/pokemon/growlmon/normal.gbapal");
+    const u32 gMonBackPic_Growlmon[] = INCBIN_U32("graphics/pokemon/growlmon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Growlmon[] = INCBIN_U16("graphics/pokemon/growlmon/shiny.gbapal");
+    const u8 gMonIcon_Growlmon[] = INCBIN_U8("graphics/pokemon/growlmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Cranidos[] = INCBIN_U8("graphics/pokemon/cranidos/footprint.1bpp");
+    const u8 gMonFootprint_Growlmon[] = INCBIN_U8("graphics/pokemon/growlmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Cranidos[] = INCBIN_COMP("graphics/pokemon/cranidos/overworld.4bpp");
+    const u32 gObjectEventPic_Growlmon[] = INCBIN_COMP("graphics/pokemon/growlmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Cranidos[] = INCBIN_U16("graphics/pokemon/cranidos/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Cranidos[] = INCBIN_U16("graphics/pokemon/cranidos/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Growlmon[] = INCBIN_U16("graphics/pokemon/growlmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Growlmon[] = INCBIN_U16("graphics/pokemon/growlmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -14422,7 +14422,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Rampardos[] = INCBIN_U16("graphics/pokemon/rampardos/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_CRANIDOS
+#endif //P_FAMILY_GROWLMON
 
 #if P_FAMILY_SHIELDON
     const u32 gMonFrontPic_Shieldon[] = INCBIN_U32("graphics/pokemon/shieldon/anim_front.4bpp.lz");

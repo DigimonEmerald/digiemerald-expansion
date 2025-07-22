@@ -8333,20 +8333,18 @@ static const struct LevelUpMove sTogemonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_SHADRAMON
 
-#if P_FAMILY_CRANIDOS
-static const struct LevelUpMove sCranidosLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_HEADBUTT),
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 6, MOVE_FOCUS_ENERGY),
-    LEVEL_UP_MOVE(10, MOVE_ROCK_SMASH),
-    LEVEL_UP_MOVE(15, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(19, MOVE_SCARY_FACE),
-    LEVEL_UP_MOVE(24, MOVE_ASSURANCE),
-    LEVEL_UP_MOVE(28, MOVE_SLAM),
-    LEVEL_UP_MOVE(33, MOVE_ANCIENT_POWER),
-    LEVEL_UP_MOVE(37, MOVE_ZEN_HEADBUTT),
-    LEVEL_UP_MOVE(42, MOVE_SCREECH),
-    LEVEL_UP_MOVE(46, MOVE_HEAD_SMASH),
+#if P_FAMILY_GROWLMON
+static const struct LevelUpMove sGrowlmonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_ROCK_SMASH),
+    LEVEL_UP_MOVE( 1, MOVE_BITE),
+    LEVEL_UP_MOVE( 1, MOVE_EMBER),
+    LEVEL_UP_MOVE( 1, MOVE_HOWL),
+    LEVEL_UP_MOVE(20, MOVE_FLAME_BURST),
+    LEVEL_UP_MOVE(24, MOVE_DUAL_CHOP),
+    LEVEL_UP_MOVE(28, MOVE_NIGHT_SLASH),
+    LEVEL_UP_MOVE(32, MOVE_ROAR),
+    LEVEL_UP_MOVE(36, MOVE_DRAGON_CLAW),
+    LEVEL_UP_MOVE(40, MOVE_FLAMETHROWER),
     LEVEL_UP_END
 };
 
@@ -8366,7 +8364,7 @@ static const struct LevelUpMove sRampardosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(58, MOVE_HEAD_SMASH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CRANIDOS
+#endif //P_FAMILY_GROWLMON
 
 #if P_FAMILY_SHIELDON
 static const struct LevelUpMove sShieldonLevelUpLearnset[] = {

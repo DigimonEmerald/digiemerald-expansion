@@ -5457,8 +5457,8 @@ static const union AnimCmd sAnim_Togemon_1[] =
 };
 #endif //P_FAMILY_SHADRAMON
 
-#if P_FAMILY_CRANIDOS
-static const union AnimCmd sAnim_Cranidos_1[] =
+#if P_FAMILY_GROWLMON
+static const union AnimCmd sAnim_Growlmon_1[] =
 {
     ANIMCMD_FRAME(1, 32),
     ANIMCMD_FRAME(0, 20),
@@ -5474,7 +5474,7 @@ static const union AnimCmd sAnim_Rampardos_1[] =
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_CRANIDOS
+#endif //P_FAMILY_GROWLMON
 
 #if P_FAMILY_SHIELDON
 static const union AnimCmd sAnim_Shieldon_1[] =
@@ -11444,10 +11444,10 @@ SINGLE_ANIMATION(Shadramon);
 SINGLE_ANIMATION(Raidramon);
 SINGLE_ANIMATION(Togemon);
 #endif //P_FAMILY_SHADRAMON
-#if P_FAMILY_CRANIDOS
-SINGLE_ANIMATION(Cranidos);
+#if P_FAMILY_GROWLMON
+SINGLE_ANIMATION(Growlmon);
 SINGLE_ANIMATION(Rampardos);
-#endif //P_FAMILY_CRANIDOS
+#endif //P_FAMILY_GROWLMON
 #if P_FAMILY_SHIELDON
 SINGLE_ANIMATION(Shieldon);
 SINGLE_ANIMATION(Bastiodon);
