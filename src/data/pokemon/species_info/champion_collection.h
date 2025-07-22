@@ -12830,7 +12830,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Growlmon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
-        .frontPicYOffset = 10,
+        .frontPicYOffset = 3,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 32),
             ANIMCMD_FRAME(0, 20),
@@ -12838,14 +12838,14 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .frontAnimId = ANIM_V_STRETCH,
         .backPic = gMonBackPic_Growlmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
-        .backPicYOffset = 6,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
         .palette = gMonPalette_Growlmon,
         .shinyPalette = gMonShinyPalette_Growlmon,
         .iconSprite = gMonIcon_Growlmon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(4, 4, SHADOW_SIZE_S)
+        SHADOW(0, 8, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Growlmon)
         OVERWORLD(
             sPicTable_Growlmon,
@@ -12859,46 +12859,48 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sGrowlmonLevelUpLearnset,
         .teachableLearnset = sGrowlmonTeachableLearnset,
         .eggMoveLearnset = sGrowlmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_RAMPARDOS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_STINGMON}),
     },
 
-    [SPECIES_RAMPARDOS] =
+    [SPECIES_STINGMON] =
     {
-        .baseHP        = 97,
-        .baseAttack    = 165,
-        .baseDefense   = 60,
-        .baseSpeed     = 58,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_ROCK),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 173 : 199,
-        .evYield_Attack = 2,
+        .baseHP        = 55,
+        .baseAttack    = 70,
+        .baseDefense   = 80,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_BUG, TYPE_FIGHTING),
+        .attribute = TYPE_FREE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense = 2,
+        .evYield_Speed = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
-        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_NONE, ABILITY_SHEER_FORCE },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Rampardos"),
-        .cryId = CRY_RAMPARDOS,
-        .natDexNum = NATIONAL_DEX_RAMPARDOS,
-        .categoryName = _("Head Butt"),
-        .height = 16,
-        .weight = 1025,
+        .abilities = { ABILITY_UNNERVE, ABILITY_COMPOUND_EYES, ABILITY_ADAPTABILITY },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Stingmon"),
+        .cryId = CRY_STINGMON,
+        .natDexNum = NATIONAL_DEX_STINGMON,
+        .categoryName = _("Bug Man"),
+        .height = 44,
+        .weight = 1289,
         .description = COMPOUND_STRING(
-            "The result of repeated headbutts\n"
-            "is a skull grown thick and hard.\n"
-            "However, its brain has shrunk in size\n"
-            "compared with Growlmon's."),
+            "Stingmons human form is an unusual\n"
+            "look for an insect Digimon, its has\n"
+            "both strong insect exoskeleton and\n"
+            "keen human judgement."),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Rampardos,
+        .frontPic = gMonFrontPic_Stingmon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 3,
+        .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 50),
             ANIMCMD_FRAME(1, 25),
@@ -12907,28 +12909,28 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 1),
         ),
         .frontAnimId = ANIM_V_SHAKE_TWICE,
-        .backPic = gMonBackPic_Rampardos,
+        .backPic = gMonBackPic_Stingmon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 6,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Rampardos,
-        .shinyPalette = gMonShinyPalette_Rampardos,
-        .iconSprite = gMonIcon_Rampardos,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Stingmon,
+        .shinyPalette = gMonShinyPalette_Stingmon,
+        .iconSprite = gMonIcon_Stingmon,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(7, 11, SHADOW_SIZE_L)
-        FOOTPRINT(Rampardos)
+        SHADOW(1, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Stingmon)
         OVERWORLD(
-            sPicTable_Rampardos,
+            sPicTable_Stingmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Rampardos,
-            gShinyOverworldPalette_Rampardos
+            gOverworldPalette_Stingmon,
+            gShinyOverworldPalette_Stingmon
         )
-        .levelUpLearnset = sRampardosLevelUpLearnset,
-        .teachableLearnset = sRampardosTeachableLearnset,
+        .levelUpLearnset = sStingmonLevelUpLearnset,
+        .teachableLearnset = sStingmonTeachableLearnset,
     },
 #endif //P_FAMILY_GROWLMON
 

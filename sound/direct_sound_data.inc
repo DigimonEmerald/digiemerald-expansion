@@ -2990,8 +2990,8 @@ Cry_Growlmon::
 	.incbin "sound/direct_sound_samples/cries/growlmon.bin"
 
 	.align 2
-Cry_Rampardos::
-	.incbin "sound/direct_sound_samples/cries/rampardos.bin"
+Cry_Stingmon::
+	.incbin "sound/direct_sound_samples/cries/stingmon.bin"
 .endif @ P_FAMILY_GROWLMON
 
 .if P_FAMILY_SHIELDON == TRUE

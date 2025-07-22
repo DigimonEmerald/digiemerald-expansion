@@ -5465,7 +5465,7 @@ static const union AnimCmd sAnim_Growlmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Rampardos_1[] =
+static const union AnimCmd sAnim_Stingmon_1[] =
 {
     ANIMCMD_FRAME(0, 50),
     ANIMCMD_FRAME(1, 25),
@@ -11446,7 +11446,7 @@ SINGLE_ANIMATION(Togemon);
 #endif //P_FAMILY_SHADRAMON
 #if P_FAMILY_GROWLMON
 SINGLE_ANIMATION(Growlmon);
-SINGLE_ANIMATION(Rampardos);
+SINGLE_ANIMATION(Stingmon);
 #endif //P_FAMILY_GROWLMON
 #if P_FAMILY_SHIELDON
 SINGLE_ANIMATION(Shieldon);

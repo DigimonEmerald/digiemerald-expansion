@@ -416,6 +416,8 @@ Leomon - Kricketune
 Shadramon - Shinx
 Raidramon - Luxio
 Togemon - Luxray
+Growlmon - Cranidos
+Stingmon - Rampardos
 
 Ultimate List
 

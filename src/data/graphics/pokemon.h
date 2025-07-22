@@ -14407,19 +14407,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Rampardos[] = INCBIN_U32("graphics/pokemon/rampardos/anim_front.4bpp.lz");
-    const u16 gMonPalette_Rampardos[] = INCBIN_U16("graphics/pokemon/rampardos/normal.gbapal");
-    const u32 gMonBackPic_Rampardos[] = INCBIN_U32("graphics/pokemon/rampardos/back.4bpp.lz");
-    const u16 gMonShinyPalette_Rampardos[] = INCBIN_U16("graphics/pokemon/rampardos/shiny.gbapal");
-    const u8 gMonIcon_Rampardos[] = INCBIN_U8("graphics/pokemon/rampardos/icon.4bpp");
+    const u32 gMonFrontPic_Stingmon[] = INCBIN_U32("graphics/pokemon/stingmon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Stingmon[] = INCBIN_U16("graphics/pokemon/stingmon/normal.gbapal");
+    const u32 gMonBackPic_Stingmon[] = INCBIN_U32("graphics/pokemon/stingmon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Stingmon[] = INCBIN_U16("graphics/pokemon/stingmon/shiny.gbapal");
+    const u8 gMonIcon_Stingmon[] = INCBIN_U8("graphics/pokemon/stingmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Rampardos[] = INCBIN_U8("graphics/pokemon/rampardos/footprint.1bpp");
+    const u8 gMonFootprint_Stingmon[] = INCBIN_U8("graphics/pokemon/stingmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Rampardos[] = INCBIN_COMP("graphics/pokemon/rampardos/overworld.4bpp");
+    const u32 gObjectEventPic_Stingmon[] = INCBIN_COMP("graphics/pokemon/stingmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Rampardos[] = INCBIN_U16("graphics/pokemon/rampardos/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Rampardos[] = INCBIN_U16("graphics/pokemon/rampardos/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Stingmon[] = INCBIN_U16("graphics/pokemon/stingmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Stingmon[] = INCBIN_U16("graphics/pokemon/stingmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_GROWLMON

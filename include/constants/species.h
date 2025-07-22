@@ -417,7 +417,7 @@
 #define SPECIES_BUDEW                                   406
 #define SPECIES_ROSERADE                                407
 #define SPECIES_GROWLMON                                408
-#define SPECIES_RAMPARDOS                               409
+#define SPECIES_STINGMON                               409
 #define SPECIES_SHIELDON                                410
 #define SPECIES_BASTIODON                               411
 #define SPECIES_BURMY_PLANT                             412

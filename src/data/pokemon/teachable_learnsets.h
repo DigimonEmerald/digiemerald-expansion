@@ -18770,7 +18770,7 @@ static const u16 sGrowlmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sRampardosTeachableLearnset[] = {
+static const u16 sStingmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,

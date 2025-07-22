@@ -1115,7 +1115,7 @@ gCryTable::
 .endif @ P_FAMILY_SHADRAMON
 .if P_FAMILY_GROWLMON == TRUE
 	cry Cry_Growlmon
-	cry Cry_Rampardos
+	cry Cry_Stingmon
 .endif @ P_FAMILY_GROWLMON
 .if P_FAMILY_SHIELDON == TRUE
 	cry Cry_Shieldon
@@ -3543,7 +3543,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_SHADRAMON
 .if P_FAMILY_GROWLMON == TRUE
 	cry_reverse Cry_Growlmon
-	cry_reverse Cry_Rampardos
+	cry_reverse Cry_Stingmon
 .endif @ P_FAMILY_GROWLMON
 .if P_FAMILY_SHIELDON == TRUE
 	cry_reverse Cry_Shieldon
