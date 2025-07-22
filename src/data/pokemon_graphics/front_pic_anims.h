@@ -8186,7 +8186,7 @@ static const union AnimCmd sAnim_Biosupinomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_BiosupinomonAsh_1[] =
+static const union AnimCmd sAnim_Rosemon_burstmode_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 15),
@@ -11980,7 +11980,7 @@ SINGLE_ANIMATION(Omnimon);
 SINGLE_ANIMATION(Cresgarurumon);
 SINGLE_ANIMATION(Blitzgreymon);
 SINGLE_ANIMATION(Biosupinomon);
-SINGLE_ANIMATION(BiosupinomonAsh);
+SINGLE_ANIMATION(Rosemon_burstmode);
 #endif //P_FAMILY_CRESGARURUMON
 #if P_FAMILY_BUNNELBY
 SINGLE_ANIMATION(Bunnelby);

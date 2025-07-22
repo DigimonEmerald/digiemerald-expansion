@@ -4590,8 +4590,8 @@ static const struct SpriteFrameImage sPicTable_Blitzgreymon[] = {
 static const struct SpriteFrameImage sPicTable_Biosupinomon[] = {
     overworld_ascending_frames(gObjectEventPic_Biosupinomon, 4, 4),
 };
-/*static const struct SpriteFrameImage sPicTable_BiosupinomonAsh[] = {
-    overworld_ascending_frames(gObjectEventPic_BiosupinomonAsh, 4, 4),
+/*static const struct SpriteFrameImage sPicTable_Rosemon_burstmode[] = {
+    overworld_ascending_frames(gObjectEventPic_Rosemon_burstmode, 4, 4),
 };*/
 #endif //P_FAMILY_CRESGARURUMON
 

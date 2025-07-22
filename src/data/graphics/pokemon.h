@@ -19197,16 +19197,16 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_BiosupinomonAsh[] = INCBIN_U32("graphics/pokemon/biosupinomon/ash/anim_front.4bpp.lz");
-    const u16 gMonPalette_BiosupinomonAsh[] = INCBIN_U16("graphics/pokemon/biosupinomon/ash/normal.gbapal");
-    const u32 gMonBackPic_BiosupinomonAsh[] = INCBIN_U32("graphics/pokemon/biosupinomon/ash/back.4bpp.lz");
-    const u16 gMonShinyPalette_BiosupinomonAsh[] = INCBIN_U16("graphics/pokemon/biosupinomon/ash/shiny.gbapal");
-    const u8 gMonIcon_BiosupinomonAsh[] = INCBIN_U8("graphics/pokemon/biosupinomon/ash/icon.4bpp");
+    const u32 gMonFrontPic_Rosemon_burstmode[] = INCBIN_U32("graphics/pokemon/rosemon_burstmode/anim_front.4bpp.lz");
+    const u16 gMonPalette_Rosemon_burstmode[] = INCBIN_U16("graphics/pokemon/rosemon_burstmode/normal.gbapal");
+    const u32 gMonBackPic_Rosemon_burstmode[] = INCBIN_U32("graphics/pokemon/rosemon_burstmode/back.4bpp.lz");
+    const u16 gMonShinyPalette_Rosemon_burstmode[] = INCBIN_U16("graphics/pokemon/rosemon_burstmode/shiny.gbapal");
+    const u8 gMonIcon_Rosemon_burstmode[] = INCBIN_U8("graphics/pokemon/rosemon_burstmode/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    // const u32 gObjectEventPic_BiosupinomonAsh[] = INCBIN_COMP("graphics/pokemon/biosupinomon/ash/overworld.4bpp");
+    // const u32 gObjectEventPic_Rosemon_burstmode[] = INCBIN_COMP("graphics/pokemon/biosupinomon/ash/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    // const u16 gOverworldPalette_BiosupinomonAsh[] = INCBIN_U16("graphics/pokemon/biosupinomon/ash/overworld_normal.gbapal");
-    // const u16 gShinyOverworldPalette_BiosupinomonAsh[] = INCBIN_U16("graphics/pokemon/biosupinomon/ash/overworld_shiny.gbapal");
+    // const u16 gOverworldPalette_Rosemon_burstmode[] = INCBIN_U16("graphics/pokemon/biosupinomon/ash/overworld_normal.gbapal");
+    // const u16 gShinyOverworldPalette_Rosemon_burstmode[] = INCBIN_U16("graphics/pokemon/biosupinomon/ash/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_CRESGARURUMON

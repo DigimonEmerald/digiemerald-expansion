@@ -6209,7 +6209,7 @@ static bool32 HandleMoveEndAbilityBlock(u32 battlerAtk, u32 battlerDef, u32 move
                 gBattleStruct->partyState[side][gBattlerPartyIndexes[battlerAtk]].battleBondBoost = TRUE;
                 PREPARE_SPECIES_BUFFER(gBattleTextBuff1, gBattleMons[battlerAtk].species);
                 gBattleStruct->changedSpecies[side][gBattlerPartyIndexes[battlerAtk]] = gBattleMons[battlerAtk].species;
-                gBattleMons[battlerAtk].species = SPECIES_BIOSUPINOMON_ASH;
+                gBattleMons[battlerAtk].species = SPECIES_ROSEMON_BURSTMODE;
                 BattleScriptPushCursor();
                 gBattlescriptCurrInstr = BattleScript_BattleBondActivatesOnMoveEndAttacker;
                 effect = TRUE;

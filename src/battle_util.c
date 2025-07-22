@@ -2364,7 +2364,7 @@ static void CancellerMultihitMoves(u32 *effect)
         }
         else if (ability == ABILITY_BATTLE_BOND
               && gCurrentMove == MOVE_WATER_SHURIKEN
-              && gBattleMons[gBattlerAttacker].species == SPECIES_BIOSUPINOMON_ASH)
+              && gBattleMons[gBattlerAttacker].species == SPECIES_ROSEMON_BURSTMODE)
         {
             gMultiHitCounter = 3;
         }
@@ -8327,7 +8327,7 @@ static inline u32 CalcMoveBasePower(struct DamageCalculationData *damageCalcData
     switch (move)
     {
     case MOVE_WATER_SHURIKEN:
-        if (gBattleMons[battlerAtk].species == SPECIES_BIOSUPINOMON_ASH)
+        if (gBattleMons[battlerAtk].species == SPECIES_ROSEMON_BURSTMODE)
             basePower = 20;
         break;
     }

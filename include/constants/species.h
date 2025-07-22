@@ -1181,7 +1181,7 @@
 #define SPECIES_GENESECT_CHILL                          1111
 #define SPECIES_BIOSUPINOMON_BOND                           1112
 #define SPECIES_BIOSUPINOMON_BATTLE_BOND                    SPECIES_BIOSUPINOMON_BOND
-#define SPECIES_BIOSUPINOMON_ASH                            1113
+#define SPECIES_ROSEMON_BURSTMODE                            1113
 #define SPECIES_VIVILLON_POLAR                          1114
 #define SPECIES_VIVILLON_TUNDRA                         1115
 #define SPECIES_VIVILLON_CONTINENTAL                    1116

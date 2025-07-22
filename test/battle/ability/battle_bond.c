@@ -52,7 +52,7 @@ SINGLE_BATTLE_TEST("Battle Bond transforms player's Biosupinomon - Singles")
         }
     } FINALLY {
         if (monsCountOpponent != 1) {
-            EXPECT(player->species == SPECIES_BIOSUPINOMON_ASH);
+            EXPECT(player->species == SPECIES_ROSEMON_BURSTMODE);
         } else {
             EXPECT(player->species == SPECIES_BIOSUPINOMON_BATTLE_BOND);
         }
@@ -100,7 +100,7 @@ SINGLE_BATTLE_TEST("Battle Bond transforms opponent's Biosupinomon - Singles")
         }
     } FINALLY {
         if (monsCountPlayer != 1) {
-            EXPECT(opponent->species == SPECIES_BIOSUPINOMON_ASH);
+            EXPECT(opponent->species == SPECIES_ROSEMON_BURSTMODE);
         } else {
             EXPECT(opponent->species == SPECIES_BIOSUPINOMON_BATTLE_BOND);
         }
@@ -142,7 +142,7 @@ DOUBLE_BATTLE_TEST("Battle Bond transforms player's Biosupinomon when fainting i
         MESSAGE("Biosupinomon became fully charged due to its bond with its trainer!");
         MESSAGE("Biosupinomon became Ash-Biosupinomon!");
     } FINALLY {
-        EXPECT(playerLeft->species == SPECIES_BIOSUPINOMON_ASH);
+        EXPECT(playerLeft->species == SPECIES_ROSEMON_BURSTMODE);
     }
 }
 
@@ -160,7 +160,7 @@ SINGLE_BATTLE_TEST("Battle Bond increases Atk, SpAtk and Speed by 1 stage (Gen9+
         MESSAGE("The opposing Lopmon_x fainted!");
         ABILITY_POPUP(player, ABILITY_BATTLE_BOND);
     } THEN {
-        EXPECT(player->species != SPECIES_BIOSUPINOMON_ASH);
+        EXPECT(player->species != SPECIES_ROSEMON_BURSTMODE);
         EXPECT_EQ(player->statStages[STAT_ATK], DEFAULT_STAT_STAGE + 1);
         EXPECT_EQ(player->statStages[STAT_SPATK], DEFAULT_STAT_STAGE + 1);
         EXPECT_EQ(player->statStages[STAT_SPEED], DEFAULT_STAT_STAGE + 1);
@@ -187,7 +187,7 @@ SINGLE_BATTLE_TEST("Battle Bond increases a Stat even if only one can be increas
         MESSAGE("The opposing Lopmon_x fainted!");
         ABILITY_POPUP(player, ABILITY_BATTLE_BOND);
     } THEN {
-        EXPECT(player->species != SPECIES_BIOSUPINOMON_ASH);
+        EXPECT(player->species != SPECIES_ROSEMON_BURSTMODE);
         EXPECT_EQ(player->statStages[STAT_ATK], DEFAULT_STAT_STAGE + 6);
         EXPECT_EQ(player->statStages[STAT_SPATK], DEFAULT_STAT_STAGE + 1);
         EXPECT_EQ(player->statStages[STAT_SPEED], DEFAULT_STAT_STAGE + 6);

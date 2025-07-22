@@ -1347,7 +1347,7 @@ static const u16 sGenesectFormSpeciesIdTable[] = {
 static const u16 sBiosupinomonFormSpeciesIdTable[] = {
     SPECIES_BIOSUPINOMON,
     SPECIES_BIOSUPINOMON_BATTLE_BOND,
-    SPECIES_BIOSUPINOMON_ASH,
+    SPECIES_ROSEMON_BURSTMODE,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_CRESGARURUMON
