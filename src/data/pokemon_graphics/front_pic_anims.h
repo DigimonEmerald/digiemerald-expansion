@@ -8179,14 +8179,14 @@ static const union AnimCmd sAnim_Blitzgreymon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Greninja_1[] =
+static const union AnimCmd sAnim_Biosupinomon_1[] =
 {
     ANIMCMD_FRAME(1, 32),
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_GreninjaAsh_1[] =
+static const union AnimCmd sAnim_BiosupinomonAsh_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 15),
@@ -11979,8 +11979,8 @@ SINGLE_ANIMATION(Omnimon);
 #if P_FAMILY_CRESGARURUMON
 SINGLE_ANIMATION(Cresgarurumon);
 SINGLE_ANIMATION(Blitzgreymon);
-SINGLE_ANIMATION(Greninja);
-SINGLE_ANIMATION(GreninjaAsh);
+SINGLE_ANIMATION(Biosupinomon);
+SINGLE_ANIMATION(BiosupinomonAsh);
 #endif //P_FAMILY_CRESGARURUMON
 #if P_FAMILY_BUNNELBY
 SINGLE_ANIMATION(Bunnelby);

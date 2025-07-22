@@ -162,7 +162,7 @@ static const union AnimCmd *const sAnims_Genesect[] =
 #endif //P_FAMILY_GENESECT
 
 #if P_FAMILY_CRESGARURUMON
-static const union AnimCmd *const sAnims_Greninja[] =
+static const union AnimCmd *const sAnims_Biosupinomon[] =
 {
     sAnim_GeneralFrame0,
     (const union AnimCmd[]) {
@@ -171,7 +171,7 @@ static const union AnimCmd *const sAnims_Greninja[] =
         ANIMCMD_END,
     },
 };
-#endif //P_FAMILY_GRENINJA
+#endif //P_FAMILY_BIOSUPINOMON
 
 #if P_FAMILY_SCATTERBUG
 static const union AnimCmd *const sAnims_Scatterbug[] =

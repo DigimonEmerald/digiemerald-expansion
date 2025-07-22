@@ -684,7 +684,7 @@
 #define SPECIES_OMNIMON                                 655
 #define SPECIES_CRESGARURUMON                                 656
 #define SPECIES_BLITZGREYMON                               657
-#define SPECIES_GRENINJA                                658
+#define SPECIES_BIOSUPINOMON                                658
 #define SPECIES_BUNNELBY                                659
 #define SPECIES_DIGGERSBY                               660
 #define SPECIES_FLETCHLING                              661
@@ -1179,9 +1179,9 @@
 #define SPECIES_GENESECT_SHOCK                          1109
 #define SPECIES_GENESECT_BURN                           1110
 #define SPECIES_GENESECT_CHILL                          1111
-#define SPECIES_GRENINJA_BOND                           1112
-#define SPECIES_GRENINJA_BATTLE_BOND                    SPECIES_GRENINJA_BOND
-#define SPECIES_GRENINJA_ASH                            1113
+#define SPECIES_BIOSUPINOMON_BOND                           1112
+#define SPECIES_BIOSUPINOMON_BATTLE_BOND                    SPECIES_BIOSUPINOMON_BOND
+#define SPECIES_BIOSUPINOMON_ASH                            1113
 #define SPECIES_VIVILLON_POLAR                          1114
 #define SPECIES_VIVILLON_TUNDRA                         1115
 #define SPECIES_VIVILLON_CONTINENTAL                    1116

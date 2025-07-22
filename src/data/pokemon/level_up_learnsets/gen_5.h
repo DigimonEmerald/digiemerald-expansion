@@ -14705,7 +14705,7 @@ static const struct LevelUpMove sBlitzgreymonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sGreninjaLevelUpLearnset[] = {
+static const struct LevelUpMove sBiosupinomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_NIGHT_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_ROLE_PLAY),
     LEVEL_UP_MOVE( 1, MOVE_MAT_BLOCK),

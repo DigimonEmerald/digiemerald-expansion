@@ -1611,7 +1611,7 @@ gCryTable::
 .if P_FAMILY_CRESGARURUMON == TRUE
 	cry Cry_Cresgarurumon
 	cry Cry_Blitzgreymon
-	cry Cry_Greninja
+	cry Cry_Biosupinomon
 .endif @ P_FAMILY_CRESGARURUMON
 .if P_FAMILY_BUNNELBY == TRUE
 	cry Cry_Bunnelby
@@ -4039,7 +4039,7 @@ gCryTable_Reverse::
 .if P_FAMILY_CRESGARURUMON == TRUE
 	cry_reverse Cry_Cresgarurumon
 	cry_reverse Cry_Blitzgreymon
-	cry_reverse Cry_Greninja
+	cry_reverse Cry_Biosupinomon
 .endif @ P_FAMILY_CRESGARURUMON
 .if P_FAMILY_BUNNELBY == TRUE
 	cry_reverse Cry_Bunnelby

@@ -171,7 +171,7 @@ DOUBLE_BATTLE_TEST("Shell Trap targets correctly if one of the opponents has fai
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_SHELL_TRAP].target == MOVE_TARGET_BOTH);
-        PLAYER(SPECIES_GRENINJA) { Speed(60); }
+        PLAYER(SPECIES_BIOSUPINOMON) { Speed(60); }
         PLAYER(SPECIES_TURTONATOR) { Speed(10); }
         OPPONENT(SPECIES_CURIMON) { Speed(120); }
         OPPONENT(SPECIES_MONODRAMON) { Speed(100); }

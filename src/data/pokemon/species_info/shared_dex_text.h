@@ -71,7 +71,7 @@ const u8 gGenesectPokedexText[] = _(
     "a cannon to its back.");
 
 // Gen 6 families
-const u8 gGreninjaPokedexText[] = _(
+const u8 gBiosupinomonPokedexText[] = _(
     "It appears and vanishes with a ninja's\n"
     "grace. It toys with its enemies using\n"
     "swift movements, while slicing them with\n"

@@ -207,7 +207,7 @@ DOUBLE_BATTLE_TEST("Powder still blocks the target's Fire type moves even if it 
 SINGLE_BATTLE_TEST("Powder prevents Protean from changing its user to Fire type")
 {
     GIVEN {
-        PLAYER(SPECIES_GRENINJA) { Ability(ABILITY_PROTEAN); }
+        PLAYER(SPECIES_BIOSUPINOMON) { Ability(ABILITY_PROTEAN); }
         OPPONENT(SPECIES_VIVILLON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POWDER); MOVE(player, MOVE_EMBER); }

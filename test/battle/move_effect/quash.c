@@ -47,7 +47,7 @@ DOUBLE_BATTLE_TEST("Quash is not affected by dynamic speed")
 DOUBLE_BATTLE_TEST("Quash calculates correct turn order if only one pokemon is left on the opposing side")
 {
     GIVEN {
-        PLAYER(SPECIES_GRENINJA) { Speed(120); }
+        PLAYER(SPECIES_BIOSUPINOMON) { Speed(120); }
         PLAYER(SPECIES_GARGOMON) { Speed(100); }
         OPPONENT(SPECIES_LEAFMON) { Speed(10); }
         OPPONENT(SPECIES_ESPIMON) { Speed(60); }

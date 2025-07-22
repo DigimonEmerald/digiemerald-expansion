@@ -4587,11 +4587,11 @@ static const struct SpriteFrameImage sPicTable_Cresgarurumon[] = {
 static const struct SpriteFrameImage sPicTable_Blitzgreymon[] = {
     overworld_ascending_frames(gObjectEventPic_Blitzgreymon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Greninja[] = {
-    overworld_ascending_frames(gObjectEventPic_Greninja, 4, 4),
+static const struct SpriteFrameImage sPicTable_Biosupinomon[] = {
+    overworld_ascending_frames(gObjectEventPic_Biosupinomon, 4, 4),
 };
-/*static const struct SpriteFrameImage sPicTable_GreninjaAsh[] = {
-    overworld_ascending_frames(gObjectEventPic_GreninjaAsh, 4, 4),
+/*static const struct SpriteFrameImage sPicTable_BiosupinomonAsh[] = {
+    overworld_ascending_frames(gObjectEventPic_BiosupinomonAsh, 4, 4),
 };*/
 #endif //P_FAMILY_CRESGARURUMON
 

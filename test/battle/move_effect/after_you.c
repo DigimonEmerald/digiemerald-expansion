@@ -59,7 +59,7 @@ DOUBLE_BATTLE_TEST("After You does nothing if the target has already moved")
 DOUBLE_BATTLE_TEST("After You calculates correct turn order if only one pokemon is left on the opposing side")
 {
     GIVEN {
-        PLAYER(SPECIES_GRENINJA) { Speed(120); }
+        PLAYER(SPECIES_BIOSUPINOMON) { Speed(120); }
         PLAYER(SPECIES_GARGOMON) { Speed(10); }
         OPPONENT(SPECIES_LEAFMON) { Speed(100); }
         OPPONENT(SPECIES_ESPIMON) { Speed(60); }

@@ -664,13 +664,13 @@ SINGLE_BATTLE_TEST("(TERA) Terastallizing into the Stellar type boosts all moves
 SINGLE_BATTLE_TEST("(TERA) Protean cannot change the type of a Terastallized Pokemon")
 {
     GIVEN {
-        PLAYER(SPECIES_GRENINJA) { Ability(ABILITY_PROTEAN); TeraType(TYPE_GRASS); }
+        PLAYER(SPECIES_BIOSUPINOMON) { Ability(ABILITY_PROTEAN); TeraType(TYPE_GRASS); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_BUBBLE, gimmick: GIMMICK_TERA);
                MOVE(opponent, MOVE_EMBER); }
     } SCENE {
-        MESSAGE("Greninja used Bubble!");
+        MESSAGE("Biosupinomon used Bubble!");
         MESSAGE("The opposing Lopmonx used Ember!");
         MESSAGE("It's super effective!");
     }

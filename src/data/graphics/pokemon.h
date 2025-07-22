@@ -19181,32 +19181,32 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Greninja[] = INCBIN_U32("graphics/pokemon/greninja/anim_front.4bpp.lz");
-    const u16 gMonPalette_Greninja[] = INCBIN_U16("graphics/pokemon/greninja/normal.gbapal");
-    const u32 gMonBackPic_Greninja[] = INCBIN_U32("graphics/pokemon/greninja/back.4bpp.lz");
-    const u16 gMonShinyPalette_Greninja[] = INCBIN_U16("graphics/pokemon/greninja/shiny.gbapal");
-    const u8 gMonIcon_Greninja[] = INCBIN_U8("graphics/pokemon/greninja/icon.4bpp");
+    const u32 gMonFrontPic_Biosupinomon[] = INCBIN_U32("graphics/pokemon/biosupinomon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Biosupinomon[] = INCBIN_U16("graphics/pokemon/biosupinomon/normal.gbapal");
+    const u32 gMonBackPic_Biosupinomon[] = INCBIN_U32("graphics/pokemon/biosupinomon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Biosupinomon[] = INCBIN_U16("graphics/pokemon/biosupinomon/shiny.gbapal");
+    const u8 gMonIcon_Biosupinomon[] = INCBIN_U8("graphics/pokemon/biosupinomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Greninja[] = INCBIN_U8("graphics/pokemon/greninja/footprint.1bpp");
+    const u8 gMonFootprint_Biosupinomon[] = INCBIN_U8("graphics/pokemon/biosupinomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Greninja[] = INCBIN_COMP("graphics/pokemon/greninja/overworld.4bpp");
+    const u32 gObjectEventPic_Biosupinomon[] = INCBIN_COMP("graphics/pokemon/biosupinomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Greninja[] = INCBIN_U16("graphics/pokemon/greninja/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Greninja[] = INCBIN_U16("graphics/pokemon/greninja/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Biosupinomon[] = INCBIN_U16("graphics/pokemon/biosupinomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Biosupinomon[] = INCBIN_U16("graphics/pokemon/biosupinomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_GreninjaAsh[] = INCBIN_U32("graphics/pokemon/greninja/ash/anim_front.4bpp.lz");
-    const u16 gMonPalette_GreninjaAsh[] = INCBIN_U16("graphics/pokemon/greninja/ash/normal.gbapal");
-    const u32 gMonBackPic_GreninjaAsh[] = INCBIN_U32("graphics/pokemon/greninja/ash/back.4bpp.lz");
-    const u16 gMonShinyPalette_GreninjaAsh[] = INCBIN_U16("graphics/pokemon/greninja/ash/shiny.gbapal");
-    const u8 gMonIcon_GreninjaAsh[] = INCBIN_U8("graphics/pokemon/greninja/ash/icon.4bpp");
+    const u32 gMonFrontPic_BiosupinomonAsh[] = INCBIN_U32("graphics/pokemon/biosupinomon/ash/anim_front.4bpp.lz");
+    const u16 gMonPalette_BiosupinomonAsh[] = INCBIN_U16("graphics/pokemon/biosupinomon/ash/normal.gbapal");
+    const u32 gMonBackPic_BiosupinomonAsh[] = INCBIN_U32("graphics/pokemon/biosupinomon/ash/back.4bpp.lz");
+    const u16 gMonShinyPalette_BiosupinomonAsh[] = INCBIN_U16("graphics/pokemon/biosupinomon/ash/shiny.gbapal");
+    const u8 gMonIcon_BiosupinomonAsh[] = INCBIN_U8("graphics/pokemon/biosupinomon/ash/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    // const u32 gObjectEventPic_GreninjaAsh[] = INCBIN_COMP("graphics/pokemon/greninja/ash/overworld.4bpp");
+    // const u32 gObjectEventPic_BiosupinomonAsh[] = INCBIN_COMP("graphics/pokemon/biosupinomon/ash/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    // const u16 gOverworldPalette_GreninjaAsh[] = INCBIN_U16("graphics/pokemon/greninja/ash/overworld_normal.gbapal");
-    // const u16 gShinyOverworldPalette_GreninjaAsh[] = INCBIN_U16("graphics/pokemon/greninja/ash/overworld_shiny.gbapal");
+    // const u16 gOverworldPalette_BiosupinomonAsh[] = INCBIN_U16("graphics/pokemon/biosupinomon/ash/overworld_normal.gbapal");
+    // const u16 gShinyOverworldPalette_BiosupinomonAsh[] = INCBIN_U16("graphics/pokemon/biosupinomon/ash/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_CRESGARURUMON
