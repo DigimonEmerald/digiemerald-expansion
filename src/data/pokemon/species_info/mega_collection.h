@@ -469,8 +469,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .cryId = CRY_CRESGARURUMON,
         .natDexNum = NATIONAL_DEX_CRESGARURUMON,
         .categoryName = _("Moon Wolf"),
-        .height = 244,
-        .weight = 6304,
+        .height = 34,
+        .weight = 2174,
         .description = COMPOUND_STRING(
             "Unlike MetalGarurumon, CresGarurumon retains\n"
             "its bipedal stature letting it stay nimble.\n"
@@ -516,73 +516,76 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sCresgarurumonLevelUpLearnset,
         .teachableLearnset = sCresgarurumonTeachableLearnset,
         .eggMoveLearnset = sCresgarurumonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_FROGADIER}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_BLITZGREYMON}),
     },
 
-    [SPECIES_FROGADIER] =
+    [SPECIES_BLITZGREYMON] =
     {
-        .baseHP        = 54,
-        .baseAttack    = 63,
-        .baseDefense   = 52,
-        .baseSpeed     = 97,
-        .baseSpAttack  = 83,
-        .baseSpDefense = 56,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 45,
-        .expYield = 142,
+        .baseHP        = 90,
+        .baseAttack    = 110,
+        .baseDefense   = 125,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 135,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DRAGON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_Attack = 1,
         .evYield_Speed = 2,
+        .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_PROTEAN },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Frogadier"),
-        .cryId = CRY_FROGADIER,
-        .natDexNum = NATIONAL_DEX_FROGADIER,
-        .categoryName = _("Bubble Frog"),
-        .height = 6,
-        .weight = 109,
+        .abilities = { ABILITY_MEGA_LAUNCHER, ABILITY_TRANSISTOR, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("BlitzGreymon"),
+        .cryId = CRY_BLITZGREYMON,
+        .natDexNum = NATIONAL_DEX_BLITZGREYMON,
+        .categoryName = _("Red Thunder"),
+        .height = 30,
+        .weight = 1809,
         .description = COMPOUND_STRING(
-            "It can throw bubble-covered pebbles with\n"
-            "precise control, hitting empty cans up to\n"
-            "a hundred feet away. Frogadier's swiftness\n"
-            "is unparalleled."),
+            "Unlike other Mega-level Greymons, BlitzGreymon\n"
+            "lessens its reliance on pure strength and\n"
+            "arms itself with electric weapons letting\n"
+            "it overwhelm opponents with barrages."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Frogadier,
+        .frontPic = gMonFrontPic_Blitzgreymon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
-        .frontPicYOffset = 8,
+        .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 30),
             ANIMCMD_FRAME(0, 30),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Frogadier,
+        .backPic = gMonBackPic_Blitzgreymon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
-        .backPicYOffset = 6,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_GROW_STUTTER,
-        .palette = gMonPalette_Frogadier,
-        .shinyPalette = gMonShinyPalette_Frogadier,
-        .iconSprite = gMonIcon_Frogadier,
+        .palette = gMonPalette_Blitzgreymon,
+        .shinyPalette = gMonShinyPalette_Blitzgreymon,
+        .iconSprite = gMonIcon_Blitzgreymon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
-        SHADOW(0, 5, SHADOW_SIZE_M)
-        FOOTPRINT(Frogadier)
+        SHADOW(2, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Blitzgreymon)
         OVERWORLD(
-            sPicTable_Frogadier,
+            sPicTable_Blitzgreymon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Frogadier,
-            gShinyOverworldPalette_Frogadier
+            gOverworldPalette_Blitzgreymon,
+            gShinyOverworldPalette_Blitzgreymon
         )
-        .levelUpLearnset = sFrogadierLevelUpLearnset,
-        .teachableLearnset = sFrogadierTeachableLearnset,
+        .levelUpLearnset = sBlitzgreymonLevelUpLearnset,
+        .teachableLearnset = sBlitzgreymonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GRENINJA}),
     },
 

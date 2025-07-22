@@ -26519,7 +26519,7 @@ static const u16 sCresgarurumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFrogadierTeachableLearnset[] = {
+static const u16 sBlitzgreymonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,

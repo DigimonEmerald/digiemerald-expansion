@@ -8172,7 +8172,7 @@ static const union AnimCmd sAnim_Cresgarurumon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Frogadier_1[] =
+static const union AnimCmd sAnim_Blitzgreymon_1[] =
 {
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 30),
@@ -11978,7 +11978,7 @@ SINGLE_ANIMATION(Omnimon);
 #endif //P_FAMILY_WARGREYMON
 #if P_FAMILY_CRESGARURUMON
 SINGLE_ANIMATION(Cresgarurumon);
-SINGLE_ANIMATION(Frogadier);
+SINGLE_ANIMATION(Blitzgreymon);
 SINGLE_ANIMATION(Greninja);
 SINGLE_ANIMATION(GreninjaAsh);
 #endif //P_FAMILY_CRESGARURUMON

@@ -461,5 +461,6 @@ WarGreymon - Fennekin
 MetalGarurumon - Braixen
 Omnimon - Delphox
 CresGarurumon - Froakie
+BlitzGreymon - Frogadier
 
 SPECIES NAME LENGTH MAX = 13

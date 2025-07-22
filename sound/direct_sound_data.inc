@@ -4193,8 +4193,8 @@ Cry_Cresgarurumon::
 	.incbin "sound/direct_sound_samples/cries/cresgarurumon.bin"
 
 	.align 2
-Cry_Frogadier::
-	.incbin "sound/direct_sound_samples/cries/frogadier.bin"
+Cry_Blitzgreymon::
+	.incbin "sound/direct_sound_samples/cries/blitzgreymon.bin"
 
 	.align 2
 Cry_Greninja::

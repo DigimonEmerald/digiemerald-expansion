@@ -19165,19 +19165,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Frogadier[] = INCBIN_U32("graphics/pokemon/frogadier/anim_front.4bpp.lz");
-    const u16 gMonPalette_Frogadier[] = INCBIN_U16("graphics/pokemon/frogadier/normal.gbapal");
-    const u32 gMonBackPic_Frogadier[] = INCBIN_U32("graphics/pokemon/frogadier/back.4bpp.lz");
-    const u16 gMonShinyPalette_Frogadier[] = INCBIN_U16("graphics/pokemon/frogadier/shiny.gbapal");
-    const u8 gMonIcon_Frogadier[] = INCBIN_U8("graphics/pokemon/frogadier/icon.4bpp");
+    const u32 gMonFrontPic_Blitzgreymon[] = INCBIN_U32("graphics/pokemon/blitzgreymon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Blitzgreymon[] = INCBIN_U16("graphics/pokemon/blitzgreymon/normal.gbapal");
+    const u32 gMonBackPic_Blitzgreymon[] = INCBIN_U32("graphics/pokemon/blitzgreymon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Blitzgreymon[] = INCBIN_U16("graphics/pokemon/blitzgreymon/shiny.gbapal");
+    const u8 gMonIcon_Blitzgreymon[] = INCBIN_U8("graphics/pokemon/blitzgreymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Frogadier[] = INCBIN_U8("graphics/pokemon/frogadier/footprint.1bpp");
+    const u8 gMonFootprint_Blitzgreymon[] = INCBIN_U8("graphics/pokemon/blitzgreymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Frogadier[] = INCBIN_COMP("graphics/pokemon/frogadier/overworld.4bpp");
+    const u32 gObjectEventPic_Blitzgreymon[] = INCBIN_COMP("graphics/pokemon/blitzgreymon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Frogadier[] = INCBIN_U16("graphics/pokemon/frogadier/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Frogadier[] = INCBIN_U16("graphics/pokemon/frogadier/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Blitzgreymon[] = INCBIN_U16("graphics/pokemon/blitzgreymon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Blitzgreymon[] = INCBIN_U16("graphics/pokemon/blitzgreymon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

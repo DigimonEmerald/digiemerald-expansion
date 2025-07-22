@@ -683,7 +683,7 @@
 #define SPECIES_METALGARURUMON                                 654
 #define SPECIES_OMNIMON                                 655
 #define SPECIES_CRESGARURUMON                                 656
-#define SPECIES_FROGADIER                               657
+#define SPECIES_BLITZGREYMON                               657
 #define SPECIES_GRENINJA                                658
 #define SPECIES_BUNNELBY                                659
 #define SPECIES_DIGGERSBY                               660

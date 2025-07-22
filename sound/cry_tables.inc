@@ -1610,7 +1610,7 @@ gCryTable::
 .endif @ P_FAMILY_WARGREYMON
 .if P_FAMILY_CRESGARURUMON == TRUE
 	cry Cry_Cresgarurumon
-	cry Cry_Frogadier
+	cry Cry_Blitzgreymon
 	cry Cry_Greninja
 .endif @ P_FAMILY_CRESGARURUMON
 .if P_FAMILY_BUNNELBY == TRUE
@@ -4038,7 +4038,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_WARGREYMON
 .if P_FAMILY_CRESGARURUMON == TRUE
 	cry_reverse Cry_Cresgarurumon
-	cry_reverse Cry_Frogadier
+	cry_reverse Cry_Blitzgreymon
 	cry_reverse Cry_Greninja
 .endif @ P_FAMILY_CRESGARURUMON
 .if P_FAMILY_BUNNELBY == TRUE
