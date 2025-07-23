@@ -1313,7 +1313,7 @@ gCryTable::
 .endif @ P_FAMILY_WEREGARURUMON
 .if P_FAMILY_WARGROWLMON == TRUE
 	cry Cry_Wargrowlmon
-	cry Cry_Zebstrika
+	cry Cry_Lillymon
 .endif @ P_FAMILY_WARGROWLMON
 .if P_FAMILY_ROGGENROLA == TRUE
 	cry Cry_Roggenrola
@@ -3741,7 +3741,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_WEREGARURUMON
 .if P_FAMILY_WARGROWLMON == TRUE
 	cry_reverse Cry_Wargrowlmon
-	cry_reverse Cry_Zebstrika
+	cry_reverse Cry_Lillymon
 .endif @ P_FAMILY_WARGROWLMON
 .if P_FAMILY_ROGGENROLA == TRUE
 	cry_reverse Cry_Roggenrola

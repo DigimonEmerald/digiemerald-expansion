@@ -3822,8 +3822,8 @@ static const struct SpriteFrameImage sPicTable_PaildramonF[] = {
 static const struct SpriteFrameImage sPicTable_Wargrowlmon[] = {
     overworld_ascending_frames(gObjectEventPic_Wargrowlmon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Zebstrika[] = {
-    overworld_ascending_frames(gObjectEventPic_Zebstrika, 4, 4),
+static const struct SpriteFrameImage sPicTable_Lillymon[] = {
+    overworld_ascending_frames(gObjectEventPic_Lillymon, 4, 4),
 };
 #endif //P_FAMILY_WARGROWLMON
 

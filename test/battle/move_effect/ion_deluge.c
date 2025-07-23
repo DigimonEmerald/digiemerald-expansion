@@ -37,16 +37,16 @@ WILD_BATTLE_TEST("Ion Deluge works the same way as always when used by a mon wit
 
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_ZEBSTRIKA) { Ability(ability); }
+        OPPONENT(SPECIES_LILLYMON) { Ability(ability); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_ION_DELUGE); }
     } SCENE {
-        MESSAGE("The wild Zebstrika used Ion Deluge!");
+        MESSAGE("The wild Lillymon used Ion Deluge!");
         NONE_OF {
             ABILITY_POPUP(opponent, ability);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("Wild Zebstrika's Sp. Atk rose!");
-            MESSAGE("Wild Zebstrika's Speed rose!");
+            MESSAGE("Wild Lillymon's Sp. Atk rose!");
+            MESSAGE("Wild Lillymon's Speed rose!");
         }
         MESSAGE("A deluge of ions showers the battlefield!");
     }

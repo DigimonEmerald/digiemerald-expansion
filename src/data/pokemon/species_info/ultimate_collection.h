@@ -2217,44 +2217,47 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sWargrowlmonLevelUpLearnset,
         .teachableLearnset = sWargrowlmonTeachableLearnset,
         .eggMoveLearnset = sWargrowlmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_ZEBSTRIKA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_LILLYMON}),
     },
 
-    [SPECIES_ZEBSTRIKA] =
+    [SPECIES_LILLYMON] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 100,
-        .baseDefense   = 63,
-        .baseSpeed     = 116,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 63,
-        .types = MON_TYPES(TYPE_ELECTRIC),
-        .catchRate = 75,
-        .expYield = 174,
-        .evYield_Speed = 2,
+        .baseHP        = 50,
+        .baseAttack    = 45,
+        .baseDefense   = 70,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 135,
+        .baseSpDefense = 135,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FAIRY),
+        .attribute = TYPE_DATA,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_Speed = 1,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_MOTOR_DRIVE, ABILITY_SAP_SIPPER },
-        .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Zebstrika"),
-        .cryId = CRY_ZEBSTRIKA,
-        .natDexNum = NATIONAL_DEX_ZEBSTRIKA,
-        .categoryName = _("Thunderbolt"),
+        .abilities = { ABILITY_CUTE_CHARM, ABILITY_NATURAL_CURE, ABILITY_FLOWER_VEIL },
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("Lillymon"),
+        .cryId = CRY_LILLYMON,
+        .natDexNum = NATIONAL_DEX_LILLYMON,
+        .categoryName = _("Blooming"),
         .height = 16,
         .weight = 795,
         .description = COMPOUND_STRING(
-            "When Zebstrika run at full speed, the\n"
-            "sound of thunder reverberates. It is\n"
-            "dangerous when it's angry as it shoots\n"
-            "lightning from its mane in all directions."),
+            "A kindly Digimon, Lillymon will always\n"
+            "extend its hand to small or weak things.\n"
+            "It is often found with tomboyish and\n"
+            "whimsical tamers."),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Zebstrika,
+        .frontPic = gMonFrontPic_Lillymon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2263,28 +2266,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 30),
         ),
         .frontAnimId = ANIM_BACK_AND_LUNGE,
-        .backPic = gMonBackPic_Zebstrika,
+        .backPic = gMonBackPic_Lillymon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 7,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
-        .palette = gMonPalette_Zebstrika,
-        .shinyPalette = gMonShinyPalette_Zebstrika,
-        .iconSprite = gMonIcon_Zebstrika,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Lillymon,
+        .shinyPalette = gMonShinyPalette_Lillymon,
+        .iconSprite = gMonIcon_Lillymon,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-2, 13, SHADOW_SIZE_M)
-        FOOTPRINT(Zebstrika)
+        SHADOW(-2, 14, SHADOW_SIZE_M)
+        FOOTPRINT(Lillymon)
         OVERWORLD(
-            sPicTable_Zebstrika,
+            sPicTable_Lillymon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Zebstrika,
-            gShinyOverworldPalette_Zebstrika
+            gOverworldPalette_Lillymon,
+            gShinyOverworldPalette_Lillymon
         )
-        .levelUpLearnset = sZebstrikaLevelUpLearnset,
-        .teachableLearnset = sZebstrikaTeachableLearnset,
+        .levelUpLearnset = sLillymonLevelUpLearnset,
+        .teachableLearnset = sLillymonTeachableLearnset,
     },
 #endif //P_FAMILY_WARGROWLMON
 

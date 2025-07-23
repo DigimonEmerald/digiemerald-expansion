@@ -16402,19 +16402,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Zebstrika[] = INCBIN_U32("graphics/pokemon/zebstrika/anim_front.4bpp.lz");
-    const u16 gMonPalette_Zebstrika[] = INCBIN_U16("graphics/pokemon/zebstrika/normal.gbapal");
-    const u32 gMonBackPic_Zebstrika[] = INCBIN_U32("graphics/pokemon/zebstrika/back.4bpp.lz");
-    const u16 gMonShinyPalette_Zebstrika[] = INCBIN_U16("graphics/pokemon/zebstrika/shiny.gbapal");
-    const u8 gMonIcon_Zebstrika[] = INCBIN_U8("graphics/pokemon/zebstrika/icon.4bpp");
+    const u32 gMonFrontPic_Lillymon[] = INCBIN_U32("graphics/pokemon/lillymon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Lillymon[] = INCBIN_U16("graphics/pokemon/lillymon/normal.gbapal");
+    const u32 gMonBackPic_Lillymon[] = INCBIN_U32("graphics/pokemon/lillymon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Lillymon[] = INCBIN_U16("graphics/pokemon/lillymon/shiny.gbapal");
+    const u8 gMonIcon_Lillymon[] = INCBIN_U8("graphics/pokemon/lillymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Zebstrika[] = INCBIN_U8("graphics/pokemon/zebstrika/footprint.1bpp");
+    const u8 gMonFootprint_Lillymon[] = INCBIN_U8("graphics/pokemon/lillymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Zebstrika[] = INCBIN_COMP("graphics/pokemon/zebstrika/overworld.4bpp");
+    const u32 gObjectEventPic_Lillymon[] = INCBIN_COMP("graphics/pokemon/lillymon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Zebstrika[] = INCBIN_U16("graphics/pokemon/zebstrika/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Zebstrika[] = INCBIN_U16("graphics/pokemon/zebstrika/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Lillymon[] = INCBIN_U16("graphics/pokemon/lillymon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Lillymon[] = INCBIN_U16("graphics/pokemon/lillymon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_WARGROWLMON

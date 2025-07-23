@@ -21923,7 +21923,7 @@ static const u16 sWargrowlmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sZebstrikaTeachableLearnset[] = {
+static const u16 sLillymonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_DOUBLE_EDGE,

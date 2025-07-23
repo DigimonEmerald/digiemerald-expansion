@@ -6552,7 +6552,7 @@ static const union AnimCmd sAnim_Wargrowlmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Zebstrika_1[] =
+static const union AnimCmd sAnim_Lillymon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 25),
@@ -11656,7 +11656,7 @@ SINGLE_ANIMATION(Paildramon);
 #endif //P_FAMILY_WEREGARURUMON
 #if P_FAMILY_WARGROWLMON
 SINGLE_ANIMATION(Wargrowlmon);
-SINGLE_ANIMATION(Zebstrika);
+SINGLE_ANIMATION(Lillymon);
 #endif //P_FAMILY_WARGROWLMON
 #if P_FAMILY_ROGGENROLA
 SINGLE_ANIMATION(Roggenrola);

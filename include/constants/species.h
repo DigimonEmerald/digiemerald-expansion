@@ -540,7 +540,7 @@
 #define SPECIES_DINOBEEMON                               520
 #define SPECIES_PAILDRAMON                                521
 #define SPECIES_WARGROWLMON                                 522
-#define SPECIES_ZEBSTRIKA                               523
+#define SPECIES_LILLYMON                               523
 #define SPECIES_ROGGENROLA                              524
 #define SPECIES_BOLDORE                                 525
 #define SPECIES_GIGALITH                                526
