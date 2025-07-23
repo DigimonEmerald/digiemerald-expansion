@@ -719,12 +719,12 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 
     [SPECIES_ROSEMON_BURSTMODE] =
     {
-        .baseHP        = 125,
-        .baseAttack    = 130,
-        .baseDefense   = 80,
+        .baseHP        = 135,
+        .baseAttack    = 140,
+        .baseDefense   = 65,
         .baseSpeed     = 90,
-        .baseSpAttack  = 110,
-        .baseSpDefense = 85,
+        .baseSpAttack  = 135,
+        .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_GRASS, TYPE_FAIRY),
         .attribute = TYPE_DATA,
         .catchRate = 55,
@@ -744,8 +744,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .cryId = CRY_BIOSUPINOMON,
         .natDexNum = NATIONAL_DEX_BIOSUPINOMON,
         .categoryName = _("Thorny"),
-        .height = 56,
-        .weight = 1264,
+        .height = 21,
+        .weight = 765,
         .description = COMPOUND_STRING(
             "Rosemon Burst Mode is wrapped in an aura\n"
             "of love and beauty due to the process of\n"
@@ -784,42 +784,45 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
 #endif //P_FAMILY_CRESGARURUMON
 
-#if P_FAMILY_BUNNELBY
-    [SPECIES_BUNNELBY] =
+#if P_FAMILY_ROSEMON
+    [SPECIES_ROSEMON] =
     {
-        .baseHP        = 38,
-        .baseAttack    = 36,
-        .baseDefense   = 38,
-        .baseSpeed     = 57,
-        .baseSpAttack  = 32,
-        .baseSpDefense = 36,
-        .types = MON_TYPES(TYPE_NORMAL),
-        .catchRate = 255,
-        .expYield = 47,
-        .evYield_Speed = 1,
+        .baseHP        = 125,
+        .baseAttack    = 130,
+        .baseDefense   = 80,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_GRASS),
+        .attribute = TYPE_DATA,
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_HP = 2,
+        .evYield_Attack = 3,
+        .evYield_SpAttack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_PICKUP, ABILITY_CHEEK_POUCH, ABILITY_HUGE_POWER },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Bunnelby"),
-        .cryId = CRY_BUNNELBY,
-        .natDexNum = NATIONAL_DEX_BUNNELBY,
-        .categoryName = _("Digging"),
-        .height = 4,
-        .weight = 50,
+        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_TANGLING_HAIR, ABILITY_SEED_SOWER },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Rosemon"),
+        .cryId = CRY_ROSEMON,
+        .natDexNum = NATIONAL_DEX_ROSEMON,
+        .categoryName = _("Flower Queen"),
+        .height = 21,
+        .weight = 699,
         .description = COMPOUND_STRING(
-            "It has ears like shovels. Digging holes\n"
-            "strengthens its ears so much that they\n"
-            "can sever thick roots effortlessly.\n"
-            "Bunnelby dig the whole night through."),
+            "Having the appearance of a beautiful\n"
+            "woman, Rosemon desires to retain that\n"
+            "beauty at all costs. Any who make the\n"
+            "mistake of underestimating it will pay."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Bunnelby,
+        .frontPic = gMonFrontPic_Rosemon,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 5,
         .frontAnimFrames = ANIM_FRAMES(
@@ -827,29 +830,29 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
-        .backPic = gMonBackPic_Bunnelby,
+        .backPic = gMonBackPic_Rosemon,
         .backPicSize = MON_COORDS_SIZE(48, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Bunnelby,
-        .shinyPalette = gMonShinyPalette_Bunnelby,
-        .iconSprite = gMonIcon_Bunnelby,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Rosemon,
+        .shinyPalette = gMonShinyPalette_Rosemon,
+        .iconSprite = gMonIcon_Rosemon,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
-        SHADOW(3, 9, SHADOW_SIZE_S)
-        FOOTPRINT(Bunnelby)
+        SHADOW(6, 2, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Rosemon)
         OVERWORLD(
-            sPicTable_Bunnelby,
+            sPicTable_Rosemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Bunnelby,
-            gShinyOverworldPalette_Bunnelby
+            gOverworldPalette_Rosemon,
+            gShinyOverworldPalette_Rosemon
         )
-        .levelUpLearnset = sBunnelbyLevelUpLearnset,
-        .teachableLearnset = sBunnelbyTeachableLearnset,
-        .eggMoveLearnset = sBunnelbyEggMoveLearnset,
+        .levelUpLearnset = sRosemonLevelUpLearnset,
+        .teachableLearnset = sRosemonTeachableLearnset,
+        .eggMoveLearnset = sRosemonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_DIGGERSBY}),
     },
 
@@ -918,7 +921,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sDiggersbyLevelUpLearnset,
         .teachableLearnset = sDiggersbyTeachableLearnset,
     },
-#endif //P_FAMILY_BUNNELBY
+#endif //P_FAMILY_ROSEMON
 
 #if P_FAMILY_FLETCHLING
     [SPECIES_FLETCHLING] =

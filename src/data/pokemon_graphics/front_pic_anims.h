@@ -8197,8 +8197,8 @@ static const union AnimCmd sAnim_Rosemon_burstmode_1[] =
 };
 #endif //P_FAMILY_CRESGARURUMON
 
-#if P_FAMILY_BUNNELBY
-static const union AnimCmd sAnim_Bunnelby_1[] =
+#if P_FAMILY_ROSEMON
+static const union AnimCmd sAnim_Rosemon_1[] =
 {
     ANIMCMD_FRAME(1, 25),
     ANIMCMD_FRAME(0, 5),
@@ -8211,7 +8211,7 @@ static const union AnimCmd sAnim_Diggersby_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_BUNNELBY
+#endif //P_FAMILY_ROSEMON
 
 #if P_FAMILY_FLETCHLING
 static const union AnimCmd sAnim_Fletchling_1[] =
@@ -11982,10 +11982,10 @@ SINGLE_ANIMATION(Blitzgreymon);
 SINGLE_ANIMATION(Biosupinomon);
 SINGLE_ANIMATION(Rosemon_burstmode);
 #endif //P_FAMILY_CRESGARURUMON
-#if P_FAMILY_BUNNELBY
-SINGLE_ANIMATION(Bunnelby);
+#if P_FAMILY_ROSEMON
+SINGLE_ANIMATION(Rosemon);
 SINGLE_ANIMATION(Diggersby);
-#endif //P_FAMILY_BUNNELBY
+#endif //P_FAMILY_ROSEMON
 #if P_FAMILY_FLETCHLING
 SINGLE_ANIMATION(Fletchling);
 SINGLE_ANIMATION(Fletchinder);

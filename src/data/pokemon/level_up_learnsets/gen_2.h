@@ -12707,8 +12707,8 @@ static const struct LevelUpMove sBiosupinomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_CRESGARURUMON
 
-#if P_FAMILY_BUNNELBY
-static const struct LevelUpMove sBunnelbyLevelUpLearnset[] = {
+#if P_FAMILY_ROSEMON
+static const struct LevelUpMove sRosemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_AGILITY),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
@@ -12751,7 +12751,7 @@ static const struct LevelUpMove sDiggersbyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(60, MOVE_HAMMER_ARM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_BUNNELBY
+#endif //P_FAMILY_ROSEMON
 
 #if P_FAMILY_FLETCHLING
 static const struct LevelUpMove sFletchlingLevelUpLearnset[] = {

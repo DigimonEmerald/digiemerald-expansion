@@ -4595,14 +4595,14 @@ static const struct SpriteFrameImage sPicTable_Biosupinomon[] = {
 };*/
 #endif //P_FAMILY_CRESGARURUMON
 
-#if P_FAMILY_BUNNELBY
-static const struct SpriteFrameImage sPicTable_Bunnelby[] = {
-    overworld_ascending_frames(gObjectEventPic_Bunnelby, 4, 4),
+#if P_FAMILY_ROSEMON
+static const struct SpriteFrameImage sPicTable_Rosemon[] = {
+    overworld_ascending_frames(gObjectEventPic_Rosemon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Diggersby[] = {
     overworld_ascending_frames(gObjectEventPic_Diggersby, 4, 4),
 };
-#endif //P_FAMILY_BUNNELBY
+#endif //P_FAMILY_ROSEMON
 
 #if P_FAMILY_FLETCHLING
 static const struct SpriteFrameImage sPicTable_Fletchling[] = {

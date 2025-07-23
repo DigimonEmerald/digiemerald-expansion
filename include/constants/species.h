@@ -685,7 +685,7 @@
 #define SPECIES_CRESGARURUMON                                 656
 #define SPECIES_BLITZGREYMON                               657
 #define SPECIES_BIOSUPINOMON                                658
-#define SPECIES_BUNNELBY                                659
+#define SPECIES_ROSEMON                                659
 #define SPECIES_DIGGERSBY                               660
 #define SPECIES_FLETCHLING                              661
 #define SPECIES_FLETCHINDER                             662

@@ -463,5 +463,7 @@ Omnimon - Delphox
 CresGarurumon - Froakie
 BlitzGreymon - Frogadier
 BioSupinomon - Greninja
+Rosemon Burst Mode - Ash Greninja
+Rosemon - Bunnelby
 
 SPECIES NAME LENGTH MAX = 13

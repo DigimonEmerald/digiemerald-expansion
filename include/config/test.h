@@ -705,8 +705,8 @@
 #define P_FAMILY_WARGREYMON                TRUE
 #undef P_FAMILY_CRESGARURUMON
 #define P_FAMILY_CRESGARURUMON                 TRUE
-#undef P_FAMILY_BUNNELBY
-#define P_FAMILY_BUNNELBY                TRUE
+#undef P_FAMILY_ROSEMON
+#define P_FAMILY_ROSEMON                TRUE
 #undef P_FAMILY_FLETCHLING
 #define P_FAMILY_FLETCHLING              TRUE
 #undef P_FAMILY_SCATTERBUG

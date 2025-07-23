@@ -26596,8 +26596,8 @@ static const u16 sBiosupinomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_CRESGARURUMON
 
-#if P_FAMILY_BUNNELBY
-static const u16 sBunnelbyTeachableLearnset[] = {
+#if P_FAMILY_ROSEMON
+static const u16 sRosemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -26671,7 +26671,7 @@ static const u16 sDiggersbyTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BUNNELBY
+#endif //P_FAMILY_ROSEMON
 
 #if P_FAMILY_FLETCHLING
 static const u16 sFletchlingTeachableLearnset[] = {

@@ -1613,10 +1613,10 @@ gCryTable::
 	cry Cry_Blitzgreymon
 	cry Cry_Biosupinomon
 .endif @ P_FAMILY_CRESGARURUMON
-.if P_FAMILY_BUNNELBY == TRUE
-	cry Cry_Bunnelby
+.if P_FAMILY_ROSEMON == TRUE
+	cry Cry_Rosemon
 	cry Cry_Diggersby
-.endif @ P_FAMILY_BUNNELBY
+.endif @ P_FAMILY_ROSEMON
 .if P_FAMILY_FLETCHLING == TRUE
 	cry Cry_Fletchling
 	cry Cry_Fletchinder
@@ -4041,10 +4041,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Blitzgreymon
 	cry_reverse Cry_Biosupinomon
 .endif @ P_FAMILY_CRESGARURUMON
-.if P_FAMILY_BUNNELBY == TRUE
-	cry_reverse Cry_Bunnelby
+.if P_FAMILY_ROSEMON == TRUE
+	cry_reverse Cry_Rosemon
 	cry_reverse Cry_Diggersby
-.endif @ P_FAMILY_BUNNELBY
+.endif @ P_FAMILY_ROSEMON
 .if P_FAMILY_FLETCHLING == TRUE
 	cry_reverse Cry_Fletchling
 	cry_reverse Cry_Fletchinder

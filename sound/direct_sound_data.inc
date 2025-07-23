@@ -4201,15 +4201,15 @@ Cry_Biosupinomon::
 	.incbin "sound/direct_sound_samples/cries/biosupinomon.bin"
 .endif @ P_FAMILY_CRESGARURUMON
 
-.if P_FAMILY_BUNNELBY == TRUE
+.if P_FAMILY_ROSEMON == TRUE
 	.align 2
-Cry_Bunnelby::
-	.incbin "sound/direct_sound_samples/cries/bunnelby.bin"
+Cry_Rosemon::
+	.incbin "sound/direct_sound_samples/cries/rosemon.bin"
 
 	.align 2
 Cry_Diggersby::
 	.incbin "sound/direct_sound_samples/cries/diggersby.bin"
-.endif @ P_FAMILY_BUNNELBY
+.endif @ P_FAMILY_ROSEMON
 
 .if P_FAMILY_FLETCHLING == TRUE
 	.align 2

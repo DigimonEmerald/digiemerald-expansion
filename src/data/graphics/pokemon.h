@@ -19211,20 +19211,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_CRESGARURUMON
 
-#if P_FAMILY_BUNNELBY
-    const u32 gMonFrontPic_Bunnelby[] = INCBIN_U32("graphics/pokemon/bunnelby/anim_front.4bpp.lz");
-    const u16 gMonPalette_Bunnelby[] = INCBIN_U16("graphics/pokemon/bunnelby/normal.gbapal");
-    const u32 gMonBackPic_Bunnelby[] = INCBIN_U32("graphics/pokemon/bunnelby/back.4bpp.lz");
-    const u16 gMonShinyPalette_Bunnelby[] = INCBIN_U16("graphics/pokemon/bunnelby/shiny.gbapal");
-    const u8 gMonIcon_Bunnelby[] = INCBIN_U8("graphics/pokemon/bunnelby/icon.4bpp");
+#if P_FAMILY_ROSEMON
+    const u32 gMonFrontPic_Rosemon[] = INCBIN_U32("graphics/pokemon/rosemon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Rosemon[] = INCBIN_U16("graphics/pokemon/rosemon/normal.gbapal");
+    const u32 gMonBackPic_Rosemon[] = INCBIN_U32("graphics/pokemon/rosemon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Rosemon[] = INCBIN_U16("graphics/pokemon/rosemon/shiny.gbapal");
+    const u8 gMonIcon_Rosemon[] = INCBIN_U8("graphics/pokemon/rosemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Bunnelby[] = INCBIN_U8("graphics/pokemon/bunnelby/footprint.1bpp");
+    const u8 gMonFootprint_Rosemon[] = INCBIN_U8("graphics/pokemon/rosemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Bunnelby[] = INCBIN_COMP("graphics/pokemon/bunnelby/overworld.4bpp");
+    const u32 gObjectEventPic_Rosemon[] = INCBIN_COMP("graphics/pokemon/rosemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Bunnelby[] = INCBIN_U16("graphics/pokemon/bunnelby/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Bunnelby[] = INCBIN_U16("graphics/pokemon/bunnelby/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Rosemon[] = INCBIN_U16("graphics/pokemon/rosemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Rosemon[] = INCBIN_U16("graphics/pokemon/rosemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -19243,7 +19243,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Diggersby[] = INCBIN_U16("graphics/pokemon/diggersby/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_BUNNELBY
+#endif //P_FAMILY_ROSEMON
 
 #if P_FAMILY_FLETCHLING
     const u32 gMonFrontPic_Fletchling[] = INCBIN_U32("graphics/pokemon/fletchling/anim_front.4bpp.lz");
