@@ -6561,8 +6561,8 @@ static const union AnimCmd sAnim_Lillymon_1[] =
 };
 #endif //P_FAMILY_WARGROWLMON
 
-#if P_FAMILY_ROGGENROLA
-static const union AnimCmd sAnim_Roggenrola_1[] =
+#if P_FAMILY_MASTERTYRANNOMON
+static const union AnimCmd sAnim_Mastertyrannomon_1[] =
 {
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_FRAME(1, 10),
@@ -6588,7 +6588,7 @@ static const union AnimCmd sAnim_Gigalith_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_ROGGENROLA
+#endif //P_FAMILY_MASTERTYRANNOMON
 
 #if P_FAMILY_WOOBAT
 static const union AnimCmd sAnim_Woobat_1[] =
@@ -11658,11 +11658,11 @@ SINGLE_ANIMATION(Paildramon);
 SINGLE_ANIMATION(Wargrowlmon);
 SINGLE_ANIMATION(Lillymon);
 #endif //P_FAMILY_WARGROWLMON
-#if P_FAMILY_ROGGENROLA
-SINGLE_ANIMATION(Roggenrola);
+#if P_FAMILY_MASTERTYRANNOMON
+SINGLE_ANIMATION(Mastertyrannomon);
 SINGLE_ANIMATION(Boldore);
 SINGLE_ANIMATION(Gigalith);
-#endif //P_FAMILY_ROGGENROLA
+#endif //P_FAMILY_MASTERTYRANNOMON
 #if P_FAMILY_WOOBAT
 SINGLE_ANIMATION(Woobat);
 SINGLE_ANIMATION(Swoobat);

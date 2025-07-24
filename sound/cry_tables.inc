@@ -1315,11 +1315,11 @@ gCryTable::
 	cry Cry_Wargrowlmon
 	cry Cry_Lillymon
 .endif @ P_FAMILY_WARGROWLMON
-.if P_FAMILY_ROGGENROLA == TRUE
-	cry Cry_Roggenrola
+.if P_FAMILY_MASTERTYRANNOMON == TRUE
+	cry Cry_Mastertyrannomon
 	cry Cry_Boldore
 	cry Cry_Gigalith
-.endif @ P_FAMILY_ROGGENROLA
+.endif @ P_FAMILY_MASTERTYRANNOMON
 .if P_FAMILY_WOOBAT == TRUE
 	cry Cry_Woobat
 	cry Cry_Swoobat
@@ -3743,11 +3743,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Wargrowlmon
 	cry_reverse Cry_Lillymon
 .endif @ P_FAMILY_WARGROWLMON
-.if P_FAMILY_ROGGENROLA == TRUE
-	cry_reverse Cry_Roggenrola
+.if P_FAMILY_MASTERTYRANNOMON == TRUE
+	cry_reverse Cry_Mastertyrannomon
 	cry_reverse Cry_Boldore
 	cry_reverse Cry_Gigalith
-.endif @ P_FAMILY_ROGGENROLA
+.endif @ P_FAMILY_MASTERTYRANNOMON
 .if P_FAMILY_WOOBAT == TRUE
 	cry_reverse Cry_Woobat
 	cry_reverse Cry_Swoobat

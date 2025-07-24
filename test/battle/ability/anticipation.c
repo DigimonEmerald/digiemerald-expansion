@@ -97,7 +97,7 @@ SINGLE_BATTLE_TEST("Anticipation counts Counter, Metal Burst or Mirror Coat as a
 {
     u32 move, species, typeAtk, typeDef;
     PARAMETRIZE { move = MOVE_COUNTER; species = SPECIES_MOKUMON; typeAtk = TYPE_FIGHTING; typeDef = TYPE_NORMAL; }
-    PARAMETRIZE { move = MOVE_METAL_BURST; species = SPECIES_ROGGENROLA; typeAtk = TYPE_STEEL; typeDef = TYPE_ROCK; }
+    PARAMETRIZE { move = MOVE_METAL_BURST; species = SPECIES_MASTERTYRANNOMON; typeAtk = TYPE_STEEL; typeDef = TYPE_ROCK; }
     PARAMETRIZE { move = MOVE_MIRROR_COAT; species = SPECIES_PUTTIMON; typeAtk = TYPE_PSYCHIC; typeDef = TYPE_POISON; }
     GIVEN {
         ASSUME(GetMoveType(move) == typeAtk);

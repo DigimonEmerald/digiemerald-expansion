@@ -2247,7 +2247,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .natDexNum = NATIONAL_DEX_LILLYMON,
         .categoryName = _("Blooming"),
         .height = 16,
-        .weight = 795,
+        .weight = 695,
         .description = COMPOUND_STRING(
             "A kindly Digimon, Lillymon will always\n"
             "extend its hand to small or weak things.\n"
@@ -2291,18 +2291,18 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_WARGROWLMON
 
-#if P_FAMILY_ROGGENROLA
-    [SPECIES_ROGGENROLA] =
+#if P_FAMILY_MASTERTYRANNOMON
+    [SPECIES_MASTERTYRANNOMON] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 75,
-        .baseDefense   = 85,
-        .baseSpeed     = 15,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 25,
-        .types = MON_TYPES(TYPE_ROCK),
+        .baseHP        = 100,
+        .baseAttack    = 120,
+        .baseDefense   = 100,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 40,
+        .types = MON_TYPES(TYPE_FIRE),
         .catchRate = 95,
-        .expYield = 56,
+        .expYield = 200,
         .evYield_Defense = 1,
         .itemCommon = ITEM_EVERSTONE,
         .itemRare = ITEM_HARD_STONE,
@@ -2311,59 +2311,55 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-    #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_STURDY, ABILITY_WEAK_ARMOR, ABILITY_SAND_FORCE },
-    #else
-        .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_SAND_FORCE },
-    #endif
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Roggenrola"),
-        .cryId = CRY_ROGGENROLA,
-        .natDexNum = NATIONAL_DEX_ROGGENROLA,
-        .categoryName = _("Mantle"),
-        .height = 4,
-        .weight = 180,
+        .abilities = { ABILITY_BLAZE, ABILITY_SOLAR_POWER, ABILITY_TOUGH_CLAWS },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("MstrTyranmon"),
+        .cryId = CRY_MASTERTYRANNOMON,
+        .natDexNum = NATIONAL_DEX_MASTERTYRANNOMON,
+        .categoryName = _("Master"),
+        .height = 100,
+        .weight = 4724,
         .description = COMPOUND_STRING(
-            "The hexagonal cavity is its ear.\n"
-            "It walks in the direction of sounds it\n"
-            "hears, but if the sounds cease, it panics\n"
-            "and topples over."),
+            "Tyrannomon only evolve into a\n"
+            "MasterTyrannomon once they have overcame\n"
+            "many fierce battles. The scars on its\n"
+            "body are a reminder of every battle."),
         .pokemonScale = 491,
         .pokemonOffset = 16,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Roggenrola,
+        .frontPic = gMonFrontPic_Mastertyrannomon,
         .frontPicSize = MON_COORDS_SIZE(24, 40),
-        .frontPicYOffset = 14,
+        .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 20),
             ANIMCMD_FRAME(1, 10),
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Roggenrola,
+        .backPic = gMonBackPic_Mastertyrannomon,
         .backPicSize = MON_COORDS_SIZE(40, 48),
-        .backPicYOffset = 13,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Roggenrola,
-        .shinyPalette = gMonShinyPalette_Roggenrola,
-        .iconSprite = gMonIcon_Roggenrola,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Mastertyrannomon,
+        .shinyPalette = gMonShinyPalette_Mastertyrannomon,
+        .iconSprite = gMonIcon_Mastertyrannomon,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
-        SHADOW(-1, 0, SHADOW_SIZE_S)
-        FOOTPRINT(Roggenrola)
+        SHADOW(3, 8, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Mastertyrannomon)
         OVERWORLD(
-            sPicTable_Roggenrola,
+            sPicTable_Mastertyrannomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Roggenrola,
-            gShinyOverworldPalette_Roggenrola
+            gOverworldPalette_Mastertyrannomon,
+            gShinyOverworldPalette_Mastertyrannomon
         )
-        .levelUpLearnset = sRoggenrolaLevelUpLearnset,
-        .teachableLearnset = sRoggenrolaTeachableLearnset,
-        .eggMoveLearnset = sRoggenrolaEggMoveLearnset,
+        .levelUpLearnset = sMastertyrannomonLevelUpLearnset,
+        .teachableLearnset = sMastertyrannomonTeachableLearnset,
+        .eggMoveLearnset = sMastertyrannomonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_BOLDORE}),
     },
 
@@ -2524,7 +2520,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sGigalithLevelUpLearnset,
         .teachableLearnset = sGigalithTeachableLearnset,
     },
-#endif //P_FAMILY_ROGGENROLA
+#endif //P_FAMILY_MASTERTYRANNOMON
 
 #if P_FAMILY_WOOBAT
     [SPECIES_WOOBAT] =

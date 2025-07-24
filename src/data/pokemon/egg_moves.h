@@ -4105,8 +4105,8 @@ static const u16 sWargrowlmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_WARGROWLMON
 
-#if P_FAMILY_ROGGENROLA
-static const u16 sRoggenrolaEggMoveLearnset[] = {
+#if P_FAMILY_MASTERTYRANNOMON
+static const u16 sMastertyrannomonEggMoveLearnset[] = {
     MOVE_MAGNITUDE,
     MOVE_CURSE,
     MOVE_AUTOTOMIZE,
@@ -4118,7 +4118,7 @@ static const u16 sRoggenrolaEggMoveLearnset[] = {
     MOVE_WIDE_GUARD,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ROGGENROLA
+#endif //P_FAMILY_MASTERTYRANNOMON
 
 #if P_FAMILY_WOOBAT
 static const u16 sWoobatEggMoveLearnset[] = {

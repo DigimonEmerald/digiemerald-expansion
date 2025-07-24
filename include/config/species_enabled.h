@@ -317,7 +317,7 @@
 #define P_FAMILY_MAMMOTHMON                   P_GEN_5_POKEMON
 #define P_FAMILY_WEREGARURUMON                  P_GEN_5_POKEMON
 #define P_FAMILY_WARGROWLMON                 P_GEN_5_POKEMON
-#define P_FAMILY_ROGGENROLA              P_GEN_5_POKEMON
+#define P_FAMILY_MASTERTYRANNOMON              P_GEN_5_POKEMON
 #define P_FAMILY_WOOBAT                  P_GEN_5_POKEMON
 #define P_FAMILY_DRILBUR                 P_GEN_5_POKEMON
 #define P_FAMILY_AUDINO                  P_GEN_5_POKEMON

@@ -3827,9 +3827,9 @@ static const struct SpriteFrameImage sPicTable_Lillymon[] = {
 };
 #endif //P_FAMILY_WARGROWLMON
 
-#if P_FAMILY_ROGGENROLA
-static const struct SpriteFrameImage sPicTable_Roggenrola[] = {
-    overworld_ascending_frames(gObjectEventPic_Roggenrola, 4, 4),
+#if P_FAMILY_MASTERTYRANNOMON
+static const struct SpriteFrameImage sPicTable_Mastertyrannomon[] = {
+    overworld_ascending_frames(gObjectEventPic_Mastertyrannomon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Boldore[] = {
     overworld_ascending_frames(gObjectEventPic_Boldore, 4, 4),
@@ -3837,7 +3837,7 @@ static const struct SpriteFrameImage sPicTable_Boldore[] = {
 static const struct SpriteFrameImage sPicTable_Gigalith[] = {
     overworld_ascending_frames(gObjectEventPic_Gigalith, 4, 4),
 };
-#endif //P_FAMILY_ROGGENROLA
+#endif //P_FAMILY_MASTERTYRANNOMON
 
 #if P_FAMILY_WOOBAT
 static const struct SpriteFrameImage sPicTable_Woobat[] = {

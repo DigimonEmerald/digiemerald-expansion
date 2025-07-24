@@ -3468,10 +3468,10 @@ Cry_Lillymon::
 	.incbin "sound/direct_sound_samples/cries/lillymon.bin"
 .endif @ P_FAMILY_WARGROWLMON
 
-.if P_FAMILY_ROGGENROLA == TRUE
+.if P_FAMILY_MASTERTYRANNOMON == TRUE
 	.align 2
-Cry_Roggenrola::
-	.incbin "sound/direct_sound_samples/cries/roggenrola.bin"
+Cry_Mastertyrannomon::
+	.incbin "sound/direct_sound_samples/cries/mastertyrannomon.bin"
 
 	.align 2
 Cry_Boldore::
@@ -3480,7 +3480,7 @@ Cry_Boldore::
 	.align 2
 Cry_Gigalith::
 	.incbin "sound/direct_sound_samples/cries/gigalith.bin"
-.endif @ P_FAMILY_ROGGENROLA
+.endif @ P_FAMILY_MASTERTYRANNOMON
 
 .if P_FAMILY_WOOBAT == TRUE
 	.align 2

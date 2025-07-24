@@ -12395,8 +12395,8 @@ static const struct LevelUpMove sLillymonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_WARGROWLMON
 
-#if P_FAMILY_ROGGENROLA
-static const struct LevelUpMove sRoggenrolaLevelUpLearnset[] = {
+#if P_FAMILY_MASTERTYRANNOMON
+static const struct LevelUpMove sMastertyrannomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 4, MOVE_HARDEN),
@@ -12449,7 +12449,7 @@ static const struct LevelUpMove sGigalithLevelUpLearnset[] = {
     LEVEL_UP_MOVE(54, MOVE_EXPLOSION),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_ROGGENROLA
+#endif //P_FAMILY_MASTERTYRANNOMON
 
 #if P_FAMILY_WOOBAT
 static const struct LevelUpMove sWoobatLevelUpLearnset[] = {

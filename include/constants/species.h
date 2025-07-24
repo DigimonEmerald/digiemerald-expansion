@@ -541,7 +541,7 @@
 #define SPECIES_PAILDRAMON                                521
 #define SPECIES_WARGROWLMON                                 522
 #define SPECIES_LILLYMON                               523
-#define SPECIES_ROGGENROLA                              524
+#define SPECIES_MASTERTYRANNOMON                              524
 #define SPECIES_BOLDORE                                 525
 #define SPECIES_GIGALITH                                526
 #define SPECIES_WOOBAT                                  527

@@ -16419,20 +16419,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_WARGROWLMON
 
-#if P_FAMILY_ROGGENROLA
-    const u32 gMonFrontPic_Roggenrola[] = INCBIN_U32("graphics/pokemon/roggenrola/anim_front.4bpp.lz");
-    const u16 gMonPalette_Roggenrola[] = INCBIN_U16("graphics/pokemon/roggenrola/normal.gbapal");
-    const u32 gMonBackPic_Roggenrola[] = INCBIN_U32("graphics/pokemon/roggenrola/back.4bpp.lz");
-    const u16 gMonShinyPalette_Roggenrola[] = INCBIN_U16("graphics/pokemon/roggenrola/shiny.gbapal");
-    const u8 gMonIcon_Roggenrola[] = INCBIN_U8("graphics/pokemon/roggenrola/icon.4bpp");
+#if P_FAMILY_MASTERTYRANNOMON
+    const u32 gMonFrontPic_Mastertyrannomon[] = INCBIN_U32("graphics/pokemon/mastertyrannomon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Mastertyrannomon[] = INCBIN_U16("graphics/pokemon/mastertyrannomon/normal.gbapal");
+    const u32 gMonBackPic_Mastertyrannomon[] = INCBIN_U32("graphics/pokemon/mastertyrannomon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Mastertyrannomon[] = INCBIN_U16("graphics/pokemon/mastertyrannomon/shiny.gbapal");
+    const u8 gMonIcon_Mastertyrannomon[] = INCBIN_U8("graphics/pokemon/mastertyrannomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Roggenrola[] = INCBIN_U8("graphics/pokemon/roggenrola/footprint.1bpp");
+    const u8 gMonFootprint_Mastertyrannomon[] = INCBIN_U8("graphics/pokemon/mastertyrannomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Roggenrola[] = INCBIN_COMP("graphics/pokemon/roggenrola/overworld.4bpp");
+    const u32 gObjectEventPic_Mastertyrannomon[] = INCBIN_COMP("graphics/pokemon/mastertyrannomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Roggenrola[] = INCBIN_U16("graphics/pokemon/roggenrola/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Roggenrola[] = INCBIN_U16("graphics/pokemon/roggenrola/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Mastertyrannomon[] = INCBIN_U16("graphics/pokemon/mastertyrannomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Mastertyrannomon[] = INCBIN_U16("graphics/pokemon/mastertyrannomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16467,7 +16467,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Gigalith[] = INCBIN_U16("graphics/pokemon/gigalith/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_ROGGENROLA
+#endif //P_FAMILY_MASTERTYRANNOMON
 
 #if P_FAMILY_WOOBAT
     const u32 gMonFrontPic_Woobat[] = INCBIN_U32("graphics/pokemon/woobat/anim_front.4bpp.lz");

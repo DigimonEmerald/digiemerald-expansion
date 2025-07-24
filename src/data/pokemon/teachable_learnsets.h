@@ -21955,8 +21955,8 @@ static const u16 sLillymonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_WARGROWLMON
 
-#if P_FAMILY_ROGGENROLA
-static const u16 sRoggenrolaTeachableLearnset[] = {
+#if P_FAMILY_MASTERTYRANNOMON
+static const u16 sMastertyrannomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_EARTHQUAKE,
@@ -22023,7 +22023,7 @@ static const u16 sGigalithTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ROGGENROLA
+#endif //P_FAMILY_MASTERTYRANNOMON
 
 #if P_FAMILY_WOOBAT
 static const u16 sWoobatTeachableLearnset[] = {
