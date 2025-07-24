@@ -12934,73 +12934,75 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_GROWLMON
 
-#if P_FAMILY_SHIELDON
-    [SPECIES_SHIELDON] =
+#if P_FAMILY_TUSKMON
+    [SPECIES_TUSKMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 42,
-        .baseDefense   = 118,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 42,
-        .baseSpDefense = 88,
-        .types = MON_TYPES(TYPE_ROCK, TYPE_STEEL),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 70 : 99,
-        .evYield_Defense = 1,
+        .baseHP        = 70,
+        .baseAttack    = 90,
+        .baseDefense   = 60,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_DRAGON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack = 3,
+        .evYield_Speed = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
-        .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_SOUNDPROOF },
-        .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Shieldon"),
-        .cryId = CRY_SHIELDON,
-        .natDexNum = NATIONAL_DEX_SHIELDON,
-        .categoryName = _("Shield"),
-        .height = 5,
-        .weight = 570,
+        .abilities = { ABILITY_ROCK_HEAD, ABILITY_SHED_SKIN, ABILITY_REGENERATOR },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Tuskmon"),
+        .cryId = CRY_TUSKMON,
+        .natDexNum = NATIONAL_DEX_TUSKMON,
+        .categoryName = _("Panzer"),
+        .height = 42,
+        .weight = 1536,
         .description = COMPOUND_STRING(
-            "This Pokémon lived in primeval jungles.\n"
-            "Few enemies would have been willing to\n"
-            "square off against its heavily armored\n"
-            "face, so it's thought."),
+            "Tuskmon has earned the title of Panzer\n"
+            "Digimon from how it will destroy all\n"
+            "obstructions as it charges forward. Its\n"
+            "horns regrow like shark teeth when broken."),
         .pokemonScale = 432,
         .pokemonOffset = 16,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Shieldon,
+        .frontPic = gMonFrontPic_Tuskmon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
-        .frontPicYOffset = 15,
+        .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 20),
             ANIMCMD_FRAME(1, 10),
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Shieldon,
+        .backPic = gMonBackPic_Tuskmon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
-        .backPicYOffset = 11,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Shieldon,
-        .shinyPalette = gMonShinyPalette_Shieldon,
-        .iconSprite = gMonIcon_Shieldon,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Tuskmon,
+        .shinyPalette = gMonShinyPalette_Tuskmon,
+        .iconSprite = gMonIcon_Tuskmon,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
-        SHADOW(3, -1, SHADOW_SIZE_S)
-        FOOTPRINT(Shieldon)
+        SHADOW(2, 8, SHADOW_SIZE_L)
+        FOOTPRINT(Tuskmon)
         OVERWORLD(
-            sPicTable_Shieldon,
+            sPicTable_Tuskmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Shieldon,
-            gShinyOverworldPalette_Shieldon
+            gOverworldPalette_Tuskmon,
+            gShinyOverworldPalette_Tuskmon
         )
-        .levelUpLearnset = sShieldonLevelUpLearnset,
-        .teachableLearnset = sShieldonTeachableLearnset,
-        .eggMoveLearnset = sShieldonEggMoveLearnset,
+        .levelUpLearnset = sTuskmonLevelUpLearnset,
+        .teachableLearnset = sTuskmonTeachableLearnset,
+        .eggMoveLearnset = sTuskmonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_BASTIODON}),
     },
 
@@ -13070,7 +13072,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sBastiodonLevelUpLearnset,
         .teachableLearnset = sBastiodonTeachableLearnset,
     },
-#endif //P_FAMILY_SHIELDON
+#endif //P_FAMILY_TUSKMON
 
 #if P_FAMILY_BURMY
     [SPECIES_BURMY_PLANT] =

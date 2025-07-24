@@ -3545,8 +3545,8 @@ static const u16 sGrowlmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_GROWLMON
 
-#if P_FAMILY_SHIELDON
-static const u16 sShieldonEggMoveLearnset[] = {
+#if P_FAMILY_TUSKMON
+static const u16 sTuskmonEggMoveLearnset[] = {
     MOVE_HEADBUTT,
     MOVE_SCARY_FACE,
     MOVE_FOCUS_ENERGY,
@@ -3562,7 +3562,7 @@ static const u16 sShieldonEggMoveLearnset[] = {
     MOVE_GUARD_SPLIT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SHIELDON
+#endif //P_FAMILY_TUSKMON
 
 #if P_FAMILY_PACHIRISU
 static const u16 sPachirisuEggMoveLearnset[] = {

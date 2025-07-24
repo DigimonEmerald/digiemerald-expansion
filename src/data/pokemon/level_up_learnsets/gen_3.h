@@ -8143,8 +8143,8 @@ static const struct LevelUpMove sStingmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_GROWLMON
 
-#if P_FAMILY_SHIELDON
-static const struct LevelUpMove sShieldonLevelUpLearnset[] = {
+#if P_FAMILY_TUSKMON
+static const struct LevelUpMove sTuskmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_PROTECT),
     LEVEL_UP_MOVE( 6, MOVE_TAUNT),
@@ -8176,7 +8176,7 @@ static const struct LevelUpMove sBastiodonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(52, MOVE_IRON_HEAD),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SHIELDON
+#endif //P_FAMILY_TUSKMON
 
 #if P_FAMILY_BURMY
 static const struct LevelUpMove sBurmyLevelUpLearnset[] = {

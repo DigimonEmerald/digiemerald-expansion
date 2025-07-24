@@ -2994,15 +2994,15 @@ Cry_Stingmon::
 	.incbin "sound/direct_sound_samples/cries/stingmon.bin"
 .endif @ P_FAMILY_GROWLMON
 
-.if P_FAMILY_SHIELDON == TRUE
+.if P_FAMILY_TUSKMON == TRUE
 	.align 2
-Cry_Shieldon::
-	.incbin "sound/direct_sound_samples/cries/shieldon.bin"
+Cry_Tuskmon::
+	.incbin "sound/direct_sound_samples/cries/tuskmon.bin"
 
 	.align 2
 Cry_Bastiodon::
 	.incbin "sound/direct_sound_samples/cries/bastiodon.bin"
-.endif @ P_FAMILY_SHIELDON
+.endif @ P_FAMILY_TUSKMON
 
 .if P_FAMILY_BURMY == TRUE
 	.align 2

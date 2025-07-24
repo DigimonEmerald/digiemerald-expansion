@@ -3210,14 +3210,14 @@ static const struct SpriteFrameImage sPicTable_Stingmon[] = {
 };
 #endif //P_FAMILY_GROWLMON
 
-#if P_FAMILY_SHIELDON
-static const struct SpriteFrameImage sPicTable_Shieldon[] = {
-    overworld_ascending_frames(gObjectEventPic_Shieldon, 4, 4),
+#if P_FAMILY_TUSKMON
+static const struct SpriteFrameImage sPicTable_Tuskmon[] = {
+    overworld_ascending_frames(gObjectEventPic_Tuskmon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Bastiodon[] = {
     overworld_ascending_frames(gObjectEventPic_Bastiodon, 4, 4),
 };
-#endif //P_FAMILY_SHIELDON
+#endif //P_FAMILY_TUSKMON
 
 #if P_FAMILY_BURMY
 static const struct SpriteFrameImage sPicTable_BurmyPlant[] = {

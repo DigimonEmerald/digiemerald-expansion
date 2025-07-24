@@ -18816,8 +18816,8 @@ static const u16 sStingmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GROWLMON
 
-#if P_FAMILY_SHIELDON
-static const u16 sShieldonTeachableLearnset[] = {
+#if P_FAMILY_TUSKMON
+static const u16 sTuskmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
@@ -18894,7 +18894,7 @@ static const u16 sBastiodonTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SHIELDON
+#endif //P_FAMILY_TUSKMON
 
 #if P_FAMILY_BURMY
 static const u16 sBurmyTeachableLearnset[] = {

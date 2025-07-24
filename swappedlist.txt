@@ -418,6 +418,7 @@ Raidramon - Luxio
 Togemon - Luxray
 Growlmon - Cranidos
 Stingmon - Rampardos
+Tuskmon - Shieldon
 
 Ultimate List
 

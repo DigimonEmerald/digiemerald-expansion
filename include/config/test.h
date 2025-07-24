@@ -462,8 +462,8 @@
 #define P_FAMILY_SHADRAMON                   TRUE
 #undef P_FAMILY_GROWLMON
 #define P_FAMILY_GROWLMON                TRUE
-#undef P_FAMILY_SHIELDON
-#define P_FAMILY_SHIELDON                TRUE
+#undef P_FAMILY_TUSKMON
+#define P_FAMILY_TUSKMON                TRUE
 #undef P_FAMILY_BURMY
 #define P_FAMILY_BURMY                   TRUE
 #undef P_FAMILY_COMBEE

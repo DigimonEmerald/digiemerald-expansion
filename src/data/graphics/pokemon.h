@@ -14424,20 +14424,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_GROWLMON
 
-#if P_FAMILY_SHIELDON
-    const u32 gMonFrontPic_Shieldon[] = INCBIN_U32("graphics/pokemon/shieldon/anim_front.4bpp.lz");
-    const u16 gMonPalette_Shieldon[] = INCBIN_U16("graphics/pokemon/shieldon/normal.gbapal");
-    const u32 gMonBackPic_Shieldon[] = INCBIN_U32("graphics/pokemon/shieldon/back.4bpp.lz");
-    const u16 gMonShinyPalette_Shieldon[] = INCBIN_U16("graphics/pokemon/shieldon/shiny.gbapal");
-    const u8 gMonIcon_Shieldon[] = INCBIN_U8("graphics/pokemon/shieldon/icon.4bpp");
+#if P_FAMILY_TUSKMON
+    const u32 gMonFrontPic_Tuskmon[] = INCBIN_U32("graphics/pokemon/tuskmon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Tuskmon[] = INCBIN_U16("graphics/pokemon/tuskmon/normal.gbapal");
+    const u32 gMonBackPic_Tuskmon[] = INCBIN_U32("graphics/pokemon/tuskmon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Tuskmon[] = INCBIN_U16("graphics/pokemon/tuskmon/shiny.gbapal");
+    const u8 gMonIcon_Tuskmon[] = INCBIN_U8("graphics/pokemon/tuskmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Shieldon[] = INCBIN_U8("graphics/pokemon/shieldon/footprint.1bpp");
+    const u8 gMonFootprint_Tuskmon[] = INCBIN_U8("graphics/pokemon/tuskmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Shieldon[] = INCBIN_COMP("graphics/pokemon/shieldon/overworld.4bpp");
+    const u32 gObjectEventPic_Tuskmon[] = INCBIN_COMP("graphics/pokemon/tuskmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Shieldon[] = INCBIN_U16("graphics/pokemon/shieldon/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Shieldon[] = INCBIN_U16("graphics/pokemon/shieldon/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Tuskmon[] = INCBIN_U16("graphics/pokemon/tuskmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Tuskmon[] = INCBIN_U16("graphics/pokemon/tuskmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -14456,7 +14456,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Bastiodon[] = INCBIN_U16("graphics/pokemon/bastiodon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_SHIELDON
+#endif //P_FAMILY_TUSKMON
 
 #if P_FAMILY_BURMY
     const u32 gMonFrontPic_BurmyPlant[] = INCBIN_U32("graphics/pokemon/burmy/anim_front.4bpp.lz");

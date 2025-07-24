@@ -1117,10 +1117,10 @@ gCryTable::
 	cry Cry_Growlmon
 	cry Cry_Stingmon
 .endif @ P_FAMILY_GROWLMON
-.if P_FAMILY_SHIELDON == TRUE
-	cry Cry_Shieldon
+.if P_FAMILY_TUSKMON == TRUE
+	cry Cry_Tuskmon
 	cry Cry_Bastiodon
-.endif @ P_FAMILY_SHIELDON
+.endif @ P_FAMILY_TUSKMON
 .if P_FAMILY_BURMY == TRUE
 	cry Cry_Burmy
 	cry Cry_Wormadam
@@ -3545,10 +3545,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Growlmon
 	cry_reverse Cry_Stingmon
 .endif @ P_FAMILY_GROWLMON
-.if P_FAMILY_SHIELDON == TRUE
-	cry_reverse Cry_Shieldon
+.if P_FAMILY_TUSKMON == TRUE
+	cry_reverse Cry_Tuskmon
 	cry_reverse Cry_Bastiodon
-.endif @ P_FAMILY_SHIELDON
+.endif @ P_FAMILY_TUSKMON
 .if P_FAMILY_BURMY == TRUE
 	cry_reverse Cry_Burmy
 	cry_reverse Cry_Wormadam

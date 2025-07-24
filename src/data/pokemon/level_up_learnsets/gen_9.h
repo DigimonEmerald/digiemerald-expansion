@@ -8366,20 +8366,18 @@ static const struct LevelUpMove sStingmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_GROWLMON
 
-#if P_FAMILY_SHIELDON
-static const struct LevelUpMove sShieldonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 1, MOVE_PROTECT),
-    LEVEL_UP_MOVE( 6, MOVE_TAUNT),
-    LEVEL_UP_MOVE(10, MOVE_METAL_SOUND),
-    LEVEL_UP_MOVE(15, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(19, MOVE_IRON_DEFENSE),
-    LEVEL_UP_MOVE(24, MOVE_SWAGGER),
-    LEVEL_UP_MOVE(28, MOVE_ANCIENT_POWER),
-    LEVEL_UP_MOVE(33, MOVE_ENDURE),
-    LEVEL_UP_MOVE(37, MOVE_METAL_BURST),
-    LEVEL_UP_MOVE(42, MOVE_IRON_HEAD),
-    LEVEL_UP_MOVE(46, MOVE_HEAVY_SLAM),
+#if P_FAMILY_TUSKMON
+static const struct LevelUpMove sTuskmonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_LEER),
+    LEVEL_UP_MOVE( 1, MOVE_PECK),
+    LEVEL_UP_MOVE( 1, MOVE_BITE),
+    LEVEL_UP_MOVE( 1, MOVE_ROAR),
+    LEVEL_UP_MOVE(20, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(24, MOVE_ROCK_SMASH),
+    LEVEL_UP_MOVE(28, MOVE_ROCK_BLAST),
+    LEVEL_UP_MOVE(32, MOVE_BULK_UP),
+    LEVEL_UP_MOVE(36, MOVE_BRICK_BREAK),
+    LEVEL_UP_MOVE(40, MOVE_DOUBLE_EDGE),
     LEVEL_UP_END
 };
 
@@ -8400,7 +8398,7 @@ static const struct LevelUpMove sBastiodonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(58, MOVE_HEAVY_SLAM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SHIELDON
+#endif //P_FAMILY_TUSKMON
 
 #if P_FAMILY_BURMY
 static const struct LevelUpMove sBurmyLevelUpLearnset[] = {

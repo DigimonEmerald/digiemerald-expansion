@@ -5476,8 +5476,8 @@ static const union AnimCmd sAnim_Stingmon_1[] =
 };
 #endif //P_FAMILY_GROWLMON
 
-#if P_FAMILY_SHIELDON
-static const union AnimCmd sAnim_Shieldon_1[] =
+#if P_FAMILY_TUSKMON
+static const union AnimCmd sAnim_Tuskmon_1[] =
 {
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_FRAME(1, 10),
@@ -5492,7 +5492,7 @@ static const union AnimCmd sAnim_Bastiodon_1[] =
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SHIELDON
+#endif //P_FAMILY_TUSKMON
 
 #if P_FAMILY_BURMY
 static const union AnimCmd sAnim_Burmy_1[] =
@@ -11448,10 +11448,10 @@ SINGLE_ANIMATION(Togemon);
 SINGLE_ANIMATION(Growlmon);
 SINGLE_ANIMATION(Stingmon);
 #endif //P_FAMILY_GROWLMON
-#if P_FAMILY_SHIELDON
-SINGLE_ANIMATION(Shieldon);
+#if P_FAMILY_TUSKMON
+SINGLE_ANIMATION(Tuskmon);
 SINGLE_ANIMATION(Bastiodon);
-#endif //P_FAMILY_SHIELDON
+#endif //P_FAMILY_TUSKMON
 #if P_FAMILY_BURMY
 SINGLE_ANIMATION(Burmy);
 SINGLE_ANIMATION(Wormadam);
