@@ -4207,8 +4207,8 @@ Cry_Rosemon::
 	.incbin "sound/direct_sound_samples/cries/rosemon.bin"
 
 	.align 2
-Cry_Diggersby::
-	.incbin "sound/direct_sound_samples/cries/diggersby.bin"
+Cry_Dinorexmon::
+	.incbin "sound/direct_sound_samples/cries/dinorexmon.bin"
 .endif @ P_FAMILY_ROSEMON
 
 .if P_FAMILY_FLETCHLING == TRUE

@@ -19228,19 +19228,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Diggersby[] = INCBIN_U32("graphics/pokemon/diggersby/anim_front.4bpp.lz");
-    const u16 gMonPalette_Diggersby[] = INCBIN_U16("graphics/pokemon/diggersby/normal.gbapal");
-    const u32 gMonBackPic_Diggersby[] = INCBIN_U32("graphics/pokemon/diggersby/back.4bpp.lz");
-    const u16 gMonShinyPalette_Diggersby[] = INCBIN_U16("graphics/pokemon/diggersby/shiny.gbapal");
-    const u8 gMonIcon_Diggersby[] = INCBIN_U8("graphics/pokemon/diggersby/icon.4bpp");
+    const u32 gMonFrontPic_Dinorexmon[] = INCBIN_U32("graphics/pokemon/dinorexmon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Dinorexmon[] = INCBIN_U16("graphics/pokemon/dinorexmon/normal.gbapal");
+    const u32 gMonBackPic_Dinorexmon[] = INCBIN_U32("graphics/pokemon/dinorexmon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Dinorexmon[] = INCBIN_U16("graphics/pokemon/dinorexmon/shiny.gbapal");
+    const u8 gMonIcon_Dinorexmon[] = INCBIN_U8("graphics/pokemon/dinorexmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Diggersby[] = INCBIN_U8("graphics/pokemon/diggersby/footprint.1bpp");
+    const u8 gMonFootprint_Dinorexmon[] = INCBIN_U8("graphics/pokemon/dinorexmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Diggersby[] = INCBIN_COMP("graphics/pokemon/diggersby/overworld.4bpp");
+    const u32 gObjectEventPic_Dinorexmon[] = INCBIN_COMP("graphics/pokemon/dinorexmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Diggersby[] = INCBIN_U16("graphics/pokemon/diggersby/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Diggersby[] = INCBIN_U16("graphics/pokemon/diggersby/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Dinorexmon[] = INCBIN_U16("graphics/pokemon/dinorexmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Dinorexmon[] = INCBIN_U16("graphics/pokemon/dinorexmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_ROSEMON

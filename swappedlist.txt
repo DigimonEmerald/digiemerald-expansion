@@ -470,5 +470,6 @@ BlitzGreymon - Frogadier
 BioSupinomon - Greninja
 Rosemon Burst Mode - Ash Greninja
 Rosemon - Bunnelby
+Dinorexmon - Diggersby
 
 SPECIES NAME LENGTH MAX = 13

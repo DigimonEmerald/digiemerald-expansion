@@ -8205,7 +8205,7 @@ static const union AnimCmd sAnim_Rosemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Diggersby_1[] =
+static const union AnimCmd sAnim_Dinorexmon_1[] =
 {
     ANIMCMD_FRAME(1, 35),
     ANIMCMD_FRAME(0, 10),
@@ -11984,7 +11984,7 @@ SINGLE_ANIMATION(Rosemon_burstmode);
 #endif //P_FAMILY_CRESGARURUMON
 #if P_FAMILY_ROSEMON
 SINGLE_ANIMATION(Rosemon);
-SINGLE_ANIMATION(Diggersby);
+SINGLE_ANIMATION(Dinorexmon);
 #endif //P_FAMILY_ROSEMON
 #if P_FAMILY_FLETCHLING
 SINGLE_ANIMATION(Fletchling);

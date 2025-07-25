@@ -853,73 +853,75 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sRosemonLevelUpLearnset,
         .teachableLearnset = sRosemonTeachableLearnset,
         .eggMoveLearnset = sRosemonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_DIGGERSBY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_DINOREXMON}),
     },
 
-    [SPECIES_DIGGERSBY] =
+    [SPECIES_DINOREXMON] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 56,
-        .baseDefense   = 77,
-        .baseSpeed     = 78,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 77,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_GROUND),
-        .catchRate = 127,
-        .expYield = 148,
-        .evYield_HP = 2,
+        .baseHP        = 150,
+        .baseAttack    = 150,
+        .baseDefense   = 100,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_GROUND, TYPE_DRAGON),
+        .attribute = TYPE_DATA,
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_HP = 3,
+        .evYield_Attack = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_PICKUP, ABILITY_CHEEK_POUCH, ABILITY_HUGE_POWER },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Diggersby"),
-        .cryId = CRY_DIGGERSBY,
-        .natDexNum = NATIONAL_DEX_DIGGERSBY,
-        .categoryName = _("Digging"),
-        .height = 10,
-        .weight = 424,
+        .abilities = { ABILITY_HUSTLE, ABILITY_SHEER_FORCE, ABILITY_TOUGH_CLAWS },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Dinorexmon"),
+        .cryId = CRY_DINOREXMON,
+        .natDexNum = NATIONAL_DEX_DINOREXMON,
+        .categoryName = _("Terror King"),
+        .height = 150,
+        .weight = 6474,
         .description = COMPOUND_STRING(
-            "With its powerful ears it reduces dense\n"
-            "bedrock to rubble. It can be a big help\n"
-            "at construction sites. When it's finished\n"
-            "digging, it lounges about lazily."),
+            "Dinorexmon has earned the title of 'King\n"
+            "of Terror' due to its unparalleled\n"
+            "ferocious nature. It kills in an\n"
+            "exceedingly brutal manner."),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Diggersby,
+        .frontPic = gMonFrontPic_Dinorexmon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = 4,
+        .frontPicYOffset = 1,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 35),
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
-        .backPic = gMonBackPic_Diggersby,
+        .backPic = gMonBackPic_Dinorexmon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = 3,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Diggersby,
-        .shinyPalette = gMonShinyPalette_Diggersby,
-        .iconSprite = gMonIcon_Diggersby,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Dinorexmon,
+        .shinyPalette = gMonShinyPalette_Dinorexmon,
+        .iconSprite = gMonIcon_Dinorexmon,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(8, 10, SHADOW_SIZE_M)
-        FOOTPRINT(Diggersby)
+        SHADOW(5, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Dinorexmon)
         OVERWORLD(
-            sPicTable_Diggersby,
+            sPicTable_Dinorexmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Diggersby,
-            gShinyOverworldPalette_Diggersby
+            gOverworldPalette_Dinorexmon,
+            gShinyOverworldPalette_Dinorexmon
         )
-        .levelUpLearnset = sDiggersbyLevelUpLearnset,
-        .teachableLearnset = sDiggersbyTeachableLearnset,
+        .levelUpLearnset = sDinorexmonLevelUpLearnset,
+        .teachableLearnset = sDinorexmonTeachableLearnset,
     },
 #endif //P_FAMILY_ROSEMON
 

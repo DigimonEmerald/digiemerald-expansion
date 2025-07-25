@@ -1615,7 +1615,7 @@ gCryTable::
 .endif @ P_FAMILY_CRESGARURUMON
 .if P_FAMILY_ROSEMON == TRUE
 	cry Cry_Rosemon
-	cry Cry_Diggersby
+	cry Cry_Dinorexmon
 .endif @ P_FAMILY_ROSEMON
 .if P_FAMILY_FLETCHLING == TRUE
 	cry Cry_Fletchling
@@ -4043,7 +4043,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_CRESGARURUMON
 .if P_FAMILY_ROSEMON == TRUE
 	cry_reverse Cry_Rosemon
-	cry_reverse Cry_Diggersby
+	cry_reverse Cry_Dinorexmon
 .endif @ P_FAMILY_ROSEMON
 .if P_FAMILY_FLETCHLING == TRUE
 	cry_reverse Cry_Fletchling

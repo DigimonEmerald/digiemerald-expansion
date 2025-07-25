@@ -3240,7 +3240,7 @@ $(POKEMONGFXDIR)/biosupinomon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/rosemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/diggersby/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/dinorexmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/fletchling/overworld.4bpp: %.4bpp: %.png

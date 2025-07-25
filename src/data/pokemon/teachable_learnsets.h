@@ -26630,7 +26630,7 @@ static const u16 sRosemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDiggersbyTeachableLearnset[] = {
+static const u16 sDinorexmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,

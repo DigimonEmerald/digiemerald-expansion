@@ -686,7 +686,7 @@
 #define SPECIES_BLITZGREYMON                               657
 #define SPECIES_BIOSUPINOMON                                658
 #define SPECIES_ROSEMON                                659
-#define SPECIES_DIGGERSBY                               660
+#define SPECIES_DINOREXMON                               660
 #define SPECIES_FLETCHLING                              661
 #define SPECIES_FLETCHINDER                             662
 #define SPECIES_TALONFLAME                              663

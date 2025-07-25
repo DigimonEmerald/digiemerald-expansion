@@ -4599,8 +4599,8 @@ static const struct SpriteFrameImage sPicTable_Biosupinomon[] = {
 static const struct SpriteFrameImage sPicTable_Rosemon[] = {
     overworld_ascending_frames(gObjectEventPic_Rosemon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Diggersby[] = {
-    overworld_ascending_frames(gObjectEventPic_Diggersby, 4, 4),
+static const struct SpriteFrameImage sPicTable_Dinorexmon[] = {
+    overworld_ascending_frames(gObjectEventPic_Dinorexmon, 4, 4),
 };
 #endif //P_FAMILY_ROSEMON
 
