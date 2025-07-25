@@ -3834,8 +3834,8 @@ static const struct SpriteFrameImage sPicTable_Mastertyrannomon[] = {
 static const struct SpriteFrameImage sPicTable_Triceramon[] = {
     overworld_ascending_frames(gObjectEventPic_Triceramon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Gigalith[] = {
-    overworld_ascending_frames(gObjectEventPic_Gigalith, 4, 4),
+static const struct SpriteFrameImage sPicTable_Arukenimon[] = {
+    overworld_ascending_frames(gObjectEventPic_Arukenimon, 4, 4),
 };
 #endif //P_FAMILY_MASTERTYRANNOMON
 

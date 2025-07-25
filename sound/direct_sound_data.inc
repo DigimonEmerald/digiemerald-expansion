@@ -3478,8 +3478,8 @@ Cry_Triceramon::
 	.incbin "sound/direct_sound_samples/cries/triceramon.bin"
 
 	.align 2
-Cry_Gigalith::
-	.incbin "sound/direct_sound_samples/cries/gigalith.bin"
+Cry_Arukenimon::
+	.incbin "sound/direct_sound_samples/cries/arukenimon.bin"
 .endif @ P_FAMILY_MASTERTYRANNOMON
 
 .if P_FAMILY_WOOBAT == TRUE

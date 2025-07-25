@@ -22000,7 +22000,7 @@ static const u16 sTriceramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGigalithTeachableLearnset[] = {
+static const u16 sArukenimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_EARTHQUAKE,

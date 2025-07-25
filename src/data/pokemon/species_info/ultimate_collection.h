@@ -2435,27 +2435,22 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sTriceramonLevelUpLearnset,
         .teachableLearnset = sTriceramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GIGALITH},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GIGALITH}),
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_ARUKENIMON},
+                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_ARUKENIMON}),
     },
 
-    [SPECIES_GIGALITH] =
+    [SPECIES_ARUKENIMON] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 135,
-        .baseDefense   = 130,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 60,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 80 : 70,
-        .types = MON_TYPES(TYPE_ROCK),
+        .baseHP        = 100,
+        .baseAttack    = 85,
+        .baseDefense   = 90,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
+        .attribute = TYPE_VIRUS,
         .catchRate = 95,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 258,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 232,
-    #else
-        .expYield = 227,
-    #endif
+        .expYield = 200,
         .evYield_Attack = 3,
         .itemCommon = ITEM_EVERSTONE,
         .itemRare = ITEM_HARD_STONE,
@@ -2464,28 +2459,24 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-    #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_STURDY, ABILITY_SAND_STREAM, ABILITY_SAND_FORCE },
-    #else
-        .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_SAND_FORCE },
-    #endif
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Gigalith"),
-        .cryId = CRY_GIGALITH,
-        .natDexNum = NATIONAL_DEX_GIGALITH,
-        .categoryName = _("Compressed"),
-        .height = 17,
-        .weight = 2600,
+        .abilities = { ABILITY_INSOMNIA, ABILITY_SNIPER, ABILITY_IMPOSTER },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Arukenimon"),
+        .cryId = CRY_ARUKENIMON,
+        .natDexNum = NATIONAL_DEX_ARUKENIMON,
+        .categoryName = _("Arachne"),
+        .height = 29,
+        .weight = 1463,
         .description = COMPOUND_STRING(
-            "The blasts of energy it makes from\n"
-            "sunbeams have terrifying power.\n"
-            "However, it's not able to fire its blasts\n"
-            "at night or on rainy days."),
+            "Arukenimon is a highly cunning Digimon\n"
+            "that rules over all Dokugumon. It uses its\n"
+            "ability to transform into a human to\n"
+            "lure people into traps of its making."),
         .pokemonScale = 259,
         .pokemonOffset = 0,
         .trainerScale = 290,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Gigalith,
+        .frontPic = gMonFrontPic_Arukenimon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2494,28 +2485,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_ROTATE_UP_SLAM_DOWN,
-        .backPic = gMonBackPic_Gigalith,
+        .backPic = gMonBackPic_Arukenimon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Gigalith,
-        .shinyPalette = gMonShinyPalette_Gigalith,
-        .iconSprite = gMonIcon_Gigalith,
+        .palette = gMonPalette_Arukenimon,
+        .shinyPalette = gMonShinyPalette_Arukenimon,
+        .iconSprite = gMonIcon_Arukenimon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-1, 8, SHADOW_SIZE_XL_BATTLE_ONLY)
-        FOOTPRINT(Gigalith)
+        SHADOW(2, 9, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Arukenimon)
         OVERWORLD(
-            sPicTable_Gigalith,
+            sPicTable_Arukenimon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Gigalith,
-            gShinyOverworldPalette_Gigalith
+            gOverworldPalette_Arukenimon,
+            gShinyOverworldPalette_Arukenimon
         )
-        .levelUpLearnset = sGigalithLevelUpLearnset,
-        .teachableLearnset = sGigalithTeachableLearnset,
+        .levelUpLearnset = sArukenimonLevelUpLearnset,
+        .teachableLearnset = sArukenimonTeachableLearnset,
     },
 #endif //P_FAMILY_MASTERTYRANNOMON
 

@@ -1318,7 +1318,7 @@ gCryTable::
 .if P_FAMILY_MASTERTYRANNOMON == TRUE
 	cry Cry_Mastertyrannomon
 	cry Cry_Triceramon
-	cry Cry_Gigalith
+	cry Cry_Arukenimon
 .endif @ P_FAMILY_MASTERTYRANNOMON
 .if P_FAMILY_WOOBAT == TRUE
 	cry Cry_Woobat
@@ -3746,7 +3746,7 @@ gCryTable_Reverse::
 .if P_FAMILY_MASTERTYRANNOMON == TRUE
 	cry_reverse Cry_Mastertyrannomon
 	cry_reverse Cry_Triceramon
-	cry_reverse Cry_Gigalith
+	cry_reverse Cry_Arukenimon
 .endif @ P_FAMILY_MASTERTYRANNOMON
 .if P_FAMILY_WOOBAT == TRUE
 	cry_reverse Cry_Woobat

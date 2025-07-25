@@ -6581,7 +6581,7 @@ static const union AnimCmd sAnim_Triceramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Gigalith_1[] =
+static const union AnimCmd sAnim_Arukenimon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 25),
@@ -11661,7 +11661,7 @@ SINGLE_ANIMATION(Lillymon);
 #if P_FAMILY_MASTERTYRANNOMON
 SINGLE_ANIMATION(Mastertyrannomon);
 SINGLE_ANIMATION(Triceramon);
-SINGLE_ANIMATION(Gigalith);
+SINGLE_ANIMATION(Arukenimon);
 #endif //P_FAMILY_MASTERTYRANNOMON
 #if P_FAMILY_WOOBAT
 SINGLE_ANIMATION(Woobat);
