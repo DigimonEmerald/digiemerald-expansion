@@ -925,44 +925,45 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
 #endif //P_FAMILY_ROSEMON
 
-#if P_FAMILY_FLETCHLING
-    [SPECIES_FLETCHLING] =
+#if P_FAMILY_DINOMON
+    [SPECIES_DINOMON] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 50,
-        .baseDefense   = 43,
-        .baseSpeed     = 62,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 38,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
-        .catchRate = 255,
-        .expYield = 56,
+        .baseHP        = 100,
+        .baseAttack    = 100,
+        .baseDefense   = 110,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 150,
+        .baseSpDefense = 130,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_FIRE),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 55,
+        .expYield = 250,
         .evYield_Speed = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_BIG_PECKS, ABILITY_NONE, ABILITY_GALE_WINGS },
+        .abilities = { ABILITY_WATER_ABSORB, ABILITY_WELL_BAKED_BODY, ABILITY_DESOLATE_LAND },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Fletchling"),
-        .cryId = CRY_FLETCHLING,
-        .natDexNum = NATIONAL_DEX_FLETCHLING,
-        .categoryName = _("Tiny Robin"),
-        .height = 3,
-        .weight = 17,
+        .speciesName = _("Dinomon"),
+        .cryId = CRY_DINOMON,
+        .natDexNum = NATIONAL_DEX_DINOMON,
+        .categoryName = _("Dinosaur"),
+        .height = 352,
+        .weight = 8554,
         .description = COMPOUND_STRING(
-            "This amiable Pokémon is easy to train.\n"
-            "But when battle is joined, it shows its\n"
-            "ferocious side. It's merciless to\n"
-            "intruders that enter its territory."),
+            "Considered the pinnacle of Dinosaur\n"
+            "Digimon, Dinomon boasts astounding\n"
+            "stamina and power. It burns so hot\n"
+            "that it uses the ocean to cool itself."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Fletchling,
+        .frontPic = gMonFrontPic_Dinomon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
-        .frontPicYOffset = 13,
+        .frontPicYOffset = 1,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 7),
             ANIMCMD_FRAME(0, 3),
@@ -972,29 +973,29 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_JUMPS_SMALL,
-        .backPic = gMonBackPic_Fletchling,
+        .backPic = gMonBackPic_Dinomon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
-        .backPicYOffset = 14,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Fletchling,
-        .shinyPalette = gMonShinyPalette_Fletchling,
-        .iconSprite = gMonIcon_Fletchling,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Dinomon,
+        .shinyPalette = gMonShinyPalette_Dinomon,
+        .iconSprite = gMonIcon_Dinomon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-2, 0, SHADOW_SIZE_S)
-        FOOTPRINT(Fletchling)
+        SHADOW(-2, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Dinomon)
         OVERWORLD(
-            sPicTable_Fletchling,
+            sPicTable_Dinomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Fletchling,
-            gShinyOverworldPalette_Fletchling
+            gOverworldPalette_Dinomon,
+            gShinyOverworldPalette_Dinomon
         )
-        .levelUpLearnset = sFletchlingLevelUpLearnset,
-        .teachableLearnset = sFletchlingTeachableLearnset,
-        .eggMoveLearnset = sFletchlingEggMoveLearnset,
+        .levelUpLearnset = sDinomonLevelUpLearnset,
+        .teachableLearnset = sDinomonTeachableLearnset,
+        .eggMoveLearnset = sDinomonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_FLETCHINDER}),
     },
 
@@ -1138,7 +1139,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sTalonflameLevelUpLearnset,
         .teachableLearnset = sTalonflameTeachableLearnset,
     },
-#endif //P_FAMILY_FLETCHLING
+#endif //P_FAMILY_DINOMON
 
 #if P_FAMILY_SCATTERBUG
 #define SCATTERBUG_SPECIES_INFO(evolution)                                                  \

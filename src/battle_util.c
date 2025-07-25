@@ -11195,7 +11195,7 @@ bool8 IsMonBannedFromSkyBattles(u16 species)
         case SPECIES_DUCKLETT:
         case SPECIES_RUFFLET:
         case SPECIES_VULLABY:
-        case SPECIES_FLETCHLING:
+        case SPECIES_DINOMON:
         case SPECIES_HAWLUCHA:
         case SPECIES_ROWLET:
         case SPECIES_PIKIPEK:

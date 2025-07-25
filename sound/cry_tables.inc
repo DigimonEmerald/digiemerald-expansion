@@ -1617,11 +1617,11 @@ gCryTable::
 	cry Cry_Rosemon
 	cry Cry_Dinorexmon
 .endif @ P_FAMILY_ROSEMON
-.if P_FAMILY_FLETCHLING == TRUE
-	cry Cry_Fletchling
+.if P_FAMILY_DINOMON == TRUE
+	cry Cry_Dinomon
 	cry Cry_Fletchinder
 	cry Cry_Talonflame
-.endif @ P_FAMILY_FLETCHLING
+.endif @ P_FAMILY_DINOMON
 .if P_FAMILY_SCATTERBUG == TRUE
 	cry Cry_Scatterbug
 	cry Cry_Spewpa
@@ -4045,11 +4045,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Rosemon
 	cry_reverse Cry_Dinorexmon
 .endif @ P_FAMILY_ROSEMON
-.if P_FAMILY_FLETCHLING == TRUE
-	cry_reverse Cry_Fletchling
+.if P_FAMILY_DINOMON == TRUE
+	cry_reverse Cry_Dinomon
 	cry_reverse Cry_Fletchinder
 	cry_reverse Cry_Talonflame
-.endif @ P_FAMILY_FLETCHLING
+.endif @ P_FAMILY_DINOMON
 .if P_FAMILY_SCATTERBUG == TRUE
 	cry_reverse Cry_Scatterbug
 	cry_reverse Cry_Spewpa

@@ -26673,8 +26673,8 @@ static const u16 sDinorexmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_ROSEMON
 
-#if P_FAMILY_FLETCHLING
-static const u16 sFletchlingTeachableLearnset[] = {
+#if P_FAMILY_DINOMON
+static const u16 sDinomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_EDGE,
@@ -26758,7 +26758,7 @@ static const u16 sTalonflameTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_FLETCHLING
+#endif //P_FAMILY_DINOMON
 
 #if P_FAMILY_SCATTERBUG
 static const u16 sScatterbugTeachableLearnset[] = {

@@ -4211,10 +4211,10 @@ Cry_Dinorexmon::
 	.incbin "sound/direct_sound_samples/cries/dinorexmon.bin"
 .endif @ P_FAMILY_ROSEMON
 
-.if P_FAMILY_FLETCHLING == TRUE
+.if P_FAMILY_DINOMON == TRUE
 	.align 2
-Cry_Fletchling::
-	.incbin "sound/direct_sound_samples/cries/fletchling.bin"
+Cry_Dinomon::
+	.incbin "sound/direct_sound_samples/cries/dinomon.bin"
 
 	.align 2
 Cry_Fletchinder::
@@ -4223,7 +4223,7 @@ Cry_Fletchinder::
 	.align 2
 Cry_Talonflame::
 	.incbin "sound/direct_sound_samples/cries/talonflame.bin"
-.endif @ P_FAMILY_FLETCHLING
+.endif @ P_FAMILY_DINOMON
 
 .if P_FAMILY_SCATTERBUG == TRUE
 	.align 2

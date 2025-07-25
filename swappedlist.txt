@@ -472,5 +472,6 @@ BioSupinomon - Greninja
 Rosemon Burst Mode - Ash Greninja
 Rosemon - Bunnelby
 Dinorexmon - Diggersby
+Dinomon - Fletchling
 
 SPECIES NAME LENGTH MAX = 13

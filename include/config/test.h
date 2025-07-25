@@ -707,8 +707,8 @@
 #define P_FAMILY_CRESGARURUMON                 TRUE
 #undef P_FAMILY_ROSEMON
 #define P_FAMILY_ROSEMON                TRUE
-#undef P_FAMILY_FLETCHLING
-#define P_FAMILY_FLETCHLING              TRUE
+#undef P_FAMILY_DINOMON
+#define P_FAMILY_DINOMON              TRUE
 #undef P_FAMILY_SCATTERBUG
 #define P_FAMILY_SCATTERBUG              TRUE
 #undef P_FAMILY_LITLEO

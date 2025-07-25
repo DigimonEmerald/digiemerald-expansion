@@ -15424,8 +15424,8 @@ static const struct LevelUpMove sDinorexmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_ROSEMON
 
-#if P_FAMILY_FLETCHLING
-static const struct LevelUpMove sFletchlingLevelUpLearnset[] = {
+#if P_FAMILY_DINOMON
+static const struct LevelUpMove sDinomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 6, MOVE_QUICK_ATTACK),
@@ -15483,7 +15483,7 @@ static const struct LevelUpMove sTalonflameLevelUpLearnset[] = {
     LEVEL_UP_MOVE(64, MOVE_BRAVE_BIRD),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_FLETCHLING
+#endif //P_FAMILY_DINOMON
 
 #if P_FAMILY_SCATTERBUG
 static const struct LevelUpMove sScatterbugLevelUpLearnset[] = {

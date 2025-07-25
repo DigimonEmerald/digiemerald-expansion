@@ -8213,8 +8213,8 @@ static const union AnimCmd sAnim_Dinorexmon_1[] =
 };
 #endif //P_FAMILY_ROSEMON
 
-#if P_FAMILY_FLETCHLING
-static const union AnimCmd sAnim_Fletchling_1[] =
+#if P_FAMILY_DINOMON
+static const union AnimCmd sAnim_Dinomon_1[] =
 {
     ANIMCMD_FRAME(1, 7),
     ANIMCMD_FRAME(0, 3),
@@ -8243,7 +8243,7 @@ static const union AnimCmd sAnim_Talonflame_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_FLETCHLING
+#endif //P_FAMILY_DINOMON
 
 #if P_FAMILY_SCATTERBUG
 static const union AnimCmd sAnim_Scatterbug_1[] =
@@ -11986,11 +11986,11 @@ SINGLE_ANIMATION(Rosemon_burstmode);
 SINGLE_ANIMATION(Rosemon);
 SINGLE_ANIMATION(Dinorexmon);
 #endif //P_FAMILY_ROSEMON
-#if P_FAMILY_FLETCHLING
-SINGLE_ANIMATION(Fletchling);
+#if P_FAMILY_DINOMON
+SINGLE_ANIMATION(Dinomon);
 SINGLE_ANIMATION(Fletchinder);
 SINGLE_ANIMATION(Talonflame);
-#endif //P_FAMILY_FLETCHLING
+#endif //P_FAMILY_DINOMON
 #if P_FAMILY_SCATTERBUG
 SINGLE_ANIMATION(Scatterbug);
 SINGLE_ANIMATION(Spewpa);

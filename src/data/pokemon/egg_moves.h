@@ -4962,14 +4962,14 @@ static const u16 sRosemonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_ROSEMON
 
-#if P_FAMILY_FLETCHLING
-static const u16 sFletchlingEggMoveLearnset[] = {
+#if P_FAMILY_DINOMON
+static const u16 sDinomonEggMoveLearnset[] = {
     MOVE_TAILWIND,
     MOVE_SNATCH,
     MOVE_QUICK_GUARD,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_FLETCHLING
+#endif //P_FAMILY_DINOMON
 
 #if P_FAMILY_SCATTERBUG
 static const u16 sScatterbugEggMoveLearnset[] = {
