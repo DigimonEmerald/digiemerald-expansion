@@ -2360,22 +2360,23 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sMastertyrannomonLevelUpLearnset,
         .teachableLearnset = sMastertyrannomonTeachableLearnset,
         .eggMoveLearnset = sMastertyrannomonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_BOLDORE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_TRICERAMON}),
     },
 
-    [SPECIES_BOLDORE] =
+    [SPECIES_TRICERAMON] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 105,
-        .baseDefense   = 105,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 40,
-        .types = MON_TYPES(TYPE_ROCK),
+        .baseHP        = 80,
+        .baseAttack    = 120,
+        .baseDefense   = 110,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_ROCK, TYPE_GROUND),
+        .attribute = TYPE_DATA,
         .catchRate = 95,
-        .expYield = 137,
-        .evYield_Attack = 1,
-        .evYield_Defense = 1,
+        .expYield = 200,
+        .evYield_Attack = 3,
+        .evYield_Defense = 2,
         .itemCommon = ITEM_EVERSTONE,
         .itemRare = ITEM_HARD_STONE,
         .genderRatio = MON_GENDERLESS,
@@ -2383,30 +2384,26 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-    #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_STURDY, ABILITY_WEAK_ARMOR, ABILITY_SAND_FORCE },
-    #else
-        .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_SAND_FORCE },
-    #endif
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Boldore"),
-        .cryId = CRY_BOLDORE,
-        .natDexNum = NATIONAL_DEX_BOLDORE,
-        .categoryName = _("Ore"),
-        .height = 9,
-        .weight = 1020,
+        .abilities = { ABILITY_STURDY, ABILITY_SOLID_ROCK, ABILITY_SAND_FORCE }, // Big Horn
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Triceramon"),
+        .cryId = CRY_TRICERAMON,
+        .natDexNum = NATIONAL_DEX_TRICERAMON,
+        .categoryName = _("Triceratops"),
+        .height = 69,
+        .weight = 3564,
         .description = COMPOUND_STRING(
-            "Its orange crystal is a mass of energy.\n"
-            "Just one crystal fragment would provide\n"
-            "enough fuel for a hundred dump trucks.\n"
-            "When it is healthy, its core sticks out."),
+            "One of the strongest herbivore Digimon\n"
+            "in the Digital World, Triceramon is a\n"
+            "force to be reckoned with if it is\n"
+            "somehow angered."),
         .pokemonScale = 338,
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Boldore,
+        .frontPic = gMonFrontPic_Triceramon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
-        .frontPicYOffset = 10,
+        .frontPicYOffset = 3,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 15),
             ANIMCMD_FRAME(0, 15),
@@ -2416,28 +2413,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_H_SLIDE_SLOW,
-        .backPic = gMonBackPic_Boldore,
+        .backPic = gMonBackPic_Triceramon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
-        .backPicYOffset = 16,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_H_SHAKE,
-        .palette = gMonPalette_Boldore,
-        .shinyPalette = gMonShinyPalette_Boldore,
-        .iconSprite = gMonIcon_Boldore,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Triceramon,
+        .shinyPalette = gMonShinyPalette_Triceramon,
+        .iconSprite = gMonIcon_Triceramon,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(1, 3, SHADOW_SIZE_L)
-        FOOTPRINT(Boldore)
+        SHADOW(1, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Triceramon)
         OVERWORLD(
-            sPicTable_Boldore,
+            sPicTable_Triceramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Boldore,
-            gShinyOverworldPalette_Boldore
+            gOverworldPalette_Triceramon,
+            gShinyOverworldPalette_Triceramon
         )
-        .levelUpLearnset = sBoldoreLevelUpLearnset,
-        .teachableLearnset = sBoldoreTeachableLearnset,
+        .levelUpLearnset = sTriceramonLevelUpLearnset,
+        .teachableLearnset = sTriceramonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_GIGALITH},
                                 {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_GIGALITH}),
     },

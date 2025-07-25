@@ -3474,8 +3474,8 @@ Cry_Mastertyrannomon::
 	.incbin "sound/direct_sound_samples/cries/mastertyrannomon.bin"
 
 	.align 2
-Cry_Boldore::
-	.incbin "sound/direct_sound_samples/cries/boldore.bin"
+Cry_Triceramon::
+	.incbin "sound/direct_sound_samples/cries/triceramon.bin"
 
 	.align 2
 Cry_Gigalith::

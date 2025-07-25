@@ -6570,7 +6570,7 @@ static const union AnimCmd sAnim_Mastertyrannomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Boldore_1[] =
+static const union AnimCmd sAnim_Triceramon_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 15),
@@ -11660,7 +11660,7 @@ SINGLE_ANIMATION(Lillymon);
 #endif //P_FAMILY_WARGROWLMON
 #if P_FAMILY_MASTERTYRANNOMON
 SINGLE_ANIMATION(Mastertyrannomon);
-SINGLE_ANIMATION(Boldore);
+SINGLE_ANIMATION(Triceramon);
 SINGLE_ANIMATION(Gigalith);
 #endif //P_FAMILY_MASTERTYRANNOMON
 #if P_FAMILY_WOOBAT

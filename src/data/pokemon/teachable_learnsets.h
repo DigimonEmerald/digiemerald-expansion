@@ -21978,7 +21978,7 @@ static const u16 sMastertyrannomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBoldoreTeachableLearnset[] = {
+static const u16 sTriceramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_EARTHQUAKE,

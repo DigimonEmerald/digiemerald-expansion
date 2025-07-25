@@ -16436,19 +16436,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Boldore[] = INCBIN_U32("graphics/pokemon/boldore/anim_front.4bpp.lz");
-    const u16 gMonPalette_Boldore[] = INCBIN_U16("graphics/pokemon/boldore/normal.gbapal");
-    const u32 gMonBackPic_Boldore[] = INCBIN_U32("graphics/pokemon/boldore/back.4bpp.lz");
-    const u16 gMonShinyPalette_Boldore[] = INCBIN_U16("graphics/pokemon/boldore/shiny.gbapal");
-    const u8 gMonIcon_Boldore[] = INCBIN_U8("graphics/pokemon/boldore/icon.4bpp");
+    const u32 gMonFrontPic_Triceramon[] = INCBIN_U32("graphics/pokemon/triceramon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Triceramon[] = INCBIN_U16("graphics/pokemon/triceramon/normal.gbapal");
+    const u32 gMonBackPic_Triceramon[] = INCBIN_U32("graphics/pokemon/triceramon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Triceramon[] = INCBIN_U16("graphics/pokemon/triceramon/shiny.gbapal");
+    const u8 gMonIcon_Triceramon[] = INCBIN_U8("graphics/pokemon/triceramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Boldore[] = INCBIN_U8("graphics/pokemon/boldore/footprint.1bpp");
+    const u8 gMonFootprint_Triceramon[] = INCBIN_U8("graphics/pokemon/triceramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Boldore[] = INCBIN_COMP("graphics/pokemon/boldore/overworld.4bpp");
+    const u32 gObjectEventPic_Triceramon[] = INCBIN_COMP("graphics/pokemon/triceramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Boldore[] = INCBIN_U16("graphics/pokemon/boldore/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Boldore[] = INCBIN_U16("graphics/pokemon/boldore/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Triceramon[] = INCBIN_U16("graphics/pokemon/triceramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Triceramon[] = INCBIN_U16("graphics/pokemon/triceramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
