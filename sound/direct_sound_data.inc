@@ -3000,8 +3000,8 @@ Cry_Tuskmon::
 	.incbin "sound/direct_sound_samples/cries/tuskmon.bin"
 
 	.align 2
-Cry_Bastiodon::
-	.incbin "sound/direct_sound_samples/cries/bastiodon.bin"
+Cry_Monochromon::
+	.incbin "sound/direct_sound_samples/cries/monochromon.bin"
 .endif @ P_FAMILY_TUSKMON
 
 .if P_FAMILY_BURMY == TRUE

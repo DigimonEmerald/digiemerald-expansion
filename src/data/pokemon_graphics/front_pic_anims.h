@@ -5485,7 +5485,7 @@ static const union AnimCmd sAnim_Tuskmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Bastiodon_1[] =
+static const union AnimCmd sAnim_Monochromon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 25),
@@ -11450,7 +11450,7 @@ SINGLE_ANIMATION(Stingmon);
 #endif //P_FAMILY_GROWLMON
 #if P_FAMILY_TUSKMON
 SINGLE_ANIMATION(Tuskmon);
-SINGLE_ANIMATION(Bastiodon);
+SINGLE_ANIMATION(Monochromon);
 #endif //P_FAMILY_TUSKMON
 #if P_FAMILY_BURMY
 SINGLE_ANIMATION(Burmy);

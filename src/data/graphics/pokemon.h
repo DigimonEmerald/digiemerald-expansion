@@ -14441,19 +14441,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Bastiodon[] = INCBIN_U32("graphics/pokemon/bastiodon/anim_front.4bpp.lz");
-    const u16 gMonPalette_Bastiodon[] = INCBIN_U16("graphics/pokemon/bastiodon/normal.gbapal");
-    const u32 gMonBackPic_Bastiodon[] = INCBIN_U32("graphics/pokemon/bastiodon/back.4bpp.lz");
-    const u16 gMonShinyPalette_Bastiodon[] = INCBIN_U16("graphics/pokemon/bastiodon/shiny.gbapal");
-    const u8 gMonIcon_Bastiodon[] = INCBIN_U8("graphics/pokemon/bastiodon/icon.4bpp");
+    const u32 gMonFrontPic_Monochromon[] = INCBIN_U32("graphics/pokemon/monochromon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Monochromon[] = INCBIN_U16("graphics/pokemon/monochromon/normal.gbapal");
+    const u32 gMonBackPic_Monochromon[] = INCBIN_U32("graphics/pokemon/monochromon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Monochromon[] = INCBIN_U16("graphics/pokemon/monochromon/shiny.gbapal");
+    const u8 gMonIcon_Monochromon[] = INCBIN_U8("graphics/pokemon/monochromon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Bastiodon[] = INCBIN_U8("graphics/pokemon/bastiodon/footprint.1bpp");
+    const u8 gMonFootprint_Monochromon[] = INCBIN_U8("graphics/pokemon/monochromon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Bastiodon[] = INCBIN_COMP("graphics/pokemon/bastiodon/overworld.4bpp");
+    const u32 gObjectEventPic_Monochromon[] = INCBIN_COMP("graphics/pokemon/monochromon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Bastiodon[] = INCBIN_U16("graphics/pokemon/bastiodon/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Bastiodon[] = INCBIN_U16("graphics/pokemon/bastiodon/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Monochromon[] = INCBIN_U16("graphics/pokemon/monochromon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Monochromon[] = INCBIN_U16("graphics/pokemon/monochromon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_TUSKMON

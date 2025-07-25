@@ -3214,8 +3214,8 @@ static const struct SpriteFrameImage sPicTable_Stingmon[] = {
 static const struct SpriteFrameImage sPicTable_Tuskmon[] = {
     overworld_ascending_frames(gObjectEventPic_Tuskmon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Bastiodon[] = {
-    overworld_ascending_frames(gObjectEventPic_Bastiodon, 4, 4),
+static const struct SpriteFrameImage sPicTable_Monochromon[] = {
+    overworld_ascending_frames(gObjectEventPic_Monochromon, 4, 4),
 };
 #endif //P_FAMILY_TUSKMON
 

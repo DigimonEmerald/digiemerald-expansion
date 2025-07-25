@@ -419,7 +419,7 @@
 #define SPECIES_GROWLMON                                408
 #define SPECIES_STINGMON                               409
 #define SPECIES_TUSKMON                                410
-#define SPECIES_BASTIODON                               411
+#define SPECIES_MONOCHROMON                               411
 #define SPECIES_BURMY_PLANT                             412
 #define SPECIES_BURMY                                   SPECIES_BURMY_PLANT
 #define SPECIES_WORMADAM_PLANT                          413

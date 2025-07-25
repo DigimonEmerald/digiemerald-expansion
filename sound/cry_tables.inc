@@ -1119,7 +1119,7 @@ gCryTable::
 .endif @ P_FAMILY_GROWLMON
 .if P_FAMILY_TUSKMON == TRUE
 	cry Cry_Tuskmon
-	cry Cry_Bastiodon
+	cry Cry_Monochromon
 .endif @ P_FAMILY_TUSKMON
 .if P_FAMILY_BURMY == TRUE
 	cry Cry_Burmy
@@ -3547,7 +3547,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_GROWLMON
 .if P_FAMILY_TUSKMON == TRUE
 	cry_reverse Cry_Tuskmon
-	cry_reverse Cry_Bastiodon
+	cry_reverse Cry_Monochromon
 .endif @ P_FAMILY_TUSKMON
 .if P_FAMILY_BURMY == TRUE
 	cry_reverse Cry_Burmy

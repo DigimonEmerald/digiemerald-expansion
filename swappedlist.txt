@@ -419,6 +419,7 @@ Togemon - Luxray
 Growlmon - Cranidos
 Stingmon - Rampardos
 Tuskmon - Shieldon
+Monochromon - Bastiodon
 
 Ultimate List
 

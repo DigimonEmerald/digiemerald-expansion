@@ -13003,74 +13003,75 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sTuskmonLevelUpLearnset,
         .teachableLearnset = sTuskmonTeachableLearnset,
         .eggMoveLearnset = sTuskmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_BASTIODON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_MONOCHROMON}),
     },
 
-    [SPECIES_BASTIODON] =
+    [SPECIES_MONOCHROMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 52,
-        .baseDefense   = 168,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 47,
-        .baseSpDefense = 138,
-        .types = MON_TYPES(TYPE_ROCK, TYPE_STEEL),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 173 : 199,
+        .baseHP        = 85,
+        .baseAttack    = 90,
+        .baseDefense   = 100,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_GROUND, TYPE_ROCK),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
         .evYield_Defense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER),
-        .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_SOUNDPROOF },
+        .abilities = { ABILITY_HUSTLE, ABILITY_STURDY, ABILITY_SOUNDPROOF }, //Big Horn
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Bastiodon"),
-        .cryId = CRY_BASTIODON,
-        .natDexNum = NATIONAL_DEX_BASTIODON,
-        .categoryName = _("Shield"),
-        .height = 13,
-        .weight = 1495,
+        .speciesName = _("Monochromon"),
+        .cryId = CRY_MONOCHROMON,
+        .natDexNum = NATIONAL_DEX_MONOCHROMON,
+        .categoryName = _("Ankylosaur"),
+        .height = 54,
+        .weight = 6540,
         .description = COMPOUND_STRING(
-            "Their rock-hard faces serve to protect\n"
-            "them from any frontral attacks.\n"
-            "When attacked, they form a wall.\n"
-            "They shielded their young in that way."),
+            "Once enraged, Monochromon will attack\n"
+            "with relentless fury until its near\n"
+            "bottomless stamina is drained or its\n"
+            "target stops fighting back."),
         .pokemonScale = 272,
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Bastiodon,
+        .frontPic = gMonFrontPic_Monochromon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
-        .frontPicYOffset = 6,
+        .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 10),
             ANIMCMD_FRAME(1, 25),
             ANIMCMD_FRAME(0, 30),
         ),
         .frontAnimId = ANIM_BACK_AND_LUNGE,
-        .backPic = gMonBackPic_Bastiodon,
+        .backPic = gMonBackPic_Monochromon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
-        .backPicYOffset = 7,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Bastiodon,
-        .shinyPalette = gMonShinyPalette_Bastiodon,
-        .iconSprite = gMonIcon_Bastiodon,
+        .palette = gMonPalette_Monochromon,
+        .shinyPalette = gMonShinyPalette_Monochromon,
+        .iconSprite = gMonIcon_Monochromon,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(1, 6, SHADOW_SIZE_L)
-        FOOTPRINT(Bastiodon)
+        SHADOW(1, 7, SHADOW_SIZE_L)
+        FOOTPRINT(Monochromon)
         OVERWORLD(
-            sPicTable_Bastiodon,
+            sPicTable_Monochromon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Bastiodon,
-            gShinyOverworldPalette_Bastiodon
+            gOverworldPalette_Monochromon,
+            gShinyOverworldPalette_Monochromon
         )
-        .levelUpLearnset = sBastiodonLevelUpLearnset,
-        .teachableLearnset = sBastiodonTeachableLearnset,
+        .levelUpLearnset = sMonochromonLevelUpLearnset,
+        .teachableLearnset = sMonochromonTeachableLearnset,
     },
 #endif //P_FAMILY_TUSKMON
 
