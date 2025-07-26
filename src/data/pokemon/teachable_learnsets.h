@@ -26700,7 +26700,7 @@ static const u16 sDinomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFletchinderTeachableLearnset[] = {
+static const u16 sMarineangemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_EDGE,

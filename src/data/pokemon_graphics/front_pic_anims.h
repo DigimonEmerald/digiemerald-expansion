@@ -8224,7 +8224,7 @@ static const union AnimCmd sAnim_Dinomon_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
-static const union AnimCmd sAnim_Fletchinder_1[] =
+static const union AnimCmd sAnim_Marineangemon_1[] =
 {
     ANIMCMD_FRAME(1, 5),
     ANIMCMD_FRAME(0, 10),
@@ -11988,7 +11988,7 @@ SINGLE_ANIMATION(Dinorexmon);
 #endif //P_FAMILY_ROSEMON
 #if P_FAMILY_DINOMON
 SINGLE_ANIMATION(Dinomon);
-SINGLE_ANIMATION(Fletchinder);
+SINGLE_ANIMATION(Marineangemon);
 SINGLE_ANIMATION(Talonflame);
 #endif //P_FAMILY_DINOMON
 #if P_FAMILY_SCATTERBUG

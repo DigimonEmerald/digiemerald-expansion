@@ -4217,8 +4217,8 @@ Cry_Dinomon::
 	.incbin "sound/direct_sound_samples/cries/dinomon.bin"
 
 	.align 2
-Cry_Fletchinder::
-	.incbin "sound/direct_sound_samples/cries/fletchinder.bin"
+Cry_Marineangemon::
+	.incbin "sound/direct_sound_samples/cries/marineangemon.bin"
 
 	.align 2
 Cry_Talonflame::

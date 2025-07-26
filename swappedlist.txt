@@ -473,5 +473,6 @@ Rosemon Burst Mode - Ash Greninja
 Rosemon - Bunnelby
 Dinorexmon - Diggersby
 Dinomon - Fletchling
+MarineAngemon - Fletchinder
 
 SPECIES NAME LENGTH MAX = 13
