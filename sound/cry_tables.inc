@@ -1322,7 +1322,7 @@ gCryTable::
 .endif @ P_FAMILY_MASTERTYRANNOMON
 .if P_FAMILY_MARINEDEVIMON == TRUE
 	cry Cry_Marinedevimon
-	cry Cry_Smarinedevimon
+	cry Cry_Megaseadramon
 .endif @ P_FAMILY_MARINEDEVIMON
 .if P_FAMILY_DRILBUR == TRUE
 	cry Cry_Drilbur
@@ -3750,7 +3750,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_MASTERTYRANNOMON
 .if P_FAMILY_MARINEDEVIMON == TRUE
 	cry_reverse Cry_Marinedevimon
-	cry_reverse Cry_Smarinedevimon
+	cry_reverse Cry_Megaseadramon
 .endif @ P_FAMILY_MARINEDEVIMON
 .if P_FAMILY_DRILBUR == TRUE
 	cry_reverse Cry_Drilbur

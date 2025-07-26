@@ -420,6 +420,7 @@ Growlmon - Cranidos
 Stingmon - Rampardos
 Tuskmon - Shieldon
 Monochromon - Bastiodon
+Mekanorimon - Burmy (Plant)
 
 Ultimate List
 
@@ -458,6 +459,7 @@ MasterTyrannomon - Roggenrola
 Triceramon - Boldore
 Arukenimon - Gigalith
 MarineDevimon - Woobat
+MegaSeadramon - Swoobat
 
 Mega List
 

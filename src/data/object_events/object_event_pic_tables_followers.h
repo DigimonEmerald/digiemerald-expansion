@@ -3843,8 +3843,8 @@ static const struct SpriteFrameImage sPicTable_Arukenimon[] = {
 static const struct SpriteFrameImage sPicTable_Marinedevimon[] = {
     overworld_ascending_frames(gObjectEventPic_Marinedevimon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Smarinedevimon[] = {
-    overworld_ascending_frames(gObjectEventPic_Smarinedevimon, 4, 4),
+static const struct SpriteFrameImage sPicTable_Megaseadramon[] = {
+    overworld_ascending_frames(gObjectEventPic_Megaseadramon, 4, 4),
 };
 #endif //P_FAMILY_MARINEDEVIMON
 

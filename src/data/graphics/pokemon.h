@@ -16486,19 +16486,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Smarinedevimon[] = INCBIN_U32("graphics/pokemon/smarinedevimon/anim_front.4bpp.lz");
-    const u16 gMonPalette_Smarinedevimon[] = INCBIN_U16("graphics/pokemon/smarinedevimon/normal.gbapal");
-    const u32 gMonBackPic_Smarinedevimon[] = INCBIN_U32("graphics/pokemon/smarinedevimon/back.4bpp.lz");
-    const u16 gMonShinyPalette_Smarinedevimon[] = INCBIN_U16("graphics/pokemon/smarinedevimon/shiny.gbapal");
-    const u8 gMonIcon_Smarinedevimon[] = INCBIN_U8("graphics/pokemon/smarinedevimon/icon.4bpp");
+    const u32 gMonFrontPic_Megaseadramon[] = INCBIN_U32("graphics/pokemon/megaseadramon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Megaseadramon[] = INCBIN_U16("graphics/pokemon/megaseadramon/normal.gbapal");
+    const u32 gMonBackPic_Megaseadramon[] = INCBIN_U32("graphics/pokemon/megaseadramon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Megaseadramon[] = INCBIN_U16("graphics/pokemon/megaseadramon/shiny.gbapal");
+    const u8 gMonIcon_Megaseadramon[] = INCBIN_U8("graphics/pokemon/megaseadramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Smarinedevimon[] = INCBIN_U8("graphics/pokemon/smarinedevimon/footprint.1bpp");
+    const u8 gMonFootprint_Megaseadramon[] = INCBIN_U8("graphics/pokemon/megaseadramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Smarinedevimon[] = INCBIN_COMP("graphics/pokemon/smarinedevimon/overworld.4bpp");
+    const u32 gObjectEventPic_Megaseadramon[] = INCBIN_COMP("graphics/pokemon/megaseadramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Smarinedevimon[] = INCBIN_U16("graphics/pokemon/smarinedevimon/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Smarinedevimon[] = INCBIN_U16("graphics/pokemon/smarinedevimon/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Megaseadramon[] = INCBIN_U16("graphics/pokemon/megaseadramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Megaseadramon[] = INCBIN_U16("graphics/pokemon/megaseadramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MARINEDEVIMON

@@ -22026,7 +22026,7 @@ static const u16 sArukenimonTeachableLearnset[] = {
 #endif //P_FAMILY_MASTERTYRANNOMON
 
 #if P_FAMILY_MARINEDEVIMON
-static const u16 sMarinedevimonTeachableLearnset[] = {
+static const u16 sMarineDevimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
@@ -22061,7 +22061,7 @@ static const u16 sMarinedevimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSmarinedevimonTeachableLearnset[] = {
+static const u16 sMegaseadramonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CALM_MIND,

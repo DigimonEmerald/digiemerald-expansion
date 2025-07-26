@@ -12469,7 +12469,7 @@ static const struct LevelUpMove sMarinedevimonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sSmarinedevimonLevelUpLearnset[] = {
+static const struct LevelUpMove sMegaseadramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GUST),
     LEVEL_UP_MOVE( 1, MOVE_ATTRACT),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),

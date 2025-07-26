@@ -4121,7 +4121,7 @@ static const u16 sMastertyrannomonEggMoveLearnset[] = {
 #endif //P_FAMILY_MASTERTYRANNOMON
 
 #if P_FAMILY_MARINEDEVIMON
-static const u16 sMarinedevimonEggMoveLearnset[] = {
+static const u16 sMarineDevimonEggMoveLearnset[] = {
     MOVE_CHARM,
     MOVE_KNOCK_OFF,
     MOVE_FAKE_TEARS,

@@ -3488,8 +3488,8 @@ Cry_Marinedevimon::
 	.incbin "sound/direct_sound_samples/cries/marinedevimon.bin"
 
 	.align 2
-Cry_Smarinedevimon::
-	.incbin "sound/direct_sound_samples/cries/smarinedevimon.bin"
+Cry_Megaseadramon::
+	.incbin "sound/direct_sound_samples/cries/megaseadramon.bin"
 .endif @ P_FAMILY_MARINEDEVIMON
 
 .if P_FAMILY_DRILBUR == TRUE

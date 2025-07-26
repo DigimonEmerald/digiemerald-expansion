@@ -2593,46 +2593,48 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gShinyOverworldPalette_Marinedevimon
         )
         .levelUpLearnset = sMarinedevimonLevelUpLearnset,
-        .teachableLearnset = sMarinedevimonTeachableLearnset,
-        .eggMoveLearnset = sMarinedevimonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SMARINEDEVIMON, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
+        .teachableLearnset = sMarineDevimonTeachableLearnset,
+        .eggMoveLearnset = sMarineDevimonEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_MEGASEADRAMON, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
     },
 
-    [SPECIES_SMARINEDEVIMON] =
+    [SPECIES_MEGASEADRAMON] =
     {
-        .baseHP        = 67,
-        .baseAttack    = 57,
-        .baseDefense   = 55,
-        .baseSpeed     = 114,
-        .baseSpAttack  = 77,
-        .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
+        .baseHP        = 120,
+        .baseAttack    = 80,
+        .baseDefense   = 80,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 120,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_WATER),
+        .attribute = TYPE_DATA,
         .catchRate = 95,
         .expYield = 200,
-        .evYield_Speed = 2,
+        .evYield_HP = 3,
+        .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FLYING),
-        .abilities = { ABILITY_UNAWARE, ABILITY_KLUTZ, ABILITY_SIMPLE },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("arinedevimon"),
-        .cryId = CRY_SMARINEDEVIMON,
-        .natDexNum = NATIONAL_DEX_SMARINEDEVIMON,
-        .categoryName = _("Courting"),
-        .height = 9,
-        .weight = 105,
+        .abilities = { ABILITY_WATER_VEIL, ABILITY_MARVEL_SCALE, ABILITY_DRAGONS_MAW },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("MegaSeadrmon"),
+        .cryId = CRY_MEGASEADRAMON,
+        .natDexNum = NATIONAL_DEX_MEGASEADRAMON,
+        .categoryName = _("Serpent"),
+        .height = 150,
+        .weight = 3007,
         .description = COMPOUND_STRING(
-            "Anyone who comes into contact with\n"
-            "the ultrasonic waves emitted by a\n"
-            "courting male experiences a positive\n"
-            "mood shift."),
+            "MegaSeadramon are often found in\n"
+            "the harsh environments of Folder\n"
+            "Contient. It will chase its foes\n"
+            "like a seeking torpedo"),
         .pokemonScale = 338,
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Smarinedevimon,
+        .frontPic = gMonFrontPic_Megaseadramon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2645,28 +2647,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ),
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL,
         .enemyMonElevation = 10,
-        .backPic = gMonBackPic_Smarinedevimon,
+        .backPic = gMonBackPic_Megaseadramon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Smarinedevimon,
-        .shinyPalette = gMonShinyPalette_Smarinedevimon,
-        .iconSprite = gMonIcon_Smarinedevimon,
+        .palette = gMonPalette_Megaseadramon,
+        .shinyPalette = gMonShinyPalette_Megaseadramon,
+        .iconSprite = gMonIcon_Megaseadramon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 17, SHADOW_SIZE_M)
-        FOOTPRINT(Smarinedevimon)
+        FOOTPRINT(Megaseadramon)
         OVERWORLD(
-            sPicTable_Smarinedevimon,
+            sPicTable_Megaseadramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Smarinedevimon,
-            gShinyOverworldPalette_Smarinedevimon
+            gOverworldPalette_Megaseadramon,
+            gShinyOverworldPalette_Megaseadramon
         )
-        .levelUpLearnset = sSmarinedevimonLevelUpLearnset,
-        .teachableLearnset = sSmarinedevimonTeachableLearnset,
+        .levelUpLearnset = sMegaseadramonLevelUpLearnset,
+        .teachableLearnset = sMegaseadramonTeachableLearnset,
     },
 #endif //P_FAMILY_MARINEDEVIMON
 
