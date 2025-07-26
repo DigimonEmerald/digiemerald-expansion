@@ -989,9 +989,9 @@ static const u16 sGesomonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_GESOMON
 
-#if P_FAMILY_BURMY
+#if P_FAMILY_MEKANORIMON
 static const u16 sBurmyFormSpeciesIdTable[] = {
-    SPECIES_BURMY_PLANT,
+    SPECIES_MEKANORIMON,
     SPECIES_BURMY_SANDY,
     SPECIES_BURMY_TRASH,
     FORM_SPECIES_END,
@@ -1010,7 +1010,7 @@ static const u16 sMothimFormSpeciesIdTable[] = {
     SPECIES_MOTHIM_TRASH,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_BURMY
+#endif //P_FAMILY_MEKANORIMON
 
 #if P_FAMILY_CHERUBI
 static const u16 sCherrimFormSpeciesIdTable[] = {

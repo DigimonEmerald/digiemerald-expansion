@@ -18,7 +18,7 @@ static const union AnimCmd *const sAnims_TwoFramePlaceHolder[] =
     },
 };
 
-#if P_FAMILY_BURMY
+#if P_FAMILY_MEKANORIMON
 static const union AnimCmd *const sAnims_Burmy[] =
 {
     sAnim_GeneralFrame0,
@@ -62,7 +62,7 @@ static const union AnimCmd *const sAnims_Mothim[] =
         ANIMCMD_END,
     },
 };
-#endif //P_FAMILY_BURMY
+#endif //P_FAMILY_MEKANORIMON
 
 #if P_FAMILY_SHELLOS
 static const union AnimCmd *const sAnims_Shellos[] =

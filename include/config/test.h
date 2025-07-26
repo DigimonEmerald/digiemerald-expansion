@@ -464,8 +464,8 @@
 #define P_FAMILY_GROWLMON                TRUE
 #undef P_FAMILY_TUSKMON
 #define P_FAMILY_TUSKMON                TRUE
-#undef P_FAMILY_BURMY
-#define P_FAMILY_BURMY                   TRUE
+#undef P_FAMILY_MEKANORIMON
+#define P_FAMILY_MEKANORIMON                   TRUE
 #undef P_FAMILY_COMBEE
 #define P_FAMILY_COMBEE                  TRUE
 #undef P_FAMILY_PACHIRISU

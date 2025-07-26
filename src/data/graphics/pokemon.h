@@ -14458,39 +14458,39 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_TUSKMON
 
-#if P_FAMILY_BURMY
-    const u32 gMonFrontPic_BurmyPlant[] = INCBIN_U32("graphics/pokemon/burmy/anim_front.4bpp.lz");
-    const u16 gMonPalette_BurmyPlant[] = INCBIN_U16("graphics/pokemon/burmy/normal.gbapal");
-    const u32 gMonBackPic_BurmyPlant[] = INCBIN_U32("graphics/pokemon/burmy/back.4bpp.lz");
-    const u16 gMonShinyPalette_BurmyPlant[] = INCBIN_U16("graphics/pokemon/burmy/shiny.gbapal");
-    const u8 gMonIcon_BurmyPlant[] = INCBIN_U8("graphics/pokemon/burmy/icon.4bpp");
+#if P_FAMILY_MEKANORIMON
+    const u32 gMonFrontPic_Mekanorimon[] = INCBIN_U32("graphics/pokemon/mekanorimon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Mekanorimon[] = INCBIN_U16("graphics/pokemon/mekanorimon/normal.gbapal");
+    const u32 gMonBackPic_Mekanorimon[] = INCBIN_U32("graphics/pokemon/mekanorimon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Mekanorimon[] = INCBIN_U16("graphics/pokemon/mekanorimon/shiny.gbapal");
+    const u8 gMonIcon_Mekanorimon[] = INCBIN_U8("graphics/pokemon/mekanorimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Burmy[] = INCBIN_U8("graphics/pokemon/burmy/footprint.1bpp");
+    const u8 gMonFootprint_Mekanorimon[] = INCBIN_U8("graphics/pokemon/mekanorimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_BurmySandy[] = INCBIN_U32("graphics/pokemon/burmy/sandy/anim_front.4bpp.lz");
-    const u16 gMonPalette_BurmySandy[] = INCBIN_U16("graphics/pokemon/burmy/sandy/normal.gbapal");
-    const u32 gMonBackPic_BurmySandy[] = INCBIN_U32("graphics/pokemon/burmy/sandy/back.4bpp.lz");
-    const u16 gMonShinyPalette_BurmySandy[] = INCBIN_U16("graphics/pokemon/burmy/sandy/shiny.gbapal");
-    const u8 gMonIcon_BurmySandy[] = INCBIN_U8("graphics/pokemon/burmy/sandy/icon.4bpp");
+    const u32 gMonFrontPic_BurmySandy[] = INCBIN_U32("graphics/pokemon/mekanorimon/sandy/anim_front.4bpp.lz");
+    const u16 gMonPalette_BurmySandy[] = INCBIN_U16("graphics/pokemon/mekanorimon/sandy/normal.gbapal");
+    const u32 gMonBackPic_BurmySandy[] = INCBIN_U32("graphics/pokemon/mekanorimon/sandy/back.4bpp.lz");
+    const u16 gMonShinyPalette_BurmySandy[] = INCBIN_U16("graphics/pokemon/mekanorimon/sandy/shiny.gbapal");
+    const u8 gMonIcon_BurmySandy[] = INCBIN_U8("graphics/pokemon/mekanorimon/sandy/icon.4bpp");
 
-    const u32 gMonFrontPic_BurmyTrash[] = INCBIN_U32("graphics/pokemon/burmy/trash/anim_front.4bpp.lz");
-    const u16 gMonPalette_BurmyTrash[] = INCBIN_U16("graphics/pokemon/burmy/trash/normal.gbapal");
-    const u32 gMonBackPic_BurmyTrash[] = INCBIN_U32("graphics/pokemon/burmy/trash/back.4bpp.lz");
-    const u16 gMonShinyPalette_BurmyTrash[] = INCBIN_U16("graphics/pokemon/burmy/trash/shiny.gbapal");
-    const u8 gMonIcon_BurmyTrash[] = INCBIN_U8("graphics/pokemon/burmy/trash/icon.4bpp");
+    const u32 gMonFrontPic_BurmyTrash[] = INCBIN_U32("graphics/pokemon/mekanorimon/trash/anim_front.4bpp.lz");
+    const u16 gMonPalette_BurmyTrash[] = INCBIN_U16("graphics/pokemon/mekanorimon/trash/normal.gbapal");
+    const u32 gMonBackPic_BurmyTrash[] = INCBIN_U32("graphics/pokemon/mekanorimon/trash/back.4bpp.lz");
+    const u16 gMonShinyPalette_BurmyTrash[] = INCBIN_U16("graphics/pokemon/mekanorimon/trash/shiny.gbapal");
+    const u8 gMonIcon_BurmyTrash[] = INCBIN_U8("graphics/pokemon/mekanorimon/trash/icon.4bpp");
 
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_BurmyPlant[] = INCBIN_COMP("graphics/pokemon/burmy/overworld.4bpp");
-    const u32 gObjectEventPic_BurmySandy[] = INCBIN_COMP("graphics/pokemon/burmy/sandy/overworld.4bpp");
-    const u32 gObjectEventPic_BurmyTrash[] = INCBIN_COMP("graphics/pokemon/burmy/trash/overworld.4bpp");
+    const u32 gObjectEventPic_Mekanorimon[] = INCBIN_COMP("graphics/pokemon/mekanorimon/overworld.4bpp");
+    const u32 gObjectEventPic_BurmySandy[] = INCBIN_COMP("graphics/pokemon/mekanorimon/sandy/overworld.4bpp");
+    const u32 gObjectEventPic_BurmyTrash[] = INCBIN_COMP("graphics/pokemon/mekanorimon/trash/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_BurmyPlant[] = INCBIN_U16("graphics/pokemon/burmy/overworld_normal.gbapal");
-    const u16 gOverworldPalette_BurmySandy[] = INCBIN_U16("graphics/pokemon/burmy/sandy/overworld_normal.gbapal");
-    const u16 gOverworldPalette_BurmyTrash[] = INCBIN_U16("graphics/pokemon/burmy/trash/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_BurmyPlant[] = INCBIN_U16("graphics/pokemon/burmy/overworld_shiny.gbapal");
-    const u16 gShinyOverworldPalette_BurmySandy[] = INCBIN_U16("graphics/pokemon/burmy/sandy/overworld_shiny.gbapal");
-    const u16 gShinyOverworldPalette_BurmyTrash[] = INCBIN_U16("graphics/pokemon/burmy/trash/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Mekanorimon[] = INCBIN_U16("graphics/pokemon/mekanorimon/overworld_normal.gbapal");
+    const u16 gOverworldPalette_BurmySandy[] = INCBIN_U16("graphics/pokemon/mekanorimon/sandy/overworld_normal.gbapal");
+    const u16 gOverworldPalette_BurmyTrash[] = INCBIN_U16("graphics/pokemon/mekanorimon/trash/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Mekanorimon[] = INCBIN_U16("graphics/pokemon/mekanorimon/overworld_shiny.gbapal");
+    const u16 gShinyOverworldPalette_BurmySandy[] = INCBIN_U16("graphics/pokemon/mekanorimon/sandy/overworld_shiny.gbapal");
+    const u16 gShinyOverworldPalette_BurmyTrash[] = INCBIN_U16("graphics/pokemon/mekanorimon/trash/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -14544,7 +14544,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Mothim[] = INCBIN_U16("graphics/pokemon/mothim/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_BURMY
+#endif //P_FAMILY_MEKANORIMON
 
 #if P_FAMILY_COMBEE
     const u32 gMonFrontPic_Combee[] = INCBIN_U32("graphics/pokemon/combee/anim_front.4bpp.lz");

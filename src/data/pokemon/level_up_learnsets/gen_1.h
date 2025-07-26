@@ -7708,7 +7708,7 @@ static const struct LevelUpMove sMonochromonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_TUSKMON
 
-#if P_FAMILY_BURMY
+#if P_FAMILY_MEKANORIMON
 static const struct LevelUpMove sBurmyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PROTECT),
     LEVEL_UP_MOVE(10, MOVE_TACKLE),
@@ -7784,7 +7784,7 @@ static const struct LevelUpMove sMothimLevelUpLearnset[] = {
     LEVEL_UP_MOVE(47, MOVE_BUG_BUZZ),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_BURMY
+#endif //P_FAMILY_MEKANORIMON
 
 #if P_FAMILY_COMBEE
 static const struct LevelUpMove sCombeeLevelUpLearnset[] = {

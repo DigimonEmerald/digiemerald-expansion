@@ -3004,7 +3004,7 @@ Cry_Monochromon::
 	.incbin "sound/direct_sound_samples/cries/monochromon.bin"
 .endif @ P_FAMILY_TUSKMON
 
-.if P_FAMILY_BURMY == TRUE
+.if P_FAMILY_MEKANORIMON == TRUE
 	.align 2
 Cry_Burmy::
 	.incbin "sound/direct_sound_samples/cries/burmy.bin"
@@ -3016,7 +3016,7 @@ Cry_Wormadam::
 	.align 2
 Cry_Mothim::
 	.incbin "sound/direct_sound_samples/cries/mothim.bin"
-.endif @ P_FAMILY_BURMY
+.endif @ P_FAMILY_MEKANORIMON
 
 .if P_FAMILY_COMBEE == TRUE
 	.align 2

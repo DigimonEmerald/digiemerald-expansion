@@ -1121,11 +1121,11 @@ gCryTable::
 	cry Cry_Tuskmon
 	cry Cry_Monochromon
 .endif @ P_FAMILY_TUSKMON
-.if P_FAMILY_BURMY == TRUE
+.if P_FAMILY_MEKANORIMON == TRUE
 	cry Cry_Burmy
 	cry Cry_Wormadam
 	cry Cry_Mothim
-.endif @ P_FAMILY_BURMY
+.endif @ P_FAMILY_MEKANORIMON
 .if P_FAMILY_COMBEE == TRUE
 	cry Cry_Combee
 	cry Cry_Vespiquen
@@ -3549,11 +3549,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Tuskmon
 	cry_reverse Cry_Monochromon
 .endif @ P_FAMILY_TUSKMON
-.if P_FAMILY_BURMY == TRUE
+.if P_FAMILY_MEKANORIMON == TRUE
 	cry_reverse Cry_Burmy
 	cry_reverse Cry_Wormadam
 	cry_reverse Cry_Mothim
-.endif @ P_FAMILY_BURMY
+.endif @ P_FAMILY_MEKANORIMON
 .if P_FAMILY_COMBEE == TRUE
 	cry_reverse Cry_Combee
 	cry_reverse Cry_Vespiquen

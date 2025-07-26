@@ -5494,7 +5494,7 @@ static const union AnimCmd sAnim_Monochromon_1[] =
 };
 #endif //P_FAMILY_TUSKMON
 
-#if P_FAMILY_BURMY
+#if P_FAMILY_MEKANORIMON
 static const union AnimCmd sAnim_Burmy_1[] =
 {
     ANIMCMD_FRAME(1, 32),
@@ -5529,7 +5529,7 @@ static const union AnimCmd sAnim_Mothim_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_BURMY
+#endif //P_FAMILY_MEKANORIMON
 
 #if P_FAMILY_COMBEE
 static const union AnimCmd sAnim_Combee_1[] =
@@ -11452,11 +11452,11 @@ SINGLE_ANIMATION(Stingmon);
 SINGLE_ANIMATION(Tuskmon);
 SINGLE_ANIMATION(Monochromon);
 #endif //P_FAMILY_TUSKMON
-#if P_FAMILY_BURMY
+#if P_FAMILY_MEKANORIMON
 SINGLE_ANIMATION(Burmy);
 SINGLE_ANIMATION(Wormadam);
 SINGLE_ANIMATION(Mothim);
-#endif //P_FAMILY_BURMY
+#endif //P_FAMILY_MEKANORIMON
 #if P_FAMILY_COMBEE
 SINGLE_ANIMATION(Combee);
 SINGLE_ANIMATION(Vespiquen);

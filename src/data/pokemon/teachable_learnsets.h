@@ -18896,7 +18896,7 @@ static const u16 sMonochromonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_TUSKMON
 
-#if P_FAMILY_BURMY
+#if P_FAMILY_MEKANORIMON
 static const u16 sBurmyTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_SNORE,
@@ -19022,7 +19022,7 @@ static const u16 sMothimTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BURMY
+#endif //P_FAMILY_MEKANORIMON
 
 #if P_FAMILY_COMBEE
 static const u16 sCombeeTeachableLearnset[] = {

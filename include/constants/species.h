@@ -420,8 +420,8 @@
 #define SPECIES_STINGMON                               409
 #define SPECIES_TUSKMON                                410
 #define SPECIES_MONOCHROMON                               411
-#define SPECIES_BURMY_PLANT                             412
-#define SPECIES_BURMY                                   SPECIES_BURMY_PLANT
+#define SPECIES_MEKANORIMON                             412
+#define SPECIES_BURMY                                   SPECIES_MEKANORIMON
 #define SPECIES_WORMADAM_PLANT                          413
 #define SPECIES_WORMADAM                                SPECIES_WORMADAM_PLANT
 #define SPECIES_MOTHIM_PLANT                            414

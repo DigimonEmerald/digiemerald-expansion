@@ -13075,69 +13075,72 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_TUSKMON
 
-#if P_FAMILY_BURMY
-    [SPECIES_BURMY_PLANT] =
+#if P_FAMILY_MEKANORIMON
+    [SPECIES_MEKANORIMON] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 29,
-        .baseDefense   = 45,
-        .baseSpeed     = 36,
-        .baseSpAttack  = 29,
-        .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_BUG),
-        .catchRate = 120,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 45 : 61,
-        .evYield_SpDefense = 1,
+        .baseHP        = 75,
+        .baseAttack    = 75,
+        .baseDefense   = 95,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_STEEL),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP = 1,
+        .evYield_Attack = 1,
+        .evYield_Defense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_OVERCOAT },
-        .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Burmy"),
+        .abilities = { ABILITY_SLOW_START, ABILITY_NONE, ABILITY_DEFEATIST },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Mekanorimon"),
         .cryId = CRY_BURMY,
         .natDexNum = NATIONAL_DEX_BURMY,
         .categoryName = _("Bagworm"),
-        .height = 2,
-        .weight = 34,
+        .height = 38,
+        .weight = 4731,
         .description = COMPOUND_STRING(
-            "If its cloak is even slightly damaged, it\n"
-            "will immediately repair it with whatever is\n"
-            "near at hand. The Pokémon within the cloak\n"
-            "is scrawny and vulnerable to the cold."),
+            "Mekanorimon is one of the first discovered\n"
+            "vehicle Digimon. It is unable to act for\n"
+            "itself requiring a pilot such as a\n"
+            "smaller Digimon or a human."),
         .pokemonScale = 682,
         .pokemonOffset = 24,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_BurmyPlant,
+        .frontPic = gMonFrontPic_Mekanorimon,
         .frontPicSize = MON_COORDS_SIZE(32, 56),
         .frontPicYOffset = 13,
         .frontAnimFrames = sAnims_Burmy,
         .frontAnimId = ANIM_V_STRETCH,
         .enemyMonElevation = 10,
-        .backPic = gMonBackPic_BurmyPlant,
+        .backPic = gMonBackPic_Mekanorimon,
         .backPicSize = MON_COORDS_SIZE(40, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_H_SHAKE,
-        .palette = gMonPalette_BurmyPlant,
-        .shinyPalette = gMonShinyPalette_BurmyPlant,
-        .iconSprite = gMonIcon_BurmyPlant,
+        .palette = gMonPalette_Mekanorimon,
+        .shinyPalette = gMonShinyPalette_Mekanorimon,
+        .iconSprite = gMonIcon_Mekanorimon,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 8, SHADOW_SIZE_S)
         FOOTPRINT(Burmy)
         OVERWORLD(
-            sPicTable_BurmyPlant,
+            sPicTable_Mekanorimon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_BurmyPlant,
-            gShinyOverworldPalette_BurmyPlant
+            gOverworldPalette_Mekanorimon,
+            gShinyOverworldPalette_Mekanorimon
         )
         .tmIlliterate = TRUE,
-        .levelUpLearnset = sBurmyLevelUpLearnset,
+        .levelUpLearnset = sMekanorimonLevelUpLearnset,
         .teachableLearnset = sBurmyTeachableLearnset,
         .formSpeciesIdTable = sBurmyFormSpeciesIdTable,
         .formChangeTable = sBurmyFormChangeTable,
@@ -13548,7 +13551,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_MOTHIM_PLANT] = MOTHIM_SPECIES_INFO,
     [SPECIES_MOTHIM_SANDY] = MOTHIM_SPECIES_INFO,
     [SPECIES_MOTHIM_TRASH] = MOTHIM_SPECIES_INFO,
-#endif //P_FAMILY_BURMY
+#endif //P_FAMILY_MEKANORIMON
 
 #if P_FAMILY_COMBEE
     [SPECIES_COMBEE] =
