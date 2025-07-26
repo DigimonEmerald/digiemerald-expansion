@@ -284,8 +284,8 @@ DOUBLE_BATTLE_TEST("Eject Button activation will not trigger an attack from the 
 SINGLE_BATTLE_TEST("Eject Button activates after Wandring Spirit")
 {
     GIVEN {
-        PLAYER(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_YAMASK_GALAR) { Item(ITEM_EJECT_BUTTON); Ability(ABILITY_WANDERING_SPIRIT); }
     } WHEN {
         TURN {
