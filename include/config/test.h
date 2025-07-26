@@ -562,8 +562,8 @@
 #define P_FAMILY_WARGROWLMON                 TRUE
 #undef P_FAMILY_MASTERTYRANNOMON
 #define P_FAMILY_MASTERTYRANNOMON              TRUE
-#undef P_FAMILY_WOOBAT
-#define P_FAMILY_WOOBAT                  TRUE
+#undef P_FAMILY_MARINEDEVIMON
+#define P_FAMILY_MARINEDEVIMON                  TRUE
 #undef P_FAMILY_DRILBUR
 #define P_FAMILY_DRILBUR                 TRUE
 #undef P_FAMILY_AUDINO

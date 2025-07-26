@@ -9882,8 +9882,8 @@ static const struct LevelUpMove sArukenimonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_MASTERTYRANNOMON
 
-#if P_FAMILY_WOOBAT
-static const struct LevelUpMove sWoobatLevelUpLearnset[] = {
+#if P_FAMILY_MARINEDEVIMON
+static const struct LevelUpMove sMarinedevimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 4, MOVE_ODOR_SLEUTH),
     LEVEL_UP_MOVE( 8, MOVE_GUST),
@@ -9901,7 +9901,7 @@ static const struct LevelUpMove sWoobatLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sSwoobatLevelUpLearnset[] = {
+static const struct LevelUpMove sSmarinedevimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 1, MOVE_ODOR_SLEUTH),
     LEVEL_UP_MOVE( 1, MOVE_GUST),
@@ -9921,7 +9921,7 @@ static const struct LevelUpMove sSwoobatLevelUpLearnset[] = {
     LEVEL_UP_MOVE(47, MOVE_ENDEAVOR),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_WOOBAT
+#endif //P_FAMILY_MARINEDEVIMON
 
 #if P_FAMILY_DRILBUR
 static const struct LevelUpMove sDrilburLevelUpLearnset[] = {

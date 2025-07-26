@@ -4120,8 +4120,8 @@ static const u16 sMastertyrannomonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_MASTERTYRANNOMON
 
-#if P_FAMILY_WOOBAT
-static const u16 sWoobatEggMoveLearnset[] = {
+#if P_FAMILY_MARINEDEVIMON
+static const u16 sMarinedevimonEggMoveLearnset[] = {
     MOVE_CHARM,
     MOVE_KNOCK_OFF,
     MOVE_FAKE_TEARS,
@@ -4136,7 +4136,7 @@ static const u16 sWoobatEggMoveLearnset[] = {
     MOVE_PSYCHO_SHIFT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_WOOBAT
+#endif //P_FAMILY_MARINEDEVIMON
 
 #if P_FAMILY_DRILBUR
 static const u16 sDrilburEggMoveLearnset[] = {

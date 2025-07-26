@@ -22025,8 +22025,8 @@ static const u16 sArukenimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_MASTERTYRANNOMON
 
-#if P_FAMILY_WOOBAT
-static const u16 sWoobatTeachableLearnset[] = {
+#if P_FAMILY_MARINEDEVIMON
+static const u16 sMarinedevimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
@@ -22061,7 +22061,7 @@ static const u16 sWoobatTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSwoobatTeachableLearnset[] = {
+static const u16 sSmarinedevimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
@@ -22096,7 +22096,7 @@ static const u16 sSwoobatTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_WOOBAT
+#endif //P_FAMILY_MARINEDEVIMON
 
 #if P_FAMILY_DRILBUR
 static const u16 sDrilburTeachableLearnset[] = {

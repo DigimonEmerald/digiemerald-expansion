@@ -3482,15 +3482,15 @@ Cry_Arukenimon::
 	.incbin "sound/direct_sound_samples/cries/arukenimon.bin"
 .endif @ P_FAMILY_MASTERTYRANNOMON
 
-.if P_FAMILY_WOOBAT == TRUE
+.if P_FAMILY_MARINEDEVIMON == TRUE
 	.align 2
-Cry_Woobat::
-	.incbin "sound/direct_sound_samples/cries/woobat.bin"
+Cry_Marinedevimon::
+	.incbin "sound/direct_sound_samples/cries/marinedevimon.bin"
 
 	.align 2
-Cry_Swoobat::
-	.incbin "sound/direct_sound_samples/cries/swoobat.bin"
-.endif @ P_FAMILY_WOOBAT
+Cry_Smarinedevimon::
+	.incbin "sound/direct_sound_samples/cries/smarinedevimon.bin"
+.endif @ P_FAMILY_MARINEDEVIMON
 
 .if P_FAMILY_DRILBUR == TRUE
 	.align 2

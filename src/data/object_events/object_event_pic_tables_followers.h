@@ -3839,14 +3839,14 @@ static const struct SpriteFrameImage sPicTable_Arukenimon[] = {
 };
 #endif //P_FAMILY_MASTERTYRANNOMON
 
-#if P_FAMILY_WOOBAT
-static const struct SpriteFrameImage sPicTable_Woobat[] = {
-    overworld_ascending_frames(gObjectEventPic_Woobat, 4, 4),
+#if P_FAMILY_MARINEDEVIMON
+static const struct SpriteFrameImage sPicTable_Marinedevimon[] = {
+    overworld_ascending_frames(gObjectEventPic_Marinedevimon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Swoobat[] = {
-    overworld_ascending_frames(gObjectEventPic_Swoobat, 4, 4),
+static const struct SpriteFrameImage sPicTable_Smarinedevimon[] = {
+    overworld_ascending_frames(gObjectEventPic_Smarinedevimon, 4, 4),
 };
-#endif //P_FAMILY_WOOBAT
+#endif //P_FAMILY_MARINEDEVIMON
 
 #if P_FAMILY_DRILBUR
 static const struct SpriteFrameImage sPicTable_Drilbur[] = {

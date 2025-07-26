@@ -1320,10 +1320,10 @@ gCryTable::
 	cry Cry_Triceramon
 	cry Cry_Arukenimon
 .endif @ P_FAMILY_MASTERTYRANNOMON
-.if P_FAMILY_WOOBAT == TRUE
-	cry Cry_Woobat
-	cry Cry_Swoobat
-.endif @ P_FAMILY_WOOBAT
+.if P_FAMILY_MARINEDEVIMON == TRUE
+	cry Cry_Marinedevimon
+	cry Cry_Smarinedevimon
+.endif @ P_FAMILY_MARINEDEVIMON
 .if P_FAMILY_DRILBUR == TRUE
 	cry Cry_Drilbur
 	cry Cry_Excadrill
@@ -3748,10 +3748,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Triceramon
 	cry_reverse Cry_Arukenimon
 .endif @ P_FAMILY_MASTERTYRANNOMON
-.if P_FAMILY_WOOBAT == TRUE
-	cry_reverse Cry_Woobat
-	cry_reverse Cry_Swoobat
-.endif @ P_FAMILY_WOOBAT
+.if P_FAMILY_MARINEDEVIMON == TRUE
+	cry_reverse Cry_Marinedevimon
+	cry_reverse Cry_Smarinedevimon
+.endif @ P_FAMILY_MARINEDEVIMON
 .if P_FAMILY_DRILBUR == TRUE
 	cry_reverse Cry_Drilbur
 	cry_reverse Cry_Excadrill

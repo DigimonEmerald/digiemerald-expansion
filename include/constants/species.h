@@ -544,8 +544,8 @@
 #define SPECIES_MASTERTYRANNOMON                              524
 #define SPECIES_TRICERAMON                                 525
 #define SPECIES_ARUKENIMON                                526
-#define SPECIES_WOOBAT                                  527
-#define SPECIES_SWOOBAT                                 528
+#define SPECIES_MARINEDEVIMON                                  527
+#define SPECIES_SMARINEDEVIMON                                 528
 #define SPECIES_DRILBUR                                 529
 #define SPECIES_EXCADRILL                               530
 #define SPECIES_AUDINO                                  531

@@ -6590,8 +6590,8 @@ static const union AnimCmd sAnim_Arukenimon_1[] =
 };
 #endif //P_FAMILY_MASTERTYRANNOMON
 
-#if P_FAMILY_WOOBAT
-static const union AnimCmd sAnim_Woobat_1[] =
+#if P_FAMILY_MARINEDEVIMON
+static const union AnimCmd sAnim_Marinedevimon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 5),
@@ -6615,7 +6615,7 @@ static const union AnimCmd sAnim_Woobat_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Swoobat_1[] =
+static const union AnimCmd sAnim_Smarinedevimon_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 15),
@@ -6625,7 +6625,7 @@ static const union AnimCmd sAnim_Swoobat_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_WOOBAT
+#endif //P_FAMILY_MARINEDEVIMON
 
 #if P_FAMILY_DRILBUR
 static const union AnimCmd sAnim_Drilbur_1[] =
@@ -11663,10 +11663,10 @@ SINGLE_ANIMATION(Mastertyrannomon);
 SINGLE_ANIMATION(Triceramon);
 SINGLE_ANIMATION(Arukenimon);
 #endif //P_FAMILY_MASTERTYRANNOMON
-#if P_FAMILY_WOOBAT
-SINGLE_ANIMATION(Woobat);
-SINGLE_ANIMATION(Swoobat);
-#endif //P_FAMILY_WOOBAT
+#if P_FAMILY_MARINEDEVIMON
+SINGLE_ANIMATION(Marinedevimon);
+SINGLE_ANIMATION(Smarinedevimon);
+#endif //P_FAMILY_MARINEDEVIMON
 #if P_FAMILY_DRILBUR
 SINGLE_ANIMATION(Drilbur);
 SINGLE_ANIMATION(Excadrill);

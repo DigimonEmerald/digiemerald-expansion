@@ -2510,42 +2510,43 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_MASTERTYRANNOMON
 
-#if P_FAMILY_WOOBAT
-    [SPECIES_WOOBAT] =
+#if P_FAMILY_MARINEDEVIMON
+    [SPECIES_MARINEDEVIMON] =
     {
-        .baseHP        = P_UPDATED_STATS >= GEN_7 ? 65 : 55,
-        .baseAttack    = 45,
-        .baseDefense   = 43,
-        .baseSpeed     = 72,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 43,
-        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
-        .catchRate = 190,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_7) ? 65 : 63,
+        .baseHP        = 65,
+        .baseAttack    = 80,
+        .baseDefense   = 85,
+        .baseSpeed     = 115,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 115,
+        .types = MON_TYPES(TYPE_WATER, TYPE_DARK),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 95,
+        .expYield = 200,
         .evYield_Speed = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FLYING),
-        .abilities = { ABILITY_UNAWARE, ABILITY_KLUTZ, ABILITY_SIMPLE },
+        .abilities = { ABILITY_LONG_REACH, ABILITY_TOXIC_BOOST, ABILITY_STORM_DRAIN },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Woobat"),
-        .cryId = CRY_WOOBAT,
-        .natDexNum = NATIONAL_DEX_WOOBAT,
-        .categoryName = _("Bat"),
-        .height = 4,
-        .weight = 21,
+        .speciesName = _("MarinDevimon"),
+        .cryId = CRY_MARINEDEVIMON,
+        .natDexNum = NATIONAL_DEX_MARINEDEVIMON,
+        .categoryName = _("Marine"),
+        .height = 90,
+        .weight = 3859,
         .description = COMPOUND_STRING(
-            "Its habitat is dark forests and caves.\n"
-            "Suction from its nostrils enables it\n"
-            "to stick to cave walls during sleep.\n"
-            "It leaves a heart-shaped mark behind."),
+            "A dirty fighter that even other Devimon\n"
+            "hate to fight, MarineDevimon lives deep\n"
+            "in the Net Ocean. The only emotion it\n"
+            "has retained is its hatred."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Woobat,
+        .frontPic = gMonFrontPic_Marinedevimon,
         .frontPicSize = MON_COORDS_SIZE(64, 32),
         .frontPicYOffset = 16,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2571,33 +2572,33 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ),
         .frontAnimId = ANIM_FOUR_PETAL,
         .enemyMonElevation = 19,
-        .backPic = gMonBackPic_Woobat,
+        .backPic = gMonBackPic_Marinedevimon,
         .backPicSize = MON_COORDS_SIZE(64, 32),
         .backPicYOffset = 16,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Woobat,
-        .shinyPalette = gMonShinyPalette_Woobat,
-        .iconSprite = gMonIcon_Woobat,
+        .palette = gMonPalette_Marinedevimon,
+        .shinyPalette = gMonShinyPalette_Marinedevimon,
+        .iconSprite = gMonIcon_Marinedevimon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 14, SHADOW_SIZE_S)
-        FOOTPRINT(Woobat)
+        FOOTPRINT(Marinedevimon)
         OVERWORLD(
-            sPicTable_Woobat,
+            sPicTable_Marinedevimon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Woobat,
-            gShinyOverworldPalette_Woobat
+            gOverworldPalette_Marinedevimon,
+            gShinyOverworldPalette_Marinedevimon
         )
-        .levelUpLearnset = sWoobatLevelUpLearnset,
-        .teachableLearnset = sWoobatTeachableLearnset,
-        .eggMoveLearnset = sWoobatEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SWOOBAT, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
+        .levelUpLearnset = sMarinedevimonLevelUpLearnset,
+        .teachableLearnset = sMarinedevimonTeachableLearnset,
+        .eggMoveLearnset = sMarinedevimonEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SMARINEDEVIMON, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
     },
 
-    [SPECIES_SWOOBAT] =
+    [SPECIES_SMARINEDEVIMON] =
     {
         .baseHP        = 67,
         .baseAttack    = 57,
@@ -2616,9 +2617,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FLYING),
         .abilities = { ABILITY_UNAWARE, ABILITY_KLUTZ, ABILITY_SIMPLE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Swoobat"),
-        .cryId = CRY_SWOOBAT,
-        .natDexNum = NATIONAL_DEX_SWOOBAT,
+        .speciesName = _("Smarinedevimon"),
+        .cryId = CRY_SMARINEDEVIMON,
+        .natDexNum = NATIONAL_DEX_SMARINEDEVIMON,
         .categoryName = _("Courting"),
         .height = 9,
         .weight = 105,
@@ -2631,7 +2632,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Swoobat,
+        .frontPic = gMonFrontPic_Smarinedevimon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2644,30 +2645,30 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ),
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL,
         .enemyMonElevation = 10,
-        .backPic = gMonBackPic_Swoobat,
+        .backPic = gMonBackPic_Smarinedevimon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Swoobat,
-        .shinyPalette = gMonShinyPalette_Swoobat,
-        .iconSprite = gMonIcon_Swoobat,
+        .palette = gMonPalette_Smarinedevimon,
+        .shinyPalette = gMonShinyPalette_Smarinedevimon,
+        .iconSprite = gMonIcon_Smarinedevimon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 17, SHADOW_SIZE_M)
-        FOOTPRINT(Swoobat)
+        FOOTPRINT(Smarinedevimon)
         OVERWORLD(
-            sPicTable_Swoobat,
+            sPicTable_Smarinedevimon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Swoobat,
-            gShinyOverworldPalette_Swoobat
+            gOverworldPalette_Smarinedevimon,
+            gShinyOverworldPalette_Smarinedevimon
         )
-        .levelUpLearnset = sSwoobatLevelUpLearnset,
-        .teachableLearnset = sSwoobatTeachableLearnset,
+        .levelUpLearnset = sSmarinedevimonLevelUpLearnset,
+        .teachableLearnset = sSmarinedevimonTeachableLearnset,
     },
-#endif //P_FAMILY_WOOBAT
+#endif //P_FAMILY_MARINEDEVIMON
 
 #if P_FAMILY_DRILBUR
     [SPECIES_DRILBUR] =
