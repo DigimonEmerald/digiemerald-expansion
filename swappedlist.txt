@@ -460,6 +460,7 @@ Triceramon - Boldore
 Arukenimon - Gigalith
 MarineDevimon - Woobat
 MegaSeadramon - Swoobat
+Megadramon - Drilbur
 
 Mega List
 
@@ -477,5 +478,6 @@ Rosemon - Bunnelby
 Dinorexmon - Diggersby
 Dinomon - Fletchling
 MarineAngemon - Fletchinder
+MetalEtemon - Talonflame
 
 SPECIES NAME LENGTH MAX = 13

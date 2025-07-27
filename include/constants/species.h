@@ -689,7 +689,7 @@
 #define SPECIES_DINOREXMON                               660
 #define SPECIES_DINOMON                              661
 #define SPECIES_MARINEANGEMON                             662
-#define SPECIES_TALONFLAME                              663
+#define SPECIES_METALETEMON                              663
 #define SPECIES_SCATTERBUG                              SPECIES_SCATTERBUG_ICY_SNOW
 #define SPECIES_SCATTERBUG_ICY_SNOW                     664
 #define SPECIES_SPEWPA                                  SPECIES_SPEWPA_ICY_SNOW

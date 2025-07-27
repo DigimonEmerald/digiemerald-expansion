@@ -13078,12 +13078,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_MEKANORIMON
     [SPECIES_MEKANORIMON] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 75,
-        .baseDefense   = 95,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 65,
+        .baseHP        = 100,
+        .baseAttack    = 100,
+        .baseDefense   = 120,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_STEEL),
         .attribute = TYPE_VIRUS,
         .catchRate = 115,

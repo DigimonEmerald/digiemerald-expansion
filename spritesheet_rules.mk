@@ -3249,7 +3249,7 @@ $(POKEMONGFXDIR)/dinomon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/marineangemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/talonflame/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/metaletemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/scatterbug/overworld.4bpp: %.4bpp: %.png

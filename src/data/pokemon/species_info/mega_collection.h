@@ -1072,44 +1072,46 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sMarineangemonLevelUpLearnset,
         .teachableLearnset = sMarineangemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_TALONFLAME}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_METALETEMON}),
     },
 
-    [SPECIES_TALONFLAME] =
+    [SPECIES_METALETEMON] =
     {
-        .baseHP        = 78,
-        .baseAttack    = 81,
-        .baseDefense   = 71,
-        .baseSpeed     = 126,
-        .baseSpAttack  = 74,
-        .baseSpDefense = 69,
-        .types = MON_TYPES(TYPE_FIRE, TYPE_FLYING),
-        .catchRate = 45,
-        .expYield = 175,
-        .evYield_Speed = 3,
+        .baseHP        = 95,
+        .baseAttack    = 125,
+        .baseDefense   = 125,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_STEEL),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_Attack = 3,
+        .evYield_Defense = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_FLAME_BODY, ABILITY_NONE, ABILITY_GALE_WINGS },
-        .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Talonflame"),
-        .cryId = CRY_TALONFLAME,
-        .natDexNum = NATIONAL_DEX_TALONFLAME,
-        .categoryName = _("Scorching"),
-        .height = 12,
-        .weight = 245,
+        .abilities = { ABILITY_CLEAR_BODY, ABILITY_STURDY, ABILITY_IRON_FIST },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("MetalEtemon"),
+        .cryId = CRY_METALETEMON,
+        .natDexNum = NATIONAL_DEX_METALETEMON,
+        .categoryName = _("King"),
+        .height = 20,
+        .weight = 1385,
         .description = COMPOUND_STRING(
-            "In the fever of an exciting battle, it\n"
-            "showers embers from the gaps between its\n"
-            "feathers and takes to the air. It finishes\n"
-            "its prey off with a colossal kick."),
+            "In its pursuit of the strong, it suffered\n"
+            "under many harsh battles. These battles\n"
+            "forced it to study its weaknesses. That\n"
+            "is why MetalEtemon metallized itself."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Talonflame,
+        .frontPic = gMonFrontPic_Metaletemon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
         .frontAnimFrames = ANIM_FRAMES(
@@ -1118,28 +1120,28 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ),
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 7,
-        .backPic = gMonBackPic_Talonflame,
+        .backPic = gMonBackPic_Metaletemon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Talonflame,
-        .shinyPalette = gMonShinyPalette_Talonflame,
-        .iconSprite = gMonIcon_Talonflame,
+        .palette = gMonPalette_Metaletemon,
+        .shinyPalette = gMonShinyPalette_Metaletemon,
+        .iconSprite = gMonIcon_Metaletemon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 17, SHADOW_SIZE_M)
-        FOOTPRINT(Talonflame)
+        FOOTPRINT(Metaletemon)
         OVERWORLD(
-            sPicTable_Talonflame,
+            sPicTable_Metaletemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Talonflame,
-            gShinyOverworldPalette_Talonflame
+            gOverworldPalette_Metaletemon,
+            gShinyOverworldPalette_Metaletemon
         )
-        .levelUpLearnset = sTalonflameLevelUpLearnset,
-        .teachableLearnset = sTalonflameTeachableLearnset,
+        .levelUpLearnset = sMetaletemonLevelUpLearnset,
+        .teachableLearnset = sMetaletemonTeachableLearnset,
     },
 #endif //P_FAMILY_DINOMON
 

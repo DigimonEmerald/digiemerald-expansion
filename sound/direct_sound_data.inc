@@ -4221,8 +4221,8 @@ Cry_Marineangemon::
 	.incbin "sound/direct_sound_samples/cries/marineangemon.bin"
 
 	.align 2
-Cry_Talonflame::
-	.incbin "sound/direct_sound_samples/cries/talonflame.bin"
+Cry_Metaletemon::
+	.incbin "sound/direct_sound_samples/cries/metaletemon.bin"
 .endif @ P_FAMILY_DINOMON
 
 .if P_FAMILY_SCATTERBUG == TRUE

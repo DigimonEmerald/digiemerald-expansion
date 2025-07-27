@@ -26728,7 +26728,7 @@ static const u16 sMarineangemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sTalonflameTeachableLearnset[] = {
+static const u16 sMetaletemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BULK_UP,

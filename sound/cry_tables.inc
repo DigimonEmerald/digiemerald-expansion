@@ -1620,7 +1620,7 @@ gCryTable::
 .if P_FAMILY_DINOMON == TRUE
 	cry Cry_Dinomon
 	cry Cry_Marineangemon
-	cry Cry_Talonflame
+	cry Cry_Metaletemon
 .endif @ P_FAMILY_DINOMON
 .if P_FAMILY_SCATTERBUG == TRUE
 	cry Cry_Scatterbug
@@ -4048,7 +4048,7 @@ gCryTable_Reverse::
 .if P_FAMILY_DINOMON == TRUE
 	cry_reverse Cry_Dinomon
 	cry_reverse Cry_Marineangemon
-	cry_reverse Cry_Talonflame
+	cry_reverse Cry_Metaletemon
 .endif @ P_FAMILY_DINOMON
 .if P_FAMILY_SCATTERBUG == TRUE
 	cry_reverse Cry_Scatterbug

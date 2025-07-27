@@ -19278,19 +19278,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Talonflame[] = INCBIN_U32("graphics/pokemon/talonflame/anim_front.4bpp.lz");
-    const u16 gMonPalette_Talonflame[] = INCBIN_U16("graphics/pokemon/talonflame/normal.gbapal");
-    const u32 gMonBackPic_Talonflame[] = INCBIN_U32("graphics/pokemon/talonflame/back.4bpp.lz");
-    const u16 gMonShinyPalette_Talonflame[] = INCBIN_U16("graphics/pokemon/talonflame/shiny.gbapal");
-    const u8 gMonIcon_Talonflame[] = INCBIN_U8("graphics/pokemon/talonflame/icon.4bpp");
+    const u32 gMonFrontPic_Metaletemon[] = INCBIN_U32("graphics/pokemon/metaletemon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Metaletemon[] = INCBIN_U16("graphics/pokemon/metaletemon/normal.gbapal");
+    const u32 gMonBackPic_Metaletemon[] = INCBIN_U32("graphics/pokemon/metaletemon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Metaletemon[] = INCBIN_U16("graphics/pokemon/metaletemon/shiny.gbapal");
+    const u8 gMonIcon_Metaletemon[] = INCBIN_U8("graphics/pokemon/metaletemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Talonflame[] = INCBIN_U8("graphics/pokemon/talonflame/footprint.1bpp");
+    const u8 gMonFootprint_Metaletemon[] = INCBIN_U8("graphics/pokemon/metaletemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Talonflame[] = INCBIN_COMP("graphics/pokemon/talonflame/overworld.4bpp");
+    const u32 gObjectEventPic_Metaletemon[] = INCBIN_COMP("graphics/pokemon/metaletemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Talonflame[] = INCBIN_U16("graphics/pokemon/talonflame/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Talonflame[] = INCBIN_U16("graphics/pokemon/talonflame/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Metaletemon[] = INCBIN_U16("graphics/pokemon/metaletemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Metaletemon[] = INCBIN_U16("graphics/pokemon/metaletemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_DINOMON

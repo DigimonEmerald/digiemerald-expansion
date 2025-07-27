@@ -11,13 +11,13 @@ SINGLE_BATTLE_TEST("Gale Wings only grants priority at full HP (Gen 7+)")
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_GALE_WINGS, config);
         ASSUME(GetMoveType(MOVE_AERIAL_ACE) == TYPE_FLYING);
-        PLAYER(SPECIES_TALONFLAME) { Ability(ABILITY_GALE_WINGS); HP(hp); MaxHP(100); Speed(1);}
+        PLAYER(SPECIES_METALETEMON) { Ability(ABILITY_GALE_WINGS); HP(hp); MaxHP(100); Speed(1);}
         OPPONENT(SPECIES_LOPMONX) { Speed(100);};
     } WHEN {
         TURN { MOVE(player, MOVE_AERIAL_ACE); }
     } SCENE {
         if (hp == 100 || config <= GEN_6) {
-            MESSAGE("Talonflame used Aerial Ace!");
+            MESSAGE("Metaletemon used Aerial Ace!");
 <<<<<<< HEAD
             MESSAGE("Foe Lopmonx used Celebrate!");
         }
@@ -29,7 +29,7 @@ SINGLE_BATTLE_TEST("Gale Wings only grants priority at full HP (Gen 7+)")
         else {
             MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
-            MESSAGE("Talonflame used Aerial Ace!");
+            MESSAGE("Metaletemon used Aerial Ace!");
         }
     }
 }
@@ -42,13 +42,13 @@ SINGLE_BATTLE_TEST("Gale Wings only grants priority to Flying-type moves")
     GIVEN {
         ASSUME(GetMoveType(MOVE_AERIAL_ACE) == TYPE_FLYING);
         ASSUME(GetMoveType(MOVE_FLARE_BLITZ) == TYPE_FIRE);
-        PLAYER(SPECIES_TALONFLAME) { Ability(ABILITY_GALE_WINGS); HP(100); MaxHP(100); Speed(1);}
+        PLAYER(SPECIES_METALETEMON) { Ability(ABILITY_GALE_WINGS); HP(100); MaxHP(100); Speed(1);}
         OPPONENT(SPECIES_LOPMONX) { Speed(100);};
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
         if (move == MOVE_AERIAL_ACE) {
-            MESSAGE("Talonflame used Aerial Ace!");
+            MESSAGE("Metaletemon used Aerial Ace!");
 <<<<<<< HEAD
             MESSAGE("Foe Lopmonx used Celebrate!");
         }
@@ -60,7 +60,7 @@ SINGLE_BATTLE_TEST("Gale Wings only grants priority to Flying-type moves")
         else {
             MESSAGE("The opposing Lopmonx used Celebrate!");
 >>>>>>> upstream/master
-            MESSAGE("Talonflame used Flare Blitz!");
+            MESSAGE("Metaletemon used Flare Blitz!");
         }
     }
 }
@@ -81,23 +81,23 @@ SINGLE_BATTLE_TEST("Gale Wings doesn't increase priority of Flying-type Natural 
         ASSUME(gItemsInfo[ITEM_SKY_PLATE].holdEffect == HOLD_EFFECT_PLATE);
         ASSUME(gItemsInfo[ITEM_SKY_PLATE].secondaryId == TYPE_FLYING);
         ASSUME(gNaturalGiftTable[ITEM_TO_BERRY(ITEM_LUM_BERRY)].type == TYPE_FLYING);
-        OPPONENT(SPECIES_TALONFLAME) { Ability(ABILITY_GALE_WINGS); Speed(1); Item(heldItem); HPIV(31); AttackIV(3); DefenseIV(31); SpAttackIV(30); SpDefenseIV(30); SpeedIV(30); TeraType(TYPE_FLYING); }
+        OPPONENT(SPECIES_METALETEMON) { Ability(ABILITY_GALE_WINGS); Speed(1); Item(heldItem); HPIV(31); AttackIV(3); DefenseIV(31); SpAttackIV(30); SpDefenseIV(30); SpeedIV(30); TeraType(TYPE_FLYING); }
         PLAYER(SPECIES_LOPMONX) { Speed(100); };
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
             MESSAGE("Lopmonx used Celebrate!");
         if (move == MOVE_NATURAL_GIFT) {
-            MESSAGE("The opposing Talonflame used Natural Gift!");
+            MESSAGE("The opposing Metaletemon used Natural Gift!");
         }
         else if (move == MOVE_JUDGMENT) {
-            MESSAGE("The opposing Talonflame used Judgment!");
+            MESSAGE("The opposing Metaletemon used Judgment!");
         }
         else if (move == MOVE_HIDDEN_POWER) {
-            MESSAGE("The opposing Talonflame used Hidden Power!");
+            MESSAGE("The opposing Metaletemon used Hidden Power!");
         }
         else {
-            MESSAGE("The opposing Talonflame used Tera Blast!");
+            MESSAGE("The opposing Metaletemon used Tera Blast!");
         }
     }
 }
