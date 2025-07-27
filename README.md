@@ -29,11 +29,11 @@ Please consider [crediting all contributors](CREDITS.md) involved in the project
 If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/) has a [guide on forking and cloning the repository](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/The-Basics-of-GitHub). Then you can follow one of the following guides:
 
 ## 📥 [Installing **`Digimon Emerald`**](INSTALL.md)
-## 🏗️ [Building **`Digimon Emerald`**](INSTALL.md#Building-Digimon Emerald)
+## 🏗️ [Building **`Digimon Emerald`**](INSTALL.md#Building-pokeemerald-expansion)
 ## 🚚 [Migrating from **`pokeemerald`**](INSTALL.md#Migrating-from-pokeemerald)
-## 🚀 [Updating **`Digimon Emerald`**](INSTALL.md#Updating-Digimon Emerald)
+## 🚀 [Updating **`Digimon Emerald`**](INSTALL.md#Updating-pokeemerald-expansion)
 
-# [Documentation](https://rh-hideout.github.io/Digimon Emerald/)
+# [Documentation](https://rh-hideout.github.io/pokeemerald-expansion/)
 
 For detailed documentation, visit the [Digimon Emerald documentation page](https://rh-hideout.github.io/pokeemerald-expansion/).
 

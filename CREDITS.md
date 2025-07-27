@@ -8,7 +8,7 @@
 <!-- - **Syreldar**: testing, wrote an explanation post -->
 <!-- - **Pyredrid**: automating issue creation, code review and testing -->
 
-## Credits ✨
+## RHH Credits ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
