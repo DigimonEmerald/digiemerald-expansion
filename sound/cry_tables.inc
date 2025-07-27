@@ -1622,11 +1622,11 @@ gCryTable::
 	cry Cry_Marineangemon
 	cry Cry_Metaletemon
 .endif @ P_FAMILY_DINOMON
-.if P_FAMILY_SCATTERBUG == TRUE
-	cry Cry_Scatterbug
+.if P_FAMILY_METALSEADRAMON == TRUE
+	cry Cry_Metalseadramon
 	cry Cry_Spewpa
 	cry Cry_Vivillon
-.endif @ P_FAMILY_SCATTERBUG
+.endif @ P_FAMILY_METALSEADRAMON
 .if P_FAMILY_LITLEO == TRUE
 	cry Cry_Litleo
 	cry Cry_Pyroar
@@ -4050,11 +4050,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Marineangemon
 	cry_reverse Cry_Metaletemon
 .endif @ P_FAMILY_DINOMON
-.if P_FAMILY_SCATTERBUG == TRUE
-	cry_reverse Cry_Scatterbug
+.if P_FAMILY_METALSEADRAMON == TRUE
+	cry_reverse Cry_Metalseadramon
 	cry_reverse Cry_Spewpa
 	cry_reverse Cry_Vivillon
-.endif @ P_FAMILY_SCATTERBUG
+.endif @ P_FAMILY_METALSEADRAMON
 .if P_FAMILY_LITLEO == TRUE
 	cry_reverse Cry_Litleo
 	cry_reverse Cry_Pyroar

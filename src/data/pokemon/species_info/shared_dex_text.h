@@ -77,11 +77,11 @@ const u8 gBiosupinomonPokedexText[] = _(
     "swift movements, while slicing them with\n"
     "throwing stars made of compressed water.");
 
-const u8 gScatterbugPokedexText[] = _(
-    "When under attack from bird Pokémon,\n"
-    "it spews a poisonous black powder that\n"
-    "causes paralysis on contact. Scatterbug\n"
-    "can live in any region or climate.");
+const u8 gMetalseadramonPokedexText[] = _(
+    "The Chrome Digizoid that makes up its\n"
+    "body reflects every attack it encounters.\n"
+    "MetalSeadramon was remodeled as a Digimon\n"
+    "for interception in the sea.");
 
 const u8 gSpewpaPokedexText[] = _(
     "It lives hidden within thicket shadows.\n"

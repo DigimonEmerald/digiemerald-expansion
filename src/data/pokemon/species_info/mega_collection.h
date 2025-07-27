@@ -1145,90 +1145,93 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
 #endif //P_FAMILY_DINOMON
 
-#if P_FAMILY_SCATTERBUG
-#define SCATTERBUG_SPECIES_INFO(evolution)                                                  \
+#if P_FAMILY_METALSEADRAMON
+#define MTLSEADRAMON_SPECIES_INFO(evolution)                                                  \
     {                                                                                       \
-        .baseHP        = 38,                                                                \
-        .baseAttack    = 35,                                                                \
-        .baseDefense   = 40,                                                                \
-        .baseSpeed     = 35,                                                                \
-        .baseSpAttack  = 27,                                                                \
-        .baseSpDefense = 25,                                                                \
-        .types = MON_TYPES(TYPE_BUG),                                                       \
-        .catchRate = 255,                                                                   \
-        .expYield = 40,                                                                     \
-        .evYield_Defense = 1,                                                               \
+        .baseHP        = 120,                                                                \
+        .baseAttack    = 95,                                                                \
+        .baseDefense   = 95,                                                                \
+        .baseSpeed     = 85,                                                                \
+        .baseSpAttack  = 105,                                                                \
+        .baseSpDefense = 125,                                                                \
+        .types = MON_TYPES(TYPE_STEEL, TYPE_WATER),                                                       \
+        .attribute = TYPE_DATA,                                                            \
+        .catchRate = 55,                                                                    \
+        .expYield = 250,                                                                    \
+        .evYield_HP = 2,                                                               \
+        .evYield_SpAttack = 1,                                                               \
+        .evYield_SpDefense = 3,                                                               \
         .genderRatio = MON_GENDERLESS,                                                  \
         .eggCycles = 15,                                                                    \
         .friendship = STANDARD_FRIENDSHIP,                                                  \
         .growthRate = GROWTH_SLOW,                                                   \
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),                                         \
-        .abilities = { ABILITY_SHIELD_DUST, ABILITY_COMPOUND_EYES, ABILITY_FRIEND_GUARD },  \
-        .bodyColor = BODY_COLOR_BLACK,                                                      \
-        .speciesName = _("Scatterbug"),                                                     \
-        .cryId = CRY_SCATTERBUG,                                                            \
-        .natDexNum = NATIONAL_DEX_SCATTERBUG,                                               \
-        .categoryName = _("Scatterdust"),                                                   \
-        .height = 3,                                                                        \
-        .weight = 25,                                                                       \
-        .description = gScatterbugPokedexText,                                              \
+        .abilities = { ABILITY_FULL_METAL_BODY, ABILITY_WATER_VEIL, ABILITY_STEELWORKER },  \
+        .bodyColor = BODY_COLOR_YELLOW,                                                      \
+        .speciesName = _("MtlSeadramon"),                                                     \
+        .cryId = CRY_METALSEADRAMON,                                                            \
+        .natDexNum = NATIONAL_DEX_METALSEADRAMON,                                               \
+        .categoryName = _("Serpent"),                                                   \
+        .height = 175,                                                                        \
+        .weight = 4894,                                                                       \
+        .description = gMetalseadramonPokedexText,                                              \
         .pokemonScale = 530,                                                                \
         .pokemonOffset = 13,                                                                \
         .trainerScale = 256,                                                                \
         .trainerOffset = 0,                                                                 \
-        .frontPic = gMonFrontPic_Scatterbug,                                                \
+        .frontPic = gMonFrontPic_Metalseadramon,                                                \
         .frontPicSize = MON_COORDS_SIZE(32, 48),                                            \
         .frontPicYOffset = 13,                                                              \
-        .frontAnimFrames = sAnims_Scatterbug,                                               \
+        .frontAnimFrames = sAnims_Metalseadramon,                                               \
         .frontAnimId = ANIM_V_STRETCH,                                                      \
-        .backPic = gMonBackPic_Scatterbug,                                                  \
+        .backPic = gMonBackPic_Metalseadramon,                                                  \
         .backPicSize = MON_COORDS_SIZE(40, 56),                                             \
         .backPicYOffset = 12,                                                               \
         .backAnimId = BACK_ANIM_H_SLIDE,                                                    \
-        .palette = gMonPalette_Scatterbug,                                                  \
-        .shinyPalette = gMonShinyPalette_Scatterbug,                                        \
-        .iconSprite = gMonIcon_Scatterbug,                                                  \
+        .palette = gMonPalette_Metalseadramon,                                                  \
+        .shinyPalette = gMonShinyPalette_Metalseadramon,                                        \
+        .iconSprite = gMonIcon_Metalseadramon,                                                  \
         .iconPalIndex = 1,                                                                  \
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,                                             \
         SHADOW(1, 1, SHADOW_SIZE_S)                                                         \
-        FOOTPRINT(Scatterbug)                                                               \
+        FOOTPRINT(Metalseadramon)                                                               \
         OVERWORLD(                                                                          \
-            sPicTable_Scatterbug,                                                           \
+            sPicTable_Metalseadramon,                                                           \
             SIZE_32x32,                                                                     \
             SHADOW_SIZE_M,                                                                  \
             TRACKS_FOOT,                                                                    \
             sAnimTable_Following,                                                           \
-            gOverworldPalette_Scatterbug,                                                   \
-            gShinyOverworldPalette_Scatterbug                                               \
+            gOverworldPalette_Metalseadramon,                                                   \
+            gShinyOverworldPalette_Metalseadramon                                               \
         )                                                                                   \
         .tmIlliterate = TRUE,                                                               \
-        .levelUpLearnset = sScatterbugLevelUpLearnset,                                      \
-        .teachableLearnset = sScatterbugTeachableLearnset,                                  \
-        .eggMoveLearnset = sScatterbugEggMoveLearnset,                                      \
-        .formSpeciesIdTable = sScatterbugFormSpeciesIdTable,                                \
+        .levelUpLearnset = sMetalseadramonLevelUpLearnset,                                      \
+        .teachableLearnset = sMetalseadramonTeachableLearnset,                                  \
+        .eggMoveLearnset = sMetalseadramonEggMoveLearnset,                                      \
+        .formSpeciesIdTable = sMetalseadramonFormSpeciesIdTable,                                \
         .evolutions = EVOLUTION({EVO_LEVEL, 9, SPECIES_SPEWPA_##evolution}),                \
     }                                                                                       \
 
-    [SPECIES_SCATTERBUG_ICY_SNOW]    = SCATTERBUG_SPECIES_INFO(ICY_SNOW),
-    [SPECIES_SCATTERBUG_POLAR]       = SCATTERBUG_SPECIES_INFO(POLAR),
-    [SPECIES_SCATTERBUG_TUNDRA]      = SCATTERBUG_SPECIES_INFO(TUNDRA),
-    [SPECIES_SCATTERBUG_CONTINENTAL] = SCATTERBUG_SPECIES_INFO(CONTINENTAL),
-    [SPECIES_SCATTERBUG_GARDEN]      = SCATTERBUG_SPECIES_INFO(GARDEN),
-    [SPECIES_SCATTERBUG_ELEGANT]     = SCATTERBUG_SPECIES_INFO(ELEGANT),
-    [SPECIES_SCATTERBUG_MEADOW]      = SCATTERBUG_SPECIES_INFO(MEADOW),
-    [SPECIES_SCATTERBUG_MODERN]      = SCATTERBUG_SPECIES_INFO(MODERN),
-    [SPECIES_SCATTERBUG_MARINE]      = SCATTERBUG_SPECIES_INFO(MARINE),
-    [SPECIES_SCATTERBUG_ARCHIPELAGO] = SCATTERBUG_SPECIES_INFO(ARCHIPELAGO),
-    [SPECIES_SCATTERBUG_HIGH_PLAINS] = SCATTERBUG_SPECIES_INFO(HIGH_PLAINS),
-    [SPECIES_SCATTERBUG_SANDSTORM]   = SCATTERBUG_SPECIES_INFO(SANDSTORM),
-    [SPECIES_SCATTERBUG_RIVER]       = SCATTERBUG_SPECIES_INFO(RIVER),
-    [SPECIES_SCATTERBUG_MONSOON]     = SCATTERBUG_SPECIES_INFO(MONSOON),
-    [SPECIES_SCATTERBUG_SAVANNA]     = SCATTERBUG_SPECIES_INFO(SAVANNA),
-    [SPECIES_SCATTERBUG_SUN]         = SCATTERBUG_SPECIES_INFO(SUN),
-    [SPECIES_SCATTERBUG_OCEAN]       = SCATTERBUG_SPECIES_INFO(OCEAN),
-    [SPECIES_SCATTERBUG_JUNGLE]      = SCATTERBUG_SPECIES_INFO(JUNGLE),
-    [SPECIES_SCATTERBUG_FANCY]       = SCATTERBUG_SPECIES_INFO(FANCY),
-    [SPECIES_SCATTERBUG_POKEBALL]    = SCATTERBUG_SPECIES_INFO(POKEBALL),
+    [SPECIES_METALSEADRAMON_ICY_SNOW]    = MTLSEADRAMON_SPECIES_INFO(ICY_SNOW),
+    [SPECIES_METALSEADRAMON_POLAR]       = MTLSEADRAMON_SPECIES_INFO(POLAR),
+    [SPECIES_METALSEADRAMON_TUNDRA]      = MTLSEADRAMON_SPECIES_INFO(TUNDRA),
+    [SPECIES_METALSEADRAMON_CONTINENTAL] = MTLSEADRAMON_SPECIES_INFO(CONTINENTAL),
+    [SPECIES_METALSEADRAMON_GARDEN]      = MTLSEADRAMON_SPECIES_INFO(GARDEN),
+    [SPECIES_METALSEADRAMON_ELEGANT]     = MTLSEADRAMON_SPECIES_INFO(ELEGANT),
+    [SPECIES_METALSEADRAMON_MEADOW]      = MTLSEADRAMON_SPECIES_INFO(MEADOW),
+    [SPECIES_METALSEADRAMON_MODERN]      = MTLSEADRAMON_SPECIES_INFO(MODERN),
+    [SPECIES_METALSEADRAMON_MARINE]      = MTLSEADRAMON_SPECIES_INFO(MARINE),
+    [SPECIES_METALSEADRAMON_ARCHIPELAGO] = MTLSEADRAMON_SPECIES_INFO(ARCHIPELAGO),
+    [SPECIES_METALSEADRAMON_HIGH_PLAINS] = MTLSEADRAMON_SPECIES_INFO(HIGH_PLAINS),
+    [SPECIES_METALSEADRAMON_SANDSTORM]   = MTLSEADRAMON_SPECIES_INFO(SANDSTORM),
+    [SPECIES_METALSEADRAMON_RIVER]       = MTLSEADRAMON_SPECIES_INFO(RIVER),
+    [SPECIES_METALSEADRAMON_MONSOON]     = MTLSEADRAMON_SPECIES_INFO(MONSOON),
+    [SPECIES_METALSEADRAMON_SAVANNA]     = MTLSEADRAMON_SPECIES_INFO(SAVANNA),
+    [SPECIES_METALSEADRAMON_SUN]         = MTLSEADRAMON_SPECIES_INFO(SUN),
+    [SPECIES_METALSEADRAMON_OCEAN]       = MTLSEADRAMON_SPECIES_INFO(OCEAN),
+    [SPECIES_METALSEADRAMON_JUNGLE]      = MTLSEADRAMON_SPECIES_INFO(JUNGLE),
+    [SPECIES_METALSEADRAMON_FANCY]       = MTLSEADRAMON_SPECIES_INFO(FANCY),
+    [SPECIES_METALSEADRAMON_POKEBALL]    = MTLSEADRAMON_SPECIES_INFO(POKEBALL),
 
 #define SPEWPA_SPECIES_INFO(evolution)                                          \
     {                                                                           \
@@ -1553,7 +1556,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             "This form is from a special land.\n"
             "It scatters toxic color scales in battle."),
     },
-#endif //P_FAMILY_SCATTERBUG
+#endif //P_FAMILY_METALSEADRAMON
 
 #if P_FAMILY_LITLEO
     [SPECIES_LITLEO] =

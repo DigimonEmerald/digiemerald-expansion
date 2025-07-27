@@ -8245,8 +8245,8 @@ static const union AnimCmd sAnim_Metaletemon_1[] =
 };
 #endif //P_FAMILY_DINOMON
 
-#if P_FAMILY_SCATTERBUG
-static const union AnimCmd sAnim_Scatterbug_1[] =
+#if P_FAMILY_METALSEADRAMON
+static const union AnimCmd sAnim_Metalseadramon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 10),
@@ -8277,7 +8277,7 @@ static const union AnimCmd sAnim_Vivillon_1[] =
     ANIMCMD_FRAME(0, 50),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SCATTERBUG
+#endif //P_FAMILY_METALSEADRAMON
 
 #if P_FAMILY_LITLEO
 static const union AnimCmd sAnim_Litleo_1[] =
@@ -11991,11 +11991,11 @@ SINGLE_ANIMATION(Dinomon);
 SINGLE_ANIMATION(Marineangemon);
 SINGLE_ANIMATION(Metaletemon);
 #endif //P_FAMILY_DINOMON
-#if P_FAMILY_SCATTERBUG
-SINGLE_ANIMATION(Scatterbug);
+#if P_FAMILY_METALSEADRAMON
+SINGLE_ANIMATION(Metalseadramon);
 SINGLE_ANIMATION(Spewpa);
 SINGLE_ANIMATION(Vivillon);
-#endif //P_FAMILY_SCATTERBUG
+#endif //P_FAMILY_METALSEADRAMON
 #if P_FAMILY_LITLEO
 SINGLE_ANIMATION(Litleo);
 SINGLE_ANIMATION(Pyroar);

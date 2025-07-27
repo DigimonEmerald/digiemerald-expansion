@@ -709,8 +709,8 @@
 #define P_FAMILY_ROSEMON                TRUE
 #undef P_FAMILY_DINOMON
 #define P_FAMILY_DINOMON              TRUE
-#undef P_FAMILY_SCATTERBUG
-#define P_FAMILY_SCATTERBUG              TRUE
+#undef P_FAMILY_METALSEADRAMON
+#define P_FAMILY_METALSEADRAMON              TRUE
 #undef P_FAMILY_LITLEO
 #define P_FAMILY_LITLEO                  TRUE
 #undef P_FAMILY_FLABEBE

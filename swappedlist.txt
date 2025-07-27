@@ -479,5 +479,6 @@ Dinorexmon - Diggersby
 Dinomon - Fletchling
 MarineAngemon - Fletchinder
 MetalEtemon - Talonflame
+MetalSeadramon - Scatterbug
 
 SPECIES NAME LENGTH MAX = 13

@@ -4616,9 +4616,9 @@ static const struct SpriteFrameImage sPicTable_Metaletemon[] = {
 };
 #endif //P_FAMILY_DINOMON
 
-#if P_FAMILY_SCATTERBUG
-static const struct SpriteFrameImage sPicTable_Scatterbug[] = {
-    overworld_ascending_frames(gObjectEventPic_Scatterbug, 4, 4),
+#if P_FAMILY_METALSEADRAMON
+static const struct SpriteFrameImage sPicTable_Metalseadramon[] = {
+    overworld_ascending_frames(gObjectEventPic_Metalseadramon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Spewpa[] = {
     overworld_ascending_frames(gObjectEventPic_Spewpa, 4, 4),
@@ -4683,7 +4683,7 @@ static const struct SpriteFrameImage sPicTable_VivillonFancy[] = {
 static const struct SpriteFrameImage sPicTable_VivillonPokeBall[] = {
     overworld_ascending_frames(gObjectEventPic_VivillonPokeBall, 4, 4),
 };
-#endif //P_FAMILY_SCATTERBUG
+#endif //P_FAMILY_METALSEADRAMON
 
 #if P_FAMILY_LITLEO
 static const struct SpriteFrameImage sPicTable_Litleo[] = {

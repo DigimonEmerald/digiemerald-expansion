@@ -26760,8 +26760,8 @@ static const u16 sMetaletemonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DINOMON
 
-#if P_FAMILY_SCATTERBUG
-static const u16 sScatterbugTeachableLearnset[] = {
+#if P_FAMILY_METALSEADRAMON
+static const u16 sMetalseadramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
@@ -26798,7 +26798,7 @@ static const u16 sVivillonTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SCATTERBUG
+#endif //P_FAMILY_METALSEADRAMON
 
 #if P_FAMILY_LITLEO
 static const u16 sLitleoTeachableLearnset[] = {

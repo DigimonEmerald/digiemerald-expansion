@@ -173,8 +173,8 @@ static const union AnimCmd *const sAnims_Biosupinomon[] =
 };
 #endif //P_FAMILY_BIOSUPINOMON
 
-#if P_FAMILY_SCATTERBUG
-static const union AnimCmd *const sAnims_Scatterbug[] =
+#if P_FAMILY_METALSEADRAMON
+static const union AnimCmd *const sAnims_Metalseadramon[] =
 {
     sAnim_GeneralFrame0,
     (const union AnimCmd[]) {
@@ -214,7 +214,7 @@ static const union AnimCmd *const sAnims_Vivillon[] =
         ANIMCMD_END,
     },
 };
-#endif //P_FAMILY_SCATTERBUG
+#endif //P_FAMILY_METALSEADRAMON
 
 #if P_FAMILY_FLABEBE
 static const union AnimCmd *const sAnims_Flabebe[] =

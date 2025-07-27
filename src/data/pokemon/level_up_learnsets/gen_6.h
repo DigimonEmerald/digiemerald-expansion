@@ -15485,8 +15485,8 @@ static const struct LevelUpMove sMetaletemonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_DINOMON
 
-#if P_FAMILY_SCATTERBUG
-static const struct LevelUpMove sScatterbugLevelUpLearnset[] = {
+#if P_FAMILY_METALSEADRAMON
+static const struct LevelUpMove sMetalseadramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_STRING_SHOT),
     LEVEL_UP_MOVE( 6, MOVE_STUN_SPORE),
@@ -15519,7 +15519,7 @@ static const struct LevelUpMove sVivillonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(55, MOVE_POWDER),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SCATTERBUG
+#endif //P_FAMILY_METALSEADRAMON
 
 #if P_FAMILY_LITLEO
 static const struct LevelUpMove sLitleoLevelUpLearnset[] = {

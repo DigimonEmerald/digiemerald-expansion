@@ -392,7 +392,7 @@
 #define P_FAMILY_CRESGARURUMON                 P_GEN_6_POKEMON
 #define P_FAMILY_ROSEMON                P_GEN_6_POKEMON
 #define P_FAMILY_DINOMON              P_GEN_6_POKEMON
-#define P_FAMILY_SCATTERBUG              P_GEN_6_POKEMON
+#define P_FAMILY_METALSEADRAMON              P_GEN_6_POKEMON
 #define P_FAMILY_LITLEO                  P_GEN_6_POKEMON
 #define P_FAMILY_FLABEBE                 P_GEN_6_POKEMON
 #define P_FAMILY_SKIDDO                  P_GEN_6_POKEMON

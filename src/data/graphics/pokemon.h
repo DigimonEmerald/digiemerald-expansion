@@ -19295,20 +19295,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_DINOMON
 
-#if P_FAMILY_SCATTERBUG
-    const u32 gMonFrontPic_Scatterbug[] = INCBIN_U32("graphics/pokemon/scatterbug/anim_front.4bpp.lz");
-    const u16 gMonPalette_Scatterbug[] = INCBIN_U16("graphics/pokemon/scatterbug/normal.gbapal");
-    const u32 gMonBackPic_Scatterbug[] = INCBIN_U32("graphics/pokemon/scatterbug/back.4bpp.lz");
-    const u16 gMonShinyPalette_Scatterbug[] = INCBIN_U16("graphics/pokemon/scatterbug/shiny.gbapal");
-    const u8 gMonIcon_Scatterbug[] = INCBIN_U8("graphics/pokemon/scatterbug/icon.4bpp");
+#if P_FAMILY_METALSEADRAMON
+    const u32 gMonFrontPic_Metalseadramon[] = INCBIN_U32("graphics/pokemon/metalseadramon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Metalseadramon[] = INCBIN_U16("graphics/pokemon/metalseadramon/normal.gbapal");
+    const u32 gMonBackPic_Metalseadramon[] = INCBIN_U32("graphics/pokemon/metalseadramon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Metalseadramon[] = INCBIN_U16("graphics/pokemon/metalseadramon/shiny.gbapal");
+    const u8 gMonIcon_Metalseadramon[] = INCBIN_U8("graphics/pokemon/metalseadramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Scatterbug[] = INCBIN_U8("graphics/pokemon/scatterbug/footprint.1bpp");
+    const u8 gMonFootprint_Metalseadramon[] = INCBIN_U8("graphics/pokemon/metalseadramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Scatterbug[] = INCBIN_COMP("graphics/pokemon/scatterbug/overworld.4bpp");
+    const u32 gObjectEventPic_Metalseadramon[] = INCBIN_COMP("graphics/pokemon/metalseadramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Scatterbug[] = INCBIN_U16("graphics/pokemon/scatterbug/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Scatterbug[] = INCBIN_U16("graphics/pokemon/scatterbug/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Metalseadramon[] = INCBIN_U16("graphics/pokemon/metalseadramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Metalseadramon[] = INCBIN_U16("graphics/pokemon/metalseadramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -19515,7 +19515,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_VivillonPokeBall[] = INCBIN_U32("graphics/pokemon/vivillon/poke_ball/back.4bpp.lz");
     const u16 gMonShinyPalette_VivillonPokeBall[] = INCBIN_U16("graphics/pokemon/vivillon/poke_ball/shiny.gbapal");
     const u8 gMonIcon_VivillonPokeBall[] = INCBIN_U8("graphics/pokemon/vivillon/poke_ball/icon.4bpp");
-#endif //P_FAMILY_SCATTERBUG
+#endif //P_FAMILY_METALSEADRAMON
 
 #if P_FAMILY_LITLEO
     const u32 gMonFrontPic_Litleo[] = INCBIN_U32("graphics/pokemon/litleo/anim_front.4bpp.lz");

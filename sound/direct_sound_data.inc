@@ -4225,10 +4225,10 @@ Cry_Metaletemon::
 	.incbin "sound/direct_sound_samples/cries/metaletemon.bin"
 .endif @ P_FAMILY_DINOMON
 
-.if P_FAMILY_SCATTERBUG == TRUE
+.if P_FAMILY_METALSEADRAMON == TRUE
 	.align 2
-Cry_Scatterbug::
-	.incbin "sound/direct_sound_samples/cries/scatterbug.bin"
+Cry_Metalseadramon::
+	.incbin "sound/direct_sound_samples/cries/metalseadramon.bin"
 
 	.align 2
 Cry_Spewpa::
@@ -4237,7 +4237,7 @@ Cry_Spewpa::
 	.align 2
 Cry_Vivillon::
 	.incbin "sound/direct_sound_samples/cries/vivillon.bin"
-.endif @ P_FAMILY_SCATTERBUG
+.endif @ P_FAMILY_METALSEADRAMON
 
 .if P_FAMILY_LITLEO == TRUE
 	.align 2
