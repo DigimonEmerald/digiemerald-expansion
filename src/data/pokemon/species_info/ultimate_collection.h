@@ -2593,8 +2593,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             gShinyOverworldPalette_Marinedevimon
         )
         .levelUpLearnset = sMarinedevimonLevelUpLearnset,
-        .teachableLearnset = sMarineDevimonTeachableLearnset,
-        .eggMoveLearnset = sMarineDevimonEggMoveLearnset,
+        .teachableLearnset = sMarinedevimonTeachableLearnset,
+        .eggMoveLearnset = sMarinedevimonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_MEGASEADRAMON, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
     },
 
