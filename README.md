@@ -42,6 +42,4 @@ If you are looking to [report a bug](CONTRIBUTING.md#Bug-Report), [open a pull r
 
 # [Community](https://discord.gg/QQh3EARTUK)
 
-[![](https://dcbadge.limes.pink/api/server/6CzjAG6GZk)](https://discord.gg/6CzjAG6GZk)
-
 To discuss more about Digimon Emerald, please join us on the [Lunas Shed Discord server](https://discord.gg/QQh3EARTUK)

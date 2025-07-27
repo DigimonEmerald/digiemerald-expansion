@@ -2672,43 +2672,46 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_MARINEDEVIMON
 
-#if P_FAMILY_DRILBUR
-    [SPECIES_DRILBUR] =
+#if P_FAMILY_MEGADRAMON
+    [SPECIES_MEGADRAMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 85,
-        .baseDefense   = 40,
-        .baseSpeed     = 68,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_GROUND),
+        .baseHP        = 95,
+        .baseAttack    = 80,
+        .baseDefense   = 80,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_STEEL),
+        .attribute = TYPE_VIRUS,
         .catchRate = 95,
-        .expYield = 66,
-        .evYield_Attack = 1,
+        .expYield = 200,
+        .evYield_HP = 1,
+        .evYield_Speed = 1,
+        .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SAND_RUSH, ABILITY_SAND_FORCE, ABILITY_MOLD_BREAKER },
-        .bodyColor = BODY_COLOR_GRAY,
+        .abilities = { ABILITY_SNIPER, ABILITY_NONE, ABILITY_MEGA_LAUNCHER },
+        .bodyColor = BODY_COLOR_RED,
         .noFlip = TRUE,
-        .speciesName = _("Drilbur"),
-        .cryId = CRY_DRILBUR,
-        .natDexNum = NATIONAL_DEX_DRILBUR,
-        .categoryName = _("Mole"),
-        .height = 3,
-        .weight = 85,
+        .speciesName = _("Megadramon"),
+        .cryId = CRY_MEGADRAMON,
+        .natDexNum = NATIONAL_DEX_MEGADRAMON,
+        .categoryName = _("Wicked"),
+        .height = 91,
+        .weight = 3926,
         .description = COMPOUND_STRING(
-            "It can dig through the ground at a\n"
-            "speed of 30 mph by spinning its body.\n"
-            "It could give a car running aboveground\n"
-            "a good race."),
+            "As an artificially remodelled cyborg\n"
+            "Digimon, it was programmed to destroy\n"
+            "everything it encounters. It is\n"
+            "considered the epitome of a virus."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Drilbur,
+        .frontPic = gMonFrontPic_Megadramon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 10,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2719,29 +2722,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_SWING_CONCAVE_FAST_SHORT,
-        .backPic = gMonBackPic_Drilbur,
+        .backPic = gMonBackPic_Megadramon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Drilbur,
-        .shinyPalette = gMonShinyPalette_Drilbur,
-        .iconSprite = gMonIcon_Drilbur,
+        .palette = gMonPalette_Megadramon,
+        .shinyPalette = gMonShinyPalette_Megadramon,
+        .iconSprite = gMonIcon_Megadramon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 4, SHADOW_SIZE_S)
-        FOOTPRINT(Drilbur)
+        FOOTPRINT(Megadramon)
         OVERWORLD(
-            sPicTable_Drilbur,
+            sPicTable_Megadramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Drilbur,
-            gShinyOverworldPalette_Drilbur
+            gOverworldPalette_Megadramon,
+            gShinyOverworldPalette_Megadramon
         )
-        .levelUpLearnset = sDrilburLevelUpLearnset,
-        .teachableLearnset = sDrilburTeachableLearnset,
-        .eggMoveLearnset = sDrilburEggMoveLearnset,
+        .levelUpLearnset = sMegadramonLevelUpLearnset,
+        .teachableLearnset = sMegadramonTeachableLearnset,
+        .eggMoveLearnset = sMegadramonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_EXCADRILL}),
     },
 
@@ -2813,7 +2816,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sExcadrillLevelUpLearnset,
         .teachableLearnset = sExcadrillTeachableLearnset,
     },
-#endif //P_FAMILY_DRILBUR
+#endif //P_FAMILY_MEGADRAMON
 
 #if P_FAMILY_AUDINO
     [SPECIES_AUDINO] =

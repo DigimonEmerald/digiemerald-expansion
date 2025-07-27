@@ -41,8 +41,8 @@ SINGLE_BATTLE_TEST("Normalize affects status moves")
     PARAMETRIZE { ability = ABILITY_NORMALIZE; }
     GIVEN {
         ASSUME(GetMoveType(MOVE_THUNDER_WAVE) == TYPE_ELECTRIC);
-        ASSUME(gSpeciesInfo[SPECIES_DRILBUR].types[0] == TYPE_GROUND);
-        PLAYER(SPECIES_DRILBUR);
+        ASSUME(gSpeciesInfo[SPECIES_MEGADRAMON].types[0] == TYPE_GROUND);
+        PLAYER(SPECIES_MEGADRAMON);
         OPPONENT(SPECIES_BIRDRAMON) { Ability(ability); Moves(MOVE_THUNDER_WAVE);}
     } WHEN {
         TURN { MOVE(opponent, MOVE_THUNDER_WAVE); }

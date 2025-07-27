@@ -6627,8 +6627,8 @@ static const union AnimCmd sAnim_Megaseadramon_1[] =
 };
 #endif //P_FAMILY_MARINEDEVIMON
 
-#if P_FAMILY_DRILBUR
-static const union AnimCmd sAnim_Drilbur_1[] =
+#if P_FAMILY_MEGADRAMON
+static const union AnimCmd sAnim_Megadramon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -6646,7 +6646,7 @@ static const union AnimCmd sAnim_Excadrill_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_DRILBUR
+#endif //P_FAMILY_MEGADRAMON
 
 #if P_FAMILY_AUDINO
 static const union AnimCmd sAnim_Audino_1[] =
@@ -11667,10 +11667,10 @@ SINGLE_ANIMATION(Arukenimon);
 SINGLE_ANIMATION(Marinedevimon);
 SINGLE_ANIMATION(Megaseadramon);
 #endif //P_FAMILY_MARINEDEVIMON
-#if P_FAMILY_DRILBUR
-SINGLE_ANIMATION(Drilbur);
+#if P_FAMILY_MEGADRAMON
+SINGLE_ANIMATION(Megadramon);
 SINGLE_ANIMATION(Excadrill);
-#endif //P_FAMILY_DRILBUR
+#endif //P_FAMILY_MEGADRAMON
 #if P_FAMILY_AUDINO
 SINGLE_ANIMATION(Audino);
 #if P_MEGA_EVOLUTIONS

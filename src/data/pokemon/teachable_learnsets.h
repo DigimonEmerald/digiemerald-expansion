@@ -22098,8 +22098,8 @@ static const u16 sMegaseadramonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_MARINEDEVIMON
 
-#if P_FAMILY_DRILBUR
-static const u16 sDrilburTeachableLearnset[] = {
+#if P_FAMILY_MEGADRAMON
+static const u16 sMegadramonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -22158,7 +22158,7 @@ static const u16 sExcadrillTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DRILBUR
+#endif //P_FAMILY_MEGADRAMON
 
 #if P_FAMILY_AUDINO
 static const u16 sAudinoTeachableLearnset[] = {

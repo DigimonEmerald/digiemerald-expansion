@@ -3492,15 +3492,15 @@ Cry_Megaseadramon::
 	.incbin "sound/direct_sound_samples/cries/megaseadramon.bin"
 .endif @ P_FAMILY_MARINEDEVIMON
 
-.if P_FAMILY_DRILBUR == TRUE
+.if P_FAMILY_MEGADRAMON == TRUE
 	.align 2
-Cry_Drilbur::
-	.incbin "sound/direct_sound_samples/cries/drilbur.bin"
+Cry_Megadramon::
+	.incbin "sound/direct_sound_samples/cries/megadramon.bin"
 
 	.align 2
 Cry_Excadrill::
 	.incbin "sound/direct_sound_samples/cries/excadrill.bin"
-.endif @ P_FAMILY_DRILBUR
+.endif @ P_FAMILY_MEGADRAMON
 
 .if P_FAMILY_AUDINO == TRUE
 	.align 2

@@ -1324,10 +1324,10 @@ gCryTable::
 	cry Cry_Marinedevimon
 	cry Cry_Megaseadramon
 .endif @ P_FAMILY_MARINEDEVIMON
-.if P_FAMILY_DRILBUR == TRUE
-	cry Cry_Drilbur
+.if P_FAMILY_MEGADRAMON == TRUE
+	cry Cry_Megadramon
 	cry Cry_Excadrill
-.endif @ P_FAMILY_DRILBUR
+.endif @ P_FAMILY_MEGADRAMON
 .if P_FAMILY_AUDINO == TRUE
 	cry Cry_Audino
 .if P_MEGA_EVOLUTIONS == TRUE
@@ -3752,10 +3752,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Marinedevimon
 	cry_reverse Cry_Megaseadramon
 .endif @ P_FAMILY_MARINEDEVIMON
-.if P_FAMILY_DRILBUR == TRUE
-	cry_reverse Cry_Drilbur
+.if P_FAMILY_MEGADRAMON == TRUE
+	cry_reverse Cry_Megadramon
 	cry_reverse Cry_Excadrill
-.endif @ P_FAMILY_DRILBUR
+.endif @ P_FAMILY_MEGADRAMON
 .if P_FAMILY_AUDINO == TRUE
 	cry_reverse Cry_Audino
 .if P_MEGA_EVOLUTIONS == TRUE

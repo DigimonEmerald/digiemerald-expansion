@@ -16503,20 +16503,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MARINEDEVIMON
 
-#if P_FAMILY_DRILBUR
-    const u32 gMonFrontPic_Drilbur[] = INCBIN_U32("graphics/pokemon/drilbur/anim_front.4bpp.lz");
-    const u16 gMonPalette_Drilbur[] = INCBIN_U16("graphics/pokemon/drilbur/normal.gbapal");
-    const u32 gMonBackPic_Drilbur[] = INCBIN_U32("graphics/pokemon/drilbur/back.4bpp.lz");
-    const u16 gMonShinyPalette_Drilbur[] = INCBIN_U16("graphics/pokemon/drilbur/shiny.gbapal");
-    const u8 gMonIcon_Drilbur[] = INCBIN_U8("graphics/pokemon/drilbur/icon.4bpp");
+#if P_FAMILY_MEGADRAMON
+    const u32 gMonFrontPic_Megadramon[] = INCBIN_U32("graphics/pokemon/megadramon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Megadramon[] = INCBIN_U16("graphics/pokemon/megadramon/normal.gbapal");
+    const u32 gMonBackPic_Megadramon[] = INCBIN_U32("graphics/pokemon/megadramon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Megadramon[] = INCBIN_U16("graphics/pokemon/megadramon/shiny.gbapal");
+    const u8 gMonIcon_Megadramon[] = INCBIN_U8("graphics/pokemon/megadramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Drilbur[] = INCBIN_U8("graphics/pokemon/drilbur/footprint.1bpp");
+    const u8 gMonFootprint_Megadramon[] = INCBIN_U8("graphics/pokemon/megadramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Drilbur[] = INCBIN_COMP("graphics/pokemon/drilbur/overworld.4bpp");
+    const u32 gObjectEventPic_Megadramon[] = INCBIN_COMP("graphics/pokemon/megadramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Drilbur[] = INCBIN_U16("graphics/pokemon/drilbur/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Drilbur[] = INCBIN_U16("graphics/pokemon/drilbur/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Megadramon[] = INCBIN_U16("graphics/pokemon/megadramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Megadramon[] = INCBIN_U16("graphics/pokemon/megadramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16535,7 +16535,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Excadrill[] = INCBIN_U16("graphics/pokemon/excadrill/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_DRILBUR
+#endif //P_FAMILY_MEGADRAMON
 
 #if P_FAMILY_AUDINO
     const u32 gMonFrontPic_Audino[] = INCBIN_U32("graphics/pokemon/audino/anim_front.4bpp.lz");

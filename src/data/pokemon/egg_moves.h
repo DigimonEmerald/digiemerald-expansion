@@ -4138,8 +4138,8 @@ static const u16 sMarinedevimonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_MARINEDEVIMON
 
-#if P_FAMILY_DRILBUR
-static const u16 sDrilburEggMoveLearnset[] = {
+#if P_FAMILY_MEGADRAMON
+static const u16 sMegadramonEggMoveLearnset[] = {
     MOVE_IRON_DEFENSE,
     MOVE_RAPID_SPIN,
     MOVE_EARTH_POWER,
@@ -4150,7 +4150,7 @@ static const u16 sDrilburEggMoveLearnset[] = {
     MOVE_ROCK_CLIMB,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DRILBUR
+#endif //P_FAMILY_MEGADRAMON
 
 #if P_FAMILY_AUDINO
 static const u16 sAudinoEggMoveLearnset[] = {
