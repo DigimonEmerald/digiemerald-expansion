@@ -4,20 +4,20 @@
 
 <!-- If you want to re-record or change these gifs, here are some notes that I used: https://files.catbox.moe/05001g.md -->
 
-**`Digimon Emerald`** is a GBA ROM hack base that equips developers with a comprehensive toolkit for creating Pokémon Emerald ROM hacks with Digimon. **`Digimon Emerald`** is built on top of [pret's `pokeemerald`](https://github.com/pret/pokeemerald) decompilation project and [RH Hideout's 'pokeemerald-expansion`](https://github.com/rh-hideout/pokeemerald-expansion). **It is not a playable game on its own.** 
+**`Digimon Emerald`** is a GBA ROM hack base that equips developers with a comprehensive toolkit for creating Pokémon Emerald ROM hacks with Digimon. **`Digimon Emerald`** is built on top of [pret's `pokeemerald`](https://github.com/pret/pokeemerald) decompilation project and [RH Hideout's `pokeemerald-expansion`](https://github.com/rh-hideout/pokeemerald-expansion). **It is not a playable game on its own.** 
 
 # [Features](FEATURES.md)
 
-**`Digimon Emerald`** offers hundreds of features from various [core series Pokémon games](https://bulbapedia.bulbagarden.net/wiki/Core_series), with a Digimon twist that keeping them familiar with both Digimon and Pokemon fans alike. A full list of those featues can be found in [`FEATURES.md`](FEATURES.md).
+**`Digimon Emerald`** offers hundreds of features from various [core series Pokémon games](https://bulbapedia.bulbagarden.net/wiki/Core_series), with a Digimon twist that keeps them familiar with both Digimon and Pokemon fans alike. A full list of those featues can be found in [`FEATURES.md`](FEATURES.md).
 
 # [Credits](CREDITS.md)
 
- [![](https://img.shields.io/github/all-contributors/rh-hideout/Digimon Emerald/upcoming)](CREDITS.md)
+ [![](https://img.shields.io/github/all-contributors/rh-hideout/pokeemerald-expansion/upcoming)](CREDITS.md)
 
 If you use **`Digimon Emerald`**, please credit us alongside **RHH (Rom Hacking Hideout)** and **Pret**. Optionally, include the version number for clarity.
 
 ```
-Based off RHH's Digimon Emerald 1.12.1 https://github.com/rh-hideout/Digimon Emerald/
+Based off RHH's Digimon Emerald 1.12.1 https://github.com/rh-hideout/pokeemerald-expansion/
 ```
 
 Please consider [crediting all contributors](CREDITS.md) involved in the project!
@@ -35,13 +35,13 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 
 # [Documentation](https://rh-hideout.github.io/Digimon Emerald/)
 
-For detailed documentation, visit the [Digimon Emerald documentation page](https://rh-hideout.github.io/Digimon Emerald/).
+For detailed documentation, visit the [Digimon Emerald documentation page](https://rh-hideout.github.io/pokeemerald-expansion/).
 
 # [Contributions](CONTRIBUTING.md)
 If you are looking to [report a bug](CONTRIBUTING.md#Bug-Report), [open a pull request](CONTRIBUTING.md#Pull-Requests), or [request a feature](CONTRIBUTING.md#Feature-Request), our [`CONTRIBUTING.md`](CONTRIBUTING.md) has guides for each.
 
-# [Community](https://discord.gg/6CzjAG6GZk)
+# [Community](https://discord.gg/QQh3EARTUK)
 
 [![](https://dcbadge.limes.pink/api/server/6CzjAG6GZk)](https://discord.gg/6CzjAG6GZk)
 
-Our community uses the [Rom Hacking Hideout (RHH) Discord server](https://discord.gg/6CzjAG6GZk) to communicate and organize. Most of our discussions take place there, and we welcome anybody to join us!
+To discuss more about Digimon Emerald, please join us on the [Lunas Shed Discord server](https://discord.gg/QQh3EARTUK)
