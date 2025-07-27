@@ -3498,8 +3498,8 @@ Cry_Megadramon::
 	.incbin "sound/direct_sound_samples/cries/megadramon.bin"
 
 	.align 2
-Cry_Excadrill::
-	.incbin "sound/direct_sound_samples/cries/excadrill.bin"
+Cry_Metaltyrannomon::
+	.incbin "sound/direct_sound_samples/cries/metaltyrannomon.bin"
 .endif @ P_FAMILY_MEGADRAMON
 
 .if P_FAMILY_AUDINO == TRUE

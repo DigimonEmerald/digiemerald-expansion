@@ -2745,45 +2745,48 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sMegadramonLevelUpLearnset,
         .teachableLearnset = sMegadramonTeachableLearnset,
         .eggMoveLearnset = sMegadramonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_EXCADRILL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_METALTYRANNOMON}),
     },
 
-    [SPECIES_EXCADRILL] =
+    [SPECIES_METALTYRANNOMON] =
     {
-        .baseHP        = 110,
-        .baseAttack    = 135,
-        .baseDefense   = 60,
-        .baseSpeed     = 88,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_GROUND, TYPE_STEEL),
-        .catchRate = 60,
-        .expYield = 178,
-        .evYield_Attack = 2,
+        .baseHP        = 100,
+        .baseAttack    = 100,
+        .baseDefense   = 110,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_STEEL),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_HP = 1,
+        .evYield_Attack = 1,
+        .evYield_Defense = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SAND_RUSH, ABILITY_SAND_FORCE, ABILITY_MOLD_BREAKER },
+        .abilities = { ABILITY_HEATPROOF, ABILITY_NONE, ABILITY_STRONG_JAW },
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = TRUE,
-        .speciesName = _("Excadrill"),
-        .cryId = CRY_EXCADRILL,
-        .natDexNum = NATIONAL_DEX_EXCADRILL,
-        .categoryName = _("Subterrene"),
-        .height = 7,
-        .weight = 404,
+        .speciesName = _("MtlTyranomon"),
+        .cryId = CRY_METALTYRANNOMON,
+        .natDexNum = NATIONAL_DEX_METALTYRANNOMON,
+        .categoryName = _("Cyborg"),
+        .height = 40,
+        .weight = 1823,
         .description = COMPOUND_STRING(
-            "More than 300 feet below the surface,\n"
-            "they build mazelike nests. Their activity\n"
-            "can be destructive to subway tunnels,\n"
-            "but it can also help with construction."),
+            "MetalTyrannomon was made to be the ground\n"
+            "counterpart to Megadramon. Its reinforced\n"
+            "body lets it deflect attacks and its\n"
+            "jaws possesses an intense strength."),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Excadrill,
+        .frontPic = gMonFrontPic_Metaltyrannomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 5,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2793,28 +2796,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Excadrill,
+        .backPic = gMonBackPic_Metaltyrannomon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Excadrill,
-        .shinyPalette = gMonShinyPalette_Excadrill,
-        .iconSprite = gMonIcon_Excadrill,
+        .palette = gMonPalette_Metaltyrannomon,
+        .shinyPalette = gMonShinyPalette_Metaltyrannomon,
+        .iconSprite = gMonIcon_Metaltyrannomon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(3, 8, SHADOW_SIZE_L)
-        FOOTPRINT(Excadrill)
+        FOOTPRINT(Metaltyrannomon)
         OVERWORLD(
-            sPicTable_Excadrill,
+            sPicTable_Metaltyrannomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Excadrill,
-            gShinyOverworldPalette_Excadrill
+            gOverworldPalette_Metaltyrannomon,
+            gShinyOverworldPalette_Metaltyrannomon
         )
-        .levelUpLearnset = sExcadrillLevelUpLearnset,
-        .teachableLearnset = sExcadrillTeachableLearnset,
+        .levelUpLearnset = sMetaltyrannomonLevelUpLearnset,
+        .teachableLearnset = sMetaltyrannomonTeachableLearnset,
     },
 #endif //P_FAMILY_MEGADRAMON
 

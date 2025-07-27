@@ -22128,7 +22128,7 @@ static const u16 sMegadramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sExcadrillTeachableLearnset[] = {
+static const u16 sMetaltyrannomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,

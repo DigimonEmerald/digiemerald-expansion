@@ -461,6 +461,7 @@ Arukenimon - Gigalith
 MarineDevimon - Woobat
 MegaSeadramon - Swoobat
 Megadramon - Drilbur
+MetalTyrannomon - Excadrill
 
 Mega List
 

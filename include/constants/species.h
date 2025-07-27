@@ -547,7 +547,7 @@
 #define SPECIES_MARINEDEVIMON                                  527
 #define SPECIES_MEGASEADRAMON                                 528
 #define SPECIES_MEGADRAMON                                 529
-#define SPECIES_EXCADRILL                               530
+#define SPECIES_METALTYRANNOMON                               530
 #define SPECIES_AUDINO                                  531
 #define SPECIES_TIMBURR                                 532
 #define SPECIES_GURDURR                                 533

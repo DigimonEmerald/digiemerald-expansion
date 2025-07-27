@@ -16520,19 +16520,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Excadrill[] = INCBIN_U32("graphics/pokemon/excadrill/anim_front.4bpp.lz");
-    const u16 gMonPalette_Excadrill[] = INCBIN_U16("graphics/pokemon/excadrill/normal.gbapal");
-    const u32 gMonBackPic_Excadrill[] = INCBIN_U32("graphics/pokemon/excadrill/back.4bpp.lz");
-    const u16 gMonShinyPalette_Excadrill[] = INCBIN_U16("graphics/pokemon/excadrill/shiny.gbapal");
-    const u8 gMonIcon_Excadrill[] = INCBIN_U8("graphics/pokemon/excadrill/icon.4bpp");
+    const u32 gMonFrontPic_Metaltyrannomon[] = INCBIN_U32("graphics/pokemon/metaltyrannomon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Metaltyrannomon[] = INCBIN_U16("graphics/pokemon/metaltyrannomon/normal.gbapal");
+    const u32 gMonBackPic_Metaltyrannomon[] = INCBIN_U32("graphics/pokemon/metaltyrannomon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Metaltyrannomon[] = INCBIN_U16("graphics/pokemon/metaltyrannomon/shiny.gbapal");
+    const u8 gMonIcon_Metaltyrannomon[] = INCBIN_U8("graphics/pokemon/metaltyrannomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Excadrill[] = INCBIN_U8("graphics/pokemon/excadrill/footprint.1bpp");
+    const u8 gMonFootprint_Metaltyrannomon[] = INCBIN_U8("graphics/pokemon/metaltyrannomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Excadrill[] = INCBIN_COMP("graphics/pokemon/excadrill/overworld.4bpp");
+    const u32 gObjectEventPic_Metaltyrannomon[] = INCBIN_COMP("graphics/pokemon/metaltyrannomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Excadrill[] = INCBIN_U16("graphics/pokemon/excadrill/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Excadrill[] = INCBIN_U16("graphics/pokemon/excadrill/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Metaltyrannomon[] = INCBIN_U16("graphics/pokemon/metaltyrannomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Metaltyrannomon[] = INCBIN_U16("graphics/pokemon/metaltyrannomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MEGADRAMON

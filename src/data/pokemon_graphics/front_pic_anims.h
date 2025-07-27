@@ -6638,7 +6638,7 @@ static const union AnimCmd sAnim_Megadramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Excadrill_1[] =
+static const union AnimCmd sAnim_Metaltyrannomon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 15),
@@ -11669,7 +11669,7 @@ SINGLE_ANIMATION(Megaseadramon);
 #endif //P_FAMILY_MARINEDEVIMON
 #if P_FAMILY_MEGADRAMON
 SINGLE_ANIMATION(Megadramon);
-SINGLE_ANIMATION(Excadrill);
+SINGLE_ANIMATION(Metaltyrannomon);
 #endif //P_FAMILY_MEGADRAMON
 #if P_FAMILY_AUDINO
 SINGLE_ANIMATION(Audino);
