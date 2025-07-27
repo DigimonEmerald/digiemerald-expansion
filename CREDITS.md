@@ -78,6 +78,16 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
+## Digimon Emerald Credits
+### Digimon Sprites
+- [Reza3u/Rezatri](https://www.deviantart.com/reza3u)
+
+### Balancing Team
+- Ferio Triforce
+- LegendTamer
+- Mikaelly
+- Void
+
 ## Other Credits
 ### Mega Evolution Overworld Sprite Credits:
 - [princess-phoenix](https://www.deviantart.com/princess-phoenix)

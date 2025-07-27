@@ -29,11 +29,11 @@ A lot of features listed below can be turned off as desired. Check which ones in
 - [Summary screen config](https://github.com/rh-hideout/pokeemerald-expansion/blob/master/include/config/summary_screen.h)
 
 ## Upgraded Battle Engine
-- ***Battle gimmicks:*** Mega Evolution, Primal Reversion, Ultra Burst, Z-Moves, Dynamax, Gigantamax and Terastallization.
 - ***Newer game battle types:*** Double Wild Battles, custom Multi Battles, Inverse Battles, 1v2/2v1 battles, Sky Battles.
 - ***Updated battle mechanics:*** Critical capture, Frostbite support, Poké Ball quick menu, Move description menu, no badge boosts, Gen 4 Fog, obedience, Affection, Party swap upon catch, move effectiveness in battle, FRLG/Gen4+ whiteout money calculation, Gen 4-style shadows.
-- ***Updated move data***: Fairy/Stellar types, Physical/Special split, flags.
-- ***Updated calculations:*** Damage, experience, mid-turn speed, end-battle stats and EVs, Level 100 EVs.
+- ***Updated move data***: Light/Fairy/Stellar types, Physical/Special split, flags.
+- ***Updated calculations:*** Attributes, Damage, experience, mid-turn speed, end-battle stats and EVs, Level 100 EVs.
+- ***Items and Abilities inspired by Digimon:*** Pulling from various sources such as the Anime, Games, Manga and V-Pets.
 - ***Every item, ability and move effect up to Gen IX:*** Includes contest data up to SwSh ([source](https://pokemonurpg.com/info/contests/rse-move-list/)).
 - ***Initial battle conditions:*** Stat stages, battle terrain, Wild AI flags.
 - ***Faster battles:*** Simultaneous HP reduction, shortcut to "Run" option, faster battle intro, faster HP drain, faster AI calculations.
@@ -42,7 +42,6 @@ A lot of features listed below can be turned off as desired. Check which ones in
 - ***Popular features:*** Level/EV Caps, Sleep Clause, Type Indicators.
 
 ## Full Trainer customization
-- ***Compatible with Pokémon Showdown's team syntax:*** Create your trainer teams in the [teambuilder](https://play.pokemonshowdown.com/teambuilder) and paste the results!
 - ***Custom Pokémon data:*** Nicknames, EVs, IVs, Moves, Abilities, Poké Balls, Friendship, Nature, Gender, Shininess, Dynamax level, Gigantamax Factor and Tera Type.
   - ***"Ace Pokémon":*** Will save a specific Pokémon for last.
   - ***Trainer Pools:*** A trainer may get a pool of randomized Pokémon instead of set teams.
