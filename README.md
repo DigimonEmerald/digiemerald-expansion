@@ -17,7 +17,7 @@
 If you use **`Digimon Emerald`**, please credit us alongside **RHH (Rom Hacking Hideout)** and **Pret**. Optionally, include the version number for clarity.
 
 ```
-Based off RHH's Digimon Emerald 1.12.1 https://github.com/rh-hideout/pokeemerald-expansion/
+Based off RHH's pokeemerald-expansion 1.12.1 https://github.com/rh-hideout/pokeemerald-expansion/
 ```
 
 Please consider [crediting all contributors](CREDITS.md) involved in the project!
@@ -35,7 +35,7 @@ If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Paw
 
 # [Documentation](https://rh-hideout.github.io/pokeemerald-expansion/)
 
-For detailed documentation, visit the [Digimon Emerald documentation page](https://rh-hideout.github.io/pokeemerald-expansion/).
+For detailed documentation, visit the [pokeemerald-expansion documentation page](https://rh-hideout.github.io/pokeemerald-expansion/).
 
 # [Contributions](CONTRIBUTING.md)
 If you are looking to [report a bug](CONTRIBUTING.md#Bug-Report), [open a pull request](CONTRIBUTING.md#Pull-Requests), or [request a feature](CONTRIBUTING.md#Feature-Request), our [`CONTRIBUTING.md`](CONTRIBUTING.md) has guides for each.
