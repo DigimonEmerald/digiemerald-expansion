@@ -14494,38 +14494,38 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_WormadamPlant[] = INCBIN_U32("graphics/pokemon/wormadam/anim_front.4bpp.lz");
-    const u16 gMonPalette_WormadamPlant[] = INCBIN_U16("graphics/pokemon/wormadam/normal.gbapal");
-    const u32 gMonBackPic_WormadamPlant[] = INCBIN_U32("graphics/pokemon/wormadam/back.4bpp.lz");
-    const u16 gMonShinyPalette_WormadamPlant[] = INCBIN_U16("graphics/pokemon/wormadam/shiny.gbapal");
-    const u8 gMonIcon_WormadamPlant[] = INCBIN_U8("graphics/pokemon/wormadam/icon.4bpp");
+    const u32 gMonFrontPic_Nanimon[] = INCBIN_U32("graphics/pokemon/nanimon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Nanimon[] = INCBIN_U16("graphics/pokemon/nanimon/normal.gbapal");
+    const u32 gMonBackPic_Nanimon[] = INCBIN_U32("graphics/pokemon/nanimon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Nanimon[] = INCBIN_U16("graphics/pokemon/nanimon/shiny.gbapal");
+    const u8 gMonIcon_Nanimon[] = INCBIN_U8("graphics/pokemon/nanimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Wormadam[] = INCBIN_U8("graphics/pokemon/wormadam/footprint.1bpp");
+    const u8 gMonFootprint_Wormadam[] = INCBIN_U8("graphics/pokemon/nanimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_WormadamSandy[] = INCBIN_U32("graphics/pokemon/wormadam/sandy/anim_front.4bpp.lz");
-    const u16 gMonPalette_WormadamSandy[] = INCBIN_U16("graphics/pokemon/wormadam/sandy/normal.gbapal");
-    const u32 gMonBackPic_WormadamSandy[] = INCBIN_U32("graphics/pokemon/wormadam/sandy/back.4bpp.lz");
-    const u16 gMonShinyPalette_WormadamSandy[] = INCBIN_U16("graphics/pokemon/wormadam/sandy/shiny.gbapal");
-    const u8 gMonIcon_WormadamSandy[] = INCBIN_U8("graphics/pokemon/wormadam/sandy/icon.4bpp");
+    const u32 gMonFrontPic_WormadamSandy[] = INCBIN_U32("graphics/pokemon/nanimon/sandy/anim_front.4bpp.lz");
+    const u16 gMonPalette_WormadamSandy[] = INCBIN_U16("graphics/pokemon/nanimon/sandy/normal.gbapal");
+    const u32 gMonBackPic_WormadamSandy[] = INCBIN_U32("graphics/pokemon/nanimon/sandy/back.4bpp.lz");
+    const u16 gMonShinyPalette_WormadamSandy[] = INCBIN_U16("graphics/pokemon/nanimon/sandy/shiny.gbapal");
+    const u8 gMonIcon_WormadamSandy[] = INCBIN_U8("graphics/pokemon/nanimon/sandy/icon.4bpp");
 
-    const u32 gMonFrontPic_WormadamTrash[] = INCBIN_U32("graphics/pokemon/wormadam/trash/anim_front.4bpp.lz");
-    const u16 gMonPalette_WormadamTrash[] = INCBIN_U16("graphics/pokemon/wormadam/trash/normal.gbapal");
-    const u32 gMonBackPic_WormadamTrash[] = INCBIN_U32("graphics/pokemon/wormadam/trash/back.4bpp.lz");
-    const u16 gMonShinyPalette_WormadamTrash[] = INCBIN_U16("graphics/pokemon/wormadam/trash/shiny.gbapal");
-    const u8 gMonIcon_WormadamTrash[] = INCBIN_U8("graphics/pokemon/wormadam/trash/icon.4bpp");
+    const u32 gMonFrontPic_WormadamTrash[] = INCBIN_U32("graphics/pokemon/nanimon/trash/anim_front.4bpp.lz");
+    const u16 gMonPalette_WormadamTrash[] = INCBIN_U16("graphics/pokemon/nanimon/trash/normal.gbapal");
+    const u32 gMonBackPic_WormadamTrash[] = INCBIN_U32("graphics/pokemon/nanimon/trash/back.4bpp.lz");
+    const u16 gMonShinyPalette_WormadamTrash[] = INCBIN_U16("graphics/pokemon/nanimon/trash/shiny.gbapal");
+    const u8 gMonIcon_WormadamTrash[] = INCBIN_U8("graphics/pokemon/nanimon/trash/icon.4bpp");
 
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_WormadamPlant[] = INCBIN_COMP("graphics/pokemon/wormadam/overworld.4bpp");
-    const u32 gObjectEventPic_WormadamSandy[] = INCBIN_COMP("graphics/pokemon/wormadam/sandy/overworld.4bpp");
-    const u32 gObjectEventPic_WormadamTrash[] = INCBIN_COMP("graphics/pokemon/wormadam/trash/overworld.4bpp");
+    const u32 gObjectEventPic_Nanimon[] = INCBIN_COMP("graphics/pokemon/nanimon/overworld.4bpp");
+    const u32 gObjectEventPic_WormadamSandy[] = INCBIN_COMP("graphics/pokemon/nanimon/sandy/overworld.4bpp");
+    const u32 gObjectEventPic_WormadamTrash[] = INCBIN_COMP("graphics/pokemon/nanimon/trash/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_WormadamPlant[] = INCBIN_U16("graphics/pokemon/wormadam/overworld_normal.gbapal");
-    const u16 gOverworldPalette_WormadamSandy[] = INCBIN_U16("graphics/pokemon/wormadam/sandy/overworld_normal.gbapal");
-    const u16 gOverworldPalette_WormadamTrash[] = INCBIN_U16("graphics/pokemon/wormadam/trash/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_WormadamPlant[] = INCBIN_U16("graphics/pokemon/wormadam/overworld_shiny.gbapal");
-    const u16 gShinyOverworldPalette_WormadamSandy[] = INCBIN_U16("graphics/pokemon/wormadam/sandy/overworld_shiny.gbapal");
-    const u16 gShinyOverworldPalette_WormadamTrash[] = INCBIN_U16("graphics/pokemon/wormadam/trash/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Nanimon[] = INCBIN_U16("graphics/pokemon/nanimon/overworld_normal.gbapal");
+    const u16 gOverworldPalette_WormadamSandy[] = INCBIN_U16("graphics/pokemon/nanimon/sandy/overworld_normal.gbapal");
+    const u16 gOverworldPalette_WormadamTrash[] = INCBIN_U16("graphics/pokemon/nanimon/trash/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Nanimon[] = INCBIN_U16("graphics/pokemon/nanimon/overworld_shiny.gbapal");
+    const u16 gShinyOverworldPalette_WormadamSandy[] = INCBIN_U16("graphics/pokemon/nanimon/sandy/overworld_shiny.gbapal");
+    const u16 gShinyOverworldPalette_WormadamTrash[] = INCBIN_U16("graphics/pokemon/nanimon/trash/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

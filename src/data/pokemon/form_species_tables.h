@@ -998,7 +998,7 @@ static const u16 sBurmyFormSpeciesIdTable[] = {
 };
 
 static const u16 sWormadamFormSpeciesIdTable[] = {
-    SPECIES_WORMADAM_PLANT,
+    SPECIES_NANIMON,
     SPECIES_WORMADAM_SANDY,
     SPECIES_WORMADAM_TRASH,
     FORM_SPECIES_END,

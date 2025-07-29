@@ -300,9 +300,9 @@ SINGLE_BATTLE_TEST("Anticipation does not consider ate-abilities")
 {
     GIVEN {
         ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_WORMADAM_PLANT].types[0] == TYPE_BUG);
-        ASSUME(gSpeciesInfo[SPECIES_WORMADAM_PLANT].types[1] == TYPE_GRASS);
-        PLAYER(SPECIES_WORMADAM_PLANT) { Ability(ABILITY_ANTICIPATION); }
+        ASSUME(gSpeciesInfo[SPECIES_NANIMON].types[0] == TYPE_BUG);
+        ASSUME(gSpeciesInfo[SPECIES_NANIMON].types[1] == TYPE_GRASS);
+        PLAYER(SPECIES_NANIMON) { Ability(ABILITY_ANTICIPATION); }
         OPPONENT(SPECIES_AURORUS) { Ability(ABILITY_REFRIGERATE); Moves(MOVE_GROWL, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
         TURN { }

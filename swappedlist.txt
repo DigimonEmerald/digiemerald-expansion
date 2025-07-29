@@ -421,7 +421,9 @@ Stingmon - Rampardos
 Tuskmon - Shieldon
 Monochromon - Bastiodon
 Mekanorimon - Burmy (Plant)
+Minotarumon - Burmy (Sandy)
 Mojyamon - Burmy (Trash)
+Nanimon - Wormadam (Plant)
 
 Ultimate List
 
