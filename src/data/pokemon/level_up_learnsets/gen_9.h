@@ -8441,6 +8441,20 @@ static const struct LevelUpMove sBurmyLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sMojyamonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
+    LEVEL_UP_MOVE( 1, MOVE_POUND),
+    LEVEL_UP_MOVE( 1, MOVE_LEER),
+    LEVEL_UP_MOVE( 1, MOVE_BONE_CLUB),
+    LEVEL_UP_MOVE(20, MOVE_AVALANCHE),
+    LEVEL_UP_MOVE(24, MOVE_ANCIENT_POWER),
+    LEVEL_UP_MOVE(28, MOVE_FAKE_OUT),
+    LEVEL_UP_MOVE(32, MOVE_ICICLE_CRASH),
+    LEVEL_UP_MOVE(36, MOVE_BONEMERANG),
+    LEVEL_UP_MOVE(40, MOVE_DRAIN_PUNCH),
+    LEVEL_UP_END
+};
+
 static const struct LevelUpMove sWormadamPlantLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_QUIVER_DANCE),
     LEVEL_UP_MOVE( 1, MOVE_QUIVER_DANCE),

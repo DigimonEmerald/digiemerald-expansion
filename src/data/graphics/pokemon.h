@@ -14474,23 +14474,23 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_BurmySandy[] = INCBIN_U16("graphics/pokemon/mekanorimon/sandy/shiny.gbapal");
     const u8 gMonIcon_BurmySandy[] = INCBIN_U8("graphics/pokemon/mekanorimon/sandy/icon.4bpp");
 
-    const u32 gMonFrontPic_BurmyTrash[] = INCBIN_U32("graphics/pokemon/mekanorimon/trash/anim_front.4bpp.lz");
-    const u16 gMonPalette_BurmyTrash[] = INCBIN_U16("graphics/pokemon/mekanorimon/trash/normal.gbapal");
-    const u32 gMonBackPic_BurmyTrash[] = INCBIN_U32("graphics/pokemon/mekanorimon/trash/back.4bpp.lz");
-    const u16 gMonShinyPalette_BurmyTrash[] = INCBIN_U16("graphics/pokemon/mekanorimon/trash/shiny.gbapal");
-    const u8 gMonIcon_BurmyTrash[] = INCBIN_U8("graphics/pokemon/mekanorimon/trash/icon.4bpp");
+    const u32 gMonFrontPic_Mojyamon[] = INCBIN_U32("graphics/pokemon/mojyamon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Mojyamon[] = INCBIN_U16("graphics/pokemon/mojyamon/normal.gbapal");
+    const u32 gMonBackPic_Mojyamon[] = INCBIN_U32("graphics/pokemon/mojyamon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Mojyamon[] = INCBIN_U16("graphics/pokemon/mojyamon/shiny.gbapal");
+    const u8 gMonIcon_Mojyamon[] = INCBIN_U8("graphics/pokemon/mojyamon/icon.4bpp");
 
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Mekanorimon[] = INCBIN_COMP("graphics/pokemon/mekanorimon/overworld.4bpp");
     const u32 gObjectEventPic_BurmySandy[] = INCBIN_COMP("graphics/pokemon/mekanorimon/sandy/overworld.4bpp");
-    const u32 gObjectEventPic_BurmyTrash[] = INCBIN_COMP("graphics/pokemon/mekanorimon/trash/overworld.4bpp");
+    const u32 gObjectEventPic_Mojyamon[] = INCBIN_COMP("graphics/pokemon/mojyamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
     const u16 gOverworldPalette_Mekanorimon[] = INCBIN_U16("graphics/pokemon/mekanorimon/overworld_normal.gbapal");
     const u16 gOverworldPalette_BurmySandy[] = INCBIN_U16("graphics/pokemon/mekanorimon/sandy/overworld_normal.gbapal");
-    const u16 gOverworldPalette_BurmyTrash[] = INCBIN_U16("graphics/pokemon/mekanorimon/trash/overworld_normal.gbapal");
+    const u16 gOverworldPalette_Mojyamon[] = INCBIN_U16("graphics/pokemon/mojyamon/overworld_normal.gbapal");
     const u16 gShinyOverworldPalette_Mekanorimon[] = INCBIN_U16("graphics/pokemon/mekanorimon/overworld_shiny.gbapal");
     const u16 gShinyOverworldPalette_BurmySandy[] = INCBIN_U16("graphics/pokemon/mekanorimon/sandy/overworld_shiny.gbapal");
-    const u16 gShinyOverworldPalette_BurmyTrash[] = INCBIN_U16("graphics/pokemon/mekanorimon/trash/overworld_shiny.gbapal");
+    const u16 gShinyOverworldPalette_Mojyamon[] = INCBIN_U16("graphics/pokemon/mojyamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

@@ -1125,7 +1125,7 @@
 #define SPECIES_GESOMON_DEFENSE                          1055
 #define SPECIES_GESOMON_SPEED                            1056
 #define SPECIES_BURMY_SANDY                             1057
-#define SPECIES_BURMY_TRASH                             1058
+#define SPECIES_MOJYAMON                             1058
 #define SPECIES_WORMADAM_SANDY                          1059
 #define SPECIES_WORMADAM_TRASH                          1060
 #define SPECIES_CHERRIM_SUNSHINE                        1061
