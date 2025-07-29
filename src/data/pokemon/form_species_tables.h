@@ -992,7 +992,7 @@ static const u16 sGesomonFormSpeciesIdTable[] = {
 #if P_FAMILY_MEKANORIMON
 static const u16 sBurmyFormSpeciesIdTable[] = {
     SPECIES_MEKANORIMON,
-    SPECIES_BURMY_SANDY,
+    SPECIES_MINOTARUMON,
     SPECIES_MOJYAMON,
     FORM_SPECIES_END,
 };
