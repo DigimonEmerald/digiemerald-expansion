@@ -95,8 +95,8 @@ SINGLE_BATTLE_TEST("Effect Spore will check if it can inflict status onto attack
     GIVEN {
         ASSUME(B_ABILITY_TRIGGER_CHANCE >= GEN_5);
         ASSUME(MoveMakesContact(MOVE_SCRATCH));
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_BRELOOM) { Status1(STATUS1_BURN); Ability(ABILITY_EFFECT_SPORE); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_ATAMADEMON) { Status1(STATUS1_BURN); Ability(ABILITY_EFFECT_SPORE); }
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH); }
     } SCENE {

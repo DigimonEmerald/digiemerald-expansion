@@ -10,8 +10,8 @@ SINGLE_BATTLE_TEST("Magnet Rise rises the user into the air, avoiding Ground-typ
 {
     GIVEN {
         ASSUME(GetMoveType(MOVE_EARTHQUAKE) == TYPE_GROUND);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WYNAUT);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_MAGNET_RISE); MOVE(opponent, MOVE_EARTHQUAKE); }
     } SCENE {
@@ -27,8 +27,8 @@ SINGLE_BATTLE_TEST("Magnet Rise fails if the user is Rooted")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_INGRAIN) == EFFECT_INGRAIN);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WYNAUT);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(player, MOVE_INGRAIN); }
         TURN { MOVE(player, MOVE_MAGNET_RISE); }
@@ -42,9 +42,9 @@ SINGLE_BATTLE_TEST("Magnet Rise fails if the user is Grounded by Smack Down")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_SMACK_DOWN) == EFFECT_SMACK_DOWN);
-        ASSUME(gSpeciesInfo[SPECIES_XATU].types[0] == TYPE_FLYING || gSpeciesInfo[SPECIES_XATU].types[1] == TYPE_FLYING);
-        PLAYER(SPECIES_XATU);
-        OPPONENT(SPECIES_WYNAUT);
+        ASSUME(gSpeciesInfo[SPECIES_HERISSMON].types[0] == TYPE_FLYING || gSpeciesInfo[SPECIES_HERISSMON].types[1] == TYPE_FLYING);
+        PLAYER(SPECIES_HERISSMON);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SMACK_DOWN); MOVE(player, MOVE_MAGNET_RISE); }
     } SCENE {
