@@ -9740,8 +9740,8 @@ static const struct LevelUpMove sMetaltyrannomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_MEGADRAMON
 
-#if P_FAMILY_AUDINO
-static const struct LevelUpMove sAudinoLevelUpLearnset[] = {
+#if P_FAMILY_DATAMON
+static const struct LevelUpMove sDatamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
@@ -9758,7 +9758,7 @@ static const struct LevelUpMove sAudinoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(55, MOVE_LAST_RESORT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_AUDINO
+#endif //P_FAMILY_DATAMON
 
 #if P_FAMILY_TIMBURR
 static const struct LevelUpMove sTimburrLevelUpLearnset[] = {

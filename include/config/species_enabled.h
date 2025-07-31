@@ -320,7 +320,7 @@
 #define P_FAMILY_MASTERTYRANNOMON              P_GEN_5_POKEMON
 #define P_FAMILY_MARINEDEVIMON                  P_GEN_5_POKEMON
 #define P_FAMILY_MEGADRAMON                 P_GEN_5_POKEMON
-#define P_FAMILY_AUDINO                  P_GEN_5_POKEMON
+#define P_FAMILY_DATAMON                  P_GEN_5_POKEMON
 #define P_FAMILY_TIMBURR                 P_GEN_5_POKEMON
 #define P_FAMILY_TYMPOLE                 P_GEN_5_POKEMON
 #define P_FAMILY_THROH                   P_GEN_5_POKEMON

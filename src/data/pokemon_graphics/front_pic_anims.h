@@ -6648,8 +6648,8 @@ static const union AnimCmd sAnim_Metaltyrannomon_1[] =
 };
 #endif //P_FAMILY_MEGADRAMON
 
-#if P_FAMILY_AUDINO
-static const union AnimCmd sAnim_Audino_1[] =
+#if P_FAMILY_DATAMON
+static const union AnimCmd sAnim_Datamon_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 36),
@@ -6658,9 +6658,9 @@ static const union AnimCmd sAnim_Audino_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(AudinoMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(DatamonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_AUDINO
+#endif //P_FAMILY_DATAMON
 
 #if P_FAMILY_TIMBURR
 static const union AnimCmd sAnim_Timburr_1[] =
@@ -11671,12 +11671,12 @@ SINGLE_ANIMATION(Megaseadramon);
 SINGLE_ANIMATION(Megadramon);
 SINGLE_ANIMATION(Metaltyrannomon);
 #endif //P_FAMILY_MEGADRAMON
-#if P_FAMILY_AUDINO
-SINGLE_ANIMATION(Audino);
+#if P_FAMILY_DATAMON
+SINGLE_ANIMATION(Datamon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(AudinoMega);
+SINGLE_ANIMATION(DatamonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_AUDINO
+#endif //P_FAMILY_DATAMON
 #if P_FAMILY_TIMBURR
 SINGLE_ANIMATION(Timburr);
 SINGLE_ANIMATION(Gurdurr);

@@ -566,8 +566,8 @@
 #define P_FAMILY_MARINEDEVIMON                  TRUE
 #undef P_FAMILY_MEGADRAMON
 #define P_FAMILY_MEGADRAMON                 TRUE
-#undef P_FAMILY_AUDINO
-#define P_FAMILY_AUDINO                  TRUE
+#undef P_FAMILY_DATAMON
+#define P_FAMILY_DATAMON                  TRUE
 #undef P_FAMILY_TIMBURR
 #define P_FAMILY_TIMBURR                 TRUE
 #undef P_FAMILY_TYMPOLE

@@ -16537,38 +16537,38 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MEGADRAMON
 
-#if P_FAMILY_AUDINO
-    const u32 gMonFrontPic_Audino[] = INCBIN_U32("graphics/pokemon/audino/anim_front.4bpp.lz");
-    const u16 gMonPalette_Audino[] = INCBIN_U16("graphics/pokemon/audino/normal.gbapal");
-    const u32 gMonBackPic_Audino[] = INCBIN_U32("graphics/pokemon/audino/back.4bpp.lz");
-    const u16 gMonShinyPalette_Audino[] = INCBIN_U16("graphics/pokemon/audino/shiny.gbapal");
-    const u8 gMonIcon_Audino[] = INCBIN_U8("graphics/pokemon/audino/icon.4bpp");
+#if P_FAMILY_DATAMON
+    const u32 gMonFrontPic_Datamon[] = INCBIN_U32("graphics/pokemon/datamon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Datamon[] = INCBIN_U16("graphics/pokemon/datamon/normal.gbapal");
+    const u32 gMonBackPic_Datamon[] = INCBIN_U32("graphics/pokemon/datamon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Datamon[] = INCBIN_U16("graphics/pokemon/datamon/shiny.gbapal");
+    const u8 gMonIcon_Datamon[] = INCBIN_U8("graphics/pokemon/datamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Audino[] = INCBIN_U8("graphics/pokemon/audino/footprint.1bpp");
+    const u8 gMonFootprint_Datamon[] = INCBIN_U8("graphics/pokemon/datamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Audino[] = INCBIN_COMP("graphics/pokemon/audino/overworld.4bpp");
+    const u32 gObjectEventPic_Datamon[] = INCBIN_COMP("graphics/pokemon/datamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Audino[] = INCBIN_U16("graphics/pokemon/audino/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Audino[] = INCBIN_U16("graphics/pokemon/audino/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Datamon[] = INCBIN_U16("graphics/pokemon/datamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Datamon[] = INCBIN_U16("graphics/pokemon/datamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_AudinoMega[] = INCBIN_U32("graphics/pokemon/audino/mega/front.4bpp.lz");
-    const u16 gMonPalette_AudinoMega[] = INCBIN_U16("graphics/pokemon/audino/mega/normal.gbapal");
-    const u32 gMonBackPic_AudinoMega[] = INCBIN_U32("graphics/pokemon/audino/mega/back.4bpp.lz");
-    const u16 gMonShinyPalette_AudinoMega[] = INCBIN_U16("graphics/pokemon/audino/mega/shiny.gbapal");
-    const u8 gMonIcon_AudinoMega[] = INCBIN_U8("graphics/pokemon/audino/mega/icon.4bpp");
+    const u32 gMonFrontPic_DatamonMega[] = INCBIN_U32("graphics/pokemon/datamon/mega/front.4bpp.lz");
+    const u16 gMonPalette_DatamonMega[] = INCBIN_U16("graphics/pokemon/datamon/mega/normal.gbapal");
+    const u32 gMonBackPic_DatamonMega[] = INCBIN_U32("graphics/pokemon/datamon/mega/back.4bpp.lz");
+    const u16 gMonShinyPalette_DatamonMega[] = INCBIN_U16("graphics/pokemon/datamon/mega/shiny.gbapal");
+    const u8 gMonIcon_DatamonMega[] = INCBIN_U8("graphics/pokemon/datamon/mega/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_AudinoMega[] = INCBIN_COMP("graphics/pokemon/audino/mega/overworld.4bpp");
+    const u32 gObjectEventPic_DatamonMega[] = INCBIN_COMP("graphics/pokemon/datamon/mega/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_AudinoMega[] = INCBIN_U16("graphics/pokemon/audino/mega/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_AudinoMega[] = INCBIN_U16("graphics/pokemon/audino/mega/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_DatamonMega[] = INCBIN_U16("graphics/pokemon/datamon/mega/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_DatamonMega[] = INCBIN_U16("graphics/pokemon/datamon/mega/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS && OW_BATTLE_ONLY_FORMS
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_AUDINO
+#endif //P_FAMILY_DATAMON
 
 #if P_FAMILY_TIMBURR
     const u32 gMonFrontPic_Timburr[] = INCBIN_U32("graphics/pokemon/timburr/anim_front.4bpp.lz");

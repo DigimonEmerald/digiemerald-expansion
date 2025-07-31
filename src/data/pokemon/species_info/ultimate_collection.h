@@ -2821,19 +2821,22 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_MEGADRAMON
 
-#if P_FAMILY_AUDINO
-    [SPECIES_AUDINO] =
+#if P_FAMILY_DATAMON
+    [SPECIES_DATAMON] =
     {
-        .baseHP        = 103,
-        .baseAttack    = 60,
-        .baseDefense   = 86,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 86,
-        .types = MON_TYPES(TYPE_NORMAL),
+        .baseHP        = 65,
+        .baseAttack    = 75,
+        .baseDefense   = 95,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_PSYCHIC),
+        .attribute = TYPE_VIRUS,
         .catchRate = 95,
-        .expYield = 390,
-        .evYield_HP = 2,
+        .expYield = 200,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 3,
+        .evYield_SpDefense = 1,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_SITRUS_BERRY,
         .genderRatio = MON_GENDERLESS,
@@ -2841,24 +2844,24 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_HEALER, ABILITY_REGENERATOR, ABILITY_KLUTZ },
-        .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Audino"),
-        .cryId = CRY_AUDINO,
-        .natDexNum = NATIONAL_DEX_AUDINO,
-        .categoryName = _("Hearing"),
-        .height = 11,
-        .weight = 310,
+        .abilities = { ABILITY_ANALYTIC, ABILITY_DOWNLOAD, ABILITY_STEELWORKER },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Datamon"),
+        .cryId = CRY_DATAMON,
+        .natDexNum = NATIONAL_DEX_DATAMON,
+        .categoryName = _("Neural"),
+        .height = 21,
+        .weight = 845,
         .description = COMPOUND_STRING(
-            "Its auditory sense is astounding.\n"
-            "Using the feelers on its ears, it can tell\n"
-            "how someone is feeling or when an egg\n"
-            "might hatch."),
+            "Originally a Vaccine type Digimon, Datamon\n"
+            "ended up turning into a Virus type after\n"
+            "being attacked and having its neural\n"
+            "pathways destroyed."),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Audino,
+        .frontPic = gMonFrontPic_Datamon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2867,35 +2870,35 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Audino,
+        .backPic = gMonBackPic_Datamon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_SHRINK_GROW,
-        .palette = gMonPalette_Audino,
-        .shinyPalette = gMonShinyPalette_Audino,
-        .iconSprite = gMonIcon_Audino,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Datamon,
+        .shinyPalette = gMonShinyPalette_Datamon,
+        .iconSprite = gMonIcon_Datamon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 6, SHADOW_SIZE_S)
-        FOOTPRINT(Audino)
+        FOOTPRINT(Datamon)
         OVERWORLD(
-            sPicTable_Audino,
+            sPicTable_Datamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Audino,
-            gShinyOverworldPalette_Audino
+            gOverworldPalette_Datamon,
+            gShinyOverworldPalette_Datamon
         )
-        .levelUpLearnset = sAudinoLevelUpLearnset,
-        .teachableLearnset = sAudinoTeachableLearnset,
-        .eggMoveLearnset = sAudinoEggMoveLearnset,
-        .formSpeciesIdTable = sAudinoFormSpeciesIdTable,
-        .formChangeTable = sAudinoFormChangeTable,
+        .levelUpLearnset = sDatamonLevelUpLearnset,
+        .teachableLearnset = sDatamonTeachableLearnset,
+        .eggMoveLearnset = sDatamonEggMoveLearnset,
+        .formSpeciesIdTable = sDatamonFormSpeciesIdTable,
+        .formChangeTable = sDatamonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_AUDINO_MEGA] =
+    [SPECIES_DATAMON_MEGA] =
     {
         .baseHP        = 103,
         .baseAttack    = 60,
@@ -2916,14 +2919,14 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
         .abilities = { ABILITY_HEALER, ABILITY_HEALER, ABILITY_HEALER },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Audino"),
-        .cryId = CRY_AUDINO_MEGA,
-        .natDexNum = NATIONAL_DEX_AUDINO,
+        .speciesName = _("Datamon"),
+        .cryId = CRY_DATAMON_MEGA,
+        .natDexNum = NATIONAL_DEX_DATAMON,
         .categoryName = _("Hearing"),
         .height = 15,
         .weight = 320,
         .description = COMPOUND_STRING(
-            "Mega Audino emits a soothing pulse from\n"
+            "Mega Datamon emits a soothing pulse from\n"
             "its body that reduces hostility in others.\n"
             "Anything that comes into contact with its\n"
             "second feelers will fall into a deep sleep."),
@@ -2931,42 +2934,42 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_AudinoMega,
+        .frontPic = gMonFrontPic_DatamonMega,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 6,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_AudinoMega,
+        .backPic = gMonBackPic_DatamonMega,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 0,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_AudinoMega,
-        .shinyPalette = gMonShinyPalette_AudinoMega,
-        .iconSprite = gMonIcon_AudinoMega,
+        .palette = gMonPalette_DatamonMega,
+        .shinyPalette = gMonShinyPalette_DatamonMega,
+        .iconSprite = gMonIcon_DatamonMega,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 7, SHADOW_SIZE_M)
-        FOOTPRINT(Audino)
+        FOOTPRINT(Datamon)
     #if OW_BATTLE_ONLY_FORMS
         OVERWORLD(
-            sPicTable_AudinoMega,
+            sPicTable_DatamonMega,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_AudinoMega,
-            gShinyOverworldPalette_AudinoMega
+            gOverworldPalette_DatamonMega,
+            gShinyOverworldPalette_DatamonMega
         )
     #endif //OW_BATTLE_ONLY_FORMS
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sAudinoLevelUpLearnset,
-        .teachableLearnset = sAudinoTeachableLearnset,
-        .eggMoveLearnset = sAudinoEggMoveLearnset,
-        .formSpeciesIdTable = sAudinoFormSpeciesIdTable,
-        .formChangeTable = sAudinoFormChangeTable,
+        .levelUpLearnset = sDatamonLevelUpLearnset,
+        .teachableLearnset = sDatamonTeachableLearnset,
+        .eggMoveLearnset = sDatamonEggMoveLearnset,
+        .formSpeciesIdTable = sDatamonFormSpeciesIdTable,
+        .formChangeTable = sDatamonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_AUDINO
+#endif //P_FAMILY_DATAMON
 
 #if P_FAMILY_TIMBURR
     [SPECIES_TIMBURR] =

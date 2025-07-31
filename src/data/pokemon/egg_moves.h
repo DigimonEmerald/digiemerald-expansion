@@ -4152,8 +4152,8 @@ static const u16 sMegadramonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_MEGADRAMON
 
-#if P_FAMILY_AUDINO
-static const u16 sAudinoEggMoveLearnset[] = {
+#if P_FAMILY_DATAMON
+static const u16 sDatamonEggMoveLearnset[] = {
     MOVE_WISH,
     MOVE_HEAL_BELL,
     MOVE_LUCKY_CHANT,
@@ -4167,7 +4167,7 @@ static const u16 sAudinoEggMoveLearnset[] = {
     MOVE_DRAINING_KISS,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_AUDINO
+#endif //P_FAMILY_DATAMON
 
 #if P_FAMILY_TIMBURR
 static const u16 sTimburrEggMoveLearnset[] = {

@@ -3502,17 +3502,17 @@ Cry_Metaltyrannomon::
 	.incbin "sound/direct_sound_samples/cries/metaltyrannomon.bin"
 .endif @ P_FAMILY_MEGADRAMON
 
-.if P_FAMILY_AUDINO == TRUE
+.if P_FAMILY_DATAMON == TRUE
 	.align 2
-Cry_Audino::
-	.incbin "sound/direct_sound_samples/cries/audino.bin"
+Cry_Datamon::
+	.incbin "sound/direct_sound_samples/cries/datamon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_AudinoMega::
-	.incbin "sound/direct_sound_samples/cries/audino_mega.bin"
+Cry_DatamonMega::
+	.incbin "sound/direct_sound_samples/cries/datamon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_AUDINO
+.endif @ P_FAMILY_DATAMON
 
 .if P_FAMILY_TIMBURR == TRUE
 	.align 2

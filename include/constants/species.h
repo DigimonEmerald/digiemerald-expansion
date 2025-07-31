@@ -548,7 +548,7 @@
 #define SPECIES_MEGASEADRAMON                                 528
 #define SPECIES_MEGADRAMON                                 529
 #define SPECIES_METALTYRANNOMON                               530
-#define SPECIES_AUDINO                                  531
+#define SPECIES_DATAMON                                  531
 #define SPECIES_TIMBURR                                 532
 #define SPECIES_GURDURR                                 533
 #define SPECIES_CONKELDURR                              534
@@ -1013,7 +1013,7 @@
 #define SPECIES_LUCARIO_MEGA                            948
 #define SPECIES_ABOMASNOW_MEGA                          949
 #define SPECIES_GALLADE_MEGA                            950
-#define SPECIES_AUDINO_MEGA                             951
+#define SPECIES_DATAMON_MEGA                             951
 #define SPECIES_DIANCIE_MEGA                            952
 #define SPECIES_GEOGREYMON_MEGA                           953
 #define SPECIES_GATOMON_X_PRIMAL                           954

@@ -1152,15 +1152,15 @@ static const u16 sSkullgreymonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_METALMAMEMON
 
-#if P_FAMILY_AUDINO
-static const u16 sAudinoFormSpeciesIdTable[] = {
-    SPECIES_AUDINO,
+#if P_FAMILY_DATAMON
+static const u16 sDatamonFormSpeciesIdTable[] = {
+    SPECIES_DATAMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_AUDINO_MEGA,
+    SPECIES_DATAMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_AUDINO
+#endif //P_FAMILY_DATAMON
 
 #if P_FAMILY_PETILIL
 static const u16 sLilligantFormSpeciesIdTable[] = {

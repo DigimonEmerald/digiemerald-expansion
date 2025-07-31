@@ -465,6 +465,7 @@ MarineDevimon - Woobat
 MegaSeadramon - Swoobat
 Megadramon - Drilbur
 MetalTyrannomon - Excadrill
+Datamon - Audino
 
 Mega List
 

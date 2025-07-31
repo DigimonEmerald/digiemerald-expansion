@@ -1328,12 +1328,12 @@ gCryTable::
 	cry Cry_Megadramon
 	cry Cry_Metaltyrannomon
 .endif @ P_FAMILY_MEGADRAMON
-.if P_FAMILY_AUDINO == TRUE
-	cry Cry_Audino
+.if P_FAMILY_DATAMON == TRUE
+	cry Cry_Datamon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_AudinoMega
+	cry Cry_DatamonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_AUDINO
+.endif @ P_FAMILY_DATAMON
 .if P_FAMILY_TIMBURR == TRUE
 	cry Cry_Timburr
 	cry Cry_Gurdurr
@@ -3756,12 +3756,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Megadramon
 	cry_reverse Cry_Metaltyrannomon
 .endif @ P_FAMILY_MEGADRAMON
-.if P_FAMILY_AUDINO == TRUE
-	cry_reverse Cry_Audino
+.if P_FAMILY_DATAMON == TRUE
+	cry_reverse Cry_Datamon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_AudinoMega
+	cry_reverse Cry_DatamonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_AUDINO
+.endif @ P_FAMILY_DATAMON
 .if P_FAMILY_TIMBURR == TRUE
 	cry_reverse Cry_Timburr
 	cry_reverse Cry_Gurdurr

@@ -2844,10 +2844,10 @@ $(POKEMONGFXDIR)/megadramon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/metaltyrannomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/audino/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/datamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/audino/mega/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/datamon/mega/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/timburr/overworld.4bpp: %.4bpp: %.png

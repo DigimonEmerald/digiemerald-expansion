@@ -22160,8 +22160,8 @@ static const u16 sMetaltyrannomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_MEGADRAMON
 
-#if P_FAMILY_AUDINO
-static const u16 sAudinoTeachableLearnset[] = {
+#if P_FAMILY_DATAMON
+static const u16 sDatamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
@@ -22208,7 +22208,7 @@ static const u16 sAudinoTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_AUDINO
+#endif //P_FAMILY_DATAMON
 
 #if P_FAMILY_TIMBURR
 static const u16 sTimburrTeachableLearnset[] = {

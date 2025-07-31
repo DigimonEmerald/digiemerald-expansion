@@ -3857,18 +3857,18 @@ static const struct SpriteFrameImage sPicTable_Metaltyrannomon[] = {
 };
 #endif //P_FAMILY_MEGADRAMON
 
-#if P_FAMILY_AUDINO
-static const struct SpriteFrameImage sPicTable_Audino[] = {
-    overworld_ascending_frames(gObjectEventPic_Audino, 4, 4),
+#if P_FAMILY_DATAMON
+static const struct SpriteFrameImage sPicTable_Datamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Datamon, 4, 4),
 };
 #if OW_BATTLE_ONLY_FORMS
 #if P_MEGA_EVOLUTIONS
-static const struct SpriteFrameImage sPicTable_AudinoMega[] = {
-    overworld_ascending_frames(gObjectEventPic_AudinoMega, 4, 4),
+static const struct SpriteFrameImage sPicTable_DatamonMega[] = {
+    overworld_ascending_frames(gObjectEventPic_DatamonMega, 4, 4),
 };
 #endif // P_MEGA_EVOLUTIONS
 #endif // OW_BATTLE_ONLY_FORMS
-#endif //P_FAMILY_AUDINO
+#endif //P_FAMILY_DATAMON
 
 #if P_FAMILY_TIMBURR
 static const struct SpriteFrameImage sPicTable_Timburr[] = {
