@@ -18932,7 +18932,7 @@ static const u16 sNanimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sWormadamSandyTeachableLearnset[] = {
+static const u16 sOctomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,
