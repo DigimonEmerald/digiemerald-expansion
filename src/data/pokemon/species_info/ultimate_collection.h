@@ -2898,18 +2898,20 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_DATAMON_MEGA] =
+    [SPECIES_OKUWAMON] =
     {
-        .baseHP        = 103,
-        .baseAttack    = 60,
-        .baseDefense   = 126,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 126,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FAIRY),
+        .baseHP        = 80,
+        .baseAttack    = 120,
+        .baseDefense   = 70,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_BUG, TYPE_FIGHTING),
+        .attribute = TYPE_VIRUS,
         .catchRate = 95,
-        .expYield = 425,
-        .evYield_HP = 2,
+        .expYield = 200,
+        .evYield_Attack = 3,
+        .evYield_Speed = 2,
         .itemCommon = ITEM_ORAN_BERRY,
         .itemRare = ITEM_SITRUS_BERRY,
         .genderRatio = MON_GENDERLESS,
@@ -2917,48 +2919,48 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_HEALER, ABILITY_HEALER, ABILITY_HEALER },
-        .bodyColor = BODY_COLOR_WHITE,
+        .abilities = { ABILITY_LEVITATE, ABILITY_MOODY, ABILITY_HUGE_POWER },
+        .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Datamon"),
-        .cryId = CRY_DATAMON_MEGA,
+        .cryId = CRY_OKUWAMON,
         .natDexNum = NATIONAL_DEX_DATAMON,
-        .categoryName = _("Hearing"),
-        .height = 15,
-        .weight = 320,
+        .categoryName = _("Stag Beetle"),
+        .height = 54,
+        .weight = 1823,
         .description = COMPOUND_STRING(
-            "Mega Datamon emits a soothing pulse from\n"
-            "its body that reduces hostility in others.\n"
-            "Anything that comes into contact with its\n"
-            "second feelers will fall into a deep sleep."),
+            "Okuwamon has been in an evolutionairy war\n"
+            "with Kabuterimon-species for as long as\n"
+            "either existed. Its current iteration has\n"
+            "better attacks, accuracy and senses."),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_DatamonMega,
+        .frontPic = gMonFrontPic_Okuwamon,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 6,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_DatamonMega,
+        .backPic = gMonBackPic_Okuwamon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 0,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_DatamonMega,
-        .shinyPalette = gMonShinyPalette_DatamonMega,
-        .iconSprite = gMonIcon_DatamonMega,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Okuwamon,
+        .shinyPalette = gMonShinyPalette_Okuwamon,
+        .iconSprite = gMonIcon_Okuwamon,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 7, SHADOW_SIZE_M)
         FOOTPRINT(Datamon)
     #if OW_BATTLE_ONLY_FORMS
         OVERWORLD(
-            sPicTable_DatamonMega,
+            sPicTable_Okuwamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_DatamonMega,
-            gShinyOverworldPalette_DatamonMega
+            gOverworldPalette_Okuwamon,
+            gShinyOverworldPalette_Okuwamon
         )
     #endif //OW_BATTLE_ONLY_FORMS
         .isMegaEvolution = TRUE,

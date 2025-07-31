@@ -467,6 +467,7 @@ MegaSeadramon - Swoobat
 Megadramon - Drilbur
 MetalTyrannomon - Excadrill
 Datamon - Audino
+Okuwamon - Audino (Mega)
 
 Mega List
 

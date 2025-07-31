@@ -1331,7 +1331,7 @@ gCryTable::
 .if P_FAMILY_DATAMON == TRUE
 	cry Cry_Datamon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_DatamonMega
+	cry Cry_Okuwamon
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_DATAMON
 .if P_FAMILY_TIMBURR == TRUE
@@ -3759,7 +3759,7 @@ gCryTable_Reverse::
 .if P_FAMILY_DATAMON == TRUE
 	cry_reverse Cry_Datamon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_DatamonMega
+	cry_reverse Cry_Okuwamon
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_DATAMON
 .if P_FAMILY_TIMBURR == TRUE

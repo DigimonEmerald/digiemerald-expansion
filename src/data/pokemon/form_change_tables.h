@@ -693,7 +693,7 @@ static const struct FormChange sArceusFormChangeTable[] = {
 #if P_FAMILY_DATAMON
 static const struct FormChange sDatamonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_DATAMON_MEGA, ITEM_AUDINITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_OKUWAMON, ITEM_AUDINITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };

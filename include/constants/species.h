@@ -1013,7 +1013,7 @@
 #define SPECIES_LUCARIO_MEGA                            948
 #define SPECIES_ABOMASNOW_MEGA                          949
 #define SPECIES_GALLADE_MEGA                            950
-#define SPECIES_DATAMON_MEGA                             951
+#define SPECIES_OKUWAMON                             951
 #define SPECIES_DIANCIE_MEGA                            952
 #define SPECIES_GEOGREYMON_MEGA                           953
 #define SPECIES_GATOMON_X_PRIMAL                           954

@@ -1156,7 +1156,7 @@ static const u16 sSkullgreymonFormSpeciesIdTable[] = {
 static const u16 sDatamonFormSpeciesIdTable[] = {
     SPECIES_DATAMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_DATAMON_MEGA,
+    SPECIES_OKUWAMON,
 #endif
     FORM_SPECIES_END,
 };

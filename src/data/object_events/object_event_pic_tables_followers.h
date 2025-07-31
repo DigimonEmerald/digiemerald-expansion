@@ -3863,8 +3863,8 @@ static const struct SpriteFrameImage sPicTable_Datamon[] = {
 };
 #if OW_BATTLE_ONLY_FORMS
 #if P_MEGA_EVOLUTIONS
-static const struct SpriteFrameImage sPicTable_DatamonMega[] = {
-    overworld_ascending_frames(gObjectEventPic_DatamonMega, 4, 4),
+static const struct SpriteFrameImage sPicTable_Okuwamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Okuwamon, 4, 4),
 };
 #endif // P_MEGA_EVOLUTIONS
 #endif // OW_BATTLE_ONLY_FORMS

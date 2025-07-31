@@ -3509,8 +3509,8 @@ Cry_Datamon::
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_DatamonMega::
-	.incbin "sound/direct_sound_samples/cries/datamon_mega.bin"
+Cry_Okuwamon::
+	.incbin "sound/direct_sound_samples/cries/okuwamon.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_DATAMON
 
