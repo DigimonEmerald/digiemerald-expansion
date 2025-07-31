@@ -3011,7 +3011,7 @@ Cry_Burmy::
 
 	.align 2
 Cry_Wormadam::
-	.incbin "sound/direct_sound_samples/cries/wormadam.bin"
+	.incbin "sound/direct_sound_samples/cries/nanimon.bin"
 
 	.align 2
 Cry_Mothim::

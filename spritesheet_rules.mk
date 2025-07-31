@@ -2412,7 +2412,7 @@ $(POKEMONGFXDIR)/monochromon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/burmy/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/wormadam/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/nanimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/mothim/overworld.4bpp: %.4bpp: %.png
@@ -4164,7 +4164,7 @@ $(POKEMONGFXDIR)/burmy/sandy/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/burmy/trash/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/wormadam/sandy/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/octomon/sandy/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/wormadam/trash/overworld.4bpp: %.4bpp: %.png
