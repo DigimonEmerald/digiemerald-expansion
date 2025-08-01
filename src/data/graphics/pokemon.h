@@ -14509,23 +14509,23 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_Octomon[] = INCBIN_U16("graphics/pokemon/octomon/shiny.gbapal");
     const u8 gMonIcon_Octomon[] = INCBIN_U8("graphics/pokemon/octomon/icon.4bpp");
 
-    const u32 gMonFrontPic_WormadamTrash[] = INCBIN_U32("graphics/pokemon/nanimon/trash/anim_front.4bpp.lz");
-    const u16 gMonPalette_WormadamTrash[] = INCBIN_U16("graphics/pokemon/nanimon/trash/normal.gbapal");
-    const u32 gMonBackPic_WormadamTrash[] = INCBIN_U32("graphics/pokemon/nanimon/trash/back.4bpp.lz");
-    const u16 gMonShinyPalette_WormadamTrash[] = INCBIN_U16("graphics/pokemon/nanimon/trash/shiny.gbapal");
-    const u8 gMonIcon_WormadamTrash[] = INCBIN_U8("graphics/pokemon/nanimon/trash/icon.4bpp");
+    const u32 gMonFrontPic_Ogremon[] = INCBIN_U32("graphics/pokemon/ogremon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Ogremon[] = INCBIN_U16("graphics/pokemon/ogremon/normal.gbapal");
+    const u32 gMonBackPic_Ogremon[] = INCBIN_U32("graphics/pokemon/ogremon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Ogremon[] = INCBIN_U16("graphics/pokemon/ogremon/shiny.gbapal");
+    const u8 gMonIcon_Ogremon[] = INCBIN_U8("graphics/pokemon/ogremon/icon.4bpp");
 
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Nanimon[] = INCBIN_COMP("graphics/pokemon/nanimon/overworld.4bpp");
     const u32 gObjectEventPic_Octomon[] = INCBIN_COMP("graphics/pokemon/octomon/overworld.4bpp");
-    const u32 gObjectEventPic_WormadamTrash[] = INCBIN_COMP("graphics/pokemon/nanimon/trash/overworld.4bpp");
+    const u32 gObjectEventPic_Ogremon[] = INCBIN_COMP("graphics/pokemon/ogremon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
     const u16 gOverworldPalette_Nanimon[] = INCBIN_U16("graphics/pokemon/nanimon/overworld_normal.gbapal");
     const u16 gOverworldPalette_Octomon[] = INCBIN_U16("graphics/pokemon/octomon/overworld_normal.gbapal");
-    const u16 gOverworldPalette_WormadamTrash[] = INCBIN_U16("graphics/pokemon/nanimon/trash/overworld_normal.gbapal");
+    const u16 gOverworldPalette_Ogremon[] = INCBIN_U16("graphics/pokemon/ogremon/overworld_normal.gbapal");
     const u16 gShinyOverworldPalette_Nanimon[] = INCBIN_U16("graphics/pokemon/nanimon/overworld_shiny.gbapal");
     const u16 gShinyOverworldPalette_Octomon[] = INCBIN_U16("graphics/pokemon/octomon/overworld_shiny.gbapal");
-    const u16 gShinyOverworldPalette_WormadamTrash[] = INCBIN_U16("graphics/pokemon/nanimon/trash/overworld_shiny.gbapal");
+    const u16 gShinyOverworldPalette_Ogremon[] = INCBIN_U16("graphics/pokemon/ogremon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

@@ -18965,7 +18965,7 @@ static const u16 sOctomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sWormadamTrashTeachableLearnset[] = {
+static const u16 sOgremonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIG,
     MOVE_DOUBLE_TEAM,

@@ -424,7 +424,8 @@ Mekanorimon - Burmy (Plant)
 Minotarumon - Burmy (Sandy)
 Mojyamon - Burmy (Trash)
 Nanimon - Wormadam (Plant)
-Octomon - Wormdam (Sandy)
+Octomon - Wormadam (Sandy)
+Ogremon - Wormadam (Trash)
 
 Ultimate List
 
