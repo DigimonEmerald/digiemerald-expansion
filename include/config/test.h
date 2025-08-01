@@ -466,8 +466,8 @@
 #define P_FAMILY_TUSKMON                TRUE
 #undef P_FAMILY_MEKANORIMON
 #define P_FAMILY_MEKANORIMON                   TRUE
-#undef P_FAMILY_COMBEE
-#define P_FAMILY_COMBEE                  TRUE
+#undef P_FAMILY_TESLAJELLYMON
+#define P_FAMILY_TESLAJELLYMON                  TRUE
 #undef P_FAMILY_PACHIRISU
 #define P_FAMILY_PACHIRISU               TRUE
 #undef P_FAMILY_BUIZEL

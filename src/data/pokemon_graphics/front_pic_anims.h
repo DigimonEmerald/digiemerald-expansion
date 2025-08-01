@@ -5531,8 +5531,8 @@ static const union AnimCmd sAnim_Mothim_1[] =
 };
 #endif //P_FAMILY_MEKANORIMON
 
-#if P_FAMILY_COMBEE
-static const union AnimCmd sAnim_Combee_1[] =
+#if P_FAMILY_TESLAJELLYMON
+static const union AnimCmd sAnim_Teslajellymon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 15),
@@ -5557,7 +5557,7 @@ static const union AnimCmd sAnim_Vespiquen_1[] =
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_COMBEE
+#endif //P_FAMILY_TESLAJELLYMON
 
 #if P_FAMILY_PACHIRISU
 static const union AnimCmd sAnim_Pachirisu_1[] =
@@ -11457,10 +11457,10 @@ SINGLE_ANIMATION(Burmy);
 SINGLE_ANIMATION(Wormadam);
 SINGLE_ANIMATION(Mothim);
 #endif //P_FAMILY_MEKANORIMON
-#if P_FAMILY_COMBEE
-SINGLE_ANIMATION(Combee);
+#if P_FAMILY_TESLAJELLYMON
+SINGLE_ANIMATION(Teslajellymon);
 SINGLE_ANIMATION(Vespiquen);
-#endif //P_FAMILY_COMBEE
+#endif //P_FAMILY_TESLAJELLYMON
 #if P_FAMILY_PACHIRISU
 SINGLE_ANIMATION(Pachirisu);
 #endif //P_FAMILY_PACHIRISU

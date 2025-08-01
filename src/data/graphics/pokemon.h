@@ -14546,28 +14546,28 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MEKANORIMON
 
-#if P_FAMILY_COMBEE
-    const u32 gMonFrontPic_Combee[] = INCBIN_U32("graphics/pokemon/combee/anim_front.4bpp.lz");
-    const u16 gMonPalette_Combee[] = INCBIN_U16("graphics/pokemon/combee/normal.gbapal");
-    const u32 gMonBackPic_Combee[] = INCBIN_U32("graphics/pokemon/combee/back.4bpp.lz");
-    const u16 gMonShinyPalette_Combee[] = INCBIN_U16("graphics/pokemon/combee/shiny.gbapal");
-    const u8 gMonIcon_Combee[] = INCBIN_U8("graphics/pokemon/combee/icon.4bpp");
+#if P_FAMILY_TESLAJELLYMON
+    const u32 gMonFrontPic_Teslajellymon[] = INCBIN_U32("graphics/pokemon/teslajellymon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Teslajellymon[] = INCBIN_U16("graphics/pokemon/teslajellymon/normal.gbapal");
+    const u32 gMonBackPic_Teslajellymon[] = INCBIN_U32("graphics/pokemon/teslajellymon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Teslajellymon[] = INCBIN_U16("graphics/pokemon/teslajellymon/shiny.gbapal");
+    const u8 gMonIcon_Teslajellymon[] = INCBIN_U8("graphics/pokemon/teslajellymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Combee[] = INCBIN_U8("graphics/pokemon/combee/footprint.1bpp");
+    const u8 gMonFootprint_Teslajellymon[] = INCBIN_U8("graphics/pokemon/teslajellymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Combee[] = INCBIN_COMP("graphics/pokemon/combee/overworld.4bpp");
+    const u32 gObjectEventPic_Teslajellymon[] = INCBIN_COMP("graphics/pokemon/teslajellymon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Combee[] = INCBIN_U16("graphics/pokemon/combee/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Combee[] = INCBIN_U16("graphics/pokemon/combee/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Teslajellymon[] = INCBIN_U16("graphics/pokemon/teslajellymon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Teslajellymon[] = INCBIN_U16("graphics/pokemon/teslajellymon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u16 gMonPalette_CombeeF[] = INCBIN_U16("graphics/pokemon/combee/normalf.gbapal");
-    const u16 gMonShinyPalette_CombeeF[] = INCBIN_U16("graphics/pokemon/combee/shinyf.gbapal");
+    const u16 gMonPalette_TeslajellymonF[] = INCBIN_U16("graphics/pokemon/teslajellymon/normalf.gbapal");
+    const u16 gMonShinyPalette_TeslajellymonF[] = INCBIN_U16("graphics/pokemon/teslajellymon/shinyf.gbapal");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_CombeeF[] = INCBIN_COMP("graphics/pokemon/combee/overworldf.4bpp");
+    const u32 gObjectEventPic_TeslajellymonF[] = INCBIN_COMP("graphics/pokemon/teslajellymon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
@@ -14586,7 +14586,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Vespiquen[] = INCBIN_U16("graphics/pokemon/vespiquen/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_COMBEE
+#endif //P_FAMILY_TESLAJELLYMON
 
 #if P_FAMILY_PACHIRISU
     const u32 gMonFrontPic_Pachirisu[] = INCBIN_U32("graphics/pokemon/pachirisu/anim_front.4bpp.lz");

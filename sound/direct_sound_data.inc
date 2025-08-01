@@ -3018,15 +3018,15 @@ Cry_Mothim::
 	.incbin "sound/direct_sound_samples/cries/mothim.bin"
 .endif @ P_FAMILY_MEKANORIMON
 
-.if P_FAMILY_COMBEE == TRUE
+.if P_FAMILY_TESLAJELLYMON == TRUE
 	.align 2
-Cry_Combee::
-	.incbin "sound/direct_sound_samples/cries/combee.bin"
+Cry_Teslajellymon::
+	.incbin "sound/direct_sound_samples/cries/teslajellymon.bin"
 
 	.align 2
 Cry_Vespiquen::
 	.incbin "sound/direct_sound_samples/cries/vespiquen.bin"
-.endif @ P_FAMILY_COMBEE
+.endif @ P_FAMILY_TESLAJELLYMON
 
 .if P_FAMILY_PACHIRISU == TRUE
 	.align 2

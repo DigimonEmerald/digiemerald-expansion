@@ -19024,8 +19024,8 @@ static const u16 sMothimTeachableLearnset[] = {
 };
 #endif //P_FAMILY_MEKANORIMON
 
-#if P_FAMILY_COMBEE
-static const u16 sCombeeTeachableLearnset[] = {
+#if P_FAMILY_TESLAJELLYMON
+static const u16 sTeslajellymonTeachableLearnset[] = {
     MOVE_MUD_SLAP,
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
@@ -19058,7 +19058,7 @@ static const u16 sVespiquenTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_COMBEE
+#endif //P_FAMILY_TESLAJELLYMON
 
 #if P_FAMILY_PACHIRISU
 static const u16 sPachirisuTeachableLearnset[] = {

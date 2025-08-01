@@ -2455,7 +2455,7 @@ static u16 GetBerryPestSpecies(u8 berryId)
             return P_FAMILY_MEKANORIMON ? SPECIES_MEKANORIMON : SPECIES_NONE;
             break;
         case BERRY_COLOR_YELLOW:
-            return P_FAMILY_COMBEE ? SPECIES_COMBEE : SPECIES_NONE;
+            return P_FAMILY_TESLAJELLYMON ? SPECIES_TESLAJELLYMON : SPECIES_NONE;
             break;
         case BERRY_COLOR_PINK:
             return P_FAMILY_METALSEADRAMON ? SPECIES_SPEWPA : SPECIES_NONE;

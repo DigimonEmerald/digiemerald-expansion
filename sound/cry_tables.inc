@@ -1126,10 +1126,10 @@ gCryTable::
 	cry Cry_Wormadam
 	cry Cry_Mothim
 .endif @ P_FAMILY_MEKANORIMON
-.if P_FAMILY_COMBEE == TRUE
-	cry Cry_Combee
+.if P_FAMILY_TESLAJELLYMON == TRUE
+	cry Cry_Teslajellymon
 	cry Cry_Vespiquen
-.endif @ P_FAMILY_COMBEE
+.endif @ P_FAMILY_TESLAJELLYMON
 .if P_FAMILY_PACHIRISU == TRUE
 	cry Cry_Pachirisu
 .endif @ P_FAMILY_PACHIRISU
@@ -3554,10 +3554,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Wormadam
 	cry_reverse Cry_Mothim
 .endif @ P_FAMILY_MEKANORIMON
-.if P_FAMILY_COMBEE == TRUE
-	cry_reverse Cry_Combee
+.if P_FAMILY_TESLAJELLYMON == TRUE
+	cry_reverse Cry_Teslajellymon
 	cry_reverse Cry_Vespiquen
-.endif @ P_FAMILY_COMBEE
+.endif @ P_FAMILY_TESLAJELLYMON
 .if P_FAMILY_PACHIRISU == TRUE
 	cry_reverse Cry_Pachirisu
 .endif @ P_FAMILY_PACHIRISU

@@ -3243,19 +3243,19 @@ static const struct SpriteFrameImage sPicTable_Mothim[] = {
 };
 #endif //P_FAMILY_MEKANORIMON
 
-#if P_FAMILY_COMBEE
-static const struct SpriteFrameImage sPicTable_Combee[] = {
-    overworld_ascending_frames(gObjectEventPic_Combee, 4, 4),
+#if P_FAMILY_TESLAJELLYMON
+static const struct SpriteFrameImage sPicTable_Teslajellymon[] = {
+    overworld_ascending_frames(gObjectEventPic_Teslajellymon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_CombeeF[] = {
-    overworld_ascending_frames(gObjectEventPic_CombeeF, 4, 4),
+static const struct SpriteFrameImage sPicTable_TeslajellymonF[] = {
+    overworld_ascending_frames(gObjectEventPic_TeslajellymonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 static const struct SpriteFrameImage sPicTable_Vespiquen[] = {
     overworld_ascending_frames(gObjectEventPic_Vespiquen, 4, 4),
 };
-#endif //P_FAMILY_COMBEE
+#endif //P_FAMILY_TESLAJELLYMON
 
 #if P_FAMILY_PACHIRISU
 static const struct SpriteFrameImage sPicTable_Pachirisu[] = {

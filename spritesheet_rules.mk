@@ -2418,10 +2418,10 @@ $(POKEMONGFXDIR)/nanimon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/mothim/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/combee/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/teslajellymon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/combee/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/teslajellymon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/vespiquen/overworld.4bpp: %.4bpp: %.png

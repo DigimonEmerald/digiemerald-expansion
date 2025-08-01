@@ -8526,12 +8526,18 @@ static const struct LevelUpMove sMothimLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_MEKANORIMON
 
-#if P_FAMILY_COMBEE
-static const struct LevelUpMove sCombeeLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_GUST),
-    LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
-    LEVEL_UP_MOVE( 1, MOVE_BUG_BITE),
-    LEVEL_UP_MOVE( 1, MOVE_STRUGGLE_BUG),
+#if P_FAMILY_TESLAJELLYMON
+static const struct LevelUpMove sTeslajellymonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_TORMENT),
+    LEVEL_UP_MOVE( 1, MOVE_NUZZLE),
+    LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
+    LEVEL_UP_MOVE( 1, MOVE_SWAGGER),
+    LEVEL_UP_MOVE(20, MOVE_THUNDER_PUNCH),
+    LEVEL_UP_MOVE(24, MOVE_AQUA_JET),
+    LEVEL_UP_MOVE(28, MOVE_CIRCLE_THROW),
+    LEVEL_UP_MOVE(32, MOVE_WORK_UP),
+    LEVEL_UP_MOVE(36, MOVE_THUNDERBOLT),
+    LEVEL_UP_MOVE(40, MOVE_ACID_ARMOR),
     LEVEL_UP_END
 };
 
@@ -8557,7 +8563,7 @@ static const struct LevelUpMove sVespiquenLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_DESTINY_BOND),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_COMBEE
+#endif //P_FAMILY_TESLAJELLYMON
 
 #if P_FAMILY_PACHIRISU
 static const struct LevelUpMove sPachirisuLevelUpLearnset[] = {

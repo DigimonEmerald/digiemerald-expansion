@@ -13562,45 +13562,47 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_MOTHIM_TRASH] = MOTHIM_SPECIES_INFO,
 #endif //P_FAMILY_MEKANORIMON
 
-#if P_FAMILY_COMBEE
-    [SPECIES_COMBEE] =
+#if P_FAMILY_TESLAJELLYMON
+    [SPECIES_TESLAJELLYMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 30,
-        .baseDefense   = 42,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 42,
-        .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
-        .catchRate = 120,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 49 : 63,
+        .baseHP        = 70,
+        .baseAttack    = 60,
+        .baseDefense   = 45,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_WATER, TYPE_ELECTRIC),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
         .evYield_Speed = 1,
+        .evYield_SpAttack = 3,
         .itemRare = ITEM_HONEY,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_HONEY_GATHER, ABILITY_NONE, ABILITY_HUSTLE },
-        .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Combee"),
-        .cryId = CRY_COMBEE,
-        .natDexNum = NATIONAL_DEX_COMBEE,
-        .categoryName = _("Tiny Bee"),
-        .height = 3,
-        .weight = 55,
+        .abilities = { ABILITY_STATIC, ABILITY_TRANSISTOR, ABILITY_CLEAR_BODY },
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("TeslaJellmon"),
+        .cryId = CRY_TESLAJELLYMON,
+        .natDexNum = NATIONAL_DEX_TESLAJELLYMON,
+        .categoryName = _("Jellyfish"),
+        .height = 15,
+        .weight = 217,
         .description = COMPOUND_STRING(
-            "A Pokémon formed by three others.\n"
-            "It constantly gathers honey from flowers\n"
-            "to please Vespiquen. At night, they\n"
-            "cluster to form a beehive and sleep."),
+            "TeslaJellymons constant search for\n"
+            "stimulation and pleasure leads it to\n"
+            "absorb data from human death matches\n"
+            "letting it be a strong CQC fighter."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Combee,
+        .frontPic = gMonFrontPic_Teslajellymon,
         .frontPicSize = MON_COORDS_SIZE(64, 40),
-        .frontPicYOffset = 16,
+        .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 10),
             ANIMCMD_FRAME(1, 15),
@@ -13611,41 +13613,40 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 1),
         ),
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
-        .enemyMonElevation = 15,
-        .backPic = gMonBackPic_Combee,
+        .backPic = gMonBackPic_Teslajellymon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
-        .backPicYOffset = 22,
+        .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Combee,
-        .shinyPalette = gMonShinyPalette_Combee,
-        .iconSprite = gMonIcon_Combee,
+        .palette = gMonPalette_Teslajellymon,
+        .shinyPalette = gMonShinyPalette_Teslajellymon,
+        .iconSprite = gMonIcon_Teslajellymon,
         .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
-        .paletteFemale = gMonPalette_CombeeF,
-        .shinyPaletteFemale = gMonShinyPalette_CombeeF,
+        .paletteFemale = gMonPalette_TeslajellymonF,
+        .shinyPaletteFemale = gMonShinyPalette_TeslajellymonF,
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-4, 10, SHADOW_SIZE_S)
-        FOOTPRINT(Combee)
+        SHADOW(-2, 6, SHADOW_SIZE_L)
+        FOOTPRINT(Teslajellymon)
         OVERWORLD(
-            sPicTable_Combee,
+            sPicTable_Teslajellymon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Combee,
-            gShinyOverworldPalette_Combee
+            gOverworldPalette_Teslajellymon,
+            gShinyOverworldPalette_Teslajellymon
         )
         OVERWORLD_FEMALE(
-            sPicTable_CombeeF,
+            sPicTable_TeslajellymonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
         .tmIlliterate = TRUE,
-        .levelUpLearnset = sCombeeLevelUpLearnset,
-        .teachableLearnset = sCombeeTeachableLearnset,
+        .levelUpLearnset = sTeslajellymonLevelUpLearnset,
+        .teachableLearnset = sTeslajellymonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_VESPIQUEN, CONDITIONS({IF_GENDER, MON_GENDERLESS})}),
     },
 
@@ -13724,7 +13725,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sVespiquenLevelUpLearnset,
         .teachableLearnset = sVespiquenTeachableLearnset,
     },
-#endif //P_FAMILY_COMBEE
+#endif //P_FAMILY_TESLAJELLYMON
 
 #if P_FAMILY_PACHIRISU
     [SPECIES_PACHIRISU] =
