@@ -6841,14 +6841,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .enemyMonElevation = P_GBA_STYLE_SPECIES_GFX ? 6 : 0,
         .backPic = gMonBackPic_Espimon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 6 : 1,
+        .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Espimon,
         .shinyPalette = gMonShinyPalette_Espimon,
         .iconSprite = gMonIcon_Espimon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(0, 12, SHADOW_SIZE_M)
         FOOTPRINT(Espimon)
         OVERWORLD(
             sPicTable_Espimon,
