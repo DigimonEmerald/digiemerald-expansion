@@ -4083,7 +4083,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Pagumon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(64, 32),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 11 : 16,
+        .frontPicYOffset = 14,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 20),
             ANIMCMD_FRAME(1, 50),
@@ -4092,14 +4092,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
         .backPic = gMonBackPic_Pagumon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 14 : 13,
+        .backPicYOffset = 19,
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Pagumon,
         .shinyPalette = gMonShinyPalette_Pagumon,
         .iconSprite = gMonIcon_Pagumon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(1, -5, SHADOW_SIZE_L)
+        SHADOW(9, -6, SHADOW_SIZE_M)
         FOOTPRINT(Pagumon)
         OVERWORLD(
             sPicTable_Pagumon,
