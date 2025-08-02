@@ -8928,7 +8928,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Hawkmon,
         .frontPicSize = MON_COORDS_SIZE(32, 32),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 20 : 17,
+        .frontPicYOffset = 2,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 15),
             ANIMCMD_FRAME(1, 20),
@@ -8940,14 +8940,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontAnimDelay = 30,
         .backPic = gMonBackPic_Hawkmon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 32) : MON_COORDS_SIZE(40, 40),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 17 : 15,
+        .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
         .palette = gMonPalette_Hawkmon,
         .shinyPalette = gMonShinyPalette_Hawkmon,
         .iconSprite = gMonIcon_Hawkmon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 0 : 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-2, -4, SHADOW_SIZE_S)
+        SHADOW(3, 12, SHADOW_SIZE_L)
         FOOTPRINT(Hawkmon)
         OVERWORLD(
             sPicTable_Hawkmon,
