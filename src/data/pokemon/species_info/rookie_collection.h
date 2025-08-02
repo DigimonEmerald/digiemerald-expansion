@@ -10303,7 +10303,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Kotemon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 48) : MON_COORDS_SIZE(64, 40),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 10 : 14,
+        .frontPicYOffset = 3,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 2),
             ANIMCMD_FRAME(0, 2),
@@ -10329,17 +10329,16 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
             ANIMCMD_FRAME(0, 2),
         ),
         .frontAnimId = ANIM_FIGURE_8,
-        .enemyMonElevation = P_GBA_STYLE_SPECIES_GFX ? 8 : 13,
         .backPic = gMonBackPic_Kotemon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 0,
+        .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         .palette = gMonPalette_Kotemon,
         .shinyPalette = gMonShinyPalette_Kotemon,
         .iconSprite = gMonIcon_Kotemon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-2, 10, SHADOW_SIZE_S)
+        SHADOW(0, 5, SHADOW_SIZE_L)
         FOOTPRINT(Kotemon)
         OVERWORLD(
             sPicTable_Kotemon,

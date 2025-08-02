@@ -3057,7 +3057,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .catchRate = 90,
         .expYield = 142,
         .evYield_Attack = 2,
-        .genderRatio = MON_GENDERLESS
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
@@ -3130,7 +3130,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .catchRate = 95,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 253 : 227,
         .evYield_Attack = 3,
-        .genderRatio = MON_GENDERLESS
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
