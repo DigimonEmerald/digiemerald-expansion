@@ -13,6 +13,7 @@
 ### Digimon Sprites
 - [Reza3u/Rezatri](https://www.deviantart.com/reza3u)
 - [Fenrir](https://happygalgomon.neocities.org/)
+- [Pixelmonchile](https://www.pixilart.com/pixelmonchile)
 - [DragonRod Art](https://bsky.app/profile/dragonrod342.bsky.social)
 
 ### Balancing Team

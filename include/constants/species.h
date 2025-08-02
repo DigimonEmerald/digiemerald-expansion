@@ -550,7 +550,7 @@
 #define SPECIES_METALTYRANNOMON                               530
 #define SPECIES_DATAMON                                  531
 #define SPECIES_PUMPKINMON                                 532
-#define SPECIES_GURDURR                                 533
+#define SPECIES_PIXIMON                                 533
 #define SPECIES_CONKELDURR                              534
 #define SPECIES_TYMPOLE                                 535
 #define SPECIES_PALPITOAD                               536

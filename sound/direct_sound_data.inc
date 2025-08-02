@@ -3520,8 +3520,8 @@ Cry_Pumpkinmon::
 	.incbin "sound/direct_sound_samples/cries/pumpkinmon.bin"
 
 	.align 2
-Cry_Gurdurr::
-	.incbin "sound/direct_sound_samples/cries/gurdurr.bin"
+Cry_Piximon::
+	.incbin "sound/direct_sound_samples/cries/piximon.bin"
 
 	.align 2
 Cry_Conkeldurr::

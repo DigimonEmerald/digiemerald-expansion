@@ -6671,7 +6671,7 @@ static const union AnimCmd sAnim_Pumpkinmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Gurdurr_1[] =
+static const union AnimCmd sAnim_Piximon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -11679,7 +11679,7 @@ SINGLE_ANIMATION(Okuwamon);
 #endif //P_FAMILY_DATAMON
 #if P_FAMILY_PUMPKINMON
 SINGLE_ANIMATION(Pumpkinmon);
-SINGLE_ANIMATION(Gurdurr);
+SINGLE_ANIMATION(Piximon);
 SINGLE_ANIMATION(Conkeldurr);
 #endif //P_FAMILY_PUMPKINMON
 #if P_FAMILY_TYMPOLE

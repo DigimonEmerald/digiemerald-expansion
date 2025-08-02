@@ -16587,19 +16587,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Gurdurr[] = INCBIN_U32("graphics/pokemon/gurdurr/anim_front.4bpp.lz");
-    const u16 gMonPalette_Gurdurr[] = INCBIN_U16("graphics/pokemon/gurdurr/normal.gbapal");
-    const u32 gMonBackPic_Gurdurr[] = INCBIN_U32("graphics/pokemon/gurdurr/back.4bpp.lz");
-    const u16 gMonShinyPalette_Gurdurr[] = INCBIN_U16("graphics/pokemon/gurdurr/shiny.gbapal");
-    const u8 gMonIcon_Gurdurr[] = INCBIN_U8("graphics/pokemon/gurdurr/icon.4bpp");
+    const u32 gMonFrontPic_Piximon[] = INCBIN_U32("graphics/pokemon/piximon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Piximon[] = INCBIN_U16("graphics/pokemon/piximon/normal.gbapal");
+    const u32 gMonBackPic_Piximon[] = INCBIN_U32("graphics/pokemon/piximon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Piximon[] = INCBIN_U16("graphics/pokemon/piximon/shiny.gbapal");
+    const u8 gMonIcon_Piximon[] = INCBIN_U8("graphics/pokemon/piximon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Gurdurr[] = INCBIN_U8("graphics/pokemon/gurdurr/footprint.1bpp");
+    const u8 gMonFootprint_Piximon[] = INCBIN_U8("graphics/pokemon/piximon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Gurdurr[] = INCBIN_COMP("graphics/pokemon/gurdurr/overworld.4bpp");
+    const u32 gObjectEventPic_Piximon[] = INCBIN_COMP("graphics/pokemon/piximon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Gurdurr[] = INCBIN_U16("graphics/pokemon/gurdurr/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Gurdurr[] = INCBIN_U16("graphics/pokemon/gurdurr/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Piximon[] = INCBIN_U16("graphics/pokemon/piximon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Piximon[] = INCBIN_U16("graphics/pokemon/piximon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

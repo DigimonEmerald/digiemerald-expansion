@@ -1336,7 +1336,7 @@ gCryTable::
 .endif @ P_FAMILY_DATAMON
 .if P_FAMILY_PUMPKINMON == TRUE
 	cry Cry_Pumpkinmon
-	cry Cry_Gurdurr
+	cry Cry_Piximon
 	cry Cry_Conkeldurr
 .endif @ P_FAMILY_PUMPKINMON
 .if P_FAMILY_TYMPOLE == TRUE
@@ -3764,7 +3764,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_DATAMON
 .if P_FAMILY_PUMPKINMON == TRUE
 	cry_reverse Cry_Pumpkinmon
-	cry_reverse Cry_Gurdurr
+	cry_reverse Cry_Piximon
 	cry_reverse Cry_Conkeldurr
 .endif @ P_FAMILY_PUMPKINMON
 .if P_FAMILY_TYMPOLE == TRUE
