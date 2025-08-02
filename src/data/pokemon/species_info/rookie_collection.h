@@ -13511,7 +13511,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Patamon,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
-        .frontPicYOffset = 12,
+        .frontPicYOffset = 10,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 11),
             ANIMCMD_FRAME(1, 10),
@@ -13522,14 +13522,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontAnimId = ANIM_H_SLIDE,
         .backPic = gMonBackPic_Patamon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 40) : MON_COORDS_SIZE(56, 48),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 12 : 8,
+        .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Patamon,
         .shinyPalette = gMonShinyPalette_Patamon,
         .iconSprite = gMonIcon_Patamon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(0, 1, SHADOW_SIZE_M)
+        SHADOW(-3, 1, SHADOW_SIZE_M)
         FOOTPRINT(Patamon)
         OVERWORLD(
             sPicTable_Patamon,
