@@ -8,6 +8,18 @@
 <!-- - **Syreldar**: testing, wrote an explanation post -->
 <!-- - **Pyredrid**: automating issue creation, code review and testing -->
 
+## Digimon Emerald Credits ✨
+
+### Digimon Sprites
+- [Reza3u/Rezatri](https://www.deviantart.com/reza3u)
+
+### Balancing Team
+- Ferio Triforce
+- LegendTamer
+- Mikaelly
+- Void
+
+
 ## RHH Credits ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
@@ -78,16 +90,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
-
-## Digimon Emerald Credits
-### Digimon Sprites
-- [Reza3u/Rezatri](https://www.deviantart.com/reza3u)
-
-### Balancing Team
-- Ferio Triforce
-- LegendTamer
-- Mikaelly
-- Void
 
 ## Other Credits
 ### Mega Evolution Overworld Sprite Credits:
