@@ -2973,42 +2973,44 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DATAMON
 
-#if P_FAMILY_TIMBURR
-    [SPECIES_TIMBURR] =
+#if P_FAMILY_PUMPKINMON
+    [SPECIES_PUMPKINMON] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 80,
-        .baseDefense   = 55,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 35,
-        .types = MON_TYPES(TYPE_FIGHTING),
-        .catchRate = 180,
-        .expYield = 61,
-        .evYield_Attack = 1,
-        .genderRatio = PERCENT_FEMALE(25),
+        .baseHP        = 70,
+        .baseAttack    = 100,
+        .baseDefense   = 80,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FAIRY),
+        .attribute = TYPE_DATA,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_Attack = 3,
+        .evYield_SpAttack = 2,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = 70,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_GUTS, ABILITY_SHEER_FORCE, ABILITY_IRON_FIST },
-        .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Timburr"),
-        .cryId = CRY_TIMBURR,
-        .natDexNum = NATIONAL_DEX_TIMBURR,
-        .categoryName = _("Muscular"),
-        .height = 6,
-        .weight = 125,
+        .abilities = { ABILITY_OVERGROW, ABILITY_RIPEN, ABILITY_SUPERSWEET_SYRUP },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Pumpkinmon"),
+        .cryId = CRY_PUMPKINMON,
+        .natDexNum = NATIONAL_DEX_PUMPKINMON,
+        .categoryName = _("Halloween"),
+        .height = 11,
+        .weight = 203,
         .description = COMPOUND_STRING(
-            "These Pokémon appear at building\n"
-            "sites and help out with construction.\n"
-            "They always carry squared logs.\n"
-            "As they grow, they carry bigger logs."),
+            "A popular urban legend is that\n"
+            "Pumpkinmon is formed from a computer\n"
+            "virus that mutated during Halloween.\n"
+            "It is a very expressive Digimon."),
         .pokemonScale = 422,
         .pokemonOffset = 14,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Timburr,
+        .frontPic = gMonFrontPic_Pumpkinmon,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 12,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3017,29 +3019,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Timburr,
+        .backPic = gMonBackPic_Pumpkinmon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 15,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Timburr,
-        .shinyPalette = gMonShinyPalette_Timburr,
-        .iconSprite = gMonIcon_Timburr,
+        .palette = gMonPalette_Pumpkinmon,
+        .shinyPalette = gMonShinyPalette_Pumpkinmon,
+        .iconSprite = gMonIcon_Pumpkinmon,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(-4, 2, SHADOW_SIZE_S)
-        FOOTPRINT(Timburr)
+        FOOTPRINT(Pumpkinmon)
         OVERWORLD(
-            sPicTable_Timburr,
+            sPicTable_Pumpkinmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Timburr,
-            gShinyOverworldPalette_Timburr
+            gOverworldPalette_Pumpkinmon,
+            gShinyOverworldPalette_Pumpkinmon
         )
-        .levelUpLearnset = sTimburrLevelUpLearnset,
-        .teachableLearnset = sTimburrTeachableLearnset,
-        .eggMoveLearnset = sTimburrEggMoveLearnset,
+        .levelUpLearnset = sPumpkinmonLevelUpLearnset,
+        .teachableLearnset = sPumpkinmonTeachableLearnset,
+        .eggMoveLearnset = sPumpkinmonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_GURDURR}),
     },
 
@@ -3055,7 +3057,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .catchRate = 90,
         .expYield = 142,
         .evYield_Attack = 2,
-        .genderRatio = PERCENT_FEMALE(25),
+        .genderRatio = MON_GENDERLESS
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
@@ -3128,7 +3130,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .catchRate = 95,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 253 : 227,
         .evYield_Attack = 3,
-        .genderRatio = PERCENT_FEMALE(25),
+        .genderRatio = MON_GENDERLESS
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
@@ -3181,7 +3183,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sConkeldurrLevelUpLearnset,
         .teachableLearnset = sConkeldurrTeachableLearnset,
     },
-#endif //P_FAMILY_TIMBURR
+#endif //P_FAMILY_PUMPKINMON
 
 #if P_FAMILY_TYMPOLE
     [SPECIES_TYMPOLE] =

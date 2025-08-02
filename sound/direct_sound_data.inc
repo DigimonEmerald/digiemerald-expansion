@@ -3514,10 +3514,10 @@ Cry_Okuwamon::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_DATAMON
 
-.if P_FAMILY_TIMBURR == TRUE
+.if P_FAMILY_PUMPKINMON == TRUE
 	.align 2
-Cry_Timburr::
-	.incbin "sound/direct_sound_samples/cries/timburr.bin"
+Cry_Pumpkinmon::
+	.incbin "sound/direct_sound_samples/cries/pumpkinmon.bin"
 
 	.align 2
 Cry_Gurdurr::
@@ -3526,7 +3526,7 @@ Cry_Gurdurr::
 	.align 2
 Cry_Conkeldurr::
 	.incbin "sound/direct_sound_samples/cries/conkeldurr.bin"
-.endif @ P_FAMILY_TIMBURR
+.endif @ P_FAMILY_PUMPKINMON
 
 .if P_FAMILY_TYMPOLE == TRUE
 	.align 2

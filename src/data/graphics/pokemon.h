@@ -16570,20 +16570,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DATAMON
 
-#if P_FAMILY_TIMBURR
-    const u32 gMonFrontPic_Timburr[] = INCBIN_U32("graphics/pokemon/timburr/anim_front.4bpp.lz");
-    const u16 gMonPalette_Timburr[] = INCBIN_U16("graphics/pokemon/timburr/normal.gbapal");
-    const u32 gMonBackPic_Timburr[] = INCBIN_U32("graphics/pokemon/timburr/back.4bpp.lz");
-    const u16 gMonShinyPalette_Timburr[] = INCBIN_U16("graphics/pokemon/timburr/shiny.gbapal");
-    const u8 gMonIcon_Timburr[] = INCBIN_U8("graphics/pokemon/timburr/icon.4bpp");
+#if P_FAMILY_PUMPKINMON
+    const u32 gMonFrontPic_Pumpkinmon[] = INCBIN_U32("graphics/pokemon/pumpkinmon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Pumpkinmon[] = INCBIN_U16("graphics/pokemon/pumpkinmon/normal.gbapal");
+    const u32 gMonBackPic_Pumpkinmon[] = INCBIN_U32("graphics/pokemon/pumpkinmon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Pumpkinmon[] = INCBIN_U16("graphics/pokemon/pumpkinmon/shiny.gbapal");
+    const u8 gMonIcon_Pumpkinmon[] = INCBIN_U8("graphics/pokemon/pumpkinmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Timburr[] = INCBIN_U8("graphics/pokemon/timburr/footprint.1bpp");
+    const u8 gMonFootprint_Pumpkinmon[] = INCBIN_U8("graphics/pokemon/pumpkinmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Timburr[] = INCBIN_COMP("graphics/pokemon/timburr/overworld.4bpp");
+    const u32 gObjectEventPic_Pumpkinmon[] = INCBIN_COMP("graphics/pokemon/pumpkinmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Timburr[] = INCBIN_U16("graphics/pokemon/timburr/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Timburr[] = INCBIN_U16("graphics/pokemon/timburr/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Pumpkinmon[] = INCBIN_U16("graphics/pokemon/pumpkinmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Pumpkinmon[] = INCBIN_U16("graphics/pokemon/pumpkinmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16618,7 +16618,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Conkeldurr[] = INCBIN_U16("graphics/pokemon/conkeldurr/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_TIMBURR
+#endif //P_FAMILY_PUMPKINMON
 
 #if P_FAMILY_TYMPOLE
     const u32 gMonFrontPic_Tympole[] = INCBIN_U32("graphics/pokemon/tympole/anim_front.4bpp.lz");

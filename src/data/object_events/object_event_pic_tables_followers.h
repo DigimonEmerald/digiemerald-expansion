@@ -3870,9 +3870,9 @@ static const struct SpriteFrameImage sPicTable_Okuwamon[] = {
 #endif // OW_BATTLE_ONLY_FORMS
 #endif //P_FAMILY_DATAMON
 
-#if P_FAMILY_TIMBURR
-static const struct SpriteFrameImage sPicTable_Timburr[] = {
-    overworld_ascending_frames(gObjectEventPic_Timburr, 4, 4),
+#if P_FAMILY_PUMPKINMON
+static const struct SpriteFrameImage sPicTable_Pumpkinmon[] = {
+    overworld_ascending_frames(gObjectEventPic_Pumpkinmon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Gurdurr[] = {
     overworld_ascending_frames(gObjectEventPic_Gurdurr, 4, 4),
@@ -3880,7 +3880,7 @@ static const struct SpriteFrameImage sPicTable_Gurdurr[] = {
 static const struct SpriteFrameImage sPicTable_Conkeldurr[] = {
     overworld_ascending_frames(gObjectEventPic_Conkeldurr, 4, 4),
 };
-#endif //P_FAMILY_TIMBURR
+#endif //P_FAMILY_PUMPKINMON
 
 #if P_FAMILY_TYMPOLE
 static const struct SpriteFrameImage sPicTable_Tympole[] = {

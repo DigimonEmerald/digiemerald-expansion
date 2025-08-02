@@ -6662,8 +6662,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Okuwamon);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DATAMON
 
-#if P_FAMILY_TIMBURR
-static const union AnimCmd sAnim_Timburr_1[] =
+#if P_FAMILY_PUMPKINMON
+static const union AnimCmd sAnim_Pumpkinmon_1[] =
 {
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_FRAME(1, 10),
@@ -6689,7 +6689,7 @@ static const union AnimCmd sAnim_Conkeldurr_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_TIMBURR
+#endif //P_FAMILY_PUMPKINMON
 
 #if P_FAMILY_TYMPOLE
 static const union AnimCmd sAnim_Tympole_1[] =
@@ -11677,11 +11677,11 @@ SINGLE_ANIMATION(Datamon);
 SINGLE_ANIMATION(Okuwamon);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DATAMON
-#if P_FAMILY_TIMBURR
-SINGLE_ANIMATION(Timburr);
+#if P_FAMILY_PUMPKINMON
+SINGLE_ANIMATION(Pumpkinmon);
 SINGLE_ANIMATION(Gurdurr);
 SINGLE_ANIMATION(Conkeldurr);
-#endif //P_FAMILY_TIMBURR
+#endif //P_FAMILY_PUMPKINMON
 #if P_FAMILY_TYMPOLE
 SINGLE_ANIMATION(Tympole);
 SINGLE_ANIMATION(Palpitoad);

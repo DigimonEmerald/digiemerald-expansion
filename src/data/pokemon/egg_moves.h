@@ -4169,8 +4169,8 @@ static const u16 sDatamonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_DATAMON
 
-#if P_FAMILY_TIMBURR
-static const u16 sTimburrEggMoveLearnset[] = {
+#if P_FAMILY_PUMPKINMON
+static const u16 sPumpkinmonEggMoveLearnset[] = {
     MOVE_DRAIN_PUNCH,
     MOVE_ENDURE,
     MOVE_COUNTER,
@@ -4185,7 +4185,7 @@ static const u16 sTimburrEggMoveLearnset[] = {
     MOVE_POWER_UP_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TIMBURR
+#endif //P_FAMILY_PUMPKINMON
 
 #if P_FAMILY_TYMPOLE
 static const u16 sTympoleEggMoveLearnset[] = {

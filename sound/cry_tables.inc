@@ -1334,11 +1334,11 @@ gCryTable::
 	cry Cry_Okuwamon
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_DATAMON
-.if P_FAMILY_TIMBURR == TRUE
-	cry Cry_Timburr
+.if P_FAMILY_PUMPKINMON == TRUE
+	cry Cry_Pumpkinmon
 	cry Cry_Gurdurr
 	cry Cry_Conkeldurr
-.endif @ P_FAMILY_TIMBURR
+.endif @ P_FAMILY_PUMPKINMON
 .if P_FAMILY_TYMPOLE == TRUE
 	cry Cry_Tympole
 	cry Cry_Palpitoad
@@ -3762,11 +3762,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Okuwamon
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_DATAMON
-.if P_FAMILY_TIMBURR == TRUE
-	cry_reverse Cry_Timburr
+.if P_FAMILY_PUMPKINMON == TRUE
+	cry_reverse Cry_Pumpkinmon
 	cry_reverse Cry_Gurdurr
 	cry_reverse Cry_Conkeldurr
-.endif @ P_FAMILY_TIMBURR
+.endif @ P_FAMILY_PUMPKINMON
 .if P_FAMILY_TYMPOLE == TRUE
 	cry_reverse Cry_Tympole
 	cry_reverse Cry_Palpitoad

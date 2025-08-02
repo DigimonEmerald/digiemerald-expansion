@@ -22210,8 +22210,8 @@ static const u16 sDatamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DATAMON
 
-#if P_FAMILY_TIMBURR
-static const u16 sTimburrTeachableLearnset[] = {
+#if P_FAMILY_PUMPKINMON
+static const u16 sPumpkinmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -22315,7 +22315,7 @@ static const u16 sConkeldurrTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TIMBURR
+#endif //P_FAMILY_PUMPKINMON
 
 #if P_FAMILY_TYMPOLE
 static const u16 sTympoleTeachableLearnset[] = {

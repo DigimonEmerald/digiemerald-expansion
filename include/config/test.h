@@ -568,8 +568,8 @@
 #define P_FAMILY_MEGADRAMON                 TRUE
 #undef P_FAMILY_DATAMON
 #define P_FAMILY_DATAMON                  TRUE
-#undef P_FAMILY_TIMBURR
-#define P_FAMILY_TIMBURR                 TRUE
+#undef P_FAMILY_PUMPKINMON
+#define P_FAMILY_PUMPKINMON                 TRUE
 #undef P_FAMILY_TYMPOLE
 #define P_FAMILY_TYMPOLE                 TRUE
 #undef P_FAMILY_THROH
