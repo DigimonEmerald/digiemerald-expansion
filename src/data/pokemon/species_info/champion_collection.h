@@ -10323,7 +10323,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .trainerOffset = 3,
         .frontPic = gMonFrontPic_Gatomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 2 : 0,
+        .frontPicYOffset = 7,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 10),
             ANIMCMD_FRAME(1, 10),
@@ -10332,17 +10332,16 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_V_SHAKE : ANIM_CIRCLE_C_CLOCKWISE_SLOW,
-        .enemyMonElevation = 6,
         .backPic = gMonBackPic_Gatomon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 64) : MON_COORDS_SIZE(56, 64),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 3 : 0,
+        .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_H_VIBRATE,
         .palette = gMonPalette_Gatomon,
         .shinyPalette = gMonShinyPalette_Gatomon,
         .iconSprite = gMonIcon_Gatomon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 2 : 0,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(1, 17, SHADOW_SIZE_M)
+        SHADOW(-4, 3, SHADOW_SIZE_M)
         FOOTPRINT(Gatomon)
         OVERWORLD(
             sPicTable_Gatomon,
