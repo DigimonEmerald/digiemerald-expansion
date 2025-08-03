@@ -83,11 +83,11 @@ const u8 gMetalseadramonPokedexText[] = _(
     "MetalSeadramon was remodeled as a Digimon\n"
     "for interception in the sea.");
 
-const u8 gSpewpaPokedexText[] = _(
-    "It lives hidden within thicket shadows.\n"
-    "When predators attack, it quickly bristles\n"
-    "the fur covering its body in an effort to\n"
-    "threaten them.");
+const u8 gPukumonPokedexText[] = _(
+    "Pukumon was created by one of Britains\n"
+    "strongest hackers. It has a rebellious\n"
+    "attitude that leads to it fighting any\n"
+    "opponent regardless of their strength.");
 
 const u8 gFurfrouPokedexText[] = _(
     "Trimming its fluffy fur not only makes\n"

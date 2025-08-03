@@ -1624,7 +1624,7 @@ gCryTable::
 .endif @ P_FAMILY_DINOMON
 .if P_FAMILY_METALSEADRAMON == TRUE
 	cry Cry_Metalseadramon
-	cry Cry_Spewpa
+	cry Cry_Pukumon
 	cry Cry_Vivillon
 .endif @ P_FAMILY_METALSEADRAMON
 .if P_FAMILY_LITLEO == TRUE
@@ -4052,7 +4052,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_DINOMON
 .if P_FAMILY_METALSEADRAMON == TRUE
 	cry_reverse Cry_Metalseadramon
-	cry_reverse Cry_Spewpa
+	cry_reverse Cry_Pukumon
 	cry_reverse Cry_Vivillon
 .endif @ P_FAMILY_METALSEADRAMON
 .if P_FAMILY_LITLEO == TRUE

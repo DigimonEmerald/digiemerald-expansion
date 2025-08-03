@@ -4231,8 +4231,8 @@ Cry_Metalseadramon::
 	.incbin "sound/direct_sound_samples/cries/metalseadramon.bin"
 
 	.align 2
-Cry_Spewpa::
-	.incbin "sound/direct_sound_samples/cries/spewpa.bin"
+Cry_Pukumon::
+	.incbin "sound/direct_sound_samples/cries/pukumon.bin"
 
 	.align 2
 Cry_Vivillon::

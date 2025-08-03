@@ -1209,7 +1209,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .teachableLearnset = sMetalseadramonTeachableLearnset,                                  \
         .eggMoveLearnset = sMetalseadramonEggMoveLearnset,                                      \
         .formSpeciesIdTable = sMetalseadramonFormSpeciesIdTable,                                \
-        .evolutions = EVOLUTION({EVO_LEVEL, 9, SPECIES_SPEWPA_##evolution}),                \
+        .evolutions = EVOLUTION({EVO_LEVEL, 9, SPECIES_PUKUMON_##evolution}),                \
     }                                                                                       \
 
     [SPECIES_METALSEADRAMON_ICY_SNOW]    = MTLSEADRAMON_SPECIES_INFO(ICY_SNOW),
@@ -1233,88 +1233,91 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_METALSEADRAMON_FANCY]       = MTLSEADRAMON_SPECIES_INFO(FANCY),
     [SPECIES_METALSEADRAMON_POKEBALL]    = MTLSEADRAMON_SPECIES_INFO(POKEBALL),
 
-#define SPEWPA_SPECIES_INFO(evolution)                                          \
+#define PUKUMON_SPECIES_INFO(evolution)                                          \
     {                                                                           \
-        .baseHP        = 45,                                                    \
-        .baseAttack    = 22,                                                    \
-        .baseDefense   = 60,                                                    \
-        .baseSpeed     = 29,                                                    \
-        .baseSpAttack  = 27,                                                    \
-        .baseSpDefense = 30,                                                    \
-        .types = MON_TYPES(TYPE_BUG),                                           \
-        .catchRate = 120,                                                       \
-        .expYield = 75,                                                         \
+        .baseHP        = 110,                                                    \
+        .baseAttack    = 150,                                                    \
+        .baseDefense   = 130,                                                    \
+        .baseSpeed     = 95,                                                    \
+        .baseSpAttack  = 70,                                                    \
+        .baseSpDefense = 70,                                                    \
+        .types = MON_TYPES(TYPE_WATER, TYPE_FIGHTING),                                           \
+        .attribute = TYPE_VIRUS,                                                            \
+        .catchRate = 55,                                                                    \
+        .expYield = 250,                                                                    \
+        .evYield_HP = 1,                                                   \
+        .evYield_Attack = 3,                                                   \
         .evYield_Defense = 2,                                                   \
         .genderRatio = MON_GENDERLESS,                                      \
         .eggCycles = 15,                                                        \
         .friendship = STANDARD_FRIENDSHIP,                                      \
         .growthRate = GROWTH_SLOW,                                       \
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),                             \
-        .abilities = { ABILITY_SHED_SKIN, ABILITY_NONE, ABILITY_FRIEND_GUARD }, \
-        .bodyColor = BODY_COLOR_BLACK,                                          \
-        .speciesName = _("Spewpa"),                                             \
-        .cryId = CRY_SPEWPA,                                                    \
-        .natDexNum = NATIONAL_DEX_SPEWPA,                                       \
-        .categoryName = _("Scatterdust"),                                       \
-        .height = 3,                                                            \
-        .weight = 84,                                                           \
-        .description = gSpewpaPokedexText,                                      \
+        .abilities = { ABILITY_ROUGH_SKIN, ABILITY_SCRAPPY, ABILITY_PUNK_ROCK }, \
+        .bodyColor = BODY_COLOR_BLUE,                                          \
+        .speciesName = _("Pukumon"),                                             \
+        .cryId = CRY_PUKUMON,                                                    \
+        .natDexNum = NATIONAL_DEX_PUKUMON,                                       \
+        .categoryName = _("British Punk"),                                       \
+        .height = 40,                                                            \
+        .weight = 1463,                                                           \
+        .description = gPukumonPokedexText,                                      \
         .pokemonScale = 530,                                                    \
         .pokemonOffset = 13,                                                    \
         .trainerScale = 256,                                                    \
         .trainerOffset = 0,                                                     \
-        .frontPic = gMonFrontPic_Spewpa,                                        \
+        .frontPic = gMonFrontPic_Pukumon,                                        \
         .frontPicSize = MON_COORDS_SIZE(40, 48),                                \
         .frontPicYOffset = 11,                                                  \
-        .frontAnimFrames = sAnims_Spewpa,                                       \
+        .frontAnimFrames = sAnims_Pukumon,                                       \
         .frontAnimId = ANIM_V_SHAKE,                                            \
-        .backPic = gMonBackPic_Spewpa,                                          \
+        .backPic = gMonBackPic_Pukumon,                                          \
         .backPicSize = MON_COORDS_SIZE(48, 48),                                 \
         .backPicYOffset = 12,                                                   \
         .backAnimId = BACK_ANIM_H_VIBRATE,                                      \
-        .palette = gMonPalette_Spewpa,                                          \
-        .shinyPalette = gMonShinyPalette_Spewpa,                                \
-        .iconSprite = gMonIcon_Spewpa,                                          \
-        .iconPalIndex = 1,                                                      \
+        .palette = gMonPalette_Pukumon,                                          \
+        .shinyPalette = gMonShinyPalette_Pukumon,                                \
+        .iconSprite = gMonIcon_Pukumon,                                          \
+        .iconPalIndex = 0,                                                      \
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,                               \
         SHADOW(0, 2, SHADOW_SIZE_M)                                             \
-        FOOTPRINT(Spewpa)                                                       \
+        FOOTPRINT(Pukumon)                                                       \
         OVERWORLD(                                                              \
-            sPicTable_Spewpa,                                                   \
+            sPicTable_Pukumon,                                                   \
             SIZE_32x32,                                                         \
             SHADOW_SIZE_M,                                                      \
             TRACKS_FOOT,                                                        \
             sAnimTable_Following,                                               \
-            gOverworldPalette_Spewpa,                                           \
-            gShinyOverworldPalette_Spewpa                                       \
+            gOverworldPalette_Pukumon,                                           \
+            gShinyOverworldPalette_Pukumon                                       \
         )                                                                       \
         .tmIlliterate = TRUE,                                                   \
-        .levelUpLearnset = sSpewpaLevelUpLearnset,                              \
-        .teachableLearnset = sSpewpaTeachableLearnset,                          \
-        .formSpeciesIdTable = sSpewpaFormSpeciesIdTable,                        \
+        .levelUpLearnset = sPukumonLevelUpLearnset,                              \
+        .teachableLearnset = sPukumonTeachableLearnset,                          \
+        .formSpeciesIdTable = sPukumonFormSpeciesIdTable,                        \
         .evolutions = EVOLUTION({EVO_LEVEL, 12, SPECIES_VIVILLON_##evolution}), \
     }
 
-    [SPECIES_SPEWPA_ICY_SNOW]    = SPEWPA_SPECIES_INFO(ICY_SNOW),
-    [SPECIES_SPEWPA_POLAR]       = SPEWPA_SPECIES_INFO(POLAR),
-    [SPECIES_SPEWPA_TUNDRA]      = SPEWPA_SPECIES_INFO(TUNDRA),
-    [SPECIES_SPEWPA_CONTINENTAL] = SPEWPA_SPECIES_INFO(CONTINENTAL),
-    [SPECIES_SPEWPA_GARDEN]      = SPEWPA_SPECIES_INFO(GARDEN),
-    [SPECIES_SPEWPA_ELEGANT]     = SPEWPA_SPECIES_INFO(ELEGANT),
-    [SPECIES_SPEWPA_MEADOW]      = SPEWPA_SPECIES_INFO(MEADOW),
-    [SPECIES_SPEWPA_MODERN]      = SPEWPA_SPECIES_INFO(MODERN),
-    [SPECIES_SPEWPA_MARINE]      = SPEWPA_SPECIES_INFO(MARINE),
-    [SPECIES_SPEWPA_ARCHIPELAGO] = SPEWPA_SPECIES_INFO(ARCHIPELAGO),
-    [SPECIES_SPEWPA_HIGH_PLAINS] = SPEWPA_SPECIES_INFO(HIGH_PLAINS),
-    [SPECIES_SPEWPA_SANDSTORM]   = SPEWPA_SPECIES_INFO(SANDSTORM),
-    [SPECIES_SPEWPA_RIVER]       = SPEWPA_SPECIES_INFO(RIVER),
-    [SPECIES_SPEWPA_MONSOON]     = SPEWPA_SPECIES_INFO(MONSOON),
-    [SPECIES_SPEWPA_SAVANNA]     = SPEWPA_SPECIES_INFO(SAVANNA),
-    [SPECIES_SPEWPA_SUN]         = SPEWPA_SPECIES_INFO(SUN),
-    [SPECIES_SPEWPA_OCEAN]       = SPEWPA_SPECIES_INFO(OCEAN),
-    [SPECIES_SPEWPA_JUNGLE]      = SPEWPA_SPECIES_INFO(JUNGLE),
-    [SPECIES_SPEWPA_FANCY]       = SPEWPA_SPECIES_INFO(FANCY),
-    [SPECIES_SPEWPA_POKEBALL]   = SPEWPA_SPECIES_INFO(POKEBALL),
+    [SPECIES_PUKUMON_ICY_SNOW]    = PUKUMON_SPECIES_INFO(ICY_SNOW),
+    [SPECIES_PUKUMON_POLAR]       = PUKUMON_SPECIES_INFO(POLAR),
+    [SPECIES_PUKUMON_TUNDRA]      = PUKUMON_SPECIES_INFO(TUNDRA),
+    [SPECIES_PUKUMON_CONTINENTAL] = PUKUMON_SPECIES_INFO(CONTINENTAL),
+    [SPECIES_PUKUMON_GARDEN]      = PUKUMON_SPECIES_INFO(GARDEN),
+    [SPECIES_PUKUMON_ELEGANT]     = PUKUMON_SPECIES_INFO(ELEGANT),
+    [SPECIES_PUKUMON_MEADOW]      = PUKUMON_SPECIES_INFO(MEADOW),
+    [SPECIES_PUKUMON_MODERN]      = PUKUMON_SPECIES_INFO(MODERN),
+    [SPECIES_PUKUMON_MARINE]      = PUKUMON_SPECIES_INFO(MARINE),
+    [SPECIES_PUKUMON_ARCHIPELAGO] = PUKUMON_SPECIES_INFO(ARCHIPELAGO),
+    [SPECIES_PUKUMON_HIGH_PLAINS] = PUKUMON_SPECIES_INFO(HIGH_PLAINS),
+    [SPECIES_PUKUMON_SANDSTORM]   = PUKUMON_SPECIES_INFO(SANDSTORM),
+    [SPECIES_PUKUMON_RIVER]       = PUKUMON_SPECIES_INFO(RIVER),
+    [SPECIES_PUKUMON_MONSOON]     = PUKUMON_SPECIES_INFO(MONSOON),
+    [SPECIES_PUKUMON_SAVANNA]     = PUKUMON_SPECIES_INFO(SAVANNA),
+    [SPECIES_PUKUMON_SUN]         = PUKUMON_SPECIES_INFO(SUN),
+    [SPECIES_PUKUMON_OCEAN]       = PUKUMON_SPECIES_INFO(OCEAN),
+    [SPECIES_PUKUMON_JUNGLE]      = PUKUMON_SPECIES_INFO(JUNGLE),
+    [SPECIES_PUKUMON_FANCY]       = PUKUMON_SPECIES_INFO(FANCY),
+    [SPECIES_PUKUMON_POKEBALL]   = PUKUMON_SPECIES_INFO(POKEBALL),
 
 #define VIVILLON_MISC_INFO(form, color, iconPal)                                            \
         .baseHP        = 80,                                                                \

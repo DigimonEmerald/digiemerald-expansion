@@ -187,7 +187,7 @@ static const union AnimCmd *const sAnims_Metalseadramon[] =
     },
 };
 
-static const union AnimCmd *const sAnims_Spewpa[] =
+static const union AnimCmd *const sAnims_Pukumon[] =
 {
     sAnim_GeneralFrame0,
     (const union AnimCmd[]) {

@@ -26765,7 +26765,7 @@ static const u16 sMetalseadramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSpewpaTeachableLearnset[] = {
+static const u16 sPukumonTeachableLearnset[] = {
     MOVE_PROTECT,
     MOVE_UNAVAILABLE,
 };

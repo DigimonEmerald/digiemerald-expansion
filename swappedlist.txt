@@ -491,5 +491,6 @@ Dinomon - Fletchling
 MarineAngemon - Fletchinder
 MetalEtemon - Talonflame
 MetalSeadramon - Scatterbug
+Pukumon - Spewpa
 
 SPECIES NAME LENGTH MAX = 13
