@@ -2685,7 +2685,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .trainerOffset = 2,
         .frontPic = gMonFrontPic_Paomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 2 : 1,
+        .frontPicYOffset = 12,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 5),
             ANIMCMD_FRAME(1, 35),
@@ -2694,14 +2694,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontAnimId = ANIM_V_STRETCH,
         .backPic = gMonBackPic_Paomon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(64, 64),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 1,
+        .backPicYOffset = 16,
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Paomon,
         .shinyPalette = gMonShinyPalette_Paomon,
         .iconSprite = gMonIcon_Paomon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(1, 11, SHADOW_SIZE_L)
+        SHADOW(0, 3, SHADOW_SIZE_M)
         FOOTPRINT(Paomon)
         OVERWORLD(
             sPicTable_Paomon,
@@ -5399,7 +5399,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Sandmon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(32, 40) : MON_COORDS_SIZE(40, 40),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 16 : 14,
+        .frontPicYOffset = 12,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 15),
             ANIMCMD_FRAME(1, 20),
@@ -5410,14 +5410,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .frontAnimId = ANIM_BOUNCE_ROTATE_TO_SIDES_SMALL,
         .backPic = gMonBackPic_Sandmon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 40) : MON_COORDS_SIZE(56, 48),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 13 : 12,
+        .backPicYOffset = 15,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_Sandmon,
         .shinyPalette = gMonShinyPalette_Sandmon,
         .iconSprite = gMonIcon_Sandmon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
-        SHADOW(-1, -1, SHADOW_SIZE_S)
+        SHADOW(-4, -1, SHADOW_SIZE_L)
         FOOTPRINT(Sandmon)
         OVERWORLD(
             sPicTable_Sandmon,

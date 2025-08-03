@@ -6420,7 +6420,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Tumblemon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(48, 56),
-        .frontPicYOffset = 7,
+        .frontPicYOffset = 5,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 12),
             ANIMCMD_FRAME(0, 12),
@@ -6433,14 +6433,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .frontAnimDelay = 48,
         .backPic = gMonBackPic_Tumblemon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 40) : MON_COORDS_SIZE(56, 48),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 13 : 9,
+        .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
         .palette = gMonPalette_Tumblemon,
         .shinyPalette = gMonShinyPalette_Tumblemon,
         .iconSprite = gMonIcon_Tumblemon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(1, 6, SHADOW_SIZE_M)
+        SHADOW(1, 2, SHADOW_SIZE_M)
         FOOTPRINT(Tumblemon)
         OVERWORLD(
             sPicTable_Tumblemon,
