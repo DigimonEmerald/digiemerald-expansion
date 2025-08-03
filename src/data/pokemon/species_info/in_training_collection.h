@@ -460,7 +460,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 1,
         .frontPic = gMonFrontPic_Bosamon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 64) : MON_COORDS_SIZE(64, 48),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 2 : 9,
+        .frontPicYOffset = 7,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 4),
             ANIMCMD_FRAME(0, 4),
@@ -486,17 +486,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             ANIMCMD_FRAME(0, 4),
         ),
         .frontAnimId = ANIM_ZIGZAG_SLOW,
-        .enemyMonElevation = P_GBA_STYLE_SPECIES_GFX ? 8 : 16,
         .backPic = gMonBackPic_Bosamon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(64, 56),
-        .backPicYOffset = 4,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         .palette = gMonPalette_Bosamon,
         .shinyPalette = gMonShinyPalette_Bosamon,
         .iconSprite = gMonIcon_Bosamon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-5, 18, SHADOW_SIZE_M)
+        SHADOW(-1, 1, SHADOW_SIZE_M)
         FOOTPRINT(Bosamon)
         OVERWORLD(
             sPicTable_Bosamon,
@@ -2085,7 +2084,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Gurimon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 48) : MON_COORDS_SIZE(64, 48),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 10 : 9,
+        .frontPicYOffset = 10,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 10),
             ANIMCMD_FRAME(1, 25),
@@ -2097,14 +2096,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .frontAnimDelay = 5,
         .backPic = gMonBackPic_Gurimon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 40) : MON_COORDS_SIZE(64, 40),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 12 : 13,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE,
         .palette = gMonPalette_Gurimon,
         .shinyPalette = gMonShinyPalette_Gurimon,
         .iconSprite = gMonIcon_Gurimon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(-1, 4, SHADOW_SIZE_M)
+        SHADOW(-1, 1, SHADOW_SIZE_M)
         FOOTPRINT(Gurimon)
         OVERWORLD(
             sPicTable_Gurimon,
@@ -5294,7 +5293,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Puyoyomon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 64),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 7 : 2,
+        .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 30),
             ANIMCMD_FRAME(1, 30),
@@ -5303,14 +5302,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
         .backPic = gMonBackPic_Puyoyomon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 56) : MON_COORDS_SIZE(64, 56),
-        .backPicYOffset = 5,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Puyoyomon,
         .shinyPalette = gMonShinyPalette_Puyoyomon,
         .iconSprite = gMonIcon_Puyoyomon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(2, 9, SHADOW_SIZE_XL_BATTLE_ONLY)
+        SHADOW(0, 5, SHADOW_SIZE_M)
         FOOTPRINT(Puyoyomon)
         OVERWORLD(
             sPicTable_Puyoyomon,
