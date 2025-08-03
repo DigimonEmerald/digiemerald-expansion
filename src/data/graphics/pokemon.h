@@ -22592,19 +22592,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Thwackey[] = INCBIN_U32("graphics/pokemon/thwackey/front.4bpp.lz");
-    const u16 gMonPalette_Thwackey[] = INCBIN_U16("graphics/pokemon/thwackey/normal.gbapal");
-    const u32 gMonBackPic_Thwackey[] = INCBIN_U32("graphics/pokemon/thwackey/back.4bpp.lz");
-    const u16 gMonShinyPalette_Thwackey[] = INCBIN_U16("graphics/pokemon/thwackey/shiny.gbapal");
-    const u8 gMonIcon_Thwackey[] = INCBIN_U8("graphics/pokemon/thwackey/icon.4bpp");
+    const u32 gMonFrontPic_Onibimon[] = INCBIN_U32("graphics/pokemon/onibimon/front.4bpp.lz");
+    const u16 gMonPalette_Onibimon[] = INCBIN_U16("graphics/pokemon/onibimon/normal.gbapal");
+    const u32 gMonBackPic_Onibimon[] = INCBIN_U32("graphics/pokemon/onibimon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Onibimon[] = INCBIN_U16("graphics/pokemon/onibimon/shiny.gbapal");
+    const u8 gMonIcon_Onibimon[] = INCBIN_U8("graphics/pokemon/onibimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Thwackey[] = INCBIN_U8("graphics/pokemon/thwackey/footprint.1bpp");
+    const u8 gMonFootprint_Onibimon[] = INCBIN_U8("graphics/pokemon/onibimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Thwackey[] = INCBIN_COMP("graphics/pokemon/thwackey/overworld.4bpp");
+    const u32 gObjectEventPic_Onibimon[] = INCBIN_COMP("graphics/pokemon/onibimon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Thwackey[] = INCBIN_U16("graphics/pokemon/thwackey/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Thwackey[] = INCBIN_U16("graphics/pokemon/thwackey/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Onibimon[] = INCBIN_U16("graphics/pokemon/onibimon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Onibimon[] = INCBIN_U16("graphics/pokemon/onibimon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

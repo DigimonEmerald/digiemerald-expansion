@@ -1965,7 +1965,7 @@ gCryTable::
 .endif @ P_FAMILY_MELTAN
 .if P_FAMILY_TOMORIMON == TRUE
 	cry Cry_Tomorimon
-	cry Cry_Thwackey
+	cry Cry_Onibimon
 	cry Cry_Rillaboom
 .endif @ P_FAMILY_TOMORIMON
 .if P_FAMILY_SCORBUNNY == TRUE
@@ -4393,7 +4393,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_MELTAN
 .if P_FAMILY_TOMORIMON == TRUE
 	cry_reverse Cry_Tomorimon
-	cry_reverse Cry_Thwackey
+	cry_reverse Cry_Onibimon
 	cry_reverse Cry_Rillaboom
 .endif @ P_FAMILY_TOMORIMON
 .if P_FAMILY_SCORBUNNY == TRUE

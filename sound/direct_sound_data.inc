@@ -5056,8 +5056,8 @@ Cry_Tomorimon::
 	.incbin "sound/direct_sound_samples/cries/tomorimon.bin"
 
 	.align 2
-Cry_Thwackey::
-	.incbin "sound/direct_sound_samples/cries/thwackey.bin"
+Cry_Onibimon::
+	.incbin "sound/direct_sound_samples/cries/onibimon.bin"
 
 	.align 2
 Cry_Rillaboom::

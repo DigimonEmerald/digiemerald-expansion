@@ -5973,13 +5973,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .attribute = TYPE_FREE,
         .catchRate = 255,
         .expYield = 20,
-        .evYield_Attack = 1,
+        .evYield_SpAttack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_FLAME_BODY, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_FLAME_BODY, ABILITY_NONE, ABILITY_CURSED_BODY },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Tomorimon"),
         .cryId = CRY_TOMORIMON,
@@ -5998,19 +5998,19 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Tomorimon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
-        .frontPicYOffset = 0,
+        .frontPicYOffset = 3,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Tomorimon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
-        .backPicYOffset = 6,
+        .backPicYOffset = 4,
         //.backAnimId = BACK_ANIM_NONE,
         .palette = gMonPalette_Tomorimon,
         .shinyPalette = gMonShinyPalette_Tomorimon,
         .iconSprite = gMonIcon_Tomorimon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
-        SHADOW(-1, 12, SHADOW_SIZE_S)
+        SHADOW(1, 6, SHADOW_SIZE_M)
         FOOTPRINT(Tomorimon)
         OVERWORLD(
             sPicTable_Tomorimon,
@@ -6024,7 +6024,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sTomorimonLevelUpLearnset,
         .teachableLearnset = sTomorimonTeachableLearnset,
         .eggMoveLearnset = sTomorimonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_THWACKEY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_ONIBIMON}),
     },
 
 

@@ -5,69 +5,6 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 
 #if P_FAMILY_TOMORIMON
 
-    [SPECIES_THWACKEY] =
-    {
-        .baseHP        = 70,
-        .baseAttack    = 85,
-        .baseDefense   = 70,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_GRASS),
-        .catchRate = 45,
-        .expYield = 147,
-        .evYield_Attack = 2,
-        .genderRatio = PERCENT_FEMALE(12.5),
-        .eggCycles = 20,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_GRASSY_SURGE },
-        .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Thwackey"),
-        .cryId = CRY_THWACKEY,
-        .natDexNum = NATIONAL_DEX_THWACKEY,
-        .categoryName = _("Beat"),
-        .height = 7,
-        .weight = 140,
-        .description = COMPOUND_STRING(
-            "The faster a Thwackey can beat out\n"
-            "a rhythm with its two sticks, the more\n"
-            "respect it wins from its peers."),
-        .pokemonScale = 365,
-        .pokemonOffset = 12,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Thwackey,
-        .frontPicSize = MON_COORDS_SIZE(48, 56),
-        .frontPicYOffset = 7,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Thwackey,
-        .backPicSize = MON_COORDS_SIZE(56, 56),
-        .backPicYOffset = 5,
-        //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_Thwackey,
-        .shinyPalette = gMonShinyPalette_Thwackey,
-        .iconSprite = gMonIcon_Thwackey,
-        .iconPalIndex = 1,
-        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
-        SHADOW(5, 6, SHADOW_SIZE_M)
-        FOOTPRINT(Thwackey)
-        OVERWORLD(
-            sPicTable_Thwackey,
-            SIZE_32x32,
-            SHADOW_SIZE_M,
-            TRACKS_FOOT,
-            sAnimTable_Following,
-            gOverworldPalette_Thwackey,
-            gShinyOverworldPalette_Thwackey
-        )
-        .levelUpLearnset = sThwackeyLevelUpLearnset,
-        .teachableLearnset = sThwackeyTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_RILLABOOM}),
-    },
-
     [SPECIES_RILLABOOM] =
     {
         .baseHP        = 100,

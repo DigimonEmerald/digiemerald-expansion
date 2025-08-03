@@ -7160,9 +7160,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_STEEL),
         .attribute = TYPE_FREE,
-        .catchRate = 155,
-        .expYield = 100,
-        .evYield_HP = 3,
+        .catchRate = 200,
+        .expYield = 70,
+        .evYield_HP = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
@@ -7218,6 +7218,70 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sTinpetLevelUpLearnset,
         .teachableLearnset = sTinpetTeachableLearnset,
+    },
+
+    [SPECIES_ONIBIMON] =
+    {
+        .baseHP        = 30,
+        .baseAttack    = 25,
+        .baseDefense   = 20,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 40,
+        .types = MON_TYPES(TYPE_LIGHT, TYPE_GHOST),
+        .attribute = TYPE_FREE,
+        .catchRate = 200,
+        .expYield = 70,
+        .evYield_SpAttack = 2,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_FLAME_BODY, ABILITY_NONE, ABILITY_CURSED_BODY },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Onibimon"),
+        .cryId = CRY_ONIBIMON,
+        .natDexNum = NATIONAL_DEX_ONIBIMON,
+        .categoryName = _("Onibi"),
+        .height = 3,
+        .weight = 25,
+        .description = COMPOUND_STRING(
+            "Onibimon is considered the starting\n"
+            "point of most Digimon that are built\n"
+            "on Japanese folklore data."),
+        .pokemonScale = 365,
+        .pokemonOffset = 12,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Onibimon,
+        .frontPicSize = MON_COORDS_SIZE(48, 56),
+        .frontPicYOffset = 7,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Onibimon,
+        .backPicSize = MON_COORDS_SIZE(56, 56),
+        .backPicYOffset = 5,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_Onibimon,
+        .shinyPalette = gMonShinyPalette_Onibimon,
+        .iconSprite = gMonIcon_Onibimon,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
+        SHADOW(5, 6, SHADOW_SIZE_M)
+        FOOTPRINT(Onibimon)
+        OVERWORLD(
+            sPicTable_Onibimon,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Onibimon,
+            gShinyOverworldPalette_Onibimon
+        )
+        .levelUpLearnset = sOnibimonLevelUpLearnset,
+        .teachableLearnset = sOnibimonTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_RILLABOOM}),
     },
 
 #ifdef __INTELLISENSE__
