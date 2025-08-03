@@ -1762,7 +1762,7 @@ static const u16 sMelmetalFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_MELTAN
 
-#if P_FAMILY_GROOKEY
+#if P_FAMILY_TOMORIMON
 static const u16 sRillaboomFormSpeciesIdTable[] = {
     SPECIES_RILLABOOM,
 #if P_GIGANTAMAX_FORMS
@@ -1770,7 +1770,7 @@ static const u16 sRillaboomFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_GROOKEY
+#endif //P_FAMILY_TOMORIMON
 
 #if P_FAMILY_SCORBUNNY
 static const u16 sCinderaceFormSpeciesIdTable[] = {

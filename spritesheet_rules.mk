@@ -3717,7 +3717,7 @@ $(POKEMONGFXDIR)/meltan/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/melmetal/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/grookey/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/tomorimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/thwackey/overworld.4bpp: %.4bpp: %.png

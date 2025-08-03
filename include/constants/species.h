@@ -858,7 +858,7 @@
 #define SPECIES_ZERAORA                                 807
 #define SPECIES_MELTAN                                  808
 #define SPECIES_MELMETAL                                809
-#define SPECIES_GROOKEY                                 810
+#define SPECIES_TOMORIMON                                 810
 #define SPECIES_THWACKEY                                811
 #define SPECIES_RILLABOOM                               812
 #define SPECIES_SCORBUNNY                               813

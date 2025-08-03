@@ -1025,7 +1025,7 @@ static const struct FormChange sMelmetalFormChangeTable[] =
 };
 #endif //P_FAMILY_MELTAN
 
-#if P_FAMILY_GROOKEY
+#if P_FAMILY_TOMORIMON
 static const struct FormChange sRillaboomFormChangeTable[] =
 {
 #if P_GIGANTAMAX_FORMS
@@ -1033,7 +1033,7 @@ static const struct FormChange sRillaboomFormChangeTable[] =
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_GROOKEY
+#endif //P_FAMILY_TOMORIMON
 
 #if P_FAMILY_SCORBUNNY
 static const struct FormChange sCinderaceFormChangeTable[] =

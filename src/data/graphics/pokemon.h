@@ -22575,20 +22575,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_MELTAN
 
-#if P_FAMILY_GROOKEY
-    const u32 gMonFrontPic_Grookey[] = INCBIN_U32("graphics/pokemon/grookey/front.4bpp.lz");
-    const u16 gMonPalette_Grookey[] = INCBIN_U16("graphics/pokemon/grookey/normal.gbapal");
-    const u32 gMonBackPic_Grookey[] = INCBIN_U32("graphics/pokemon/grookey/back.4bpp.lz");
-    const u16 gMonShinyPalette_Grookey[] = INCBIN_U16("graphics/pokemon/grookey/shiny.gbapal");
-    const u8 gMonIcon_Grookey[] = INCBIN_U8("graphics/pokemon/grookey/icon.4bpp");
+#if P_FAMILY_TOMORIMON
+    const u32 gMonFrontPic_Tomorimon[] = INCBIN_U32("graphics/pokemon/tomorimon/front.4bpp.lz");
+    const u16 gMonPalette_Tomorimon[] = INCBIN_U16("graphics/pokemon/tomorimon/normal.gbapal");
+    const u32 gMonBackPic_Tomorimon[] = INCBIN_U32("graphics/pokemon/tomorimon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Tomorimon[] = INCBIN_U16("graphics/pokemon/tomorimon/shiny.gbapal");
+    const u8 gMonIcon_Tomorimon[] = INCBIN_U8("graphics/pokemon/tomorimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Grookey[] = INCBIN_U8("graphics/pokemon/grookey/footprint.1bpp");
+    const u8 gMonFootprint_Tomorimon[] = INCBIN_U8("graphics/pokemon/tomorimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Grookey[] = INCBIN_COMP("graphics/pokemon/grookey/overworld.4bpp");
+    const u32 gObjectEventPic_Tomorimon[] = INCBIN_COMP("graphics/pokemon/tomorimon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Grookey[] = INCBIN_U16("graphics/pokemon/grookey/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Grookey[] = INCBIN_U16("graphics/pokemon/grookey/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Tomorimon[] = INCBIN_U16("graphics/pokemon/tomorimon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Tomorimon[] = INCBIN_U16("graphics/pokemon/tomorimon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -22638,7 +22638,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_GROOKEY
+#endif //P_FAMILY_TOMORIMON
 
 #if P_FAMILY_SCORBUNNY
     const u32 gMonFrontPic_Scorbunny[] = INCBIN_U32("graphics/pokemon/scorbunny/front.4bpp.lz");

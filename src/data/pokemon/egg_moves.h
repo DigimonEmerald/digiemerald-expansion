@@ -5597,8 +5597,8 @@ static const u16 sJangmoOEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_JANGMO_O
 
-#if P_FAMILY_GROOKEY
-static const u16 sGrookeyEggMoveLearnset[] = {
+#if P_FAMILY_TOMORIMON
+static const u16 sTomorimonEggMoveLearnset[] = {
     MOVE_GROWTH,
     MOVE_HAMMER_ARM,
     MOVE_FAKE_OUT,
@@ -5608,7 +5608,7 @@ static const u16 sGrookeyEggMoveLearnset[] = {
     MOVE_LEECH_SEED,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_GROOKEY
+#endif //P_FAMILY_TOMORIMON
 
 #if P_FAMILY_SCORBUNNY
 static const u16 sScorbunnyEggMoveLearnset[] = {

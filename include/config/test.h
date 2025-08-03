@@ -885,8 +885,8 @@
 #undef P_FAMILY_MELTAN
 #define P_FAMILY_MELTAN                  TRUE
 
-#undef P_FAMILY_GROOKEY
-#define P_FAMILY_GROOKEY                 TRUE
+#undef P_FAMILY_TOMORIMON
+#define P_FAMILY_TOMORIMON                 TRUE
 #undef P_FAMILY_SCORBUNNY
 #define P_FAMILY_SCORBUNNY               TRUE
 #undef P_FAMILY_SOBBLE

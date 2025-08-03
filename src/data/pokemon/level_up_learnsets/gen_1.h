@@ -15818,8 +15818,8 @@ static const struct LevelUpMove sMelmetalLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_MELTAN
 
-#if P_FAMILY_GROOKEY
-static const struct LevelUpMove sGrookeyLevelUpLearnset[] = {
+#if P_FAMILY_TOMORIMON
+static const struct LevelUpMove sTomorimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 6, MOVE_BRANCH_POKE),
@@ -15871,7 +15871,7 @@ static const struct LevelUpMove sRillaboomLevelUpLearnset[] = {
     LEVEL_UP_MOVE(62, MOVE_BOOMBURST),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_GROOKEY
+#endif //P_FAMILY_TOMORIMON
 
 #if P_FAMILY_SCORBUNNY
 static const struct LevelUpMove sScorbunnyLevelUpLearnset[] = {

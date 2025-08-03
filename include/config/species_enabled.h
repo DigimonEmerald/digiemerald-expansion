@@ -481,7 +481,7 @@
 #define P_FAMILY_ZERAORA                 P_GEN_7_POKEMON
 #define P_FAMILY_MELTAN                  P_GEN_7_POKEMON
 
-#define P_FAMILY_GROOKEY                 P_GEN_8_POKEMON
+#define P_FAMILY_TOMORIMON                 P_GEN_8_POKEMON
 #define P_FAMILY_SCORBUNNY               P_GEN_8_POKEMON
 #define P_FAMILY_SOBBLE                  P_GEN_8_POKEMON
 #define P_FAMILY_SKWOVET                 P_GEN_8_POKEMON

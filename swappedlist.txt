@@ -46,6 +46,7 @@ IceBotamon - Zubat
 Yuramon - Golbat
 Zerimon - Oddish
 Zurumon - Gloom
+Tomorimon - Grookey
 
 In-Training List
 

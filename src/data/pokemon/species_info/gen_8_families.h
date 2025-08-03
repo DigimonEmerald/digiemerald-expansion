@@ -3,71 +3,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
 {
 #endif
 
-#if P_FAMILY_GROOKEY
-    [SPECIES_GROOKEY] =
-    {
-        .baseHP        = 50,
-        .baseAttack    = 65,
-        .baseDefense   = 50,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 40,
-        .types = MON_TYPES(TYPE_GRASS),
-        .catchRate = 45,
-        .expYield = 62,
-        .evYield_Attack = 1,
-        .genderRatio = PERCENT_FEMALE(12.5),
-        .eggCycles = 20,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_SLOW,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_OVERGROW, ABILITY_NONE, ABILITY_GRASSY_SURGE },
-        .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Grookey"),
-        .cryId = CRY_GROOKEY,
-        .natDexNum = NATIONAL_DEX_GROOKEY,
-        .categoryName = _("Chimp"),
-        .height = 3,
-        .weight = 50,
-        .description = COMPOUND_STRING(
-            "When it uses its special stick to strike up\n"
-            "a beat, the sound waves produced carry\n"
-            "revitalizing energy to the plants and\n"
-            "flowers in the area."),
-        .pokemonScale = 530,
-        .pokemonOffset = 13,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Grookey,
-        .frontPicSize = MON_COORDS_SIZE(40, 48),
-        .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Grookey,
-        .backPicSize = MON_COORDS_SIZE(48, 56),
-        .backPicYOffset = 8,
-        //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_Grookey,
-        .shinyPalette = gMonShinyPalette_Grookey,
-        .iconSprite = gMonIcon_Grookey,
-        .iconPalIndex = 1,
-        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
-        SHADOW(1, 1, SHADOW_SIZE_S)
-        FOOTPRINT(Grookey)
-        OVERWORLD(
-            sPicTable_Grookey,
-            SIZE_32x32,
-            SHADOW_SIZE_M,
-            TRACKS_FOOT,
-            sAnimTable_Following,
-            gOverworldPalette_Grookey,
-            gShinyOverworldPalette_Grookey
-        )
-        .levelUpLearnset = sGrookeyLevelUpLearnset,
-        .teachableLearnset = sGrookeyTeachableLearnset,
-        .eggMoveLearnset = sGrookeyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_THWACKEY}),
-    },
+#if P_FAMILY_TOMORIMON
 
     [SPECIES_THWACKEY] =
     {
@@ -253,7 +189,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formChangeTable = sRillaboomFormChangeTable,
     },
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_GROOKEY
+#endif //P_FAMILY_TOMORIMON
 
 #if P_FAMILY_SCORBUNNY
     [SPECIES_SCORBUNNY] =

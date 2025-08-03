@@ -1963,11 +1963,11 @@ gCryTable::
 	cry Cry_Meltan
 	cry Cry_Melmetal
 .endif @ P_FAMILY_MELTAN
-.if P_FAMILY_GROOKEY == TRUE
-	cry Cry_Grookey
+.if P_FAMILY_TOMORIMON == TRUE
+	cry Cry_Tomorimon
 	cry Cry_Thwackey
 	cry Cry_Rillaboom
-.endif @ P_FAMILY_GROOKEY
+.endif @ P_FAMILY_TOMORIMON
 .if P_FAMILY_SCORBUNNY == TRUE
 	cry Cry_Scorbunny
 	cry Cry_Raboot
@@ -4391,11 +4391,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Meltan
 	cry_reverse Cry_Melmetal
 .endif @ P_FAMILY_MELTAN
-.if P_FAMILY_GROOKEY == TRUE
-	cry_reverse Cry_Grookey
+.if P_FAMILY_TOMORIMON == TRUE
+	cry_reverse Cry_Tomorimon
 	cry_reverse Cry_Thwackey
 	cry_reverse Cry_Rillaboom
-.endif @ P_FAMILY_GROOKEY
+.endif @ P_FAMILY_TOMORIMON
 .if P_FAMILY_SCORBUNNY == TRUE
 	cry_reverse Cry_Scorbunny
 	cry_reverse Cry_Raboot

@@ -5579,9 +5579,9 @@ static const struct SpriteFrameImage sPicTable_Melmetal[] = {
 #endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_MELTAN
 
-#if P_FAMILY_GROOKEY
-static const struct SpriteFrameImage sPicTable_Grookey[] = {
-    overworld_ascending_frames(gObjectEventPic_Grookey, 4, 4),
+#if P_FAMILY_TOMORIMON
+static const struct SpriteFrameImage sPicTable_Tomorimon[] = {
+    overworld_ascending_frames(gObjectEventPic_Tomorimon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Thwackey[] = {
     overworld_ascending_frames(gObjectEventPic_Thwackey, 4, 4),
@@ -5594,7 +5594,7 @@ static const struct SpriteFrameImage sPicTable_Rillaboom[] = {
     overworld_ascending_frames(gObjectEventPic_RillaboomGmax, 4, 4),
 };*/
 #endif //P_GIGANTAMAX_FORMS
-#endif //P_FAMILY_GROOKEY
+#endif //P_FAMILY_TOMORIMON
 
 #if P_FAMILY_SCORBUNNY
 static const struct SpriteFrameImage sPicTable_Scorbunny[] = {

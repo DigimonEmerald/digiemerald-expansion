@@ -5961,6 +5961,72 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
                                 {EVO_LEVEL, 6, SPECIES_PAGUMON}),
     },
 
+    [SPECIES_TOMORIMON] =
+    {
+        .baseHP        = 20,
+        .baseAttack    = 15,
+        .baseDefense   = 15,
+        .baseSpeed     = 25,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 25,
+        .types = MON_TYPES(TYPE_LIGHT, TYPE_GHOST),
+        .attribute = TYPE_FREE,
+        .catchRate = 255,
+        .expYield = 20,
+        .evYield_Attack = 1,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_GRASS),
+        .abilities = { ABILITY_FLAME_BODY, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Tomorimon"),
+        .cryId = CRY_TOMORIMON,
+        .natDexNum = NATIONAL_DEX_TOMORIMON,
+        .categoryName = _("Hinotama"),
+        .height = 2,
+        .weight = 11,
+        .description = COMPOUND_STRING(
+            "Modelled after a floating\n"
+            "DigiCore, Tomorimon is considered\n"
+            "an undead Digimon by while others\n"
+            "argue that is actually fire type."),
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Tomorimon,
+        .frontPicSize = MON_COORDS_SIZE(40, 48),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Tomorimon,
+        .backPicSize = MON_COORDS_SIZE(48, 56),
+        .backPicYOffset = 6,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_Tomorimon,
+        .shinyPalette = gMonShinyPalette_Tomorimon,
+        .iconSprite = gMonIcon_Tomorimon,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
+        SHADOW(-1, 12, SHADOW_SIZE_S)
+        FOOTPRINT(Tomorimon)
+        OVERWORLD(
+            sPicTable_Tomorimon,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Tomorimon,
+            gShinyOverworldPalette_Tomorimon
+        )
+        .levelUpLearnset = sTomorimonLevelUpLearnset,
+        .teachableLearnset = sTomorimonTeachableLearnset,
+        .eggMoveLearnset = sTomorimonEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_THWACKEY}),
+    },
+
 
 #ifdef __INTELLISENSE__
 };

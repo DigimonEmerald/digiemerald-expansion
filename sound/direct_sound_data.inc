@@ -5050,10 +5050,10 @@ Cry_Melmetal::
 	.incbin "sound/direct_sound_samples/cries/melmetal.bin"
 .endif @ P_FAMILY_MELTAN
 
-.if P_FAMILY_GROOKEY == TRUE
+.if P_FAMILY_TOMORIMON == TRUE
 	.align 2
-Cry_Grookey::
-	.incbin "sound/direct_sound_samples/cries/grookey.bin"
+Cry_Tomorimon::
+	.incbin "sound/direct_sound_samples/cries/tomorimon.bin"
 
 	.align 2
 Cry_Thwackey::
@@ -5062,7 +5062,7 @@ Cry_Thwackey::
 	.align 2
 Cry_Rillaboom::
 	.incbin "sound/direct_sound_samples/cries/rillaboom.bin"
-.endif @ P_FAMILY_GROOKEY
+.endif @ P_FAMILY_TOMORIMON
 
 .if P_FAMILY_SCORBUNNY == TRUE
 	.align 2

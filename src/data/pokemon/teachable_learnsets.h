@@ -31367,8 +31367,8 @@ static const u16 sMelmetalTeachableLearnset[] = {
 };
 #endif //P_FAMILY_MELTAN
 
-#if P_FAMILY_GROOKEY
-static const u16 sGrookeyTeachableLearnset[] = {
+#if P_FAMILY_TOMORIMON
+static const u16 sTomorimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BULLET_SEED,
@@ -31443,7 +31443,7 @@ static const u16 sRillaboomTeachableLearnset[] = {
     MOVE_THIEF,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_GROOKEY
+#endif //P_FAMILY_TOMORIMON
 
 #if P_FAMILY_SCORBUNNY
 static const u16 sScorbunnyTeachableLearnset[] = {
