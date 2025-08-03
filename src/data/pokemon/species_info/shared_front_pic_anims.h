@@ -200,7 +200,7 @@ static const union AnimCmd *const sAnims_Pukumon[] =
     },
 };
 
-static const union AnimCmd *const sAnims_Vivillon[] =
+static const union AnimCmd *const sAnims_Saberleomon[] =
 {
     sAnim_GeneralFrame0,
     (const union AnimCmd[]) {

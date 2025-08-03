@@ -237,7 +237,7 @@ DOUBLE_BATTLE_TEST("Dancer doesn't call a move that didn't execute due to Powder
         PLAYER(SPECIES_VOLCARONA);
         PLAYER(SPECIES_ORICORIO);
         OPPONENT(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(playerLeft, MOVE_FIERY_DANCE, target: opponentLeft); }
     } SCENE {

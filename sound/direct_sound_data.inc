@@ -4235,8 +4235,8 @@ Cry_Pukumon::
 	.incbin "sound/direct_sound_samples/cries/pukumon.bin"
 
 	.align 2
-Cry_Vivillon::
-	.incbin "sound/direct_sound_samples/cries/vivillon.bin"
+Cry_Saberleomon::
+	.incbin "sound/direct_sound_samples/cries/saberleomon.bin"
 .endif @ P_FAMILY_METALSEADRAMON
 
 .if P_FAMILY_LITLEO == TRUE

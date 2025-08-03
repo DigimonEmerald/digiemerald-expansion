@@ -26770,7 +26770,7 @@ static const u16 sPukumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sVivillonTeachableLearnset[] = {
+static const u16 sSaberleomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CALM_MIND,

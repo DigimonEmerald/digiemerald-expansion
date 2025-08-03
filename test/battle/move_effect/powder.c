@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Powder blocks the target's Fire type moves and deals 25% of 
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POWDER); MOVE(player, MOVE_EMBER); }
     } SCENE {
@@ -31,7 +31,7 @@ SINGLE_BATTLE_TEST("Powder blocks the target's Fire type moves and consumes PP")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX) { Moves(MOVE_EMBER); }
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POWDER); MOVE(player, MOVE_EMBER); }
     } SCENE {
@@ -49,7 +49,7 @@ SINGLE_BATTLE_TEST("Powder only blocks the target's Fire type moves on the same 
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POWDER); }
         TURN { MOVE(player, MOVE_EMBER); }
@@ -66,7 +66,7 @@ SINGLE_BATTLE_TEST("Powder doesn't damage target if it has Magic Guard")
 {
     GIVEN {
         PLAYER(SPECIES_KAPURIMON) { Ability(ABILITY_MAGIC_GUARD); }
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POWDER); MOVE(player, MOVE_EMBER); }
     } SCENE {
@@ -85,7 +85,7 @@ SINGLE_BATTLE_TEST("Powder doesn't damage target under heavy rain")
     GIVEN {
         ASSUME(B_POWDER_RAIN >= GEN_7);
         PLAYER(SPECIES_GATOMON_X_PRIMAL) { Ability(ABILITY_PRIMORDIAL_SEA); }
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POWDER); MOVE(player, MOVE_EMBER); }
     } SCENE {
@@ -105,7 +105,7 @@ DOUBLE_BATTLE_TEST("Powder blocks the target's Fire type moves even if it doesn'
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(playerLeft, MOVE_EMBER, target: opponentLeft); }
     } SCENE {
@@ -122,8 +122,8 @@ DOUBLE_BATTLE_TEST("Powder fails if target is already affected by Powder")
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_VIVILLON);
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(opponentLeft, MOVE_POWDER, target: playerLeft); }
     } SCENE {
@@ -137,7 +137,7 @@ SINGLE_BATTLE_TEST("Powder fails if the target is Grass type")
     GIVEN {
         ASSUME(gSpeciesInfo[SPECIES_BOMMON].types[0] == TYPE_GRASS || gSpeciesInfo[SPECIES_BOMMON].types[1] == TYPE_GRASS);
         PLAYER(SPECIES_BOMMON);
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POWDER); MOVE(player, MOVE_EMBER); }
     } SCENE {
@@ -151,7 +151,7 @@ SINGLE_BATTLE_TEST("Powder fails if the target has Overcoat")
 {
     GIVEN {
         PLAYER(SPECIES_LUNAMON) { Ability(ABILITY_OVERCOAT); }
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POWDER); MOVE(player, MOVE_EMBER); }
     } SCENE {
@@ -169,7 +169,7 @@ DOUBLE_BATTLE_TEST("Powder still blocks the target's Fire type moves even if it 
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_TREVENANT);
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(opponentLeft, MOVE_FORESTS_CURSE, target: playerLeft); MOVE(playerLeft, MOVE_EMBER, target: opponentRight); }
     } SCENE {
@@ -189,7 +189,7 @@ DOUBLE_BATTLE_TEST("Powder still blocks the target's Fire type moves even if it 
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LUNAMON) { Ability(ABILITY_OVERCOAT); }
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(playerRight, MOVE_DOODLE, target: opponentLeft); MOVE(playerLeft, MOVE_EMBER, target: opponentRight); }
     } SCENE {
@@ -208,7 +208,7 @@ SINGLE_BATTLE_TEST("Powder prevents Protean from changing its user to Fire type"
 {
     GIVEN {
         PLAYER(SPECIES_BIOSUPINOMON) { Ability(ABILITY_PROTEAN); }
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POWDER); MOVE(player, MOVE_EMBER); }
     } SCENE {
@@ -227,7 +227,7 @@ SINGLE_BATTLE_TEST("Powder doesn't prevent a Fire move from thawing its user out
         ASSUME(gMovesInfo[MOVE_FLAME_WHEEL].thawsUser);
         ASSUME(gMovesInfo[MOVE_FLAME_WHEEL].type == TYPE_FIRE);
         PLAYER(SPECIES_LOPMONX) { Status1(STATUS1_FREEZE); }
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POWDER); MOVE(player, MOVE_FLAME_WHEEL); }
     } SCENE {
@@ -246,7 +246,7 @@ SINGLE_BATTLE_TEST("Powder doesn't consume Berry from Fire type Natural Gift but
     GIVEN {
         ASSUME(gMovesInfo[MOVE_NATURAL_GIFT].effect == EFFECT_NATURAL_GIFT);
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_CHERI_BERRY); }
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POWDER); MOVE(player, MOVE_NATURAL_GIFT); }
     } SCENE {
@@ -276,7 +276,7 @@ DOUBLE_BATTLE_TEST("Powder damages a target using Shell Trap even if it wasn't h
         PLAYER(SPECIES_TURTONATOR);
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SHELL_TRAP); MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(opponentLeft, move, target: playerLeft); }
     } SCENE {

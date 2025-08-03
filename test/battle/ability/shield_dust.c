@@ -21,19 +21,19 @@ SINGLE_BATTLE_TEST("Shield Dust blocks secondary effects")
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_SPIRIT_SHACKLE, MOVE_EFFECT_PREVENT_ESCAPE, 100) == TRUE);
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_PSYCHIC_NOISE, MOVE_EFFECT_PSYCHIC_NOISE, 100) == TRUE);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_VIVILLON) { Ability(ABILITY_SHIELD_DUST); }
+        OPPONENT(SPECIES_SABERLEOMON) { Ability(ABILITY_SHIELD_DUST); }
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, player);
         HP_BAR(opponent);
         NONE_OF {
-            MESSAGE("The opposing Vivillon is paralyzed, so it may be unable to move!");
-            MESSAGE("The opposing Vivillon was burned!");
-            MESSAGE("The opposing Vivillon was poisoned!");
-            MESSAGE("The opposing Vivillon flinched and couldn't move!");
+            MESSAGE("The opposing Saberleomon is paralyzed, so it may be unable to move!");
+            MESSAGE("The opposing Saberleomon was burned!");
+            MESSAGE("The opposing Saberleomon was poisoned!");
+            MESSAGE("The opposing Saberleomon flinched and couldn't move!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("The opposing Vivillon was prevented from healing!");
+            MESSAGE("The opposing Saberleomon was prevented from healing!");
         }
     } THEN { // Can't find good way to test trapping
         EXPECT(!(opponent->status2 & STATUS2_ESCAPE_PREVENTION));
@@ -55,7 +55,7 @@ SINGLE_BATTLE_TEST("Shield Dust does not block primary effects")
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_JAW_LOCK, MOVE_EFFECT_TRAP_BOTH, 0) == TRUE);
         ASSUME(MoveHasAdditionalEffectWithChance(MOVE_PAY_DAY, MOVE_EFFECT_PAYDAY, 0) == TRUE);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_VIVILLON) { Ability(ABILITY_SHIELD_DUST); }
+        OPPONENT(SPECIES_SABERLEOMON) { Ability(ABILITY_SHIELD_DUST); }
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
@@ -65,13 +65,13 @@ SINGLE_BATTLE_TEST("Shield Dust does not block primary effects")
         {
             case MOVE_INFESTATION:
 <<<<<<< HEAD
-                MESSAGE("Foe Vivillon has been afflicted with an infestation by Lopmonx!");
+                MESSAGE("Foe Saberleomon has been afflicted with an infestation by Lopmonx!");
 =======
-                MESSAGE("The opposing Vivillon has been afflicted with an infestation by Lopmonx!");
+                MESSAGE("The opposing Saberleomon has been afflicted with an infestation by Lopmonx!");
 >>>>>>> upstream/master
                 break;
             case MOVE_THOUSAND_ARROWS:
-                MESSAGE("The opposing Vivillon fell straight down!");
+                MESSAGE("The opposing Saberleomon fell straight down!");
                 break;
             case MOVE_JAW_LOCK:
                 MESSAGE("Neither Pokémon can run away!");
@@ -102,7 +102,7 @@ SINGLE_BATTLE_TEST("Shield Dust does not block self-targeting effects, primary o
         ASSUME(MoveHasAdditionalEffectSelf(MOVE_LEAF_STORM, MOVE_EFFECT_SP_ATK_MINUS_2) == TRUE);
         ASSUME(MoveHasAdditionalEffectSelf(MOVE_METEOR_ASSAULT, MOVE_EFFECT_RECHARGE) == TRUE);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_VIVILLON) { Ability(ABILITY_SHIELD_DUST); }
+        OPPONENT(SPECIES_SABERLEOMON) { Ability(ABILITY_SHIELD_DUST); }
     } WHEN {
         TURN { MOVE(player, move); }
         if (move == MOVE_METEOR_ASSAULT) {
@@ -133,18 +133,18 @@ DOUBLE_BATTLE_TEST("Shield Dust does or does not block Sparkling Aria depending 
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_VIVILLON) { Ability(ABILITY_SHIELD_DUST); Status1(STATUS1_BURN); }
+        OPPONENT(SPECIES_SABERLEOMON) { Ability(ABILITY_SHIELD_DUST); Status1(STATUS1_BURN); }
         OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerRight, moveToUse, target: opponentRight); MOVE(playerLeft, MOVE_SPARKLING_ARIA); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPARKLING_ARIA, playerLeft);
         if (moveToUse == MOVE_SCRATCH) {
-            MESSAGE("The opposing Vivillon's burn was cured!");
+            MESSAGE("The opposing Saberleomon's burn was cured!");
             STATUS_ICON(opponentLeft, none: TRUE);
         } else {
             NONE_OF {
-                MESSAGE("The opposing Vivillon's burn was cured!");
+                MESSAGE("The opposing Saberleomon's burn was cured!");
                 STATUS_ICON(opponentLeft, none: TRUE);
             }
         }
@@ -155,13 +155,13 @@ DOUBLE_BATTLE_TEST("Shield Dust blocks Sparkling Aria if all other targets avoid
 {
     GIVEN {
         PLAYER(SPECIES_PRIMARINA);
-        PLAYER(SPECIES_VIVILLON) { Ability(ABILITY_SHIELD_DUST); Status1(STATUS1_BURN); }
+        PLAYER(SPECIES_SABERLEOMON) { Ability(ABILITY_SHIELD_DUST); Status1(STATUS1_BURN); }
         OPPONENT(SPECIES_LOPMON_X) { Status1(STATUS1_BURN); }
         OPPONENT(SPECIES_EXVEEMON) { Status1(STATUS1_BURN); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_FLY, target:playerLeft); MOVE(opponentRight, MOVE_PROTECT); MOVE(playerRight, MOVE_CELEBRATE); MOVE(playerLeft, MOVE_SPARKLING_ARIA); }
     } SCENE {
-        NOT MESSAGE("Vivillon's burn was cured!");
+        NOT MESSAGE("Saberleomon's burn was cured!");
     }
 }
 
@@ -169,13 +169,13 @@ SINGLE_BATTLE_TEST("Shield Dust blocks Sparkling Aria in singles")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_VIVILLON) { Ability(ABILITY_SHIELD_DUST); Status1(STATUS1_BURN); }
+        OPPONENT(SPECIES_SABERLEOMON) { Ability(ABILITY_SHIELD_DUST); Status1(STATUS1_BURN); }
     } WHEN {
         TURN { MOVE(player, MOVE_SPARKLING_ARIA); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPARKLING_ARIA, player);
         NONE_OF {
-            MESSAGE("The opposing Vivillon's burn was cured!");
+            MESSAGE("The opposing Saberleomon's burn was cured!");
             STATUS_ICON(opponent, none: TRUE);
         }
     }
@@ -184,11 +184,11 @@ SINGLE_BATTLE_TEST("Shield Dust blocks Sparkling Aria in singles")
 SINGLE_BATTLE_TEST("Shield Dust does not prevent ability stat changes")
 {
     GIVEN {
-        PLAYER(SPECIES_VIVILLON) { Ability(ABILITY_SHIELD_DUST); }
+        PLAYER(SPECIES_SABERLEOMON) { Ability(ABILITY_SHIELD_DUST); }
         OPPONENT(SPECIES_ELDEGOSS) { Ability(ABILITY_COTTON_DOWN); }
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH); }
     } SCENE {
-        MESSAGE("Vivillon's Speed fell!");
+        MESSAGE("Saberleomon's Speed fell!");
     }
 }

@@ -1295,7 +1295,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sPukumonLevelUpLearnset,                              \
         .teachableLearnset = sPukumonTeachableLearnset,                          \
         .formSpeciesIdTable = sPukumonFormSpeciesIdTable,                        \
-        .evolutions = EVOLUTION({EVO_LEVEL, 12, SPECIES_VIVILLON_##evolution}), \
+        .evolutions = EVOLUTION({EVO_LEVEL, 12, SPECIES_SABERLEOMON_##evolution}), \
     }
 
     [SPECIES_PUKUMON_ICY_SNOW]    = PUKUMON_SPECIES_INFO(ICY_SNOW),
@@ -1319,245 +1319,166 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_PUKUMON_FANCY]       = PUKUMON_SPECIES_INFO(FANCY),
     [SPECIES_PUKUMON_POKEBALL]   = PUKUMON_SPECIES_INFO(POKEBALL),
 
-#define VIVILLON_MISC_INFO(form, color, iconPal)                                            \
-        .baseHP        = 80,                                                                \
-        .baseAttack    = 52,                                                                \
-        .baseDefense   = 50,                                                                \
-        .baseSpeed     = 89,                                                                \
-        .baseSpAttack  = 90,                                                                \
-        .baseSpDefense = 50,                                                                \
-        .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),                                          \
-        .catchRate = 45,                                                                    \
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 206 : 185,                            \
+#define SABERLEOMON_MISC_INFO(form, color, iconPal)                                            \
+        .baseHP        = 110,                                                                \
+        .baseAttack    = 140,                                                                \
+        .baseDefense   = 90,                                                                \
+        .baseSpeed     = 130,                                                                \
+        .baseSpAttack  = 70,                                                                \
+        .baseSpDefense = 90,                                                                \
+        .types = MON_TYPES(TYPE_NORMAL),                                          \
+        .attribute = TYPE_DATA,                                                            \
+        .catchRate = 55,                                                                    \
+        .expYield = 250,                                                                    \
         .evYield_HP = 1,                                                                    \
-        .evYield_Speed = 1,                                                                 \
-        .evYield_SpAttack = 1,                                                              \
+        .evYield_Attack = 3,                                                                 \
+        .evYield_Speed = 2,                                                              \
         .genderRatio = MON_GENDERLESS,                                                  \
         .eggCycles = 15,                                                                    \
         .friendship = STANDARD_FRIENDSHIP,                                                  \
         .growthRate = GROWTH_SLOW,                                                   \
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),                                         \
-        .abilities = { ABILITY_SHIELD_DUST, ABILITY_COMPOUND_EYES, ABILITY_FRIEND_GUARD },  \
-        .bodyColor = color,                                                                 \
-        .speciesName = _("Vivillon"),                                                       \
-        .cryId = CRY_VIVILLON,                                                              \
-        .natDexNum = NATIONAL_DEX_VIVILLON,                                                 \
-        .categoryName = _("Scale"),                                                         \
-        .height = 12,                                                                       \
-        .weight = 170,                                                                      \
+        .abilities = { ABILITY_NORMALIZE, ABILITY_JUSTIFIED, ABILITY_STRONG_JAW },  \
+        .bodyColor = BODY_COLOR_YELLOW,                                                                 \
+        .speciesName = _("SaberLeomon"),                                                       \
+        .cryId = CRY_SABERLEOMON,                                                              \
+        .natDexNum = NATIONAL_DEX_SABERLEOMON,                                                 \
+        .categoryName = _("Sabertooth"),                                                         \
+        .height = 37,                                                                       \
+        .weight = 1796,                                                                      \
         .pokemonScale = 282,                                                                \
         .pokemonOffset = 4,                                                                 \
         .trainerScale = 256,                                                                \
         .trainerOffset = 0,                                                                 \
-        .frontPic = gMonFrontPic_Vivillon ##form,                                           \
+        .frontPic = gMonFrontPic_Saberleomon ##form,                                           \
         .frontPicSize = MON_COORDS_SIZE(64, 64),                                            \
         .frontPicYOffset = 0,                                                               \
-        .frontAnimFrames = sAnims_Vivillon,                                                 \
+        .frontAnimFrames = sAnims_Saberleomon,                                                 \
         .frontAnimId = ANIM_ZIGZAG_SLOW,                                                    \
         .enemyMonElevation = 9,                                                             \
-        .backPic = gMonBackPic_Vivillon ##form,                                             \
+        .backPic = gMonBackPic_Saberleomon ##form,                                             \
         .backPicSize = MON_COORDS_SIZE(64, 64),                                             \
         .backPicYOffset = 0,                                                                \
         .backAnimId = BACK_ANIM_CIRCLE_COUNTERCLOCKWISE,                                    \
-        .palette = gMonPalette_Vivillon ##form,                                             \
-        .shinyPalette = gMonShinyPalette_Vivillon ##form,                                   \
-        .iconSprite = gMonIcon_Vivillon ##form,                                             \
-        .iconPalIndex = iconPal,                                                            \
+        .palette = gMonPalette_Saberleomon ##form,                                             \
+        .shinyPalette = gMonShinyPalette_Saberleomon ##form,                                   \
+        .iconSprite = gMonIcon_Saberleomon ##form,                                             \
+        .iconPalIndex = 2,                                                            \
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,                                             \
         SHADOW(0, 20, SHADOW_SIZE_M)                                                        \
-        FOOTPRINT(Vivillon)                                                                 \
+        FOOTPRINT(Saberleomon)                                                                 \
         OVERWORLD(                                                                          \
-            sPicTable_Vivillon ##form,                                                      \
+            sPicTable_Saberleomon ##form,                                                      \
             SIZE_32x32,                                                                     \
             SHADOW_SIZE_M,                                                                  \
             TRACKS_FOOT,                                                                    \
             sAnimTable_Following,                                                           \
-            gOverworldPalette_Vivillon ##form,                                              \
-            gShinyOverworldPalette_Vivillon ##form                                          \
+            gOverworldPalette_Saberleomon ##form,                                              \
+            gShinyOverworldPalette_Saberleomon ##form                                          \
         )                                                                                   \
-        .levelUpLearnset = sVivillonLevelUpLearnset,                                        \
-        .teachableLearnset = sVivillonTeachableLearnset,                                    \
-        .formSpeciesIdTable = sVivillonFormSpeciesIdTable
+        .levelUpLearnset = sSaberleomonLevelUpLearnset,                                        \
+        .teachableLearnset = sSaberleomonTeachableLearnset,                                    \
+        .formSpeciesIdTable = sSaberleomonFormSpeciesIdTable
 
-    [SPECIES_VIVILLON_ICY_SNOW] =
+    [SPECIES_SABERLEOMON_ICY_SNOW] =
     {
-        VIVILLON_MISC_INFO(IcySnow, BODY_COLOR_WHITE, 0),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in.\n"
-            "This form is from frigid lands.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(IcySnow, BODY_COLOR_WHITE, 0),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_POLAR] =
+    [SPECIES_SABERLEOMON_POLAR] =
     {
-        VIVILLON_MISC_INFO(Polar, BODY_COLOR_BLUE, 0),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in.\n"
-            "This form is from snowy lands.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(Polar, BODY_COLOR_BLUE, 0),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_TUNDRA] =
+    [SPECIES_SABERLEOMON_TUNDRA] =
     {
-        VIVILLON_MISC_INFO(Tundra, BODY_COLOR_BLUE, 0),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in.\n"
-            "This form is from lands of severe cold.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(Tundra, BODY_COLOR_BLUE, 0),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_CONTINENTAL] =
+    [SPECIES_SABERLEOMON_CONTINENTAL] =
     {
-        VIVILLON_MISC_INFO(Continental, BODY_COLOR_YELLOW, 2),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in.\n"
-            "This form is from lands of vast space.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(Continental, BODY_COLOR_YELLOW, 2),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_GARDEN] =
+    [SPECIES_SABERLEOMON_GARDEN] =
     {
-        VIVILLON_MISC_INFO(Garden, BODY_COLOR_GREEN, 1),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in.\n"
-            "This form is from verdant lands.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(Garden, BODY_COLOR_GREEN, 1),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_ELEGANT] =
+    [SPECIES_SABERLEOMON_ELEGANT] =
     {
-        VIVILLON_MISC_INFO(Elegant, BODY_COLOR_PURPLE, 0),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in. This\n"
-            "form is from lands with distinct seasons.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(Elegant, BODY_COLOR_PURPLE, 0),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_MEADOW] =
+    [SPECIES_SABERLEOMON_MEADOW] =
     {
-        VIVILLON_MISC_INFO(Meadow, BODY_COLOR_PINK, 0),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in. This\n"
-            "form is from lands where flowers bloom.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(Meadow, BODY_COLOR_PINK, 0),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_MODERN] =
+    [SPECIES_SABERLEOMON_MODERN] =
     {
-        VIVILLON_MISC_INFO(Modern, BODY_COLOR_RED, 2),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in.\n"
-            "This form is from sun-drenched lands.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(Modern, BODY_COLOR_RED, 2),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_MARINE] =
+    [SPECIES_SABERLEOMON_MARINE] =
     {
-        VIVILLON_MISC_INFO(Marine, BODY_COLOR_BLUE, 0),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in. This\n"
-            "form is from lands with ocean breezes.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(Marine, BODY_COLOR_BLUE, 0),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_ARCHIPELAGO] =
+    [SPECIES_SABERLEOMON_ARCHIPELAGO] =
     {
-        VIVILLON_MISC_INFO(Archipelago, BODY_COLOR_BROWN, 0),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in.\n"
-            "This form is from places with many islands.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(Archipelago, BODY_COLOR_BROWN, 0),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_HIGH_PLAINS] =
+    [SPECIES_SABERLEOMON_HIGH_PLAINS] =
     {
-        VIVILLON_MISC_INFO(HighPlains, BODY_COLOR_BROWN, 0),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in.\n"
-            "This form is from lands with little rain.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(HighPlains, BODY_COLOR_BROWN, 0),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_SANDSTORM] =
+    [SPECIES_SABERLEOMON_SANDSTORM] =
     {
-        VIVILLON_MISC_INFO(Sandstorm, BODY_COLOR_BROWN, 1),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in.\n"
-            "This form is from parched lands.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(Sandstorm, BODY_COLOR_BROWN, 1),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_RIVER] =
+    [SPECIES_SABERLEOMON_RIVER] =
     {
-        VIVILLON_MISC_INFO(River, BODY_COLOR_BROWN, 2),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in. This\n"
-            "form is from lands where large rivers flow.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(River, BODY_COLOR_BROWN, 2),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_MONSOON] =
+    [SPECIES_SABERLEOMON_MONSOON] =
     {
-        VIVILLON_MISC_INFO(Monsoon, BODY_COLOR_GRAY, 0),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in. This\n"
-            "form is from lands with intense rainfall.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(Monsoon, BODY_COLOR_GRAY, 0),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_SAVANNA] =
+    [SPECIES_SABERLEOMON_SAVANNA] =
     {
-        VIVILLON_MISC_INFO(Savanna, BODY_COLOR_GREEN, 0),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in. This\n"
-            "form is from lands with a tropical climate.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(Savanna, BODY_COLOR_GREEN, 0),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_SUN] =
+    [SPECIES_SABERLEOMON_SUN] =
     {
-        VIVILLON_MISC_INFO(Sun, BODY_COLOR_RED, 0),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in.\n"
-            "This form is from lands bathed in light.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(Sun, BODY_COLOR_RED, 0),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_OCEAN] =
+    [SPECIES_SABERLEOMON_OCEAN] =
     {
-        VIVILLON_MISC_INFO(Ocean, BODY_COLOR_RED, 0),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in. This\n"
-            "form is from lands of perpetual summer.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(Ocean, BODY_COLOR_RED, 0),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_JUNGLE] =
+    [SPECIES_SABERLEOMON_JUNGLE] =
     {
-        VIVILLON_MISC_INFO(Jungle, BODY_COLOR_GREEN, 0),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in. This\n"
-            "form is from lands of tropical rainforests.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(Jungle, BODY_COLOR_GREEN, 0),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_FANCY] =
+    [SPECIES_SABERLEOMON_FANCY] =
     {
-        VIVILLON_MISC_INFO(Fancy, BODY_COLOR_PINK, 1),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in.\n"
-            "This form is from a mysterious land.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(Fancy, BODY_COLOR_PINK, 1),
+        .description = gSaberLeomonPokedexText,
     },
-    [SPECIES_VIVILLON_POKEBALL] =
+    [SPECIES_SABERLEOMON_POKEBALL] =
     {
-        VIVILLON_MISC_INFO(PokeBall, BODY_COLOR_RED, 2),
-        .description = COMPOUND_STRING(
-            "Its pattern depends on the climate and\n"
-            "topography of the land it was born in.\n"
-            "This form is from a special land.\n"
-            "It scatters toxic color scales in battle."),
+        SABERLEOMON_MISC_INFO(PokeBall, BODY_COLOR_RED, 2),
+        .description = gSaberLeomonPokedexText,
     },
 #endif //P_FAMILY_METALSEADRAMON
 

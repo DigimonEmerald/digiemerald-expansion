@@ -493,5 +493,6 @@ MarineAngemon - Fletchinder
 MetalEtemon - Talonflame
 MetalSeadramon - Scatterbug
 Pukumon - Spewpa
+SaberLeomon - Vivillon
 
 SPECIES NAME LENGTH MAX = 13

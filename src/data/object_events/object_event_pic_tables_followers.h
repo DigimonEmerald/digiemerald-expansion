@@ -4623,65 +4623,65 @@ static const struct SpriteFrameImage sPicTable_Metalseadramon[] = {
 static const struct SpriteFrameImage sPicTable_Pukumon[] = {
     overworld_ascending_frames(gObjectEventPic_Pukumon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonIcySnow[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonIcySnow, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonIcySnow[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonIcySnow, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonPolar[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonPolar, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonPolar[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonPolar, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonTundra[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonTundra, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonTundra[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonTundra, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonContinental[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonContinental, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonContinental[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonContinental, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonGarden[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonGarden, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonGarden[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonGarden, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonElegant[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonElegant, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonElegant[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonElegant, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonMeadow[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonMeadow, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonMeadow[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonMeadow, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonModern[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonModern, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonModern[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonModern, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonMarine[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonMarine, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonMarine[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonMarine, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonArchipelago[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonArchipelago, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonArchipelago[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonArchipelago, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonHighPlains[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonHighPlains, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonHighPlains[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonHighPlains, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonSandstorm[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonSandstorm, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonSandstorm[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonSandstorm, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonRiver[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonRiver, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonRiver[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonRiver, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonMonsoon[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonMonsoon, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonMonsoon[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonMonsoon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonSavanna[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonSavanna, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonSavanna[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonSavanna, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonSun[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonSun, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonSun[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonSun, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonOcean[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonOcean, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonOcean[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonOcean, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonJungle[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonJungle, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonJungle[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonJungle, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonFancy[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonFancy, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonFancy[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonFancy, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_VivillonPokeBall[] = {
-    overworld_ascending_frames(gObjectEventPic_VivillonPokeBall, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberleomonPokeBall[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberleomonPokeBall, 4, 4),
 };
 #endif //P_FAMILY_METALSEADRAMON
 

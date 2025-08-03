@@ -348,7 +348,7 @@ DOUBLE_BATTLE_TEST("Pledge move combo interactions with Powder are correct")
         PLAYER(SPECIES_LOPMONX) { Speed(speedLeft); }
         PLAYER(SPECIES_EXVEEMON) { Speed(speedRight); }
         OPPONENT(SPECIES_LOPMONX) { Speed(8); }
-        OPPONENT(SPECIES_VIVILLON) { Speed(5); }
+        OPPONENT(SPECIES_SABERLEOMON) { Speed(5); }
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(playerLeft, moveLeft, target: opponentLeft); MOVE(playerRight, moveRight, target: opponentLeft); }
     } SCENE {

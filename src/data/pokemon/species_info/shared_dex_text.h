@@ -89,6 +89,12 @@ const u8 gPukumonPokedexText[] = _(
     "attitude that leads to it fighting any\n"
     "opponent regardless of their strength.");
 
+const u8 gSaberLeomonPokedexText[] = _(
+    "With its mach speed power, SaberLeomon\n"
+    "is able to easily dodge attacks. Its\n"
+    "two massive fangs let it quickly\n"
+    "overwhelm any opponent.");
+
 const u8 gFurfrouPokedexText[] = _(
     "Trimming its fluffy fur not only makes\n"
     "it more elegant but also increases the\n"

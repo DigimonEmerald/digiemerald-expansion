@@ -402,7 +402,7 @@ SINGLE_BATTLE_TEST("(Z-MOVE) Powder blocks Fire type Z-Moves and deals 25% of ma
     GIVEN {
         ASSUME(gMovesInfo[MOVE_EMBER].type == TYPE_FIRE);
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_FIRIUM_Z); }
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POWDER); MOVE(player, MOVE_EMBER, gimmick: GIMMICK_Z_MOVE); }
     } SCENE {
@@ -422,7 +422,7 @@ DOUBLE_BATTLE_TEST("(Z-MOVE) Powder blocks Fire type Z-Moves (from Z-Mirror Move
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_FLYINIUM_Z); }
         PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_POWDER, target: playerLeft); MOVE(opponentLeft, MOVE_EMBER, target: playerLeft); MOVE(playerLeft, MOVE_MIRROR_MOVE, gimmick: GIMMICK_Z_MOVE); }
     } SCENE {
@@ -439,7 +439,7 @@ SINGLE_BATTLE_TEST("(Z-MOVE) Powder blocks Fire type Z-Moves but not boosts gran
         ASSUME(gMovesInfo[MOVE_WILL_O_WISP].type == TYPE_FIRE);
         ASSUME(gMovesInfo[MOVE_WILL_O_WISP].zMove.effect == Z_EFFECT_ATK_UP_1);
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_FIRIUM_Z); }
-        OPPONENT(SPECIES_VIVILLON);
+        OPPONENT(SPECIES_SABERLEOMON);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POWDER); MOVE(player, MOVE_WILL_O_WISP, gimmick: GIMMICK_Z_MOVE); }
     } SCENE {

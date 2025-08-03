@@ -50,7 +50,7 @@ def rellocate_follower_graphics():
         newname = newname.replace("toxtricity_", "toxtricity/")
         newname = newname.replace("lopmon_", "lopmon/")
         newname = newname.replace("ursaluna_", "ursaluna/")
-        newname = newname.replace("vivillon_", "vivillon/")
+        newname = newname.replace("saberleomon_", "saberleomon/")
         newname = newname.replace("wormadam_", "wormadam/")
 
         if (os.path.exists('followers/' + newname) == False):
