@@ -427,7 +427,7 @@
 #define SPECIES_MOTHIM_PLANT                            414
 #define SPECIES_MOTHIM                                  SPECIES_MOTHIM_PLANT
 #define SPECIES_TESLAJELLYMON                                  415
-#define SPECIES_VESPIQUEN                               416
+#define SPECIES_RAREMON                               416
 #define SPECIES_PACHIRISU                               417
 #define SPECIES_BUIZEL                                  418
 #define SPECIES_FLOATZEL                                419

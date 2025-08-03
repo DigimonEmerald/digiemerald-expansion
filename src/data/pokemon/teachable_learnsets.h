@@ -19033,7 +19033,7 @@ static const u16 sTeslajellymonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sVespiquenTeachableLearnset[] = {
+static const u16 sRaremonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CUT,

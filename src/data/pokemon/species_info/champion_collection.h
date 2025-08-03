@@ -13646,46 +13646,46 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .tmIlliterate = TRUE,
         .levelUpLearnset = sTeslajellymonLevelUpLearnset,
         .teachableLearnset = sTeslajellymonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_VESPIQUEN, CONDITIONS({IF_GENDER, MON_GENDERLESS})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_RAREMON, CONDITIONS({IF_GENDER, MON_GENDERLESS})}),
     },
 
-    [SPECIES_VESPIQUEN] =
+    [SPECIES_RAREMON] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 80,
-        .baseDefense   = 102,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 102,
-        .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 166 : 188,
-        .evYield_Defense = 1,
-        .evYield_SpDefense = 1,
+        .baseHP        = 120,
+        .baseAttack    = 45,
+        .baseDefense   = 85,
+        .baseSpeed     = 25,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_POISON),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP = 4,
         .itemRare = ITEM_POISON_BARB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_UNNERVE },
-        .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Vespiquen"),
-        .cryId = CRY_VESPIQUEN,
-        .natDexNum = NATIONAL_DEX_VESPIQUEN,
-        .categoryName = _("Beehive"),
-        .height = 12,
-        .weight = 385,
+        .abilities = { ABILITY_INSOMNIA, ABILITY_POISON_POINT, ABILITY_MOLD_BREAKER },
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("Raremon"),
+        .cryId = CRY_RAREMON,
+        .natDexNum = NATIONAL_DEX_RAREMON,
+        .categoryName = _("Rotten"),
+        .height = 62,
+        .weight = 1655,
         .description = COMPOUND_STRING(
-            "It houses its colony in cells in its body\n"
-            "and releases various pheromones to\n"
-            "make those grubs do its bidding.\n"
-            "There is only one in a colony."),
+            "Raremons muscles have completely\n"
+            "rotted, this is caused by its\n"
+            "attempt to mechanise its body. It\n"
+            "offensive capabilities are shallow"),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Vespiquen,
+        .frontPic = gMonFrontPic_Raremon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
@@ -13701,28 +13701,28 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         ),
         .frontAnimId = ANIM_LUNGE_GROW,
         .enemyMonElevation = 4,
-        .backPic = gMonBackPic_Vespiquen,
+        .backPic = gMonBackPic_Raremon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CIRCLE_COUNTERCLOCKWISE,
-        .palette = gMonPalette_Vespiquen,
-        .shinyPalette = gMonShinyPalette_Vespiquen,
-        .iconSprite = gMonIcon_Vespiquen,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Raremon,
+        .shinyPalette = gMonShinyPalette_Raremon,
+        .iconSprite = gMonIcon_Raremon,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 11, SHADOW_SIZE_L)
-        FOOTPRINT(Vespiquen)
+        FOOTPRINT(Raremon)
         OVERWORLD(
-            sPicTable_Vespiquen,
+            sPicTable_Raremon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Vespiquen,
-            gShinyOverworldPalette_Vespiquen
+            gOverworldPalette_Raremon,
+            gShinyOverworldPalette_Raremon
         )
-        .levelUpLearnset = sVespiquenLevelUpLearnset,
-        .teachableLearnset = sVespiquenTeachableLearnset,
+        .levelUpLearnset = sRaremonLevelUpLearnset,
+        .teachableLearnset = sRaremonTeachableLearnset,
     },
 #endif //P_FAMILY_TESLAJELLYMON
 

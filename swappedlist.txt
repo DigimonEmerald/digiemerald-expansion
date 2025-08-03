@@ -427,6 +427,7 @@ Nanimon - Wormadam (Plant)
 Octomon - Wormadam (Sandy)
 Ogremon - Wormadam (Trash)
 TeslaJellymon - Combee
+Raremon - Vespiquen
 
 Ultimate List
 

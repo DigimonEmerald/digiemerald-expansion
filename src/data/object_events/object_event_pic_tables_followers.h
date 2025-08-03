@@ -3252,8 +3252,8 @@ static const struct SpriteFrameImage sPicTable_TeslajellymonF[] = {
     overworld_ascending_frames(gObjectEventPic_TeslajellymonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_Vespiquen[] = {
-    overworld_ascending_frames(gObjectEventPic_Vespiquen, 4, 4),
+static const struct SpriteFrameImage sPicTable_Raremon[] = {
+    overworld_ascending_frames(gObjectEventPic_Raremon, 4, 4),
 };
 #endif //P_FAMILY_TESLAJELLYMON
 

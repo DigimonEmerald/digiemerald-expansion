@@ -1128,7 +1128,7 @@ gCryTable::
 .endif @ P_FAMILY_MEKANORIMON
 .if P_FAMILY_TESLAJELLYMON == TRUE
 	cry Cry_Teslajellymon
-	cry Cry_Vespiquen
+	cry Cry_Raremon
 .endif @ P_FAMILY_TESLAJELLYMON
 .if P_FAMILY_PACHIRISU == TRUE
 	cry Cry_Pachirisu
@@ -3556,7 +3556,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_MEKANORIMON
 .if P_FAMILY_TESLAJELLYMON == TRUE
 	cry_reverse Cry_Teslajellymon
-	cry_reverse Cry_Vespiquen
+	cry_reverse Cry_Raremon
 .endif @ P_FAMILY_TESLAJELLYMON
 .if P_FAMILY_PACHIRISU == TRUE
 	cry_reverse Cry_Pachirisu

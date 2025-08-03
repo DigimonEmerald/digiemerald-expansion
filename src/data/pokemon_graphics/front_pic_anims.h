@@ -5544,7 +5544,7 @@ static const union AnimCmd sAnim_Teslajellymon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Vespiquen_1[] =
+static const union AnimCmd sAnim_Raremon_1[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 12),
@@ -11459,7 +11459,7 @@ SINGLE_ANIMATION(Mothim);
 #endif //P_FAMILY_MEKANORIMON
 #if P_FAMILY_TESLAJELLYMON
 SINGLE_ANIMATION(Teslajellymon);
-SINGLE_ANIMATION(Vespiquen);
+SINGLE_ANIMATION(Raremon);
 #endif //P_FAMILY_TESLAJELLYMON
 #if P_FAMILY_PACHIRISU
 SINGLE_ANIMATION(Pachirisu);

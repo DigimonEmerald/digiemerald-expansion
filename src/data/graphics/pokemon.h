@@ -14571,19 +14571,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
-    const u32 gMonFrontPic_Vespiquen[] = INCBIN_U32("graphics/pokemon/vespiquen/anim_front.4bpp.lz");
-    const u16 gMonPalette_Vespiquen[] = INCBIN_U16("graphics/pokemon/vespiquen/normal.gbapal");
-    const u32 gMonBackPic_Vespiquen[] = INCBIN_U32("graphics/pokemon/vespiquen/back.4bpp.lz");
-    const u16 gMonShinyPalette_Vespiquen[] = INCBIN_U16("graphics/pokemon/vespiquen/shiny.gbapal");
-    const u8 gMonIcon_Vespiquen[] = INCBIN_U8("graphics/pokemon/vespiquen/icon.4bpp");
+    const u32 gMonFrontPic_Raremon[] = INCBIN_U32("graphics/pokemon/raremon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Raremon[] = INCBIN_U16("graphics/pokemon/raremon/normal.gbapal");
+    const u32 gMonBackPic_Raremon[] = INCBIN_U32("graphics/pokemon/raremon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Raremon[] = INCBIN_U16("graphics/pokemon/raremon/shiny.gbapal");
+    const u8 gMonIcon_Raremon[] = INCBIN_U8("graphics/pokemon/raremon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Vespiquen[] = INCBIN_U8("graphics/pokemon/vespiquen/footprint.1bpp");
+    const u8 gMonFootprint_Raremon[] = INCBIN_U8("graphics/pokemon/raremon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Vespiquen[] = INCBIN_COMP("graphics/pokemon/vespiquen/overworld.4bpp");
+    const u32 gObjectEventPic_Raremon[] = INCBIN_COMP("graphics/pokemon/raremon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Vespiquen[] = INCBIN_U16("graphics/pokemon/vespiquen/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Vespiquen[] = INCBIN_U16("graphics/pokemon/vespiquen/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Raremon[] = INCBIN_U16("graphics/pokemon/raremon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Raremon[] = INCBIN_U16("graphics/pokemon/raremon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_TESLAJELLYMON
