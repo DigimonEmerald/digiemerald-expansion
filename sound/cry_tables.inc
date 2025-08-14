@@ -1130,9 +1130,9 @@ gCryTable::
 	cry Cry_Teslajellymon
 	cry Cry_Raremon
 .endif @ P_FAMILY_TESLAJELLYMON
-.if P_FAMILY_PACHIRISU == TRUE
-	cry Cry_Pachirisu
-.endif @ P_FAMILY_PACHIRISU
+.if P_FAMILY_SUKAMON == TRUE
+	cry Cry_Sukamon
+.endif @ P_FAMILY_SUKAMON
 .if P_FAMILY_BUIZEL == TRUE
 	cry Cry_Buizel
 	cry Cry_Floatzel
@@ -3558,9 +3558,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Teslajellymon
 	cry_reverse Cry_Raremon
 .endif @ P_FAMILY_TESLAJELLYMON
-.if P_FAMILY_PACHIRISU == TRUE
-	cry_reverse Cry_Pachirisu
-.endif @ P_FAMILY_PACHIRISU
+.if P_FAMILY_SUKAMON == TRUE
+	cry_reverse Cry_Sukamon
+.endif @ P_FAMILY_SUKAMON
 .if P_FAMILY_BUIZEL == TRUE
 	cry_reverse Cry_Buizel
 	cry_reverse Cry_Floatzel

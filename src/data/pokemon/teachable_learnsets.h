@@ -19060,8 +19060,8 @@ static const u16 sRaremonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_TESLAJELLYMON
 
-#if P_FAMILY_PACHIRISU
-static const u16 sPachirisuTeachableLearnset[] = {
+#if P_FAMILY_SUKAMON
+static const u16 sSukamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CUT,
@@ -19093,7 +19093,7 @@ static const u16 sPachirisuTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PACHIRISU
+#endif //P_FAMILY_SUKAMON
 
 #if P_FAMILY_BUIZEL
 static const u16 sBuizelTeachableLearnset[] = {

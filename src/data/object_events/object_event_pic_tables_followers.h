@@ -3257,16 +3257,16 @@ static const struct SpriteFrameImage sPicTable_Raremon[] = {
 };
 #endif //P_FAMILY_TESLAJELLYMON
 
-#if P_FAMILY_PACHIRISU
-static const struct SpriteFrameImage sPicTable_Pachirisu[] = {
-    overworld_ascending_frames(gObjectEventPic_Pachirisu, 4, 4),
+#if P_FAMILY_SUKAMON
+static const struct SpriteFrameImage sPicTable_Sukamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Sukamon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_PachirisuF[] = {
-    overworld_ascending_frames(gObjectEventPic_PachirisuF, 4, 4),
+static const struct SpriteFrameImage sPicTable_SukamonF[] = {
+    overworld_ascending_frames(gObjectEventPic_SukamonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_PACHIRISU
+#endif //P_FAMILY_SUKAMON
 
 #if P_FAMILY_BUIZEL
 static const struct SpriteFrameImage sPicTable_Buizel[] = {

@@ -3564,8 +3564,8 @@ static const u16 sTuskmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_TUSKMON
 
-#if P_FAMILY_PACHIRISU
-static const u16 sPachirisuEggMoveLearnset[] = {
+#if P_FAMILY_SUKAMON
+static const u16 sSukamonEggMoveLearnset[] = {
     MOVE_COVET,
     MOVE_BITE,
     MOVE_FAKE_TEARS,
@@ -3582,7 +3582,7 @@ static const u16 sPachirisuEggMoveLearnset[] = {
     MOVE_BABY_DOLL_EYES,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PACHIRISU
+#endif //P_FAMILY_SUKAMON
 
 #if P_FAMILY_BUIZEL
 static const u16 sBuizelEggMoveLearnset[] = {

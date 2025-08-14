@@ -468,8 +468,8 @@
 #define P_FAMILY_MEKANORIMON                   TRUE
 #undef P_FAMILY_TESLAJELLYMON
 #define P_FAMILY_TESLAJELLYMON                  TRUE
-#undef P_FAMILY_PACHIRISU
-#define P_FAMILY_PACHIRISU               TRUE
+#undef P_FAMILY_SUKAMON
+#define P_FAMILY_SUKAMON               TRUE
 #undef P_FAMILY_BUIZEL
 #define P_FAMILY_BUIZEL                  TRUE
 #undef P_FAMILY_CHERUBI

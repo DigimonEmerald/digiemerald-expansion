@@ -5559,8 +5559,8 @@ static const union AnimCmd sAnim_Raremon_1[] =
 };
 #endif //P_FAMILY_TESLAJELLYMON
 
-#if P_FAMILY_PACHIRISU
-static const union AnimCmd sAnim_Pachirisu_1[] =
+#if P_FAMILY_SUKAMON
+static const union AnimCmd sAnim_Sukamon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 5),
@@ -5573,7 +5573,7 @@ static const union AnimCmd sAnim_Pachirisu_1[] =
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_PACHIRISU
+#endif //P_FAMILY_SUKAMON
 
 #if P_FAMILY_BUIZEL
 static const union AnimCmd sAnim_Buizel_1[] =
@@ -11461,9 +11461,9 @@ SINGLE_ANIMATION(Mothim);
 SINGLE_ANIMATION(Teslajellymon);
 SINGLE_ANIMATION(Raremon);
 #endif //P_FAMILY_TESLAJELLYMON
-#if P_FAMILY_PACHIRISU
-SINGLE_ANIMATION(Pachirisu);
-#endif //P_FAMILY_PACHIRISU
+#if P_FAMILY_SUKAMON
+SINGLE_ANIMATION(Sukamon);
+#endif //P_FAMILY_SUKAMON
 #if P_FAMILY_BUIZEL
 SINGLE_ANIMATION(Buizel);
 SINGLE_ANIMATION(Floatzel);

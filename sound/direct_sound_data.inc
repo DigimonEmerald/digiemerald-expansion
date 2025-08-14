@@ -3028,11 +3028,11 @@ Cry_Raremon::
 	.incbin "sound/direct_sound_samples/cries/raremon.bin"
 .endif @ P_FAMILY_TESLAJELLYMON
 
-.if P_FAMILY_PACHIRISU == TRUE
+.if P_FAMILY_SUKAMON == TRUE
 	.align 2
-Cry_Pachirisu::
-	.incbin "sound/direct_sound_samples/cries/pachirisu.bin"
-.endif @ P_FAMILY_PACHIRISU
+Cry_Sukamon::
+	.incbin "sound/direct_sound_samples/cries/sukamon.bin"
+.endif @ P_FAMILY_SUKAMON
 
 .if P_FAMILY_BUIZEL == TRUE
 	.align 2

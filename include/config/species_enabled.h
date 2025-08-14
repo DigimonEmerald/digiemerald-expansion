@@ -270,7 +270,7 @@
 #define P_FAMILY_TUSKMON                P_GEN_4_POKEMON
 #define P_FAMILY_MEKANORIMON                   P_GEN_4_POKEMON
 #define P_FAMILY_TESLAJELLYMON                  P_GEN_4_POKEMON
-#define P_FAMILY_PACHIRISU               P_GEN_4_POKEMON
+#define P_FAMILY_SUKAMON               P_GEN_4_POKEMON
 #define P_FAMILY_BUIZEL                  P_GEN_4_POKEMON
 #define P_FAMILY_CHERUBI                 P_GEN_4_POKEMON
 #define P_FAMILY_SHELLOS                 P_GEN_4_POKEMON

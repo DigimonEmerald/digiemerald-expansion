@@ -13726,42 +13726,44 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_TESLAJELLYMON
 
-#if P_FAMILY_PACHIRISU
-    [SPECIES_PACHIRISU] =
+#if P_FAMILY_SUKAMON
+    [SPECIES_SUKAMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 45,
-        .baseDefense   = 70,
-        .baseSpeed     = 95,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 90,
-        .types = MON_TYPES(TYPE_ELECTRIC),
-        .catchRate = 200,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 120,
-        .evYield_Speed = 1,
+        .baseHP        = 70,
+        .baseAttack    = 55,
+        .baseDefense   = 30,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_POISON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP = 1,
+        .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 10,
         .friendship = 100,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_RUN_AWAY, ABILITY_PICKUP, ABILITY_VOLT_ABSORB },
-        .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Pachirisu"),
-        .cryId = CRY_PACHIRISU,
-        .natDexNum = NATIONAL_DEX_PACHIRISU,
-        .categoryName = _("EleSquirrel"),
-        .height = 4,
-        .weight = 39,
+        .abilities = { ABILITY_STENCH, ABILITY_LIQUID_OOZE, ABILITY_LINGERING_AROMA },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Sukamon"),
+        .cryId = CRY_SUKAMON,
+        .natDexNum = NATIONAL_DEX_SUKAMON,
+        .categoryName = _("Poop"),
+        .height = 11,
+        .weight = 123,
         .description = COMPOUND_STRING(
-            "A pair may be seen rubbing their cheek\n"
-            "pouches together in an effort to share\n"
-            "stored electricity. It stores them with\n"
-            "berries in tree holes."),
+            "Born from scrap data, Sukamon is the\n"
+            "digital embodiment of all waste. It is\n"
+            "often found with a Chuumon as they\n"
+            "both like to cause trouble to anyone."),
         .pokemonScale = 491,
         .pokemonOffset = 16,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Pachirisu,
+        .frontPic = gMonFrontPic_Sukamon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 12,
         .frontAnimFrames = ANIM_FRAMES(
@@ -13776,42 +13778,42 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 1),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Pachirisu,
+        .backPic = gMonBackPic_Sukamon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
-        .palette = gMonPalette_Pachirisu,
-        .shinyPalette = gMonShinyPalette_Pachirisu,
-        .iconSprite = gMonIcon_Pachirisu,
+        .palette = gMonPalette_Sukamon,
+        .shinyPalette = gMonShinyPalette_Sukamon,
+        .iconSprite = gMonIcon_Sukamon,
         .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_PachirisuF,
+        .frontPicFemale = gMonFrontPic_SukamonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 56),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(-2, 1, SHADOW_SIZE_S)
-        FOOTPRINT(Pachirisu)
+        FOOTPRINT(Sukamon)
         OVERWORLD(
-            sPicTable_Pachirisu,
+            sPicTable_Sukamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Pachirisu,
-            gShinyOverworldPalette_Pachirisu
+            gOverworldPalette_Sukamon,
+            gShinyOverworldPalette_Sukamon
         )
         OVERWORLD_FEMALE(
-            sPicTable_PachirisuF,
+            sPicTable_SukamonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sPachirisuLevelUpLearnset,
-        .teachableLearnset = sPachirisuTeachableLearnset,
-        .eggMoveLearnset = sPachirisuEggMoveLearnset,
+        .levelUpLearnset = sSukamonLevelUpLearnset,
+        .teachableLearnset = sSukamonTeachableLearnset,
+        .eggMoveLearnset = sSukamonEggMoveLearnset,
     },
-#endif //P_FAMILY_PACHIRISU
+#endif //P_FAMILY_SUKAMON
 
 #if P_FAMILY_BUIZEL
     [SPECIES_BUIZEL] =

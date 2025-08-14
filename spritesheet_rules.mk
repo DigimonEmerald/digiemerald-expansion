@@ -2427,10 +2427,10 @@ $(POKEMONGFXDIR)/teslajellymon/overworldf.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/raremon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/pachirisu/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/sukamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/pachirisu/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/sukamon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/buizel/overworld.4bpp: %.4bpp: %.png

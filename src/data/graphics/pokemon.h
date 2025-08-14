@@ -14588,30 +14588,30 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_TESLAJELLYMON
 
-#if P_FAMILY_PACHIRISU
-    const u32 gMonFrontPic_Pachirisu[] = INCBIN_U32("graphics/pokemon/pachirisu/anim_front.4bpp.lz");
-    const u16 gMonPalette_Pachirisu[] = INCBIN_U16("graphics/pokemon/pachirisu/normal.gbapal");
-    const u32 gMonBackPic_Pachirisu[] = INCBIN_U32("graphics/pokemon/pachirisu/back.4bpp.lz");
-    const u16 gMonShinyPalette_Pachirisu[] = INCBIN_U16("graphics/pokemon/pachirisu/shiny.gbapal");
-    const u8 gMonIcon_Pachirisu[] = INCBIN_U8("graphics/pokemon/pachirisu/icon.4bpp");
+#if P_FAMILY_SUKAMON
+    const u32 gMonFrontPic_Sukamon[] = INCBIN_U32("graphics/pokemon/sukamon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Sukamon[] = INCBIN_U16("graphics/pokemon/sukamon/normal.gbapal");
+    const u32 gMonBackPic_Sukamon[] = INCBIN_U32("graphics/pokemon/sukamon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Sukamon[] = INCBIN_U16("graphics/pokemon/sukamon/shiny.gbapal");
+    const u8 gMonIcon_Sukamon[] = INCBIN_U8("graphics/pokemon/sukamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Pachirisu[] = INCBIN_U8("graphics/pokemon/pachirisu/footprint.1bpp");
+    const u8 gMonFootprint_Sukamon[] = INCBIN_U8("graphics/pokemon/sukamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Pachirisu[] = INCBIN_COMP("graphics/pokemon/pachirisu/overworld.4bpp");
+    const u32 gObjectEventPic_Sukamon[] = INCBIN_COMP("graphics/pokemon/sukamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Pachirisu[] = INCBIN_U16("graphics/pokemon/pachirisu/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Pachirisu[] = INCBIN_U16("graphics/pokemon/pachirisu/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Sukamon[] = INCBIN_U16("graphics/pokemon/sukamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Sukamon[] = INCBIN_U16("graphics/pokemon/sukamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_PachirisuF[] = INCBIN_U32("graphics/pokemon/pachirisu/anim_frontf.4bpp.lz");
+    const u32 gMonFrontPic_SukamonF[] = INCBIN_U32("graphics/pokemon/sukamon/anim_frontf.4bpp.lz");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_PachirisuF[] = INCBIN_COMP("graphics/pokemon/pachirisu/overworldf.4bpp");
+    const u32 gObjectEventPic_SukamonF[] = INCBIN_COMP("graphics/pokemon/sukamon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_PACHIRISU
+#endif //P_FAMILY_SUKAMON
 
 #if P_FAMILY_BUIZEL
     const u32 gMonFrontPic_Buizel[] = INCBIN_U32("graphics/pokemon/buizel/anim_front.4bpp.lz");
