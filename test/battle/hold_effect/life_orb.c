@@ -4,8 +4,8 @@
 SINGLE_BATTLE_TEST("Life Orb activates when users attack is succesful")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_LIFE_ORB); }
-        OPPONENT(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_LIFE_ORB); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_POUND); }
     } SCENE {
@@ -19,8 +19,8 @@ SINGLE_BATTLE_TEST("Life Orb activates when users attack is succesful")
 SINGLE_BATTLE_TEST("Life Orb activates if it hits a Substitute")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_LIFE_ORB); }
-        OPPONENT(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_LIFE_ORB); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUBSTITUTE); MOVE(player, MOVE_TACKLE); }
     } SCENE {
@@ -34,8 +34,8 @@ SINGLE_BATTLE_TEST("Life Orb activates if it hits a Substitute")
 SINGLE_BATTLE_TEST("Life Orb does not activate if using status move on a Substitute")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_LIFE_ORB); }
-        OPPONENT(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_LIFE_ORB); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUBSTITUTE); MOVE(player, MOVE_GROWL); }
     } SCENE {
@@ -51,8 +51,8 @@ SINGLE_BATTLE_TEST("Life Orb does not activate if using status move on a Substit
 SINGLE_BATTLE_TEST("Life Orb does not activate if using a status move")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_LIFE_ORB); }
-        OPPONENT(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_LIFE_ORB); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_GROWL); }
     } SCENE {
@@ -68,8 +68,8 @@ SINGLE_BATTLE_TEST("Life Orb doesn't cause any HP loss if user is unable to atta
 {
     PASSES_RANDOMLY(25, 100, RNG_PARALYSIS);
     GIVEN {
-        PLAYER(SPECIES_LOPMON_X) { Item(ITEM_LIFE_ORB); Status1(STATUS1_PARALYSIS); }
-        OPPONENT(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_LIFE_ORB); Status1(STATUS1_PARALYSIS); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_POUND); }
     } SCENE {
@@ -85,8 +85,8 @@ SINGLE_BATTLE_TEST("Life Orb doesn't cause any HP loss if user is unable to atta
 SINGLE_BATTLE_TEST("Life Orb does not activate if on a confusion hit")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_LIFE_ORB); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_LIFE_ORB); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_CONFUSE_RAY); MOVE(player, MOVE_POUND, WITH_RNG(RNG_CONFUSION, TRUE)); }
     } SCENE {
@@ -104,8 +104,8 @@ SINGLE_BATTLE_TEST("Life Orb does not activate if on a confusion hit")
 SINGLE_BATTLE_TEST("Life Orb does not activate if move was absorbed by target")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_LIFE_ORB); }
-        OPPONENT(SPECIES_RAICHU) { Ability(ABILITY_LIGHTNING_ROD); }
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_LIFE_ORB); }
+        OPPONENT(SPECIES_PICHIMON) { Ability(ABILITY_LIGHTNING_ROD); }
     } WHEN {
         TURN { MOVE(player, MOVE_SHOCK_WAVE); }
     } SCENE {
@@ -121,8 +121,8 @@ SINGLE_BATTLE_TEST("Life Orb does not activate if move was absorbed by target")
 SINGLE_BATTLE_TEST("Life Orb activates if move connected but no damage was dealt")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_LIFE_ORB); }
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_LIFE_ORB); }
+        OPPONENT(SPECIES_LOPMONX) { HP(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_FALSE_SWIPE); }
     } SCENE {

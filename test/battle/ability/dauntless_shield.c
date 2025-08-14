@@ -21,9 +21,9 @@ SINGLE_BATTLE_TEST("Dauntless Shield raises Defense by one stage every time it s
 {
     GIVEN {
         WITH_CONFIG(GEN_DAUNTLESS_SHIELD, GEN_8);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_ZAMAZENTA) { Ability(ABILITY_DAUNTLESS_SHIELD); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { SWITCH(opponent, 1); }
         TURN { SWITCH(opponent, 0); }
@@ -43,9 +43,9 @@ SINGLE_BATTLE_TEST("Dauntless Shield raises Defense by one stage only once per b
 {
     GIVEN {
         WITH_CONFIG(GEN_DAUNTLESS_SHIELD, GEN_9);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_ZAMAZENTA) { Ability(ABILITY_DAUNTLESS_SHIELD); }
-        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN { SWITCH(opponent, 1); }
         TURN { SWITCH(opponent, 0); }

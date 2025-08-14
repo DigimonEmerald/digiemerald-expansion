@@ -76,8 +76,8 @@ DOUBLE_BATTLE_TEST("Mimicry can trigger multiple times in a turn")
     GIVEN {
         PLAYER(SPECIES_STUNFISK_GALAR) { Speed(50); Ability(ABILITY_MIMICRY); }
         PLAYER(SPECIES_MORELULL) { Speed(40); }
-        OPPONENT(SPECIES_IGGLYBUFF) { Speed(60); }
-        OPPONENT(SPECIES_BAGON) { Speed(70); }
+        OPPONENT(SPECIES_HACKMON) { Speed(60); }
+        OPPONENT(SPECIES_FLYMON) { Speed(70); }
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_ELECTRIC_TERRAIN); MOVE(opponentLeft, MOVE_MISTY_TERRAIN); }
     } SCENE {
