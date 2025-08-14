@@ -19,15 +19,9 @@ SINGLE_BATTLE_TEST("Eject Pack does not cause the new Pokémon to lose HP due to
         ANIMATION(ANIM_TYPE_MOVE, MOVE_OVERHEAT, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-<<<<<<< HEAD
-        MESSAGE("Lopmonx is switched out with the Eject Pack!");
-        MESSAGE("Go! Exveemon!");
-        NOT MESSAGE("Exveemon was hurt by its Life Orb!");
-=======
-        MESSAGE("Lopmonx is switched out with the Eject Pack!");
-        SEND_IN_MESSAGE("Exveemon");
-        NOT MESSAGE("Exveemon was hurt by its Life Orb!");
->>>>>>> upstream/master
+        MESSAGE("Wobbuffet is switched out with the Eject Pack!");
+        SEND_IN_MESSAGE("Wynaut");
+        NOT HP_BAR(player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
     }
 }

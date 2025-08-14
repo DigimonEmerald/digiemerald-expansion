@@ -68,7 +68,7 @@ SINGLE_BATTLE_TEST("Future Sight is not boosted by Life Orb is original user if 
         MESSAGE("The opposing Gargoylmon took the Future Sight attack!");
 >>>>>>> upstream/master
         HP_BAR(opponent, captureDamage: &futureSightDmg);
-        NOT MESSAGE("Pichimon was hurt by its Life Orb!");
+        NOT HP_BAR(player);
     } THEN {
         EXPECT_EQ(seedFlareDmg, futureSightDmg);
     }

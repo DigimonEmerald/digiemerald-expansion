@@ -584,15 +584,9 @@ SINGLE_BATTLE_TEST("Red Card does not cause the dragged out mon to lose hp due t
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-<<<<<<< HEAD
-        MESSAGE("Foe Lopmonx held up its Red Card against Lopmonx!");
-        MESSAGE("Exveemon was dragged out!");
-        NOT MESSAGE("Exveemon was hurt by its Life Orb!");
-=======
-        MESSAGE("The opposing Lopmonx held up its Red Card against Lopmonx!");
-        MESSAGE("Exveemon was dragged out!");
-        NOT MESSAGE("Exveemon was hurt by its Life Orb!");
->>>>>>> upstream/master
+        MESSAGE("The opposing Wobbuffet held up its Red Card against Wobbuffet!");
+        MESSAGE("Wynaut was dragged out!");
+        NOT HP_BAR(player);
     }
 }
 
