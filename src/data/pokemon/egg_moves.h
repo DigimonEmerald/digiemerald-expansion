@@ -3584,8 +3584,8 @@ static const u16 sSukamonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_SUKAMON
 
-#if P_FAMILY_BUIZEL
-static const u16 sBuizelEggMoveLearnset[] = {
+#if P_FAMILY_SHELLMON
+static const u16 sShellmonEggMoveLearnset[] = {
     MOVE_MUD_SLAP,
     MOVE_HEADBUTT,
     MOVE_FURY_SWIPES,
@@ -3603,7 +3603,7 @@ static const u16 sBuizelEggMoveLearnset[] = {
     MOVE_HELPING_HAND,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BUIZEL
+#endif //P_FAMILY_SHELLMON
 
 #if P_FAMILY_CHERUBI
 static const u16 sCherubiEggMoveLearnset[] = {

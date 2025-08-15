@@ -3034,15 +3034,15 @@ Cry_Sukamon::
 	.incbin "sound/direct_sound_samples/cries/sukamon.bin"
 .endif @ P_FAMILY_SUKAMON
 
-.if P_FAMILY_BUIZEL == TRUE
+.if P_FAMILY_SHELLMON == TRUE
 	.align 2
-Cry_Buizel::
-	.incbin "sound/direct_sound_samples/cries/buizel.bin"
+Cry_Shellmon::
+	.incbin "sound/direct_sound_samples/cries/shellmon.bin"
 
 	.align 2
 Cry_Floatzel::
 	.incbin "sound/direct_sound_samples/cries/floatzel.bin"
-.endif @ P_FAMILY_BUIZEL
+.endif @ P_FAMILY_SHELLMON
 
 .if P_FAMILY_CHERUBI == TRUE
 	.align 2

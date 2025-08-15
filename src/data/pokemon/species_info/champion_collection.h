@@ -13815,42 +13815,43 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_SUKAMON
 
-#if P_FAMILY_BUIZEL
-    [SPECIES_BUIZEL] =
+#if P_FAMILY_SHELLMON
+    [SPECIES_SHELLMON] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 65,
-        .baseDefense   = 35,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 30,
+        .baseHP        = 70,
+        .baseAttack    = 45,
+        .baseDefense   = 110,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 190,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 66 : 75,
-        .evYield_Speed = 1,
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense = 4,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_WATER_VEIL },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Buizel"),
-        .cryId = CRY_BUIZEL,
-        .natDexNum = NATIONAL_DEX_BUIZEL,
-        .categoryName = _("Sea Weasel"),
-        .height = 7,
-        .weight = 295,
+        .abilities = { ABILITY_DAMP, ABILITY_SHELL_ARMOR, ABILITY_ANGER_SHELL },
+        .bodyColor = BODY_COLOR_PINK,
+        .speciesName = _("Shellmon"),
+        .cryId = CRY_SHELLMON,
+        .natDexNum = NATIONAL_DEX_SHELLMON,
+        .categoryName = _("Hermit Crab"),
+        .height = 41,
+        .weight = 1369,
         .description = COMPOUND_STRING(
-            "It inflates its flotation sac, keeping its\n"
-            "face above water in order to watch for\n"
-            "prey movement. It swims by rotating its\n"
-            "two tails like a screw."),
+            "The body of a Shellmon is constantly\n"
+            "growing forcing it to seek new homes\n"
+            "constantly in its youth. Its low\n"
+            "intellect causes it to be aggressive."),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Buizel,
+        .frontPic = gMonFrontPic_Shellmon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 10,
         .frontAnimFrames = ANIM_FRAMES(
@@ -13859,40 +13860,40 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Buizel,
+        .backPic = gMonBackPic_Shellmon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Buizel,
-        .shinyPalette = gMonShinyPalette_Buizel,
-        .iconSprite = gMonIcon_Buizel,
+        .palette = gMonPalette_Shellmon,
+        .shinyPalette = gMonShinyPalette_Shellmon,
+        .iconSprite = gMonIcon_Shellmon,
         .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
-        .backPicFemale = gMonBackPic_BuizelF,
+        .backPicFemale = gMonBackPic_ShellmonF,
         .backPicSizeFemale = MON_COORDS_SIZE(64, 48),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(1, 4, SHADOW_SIZE_S)
-        FOOTPRINT(Buizel)
+        FOOTPRINT(Shellmon)
         OVERWORLD(
-            sPicTable_Buizel,
+            sPicTable_Shellmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Buizel,
-            gShinyOverworldPalette_Buizel
+            gOverworldPalette_Shellmon,
+            gShinyOverworldPalette_Shellmon
         )
         OVERWORLD_FEMALE(
-            sPicTable_BuizelF,
+            sPicTable_ShellmonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sBuizelLevelUpLearnset,
-        .teachableLearnset = sBuizelTeachableLearnset,
-        .eggMoveLearnset = sBuizelEggMoveLearnset,
+        .levelUpLearnset = sShellmonLevelUpLearnset,
+        .teachableLearnset = sShellmonTeachableLearnset,
+        .eggMoveLearnset = sShellmonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_FLOATZEL}),
     },
 
@@ -13976,7 +13977,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sFloatzelLevelUpLearnset,
         .teachableLearnset = sFloatzelTeachableLearnset,
     },
-#endif //P_FAMILY_BUIZEL
+#endif //P_FAMILY_SHELLMON
 
 #if P_FAMILY_CHERUBI
     [SPECIES_CHERUBI] =

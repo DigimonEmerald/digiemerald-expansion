@@ -14613,27 +14613,27 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_SUKAMON
 
-#if P_FAMILY_BUIZEL
-    const u32 gMonFrontPic_Buizel[] = INCBIN_U32("graphics/pokemon/buizel/anim_front.4bpp.lz");
-    const u16 gMonPalette_Buizel[] = INCBIN_U16("graphics/pokemon/buizel/normal.gbapal");
-    const u32 gMonBackPic_Buizel[] = INCBIN_U32("graphics/pokemon/buizel/back.4bpp.lz");
-    const u16 gMonShinyPalette_Buizel[] = INCBIN_U16("graphics/pokemon/buizel/shiny.gbapal");
-    const u8 gMonIcon_Buizel[] = INCBIN_U8("graphics/pokemon/buizel/icon.4bpp");
+#if P_FAMILY_SHELLMON
+    const u32 gMonFrontPic_Shellmon[] = INCBIN_U32("graphics/pokemon/shellmon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Shellmon[] = INCBIN_U16("graphics/pokemon/shellmon/normal.gbapal");
+    const u32 gMonBackPic_Shellmon[] = INCBIN_U32("graphics/pokemon/shellmon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Shellmon[] = INCBIN_U16("graphics/pokemon/shellmon/shiny.gbapal");
+    const u8 gMonIcon_Shellmon[] = INCBIN_U8("graphics/pokemon/shellmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Buizel[] = INCBIN_U8("graphics/pokemon/buizel/footprint.1bpp");
+    const u8 gMonFootprint_Shellmon[] = INCBIN_U8("graphics/pokemon/shellmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Buizel[] = INCBIN_COMP("graphics/pokemon/buizel/overworld.4bpp");
+    const u32 gObjectEventPic_Shellmon[] = INCBIN_COMP("graphics/pokemon/shellmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Buizel[] = INCBIN_U16("graphics/pokemon/buizel/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Buizel[] = INCBIN_U16("graphics/pokemon/buizel/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Shellmon[] = INCBIN_U16("graphics/pokemon/shellmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Shellmon[] = INCBIN_U16("graphics/pokemon/shellmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonBackPic_BuizelF[] = INCBIN_U32("graphics/pokemon/buizel/backf.4bpp.lz");
+    const u32 gMonBackPic_ShellmonF[] = INCBIN_U32("graphics/pokemon/shellmon/backf.4bpp.lz");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_BuizelF[] = INCBIN_COMP("graphics/pokemon/buizel/overworldf.4bpp");
+    const u32 gObjectEventPic_ShellmonF[] = INCBIN_COMP("graphics/pokemon/shellmon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
@@ -14659,7 +14659,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gObjectEventPic_FloatzelF[] = INCBIN_COMP("graphics/pokemon/floatzel/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_BUIZEL
+#endif //P_FAMILY_SHELLMON
 
 #if P_FAMILY_CHERUBI
     const u32 gMonFrontPic_Cherubi[] = INCBIN_U32("graphics/pokemon/cherubi/anim_front.4bpp.lz");

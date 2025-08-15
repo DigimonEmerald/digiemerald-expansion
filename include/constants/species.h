@@ -429,7 +429,7 @@
 #define SPECIES_TESLAJELLYMON                                  415
 #define SPECIES_RAREMON                               416
 #define SPECIES_SUKAMON                               417
-#define SPECIES_BUIZEL                                  418
+#define SPECIES_SHELLMON                                  418
 #define SPECIES_FLOATZEL                                419
 #define SPECIES_CHERUBI                                 420
 #define SPECIES_CHERRIM                                 SPECIES_CHERRIM_OVERCAST

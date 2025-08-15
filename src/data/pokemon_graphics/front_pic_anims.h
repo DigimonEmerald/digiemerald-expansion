@@ -5575,8 +5575,8 @@ static const union AnimCmd sAnim_Sukamon_1[] =
 };
 #endif //P_FAMILY_SUKAMON
 
-#if P_FAMILY_BUIZEL
-static const union AnimCmd sAnim_Buizel_1[] =
+#if P_FAMILY_SHELLMON
+static const union AnimCmd sAnim_Shellmon_1[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 45),
@@ -5594,7 +5594,7 @@ static const union AnimCmd sAnim_Floatzel_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_BUIZEL
+#endif //P_FAMILY_SHELLMON
 
 #if P_FAMILY_CHERUBI
 static const union AnimCmd sAnim_Cherubi_1[] =
@@ -11464,10 +11464,10 @@ SINGLE_ANIMATION(Raremon);
 #if P_FAMILY_SUKAMON
 SINGLE_ANIMATION(Sukamon);
 #endif //P_FAMILY_SUKAMON
-#if P_FAMILY_BUIZEL
-SINGLE_ANIMATION(Buizel);
+#if P_FAMILY_SHELLMON
+SINGLE_ANIMATION(Shellmon);
 SINGLE_ANIMATION(Floatzel);
-#endif //P_FAMILY_BUIZEL
+#endif //P_FAMILY_SHELLMON
 #if P_FAMILY_CHERUBI
 SINGLE_ANIMATION(Cherubi);
 SINGLE_ANIMATION(CherrimOvercast);

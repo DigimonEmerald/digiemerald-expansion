@@ -1133,10 +1133,10 @@ gCryTable::
 .if P_FAMILY_SUKAMON == TRUE
 	cry Cry_Sukamon
 .endif @ P_FAMILY_SUKAMON
-.if P_FAMILY_BUIZEL == TRUE
-	cry Cry_Buizel
+.if P_FAMILY_SHELLMON == TRUE
+	cry Cry_Shellmon
 	cry Cry_Floatzel
-.endif @ P_FAMILY_BUIZEL
+.endif @ P_FAMILY_SHELLMON
 .if P_FAMILY_CHERUBI == TRUE
 	cry Cry_Cherubi
 	cry Cry_Cherrim
@@ -3561,10 +3561,10 @@ gCryTable_Reverse::
 .if P_FAMILY_SUKAMON == TRUE
 	cry_reverse Cry_Sukamon
 .endif @ P_FAMILY_SUKAMON
-.if P_FAMILY_BUIZEL == TRUE
-	cry_reverse Cry_Buizel
+.if P_FAMILY_SHELLMON == TRUE
+	cry_reverse Cry_Shellmon
 	cry_reverse Cry_Floatzel
-.endif @ P_FAMILY_BUIZEL
+.endif @ P_FAMILY_SHELLMON
 .if P_FAMILY_CHERUBI == TRUE
 	cry_reverse Cry_Cherubi
 	cry_reverse Cry_Cherrim

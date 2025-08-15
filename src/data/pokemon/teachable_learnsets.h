@@ -19095,8 +19095,8 @@ static const u16 sSukamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SUKAMON
 
-#if P_FAMILY_BUIZEL
-static const u16 sBuizelTeachableLearnset[] = {
+#if P_FAMILY_SHELLMON
+static const u16 sShellmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
@@ -19176,7 +19176,7 @@ static const u16 sFloatzelTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BUIZEL
+#endif //P_FAMILY_SHELLMON
 
 #if P_FAMILY_CHERUBI
 static const u16 sCherubiTeachableLearnset[] = {

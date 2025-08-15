@@ -3268,13 +3268,13 @@ static const struct SpriteFrameImage sPicTable_SukamonF[] = {
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_SUKAMON
 
-#if P_FAMILY_BUIZEL
-static const struct SpriteFrameImage sPicTable_Buizel[] = {
-    overworld_ascending_frames(gObjectEventPic_Buizel, 4, 4),
+#if P_FAMILY_SHELLMON
+static const struct SpriteFrameImage sPicTable_Shellmon[] = {
+    overworld_ascending_frames(gObjectEventPic_Shellmon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_BuizelF[] = {
-    overworld_ascending_frames(gObjectEventPic_BuizelF, 4, 4),
+static const struct SpriteFrameImage sPicTable_ShellmonF[] = {
+    overworld_ascending_frames(gObjectEventPic_ShellmonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 static const struct SpriteFrameImage sPicTable_Floatzel[] = {
@@ -3285,7 +3285,7 @@ static const struct SpriteFrameImage sPicTable_FloatzelF[] = {
     overworld_ascending_frames(gObjectEventPic_FloatzelF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_BUIZEL
+#endif //P_FAMILY_SHELLMON
 
 #if P_FAMILY_CHERUBI
 static const struct SpriteFrameImage sPicTable_Cherubi[] = {

@@ -470,8 +470,8 @@
 #define P_FAMILY_TESLAJELLYMON                  TRUE
 #undef P_FAMILY_SUKAMON
 #define P_FAMILY_SUKAMON               TRUE
-#undef P_FAMILY_BUIZEL
-#define P_FAMILY_BUIZEL                  TRUE
+#undef P_FAMILY_SHELLMON
+#define P_FAMILY_SHELLMON                  TRUE
 #undef P_FAMILY_CHERUBI
 #define P_FAMILY_CHERUBI                 TRUE
 #undef P_FAMILY_SHELLOS
