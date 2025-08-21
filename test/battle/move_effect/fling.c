@@ -555,12 +555,12 @@ SINGLE_BATTLE_TEST("Fling deals damage based on items fling power")
         PLAYER(SPECIES_LOPMONX) { Item(ITEM_BOMMONITE); }
         OPPONENT(SPECIES_GARGOMON);
     } WHEN {
-        TURN { MOVE(player, MOVE_CRUNCH); }
         TURN { MOVE(player, MOVE_FLING); }
+        TURN { MOVE(player, MOVE_CRUNCH); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_CRUNCH, player);
-        HP_BAR(opponent, captureDamage: &damage[0]);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FLING, player);
+        HP_BAR(opponent, captureDamage: &damage[0]);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_CRUNCH, player);
         HP_BAR(opponent, captureDamage: &damage[1]);
     } THEN {
         EXPECT_EQ(damage[0], damage[1]);
