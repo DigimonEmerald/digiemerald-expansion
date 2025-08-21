@@ -3524,8 +3524,8 @@ Cry_Piximon::
 	.incbin "sound/direct_sound_samples/cries/piximon.bin"
 
 	.align 2
-Cry_Conkeldurr::
-	.incbin "sound/direct_sound_samples/cries/conkeldurr.bin"
+Cry_Shogungekomon::
+	.incbin "sound/direct_sound_samples/cries/shogungekomon.bin"
 .endif @ P_FAMILY_PUMPKINMON
 
 .if P_FAMILY_TYMPOLE == TRUE

@@ -3116,45 +3116,46 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sPiximonLevelUpLearnset,
         .teachableLearnset = sPiximonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_CONKELDURR},
-                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_CONKELDURR}),
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_SHOGUNGEKOMON},
+                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_SHOGUNGEKOMON}),
     },
 
-    [SPECIES_CONKELDURR] =
+    [SPECIES_SHOGUNGEKOMON] =
     {
-        .baseHP        = 105,
-        .baseAttack    = 140,
-        .baseDefense   = 95,
+        .baseHP        = 130,
+        .baseAttack    = 65,
+        .baseDefense   = 90,
         .baseSpeed     = 45,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_FIGHTING),
+        .baseSpAttack  = 95,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_WATER, TYPE_GRASS),
+        .attribute = TYPE_VIRUS,
         .catchRate = 95,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 253 : 227,
-        .evYield_Attack = 3,
+        .expYield = 200,
+        .evYield_HP = 5,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_GUTS, ABILITY_SHEER_FORCE, ABILITY_IRON_FIST },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Conkeldurr"),
-        .cryId = CRY_CONKELDURR,
-        .natDexNum = NATIONAL_DEX_CONKELDURR,
-        .categoryName = _("Muscular"),
-        .height = 14,
-        .weight = 870,
+        .abilities = { ABILITY_THICK_FAT, ABILITY_SOUNDPROOF, ABILITY_LIQUID_VOICE },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("ShogunGekmon"),
+        .cryId = CRY_SHOGUNGEKOMON,
+        .natDexNum = NATIONAL_DEX_SHOGUNGEKOMON,
+        .categoryName = _("Feudal Lord"),
+        .height = 67,
+        .weight = 4321,
         .description = COMPOUND_STRING(
-            "They use concrete pillars as walking\n"
-            "canes. Rather than rely solely on force,\n"
-            "they master moves that utilize the\n"
-            "centrifugal force of spinning concrete."),
+            "The two horns on ShogunGekomons shoulders\n"
+            "let it play noises several octaves below\n"
+            "a normal Gekomon giving it a\n"
+            "feeling of lordly superiority."),
         .pokemonScale = 265,
         .pokemonOffset = 3,
         .trainerScale = 262,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Conkeldurr,
+        .frontPic = gMonFrontPic_Shogungekomon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 6,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3162,28 +3163,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_SHAKE_TWICE,
-        .backPic = gMonBackPic_Conkeldurr,
+        .backPic = gMonBackPic_Shogungekomon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Conkeldurr,
-        .shinyPalette = gMonShinyPalette_Conkeldurr,
-        .iconSprite = gMonIcon_Conkeldurr,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Shogungekomon,
+        .shinyPalette = gMonShinyPalette_Shogungekomon,
+        .iconSprite = gMonIcon_Shogungekomon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 3, SHADOW_SIZE_XL_BATTLE_ONLY)
-        FOOTPRINT(Conkeldurr)
+        FOOTPRINT(Shogungekomon)
         OVERWORLD(
-            sPicTable_Conkeldurr,
+            sPicTable_Shogungekomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Conkeldurr,
-            gShinyOverworldPalette_Conkeldurr
+            gOverworldPalette_Shogungekomon,
+            gShinyOverworldPalette_Shogungekomon
         )
-        .levelUpLearnset = sConkeldurrLevelUpLearnset,
-        .teachableLearnset = sConkeldurrTeachableLearnset,
+        .levelUpLearnset = sShogungekomonLevelUpLearnset,
+        .teachableLearnset = sShogungekomonTeachableLearnset,
     },
 #endif //P_FAMILY_PUMPKINMON
 

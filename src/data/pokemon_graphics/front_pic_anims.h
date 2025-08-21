@@ -6683,7 +6683,7 @@ static const union AnimCmd sAnim_Piximon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Conkeldurr_1[] =
+static const union AnimCmd sAnim_Shogungekomon_1[] =
 {
     ANIMCMD_FRAME(1, 45),
     ANIMCMD_FRAME(0, 10),
@@ -11680,7 +11680,7 @@ SINGLE_ANIMATION(Okuwamon);
 #if P_FAMILY_PUMPKINMON
 SINGLE_ANIMATION(Pumpkinmon);
 SINGLE_ANIMATION(Piximon);
-SINGLE_ANIMATION(Conkeldurr);
+SINGLE_ANIMATION(Shogungekomon);
 #endif //P_FAMILY_PUMPKINMON
 #if P_FAMILY_TYMPOLE
 SINGLE_ANIMATION(Tympole);

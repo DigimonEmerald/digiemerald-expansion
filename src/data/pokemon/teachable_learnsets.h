@@ -22279,7 +22279,7 @@ static const u16 sPiximonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sConkeldurrTeachableLearnset[] = {
+static const u16 sShogungekomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,

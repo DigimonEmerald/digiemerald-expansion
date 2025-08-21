@@ -16603,19 +16603,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Conkeldurr[] = INCBIN_U32("graphics/pokemon/conkeldurr/anim_front.4bpp.lz");
-    const u16 gMonPalette_Conkeldurr[] = INCBIN_U16("graphics/pokemon/conkeldurr/normal.gbapal");
-    const u32 gMonBackPic_Conkeldurr[] = INCBIN_U32("graphics/pokemon/conkeldurr/back.4bpp.lz");
-    const u16 gMonShinyPalette_Conkeldurr[] = INCBIN_U16("graphics/pokemon/conkeldurr/shiny.gbapal");
-    const u8 gMonIcon_Conkeldurr[] = INCBIN_U8("graphics/pokemon/conkeldurr/icon.4bpp");
+    const u32 gMonFrontPic_Shogungekomon[] = INCBIN_U32("graphics/pokemon/shogungekomon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Shogungekomon[] = INCBIN_U16("graphics/pokemon/shogungekomon/normal.gbapal");
+    const u32 gMonBackPic_Shogungekomon[] = INCBIN_U32("graphics/pokemon/shogungekomon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Shogungekomon[] = INCBIN_U16("graphics/pokemon/shogungekomon/shiny.gbapal");
+    const u8 gMonIcon_Shogungekomon[] = INCBIN_U8("graphics/pokemon/shogungekomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Conkeldurr[] = INCBIN_U8("graphics/pokemon/conkeldurr/footprint.1bpp");
+    const u8 gMonFootprint_Shogungekomon[] = INCBIN_U8("graphics/pokemon/shogungekomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Conkeldurr[] = INCBIN_COMP("graphics/pokemon/conkeldurr/overworld.4bpp");
+    const u32 gObjectEventPic_Shogungekomon[] = INCBIN_COMP("graphics/pokemon/shogungekomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Conkeldurr[] = INCBIN_U16("graphics/pokemon/conkeldurr/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Conkeldurr[] = INCBIN_U16("graphics/pokemon/conkeldurr/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Shogungekomon[] = INCBIN_U16("graphics/pokemon/shogungekomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Shogungekomon[] = INCBIN_U16("graphics/pokemon/shogungekomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_PUMPKINMON
