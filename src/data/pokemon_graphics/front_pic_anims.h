@@ -5584,7 +5584,7 @@ static const union AnimCmd sAnim_Shellmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Floatzel_1[] =
+static const union AnimCmd sAnim_Starmon_1[] =
 {
     ANIMCMD_FRAME(1, 5),
     ANIMCMD_FRAME(0, 5),
@@ -11466,7 +11466,7 @@ SINGLE_ANIMATION(Sukamon);
 #endif //P_FAMILY_SUKAMON
 #if P_FAMILY_SHELLMON
 SINGLE_ANIMATION(Shellmon);
-SINGLE_ANIMATION(Floatzel);
+SINGLE_ANIMATION(Starmon);
 #endif //P_FAMILY_SHELLMON
 #if P_FAMILY_CHERUBI
 SINGLE_ANIMATION(Cherubi);

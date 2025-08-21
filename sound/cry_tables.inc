@@ -1135,7 +1135,7 @@ gCryTable::
 .endif @ P_FAMILY_SUKAMON
 .if P_FAMILY_SHELLMON == TRUE
 	cry Cry_Shellmon
-	cry Cry_Floatzel
+	cry Cry_Starmon
 .endif @ P_FAMILY_SHELLMON
 .if P_FAMILY_CHERUBI == TRUE
 	cry Cry_Cherubi
@@ -3563,7 +3563,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_SUKAMON
 .if P_FAMILY_SHELLMON == TRUE
 	cry_reverse Cry_Shellmon
-	cry_reverse Cry_Floatzel
+	cry_reverse Cry_Starmon
 .endif @ P_FAMILY_SHELLMON
 .if P_FAMILY_CHERUBI == TRUE
 	cry_reverse Cry_Cherubi

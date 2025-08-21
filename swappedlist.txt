@@ -432,6 +432,7 @@ TeslaJellymon - Combee
 Raremon - Vespiquen
 Sukamon - Pachirisu
 Shellmon - Buizel
+Starmon - Floatzel
 
 Ultimate List
 

@@ -13894,44 +13894,46 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sShellmonLevelUpLearnset,
         .teachableLearnset = sShellmonTeachableLearnset,
         .eggMoveLearnset = sShellmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_FLOATZEL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_STARMON}),
     },
 
-    [SPECIES_FLOATZEL] =
+    [SPECIES_STARMON] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 105,
-        .baseDefense   = 55,
-        .baseSpeed     = 115,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 75,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 173 : 178,
+        .baseHP        = 50,
+        .baseAttack    = 80,
+        .baseDefense   = 60,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_FIGHTING, TYPE_FAIRY),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack = 2,
         .evYield_Speed = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_NONE, ABILITY_WATER_VEIL },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Floatzel"),
-        .cryId = CRY_FLOATZEL,
-        .natDexNum = NATIONAL_DEX_FLOATZEL,
-        .categoryName = _("Sea Weasel"),
-        .height = 11,
-        .weight = 335,
+        .abilities = { ABILITY_IRON_FIST, ABILITY_SCRAPPY, ABILITY_VICTORY_STAR },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Starmon"),
+        .cryId = CRY_STARMON, 
+        .natDexNum = NATIONAL_DEX_STARMON,
+        .categoryName = _("Star"),
+        .height = 20,
+        .weight = 604,
         .description = COMPOUND_STRING(
-            "Its flotation sac developed as a result\n"
-            "of pursuing aquatic prey. It can double\n"
-            "as a rubber raft. It assists in the rescues\n"
-            "of drowning people."),
+            "Its eyes are burning with fighting spririt\n"
+            "and are able to convey its will without\n"
+            "saying a word. Starmon looks up to\n"
+            "Leomon as its hero ."),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Floatzel,
+        .frontPic = gMonFrontPic_Starmon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 3,
         .frontAnimFrames = ANIM_FRAMES(
@@ -13943,39 +13945,39 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
-        .backPic = gMonBackPic_Floatzel,
+        .backPic = gMonBackPic_Starmon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Floatzel,
-        .shinyPalette = gMonShinyPalette_Floatzel,
-        .iconSprite = gMonIcon_Floatzel,
+        .palette = gMonPalette_Starmon,
+        .shinyPalette = gMonShinyPalette_Starmon,
+        .iconSprite = gMonIcon_Starmon,
         .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
-        .backPicFemale = gMonBackPic_FloatzelF,
+        .backPicFemale = gMonBackPic_StarmonF,
         .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-4, 10, SHADOW_SIZE_M)
-        FOOTPRINT(Floatzel)
+        FOOTPRINT(Starmon)
         OVERWORLD(
-            sPicTable_Floatzel,
+            sPicTable_Starmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Floatzel,
-            gShinyOverworldPalette_Floatzel
+            gOverworldPalette_Starmon,
+            gShinyOverworldPalette_Starmon
         )
         OVERWORLD_FEMALE(
-            sPicTable_FloatzelF,
+            sPicTable_StarmonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sFloatzelLevelUpLearnset,
-        .teachableLearnset = sFloatzelTeachableLearnset,
+        .levelUpLearnset = sStarmonLevelUpLearnset,
+        .teachableLearnset = sStarmonTeachableLearnset,
     },
 #endif //P_FAMILY_SHELLMON
 

@@ -10060,7 +10060,7 @@ static const struct LevelUpMove sShellmonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sFloatzelLevelUpLearnset[] = {
+static const struct LevelUpMove sStarmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ICE_FANG),
     LEVEL_UP_MOVE( 1, MOVE_CRUNCH),
     LEVEL_UP_MOVE( 1, MOVE_SONIC_BOOM),

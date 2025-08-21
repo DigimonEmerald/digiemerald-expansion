@@ -3040,8 +3040,8 @@ Cry_Shellmon::
 	.incbin "sound/direct_sound_samples/cries/shellmon.bin"
 
 	.align 2
-Cry_Floatzel::
-	.incbin "sound/direct_sound_samples/cries/floatzel.bin"
+Cry_Starmon::
+	.incbin "sound/direct_sound_samples/cries/starmon.bin"
 .endif @ P_FAMILY_SHELLMON
 
 .if P_FAMILY_CHERUBI == TRUE

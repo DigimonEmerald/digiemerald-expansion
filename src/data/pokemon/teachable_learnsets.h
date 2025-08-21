@@ -19134,7 +19134,7 @@ static const u16 sShellmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFloatzelTeachableLearnset[] = {
+static const u16 sStarmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,

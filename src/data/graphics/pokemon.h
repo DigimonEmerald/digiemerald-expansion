@@ -14637,26 +14637,26 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
-    const u32 gMonFrontPic_Floatzel[] = INCBIN_U32("graphics/pokemon/floatzel/anim_front.4bpp.lz");
-    const u16 gMonPalette_Floatzel[] = INCBIN_U16("graphics/pokemon/floatzel/normal.gbapal");
-    const u32 gMonBackPic_Floatzel[] = INCBIN_U32("graphics/pokemon/floatzel/back.4bpp.lz");
-    const u16 gMonShinyPalette_Floatzel[] = INCBIN_U16("graphics/pokemon/floatzel/shiny.gbapal");
-    const u8 gMonIcon_Floatzel[] = INCBIN_U8("graphics/pokemon/floatzel/icon.4bpp");
+    const u32 gMonFrontPic_Starmon[] = INCBIN_U32("graphics/pokemon/starmon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Starmon[] = INCBIN_U16("graphics/pokemon/starmon/normal.gbapal");
+    const u32 gMonBackPic_Starmon[] = INCBIN_U32("graphics/pokemon/starmon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Starmon[] = INCBIN_U16("graphics/pokemon/starmon/shiny.gbapal");
+    const u8 gMonIcon_Starmon[] = INCBIN_U8("graphics/pokemon/starmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Floatzel[] = INCBIN_U8("graphics/pokemon/floatzel/footprint.1bpp");
+    const u8 gMonFootprint_Starmon[] = INCBIN_U8("graphics/pokemon/starmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Floatzel[] = INCBIN_COMP("graphics/pokemon/floatzel/overworld.4bpp");
+    const u32 gObjectEventPic_Starmon[] = INCBIN_COMP("graphics/pokemon/starmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Floatzel[] = INCBIN_U16("graphics/pokemon/floatzel/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Floatzel[] = INCBIN_U16("graphics/pokemon/floatzel/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Starmon[] = INCBIN_U16("graphics/pokemon/starmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Starmon[] = INCBIN_U16("graphics/pokemon/starmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonBackPic_FloatzelF[] = INCBIN_U32("graphics/pokemon/floatzel/backf.4bpp.lz");
+    const u32 gMonBackPic_StarmonF[] = INCBIN_U32("graphics/pokemon/starmon/backf.4bpp.lz");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_FloatzelF[] = INCBIN_COMP("graphics/pokemon/floatzel/overworldf.4bpp");
+    const u32 gObjectEventPic_StarmonF[] = INCBIN_COMP("graphics/pokemon/starmon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_SHELLMON
