@@ -12389,7 +12389,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Kuwagamon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
-        .frontPicYOffset = 11,
+        .frontPicYOffset = 1,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 5),
             ANIMCMD_FRAME(1, 5),
@@ -12411,7 +12411,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .frontAnimId = ANIM_H_JUMPS,
         .backPic = gMonBackPic_Kuwagamon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
-        .backPicYOffset = 6,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         .palette = gMonPalette_Kuwagamon,
         .shinyPalette = gMonShinyPalette_Kuwagamon,
@@ -12424,7 +12424,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .backPicSizeFemale = MON_COORDS_SIZE(48, 56),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
-        SHADOW(-5, 2, SHADOW_SIZE_S)
+        SHADOW(1, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Kuwagamon)
         OVERWORLD(
             sPicTable_Kuwagamon,
@@ -13853,7 +13853,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Shellmon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
-        .frontPicYOffset = 10,
+        .frontPicYOffset = 2,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 12),
             ANIMCMD_FRAME(1, 45),
@@ -13862,7 +13862,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .frontAnimId = ANIM_GROW_VIBRATE,
         .backPic = gMonBackPic_Shellmon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
-        .backPicYOffset = 9,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Shellmon,
         .shinyPalette = gMonShinyPalette_Shellmon,
@@ -13873,7 +13873,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .backPicSizeFemale = MON_COORDS_SIZE(64, 48),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
-        SHADOW(1, 4, SHADOW_SIZE_S)
+        SHADOW(2, 10, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Shellmon)
         OVERWORLD(
             sPicTable_Shellmon,
