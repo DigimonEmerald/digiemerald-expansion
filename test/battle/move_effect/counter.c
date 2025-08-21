@@ -49,8 +49,8 @@ SINGLE_BATTLE_TEST("Counter will do twice as much damage received from the oppon
     s16 normalDmg;
     s16 counterDmg;
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_POUND); MOVE(player, MOVE_COUNTER); }
     } SCENE {
@@ -66,10 +66,10 @@ SINGLE_BATTLE_TEST("Counter will do twice as much damage received from the oppon
 DOUBLE_BATTLE_TEST("Counter cannot affect ally Pokémon")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WYNAUT);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_POUND, target: playerRight);
@@ -87,10 +87,10 @@ DOUBLE_BATTLE_TEST("Counter hits the last opponent that hit the user")
     s16 counterDmg;
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WYNAUT);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN {
             MOVE(opponentLeft, MOVE_POUND, target: playerLeft);
@@ -111,10 +111,10 @@ DOUBLE_BATTLE_TEST("Counter hits the last opponent that hit the user")
 DOUBLE_BATTLE_TEST("Counter respects Follow me")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WYNAUT);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN {
             MOVE(opponentRight, MOVE_FOLLOW_ME);
@@ -132,10 +132,10 @@ DOUBLE_BATTLE_TEST("Counter respects Follow me")
 DOUBLE_BATTLE_TEST("Counter fails if mon that damaged counter user is no longer on the field")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET) { HP(1); };
-        OPPONENT(SPECIES_WYNAUT);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_LOPMONX) { HP(1); };
+        OPPONENT(SPECIES_EXVEEMON);
     } WHEN {
         TURN {
             MOVE(opponentLeft, MOVE_POUND, target: playerLeft);

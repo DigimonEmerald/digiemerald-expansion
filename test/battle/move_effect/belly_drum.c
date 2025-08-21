@@ -146,8 +146,8 @@ SINGLE_BATTLE_TEST("Belly Drum maximizes the user's Attack stat, even when below
     PARAMETRIZE { raiseAttack = TRUE; }
     GIVEN {
         ASSUME(GetMoveCategory(MOVE_SCRATCH) == DAMAGE_CATEGORY_PHYSICAL);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         if (raiseAttack) TURN { MOVE(opponent, MOVE_GROWL); MOVE(player, MOVE_BELLY_DRUM); }
         TURN { MOVE(player, MOVE_SCRATCH); }
@@ -171,8 +171,8 @@ SINGLE_BATTLE_TEST("Belly Drum fails if the user's Attack is already at +6, even
     KNOWN_FAILING;
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_CHARM) == EFFECT_ATTACK_DOWN_2);
-        PLAYER(SPECIES_SERPERIOR) { Ability(ABILITY_CONTRARY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_D_METALGREYMON) { Ability(ABILITY_CONTRARY); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_CHARM); }
         TURN { MOVE(opponent, MOVE_CHARM); }
@@ -202,8 +202,8 @@ SINGLE_BATTLE_TEST("Belly Drum deducts HP if the user has Contrary and is at -6"
     KNOWN_FAILING;
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_SWORDS_DANCE) == EFFECT_ATTACK_UP_2);
-        PLAYER(SPECIES_SERPERIOR) { Ability(ABILITY_CONTRARY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_D_METALGREYMON) { Ability(ABILITY_CONTRARY); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SWORDS_DANCE); }
         TURN { MOVE(player, MOVE_SWORDS_DANCE); }
