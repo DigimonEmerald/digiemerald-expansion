@@ -540,7 +540,7 @@ static const struct FormChange sBurmyFormChangeTable[] = {
 };
 #endif //P_FAMILY_MEKANORIMON
 
-#if P_FAMILY_CHERUBI
+#if P_FAMILY_TORTOMON
 static const struct FormChange sCherrimFormChangeTable[] = {
 #if OW_FOLLOWERS_WEATHER_FORMS == TRUE
     {FORM_CHANGE_OVERWORLD_WEATHER, SPECIES_CHERRIM_SUNSHINE, WEATHER_DROUGHT},
@@ -562,7 +562,7 @@ static const struct FormChange sCherrimFormChangeTable[] = {
     {FORM_CHANGE_END_BATTLE,        SPECIES_CHERRIM_OVERCAST},
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_CHERUBI
+#endif //P_FAMILY_TORTOMON
 
 #if P_FAMILY_BUNEARY
 static const struct FormChange sLopunnyFormChangeTable[] = {

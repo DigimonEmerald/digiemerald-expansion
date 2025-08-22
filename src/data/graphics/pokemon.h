@@ -14661,20 +14661,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_SHELLMON
 
-#if P_FAMILY_CHERUBI
-    const u32 gMonFrontPic_Cherubi[] = INCBIN_U32("graphics/pokemon/cherubi/anim_front.4bpp.lz");
-    const u16 gMonPalette_Cherubi[] = INCBIN_U16("graphics/pokemon/cherubi/normal.gbapal");
-    const u32 gMonBackPic_Cherubi[] = INCBIN_U32("graphics/pokemon/cherubi/back.4bpp.lz");
-    const u16 gMonShinyPalette_Cherubi[] = INCBIN_U16("graphics/pokemon/cherubi/shiny.gbapal");
-    const u8 gMonIcon_Cherubi[] = INCBIN_U8("graphics/pokemon/cherubi/icon.4bpp");
+#if P_FAMILY_TORTOMON
+    const u32 gMonFrontPic_Tortomon[] = INCBIN_U32("graphics/pokemon/tortomon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Tortomon[] = INCBIN_U16("graphics/pokemon/tortomon/normal.gbapal");
+    const u32 gMonBackPic_Tortomon[] = INCBIN_U32("graphics/pokemon/tortomon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Tortomon[] = INCBIN_U16("graphics/pokemon/tortomon/shiny.gbapal");
+    const u8 gMonIcon_Tortomon[] = INCBIN_U8("graphics/pokemon/tortomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Cherubi[] = INCBIN_U8("graphics/pokemon/cherubi/footprint.1bpp");
+    const u8 gMonFootprint_Tortomon[] = INCBIN_U8("graphics/pokemon/tortomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Cherubi[] = INCBIN_COMP("graphics/pokemon/cherubi/overworld.4bpp");
+    const u32 gObjectEventPic_Tortomon[] = INCBIN_COMP("graphics/pokemon/tortomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Cherubi[] = INCBIN_U16("graphics/pokemon/cherubi/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Cherubi[] = INCBIN_U16("graphics/pokemon/cherubi/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Tortomon[] = INCBIN_U16("graphics/pokemon/tortomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Tortomon[] = INCBIN_U16("graphics/pokemon/tortomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -14703,7 +14703,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     // const u16 gShinyOverworldPalette_CherrimSunshine[] = INCBIN_U16("graphics/pokemon/cherrim/sunshine/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_CHERUBI
+#endif //P_FAMILY_TORTOMON
 
 #if P_FAMILY_SHELLOS
     const u32 gMonFrontPic_ShellosWestSea[] = INCBIN_U32("graphics/pokemon/shellos/anim_front.4bpp.lz");

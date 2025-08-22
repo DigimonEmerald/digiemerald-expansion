@@ -3605,8 +3605,8 @@ static const u16 sShellmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_SHELLMON
 
-#if P_FAMILY_CHERUBI
-static const u16 sCherubiEggMoveLearnset[] = {
+#if P_FAMILY_TORTOMON
+static const u16 sTortomonEggMoveLearnset[] = {
     MOVE_RAZOR_LEAF,
     MOVE_SWEET_SCENT,
     MOVE_TICKLE,
@@ -3624,7 +3624,7 @@ static const u16 sCherubiEggMoveLearnset[] = {
     MOVE_GRASSY_TERRAIN,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CHERUBI
+#endif //P_FAMILY_TORTOMON
 
 #if P_FAMILY_SHELLOS
 static const u16 sShellosEggMoveLearnset[] = {

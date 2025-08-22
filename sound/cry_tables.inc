@@ -1137,10 +1137,10 @@ gCryTable::
 	cry Cry_Shellmon
 	cry Cry_Starmon
 .endif @ P_FAMILY_SHELLMON
-.if P_FAMILY_CHERUBI == TRUE
-	cry Cry_Cherubi
+.if P_FAMILY_TORTOMON == TRUE
+	cry Cry_Tortomon
 	cry Cry_Cherrim
-.endif @ P_FAMILY_CHERUBI
+.endif @ P_FAMILY_TORTOMON
 .if P_FAMILY_SHELLOS == TRUE
 	cry Cry_Shellos
 	cry Cry_Gastrodon
@@ -3565,10 +3565,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Shellmon
 	cry_reverse Cry_Starmon
 .endif @ P_FAMILY_SHELLMON
-.if P_FAMILY_CHERUBI == TRUE
-	cry_reverse Cry_Cherubi
+.if P_FAMILY_TORTOMON == TRUE
+	cry_reverse Cry_Tortomon
 	cry_reverse Cry_Cherrim
-.endif @ P_FAMILY_CHERUBI
+.endif @ P_FAMILY_TORTOMON
 .if P_FAMILY_SHELLOS == TRUE
 	cry_reverse Cry_Shellos
 	cry_reverse Cry_Gastrodon

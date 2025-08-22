@@ -2445,7 +2445,7 @@ $(POKEMONGFXDIR)/starmon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/starmon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/cherubi/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/tortomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/cherrim/overworld.4bpp: %.4bpp: %.png

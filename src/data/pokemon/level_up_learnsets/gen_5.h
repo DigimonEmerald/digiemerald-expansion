@@ -10084,8 +10084,8 @@ static const struct LevelUpMove sStarmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_SHELLMON
 
-#if P_FAMILY_CHERUBI
-static const struct LevelUpMove sCherubiLevelUpLearnset[] = {
+#if P_FAMILY_TORTOMON
+static const struct LevelUpMove sTortomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_MORNING_SUN),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 7, MOVE_GROWTH),
@@ -10116,7 +10116,7 @@ static const struct LevelUpMove sCherrimLevelUpLearnset[] = {
     LEVEL_UP_MOVE(48, MOVE_LUCKY_CHANT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CHERUBI
+#endif //P_FAMILY_TORTOMON
 
 #if P_FAMILY_SHELLOS
 static const struct LevelUpMove sShellosLevelUpLearnset[] = {

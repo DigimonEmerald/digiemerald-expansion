@@ -5596,8 +5596,8 @@ static const union AnimCmd sAnim_Starmon_1[] =
 };
 #endif //P_FAMILY_SHELLMON
 
-#if P_FAMILY_CHERUBI
-static const union AnimCmd sAnim_Cherubi_1[] =
+#if P_FAMILY_TORTOMON
+static const union AnimCmd sAnim_Tortomon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 5),
@@ -5631,7 +5631,7 @@ static const union AnimCmd sAnim_CherrimSunshine_1[] =
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_CHERUBI
+#endif //P_FAMILY_TORTOMON
 
 #if P_FAMILY_SHELLOS
 static const union AnimCmd sAnim_Shellos_1[] =
@@ -11468,11 +11468,11 @@ SINGLE_ANIMATION(Sukamon);
 SINGLE_ANIMATION(Shellmon);
 SINGLE_ANIMATION(Starmon);
 #endif //P_FAMILY_SHELLMON
-#if P_FAMILY_CHERUBI
-SINGLE_ANIMATION(Cherubi);
+#if P_FAMILY_TORTOMON
+SINGLE_ANIMATION(Tortomon);
 SINGLE_ANIMATION(CherrimOvercast);
 SINGLE_ANIMATION(CherrimSunshine);
-#endif //P_FAMILY_CHERUBI
+#endif //P_FAMILY_TORTOMON
 #if P_FAMILY_SHELLOS
 SINGLE_ANIMATION(Shellos);
 SINGLE_ANIMATION(Gastrodon);

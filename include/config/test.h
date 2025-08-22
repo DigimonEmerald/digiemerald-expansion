@@ -472,8 +472,8 @@
 #define P_FAMILY_SUKAMON               TRUE
 #undef P_FAMILY_SHELLMON
 #define P_FAMILY_SHELLMON                  TRUE
-#undef P_FAMILY_CHERUBI
-#define P_FAMILY_CHERUBI                 TRUE
+#undef P_FAMILY_TORTOMON
+#define P_FAMILY_TORTOMON                 TRUE
 #undef P_FAMILY_SHELLOS
 #define P_FAMILY_SHELLOS                 TRUE
 #undef P_FAMILY_DRIFLOON

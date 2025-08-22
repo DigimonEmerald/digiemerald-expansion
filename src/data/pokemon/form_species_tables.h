@@ -1012,13 +1012,13 @@ static const u16 sMothimFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_MEKANORIMON
 
-#if P_FAMILY_CHERUBI
+#if P_FAMILY_TORTOMON
 static const u16 sCherrimFormSpeciesIdTable[] = {
     SPECIES_CHERRIM_OVERCAST,
     SPECIES_CHERRIM_SUNSHINE,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_CHERUBI
+#endif //P_FAMILY_TORTOMON
 
 #if P_FAMILY_SHELLOS
 static const u16 sShellosFormSpeciesIdTable[] = {

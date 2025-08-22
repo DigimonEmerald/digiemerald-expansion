@@ -19178,8 +19178,8 @@ static const u16 sStarmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SHELLMON
 
-#if P_FAMILY_CHERUBI
-static const u16 sCherubiTeachableLearnset[] = {
+#if P_FAMILY_TORTOMON
+static const u16 sTortomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_DEFENSE_CURL,
@@ -19227,7 +19227,7 @@ static const u16 sCherrimTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CHERUBI
+#endif //P_FAMILY_TORTOMON
 
 #if P_FAMILY_SHELLOS
 static const u16 sShellosTeachableLearnset[] = {

@@ -433,6 +433,7 @@ Raremon - Vespiquen
 Sukamon - Pachirisu
 Shellmon - Buizel
 Starmon - Floatzel
+Tortomon - Cherubi
 
 Ultimate List
 
@@ -478,6 +479,7 @@ Datamon - Audino
 Okuwamon - Audino (Mega)
 Pumpkinmon - Timburr
 Piximon - Gurdurr
+ShogunGekomon - Conkeldurr
 
 Mega List
 

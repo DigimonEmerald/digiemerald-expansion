@@ -272,7 +272,7 @@
 #define P_FAMILY_TESLAJELLYMON                  P_GEN_4_POKEMON
 #define P_FAMILY_SUKAMON               P_GEN_4_POKEMON
 #define P_FAMILY_SHELLMON                  P_GEN_4_POKEMON
-#define P_FAMILY_CHERUBI                 P_GEN_4_POKEMON
+#define P_FAMILY_TORTOMON                 P_GEN_4_POKEMON
 #define P_FAMILY_SHELLOS                 P_GEN_4_POKEMON
 #define P_FAMILY_DRIFLOON                P_GEN_4_POKEMON
 #define P_FAMILY_BUNEARY                 P_GEN_4_POKEMON

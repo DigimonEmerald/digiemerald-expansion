@@ -13981,43 +13981,45 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_SHELLMON
 
-#if P_FAMILY_CHERUBI
-    [SPECIES_CHERUBI] =
+#if P_FAMILY_TORTOMON
+    [SPECIES_TORTOMON] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 35,
-        .baseDefense   = 45,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 62,
-        .baseSpDefense = 53,
-        .types = MON_TYPES(TYPE_GRASS),
-        .catchRate = 190,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 55 : 68,
-        .evYield_SpAttack = 1,
+        .baseHP        = 65,
+        .baseAttack    = 65,
+        .baseDefense   = 90,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_GROUND),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense = 3,
+        .evYield_SpDefense = 1,
         .itemRare = ITEM_MIRACLE_SEED,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Cherubi"),
-        .cryId = CRY_CHERUBI,
-        .natDexNum = NATIONAL_DEX_CHERUBI,
-        .categoryName = _("Cherry"),
-        .height = 4,
-        .weight = 33,
+        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_ROUGH_SKIN, ABILITY_SOLID_ROCK },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Tortomon"),
+        .cryId = CRY_TORTOMON,
+        .natDexNum = NATIONAL_DEX_TORTOMON,
+        .categoryName = _("Noise"),
+        .height = 48,
+        .weight = 2734,
         .description = COMPOUND_STRING(
-            "The small ball holds the nutrients needed\n"
-            "for evolution. Apparently, it is also very\n"
-            "sweet and tasty. Pokémon like Kokatorimon and\n"
-            "Allomon_x try to peck it off."),
+            "Tortomon is far heavier than it looks\n"
+            "causing it to create tremors with every step\n"
+            "it takes. It has shrill metallic-sounding\n"
+            "cry that many Digimon find offputting."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Cherubi,
+        .frontPic = gMonFrontPic_Tortomon,
         .frontPicSize = MON_COORDS_SIZE(40, 32),
         .frontPicYOffset = 16,
         .frontAnimFrames = ANIM_FRAMES(
@@ -14032,29 +14034,29 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 1),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Cherubi,
+        .backPic = gMonBackPic_Tortomon,
         .backPicSize = MON_COORDS_SIZE(48, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Cherubi,
-        .shinyPalette = gMonShinyPalette_Cherubi,
-        .iconSprite = gMonIcon_Cherubi,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Tortomon,
+        .shinyPalette = gMonShinyPalette_Tortomon,
+        .iconSprite = gMonIcon_Tortomon,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(-4, -2, SHADOW_SIZE_S)
-        FOOTPRINT(Cherubi)
+        FOOTPRINT(Tortomon)
         OVERWORLD(
-            sPicTable_Cherubi,
+            sPicTable_Tortomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Cherubi,
-            gShinyOverworldPalette_Cherubi
+            gOverworldPalette_Tortomon,
+            gShinyOverworldPalette_Tortomon
         )
-        .levelUpLearnset = sCherubiLevelUpLearnset,
-        .teachableLearnset = sCherubiTeachableLearnset,
-        .eggMoveLearnset = sCherubiEggMoveLearnset,
+        .levelUpLearnset = sTortomonLevelUpLearnset,
+        .teachableLearnset = sTortomonTeachableLearnset,
+        .eggMoveLearnset = sTortomonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_CHERRIM_OVERCAST}),
     },
 
@@ -14193,7 +14195,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .formSpeciesIdTable = sCherrimFormSpeciesIdTable,
         .formChangeTable = sCherrimFormChangeTable,
     },
-#endif //P_FAMILY_CHERUBI
+#endif //P_FAMILY_TORTOMON
 
 #if P_FAMILY_SHELLOS
     [SPECIES_SHELLOS_WEST] =

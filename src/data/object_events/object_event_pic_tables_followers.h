@@ -3287,9 +3287,9 @@ static const struct SpriteFrameImage sPicTable_StarmonF[] = {
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_SHELLMON
 
-#if P_FAMILY_CHERUBI
-static const struct SpriteFrameImage sPicTable_Cherubi[] = {
-    overworld_ascending_frames(gObjectEventPic_Cherubi, 4, 4),
+#if P_FAMILY_TORTOMON
+static const struct SpriteFrameImage sPicTable_Tortomon[] = {
+    overworld_ascending_frames(gObjectEventPic_Tortomon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_CherrimOvercast[] = {
     overworld_ascending_frames(gObjectEventPic_CherrimOvercast, 4, 4),
@@ -3297,7 +3297,7 @@ static const struct SpriteFrameImage sPicTable_CherrimOvercast[] = {
 /*static const struct SpriteFrameImage sPicTable_CherrimSunshine[] = {
     overworld_ascending_frames(gObjectEventPic_CherrimSunshine, 4, 4),
 };*/
-#endif //P_FAMILY_CHERUBI
+#endif //P_FAMILY_TORTOMON
 
 #if P_FAMILY_SHELLOS
 static const struct SpriteFrameImage sPicTable_ShellosWestSea[] = {

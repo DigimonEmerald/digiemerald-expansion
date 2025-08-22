@@ -8618,19 +8618,18 @@ static const struct LevelUpMove sStarmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_SHELLMON
 
-#if P_FAMILY_CHERUBI
-static const struct LevelUpMove sCherubiLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_MORNING_SUN),
+#if P_FAMILY_TORTOMON
+static const struct LevelUpMove sTortomonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 5, MOVE_LEAFAGE),
-    LEVEL_UP_MOVE(10, MOVE_GROWTH),
-    LEVEL_UP_MOVE(15, MOVE_HELPING_HAND),
-    LEVEL_UP_MOVE(20, MOVE_MAGICAL_LEAF),
-    LEVEL_UP_MOVE(26, MOVE_LEECH_SEED),
-    LEVEL_UP_MOVE(30, MOVE_TAKE_DOWN),
-    LEVEL_UP_MOVE(35, MOVE_PETAL_BLIZZARD),
-    LEVEL_UP_MOVE(40, MOVE_WORRY_SEED),
-    LEVEL_UP_MOVE(45, MOVE_SOLAR_BEAM),
+    LEVEL_UP_MOVE( 1, MOVE_ROCK_THROW),
+    LEVEL_UP_MOVE( 1, MOVE_RAPID_SPIN),
+    LEVEL_UP_MOVE(20, MOVE_ROCK_BLAST),
+    LEVEL_UP_MOVE(24, MOVE_WITHDRAW),
+    LEVEL_UP_MOVE(28, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(32, MOVE_SPIKES),
+    LEVEL_UP_MOVE(36, MOVE_ROCK_SLIDE),
+    LEVEL_UP_MOVE(40, MOVE_BULLDOZE),
     LEVEL_UP_END
 };
 
@@ -8652,7 +8651,7 @@ static const struct LevelUpMove sCherrimLevelUpLearnset[] = {
     LEVEL_UP_MOVE(62, MOVE_PETAL_DANCE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CHERUBI
+#endif //P_FAMILY_TORTOMON
 
 #if P_FAMILY_SHELLOS
 static const struct LevelUpMove sShellosLevelUpLearnset[] = {

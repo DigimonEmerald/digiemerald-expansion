@@ -3044,15 +3044,15 @@ Cry_Starmon::
 	.incbin "sound/direct_sound_samples/cries/starmon.bin"
 .endif @ P_FAMILY_SHELLMON
 
-.if P_FAMILY_CHERUBI == TRUE
+.if P_FAMILY_TORTOMON == TRUE
 	.align 2
-Cry_Cherubi::
-	.incbin "sound/direct_sound_samples/cries/cherubi.bin"
+Cry_Tortomon::
+	.incbin "sound/direct_sound_samples/cries/tortomon.bin"
 
 	.align 2
 Cry_Cherrim::
 	.incbin "sound/direct_sound_samples/cries/cherrim.bin"
-.endif @ P_FAMILY_CHERUBI
+.endif @ P_FAMILY_TORTOMON
 
 .if P_FAMILY_SHELLOS == TRUE
 	.align 2
