@@ -14678,29 +14678,29 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_CherrimOvercast[] = INCBIN_U32("graphics/pokemon/cherrim/anim_front.4bpp.lz");
-    const u16 gMonPalette_CherrimOvercast[] = INCBIN_U16("graphics/pokemon/cherrim/normal.gbapal");
-    const u32 gMonBackPic_CherrimOvercast[] = INCBIN_U32("graphics/pokemon/cherrim/back.4bpp.lz");
-    const u16 gMonShinyPalette_CherrimOvercast[] = INCBIN_U16("graphics/pokemon/cherrim/shiny.gbapal");
-    const u8 gMonIcon_CherrimOvercast[] = INCBIN_U8("graphics/pokemon/cherrim/icon.4bpp");
+    const u32 gMonFrontPic_Unimon[] = INCBIN_U32("graphics/pokemon/unimon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Unimon[] = INCBIN_U16("graphics/pokemon/unimon/normal.gbapal");
+    const u32 gMonBackPic_Unimon[] = INCBIN_U32("graphics/pokemon/unimon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Unimon[] = INCBIN_U16("graphics/pokemon/unimon/shiny.gbapal");
+    const u8 gMonIcon_Unimon[] = INCBIN_U8("graphics/pokemon/unimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Cherrim[] = INCBIN_U8("graphics/pokemon/cherrim/footprint.1bpp");
+    const u8 gMonFootprint_Cherrim[] = INCBIN_U8("graphics/pokemon/unimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_CherrimSunshine[] = INCBIN_U32("graphics/pokemon/cherrim/sunshine/anim_front.4bpp.lz");
-    const u16 gMonPalette_CherrimSunshine[] = INCBIN_U16("graphics/pokemon/cherrim/sunshine/normal.gbapal");
-    const u32 gMonBackPic_CherrimSunshine[] = INCBIN_U32("graphics/pokemon/cherrim/sunshine/back.4bpp.lz");
-    const u16 gMonShinyPalette_CherrimSunshine[] = INCBIN_U16("graphics/pokemon/cherrim/sunshine/shiny.gbapal");
-    const u8 gMonIcon_CherrimSunshine[] = INCBIN_U8("graphics/pokemon/cherrim/sunshine/icon.4bpp");
+    const u32 gMonFrontPic_CherrimSunshine[] = INCBIN_U32("graphics/pokemon/unimon/sunshine/anim_front.4bpp.lz");
+    const u16 gMonPalette_CherrimSunshine[] = INCBIN_U16("graphics/pokemon/unimon/sunshine/normal.gbapal");
+    const u32 gMonBackPic_CherrimSunshine[] = INCBIN_U32("graphics/pokemon/unimon/sunshine/back.4bpp.lz");
+    const u16 gMonShinyPalette_CherrimSunshine[] = INCBIN_U16("graphics/pokemon/unimon/sunshine/shiny.gbapal");
+    const u8 gMonIcon_CherrimSunshine[] = INCBIN_U8("graphics/pokemon/unimon/sunshine/icon.4bpp");
 
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_CherrimOvercast[] = INCBIN_COMP("graphics/pokemon/cherrim/overworld.4bpp");
-    // const u32 gObjectEventPic_CherrimSunshine[] = INCBIN_COMP("graphics/pokemon/cherrim/sunshine/overworld.4bpp");
+    const u32 gObjectEventPic_Unimon[] = INCBIN_COMP("graphics/pokemon/unimon/overworld.4bpp");
+    // const u32 gObjectEventPic_CherrimSunshine[] = INCBIN_COMP("graphics/pokemon/unimon/sunshine/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_CherrimOvercast[] = INCBIN_U16("graphics/pokemon/cherrim/overworld_normal.gbapal");
-    // const u16 gOverworldPalette_CherrimSunshine[] = INCBIN_U16("graphics/pokemon/cherrim/sunshine/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_CherrimOvercast[] = INCBIN_U16("graphics/pokemon/cherrim/overworld_shiny.gbapal");
-    // const u16 gShinyOverworldPalette_CherrimSunshine[] = INCBIN_U16("graphics/pokemon/cherrim/sunshine/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Unimon[] = INCBIN_U16("graphics/pokemon/unimon/overworld_normal.gbapal");
+    // const u16 gOverworldPalette_CherrimSunshine[] = INCBIN_U16("graphics/pokemon/unimon/sunshine/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Unimon[] = INCBIN_U16("graphics/pokemon/unimon/overworld_shiny.gbapal");
+    // const u16 gShinyOverworldPalette_CherrimSunshine[] = INCBIN_U16("graphics/pokemon/unimon/sunshine/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_TORTOMON

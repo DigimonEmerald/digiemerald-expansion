@@ -8633,6 +8633,20 @@ static const struct LevelUpMove sTortomonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sUnimonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_HOLY_SHOOT),
+    LEVEL_UP_MOVE( 1, MOVE_GUST),
+    LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE(20, MOVE_AERIAL_ACE),
+    LEVEL_UP_MOVE(24, MOVE_STOMP),
+    LEVEL_UP_MOVE(28, MOVE_SPIRIT_BREAK),
+    LEVEL_UP_MOVE(32, MOVE_JUMP_KICK),
+    LEVEL_UP_MOVE(36, MOVE_HIGH_HORSEPOWER),
+    LEVEL_UP_MOVE(40, MOVE_HOLY_BEAM),
+    LEVEL_UP_END
+};
+
 static const struct LevelUpMove sCherrimLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SUNNY_DAY),
     LEVEL_UP_MOVE( 1, MOVE_SUNNY_DAY),

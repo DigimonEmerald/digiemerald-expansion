@@ -1014,7 +1014,7 @@ static const u16 sMothimFormSpeciesIdTable[] = {
 
 #if P_FAMILY_TORTOMON
 static const u16 sCherrimFormSpeciesIdTable[] = {
-    SPECIES_CHERRIM_OVERCAST,
+    SPECIES_UNIMON,
     SPECIES_CHERRIM_SUNSHINE,
     FORM_SPECIES_END,
 };

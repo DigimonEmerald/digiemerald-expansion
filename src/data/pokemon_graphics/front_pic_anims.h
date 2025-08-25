@@ -5611,7 +5611,7 @@ static const union AnimCmd sAnim_Tortomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_CherrimOvercast_1[] =
+static const union AnimCmd sAnim_Unimon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -11470,7 +11470,7 @@ SINGLE_ANIMATION(Starmon);
 #endif //P_FAMILY_SHELLMON
 #if P_FAMILY_TORTOMON
 SINGLE_ANIMATION(Tortomon);
-SINGLE_ANIMATION(CherrimOvercast);
+SINGLE_ANIMATION(Unimon);
 SINGLE_ANIMATION(CherrimSunshine);
 #endif //P_FAMILY_TORTOMON
 #if P_FAMILY_SHELLOS

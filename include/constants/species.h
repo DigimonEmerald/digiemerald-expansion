@@ -432,8 +432,8 @@
 #define SPECIES_SHELLMON                                  418
 #define SPECIES_STARMON                                419
 #define SPECIES_TORTOMON                                 420
-#define SPECIES_CHERRIM                                 SPECIES_CHERRIM_OVERCAST
-#define SPECIES_CHERRIM_OVERCAST                        421
+#define SPECIES_CHERRIM                                 SPECIES_UNIMON
+#define SPECIES_UNIMON                        421
 #define SPECIES_SHELLOS_WEST                            422
 #define SPECIES_SHELLOS                                 SPECIES_SHELLOS_WEST
 #define SPECIES_GASTRODON_WEST                          423
