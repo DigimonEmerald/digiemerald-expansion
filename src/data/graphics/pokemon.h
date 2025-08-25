@@ -16637,19 +16637,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Palpitoad[] = INCBIN_U32("graphics/pokemon/palpitoad/anim_front.4bpp.lz");
-    const u16 gMonPalette_Palpitoad[] = INCBIN_U16("graphics/pokemon/palpitoad/normal.gbapal");
-    const u32 gMonBackPic_Palpitoad[] = INCBIN_U32("graphics/pokemon/palpitoad/back.4bpp.lz");
-    const u16 gMonShinyPalette_Palpitoad[] = INCBIN_U16("graphics/pokemon/palpitoad/shiny.gbapal");
-    const u8 gMonIcon_Palpitoad[] = INCBIN_U8("graphics/pokemon/palpitoad/icon.4bpp");
+    const u32 gMonFrontPic_Aeroveedramon[] = INCBIN_U32("graphics/pokemon/aeroveedramon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Aeroveedramon[] = INCBIN_U16("graphics/pokemon/aeroveedramon/normal.gbapal");
+    const u32 gMonBackPic_Aeroveedramon[] = INCBIN_U32("graphics/pokemon/aeroveedramon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Aeroveedramon[] = INCBIN_U16("graphics/pokemon/aeroveedramon/shiny.gbapal");
+    const u8 gMonIcon_Aeroveedramon[] = INCBIN_U8("graphics/pokemon/aeroveedramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Palpitoad[] = INCBIN_U8("graphics/pokemon/palpitoad/footprint.1bpp");
+    const u8 gMonFootprint_Aeroveedramon[] = INCBIN_U8("graphics/pokemon/aeroveedramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Palpitoad[] = INCBIN_COMP("graphics/pokemon/palpitoad/overworld.4bpp");
+    const u32 gObjectEventPic_Aeroveedramon[] = INCBIN_COMP("graphics/pokemon/aeroveedramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Palpitoad[] = INCBIN_U16("graphics/pokemon/palpitoad/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Palpitoad[] = INCBIN_U16("graphics/pokemon/palpitoad/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Aeroveedramon[] = INCBIN_U16("graphics/pokemon/aeroveedramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Aeroveedramon[] = INCBIN_U16("graphics/pokemon/aeroveedramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

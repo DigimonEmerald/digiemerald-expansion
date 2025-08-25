@@ -9845,7 +9845,7 @@ static const struct LevelUpMove sZudomonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sPalpitoadLevelUpLearnset[] = {
+static const struct LevelUpMove sAeroveedramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BUBBLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_SUPERSONIC),

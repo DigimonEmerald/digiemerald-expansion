@@ -3534,8 +3534,8 @@ Cry_Zudomon::
 	.incbin "sound/direct_sound_samples/cries/zudomon.bin"
 
 	.align 2
-Cry_Palpitoad::
-	.incbin "sound/direct_sound_samples/cries/palpitoad.bin"
+Cry_Aeroveedramon::
+	.incbin "sound/direct_sound_samples/cries/aeroveedramon.bin"
 
 	.align 2
 Cry_Seismitoad::

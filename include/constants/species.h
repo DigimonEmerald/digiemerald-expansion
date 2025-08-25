@@ -553,7 +553,7 @@
 #define SPECIES_PIXIMON                                 533
 #define SPECIES_SHOGUNGEKOMON                              534
 #define SPECIES_ZUDOMON                                 535
-#define SPECIES_PALPITOAD                               536
+#define SPECIES_AEROVEEDRAMON                               536
 #define SPECIES_SEISMITOAD                              537
 #define SPECIES_THROH                                   538
 #define SPECIES_SAWK                                    539

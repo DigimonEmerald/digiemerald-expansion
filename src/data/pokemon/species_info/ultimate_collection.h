@@ -3256,44 +3256,46 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sZudomonLevelUpLearnset,
         .teachableLearnset = sZudomonTeachableLearnset,
         .eggMoveLearnset = sZudomonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_PALPITOAD}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_AEROVEEDRAMON}),
     },
 
-    [SPECIES_PALPITOAD] =
+    [SPECIES_AEROVEEDRAMON] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 65,
-        .baseDefense   = 55,
-        .baseSpeed     = 69,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_WATER, TYPE_GROUND),
+        .baseHP        = 70,
+        .baseAttack    = 90,
+        .baseDefense   = 70,
+        .baseSpeed     = 120,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_FLYING),
+        .attribute = TYPE_VACCINE,
         .catchRate = 95,
-        .expYield = 134,
-        .evYield_HP = 2,
+        .expYield = 200,
+        .evYield_Speed = 3,
+        .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_HYDRATION, ABILITY_WATER_ABSORB },
+        .abilities = { ABILITY_STEADFAST, ABILITY_AERILATE, ABILITY_GALE_WINGS },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Palpitoad"),
-        .cryId = CRY_PALPITOAD,
-        .natDexNum = NATIONAL_DEX_PALPITOAD,
-        .categoryName = _("Vibration"),
-        .height = 8,
-        .weight = 170,
+        .speciesName = _("AeroVeedrmon"),
+        .cryId = CRY_AEROVEEDRAMON,
+        .natDexNum = NATIONAL_DEX_AEROVEEDRAMON,
+        .categoryName = _("Ancient"),
+        .height = 60,
+        .weight = 3210,
         .description = COMPOUND_STRING(
-            "It lives in the water and on land.\n"
-            "When they vibrate the bumps on their\n"
-            "heads, they can make waves in water\n"
-            "or earthquake-like vibrations on land."),
+            "AeroVeedramon are very rare Digimon to\n"
+            "encounter as only the best evolve from\n"
+            "an already rare Digimon. In gaining\n"
+            "flight, it also gained stronger limbs."),
         .pokemonScale = 366,
         .pokemonOffset = 10,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Palpitoad,
+        .frontPic = gMonFrontPic_Aeroveedramon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3304,28 +3306,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 7),
         ),
         .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
-        .backPic = gMonBackPic_Palpitoad,
+        .backPic = gMonBackPic_Aeroveedramon,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Palpitoad,
-        .shinyPalette = gMonShinyPalette_Palpitoad,
-        .iconSprite = gMonIcon_Palpitoad,
+        .palette = gMonPalette_Aeroveedramon,
+        .shinyPalette = gMonShinyPalette_Aeroveedramon,
+        .iconSprite = gMonIcon_Aeroveedramon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 3, SHADOW_SIZE_S)
-        FOOTPRINT(Palpitoad)
+        FOOTPRINT(Aeroveedramon)
         OVERWORLD(
-            sPicTable_Palpitoad,
+            sPicTable_Aeroveedramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Palpitoad,
-            gShinyOverworldPalette_Palpitoad
+            gOverworldPalette_Aeroveedramon,
+            gShinyOverworldPalette_Aeroveedramon
         )
-        .levelUpLearnset = sPalpitoadLevelUpLearnset,
-        .teachableLearnset = sPalpitoadTeachableLearnset,
+        .levelUpLearnset = sAeroveedramonLevelUpLearnset,
+        .teachableLearnset = sAeroveedramonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SEISMITOAD}),
     },
 

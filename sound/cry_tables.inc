@@ -1341,7 +1341,7 @@ gCryTable::
 .endif @ P_FAMILY_PUMPKINMON
 .if P_FAMILY_ZUDOMON == TRUE
 	cry Cry_Zudomon
-	cry Cry_Palpitoad
+	cry Cry_Aeroveedramon
 	cry Cry_Seismitoad
 .endif @ P_FAMILY_ZUDOMON
 .if P_FAMILY_THROH == TRUE
@@ -3769,7 +3769,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_PUMPKINMON
 .if P_FAMILY_ZUDOMON == TRUE
 	cry_reverse Cry_Zudomon
-	cry_reverse Cry_Palpitoad
+	cry_reverse Cry_Aeroveedramon
 	cry_reverse Cry_Seismitoad
 .endif @ P_FAMILY_ZUDOMON
 .if P_FAMILY_THROH == TRUE

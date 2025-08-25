@@ -22339,7 +22339,7 @@ static const u16 sZudomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sPalpitoadTeachableLearnset[] = {
+static const u16 sAeroveedramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_ENDURE,

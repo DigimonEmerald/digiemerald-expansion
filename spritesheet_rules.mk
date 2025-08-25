@@ -2862,7 +2862,7 @@ $(POKEMONGFXDIR)/shogungekomon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/zudomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/palpitoad/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/aeroveedramon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/seismitoad/overworld.4bpp: %.4bpp: %.png
