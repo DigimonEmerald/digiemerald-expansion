@@ -778,7 +778,7 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Dynamaxed Pokemon cannot use Max Guard while holdi
 
 // Almost anything that calculates gBattleMoveDamage based on HP has been changed to non-Dynamax HP.
 // This includes Leftovers, Life Orb, Heal Pulse, Rocky Helmet, Sandstorm, etc. etc.
-// There are some redundant cases (i.e Substitute) that can never be used by a Dynamaxed pokemon.
+// There are some redundant cases (i.e Substitute) that can never be used by a Dynamaxed Pokémon.
 // Anything that is conditional based off max HP still uses gBattleMons[battler].maxHP.
 // Below are some tests, but very far from all encompassing:
 
@@ -2061,3 +2061,34 @@ SINGLE_BATTLE_TEST("(DYNAMAX) Max Moves don't bypass absorbing abilities")
         ABILITY_POPUP(opponent, ability);
     }
 }
+
+SINGLE_BATTLE_TEST("Dynamax: Dynamax is reverted before switch out")
+{
+    GIVEN {
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_EJECT_BUTTON); }
+        PLAYER(SPECIES_EXVEEMON);
+        OPPONENT(SPECIES_LOPMONX);
+    } WHEN {
+        TURN { MOVE(player, MOVE_SCRATCH, gimmick: GIMMICK_DYNAMAX); MOVE(opponent, MOVE_SCRATCH); SEND_OUT(player, 1); }
+        TURN { SWITCH(player, 0); }
+        TURN { MOVE(player, MOVE_SCRATCH); }
+    } SCENE {
+        MESSAGE("Wobbuffet used Scratch!");
+    }
+}
+
+SINGLE_BATTLE_TEST("Dynamax: Destiny Bond fails if a dynamaxed battler is present on field")
+{
+    GIVEN {
+        ASSUME(GetMoveEffect(MOVE_DESTINY_BOND) == EFFECT_DESTINY_BOND);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_DESTINY_BOND); MOVE(player, MOVE_SCRATCH, gimmick: GIMMICK_DYNAMAX); }
+    } SCENE {
+        MESSAGE("The move was blocked by the power of Dynamax!");
+    }
+}
+
+TO_DO_BATTLE_TEST("Dynamax: Contrary inverts stat-lowering Max Moves, without showing a message")
+TO_DO_BATTLE_TEST("Dynamax: Contrary inverts stat-increasing Max Moves, without showing a message")

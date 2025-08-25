@@ -39,7 +39,7 @@ AI_SINGLE_BATTLE_TEST("AI switches if Perish Song is about to kill")
     }
 }
 
-AI_DOUBLE_BATTLE_TEST("AI will not try to switch for the same pokemon for 2 spots in a double battle (all bad moves)")
+AI_DOUBLE_BATTLE_TEST("AI will not try to switch for the same Pokémon for 2 spots in a double battle (all bad moves)")
 {
     u32 flags;
 
@@ -61,13 +61,42 @@ AI_DOUBLE_BATTLE_TEST("AI will not try to switch for the same pokemon for 2 spot
         MESSAGE(AI_TRAINER_NAME " withdrew Tsumemon!");
         MESSAGE(AI_TRAINER_NAME " sent out Mokumon!");
         NONE_OF {
-            MESSAGE(AI_TRAINER_NAME " withdrew Torballmon!");
-            MESSAGE(AI_TRAINER_NAME " sent out Mokumon!");
+            MESSAGE(AI_TRAINER_NAME " withdrew Haunter!");
+            MESSAGE(AI_TRAINER_NAME " sent out Raticate!");
         }
     }
 }
 
-AI_DOUBLE_BATTLE_TEST("AI will not try to switch for the same pokemon for 2 spots in a double battle (Wonder Guard)")
+AI_SINGLE_BATTLE_TEST("AI will switch out if it has no move that affects the player")
+{
+    PASSES_RANDOMLY(SHOULD_SWITCH_ALL_MOVES_BAD_PERCENTAGE, 100, RNG_AI_SWITCH_ALL_MOVES_BAD);
+    GIVEN {
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
+        PLAYER(SPECIES_CHOROMON);
+        OPPONENT(SPECIES_TSUMEMON) { Moves(MOVE_SHADOW_BALL); }
+        OPPONENT(SPECIES_CHOROMON) { Moves(MOVE_SCRATCH); }
+    } WHEN {
+        TURN { EXPECT_SWITCH(opponent, 1); }
+    }
+}
+
+AI_SINGLE_BATTLE_TEST("When AI switches out due to having no move that affects the player, AI will send in a mon that can hit the player, even if not ideal")
+{
+    GIVEN {
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SMART_MON_CHOICES);
+        PLAYER(SPECIES_TSUMEMON) { Moves(MOVE_SHADOW_BALL, MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_HOPMON) { Moves(MOVE_TACKLE); }
+        OPPONENT(SPECIES_HOPMON) { Moves(MOVE_TACKLE); }
+        OPPONENT(SPECIES_HOPMON) { Level(5); Moves(MOVE_CONFUSION); }
+        OPPONENT(SPECIES_HOPMON) { Moves(MOVE_TACKLE); }
+        OPPONENT(SPECIES_HOPMON) { Moves(MOVE_TACKLE); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_SHADOW_BALL); EXPECT_SWITCH(opponent, 2); EXPECT_SEND_OUT(opponent, 4); }
+        TURN { MOVE(player, MOVE_SHADOW_BALL); EXPECT_MOVE(opponent, MOVE_TACKLE); }
+    }
+}
+
+AI_DOUBLE_BATTLE_TEST("AI will not try to switch for the same Pokémon for 2 spots in a double battle (Wonder Guard)")
 {
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_SWITCHING);

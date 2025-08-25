@@ -162,7 +162,7 @@ SINGLE_BATTLE_TEST("Spiky Shield does 1/8 dmg of max hp of attackers making cont
     }
 }
 
-SINGLE_BATTLE_TEST("Baneful Bunker poisons pokemon for moves making contact")
+SINGLE_BATTLE_TEST("Baneful Bunker poisons Pokémon for moves making contact")
 {
     u16 usedMove = MOVE_NONE;
 
@@ -194,7 +194,7 @@ SINGLE_BATTLE_TEST("Baneful Bunker poisons pokemon for moves making contact")
     }
 }
 
-SINGLE_BATTLE_TEST("Protect: Baneful Bunker can't poison pokemon if they are already statused")
+SINGLE_BATTLE_TEST("Protect: Baneful Bunker can't poison Pokémon if they are already statused")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
@@ -215,11 +215,11 @@ SINGLE_BATTLE_TEST("Protect: Baneful Bunker can't poison pokemon if they are alr
     }
 }
 
-SINGLE_BATTLE_TEST("Protect: Baneful Bunker can't poison pokemon if they are already statused")
+SINGLE_BATTLE_TEST("Protect: Baneful Bunker can't poison Pokémon if they are already statused")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_WILL_O_WISP); }
         TURN { MOVE(opponent, MOVE_BANEFUL_BUNKER); MOVE(player, MOVE_SCRATCH); }
@@ -236,7 +236,7 @@ SINGLE_BATTLE_TEST("Protect: Baneful Bunker can't poison pokemon if they are alr
     }
 }
 
-SINGLE_BATTLE_TEST("Burning Bulwark burns pokemon for moves making contact")
+SINGLE_BATTLE_TEST("Burning Bulwark burns Pokémon for moves making contact")
 {
     u16 usedMove = MOVE_NONE;
 
@@ -268,7 +268,7 @@ SINGLE_BATTLE_TEST("Burning Bulwark burns pokemon for moves making contact")
     }
 }
 
-SINGLE_BATTLE_TEST("Protect: Burning Bulwark can't burn pokemon if they are already statused")
+SINGLE_BATTLE_TEST("Protect: Burning Bulwark can't burn Pokémon if they are already statused")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);
@@ -289,7 +289,7 @@ SINGLE_BATTLE_TEST("Protect: Burning Bulwark can't burn pokemon if they are alre
     }
 }
 
-SINGLE_BATTLE_TEST("Protect: Burning Bulwark can't burn pokemon if they are already statused")
+SINGLE_BATTLE_TEST("Protect: Burning Bulwark can't burn Pokémon if they are already statused")
 {
     GIVEN {
         PLAYER(SPECIES_LOPMONX);

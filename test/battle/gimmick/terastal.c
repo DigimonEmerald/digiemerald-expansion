@@ -777,7 +777,7 @@ SINGLE_BATTLE_TEST("(TERA) Terapagos retains its base defensive profile when Ter
     }
 }
 
-SINGLE_BATTLE_TEST("(TERA) Illusion breaks if the pokemon Terastalizes")
+SINGLE_BATTLE_TEST("(TERA) Illusion breaks if the Pokémon Terastalizes")
 {
     KNOWN_FAILING; // #5015
     u32 species;
@@ -790,23 +790,39 @@ SINGLE_BATTLE_TEST("(TERA) Illusion breaks if the pokemon Terastalizes")
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); }
     } SCENE {
-        MESSAGE("Zoroark's Illusion wore off!");
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ILLUSION_OFF, player);
     }
 }
 
-/*
-//  This test freezes the emulator
-SINGLE_BATTLE_TEST("(TERA) Transformed pokemon can't Terastalize")
+// Visual test to make sure Zoroark appears as Wobbuffet/Zigzagoon until illusion breaks
+SINGLE_BATTLE_TEST("(TERA) Illusion doesn't break upon Terastallizing when illusioned as a mon that doesn't change forms by Terastallizing")
+{
+    u32 species;
+    PARAMETRIZE { species = SPECIES_LOPMONX; }
+    PARAMETRIZE { species = SPECIES_TOYAGUMON; }
+    GIVEN {
+        ASSUME(!DoesSpeciesHaveFormChangeMethod(species, FORM_CHANGE_BATTLE_TERASTALLIZATION));
+        PLAYER(SPECIES_ZOROARK) { TeraType(TYPE_BUG); }
+        PLAYER(species);
+        OPPONENT(SPECIES_LOPMONX);
+    } WHEN {
+        TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_SCRATCH); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ILLUSION_OFF, player);
+    }
+}
+
+SINGLE_BATTLE_TEST("(TERA) Transformed Pokémon can't Terastalize")
 {
     GIVEN {
-        PLAYER(SPECIES_CRABMON);
-        OPPONENT(SPECIES_TERAPAGOS) { Moves(MOVE_CELEBRATE); }
+        PLAYER(SPECIES_CRABMON) { Moves(MOVE_TRANSFORM, MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_TERAPAGOS) { Moves(MOVE_TRANSFORM, MOVE_CELEBRATE); }
     } WHEN {
         TURN { MOVE(player, MOVE_TRANSFORM); }
         TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); }
     }
 }
-*/
 
 SINGLE_BATTLE_TEST("(TERA) Pokemon with Tera forms change upon Terastallizing")
 {

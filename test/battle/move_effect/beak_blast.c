@@ -39,7 +39,7 @@ DOUBLE_BATTLE_TEST("Beak Blast's charging message is shown before other moves ar
     }
 }
 
-DOUBLE_BATTLE_TEST("Beak Blast burns all who make contact with the pokemon")
+DOUBLE_BATTLE_TEST("Beak Blast burns all who make contact with the Pokémon")
 {
     GIVEN {
         ASSUME(gMovesInfo[MOVE_BEAK_BLAST].priority < 0);
