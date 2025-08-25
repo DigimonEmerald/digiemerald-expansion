@@ -6691,8 +6691,8 @@ static const union AnimCmd sAnim_Shogungekomon_1[] =
 };
 #endif //P_FAMILY_PUMPKINMON
 
-#if P_FAMILY_TYMPOLE
-static const union AnimCmd sAnim_Tympole_1[] =
+#if P_FAMILY_ZUDOMON
+static const union AnimCmd sAnim_Zudomon_1[] =
 {
     ANIMCMD_FRAME(1, 35),
     ANIMCMD_FRAME(0, 10),
@@ -6720,7 +6720,7 @@ static const union AnimCmd sAnim_Seismitoad_1[] =
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_TYMPOLE
+#endif //P_FAMILY_ZUDOMON
 
 #if P_FAMILY_THROH
 static const union AnimCmd sAnim_Throh_1[] =
@@ -11682,11 +11682,11 @@ SINGLE_ANIMATION(Pumpkinmon);
 SINGLE_ANIMATION(Piximon);
 SINGLE_ANIMATION(Shogungekomon);
 #endif //P_FAMILY_PUMPKINMON
-#if P_FAMILY_TYMPOLE
-SINGLE_ANIMATION(Tympole);
+#if P_FAMILY_ZUDOMON
+SINGLE_ANIMATION(Zudomon);
 SINGLE_ANIMATION(Palpitoad);
 SINGLE_ANIMATION(Seismitoad);
-#endif //P_FAMILY_TYMPOLE
+#endif //P_FAMILY_ZUDOMON
 #if P_FAMILY_THROH
 SINGLE_ANIMATION(Throh);
 #endif //P_FAMILY_THROH

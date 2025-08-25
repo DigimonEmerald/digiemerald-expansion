@@ -16620,20 +16620,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_PUMPKINMON
 
-#if P_FAMILY_TYMPOLE
-    const u32 gMonFrontPic_Tympole[] = INCBIN_U32("graphics/pokemon/tympole/anim_front.4bpp.lz");
-    const u16 gMonPalette_Tympole[] = INCBIN_U16("graphics/pokemon/tympole/normal.gbapal");
-    const u32 gMonBackPic_Tympole[] = INCBIN_U32("graphics/pokemon/tympole/back.4bpp.lz");
-    const u16 gMonShinyPalette_Tympole[] = INCBIN_U16("graphics/pokemon/tympole/shiny.gbapal");
-    const u8 gMonIcon_Tympole[] = INCBIN_U8("graphics/pokemon/tympole/icon.4bpp");
+#if P_FAMILY_ZUDOMON
+    const u32 gMonFrontPic_Zudomon[] = INCBIN_U32("graphics/pokemon/zudomon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Zudomon[] = INCBIN_U16("graphics/pokemon/zudomon/normal.gbapal");
+    const u32 gMonBackPic_Zudomon[] = INCBIN_U32("graphics/pokemon/zudomon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Zudomon[] = INCBIN_U16("graphics/pokemon/zudomon/shiny.gbapal");
+    const u8 gMonIcon_Zudomon[] = INCBIN_U8("graphics/pokemon/zudomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Tympole[] = INCBIN_U8("graphics/pokemon/tympole/footprint.1bpp");
+    const u8 gMonFootprint_Zudomon[] = INCBIN_U8("graphics/pokemon/zudomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Tympole[] = INCBIN_COMP("graphics/pokemon/tympole/overworld.4bpp");
+    const u32 gObjectEventPic_Zudomon[] = INCBIN_COMP("graphics/pokemon/zudomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Tympole[] = INCBIN_U16("graphics/pokemon/tympole/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Tympole[] = INCBIN_U16("graphics/pokemon/tympole/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Zudomon[] = INCBIN_U16("graphics/pokemon/zudomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Zudomon[] = INCBIN_U16("graphics/pokemon/zudomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16668,7 +16668,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Seismitoad[] = INCBIN_U16("graphics/pokemon/seismitoad/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_TYMPOLE
+#endif //P_FAMILY_ZUDOMON
 
 #if P_FAMILY_THROH
     const u32 gMonFrontPic_Throh[] = INCBIN_U32("graphics/pokemon/throh/anim_front.4bpp.lz");

@@ -570,8 +570,8 @@
 #define P_FAMILY_DATAMON                  TRUE
 #undef P_FAMILY_PUMPKINMON
 #define P_FAMILY_PUMPKINMON                 TRUE
-#undef P_FAMILY_TYMPOLE
-#define P_FAMILY_TYMPOLE                 TRUE
+#undef P_FAMILY_ZUDOMON
+#define P_FAMILY_ZUDOMON                 TRUE
 #undef P_FAMILY_THROH
 #define P_FAMILY_THROH                   TRUE
 #undef P_FAMILY_SAWK

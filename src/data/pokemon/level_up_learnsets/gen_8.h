@@ -12606,8 +12606,8 @@ static const struct LevelUpMove sShogungekomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_PUMPKINMON
 
-#if P_FAMILY_TYMPOLE
-static const struct LevelUpMove sTympoleLevelUpLearnset[] = {
+#if P_FAMILY_ZUDOMON
+static const struct LevelUpMove sZudomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ECHOED_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 4, MOVE_ACID),
@@ -12663,7 +12663,7 @@ static const struct LevelUpMove sSeismitoadLevelUpLearnset[] = {
     LEVEL_UP_MOVE(70, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_TYMPOLE
+#endif //P_FAMILY_ZUDOMON
 
 #if P_FAMILY_THROH
 static const struct LevelUpMove sThrohLevelUpLearnset[] = {

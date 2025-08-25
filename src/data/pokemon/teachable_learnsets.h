@@ -22317,8 +22317,8 @@ static const u16 sShogungekomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_PUMPKINMON
 
-#if P_FAMILY_TYMPOLE
-static const u16 sTympoleTeachableLearnset[] = {
+#if P_FAMILY_ZUDOMON
+static const u16 sZudomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_ENDURE,
@@ -22395,7 +22395,7 @@ static const u16 sSeismitoadTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TYMPOLE
+#endif //P_FAMILY_ZUDOMON
 
 #if P_FAMILY_THROH
 static const u16 sThrohTeachableLearnset[] = {

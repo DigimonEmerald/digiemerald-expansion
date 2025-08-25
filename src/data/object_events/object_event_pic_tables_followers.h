@@ -3882,9 +3882,9 @@ static const struct SpriteFrameImage sPicTable_Shogungekomon[] = {
 };
 #endif //P_FAMILY_PUMPKINMON
 
-#if P_FAMILY_TYMPOLE
-static const struct SpriteFrameImage sPicTable_Tympole[] = {
-    overworld_ascending_frames(gObjectEventPic_Tympole, 4, 4),
+#if P_FAMILY_ZUDOMON
+static const struct SpriteFrameImage sPicTable_Zudomon[] = {
+    overworld_ascending_frames(gObjectEventPic_Zudomon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Palpitoad[] = {
     overworld_ascending_frames(gObjectEventPic_Palpitoad, 4, 4),
@@ -3892,7 +3892,7 @@ static const struct SpriteFrameImage sPicTable_Palpitoad[] = {
 static const struct SpriteFrameImage sPicTable_Seismitoad[] = {
     overworld_ascending_frames(gObjectEventPic_Seismitoad, 4, 4),
 };
-#endif //P_FAMILY_TYMPOLE
+#endif //P_FAMILY_ZUDOMON
 
 #if P_FAMILY_THROH
 static const struct SpriteFrameImage sPicTable_Throh[] = {

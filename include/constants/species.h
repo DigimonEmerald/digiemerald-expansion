@@ -552,7 +552,7 @@
 #define SPECIES_PUMPKINMON                                 532
 #define SPECIES_PIXIMON                                 533
 #define SPECIES_SHOGUNGEKOMON                              534
-#define SPECIES_TYMPOLE                                 535
+#define SPECIES_ZUDOMON                                 535
 #define SPECIES_PALPITOAD                               536
 #define SPECIES_SEISMITOAD                              537
 #define SPECIES_THROH                                   538

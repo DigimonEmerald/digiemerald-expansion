@@ -322,7 +322,7 @@
 #define P_FAMILY_MEGADRAMON                 P_GEN_5_POKEMON
 #define P_FAMILY_DATAMON                  P_GEN_5_POKEMON
 #define P_FAMILY_PUMPKINMON                 P_GEN_5_POKEMON
-#define P_FAMILY_TYMPOLE                 P_GEN_5_POKEMON
+#define P_FAMILY_ZUDOMON                 P_GEN_5_POKEMON
 #define P_FAMILY_THROH                   P_GEN_5_POKEMON
 #define P_FAMILY_SAWK                    P_GEN_5_POKEMON
 #define P_FAMILY_SEWADDLE                P_GEN_5_POKEMON

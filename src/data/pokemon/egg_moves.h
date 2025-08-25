@@ -4187,8 +4187,8 @@ static const u16 sPumpkinmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_PUMPKINMON
 
-#if P_FAMILY_TYMPOLE
-static const u16 sTympoleEggMoveLearnset[] = {
+#if P_FAMILY_ZUDOMON
+static const u16 sZudomonEggMoveLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_REFRESH,
     MOVE_MUD_SPORT,
@@ -4201,7 +4201,7 @@ static const u16 sTympoleEggMoveLearnset[] = {
     MOVE_VENOM_DRENCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TYMPOLE
+#endif //P_FAMILY_ZUDOMON
 
 #if P_FAMILY_SEWADDLE
 static const u16 sSewaddleEggMoveLearnset[] = {

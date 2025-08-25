@@ -1339,11 +1339,11 @@ gCryTable::
 	cry Cry_Piximon
 	cry Cry_Shogungekomon
 .endif @ P_FAMILY_PUMPKINMON
-.if P_FAMILY_TYMPOLE == TRUE
-	cry Cry_Tympole
+.if P_FAMILY_ZUDOMON == TRUE
+	cry Cry_Zudomon
 	cry Cry_Palpitoad
 	cry Cry_Seismitoad
-.endif @ P_FAMILY_TYMPOLE
+.endif @ P_FAMILY_ZUDOMON
 .if P_FAMILY_THROH == TRUE
 	cry Cry_Throh
 .endif @ P_FAMILY_THROH
@@ -3767,11 +3767,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Piximon
 	cry_reverse Cry_Shogungekomon
 .endif @ P_FAMILY_PUMPKINMON
-.if P_FAMILY_TYMPOLE == TRUE
-	cry_reverse Cry_Tympole
+.if P_FAMILY_ZUDOMON == TRUE
+	cry_reverse Cry_Zudomon
 	cry_reverse Cry_Palpitoad
 	cry_reverse Cry_Seismitoad
-.endif @ P_FAMILY_TYMPOLE
+.endif @ P_FAMILY_ZUDOMON
 .if P_FAMILY_THROH == TRUE
 	cry_reverse Cry_Throh
 .endif @ P_FAMILY_THROH

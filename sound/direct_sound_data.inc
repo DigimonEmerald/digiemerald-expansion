@@ -3528,10 +3528,10 @@ Cry_Shogungekomon::
 	.incbin "sound/direct_sound_samples/cries/shogungekomon.bin"
 .endif @ P_FAMILY_PUMPKINMON
 
-.if P_FAMILY_TYMPOLE == TRUE
+.if P_FAMILY_ZUDOMON == TRUE
 	.align 2
-Cry_Tympole::
-	.incbin "sound/direct_sound_samples/cries/tympole.bin"
+Cry_Zudomon::
+	.incbin "sound/direct_sound_samples/cries/zudomon.bin"
 
 	.align 2
 Cry_Palpitoad::
@@ -3540,7 +3540,7 @@ Cry_Palpitoad::
 	.align 2
 Cry_Seismitoad::
 	.incbin "sound/direct_sound_samples/cries/seismitoad.bin"
-.endif @ P_FAMILY_TYMPOLE
+.endif @ P_FAMILY_ZUDOMON
 
 .if P_FAMILY_THROH == TRUE
 	.align 2

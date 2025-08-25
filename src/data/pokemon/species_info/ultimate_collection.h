@@ -3188,42 +3188,44 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_PUMPKINMON
 
-#if P_FAMILY_TYMPOLE
-    [SPECIES_TYMPOLE] =
+#if P_FAMILY_ZUDOMON
+    [SPECIES_ZUDOMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 50,
-        .baseDefense   = 40,
-        .baseSpeed     = 64,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 40,
-        .types = MON_TYPES(TYPE_WATER),
+        .baseHP        = 90,
+        .baseAttack    = 110,
+        .baseDefense   = 85,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_ICE, TYPE_ELECTRIC),
+        .attribute = TYPE_VACCINE,
         .catchRate = 95,
-        .expYield = 59,
-        .evYield_Speed = 1,
+        .expYield = 200,
+        .evYield_Attack = 3,
+        .evYield_SpAttack = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_HYDRATION, ABILITY_WATER_ABSORB },
+        .abilities = { ABILITY_GUTS, ABILITY_DRIZZLE, ABILITY_ELECTRIC_SURGE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Tympole"),
-        .cryId = CRY_TYMPOLE,
-        .natDexNum = NATIONAL_DEX_TYMPOLE,
-        .categoryName = _("Tadpole"),
-        .height = 5,
-        .weight = 45,
+        .speciesName = _("Zudomon"),
+        .cryId = CRY_ZUDOMON,
+        .natDexNum = NATIONAL_DEX_ZUDOMON,
+        .categoryName = _("Thor"),
+        .height = 54,
+        .weight = 3463,
         .description = COMPOUND_STRING(
-            "By vibrating its cheeks, it emits sound\n"
-            "waves imperceptible to humans. It uses\n"
-            "the rhythm of these sounds to talk and\n"
-            "warns others of danger."),
+            "The horn on a Zudomon is impossible to\n"
+            "regrow so it processes it into a saw\n"
+            "shape. Its weapon, Thor Hammer, has\n"
+            "been dug up from ancient ice."),
         .pokemonScale = 432,
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Tympole,
+        .frontPic = gMonFrontPic_Zudomon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 14,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3231,29 +3233,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
-        .backPic = gMonBackPic_Tympole,
+        .backPic = gMonBackPic_Zudomon,
         .backPicSize = MON_COORDS_SIZE(40, 32),
         .backPicYOffset = 17,
         .backAnimId = BACK_ANIM_H_SPRING,
-        .palette = gMonPalette_Tympole,
-        .shinyPalette = gMonShinyPalette_Tympole,
-        .iconSprite = gMonIcon_Tympole,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Zudomon,
+        .shinyPalette = gMonShinyPalette_Zudomon,
+        .iconSprite = gMonIcon_Zudomon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 0, SHADOW_SIZE_S)
-        FOOTPRINT(Tympole)
+        FOOTPRINT(Zudomon)
         OVERWORLD(
-            sPicTable_Tympole,
+            sPicTable_Zudomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Tympole,
-            gShinyOverworldPalette_Tympole
+            gOverworldPalette_Zudomon,
+            gShinyOverworldPalette_Zudomon
         )
-        .levelUpLearnset = sTympoleLevelUpLearnset,
-        .teachableLearnset = sTympoleTeachableLearnset,
-        .eggMoveLearnset = sTympoleEggMoveLearnset,
+        .levelUpLearnset = sZudomonLevelUpLearnset,
+        .teachableLearnset = sZudomonTeachableLearnset,
+        .eggMoveLearnset = sZudomonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_PALPITOAD}),
     },
 
@@ -3403,7 +3405,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sSeismitoadLevelUpLearnset,
         .teachableLearnset = sSeismitoadTeachableLearnset,
     },
-#endif //P_FAMILY_TYMPOLE
+#endif //P_FAMILY_ZUDOMON
 
 #if P_FAMILY_THROH
     [SPECIES_THROH] =
