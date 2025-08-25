@@ -13,7 +13,7 @@ SINGLE_BATTLE_TEST("Flower Gift transforms Cherrim in harsh sunlight")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
         MESSAGE("Cherrim transformed!");
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_CHERRIM_SUNSHINE);
+        EXPECT_EQ(player->species, SPECIES_VEEDRAMON);
     }
 }
 

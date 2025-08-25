@@ -3294,8 +3294,8 @@ static const struct SpriteFrameImage sPicTable_Tortomon[] = {
 static const struct SpriteFrameImage sPicTable_Unimon[] = {
     overworld_ascending_frames(gObjectEventPic_Unimon, 4, 4),
 };
-/*static const struct SpriteFrameImage sPicTable_CherrimSunshine[] = {
-    overworld_ascending_frames(gObjectEventPic_CherrimSunshine, 4, 4),
+/*static const struct SpriteFrameImage sPicTable_Veedramon[] = {
+    overworld_ascending_frames(gObjectEventPic_Veedramon, 4, 4),
 };*/
 #endif //P_FAMILY_TORTOMON
 

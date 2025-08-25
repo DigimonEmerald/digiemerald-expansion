@@ -434,6 +434,8 @@ Sukamon - Pachirisu
 Shellmon - Buizel
 Starmon - Floatzel
 Tortomon - Cherubi
+Unimon - Cherrim (Overcast)
+Veedramon - Cherrim (Sunny)
 
 Ultimate List
 

@@ -1128,7 +1128,7 @@
 #define SPECIES_MOJYAMON                             1058
 #define SPECIES_OCTOMON                          1059
 #define SPECIES_OGREMON                          1060
-#define SPECIES_CHERRIM_SUNSHINE                        1061
+#define SPECIES_VEEDRAMON                        1061
 #define SPECIES_SHELLOS_EAST                            1062
 #define SPECIES_GASTRODON_EAST                          1063
 #define SPECIES_ROTOM_HEAT                              1064

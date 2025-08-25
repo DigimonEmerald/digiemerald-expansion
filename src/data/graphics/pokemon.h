@@ -14687,20 +14687,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_Cherrim[] = INCBIN_U8("graphics/pokemon/unimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_CherrimSunshine[] = INCBIN_U32("graphics/pokemon/unimon/sunshine/anim_front.4bpp.lz");
-    const u16 gMonPalette_CherrimSunshine[] = INCBIN_U16("graphics/pokemon/unimon/sunshine/normal.gbapal");
-    const u32 gMonBackPic_CherrimSunshine[] = INCBIN_U32("graphics/pokemon/unimon/sunshine/back.4bpp.lz");
-    const u16 gMonShinyPalette_CherrimSunshine[] = INCBIN_U16("graphics/pokemon/unimon/sunshine/shiny.gbapal");
-    const u8 gMonIcon_CherrimSunshine[] = INCBIN_U8("graphics/pokemon/unimon/sunshine/icon.4bpp");
+    const u32 gMonFrontPic_Veedramon[] = INCBIN_U32("graphics/pokemon/veedramon/anim_front.4bpp.lz");
+    const u16 gMonPalette_Veedramon[] = INCBIN_U16("graphics/pokemon/veedramon/normal.gbapal");
+    const u32 gMonBackPic_Veedramon[] = INCBIN_U32("graphics/pokemon/veedramon/back.4bpp.lz");
+    const u16 gMonShinyPalette_Veedramon[] = INCBIN_U16("graphics/pokemon/veedramon/shiny.gbapal");
+    const u8 gMonIcon_Veedramon[] = INCBIN_U8("graphics/pokemon/veedramon/icon.4bpp");
 
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Unimon[] = INCBIN_COMP("graphics/pokemon/unimon/overworld.4bpp");
-    // const u32 gObjectEventPic_CherrimSunshine[] = INCBIN_COMP("graphics/pokemon/unimon/sunshine/overworld.4bpp");
+    // const u32 gObjectEventPic_Veedramon[] = INCBIN_COMP("graphics/pokemon/veedramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
     const u16 gOverworldPalette_Unimon[] = INCBIN_U16("graphics/pokemon/unimon/overworld_normal.gbapal");
-    // const u16 gOverworldPalette_CherrimSunshine[] = INCBIN_U16("graphics/pokemon/unimon/sunshine/overworld_normal.gbapal");
+    // const u16 gOverworldPalette_Veedramon[] = INCBIN_U16("graphics/pokemon/veedramon/overworld_normal.gbapal");
     const u16 gShinyOverworldPalette_Unimon[] = INCBIN_U16("graphics/pokemon/unimon/overworld_shiny.gbapal");
-    // const u16 gShinyOverworldPalette_CherrimSunshine[] = INCBIN_U16("graphics/pokemon/unimon/sunshine/overworld_shiny.gbapal");
+    // const u16 gShinyOverworldPalette_Veedramon[] = INCBIN_U16("graphics/pokemon/veedramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_TORTOMON
