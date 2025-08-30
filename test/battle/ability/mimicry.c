@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Mimicry changes the battler's type based on Terrain")
         PARAMETRIZE { terrainMove = terrainData[j][0]; terrainType = terrainData[j][1]; }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_STUNFISK_GALAR) { Ability(ABILITY_MIMICRY); }
     } WHEN {
         TURN { MOVE(player, terrainMove); }
@@ -51,9 +51,9 @@ SINGLE_BATTLE_TEST("Mimicry restores the battler's types when terrain is removed
     }
 
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_STUNFISK_GALAR].types[0] == TYPE_GROUND);
-        ASSUME(gSpeciesInfo[SPECIES_STUNFISK_GALAR].types[1] == TYPE_STEEL);
-        PLAYER(SPECIES_LOPMONX); 
+        ASSUME(GetSpeciesType(SPECIES_STUNFISK_GALAR, 0) == TYPE_GROUND);
+        ASSUME(GetSpeciesType(SPECIES_STUNFISK_GALAR, 1) == TYPE_STEEL);
+        PLAYER(SPECIES_WOBBUFFET); 
         OPPONENT(SPECIES_STUNFISK_GALAR) { Ability(ABILITY_MIMICRY); }
     } WHEN {
         TURN { MOVE(opponent, terrainMove); MOVE(player, removeTerrainMove); }
@@ -76,8 +76,8 @@ DOUBLE_BATTLE_TEST("Mimicry can trigger multiple times in a turn")
     GIVEN {
         PLAYER(SPECIES_STUNFISK_GALAR) { Speed(50); Ability(ABILITY_MIMICRY); }
         PLAYER(SPECIES_MORELULL) { Speed(40); }
-        OPPONENT(SPECIES_HACKMON) { Speed(60); }
-        OPPONENT(SPECIES_FLYMON) { Speed(70); }
+        OPPONENT(SPECIES_IGGLYBUFF) { Speed(60); }
+        OPPONENT(SPECIES_BAGON) { Speed(70); }
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_ELECTRIC_TERRAIN); MOVE(opponentLeft, MOVE_MISTY_TERRAIN); }
     } SCENE {

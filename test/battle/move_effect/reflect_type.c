@@ -32,12 +32,12 @@ SINGLE_BATTLE_TEST("Reflect Type does not affect any of Arceus' forms")
     }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(species);
     } WHEN {
         TURN { MOVE(player, MOVE_REFLECT_TYPE); }
     } SCENE {
-        MESSAGE("Lopmonx used Reflect Type!");
+        MESSAGE("Wobbuffet used Reflect Type!");
         MESSAGE("But it failed!");
     }
 }
@@ -73,12 +73,12 @@ SINGLE_BATTLE_TEST("Reflect Type does not affect any of Silvally's forms")
     }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(species);
     } WHEN {
         TURN { MOVE(player, MOVE_REFLECT_TYPE); }
     } SCENE {
-        MESSAGE("Lopmonx used Reflect Type!");
+        MESSAGE("Wobbuffet used Reflect Type!");
         MESSAGE("But it failed!");
     }
 }
@@ -86,20 +86,20 @@ SINGLE_BATTLE_TEST("Reflect Type does not affect any of Silvally's forms")
 SINGLE_BATTLE_TEST("Reflect Type fails if the target has no types")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_GIGIMON].types[0] == TYPE_FIRE);
-        ASSUME(gSpeciesInfo[SPECIES_GIGIMON].types[1] == TYPE_FIRE);
-        ASSUME(gSpeciesInfo[SPECIES_HIYARIMON].types[0] == TYPE_WATER);
-        ASSUME(gSpeciesInfo[SPECIES_HIYARIMON].types[1] == TYPE_FIGHTING);
-        PLAYER(SPECIES_GIGIMON);
-        OPPONENT(SPECIES_HIYARIMON);
+        ASSUME(GetSpeciesType(SPECIES_ARCANINE, 0) == TYPE_FIRE);
+        ASSUME(GetSpeciesType(SPECIES_ARCANINE, 1) == TYPE_FIRE);
+        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 0) == TYPE_WATER);
+        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 1) == TYPE_FIGHTING);
+        PLAYER(SPECIES_ARCANINE);
+        OPPONENT(SPECIES_POLIWRATH);
     } WHEN {
         TURN { MOVE(player, MOVE_BURN_UP); MOVE(opponent, MOVE_REFLECT_TYPE); }
     } SCENE {
-        MESSAGE("Gigimon used Burn Up!");
+        MESSAGE("Arcanine used Burn Up!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BURN_UP, player);
         HP_BAR(opponent);
-        MESSAGE("Gigimon burned itself out!");
-        MESSAGE("The opposing Hiyarimon used Reflect Type!");
+        MESSAGE("Arcanine burned itself out!");
+        MESSAGE("The opposing Poliwrath used Reflect Type!");
         MESSAGE("But it failed!");
     }
 }
@@ -107,18 +107,18 @@ SINGLE_BATTLE_TEST("Reflect Type fails if the target has no types")
 SINGLE_BATTLE_TEST("Reflect Type copies a target's dual types")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_GIGIMON].types[0] == TYPE_FIRE);
-        ASSUME(gSpeciesInfo[SPECIES_GIGIMON].types[1] == TYPE_FIRE);
-        ASSUME(gSpeciesInfo[SPECIES_HIYARIMON].types[0] == TYPE_WATER);
-        ASSUME(gSpeciesInfo[SPECIES_HIYARIMON].types[1] == TYPE_FIGHTING);
-        PLAYER(SPECIES_GIGIMON);
-        OPPONENT(SPECIES_HIYARIMON);
+        ASSUME(GetSpeciesType(SPECIES_ARCANINE, 0) == TYPE_FIRE);
+        ASSUME(GetSpeciesType(SPECIES_ARCANINE, 1) == TYPE_FIRE);
+        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 0) == TYPE_WATER);
+        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 1) == TYPE_FIGHTING);
+        PLAYER(SPECIES_ARCANINE);
+        OPPONENT(SPECIES_POLIWRATH);
     } WHEN {
         TURN { MOVE(player, MOVE_REFLECT_TYPE); }
     } SCENE {
-        MESSAGE("Gigimon used Reflect Type!");
+        MESSAGE("Arcanine used Reflect Type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, player);
-        MESSAGE("Gigimon became the same type as the opposing Hiyarimon!");
+        MESSAGE("Arcanine became the same type as the opposing Poliwrath!");
     } THEN {
         EXPECT_EQ(player->types[0], TYPE_WATER);
         EXPECT_EQ(player->types[1], TYPE_FIGHTING);
@@ -129,18 +129,18 @@ SINGLE_BATTLE_TEST("Reflect Type copies a target's dual types")
 SINGLE_BATTLE_TEST("Reflect Type copies a target's pure type")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_GIGIMON].types[0] == TYPE_FIRE);
-        ASSUME(gSpeciesInfo[SPECIES_GIGIMON].types[1] == TYPE_FIRE);
-        ASSUME(gSpeciesInfo[SPECIES_JUNKMON].types[0] == TYPE_ROCK);
-        ASSUME(gSpeciesInfo[SPECIES_JUNKMON].types[1] == TYPE_ROCK);
-        PLAYER(SPECIES_GIGIMON);
-        OPPONENT(SPECIES_JUNKMON);
+        ASSUME(GetSpeciesType(SPECIES_ARCANINE, 0) == TYPE_FIRE);
+        ASSUME(GetSpeciesType(SPECIES_ARCANINE, 1) == TYPE_FIRE);
+        ASSUME(GetSpeciesType(SPECIES_SUDOWOODO, 0) == TYPE_ROCK);
+        ASSUME(GetSpeciesType(SPECIES_SUDOWOODO, 1) == TYPE_ROCK);
+        PLAYER(SPECIES_ARCANINE);
+        OPPONENT(SPECIES_SUDOWOODO);
     } WHEN {
         TURN { MOVE(player, MOVE_REFLECT_TYPE); }
     } SCENE {
-        MESSAGE("Gigimon used Reflect Type!");
+        MESSAGE("Arcanine used Reflect Type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, player);
-        MESSAGE("Gigimon became the same type as the opposing Junkmon!");
+        MESSAGE("Arcanine became the same type as the opposing Sudowoodo!");
     } THEN {
         EXPECT_EQ(player->types[0], TYPE_ROCK);
         EXPECT_EQ(player->types[1], TYPE_ROCK);
@@ -151,30 +151,30 @@ SINGLE_BATTLE_TEST("Reflect Type copies a target's pure type")
 SINGLE_BATTLE_TEST("Reflect Type defaults to Normal type for the user's 1st and 2nd types if the target only has a 3rd type")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[0] == TYPE_PSYCHIC);
-        ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[1] == TYPE_PSYCHIC);
-        ASSUME(gSpeciesInfo[SPECIES_GIGIMON].types[0] == TYPE_FIRE);
-        ASSUME(gSpeciesInfo[SPECIES_GIGIMON].types[1] == TYPE_FIRE);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_GIGIMON);
+        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) == TYPE_PSYCHIC);
+        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) == TYPE_PSYCHIC);
+        ASSUME(GetSpeciesType(SPECIES_ARCANINE, 0) == TYPE_FIRE);
+        ASSUME(GetSpeciesType(SPECIES_ARCANINE, 1) == TYPE_FIRE);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_ARCANINE);
     } WHEN {
         TURN { MOVE(opponent, MOVE_BURN_UP); }
         TURN { MOVE(player, MOVE_FORESTS_CURSE); }
         TURN { MOVE(player, MOVE_REFLECT_TYPE); }
     } SCENE {
         // Turn 1
-        MESSAGE("The opposing Gigimon used Burn Up!");
+        MESSAGE("The opposing Arcanine used Burn Up!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BURN_UP, opponent);
         HP_BAR(player);
-        MESSAGE("The opposing Gigimon burned itself out!");
+        MESSAGE("The opposing Arcanine burned itself out!");
         // Turn 2
-        MESSAGE("Lopmonx used Forest's Curse!");
+        MESSAGE("Wobbuffet used Forest's Curse!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FORESTS_CURSE, player);
-        MESSAGE("Grass type was added to the opposing Gigimon!");
+        MESSAGE("Grass type was added to the opposing Arcanine!");
         // Turn 3
-        MESSAGE("Lopmonx used Reflect Type!");
+        MESSAGE("Wobbuffet used Reflect Type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, player);
-        MESSAGE("Lopmonx became the same type as the opposing Gigimon!");
+        MESSAGE("Wobbuffet became the same type as the opposing Arcanine!");
     } THEN {
         EXPECT_EQ(player->types[0], TYPE_NORMAL);
         EXPECT_EQ(player->types[1], TYPE_NORMAL);
@@ -185,12 +185,12 @@ SINGLE_BATTLE_TEST("Reflect Type defaults to Normal type for the user's 1st and 
 SINGLE_BATTLE_TEST("Reflect Type fails if the user is Terastallized")
 {
     GIVEN {
-        PLAYER(SPECIES_GIGIMON) { TeraType(TYPE_NORMAL); }
-        OPPONENT(SPECIES_HIYARIMON);
+        PLAYER(SPECIES_ARCANINE) { TeraType(TYPE_NORMAL); }
+        OPPONENT(SPECIES_POLIWRATH);
     } WHEN {
         TURN { MOVE(player, MOVE_REFLECT_TYPE, gimmick: GIMMICK_TERA); }
     } SCENE {
-        MESSAGE("Gigimon used Reflect Type!");
+        MESSAGE("Arcanine used Reflect Type!");
         MESSAGE("But it failed!");
     } THEN {
         EXPECT_EQ(player->types[0], TYPE_FIRE);
@@ -202,14 +202,14 @@ SINGLE_BATTLE_TEST("Reflect Type fails if the user is Terastallized")
 SINGLE_BATTLE_TEST("Reflect Type succeeds against a Terastallized target and copies its Tera type")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_HIYARIMON].types[0] != TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_HIYARIMON].types[1] != TYPE_NORMAL);
-        PLAYER(SPECIES_GIGIMON) { TeraType(TYPE_NORMAL); }
-        OPPONENT(SPECIES_HIYARIMON);
+        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 0) != TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_POLIWRATH, 1) != TYPE_NORMAL);
+        PLAYER(SPECIES_ARCANINE) { TeraType(TYPE_NORMAL); }
+        OPPONENT(SPECIES_POLIWRATH);
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_REFLECT_TYPE); }
     } SCENE {
-        MESSAGE("The opposing Hiyarimon used Reflect Type!");
+        MESSAGE("The opposing Poliwrath used Reflect Type!");
     } THEN {
         EXPECT_EQ(opponent->types[0], TYPE_NORMAL);
         EXPECT_EQ(opponent->types[1], TYPE_NORMAL);

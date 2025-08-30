@@ -5,10 +5,13 @@
 #define TRADE_PARTNER 1
 
 // In-game Trade IDs
-#define INGAME_TRADE_AIRDRAMON 0
-#define INGAME_TRADE_BOOGIEMON 1
-#define INGAME_TRADE_BIYOMON 2
-#define INGAME_TRADE_CALUMON 3
+enum InGameTradeID
+{
+    INGAME_TRADE_AIRDRAMON,
+    INGAME_TRADE_BOOGIEMON,
+    INGAME_TRADE_BIYOMON,
+    INGAME_TRADE_CALUMON,
+};
 
 // Return values for CanTradeSelectedMon and CanSpinTradeMon
 #define CAN_TRADE_MON              0

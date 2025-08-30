@@ -399,6 +399,6 @@ SINGLE_BATTLE_TEST("Full Heal, Heal Powder and Local Specialties heal a battler 
     } SCENE {
         MESSAGE("Lopmonx had its status healed!");
     } THEN {
-        EXPECT_EQ(player->status2, STATUS1_NONE); // because we dont have STATUS2_NONE
+        EXPECT(player->volatiles.confusionTurns == 0);
     }
 }

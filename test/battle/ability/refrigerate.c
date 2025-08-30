@@ -10,7 +10,7 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Refrigerate turns a Normal-type move into a Ice-type move")
 {
     GIVEN {
-        PLAYER(SPECIES_FLAMEMON);
+        PLAYER(SPECIES_MEGANIUM);
         OPPONENT(SPECIES_AMAURA) { Ability(ABILITY_REFRIGERATE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SCRATCH); }
@@ -31,7 +31,7 @@ SINGLE_BATTLE_TEST("Refrigerate boosts power of affected moves by 20% (Gen7+) or
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_ATE_MULTIPLIER, genConfig);
         PLAYER(SPECIES_AMAURA) { Ability(ability); Moves(MOVE_TACKLE); }
-        OPPONENT(SPECIES_LOPMON_X);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
@@ -54,9 +54,9 @@ SINGLE_BATTLE_TEST("Refrigerate doesn't affect Weather Ball's type", s16 damage)
     GIVEN {
         WITH_CONFIG(GEN_SNOW_WARNING, GEN_9); //To prevent capturing hail damage
         ASSUME(GetMoveEffect(MOVE_WEATHER_BALL) == EFFECT_WEATHER_BALL);
-        ASSUME(gSpeciesInfo[SPECIES_TYUTYUMON].types[0] == TYPE_BUG);
+        ASSUME(GetSpeciesType(SPECIES_PINSIR, 0) == TYPE_BUG);
         PLAYER(SPECIES_AMAURA) { Ability(ability); }
-        OPPONENT(SPECIES_TYUTYUMON);
+        OPPONENT(SPECIES_PINSIR);
     } WHEN {
         TURN { MOVE(player, move); }
         TURN { MOVE(player, MOVE_WEATHER_BALL); }
@@ -80,14 +80,14 @@ SINGLE_BATTLE_TEST("Refrigerate doesn't affect Natural Gift's type")
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_NATURAL_GIFT) == EFFECT_NATURAL_GIFT);
         ASSUME(gNaturalGiftTable[ITEM_TO_BERRY(ITEM_ORAN_BERRY)].type == TYPE_POISON);
-        ASSUME(gSpeciesInfo[SPECIES_FUGAMON].types[0] == TYPE_STEEL);
+        ASSUME(GetSpeciesType(SPECIES_BELDUM, 0) == TYPE_STEEL);
         PLAYER(SPECIES_AMAURA) { Ability(ability); Item(ITEM_ORAN_BERRY); }
-        OPPONENT(SPECIES_FUGAMON);
+        OPPONENT(SPECIES_BELDUM);
     } WHEN {
         TURN { MOVE(player, MOVE_NATURAL_GIFT); }
     } SCENE {
         NOT { ANIMATION(ANIM_TYPE_MOVE, MOVE_NATURAL_GIFT, player); }
-        MESSAGE("It doesn't affect the opposing Fugamon…");
+        MESSAGE("It doesn't affect the opposing Beldum…");
     }
 }
 
@@ -107,14 +107,14 @@ SINGLE_BATTLE_TEST("Refrigerate doesn't affect Judgment / Techno Blast / Multi-A
         ASSUME(gItemsInfo[ITEM_SHOCK_DRIVE].secondaryId == TYPE_ELECTRIC);
         ASSUME(gItemsInfo[ITEM_ELECTRIC_MEMORY].holdEffect == HOLD_EFFECT_MEMORY);
         ASSUME(gItemsInfo[ITEM_ELECTRIC_MEMORY].secondaryId == TYPE_ELECTRIC);
-        ASSUME(gSpeciesInfo[SPECIES_BUDMON].types[0] == TYPE_GROUND);
+        ASSUME(GetSpeciesType(SPECIES_DIGLETT, 0) == TYPE_GROUND);
         PLAYER(SPECIES_AMAURA) { Ability(ABILITY_REFRIGERATE); Item(item); }
-        OPPONENT(SPECIES_BUDMON);
+        OPPONENT(SPECIES_DIGLETT);
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
         NOT { ANIMATION(ANIM_TYPE_MOVE, move, player); }
-        MESSAGE("It doesn't affect the opposing Budmon…");
+        MESSAGE("It doesn't affect the opposing Diglett…");
     }
 }
 
@@ -123,14 +123,14 @@ SINGLE_BATTLE_TEST("Refrigerate doesn't affect Hidden Power's type")
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_HIDDEN_POWER) == EFFECT_HIDDEN_POWER);
         ASSUME(gTypesInfo[TYPE_ELECTRIC].isHiddenPowerType == TRUE);
-        ASSUME(gSpeciesInfo[SPECIES_BUDMON].types[0] == TYPE_GROUND);
+        ASSUME(GetSpeciesType(SPECIES_DIGLETT, 0) == TYPE_GROUND);
         PLAYER(SPECIES_AMAURA) { Ability(ABILITY_REFRIGERATE); HPIV(31); AttackIV(31); DefenseIV(31); SpAttackIV(30); SpDefenseIV(31); SpeedIV(31); } // HP Electric
-        OPPONENT(SPECIES_BUDMON);
+        OPPONENT(SPECIES_DIGLETT);
     } WHEN {
         TURN { MOVE(player, MOVE_HIDDEN_POWER); }
     } SCENE {
         NOT { ANIMATION(ANIM_TYPE_MOVE, MOVE_HIDDEN_POWER, player); }
-        MESSAGE("It doesn't affect the opposing Budmon…");
+        MESSAGE("It doesn't affect the opposing Diglett…");
     }
 }
 
@@ -142,5 +142,5 @@ TO_DO_BATTLE_TEST("Refrigerate doesn't affect Tera Starstorm's type");
 TO_DO_BATTLE_TEST("Refrigerate doesn't affect Max Strike's type");
 TO_DO_BATTLE_TEST("Refrigerate doesn't affect Terrain Pulse's type");
 TO_DO_BATTLE_TEST("Refrigerate doesn't affect damaging Z-Move types");
-TO_DO_BATTLE_TEST("(DYNAMAX) Refrigerate turns Max Strike into Max Hailstorm when not used by Gigantamax Coronamon");
-//TO_DO_BATTLE_TEST("(DYNAMAX) Refrigerate doesn't turn Max Strike into Max Hailstorm when used by Gigantamax Coronamon, instead becoming G-Max Resonance"); // Marked in Bulbapedia as "needs research", so this assumes that it behaves like Pixilate.
+TO_DO_BATTLE_TEST("(DYNAMAX) Refrigerate turns Max Strike into Max Hailstorm when not used by Gigantamax Lapras");
+//TO_DO_BATTLE_TEST("(DYNAMAX) Refrigerate doesn't turn Max Strike into Max Hailstorm when used by Gigantamax Lapras, instead becoming G-Max Resonance"); // Marked in Bulbapedia as "needs research", so this assumes that it behaves like Pixilate.

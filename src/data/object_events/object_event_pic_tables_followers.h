@@ -4590,9 +4590,11 @@ static const struct SpriteFrameImage sPicTable_Blitzgreymon[] = {
 static const struct SpriteFrameImage sPicTable_Biosupinomon[] = {
     overworld_ascending_frames(gObjectEventPic_Biosupinomon, 4, 4),
 };
-/*static const struct SpriteFrameImage sPicTable_Rosemon_burstmode[] = {
+#if OW_BATTLE_ONLY_FORMS
+static const struct SpriteFrameImage sPicTable_Rosemon_burstmode[] = {
     overworld_ascending_frames(gObjectEventPic_Rosemon_burstmode, 4, 4),
-};*/
+};
+#endif //OW_BATTLE_ONLY_FORMS
 #endif //P_FAMILY_CRESGARURUMON
 
 #if P_FAMILY_ROSEMON

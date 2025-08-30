@@ -17,7 +17,7 @@
 If you use **`Digimon Emerald`**, please credit us alongside **RHH (Rom Hacking Hideout)** and **Pret**. Optionally, include the version number for clarity.
 
 ```
-Based off RHH's pokeemerald-expansion 1.12.2 https://github.com/rh-hideout/pokeemerald-expansion/
+Based off RHH's pokeemerald-expansion 1.13.0 https://github.com/rh-hideout/pokeemerald-expansion/
 ```
 
 Please consider [crediting all contributors](CREDITS.md) involved in the project!
@@ -26,7 +26,7 @@ Please consider [crediting all contributors](CREDITS.md) involved in the project
 
 ❗❗ **Important**: Do not use GitHub's "Download Zip" option as it will not include commit history. This is necessary if you want to update or merge other feature branches. 
 
-If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/) has a [guide on forking and cloning the repository](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/The-Basics-of-GitHub). Then you can follow one of the following guides:
+If you're new to git and GitHub, [Team Aqua's Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/) has a [guide to forking and cloning the repository](https://github.com/Pawkkie/Team-Aquas-Asset-Repo/wiki/The-Basics-of-GitHub). Then you can follow one of the following guides:
 
 ## 📥 [Installing **`Digimon Emerald`**](INSTALL.md)
 ## 🏗️ [Building **`Digimon Emerald`**](INSTALL.md#Building-pokeemerald-expansion)

@@ -9,30 +9,30 @@ ASSUMPTIONS
 DOUBLE_BATTLE_TEST("Flower Shield raises the defense of all Grass-type Pokémon")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_BETAMON].types[0] == TYPE_GRASS);
-        ASSUME(gSpeciesInfo[SPECIES_TANGROWTH].types[0] == TYPE_GRASS);
-        ASSUME(gSpeciesInfo[SPECIES_KOKUWAMON].types[0] == TYPE_GRASS);
-        ASSUME(gSpeciesInfo[SPECIES_KOKUWAMON_X].types[0] == TYPE_GRASS);
-        PLAYER(SPECIES_BETAMON);
+        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_TANGROWTH, 0) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_SUNKERN, 0) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_SUNFLORA, 0) == TYPE_GRASS);
+        PLAYER(SPECIES_TANGELA);
         PLAYER(SPECIES_TANGROWTH);
-        OPPONENT(SPECIES_KOKUWAMON);
-        OPPONENT(SPECIES_KOKUWAMON_X);
+        OPPONENT(SPECIES_SUNKERN);
+        OPPONENT(SPECIES_SUNFLORA);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FLOWER_SHIELD); MOVE(playerRight, MOVE_CELEBRATE); }
     } SCENE {
-        MESSAGE("Betamon used Flower Shield!");
+        MESSAGE("Tangela used Flower Shield!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FLOWER_SHIELD, playerLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-        MESSAGE("Betamon's Defense rose!");
+        MESSAGE("Tangela's Defense rose!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FLOWER_SHIELD, playerLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
-        MESSAGE("The opposing Kokuwamon's Defense rose!");
+        MESSAGE("The opposing Sunkern's Defense rose!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FLOWER_SHIELD, playerLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerRight);
         MESSAGE("Tangrowth's Defense rose!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FLOWER_SHIELD, playerLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
-        MESSAGE("The opposing Kokuwamon_x's Defense rose!");
+        MESSAGE("The opposing Sunflora's Defense rose!");
     }
 }
 

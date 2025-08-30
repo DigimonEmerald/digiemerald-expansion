@@ -5,10 +5,10 @@ SINGLE_BATTLE_TEST("Anticipation causes notifies if an opponent has a super-effe
 {
     GIVEN {
         ASSUME(GetMoveType(MOVE_CLOSE_COMBAT) == TYPE_FIGHTING);
-        ASSUME(gSpeciesInfo[SPECIES_CRABMON_X].types[0] == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_CRABMON_X].types[1] == TYPE_NORMAL);
-        PLAYER(SPECIES_CRABMON_X) { Ability(ABILITY_ANTICIPATION); }
-        OPPONENT(SPECIES_LOPMON_X) { Moves(MOVE_CLOSE_COMBAT, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NORMAL);
+        PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
+        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_CLOSE_COMBAT, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
         TURN { }
     } SCENE {
@@ -20,8 +20,8 @@ SINGLE_BATTLE_TEST("Anticipation causes notifies if an opponent has a One-hit KO
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_FISSURE) == EFFECT_OHKO);
-        PLAYER(SPECIES_CRABMON_X) { Ability(ABILITY_ANTICIPATION); }
-        OPPONENT(SPECIES_LOPMON_X) { Moves(MOVE_FISSURE, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
+        PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
+        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_FISSURE, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
         TURN { }
     } SCENE {
@@ -33,8 +33,8 @@ SINGLE_BATTLE_TEST("Anticipation treats Self-Destruct and Explosion like all oth
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_EXPLOSION) == EFFECT_EXPLOSION);
-        PLAYER(SPECIES_CRABMON_X) { Ability(ABILITY_ANTICIPATION); }
-        OPPONENT(SPECIES_LOPMON_X) { Moves(MOVE_EXPLOSION, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
+        PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
+        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_EXPLOSION, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
         TURN { }
     } SCENE {
@@ -46,10 +46,10 @@ SINGLE_BATTLE_TEST("Anticipation doesn't consider Normalize into their effective
 {
     GIVEN {
         ASSUME(GetMoveType(MOVE_CLOSE_COMBAT) == TYPE_FIGHTING);
-        ASSUME(gSpeciesInfo[SPECIES_CRABMON_X].types[0] == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_CRABMON_X].types[1] == TYPE_NORMAL);
-        PLAYER(SPECIES_CRABMON_X) { Ability(ABILITY_ANTICIPATION); }
-        OPPONENT(SPECIES_BLGAOGAMON) { Ability(ABILITY_NORMALIZE); Moves(MOVE_CLOSE_COMBAT, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NORMAL);
+        PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
+        OPPONENT(SPECIES_DELCATTY) { Ability(ABILITY_NORMALIZE); Moves(MOVE_CLOSE_COMBAT, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
         TURN { }
     } SCENE {
@@ -62,10 +62,10 @@ SINGLE_BATTLE_TEST("Anticipation doesn't consider Scrappy into their effectivene
     KNOWN_FAILING;
     GIVEN {
         ASSUME(GetMoveType(MOVE_CLOSE_COMBAT) == TYPE_FIGHTING);
-        ASSUME(gSpeciesInfo[SPECIES_CRABMON_X].types[0] == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_CRABMON_X].types[1] == TYPE_NORMAL);
-        PLAYER(SPECIES_CRABMON_X) { Ability(ABILITY_ANTICIPATION); }
-        OPPONENT(SPECIES_BETAMON_X) { Ability(ABILITY_SCRAPPY); Moves(MOVE_CLOSE_COMBAT, MOVE_TRICK_OR_TREAT, MOVE_SKILL_SWAP, MOVE_CELEBRATE); }
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NORMAL);
+        PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
+        OPPONENT(SPECIES_KANGASKHAN) { Ability(ABILITY_SCRAPPY); Moves(MOVE_CLOSE_COMBAT, MOVE_TRICK_OR_TREAT, MOVE_SKILL_SWAP, MOVE_CELEBRATE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TRICK_OR_TREAT); MOVE(player, MOVE_SKILL_SWAP); }
         TURN { MOVE(opponent, MOVE_SKILL_SWAP); }
@@ -82,8 +82,8 @@ SINGLE_BATTLE_TEST("Anticipation doesn't consider Gravity into their effectivene
 {
     KNOWN_FAILING;
     GIVEN {
-        PLAYER(SPECIES_PHASCOMON);
-        OPPONENT(SPECIES_CRABMON_X) { Ability(ABILITY_ANTICIPATION); Moves(MOVE_EARTHQUAKE, MOVE_GRAVITY, MOVE_SCRATCH, MOVE_POUND); }
+        PLAYER(SPECIES_SKARMORY);
+        OPPONENT(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); Moves(MOVE_EARTHQUAKE, MOVE_GRAVITY, MOVE_SCRATCH, MOVE_POUND); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_GRAVITY); MOVE(player, MOVE_SKILL_SWAP); }
     } SCENE {
@@ -96,15 +96,15 @@ SINGLE_BATTLE_TEST("Anticipation doesn't consider Gravity into their effectivene
 SINGLE_BATTLE_TEST("Anticipation counts Counter, Metal Burst or Mirror Coat as attacking moves of their types (Gen5+)")
 {
     u32 move, species, typeAtk, typeDef;
-    PARAMETRIZE { move = MOVE_COUNTER; species = SPECIES_MOKUMON; typeAtk = TYPE_FIGHTING; typeDef = TYPE_NORMAL; }
-    PARAMETRIZE { move = MOVE_METAL_BURST; species = SPECIES_MASTERTYRANNOMON; typeAtk = TYPE_STEEL; typeDef = TYPE_ROCK; }
-    PARAMETRIZE { move = MOVE_MIRROR_COAT; species = SPECIES_PUTTIMON; typeAtk = TYPE_PSYCHIC; typeDef = TYPE_POISON; }
+    PARAMETRIZE { move = MOVE_COUNTER; species = SPECIES_RATICATE; typeAtk = TYPE_FIGHTING; typeDef = TYPE_NORMAL; }
+    PARAMETRIZE { move = MOVE_METAL_BURST; species = SPECIES_ROGGENROLA; typeAtk = TYPE_STEEL; typeDef = TYPE_ROCK; }
+    PARAMETRIZE { move = MOVE_MIRROR_COAT; species = SPECIES_NIDORINO; typeAtk = TYPE_PSYCHIC; typeDef = TYPE_POISON; }
     GIVEN {
         ASSUME(GetMoveType(move) == typeAtk);
-        ASSUME(gSpeciesInfo[species].types[0] == typeDef);
-        ASSUME(gSpeciesInfo[species].types[1] == typeDef);
+        ASSUME(GetSpeciesType(species, 0) == typeDef);
+        ASSUME(GetSpeciesType(species, 1) == typeDef);
         PLAYER(species);
-        OPPONENT(SPECIES_CRABMON_X) { Ability(ABILITY_ANTICIPATION); Moves(move, MOVE_SKILL_SWAP, MOVE_POUND, MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); Moves(move, MOVE_SKILL_SWAP, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SKILL_SWAP); }
     } SCENE {
@@ -117,12 +117,12 @@ SINGLE_BATTLE_TEST("Anticipation considers Synchronoise as an ordinary Psychic-t
 {
     GIVEN {
         ASSUME(GetMoveType(MOVE_SYNCHRONOISE) == TYPE_PSYCHIC);
-        ASSUME(gSpeciesInfo[SPECIES_PUTTIMON].types[0] == TYPE_POISON);
-        ASSUME(gSpeciesInfo[SPECIES_PUTTIMON].types[1] == TYPE_POISON);
-        ASSUME(gSpeciesInfo[SPECIES_CRABMON_X].types[0] != TYPE_POISON);
-        ASSUME(gSpeciesInfo[SPECIES_CRABMON_X].types[1] != TYPE_POISON);
-        PLAYER(SPECIES_PUTTIMON);
-        OPPONENT(SPECIES_CRABMON_X) { Ability(ABILITY_ANTICIPATION); Moves(MOVE_SYNCHRONOISE, MOVE_SKILL_SWAP, MOVE_POUND, MOVE_CELEBRATE); }
+        ASSUME(GetSpeciesType(SPECIES_NIDORINO, 0) == TYPE_POISON);
+        ASSUME(GetSpeciesType(SPECIES_NIDORINO, 1) == TYPE_POISON);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) != TYPE_POISON);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) != TYPE_POISON);
+        PLAYER(SPECIES_NIDORINO);
+        OPPONENT(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); Moves(MOVE_SYNCHRONOISE, MOVE_SKILL_SWAP, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SKILL_SWAP); }
     } SCENE {
@@ -133,13 +133,12 @@ SINGLE_BATTLE_TEST("Anticipation considers Synchronoise as an ordinary Psychic-t
 
 SINGLE_BATTLE_TEST("Anticipation considers Freeze-Dry as an ordinary Ice-type move")
 {
-    KNOWN_FAILING;
     GIVEN {
         ASSUME(GetMoveType(MOVE_FREEZE_DRY) == TYPE_ICE);
-        ASSUME(gSpeciesInfo[SPECIES_CONOMON].types[0] == TYPE_WATER);
-        ASSUME(gSpeciesInfo[SPECIES_CONOMON].types[1] == TYPE_WATER);
-        PLAYER(SPECIES_CONOMON);
-        OPPONENT(SPECIES_CRABMON_X) { Ability(ABILITY_ANTICIPATION); Moves(MOVE_FREEZE_DRY, MOVE_SKILL_SWAP, MOVE_POUND, MOVE_CELEBRATE); }
+        ASSUME(GetSpeciesType(SPECIES_SQUIRTLE, 0) == TYPE_WATER);
+        ASSUME(GetSpeciesType(SPECIES_SQUIRTLE, 1) == TYPE_WATER);
+        PLAYER(SPECIES_SQUIRTLE);
+        OPPONENT(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); Moves(MOVE_FREEZE_DRY, MOVE_SKILL_SWAP, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SKILL_SWAP); }
     } SCENE {
@@ -150,13 +149,12 @@ SINGLE_BATTLE_TEST("Anticipation considers Freeze-Dry as an ordinary Ice-type mo
 
 SINGLE_BATTLE_TEST("Anticipation considers Flying Press as an ordinary Fighting-type move")
 {
-    KNOWN_FAILING;
     GIVEN {
         ASSUME(GetMoveType(MOVE_FLYING_PRESS) == TYPE_FIGHTING);
-        ASSUME(gSpeciesInfo[SPECIES_BETAMON].types[0] == TYPE_GRASS);
-        ASSUME(gSpeciesInfo[SPECIES_BETAMON].types[1] == TYPE_GRASS);
-        PLAYER(SPECIES_BETAMON);
-        OPPONENT(SPECIES_CRABMON_X) { Ability(ABILITY_ANTICIPATION); Moves(MOVE_FLYING_PRESS, MOVE_SKILL_SWAP, MOVE_POUND, MOVE_CELEBRATE); }
+        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_TANGELA, 1) == TYPE_GRASS);
+        PLAYER(SPECIES_TANGELA);
+        OPPONENT(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); Moves(MOVE_FLYING_PRESS, MOVE_SKILL_SWAP, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SKILL_SWAP); }
     } SCENE {
@@ -169,10 +167,10 @@ SINGLE_BATTLE_TEST("Anticipation considers Aura Wheel as an ordinary Electric-ty
 {
     GIVEN {
         ASSUME(GetMoveType(MOVE_AURA_WHEEL) == TYPE_ELECTRIC);
-        ASSUME(gSpeciesInfo[SPECIES_NEGAMON_GALAR].types[0] == TYPE_PSYCHIC);
-        ASSUME(gSpeciesInfo[SPECIES_NEGAMON_GALAR].types[1] == TYPE_PSYCHIC);
-        PLAYER(SPECIES_LOPMON_X);
-        PLAYER(SPECIES_NEGAMON_GALAR) { Ability(ABILITY_ANTICIPATION); }
+        ASSUME(GetSpeciesType(SPECIES_PONYTA_GALAR, 0) == TYPE_PSYCHIC);
+        ASSUME(GetSpeciesType(SPECIES_PONYTA_GALAR, 1) == TYPE_PSYCHIC);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_PONYTA_GALAR) { Ability(ABILITY_ANTICIPATION); }
         OPPONENT(SPECIES_MORPEKO) { Ability(ABILITY_HUNGER_SWITCH); Moves(MOVE_AURA_WHEEL, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_CELEBRATE); }
@@ -188,9 +186,9 @@ SINGLE_BATTLE_TEST("Anticipation treats dynamic move types as their base type (N
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_JUDGMENT) == EFFECT_CHANGE_TYPE_ON_ITEM);
-        ASSUME(gSpeciesInfo[SPECIES_CRABMON_X].types[0] == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_CRABMON_X].types[1] == TYPE_NORMAL);
-        PLAYER(SPECIES_CRABMON_X) { Ability(ABILITY_ANTICIPATION); }
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NORMAL);
+        PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
         OPPONENT(SPECIES_ARCEUS) { Item(ITEM_FIST_PLATE); Moves(MOVE_JUDGMENT, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
         TURN { }
@@ -203,10 +201,10 @@ SINGLE_BATTLE_TEST("Anticipation treats dynamic move types as their base type (N
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_WEATHER_BALL) == EFFECT_WEATHER_BALL);
-        ASSUME(gSpeciesInfo[SPECIES_FERROTHORN].types[0] == TYPE_GRASS);
-        ASSUME(gSpeciesInfo[SPECIES_FERROTHORN].types[1] == TYPE_STEEL);
+        ASSUME(GetSpeciesType(SPECIES_FERROTHORN, 0) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_FERROTHORN, 1) == TYPE_STEEL);
         PLAYER(SPECIES_FERROTHORN) { Ability(ABILITY_ANTICIPATION); Speed(2); }
-        OPPONENT(SPECIES_SAKUMON) { Ability(ABILITY_DROUGHT); Moves(MOVE_WEATHER_BALL, MOVE_SKILL_SWAP, MOVE_POUND, MOVE_CELEBRATE); Speed(4); }
+        OPPONENT(SPECIES_NINETALES) { Ability(ABILITY_DROUGHT); Moves(MOVE_WEATHER_BALL, MOVE_SKILL_SWAP, MOVE_POUND, MOVE_CELEBRATE); Speed(4); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SKILL_SWAP); MOVE(player, MOVE_SKILL_SWAP); }
     } SCENE {
@@ -221,10 +219,10 @@ SINGLE_BATTLE_TEST("Anticipation treats dynamic move types as their base type (N
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_NATURAL_GIFT) == EFFECT_NATURAL_GIFT);
-        ASSUME(gSpeciesInfo[SPECIES_CRABMON_X].types[0] == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_CRABMON_X].types[1] == TYPE_NORMAL);
-        PLAYER(SPECIES_CRABMON_X) { Ability(ABILITY_ANTICIPATION); }
-        OPPONENT(SPECIES_LOPMON_X) { Item(ITEM_LEPPA_BERRY); Moves(MOVE_NATURAL_GIFT, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NORMAL);
+        PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_LEPPA_BERRY); Moves(MOVE_NATURAL_GIFT, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
         TURN { }
     } SCENE {
@@ -236,8 +234,8 @@ SINGLE_BATTLE_TEST("Anticipation treats dynamic move types as their base type (N
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_TECHNO_BLAST) == EFFECT_CHANGE_TYPE_ON_ITEM);
-        ASSUME(gSpeciesInfo[SPECIES_FERROTHORN].types[0] == TYPE_GRASS);
-        ASSUME(gSpeciesInfo[SPECIES_FERROTHORN].types[1] == TYPE_STEEL);
+        ASSUME(GetSpeciesType(SPECIES_FERROTHORN, 0) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_FERROTHORN, 1) == TYPE_STEEL);
         PLAYER(SPECIES_FERROTHORN) { Ability(ABILITY_ANTICIPATION); }
         OPPONENT(SPECIES_GENESECT) { Item(ITEM_BURN_DRIVE); Moves(MOVE_TECHNO_BLAST, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
@@ -251,9 +249,9 @@ SINGLE_BATTLE_TEST("Anticipation treats dynamic move types as their base type (N
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_REVELATION_DANCE) == EFFECT_REVELATION_DANCE);
-        ASSUME(gSpeciesInfo[SPECIES_FERROTHORN].types[0] == TYPE_GRASS);
-        ASSUME(gSpeciesInfo[SPECIES_FERROTHORN].types[1] == TYPE_STEEL);
-        ASSUME(gSpeciesInfo[SPECIES_ORICORIO_BAILE].types[0] == TYPE_FIRE);
+        ASSUME(GetSpeciesType(SPECIES_FERROTHORN, 0) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_FERROTHORN, 1) == TYPE_STEEL);
+        ASSUME(GetSpeciesType(SPECIES_ORICORIO_BAILE, 0) == TYPE_FIRE);
         PLAYER(SPECIES_FERROTHORN) { Ability(ABILITY_ANTICIPATION); }
         OPPONENT(SPECIES_ORICORIO_BAILE) { Moves(MOVE_REVELATION_DANCE, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
@@ -267,9 +265,9 @@ SINGLE_BATTLE_TEST("Anticipation treats dynamic move types as their base type (N
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_MULTI_ATTACK) == EFFECT_CHANGE_TYPE_ON_ITEM);
-        ASSUME(gSpeciesInfo[SPECIES_CRABMON_X].types[0] == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_CRABMON_X].types[1] == TYPE_NORMAL);
-        PLAYER(SPECIES_CRABMON_X) { Ability(ABILITY_ANTICIPATION); }
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NORMAL);
+        PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); }
         OPPONENT(SPECIES_SILVALLY) { Item(ITEM_FIGHTING_MEMORY); Moves(MOVE_MULTI_ATTACK, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
         TURN { }
@@ -280,12 +278,11 @@ SINGLE_BATTLE_TEST("Anticipation treats dynamic move types as their base type (N
 
 SINGLE_BATTLE_TEST("Anticipation does not consider Strong Winds on type matchups")
 {
-    KNOWN_FAILING;
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_GEOGREYMON_MEGA].types[0] == TYPE_DRAGON);
-        ASSUME(gSpeciesInfo[SPECIES_GEOGREYMON_MEGA].types[1] == TYPE_FLYING);
-        PLAYER(SPECIES_GEOGREYMON) { Moves(MOVE_DRAGON_ASCENT, MOVE_CELEBRATE); }
-        OPPONENT(SPECIES_CRABMON_X) { Ability(ABILITY_ANTICIPATION); Moves(MOVE_ROCK_SLIDE, MOVE_SKILL_SWAP, MOVE_POUND, MOVE_CELEBRATE); }
+        ASSUME(GetSpeciesType(SPECIES_RAYQUAZA_MEGA, 0) == TYPE_DRAGON);
+        ASSUME(GetSpeciesType(SPECIES_RAYQUAZA_MEGA, 1) == TYPE_FLYING);
+        PLAYER(SPECIES_RAYQUAZA) { Moves(MOVE_DRAGON_ASCENT, MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); Moves(MOVE_ROCK_SLIDE, MOVE_SKILL_SWAP, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_MEGA); MOVE(opponent, MOVE_SKILL_SWAP); }
     } SCENE {
@@ -300,9 +297,9 @@ SINGLE_BATTLE_TEST("Anticipation does not consider ate-abilities")
 {
     GIVEN {
         ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_NANIMON].types[0] == TYPE_BUG);
-        ASSUME(gSpeciesInfo[SPECIES_NANIMON].types[1] == TYPE_GRASS);
-        PLAYER(SPECIES_NANIMON) { Ability(ABILITY_ANTICIPATION); }
+        ASSUME(GetSpeciesType(SPECIES_WORMADAM_PLANT, 0) == TYPE_BUG);
+        ASSUME(GetSpeciesType(SPECIES_WORMADAM_PLANT, 1) == TYPE_GRASS);
+        PLAYER(SPECIES_WORMADAM_PLANT) { Ability(ABILITY_ANTICIPATION); }
         OPPONENT(SPECIES_AURORUS) { Ability(ABILITY_REFRIGERATE); Moves(MOVE_GROWL, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
         TURN { }
@@ -315,10 +312,10 @@ SINGLE_BATTLE_TEST("Anticipation treats Hidden Power as its dynamic type (Gen6+)
 {
     KNOWN_FAILING;
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_CRABMON_X].types[0] == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_CRABMON_X].types[1] == TYPE_NORMAL);
-        PLAYER(SPECIES_CRABMON_X) { Ability(ABILITY_ANTICIPATION); Item(ITEM_CHOPLE_BERRY); }
-        OPPONENT(SPECIES_LOPMON_X) { Moves(MOVE_HIDDEN_POWER, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); HPIV(30); AttackIV(2); DefenseIV(31); SpAttackIV(30); SpDefenseIV(30); SpeedIV(30); }
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 0) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_EEVEE, 1) == TYPE_NORMAL);
+        PLAYER(SPECIES_EEVEE) { Ability(ABILITY_ANTICIPATION); Item(ITEM_CHOPLE_BERRY); }
+        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_HIDDEN_POWER, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); HPIV(30); AttackIV(2); DefenseIV(31); SpAttackIV(30); SpDefenseIV(30); SpeedIV(30); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_HIDDEN_POWER); }
     } SCENE {
@@ -335,10 +332,10 @@ SINGLE_BATTLE_TEST("Anticipation considers Inverse Battle types")
     GIVEN {
         FLAG_SET(B_FLAG_INVERSE_BATTLE);
         ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_FERROTHORN].types[0] == TYPE_GRASS);
-        ASSUME(gSpeciesInfo[SPECIES_FERROTHORN].types[1] == TYPE_STEEL);
+        ASSUME(GetSpeciesType(SPECIES_FERROTHORN, 0) == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_FERROTHORN, 1) == TYPE_STEEL);
         PLAYER(SPECIES_FERROTHORN) { Ability(ABILITY_ANTICIPATION); }
-        OPPONENT(SPECIES_LOPMON_X) { Moves(MOVE_GROWL, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
+        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_GROWL, MOVE_SCRATCH, MOVE_POUND, MOVE_CELEBRATE); }
     } WHEN {
         TURN { }
     } SCENE {

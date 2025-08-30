@@ -18,16 +18,16 @@ SINGLE_BATTLE_TEST("Focus Energy increases the user's critical hit ratio by 1 st
             else if (j >= GEN_3)
                 chance = 4; // 25%
             else
-                chance = 8; // 12.5% with Lopmon_x's base speed
+                chance = 8; // 12.5% with Wobbuffet's base speed
         }
     }
     PASSES_RANDOMLY(1, chance, RNG_CRITICAL_HIT);
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_CRIT_CHANCE, genConfig);
         WITH_CONFIG(GEN_CONFIG_FOCUS_ENERGY_CRIT_RATIO, genConfig);
-        ASSUME(gSpeciesInfo[SPECIES_LOPMON_X].baseSpeed == 33);
-        PLAYER(SPECIES_LOPMON_X);
-        OPPONENT(SPECIES_LOPMON_X);
+        ASSUME(GetSpeciesBaseSpeed(SPECIES_WOBBUFFET) == 33);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         if (useFocusEnergy)
             TURN { MOVE(player, MOVE_FOCUS_ENERGY); }

@@ -4,10 +4,10 @@
 // Please add Snow interactions with move, item and ability effects on their respective files.
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_SNOWSCAPE].effect == EFFECT_SNOWSCAPE);
-    ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[0] != TYPE_ICE && gSpeciesInfo[SPECIES_LOPMONX].types[1] != TYPE_ICE);
-    ASSUME(gSpeciesInfo[SPECIES_EYESMON].types[0] == TYPE_ICE || gSpeciesInfo[SPECIES_EYESMON].types[1] == TYPE_ICE);
-    ASSUME(gMovesInfo[MOVE_TACKLE].category == DAMAGE_CATEGORY_PHYSICAL);
+    ASSUME(GetMoveEffect(MOVE_SNOWSCAPE) == EFFECT_SNOWSCAPE);
+    ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) != TYPE_ICE && GetSpeciesType(SPECIES_WOBBUFFET, 1) != TYPE_ICE);
+    ASSUME(GetSpeciesType(SPECIES_GLALIE, 0) == TYPE_ICE || GetSpeciesType(SPECIES_GLALIE, 1) == TYPE_ICE);
+    ASSUME(GetMoveCategory(MOVE_SCRATCH) == DAMAGE_CATEGORY_PHYSICAL);
 }
 
 SINGLE_BATTLE_TEST("Snow multiplies the defense of Ice-types by 1.5x", s16 damage)
@@ -16,11 +16,11 @@ SINGLE_BATTLE_TEST("Snow multiplies the defense of Ice-types by 1.5x", s16 damag
     PARAMETRIZE { move = MOVE_SNOWSCAPE; }
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_EYESMON);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_GLALIE);
     } WHEN {
         TURN { MOVE(opponent, move); }
-        TURN { MOVE(player, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_SCRATCH); }
     } SCENE {
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
@@ -33,13 +33,13 @@ SINGLE_BATTLE_TEST("Snowscape fails if Desolate Land or Primordial Sea are activ
     u32 species;
     u32 item;
 
-    PARAMETRIZE { species = SPECIES_LOPMONX; item = ITEM_NONE; }
-    PARAMETRIZE { species = SPECIES_GEKOMON; item = ITEM_RED_ORB; }
-    PARAMETRIZE { species = SPECIES_GATOMON_X; item = ITEM_BLUE_ORB; }
+    PARAMETRIZE { species = SPECIES_WOBBUFFET; item = ITEM_NONE; }
+    PARAMETRIZE { species = SPECIES_GROUDON; item = ITEM_RED_ORB; }
+    PARAMETRIZE { species = SPECIES_KYOGRE; item = ITEM_BLUE_ORB; }
 
     GIVEN {
         PLAYER(species) { Item(item); }
-        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SNOWSCAPE); }
     } SCENE {

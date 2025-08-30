@@ -10,8 +10,8 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Galvanize turns a normal type move into Electric")
 {
     GIVEN {
-        PLAYER(SPECIES_VIXIMON);
-        OPPONENT(SPECIES_MONIMON_ALOLA) { Ability(ABILITY_GALVANIZE); }
+        PLAYER(SPECIES_KRABBY);
+        OPPONENT(SPECIES_GEODUDE_ALOLA) { Ability(ABILITY_GALVANIZE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {
@@ -32,8 +32,8 @@ SINGLE_BATTLE_TEST("Galvanize can not turn certain moves into Electric type move
         ASSUME(GetMoveEffect(MOVE_HIDDEN_POWER) == EFFECT_HIDDEN_POWER);
         ASSUME(GetMoveEffect(MOVE_WEATHER_BALL) == EFFECT_WEATHER_BALL);
         ASSUME(GetMoveEffect(MOVE_MULTI_ATTACK) == EFFECT_CHANGE_TYPE_ON_ITEM);
-        PLAYER(SPECIES_VIXIMON);
-        OPPONENT(SPECIES_MONIMON_ALOLA) { Ability(ABILITY_GALVANIZE); }
+        PLAYER(SPECIES_KRABBY);
+        OPPONENT(SPECIES_GEODUDE_ALOLA) { Ability(ABILITY_GALVANIZE); }
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
@@ -52,8 +52,8 @@ SINGLE_BATTLE_TEST("Galvanize boosts power of affected moves by 20% (Gen7+) or 3
 
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_ATE_MULTIPLIER, genConfig);
-        PLAYER(SPECIES_MONIMON_ALOLA) { Ability(ability); Moves(MOVE_TACKLE); }
-        OPPONENT(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_GEODUDE_ALOLA) { Ability(ability); Moves(MOVE_TACKLE); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_TACKLE); }
     } SCENE {
@@ -76,9 +76,9 @@ SINGLE_BATTLE_TEST("Galvanize doesn't affect Weather Ball's type", s16 damage)
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_WEATHER_BALL) == EFFECT_WEATHER_BALL);
         ASSUME(GetMoveType(MOVE_WEATHER_BALL) == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_TYUTYUMON].types[0] == TYPE_BUG);
-        PLAYER(SPECIES_MONIMON_ALOLA) { Ability(ability); }
-        OPPONENT(SPECIES_TYUTYUMON);
+        ASSUME(GetSpeciesType(SPECIES_PINSIR, 0) == TYPE_BUG);
+        PLAYER(SPECIES_GEODUDE_ALOLA) { Ability(ability); }
+        OPPONENT(SPECIES_PINSIR);
     } WHEN {
         TURN { MOVE(player, move); }
         TURN { MOVE(player, MOVE_WEATHER_BALL); }
@@ -102,14 +102,14 @@ SINGLE_BATTLE_TEST("Galvanize doesn't affect Natural Gift's type")
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_NATURAL_GIFT) == EFFECT_NATURAL_GIFT);
         ASSUME(gNaturalGiftTable[ITEM_TO_BERRY(ITEM_ORAN_BERRY)].type == TYPE_POISON);
-        ASSUME(gSpeciesInfo[SPECIES_FUGAMON].types[0] == TYPE_STEEL);
-        PLAYER(SPECIES_MONIMON_ALOLA) { Ability(ability); Item(ITEM_ORAN_BERRY); }
-        OPPONENT(SPECIES_FUGAMON);
+        ASSUME(GetSpeciesType(SPECIES_BELDUM, 0) == TYPE_STEEL);
+        PLAYER(SPECIES_GEODUDE_ALOLA) { Ability(ability); Item(ITEM_ORAN_BERRY); }
+        OPPONENT(SPECIES_BELDUM);
     } WHEN {
         TURN { MOVE(player, MOVE_NATURAL_GIFT); }
     } SCENE {
         NOT { ANIMATION(ANIM_TYPE_MOVE, MOVE_NATURAL_GIFT, player); }
-        MESSAGE("It doesn't affect the opposing Fugamon…");
+        MESSAGE("It doesn't affect the opposing Beldum…");
     }
 }
 
@@ -129,19 +129,19 @@ SINGLE_BATTLE_TEST("Galvanize doesn't affect Judgment / Techno Blast / Multi-Att
         ASSUME(gItemsInfo[ITEM_DOUSE_DRIVE].secondaryId == TYPE_WATER);
         ASSUME(gItemsInfo[ITEM_WATER_MEMORY].holdEffect == HOLD_EFFECT_MEMORY);
         ASSUME(gItemsInfo[ITEM_WATER_MEMORY].secondaryId == TYPE_WATER);
-        ASSUME(gSpeciesInfo[SPECIES_CUTEMON].types[0] == TYPE_WATER);
-        PLAYER(SPECIES_MONIMON_ALOLA) { Ability(ABILITY_GALVANIZE); Item(item); }
-        OPPONENT(SPECIES_CUTEMON) { Ability(ABILITY_WATER_ABSORB); }
+        ASSUME(GetSpeciesType(SPECIES_VAPOREON, 0) == TYPE_WATER);
+        PLAYER(SPECIES_GEODUDE_ALOLA) { Ability(ABILITY_GALVANIZE); Item(item); }
+        OPPONENT(SPECIES_VAPOREON) { Ability(ABILITY_WATER_ABSORB); }
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
         NOT { ANIMATION(ANIM_TYPE_MOVE, move, player); }
         if (move == MOVE_JUDGMENT)
-            MESSAGE("The opposing Cutemon's Water Absorb made Judgment useless!");
+            MESSAGE("The opposing Vaporeon's Water Absorb made Judgment useless!");
         else if (move == MOVE_TECHNO_BLAST)
-            MESSAGE("The opposing Cutemon's Water Absorb made Techno Blast useless!");
+            MESSAGE("The opposing Vaporeon's Water Absorb made Techno Blast useless!");
         else if (move == MOVE_MULTI_ATTACK)
-            MESSAGE("The opposing Cutemon's Water Absorb made Multi-Attack useless!");
+            MESSAGE("The opposing Vaporeon's Water Absorb made Multi-Attack useless!");
     }
 }
 
@@ -150,14 +150,14 @@ SINGLE_BATTLE_TEST("Galvanize doesn't affect Hidden Power's type")
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_HIDDEN_POWER) == EFFECT_HIDDEN_POWER);
         ASSUME(gTypesInfo[TYPE_ELECTRIC].isHiddenPowerType == TRUE);
-        ASSUME(gSpeciesInfo[SPECIES_BUDMON].types[0] == TYPE_GROUND);
-        PLAYER(SPECIES_MONIMON_ALOLA) { Ability(ABILITY_GALVANIZE); HPIV(31); AttackIV(31); DefenseIV(31); SpAttackIV(30); SpDefenseIV(31); SpeedIV(30); } // HP Water
-        OPPONENT(SPECIES_CUTEMON) { Ability(ABILITY_WATER_ABSORB); }
+        ASSUME(GetSpeciesType(SPECIES_DIGLETT, 0) == TYPE_GROUND);
+        PLAYER(SPECIES_GEODUDE_ALOLA) { Ability(ABILITY_GALVANIZE); HPIV(31); AttackIV(31); DefenseIV(31); SpAttackIV(30); SpDefenseIV(31); SpeedIV(30); } // HP Water
+        OPPONENT(SPECIES_VAPOREON) { Ability(ABILITY_WATER_ABSORB); }
     } WHEN {
         TURN { MOVE(player, MOVE_HIDDEN_POWER); }
     } SCENE {
         NOT { ANIMATION(ANIM_TYPE_MOVE, MOVE_HIDDEN_POWER, player); }
-        MESSAGE("The opposing Cutemon's Water Absorb made Hidden Power useless!");
+        MESSAGE("The opposing Vaporeon's Water Absorb made Hidden Power useless!");
     }
 }
 
@@ -165,5 +165,5 @@ TO_DO_BATTLE_TEST("Galvanize doesn't affect Tera Starstorm's type");
 TO_DO_BATTLE_TEST("Galvanize doesn't affect Max Strike's type");
 TO_DO_BATTLE_TEST("Galvanize doesn't affect Terrain Pulse's type");
 TO_DO_BATTLE_TEST("Galvanize doesn't affect damaging Z-Move types");
-TO_DO_BATTLE_TEST("(DYNAMAX) Galvanize turns Max Strike into Max Lightning when not used by Gigantamax Petitmon/Toxtricity");
-//TO_DO_BATTLE_TEST("(DYNAMAX) Galvanize doesn't turn Max Strike into Max Lightning when used by Gigantamax Petitmon/Toxtricity, instead becoming G-Max Volt Crash/Stun Shock"); // Marked in Bulbapedia as "needs research", so this assumes that it behaves like Pixilate.
+TO_DO_BATTLE_TEST("(DYNAMAX) Galvanize turns Max Strike into Max Lightning when not used by Gigantamax Pikachu/Toxtricity");
+//TO_DO_BATTLE_TEST("(DYNAMAX) Galvanize doesn't turn Max Strike into Max Lightning when used by Gigantamax Pikachu/Toxtricity, instead becoming G-Max Volt Crash/Stun Shock"); // Marked in Bulbapedia as "needs research", so this assumes that it behaves like Pixilate.

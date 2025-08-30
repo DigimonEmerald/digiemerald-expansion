@@ -3,14 +3,14 @@
 
 SINGLE_BATTLE_TEST("Sand Rush prevents damage from sandstorm")
 {
-    u32 type1 = gSpeciesInfo[SPECIES_DRAGOMON].types[0];
-    u32 type2 = gSpeciesInfo[SPECIES_DRAGOMON].types[1];
+    u32 type1 = GetSpeciesType(SPECIES_STOUTLAND, 0);
+    u32 type2 = GetSpeciesType(SPECIES_STOUTLAND, 1);
     GIVEN {
         ASSUME(type1 != TYPE_ROCK && type2 != TYPE_ROCK);
         ASSUME(type1 != TYPE_GROUND && type2 != TYPE_GROUND);
         ASSUME(type1 != TYPE_STEEL && type2 != TYPE_STEEL);
-        PLAYER(SPECIES_DRAGOMON) { Ability(ABILITY_SAND_RUSH); }
-        OPPONENT(SPECIES_LOPMON_X);
+        PLAYER(SPECIES_STOUTLAND) { Ability(ABILITY_SAND_RUSH); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_SANDSTORM); }
     } SCENE {
@@ -21,8 +21,8 @@ SINGLE_BATTLE_TEST("Sand Rush prevents damage from sandstorm")
 SINGLE_BATTLE_TEST("Sand Rush doubles speed from sandstorm")
 {
     GIVEN {
-        PLAYER(SPECIES_POYOMON) { Ability(ABILITY_SAND_RUSH); Speed(100); }
-        OPPONENT(SPECIES_LOPMON_X) { Speed(199); }
+        PLAYER(SPECIES_SANDSLASH) { Ability(ABILITY_SAND_RUSH); Speed(100); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(199); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_SANDSTORM); }
         TURN { MOVE(player, MOVE_CELEBRATE); MOVE(opponent, MOVE_CELEBRATE); }
@@ -37,8 +37,8 @@ SINGLE_BATTLE_TEST("Sand Rush doubles speed from sandstorm")
 SINGLE_BATTLE_TEST("Sand Rush doesn't double speed if Cloud Nine/Air Lock is on the field")
 {
     GIVEN {
-        PLAYER(SPECIES_POYOMON) { Ability(ABILITY_SAND_RUSH); Speed(100); }
-        OPPONENT(SPECIES_DEMMERAMON) { Speed(199); Ability(ABILITY_CLOUD_NINE); }
+        PLAYER(SPECIES_SANDSLASH) { Ability(ABILITY_SAND_RUSH); Speed(100); }
+        OPPONENT(SPECIES_GOLDUCK) { Speed(199); Ability(ABILITY_CLOUD_NINE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_SANDSTORM); }
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_CELEBRATE); }

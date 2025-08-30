@@ -3,24 +3,20 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_METRONOME].effect == EFFECT_METRONOME);
+    ASSUME(GetMoveEffect(MOVE_METRONOME) == EFFECT_METRONOME);
 }
 
 SINGLE_BATTLE_TEST("Metronome picks a random move")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_METRONOME, WITH_RNG(RNG_METRONOME, MOVE_SCRATCH)); }
     } SCENE {
-        MESSAGE("Lopmonx used Metronome!");
+        MESSAGE("Wobbuffet used Metronome!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_METRONOME, player);
-<<<<<<< HEAD
-        MESSAGE("Lopmonx used Scratch!");
-=======
         MESSAGE("Waggling a finger let it use Scratch!");
->>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
         HP_BAR(opponent);
     }
@@ -29,25 +25,20 @@ SINGLE_BATTLE_TEST("Metronome picks a random move")
 SINGLE_BATTLE_TEST("Metronome's called powder move fails against Grass Types")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_POISON_POWDER].powderMove);
-        ASSUME(gSpeciesInfo[SPECIES_BETAMON].types[0] == TYPE_GRASS);
-        ASSUME(gMovesInfo[MOVE_POISON_POWDER].effect == EFFECT_POISON);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_BETAMON);
+        ASSUME(IsPowderMove(MOVE_POISON_POWDER));
+        ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_GRASS);
+        ASSUME(GetMoveEffect(MOVE_POISON_POWDER) == EFFECT_NON_VOLATILE_STATUS);
+        ASSUME(GetMoveNonVolatileStatus(MOVE_POISON_POWDER) == MOVE_EFFECT_POISON);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_TANGELA);
     } WHEN {
         TURN { MOVE(player, MOVE_METRONOME, WITH_RNG(RNG_METRONOME, MOVE_POISON_POWDER)); }
     } SCENE {
-        MESSAGE("Lopmonx used Metronome!");
+        MESSAGE("Wobbuffet used Metronome!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_METRONOME, player);
-<<<<<<< HEAD
-        MESSAGE("Lopmonx used PoisonPowder!");
-        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_POISON_POWDER, player);
-        MESSAGE("It doesn't affect Foe Betamon…");
-=======
         MESSAGE("Waggling a finger let it use Poison Powder!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_POISON_POWDER, player);
-        MESSAGE("It doesn't affect the opposing Betamon…");
->>>>>>> upstream/master
+        MESSAGE("It doesn't affect the opposing Tangela…");
         NOT STATUS_ICON(opponent, poison: TRUE);
     }
 }
@@ -55,19 +46,15 @@ SINGLE_BATTLE_TEST("Metronome's called powder move fails against Grass Types")
 SINGLE_BATTLE_TEST("Metronome's called multi-hit move hits multiple times")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_ROCK_BLAST].effect == EFFECT_MULTI_HIT);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        ASSUME(GetMoveEffect(MOVE_ROCK_BLAST) == EFFECT_MULTI_HIT);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_METRONOME, WITH_RNG(RNG_METRONOME, MOVE_ROCK_BLAST)); }
     } SCENE {
-        MESSAGE("Lopmonx used Metronome!");
+        MESSAGE("Wobbuffet used Metronome!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_METRONOME, player);
-<<<<<<< HEAD
-        MESSAGE("Lopmonx used Rock Blast!");
-=======
         MESSAGE("Waggling a finger let it use Rock Blast!");
->>>>>>> upstream/master
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROCK_BLAST, player);
         HP_BAR(opponent);
         MESSAGE("The Pokémon was hit 5 time(s)!");

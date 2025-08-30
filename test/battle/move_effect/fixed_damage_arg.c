@@ -3,18 +3,18 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_SONIC_BOOM].effect == EFFECT_FIXED_DAMAGE_ARG);
+    ASSUME(GetMoveEffect(MOVE_SONIC_BOOM) == EFFECT_FIXED_HP_DAMAGE);
 }
 
 SINGLE_BATTLE_TEST("Sonic Boom deals fixed damage", s16 damage)
 {
     u16 mon;
-    PARAMETRIZE { mon = SPECIES_CHOROMON; }
-    PARAMETRIZE { mon = SPECIES_BLKGATOMON; }
-    
+    PARAMETRIZE { mon = SPECIES_RATTATA; }
+    PARAMETRIZE { mon = SPECIES_ARON; }
+
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SONIC_BOOM].argument == 20);
-        PLAYER(SPECIES_LOPMONX);
+        ASSUME(GetMoveFixedHPDamage(MOVE_SONIC_BOOM) == 20);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(mon);
     } WHEN {
         TURN { MOVE(player, MOVE_SONIC_BOOM); }
@@ -32,12 +32,12 @@ TO_DO_BATTLE_TEST("Sonic Boom affects ghost types (Gen1)")
 SINGLE_BATTLE_TEST("Sonic Boom doesn't affect ghost types (Gen2+)")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_TOKOMON_X);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_GASTLY);
     } WHEN {
         TURN { MOVE(player, MOVE_SONIC_BOOM); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SONIC_BOOM, player);
-        MESSAGE("It doesn't affect the opposing Tokomon_x…");
+        MESSAGE("It doesn't affect the opposing Gastly…");
     }
 }

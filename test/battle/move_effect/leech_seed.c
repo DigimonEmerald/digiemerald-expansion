@@ -10,18 +10,14 @@ SINGLE_BATTLE_TEST("Leech Seed doesn't affect Grass-type Pokémon")
 {
     PASSES_RANDOMLY(90, 100, RNG_ACCURACY);
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_ZERIMON].types[0] == TYPE_GRASS);
-        PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_ZERIMON);
+        ASSUME(GetSpeciesType(SPECIES_ODDISH, 0) == TYPE_GRASS);
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_ODDISH);
     } WHEN {
         TURN { MOVE(player, MOVE_LEECH_SEED); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_LEECH_SEED, player);
-<<<<<<< HEAD
-        MESSAGE("It doesn't affect Foe Zerimon…");
-=======
-        MESSAGE("It doesn't affect the opposing Zerimon…");
->>>>>>> upstream/master
+        MESSAGE("It doesn't affect the opposing Oddish…");
     }
 }
 
@@ -31,8 +27,8 @@ SINGLE_BATTLE_TEST("Leech Seeded targets lose 1/8 of its max HP every turn and g
     s16 healed;
 
     GIVEN {
-        PLAYER(SPECIES_EXVEEMON) { HP(1); }
-        OPPONENT(SPECIES_TANEMON);
+        PLAYER(SPECIES_WYNAUT) { HP(1); }
+        OPPONENT(SPECIES_SHELLDER);
     } WHEN {
         TURN { MOVE(player, MOVE_LEECH_SEED); }
         TURN {}
@@ -50,8 +46,8 @@ SINGLE_BATTLE_TEST("Leech Seeded targets lose 1/8 of its max HP every turn and g
 SINGLE_BATTLE_TEST("Leech Seed recovery is prevented by Heal Block")
 {
     GIVEN {
-        PLAYER(SPECIES_EXVEEMON) { HP(1); }
-        OPPONENT(SPECIES_TANEMON);
+        PLAYER(SPECIES_WYNAUT) { HP(1); }
+        OPPONENT(SPECIES_SHELLDER);
     } WHEN {
         TURN { MOVE(opponent, MOVE_HEAL_BLOCK); MOVE(player, MOVE_LEECH_SEED); }
     } SCENE {
@@ -65,10 +61,10 @@ SINGLE_BATTLE_TEST("Leech Seed recovery is prevented by Heal Block")
 DOUBLE_BATTLE_TEST("Leech Seed will drain HP based on speed of the drained mon")
 {
     GIVEN {
-        PLAYER(SPECIES_EXVEEMON) { Speed(1); }
-        PLAYER(SPECIES_LOPMON_X) { Speed(2); }
-        OPPONENT(SPECIES_EXVEEMON) { Speed(3); }
-        OPPONENT(SPECIES_LOPMON_X) { Speed(4); }
+        PLAYER(SPECIES_WYNAUT) { Speed(1); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(2); }
+        OPPONENT(SPECIES_WYNAUT) { Speed(3); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(4); }
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_LEECH_SEED, target: opponentLeft);

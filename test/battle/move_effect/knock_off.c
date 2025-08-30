@@ -9,27 +9,20 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Knock Off knocks a healing berry before it has the chance to activate")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_SITRUS_BERRY); MaxHP(500); HP(255); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_SITRUS_BERRY); MaxHP(500); HP(255); }
     } WHEN {
         TURN { MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, player);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-<<<<<<< HEAD
-            MESSAGE("Foe Lopmonx's Sitrus Berry restored health!");
+            MESSAGE("The opposing Wobbuffet restored its health using its Sitrus Berry!");
         }
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF);
-        MESSAGE("Lopmonx knocked off Foe Lopmonx's Sitrus Berry!");
-=======
-            MESSAGE("The opposing Lopmonx restored its health using its Sitrus Berry!");
-        }
-        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF);
-        MESSAGE("Lopmonx knocked off the opposing Lopmonx's Sitrus Berry!");
+        MESSAGE("Wobbuffet knocked off the opposing Wobbuffet's Sitrus Berry!");
     } THEN {
         EXPECT(opponent->item == ITEM_NONE);
->>>>>>> upstream/master
     }
 }
 
@@ -41,8 +34,8 @@ SINGLE_BATTLE_TEST("Knock Off activates after Rocky Helmet and Weakness Policy")
     PARAMETRIZE { item = ITEM_ROCKY_HELMET; }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Item(item); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(item); }
     } WHEN {
         TURN { MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
@@ -50,23 +43,13 @@ SINGLE_BATTLE_TEST("Knock Off activates after Rocky Helmet and Weakness Policy")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
         if (item == ITEM_WEAKNESS_POLICY) {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE);
-<<<<<<< HEAD
-            MESSAGE("Using WeaknssPolicy, the Attack of Foe Lopmonx sharply rose!");
-            MESSAGE("Using WeaknssPolicy, the Sp. Atk of Foe Lopmonx sharply rose!");
+            MESSAGE("Using Weakness Policy, the Attack of the opposing Wobbuffet sharply rose!");
+            MESSAGE("Using Weakness Policy, the Sp. Atk of the opposing Wobbuffet sharply rose!");
         } else if (item == ITEM_ROCKY_HELMET) {
             HP_BAR(player);
-            MESSAGE("Lopmonx was hurt by Foe Lopmonx's Rocky Helmet!");
+            MESSAGE("Wobbuffet was hurt by the opposing Wobbuffet's Rocky Helmet!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF);
-            MESSAGE("Lopmonx knocked off Foe Lopmonx's Rocky Helmet!");
-=======
-            MESSAGE("Using Weakness Policy, the Attack of the opposing Lopmonx sharply rose!");
-            MESSAGE("Using Weakness Policy, the Sp. Atk of the opposing Lopmonx sharply rose!");
-        } else if (item == ITEM_ROCKY_HELMET) {
-            HP_BAR(player);
-            MESSAGE("Lopmonx was hurt by the opposing Lopmonx's Rocky Helmet!");
-            ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF);
-            MESSAGE("Lopmonx knocked off the opposing Lopmonx's Rocky Helmet!");
->>>>>>> upstream/master
+            MESSAGE("Wobbuffet knocked off the opposing Wobbuffet's Rocky Helmet!");
         }
     } THEN {
         EXPECT(opponent->item == ITEM_NONE);
@@ -81,8 +64,8 @@ SINGLE_BATTLE_TEST("Knock Off deals additional damage to opponents holding an it
     PARAMETRIZE { item = ITEM_LEFTOVERS; }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Item(item); };
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(item); };
     } WHEN {
         TURN { MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
@@ -104,8 +87,8 @@ SINGLE_BATTLE_TEST("Knock Off deals additional damage to opponents holding an it
 SINGLE_BATTLE_TEST("Knock Off does not remove items through Substitute")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_LEFTOVERS); };
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_LEFTOVERS); };
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUBSTITUTE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
@@ -135,8 +118,8 @@ SINGLE_BATTLE_TEST("Knock Off does not remove items through Substitute even if i
 SINGLE_BATTLE_TEST("Knock Off does not remove items through Protect")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMON_X);
-        OPPONENT(SPECIES_LOPMON_X) { Item(ITEM_LEFTOVERS); };
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_LEFTOVERS); };
     } WHEN {
         TURN { MOVE(opponent, MOVE_PROTECT); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
@@ -153,9 +136,9 @@ SINGLE_BATTLE_TEST("Knock Off does not remove items if target is immune")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_ELECTRIFY) == EFFECT_ELECTRIFY);
-        ASSUME(gSpeciesInfo[SPECIES_RENAMON].types[0] == TYPE_GROUND || gSpeciesInfo[SPECIES_RENAMON].types[1] == TYPE_GROUND);
-        PLAYER(SPECIES_LOPMON_X);
-        OPPONENT(SPECIES_RENAMON) { Item(ITEM_LEFTOVERS); };
+        ASSUME(GetSpeciesType(SPECIES_DONPHAN, 0) == TYPE_GROUND || GetSpeciesType(SPECIES_DONPHAN, 1) == TYPE_GROUND);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_DONPHAN) { Item(ITEM_LEFTOVERS); };
     } WHEN {
         TURN { MOVE(opponent, MOVE_ELECTRIFY); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
@@ -171,17 +154,17 @@ SINGLE_BATTLE_TEST("Knock Off does not remove items if target is immune")
 SINGLE_BATTLE_TEST("Recycle cannot recover an item removed by Knock Off")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_LEFTOVERS); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_LEFTOVERS); }
     } WHEN {
         TURN { MOVE(player, MOVE_KNOCK_OFF);
                MOVE(opponent, MOVE_RECYCLE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF);
-        MESSAGE("Lopmonx knocked off the opposing Lopmonx's Leftovers!");
+        MESSAGE("Wobbuffet knocked off the opposing Wobbuffet's Leftovers!");
 
-        MESSAGE("The opposing Lopmonx used Recycle!");
+        MESSAGE("The opposing Wobbuffet used Recycle!");
         MESSAGE("But it failed!");
     } THEN {
         EXPECT(opponent->item == ITEM_NONE);
@@ -191,8 +174,8 @@ SINGLE_BATTLE_TEST("Recycle cannot recover an item removed by Knock Off")
 SINGLE_BATTLE_TEST("Knock Off does not prevent targets from receiving another item in Gen 5+")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Item(ITEM_LEFTOVERS); }
-        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_LEFTOVERS); }
+        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_LEFTOVERS); }
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_LEFTOVERS); }
     } WHEN {
         TURN { MOVE(player, MOVE_KNOCK_OFF); }
         TURN { MOVE(player, MOVE_BESTOW); }
@@ -200,12 +183,12 @@ SINGLE_BATTLE_TEST("Knock Off does not prevent targets from receiving another it
         // turn 1
         ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF);
-        MESSAGE("Lopmonx knocked off the opposing Lopmonx's Leftovers!");
+        MESSAGE("Wobbuffet knocked off the opposing Wobbuffet's Leftovers!");
         // turn 2
         if (B_KNOCK_OFF_REMOVAL >= GEN_5) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_BESTOW, player);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT);
-            MESSAGE("The opposing Lopmonx restored a little HP using its Leftovers!");
+            MESSAGE("The opposing Wobbuffet restored a little HP using its Leftovers!");
         } else {
             NOT { ANIMATION(ANIM_TYPE_MOVE, MOVE_BESTOW, player); }
             MESSAGE("But it failed!");
@@ -222,8 +205,8 @@ SINGLE_BATTLE_TEST("Knock Off does not prevent targets from receiving another it
 SINGLE_BATTLE_TEST("Knock Off triggers Unburden")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Speed(60); }
-        OPPONENT(SPECIES_LOPMONX) { Ability(ABILITY_UNBURDEN); Item(ITEM_LEFTOVERS); Speed(50); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(60); }
+        OPPONENT(SPECIES_WOBBUFFET) { Ability(ABILITY_UNBURDEN); Item(ITEM_LEFTOVERS); Speed(50); }
     } WHEN {
         TURN { MOVE(player, MOVE_KNOCK_OFF); }
         TURN { MOVE(player, MOVE_CELEBRATE); }
@@ -231,10 +214,10 @@ SINGLE_BATTLE_TEST("Knock Off triggers Unburden")
         // turn 1
         ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF);
-        MESSAGE("Lopmonx knocked off the opposing Lopmonx's Leftovers!");
+        MESSAGE("Wobbuffet knocked off the opposing Wobbuffet's Leftovers!");
         // turn 2
-        MESSAGE("The opposing Lopmonx used Celebrate!");
-        MESSAGE("Lopmonx used Celebrate!");
+        MESSAGE("The opposing Wobbuffet used Celebrate!");
+        MESSAGE("Wobbuffet used Celebrate!");
     } THEN {
         EXPECT(opponent->item == ITEM_NONE);
     }
@@ -243,19 +226,19 @@ SINGLE_BATTLE_TEST("Knock Off triggers Unburden")
 DOUBLE_BATTLE_TEST("Knock Off does not trigger the opposing ally's Symbiosis")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Item(ITEM_LEFTOVERS); }
+        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_LEFTOVERS); }
         PLAYER(SPECIES_FLORGES) { Item(ITEM_LEFTOVERS); }
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_KNOCK_OFF, target: playerLeft); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, opponentLeft);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ITEM_KNOCKOFF);
-        MESSAGE("The opposing Lopmonx knocked off Lopmonx's Leftovers!");
+        MESSAGE("The opposing Wobbuffet knocked off Wobbuffet's Leftovers!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT);
-            MESSAGE("Lopmonx restored its health using its Leftovers!");
+            MESSAGE("Wobbuffet restored its health using its Leftovers!");
         }
     } THEN {
         EXPECT(playerLeft->item == ITEM_NONE);
@@ -265,129 +248,128 @@ DOUBLE_BATTLE_TEST("Knock Off does not trigger the opposing ally's Symbiosis")
 SINGLE_BATTLE_TEST("Knock Off does knock off Mega Stones from Pokemon that don't actually use them")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_EXERMONITE); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_ABSOLITE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
-        MESSAGE("Lopmonx knocked off the opposing Lopmonx's Exermonite!");
+        MESSAGE("Wobbuffet knocked off the opposing Wobbuffet's Absolite!");
     }
 }
 
 SINGLE_BATTLE_TEST("Knock Off doesn't knock off Mega Stones from Pokemon that actually use them")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_EXERMON) { Item(ITEM_EXERMONITE); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_ABSOL) { Item(ITEM_ABSOLITE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
-        NOT MESSAGE("Lopmonx knocked off the opposing Exermon's Exermonite!");
+        NOT MESSAGE("Wobbuffet knocked off the opposing Absol's Absolite!");
     }
 }
 
 SINGLE_BATTLE_TEST("Knock Off does knock off Orbs for Primal Reversion from Pokemon that don't actually use them")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_RED_ORB); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_RED_ORB); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
-        MESSAGE("Lopmonx knocked off the opposing Lopmonx's Red Orb!");
+        MESSAGE("Wobbuffet knocked off the opposing Wobbuffet's Red Orb!");
     }
 }
 
 SINGLE_BATTLE_TEST("Knock Off doesn't knock off Orbs for Primal Reversion from Pokemon that actually use them")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_GEKOMON) { Item(ITEM_RED_ORB); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_GROUDON) { Item(ITEM_RED_ORB); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
-        NOT MESSAGE("Lopmonx knocked off the opposing Gekomon's Red Orb!");
+        NOT MESSAGE("Wobbuffet knocked off the opposing Groudon's Red Orb!");
     }
 }
 
 SINGLE_BATTLE_TEST("Knock Off doesn't knock off Z-Crystals")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_ELECTRIUM_Z); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_ELECTRIUM_Z); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
-        NOT MESSAGE("Lopmonx knocked off the opposing Lopmonx's Electrium Z!");
+        NOT MESSAGE("Wobbuffet knocked off the opposing Wobbuffet's Electrium Z!");
     }
 }
 
 SINGLE_BATTLE_TEST("Knock Off doesn't knock off Ultranecrozium Z from Pokemon that actually use it")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_NECROZMA_DUSK_MANE) { Item(ITEM_ULTRANECROZIUM_Z); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
-        NOT MESSAGE("Lopmonx knocked off the opposing Necrozma's Ultranecrozium Z!");
+        NOT MESSAGE("Wobbuffet knocked off the opposing Necrozma's Ultranecrozium Z!");
     }
 }
 
 SINGLE_BATTLE_TEST("Knock Off does knock off other form-change hold items from Pokemon that don't actually use them")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_SKY_PLATE); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_SKY_PLATE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
-        MESSAGE("Lopmonx knocked off the opposing Lopmonx's Sky Plate!");
+        MESSAGE("Wobbuffet knocked off the opposing Wobbuffet's Sky Plate!");
     }
 }
 
 SINGLE_BATTLE_TEST("Knock Off doesn't knock off other form-change hold items from Pokemon that actually use them")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_ARCEUS) { Item(ITEM_SKY_PLATE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
-        NOT MESSAGE("Lopmonx knocked off the opposing Arceus's Sky Plate!");
+        NOT MESSAGE("Wobbuffet knocked off the opposing Arceus's Sky Plate!");
     }
 }
 
 SINGLE_BATTLE_TEST("Knock Off does knock off begin-battle form-change hold items from Pokemon that don't actually use them")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_RUSTED_SHIELD); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_RUSTED_SHIELD); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
-        MESSAGE("Lopmonx knocked off the opposing Lopmonx's Rusted Shield!");
+        MESSAGE("Wobbuffet knocked off the opposing Wobbuffet's Rusted Shield!");
     }
 }
 
 SINGLE_BATTLE_TEST("Knock Off doesn't knock off begin-battle form-change hold items from Pokemon that actually use them")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_ZAMAZENTA_HERO) { Item(ITEM_RUSTED_SHIELD); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
-        NOT MESSAGE("Lopmonx knocked off the opposing Zamazenta's Rusted Shield!");
->>>>>>> upstream/master
+        NOT MESSAGE("Wobbuffet knocked off the opposing Zamazenta's Rusted Shield!");
     }
 }
 
 SINGLE_BATTLE_TEST("Knock Off does not activate if user faints")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { HP(1); }
-        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_ROCKY_HELMET); }
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_ROCKY_HELMET); }
     } WHEN {
         TURN { MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {
@@ -403,38 +385,8 @@ SINGLE_BATTLE_TEST("Knock Off does not activate if user faints")
 SINGLE_BATTLE_TEST("Knock Off doesn't remove item if it's prevented by Sticky Hold")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_SUNMON) { MaxHP(100); HP(51); Item(ITEM_ORAN_BERRY); Ability(ABILITY_STICKY_HOLD); }
-    } WHEN {
-        TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_KNOCK_OFF); }
-    } SCENE {
-        ABILITY_POPUP(opponent, ABILITY_STICKY_HOLD);
-        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-    }
-}
-
-SINGLE_BATTLE_TEST("Knock Off does not activate if user faints")
-{
-    GIVEN {
-        PLAYER(SPECIES_LOPMONX) { HP(1); }
-        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_ROCKY_HELMET); }
-    } WHEN {
-        TURN { MOVE(player, MOVE_KNOCK_OFF); }
-    } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, player);
-        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
-        MESSAGE("Wobbuffet was hurt by the opposing Wobbuffet's Rocky Helmet!");
-        MESSAGE("Wobbuffet fainted!");
-    } THEN {
-        EXPECT(opponent->item == ITEM_ROCKY_HELMET);
-    }
-}
-
-SINGLE_BATTLE_TEST("Knock Off doesn't remove item if it's prevented by Sticky Hold")
-{
-    GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_SUNMON) { MaxHP(100); HP(51); Item(ITEM_ORAN_BERRY); Ability(ABILITY_STICKY_HOLD); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_MUK) { MaxHP(100); HP(51); Item(ITEM_ORAN_BERRY); Ability(ABILITY_STICKY_HOLD); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_KNOCK_OFF); }
     } SCENE {

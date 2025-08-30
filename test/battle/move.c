@@ -9,11 +9,11 @@ SINGLE_BATTLE_TEST("Accuracy controls the proportion of misses")
     PARAMETRIZE { move = MOVE_HYDRO_PUMP; }
     PARAMETRIZE { move = MOVE_RAZOR_LEAF; }
     PARAMETRIZE { move = MOVE_SCRATCH; }
-    ASSUME(0 < gMovesInfo[move].accuracy && gMovesInfo[move].accuracy <= 100);
-    PASSES_RANDOMLY(gMovesInfo[move].accuracy, 100, RNG_ACCURACY);
+    ASSUME(0 < GetMoveAccuracy(move) && GetMoveAccuracy(move) <= 100);
+    PASSES_RANDOMLY(GetMoveAccuracy(move), 100, RNG_ACCURACY);
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
@@ -30,8 +30,8 @@ SINGLE_BATTLE_TEST("AdditionalEffect.chance controls the proportion of secondary
     ASSUME(MoveHasAdditionalEffect(move, MOVE_EFFECT_PARALYSIS) == TRUE);
     PASSES_RANDOMLY(chance, 100, RNG_SECONDARY_EFFECT);
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
@@ -42,22 +42,22 @@ SINGLE_BATTLE_TEST("AdditionalEffect.chance controls the proportion of secondary
 SINGLE_BATTLE_TEST("Turn order is determined by priority")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_QUICK_ATTACK].priority > gMovesInfo[MOVE_TACKLE].priority);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        ASSUME(GetMovePriority(MOVE_QUICK_ATTACK) > GetMovePriority(MOVE_SCRATCH));
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(player, MOVE_QUICK_ATTACK); MOVE(opponent, MOVE_TACKLE); }
+        TURN { MOVE(player, MOVE_QUICK_ATTACK); MOVE(opponent, MOVE_SCRATCH); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_QUICK_ATTACK, player);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
     }
 }
 
 SINGLE_BATTLE_TEST("Turn order is determined by Speed if priority ties")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Speed(2); }
-        OPPONENT(SPECIES_LOPMONX) { Speed(1); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(2); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_QUICK_ATTACK); MOVE(opponent, MOVE_QUICK_ATTACK); }
     } SCENE {
@@ -70,8 +70,8 @@ SINGLE_BATTLE_TEST("Turn order is determined randomly if priority and Speed tie 
 {
     PASSES_RANDOMLY(1, 2, RNG_SPEED_TIE);
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Speed(1); }
-        OPPONENT(SPECIES_LOPMONX) { Speed(1); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_QUICK_ATTACK); MOVE(opponent, MOVE_QUICK_ATTACK); }
     } SCENE {
@@ -86,14 +86,14 @@ DOUBLE_BATTLE_TEST("Turn order is determined randomly if priority and Speed tie 
     PASSES_RANDOMLY(24, 24, RNG_SPEED_TIE);
 
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_ENDEAVOR].effect == EFFECT_ENDEAVOR);
-        ASSUME(gMovesInfo[MOVE_LIFE_DEW].effect == EFFECT_JUNGLE_HEALING);
-        ASSUME(gMovesInfo[MOVE_CRUSH_GRIP].effect == EFFECT_POWER_BASED_ON_TARGET_HP);
-        ASSUME(gMovesInfo[MOVE_SUPER_FANG].effect == EFFECT_SUPER_FANG);
-        PLAYER(SPECIES_LOPMONX) { MaxHP(480); HP(360); Defense(100); Speed(1); }
-        PLAYER(SPECIES_EXVEEMON) { Speed(1); }
-        OPPONENT(SPECIES_LOPMONX) { Attack(100); Speed(1); }
-        OPPONENT(SPECIES_EXVEEMON) { Speed(1); }
+        ASSUME(GetMoveEffect(MOVE_ENDEAVOR) == EFFECT_ENDEAVOR);
+        ASSUME(GetMoveEffect(MOVE_LIFE_DEW) == EFFECT_LIFE_DEW);
+        ASSUME(GetMoveEffect(MOVE_CRUSH_GRIP) == EFFECT_POWER_BASED_ON_TARGET_HP);
+        ASSUME(GetMoveEffect(MOVE_SUPER_FANG) == EFFECT_FIXED_PERCENT_DAMAGE);
+        PLAYER(SPECIES_WOBBUFFET) { MaxHP(480); HP(360); Defense(100); Speed(1); }
+        PLAYER(SPECIES_WYNAUT) { Speed(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { Attack(100); Speed(1); }
+        OPPONENT(SPECIES_WYNAUT) { Speed(1); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ENDEAVOR, target: opponentLeft); MOVE(playerRight, MOVE_LIFE_DEW); MOVE(opponentLeft, MOVE_CRUSH_GRIP, target: playerLeft, WITH_RNG(RNG_DAMAGE_MODIFIER, 0)); MOVE(opponentRight, MOVE_SUPER_FANG, target: playerLeft); }
     } THEN {
@@ -134,60 +134,24 @@ DOUBLE_BATTLE_TEST("Turn order is determined randomly if priority and Speed tie 
     }
 }
 
-SINGLE_BATTLE_TEST("Critical hits occur at a 1/24 rate")
-{
-    PASSES_RANDOMLY(1, 24, RNG_CRITICAL_HIT);
-    GIVEN {
-<<<<<<< HEAD
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
-=======
-        ASSUME(B_CRIT_CHANCE >= GEN_7);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
->>>>>>> upstream/master
-    } WHEN {
-        TURN { MOVE(player, MOVE_SCRATCH); }
-    } SCENE {
-        MESSAGE("A critical hit!");
-    }
-}
-
-SINGLE_BATTLE_TEST("Slash's critical hits occur at a 1/8 rate")
-{
-    PASSES_RANDOMLY(1, 8, RNG_CRITICAL_HIT);
-    GIVEN {
-<<<<<<< HEAD
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
-=======
-        ASSUME(B_CRIT_CHANCE >= GEN_7);
-        ASSUME(gMovesInfo[MOVE_SLASH].criticalHitStage == 1);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
->>>>>>> upstream/master
-    } WHEN {
-        TURN { MOVE(player, MOVE_SLASH); }
-    } SCENE {
-        MESSAGE("A critical hit!");
-    }
-}
-
-SINGLE_BATTLE_TEST("Critical hits deal 50% more damage", s16 damage)
+SINGLE_BATTLE_TEST("Critical hits deal 100% (Gen 1-5) or 50% (Gen 6+) more damage", s16 damage)
 {
     bool32 criticalHit;
-    PARAMETRIZE { criticalHit = FALSE; }
-    PARAMETRIZE { criticalHit = TRUE; }
+    u32 genConfig;
+    PARAMETRIZE { criticalHit = FALSE; genConfig = GEN_5; }
+    PARAMETRIZE { criticalHit = TRUE;  genConfig = GEN_5; }
+    PARAMETRIZE { criticalHit = TRUE;  genConfig = GEN_6; }
     GIVEN {
-        ASSUME(B_CRIT_MULTIPLIER >= GEN_6);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        WITH_CONFIG(GEN_CONFIG_CRIT_MULTIPLIER, genConfig);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH, criticalHit: criticalHit); }
     } SCENE {
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
-        EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
+        EXPECT_MUL_EQ(results[0].damage, Q_4_12(2.0), results[1].damage);
+        EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[2].damage);
     }
 }
 
@@ -198,9 +162,9 @@ SINGLE_BATTLE_TEST("Critical hits do not ignore positive stat stages", s16 damag
     PARAMETRIZE { move = MOVE_HOWL; }
     PARAMETRIZE { move = MOVE_TAIL_WHIP; }
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SCRATCH].category == DAMAGE_CATEGORY_PHYSICAL);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        ASSUME(GetMoveCategory(MOVE_SCRATCH) == DAMAGE_CATEGORY_PHYSICAL);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, move); }
         TURN { MOVE(player, MOVE_SCRATCH, criticalHit: TRUE); }
@@ -219,9 +183,9 @@ SINGLE_BATTLE_TEST("Critical hits ignore negative stat stages", s16 damage)
     PARAMETRIZE { move = MOVE_HARDEN; }
     PARAMETRIZE { move = MOVE_GROWL; }
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SCRATCH].category == DAMAGE_CATEGORY_PHYSICAL);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        ASSUME(GetMoveCategory(MOVE_SCRATCH) == DAMAGE_CATEGORY_PHYSICAL);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, move); }
         TURN { MOVE(player, MOVE_SCRATCH, criticalHit: TRUE); }
@@ -236,67 +200,67 @@ SINGLE_BATTLE_TEST("Critical hits ignore negative stat stages", s16 damage)
 DOUBLE_BATTLE_TEST("Moves fail if they target the partner but they faint before the move could have been used")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_LOPMONX) { HP(1); }
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerRight); MOVE(playerLeft, MOVE_TACKLE, target: playerRight); }
+        TURN { MOVE(opponentLeft, MOVE_SCRATCH, target: playerRight); MOVE(playerLeft, MOVE_SCRATCH, target: playerRight); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
-        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerLeft);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponentLeft);
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, playerLeft);
     }
 }
 
 DOUBLE_BATTLE_TEST("Moves do not fail if an alive partner is the target")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_LOPMONX) { HP(1); }
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(playerLeft, MOVE_TACKLE, target: playerRight); }
+        TURN { MOVE(playerLeft, MOVE_SCRATCH, target: playerRight); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerLeft);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, playerLeft);
     }
 }
 
 DOUBLE_BATTLE_TEST("Moves fail if they target into a Pokémon that was fainted by the previous move")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_HYPER_VOICE].target == MOVE_TARGET_BOTH);
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_LOPMONX) { HP(1); }
-        OPPONENT(SPECIES_LOPMONX) { HP(1); }
-        OPPONENT(SPECIES_LOPMONX) { HP(1); }
-        OPPONENT(SPECIES_LOPMONX) { HP(1); }
-        OPPONENT(SPECIES_LOPMONX) { HP(1); }
+        ASSUME(GetMoveTarget(MOVE_HYPER_VOICE) == MOVE_TARGET_BOTH);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_HYPER_VOICE);
-            MOVE(playerRight, MOVE_TACKLE, target: opponentLeft);
+            MOVE(playerRight, MOVE_SCRATCH, target: opponentLeft);
             SEND_OUT(opponentLeft, 2);
             SEND_OUT(opponentRight, 3);
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HYPER_VOICE, playerLeft);
-        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, playerRight);
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, playerRight);
     }
 }
 
 DOUBLE_BATTLE_TEST("Moves that target the field are not going to fail if one mon fainted by the previous move")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SURF].target == MOVE_TARGET_FOES_AND_ALLY);
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_LOPMONX) { HP(1); }
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        ASSUME(GetMoveTarget(MOVE_SURF) == MOVE_TARGET_FOES_AND_ALLY);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponentLeft, MOVE_TACKLE, target: playerRight); MOVE(playerLeft, MOVE_SURF); }
+        TURN { MOVE(opponentLeft, MOVE_SCRATCH, target: playerRight); MOVE(playerLeft, MOVE_SURF); }
     } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_TACKLE, opponentLeft);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SURF, playerLeft);
     }
 }

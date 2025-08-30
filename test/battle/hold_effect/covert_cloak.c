@@ -50,7 +50,7 @@ SINGLE_BATTLE_TEST("Covert Cloak blocks secondary effects")
 >>>>>>> upstream/master:test/battle/hold_effect/covert_cloak.c
         }
     } THEN { // Can't find good way to test trapping
-        EXPECT(!(opponent->status2 & STATUS2_ESCAPE_PREVENTION));
+        EXPECT(!opponent->volatiles.escapePrevention);
     }
 }
 
@@ -95,8 +95,8 @@ SINGLE_BATTLE_TEST("Covert Cloak does not block primary effects")
         }
     } THEN { // Can't find good way to test trapping
         if (move == MOVE_JAW_LOCK) {
-            EXPECT(opponent->status2 & STATUS2_ESCAPE_PREVENTION);
-            EXPECT(player->status2 & STATUS2_ESCAPE_PREVENTION);
+            EXPECT(opponent->volatiles.escapePrevention);
+            EXPECT(player->volatiles.escapePrevention);
         }
     }
 }

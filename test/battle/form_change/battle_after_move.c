@@ -1,79 +1,11 @@
 #include "global.h"
 #include "test/battle.h"
 
-ASSUMPTIONS
-{
-    ASSUME(GetMoveEffect(MOVE_RELIC_SONG) == EFFECT_RELIC_SONG);
-    ASSUME(MoveHasAdditionalEffect(MOVE_RELIC_SONG, MOVE_EFFECT_SLEEP) == TRUE);
-}
-
-SINGLE_BATTLE_TEST("Relic Song has a 10% chance to put the target to sleep")
-{
-    PASSES_RANDOMLY(10, 100, RNG_SECONDARY_EFFECT);
-    GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
-    } WHEN {
-        TURN { MOVE(player, MOVE_RELIC_SONG); }
-    } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_RELIC_SONG, player);
-        HP_BAR(opponent);
-        ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, opponent);
-        STATUS_ICON(opponent, sleep: TRUE);
-    }
-}
-
-SINGLE_BATTLE_TEST("Relic Song is prevented by Soundproof")
-{
-    GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_XIAOMON) { Ability(ABILITY_SOUNDPROOF); }
-    } WHEN {
-        TURN { MOVE(player, MOVE_RELIC_SONG); }
-    } SCENE {
-        ABILITY_POPUP(opponent, ABILITY_SOUNDPROOF);
-        MESSAGE("The opposing Xiaomon's Soundproof blocks Relic Song!");
-        NONE_OF {
-            ANIMATION(ANIM_TYPE_MOVE, MOVE_RELIC_SONG, player);
-            HP_BAR(opponent);
-        }
-    }
-}
-
-SINGLE_BATTLE_TEST("Relic Song will become a Water-type move when used by a Pokémon with the Ability Liquid Voice")
-{
-    GIVEN {
-        PLAYER(SPECIES_RELEMON);
-        OPPONENT(SPECIES_POPPLIO) { Ability(ABILITY_LIQUID_VOICE); }
-    } WHEN {
-        TURN { MOVE(opponent, MOVE_RELIC_SONG); }
-    } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_RELIC_SONG, opponent);
-        HP_BAR(player);
-        MESSAGE("It's super effective!");
-    }
-}
-
-SINGLE_BATTLE_TEST("Relic Song is blocked by Throat Chop")
-{
-    GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
-    } WHEN {
-        TURN { MOVE(opponent, MOVE_THROAT_CHOP); MOVE(player, MOVE_RELIC_SONG); }
-    } SCENE {
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_THROAT_CHOP, opponent);
-        HP_BAR(player);
-        MESSAGE("The effects of Throat Chop prevent Lopmonx from using certain moves!");
-        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_RELIC_SONG, player);
-    }
-}
-
 SINGLE_BATTLE_TEST("Relic Song transforms Meloetta if used successfully")
 {
     GIVEN {
         PLAYER(SPECIES_MELOETTA_ARIA);
-        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_RELIC_SONG); }
     } SCENE {
@@ -88,8 +20,8 @@ SINGLE_BATTLE_TEST("Relic Song transforms Meloetta if used successfully")
 SINGLE_BATTLE_TEST("Relic Song does not transform Pokemon other than Meloetta")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_RELIC_SONG); }
     } SCENE {
@@ -97,10 +29,10 @@ SINGLE_BATTLE_TEST("Relic Song does not transform Pokemon other than Meloetta")
         HP_BAR(opponent);
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FORM_CHANGE, player);
-            MESSAGE("Lopmonx transformed!");
+            MESSAGE("Wobbuffet transformed!");
         }
     } THEN {
-        EXPECT_EQ(player->species, SPECIES_LOPMONX);
+        EXPECT_EQ(player->species, SPECIES_WOBBUFFET);
     }
 }
 
@@ -108,7 +40,7 @@ SINGLE_BATTLE_TEST("Relic Song transforms Meloetta twice if used successfully")
 {
     GIVEN {
         PLAYER(SPECIES_MELOETTA_ARIA);
-        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_RELIC_SONG); }
         TURN { MOVE(player, MOVE_RELIC_SONG); }
@@ -147,9 +79,9 @@ DOUBLE_BATTLE_TEST("Relic Song transforms once Meloetta in a double battle")
 {
     GIVEN {
         PLAYER(SPECIES_MELOETTA_ARIA);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_RELIC_SONG); }
     } SCENE {
@@ -166,7 +98,7 @@ SINGLE_BATTLE_TEST("Relic Song loses the form-changing effect with Sheer Force")
 {
     GIVEN {
         PLAYER(SPECIES_MELOETTA_ARIA);
-        OPPONENT(SPECIES_PUWAMON) { Ability(ABILITY_SHEER_FORCE); }
+        OPPONENT(SPECIES_NIDOKING) { Ability(ABILITY_SHEER_FORCE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SKILL_SWAP); MOVE(player, MOVE_RELIC_SONG); }
     } SCENE {
@@ -183,7 +115,7 @@ SINGLE_BATTLE_TEST("Relic Song transforms Meloetta after Magician was activated"
 {
     GIVEN {
         PLAYER(SPECIES_MELOETTA_ARIA);
-        OPPONENT(SPECIES_OMNIMON) { Ability(ABILITY_MAGICIAN); Item(ITEM_POTION); }
+        OPPONENT(SPECIES_DELPHOX) { Ability(ABILITY_MAGICIAN); Item(ITEM_POTION); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SKILL_SWAP); MOVE(player, MOVE_RELIC_SONG); }
     } SCENE {
@@ -191,7 +123,7 @@ SINGLE_BATTLE_TEST("Relic Song transforms Meloetta after Magician was activated"
         ANIMATION(ANIM_TYPE_MOVE, MOVE_RELIC_SONG, player);
         HP_BAR(opponent);
         ABILITY_POPUP(player, ABILITY_MAGICIAN);
-        MESSAGE("Meloetta stole the opposing Omnimon's Potion!");
+        MESSAGE("Meloetta stole the opposing Delphox's Potion!");
         MESSAGE("Meloetta transformed!");
     } THEN {
         EXPECT_EQ(player->species, SPECIES_MELOETTA_PIROUETTE);

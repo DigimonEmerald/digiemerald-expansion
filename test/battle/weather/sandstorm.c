@@ -7,12 +7,12 @@ SINGLE_BATTLE_TEST("Sandstorm deals 1/16 damage per turn")
     s16 sandstormDamage;
 
     GIVEN {
-        PLAYER(SPECIES_POYOMON);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_SANDSLASH);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN {MOVE(player, MOVE_SANDSTORM);}
     } SCENE {
-        MESSAGE("The opposing Lopmonx is buffeted by the sandstorm!");
+        MESSAGE("The opposing Wobbuffet is buffeted by the sandstorm!");
         HP_BAR(opponent, captureDamage: &sandstormDamage);
    } THEN { EXPECT_EQ(sandstormDamage, opponent->maxHP / 16); }
 }
@@ -23,9 +23,9 @@ SINGLE_BATTLE_TEST("Sandstorm multiplies the special defense of Rock-types by 1.
     PARAMETRIZE { move = MOVE_SANDSTORM; }
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SWIFT].category == DAMAGE_CATEGORY_SPECIAL);
-        PLAYER(SPECIES_LOPMONX) ;
-        OPPONENT(SPECIES_BIOTHUNMON);
+        ASSUME(GetMoveCategory(MOVE_SWIFT) == DAMAGE_CATEGORY_SPECIAL);
+        PLAYER(SPECIES_WOBBUFFET) ;
+        OPPONENT(SPECIES_NOSEPASS);
     } WHEN {
         TURN { MOVE(opponent, move); }
         TURN { MOVE(player, MOVE_SWIFT); }
@@ -39,28 +39,28 @@ SINGLE_BATTLE_TEST("Sandstorm multiplies the special defense of Rock-types by 1.
 SINGLE_BATTLE_TEST("Sandstorm damage does not hurt Ground, Rock, and Steel-type Pokémon")
 {
     u32 mon;
-    PARAMETRIZE { mon = SPECIES_POYOMON; }
-    PARAMETRIZE { mon = SPECIES_BIOTHUNMON; }
-    PARAMETRIZE { mon = SPECIES_GARURUMON; }
+    PARAMETRIZE { mon = SPECIES_SANDSLASH; }
+    PARAMETRIZE { mon = SPECIES_NOSEPASS; }
+    PARAMETRIZE { mon = SPECIES_REGISTEEL; }
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_POYOMON].types[0] == TYPE_GROUND);
-        ASSUME(gSpeciesInfo[SPECIES_BIOTHUNMON].types[0] == TYPE_ROCK);
-        ASSUME(gSpeciesInfo[SPECIES_GARURUMON].types[0] == TYPE_STEEL);
-        PLAYER(SPECIES_LOPMONX);
+        ASSUME(GetSpeciesType(SPECIES_SANDSLASH, 0) == TYPE_GROUND);
+        ASSUME(GetSpeciesType(SPECIES_NOSEPASS, 0) == TYPE_ROCK);
+        ASSUME(GetSpeciesType(SPECIES_REGISTEEL, 0) == TYPE_STEEL);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(mon);
     } WHEN {
         TURN { MOVE(player, MOVE_SANDSTORM); }
     } SCENE {
         switch (mon)
         {
-        case SPECIES_POYOMON:
-            NOT MESSAGE("The opposing Poyomon is buffeted by the sandstorm!");
+        case SPECIES_SANDSLASH:
+            NOT MESSAGE("The opposing Sandslash is buffeted by the sandstorm!");
             break;
-        case SPECIES_BIOTHUNMON:
-            NOT MESSAGE("The opposing Biothunmon is buffeted by the sandstorm!");
+        case SPECIES_NOSEPASS:
+            NOT MESSAGE("The opposing Nosepass is buffeted by the sandstorm!");
             break;
-        case SPECIES_GARURUMON:
-            NOT MESSAGE("The opposing Garurumon is buffeted by the sandstorm!");
+        case SPECIES_REGISTEEL:
+            NOT MESSAGE("The opposing Registeel is buffeted by the sandstorm!");
             break;
         }
     }
@@ -69,10 +69,10 @@ SINGLE_BATTLE_TEST("Sandstorm damage does not hurt Ground, Rock, and Steel-type 
 DOUBLE_BATTLE_TEST("Sandstorm deals damage based on turn order")
 {
     GIVEN {
-        PLAYER(SPECIES_PULSEMON) { Speed(4); }
-        PLAYER(SPECIES_EXVEEMON) { Speed(1); }
-        OPPONENT(SPECIES_LOPMONX) { Speed(2); }
-        OPPONENT(SPECIES_EXVEEMON) { Speed(3); }
+        PLAYER(SPECIES_PHANPY) { Speed(4); }
+        PLAYER(SPECIES_WYNAUT) { Speed(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
+        OPPONENT(SPECIES_WYNAUT) { Speed(3); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SANDSTORM); }
     } SCENE {
@@ -86,11 +86,28 @@ DOUBLE_BATTLE_TEST("Sandstorm deals damage based on turn order")
 SINGLE_BATTLE_TEST("Sandstorm damage rounds properly when maxHP < 16")
 {
     GIVEN {
-        PLAYER(SPECIES_HAZYAGUMON) { Level(1); MaxHP(11); HP(11); }
-        OPPONENT(SPECIES_POYOMON);
+        PLAYER(SPECIES_MAGIKARP) { Level(1); MaxHP(11); HP(11); }
+        OPPONENT(SPECIES_SANDSLASH);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SANDSTORM); }
     } SCENE {
         HP_BAR(player, damage: 1);
+    }
+}
+
+SINGLE_BATTLE_TEST("Sandstorm doesn't do damage when weather is negated")
+{
+    u32 type1 = GetSpeciesType(SPECIES_STOUTLAND, 0);
+    u32 type2 = GetSpeciesType(SPECIES_STOUTLAND, 1);
+    GIVEN {
+        ASSUME(type1 != TYPE_ROCK && type2 != TYPE_ROCK);
+        ASSUME(type1 != TYPE_GROUND && type2 != TYPE_GROUND);
+        ASSUME(type1 != TYPE_STEEL && type2 != TYPE_STEEL);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_GOLDUCK) { Ability(ABILITY_CLOUD_NINE); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_SANDSTORM); }
+    } SCENE {
+        NOT HP_BAR(player);
     }
 }

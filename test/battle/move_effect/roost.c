@@ -3,39 +3,39 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_ROOST].effect == EFFECT_ROOST);
-    ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[0] != TYPE_FLYING);
-    ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[1] != TYPE_FLYING);
+    ASSUME(GetMoveEffect(MOVE_ROOST) == EFFECT_ROOST);
+    ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) != TYPE_FLYING);
+    ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) != TYPE_FLYING);
     // One attack of each type to verify typelessness
-    ASSUME(gMovesInfo[MOVE_POUND].type == TYPE_NORMAL);
-    ASSUME(gMovesInfo[MOVE_KARATE_CHOP].type == TYPE_FIGHTING);
-    ASSUME(gMovesInfo[MOVE_GUST].type == TYPE_FLYING);
-    ASSUME(gMovesInfo[MOVE_POISON_STING].type == TYPE_POISON);
-    ASSUME(gMovesInfo[MOVE_EARTHQUAKE].type == TYPE_GROUND);
-    ASSUME(gMovesInfo[MOVE_ROCK_THROW].type == TYPE_ROCK);
-    ASSUME(gMovesInfo[MOVE_LEECH_LIFE].type == TYPE_BUG);
-    ASSUME(gMovesInfo[MOVE_LICK].type == TYPE_GHOST);
-    ASSUME(gMovesInfo[MOVE_STEEL_WING].type == TYPE_STEEL);
-    ASSUME(gMovesInfo[MOVE_EMBER].type == TYPE_FIRE);
-    ASSUME(gMovesInfo[MOVE_WATER_GUN].type == TYPE_WATER);
-    ASSUME(gMovesInfo[MOVE_VINE_WHIP].type == TYPE_GRASS);
-    ASSUME(gMovesInfo[MOVE_THUNDER_SHOCK].type == TYPE_ELECTRIC);
-    ASSUME(gMovesInfo[MOVE_CONFUSION].type == TYPE_PSYCHIC);
-    ASSUME(gMovesInfo[MOVE_ICE_BEAM].type == TYPE_ICE);
-    ASSUME(gMovesInfo[MOVE_DRAGON_BREATH].type == TYPE_DRAGON);
-    ASSUME(gMovesInfo[MOVE_BITE].type == TYPE_DARK);
-    ASSUME(gMovesInfo[MOVE_DISARMING_VOICE].type == TYPE_FAIRY);
+    ASSUME(GetMoveType(MOVE_POUND) == TYPE_NORMAL);
+    ASSUME(GetMoveType(MOVE_KARATE_CHOP) == TYPE_FIGHTING);
+    ASSUME(GetMoveType(MOVE_GUST) == TYPE_FLYING);
+    ASSUME(GetMoveType(MOVE_POISON_STING) == TYPE_POISON);
+    ASSUME(GetMoveType(MOVE_EARTHQUAKE) == TYPE_GROUND);
+    ASSUME(GetMoveType(MOVE_ROCK_THROW) == TYPE_ROCK);
+    ASSUME(GetMoveType(MOVE_LEECH_LIFE) == TYPE_BUG);
+    ASSUME(GetMoveType(MOVE_LICK) == TYPE_GHOST);
+    ASSUME(GetMoveType(MOVE_STEEL_WING) == TYPE_STEEL);
+    ASSUME(GetMoveType(MOVE_EMBER) == TYPE_FIRE);
+    ASSUME(GetMoveType(MOVE_WATER_GUN) == TYPE_WATER);
+    ASSUME(GetMoveType(MOVE_VINE_WHIP) == TYPE_GRASS);
+    ASSUME(GetMoveType(MOVE_THUNDER_SHOCK) == TYPE_ELECTRIC);
+    ASSUME(GetMoveType(MOVE_CONFUSION) == TYPE_PSYCHIC);
+    ASSUME(GetMoveType(MOVE_ICE_BEAM) == TYPE_ICE);
+    ASSUME(GetMoveType(MOVE_DRAGON_BREATH) == TYPE_DRAGON);
+    ASSUME(GetMoveType(MOVE_BITE) == TYPE_DARK);
+    ASSUME(GetMoveType(MOVE_DISARMING_VOICE) == TYPE_FAIRY);
 }
 
 SINGLE_BATTLE_TEST("Roost fails when user is at full HP")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST); }
     } SCENE {
-        MESSAGE("Lopmonx's HP is full!");
+        MESSAGE("Wobbuffet's HP is full!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
             HP_BAR(player);
@@ -46,14 +46,14 @@ SINGLE_BATTLE_TEST("Roost fails when user is at full HP")
 SINGLE_BATTLE_TEST("Roost fails if the user is under the effects of Heal Block")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { HP(100); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET) { HP(100); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_HEAL_BLOCK); MOVE(player, MOVE_ROOST); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_HEAL_BLOCK, opponent);
-        MESSAGE("Lopmonx was prevented from healing!"); // Message when Heal Block is applied
-        MESSAGE("Lopmonx was prevented from healing!"); // Message when trying to heal under Heal Block
+        MESSAGE("Wobbuffet was prevented from healing!"); // Message when Heal Block is applied
+        MESSAGE("Wobbuffet was prevented from healing!"); // Message when trying to heal under Heal Block
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
             HP_BAR(player);
@@ -67,8 +67,8 @@ SINGLE_BATTLE_TEST("Roost recovers 50% of the user's Max HP")
 
     KNOWN_FAILING; // All healing is currently rounded down
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { HP(1); MaxHP(99); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); MaxHP(99); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST); }
     } SCENE {
@@ -85,25 +85,25 @@ SINGLE_BATTLE_TEST("Roost recovers 50% of the user's Max HP")
 SINGLE_BATTLE_TEST("Roost suppresses the user's Flying-typing this turn, then restores it at the end of the turn")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_PHASCOMON].types[0] == TYPE_STEEL);
-        ASSUME(gSpeciesInfo[SPECIES_PHASCOMON].types[1] == TYPE_FLYING);
-        PLAYER(SPECIES_PHASCOMON) { HP(50); MaxHP(100); Ability(ABILITY_STURDY); }
-        OPPONENT(SPECIES_LOPMONX);
+        ASSUME(GetSpeciesType(SPECIES_SKARMORY, 0) == TYPE_STEEL);
+        ASSUME(GetSpeciesType(SPECIES_SKARMORY, 1) == TYPE_FLYING);
+        PLAYER(SPECIES_SKARMORY) { HP(50); MaxHP(100); Ability(ABILITY_STURDY); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST); MOVE(opponent, MOVE_EARTHQUAKE); }
         TURN { MOVE(opponent, MOVE_EARTHQUAKE); }
     } SCENE {
         // Turn 1: EQ hits when Roosted
-        MESSAGE("Phascomon used Roost!");
+        MESSAGE("Skarmory used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Phascomon's HP was restored.");
-        MESSAGE("The opposing Lopmonx used Earthquake!");
+        MESSAGE("Skarmory's HP was restored.");
+        MESSAGE("The opposing Wobbuffet used Earthquake!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
         MESSAGE("It's super effective!");
         // Turn 2: EQ has no effect because Roost expired
-        MESSAGE("The opposing Lopmonx used Earthquake!");
+        MESSAGE("The opposing Wobbuffet used Earthquake!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
-        MESSAGE("It doesn't affect Phascomon…");
+        MESSAGE("It doesn't affect Skarmory…");
         NOT HP_BAR(player);
     }
 }
@@ -131,10 +131,10 @@ SINGLE_BATTLE_TEST("Roost, if used by a Flying/Flying type, treats the user as a
     PARAMETRIZE { damagingMove = MOVE_DISARMING_VOICE; }
 
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_TORNADUS].types[0] == TYPE_FLYING);
-        ASSUME(gSpeciesInfo[SPECIES_TORNADUS].types[1] == TYPE_FLYING);
+        ASSUME(GetSpeciesType(SPECIES_TORNADUS, 0) == TYPE_FLYING);
+        ASSUME(GetSpeciesType(SPECIES_TORNADUS, 1) == TYPE_FLYING);
         PLAYER(SPECIES_TORNADUS) { HP(50); MaxHP(100); }
-        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST); MOVE(opponent, damagingMove); }
     } SCENE {
@@ -199,27 +199,27 @@ SINGLE_BATTLE_TEST("Roost, if used by a Mystery/Flying type, treats the user as 
     PARAMETRIZE { damagingMove = MOVE_DISARMING_VOICE; }
 
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_EKAKIMON].types[0] == TYPE_FIRE);
-        ASSUME(gSpeciesInfo[SPECIES_EKAKIMON].types[1] == TYPE_FLYING);
-        PLAYER(SPECIES_EKAKIMON) { HP(300); MaxHP(400); }
-        OPPONENT(SPECIES_LOPMONX);
+        ASSUME(GetSpeciesType(SPECIES_MOLTRES, 0) == TYPE_FIRE);
+        ASSUME(GetSpeciesType(SPECIES_MOLTRES, 1) == TYPE_FLYING);
+        PLAYER(SPECIES_MOLTRES) { HP(300); MaxHP(400); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_BURN_UP); }
         TURN { MOVE(player, MOVE_ROOST); MOVE(opponent, damagingMove); }
     } SCENE {
         // Turn 1: Use Burn Up to change from Fire/Flying to Mystery/Flying
-        MESSAGE("Ekakimon used Burn Up!");
+        MESSAGE("Moltres used Burn Up!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BURN_UP, player);
-        MESSAGE("Ekakimon burned itself out!");
+        MESSAGE("Moltres burned itself out!");
         // Turn 2: Use Roost to now be treated as a Mystery/Mystery type
-        MESSAGE("Ekakimon used Roost!");
+        MESSAGE("Moltres used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Ekakimon's HP was restored.");
+        MESSAGE("Moltres's HP was restored.");
         ANIMATION(ANIM_TYPE_MOVE, damagingMove, opponent);
         NONE_OF {
             MESSAGE("It's super effective!");
             MESSAGE("It's not very effective…");
-            MESSAGE("It doesn't affect Ekakimon…");
+            MESSAGE("It doesn't affect Moltres…");
         }
     }
 }
@@ -228,26 +228,26 @@ SINGLE_BATTLE_TEST("Roost, if used by a Mystery/Flying type, treats the user as 
 DOUBLE_BATTLE_TEST("Roost suppresses the user's not-yet-aquired Flying-type this turn")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_DONSHOUMON].types[0] != TYPE_FLYING);
-        ASSUME(gSpeciesInfo[SPECIES_DONSHOUMON].types[1] != TYPE_FLYING);
-        PLAYER(SPECIES_DONSHOUMON) { Speed(40); HP(150); Ability(ABILITY_COLOR_CHANGE); }
-        PLAYER(SPECIES_LOPMONX) { Speed(10); }
-        OPPONENT(SPECIES_KETOMON) { Speed(30); }
-        OPPONENT(SPECIES_POPOMON) { Speed(20); }
+        ASSUME(GetSpeciesType(SPECIES_KECLEON, 0) != TYPE_FLYING);
+        ASSUME(GetSpeciesType(SPECIES_KECLEON, 1) != TYPE_FLYING);
+        PLAYER(SPECIES_KECLEON) { Speed(40); HP(150); Ability(ABILITY_COLOR_CHANGE); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(10); }
+        OPPONENT(SPECIES_PIDGEY) { Speed(30); }
+        OPPONENT(SPECIES_SANDSHREW) { Speed(20); }
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_ROOST);
                MOVE(opponentLeft, MOVE_GUST, target: playerLeft);
                MOVE(opponentRight, MOVE_EARTHQUAKE, target: playerLeft); }
     } SCENE {
-        MESSAGE("Donshoumon used Roost!");
+        MESSAGE("Kecleon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, playerLeft);
-        MESSAGE("Donshoumon's HP was restored.");
-        MESSAGE("The opposing Ketomon used Gust!");
+        MESSAGE("Kecleon's HP was restored.");
+        MESSAGE("The opposing Pidgey used Gust!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_GUST, opponentLeft);
-        MESSAGE("Donshoumon's Color Change made it the Flying type!");
-        MESSAGE("The opposing Popomon used Earthquake!");
+        MESSAGE("Kecleon's Color Change made it the Flying type!");
+        MESSAGE("The opposing Sandshrew used Earthquake!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponentRight);
-        MESSAGE("Donshoumon's Color Change made it the Ground type!");
+        MESSAGE("Kecleon's Color Change made it the Ground type!");
     }
 }
 
@@ -255,16 +255,16 @@ DOUBLE_BATTLE_TEST("Roost suppresses the user's not-yet-aquired Flying-type this
 SINGLE_BATTLE_TEST("Roost prevents a Flying-type user from being protected by Delta Stream")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_GEOGREYMON].types[1] == TYPE_FLYING);
-        PLAYER(SPECIES_GEOGREYMON) { HP(1); Ability(ABILITY_DELTA_STREAM); }
-        OPPONENT(SPECIES_LOPMONX);
+        ASSUME(GetSpeciesType(SPECIES_RAYQUAZA, 1) == TYPE_FLYING);
+        PLAYER(SPECIES_RAYQUAZA) { HP(1); Ability(ABILITY_DELTA_STREAM); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST); MOVE(opponent, MOVE_ICE_BEAM); }
     } SCENE {
-        MESSAGE("Geogreymon used Roost!");
+        MESSAGE("Rayquaza used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Geogreymon's HP was restored.");
-        MESSAGE("The opposing Lopmonx used Ice Beam!");
+        MESSAGE("Rayquaza's HP was restored.");
+        MESSAGE("The opposing Wobbuffet used Ice Beam!");
         NOT MESSAGE("The mysterious strong winds weakened the attack!");
     }
 }
@@ -272,21 +272,21 @@ SINGLE_BATTLE_TEST("Roost prevents a Flying-type user from being protected by De
 SINGLE_BATTLE_TEST("Roost does not undo other type-changing effects at the end of the turn")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_ANGELAMON].types[0] == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_ANGELAMON].types[1] == TYPE_FLYING);
-        PLAYER(SPECIES_ANGELAMON) { HP(1); }
-        OPPONENT(SPECIES_LOPMONX);
+        ASSUME(GetSpeciesType(SPECIES_SWELLOW, 0) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_SWELLOW, 1) == TYPE_FLYING);
+        PLAYER(SPECIES_SWELLOW) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST); MOVE(opponent, MOVE_SOAK); }
         TURN { MOVE(opponent, MOVE_VINE_WHIP); }
     } SCENE {
-        MESSAGE("Angelamon used Roost!");
+        MESSAGE("Swellow used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Angelamon's HP was restored.");
-        MESSAGE("The opposing Lopmonx used Soak!");
+        MESSAGE("Swellow's HP was restored.");
+        MESSAGE("The opposing Wobbuffet used Soak!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SOAK, opponent);
-        MESSAGE("Angelamon transformed into the Water type!");
-        MESSAGE("The opposing Lopmonx used Vine Whip!");
+        MESSAGE("Swellow transformed into the Water type!");
+        MESSAGE("The opposing Wobbuffet used Vine Whip!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_VINE_WHIP, opponent);
         MESSAGE("It's super effective!");
     }
@@ -296,17 +296,17 @@ SINGLE_BATTLE_TEST("Roost does not undo other type-changing effects at the end o
 SINGLE_BATTLE_TEST("Roost's effect is lifted after Grassy Terrain's healing")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_ANGELAMON].types[0] == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_ANGELAMON].types[1] == TYPE_FLYING);
-        PLAYER(SPECIES_ANGELAMON) { HP(1); Ability(ABILITY_GRASSY_SURGE); }
-        OPPONENT(SPECIES_LOPMONX);
+        ASSUME(GetSpeciesType(SPECIES_SWELLOW, 0) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_SWELLOW, 1) == TYPE_FLYING);
+        PLAYER(SPECIES_SWELLOW) { HP(1); Ability(ABILITY_GRASSY_SURGE); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST); }
     } SCENE {
-        MESSAGE("Angelamon used Roost!");
+        MESSAGE("Swellow used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Angelamon's HP was restored.");
-        MESSAGE("Angelamon is healed by the grassy terrain!");
+        MESSAGE("Swellow's HP was restored.");
+        MESSAGE("Swellow is healed by the grassy terrain!");
         HP_BAR(player);
     }
 }
@@ -315,34 +315,34 @@ SINGLE_BATTLE_TEST("Roost's effect is lifted after Grassy Terrain's healing")
 SINGLE_BATTLE_TEST("Roost's suppression prevents Reflect Type from copying any Flying typing")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_ANGELAMON].types[0] == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_ANGELAMON].types[1] == TYPE_FLYING);
-        ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[0] == TYPE_PSYCHIC);
-        ASSUME(gSpeciesInfo[SPECIES_LOPMONX].types[1] == TYPE_PSYCHIC);
-        PLAYER(SPECIES_ANGELAMON) { HP(1); }
-        OPPONENT(SPECIES_LOPMONX);
+        ASSUME(GetSpeciesType(SPECIES_SWELLOW, 0) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_SWELLOW, 1) == TYPE_FLYING);
+        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) == TYPE_PSYCHIC);
+        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) == TYPE_PSYCHIC);
+        PLAYER(SPECIES_SWELLOW) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST); MOVE(opponent, MOVE_REFLECT_TYPE); }
         TURN { MOVE(player, MOVE_EARTHQUAKE); MOVE(opponent, MOVE_REFLECT_TYPE); }
         TURN { MOVE(player, MOVE_EARTHQUAKE); }
     } SCENE {
         // Turn 1: Reflect Type on Roosted Normal/Flying
-        MESSAGE("Angelamon used Roost!");
+        MESSAGE("Swellow used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Angelamon's HP was restored.");
-        MESSAGE("The opposing Lopmonx used Reflect Type!");
+        MESSAGE("Swellow's HP was restored.");
+        MESSAGE("The opposing Wobbuffet used Reflect Type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, opponent);
-        MESSAGE("The opposing Lopmonx became the same type as Angelamon!");
+        MESSAGE("The opposing Wobbuffet became the same type as Swellow!");
         // Turn 2: EQ hits, Reflect Type on non-Roosted Normal/Flying
-        MESSAGE("Angelamon used Earthquake!");
+        MESSAGE("Swellow used Earthquake!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, player);
         HP_BAR(opponent);
-        MESSAGE("The opposing Lopmonx used Reflect Type!");
+        MESSAGE("The opposing Wobbuffet used Reflect Type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, opponent);
-        MESSAGE("The opposing Lopmonx became the same type as Angelamon!");
+        MESSAGE("The opposing Wobbuffet became the same type as Swellow!");
         // Turn 3: EQ has no effect
-        MESSAGE("Angelamon used Earthquake!");
-        MESSAGE("It doesn't affect the opposing Lopmonx…");
+        MESSAGE("Swellow used Earthquake!");
+        MESSAGE("It doesn't affect the opposing Wobbuffet…");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, player);
             HP_BAR(opponent);
@@ -353,15 +353,15 @@ SINGLE_BATTLE_TEST("Roost's suppression prevents Reflect Type from copying any F
 SINGLE_BATTLE_TEST("Roost does not suppress the ungrounded effect of Levitate")
 {
     GIVEN {
-        PLAYER(SPECIES_DAMEMON_FUSION) { HP(1); Ability(ABILITY_LEVITATE); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_FLYGON) { HP(1); Ability(ABILITY_LEVITATE); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST); MOVE(opponent, MOVE_EARTHQUAKE); }
     } SCENE {
-        MESSAGE("Damemon_fusion used Roost!");
+        MESSAGE("Flygon used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Damemon_fusion's HP was restored.");
-        MESSAGE("The opposing Lopmonx used Earthquake!");
+        MESSAGE("Flygon's HP was restored.");
+        MESSAGE("The opposing Wobbuffet used Earthquake!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
             HP_BAR(player);
@@ -372,15 +372,15 @@ SINGLE_BATTLE_TEST("Roost does not suppress the ungrounded effect of Levitate")
 SINGLE_BATTLE_TEST("Roost does not suppress the ungrounded effect of Air Balloon")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { HP(1); Item(ITEM_AIR_BALLOON); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); Item(ITEM_AIR_BALLOON); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_ROOST); MOVE(opponent, MOVE_EARTHQUAKE); }
     } SCENE {
-        MESSAGE("Lopmonx used Roost!");
+        MESSAGE("Wobbuffet used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Lopmonx's HP was restored.");
-        MESSAGE("The opposing Lopmonx used Earthquake!");
+        MESSAGE("Wobbuffet's HP was restored.");
+        MESSAGE("The opposing Wobbuffet used Earthquake!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
             HP_BAR(player);
@@ -391,21 +391,21 @@ SINGLE_BATTLE_TEST("Roost does not suppress the ungrounded effect of Air Balloon
 SINGLE_BATTLE_TEST("Roost does not suppress the ungrounded effect of Magnet Rise")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { HP(1); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_MAGNET_RISE); }
         TURN { MOVE(player, MOVE_ROOST); MOVE(opponent, MOVE_EARTHQUAKE); }
     } SCENE {
         // Turn 1: Magnet Rise
-        MESSAGE("Lopmonx used Magnet Rise!");
+        MESSAGE("Wobbuffet used Magnet Rise!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_MAGNET_RISE, player);
-        MESSAGE("Lopmonx levitated with electromagnetism!");
+        MESSAGE("Wobbuffet levitated with electromagnetism!");
         // Turn 2
-        MESSAGE("Lopmonx used Roost!");
+        MESSAGE("Wobbuffet used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Lopmonx's HP was restored.");
-        MESSAGE("The opposing Lopmonx used Earthquake!");
+        MESSAGE("Wobbuffet's HP was restored.");
+        MESSAGE("The opposing Wobbuffet used Earthquake!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
             HP_BAR(player);
@@ -416,21 +416,21 @@ SINGLE_BATTLE_TEST("Roost does not suppress the ungrounded effect of Magnet Rise
 SINGLE_BATTLE_TEST("Roost does not suppress the ungrounded effect of Telekinesis")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { HP(1); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TELEKINESIS); }
         TURN { MOVE(player, MOVE_ROOST); MOVE(opponent, MOVE_EARTHQUAKE); }
     } SCENE {
         // Turn 1: Telekinesis
-        MESSAGE("The opposing Lopmonx used Telekinesis!");
+        MESSAGE("The opposing Wobbuffet used Telekinesis!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_TELEKINESIS, opponent);
-        MESSAGE("Lopmonx was hurled into the air!");
+        MESSAGE("Wobbuffet was hurled into the air!");
         // Turn 2
-        MESSAGE("Lopmonx used Roost!");
+        MESSAGE("Wobbuffet used Roost!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ROOST, player);
-        MESSAGE("Lopmonx's HP was restored.");
-        MESSAGE("The opposing Lopmonx used Earthquake!");
+        MESSAGE("Wobbuffet's HP was restored.");
+        MESSAGE("The opposing Wobbuffet used Earthquake!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_EARTHQUAKE, opponent);
             HP_BAR(player);

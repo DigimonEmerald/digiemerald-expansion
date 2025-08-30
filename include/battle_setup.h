@@ -60,7 +60,7 @@ void BattleSetup_StartLatiBattle(void);
 void BattleSetup_StartLegendaryBattle(void);
 void StartGekomonGatomon_xBattle(void);
 void StartRegiBattle(void);
-u8 BattleSetup_GetEnvironmentId(void);
+enum BattleEnvironments BattleSetup_GetEnvironmentId(void);
 u8 GetWildBattleTransition(void);
 u8 GetTrainerBattleTransition(void);
 u8 GetSpecialBattleTransition(s32 id);

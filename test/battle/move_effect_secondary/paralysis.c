@@ -9,8 +9,8 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Thunder Shock inflicts paralysis")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_THUNDER_SHOCK); }
     } SCENE {
@@ -25,9 +25,9 @@ SINGLE_BATTLE_TEST("Thunder Shock cannot paralyze an Electric-type")
 {
     GIVEN {
         ASSUME(B_PARALYZE_ELECTRIC >= GEN_6);
-        ASSUME(gSpeciesInfo[SPECIES_PETITMON].types[0] == TYPE_ELECTRIC);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_PETITMON);
+        ASSUME(GetSpeciesType(SPECIES_PIKACHU, 0) == TYPE_ELECTRIC);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_PIKACHU);
     } WHEN {
         TURN { MOVE(player, MOVE_THUNDER_SHOCK); }
     } SCENE {
@@ -47,11 +47,11 @@ SINGLE_BATTLE_TEST("Body Slam shouldn't paralyze Normal-types")
 #endif
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_CHUUMON].types[0] == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_TAUROS, 0) == TYPE_NORMAL);
         ASSUME(MoveHasAdditionalEffect(MOVE_BODY_SLAM, MOVE_EFFECT_PARALYSIS) == TRUE);
-        ASSUME(gMovesInfo[MOVE_BODY_SLAM].type == TYPE_NORMAL);
-        PLAYER(SPECIES_CHUUMON);
-        OPPONENT(SPECIES_CHUUMON);
+        ASSUME(GetMoveType(MOVE_BODY_SLAM) == TYPE_NORMAL);
+        PLAYER(SPECIES_TAUROS);
+        OPPONENT(SPECIES_TAUROS);
     } WHEN {
         TURN { MOVE(player, MOVE_BODY_SLAM); }
     } SCENE {

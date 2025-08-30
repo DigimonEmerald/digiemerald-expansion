@@ -59,7 +59,6 @@ DOUBLE_BATTLE_TEST("Opportunist raises Attack only once when partner has Intimid
     } SCENE {
         ABILITY_POPUP(playerLeft, ABILITY_INTIMIDATE);
         if (abilityLeft == ABILITY_CONTRARY) {
-            ABILITY_POPUP(opponentLeft, ABILITY_CONTRARY);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
 <<<<<<< HEAD
             MESSAGE("Foe Coredramon_blue's Attack rose!");
@@ -74,7 +73,6 @@ DOUBLE_BATTLE_TEST("Opportunist raises Attack only once when partner has Intimid
 >>>>>>> upstream/master
         }
         if (abilityRight == ABILITY_CONTRARY) {
-            ABILITY_POPUP(opponentRight, ABILITY_CONTRARY);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentRight);
 <<<<<<< HEAD
             MESSAGE("Foe Coredramon_blue's Attack rose!");
