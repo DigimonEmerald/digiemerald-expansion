@@ -1076,109 +1076,109 @@ TEST("Compression test: table generation 32 32")
 }
 
 #if ENABLE_ALL_COMPRESSION_TESTS
-TEST("Compression test: Bulbasaur Smol")
+TEST("Compression test: Argomon Smol")
 {
-    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/bulbasaur/anim_front.4bpp");
-    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/bulbasaur/anim_front.4bpp.smol");
+    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/argomon/anim_front.4bpp");
+    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/argomon/anim_front.4bpp.smol");
 
-    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Bulbasaur", COMPRESSION_SMOL, sizeof(compFile));
+    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Argomon", COMPRESSION_SMOL, sizeof(compFile));
     EXPECT_EQ(areEqual, TRUE);
 }
 
-TEST("Compression test: Bulbasaur LZ")
+TEST("Compression test: Argomon LZ")
 {
-    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/bulbasaur/anim_front.4bpp");
-    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/bulbasaur/anim_front.4bpp.lz");
+    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/argomon/anim_front.4bpp");
+    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/argomon/anim_front.4bpp.lz");
 
-    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Bulbasaur", COMPRESSION_LZ, sizeof(compFile));
+    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Argomon", COMPRESSION_LZ, sizeof(compFile));
     EXPECT_EQ(areEqual, TRUE);
 }
 
-TEST("Compression test: Bulbasaur fastLZ")
+TEST("Compression test: Argomon fastLZ")
 {
-    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/bulbasaur/anim_front.4bpp");
-    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/bulbasaur/anim_front.4bpp.lz");
+    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/argomon/anim_front.4bpp");
+    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/argomon/anim_front.4bpp.lz");
 
-    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Bulbasaur", COMPRESSION_FASTLZ, sizeof(compFile));
+    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Argomon", COMPRESSION_FASTLZ, sizeof(compFile));
     EXPECT_EQ(areEqual, TRUE);
 }
 
-TEST("Compression test: Bulbasaur fastSmol")
+TEST("Compression test: Argomon fastSmol")
 {
-    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/bulbasaur/anim_front.4bpp");
-    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/bulbasaur/anim_front.4bpp.fastSmol");
+    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/argomon/anim_front.4bpp");
+    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/argomon/anim_front.4bpp.fastSmol");
 
-    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Bulbasaur", COMPRESSION_FASTSMOL, sizeof(compFile));
+    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Argomon", COMPRESSION_FASTSMOL, sizeof(compFile));
     EXPECT_EQ(areEqual, TRUE);
 }
-TEST("Compression test: Ivysaur Smol")
+TEST("Compression test: Bombmon Smol")
 {
-    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/ivysaur/anim_front.4bpp");
-    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/ivysaur/anim_front.4bpp.smol");
+    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/bombmon/anim_front.4bpp");
+    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/bombmon/anim_front.4bpp.smol");
 
-    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Ivysaur", COMPRESSION_SMOL, sizeof(compFile));
-    EXPECT_EQ(areEqual, TRUE);
-}
-
-TEST("Compression test: Ivysaur LZ")
-{
-    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/ivysaur/anim_front.4bpp");
-    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/ivysaur/anim_front.4bpp.lz");
-
-    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Ivysaur", COMPRESSION_LZ, sizeof(compFile));
+    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Bombmon", COMPRESSION_SMOL, sizeof(compFile));
     EXPECT_EQ(areEqual, TRUE);
 }
 
-TEST("Compression test: Ivysaur fastLZ")
+TEST("Compression test: Bombmon LZ")
 {
-    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/ivysaur/anim_front.4bpp");
-    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/ivysaur/anim_front.4bpp.lz");
+    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/bombmon/anim_front.4bpp");
+    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/bombmon/anim_front.4bpp.lz");
 
-    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Ivysaur", COMPRESSION_FASTLZ, sizeof(compFile));
+    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Bombmon", COMPRESSION_LZ, sizeof(compFile));
     EXPECT_EQ(areEqual, TRUE);
 }
 
-TEST("Compression test: Ivysaur fastSmol")
+TEST("Compression test: Bombmon fastLZ")
 {
-    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/ivysaur/anim_front.4bpp");
-    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/ivysaur/anim_front.4bpp.fastSmol");
+    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/bombmon/anim_front.4bpp");
+    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/bombmon/anim_front.4bpp.lz");
 
-    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Ivysaur", COMPRESSION_FASTSMOL, sizeof(compFile));
-    EXPECT_EQ(areEqual, TRUE);
-}
-TEST("Compression test: Venusaur Smol")
-{
-    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/venusaur/anim_front.4bpp");
-    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/venusaur/anim_front.4bpp.smol");
-
-    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Venusaur", COMPRESSION_SMOL, sizeof(compFile));
+    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Bombmon", COMPRESSION_FASTLZ, sizeof(compFile));
     EXPECT_EQ(areEqual, TRUE);
 }
 
-TEST("Compression test: Venusaur LZ")
+TEST("Compression test: Bombmon fastSmol")
 {
-    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/venusaur/anim_front.4bpp");
-    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/venusaur/anim_front.4bpp.lz");
+    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/bombmon/anim_front.4bpp");
+    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/bombmon/anim_front.4bpp.fastSmol");
 
-    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Venusaur", COMPRESSION_LZ, sizeof(compFile));
+    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Bombmon", COMPRESSION_FASTSMOL, sizeof(compFile));
+    EXPECT_EQ(areEqual, TRUE);
+}
+TEST("Compression test: Bommon Smol")
+{
+    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/bommon/anim_front.4bpp");
+    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/bommon/anim_front.4bpp.smol");
+
+    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Bommon", COMPRESSION_SMOL, sizeof(compFile));
     EXPECT_EQ(areEqual, TRUE);
 }
 
-TEST("Compression test: Venusaur fastLZ")
+TEST("Compression test: Bommon LZ")
 {
-    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/venusaur/anim_front.4bpp");
-    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/venusaur/anim_front.4bpp.lz");
+    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/bommon/anim_front.4bpp");
+    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/bommon/anim_front.4bpp.lz");
 
-    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Venusaur", COMPRESSION_FASTLZ, sizeof(compFile));
+    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Bommon", COMPRESSION_LZ, sizeof(compFile));
     EXPECT_EQ(areEqual, TRUE);
 }
 
-TEST("Compression test: Venusaur fastSmol")
+TEST("Compression test: Bommon fastLZ")
 {
-    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/venusaur/anim_front.4bpp");
-    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/venusaur/anim_front.4bpp.fastSmol");
+    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/bommon/anim_front.4bpp");
+    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/bommon/anim_front.4bpp.lz");
 
-    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Venusaur", COMPRESSION_FASTSMOL, sizeof(compFile));
+    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Bommon", COMPRESSION_FASTLZ, sizeof(compFile));
+    EXPECT_EQ(areEqual, TRUE);
+}
+
+TEST("Compression test: Bommon fastSmol")
+{
+    static const u32 origFile[] = INCBIN_U32("graphics/pokemon/bommon/anim_front.4bpp");
+    static const u32 compFile[] = INCBIN_U32("graphics/pokemon/bommon/anim_front.4bpp.fastSmol");
+
+    bool32 areEqual = DecompressImgPrintResults(compFile, origFile, "Bommon", COMPRESSION_FASTSMOL, sizeof(compFile));
     EXPECT_EQ(areEqual, TRUE);
 }
 TEST("Compression test: Charmander Smol")

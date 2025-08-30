@@ -11,7 +11,7 @@ SINGLE_BATTLE_TEST("Ion Duldge turns normal moves into electric for the remainde
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_ION_DELUGE) == EFFECT_ION_DELUGE);
         PLAYER(SPECIES_KRABBY);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_ION_DELUGE); MOVE(opponent, MOVE_SCRATCH); }
         TURN { MOVE(opponent, MOVE_SCRATCH); }
@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Ion Duldge turns normal moves into electric for the remainde
         MESSAGE("Krabby used Ion Deluge!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_ION_DELUGE, player);
         MESSAGE("A deluge of ions showers the battlefield!");
-        MESSAGE("The opposing Wobbuffet used Scratch!");
+        MESSAGE("The opposing Lopmonx used Scratch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
         MESSAGE("It's super effective!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
@@ -31,7 +31,7 @@ SINGLE_BATTLE_TEST("Plasma Fists turns normal moves into electric for the remain
 {
     GIVEN {
         PLAYER(SPECIES_KRABBY);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_PLASMA_FISTS); MOVE(opponent, MOVE_SCRATCH); }
         TURN { MOVE(opponent, MOVE_SCRATCH); }
@@ -39,7 +39,7 @@ SINGLE_BATTLE_TEST("Plasma Fists turns normal moves into electric for the remain
         MESSAGE("Krabby used Plasma Fists!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PLASMA_FISTS, player);
         MESSAGE("A deluge of ions showers the battlefield!");
-        MESSAGE("The opposing Wobbuffet used Scratch!");
+        MESSAGE("The opposing Lopmonx used Scratch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
         MESSAGE("It's super effective!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponent);
@@ -105,14 +105,14 @@ SINGLE_BATTLE_TEST("Plasma Fists turns normal type dynamax-moves into electric t
 {
     GIVEN {
         PLAYER(SPECIES_KRABBY) { Speed(100); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(1); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_PLASMA_FISTS); MOVE(opponent, MOVE_SCRATCH, gimmick: GIMMICK_DYNAMAX); }
     } SCENE {
         MESSAGE("Krabby used Plasma Fists!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_PLASMA_FISTS, player);
         MESSAGE("A deluge of ions showers the battlefield!");
-        MESSAGE("The opposing Wobbuffet used Max Lightning!");
+        MESSAGE("The opposing Lopmonx used Max Lightning!");
         MESSAGE("It's super effective!");
     }
 }

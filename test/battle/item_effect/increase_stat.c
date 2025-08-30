@@ -315,11 +315,11 @@ SINGLE_BATTLE_TEST("Using X items in battle raises Friendship", s16 damage)
     PARAMETRIZE { startingFriendship = 0; }
     PARAMETRIZE { startingFriendship = X_ITEM_MAX_FRIENDSHIP; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Friendship(startingFriendship); };
+        PLAYER(SPECIES_LOPMONX) { Friendship(startingFriendship); };
         // Set met location to MAPSEC_NONE to avoid getting the friendship boost
         // from being met in the current map section
         SetMonData(&PLAYER_PARTY[0], MON_DATA_MET_LOCATION, &metLocation);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { USE_ITEM(player, ITEM_X_ACCURACY); MOVE(opponent, MOVE_CELEBRATE); }
     } THEN {

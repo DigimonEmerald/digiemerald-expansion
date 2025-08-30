@@ -10,8 +10,8 @@ SINGLE_BATTLE_TEST("Relic Song has a 10% chance to put the target to sleep")
 {
     PASSES_RANDOMLY(10, 100, RNG_SECONDARY_EFFECT);
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_RELIC_SONG); }
     } SCENE {
@@ -25,7 +25,7 @@ SINGLE_BATTLE_TEST("Relic Song has a 10% chance to put the target to sleep")
 SINGLE_BATTLE_TEST("Relic Song is prevented by Soundproof")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_VOLTORB) { Ability(ABILITY_SOUNDPROOF); }
     } WHEN {
         TURN { MOVE(player, MOVE_RELIC_SONG); }
@@ -56,14 +56,14 @@ SINGLE_BATTLE_TEST("Relic Song will become a Water-type move when used by a Pok√
 SINGLE_BATTLE_TEST("Relic Song is blocked by Throat Chop")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_THROAT_CHOP); MOVE(player, MOVE_RELIC_SONG); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_THROAT_CHOP, opponent);
         HP_BAR(player);
-        MESSAGE("The effects of Throat Chop prevent Wobbuffet from using certain moves!");
+        MESSAGE("The effects of Throat Chop prevent Lopmonx from using certain moves!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_RELIC_SONG, player);
     }
 }

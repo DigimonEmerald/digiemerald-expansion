@@ -79,8 +79,8 @@ SINGLE_BATTLE_TEST("Rapid Spin blows away all hazards")
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_RAPID_SPIN) == EFFECT_RAPID_SPIN);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_STEALTH_ROCK); }
         TURN { MOVE(opponent, MOVE_STICKY_WEB); }
@@ -90,10 +90,10 @@ SINGLE_BATTLE_TEST("Rapid Spin blows away all hazards")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STEALTH_ROCK, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_RAPID_SPIN, player);
 
-        MESSAGE("Wobbuffet blew away Spikes!");
-        MESSAGE("Wobbuffet blew away Sticky Web!");
-        MESSAGE("Wobbuffet blew away Toxic Spikes!");
-        MESSAGE("Wobbuffet blew away Stealth Rock!");
+        MESSAGE("Lopmonx blew away Spikes!");
+        MESSAGE("Lopmonx blew away Sticky Web!");
+        MESSAGE("Lopmonx blew away Toxic Spikes!");
+        MESSAGE("Lopmonx blew away Stealth Rock!");
     } THEN {
         EXPECT_EQ(gBattleStruct->hazardsQueue[0][0], HAZARDS_NONE);
         EXPECT_EQ(gBattleStruct->hazardsQueue[0][1], HAZARDS_NONE);

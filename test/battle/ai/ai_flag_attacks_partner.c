@@ -59,10 +59,10 @@ AI_DOUBLE_BATTLE_TEST("AI_FLAG_ATTACKS_PARTNER steps on its ally's weather")
 
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_ATTACKS_PARTNER);
-        PLAYER(SPECIES_WOBBUFFET) { Speed(50); } 
-        PLAYER(SPECIES_WOBBUFFET) { Speed(50); } 
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(75); Moves(weather1, move1, MOVE_HEADBUTT); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(100); Moves(weather2, move2, MOVE_HEADBUTT); }
+        PLAYER(SPECIES_LOPMONX) { Speed(50); } 
+        PLAYER(SPECIES_LOPMONX) { Speed(50); } 
+        OPPONENT(SPECIES_LOPMONX) { Speed(75); Moves(weather1, move1, MOVE_HEADBUTT); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(100); Moves(weather2, move2, MOVE_HEADBUTT); }
     } WHEN {
         TURN
         { 

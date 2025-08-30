@@ -134,8 +134,8 @@ SINGLE_BATTLE_TEST("Thief and Covet can't steal target's held item if user faint
     PARAMETRIZE { move = MOVE_THIEF; }
     PARAMETRIZE { move = MOVE_COVET; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); };
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_ROCKY_HELMET); }
+        PLAYER(SPECIES_LOPMONX) { HP(1); };
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_ROCKY_HELMET); }
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
@@ -155,7 +155,7 @@ SINGLE_BATTLE_TEST("Thief and Covet: Berry activation happens before the item ca
     PARAMETRIZE { move = MOVE_COVET; }
     GIVEN {
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET) { MaxHP(200); HP(101); Item(ITEM_ORAN_BERRY); }
+        OPPONENT(SPECIES_LOPMONX) { MaxHP(200); HP(101); Item(ITEM_ORAN_BERRY); }
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {

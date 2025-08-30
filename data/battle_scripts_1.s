@@ -9700,31 +9700,19 @@ BattleScript_ForfeitBattleGaveMoney::
 	waitmessage B_WAIT_TIME_LONG
 	end2
 
+@@@ TO BE REDONE
 BattleScript_EffectBlessing::
 	attackcanceler
 	attackstring
 	ppreduce
-	jumpifsubstituteblocks BattleScript_ButItFailed
-	jumpifstatus BS_TARGET, STATUS1_CONVERTED, BattleScript_AlreadyBurned
-	jumpiftype BS_TARGET, TYPE_DARK, BattleScript_NotAffected
-	jumpiftype BS_TARGET, TYPE_LIGHT, BattleScript_NotAffected
-	jumpifability BS_TARGET, ABILITY_PURIFYING_SALT, BattleScript_AbilityProtectsDoesntAffect
-	jumpifflowerveil BattleScript_FlowerVeilProtects
-	jumpifleafguardprotected BS_TARGET, BattleScript_AbilityProtectsDoesntAffect
-	jumpifshieldsdown BS_TARGET, BattleScript_AbilityProtectsDoesntAffect
-	jumpifstatus BS_TARGET, STATUS1_ANY, BattleScript_ButItFailed
-	jumpifterrainaffected BS_TARGET, STATUS_FIELD_MISTY_TERRAIN, BattleScript_MistyTerrainPrevents
-	accuracycheck BattleScript_ButItFailed, ACC_CURR_MOVE
-	jumpifsafeguard BattleScript_SafeguardProtected
-	attackanimation
-	waitanimation
-	seteffectprimary MOVE_EFFECT_CONVERTED
-	resultmessage
-	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_MoveEnd
+	call BattleScript_CheckPrimalWeather
+	setfieldweather BATTLE_WEATHER_SNOW
+	goto BattleScript_MoveWeatherChange
 
 BattleScript_MoveEffectConverted::
-	statusanimation BS_EFFECT_BATTLER
-	printfromtable gGotBurnedStringIds
-	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_UpdateEffectStatusIconRet
+	attackcanceler
+	attackstring
+	ppreduce
+	call BattleScript_CheckPrimalWeather
+	setfieldweather BATTLE_WEATHER_SNOW
+	goto BattleScript_MoveWeatherChange

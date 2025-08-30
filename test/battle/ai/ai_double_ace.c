@@ -4,8 +4,8 @@
 ASSUMPTIONS {
     ASSUME(GetMoveEffect(MOVE_U_TURN) == EFFECT_HIT_ESCAPE);
     ASSUME(GetMoveType(MOVE_CRUNCH) == TYPE_DARK);
-    ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) == TYPE_PSYCHIC);
-    ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) == TYPE_PSYCHIC);
+    ASSUME(GetSpeciesType(SPECIES_LOPMONX, 0) == TYPE_PSYCHIC);
+    ASSUME(GetSpeciesType(SPECIES_LOPMONX, 1) == TYPE_PSYCHIC);
 }
 
 AI_DOUBLE_BATTLE_TEST("AI_FLAG_DOUBLE_ACE_POKEMON: U-Turn won't send out any of the Ace Mons if other options exist")
@@ -18,8 +18,8 @@ AI_DOUBLE_BATTLE_TEST("AI_FLAG_DOUBLE_ACE_POKEMON: U-Turn won't send out any of 
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_SMART_SWITCHING | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SMART_MON_CHOICES | flag);
 
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
 
         OPPONENT(SPECIES_GASTLY) { Moves(MOVE_U_TURN); }
         OPPONENT(SPECIES_DUSKULL) { Moves(MOVE_U_TURN); }
@@ -28,7 +28,7 @@ AI_DOUBLE_BATTLE_TEST("AI_FLAG_DOUBLE_ACE_POKEMON: U-Turn won't send out any of 
         OPPONENT(SPECIES_GENGAR) { Moves(MOVE_U_TURN); }
 
         // Aces
-        // Crunch is super effective against Wobbuffet Psychic type, so normally the AI would switch them in
+        // Crunch is super effective against Lopmonx Psychic type, so normally the AI would switch them in
         OPPONENT(SPECIES_POOCHYENA) { Moves(MOVE_CRUNCH); }
         OPPONENT(SPECIES_MIGHTYENA) { Moves(MOVE_CRUNCH); }
     } WHEN {
@@ -52,8 +52,8 @@ AI_DOUBLE_BATTLE_TEST("AI_FLAG_DOUBLE_ACE_POKEMON: U-Turn will send out an Ace M
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_SMART_SWITCHING | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_DOUBLE_ACE_POKEMON);
 
-        PLAYER(SPECIES_WOBBUFFET) { Level(50); }
-        PLAYER(SPECIES_WOBBUFFET) { Level(50); }
+        PLAYER(SPECIES_LOPMONX) { Level(50); }
+        PLAYER(SPECIES_LOPMONX) { Level(50); }
 
         OPPONENT(SPECIES_GASTLY) { Moves(MOVE_U_TURN); Level(50); }
         OPPONENT(SPECIES_DUSKULL) { Moves(MOVE_U_TURN); Level(5); }

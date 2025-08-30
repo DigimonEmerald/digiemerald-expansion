@@ -23,31 +23,31 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Defog lowers evasiveness by 1 stage")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_DEFOG); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DEFOG, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("The opposing Wobbuffet's evasiveness fell!");
+        MESSAGE("The opposing Lopmonx's evasiveness fell!");
     }
 }
 
 SINGLE_BATTLE_TEST("Defog does not lower evasiveness if target behind Substitute")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(5); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(5); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUBSTITUTE); MOVE(player, MOVE_DEFOG); }
     } SCENE {
-        MESSAGE("The opposing Wobbuffet used Substitute!");
+        MESSAGE("The opposing Lopmonx used Substitute!");
         MESSAGE("But it failed!");
         NONE_OF {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_DEFOG, player);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-            MESSAGE("The opposing Wobbuffet's evasiveness fell!");
+            MESSAGE("The opposing Lopmonx's evasiveness fell!");
         }
     }
 }
@@ -60,10 +60,10 @@ DOUBLE_BATTLE_TEST("Defog removes Reflect and Light Screen from target's side", 
     PARAMETRIZE { move = MOVE_DEFOG; }
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(3); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(1); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); }
+        PLAYER(SPECIES_LOPMONX) { Speed(3); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(2); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(1); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_REFLECT); MOVE(opponentRight, MOVE_LIGHT_SCREEN); }
         TURN { MOVE(playerLeft, move, target: opponentLeft); }
@@ -76,9 +76,9 @@ DOUBLE_BATTLE_TEST("Defog removes Reflect and Light Screen from target's side", 
             MESSAGE("The opposing team's Reflect wore off!");
             MESSAGE("The opposing team's Light Screen wore off!");
         }
-        MESSAGE("Wobbuffet used Scratch!");
+        MESSAGE("Lopmonx used Scratch!");
         HP_BAR(opponentLeft, captureDamage: &results[i].damagePhysical);
-        MESSAGE("Wobbuffet used Gust!");
+        MESSAGE("Lopmonx used Gust!");
         HP_BAR(opponentRight, captureDamage: &results[i].damageSpecial);
     } FINALLY {
         EXPECT_MUL_EQ(results[1].damagePhysical, Q_4_12(1.5), results[0].damagePhysical);
@@ -94,10 +94,10 @@ DOUBLE_BATTLE_TEST("Defog removes Mist and Safeguard from target's side")
     PARAMETRIZE { move = MOVE_DEFOG; }
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(3); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(1); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); }
+        PLAYER(SPECIES_LOPMONX) { Speed(3); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(2); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(1); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_MIST); MOVE(opponentRight, MOVE_SAFEGUARD); }
         TURN { MOVE(playerLeft, move, target: opponentLeft); }
@@ -110,22 +110,22 @@ DOUBLE_BATTLE_TEST("Defog removes Mist and Safeguard from target's side")
             MESSAGE("The opposing team's Mist wore off!");
             MESSAGE("The opposing team's Safeguard wore off!");
         }
-        MESSAGE("Wobbuffet used Screech!");
+        MESSAGE("Lopmonx used Screech!");
         if (move == MOVE_DEFOG) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_SCREECH, playerLeft);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
         }
         else {
-            MESSAGE("The opposing Wobbuffet is protected by the mist!");
+            MESSAGE("The opposing Lopmonx is protected by the mist!");
             NOT ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponentLeft);
         }
-        MESSAGE("Wobbuffet used Toxic!");
+        MESSAGE("Lopmonx used Toxic!");
         if (move == MOVE_DEFOG) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC, playerRight);
             STATUS_ICON(opponentRight, badPoison: TRUE);
         }
         else {
-            MESSAGE("The opposing Wobbuffet is protected by Safeguard!");
+            MESSAGE("The opposing Lopmonx is protected by Safeguard!");
             NOT STATUS_ICON(opponentRight, badPoison: TRUE);
         }
     }
@@ -140,11 +140,11 @@ DOUBLE_BATTLE_TEST("Defog removes Stealth Rock and Sticky Web from user's side (
     PARAMETRIZE { move = MOVE_DEFOG; }
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(3); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(3); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(1); }
+        PLAYER(SPECIES_LOPMONX) { Speed(4); }
+        PLAYER(SPECIES_LOPMONX) { Speed(3); }
+        PLAYER(SPECIES_LOPMONX) { Speed(3); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(2); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(1); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_STEALTH_ROCK); MOVE(opponentRight, MOVE_STICKY_WEB); }
         TURN { MOVE(playerLeft, move, target: opponentLeft); }
@@ -158,22 +158,22 @@ DOUBLE_BATTLE_TEST("Defog removes Stealth Rock and Sticky Web from user's side (
             MESSAGE("The pointed stones disappeared from around your team!");
         }
         // Switch happens
-        SWITCH_OUT_MESSAGE("Wobbuffet");
-        SEND_IN_MESSAGE("Wobbuffet");
+        SWITCH_OUT_MESSAGE("Lopmonx");
+        SEND_IN_MESSAGE("Lopmonx");
         if (move != MOVE_DEFOG || B_DEFOG_EFFECT_CLEARING <= GEN_5) {
             HP_BAR(playerLeft);
-            MESSAGE("Pointed stones dug into Wobbuffet!");
-            MESSAGE("Wobbuffet was caught in a sticky web!");
+            MESSAGE("Pointed stones dug into Lopmonx!");
+            MESSAGE("Lopmonx was caught in a sticky web!");
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-            MESSAGE("Wobbuffet's Speed fell!");
+            MESSAGE("Lopmonx's Speed fell!");
         }
         else {
             NONE_OF {
                 HP_BAR(playerLeft);
-                MESSAGE("Pointed stones dug into Wobbuffet!");
-                MESSAGE("Wobbuffet was caught in a sticky web!");
+                MESSAGE("Pointed stones dug into Lopmonx!");
+                MESSAGE("Lopmonx was caught in a sticky web!");
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, playerLeft);
-                MESSAGE("Wobbuffet's Speed fell!");
+                MESSAGE("Lopmonx's Speed fell!");
             }
         }
     }
@@ -188,9 +188,9 @@ SINGLE_BATTLE_TEST("Defog removes Spikes from user's side (Gen 6+)")
     PARAMETRIZE { move = MOVE_DEFOG; }
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(2); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(2); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(5); }
+        PLAYER(SPECIES_LOPMONX) { Speed(2); }
+        PLAYER(SPECIES_LOPMONX) { Speed(2); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(5); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_SPIKES); MOVE(player, move); }
         TURN { SWITCH(player, 1); }
@@ -200,16 +200,16 @@ SINGLE_BATTLE_TEST("Defog removes Spikes from user's side (Gen 6+)")
         if (move == MOVE_DEFOG && B_DEFOG_EFFECT_CLEARING >= GEN_6)
             MESSAGE("The spikes disappeared from the ground around your team!");
         // Switch happens
-        SWITCH_OUT_MESSAGE("Wobbuffet");
-        SEND_IN_MESSAGE("Wobbuffet");
+        SWITCH_OUT_MESSAGE("Lopmonx");
+        SEND_IN_MESSAGE("Lopmonx");
         if (move != MOVE_DEFOG || B_DEFOG_EFFECT_CLEARING <= GEN_5) {
             HP_BAR(player);
-            MESSAGE("Wobbuffet was hurt by the spikes!");
+            MESSAGE("Lopmonx was hurt by the spikes!");
         }
         else {
             NONE_OF {
                 HP_BAR(player);
-                MESSAGE("Wobbuffet was hurt by the spikes!");
+                MESSAGE("Lopmonx was hurt by the spikes!");
             }
         }
     }
@@ -225,8 +225,8 @@ SINGLE_BATTLE_TEST("Defog removes terrain (Gen 8+)")
     PARAMETRIZE { move = MOVE_MISTY_TERRAIN; }
     PARAMETRIZE { move = MOVE_GRASSY_TERRAIN; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(50); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(5); }
+        PLAYER(SPECIES_LOPMONX) { Speed(50); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(5); }
     } WHEN {
         TURN { MOVE(player, move); MOVE(opponent, MOVE_DEFOG); }
     } SCENE {
@@ -267,9 +267,9 @@ SINGLE_BATTLE_TEST("Defog removes Toxic Spikes from user's side (Gen 6+)")
     PARAMETRIZE { move = MOVE_DEFOG; }
     PARAMETRIZE { move = MOVE_CELEBRATE; }
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(5); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
+        PLAYER(SPECIES_LOPMONX) { Speed(5); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(2); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(2); }
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC_SPIKES); MOVE(opponent, move); }
         TURN { SWITCH(opponent, 1); }
@@ -279,15 +279,15 @@ SINGLE_BATTLE_TEST("Defog removes Toxic Spikes from user's side (Gen 6+)")
         if (move == MOVE_DEFOG && B_DEFOG_EFFECT_CLEARING >= GEN_6)
             MESSAGE("The poison spikes disappeared from the ground around the opposing team!");
         // Switch happens
-        MESSAGE("2 sent out Wobbuffet!");
+        MESSAGE("2 sent out Lopmonx!");
         if (move != MOVE_DEFOG || B_DEFOG_EFFECT_CLEARING <= GEN_5) {
-            MESSAGE("The opposing Wobbuffet was poisoned!");
+            MESSAGE("The opposing Lopmonx was poisoned!");
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
             STATUS_ICON(opponent, poison: TRUE);
         }
         else {
             NONE_OF {
-                MESSAGE("The opposing Wobbuffet was poisoned!");
+                MESSAGE("The opposing Lopmonx was poisoned!");
                 ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, opponent);
                 STATUS_ICON(opponent, poison: TRUE);
             }
@@ -395,17 +395,17 @@ DOUBLE_BATTLE_TEST("Defog removes everything it can")
 SINGLE_BATTLE_TEST("Defog is used on the correct side if opposing mon is behind a substitute with Screen up")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_LIGHT_SCREEN); }
         TURN { MOVE(opponent, MOVE_SUBSTITUTE); MOVE(player, MOVE_DEFOG); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_LIGHT_SCREEN, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SUBSTITUTE, opponent);
-        MESSAGE("Wobbuffet used Defog!");
+        MESSAGE("Lopmonx used Defog!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DEFOG, player);
-        MESSAGE("The opposing Wobbuffet's evasiveness fell!");
+        MESSAGE("The opposing Lopmonx's evasiveness fell!");
         MESSAGE("The opposing team's Light Screen wore off!");
     }
 }

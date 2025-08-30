@@ -4,10 +4,10 @@
 DOUBLE_BATTLE_TEST("Life Dew fails if user and partner are both at full hp")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_LIFE_DEW); }
     } SCENE {
@@ -21,16 +21,16 @@ DOUBLE_BATTLE_TEST("Life Dew recovers 25% of hp for both user and partner")
     s16 healing[2];
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
         PLAYER(SPECIES_WYNAUT) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_LIFE_DEW); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_LIFE_DEW, playerLeft);
         HP_BAR(playerLeft, captureDamage: &healing[0]);
-        MESSAGE("Wobbuffet's HP was restored.");
+        MESSAGE("Lopmonx's HP was restored.");
         HP_BAR(playerRight, captureDamage: &healing[1]);
         MESSAGE("Wynaut's HP was restored.");
     } THEN {
@@ -42,8 +42,8 @@ DOUBLE_BATTLE_TEST("Life Dew recovers 25% of hp for both user and partner")
 SINGLE_BATTLE_TEST("Life Dew works in singles on user")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_LIFE_DEW); }
     } SCENE {
@@ -56,10 +56,10 @@ SINGLE_BATTLE_TEST("Life Dew works in singles on user")
 DOUBLE_BATTLE_TEST("Life Dew only works on user if partner is at full hp")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_LIFE_DEW); }
     } SCENE {
@@ -73,9 +73,9 @@ DOUBLE_BATTLE_TEST("Life Dew only works on partner if user is at full hp")
 {
     GIVEN {
         PLAYER(SPECIES_WYNAUT);
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_LIFE_DEW); }
     } SCENE {

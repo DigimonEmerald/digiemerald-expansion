@@ -72,15 +72,15 @@ SINGLE_BATTLE_TEST("Safety Goggles blocks Effect Spore's effect")
             ABILITY_POPUP(opponent, ABILITY_EFFECT_SPORE);
 
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PSN, player);
-            MESSAGE("Wobbuffet was poisoned by the opposing Breloom's Effect Spore!");
+            MESSAGE("Lopmonx was poisoned by the opposing Breloom's Effect Spore!");
             STATUS_ICON(player, poison: TRUE);
 
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_PRZ, player);
-            MESSAGE("The opposing Breloom's Effect Spore paralyzed Wobbuffet, so it may be unable to move!");
+            MESSAGE("The opposing Breloom's Effect Spore paralyzed Lopmonx, so it may be unable to move!");
             STATUS_ICON(player, paralysis: TRUE);
 
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-            MESSAGE("The opposing Breloom's Effect Spore made Wobbuffet sleep!");
+            MESSAGE("The opposing Breloom's Effect Spore made Lopmonx sleep!");
             STATUS_ICON(player, sleep: TRUE);
         }
     }

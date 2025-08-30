@@ -14591,7 +14591,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_X_ANTIBODY] =
     {
-        .name = _("X Antibody"),
+        .name = ITEM_NAME("X Antibody"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Mutates some\n"
@@ -14607,7 +14607,7 @@ const struct Item gItemsInfo[] =
     
     [ITEM_DARK_DIGITRON] =
     {
-        .name = _("Dark Digitron"),
+        .name = ITEM_NAME("Dark Digitron"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Mutates some\n"
@@ -14623,7 +14623,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_COURAGE_EGG] =
     {
-        .name = _("Courage Egg"),
+        .name = ITEM_NAME("Courage Egg"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14639,7 +14639,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_FRIEND_EGG] =
     {
-        .name = _("Friend Egg"),
+        .name = ITEM_NAME("Friend Egg"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14655,7 +14655,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_LOVE_EGG] =
     {
-        .name = _("Love Egg"),
+        .name = ITEM_NAME("Love Egg"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14671,7 +14671,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_PURITY_EGG] =
     {
-        .name = _("Purity Egg"),
+        .name = ITEM_NAME("Purity Egg"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14687,7 +14687,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_KNOWLEDGE_EGG] =
     {
-        .name = _("Knowledge Egg"),
+        .name = ITEM_NAME("Knowledge Egg"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14703,7 +14703,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_SINCERITY_EGG] =
     {
-        .name = _("Sincerity Egg"),
+        .name = ITEM_NAME("Sincerity Egg"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14719,7 +14719,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_HOPE_EGG] =
     {
-        .name = _("Hope Egg"),
+        .name = ITEM_NAME("Hope Egg"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14735,7 +14735,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_LIGHT_EGG] =
     {
-        .name = _("Light Egg"),
+        .name = ITEM_NAME("Light Egg"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14751,7 +14751,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_KINDNESS_EGG] =
     {
-        .name = _("Kindness Egg"),
+        .name = ITEM_NAME("Kindness Egg"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14767,7 +14767,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_MIRACLES_EGG] =
     {
-        .name = _("Miracles Egg"),
+        .name = ITEM_NAME("Miracles Egg"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14783,7 +14783,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_FATE_EGG] =
     {
-        .name = _("Fate Egg"),
+        .name = ITEM_NAME("Fate Egg"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14799,7 +14799,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_ROTTEN_MEAT] =
     {
-        .name = _("Rotten Meat"),
+        .name = ITEM_NAME("Rotten Meat"),
         .price = 1100,
         .description = COMPOUND_STRING(
             "Meat so rotten, it\n"
@@ -14815,7 +14815,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_CHOCOLATE] =
     {
-        .name = _("Chocolate"),
+        .name = ITEM_NAME("Chocolate"),
         .price = 1100,
         .description = COMPOUND_STRING(
             "Chocolate that\n"
@@ -14831,7 +14831,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_COFFEE] =
     {
-        .name = _("Coffee"),
+        .name = ITEM_NAME("Coffee"),
         .price = 1100,
         .description = COMPOUND_STRING(
             "Coffee that\n"
@@ -14847,7 +14847,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_ICE_CREAM] =
     {
-        .name = _("Ice Cream"),
+        .name = ITEM_NAME("Ice Cream"),
         .price = 1100,
         .description = COMPOUND_STRING(
             "Ice Cream that\n"
@@ -14863,7 +14863,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_FRENCH_FRIES] =
     {
-        .name = _("French Fries"),
+        .name = ITEM_NAME("French Fries"),
         .price = 1100,
         .description = COMPOUND_STRING(
             "French Fries that\n"
@@ -14879,7 +14879,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_BEER] =
     {
-        .name = _("Beer"),
+        .name = ITEM_NAME("Beer"),
         .price = 1100,
         .description = COMPOUND_STRING(
             "Beer that\n"
@@ -14895,7 +14895,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_MEAT] =
     {
-        .name = _("Meat"),
+        .name = ITEM_NAME("Meat"),
         .price = 1100,
         .description = COMPOUND_STRING(
             "Meat that can\n"
@@ -14911,7 +14911,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_POWER_FRUIT] =
     {
-        .name = _("Power Fruit"),
+        .name = ITEM_NAME("Power Fruit"),
         .price = 1100,
         .description = COMPOUND_STRING(
             "A fruit that\n"
@@ -14927,7 +14927,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_MUSCLE_YAM] =
     {
-        .name = _("Muscle Yam"),
+        .name = ITEM_NAME("Muscle Yam"),
         .price = 1100,
         .description = COMPOUND_STRING(
             "A yam that\n"
@@ -14943,7 +14943,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_SUPER_CARROT] =
     {
-        .name = _("Super Carrot"),
+        .name = ITEM_NAME("Super Carrot"),
         .price = 1100,
         .description = COMPOUND_STRING(
             "A carrot that\n"
@@ -14959,7 +14959,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_HAWK_RADISH] =
     {
-        .name = _("Hawk Radish"),
+        .name = ITEM_NAME("Hawk Radish"),
         .price = 1100,
         .description = COMPOUND_STRING(
             "A Radish that\n"
@@ -14975,7 +14975,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_DIGIPINE] =
     {
-        .name = _("Digipine"),
+        .name = ITEM_NAME("Digipine"),
         .price = 1100,
         .description = COMPOUND_STRING(
             "A fruit that\n"

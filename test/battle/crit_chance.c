@@ -4,7 +4,7 @@
 SINGLE_BATTLE_TEST("Critical hits without modifiers occur at different rates by generation")
 {
     u32 genConfig, passes, trials;
-    PARAMETRIZE { genConfig = GEN_1; passes = 1;  trials = 16; }   //  6.25% with Wobbuffet's base speed
+    PARAMETRIZE { genConfig = GEN_1; passes = 1;  trials = 16; }   //  6.25% with Lopmonx's base speed
     PARAMETRIZE { genConfig = GEN_2; passes = 17; trials = 256; }  // ~6.64%
     for (u32 j = GEN_3; j <= GEN_6; j++)
         PARAMETRIZE { genConfig = j; passes = 1,  trials = 16;  }  //  6.25%
@@ -14,9 +14,9 @@ SINGLE_BATTLE_TEST("Critical hits without modifiers occur at different rates by 
     PASSES_RANDOMLY(passes, trials, RNG_CRITICAL_HIT);
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_CRIT_CHANCE, genConfig);
-        ASSUME(GetSpeciesBaseSpeed(SPECIES_WOBBUFFET) == 33);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        ASSUME(GetSpeciesBaseSpeed(SPECIES_LOPMONX) == 33);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH); }
     } SCENE {
@@ -39,7 +39,7 @@ SINGLE_BATTLE_TEST("Crit Chance: Raising critical hit rate to 3 guarantees a cri
         ASSUME(GetMoveCriticalHitStage(MOVE_SLASH) == 1);
         ASSUME(gItemsInfo[ITEM_SCOPE_LENS].holdEffect == HOLD_EFFECT_SCOPE_LENS);
         PLAYER(SPECIES_TOGEKISS) { Ability(ABILITY_SUPER_LUCK); Item(ITEM_SCOPE_LENS); };
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SLASH); }
     } SCENE {

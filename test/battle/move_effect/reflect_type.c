@@ -32,12 +32,12 @@ SINGLE_BATTLE_TEST("Reflect Type does not affect any of Arceus' forms")
     }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(species);
     } WHEN {
         TURN { MOVE(player, MOVE_REFLECT_TYPE); }
     } SCENE {
-        MESSAGE("Wobbuffet used Reflect Type!");
+        MESSAGE("Lopmonx used Reflect Type!");
         MESSAGE("But it failed!");
     }
 }
@@ -73,12 +73,12 @@ SINGLE_BATTLE_TEST("Reflect Type does not affect any of Silvally's forms")
     }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(species);
     } WHEN {
         TURN { MOVE(player, MOVE_REFLECT_TYPE); }
     } SCENE {
-        MESSAGE("Wobbuffet used Reflect Type!");
+        MESSAGE("Lopmonx used Reflect Type!");
         MESSAGE("But it failed!");
     }
 }
@@ -151,11 +151,11 @@ SINGLE_BATTLE_TEST("Reflect Type copies a target's pure type")
 SINGLE_BATTLE_TEST("Reflect Type defaults to Normal type for the user's 1st and 2nd types if the target only has a 3rd type")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) == TYPE_PSYCHIC);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) == TYPE_PSYCHIC);
+        ASSUME(GetSpeciesType(SPECIES_LOPMONX, 0) == TYPE_PSYCHIC);
+        ASSUME(GetSpeciesType(SPECIES_LOPMONX, 1) == TYPE_PSYCHIC);
         ASSUME(GetSpeciesType(SPECIES_ARCANINE, 0) == TYPE_FIRE);
         ASSUME(GetSpeciesType(SPECIES_ARCANINE, 1) == TYPE_FIRE);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_ARCANINE);
     } WHEN {
         TURN { MOVE(opponent, MOVE_BURN_UP); }
@@ -168,13 +168,13 @@ SINGLE_BATTLE_TEST("Reflect Type defaults to Normal type for the user's 1st and 
         HP_BAR(player);
         MESSAGE("The opposing Arcanine burned itself out!");
         // Turn 2
-        MESSAGE("Wobbuffet used Forest's Curse!");
+        MESSAGE("Lopmonx used Forest's Curse!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FORESTS_CURSE, player);
         MESSAGE("Grass type was added to the opposing Arcanine!");
         // Turn 3
-        MESSAGE("Wobbuffet used Reflect Type!");
+        MESSAGE("Lopmonx used Reflect Type!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_REFLECT_TYPE, player);
-        MESSAGE("Wobbuffet became the same type as the opposing Arcanine!");
+        MESSAGE("Lopmonx became the same type as the opposing Arcanine!");
     } THEN {
         EXPECT_EQ(player->types[0], TYPE_NORMAL);
         EXPECT_EQ(player->types[1], TYPE_NORMAL);

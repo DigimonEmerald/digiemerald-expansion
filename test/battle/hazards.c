@@ -5,9 +5,9 @@ SINGLE_BATTLE_TEST("Hazards are applied based on order of set up")
 {
     GIVEN {
         PLAYER(SPECIES_WYNAUT);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_GRIMER);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TOXIC_SPIKES); }
         TURN { MOVE(opponent, MOVE_STEALTH_ROCK); }
@@ -21,10 +21,10 @@ SINGLE_BATTLE_TEST("Hazards are applied based on order of set up")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STEALTH_ROCK, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STICKY_WEB, opponent);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SPIKES, opponent);
-        MESSAGE("Wobbuffet was poisoned!");
-        MESSAGE("Pointed stones dug into Wobbuffet!");
-        MESSAGE("Wobbuffet was caught in a sticky web!");
-        MESSAGE("Wobbuffet was hurt by the spikes!");
+        MESSAGE("Lopmonx was poisoned!");
+        MESSAGE("Pointed stones dug into Lopmonx!");
+        MESSAGE("Lopmonx was caught in a sticky web!");
+        MESSAGE("Lopmonx was hurt by the spikes!");
         MESSAGE("The poison spikes disappeared from the ground around your team!");
         MESSAGE("Pointed stones dug into Wynaut!");
         MESSAGE("Wynaut was caught in a sticky web!");

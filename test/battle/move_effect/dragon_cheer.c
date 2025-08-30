@@ -9,8 +9,8 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Dragon Cheer fails in a single battle")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_DRAGON_CHEER); }
     } SCENE {
@@ -23,17 +23,17 @@ DOUBLE_BATTLE_TEST("Dragon Cheer increases critical hit ratio by 1 on non-Dragon
     bool32 useDragonCheer = 0;
     u32 genConfig = 0, chance = 0;
     for (u32 j = GEN_1; j <= GEN_9; j++) {
-        PARAMETRIZE { genConfig = j; useDragonCheer = FALSE; chance = j >= GEN_7 ? 24 : 16; } // 6.25% with Wobbuffet's base speed
-        PARAMETRIZE { genConfig = j; useDragonCheer = TRUE;  chance = 8; }  // 12.5% with Wobbuffet's base speed
+        PARAMETRIZE { genConfig = j; useDragonCheer = FALSE; chance = j >= GEN_7 ? 24 : 16; } // 6.25% with Lopmonx's base speed
+        PARAMETRIZE { genConfig = j; useDragonCheer = TRUE;  chance = 8; }  // 12.5% with Lopmonx's base speed
     }
     PASSES_RANDOMLY(1, chance, RNG_CRITICAL_HIT);
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_CRIT_CHANCE, genConfig);
         ASSUME(GetMoveCriticalHitStage(MOVE_SCRATCH) == 0);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN {
             if (useDragonCheer)
@@ -43,7 +43,7 @@ DOUBLE_BATTLE_TEST("Dragon Cheer increases critical hit ratio by 1 on non-Dragon
     } SCENE {
         if (useDragonCheer) {
             ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_CHEER, playerLeft);
-            MESSAGE("Wobbuffet is getting pumped!");
+            MESSAGE("Lopmonx is getting pumped!");
         }
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, playerRight);
         MESSAGE("A critical hit!");
@@ -65,10 +65,10 @@ DOUBLE_BATTLE_TEST("Dragon Cheer increases critical hit ratio by 2 on Dragon typ
         WITH_CONFIG(GEN_CONFIG_CRIT_CHANCE, genConfig);
         ASSUME(GetMoveCriticalHitStage(MOVE_SCRATCH) == 0);
         ASSUME(GetSpeciesBaseSpeed(SPECIES_DRATINI) == 50);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_DRATINI);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN {
             if (useDragonCheer)
@@ -90,10 +90,10 @@ DOUBLE_BATTLE_TEST("Dragon Cheer fails if critical hit stage was already increas
     GIVEN {
         ASSUME(GetMoveCriticalHitStage(MOVE_SLASH) == 1);
         ASSUME(GetMoveEffect(MOVE_FOCUS_ENERGY) == EFFECT_FOCUS_ENERGY);
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_FOCUS_ENERGY); MOVE(playerRight, MOVE_DRAGON_CHEER, target: playerLeft); }
     } SCENE {
@@ -108,15 +108,15 @@ AI_DOUBLE_BATTLE_TEST("AI uses Dragon Cheer")
 {
     u32 species;
     PARAMETRIZE { species = SPECIES_DRATINI; }
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; }
+    PARAMETRIZE { species = SPECIES_LOPMONX; }
 
     GIVEN {
         ASSUME(GetSpeciesType(SPECIES_DRATINI, 0) == TYPE_DRAGON);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) != TYPE_DRAGON);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) != TYPE_DRAGON);
+        ASSUME(GetSpeciesType(SPECIES_LOPMONX, 0) != TYPE_DRAGON);
+        ASSUME(GetSpeciesType(SPECIES_LOPMONX, 1) != TYPE_DRAGON);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
-        PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_POUND, MOVE_CELEBRATE); }
-        PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_POUND, MOVE_CELEBRATE); }
+        PLAYER(SPECIES_LOPMONX) { Moves(MOVE_POUND, MOVE_CELEBRATE); }
+        PLAYER(SPECIES_LOPMONX) { Moves(MOVE_POUND, MOVE_CELEBRATE); }
         OPPONENT(species) { Moves(MOVE_DRAGON_CHEER, MOVE_POUND); }
         OPPONENT(species) { Moves(MOVE_DRAGON_CHEER, MOVE_POUND); }
     } WHEN {

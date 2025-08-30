@@ -6,7 +6,7 @@ SINGLE_BATTLE_TEST("Color Change changes the type of a Pokemon being hit by a mo
     GIVEN {
         ASSUME(GetSpeciesType(SPECIES_KECLEON, 0) != TYPE_PSYCHIC && GetSpeciesType(SPECIES_KECLEON, 1) != TYPE_PSYCHIC);
         ASSUME(GetMoveType(MOVE_PSYWAVE) == TYPE_PSYCHIC);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_KECLEON) { Ability(ABILITY_COLOR_CHANGE); }
     } WHEN {
         TURN { MOVE(player, MOVE_PSYWAVE); }
@@ -22,7 +22,7 @@ SINGLE_BATTLE_TEST("Color Change does not change the type when hit by a move tha
     GIVEN {
         ASSUME(GetSpeciesType(SPECIES_KECLEON, 0) == TYPE_NORMAL || GetSpeciesType(SPECIES_KECLEON, 1) == TYPE_NORMAL);
         ASSUME(GetMoveType(MOVE_SCRATCH) == TYPE_NORMAL);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_KECLEON) { Ability(ABILITY_COLOR_CHANGE); }
     } WHEN {
         TURN { MOVE(player, MOVE_SCRATCH); }
@@ -72,7 +72,7 @@ SINGLE_BATTLE_TEST("Color Change does not change the type of a dual-type Pokemon
 SINGLE_BATTLE_TEST("Color Change changes the user to Electric type if hit by a move while the opponent is under the effect of Electrify")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_KECLEON) { Ability(ABILITY_COLOR_CHANGE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_ELECTRIFY); MOVE(player, MOVE_PSYCHO_CUT); }
@@ -86,7 +86,7 @@ SINGLE_BATTLE_TEST("Color Change changes the user to Electric type if hit by a m
 SINGLE_BATTLE_TEST("Color Change changes the type when a Pokemon is hit by Future Sight")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_KECLEON) { Ability(ABILITY_COLOR_CHANGE); }
     } WHEN {
         TURN { MOVE(player, MOVE_FUTURE_SIGHT); }
@@ -103,7 +103,7 @@ SINGLE_BATTLE_TEST("Color Change changes the type when a Pokemon is hit by Futur
 SINGLE_BATTLE_TEST("Color Change changes the type when a Pokemon is hit by Doom Desire")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_KECLEON) { Ability(ABILITY_COLOR_CHANGE); }
     } WHEN {
         TURN { MOVE(player, MOVE_DOOM_DESIRE); }
@@ -120,7 +120,7 @@ SINGLE_BATTLE_TEST("Color Change changes the type when a Pokemon is hit by Doom 
 SINGLE_BATTLE_TEST("Color Change changes the type to Electric when a Pokemon is hit by a forseen attack under the effect of Electrify")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_KECLEON) { Ability(ABILITY_COLOR_CHANGE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_FUTURE_SIGHT); }
@@ -137,7 +137,7 @@ SINGLE_BATTLE_TEST("Color Change changes the type to Electric when a Pokemon is 
 SINGLE_BATTLE_TEST("Color Change changes the type to Normal when a Pokemon is hit by a forseen attack under the effect of Normalize")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_NORMALIZE); }
+        PLAYER(SPECIES_LOPMONX) { Ability(ABILITY_NORMALIZE); }
         OPPONENT(SPECIES_KECLEON) { Ability(ABILITY_COLOR_CHANGE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_FUTURE_SIGHT); }
@@ -145,7 +145,7 @@ SINGLE_BATTLE_TEST("Color Change changes the type to Normal when a Pokemon is hi
         TURN { }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FUTURE_SIGHT, player);
-        MESSAGE("Wobbuffet used Soak!");
+        MESSAGE("Lopmonx used Soak!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SOAK, player);
         MESSAGE("The opposing Kecleon transformed into the Water type!");
         MESSAGE("The opposing Kecleon took the Future Sight attack!");

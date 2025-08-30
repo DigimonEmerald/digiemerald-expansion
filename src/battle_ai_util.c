@@ -5739,18 +5739,18 @@ bool32 IsNaturalEnemy(u32 speciesAttacker, u32 speciesTarget)
 
     switch (speciesAttacker)
     {
-    case SPECIES_ZANGOOSE:
-        return (speciesTarget == SPECIES_SEVIPER);
-    case SPECIES_SEVIPER:
-        return (speciesTarget == SPECIES_ZANGOOSE);
+    case SPECIES_DARKTYRMON:
+        return (speciesTarget == SPECIES_DARKTYRMON_X);
+    case SPECIES_DARKTYRMON_X:
+        return (speciesTarget == SPECIES_DARKTYRMON);
     case SPECIES_HEATMOR:
         return (speciesTarget == SPECIES_DURANT);
     case SPECIES_DURANT:
         return (speciesTarget == SPECIES_HEATMOR);
-    case SPECIES_SABLEYE:
+    case SPECIES_BLGARGOMON:
         return (speciesTarget == SPECIES_CARBINK);
     case SPECIES_MAREANIE:
-        return (speciesTarget == SPECIES_CORSOLA);
+        return (speciesTarget == SPECIES_PATAMON);
     default:
         return FALSE;
     }

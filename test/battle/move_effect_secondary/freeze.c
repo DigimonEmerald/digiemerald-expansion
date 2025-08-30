@@ -13,8 +13,8 @@ SINGLE_BATTLE_TEST("Powder Snow inflicts freeze")
 #endif
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_POWDER_SNOW); }
     } SCENE {
@@ -33,7 +33,7 @@ SINGLE_BATTLE_TEST("Powder Snow cannot freeze an Ice-type Pokémon")
 {
     GIVEN {
         ASSUME(GetSpeciesType(SPECIES_SNORUNT, 0) == TYPE_ICE);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_SNORUNT);
     } WHEN {
         TURN { MOVE(player, MOVE_POWDER_SNOW); }
@@ -50,12 +50,12 @@ SINGLE_BATTLE_TEST("Powder Snow cannot freeze an Ice-type Pokémon")
 SINGLE_BATTLE_TEST("Freeze cannot be inflicted in Sunlight")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_SUNNY_DAY); MOVE(player, MOVE_ICE_BEAM); }
     } SCENE {
-        NOT MESSAGE("Wobbuffet was frozen solid!");
+        NOT MESSAGE("Lopmonx was frozen solid!");
     }
 }
 

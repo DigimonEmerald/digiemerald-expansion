@@ -102,7 +102,7 @@ SINGLE_BATTLE_TEST("Effect Spore will check if it can inflict status onto attack
     } SCENE {
         ABILITY_POPUP(opponent, ABILITY_EFFECT_SPORE);
         ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_SLP, player);
-        MESSAGE("The opposing Breloom's Effect Spore made Wobbuffet sleep!");
+        MESSAGE("The opposing Breloom's Effect Spore made Lopmonx sleep!");
         STATUS_ICON(player, sleep: TRUE);
     }
 }

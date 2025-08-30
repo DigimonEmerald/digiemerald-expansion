@@ -16,8 +16,8 @@ SINGLE_BATTLE_TEST("Lansat Berry raises the holder's critical-hit-ratio by two s
     PARAMETRIZE { move = MOVE_DRAGON_RAGE; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { MaxHP(160); HP(80); Item(ITEM_LANSAT_BERRY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { MaxHP(160); HP(80); Item(ITEM_LANSAT_BERRY); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, move); }
     } SCENE {
@@ -25,11 +25,11 @@ SINGLE_BATTLE_TEST("Lansat Berry raises the holder's critical-hit-ratio by two s
         if (move == MOVE_SCRATCH) {
             NONE_OF {
                 ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-                MESSAGE("Wobbuffet used the Lansat Berry to get pumped!");
+                MESSAGE("Lopmonx used the Lansat Berry to get pumped!");
             }
         } else {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-            MESSAGE("Wobbuffet used the Lansat Berry to get pumped!");
+            MESSAGE("Lopmonx used the Lansat Berry to get pumped!");
         }
     }
 }
@@ -38,7 +38,7 @@ SINGLE_BATTLE_TEST("Lansat Berry raises the holder's critical-hit-ratio by two s
 {
     GIVEN {
         PLAYER(SPECIES_BELLSPROUT) { MaxHP(80); HP(80); Ability(ABILITY_GLUTTONY); Item(ITEM_LANSAT_BERRY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DRAGON_RAGE); }
     } SCENE {
@@ -59,14 +59,14 @@ SINGLE_BATTLE_TEST("Lansat Berry raises the holder's critical-hit-ratio by 2 sta
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_CRIT_CHANCE, genConfig);
         ASSUME(GetMoveCriticalHitStage(MOVE_SCRATCH) == 0);
-        PLAYER(SPECIES_WOBBUFFET) { MaxHP(160); HP(80); Item(ITEM_LANSAT_BERRY); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { MaxHP(160); HP(80); Item(ITEM_LANSAT_BERRY); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DRAGON_RAGE); MOVE(player, MOVE_SCRATCH); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DRAGON_RAGE, opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-        MESSAGE("Wobbuffet used the Lansat Berry to get pumped!");
+        MESSAGE("Lopmonx used the Lansat Berry to get pumped!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, player);
         MESSAGE("A critical hit!");
     }

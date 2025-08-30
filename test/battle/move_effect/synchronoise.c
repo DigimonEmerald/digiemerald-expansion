@@ -4,10 +4,10 @@
 DOUBLE_BATTLE_TEST("Synchronoise hits all Pokemon that share a type with the attacker")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SYNCHRONOISE); }
     } SCENE {
@@ -21,18 +21,18 @@ DOUBLE_BATTLE_TEST("Synchronoise hits all Pokemon that share a type with the att
 DOUBLE_BATTLE_TEST("Synchronoise will fail if there is no corresponding typing on the field")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_BULBASAUR);
-        OPPONENT(SPECIES_BULBASAUR);
-        OPPONENT(SPECIES_BULBASAUR);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_ARGOMON);
+        OPPONENT(SPECIES_ARGOMON);
+        OPPONENT(SPECIES_ARGOMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SYNCHRONOISE); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_SYNCHRONOISE, playerLeft);
-        MESSAGE("Wobbuffet used Synchronoise!");
-        MESSAGE("It doesn't affect the opposing Bulbasaur…");
-        MESSAGE("It doesn't affect Bulbasaur…");
-        MESSAGE("It doesn't affect the opposing Bulbasaur…");
+        MESSAGE("Lopmonx used Synchronoise!");
+        MESSAGE("It doesn't affect the opposing Argomon…");
+        MESSAGE("It doesn't affect Argomon…");
+        MESSAGE("It doesn't affect the opposing Argomon…");
         NOT MESSAGE("But it failed!");
     }
 }
@@ -40,10 +40,10 @@ DOUBLE_BATTLE_TEST("Synchronoise will fail if there is no corresponding typing o
 DOUBLE_BATTLE_TEST("Synchronoise will hit if there is at least one target")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_BULBASAUR);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_BULBASAUR);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_ARGOMON);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_ARGOMON);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_SYNCHRONOISE); }
     } SCENE {
@@ -60,10 +60,10 @@ DOUBLE_BATTLE_TEST("Synchronoise will hit if there is at least one target")
 DOUBLE_BATTLE_TEST("Synchronoise will fail if the corresponding typing mon protects")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_BULBASAUR);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_BULBASAUR);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_ARGOMON);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_ARGOMON);
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_PROTECT); MOVE(playerLeft, MOVE_SYNCHRONOISE); }
     } SCENE {

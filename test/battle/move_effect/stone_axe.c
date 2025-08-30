@@ -9,9 +9,9 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Stone Axe sets up hazards after hitting the target")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_STONE_AXE); }
         TURN { SWITCH(opponent, 1); }
@@ -20,17 +20,17 @@ SINGLE_BATTLE_TEST("Stone Axe sets up hazards after hitting the target")
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STONE_AXE, player);
         HP_BAR(opponent);
         MESSAGE("Pointed stones float in the air around the opposing team!");
-        MESSAGE("2 sent out Wobbuffet!");
+        MESSAGE("2 sent out Lopmonx!");
         HP_BAR(opponent, damage: maxHP / 8);
-        MESSAGE("Pointed stones dug into the opposing Wobbuffet!");
+        MESSAGE("Pointed stones dug into the opposing Lopmonx!");
     }
 }
 
 SINGLE_BATTLE_TEST("Stone Axe can set up pointed stones only once")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(player, MOVE_STONE_AXE); }
@@ -66,8 +66,8 @@ SINGLE_BATTLE_TEST("Stone Axe can set up pointed stones only once")
 SINGLE_BATTLE_TEST("Stone Axe sets up hazards after any ability activation")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_SKARMORY) { Ability(ABILITY_WEAK_ARMOR); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_PHASCOMON) { Ability(ABILITY_WEAK_ARMOR); }
     } WHEN {
         TURN { MOVE(player, MOVE_STONE_AXE); }
     } SCENE {
@@ -80,15 +80,15 @@ SINGLE_BATTLE_TEST("Stone Axe sets up hazards after any ability activation")
 SINGLE_BATTLE_TEST("Stone Axe fails to set up hazards if user faints")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_ROCKY_HELMET); }
+        PLAYER(SPECIES_LOPMONX) { HP(1); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_ROCKY_HELMET); }
     } WHEN {
         TURN { MOVE(player, MOVE_STONE_AXE); SEND_OUT(player, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STONE_AXE, player);
         HP_BAR(player);
-        MESSAGE("Wobbuffet was hurt by the opposing Wobbuffet's Rocky Helmet!");
+        MESSAGE("Lopmonx was hurt by the opposing Lopmonx's Rocky Helmet!");
         NOT MESSAGE("Pointed stones float in the air around the opposing team!");
     }
 }

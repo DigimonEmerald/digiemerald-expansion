@@ -62,9 +62,9 @@ DOUBLE_BATTLE_TEST("Leech Seed will drain HP based on speed of the drained mon")
 {
     GIVEN {
         PLAYER(SPECIES_WYNAUT) { Speed(1); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(2); }
+        PLAYER(SPECIES_LOPMONX) { Speed(2); }
         OPPONENT(SPECIES_WYNAUT) { Speed(3); }
-        OPPONENT(SPECIES_WOBBUFFET) { Speed(4); }
+        OPPONENT(SPECIES_LOPMONX) { Speed(4); }
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_LEECH_SEED, target: opponentLeft);
@@ -92,7 +92,7 @@ SINGLE_BATTLE_TEST("Leech Seeded recovers health through Substitute")
 {
     GIVEN {
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SUBSTITUTE); }
         TURN { MOVE(player, MOVE_LEECH_SEED); }

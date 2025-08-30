@@ -239,7 +239,7 @@ DOUBLE_BATTLE_TEST("Booster Energy activates on any terrain")
 {
     GIVEN {
         PLAYER(SPECIES_IRON_MOTH) { Speed(110); Ability(ABILITY_QUARK_DRIVE); Item(ITEM_BOOSTER_ENERGY); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(80); }
+        PLAYER(SPECIES_LOPMONX) { Speed(80); }
         OPPONENT(SPECIES_TAPU_BULU) { Speed(100); Ability(ABILITY_GRASSY_SURGE); }
         OPPONENT(SPECIES_TAPU_KOKO) { Speed(10); Ability(ABILITY_ELECTRIC_SURGE); };
     } WHEN {
@@ -254,8 +254,8 @@ DOUBLE_BATTLE_TEST("Booster Energy activates on any terrain")
 DOUBLE_BATTLE_TEST("Booster Energy activates on air locked sun")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_LOPMONX);
         PLAYER(SPECIES_RAGING_BOLT) { Ability(ABILITY_PROTOSYNTHESIS); Item(ITEM_BOOSTER_ENERGY); }
         OPPONENT(SPECIES_PSYDUCK) { Ability(ABILITY_CLOUD_NINE); }
         OPPONENT(SPECIES_TORKOAL) { Ability(ABILITY_DROUGHT); };
@@ -272,7 +272,7 @@ DOUBLE_BATTLE_TEST("Booster Energy will not activate on terrain if user has Prot
 {
     GIVEN {
         PLAYER(SPECIES_RAGING_BOLT) { Speed(110); Ability(ABILITY_PROTOSYNTHESIS); Item(ITEM_BOOSTER_ENERGY); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(80); }
+        PLAYER(SPECIES_LOPMONX) { Speed(80); }
         OPPONENT(SPECIES_TAPU_BULU) { Speed(100); Ability(ABILITY_GRASSY_SURGE); }
         OPPONENT(SPECIES_TAPU_KOKO) { Speed(10); Ability(ABILITY_ELECTRIC_SURGE); };
     } WHEN {

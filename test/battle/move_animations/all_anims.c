@@ -1166,20 +1166,20 @@ SINGLE_BATTLE_TEST("Move Animations occur before their stat change animations - 
     GIVEN {
         PLAYER(species) {
             HP(9997); MaxHP(9999); Item(ITEM_ORAN_BERRY);
-            if (species == SPECIES_WOBBUFFET) Gender(MON_FEMALE);
+            if (species == SPECIES_LOPMONX) Gender(MON_FEMALE);
             if (gMovesInfo[move].effect == EFFECT_LAST_RESORT) Moves(move, MOVE_POUND);
             if (species == SPECIES_KLINKLANG) Ability(ABILITY_PLUS);
         }
-        PLAYER(SPECIES_WOBBUFFET)   {
+        PLAYER(SPECIES_LOPMONX)   {
             Gender(MON_MALE); MaxHP(9999); Moves(MOVE_POUND);
             HP(gMovesInfo[move].effect == EFFECT_REVIVAL_BLESSING ? 0 : 9998);
         }
-        OPPONENT(SPECIES_WOBBUFFET) {
+        OPPONENT(SPECIES_LOPMONX) {
             Gender(MON_MALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); Ability(ABILITY_TELEPATHY);
             if (gMovesInfo[move].effect != EFFECT_BESTOW)
                 Item(ITEM_ORAN_BERRY);
         }
-        OPPONENT(SPECIES_WOBBUFFET) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
+        OPPONENT(SPECIES_LOPMONX) { Gender(MON_FEMALE); HP(9998); MaxHP(9999); SpDefense(9999); Defense(9999); }
     } WHEN {
         WhenSingles(move, player, opponent);
     } SCENE {
@@ -1551,25 +1551,25 @@ DOUBLE_BATTLE_TEST("Z-Moves don't leak when used - Doubles (opponentRight to pla
 //  Max Moves
 
 // Tera Blast and all type variants
-#define TERA_BLAST_PARAMETERS PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_NORMAL; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_FIGHTING; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_FLYING; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_POISON; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_GROUND; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_ROCK; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_BUG; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_GHOST; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_STEEL; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_WATER; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_FIRE; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_GRASS; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_ELECTRIC; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_PSYCHIC; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_ICE; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_DRAGON; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_DARK; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_FAIRY; } \
-    PARAMETRIZE { species = SPECIES_WOBBUFFET; move = MOVE_TERA_BLAST; type = TYPE_STELLAR; }
+#define TERA_BLAST_PARAMETERS PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_NORMAL; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_FIGHTING; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_FLYING; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_POISON; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_GROUND; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_ROCK; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_BUG; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_GHOST; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_STEEL; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_WATER; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_FIRE; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_GRASS; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_ELECTRIC; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_PSYCHIC; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_ICE; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_DRAGON; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_DARK; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_FAIRY; } \
+    PARAMETRIZE { species = SPECIES_LOPMONX; move = MOVE_TERA_BLAST; type = TYPE_STELLAR; }
 
 SINGLE_BATTLE_TEST("Tera Blast doesn't leak when used - Singles (player to opponent)")
 {
@@ -1578,7 +1578,7 @@ SINGLE_BATTLE_TEST("Tera Blast doesn't leak when used - Singles (player to oppon
     TERA_BLAST_PARAMETERS;
     GIVEN {
         PLAYER(species) { TeraType(type); }
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_FOCUS_SASH); }
     } WHEN {
         TURN { MOVE(player, move, gimmick: GIMMICK_TERA); }
     } SCENE {
@@ -1599,7 +1599,7 @@ SINGLE_BATTLE_TEST("Tera Blast doesn't leak when used - Singles (opponent to pla
     u32 species, move, type;
     TERA_BLAST_PARAMETERS;
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
+        PLAYER(SPECIES_LOPMONX) { Item(ITEM_FOCUS_SASH); }
         OPPONENT(species) { TeraType(type); }
     } WHEN {
         TURN { MOVE(opponent, move, gimmick: GIMMICK_TERA); }
@@ -1623,7 +1623,7 @@ DOUBLE_BATTLE_TEST("Tera Blast doesn't leak when used - Doubles (playerLeft to o
     GIVEN {
         PLAYER(species) { TeraType(type); }
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_FOCUS_SASH); }
         OPPONENT(SPECIES_WYNAUT) { Item(ITEM_FOCUS_SASH); }
     } WHEN {
         TURN { MOVE(playerLeft, move, gimmick: GIMMICK_TERA, target: opponentLeft); }
@@ -1647,7 +1647,7 @@ DOUBLE_BATTLE_TEST("Tera Blast doesn't leak when used - Doubles (playerLeft to o
     GIVEN {
         PLAYER(species) { TeraType(type); }
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_FOCUS_SASH); }
         OPPONENT(SPECIES_WYNAUT) { Item(ITEM_FOCUS_SASH); }
     } WHEN {
         TURN { MOVE(playerLeft, move, gimmick: GIMMICK_TERA, target: opponentRight); }
@@ -1671,7 +1671,7 @@ DOUBLE_BATTLE_TEST("Tera Blast doesn't leak when used - Doubles (playerRight to 
     GIVEN {
         PLAYER(SPECIES_WYNAUT);
         PLAYER(species) { TeraType(type); }
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_FOCUS_SASH); }
         OPPONENT(SPECIES_WYNAUT) { Item(ITEM_FOCUS_SASH); }
     } WHEN {
         TURN { MOVE(playerRight, move, gimmick: GIMMICK_TERA, target: opponentLeft); }
@@ -1695,7 +1695,7 @@ DOUBLE_BATTLE_TEST("Tera Blast doesn't leak when used - Doubles (playerRight to 
     GIVEN {
         PLAYER(SPECIES_WYNAUT);
         PLAYER(species) { TeraType(type); }
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_FOCUS_SASH); }
         OPPONENT(SPECIES_WYNAUT) { Item(ITEM_FOCUS_SASH); }
     } WHEN {
         TURN { MOVE(playerRight, move, gimmick: GIMMICK_TERA, target: opponentRight); }
@@ -1719,7 +1719,7 @@ DOUBLE_BATTLE_TEST("Tera Blast doesn't leak when used - Doubles (opponentLeft to
     GIVEN {
         PLAYER(species) { Item(ITEM_FOCUS_SASH); }
         PLAYER(SPECIES_WYNAUT) { Item(ITEM_FOCUS_SASH); }
-        OPPONENT(SPECIES_WOBBUFFET) { TeraType(type); }
+        OPPONENT(SPECIES_LOPMONX) { TeraType(type); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponentLeft, move, gimmick: GIMMICK_TERA, target: playerLeft); }
@@ -1743,7 +1743,7 @@ DOUBLE_BATTLE_TEST("Tera Blast doesn't leak when used - Doubles (opponentLeft to
     GIVEN {
         PLAYER(species) { Item(ITEM_FOCUS_SASH); }
         PLAYER(SPECIES_WYNAUT) { Item(ITEM_FOCUS_SASH); }
-        OPPONENT(SPECIES_WOBBUFFET) { TeraType(type); }
+        OPPONENT(SPECIES_LOPMONX) { TeraType(type); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponentLeft, move, gimmick: GIMMICK_TERA, target: playerRight); }
@@ -1767,7 +1767,7 @@ DOUBLE_BATTLE_TEST("Tera Blast doesn't leak when used - Doubles (opponentRight t
     GIVEN {
         PLAYER(species) { Item(ITEM_FOCUS_SASH); }
         PLAYER(SPECIES_WYNAUT) { Item(ITEM_FOCUS_SASH); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT) { TeraType(type); }
     } WHEN {
         TURN { MOVE(opponentRight, move, gimmick: GIMMICK_TERA, target: playerLeft); }
@@ -1791,7 +1791,7 @@ DOUBLE_BATTLE_TEST("Tera Blast doesn't leak when used - Doubles (opponentRight t
     GIVEN {
         PLAYER(species) { Item(ITEM_FOCUS_SASH); }
         PLAYER(SPECIES_WYNAUT) { Item(ITEM_FOCUS_SASH); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT) { TeraType(type); }
     } WHEN {
         TURN { MOVE(opponentRight, move, gimmick: GIMMICK_TERA, target: playerRight); }

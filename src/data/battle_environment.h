@@ -292,7 +292,7 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         },
     },
 
-    [BATTLE_ENVIRONMENT_GROUDON] =
+    [BATTLE_ENVIRONMENT_GEKOMON] =
     {
         .background =
         {
@@ -300,11 +300,11 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
             .tilemap = gBattleEnvironmentTilemap_Cave,
             .entryTileset = gBattleEnvironmentAnimTiles_Cave,
             .entryTilemap = gBattleEnvironmentAnimTilemap_Cave,
-            .palette = gBattleEnvironmentPalette_Groudon,
+            .palette = gBattleEnvironmentPalette_Gekomon,
         },
     },
 
-    [BATTLE_ENVIRONMENT_KYOGRE] =
+    [BATTLE_ENVIRONMENT_GATOMON_X] =
     {
         .background =
         {
@@ -312,19 +312,19 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
             .tilemap = gBattleEnvironmentTilemap_Water,
             .entryTileset = gBattleEnvironmentAnimTiles_Underwater,
             .entryTilemap = gBattleEnvironmentAnimTilemap_Underwater,
-            .palette = gBattleEnvironmentPalette_Kyogre,
+            .palette = gBattleEnvironmentPalette_Gatomon_x,
         },
     },
 
-    [BATTLE_ENVIRONMENT_RAYQUAZA] =
+    [BATTLE_ENVIRONMENT_GEOGREYMON] =
     {
         .background =
         {
-            .tileset = gBattleEnvironmentTiles_Rayquaza,
-            .tilemap = gBattleEnvironmentTilemap_Rayquaza,
-            .entryTileset = gBattleEnvironmentAnimTiles_Rayquaza,
-            .entryTilemap = gBattleEnvironmentAnimTilemap_Rayquaza,
-            .palette = gBattleEnvironmentPalette_Rayquaza,
+            .tileset = gBattleEnvironmentTiles_Geogreymon,
+            .tilemap = gBattleEnvironmentTilemap_Geogreymon,
+            .entryTileset = gBattleEnvironmentAnimTiles_Geogreymon,
+            .entryTilemap = gBattleEnvironmentAnimTilemap_Geogreymon,
+            .palette = gBattleEnvironmentPalette_Geogreymon,
         },
     },
 

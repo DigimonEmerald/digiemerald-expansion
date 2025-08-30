@@ -21,7 +21,7 @@ SINGLE_BATTLE_TEST("Intrepid Sword raises Attack by one stage every time it swit
 {
     GIVEN {
         WITH_CONFIG(GEN_INTREPID_SWORD, GEN_8);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_ZACIAN) { Ability(ABILITY_INTREPID_SWORD); }
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {

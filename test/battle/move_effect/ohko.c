@@ -10,8 +10,8 @@ SINGLE_BATTLE_TEST("OHKO moves can hit semi-invulnerable mons when the user has 
 {
     GIVEN {
         ASSUME(GetItemHoldEffect(ITEM_FOCUS_SASH) == HOLD_EFFECT_FOCUS_SASH);
-        PLAYER(SPECIES_WOBBUFFET) { Ability(ABILITY_NO_GUARD); }
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX) { Ability(ABILITY_NO_GUARD); }
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_FLY); }
         TURN { MOVE(player, MOVE_FISSURE); }
@@ -24,21 +24,21 @@ SINGLE_BATTLE_TEST("OHKO moves can hit semi-invulnerable mons when the user has 
 SINGLE_BATTLE_TEST("OHKO moves can can be endured by Focus Sash")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_FOCUS_SASH); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_FOCUS_SASH); }
     } WHEN {
         TURN { MOVE(player, MOVE_FISSURE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FISSURE, player);
         HP_BAR(opponent, hp: 1);
-        MESSAGE("The opposing Wobbuffet hung on using its Focus Sash!");
+        MESSAGE("The opposing Lopmonx hung on using its Focus Sash!");
     }
 }
 
 SINGLE_BATTLE_TEST("OHKO moves can can be endured by Sturdy")
 {
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_GEODUDE) { Ability(ABILITY_STURDY); }
     } WHEN {
         TURN { MOVE(player, MOVE_FISSURE); }

@@ -656,12 +656,12 @@ static u8 GetBattleEnvironmentOverride(void)
     {
         switch (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL))
         {
-        case SPECIES_GROUDON:
-            return BATTLE_ENVIRONMENT_GROUDON;
-        case SPECIES_KYOGRE:
-            return BATTLE_ENVIRONMENT_KYOGRE;
-        case SPECIES_RAYQUAZA:
-            return BATTLE_ENVIRONMENT_RAYQUAZA;
+        case SPECIES_GEKOMON:
+            return BATTLE_ENVIRONMENT_GEKOMON;
+        case SPECIES_GATOMON_X:
+            return BATTLE_ENVIRONMENT_GATOMON_X;
+        case SPECIES_GEOGREYMON:
+            return BATTLE_ENVIRONMENT_GEOGREYMON;
         default:
             return gBattleEnvironment;
         }
@@ -1048,8 +1048,8 @@ void DrawBattleEntryBackground(void)
         case SPECIES_GATOMON_X:
             LoadBattleEnvironmentEntryGfx(BATTLE_ENVIRONMENT_UNDERWATER);
             break;
-        case SPECIES_RAYQUAZA:
-            LoadBattleEnvironmentEntryGfx(BATTLE_ENVIRONMENT_RAYQUAZA);
+        case SPECIES_GEOGREYMON:
+            LoadBattleEnvironmentEntryGfx(BATTLE_ENVIRONMENT_GEOGREYMON);
             break;
         default:
             DecompressDataWithHeaderVram(gBattleEnvironmentInfo[gBattleEnvironment].background.entryTileset, (void *)(BG_CHAR_ADDR(1)));

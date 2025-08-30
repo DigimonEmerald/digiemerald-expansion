@@ -19,7 +19,7 @@ SINGLE_BATTLE_TEST("Eject Pack does not cause the new Pokémon to lose HP due to
         ANIMATION(ANIM_TYPE_MOVE, MOVE_OVERHEAT, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
-        MESSAGE("Wobbuffet is switched out with the Eject Pack!");
+        MESSAGE("Lopmonx is switched out with the Eject Pack!");
         SEND_IN_MESSAGE("Wynaut");
         NOT HP_BAR(player);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
@@ -268,11 +268,11 @@ DOUBLE_BATTLE_TEST("Eject Pack: Only the fastest Eject Pack will activate after 
     PARAMETRIZE { speed = 11; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(10); Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_LOPMONX) { Speed(10); Item(ITEM_EJECT_PACK); }
         PLAYER(SPECIES_WYNAUT) { Speed(speed); Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(3); }
+        PLAYER(SPECIES_LOPMONX) { Speed(3); }
         OPPONENT(SPECIES_WYNAUT)  { HP(1); Speed(4); }
-        OPPONENT(SPECIES_WOBBUFFET)  { Speed(5); }
+        OPPONENT(SPECIES_LOPMONX)  { Speed(5); }
         OPPONENT(SPECIES_EKANS) { Speed(6); Ability(ABILITY_INTIMIDATE); }
     } WHEN {
         TURN {
@@ -306,11 +306,11 @@ DOUBLE_BATTLE_TEST("Eject Pack: Only the fastest Eject Pack will activate after 
     PARAMETRIZE { speed = 11; }
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET) { Speed(10); Item(ITEM_EJECT_PACK); }
+        PLAYER(SPECIES_LOPMONX) { Speed(10); Item(ITEM_EJECT_PACK); }
         PLAYER(SPECIES_WYNAUT) { Speed(speed); Item(ITEM_EJECT_PACK); }
-        PLAYER(SPECIES_WOBBUFFET) { Speed(1); }
+        PLAYER(SPECIES_LOPMONX) { Speed(1); }
         OPPONENT(SPECIES_WYNAUT)  { HP(1); Speed(4); }
-        OPPONENT(SPECIES_WOBBUFFET)  { Speed(5); }
+        OPPONENT(SPECIES_LOPMONX)  { Speed(5); }
         OPPONENT(SPECIES_WYNAUT)  { Speed(4); }
         OPPONENT(SPECIES_EKANS) { Speed(6); Ability(ABILITY_INTIMIDATE); }
     } WHEN {

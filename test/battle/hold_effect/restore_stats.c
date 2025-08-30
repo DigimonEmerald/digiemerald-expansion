@@ -178,9 +178,9 @@ SINGLE_BATTLE_TEST("White Herb wont have time to activate if it is knocked off o
         MESSAGE("Otamamon_red's Weak Armor lowered its Defense!");
         MESSAGE("Otamamon_red's Weak Armor raised its Speed!");
         if (move == MOVE_KNOCK_OFF) {
-            MESSAGE("The opposing Wobbuffet knocked off Slugma's White Herb!");
+            MESSAGE("The opposing Lopmonx knocked off Slugma's White Herb!");
         } else if (move == MOVE_THIEF) {
-            MESSAGE("The opposing Wobbuffet stole Slugma's White Herb!");
+            MESSAGE("The opposing Lopmonx stole Slugma's White Herb!");
         }
         NONE_OF {
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);

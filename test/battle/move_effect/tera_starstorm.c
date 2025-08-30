@@ -28,7 +28,7 @@ DOUBLE_BATTLE_TEST("Tera Starstorm targets both opponents in a double battle if 
         ASSUME(GetMoveTarget(MOVE_TERA_STARSTORM) == MOVE_TARGET_SELECTED);
         PLAYER(SPECIES_TERAPAGOS_STELLAR);
         PLAYER(SPECIES_WYNAUT);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(playerLeft, MOVE_TERA_STARSTORM, target:opponentLeft); }
@@ -47,7 +47,7 @@ SINGLE_BATTLE_TEST("Tera Starstorm becomes a physical move if the user is Terapa
         ASSUME(GetMoveEffect(MOVE_MIRROR_COAT) == EFFECT_MIRROR_COAT);
         ASSUME(GetMoveCategory(MOVE_TERA_STARSTORM) == DAMAGE_CATEGORY_SPECIAL);
         PLAYER(SPECIES_TERAPAGOS_STELLAR) { Attack(100); SpAttack(50); }
-        OPPONENT(SPECIES_WOBBUFFET) { Defense(200); SpDefense(200); }
+        OPPONENT(SPECIES_LOPMONX) { Defense(200); SpDefense(200); }
     } WHEN {
         TURN { MOVE(player, MOVE_TERA_STARSTORM); MOVE(opponent, MOVE_MIRROR_COAT); }
         TURN { MOVE(player, MOVE_TERA_STARSTORM, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_COUNTER); }
@@ -68,12 +68,12 @@ SINGLE_BATTLE_TEST("Tera Starstorm remains Normal-type if used by Pokemon other 
     GIVEN {
         ASSUME(GetMoveType(MOVE_TERA_STARSTORM) == TYPE_NORMAL);
         ASSUME(GetSpeciesType(SPECIES_MISDREAVUS, 0) == TYPE_GHOST);
-        PLAYER(SPECIES_WOBBUFFET) { TeraType(TYPE_STELLAR); }
+        PLAYER(SPECIES_LOPMONX) { TeraType(TYPE_STELLAR); }
         OPPONENT(SPECIES_MISDREAVUS);
     } WHEN {
         TURN { MOVE(player, MOVE_TERA_STARSTORM, gimmick: GIMMICK_TERA); }
     } SCENE {
-        MESSAGE("Wobbuffet used Tera Starstorm!");
+        MESSAGE("Lopmonx used Tera Starstorm!");
         MESSAGE("It doesn't affect the opposing Misdreavus…");
     }
 }

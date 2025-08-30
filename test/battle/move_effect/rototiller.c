@@ -12,9 +12,9 @@ DOUBLE_BATTLE_TEST("Rototiller boosts Attack and Special Attack of all Grass typ
         ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_GRASS);
         ASSUME(GetSpeciesType(SPECIES_SNIVY, 0) == TYPE_GRASS);
         PLAYER(SPECIES_TANGELA);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_SNIVY);
-        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(playerRight, MOVE_ROTOTILLER); MOVE(playerLeft, MOVE_CELEBRATE); MOVE(opponentLeft, MOVE_CELEBRATE); MOVE(opponentRight, MOVE_CELEBRATE); }
     } SCENE {
@@ -38,15 +38,15 @@ DOUBLE_BATTLE_TEST("Rototiller boosts Attack and Special Attack of all Grass typ
 SINGLE_BATTLE_TEST("Rototiller fails if there are no valid targets")
 {
     GIVEN {
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) != TYPE_GRASS);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) != TYPE_GRASS);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        ASSUME(GetSpeciesType(SPECIES_LOPMONX, 0) != TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_LOPMONX, 1) != TYPE_GRASS);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_ROTOTILLER); }
     } SCENE {
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_ROTOTILLER, player);
-        MESSAGE("Wobbuffet used Rototiller!");
+        MESSAGE("Lopmonx used Rototiller!");
         MESSAGE("But it failed!");
     }
 }
@@ -77,16 +77,16 @@ SINGLE_BATTLE_TEST("Rototiller fails if the only valid target is semi-invulnerab
 {
     GIVEN {
         ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_GRASS);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) != TYPE_GRASS);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) != TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_LOPMONX, 0) != TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_LOPMONX, 1) != TYPE_GRASS);
         ASSUME(GetMoveEffect(MOVE_DIG) == EFFECT_SEMI_INVULNERABLE);
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_TANGELA);
     } WHEN {
         TURN { MOVE(opponent, MOVE_DIG); MOVE(player, MOVE_ROTOTILLER); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_DIG, opponent);
-        MESSAGE("Wobbuffet used Rototiller!");
+        MESSAGE("Lopmonx used Rototiller!");
         NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_ROTOTILLER, player);
         MESSAGE("But it failed!");
     } THEN {
@@ -101,11 +101,11 @@ AI_DOUBLE_BATTLE_TEST("AI uses Rototiller")
 {
     GIVEN {
         ASSUME(GetSpeciesType(SPECIES_TANGELA, 0) == TYPE_GRASS);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) != TYPE_GRASS);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 1) != TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_LOPMONX, 0) != TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_LOPMONX, 1) != TYPE_GRASS);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
-        PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_POUND, MOVE_CELEBRATE); }
-        PLAYER(SPECIES_WOBBUFFET) { Moves(MOVE_POUND, MOVE_CELEBRATE); }
+        PLAYER(SPECIES_LOPMONX) { Moves(MOVE_POUND, MOVE_CELEBRATE); }
+        PLAYER(SPECIES_LOPMONX) { Moves(MOVE_POUND, MOVE_CELEBRATE); }
         OPPONENT(SPECIES_TANGELA) { Moves(MOVE_ROTOTILLER, MOVE_POUND); }
         OPPONENT(SPECIES_TANGELA);
     } WHEN {

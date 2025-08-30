@@ -3051,7 +3051,7 @@ Cry_Tortomon::
 
 	.align 2
 Cry_Cherrim::
-	.incbin "sound/direct_sound_samples/cries/cherrim.bin"
+	.incbin "sound/direct_sound_samples/cries/unimon.bin"
 .endif @ P_FAMILY_TORTOMON
 
 .if P_FAMILY_SHELLOS == TRUE

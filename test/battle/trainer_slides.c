@@ -7,8 +7,8 @@ SINGLE_BATTLE_TEST("Trainer Slide: Before First Turn")
     gBattleTestRunnerState->data.recordedBattle.opponentA = TRAINER_SLIDE_BEFORE_FIRST_TURN;
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { }
     } SCENE {
@@ -22,8 +22,8 @@ SINGLE_BATTLE_TEST("Trainer Slide: Player Lands First Critical Hit")
 
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_LASER_FOCUS) == EFFECT_LASER_FOCUS);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_LASER_FOCUS); }
         TURN { MOVE(player, MOVE_SCRATCH); }
@@ -41,8 +41,8 @@ SINGLE_BATTLE_TEST("Trainer Slide: Enemy Lands First Critical Hit")
 
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_LASER_FOCUS) == EFFECT_LASER_FOCUS);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(opponent, MOVE_LASER_FOCUS); }
         TURN { MOVE(opponent, MOVE_SCRATCH); }
@@ -59,13 +59,13 @@ SINGLE_BATTLE_TEST("Trainer Slide: Player Lands First STAB Hit")
     gBattleTestRunnerState->data.recordedBattle.opponentA = TRAINER_SLIDE_PLAYER_LANDS_FIRST_STAB_MOVE;
 
     GIVEN {
-        ASSUME((GetMoveType(MOVE_VINE_WHIP)) == GetSpeciesType(SPECIES_BULBASAUR, 0));
-        PLAYER(SPECIES_BULBASAUR);
-        OPPONENT(SPECIES_WOBBUFFET);
+        ASSUME((GetMoveType(MOVE_VINE_WHIP)) == GetSpeciesType(SPECIES_ARGOMON, 0));
+        PLAYER(SPECIES_ARGOMON);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_VINE_WHIP); }
     } SCENE {
-        MESSAGE("Bulbasaur used Vine Whip!");
+        MESSAGE("Argomon used Vine Whip!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_VINE_WHIP, player);
         MESSAGE("Player lands their first STAB move.{PAUSE_UNTIL_PRESS}");
     }
@@ -77,10 +77,10 @@ SINGLE_BATTLE_TEST("Trainer Slide: Player Lands First Super Effective Hit")
 
     GIVEN {
         ASSUME(GetMoveType(MOVE_BITE) == TYPE_DARK);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) == TYPE_PSYCHIC);
-        ASSUME(GetSpeciesType(SPECIES_WOBBUFFET, 0) == TYPE_PSYCHIC);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        ASSUME(GetSpeciesType(SPECIES_LOPMONX, 0) == TYPE_PSYCHIC);
+        ASSUME(GetSpeciesType(SPECIES_LOPMONX, 0) == TYPE_PSYCHIC);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_BITE); }
     } SCENE {
@@ -94,13 +94,13 @@ SINGLE_BATTLE_TEST("Trainer Slide: Player Lands First Down")
     gBattleTestRunnerState->data.recordedBattle.opponentA = TRAINER_SLIDE_PLAYER_LANDS_FIRST_DOWN;
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponent, MOVE_HEALING_WISH); SEND_OUT(opponent,1); }
     } SCENE {
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmonx fainted!");
         MESSAGE("This message plays after the player KOs one enemy mon.{PAUSE_UNTIL_PRESS}");
     }
 }
@@ -126,13 +126,13 @@ SINGLE_BATTLE_TEST("Trainer Slide: Last Switchin")
 {
     gBattleTestRunnerState->data.recordedBattle.opponentA = TRAINER_SLIDE_LAST_SWITCHIN;
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
         OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(opponent, MOVE_HEALING_WISH); SEND_OUT(opponent,1); }
     } SCENE {
-        MESSAGE("The opposing Wobbuffet fainted!");
+        MESSAGE("The opposing Lopmonx fainted!");
         MESSAGE("This message plays after the enemy switches in their last Pokemon.{PAUSE_UNTIL_PRESS}");
     }
 }
@@ -142,9 +142,9 @@ SINGLE_BATTLE_TEST("Trainer Slide: Last Half Hp")
     gBattleTestRunnerState->data.recordedBattle.opponentA = TRAINER_SLIDE_LAST_HALF_HP;
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_SUPER_FANG) == EFFECT_FIXED_PERCENT_DAMAGE);
-        ASSUME(GetSpeciesBaseHP(SPECIES_WOBBUFFET) == 190);
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        ASSUME(GetSpeciesBaseHP(SPECIES_LOPMONX) == 190);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
         TURN { MOVE(player, MOVE_SUPER_FANG); }
     } SCENE {
@@ -157,8 +157,8 @@ SINGLE_BATTLE_TEST("Trainer Slide: Last Low Hp")
     gBattleTestRunnerState->data.recordedBattle.opponentA = TRAINER_SLIDE_LAST_LOW_HP;
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_FALSE_SWIPE) == EFFECT_FALSE_SWIPE);
-        PLAYER(SPECIES_WOBBUFFET) { Attack(999);}
-        OPPONENT(SPECIES_WOBBUFFET) { Defense(1);}
+        PLAYER(SPECIES_LOPMONX) { Attack(999);}
+        OPPONENT(SPECIES_LOPMONX) { Defense(1);}
     } WHEN {
         TURN { MOVE(player, MOVE_FALSE_SWIPE); }
     } SCENE {
@@ -171,7 +171,7 @@ SINGLE_BATTLE_TEST("Trainer Slide: Mega Evolution")
     gBattleTestRunnerState->data.recordedBattle.opponentA = TRAINER_SLIDE_MEGA_EVOLUTION;
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
         OPPONENT(SPECIES_LOPUNNY) {Item(ITEM_LOPUNNITE); };
     } WHEN {
         TURN { MOVE(opponent, MOVE_CELEBRATE, gimmick: GIMMICK_MEGA); }
@@ -186,14 +186,14 @@ SINGLE_BATTLE_TEST("Trainer Slide: Z Move")
 {
     gBattleTestRunnerState->data.recordedBattle.opponentA = TRAINER_SLIDE_Z_MOVE;
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_NORMALIUM_Z); }
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX) { Item(ITEM_NORMALIUM_Z); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_QUICK_ATTACK, gimmick: GIMMICK_Z_MOVE); }
     } SCENE {
         MESSAGE("This message plays before the enemy activates the Z-Move gimmick.{PAUSE_UNTIL_PRESS}");
-        MESSAGE("The opposing Wobbuffet surrounded itself with its Z-Power!");
-        MESSAGE("The opposing Wobbuffet unleashes its full-force Z-Move!");
+        MESSAGE("The opposing Lopmonx surrounded itself with its Z-Power!");
+        MESSAGE("The opposing Lopmonx unleashes its full-force Z-Move!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_BREAKNECK_BLITZ, opponent);
     }
 }
@@ -203,8 +203,8 @@ SINGLE_BATTLE_TEST("Trainer Slide: Dynamax")
     gBattleTestRunnerState->data.recordedBattle.opponentA = TRAINER_SLIDE_DYNAMAX;
 
     GIVEN {
-        PLAYER(SPECIES_WOBBUFFET);
-        OPPONENT(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_LOPMONX);
     } WHEN {
             TURN { MOVE(opponent, MOVE_CELEBRATE, gimmick: GIMMICK_DYNAMAX); }
     } SCENE {
