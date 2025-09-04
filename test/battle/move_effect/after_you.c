@@ -3,16 +3,16 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_AFTER_YOU].effect == EFFECT_AFTER_YOU);
+    ASSUME(GetMoveEffect(MOVE_AFTER_YOU) == EFFECT_AFTER_YOU);
 }
 
 DOUBLE_BATTLE_TEST("After You makes the target move after user")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Speed(4); }
-        PLAYER(SPECIES_EXVEEMON) { Speed(1); }
-        OPPONENT(SPECIES_LOPMONX) { Speed(3); }
-        OPPONENT(SPECIES_EXVEEMON) { Speed(2); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
+        PLAYER(SPECIES_WYNAUT) { Speed(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(3); }
+        OPPONENT(SPECIES_WYNAUT) { Speed(2); }
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_AFTER_YOU, target: playerRight);
@@ -22,7 +22,7 @@ DOUBLE_BATTLE_TEST("After You makes the target move after user")
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_AFTER_YOU, playerLeft);
-        MESSAGE("Exveemon took the kind offer!");
+        MESSAGE("Wynaut took the kind offer!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentRight);
@@ -32,10 +32,10 @@ DOUBLE_BATTLE_TEST("After You makes the target move after user")
 DOUBLE_BATTLE_TEST("After You does nothing if the target has already moved")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Speed(4); }
-        PLAYER(SPECIES_EXVEEMON) { Speed(1); }
-        OPPONENT(SPECIES_LOPMONX) { Speed(3); }
-        OPPONENT(SPECIES_EXVEEMON) { Speed(2); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
+        PLAYER(SPECIES_WYNAUT) { Speed(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(3); }
+        OPPONENT(SPECIES_WYNAUT) { Speed(2); }
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_CELEBRATE);
@@ -46,11 +46,7 @@ DOUBLE_BATTLE_TEST("After You does nothing if the target has already moved")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerLeft);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentLeft);
-<<<<<<< HEAD
-        MESSAGE("Foe Exveemon used After You!");
-=======
-        MESSAGE("The opposing Exveemon used After You!");
->>>>>>> upstream/master
+        MESSAGE("The opposing Wynaut used After You!");
         MESSAGE("But it failed!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerRight);
     }
@@ -59,10 +55,10 @@ DOUBLE_BATTLE_TEST("After You does nothing if the target has already moved")
 DOUBLE_BATTLE_TEST("After You calculates correct turn order if only one Pokémon is left on the opposing side")
 {
     GIVEN {
-        PLAYER(SPECIES_BIOSUPINOMON) { Speed(120); }
-        PLAYER(SPECIES_GARGOMON) { Speed(10); }
-        OPPONENT(SPECIES_LEAFMON) { Speed(100); }
-        OPPONENT(SPECIES_ESPIMON) { Speed(60); }
+        PLAYER(SPECIES_GRENINJA) { Speed(120); }
+        PLAYER(SPECIES_REGIROCK) { Speed(10); }
+        OPPONENT(SPECIES_PIDGEOT) { Speed(100); }
+        OPPONENT(SPECIES_DRAGONITE) { Speed(60); }
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_AFTER_YOU, target: playerRight);
@@ -76,28 +72,53 @@ DOUBLE_BATTLE_TEST("After You calculates correct turn order if only one Pokémon
         }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_AFTER_YOU, playerLeft);
-        MESSAGE("Gargomon took the kind offer!");
+        MESSAGE("Regirock took the kind offer!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STONE_EDGE, playerRight);
         HP_BAR(opponentLeft);
-        MESSAGE("The opposing Leafmon fainted!");
+        MESSAGE("The opposing Pidgeot fainted!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentRight);
 
         ANIMATION(ANIM_TYPE_MOVE, MOVE_AFTER_YOU, playerLeft);
-        MESSAGE("Gargomon took the kind offer!");
+        MESSAGE("Regirock took the kind offer!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_STONE_EDGE, playerRight);
         HP_BAR(opponentRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentRight);
     }
 }
 
+DOUBLE_BATTLE_TEST("After You fails if the turn order remains the same after After You (Gen5-7)")
+{
+    GIVEN {
+        WITH_CONFIG(GEN_CONFIG_AFTER_YOU_TURN_ORDER, GEN_7);
+        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
+        PLAYER(SPECIES_WYNAUT) { Speed(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
+        OPPONENT(SPECIES_WYNAUT) { Speed(3); }
+    } WHEN {
+        TURN {
+            MOVE(playerLeft, MOVE_CELEBRATE);
+            MOVE(playerRight, MOVE_CELEBRATE);
+            MOVE(opponentLeft, MOVE_CELEBRATE);
+            MOVE(opponentRight, MOVE_AFTER_YOU, target: opponentLeft);
+        }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerLeft);
+        MESSAGE("The opposing Wynaut used After You!");
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_AFTER_YOU, opponentRight);
+        MESSAGE("But it failed!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentLeft);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, playerRight);
+    }
+}
+
 DOUBLE_BATTLE_TEST("After You doesn't fail if the turn order remains the same after After You (Gen8+)")
 {
     GIVEN {
-        ASSUME(B_AFTER_YOU_TURN_ORDER >= GEN_8);
-        PLAYER(SPECIES_LOPMONX) { Speed(4); }
-        PLAYER(SPECIES_EXVEEMON) { Speed(1); }
-        OPPONENT(SPECIES_LOPMONX) { Speed(2); }
-        OPPONENT(SPECIES_EXVEEMON) { Speed(3); }
+        WITH_CONFIG(GEN_CONFIG_AFTER_YOU_TURN_ORDER, GEN_8);
+        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
+        PLAYER(SPECIES_WYNAUT) { Speed(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
+        OPPONENT(SPECIES_WYNAUT) { Speed(3); }
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_CELEBRATE);
@@ -116,11 +137,11 @@ DOUBLE_BATTLE_TEST("After You doesn't fail if the turn order remains the same af
 DOUBLE_BATTLE_TEST("After You ignores the effects of Quash")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_QUASH].effect == EFFECT_QUASH);
-        PLAYER(SPECIES_LOPMONX) { Speed(4); }
-        PLAYER(SPECIES_EXVEEMON) { Speed(1); }
-        OPPONENT(SPECIES_LOPMONX) { Speed(2); }
-        OPPONENT(SPECIES_EXVEEMON) { Speed(3); }
+        ASSUME(GetMoveEffect(MOVE_QUASH) == EFFECT_QUASH);
+        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
+        PLAYER(SPECIES_WYNAUT) { Speed(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(2); }
+        OPPONENT(SPECIES_WYNAUT) { Speed(3); }
     } WHEN {
         TURN {
             MOVE(playerLeft, MOVE_QUASH, target: opponentLeft);

@@ -1,16 +1,16 @@
 #include "global.h"
 #include "test/battle.h"
 
-SINGLE_BATTLE_TEST("Scrappy prevents intimidate")
+SINGLE_BATTLE_TEST("Scrappy doesn't prevent Intimidate (Gen4-7)")
 {
     s16 turnOneHit;
     s16 turnTwoHit;
 
     GIVEN {
-        ASSUME(B_UPDATED_INTIMIDATE >= GEN_8);
-        PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_SHED_SKIN); };
-        PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); };
-        OPPONENT(SPECIES_BETAMON_X) { Ability(ABILITY_SCRAPPY); };
+        WITH_CONFIG(GEN_CONFIG_UPDATED_INTIMIDATE, GEN_7);
+        PLAYER(SPECIES_EKANS) { Ability(ABILITY_SHED_SKIN); };
+        PLAYER(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE); };
+        OPPONENT(SPECIES_KANGASKHAN) { Ability(ABILITY_SCRAPPY); };
     } WHEN {
         TURN { MOVE(opponent, MOVE_SCRATCH); }
         TURN { SWITCH(player, 1); MOVE(opponent, MOVE_SCRATCH); }
@@ -18,13 +18,37 @@ SINGLE_BATTLE_TEST("Scrappy prevents intimidate")
     } SCENE {
         HP_BAR(player, captureDamage: &turnOneHit);
         ABILITY_POPUP(player, ABILITY_INTIMIDATE);
-        NONE_OF { ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player); }
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
+        NONE_OF {
+            ABILITY_POPUP(opponent, ABILITY_SCRAPPY);
+            MESSAGE("The opposing Kangaskhan's Scrappy prevents stat loss!");
+        }
+        HP_BAR(player, captureDamage: &turnTwoHit);
+    } THEN {
+        EXPECT_GT(turnOneHit, turnTwoHit);
+    }
+}
+
+SINGLE_BATTLE_TEST("Scrappy prevents Intimidate (Gen8+)")
+{
+    s16 turnOneHit;
+    s16 turnTwoHit;
+
+    GIVEN {
+        WITH_CONFIG(GEN_CONFIG_UPDATED_INTIMIDATE, GEN_8);
+        PLAYER(SPECIES_EKANS) { Ability(ABILITY_SHED_SKIN); };
+        PLAYER(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE); };
+        OPPONENT(SPECIES_KANGASKHAN) { Ability(ABILITY_SCRAPPY); };
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_SCRATCH); }
+        TURN { SWITCH(player, 1); MOVE(opponent, MOVE_SCRATCH); }
+
+    } SCENE {
+        HP_BAR(player, captureDamage: &turnOneHit);
+        ABILITY_POPUP(player, ABILITY_INTIMIDATE);
+        NONE_OF { ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent); }
         ABILITY_POPUP(opponent, ABILITY_SCRAPPY);
-<<<<<<< HEAD
-        MESSAGE("Foe Betamon_x's Scrappy prevents stat loss!");
-=======
-        MESSAGE("The opposing betamon_x's Scrappy prevents stat loss!");
->>>>>>> upstream/master
+        MESSAGE("The opposing Kangaskhan's Scrappy prevents stat loss!");
         HP_BAR(player, captureDamage: &turnTwoHit);
     } THEN {
         EXPECT_EQ(turnOneHit, turnTwoHit);
@@ -38,8 +62,8 @@ SINGLE_BATTLE_TEST("Scrappy allows to hit Ghost-type Pokémon with Normal- and F
     PARAMETRIZE { move = MOVE_KARATE_CHOP; }
 
     GIVEN {
-        PLAYER(SPECIES_BETAMON_X) { Ability(ABILITY_SCRAPPY); };
-        OPPONENT(SPECIES_TOKOMON_X);
+        PLAYER(SPECIES_KANGASKHAN) { Ability(ABILITY_SCRAPPY); };
+        OPPONENT(SPECIES_GASTLY);
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
@@ -55,8 +79,8 @@ SINGLE_BATTLE_TEST("Scrappy doesn't bypass a Ghost-type's Wonder Guard")
     PARAMETRIZE { move = MOVE_KARATE_CHOP; }
 
     GIVEN {
-        PLAYER(SPECIES_BETAMON_X) { Ability(ABILITY_SCRAPPY); };
-        OPPONENT(SPECIES_BALUCHIMON) { Ability(ABILITY_WONDER_GUARD); };
+        PLAYER(SPECIES_KANGASKHAN) { Ability(ABILITY_SCRAPPY); };
+        OPPONENT(SPECIES_SHEDINJA) { Ability(ABILITY_WONDER_GUARD); };
     } WHEN {
         TURN { MOVE(player, move); }
     } SCENE {
@@ -65,10 +89,6 @@ SINGLE_BATTLE_TEST("Scrappy doesn't bypass a Ghost-type's Wonder Guard")
             HP_BAR(opponent);
         }
         ABILITY_POPUP(opponent, ABILITY_WONDER_GUARD);
-<<<<<<< HEAD
-        MESSAGE("Foe Baluchimon avoided damage with Wonder Guard!");
-=======
-        MESSAGE("The opposing Baluchimon avoided damage with Wonder Guard!");
->>>>>>> upstream/master
+        MESSAGE("The opposing Shedinja avoided damage with Wonder Guard!");
     }
 }

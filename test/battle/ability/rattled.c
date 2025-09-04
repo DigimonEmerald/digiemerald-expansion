@@ -21,8 +21,8 @@ SINGLE_BATTLE_TEST("Rattled boosts speed by 1 when hit by Bug, Dark or Ghost typ
     PARAMETRIZE { move = MOVE_SHADOW_PUNCH; }
     PARAMETRIZE { move = MOVE_SCRATCH; }
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) {Speed(42) ;}
-        OPPONENT(SPECIES_JUNKMON) {Speed(40); Ability(ABILITY_RATTLED);}
+        PLAYER(SPECIES_WOBBUFFET) {Speed(42) ;}
+        OPPONENT(SPECIES_SUDOWOODO) {Speed(40); Ability(ABILITY_RATTLED);}
     } WHEN {
         TURN { MOVE(player, move); }
         TURN { MOVE(player, move); }
@@ -32,65 +32,61 @@ SINGLE_BATTLE_TEST("Rattled boosts speed by 1 when hit by Bug, Dark or Ghost typ
         if (move != MOVE_SCRATCH) {
             ABILITY_POPUP(opponent, ABILITY_RATTLED);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-<<<<<<< HEAD
-            MESSAGE("Foe Junkmon's Speed rose!");
+            MESSAGE("The opposing Sudowoodo's Speed rose!");
         }
-        MESSAGE("Foe Junkmon used Celebrate!");
-        // Junkmon is now faster
-        if (move != MOVE_TACKLE){
-            MESSAGE("Foe Junkmon used Celebrate!");
-=======
-            MESSAGE("The opposing Junkmon's Speed rose!");
-        }
-        MESSAGE("The opposing Junkmon used Celebrate!");
-        // Junkmon is now faster
+        MESSAGE("The opposing Sudowoodo used Celebrate!");
+        // Sudowoodo is now faster
         if (move != MOVE_SCRATCH){
-            MESSAGE("The opposing Junkmon used Celebrate!");
->>>>>>> upstream/master
+            MESSAGE("The opposing Sudowoodo used Celebrate!");
             ANIMATION(ANIM_TYPE_MOVE, move, player);
             HP_BAR(opponent);
             ABILITY_POPUP(opponent, ABILITY_RATTLED);
             ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-<<<<<<< HEAD
-            MESSAGE("Foe Junkmon's Speed rose!");
-=======
-            MESSAGE("The opposing Junkmon's Speed rose!");
->>>>>>> upstream/master
+            MESSAGE("The opposing Sudowoodo's Speed rose!");
         }
         else {
             ANIMATION(ANIM_TYPE_MOVE, move, player);
             HP_BAR(opponent);
-<<<<<<< HEAD
-            MESSAGE("Foe Junkmon used Celebrate!");
-=======
-            MESSAGE("The opposing Junkmon used Celebrate!");
->>>>>>> upstream/master
+            MESSAGE("The opposing Sudowoodo used Celebrate!");
         }
     }
 }
 
-SINGLE_BATTLE_TEST("Rattled boosts speed by 1 when affected by Intimidate")
+SINGLE_BATTLE_TEST("Rattled does not boost speed by 1 when affected by Intimidate (Gen5-7)")
 {
     GIVEN {
-        ASSUME(B_UPDATED_INTIMIDATE >= GEN_8);
-        PLAYER(SPECIES_COMMDRAMON) {Ability(ABILITY_INTIMIDATE); }
-        OPPONENT(SPECIES_JUNKMON) {Ability(ABILITY_RATTLED); }
+        WITH_CONFIG(GEN_CONFIG_UPDATED_INTIMIDATE, GEN_7);
+        PLAYER(SPECIES_GYARADOS) {Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_SUDOWOODO) {Ability(ABILITY_RATTLED); }
     } WHEN {
         TURN {}
     } SCENE {
         ABILITY_POPUP(player, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-<<<<<<< HEAD
-        MESSAGE("Commdramon's Intimidate cuts Foe Junkmon's attack!");
+        MESSAGE("Gyarados's Intimidate cuts the opposing Sudowoodo's Attack!");
+        NONE_OF {
+            ABILITY_POPUP(opponent, ABILITY_RATTLED);
+            ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
+            MESSAGE("The opposing Sudowoodo's Speed rose!");
+        }
+    }
+}
+
+SINGLE_BATTLE_TEST("Rattled boosts speed by 1 when affected by Intimidate (Gen8+)")
+{
+    GIVEN {
+        WITH_CONFIG(GEN_CONFIG_UPDATED_INTIMIDATE, GEN_8);
+        PLAYER(SPECIES_GYARADOS) {Ability(ABILITY_INTIMIDATE); }
+        OPPONENT(SPECIES_SUDOWOODO) {Ability(ABILITY_RATTLED); }
+    } WHEN {
+        TURN {}
+    } SCENE {
+        ABILITY_POPUP(player, ABILITY_INTIMIDATE);
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
+        MESSAGE("Gyarados's Intimidate cuts the opposing Sudowoodo's Attack!");
         ABILITY_POPUP(opponent, ABILITY_RATTLED);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("Foe Junkmon's Speed rose!");
-=======
-        MESSAGE("Commdramon's Intimidate cuts the opposing Junkmon's Attack!");
-        ABILITY_POPUP(opponent, ABILITY_RATTLED);
-        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-        MESSAGE("The opposing Junkmon's Speed rose!");
->>>>>>> upstream/master
+        MESSAGE("The opposing Sudowoodo's Speed rose!");
     }
 }
 
@@ -99,24 +95,19 @@ SINGLE_BATTLE_TEST("Rattled triggers correctly when hit by U-Turn") // Specific 
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_U_TURN) == EFFECT_HIT_ESCAPE);
         ASSUME(GetMoveType(MOVE_U_TURN) == TYPE_BUG);
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_JUNKMON) {Ability(ABILITY_RATTLED); }
-        OPPONENT(SPECIES_JUNKMON);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_SUDOWOODO) {Ability(ABILITY_RATTLED); }
+        OPPONENT(SPECIES_SUDOWOODO);
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(player, 1); }
     } SCENE {
-        MESSAGE("Lopmonx used U-turn!");
+        MESSAGE("Wobbuffet used U-turn!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
         HP_BAR(opponent);
         ABILITY_POPUP(opponent, ABILITY_RATTLED);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
-<<<<<<< HEAD
-        MESSAGE("Foe Junkmon's Speed rose!");
-        MESSAGE("Go! Exveemon!");
-=======
-        MESSAGE("The opposing Junkmon's Speed rose!");
-        SEND_IN_MESSAGE("Exveemon");
->>>>>>> upstream/master
+        MESSAGE("The opposing Sudowoodo's Speed rose!");
+        SEND_IN_MESSAGE("Wynaut");
     }
 }
