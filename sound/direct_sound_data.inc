@@ -3538,8 +3538,8 @@ Cry_Aeroveedramon::
 	.incbin "sound/direct_sound_samples/cries/aeroveedramon.bin"
 
 	.align 2
-Cry_Seismitoad::
-	.incbin "sound/direct_sound_samples/cries/seismitoad.bin"
+Cry_Asuramon::
+	.incbin "sound/direct_sound_samples/cries/asuramon.bin"
 .endif @ P_FAMILY_ZUDOMON
 
 .if P_FAMILY_THROH == TRUE

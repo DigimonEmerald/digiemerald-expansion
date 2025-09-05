@@ -3328,50 +3328,47 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sAeroveedramonLevelUpLearnset,
         .teachableLearnset = sAeroveedramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SEISMITOAD}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_ASURAMON}),
     },
 
-    [SPECIES_SEISMITOAD] =
+    [SPECIES_ASURAMON] =
     {
-        .baseHP        = 105,
-        .baseAttack    = P_UPDATED_STATS >= GEN_6 ? 95 : 85,
-        .baseDefense   = 75,
-        .baseSpeed     = 74,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_WATER, TYPE_GROUND),
+        .baseHP        = 120,
+        .baseAttack    = 100,
+        .baseDefense   = 100,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_FIGHTING),
+        .attribute = TYPE_VACCINE,
         .catchRate = 95,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 255,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 229,
-    #else
-        .expYield = 225,
-    #endif
+        .expYield = 200,
         .evYield_HP = 3,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_POISON_TOUCH, ABILITY_WATER_ABSORB },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Seismitoad"),
-        .cryId = CRY_SEISMITOAD,
-        .natDexNum = NATIONAL_DEX_SEISMITOAD,
-        .categoryName = _("Vibration"),
-        .height = 15,
-        .weight = 620,
+        .abilities = { ABILITY_GUTS, ABILITY_SHEER_FORCE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Asuramon"),
+        .cryId = CRY_ASURAMON,
+        .natDexNum = NATIONAL_DEX_ASURAMON,
+        .categoryName = _("Three-Faced"),
+        .height = 32,
+        .weight = 1734,
         .description = COMPOUND_STRING(
-            "It increases the power of its punches\n"
-            "by vibrating the bumps on its fists.\n"
-            "They can also shoot paralyzing liquid\n"
-            "from their head bumps."),
+            "Each face of Asuramon represents\n"
+            "something different, them being\n"
+            "Wrath, Mercy and Blessings. It is\n"
+            "a Digimon with strong convictions."),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Seismitoad,
+        .frontPic = gMonFrontPic_Asuramon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3384,28 +3381,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 11),
         ),
         .frontAnimId = ANIM_H_JUMPS,
-        .backPic = gMonBackPic_Seismitoad,
+        .backPic = gMonBackPic_Asuramon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Seismitoad,
-        .shinyPalette = gMonShinyPalette_Seismitoad,
-        .iconSprite = gMonIcon_Seismitoad,
+        .palette = gMonPalette_Asuramon,
+        .shinyPalette = gMonShinyPalette_Asuramon,
+        .iconSprite = gMonIcon_Asuramon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(4, 10, SHADOW_SIZE_L)
-        FOOTPRINT(Seismitoad)
+        FOOTPRINT(Asuramon)
         OVERWORLD(
-            sPicTable_Seismitoad,
+            sPicTable_Asuramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Seismitoad,
-            gShinyOverworldPalette_Seismitoad
+            gOverworldPalette_Asuramon,
+            gShinyOverworldPalette_Asuramon
         )
-        .levelUpLearnset = sSeismitoadLevelUpLearnset,
-        .teachableLearnset = sSeismitoadTeachableLearnset,
+        .levelUpLearnset = sAsuramonLevelUpLearnset,
+        .teachableLearnset = sAsuramonTeachableLearnset,
     },
 #endif //P_FAMILY_ZUDOMON
 

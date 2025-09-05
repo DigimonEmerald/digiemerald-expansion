@@ -22362,7 +22362,7 @@ static const u16 sAeroveedramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSeismitoadTeachableLearnset[] = {
+static const u16 sAsuramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,

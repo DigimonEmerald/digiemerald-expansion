@@ -12700,7 +12700,7 @@ static const struct LevelUpMove sAeroveedramonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sSeismitoadLevelUpLearnset[] = {
+static const struct LevelUpMove sAsuramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_ACID),
     LEVEL_UP_MOVE( 1, MOVE_ACID),
     LEVEL_UP_MOVE( 1, MOVE_BUBBLE),

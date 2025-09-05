@@ -16653,19 +16653,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Seismitoad[] = INCBIN_U32("graphics/pokemon/seismitoad/anim_front.4bpp.smol");
-    const u16 gMonPalette_Seismitoad[] = INCBIN_U16("graphics/pokemon/seismitoad/normal.gbapal");
-    const u32 gMonBackPic_Seismitoad[] = INCBIN_U32("graphics/pokemon/seismitoad/back.4bpp.smol");
-    const u16 gMonShinyPalette_Seismitoad[] = INCBIN_U16("graphics/pokemon/seismitoad/shiny.gbapal");
-    const u8 gMonIcon_Seismitoad[] = INCBIN_U8("graphics/pokemon/seismitoad/icon.4bpp");
+    const u32 gMonFrontPic_Asuramon[] = INCBIN_U32("graphics/pokemon/asuramon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Asuramon[] = INCBIN_U16("graphics/pokemon/asuramon/normal.gbapal");
+    const u32 gMonBackPic_Asuramon[] = INCBIN_U32("graphics/pokemon/asuramon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Asuramon[] = INCBIN_U16("graphics/pokemon/asuramon/shiny.gbapal");
+    const u8 gMonIcon_Asuramon[] = INCBIN_U8("graphics/pokemon/asuramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Seismitoad[] = INCBIN_U8("graphics/pokemon/seismitoad/footprint.1bpp");
+    const u8 gMonFootprint_Asuramon[] = INCBIN_U8("graphics/pokemon/asuramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Seismitoad[] = INCBIN_COMP("graphics/pokemon/seismitoad/overworld.4bpp");
+    const u32 gObjectEventPic_Asuramon[] = INCBIN_COMP("graphics/pokemon/asuramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Seismitoad[] = INCBIN_U16("graphics/pokemon/seismitoad/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Seismitoad[] = INCBIN_U16("graphics/pokemon/seismitoad/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Asuramon[] = INCBIN_U16("graphics/pokemon/asuramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Asuramon[] = INCBIN_U16("graphics/pokemon/asuramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_ZUDOMON

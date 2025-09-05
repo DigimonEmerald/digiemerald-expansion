@@ -6709,7 +6709,7 @@ static const union AnimCmd sAnim_Aeroveedramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Seismitoad_1[] =
+static const union AnimCmd sAnim_Asuramon_1[] =
 {
     ANIMCMD_FRAME(0, 13),
     ANIMCMD_FRAME(1, 7),
@@ -11685,7 +11685,7 @@ SINGLE_ANIMATION(Shogungekomon);
 #if P_FAMILY_ZUDOMON
 SINGLE_ANIMATION(Zudomon);
 SINGLE_ANIMATION(Aeroveedramon);
-SINGLE_ANIMATION(Seismitoad);
+SINGLE_ANIMATION(Asuramon);
 #endif //P_FAMILY_ZUDOMON
 #if P_FAMILY_THROH
 SINGLE_ANIMATION(Throh);
