@@ -640,7 +640,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Bukamon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 40) : MON_COORDS_SIZE(48, 48),
-        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 13 : 11,
+        .frontPicYOffset = 11,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 35),
             ANIMCMD_FRAME(0, 10),
@@ -664,7 +664,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .iconSprite = gMonIcon_Bukamon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        NO_SHADOW
+        SHADOW(1, -1, SHADOW_SIZE_S)
         FOOTPRINT(Bukamon)
         OVERWORLD(
             sPicTable_Bukamon,
