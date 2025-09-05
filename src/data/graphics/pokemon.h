@@ -16670,23 +16670,23 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_ZUDOMON
 
-#if P_FAMILY_THROH
-    const u32 gMonFrontPic_Throh[] = INCBIN_U32("graphics/pokemon/throh/anim_front.4bpp.smol");
-    const u16 gMonPalette_Throh[] = INCBIN_U16("graphics/pokemon/throh/normal.gbapal");
-    const u32 gMonBackPic_Throh[] = INCBIN_U32("graphics/pokemon/throh/back.4bpp.smol");
-    const u16 gMonShinyPalette_Throh[] = INCBIN_U16("graphics/pokemon/throh/shiny.gbapal");
-    const u8 gMonIcon_Throh[] = INCBIN_U8("graphics/pokemon/throh/icon.4bpp");
+#if P_FAMILY_MEGAKABUTERIMON_RED
+    const u32 gMonFrontPic_Megakabuterimon_red[] = INCBIN_U32("graphics/pokemon/megakabuterimon_red/anim_front.4bpp.smol");
+    const u16 gMonPalette_Megakabuterimon_red[] = INCBIN_U16("graphics/pokemon/megakabuterimon_red/normal.gbapal");
+    const u32 gMonBackPic_Megakabuterimon_red[] = INCBIN_U32("graphics/pokemon/megakabuterimon_red/back.4bpp.smol");
+    const u16 gMonShinyPalette_Megakabuterimon_red[] = INCBIN_U16("graphics/pokemon/megakabuterimon_red/shiny.gbapal");
+    const u8 gMonIcon_Megakabuterimon_red[] = INCBIN_U8("graphics/pokemon/megakabuterimon_red/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Throh[] = INCBIN_U8("graphics/pokemon/throh/footprint.1bpp");
+    const u8 gMonFootprint_Megakabuterimon_red[] = INCBIN_U8("graphics/pokemon/megakabuterimon_red/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Throh[] = INCBIN_COMP("graphics/pokemon/throh/overworld.4bpp");
+    const u32 gObjectEventPic_Megakabuterimon_red[] = INCBIN_COMP("graphics/pokemon/megakabuterimon_red/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Throh[] = INCBIN_U16("graphics/pokemon/throh/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Throh[] = INCBIN_U16("graphics/pokemon/throh/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Megakabuterimon_red[] = INCBIN_U16("graphics/pokemon/megakabuterimon_red/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Megakabuterimon_red[] = INCBIN_U16("graphics/pokemon/megakabuterimon_red/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_THROH
+#endif //P_FAMILY_MEGAKABUTERIMON_RED
 
 #if P_FAMILY_SAWK
     const u32 gMonFrontPic_Sawk[] = INCBIN_U32("graphics/pokemon/sawk/anim_front.4bpp.smol");

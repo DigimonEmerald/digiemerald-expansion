@@ -1344,9 +1344,9 @@ gCryTable::
 	cry Cry_Aeroveedramon
 	cry Cry_Asuramon
 .endif @ P_FAMILY_ZUDOMON
-.if P_FAMILY_THROH == TRUE
-	cry Cry_Throh
-.endif @ P_FAMILY_THROH
+.if P_FAMILY_MEGAKABUTERIMON_RED == TRUE
+	cry Cry_Megakabuterimon_red
+.endif @ P_FAMILY_MEGAKABUTERIMON_RED
 .if P_FAMILY_SAWK == TRUE
 	cry Cry_Sawk
 .endif @ P_FAMILY_SAWK
@@ -3772,9 +3772,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Aeroveedramon
 	cry_reverse Cry_Asuramon
 .endif @ P_FAMILY_ZUDOMON
-.if P_FAMILY_THROH == TRUE
-	cry_reverse Cry_Throh
-.endif @ P_FAMILY_THROH
+.if P_FAMILY_MEGAKABUTERIMON_RED == TRUE
+	cry_reverse Cry_Megakabuterimon_red
+.endif @ P_FAMILY_MEGAKABUTERIMON_RED
 .if P_FAMILY_SAWK == TRUE
 	cry_reverse Cry_Sawk
 .endif @ P_FAMILY_SAWK

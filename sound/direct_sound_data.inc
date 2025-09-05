@@ -3542,11 +3542,11 @@ Cry_Asuramon::
 	.incbin "sound/direct_sound_samples/cries/asuramon.bin"
 .endif @ P_FAMILY_ZUDOMON
 
-.if P_FAMILY_THROH == TRUE
+.if P_FAMILY_MEGAKABUTERIMON_RED == TRUE
 	.align 2
-Cry_Throh::
-	.incbin "sound/direct_sound_samples/cries/throh.bin"
-.endif @ P_FAMILY_THROH
+Cry_Megakabuterimon_red::
+	.incbin "sound/direct_sound_samples/cries/megakabuterimon_red.bin"
+.endif @ P_FAMILY_MEGAKABUTERIMON_RED
 
 .if P_FAMILY_SAWK == TRUE
 	.align 2

@@ -22397,8 +22397,8 @@ static const u16 sAsuramonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_ZUDOMON
 
-#if P_FAMILY_THROH
-static const u16 sThrohTeachableLearnset[] = {
+#if P_FAMILY_MEGAKABUTERIMON_RED
+static const u16 sMegakabuterimon_redTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
@@ -22430,7 +22430,7 @@ static const u16 sThrohTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_THROH
+#endif //P_FAMILY_MEGAKABUTERIMON_RED
 
 #if P_FAMILY_SAWK
 static const u16 sSawkTeachableLearnset[] = {

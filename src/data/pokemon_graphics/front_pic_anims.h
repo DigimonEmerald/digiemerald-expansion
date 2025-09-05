@@ -6722,8 +6722,8 @@ static const union AnimCmd sAnim_Asuramon_1[] =
 };
 #endif //P_FAMILY_ZUDOMON
 
-#if P_FAMILY_THROH
-static const union AnimCmd sAnim_Throh_1[] =
+#if P_FAMILY_MEGAKABUTERIMON_RED
+static const union AnimCmd sAnim_Megakabuterimon_red_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -6731,7 +6731,7 @@ static const union AnimCmd sAnim_Throh_1[] =
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_THROH
+#endif //P_FAMILY_MEGAKABUTERIMON_RED
 
 #if P_FAMILY_SAWK
 static const union AnimCmd sAnim_Sawk_1[] =
@@ -11687,9 +11687,9 @@ SINGLE_ANIMATION(Zudomon);
 SINGLE_ANIMATION(Aeroveedramon);
 SINGLE_ANIMATION(Asuramon);
 #endif //P_FAMILY_ZUDOMON
-#if P_FAMILY_THROH
-SINGLE_ANIMATION(Throh);
-#endif //P_FAMILY_THROH
+#if P_FAMILY_MEGAKABUTERIMON_RED
+SINGLE_ANIMATION(Megakabuterimon_red);
+#endif //P_FAMILY_MEGAKABUTERIMON_RED
 #if P_FAMILY_SAWK
 SINGLE_ANIMATION(Sawk);
 #endif //P_FAMILY_SAWK

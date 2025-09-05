@@ -3894,11 +3894,11 @@ static const struct SpriteFrameImage sPicTable_Asuramon[] = {
 };
 #endif //P_FAMILY_ZUDOMON
 
-#if P_FAMILY_THROH
-static const struct SpriteFrameImage sPicTable_Throh[] = {
-    overworld_ascending_frames(gObjectEventPic_Throh, 4, 4),
+#if P_FAMILY_MEGAKABUTERIMON_RED
+static const struct SpriteFrameImage sPicTable_Megakabuterimon_red[] = {
+    overworld_ascending_frames(gObjectEventPic_Megakabuterimon_red, 4, 4),
 };
-#endif //P_FAMILY_THROH
+#endif //P_FAMILY_MEGAKABUTERIMON_RED
 
 #if P_FAMILY_SAWK
 static const struct SpriteFrameImage sPicTable_Sawk[] = {

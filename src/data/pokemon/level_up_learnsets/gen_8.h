@@ -12665,8 +12665,8 @@ static const struct LevelUpMove sAsuramonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_ZUDOMON
 
-#if P_FAMILY_THROH
-static const struct LevelUpMove sThrohLevelUpLearnset[] = {
+#if P_FAMILY_MEGAKABUTERIMON_RED
+static const struct LevelUpMove sMegakabuterimon_redLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BIND),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 5, MOVE_FOCUS_ENERGY),
@@ -12682,7 +12682,7 @@ static const struct LevelUpMove sThrohLevelUpLearnset[] = {
     LEVEL_UP_MOVE(55, MOVE_SUPERPOWER),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_THROH
+#endif //P_FAMILY_MEGAKABUTERIMON_RED
 
 #if P_FAMILY_SAWK
 static const struct LevelUpMove sSawkLevelUpLearnset[] = {

@@ -3406,43 +3406,46 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_ZUDOMON
 
-#if P_FAMILY_THROH
-    [SPECIES_THROH] =
+#if P_FAMILY_MEGAKABUTERIMON_RED
+    [SPECIES_MEGAKABUTERIMON_RED] =
     {
         .baseHP        = 120,
-        .baseAttack    = 100,
-        .baseDefense   = 85,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 85,
-        .types = MON_TYPES(TYPE_FIGHTING),
+        .baseAttack    = 110,
+        .baseDefense   = 110,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_BUG, TYPE_ELECTRIC),
+        .attribute = TYPE_VACCINE,
         .catchRate = 95,
-        .expYield = 163,
-        .evYield_HP = 2,
+        .expYield = 200,
+        .evYield_HP = 3,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
         .itemRare = ITEM_BLACK_BELT,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_GUTS, ABILITY_INNER_FOCUS, ABILITY_MOLD_BREAKER },
+        .abilities = { ABILITY_STATIC, ABILITY_SHELL_ARMOR, ABILITY_LIGHTNING_ROD },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Throh"),
-        .cryId = CRY_THROH,
-        .natDexNum = NATIONAL_DEX_THROH,
-        .categoryName = _("Judo"),
-        .height = 13,
-        .weight = 555,
+        .speciesName = _("Megakabumon"),
+        .cryId = CRY_MEGAKABUTERIMON_RED,
+        .natDexNum = NATIONAL_DEX_MEGAKABUTERIMON_RED,
+        .categoryName = _("Atlas Beetle"),
+        .height = 152,
+        .weight = 3174,
         .description = COMPOUND_STRING(
-            "When it tightens its belt, it becomes\n"
-            "stronger. Wild Throh use vines to weave\n"
-            "their own belts. It changes belts as it\n"
-            "gets more powerful."),
+            "Red MegaKabuterimons are generally very\n"
+            "similiarto their blue counterparts however \n"
+            "they do boast better flight capabilities\n"
+            "making them popular for groups of tamers."),
         .pokemonScale = 272,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Throh,
+        .frontPic = gMonFrontPic_Megakabuterimon_red,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 10,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3452,30 +3455,30 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 20),
         ),
         .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
-        .backPic = gMonBackPic_Throh,
+        .backPic = gMonBackPic_Megakabuterimon_red,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Throh,
-        .shinyPalette = gMonShinyPalette_Throh,
-        .iconSprite = gMonIcon_Throh,
+        .palette = gMonPalette_Megakabuterimon_red,
+        .shinyPalette = gMonShinyPalette_Megakabuterimon_red,
+        .iconSprite = gMonIcon_Megakabuterimon_red,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(3, 4, SHADOW_SIZE_M)
-        FOOTPRINT(Throh)
+        FOOTPRINT(Megakabuterimon_red)
         OVERWORLD(
-            sPicTable_Throh,
+            sPicTable_Megakabuterimon_red,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Throh,
-            gShinyOverworldPalette_Throh
+            gOverworldPalette_Megakabuterimon_red,
+            gShinyOverworldPalette_Megakabuterimon_red
         )
-        .levelUpLearnset = sThrohLevelUpLearnset,
-        .teachableLearnset = sThrohTeachableLearnset,
+        .levelUpLearnset = sMegakabuterimon_redLevelUpLearnset,
+        .teachableLearnset = sMegakabuterimon_redTeachableLearnset,
     },
-#endif //P_FAMILY_THROH
+#endif //P_FAMILY_MEGAKABUTERIMON_RED
 
 #if P_FAMILY_SAWK
     [SPECIES_SAWK] =

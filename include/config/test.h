@@ -572,8 +572,8 @@
 #define P_FAMILY_PUMPKINMON                 TRUE
 #undef P_FAMILY_ZUDOMON
 #define P_FAMILY_ZUDOMON                 TRUE
-#undef P_FAMILY_THROH
-#define P_FAMILY_THROH                   TRUE
+#undef P_FAMILY_MEGAKABUTERIMON_RED
+#define P_FAMILY_MEGAKABUTERIMON_RED                   TRUE
 #undef P_FAMILY_SAWK
 #define P_FAMILY_SAWK                    TRUE
 #undef P_FAMILY_SEWADDLE
