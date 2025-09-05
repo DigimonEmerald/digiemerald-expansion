@@ -4980,8 +4980,8 @@ static const u16 sMetalseadramonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_METALSEADRAMON
 
-#if P_FAMILY_LITLEO
-static const u16 sLitleoEggMoveLearnset[] = {
+#if P_FAMILY_APOCALYMON
+static const u16 sApocalymonEggMoveLearnset[] = {
     MOVE_ENTRAINMENT,
     MOVE_YAWN,
     MOVE_SNATCH,
@@ -4989,7 +4989,7 @@ static const u16 sLitleoEggMoveLearnset[] = {
     MOVE_FLARE_BLITZ,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_LITLEO
+#endif //P_FAMILY_APOCALYMON
 
 #if P_FAMILY_FLABEBE
 static const u16 sFlabebeEggMoveLearnset[] = {

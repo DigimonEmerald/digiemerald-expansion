@@ -4239,15 +4239,15 @@ Cry_Saberleomon::
 	.incbin "sound/direct_sound_samples/cries/saberleomon.bin"
 .endif @ P_FAMILY_METALSEADRAMON
 
-.if P_FAMILY_LITLEO == TRUE
+.if P_FAMILY_APOCALYMON == TRUE
 	.align 2
-Cry_Litleo::
-	.incbin "sound/direct_sound_samples/cries/litleo.bin"
+Cry_Apocalymon::
+	.incbin "sound/direct_sound_samples/cries/apocalymon.bin"
 
 	.align 2
 Cry_Pyroar::
 	.incbin "sound/direct_sound_samples/cries/pyroar.bin"
-.endif @ P_FAMILY_LITLEO
+.endif @ P_FAMILY_APOCALYMON
 
 .if P_FAMILY_FLABEBE == TRUE
 	.align 2

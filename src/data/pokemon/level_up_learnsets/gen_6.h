@@ -15521,8 +15521,8 @@ static const struct LevelUpMove sSaberleomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_METALSEADRAMON
 
-#if P_FAMILY_LITLEO
-static const struct LevelUpMove sLitleoLevelUpLearnset[] = {
+#if P_FAMILY_APOCALYMON
+static const struct LevelUpMove sApocalymonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 5, MOVE_EMBER),
@@ -15560,7 +15560,7 @@ static const struct LevelUpMove sPyroarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(57, MOVE_OVERHEAT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_LITLEO
+#endif //P_FAMILY_APOCALYMON
 
 #if P_FAMILY_FLABEBE
 static const struct LevelUpMove sFlabebeLevelUpLearnset[] = {

@@ -1627,10 +1627,10 @@ gCryTable::
 	cry Cry_Pukumon
 	cry Cry_Saberleomon
 .endif @ P_FAMILY_METALSEADRAMON
-.if P_FAMILY_LITLEO == TRUE
-	cry Cry_Litleo
+.if P_FAMILY_APOCALYMON == TRUE
+	cry Cry_Apocalymon
 	cry Cry_Pyroar
-.endif @ P_FAMILY_LITLEO
+.endif @ P_FAMILY_APOCALYMON
 .if P_FAMILY_FLABEBE == TRUE
 	cry Cry_Flabebe
 	cry Cry_Floette
@@ -4055,10 +4055,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Pukumon
 	cry_reverse Cry_Saberleomon
 .endif @ P_FAMILY_METALSEADRAMON
-.if P_FAMILY_LITLEO == TRUE
-	cry_reverse Cry_Litleo
+.if P_FAMILY_APOCALYMON == TRUE
+	cry_reverse Cry_Apocalymon
 	cry_reverse Cry_Pyroar
-.endif @ P_FAMILY_LITLEO
+.endif @ P_FAMILY_APOCALYMON
 .if P_FAMILY_FLABEBE == TRUE
 	cry_reverse Cry_Flabebe
 	cry_reverse Cry_Floette

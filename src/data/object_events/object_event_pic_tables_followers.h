@@ -4687,9 +4687,9 @@ static const struct SpriteFrameImage sPicTable_SaberleomonPokeBall[] = {
 };
 #endif //P_FAMILY_METALSEADRAMON
 
-#if P_FAMILY_LITLEO
-static const struct SpriteFrameImage sPicTable_Litleo[] = {
-    overworld_ascending_frames(gObjectEventPic_Litleo, 4, 4),
+#if P_FAMILY_APOCALYMON
+static const struct SpriteFrameImage sPicTable_Apocalymon[] = {
+    overworld_ascending_frames(gObjectEventPic_Apocalymon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Pyroar[] = {
     overworld_ascending_frames(gObjectEventPic_Pyroar, 4, 4),
@@ -4699,7 +4699,7 @@ static const struct SpriteFrameImage sPicTable_PyroarF[] = {
     overworld_ascending_frames(gObjectEventPic_PyroarF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_LITLEO
+#endif //P_FAMILY_APOCALYMON
 
 #if P_FAMILY_FLABEBE
 

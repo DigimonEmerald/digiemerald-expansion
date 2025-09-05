@@ -8279,8 +8279,8 @@ static const union AnimCmd sAnim_Saberleomon_1[] =
 };
 #endif //P_FAMILY_METALSEADRAMON
 
-#if P_FAMILY_LITLEO
-static const union AnimCmd sAnim_Litleo_1[] =
+#if P_FAMILY_APOCALYMON
+static const union AnimCmd sAnim_Apocalymon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 25),
@@ -8294,7 +8294,7 @@ static const union AnimCmd sAnim_Pyroar_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_LITLEO
+#endif //P_FAMILY_APOCALYMON
 
 #if P_FAMILY_FLABEBE
 static const union AnimCmd sAnim_Flabebe_1[] =
@@ -11996,10 +11996,10 @@ SINGLE_ANIMATION(Metalseadramon);
 SINGLE_ANIMATION(Pukumon);
 SINGLE_ANIMATION(Saberleomon);
 #endif //P_FAMILY_METALSEADRAMON
-#if P_FAMILY_LITLEO
-SINGLE_ANIMATION(Litleo);
+#if P_FAMILY_APOCALYMON
+SINGLE_ANIMATION(Apocalymon);
 SINGLE_ANIMATION(Pyroar);
-#endif //P_FAMILY_LITLEO
+#endif //P_FAMILY_APOCALYMON
 #if P_FAMILY_FLABEBE
 SINGLE_ANIMATION(Flabebe);
 SINGLE_ANIMATION(Floette);

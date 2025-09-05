@@ -1482,42 +1482,43 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
 #endif //P_FAMILY_METALSEADRAMON
 
-#if P_FAMILY_LITLEO
-    [SPECIES_LITLEO] =
+#if P_FAMILY_APOCALYMON
+    [SPECIES_APOCALYMON] =
     {
-        .baseHP        = 62,
-        .baseAttack    = 50,
-        .baseDefense   = 58,
-        .baseSpeed     = 72,
-        .baseSpAttack  = 73,
-        .baseSpDefense = 54,
-        .types = MON_TYPES(TYPE_FIRE, TYPE_NORMAL),
-        .catchRate = 220,
-        .expYield = 74,
+        .baseHP        = 160,
+        .baseAttack    = 95,
+        .baseDefense   = 145,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 145,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_DARK),
+        .attribute = TYPE_UKNOWN,   
+        .catchRate = 55,
+        .expYield = 250,
         .evYield_SpAttack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_RIVALRY, ABILITY_UNNERVE, ABILITY_MOXIE },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Litleo"),
-        .cryId = CRY_LITLEO,
-        .natDexNum = NATIONAL_DEX_LITLEO,
-        .categoryName = _("Lion Cub"),
-        .height = 6,
-        .weight = 135,
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_NONE, ABILITY_NONE }, // DEATH EVOLUTION
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Apocalymon"),
+        .cryId = CRY_APOCALYMON,
+        .natDexNum = NATIONAL_DEX_APOCALYMON,
+        .categoryName = _("Negative"),
+        .height = 850,
+        .weight = 10634,
         .description = COMPOUND_STRING(
-            "They set off on their own from their pride\n"
-            "and live by themselves to become stronger.\n"
-            "These hot-blooded Pokémon are quick\n"
-            "to start a fight."),
+            "Formed from negative thoughts, Apocalymon\n"
+            "seeks to purge the Digital World and\n"
+            "everything to nothingness. Some believe\n"
+            "that Apocalymon isn't even a Digimon."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Litleo,
+        .frontPic = gMonFrontPic_Apocalymon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 10,
         .frontAnimFrames = ANIM_FRAMES(
@@ -1526,29 +1527,29 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 30),
         ),
         .frontAnimId = ANIM_BACK_AND_LUNGE,
-        .backPic = gMonBackPic_Litleo,
+        .backPic = gMonBackPic_Apocalymon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Litleo,
-        .shinyPalette = gMonShinyPalette_Litleo,
-        .iconSprite = gMonIcon_Litleo,
+        .palette = gMonPalette_Apocalymon,
+        .shinyPalette = gMonShinyPalette_Apocalymon,
+        .iconSprite = gMonIcon_Apocalymon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(2, 3, SHADOW_SIZE_S)
-        FOOTPRINT(Litleo)
+        FOOTPRINT(Apocalymon)
         OVERWORLD(
-            sPicTable_Litleo,
+            sPicTable_Apocalymon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Litleo,
-            gShinyOverworldPalette_Litleo
+            gOverworldPalette_Apocalymon,
+            gShinyOverworldPalette_Apocalymon
         )
-        .levelUpLearnset = sLitleoLevelUpLearnset,
-        .teachableLearnset = sLitleoTeachableLearnset,
-        .eggMoveLearnset = sLitleoEggMoveLearnset,
+        .levelUpLearnset = sApocalymonLevelUpLearnset,
+        .teachableLearnset = sApocalymonTeachableLearnset,
+        .eggMoveLearnset = sApocalymonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_PYROAR}),
     },
 
@@ -1632,7 +1633,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sPyroarLevelUpLearnset,
         .teachableLearnset = sPyroarTeachableLearnset,
     },
-#endif //P_FAMILY_LITLEO
+#endif //P_FAMILY_APOCALYMON
 
 #if P_FAMILY_FLABEBE
 #define FLABEBE_MISC_INFO(Form, FORM, iconPal)                                  \

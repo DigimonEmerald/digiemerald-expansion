@@ -19517,20 +19517,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonIcon_SaberleomonPokeBall[] = INCBIN_U8("graphics/pokemon/saberleomon/poke_ball/icon.4bpp");
 #endif //P_FAMILY_METALSEADRAMON
 
-#if P_FAMILY_LITLEO
-    const u32 gMonFrontPic_Litleo[] = INCBIN_U32("graphics/pokemon/litleo/anim_front.4bpp.smol");
-    const u16 gMonPalette_Litleo[] = INCBIN_U16("graphics/pokemon/litleo/normal.gbapal");
-    const u32 gMonBackPic_Litleo[] = INCBIN_U32("graphics/pokemon/litleo/back.4bpp.smol");
-    const u16 gMonShinyPalette_Litleo[] = INCBIN_U16("graphics/pokemon/litleo/shiny.gbapal");
-    const u8 gMonIcon_Litleo[] = INCBIN_U8("graphics/pokemon/litleo/icon.4bpp");
+#if P_FAMILY_APOCALYMON
+    const u32 gMonFrontPic_Apocalymon[] = INCBIN_U32("graphics/pokemon/apocalymon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Apocalymon[] = INCBIN_U16("graphics/pokemon/apocalymon/normal.gbapal");
+    const u32 gMonBackPic_Apocalymon[] = INCBIN_U32("graphics/pokemon/apocalymon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Apocalymon[] = INCBIN_U16("graphics/pokemon/apocalymon/shiny.gbapal");
+    const u8 gMonIcon_Apocalymon[] = INCBIN_U8("graphics/pokemon/apocalymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Litleo[] = INCBIN_U8("graphics/pokemon/litleo/footprint.1bpp");
+    const u8 gMonFootprint_Apocalymon[] = INCBIN_U8("graphics/pokemon/apocalymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Litleo[] = INCBIN_COMP("graphics/pokemon/litleo/overworld.4bpp");
+    const u32 gObjectEventPic_Apocalymon[] = INCBIN_COMP("graphics/pokemon/apocalymon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Litleo[] = INCBIN_U16("graphics/pokemon/litleo/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Litleo[] = INCBIN_U16("graphics/pokemon/litleo/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Apocalymon[] = INCBIN_U16("graphics/pokemon/apocalymon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Apocalymon[] = INCBIN_U16("graphics/pokemon/apocalymon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -19558,7 +19558,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gObjectEventPic_PyroarF[] = INCBIN_COMP("graphics/pokemon/pyroar/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_LITLEO
+#endif //P_FAMILY_APOCALYMON
 
 #if P_FAMILY_FLABEBE
     const u32 gMonFrontPic_Flabebe[] = INCBIN_U32("graphics/pokemon/flabebe/anim_front.4bpp.smol");

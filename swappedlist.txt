@@ -483,6 +483,7 @@ Pumpkinmon - Timburr
 Piximon - Gurdurr
 ShogunGekomon - Conkeldurr
 Zudomon - Tympole
+Aeroveedramon - Palpitoad
 
 Mega List
 
@@ -504,5 +505,6 @@ MetalEtemon - Talonflame
 MetalSeadramon - Scatterbug
 Pukumon - Spewpa
 SaberLeomon - Vivillon
+Apocalymon - Litleo
 
 SPECIES NAME LENGTH MAX = 13

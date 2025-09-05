@@ -3270,7 +3270,7 @@ $(POKEMONGFXDIR)/pukumon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/saberleomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/litleo/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/apocalymon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/pyroar/overworld.4bpp: %.4bpp: %.png

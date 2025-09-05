@@ -26800,8 +26800,8 @@ static const u16 sSaberleomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_METALSEADRAMON
 
-#if P_FAMILY_LITLEO
-static const u16 sLitleoTeachableLearnset[] = {
+#if P_FAMILY_APOCALYMON
+static const u16 sApocalymonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_DIG,
@@ -26865,7 +26865,7 @@ static const u16 sPyroarTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_LITLEO
+#endif //P_FAMILY_APOCALYMON
 
 #if P_FAMILY_FLABEBE
 static const u16 sFlabebeTeachableLearnset[] = {

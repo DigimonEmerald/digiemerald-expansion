@@ -696,7 +696,7 @@
 #define SPECIES_PUKUMON_ICY_SNOW                         665
 #define SPECIES_SABERLEOMON                                SPECIES_SABERLEOMON_ICY_SNOW
 #define SPECIES_SABERLEOMON_ICY_SNOW                       666
-#define SPECIES_LITLEO                                  667
+#define SPECIES_APOCALYMON                                  667
 #define SPECIES_PYROAR                                  668
 #define SPECIES_FLABEBE                                 SPECIES_FLABEBE_RED
 #define SPECIES_FLABEBE_RED                             669

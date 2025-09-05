@@ -711,8 +711,8 @@
 #define P_FAMILY_DINOMON              TRUE
 #undef P_FAMILY_METALSEADRAMON
 #define P_FAMILY_METALSEADRAMON              TRUE
-#undef P_FAMILY_LITLEO
-#define P_FAMILY_LITLEO                  TRUE
+#undef P_FAMILY_APOCALYMON
+#define P_FAMILY_APOCALYMON                  TRUE
 #undef P_FAMILY_FLABEBE
 #define P_FAMILY_FLABEBE                 TRUE
 #undef P_FAMILY_SKIDDO
