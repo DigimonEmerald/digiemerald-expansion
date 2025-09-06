@@ -556,7 +556,7 @@
 #define SPECIES_AEROVEEDRAMON                               536
 #define SPECIES_ASURAMON                              537
 #define SPECIES_MEGAKABUTERIMON_RED                                   538
-#define SPECIES_SAWK                                    539
+#define SPECIES_BIGMAMEMON                                    539
 #define SPECIES_SEWADDLE                                540
 #define SPECIES_SWADLOON                                541
 #define SPECIES_LEAVANNY                                542

@@ -1347,9 +1347,9 @@ gCryTable::
 .if P_FAMILY_MEGAKABUTERIMON_RED == TRUE
 	cry Cry_Megakabuterimon_red
 .endif @ P_FAMILY_MEGAKABUTERIMON_RED
-.if P_FAMILY_SAWK == TRUE
-	cry Cry_Sawk
-.endif @ P_FAMILY_SAWK
+.if P_FAMILY_BIGMAMEMON == TRUE
+	cry Cry_Bigmamemon
+.endif @ P_FAMILY_BIGMAMEMON
 .if P_FAMILY_SEWADDLE == TRUE
 	cry Cry_Sewaddle
 	cry Cry_Swadloon
@@ -3775,9 +3775,9 @@ gCryTable_Reverse::
 .if P_FAMILY_MEGAKABUTERIMON_RED == TRUE
 	cry_reverse Cry_Megakabuterimon_red
 .endif @ P_FAMILY_MEGAKABUTERIMON_RED
-.if P_FAMILY_SAWK == TRUE
-	cry_reverse Cry_Sawk
-.endif @ P_FAMILY_SAWK
+.if P_FAMILY_BIGMAMEMON == TRUE
+	cry_reverse Cry_Bigmamemon
+.endif @ P_FAMILY_BIGMAMEMON
 .if P_FAMILY_SEWADDLE == TRUE
 	cry_reverse Cry_Sewaddle
 	cry_reverse Cry_Swadloon

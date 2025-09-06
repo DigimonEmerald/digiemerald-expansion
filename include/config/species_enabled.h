@@ -324,7 +324,7 @@
 #define P_FAMILY_PUMPKINMON                 P_GEN_5_POKEMON
 #define P_FAMILY_ZUDOMON                 P_GEN_5_POKEMON
 #define P_FAMILY_MEGAKABUTERIMON_RED                   P_GEN_5_POKEMON
-#define P_FAMILY_SAWK                    P_GEN_5_POKEMON
+#define P_FAMILY_BIGMAMEMON                    P_GEN_5_POKEMON
 #define P_FAMILY_SEWADDLE                P_GEN_5_POKEMON
 #define P_FAMILY_VENIPEDE                P_GEN_5_POKEMON
 #define P_FAMILY_COTTONEE                P_GEN_5_POKEMON

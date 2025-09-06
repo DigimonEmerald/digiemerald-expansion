@@ -16688,23 +16688,23 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MEGAKABUTERIMON_RED
 
-#if P_FAMILY_SAWK
-    const u32 gMonFrontPic_Sawk[] = INCBIN_U32("graphics/pokemon/sawk/anim_front.4bpp.smol");
-    const u16 gMonPalette_Sawk[] = INCBIN_U16("graphics/pokemon/sawk/normal.gbapal");
-    const u32 gMonBackPic_Sawk[] = INCBIN_U32("graphics/pokemon/sawk/back.4bpp.smol");
-    const u16 gMonShinyPalette_Sawk[] = INCBIN_U16("graphics/pokemon/sawk/shiny.gbapal");
-    const u8 gMonIcon_Sawk[] = INCBIN_U8("graphics/pokemon/sawk/icon.4bpp");
+#if P_FAMILY_BIGMAMEMON
+    const u32 gMonFrontPic_Bigmamemon[] = INCBIN_U32("graphics/pokemon/bigmamemon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Bigmamemon[] = INCBIN_U16("graphics/pokemon/bigmamemon/normal.gbapal");
+    const u32 gMonBackPic_Bigmamemon[] = INCBIN_U32("graphics/pokemon/bigmamemon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Bigmamemon[] = INCBIN_U16("graphics/pokemon/bigmamemon/shiny.gbapal");
+    const u8 gMonIcon_Bigmamemon[] = INCBIN_U8("graphics/pokemon/bigmamemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Sawk[] = INCBIN_U8("graphics/pokemon/sawk/footprint.1bpp");
+    const u8 gMonFootprint_Bigmamemon[] = INCBIN_U8("graphics/pokemon/bigmamemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Sawk[] = INCBIN_COMP("graphics/pokemon/sawk/overworld.4bpp");
+    const u32 gObjectEventPic_Bigmamemon[] = INCBIN_COMP("graphics/pokemon/bigmamemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Sawk[] = INCBIN_U16("graphics/pokemon/sawk/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Sawk[] = INCBIN_U16("graphics/pokemon/sawk/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Bigmamemon[] = INCBIN_U16("graphics/pokemon/bigmamemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Bigmamemon[] = INCBIN_U16("graphics/pokemon/bigmamemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_SAWK
+#endif //P_FAMILY_BIGMAMEMON
 
 #if P_FAMILY_SEWADDLE
     const u32 gMonFrontPic_Sewaddle[] = INCBIN_U32("graphics/pokemon/sewaddle/anim_front.4bpp.smol");

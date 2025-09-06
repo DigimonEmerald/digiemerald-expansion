@@ -486,6 +486,7 @@ Zudomon - Tympole
 Aeroveedramon - Palpitoad
 Asuramon - Seismitoad
 MegaKabuterimon (Red) - Throh
+BigMamemon - Sawk
 
 Mega List
 
@@ -508,5 +509,6 @@ MetalSeadramon - Scatterbug
 Pukumon - Spewpa
 SaberLeomon - Vivillon
 Apocalymon - Litleo
+Babamon - Pyroar
 
 SPECIES NAME LENGTH MAX = 13

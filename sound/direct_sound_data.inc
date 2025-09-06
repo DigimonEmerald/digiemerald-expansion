@@ -3548,11 +3548,11 @@ Cry_Megakabuterimon_red::
 	.incbin "sound/direct_sound_samples/cries/megakabuterimon_red.bin"
 .endif @ P_FAMILY_MEGAKABUTERIMON_RED
 
-.if P_FAMILY_SAWK == TRUE
+.if P_FAMILY_BIGMAMEMON == TRUE
 	.align 2
-Cry_Sawk::
-	.incbin "sound/direct_sound_samples/cries/sawk.bin"
-.endif @ P_FAMILY_SAWK
+Cry_Bigmamemon::
+	.incbin "sound/direct_sound_samples/cries/bigmamemon.bin"
+.endif @ P_FAMILY_BIGMAMEMON
 
 .if P_FAMILY_SEWADDLE == TRUE
 	.align 2

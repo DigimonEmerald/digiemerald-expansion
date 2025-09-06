@@ -3480,18 +3480,20 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_MEGAKABUTERIMON_RED
 
-#if P_FAMILY_SAWK
-    [SPECIES_SAWK] =
+#if P_FAMILY_BIGMAMEMON
+    [SPECIES_BIGMAMEMON] =
     {
-        .baseHP        = 75,
+        .baseHP        = 145,
         .baseAttack    = 125,
-        .baseDefense   = 75,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_FIGHTING),
+        .baseDefense   = 65,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .attribute = TYPE_DATA,
         .catchRate = 95,
-        .expYield = 163,
+        .expYield = 200,
+        .evYield_HP = 3,
         .evYield_Attack = 2,
         .itemRare = ITEM_BLACK_BELT,
         .genderRatio = MON_GENDERLESS,
@@ -3499,25 +3501,25 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_STURDY, ABILITY_INNER_FOCUS, ABILITY_MOLD_BREAKER },
-        .bodyColor = BODY_COLOR_BLUE,
+        .abilities = { ABILITY_THICK_FAT, ABILITY_THICK_FAT, ABILITY_NONE }, // Big Head
+        .bodyColor = BODY_COLOR_GRAY,
         .noFlip = TRUE,
-        .speciesName = _("Sawk"),
-        .cryId = CRY_SAWK,
-        .natDexNum = NATIONAL_DEX_SAWK,
-        .categoryName = _("Karate"),
-        .height = 14,
-        .weight = 510,
+        .speciesName = _("BigMamemon"),
+        .cryId = CRY_BIGMAMEMON,
+        .natDexNum = NATIONAL_DEX_BIGMAMEMON,
+        .categoryName = _("Smile Bomber"),
+        .height = 34,
+        .weight = 1999,
         .description = COMPOUND_STRING(
-            "The sound of Sawk punching boulders\n"
-            "and trees can be heard all the way from\n"
-            "the mountains where they train.\n"
-            "Disturbing their training angers them."),
+            "It is unclear why BigMamemon are so much\n"
+            "bigger than other Mamemon species. It is\n"
+            "seen as the leader when it is\n"
+            "with other Mamemons."),
         .pokemonScale = 265,
         .pokemonOffset = 4,
         .trainerScale = 262,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Sawk,
+        .frontPic = gMonFrontPic_Bigmamemon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 7,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3525,30 +3527,30 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Sawk,
+        .backPic = gMonBackPic_Bigmamemon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_H_STRETCH,
-        .palette = gMonPalette_Sawk,
-        .shinyPalette = gMonShinyPalette_Sawk,
-        .iconSprite = gMonIcon_Sawk,
+        .palette = gMonPalette_Bigmamemon,
+        .shinyPalette = gMonShinyPalette_Bigmamemon,
+        .iconSprite = gMonIcon_Bigmamemon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 6, SHADOW_SIZE_M)
-        FOOTPRINT(Sawk)
+        FOOTPRINT(Bigmamemon)
         OVERWORLD(
-            sPicTable_Sawk,
+            sPicTable_Bigmamemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Sawk,
-            gShinyOverworldPalette_Sawk
+            gOverworldPalette_Bigmamemon,
+            gShinyOverworldPalette_Bigmamemon
         )
-        .levelUpLearnset = sSawkLevelUpLearnset,
-        .teachableLearnset = sSawkTeachableLearnset,
+        .levelUpLearnset = sBigmamemonLevelUpLearnset,
+        .teachableLearnset = sBigmamemonTeachableLearnset,
     },
-#endif //P_FAMILY_SAWK
+#endif //P_FAMILY_BIGMAMEMON
 
 #if P_FAMILY_SEWADDLE
     [SPECIES_SEWADDLE] =

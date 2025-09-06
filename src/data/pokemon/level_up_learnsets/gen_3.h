@@ -10135,8 +10135,8 @@ static const struct LevelUpMove sMegakabuterimon_redLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_MEGAKABUTERIMON_RED
 
-#if P_FAMILY_SAWK
-static const struct LevelUpMove sSawkLevelUpLearnset[] = {
+#if P_FAMILY_BIGMAMEMON
+static const struct LevelUpMove sBigmamemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ROCK_SMASH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 5, MOVE_BIDE),
@@ -10154,7 +10154,7 @@ static const struct LevelUpMove sSawkLevelUpLearnset[] = {
     LEVEL_UP_MOVE(53, MOVE_REVERSAL),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SAWK
+#endif //P_FAMILY_BIGMAMEMON
 
 #if P_FAMILY_SEWADDLE
 static const struct LevelUpMove sSewaddleLevelUpLearnset[] = {

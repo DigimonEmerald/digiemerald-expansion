@@ -22432,8 +22432,8 @@ static const u16 sMegakabuterimon_redTeachableLearnset[] = {
 };
 #endif //P_FAMILY_MEGAKABUTERIMON_RED
 
-#if P_FAMILY_SAWK
-static const u16 sSawkTeachableLearnset[] = {
+#if P_FAMILY_BIGMAMEMON
+static const u16 sBigmamemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -22464,7 +22464,7 @@ static const u16 sSawkTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SAWK
+#endif //P_FAMILY_BIGMAMEMON
 
 #if P_FAMILY_SEWADDLE
 static const u16 sSewaddleTeachableLearnset[] = {
