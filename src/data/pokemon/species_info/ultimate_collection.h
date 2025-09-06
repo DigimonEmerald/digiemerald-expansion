@@ -3624,45 +3624,48 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sTinmonLevelUpLearnset,
         .teachableLearnset = sTinmonTeachableLearnset,
         .eggMoveLearnset = sTinmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_SWADLOON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_BLOSSOMON}),
     },
 
-    [SPECIES_SWADLOON] =
+    [SPECIES_BLOSSOMON] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 63,
-        .baseDefense   = 90,
-        .baseSpeed     = 42,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 80,
-        .types = MON_TYPES(TYPE_BUG, TYPE_GRASS),
+        .baseHP        = 130,
+        .baseAttack    = 55,
+        .baseDefense   = 75,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 130,
+        .types = MON_TYPES(TYPE_GRASS),
+        .attribute = TYPE_DATA,
         .catchRate = 95,
-        .expYield = 133,
-        .evYield_Defense = 2,
+        .expYield = 200,
+        .evYield_HP = 2,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 2,
         .itemRare = ITEM_MENTAL_HERB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_LEAF_GUARD, ABILITY_CHLOROPHYLL, ABILITY_OVERCOAT },
+        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_FLOWER_VEIL, ABILITY_GRASSY_SURGE }, // Carnivorous Plant
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Swadloon"),
-        .cryId = CRY_SWADLOON,
-        .natDexNum = NATIONAL_DEX_SWADLOON,
-        .categoryName = _("Leaf-Wrapped"),
-        .height = 5,
-        .weight = 73,
+        .speciesName = _("Blossomon"),
+        .cryId = CRY_BLOSSOMON,
+        .natDexNum = NATIONAL_DEX_BLOSSOMON,
+        .categoryName = _("Insectivorous"),
+        .height = 67,
+        .weight = 3422,
         .description = COMPOUND_STRING(
-            "Forests where Swadloon live have\n"
-            "superb foliage because the nutrients\n"
-            "they make from fallen leaves nourish\n"
-            "the plant life."),
+            "Many believe Blossomon is an\n"
+            "aggressive Digimon however it is very\n"
+            "docile and prefers its own company. It\n"
+            "has an unusually long life span"),
         .pokemonScale = 432,
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Swadloon,
+        .frontPic = gMonFrontPic_Blossomon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 12,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3672,28 +3675,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 20),
         ),
         .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
-        .backPic = gMonBackPic_Swadloon,
+        .backPic = gMonBackPic_Blossomon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 10,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Swadloon,
-        .shinyPalette = gMonShinyPalette_Swadloon,
-        .iconSprite = gMonIcon_Swadloon,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Blossomon,
+        .shinyPalette = gMonShinyPalette_Blossomon,
+        .iconSprite = gMonIcon_Blossomon,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(0, 1, SHADOW_SIZE_L)
-        FOOTPRINT(Swadloon)
+        FOOTPRINT(Blossomon)
         OVERWORLD(
-            sPicTable_Swadloon,
+            sPicTable_Blossomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Swadloon,
-            gShinyOverworldPalette_Swadloon
+            gOverworldPalette_Blossomon,
+            gShinyOverworldPalette_Blossomon
         )
-        .levelUpLearnset = sSwadloonLevelUpLearnset,
-        .teachableLearnset = sSwadloonTeachableLearnset,
+        .levelUpLearnset = sBlossomonLevelUpLearnset,
+        .teachableLearnset = sBlossomonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_LEAVANNY, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
     },
 

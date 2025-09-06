@@ -3560,8 +3560,8 @@ Cry_Tinmon::
 	.incbin "sound/direct_sound_samples/cries/tinmon.bin"
 
 	.align 2
-Cry_Swadloon::
-	.incbin "sound/direct_sound_samples/cries/swadloon.bin"
+Cry_Blossomon::
+	.incbin "sound/direct_sound_samples/cries/blossomon.bin"
 
 	.align 2
 Cry_Leavanny::

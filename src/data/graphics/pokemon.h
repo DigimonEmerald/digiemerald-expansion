@@ -16723,19 +16723,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Swadloon[] = INCBIN_U32("graphics/pokemon/swadloon/anim_front.4bpp.smol");
-    const u16 gMonPalette_Swadloon[] = INCBIN_U16("graphics/pokemon/swadloon/normal.gbapal");
-    const u32 gMonBackPic_Swadloon[] = INCBIN_U32("graphics/pokemon/swadloon/back.4bpp.smol");
-    const u16 gMonShinyPalette_Swadloon[] = INCBIN_U16("graphics/pokemon/swadloon/shiny.gbapal");
-    const u8 gMonIcon_Swadloon[] = INCBIN_U8("graphics/pokemon/swadloon/icon.4bpp");
+    const u32 gMonFrontPic_Blossomon[] = INCBIN_U32("graphics/pokemon/blossomon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Blossomon[] = INCBIN_U16("graphics/pokemon/blossomon/normal.gbapal");
+    const u32 gMonBackPic_Blossomon[] = INCBIN_U32("graphics/pokemon/blossomon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Blossomon[] = INCBIN_U16("graphics/pokemon/blossomon/shiny.gbapal");
+    const u8 gMonIcon_Blossomon[] = INCBIN_U8("graphics/pokemon/blossomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Swadloon[] = INCBIN_U8("graphics/pokemon/swadloon/footprint.1bpp");
+    const u8 gMonFootprint_Blossomon[] = INCBIN_U8("graphics/pokemon/blossomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Swadloon[] = INCBIN_COMP("graphics/pokemon/swadloon/overworld.4bpp");
+    const u32 gObjectEventPic_Blossomon[] = INCBIN_COMP("graphics/pokemon/blossomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Swadloon[] = INCBIN_U16("graphics/pokemon/swadloon/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Swadloon[] = INCBIN_U16("graphics/pokemon/swadloon/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Blossomon[] = INCBIN_U16("graphics/pokemon/blossomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Blossomon[] = INCBIN_U16("graphics/pokemon/blossomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
