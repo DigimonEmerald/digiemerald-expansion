@@ -1552,44 +1552,47 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sApocalymonLevelUpLearnset,
         .teachableLearnset = sApocalymonTeachableLearnset,
         .eggMoveLearnset = sApocalymonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_PYROAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_BABAMON}),
     },
 
-    [SPECIES_PYROAR] =
+    [SPECIES_BABAMON] =
     {
-        .baseHP        = 86,
-        .baseAttack    = 68,
-        .baseDefense   = 72,
-        .baseSpeed     = 106,
-        .baseSpAttack  = 109,
-        .baseSpDefense = 66,
-        .types = MON_TYPES(TYPE_FIRE, TYPE_NORMAL),
-        .catchRate = 65,
-        .expYield = 177,
-        .evYield_SpAttack = 2,
+        .baseHP        = 100,
+        .baseAttack    = 60,
+        .baseDefense   = 90,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 160,
+        .types = MON_TYPES(TYPE_PSYCHIC),
+        .attribute = TYPE_VACCINE,   
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_HP = 1,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 4,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_RIVALRY, ABILITY_UNNERVE, ABILITY_MOXIE },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Pyroar"),
-        .cryId = CRY_PYROAR,
-        .natDexNum = NATIONAL_DEX_PYROAR,
-        .categoryName = _("Royal"),
-        .height = 15,
-        .weight = 815,
+        .abilities = { ABILITY_SCREEN_CLEANER, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Babamon"),
+        .cryId = CRY_BABAMON,
+        .natDexNum = NATIONAL_DEX_BABAMON,
+        .categoryName = _("Old"),
+        .height = 13,
+        .weight = 611,
         .description = COMPOUND_STRING(
-            "The male with the largest mane of fire\n"
-            "is the leader of the pride. The females\n"
-            "protect the pride's cubs. They viciously\n"
-            "threaten any challenger."),
+            "Babamons are rumoured to be cranky\n"
+            "because they are Rosemon who got cursed.\n"
+            "Despite its frail appearance, it holds\n"
+            "considerably power."),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Pyroar,
+        .frontPic = gMonFrontPic_Babamon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -1597,43 +1600,43 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_SHAKE,
-        .backPic = gMonBackPic_Pyroar,
+        .backPic = gMonBackPic_Babamon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_H_STRETCH,
-        .palette = gMonPalette_Pyroar,
-        .shinyPalette = gMonShinyPalette_Pyroar,
-        .iconSprite = gMonIcon_Pyroar,
+        .palette = gMonPalette_Babamon,
+        .shinyPalette = gMonShinyPalette_Babamon,
+        .iconSprite = gMonIcon_Babamon,
         .iconPalIndex = 2,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_PyroarF,
+        .frontPicFemale = gMonFrontPic_BabamonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
-        .backPicFemale = gMonBackPic_PyroarF,
+        .backPicFemale = gMonBackPic_BabamonF,
         .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
-        .iconSpriteFemale = gMonIcon_PyroarF,
+        .iconSpriteFemale = gMonIcon_BabamonF,
         .iconPalIndexFemale = 2,
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
-        FOOTPRINT(Pyroar)
+        FOOTPRINT(Babamon)
         OVERWORLD(
-            sPicTable_Pyroar,
+            sPicTable_Babamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Pyroar,
-            gShinyOverworldPalette_Pyroar
+            gOverworldPalette_Babamon,
+            gShinyOverworldPalette_Babamon
         )
         OVERWORLD_FEMALE(
-            sPicTable_PyroarF,
+            sPicTable_BabamonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sPyroarLevelUpLearnset,
-        .teachableLearnset = sPyroarTeachableLearnset,
+        .levelUpLearnset = sBabamonLevelUpLearnset,
+        .teachableLearnset = sBabamonTeachableLearnset,
     },
 #endif //P_FAMILY_APOCALYMON
 

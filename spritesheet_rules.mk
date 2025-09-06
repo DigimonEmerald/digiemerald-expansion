@@ -3273,10 +3273,10 @@ $(POKEMONGFXDIR)/saberleomon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/apocalymon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/pyroar/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/babamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/pyroar/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/babamon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/flabebe/overworld.4bpp: %.4bpp: %.png

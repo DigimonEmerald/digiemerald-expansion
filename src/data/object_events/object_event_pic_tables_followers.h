@@ -4691,12 +4691,12 @@ static const struct SpriteFrameImage sPicTable_SaberleomonPokeBall[] = {
 static const struct SpriteFrameImage sPicTable_Apocalymon[] = {
     overworld_ascending_frames(gObjectEventPic_Apocalymon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Pyroar[] = {
-    overworld_ascending_frames(gObjectEventPic_Pyroar, 4, 4),
+static const struct SpriteFrameImage sPicTable_Babamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Babamon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_PyroarF[] = {
-    overworld_ascending_frames(gObjectEventPic_PyroarF, 4, 4),
+static const struct SpriteFrameImage sPicTable_BabamonF[] = {
+    overworld_ascending_frames(gObjectEventPic_BabamonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_APOCALYMON

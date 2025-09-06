@@ -26833,7 +26833,7 @@ static const u16 sApocalymonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sPyroarTeachableLearnset[] = {
+static const u16 sBabamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_DIG,

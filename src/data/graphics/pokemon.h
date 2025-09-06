@@ -19534,28 +19534,28 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Pyroar[] = INCBIN_U32("graphics/pokemon/pyroar/anim_front.4bpp.smol");
-    const u16 gMonPalette_Pyroar[] = INCBIN_U16("graphics/pokemon/pyroar/normal.gbapal");
-    const u32 gMonBackPic_Pyroar[] = INCBIN_U32("graphics/pokemon/pyroar/back.4bpp.smol");
-    const u16 gMonShinyPalette_Pyroar[] = INCBIN_U16("graphics/pokemon/pyroar/shiny.gbapal");
-    const u8 gMonIcon_Pyroar[] = INCBIN_U8("graphics/pokemon/pyroar/icon.4bpp");
+    const u32 gMonFrontPic_Babamon[] = INCBIN_U32("graphics/pokemon/babamon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Babamon[] = INCBIN_U16("graphics/pokemon/babamon/normal.gbapal");
+    const u32 gMonBackPic_Babamon[] = INCBIN_U32("graphics/pokemon/babamon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Babamon[] = INCBIN_U16("graphics/pokemon/babamon/shiny.gbapal");
+    const u8 gMonIcon_Babamon[] = INCBIN_U8("graphics/pokemon/babamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Pyroar[] = INCBIN_U8("graphics/pokemon/pyroar/footprint.1bpp");
+    const u8 gMonFootprint_Babamon[] = INCBIN_U8("graphics/pokemon/babamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Pyroar[] = INCBIN_COMP("graphics/pokemon/pyroar/overworld.4bpp");
+    const u32 gObjectEventPic_Babamon[] = INCBIN_COMP("graphics/pokemon/babamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Pyroar[] = INCBIN_U16("graphics/pokemon/pyroar/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Pyroar[] = INCBIN_U16("graphics/pokemon/pyroar/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Babamon[] = INCBIN_U16("graphics/pokemon/babamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Babamon[] = INCBIN_U16("graphics/pokemon/babamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_PyroarF[] = INCBIN_U32("graphics/pokemon/pyroar/anim_frontf.4bpp.smol");
-    const u32 gMonBackPic_PyroarF[] = INCBIN_U32("graphics/pokemon/pyroar/backf.4bpp.smol");
-    const u8 gMonIcon_PyroarF[] = INCBIN_U8("graphics/pokemon/pyroar/iconf.4bpp");
+    const u32 gMonFrontPic_BabamonF[] = INCBIN_U32("graphics/pokemon/babamon/anim_frontf.4bpp.smol");
+    const u32 gMonBackPic_BabamonF[] = INCBIN_U32("graphics/pokemon/babamon/backf.4bpp.smol");
+    const u8 gMonIcon_BabamonF[] = INCBIN_U8("graphics/pokemon/babamon/iconf.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_PyroarF[] = INCBIN_COMP("graphics/pokemon/pyroar/overworldf.4bpp");
+    const u32 gObjectEventPic_BabamonF[] = INCBIN_COMP("graphics/pokemon/babamon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_APOCALYMON

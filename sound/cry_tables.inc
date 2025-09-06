@@ -1629,7 +1629,7 @@ gCryTable::
 .endif @ P_FAMILY_METALSEADRAMON
 .if P_FAMILY_APOCALYMON == TRUE
 	cry Cry_Apocalymon
-	cry Cry_Pyroar
+	cry Cry_Babamon
 .endif @ P_FAMILY_APOCALYMON
 .if P_FAMILY_FLABEBE == TRUE
 	cry Cry_Flabebe
@@ -4057,7 +4057,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_METALSEADRAMON
 .if P_FAMILY_APOCALYMON == TRUE
 	cry_reverse Cry_Apocalymon
-	cry_reverse Cry_Pyroar
+	cry_reverse Cry_Babamon
 .endif @ P_FAMILY_APOCALYMON
 .if P_FAMILY_FLABEBE == TRUE
 	cry_reverse Cry_Flabebe

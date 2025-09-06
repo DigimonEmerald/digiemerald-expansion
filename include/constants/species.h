@@ -697,7 +697,7 @@
 #define SPECIES_SABERLEOMON                                SPECIES_SABERLEOMON_ICY_SNOW
 #define SPECIES_SABERLEOMON_ICY_SNOW                       666
 #define SPECIES_APOCALYMON                                  667
-#define SPECIES_PYROAR                                  668
+#define SPECIES_BABAMON                                  668
 #define SPECIES_FLABEBE                                 SPECIES_FLABEBE_RED
 #define SPECIES_FLABEBE_RED                             669
 #define SPECIES_FLOETTE                                 SPECIES_FLOETTE_RED

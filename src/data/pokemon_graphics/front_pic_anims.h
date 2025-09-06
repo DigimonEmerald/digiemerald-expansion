@@ -8288,7 +8288,7 @@ static const union AnimCmd sAnim_Apocalymon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Pyroar_1[] =
+static const union AnimCmd sAnim_Babamon_1[] =
 {
     ANIMCMD_FRAME(1, 45),
     ANIMCMD_FRAME(0, 5),
@@ -11998,7 +11998,7 @@ SINGLE_ANIMATION(Saberleomon);
 #endif //P_FAMILY_METALSEADRAMON
 #if P_FAMILY_APOCALYMON
 SINGLE_ANIMATION(Apocalymon);
-SINGLE_ANIMATION(Pyroar);
+SINGLE_ANIMATION(Babamon);
 #endif //P_FAMILY_APOCALYMON
 #if P_FAMILY_FLABEBE
 SINGLE_ANIMATION(Flabebe);

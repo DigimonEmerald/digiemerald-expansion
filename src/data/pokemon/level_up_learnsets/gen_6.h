@@ -15541,7 +15541,7 @@ static const struct LevelUpMove sApocalymonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sPyroarLevelUpLearnset[] = {
+static const struct LevelUpMove sBabamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_HYPER_BEAM),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),

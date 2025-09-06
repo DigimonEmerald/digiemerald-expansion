@@ -4245,8 +4245,8 @@ Cry_Apocalymon::
 	.incbin "sound/direct_sound_samples/cries/apocalymon.bin"
 
 	.align 2
-Cry_Pyroar::
-	.incbin "sound/direct_sound_samples/cries/pyroar.bin"
+Cry_Babamon::
+	.incbin "sound/direct_sound_samples/cries/babamon.bin"
 .endif @ P_FAMILY_APOCALYMON
 
 .if P_FAMILY_FLABEBE == TRUE
