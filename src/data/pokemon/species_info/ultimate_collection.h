@@ -3552,43 +3552,45 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_BIGMAMEMON
 
-#if P_FAMILY_SEWADDLE
-    [SPECIES_SEWADDLE] =
+#if P_FAMILY_TINMON
+    [SPECIES_TINMON] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 53,
-        .baseDefense   = 70,
-        .baseSpeed     = 42,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_BUG, TYPE_GRASS),
+        .baseHP        = 130,
+        .baseAttack    = 70,
+        .baseDefense   = 120,
+        .baseSpeed     = 25,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_STEEL),
+        .attribute = TYPE_UKNOWN,
         .catchRate = 95,
         .expYield = 200,
-        .evYield_Defense = 1,
+        .evYield_HP = 3,
+        .evYield_Defense = 2,
         .itemRare = ITEM_MENTAL_HERB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SWARM, ABILITY_CHLOROPHYLL, ABILITY_OVERCOAT },
-        .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Sewaddle"),
-        .cryId = CRY_SEWADDLE,
-        .natDexNum = NATIONAL_DEX_SEWADDLE,
-        .categoryName = _("Sewing"),
-        .height = 3,
-        .weight = 25,
+        .abilities = { ABILITY_HEALER, ABILITY_HOSPITALITY, ABILITY_STEELY_SPIRIT },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Tinmon"),
+        .cryId = CRY_TINMON,
+        .natDexNum = NATIONAL_DEX_TINMON,
+        .categoryName = _("Blik Doll"),
+        .height = 11,
+        .weight = 404,
         .description = COMPOUND_STRING(
-            "It chews up leaves and sews them with\n"
-            "sticky thread extruded from its mouth.\n"
-            "Since this Pokémon makes its own clothes,\n"
-            "it is a mascot for fashion designers."),
+            "While most of Tinmons stats can be\n"
+            "trained to an acceptable standard, its\n"
+            "speed stat will almost never increase\n"
+            "no matter the type of training."),
         .pokemonScale = 530,
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Sewaddle,
+        .frontPic = gMonFrontPic_Tinmon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 14,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3599,29 +3601,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_CIRCLE_INTO_BG,
-        .backPic = gMonBackPic_Sewaddle,
+        .backPic = gMonBackPic_Tinmon,
         .backPicSize = MON_COORDS_SIZE(40, 48),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Sewaddle,
-        .shinyPalette = gMonShinyPalette_Sewaddle,
-        .iconSprite = gMonIcon_Sewaddle,
+        .palette = gMonPalette_Tinmon,
+        .shinyPalette = gMonShinyPalette_Tinmon,
+        .iconSprite = gMonIcon_Tinmon,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(1, 0, SHADOW_SIZE_S)
-        FOOTPRINT(Sewaddle)
+        FOOTPRINT(Tinmon)
         OVERWORLD(
-            sPicTable_Sewaddle,
+            sPicTable_Tinmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Sewaddle,
-            gShinyOverworldPalette_Sewaddle
+            gOverworldPalette_Tinmon,
+            gShinyOverworldPalette_Tinmon
         )
-        .levelUpLearnset = sSewaddleLevelUpLearnset,
-        .teachableLearnset = sSewaddleTeachableLearnset,
-        .eggMoveLearnset = sSewaddleEggMoveLearnset,
+        .levelUpLearnset = sTinmonLevelUpLearnset,
+        .teachableLearnset = sTinmonTeachableLearnset,
+        .eggMoveLearnset = sTinmonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_SWADLOON}),
     },
 
@@ -3730,7 +3732,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .description = COMPOUND_STRING(
             "It keeps its eggs warm with heat from\n"
             "fermenting leaves. It also uses leaves to\n"
-            "weave warm wrappings for Sewaddle by\n"
+            "weave warm wrappings for Tinmon by\n"
             "using the silk secreted from its mouth."),
         .pokemonScale = 282,
         .pokemonOffset = 3,
@@ -3768,7 +3770,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sLeavannyLevelUpLearnset,
         .teachableLearnset = sLeavannyTeachableLearnset,
     },
-#endif //P_FAMILY_SEWADDLE
+#endif //P_FAMILY_TINMON
 
 #if P_FAMILY_VENIPEDE
     [SPECIES_VENIPEDE] =

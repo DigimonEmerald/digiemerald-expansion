@@ -1350,11 +1350,11 @@ gCryTable::
 .if P_FAMILY_BIGMAMEMON == TRUE
 	cry Cry_Bigmamemon
 .endif @ P_FAMILY_BIGMAMEMON
-.if P_FAMILY_SEWADDLE == TRUE
-	cry Cry_Sewaddle
+.if P_FAMILY_TINMON == TRUE
+	cry Cry_Tinmon
 	cry Cry_Swadloon
 	cry Cry_Leavanny
-.endif @ P_FAMILY_SEWADDLE
+.endif @ P_FAMILY_TINMON
 .if P_FAMILY_VENIPEDE == TRUE
 	cry Cry_Venipede
 	cry Cry_Whirlipede
@@ -3778,11 +3778,11 @@ gCryTable_Reverse::
 .if P_FAMILY_BIGMAMEMON == TRUE
 	cry_reverse Cry_Bigmamemon
 .endif @ P_FAMILY_BIGMAMEMON
-.if P_FAMILY_SEWADDLE == TRUE
-	cry_reverse Cry_Sewaddle
+.if P_FAMILY_TINMON == TRUE
+	cry_reverse Cry_Tinmon
 	cry_reverse Cry_Swadloon
 	cry_reverse Cry_Leavanny
-.endif @ P_FAMILY_SEWADDLE
+.endif @ P_FAMILY_TINMON
 .if P_FAMILY_VENIPEDE == TRUE
 	cry_reverse Cry_Venipede
 	cry_reverse Cry_Whirlipede

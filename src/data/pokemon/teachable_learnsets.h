@@ -22466,8 +22466,8 @@ static const u16 sBigmamemonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BIGMAMEMON
 
-#if P_FAMILY_SEWADDLE
-static const u16 sSewaddleTeachableLearnset[] = {
+#if P_FAMILY_TINMON
+static const u16 sTinmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_CUT,
@@ -22544,7 +22544,7 @@ static const u16 sLeavannyTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SEWADDLE
+#endif //P_FAMILY_TINMON
 
 #if P_FAMILY_VENIPEDE
 static const u16 sVenipedeTeachableLearnset[] = {

@@ -16706,20 +16706,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_BIGMAMEMON
 
-#if P_FAMILY_SEWADDLE
-    const u32 gMonFrontPic_Sewaddle[] = INCBIN_U32("graphics/pokemon/sewaddle/anim_front.4bpp.smol");
-    const u16 gMonPalette_Sewaddle[] = INCBIN_U16("graphics/pokemon/sewaddle/normal.gbapal");
-    const u32 gMonBackPic_Sewaddle[] = INCBIN_U32("graphics/pokemon/sewaddle/back.4bpp.smol");
-    const u16 gMonShinyPalette_Sewaddle[] = INCBIN_U16("graphics/pokemon/sewaddle/shiny.gbapal");
-    const u8 gMonIcon_Sewaddle[] = INCBIN_U8("graphics/pokemon/sewaddle/icon.4bpp");
+#if P_FAMILY_TINMON
+    const u32 gMonFrontPic_Tinmon[] = INCBIN_U32("graphics/pokemon/tinmon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Tinmon[] = INCBIN_U16("graphics/pokemon/tinmon/normal.gbapal");
+    const u32 gMonBackPic_Tinmon[] = INCBIN_U32("graphics/pokemon/tinmon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Tinmon[] = INCBIN_U16("graphics/pokemon/tinmon/shiny.gbapal");
+    const u8 gMonIcon_Tinmon[] = INCBIN_U8("graphics/pokemon/tinmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Sewaddle[] = INCBIN_U8("graphics/pokemon/sewaddle/footprint.1bpp");
+    const u8 gMonFootprint_Tinmon[] = INCBIN_U8("graphics/pokemon/tinmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Sewaddle[] = INCBIN_COMP("graphics/pokemon/sewaddle/overworld.4bpp");
+    const u32 gObjectEventPic_Tinmon[] = INCBIN_COMP("graphics/pokemon/tinmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Sewaddle[] = INCBIN_U16("graphics/pokemon/sewaddle/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Sewaddle[] = INCBIN_U16("graphics/pokemon/sewaddle/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Tinmon[] = INCBIN_U16("graphics/pokemon/tinmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Tinmon[] = INCBIN_U16("graphics/pokemon/tinmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16754,7 +16754,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Leavanny[] = INCBIN_U16("graphics/pokemon/leavanny/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_SEWADDLE
+#endif //P_FAMILY_TINMON
 
 #if P_FAMILY_VENIPEDE
     const u32 gMonFrontPic_Venipede[] = INCBIN_U32("graphics/pokemon/venipede/anim_front.4bpp.smol");

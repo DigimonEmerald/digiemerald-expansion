@@ -3554,10 +3554,10 @@ Cry_Bigmamemon::
 	.incbin "sound/direct_sound_samples/cries/bigmamemon.bin"
 .endif @ P_FAMILY_BIGMAMEMON
 
-.if P_FAMILY_SEWADDLE == TRUE
+.if P_FAMILY_TINMON == TRUE
 	.align 2
-Cry_Sewaddle::
-	.incbin "sound/direct_sound_samples/cries/sewaddle.bin"
+Cry_Tinmon::
+	.incbin "sound/direct_sound_samples/cries/tinmon.bin"
 
 	.align 2
 Cry_Swadloon::
@@ -3566,7 +3566,7 @@ Cry_Swadloon::
 	.align 2
 Cry_Leavanny::
 	.incbin "sound/direct_sound_samples/cries/leavanny.bin"
-.endif @ P_FAMILY_SEWADDLE
+.endif @ P_FAMILY_TINMON
 
 .if P_FAMILY_VENIPEDE == TRUE
 	.align 2

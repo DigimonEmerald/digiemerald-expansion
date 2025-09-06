@@ -576,8 +576,8 @@
 #define P_FAMILY_MEGAKABUTERIMON_RED                   TRUE
 #undef P_FAMILY_BIGMAMEMON
 #define P_FAMILY_BIGMAMEMON                    TRUE
-#undef P_FAMILY_SEWADDLE
-#define P_FAMILY_SEWADDLE                TRUE
+#undef P_FAMILY_TINMON
+#define P_FAMILY_TINMON                TRUE
 #undef P_FAMILY_VENIPEDE
 #define P_FAMILY_VENIPEDE                TRUE
 #undef P_FAMILY_COTTONEE

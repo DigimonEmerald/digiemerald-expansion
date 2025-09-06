@@ -4203,8 +4203,8 @@ static const u16 sZudomonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_ZUDOMON
 
-#if P_FAMILY_SEWADDLE
-static const u16 sSewaddleEggMoveLearnset[] = {
+#if P_FAMILY_TINMON
+static const u16 sTinmonEggMoveLearnset[] = {
     MOVE_SILVER_WIND,
     MOVE_SCREECH,
     MOVE_RAZOR_WIND,
@@ -4217,7 +4217,7 @@ static const u16 sSewaddleEggMoveLearnset[] = {
     MOVE_GRASSY_TERRAIN,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SEWADDLE
+#endif //P_FAMILY_TINMON
 
 #if P_FAMILY_VENIPEDE
 static const u16 sVenipedeEggMoveLearnset[] = {
