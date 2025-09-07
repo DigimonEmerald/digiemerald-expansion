@@ -1637,10 +1637,10 @@ gCryTable::
 	cry Cry_FloetteEternal
 	cry Cry_Florges
 .endif @ P_FAMILY_FLABEBE
-.if P_FAMILY_SKIDDO == TRUE
-	cry Cry_Skiddo
+.if P_FAMILY_BOLTMON == TRUE
+	cry Cry_Boltmon
 	cry Cry_Gogoat
-.endif @ P_FAMILY_SKIDDO
+.endif @ P_FAMILY_BOLTMON
 .if P_FAMILY_PANCHAM == TRUE
 	cry Cry_Pancham
 	cry Cry_Pangoro
@@ -4065,10 +4065,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_FloetteEternal
 	cry_reverse Cry_Florges
 .endif @ P_FAMILY_FLABEBE
-.if P_FAMILY_SKIDDO == TRUE
-	cry_reverse Cry_Skiddo
+.if P_FAMILY_BOLTMON == TRUE
+	cry_reverse Cry_Boltmon
 	cry_reverse Cry_Gogoat
-.endif @ P_FAMILY_SKIDDO
+.endif @ P_FAMILY_BOLTMON
 .if P_FAMILY_PANCHAM == TRUE
 	cry_reverse Cry_Pancham
 	cry_reverse Cry_Pangoro

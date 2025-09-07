@@ -8322,8 +8322,8 @@ static const union AnimCmd sAnim_Florges_1[] =
 };
 #endif //P_FAMILY_FLABEBE
 
-#if P_FAMILY_SKIDDO
-static const union AnimCmd sAnim_Skiddo_1[] =
+#if P_FAMILY_BOLTMON
+static const union AnimCmd sAnim_Boltmon_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 15),
@@ -8337,7 +8337,7 @@ static const union AnimCmd sAnim_Gogoat_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SKIDDO
+#endif //P_FAMILY_BOLTMON
 
 #if P_FAMILY_PANCHAM
 static const union AnimCmd sAnim_Pancham_1[] =
@@ -12005,10 +12005,10 @@ SINGLE_ANIMATION(Flabebe);
 SINGLE_ANIMATION(Floette);
 SINGLE_ANIMATION(Florges);
 #endif //P_FAMILY_FLABEBE
-#if P_FAMILY_SKIDDO
-SINGLE_ANIMATION(Skiddo);
+#if P_FAMILY_BOLTMON
+SINGLE_ANIMATION(Boltmon);
 SINGLE_ANIMATION(Gogoat);
-#endif //P_FAMILY_SKIDDO
+#endif //P_FAMILY_BOLTMON
 #if P_FAMILY_PANCHAM
 SINGLE_ANIMATION(Pancham);
 SINGLE_ANIMATION(Pangoro);

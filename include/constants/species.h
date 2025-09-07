@@ -704,7 +704,7 @@
 #define SPECIES_FLOETTE_RED                             670
 #define SPECIES_FLORGES                                 SPECIES_FLORGES_RED
 #define SPECIES_FLORGES_RED                             671
-#define SPECIES_SKIDDO                                  672
+#define SPECIES_BOLTMON                                  672
 #define SPECIES_GOGOAT                                  673
 #define SPECIES_PANCHAM                                 674
 #define SPECIES_PANGORO                                 675

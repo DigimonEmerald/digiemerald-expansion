@@ -19709,20 +19709,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_FLABEBE
 
-#if P_FAMILY_SKIDDO
-    const u32 gMonFrontPic_Skiddo[] = INCBIN_U32("graphics/pokemon/skiddo/anim_front.4bpp.smol");
-    const u16 gMonPalette_Skiddo[] = INCBIN_U16("graphics/pokemon/skiddo/normal.gbapal");
-    const u32 gMonBackPic_Skiddo[] = INCBIN_U32("graphics/pokemon/skiddo/back.4bpp.smol");
-    const u16 gMonShinyPalette_Skiddo[] = INCBIN_U16("graphics/pokemon/skiddo/shiny.gbapal");
-    const u8 gMonIcon_Skiddo[] = INCBIN_U8("graphics/pokemon/skiddo/icon.4bpp");
+#if P_FAMILY_BOLTMON
+    const u32 gMonFrontPic_Boltmon[] = INCBIN_U32("graphics/pokemon/boltmon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Boltmon[] = INCBIN_U16("graphics/pokemon/boltmon/normal.gbapal");
+    const u32 gMonBackPic_Boltmon[] = INCBIN_U32("graphics/pokemon/boltmon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Boltmon[] = INCBIN_U16("graphics/pokemon/boltmon/shiny.gbapal");
+    const u8 gMonIcon_Boltmon[] = INCBIN_U8("graphics/pokemon/boltmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Skiddo[] = INCBIN_U8("graphics/pokemon/skiddo/footprint.1bpp");
+    const u8 gMonFootprint_Boltmon[] = INCBIN_U8("graphics/pokemon/boltmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Skiddo[] = INCBIN_COMP("graphics/pokemon/skiddo/overworld.4bpp");
+    const u32 gObjectEventPic_Boltmon[] = INCBIN_COMP("graphics/pokemon/boltmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Skiddo[] = INCBIN_U16("graphics/pokemon/skiddo/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Skiddo[] = INCBIN_U16("graphics/pokemon/skiddo/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Boltmon[] = INCBIN_U16("graphics/pokemon/boltmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Boltmon[] = INCBIN_U16("graphics/pokemon/boltmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -19741,7 +19741,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Gogoat[] = INCBIN_U16("graphics/pokemon/gogoat/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_SKIDDO
+#endif //P_FAMILY_BOLTMON
 
 #if P_FAMILY_PANCHAM
     const u32 gMonFrontPic_Pancham[] = INCBIN_U32("graphics/pokemon/pancham/anim_front.4bpp.smol");

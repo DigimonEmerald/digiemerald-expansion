@@ -26972,8 +26972,8 @@ static const u16 sFlorgesTeachableLearnset[] = {
 };
 #endif //P_FAMILY_FLABEBE
 
-#if P_FAMILY_SKIDDO
-static const u16 sSkiddoTeachableLearnset[] = {
+#if P_FAMILY_BOLTMON
+static const u16 sBoltmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
@@ -27041,7 +27041,7 @@ static const u16 sGogoatTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SKIDDO
+#endif //P_FAMILY_BOLTMON
 
 #if P_FAMILY_PANCHAM
 static const u16 sPanchamTeachableLearnset[] = {

@@ -3288,7 +3288,7 @@ $(POKEMONGFXDIR)/floette/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/florges/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/skiddo/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/boltmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/gogoat/overworld.4bpp: %.4bpp: %.png

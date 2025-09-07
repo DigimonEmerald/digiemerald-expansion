@@ -15712,8 +15712,8 @@ static const struct LevelUpMove sFlorgesLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_FLABEBE
 
-#if P_FAMILY_SKIDDO
-static const struct LevelUpMove sSkiddoLevelUpLearnset[] = {
+#if P_FAMILY_BOLTMON
+static const struct LevelUpMove sBoltmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWTH),
     LEVEL_UP_MOVE( 7, MOVE_VINE_WHIP),
@@ -15757,7 +15757,7 @@ static const struct LevelUpMove sGogoatLevelUpLearnset[] = {
     LEVEL_UP_MOVE(58, MOVE_MILK_DRINK),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SKIDDO
+#endif //P_FAMILY_BOLTMON
 
 #if P_FAMILY_PANCHAM
 static const struct LevelUpMove sPanchamLevelUpLearnset[] = {

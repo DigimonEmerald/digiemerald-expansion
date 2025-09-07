@@ -1985,42 +1985,44 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
 #endif //P_FAMILY_FLABEBE
 
-#if P_FAMILY_SKIDDO
-    [SPECIES_SKIDDO] =
+#if P_FAMILY_BOLTMON
+    [SPECIES_BOLTMON] =
     {
-        .baseHP        = 66,
-        .baseAttack    = 65,
-        .baseDefense   = 48,
-        .baseSpeed     = 52,
-        .baseSpAttack  = 62,
-        .baseSpDefense = 57,
-        .types = MON_TYPES(TYPE_GRASS),
-        .catchRate = 200,
-        .expYield = 70,
-        .evYield_HP = 1,
+        .baseHP        = 130,
+        .baseAttack    = 130,
+        .baseDefense   = 95,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_GHOST),
+        .attribute = TYPE_DATA,   
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_HP = 3,
+        .evYield_Attack = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SAP_SIPPER, ABILITY_NONE, ABILITY_GRASS_PELT },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Skiddo"),
-        .cryId = CRY_SKIDDO,
-        .natDexNum = NATIONAL_DEX_SKIDDO,
-        .categoryName = _("Mount"),
-        .height = 9,
-        .weight = 310,
+        .abilities = { ABILITY_CURSED_BODY, ABILITY_STATIC, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Boltmon"),
+        .cryId = CRY_BOLTMON,
+        .natDexNum = NATIONAL_DEX_BOLTMON,
+        .categoryName = _("Franken"),
+        .height = 92,
+        .weight = 5238,
         .description = COMPOUND_STRING(
-            "If it has sunshine and water, it doesn't\n"
-            "need to eat, because it can generate\n"
-            "energy from the leaves on its back.\n"
-            "It has a placid disposition."),
+            "Rather than being mechanically based\n"
+            "like Andromon, Boltmon is an organic\n"
+            "cyborg. It has strong emotions making\n"
+            "it difficult to control."),
         .pokemonScale = 338,
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Skiddo,
+        .frontPic = gMonFrontPic_Boltmon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 7,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2028,29 +2030,29 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Skiddo,
+        .backPic = gMonBackPic_Boltmon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Skiddo,
-        .shinyPalette = gMonShinyPalette_Skiddo,
-        .iconSprite = gMonIcon_Skiddo,
+        .palette = gMonPalette_Boltmon,
+        .shinyPalette = gMonShinyPalette_Boltmon,
+        .iconSprite = gMonIcon_Boltmon,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 7, SHADOW_SIZE_M)
-        FOOTPRINT(Skiddo)
+        FOOTPRINT(Boltmon)
         OVERWORLD(
-            sPicTable_Skiddo,
+            sPicTable_Boltmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Skiddo,
-            gShinyOverworldPalette_Skiddo
+            gOverworldPalette_Boltmon,
+            gShinyOverworldPalette_Boltmon
         )
-        .levelUpLearnset = sSkiddoLevelUpLearnset,
-        .teachableLearnset = sSkiddoTeachableLearnset,
-        .eggMoveLearnset = sSkiddoEggMoveLearnset,
+        .levelUpLearnset = sBoltmonLevelUpLearnset,
+        .teachableLearnset = sBoltmonTeachableLearnset,
+        .eggMoveLearnset = sBoltmonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_GOGOAT}),
     },
 
@@ -2120,7 +2122,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sGogoatLevelUpLearnset,
         .teachableLearnset = sGogoatTeachableLearnset,
     },
-#endif //P_FAMILY_SKIDDO
+#endif //P_FAMILY_BOLTMON
 
 #if P_FAMILY_PANCHAM
     [SPECIES_PANCHAM] =

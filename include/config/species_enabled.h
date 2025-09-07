@@ -395,7 +395,7 @@
 #define P_FAMILY_METALSEADRAMON              P_GEN_6_POKEMON
 #define P_FAMILY_APOCALYMON                  P_GEN_6_POKEMON
 #define P_FAMILY_FLABEBE                 P_GEN_6_POKEMON
-#define P_FAMILY_SKIDDO                  P_GEN_6_POKEMON
+#define P_FAMILY_BOLTMON                  P_GEN_6_POKEMON
 #define P_FAMILY_PANCHAM                 P_GEN_6_POKEMON
 #define P_FAMILY_FURFROU                 P_GEN_6_POKEMON
 #define P_FAMILY_ESPURR                  P_GEN_6_POKEMON

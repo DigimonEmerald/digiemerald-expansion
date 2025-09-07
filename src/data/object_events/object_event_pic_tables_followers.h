@@ -4753,14 +4753,14 @@ static const struct SpriteFrameImage sPicTable_FlorgesWhite[] = {
 };
 #endif //P_FAMILY_FLABEBE
 
-#if P_FAMILY_SKIDDO
-static const struct SpriteFrameImage sPicTable_Skiddo[] = {
-    overworld_ascending_frames(gObjectEventPic_Skiddo, 4, 4),
+#if P_FAMILY_BOLTMON
+static const struct SpriteFrameImage sPicTable_Boltmon[] = {
+    overworld_ascending_frames(gObjectEventPic_Boltmon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Gogoat[] = {
     overworld_ascending_frames(gObjectEventPic_Gogoat, 4, 4),
 };
-#endif //P_FAMILY_SKIDDO
+#endif //P_FAMILY_BOLTMON
 
 #if P_FAMILY_PANCHAM
 static const struct SpriteFrameImage sPicTable_Pancham[] = {

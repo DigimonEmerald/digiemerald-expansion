@@ -4267,15 +4267,15 @@ Cry_Florges::
 	.incbin "sound/direct_sound_samples/cries/florges.bin"
 .endif @ P_FAMILY_FLABEBE
 
-.if P_FAMILY_SKIDDO == TRUE
+.if P_FAMILY_BOLTMON == TRUE
 	.align 2
-Cry_Skiddo::
-	.incbin "sound/direct_sound_samples/cries/skiddo.bin"
+Cry_Boltmon::
+	.incbin "sound/direct_sound_samples/cries/boltmon.bin"
 
 	.align 2
 Cry_Gogoat::
 	.incbin "sound/direct_sound_samples/cries/gogoat.bin"
-.endif @ P_FAMILY_SKIDDO
+.endif @ P_FAMILY_BOLTMON
 
 .if P_FAMILY_PANCHAM == TRUE
 	.align 2

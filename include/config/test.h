@@ -715,8 +715,8 @@
 #define P_FAMILY_APOCALYMON                  TRUE
 #undef P_FAMILY_FLABEBE
 #define P_FAMILY_FLABEBE                 TRUE
-#undef P_FAMILY_SKIDDO
-#define P_FAMILY_SKIDDO                  TRUE
+#undef P_FAMILY_BOLTMON
+#define P_FAMILY_BOLTMON                  TRUE
 #undef P_FAMILY_PANCHAM
 #define P_FAMILY_PANCHAM                 TRUE
 #undef P_FAMILY_FURFROU
