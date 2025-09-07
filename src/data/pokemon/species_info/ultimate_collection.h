@@ -3697,51 +3697,48 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sBlossomonLevelUpLearnset,
         .teachableLearnset = sBlossomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_LEAVANNY, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_BLUEMERAMON, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
     },
 
-    [SPECIES_LEAVANNY] =
+    [SPECIES_BLUEMERAMON] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 103,
-        .baseDefense   = 80,
-        .baseSpeed     = 92,
-        .baseSpAttack  = 70,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 80 : 70,
-        .types = MON_TYPES(TYPE_BUG, TYPE_GRASS),
+        .baseHP        = 70,
+        .baseAttack    = 100,
+        .baseDefense   = 70,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_ICE),
+        .attribute = TYPE_VIRUS,
         .catchRate = 95,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 250,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 225,
-    #else
-        .expYield = 221,
-    #endif
-        .evYield_Attack = 3,
+        .expYield = 200,
+        .evYield_Attack = 1,
+        .evYield_Speed = 1,
+        .evYield_SpAttack = 3,
         .itemRare = ITEM_MENTAL_HERB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SWARM, ABILITY_CHLOROPHYLL, ABILITY_OVERCOAT },
-        .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Leavanny"),
-        .cryId = CRY_LEAVANNY,
-        .natDexNum = NATIONAL_DEX_LEAVANNY,
-        .categoryName = _("Nurturing"),
-        .height = 12,
-        .weight = 205,
+        .abilities = { ABILITY_FLAME_BODY, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("BlueMeramon"),
+        .cryId = CRY_BLUEMERAMON,
+        .natDexNum = NATIONAL_DEX_BLUEMERAMON,
+        .categoryName = _("Pure Burning"),
+        .height = 25,
+        .weight = 874,
         .description = COMPOUND_STRING(
-            "It keeps its eggs warm with heat from\n"
-            "fermenting leaves. It also uses leaves to\n"
-            "weave warm wrappings for Tinmon by\n"
-            "using the silk secreted from its mouth."),
+            "The combustion that takes place around\n"
+            "BlueMeramon is because it has reached a\n"
+            "higher temperature. It can also lower\n"
+            "the temperature to unnatural degree."),
         .pokemonScale = 282,
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Leavanny,
+        .frontPic = gMonFrontPic_Bluemeramon,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3750,28 +3747,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Leavanny,
+        .backPic = gMonBackPic_Bluemeramon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_GROW_STUTTER,
-        .palette = gMonPalette_Leavanny,
-        .shinyPalette = gMonShinyPalette_Leavanny,
-        .iconSprite = gMonIcon_Leavanny,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Bluemeramon,
+        .shinyPalette = gMonShinyPalette_Bluemeramon,
+        .iconSprite = gMonIcon_Bluemeramon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 14, SHADOW_SIZE_S)
-        FOOTPRINT(Leavanny)
+        FOOTPRINT(Bluemeramon)
         OVERWORLD(
-            sPicTable_Leavanny,
+            sPicTable_Bluemeramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Leavanny,
-            gShinyOverworldPalette_Leavanny
+            gOverworldPalette_Bluemeramon,
+            gShinyOverworldPalette_Bluemeramon
         )
-        .levelUpLearnset = sLeavannyLevelUpLearnset,
-        .teachableLearnset = sLeavannyTeachableLearnset,
+        .levelUpLearnset = sBluemeramonLevelUpLearnset,
+        .teachableLearnset = sBluemeramonTeachableLearnset,
     },
 #endif //P_FAMILY_TINMON
 

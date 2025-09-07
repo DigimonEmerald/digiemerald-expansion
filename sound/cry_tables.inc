@@ -1353,7 +1353,7 @@ gCryTable::
 .if P_FAMILY_TINMON == TRUE
 	cry Cry_Tinmon
 	cry Cry_Blossomon
-	cry Cry_Leavanny
+	cry Cry_Bluemeramon
 .endif @ P_FAMILY_TINMON
 .if P_FAMILY_VENIPEDE == TRUE
 	cry Cry_Venipede
@@ -3781,7 +3781,7 @@ gCryTable_Reverse::
 .if P_FAMILY_TINMON == TRUE
 	cry_reverse Cry_Tinmon
 	cry_reverse Cry_Blossomon
-	cry_reverse Cry_Leavanny
+	cry_reverse Cry_Bluemeramon
 .endif @ P_FAMILY_TINMON
 .if P_FAMILY_VENIPEDE == TRUE
 	cry_reverse Cry_Venipede

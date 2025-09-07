@@ -3564,8 +3564,8 @@ Cry_Blossomon::
 	.incbin "sound/direct_sound_samples/cries/blossomon.bin"
 
 	.align 2
-Cry_Leavanny::
-	.incbin "sound/direct_sound_samples/cries/leavanny.bin"
+Cry_Bluemeramon::
+	.incbin "sound/direct_sound_samples/cries/bluemeramon.bin"
 .endif @ P_FAMILY_TINMON
 
 .if P_FAMILY_VENIPEDE == TRUE

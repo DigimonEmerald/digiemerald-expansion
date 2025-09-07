@@ -559,7 +559,7 @@
 #define SPECIES_BIGMAMEMON                                    539
 #define SPECIES_TINMON                                540
 #define SPECIES_BLOSSOMON                                541
-#define SPECIES_LEAVANNY                                542
+#define SPECIES_BLUEMERAMON                                542
 #define SPECIES_VENIPEDE                                543
 #define SPECIES_WHIRLIPEDE                              544
 #define SPECIES_SCOLIPEDE                               545

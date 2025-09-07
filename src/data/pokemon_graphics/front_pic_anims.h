@@ -6762,7 +6762,7 @@ static const union AnimCmd sAnim_Blossomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Leavanny_1[] =
+static const union AnimCmd sAnim_Bluemeramon_1[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 45),
@@ -11696,7 +11696,7 @@ SINGLE_ANIMATION(Bigmamemon);
 #if P_FAMILY_TINMON
 SINGLE_ANIMATION(Tinmon);
 SINGLE_ANIMATION(Blossomon);
-SINGLE_ANIMATION(Leavanny);
+SINGLE_ANIMATION(Bluemeramon);
 #endif //P_FAMILY_TINMON
 #if P_FAMILY_VENIPEDE
 SINGLE_ANIMATION(Venipede);

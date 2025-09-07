@@ -16739,19 +16739,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Leavanny[] = INCBIN_U32("graphics/pokemon/leavanny/anim_front.4bpp.smol");
-    const u16 gMonPalette_Leavanny[] = INCBIN_U16("graphics/pokemon/leavanny/normal.gbapal");
-    const u32 gMonBackPic_Leavanny[] = INCBIN_U32("graphics/pokemon/leavanny/back.4bpp.smol");
-    const u16 gMonShinyPalette_Leavanny[] = INCBIN_U16("graphics/pokemon/leavanny/shiny.gbapal");
-    const u8 gMonIcon_Leavanny[] = INCBIN_U8("graphics/pokemon/leavanny/icon.4bpp");
+    const u32 gMonFrontPic_Bluemeramon[] = INCBIN_U32("graphics/pokemon/bluemeramon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Bluemeramon[] = INCBIN_U16("graphics/pokemon/bluemeramon/normal.gbapal");
+    const u32 gMonBackPic_Bluemeramon[] = INCBIN_U32("graphics/pokemon/bluemeramon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Bluemeramon[] = INCBIN_U16("graphics/pokemon/bluemeramon/shiny.gbapal");
+    const u8 gMonIcon_Bluemeramon[] = INCBIN_U8("graphics/pokemon/bluemeramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Leavanny[] = INCBIN_U8("graphics/pokemon/leavanny/footprint.1bpp");
+    const u8 gMonFootprint_Bluemeramon[] = INCBIN_U8("graphics/pokemon/bluemeramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Leavanny[] = INCBIN_COMP("graphics/pokemon/leavanny/overworld.4bpp");
+    const u32 gObjectEventPic_Bluemeramon[] = INCBIN_COMP("graphics/pokemon/bluemeramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Leavanny[] = INCBIN_U16("graphics/pokemon/leavanny/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Leavanny[] = INCBIN_U16("graphics/pokemon/leavanny/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Bluemeramon[] = INCBIN_U16("graphics/pokemon/bluemeramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Bluemeramon[] = INCBIN_U16("graphics/pokemon/bluemeramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_TINMON

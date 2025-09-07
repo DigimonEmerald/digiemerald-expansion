@@ -489,6 +489,7 @@ MegaKabuterimon (Red) - Throh
 BigMamemon - Sawk
 Tinmon - Sewaddle
 Blossomon - Swadloon
+BlueMeramon - Leavanny
 
 Mega List
 
@@ -512,5 +513,6 @@ Pukumon - Spewpa
 SaberLeomon - Vivillon
 Apocalymon - Litleo
 Babamon - Pyroar
+Boltmon - Skiddo
 
 SPECIES NAME LENGTH MAX = 13
