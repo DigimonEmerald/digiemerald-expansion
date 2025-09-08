@@ -3772,47 +3772,45 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_TINMON
 
-#if P_FAMILY_VENIPEDE
-    [SPECIES_VENIPEDE] =
+#if P_FAMILY_BRACHIOMON
+    [SPECIES_BRACHIOMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 45,
-        .baseDefense   = 59,
-        .baseSpeed     = 57,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 39,
-        .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
+        .baseHP        = 140,
+        .baseAttack    = 110,
+        .baseDefense   = 95,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_ROCK, TYPE_DRAGON),
+        .attribute = TYPE_DATA,
         .catchRate = 95,
-        .expYield = 52,
-        .evYield_Defense = 1,
+        .expYield = 200,
+        .evYield_HP = 4,
+        .evYield_Attack = 1,
         .itemRare = ITEM_POISON_BARB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-    #if P_UPDATED_ABILITIES >= GEN_6
-        .abilities = { ABILITY_POISON_POINT, ABILITY_SWARM, ABILITY_SPEED_BOOST },
-    #else
-        .abilities = { ABILITY_POISON_POINT, ABILITY_SWARM, ABILITY_QUICK_FEET },
-    #endif
+        .abilities = { ABILITY_ROCK_HEAD, ABILITY_LONG_REACH, ABILITY_NONE },
         .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Venipede"),
-        .cryId = CRY_VENIPEDE,
-        .natDexNum = NATIONAL_DEX_VENIPEDE,
-        .categoryName = _("Centipede"),
-        .height = 4,
-        .weight = 53,
+        .speciesName = _("Brachiomon"),
+        .cryId = CRY_BRACHIOMON,
+        .natDexNum = NATIONAL_DEX_BRACHIOMON,
+        .categoryName = _("Brachiosaurus"),
+        .height = 56,
+        .weight = 2205,
         .description = COMPOUND_STRING(
-            "Using the feelers on its head and tail,\n"
-            "it picks up vibrations in the air to\n"
-            "determine its prey's location and state.\n"
-            "It is brutally aggressive."),
+            "Brachiomon is a herbivorous and docile\n"
+            "Digimon that will rarely attack but if\n"
+            "it is startled, it can very easily\n"
+            "trample smaller Digimon."),
         .pokemonScale = 491,
         .pokemonOffset = 16,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Venipede,
+        .frontPic = gMonFrontPic_Brachiomon,
         .frontPicSize = MON_COORDS_SIZE(48, 32),
         .frontPicYOffset = 16,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3825,29 +3823,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_H_SLIDE,
-        .backPic = gMonBackPic_Venipede,
+        .backPic = gMonBackPic_Brachiomon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 14,
         .backAnimId = BACK_ANIM_H_VIBRATE,
-        .palette = gMonPalette_Venipede,
-        .shinyPalette = gMonShinyPalette_Venipede,
-        .iconSprite = gMonIcon_Venipede,
+        .palette = gMonPalette_Brachiomon,
+        .shinyPalette = gMonShinyPalette_Brachiomon,
+        .iconSprite = gMonIcon_Brachiomon,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(-2, -3, SHADOW_SIZE_M)
-        FOOTPRINT(Venipede)
+        FOOTPRINT(Brachiomon)
         OVERWORLD(
-            sPicTable_Venipede,
+            sPicTable_Brachiomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Venipede,
-            gShinyOverworldPalette_Venipede
+            gOverworldPalette_Brachiomon,
+            gShinyOverworldPalette_Brachiomon
         )
-        .levelUpLearnset = sVenipedeLevelUpLearnset,
-        .teachableLearnset = sVenipedeTeachableLearnset,
-        .eggMoveLearnset = sVenipedeEggMoveLearnset,
+        .levelUpLearnset = sBrachiomonLevelUpLearnset,
+        .teachableLearnset = sBrachiomonTeachableLearnset,
+        .eggMoveLearnset = sBrachiomonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_WHIRLIPEDE}),
     },
 
@@ -4003,7 +4001,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sScolipedeLevelUpLearnset,
         .teachableLearnset = sScolipedeTeachableLearnset,
     },
-#endif //P_FAMILY_VENIPEDE
+#endif //P_FAMILY_BRACHIOMON
 
 #if P_FAMILY_COTTONEE
 #if P_UPDATED_TYPES >= GEN_6

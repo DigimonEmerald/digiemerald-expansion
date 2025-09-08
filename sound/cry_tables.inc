@@ -1355,11 +1355,11 @@ gCryTable::
 	cry Cry_Blossomon
 	cry Cry_Bluemeramon
 .endif @ P_FAMILY_TINMON
-.if P_FAMILY_VENIPEDE == TRUE
-	cry Cry_Venipede
+.if P_FAMILY_BRACHIOMON == TRUE
+	cry Cry_Brachiomon
 	cry Cry_Whirlipede
 	cry Cry_Scolipede
-.endif @ P_FAMILY_VENIPEDE
+.endif @ P_FAMILY_BRACHIOMON
 .if P_FAMILY_COTTONEE == TRUE
 	cry Cry_Cottonee
 	cry Cry_Whimsicott
@@ -3783,11 +3783,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Blossomon
 	cry_reverse Cry_Bluemeramon
 .endif @ P_FAMILY_TINMON
-.if P_FAMILY_VENIPEDE == TRUE
-	cry_reverse Cry_Venipede
+.if P_FAMILY_BRACHIOMON == TRUE
+	cry_reverse Cry_Brachiomon
 	cry_reverse Cry_Whirlipede
 	cry_reverse Cry_Scolipede
-.endif @ P_FAMILY_VENIPEDE
+.endif @ P_FAMILY_BRACHIOMON
 .if P_FAMILY_COTTONEE == TRUE
 	cry_reverse Cry_Cottonee
 	cry_reverse Cry_Whimsicott

@@ -6771,8 +6771,8 @@ static const union AnimCmd sAnim_Bluemeramon_1[] =
 };
 #endif //P_FAMILY_TINMON
 
-#if P_FAMILY_VENIPEDE
-static const union AnimCmd sAnim_Venipede_1[] =
+#if P_FAMILY_BRACHIOMON
+static const union AnimCmd sAnim_Brachiomon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 15),
@@ -6801,7 +6801,7 @@ static const union AnimCmd sAnim_Scolipede_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_VENIPEDE
+#endif //P_FAMILY_BRACHIOMON
 
 #if P_FAMILY_COTTONEE
 static const union AnimCmd sAnim_Cottonee_1[] =
@@ -11698,11 +11698,11 @@ SINGLE_ANIMATION(Tinmon);
 SINGLE_ANIMATION(Blossomon);
 SINGLE_ANIMATION(Bluemeramon);
 #endif //P_FAMILY_TINMON
-#if P_FAMILY_VENIPEDE
-SINGLE_ANIMATION(Venipede);
+#if P_FAMILY_BRACHIOMON
+SINGLE_ANIMATION(Brachiomon);
 SINGLE_ANIMATION(Whirlipede);
 SINGLE_ANIMATION(Scolipede);
-#endif //P_FAMILY_VENIPEDE
+#endif //P_FAMILY_BRACHIOMON
 #if P_FAMILY_COTTONEE
 SINGLE_ANIMATION(Cottonee);
 SINGLE_ANIMATION(Whimsicott);

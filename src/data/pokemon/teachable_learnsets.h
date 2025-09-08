@@ -22546,8 +22546,8 @@ static const u16 sBluemeramonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_TINMON
 
-#if P_FAMILY_VENIPEDE
-static const u16 sVenipedeTeachableLearnset[] = {
+#if P_FAMILY_BRACHIOMON
+static const u16 sBrachiomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DEFENSE_CURL,
     MOVE_DOUBLE_EDGE,
@@ -22622,7 +22622,7 @@ static const u16 sScolipedeTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_VENIPEDE
+#endif //P_FAMILY_BRACHIOMON
 
 #if P_FAMILY_COTTONEE
 static const u16 sCottoneeTeachableLearnset[] = {

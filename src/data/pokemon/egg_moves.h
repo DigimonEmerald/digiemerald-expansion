@@ -4219,8 +4219,8 @@ static const u16 sTinmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_TINMON
 
-#if P_FAMILY_VENIPEDE
-static const u16 sVenipedeEggMoveLearnset[] = {
+#if P_FAMILY_BRACHIOMON
+static const u16 sBrachiomonEggMoveLearnset[] = {
     MOVE_TWINEEDLE,
     MOVE_PIN_MISSILE,
     MOVE_TOXIC_SPIKES,
@@ -4229,7 +4229,7 @@ static const u16 sVenipedeEggMoveLearnset[] = {
     MOVE_ROCK_CLIMB,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_VENIPEDE
+#endif //P_FAMILY_BRACHIOMON
 
 #if P_FAMILY_COTTONEE
 static const u16 sCottoneeEggMoveLearnset[] = {

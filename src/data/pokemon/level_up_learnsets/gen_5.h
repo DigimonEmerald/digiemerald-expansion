@@ -11996,8 +11996,8 @@ static const struct LevelUpMove sBluemeramonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_TINMON
 
-#if P_FAMILY_VENIPEDE
-static const struct LevelUpMove sVenipedeLevelUpLearnset[] = {
+#if P_FAMILY_BRACHIOMON
+static const struct LevelUpMove sBrachiomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_ROLLOUT),
     LEVEL_UP_MOVE( 5, MOVE_POISON_STING),
@@ -12057,7 +12057,7 @@ static const struct LevelUpMove sScolipedeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(55, MOVE_DOUBLE_EDGE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_VENIPEDE
+#endif //P_FAMILY_BRACHIOMON
 
 #if P_FAMILY_COTTONEE
 static const struct LevelUpMove sCottoneeLevelUpLearnset[] = {

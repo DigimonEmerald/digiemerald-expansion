@@ -560,7 +560,7 @@
 #define SPECIES_TINMON                                540
 #define SPECIES_BLOSSOMON                                541
 #define SPECIES_BLUEMERAMON                                542
-#define SPECIES_VENIPEDE                                543
+#define SPECIES_BRACHIOMON                                543
 #define SPECIES_WHIRLIPEDE                              544
 #define SPECIES_SCOLIPEDE                               545
 #define SPECIES_COTTONEE                                546

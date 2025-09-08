@@ -3568,10 +3568,10 @@ Cry_Bluemeramon::
 	.incbin "sound/direct_sound_samples/cries/bluemeramon.bin"
 .endif @ P_FAMILY_TINMON
 
-.if P_FAMILY_VENIPEDE == TRUE
+.if P_FAMILY_BRACHIOMON == TRUE
 	.align 2
-Cry_Venipede::
-	.incbin "sound/direct_sound_samples/cries/venipede.bin"
+Cry_Brachiomon::
+	.incbin "sound/direct_sound_samples/cries/brachiomon.bin"
 
 	.align 2
 Cry_Whirlipede::
@@ -3580,7 +3580,7 @@ Cry_Whirlipede::
 	.align 2
 Cry_Scolipede::
 	.incbin "sound/direct_sound_samples/cries/scolipede.bin"
-.endif @ P_FAMILY_VENIPEDE
+.endif @ P_FAMILY_BRACHIOMON
 
 .if P_FAMILY_COTTONEE == TRUE
 	.align 2

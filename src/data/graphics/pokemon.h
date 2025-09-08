@@ -16756,20 +16756,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_TINMON
 
-#if P_FAMILY_VENIPEDE
-    const u32 gMonFrontPic_Venipede[] = INCBIN_U32("graphics/pokemon/venipede/anim_front.4bpp.smol");
-    const u16 gMonPalette_Venipede[] = INCBIN_U16("graphics/pokemon/venipede/normal.gbapal");
-    const u32 gMonBackPic_Venipede[] = INCBIN_U32("graphics/pokemon/venipede/back.4bpp.smol");
-    const u16 gMonShinyPalette_Venipede[] = INCBIN_U16("graphics/pokemon/venipede/shiny.gbapal");
-    const u8 gMonIcon_Venipede[] = INCBIN_U8("graphics/pokemon/venipede/icon.4bpp");
+#if P_FAMILY_BRACHIOMON
+    const u32 gMonFrontPic_Brachiomon[] = INCBIN_U32("graphics/pokemon/brachiomon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Brachiomon[] = INCBIN_U16("graphics/pokemon/brachiomon/normal.gbapal");
+    const u32 gMonBackPic_Brachiomon[] = INCBIN_U32("graphics/pokemon/brachiomon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Brachiomon[] = INCBIN_U16("graphics/pokemon/brachiomon/shiny.gbapal");
+    const u8 gMonIcon_Brachiomon[] = INCBIN_U8("graphics/pokemon/brachiomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Venipede[] = INCBIN_U8("graphics/pokemon/venipede/footprint.1bpp");
+    const u8 gMonFootprint_Brachiomon[] = INCBIN_U8("graphics/pokemon/brachiomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Venipede[] = INCBIN_COMP("graphics/pokemon/venipede/overworld.4bpp");
+    const u32 gObjectEventPic_Brachiomon[] = INCBIN_COMP("graphics/pokemon/brachiomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Venipede[] = INCBIN_U16("graphics/pokemon/venipede/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Venipede[] = INCBIN_U16("graphics/pokemon/venipede/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Brachiomon[] = INCBIN_U16("graphics/pokemon/brachiomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Brachiomon[] = INCBIN_U16("graphics/pokemon/brachiomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16804,7 +16804,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Scolipede[] = INCBIN_U16("graphics/pokemon/scolipede/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_VENIPEDE
+#endif //P_FAMILY_BRACHIOMON
 
 #if P_FAMILY_COTTONEE
     const u32 gMonFrontPic_Cottonee[] = INCBIN_U32("graphics/pokemon/cottonee/anim_front.4bpp.smol");

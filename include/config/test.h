@@ -578,8 +578,8 @@
 #define P_FAMILY_BIGMAMEMON                    TRUE
 #undef P_FAMILY_TINMON
 #define P_FAMILY_TINMON                TRUE
-#undef P_FAMILY_VENIPEDE
-#define P_FAMILY_VENIPEDE                TRUE
+#undef P_FAMILY_BRACHIOMON
+#define P_FAMILY_BRACHIOMON                TRUE
 #undef P_FAMILY_COTTONEE
 #define P_FAMILY_COTTONEE                TRUE
 #undef P_FAMILY_PETILIL

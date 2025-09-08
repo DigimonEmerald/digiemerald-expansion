@@ -3918,9 +3918,9 @@ static const struct SpriteFrameImage sPicTable_Bluemeramon[] = {
 };
 #endif //P_FAMILY_TINMON
 
-#if P_FAMILY_VENIPEDE
-static const struct SpriteFrameImage sPicTable_Venipede[] = {
-    overworld_ascending_frames(gObjectEventPic_Venipede, 4, 4),
+#if P_FAMILY_BRACHIOMON
+static const struct SpriteFrameImage sPicTable_Brachiomon[] = {
+    overworld_ascending_frames(gObjectEventPic_Brachiomon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Whirlipede[] = {
     overworld_ascending_frames(gObjectEventPic_Whirlipede, 4, 4),
@@ -3928,7 +3928,7 @@ static const struct SpriteFrameImage sPicTable_Whirlipede[] = {
 static const struct SpriteFrameImage sPicTable_Scolipede[] = {
     overworld_ascending_frames(gObjectEventPic_Scolipede, 4, 4),
 };
-#endif //P_FAMILY_VENIPEDE
+#endif //P_FAMILY_BRACHIOMON
 
 #if P_FAMILY_COTTONEE
 static const struct SpriteFrameImage sPicTable_Cottonee[] = {
