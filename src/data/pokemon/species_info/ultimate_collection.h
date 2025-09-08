@@ -3846,49 +3846,48 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sBrachiomonLevelUpLearnset,
         .teachableLearnset = sBrachiomonTeachableLearnset,
         .eggMoveLearnset = sBrachiomonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_WHIRLIPEDE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 22, SPECIES_KIMERAMON}),
     },
 
-    [SPECIES_WHIRLIPEDE] =
+    [SPECIES_KIMERAMON] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 55,
-        .baseDefense   = 99,
-        .baseSpeed     = 47,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 79,
-        .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
+        .baseHP        = 80,
+        .baseAttack    = 100,
+        .baseDefense   = 85,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_NORMAL),
+        .attribute = TYPE_DATA,
         .catchRate = 95,
-        .expYield = 126,
-        .evYield_Defense = 2,
+        .expYield = 200,
+        .evYield_Attack = 2,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 2,
         .itemRare = ITEM_POISON_BARB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-    #if P_UPDATED_ABILITIES >= GEN_6
-        .abilities = { ABILITY_POISON_POINT, ABILITY_SWARM, ABILITY_SPEED_BOOST },
-    #else
-        .abilities = { ABILITY_POISON_POINT, ABILITY_SWARM, ABILITY_QUICK_FEET },
-    #endif
+        .abilities = { ABILITY_PROTEAN, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Whirlipede"),
-        .cryId = CRY_WHIRLIPEDE,
-        .natDexNum = NATIONAL_DEX_WHIRLIPEDE,
-        .categoryName = _("Curlipede"),
-        .height = 12,
-        .weight = 585,
+        .speciesName = _("Kimeramon"),
+        .cryId = CRY_KIMERAMON,
+        .natDexNum = NATIONAL_DEX_KIMERAMON,
+        .categoryName = _("Evil Beast"),
+        .height = 176,
+        .weight = 8253,
         .description = COMPOUND_STRING(
-            "Storing energy for evolution, it sits.\n"
-            "But when attacked, it spins its body at\n"
-            "high speed like a wheel and then\n"
-            "crashes furiously into its opponent."),
+            "Each part of Kimeramons body comes the\n"
+            "data of a different Digimon. It is\n"
+            "unknown how this synthesis was\n"
+            "performed or even researched."),
         .pokemonScale = 282,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Whirlipede,
+        .frontPic = gMonFrontPic_Kimeramon,
         .frontPicSize = MON_COORDS_SIZE(56, 40),
         .frontPicYOffset = 13,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3900,28 +3899,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_TIP_MOVE_FORWARD,
-        .backPic = gMonBackPic_Whirlipede,
+        .backPic = gMonBackPic_Kimeramon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 15,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Whirlipede,
-        .shinyPalette = gMonShinyPalette_Whirlipede,
-        .iconSprite = gMonIcon_Whirlipede,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Kimeramon,
+        .shinyPalette = gMonShinyPalette_Kimeramon,
+        .iconSprite = gMonIcon_Kimeramon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 1, SHADOW_SIZE_S)
-        FOOTPRINT(Whirlipede)
+        FOOTPRINT(Kimeramon)
         OVERWORLD(
-            sPicTable_Whirlipede,
+            sPicTable_Kimeramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Whirlipede,
-            gShinyOverworldPalette_Whirlipede
+            gOverworldPalette_Kimeramon,
+            gShinyOverworldPalette_Kimeramon
         )
-        .levelUpLearnset = sWhirlipedeLevelUpLearnset,
-        .teachableLearnset = sWhirlipedeTeachableLearnset,
+        .levelUpLearnset = sKimeramonLevelUpLearnset,
+        .teachableLearnset = sKimeramonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SCOLIPEDE}),
     },
 

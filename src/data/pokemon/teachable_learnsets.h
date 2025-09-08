@@ -22569,7 +22569,7 @@ static const u16 sBrachiomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sWhirlipedeTeachableLearnset[] = {
+static const u16 sKimeramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DEFENSE_CURL,
     MOVE_DOUBLE_EDGE,

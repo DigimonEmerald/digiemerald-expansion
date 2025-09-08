@@ -1357,7 +1357,7 @@ gCryTable::
 .endif @ P_FAMILY_TINMON
 .if P_FAMILY_BRACHIOMON == TRUE
 	cry Cry_Brachiomon
-	cry Cry_Whirlipede
+	cry Cry_Kimeramon
 	cry Cry_Scolipede
 .endif @ P_FAMILY_BRACHIOMON
 .if P_FAMILY_COTTONEE == TRUE
@@ -3785,7 +3785,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_TINMON
 .if P_FAMILY_BRACHIOMON == TRUE
 	cry_reverse Cry_Brachiomon
-	cry_reverse Cry_Whirlipede
+	cry_reverse Cry_Kimeramon
 	cry_reverse Cry_Scolipede
 .endif @ P_FAMILY_BRACHIOMON
 .if P_FAMILY_COTTONEE == TRUE

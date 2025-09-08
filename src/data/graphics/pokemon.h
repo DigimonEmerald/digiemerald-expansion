@@ -16773,19 +16773,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Whirlipede[] = INCBIN_U32("graphics/pokemon/whirlipede/anim_front.4bpp.smol");
-    const u16 gMonPalette_Whirlipede[] = INCBIN_U16("graphics/pokemon/whirlipede/normal.gbapal");
-    const u32 gMonBackPic_Whirlipede[] = INCBIN_U32("graphics/pokemon/whirlipede/back.4bpp.smol");
-    const u16 gMonShinyPalette_Whirlipede[] = INCBIN_U16("graphics/pokemon/whirlipede/shiny.gbapal");
-    const u8 gMonIcon_Whirlipede[] = INCBIN_U8("graphics/pokemon/whirlipede/icon.4bpp");
+    const u32 gMonFrontPic_Kimeramon[] = INCBIN_U32("graphics/pokemon/kimeramon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Kimeramon[] = INCBIN_U16("graphics/pokemon/kimeramon/normal.gbapal");
+    const u32 gMonBackPic_Kimeramon[] = INCBIN_U32("graphics/pokemon/kimeramon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Kimeramon[] = INCBIN_U16("graphics/pokemon/kimeramon/shiny.gbapal");
+    const u8 gMonIcon_Kimeramon[] = INCBIN_U8("graphics/pokemon/kimeramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Whirlipede[] = INCBIN_U8("graphics/pokemon/whirlipede/footprint.1bpp");
+    const u8 gMonFootprint_Kimeramon[] = INCBIN_U8("graphics/pokemon/kimeramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Whirlipede[] = INCBIN_COMP("graphics/pokemon/whirlipede/overworld.4bpp");
+    const u32 gObjectEventPic_Kimeramon[] = INCBIN_COMP("graphics/pokemon/kimeramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Whirlipede[] = INCBIN_U16("graphics/pokemon/whirlipede/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Whirlipede[] = INCBIN_U16("graphics/pokemon/whirlipede/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Kimeramon[] = INCBIN_U16("graphics/pokemon/kimeramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Kimeramon[] = INCBIN_U16("graphics/pokemon/kimeramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

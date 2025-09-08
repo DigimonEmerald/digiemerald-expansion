@@ -3574,8 +3574,8 @@ Cry_Brachiomon::
 	.incbin "sound/direct_sound_samples/cries/brachiomon.bin"
 
 	.align 2
-Cry_Whirlipede::
-	.incbin "sound/direct_sound_samples/cries/whirlipede.bin"
+Cry_Kimeramon::
+	.incbin "sound/direct_sound_samples/cries/kimeramon.bin"
 
 	.align 2
 Cry_Scolipede::
