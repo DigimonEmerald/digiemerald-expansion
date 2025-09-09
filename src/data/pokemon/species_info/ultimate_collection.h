@@ -3921,55 +3921,47 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sKimeramonLevelUpLearnset,
         .teachableLearnset = sKimeramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_SCOLIPEDE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_CYBERDRAMON}),
     },
 
-    [SPECIES_SCOLIPEDE] =
+    [SPECIES_CYBERDRAMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = P_UPDATED_STATS >= GEN_6 ? 100 : 90,
-        .baseDefense   = 89,
-        .baseSpeed     = 112,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 69,
-        .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
+        .baseHP        = 100,
+        .baseAttack    = 120,
+        .baseDefense   = 80,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_FIGHTING),
+        .attribute = TYPE_VACCINE,
         .catchRate = 95,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 243,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 218,
-    #else
-        .expYield = 214,
-    #endif
-        .evYield_Speed = 3,
+        .expYield = 200,
+        .evYield_HP = 2,
+        .evYield_Attack = 3,
         .itemRare = ITEM_POISON_BARB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-    #if P_UPDATED_ABILITIES >= GEN_6
-        .abilities = { ABILITY_POISON_POINT, ABILITY_SWARM, ABILITY_SPEED_BOOST },
-    #else
-        .abilities = { ABILITY_POISON_POINT, ABILITY_SWARM, ABILITY_QUICK_FEET },
-    #endif
-        .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Scolipede"),
-        .cryId = CRY_SCOLIPEDE,
-        .natDexNum = NATIONAL_DEX_SCOLIPEDE,
-        .categoryName = _("Megapede"),
-        .height = 25,
-        .weight = 2005,
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_WEAK_ARMOR, ABILITY_MOXIE },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Cyberdramon"),
+        .cryId = CRY_CYBERDRAMON,
+        .natDexNum = NATIONAL_DEX_CYBERDRAMON,
+        .categoryName = _("Lone Warrior"),
+        .height = 31,
+        .weight = 1755,
         .description = COMPOUND_STRING(
-            "With quick movements, it chases down\n"
-            "its foes, attacking relentlessly with its\n"
-            "horns until it prevails. Then it finishes\n"
-            "them off with deadly poison."),
+            "Whenever a Virus Digimon outbreak occurs\n"
+            "on the Computer Network, Cyberdramon will\n"
+            "appear suddenly. It has no relation to\n"
+            "the group 'Virus Busters'."),
         .pokemonScale = 257,
         .pokemonOffset = 2,
         .trainerScale = 423,
         .trainerOffset = 8,
-        .frontPic = gMonFrontPic_Scolipede,
+        .frontPic = gMonFrontPic_Cyberdramon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3977,28 +3969,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Scolipede,
+        .backPic = gMonBackPic_Cyberdramon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Scolipede,
-        .shinyPalette = gMonShinyPalette_Scolipede,
-        .iconSprite = gMonIcon_Scolipede,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Cyberdramon,
+        .shinyPalette = gMonShinyPalette_Cyberdramon,
+        .iconSprite = gMonIcon_Cyberdramon,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 12, SHADOW_SIZE_L)
-        FOOTPRINT(Scolipede)
+        FOOTPRINT(Cyberdramon)
         OVERWORLD(
-            sPicTable_Scolipede,
+            sPicTable_Cyberdramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Scolipede,
-            gShinyOverworldPalette_Scolipede
+            gOverworldPalette_Cyberdramon,
+            gShinyOverworldPalette_Cyberdramon
         )
-        .levelUpLearnset = sScolipedeLevelUpLearnset,
-        .teachableLearnset = sScolipedeTeachableLearnset,
+        .levelUpLearnset = sCyberdramonLevelUpLearnset,
+        .teachableLearnset = sCyberdramonTeachableLearnset,
     },
 #endif //P_FAMILY_BRACHIOMON
 

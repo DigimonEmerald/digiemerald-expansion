@@ -3578,8 +3578,8 @@ Cry_Kimeramon::
 	.incbin "sound/direct_sound_samples/cries/kimeramon.bin"
 
 	.align 2
-Cry_Scolipede::
-	.incbin "sound/direct_sound_samples/cries/scolipede.bin"
+Cry_Cyberdramon::
+	.incbin "sound/direct_sound_samples/cries/cyberdramon.bin"
 .endif @ P_FAMILY_BRACHIOMON
 
 .if P_FAMILY_COTTONEE == TRUE

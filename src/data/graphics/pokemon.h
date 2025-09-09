@@ -16789,19 +16789,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Scolipede[] = INCBIN_U32("graphics/pokemon/scolipede/anim_front.4bpp.smol");
-    const u16 gMonPalette_Scolipede[] = INCBIN_U16("graphics/pokemon/scolipede/normal.gbapal");
-    const u32 gMonBackPic_Scolipede[] = INCBIN_U32("graphics/pokemon/scolipede/back.4bpp.smol");
-    const u16 gMonShinyPalette_Scolipede[] = INCBIN_U16("graphics/pokemon/scolipede/shiny.gbapal");
-    const u8 gMonIcon_Scolipede[] = INCBIN_U8("graphics/pokemon/scolipede/icon.4bpp");
+    const u32 gMonFrontPic_Cyberdramon[] = INCBIN_U32("graphics/pokemon/cyberdramon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Cyberdramon[] = INCBIN_U16("graphics/pokemon/cyberdramon/normal.gbapal");
+    const u32 gMonBackPic_Cyberdramon[] = INCBIN_U32("graphics/pokemon/cyberdramon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Cyberdramon[] = INCBIN_U16("graphics/pokemon/cyberdramon/shiny.gbapal");
+    const u8 gMonIcon_Cyberdramon[] = INCBIN_U8("graphics/pokemon/cyberdramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Scolipede[] = INCBIN_U8("graphics/pokemon/scolipede/footprint.1bpp");
+    const u8 gMonFootprint_Cyberdramon[] = INCBIN_U8("graphics/pokemon/cyberdramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Scolipede[] = INCBIN_COMP("graphics/pokemon/scolipede/overworld.4bpp");
+    const u32 gObjectEventPic_Cyberdramon[] = INCBIN_COMP("graphics/pokemon/cyberdramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Scolipede[] = INCBIN_U16("graphics/pokemon/scolipede/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Scolipede[] = INCBIN_U16("graphics/pokemon/scolipede/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Cyberdramon[] = INCBIN_U16("graphics/pokemon/cyberdramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Cyberdramon[] = INCBIN_U16("graphics/pokemon/cyberdramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_BRACHIOMON

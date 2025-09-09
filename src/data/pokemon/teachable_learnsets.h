@@ -22591,7 +22591,7 @@ static const u16 sKimeramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sScolipedeTeachableLearnset[] = {
+static const u16 sCyberdramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CUT,
     MOVE_DEFENSE_CURL,
