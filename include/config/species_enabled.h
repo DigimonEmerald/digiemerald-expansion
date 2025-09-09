@@ -327,7 +327,7 @@
 #define P_FAMILY_BIGMAMEMON                    P_GEN_5_POKEMON
 #define P_FAMILY_TINMON                P_GEN_5_POKEMON
 #define P_FAMILY_BRACHIOMON                P_GEN_5_POKEMON
-#define P_FAMILY_COTTONEE                P_GEN_5_POKEMON
+#define P_FAMILY_SKULLMERAMON                P_GEN_5_POKEMON
 #define P_FAMILY_PETILIL                 P_GEN_5_POKEMON
 #define P_FAMILY_BASCULIN                P_GEN_5_POKEMON
 #define P_FAMILY_SANDILE                 P_GEN_5_POKEMON

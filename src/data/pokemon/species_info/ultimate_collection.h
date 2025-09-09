@@ -3994,49 +3994,51 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_BRACHIOMON
 
-#if P_FAMILY_COTTONEE
+#if P_FAMILY_SKULLMERAMON
 #if P_UPDATED_TYPES >= GEN_6
-    #define COTTONEE_FAMILY_TYPES { TYPE_GRASS, TYPE_FAIRY }
+    #define SKULLMERAMON_FAMILY_TYPES { TYPE_GRASS, TYPE_FAIRY }
 #else
-    #define COTTONEE_FAMILY_TYPES { TYPE_GRASS, TYPE_GRASS }
+    #define SKULLMERAMON_FAMILY_TYPES { TYPE_GRASS, TYPE_GRASS }
 #endif
 
-    [SPECIES_COTTONEE] =
+    [SPECIES_SKULLMERAMON] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 27,
-        .baseDefense   = 60,
-        .baseSpeed     = 66,
-        .baseSpAttack  = 37,
-        .baseSpDefense = 50,
-        .types = COTTONEE_FAMILY_TYPES,
-        .catchRate = 190,
-        .expYield = 56,
-        .evYield_Speed = 1,
+        .baseHP        = 80,
+        .baseAttack    = 85,
+        .baseDefense   = 95,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_GHOST),
+        .attribute = TYPE_DATA,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_SpAttack = 3,
+        .evYield_SpDefense = 2,
         .itemRare = ITEM_ABSORB_BULB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS, EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_PRANKSTER, ABILITY_INFILTRATOR, ABILITY_CHLOROPHYLL },
-        .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Cottonee"),
-        .cryId = CRY_COTTONEE,
-        .natDexNum = NATIONAL_DEX_COTTONEE,
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_STEAM_ENGINE, ABILITY_DESOLATE_LAND },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("SkullMeramon"),
+        .cryId = CRY_SKULLMERAMON,
+        .natDexNum = NATIONAL_DEX_SKULLMERAMON,
         .categoryName = _("Cotton Puff"),
-        .height = 3,
-        .weight = 6,
+        .height = 40,
+        .weight = 2005,
         .description = COMPOUND_STRING(
-            "When it finds others of its kind, they all\n"
-            "stick together. When enough of them\n"
-            "have collected, the mass resembles a\n"
-            "cumulonimbus cloud."),
+            "The flames of SkullMeramon burn\n"
+            "far hotter than Meramons letting it\n"
+            "shake off attacks from Water and\n"
+            "Ice type Digimon with ease."),
         .pokemonScale = 530,
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Cottonee,
+        .frontPic = gMonFrontPic_Skullmeramon,
         .frontPicSize = MON_COORDS_SIZE(48, 32),
         .frontPicYOffset = 18,
         .frontAnimFrames = ANIM_FRAMES(
@@ -4051,29 +4053,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 1),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Cottonee,
+        .backPic = gMonBackPic_Skullmeramon,
         .backPicSize = MON_COORDS_SIZE(64, 32),
         .backPicYOffset = 18,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Cottonee,
-        .shinyPalette = gMonShinyPalette_Cottonee,
-        .iconSprite = gMonIcon_Cottonee,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Skullmeramon,
+        .shinyPalette = gMonShinyPalette_Skullmeramon,
+        .iconSprite = gMonIcon_Skullmeramon,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, -5, SHADOW_SIZE_M)
-        FOOTPRINT(Cottonee)
+        FOOTPRINT(Skullmeramon)
         OVERWORLD(
-            sPicTable_Cottonee,
+            sPicTable_Skullmeramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Cottonee,
-            gShinyOverworldPalette_Cottonee
+            gOverworldPalette_Skullmeramon,
+            gShinyOverworldPalette_Skullmeramon
         )
-        .levelUpLearnset = sCottoneeLevelUpLearnset,
-        .teachableLearnset = sCottoneeTeachableLearnset,
-        .eggMoveLearnset = sCottoneeEggMoveLearnset,
+        .levelUpLearnset = sSkullmeramonLevelUpLearnset,
+        .teachableLearnset = sSkullmeramonTeachableLearnset,
+        .eggMoveLearnset = sSkullmeramonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_WHIMSICOTT}),
     },
 
@@ -4085,7 +4087,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .baseSpeed     = 116,
         .baseSpAttack  = 77,
         .baseSpDefense = 75,
-        .types = COTTONEE_FAMILY_TYPES,
+        .types = SKULLMERAMON_FAMILY_TYPES,
         .catchRate = 75,
         .expYield = 168,
         .evYield_Speed = 2,
@@ -4144,7 +4146,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sWhimsicottLevelUpLearnset,
         .teachableLearnset = sWhimsicottTeachableLearnset,
     },
-#endif //P_FAMILY_COTTONEE
+#endif //P_FAMILY_SKULLMERAMON
 
 #if P_FAMILY_PETILIL
     [SPECIES_PETILIL] =

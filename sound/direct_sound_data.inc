@@ -3582,15 +3582,15 @@ Cry_Cyberdramon::
 	.incbin "sound/direct_sound_samples/cries/cyberdramon.bin"
 .endif @ P_FAMILY_BRACHIOMON
 
-.if P_FAMILY_COTTONEE == TRUE
+.if P_FAMILY_SKULLMERAMON == TRUE
 	.align 2
-Cry_Cottonee::
-	.incbin "sound/direct_sound_samples/cries/cottonee.bin"
+Cry_Skullmeramon::
+	.incbin "sound/direct_sound_samples/cries/skullmeramon.bin"
 
 	.align 2
 Cry_Whimsicott::
 	.incbin "sound/direct_sound_samples/cries/whimsicott.bin"
-.endif @ P_FAMILY_COTTONEE
+.endif @ P_FAMILY_SKULLMERAMON
 
 .if P_FAMILY_PETILIL == TRUE
 	.align 2

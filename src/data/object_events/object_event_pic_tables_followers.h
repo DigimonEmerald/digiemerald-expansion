@@ -3930,14 +3930,14 @@ static const struct SpriteFrameImage sPicTable_Cyberdramon[] = {
 };
 #endif //P_FAMILY_BRACHIOMON
 
-#if P_FAMILY_COTTONEE
-static const struct SpriteFrameImage sPicTable_Cottonee[] = {
-    overworld_ascending_frames(gObjectEventPic_Cottonee, 4, 4),
+#if P_FAMILY_SKULLMERAMON
+static const struct SpriteFrameImage sPicTable_Skullmeramon[] = {
+    overworld_ascending_frames(gObjectEventPic_Skullmeramon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Whimsicott[] = {
     overworld_ascending_frames(gObjectEventPic_Whimsicott, 4, 4),
 };
-#endif //P_FAMILY_COTTONEE
+#endif //P_FAMILY_SKULLMERAMON
 
 #if P_FAMILY_PETILIL
 static const struct SpriteFrameImage sPicTable_Petilil[] = {

@@ -4231,8 +4231,8 @@ static const u16 sBrachiomonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_BRACHIOMON
 
-#if P_FAMILY_COTTONEE
-static const u16 sCottoneeEggMoveLearnset[] = {
+#if P_FAMILY_SKULLMERAMON
+static const u16 sSkullmeramonEggMoveLearnset[] = {
     MOVE_NATURAL_GIFT,
     MOVE_ENCORE,
     MOVE_TICKLE,
@@ -4246,7 +4246,7 @@ static const u16 sCottoneeEggMoveLearnset[] = {
     MOVE_MISTY_TERRAIN,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_COTTONEE
+#endif //P_FAMILY_SKULLMERAMON
 
 #if P_FAMILY_PETILIL
 static const u16 sPetililEggMoveLearnset[] = {

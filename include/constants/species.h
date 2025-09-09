@@ -563,7 +563,7 @@
 #define SPECIES_BRACHIOMON                                543
 #define SPECIES_KIMERAMON                              544
 #define SPECIES_CYBERDRAMON                               545
-#define SPECIES_COTTONEE                                546
+#define SPECIES_SKULLMERAMON                                546
 #define SPECIES_WHIMSICOTT                              547
 #define SPECIES_PETILIL                                 548
 #define SPECIES_LILLIGANT                               549

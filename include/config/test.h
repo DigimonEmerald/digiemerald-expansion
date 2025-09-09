@@ -580,8 +580,8 @@
 #define P_FAMILY_TINMON                TRUE
 #undef P_FAMILY_BRACHIOMON
 #define P_FAMILY_BRACHIOMON                TRUE
-#undef P_FAMILY_COTTONEE
-#define P_FAMILY_COTTONEE                TRUE
+#undef P_FAMILY_SKULLMERAMON
+#define P_FAMILY_SKULLMERAMON                TRUE
 #undef P_FAMILY_PETILIL
 #define P_FAMILY_PETILIL                 TRUE
 #undef P_FAMILY_BASCULIN

@@ -22624,8 +22624,8 @@ static const u16 sCyberdramonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BRACHIOMON
 
-#if P_FAMILY_COTTONEE
-static const u16 sCottoneeTeachableLearnset[] = {
+#if P_FAMILY_SKULLMERAMON
+static const u16 sSkullmeramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_DREAM_EATER,
@@ -22673,7 +22673,7 @@ static const u16 sWhimsicottTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_COTTONEE
+#endif //P_FAMILY_SKULLMERAMON
 
 #if P_FAMILY_PETILIL
 static const u16 sPetililTeachableLearnset[] = {

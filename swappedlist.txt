@@ -492,6 +492,7 @@ Blossomon - Swadloon
 BlueMeramon - Leavanny
 Brachiomon - Venipede
 Cyberdramon - Scolipede
+SkullMeramon - Cottonee
 
 Mega List
 

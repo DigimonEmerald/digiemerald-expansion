@@ -12808,8 +12808,8 @@ static const struct LevelUpMove sCyberdramonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_BRACHIOMON
 
-#if P_FAMILY_COTTONEE
-static const struct LevelUpMove sCottoneeLevelUpLearnset[] = {
+#if P_FAMILY_SKULLMERAMON
+static const struct LevelUpMove sSkullmeramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE( 3, MOVE_FAIRY_WIND),
@@ -12855,7 +12855,7 @@ static const struct LevelUpMove sWhimsicottLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_STUN_SPORE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_COTTONEE
+#endif //P_FAMILY_SKULLMERAMON
 
 #if P_FAMILY_PETILIL
 static const struct LevelUpMove sPetililLevelUpLearnset[] = {

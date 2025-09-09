@@ -1360,10 +1360,10 @@ gCryTable::
 	cry Cry_Kimeramon
 	cry Cry_Cyberdramon
 .endif @ P_FAMILY_BRACHIOMON
-.if P_FAMILY_COTTONEE == TRUE
-	cry Cry_Cottonee
+.if P_FAMILY_SKULLMERAMON == TRUE
+	cry Cry_Skullmeramon
 	cry Cry_Whimsicott
-.endif @ P_FAMILY_COTTONEE
+.endif @ P_FAMILY_SKULLMERAMON
 .if P_FAMILY_PETILIL == TRUE
 	cry Cry_Petilil
 	cry Cry_Lilligant
@@ -3788,10 +3788,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Kimeramon
 	cry_reverse Cry_Cyberdramon
 .endif @ P_FAMILY_BRACHIOMON
-.if P_FAMILY_COTTONEE == TRUE
-	cry_reverse Cry_Cottonee
+.if P_FAMILY_SKULLMERAMON == TRUE
+	cry_reverse Cry_Skullmeramon
 	cry_reverse Cry_Whimsicott
-.endif @ P_FAMILY_COTTONEE
+.endif @ P_FAMILY_SKULLMERAMON
 .if P_FAMILY_PETILIL == TRUE
 	cry_reverse Cry_Petilil
 	cry_reverse Cry_Lilligant
