@@ -4273,8 +4273,8 @@ Cry_Boltmon::
 	.incbin "sound/direct_sound_samples/cries/boltmon.bin"
 
 	.align 2
-Cry_Gogoat::
-	.incbin "sound/direct_sound_samples/cries/gogoat.bin"
+Cry_Creepymon::
+	.incbin "sound/direct_sound_samples/cries/creepymon.bin"
 .endif @ P_FAMILY_BOLTMON
 
 .if P_FAMILY_PANCHAM == TRUE

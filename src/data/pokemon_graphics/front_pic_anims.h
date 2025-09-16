@@ -8330,7 +8330,7 @@ static const union AnimCmd sAnim_Boltmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Gogoat_1[] =
+static const union AnimCmd sAnim_Creepymon_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 36),
@@ -12007,7 +12007,7 @@ SINGLE_ANIMATION(Florges);
 #endif //P_FAMILY_FLABEBE
 #if P_FAMILY_BOLTMON
 SINGLE_ANIMATION(Boltmon);
-SINGLE_ANIMATION(Gogoat);
+SINGLE_ANIMATION(Creepymon);
 #endif //P_FAMILY_BOLTMON
 #if P_FAMILY_PANCHAM
 SINGLE_ANIMATION(Pancham);

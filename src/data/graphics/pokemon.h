@@ -19726,19 +19726,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Gogoat[] = INCBIN_U32("graphics/pokemon/gogoat/anim_front.4bpp.smol");
-    const u16 gMonPalette_Gogoat[] = INCBIN_U16("graphics/pokemon/gogoat/normal.gbapal");
-    const u32 gMonBackPic_Gogoat[] = INCBIN_U32("graphics/pokemon/gogoat/back.4bpp.smol");
-    const u16 gMonShinyPalette_Gogoat[] = INCBIN_U16("graphics/pokemon/gogoat/shiny.gbapal");
-    const u8 gMonIcon_Gogoat[] = INCBIN_U8("graphics/pokemon/gogoat/icon.4bpp");
+    const u32 gMonFrontPic_Creepymon[] = INCBIN_U32("graphics/pokemon/creepymon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Creepymon[] = INCBIN_U16("graphics/pokemon/creepymon/normal.gbapal");
+    const u32 gMonBackPic_Creepymon[] = INCBIN_U32("graphics/pokemon/creepymon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Creepymon[] = INCBIN_U16("graphics/pokemon/creepymon/shiny.gbapal");
+    const u8 gMonIcon_Creepymon[] = INCBIN_U8("graphics/pokemon/creepymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Gogoat[] = INCBIN_U8("graphics/pokemon/gogoat/footprint.1bpp");
+    const u8 gMonFootprint_Creepymon[] = INCBIN_U8("graphics/pokemon/creepymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Gogoat[] = INCBIN_COMP("graphics/pokemon/gogoat/overworld.4bpp");
+    const u32 gObjectEventPic_Creepymon[] = INCBIN_COMP("graphics/pokemon/creepymon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Gogoat[] = INCBIN_U16("graphics/pokemon/gogoat/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Gogoat[] = INCBIN_U16("graphics/pokemon/gogoat/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Creepymon[] = INCBIN_U16("graphics/pokemon/creepymon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Creepymon[] = INCBIN_U16("graphics/pokemon/creepymon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_BOLTMON

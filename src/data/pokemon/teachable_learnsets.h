@@ -27006,7 +27006,7 @@ static const u16 sBoltmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGogoatTeachableLearnset[] = {
+static const u16 sCreepymonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,

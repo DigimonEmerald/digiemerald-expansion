@@ -4757,8 +4757,8 @@ static const struct SpriteFrameImage sPicTable_FlorgesWhite[] = {
 static const struct SpriteFrameImage sPicTable_Boltmon[] = {
     overworld_ascending_frames(gObjectEventPic_Boltmon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Gogoat[] = {
-    overworld_ascending_frames(gObjectEventPic_Gogoat, 4, 4),
+static const struct SpriteFrameImage sPicTable_Creepymon[] = {
+    overworld_ascending_frames(gObjectEventPic_Creepymon, 4, 4),
 };
 #endif //P_FAMILY_BOLTMON
 

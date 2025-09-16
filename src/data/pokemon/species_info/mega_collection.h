@@ -2053,44 +2053,47 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sBoltmonLevelUpLearnset,
         .teachableLearnset = sBoltmonTeachableLearnset,
         .eggMoveLearnset = sBoltmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_GOGOAT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_CREEPYMON}),
     },
 
-    [SPECIES_GOGOAT] =
+    [SPECIES_CREEPYMON] =
     {
-        .baseHP        = 123,
-        .baseAttack    = 100,
-        .baseDefense   = 62,
-        .baseSpeed     = 68,
-        .baseSpAttack  = 97,
-        .baseSpDefense = 81,
-        .types = MON_TYPES(TYPE_GRASS),
-        .catchRate = 45,
-        .expYield = 186,
-        .evYield_HP = 2,
+        .baseHP        = 100,
+        .baseAttack    = 125,
+        .baseDefense   = 100,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 140,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_DARK),
+        .attribute = TYPE_VIRUS,   
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_Attack = 2,
+        .evYield_Speed = 1,
+        .evYield_SpAttack = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SAP_SIPPER, ABILITY_NONE, ABILITY_GRASS_PELT },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Gogoat"),
-        .cryId = CRY_GOGOAT,
-        .natDexNum = NATIONAL_DEX_GOGOAT,
-        .categoryName = _("Mount"),
-        .height = 17,
-        .weight = 910,
+        .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_NONE }, // Sin of Wrath
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Creepymon"),
+        .cryId = CRY_CREEPYMON,
+        .natDexNum = NATIONAL_DEX_CREEPYMON,
+        .categoryName = _("Hellfire"),
+        .height = 70,
+        .weight = 2928,
         .description = COMPOUND_STRING(
-            "It can tell how its trainer is feeling by\n"
-            "subtle shifts in the grip on its horns. This\n"
-            "empathetic sense lets them run as if one\n"
-            "being. They inhabit mountainous regions."),
+            "Creepymon was originally an angel Digimon\n"
+            "before leading a failed rebellion. In its\n"
+            "attempt for revenge, it has started working\n"
+            "on reviving the mythical Ultra Digimon."),
         .pokemonScale = 259,
         .pokemonOffset = 0,
         .trainerScale = 290,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Gogoat,
+        .frontPic = gMonFrontPic_Creepymon,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 2,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2099,28 +2102,28 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Gogoat,
+        .backPic = gMonBackPic_Creepymon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
-        .palette = gMonPalette_Gogoat,
-        .shinyPalette = gMonShinyPalette_Gogoat,
-        .iconSprite = gMonIcon_Gogoat,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Creepymon,
+        .shinyPalette = gMonShinyPalette_Creepymon,
+        .iconSprite = gMonIcon_Creepymon,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 9, SHADOW_SIZE_XL_BATTLE_ONLY)
-        FOOTPRINT(Gogoat)
+        FOOTPRINT(Creepymon)
         OVERWORLD(
-            sPicTable_Gogoat,
+            sPicTable_Creepymon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Gogoat,
-            gShinyOverworldPalette_Gogoat
+            gOverworldPalette_Creepymon,
+            gShinyOverworldPalette_Creepymon
         )
-        .levelUpLearnset = sGogoatLevelUpLearnset,
-        .teachableLearnset = sGogoatTeachableLearnset,
+        .levelUpLearnset = sCreepymonLevelUpLearnset,
+        .teachableLearnset = sCreepymonTeachableLearnset,
     },
 #endif //P_FAMILY_BOLTMON
 

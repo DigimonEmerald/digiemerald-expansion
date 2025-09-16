@@ -493,6 +493,7 @@ BlueMeramon - Leavanny
 Brachiomon - Venipede
 Cyberdramon - Scolipede
 SkullMeramon - Cottonee
+Deramon - Whimsicot
 
 Mega List
 
@@ -517,5 +518,6 @@ SaberLeomon - Vivillon
 Apocalymon - Litleo
 Babamon - Pyroar
 Boltmon - Skiddo
+Creepymon - Gogoat
 
 SPECIES NAME LENGTH MAX = 13

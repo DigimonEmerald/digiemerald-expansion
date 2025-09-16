@@ -1639,7 +1639,7 @@ gCryTable::
 .endif @ P_FAMILY_FLABEBE
 .if P_FAMILY_BOLTMON == TRUE
 	cry Cry_Boltmon
-	cry Cry_Gogoat
+	cry Cry_Creepymon
 .endif @ P_FAMILY_BOLTMON
 .if P_FAMILY_PANCHAM == TRUE
 	cry Cry_Pancham
@@ -4067,7 +4067,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_FLABEBE
 .if P_FAMILY_BOLTMON == TRUE
 	cry_reverse Cry_Boltmon
-	cry_reverse Cry_Gogoat
+	cry_reverse Cry_Creepymon
 .endif @ P_FAMILY_BOLTMON
 .if P_FAMILY_PANCHAM == TRUE
 	cry_reverse Cry_Pancham
