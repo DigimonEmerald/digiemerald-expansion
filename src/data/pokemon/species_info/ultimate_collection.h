@@ -4076,45 +4076,47 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sSkullmeramonLevelUpLearnset,
         .teachableLearnset = sSkullmeramonTeachableLearnset,
         .eggMoveLearnset = sSkullmeramonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_WHIMSICOTT}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_DERAMON}),
     },
 
-    [SPECIES_WHIMSICOTT] =
+    [SPECIES_DERAMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 67,
-        .baseDefense   = 85,
-        .baseSpeed     = 116,
-        .baseSpAttack  = 77,
-        .baseSpDefense = 75,
-        .types = SKULLMERAMON_FAMILY_TYPES,
-        .catchRate = 75,
-        .expYield = 168,
-        .evYield_Speed = 2,
+        .baseHP        = 120,
+        .baseAttack    = 55,
+        .baseDefense   = 100,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_GRASS),
+        .attribute = TYPE_DATA,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_Attack = 3,
+        .evYield_Defense = 2,
         .itemRare = ITEM_ABSORB_BULB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS, EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_PRANKSTER, ABILITY_INFILTRATOR, ABILITY_CHLOROPHYLL },
+        .abilities = { ABILITY_EARLY_BIRD, ABILITY_GRASS_PELT, ABILITY_HARVEST },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Whimsicott"),
-        .cryId = CRY_WHIMSICOTT,
-        .natDexNum = NATIONAL_DEX_WHIMSICOTT,
-        .categoryName = _("Windveiled"),
-        .height = 7,
-        .weight = 66,
+        .speciesName = _("Deramon"),
+        .cryId = CRY_DERAMON,
+        .natDexNum = NATIONAL_DEX_DERAMON,
+        .categoryName = _("Prideful"),
+        .height = 11,
+        .weight = 373,
         .description = COMPOUND_STRING(
-            "It rides on the wind and slips into\n"
-            "people's homes. After it has turned a\n"
-            "room into a cotton-filled mess, it giggles\n"
-            "to itself and takes off."),
+            "Although it has the appearance of a\n"
+            "bird, it has vegetation growing from its\n"
+            "back. It feels great shame from its \n"
+            "inability to fly."),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Whimsicott,
+        .frontPic = gMonFrontPic_Deramon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 6,
         .frontAnimFrames = ANIM_FRAMES(
@@ -4123,28 +4125,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_SHRINK_GROW,
-        .backPic = gMonBackPic_Whimsicott,
+        .backPic = gMonBackPic_Deramon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Whimsicott,
-        .shinyPalette = gMonShinyPalette_Whimsicott,
-        .iconSprite = gMonIcon_Whimsicott,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Deramon,
+        .shinyPalette = gMonShinyPalette_Deramon,
+        .iconSprite = gMonIcon_Deramon,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 8, SHADOW_SIZE_M)
-        FOOTPRINT(Whimsicott)
+        FOOTPRINT(Deramon)
         OVERWORLD(
-            sPicTable_Whimsicott,
+            sPicTable_Deramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Whimsicott,
-            gShinyOverworldPalette_Whimsicott
+            gOverworldPalette_Deramon,
+            gShinyOverworldPalette_Deramon
         )
-        .levelUpLearnset = sWhimsicottLevelUpLearnset,
-        .teachableLearnset = sWhimsicottTeachableLearnset,
+        .levelUpLearnset = sDeramonLevelUpLearnset,
+        .teachableLearnset = sDeramonTeachableLearnset,
     },
 #endif //P_FAMILY_SKULLMERAMON
 

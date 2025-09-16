@@ -1362,7 +1362,7 @@ gCryTable::
 .endif @ P_FAMILY_BRACHIOMON
 .if P_FAMILY_SKULLMERAMON == TRUE
 	cry Cry_Skullmeramon
-	cry Cry_Whimsicott
+	cry Cry_Deramon
 .endif @ P_FAMILY_SKULLMERAMON
 .if P_FAMILY_PETILIL == TRUE
 	cry Cry_Petilil
@@ -3790,7 +3790,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_BRACHIOMON
 .if P_FAMILY_SKULLMERAMON == TRUE
 	cry_reverse Cry_Skullmeramon
-	cry_reverse Cry_Whimsicott
+	cry_reverse Cry_Deramon
 .endif @ P_FAMILY_SKULLMERAMON
 .if P_FAMILY_PETILIL == TRUE
 	cry_reverse Cry_Petilil

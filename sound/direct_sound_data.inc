@@ -3588,8 +3588,8 @@ Cry_Skullmeramon::
 	.incbin "sound/direct_sound_samples/cries/skullmeramon.bin"
 
 	.align 2
-Cry_Whimsicott::
-	.incbin "sound/direct_sound_samples/cries/whimsicott.bin"
+Cry_Deramon::
+	.incbin "sound/direct_sound_samples/cries/deramon.bin"
 .endif @ P_FAMILY_SKULLMERAMON
 
 .if P_FAMILY_PETILIL == TRUE
