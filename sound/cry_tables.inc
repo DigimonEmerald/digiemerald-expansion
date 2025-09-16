@@ -1643,7 +1643,7 @@ gCryTable::
 .endif @ P_FAMILY_BOLTMON
 .if P_FAMILY_DEVITAMAMON == TRUE
 	cry Cry_Devitamamon
-	cry Cry_Pangoro
+	cry Cry_Diaboromon
 .endif @ P_FAMILY_DEVITAMAMON
 .if P_FAMILY_FURFROU == TRUE
 	cry Cry_Furfrou
@@ -4071,7 +4071,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_BOLTMON
 .if P_FAMILY_DEVITAMAMON == TRUE
 	cry_reverse Cry_Devitamamon
-	cry_reverse Cry_Pangoro
+	cry_reverse Cry_Diaboromon
 .endif @ P_FAMILY_DEVITAMAMON
 .if P_FAMILY_FURFROU == TRUE
 	cry_reverse Cry_Furfrou

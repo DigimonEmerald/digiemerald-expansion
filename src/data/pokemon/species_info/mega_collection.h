@@ -2200,45 +2200,48 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sDevitamamonLevelUpLearnset,
         .teachableLearnset = sDevitamamonTeachableLearnset,
         .eggMoveLearnset = sDevitamamonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_PANGORO, CONDITIONS({IF_TYPE_IN_PARTY, TYPE_DARK})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_DIABOROMON, CONDITIONS({IF_TYPE_IN_PARTY, TYPE_DARK})}),
     },
 
-    [SPECIES_PANGORO] =
+    [SPECIES_DIABOROMON] =
     {
         .baseHP        = 95,
-        .baseAttack    = 124,
-        .baseDefense   = 78,
-        .baseSpeed     = 58,
-        .baseSpAttack  = 69,
-        .baseSpDefense = 71,
-        .types = MON_TYPES(TYPE_FIGHTING, TYPE_DARK),
-        .catchRate = 65,
-        .expYield = 173,
+        .baseAttack    = 125,
+        .baseDefense   = 90,
+        .baseSpeed     = 115,
+        .baseSpAttack  = 135,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_POISON, TYPE_DARK),
+        .attribute = TYPE_UKNOWN,   
+        .catchRate = 55,
+        .expYield = 250,
         .evYield_Attack = 2,
+        .evYield_Speed = 1,
+        .evYield_SpAttack = 3,
         .itemRare = ITEM_MENTAL_HERB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_IRON_FIST, ABILITY_MOLD_BREAKER, ABILITY_SCRAPPY },
-        .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Pangoro"),
-        .cryId = CRY_PANGORO,
-        .natDexNum = NATIONAL_DEX_PANGORO,
-        .categoryName = _("Daunting"),
-        .height = 21,
-        .weight = 1360,
+        .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_NONE }, // Virus Download
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("Diaboromon"),
+        .cryId = CRY_DIABOROMON,
+        .natDexNum = NATIONAL_DEX_DIABOROMON,
+        .categoryName = _("Wickedest"),
+        .height = 76,
+        .weight = 1962,
         .description = COMPOUND_STRING(
-            "It boasts superb physical strength.\n"
-            "Those who wish to become Pangoro's\n"
-            "Trainer have no choice but to converse\n"
-            "with their fists."),
+            "Diaboromon gets the most pleasure from\n"
+            "destruction and slaughter. It will\n"
+            "absorb as much data as possible from any\n"
+            "source in its pursuit for its own joy."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 365,
         .trainerOffset = 7,
-        .frontPic = gMonFrontPic_Pangoro,
+        .frontPic = gMonFrontPic_Diaboromon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2250,28 +2253,28 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_BACK_AND_LUNGE,
-        .backPic = gMonBackPic_Pangoro,
+        .backPic = gMonBackPic_Diaboromon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Pangoro,
-        .shinyPalette = gMonShinyPalette_Pangoro,
-        .iconSprite = gMonIcon_Pangoro,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Diaboromon,
+        .shinyPalette = gMonShinyPalette_Diaboromon,
+        .iconSprite = gMonIcon_Diaboromon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
-        FOOTPRINT(Pangoro)
+        FOOTPRINT(Diaboromon)
         OVERWORLD(
-            sPicTable_Pangoro,
+            sPicTable_Diaboromon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Pangoro,
-            gShinyOverworldPalette_Pangoro
+            gOverworldPalette_Diaboromon,
+            gShinyOverworldPalette_Diaboromon
         )
-        .levelUpLearnset = sPangoroLevelUpLearnset,
-        .teachableLearnset = sPangoroTeachableLearnset,
+        .levelUpLearnset = sDiaboromonLevelUpLearnset,
+        .teachableLearnset = sDiaboromonTeachableLearnset,
     },
 #endif //P_FAMILY_DEVITAMAMON
 

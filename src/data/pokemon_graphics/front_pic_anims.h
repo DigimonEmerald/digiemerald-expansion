@@ -8351,7 +8351,7 @@ static const union AnimCmd sAnim_Devitamamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Pangoro_1[] =
+static const union AnimCmd sAnim_Diaboromon_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 8),
@@ -12011,7 +12011,7 @@ SINGLE_ANIMATION(Creepymon);
 #endif //P_FAMILY_BOLTMON
 #if P_FAMILY_DEVITAMAMON
 SINGLE_ANIMATION(Devitamamon);
-SINGLE_ANIMATION(Pangoro);
+SINGLE_ANIMATION(Diaboromon);
 #endif //P_FAMILY_DEVITAMAMON
 #if P_FAMILY_FURFROU
 SINGLE_ANIMATION(Furfrou);

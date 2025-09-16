@@ -27084,7 +27084,7 @@ static const u16 sDevitamamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sPangoroTeachableLearnset[] = {
+static const u16 sDiaboromonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,

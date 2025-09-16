@@ -4283,8 +4283,8 @@ Cry_Devitamamon::
 	.incbin "sound/direct_sound_samples/cries/devitamamon.bin"
 
 	.align 2
-Cry_Pangoro::
-	.incbin "sound/direct_sound_samples/cries/pangoro.bin"
+Cry_Diaboromon::
+	.incbin "sound/direct_sound_samples/cries/diaboromon.bin"
 .endif @ P_FAMILY_DEVITAMAMON
 
 .if P_FAMILY_FURFROU == TRUE

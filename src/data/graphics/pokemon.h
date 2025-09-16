@@ -19760,19 +19760,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Pangoro[] = INCBIN_U32("graphics/pokemon/pangoro/anim_front.4bpp.smol");
-    const u16 gMonPalette_Pangoro[] = INCBIN_U16("graphics/pokemon/pangoro/normal.gbapal");
-    const u32 gMonBackPic_Pangoro[] = INCBIN_U32("graphics/pokemon/pangoro/back.4bpp.smol");
-    const u16 gMonShinyPalette_Pangoro[] = INCBIN_U16("graphics/pokemon/pangoro/shiny.gbapal");
-    const u8 gMonIcon_Pangoro[] = INCBIN_U8("graphics/pokemon/pangoro/icon.4bpp");
+    const u32 gMonFrontPic_Diaboromon[] = INCBIN_U32("graphics/pokemon/diaboromon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Diaboromon[] = INCBIN_U16("graphics/pokemon/diaboromon/normal.gbapal");
+    const u32 gMonBackPic_Diaboromon[] = INCBIN_U32("graphics/pokemon/diaboromon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Diaboromon[] = INCBIN_U16("graphics/pokemon/diaboromon/shiny.gbapal");
+    const u8 gMonIcon_Diaboromon[] = INCBIN_U8("graphics/pokemon/diaboromon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Pangoro[] = INCBIN_U8("graphics/pokemon/pangoro/footprint.1bpp");
+    const u8 gMonFootprint_Diaboromon[] = INCBIN_U8("graphics/pokemon/diaboromon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Pangoro[] = INCBIN_COMP("graphics/pokemon/pangoro/overworld.4bpp");
+    const u32 gObjectEventPic_Diaboromon[] = INCBIN_COMP("graphics/pokemon/diaboromon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Pangoro[] = INCBIN_U16("graphics/pokemon/pangoro/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Pangoro[] = INCBIN_U16("graphics/pokemon/pangoro/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Diaboromon[] = INCBIN_U16("graphics/pokemon/diaboromon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Diaboromon[] = INCBIN_U16("graphics/pokemon/diaboromon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_DEVITAMAMON

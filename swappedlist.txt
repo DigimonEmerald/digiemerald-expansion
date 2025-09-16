@@ -520,5 +520,6 @@ Babamon - Pyroar
 Boltmon - Skiddo
 Creepymon - Gogoat
 Devitamamon - Pancham
+Diaboromon - Pangoro
 
 SPECIES NAME LENGTH MAX = 13

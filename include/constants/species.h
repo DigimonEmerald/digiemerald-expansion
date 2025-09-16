@@ -707,7 +707,7 @@
 #define SPECIES_BOLTMON                                  672
 #define SPECIES_CREEPYMON                                  673
 #define SPECIES_DEVITAMAMON                                 674
-#define SPECIES_PANGORO                                 675
+#define SPECIES_DIABOROMON                                 675
 #define SPECIES_FURFROU                                 SPECIES_FURFROU_NATURAL
 #define SPECIES_FURFROU_NATURAL                         676
 #define SPECIES_ESPURR                                  677
