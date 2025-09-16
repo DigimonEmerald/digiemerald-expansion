@@ -15,23 +15,23 @@ SINGLE_BATTLE_TEST("Focus Punch activates only if not damaged")
     PARAMETRIZE { move = MOVE_LEER; activate = TRUE; }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_FOCUS_PUNCH); MOVE(opponent, move); }
     } SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FOCUS_PUNCH_SETUP, player);
-        MESSAGE("Lopmonx is tightening its focus!");
+        MESSAGE("Wobbuffet is tightening its focus!");
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
 
         if (activate) {
-            MESSAGE("Lopmonx used Focus Punch!");
+            MESSAGE("Wobbuffet used Focus Punch!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FOCUS_PUNCH, player);
             HP_BAR(opponent);
         } else {
-            MESSAGE("Lopmonx lost its focus and couldn't move!");
+            MESSAGE("Wobbuffet lost its focus and couldn't move!");
             NONE_OF {
-                MESSAGE("Lopmonx used Focus Punch!");
+                MESSAGE("Wobbuffet used Focus Punch!");
                 ANIMATION(ANIM_TYPE_MOVE, MOVE_FOCUS_PUNCH, player);
                 HP_BAR(opponent);
             }
@@ -42,50 +42,36 @@ SINGLE_BATTLE_TEST("Focus Punch activates only if not damaged")
 DOUBLE_BATTLE_TEST("Focus Punch activation is based on Speed")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX) { Speed(2); }
-        PLAYER(SPECIES_EXVEEMON) { Speed(3); }
-        OPPONENT(SPECIES_LOPMONX) { Speed(1); }
-        OPPONENT(SPECIES_EXVEEMON) { Speed(5); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(2); }
+        PLAYER(SPECIES_WYNAUT) { Speed(3); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(1); }
+        OPPONENT(SPECIES_WYNAUT) { Speed(5); }
     } WHEN {
         TURN { MOVE(opponentRight, MOVE_FOCUS_PUNCH, target: playerLeft); MOVE(playerRight, MOVE_FOCUS_PUNCH, target: opponentLeft); MOVE(playerLeft, MOVE_FOCUS_PUNCH, target: opponentLeft); MOVE(opponentLeft, MOVE_FOCUS_PUNCH, target: playerLeft); }
     }
     SCENE {
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FOCUS_PUNCH_SETUP, opponentRight);
-<<<<<<< HEAD
-        MESSAGE("Foe Exveemon is tightening its focus!");
-=======
-        MESSAGE("The opposing Exveemon is tightening its focus!");
->>>>>>> upstream/master
+        MESSAGE("The opposing Wynaut is tightening its focus!");
 
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FOCUS_PUNCH_SETUP, playerRight);
-        MESSAGE("Exveemon is tightening its focus!");
+        MESSAGE("Wynaut is tightening its focus!");
 
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FOCUS_PUNCH_SETUP, playerLeft);
-        MESSAGE("Lopmonx is tightening its focus!");
+        MESSAGE("Wobbuffet is tightening its focus!");
 
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FOCUS_PUNCH_SETUP, opponentLeft);
-<<<<<<< HEAD
-        MESSAGE("Foe Lopmonx is tightening its focus!");
+        MESSAGE("The opposing Wobbuffet is tightening its focus!");
 
-        MESSAGE("Foe Exveemon used Focus Punch!");
-=======
-        MESSAGE("The opposing Lopmonx is tightening its focus!");
-
-        MESSAGE("The opposing Exveemon used Focus Punch!");
->>>>>>> upstream/master
+        MESSAGE("The opposing Wynaut used Focus Punch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FOCUS_PUNCH, opponentRight);
         HP_BAR(playerLeft);
 
-        MESSAGE("Exveemon used Focus Punch!");
+        MESSAGE("Wynaut used Focus Punch!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FOCUS_PUNCH, playerRight);
         HP_BAR(opponentLeft);
 
-<<<<<<< HEAD
-        MESSAGE("Lopmonx lost its focus and couldn't move!");
-        MESSAGE("Foe Lopmonx lost its focus and couldn't move!");
-=======
-        MESSAGE("Lopmonx lost its focus and couldn't move!");
-        MESSAGE("The opposing Lopmonx lost its focus and couldn't move!");
+        MESSAGE("Wobbuffet lost its focus and couldn't move!");
+        MESSAGE("The opposing Wobbuffet lost its focus and couldn't move!");
     }
 }
 
@@ -106,7 +92,7 @@ AI_SINGLE_BATTLE_TEST("AI won't use Focus Punch if it predicts a damaging move")
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_MAGNEZONE) { Moves(MOVE_THUNDER_WAVE, MOVE_FLASH_CANNON, MOVE_DISCHARGE, MOVE_TRI_ATTACK); }
-        OPPONENT(SPECIES_ATAMADEMON) { Moves(MOVE_FOCUS_PUNCH, MOVE_SEED_BOMB); }
+        OPPONENT(SPECIES_BRELOOM) { Moves(MOVE_FOCUS_PUNCH, MOVE_SEED_BOMB); }
     } WHEN {
         TURN { MOVE(player, MOVE_DISCHARGE); EXPECT_MOVE(opponent, MOVE_FOCUS_PUNCH); }
         TURN { MOVE(player, MOVE_DISCHARGE); EXPECT_MOVE(opponent, MOVE_SEED_BOMB); }
@@ -118,12 +104,11 @@ AI_SINGLE_BATTLE_TEST("AI will Incapacitate -> Substitute -> Focus Punch if able
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT);
         PLAYER(SPECIES_MAGNEZONE) { Moves(MOVE_THUNDER_WAVE, MOVE_FLASH_CANNON, MOVE_DISCHARGE, MOVE_TRI_ATTACK); }
-        OPPONENT(SPECIES_ATAMADEMON) { Moves(MOVE_SPORE, MOVE_FOCUS_PUNCH, MOVE_SUBSTITUTE, MOVE_SEED_BOMB); }
+        OPPONENT(SPECIES_BRELOOM) { Moves(MOVE_SPORE, MOVE_FOCUS_PUNCH, MOVE_SUBSTITUTE, MOVE_SEED_BOMB); }
     } WHEN {
         TURN { MOVE(player, MOVE_DISCHARGE); EXPECT_MOVE(opponent, MOVE_SPORE); }
         TURN { MOVE(player, MOVE_DISCHARGE); EXPECT_MOVE(opponent, MOVE_SUBSTITUTE); }
         TURN { MOVE(player, MOVE_DISCHARGE); EXPECT_MOVE(opponent, MOVE_FOCUS_PUNCH); }
->>>>>>> upstream/master
     }
 }
 
@@ -134,8 +119,8 @@ AI_SINGLE_BATTLE_TEST("AI won't use status moves if the player's best attacking 
         ASSUME(GetMoveEffect(MOVE_FOCUS_PUNCH) == EFFECT_FOCUS_PUNCH);
         ASSUME(GetMoveCategory(MOVE_SWORDS_DANCE) == DAMAGE_CATEGORY_STATUS);
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
-        PLAYER(SPECIES_DRACOMON) { Moves(MOVE_FOCUS_PUNCH, MOVE_TACKLE); }
-        OPPONENT(SPECIES_PYONMON) {  Moves(MOVE_PLAY_ROUGH, MOVE_SWORDS_DANCE); }
+        PLAYER(SPECIES_SNORLAX) { Moves(MOVE_FOCUS_PUNCH, MOVE_POUND); }
+        OPPONENT(SPECIES_CLEFABLE) {  Moves(MOVE_PLAY_ROUGH, MOVE_SWORDS_DANCE); }
     } WHEN {
         TURN { MOVE(player, MOVE_FOCUS_PUNCH); EXPECT_MOVE(opponent, MOVE_PLAY_ROUGH); }
     }
