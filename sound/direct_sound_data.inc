@@ -4277,15 +4277,15 @@ Cry_Creepymon::
 	.incbin "sound/direct_sound_samples/cries/creepymon.bin"
 .endif @ P_FAMILY_BOLTMON
 
-.if P_FAMILY_PANCHAM == TRUE
+.if P_FAMILY_DEVITAMAMON == TRUE
 	.align 2
-Cry_Pancham::
-	.incbin "sound/direct_sound_samples/cries/pancham.bin"
+Cry_Devitamamon::
+	.incbin "sound/direct_sound_samples/cries/devitamamon.bin"
 
 	.align 2
 Cry_Pangoro::
 	.incbin "sound/direct_sound_samples/cries/pangoro.bin"
-.endif @ P_FAMILY_PANCHAM
+.endif @ P_FAMILY_DEVITAMAMON
 
 .if P_FAMILY_FURFROU == TRUE
 	.align 2

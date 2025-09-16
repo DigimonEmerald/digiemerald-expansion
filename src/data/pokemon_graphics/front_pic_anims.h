@@ -8339,8 +8339,8 @@ static const union AnimCmd sAnim_Creepymon_1[] =
 };
 #endif //P_FAMILY_BOLTMON
 
-#if P_FAMILY_PANCHAM
-static const union AnimCmd sAnim_Pancham_1[] =
+#if P_FAMILY_DEVITAMAMON
+static const union AnimCmd sAnim_Devitamamon_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 8),
@@ -8361,7 +8361,7 @@ static const union AnimCmd sAnim_Pangoro_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_PANCHAM
+#endif //P_FAMILY_DEVITAMAMON
 
 #if P_FAMILY_FURFROU
 static const union AnimCmd sAnim_Furfrou_1[] =
@@ -12009,10 +12009,10 @@ SINGLE_ANIMATION(Florges);
 SINGLE_ANIMATION(Boltmon);
 SINGLE_ANIMATION(Creepymon);
 #endif //P_FAMILY_BOLTMON
-#if P_FAMILY_PANCHAM
-SINGLE_ANIMATION(Pancham);
+#if P_FAMILY_DEVITAMAMON
+SINGLE_ANIMATION(Devitamamon);
 SINGLE_ANIMATION(Pangoro);
-#endif //P_FAMILY_PANCHAM
+#endif //P_FAMILY_DEVITAMAMON
 #if P_FAMILY_FURFROU
 SINGLE_ANIMATION(Furfrou);
 #endif //P_FAMILY_FURFROU

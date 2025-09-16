@@ -5011,8 +5011,8 @@ static const u16 sBoltmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_BOLTMON
 
-#if P_FAMILY_PANCHAM
-static const u16 sPanchamEggMoveLearnset[] = {
+#if P_FAMILY_DEVITAMAMON
+static const u16 sDevitamamonEggMoveLearnset[] = {
     MOVE_QUASH,
     MOVE_ME_FIRST,
     MOVE_QUICK_GUARD,
@@ -5021,7 +5021,7 @@ static const u16 sPanchamEggMoveLearnset[] = {
     MOVE_POWER_TRIP,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PANCHAM
+#endif //P_FAMILY_DEVITAMAMON
 
 #if P_FAMILY_FURFROU
 static const u16 sFurfrouEggMoveLearnset[] = {

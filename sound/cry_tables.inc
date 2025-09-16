@@ -1641,10 +1641,10 @@ gCryTable::
 	cry Cry_Boltmon
 	cry Cry_Creepymon
 .endif @ P_FAMILY_BOLTMON
-.if P_FAMILY_PANCHAM == TRUE
-	cry Cry_Pancham
+.if P_FAMILY_DEVITAMAMON == TRUE
+	cry Cry_Devitamamon
 	cry Cry_Pangoro
-.endif @ P_FAMILY_PANCHAM
+.endif @ P_FAMILY_DEVITAMAMON
 .if P_FAMILY_FURFROU == TRUE
 	cry Cry_Furfrou
 .endif @ P_FAMILY_FURFROU
@@ -4069,10 +4069,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Boltmon
 	cry_reverse Cry_Creepymon
 .endif @ P_FAMILY_BOLTMON
-.if P_FAMILY_PANCHAM == TRUE
-	cry_reverse Cry_Pancham
+.if P_FAMILY_DEVITAMAMON == TRUE
+	cry_reverse Cry_Devitamamon
 	cry_reverse Cry_Pangoro
-.endif @ P_FAMILY_PANCHAM
+.endif @ P_FAMILY_DEVITAMAMON
 .if P_FAMILY_FURFROU == TRUE
 	cry_reverse Cry_Furfrou
 .endif @ P_FAMILY_FURFROU

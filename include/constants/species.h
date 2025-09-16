@@ -706,7 +706,7 @@
 #define SPECIES_FLORGES_RED                             671
 #define SPECIES_BOLTMON                                  672
 #define SPECIES_CREEPYMON                                  673
-#define SPECIES_PANCHAM                                 674
+#define SPECIES_DEVITAMAMON                                 674
 #define SPECIES_PANGORO                                 675
 #define SPECIES_FURFROU                                 SPECIES_FURFROU_NATURAL
 #define SPECIES_FURFROU_NATURAL                         676

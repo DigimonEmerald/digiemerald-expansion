@@ -717,8 +717,8 @@
 #define P_FAMILY_FLABEBE                 TRUE
 #undef P_FAMILY_BOLTMON
 #define P_FAMILY_BOLTMON                  TRUE
-#undef P_FAMILY_PANCHAM
-#define P_FAMILY_PANCHAM                 TRUE
+#undef P_FAMILY_DEVITAMAMON
+#define P_FAMILY_DEVITAMAMON                 TRUE
 #undef P_FAMILY_FURFROU
 #define P_FAMILY_FURFROU                 TRUE
 #undef P_FAMILY_ESPURR

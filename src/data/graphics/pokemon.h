@@ -19743,20 +19743,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_BOLTMON
 
-#if P_FAMILY_PANCHAM
-    const u32 gMonFrontPic_Pancham[] = INCBIN_U32("graphics/pokemon/pancham/anim_front.4bpp.smol");
-    const u16 gMonPalette_Pancham[] = INCBIN_U16("graphics/pokemon/pancham/normal.gbapal");
-    const u32 gMonBackPic_Pancham[] = INCBIN_U32("graphics/pokemon/pancham/back.4bpp.smol");
-    const u16 gMonShinyPalette_Pancham[] = INCBIN_U16("graphics/pokemon/pancham/shiny.gbapal");
-    const u8 gMonIcon_Pancham[] = INCBIN_U8("graphics/pokemon/pancham/icon.4bpp");
+#if P_FAMILY_DEVITAMAMON
+    const u32 gMonFrontPic_Devitamamon[] = INCBIN_U32("graphics/pokemon/devitamamon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Devitamamon[] = INCBIN_U16("graphics/pokemon/devitamamon/normal.gbapal");
+    const u32 gMonBackPic_Devitamamon[] = INCBIN_U32("graphics/pokemon/devitamamon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Devitamamon[] = INCBIN_U16("graphics/pokemon/devitamamon/shiny.gbapal");
+    const u8 gMonIcon_Devitamamon[] = INCBIN_U8("graphics/pokemon/devitamamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Pancham[] = INCBIN_U8("graphics/pokemon/pancham/footprint.1bpp");
+    const u8 gMonFootprint_Devitamamon[] = INCBIN_U8("graphics/pokemon/devitamamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Pancham[] = INCBIN_COMP("graphics/pokemon/pancham/overworld.4bpp");
+    const u32 gObjectEventPic_Devitamamon[] = INCBIN_COMP("graphics/pokemon/devitamamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Pancham[] = INCBIN_U16("graphics/pokemon/pancham/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Pancham[] = INCBIN_U16("graphics/pokemon/pancham/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Devitamamon[] = INCBIN_U16("graphics/pokemon/devitamamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Devitamamon[] = INCBIN_U16("graphics/pokemon/devitamamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -19775,7 +19775,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Pangoro[] = INCBIN_U16("graphics/pokemon/pangoro/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_PANCHAM
+#endif //P_FAMILY_DEVITAMAMON
 
 #if P_FAMILY_FURFROU
     const u32 gMonFrontPic_FurfrouNatural[] = INCBIN_U32("graphics/pokemon/furfrou/anim_front.4bpp.smol");

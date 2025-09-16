@@ -519,5 +519,6 @@ Apocalymon - Litleo
 Babamon - Pyroar
 Boltmon - Skiddo
 Creepymon - Gogoat
+Devitamamon - Pancham
 
 SPECIES NAME LENGTH MAX = 13

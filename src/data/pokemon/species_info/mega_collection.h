@@ -2127,43 +2127,45 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
 #endif //P_FAMILY_BOLTMON
 
-#if P_FAMILY_PANCHAM
-    [SPECIES_PANCHAM] =
+#if P_FAMILY_DEVITAMAMON
+    [SPECIES_DEVITAMAMON] =
     {
-        .baseHP        = 67,
-        .baseAttack    = 82,
-        .baseDefense   = 62,
-        .baseSpeed     = 43,
-        .baseSpAttack  = 46,
-        .baseSpDefense = 48,
-        .types = MON_TYPES(TYPE_FIGHTING),
-        .catchRate = 220,
-        .expYield = 70,
-        .evYield_Attack = 1,
+        .baseHP        = 80,
+        .baseAttack    = 150,
+        .baseDefense   = 50,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 200,
+        .types = MON_TYPES(TYPE_DARK, TYPE_GHOST),
+        .attribute = TYPE_DATA,   
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_Attack = 2,
+        .evYield_SpDefense = 4,
         .itemRare = ITEM_MENTAL_HERB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_IRON_FIST, ABILITY_MOLD_BREAKER, ABILITY_SCRAPPY },
+        .abilities = { ABILITY_BAD_DREAMS, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Pancham"),
-        .cryId = CRY_PANCHAM,
-        .natDexNum = NATIONAL_DEX_PANCHAM,
-        .categoryName = _("Playful"),
-        .height = 6,
-        .weight = 80,
+        .speciesName = _("Devitamamon"),
+        .cryId = CRY_DEVITAMAMON,
+        .natDexNum = NATIONAL_DEX_DEVITAMAMON,
+        .categoryName = _("Pandoras"),
+        .height = 30,
+        .weight = 531,
         .description = COMPOUND_STRING(
-            "There's no point to the leaf in its mouth,\n"
-            "aside from an effort to look cool. It's\n"
-            "mischievous, so it's not well suited to\n"
-            "inexperienced Trainers."),
+            "Devitamamon is considered to be the\n"
+            "Digital Worlds 'Pandoras Box', filled\n"
+            "all evils. Anything it touches is\n"
+            "irreversibly corrupted with its hatred."),
         .pokemonScale = 422,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Pancham,
+        .frontPic = gMonFrontPic_Devitamamon,
         .frontPicSize = MON_COORDS_SIZE(32, 48),
         .frontPicYOffset = 12,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2175,29 +2177,29 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 8),
         ),
         .frontAnimId = ANIM_H_STRETCH,
-        .backPic = gMonBackPic_Pancham,
+        .backPic = gMonBackPic_Devitamamon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_CIRCLE_COUNTERCLOCKWISE,
-        .palette = gMonPalette_Pancham,
-        .shinyPalette = gMonShinyPalette_Pancham,
-        .iconSprite = gMonIcon_Pancham,
+        .palette = gMonPalette_Devitamamon,
+        .shinyPalette = gMonShinyPalette_Devitamamon,
+        .iconSprite = gMonIcon_Devitamamon,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(-2, 2, SHADOW_SIZE_S)
-        FOOTPRINT(Pancham)
+        FOOTPRINT(Devitamamon)
         OVERWORLD(
-            sPicTable_Pancham,
+            sPicTable_Devitamamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Pancham,
-            gShinyOverworldPalette_Pancham
+            gOverworldPalette_Devitamamon,
+            gShinyOverworldPalette_Devitamamon
         )
-        .levelUpLearnset = sPanchamLevelUpLearnset,
-        .teachableLearnset = sPanchamTeachableLearnset,
-        .eggMoveLearnset = sPanchamEggMoveLearnset,
+        .levelUpLearnset = sDevitamamonLevelUpLearnset,
+        .teachableLearnset = sDevitamamonTeachableLearnset,
+        .eggMoveLearnset = sDevitamamonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_PANGORO, CONDITIONS({IF_TYPE_IN_PARTY, TYPE_DARK})}),
     },
 
@@ -2271,7 +2273,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sPangoroLevelUpLearnset,
         .teachableLearnset = sPangoroTeachableLearnset,
     },
-#endif //P_FAMILY_PANCHAM
+#endif //P_FAMILY_DEVITAMAMON
 
 #if P_FAMILY_FURFROU
 #define FURFROU_MISC_INFO(_form, _noFlip, frontWidth, frontYOffset, backWidth, backYOffset, _iconIdx)   \

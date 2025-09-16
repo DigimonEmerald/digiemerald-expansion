@@ -27043,8 +27043,8 @@ static const u16 sCreepymonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BOLTMON
 
-#if P_FAMILY_PANCHAM
-static const u16 sPanchamTeachableLearnset[] = {
+#if P_FAMILY_DEVITAMAMON
+static const u16 sDevitamamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
@@ -27127,7 +27127,7 @@ static const u16 sPangoroTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PANCHAM
+#endif //P_FAMILY_DEVITAMAMON
 
 #if P_FAMILY_FURFROU
 static const u16 sFurfrouTeachableLearnset[] = {
