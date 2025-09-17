@@ -16857,33 +16857,33 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Lilligant[] = INCBIN_U32("graphics/pokemon/lilligant/anim_front.4bpp.smol");
-    const u16 gMonPalette_Lilligant[] = INCBIN_U16("graphics/pokemon/lilligant/normal.gbapal");
-    const u32 gMonBackPic_Lilligant[] = INCBIN_U32("graphics/pokemon/lilligant/back.4bpp.smol");
-    const u16 gMonShinyPalette_Lilligant[] = INCBIN_U16("graphics/pokemon/lilligant/shiny.gbapal");
-    const u8 gMonIcon_Lilligant[] = INCBIN_U8("graphics/pokemon/lilligant/icon.4bpp");
+    const u32 gMonFrontPic_Garudamon[] = INCBIN_U32("graphics/pokemon/garudamon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Garudamon[] = INCBIN_U16("graphics/pokemon/garudamon/normal.gbapal");
+    const u32 gMonBackPic_Garudamon[] = INCBIN_U32("graphics/pokemon/garudamon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Garudamon[] = INCBIN_U16("graphics/pokemon/garudamon/shiny.gbapal");
+    const u8 gMonIcon_Garudamon[] = INCBIN_U8("graphics/pokemon/garudamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Lilligant[] = INCBIN_U8("graphics/pokemon/lilligant/footprint.1bpp");
+    const u8 gMonFootprint_Garudamon[] = INCBIN_U8("graphics/pokemon/garudamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Lilligant[] = INCBIN_COMP("graphics/pokemon/lilligant/overworld.4bpp");
+    const u32 gObjectEventPic_Garudamon[] = INCBIN_COMP("graphics/pokemon/garudamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Lilligant[] = INCBIN_U16("graphics/pokemon/lilligant/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Lilligant[] = INCBIN_U16("graphics/pokemon/lilligant/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Garudamon[] = INCBIN_U16("graphics/pokemon/garudamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Garudamon[] = INCBIN_U16("graphics/pokemon/garudamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_HISUIAN_FORMS
-    const u32 gMonFrontPic_LilligantHisui[] = INCBIN_U32("graphics/pokemon/lilligant/hisui/front.4bpp.smol");
-    const u16 gMonPalette_LilligantHisui[] = INCBIN_U16("graphics/pokemon/lilligant/hisui/normal.gbapal");
-    const u32 gMonBackPic_LilligantHisui[] = INCBIN_U32("graphics/pokemon/lilligant/hisui/back.4bpp.smol");
-    const u16 gMonShinyPalette_LilligantHisui[] = INCBIN_U16("graphics/pokemon/lilligant/hisui/shiny.gbapal");
-    const u8 gMonIcon_LilligantHisui[] = INCBIN_U8("graphics/pokemon/lilligant/hisui/icon.4bpp");
+    const u32 gMonFrontPic_GarudamonHisui[] = INCBIN_U32("graphics/pokemon/garudamon/hisui/front.4bpp.smol");
+    const u16 gMonPalette_GarudamonHisui[] = INCBIN_U16("graphics/pokemon/garudamon/hisui/normal.gbapal");
+    const u32 gMonBackPic_GarudamonHisui[] = INCBIN_U32("graphics/pokemon/garudamon/hisui/back.4bpp.smol");
+    const u16 gMonShinyPalette_GarudamonHisui[] = INCBIN_U16("graphics/pokemon/garudamon/hisui/shiny.gbapal");
+    const u8 gMonIcon_GarudamonHisui[] = INCBIN_U8("graphics/pokemon/garudamon/hisui/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_LilligantHisui[] = INCBIN_COMP("graphics/pokemon/lilligant/hisui/overworld.4bpp");
+    const u32 gObjectEventPic_GarudamonHisui[] = INCBIN_COMP("graphics/pokemon/garudamon/hisui/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_LilligantHisui[] = INCBIN_U16("graphics/pokemon/lilligant/hisui/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_LilligantHisui[] = INCBIN_U16("graphics/pokemon/lilligant/hisui/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_GarudamonHisui[] = INCBIN_U16("graphics/pokemon/garudamon/hisui/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_GarudamonHisui[] = INCBIN_U16("graphics/pokemon/garudamon/hisui/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_HISUIAN_FORMS

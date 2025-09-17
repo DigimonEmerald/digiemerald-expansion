@@ -4223,47 +4223,50 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sPhantomonLevelUpLearnset,
         .teachableLearnset = sPhantomonTeachableLearnset,
         .eggMoveLearnset = sPhantomonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_LILLIGANT},
-                                {EVO_NONE, 0, SPECIES_LILLIGANT_HISUI}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_GARUDAMON},
+                                {EVO_NONE, 0, SPECIES_GARUDAMON_HISUI}),
     },
 
-    [SPECIES_LILLIGANT] =
+    [SPECIES_GARUDAMON] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 60,
-        .baseDefense   = 75,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 110,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_GRASS),
-        .catchRate = 75,
-        .expYield = 168,
+        .baseHP        = 80,
+        .baseAttack    = 100,
+        .baseDefense   = 80,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_FLYING),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_Attack = 1,
         .evYield_SpAttack = 2,
+        .evYield_SpDefense = 2,
         .itemRare = ITEM_ABSORB_BULB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
-        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_OWN_TEMPO, ABILITY_LEAF_GUARD },
-        .bodyColor = BODY_COLOR_GREEN,
+        .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_WIND_RIDER, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_RED,
         .noFlip = TRUE,
-        .speciesName = _("Lilligant"),
-        .cryId = CRY_LILLIGANT,
-        .natDexNum = NATIONAL_DEX_LILLIGANT,
-        .categoryName = _("Flowering"),
-        .height = 11,
-        .weight = 163,
+        .speciesName = _("Garudamon"),
+        .cryId = CRY_GARUDAMON,
+        .natDexNum = NATIONAL_DEX_GARUDAMON,
+        .categoryName = _("Hero"),
+        .height = 68,
+        .weight = 2163,
         .description = COMPOUND_STRING(
-            "Even veteran Trainers face a challenge\n"
-            "in getting its beautiful flower to bloom.\n"
-            "It withers away if a trainer does not\n"
-            "take good care of it."),
+            "The intelligence and combat ability of\n"
+            "Garudamon is the best of Flying-type\n"
+            "Digimon. Only chosen Digimon are\n"
+            "believed to be able to evolve to it."),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Lilligant,
+        .frontPic = gMonFrontPic_Garudamon,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 1,
         .frontAnimFrames = ANIM_FRAMES(
@@ -4272,33 +4275,33 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Lilligant,
+        .backPic = gMonBackPic_Garudamon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_SHRINK_GROW,
-        .palette = gMonPalette_Lilligant,
-        .shinyPalette = gMonShinyPalette_Lilligant,
-        .iconSprite = gMonIcon_Lilligant,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Garudamon,
+        .shinyPalette = gMonShinyPalette_Garudamon,
+        .iconSprite = gMonIcon_Garudamon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 13, SHADOW_SIZE_M)
-        FOOTPRINT(Lilligant)
+        FOOTPRINT(Garudamon)
         OVERWORLD(
-            sPicTable_Lilligant,
+            sPicTable_Garudamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Lilligant,
-            gShinyOverworldPalette_Lilligant
+            gOverworldPalette_Garudamon,
+            gShinyOverworldPalette_Garudamon
         )
-        .levelUpLearnset = sLilligantLevelUpLearnset,
-        .teachableLearnset = sLilligantTeachableLearnset,
-        .formSpeciesIdTable = sLilligantFormSpeciesIdTable,
+        .levelUpLearnset = sGarudamonLevelUpLearnset,
+        .teachableLearnset = sGarudamonTeachableLearnset,
+        .formSpeciesIdTable = sGarudamonFormSpeciesIdTable,
     },
 
 #if P_HISUIAN_FORMS
-    [SPECIES_LILLIGANT_HISUI] =
+    [SPECIES_GARUDAMON_HISUI] =
     {
         .baseHP        = 70,
         .baseAttack    = 105,
@@ -4320,9 +4323,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .abilities = { ABILITY_CHLOROPHYLL, ABILITY_HUSTLE, ABILITY_LEAF_GUARD },
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
-        .speciesName = _("Lilligant"),
-        .cryId = CRY_LILLIGANT,
-        .natDexNum = NATIONAL_DEX_LILLIGANT,
+        .speciesName = _("Garudamon"),
+        .cryId = CRY_GARUDAMON,
+        .natDexNum = NATIONAL_DEX_GARUDAMON,
         .categoryName = _("Spinning"),
         .height = 12,
         .weight = 192,
@@ -4335,35 +4338,35 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_LilligantHisui,
+        .frontPic = gMonFrontPic_GarudamonHisui,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_LilligantHisui,
+        .backPic = gMonBackPic_GarudamonHisui,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 5,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_LilligantHisui,
-        .shinyPalette = gMonShinyPalette_LilligantHisui,
-        .iconSprite = gMonIcon_LilligantHisui,
+        .palette = gMonPalette_GarudamonHisui,
+        .shinyPalette = gMonShinyPalette_GarudamonHisui,
+        .iconSprite = gMonIcon_GarudamonHisui,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-3, 13, SHADOW_SIZE_S)
-        FOOTPRINT(Lilligant)
+        FOOTPRINT(Garudamon)
         OVERWORLD(
-            sPicTable_LilligantHisui,
+            sPicTable_GarudamonHisui,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_LilligantHisui,
-            gShinyOverworldPalette_LilligantHisui
+            gOverworldPalette_GarudamonHisui,
+            gShinyOverworldPalette_GarudamonHisui
         )
         .isHisuianForm = TRUE,
-        .levelUpLearnset = sLilligantHisuiLevelUpLearnset,
-        .teachableLearnset = sLilligantHisuiTeachableLearnset,
-        .formSpeciesIdTable = sLilligantFormSpeciesIdTable,
+        .levelUpLearnset = sGarudamonHisuiLevelUpLearnset,
+        .teachableLearnset = sGarudamonHisuiTeachableLearnset,
+        .formSpeciesIdTable = sGarudamonFormSpeciesIdTable,
     },
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_PHANTOMON

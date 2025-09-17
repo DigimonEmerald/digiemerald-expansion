@@ -22698,7 +22698,7 @@ static const u16 sPhantomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sLilligantTeachableLearnset[] = {
+static const u16 sGarudamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,
@@ -22725,7 +22725,7 @@ static const u16 sLilligantTeachableLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const u16 sLilligantHisuiTeachableLearnset[] = {
+static const u16 sGarudamonHisuiTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BRICK_BREAK,
     MOVE_BULLET_SEED,

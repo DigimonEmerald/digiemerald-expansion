@@ -6838,7 +6838,7 @@ static const union AnimCmd sAnim_Phantomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Lilligant_1[] =
+static const union AnimCmd sAnim_Garudamon_1[] =
 {
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_FRAME(1, 10),
@@ -6847,7 +6847,7 @@ static const union AnimCmd sAnim_Lilligant_1[] =
 };
 
 #if P_HISUIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(LilligantHisui);
+PLACEHOLDER_ANIM_SINGLE_FRAME(GarudamonHisui);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_PHANTOMON
 
@@ -11709,9 +11709,9 @@ SINGLE_ANIMATION(Deramon);
 #endif //P_FAMILY_SKULLMERAMON
 #if P_FAMILY_PHANTOMON
 SINGLE_ANIMATION(Phantomon);
-SINGLE_ANIMATION(Lilligant);
+SINGLE_ANIMATION(Garudamon);
 #if P_HISUIAN_FORMS
-SINGLE_ANIMATION(LilligantHisui);
+SINGLE_ANIMATION(GarudamonHisui);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_PHANTOMON
 #if P_FAMILY_BASCULIN

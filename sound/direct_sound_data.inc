@@ -3598,8 +3598,8 @@ Cry_Phantomon::
 	.incbin "sound/direct_sound_samples/cries/phantomon.bin"
 
 	.align 2
-Cry_Lilligant::
-	.incbin "sound/direct_sound_samples/cries/lilligant.bin"
+Cry_Garudamon::
+	.incbin "sound/direct_sound_samples/cries/garudamon.bin"
 .endif @ P_FAMILY_PHANTOMON
 
 .if P_FAMILY_BASCULIN == TRUE

@@ -1366,7 +1366,7 @@ gCryTable::
 .endif @ P_FAMILY_SKULLMERAMON
 .if P_FAMILY_PHANTOMON == TRUE
 	cry Cry_Phantomon
-	cry Cry_Lilligant
+	cry Cry_Garudamon
 .endif @ P_FAMILY_PHANTOMON
 .if P_FAMILY_BASCULIN == TRUE
 	cry Cry_Basculin
@@ -3794,7 +3794,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_SKULLMERAMON
 .if P_FAMILY_PHANTOMON == TRUE
 	cry_reverse Cry_Phantomon
-	cry_reverse Cry_Lilligant
+	cry_reverse Cry_Garudamon
 .endif @ P_FAMILY_PHANTOMON
 .if P_FAMILY_BASCULIN == TRUE
 	cry_reverse Cry_Basculin

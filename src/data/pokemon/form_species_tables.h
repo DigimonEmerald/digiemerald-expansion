@@ -1163,10 +1163,10 @@ static const u16 sDatamonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_DATAMON
 
 #if P_FAMILY_PHANTOMON
-static const u16 sLilligantFormSpeciesIdTable[] = {
-    SPECIES_LILLIGANT,
+static const u16 sGarudamonFormSpeciesIdTable[] = {
+    SPECIES_GARUDAMON,
 #if P_HISUIAN_FORMS
-    SPECIES_LILLIGANT_HISUI,
+    SPECIES_GARUDAMON_HISUI,
 #endif
     FORM_SPECIES_END,
 };

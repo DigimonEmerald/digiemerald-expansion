@@ -3943,12 +3943,12 @@ static const struct SpriteFrameImage sPicTable_Deramon[] = {
 static const struct SpriteFrameImage sPicTable_Phantomon[] = {
     overworld_ascending_frames(gObjectEventPic_Phantomon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Lilligant[] = {
-    overworld_ascending_frames(gObjectEventPic_Lilligant, 4, 4),
+static const struct SpriteFrameImage sPicTable_Garudamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Garudamon, 4, 4),
 };
 #if P_HISUIAN_FORMS
-static const struct SpriteFrameImage sPicTable_LilligantHisui[] = {
-    overworld_ascending_frames(gObjectEventPic_LilligantHisui, 4, 4),
+static const struct SpriteFrameImage sPicTable_GarudamonHisui[] = {
+    overworld_ascending_frames(gObjectEventPic_GarudamonHisui, 4, 4),
 };
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_PHANTOMON

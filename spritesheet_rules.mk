@@ -2907,7 +2907,7 @@ $(POKEMONGFXDIR)/deramon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/phantomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/lilligant/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/garudamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/basculin/overworld.4bpp: %.4bpp: %.png
@@ -4101,7 +4101,7 @@ $(POKEMONGFXDIR)/zoroark/hisui/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/vademon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/lilligant/hisui/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/garudamon/hisui/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/sliggoo/hisui/overworld.4bpp: %.4bpp: %.png

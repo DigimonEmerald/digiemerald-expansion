@@ -566,7 +566,7 @@
 #define SPECIES_SKULLMERAMON                                546
 #define SPECIES_DERAMON                              547
 #define SPECIES_PHANTOMON                                 548
-#define SPECIES_LILLIGANT                               549
+#define SPECIES_GARUDAMON                               549
 #define SPECIES_BASCULIN                                SPECIES_BASCULIN_RED_STRIPED
 #define SPECIES_BASCULIN_RED_STRIPED                    550
 #define SPECIES_SANDILE                                 551
@@ -1066,7 +1066,7 @@
 #define SPECIES_MONMON_HISUI                          998
 #define SPECIES_MUSHROOMON_HISUI                           999
 #define SPECIES_VADEMON                          1000
-#define SPECIES_LILLIGANT_HISUI                         1001
+#define SPECIES_GARUDAMON_HISUI                         1001
 #define SPECIES_ZORUA_HISUI                             1002
 #define SPECIES_ZOROARK_HISUI                           1003
 #define SPECIES_BRAVIARY_HISUI                          1004
