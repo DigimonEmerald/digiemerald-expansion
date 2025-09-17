@@ -16840,20 +16840,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_SKULLMERAMON
 
-#if P_FAMILY_PETILIL
-    const u32 gMonFrontPic_Petilil[] = INCBIN_U32("graphics/pokemon/petilil/anim_front.4bpp.smol");
-    const u16 gMonPalette_Petilil[] = INCBIN_U16("graphics/pokemon/petilil/normal.gbapal");
-    const u32 gMonBackPic_Petilil[] = INCBIN_U32("graphics/pokemon/petilil/back.4bpp.smol");
-    const u16 gMonShinyPalette_Petilil[] = INCBIN_U16("graphics/pokemon/petilil/shiny.gbapal");
-    const u8 gMonIcon_Petilil[] = INCBIN_U8("graphics/pokemon/petilil/icon.4bpp");
+#if P_FAMILY_PHANTOMON
+    const u32 gMonFrontPic_Phantomon[] = INCBIN_U32("graphics/pokemon/phantomon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Phantomon[] = INCBIN_U16("graphics/pokemon/phantomon/normal.gbapal");
+    const u32 gMonBackPic_Phantomon[] = INCBIN_U32("graphics/pokemon/phantomon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Phantomon[] = INCBIN_U16("graphics/pokemon/phantomon/shiny.gbapal");
+    const u8 gMonIcon_Phantomon[] = INCBIN_U8("graphics/pokemon/phantomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Petilil[] = INCBIN_U8("graphics/pokemon/petilil/footprint.1bpp");
+    const u8 gMonFootprint_Phantomon[] = INCBIN_U8("graphics/pokemon/phantomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Petilil[] = INCBIN_COMP("graphics/pokemon/petilil/overworld.4bpp");
+    const u32 gObjectEventPic_Phantomon[] = INCBIN_COMP("graphics/pokemon/phantomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Petilil[] = INCBIN_U16("graphics/pokemon/petilil/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Petilil[] = INCBIN_U16("graphics/pokemon/petilil/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Phantomon[] = INCBIN_U16("graphics/pokemon/phantomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Phantomon[] = INCBIN_U16("graphics/pokemon/phantomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16887,7 +16887,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_PETILIL
+#endif //P_FAMILY_PHANTOMON
 
 #if P_FAMILY_BASCULIN
     const u32 gMonFrontPic_BasculinRedStriped[] = INCBIN_U32("graphics/pokemon/basculin/anim_front.4bpp.smol");

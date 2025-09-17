@@ -6827,8 +6827,8 @@ static const union AnimCmd sAnim_Deramon_1[] =
 };
 #endif //P_FAMILY_SKULLMERAMON
 
-#if P_FAMILY_PETILIL
-static const union AnimCmd sAnim_Petilil_1[] =
+#if P_FAMILY_PHANTOMON
+static const union AnimCmd sAnim_Phantomon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 25),
@@ -6849,7 +6849,7 @@ static const union AnimCmd sAnim_Lilligant_1[] =
 #if P_HISUIAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(LilligantHisui);
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_PETILIL
+#endif //P_FAMILY_PHANTOMON
 
 #if P_FAMILY_BASCULIN
 static const union AnimCmd sAnim_Basculin_1[] =
@@ -11707,13 +11707,13 @@ SINGLE_ANIMATION(Cyberdramon);
 SINGLE_ANIMATION(Skullmeramon);
 SINGLE_ANIMATION(Deramon);
 #endif //P_FAMILY_SKULLMERAMON
-#if P_FAMILY_PETILIL
-SINGLE_ANIMATION(Petilil);
+#if P_FAMILY_PHANTOMON
+SINGLE_ANIMATION(Phantomon);
 SINGLE_ANIMATION(Lilligant);
 #if P_HISUIAN_FORMS
 SINGLE_ANIMATION(LilligantHisui);
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_PETILIL
+#endif //P_FAMILY_PHANTOMON
 #if P_FAMILY_BASCULIN
 SINGLE_ANIMATION(Basculin);
 #if P_HISUIAN_FORMS

@@ -12919,8 +12919,8 @@ static const struct LevelUpMove sDeramonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_SKULLMERAMON
 
-#if P_FAMILY_PETILIL
-static const struct LevelUpMove sPetililLevelUpLearnset[] = {
+#if P_FAMILY_PHANTOMON
+static const struct LevelUpMove sPhantomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 4, MOVE_GROWTH),
     LEVEL_UP_MOVE( 8, MOVE_LEECH_SEED),
@@ -12971,7 +12971,7 @@ static const struct LevelUpMove sLilligantHisuiLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_PETILIL
+#endif //P_FAMILY_PHANTOMON
 
 #if P_FAMILY_BASCULIN
 static const struct LevelUpMove sBasculinLevelUpLearnset[] = {

@@ -22675,8 +22675,8 @@ static const u16 sDeramonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SKULLMERAMON
 
-#if P_FAMILY_PETILIL
-static const u16 sPetililTeachableLearnset[] = {
+#if P_FAMILY_PHANTOMON
+static const u16 sPhantomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,
@@ -22747,7 +22747,7 @@ static const u16 sLilligantHisuiTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_PETILIL
+#endif //P_FAMILY_PHANTOMON
 
 #if P_FAMILY_BASCULIN
 static const u16 sBasculinTeachableLearnset[] = {

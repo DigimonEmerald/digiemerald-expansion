@@ -4248,8 +4248,8 @@ static const u16 sSkullmeramonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_SKULLMERAMON
 
-#if P_FAMILY_PETILIL
-static const u16 sPetililEggMoveLearnset[] = {
+#if P_FAMILY_PHANTOMON
+static const u16 sPhantomonEggMoveLearnset[] = {
     MOVE_NATURAL_GIFT,
     MOVE_CHARM,
     MOVE_ENDURE,
@@ -4262,7 +4262,7 @@ static const u16 sPetililEggMoveLearnset[] = {
     MOVE_ENCORE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PETILIL
+#endif //P_FAMILY_PHANTOMON
 
 #if P_FAMILY_BASCULIN
 static const u16 sBasculinEggMoveLearnset[] = {

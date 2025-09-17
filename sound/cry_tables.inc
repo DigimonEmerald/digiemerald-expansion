@@ -1364,10 +1364,10 @@ gCryTable::
 	cry Cry_Skullmeramon
 	cry Cry_Deramon
 .endif @ P_FAMILY_SKULLMERAMON
-.if P_FAMILY_PETILIL == TRUE
-	cry Cry_Petilil
+.if P_FAMILY_PHANTOMON == TRUE
+	cry Cry_Phantomon
 	cry Cry_Lilligant
-.endif @ P_FAMILY_PETILIL
+.endif @ P_FAMILY_PHANTOMON
 .if P_FAMILY_BASCULIN == TRUE
 	cry Cry_Basculin
 .if P_HISUIAN_FORMS == TRUE
@@ -3792,10 +3792,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Skullmeramon
 	cry_reverse Cry_Deramon
 .endif @ P_FAMILY_SKULLMERAMON
-.if P_FAMILY_PETILIL == TRUE
-	cry_reverse Cry_Petilil
+.if P_FAMILY_PHANTOMON == TRUE
+	cry_reverse Cry_Phantomon
 	cry_reverse Cry_Lilligant
-.endif @ P_FAMILY_PETILIL
+.endif @ P_FAMILY_PHANTOMON
 .if P_FAMILY_BASCULIN == TRUE
 	cry_reverse Cry_Basculin
 .if P_HISUIAN_FORMS == TRUE

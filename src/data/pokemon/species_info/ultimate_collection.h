@@ -4150,43 +4150,45 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_SKULLMERAMON
 
-#if P_FAMILY_PETILIL
-    [SPECIES_PETILIL] =
+#if P_FAMILY_PHANTOMON
+    [SPECIES_PHANTOMON] =
     {
         .baseHP        = 45,
-        .baseAttack    = 35,
-        .baseDefense   = 50,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_GRASS),
-        .catchRate = 190,
-        .expYield = 56,
-        .evYield_SpAttack = 1,
+        .baseAttack    = 85,
+        .baseDefense   = 115,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 115,
+        .types = MON_TYPES(TYPE_GHOST),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_Attack = 2,
+        .evYield_SpAttack = 3,
         .itemRare = ITEM_ABSORB_BULB,
-        .genderRatio = MON_FEMALE,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
-        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_OWN_TEMPO, ABILITY_LEAF_GUARD },
-        .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Petilil"),
-        .cryId = CRY_PETILIL,
-        .natDexNum = NATIONAL_DEX_PETILIL,
-        .categoryName = _("Bulb"),
-        .height = 5,
-        .weight = 66,
+        .abilities = { ABILITY_PRESSURE, ABILITY_CURSED_BODY, ABILITY_SHADOW_TAG },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Phantomon"),
+        .cryId = CRY_PHANTOMON,
+        .natDexNum = NATIONAL_DEX_PHANTOMON,
+        .categoryName = _("Reaper"),
+        .height = 14,
+        .weight = 253,
         .description = COMPOUND_STRING(
-            "By pruning the leaves on its head with\n"
-            "regularity, this Pokémon can be grown\n"
-            "into a fine plump shape. These bitter\n"
-            "leaves refresh those who eat them."),
+            "With the crystal eye that hangs from\n"
+            "its chest, Phantomon is able to forsee\n"
+            "the future. The inner cloth of its cloak\n"
+            "is said to lead to a different dimension."),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Petilil,
+        .frontPic = gMonFrontPic_Phantomon,
         .frontPicSize = MON_COORDS_SIZE(32, 48),
         .frontPicYOffset = 12,
         .frontAnimFrames = ANIM_FRAMES(
@@ -4198,29 +4200,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ),
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
         .enemyMonElevation = 7,
-        .backPic = gMonBackPic_Petilil,
+        .backPic = gMonBackPic_Phantomon,
         .backPicSize = MON_COORDS_SIZE(40, 56),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Petilil,
-        .shinyPalette = gMonShinyPalette_Petilil,
-        .iconSprite = gMonIcon_Petilil,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Phantomon,
+        .shinyPalette = gMonShinyPalette_Phantomon,
+        .iconSprite = gMonIcon_Phantomon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(-2, 6, SHADOW_SIZE_S)
-        FOOTPRINT(Petilil)
+        FOOTPRINT(Phantomon)
         OVERWORLD(
-            sPicTable_Petilil,
+            sPicTable_Phantomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Petilil,
-            gShinyOverworldPalette_Petilil
+            gOverworldPalette_Phantomon,
+            gShinyOverworldPalette_Phantomon
         )
-        .levelUpLearnset = sPetililLevelUpLearnset,
-        .teachableLearnset = sPetililTeachableLearnset,
-        .eggMoveLearnset = sPetililEggMoveLearnset,
+        .levelUpLearnset = sPhantomonLevelUpLearnset,
+        .teachableLearnset = sPhantomonTeachableLearnset,
+        .eggMoveLearnset = sPhantomonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_LILLIGANT},
                                 {EVO_NONE, 0, SPECIES_LILLIGANT_HISUI}),
     },
@@ -4238,7 +4240,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .expYield = 168,
         .evYield_SpAttack = 2,
         .itemRare = ITEM_ABSORB_BULB,
-        .genderRatio = MON_FEMALE,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
@@ -4310,7 +4312,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .evYield_Attack = 1,
         .evYield_Speed = 1,
         .itemRare = ITEM_ABSORB_BULB,
-        .genderRatio = MON_FEMALE,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
@@ -4364,7 +4366,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .formSpeciesIdTable = sLilligantFormSpeciesIdTable,
     },
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_PETILIL
+#endif //P_FAMILY_PHANTOMON
 
 #if P_FAMILY_BASCULIN
     [SPECIES_BASCULIN_RED_STRIPED] =
@@ -4568,7 +4570,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .eggMoveLearnset = sBasculinWhiteStripedEggMoveLearnset,
         .formSpeciesIdTable = sBasculinFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_BASCULEGION_M, CONDITIONS({IF_RECOIL_DAMAGE_GE, 294}, {IF_GENDER, MON_GENDERLESS})},
-                                {EVO_LEVEL, 0, SPECIES_BASCULEGION_F, CONDITIONS({IF_RECOIL_DAMAGE_GE, 294}, {IF_GENDER, MON_FEMALE})}),
+                                {EVO_LEVEL, 0, SPECIES_BASCULEGION_F, CONDITIONS({IF_RECOIL_DAMAGE_GE, 294}, {IF_GENDER, MON_GENDERLESS})}),
     },
 
     [SPECIES_BASCULEGION_M] =
@@ -4648,7 +4650,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .catchRate = 95,
         .expYield = 265,
         .evYield_HP = 3,
-        .genderRatio = MON_FEMALE,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
@@ -11533,7 +11535,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .catchRate = 190,
         .expYield = 74,
         .evYield_Defense = 1,
-        .genderRatio = MON_FEMALE,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
@@ -11602,7 +11604,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .catchRate = 60,
         .expYield = 179,
         .evYield_SpAttack = 2,
-        .genderRatio = MON_FEMALE,
+        .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = 35,
         .growthRate = GROWTH_SLOW,

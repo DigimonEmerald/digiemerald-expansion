@@ -565,7 +565,7 @@
 #define SPECIES_CYBERDRAMON                               545
 #define SPECIES_SKULLMERAMON                                546
 #define SPECIES_DERAMON                              547
-#define SPECIES_PETILIL                                 548
+#define SPECIES_PHANTOMON                                 548
 #define SPECIES_LILLIGANT                               549
 #define SPECIES_BASCULIN                                SPECIES_BASCULIN_RED_STRIPED
 #define SPECIES_BASCULIN_RED_STRIPED                    550

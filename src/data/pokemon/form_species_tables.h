@@ -1162,7 +1162,7 @@ static const u16 sDatamonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_DATAMON
 
-#if P_FAMILY_PETILIL
+#if P_FAMILY_PHANTOMON
 static const u16 sLilligantFormSpeciesIdTable[] = {
     SPECIES_LILLIGANT,
 #if P_HISUIAN_FORMS
@@ -1170,7 +1170,7 @@ static const u16 sLilligantFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_PETILIL
+#endif //P_FAMILY_PHANTOMON
 
 #if P_FAMILY_BASCULIN
 static const u16 sBasculinFormSpeciesIdTable[] = {

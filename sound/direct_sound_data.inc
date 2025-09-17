@@ -3592,15 +3592,15 @@ Cry_Deramon::
 	.incbin "sound/direct_sound_samples/cries/deramon.bin"
 .endif @ P_FAMILY_SKULLMERAMON
 
-.if P_FAMILY_PETILIL == TRUE
+.if P_FAMILY_PHANTOMON == TRUE
 	.align 2
-Cry_Petilil::
-	.incbin "sound/direct_sound_samples/cries/petilil.bin"
+Cry_Phantomon::
+	.incbin "sound/direct_sound_samples/cries/phantomon.bin"
 
 	.align 2
 Cry_Lilligant::
 	.incbin "sound/direct_sound_samples/cries/lilligant.bin"
-.endif @ P_FAMILY_PETILIL
+.endif @ P_FAMILY_PHANTOMON
 
 .if P_FAMILY_BASCULIN == TRUE
 	.align 2
