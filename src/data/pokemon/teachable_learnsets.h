@@ -27153,8 +27153,8 @@ static const u16 sFurfrouTeachableLearnset[] = {
 };
 #endif //P_FAMILY_FURFROU
 
-#if P_FAMILY_ESPURR
-static const u16 sEspurrTeachableLearnset[] = {
+#if P_FAMILY_GOLDRAMON
+static const u16 sGoldramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_CUT,
@@ -27259,7 +27259,7 @@ static const u16 sMeowsticFTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ESPURR
+#endif //P_FAMILY_GOLDRAMON
 
 #if P_FAMILY_HONEDGE
 static const u16 sHonedgeTeachableLearnset[] = {

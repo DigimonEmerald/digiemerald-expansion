@@ -2354,42 +2354,45 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     [SPECIES_FURFROU_PHARAOH]   = FURFROU_MISC_INFO(Pharaoh,   FALSE, 48, 2, 56, 1, 0),
 #endif //P_FAMILY_FURFROU
 
-#if P_FAMILY_ESPURR
-    [SPECIES_ESPURR] =
+#if P_FAMILY_GOLDRAMON
+    [SPECIES_GOLDRAMON] =
     {
-        .baseHP        = 62,
-        .baseAttack    = 48,
-        .baseDefense   = 54,
-        .baseSpeed     = 68,
-        .baseSpAttack  = 63,
-        .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_PSYCHIC),
-        .catchRate = 190,
-        .expYield = 71,
+        .baseHP        = 105,
+        .baseAttack    = 160,
+        .baseDefense   = 60,
+        .baseSpeed     = 130,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 140,
+        .types = MON_TYPES(TYPE_LIGHT, TYPE_DRAGON),
+        .attribute = TYPE_VACCINE,   
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_Attack = 4,
         .evYield_Speed = 1,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_KEEN_EYE, ABILITY_INFILTRATOR, ABILITY_OWN_TEMPO },
-        .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Espurr"),
-        .cryId = CRY_ESPURR,
-        .natDexNum = NATIONAL_DEX_ESPURR,
-        .categoryName = _("Restraint"),
-        .height = 3,
-        .weight = 35,
+        .abilities = { ABILITY_HEALER, ABILITY_NONE, ABILITY_NONE }, // Sealed Fists
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Goldramon"),
+        .cryId = CRY_GOLDRAMON,
+        .natDexNum = NATIONAL_DEX_GOLDRAMON,
+        .categoryName = _("Deity"),
+        .height = 6000,
+        .weight = 635673,
         .description = COMPOUND_STRING(
-            "It has enough psychic energy to blast\n"
-            "everything within 300 feet of itself.\n"
-            "The organ that emits its intense psychic\n"
-            "power is sheltered by its ears."),
+            "It has a tiny dragon Digimon sealed\n"
+            "in both its fists, Amon and Umon, who\n"
+            "govern over destruction and creation.\n"
+            "Goldramons six wings are hardened."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Espurr,
+        .frontPic = gMonFrontPic_Goldramon,
         .frontPicSize = MON_COORDS_SIZE(32, 48),
         .frontPicYOffset = 10,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2402,29 +2405,29 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 50),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Espurr,
+        .backPic = gMonBackPic_Goldramon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Espurr,
-        .shinyPalette = gMonShinyPalette_Espurr,
-        .iconSprite = gMonIcon_Espurr,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Goldramon,
+        .shinyPalette = gMonShinyPalette_Goldramon,
+        .iconSprite = gMonIcon_Goldramon,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-1, 4, SHADOW_SIZE_S)
-        FOOTPRINT(Espurr)
+        FOOTPRINT(Goldramon)
         OVERWORLD(
-            sPicTable_Espurr,
+            sPicTable_Goldramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Espurr,
-            gShinyOverworldPalette_Espurr
+            gOverworldPalette_Goldramon,
+            gShinyOverworldPalette_Goldramon
         )
-        .levelUpLearnset = sEspurrLevelUpLearnset,
-        .teachableLearnset = sEspurrTeachableLearnset,
-        .eggMoveLearnset = sEspurrEggMoveLearnset,
+        .levelUpLearnset = sGoldramonLevelUpLearnset,
+        .teachableLearnset = sGoldramonTeachableLearnset,
+        .eggMoveLearnset = sGoldramonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_MEOWSTIC_M, CONDITIONS({IF_GENDER, MON_GENDERLESS})},
                                 {EVO_LEVEL, 25, SPECIES_MEOWSTIC_F, CONDITIONS({IF_GENDER, MON_FEMALE})}),
     },
@@ -2556,7 +2559,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .teachableLearnset = sMeowsticFTeachableLearnset,
         .formSpeciesIdTable = sMeowsticFormSpeciesIdTable,
     },
-#endif //P_FAMILY_ESPURR
+#endif //P_FAMILY_GOLDRAMON
 
 #if P_FAMILY_HONEDGE
     [SPECIES_HONEDGE] =

@@ -1472,13 +1472,13 @@ static const u16 sFurfrouFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_FURFROU
 
-#if P_FAMILY_ESPURR
+#if P_FAMILY_GOLDRAMON
 static const u16 sMeowsticFormSpeciesIdTable[] = {
     SPECIES_MEOWSTIC_M,
     SPECIES_MEOWSTIC_F,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_ESPURR
+#endif //P_FAMILY_GOLDRAMON
 
 #if P_FAMILY_HONEDGE
 static const u16 sAegislashFormSpeciesIdTable[] = {

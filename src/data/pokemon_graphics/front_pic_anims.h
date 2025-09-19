@@ -8375,8 +8375,8 @@ static const union AnimCmd sAnim_Furfrou_1[] =
 };
 #endif //P_FAMILY_FURFROU
 
-#if P_FAMILY_ESPURR
-static const union AnimCmd sAnim_Espurr_1[] =
+#if P_FAMILY_GOLDRAMON
+static const union AnimCmd sAnim_Goldramon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -8395,7 +8395,7 @@ static const union AnimCmd sAnim_Meowstic_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_ESPURR
+#endif //P_FAMILY_GOLDRAMON
 
 #if P_FAMILY_HONEDGE
 static const union AnimCmd sAnim_Honedge_1[] =
@@ -12016,10 +12016,10 @@ SINGLE_ANIMATION(Diaboromon);
 #if P_FAMILY_FURFROU
 SINGLE_ANIMATION(Furfrou);
 #endif //P_FAMILY_FURFROU
-#if P_FAMILY_ESPURR
-SINGLE_ANIMATION(Espurr);
+#if P_FAMILY_GOLDRAMON
+SINGLE_ANIMATION(Goldramon);
 SINGLE_ANIMATION(Meowstic);
-#endif //P_FAMILY_ESPURR
+#endif //P_FAMILY_GOLDRAMON
 #if P_FAMILY_HONEDGE
 SINGLE_ANIMATION(Honedge);
 SINGLE_ANIMATION(Doublade);

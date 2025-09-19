@@ -4293,15 +4293,15 @@ Cry_Furfrou::
 	.incbin "sound/direct_sound_samples/cries/furfrou.bin"
 .endif @ P_FAMILY_FURFROU
 
-.if P_FAMILY_ESPURR == TRUE
+.if P_FAMILY_GOLDRAMON == TRUE
 	.align 2
-Cry_Espurr::
-	.incbin "sound/direct_sound_samples/cries/espurr.bin"
+Cry_Goldramon::
+	.incbin "sound/direct_sound_samples/cries/goldramon.bin"
 
 	.align 2
 Cry_Meowstic::
 	.incbin "sound/direct_sound_samples/cries/meowstic.bin"
-.endif @ P_FAMILY_ESPURR
+.endif @ P_FAMILY_GOLDRAMON
 
 .if P_FAMILY_HONEDGE == TRUE
 	.align 2

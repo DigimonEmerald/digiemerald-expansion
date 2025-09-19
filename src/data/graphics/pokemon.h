@@ -19877,20 +19877,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_FURFROU
 
-#if P_FAMILY_ESPURR
-    const u32 gMonFrontPic_Espurr[] = INCBIN_U32("graphics/pokemon/espurr/anim_front.4bpp.smol");
-    const u16 gMonPalette_Espurr[] = INCBIN_U16("graphics/pokemon/espurr/normal.gbapal");
-    const u32 gMonBackPic_Espurr[] = INCBIN_U32("graphics/pokemon/espurr/back.4bpp.smol");
-    const u16 gMonShinyPalette_Espurr[] = INCBIN_U16("graphics/pokemon/espurr/shiny.gbapal");
-    const u8 gMonIcon_Espurr[] = INCBIN_U8("graphics/pokemon/espurr/icon.4bpp");
+#if P_FAMILY_GOLDRAMON
+    const u32 gMonFrontPic_Goldramon[] = INCBIN_U32("graphics/pokemon/goldramon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Goldramon[] = INCBIN_U16("graphics/pokemon/goldramon/normal.gbapal");
+    const u32 gMonBackPic_Goldramon[] = INCBIN_U32("graphics/pokemon/goldramon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Goldramon[] = INCBIN_U16("graphics/pokemon/goldramon/shiny.gbapal");
+    const u8 gMonIcon_Goldramon[] = INCBIN_U8("graphics/pokemon/goldramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Espurr[] = INCBIN_U8("graphics/pokemon/espurr/footprint.1bpp");
+    const u8 gMonFootprint_Goldramon[] = INCBIN_U8("graphics/pokemon/goldramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Espurr[] = INCBIN_COMP("graphics/pokemon/espurr/overworld.4bpp");
+    const u32 gObjectEventPic_Goldramon[] = INCBIN_COMP("graphics/pokemon/goldramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Espurr[] = INCBIN_U16("graphics/pokemon/espurr/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Espurr[] = INCBIN_U16("graphics/pokemon/espurr/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Goldramon[] = INCBIN_U16("graphics/pokemon/goldramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Goldramon[] = INCBIN_U16("graphics/pokemon/goldramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -19922,7 +19922,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_MeowsticF[] = INCBIN_U16("graphics/pokemon/meowstic/f/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_ESPURR
+#endif //P_FAMILY_GOLDRAMON
 
 #if P_FAMILY_HONEDGE
     const u32 gMonFrontPic_Honedge[] = INCBIN_U32("graphics/pokemon/honedge/anim_front.4bpp.smol");

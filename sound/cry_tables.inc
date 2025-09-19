@@ -1648,10 +1648,10 @@ gCryTable::
 .if P_FAMILY_FURFROU == TRUE
 	cry Cry_Furfrou
 .endif @ P_FAMILY_FURFROU
-.if P_FAMILY_ESPURR == TRUE
-	cry Cry_Espurr
+.if P_FAMILY_GOLDRAMON == TRUE
+	cry Cry_Goldramon
 	cry Cry_Meowstic
-.endif @ P_FAMILY_ESPURR
+.endif @ P_FAMILY_GOLDRAMON
 .if P_FAMILY_HONEDGE == TRUE
 	cry Cry_Honedge
 	cry Cry_Doublade
@@ -4076,10 +4076,10 @@ gCryTable_Reverse::
 .if P_FAMILY_FURFROU == TRUE
 	cry_reverse Cry_Furfrou
 .endif @ P_FAMILY_FURFROU
-.if P_FAMILY_ESPURR == TRUE
-	cry_reverse Cry_Espurr
+.if P_FAMILY_GOLDRAMON == TRUE
+	cry_reverse Cry_Goldramon
 	cry_reverse Cry_Meowstic
-.endif @ P_FAMILY_ESPURR
+.endif @ P_FAMILY_GOLDRAMON
 .if P_FAMILY_HONEDGE == TRUE
 	cry_reverse Cry_Honedge
 	cry_reverse Cry_Doublade

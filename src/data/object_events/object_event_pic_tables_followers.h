@@ -4804,9 +4804,9 @@ static const struct SpriteFrameImage sPicTable_FurfrouPharaoh[] = {
 };
 #endif //P_FAMILY_FURFROU
 
-#if P_FAMILY_ESPURR
-static const struct SpriteFrameImage sPicTable_Espurr[] = {
-    overworld_ascending_frames(gObjectEventPic_Espurr, 4, 4),
+#if P_FAMILY_GOLDRAMON
+static const struct SpriteFrameImage sPicTable_Goldramon[] = {
+    overworld_ascending_frames(gObjectEventPic_Goldramon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_MeowsticM[] = {
     overworld_ascending_frames(gObjectEventPic_MeowsticM, 4, 4),
@@ -4814,7 +4814,7 @@ static const struct SpriteFrameImage sPicTable_MeowsticM[] = {
 static const struct SpriteFrameImage sPicTable_MeowsticF[] = {
     overworld_ascending_frames(gObjectEventPic_MeowsticF, 4, 4),
 };
-#endif //P_FAMILY_ESPURR
+#endif //P_FAMILY_GOLDRAMON
 
 #if P_FAMILY_HONEDGE
 static const struct SpriteFrameImage sPicTable_Honedge[] = {

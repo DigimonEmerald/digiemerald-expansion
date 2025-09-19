@@ -721,8 +721,8 @@
 #define P_FAMILY_DEVITAMAMON                 TRUE
 #undef P_FAMILY_FURFROU
 #define P_FAMILY_FURFROU                 TRUE
-#undef P_FAMILY_ESPURR
-#define P_FAMILY_ESPURR                  TRUE
+#undef P_FAMILY_GOLDRAMON
+#define P_FAMILY_GOLDRAMON                  TRUE
 #undef P_FAMILY_HONEDGE
 #define P_FAMILY_HONEDGE                 TRUE
 #undef P_FAMILY_SPRITZEE

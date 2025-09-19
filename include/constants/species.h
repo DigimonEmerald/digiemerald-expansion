@@ -710,7 +710,7 @@
 #define SPECIES_DIABOROMON                                 675
 #define SPECIES_FURFROU                                 SPECIES_FURFROU_NATURAL
 #define SPECIES_FURFROU_NATURAL                         676
-#define SPECIES_ESPURR                                  677
+#define SPECIES_GOLDRAMON                                  677
 #define SPECIES_MEOWSTIC                                SPECIES_MEOWSTIC_M
 #define SPECIES_MEOWSTIC_M                              678
 #define SPECIES_HONEDGE                                 679

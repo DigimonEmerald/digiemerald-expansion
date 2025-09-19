@@ -497,6 +497,7 @@ Vademon - Samurott Hisui
 WarGrowlmon - Blitzle
 WereGarurumon - Pidove
 Zudomon - Tympole
+Gigadramon - Basculin (Red-Striped)
 
 Mega List
 
@@ -524,5 +525,6 @@ Rosemon - Bunnelby
 Rosemon Burst Mode - Ash Greninja
 SaberLeomon - Vivillon
 WarGreymon - Fennekin
+Goldramon - Espurr
 
 SPECIES NAME LENGTH MAX = 13

@@ -5034,15 +5034,15 @@ static const u16 sFurfrouEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_FURFROU
 
-#if P_FAMILY_ESPURR
-static const u16 sEspurrEggMoveLearnset[] = {
+#if P_FAMILY_GOLDRAMON
+static const u16 sGoldramonEggMoveLearnset[] = {
     MOVE_TRICK,
     MOVE_YAWN,
     MOVE_ASSIST,
     MOVE_BARRIER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ESPURR
+#endif //P_FAMILY_GOLDRAMON
 
 #if P_FAMILY_HONEDGE
 static const u16 sHonedgeEggMoveLearnset[] = {

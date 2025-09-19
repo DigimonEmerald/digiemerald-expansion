@@ -266,7 +266,7 @@ static const union AnimCmd *const sAnims_Furfrou[] =
 };
 #endif //P_FAMILY_FURFROU
 
-#if P_FAMILY_ESPURR
+#if P_FAMILY_GOLDRAMON
 static const union AnimCmd *const sAnims_Meowstic[] =
 {
     sAnim_GeneralFrame0,
