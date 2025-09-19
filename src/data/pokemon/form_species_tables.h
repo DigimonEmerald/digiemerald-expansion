@@ -1022,7 +1022,7 @@ static const u16 sCherrimFormSpeciesIdTable[] = {
 
 #if P_FAMILY_SHELLOS
 static const u16 sShellosFormSpeciesIdTable[] = {
-    SPECIES_SHELLOS_WEST,
+    SPECIES_GOLEMON,
     SPECIES_SHELLOS_EAST,
     FORM_SPECIES_END,
 };

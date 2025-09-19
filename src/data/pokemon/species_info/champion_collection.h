@@ -14202,66 +14202,68 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #endif //P_FAMILY_TORTOMON
 
 #if P_FAMILY_SHELLOS
-    [SPECIES_SHELLOS_WEST] =
+    [SPECIES_GOLEMON] =
     {
-        .baseHP        = 76,
-        .baseAttack    = 48,
-        .baseDefense   = 48,
-        .baseSpeed     = 34,
-        .baseSpAttack  = 57,
-        .baseSpDefense = 62,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 190,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 65 : 73,
-        .evYield_HP = 1,
+        .baseHP        = 85,
+        .baseAttack    = 100,
+        .baseDefense   = 120,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_ROCK),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack = 1,
+        .evYield_Defense = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_STICKY_HOLD, ABILITY_STORM_DRAIN, ABILITY_SAND_FORCE },
-        .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Shellos"),
+        .abilities = { ABILITY_STURDY, ABILITY_OBLIVIOUS, ABILITY_SHEER_FORCE },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Golemon"),
         .cryId = CRY_SHELLOS,
         .natDexNum = NATIONAL_DEX_SHELLOS,
-        .categoryName = _("Sea Slug"),
-        .height = 3,
-        .weight = 63,
+        .categoryName = _("Golem"),
+        .height = 61,
+        .weight = 1955,
         .description = COMPOUND_STRING(
-            "It oozes a purple fluid to deter enemies.\n"
-            "While harmless, the fluid is awfully sticky.\n"
-            "Apparently, there are more West Sea\n"
-            "Shellos now than there were in the past."),
+            "The carvings on its body are believed\n"
+            "to be ancient incantations spelling\n"
+            "various words such as 'plague',\n"
+            "'curse', and 'misfortune'."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_ShellosWestSea,
+        .frontPic = gMonFrontPic_Golemon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 13,
         .frontAnimFrames = sAnims_Shellos,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_ShellosWestSea,
+        .backPic = gMonBackPic_Golemon,
         .backPicSize = MON_COORDS_SIZE(40, 56),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_H_SPRING,
-        .palette = gMonPalette_ShellosWestSea,
-        .shinyPalette = gMonShinyPalette_ShellosWestSea,
-        .iconSprite = gMonIcon_ShellosWestSea,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Golemon,
+        .shinyPalette = gMonShinyPalette_Golemon,
+        .iconSprite = gMonIcon_Golemon,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(1, 0, SHADOW_SIZE_S)
         FOOTPRINT(Shellos)
         OVERWORLD(
-            sPicTable_ShellosWestSea,
+            sPicTable_Golemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_ShellosWestSea,
-            gShinyOverworldPalette_ShellosWestSea
+            gOverworldPalette_Golemon,
+            gShinyOverworldPalette_Golemon
         )
-        .levelUpLearnset = sShellosLevelUpLearnset,
+        .levelUpLearnset = sGolemonLevelUpLearnset,
         .teachableLearnset = sShellosTeachableLearnset,
         .eggMoveLearnset = sShellosEggMoveLearnset,
         .formSpeciesIdTable = sShellosFormSpeciesIdTable,

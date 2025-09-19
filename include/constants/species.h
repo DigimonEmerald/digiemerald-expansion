@@ -434,8 +434,8 @@
 #define SPECIES_TORTOMON                                 420
 #define SPECIES_CHERRIM                                 SPECIES_UNIMON
 #define SPECIES_UNIMON                        421
-#define SPECIES_SHELLOS_WEST                            422
-#define SPECIES_SHELLOS                                 SPECIES_SHELLOS_WEST
+#define SPECIES_GOLEMON                            422
+#define SPECIES_SHELLOS                                 SPECIES_GOLEMON
 #define SPECIES_GASTRODON_WEST                          423
 #define SPECIES_GASTRODON                               SPECIES_GASTRODON_WEST
 #define SPECIES_AMBIPOM                                 424

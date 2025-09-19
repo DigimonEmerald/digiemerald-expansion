@@ -8663,6 +8663,20 @@ static const struct LevelUpMove sVeedramonLevelUpLearnset[] = {
 #endif //P_FAMILY_TORTOMON
 
 #if P_FAMILY_SHELLOS
+static const struct LevelUpMove sGolemonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_LEER),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_HARDEN),
+    LEVEL_UP_MOVE( 1, MOVE_ROCK_THROW),
+    LEVEL_UP_MOVE(20, MOVE_STONE_AXE),
+    LEVEL_UP_MOVE(24, MOVE_POISON_GAS),
+    LEVEL_UP_MOVE(28, MOVE_MEGA_PUNCH),
+    LEVEL_UP_MOVE(32, MOVE_SANDSTORM),
+    LEVEL_UP_MOVE(36, MOVE_ROCK_POLISH),
+    LEVEL_UP_MOVE(40, MOVE_ROCK_SLIDE),
+    LEVEL_UP_END
+};
+
 static const struct LevelUpMove sShellosLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
