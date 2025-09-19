@@ -584,8 +584,8 @@
 #define P_FAMILY_SKULLMERAMON                TRUE
 #undef P_FAMILY_PHANTOMON
 #define P_FAMILY_PHANTOMON                 TRUE
-#undef P_FAMILY_BASCULIN
-#define P_FAMILY_BASCULIN                TRUE
+#undef P_FAMILY_GIGADRAMON
+#define P_FAMILY_GIGADRAMON                TRUE
 #undef P_FAMILY_SANDILE
 #define P_FAMILY_SANDILE                 TRUE
 #undef P_FAMILY_DARUMAKA

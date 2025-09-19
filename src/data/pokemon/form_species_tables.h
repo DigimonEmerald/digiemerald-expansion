@@ -1172,11 +1172,11 @@ static const u16 sGarudamonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_PHANTOMON
 
-#if P_FAMILY_BASCULIN
-static const u16 sBasculinFormSpeciesIdTable[] = {
-    SPECIES_BASCULIN_RED_STRIPED,
-    SPECIES_BASCULIN_BLUE_STRIPED,
-    SPECIES_BASCULIN_WHITE_STRIPED,
+#if P_FAMILY_GIGADRAMON
+static const u16 sGigadramonFormSpeciesIdTable[] = {
+    SPECIES_GIGADRAMON,
+    SPECIES_GIGADRAMON_BLUE_STRIPED,
+    SPECIES_GIGADRAMON_WHITE_STRIPED,
     FORM_SPECIES_END,
 };
 
@@ -1185,7 +1185,7 @@ static const u16 sBasculegionFormSpeciesIdTable[] = {
     SPECIES_BASCULEGION_F,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_BASCULIN
+#endif //P_FAMILY_GIGADRAMON
 
 #if P_FAMILY_DARUMAKA
 static const u16 sDarumakaFormSpeciesIdTable[] = {

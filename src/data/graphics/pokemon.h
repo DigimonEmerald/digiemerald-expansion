@@ -16889,45 +16889,45 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_PHANTOMON
 
-#if P_FAMILY_BASCULIN
-    const u32 gMonFrontPic_BasculinRedStriped[] = INCBIN_U32("graphics/pokemon/basculin/anim_front.4bpp.smol");
-    const u16 gMonPalette_BasculinRedStriped[] = INCBIN_U16("graphics/pokemon/basculin/normal.gbapal");
-    const u32 gMonBackPic_BasculinRedStriped[] = INCBIN_U32("graphics/pokemon/basculin/back.4bpp.smol");
-    const u16 gMonShinyPalette_BasculinRedStriped[] = INCBIN_U16("graphics/pokemon/basculin/shiny.gbapal");
-    const u8 gMonIcon_BasculinRedStriped[] = INCBIN_U8("graphics/pokemon/basculin/icon.4bpp");
+#if P_FAMILY_GIGADRAMON
+    const u32 gMonFrontPic_Gigadramon[] = INCBIN_U32("graphics/pokemon/gigadramon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Gigadramon[] = INCBIN_U16("graphics/pokemon/gigadramon/normal.gbapal");
+    const u32 gMonBackPic_Gigadramon[] = INCBIN_U32("graphics/pokemon/gigadramon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Gigadramon[] = INCBIN_U16("graphics/pokemon/gigadramon/shiny.gbapal");
+    const u8 gMonIcon_Gigadramon[] = INCBIN_U8("graphics/pokemon/gigadramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Basculin[] = INCBIN_U8("graphics/pokemon/basculin/footprint.1bpp");
+    const u8 gMonFootprint_Gigadramon[] = INCBIN_U8("graphics/pokemon/gigadramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_BasculinBlueStriped[] = INCBIN_U32("graphics/pokemon/basculin/blue_striped/anim_front.4bpp.smol");
-    const u16 gMonPalette_BasculinBlueStriped[] = INCBIN_U16("graphics/pokemon/basculin/blue_striped/normal.gbapal");
-    const u32 gMonBackPic_BasculinBlueStriped[] = INCBIN_U32("graphics/pokemon/basculin/blue_striped/back.4bpp.smol");
-    const u16 gMonShinyPalette_BasculinBlueStriped[] = INCBIN_U16("graphics/pokemon/basculin/blue_striped/shiny.gbapal");
-    const u8 gMonIcon_BasculinBlueStriped[] = INCBIN_U8("graphics/pokemon/basculin/blue_striped/icon.4bpp");
+    const u32 gMonFrontPic_GigadramonBlueStriped[] = INCBIN_U32("graphics/pokemon/gigadramon/blue_striped/anim_front.4bpp.smol");
+    const u16 gMonPalette_GigadramonBlueStriped[] = INCBIN_U16("graphics/pokemon/gigadramon/blue_striped/normal.gbapal");
+    const u32 gMonBackPic_GigadramonBlueStriped[] = INCBIN_U32("graphics/pokemon/gigadramon/blue_striped/back.4bpp.smol");
+    const u16 gMonShinyPalette_GigadramonBlueStriped[] = INCBIN_U16("graphics/pokemon/gigadramon/blue_striped/shiny.gbapal");
+    const u8 gMonIcon_GigadramonBlueStriped[] = INCBIN_U8("graphics/pokemon/gigadramon/blue_striped/icon.4bpp");
 
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_BasculinRedStriped[] = INCBIN_COMP("graphics/pokemon/basculin/overworld.4bpp");
-    const u32 gObjectEventPic_BasculinBlueStriped[] = INCBIN_COMP("graphics/pokemon/basculin/blue_striped/overworld.4bpp");
+    const u32 gObjectEventPic_Gigadramon[] = INCBIN_COMP("graphics/pokemon/gigadramon/overworld.4bpp");
+    const u32 gObjectEventPic_GigadramonBlueStriped[] = INCBIN_COMP("graphics/pokemon/gigadramon/blue_striped/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_BasculinRedStriped[] = INCBIN_U16("graphics/pokemon/basculin/overworld_normal.gbapal");
-    const u16 gOverworldPalette_BasculinBlueStriped[] = INCBIN_U16("graphics/pokemon/basculin/blue_striped/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_BasculinRedStriped[] = INCBIN_U16("graphics/pokemon/basculin/overworld_shiny.gbapal");
-    const u16 gShinyOverworldPalette_BasculinBlueStriped[] = INCBIN_U16("graphics/pokemon/basculin/blue_striped/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Gigadramon[] = INCBIN_U16("graphics/pokemon/gigadramon/overworld_normal.gbapal");
+    const u16 gOverworldPalette_GigadramonBlueStriped[] = INCBIN_U16("graphics/pokemon/gigadramon/blue_striped/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Gigadramon[] = INCBIN_U16("graphics/pokemon/gigadramon/overworld_shiny.gbapal");
+    const u16 gShinyOverworldPalette_GigadramonBlueStriped[] = INCBIN_U16("graphics/pokemon/gigadramon/blue_striped/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_HISUIAN_FORMS
-    const u32 gMonFrontPic_BasculinWhiteStriped[] = INCBIN_U32("graphics/pokemon/basculin/white_striped/anim_front.4bpp.smol");
-    const u16 gMonPalette_BasculinWhiteStriped[] = INCBIN_U16("graphics/pokemon/basculin/white_striped/normal.gbapal");
-    const u32 gMonBackPic_BasculinWhiteStriped[] = INCBIN_U32("graphics/pokemon/basculin/white_striped/back.4bpp.smol");
-    const u16 gMonShinyPalette_BasculinWhiteStriped[] = INCBIN_U16("graphics/pokemon/basculin/white_striped/shiny.gbapal");
-    const u8 gMonIcon_BasculinWhiteStriped[] = INCBIN_U8("graphics/pokemon/basculin/white_striped/icon.4bpp");
+    const u32 gMonFrontPic_GigadramonWhiteStriped[] = INCBIN_U32("graphics/pokemon/gigadramon/white_striped/anim_front.4bpp.smol");
+    const u16 gMonPalette_GigadramonWhiteStriped[] = INCBIN_U16("graphics/pokemon/gigadramon/white_striped/normal.gbapal");
+    const u32 gMonBackPic_GigadramonWhiteStriped[] = INCBIN_U32("graphics/pokemon/gigadramon/white_striped/back.4bpp.smol");
+    const u16 gMonShinyPalette_GigadramonWhiteStriped[] = INCBIN_U16("graphics/pokemon/gigadramon/white_striped/shiny.gbapal");
+    const u8 gMonIcon_GigadramonWhiteStriped[] = INCBIN_U8("graphics/pokemon/gigadramon/white_striped/icon.4bpp");
 
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_BasculinWhiteStriped[] = INCBIN_COMP("graphics/pokemon/basculin/white_striped/overworld.4bpp");
+    const u32 gObjectEventPic_GigadramonWhiteStriped[] = INCBIN_COMP("graphics/pokemon/gigadramon/white_striped/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_BasculinWhiteStriped[] = INCBIN_U16("graphics/pokemon/basculin/white_striped/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_BasculinWhiteStriped[] = INCBIN_U16("graphics/pokemon/basculin/white_striped/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_GigadramonWhiteStriped[] = INCBIN_U16("graphics/pokemon/gigadramon/white_striped/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_GigadramonWhiteStriped[] = INCBIN_U16("graphics/pokemon/gigadramon/white_striped/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -16957,7 +16957,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_BASCULIN
+#endif //P_FAMILY_GIGADRAMON
 
 #if P_FAMILY_SANDILE
     const u32 gMonFrontPic_Sandile[] = INCBIN_U32("graphics/pokemon/sandile/anim_front.4bpp.smol");

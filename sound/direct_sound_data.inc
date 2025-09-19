@@ -3602,10 +3602,10 @@ Cry_Garudamon::
 	.incbin "sound/direct_sound_samples/cries/garudamon.bin"
 .endif @ P_FAMILY_PHANTOMON
 
-.if P_FAMILY_BASCULIN == TRUE
+.if P_FAMILY_GIGADRAMON == TRUE
 	.align 2
-Cry_Basculin::
-	.incbin "sound/direct_sound_samples/cries/basculin.bin"
+Cry_Gigadramon::
+	.incbin "sound/direct_sound_samples/cries/gigadramon.bin"
 
 .if P_HISUIAN_FORMS == TRUE
 	.align 2
@@ -3613,7 +3613,7 @@ Cry_Basculegion::
 	.incbin "sound/direct_sound_samples/cries/basculegion.bin"
 
 .endif @ P_HISUIAN_FORMS
-.endif @ P_FAMILY_BASCULIN
+.endif @ P_FAMILY_GIGADRAMON
 
 .if P_FAMILY_SANDILE == TRUE
 	.align 2

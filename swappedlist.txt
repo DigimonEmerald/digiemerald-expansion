@@ -8,6 +8,7 @@ Bommon - Venusaur
 Botamon - Charmander
 Chibickmon - Charmeleon
 Chibomon - Charizard
+Choromon - Rattata
 Conomon - Squirtle
 Cotsucomon - Wartortle
 Curimon - Blastoise
@@ -15,12 +16,12 @@ Datirimon - Caterpie
 Dodomon - Metapod
 Dokimon - Butterfree
 Fufumon - Weedle
+IceBotamon - Zubat
 Jyarimon - Kakuna
 Keemon - Beedrill
 Ketomon - Pidgey
 Kuramon - Pidgeotto
 Leafmon - Pidgeot
-Choromon - Rattata
 Mokumon - Raticate
 Nyokimon - Spearow
 Pabumon - Fearow
@@ -41,12 +42,11 @@ Pyonmon - Clefable
 Relemon - Vulpix
 Sakumon - Ninetales
 Sandmon - Jigglypuff
+Tomorimon - Grookey
 Tsubumon - Wigglytuff
-IceBotamon - Zubat
 Yuramon - Golbat
 Zerimon - Oddish
 Zurumon - Gloom
-Tomorimon - Grookey
 
 In-Training List
 
@@ -84,10 +84,11 @@ Moonmon - Graveler
 Motimon - Golem
 Negamon - Ponyta
 Nyaromon - Rapidash
+Onibimon - Thwackey
 Pagumon - Slowpoke
+Pickmon (Red) - Magneton
 Pickmon (Silver) - Slowbro
 Pickmon (White) - Magnemite
-Pickmon (Red) - Magneton
 Pinamon - Farfetch'd
 Poromon - Doduo
 Puroromon - Dodrio
@@ -96,8 +97,9 @@ Puyoyomon - Dewgong
 Sakuttomon - Grimer
 Sunmon - Muk
 Tanemon - Shellder
-Tokomon - Cloyster
+Tinpet - Mightyena
 Tokomon (X) - Gastly
+Tokomon - Cloyster
 Torballmon - Haunter
 Tsumemon - Gengar
 Tsunomon - Onix
@@ -108,15 +110,14 @@ Wanyamon - Kingler
 Xiaomon - Voltorb
 Yaamon - Electrode
 Yokomon - Exeggcute
-Tinpet - Mightyena
-Onibimon - Thwackey
 
 Rookie List
 
-Agumon - Exeggutor
 Agumon (06) - Cubone
 Agumon (Expert) - Marowak
+Agumon (Fake Expert) - Mewtwo
 Agumon (X) - Hitmonlee
+Agumon - Exeggutor
 Angoramon - Hitmonchan
 Arcadiamon - Lickitung
 Argomon - Koffing
@@ -124,26 +125,24 @@ Armadilmon - Weezing
 Aruraumon - Rhyhorn
 Bakomon - Rhydon
 Bearmon - Chansey
-Betamon - Tangela
 Betamon (X) - Kangaskhan
+Betamon - Tangela
 Biyomon - Horsea
-Blkagumon - Seadra
 Blkagumon (X) - Goldeen
+Blkagumon - Seadra
 Blkgabumon - Seaking
 Blkguilmon - Staryu
+Blktoyamon - Magby
 Bokomon - Starmie
 Bulucomon - Mr Mime
 Burgermon - Scyther
-Samuagumon - Jynx
 Candlemon - Electabuzz
 Chikurimon - Magmar
-Tyutyumon - Pinsir
 Chuumon - Tauros
-Hazyagumon - Magikarp
 Commdramon - Gyarados
 Coronamon - Lapras
-Crabmon - Ditto
 Crabmon (X) - Eevee
+Crabmon - Ditto
 Cutemon - Vaporeon
 Damemon - Jolteon
 Demidevmon - Flareon
@@ -153,72 +152,73 @@ Dorumon - Omastar
 Dotagumon - Kabuto
 Dotfalcmon - Kabutops
 Dracmon - Aerodactyl
-Dracomon - Snorlax
 Dracomon (X) - Articuno
+Dracomon - Snorlax
 Ebiburgmon - Zapdos
 Ekakimon - Moltres
-Elecmon - Dratini
 Elecmon (Violet) - Dragonair
+Elecmon - Dratini
 Espimon - Dragonite
-Agumon (Fake Expert) - Mewtwo
-Falcomon - Mew
 Falcomon (06) - Chikorita
+Falcomon - Mew
 Fanbeemon - Bayleef
 Flamemon - Meganium
 Floramon - Cyndaquil
-Gabumon - Quilava
 Gabumon (X) - Typhlosion
+Gabumon - Quilava
 Gammamon - Totodile
 Gaomon - Croconaw
 Gaossmon - Feraligatr
-Gazimon - Sentret
 Gazimon (X) - Furret
+Gazimon - Sentret
 Ghostmon - Hoothoot
 Gizamon - Noctowl
 Gizumon - Ledyba
 Goblimon - Ledian
-Gomamon - Spinarak
 Gomamon (X) - Ariados
-Gotsumon - Crobat
+Gomamon - Spinarak
 Gotsumon (X) - Chinchou
-Guilmon - Lanturn
+Gotsumon - Crobat
 Guilmon (X) - Pichu
+Guilmon - Lanturn
 Gumdramon - Cleffa
 Hackmon - Igglybuff
-Hagurumon - Togepi
 Hagurumon (X) - Togetic
+Hagurumon - Togepi
 Hawkmon - Natu
+Hazyagumon - Magikarp
 Herissmon - Xatu
 Hyokomon - Mareep
+Icegobimon - Suicune
 Ignitemon - Flaaffy
-Impmon - Ampharos
 Impmon (X) - Bellossom
-Jellymon - Azumarill
+Impmon - Ampharos
 Jazamon - Marill
+Jellymon - Azumarill
 Junkmon - Sudowoodo
 Kamemon - Politoed
-Keramon - Hoppip
 Keramon (X) - Skiploom
+Keramon - Hoppip
+Kodekacmon - Steelix
 Kodokgumon - Jumpluff
 Kokabuimon - Aipom
-Kokuwamon - Sunkern
 Kokuwamon (X) - Sunflora
+Kokuwamon - Sunkern
 Kotemon - Yanma
-Kudamon - Wooper
 Kudamon (06) - Quagsire
+Kudamon - Wooper
 Kunemon - Espeon
 Labramon - Umbreon
 Lalamon - Murkrow
 Liollmon - Slowking
 Loogamon - Misdreavus
-Lopmon - Unown
 Lopmon (X) - Wobbuffet
+Lopmon - Unown
 Lucemon - Girafarig
 Ludomon - Pineco
 Lunamon - Forretress
 Luxmon - Dunsparce
 Metabee - Gligar
-Kodekacmon - Steelix
 Modbetamon - Snubbull
 Monitamon - Granbull
 Monmon - Qwilfish
@@ -227,11 +227,11 @@ Morphomon - Shuckle
 Muchomon - Heracross
 Mushroomon - Sneasel
 Neemon - Teddiursa
-Otamamon - Ursaring
 Otamamon (Red) - Slugma
 Otamamon (X) - Magcargo
-Palmon - Swinub
+Otamamon - Ursaring
 Palmon (X) - Piloswine
+Palmon - Swinub
 Patamon - Corsola
 Pawnmon (Black) - Remoraid
 Pawnmon (White) - Octillery
@@ -242,20 +242,17 @@ Pillomon - Houndour
 Pomumon - Houndoom
 Psychemon - Kingdra
 Pulsemon - Phanpy
-Renamon - Donphan
 Renamon (X) - Porygon2
+Renamon - Donphan
 Rokusho - Stantler
 Ryudamon - Smeargle
-Salamon - Tyrogue
 Salamon (X) - Hitmontop
+Salamon - Tyrogue
+Samuagumon - Jynx
 Sangomon - Smoochum
 Santaagumon - Elekid
-Blktoyamon - Magby
 Shamanmon - Miltank
 Shoutmon - Blissey
-Yukiagumon - Raikou
-Yukiagumon (06) - Entei
-Icegobimon - Suicune
 Solarmon - Larvitar
 Sounbrdmon - Pupitar
 Spadamon - Tyranitar
@@ -264,20 +261,23 @@ Starmon (2010) - Ho-Oh
 Strabimon - Celebi
 Sunarzamon - Treecko
 Swimmon - Grovyle
-Syakomon - Sceptile
 Syakomon (X) - Torchic
+Syakomon - Sceptile
 Tapirmon - Combusken
 Tentomon - Blaziken
-Terriermon - Mudkip
 Terriermon (Assistant) - Marshtomp
 Terriermon (X) - Swampert
+Terriermon - Mudkip
 Tinkermon - Poochyena
 Toyagumon - Zigzagoon
 Tsukaimon - Linoone
+Tyutyumon - Pinsir
 Veemon - Wurmple
 Vemmon - Silcoon
 Vorvomon - Beautifly
 Wormmon - Cascoon
+Yukiagumon (06) - Entei
+Yukiagumon - Raikou
 Zenimon - Dustox
 Zubamon - Lotad
 
@@ -287,8 +287,8 @@ Aegiomon - Lombre
 Agunimon - Ludicolo
 Airdramon - Seedot
 Akatorimon - Nuzleaf
-Allomon - Shiftry
 Allomon (X) - Taillow
+Allomon - Shiftry
 Angelamon - Swellow
 Angemon - Wingull
 Ankylomon - Pelipper
@@ -296,8 +296,8 @@ Apemon - Ralts
 Aquilamon - Kirlia
 Arcadiamon - Gardevoir
 Archelomon - Surskit
-Argomon - Masquerain
 Aresdramon - Shroomish
+Argomon - Masquerain
 Atamademon - Breloom
 Aurumon - Slakoth
 Axemon - Vigoroth
@@ -307,7 +307,6 @@ Balistamon - Ninjask
 Baluchimon - Shedinja
 Baohuckmon - Whismur
 Baromon - Loudred
-Trailmon (Battle Armament) - Exploud
 Betgamamon - Makuhita
 Bioquetmon - Hariyama
 Biostegmon - Azurill
@@ -316,39 +315,38 @@ Birdramon - Skitty
 Blgaogamon - Delcatty
 Blgargomon - Sableye
 Blgarurmon - Mawile
-Blkgatomon - Aron
-Blkgatomon (Uver) - Lairon
 Blgrowlmon - Aggron
-Sawkuwamon - Meditite
 Blimpmon - Medicham
+Blkgatomon (Uver) - Lairon
+Blkgatomon - Aron
 Boarmon - Electrike
 Bomnanimon - Manectric
 Boogiemon - Plusle
-Bucchiemon (Red) - Minun
 Bucchiemon (Green) - Volbeat
+Bucchiemon (Red) - Minun
 Bulkmon - Illumise
 Bullmon - Roselia
 Buraimon - Gulpin
 Burgermon - Swalot
-Choumon - Carvanha
 Centarumon - Sharpedo
 Chamblemon - Wailmer
 Chamelemon - Wailord
+Choumon - Carvanha
 Chrysalmon - Numel
 Citramon - Camerupt
-Clockmon - Torkoal
 Clockmon (Fusion) - Spoink
+Clockmon - Torkoal
 Coelamon - Grumpig
 Coredramon (Blue) - Spinda
 Coredramon (Green) - Trapinch
 Cyclonemon - Vibrava
 Damemon (Fusion) - Flygon
 Darcmon - Cacnea
-Trailmon (Dark) - Cacturne
+Darktyrmon (X) - Seviper
+Darktyrmon - Zangoose
 Darlizamon - Swablu
 Darmailmon - Altaria
-Darktyrmon - Zangoose
-Darktyrmon (X) - Seviper
+Deathmon (C'mon Digimon) - Turtwig
 Deckdramon - Lunatone
 Deltamon - Solrock
 Depthmon - Barboach
@@ -359,8 +357,8 @@ Dexdorumon - Baltoy
 Diatrymon - Claydol
 Digmon - Lileep
 Dinohyumon - Cradily
-Dobermon - Anorith
 Dobermon (X) - Armaldo
+Dobermon - Anorith
 Doggymon - Feebas
 Dokugumon - Milotic
 Dolphmon - Castform
@@ -372,16 +370,16 @@ Ebidramon - Dusclops
 Elephanmon - Tropius
 Eosmon - Chimecho
 Exermon - Absol
-Exveemon - Wynaut
 Exveemon (Virus) - Snorunt
-Eyesmon - Glalie
+Exveemon - Wynaut
 Eyesmon (Scatter Mode) - Spheal
+Eyesmon - Glalie
 Fangmon - Sealeo
 Filmon - Walrein
 Firamon - Clamperl
 Fladramon - Huntail
-Flawizamon - Gorebyss
 Flarizamon - Relicanth
+Flawizamon - Gorebyss
 Flybeemon - Luvdisc
 Flymon - Bagon
 Frigimon - Shelgon
@@ -391,138 +389,140 @@ Ganemon - Metang
 Gaogamon - Metagross
 Gargomon - Regirock
 Gargoylmon - Regice
-Garurumon - Registeel
 Garurumon (X) - Latias
-Gatomon - Latios
+Garurumon - Registeel
 Gatomon (X) - Kyogre
+Gatomon - Latios
 Gekomon - Groudon
 Geogreymon - Rayquaza
 Geremon - Jirachi
 Gesomon - Deoxys
-Deathmon (C'mon Digimon) - Turtwig
-Greymon - Grotle
-Kabuterimon - Torterra
-Meramon - Chimchar
-Numemon - Monferno
-Seadramon - Infernape
-Tyrannomon - Piplup
-Vegiemon - Prinplup
-Whamon - Empoleon
-Kokatorimon - Starly
-Vilemon - Staravia
-Roachmon - Staraptor
 Gorillamon - Bidoof
+Greymon - Grotle
+Growlmon - Cranidos
 Ikkakumon - Bibarel
+Kabuterimon - Torterra
+Kokatorimon - Starly
 Kuwagamon - Kricketot
 Leomon - Kricketune
-Shadramon - Shinx
-Raidramon - Luxio
-Togemon - Luxray
-Growlmon - Cranidos
-Stingmon - Rampardos
-Tuskmon - Shieldon
-Monochromon - Bastiodon
 Mekanorimon - Burmy (Plant)
+Meramon - Chimchar
 Minotarumon - Burmy (Sandy)
 Mojyamon - Burmy (Trash)
+Monochromon - Bastiodon
 Nanimon - Wormadam (Plant)
+Numemon - Monferno
 Octomon - Wormadam (Sandy)
 Ogremon - Wormadam (Trash)
-TeslaJellymon - Combee
+Raidramon - Luxio
 Raremon - Vespiquen
-Sukamon - Pachirisu
+Roachmon - Staraptor
+Sawkuwamon - Meditite
+Seadramon - Infernape
+Shadramon - Shinx
 Shellmon - Buizel
 Starmon - Floatzel
+Stingmon - Rampardos
+Sukamon - Pachirisu
+TeslaJellymon - Combee
+Togemon - Luxray
 Tortomon - Cherubi
+Trailmon (Battle Armament) - Exploud
+Trailmon (Dark) - Cacturne
+Tuskmon - Shieldon
+Tyrannomon - Piplup
 Unimon - Cherrim (Overcast)
 Veedramon - Cherrim (Sunny)
+Vegiemon - Prinplup
+Vilemon - Staravia
+Whamon - Empoleon
 
 Ultimate List
 
+Aeroveedramon - Palpitoad
+Andromon - Patrat
+Angewomon - Watchog
+Arukenimon - Gigalith
+Asuramon - Seismitoad
+BigMamemon - Sawk
+Blossomon - Swadloon
+BlueMeramon - Leavanny
+Brachiomon - Venipede
+Cyberdramon - Scolipede
+Datamon - Audino
 Death Airdramon - Victini
 Death Devimon - Snivy
 Death Meramon (C'mon Digimon) - Servine
 Death Metal Greymon - Serperior
 Death Tyrannomon - Tepig
-Mamemon - Pignite
-MetalGreymon (Virus) - Emboar
-MetalMamemon - Oshawott
-Monzaemon - Dewott
-SkullGreymon - Samurott
-Vademon - Samurott Hisui
-Andromon - Patrat
-Angewomon - Watchog
-Scorpiomon - Lillipup
-MegaKabuterimon (Blue) - Herdier
-Dragomon - Stoutland
+Deramon - Whimsicot
 Digitamamon - Purrloin
+Dinobeemon - Tranquill
+Dragomon - Stoutland
 Etemon - Liepard
 ExTyrannomon - Pansage
+Garbagemon - Lilligant (Hisui)
+Garudamon - Lilligant
 Giromon - Simisage
-MagnaAngemon - Pansear
-MagnaAngemon Priest Mode - Simisear
 Jagamon - Panpour
 LadyDevimon - Simipour
-Mammothmon - Munna
-MetalGreymon - Musharna
-WereGarurumon - Pidove
-Dinobeemon - Tranquill
-Paildramon - Unfezant
-WarGrowlmon - Blitzle
 Lillymon - Zebstrika
-MasterTyrannomon - Roggenrola
-Triceramon - Boldore
-Arukenimon - Gigalith
+MagnaAngemon - Pansear
+MagnaAngemon Priest Mode - Simisear
+Mamemon - Pignite
+Mammothmon - Munna
 MarineDevimon - Woobat
-MegaSeadramon - Swoobat
+MasterTyrannomon - Roggenrola
 Megadramon - Drilbur
-MetalTyrannomon - Excadrill
-Datamon - Audino
-Okuwamon - Audino (Mega)
-Pumpkinmon - Timburr
-Piximon - Gurdurr
-ShogunGekomon - Conkeldurr
-Zudomon - Tympole
-Aeroveedramon - Palpitoad
-Asuramon - Seismitoad
+MegaKabuterimon (Blue) - Herdier
 MegaKabuterimon (Red) - Throh
-BigMamemon - Sawk
-Tinmon - Sewaddle
-Blossomon - Swadloon
-BlueMeramon - Leavanny
-Brachiomon - Venipede
-Cyberdramon - Scolipede
-SkullMeramon - Cottonee
-Deramon - Whimsicot
+MegaSeadramon - Swoobat
+MetalGreymon (Virus) - Emboar
+MetalGreymon - Musharna
+MetalMamemon - Oshawott
+MetalTyrannomon - Excadrill
+Monzaemon - Dewott
+Okuwamon - Audino (Mega)
+Paildramon - Unfezant
 Phantomon - Petilil
-Garudamon - Lilligant
-Garbagemon - Lilligant (Hisui)
+Piximon - Gurdurr
+Pumpkinmon - Timburr
+Scorpiomon - Lillipup
+ShogunGekomon - Conkeldurr
+SkullGreymon - Samurott
+SkullMeramon - Cottonee
+Tinmon - Sewaddle
+Triceramon - Boldore
+Vademon - Samurott Hisui
+WarGrowlmon - Blitzle
+WereGarurumon - Pidove
+Zudomon - Tympole
 
 Mega List
 
+Apocalymon - Litleo
+Babamon - Pyroar
+BioSupinomon - Greninja
+BlitzGreymon - Frogadier
+Boltmon - Skiddo
+Creepymon - Gogoat
+CresGarurumon - Froakie
+Devitamamon - Pancham
+Diaboromon - Pangoro
+Dinomon - Fletchling
+Dinorexmon - Diggersby
 HerculesKabuterimon - Chespin
 Magnadramon - Quilladin
 Magnamon - Chesnaught
-WarGreymon - Fennekin
-MetalGarurumon - Braixen
-Omnimon - Delphox
-CresGarurumon - Froakie
-BlitzGreymon - Frogadier
-BioSupinomon - Greninja
-Rosemon Burst Mode - Ash Greninja
-Rosemon - Bunnelby
-Dinorexmon - Diggersby
-Dinomon - Fletchling
 MarineAngemon - Fletchinder
 MetalEtemon - Talonflame
+MetalGarurumon - Braixen
 MetalSeadramon - Scatterbug
+Omnimon - Delphox
 Pukumon - Spewpa
+Rosemon - Bunnelby
+Rosemon Burst Mode - Ash Greninja
 SaberLeomon - Vivillon
-Apocalymon - Litleo
-Babamon - Pyroar
-Boltmon - Skiddo
-Creepymon - Gogoat
-Devitamamon - Pancham
-Diaboromon - Pangoro
+WarGreymon - Fennekin
 
 SPECIES NAME LENGTH MAX = 13

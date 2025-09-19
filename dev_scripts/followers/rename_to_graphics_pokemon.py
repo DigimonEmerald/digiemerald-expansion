@@ -31,7 +31,7 @@ def rellocate_follower_graphics():
 
         newname = newname.replace("arceus_", "arceus/")
         newname = newname.replace("burmy_", "burmy/")
-        newname = newname.replace("basculin_", "basculin/")
+        newname = newname.replace("gigadramon_", "gigadramon/")
         newname = newname.replace("dolphmon_", "dolphmon/")
         newname = newname.replace("calyrex_", "calyrex/")
         newname = newname.replace("deerling_", "deerling/")

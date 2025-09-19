@@ -4369,75 +4369,78 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_PHANTOMON
 
-#if P_FAMILY_BASCULIN
-    [SPECIES_BASCULIN_RED_STRIPED] =
+#if P_FAMILY_GIGADRAMON
+    [SPECIES_GIGADRAMON] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 92,
-        .baseDefense   = 65,
-        .baseSpeed     = 98,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 190,
-        .expYield = 161,
-        .evYield_Speed = 2,
+        .baseHP        = 100,
+        .baseAttack    = 85,
+        .baseDefense   = 85,
+        .baseSpeed     = 125,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_STEEL),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_HP = 1,
+        .evYield_Speed = 3,
+        .evYield_SpAttack = 1,
         .itemRare = ITEM_DEEP_SEA_TOOTH,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_RECKLESS, ABILITY_ADAPTABILITY, ABILITY_MOLD_BREAKER },
-        .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Basculin"),
-        .cryId = CRY_BASCULIN,
-        .natDexNum = NATIONAL_DEX_BASCULIN,
-        .categoryName = _("Hostile"),
-        .height = 10,
-        .weight = 180,
+        .abilities = { ABILITY_SNIPER, ABILITY_NONE, ABILITY_MEGA_LAUNCHER },
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("Gigadramon"),
+        .cryId = CRY_GIGADRAMON,
+        .natDexNum = NATIONAL_DEX_GIGADRAMON,
+        .categoryName = _("Wicked"),
+        .height = 94,
+        .weight = 4626,
         .description = COMPOUND_STRING(
-            "It used to be a common food source. The\n"
-            "meat of red Basculin is on the fatty side\n"
-            "and it's more popular with the youth.\n"
-            "Its temperament is vicious and aggressive."),
+            "While Megadramon and Gigadramon started\n"
+            "development at the same time, Gigadramon\n"
+            "was further remodelled to have greater\n"
+            "combat capabilities."),
         .pokemonScale = 316,
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_BasculinRedStriped,
+        .frontPic = gMonFrontPic_Gigadramon,
         .frontPicSize = MON_COORDS_SIZE(56, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Basculin,
+        .frontAnimFrames = sAnims_Gigadramon,
         .frontAnimId = ANIM_TIP_MOVE_FORWARD,
         .enemyMonElevation = 6,
-        .backPic = gMonBackPic_BasculinRedStriped,
+        .backPic = gMonBackPic_Gigadramon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 16,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_BasculinRedStriped,
-        .shinyPalette = gMonShinyPalette_BasculinRedStriped,
-        .iconSprite = gMonIcon_BasculinRedStriped,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Gigadramon,
+        .shinyPalette = gMonShinyPalette_Gigadramon,
+        .iconSprite = gMonIcon_Gigadramon,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 4, SHADOW_SIZE_S)
-        FOOTPRINT(Basculin)
+        FOOTPRINT(Gigadramon)
         OVERWORLD(
-            sPicTable_BasculinRedStriped,
+            sPicTable_Gigadramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_BasculinRedStriped,
-            gShinyOverworldPalette_BasculinRedStriped
+            gOverworldPalette_Gigadramon,
+            gShinyOverworldPalette_Gigadramon
         )
-        .levelUpLearnset = sBasculinLevelUpLearnset,
-        .teachableLearnset = sBasculinTeachableLearnset,
-        .eggMoveLearnset = sBasculinEggMoveLearnset,
-        .formSpeciesIdTable = sBasculinFormSpeciesIdTable,
+        .levelUpLearnset = sGigadramonLevelUpLearnset,
+        .teachableLearnset = sGigadramonTeachableLearnset,
+        .eggMoveLearnset = sGigadramonEggMoveLearnset,
+        .formSpeciesIdTable = sGigadramonFormSpeciesIdTable,
     },
 
-    [SPECIES_BASCULIN_BLUE_STRIPED] =
+    [SPECIES_GIGADRAMON_BLUE_STRIPED] =
     {
         .baseHP        = 70,
         .baseAttack    = 92,
@@ -4457,55 +4460,55 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_ROCK_HEAD, ABILITY_ADAPTABILITY, ABILITY_MOLD_BREAKER },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Basculin"),
-        .cryId = CRY_BASCULIN,
-        .natDexNum = NATIONAL_DEX_BASCULIN,
+        .speciesName = _("Gigadramon"),
+        .cryId = CRY_GIGADRAMON,
+        .natDexNum = NATIONAL_DEX_GIGADRAMON,
         .categoryName = _("Hostile"),
         .height = 10,
         .weight = 180,
         .description = COMPOUND_STRING(
             "They form schools with others of the same\n"
             "color. The greatest foe of a school of blue\n"
-            "Basculin is a school of red Basculin.\n"
+            "Gigadramon is a school of red Gigadramon.\n"
             "Its flavor is light and inoffensive."),
         .pokemonScale = 316,
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_BasculinBlueStriped,
+        .frontPic = gMonFrontPic_GigadramonBlueStriped,
         .frontPicSize = MON_COORDS_SIZE(56, 40),
         .frontPicYOffset = 16,
-        .frontAnimFrames = sAnims_Basculin,
+        .frontAnimFrames = sAnims_Gigadramon,
         .frontAnimId = ANIM_TIP_MOVE_FORWARD,
         .enemyMonElevation = 6,
-        .backPic = gMonBackPic_BasculinBlueStriped,
+        .backPic = gMonBackPic_GigadramonBlueStriped,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 16,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_BasculinBlueStriped,
-        .shinyPalette = gMonShinyPalette_BasculinBlueStriped,
-        .iconSprite = gMonIcon_BasculinBlueStriped,
+        .palette = gMonPalette_GigadramonBlueStriped,
+        .shinyPalette = gMonShinyPalette_GigadramonBlueStriped,
+        .iconSprite = gMonIcon_GigadramonBlueStriped,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 1, SHADOW_SIZE_S)
-        FOOTPRINT(Basculin)
+        FOOTPRINT(Gigadramon)
         OVERWORLD(
-            sPicTable_BasculinBlueStriped,
+            sPicTable_GigadramonBlueStriped,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_BasculinBlueStriped,
-            gShinyOverworldPalette_BasculinBlueStriped
+            gOverworldPalette_GigadramonBlueStriped,
+            gShinyOverworldPalette_GigadramonBlueStriped
         )
-        .levelUpLearnset = sBasculinLevelUpLearnset,
-        .teachableLearnset = sBasculinTeachableLearnset,
-        .eggMoveLearnset = sBasculinEggMoveLearnset,
-        .formSpeciesIdTable = sBasculinFormSpeciesIdTable,
+        .levelUpLearnset = sGigadramonLevelUpLearnset,
+        .teachableLearnset = sGigadramonTeachableLearnset,
+        .eggMoveLearnset = sGigadramonEggMoveLearnset,
+        .formSpeciesIdTable = sGigadramonFormSpeciesIdTable,
     },
 
 #if P_HISUIAN_FORMS
-    [SPECIES_BASCULIN_WHITE_STRIPED] =
+    [SPECIES_GIGADRAMON_WHITE_STRIPED] =
     {
         .baseHP        = 70,
         .baseAttack    = 92,
@@ -4525,14 +4528,14 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_RATTLED, ABILITY_ADAPTABILITY, ABILITY_MOLD_BREAKER },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Basculin"),
-        .cryId = CRY_BASCULIN,
-        .natDexNum = NATIONAL_DEX_BASCULIN,
+        .speciesName = _("Gigadramon"),
+        .cryId = CRY_GIGADRAMON,
+        .natDexNum = NATIONAL_DEX_GIGADRAMON,
         .categoryName = _("Mellow"),
         .height = 10,
         .weight = 180,
         .description = COMPOUND_STRING(
-            "While this ancient form of Basculin shares\n"
+            "While this ancient form of Gigadramon shares\n"
             "a vast array of qualities with other forms,\n"
             "it differs in several respects, including\n"
             "demeanor, being much gentler than others."),
@@ -4540,36 +4543,36 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_BasculinWhiteStriped,
+        .frontPic = gMonFrontPic_GigadramonWhiteStriped,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 12,
-        .frontAnimFrames = sAnims_Basculin,
+        .frontAnimFrames = sAnims_Gigadramon,
         .frontAnimId = ANIM_TIP_MOVE_FORWARD,
         .enemyMonElevation = 6,
-        .backPic = gMonBackPic_BasculinWhiteStriped,
+        .backPic = gMonBackPic_GigadramonWhiteStriped,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 16,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_BasculinWhiteStriped,
-        .shinyPalette = gMonShinyPalette_BasculinWhiteStriped,
-        .iconSprite = gMonIcon_BasculinWhiteStriped,
+        .palette = gMonPalette_GigadramonWhiteStriped,
+        .shinyPalette = gMonShinyPalette_GigadramonWhiteStriped,
+        .iconSprite = gMonIcon_GigadramonWhiteStriped,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 5, SHADOW_SIZE_S)
-        FOOTPRINT(Basculin)
+        FOOTPRINT(Gigadramon)
         OVERWORLD(
-            sPicTable_BasculinWhiteStriped,
+            sPicTable_GigadramonWhiteStriped,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_BasculinWhiteStriped,
-            gShinyOverworldPalette_BasculinWhiteStriped
+            gOverworldPalette_GigadramonWhiteStriped,
+            gShinyOverworldPalette_GigadramonWhiteStriped
         )
-        .levelUpLearnset = sBasculinWhiteStripedLevelUpLearnset,
-        .teachableLearnset = sBasculinWhiteStripedTeachableLearnset,
-        .eggMoveLearnset = sBasculinWhiteStripedEggMoveLearnset,
-        .formSpeciesIdTable = sBasculinFormSpeciesIdTable,
+        .levelUpLearnset = sGigadramonWhiteStripedLevelUpLearnset,
+        .teachableLearnset = sGigadramonWhiteStripedTeachableLearnset,
+        .eggMoveLearnset = sGigadramonWhiteStripedEggMoveLearnset,
+        .formSpeciesIdTable = sGigadramonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_BASCULEGION_M, CONDITIONS({IF_RECOIL_DAMAGE_GE, 294}, {IF_GENDER, MON_GENDERLESS})},
                                 {EVO_LEVEL, 0, SPECIES_BASCULEGION_F, CONDITIONS({IF_RECOIL_DAMAGE_GE, 294}, {IF_GENDER, MON_GENDERLESS})}),
     },
@@ -4703,7 +4706,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .formSpeciesIdTable = sBasculegionFormSpeciesIdTable,
     },
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_BASCULIN
+#endif //P_FAMILY_GIGADRAMON
 
 #if P_FAMILY_SANDILE
     [SPECIES_SANDILE] =

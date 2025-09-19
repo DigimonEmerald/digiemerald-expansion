@@ -329,7 +329,7 @@
 #define P_FAMILY_BRACHIOMON                P_GEN_5_POKEMON
 #define P_FAMILY_SKULLMERAMON                P_GEN_5_POKEMON
 #define P_FAMILY_PHANTOMON                 P_GEN_5_POKEMON
-#define P_FAMILY_BASCULIN                P_GEN_5_POKEMON
+#define P_FAMILY_GIGADRAMON                P_GEN_5_POKEMON
 #define P_FAMILY_SANDILE                 P_GEN_5_POKEMON
 #define P_FAMILY_DARUMAKA                P_GEN_5_POKEMON
 #define P_FAMILY_MARACTUS                P_GEN_5_POKEMON

@@ -22749,8 +22749,8 @@ static const u16 sGarbagemonTeachableLearnset[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_PHANTOMON
 
-#if P_FAMILY_BASCULIN
-static const u16 sBasculinTeachableLearnset[] = {
+#if P_FAMILY_GIGADRAMON
+static const u16 sGigadramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_CUT,
@@ -22779,7 +22779,7 @@ static const u16 sBasculinTeachableLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const u16 sBasculinWhiteStripedTeachableLearnset[] = {
+static const u16 sGigadramonWhiteStripedTeachableLearnset[] = {
     MOVE_BLIZZARD,
     MOVE_DOUBLE_EDGE,
     MOVE_ENDURE,
@@ -22819,7 +22819,7 @@ static const u16 sBasculegionTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_BASCULIN
+#endif //P_FAMILY_GIGADRAMON
 
 #if P_FAMILY_SANDILE
 static const u16 sSandileTeachableLearnset[] = {

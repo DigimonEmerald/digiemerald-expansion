@@ -12684,8 +12684,8 @@ static const struct LevelUpMove sGarbagemonLevelUpLearnset[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_PHANTOMON
 
-#if P_FAMILY_BASCULIN
-static const struct LevelUpMove sBasculinLevelUpLearnset[] = {
+#if P_FAMILY_GIGADRAMON
+static const struct LevelUpMove sGigadramonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FLAIL),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
@@ -12709,7 +12709,7 @@ static const struct LevelUpMove sBasculinLevelUpLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const struct LevelUpMove sBasculinWhiteStripedLevelUpLearnset[] = {
+static const struct LevelUpMove sGigadramonWhiteStripedLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 6, MOVE_AQUA_JET),
     LEVEL_UP_MOVE(11, MOVE_BITE),
@@ -12733,7 +12733,7 @@ static const struct LevelUpMove sBasculegionLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_BASCULIN
+#endif //P_FAMILY_GIGADRAMON
 
 #if P_FAMILY_SANDILE
 static const struct LevelUpMove sSandileLevelUpLearnset[] = {

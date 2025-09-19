@@ -2910,7 +2910,7 @@ $(POKEMONGFXDIR)/phantomon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/garudamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/basculin/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/gigadramon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/sandile/overworld.4bpp: %.4bpp: %.png
@@ -4131,7 +4131,7 @@ $(POKEMONGFXDIR)/wyrdeer/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/kleavor/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/basculin/white_striped/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/gigadramon/white_striped/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/basculegion/overworld.4bpp: %.4bpp: %.png
@@ -4254,7 +4254,7 @@ $(POKEMONGFXDIR)/arceus/dark/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/arceus/fairy/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 8 -mheight 8
 
-$(POKEMONGFXDIR)/basculin/blue_striped/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/gigadramon/blue_striped/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/deerling/autumn/overworld.4bpp: %.4bpp: %.png

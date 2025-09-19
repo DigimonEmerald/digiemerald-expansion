@@ -4264,8 +4264,8 @@ static const u16 sPhantomonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_PHANTOMON
 
-#if P_FAMILY_BASCULIN
-static const u16 sBasculinEggMoveLearnset[] = {
+#if P_FAMILY_GIGADRAMON
+static const u16 sGigadramonEggMoveLearnset[] = {
     MOVE_SWIFT,
     MOVE_BUBBLE_BEAM,
     MOVE_MUD_SHOT,
@@ -4279,13 +4279,13 @@ static const u16 sBasculinEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #if P_HISUIAN_FORMS
-static const u16 sBasculinWhiteStripedEggMoveLearnset[] = {
+static const u16 sGigadramonWhiteStripedEggMoveLearnset[] = {
     MOVE_ENDEAVOR,
     MOVE_LAST_RESPECTS,
     MOVE_UNAVAILABLE,
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_BASCULIN
+#endif //P_FAMILY_GIGADRAMON
 
 #if P_FAMILY_SANDILE
 static const u16 sSandileEggMoveLearnset[] = {

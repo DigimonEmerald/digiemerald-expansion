@@ -6851,8 +6851,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Garbagemon);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_PHANTOMON
 
-#if P_FAMILY_BASCULIN
-static const union AnimCmd sAnim_Basculin_1[] =
+#if P_FAMILY_GIGADRAMON
+static const union AnimCmd sAnim_Gigadramon_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 8),
@@ -6866,7 +6866,7 @@ static const union AnimCmd sAnim_Basculin_1[] =
 #if P_HISUIAN_FORMS
 PLACEHOLDER_ANIM_SINGLE_FRAME(Basculegion);
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_BASCULIN
+#endif //P_FAMILY_GIGADRAMON
 
 #if P_FAMILY_SANDILE
 static const union AnimCmd sAnim_Sandile_1[] =
@@ -11714,12 +11714,12 @@ SINGLE_ANIMATION(Garudamon);
 SINGLE_ANIMATION(Garbagemon);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_PHANTOMON
-#if P_FAMILY_BASCULIN
-SINGLE_ANIMATION(Basculin);
+#if P_FAMILY_GIGADRAMON
+SINGLE_ANIMATION(Gigadramon);
 #if P_HISUIAN_FORMS
 SINGLE_ANIMATION(Basculegion);
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_BASCULIN
+#endif //P_FAMILY_GIGADRAMON
 #if P_FAMILY_SANDILE
 SINGLE_ANIMATION(Sandile);
 SINGLE_ANIMATION(Krokorok);

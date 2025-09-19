@@ -567,8 +567,8 @@
 #define SPECIES_DERAMON                              547
 #define SPECIES_PHANTOMON                                 548
 #define SPECIES_GARUDAMON                               549
-#define SPECIES_BASCULIN                                SPECIES_BASCULIN_RED_STRIPED
-#define SPECIES_BASCULIN_RED_STRIPED                    550
+#define SPECIES_GIGADRAMON                                SPECIES_GIGADRAMON
+#define SPECIES_GIGADRAMON                    550
 #define SPECIES_SANDILE                                 551
 #define SPECIES_KROKOROK                                552
 #define SPECIES_KROOKODILE                              553
@@ -1157,8 +1157,8 @@
 #define SPECIES_ARCEUS_DRAGON                           1087
 #define SPECIES_ARCEUS_DARK                             1088
 #define SPECIES_ARCEUS_FAIRY                            1089
-#define SPECIES_BASCULIN_BLUE_STRIPED                   1090
-#define SPECIES_BASCULIN_WHITE_STRIPED                  1091
+#define SPECIES_GIGADRAMON_BLUE_STRIPED                   1090
+#define SPECIES_GIGADRAMON_WHITE_STRIPED                  1091
 #define SPECIES_DARMANITAN_ZEN                          1092
 #define SPECIES_DARMANITAN_GALAR_ZEN                    1093
 #define SPECIES_DEERLING_SUMMER                         1094

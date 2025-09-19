@@ -3953,16 +3953,16 @@ static const struct SpriteFrameImage sPicTable_Garbagemon[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_PHANTOMON
 
-#if P_FAMILY_BASCULIN
-static const struct SpriteFrameImage sPicTable_BasculinRedStriped[] = {
-    overworld_ascending_frames(gObjectEventPic_BasculinRedStriped, 4, 4),
+#if P_FAMILY_GIGADRAMON
+static const struct SpriteFrameImage sPicTable_Gigadramon[] = {
+    overworld_ascending_frames(gObjectEventPic_Gigadramon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_BasculinBlueStriped[] = {
-    overworld_ascending_frames(gObjectEventPic_BasculinBlueStriped, 4, 4),
+static const struct SpriteFrameImage sPicTable_GigadramonBlueStriped[] = {
+    overworld_ascending_frames(gObjectEventPic_GigadramonBlueStriped, 4, 4),
 };
 #if P_HISUIAN_FORMS
-static const struct SpriteFrameImage sPicTable_BasculinWhiteStriped[] = {
-    overworld_ascending_frames(gObjectEventPic_BasculinWhiteStriped, 4, 4),
+static const struct SpriteFrameImage sPicTable_GigadramonWhiteStriped[] = {
+    overworld_ascending_frames(gObjectEventPic_GigadramonWhiteStriped, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_BasculegionM[] = {
     overworld_ascending_frames(gObjectEventPic_BasculegionM, 4, 4),
@@ -3971,7 +3971,7 @@ static const struct SpriteFrameImage sPicTable_BasculegionF[] = {
     overworld_ascending_frames(gObjectEventPic_BasculegionF, 4, 4),
 };
 #endif //P_HISUIAN_FORMS
-#endif //P_FAMILY_BASCULIN
+#endif //P_FAMILY_GIGADRAMON
 
 #if P_FAMILY_SANDILE
 static const struct SpriteFrameImage sPicTable_Sandile[] = {

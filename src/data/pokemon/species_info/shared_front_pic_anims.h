@@ -104,8 +104,8 @@ static const union AnimCmd *const sAnims_Arceus[] =
 };
 #endif //P_FAMILY_ARCEUS
 
-#if P_FAMILY_BASCULIN
-static const union AnimCmd *const sAnims_Basculin[] =
+#if P_FAMILY_GIGADRAMON
+static const union AnimCmd *const sAnims_Gigadramon[] =
 {
     sAnim_GeneralFrame0,
     (const union AnimCmd[]) {
@@ -118,7 +118,7 @@ static const union AnimCmd *const sAnims_Basculin[] =
         ANIMCMD_END,
     },
 };
-#endif //P_FAMILY_BASCULIN
+#endif //P_FAMILY_GIGADRAMON
 
 #if P_FAMILY_DEERLING
 static const union AnimCmd *const sAnims_Deerling[] =

@@ -1368,12 +1368,12 @@ gCryTable::
 	cry Cry_Phantomon
 	cry Cry_Garudamon
 .endif @ P_FAMILY_PHANTOMON
-.if P_FAMILY_BASCULIN == TRUE
-	cry Cry_Basculin
+.if P_FAMILY_GIGADRAMON == TRUE
+	cry Cry_Gigadramon
 .if P_HISUIAN_FORMS == TRUE
 	cry Cry_Basculegion
 .endif @ P_HISUIAN_FORMS
-.endif @ P_FAMILY_BASCULIN
+.endif @ P_FAMILY_GIGADRAMON
 .if P_FAMILY_SANDILE == TRUE
 	cry Cry_Sandile
 	cry Cry_Krokorok
@@ -3796,12 +3796,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Phantomon
 	cry_reverse Cry_Garudamon
 .endif @ P_FAMILY_PHANTOMON
-.if P_FAMILY_BASCULIN == TRUE
-	cry_reverse Cry_Basculin
+.if P_FAMILY_GIGADRAMON == TRUE
+	cry_reverse Cry_Gigadramon
 .if P_HISUIAN_FORMS == TRUE
 	cry_reverse Cry_Basculegion
 .endif @ P_HISUIAN_FORMS
-.endif @ P_FAMILY_BASCULIN
+.endif @ P_FAMILY_GIGADRAMON
 .if P_FAMILY_SANDILE == TRUE
 	cry_reverse Cry_Sandile
 	cry_reverse Cry_Krokorok
