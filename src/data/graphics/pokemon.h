@@ -16874,16 +16874,16 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_HISUIAN_FORMS
-    const u32 gMonFrontPic_GarudamonHisui[] = INCBIN_U32("graphics/pokemon/garudamon/hisui/front.4bpp.smol");
-    const u16 gMonPalette_GarudamonHisui[] = INCBIN_U16("graphics/pokemon/garudamon/hisui/normal.gbapal");
-    const u32 gMonBackPic_GarudamonHisui[] = INCBIN_U32("graphics/pokemon/garudamon/hisui/back.4bpp.smol");
-    const u16 gMonShinyPalette_GarudamonHisui[] = INCBIN_U16("graphics/pokemon/garudamon/hisui/shiny.gbapal");
-    const u8 gMonIcon_GarudamonHisui[] = INCBIN_U8("graphics/pokemon/garudamon/hisui/icon.4bpp");
+    const u32 gMonFrontPic_Garbagemon[] = INCBIN_U32("graphics/pokemon/garbagemon/front.4bpp.smol");
+    const u16 gMonPalette_Garbagemon[] = INCBIN_U16("graphics/pokemon/garbagemon/normal.gbapal");
+    const u32 gMonBackPic_Garbagemon[] = INCBIN_U32("graphics/pokemon/garbagemon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Garbagemon[] = INCBIN_U16("graphics/pokemon/garbagemon/shiny.gbapal");
+    const u8 gMonIcon_Garbagemon[] = INCBIN_U8("graphics/pokemon/garbagemon/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_GarudamonHisui[] = INCBIN_COMP("graphics/pokemon/garudamon/hisui/overworld.4bpp");
+    const u32 gObjectEventPic_Garbagemon[] = INCBIN_COMP("graphics/pokemon/garbagemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_GarudamonHisui[] = INCBIN_U16("graphics/pokemon/garudamon/hisui/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_GarudamonHisui[] = INCBIN_U16("graphics/pokemon/garudamon/hisui/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Garbagemon[] = INCBIN_U16("graphics/pokemon/garbagemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Garbagemon[] = INCBIN_U16("graphics/pokemon/garbagemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_HISUIAN_FORMS

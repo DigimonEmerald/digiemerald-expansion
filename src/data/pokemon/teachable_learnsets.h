@@ -22725,7 +22725,7 @@ static const u16 sGarudamonTeachableLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const u16 sGarudamonHisuiTeachableLearnset[] = {
+static const u16 sGarbagemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BRICK_BREAK,
     MOVE_BULLET_SEED,

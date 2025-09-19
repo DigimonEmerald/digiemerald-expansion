@@ -11602,7 +11602,7 @@ static const struct LevelUpMove sGarudamonLevelUpLearnset[] = {
 };
 
 #if P_HISUIAN_FORMS
-static const struct LevelUpMove sGarudamonHisuiLevelUpLearnset[] = {
+static const struct LevelUpMove sGarbagemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_ROCK_SMASH),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 5, MOVE_LEAFAGE),

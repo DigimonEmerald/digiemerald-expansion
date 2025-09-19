@@ -4224,7 +4224,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sPhantomonTeachableLearnset,
         .eggMoveLearnset = sPhantomonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_GARUDAMON},
-                                {EVO_NONE, 0, SPECIES_GARUDAMON_HISUI}),
+                                {EVO_NONE, 0, SPECIES_GARBAGEMON}),
     },
 
     [SPECIES_GARUDAMON] =
@@ -4300,75 +4300,73 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .formSpeciesIdTable = sGarudamonFormSpeciesIdTable,
     },
 
-#if P_HISUIAN_FORMS
-    [SPECIES_GARUDAMON_HISUI] =
+    [SPECIES_GARBAGEMON] =
     {
         .baseHP        = 70,
-        .baseAttack    = 105,
-        .baseDefense   = 75,
-        .baseSpeed     = 105,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_GRASS, TYPE_FIGHTING),
-        .catchRate = 75,
-        .expYield = 168,
-        .evYield_Attack = 1,
-        .evYield_Speed = 1,
+        .baseAttack    = 85,
+        .baseDefense   = 125,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 95,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_POISON),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_Defense = 5,
         .itemRare = ITEM_ABSORB_BULB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
-        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_HUSTLE, ABILITY_LEAF_GUARD },
-        .bodyColor = BODY_COLOR_GREEN,
+        .abilities = { ABILITY_STENCH, ABILITY_NONE, ABILITY_SNIPER },
+        .bodyColor = BODY_COLOR_PINK,
         .noFlip = TRUE,
-        .speciesName = _("Garudamon"),
+        .speciesName = _("Garbagemon"),
         .cryId = CRY_GARUDAMON,
         .natDexNum = NATIONAL_DEX_GARUDAMON,
-        .categoryName = _("Spinning"),
-        .height = 12,
-        .weight = 192,
+        .categoryName = _("Inventor"),
+        .height = 9,
+        .weight = 241,
         .description = COMPOUND_STRING(
-            "Its well-developed legs are the result of\n"
-            "a life spent on mountains covered in deep\n"
-            "snow. The scent it exudes from its flower\n"
-            "crown heartens those in proximity."),
+            "Before the existence of Garbagemon, Trash\n"
+            "Digimon were one of the weakest species.\n"
+            "Garbagemon possesses good offensive and\n"
+            "defensive capabilities"),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_GarudamonHisui,
+        .frontPic = gMonFrontPic_Garbagemon,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_GarudamonHisui,
+        .backPic = gMonBackPic_Garbagemon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 5,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_GarudamonHisui,
-        .shinyPalette = gMonShinyPalette_GarudamonHisui,
-        .iconSprite = gMonIcon_GarudamonHisui,
+        .palette = gMonPalette_Garbagemon,
+        .shinyPalette = gMonShinyPalette_Garbagemon,
+        .iconSprite = gMonIcon_Garbagemon,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-3, 13, SHADOW_SIZE_S)
         FOOTPRINT(Garudamon)
         OVERWORLD(
-            sPicTable_GarudamonHisui,
+            sPicTable_Garbagemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_GarudamonHisui,
-            gShinyOverworldPalette_GarudamonHisui
+            gOverworldPalette_Garbagemon,
+            gShinyOverworldPalette_Garbagemon
         )
         .isHisuianForm = TRUE,
-        .levelUpLearnset = sGarudamonHisuiLevelUpLearnset,
-        .teachableLearnset = sGarudamonHisuiTeachableLearnset,
+        .levelUpLearnset = sGarbagemonLevelUpLearnset,
+        .teachableLearnset = sGarbagemonTeachableLearnset,
         .formSpeciesIdTable = sGarudamonFormSpeciesIdTable,
     },
-#endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_PHANTOMON
 
 #if P_FAMILY_BASCULIN

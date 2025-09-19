@@ -1166,7 +1166,7 @@ static const u16 sDatamonFormSpeciesIdTable[] = {
 static const u16 sGarudamonFormSpeciesIdTable[] = {
     SPECIES_GARUDAMON,
 #if P_HISUIAN_FORMS
-    SPECIES_GARUDAMON_HISUI,
+    SPECIES_GARBAGEMON,
 #endif
     FORM_SPECIES_END,
 };
