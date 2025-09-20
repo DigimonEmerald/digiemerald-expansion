@@ -435,7 +435,7 @@
 #define SPECIES_CHERRIM                                 SPECIES_UNIMON
 #define SPECIES_UNIMON                        421
 #define SPECIES_GOLEMON                            422
-#define SPECIES_GUARDROMON                                 SPECIES_GOLEMON
+#define SPECIES_SHELLOS                                 SPECIES_GOLEMON
 #define SPECIES_GURURUMON                          423
 #define SPECIES_GASTRODON                               SPECIES_GURURUMON
 #define SPECIES_AMBIPOM                                 424
@@ -1129,7 +1129,7 @@
 #define SPECIES_OCTOMON                          1059
 #define SPECIES_OGREMON                          1060
 #define SPECIES_VEEDRAMON                        1061
-#define SPECIES_GUARDROMON_FILLER                            1062
+#define SPECIES_SHELLOS_EAST                            1062
 #define SPECIES_GASTRODON_EAST                          1063
 #define SPECIES_ROTOM_HEAT                              1064
 #define SPECIES_ROTOM_WASH                              1065

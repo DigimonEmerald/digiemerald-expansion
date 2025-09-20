@@ -8662,7 +8662,7 @@ static const struct LevelUpMove sVeedramonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_TORTOMON
 
-#if P_FAMILY_GUARDROMON
+#if P_FAMILY_SHELLOS
 static const struct LevelUpMove sGolemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
@@ -8677,17 +8677,18 @@ static const struct LevelUpMove sGolemonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sGuardromonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_POUND),
-    LEVEL_UP_MOVE( 1, MOVE_MAGNET_BOMB),
-    LEVEL_UP_MOVE( 1, MOVE_SPARK),
-    LEVEL_UP_MOVE(20, MOVE_BULLET_SEED), // Gatling
-    LEVEL_UP_MOVE(24, MOVE_HOLY_SHOOT),
-    LEVEL_UP_MOVE(28, MOVE_WILL_O_WISP),
-    LEVEL_UP_MOVE(32, MOVE_LOCK_ON),
-    LEVEL_UP_MOVE(36, MOVE_FLASH_CANNON),
-    LEVEL_UP_MOVE(40, MOVE_SELF_DESTRUCT),
+static const struct LevelUpMove sShellosLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
+    LEVEL_UP_MOVE( 5, MOVE_HARDEN),
+    LEVEL_UP_MOVE(10, MOVE_RECOVER),
+    LEVEL_UP_MOVE(15, MOVE_WATER_PULSE),
+    LEVEL_UP_MOVE(20, MOVE_ANCIENT_POWER),
+    LEVEL_UP_MOVE(25, MOVE_BODY_SLAM),
+    LEVEL_UP_MOVE(31, MOVE_MUDDY_WATER),
+    LEVEL_UP_MOVE(35, MOVE_EARTH_POWER),
+    LEVEL_UP_MOVE(40, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(45, MOVE_MEMENTO),
     LEVEL_UP_END
 };
 
@@ -8726,7 +8727,7 @@ static const struct LevelUpMove sGastrodonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(53, MOVE_MEMENTO),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_GUARDROMON
+#endif //P_FAMILY_SHELLOS
 
 
 #if P_FAMILY_DRIFLOON

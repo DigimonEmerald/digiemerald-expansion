@@ -19229,8 +19229,8 @@ static const u16 sCherrimTeachableLearnset[] = {
 };
 #endif //P_FAMILY_TORTOMON
 
-#if P_FAMILY_GUARDROMON
-static const u16 sGuardromonTeachableLearnset[] = {
+#if P_FAMILY_SHELLOS
+static const u16 sShellosTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
@@ -19294,7 +19294,7 @@ static const u16 sGastrodonTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_GUARDROMON
+#endif //P_FAMILY_SHELLOS
 
 #if P_FAMILY_DRIFLOON
 static const u16 sDrifloonTeachableLearnset[] = {

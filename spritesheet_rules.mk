@@ -2457,7 +2457,7 @@ $(POKEMONGFXDIR)/tortomon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/cherrim/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/guardromon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/shellos/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/gastrodon/overworld.4bpp: %.4bpp: %.png
@@ -4179,7 +4179,7 @@ $(POKEMONGFXDIR)/octomon/sandy/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/wormadam/trash/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/guardromon/east/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/shellos/east/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/gastrodon/east/overworld.4bpp: %.4bpp: %.png

@@ -1141,9 +1141,10 @@ gCryTable::
 	cry Cry_Tortomon
 	cry Cry_Cherrim
 .endif @ P_FAMILY_TORTOMON
-.if P_FAMILY_GUARDROMON == TRUE
-	cry Cry_Gururumon
-.endif @ P_FAMILY_GUARDROMON
+.if P_FAMILY_SHELLOS == TRUE
+	cry Cry_Shellos
+	cry Cry_Gastrodon
+.endif @ P_FAMILY_SHELLOS
 .if P_FAMILY_DRIFLOON == TRUE
 	cry Cry_Drifloon
 	cry Cry_Drifblim
@@ -3567,9 +3568,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Tortomon
 	cry_reverse Cry_Cherrim
 .endif @ P_FAMILY_TORTOMON
-.if P_FAMILY_GUARDROMON == TRUE
-	cry_reverse Cry_Gururumon
-.endif @ P_FAMILY_GUARDROMON
+.if P_FAMILY_SHELLOS == TRUE
+	cry_reverse Cry_Shellos
+	cry_reverse Cry_Gastrodon
+.endif @ P_FAMILY_SHELLOS
 .if P_FAMILY_DRIFLOON == TRUE
 	cry_reverse Cry_Drifloon
 	cry_reverse Cry_Drifblim

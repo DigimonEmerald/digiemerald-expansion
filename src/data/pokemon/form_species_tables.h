@@ -1020,10 +1020,10 @@ static const u16 sCherrimFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_TORTOMON
 
-#if P_FAMILY_GUARDROMON
-static const u16 sGuardromonFormSpeciesIdTable[] = {
+#if P_FAMILY_SHELLOS
+static const u16 sShellosFormSpeciesIdTable[] = {
     SPECIES_GOLEMON,
-    SPECIES_GUARDROMON,
+    SPECIES_SHELLOS_EAST,
     FORM_SPECIES_END,
 };
 
@@ -1032,7 +1032,7 @@ static const u16 sGastrodonFormSpeciesIdTable[] = {
     SPECIES_GASTRODON_EAST,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_GUARDROMON
+#endif //P_FAMILY_SHELLOS
 
 #if P_FAMILY_BUNEARY
 static const u16 sLopunnyFormSpeciesIdTable[] = {

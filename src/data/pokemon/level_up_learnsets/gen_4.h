@@ -9643,8 +9643,8 @@ static const struct LevelUpMove sCherrimLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_TORTOMON
 
-#if P_FAMILY_GUARDROMON
-static const struct LevelUpMove sGuardromonLevelUpLearnset[] = {
+#if P_FAMILY_SHELLOS
+static const struct LevelUpMove sShellosLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE( 2, MOVE_MUD_SPORT),
     LEVEL_UP_MOVE( 4, MOVE_HARDEN),
@@ -9674,7 +9674,7 @@ static const struct LevelUpMove sGastrodonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(54, MOVE_RECOVER),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_GUARDROMON
+#endif //P_FAMILY_SHELLOS
 
 #if P_FAMILY_DRIFLOON
 static const struct LevelUpMove sDrifloonLevelUpLearnset[] = {

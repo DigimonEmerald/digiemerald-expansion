@@ -474,8 +474,8 @@
 #define P_FAMILY_SHELLMON                  TRUE
 #undef P_FAMILY_TORTOMON
 #define P_FAMILY_TORTOMON                 TRUE
-#undef P_FAMILY_GUARDROMON
-#define P_FAMILY_GUARDROMON                 TRUE
+#undef P_FAMILY_SHELLOS
+#define P_FAMILY_SHELLOS                 TRUE
 #undef P_FAMILY_DRIFLOON
 #define P_FAMILY_DRIFLOON                TRUE
 #undef P_FAMILY_BUNEARY

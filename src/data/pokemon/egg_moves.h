@@ -3626,8 +3626,8 @@ static const u16 sTortomonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_TORTOMON
 
-#if P_FAMILY_GUARDROMON
-static const u16 sGuardromonEggMoveLearnset[] = {
+#if P_FAMILY_SHELLOS
+static const u16 sShellosEggMoveLearnset[] = {
     MOVE_COUNTER,
     MOVE_MIRROR_COAT,
     MOVE_STOCKPILE,
@@ -3646,7 +3646,7 @@ static const u16 sGuardromonEggMoveLearnset[] = {
     MOVE_ACID_ARMOR,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_GUARDROMON
+#endif //P_FAMILY_SHELLOS
 
 #if P_FAMILY_DRIFLOON
 static const u16 sDrifloonEggMoveLearnset[] = {
