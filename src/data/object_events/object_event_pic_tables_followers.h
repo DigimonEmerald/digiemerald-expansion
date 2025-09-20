@@ -3957,8 +3957,8 @@ static const struct SpriteFrameImage sPicTable_Garbagemon[] = {
 static const struct SpriteFrameImage sPicTable_Gigadramon[] = {
     overworld_ascending_frames(gObjectEventPic_Gigadramon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Kingsukamon[] = {
-    overworld_ascending_frames(gObjectEventPic_Kingsukamon, 4, 4),
+static const struct SpriteFrameImage sPicTable_GigadramonBlueStriped[] = {
+    overworld_ascending_frames(gObjectEventPic_GigadramonBlueStriped, 4, 4),
 };
 #if P_HISUIAN_FORMS
 static const struct SpriteFrameImage sPicTable_GigadramonWhiteStriped[] = {

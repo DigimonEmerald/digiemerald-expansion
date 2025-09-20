@@ -16899,20 +16899,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u8 gMonFootprint_Gigadramon[] = INCBIN_U8("graphics/pokemon/gigadramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_Kingsukamon[] = INCBIN_U32("graphics/pokemon/kingsukamon/anim_front.4bpp.smol");
-    const u16 gMonPalette_Kingsukamon[] = INCBIN_U16("graphics/pokemon/kingsukamon/normal.gbapal");
-    const u32 gMonBackPic_Kingsukamon[] = INCBIN_U32("graphics/pokemon/kingsukamon/back.4bpp.smol");
-    const u16 gMonShinyPalette_Kingsukamon[] = INCBIN_U16("graphics/pokemon/kingsukamon/shiny.gbapal");
-    const u8 gMonIcon_Kingsukamon[] = INCBIN_U8("graphics/pokemon/kingsukamon/icon.4bpp");
+    const u32 gMonFrontPic_GigadramonBlueStriped[] = INCBIN_U32("graphics/pokemon/gigadramon/blue_striped/anim_front.4bpp.smol");
+    const u16 gMonPalette_GigadramonBlueStriped[] = INCBIN_U16("graphics/pokemon/gigadramon/blue_striped/normal.gbapal");
+    const u32 gMonBackPic_GigadramonBlueStriped[] = INCBIN_U32("graphics/pokemon/gigadramon/blue_striped/back.4bpp.smol");
+    const u16 gMonShinyPalette_GigadramonBlueStriped[] = INCBIN_U16("graphics/pokemon/gigadramon/blue_striped/shiny.gbapal");
+    const u8 gMonIcon_GigadramonBlueStriped[] = INCBIN_U8("graphics/pokemon/gigadramon/blue_striped/icon.4bpp");
 
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Gigadramon[] = INCBIN_COMP("graphics/pokemon/gigadramon/overworld.4bpp");
-    const u32 gObjectEventPic_Kingsukamon[] = INCBIN_COMP("graphics/pokemon/kingsukamon/overworld.4bpp");
+    const u32 gObjectEventPic_GigadramonBlueStriped[] = INCBIN_COMP("graphics/pokemon/gigadramon/blue_striped/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
     const u16 gOverworldPalette_Gigadramon[] = INCBIN_U16("graphics/pokemon/gigadramon/overworld_normal.gbapal");
-    const u16 gOverworldPalette_Kingsukamon[] = INCBIN_U16("graphics/pokemon/kingsukamon/overworld_normal.gbapal");
+    const u16 gOverworldPalette_GigadramonBlueStriped[] = INCBIN_U16("graphics/pokemon/gigadramon/blue_striped/overworld_normal.gbapal");
     const u16 gShinyOverworldPalette_Gigadramon[] = INCBIN_U16("graphics/pokemon/gigadramon/overworld_shiny.gbapal");
-    const u16 gShinyOverworldPalette_Kingsukamon[] = INCBIN_U16("graphics/pokemon/kingsukamon/overworld_shiny.gbapal");
+    const u16 gShinyOverworldPalette_GigadramonBlueStriped[] = INCBIN_U16("graphics/pokemon/gigadramon/blue_striped/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
