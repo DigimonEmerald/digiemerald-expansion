@@ -437,6 +437,7 @@ Vegiemon - Prinplup
 Vilemon - Staravia
 Whamon - Empoleon
 Golemon - Shellos (West)
+Guardromon - Shellos (East)
 
 Ultimate List
 

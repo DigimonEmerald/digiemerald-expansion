@@ -64,8 +64,8 @@ static const union AnimCmd *const sAnims_Mothim[] =
 };
 #endif //P_FAMILY_MEKANORIMON
 
-#if P_FAMILY_SHELLOS
-static const union AnimCmd *const sAnims_Shellos[] =
+#if P_FAMILY_GUARDROMON
+static const union AnimCmd *const sAnims_Guardromon[] =
 {
     sAnim_GeneralFrame0,
     (const union AnimCmd[]) {
@@ -89,7 +89,7 @@ static const union AnimCmd *const sAnims_Gastrodon[] =
         ANIMCMD_END,
     },
 };
-#endif //P_FAMILY_SHELLOS
+#endif //P_FAMILY_GUARDROMON
 
 #if P_FAMILY_ARCEUS
 static const union AnimCmd *const sAnims_Arceus[] =

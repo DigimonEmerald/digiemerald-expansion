@@ -14201,7 +14201,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_TORTOMON
 
-#if P_FAMILY_SHELLOS
+#if P_FAMILY_GUARDROMON
     [SPECIES_GOLEMON] =
     {
         .baseHP        = 85,
@@ -14224,8 +14224,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .abilities = { ABILITY_STURDY, ABILITY_OBLIVIOUS, ABILITY_SHEER_FORCE },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Golemon"),
-        .cryId = CRY_SHELLOS,
-        .natDexNum = NATIONAL_DEX_SHELLOS,
+        .cryId = CRY_GUARDROMON,
+        .natDexNum = NATIONAL_DEX_GUARDROMON,
         .categoryName = _("Golem"),
         .height = 61,
         .weight = 1955,
@@ -14241,7 +14241,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .frontPic = gMonFrontPic_Golemon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 13,
-        .frontAnimFrames = sAnims_Shellos,
+        .frontAnimFrames = sAnims_Guardromon,
         .frontAnimId = ANIM_V_STRETCH,
         .backPic = gMonBackPic_Golemon,
         .backPicSize = MON_COORDS_SIZE(40, 56),
@@ -14253,7 +14253,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(1, 0, SHADOW_SIZE_S)
-        FOOTPRINT(Shellos)
+        FOOTPRINT(Guardromon)
         OVERWORLD(
             sPicTable_Golemon,
             SIZE_32x32,
@@ -14264,75 +14264,77 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gShinyOverworldPalette_Golemon
         )
         .levelUpLearnset = sGolemonLevelUpLearnset,
-        .teachableLearnset = sShellosTeachableLearnset,
-        .eggMoveLearnset = sShellosEggMoveLearnset,
-        .formSpeciesIdTable = sShellosFormSpeciesIdTable,
+        .teachableLearnset = sGuardromonTeachableLearnset,
+        .eggMoveLearnset = sGuardromonEggMoveLearnset,
+        .formSpeciesIdTable = sGuardromonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GASTRODON_WEST}),
     },
 
-    [SPECIES_SHELLOS_EAST] =
+    [SPECIES_GUARDROMON] =
     {
-        .baseHP        = 76,
-        .baseAttack    = 48,
-        .baseDefense   = 48,
-        .baseSpeed     = 34,
-        .baseSpAttack  = 57,
-        .baseSpDefense = 62,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 190,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 65 : 73,
-        .evYield_HP = 1,
+        .baseHP        = 110,
+        .baseAttack    = 75,
+        .baseDefense   = 100,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_STEEL),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP = 3,
+        .evYield_Defense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_STICKY_HOLD, ABILITY_STORM_DRAIN, ABILITY_SAND_FORCE },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Shellos"),
-        .cryId = CRY_SHELLOS,
-        .natDexNum = NATIONAL_DEX_SHELLOS,
-        .categoryName = _("Sea Slug"),
-        .height = 3,
-        .weight = 63,
+        .abilities = { ABILITY_GUARD_DOG, ABILITY_ARENA_TRAP, ABILITY_STEAM_ENGINE },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Guardromon"),
+        .cryId = CRY_GUARDROMON,
+        .natDexNum = NATIONAL_DEX_GUARDROMON,
+        .categoryName = _("Mecha"),
+        .height = 39,
+        .weight = 2845,
         .description = COMPOUND_STRING(
-            "It's capable of spending a limited amount\n"
-            "of time on land until their skin dries out.\n"
-            "One theory suggests that living in cold\n"
-            "seas causes Shellos to take on this form."),
+            "The only command that Guardromon knows\n"
+            "is 'Defend' making it one of the most\n"
+            "reliable guardians in the Digital World.\n"
+            "It is very easy to hack it though."),
         .pokemonScale = 530,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_ShellosEast,
+        .frontPic = gMonFrontPic_Guardromon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 14,
-        .frontAnimFrames = sAnims_Shellos,
+        .frontAnimFrames = sAnims_Guardromon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_ShellosEast,
+        .backPic = gMonBackPic_Guardromon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_H_SPRING,
-        .palette = gMonPalette_ShellosEast,
-        .shinyPalette = gMonShinyPalette_ShellosEast,
-        .iconSprite = gMonIcon_ShellosEast,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Guardromon,
+        .shinyPalette = gMonShinyPalette_Guardromon,
+        .iconSprite = gMonIcon_Guardromon,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(2, -1, SHADOW_SIZE_S)
-        FOOTPRINT(Shellos)
+        FOOTPRINT(Guardromon)
         OVERWORLD(
-            sPicTable_ShellosEast,
+            sPicTable_Guardromon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_ShellosEast,
-            gShinyOverworldPalette_ShellosEast
+            gOverworldPalette_Guardromon,
+            gShinyOverworldPalette_Guardromon
         )
-        .levelUpLearnset = sShellosLevelUpLearnset,
-        .teachableLearnset = sShellosTeachableLearnset,
-        .eggMoveLearnset = sShellosEggMoveLearnset,
-        .formSpeciesIdTable = sShellosFormSpeciesIdTable,
+        .levelUpLearnset = sGuardromonLevelUpLearnset,
+        .teachableLearnset = sGuardromonTeachableLearnset,
+        .eggMoveLearnset = sGuardromonEggMoveLearnset,
+        .formSpeciesIdTable = sGuardromonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GASTRODON_EAST}),
     },
 
@@ -14463,7 +14465,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .teachableLearnset = sGastrodonTeachableLearnset,
         .formSpeciesIdTable = sGastrodonFormSpeciesIdTable,
     },
-#endif //P_FAMILY_SHELLOS
+#endif //P_FAMILY_GUARDROMON
 
 #if P_FAMILY_DRIFLOON
     [SPECIES_DRIFLOON] =

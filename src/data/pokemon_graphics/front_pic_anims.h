@@ -5633,8 +5633,8 @@ static const union AnimCmd sAnim_Veedramon_1[] =
 };
 #endif //P_FAMILY_TORTOMON
 
-#if P_FAMILY_SHELLOS
-static const union AnimCmd sAnim_Shellos_1[] =
+#if P_FAMILY_GUARDROMON
+static const union AnimCmd sAnim_Guardromon_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 36),
@@ -5652,7 +5652,7 @@ static const union AnimCmd sAnim_Gastrodon_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SHELLOS
+#endif //P_FAMILY_GUARDROMON
 
 #if P_FAMILY_DRIFLOON
 static const union AnimCmd sAnim_Drifloon_1[] =
@@ -11473,10 +11473,10 @@ SINGLE_ANIMATION(Tortomon);
 SINGLE_ANIMATION(Unimon);
 SINGLE_ANIMATION(Veedramon);
 #endif //P_FAMILY_TORTOMON
-#if P_FAMILY_SHELLOS
-SINGLE_ANIMATION(Shellos);
+#if P_FAMILY_GUARDROMON
+SINGLE_ANIMATION(Guardromon);
 SINGLE_ANIMATION(Gastrodon);
-#endif //P_FAMILY_SHELLOS
+#endif //P_FAMILY_GUARDROMON
 #if P_FAMILY_DRIFLOON
 SINGLE_ANIMATION(Drifloon);
 SINGLE_ANIMATION(Drifblim);

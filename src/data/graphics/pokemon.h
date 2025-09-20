@@ -14705,30 +14705,30 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_TORTOMON
 
-#if P_FAMILY_SHELLOS
+#if P_FAMILY_GUARDROMON
     const u32 gMonFrontPic_Golemon[] = INCBIN_U32("graphics/pokemon/golemon/anim_front.4bpp.smol");
     const u16 gMonPalette_Golemon[] = INCBIN_U16("graphics/pokemon/golemon/normal.gbapal");
     const u32 gMonBackPic_Golemon[] = INCBIN_U32("graphics/pokemon/golemon/back.4bpp.smol");
     const u16 gMonShinyPalette_Golemon[] = INCBIN_U16("graphics/pokemon/golemon/shiny.gbapal");
     const u8 gMonIcon_Golemon[] = INCBIN_U8("graphics/pokemon/golemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Shellos[] = INCBIN_U8("graphics/pokemon/golemon/footprint.1bpp");
+    const u8 gMonFootprint_Guardromon[] = INCBIN_U8("graphics/pokemon/golemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_ShellosEast[] = INCBIN_U32("graphics/pokemon/golemon/east/anim_front.4bpp.smol");
-    const u16 gMonPalette_ShellosEast[] = INCBIN_U16("graphics/pokemon/golemon/east/normal.gbapal");
-    const u32 gMonBackPic_ShellosEast[] = INCBIN_U32("graphics/pokemon/golemon/east/back.4bpp.smol");
-    const u16 gMonShinyPalette_ShellosEast[] = INCBIN_U16("graphics/pokemon/golemon/east/shiny.gbapal");
-    const u8 gMonIcon_ShellosEast[] = INCBIN_U8("graphics/pokemon/golemon/east/icon.4bpp");
+    const u32 gMonFrontPic_Guardromon[] = INCBIN_U32("graphics/pokemon/guardromon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Guardromon[] = INCBIN_U16("graphics/pokemon/guardromon/normal.gbapal");
+    const u32 gMonBackPic_Guardromon[] = INCBIN_U32("graphics/pokemon/guardromon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Guardromon[] = INCBIN_U16("graphics/pokemon/guardromon/shiny.gbapal");
+    const u8 gMonIcon_Guardromon[] = INCBIN_U8("graphics/pokemon/guardromon/icon.4bpp");
 
 #if OW_POKEMON_OBJECT_EVENTS
     const u32 gObjectEventPic_Golemon[] = INCBIN_COMP("graphics/pokemon/golemon/overworld.4bpp");
-    const u32 gObjectEventPic_ShellosEast[] = INCBIN_COMP("graphics/pokemon/golemon/east/overworld.4bpp");
+    const u32 gObjectEventPic_Guardromon[] = INCBIN_COMP("graphics/pokemon/guardromon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
     const u16 gOverworldPalette_Golemon[] = INCBIN_U16("graphics/pokemon/golemon/overworld_normal.gbapal");
-    const u16 gOverworldPalette_ShellosEast[] = INCBIN_U16("graphics/pokemon/golemon/east/overworld_normal.gbapal");
+    const u16 gOverworldPalette_Guardromon[] = INCBIN_U16("graphics/pokemon/guardromon/overworld_normal.gbapal");
     const u16 gShinyOverworldPalette_Golemon[] = INCBIN_U16("graphics/pokemon/golemon/overworld_shiny.gbapal");
-    const u16 gShinyOverworldPalette_ShellosEast[] = INCBIN_U16("graphics/pokemon/golemon/east/overworld_shiny.gbapal");
+    const u16 gShinyOverworldPalette_Guardromon[] = INCBIN_U16("graphics/pokemon/guardromon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -14756,7 +14756,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_GastrodonEast[] = INCBIN_U16("graphics/pokemon/gastrodon/east/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_SHELLOS
+#endif //P_FAMILY_GUARDROMON
 
 #if P_FAMILY_DRIFLOON
     const u32 gMonFrontPic_Drifloon[] = INCBIN_U32("graphics/pokemon/drifloon/anim_front.4bpp.smol");

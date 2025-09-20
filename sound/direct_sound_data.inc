@@ -3054,15 +3054,15 @@ Cry_Cherrim::
 	.incbin "sound/direct_sound_samples/cries/unimon.bin"
 .endif @ P_FAMILY_TORTOMON
 
-.if P_FAMILY_SHELLOS == TRUE
+.if P_FAMILY_GUARDROMON == TRUE
 	.align 2
-Cry_Shellos::
-	.incbin "sound/direct_sound_samples/cries/shellos.bin"
+Cry_Guardromon::
+	.incbin "sound/direct_sound_samples/cries/guardromon.bin"
 
 	.align 2
 Cry_Gastrodon::
 	.incbin "sound/direct_sound_samples/cries/gastrodon.bin"
-.endif @ P_FAMILY_SHELLOS
+.endif @ P_FAMILY_GUARDROMON
 
 .if P_FAMILY_DRIFLOON == TRUE
 	.align 2
