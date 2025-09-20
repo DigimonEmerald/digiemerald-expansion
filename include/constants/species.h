@@ -436,8 +436,8 @@
 #define SPECIES_UNIMON                        421
 #define SPECIES_GOLEMON                            422
 #define SPECIES_GUARDROMON                                 SPECIES_GOLEMON
-#define SPECIES_GASTRODON_WEST                          423
-#define SPECIES_GASTRODON                               SPECIES_GASTRODON_WEST
+#define SPECIES_GURURUMON                          423
+#define SPECIES_GASTRODON                               SPECIES_GURURUMON
 #define SPECIES_AMBIPOM                                 424
 #define SPECIES_DRIFLOON                                425
 #define SPECIES_DRIFBLIM                                426

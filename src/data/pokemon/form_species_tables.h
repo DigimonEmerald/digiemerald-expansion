@@ -1028,7 +1028,7 @@ static const u16 sGuardromonFormSpeciesIdTable[] = {
 };
 
 static const u16 sGastrodonFormSpeciesIdTable[] = {
-    SPECIES_GASTRODON_WEST,
+    SPECIES_GURURUMON,
     SPECIES_GASTRODON_EAST,
     FORM_SPECIES_END,
 };

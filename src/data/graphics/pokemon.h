@@ -14732,28 +14732,28 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_GastrodonWestSea[] = INCBIN_U32("graphics/pokemon/gastrodon/anim_front.4bpp.smol");
-    const u16 gMonPalette_GastrodonWestSea[] = INCBIN_U16("graphics/pokemon/gastrodon/normal.gbapal");
-    const u32 gMonBackPic_GastrodonWestSea[] = INCBIN_U32("graphics/pokemon/gastrodon/back.4bpp.smol");
-    const u16 gMonShinyPalette_GastrodonWestSea[] = INCBIN_U16("graphics/pokemon/gastrodon/shiny.gbapal");
-    const u8 gMonIcon_GastrodonWestSea[] = INCBIN_U8("graphics/pokemon/gastrodon/icon.4bpp");
+    const u32 gMonFrontPic_Gururumon[] = INCBIN_U32("graphics/gururumon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Gururumon[] = INCBIN_U16("graphics/gururumon/normal.gbapal");
+    const u32 gMonBackPic_Gururumon[] = INCBIN_U32("graphics/gururumon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Gururumon[] = INCBIN_U16("graphics/gururumon/shiny.gbapal");
+    const u8 gMonIcon_Gururumon[] = INCBIN_U8("graphics/gururumon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Gastrodon[] = INCBIN_U8("graphics/pokemon/gastrodon/footprint.1bpp");
+    const u8 gMonFootprint_Gastrodon[] = INCBIN_U8("graphics/gururumon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 
-    const u32 gMonFrontPic_GastrodonEast[] = INCBIN_U32("graphics/pokemon/gastrodon/east/anim_front.4bpp.smol");
-    const u16 gMonPalette_GastrodonEast[] = INCBIN_U16("graphics/pokemon/gastrodon/east/normal.gbapal");
-    const u32 gMonBackPic_GastrodonEast[] = INCBIN_U32("graphics/pokemon/gastrodon/east/back.4bpp.smol");
-    const u16 gMonShinyPalette_GastrodonEast[] = INCBIN_U16("graphics/pokemon/gastrodon/east/shiny.gbapal");
-    const u8 gMonIcon_GastrodonEast[] = INCBIN_U8("graphics/pokemon/gastrodon/east/icon.4bpp");
+    const u32 gMonFrontPic_GastrodonEast[] = INCBIN_U32("graphics/gururumon/east/anim_front.4bpp.smol");
+    const u16 gMonPalette_GastrodonEast[] = INCBIN_U16("graphics/gururumon/east/normal.gbapal");
+    const u32 gMonBackPic_GastrodonEast[] = INCBIN_U32("graphics/gururumon/east/back.4bpp.smol");
+    const u16 gMonShinyPalette_GastrodonEast[] = INCBIN_U16("graphics/gururumon/east/shiny.gbapal");
+    const u8 gMonIcon_GastrodonEast[] = INCBIN_U8("graphics/gururumon/east/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_GastrodonWestSea[] = INCBIN_COMP("graphics/pokemon/gastrodon/overworld.4bpp");
-    const u32 gObjectEventPic_GastrodonEast[] = INCBIN_COMP("graphics/pokemon/gastrodon/east/overworld.4bpp");
+    const u32 gObjectEventPic_Gururumon[] = INCBIN_COMP("graphics/gururumon/overworld.4bpp");
+    const u32 gObjectEventPic_GastrodonEast[] = INCBIN_COMP("graphics/gururumon/east/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_GastrodonWestSea[] = INCBIN_U16("graphics/pokemon/gastrodon/overworld_normal.gbapal");
-    const u16 gOverworldPalette_GastrodonEast[] = INCBIN_U16("graphics/pokemon/gastrodon/east/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_GastrodonWestSea[] = INCBIN_U16("graphics/pokemon/gastrodon/overworld_shiny.gbapal");
-    const u16 gShinyOverworldPalette_GastrodonEast[] = INCBIN_U16("graphics/pokemon/gastrodon/east/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Gururumon[] = INCBIN_U16("graphics/gururumon/overworld_normal.gbapal");
+    const u16 gOverworldPalette_GastrodonEast[] = INCBIN_U16("graphics/gururumon/east/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Gururumon[] = INCBIN_U16("graphics/gururumon/overworld_shiny.gbapal");
+    const u16 gShinyOverworldPalette_GastrodonEast[] = INCBIN_U16("graphics/gururumon/east/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_GUARDROMON

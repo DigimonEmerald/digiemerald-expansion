@@ -14267,7 +14267,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .teachableLearnset = sGuardromonTeachableLearnset,
         .eggMoveLearnset = sGuardromonEggMoveLearnset,
         .formSpeciesIdTable = sGuardromonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GASTRODON_WEST}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GURURUMON}),
     },
 
     [SPECIES_GUARDROMON] =
@@ -14338,66 +14338,67 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_GASTRODON_EAST}),
     },
 
-    [SPECIES_GASTRODON_WEST] =
+    [SPECIES_GURURUMON] =
     {
-        .baseHP        = 111,
-        .baseAttack    = 83,
-        .baseDefense   = 68,
-        .baseSpeed     = 39,
-        .baseSpAttack  = 92,
-        .baseSpDefense = 82,
-        .types = MON_TYPES(TYPE_WATER, TYPE_GROUND),
-        .catchRate = 75,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 166 : 176,
-        .evYield_HP = 2,
+        .baseHP        = 60,
+        .baseAttack    = 65,
+        .baseDefense   = 70,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_DARK, TYPE_FIRE),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed = 4,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_STICKY_HOLD, ABILITY_STORM_DRAIN, ABILITY_SAND_FORCE },
-        .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Gastrodon"),
+        .abilities = { ABILITY_FLASH_FIRE, ABILITY_WONDER_SKIN, ABILITY_INTIMIDATE },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Gururumon"),
         .cryId = CRY_GASTRODON,
         .natDexNum = NATIONAL_DEX_GASTRODON,
-        .categoryName = _("Sea Slug"),
-        .height = 9,
-        .weight = 299,
+        .categoryName = _("Canine"),
+        .height = 55,
+        .weight = 604,
         .description = COMPOUND_STRING(
-            "It appears on shallow-water beaches to\n"
-            "eat sand for nourishment. Should one\n"
-            "Gastrodon encounter another of a\n"
-            "different color, a fierce battle will ensue."),
+            "Unlike Garurumon, who it shares a\n"
+            "striking similiarity to, Gururumon\n"
+            "likes to lurk in the dark and cause\n"
+            "mischief for anyone who passes it by."),
         .pokemonScale = 338,
         .pokemonOffset = 8,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_GastrodonWestSea,
+        .frontPic = gMonFrontPic_Gururumon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 8,
         .frontAnimFrames = sAnims_Gastrodon,
         .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
-        .backPic = gMonBackPic_GastrodonWestSea,
+        .backPic = gMonBackPic_Gururumon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_GastrodonWestSea,
-        .shinyPalette = gMonShinyPalette_GastrodonWestSea,
-        .iconSprite = gMonIcon_GastrodonWestSea,
+        .palette = gMonPalette_Gururumon,
+        .shinyPalette = gMonShinyPalette_Gururumon,
+        .iconSprite = gMonIcon_Gururumon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 3, SHADOW_SIZE_M)
         FOOTPRINT(Gastrodon)
         OVERWORLD(
-            sPicTable_GastrodonWestSea,
+            sPicTable_Gururumon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_GastrodonWestSea,
-            gShinyOverworldPalette_GastrodonWestSea
+            gOverworldPalette_Gururumon,
+            gShinyOverworldPalette_Gururumon
         )
-        .levelUpLearnset = sGastrodonLevelUpLearnset,
+        .levelUpLearnset = sGururumonLevelUpLearnset,
         .teachableLearnset = sGastrodonTeachableLearnset,
         .formSpeciesIdTable = sGastrodonFormSpeciesIdTable,
     },

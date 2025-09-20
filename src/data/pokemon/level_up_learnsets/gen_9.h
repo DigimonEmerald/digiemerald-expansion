@@ -8691,6 +8691,27 @@ static const struct LevelUpMove sGuardromonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+static const struct LevelUpMove sGururumonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_ICICLE_SPEAR),
+    LEVEL_UP_MOVE(3, MOVE_TAIL_WHIP),
+    LEVEL_UP_MOVE(5, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE(8, MOVE_BITE),
+    LEVEL_UP_MOVE(10, MOVE_HEAL_BELL),
+    LEVEL_UP_MOVE(13, MOVE_PURSUIT),
+    LEVEL_UP_MOVE(16, MOVE_DOUBLE_KICK),
+    LEVEL_UP_MOVE(19, MOVE_FLAME_CHARGE),
+    LEVEL_UP_MOVE(21, MOVE_SAND_ATTACK),
+    LEVEL_UP_MOVE(24, MOVE_ROAR),
+    LEVEL_UP_MOVE(27, MOVE_SLASH),
+    LEVEL_UP_MOVE(30, MOVE_SCARY_FACE),
+    LEVEL_UP_MOVE(33, MOVE_BODY_SLAM),
+    LEVEL_UP_MOVE(36, MOVE_NIGHT_SLASH),
+    LEVEL_UP_MOVE(39, MOVE_FLAMETHROWER),
+    LEVEL_UP_MOVE(43, MOVE_NASTY_PLOT),
+    LEVEL_UP_MOVE(47, MOVE_SWAGGER),
+    LEVEL_UP_END
+};
+
 static const struct LevelUpMove sGastrodonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
     LEVEL_UP_MOVE( 1, MOVE_RECOVER),
@@ -8706,6 +8727,7 @@ static const struct LevelUpMove sGastrodonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_FAMILY_GUARDROMON
+
 
 #if P_FAMILY_DRIFLOON
 static const struct LevelUpMove sDrifloonLevelUpLearnset[] = {
