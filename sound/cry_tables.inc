@@ -1376,7 +1376,7 @@ gCryTable::
 .endif @ P_FAMILY_GIGADRAMON
 .if P_FAMILY_KINGSUKAMON == TRUE
 	cry Cry_Kingsukamon
-	cry Cry_Krokorok
+	cry Cry_Divermon
 	cry Cry_Krookodile
 .endif @ P_FAMILY_KINGSUKAMON
 .if P_FAMILY_DARUMAKA == TRUE
@@ -3803,7 +3803,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_GIGADRAMON
 .if P_FAMILY_KINGSUKAMON == TRUE
 	cry_reverse Cry_Kingsukamon
-	cry_reverse Cry_Krokorok
+	cry_reverse Cry_Divermon
 	cry_reverse Cry_Krookodile
 .endif @ P_FAMILY_KINGSUKAMON
 .if P_FAMILY_DARUMAKA == TRUE

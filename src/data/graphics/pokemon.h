@@ -16976,19 +16976,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Krokorok[] = INCBIN_U32("graphics/pokemon/krokorok/anim_front.4bpp.smol");
-    const u16 gMonPalette_Krokorok[] = INCBIN_U16("graphics/pokemon/krokorok/normal.gbapal");
-    const u32 gMonBackPic_Krokorok[] = INCBIN_U32("graphics/pokemon/krokorok/back.4bpp.smol");
-    const u16 gMonShinyPalette_Krokorok[] = INCBIN_U16("graphics/pokemon/krokorok/shiny.gbapal");
-    const u8 gMonIcon_Krokorok[] = INCBIN_U8("graphics/pokemon/krokorok/icon.4bpp");
+    const u32 gMonFrontPic_Divermon[] = INCBIN_U32("graphics/pokemon/divermon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Divermon[] = INCBIN_U16("graphics/pokemon/divermon/normal.gbapal");
+    const u32 gMonBackPic_Divermon[] = INCBIN_U32("graphics/pokemon/divermon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Divermon[] = INCBIN_U16("graphics/pokemon/divermon/shiny.gbapal");
+    const u8 gMonIcon_Divermon[] = INCBIN_U8("graphics/pokemon/divermon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Krokorok[] = INCBIN_U8("graphics/pokemon/krokorok/footprint.1bpp");
+    const u8 gMonFootprint_Divermon[] = INCBIN_U8("graphics/pokemon/divermon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Krokorok[] = INCBIN_COMP("graphics/pokemon/krokorok/overworld.4bpp");
+    const u32 gObjectEventPic_Divermon[] = INCBIN_COMP("graphics/pokemon/divermon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Krokorok[] = INCBIN_U16("graphics/pokemon/krokorok/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Krokorok[] = INCBIN_U16("graphics/pokemon/krokorok/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Divermon[] = INCBIN_U16("graphics/pokemon/divermon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Divermon[] = INCBIN_U16("graphics/pokemon/divermon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

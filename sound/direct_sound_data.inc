@@ -3621,8 +3621,8 @@ Cry_Kingsukamon::
 	.incbin "sound/direct_sound_samples/cries/kingsukamon.bin"
 
 	.align 2
-Cry_Krokorok::
-	.incbin "sound/direct_sound_samples/cries/krokorok.bin"
+Cry_Divermon::
+	.incbin "sound/direct_sound_samples/cries/divermon.bin"
 
 	.align 2
 Cry_Krookodile::

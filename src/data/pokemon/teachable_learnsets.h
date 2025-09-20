@@ -22854,7 +22854,7 @@ static const u16 sKingsukamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sKrokorokTeachableLearnset[] = {
+static const u16 sDivermonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,

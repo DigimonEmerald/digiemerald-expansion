@@ -437,7 +437,7 @@ Vegiemon - Prinplup
 Vilemon - Staravia
 Whamon - Empoleon
 Golemon - Shellos (West)
-Guardromon - Shellos (East)
+Guardromon - Drifloon
 Gururumon - Gastrodon (West)
 
 Ultimate List
@@ -502,6 +502,7 @@ WereGarurumon - Pidove
 Zudomon - Tympole
 Gigadramon - Basculin (Red-Striped)
 KingSukamon - Sandile
+Divermon - Krokorok
 
 Mega List
 

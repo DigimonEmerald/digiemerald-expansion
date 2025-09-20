@@ -4779,45 +4779,48 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sKingsukamonLevelUpLearnset,
         .teachableLearnset = sKingsukamonTeachableLearnset,
         .eggMoveLearnset = sKingsukamonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 29, SPECIES_KROKOROK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 29, SPECIES_DIVERMON}),
     },
 
-    [SPECIES_KROKOROK] =
+    [SPECIES_DIVERMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 82,
-        .baseDefense   = 45,
-        .baseSpeed     = 74,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_GROUND, TYPE_DARK),
-        .catchRate = 90,
-        .expYield = 123,
+        .baseHP        = 70,
+        .baseAttack    = 100,
+        .baseDefense   = 60,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_WATER),
+        .attribute = TYPE_DATA,
+        .catchRate = 95,
+        .expYield = 200,
         .evYield_Attack = 2,
+        .evYield_Speed = 1,
+        .evYield_SpAttack = 2,
         .itemRare = ITEM_BLACK_GLASSES,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_MOXIE, ABILITY_ANGER_POINT },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Krokorok"),
-        .cryId = CRY_KROKOROK,
-        .natDexNum = NATIONAL_DEX_KROKOROK,
-        .categoryName = _("Desert Croc"),
-        .height = 10,
-        .weight = 334,
+        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_RAIN_DISH, ABILITY_DRY_SKIN },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Divermon"),
+        .cryId = CRY_DIVERMON,
+        .natDexNum = NATIONAL_DEX_DIVERMON,
+        .categoryName = _("Fish-Man"),
+        .height = 14,
+        .weight = 434,
         .description = COMPOUND_STRING(
-            "They move in groups of a few individuals.\n"
-            "Thanks to the special membrane covering\n"
-            "its eyes, it can see its surroundings\n"
-            "clearly, even in the dead of night."),
+            "Divermon have a cheerful personality\n"
+            "that they love to show as they swim\n"
+            "in the net ocean. It uses its high\n"
+            "mobility in water for attacking."),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Krokorok,
+        .frontPic = gMonFrontPic_Divermon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
@@ -4825,28 +4828,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Krokorok,
+        .backPic = gMonBackPic_Divermon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Krokorok,
-        .shinyPalette = gMonShinyPalette_Krokorok,
-        .iconSprite = gMonIcon_Krokorok,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Divermon,
+        .shinyPalette = gMonShinyPalette_Divermon,
+        .iconSprite = gMonIcon_Divermon,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 8, SHADOW_SIZE_M)
-        FOOTPRINT(Krokorok)
+        FOOTPRINT(Divermon)
         OVERWORLD(
-            sPicTable_Krokorok,
+            sPicTable_Divermon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Krokorok,
-            gShinyOverworldPalette_Krokorok
+            gOverworldPalette_Divermon,
+            gShinyOverworldPalette_Divermon
         )
-        .levelUpLearnset = sKrokorokLevelUpLearnset,
-        .teachableLearnset = sKrokorokTeachableLearnset,
+        .levelUpLearnset = sDivermonLevelUpLearnset,
+        .teachableLearnset = sDivermonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_KROOKODILE}),
     },
 
