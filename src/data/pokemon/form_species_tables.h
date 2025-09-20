@@ -1474,7 +1474,7 @@ static const u16 sFurfrouFormSpeciesIdTable[] = {
 
 #if P_FAMILY_GOLDRAMON
 static const u16 sMeowsticFormSpeciesIdTable[] = {
-    SPECIES_MEOWSTIC_M,
+    SPECIES_GRYPHONMON,
     SPECIES_MEOWSTIC_F,
     FORM_SPECIES_END,
 };

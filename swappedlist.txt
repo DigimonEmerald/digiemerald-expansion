@@ -528,5 +528,6 @@ Rosemon Burst Mode - Ash Greninja
 SaberLeomon - Vivillon
 WarGreymon - Fennekin
 Goldramon - Espurr
+Gryphonmon - Meowstic (Male)
 
 SPECIES NAME LENGTH MAX = 13

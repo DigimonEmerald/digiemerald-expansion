@@ -27188,7 +27188,7 @@ static const u16 sGoldramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sMeowsticMTeachableLearnset[] = {
+static const u16 sGryphonmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_CUT,

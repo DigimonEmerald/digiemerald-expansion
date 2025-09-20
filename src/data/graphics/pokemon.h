@@ -19894,32 +19894,32 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_MeowsticM[] = INCBIN_U32("graphics/pokemon/meowstic/anim_front.4bpp.smol");
-    const u16 gMonPalette_MeowsticM[] = INCBIN_U16("graphics/pokemon/meowstic/normal.gbapal");
-    const u32 gMonBackPic_MeowsticM[] = INCBIN_U32("graphics/pokemon/meowstic/back.4bpp.smol");
-    const u16 gMonShinyPalette_MeowsticM[] = INCBIN_U16("graphics/pokemon/meowstic/shiny.gbapal");
-    const u8 gMonIcon_MeowsticM[] = INCBIN_U8("graphics/pokemon/meowstic/icon.4bpp");
+    const u32 gMonFrontPic_Gryphonmon[] = INCBIN_U32("graphics/pokemon/gryphonmon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Gryphonmon[] = INCBIN_U16("graphics/pokemon/gryphonmon/normal.gbapal");
+    const u32 gMonBackPic_Gryphonmon[] = INCBIN_U32("graphics/pokemon/gryphonmon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Gryphonmon[] = INCBIN_U16("graphics/pokemon/gryphonmon/shiny.gbapal");
+    const u8 gMonIcon_Gryphonmon[] = INCBIN_U8("graphics/pokemon/gryphonmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Meowstic[] = INCBIN_U8("graphics/pokemon/meowstic/footprint.1bpp");
+    const u8 gMonFootprint_Meowstic[] = INCBIN_U8("graphics/pokemon/gryphonmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_MeowsticM[] = INCBIN_COMP("graphics/pokemon/meowstic/overworld.4bpp");
+    const u32 gObjectEventPic_Gryphonmon[] = INCBIN_COMP("graphics/pokemon/gryphonmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_MeowsticM[] = INCBIN_U16("graphics/pokemon/meowstic/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_MeowsticM[] = INCBIN_U16("graphics/pokemon/meowstic/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Gryphonmon[] = INCBIN_U16("graphics/pokemon/gryphonmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Gryphonmon[] = INCBIN_U16("graphics/pokemon/gryphonmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_MeowsticF[] = INCBIN_U32("graphics/pokemon/meowstic/f/anim_front.4bpp.smol");
-    const u16 gMonPalette_MeowsticF[] = INCBIN_U16("graphics/pokemon/meowstic/f/normal.gbapal");
-    const u32 gMonBackPic_MeowsticF[] = INCBIN_U32("graphics/pokemon/meowstic/f/back.4bpp.smol");
-    const u16 gMonShinyPalette_MeowsticF[] = INCBIN_U16("graphics/pokemon/meowstic/f/shiny.gbapal");
-    const u8 gMonIcon_MeowsticF[] = INCBIN_U8("graphics/pokemon/meowstic/f/icon.4bpp");
+    const u32 gMonFrontPic_MeowsticF[] = INCBIN_U32("graphics/pokemon/gryphonmon/f/anim_front.4bpp.smol");
+    const u16 gMonPalette_MeowsticF[] = INCBIN_U16("graphics/pokemon/gryphonmon/f/normal.gbapal");
+    const u32 gMonBackPic_MeowsticF[] = INCBIN_U32("graphics/pokemon/gryphonmon/f/back.4bpp.smol");
+    const u16 gMonShinyPalette_MeowsticF[] = INCBIN_U16("graphics/pokemon/gryphonmon/f/shiny.gbapal");
+    const u8 gMonIcon_MeowsticF[] = INCBIN_U8("graphics/pokemon/gryphonmon/f/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_MeowsticF[] = INCBIN_COMP("graphics/pokemon/meowstic/f/overworld.4bpp");
+    const u32 gObjectEventPic_MeowsticF[] = INCBIN_COMP("graphics/pokemon/gryphonmon/f/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_MeowsticF[] = INCBIN_U16("graphics/pokemon/meowstic/f/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_MeowsticF[] = INCBIN_U16("graphics/pokemon/meowstic/f/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_MeowsticF[] = INCBIN_U16("graphics/pokemon/gryphonmon/f/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_MeowsticF[] = INCBIN_U16("graphics/pokemon/gryphonmon/f/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_GOLDRAMON
