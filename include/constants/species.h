@@ -440,7 +440,7 @@
 #define SPECIES_GASTRODON                               SPECIES_GURURUMON
 #define SPECIES_AMBIPOM                                 424
 #define SPECIES_GUARDROMON                                425
-#define SPECIES_DRIFBLIM                                426
+#define SPECIES_HONEYBEEMON                                426
 #define SPECIES_BUNEARY                                 427
 #define SPECIES_LOPUNNY                                 428
 #define SPECIES_MISMAGIUS                               429

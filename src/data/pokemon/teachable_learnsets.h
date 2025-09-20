@@ -19334,7 +19334,7 @@ static const u16 sGuardromonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDrifblimTeachableLearnset[] = {
+static const u16 sHoneybeemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,

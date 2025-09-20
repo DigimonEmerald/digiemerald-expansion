@@ -5664,7 +5664,7 @@ static const union AnimCmd sAnim_Guardromon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Drifblim_1[] =
+static const union AnimCmd sAnim_Honeybeemon_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 25),
@@ -11479,7 +11479,7 @@ SINGLE_ANIMATION(Gastrodon);
 #endif //P_FAMILY_SHELLOS
 #if P_FAMILY_GUARDROMON
 SINGLE_ANIMATION(Guardromon);
-SINGLE_ANIMATION(Drifblim);
+SINGLE_ANIMATION(Honeybeemon);
 #endif //P_FAMILY_GUARDROMON
 #if P_FAMILY_BUNEARY
 SINGLE_ANIMATION(Buneary);

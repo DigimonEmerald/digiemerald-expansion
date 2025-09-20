@@ -14775,19 +14775,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Drifblim[] = INCBIN_U32("graphics/pokemon/drifblim/anim_front.4bpp.smol");
-    const u16 gMonPalette_Drifblim[] = INCBIN_U16("graphics/pokemon/drifblim/normal.gbapal");
-    const u32 gMonBackPic_Drifblim[] = INCBIN_U32("graphics/pokemon/drifblim/back.4bpp.smol");
-    const u16 gMonShinyPalette_Drifblim[] = INCBIN_U16("graphics/pokemon/drifblim/shiny.gbapal");
-    const u8 gMonIcon_Drifblim[] = INCBIN_U8("graphics/pokemon/drifblim/icon.4bpp");
+    const u32 gMonFrontPic_Honeybeemon[] = INCBIN_U32("graphics/pokemon/honeybeemon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Honeybeemon[] = INCBIN_U16("graphics/pokemon/honeybeemon/normal.gbapal");
+    const u32 gMonBackPic_Honeybeemon[] = INCBIN_U32("graphics/pokemon/honeybeemon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Honeybeemon[] = INCBIN_U16("graphics/pokemon/honeybeemon/shiny.gbapal");
+    const u8 gMonIcon_Honeybeemon[] = INCBIN_U8("graphics/pokemon/honeybeemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Drifblim[] = INCBIN_U8("graphics/pokemon/drifblim/footprint.1bpp");
+    const u8 gMonFootprint_Honeybeemon[] = INCBIN_U8("graphics/pokemon/honeybeemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Drifblim[] = INCBIN_COMP("graphics/pokemon/drifblim/overworld.4bpp");
+    const u32 gObjectEventPic_Honeybeemon[] = INCBIN_COMP("graphics/pokemon/honeybeemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Drifblim[] = INCBIN_U16("graphics/pokemon/drifblim/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Drifblim[] = INCBIN_U16("graphics/pokemon/drifblim/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Honeybeemon[] = INCBIN_U16("graphics/pokemon/honeybeemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Honeybeemon[] = INCBIN_U16("graphics/pokemon/honeybeemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_GUARDROMON

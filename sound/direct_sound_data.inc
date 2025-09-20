@@ -3070,8 +3070,8 @@ Cry_Guardromon::
 	.incbin "sound/direct_sound_samples/cries/guardromon.bin"
 
 	.align 2
-Cry_Drifblim::
-	.incbin "sound/direct_sound_samples/cries/drifblim.bin"
+Cry_Honeybeemon::
+	.incbin "sound/direct_sound_samples/cries/honeybeemon.bin"
 .endif @ P_FAMILY_GUARDROMON
 
 .if P_FAMILY_BUNEARY == TRUE

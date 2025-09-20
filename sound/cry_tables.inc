@@ -1147,7 +1147,7 @@ gCryTable::
 .endif @ P_FAMILY_SHELLOS
 .if P_FAMILY_GUARDROMON == TRUE
 	cry Cry_Guardromon
-	cry Cry_Drifblim
+	cry Cry_Honeybeemon
 .endif @ P_FAMILY_GUARDROMON
 .if P_FAMILY_BUNEARY == TRUE
 	cry Cry_Buneary
@@ -3574,7 +3574,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_SHELLOS
 .if P_FAMILY_GUARDROMON == TRUE
 	cry_reverse Cry_Guardromon
-	cry_reverse Cry_Drifblim
+	cry_reverse Cry_Honeybeemon
 .endif @ P_FAMILY_GUARDROMON
 .if P_FAMILY_BUNEARY == TRUE
 	cry_reverse Cry_Buneary

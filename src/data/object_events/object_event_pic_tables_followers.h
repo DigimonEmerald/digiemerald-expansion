@@ -3318,8 +3318,8 @@ static const struct SpriteFrameImage sPicTable_GastrodonEast[] = {
 static const struct SpriteFrameImage sPicTable_Guardromon[] = {
     overworld_ascending_frames(gObjectEventPic_Guardromon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Drifblim[] = {
-    overworld_ascending_frames(gObjectEventPic_Drifblim, 4, 4),
+static const struct SpriteFrameImage sPicTable_Honeybeemon[] = {
+    overworld_ascending_frames(gObjectEventPic_Honeybeemon, 4, 4),
 };
 #endif //P_FAMILY_GUARDROMON
 

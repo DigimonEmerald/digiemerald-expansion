@@ -2472,7 +2472,7 @@ $(POKEMONGFXDIR)/ambipom/overworldf.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/guardromon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/drifblim/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/honeybeemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/buneary/overworld.4bpp: %.4bpp: %.png

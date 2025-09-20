@@ -14484,7 +14484,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FLUCTUATING,
+        .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_GUARD_DOG, ABILITY_ARENA_TRAP, ABILITY_STEAM_ENGINE },
         .bodyColor = BODY_COLOR_BROWN,
@@ -14537,44 +14537,45 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sGuardromonLevelUpLearnset,
         .teachableLearnset = sGuardromonTeachableLearnset,
         .eggMoveLearnset = sGuardromonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_DRIFBLIM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_HONEYBEEMON}),
     },
 
-    [SPECIES_DRIFBLIM] =
+    [SPECIES_HONEYBEEMON] =
     {
-        .baseHP        = 150,
-        .baseAttack    = 80,
-        .baseDefense   = 44,
-        .baseSpeed     = 80,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 54,
-        .types = MON_TYPES(TYPE_GHOST, TYPE_FLYING),
-        .catchRate = 60,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 174 : 204,
-        .evYield_HP = 2,
+        .baseHP        = 55,
+        .baseAttack    = 50,
+        .baseDefense   = 70,
+        .baseSpeed     = 120,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_BUG, TYPE_POISON),
+        .attribute = TYPE_FREE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed = 4,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_FLUCTUATING,
+        .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_AFTERMATH, ABILITY_UNBURDEN, ABILITY_FLARE_BOOST },
-        .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Drifblim"),
-        .cryId = CRY_DRIFBLIM,
-        .natDexNum = NATIONAL_DEX_DRIFBLIM,
-        .categoryName = _("Blimp"),
-        .height = 12,
+        .abilities = { ABILITY_SPEED_BOOST, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Honeybeemon"),
+        .cryId = CRY_HONEYBEEMON,
+        .natDexNum = NATIONAL_DEX_HONEYBEEMON,
+        .categoryName = _("Knowledge"),
+        .height = 9,
         .weight = 150,
         .description = COMPOUND_STRING(
-            "Even while under careful observation,\n"
-            "large flocks of Drifblim flying at dusk\n"
-            "will inexplicably disappear from view.\n"
-            "No one knows where they go."),
+            "It likes to play with its enemies by\n"
+            "circling behind them and stinging them.\n"
+            "Its small size means Honeybeemon\n"
+            "doesn't deal much damage."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Drifblim,
+        .frontPic = gMonFrontPic_Honeybeemon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 7,
         .frontAnimFrames = ANIM_FRAMES(
@@ -14587,28 +14588,28 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         ),
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 7,
-        .backPic = gMonBackPic_Drifblim,
+        .backPic = gMonBackPic_Honeybeemon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Drifblim,
-        .shinyPalette = gMonShinyPalette_Drifblim,
-        .iconSprite = gMonIcon_Drifblim,
+        .palette = gMonPalette_Honeybeemon,
+        .shinyPalette = gMonShinyPalette_Honeybeemon,
+        .iconSprite = gMonIcon_Honeybeemon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 11, SHADOW_SIZE_M)
-        FOOTPRINT(Drifblim)
+        FOOTPRINT(Honeybeemon)
         OVERWORLD(
-            sPicTable_Drifblim,
+            sPicTable_Honeybeemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Drifblim,
-            gShinyOverworldPalette_Drifblim
+            gOverworldPalette_Honeybeemon,
+            gShinyOverworldPalette_Honeybeemon
         )
-        .levelUpLearnset = sDrifblimLevelUpLearnset,
-        .teachableLearnset = sDrifblimTeachableLearnset,
+        .levelUpLearnset = sHoneybeemonLevelUpLearnset,
+        .teachableLearnset = sHoneybeemonTeachableLearnset,
     },
 #endif //P_FAMILY_GUARDROMON
 
