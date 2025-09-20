@@ -1149,13 +1149,13 @@ gCryTable::
 	cry Cry_Guardromon
 	cry Cry_Honeybeemon
 .endif @ P_FAMILY_GUARDROMON
-.if P_FAMILY_BUNEARY == TRUE
-	cry Cry_Buneary
+.if P_FAMILY_HYOGAMON == TRUE
+	cry Cry_Hyogamon
 	cry Cry_Lopunny
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_LopunnyMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BUNEARY
+.endif @ P_FAMILY_HYOGAMON
 .if P_FAMILY_GLAMEOW == TRUE
 	cry Cry_Glameow
 	cry Cry_Purugly
@@ -3576,13 +3576,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Guardromon
 	cry_reverse Cry_Honeybeemon
 .endif @ P_FAMILY_GUARDROMON
-.if P_FAMILY_BUNEARY == TRUE
-	cry_reverse Cry_Buneary
+.if P_FAMILY_HYOGAMON == TRUE
+	cry_reverse Cry_Hyogamon
 	cry_reverse Cry_Lopunny
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_LopunnyMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BUNEARY
+.endif @ P_FAMILY_HYOGAMON
 .if P_FAMILY_GLAMEOW == TRUE
 	cry_reverse Cry_Glameow
 	cry_reverse Cry_Purugly

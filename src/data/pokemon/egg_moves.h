@@ -3664,8 +3664,8 @@ static const u16 sGuardromonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_GUARDROMON
 
-#if P_FAMILY_BUNEARY
-static const u16 sBunearyEggMoveLearnset[] = {
+#if P_FAMILY_HYOGAMON
+static const u16 sHyogamonEggMoveLearnset[] = {
     MOVE_FAKE_TEARS,
     MOVE_FAKE_OUT,
     MOVE_ENCORE,
@@ -3687,7 +3687,7 @@ static const u16 sBunearyEggMoveLearnset[] = {
     MOVE_POWER_UP_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BUNEARY
+#endif //P_FAMILY_HYOGAMON
 
 #if P_FAMILY_GLAMEOW
 static const u16 sGlameowEggMoveLearnset[] = {

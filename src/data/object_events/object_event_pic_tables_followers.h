@@ -3323,9 +3323,9 @@ static const struct SpriteFrameImage sPicTable_Honeybeemon[] = {
 };
 #endif //P_FAMILY_GUARDROMON
 
-#if P_FAMILY_BUNEARY
-static const struct SpriteFrameImage sPicTable_Buneary[] = {
-    overworld_ascending_frames(gObjectEventPic_Buneary, 4, 4),
+#if P_FAMILY_HYOGAMON
+static const struct SpriteFrameImage sPicTable_Hyogamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Hyogamon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Lopunny[] = {
     overworld_ascending_frames(gObjectEventPic_Lopunny, 4, 4),
@@ -3337,7 +3337,7 @@ static const struct SpriteFrameImage sPicTable_LopunnyMega[] = {
 };
 #endif // P_MEGA_EVOLUTIONS
 #endif // OW_BATTLE_ONLY_FORMS
-#endif //P_FAMILY_BUNEARY
+#endif //P_FAMILY_HYOGAMON
 
 #if P_FAMILY_GLAMEOW
 static const struct SpriteFrameImage sPicTable_Glameow[] = {

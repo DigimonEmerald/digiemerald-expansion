@@ -2475,7 +2475,7 @@ $(POKEMONGFXDIR)/guardromon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/honeybeemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/buneary/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/hyogamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/lopunny/overworld.4bpp: %.4bpp: %.png

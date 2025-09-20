@@ -478,8 +478,8 @@
 #define P_FAMILY_SHELLOS                 TRUE
 #undef P_FAMILY_GUARDROMON
 #define P_FAMILY_GUARDROMON                TRUE
-#undef P_FAMILY_BUNEARY
-#define P_FAMILY_BUNEARY                 TRUE
+#undef P_FAMILY_HYOGAMON
+#define P_FAMILY_HYOGAMON                 TRUE
 #undef P_FAMILY_GLAMEOW
 #define P_FAMILY_GLAMEOW                 TRUE
 #undef P_FAMILY_STUNKY

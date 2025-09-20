@@ -3074,10 +3074,10 @@ Cry_Honeybeemon::
 	.incbin "sound/direct_sound_samples/cries/honeybeemon.bin"
 .endif @ P_FAMILY_GUARDROMON
 
-.if P_FAMILY_BUNEARY == TRUE
+.if P_FAMILY_HYOGAMON == TRUE
 	.align 2
-Cry_Buneary::
-	.incbin "sound/direct_sound_samples/cries/buneary.bin"
+Cry_Hyogamon::
+	.incbin "sound/direct_sound_samples/cries/hyogamon.bin"
 
 	.align 2
 Cry_Lopunny::
@@ -3088,7 +3088,7 @@ Cry_Lopunny::
 Cry_LopunnyMega::
 	.incbin "sound/direct_sound_samples/cries/lopunny_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BUNEARY
+.endif @ P_FAMILY_HYOGAMON
 
 .if P_FAMILY_GLAMEOW == TRUE
 	.align 2

@@ -14792,20 +14792,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_GUARDROMON
 
-#if P_FAMILY_BUNEARY
-    const u32 gMonFrontPic_Buneary[] = INCBIN_U32("graphics/pokemon/buneary/anim_front.4bpp.smol");
-    const u16 gMonPalette_Buneary[] = INCBIN_U16("graphics/pokemon/buneary/normal.gbapal");
-    const u32 gMonBackPic_Buneary[] = INCBIN_U32("graphics/pokemon/buneary/back.4bpp.smol");
-    const u16 gMonShinyPalette_Buneary[] = INCBIN_U16("graphics/pokemon/buneary/shiny.gbapal");
-    const u8 gMonIcon_Buneary[] = INCBIN_U8("graphics/pokemon/buneary/icon.4bpp");
+#if P_FAMILY_HYOGAMON
+    const u32 gMonFrontPic_Hyogamon[] = INCBIN_U32("graphics/pokemon/hyogamon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Hyogamon[] = INCBIN_U16("graphics/pokemon/hyogamon/normal.gbapal");
+    const u32 gMonBackPic_Hyogamon[] = INCBIN_U32("graphics/pokemon/hyogamon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Hyogamon[] = INCBIN_U16("graphics/pokemon/hyogamon/shiny.gbapal");
+    const u8 gMonIcon_Hyogamon[] = INCBIN_U8("graphics/pokemon/hyogamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Buneary[] = INCBIN_U8("graphics/pokemon/buneary/footprint.1bpp");
+    const u8 gMonFootprint_Hyogamon[] = INCBIN_U8("graphics/pokemon/hyogamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Buneary[] = INCBIN_COMP("graphics/pokemon/buneary/overworld.4bpp");
+    const u32 gObjectEventPic_Hyogamon[] = INCBIN_COMP("graphics/pokemon/hyogamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Buneary[] = INCBIN_U16("graphics/pokemon/buneary/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Buneary[] = INCBIN_U16("graphics/pokemon/buneary/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Hyogamon[] = INCBIN_U16("graphics/pokemon/hyogamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Hyogamon[] = INCBIN_U16("graphics/pokemon/hyogamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -14839,7 +14839,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS && OW_BATTLE_ONLY_FORMS
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BUNEARY
+#endif //P_FAMILY_HYOGAMON
 
 #if P_FAMILY_GLAMEOW
     const u32 gMonFrontPic_Glameow[] = INCBIN_U32("graphics/pokemon/glameow/anim_front.4bpp.smol");

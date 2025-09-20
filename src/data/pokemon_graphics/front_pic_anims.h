@@ -5676,8 +5676,8 @@ static const union AnimCmd sAnim_Honeybeemon_1[] =
 };
 #endif //P_FAMILY_GUARDROMON
 
-#if P_FAMILY_BUNEARY
-static const union AnimCmd sAnim_Buneary_1[] =
+#if P_FAMILY_HYOGAMON
+static const union AnimCmd sAnim_Hyogamon_1[] =
 {
     ANIMCMD_FRAME(1, 35),
     ANIMCMD_FRAME(0, 10),
@@ -5695,7 +5695,7 @@ static const union AnimCmd sAnim_Lopunny_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(LopunnyMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BUNEARY
+#endif //P_FAMILY_HYOGAMON
 
 #if P_FAMILY_GLAMEOW
 static const union AnimCmd sAnim_Glameow_1[] =
@@ -11481,13 +11481,13 @@ SINGLE_ANIMATION(Gastrodon);
 SINGLE_ANIMATION(Guardromon);
 SINGLE_ANIMATION(Honeybeemon);
 #endif //P_FAMILY_GUARDROMON
-#if P_FAMILY_BUNEARY
-SINGLE_ANIMATION(Buneary);
+#if P_FAMILY_HYOGAMON
+SINGLE_ANIMATION(Hyogamon);
 SINGLE_ANIMATION(Lopunny);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(LopunnyMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BUNEARY
+#endif //P_FAMILY_HYOGAMON
 #if P_FAMILY_GLAMEOW
 SINGLE_ANIMATION(Glameow);
 SINGLE_ANIMATION(Purugly);

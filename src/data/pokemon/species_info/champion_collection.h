@@ -14613,42 +14613,44 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_GUARDROMON
 
-#if P_FAMILY_BUNEARY
-    [SPECIES_BUNEARY] =
+#if P_FAMILY_HYOGAMON
+    [SPECIES_HYOGAMON] =
     {
-        .baseHP        = 55,
-        .baseAttack    = 66,
-        .baseDefense   = 44,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 44,
-        .baseSpDefense = 56,
-        .types = MON_TYPES(TYPE_NORMAL),
-        .catchRate = 190,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 70 : 84,
-        .evYield_Speed = 1,
+        .baseHP        = 65,
+        .baseAttack    = 80,
+        .baseDefense   = 80,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_ICE, TYPE_DARK),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack = 2,
+        .evYield_Defense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = 0,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_RUN_AWAY, ABILITY_KLUTZ, ABILITY_LIMBER },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Buneary"),
-        .cryId = CRY_BUNEARY,
-        .natDexNum = NATIONAL_DEX_BUNEARY,
-        .categoryName = _("Rabbit"),
-        .height = 4,
-        .weight = 55,
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_SNOW_CLOAK, ABILITY_SLUSH_RUSH },
+        .bodyColor = BODY_COLOR_BLUE,
+        .speciesName = _("Hyogamon"),
+        .cryId = CRY_HYOGAMON,
+        .natDexNum = NATIONAL_DEX_HYOGAMON,
+        .categoryName = _("Ogre"),
+        .height = 28,
+        .weight = 875,
         .description = COMPOUND_STRING(
-            "You can tell how it feels by the way\n"
-            "it rolls its ears. When it's scared,\n"
-            "both ears are rolled up. When it senses\n"
-            "danger, it perks them up."),
+            "As a species of Ogremon, it is\n"
+            "incredibly territorial and will fly\n"
+            "into a rage when it notices\n"
+            "intruders on its icy home"),
         .pokemonScale = 491,
         .pokemonOffset = 16,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Buneary,
+        .frontPic = gMonFrontPic_Hyogamon,
         .frontPicSize = MON_COORDS_SIZE(32, 64),
         .frontPicYOffset = 9,
         .frontAnimFrames = ANIM_FRAMES(
@@ -14656,29 +14658,29 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
-        .backPic = gMonBackPic_Buneary,
+        .backPic = gMonBackPic_Hyogamon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Buneary,
-        .shinyPalette = gMonShinyPalette_Buneary,
-        .iconSprite = gMonIcon_Buneary,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Hyogamon,
+        .shinyPalette = gMonShinyPalette_Hyogamon,
+        .iconSprite = gMonIcon_Hyogamon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(3, 5, SHADOW_SIZE_S)
-        FOOTPRINT(Buneary)
+        FOOTPRINT(Hyogamon)
         OVERWORLD(
-            sPicTable_Buneary,
+            sPicTable_Hyogamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Buneary,
-            gShinyOverworldPalette_Buneary
+            gOverworldPalette_Hyogamon,
+            gShinyOverworldPalette_Hyogamon
         )
-        .levelUpLearnset = sBunearyLevelUpLearnset,
-        .teachableLearnset = sBunearyTeachableLearnset,
-        .eggMoveLearnset = sBunearyEggMoveLearnset,
+        .levelUpLearnset = sHyogamonLevelUpLearnset,
+        .teachableLearnset = sHyogamonTeachableLearnset,
+        .eggMoveLearnset = sHyogamonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_LOPUNNY, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
     },
 
@@ -14820,7 +14822,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .formChangeTable = sLopunnyFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BUNEARY
+#endif //P_FAMILY_HYOGAMON
 
 #if P_FAMILY_GLAMEOW
     [SPECIES_GLAMEOW] =
