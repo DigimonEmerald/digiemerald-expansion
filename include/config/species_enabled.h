@@ -274,7 +274,7 @@
 #define P_FAMILY_SHELLMON                  P_GEN_4_POKEMON
 #define P_FAMILY_TORTOMON                 P_GEN_4_POKEMON
 #define P_FAMILY_SHELLOS                 P_GEN_4_POKEMON
-#define P_FAMILY_DRIFLOON                P_GEN_4_POKEMON
+#define P_FAMILY_GUARDROMON                P_GEN_4_POKEMON
 #define P_FAMILY_BUNEARY                 P_GEN_4_POKEMON
 #define P_FAMILY_GLAMEOW                 P_GEN_4_POKEMON
 #define P_FAMILY_STUNKY                  P_GEN_4_POKEMON
@@ -330,7 +330,7 @@
 #define P_FAMILY_SKULLMERAMON                P_GEN_5_POKEMON
 #define P_FAMILY_PHANTOMON                 P_GEN_5_POKEMON
 #define P_FAMILY_GIGADRAMON                P_GEN_5_POKEMON
-#define P_FAMILY_SANDILE                 P_GEN_5_POKEMON
+#define P_FAMILY_KINGSUKAMON                 P_GEN_5_POKEMON
 #define P_FAMILY_DARUMAKA                P_GEN_5_POKEMON
 #define P_FAMILY_MARACTUS                P_GEN_5_POKEMON
 #define P_FAMILY_DWEBBLE                 P_GEN_5_POKEMON

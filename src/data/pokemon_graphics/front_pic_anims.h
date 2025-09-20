@@ -5654,8 +5654,8 @@ static const union AnimCmd sAnim_Gastrodon_1[] =
 };
 #endif //P_FAMILY_SHELLOS
 
-#if P_FAMILY_DRIFLOON
-static const union AnimCmd sAnim_Drifloon_1[] =
+#if P_FAMILY_GUARDROMON
+static const union AnimCmd sAnim_Guardromon_1[] =
 {
     ANIMCMD_FRAME(1, 25),
     ANIMCMD_FRAME(0, 25),
@@ -5674,7 +5674,7 @@ static const union AnimCmd sAnim_Drifblim_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_DRIFLOON
+#endif //P_FAMILY_GUARDROMON
 
 #if P_FAMILY_BUNEARY
 static const union AnimCmd sAnim_Buneary_1[] =
@@ -6868,8 +6868,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Basculegion);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_GIGADRAMON
 
-#if P_FAMILY_SANDILE
-static const union AnimCmd sAnim_Sandile_1[] =
+#if P_FAMILY_KINGSUKAMON
+static const union AnimCmd sAnim_Kingsukamon_1[] =
 {
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_FRAME(1, 10),
@@ -6893,7 +6893,7 @@ static const union AnimCmd sAnim_Krookodile_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SANDILE
+#endif //P_FAMILY_KINGSUKAMON
 
 #if P_FAMILY_DARUMAKA
 static const union AnimCmd sAnim_Darumaka_1[] =
@@ -11477,10 +11477,10 @@ SINGLE_ANIMATION(Veedramon);
 SINGLE_ANIMATION(Shellos);
 SINGLE_ANIMATION(Gastrodon);
 #endif //P_FAMILY_SHELLOS
-#if P_FAMILY_DRIFLOON
-SINGLE_ANIMATION(Drifloon);
+#if P_FAMILY_GUARDROMON
+SINGLE_ANIMATION(Guardromon);
 SINGLE_ANIMATION(Drifblim);
-#endif //P_FAMILY_DRIFLOON
+#endif //P_FAMILY_GUARDROMON
 #if P_FAMILY_BUNEARY
 SINGLE_ANIMATION(Buneary);
 SINGLE_ANIMATION(Lopunny);
@@ -11720,11 +11720,11 @@ SINGLE_ANIMATION(Gigadramon);
 SINGLE_ANIMATION(Basculegion);
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_GIGADRAMON
-#if P_FAMILY_SANDILE
-SINGLE_ANIMATION(Sandile);
+#if P_FAMILY_KINGSUKAMON
+SINGLE_ANIMATION(Kingsukamon);
 SINGLE_ANIMATION(Krokorok);
 SINGLE_ANIMATION(Krookodile);
-#endif //P_FAMILY_SANDILE
+#endif //P_FAMILY_KINGSUKAMON
 #if P_FAMILY_DARUMAKA
 SINGLE_ANIMATION(Darumaka);
 SINGLE_ANIMATION(DarmanitanStandard);

@@ -4708,43 +4708,46 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_GIGADRAMON
 
-#if P_FAMILY_SANDILE
-    [SPECIES_SANDILE] =
+#if P_FAMILY_KINGSUKAMON
+    [SPECIES_KINGSUKAMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 72,
-        .baseDefense   = 35,
+        .baseHP        = 90,
+        .baseAttack    = 85,
+        .baseDefense   = 90,
         .baseSpeed     = 65,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 35,
-        .types = MON_TYPES(TYPE_GROUND, TYPE_DARK),
-        .catchRate = 180,
-        .expYield = 58,
-        .evYield_Attack = 1,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_POISON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_HP = 1,
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 3,
         .itemRare = ITEM_BLACK_GLASSES,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_MOXIE, ABILITY_ANGER_POINT },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Sandile"),
-        .cryId = CRY_SANDILE,
-        .natDexNum = NATIONAL_DEX_SANDILE,
-        .categoryName = _("Desert Croc"),
-        .height = 7,
-        .weight = 152,
+        .abilities = { ABILITY_STENCH, ABILITY_AFTERMATH, ABILITY_MOLD_BREAKER }, // King's Privilege
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("KingSukamon"),
+        .cryId = CRY_KINGSUKAMON,
+        .natDexNum = NATIONAL_DEX_KINGSUKAMON,
+        .categoryName = _("Royal"),
+        .height = 53,
+        .weight = 1855,
         .description = COMPOUND_STRING(
-            "It conceals itself in the sand and\n"
-            "chomps down on the legs of any prey\n"
-            "that unwarily walk over it. Its favorite\n"
-            "food is Coredramon_green."),
+            "The ruler of Dust Kingdom, KingSukamon\n"
+            "is a larger, stronger and smarter\n"
+            "Sukamon. The throw power of its\n"
+            "poop is greatly increased as well."),
         .pokemonScale = 365,
         .pokemonOffset = 14,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Sandile,
+        .frontPic = gMonFrontPic_Kingsukamon,
         .frontPicSize = MON_COORDS_SIZE(48, 32),
         .frontPicYOffset = 18,
         .frontAnimFrames = ANIM_FRAMES(
@@ -4753,29 +4756,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Sandile,
+        .backPic = gMonBackPic_Kingsukamon,
         .backPicSize = MON_COORDS_SIZE(64, 32),
         .backPicYOffset = 18,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Sandile,
-        .shinyPalette = gMonShinyPalette_Sandile,
-        .iconSprite = gMonIcon_Sandile,
+        .palette = gMonPalette_Kingsukamon,
+        .shinyPalette = gMonShinyPalette_Kingsukamon,
+        .iconSprite = gMonIcon_Kingsukamon,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(4, -5, SHADOW_SIZE_M)
-        FOOTPRINT(Sandile)
+        FOOTPRINT(Kingsukamon)
         OVERWORLD(
-            sPicTable_Sandile,
+            sPicTable_Kingsukamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Sandile,
-            gShinyOverworldPalette_Sandile
+            gOverworldPalette_Kingsukamon,
+            gShinyOverworldPalette_Kingsukamon
         )
-        .levelUpLearnset = sSandileLevelUpLearnset,
-        .teachableLearnset = sSandileTeachableLearnset,
-        .eggMoveLearnset = sSandileEggMoveLearnset,
+        .levelUpLearnset = sKingsukamonLevelUpLearnset,
+        .teachableLearnset = sKingsukamonTeachableLearnset,
+        .eggMoveLearnset = sKingsukamonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 29, SPECIES_KROKOROK}),
     },
 
@@ -4922,7 +4925,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sKrookodileLevelUpLearnset,
         .teachableLearnset = sKrookodileTeachableLearnset,
     },
-#endif //P_FAMILY_SANDILE
+#endif //P_FAMILY_KINGSUKAMON
 
 #if P_FAMILY_DARUMAKA
     [SPECIES_DARUMAKA] =

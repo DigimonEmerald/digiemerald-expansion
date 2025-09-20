@@ -1145,10 +1145,10 @@ gCryTable::
 	cry Cry_Shellos
 	cry Cry_Gastrodon
 .endif @ P_FAMILY_SHELLOS
-.if P_FAMILY_DRIFLOON == TRUE
-	cry Cry_Drifloon
+.if P_FAMILY_GUARDROMON == TRUE
+	cry Cry_Guardromon
 	cry Cry_Drifblim
-.endif @ P_FAMILY_DRIFLOON
+.endif @ P_FAMILY_GUARDROMON
 .if P_FAMILY_BUNEARY == TRUE
 	cry Cry_Buneary
 	cry Cry_Lopunny
@@ -1374,11 +1374,11 @@ gCryTable::
 	cry Cry_Basculegion
 .endif @ P_HISUIAN_FORMS
 .endif @ P_FAMILY_GIGADRAMON
-.if P_FAMILY_SANDILE == TRUE
-	cry Cry_Sandile
+.if P_FAMILY_KINGSUKAMON == TRUE
+	cry Cry_Kingsukamon
 	cry Cry_Krokorok
 	cry Cry_Krookodile
-.endif @ P_FAMILY_SANDILE
+.endif @ P_FAMILY_KINGSUKAMON
 .if P_FAMILY_DARUMAKA == TRUE
 	cry Cry_Darumaka
 	cry Cry_Darmanitan
@@ -3572,10 +3572,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Shellos
 	cry_reverse Cry_Gastrodon
 .endif @ P_FAMILY_SHELLOS
-.if P_FAMILY_DRIFLOON == TRUE
-	cry_reverse Cry_Drifloon
+.if P_FAMILY_GUARDROMON == TRUE
+	cry_reverse Cry_Guardromon
 	cry_reverse Cry_Drifblim
-.endif @ P_FAMILY_DRIFLOON
+.endif @ P_FAMILY_GUARDROMON
 .if P_FAMILY_BUNEARY == TRUE
 	cry_reverse Cry_Buneary
 	cry_reverse Cry_Lopunny
@@ -3801,11 +3801,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Basculegion
 .endif @ P_HISUIAN_FORMS
 .endif @ P_FAMILY_GIGADRAMON
-.if P_FAMILY_SANDILE == TRUE
-	cry_reverse Cry_Sandile
+.if P_FAMILY_KINGSUKAMON == TRUE
+	cry_reverse Cry_Kingsukamon
 	cry_reverse Cry_Krokorok
 	cry_reverse Cry_Krookodile
-.endif @ P_FAMILY_SANDILE
+.endif @ P_FAMILY_KINGSUKAMON
 .if P_FAMILY_DARUMAKA == TRUE
 	cry_reverse Cry_Darumaka
 	cry_reverse Cry_Darmanitan

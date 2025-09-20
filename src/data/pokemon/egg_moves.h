@@ -3648,8 +3648,8 @@ static const u16 sShellosEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_SHELLOS
 
-#if P_FAMILY_DRIFLOON
-static const u16 sDrifloonEggMoveLearnset[] = {
+#if P_FAMILY_GUARDROMON
+static const u16 sGuardromonEggMoveLearnset[] = {
     MOVE_MEMENTO,
     MOVE_BODY_SLAM,
     MOVE_DESTINY_BOND,
@@ -3662,7 +3662,7 @@ static const u16 sDrifloonEggMoveLearnset[] = {
     MOVE_TAILWIND,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DRIFLOON
+#endif //P_FAMILY_GUARDROMON
 
 #if P_FAMILY_BUNEARY
 static const u16 sBunearyEggMoveLearnset[] = {
@@ -4287,8 +4287,8 @@ static const u16 sGigadramonWhiteStripedEggMoveLearnset[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_GIGADRAMON
 
-#if P_FAMILY_SANDILE
-static const u16 sSandileEggMoveLearnset[] = {
+#if P_FAMILY_KINGSUKAMON
+static const u16 sKingsukamonEggMoveLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_ROCK_CLIMB,
     MOVE_PURSUIT,
@@ -4303,7 +4303,7 @@ static const u16 sSandileEggMoveLearnset[] = {
     MOVE_POWER_TRIP,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SANDILE
+#endif //P_FAMILY_KINGSUKAMON
 
 #if P_FAMILY_DARUMAKA
 static const u16 sDarumakaEggMoveLearnset[] = {

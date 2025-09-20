@@ -439,7 +439,7 @@
 #define SPECIES_GURURUMON                          423
 #define SPECIES_GASTRODON                               SPECIES_GURURUMON
 #define SPECIES_AMBIPOM                                 424
-#define SPECIES_DRIFLOON                                425
+#define SPECIES_GUARDROMON                                425
 #define SPECIES_DRIFBLIM                                426
 #define SPECIES_BUNEARY                                 427
 #define SPECIES_LOPUNNY                                 428
@@ -567,9 +567,9 @@
 #define SPECIES_DERAMON                              547
 #define SPECIES_PHANTOMON                                 548
 #define SPECIES_GARUDAMON                               549
-#define SPECIES_GIGADRAMON                                SPECIES_KINGSUKAMON
-#define SPECIES_KINGSUKAMON                    550
-#define SPECIES_SANDILE                                 551
+#define SPECIES_GIGADRAMON                                SPECIES_GIGADRAMON_RED_STRIPED
+#define SPECIES_GIGADRAMON_RED_STRIPED                    550
+#define SPECIES_KINGSUKAMON                                 551
 #define SPECIES_KROKOROK                                552
 #define SPECIES_KROOKODILE                              553
 #define SPECIES_DARUMAKA                                554

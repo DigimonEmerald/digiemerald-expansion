@@ -14466,42 +14466,44 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_SHELLOS
 
-#if P_FAMILY_DRIFLOON
-    [SPECIES_DRIFLOON] =
+#if P_FAMILY_GUARDROMON
+    [SPECIES_GUARDROMON] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 50,
-        .baseDefense   = 34,
-        .baseSpeed     = 70,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 44,
-        .types = MON_TYPES(TYPE_GHOST, TYPE_FLYING),
-        .catchRate = 125,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 70 : 127,
-        .evYield_HP = 1,
+        .baseHP        = 110,
+        .baseAttack    = 75,
+        .baseDefense   = 100,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_STEEL),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP = 3,
+        .evYield_Defense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FLUCTUATING,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_AFTERMATH, ABILITY_UNBURDEN, ABILITY_FLARE_BOOST },
-        .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Drifloon"),
-        .cryId = CRY_DRIFLOON,
-        .natDexNum = NATIONAL_DEX_DRIFLOON,
-        .categoryName = _("Balloon"),
-        .height = 4,
-        .weight = 12,
+        .abilities = { ABILITY_GUARD_DOG, ABILITY_ARENA_TRAP, ABILITY_STEAM_ENGINE },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Guardromon"),
+        .cryId = CRY_GUARDROMON,
+        .natDexNum = NATIONAL_DEX_GUARDROMON,
+        .categoryName = _("Mecha"),
+        .height = 39,
+        .weight = 2845,
         .description = COMPOUND_STRING(
-            "Because of the way it floats aimlessly,\n"
-            "an old folktale calls it a “Signpost for\n"
-            "Wandering Spirits.” Children holding\n"
-            "them sometimes vanish."),
+            "The only command that Guardromon knows\n"
+            "is 'Defend' making it one of the most\n"
+            "reliable guardians in the Digital World.\n"
+            "It is very easy to hack it though."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Drifloon,
+        .frontPic = gMonFrontPic_Guardromon,
         .frontPicSize = MON_COORDS_SIZE(32, 56),
         .frontPicYOffset = 7,
         .frontAnimFrames = ANIM_FRAMES(
@@ -14512,29 +14514,29 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         ),
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 5,
-        .backPic = gMonBackPic_Drifloon,
+        .backPic = gMonBackPic_Guardromon,
         .backPicSize = MON_COORDS_SIZE(40, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_SMALL,
-        .palette = gMonPalette_Drifloon,
-        .shinyPalette = gMonShinyPalette_Drifloon,
-        .iconSprite = gMonIcon_Drifloon,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Guardromon,
+        .shinyPalette = gMonShinyPalette_Guardromon,
+        .iconSprite = gMonIcon_Guardromon,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 9, SHADOW_SIZE_S)
-        FOOTPRINT(Drifloon)
+        FOOTPRINT(Guardromon)
         OVERWORLD(
-            sPicTable_Drifloon,
+            sPicTable_Guardromon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Drifloon,
-            gShinyOverworldPalette_Drifloon
+            gOverworldPalette_Guardromon,
+            gShinyOverworldPalette_Guardromon
         )
-        .levelUpLearnset = sDrifloonLevelUpLearnset,
-        .teachableLearnset = sDrifloonTeachableLearnset,
-        .eggMoveLearnset = sDrifloonEggMoveLearnset,
+        .levelUpLearnset = sGuardromonLevelUpLearnset,
+        .teachableLearnset = sGuardromonTeachableLearnset,
+        .eggMoveLearnset = sGuardromonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_DRIFBLIM}),
     },
 
@@ -14608,7 +14610,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sDrifblimLevelUpLearnset,
         .teachableLearnset = sDrifblimTeachableLearnset,
     },
-#endif //P_FAMILY_DRIFLOON
+#endif //P_FAMILY_GUARDROMON
 
 #if P_FAMILY_BUNEARY
     [SPECIES_BUNEARY] =

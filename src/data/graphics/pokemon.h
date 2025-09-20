@@ -14758,20 +14758,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_SHELLOS
 
-#if P_FAMILY_DRIFLOON
-    const u32 gMonFrontPic_Drifloon[] = INCBIN_U32("graphics/pokemon/drifloon/anim_front.4bpp.smol");
-    const u16 gMonPalette_Drifloon[] = INCBIN_U16("graphics/pokemon/drifloon/normal.gbapal");
-    const u32 gMonBackPic_Drifloon[] = INCBIN_U32("graphics/pokemon/drifloon/back.4bpp.smol");
-    const u16 gMonShinyPalette_Drifloon[] = INCBIN_U16("graphics/pokemon/drifloon/shiny.gbapal");
-    const u8 gMonIcon_Drifloon[] = INCBIN_U8("graphics/pokemon/drifloon/icon.4bpp");
+#if P_FAMILY_GUARDROMON
+    const u32 gMonFrontPic_Guardromon[] = INCBIN_U32("graphics/pokemon/guardromon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Guardromon[] = INCBIN_U16("graphics/pokemon/guardromon/normal.gbapal");
+    const u32 gMonBackPic_Guardromon[] = INCBIN_U32("graphics/pokemon/guardromon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Guardromon[] = INCBIN_U16("graphics/pokemon/guardromon/shiny.gbapal");
+    const u8 gMonIcon_Guardromon[] = INCBIN_U8("graphics/pokemon/guardromon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Drifloon[] = INCBIN_U8("graphics/pokemon/drifloon/footprint.1bpp");
+    const u8 gMonFootprint_Guardromon[] = INCBIN_U8("graphics/pokemon/guardromon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Drifloon[] = INCBIN_COMP("graphics/pokemon/drifloon/overworld.4bpp");
+    const u32 gObjectEventPic_Guardromon[] = INCBIN_COMP("graphics/pokemon/guardromon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Drifloon[] = INCBIN_U16("graphics/pokemon/drifloon/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Drifloon[] = INCBIN_U16("graphics/pokemon/drifloon/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Guardromon[] = INCBIN_U16("graphics/pokemon/guardromon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Guardromon[] = INCBIN_U16("graphics/pokemon/guardromon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -14790,7 +14790,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Drifblim[] = INCBIN_U16("graphics/pokemon/drifblim/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_DRIFLOON
+#endif //P_FAMILY_GUARDROMON
 
 #if P_FAMILY_BUNEARY
     const u32 gMonFrontPic_Buneary[] = INCBIN_U32("graphics/pokemon/buneary/anim_front.4bpp.smol");
@@ -16959,20 +16959,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_GIGADRAMON
 
-#if P_FAMILY_SANDILE
-    const u32 gMonFrontPic_Sandile[] = INCBIN_U32("graphics/pokemon/sandile/anim_front.4bpp.smol");
-    const u16 gMonPalette_Sandile[] = INCBIN_U16("graphics/pokemon/sandile/normal.gbapal");
-    const u32 gMonBackPic_Sandile[] = INCBIN_U32("graphics/pokemon/sandile/back.4bpp.smol");
-    const u16 gMonShinyPalette_Sandile[] = INCBIN_U16("graphics/pokemon/sandile/shiny.gbapal");
-    const u8 gMonIcon_Sandile[] = INCBIN_U8("graphics/pokemon/sandile/icon.4bpp");
+#if P_FAMILY_KINGSUKAMON
+    const u32 gMonFrontPic_Kingsukamon[] = INCBIN_U32("graphics/pokemon/kingsukamon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Kingsukamon[] = INCBIN_U16("graphics/pokemon/kingsukamon/normal.gbapal");
+    const u32 gMonBackPic_Kingsukamon[] = INCBIN_U32("graphics/pokemon/kingsukamon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Kingsukamon[] = INCBIN_U16("graphics/pokemon/kingsukamon/shiny.gbapal");
+    const u8 gMonIcon_Kingsukamon[] = INCBIN_U8("graphics/pokemon/kingsukamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Sandile[] = INCBIN_U8("graphics/pokemon/sandile/footprint.1bpp");
+    const u8 gMonFootprint_Kingsukamon[] = INCBIN_U8("graphics/pokemon/kingsukamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Sandile[] = INCBIN_COMP("graphics/pokemon/sandile/overworld.4bpp");
+    const u32 gObjectEventPic_Kingsukamon[] = INCBIN_COMP("graphics/pokemon/kingsukamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Sandile[] = INCBIN_U16("graphics/pokemon/sandile/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Sandile[] = INCBIN_U16("graphics/pokemon/sandile/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Kingsukamon[] = INCBIN_U16("graphics/pokemon/kingsukamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Kingsukamon[] = INCBIN_U16("graphics/pokemon/kingsukamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -17007,7 +17007,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Krookodile[] = INCBIN_U16("graphics/pokemon/krookodile/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_SANDILE
+#endif //P_FAMILY_KINGSUKAMON
 
 #if P_FAMILY_DARUMAKA
     const u32 gMonFrontPic_Darumaka[] = INCBIN_U32("graphics/pokemon/darumaka/anim_front.4bpp.smol");

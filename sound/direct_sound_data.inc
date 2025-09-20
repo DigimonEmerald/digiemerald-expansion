@@ -3064,15 +3064,15 @@ Cry_Gastrodon::
 	.incbin "sound/direct_sound_samples/cries/gururumon.bin"
 .endif @ P_FAMILY_SHELLOS
 
-.if P_FAMILY_DRIFLOON == TRUE
+.if P_FAMILY_GUARDROMON == TRUE
 	.align 2
-Cry_Drifloon::
-	.incbin "sound/direct_sound_samples/cries/drifloon.bin"
+Cry_Guardromon::
+	.incbin "sound/direct_sound_samples/cries/guardromon.bin"
 
 	.align 2
 Cry_Drifblim::
 	.incbin "sound/direct_sound_samples/cries/drifblim.bin"
-.endif @ P_FAMILY_DRIFLOON
+.endif @ P_FAMILY_GUARDROMON
 
 .if P_FAMILY_BUNEARY == TRUE
 	.align 2
@@ -3615,10 +3615,10 @@ Cry_Basculegion::
 .endif @ P_HISUIAN_FORMS
 .endif @ P_FAMILY_GIGADRAMON
 
-.if P_FAMILY_SANDILE == TRUE
+.if P_FAMILY_KINGSUKAMON == TRUE
 	.align 2
-Cry_Sandile::
-	.incbin "sound/direct_sound_samples/cries/sandile.bin"
+Cry_Kingsukamon::
+	.incbin "sound/direct_sound_samples/cries/kingsukamon.bin"
 
 	.align 2
 Cry_Krokorok::
@@ -3627,7 +3627,7 @@ Cry_Krokorok::
 	.align 2
 Cry_Krookodile::
 	.incbin "sound/direct_sound_samples/cries/krookodile.bin"
-.endif @ P_FAMILY_SANDILE
+.endif @ P_FAMILY_KINGSUKAMON
 
 .if P_FAMILY_DARUMAKA == TRUE
 	.align 2

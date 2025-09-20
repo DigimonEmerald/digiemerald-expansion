@@ -476,8 +476,8 @@
 #define P_FAMILY_TORTOMON                 TRUE
 #undef P_FAMILY_SHELLOS
 #define P_FAMILY_SHELLOS                 TRUE
-#undef P_FAMILY_DRIFLOON
-#define P_FAMILY_DRIFLOON                TRUE
+#undef P_FAMILY_GUARDROMON
+#define P_FAMILY_GUARDROMON                TRUE
 #undef P_FAMILY_BUNEARY
 #define P_FAMILY_BUNEARY                 TRUE
 #undef P_FAMILY_GLAMEOW
@@ -586,8 +586,8 @@
 #define P_FAMILY_PHANTOMON                 TRUE
 #undef P_FAMILY_GIGADRAMON
 #define P_FAMILY_GIGADRAMON                TRUE
-#undef P_FAMILY_SANDILE
-#define P_FAMILY_SANDILE                 TRUE
+#undef P_FAMILY_KINGSUKAMON
+#define P_FAMILY_KINGSUKAMON                 TRUE
 #undef P_FAMILY_DARUMAKA
 #define P_FAMILY_DARUMAKA                TRUE
 #undef P_FAMILY_MARACTUS

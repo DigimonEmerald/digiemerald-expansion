@@ -19296,8 +19296,8 @@ static const u16 sGastrodonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SHELLOS
 
-#if P_FAMILY_DRIFLOON
-static const u16 sDrifloonTeachableLearnset[] = {
+#if P_FAMILY_GUARDROMON
+static const u16 sGuardromonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
@@ -19371,7 +19371,7 @@ static const u16 sDrifblimTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DRIFLOON
+#endif //P_FAMILY_GUARDROMON
 
 #if P_FAMILY_BUNEARY
 static const u16 sBunearyTeachableLearnset[] = {
@@ -22821,8 +22821,8 @@ static const u16 sBasculegionTeachableLearnset[] = {
 #endif //P_HISUIAN_FORMS
 #endif //P_FAMILY_GIGADRAMON
 
-#if P_FAMILY_SANDILE
-static const u16 sSandileTeachableLearnset[] = {
+#if P_FAMILY_KINGSUKAMON
+static const u16 sKingsukamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
@@ -22933,7 +22933,7 @@ static const u16 sKrookodileTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SANDILE
+#endif //P_FAMILY_KINGSUKAMON
 
 #if P_FAMILY_DARUMAKA
 static const u16 sDarumakaTeachableLearnset[] = {

@@ -2469,7 +2469,7 @@ $(POKEMONGFXDIR)/ambipom/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/ambipom/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/drifloon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/guardromon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/drifblim/overworld.4bpp: %.4bpp: %.png
@@ -2913,7 +2913,7 @@ $(POKEMONGFXDIR)/garudamon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/gigadramon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/sandile/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/kingsukamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/krokorok/overworld.4bpp: %.4bpp: %.png
