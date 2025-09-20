@@ -1020,10 +1020,10 @@ static const u16 sCherrimFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_TORTOMON
 
-#if P_FAMILY_SHELLOS
-static const u16 sShellosFormSpeciesIdTable[] = {
-    SPECIES_SHELLOS_WEST,
-    SPECIES_SHELLOS_EAST,
+#if P_FAMILY_GUARDROMON
+static const u16 sGuardromonFormSpeciesIdTable[] = {
+    SPECIES_GOLEMON,
+    SPECIES_GUARDROMON,
     FORM_SPECIES_END,
 };
 

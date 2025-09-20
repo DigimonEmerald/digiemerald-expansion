@@ -4,7 +4,7 @@ import glob
 eggMoveSpecies = []
 
 exceptions = [ # the following exceptions are hardcoded to streamline the process. you may need to manually check what happens in case you have added forms that work similar to these below
-    ["ShellosWestSea", "Shellos"],
+    ["Golemon", "Guardromon"],
     ["OricorioBaile", "Oricorio"]
 ]
 
