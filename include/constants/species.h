@@ -713,7 +713,7 @@
 #define SPECIES_GOLDRAMON                                  677
 #define SPECIES_MEOWSTIC                                SPECIES_GRYPHONMON
 #define SPECIES_GRYPHONMON                              678
-#define SPECIES_HONEDGE                                 679
+#define SPECIES_PHOENIXMON                                 679
 #define SPECIES_DOUBLADE                                680
 #define SPECIES_AEGISLASH                               SPECIES_AEGISLASH_SHIELD
 #define SPECIES_AEGISLASH_SHIELD                        681

@@ -5044,15 +5044,15 @@ static const u16 sGoldramonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_GOLDRAMON
 
-#if P_FAMILY_HONEDGE
-static const u16 sHonedgeEggMoveLearnset[] = {
+#if P_FAMILY_PHOENIXMON
+static const u16 sPhoenixmonEggMoveLearnset[] = {
     MOVE_METAL_SOUND,
     MOVE_SHADOW_SNEAK,
     MOVE_DESTINY_BOND,
     MOVE_WIDE_GUARD,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_HONEDGE
+#endif //P_FAMILY_PHOENIXMON
 
 #if P_FAMILY_SPRITZEE
 static const u16 sSpritzeeEggMoveLearnset[] = {

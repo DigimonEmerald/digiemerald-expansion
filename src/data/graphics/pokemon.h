@@ -19924,20 +19924,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_GOLDRAMON
 
-#if P_FAMILY_HONEDGE
-    const u32 gMonFrontPic_Honedge[] = INCBIN_U32("graphics/pokemon/honedge/anim_front.4bpp.smol");
-    const u16 gMonPalette_Honedge[] = INCBIN_U16("graphics/pokemon/honedge/normal.gbapal");
-    const u32 gMonBackPic_Honedge[] = INCBIN_U32("graphics/pokemon/honedge/back.4bpp.smol");
-    const u16 gMonShinyPalette_Honedge[] = INCBIN_U16("graphics/pokemon/honedge/shiny.gbapal");
-    const u8 gMonIcon_Honedge[] = INCBIN_U8("graphics/pokemon/honedge/icon.4bpp");
+#if P_FAMILY_PHOENIXMON
+    const u32 gMonFrontPic_Phoenixmon[] = INCBIN_U32("graphics/pokemon/phoenixmon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Phoenixmon[] = INCBIN_U16("graphics/pokemon/phoenixmon/normal.gbapal");
+    const u32 gMonBackPic_Phoenixmon[] = INCBIN_U32("graphics/pokemon/phoenixmon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Phoenixmon[] = INCBIN_U16("graphics/pokemon/phoenixmon/shiny.gbapal");
+    const u8 gMonIcon_Phoenixmon[] = INCBIN_U8("graphics/pokemon/phoenixmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Honedge[] = INCBIN_U8("graphics/pokemon/honedge/footprint.1bpp");
+    const u8 gMonFootprint_Phoenixmon[] = INCBIN_U8("graphics/pokemon/phoenixmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Honedge[] = INCBIN_COMP("graphics/pokemon/honedge/overworld.4bpp");
+    const u32 gObjectEventPic_Phoenixmon[] = INCBIN_COMP("graphics/pokemon/phoenixmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Honedge[] = INCBIN_U16("graphics/pokemon/honedge/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Honedge[] = INCBIN_U16("graphics/pokemon/honedge/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Phoenixmon[] = INCBIN_U16("graphics/pokemon/phoenixmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Phoenixmon[] = INCBIN_U16("graphics/pokemon/phoenixmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -19985,7 +19985,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     // const u16 gShinyOverworldPalette_AegislashBlade[] = INCBIN_U16("graphics/pokemon/aegislash/blade/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_HONEDGE
+#endif //P_FAMILY_PHOENIXMON
 
 #if P_FAMILY_SPRITZEE
     const u32 gMonFrontPic_Spritzee[] = INCBIN_U32("graphics/pokemon/spritzee/anim_front.4bpp.smol");

@@ -399,7 +399,7 @@
 #define P_FAMILY_DEVITAMAMON                 P_GEN_6_POKEMON
 #define P_FAMILY_FURFROU                 P_GEN_6_POKEMON
 #define P_FAMILY_GOLDRAMON                  P_GEN_6_POKEMON
-#define P_FAMILY_HONEDGE                 P_GEN_6_POKEMON
+#define P_FAMILY_PHOENIXMON                 P_GEN_6_POKEMON
 #define P_FAMILY_SPRITZEE                P_GEN_6_POKEMON
 #define P_FAMILY_SWIRLIX                 P_GEN_6_POKEMON
 #define P_FAMILY_INKAY                   P_GEN_6_POKEMON

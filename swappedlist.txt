@@ -533,5 +533,6 @@ SaberLeomon - Vivillon
 WarGreymon - Fennekin
 Goldramon - Espurr
 Gryphonmon - Meowstic (Male)
+Phoenixmon - Honedge
 
 SPECIES NAME LENGTH MAX = 13

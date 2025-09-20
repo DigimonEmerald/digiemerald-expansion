@@ -1651,11 +1651,11 @@ gCryTable::
 .if P_FAMILY_GOLDRAMON == TRUE
 	cry Cry_Goldramon
 .endif @ P_FAMILY_GOLDRAMON
-.if P_FAMILY_HONEDGE == TRUE
-	cry Cry_Honedge
+.if P_FAMILY_PHOENIXMON == TRUE
+	cry Cry_Phoenixmon
 	cry Cry_Doublade
 	cry Cry_Aegislash
-.endif @ P_FAMILY_HONEDGE
+.endif @ P_FAMILY_PHOENIXMON
 .if P_FAMILY_SPRITZEE == TRUE
 	cry Cry_Spritzee
 	cry Cry_Aromatisse
@@ -4078,11 +4078,11 @@ gCryTable_Reverse::
 .if P_FAMILY_GOLDRAMON == TRUE
 	cry_reverse Cry_Goldramon
 .endif @ P_FAMILY_GOLDRAMON
-.if P_FAMILY_HONEDGE == TRUE
-	cry_reverse Cry_Honedge
+.if P_FAMILY_PHOENIXMON == TRUE
+	cry_reverse Cry_Phoenixmon
 	cry_reverse Cry_Doublade
 	cry_reverse Cry_Aegislash
-.endif @ P_FAMILY_HONEDGE
+.endif @ P_FAMILY_PHOENIXMON
 .if P_FAMILY_SPRITZEE == TRUE
 	cry_reverse Cry_Spritzee
 	cry_reverse Cry_Aromatisse

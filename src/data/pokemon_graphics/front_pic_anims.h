@@ -8397,8 +8397,8 @@ static const union AnimCmd sAnim_Meowstic_1[] =
 };
 #endif //P_FAMILY_GOLDRAMON
 
-#if P_FAMILY_HONEDGE
-static const union AnimCmd sAnim_Honedge_1[] =
+#if P_FAMILY_PHOENIXMON
+static const union AnimCmd sAnim_Phoenixmon_1[] =
 {
     ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(1, 40),
@@ -8435,7 +8435,7 @@ static const union AnimCmd sAnim_AegislashBlade_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_HONEDGE
+#endif //P_FAMILY_PHOENIXMON
 
 #if P_FAMILY_SPRITZEE
 static const union AnimCmd sAnim_Spritzee_1[] =
@@ -12020,12 +12020,12 @@ SINGLE_ANIMATION(Furfrou);
 SINGLE_ANIMATION(Goldramon);
 SINGLE_ANIMATION(Meowstic);
 #endif //P_FAMILY_GOLDRAMON
-#if P_FAMILY_HONEDGE
-SINGLE_ANIMATION(Honedge);
+#if P_FAMILY_PHOENIXMON
+SINGLE_ANIMATION(Phoenixmon);
 SINGLE_ANIMATION(Doublade);
 SINGLE_ANIMATION(AegislashShield);
 SINGLE_ANIMATION(AegislashBlade);
-#endif //P_FAMILY_HONEDGE
+#endif //P_FAMILY_PHOENIXMON
 #if P_FAMILY_SPRITZEE
 SINGLE_ANIMATION(Spritzee);
 SINGLE_ANIMATION(Aromatisse);

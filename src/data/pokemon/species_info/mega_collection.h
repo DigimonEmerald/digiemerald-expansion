@@ -2565,42 +2565,45 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
 #endif //P_FAMILY_GOLDRAMON
 
-#if P_FAMILY_HONEDGE
-    [SPECIES_HONEDGE] =
+#if P_FAMILY_PHOENIXMON
+    [SPECIES_PHOENIXMON] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 80,
-        .baseDefense   = 100,
-        .baseSpeed     = 28,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 37,
-        .types = MON_TYPES(TYPE_STEEL, TYPE_GHOST),
-        .catchRate = 180,
-        .expYield = 65,
-        .evYield_Defense = 1,
+        .baseHP        = 110,
+        .baseAttack    = 85,
+        .baseDefense   = 70,
+        .baseSpeed     = 150,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_FLYING),
+        .attribute = TYPE_VACCINE,   
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_HP = 1,
+        .evYield_Speed = 4,
+        .evYield_SpAttack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_NO_GUARD, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Honedge"),
-        .cryId = CRY_HONEDGE,
-        .natDexNum = NATIONAL_DEX_HONEDGE,
-        .categoryName = _("Sword"),
-        .height = 8,
-        .weight = 20,
+        .abilities = { ABILITY_AIR_LOCK, ABILITY_BIG_PECKS, ABILITY_SERENE_GRACE },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Phoenixmon"),
+        .cryId = CRY_PHOENIXMON,
+        .natDexNum = NATIONAL_DEX_PHOENIXMON,
+        .categoryName = _("Fenghuang"),
+        .height = 51,
+        .weight = 3624,
         .description = COMPOUND_STRING(
-            "If anyone dares to grab its hilt, it\n"
-            "wraps a blue cloth around that person's\n"
-            "arm and drains that person's life\n"
-            "energy completely."),
+            "Considered the ultimate form of flying\n"
+            "type Digimon, Phoenixmon posseses\n"
+            "immense abilities. The flap of its\n"
+            "wings is said to purify the wicked."),
         .pokemonScale = 366,
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Honedge,
+        .frontPic = gMonFrontPic_Phoenixmon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2610,29 +2613,29 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ),
         .frontAnimId = ANIM_SWING_CONVEX,
         .enemyMonElevation = 4,
-        .backPic = gMonBackPic_Honedge,
+        .backPic = gMonBackPic_Phoenixmon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Honedge,
-        .shinyPalette = gMonShinyPalette_Honedge,
-        .iconSprite = gMonIcon_Honedge,
+        .palette = gMonPalette_Phoenixmon,
+        .shinyPalette = gMonShinyPalette_Phoenixmon,
+        .iconSprite = gMonIcon_Phoenixmon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-10, 11, SHADOW_SIZE_S)
-        FOOTPRINT(Honedge)
+        FOOTPRINT(Phoenixmon)
         OVERWORLD(
-            sPicTable_Honedge,
+            sPicTable_Phoenixmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Honedge,
-            gShinyOverworldPalette_Honedge
+            gOverworldPalette_Phoenixmon,
+            gShinyOverworldPalette_Phoenixmon
         )
-        .levelUpLearnset = sHonedgeLevelUpLearnset,
-        .teachableLearnset = sHonedgeTeachableLearnset,
-        .eggMoveLearnset = sHonedgeEggMoveLearnset,
+        .levelUpLearnset = sPhoenixmonLevelUpLearnset,
+        .teachableLearnset = sPhoenixmonTeachableLearnset,
+        .eggMoveLearnset = sPhoenixmonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_DOUBLADE}),
     },
 
@@ -2662,7 +2665,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 8,
         .weight = 45,
         .description = COMPOUND_STRING(
-            "When Honedge evolves, it divides into\n"
+            "When Phoenixmon evolves, it divides into\n"
             "two swords. The complex attack patterns\n"
             "of its two swords are unstoppable, even\n"
             "against those skilled at swordplay."),
@@ -2850,7 +2853,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .formSpeciesIdTable = sAegislashFormSpeciesIdTable,
         .formChangeTable = sAegislashFormChangeTable,
     },
-#endif //P_FAMILY_HONEDGE
+#endif //P_FAMILY_PHOENIXMON
 
 #if P_FAMILY_SPRITZEE
     [SPECIES_SPRITZEE] =

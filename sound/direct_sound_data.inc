@@ -4301,10 +4301,10 @@ Cry_Goldramon::
 	.align 2
 .endif @ P_FAMILY_GOLDRAMON
 
-.if P_FAMILY_HONEDGE == TRUE
+.if P_FAMILY_PHOENIXMON == TRUE
 	.align 2
-Cry_Honedge::
-	.incbin "sound/direct_sound_samples/cries/honedge.bin"
+Cry_Phoenixmon::
+	.incbin "sound/direct_sound_samples/cries/phoenixmon.bin"
 
 	.align 2
 Cry_Doublade::
@@ -4313,7 +4313,7 @@ Cry_Doublade::
 	.align 2
 Cry_Aegislash::
 	.incbin "sound/direct_sound_samples/cries/aegislash.bin"
-.endif @ P_FAMILY_HONEDGE
+.endif @ P_FAMILY_PHOENIXMON
 
 .if P_FAMILY_SPRITZEE == TRUE
 	.align 2

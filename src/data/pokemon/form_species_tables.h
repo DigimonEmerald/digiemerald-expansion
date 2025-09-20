@@ -1480,13 +1480,13 @@ static const u16 sMeowsticFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_GOLDRAMON
 
-#if P_FAMILY_HONEDGE
+#if P_FAMILY_PHOENIXMON
 static const u16 sAegislashFormSpeciesIdTable[] = {
     SPECIES_AEGISLASH_SHIELD,
     SPECIES_AEGISLASH_BLADE,
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_HONEDGE
+#endif //P_FAMILY_PHOENIXMON
 
 #if P_FAMILY_GOOMY
 static const u16 sSliggooFormSpeciesIdTable[] = {

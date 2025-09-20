@@ -723,8 +723,8 @@
 #define P_FAMILY_FURFROU                 TRUE
 #undef P_FAMILY_GOLDRAMON
 #define P_FAMILY_GOLDRAMON                  TRUE
-#undef P_FAMILY_HONEDGE
-#define P_FAMILY_HONEDGE                 TRUE
+#undef P_FAMILY_PHOENIXMON
+#define P_FAMILY_PHOENIXMON                 TRUE
 #undef P_FAMILY_SPRITZEE
 #define P_FAMILY_SPRITZEE                TRUE
 #undef P_FAMILY_SWIRLIX

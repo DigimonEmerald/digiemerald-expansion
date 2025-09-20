@@ -27261,8 +27261,8 @@ static const u16 sMeowsticFTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GOLDRAMON
 
-#if P_FAMILY_HONEDGE
-static const u16 sHonedgeTeachableLearnset[] = {
+#if P_FAMILY_PHOENIXMON
+static const u16 sPhoenixmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -27336,7 +27336,7 @@ static const u16 sAegislashTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_HONEDGE
+#endif //P_FAMILY_PHOENIXMON
 
 #if P_FAMILY_SPRITZEE
 static const u16 sSpritzeeTeachableLearnset[] = {

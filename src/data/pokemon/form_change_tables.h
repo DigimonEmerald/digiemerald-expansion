@@ -806,7 +806,7 @@ static const struct FormChange sFurfrouFormChangeTable[] = {
 };
 #endif //P_FAMILY_FURFROU
 
-#if P_FAMILY_HONEDGE
+#if P_FAMILY_PHOENIXMON
 static const struct FormChange sAegislashFormChangeTable[] = {
     {FORM_CHANGE_BATTLE_BEFORE_MOVE_CATEGORY, SPECIES_AEGISLASH_BLADE,  DAMAGE_CATEGORY_PHYSICAL, ABILITY_STANCE_CHANGE},
     {FORM_CHANGE_BATTLE_BEFORE_MOVE_CATEGORY, SPECIES_AEGISLASH_BLADE,  DAMAGE_CATEGORY_SPECIAL,  ABILITY_STANCE_CHANGE},
@@ -816,7 +816,7 @@ static const struct FormChange sAegislashFormChangeTable[] = {
     {FORM_CHANGE_END_BATTLE,                  SPECIES_AEGISLASH_SHIELD},
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_HONEDGE
+#endif //P_FAMILY_PHOENIXMON
 
 #if P_FAMILY_XERNEAS
 static const struct FormChange sXerneasFormChangeTable[] = {
