@@ -1175,7 +1175,7 @@ static const u16 sGarudamonFormSpeciesIdTable[] = {
 #if P_FAMILY_GIGADRAMON
 static const u16 sGigadramonFormSpeciesIdTable[] = {
     SPECIES_GIGADRAMON,
-    SPECIES_GIGADRAMON_BLUE_STRIPED,
+    SPECIES_KINGSUKAMON,
     SPECIES_GIGADRAMON_WHITE_STRIPED,
     FORM_SPECIES_END,
 };

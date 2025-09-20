@@ -1157,7 +1157,7 @@
 #define SPECIES_ARCEUS_DRAGON                           1087
 #define SPECIES_ARCEUS_DARK                             1088
 #define SPECIES_ARCEUS_FAIRY                            1089
-#define SPECIES_GIGADRAMON_BLUE_STRIPED                   1090
+#define SPECIES_KINGSUKAMON                   1090
 #define SPECIES_GIGADRAMON_WHITE_STRIPED                  1091
 #define SPECIES_DARMANITAN_ZEN                          1092
 #define SPECIES_DARMANITAN_GALAR_ZEN                    1093
