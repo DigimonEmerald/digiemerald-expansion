@@ -1142,8 +1142,7 @@ gCryTable::
 	cry Cry_Cherrim
 .endif @ P_FAMILY_TORTOMON
 .if P_FAMILY_GUARDROMON == TRUE
-	cry Cry_Guardromon
-	cry Cry_Gastrodon
+	cry Cry_Gururumon
 .endif @ P_FAMILY_GUARDROMON
 .if P_FAMILY_DRIFLOON == TRUE
 	cry Cry_Drifloon
@@ -1650,7 +1649,6 @@ gCryTable::
 .endif @ P_FAMILY_FURFROU
 .if P_FAMILY_GOLDRAMON == TRUE
 	cry Cry_Goldramon
-	cry Cry_Meowstic
 .endif @ P_FAMILY_GOLDRAMON
 .if P_FAMILY_HONEDGE == TRUE
 	cry Cry_Honedge
@@ -3570,8 +3568,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Cherrim
 .endif @ P_FAMILY_TORTOMON
 .if P_FAMILY_GUARDROMON == TRUE
-	cry_reverse Cry_Guardromon
-	cry_reverse Cry_Gastrodon
+	cry_reverse Cry_Gururumon
 .endif @ P_FAMILY_GUARDROMON
 .if P_FAMILY_DRIFLOON == TRUE
 	cry_reverse Cry_Drifloon
@@ -4078,7 +4075,6 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_FURFROU
 .if P_FAMILY_GOLDRAMON == TRUE
 	cry_reverse Cry_Goldramon
-	cry_reverse Cry_Meowstic
 .endif @ P_FAMILY_GOLDRAMON
 .if P_FAMILY_HONEDGE == TRUE
 	cry_reverse Cry_Honedge

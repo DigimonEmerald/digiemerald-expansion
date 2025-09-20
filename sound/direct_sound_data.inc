@@ -3056,12 +3056,10 @@ Cry_Cherrim::
 
 .if P_FAMILY_GUARDROMON == TRUE
 	.align 2
-Cry_Guardromon::
-	.incbin "sound/direct_sound_samples/cries/guardromon.bin"
+Cry_Gururumon::
+	.incbin "sound/direct_sound_samples/cries/gururumon.bin"
 
 	.align 2
-Cry_Gastrodon::
-	.incbin "sound/direct_sound_samples/cries/gastrodon.bin"
 .endif @ P_FAMILY_GUARDROMON
 
 .if P_FAMILY_DRIFLOON == TRUE
@@ -4299,8 +4297,6 @@ Cry_Goldramon::
 	.incbin "sound/direct_sound_samples/cries/goldramon.bin"
 
 	.align 2
-Cry_Meowstic::
-	.incbin "sound/direct_sound_samples/cries/meowstic.bin"
 .endif @ P_FAMILY_GOLDRAMON
 
 .if P_FAMILY_HONEDGE == TRUE

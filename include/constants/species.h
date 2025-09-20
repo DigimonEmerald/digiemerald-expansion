@@ -567,8 +567,8 @@
 #define SPECIES_DERAMON                              547
 #define SPECIES_PHANTOMON                                 548
 #define SPECIES_GARUDAMON                               549
-#define SPECIES_GIGADRAMON                                SPECIES_GIGADRAMON
-#define SPECIES_GIGADRAMON                    550
+#define SPECIES_GIGADRAMON                                SPECIES_KINGSUKAMON
+#define SPECIES_KINGSUKAMON                    550
 #define SPECIES_SANDILE                                 551
 #define SPECIES_KROKOROK                                552
 #define SPECIES_KROOKODILE                              553
@@ -1129,7 +1129,7 @@
 #define SPECIES_OCTOMON                          1059
 #define SPECIES_OGREMON                          1060
 #define SPECIES_VEEDRAMON                        1061
-#define SPECIES_GUARDROMON                            1062
+#define SPECIES_GUARDROMON_FILLER                            1062
 #define SPECIES_GASTRODON_EAST                          1063
 #define SPECIES_ROTOM_HEAT                              1064
 #define SPECIES_ROTOM_WASH                              1065
@@ -1157,7 +1157,7 @@
 #define SPECIES_ARCEUS_DRAGON                           1087
 #define SPECIES_ARCEUS_DARK                             1088
 #define SPECIES_ARCEUS_FAIRY                            1089
-#define SPECIES_KINGSUKAMON                   1090
+#define SPECIES_KINGSUKAMON_FILLER                   1090
 #define SPECIES_GIGADRAMON_WHITE_STRIPED                  1091
 #define SPECIES_DARMANITAN_ZEN                          1092
 #define SPECIES_DARMANITAN_GALAR_ZEN                    1093
