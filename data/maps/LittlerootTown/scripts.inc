@@ -2037,17 +2037,20 @@ LittlerootTown_EventScript_Test::
 # 1022 "data/maps/LittlerootTown/scripts.pory"
 	msgbox LittlerootTown_EventScript_Test_Text_0
 # 1023 "data/maps/LittlerootTown/scripts.pory"
-	givemon SPECIES_AGUMON, 5
+	givemon SPECIES_SHELLMON, 50
 # 1024 "data/maps/LittlerootTown/scripts.pory"
-	givemon SPECIES_EXVEEMON, 5
+	givemon SPECIES_KUWAGAMON, 50
 # 1025 "data/maps/LittlerootTown/scripts.pory"
-	givemon SPECIES_NUMEMON, 5
+	givemon SPECIES_NUMEMON, 50
 # 1026 "data/maps/LittlerootTown/scripts.pory"
+	givemon SPECIES_TRICERAMON, 50
+# 1027 "data/maps/LittlerootTown/scripts.pory"
+	givemon SPECIES_PUYOYOMON, 50
+# 1028 "data/maps/LittlerootTown/scripts.pory"
 	release
 	return
 
 
 LittlerootTown_EventScript_Test_Text_0:
 # 1022 "data/maps/LittlerootTown/scripts.pory"
-	.string "If you are seeing this, someone forgot\n"
-	.string "to remove some testing stuff$"
+	.string "I forgot to remove some testing stuff$"

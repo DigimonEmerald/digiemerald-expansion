@@ -1019,9 +1019,11 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 
 script LittlerootTown_EventScript_Test {
     lock
-    msgbox(format("If you are seeing this, someone forgot to remove some testing stuff"))
-	givemon(SPECIES_AGUMON, 5)
-	givemon(SPECIES_EXVEEMON, 5)
-	givemon(SPECIES_NUMEMON, 5)
+    msgbox(format("I forgot to remove some testing stuff"))
+	givemon(SPECIES_SHELLMON, 50)
+	givemon(SPECIES_KUWAGAMON, 50)
+	givemon(SPECIES_NUMEMON, 50)
+	givemon(SPECIES_TRICERAMON, 50)
+	givemon(SPECIES_PUYOYOMON, 50)
     release
 }
