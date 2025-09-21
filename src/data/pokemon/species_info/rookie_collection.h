@@ -614,7 +614,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 2,
         .frontPic = gMonFrontPic_Angoramon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 56) : MON_COORDS_SIZE(48, 64),
-        .frontPicYOffset = 4,
+        .frontPicYOffset = 2,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 17),
             ANIMCMD_FRAME(1, 4),
@@ -631,14 +631,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontAnimId = ANIM_GROW_VIBRATE,
         .backPic = gMonBackPic_Angoramon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 40) : MON_COORDS_SIZE(56, 56),
-        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 12 : 6,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
         .palette = gMonPalette_Angoramon,
         .shinyPalette = gMonShinyPalette_Angoramon,
         .iconSprite = gMonIcon_Angoramon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
-        SHADOW(1, 9, SHADOW_SIZE_M)
+        SHADOW(2, 13, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Angoramon)
         OVERWORLD(
             sPicTable_Angoramon,
@@ -7712,7 +7712,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Gammamon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
-        .frontPicYOffset = 6,
+        .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 8),
             ANIMCMD_FRAME(0, 8),
@@ -7724,14 +7724,14 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .frontAnimId = ANIM_H_JUMPS,
         .backPic = gMonBackPic_Gammamon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(56, 48),
-        .backPicYOffset = 7,
+        .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
         .palette = gMonPalette_Gammamon,
         .shinyPalette = gMonShinyPalette_Gammamon,
         .iconSprite = gMonIcon_Gammamon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
-        SHADOW(-4, 7, SHADOW_SIZE_M)
+        SHADOW(0, 8, SHADOW_SIZE_L)
         FOOTPRINT(Gammamon)
         OVERWORLD(
             sPicTable_Gammamon,
