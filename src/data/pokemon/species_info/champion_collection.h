@@ -14681,44 +14681,45 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sHyogamonLevelUpLearnset,
         .teachableLearnset = sHyogamonTeachableLearnset,
         .eggMoveLearnset = sHyogamonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_LOPUNNY, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_ICEDEVIMON, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
     },
 
-    [SPECIES_LOPUNNY] =
+    [SPECIES_ICEDEVIMON] =
     {
-        .baseHP        = 65,
-        .baseAttack    = 76,
-        .baseDefense   = 84,
-        .baseSpeed     = 105,
-        .baseSpAttack  = 54,
-        .baseSpDefense = 96,
-        .types = MON_TYPES(TYPE_NORMAL),
-        .catchRate = 60,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 168 : 178,
-        .evYield_Speed = 2,
+        .baseHP        = 50,
+        .baseAttack    = 100,
+        .baseDefense   = 130,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 60,
+        .types = MON_TYPES(TYPE_DARK, TYPE_ICE),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense = 4,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = 140,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_CUTE_CHARM, ABILITY_KLUTZ, ABILITY_LIMBER },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Lopunny"),
-        .cryId = CRY_LOPUNNY,
-        .natDexNum = NATIONAL_DEX_LOPUNNY,
-        .categoryName = _("Rabbit"),
-        .height = 12,
-        .weight = 333,
+        .abilities = { ABILITY_ICE_BODY, ABILITY_INTIMIDATE, ABILITY_ROCK_HEAD },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("IceDevimon"),
+        .cryId = CRY_ICEDEVIMON,
+        .natDexNum = NATIONAL_DEX_ICEDEVIMON,
+        .categoryName = _("Devil"),
+        .height = 30,
+        .weight = 908,
         .description = COMPOUND_STRING(
-            "An extremely cautious Pokémon.\n"
-            "It is very conscious of its looks and\n"
-            "never fails to groom its ears.\n"
-            "It runs with sprightly jumps."),
+            "Using the wings on its back, IceDevimon\n"
+            "wraps up any enemies it encounters and\n"
+            "freeezes them. It has an especially\n"
+            "twisted desire to harm others."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Lopunny,
+        .frontPic = gMonFrontPic_Icedevimon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
@@ -14727,34 +14728,34 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_SHRINK_GROW,
-        .backPic = gMonBackPic_Lopunny,
+        .backPic = gMonBackPic_Icedevimon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Lopunny,
-        .shinyPalette = gMonShinyPalette_Lopunny,
-        .iconSprite = gMonIcon_Lopunny,
+        .palette = gMonPalette_Icedevimon,
+        .shinyPalette = gMonShinyPalette_Icedevimon,
+        .iconSprite = gMonIcon_Icedevimon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 10, SHADOW_SIZE_S)
-        FOOTPRINT(Lopunny)
+        FOOTPRINT(Icedevimon)
         OVERWORLD(
-            sPicTable_Lopunny,
+            sPicTable_Icedevimon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Lopunny,
-            gShinyOverworldPalette_Lopunny
+            gOverworldPalette_Icedevimon,
+            gShinyOverworldPalette_Icedevimon
         )
-        .levelUpLearnset = sLopunnyLevelUpLearnset,
-        .teachableLearnset = sLopunnyTeachableLearnset,
-        .formSpeciesIdTable = sLopunnyFormSpeciesIdTable,
-        .formChangeTable = sLopunnyFormChangeTable,
+        .levelUpLearnset = sIcedevimonLevelUpLearnset,
+        .teachableLearnset = sIcedevimonTeachableLearnset,
+        .formSpeciesIdTable = sIcedevimonFormSpeciesIdTable,
+        .formChangeTable = sIcedevimonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_LOPUNNY_MEGA] =
+    [SPECIES_ICEDEVIMON_MEGA] =
     {
         .baseHP        = 65,
         .baseAttack    = 136,
@@ -14773,9 +14774,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_SCRAPPY, ABILITY_SCRAPPY, ABILITY_SCRAPPY },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Lopunny"),
-        .cryId = CRY_LOPUNNY_MEGA,
-        .natDexNum = NATIONAL_DEX_LOPUNNY,
+        .speciesName = _("Icedevimon"),
+        .cryId = CRY_ICEDEVIMON_MEGA,
+        .natDexNum = NATIONAL_DEX_ICEDEVIMON,
         .categoryName = _("Rabbit"),
         .height = 13,
         .weight = 283,
@@ -14788,38 +14789,38 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_LopunnyMega,
+        .frontPic = gMonFrontPic_IcedevimonMega,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 1,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_LopunnyMega,
+        .backPic = gMonBackPic_IcedevimonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_LopunnyMega,
-        .shinyPalette = gMonShinyPalette_LopunnyMega,
-        .iconSprite = gMonIcon_LopunnyMega,
+        .palette = gMonPalette_IcedevimonMega,
+        .shinyPalette = gMonShinyPalette_IcedevimonMega,
+        .iconSprite = gMonIcon_IcedevimonMega,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 13, SHADOW_SIZE_S)
-        FOOTPRINT(Lopunny)
+        FOOTPRINT(Icedevimon)
     #if OW_BATTLE_ONLY_FORMS
         OVERWORLD(
-            sPicTable_LopunnyMega,
+            sPicTable_IcedevimonMega,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_LopunnyMega,
-            gShinyOverworldPalette_LopunnyMega
+            gOverworldPalette_IcedevimonMega,
+            gShinyOverworldPalette_IcedevimonMega
         )
     #endif //OW_BATTLE_ONLY_FORMS
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sLopunnyLevelUpLearnset,
-        .teachableLearnset = sLopunnyTeachableLearnset,
-        .formSpeciesIdTable = sLopunnyFormSpeciesIdTable,
-        .formChangeTable = sLopunnyFormChangeTable,
+        .levelUpLearnset = sIcedevimonLevelUpLearnset,
+        .teachableLearnset = sIcedevimonTeachableLearnset,
+        .formSpeciesIdTable = sIcedevimonFormSpeciesIdTable,
+        .formChangeTable = sIcedevimonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HYOGAMON

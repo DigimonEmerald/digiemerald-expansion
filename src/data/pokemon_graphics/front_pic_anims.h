@@ -5684,7 +5684,7 @@ static const union AnimCmd sAnim_Hyogamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Lopunny_1[] =
+static const union AnimCmd sAnim_Icedevimon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -5693,7 +5693,7 @@ static const union AnimCmd sAnim_Lopunny_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(LopunnyMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(IcedevimonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HYOGAMON
 
@@ -11483,9 +11483,9 @@ SINGLE_ANIMATION(Honeybeemon);
 #endif //P_FAMILY_GUARDROMON
 #if P_FAMILY_HYOGAMON
 SINGLE_ANIMATION(Hyogamon);
-SINGLE_ANIMATION(Lopunny);
+SINGLE_ANIMATION(Icedevimon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(LopunnyMega);
+SINGLE_ANIMATION(IcedevimonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HYOGAMON
 #if P_FAMILY_GLAMEOW

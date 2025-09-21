@@ -442,7 +442,7 @@
 #define SPECIES_GUARDROMON                                425
 #define SPECIES_HONEYBEEMON                                426
 #define SPECIES_HYOGAMON                                 427
-#define SPECIES_LOPUNNY                                 428
+#define SPECIES_ICEDEVIMON                                 428
 #define SPECIES_MISMAGIUS                               429
 #define SPECIES_HONCHKROW                               430
 #define SPECIES_GLAMEOW                                 431
@@ -1008,7 +1008,7 @@
 #define SPECIES_GAOGAMON_MEGA                          943
 #define SPECIES_GARURUMON_X_MEGA                             944
 #define SPECIES_GATOMON_MEGA                             945
-#define SPECIES_LOPUNNY_MEGA                            946
+#define SPECIES_ICEDEVIMON_MEGA                            946
 #define SPECIES_GARCHOMP_MEGA                           947
 #define SPECIES_LUCARIO_MEGA                            948
 #define SPECIES_ABOMASNOW_MEGA                          949

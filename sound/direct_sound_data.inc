@@ -3080,13 +3080,13 @@ Cry_Hyogamon::
 	.incbin "sound/direct_sound_samples/cries/hyogamon.bin"
 
 	.align 2
-Cry_Lopunny::
-	.incbin "sound/direct_sound_samples/cries/lopunny.bin"
+Cry_Icedevimon::
+	.incbin "sound/direct_sound_samples/cries/icedevimon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_LopunnyMega::
-	.incbin "sound/direct_sound_samples/cries/lopunny_mega.bin"
+Cry_IcedevimonMega::
+	.incbin "sound/direct_sound_samples/cries/icedevimon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HYOGAMON
 

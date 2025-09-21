@@ -3327,13 +3327,13 @@ static const struct SpriteFrameImage sPicTable_Honeybeemon[] = {
 static const struct SpriteFrameImage sPicTable_Hyogamon[] = {
     overworld_ascending_frames(gObjectEventPic_Hyogamon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Lopunny[] = {
-    overworld_ascending_frames(gObjectEventPic_Lopunny, 4, 4),
+static const struct SpriteFrameImage sPicTable_Icedevimon[] = {
+    overworld_ascending_frames(gObjectEventPic_Icedevimon, 4, 4),
 };
 #if OW_BATTLE_ONLY_FORMS
 #if P_MEGA_EVOLUTIONS
-static const struct SpriteFrameImage sPicTable_LopunnyMega[] = {
-    overworld_ascending_frames(gObjectEventPic_LopunnyMega, 4, 4),
+static const struct SpriteFrameImage sPicTable_IcedevimonMega[] = {
+    overworld_ascending_frames(gObjectEventPic_IcedevimonMega, 4, 4),
 };
 #endif // P_MEGA_EVOLUTIONS
 #endif // OW_BATTLE_ONLY_FORMS

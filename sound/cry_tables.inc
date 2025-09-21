@@ -1151,9 +1151,9 @@ gCryTable::
 .endif @ P_FAMILY_GUARDROMON
 .if P_FAMILY_HYOGAMON == TRUE
 	cry Cry_Hyogamon
-	cry Cry_Lopunny
+	cry Cry_Icedevimon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_LopunnyMega
+	cry Cry_IcedevimonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HYOGAMON
 .if P_FAMILY_GLAMEOW == TRUE
@@ -3578,9 +3578,9 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_GUARDROMON
 .if P_FAMILY_HYOGAMON == TRUE
 	cry_reverse Cry_Hyogamon
-	cry_reverse Cry_Lopunny
+	cry_reverse Cry_Icedevimon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_LopunnyMega
+	cry_reverse Cry_IcedevimonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HYOGAMON
 .if P_FAMILY_GLAMEOW == TRUE

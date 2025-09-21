@@ -1035,10 +1035,10 @@ static const u16 sGastrodonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_SHELLOS
 
 #if P_FAMILY_HYOGAMON
-static const u16 sLopunnyFormSpeciesIdTable[] = {
-    SPECIES_LOPUNNY,
+static const u16 sIcedevimonFormSpeciesIdTable[] = {
+    SPECIES_ICEDEVIMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_LOPUNNY_MEGA,
+    SPECIES_ICEDEVIMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
