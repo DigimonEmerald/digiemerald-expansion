@@ -14825,42 +14825,44 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HYOGAMON
 
-#if P_FAMILY_GLAMEOW
-    [SPECIES_GLAMEOW] =
+#if P_FAMILY_ICEMON
+    [SPECIES_ICEMON] =
     {
-        .baseHP        = 49,
-        .baseAttack    = 55,
-        .baseDefense   = 42,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 42,
-        .baseSpDefense = 37,
-        .types = MON_TYPES(TYPE_NORMAL),
-        .catchRate = 190,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 62 : 71,
-        .evYield_Speed = 1,
+        .baseHP        = 65,
+        .baseAttack    = 65,
+        .baseDefense   = 105,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 105,
+        .types = MON_TYPES(TYPE_ROCK, TYPE_ICE),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense = 2,
+        .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_LIMBER, ABILITY_OWN_TEMPO, ABILITY_KEEN_EYE },
-        .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Glameow"),
-        .cryId = CRY_GLAMEOW,
-        .natDexNum = NATIONAL_DEX_GLAMEOW,
-        .categoryName = _("Catty"),
-        .height = 5,
-        .weight = 39,
+        .abilities = { ABILITY_ICE_BODY, ABILITY_STURDY, ABILITY_KEEN_EYE }, // Cryomancer
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Icemon"),
+        .cryId = CRY_ICEMON,
+        .natDexNum = NATIONAL_DEX_ICEMON,
+        .categoryName = _("Ore"),
+        .height = 9,
+        .weight = 756,
         .description = COMPOUND_STRING(
-            "It is a very fickle Pokémon, which is \n"
-            "very popular among some. It claws its\n"
-            "Trainer's nose if it isn't fed and\n"
-            "purrs when affectionate."),
+            "It is widely debated if Icemon is a\n"
+            "mutation or evolution of Gotsumon.\n"
+            "It has the same friendly demeanor\n"
+            "that lets it befriend anyone."),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Glameow,
+        .frontPic = gMonFrontPic_Icemon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
@@ -14869,29 +14871,29 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_GROW_VIBRATE,
-        .backPic = gMonBackPic_Glameow,
+        .backPic = gMonBackPic_Icemon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_SHRINK_GROW,
-        .palette = gMonPalette_Glameow,
-        .shinyPalette = gMonShinyPalette_Glameow,
-        .iconSprite = gMonIcon_Glameow,
+        .palette = gMonPalette_Icemon,
+        .shinyPalette = gMonShinyPalette_Icemon,
+        .iconSprite = gMonIcon_Icemon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(-3, 6, SHADOW_SIZE_S)
-        FOOTPRINT(Glameow)
+        FOOTPRINT(Icemon)
         OVERWORLD(
-            sPicTable_Glameow,
+            sPicTable_Icemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Glameow,
-            gShinyOverworldPalette_Glameow
+            gOverworldPalette_Icemon,
+            gShinyOverworldPalette_Icemon
         )
-        .levelUpLearnset = sGlameowLevelUpLearnset,
-        .teachableLearnset = sGlameowTeachableLearnset,
-        .eggMoveLearnset = sGlameowEggMoveLearnset,
+        .levelUpLearnset = sIcemonLevelUpLearnset,
+        .teachableLearnset = sIcemonTeachableLearnset,
+        .eggMoveLearnset = sIcemonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_PURUGLY}),
     },
 
@@ -14965,7 +14967,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sPuruglyLevelUpLearnset,
         .teachableLearnset = sPuruglyTeachableLearnset,
     },
-#endif //P_FAMILY_GLAMEOW
+#endif //P_FAMILY_ICEMON
 
 #if P_FAMILY_STUNKY
     [SPECIES_STUNKY] =

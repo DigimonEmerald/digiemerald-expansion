@@ -1156,10 +1156,10 @@ gCryTable::
 	cry Cry_IcedevimonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HYOGAMON
-.if P_FAMILY_GLAMEOW == TRUE
-	cry Cry_Glameow
+.if P_FAMILY_ICEMON == TRUE
+	cry Cry_Icemon
 	cry Cry_Purugly
-.endif @ P_FAMILY_GLAMEOW
+.endif @ P_FAMILY_ICEMON
 .if P_FAMILY_STUNKY == TRUE
 	cry Cry_Stunky
 	cry Cry_Skuntank
@@ -3583,10 +3583,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_IcedevimonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HYOGAMON
-.if P_FAMILY_GLAMEOW == TRUE
-	cry_reverse Cry_Glameow
+.if P_FAMILY_ICEMON == TRUE
+	cry_reverse Cry_Icemon
 	cry_reverse Cry_Purugly
-.endif @ P_FAMILY_GLAMEOW
+.endif @ P_FAMILY_ICEMON
 .if P_FAMILY_STUNKY == TRUE
 	cry_reverse Cry_Stunky
 	cry_reverse Cry_Skuntank

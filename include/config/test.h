@@ -480,8 +480,8 @@
 #define P_FAMILY_GUARDROMON                TRUE
 #undef P_FAMILY_HYOGAMON
 #define P_FAMILY_HYOGAMON                 TRUE
-#undef P_FAMILY_GLAMEOW
-#define P_FAMILY_GLAMEOW                 TRUE
+#undef P_FAMILY_ICEMON
+#define P_FAMILY_ICEMON                 TRUE
 #undef P_FAMILY_STUNKY
 #define P_FAMILY_STUNKY                  TRUE
 #undef P_FAMILY_BRONZOR

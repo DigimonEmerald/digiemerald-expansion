@@ -3689,8 +3689,8 @@ static const u16 sHyogamonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_HYOGAMON
 
-#if P_FAMILY_GLAMEOW
-static const u16 sGlameowEggMoveLearnset[] = {
+#if P_FAMILY_ICEMON
+static const u16 sIcemonEggMoveLearnset[] = {
     MOVE_BITE,
     MOVE_TAIL_WHIP,
     MOVE_QUICK_ATTACK,
@@ -3703,7 +3703,7 @@ static const u16 sGlameowEggMoveLearnset[] = {
     MOVE_LAST_RESORT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_GLAMEOW
+#endif //P_FAMILY_ICEMON
 
 #if P_FAMILY_STUNKY
 static const u16 sStunkyEggMoveLearnset[] = {

@@ -19454,8 +19454,8 @@ static const u16 sIcedevimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_HYOGAMON
 
-#if P_FAMILY_GLAMEOW
-static const u16 sGlameowTeachableLearnset[] = {
+#if P_FAMILY_ICEMON
+static const u16 sIcemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CUT,
@@ -19530,7 +19530,7 @@ static const u16 sPuruglyTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_GLAMEOW
+#endif //P_FAMILY_ICEMON
 
 #if P_FAMILY_STUNKY
 static const u16 sStunkyTeachableLearnset[] = {

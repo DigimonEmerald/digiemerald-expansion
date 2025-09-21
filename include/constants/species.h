@@ -445,7 +445,7 @@
 #define SPECIES_ICEDEVIMON                                 428
 #define SPECIES_MISMAGIUS                               429
 #define SPECIES_HONCHKROW                               430
-#define SPECIES_GLAMEOW                                 431
+#define SPECIES_ICEMON                                 431
 #define SPECIES_PURUGLY                                 432
 #define SPECIES_CHINGLING                               433
 #define SPECIES_STUNKY                                  434

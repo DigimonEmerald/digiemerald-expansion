@@ -5697,8 +5697,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(IcedevimonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HYOGAMON
 
-#if P_FAMILY_GLAMEOW
-static const union AnimCmd sAnim_Glameow_1[] =
+#if P_FAMILY_ICEMON
+static const union AnimCmd sAnim_Icemon_1[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 45),
@@ -5717,7 +5717,7 @@ static const union AnimCmd sAnim_Purugly_1[] =
     ANIMCMD_FRAME(0, 50),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_GLAMEOW
+#endif //P_FAMILY_ICEMON
 
 #if P_FAMILY_STUNKY
 static const union AnimCmd sAnim_Stunky_1[] =
@@ -11488,10 +11488,10 @@ SINGLE_ANIMATION(Icedevimon);
 SINGLE_ANIMATION(IcedevimonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_HYOGAMON
-#if P_FAMILY_GLAMEOW
-SINGLE_ANIMATION(Glameow);
+#if P_FAMILY_ICEMON
+SINGLE_ANIMATION(Icemon);
 SINGLE_ANIMATION(Purugly);
-#endif //P_FAMILY_GLAMEOW
+#endif //P_FAMILY_ICEMON
 #if P_FAMILY_STUNKY
 SINGLE_ANIMATION(Stunky);
 SINGLE_ANIMATION(Skuntank);

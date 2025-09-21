@@ -2490,7 +2490,7 @@ $(POKEMONGFXDIR)/mismagius/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/honchkrow/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/glameow/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/icemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/purugly/overworld.4bpp: %.4bpp: %.png

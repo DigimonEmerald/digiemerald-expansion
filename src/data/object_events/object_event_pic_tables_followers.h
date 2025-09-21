@@ -3339,14 +3339,14 @@ static const struct SpriteFrameImage sPicTable_IcedevimonMega[] = {
 #endif // OW_BATTLE_ONLY_FORMS
 #endif //P_FAMILY_HYOGAMON
 
-#if P_FAMILY_GLAMEOW
-static const struct SpriteFrameImage sPicTable_Glameow[] = {
-    overworld_ascending_frames(gObjectEventPic_Glameow, 4, 4),
+#if P_FAMILY_ICEMON
+static const struct SpriteFrameImage sPicTable_Icemon[] = {
+    overworld_ascending_frames(gObjectEventPic_Icemon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Purugly[] = {
     overworld_ascending_frames(gObjectEventPic_Purugly, 4, 4),
 };
-#endif //P_FAMILY_GLAMEOW
+#endif //P_FAMILY_ICEMON
 
 #if P_FAMILY_STUNKY
 static const struct SpriteFrameImage sPicTable_Stunky[] = {

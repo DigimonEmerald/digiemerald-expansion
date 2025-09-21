@@ -3090,15 +3090,15 @@ Cry_IcedevimonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_HYOGAMON
 
-.if P_FAMILY_GLAMEOW == TRUE
+.if P_FAMILY_ICEMON == TRUE
 	.align 2
-Cry_Glameow::
-	.incbin "sound/direct_sound_samples/cries/glameow.bin"
+Cry_Icemon::
+	.incbin "sound/direct_sound_samples/cries/icemon.bin"
 
 	.align 2
 Cry_Purugly::
 	.incbin "sound/direct_sound_samples/cries/purugly.bin"
-.endif @ P_FAMILY_GLAMEOW
+.endif @ P_FAMILY_ICEMON
 
 .if P_FAMILY_STUNKY == TRUE
 	.align 2
