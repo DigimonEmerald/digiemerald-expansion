@@ -3096,8 +3096,8 @@ Cry_Icemon::
 	.incbin "sound/direct_sound_samples/cries/icemon.bin"
 
 	.align 2
-Cry_Purugly::
-	.incbin "sound/direct_sound_samples/cries/purugly.bin"
+Cry_Ninjamon::
+	.incbin "sound/direct_sound_samples/cries/ninjamon.bin"
 .endif @ P_FAMILY_ICEMON
 
 .if P_FAMILY_STUNKY == TRUE

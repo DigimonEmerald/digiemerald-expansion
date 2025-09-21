@@ -2493,7 +2493,7 @@ $(POKEMONGFXDIR)/honchkrow/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/icemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/purugly/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/ninjamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/chingling/overworld.4bpp: %.4bpp: %.png

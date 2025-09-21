@@ -1158,7 +1158,7 @@ gCryTable::
 .endif @ P_FAMILY_HYOGAMON
 .if P_FAMILY_ICEMON == TRUE
 	cry Cry_Icemon
-	cry Cry_Purugly
+	cry Cry_Ninjamon
 .endif @ P_FAMILY_ICEMON
 .if P_FAMILY_STUNKY == TRUE
 	cry Cry_Stunky
@@ -3585,7 +3585,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_HYOGAMON
 .if P_FAMILY_ICEMON == TRUE
 	cry_reverse Cry_Icemon
-	cry_reverse Cry_Purugly
+	cry_reverse Cry_Ninjamon
 .endif @ P_FAMILY_ICEMON
 .if P_FAMILY_STUNKY == TRUE
 	cry_reverse Cry_Stunky

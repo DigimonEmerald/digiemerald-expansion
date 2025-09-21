@@ -3343,8 +3343,8 @@ static const struct SpriteFrameImage sPicTable_IcedevimonMega[] = {
 static const struct SpriteFrameImage sPicTable_Icemon[] = {
     overworld_ascending_frames(gObjectEventPic_Icemon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Purugly[] = {
-    overworld_ascending_frames(gObjectEventPic_Purugly, 4, 4),
+static const struct SpriteFrameImage sPicTable_Ninjamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Ninjamon, 4, 4),
 };
 #endif //P_FAMILY_ICEMON
 

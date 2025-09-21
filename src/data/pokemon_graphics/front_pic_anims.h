@@ -5706,7 +5706,7 @@ static const union AnimCmd sAnim_Icemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Purugly_1[] =
+static const union AnimCmd sAnim_Ninjamon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -11490,7 +11490,7 @@ SINGLE_ANIMATION(IcedevimonMega);
 #endif //P_FAMILY_HYOGAMON
 #if P_FAMILY_ICEMON
 SINGLE_ANIMATION(Icemon);
-SINGLE_ANIMATION(Purugly);
+SINGLE_ANIMATION(Ninjamon);
 #endif //P_FAMILY_ICEMON
 #if P_FAMILY_STUNKY
 SINGLE_ANIMATION(Stunky);

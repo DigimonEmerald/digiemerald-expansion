@@ -14858,19 +14858,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Purugly[] = INCBIN_U32("graphics/pokemon/purugly/anim_front.4bpp.smol");
-    const u16 gMonPalette_Purugly[] = INCBIN_U16("graphics/pokemon/purugly/normal.gbapal");
-    const u32 gMonBackPic_Purugly[] = INCBIN_U32("graphics/pokemon/purugly/back.4bpp.smol");
-    const u16 gMonShinyPalette_Purugly[] = INCBIN_U16("graphics/pokemon/purugly/shiny.gbapal");
-    const u8 gMonIcon_Purugly[] = INCBIN_U8("graphics/pokemon/purugly/icon.4bpp");
+    const u32 gMonFrontPic_Ninjamon[] = INCBIN_U32("graphics/pokemon/ninjamon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Ninjamon[] = INCBIN_U16("graphics/pokemon/ninjamon/normal.gbapal");
+    const u32 gMonBackPic_Ninjamon[] = INCBIN_U32("graphics/pokemon/ninjamon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Ninjamon[] = INCBIN_U16("graphics/pokemon/ninjamon/shiny.gbapal");
+    const u8 gMonIcon_Ninjamon[] = INCBIN_U8("graphics/pokemon/ninjamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Purugly[] = INCBIN_U8("graphics/pokemon/purugly/footprint.1bpp");
+    const u8 gMonFootprint_Ninjamon[] = INCBIN_U8("graphics/pokemon/ninjamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Purugly[] = INCBIN_COMP("graphics/pokemon/purugly/overworld.4bpp");
+    const u32 gObjectEventPic_Ninjamon[] = INCBIN_COMP("graphics/pokemon/ninjamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Purugly[] = INCBIN_U16("graphics/pokemon/purugly/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Purugly[] = INCBIN_U16("graphics/pokemon/purugly/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Ninjamon[] = INCBIN_U16("graphics/pokemon/ninjamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Ninjamon[] = INCBIN_U16("graphics/pokemon/ninjamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_ICEMON

@@ -19491,7 +19491,7 @@ static const u16 sIcemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sPuruglyTeachableLearnset[] = {
+static const u16 sNinjamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,

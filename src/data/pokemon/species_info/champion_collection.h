@@ -14894,44 +14894,46 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sIcemonLevelUpLearnset,
         .teachableLearnset = sIcemonTeachableLearnset,
         .eggMoveLearnset = sIcemonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_PURUGLY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 38, SPECIES_NINJAMON}),
     },
 
-    [SPECIES_PURUGLY] =
+    [SPECIES_NINJAMON] =
     {
-        .baseHP        = 71,
-        .baseAttack    = 82,
-        .baseDefense   = 64,
-        .baseSpeed     = 112,
-        .baseSpAttack  = 64,
-        .baseSpDefense = 59,
-        .types = MON_TYPES(TYPE_NORMAL),
-        .catchRate = 75,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 158 : 183,
-        .evYield_Speed = 2,
+        .baseHP        = 45,
+        .baseAttack    = 80,
+        .baseDefense   = 60,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_DARK, TYPE_NORMAL),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack = 1,
+        .evYield_Speed = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_THICK_FAT, ABILITY_OWN_TEMPO, ABILITY_DEFIANT },
-        .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Purugly"),
-        .cryId = CRY_PURUGLY,
-        .natDexNum = NATIONAL_DEX_PURUGLY,
-        .categoryName = _("Tiger Cat"),
-        .height = 10,
+        .abilities = { ABILITY_EMERGENCY_EXIT, ABILITY_DISGUISE, ABILITY_NEUTRALIZING_GAS },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Ninjamon"),
+        .cryId = CRY_NINJAMON,
+        .natDexNum = NATIONAL_DEX_NINJAMON,
+        .categoryName = _("Ninja"),
+        .height = 11,
         .weight = 438,
         .description = COMPOUND_STRING(
-            "It is a brazen brute that barges its way\n"
-            "into another Pokémon's nest and claims\n"
-            "it as its own. It binds its body with its\n"
-            "tails to make itself look bigger."),
+            "As a master of espionage, it is near\n"
+            "impossible to spot when it is hiding.\n"
+            "Ninjamon has a friendly rivalry with\n"
+            "Deputymon despite their differences."),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Purugly,
+        .frontPic = gMonFrontPic_Ninjamon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 5,
         .frontAnimFrames = ANIM_FRAMES(
@@ -14944,28 +14946,28 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 50),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Purugly,
+        .backPic = gMonBackPic_Ninjamon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_GROW_STUTTER,
-        .palette = gMonPalette_Purugly,
-        .shinyPalette = gMonShinyPalette_Purugly,
-        .iconSprite = gMonIcon_Purugly,
+        .palette = gMonPalette_Ninjamon,
+        .shinyPalette = gMonShinyPalette_Ninjamon,
+        .iconSprite = gMonIcon_Ninjamon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(4, 8, SHADOW_SIZE_L)
-        FOOTPRINT(Purugly)
+        FOOTPRINT(Ninjamon)
         OVERWORLD(
-            sPicTable_Purugly,
+            sPicTable_Ninjamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Purugly,
-            gShinyOverworldPalette_Purugly
+            gOverworldPalette_Ninjamon,
+            gShinyOverworldPalette_Ninjamon
         )
-        .levelUpLearnset = sPuruglyLevelUpLearnset,
-        .teachableLearnset = sPuruglyTeachableLearnset,
+        .levelUpLearnset = sNinjamonLevelUpLearnset,
+        .teachableLearnset = sNinjamonTeachableLearnset,
     },
 #endif //P_FAMILY_ICEMON
 
