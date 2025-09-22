@@ -3705,8 +3705,8 @@ static const u16 sIcemonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_ICEMON
 
-#if P_FAMILY_STUNKY
-static const u16 sStunkyEggMoveLearnset[] = {
+#if P_FAMILY_JUNGLEMOJYAMON
+static const u16 sJunglemojyamonEggMoveLearnset[] = {
     MOVE_PURSUIT,
     MOVE_LEER,
     MOVE_SMOG,
@@ -3722,7 +3722,7 @@ static const u16 sStunkyEggMoveLearnset[] = {
     MOVE_PLAY_ROUGH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_STUNKY
+#endif //P_FAMILY_JUNGLEMOJYAMON
 
 #if P_FAMILY_CHATOT
 static const u16 sChatotEggMoveLearnset[] = {

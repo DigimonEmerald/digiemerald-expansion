@@ -444,6 +444,7 @@ Hyogamon - Buneary
 IceDevimon - Lopunny
 Icemon - Glameow
 Ninjamon - Purugly
+JungleMojyamon - Stunky
 
 Ultimate List
 

@@ -448,7 +448,7 @@
 #define SPECIES_ICEMON                                 431
 #define SPECIES_NINJAMON                                 432
 #define SPECIES_CHINGLING                               433
-#define SPECIES_STUNKY                                  434
+#define SPECIES_JUNGLEMOJYAMON                                  434
 #define SPECIES_SKUNTANK                                435
 #define SPECIES_BRONZOR                                 436
 #define SPECIES_BRONZONG                                437

@@ -14971,42 +14971,44 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_ICEMON
 
-#if P_FAMILY_STUNKY
-    [SPECIES_STUNKY] =
+#if P_FAMILY_JUNGLEMOJYAMON
+    [SPECIES_JUNGLEMOJYAMON] =
     {
-        .baseHP        = 63,
-        .baseAttack    = 63,
-        .baseDefense   = 47,
-        .baseSpeed     = 74,
-        .baseSpAttack  = 41,
-        .baseSpDefense = 41,
-        .types = MON_TYPES(TYPE_POISON, TYPE_DARK),
-        .catchRate = 225,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 66 : 79,
-        .evYield_Speed = 1,
+        .baseHP        = 45,
+        .baseAttack    = 85,
+        .baseDefense   = 75,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_GROUND),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack = 2,
+        .evYield_Speed = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_STENCH, ABILITY_AFTERMATH, ABILITY_KEEN_EYE },
-        .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Stunky"),
-        .cryId = CRY_STUNKY,
-        .natDexNum = NATIONAL_DEX_STUNKY,
-        .categoryName = _("Skunk"),
-        .height = 4,
-        .weight = 192,
+        .abilities = { ABILITY_RIVALRY, ABILITY_ANGER_POINT, ABILITY_GORILLA_TACTICS },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("JungMojyamon"),
+        .cryId = CRY_JUNGLEMOJYAMON,
+        .natDexNum = NATIONAL_DEX_JUNGLEMOJYAMON,
+        .categoryName = _("Yeti"),
+        .height = 7,
+        .weight = 343,
         .description = COMPOUND_STRING(
-            "It protects itself by spraying a\n"
-            "nose-curling, stinky fluid from its rear\n"
-            "to repel attackers. The stench lingers\n"
-            "for 24 hours."),
+            "The land that is inhabits is considered\n"
+            "holy territory that it will defend to\n"
+            "its last breath. It is deeply connected\n"
+            "to nature giving JungleMojyamon powers."),
         .pokemonScale = 491,
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Stunky,
+        .frontPic = gMonFrontPic_Junglemojyamon,
         .frontPicSize = MON_COORDS_SIZE(56, 48),
         .frontPicYOffset = 13,
         .frontAnimFrames = ANIM_FRAMES(
@@ -15017,29 +15019,29 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_TIP_MOVE_FORWARD,
-        .backPic = gMonBackPic_Stunky,
+        .backPic = gMonBackPic_Junglemojyamon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Stunky,
-        .shinyPalette = gMonShinyPalette_Stunky,
-        .iconSprite = gMonIcon_Stunky,
+        .palette = gMonPalette_Junglemojyamon,
+        .shinyPalette = gMonShinyPalette_Junglemojyamon,
+        .iconSprite = gMonIcon_Junglemojyamon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-1, 0, SHADOW_SIZE_M)
-        FOOTPRINT(Stunky)
+        FOOTPRINT(Junglemojyamon)
         OVERWORLD(
-            sPicTable_Stunky,
+            sPicTable_Junglemojyamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Stunky,
-            gShinyOverworldPalette_Stunky
+            gOverworldPalette_Junglemojyamon,
+            gShinyOverworldPalette_Junglemojyamon
         )
-        .levelUpLearnset = sStunkyLevelUpLearnset,
-        .teachableLearnset = sStunkyTeachableLearnset,
-        .eggMoveLearnset = sStunkyEggMoveLearnset,
+        .levelUpLearnset = sJunglemojyamonLevelUpLearnset,
+        .teachableLearnset = sJunglemojyamonTeachableLearnset,
+        .eggMoveLearnset = sJunglemojyamonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_SKUNTANK}),
     },
 
@@ -15109,7 +15111,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sSkuntankLevelUpLearnset,
         .teachableLearnset = sSkuntankTeachableLearnset,
     },
-#endif //P_FAMILY_STUNKY
+#endif //P_FAMILY_JUNGLEMOJYAMON
 
 #if P_FAMILY_BRONZOR
     [SPECIES_BRONZOR] =

@@ -5719,8 +5719,8 @@ static const union AnimCmd sAnim_Ninjamon_1[] =
 };
 #endif //P_FAMILY_ICEMON
 
-#if P_FAMILY_STUNKY
-static const union AnimCmd sAnim_Stunky_1[] =
+#if P_FAMILY_JUNGLEMOJYAMON
+static const union AnimCmd sAnim_Junglemojyamon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -5737,7 +5737,7 @@ static const union AnimCmd sAnim_Skuntank_1[] =
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_STUNKY
+#endif //P_FAMILY_JUNGLEMOJYAMON
 
 #if P_FAMILY_BRONZOR
 static const union AnimCmd sAnim_Bronzor_1[] =
@@ -11492,10 +11492,10 @@ SINGLE_ANIMATION(IcedevimonMega);
 SINGLE_ANIMATION(Icemon);
 SINGLE_ANIMATION(Ninjamon);
 #endif //P_FAMILY_ICEMON
-#if P_FAMILY_STUNKY
-SINGLE_ANIMATION(Stunky);
+#if P_FAMILY_JUNGLEMOJYAMON
+SINGLE_ANIMATION(Junglemojyamon);
 SINGLE_ANIMATION(Skuntank);
-#endif //P_FAMILY_STUNKY
+#endif //P_FAMILY_JUNGLEMOJYAMON
 #if P_FAMILY_BRONZOR
 SINGLE_ANIMATION(Bronzor);
 SINGLE_ANIMATION(Bronzong);

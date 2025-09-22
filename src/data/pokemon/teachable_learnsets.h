@@ -19532,8 +19532,8 @@ static const u16 sNinjamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_ICEMON
 
-#if P_FAMILY_STUNKY
-static const u16 sStunkyTeachableLearnset[] = {
+#if P_FAMILY_JUNGLEMOJYAMON
+static const u16 sJunglemojyamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_CUT,
@@ -19604,7 +19604,7 @@ static const u16 sSkuntankTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_STUNKY
+#endif //P_FAMILY_JUNGLEMOJYAMON
 
 #if P_FAMILY_BRONZOR
 static const u16 sBronzorTeachableLearnset[] = {

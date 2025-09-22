@@ -482,8 +482,8 @@
 #define P_FAMILY_HYOGAMON                 TRUE
 #undef P_FAMILY_ICEMON
 #define P_FAMILY_ICEMON                 TRUE
-#undef P_FAMILY_STUNKY
-#define P_FAMILY_STUNKY                  TRUE
+#undef P_FAMILY_JUNGLEMOJYAMON
+#define P_FAMILY_JUNGLEMOJYAMON                  TRUE
 #undef P_FAMILY_BRONZOR
 #define P_FAMILY_BRONZOR                 TRUE
 #undef P_FAMILY_CHATOT

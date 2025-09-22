@@ -9791,8 +9791,8 @@ static const struct LevelUpMove sNinjamonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_ICEMON
 
-#if P_FAMILY_STUNKY
-static const struct LevelUpMove sStunkyLevelUpLearnset[] = {
+#if P_FAMILY_JUNGLEMOJYAMON
+static const struct LevelUpMove sJunglemojyamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE( 4, MOVE_POISON_GAS),
@@ -9825,7 +9825,7 @@ static const struct LevelUpMove sSkuntankLevelUpLearnset[] = {
     LEVEL_UP_MOVE(52, MOVE_EXPLOSION),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_STUNKY
+#endif //P_FAMILY_JUNGLEMOJYAMON
 
 #if P_FAMILY_BRONZOR
 static const struct LevelUpMove sBronzorLevelUpLearnset[] = {

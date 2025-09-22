@@ -14875,20 +14875,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_ICEMON
 
-#if P_FAMILY_STUNKY
-    const u32 gMonFrontPic_Stunky[] = INCBIN_U32("graphics/pokemon/stunky/anim_front.4bpp.smol");
-    const u16 gMonPalette_Stunky[] = INCBIN_U16("graphics/pokemon/stunky/normal.gbapal");
-    const u32 gMonBackPic_Stunky[] = INCBIN_U32("graphics/pokemon/stunky/back.4bpp.smol");
-    const u16 gMonShinyPalette_Stunky[] = INCBIN_U16("graphics/pokemon/stunky/shiny.gbapal");
-    const u8 gMonIcon_Stunky[] = INCBIN_U8("graphics/pokemon/stunky/icon.4bpp");
+#if P_FAMILY_JUNGLEMOJYAMON
+    const u32 gMonFrontPic_Junglemojyamon[] = INCBIN_U32("graphics/pokemon/junglemojyamon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Junglemojyamon[] = INCBIN_U16("graphics/pokemon/junglemojyamon/normal.gbapal");
+    const u32 gMonBackPic_Junglemojyamon[] = INCBIN_U32("graphics/pokemon/junglemojyamon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Junglemojyamon[] = INCBIN_U16("graphics/pokemon/junglemojyamon/shiny.gbapal");
+    const u8 gMonIcon_Junglemojyamon[] = INCBIN_U8("graphics/pokemon/junglemojyamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Stunky[] = INCBIN_U8("graphics/pokemon/stunky/footprint.1bpp");
+    const u8 gMonFootprint_Junglemojyamon[] = INCBIN_U8("graphics/pokemon/junglemojyamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Stunky[] = INCBIN_COMP("graphics/pokemon/stunky/overworld.4bpp");
+    const u32 gObjectEventPic_Junglemojyamon[] = INCBIN_COMP("graphics/pokemon/junglemojyamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Stunky[] = INCBIN_U16("graphics/pokemon/stunky/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Stunky[] = INCBIN_U16("graphics/pokemon/stunky/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Junglemojyamon[] = INCBIN_U16("graphics/pokemon/junglemojyamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Junglemojyamon[] = INCBIN_U16("graphics/pokemon/junglemojyamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -14907,7 +14907,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Skuntank[] = INCBIN_U16("graphics/pokemon/skuntank/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_STUNKY
+#endif //P_FAMILY_JUNGLEMOJYAMON
 
 #if P_FAMILY_BRONZOR
     const u32 gMonFrontPic_Bronzor[] = INCBIN_U32("graphics/pokemon/bronzor/anim_front.4bpp.smol");

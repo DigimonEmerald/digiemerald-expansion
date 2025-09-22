@@ -3100,15 +3100,15 @@ Cry_Ninjamon::
 	.incbin "sound/direct_sound_samples/cries/ninjamon.bin"
 .endif @ P_FAMILY_ICEMON
 
-.if P_FAMILY_STUNKY == TRUE
+.if P_FAMILY_JUNGLEMOJYAMON == TRUE
 	.align 2
-Cry_Stunky::
-	.incbin "sound/direct_sound_samples/cries/stunky.bin"
+Cry_Junglemojyamon::
+	.incbin "sound/direct_sound_samples/cries/junglemojyamon.bin"
 
 	.align 2
 Cry_Skuntank::
 	.incbin "sound/direct_sound_samples/cries/skuntank.bin"
-.endif @ P_FAMILY_STUNKY
+.endif @ P_FAMILY_JUNGLEMOJYAMON
 
 .if P_FAMILY_BRONZOR == TRUE
 	.align 2
