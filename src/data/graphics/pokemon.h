@@ -19941,19 +19941,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Doublade[] = INCBIN_U32("graphics/pokemon/doublade/anim_front.4bpp.smol");
-    const u16 gMonPalette_Doublade[] = INCBIN_U16("graphics/pokemon/doublade/normal.gbapal");
-    const u32 gMonBackPic_Doublade[] = INCBIN_U32("graphics/pokemon/doublade/back.4bpp.smol");
-    const u16 gMonShinyPalette_Doublade[] = INCBIN_U16("graphics/pokemon/doublade/shiny.gbapal");
-    const u8 gMonIcon_Doublade[] = INCBIN_U8("graphics/pokemon/doublade/icon.4bpp");
+    const u32 gMonFrontPic_Jijimon[] = INCBIN_U32("graphics/pokemon/jijimon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Jijimon[] = INCBIN_U16("graphics/pokemon/jijimon/normal.gbapal");
+    const u32 gMonBackPic_Jijimon[] = INCBIN_U32("graphics/pokemon/jijimon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Jijimon[] = INCBIN_U16("graphics/pokemon/jijimon/shiny.gbapal");
+    const u8 gMonIcon_Jijimon[] = INCBIN_U8("graphics/pokemon/jijimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Doublade[] = INCBIN_U8("graphics/pokemon/doublade/footprint.1bpp");
+    const u8 gMonFootprint_Jijimon[] = INCBIN_U8("graphics/pokemon/jijimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Doublade[] = INCBIN_COMP("graphics/pokemon/doublade/overworld.4bpp");
+    const u32 gObjectEventPic_Jijimon[] = INCBIN_COMP("graphics/pokemon/jijimon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Doublade[] = INCBIN_U16("graphics/pokemon/doublade/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Doublade[] = INCBIN_U16("graphics/pokemon/doublade/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Jijimon[] = INCBIN_U16("graphics/pokemon/jijimon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Jijimon[] = INCBIN_U16("graphics/pokemon/jijimon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

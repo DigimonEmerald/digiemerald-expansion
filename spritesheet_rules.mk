@@ -3315,7 +3315,7 @@ $(POKEMONGFXDIR)/meowstic/f/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/phoenixmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/doublade/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/jijimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/aegislash/overworld.4bpp: %.4bpp: %.png

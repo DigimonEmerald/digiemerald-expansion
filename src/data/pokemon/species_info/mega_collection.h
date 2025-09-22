@@ -2636,44 +2636,46 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sPhoenixmonLevelUpLearnset,
         .teachableLearnset = sPhoenixmonTeachableLearnset,
         .eggMoveLearnset = sPhoenixmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_DOUBLADE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_JIJIMON}),
     },
 
-    [SPECIES_DOUBLADE] =
+    [SPECIES_JIJIMON] =
     {
-        .baseHP        = 59,
-        .baseAttack    = 110,
-        .baseDefense   = 150,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 49,
-        .types = MON_TYPES(TYPE_STEEL, TYPE_GHOST),
-        .catchRate = 90,
-        .expYield = 157,
-        .evYield_Defense = 2,
+        .baseHP        = 115,
+        .baseAttack    = 50,
+        .baseDefense   = 40,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 185,
+        .types = MON_TYPES(TYPE_PSYCHIC),
+        .attribute = TYPE_VACCINE,   
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_HP = 1,
+        .evYield_SpDefense = 5,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_NO_GUARD, ABILITY_NONE, ABILITY_NONE },
+        .abilities = { ABILITY_TRACE, ABILITY_FOREWARN, ABILITY_MAGIC_GUARD },
         .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Doublade"),
-        .cryId = CRY_DOUBLADE,
-        .natDexNum = NATIONAL_DEX_DOUBLADE,
-        .categoryName = _("Sword"),
-        .height = 8,
-        .weight = 45,
+        .speciesName = _("Jijimon"),
+        .cryId = CRY_JIJIMON,
+        .natDexNum = NATIONAL_DEX_JIJIMON,
+        .categoryName = _("Old"),
+        .height = 12,
+        .weight = 585,
         .description = COMPOUND_STRING(
-            "When Phoenixmon evolves, it divides into\n"
-            "two swords. The complex attack patterns\n"
-            "of its two swords are unstoppable, even\n"
-            "against those skilled at swordplay."),
+            "Jijimonm always love to share their\n"
+            "wisdom so it can often be seen near\n"
+            "inexperienced tamers aiding them\n"
+            "in their growth and bonds."),
         .pokemonScale = 366,
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Doublade,
+        .frontPic = gMonFrontPic_Jijimon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 5,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2685,28 +2687,28 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ),
         .frontAnimId = ANIM_GROW_VIBRATE,
         .enemyMonElevation = 5,
-        .backPic = gMonBackPic_Doublade,
+        .backPic = gMonBackPic_Jijimon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_H_SHAKE,
-        .palette = gMonPalette_Doublade,
-        .shinyPalette = gMonShinyPalette_Doublade,
-        .iconSprite = gMonIcon_Doublade,
+        .palette = gMonPalette_Jijimon,
+        .shinyPalette = gMonShinyPalette_Jijimon,
+        .iconSprite = gMonIcon_Jijimon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(8, 11, SHADOW_SIZE_M)
-        FOOTPRINT(Doublade)
+        FOOTPRINT(Jijimon)
         OVERWORLD(
-            sPicTable_Doublade,
+            sPicTable_Jijimon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Doublade,
-            gShinyOverworldPalette_Doublade
+            gOverworldPalette_Jijimon,
+            gShinyOverworldPalette_Jijimon
         )
-        .levelUpLearnset = sDoubladeLevelUpLearnset,
-        .teachableLearnset = sDoubladeTeachableLearnset,
+        .levelUpLearnset = sJijimonLevelUpLearnset,
+        .teachableLearnset = sJijimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_AEGISLASH_SHIELD}),
     },
 

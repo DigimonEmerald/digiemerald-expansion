@@ -1653,7 +1653,7 @@ gCryTable::
 .endif @ P_FAMILY_GOLDRAMON
 .if P_FAMILY_PHOENIXMON == TRUE
 	cry Cry_Phoenixmon
-	cry Cry_Doublade
+	cry Cry_Jijimon
 	cry Cry_Aegislash
 .endif @ P_FAMILY_PHOENIXMON
 .if P_FAMILY_SPRITZEE == TRUE
@@ -4080,7 +4080,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_GOLDRAMON
 .if P_FAMILY_PHOENIXMON == TRUE
 	cry_reverse Cry_Phoenixmon
-	cry_reverse Cry_Doublade
+	cry_reverse Cry_Jijimon
 	cry_reverse Cry_Aegislash
 .endif @ P_FAMILY_PHOENIXMON
 .if P_FAMILY_SPRITZEE == TRUE

@@ -4307,8 +4307,8 @@ Cry_Phoenixmon::
 	.incbin "sound/direct_sound_samples/cries/phoenixmon.bin"
 
 	.align 2
-Cry_Doublade::
-	.incbin "sound/direct_sound_samples/cries/doublade.bin"
+Cry_Jijimon::
+	.incbin "sound/direct_sound_samples/cries/jijimon.bin"
 
 	.align 2
 Cry_Aegislash::

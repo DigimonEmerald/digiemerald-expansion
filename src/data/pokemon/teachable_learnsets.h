@@ -27286,7 +27286,7 @@ static const u16 sPhoenixmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDoubladeTeachableLearnset[] = {
+static const u16 sJijimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,

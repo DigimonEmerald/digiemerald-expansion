@@ -539,5 +539,6 @@ WarGreymon - Fennekin
 Goldramon - Espurr
 Gryphonmon - Meowstic (Male)
 Phoenixmon - Honedge
+Jijimon - Doublade
 
 SPECIES NAME LENGTH MAX = 13

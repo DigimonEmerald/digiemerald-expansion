@@ -8406,7 +8406,7 @@ static const union AnimCmd sAnim_Phoenixmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Doublade_1[] =
+static const union AnimCmd sAnim_Jijimon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -12022,7 +12022,7 @@ SINGLE_ANIMATION(Meowstic);
 #endif //P_FAMILY_GOLDRAMON
 #if P_FAMILY_PHOENIXMON
 SINGLE_ANIMATION(Phoenixmon);
-SINGLE_ANIMATION(Doublade);
+SINGLE_ANIMATION(Jijimon);
 SINGLE_ANIMATION(AegislashShield);
 SINGLE_ANIMATION(AegislashBlade);
 #endif //P_FAMILY_PHOENIXMON
