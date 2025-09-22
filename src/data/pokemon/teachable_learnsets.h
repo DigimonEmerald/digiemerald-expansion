@@ -22893,7 +22893,7 @@ static const u16 sDivermonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sKrookodileTeachableLearnset[] = {
+static const u16 sMeteormonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,

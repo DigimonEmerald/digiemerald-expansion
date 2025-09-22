@@ -3625,8 +3625,8 @@ Cry_Divermon::
 	.incbin "sound/direct_sound_samples/cries/divermon.bin"
 
 	.align 2
-Cry_Krookodile::
-	.incbin "sound/direct_sound_samples/cries/krookodile.bin"
+Cry_Meteormon::
+	.incbin "sound/direct_sound_samples/cries/meteormon.bin"
 .endif @ P_FAMILY_KINGSUKAMON
 
 .if P_FAMILY_DARUMAKA == TRUE

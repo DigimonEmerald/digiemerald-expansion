@@ -4850,51 +4850,49 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sDivermonLevelUpLearnset,
         .teachableLearnset = sDivermonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_KROOKODILE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_METEORMON}),
     },
 
-    [SPECIES_KROOKODILE] =
+    [SPECIES_METEORMON] =
     {
-        .baseHP        = 95,
-        .baseAttack    = 117,
-        .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 80 : 70,
-        .baseSpeed     = 92,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_GROUND, TYPE_DARK),
+        .baseHP        = 50,
+        .baseAttack    = 100,
+        .baseDefense   = 100,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_ROCK, TYPE_PSYCHIC),
+        .attribute = TYPE_DATA,
         .catchRate = 95,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 260,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_7
-        .expYield = 234,
-    #else
-        .expYield = 229,
-    #endif
-        .evYield_Attack = 3,
+        .expYield = 200,
+        .evYield_Attack = 1,
+        .evYield_Defense = 2,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
         .itemCommon = ITEM_BLACK_GLASSES,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_INTIMIDATE, ABILITY_MOXIE, ABILITY_ANGER_POINT },
-        .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Krookodile"),
-        .cryId = CRY_KROOKODILE,
-        .natDexNum = NATIONAL_DEX_KROOKODILE,
-        .categoryName = _("Intimidate"),
-        .height = 15,
-        .weight = 963,
+        .abilities = { ABILITY_LEVITATE, ABILITY_ROCK_HEAD, ABILITY_FILTER },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Meteormon"),
+        .cryId = CRY_METEORMON,
+        .natDexNum = NATIONAL_DEX_METEORMON,
+        .categoryName = _("Ore"),
+        .height = 9,
+        .weight = 984,
         .description = COMPOUND_STRING(
-            "Very violent Pokémon, they never allow\n"
-            "their prey to escape. Their jaws are so\n"
-            "powerful, they can crush the body of\n"
-            "an automobile."),
+            "The structure of Meteormon is almost\n"
+            "the exact same as Gotsumon however it\n"
+            "has meteorite data within some of its\n"
+            "ore data that gives it a power boost."),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Krookodile,
+        .frontPic = gMonFrontPic_Meteormon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -4905,28 +4903,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_SWING_CONCAVE_FAST_SHORT,
-        .backPic = gMonBackPic_Krookodile,
+        .backPic = gMonBackPic_Meteormon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Krookodile,
-        .shinyPalette = gMonShinyPalette_Krookodile,
-        .iconSprite = gMonIcon_Krookodile,
+        .palette = gMonPalette_Meteormon,
+        .shinyPalette = gMonShinyPalette_Meteormon,
+        .iconSprite = gMonIcon_Meteormon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(3, 12, SHADOW_SIZE_L)
-        FOOTPRINT(Krookodile)
+        FOOTPRINT(Meteormon)
         OVERWORLD(
-            sPicTable_Krookodile,
+            sPicTable_Meteormon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Krookodile,
-            gShinyOverworldPalette_Krookodile
+            gOverworldPalette_Meteormon,
+            gShinyOverworldPalette_Meteormon
         )
-        .levelUpLearnset = sKrookodileLevelUpLearnset,
-        .teachableLearnset = sKrookodileTeachableLearnset,
+        .levelUpLearnset = sMeteormonLevelUpLearnset,
+        .teachableLearnset = sMeteormonTeachableLearnset,
     },
 #endif //P_FAMILY_KINGSUKAMON
 

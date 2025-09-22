@@ -571,7 +571,7 @@
 #define SPECIES_GIGADRAMON_RED_STRIPED                    550
 #define SPECIES_KINGSUKAMON                                 551
 #define SPECIES_DIVERMON                                552
-#define SPECIES_KROOKODILE                              553
+#define SPECIES_METEORMON                              553
 #define SPECIES_DARUMAKA                                554
 #define SPECIES_DARMANITAN                              SPECIES_DARMANITAN_STANDARD
 #define SPECIES_DARMANITAN_STANDARD                     555

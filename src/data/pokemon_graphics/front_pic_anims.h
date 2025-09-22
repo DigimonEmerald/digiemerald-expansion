@@ -6884,7 +6884,7 @@ static const union AnimCmd sAnim_Divermon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Krookodile_1[] =
+static const union AnimCmd sAnim_Meteormon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -11723,7 +11723,7 @@ SINGLE_ANIMATION(Basculegion);
 #if P_FAMILY_KINGSUKAMON
 SINGLE_ANIMATION(Kingsukamon);
 SINGLE_ANIMATION(Divermon);
-SINGLE_ANIMATION(Krookodile);
+SINGLE_ANIMATION(Meteormon);
 #endif //P_FAMILY_KINGSUKAMON
 #if P_FAMILY_DARUMAKA
 SINGLE_ANIMATION(Darumaka);
