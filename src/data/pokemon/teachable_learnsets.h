@@ -22935,8 +22935,8 @@ static const u16 sMeteormonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_KINGSUKAMON
 
-#if P_FAMILY_DARUMAKA
-static const u16 sDarumakaTeachableLearnset[] = {
+#if P_FAMILY_CHERRYMON
+static const u16 sCherrymonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_DIG,
@@ -23011,7 +23011,7 @@ static const u16 sDarmanitanTeachableLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const u16 sDarumakaGalarTeachableLearnset[] = {
+static const u16 sCherrymonGalarTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
@@ -23074,7 +23074,7 @@ static const u16 sDarmanitanGalarTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_DARUMAKA
+#endif //P_FAMILY_CHERRYMON
 
 #if P_FAMILY_MARACTUS
 static const u16 sMaractusTeachableLearnset[] = {

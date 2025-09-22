@@ -4305,8 +4305,8 @@ static const u16 sKingsukamonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_KINGSUKAMON
 
-#if P_FAMILY_DARUMAKA
-static const u16 sDarumakaEggMoveLearnset[] = {
+#if P_FAMILY_CHERRYMON
+static const u16 sCherrymonEggMoveLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_FOCUS_PUNCH,
     MOVE_FOCUS_ENERGY,
@@ -4321,7 +4321,7 @@ static const u16 sDarumakaEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #if P_GALARIAN_FORMS
-static const u16 sDarumakaGalarEggMoveLearnset[] = {
+static const u16 sCherrymonGalarEggMoveLearnset[] = {
     MOVE_FOCUS_PUNCH,
     MOVE_HAMMER_ARM,
     MOVE_TAKE_DOWN,
@@ -4333,7 +4333,7 @@ static const u16 sDarumakaGalarEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_DARUMAKA
+#endif //P_FAMILY_CHERRYMON
 
 #if P_FAMILY_MARACTUS
 static const u16 sMaractusEggMoveLearnset[] = {

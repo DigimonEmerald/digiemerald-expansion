@@ -6895,8 +6895,8 @@ static const union AnimCmd sAnim_Meteormon_1[] =
 };
 #endif //P_FAMILY_KINGSUKAMON
 
-#if P_FAMILY_DARUMAKA
-static const union AnimCmd sAnim_Darumaka_1[] =
+#if P_FAMILY_CHERRYMON
+static const union AnimCmd sAnim_Cherrymon_1[] =
 {
     ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(1, 50),
@@ -6921,11 +6921,11 @@ static const union AnimCmd sAnim_DarmanitanZen_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(DarumakaGalar);
+PLACEHOLDER_ANIM_SINGLE_FRAME(CherrymonGalar);
 PLACEHOLDER_ANIM_SINGLE_FRAME(DarmanitanGalarStandard);
 PLACEHOLDER_ANIM_SINGLE_FRAME(DarmanitanGalarZen);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_DARUMAKA
+#endif //P_FAMILY_CHERRYMON
 
 #if P_FAMILY_MARACTUS
 static const union AnimCmd sAnim_Maractus_1[] =
@@ -11725,16 +11725,16 @@ SINGLE_ANIMATION(Kingsukamon);
 SINGLE_ANIMATION(Divermon);
 SINGLE_ANIMATION(Meteormon);
 #endif //P_FAMILY_KINGSUKAMON
-#if P_FAMILY_DARUMAKA
-SINGLE_ANIMATION(Darumaka);
+#if P_FAMILY_CHERRYMON
+SINGLE_ANIMATION(Cherrymon);
 SINGLE_ANIMATION(DarmanitanStandard);
 SINGLE_ANIMATION(DarmanitanZen);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(DarumakaGalar);
+SINGLE_ANIMATION(CherrymonGalar);
 SINGLE_ANIMATION(DarmanitanGalarStandard);
 SINGLE_ANIMATION(DarmanitanGalarZen);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_DARUMAKA
+#endif //P_FAMILY_CHERRYMON
 #if P_FAMILY_MARACTUS
 SINGLE_ANIMATION(Maractus);
 #endif //P_FAMILY_MARACTUS

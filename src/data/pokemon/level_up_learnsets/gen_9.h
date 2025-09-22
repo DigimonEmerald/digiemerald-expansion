@@ -11103,22 +11103,31 @@ static const struct LevelUpMove sMeteormonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_KINGSUKAMON
 
-#if P_FAMILY_DARUMAKA
-static const struct LevelUpMove sDarumakaLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_EMBER),
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
-    LEVEL_UP_MOVE( 4, MOVE_TAUNT),
-    LEVEL_UP_MOVE( 8, MOVE_BITE),
-    LEVEL_UP_MOVE(12, MOVE_INCINERATE),
-    LEVEL_UP_MOVE(16, MOVE_WORK_UP),
-    LEVEL_UP_MOVE(20, MOVE_FIRE_FANG),
-    LEVEL_UP_MOVE(24, MOVE_HEADBUTT),
-    LEVEL_UP_MOVE(28, MOVE_FIRE_PUNCH),
-    LEVEL_UP_MOVE(32, MOVE_UPROAR),
-    LEVEL_UP_MOVE(36, MOVE_BELLY_DRUM),
-    LEVEL_UP_MOVE(40, MOVE_FLARE_BLITZ),
-    LEVEL_UP_MOVE(44, MOVE_THRASH),
-    LEVEL_UP_MOVE(48, MOVE_SUPERPOWER),
+#if P_FAMILY_CHERRYMON
+static const struct LevelUpMove sCherrymonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_TAIL_WHIP),
+    LEVEL_UP_MOVE(4, MOVE_GROWTH),
+    LEVEL_UP_MOVE(7, MOVE_ABSORB),
+    LEVEL_UP_MOVE(10, MOVE_BITE),
+    LEVEL_UP_MOVE(14, MOVE_FOCUS_ENERGY),
+    LEVEL_UP_MOVE(17, MOVE_RAPID_SPIN),
+    LEVEL_UP_MOVE(20, MOVE_LEER),
+    LEVEL_UP_MOVE(23, MOVE_SWAGGER),
+    LEVEL_UP_MOVE(26, MOVE_RAZOR_LEAF),
+    LEVEL_UP_MOVE(29, MOVE_FEINT_ATTACK),
+    LEVEL_UP_MOVE(32, MOVE_MEGA_DRAIN),
+    LEVEL_UP_MOVE(34, MOVE_SEED_BOMB),
+    LEVEL_UP_MOVE(37, MOVE_AGILITY),
+    LEVEL_UP_MOVE(40, MOVE_GIGA_DRAIN),
+    LEVEL_UP_MOVE(43, MOVE_INGRAIN),
+    LEVEL_UP_MOVE(47, MOVE_NIGHT_DAZE),
+    LEVEL_UP_MOVE(50, MOVE_SLAM),
+    LEVEL_UP_MOVE(52, MOVE_TAKE_DOWN),
+    LEVEL_UP_MOVE(55, MOVE_SYNTHESIS),
+    LEVEL_UP_MOVE(58, MOVE_POWER_WHIP),
+    LEVEL_UP_MOVE(62, MOVE_SCARY_FACE),
+    LEVEL_UP_MOVE(66, MOVE_LIGHT_SCREEN),
+    LEVEL_UP_MOVE(71, MOVE_LEAF_STORM),
     LEVEL_UP_END
 };
 
@@ -11143,7 +11152,7 @@ static const struct LevelUpMove sDarmanitanLevelUpLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const struct LevelUpMove sDarumakaGalarLevelUpLearnset[] = {
+static const struct LevelUpMove sCherrymonGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 4, MOVE_TAUNT),
@@ -11181,7 +11190,7 @@ static const struct LevelUpMove sDarmanitanGalarLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_DARUMAKA
+#endif //P_FAMILY_CHERRYMON
 
 #if P_FAMILY_MARACTUS
 static const struct LevelUpMove sMaractusLevelUpLearnset[] = {

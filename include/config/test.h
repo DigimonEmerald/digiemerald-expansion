@@ -588,8 +588,8 @@
 #define P_FAMILY_GIGADRAMON                TRUE
 #undef P_FAMILY_KINGSUKAMON
 #define P_FAMILY_KINGSUKAMON                 TRUE
-#undef P_FAMILY_DARUMAKA
-#define P_FAMILY_DARUMAKA                TRUE
+#undef P_FAMILY_CHERRYMON
+#define P_FAMILY_CHERRYMON                TRUE
 #undef P_FAMILY_MARACTUS
 #define P_FAMILY_MARACTUS                TRUE
 #undef P_FAMILY_DWEBBLE

@@ -3629,15 +3629,15 @@ Cry_Meteormon::
 	.incbin "sound/direct_sound_samples/cries/meteormon.bin"
 .endif @ P_FAMILY_KINGSUKAMON
 
-.if P_FAMILY_DARUMAKA == TRUE
+.if P_FAMILY_CHERRYMON == TRUE
 	.align 2
-Cry_Darumaka::
-	.incbin "sound/direct_sound_samples/cries/darumaka.bin"
+Cry_Cherrymon::
+	.incbin "sound/direct_sound_samples/cries/cherrymon.bin"
 
 	.align 2
 Cry_Darmanitan::
 	.incbin "sound/direct_sound_samples/cries/darmanitan.bin"
-.endif @ P_FAMILY_DARUMAKA
+.endif @ P_FAMILY_CHERRYMON
 
 .if P_FAMILY_MARACTUS == TRUE
 	.align 2

@@ -17009,20 +17009,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_KINGSUKAMON
 
-#if P_FAMILY_DARUMAKA
-    const u32 gMonFrontPic_Darumaka[] = INCBIN_U32("graphics/pokemon/darumaka/anim_front.4bpp.smol");
-    const u16 gMonPalette_Darumaka[] = INCBIN_U16("graphics/pokemon/darumaka/normal.gbapal");
-    const u32 gMonBackPic_Darumaka[] = INCBIN_U32("graphics/pokemon/darumaka/back.4bpp.smol");
-    const u16 gMonShinyPalette_Darumaka[] = INCBIN_U16("graphics/pokemon/darumaka/shiny.gbapal");
-    const u8 gMonIcon_Darumaka[] = INCBIN_U8("graphics/pokemon/darumaka/icon.4bpp");
+#if P_FAMILY_CHERRYMON
+    const u32 gMonFrontPic_Cherrymon[] = INCBIN_U32("graphics/pokemon/cherrymon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Cherrymon[] = INCBIN_U16("graphics/pokemon/cherrymon/normal.gbapal");
+    const u32 gMonBackPic_Cherrymon[] = INCBIN_U32("graphics/pokemon/cherrymon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Cherrymon[] = INCBIN_U16("graphics/pokemon/cherrymon/shiny.gbapal");
+    const u8 gMonIcon_Cherrymon[] = INCBIN_U8("graphics/pokemon/cherrymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Darumaka[] = INCBIN_U8("graphics/pokemon/darumaka/footprint.1bpp");
+    const u8 gMonFootprint_Cherrymon[] = INCBIN_U8("graphics/pokemon/cherrymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Darumaka[] = INCBIN_COMP("graphics/pokemon/darumaka/overworld.4bpp");
+    const u32 gObjectEventPic_Cherrymon[] = INCBIN_COMP("graphics/pokemon/cherrymon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Darumaka[] = INCBIN_U16("graphics/pokemon/darumaka/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Darumaka[] = INCBIN_U16("graphics/pokemon/darumaka/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Cherrymon[] = INCBIN_U16("graphics/pokemon/cherrymon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Cherrymon[] = INCBIN_U16("graphics/pokemon/cherrymon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -17056,16 +17056,16 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GALARIAN_FORMS
-    const u32 gMonFrontPic_DarumakaGalar[] = INCBIN_U32("graphics/pokemon/darumaka/galar/front.4bpp.smol");
-    const u16 gMonPalette_DarumakaGalar[] = INCBIN_U16("graphics/pokemon/darumaka/galar/normal.gbapal");
-    const u32 gMonBackPic_DarumakaGalar[] = INCBIN_U32("graphics/pokemon/darumaka/galar/back.4bpp.smol");
-    const u16 gMonShinyPalette_DarumakaGalar[] = INCBIN_U16("graphics/pokemon/darumaka/galar/shiny.gbapal");
-    const u8 gMonIcon_DarumakaGalar[] = INCBIN_U8("graphics/pokemon/darumaka/galar/icon.4bpp");
+    const u32 gMonFrontPic_CherrymonGalar[] = INCBIN_U32("graphics/pokemon/cherrymon/galar/front.4bpp.smol");
+    const u16 gMonPalette_CherrymonGalar[] = INCBIN_U16("graphics/pokemon/cherrymon/galar/normal.gbapal");
+    const u32 gMonBackPic_CherrymonGalar[] = INCBIN_U32("graphics/pokemon/cherrymon/galar/back.4bpp.smol");
+    const u16 gMonShinyPalette_CherrymonGalar[] = INCBIN_U16("graphics/pokemon/cherrymon/galar/shiny.gbapal");
+    const u8 gMonIcon_CherrymonGalar[] = INCBIN_U8("graphics/pokemon/cherrymon/galar/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_DarumakaGalar[] = INCBIN_COMP("graphics/pokemon/darumaka/galar/overworld.4bpp");
+    const u32 gObjectEventPic_CherrymonGalar[] = INCBIN_COMP("graphics/pokemon/cherrymon/galar/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_DarumakaGalar[] = INCBIN_U16("graphics/pokemon/darumaka/galar/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_DarumakaGalar[] = INCBIN_U16("graphics/pokemon/darumaka/galar/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_CherrymonGalar[] = INCBIN_U16("graphics/pokemon/cherrymon/galar/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_CherrymonGalar[] = INCBIN_U16("graphics/pokemon/cherrymon/galar/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -17095,7 +17095,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_DARUMAKA
+#endif //P_FAMILY_CHERRYMON
 
 #if P_FAMILY_MARACTUS
     const u32 gMonFrontPic_Maractus[] = INCBIN_U32("graphics/pokemon/maractus/anim_front.4bpp.smol");

@@ -4928,42 +4928,45 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_KINGSUKAMON
 
-#if P_FAMILY_DARUMAKA
-    [SPECIES_DARUMAKA] =
+#if P_FAMILY_CHERRYMON
+    [SPECIES_CHERRYMON] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 90,
-        .baseDefense   = 45,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 15,
-        .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_FIRE),
+        .baseHP        = 135,
+        .baseAttack    = 80,
+        .baseDefense   = 90,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_GRASS),
+        .attribute = TYPE_VIRUS,
         .catchRate = 95,
-        .expYield = 63,
-        .evYield_Attack = 1,
+        .expYield = 200,
+        .evYield_HP = 3,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_HUSTLE, ABILITY_NONE, ABILITY_INNER_FOCUS },
-        .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Darumaka"),
-        .cryId = CRY_DARUMAKA,
-        .natDexNum = NATIONAL_DEX_DARUMAKA,
-        .categoryName = _("Zen Charm"),
-        .height = 6,
-        .weight = 375,
+        .abilities = { ABILITY_LEAF_GUARD, ABILITY_SEED_SOWER, ABILITY_GRASSY_SURGE },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Cherrymon"),
+        .cryId = CRY_CHERRYMON,
+        .natDexNum = NATIONAL_DEX_CHERRYMON,
+        .categoryName = _("Deep Forest"),
+        .height = 122,
+        .weight = 8565,
         .description = COMPOUND_STRING(
-            "When its internal fire is burning, it\n"
-            "cannot calm down and it runs around.\n"
-            "When the fire diminishes, it pulls its\n"
-            "limbs into its body and falls asleep."),
+            "The illusions that its body generates\n"
+            "create temptations for Digimon to head\n"
+            "further into the forest that Cherrymon\n"
+            "lords over so it can feed itself."),
         .pokemonScale = 422,
         .pokemonOffset = 14,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Darumaka,
+        .frontPic = gMonFrontPic_Cherrymon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 13,
         .frontAnimFrames = ANIM_FRAMES(
@@ -4972,30 +4975,30 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_SWING_CONCAVE,
-        .backPic = gMonBackPic_Darumaka,
+        .backPic = gMonBackPic_Cherrymon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Darumaka,
-        .shinyPalette = gMonShinyPalette_Darumaka,
-        .iconSprite = gMonIcon_Darumaka,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Cherrymon,
+        .shinyPalette = gMonShinyPalette_Cherrymon,
+        .iconSprite = gMonIcon_Cherrymon,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(-3, 1, SHADOW_SIZE_S)
-        FOOTPRINT(Darumaka)
+        FOOTPRINT(Cherrymon)
         OVERWORLD(
-            sPicTable_Darumaka,
+            sPicTable_Cherrymon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Darumaka,
-            gShinyOverworldPalette_Darumaka
+            gOverworldPalette_Cherrymon,
+            gShinyOverworldPalette_Cherrymon
         )
-        .levelUpLearnset = sDarumakaLevelUpLearnset,
-        .teachableLearnset = sDarumakaTeachableLearnset,
-        .eggMoveLearnset = sDarumakaEggMoveLearnset,
-        .formSpeciesIdTable = sDarumakaFormSpeciesIdTable,
+        .levelUpLearnset = sCherrymonLevelUpLearnset,
+        .teachableLearnset = sCherrymonTeachableLearnset,
+        .eggMoveLearnset = sCherrymonEggMoveLearnset,
+        .formSpeciesIdTable = sCherrymonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_DARMANITAN_STANDARD}),
     },
 
@@ -5128,7 +5131,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 
 #if P_GALARIAN_FORMS
-    [SPECIES_DARUMAKA_GALAR] =
+    [SPECIES_CHERRYMON_GALAR] =
     {
         .baseHP        = 70,
         .baseAttack    = 90,
@@ -5147,9 +5150,9 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_HUSTLE, ABILITY_NONE, ABILITY_INNER_FOCUS },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Darumaka"),
-        .cryId = CRY_DARUMAKA,
-        .natDexNum = NATIONAL_DEX_DARUMAKA,
+        .speciesName = _("Cherrymon"),
+        .cryId = CRY_CHERRYMON,
+        .natDexNum = NATIONAL_DEX_CHERRYMON,
         .categoryName = _("Zen Charm"),
         .height = 7,
         .weight = 400,
@@ -5162,36 +5165,36 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .pokemonOffset = 14,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_DarumakaGalar,
+        .frontPic = gMonFrontPic_CherrymonGalar,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 15,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_DarumakaGalar,
+        .backPic = gMonBackPic_CherrymonGalar,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 11,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_DarumakaGalar,
-        .shinyPalette = gMonShinyPalette_DarumakaGalar,
-        .iconSprite = gMonIcon_DarumakaGalar,
+        .palette = gMonPalette_CherrymonGalar,
+        .shinyPalette = gMonShinyPalette_CherrymonGalar,
+        .iconSprite = gMonIcon_CherrymonGalar,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(-3, -1, SHADOW_SIZE_S)
-        FOOTPRINT(Darumaka)
+        FOOTPRINT(Cherrymon)
         OVERWORLD(
-            sPicTable_DarumakaGalar,
+            sPicTable_CherrymonGalar,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_DarumakaGalar,
-            gShinyOverworldPalette_DarumakaGalar
+            gOverworldPalette_CherrymonGalar,
+            gShinyOverworldPalette_CherrymonGalar
         )
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sDarumakaGalarLevelUpLearnset,
-        .teachableLearnset = sDarumakaGalarTeachableLearnset,
-        .eggMoveLearnset = sDarumakaGalarEggMoveLearnset,
-        .formSpeciesIdTable = sDarumakaFormSpeciesIdTable,
+        .levelUpLearnset = sCherrymonGalarLevelUpLearnset,
+        .teachableLearnset = sCherrymonGalarTeachableLearnset,
+        .eggMoveLearnset = sCherrymonGalarEggMoveLearnset,
+        .formSpeciesIdTable = sCherrymonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_ICE_STONE, SPECIES_DARMANITAN_GALAR_STANDARD}),
     },
 
@@ -5318,7 +5321,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .formChangeTable = sDarmanitanGalarFormChangeTable,
     },
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_DARUMAKA
+#endif //P_FAMILY_CHERRYMON
 
 #if P_FAMILY_MARACTUS
     [SPECIES_MARACTUS] =

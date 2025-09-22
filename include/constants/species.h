@@ -572,7 +572,7 @@
 #define SPECIES_KINGSUKAMON                                 551
 #define SPECIES_DIVERMON                                552
 #define SPECIES_METEORMON                              553
-#define SPECIES_DARUMAKA                                554
+#define SPECIES_CHERRYMON                                554
 #define SPECIES_DARMANITAN                              SPECIES_DARMANITAN_STANDARD
 #define SPECIES_DARMANITAN_STANDARD                     555
 #define SPECIES_MARACTUS                                556
@@ -1051,7 +1051,7 @@
 #define SPECIES_PATAMON_GALAR                           986
 #define SPECIES_TOYAGUMON_GALAR                         987
 #define SPECIES_TSUKAIMON_GALAR                           988
-#define SPECIES_DARUMAKA_GALAR                          989
+#define SPECIES_CHERRYMON_GALAR                          989
 #define SPECIES_DARMANITAN_GALAR_STANDARD               990
 #define SPECIES_DARMANITAN_GALAR                        SPECIES_DARMANITAN_GALAR_STANDARD
 #define SPECIES_YAMASK_GALAR                            991

@@ -1379,10 +1379,10 @@ gCryTable::
 	cry Cry_Divermon
 	cry Cry_Meteormon
 .endif @ P_FAMILY_KINGSUKAMON
-.if P_FAMILY_DARUMAKA == TRUE
-	cry Cry_Darumaka
+.if P_FAMILY_CHERRYMON == TRUE
+	cry Cry_Cherrymon
 	cry Cry_Darmanitan
-.endif @ P_FAMILY_DARUMAKA
+.endif @ P_FAMILY_CHERRYMON
 .if P_FAMILY_MARACTUS == TRUE
 	cry Cry_Maractus
 .endif @ P_FAMILY_MARACTUS
@@ -3806,10 +3806,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Divermon
 	cry_reverse Cry_Meteormon
 .endif @ P_FAMILY_KINGSUKAMON
-.if P_FAMILY_DARUMAKA == TRUE
-	cry_reverse Cry_Darumaka
+.if P_FAMILY_CHERRYMON == TRUE
+	cry_reverse Cry_Cherrymon
 	cry_reverse Cry_Darmanitan
-.endif @ P_FAMILY_DARUMAKA
+.endif @ P_FAMILY_CHERRYMON
 .if P_FAMILY_MARACTUS == TRUE
 	cry_reverse Cry_Maractus
 .endif @ P_FAMILY_MARACTUS

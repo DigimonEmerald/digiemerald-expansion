@@ -699,7 +699,7 @@ static const struct FormChange sDatamonFormChangeTable[] = {
 };
 #endif //P_FAMILY_DATAMON
 
-#if P_FAMILY_DARUMAKA
+#if P_FAMILY_CHERRYMON
 static const struct FormChange sDarmanitanFormChangeTable[] = {
     {FORM_CHANGE_BATTLE_HP_PERCENT, SPECIES_DARMANITAN_STANDARD, ABILITY_ZEN_MODE, HP_HIGHER_THAN,   50},
     {FORM_CHANGE_BATTLE_HP_PERCENT, SPECIES_DARMANITAN_ZEN,      ABILITY_ZEN_MODE, HP_LOWER_EQ_THAN, 50},
@@ -717,7 +717,7 @@ static const struct FormChange sDarmanitanGalarFormChangeTable[] = {
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_DARUMAKA
+#endif //P_FAMILY_CHERRYMON
 
 #if P_FAMILY_TRUBBISH
 static const struct FormChange sGarbodorFormChangeTable[] =

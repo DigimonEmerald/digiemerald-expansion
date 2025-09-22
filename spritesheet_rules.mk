@@ -2922,7 +2922,7 @@ $(POKEMONGFXDIR)/divermon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/meteormon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/darumaka/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/cherrymon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/darmanitan/overworld.4bpp: %.4bpp: %.png
@@ -4056,7 +4056,7 @@ $(POKEMONGFXDIR)/toyagumon/galar/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/tsukaimon/galar/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/darumaka/galar/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/cherrymon/galar/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/darmanitan/galar_standard/overworld.4bpp: %.4bpp: %.png

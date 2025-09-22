@@ -3985,9 +3985,9 @@ static const struct SpriteFrameImage sPicTable_Meteormon[] = {
 };
 #endif //P_FAMILY_KINGSUKAMON
 
-#if P_FAMILY_DARUMAKA
-static const struct SpriteFrameImage sPicTable_Darumaka[] = {
-    overworld_ascending_frames(gObjectEventPic_Darumaka, 4, 4),
+#if P_FAMILY_CHERRYMON
+static const struct SpriteFrameImage sPicTable_Cherrymon[] = {
+    overworld_ascending_frames(gObjectEventPic_Cherrymon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_DarmanitanStandard[] = {
     overworld_ascending_frames(gObjectEventPic_DarmanitanStandard, 4, 4),
@@ -3996,8 +3996,8 @@ static const struct SpriteFrameImage sPicTable_DarmanitanStandard[] = {
     overworld_ascending_frames(gObjectEventPic_DarmanitanZen, 4, 4),
 };*/
 #if P_GALARIAN_FORMS
-static const struct SpriteFrameImage sPicTable_DarumakaGalar[] = {
-    overworld_ascending_frames(gObjectEventPic_DarumakaGalar, 4, 4),
+static const struct SpriteFrameImage sPicTable_CherrymonGalar[] = {
+    overworld_ascending_frames(gObjectEventPic_CherrymonGalar, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_DarmanitanGalarStandard[] = {
     overworld_ascending_frames(gObjectEventPic_DarmanitanGalarStandard, 4, 4),
@@ -4006,7 +4006,7 @@ static const struct SpriteFrameImage sPicTable_DarmanitanGalarStandard[] = {
     overworld_ascending_frames(gObjectEventPic_DarmanitanGalarZen, 4, 4),
 };*/
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_DARUMAKA
+#endif //P_FAMILY_CHERRYMON
 
 #if P_FAMILY_MARACTUS
 static const struct SpriteFrameImage sPicTable_Maractus[] = {

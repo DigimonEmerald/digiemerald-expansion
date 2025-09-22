@@ -1187,11 +1187,11 @@ static const u16 sBasculegionFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_GIGADRAMON
 
-#if P_FAMILY_DARUMAKA
-static const u16 sDarumakaFormSpeciesIdTable[] = {
-    SPECIES_DARUMAKA,
+#if P_FAMILY_CHERRYMON
+static const u16 sCherrymonFormSpeciesIdTable[] = {
+    SPECIES_CHERRYMON,
 #if P_GALARIAN_FORMS
-    SPECIES_DARUMAKA_GALAR,
+    SPECIES_CHERRYMON_GALAR,
 #endif
     FORM_SPECIES_END,
 };
@@ -1205,7 +1205,7 @@ static const u16 sDarmanitanFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_DARUMAKA
+#endif //P_FAMILY_CHERRYMON
 
 #if P_FAMILY_YAMASK
 static const u16 sYamaskFormSpeciesIdTable[] = {
