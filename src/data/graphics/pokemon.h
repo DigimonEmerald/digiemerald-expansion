@@ -14892,19 +14892,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Skuntank[] = INCBIN_U32("graphics/pokemon/skuntank/anim_front.4bpp.smol");
-    const u16 gMonPalette_Skuntank[] = INCBIN_U16("graphics/pokemon/skuntank/normal.gbapal");
-    const u32 gMonBackPic_Skuntank[] = INCBIN_U32("graphics/pokemon/skuntank/back.4bpp.smol");
-    const u16 gMonShinyPalette_Skuntank[] = INCBIN_U16("graphics/pokemon/skuntank/shiny.gbapal");
-    const u8 gMonIcon_Skuntank[] = INCBIN_U8("graphics/pokemon/skuntank/icon.4bpp");
+    const u32 gMonFrontPic_Shellnumemon[] = INCBIN_U32("graphics/pokemon/shellnumemon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Shellnumemon[] = INCBIN_U16("graphics/pokemon/shellnumemon/normal.gbapal");
+    const u32 gMonBackPic_Shellnumemon[] = INCBIN_U32("graphics/pokemon/shellnumemon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Shellnumemon[] = INCBIN_U16("graphics/pokemon/shellnumemon/shiny.gbapal");
+    const u8 gMonIcon_Shellnumemon[] = INCBIN_U8("graphics/pokemon/shellnumemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Skuntank[] = INCBIN_U8("graphics/pokemon/skuntank/footprint.1bpp");
+    const u8 gMonFootprint_Shellnumemon[] = INCBIN_U8("graphics/pokemon/shellnumemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Skuntank[] = INCBIN_COMP("graphics/pokemon/skuntank/overworld.4bpp");
+    const u32 gObjectEventPic_Shellnumemon[] = INCBIN_COMP("graphics/pokemon/shellnumemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Skuntank[] = INCBIN_U16("graphics/pokemon/skuntank/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Skuntank[] = INCBIN_U16("graphics/pokemon/skuntank/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Shellnumemon[] = INCBIN_U16("graphics/pokemon/shellnumemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Shellnumemon[] = INCBIN_U16("graphics/pokemon/shellnumemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_JUNGLEMOJYAMON

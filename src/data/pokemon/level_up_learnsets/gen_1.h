@@ -8064,7 +8064,7 @@ static const struct LevelUpMove sJunglemojyamonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sSkuntankLevelUpLearnset[] = {
+static const struct LevelUpMove sShellnumemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE( 1, MOVE_POISON_GAS),

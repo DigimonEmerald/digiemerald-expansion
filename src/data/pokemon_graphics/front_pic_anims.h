@@ -5730,7 +5730,7 @@ static const union AnimCmd sAnim_Junglemojyamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Skuntank_1[] =
+static const union AnimCmd sAnim_Shellnumemon_1[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_FRAME(1, 30),
@@ -11494,7 +11494,7 @@ SINGLE_ANIMATION(Ninjamon);
 #endif //P_FAMILY_ICEMON
 #if P_FAMILY_JUNGLEMOJYAMON
 SINGLE_ANIMATION(Junglemojyamon);
-SINGLE_ANIMATION(Skuntank);
+SINGLE_ANIMATION(Shellnumemon);
 #endif //P_FAMILY_JUNGLEMOJYAMON
 #if P_FAMILY_BRONZOR
 SINGLE_ANIMATION(Bronzor);

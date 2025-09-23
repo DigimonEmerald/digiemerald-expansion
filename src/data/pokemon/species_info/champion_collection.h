@@ -15042,44 +15042,46 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sJunglemojyamonLevelUpLearnset,
         .teachableLearnset = sJunglemojyamonTeachableLearnset,
         .eggMoveLearnset = sJunglemojyamonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_SKUNTANK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_SHELLNUMEMON}),
     },
 
-    [SPECIES_SKUNTANK] =
+    [SPECIES_SHELLNUMEMON] =
     {
-        .baseHP        = 103,
-        .baseAttack    = 93,
-        .baseDefense   = 67,
-        .baseSpeed     = 84,
-        .baseSpAttack  = 71,
-        .baseSpDefense = 61,
-        .types = MON_TYPES(TYPE_POISON, TYPE_DARK),
-        .catchRate = 60,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 168 : 209,
-        .evYield_HP = 2,
+        .baseHP        = 45,
+        .baseAttack    = 50,
+        .baseDefense   = 125,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_POISON, TYPE_WATER),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense = 3,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_STENCH, ABILITY_AFTERMATH, ABILITY_KEEN_EYE },
-        .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Skuntank"),
-        .cryId = CRY_SKUNTANK,
-        .natDexNum = NATIONAL_DEX_SKUNTANK,
-        .categoryName = _("Skunk"),
-        .height = 10,
-        .weight = 380,
+        .abilities = { ABILITY_STENCH, ABILITY_SHELL_ARMOR, ABILITY_CLEAR_BODY },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("ShellNumemon"),
+        .cryId = CRY_SHELLNUMEMON,
+        .natDexNum = NATIONAL_DEX_SHELLNUMEMON,
+        .categoryName = _("Mollusk"),
+        .height = 8,
+        .weight = 299,
         .description = COMPOUND_STRING(
-            "It attacks by spraying a horribly smelly\n"
-            "fluid from the tip of its tail. The fluid\n"
-            "smells worse the longer it is allowed\n"
-            "to fester."),
+            "Likely one of the only Numemon species\n"
+            "to display intelligence, ShellNumemon\n"
+            "will find a shell to protect themself.\n"
+            "In turn, it is a greater coward."),
         .pokemonScale = 305,
         .pokemonOffset = 9,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Skuntank,
+        .frontPic = gMonFrontPic_Shellnumemon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 7,
         .frontAnimFrames = ANIM_FRAMES(
@@ -15088,28 +15090,28 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 20),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Skuntank,
+        .backPic = gMonBackPic_Shellnumemon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_H_STRETCH,
-        .palette = gMonPalette_Skuntank,
-        .shinyPalette = gMonShinyPalette_Skuntank,
-        .iconSprite = gMonIcon_Skuntank,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Shellnumemon,
+        .shinyPalette = gMonShinyPalette_Shellnumemon,
+        .iconSprite = gMonIcon_Shellnumemon,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-3, 6, SHADOW_SIZE_L)
-        FOOTPRINT(Skuntank)
+        FOOTPRINT(Shellnumemon)
         OVERWORLD(
-            sPicTable_Skuntank,
+            sPicTable_Shellnumemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Skuntank,
-            gShinyOverworldPalette_Skuntank
+            gOverworldPalette_Shellnumemon,
+            gShinyOverworldPalette_Shellnumemon
         )
-        .levelUpLearnset = sSkuntankLevelUpLearnset,
-        .teachableLearnset = sSkuntankTeachableLearnset,
+        .levelUpLearnset = sShellnumemonLevelUpLearnset,
+        .teachableLearnset = sShellnumemonTeachableLearnset,
     },
 #endif //P_FAMILY_JUNGLEMOJYAMON
 

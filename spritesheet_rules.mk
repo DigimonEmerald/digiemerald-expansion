@@ -2502,7 +2502,7 @@ $(POKEMONGFXDIR)/chingling/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/junglemojyamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/skuntank/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/shellnumemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/bronzor/overworld.4bpp: %.4bpp: %.png

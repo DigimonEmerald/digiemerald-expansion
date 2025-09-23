@@ -19568,7 +19568,7 @@ static const u16 sJunglemojyamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSkuntankTeachableLearnset[] = {
+static const u16 sShellnumemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_CUT,

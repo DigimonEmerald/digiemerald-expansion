@@ -3352,8 +3352,8 @@ static const struct SpriteFrameImage sPicTable_Ninjamon[] = {
 static const struct SpriteFrameImage sPicTable_Junglemojyamon[] = {
     overworld_ascending_frames(gObjectEventPic_Junglemojyamon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Skuntank[] = {
-    overworld_ascending_frames(gObjectEventPic_Skuntank, 4, 4),
+static const struct SpriteFrameImage sPicTable_Shellnumemon[] = {
+    overworld_ascending_frames(gObjectEventPic_Shellnumemon, 4, 4),
 };
 #endif //P_FAMILY_JUNGLEMOJYAMON
 

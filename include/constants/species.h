@@ -449,7 +449,7 @@
 #define SPECIES_NINJAMON                                 432
 #define SPECIES_CHINGLING                               433
 #define SPECIES_JUNGLEMOJYAMON                                  434
-#define SPECIES_SKUNTANK                                435
+#define SPECIES_SHELLNUMEMON                                435
 #define SPECIES_BRONZOR                                 436
 #define SPECIES_BRONZONG                                437
 #define SPECIES_BONSLY                                  438

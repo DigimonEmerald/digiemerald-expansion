@@ -1162,7 +1162,7 @@ gCryTable::
 .endif @ P_FAMILY_ICEMON
 .if P_FAMILY_JUNGLEMOJYAMON == TRUE
 	cry Cry_Junglemojyamon
-	cry Cry_Skuntank
+	cry Cry_Shellnumemon
 .endif @ P_FAMILY_JUNGLEMOJYAMON
 .if P_FAMILY_BRONZOR == TRUE
 	cry Cry_Bronzor
@@ -3589,7 +3589,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_ICEMON
 .if P_FAMILY_JUNGLEMOJYAMON == TRUE
 	cry_reverse Cry_Junglemojyamon
-	cry_reverse Cry_Skuntank
+	cry_reverse Cry_Shellnumemon
 .endif @ P_FAMILY_JUNGLEMOJYAMON
 .if P_FAMILY_BRONZOR == TRUE
 	cry_reverse Cry_Bronzor

@@ -3106,8 +3106,8 @@ Cry_Junglemojyamon::
 	.incbin "sound/direct_sound_samples/cries/junglemojyamon.bin"
 
 	.align 2
-Cry_Skuntank::
-	.incbin "sound/direct_sound_samples/cries/skuntank.bin"
+Cry_Shellnumemon::
+	.incbin "sound/direct_sound_samples/cries/shellnumemon.bin"
 .endif @ P_FAMILY_JUNGLEMOJYAMON
 
 .if P_FAMILY_BRONZOR == TRUE
