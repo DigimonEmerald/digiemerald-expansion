@@ -3639,11 +3639,11 @@ Cry_Darmanitan::
 	.incbin "sound/direct_sound_samples/cries/darmanitan.bin"
 .endif @ P_FAMILY_CHERRYMON
 
-.if P_FAMILY_MARACTUS == TRUE
+.if P_FAMILY_KNIGHTMON == TRUE
 	.align 2
-Cry_Maractus::
-	.incbin "sound/direct_sound_samples/cries/maractus.bin"
-.endif @ P_FAMILY_MARACTUS
+Cry_Knightmon::
+	.incbin "sound/direct_sound_samples/cries/knightmon.bin"
+.endif @ P_FAMILY_KNIGHTMON
 
 .if P_FAMILY_DWEBBLE == TRUE
 	.align 2

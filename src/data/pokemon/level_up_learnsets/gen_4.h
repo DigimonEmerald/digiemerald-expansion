@@ -11825,8 +11825,8 @@ static const struct LevelUpMove sDarmanitanGalarLevelUpLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_CHERRYMON
 
-#if P_FAMILY_MARACTUS
-static const struct LevelUpMove sMaractusLevelUpLearnset[] = {
+#if P_FAMILY_KNIGHTMON
+static const struct LevelUpMove sKnightmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 3, MOVE_SWEET_SCENT),
@@ -11847,7 +11847,7 @@ static const struct LevelUpMove sMaractusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(57, MOVE_AFTER_YOU),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_MARACTUS
+#endif //P_FAMILY_KNIGHTMON
 
 #if P_FAMILY_DWEBBLE
 static const struct LevelUpMove sDwebbleLevelUpLearnset[] = {

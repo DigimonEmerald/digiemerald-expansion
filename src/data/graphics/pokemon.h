@@ -17097,23 +17097,23 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_CHERRYMON
 
-#if P_FAMILY_MARACTUS
-    const u32 gMonFrontPic_Maractus[] = INCBIN_U32("graphics/pokemon/maractus/anim_front.4bpp.smol");
-    const u16 gMonPalette_Maractus[] = INCBIN_U16("graphics/pokemon/maractus/normal.gbapal");
-    const u32 gMonBackPic_Maractus[] = INCBIN_U32("graphics/pokemon/maractus/back.4bpp.smol");
-    const u16 gMonShinyPalette_Maractus[] = INCBIN_U16("graphics/pokemon/maractus/shiny.gbapal");
-    const u8 gMonIcon_Maractus[] = INCBIN_U8("graphics/pokemon/maractus/icon.4bpp");
+#if P_FAMILY_KNIGHTMON
+    const u32 gMonFrontPic_Knightmon[] = INCBIN_U32("graphics/pokemon/knightmon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Knightmon[] = INCBIN_U16("graphics/pokemon/knightmon/normal.gbapal");
+    const u32 gMonBackPic_Knightmon[] = INCBIN_U32("graphics/pokemon/knightmon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Knightmon[] = INCBIN_U16("graphics/pokemon/knightmon/shiny.gbapal");
+    const u8 gMonIcon_Knightmon[] = INCBIN_U8("graphics/pokemon/knightmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Maractus[] = INCBIN_U8("graphics/pokemon/maractus/footprint.1bpp");
+    const u8 gMonFootprint_Knightmon[] = INCBIN_U8("graphics/pokemon/knightmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Maractus[] = INCBIN_COMP("graphics/pokemon/maractus/overworld.4bpp");
+    const u32 gObjectEventPic_Knightmon[] = INCBIN_COMP("graphics/pokemon/knightmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Maractus[] = INCBIN_U16("graphics/pokemon/maractus/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Maractus[] = INCBIN_U16("graphics/pokemon/maractus/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Knightmon[] = INCBIN_U16("graphics/pokemon/knightmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Knightmon[] = INCBIN_U16("graphics/pokemon/knightmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_MARACTUS
+#endif //P_FAMILY_KNIGHTMON
 
 #if P_FAMILY_DWEBBLE
     const u32 gMonFrontPic_Dwebble[] = INCBIN_U32("graphics/pokemon/dwebble/anim_front.4bpp.smol");

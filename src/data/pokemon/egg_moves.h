@@ -4335,8 +4335,8 @@ static const u16 sCherrymonGalarEggMoveLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_CHERRYMON
 
-#if P_FAMILY_MARACTUS
-static const u16 sMaractusEggMoveLearnset[] = {
+#if P_FAMILY_KNIGHTMON
+static const u16 sKnightmonEggMoveLearnset[] = {
     MOVE_BULLET_SEED,
     MOVE_BOUNCE,
     MOVE_WORRY_SEED,
@@ -4348,7 +4348,7 @@ static const u16 sMaractusEggMoveLearnset[] = {
     MOVE_GRASSY_TERRAIN,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MARACTUS
+#endif //P_FAMILY_KNIGHTMON
 
 #if P_FAMILY_DWEBBLE
 static const u16 sDwebbleEggMoveLearnset[] = {

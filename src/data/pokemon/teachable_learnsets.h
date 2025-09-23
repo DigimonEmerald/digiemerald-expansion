@@ -23076,8 +23076,8 @@ static const u16 sDarmanitanGalarTeachableLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_CHERRYMON
 
-#if P_FAMILY_MARACTUS
-static const u16 sMaractusTeachableLearnset[] = {
+#if P_FAMILY_KNIGHTMON
+static const u16 sKnightmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
@@ -23097,7 +23097,7 @@ static const u16 sMaractusTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MARACTUS
+#endif //P_FAMILY_KNIGHTMON
 
 #if P_FAMILY_DWEBBLE
 static const u16 sDwebbleTeachableLearnset[] = {

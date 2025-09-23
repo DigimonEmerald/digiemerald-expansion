@@ -6927,8 +6927,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(DarmanitanGalarZen);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_CHERRYMON
 
-#if P_FAMILY_MARACTUS
-static const union AnimCmd sAnim_Maractus_1[] =
+#if P_FAMILY_KNIGHTMON
+static const union AnimCmd sAnim_Knightmon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -6939,7 +6939,7 @@ static const union AnimCmd sAnim_Maractus_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_MARACTUS
+#endif //P_FAMILY_KNIGHTMON
 
 #if P_FAMILY_DWEBBLE
 static const union AnimCmd sAnim_Dwebble_1[] =
@@ -11735,9 +11735,9 @@ SINGLE_ANIMATION(DarmanitanGalarStandard);
 SINGLE_ANIMATION(DarmanitanGalarZen);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_CHERRYMON
-#if P_FAMILY_MARACTUS
-SINGLE_ANIMATION(Maractus);
-#endif //P_FAMILY_MARACTUS
+#if P_FAMILY_KNIGHTMON
+SINGLE_ANIMATION(Knightmon);
+#endif //P_FAMILY_KNIGHTMON
 #if P_FAMILY_DWEBBLE
 SINGLE_ANIMATION(Dwebble);
 SINGLE_ANIMATION(Crustle);

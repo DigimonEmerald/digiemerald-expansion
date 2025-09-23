@@ -5323,43 +5323,45 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_CHERRYMON
 
-#if P_FAMILY_MARACTUS
-    [SPECIES_MARACTUS] =
+#if P_FAMILY_KNIGHTMON
+    [SPECIES_KNIGHTMON] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 86,
-        .baseDefense   = 67,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 106,
-        .baseSpDefense = 67,
-        .types = MON_TYPES(TYPE_GRASS),
+        .baseHP        = 80,
+        .baseAttack    = 120,
+        .baseDefense   = 120,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_STEEL, TYPE_FIGHTING),
+        .attribute = TYPE_DATA,
         .catchRate = 95,
-        .expYield = 161,
-        .evYield_SpAttack = 2,
+        .expYield = 200,
+        .evYield_Attack = 2,
+        .evYield_Defense = 3,
         .itemRare = ITEM_MIRACLE_SEED,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
-        .abilities = { ABILITY_WATER_ABSORB, ABILITY_CHLOROPHYLL, ABILITY_STORM_DRAIN },
-        .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Maractus"),
-        .cryId = CRY_MARACTUS,
-        .natDexNum = NATIONAL_DEX_MARACTUS,
-        .categoryName = _("Cactus"),
-        .height = 10,
-        .weight = 280,
+        .abilities = { ABILITY_BATTLE_ARMOR, ABILITY_NO_GUARD, ABILITY_SHARPNESS },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Knightmon"),
+        .cryId = CRY_KNIGHTMON,
+        .natDexNum = NATIONAL_DEX_KNIGHTMON,
+        .categoryName = _("Knight"),
+        .height = 37,
+        .weight = 1956,
         .description = COMPOUND_STRING(
-            "Arid regions are their habitat.\n"
-            "When it moves rhythmically, it makes a\n"
-            "sound similar to maracas, making the\n"
-            "surprised Pokémon flee."),
+            "Even while wearing its cherished\n"
+            "armour, it is able to easily wield its\n"
+            "greatsword. Knightmon is deeply loyal\n"
+            "to the one that it calls it master."),
         .pokemonScale = 305,
         .pokemonOffset = 6,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Maractus,
+        .frontPic = gMonFrontPic_Knightmon,
         .frontPicSize = MON_COORDS_SIZE(56, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -5372,31 +5374,31 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
-        .backPic = gMonBackPic_Maractus,
+        .backPic = gMonBackPic_Knightmon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 2,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Maractus,
-        .shinyPalette = gMonShinyPalette_Maractus,
-        .iconSprite = gMonIcon_Maractus,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Knightmon,
+        .shinyPalette = gMonShinyPalette_Knightmon,
+        .iconSprite = gMonIcon_Knightmon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 13, SHADOW_SIZE_S)
-        FOOTPRINT(Maractus)
+        FOOTPRINT(Knightmon)
         OVERWORLD(
-            sPicTable_Maractus,
+            sPicTable_Knightmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Maractus,
-            gShinyOverworldPalette_Maractus
+            gOverworldPalette_Knightmon,
+            gShinyOverworldPalette_Knightmon
         )
-        .levelUpLearnset = sMaractusLevelUpLearnset,
-        .teachableLearnset = sMaractusTeachableLearnset,
-        .eggMoveLearnset = sMaractusEggMoveLearnset,
+        .levelUpLearnset = sKnightmonLevelUpLearnset,
+        .teachableLearnset = sKnightmonTeachableLearnset,
+        .eggMoveLearnset = sKnightmonEggMoveLearnset,
     },
-#endif //P_FAMILY_MARACTUS
+#endif //P_FAMILY_KNIGHTMON
 
 #if P_FAMILY_DWEBBLE
     [SPECIES_DWEBBLE] =

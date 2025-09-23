@@ -590,8 +590,8 @@
 #define P_FAMILY_KINGSUKAMON                 TRUE
 #undef P_FAMILY_CHERRYMON
 #define P_FAMILY_CHERRYMON                TRUE
-#undef P_FAMILY_MARACTUS
-#define P_FAMILY_MARACTUS                TRUE
+#undef P_FAMILY_KNIGHTMON
+#define P_FAMILY_KNIGHTMON                TRUE
 #undef P_FAMILY_DWEBBLE
 #define P_FAMILY_DWEBBLE                 TRUE
 #undef P_FAMILY_SCRAGGY

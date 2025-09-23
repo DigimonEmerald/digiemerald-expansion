@@ -1383,9 +1383,9 @@ gCryTable::
 	cry Cry_Cherrymon
 	cry Cry_Darmanitan
 .endif @ P_FAMILY_CHERRYMON
-.if P_FAMILY_MARACTUS == TRUE
-	cry Cry_Maractus
-.endif @ P_FAMILY_MARACTUS
+.if P_FAMILY_KNIGHTMON == TRUE
+	cry Cry_Knightmon
+.endif @ P_FAMILY_KNIGHTMON
 .if P_FAMILY_DWEBBLE == TRUE
 	cry Cry_Dwebble
 	cry Cry_Crustle
@@ -3810,9 +3810,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Cherrymon
 	cry_reverse Cry_Darmanitan
 .endif @ P_FAMILY_CHERRYMON
-.if P_FAMILY_MARACTUS == TRUE
-	cry_reverse Cry_Maractus
-.endif @ P_FAMILY_MARACTUS
+.if P_FAMILY_KNIGHTMON == TRUE
+	cry_reverse Cry_Knightmon
+.endif @ P_FAMILY_KNIGHTMON
 .if P_FAMILY_DWEBBLE == TRUE
 	cry_reverse Cry_Dwebble
 	cry_reverse Cry_Crustle

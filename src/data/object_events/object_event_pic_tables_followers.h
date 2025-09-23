@@ -4008,11 +4008,11 @@ static const struct SpriteFrameImage sPicTable_DarmanitanGalarStandard[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_CHERRYMON
 
-#if P_FAMILY_MARACTUS
-static const struct SpriteFrameImage sPicTable_Maractus[] = {
-    overworld_ascending_frames(gObjectEventPic_Maractus, 4, 4),
+#if P_FAMILY_KNIGHTMON
+static const struct SpriteFrameImage sPicTable_Knightmon[] = {
+    overworld_ascending_frames(gObjectEventPic_Knightmon, 4, 4),
 };
-#endif //P_FAMILY_MARACTUS
+#endif //P_FAMILY_KNIGHTMON
 
 #if P_FAMILY_DWEBBLE
 static const struct SpriteFrameImage sPicTable_Dwebble[] = {
