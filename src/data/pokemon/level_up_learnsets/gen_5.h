@@ -10314,8 +10314,8 @@ static const struct LevelUpMove sShellnumemonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_JUNGLEMOJYAMON
 
-#if P_FAMILY_BRONZOR
-static const struct LevelUpMove sBronzorLevelUpLearnset[] = {
+#if P_FAMILY_KIWIMON
+static const struct LevelUpMove sKiwimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 5, MOVE_HYPNOSIS),
@@ -10359,7 +10359,7 @@ static const struct LevelUpMove sBronzongLevelUpLearnset[] = {
     LEVEL_UP_MOVE(58, MOVE_HEAVY_SLAM),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_BRONZOR
+#endif //P_FAMILY_KIWIMON
 
 #if P_FAMILY_CHATOT
 static const struct LevelUpMove sChatotLevelUpLearnset[] = {

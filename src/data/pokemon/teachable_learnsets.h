@@ -19606,8 +19606,8 @@ static const u16 sShellnumemonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_JUNGLEMOJYAMON
 
-#if P_FAMILY_BRONZOR
-static const u16 sBronzorTeachableLearnset[] = {
+#if P_FAMILY_KIWIMON
+static const u16 sKiwimonTeachableLearnset[] = {
     MOVE_BODY_SLAM,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
@@ -19674,7 +19674,7 @@ static const u16 sBronzongTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BRONZOR
+#endif //P_FAMILY_KIWIMON
 
 #if P_FAMILY_CHATOT
 static const u16 sChatotTeachableLearnset[] = {

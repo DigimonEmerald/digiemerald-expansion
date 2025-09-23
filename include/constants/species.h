@@ -450,7 +450,7 @@
 #define SPECIES_CHINGLING                               433
 #define SPECIES_JUNGLEMOJYAMON                                  434
 #define SPECIES_SHELLNUMEMON                                435
-#define SPECIES_BRONZOR                                 436
+#define SPECIES_KIWIMON                                 436
 #define SPECIES_BRONZONG                                437
 #define SPECIES_BONSLY                                  438
 #define SPECIES_MIME_JR                                 439

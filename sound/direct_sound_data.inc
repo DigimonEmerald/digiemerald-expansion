@@ -3110,15 +3110,15 @@ Cry_Shellnumemon::
 	.incbin "sound/direct_sound_samples/cries/shellnumemon.bin"
 .endif @ P_FAMILY_JUNGLEMOJYAMON
 
-.if P_FAMILY_BRONZOR == TRUE
+.if P_FAMILY_KIWIMON == TRUE
 	.align 2
-Cry_Bronzor::
-	.incbin "sound/direct_sound_samples/cries/bronzor.bin"
+Cry_Kiwimon::
+	.incbin "sound/direct_sound_samples/cries/kiwimon.bin"
 
 	.align 2
 Cry_Bronzong::
 	.incbin "sound/direct_sound_samples/cries/bronzong.bin"
-.endif @ P_FAMILY_BRONZOR
+.endif @ P_FAMILY_KIWIMON
 
 .if P_FAMILY_CHATOT == TRUE
 	.align 2

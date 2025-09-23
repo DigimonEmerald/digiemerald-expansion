@@ -278,7 +278,7 @@
 #define P_FAMILY_HYOGAMON                 P_GEN_4_POKEMON
 #define P_FAMILY_ICEMON                 P_GEN_4_POKEMON
 #define P_FAMILY_JUNGLEMOJYAMON                  P_GEN_4_POKEMON
-#define P_FAMILY_BRONZOR                 P_GEN_4_POKEMON
+#define P_FAMILY_KIWIMON                 P_GEN_4_POKEMON
 #define P_FAMILY_CHATOT                  P_GEN_4_POKEMON
 #define P_FAMILY_SPIRITOMB               P_GEN_4_POKEMON
 #define P_FAMILY_GIBLE                   P_GEN_4_POKEMON

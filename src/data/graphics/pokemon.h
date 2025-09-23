@@ -14909,20 +14909,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_JUNGLEMOJYAMON
 
-#if P_FAMILY_BRONZOR
-    const u32 gMonFrontPic_Bronzor[] = INCBIN_U32("graphics/pokemon/bronzor/anim_front.4bpp.smol");
-    const u16 gMonPalette_Bronzor[] = INCBIN_U16("graphics/pokemon/bronzor/normal.gbapal");
-    const u32 gMonBackPic_Bronzor[] = INCBIN_U32("graphics/pokemon/bronzor/back.4bpp.smol");
-    const u16 gMonShinyPalette_Bronzor[] = INCBIN_U16("graphics/pokemon/bronzor/shiny.gbapal");
-    const u8 gMonIcon_Bronzor[] = INCBIN_U8("graphics/pokemon/bronzor/icon.4bpp");
+#if P_FAMILY_KIWIMON
+    const u32 gMonFrontPic_Kiwimon[] = INCBIN_U32("graphics/pokemon/kiwimon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Kiwimon[] = INCBIN_U16("graphics/pokemon/kiwimon/normal.gbapal");
+    const u32 gMonBackPic_Kiwimon[] = INCBIN_U32("graphics/pokemon/kiwimon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Kiwimon[] = INCBIN_U16("graphics/pokemon/kiwimon/shiny.gbapal");
+    const u8 gMonIcon_Kiwimon[] = INCBIN_U8("graphics/pokemon/kiwimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Bronzor[] = INCBIN_U8("graphics/pokemon/bronzor/footprint.1bpp");
+    const u8 gMonFootprint_Kiwimon[] = INCBIN_U8("graphics/pokemon/kiwimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Bronzor[] = INCBIN_COMP("graphics/pokemon/bronzor/overworld.4bpp");
+    const u32 gObjectEventPic_Kiwimon[] = INCBIN_COMP("graphics/pokemon/kiwimon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Bronzor[] = INCBIN_U16("graphics/pokemon/bronzor/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Bronzor[] = INCBIN_U16("graphics/pokemon/bronzor/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Kiwimon[] = INCBIN_U16("graphics/pokemon/kiwimon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Kiwimon[] = INCBIN_U16("graphics/pokemon/kiwimon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -14941,7 +14941,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Bronzong[] = INCBIN_U16("graphics/pokemon/bronzong/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_BRONZOR
+#endif //P_FAMILY_KIWIMON
 
 #if P_FAMILY_CHATOT
     const u32 gMonFrontPic_Chatot[] = INCBIN_U32("graphics/pokemon/chatot/anim_front.4bpp.smol");

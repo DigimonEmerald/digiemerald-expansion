@@ -15115,43 +15115,44 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_JUNGLEMOJYAMON
 
-#if P_FAMILY_BRONZOR
-    [SPECIES_BRONZOR] =
+#if P_FAMILY_KIWIMON
+    [SPECIES_KIWIMON] =
     {
-        .baseHP        = 57,
-        .baseAttack    = 24,
-        .baseDefense   = 86,
-        .baseSpeed     = 23,
-        .baseSpAttack  = 24,
-        .baseSpDefense = 86,
-        .types = MON_TYPES(TYPE_STEEL, TYPE_PSYCHIC),
-        .catchRate = 255,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 72,
-        .evYield_Defense = 1,
+        .baseHP        = 55,
+        .baseAttack    = 65,
+        .baseDefense   = 55,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FLYING),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed = 4,
         .itemRare = ITEM_METAL_COAT,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_LEVITATE, ABILITY_HEATPROOF, ABILITY_HEAVY_METAL },
-        .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Bronzor"),
-        .cryId = CRY_BRONZOR,
-        .natDexNum = NATIONAL_DEX_BRONZOR,
-        .categoryName = _("Bronze"),
-        .height = 5,
-        .weight = 605,
+        .abilities = { ABILITY_BIG_PECKS, ABILITY_NONE, ABILITY_QUICK_FEET }, // Grounded
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Kiwimon"),
+        .cryId = CRY_KIWIMON,
+        .natDexNum = NATIONAL_DEX_KIWIMON,
+        .categoryName = _("Kiwi"),
+        .height = 11,
+        .weight = 381,
         .description = COMPOUND_STRING(
-            "Implements shaped like it were discovered\n"
-            "in ancient tombs. There are researchers\n"
-            "who believe this Pokémon reflected like a\n"
-            "mirror in the distant past."),
+            "A rare digimon that was almost hunted\n"
+            "to extinction with the spread of the\n"
+            "internet. Although it is a flying\n"
+            "type, it has no wings for flight."),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Bronzor,
+        .frontPic = gMonFrontPic_Kiwimon,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = 14,
         .frontAnimFrames = ANIM_FRAMES(
@@ -15168,28 +15169,28 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         ),
         .frontAnimId = ANIM_H_SLIDE_WOBBLE,
         .enemyMonElevation = 9,
-        .backPic = gMonBackPic_Bronzor,
+        .backPic = gMonBackPic_Kiwimon,
         .backPicSize = MON_COORDS_SIZE(40, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Bronzor,
-        .shinyPalette = gMonShinyPalette_Bronzor,
-        .iconSprite = gMonIcon_Bronzor,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Kiwimon,
+        .shinyPalette = gMonShinyPalette_Kiwimon,
+        .iconSprite = gMonIcon_Kiwimon,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 6, SHADOW_SIZE_S)
-        FOOTPRINT(Bronzor)
+        FOOTPRINT(Kiwimon)
         OVERWORLD(
-            sPicTable_Bronzor,
+            sPicTable_Kiwimon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Bronzor,
-            gShinyOverworldPalette_Bronzor
+            gOverworldPalette_Kiwimon,
+            gShinyOverworldPalette_Kiwimon
         )
-        .levelUpLearnset = sBronzorLevelUpLearnset,
-        .teachableLearnset = sBronzorTeachableLearnset,
+        .levelUpLearnset = sKiwimonLevelUpLearnset,
+        .teachableLearnset = sKiwimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_BRONZONG}),
     },
 
@@ -15264,7 +15265,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sBronzongLevelUpLearnset,
         .teachableLearnset = sBronzongTeachableLearnset,
     },
-#endif //P_FAMILY_BRONZOR
+#endif //P_FAMILY_KIWIMON
 
 #if P_FAMILY_CHATOT
     [SPECIES_CHATOT] =
