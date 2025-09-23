@@ -1656,10 +1656,10 @@ gCryTable::
 	cry Cry_Jijimon
 	cry Cry_Aegislash
 .endif @ P_FAMILY_PHOENIXMON
-.if P_FAMILY_SPRITZEE == TRUE
-	cry Cry_Spritzee
+.if P_FAMILY_KINGETEMON == TRUE
+	cry Cry_Kingetemon
 	cry Cry_Aromatisse
-.endif @ P_FAMILY_SPRITZEE
+.endif @ P_FAMILY_KINGETEMON
 .if P_FAMILY_SWIRLIX == TRUE
 	cry Cry_Swirlix
 	cry Cry_Slurpuff
@@ -4083,10 +4083,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Jijimon
 	cry_reverse Cry_Aegislash
 .endif @ P_FAMILY_PHOENIXMON
-.if P_FAMILY_SPRITZEE == TRUE
-	cry_reverse Cry_Spritzee
+.if P_FAMILY_KINGETEMON == TRUE
+	cry_reverse Cry_Kingetemon
 	cry_reverse Cry_Aromatisse
-.endif @ P_FAMILY_SPRITZEE
+.endif @ P_FAMILY_KINGETEMON
 .if P_FAMILY_SWIRLIX == TRUE
 	cry_reverse Cry_Swirlix
 	cry_reverse Cry_Slurpuff

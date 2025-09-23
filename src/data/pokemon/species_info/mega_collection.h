@@ -2857,42 +2857,46 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
 #endif //P_FAMILY_PHOENIXMON
 
-#if P_FAMILY_SPRITZEE
-    [SPECIES_SPRITZEE] =
+#if P_FAMILY_KINGETEMON
+    [SPECIES_KINGETEMON] =
     {
-        .baseHP        = 78,
-        .baseAttack    = 52,
-        .baseDefense   = 60,
-        .baseSpeed     = 23,
-        .baseSpAttack  = 63,
-        .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_FAIRY),
-        .catchRate = 200,
-        .expYield = 68,
-        .evYield_HP = 1,
+        .baseHP        = 105,
+        .baseAttack    = 100,
+        .baseDefense   = 100,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_FIGHTING),
+        .attribute = TYPE_VIRUS,   
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_HP = 3,
+        .evYield_Attack = 1,
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_HEALER, ABILITY_NONE, ABILITY_AROMA_VEIL },
-        .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Spritzee"),
-        .cryId = CRY_SPRITZEE,
-        .natDexNum = NATIONAL_DEX_SPRITZEE,
-        .categoryName = _("Perfume"),
-        .height = 2,
-        .weight = 5,
+        .abilities = { ABILITY_PRANKSTER, ABILITY_SHARPNESS, ABILITY_NONE }, // KINGS PRIVILEGE
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("KingEtemon"),
+        .cryId = CRY_KINGETEMON,
+        .natDexNum = NATIONAL_DEX_KINGETEMON,
+        .categoryName = _("King"),
+        .height = 23,
+        .weight = 769,
         .description = COMPOUND_STRING(
-            "In the past, rather than using perfume,\n"
-            "royal ladies carried a Spritzee that would\n"
-            "waft a fragrance they liked. Its fragrance\n"
-            "changes depending on what it has eaten."),
+            "It considers itself the 'King of Etemon'\n"
+            "much to the dismay of other Etemon. The\n"
+            "suit that KingEtemon wears has 'Great\n"
+            "King' engraved on it."),
         .pokemonScale = 682,
         .pokemonOffset = 24,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Spritzee,
+        .frontPic = gMonFrontPic_Kingetemon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 12,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2905,29 +2909,29 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ),
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 14,
-        .backPic = gMonBackPic_Spritzee,
+        .backPic = gMonBackPic_Kingetemon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Spritzee,
-        .shinyPalette = gMonShinyPalette_Spritzee,
-        .iconSprite = gMonIcon_Spritzee,
+        .palette = gMonPalette_Kingetemon,
+        .shinyPalette = gMonShinyPalette_Kingetemon,
+        .iconSprite = gMonIcon_Kingetemon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 13, SHADOW_SIZE_S)
-        FOOTPRINT(Spritzee)
+        FOOTPRINT(Kingetemon)
         OVERWORLD(
-            sPicTable_Spritzee,
+            sPicTable_Kingetemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Spritzee,
-            gShinyOverworldPalette_Spritzee
+            gOverworldPalette_Kingetemon,
+            gShinyOverworldPalette_Kingetemon
         )
-        .levelUpLearnset = sSpritzeeLevelUpLearnset,
-        .teachableLearnset = sSpritzeeTeachableLearnset,
-        .eggMoveLearnset = sSpritzeeEggMoveLearnset,
+        .levelUpLearnset = sKingetemonLevelUpLearnset,
+        .teachableLearnset = sKingetemonTeachableLearnset,
+        .eggMoveLearnset = sKingetemonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_AROMATISSE, CONDITIONS({IF_HOLD_ITEM, ITEM_SACHET})},
                                 {EVO_ITEM, ITEM_SACHET, SPECIES_AROMATISSE}),
     },
@@ -2997,7 +3001,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sAromatisseLevelUpLearnset,
         .teachableLearnset = sAromatisseTeachableLearnset,
     },
-#endif //P_FAMILY_SPRITZEE
+#endif //P_FAMILY_KINGETEMON
 
 #if P_FAMILY_SWIRLIX
     [SPECIES_SWIRLIX] =

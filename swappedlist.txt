@@ -543,5 +543,6 @@ Goldramon - Espurr
 Gryphonmon - Meowstic (Male)
 Phoenixmon - Honedge
 Jijimon - Doublade
+KingEtemon - Spritzee
 
 SPECIES NAME LENGTH MAX = 13

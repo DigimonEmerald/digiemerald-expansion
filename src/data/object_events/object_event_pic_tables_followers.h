@@ -4832,14 +4832,14 @@ static const struct SpriteFrameImage sPicTable_AegislashShield[] = {
 };*/
 #endif //P_FAMILY_PHOENIXMON
 
-#if P_FAMILY_SPRITZEE
-static const struct SpriteFrameImage sPicTable_Spritzee[] = {
-    overworld_ascending_frames(gObjectEventPic_Spritzee, 4, 4),
+#if P_FAMILY_KINGETEMON
+static const struct SpriteFrameImage sPicTable_Kingetemon[] = {
+    overworld_ascending_frames(gObjectEventPic_Kingetemon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Aromatisse[] = {
     overworld_ascending_frames(gObjectEventPic_Aromatisse, 4, 4),
 };
-#endif //P_FAMILY_SPRITZEE
+#endif //P_FAMILY_KINGETEMON
 
 #if P_FAMILY_SWIRLIX
 static const struct SpriteFrameImage sPicTable_Swirlix[] = {

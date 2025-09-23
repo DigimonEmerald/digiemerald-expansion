@@ -725,8 +725,8 @@
 #define P_FAMILY_GOLDRAMON                  TRUE
 #undef P_FAMILY_PHOENIXMON
 #define P_FAMILY_PHOENIXMON                 TRUE
-#undef P_FAMILY_SPRITZEE
-#define P_FAMILY_SPRITZEE                TRUE
+#undef P_FAMILY_KINGETEMON
+#define P_FAMILY_KINGETEMON                TRUE
 #undef P_FAMILY_SWIRLIX
 #define P_FAMILY_SWIRLIX                 TRUE
 #undef P_FAMILY_INKAY

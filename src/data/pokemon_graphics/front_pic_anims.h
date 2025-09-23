@@ -8437,8 +8437,8 @@ static const union AnimCmd sAnim_AegislashBlade_1[] =
 };
 #endif //P_FAMILY_PHOENIXMON
 
-#if P_FAMILY_SPRITZEE
-static const union AnimCmd sAnim_Spritzee_1[] =
+#if P_FAMILY_KINGETEMON
+static const union AnimCmd sAnim_Kingetemon_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 25),
@@ -8455,7 +8455,7 @@ static const union AnimCmd sAnim_Aromatisse_1[] =
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SPRITZEE
+#endif //P_FAMILY_KINGETEMON
 
 #if P_FAMILY_SWIRLIX
 static const union AnimCmd sAnim_Swirlix_1[] =
@@ -12026,10 +12026,10 @@ SINGLE_ANIMATION(Jijimon);
 SINGLE_ANIMATION(AegislashShield);
 SINGLE_ANIMATION(AegislashBlade);
 #endif //P_FAMILY_PHOENIXMON
-#if P_FAMILY_SPRITZEE
-SINGLE_ANIMATION(Spritzee);
+#if P_FAMILY_KINGETEMON
+SINGLE_ANIMATION(Kingetemon);
 SINGLE_ANIMATION(Aromatisse);
-#endif //P_FAMILY_SPRITZEE
+#endif //P_FAMILY_KINGETEMON
 #if P_FAMILY_SWIRLIX
 SINGLE_ANIMATION(Swirlix);
 SINGLE_ANIMATION(Slurpuff);

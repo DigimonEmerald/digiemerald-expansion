@@ -5054,8 +5054,8 @@ static const u16 sPhoenixmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_PHOENIXMON
 
-#if P_FAMILY_SPRITZEE
-static const u16 sSpritzeeEggMoveLearnset[] = {
+#if P_FAMILY_KINGETEMON
+static const u16 sKingetemonEggMoveLearnset[] = {
     MOVE_DISABLE,
     MOVE_WISH,
     MOVE_CAPTIVATE,
@@ -5063,7 +5063,7 @@ static const u16 sSpritzeeEggMoveLearnset[] = {
     MOVE_NASTY_PLOT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SPRITZEE
+#endif //P_FAMILY_KINGETEMON
 
 #if P_FAMILY_SWIRLIX
 static const u16 sSwirlixEggMoveLearnset[] = {

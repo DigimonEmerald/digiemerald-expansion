@@ -27338,8 +27338,8 @@ static const u16 sAegislashTeachableLearnset[] = {
 };
 #endif //P_FAMILY_PHOENIXMON
 
-#if P_FAMILY_SPRITZEE
-static const u16 sSpritzeeTeachableLearnset[] = {
+#if P_FAMILY_KINGETEMON
+static const u16 sKingetemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
@@ -27393,7 +27393,7 @@ static const u16 sAromatisseTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SPRITZEE
+#endif //P_FAMILY_KINGETEMON
 
 #if P_FAMILY_SWIRLIX
 static const u16 sSwirlixTeachableLearnset[] = {

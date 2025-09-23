@@ -4315,15 +4315,15 @@ Cry_Aegislash::
 	.incbin "sound/direct_sound_samples/cries/aegislash.bin"
 .endif @ P_FAMILY_PHOENIXMON
 
-.if P_FAMILY_SPRITZEE == TRUE
+.if P_FAMILY_KINGETEMON == TRUE
 	.align 2
-Cry_Spritzee::
-	.incbin "sound/direct_sound_samples/cries/spritzee.bin"
+Cry_Kingetemon::
+	.incbin "sound/direct_sound_samples/cries/kingetemon.bin"
 
 	.align 2
 Cry_Aromatisse::
 	.incbin "sound/direct_sound_samples/cries/aromatisse.bin"
-.endif @ P_FAMILY_SPRITZEE
+.endif @ P_FAMILY_KINGETEMON
 
 .if P_FAMILY_SWIRLIX == TRUE
 	.align 2

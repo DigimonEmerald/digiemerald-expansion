@@ -19987,20 +19987,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_PHOENIXMON
 
-#if P_FAMILY_SPRITZEE
-    const u32 gMonFrontPic_Spritzee[] = INCBIN_U32("graphics/pokemon/spritzee/anim_front.4bpp.smol");
-    const u16 gMonPalette_Spritzee[] = INCBIN_U16("graphics/pokemon/spritzee/normal.gbapal");
-    const u32 gMonBackPic_Spritzee[] = INCBIN_U32("graphics/pokemon/spritzee/back.4bpp.smol");
-    const u16 gMonShinyPalette_Spritzee[] = INCBIN_U16("graphics/pokemon/spritzee/shiny.gbapal");
-    const u8 gMonIcon_Spritzee[] = INCBIN_U8("graphics/pokemon/spritzee/icon.4bpp");
+#if P_FAMILY_KINGETEMON
+    const u32 gMonFrontPic_Kingetemon[] = INCBIN_U32("graphics/pokemon/kingetemon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Kingetemon[] = INCBIN_U16("graphics/pokemon/kingetemon/normal.gbapal");
+    const u32 gMonBackPic_Kingetemon[] = INCBIN_U32("graphics/pokemon/kingetemon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Kingetemon[] = INCBIN_U16("graphics/pokemon/kingetemon/shiny.gbapal");
+    const u8 gMonIcon_Kingetemon[] = INCBIN_U8("graphics/pokemon/kingetemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Spritzee[] = INCBIN_U8("graphics/pokemon/spritzee/footprint.1bpp");
+    const u8 gMonFootprint_Kingetemon[] = INCBIN_U8("graphics/pokemon/kingetemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Spritzee[] = INCBIN_COMP("graphics/pokemon/spritzee/overworld.4bpp");
+    const u32 gObjectEventPic_Kingetemon[] = INCBIN_COMP("graphics/pokemon/kingetemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Spritzee[] = INCBIN_U16("graphics/pokemon/spritzee/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Spritzee[] = INCBIN_U16("graphics/pokemon/spritzee/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Kingetemon[] = INCBIN_U16("graphics/pokemon/kingetemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Kingetemon[] = INCBIN_U16("graphics/pokemon/kingetemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -20019,7 +20019,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Aromatisse[] = INCBIN_U16("graphics/pokemon/aromatisse/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_SPRITZEE
+#endif //P_FAMILY_KINGETEMON
 
 #if P_FAMILY_SWIRLIX
     const u32 gMonFrontPic_Swirlix[] = INCBIN_U32("graphics/pokemon/swirlix/anim_front.4bpp.smol");

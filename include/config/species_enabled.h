@@ -400,7 +400,7 @@
 #define P_FAMILY_FURFROU                 P_GEN_6_POKEMON
 #define P_FAMILY_GOLDRAMON                  P_GEN_6_POKEMON
 #define P_FAMILY_PHOENIXMON                 P_GEN_6_POKEMON
-#define P_FAMILY_SPRITZEE                P_GEN_6_POKEMON
+#define P_FAMILY_KINGETEMON                P_GEN_6_POKEMON
 #define P_FAMILY_SWIRLIX                 P_GEN_6_POKEMON
 #define P_FAMILY_INKAY                   P_GEN_6_POKEMON
 #define P_FAMILY_BINACLE                 P_GEN_6_POKEMON
