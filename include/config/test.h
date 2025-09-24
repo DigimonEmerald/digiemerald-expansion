@@ -486,8 +486,8 @@
 #define P_FAMILY_JUNGLEMOJYAMON                  TRUE
 #undef P_FAMILY_KIWIMON
 #define P_FAMILY_KIWIMON                 TRUE
-#undef P_FAMILY_CHATOT
-#define P_FAMILY_CHATOT                  TRUE
+#undef P_FAMILY_MUSYAMON
+#define P_FAMILY_MUSYAMON                  TRUE
 #undef P_FAMILY_SPIRITOMB
 #define P_FAMILY_SPIRITOMB               TRUE
 #undef P_FAMILY_GIBLE

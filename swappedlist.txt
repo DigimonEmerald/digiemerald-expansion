@@ -448,6 +448,7 @@ JungleMojyamon - Stunky
 ShellNumemon - Skuntank
 Kiwimon - Bronzor
 MoriShellmon - Bronzong
+Musyamon - Chatot
 
 Ultimate List
 

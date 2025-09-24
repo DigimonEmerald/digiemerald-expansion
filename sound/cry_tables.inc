@@ -1168,9 +1168,9 @@ gCryTable::
 	cry Cry_Kiwimon
 	cry Cry_Morishellmon
 .endif @ P_FAMILY_KIWIMON
-.if P_FAMILY_CHATOT == TRUE
-	cry Cry_Chatot
-.endif @ P_FAMILY_CHATOT
+.if P_FAMILY_MUSYAMON == TRUE
+	cry Cry_Musyamon
+.endif @ P_FAMILY_MUSYAMON
 .if P_FAMILY_SPIRITOMB == TRUE
 	cry Cry_Spiritomb
 .endif @ P_FAMILY_SPIRITOMB
@@ -3595,9 +3595,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Kiwimon
 	cry_reverse Cry_Morishellmon
 .endif @ P_FAMILY_KIWIMON
-.if P_FAMILY_CHATOT == TRUE
-	cry_reverse Cry_Chatot
-.endif @ P_FAMILY_CHATOT
+.if P_FAMILY_MUSYAMON == TRUE
+	cry_reverse Cry_Musyamon
+.endif @ P_FAMILY_MUSYAMON
 .if P_FAMILY_SPIRITOMB == TRUE
 	cry_reverse Cry_Spiritomb
 .endif @ P_FAMILY_SPIRITOMB

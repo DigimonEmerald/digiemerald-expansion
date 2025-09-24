@@ -19676,8 +19676,8 @@ static const u16 sMorishellmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_KIWIMON
 
-#if P_FAMILY_CHATOT
-static const u16 sChatotTeachableLearnset[] = {
+#if P_FAMILY_MUSYAMON
+static const u16 sMusyamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
@@ -19700,7 +19700,7 @@ static const u16 sChatotTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CHATOT
+#endif //P_FAMILY_MUSYAMON
 
 #if P_FAMILY_SPIRITOMB
 static const u16 sSpiritombTeachableLearnset[] = {

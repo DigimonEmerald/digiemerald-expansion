@@ -15268,43 +15268,45 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_KIWIMON
 
-#if P_FAMILY_CHATOT
-    [SPECIES_CHATOT] =
+#if P_FAMILY_MUSYAMON
+    [SPECIES_MUSYAMON] =
     {
-        .baseHP        = 76,
-        .baseAttack    = 65,
-        .baseDefense   = 45,
-        .baseSpeed     = 91,
-        .baseSpAttack  = 92,
-        .baseSpDefense = 42,
-        .types = MON_TYPES(TYPE_NORMAL, TYPE_FLYING),
-        .catchRate = 30,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 144 : 107,
+        .baseHP        = 60,
+        .baseAttack    = 100,
+        .baseDefense   = 50,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 45,
+        .types = MON_TYPES(TYPE_FIGHTING),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
         .evYield_Attack = 1,
+        .evYield_Speed = 3,
         .itemRare = ITEM_METRONOME,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = 35,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_KEEN_EYE, ABILITY_TANGLED_FEET, ABILITY_BIG_PECKS },
-        .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Chatot"),
-        .cryId = CRY_CHATOT,
-        .natDexNum = NATIONAL_DEX_CHATOT,
-        .categoryName = _("Music Note"),
-        .height = 5,
-        .weight = 19,
+        .abilities = { ABILITY_QUICK_DRAW, ABILITY_HYPER_CUTTER, ABILITY_DOWNLOAD },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Musyamon"),
+        .cryId = CRY_MUSYAMON,
+        .natDexNum = NATIONAL_DEX_MUSYAMON,
+        .categoryName = _("Samurai"),
+        .height = 24,
+        .weight = 855,
         .description = COMPOUND_STRING(
-            "It mimics the cries of other Pokémon to\n"
-            "trick them into thinking it's one of them.\n"
-            "This way they won't attack it. It can\n"
-            "also learn and speak human words."),
+            "Musyamon was built from the data of an\n"
+            "overseas video game. It lives to for\n"
+            "endless battle giving its rugged\n"
+            "look and rough demeanor."),
         .pokemonScale = 432,
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Chatot,
+        .frontPic = gMonFrontPic_Musyamon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
         .frontAnimFrames = ANIM_FRAMES(
@@ -15326,31 +15328,31 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_SHAKE_TWICE,
-        .backPic = gMonBackPic_Chatot,
+        .backPic = gMonBackPic_Musyamon,
         .backPicSize = MON_COORDS_SIZE(48, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Chatot,
-        .shinyPalette = gMonShinyPalette_Chatot,
-        .iconSprite = gMonIcon_Chatot,
+        .palette = gMonPalette_Musyamon,
+        .shinyPalette = gMonShinyPalette_Musyamon,
+        .iconSprite = gMonIcon_Musyamon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 3, SHADOW_SIZE_S)
-        FOOTPRINT(Chatot)
+        FOOTPRINT(Musyamon)
         OVERWORLD(
-            sPicTable_Chatot,
+            sPicTable_Musyamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Chatot,
-            gShinyOverworldPalette_Chatot
+            gOverworldPalette_Musyamon,
+            gShinyOverworldPalette_Musyamon
         )
-        .levelUpLearnset = sChatotLevelUpLearnset,
-        .teachableLearnset = sChatotTeachableLearnset,
-        .eggMoveLearnset = sChatotEggMoveLearnset,
+        .levelUpLearnset = sMusyamonLevelUpLearnset,
+        .teachableLearnset = sMusyamonTeachableLearnset,
+        .eggMoveLearnset = sMusyamonEggMoveLearnset,
     },
-#endif //P_FAMILY_CHATOT
+#endif //P_FAMILY_MUSYAMON
 
 #if P_FAMILY_SPIRITOMB
     [SPECIES_SPIRITOMB] =

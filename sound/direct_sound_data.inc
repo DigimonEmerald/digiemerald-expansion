@@ -3120,11 +3120,11 @@ Cry_Morishellmon::
 	.incbin "sound/direct_sound_samples/cries/morishellmon.bin"
 .endif @ P_FAMILY_KIWIMON
 
-.if P_FAMILY_CHATOT == TRUE
+.if P_FAMILY_MUSYAMON == TRUE
 	.align 2
-Cry_Chatot::
-	.incbin "sound/direct_sound_samples/cries/chatot.bin"
-.endif @ P_FAMILY_CHATOT
+Cry_Musyamon::
+	.incbin "sound/direct_sound_samples/cries/musyamon.bin"
+.endif @ P_FAMILY_MUSYAMON
 
 .if P_FAMILY_SPIRITOMB == TRUE
 	.align 2

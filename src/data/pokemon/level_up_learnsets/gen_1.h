@@ -8124,8 +8124,8 @@ static const struct LevelUpMove sMorishellmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_KIWIMON
 
-#if P_FAMILY_CHATOT
-static const struct LevelUpMove sChatotLevelUpLearnset[] = {
+#if P_FAMILY_MUSYAMON
+static const struct LevelUpMove sMusyamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_PECK),
     LEVEL_UP_MOVE( 5, MOVE_GROWL),
     LEVEL_UP_MOVE( 9, MOVE_MIRROR_MOVE),
@@ -8140,7 +8140,7 @@ static const struct LevelUpMove sChatotLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_HYPER_VOICE),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CHATOT
+#endif //P_FAMILY_MUSYAMON
 
 #if P_FAMILY_SPIRITOMB
 static const struct LevelUpMove sSpiritombLevelUpLearnset[] = {

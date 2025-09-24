@@ -3724,8 +3724,8 @@ static const u16 sJunglemojyamonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_JUNGLEMOJYAMON
 
-#if P_FAMILY_CHATOT
-static const u16 sChatotEggMoveLearnset[] = {
+#if P_FAMILY_MUSYAMON
+static const u16 sMusyamonEggMoveLearnset[] = {
     MOVE_ENCORE,
     MOVE_NIGHT_SHADE,
     MOVE_AGILITY,
@@ -3738,7 +3738,7 @@ static const u16 sChatotEggMoveLearnset[] = {
     MOVE_BOOMBURST,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CHATOT
+#endif //P_FAMILY_MUSYAMON
 
 #if P_FAMILY_SPIRITOMB
 static const u16 sSpiritombEggMoveLearnset[] = {

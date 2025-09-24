@@ -455,7 +455,7 @@
 #define SPECIES_BONSLY                                  438
 #define SPECIES_MIME_JR                                 439
 #define SPECIES_HAPPINY                                 440
-#define SPECIES_CHATOT                                  441
+#define SPECIES_MUSYAMON                                  441
 #define SPECIES_SPIRITOMB                               442
 #define SPECIES_GIBLE                                   443
 #define SPECIES_GABITE                                  444

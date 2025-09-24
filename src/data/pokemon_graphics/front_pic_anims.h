@@ -5766,8 +5766,8 @@ static const union AnimCmd sAnim_Morishellmon_1[] =
 };
 #endif //P_FAMILY_KIWIMON
 
-#if P_FAMILY_CHATOT
-static const union AnimCmd sAnim_Chatot_1[] =
+#if P_FAMILY_MUSYAMON
+static const union AnimCmd sAnim_Musyamon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 5),
@@ -5787,7 +5787,7 @@ static const union AnimCmd sAnim_Chatot_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_CHATOT
+#endif //P_FAMILY_MUSYAMON
 
 #if P_FAMILY_SPIRITOMB
 static const union AnimCmd sAnim_Spiritomb_1[] =
@@ -11500,9 +11500,9 @@ SINGLE_ANIMATION(Shellnumemon);
 SINGLE_ANIMATION(Kiwimon);
 SINGLE_ANIMATION(Morishellmon);
 #endif //P_FAMILY_KIWIMON
-#if P_FAMILY_CHATOT
-SINGLE_ANIMATION(Chatot);
-#endif //P_FAMILY_CHATOT
+#if P_FAMILY_MUSYAMON
+SINGLE_ANIMATION(Musyamon);
+#endif //P_FAMILY_MUSYAMON
 #if P_FAMILY_SPIRITOMB
 SINGLE_ANIMATION(Spiritomb);
 #endif //P_FAMILY_SPIRITOMB

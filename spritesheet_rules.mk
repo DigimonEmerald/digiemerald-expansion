@@ -2520,7 +2520,7 @@ $(POKEMONGFXDIR)/mime_jr/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/happiny/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/chatot/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/musyamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/spiritomb/overworld.4bpp: %.4bpp: %.png

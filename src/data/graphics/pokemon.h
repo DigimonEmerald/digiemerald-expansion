@@ -14943,23 +14943,23 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_KIWIMON
 
-#if P_FAMILY_CHATOT
-    const u32 gMonFrontPic_Chatot[] = INCBIN_U32("graphics/pokemon/chatot/anim_front.4bpp.smol");
-    const u16 gMonPalette_Chatot[] = INCBIN_U16("graphics/pokemon/chatot/normal.gbapal");
-    const u32 gMonBackPic_Chatot[] = INCBIN_U32("graphics/pokemon/chatot/back.4bpp.smol");
-    const u16 gMonShinyPalette_Chatot[] = INCBIN_U16("graphics/pokemon/chatot/shiny.gbapal");
-    const u8 gMonIcon_Chatot[] = INCBIN_U8("graphics/pokemon/chatot/icon.4bpp");
+#if P_FAMILY_MUSYAMON
+    const u32 gMonFrontPic_Musyamon[] = INCBIN_U32("graphics/pokemon/musyamon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Musyamon[] = INCBIN_U16("graphics/pokemon/musyamon/normal.gbapal");
+    const u32 gMonBackPic_Musyamon[] = INCBIN_U32("graphics/pokemon/musyamon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Musyamon[] = INCBIN_U16("graphics/pokemon/musyamon/shiny.gbapal");
+    const u8 gMonIcon_Musyamon[] = INCBIN_U8("graphics/pokemon/musyamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Chatot[] = INCBIN_U8("graphics/pokemon/chatot/footprint.1bpp");
+    const u8 gMonFootprint_Musyamon[] = INCBIN_U8("graphics/pokemon/musyamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Chatot[] = INCBIN_COMP("graphics/pokemon/chatot/overworld.4bpp");
+    const u32 gObjectEventPic_Musyamon[] = INCBIN_COMP("graphics/pokemon/musyamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Chatot[] = INCBIN_U16("graphics/pokemon/chatot/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Chatot[] = INCBIN_U16("graphics/pokemon/chatot/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Musyamon[] = INCBIN_U16("graphics/pokemon/musyamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Musyamon[] = INCBIN_U16("graphics/pokemon/musyamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_CHATOT
+#endif //P_FAMILY_MUSYAMON
 
 #if P_FAMILY_SPIRITOMB
     const u32 gMonFrontPic_Spiritomb[] = INCBIN_U32("graphics/pokemon/spiritomb/anim_front.4bpp.smol");
