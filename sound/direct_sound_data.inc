@@ -3645,15 +3645,15 @@ Cry_Knightmon::
 	.incbin "sound/direct_sound_samples/cries/knightmon.bin"
 .endif @ P_FAMILY_KNIGHTMON
 
-.if P_FAMILY_DWEBBLE == TRUE
+.if P_FAMILY_MUMMYMON == TRUE
 	.align 2
-Cry_Dwebble::
-	.incbin "sound/direct_sound_samples/cries/dwebble.bin"
+Cry_Mummymon::
+	.incbin "sound/direct_sound_samples/cries/mummymon.bin"
 
 	.align 2
 Cry_Crustle::
 	.incbin "sound/direct_sound_samples/cries/crustle.bin"
-.endif @ P_FAMILY_DWEBBLE
+.endif @ P_FAMILY_MUMMYMON
 
 .if P_FAMILY_SCRAGGY == TRUE
 	.align 2

@@ -5400,43 +5400,46 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_KNIGHTMON
 
-#if P_FAMILY_DWEBBLE
-    [SPECIES_DWEBBLE] =
+#if P_FAMILY_MUMMYMON
+    [SPECIES_MUMMYMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 65,
-        .baseDefense   = 85,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 35,
-        .types = MON_TYPES(TYPE_BUG, TYPE_ROCK),
-        .catchRate = 190,
-        .expYield = 65,
-        .evYield_Defense = 1,
+        .baseHP        = 90,
+        .baseAttack    = 110,
+        .baseDefense   = 55,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_DARK, TYPE_GHOST),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_HP = 1,
+        .evYield_Attack = 3,
+        .evYield_SpDefense = 1,
         .itemRare = ITEM_HARD_STONE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_STURDY, ABILITY_SHELL_ARMOR, ABILITY_WEAK_ARMOR },
-        .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Dwebble"),
-        .cryId = CRY_DWEBBLE,
-        .natDexNum = NATIONAL_DEX_DWEBBLE,
-        .categoryName = _("Rock Inn"),
-        .height = 3,
-        .weight = 145,
+        .abilities = { ABILITY_MUMMY, ABILITY_SHADOW_TAG, ABILITY_SNIPER },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Mummymon"),
+        .cryId = CRY_MUMMYMON,
+        .natDexNum = NATIONAL_DEX_MUMMYMON,
+        .categoryName = _("Necromancer"),
+        .height = 28,
+        .weight = 1477,
         .description = COMPOUND_STRING(
-            "It makes a hole in a stone of a suitable\n"
-            "size. If that rock breaks, the Pokémon\n"
-            "remains agitated until it locates\n"
-            "a replacement."),
+            "Mummymon has gained the title of\n"
+            "'Necromaner' because of its ability to\n"
+            "summon and manipulate the souls of\n"
+            "annihilated Digimon."),
         .pokemonScale = 530,
         .pokemonOffset = 15,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Dwebble,
+        .frontPic = gMonFrontPic_Mummymon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 14,
         .frontAnimFrames = ANIM_FRAMES(
@@ -5451,29 +5454,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 1),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Dwebble,
+        .backPic = gMonBackPic_Mummymon,
         .backPicSize = MON_COORDS_SIZE(56, 32),
         .backPicYOffset = 17,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Dwebble,
-        .shinyPalette = gMonShinyPalette_Dwebble,
-        .iconSprite = gMonIcon_Dwebble,
+        .palette = gMonPalette_Mummymon,
+        .shinyPalette = gMonShinyPalette_Mummymon,
+        .iconSprite = gMonIcon_Mummymon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(-1, -2, SHADOW_SIZE_S)
-        FOOTPRINT(Dwebble)
+        FOOTPRINT(Mummymon)
         OVERWORLD(
-            sPicTable_Dwebble,
+            sPicTable_Mummymon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Dwebble,
-            gShinyOverworldPalette_Dwebble
+            gOverworldPalette_Mummymon,
+            gShinyOverworldPalette_Mummymon
         )
-        .levelUpLearnset = sDwebbleLevelUpLearnset,
-        .teachableLearnset = sDwebbleTeachableLearnset,
-        .eggMoveLearnset = sDwebbleEggMoveLearnset,
+        .levelUpLearnset = sMummymonLevelUpLearnset,
+        .teachableLearnset = sMummymonTeachableLearnset,
+        .eggMoveLearnset = sMummymonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_CRUSTLE}),
     },
 
@@ -5547,7 +5550,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sCrustleLevelUpLearnset,
         .teachableLearnset = sCrustleTeachableLearnset,
     },
-#endif //P_FAMILY_DWEBBLE
+#endif //P_FAMILY_MUMMYMON
 
 #if P_FAMILY_SCRAGGY
     [SPECIES_SCRAGGY] =

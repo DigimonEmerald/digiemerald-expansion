@@ -333,7 +333,7 @@
 #define P_FAMILY_KINGSUKAMON                 P_GEN_5_POKEMON
 #define P_FAMILY_CHERRYMON                P_GEN_5_POKEMON
 #define P_FAMILY_KNIGHTMON                P_GEN_5_POKEMON
-#define P_FAMILY_DWEBBLE                 P_GEN_5_POKEMON
+#define P_FAMILY_MUMMYMON                 P_GEN_5_POKEMON
 #define P_FAMILY_SCRAGGY                 P_GEN_5_POKEMON
 #define P_FAMILY_SIGILYPH                P_GEN_5_POKEMON
 #define P_FAMILY_YAMASK                  P_GEN_5_POKEMON

@@ -23099,8 +23099,8 @@ static const u16 sKnightmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_KNIGHTMON
 
-#if P_FAMILY_DWEBBLE
-static const u16 sDwebbleTeachableLearnset[] = {
+#if P_FAMILY_MUMMYMON
+static const u16 sMummymonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_COUNTER,
@@ -23154,7 +23154,7 @@ static const u16 sCrustleTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DWEBBLE
+#endif //P_FAMILY_MUMMYMON
 
 #if P_FAMILY_SCRAGGY
 static const u16 sScraggyTeachableLearnset[] = {

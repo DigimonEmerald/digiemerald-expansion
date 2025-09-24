@@ -576,7 +576,7 @@
 #define SPECIES_DARMANITAN                              SPECIES_DARMANITAN_STANDARD
 #define SPECIES_DARMANITAN_STANDARD                     555
 #define SPECIES_KNIGHTMON                                556
-#define SPECIES_DWEBBLE                                 557
+#define SPECIES_MUMMYMON                                 557
 #define SPECIES_CRUSTLE                                 558
 #define SPECIES_SCRAGGY                                 559
 #define SPECIES_SCRAFTY                                 560

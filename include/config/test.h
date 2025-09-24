@@ -592,8 +592,8 @@
 #define P_FAMILY_CHERRYMON                TRUE
 #undef P_FAMILY_KNIGHTMON
 #define P_FAMILY_KNIGHTMON                TRUE
-#undef P_FAMILY_DWEBBLE
-#define P_FAMILY_DWEBBLE                 TRUE
+#undef P_FAMILY_MUMMYMON
+#define P_FAMILY_MUMMYMON                 TRUE
 #undef P_FAMILY_SCRAGGY
 #define P_FAMILY_SCRAGGY                 TRUE
 #undef P_FAMILY_SIGILYPH

@@ -4350,8 +4350,8 @@ static const u16 sKnightmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_KNIGHTMON
 
-#if P_FAMILY_DWEBBLE
-static const u16 sDwebbleEggMoveLearnset[] = {
+#if P_FAMILY_MUMMYMON
+static const u16 sMummymonEggMoveLearnset[] = {
     MOVE_ENDURE,
     MOVE_IRON_DEFENSE,
     MOVE_NIGHT_SLASH,
@@ -4364,7 +4364,7 @@ static const u16 sDwebbleEggMoveLearnset[] = {
     MOVE_ROTOTILLER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DWEBBLE
+#endif //P_FAMILY_MUMMYMON
 
 #if P_FAMILY_SCRAGGY
 static const u16 sScraggyEggMoveLearnset[] = {

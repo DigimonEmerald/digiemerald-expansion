@@ -17115,20 +17115,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_KNIGHTMON
 
-#if P_FAMILY_DWEBBLE
-    const u32 gMonFrontPic_Dwebble[] = INCBIN_U32("graphics/pokemon/dwebble/anim_front.4bpp.smol");
-    const u16 gMonPalette_Dwebble[] = INCBIN_U16("graphics/pokemon/dwebble/normal.gbapal");
-    const u32 gMonBackPic_Dwebble[] = INCBIN_U32("graphics/pokemon/dwebble/back.4bpp.smol");
-    const u16 gMonShinyPalette_Dwebble[] = INCBIN_U16("graphics/pokemon/dwebble/shiny.gbapal");
-    const u8 gMonIcon_Dwebble[] = INCBIN_U8("graphics/pokemon/dwebble/icon.4bpp");
+#if P_FAMILY_MUMMYMON
+    const u32 gMonFrontPic_Mummymon[] = INCBIN_U32("graphics/pokemon/mummymon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Mummymon[] = INCBIN_U16("graphics/pokemon/mummymon/normal.gbapal");
+    const u32 gMonBackPic_Mummymon[] = INCBIN_U32("graphics/pokemon/mummymon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Mummymon[] = INCBIN_U16("graphics/pokemon/mummymon/shiny.gbapal");
+    const u8 gMonIcon_Mummymon[] = INCBIN_U8("graphics/pokemon/mummymon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Dwebble[] = INCBIN_U8("graphics/pokemon/dwebble/footprint.1bpp");
+    const u8 gMonFootprint_Mummymon[] = INCBIN_U8("graphics/pokemon/mummymon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Dwebble[] = INCBIN_COMP("graphics/pokemon/dwebble/overworld.4bpp");
+    const u32 gObjectEventPic_Mummymon[] = INCBIN_COMP("graphics/pokemon/mummymon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Dwebble[] = INCBIN_U16("graphics/pokemon/dwebble/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Dwebble[] = INCBIN_U16("graphics/pokemon/dwebble/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Mummymon[] = INCBIN_U16("graphics/pokemon/mummymon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Mummymon[] = INCBIN_U16("graphics/pokemon/mummymon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -17147,7 +17147,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Crustle[] = INCBIN_U16("graphics/pokemon/crustle/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_DWEBBLE
+#endif //P_FAMILY_MUMMYMON
 
 #if P_FAMILY_SCRAGGY
     const u32 gMonFrontPic_Scraggy[] = INCBIN_U32("graphics/pokemon/scraggy/anim_front.4bpp.smol");

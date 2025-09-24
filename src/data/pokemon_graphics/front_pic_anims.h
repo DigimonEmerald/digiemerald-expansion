@@ -6941,8 +6941,8 @@ static const union AnimCmd sAnim_Knightmon_1[] =
 };
 #endif //P_FAMILY_KNIGHTMON
 
-#if P_FAMILY_DWEBBLE
-static const union AnimCmd sAnim_Dwebble_1[] =
+#if P_FAMILY_MUMMYMON
+static const union AnimCmd sAnim_Mummymon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 5),
@@ -6966,7 +6966,7 @@ static const union AnimCmd sAnim_Crustle_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_DWEBBLE
+#endif //P_FAMILY_MUMMYMON
 
 #if P_FAMILY_SCRAGGY
 static const union AnimCmd sAnim_Scraggy_1[] =
@@ -11738,10 +11738,10 @@ SINGLE_ANIMATION(DarmanitanGalarZen);
 #if P_FAMILY_KNIGHTMON
 SINGLE_ANIMATION(Knightmon);
 #endif //P_FAMILY_KNIGHTMON
-#if P_FAMILY_DWEBBLE
-SINGLE_ANIMATION(Dwebble);
+#if P_FAMILY_MUMMYMON
+SINGLE_ANIMATION(Mummymon);
 SINGLE_ANIMATION(Crustle);
-#endif //P_FAMILY_DWEBBLE
+#endif //P_FAMILY_MUMMYMON
 #if P_FAMILY_SCRAGGY
 SINGLE_ANIMATION(Scraggy);
 SINGLE_ANIMATION(Scrafty);

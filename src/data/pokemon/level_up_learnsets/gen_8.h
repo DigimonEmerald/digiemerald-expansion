@@ -13140,8 +13140,8 @@ static const struct LevelUpMove sKnightmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_KNIGHTMON
 
-#if P_FAMILY_DWEBBLE
-static const struct LevelUpMove sDwebbleLevelUpLearnset[] = {
+#if P_FAMILY_MUMMYMON
+static const struct LevelUpMove sMummymonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 4, MOVE_WITHDRAW),
@@ -13176,7 +13176,7 @@ static const struct LevelUpMove sCrustleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(56, MOVE_ROCK_WRECKER),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_DWEBBLE
+#endif //P_FAMILY_MUMMYMON
 
 #if P_FAMILY_SCRAGGY
 static const struct LevelUpMove sScraggyLevelUpLearnset[] = {

@@ -2931,7 +2931,7 @@ $(POKEMONGFXDIR)/darmanitan/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/knightmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/dwebble/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/mummymon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/crustle/overworld.4bpp: %.4bpp: %.png
