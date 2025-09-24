@@ -4325,15 +4325,15 @@ Cry_Millenniummon::
 	.incbin "sound/direct_sound_samples/cries/millenniummon.bin"
 .endif @ P_FAMILY_KINGETEMON
 
-.if P_FAMILY_SWIRLIX == TRUE
+.if P_FAMILY_MACHINEDRAMON == TRUE
 	.align 2
-Cry_Swirlix::
-	.incbin "sound/direct_sound_samples/cries/swirlix.bin"
+Cry_Machinedramon::
+	.incbin "sound/direct_sound_samples/cries/machinedramon.bin"
 
 	.align 2
 Cry_Slurpuff::
 	.incbin "sound/direct_sound_samples/cries/slurpuff.bin"
-.endif @ P_FAMILY_SWIRLIX
+.endif @ P_FAMILY_MACHINEDRAMON
 
 .if P_FAMILY_INKAY == TRUE
 	.align 2

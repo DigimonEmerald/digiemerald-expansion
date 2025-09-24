@@ -447,6 +447,7 @@ Ninjamon - Purugly
 JungleMojyamon - Stunky
 ShellNumemon - Skuntank
 Kiwimon - Bronzor
+MoriShellmon - Bronzong
 
 Ultimate List
 
@@ -547,5 +548,6 @@ Phoenixmon - Honedge
 Jijimon - Doublade
 KingEtemon - Spritzee
 Millenniummon - Aromatisse
+Machinedramon - Swirlix
 
 SPECIES NAME LENGTH MAX = 13

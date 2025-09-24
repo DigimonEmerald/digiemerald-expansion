@@ -5065,8 +5065,8 @@ static const u16 sKingetemonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_KINGETEMON
 
-#if P_FAMILY_SWIRLIX
-static const u16 sSwirlixEggMoveLearnset[] = {
+#if P_FAMILY_MACHINEDRAMON
+static const u16 sMachinedramonEggMoveLearnset[] = {
     MOVE_AFTER_YOU,
     MOVE_YAWN,
     MOVE_BELLY_DRUM,
@@ -5074,7 +5074,7 @@ static const u16 sSwirlixEggMoveLearnset[] = {
     MOVE_STICKY_WEB,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SWIRLIX
+#endif //P_FAMILY_MACHINEDRAMON
 
 #if P_FAMILY_INKAY
 static const u16 sInkayEggMoveLearnset[] = {

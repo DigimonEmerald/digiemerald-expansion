@@ -3006,42 +3006,44 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
 #endif //P_FAMILY_KINGETEMON
 
-#if P_FAMILY_SWIRLIX
-    [SPECIES_SWIRLIX] =
+#if P_FAMILY_MACHINEDRAMON
+    [SPECIES_MACHINEDRAMON] =
     {
-        .baseHP        = 62,
-        .baseAttack    = 48,
-        .baseDefense   = 66,
-        .baseSpeed     = 49,
-        .baseSpAttack  = 59,
-        .baseSpDefense = 57,
-        .types = MON_TYPES(TYPE_FAIRY),
-        .catchRate = 200,
-        .expYield = 68,
+        .baseHP        = 130,
+        .baseAttack    = 120,
+        .baseDefense   = 120,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_STEEL, TYPE_DRAGON),
+        .attribute = TYPE_VIRUS,   
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_HP = 4,
+        .evYield_Attack = 1,
         .evYield_Defense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_SWEET_VEIL, ABILITY_NONE, ABILITY_UNBURDEN },
-        .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Swirlix"),
-        .cryId = CRY_SWIRLIX,
-        .natDexNum = NATIONAL_DEX_SWIRLIX,
-        .categoryName = _("Cotton Candy"),
-        .height = 4,
-        .weight = 35,
+        .abilities = { ABILITY_FULL_METAL_BODY, ABILITY_BULLETPROOF, ABILITY_MEGA_LAUNCHER },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Machinedramon"),
+        .cryId = CRY_MACHINEDRAMON,
+        .natDexNum = NATIONAL_DEX_MACHINEDRAMON,
+        .categoryName = _("Cyborg"),
+        .height = 145,
+        .weight = 9363,
         .description = COMPOUND_STRING(
-            "Because it eats nothing but sweets, its\n"
-            "fur is as sticky sweet as cotton candy.\n"
-            "To entangle its opponents in battle, it\n"
-            "extrudes sticky white threads."),
+            "Built by synthesizing the parts of many\n"
+            "Cyborg Digimon, Machindramon is thought\n"
+            "to be the pinnacle of Cyborg Digimon."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Swirlix,
+        .frontPic = gMonFrontPic_Machinedramon,
         .frontPicSize = MON_COORDS_SIZE(40, 40),
         .frontPicYOffset = 14,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3054,29 +3056,29 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
-        .backPic = gMonBackPic_Swirlix,
+        .backPic = gMonBackPic_Machinedramon,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_H_SPRING,
-        .palette = gMonPalette_Swirlix,
-        .shinyPalette = gMonShinyPalette_Swirlix,
-        .iconSprite = gMonIcon_Swirlix,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Machinedramon,
+        .shinyPalette = gMonShinyPalette_Machinedramon,
+        .iconSprite = gMonIcon_Machinedramon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, -1, SHADOW_SIZE_S)
-        FOOTPRINT(Swirlix)
+        FOOTPRINT(Machinedramon)
         OVERWORLD(
-            sPicTable_Swirlix,
+            sPicTable_Machinedramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Swirlix,
-            gShinyOverworldPalette_Swirlix
+            gOverworldPalette_Machinedramon,
+            gShinyOverworldPalette_Machinedramon
         )
-        .levelUpLearnset = sSwirlixLevelUpLearnset,
-        .teachableLearnset = sSwirlixTeachableLearnset,
-        .eggMoveLearnset = sSwirlixEggMoveLearnset,
+        .levelUpLearnset = sMachinedramonLevelUpLearnset,
+        .teachableLearnset = sMachinedramonTeachableLearnset,
+        .eggMoveLearnset = sMachinedramonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_SLURPUFF, CONDITIONS({IF_HOLD_ITEM, ITEM_WHIPPED_DREAM})},
                                 {EVO_ITEM, ITEM_WHIPPED_DREAM, SPECIES_SLURPUFF}),
     },
@@ -3149,7 +3151,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sSlurpuffLevelUpLearnset,
         .teachableLearnset = sSlurpuffTeachableLearnset,
     },
-#endif //P_FAMILY_SWIRLIX
+#endif //P_FAMILY_MACHINEDRAMON
 
 #if P_FAMILY_INKAY
     [SPECIES_INKAY] =

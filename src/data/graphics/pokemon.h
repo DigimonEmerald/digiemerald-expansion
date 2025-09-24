@@ -20021,20 +20021,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_KINGETEMON
 
-#if P_FAMILY_SWIRLIX
-    const u32 gMonFrontPic_Swirlix[] = INCBIN_U32("graphics/pokemon/swirlix/anim_front.4bpp.smol");
-    const u16 gMonPalette_Swirlix[] = INCBIN_U16("graphics/pokemon/swirlix/normal.gbapal");
-    const u32 gMonBackPic_Swirlix[] = INCBIN_U32("graphics/pokemon/swirlix/back.4bpp.smol");
-    const u16 gMonShinyPalette_Swirlix[] = INCBIN_U16("graphics/pokemon/swirlix/shiny.gbapal");
-    const u8 gMonIcon_Swirlix[] = INCBIN_U8("graphics/pokemon/swirlix/icon.4bpp");
+#if P_FAMILY_MACHINEDRAMON
+    const u32 gMonFrontPic_Machinedramon[] = INCBIN_U32("graphics/pokemon/machinedramon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Machinedramon[] = INCBIN_U16("graphics/pokemon/machinedramon/normal.gbapal");
+    const u32 gMonBackPic_Machinedramon[] = INCBIN_U32("graphics/pokemon/machinedramon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Machinedramon[] = INCBIN_U16("graphics/pokemon/machinedramon/shiny.gbapal");
+    const u8 gMonIcon_Machinedramon[] = INCBIN_U8("graphics/pokemon/machinedramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Swirlix[] = INCBIN_U8("graphics/pokemon/swirlix/footprint.1bpp");
+    const u8 gMonFootprint_Machinedramon[] = INCBIN_U8("graphics/pokemon/machinedramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Swirlix[] = INCBIN_COMP("graphics/pokemon/swirlix/overworld.4bpp");
+    const u32 gObjectEventPic_Machinedramon[] = INCBIN_COMP("graphics/pokemon/machinedramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Swirlix[] = INCBIN_U16("graphics/pokemon/swirlix/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Swirlix[] = INCBIN_U16("graphics/pokemon/swirlix/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Machinedramon[] = INCBIN_U16("graphics/pokemon/machinedramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Machinedramon[] = INCBIN_U16("graphics/pokemon/machinedramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -20053,7 +20053,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Slurpuff[] = INCBIN_U16("graphics/pokemon/slurpuff/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_SWIRLIX
+#endif //P_FAMILY_MACHINEDRAMON
 
 #if P_FAMILY_INKAY
     const u32 gMonFrontPic_Inkay[] = INCBIN_U32("graphics/pokemon/inkay/anim_front.4bpp.smol");

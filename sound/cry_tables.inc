@@ -1660,10 +1660,10 @@ gCryTable::
 	cry Cry_Kingetemon
 	cry Cry_Millenniummon
 .endif @ P_FAMILY_KINGETEMON
-.if P_FAMILY_SWIRLIX == TRUE
-	cry Cry_Swirlix
+.if P_FAMILY_MACHINEDRAMON == TRUE
+	cry Cry_Machinedramon
 	cry Cry_Slurpuff
-.endif @ P_FAMILY_SWIRLIX
+.endif @ P_FAMILY_MACHINEDRAMON
 .if P_FAMILY_INKAY == TRUE
 	cry Cry_Inkay
 	cry Cry_Malamar
@@ -4087,10 +4087,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Kingetemon
 	cry_reverse Cry_Millenniummon
 .endif @ P_FAMILY_KINGETEMON
-.if P_FAMILY_SWIRLIX == TRUE
-	cry_reverse Cry_Swirlix
+.if P_FAMILY_MACHINEDRAMON == TRUE
+	cry_reverse Cry_Machinedramon
 	cry_reverse Cry_Slurpuff
-.endif @ P_FAMILY_SWIRLIX
+.endif @ P_FAMILY_MACHINEDRAMON
 .if P_FAMILY_INKAY == TRUE
 	cry_reverse Cry_Inkay
 	cry_reverse Cry_Malamar

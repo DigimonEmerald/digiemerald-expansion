@@ -27395,8 +27395,8 @@ static const u16 sMillenniummonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_KINGETEMON
 
-#if P_FAMILY_SWIRLIX
-static const u16 sSwirlixTeachableLearnset[] = {
+#if P_FAMILY_MACHINEDRAMON
+static const u16 sMachinedramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
@@ -27452,7 +27452,7 @@ static const u16 sSlurpuffTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SWIRLIX
+#endif //P_FAMILY_MACHINEDRAMON
 
 #if P_FAMILY_INKAY
 static const u16 sInkayTeachableLearnset[] = {

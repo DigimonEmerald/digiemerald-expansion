@@ -727,8 +727,8 @@
 #define P_FAMILY_PHOENIXMON                 TRUE
 #undef P_FAMILY_KINGETEMON
 #define P_FAMILY_KINGETEMON                TRUE
-#undef P_FAMILY_SWIRLIX
-#define P_FAMILY_SWIRLIX                 TRUE
+#undef P_FAMILY_MACHINEDRAMON
+#define P_FAMILY_MACHINEDRAMON                 TRUE
 #undef P_FAMILY_INKAY
 #define P_FAMILY_INKAY                   TRUE
 #undef P_FAMILY_BINACLE

@@ -8457,8 +8457,8 @@ static const union AnimCmd sAnim_Millenniummon_1[] =
 };
 #endif //P_FAMILY_KINGETEMON
 
-#if P_FAMILY_SWIRLIX
-static const union AnimCmd sAnim_Swirlix_1[] =
+#if P_FAMILY_MACHINEDRAMON
+static const union AnimCmd sAnim_Machinedramon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -8479,7 +8479,7 @@ static const union AnimCmd sAnim_Slurpuff_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SWIRLIX
+#endif //P_FAMILY_MACHINEDRAMON
 
 #if P_FAMILY_INKAY
 static const union AnimCmd sAnim_Inkay_1[] =
@@ -12030,10 +12030,10 @@ SINGLE_ANIMATION(AegislashBlade);
 SINGLE_ANIMATION(Kingetemon);
 SINGLE_ANIMATION(Millenniummon);
 #endif //P_FAMILY_KINGETEMON
-#if P_FAMILY_SWIRLIX
-SINGLE_ANIMATION(Swirlix);
+#if P_FAMILY_MACHINEDRAMON
+SINGLE_ANIMATION(Machinedramon);
 SINGLE_ANIMATION(Slurpuff);
-#endif //P_FAMILY_SWIRLIX
+#endif //P_FAMILY_MACHINEDRAMON
 #if P_FAMILY_INKAY
 SINGLE_ANIMATION(Inkay);
 SINGLE_ANIMATION(Malamar);
