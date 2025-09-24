@@ -20004,19 +20004,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Aromatisse[] = INCBIN_U32("graphics/pokemon/aromatisse/anim_front.4bpp.smol");
-    const u16 gMonPalette_Aromatisse[] = INCBIN_U16("graphics/pokemon/aromatisse/normal.gbapal");
-    const u32 gMonBackPic_Aromatisse[] = INCBIN_U32("graphics/pokemon/aromatisse/back.4bpp.smol");
-    const u16 gMonShinyPalette_Aromatisse[] = INCBIN_U16("graphics/pokemon/aromatisse/shiny.gbapal");
-    const u8 gMonIcon_Aromatisse[] = INCBIN_U8("graphics/pokemon/aromatisse/icon.4bpp");
+    const u32 gMonFrontPic_Millenniummon[] = INCBIN_U32("graphics/pokemon/millenniummon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Millenniummon[] = INCBIN_U16("graphics/pokemon/millenniummon/normal.gbapal");
+    const u32 gMonBackPic_Millenniummon[] = INCBIN_U32("graphics/pokemon/millenniummon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Millenniummon[] = INCBIN_U16("graphics/pokemon/millenniummon/shiny.gbapal");
+    const u8 gMonIcon_Millenniummon[] = INCBIN_U8("graphics/pokemon/millenniummon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Aromatisse[] = INCBIN_U8("graphics/pokemon/aromatisse/footprint.1bpp");
+    const u8 gMonFootprint_Millenniummon[] = INCBIN_U8("graphics/pokemon/millenniummon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Aromatisse[] = INCBIN_COMP("graphics/pokemon/aromatisse/overworld.4bpp");
+    const u32 gObjectEventPic_Millenniummon[] = INCBIN_COMP("graphics/pokemon/millenniummon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Aromatisse[] = INCBIN_U16("graphics/pokemon/aromatisse/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Aromatisse[] = INCBIN_U16("graphics/pokemon/aromatisse/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Millenniummon[] = INCBIN_U16("graphics/pokemon/millenniummon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Millenniummon[] = INCBIN_U16("graphics/pokemon/millenniummon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_KINGETEMON

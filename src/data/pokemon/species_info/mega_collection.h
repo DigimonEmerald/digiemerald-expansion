@@ -2932,45 +2932,48 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sKingetemonLevelUpLearnset,
         .teachableLearnset = sKingetemonTeachableLearnset,
         .eggMoveLearnset = sKingetemonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_AROMATISSE, CONDITIONS({IF_HOLD_ITEM, ITEM_SACHET})},
-                                {EVO_ITEM, ITEM_SACHET, SPECIES_AROMATISSE}),
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_MILLENNIUMMON, CONDITIONS({IF_HOLD_ITEM, ITEM_SACHET})},
+                                {EVO_ITEM, ITEM_SACHET, SPECIES_MILLENNIUMMON}),
     },
 
-    [SPECIES_AROMATISSE] =
+    [SPECIES_MILLENNIUMMON] =
     {
-        .baseHP        = 101,
-        .baseAttack    = 72,
-        .baseDefense   = 72,
-        .baseSpeed     = 29,
-        .baseSpAttack  = 99,
-        .baseSpDefense = 89,
-        .types = MON_TYPES(TYPE_FAIRY),
-        .catchRate = 140,
-        .expYield = 162,
-        .evYield_HP = 2,
+        .baseHP        = 100,
+        .baseAttack    = 125,
+        .baseDefense   = 125,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 125,
+        .baseSpDefense = 125,
+        .types = MON_TYPES(TYPE_MYSTERY),
+        .attribute = TYPE_VIRUS,   
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_Attack = 2,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_HEALER, ABILITY_NONE, ABILITY_AROMA_VEIL },
-        .bodyColor = BODY_COLOR_PINK,
-        .speciesName = _("Aromatisse"),
-        .cryId = CRY_AROMATISSE,
-        .natDexNum = NATIONAL_DEX_AROMATISSE,
-        .categoryName = _("Fragrance"),
-        .height = 8,
-        .weight = 155,
+        .abilities = { ABILITY_PROTEAN, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Millenniumon"),
+        .cryId = CRY_MILLENNIUMMON,
+        .natDexNum = NATIONAL_DEX_MILLENNIUMMON,
+        .categoryName = _("Evil God"),
+        .height = 800,
+        .weight = 17442,
         .description = COMPOUND_STRING(
-            "Its scent is so overpowering that,\n"
-            "unless a Trainer happens to really enjoy\n"
-            "the smell, he or she will have a hard time\n"
-            "walking alongside it."),
+            "The resulting form when Kimeramon\n"
+            "jogress evolves with Machinedramon. The\n"
+            "defeat of Millenniummon is\n"
+            "said to be impossible."),
         .pokemonScale = 366,
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Aromatisse,
+        .frontPic = gMonFrontPic_Millenniummon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
@@ -2978,28 +2981,28 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 30),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
-        .backPic = gMonBackPic_Aromatisse,
+        .backPic = gMonBackPic_Millenniummon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Aromatisse,
-        .shinyPalette = gMonShinyPalette_Aromatisse,
-        .iconSprite = gMonIcon_Aromatisse,
+        .palette = gMonPalette_Millenniummon,
+        .shinyPalette = gMonShinyPalette_Millenniummon,
+        .iconSprite = gMonIcon_Millenniummon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 10, SHADOW_SIZE_M)
-        FOOTPRINT(Aromatisse)
+        FOOTPRINT(Millenniummon)
         OVERWORLD(
-            sPicTable_Aromatisse,
+            sPicTable_Millenniummon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Aromatisse,
-            gShinyOverworldPalette_Aromatisse
+            gOverworldPalette_Millenniummon,
+            gShinyOverworldPalette_Millenniummon
         )
-        .levelUpLearnset = sAromatisseLevelUpLearnset,
-        .teachableLearnset = sAromatisseTeachableLearnset,
+        .levelUpLearnset = sMillenniummonLevelUpLearnset,
+        .teachableLearnset = sMillenniummonTeachableLearnset,
     },
 #endif //P_FAMILY_KINGETEMON
 

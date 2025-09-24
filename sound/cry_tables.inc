@@ -1658,7 +1658,7 @@ gCryTable::
 .endif @ P_FAMILY_PHOENIXMON
 .if P_FAMILY_KINGETEMON == TRUE
 	cry Cry_Kingetemon
-	cry Cry_Aromatisse
+	cry Cry_Millenniummon
 .endif @ P_FAMILY_KINGETEMON
 .if P_FAMILY_SWIRLIX == TRUE
 	cry Cry_Swirlix
@@ -4085,7 +4085,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_PHOENIXMON
 .if P_FAMILY_KINGETEMON == TRUE
 	cry_reverse Cry_Kingetemon
-	cry_reverse Cry_Aromatisse
+	cry_reverse Cry_Millenniummon
 .endif @ P_FAMILY_KINGETEMON
 .if P_FAMILY_SWIRLIX == TRUE
 	cry_reverse Cry_Swirlix

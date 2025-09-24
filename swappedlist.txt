@@ -546,5 +546,6 @@ Gryphonmon - Meowstic (Male)
 Phoenixmon - Honedge
 Jijimon - Doublade
 KingEtemon - Spritzee
+Millenniummon - Aromatisse
 
 SPECIES NAME LENGTH MAX = 13

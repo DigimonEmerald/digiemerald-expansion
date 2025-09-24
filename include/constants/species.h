@@ -718,7 +718,7 @@
 #define SPECIES_AEGISLASH                               SPECIES_AEGISLASH_SHIELD
 #define SPECIES_AEGISLASH_SHIELD                        681
 #define SPECIES_KINGETEMON                                682
-#define SPECIES_AROMATISSE                              683
+#define SPECIES_MILLENNIUMMON                              683
 #define SPECIES_SWIRLIX                                 684
 #define SPECIES_SLURPUFF                                685
 #define SPECIES_INKAY                                   686

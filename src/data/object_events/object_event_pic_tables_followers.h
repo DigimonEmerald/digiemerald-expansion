@@ -4836,8 +4836,8 @@ static const struct SpriteFrameImage sPicTable_AegislashShield[] = {
 static const struct SpriteFrameImage sPicTable_Kingetemon[] = {
     overworld_ascending_frames(gObjectEventPic_Kingetemon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Aromatisse[] = {
-    overworld_ascending_frames(gObjectEventPic_Aromatisse, 4, 4),
+static const struct SpriteFrameImage sPicTable_Millenniummon[] = {
+    overworld_ascending_frames(gObjectEventPic_Millenniummon, 4, 4),
 };
 #endif //P_FAMILY_KINGETEMON
 

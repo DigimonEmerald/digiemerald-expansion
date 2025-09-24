@@ -4321,8 +4321,8 @@ Cry_Kingetemon::
 	.incbin "sound/direct_sound_samples/cries/kingetemon.bin"
 
 	.align 2
-Cry_Aromatisse::
-	.incbin "sound/direct_sound_samples/cries/aromatisse.bin"
+Cry_Millenniummon::
+	.incbin "sound/direct_sound_samples/cries/millenniummon.bin"
 .endif @ P_FAMILY_KINGETEMON
 
 .if P_FAMILY_SWIRLIX == TRUE

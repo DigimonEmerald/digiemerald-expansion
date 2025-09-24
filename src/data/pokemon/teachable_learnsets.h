@@ -27365,7 +27365,7 @@ static const u16 sKingetemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sAromatisseTeachableLearnset[] = {
+static const u16 sMillenniummonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,

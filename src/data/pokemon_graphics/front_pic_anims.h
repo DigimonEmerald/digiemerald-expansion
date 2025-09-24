@@ -8449,7 +8449,7 @@ static const union AnimCmd sAnim_Kingetemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Aromatisse_1[] =
+static const union AnimCmd sAnim_Millenniummon_1[] =
 {
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 30),
@@ -12028,7 +12028,7 @@ SINGLE_ANIMATION(AegislashBlade);
 #endif //P_FAMILY_PHOENIXMON
 #if P_FAMILY_KINGETEMON
 SINGLE_ANIMATION(Kingetemon);
-SINGLE_ANIMATION(Aromatisse);
+SINGLE_ANIMATION(Millenniummon);
 #endif //P_FAMILY_KINGETEMON
 #if P_FAMILY_SWIRLIX
 SINGLE_ANIMATION(Swirlix);
