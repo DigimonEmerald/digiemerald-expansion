@@ -3116,8 +3116,8 @@ Cry_Kiwimon::
 	.incbin "sound/direct_sound_samples/cries/kiwimon.bin"
 
 	.align 2
-Cry_Bronzong::
-	.incbin "sound/direct_sound_samples/cries/bronzong.bin"
+Cry_Morishellmon::
+	.incbin "sound/direct_sound_samples/cries/morishellmon.bin"
 .endif @ P_FAMILY_KIWIMON
 
 .if P_FAMILY_CHATOT == TRUE

@@ -451,7 +451,7 @@
 #define SPECIES_JUNGLEMOJYAMON                                  434
 #define SPECIES_SHELLNUMEMON                                435
 #define SPECIES_KIWIMON                                 436
-#define SPECIES_BRONZONG                                437
+#define SPECIES_MORISHELLMON                                437
 #define SPECIES_BONSLY                                  438
 #define SPECIES_MIME_JR                                 439
 #define SPECIES_HAPPINY                                 440

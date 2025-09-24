@@ -3361,8 +3361,8 @@ static const struct SpriteFrameImage sPicTable_Shellnumemon[] = {
 static const struct SpriteFrameImage sPicTable_Kiwimon[] = {
     overworld_ascending_frames(gObjectEventPic_Kiwimon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Bronzong[] = {
-    overworld_ascending_frames(gObjectEventPic_Bronzong, 4, 4),
+static const struct SpriteFrameImage sPicTable_Morishellmon[] = {
+    overworld_ascending_frames(gObjectEventPic_Morishellmon, 4, 4),
 };
 #endif //P_FAMILY_KIWIMON
 

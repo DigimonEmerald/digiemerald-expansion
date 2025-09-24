@@ -15191,21 +15191,22 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sKiwimonLevelUpLearnset,
         .teachableLearnset = sKiwimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_BRONZONG}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_MORISHELLMON}),
     },
 
-    [SPECIES_BRONZONG] =
+    [SPECIES_MORISHELLMON] =
     {
-        .baseHP        = 67,
-        .baseAttack    = 89,
-        .baseDefense   = 116,
-        .baseSpeed     = 33,
-        .baseSpAttack  = 79,
-        .baseSpDefense = 116,
-        .types = MON_TYPES(TYPE_STEEL, TYPE_PSYCHIC),
-        .catchRate = 90,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 175 : 188,
-        .evYield_Defense = 1,
+        .baseHP        = 70,
+        .baseAttack    = 45,
+        .baseDefense   = 95,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_WATER, TYPE_GRASS),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense = 3,
         .evYield_SpDefense = 1,
         .itemRare = ITEM_METAL_COAT,
         .genderRatio = MON_GENDERLESS,
@@ -15213,24 +15214,24 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_LEVITATE, ABILITY_HEATPROOF, ABILITY_HEAVY_METAL },
+        .abilities = { ABILITY_STICKY_HOLD, ABILITY_GOOEY, ABILITY_ANGER_SHELL },
         .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Bronzong"),
-        .cryId = CRY_BRONZONG,
-        .natDexNum = NATIONAL_DEX_BRONZONG,
-        .categoryName = _("Bronze Bell"),
-        .height = 13,
-        .weight = 1870,
+        .speciesName = _("MoriShellmon"),
+        .cryId = CRY_MORISHELLMON,
+        .natDexNum = NATIONAL_DEX_MORISHELLMON,
+        .categoryName = _("Hermit Crab"),
+        .height = 50,
+        .weight = 1953,
         .description = COMPOUND_STRING(
-            "In ages past, this Pokémon was revered as\n"
-            "a bringer of rain. One caused a news stir\n"
-            "when it was dug up at a construction site\n"
-            "after a 2000-year sleep."),
+            "With the emergence of MoriShellmon, it\n"
+            "is believe that Shellmon species change\n"
+            "size and colour depending on the\n"
+            "habitat that they live in."),
         .pokemonScale = 272,
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Bronzong,
+        .frontPic = gMonFrontPic_Morishellmon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 6,
         .frontAnimFrames = ANIM_FRAMES(
@@ -15242,28 +15243,28 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         ),
         .frontAnimId = ANIM_V_SLIDE_WOBBLE_SMALL,
         .enemyMonElevation = 7,
-        .backPic = gMonBackPic_Bronzong,
+        .backPic = gMonBackPic_Morishellmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Bronzong,
-        .shinyPalette = gMonShinyPalette_Bronzong,
-        .iconSprite = gMonIcon_Bronzong,
+        .palette = gMonPalette_Morishellmon,
+        .shinyPalette = gMonShinyPalette_Morishellmon,
+        .iconSprite = gMonIcon_Morishellmon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(5, 12, SHADOW_SIZE_M)
-        FOOTPRINT(Bronzong)
+        FOOTPRINT(Morishellmon)
         OVERWORLD(
-            sPicTable_Bronzong,
+            sPicTable_Morishellmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Bronzong,
-            gShinyOverworldPalette_Bronzong
+            gOverworldPalette_Morishellmon,
+            gShinyOverworldPalette_Morishellmon
         )
-        .levelUpLearnset = sBronzongLevelUpLearnset,
-        .teachableLearnset = sBronzongTeachableLearnset,
+        .levelUpLearnset = sMorishellmonLevelUpLearnset,
+        .teachableLearnset = sMorishellmonTeachableLearnset,
     },
 #endif //P_FAMILY_KIWIMON
 

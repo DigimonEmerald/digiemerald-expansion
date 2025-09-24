@@ -14926,19 +14926,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Bronzong[] = INCBIN_U32("graphics/pokemon/bronzong/anim_front.4bpp.smol");
-    const u16 gMonPalette_Bronzong[] = INCBIN_U16("graphics/pokemon/bronzong/normal.gbapal");
-    const u32 gMonBackPic_Bronzong[] = INCBIN_U32("graphics/pokemon/bronzong/back.4bpp.smol");
-    const u16 gMonShinyPalette_Bronzong[] = INCBIN_U16("graphics/pokemon/bronzong/shiny.gbapal");
-    const u8 gMonIcon_Bronzong[] = INCBIN_U8("graphics/pokemon/bronzong/icon.4bpp");
+    const u32 gMonFrontPic_Morishellmon[] = INCBIN_U32("graphics/pokemon/morishellmon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Morishellmon[] = INCBIN_U16("graphics/pokemon/morishellmon/normal.gbapal");
+    const u32 gMonBackPic_Morishellmon[] = INCBIN_U32("graphics/pokemon/morishellmon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Morishellmon[] = INCBIN_U16("graphics/pokemon/morishellmon/shiny.gbapal");
+    const u8 gMonIcon_Morishellmon[] = INCBIN_U8("graphics/pokemon/morishellmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Bronzong[] = INCBIN_U8("graphics/pokemon/bronzong/footprint.1bpp");
+    const u8 gMonFootprint_Morishellmon[] = INCBIN_U8("graphics/pokemon/morishellmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Bronzong[] = INCBIN_COMP("graphics/pokemon/bronzong/overworld.4bpp");
+    const u32 gObjectEventPic_Morishellmon[] = INCBIN_COMP("graphics/pokemon/morishellmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Bronzong[] = INCBIN_U16("graphics/pokemon/bronzong/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Bronzong[] = INCBIN_U16("graphics/pokemon/bronzong/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Morishellmon[] = INCBIN_U16("graphics/pokemon/morishellmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Morishellmon[] = INCBIN_U16("graphics/pokemon/morishellmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_KIWIMON

@@ -19639,7 +19639,7 @@ static const u16 sKiwimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBronzongTeachableLearnset[] = {
+static const u16 sMorishellmonTeachableLearnset[] = {
     MOVE_BODY_SLAM,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
