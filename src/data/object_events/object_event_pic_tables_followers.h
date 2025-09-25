@@ -3378,13 +3378,13 @@ static const struct SpriteFrameImage sPicTable_Nisedrimogemon[] = {
 };
 #endif //P_FAMILY_NISEDRIMOGEMON
 
-#if P_FAMILY_GIBLE
-static const struct SpriteFrameImage sPicTable_Gible[] = {
-    overworld_ascending_frames(gObjectEventPic_Gible, 4, 4),
+#if P_FAMILY_ORCAMON
+static const struct SpriteFrameImage sPicTable_Orcamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Orcamon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_GibleF[] = {
-    overworld_ascending_frames(gObjectEventPic_GibleF, 4, 4),
+static const struct SpriteFrameImage sPicTable_OrcamonF[] = {
+    overworld_ascending_frames(gObjectEventPic_OrcamonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 static const struct SpriteFrameImage sPicTable_Gabite[] = {
@@ -3410,7 +3410,7 @@ static const struct SpriteFrameImage sPicTable_GarchompMega[] = {
 };
 #endif // P_MEGA_EVOLUTIONS
 #endif // OW_BATTLE_ONLY_FORMS
-#endif //P_FAMILY_GIBLE
+#endif //P_FAMILY_ORCAMON
 
 #if P_FAMILY_RIOLU
 static const struct SpriteFrameImage sPicTable_Riolu[] = {

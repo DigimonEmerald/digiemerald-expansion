@@ -3756,8 +3756,8 @@ static const u16 sNisedrimogemonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_NISEDRIMOGEMON
 
-#if P_FAMILY_GIBLE
-static const u16 sGibleEggMoveLearnset[] = {
+#if P_FAMILY_ORCAMON
+static const u16 sOrcamonEggMoveLearnset[] = {
     MOVE_DRAGON_BREATH,
     MOVE_OUTRAGE,
     MOVE_TWISTER,
@@ -3773,7 +3773,7 @@ static const u16 sGibleEggMoveLearnset[] = {
     MOVE_IRON_TAIL,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_GIBLE
+#endif //P_FAMILY_ORCAMON
 
 #if P_FAMILY_RIOLU
 static const u16 sRioluEggMoveLearnset[] = {

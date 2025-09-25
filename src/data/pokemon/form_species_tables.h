@@ -1044,7 +1044,7 @@ static const u16 sIcedevimonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_HYOGAMON
 
-#if P_FAMILY_GIBLE
+#if P_FAMILY_ORCAMON
 static const u16 sGarchompFormSpeciesIdTable[] = {
     SPECIES_GARCHOMP,
 #if P_MEGA_EVOLUTIONS
@@ -1052,7 +1052,7 @@ static const u16 sGarchompFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_GIBLE
+#endif //P_FAMILY_ORCAMON
 
 #if P_FAMILY_RIOLU
 static const u16 sLucarioFormSpeciesIdTable[] = {

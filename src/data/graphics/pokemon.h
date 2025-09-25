@@ -14979,28 +14979,28 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_NISEDRIMOGEMON
 
-#if P_FAMILY_GIBLE
-    const u32 gMonFrontPic_Gible[] = INCBIN_U32("graphics/pokemon/gible/anim_front.4bpp.smol");
-    const u16 gMonPalette_Gible[] = INCBIN_U16("graphics/pokemon/gible/normal.gbapal");
-    const u32 gMonBackPic_Gible[] = INCBIN_U32("graphics/pokemon/gible/back.4bpp.smol");
-    const u16 gMonShinyPalette_Gible[] = INCBIN_U16("graphics/pokemon/gible/shiny.gbapal");
-    const u8 gMonIcon_Gible[] = INCBIN_U8("graphics/pokemon/gible/icon.4bpp");
+#if P_FAMILY_ORCAMON
+    const u32 gMonFrontPic_Orcamon[] = INCBIN_U32("graphics/pokemon/orcamon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Orcamon[] = INCBIN_U16("graphics/pokemon/orcamon/normal.gbapal");
+    const u32 gMonBackPic_Orcamon[] = INCBIN_U32("graphics/pokemon/orcamon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Orcamon[] = INCBIN_U16("graphics/pokemon/orcamon/shiny.gbapal");
+    const u8 gMonIcon_Orcamon[] = INCBIN_U8("graphics/pokemon/orcamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Gible[] = INCBIN_U8("graphics/pokemon/gible/footprint.1bpp");
+    const u8 gMonFootprint_Orcamon[] = INCBIN_U8("graphics/pokemon/orcamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Gible[] = INCBIN_COMP("graphics/pokemon/gible/overworld.4bpp");
+    const u32 gObjectEventPic_Orcamon[] = INCBIN_COMP("graphics/pokemon/orcamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Gible[] = INCBIN_U16("graphics/pokemon/gible/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Gible[] = INCBIN_U16("graphics/pokemon/gible/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Orcamon[] = INCBIN_U16("graphics/pokemon/orcamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Orcamon[] = INCBIN_U16("graphics/pokemon/orcamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_GibleF[] = INCBIN_U32("graphics/pokemon/gible/anim_frontf.4bpp.smol");
-    const u32 gMonBackPic_GibleF[] = INCBIN_U32("graphics/pokemon/gible/backf.4bpp.smol");
+    const u32 gMonFrontPic_OrcamonF[] = INCBIN_U32("graphics/pokemon/orcamon/anim_frontf.4bpp.smol");
+    const u32 gMonBackPic_OrcamonF[] = INCBIN_U32("graphics/pokemon/orcamon/backf.4bpp.smol");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_GibleF[] = INCBIN_COMP("graphics/pokemon/gible/overworldf.4bpp");
+    const u32 gObjectEventPic_OrcamonF[] = INCBIN_COMP("graphics/pokemon/orcamon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
@@ -15065,7 +15065,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS && OW_BATTLE_ONLY_FORMS
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_GIBLE
+#endif //P_FAMILY_ORCAMON
 
 #if P_FAMILY_RIOLU
     const u32 gMonFrontPic_Riolu[] = INCBIN_U32("graphics/pokemon/riolu/anim_front.4bpp.smol");

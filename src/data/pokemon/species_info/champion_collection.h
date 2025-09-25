@@ -15425,42 +15425,44 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_NISEDRIMOGEMON
 
-#if P_FAMILY_GIBLE
-    [SPECIES_GIBLE] =
+#if P_FAMILY_ORCAMON
+    [SPECIES_ORCAMON] =
     {
-        .baseHP        = 58,
-        .baseAttack    = 70,
-        .baseDefense   = 45,
-        .baseSpeed     = 42,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_GROUND),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 67,
-        .evYield_Attack = 1,
+        .baseHP        = 80,
+        .baseAttack    = 50,
+        .baseDefense   = 95,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_WATER),
+        .attribute = TYPE_FREE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP = 1,
+        .evYield_Defense = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_SAND_VEIL, ABILITY_NONE, ABILITY_ROUGH_SKIN },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Gible"),
-        .cryId = CRY_GIBLE,
-        .natDexNum = NATIONAL_DEX_GIBLE,
-        .categoryName = _("Land Shark"),
-        .height = 7,
-        .weight = 205,
+        .abilities = { ABILITY_ANTICIPATION, ABILITY_OVERCOAT, ABILITY_WIMP_OUT },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Orcamon"),
+        .cryId = CRY_ORCAMON,
+        .natDexNum = NATIONAL_DEX_ORCAMON,
+        .categoryName = _("Sincerity"),
+        .height = 19,
+        .weight = 784,
         .description = COMPOUND_STRING(
-            "It nests in horizontal holes warmed by\n"
-            "geothermal heat. Foes who stray too\n"
-            "close can expect to be pounced on\n"
-            "and bitten."),
+            "Although Orcamon is an overly cautious\n"
+            "Digimon, it is still very reliable with\n"
+            "many seeking it out for advice. It is\n"
+            "incredibly swift on both land and water"),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Gible,
+        .frontPic = gMonFrontPic_Orcamon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 9,
         .frontAnimFrames = ANIM_FRAMES(
@@ -15469,42 +15471,42 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Gible,
+        .backPic = gMonBackPic_Orcamon,
         .backPicSize = MON_COORDS_SIZE(56, 48),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_H_SHAKE,
-        .palette = gMonPalette_Gible,
-        .shinyPalette = gMonShinyPalette_Gible,
-        .iconSprite = gMonIcon_Gible,
+        .palette = gMonPalette_Orcamon,
+        .shinyPalette = gMonShinyPalette_Orcamon,
+        .iconSprite = gMonIcon_Orcamon,
         .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_GibleF,
+        .frontPicFemale = gMonFrontPic_OrcamonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(48, 48),
-        .backPicFemale = gMonBackPic_GibleF,
+        .backPicFemale = gMonBackPic_OrcamonF,
         .backPicSizeFemale = MON_COORDS_SIZE(56, 48),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(1, 5, SHADOW_SIZE_M)
-        FOOTPRINT(Gible)
+        FOOTPRINT(Orcamon)
         OVERWORLD(
-            sPicTable_Gible,
+            sPicTable_Orcamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Gible,
-            gShinyOverworldPalette_Gible
+            gOverworldPalette_Orcamon,
+            gShinyOverworldPalette_Orcamon
         )
         OVERWORLD_FEMALE(
-            sPicTable_GibleF,
+            sPicTable_OrcamonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sGibleLevelUpLearnset,
-        .teachableLearnset = sGibleTeachableLearnset,
-        .eggMoveLearnset = sGibleEggMoveLearnset,
+        .levelUpLearnset = sOrcamonLevelUpLearnset,
+        .teachableLearnset = sOrcamonTeachableLearnset,
+        .eggMoveLearnset = sOrcamonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_GABITE}),
     },
 
@@ -15746,7 +15748,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .formChangeTable = sGarchompFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_GIBLE
+#endif //P_FAMILY_ORCAMON
 
 #if P_FAMILY_RIOLU
     [SPECIES_RIOLU] =

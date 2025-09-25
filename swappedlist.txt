@@ -450,6 +450,7 @@ Kiwimon - Bronzor
 MoriShellmon - Bronzong
 Musyamon - Chatot
 NiseDrimogemon - Spriritomb
+Orcamon - Gible
 
 Ultimate List
 

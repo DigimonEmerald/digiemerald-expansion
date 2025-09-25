@@ -1174,14 +1174,14 @@ gCryTable::
 .if P_FAMILY_NISEDRIMOGEMON == TRUE
 	cry Cry_Nisedrimogemon
 .endif @ P_FAMILY_NISEDRIMOGEMON
-.if P_FAMILY_GIBLE == TRUE
-	cry Cry_Gible
+.if P_FAMILY_ORCAMON == TRUE
+	cry Cry_Orcamon
 	cry Cry_Gabite
 	cry Cry_Garchomp
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_GarchompMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_GIBLE
+.endif @ P_FAMILY_ORCAMON
 .if P_FAMILY_RIOLU == TRUE
 	cry Cry_Riolu
 	cry Cry_Lucario
@@ -3601,14 +3601,14 @@ gCryTable_Reverse::
 .if P_FAMILY_NISEDRIMOGEMON == TRUE
 	cry_reverse Cry_Nisedrimogemon
 .endif @ P_FAMILY_NISEDRIMOGEMON
-.if P_FAMILY_GIBLE == TRUE
-	cry_reverse Cry_Gible
+.if P_FAMILY_ORCAMON == TRUE
+	cry_reverse Cry_Orcamon
 	cry_reverse Cry_Gabite
 	cry_reverse Cry_Garchomp
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_GarchompMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_GIBLE
+.endif @ P_FAMILY_ORCAMON
 .if P_FAMILY_RIOLU == TRUE
 	cry_reverse Cry_Riolu
 	cry_reverse Cry_Lucario

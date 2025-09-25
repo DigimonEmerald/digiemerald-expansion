@@ -3132,10 +3132,10 @@ Cry_Nisedrimogemon::
 	.incbin "sound/direct_sound_samples/cries/nisedrimogemon.bin"
 .endif @ P_FAMILY_NISEDRIMOGEMON
 
-.if P_FAMILY_GIBLE == TRUE
+.if P_FAMILY_ORCAMON == TRUE
 	.align 2
-Cry_Gible::
-	.incbin "sound/direct_sound_samples/cries/gible.bin"
+Cry_Orcamon::
+	.incbin "sound/direct_sound_samples/cries/orcamon.bin"
 
 	.align 2
 Cry_Gabite::
@@ -3150,7 +3150,7 @@ Cry_Garchomp::
 Cry_GarchompMega::
 	.incbin "sound/direct_sound_samples/cries/garchomp_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_GIBLE
+.endif @ P_FAMILY_ORCAMON
 
 .if P_FAMILY_RIOLU == TRUE
 	.align 2

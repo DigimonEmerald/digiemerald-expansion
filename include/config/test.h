@@ -490,8 +490,8 @@
 #define P_FAMILY_MUSYAMON                  TRUE
 #undef P_FAMILY_NISEDRIMOGEMON
 #define P_FAMILY_NISEDRIMOGEMON               TRUE
-#undef P_FAMILY_GIBLE
-#define P_FAMILY_GIBLE                   TRUE
+#undef P_FAMILY_ORCAMON
+#define P_FAMILY_ORCAMON                   TRUE
 #undef P_FAMILY_RIOLU
 #define P_FAMILY_RIOLU                   TRUE
 #undef P_FAMILY_HIPPOPOTAS

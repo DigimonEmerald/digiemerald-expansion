@@ -573,14 +573,14 @@ static const struct FormChange sIcedevimonFormChangeTable[] = {
 };
 #endif //P_FAMILY_HYOGAMON
 
-#if P_FAMILY_GIBLE
+#if P_FAMILY_ORCAMON
 static const struct FormChange sGarchompFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_GARCHOMP_MEGA, ITEM_GARCHOMPITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_GIBLE
+#endif //P_FAMILY_ORCAMON
 
 #if P_FAMILY_RIOLU
 static const struct FormChange sLucarioFormChangeTable[] = {

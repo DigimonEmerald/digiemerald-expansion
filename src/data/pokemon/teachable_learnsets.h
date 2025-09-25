@@ -19737,8 +19737,8 @@ static const u16 sNisedrimogemonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_NISEDRIMOGEMON
 
-#if P_FAMILY_GIBLE
-static const u16 sGibleTeachableLearnset[] = {
+#if P_FAMILY_ORCAMON
+static const u16 sOrcamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
@@ -19848,7 +19848,7 @@ static const u16 sGarchompTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_GIBLE
+#endif //P_FAMILY_ORCAMON
 
 #if P_FAMILY_RIOLU
 static const u16 sRioluTeachableLearnset[] = {
