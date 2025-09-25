@@ -5477,45 +5477,47 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sMummymonLevelUpLearnset,
         .teachableLearnset = sMummymonTeachableLearnset,
         .eggMoveLearnset = sMummymonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_CRUSTLE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_OROCHIMON}),
     },
 
-    [SPECIES_CRUSTLE] =
+    [SPECIES_OROCHIMON] =
     {
-        .baseHP        = 70,
-        .baseAttack    = P_UPDATED_STATS >= GEN_7 ? 105 : 95,
-        .baseDefense   = 125,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 65,
+        .baseHP        = 60,
+        .baseAttack    = 70,
+        .baseDefense   = 80,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 120,
         .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_BUG, TYPE_ROCK),
-        .catchRate = 75,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_7) ? 170 : 166,
-        .evYield_Defense = 2,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_DRAGON),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_Speed = 2,
+        .evYield_SpAttack = 3,
         .itemRare = ITEM_HARD_STONE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_STURDY, ABILITY_SHELL_ARMOR, ABILITY_WEAK_ARMOR },
-        .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Crustle"),
-        .cryId = CRY_CRUSTLE,
-        .natDexNum = NATIONAL_DEX_CRUSTLE,
-        .categoryName = _("Stone Home"),
-        .height = 14,
-        .weight = 2000,
+        .abilities = { ABILITY_DISGUISE, ABILITY_MERCILESS, ABILITY_BAD_DREAMS },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Orochimon"),
+        .cryId = CRY_OROCHIMON,
+        .natDexNum = NATIONAL_DEX_OROCHIMON,
+        .categoryName = _("Orochi"),
+        .height = 120,
+        .weight = 7977,
         .description = COMPOUND_STRING(
-            "Competing for territory, Crustle fight\n"
-            "viciously. The one whose boulder is\n"
-            "broken is the loser of the battle and\n"
-            "begins to weaken."),
+            "Only one of Orochimons eight heads is\n"
+            "actually real, the fake ones are more\n"
+            "akin to limbs. In ancient times, it was\n"
+            "in a constant rampage."),
         .pokemonScale = 265,
         .pokemonOffset = 2,
         .trainerScale = 262,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Crustle,
+        .frontPic = gMonFrontPic_Orochimon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
         .frontAnimFrames = ANIM_FRAMES(
@@ -5527,28 +5529,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_H_SLIDE_SLOW,
-        .backPic = gMonBackPic_Crustle,
+        .backPic = gMonBackPic_Orochimon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Crustle,
-        .shinyPalette = gMonShinyPalette_Crustle,
-        .iconSprite = gMonIcon_Crustle,
+        .palette = gMonPalette_Orochimon,
+        .shinyPalette = gMonShinyPalette_Orochimon,
+        .iconSprite = gMonIcon_Orochimon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 8, SHADOW_SIZE_L)
-        FOOTPRINT(Crustle)
+        FOOTPRINT(Orochimon)
         OVERWORLD(
-            sPicTable_Crustle,
+            sPicTable_Orochimon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Crustle,
-            gShinyOverworldPalette_Crustle
+            gOverworldPalette_Orochimon,
+            gShinyOverworldPalette_Orochimon
         )
-        .levelUpLearnset = sCrustleLevelUpLearnset,
-        .teachableLearnset = sCrustleTeachableLearnset,
+        .levelUpLearnset = sOrochimonLevelUpLearnset,
+        .teachableLearnset = sOrochimonTeachableLearnset,
     },
 #endif //P_FAMILY_MUMMYMON
 

@@ -1388,7 +1388,7 @@ gCryTable::
 .endif @ P_FAMILY_KNIGHTMON
 .if P_FAMILY_MUMMYMON == TRUE
 	cry Cry_Mummymon
-	cry Cry_Crustle
+	cry Cry_Orochimon
 .endif @ P_FAMILY_MUMMYMON
 .if P_FAMILY_SCRAGGY == TRUE
 	cry Cry_Scraggy
@@ -3815,7 +3815,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_KNIGHTMON
 .if P_FAMILY_MUMMYMON == TRUE
 	cry_reverse Cry_Mummymon
-	cry_reverse Cry_Crustle
+	cry_reverse Cry_Orochimon
 .endif @ P_FAMILY_MUMMYMON
 .if P_FAMILY_SCRAGGY == TRUE
 	cry_reverse Cry_Scraggy

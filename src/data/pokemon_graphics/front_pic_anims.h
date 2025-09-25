@@ -6956,7 +6956,7 @@ static const union AnimCmd sAnim_Mummymon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Crustle_1[] =
+static const union AnimCmd sAnim_Orochimon_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 15),
@@ -11740,7 +11740,7 @@ SINGLE_ANIMATION(Knightmon);
 #endif //P_FAMILY_KNIGHTMON
 #if P_FAMILY_MUMMYMON
 SINGLE_ANIMATION(Mummymon);
-SINGLE_ANIMATION(Crustle);
+SINGLE_ANIMATION(Orochimon);
 #endif //P_FAMILY_MUMMYMON
 #if P_FAMILY_SCRAGGY
 SINGLE_ANIMATION(Scraggy);

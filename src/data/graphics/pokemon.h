@@ -17132,19 +17132,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Crustle[] = INCBIN_U32("graphics/pokemon/crustle/anim_front.4bpp.smol");
-    const u16 gMonPalette_Crustle[] = INCBIN_U16("graphics/pokemon/crustle/normal.gbapal");
-    const u32 gMonBackPic_Crustle[] = INCBIN_U32("graphics/pokemon/crustle/back.4bpp.smol");
-    const u16 gMonShinyPalette_Crustle[] = INCBIN_U16("graphics/pokemon/crustle/shiny.gbapal");
-    const u8 gMonIcon_Crustle[] = INCBIN_U8("graphics/pokemon/crustle/icon.4bpp");
+    const u32 gMonFrontPic_Orochimon[] = INCBIN_U32("graphics/pokemon/orochimon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Orochimon[] = INCBIN_U16("graphics/pokemon/orochimon/normal.gbapal");
+    const u32 gMonBackPic_Orochimon[] = INCBIN_U32("graphics/pokemon/orochimon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Orochimon[] = INCBIN_U16("graphics/pokemon/orochimon/shiny.gbapal");
+    const u8 gMonIcon_Orochimon[] = INCBIN_U8("graphics/pokemon/orochimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Crustle[] = INCBIN_U8("graphics/pokemon/crustle/footprint.1bpp");
+    const u8 gMonFootprint_Orochimon[] = INCBIN_U8("graphics/pokemon/orochimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Crustle[] = INCBIN_COMP("graphics/pokemon/crustle/overworld.4bpp");
+    const u32 gObjectEventPic_Orochimon[] = INCBIN_COMP("graphics/pokemon/orochimon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Crustle[] = INCBIN_U16("graphics/pokemon/crustle/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Crustle[] = INCBIN_U16("graphics/pokemon/crustle/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Orochimon[] = INCBIN_U16("graphics/pokemon/orochimon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Orochimon[] = INCBIN_U16("graphics/pokemon/orochimon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MUMMYMON

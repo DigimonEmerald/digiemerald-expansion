@@ -3651,8 +3651,8 @@ Cry_Mummymon::
 	.incbin "sound/direct_sound_samples/cries/mummymon.bin"
 
 	.align 2
-Cry_Crustle::
-	.incbin "sound/direct_sound_samples/cries/crustle.bin"
+Cry_Orochimon::
+	.incbin "sound/direct_sound_samples/cries/orochimon.bin"
 .endif @ P_FAMILY_MUMMYMON
 
 .if P_FAMILY_SCRAGGY == TRUE
