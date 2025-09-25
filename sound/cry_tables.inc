@@ -1171,9 +1171,9 @@ gCryTable::
 .if P_FAMILY_MUSYAMON == TRUE
 	cry Cry_Musyamon
 .endif @ P_FAMILY_MUSYAMON
-.if P_FAMILY_SPIRITOMB == TRUE
-	cry Cry_Spiritomb
-.endif @ P_FAMILY_SPIRITOMB
+.if P_FAMILY_NISEDRIMOGEMON == TRUE
+	cry Cry_Nisedrimogemon
+.endif @ P_FAMILY_NISEDRIMOGEMON
 .if P_FAMILY_GIBLE == TRUE
 	cry Cry_Gible
 	cry Cry_Gabite
@@ -3598,9 +3598,9 @@ gCryTable_Reverse::
 .if P_FAMILY_MUSYAMON == TRUE
 	cry_reverse Cry_Musyamon
 .endif @ P_FAMILY_MUSYAMON
-.if P_FAMILY_SPIRITOMB == TRUE
-	cry_reverse Cry_Spiritomb
-.endif @ P_FAMILY_SPIRITOMB
+.if P_FAMILY_NISEDRIMOGEMON == TRUE
+	cry_reverse Cry_Nisedrimogemon
+.endif @ P_FAMILY_NISEDRIMOGEMON
 .if P_FAMILY_GIBLE == TRUE
 	cry_reverse Cry_Gible
 	cry_reverse Cry_Gabite

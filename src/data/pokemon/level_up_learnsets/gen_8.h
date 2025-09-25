@@ -11131,8 +11131,8 @@ static const struct LevelUpMove sMusyamonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_MUSYAMON
 
-#if P_FAMILY_SPIRITOMB
-static const struct LevelUpMove sSpiritombLevelUpLearnset[] = {
+#if P_FAMILY_NISEDRIMOGEMON
+static const struct LevelUpMove sNisedrimogemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_NIGHT_SHADE),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE( 5, MOVE_SHADOW_SNEAK),
@@ -11149,7 +11149,7 @@ static const struct LevelUpMove sSpiritombLevelUpLearnset[] = {
     LEVEL_UP_MOVE(60, MOVE_DREAM_EATER),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SPIRITOMB
+#endif //P_FAMILY_NISEDRIMOGEMON
 
 #if P_FAMILY_GIBLE
 static const struct LevelUpMove sGibleLevelUpLearnset[] = {

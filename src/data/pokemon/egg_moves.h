@@ -3740,8 +3740,8 @@ static const u16 sMusyamonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_MUSYAMON
 
-#if P_FAMILY_SPIRITOMB
-static const u16 sSpiritombEggMoveLearnset[] = {
+#if P_FAMILY_NISEDRIMOGEMON
+static const u16 sNisedrimogemonEggMoveLearnset[] = {
     MOVE_DESTINY_BOND,
     MOVE_PAIN_SPLIT,
     MOVE_SMOKESCREEN,
@@ -3754,7 +3754,7 @@ static const u16 sSpiritombEggMoveLearnset[] = {
     MOVE_DISABLE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SPIRITOMB
+#endif //P_FAMILY_NISEDRIMOGEMON
 
 #if P_FAMILY_GIBLE
 static const u16 sGibleEggMoveLearnset[] = {

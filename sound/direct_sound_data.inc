@@ -3126,11 +3126,11 @@ Cry_Musyamon::
 	.incbin "sound/direct_sound_samples/cries/musyamon.bin"
 .endif @ P_FAMILY_MUSYAMON
 
-.if P_FAMILY_SPIRITOMB == TRUE
+.if P_FAMILY_NISEDRIMOGEMON == TRUE
 	.align 2
-Cry_Spiritomb::
-	.incbin "sound/direct_sound_samples/cries/spiritomb.bin"
-.endif @ P_FAMILY_SPIRITOMB
+Cry_Nisedrimogemon::
+	.incbin "sound/direct_sound_samples/cries/nisedrimogemon.bin"
+.endif @ P_FAMILY_NISEDRIMOGEMON
 
 .if P_FAMILY_GIBLE == TRUE
 	.align 2

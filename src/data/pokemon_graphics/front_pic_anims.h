@@ -5789,14 +5789,14 @@ static const union AnimCmd sAnim_Musyamon_1[] =
 };
 #endif //P_FAMILY_MUSYAMON
 
-#if P_FAMILY_SPIRITOMB
-static const union AnimCmd sAnim_Spiritomb_1[] =
+#if P_FAMILY_NISEDRIMOGEMON
+static const union AnimCmd sAnim_Nisedrimogemon_1[] =
 {
     ANIMCMD_FRAME(1, 20),
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SPIRITOMB
+#endif //P_FAMILY_NISEDRIMOGEMON
 
 #if P_FAMILY_GIBLE
 static const union AnimCmd sAnim_Gible_1[] =
@@ -11503,9 +11503,9 @@ SINGLE_ANIMATION(Morishellmon);
 #if P_FAMILY_MUSYAMON
 SINGLE_ANIMATION(Musyamon);
 #endif //P_FAMILY_MUSYAMON
-#if P_FAMILY_SPIRITOMB
-SINGLE_ANIMATION(Spiritomb);
-#endif //P_FAMILY_SPIRITOMB
+#if P_FAMILY_NISEDRIMOGEMON
+SINGLE_ANIMATION(Nisedrimogemon);
+#endif //P_FAMILY_NISEDRIMOGEMON
 #if P_FAMILY_GIBLE
 SINGLE_ANIMATION(Gible);
 SINGLE_ANIMATION(Gabite);

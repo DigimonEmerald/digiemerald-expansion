@@ -14961,23 +14961,23 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MUSYAMON
 
-#if P_FAMILY_SPIRITOMB
-    const u32 gMonFrontPic_Spiritomb[] = INCBIN_U32("graphics/pokemon/spiritomb/anim_front.4bpp.smol");
-    const u16 gMonPalette_Spiritomb[] = INCBIN_U16("graphics/pokemon/spiritomb/normal.gbapal");
-    const u32 gMonBackPic_Spiritomb[] = INCBIN_U32("graphics/pokemon/spiritomb/back.4bpp.smol");
-    const u16 gMonShinyPalette_Spiritomb[] = INCBIN_U16("graphics/pokemon/spiritomb/shiny.gbapal");
-    const u8 gMonIcon_Spiritomb[] = INCBIN_U8("graphics/pokemon/spiritomb/icon.4bpp");
+#if P_FAMILY_NISEDRIMOGEMON
+    const u32 gMonFrontPic_Nisedrimogemon[] = INCBIN_U32("graphics/pokemon/nisedrimogemon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Nisedrimogemon[] = INCBIN_U16("graphics/pokemon/nisedrimogemon/normal.gbapal");
+    const u32 gMonBackPic_Nisedrimogemon[] = INCBIN_U32("graphics/pokemon/nisedrimogemon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Nisedrimogemon[] = INCBIN_U16("graphics/pokemon/nisedrimogemon/shiny.gbapal");
+    const u8 gMonIcon_Nisedrimogemon[] = INCBIN_U8("graphics/pokemon/nisedrimogemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Spiritomb[] = INCBIN_U8("graphics/pokemon/spiritomb/footprint.1bpp");
+    const u8 gMonFootprint_Nisedrimogemon[] = INCBIN_U8("graphics/pokemon/nisedrimogemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Spiritomb[] = INCBIN_COMP("graphics/pokemon/spiritomb/overworld.4bpp");
+    const u32 gObjectEventPic_Nisedrimogemon[] = INCBIN_COMP("graphics/pokemon/nisedrimogemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Spiritomb[] = INCBIN_U16("graphics/pokemon/spiritomb/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Spiritomb[] = INCBIN_U16("graphics/pokemon/spiritomb/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Nisedrimogemon[] = INCBIN_U16("graphics/pokemon/nisedrimogemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Nisedrimogemon[] = INCBIN_U16("graphics/pokemon/nisedrimogemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_SPIRITOMB
+#endif //P_FAMILY_NISEDRIMOGEMON
 
 #if P_FAMILY_GIBLE
     const u32 gMonFrontPic_Gible[] = INCBIN_U32("graphics/pokemon/gible/anim_front.4bpp.smol");

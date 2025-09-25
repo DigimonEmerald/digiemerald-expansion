@@ -19702,8 +19702,8 @@ static const u16 sMusyamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_MUSYAMON
 
-#if P_FAMILY_SPIRITOMB
-static const u16 sSpiritombTeachableLearnset[] = {
+#if P_FAMILY_NISEDRIMOGEMON
+static const u16 sNisedrimogemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_CALM_MIND,
@@ -19735,7 +19735,7 @@ static const u16 sSpiritombTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SPIRITOMB
+#endif //P_FAMILY_NISEDRIMOGEMON
 
 #if P_FAMILY_GIBLE
 static const u16 sGibleTeachableLearnset[] = {

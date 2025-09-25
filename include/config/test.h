@@ -488,8 +488,8 @@
 #define P_FAMILY_KIWIMON                 TRUE
 #undef P_FAMILY_MUSYAMON
 #define P_FAMILY_MUSYAMON                  TRUE
-#undef P_FAMILY_SPIRITOMB
-#define P_FAMILY_SPIRITOMB               TRUE
+#undef P_FAMILY_NISEDRIMOGEMON
+#define P_FAMILY_NISEDRIMOGEMON               TRUE
 #undef P_FAMILY_GIBLE
 #define P_FAMILY_GIBLE                   TRUE
 #undef P_FAMILY_RIOLU

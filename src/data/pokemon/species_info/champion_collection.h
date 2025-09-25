@@ -7737,11 +7737,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_DRIMOGEMON
     [SPECIES_DRIMOGEMON] =
     {
-        .baseHP        = 93,
-        .baseAttack    = 82,
-        .baseDefense   = 77,
-        .baseSpeed     = 67,
-        .baseSpAttack  = 62,
+        .baseHP        = 95,
+        .baseAttack    = 80,
+        .baseDefense   = 80,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 60,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_GROUND),
         .attribute = TYPE_DATA,
@@ -15354,43 +15354,44 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_MUSYAMON
 
-#if P_FAMILY_SPIRITOMB
-    [SPECIES_SPIRITOMB] =
+#if P_FAMILY_NISEDRIMOGEMON
+    [SPECIES_NISEDRIMOGEMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 92,
-        .baseDefense   = 108,
-        .baseSpeed     = 35,
-        .baseSpAttack  = 92,
-        .baseSpDefense = 108,
-        .types = MON_TYPES(TYPE_GHOST, TYPE_DARK),
-        .catchRate = 100,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 170 : 168,
-        .evYield_Defense = 1,
-        .evYield_SpDefense = 1,
+        .baseHP        = 90,
+        .baseAttack    = 70,
+        .baseDefense   = 80,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_GROUND),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP = 3,
+        .evYield_SpAttack = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_PRESSURE, ABILITY_NONE, ABILITY_INFILTRATOR },
+        .abilities = { ABILITY_QUEENLY_MAJESTY, ABILITY_SAND_VEIL, ABILITY_NONE }, // Power Drill
         .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Spiritomb"),
-        .cryId = CRY_SPIRITOMB,
-        .natDexNum = NATIONAL_DEX_SPIRITOMB,
-        .categoryName = _("Forbidden"),
-        .height = 10,
-        .weight = 1080,
+        .speciesName = _("NiseDrimomon"),
+        .cryId = CRY_NISEDRIMOGEMON,
+        .natDexNum = NATIONAL_DEX_NISEDRIMOGEMON,
+        .categoryName = _("Mole"),
+        .height = 23,
+        .weight = 913,
         .description = COMPOUND_STRING(
-            "A Pokémon that was formed by 108 spirits.\n"
-            "Its constant mischief and misdeeds\n"
-            "resulted in it being bound to an\n"
-            "Odd Keystone by a mysterious spell."),
+            "While it is a distinct Drimogemon\n"
+            "species, the only discernible\n"
+            "difference is the suspicious mustache\n"
+            "that NiseDrimogemon sports."),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Spiritomb,
+        .frontPic = gMonFrontPic_Nisedrimogemon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 6,
         .frontAnimFrames = ANIM_FRAMES(
@@ -15398,31 +15399,31 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_GROW_IN_STAGES,
-        .backPic = gMonBackPic_Spiritomb,
+        .backPic = gMonBackPic_Nisedrimogemon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Spiritomb,
-        .shinyPalette = gMonShinyPalette_Spiritomb,
-        .iconSprite = gMonIcon_Spiritomb,
+        .palette = gMonPalette_Nisedrimogemon,
+        .shinyPalette = gMonShinyPalette_Nisedrimogemon,
+        .iconSprite = gMonIcon_Nisedrimogemon,
         .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 7, SHADOW_SIZE_L)
-        FOOTPRINT(Spiritomb)
+        FOOTPRINT(Nisedrimogemon)
         OVERWORLD(
-            sPicTable_Spiritomb,
+            sPicTable_Nisedrimogemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Spiritomb,
-            gShinyOverworldPalette_Spiritomb
+            gOverworldPalette_Nisedrimogemon,
+            gShinyOverworldPalette_Nisedrimogemon
         )
-        .levelUpLearnset = sSpiritombLevelUpLearnset,
-        .teachableLearnset = sSpiritombTeachableLearnset,
-        .eggMoveLearnset = sSpiritombEggMoveLearnset,
+        .levelUpLearnset = sNisedrimogemonLevelUpLearnset,
+        .teachableLearnset = sNisedrimogemonTeachableLearnset,
+        .eggMoveLearnset = sNisedrimogemonEggMoveLearnset,
     },
-#endif //P_FAMILY_SPIRITOMB
+#endif //P_FAMILY_NISEDRIMOGEMON
 
 #if P_FAMILY_GIBLE
     [SPECIES_GIBLE] =
