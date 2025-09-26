@@ -19774,7 +19774,7 @@ static const u16 sOrcamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGabiteTeachableLearnset[] = {
+static const u16 sPidmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,

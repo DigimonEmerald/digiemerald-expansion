@@ -15004,27 +15004,27 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
-    const u32 gMonFrontPic_Gabite[] = INCBIN_U32("graphics/pokemon/gabite/anim_front.4bpp.smol");
-    const u16 gMonPalette_Gabite[] = INCBIN_U16("graphics/pokemon/gabite/normal.gbapal");
-    const u32 gMonBackPic_Gabite[] = INCBIN_U32("graphics/pokemon/gabite/back.4bpp.smol");
-    const u16 gMonShinyPalette_Gabite[] = INCBIN_U16("graphics/pokemon/gabite/shiny.gbapal");
-    const u8 gMonIcon_Gabite[] = INCBIN_U8("graphics/pokemon/gabite/icon.4bpp");
+    const u32 gMonFrontPic_Pidmon[] = INCBIN_U32("graphics/pokemon/pidmon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Pidmon[] = INCBIN_U16("graphics/pokemon/pidmon/normal.gbapal");
+    const u32 gMonBackPic_Pidmon[] = INCBIN_U32("graphics/pokemon/pidmon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Pidmon[] = INCBIN_U16("graphics/pokemon/pidmon/shiny.gbapal");
+    const u8 gMonIcon_Pidmon[] = INCBIN_U8("graphics/pokemon/pidmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Gabite[] = INCBIN_U8("graphics/pokemon/gabite/footprint.1bpp");
+    const u8 gMonFootprint_Pidmon[] = INCBIN_U8("graphics/pokemon/pidmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Gabite[] = INCBIN_COMP("graphics/pokemon/gabite/overworld.4bpp");
+    const u32 gObjectEventPic_Pidmon[] = INCBIN_COMP("graphics/pokemon/pidmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Gabite[] = INCBIN_U16("graphics/pokemon/gabite/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Gabite[] = INCBIN_U16("graphics/pokemon/gabite/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Pidmon[] = INCBIN_U16("graphics/pokemon/pidmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Pidmon[] = INCBIN_U16("graphics/pokemon/pidmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_GabiteF[] = INCBIN_U32("graphics/pokemon/gabite/anim_frontf.4bpp.smol");
-    const u32 gMonBackPic_GabiteF[] = INCBIN_U32("graphics/pokemon/gabite/backf.4bpp.smol");
+    const u32 gMonFrontPic_PidmonF[] = INCBIN_U32("graphics/pokemon/pidmon/anim_frontf.4bpp.smol");
+    const u32 gMonBackPic_PidmonF[] = INCBIN_U32("graphics/pokemon/pidmon/backf.4bpp.smol");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_GabiteF[] = INCBIN_COMP("graphics/pokemon/gabite/overworldf.4bpp");
+    const u32 gObjectEventPic_PidmonF[] = INCBIN_COMP("graphics/pokemon/pidmon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 

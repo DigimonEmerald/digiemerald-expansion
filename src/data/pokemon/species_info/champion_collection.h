@@ -569,11 +569,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     [SPECIES_ANGEMON] =
     {
         .baseHP        = 65,
-        .baseAttack    = 73,
+        .baseAttack    = 70,
         .baseDefense   = 70,
-        .baseSpeed     = 69,
-        .baseSpAttack  = 104,
-        .baseSpDefense = 89,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_LIGHT, TYPE_FLYING),
         .attribute = TYPE_VACCINE,
         .catchRate = 115,
@@ -591,7 +591,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .speciesName = _("Angemon"),
         .cryId = CRY_ANGEMON,
         .natDexNum = NATIONAL_DEX_ANGEMON,
-        .categoryName = _("Angel"),
+        .categoryName = _("Virtous"),
         .height = 27,
         .weight = 791,
         .description = COMPOUND_STRING(
@@ -15507,44 +15507,46 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sOrcamonLevelUpLearnset,
         .teachableLearnset = sOrcamonTeachableLearnset,
         .eggMoveLearnset = sOrcamonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_GABITE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_PIDMON}),
     },
 
-    [SPECIES_GABITE] =
+    [SPECIES_PIDMON] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 90,
-        .baseDefense   = 65,
-        .baseSpeed     = 82,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_GROUND),
-        .catchRate = 45,
-        .expYield = 144,
-        .evYield_Attack = 2,
+        .baseHP        = 50,
+        .baseAttack    = 75,
+        .baseDefense   = 70,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_LIGHT, TYPE_FLYING),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_SpDefense = 2,
+        .evYield_SpAttack = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_SAND_VEIL, ABILITY_NONE, ABILITY_ROUGH_SKIN },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Gabite"),
-        .cryId = CRY_GABITE,
-        .natDexNum = NATIONAL_DEX_GABITE,
-        .categoryName = _("Cave"),
-        .height = 14,
-        .weight = 560,
+        .abilities = { ABILITY_PASTEL_VEIL, ABILITY_SERENE_GRACE, ABILITY_PURIFYING_SALT },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Pidmon"),
+        .cryId = CRY_PIDMON,
+        .natDexNum = NATIONAL_DEX_PIDMON,
+        .categoryName = _("Virtous"),
+        .height = 27,
+        .weight = 791,
         .description = COMPOUND_STRING(
-            "Shiny objects are its passion. It can be\n"
-            "found in its cave, scarcely moving,\n"
-            "its gaze fixed on the jewels it's amassed\n"
-            "or Carbink it has caught."),
+            "Although Pidmons strength is comparable\n"
+            "to Angemons, it is ranked lower. It\n"
+            "holds a deep-seated hatred for\n"
+            "evil and will fight it at all costs."),
         .pokemonScale = 265,
         .pokemonOffset = 2,
         .trainerScale = 262,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Gabite,
+        .frontPic = gMonFrontPic_Pidmon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
         .frontAnimFrames = ANIM_FRAMES(
@@ -15552,41 +15554,41 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 20),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Gabite,
+        .backPic = gMonBackPic_Pidmon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 3,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Gabite,
-        .shinyPalette = gMonShinyPalette_Gabite,
-        .iconSprite = gMonIcon_Gabite,
+        .palette = gMonPalette_Pidmon,
+        .shinyPalette = gMonShinyPalette_Pidmon,
+        .iconSprite = gMonIcon_Pidmon,
         .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_GabiteF,
+        .frontPicFemale = gMonFrontPic_PidmonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
-        .backPicFemale = gMonBackPic_GabiteF,
+        .backPicFemale = gMonBackPic_PidmonF,
         .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(3, 8, SHADOW_SIZE_M)
-        FOOTPRINT(Gabite)
+        FOOTPRINT(Pidmon)
         OVERWORLD(
-            sPicTable_Gabite,
+            sPicTable_Pidmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Gabite,
-            gShinyOverworldPalette_Gabite
+            gOverworldPalette_Pidmon,
+            gShinyOverworldPalette_Pidmon
         )
         OVERWORLD_FEMALE(
-            sPicTable_GabiteF,
+            sPicTable_PidmonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sGabiteLevelUpLearnset,
-        .teachableLearnset = sGabiteTeachableLearnset,
+        .levelUpLearnset = sPidmonLevelUpLearnset,
+        .teachableLearnset = sPidmonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_GARCHOMP}),
     },
 

@@ -458,7 +458,7 @@
 #define SPECIES_MUSYAMON                                  441
 #define SPECIES_NISEDRIMOGEMON                               442
 #define SPECIES_ORCAMON                                   443
-#define SPECIES_GABITE                                  444
+#define SPECIES_PIDMON                                  444
 #define SPECIES_GARCHOMP                                445
 #define SPECIES_MUNCHLAX                                446
 #define SPECIES_RIOLU                                   447

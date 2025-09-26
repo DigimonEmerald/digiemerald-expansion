@@ -5807,7 +5807,7 @@ static const union AnimCmd sAnim_Orcamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Gabite_1[] =
+static const union AnimCmd sAnim_Pidmon_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 20),
@@ -11508,7 +11508,7 @@ SINGLE_ANIMATION(Nisedrimogemon);
 #endif //P_FAMILY_NISEDRIMOGEMON
 #if P_FAMILY_ORCAMON
 SINGLE_ANIMATION(Orcamon);
-SINGLE_ANIMATION(Gabite);
+SINGLE_ANIMATION(Pidmon);
 SINGLE_ANIMATION(Garchomp);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(GarchompMega);

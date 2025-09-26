@@ -3138,8 +3138,8 @@ Cry_Orcamon::
 	.incbin "sound/direct_sound_samples/cries/orcamon.bin"
 
 	.align 2
-Cry_Gabite::
-	.incbin "sound/direct_sound_samples/cries/gabite.bin"
+Cry_Pidmon::
+	.incbin "sound/direct_sound_samples/cries/pidmon.bin"
 
 	.align 2
 Cry_Garchomp::

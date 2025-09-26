@@ -2532,10 +2532,10 @@ $(POKEMONGFXDIR)/orcamon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/orcamon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/gabite/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/pidmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/gabite/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/pidmon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/garchomp/overworld.4bpp: %.4bpp: %.png

@@ -451,6 +451,7 @@ MoriShellmon - Bronzong
 Musyamon - Chatot
 NiseDrimogemon - Spriritomb
 Orcamon - Gible
+Pidmon - Gabite
 
 Ultimate List
 
