@@ -729,8 +729,8 @@
 #define P_FAMILY_KINGETEMON                TRUE
 #undef P_FAMILY_MACHINEDRAMON
 #define P_FAMILY_MACHINEDRAMON                 TRUE
-#undef P_FAMILY_INKAY
-#define P_FAMILY_INKAY                   TRUE
+#undef P_FAMILY_PUPPETMON
+#define P_FAMILY_PUPPETMON                   TRUE
 #undef P_FAMILY_BINACLE
 #define P_FAMILY_BINACLE                 TRUE
 #undef P_FAMILY_SKRELP

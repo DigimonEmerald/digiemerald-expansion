@@ -4850,14 +4850,14 @@ static const struct SpriteFrameImage sPicTable_Piedmon[] = {
 };
 #endif //P_FAMILY_MACHINEDRAMON
 
-#if P_FAMILY_INKAY
-static const struct SpriteFrameImage sPicTable_Inkay[] = {
-    overworld_ascending_frames(gObjectEventPic_Inkay, 4, 4),
+#if P_FAMILY_PUPPETMON
+static const struct SpriteFrameImage sPicTable_Puppetmon[] = {
+    overworld_ascending_frames(gObjectEventPic_Puppetmon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Malamar[] = {
     overworld_ascending_frames(gObjectEventPic_Malamar, 4, 4),
 };
-#endif //P_FAMILY_INKAY
+#endif //P_FAMILY_PUPPETMON
 
 #if P_FAMILY_BINACLE
 static const struct SpriteFrameImage sPicTable_Binacle[] = {

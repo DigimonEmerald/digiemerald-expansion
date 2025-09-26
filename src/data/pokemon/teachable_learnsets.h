@@ -27454,8 +27454,8 @@ static const u16 sPiedmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_MACHINEDRAMON
 
-#if P_FAMILY_INKAY
-static const u16 sInkayTeachableLearnset[] = {
+#if P_FAMILY_PUPPETMON
+static const u16 sPuppetmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
@@ -27521,7 +27521,7 @@ static const u16 sMalamarTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_INKAY
+#endif //P_FAMILY_PUPPETMON
 
 #if P_FAMILY_BINACLE
 static const u16 sBinacleTeachableLearnset[] = {

@@ -20055,20 +20055,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MACHINEDRAMON
 
-#if P_FAMILY_INKAY
-    const u32 gMonFrontPic_Inkay[] = INCBIN_U32("graphics/pokemon/inkay/anim_front.4bpp.smol");
-    const u16 gMonPalette_Inkay[] = INCBIN_U16("graphics/pokemon/inkay/normal.gbapal");
-    const u32 gMonBackPic_Inkay[] = INCBIN_U32("graphics/pokemon/inkay/back.4bpp.smol");
-    const u16 gMonShinyPalette_Inkay[] = INCBIN_U16("graphics/pokemon/inkay/shiny.gbapal");
-    const u8 gMonIcon_Inkay[] = INCBIN_U8("graphics/pokemon/inkay/icon.4bpp");
+#if P_FAMILY_PUPPETMON
+    const u32 gMonFrontPic_Puppetmon[] = INCBIN_U32("graphics/pokemon/puppetmon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Puppetmon[] = INCBIN_U16("graphics/pokemon/puppetmon/normal.gbapal");
+    const u32 gMonBackPic_Puppetmon[] = INCBIN_U32("graphics/pokemon/puppetmon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Puppetmon[] = INCBIN_U16("graphics/pokemon/puppetmon/shiny.gbapal");
+    const u8 gMonIcon_Puppetmon[] = INCBIN_U8("graphics/pokemon/puppetmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Inkay[] = INCBIN_U8("graphics/pokemon/inkay/footprint.1bpp");
+    const u8 gMonFootprint_Puppetmon[] = INCBIN_U8("graphics/pokemon/puppetmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Inkay[] = INCBIN_COMP("graphics/pokemon/inkay/overworld.4bpp");
+    const u32 gObjectEventPic_Puppetmon[] = INCBIN_COMP("graphics/pokemon/puppetmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Inkay[] = INCBIN_U16("graphics/pokemon/inkay/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Inkay[] = INCBIN_U16("graphics/pokemon/inkay/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Puppetmon[] = INCBIN_U16("graphics/pokemon/puppetmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Puppetmon[] = INCBIN_U16("graphics/pokemon/puppetmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -20087,7 +20087,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Malamar[] = INCBIN_U16("graphics/pokemon/malamar/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_INKAY
+#endif //P_FAMILY_PUPPETMON
 
 #if P_FAMILY_BINACLE
     const u32 gMonFrontPic_Binacle[] = INCBIN_U32("graphics/pokemon/binacle/anim_front.4bpp.smol");

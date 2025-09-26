@@ -4335,15 +4335,15 @@ Cry_Piedmon::
 	.incbin "sound/direct_sound_samples/cries/piedmon.bin"
 .endif @ P_FAMILY_MACHINEDRAMON
 
-.if P_FAMILY_INKAY == TRUE
+.if P_FAMILY_PUPPETMON == TRUE
 	.align 2
-Cry_Inkay::
-	.incbin "sound/direct_sound_samples/cries/inkay.bin"
+Cry_Puppetmon::
+	.incbin "sound/direct_sound_samples/cries/puppetmon.bin"
 
 	.align 2
 Cry_Malamar::
 	.incbin "sound/direct_sound_samples/cries/malamar.bin"
-.endif @ P_FAMILY_INKAY
+.endif @ P_FAMILY_PUPPETMON
 
 .if P_FAMILY_BINACLE == TRUE
 	.align 2

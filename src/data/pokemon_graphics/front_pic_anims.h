@@ -8481,8 +8481,8 @@ static const union AnimCmd sAnim_Piedmon_1[] =
 };
 #endif //P_FAMILY_MACHINEDRAMON
 
-#if P_FAMILY_INKAY
-static const union AnimCmd sAnim_Inkay_1[] =
+#if P_FAMILY_PUPPETMON
+static const union AnimCmd sAnim_Puppetmon_1[] =
 {
     ANIMCMD_FRAME(1, 25),
     ANIMCMD_FRAME(0, 25),
@@ -8499,7 +8499,7 @@ static const union AnimCmd sAnim_Malamar_1[] =
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_INKAY
+#endif //P_FAMILY_PUPPETMON
 
 #if P_FAMILY_BINACLE
 static const union AnimCmd sAnim_Binacle_1[] =
@@ -12034,10 +12034,10 @@ SINGLE_ANIMATION(Millenniummon);
 SINGLE_ANIMATION(Machinedramon);
 SINGLE_ANIMATION(Piedmon);
 #endif //P_FAMILY_MACHINEDRAMON
-#if P_FAMILY_INKAY
-SINGLE_ANIMATION(Inkay);
+#if P_FAMILY_PUPPETMON
+SINGLE_ANIMATION(Puppetmon);
 SINGLE_ANIMATION(Malamar);
-#endif //P_FAMILY_INKAY
+#endif //P_FAMILY_PUPPETMON
 #if P_FAMILY_BINACLE
 SINGLE_ANIMATION(Binacle);
 SINGLE_ANIMATION(Barbaracle);

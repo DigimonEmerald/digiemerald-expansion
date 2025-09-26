@@ -721,7 +721,7 @@
 #define SPECIES_MILLENNIUMMON                              683
 #define SPECIES_MACHINEDRAMON                                 684
 #define SPECIES_PIEDMON                                685
-#define SPECIES_INKAY                                   686
+#define SPECIES_PUPPETMON                                   686
 #define SPECIES_MALAMAR                                 687
 #define SPECIES_BINACLE                                 688
 #define SPECIES_BARBARACLE                              689

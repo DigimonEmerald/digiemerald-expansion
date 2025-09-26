@@ -558,5 +558,6 @@ KingEtemon - Spritzee
 Millenniummon - Aromatisse
 Machinedramon - Swirlix
 Piedmon - Slurpuff
+Puppetmon - Inkay
 
 SPECIES NAME LENGTH MAX = 13

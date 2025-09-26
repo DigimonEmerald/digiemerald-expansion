@@ -1664,10 +1664,10 @@ gCryTable::
 	cry Cry_Machinedramon
 	cry Cry_Piedmon
 .endif @ P_FAMILY_MACHINEDRAMON
-.if P_FAMILY_INKAY == TRUE
-	cry Cry_Inkay
+.if P_FAMILY_PUPPETMON == TRUE
+	cry Cry_Puppetmon
 	cry Cry_Malamar
-.endif @ P_FAMILY_INKAY
+.endif @ P_FAMILY_PUPPETMON
 .if P_FAMILY_BINACLE == TRUE
 	cry Cry_Binacle
 	cry Cry_Barbaracle
@@ -4091,10 +4091,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Machinedramon
 	cry_reverse Cry_Piedmon
 .endif @ P_FAMILY_MACHINEDRAMON
-.if P_FAMILY_INKAY == TRUE
-	cry_reverse Cry_Inkay
+.if P_FAMILY_PUPPETMON == TRUE
+	cry_reverse Cry_Puppetmon
 	cry_reverse Cry_Malamar
-.endif @ P_FAMILY_INKAY
+.endif @ P_FAMILY_PUPPETMON
 .if P_FAMILY_BINACLE == TRUE
 	cry_reverse Cry_Binacle
 	cry_reverse Cry_Barbaracle

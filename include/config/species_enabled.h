@@ -402,7 +402,7 @@
 #define P_FAMILY_PHOENIXMON                 P_GEN_6_POKEMON
 #define P_FAMILY_KINGETEMON                P_GEN_6_POKEMON
 #define P_FAMILY_MACHINEDRAMON                 P_GEN_6_POKEMON
-#define P_FAMILY_INKAY                   P_GEN_6_POKEMON
+#define P_FAMILY_PUPPETMON                   P_GEN_6_POKEMON
 #define P_FAMILY_BINACLE                 P_GEN_6_POKEMON
 #define P_FAMILY_SKRELP                  P_GEN_6_POKEMON
 #define P_FAMILY_CLAUNCHER               P_GEN_6_POKEMON

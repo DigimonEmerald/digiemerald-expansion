@@ -3156,42 +3156,44 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
 #endif //P_FAMILY_MACHINEDRAMON
 
-#if P_FAMILY_INKAY
-    [SPECIES_INKAY] =
+#if P_FAMILY_PUPPETMON
+    [SPECIES_PUPPETMON] =
     {
-        .baseHP        = 53,
-        .baseAttack    = 54,
-        .baseDefense   = 53,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 37,
-        .baseSpDefense = 46,
-        .types = MON_TYPES(TYPE_DARK, TYPE_PSYCHIC),
-        .catchRate = 190,
-        .expYield = 58,
-        .evYield_Attack = 1,
+        .baseHP        = 55,
+        .baseAttack    = 140,
+        .baseDefense   = 75,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_FAIRY),
+        .attribute = TYPE_VIRUS,   
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_Attack = 4,
+        .evYield_SpAttack = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_CONTRARY, ABILITY_SUCTION_CUPS, ABILITY_INFILTRATOR },
+        .abilities = { ABILITY_PRANKSTER, ABILITY_MOODY, ABILITY_POISON_PUPPETEER },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Inkay"),
-        .cryId = CRY_INKAY,
-        .natDexNum = NATIONAL_DEX_INKAY,
-        .categoryName = _("Revolving"),
-        .height = 4,
-        .weight = 35,
+        .speciesName = _("Puppetmon"),
+        .cryId = CRY_PUPPETMON,
+        .natDexNum = NATIONAL_DEX_PUPPETMON,
+        .categoryName = _("Marionette"),
+        .height = 10,
+        .weight = 378,
         .description = COMPOUND_STRING(
-            "It flashes the light-emitting spots on its\n"
-            "body, which drains its opponent's will\n"
-            "to fight. It takes the opportunity to\n"
-            "scuttle away and hide."),
+            "Its detestable personality likely comes\n"
+            "from the fact that it is built from\n"
+            "Cherrymons data. Puppetmon loves to lie\n"
+            "and pull nasty pranks on weak Digimon."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Inkay,
+        .frontPic = gMonFrontPic_Puppetmon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 14,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3202,29 +3204,29 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         ),
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 14,
-        .backPic = gMonBackPic_Inkay,
+        .backPic = gMonBackPic_Puppetmon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 9,
         .backAnimId = BACK_ANIM_SHRINK_GROW,
-        .palette = gMonPalette_Inkay,
-        .shinyPalette = gMonShinyPalette_Inkay,
-        .iconSprite = gMonIcon_Inkay,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Puppetmon,
+        .shinyPalette = gMonShinyPalette_Puppetmon,
+        .iconSprite = gMonIcon_Puppetmon,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 11, SHADOW_SIZE_S)
-        FOOTPRINT(Inkay)
+        FOOTPRINT(Puppetmon)
         OVERWORLD(
-            sPicTable_Inkay,
+            sPicTable_Puppetmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Inkay,
-            gShinyOverworldPalette_Inkay
+            gOverworldPalette_Puppetmon,
+            gShinyOverworldPalette_Puppetmon
         )
-        .levelUpLearnset = sInkayLevelUpLearnset,
-        .teachableLearnset = sInkayTeachableLearnset,
-        .eggMoveLearnset = sInkayEggMoveLearnset,
+        .levelUpLearnset = sPuppetmonLevelUpLearnset,
+        .teachableLearnset = sPuppetmonTeachableLearnset,
+        .eggMoveLearnset = sPuppetmonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_MALAMAR}),
     },
 
@@ -3295,7 +3297,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sMalamarLevelUpLearnset,
         .teachableLearnset = sMalamarTeachableLearnset,
     },
-#endif //P_FAMILY_INKAY
+#endif //P_FAMILY_PUPPETMON
 
 #if P_FAMILY_BINACLE
     [SPECIES_BINACLE] =

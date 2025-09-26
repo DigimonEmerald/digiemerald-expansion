@@ -5076,8 +5076,8 @@ static const u16 sMachinedramonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_MACHINEDRAMON
 
-#if P_FAMILY_INKAY
-static const u16 sInkayEggMoveLearnset[] = {
+#if P_FAMILY_PUPPETMON
+static const u16 sPuppetmonEggMoveLearnset[] = {
     MOVE_SIMPLE_BEAM,
     MOVE_POWER_SPLIT,
     MOVE_CAMOUFLAGE,
@@ -5086,7 +5086,7 @@ static const u16 sInkayEggMoveLearnset[] = {
     MOVE_GUARD_SWAP,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_INKAY
+#endif //P_FAMILY_PUPPETMON
 
 #if P_FAMILY_BINACLE
 static const u16 sBinacleEggMoveLearnset[] = {
