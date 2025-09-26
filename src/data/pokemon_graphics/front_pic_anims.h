@@ -8470,7 +8470,7 @@ static const union AnimCmd sAnim_Machinedramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Slurpuff_1[] =
+static const union AnimCmd sAnim_Piedmon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 10),
@@ -12032,7 +12032,7 @@ SINGLE_ANIMATION(Millenniummon);
 #endif //P_FAMILY_KINGETEMON
 #if P_FAMILY_MACHINEDRAMON
 SINGLE_ANIMATION(Machinedramon);
-SINGLE_ANIMATION(Slurpuff);
+SINGLE_ANIMATION(Piedmon);
 #endif //P_FAMILY_MACHINEDRAMON
 #if P_FAMILY_INKAY
 SINGLE_ANIMATION(Inkay);

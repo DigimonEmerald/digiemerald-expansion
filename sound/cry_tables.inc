@@ -1662,7 +1662,7 @@ gCryTable::
 .endif @ P_FAMILY_KINGETEMON
 .if P_FAMILY_MACHINEDRAMON == TRUE
 	cry Cry_Machinedramon
-	cry Cry_Slurpuff
+	cry Cry_Piedmon
 .endif @ P_FAMILY_MACHINEDRAMON
 .if P_FAMILY_INKAY == TRUE
 	cry Cry_Inkay
@@ -4089,7 +4089,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_KINGETEMON
 .if P_FAMILY_MACHINEDRAMON == TRUE
 	cry_reverse Cry_Machinedramon
-	cry_reverse Cry_Slurpuff
+	cry_reverse Cry_Piedmon
 .endif @ P_FAMILY_MACHINEDRAMON
 .if P_FAMILY_INKAY == TRUE
 	cry_reverse Cry_Inkay

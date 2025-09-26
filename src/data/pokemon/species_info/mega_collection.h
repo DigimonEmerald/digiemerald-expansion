@@ -3079,45 +3079,48 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sMachinedramonLevelUpLearnset,
         .teachableLearnset = sMachinedramonTeachableLearnset,
         .eggMoveLearnset = sMachinedramonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_SLURPUFF, CONDITIONS({IF_HOLD_ITEM, ITEM_WHIPPED_DREAM})},
-                                {EVO_ITEM, ITEM_WHIPPED_DREAM, SPECIES_SLURPUFF}),
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_PIEDMON, CONDITIONS({IF_HOLD_ITEM, ITEM_WHIPPED_DREAM})},
+                                {EVO_ITEM, ITEM_WHIPPED_DREAM, SPECIES_PIEDMON}),
     },
 
-    [SPECIES_SLURPUFF] =
+    [SPECIES_PIEDMON] =
     {
-        .baseHP        = 82,
-        .baseAttack    = 80,
-        .baseDefense   = 86,
-        .baseSpeed     = 72,
-        .baseSpAttack  = 85,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_FAIRY),
-        .catchRate = 140,
-        .expYield = 168,
-        .evYield_Defense = 2,
+        .baseHP        = 75,
+        .baseAttack    = 100,
+        .baseDefense   = 95,
+        .baseSpeed     = 140,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_PSYCHIC),
+        .attribute = TYPE_VIRUS,   
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_Attack = 1,
+        .evYield_Speed = 3,
+        .evYield_SpAttack = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_SWEET_VEIL, ABILITY_NONE, ABILITY_UNBURDEN },
-        .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Slurpuff"),
-        .cryId = CRY_SLURPUFF,
-        .natDexNum = NATIONAL_DEX_SLURPUFF,
-        .categoryName = _("Meringue"),
-        .height = 8,
-        .weight = 50,
+        .abilities = { ABILITY_PRANKSTER, ABILITY_TELEPATHY, ABILITY_MAGICIAN },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Piedmon"),
+        .cryId = CRY_PIEDMON,
+        .natDexNum = NATIONAL_DEX_PIEDMON,
+        .categoryName = _("Hell Clown"),
+        .height = 22,
+        .weight = 746,
         .description = COMPOUND_STRING(
-            "Slurpuff can distinguish even the\n"
-            "faintest of scents. It puts its sensitive\n"
-            "sense of smell to use by helping pastry\n"
-            "chefs in their work."),
+            "The only thing you can do if you\n"
+            "encounter Piedmon in the wild is to\n"
+            "curse your fate as it will just toy\n"
+            "with you until your demise."),
         .pokemonScale = 366,
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Slurpuff,
+        .frontPic = gMonFrontPic_Piedmon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3128,28 +3131,28 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Slurpuff,
+        .backPic = gMonBackPic_Piedmon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Slurpuff,
-        .shinyPalette = gMonShinyPalette_Slurpuff,
-        .iconSprite = gMonIcon_Slurpuff,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Piedmon,
+        .shinyPalette = gMonShinyPalette_Piedmon,
+        .iconSprite = gMonIcon_Piedmon,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 6, SHADOW_SIZE_M)
-        FOOTPRINT(Slurpuff)
+        FOOTPRINT(Piedmon)
         OVERWORLD(
-            sPicTable_Slurpuff,
+            sPicTable_Piedmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Slurpuff,
-            gShinyOverworldPalette_Slurpuff
+            gOverworldPalette_Piedmon,
+            gShinyOverworldPalette_Piedmon
         )
-        .levelUpLearnset = sSlurpuffLevelUpLearnset,
-        .teachableLearnset = sSlurpuffTeachableLearnset,
+        .levelUpLearnset = sPiedmonLevelUpLearnset,
+        .teachableLearnset = sPiedmonTeachableLearnset,
     },
 #endif //P_FAMILY_MACHINEDRAMON
 

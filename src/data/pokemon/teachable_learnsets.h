@@ -27423,7 +27423,7 @@ static const u16 sMachinedramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSlurpuffTeachableLearnset[] = {
+static const u16 sPiedmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,

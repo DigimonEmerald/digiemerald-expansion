@@ -557,5 +557,6 @@ Jijimon - Doublade
 KingEtemon - Spritzee
 Millenniummon - Aromatisse
 Machinedramon - Swirlix
+Piedmon - Slurpuff
 
 SPECIES NAME LENGTH MAX = 13

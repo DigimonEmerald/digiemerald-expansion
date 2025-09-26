@@ -20038,19 +20038,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Slurpuff[] = INCBIN_U32("graphics/pokemon/slurpuff/anim_front.4bpp.smol");
-    const u16 gMonPalette_Slurpuff[] = INCBIN_U16("graphics/pokemon/slurpuff/normal.gbapal");
-    const u32 gMonBackPic_Slurpuff[] = INCBIN_U32("graphics/pokemon/slurpuff/back.4bpp.smol");
-    const u16 gMonShinyPalette_Slurpuff[] = INCBIN_U16("graphics/pokemon/slurpuff/shiny.gbapal");
-    const u8 gMonIcon_Slurpuff[] = INCBIN_U8("graphics/pokemon/slurpuff/icon.4bpp");
+    const u32 gMonFrontPic_Piedmon[] = INCBIN_U32("graphics/pokemon/piedmon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Piedmon[] = INCBIN_U16("graphics/pokemon/piedmon/normal.gbapal");
+    const u32 gMonBackPic_Piedmon[] = INCBIN_U32("graphics/pokemon/piedmon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Piedmon[] = INCBIN_U16("graphics/pokemon/piedmon/shiny.gbapal");
+    const u8 gMonIcon_Piedmon[] = INCBIN_U8("graphics/pokemon/piedmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Slurpuff[] = INCBIN_U8("graphics/pokemon/slurpuff/footprint.1bpp");
+    const u8 gMonFootprint_Piedmon[] = INCBIN_U8("graphics/pokemon/piedmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Slurpuff[] = INCBIN_COMP("graphics/pokemon/slurpuff/overworld.4bpp");
+    const u32 gObjectEventPic_Piedmon[] = INCBIN_COMP("graphics/pokemon/piedmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Slurpuff[] = INCBIN_U16("graphics/pokemon/slurpuff/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Slurpuff[] = INCBIN_U16("graphics/pokemon/slurpuff/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Piedmon[] = INCBIN_U16("graphics/pokemon/piedmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Piedmon[] = INCBIN_U16("graphics/pokemon/piedmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MACHINEDRAMON

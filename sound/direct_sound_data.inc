@@ -4331,8 +4331,8 @@ Cry_Machinedramon::
 	.incbin "sound/direct_sound_samples/cries/machinedramon.bin"
 
 	.align 2
-Cry_Slurpuff::
-	.incbin "sound/direct_sound_samples/cries/slurpuff.bin"
+Cry_Piedmon::
+	.incbin "sound/direct_sound_samples/cries/piedmon.bin"
 .endif @ P_FAMILY_MACHINEDRAMON
 
 .if P_FAMILY_INKAY == TRUE

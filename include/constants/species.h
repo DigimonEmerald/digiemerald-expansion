@@ -720,7 +720,7 @@
 #define SPECIES_KINGETEMON                                682
 #define SPECIES_MILLENNIUMMON                              683
 #define SPECIES_MACHINEDRAMON                                 684
-#define SPECIES_SLURPUFF                                685
+#define SPECIES_PIEDMON                                685
 #define SPECIES_INKAY                                   686
 #define SPECIES_MALAMAR                                 687
 #define SPECIES_BINACLE                                 688
