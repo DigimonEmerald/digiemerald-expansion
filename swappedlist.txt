@@ -452,6 +452,7 @@ Musyamon - Chatot
 NiseDrimogemon - Spriritomb
 Orcamon - Gible
 Pidmon - Gabite
+PlatinumSukamon - Garchomp
 
 Ultimate List
 
@@ -559,5 +560,6 @@ Millenniummon - Aromatisse
 Machinedramon - Swirlix
 Piedmon - Slurpuff
 Puppetmon - Inkay
+Plesiomon - Malamar
 
 SPECIES NAME LENGTH MAX = 13

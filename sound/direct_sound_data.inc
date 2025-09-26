@@ -4341,8 +4341,8 @@ Cry_Puppetmon::
 	.incbin "sound/direct_sound_samples/cries/puppetmon.bin"
 
 	.align 2
-Cry_Malamar::
-	.incbin "sound/direct_sound_samples/cries/malamar.bin"
+Cry_Plesiomon::
+	.incbin "sound/direct_sound_samples/cries/plesiomon.bin"
 .endif @ P_FAMILY_PUPPETMON
 
 .if P_FAMILY_BINACLE == TRUE

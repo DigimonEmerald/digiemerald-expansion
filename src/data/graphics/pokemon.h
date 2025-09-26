@@ -20072,19 +20072,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Malamar[] = INCBIN_U32("graphics/pokemon/malamar/anim_front.4bpp.smol");
-    const u16 gMonPalette_Malamar[] = INCBIN_U16("graphics/pokemon/malamar/normal.gbapal");
-    const u32 gMonBackPic_Malamar[] = INCBIN_U32("graphics/pokemon/malamar/back.4bpp.smol");
-    const u16 gMonShinyPalette_Malamar[] = INCBIN_U16("graphics/pokemon/malamar/shiny.gbapal");
-    const u8 gMonIcon_Malamar[] = INCBIN_U8("graphics/pokemon/malamar/icon.4bpp");
+    const u32 gMonFrontPic_Plesiomon[] = INCBIN_U32("graphics/pokemon/plesiomon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Plesiomon[] = INCBIN_U16("graphics/pokemon/plesiomon/normal.gbapal");
+    const u32 gMonBackPic_Plesiomon[] = INCBIN_U32("graphics/pokemon/plesiomon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Plesiomon[] = INCBIN_U16("graphics/pokemon/plesiomon/shiny.gbapal");
+    const u8 gMonIcon_Plesiomon[] = INCBIN_U8("graphics/pokemon/plesiomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Malamar[] = INCBIN_U8("graphics/pokemon/malamar/footprint.1bpp");
+    const u8 gMonFootprint_Plesiomon[] = INCBIN_U8("graphics/pokemon/plesiomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Malamar[] = INCBIN_COMP("graphics/pokemon/malamar/overworld.4bpp");
+    const u32 gObjectEventPic_Plesiomon[] = INCBIN_COMP("graphics/pokemon/plesiomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Malamar[] = INCBIN_U16("graphics/pokemon/malamar/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Malamar[] = INCBIN_U16("graphics/pokemon/malamar/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Plesiomon[] = INCBIN_U16("graphics/pokemon/plesiomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Plesiomon[] = INCBIN_U16("graphics/pokemon/plesiomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_PUPPETMON

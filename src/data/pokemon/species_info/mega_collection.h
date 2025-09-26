@@ -3227,44 +3227,47 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sPuppetmonLevelUpLearnset,
         .teachableLearnset = sPuppetmonTeachableLearnset,
         .eggMoveLearnset = sPuppetmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_MALAMAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_PLESIOMON}),
     },
 
-    [SPECIES_MALAMAR] =
+    [SPECIES_PLESIOMON] =
     {
-        .baseHP        = 86,
-        .baseAttack    = 92,
-        .baseDefense   = 88,
-        .baseSpeed     = 73,
-        .baseSpAttack  = 68,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_DARK, TYPE_PSYCHIC),
-        .catchRate = 80,
-        .expYield = 169,
-        .evYield_Attack = 2,
+        .baseHP        = 90,
+        .baseAttack    = 85,
+        .baseDefense   = 110,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 120,
+        .types = MON_TYPES(TYPE_WATER),
+        .attribute = TYPE_DATA,   
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_Defense = 2,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_CONTRARY, ABILITY_SUCTION_CUPS, ABILITY_INFILTRATOR },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Malamar"),
-        .cryId = CRY_MALAMAR,
-        .natDexNum = NATIONAL_DEX_MALAMAR,
-        .categoryName = _("Overturning"),
-        .height = 15,
-        .weight = 470,
+        .abilities = { ABILITY_DRIZZLE, ABILITY_LIQUID_VOICE, ABILITY_WANDERING_SPIRIT },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Plesiomon"),
+        .cryId = CRY_PLESIOMON,
+        .natDexNum = NATIONAL_DEX_PLESIOMON,
+        .categoryName = _("Mythical"),
+        .height = 95,
+        .weight = 5357,
         .description = COMPOUND_STRING(
-            "It lures prey close with hypnotic motions,\n"
-            "then wraps its tentacles around it before\n"
-            "finishing it off with digestive fluids. It\n"
-            "forces others to do whatever it wants."),
+            "Long rumoured by researchers, Plesiomon\n"
+            "was first found on British\n"
+            "cryptozoology computers. It shrouds\n"
+            "itself in a fog whenever it is near"),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Malamar,
+        .frontPic = gMonFrontPic_Plesiomon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3274,28 +3277,28 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 20),
         ),
         .frontAnimId = ANIM_CIRCULAR_STRETCH_TWICE,
-        .backPic = gMonBackPic_Malamar,
+        .backPic = gMonBackPic_Plesiomon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Malamar,
-        .shinyPalette = gMonShinyPalette_Malamar,
-        .iconSprite = gMonIcon_Malamar,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Plesiomon,
+        .shinyPalette = gMonShinyPalette_Plesiomon,
+        .iconSprite = gMonIcon_Plesiomon,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(5, 14, SHADOW_SIZE_M)
-        FOOTPRINT(Malamar)
+        FOOTPRINT(Plesiomon)
         OVERWORLD(
-            sPicTable_Malamar,
+            sPicTable_Plesiomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Malamar,
-            gShinyOverworldPalette_Malamar
+            gOverworldPalette_Plesiomon,
+            gShinyOverworldPalette_Plesiomon
         )
-        .levelUpLearnset = sMalamarLevelUpLearnset,
-        .teachableLearnset = sMalamarTeachableLearnset,
+        .levelUpLearnset = sPlesiomonLevelUpLearnset,
+        .teachableLearnset = sPlesiomonTeachableLearnset,
     },
 #endif //P_FAMILY_PUPPETMON
 

@@ -3336,7 +3336,7 @@ $(POKEMONGFXDIR)/piedmon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/puppetmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/malamar/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/plesiomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/binacle/overworld.4bpp: %.4bpp: %.png

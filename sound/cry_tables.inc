@@ -1666,7 +1666,7 @@ gCryTable::
 .endif @ P_FAMILY_MACHINEDRAMON
 .if P_FAMILY_PUPPETMON == TRUE
 	cry Cry_Puppetmon
-	cry Cry_Malamar
+	cry Cry_Plesiomon
 .endif @ P_FAMILY_PUPPETMON
 .if P_FAMILY_BINACLE == TRUE
 	cry Cry_Binacle
@@ -4093,7 +4093,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_MACHINEDRAMON
 .if P_FAMILY_PUPPETMON == TRUE
 	cry_reverse Cry_Puppetmon
-	cry_reverse Cry_Malamar
+	cry_reverse Cry_Plesiomon
 .endif @ P_FAMILY_PUPPETMON
 .if P_FAMILY_BINACLE == TRUE
 	cry_reverse Cry_Binacle

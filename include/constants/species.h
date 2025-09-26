@@ -722,7 +722,7 @@
 #define SPECIES_MACHINEDRAMON                                 684
 #define SPECIES_PIEDMON                                685
 #define SPECIES_PUPPETMON                                   686
-#define SPECIES_MALAMAR                                 687
+#define SPECIES_PLESIOMON                                 687
 #define SPECIES_BINACLE                                 688
 #define SPECIES_BARBARACLE                              689
 #define SPECIES_SKRELP                                  690

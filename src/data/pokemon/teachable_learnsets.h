@@ -27488,7 +27488,7 @@ static const u16 sPuppetmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sMalamarTeachableLearnset[] = {
+static const u16 sPlesiomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
