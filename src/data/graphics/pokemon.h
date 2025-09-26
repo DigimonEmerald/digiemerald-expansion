@@ -17149,20 +17149,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MUMMYMON
 
-#if P_FAMILY_SCRAGGY
-    const u32 gMonFrontPic_Scraggy[] = INCBIN_U32("graphics/pokemon/scraggy/anim_front.4bpp.smol");
-    const u16 gMonPalette_Scraggy[] = INCBIN_U16("graphics/pokemon/scraggy/normal.gbapal");
-    const u32 gMonBackPic_Scraggy[] = INCBIN_U32("graphics/pokemon/scraggy/back.4bpp.smol");
-    const u16 gMonShinyPalette_Scraggy[] = INCBIN_U16("graphics/pokemon/scraggy/shiny.gbapal");
-    const u8 gMonIcon_Scraggy[] = INCBIN_U8("graphics/pokemon/scraggy/icon.4bpp");
+#if P_FAMILY_ICELEOMON
+    const u32 gMonFrontPic_Iceleomon[] = INCBIN_U32("graphics/pokemon/iceleomon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Iceleomon[] = INCBIN_U16("graphics/pokemon/iceleomon/normal.gbapal");
+    const u32 gMonBackPic_Iceleomon[] = INCBIN_U32("graphics/pokemon/iceleomon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Iceleomon[] = INCBIN_U16("graphics/pokemon/iceleomon/shiny.gbapal");
+    const u8 gMonIcon_Iceleomon[] = INCBIN_U8("graphics/pokemon/iceleomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Scraggy[] = INCBIN_U8("graphics/pokemon/scraggy/footprint.1bpp");
+    const u8 gMonFootprint_Iceleomon[] = INCBIN_U8("graphics/pokemon/iceleomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Scraggy[] = INCBIN_COMP("graphics/pokemon/scraggy/overworld.4bpp");
+    const u32 gObjectEventPic_Iceleomon[] = INCBIN_COMP("graphics/pokemon/iceleomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Scraggy[] = INCBIN_U16("graphics/pokemon/scraggy/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Scraggy[] = INCBIN_U16("graphics/pokemon/scraggy/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Iceleomon[] = INCBIN_U16("graphics/pokemon/iceleomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Iceleomon[] = INCBIN_U16("graphics/pokemon/iceleomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -17181,7 +17181,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Scrafty[] = INCBIN_U16("graphics/pokemon/scrafty/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_SCRAGGY
+#endif //P_FAMILY_ICELEOMON
 
 #if P_FAMILY_SIGILYPH
     const u32 gMonFrontPic_Sigilyph[] = INCBIN_U32("graphics/pokemon/sigilyph/anim_front.4bpp.smol");

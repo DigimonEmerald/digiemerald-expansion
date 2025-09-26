@@ -520,6 +520,7 @@ Cherrymon - Darumaka
 Knightmon - Maractus
 Mummymon - Dwebble
 Orochimon - Crustle
+IceLeomon - Scraggy
 
 Mega List
 

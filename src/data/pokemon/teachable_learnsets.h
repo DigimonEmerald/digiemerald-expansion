@@ -23156,8 +23156,8 @@ static const u16 sOrochimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_MUMMYMON
 
-#if P_FAMILY_SCRAGGY
-static const u16 sScraggyTeachableLearnset[] = {
+#if P_FAMILY_ICELEOMON
+static const u16 sIceleomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -23238,7 +23238,7 @@ static const u16 sScraftyTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SCRAGGY
+#endif //P_FAMILY_ICELEOMON
 
 #if P_FAMILY_SIGILYPH
 static const u16 sSigilyphTeachableLearnset[] = {

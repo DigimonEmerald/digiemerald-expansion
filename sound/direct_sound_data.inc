@@ -3655,15 +3655,15 @@ Cry_Orochimon::
 	.incbin "sound/direct_sound_samples/cries/orochimon.bin"
 .endif @ P_FAMILY_MUMMYMON
 
-.if P_FAMILY_SCRAGGY == TRUE
+.if P_FAMILY_ICELEOMON == TRUE
 	.align 2
-Cry_Scraggy::
-	.incbin "sound/direct_sound_samples/cries/scraggy.bin"
+Cry_Iceleomon::
+	.incbin "sound/direct_sound_samples/cries/iceleomon.bin"
 
 	.align 2
 Cry_Scrafty::
 	.incbin "sound/direct_sound_samples/cries/scrafty.bin"
-.endif @ P_FAMILY_SCRAGGY
+.endif @ P_FAMILY_ICELEOMON
 
 .if P_FAMILY_SIGILYPH == TRUE
 	.align 2

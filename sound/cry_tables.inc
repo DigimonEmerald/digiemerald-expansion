@@ -1390,10 +1390,10 @@ gCryTable::
 	cry Cry_Mummymon
 	cry Cry_Orochimon
 .endif @ P_FAMILY_MUMMYMON
-.if P_FAMILY_SCRAGGY == TRUE
-	cry Cry_Scraggy
+.if P_FAMILY_ICELEOMON == TRUE
+	cry Cry_Iceleomon
 	cry Cry_Scrafty
-.endif @ P_FAMILY_SCRAGGY
+.endif @ P_FAMILY_ICELEOMON
 .if P_FAMILY_SIGILYPH == TRUE
 	cry Cry_Sigilyph
 .endif @ P_FAMILY_SIGILYPH
@@ -3817,10 +3817,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Mummymon
 	cry_reverse Cry_Orochimon
 .endif @ P_FAMILY_MUMMYMON
-.if P_FAMILY_SCRAGGY == TRUE
-	cry_reverse Cry_Scraggy
+.if P_FAMILY_ICELEOMON == TRUE
+	cry_reverse Cry_Iceleomon
 	cry_reverse Cry_Scrafty
-.endif @ P_FAMILY_SCRAGGY
+.endif @ P_FAMILY_ICELEOMON
 .if P_FAMILY_SIGILYPH == TRUE
 	cry_reverse Cry_Sigilyph
 .endif @ P_FAMILY_SIGILYPH

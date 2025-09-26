@@ -4366,8 +4366,8 @@ static const u16 sMummymonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_MUMMYMON
 
-#if P_FAMILY_SCRAGGY
-static const u16 sScraggyEggMoveLearnset[] = {
+#if P_FAMILY_ICELEOMON
+static const u16 sIceleomonEggMoveLearnset[] = {
     MOVE_DRAIN_PUNCH,
     MOVE_COUNTER,
     MOVE_DRAGON_DANCE,
@@ -4384,7 +4384,7 @@ static const u16 sScraggyEggMoveLearnset[] = {
     MOVE_ACID_SPRAY,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SCRAGGY
+#endif //P_FAMILY_ICELEOMON
 
 #if P_FAMILY_SIGILYPH
 static const u16 sSigilyphEggMoveLearnset[] = {

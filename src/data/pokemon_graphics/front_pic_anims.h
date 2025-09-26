@@ -6968,8 +6968,8 @@ static const union AnimCmd sAnim_Orochimon_1[] =
 };
 #endif //P_FAMILY_MUMMYMON
 
-#if P_FAMILY_SCRAGGY
-static const union AnimCmd sAnim_Scraggy_1[] =
+#if P_FAMILY_ICELEOMON
+static const union AnimCmd sAnim_Iceleomon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 35),
@@ -6984,7 +6984,7 @@ static const union AnimCmd sAnim_Scrafty_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SCRAGGY
+#endif //P_FAMILY_ICELEOMON
 
 #if P_FAMILY_SIGILYPH
 static const union AnimCmd sAnim_Sigilyph_1[] =
@@ -11742,10 +11742,10 @@ SINGLE_ANIMATION(Knightmon);
 SINGLE_ANIMATION(Mummymon);
 SINGLE_ANIMATION(Orochimon);
 #endif //P_FAMILY_MUMMYMON
-#if P_FAMILY_SCRAGGY
-SINGLE_ANIMATION(Scraggy);
+#if P_FAMILY_ICELEOMON
+SINGLE_ANIMATION(Iceleomon);
 SINGLE_ANIMATION(Scrafty);
-#endif //P_FAMILY_SCRAGGY
+#endif //P_FAMILY_ICELEOMON
 #if P_FAMILY_SIGILYPH
 SINGLE_ANIMATION(Sigilyph);
 #endif //P_FAMILY_SIGILYPH

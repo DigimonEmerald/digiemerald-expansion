@@ -5554,43 +5554,46 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_MUMMYMON
 
-#if P_FAMILY_SCRAGGY
-    [SPECIES_SCRAGGY] =
+#if P_FAMILY_ICELEOMON
+    [SPECIES_ICELEOMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 75,
-        .baseDefense   = 70,
-        .baseSpeed     = 48,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_DARK, TYPE_FIGHTING),
-        .catchRate = 180,
-        .expYield = 70,
+        .baseHP        = 85,
+        .baseAttack    = 90,
+        .baseDefense   = 80,
+        .baseSpeed     = 95,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_ICE, TYPE_FIGHTING),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 95,
+        .expYield = 200,
         .evYield_Attack = 1,
+        .evYield_Speed = 3,
+        .evYield_SpDefense = 1,
         .itemRare = ITEM_SHED_SHELL,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_SHED_SKIN, ABILITY_MOXIE, ABILITY_INTIMIDATE },
-        .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Scraggy"),
-        .cryId = CRY_SCRAGGY,
-        .natDexNum = NATIONAL_DEX_SCRAGGY,
-        .categoryName = _("Shedding"),
-        .height = 6,
-        .weight = 118,
+        .abilities = { ABILITY_ICE_BODY, ABILITY_NONE, ABILITY_TOUGH_CLAWS },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("IceLeomon"),
+        .cryId = CRY_ICELEOMON,
+        .natDexNum = NATIONAL_DEX_ICELEOMON,
+        .categoryName = _("Noble Hero"),
+        .height = 27,
+        .weight = 1014,
         .description = COMPOUND_STRING(
-            "Its skin has a rubbery elasticity, so it\n"
-            "can reduce damage by defensively\n"
-            "pulling its skin up to its neck.\n"
-            "Its skull is massively thick."),
+            "A rare evolution that happens when a\n"
+            "Leomon trains in the cold to temper its\n"
+            "will and body. IceLeomon holds the same\n"
+            "values of justice as Leomon."),
         .pokemonScale = 422,
         .pokemonOffset = 14,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Scraggy,
+        .frontPic = gMonFrontPic_Iceleomon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 11,
         .frontAnimFrames = ANIM_FRAMES(
@@ -5599,29 +5602,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Scraggy,
+        .backPic = gMonBackPic_Iceleomon,
         .backPicSize = MON_COORDS_SIZE(48, 56),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Scraggy,
-        .shinyPalette = gMonShinyPalette_Scraggy,
-        .iconSprite = gMonIcon_Scraggy,
+        .palette = gMonPalette_Iceleomon,
+        .shinyPalette = gMonShinyPalette_Iceleomon,
+        .iconSprite = gMonIcon_Iceleomon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(-4, 2, SHADOW_SIZE_S)
-        FOOTPRINT(Scraggy)
+        FOOTPRINT(Iceleomon)
         OVERWORLD(
-            sPicTable_Scraggy,
+            sPicTable_Iceleomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Scraggy,
-            gShinyOverworldPalette_Scraggy
+            gOverworldPalette_Iceleomon,
+            gShinyOverworldPalette_Iceleomon
         )
-        .levelUpLearnset = sScraggyLevelUpLearnset,
-        .teachableLearnset = sScraggyTeachableLearnset,
-        .eggMoveLearnset = sScraggyEggMoveLearnset,
+        .levelUpLearnset = sIceleomonLevelUpLearnset,
+        .teachableLearnset = sIceleomonTeachableLearnset,
+        .eggMoveLearnset = sIceleomonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_SCRAFTY}),
     },
 
@@ -5693,7 +5696,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sScraftyLevelUpLearnset,
         .teachableLearnset = sScraftyTeachableLearnset,
     },
-#endif //P_FAMILY_SCRAGGY
+#endif //P_FAMILY_ICELEOMON
 
 #if P_FAMILY_SIGILYPH
     [SPECIES_SIGILYPH] =

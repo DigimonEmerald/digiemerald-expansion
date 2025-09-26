@@ -594,8 +594,8 @@
 #define P_FAMILY_KNIGHTMON                TRUE
 #undef P_FAMILY_MUMMYMON
 #define P_FAMILY_MUMMYMON                 TRUE
-#undef P_FAMILY_SCRAGGY
-#define P_FAMILY_SCRAGGY                 TRUE
+#undef P_FAMILY_ICELEOMON
+#define P_FAMILY_ICELEOMON                 TRUE
 #undef P_FAMILY_SIGILYPH
 #define P_FAMILY_SIGILYPH                TRUE
 #undef P_FAMILY_YAMASK
