@@ -459,7 +459,7 @@
 #define SPECIES_NISEDRIMOGEMON                               442
 #define SPECIES_ORCAMON                                   443
 #define SPECIES_PIDMON                                  444
-#define SPECIES_GARCHOMP                                445
+#define SPECIES_PLATINUMSUKAMON                                445
 #define SPECIES_MUNCHLAX                                446
 #define SPECIES_RIOLU                                   447
 #define SPECIES_LUCARIO                                 448
@@ -1009,7 +1009,7 @@
 #define SPECIES_GARURUMON_X_MEGA                             944
 #define SPECIES_GATOMON_MEGA                             945
 #define SPECIES_ICEDEVIMON_MEGA                            946
-#define SPECIES_GARCHOMP_MEGA                           947
+#define SPECIES_PLATINUMSUKAMON_MEGA                           947
 #define SPECIES_LUCARIO_MEGA                            948
 #define SPECIES_ABOMASNOW_MEGA                          949
 #define SPECIES_GALLADE_MEGA                            950

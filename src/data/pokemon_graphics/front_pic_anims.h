@@ -5814,7 +5814,7 @@ static const union AnimCmd sAnim_Pidmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Garchomp_1[] =
+static const union AnimCmd sAnim_Platinumsukamon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 8),
@@ -5826,7 +5826,7 @@ static const union AnimCmd sAnim_Garchomp_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(GarchompMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(PlatinumsukamonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_ORCAMON
 
@@ -11509,9 +11509,9 @@ SINGLE_ANIMATION(Nisedrimogemon);
 #if P_FAMILY_ORCAMON
 SINGLE_ANIMATION(Orcamon);
 SINGLE_ANIMATION(Pidmon);
-SINGLE_ANIMATION(Garchomp);
+SINGLE_ANIMATION(Platinumsukamon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(GarchompMega);
+SINGLE_ANIMATION(PlatinumsukamonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_ORCAMON
 #if P_FAMILY_RIOLU

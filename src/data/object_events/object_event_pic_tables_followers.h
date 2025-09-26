@@ -3395,18 +3395,18 @@ static const struct SpriteFrameImage sPicTable_PidmonF[] = {
     overworld_ascending_frames(gObjectEventPic_PidmonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_Garchomp[] = {
-    overworld_ascending_frames(gObjectEventPic_Garchomp, 4, 4),
+static const struct SpriteFrameImage sPicTable_Platinumsukamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Platinumsukamon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_GarchompF[] = {
-    overworld_ascending_frames(gObjectEventPic_GarchompF, 4, 4),
+static const struct SpriteFrameImage sPicTable_PlatinumsukamonF[] = {
+    overworld_ascending_frames(gObjectEventPic_PlatinumsukamonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 #if OW_BATTLE_ONLY_FORMS
 #if P_MEGA_EVOLUTIONS
-static const struct SpriteFrameImage sPicTable_GarchompMega[] = {
-    overworld_ascending_frames(gObjectEventPic_GarchompMega, 4, 4),
+static const struct SpriteFrameImage sPicTable_PlatinumsukamonMega[] = {
+    overworld_ascending_frames(gObjectEventPic_PlatinumsukamonMega, 4, 4),
 };
 #endif // P_MEGA_EVOLUTIONS
 #endif // OW_BATTLE_ONLY_FORMS

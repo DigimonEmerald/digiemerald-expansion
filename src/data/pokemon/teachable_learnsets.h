@@ -19810,7 +19810,7 @@ static const u16 sPidmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sGarchompTeachableLearnset[] = {
+static const u16 sPlatinumsukamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,

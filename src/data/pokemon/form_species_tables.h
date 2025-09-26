@@ -1045,10 +1045,10 @@ static const u16 sIcedevimonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_HYOGAMON
 
 #if P_FAMILY_ORCAMON
-static const u16 sGarchompFormSpeciesIdTable[] = {
-    SPECIES_GARCHOMP,
+static const u16 sPlatinumsukamonFormSpeciesIdTable[] = {
+    SPECIES_PLATINUMSUKAMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_GARCHOMP_MEGA,
+    SPECIES_PLATINUMSUKAMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };

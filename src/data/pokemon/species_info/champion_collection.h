@@ -15589,50 +15589,45 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sPidmonLevelUpLearnset,
         .teachableLearnset = sPidmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_GARCHOMP}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_PLATINUMSUKAMON}),
     },
 
-    [SPECIES_GARCHOMP] =
+    [SPECIES_PLATINUMSUKAMON] =
     {
-        .baseHP        = 108,
-        .baseAttack    = 130,
-        .baseDefense   = 95,
-        .baseSpeed     = 102,
-        .baseSpAttack  = 80,
-        .baseSpDefense = 85,
-        .types = MON_TYPES(TYPE_DRAGON, TYPE_GROUND),
-        .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
-        .expYield = 300,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 270,
-    #else
-        .expYield = 218,
-    #endif
-        .evYield_Attack = 3,
+        .baseHP        = 70,
+        .baseAttack    = 65,
+        .baseDefense   = 150,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_POISON, TYPE_STEEL),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense = 4,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 40,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_SAND_VEIL, ABILITY_NONE, ABILITY_ROUGH_SKIN },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Garchomp"),
-        .cryId = CRY_GARCHOMP,
-        .natDexNum = NATIONAL_DEX_GARCHOMP,
-        .categoryName = _("Mach"),
-        .height = 19,
-        .weight = 950,
+        .abilities = { ABILITY_STENCH, ABILITY_LIQUID_OOZE, ABILITY_ROUGH_SKIN }, // EXP Boost
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("PlatSukamon"),
+        .cryId = CRY_PLATINUMSUKAMON,
+        .natDexNum = NATIONAL_DEX_PLATINUMSUKAMON,
+        .categoryName = _("Poop"),
+        .height = 11,
+        .weight = 743,
         .description = COMPOUND_STRING(
-            "When it folds up its body and extends its\n"
-            "wings, it looks like a jet plane. It is\n"
-            "covered in fine scales that reduce drag,\n"
-            "enabling it to fly at high speeds."),
+            "The absorption of data from minor\n"
+            "metals is what gave PlatinumSukamon its\n"
+            "luxurious appearance. Despite its ugly\n"
+            "shape, it is said to bring good luck."),
         .pokemonScale = 256,
         .pokemonOffset = 1,
         .trainerScale = 326,
         .trainerOffset = 4,
-        .frontPic = gMonFrontPic_Garchomp,
+        .frontPic = gMonFrontPic_Platinumsukamon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -15644,45 +15639,45 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_SHAKE_TWICE,
-        .backPic = gMonBackPic_Garchomp,
+        .backPic = gMonBackPic_Platinumsukamon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Garchomp,
-        .shinyPalette = gMonShinyPalette_Garchomp,
-        .iconSprite = gMonIcon_Garchomp,
+        .palette = gMonPalette_Platinumsukamon,
+        .shinyPalette = gMonShinyPalette_Platinumsukamon,
+        .iconSprite = gMonIcon_Platinumsukamon,
         .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_GarchompF,
+        .frontPicFemale = gMonFrontPic_PlatinumsukamonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(5, 11, SHADOW_SIZE_L)
-        FOOTPRINT(Garchomp)
+        FOOTPRINT(Platinumsukamon)
         OVERWORLD(
-            sPicTable_Garchomp,
+            sPicTable_Platinumsukamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Garchomp,
-            gShinyOverworldPalette_Garchomp
+            gOverworldPalette_Platinumsukamon,
+            gShinyOverworldPalette_Platinumsukamon
         )
         OVERWORLD_FEMALE(
-            sPicTable_GarchompF,
+            sPicTable_PlatinumsukamonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sGarchompLevelUpLearnset,
-        .teachableLearnset = sGarchompTeachableLearnset,
-        .formSpeciesIdTable = sGarchompFormSpeciesIdTable,
-        .formChangeTable = sGarchompFormChangeTable,
+        .levelUpLearnset = sPlatinumsukamonLevelUpLearnset,
+        .teachableLearnset = sPlatinumsukamonTeachableLearnset,
+        .formSpeciesIdTable = sPlatinumsukamonFormSpeciesIdTable,
+        .formChangeTable = sPlatinumsukamonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_GARCHOMP_MEGA] =
+    [SPECIES_PLATINUMSUKAMON_MEGA] =
     {
         .baseHP        = 108,
         .baseAttack    = 170,
@@ -15701,12 +15696,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_DRAGON),
         .abilities = { ABILITY_SAND_FORCE, ABILITY_SAND_FORCE, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Garchomp"),
-        .cryId = CRY_GARCHOMP_MEGA,
-        .natDexNum = NATIONAL_DEX_GARCHOMP,
-        .categoryName = _("Mach"),
-        .height = 19,
-        .weight = 950,
+        .speciesName = _("PlatSukamon"),
+        .cryId = CRY_PLATINUMSUKAMON_MEGA,
+        .natDexNum = NATIONAL_DEX_PLATINUMSUKAMON,
+        .categoryName = _("Poop"),
+        .height = 11,
+        .weight = 123,
         .description = COMPOUND_STRING(
             "Excess energy melted its arms and wings\n"
             "into giant scythes, sending it mad with\n"
@@ -15716,38 +15711,38 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .pokemonOffset = 1,
         .trainerScale = 326,
         .trainerOffset = 4,
-        .frontPic = gMonFrontPic_GarchompMega,
+        .frontPic = gMonFrontPic_PlatinumsukamonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_GarchompMega,
+        .backPic = gMonBackPic_PlatinumsukamonMega,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_GarchompMega,
-        .shinyPalette = gMonShinyPalette_GarchompMega,
-        .iconSprite = gMonIcon_GarchompMega,
+        .palette = gMonPalette_PlatinumsukamonMega,
+        .shinyPalette = gMonShinyPalette_PlatinumsukamonMega,
+        .iconSprite = gMonIcon_PlatinumsukamonMega,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 12, SHADOW_SIZE_L)
-        FOOTPRINT(Garchomp)
+        FOOTPRINT(Platinumsukamon)
     #if OW_BATTLE_ONLY_FORMS
         OVERWORLD(
-            sPicTable_GarchompMega,
+            sPicTable_PlatinumsukamonMega,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_GarchompMega,
-            gShinyOverworldPalette_GarchompMega
+            gOverworldPalette_PlatinumsukamonMega,
+            gShinyOverworldPalette_PlatinumsukamonMega
         )
     #endif //OW_BATTLE_ONLY_FORMS
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sGarchompLevelUpLearnset,
-        .teachableLearnset = sGarchompTeachableLearnset,
-        .formSpeciesIdTable = sGarchompFormSpeciesIdTable,
-        .formChangeTable = sGarchompFormChangeTable,
+        .levelUpLearnset = sPlatinumsukamonLevelUpLearnset,
+        .teachableLearnset = sPlatinumsukamonTeachableLearnset,
+        .formSpeciesIdTable = sPlatinumsukamonFormSpeciesIdTable,
+        .formChangeTable = sPlatinumsukamonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_ORCAMON

@@ -2538,13 +2538,13 @@ $(POKEMONGFXDIR)/pidmon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/pidmon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/garchomp/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/platinumsukamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/garchomp/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/platinumsukamon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/garchomp/mega/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/platinumsukamon/mega/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/munchlax/overworld.4bpp: %.4bpp: %.png

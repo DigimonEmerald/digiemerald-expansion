@@ -1177,9 +1177,9 @@ gCryTable::
 .if P_FAMILY_ORCAMON == TRUE
 	cry Cry_Orcamon
 	cry Cry_Pidmon
-	cry Cry_Garchomp
+	cry Cry_Platinumsukamon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_GarchompMega
+	cry Cry_PlatinumsukamonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_ORCAMON
 .if P_FAMILY_RIOLU == TRUE
@@ -3604,9 +3604,9 @@ gCryTable_Reverse::
 .if P_FAMILY_ORCAMON == TRUE
 	cry_reverse Cry_Orcamon
 	cry_reverse Cry_Pidmon
-	cry_reverse Cry_Garchomp
+	cry_reverse Cry_Platinumsukamon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_GarchompMega
+	cry_reverse Cry_PlatinumsukamonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_ORCAMON
 .if P_FAMILY_RIOLU == TRUE

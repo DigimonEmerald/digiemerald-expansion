@@ -15028,40 +15028,40 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
-    const u32 gMonFrontPic_Garchomp[] = INCBIN_U32("graphics/pokemon/garchomp/anim_front.4bpp.smol");
-    const u16 gMonPalette_Garchomp[] = INCBIN_U16("graphics/pokemon/garchomp/normal.gbapal");
-    const u32 gMonBackPic_Garchomp[] = INCBIN_U32("graphics/pokemon/garchomp/back.4bpp.smol");
-    const u16 gMonShinyPalette_Garchomp[] = INCBIN_U16("graphics/pokemon/garchomp/shiny.gbapal");
-    const u8 gMonIcon_Garchomp[] = INCBIN_U8("graphics/pokemon/garchomp/icon.4bpp");
+    const u32 gMonFrontPic_Platinumsukamon[] = INCBIN_U32("graphics/pokemon/platinumsukamon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Platinumsukamon[] = INCBIN_U16("graphics/pokemon/platinumsukamon/normal.gbapal");
+    const u32 gMonBackPic_Platinumsukamon[] = INCBIN_U32("graphics/pokemon/platinumsukamon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Platinumsukamon[] = INCBIN_U16("graphics/pokemon/platinumsukamon/shiny.gbapal");
+    const u8 gMonIcon_Platinumsukamon[] = INCBIN_U8("graphics/pokemon/platinumsukamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Garchomp[] = INCBIN_U8("graphics/pokemon/garchomp/footprint.1bpp");
+    const u8 gMonFootprint_Platinumsukamon[] = INCBIN_U8("graphics/pokemon/platinumsukamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Garchomp[] = INCBIN_COMP("graphics/pokemon/garchomp/overworld.4bpp");
+    const u32 gObjectEventPic_Platinumsukamon[] = INCBIN_COMP("graphics/pokemon/platinumsukamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Garchomp[] = INCBIN_U16("graphics/pokemon/garchomp/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Garchomp[] = INCBIN_U16("graphics/pokemon/garchomp/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Platinumsukamon[] = INCBIN_U16("graphics/pokemon/platinumsukamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Platinumsukamon[] = INCBIN_U16("graphics/pokemon/platinumsukamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_GarchompF[] = INCBIN_U32("graphics/pokemon/garchomp/anim_frontf.4bpp.smol");
+    const u32 gMonFrontPic_PlatinumsukamonF[] = INCBIN_U32("graphics/pokemon/platinumsukamon/anim_frontf.4bpp.smol");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_GarchompF[] = INCBIN_COMP("graphics/pokemon/garchomp/overworldf.4bpp");
+    const u32 gObjectEventPic_PlatinumsukamonF[] = INCBIN_COMP("graphics/pokemon/platinumsukamon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_GarchompMega[] = INCBIN_U32("graphics/pokemon/garchomp/mega/front.4bpp.smol");
-    const u16 gMonPalette_GarchompMega[] = INCBIN_U16("graphics/pokemon/garchomp/mega/normal.gbapal");
-    const u32 gMonBackPic_GarchompMega[] = INCBIN_U32("graphics/pokemon/garchomp/mega/back.4bpp.smol");
-    const u16 gMonShinyPalette_GarchompMega[] = INCBIN_U16("graphics/pokemon/garchomp/mega/shiny.gbapal");
-    const u8 gMonIcon_GarchompMega[] = INCBIN_U8("graphics/pokemon/garchomp/mega/icon.4bpp");
+    const u32 gMonFrontPic_PlatinumsukamonMega[] = INCBIN_U32("graphics/pokemon/platinumsukamon/mega/front.4bpp.smol");
+    const u16 gMonPalette_PlatinumsukamonMega[] = INCBIN_U16("graphics/pokemon/platinumsukamon/mega/normal.gbapal");
+    const u32 gMonBackPic_PlatinumsukamonMega[] = INCBIN_U32("graphics/pokemon/platinumsukamon/mega/back.4bpp.smol");
+    const u16 gMonShinyPalette_PlatinumsukamonMega[] = INCBIN_U16("graphics/pokemon/platinumsukamon/mega/shiny.gbapal");
+    const u8 gMonIcon_PlatinumsukamonMega[] = INCBIN_U8("graphics/pokemon/platinumsukamon/mega/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS && OW_BATTLE_ONLY_FORMS
-    const u32 gObjectEventPic_GarchompMega[] = INCBIN_COMP("graphics/pokemon/garchomp/mega/overworld.4bpp");
+    const u32 gObjectEventPic_PlatinumsukamonMega[] = INCBIN_COMP("graphics/pokemon/platinumsukamon/mega/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_GarchompMega[] = INCBIN_U16("graphics/pokemon/garchomp/mega/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_GarchompMega[] = INCBIN_U16("graphics/pokemon/garchomp/mega/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_PlatinumsukamonMega[] = INCBIN_U16("graphics/pokemon/platinumsukamon/mega/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_PlatinumsukamonMega[] = INCBIN_U16("graphics/pokemon/platinumsukamon/mega/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS && OW_BATTLE_ONLY_FORMS
 #endif //P_MEGA_EVOLUTIONS

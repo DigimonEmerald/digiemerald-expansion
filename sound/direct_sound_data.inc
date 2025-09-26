@@ -3142,13 +3142,13 @@ Cry_Pidmon::
 	.incbin "sound/direct_sound_samples/cries/pidmon.bin"
 
 	.align 2
-Cry_Garchomp::
-	.incbin "sound/direct_sound_samples/cries/garchomp.bin"
+Cry_Platinumsukamon::
+	.incbin "sound/direct_sound_samples/cries/platinumsukamon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_GarchompMega::
-	.incbin "sound/direct_sound_samples/cries/garchomp_mega.bin"
+Cry_PlatinumsukamonMega::
+	.incbin "sound/direct_sound_samples/cries/platinumsukamon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_ORCAMON
 
