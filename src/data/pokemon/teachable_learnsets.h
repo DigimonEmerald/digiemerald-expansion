@@ -23196,7 +23196,7 @@ static const u16 sIceleomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sScraftyTeachableLearnset[] = {
+static const u16 sParrotmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,

@@ -3661,8 +3661,8 @@ Cry_Iceleomon::
 	.incbin "sound/direct_sound_samples/cries/iceleomon.bin"
 
 	.align 2
-Cry_Scrafty::
-	.incbin "sound/direct_sound_samples/cries/scrafty.bin"
+Cry_Parrotmon::
+	.incbin "sound/direct_sound_samples/cries/parrotmon.bin"
 .endif @ P_FAMILY_ICELEOMON
 
 .if P_FAMILY_SIGILYPH == TRUE

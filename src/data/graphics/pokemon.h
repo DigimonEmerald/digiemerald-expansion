@@ -17166,19 +17166,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Scrafty[] = INCBIN_U32("graphics/pokemon/scrafty/anim_front.4bpp.smol");
-    const u16 gMonPalette_Scrafty[] = INCBIN_U16("graphics/pokemon/scrafty/normal.gbapal");
-    const u32 gMonBackPic_Scrafty[] = INCBIN_U32("graphics/pokemon/scrafty/back.4bpp.smol");
-    const u16 gMonShinyPalette_Scrafty[] = INCBIN_U16("graphics/pokemon/scrafty/shiny.gbapal");
-    const u8 gMonIcon_Scrafty[] = INCBIN_U8("graphics/pokemon/scrafty/icon.4bpp");
+    const u32 gMonFrontPic_Parrotmon[] = INCBIN_U32("graphics/pokemon/parrotmon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Parrotmon[] = INCBIN_U16("graphics/pokemon/parrotmon/normal.gbapal");
+    const u32 gMonBackPic_Parrotmon[] = INCBIN_U32("graphics/pokemon/parrotmon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Parrotmon[] = INCBIN_U16("graphics/pokemon/parrotmon/shiny.gbapal");
+    const u8 gMonIcon_Parrotmon[] = INCBIN_U8("graphics/pokemon/parrotmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Scrafty[] = INCBIN_U8("graphics/pokemon/scrafty/footprint.1bpp");
+    const u8 gMonFootprint_Parrotmon[] = INCBIN_U8("graphics/pokemon/parrotmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Scrafty[] = INCBIN_COMP("graphics/pokemon/scrafty/overworld.4bpp");
+    const u32 gObjectEventPic_Parrotmon[] = INCBIN_COMP("graphics/pokemon/parrotmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Scrafty[] = INCBIN_U16("graphics/pokemon/scrafty/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Scrafty[] = INCBIN_U16("graphics/pokemon/scrafty/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Parrotmon[] = INCBIN_U16("graphics/pokemon/parrotmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Parrotmon[] = INCBIN_U16("graphics/pokemon/parrotmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_ICELEOMON

@@ -5625,46 +5625,46 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sIceleomonLevelUpLearnset,
         .teachableLearnset = sIceleomonTeachableLearnset,
         .eggMoveLearnset = sIceleomonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_SCRAFTY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_PARROTMON}),
     },
 
-    [SPECIES_SCRAFTY] =
+    [SPECIES_PARROTMON] =
     {
-        .baseHP        = 65,
+        .baseHP        = 95,
         .baseAttack    = 90,
-        .baseDefense   = 115,
-        .baseSpeed     = 58,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 115,
-        .types = MON_TYPES(TYPE_DARK, TYPE_FIGHTING),
-        .catchRate = 90,
-        .expYield = 171,
-        .evYield_Defense = 1,
-        .evYield_SpDefense = 1,
+        .baseDefense   = 85,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_FLYING),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_Speed = 5,
         .itemRare = ITEM_SHED_SHELL,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_SHED_SKIN, ABILITY_MOXIE, ABILITY_INTIMIDATE },
-        .bodyColor = BODY_COLOR_RED,
-        .speciesName = _("Scrafty"),
-        .cryId = CRY_SCRAFTY,
-        .natDexNum = NATIONAL_DEX_SCRAFTY,
-        .categoryName = _("Hoodlum"),
-        .height = 11,
-        .weight = 300,
+        .abilities = { ABILITY_EARLY_BIRD, ABILITY_GUTS, ABILITY_DEFIANT },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Parrotmon"),
+        .cryId = CRY_PARROTMON,
+        .natDexNum = NATIONAL_DEX_PARROTMON,
+        .categoryName = _("Parrot"),
+        .height = 40,
+        .weight = 1891,
         .description = COMPOUND_STRING(
-            "Groups of them beat up anything that\n"
-            "enters their territory. The one with the\n"
-            "biggest crest is the group leader, and\n"
-            "is the most respected."),
+            "Evidence points to Parrotmon possibly\n"
+            "being the first Digimon to enter the\n"
+            "human world. It prefers to not fight\n"
+            "but will rampage when angered."),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Scrafty,
+        .frontPic = gMonFrontPic_Parrotmon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
@@ -5673,28 +5673,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Scrafty,
+        .backPic = gMonBackPic_Parrotmon,
         .backPicSize = MON_COORDS_SIZE(48, 64),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_GROW,
-        .palette = gMonPalette_Scrafty,
-        .shinyPalette = gMonShinyPalette_Scrafty,
-        .iconSprite = gMonIcon_Scrafty,
+        .palette = gMonPalette_Parrotmon,
+        .shinyPalette = gMonShinyPalette_Parrotmon,
+        .iconSprite = gMonIcon_Parrotmon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 9, SHADOW_SIZE_M)
-        FOOTPRINT(Scrafty)
+        FOOTPRINT(Parrotmon)
         OVERWORLD(
-            sPicTable_Scrafty,
+            sPicTable_Parrotmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Scrafty,
-            gShinyOverworldPalette_Scrafty
+            gOverworldPalette_Parrotmon,
+            gShinyOverworldPalette_Parrotmon
         )
-        .levelUpLearnset = sScraftyLevelUpLearnset,
-        .teachableLearnset = sScraftyTeachableLearnset,
+        .levelUpLearnset = sParrotmonLevelUpLearnset,
+        .teachableLearnset = sParrotmonTeachableLearnset,
     },
 #endif //P_FAMILY_ICELEOMON
 

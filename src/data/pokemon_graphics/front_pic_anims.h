@@ -6977,7 +6977,7 @@ static const union AnimCmd sAnim_Iceleomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Scrafty_1[] =
+static const union AnimCmd sAnim_Parrotmon_1[] =
 {
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_FRAME(1, 10),
@@ -11744,7 +11744,7 @@ SINGLE_ANIMATION(Orochimon);
 #endif //P_FAMILY_MUMMYMON
 #if P_FAMILY_ICELEOMON
 SINGLE_ANIMATION(Iceleomon);
-SINGLE_ANIMATION(Scrafty);
+SINGLE_ANIMATION(Parrotmon);
 #endif //P_FAMILY_ICELEOMON
 #if P_FAMILY_SIGILYPH
 SINGLE_ANIMATION(Sigilyph);

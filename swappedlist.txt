@@ -521,6 +521,7 @@ Knightmon - Maractus
 Mummymon - Dwebble
 Orochimon - Crustle
 IceLeomon - Scraggy
+Parrotmon - Scrafty
 
 Mega List
 
