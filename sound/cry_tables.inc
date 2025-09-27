@@ -1182,13 +1182,13 @@ gCryTable::
 	cry Cry_PlatinumsukamonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_ORCAMON
-.if P_FAMILY_RIOLU == TRUE
-	cry Cry_Riolu
+.if P_FAMILY_REDVEGIEMON == TRUE
+	cry Cry_Redvegiemon
 	cry Cry_Lucario
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_LucarioMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_RIOLU
+.endif @ P_FAMILY_REDVEGIEMON
 .if P_FAMILY_HIPPOPOTAS == TRUE
 	cry Cry_Hippopotas
 	cry Cry_Hippowdon
@@ -3609,13 +3609,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_PlatinumsukamonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_ORCAMON
-.if P_FAMILY_RIOLU == TRUE
-	cry_reverse Cry_Riolu
+.if P_FAMILY_REDVEGIEMON == TRUE
+	cry_reverse Cry_Redvegiemon
 	cry_reverse Cry_Lucario
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_LucarioMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_RIOLU
+.endif @ P_FAMILY_REDVEGIEMON
 .if P_FAMILY_HIPPOPOTAS == TRUE
 	cry_reverse Cry_Hippopotas
 	cry_reverse Cry_Hippowdon

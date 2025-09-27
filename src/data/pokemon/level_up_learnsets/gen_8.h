@@ -11205,8 +11205,8 @@ static const struct LevelUpMove sPlatinumsukamonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_ORCAMON
 
-#if P_FAMILY_RIOLU
-static const struct LevelUpMove sRioluLevelUpLearnset[] = {
+#if P_FAMILY_REDVEGIEMON
+static const struct LevelUpMove sRedvegiemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_ENDURE),
     LEVEL_UP_MOVE( 4, MOVE_FEINT),
@@ -11258,7 +11258,7 @@ static const struct LevelUpMove sLucarioLevelUpLearnset[] = {
     LEVEL_UP_MOVE(60, MOVE_CLOSE_COMBAT),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_RIOLU
+#endif //P_FAMILY_REDVEGIEMON
 
 #if P_FAMILY_HIPPOPOTAS
 static const struct LevelUpMove sHippopotasLevelUpLearnset[] = {

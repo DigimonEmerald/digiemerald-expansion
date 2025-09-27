@@ -15747,42 +15747,44 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_ORCAMON
 
-#if P_FAMILY_RIOLU
-    [SPECIES_RIOLU] =
+#if P_FAMILY_REDVEGIEMON
+    [SPECIES_REDVEGIEMON] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 70,
-        .baseDefense   = 40,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 40,
-        .types = MON_TYPES(TYPE_FIGHTING),
-        .catchRate = 75,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 57 : 72,
-        .evYield_Attack = 1,
+        .baseHP        = 45,
+        .baseAttack    = 55,
+        .baseDefense   = 75,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FIRE),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_SpAttack = 1,
+        .evYield_SpDefense = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_STEADFAST, ABILITY_INNER_FOCUS, ABILITY_PRANKSTER },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Riolu"),
-        .cryId = CRY_RIOLU,
-        .natDexNum = NATIONAL_DEX_RIOLU,
-        .categoryName = _("Emanation"),
-        .height = 7,
-        .weight = 202,
+        .abilities = { ABILITY_HARVEST, ABILITY_FLASH_FIRE, ABILITY_PRANKSTER }, // Chili Body
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("RedVegiemon"),
+        .cryId = CRY_REDVEGIEMON,
+        .natDexNum = NATIONAL_DEX_REDVEGIEMON,
+        .categoryName = _("Ripe"),
+        .height = 10,
+        .weight = 252,
         .description = COMPOUND_STRING(
-            "It can discern the physical and emotional\n"
-            "states of people, Pokémon, and other\n"
-            "natural things from the shape of their\n"
-            "aura waves."),
+            "The red body of RedVegiemon indicates\n"
+            "that it is fully ripe. Rather than the\n"
+            "sour taste of Vegiemon, RedVegiemons\n"
+            "body is a lot spicier."),
         .pokemonScale = 365,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Riolu,
+        .frontPic = gMonFrontPic_Redvegiemon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 10,
         .frontAnimFrames = ANIM_FRAMES(
@@ -15792,29 +15794,29 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_RAPID_H_HOPS,
-        .backPic = gMonBackPic_Riolu,
+        .backPic = gMonBackPic_Redvegiemon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 8,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Riolu,
-        .shinyPalette = gMonShinyPalette_Riolu,
-        .iconSprite = gMonIcon_Riolu,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Redvegiemon,
+        .shinyPalette = gMonShinyPalette_Redvegiemon,
+        .iconSprite = gMonIcon_Redvegiemon,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(3, 3, SHADOW_SIZE_S)
-        FOOTPRINT(Riolu)
+        FOOTPRINT(Redvegiemon)
         OVERWORLD(
-            sPicTable_Riolu,
+            sPicTable_Redvegiemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Riolu,
-            gShinyOverworldPalette_Riolu
+            gOverworldPalette_Redvegiemon,
+            gShinyOverworldPalette_Redvegiemon
         )
-        .levelUpLearnset = sRioluLevelUpLearnset,
-        .teachableLearnset = sRioluTeachableLearnset,
-        .eggMoveLearnset = sRioluEggMoveLearnset,
+        .levelUpLearnset = sRedvegiemonLevelUpLearnset,
+        .teachableLearnset = sRedvegiemonTeachableLearnset,
+        .eggMoveLearnset = sRedvegiemonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_LUCARIO, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD},{IF_NOT_TIME, TIME_NIGHT})}),
     },
 
@@ -15957,7 +15959,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .formChangeTable = sLucarioFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_RIOLU
+#endif //P_FAMILY_REDVEGIEMON
 
 #if P_FAMILY_HIPPOPOTAS
     [SPECIES_HIPPOPOTAS] =

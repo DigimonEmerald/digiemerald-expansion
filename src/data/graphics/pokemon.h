@@ -15067,20 +15067,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_ORCAMON
 
-#if P_FAMILY_RIOLU
-    const u32 gMonFrontPic_Riolu[] = INCBIN_U32("graphics/pokemon/riolu/anim_front.4bpp.smol");
-    const u16 gMonPalette_Riolu[] = INCBIN_U16("graphics/pokemon/riolu/normal.gbapal");
-    const u32 gMonBackPic_Riolu[] = INCBIN_U32("graphics/pokemon/riolu/back.4bpp.smol");
-    const u16 gMonShinyPalette_Riolu[] = INCBIN_U16("graphics/pokemon/riolu/shiny.gbapal");
-    const u8 gMonIcon_Riolu[] = INCBIN_U8("graphics/pokemon/riolu/icon.4bpp");
+#if P_FAMILY_REDVEGIEMON
+    const u32 gMonFrontPic_Redvegiemon[] = INCBIN_U32("graphics/pokemon/redvegiemon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Redvegiemon[] = INCBIN_U16("graphics/pokemon/redvegiemon/normal.gbapal");
+    const u32 gMonBackPic_Redvegiemon[] = INCBIN_U32("graphics/pokemon/redvegiemon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Redvegiemon[] = INCBIN_U16("graphics/pokemon/redvegiemon/shiny.gbapal");
+    const u8 gMonIcon_Redvegiemon[] = INCBIN_U8("graphics/pokemon/redvegiemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Riolu[] = INCBIN_U8("graphics/pokemon/riolu/footprint.1bpp");
+    const u8 gMonFootprint_Redvegiemon[] = INCBIN_U8("graphics/pokemon/redvegiemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Riolu[] = INCBIN_COMP("graphics/pokemon/riolu/overworld.4bpp");
+    const u32 gObjectEventPic_Redvegiemon[] = INCBIN_COMP("graphics/pokemon/redvegiemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Riolu[] = INCBIN_U16("graphics/pokemon/riolu/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Riolu[] = INCBIN_U16("graphics/pokemon/riolu/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Redvegiemon[] = INCBIN_U16("graphics/pokemon/redvegiemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Redvegiemon[] = INCBIN_U16("graphics/pokemon/redvegiemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -15114,7 +15114,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS && OW_BATTLE_ONLY_FORMS
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_RIOLU
+#endif //P_FAMILY_REDVEGIEMON
 
 #if P_FAMILY_HIPPOPOTAS
     const u32 gMonFrontPic_Hippopotas[] = INCBIN_U32("graphics/pokemon/hippopotas/anim_front.4bpp.smol");

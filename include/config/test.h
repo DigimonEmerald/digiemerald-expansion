@@ -492,8 +492,8 @@
 #define P_FAMILY_NISEDRIMOGEMON               TRUE
 #undef P_FAMILY_ORCAMON
 #define P_FAMILY_ORCAMON                   TRUE
-#undef P_FAMILY_RIOLU
-#define P_FAMILY_RIOLU                   TRUE
+#undef P_FAMILY_REDVEGIEMON
+#define P_FAMILY_REDVEGIEMON                   TRUE
 #undef P_FAMILY_HIPPOPOTAS
 #define P_FAMILY_HIPPOPOTAS              TRUE
 #undef P_FAMILY_SKORUPI

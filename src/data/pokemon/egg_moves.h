@@ -3775,8 +3775,8 @@ static const u16 sOrcamonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_ORCAMON
 
-#if P_FAMILY_RIOLU
-static const u16 sRioluEggMoveLearnset[] = {
+#if P_FAMILY_REDVEGIEMON
+static const u16 sRedvegiemonEggMoveLearnset[] = {
     MOVE_CROSS_CHOP,
     MOVE_DETECT,
     MOVE_BITE,
@@ -3795,7 +3795,7 @@ static const u16 sRioluEggMoveLearnset[] = {
     MOVE_METEOR_MASH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_RIOLU
+#endif //P_FAMILY_REDVEGIEMON
 
 #if P_FAMILY_HIPPOPOTAS
 static const u16 sHippopotasEggMoveLearnset[] = {

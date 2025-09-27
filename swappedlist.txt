@@ -453,6 +453,7 @@ NiseDrimogemon - Spriritomb
 Orcamon - Gible
 Pidmon - Gabite
 PlatinumSukamon - Garchomp
+RedVegiemon - Riolu
 
 Ultimate List
 

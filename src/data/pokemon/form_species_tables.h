@@ -1054,7 +1054,7 @@ static const u16 sPlatinumsukamonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_ORCAMON
 
-#if P_FAMILY_RIOLU
+#if P_FAMILY_REDVEGIEMON
 static const u16 sLucarioFormSpeciesIdTable[] = {
     SPECIES_LUCARIO,
 #if P_MEGA_EVOLUTIONS
@@ -1062,7 +1062,7 @@ static const u16 sLucarioFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_RIOLU
+#endif //P_FAMILY_REDVEGIEMON
 
 #if P_FAMILY_SNOVER
 static const u16 sAbomasnowFormSpeciesIdTable[] = {

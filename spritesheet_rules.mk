@@ -2550,7 +2550,7 @@ $(POKEMONGFXDIR)/platinumsukamon/mega/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/munchlax/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/riolu/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/redvegiemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/lucario/overworld.4bpp: %.4bpp: %.png

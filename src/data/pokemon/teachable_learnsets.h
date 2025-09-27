@@ -19850,8 +19850,8 @@ static const u16 sPlatinumsukamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_ORCAMON
 
-#if P_FAMILY_RIOLU
-static const u16 sRioluTeachableLearnset[] = {
+#if P_FAMILY_REDVEGIEMON
+static const u16 sRedvegiemonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -19933,7 +19933,7 @@ static const u16 sLucarioTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_RIOLU
+#endif //P_FAMILY_REDVEGIEMON
 
 #if P_FAMILY_HIPPOPOTAS
 static const u16 sHippopotasTeachableLearnset[] = {

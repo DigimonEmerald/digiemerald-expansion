@@ -5830,8 +5830,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(PlatinumsukamonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_ORCAMON
 
-#if P_FAMILY_RIOLU
-static const union AnimCmd sAnim_Riolu_1[] =
+#if P_FAMILY_REDVEGIEMON
+static const union AnimCmd sAnim_Redvegiemon_1[] =
 {
     ANIMCMD_FRAME(0, 3),
     ANIMCMD_FRAME(1, 50),
@@ -5850,7 +5850,7 @@ static const union AnimCmd sAnim_Lucario_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(LucarioMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_RIOLU
+#endif //P_FAMILY_REDVEGIEMON
 
 #if P_FAMILY_HIPPOPOTAS
 static const union AnimCmd sAnim_Hippopotas_1[] =
@@ -11514,13 +11514,13 @@ SINGLE_ANIMATION(Platinumsukamon);
 SINGLE_ANIMATION(PlatinumsukamonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_ORCAMON
-#if P_FAMILY_RIOLU
-SINGLE_ANIMATION(Riolu);
+#if P_FAMILY_REDVEGIEMON
+SINGLE_ANIMATION(Redvegiemon);
 SINGLE_ANIMATION(Lucario);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(LucarioMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_RIOLU
+#endif //P_FAMILY_REDVEGIEMON
 #if P_FAMILY_HIPPOPOTAS
 SINGLE_ANIMATION(Hippopotas);
 SINGLE_ANIMATION(Hippowdon);

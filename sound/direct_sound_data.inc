@@ -3152,10 +3152,10 @@ Cry_PlatinumsukamonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_ORCAMON
 
-.if P_FAMILY_RIOLU == TRUE
+.if P_FAMILY_REDVEGIEMON == TRUE
 	.align 2
-Cry_Riolu::
-	.incbin "sound/direct_sound_samples/cries/riolu.bin"
+Cry_Redvegiemon::
+	.incbin "sound/direct_sound_samples/cries/redvegiemon.bin"
 
 	.align 2
 Cry_Lucario::
@@ -3166,7 +3166,7 @@ Cry_Lucario::
 Cry_LucarioMega::
 	.incbin "sound/direct_sound_samples/cries/lucario_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_RIOLU
+.endif @ P_FAMILY_REDVEGIEMON
 
 .if P_FAMILY_HIPPOPOTAS == TRUE
 	.align 2

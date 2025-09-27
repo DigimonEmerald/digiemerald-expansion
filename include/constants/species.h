@@ -461,7 +461,7 @@
 #define SPECIES_PIDMON                                  444
 #define SPECIES_PLATINUMSUKAMON                                445
 #define SPECIES_MUNCHLAX                                446
-#define SPECIES_RIOLU                                   447
+#define SPECIES_REDVEGIEMON                                   447
 #define SPECIES_LUCARIO                                 448
 #define SPECIES_HIPPOPOTAS                              449
 #define SPECIES_HIPPOWDON                               450

@@ -3412,9 +3412,9 @@ static const struct SpriteFrameImage sPicTable_PlatinumsukamonMega[] = {
 #endif // OW_BATTLE_ONLY_FORMS
 #endif //P_FAMILY_ORCAMON
 
-#if P_FAMILY_RIOLU
-static const struct SpriteFrameImage sPicTable_Riolu[] = {
-    overworld_ascending_frames(gObjectEventPic_Riolu, 4, 4),
+#if P_FAMILY_REDVEGIEMON
+static const struct SpriteFrameImage sPicTable_Redvegiemon[] = {
+    overworld_ascending_frames(gObjectEventPic_Redvegiemon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Lucario[] = {
     overworld_ascending_frames(gObjectEventPic_Lucario, 4, 4),
@@ -3426,7 +3426,7 @@ static const struct SpriteFrameImage sPicTable_LucarioMega[] = {
 };
 #endif // P_MEGA_EVOLUTIONS
 #endif // OW_BATTLE_ONLY_FORMS
-#endif //P_FAMILY_RIOLU
+#endif //P_FAMILY_REDVEGIEMON
 
 #if P_FAMILY_HIPPOPOTAS
 static const struct SpriteFrameImage sPicTable_Hippopotas[] = {
