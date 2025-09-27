@@ -1184,9 +1184,9 @@ gCryTable::
 .endif @ P_FAMILY_ORCAMON
 .if P_FAMILY_REDVEGIEMON == TRUE
 	cry Cry_Redvegiemon
-	cry Cry_Lucario
+	cry Cry_Saberdramon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_LucarioMega
+	cry Cry_SaberdramonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_REDVEGIEMON
 .if P_FAMILY_HIPPOPOTAS == TRUE
@@ -3611,9 +3611,9 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_ORCAMON
 .if P_FAMILY_REDVEGIEMON == TRUE
 	cry_reverse Cry_Redvegiemon
-	cry_reverse Cry_Lucario
+	cry_reverse Cry_Saberdramon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_LucarioMega
+	cry_reverse Cry_SaberdramonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_REDVEGIEMON
 .if P_FAMILY_HIPPOPOTAS == TRUE

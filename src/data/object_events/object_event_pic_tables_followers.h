@@ -3416,13 +3416,13 @@ static const struct SpriteFrameImage sPicTable_PlatinumsukamonMega[] = {
 static const struct SpriteFrameImage sPicTable_Redvegiemon[] = {
     overworld_ascending_frames(gObjectEventPic_Redvegiemon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Lucario[] = {
-    overworld_ascending_frames(gObjectEventPic_Lucario, 4, 4),
+static const struct SpriteFrameImage sPicTable_Saberdramon[] = {
+    overworld_ascending_frames(gObjectEventPic_Saberdramon, 4, 4),
 };
 #if OW_BATTLE_ONLY_FORMS
 #if P_MEGA_EVOLUTIONS
-static const struct SpriteFrameImage sPicTable_LucarioMega[] = {
-    overworld_ascending_frames(gObjectEventPic_LucarioMega, 4, 4),
+static const struct SpriteFrameImage sPicTable_SaberdramonMega[] = {
+    overworld_ascending_frames(gObjectEventPic_SaberdramonMega, 4, 4),
 };
 #endif // P_MEGA_EVOLUTIONS
 #endif // OW_BATTLE_ONLY_FORMS

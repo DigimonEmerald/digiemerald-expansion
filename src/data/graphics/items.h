@@ -943,8 +943,8 @@ const u16 gItemIconPalette_Lopunnite[] = INCBIN_U16("graphics/items/icon_palette
 const u32 gItemIcon_Platinumsukamonite[] = INCBIN_U32("graphics/items/icons/platinumsukamonite.4bpp.smol");
 const u16 gItemIconPalette_Platinumsukamonite[] = INCBIN_U16("graphics/items/icon_palettes/platinumsukamonite.gbapal");
 
-const u32 gItemIcon_Lucarionite[] = INCBIN_U32("graphics/items/icons/lucarionite.4bpp.smol");
-const u16 gItemIconPalette_Lucarionite[] = INCBIN_U16("graphics/items/icon_palettes/lucarionite.gbapal");
+const u32 gItemIcon_Saberdramonnite[] = INCBIN_U32("graphics/items/icons/saberdramonnite.4bpp.smol");
+const u16 gItemIconPalette_Saberdramonnite[] = INCBIN_U16("graphics/items/icon_palettes/saberdramonnite.gbapal");
 
 const u32 gItemIcon_Abomasite[] = INCBIN_U32("graphics/items/icons/abomasite.4bpp.smol");
 const u16 gItemIconPalette_Abomasite[] = INCBIN_U16("graphics/items/icon_palettes/abomasite.gbapal");

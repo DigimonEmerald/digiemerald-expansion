@@ -454,6 +454,7 @@ Orcamon - Gible
 Pidmon - Gabite
 PlatinumSukamon - Garchomp
 RedVegiemon - Riolu
+Saberdramon - Lucario
 
 Ultimate List
 

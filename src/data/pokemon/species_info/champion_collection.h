@@ -2447,12 +2447,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_BIRDRAMON
     [SPECIES_BIRDRAMON] =
     {
-        .baseHP        = 76,
-        .baseAttack    = 74,
-        .baseDefense   = 69,
-        .baseSpeed     = 92,
-        .baseSpAttack  = 78,
-        .baseSpDefense = 71,
+        .baseHP        = 70,
+        .baseAttack    = 75,
+        .baseDefense   = 55,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_FIRE, TYPE_FLYING),
         .attribute = TYPE_VACCINE,
         .catchRate = 115,
@@ -15817,45 +15817,46 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sRedvegiemonLevelUpLearnset,
         .teachableLearnset = sRedvegiemonTeachableLearnset,
         .eggMoveLearnset = sRedvegiemonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_LUCARIO, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD},{IF_NOT_TIME, TIME_NIGHT})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SABERDRAMON, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD},{IF_NOT_TIME, TIME_NIGHT})}),
     },
 
-    [SPECIES_LUCARIO] =
+    [SPECIES_SABERDRAMON] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 110,
-        .baseDefense   = 70,
+        .baseHP        = 75,
+        .baseAttack    = 70,
+        .baseDefense   = 45,
         .baseSpeed     = 90,
-        .baseSpAttack  = 115,
-        .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_FIGHTING, TYPE_STEEL),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 184 : 204,
-        .evYield_Attack = 1,
-        .evYield_SpAttack = 1,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_FLYING, TYPE_DARK),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_STEADFAST, ABILITY_INNER_FOCUS, ABILITY_JUSTIFIED },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Lucario"),
-        .cryId = CRY_LUCARIO,
-        .natDexNum = NATIONAL_DEX_LUCARIO,
-        .categoryName = _("Aura"),
-        .height = 12,
-        .weight = 540,
+        .abilities = { ABILITY_FLAME_BODY, ABILITY_GALE_WINGS, ABILITY_DARK_AURA },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Saberdramon"),
+        .cryId = CRY_SABERDRAMON,
+        .natDexNum = NATIONAL_DEX_SABERDRAMON,
+        .categoryName = _("Phoenix"),
+        .height = 60,
+        .weight = 678,
         .description = COMPOUND_STRING(
-            "It understands human speech.\n"
-            "It is said that no foe can remain invisible\n"
-            "to Lucario, since it can detect Auras.\n"
-            "Even foes it could not otherwise see."),
+            "The rough temperament of Saberdramon\n"
+            "makes it tough to approach. It will\n"
+            "continously divebomb anyone that it\n"
+            "percieves as a threat."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Lucario,
+        .frontPic = gMonFrontPic_Saberdramon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 7,
         .frontAnimFrames = ANIM_FRAMES(
@@ -15863,34 +15864,34 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 20),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Lucario,
+        .backPic = gMonBackPic_Saberdramon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Lucario,
-        .shinyPalette = gMonShinyPalette_Lucario,
-        .iconSprite = gMonIcon_Lucario,
+        .palette = gMonPalette_Saberdramon,
+        .shinyPalette = gMonShinyPalette_Saberdramon,
+        .iconSprite = gMonIcon_Saberdramon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 7, SHADOW_SIZE_M)
-        FOOTPRINT(Lucario)
+        FOOTPRINT(Saberdramon)
         OVERWORLD(
-            sPicTable_Lucario,
+            sPicTable_Saberdramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Lucario,
-            gShinyOverworldPalette_Lucario
+            gOverworldPalette_Saberdramon,
+            gShinyOverworldPalette_Saberdramon
         )
-        .levelUpLearnset = sLucarioLevelUpLearnset,
-        .teachableLearnset = sLucarioTeachableLearnset,
-        .formSpeciesIdTable = sLucarioFormSpeciesIdTable,
-        .formChangeTable = sLucarioFormChangeTable,
+        .levelUpLearnset = sSaberdramonLevelUpLearnset,
+        .teachableLearnset = sSaberdramonTeachableLearnset,
+        .formSpeciesIdTable = sSaberdramonFormSpeciesIdTable,
+        .formChangeTable = sSaberdramonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_LUCARIO_MEGA] =
+    [SPECIES_SABERDRAMON_MEGA] =
     {
         .baseHP        = 70,
         .baseAttack    = 145,
@@ -15910,9 +15911,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_HUMAN_LIKE),
         .abilities = { ABILITY_ADAPTABILITY, ABILITY_ADAPTABILITY, ABILITY_ADAPTABILITY },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Lucario"),
-        .cryId = CRY_LUCARIO_MEGA,
-        .natDexNum = NATIONAL_DEX_LUCARIO,
+        .speciesName = _("Saberdramon"),
+        .cryId = CRY_SABERDRAMON_MEGA,
+        .natDexNum = NATIONAL_DEX_SABERDRAMON,
         .categoryName = _("Aura"),
         .height = 13,
         .weight = 575,
@@ -15925,38 +15926,38 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_LucarioMega,
+        .frontPic = gMonFrontPic_SaberdramonMega,
         .frontPicSize = MON_COORDS_SIZE(48, 64),
         .frontPicYOffset = 2,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_LucarioMega,
+        .backPic = gMonBackPic_SaberdramonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_LucarioMega,
-        .shinyPalette = gMonShinyPalette_LucarioMega,
-        .iconSprite = gMonIcon_LucarioMega,
+        .palette = gMonPalette_SaberdramonMega,
+        .shinyPalette = gMonShinyPalette_SaberdramonMega,
+        .iconSprite = gMonIcon_SaberdramonMega,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 11, SHADOW_SIZE_M)
-        FOOTPRINT(Lucario)
+        FOOTPRINT(Saberdramon)
     #if OW_BATTLE_ONLY_FORMS
         OVERWORLD(
-            sPicTable_LucarioMega,
+            sPicTable_SaberdramonMega,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_LucarioMega,
-            gShinyOverworldPalette_LucarioMega
+            gOverworldPalette_SaberdramonMega,
+            gShinyOverworldPalette_SaberdramonMega
         )
     #endif //OW_BATTLE_ONLY_FORMS
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sLucarioLevelUpLearnset,
-        .teachableLearnset = sLucarioTeachableLearnset,
-        .formSpeciesIdTable = sLucarioFormSpeciesIdTable,
-        .formChangeTable = sLucarioFormChangeTable,
+        .levelUpLearnset = sSaberdramonLevelUpLearnset,
+        .teachableLearnset = sSaberdramonTeachableLearnset,
+        .formSpeciesIdTable = sSaberdramonFormSpeciesIdTable,
+        .formChangeTable = sSaberdramonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_REDVEGIEMON

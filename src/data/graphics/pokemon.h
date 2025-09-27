@@ -15084,33 +15084,33 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Lucario[] = INCBIN_U32("graphics/pokemon/lucario/anim_front.4bpp.smol");
-    const u16 gMonPalette_Lucario[] = INCBIN_U16("graphics/pokemon/lucario/normal.gbapal");
-    const u32 gMonBackPic_Lucario[] = INCBIN_U32("graphics/pokemon/lucario/back.4bpp.smol");
-    const u16 gMonShinyPalette_Lucario[] = INCBIN_U16("graphics/pokemon/lucario/shiny.gbapal");
-    const u8 gMonIcon_Lucario[] = INCBIN_U8("graphics/pokemon/lucario/icon.4bpp");
+    const u32 gMonFrontPic_Saberdramon[] = INCBIN_U32("graphics/pokemon/saberdramon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Saberdramon[] = INCBIN_U16("graphics/pokemon/saberdramon/normal.gbapal");
+    const u32 gMonBackPic_Saberdramon[] = INCBIN_U32("graphics/pokemon/saberdramon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Saberdramon[] = INCBIN_U16("graphics/pokemon/saberdramon/shiny.gbapal");
+    const u8 gMonIcon_Saberdramon[] = INCBIN_U8("graphics/pokemon/saberdramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Lucario[] = INCBIN_U8("graphics/pokemon/lucario/footprint.1bpp");
+    const u8 gMonFootprint_Saberdramon[] = INCBIN_U8("graphics/pokemon/saberdramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Lucario[] = INCBIN_COMP("graphics/pokemon/lucario/overworld.4bpp");
+    const u32 gObjectEventPic_Saberdramon[] = INCBIN_COMP("graphics/pokemon/saberdramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Lucario[] = INCBIN_U16("graphics/pokemon/lucario/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Lucario[] = INCBIN_U16("graphics/pokemon/lucario/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Saberdramon[] = INCBIN_U16("graphics/pokemon/saberdramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Saberdramon[] = INCBIN_U16("graphics/pokemon/saberdramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_LucarioMega[] = INCBIN_U32("graphics/pokemon/lucario/mega/front.4bpp.smol");
-    const u16 gMonPalette_LucarioMega[] = INCBIN_U16("graphics/pokemon/lucario/mega/normal.gbapal");
-    const u32 gMonBackPic_LucarioMega[] = INCBIN_U32("graphics/pokemon/lucario/mega/back.4bpp.smol");
-    const u16 gMonShinyPalette_LucarioMega[] = INCBIN_U16("graphics/pokemon/lucario/mega/shiny.gbapal");
-    const u8 gMonIcon_LucarioMega[] = INCBIN_U8("graphics/pokemon/lucario/mega/icon.4bpp");
+    const u32 gMonFrontPic_SaberdramonMega[] = INCBIN_U32("graphics/pokemon/saberdramon/mega/front.4bpp.smol");
+    const u16 gMonPalette_SaberdramonMega[] = INCBIN_U16("graphics/pokemon/saberdramon/mega/normal.gbapal");
+    const u32 gMonBackPic_SaberdramonMega[] = INCBIN_U32("graphics/pokemon/saberdramon/mega/back.4bpp.smol");
+    const u16 gMonShinyPalette_SaberdramonMega[] = INCBIN_U16("graphics/pokemon/saberdramon/mega/shiny.gbapal");
+    const u8 gMonIcon_SaberdramonMega[] = INCBIN_U8("graphics/pokemon/saberdramon/mega/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS && OW_BATTLE_ONLY_FORMS
-    const u32 gObjectEventPic_LucarioMega[] = INCBIN_COMP("graphics/pokemon/lucario/mega/overworld.4bpp");
+    const u32 gObjectEventPic_SaberdramonMega[] = INCBIN_COMP("graphics/pokemon/saberdramon/mega/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_LucarioMega[] = INCBIN_U16("graphics/pokemon/lucario/mega/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_LucarioMega[] = INCBIN_U16("graphics/pokemon/lucario/mega/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_SaberdramonMega[] = INCBIN_U16("graphics/pokemon/saberdramon/mega/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_SaberdramonMega[] = INCBIN_U16("graphics/pokemon/saberdramon/mega/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS && OW_BATTLE_ONLY_FORMS
 #endif //P_MEGA_EVOLUTIONS

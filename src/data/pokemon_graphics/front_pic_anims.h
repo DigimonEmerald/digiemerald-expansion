@@ -5840,7 +5840,7 @@ static const union AnimCmd sAnim_Redvegiemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Lucario_1[] =
+static const union AnimCmd sAnim_Saberdramon_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 20),
@@ -5848,7 +5848,7 @@ static const union AnimCmd sAnim_Lucario_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(LucarioMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(SaberdramonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_REDVEGIEMON
 
@@ -11516,9 +11516,9 @@ SINGLE_ANIMATION(PlatinumsukamonMega);
 #endif //P_FAMILY_ORCAMON
 #if P_FAMILY_REDVEGIEMON
 SINGLE_ANIMATION(Redvegiemon);
-SINGLE_ANIMATION(Lucario);
+SINGLE_ANIMATION(Saberdramon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(LucarioMega);
+SINGLE_ANIMATION(SaberdramonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_REDVEGIEMON
 #if P_FAMILY_HIPPOPOTAS

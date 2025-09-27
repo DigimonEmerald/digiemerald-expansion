@@ -462,7 +462,7 @@
 #define SPECIES_PLATINUMSUKAMON                                445
 #define SPECIES_MUNCHLAX                                446
 #define SPECIES_REDVEGIEMON                                   447
-#define SPECIES_LUCARIO                                 448
+#define SPECIES_SABERDRAMON                                 448
 #define SPECIES_HIPPOPOTAS                              449
 #define SPECIES_HIPPOWDON                               450
 #define SPECIES_SKORUPI                                 451
@@ -1010,7 +1010,7 @@
 #define SPECIES_GATOMON_MEGA                             945
 #define SPECIES_ICEDEVIMON_MEGA                            946
 #define SPECIES_PLATINUMSUKAMON_MEGA                           947
-#define SPECIES_LUCARIO_MEGA                            948
+#define SPECIES_SABERDRAMON_MEGA                            948
 #define SPECIES_ABOMASNOW_MEGA                          949
 #define SPECIES_GALLADE_MEGA                            950
 #define SPECIES_OKUWAMON                             951

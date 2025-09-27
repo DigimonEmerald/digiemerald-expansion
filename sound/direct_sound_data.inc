@@ -3158,13 +3158,13 @@ Cry_Redvegiemon::
 	.incbin "sound/direct_sound_samples/cries/redvegiemon.bin"
 
 	.align 2
-Cry_Lucario::
-	.incbin "sound/direct_sound_samples/cries/lucario.bin"
+Cry_Saberdramon::
+	.incbin "sound/direct_sound_samples/cries/saberdramon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_LucarioMega::
-	.incbin "sound/direct_sound_samples/cries/lucario_mega.bin"
+Cry_SaberdramonMega::
+	.incbin "sound/direct_sound_samples/cries/saberdramon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_REDVEGIEMON
 
