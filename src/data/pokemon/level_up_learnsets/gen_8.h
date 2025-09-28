@@ -11303,8 +11303,8 @@ static const struct LevelUpMove sShimaunimonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_SANDYANMAMON
 
-#if P_FAMILY_SKORUPI
-static const struct LevelUpMove sSkorupiLevelUpLearnset[] = {
+#if P_FAMILY_SNIMON
+static const struct LevelUpMove sSnimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 3, MOVE_HONE_CLAWS),
@@ -11350,7 +11350,7 @@ static const struct LevelUpMove sDrapionLevelUpLearnset[] = {
     LEVEL_UP_MOVE(54, MOVE_CRUNCH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SKORUPI
+#endif //P_FAMILY_SNIMON
 
 #if P_FAMILY_CROAGUNK
 static const struct LevelUpMove sCroagunkLevelUpLearnset[] = {

@@ -5869,8 +5869,8 @@ static const union AnimCmd sAnim_Shimaunimon_1[] =
 };
 #endif //P_FAMILY_SANDYANMAMON
 
-#if P_FAMILY_SKORUPI
-static const union AnimCmd sAnim_Skorupi_1[] =
+#if P_FAMILY_SNIMON
+static const union AnimCmd sAnim_Snimon_1[] =
 {
     ANIMCMD_FRAME(1, 5),
     ANIMCMD_FRAME(0, 5),
@@ -5904,7 +5904,7 @@ static const union AnimCmd sAnim_Drapion_1[] =
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SKORUPI
+#endif //P_FAMILY_SNIMON
 
 #if P_FAMILY_CROAGUNK
 static const union AnimCmd sAnim_Croagunk_1[] =
@@ -11525,10 +11525,10 @@ SINGLE_ANIMATION(SaberdramonMega);
 SINGLE_ANIMATION(Sandyanmamon);
 SINGLE_ANIMATION(Shimaunimon);
 #endif //P_FAMILY_SANDYANMAMON
-#if P_FAMILY_SKORUPI
-SINGLE_ANIMATION(Skorupi);
+#if P_FAMILY_SNIMON
+SINGLE_ANIMATION(Snimon);
 SINGLE_ANIMATION(Drapion);
-#endif //P_FAMILY_SKORUPI
+#endif //P_FAMILY_SNIMON
 #if P_FAMILY_CROAGUNK
 SINGLE_ANIMATION(Croagunk);
 SINGLE_ANIMATION(Toxicroak);

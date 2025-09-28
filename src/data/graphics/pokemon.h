@@ -15175,20 +15175,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_SANDYANMAMON
 
-#if P_FAMILY_SKORUPI
-    const u32 gMonFrontPic_Skorupi[] = INCBIN_U32("graphics/pokemon/skorupi/anim_front.4bpp.smol");
-    const u16 gMonPalette_Skorupi[] = INCBIN_U16("graphics/pokemon/skorupi/normal.gbapal");
-    const u32 gMonBackPic_Skorupi[] = INCBIN_U32("graphics/pokemon/skorupi/back.4bpp.smol");
-    const u16 gMonShinyPalette_Skorupi[] = INCBIN_U16("graphics/pokemon/skorupi/shiny.gbapal");
-    const u8 gMonIcon_Skorupi[] = INCBIN_U8("graphics/pokemon/skorupi/icon.4bpp");
+#if P_FAMILY_SNIMON
+    const u32 gMonFrontPic_Snimon[] = INCBIN_U32("graphics/pokemon/snimon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Snimon[] = INCBIN_U16("graphics/pokemon/snimon/normal.gbapal");
+    const u32 gMonBackPic_Snimon[] = INCBIN_U32("graphics/pokemon/snimon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Snimon[] = INCBIN_U16("graphics/pokemon/snimon/shiny.gbapal");
+    const u8 gMonIcon_Snimon[] = INCBIN_U8("graphics/pokemon/snimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Skorupi[] = INCBIN_U8("graphics/pokemon/skorupi/footprint.1bpp");
+    const u8 gMonFootprint_Snimon[] = INCBIN_U8("graphics/pokemon/snimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Skorupi[] = INCBIN_COMP("graphics/pokemon/skorupi/overworld.4bpp");
+    const u32 gObjectEventPic_Snimon[] = INCBIN_COMP("graphics/pokemon/snimon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Skorupi[] = INCBIN_U16("graphics/pokemon/skorupi/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Skorupi[] = INCBIN_U16("graphics/pokemon/skorupi/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Snimon[] = INCBIN_U16("graphics/pokemon/snimon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Snimon[] = INCBIN_U16("graphics/pokemon/snimon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -15207,7 +15207,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Drapion[] = INCBIN_U16("graphics/pokemon/drapion/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_SKORUPI
+#endif //P_FAMILY_SNIMON
 
 #if P_FAMILY_CROAGUNK
     const u32 gMonFrontPic_Croagunk[] = INCBIN_U32("graphics/pokemon/croagunk/anim_front.4bpp.smol");

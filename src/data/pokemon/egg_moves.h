@@ -3813,8 +3813,8 @@ static const u16 sSandyanmamonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_SANDYANMAMON
 
-#if P_FAMILY_SKORUPI
-static const u16 sSkorupiEggMoveLearnset[] = {
+#if P_FAMILY_SNIMON
+static const u16 sSnimonEggMoveLearnset[] = {
     MOVE_FEINT_ATTACK,
     MOVE_SCREECH,
     MOVE_SAND_ATTACK,
@@ -3829,7 +3829,7 @@ static const u16 sSkorupiEggMoveLearnset[] = {
     MOVE_POISON_TAIL,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SKORUPI
+#endif //P_FAMILY_SNIMON
 
 #if P_FAMILY_CROAGUNK
 static const u16 sCroagunkEggMoveLearnset[] = {

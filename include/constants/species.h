@@ -465,7 +465,7 @@
 #define SPECIES_SABERDRAMON                                 448
 #define SPECIES_SANDYANMAMON                              449
 #define SPECIES_SHIMAUNIMON                               450
-#define SPECIES_SKORUPI                                 451
+#define SPECIES_SNIMON                                 451
 #define SPECIES_DRAPION                                 452
 #define SPECIES_CROAGUNK                                453
 #define SPECIES_TOXICROAK                               454

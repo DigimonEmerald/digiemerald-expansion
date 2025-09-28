@@ -16128,43 +16128,44 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_SANDYANMAMON
 
-#if P_FAMILY_SKORUPI
-    [SPECIES_SKORUPI] =
+#if P_FAMILY_SNIMON
+    [SPECIES_SNIMON] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 50,
-        .baseDefense   = 90,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_POISON, TYPE_BUG),
-        .catchRate = 120,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 66 : 114,
-        .evYield_Defense = 1,
+        .baseHP        = 65,
+        .baseAttack    = 120,
+        .baseDefense   = 50,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 45,
+        .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack = 4,
         .itemRare = ITEM_POISON_BARB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_BATTLE_ARMOR, ABILITY_SNIPER, ABILITY_KEEN_EYE },
-        .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Skorupi"),
-        .cryId = CRY_SKORUPI,
-        .natDexNum = NATIONAL_DEX_SKORUPI,
-        .categoryName = _("Scorpion"),
-        .height = 8,
+        .abilities = { ABILITY_SHARPNESS, ABILITY_SWARM, ABILITY_INTIMIDATE },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Snimon"),
+        .cryId = CRY_SNIMON,
+        .natDexNum = NATIONAL_DEX_SNIMON,
+        .categoryName = _("Mantodea"),
+        .height = 55,
         .weight = 120,
         .description = COMPOUND_STRING(
-            "It grips prey with its tail claws and\n"
-            "injects poison. It tenaciously hangs\n"
-            "on until the poison takes.\n"
-            "It can survive a year without food."),
+            "Due its unfeeling personality, Snimon\n"
+            "is feared by even Vaccine and Data\n"
+            "Digimon. It lacks eyes, instead having\n"
+            "antennae that act as sensors."),
         .pokemonScale = 366,
         .pokemonOffset = 12,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Skorupi,
+        .frontPic = gMonFrontPic_Snimon,
         .frontPicSize = MON_COORDS_SIZE(48, 48),
         .frontPicYOffset = 11,
         .frontAnimFrames = ANIM_FRAMES(
@@ -16186,29 +16187,29 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_H_SLIDE_SLOW,
-        .backPic = gMonBackPic_Skorupi,
+        .backPic = gMonBackPic_Snimon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Skorupi,
-        .shinyPalette = gMonShinyPalette_Skorupi,
-        .iconSprite = gMonIcon_Skorupi,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Snimon,
+        .shinyPalette = gMonShinyPalette_Snimon,
+        .iconSprite = gMonIcon_Snimon,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 3, SHADOW_SIZE_S)
-        FOOTPRINT(Skorupi)
+        FOOTPRINT(Snimon)
         OVERWORLD(
-            sPicTable_Skorupi,
+            sPicTable_Snimon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Skorupi,
-            gShinyOverworldPalette_Skorupi
+            gOverworldPalette_Snimon,
+            gShinyOverworldPalette_Snimon
         )
-        .levelUpLearnset = sSkorupiLevelUpLearnset,
-        .teachableLearnset = sSkorupiTeachableLearnset,
-        .eggMoveLearnset = sSkorupiEggMoveLearnset,
+        .levelUpLearnset = sSnimonLevelUpLearnset,
+        .teachableLearnset = sSnimonTeachableLearnset,
+        .eggMoveLearnset = sSnimonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_DRAPION}),
     },
 
@@ -16285,7 +16286,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sDrapionLevelUpLearnset,
         .teachableLearnset = sDrapionTeachableLearnset,
     },
-#endif //P_FAMILY_SKORUPI
+#endif //P_FAMILY_SNIMON
 
 #if P_FAMILY_CROAGUNK
     [SPECIES_CROAGUNK] =

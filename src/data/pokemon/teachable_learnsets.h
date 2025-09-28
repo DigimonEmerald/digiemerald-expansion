@@ -19994,8 +19994,8 @@ static const u16 sShimaunimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SANDYANMAMON
 
-#if P_FAMILY_SKORUPI
-static const u16 sSkorupiTeachableLearnset[] = {
+#if P_FAMILY_SNIMON
+static const u16 sSnimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -20064,7 +20064,7 @@ static const u16 sDrapionTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SKORUPI
+#endif //P_FAMILY_SNIMON
 
 #if P_FAMILY_CROAGUNK
 static const u16 sCroagunkTeachableLearnset[] = {

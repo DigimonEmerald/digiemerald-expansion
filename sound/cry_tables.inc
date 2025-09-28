@@ -1193,10 +1193,10 @@ gCryTable::
 	cry Cry_Sandyanmamon
 	cry Cry_Shimaunimon
 .endif @ P_FAMILY_SANDYANMAMON
-.if P_FAMILY_SKORUPI == TRUE
-	cry Cry_Skorupi
+.if P_FAMILY_SNIMON == TRUE
+	cry Cry_Snimon
 	cry Cry_Drapion
-.endif @ P_FAMILY_SKORUPI
+.endif @ P_FAMILY_SNIMON
 .if P_FAMILY_CROAGUNK == TRUE
 	cry Cry_Croagunk
 	cry Cry_Toxicroak
@@ -3620,10 +3620,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Sandyanmamon
 	cry_reverse Cry_Shimaunimon
 .endif @ P_FAMILY_SANDYANMAMON
-.if P_FAMILY_SKORUPI == TRUE
-	cry_reverse Cry_Skorupi
+.if P_FAMILY_SNIMON == TRUE
+	cry_reverse Cry_Snimon
 	cry_reverse Cry_Drapion
-.endif @ P_FAMILY_SKORUPI
+.endif @ P_FAMILY_SNIMON
 .if P_FAMILY_CROAGUNK == TRUE
 	cry_reverse Cry_Croagunk
 	cry_reverse Cry_Toxicroak

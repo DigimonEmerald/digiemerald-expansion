@@ -3178,15 +3178,15 @@ Cry_Shimaunimon::
 	.incbin "sound/direct_sound_samples/cries/shimaunimon.bin"
 .endif @ P_FAMILY_SANDYANMAMON
 
-.if P_FAMILY_SKORUPI == TRUE
+.if P_FAMILY_SNIMON == TRUE
 	.align 2
-Cry_Skorupi::
-	.incbin "sound/direct_sound_samples/cries/skorupi.bin"
+Cry_Snimon::
+	.incbin "sound/direct_sound_samples/cries/snimon.bin"
 
 	.align 2
 Cry_Drapion::
 	.incbin "sound/direct_sound_samples/cries/drapion.bin"
-.endif @ P_FAMILY_SKORUPI
+.endif @ P_FAMILY_SNIMON
 
 .if P_FAMILY_CROAGUNK == TRUE
 	.align 2
