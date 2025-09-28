@@ -15144,32 +15144,32 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
-    const u32 gMonFrontPic_Hippowdon[] = INCBIN_U32("graphics/pokemon/hippowdon/anim_front.4bpp.smol");
-    const u16 gMonPalette_Hippowdon[] = INCBIN_U16("graphics/pokemon/hippowdon/normal.gbapal");
-    const u32 gMonBackPic_Hippowdon[] = INCBIN_U32("graphics/pokemon/hippowdon/back.4bpp.smol");
-    const u16 gMonShinyPalette_Hippowdon[] = INCBIN_U16("graphics/pokemon/hippowdon/shiny.gbapal");
-    const u8 gMonIcon_Hippowdon[] = INCBIN_U8("graphics/pokemon/hippowdon/icon.4bpp");
+    const u32 gMonFrontPic_Shimaunimon[] = INCBIN_U32("graphics/pokemon/shimaunimon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Shimaunimon[] = INCBIN_U16("graphics/pokemon/shimaunimon/normal.gbapal");
+    const u32 gMonBackPic_Shimaunimon[] = INCBIN_U32("graphics/pokemon/shimaunimon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Shimaunimon[] = INCBIN_U16("graphics/pokemon/shimaunimon/shiny.gbapal");
+    const u8 gMonIcon_Shimaunimon[] = INCBIN_U8("graphics/pokemon/shimaunimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Hippowdon[] = INCBIN_U8("graphics/pokemon/hippowdon/footprint.1bpp");
+    const u8 gMonFootprint_Shimaunimon[] = INCBIN_U8("graphics/pokemon/shimaunimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Hippowdon[] = INCBIN_COMP("graphics/pokemon/hippowdon/overworld.4bpp");
+    const u32 gObjectEventPic_Shimaunimon[] = INCBIN_COMP("graphics/pokemon/shimaunimon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Hippowdon[] = INCBIN_U16("graphics/pokemon/hippowdon/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Hippowdon[] = INCBIN_U16("graphics/pokemon/hippowdon/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Shimaunimon[] = INCBIN_U16("graphics/pokemon/shimaunimon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Shimaunimon[] = INCBIN_U16("graphics/pokemon/shimaunimon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u16 gMonPalette_HippowdonF[] = INCBIN_U16("graphics/pokemon/hippowdon/normalf.gbapal");
-    const u16 gMonShinyPalette_HippowdonF[] = INCBIN_U16("graphics/pokemon/hippowdon/shinyf.gbapal");
+    const u16 gMonPalette_ShimaunimonF[] = INCBIN_U16("graphics/pokemon/shimaunimon/normalf.gbapal");
+    const u16 gMonShinyPalette_ShimaunimonF[] = INCBIN_U16("graphics/pokemon/shimaunimon/shinyf.gbapal");
 #if P_CUSTOM_GENDER_DIFF_ICONS
-    const u8 gMonIcon_HippowdonF[] = INCBIN_U8("graphics/pokemon/hippowdon/iconf.4bpp");
+    const u8 gMonIcon_ShimaunimonF[] = INCBIN_U8("graphics/pokemon/shimaunimon/iconf.4bpp");
 #endif
 #if OW_POKEMON_OBJECT_EVENTS
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_HippowdonF[] = INCBIN_U16("graphics/pokemon/hippowdon/overworld_normalf.gbapal");
-    const u16 gShinyOverworldPalette_HippowdonF[] = INCBIN_U16("graphics/pokemon/hippowdon/overworld_shinyf.gbapal");
+    const u16 gOverworldPalette_ShimaunimonF[] = INCBIN_U16("graphics/pokemon/shimaunimon/overworld_normalf.gbapal");
+    const u16 gShinyOverworldPalette_ShimaunimonF[] = INCBIN_U16("graphics/pokemon/shimaunimon/overworld_shinyf.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES

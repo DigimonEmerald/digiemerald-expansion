@@ -3437,8 +3437,8 @@ static const struct SpriteFrameImage sPicTable_SandyanmamonF[] = {
     overworld_ascending_frames(gObjectEventPic_SandyanmamonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_Hippowdon[] = {
-    overworld_ascending_frames(gObjectEventPic_Hippowdon, 4, 4),
+static const struct SpriteFrameImage sPicTable_Shimaunimon[] = {
+    overworld_ascending_frames(gObjectEventPic_Shimaunimon, 4, 4),
 };
 #endif //P_FAMILY_SANDYANMAMON
 

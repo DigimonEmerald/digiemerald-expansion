@@ -16045,44 +16045,45 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sSandyanmamonLevelUpLearnset,
         .teachableLearnset = sSandyanmamonTeachableLearnset,
         .eggMoveLearnset = sSandyanmamonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_HIPPOWDON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_SHIMAUNIMON}),
     },
 
-    [SPECIES_HIPPOWDON] =
+    [SPECIES_SHIMAUNIMON] =
     {
-        .baseHP        = 108,
-        .baseAttack    = 112,
-        .baseDefense   = 118,
-        .baseSpeed     = 47,
-        .baseSpAttack  = 68,
-        .baseSpDefense = 72,
-        .types = MON_TYPES(TYPE_GROUND),
-        .catchRate = 60,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 184 : 198,
-        .evYield_Defense = 2,
+        .baseHP        = 50,
+        .baseAttack    = 105,
+        .baseDefense   = 60,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 45,
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_NORMAL),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Attack = 4,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SAND_STREAM, ABILITY_NONE, ABILITY_SAND_FORCE },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Hippowdon"),
-        .cryId = CRY_HIPPOWDON,
-        .natDexNum = NATIONAL_DEX_HIPPOWDON,
-        .categoryName = _("Heavyweight"),
-        .height = 20,
-        .weight = 3000,
+        .abilities = { ABILITY_STEADFAST, ABILITY_MOODY, ABILITY_GRIM_NEIGH },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("ShimaUnimon"),
+        .cryId = CRY_SHIMAUNIMON,
+        .natDexNum = NATIONAL_DEX_SHIMAUNIMON,
+        .categoryName = _("Zebra"),
+        .height = 42,
+        .weight = 687,
         .description = COMPOUND_STRING(
-            "It is surprisingly quick to anger.\n"
-            "It brandishes its gaping mouth in a\n"
-            "display of fearsome strength and raises\n"
-            "vast quantities of sand while attacking."),
+            "As the unicorn data is more pronounced\n"
+            "in ShimaUnimon, it lacks the wings that\n"
+            "can be found on Unimon. It instead\n"
+            "boasts better longs and a sharper horn."),
         .pokemonScale = 261,
         .pokemonOffset = 2,
         .trainerScale = 334,
         .trainerOffset = 4,
-        .frontPic = gMonFrontPic_Hippowdon,
+        .frontPic = gMonFrontPic_Shimaunimon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 6,
         .frontAnimFrames = ANIM_FRAMES(
@@ -16090,40 +16091,40 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_V_SHAKE_TWICE,
-        .backPic = gMonBackPic_Hippowdon,
+        .backPic = gMonBackPic_Shimaunimon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Hippowdon,
-        .shinyPalette = gMonShinyPalette_Hippowdon,
-        .iconSprite = gMonIcon_Hippowdon,
+        .palette = gMonPalette_Shimaunimon,
+        .shinyPalette = gMonShinyPalette_Shimaunimon,
+        .iconSprite = gMonIcon_Shimaunimon,
         .iconPalIndex = 1,
 #if P_GENDER_DIFFERENCES
-        .paletteFemale = gMonPalette_HippowdonF,
-        .shinyPaletteFemale = gMonShinyPalette_HippowdonF,
+        .paletteFemale = gMonPalette_ShimaunimonF,
+        .shinyPaletteFemale = gMonShinyPalette_ShimaunimonF,
     #if P_CUSTOM_GENDER_DIFF_ICONS == TRUE
-        .iconSpriteFemale = gMonIcon_HippowdonF,
+        .iconSpriteFemale = gMonIcon_ShimaunimonF,
         .iconPalIndexFemale = 1,
     #endif
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         NO_SHADOW
-        FOOTPRINT(Hippowdon)
+        FOOTPRINT(Shimaunimon)
         OVERWORLD(
-            sPicTable_Hippowdon,
+            sPicTable_Shimaunimon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Hippowdon,
-            gShinyOverworldPalette_Hippowdon
+            gOverworldPalette_Shimaunimon,
+            gShinyOverworldPalette_Shimaunimon
         )
         OVERWORLD_PAL_FEMALE(
-            gOverworldPalette_HippowdonF,
-            gShinyOverworldPalette_HippowdonF
+            gOverworldPalette_ShimaunimonF,
+            gShinyOverworldPalette_ShimaunimonF
         )
-        .levelUpLearnset = sHippowdonLevelUpLearnset,
-        .teachableLearnset = sHippowdonTeachableLearnset,
+        .levelUpLearnset = sShimaunimonLevelUpLearnset,
+        .teachableLearnset = sShimaunimonTeachableLearnset,
     },
 #endif //P_FAMILY_SANDYANMAMON
 

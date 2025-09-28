@@ -456,6 +456,7 @@ PlatinumSukamon - Garchomp
 RedVegiemon - Riolu
 Saberdramon - Lucario
 SandYanmamon - Hippopotas
+ShimaUnimon - Hippowdon
 
 Ultimate List
 

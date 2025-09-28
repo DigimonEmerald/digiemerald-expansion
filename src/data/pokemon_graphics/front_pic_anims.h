@@ -5861,7 +5861,7 @@ static const union AnimCmd sAnim_Sandyanmamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Hippowdon_1[] =
+static const union AnimCmd sAnim_Shimaunimon_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 5),
@@ -11523,7 +11523,7 @@ SINGLE_ANIMATION(SaberdramonMega);
 #endif //P_FAMILY_REDVEGIEMON
 #if P_FAMILY_SANDYANMAMON
 SINGLE_ANIMATION(Sandyanmamon);
-SINGLE_ANIMATION(Hippowdon);
+SINGLE_ANIMATION(Shimaunimon);
 #endif //P_FAMILY_SANDYANMAMON
 #if P_FAMILY_SKORUPI
 SINGLE_ANIMATION(Skorupi);

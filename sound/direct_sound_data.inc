@@ -3174,8 +3174,8 @@ Cry_Sandyanmamon::
 	.incbin "sound/direct_sound_samples/cries/sandyanmamon.bin"
 
 	.align 2
-Cry_Hippowdon::
-	.incbin "sound/direct_sound_samples/cries/hippowdon.bin"
+Cry_Shimaunimon::
+	.incbin "sound/direct_sound_samples/cries/shimaunimon.bin"
 .endif @ P_FAMILY_SANDYANMAMON
 
 .if P_FAMILY_SKORUPI == TRUE
