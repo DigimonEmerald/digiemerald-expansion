@@ -15962,42 +15962,43 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_REDVEGIEMON
 
-#if P_FAMILY_HIPPOPOTAS
-    [SPECIES_HIPPOPOTAS] =
+#if P_FAMILY_SANDYANMAMON
+    [SPECIES_SANDYANMAMON] =
     {
-        .baseHP        = 68,
-        .baseAttack    = 72,
-        .baseDefense   = 78,
-        .baseSpeed     = 32,
-        .baseSpAttack  = 38,
-        .baseSpDefense = 42,
-        .types = MON_TYPES(TYPE_GROUND),
-        .catchRate = 140,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 66 : 95,
-        .evYield_Defense = 1,
+        .baseHP        = 70,
+        .baseAttack    = 75,
+        .baseDefense   = 55,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_BUG, TYPE_GROUND),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed = 4,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_SAND_STREAM, ABILITY_NONE, ABILITY_SAND_FORCE },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Hippopotas"),
-        .cryId = CRY_HIPPOPOTAS,
-        .natDexNum = NATIONAL_DEX_HIPPOPOTAS,
-        .categoryName = _("Hippo"),
-        .height = 8,
-        .weight = 495,
+        .abilities = { ABILITY_LEVITATE, ABILITY_COMPOUND_EYES, ABILITY_SAND_STREAM },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("SandYanmamon"),
+        .cryId = CRY_SANDYANMAMON,
+        .natDexNum = NATIONAL_DEX_SANDYANMAMON,
+        .categoryName = _("Dragonfly"),
+        .height = 13,
+        .weight = 455,
         .description = COMPOUND_STRING(
-            "Hippopotas shuts its nostrils tight when\n"
-            "travelling through sand. Instead of\n"
-            "perspiration, it expels grains of sand\n"
-            "from its body."),
+            "Unlike Yanmamon, SandYanmamon has a\n"
+            "carefree personality. This doesn't stop\n"
+            "it from being fiercely defensive about\n"
+            "the territory it inhabits."),
         .pokemonScale = 366,
         .pokemonOffset = 11,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Hippopotas,
+        .frontPic = gMonFrontPic_Sandyanmamon,
         .frontPicSize = MON_COORDS_SIZE(64, 40),
         .frontPicYOffset = 12,
         .frontAnimFrames = ANIM_FRAMES(
@@ -16006,44 +16007,44 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Hippopotas,
+        .backPic = gMonBackPic_Sandyanmamon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 14,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Hippopotas,
-        .shinyPalette = gMonShinyPalette_Hippopotas,
-        .iconSprite = gMonIcon_Hippopotas,
+        .palette = gMonPalette_Sandyanmamon,
+        .shinyPalette = gMonShinyPalette_Sandyanmamon,
+        .iconSprite = gMonIcon_Sandyanmamon,
         .iconPalIndex = 1,
 #if P_GENDER_DIFFERENCES
-        .paletteFemale = gMonPalette_HippopotasF,
-        .shinyPaletteFemale = gMonShinyPalette_HippopotasF,
+        .paletteFemale = gMonPalette_SandyanmamonF,
+        .shinyPaletteFemale = gMonShinyPalette_SandyanmamonF,
     #if P_CUSTOM_GENDER_DIFF_ICONS == TRUE
-        .iconSpriteFemale = gMonIcon_HippopotasF,
+        .iconSpriteFemale = gMonIcon_SandyanmamonF,
         .iconPalIndexFemale = 1,
     #endif
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, -1, SHADOW_SIZE_L)
-        FOOTPRINT(Hippopotas)
+        FOOTPRINT(Sandyanmamon)
         OVERWORLD(
-            sPicTable_Hippopotas,
+            sPicTable_Sandyanmamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Hippopotas,
-            gShinyOverworldPalette_Hippopotas
+            gOverworldPalette_Sandyanmamon,
+            gShinyOverworldPalette_Sandyanmamon
         )
         OVERWORLD_FEMALE(
-            sPicTable_HippopotasF,
+            sPicTable_SandyanmamonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sHippopotasLevelUpLearnset,
-        .teachableLearnset = sHippopotasTeachableLearnset,
-        .eggMoveLearnset = sHippopotasEggMoveLearnset,
+        .levelUpLearnset = sSandyanmamonLevelUpLearnset,
+        .teachableLearnset = sSandyanmamonTeachableLearnset,
+        .eggMoveLearnset = sSandyanmamonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_HIPPOWDON}),
     },
 
@@ -16124,7 +16125,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sHippowdonLevelUpLearnset,
         .teachableLearnset = sHippowdonTeachableLearnset,
     },
-#endif //P_FAMILY_HIPPOPOTAS
+#endif //P_FAMILY_SANDYANMAMON
 
 #if P_FAMILY_SKORUPI
     [SPECIES_SKORUPI] =

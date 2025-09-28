@@ -3428,19 +3428,19 @@ static const struct SpriteFrameImage sPicTable_SaberdramonMega[] = {
 #endif // OW_BATTLE_ONLY_FORMS
 #endif //P_FAMILY_REDVEGIEMON
 
-#if P_FAMILY_HIPPOPOTAS
-static const struct SpriteFrameImage sPicTable_Hippopotas[] = {
-    overworld_ascending_frames(gObjectEventPic_Hippopotas, 4, 4),
+#if P_FAMILY_SANDYANMAMON
+static const struct SpriteFrameImage sPicTable_Sandyanmamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Sandyanmamon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_HippopotasF[] = {
-    overworld_ascending_frames(gObjectEventPic_HippopotasF, 4, 4),
+static const struct SpriteFrameImage sPicTable_SandyanmamonF[] = {
+    overworld_ascending_frames(gObjectEventPic_SandyanmamonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 static const struct SpriteFrameImage sPicTable_Hippowdon[] = {
     overworld_ascending_frames(gObjectEventPic_Hippowdon, 4, 4),
 };
-#endif //P_FAMILY_HIPPOPOTAS
+#endif //P_FAMILY_SANDYANMAMON
 
 #if P_FAMILY_SKORUPI
 static const struct SpriteFrameImage sPicTable_Skorupi[] = {

@@ -5852,8 +5852,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(SaberdramonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_REDVEGIEMON
 
-#if P_FAMILY_HIPPOPOTAS
-static const union AnimCmd sAnim_Hippopotas_1[] =
+#if P_FAMILY_SANDYANMAMON
+static const union AnimCmd sAnim_Sandyanmamon_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 36),
@@ -5867,7 +5867,7 @@ static const union AnimCmd sAnim_Hippowdon_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_HIPPOPOTAS
+#endif //P_FAMILY_SANDYANMAMON
 
 #if P_FAMILY_SKORUPI
 static const union AnimCmd sAnim_Skorupi_1[] =
@@ -11521,10 +11521,10 @@ SINGLE_ANIMATION(Saberdramon);
 SINGLE_ANIMATION(SaberdramonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_REDVEGIEMON
-#if P_FAMILY_HIPPOPOTAS
-SINGLE_ANIMATION(Hippopotas);
+#if P_FAMILY_SANDYANMAMON
+SINGLE_ANIMATION(Sandyanmamon);
 SINGLE_ANIMATION(Hippowdon);
-#endif //P_FAMILY_HIPPOPOTAS
+#endif //P_FAMILY_SANDYANMAMON
 #if P_FAMILY_SKORUPI
 SINGLE_ANIMATION(Skorupi);
 SINGLE_ANIMATION(Drapion);

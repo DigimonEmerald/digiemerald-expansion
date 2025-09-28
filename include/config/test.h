@@ -494,8 +494,8 @@
 #define P_FAMILY_ORCAMON                   TRUE
 #undef P_FAMILY_REDVEGIEMON
 #define P_FAMILY_REDVEGIEMON                   TRUE
-#undef P_FAMILY_HIPPOPOTAS
-#define P_FAMILY_HIPPOPOTAS              TRUE
+#undef P_FAMILY_SANDYANMAMON
+#define P_FAMILY_SANDYANMAMON              TRUE
 #undef P_FAMILY_SKORUPI
 #define P_FAMILY_SKORUPI                 TRUE
 #undef P_FAMILY_CROAGUNK

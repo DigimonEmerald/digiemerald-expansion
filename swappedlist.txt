@@ -455,6 +455,7 @@ Pidmon - Gabite
 PlatinumSukamon - Garchomp
 RedVegiemon - Riolu
 Saberdramon - Lucario
+SandYanmamon - Hippopotas
 
 Ultimate List
 

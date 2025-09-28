@@ -3797,8 +3797,8 @@ static const u16 sRedvegiemonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_REDVEGIEMON
 
-#if P_FAMILY_HIPPOPOTAS
-static const u16 sHippopotasEggMoveLearnset[] = {
+#if P_FAMILY_SANDYANMAMON
+static const u16 sSandyanmamonEggMoveLearnset[] = {
     MOVE_STOCKPILE,
     MOVE_SWALLOW,
     MOVE_SPIT_UP,
@@ -3811,7 +3811,7 @@ static const u16 sHippopotasEggMoveLearnset[] = {
     MOVE_WHIRLWIND,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_HIPPOPOTAS
+#endif //P_FAMILY_SANDYANMAMON
 
 #if P_FAMILY_SKORUPI
 static const u16 sSkorupiEggMoveLearnset[] = {

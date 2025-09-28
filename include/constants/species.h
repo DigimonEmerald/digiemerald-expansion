@@ -463,7 +463,7 @@
 #define SPECIES_MUNCHLAX                                446
 #define SPECIES_REDVEGIEMON                                   447
 #define SPECIES_SABERDRAMON                                 448
-#define SPECIES_HIPPOPOTAS                              449
+#define SPECIES_SANDYANMAMON                              449
 #define SPECIES_HIPPOWDON                               450
 #define SPECIES_SKORUPI                                 451
 #define SPECIES_DRAPION                                 452

@@ -19935,8 +19935,8 @@ static const u16 sSaberdramonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_REDVEGIEMON
 
-#if P_FAMILY_HIPPOPOTAS
-static const u16 sHippopotasTeachableLearnset[] = {
+#if P_FAMILY_SANDYANMAMON
+static const u16 sSandyanmamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_DIG,
@@ -19992,7 +19992,7 @@ static const u16 sHippowdonTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_HIPPOPOTAS
+#endif //P_FAMILY_SANDYANMAMON
 
 #if P_FAMILY_SKORUPI
 static const u16 sSkorupiTeachableLearnset[] = {

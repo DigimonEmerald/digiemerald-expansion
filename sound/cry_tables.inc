@@ -1189,10 +1189,10 @@ gCryTable::
 	cry Cry_SaberdramonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_REDVEGIEMON
-.if P_FAMILY_HIPPOPOTAS == TRUE
-	cry Cry_Hippopotas
+.if P_FAMILY_SANDYANMAMON == TRUE
+	cry Cry_Sandyanmamon
 	cry Cry_Hippowdon
-.endif @ P_FAMILY_HIPPOPOTAS
+.endif @ P_FAMILY_SANDYANMAMON
 .if P_FAMILY_SKORUPI == TRUE
 	cry Cry_Skorupi
 	cry Cry_Drapion
@@ -3616,10 +3616,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_SaberdramonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_REDVEGIEMON
-.if P_FAMILY_HIPPOPOTAS == TRUE
-	cry_reverse Cry_Hippopotas
+.if P_FAMILY_SANDYANMAMON == TRUE
+	cry_reverse Cry_Sandyanmamon
 	cry_reverse Cry_Hippowdon
-.endif @ P_FAMILY_HIPPOPOTAS
+.endif @ P_FAMILY_SANDYANMAMON
 .if P_FAMILY_SKORUPI == TRUE
 	cry_reverse Cry_Skorupi
 	cry_reverse Cry_Drapion

@@ -3168,15 +3168,15 @@ Cry_SaberdramonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_REDVEGIEMON
 
-.if P_FAMILY_HIPPOPOTAS == TRUE
+.if P_FAMILY_SANDYANMAMON == TRUE
 	.align 2
-Cry_Hippopotas::
-	.incbin "sound/direct_sound_samples/cries/hippopotas.bin"
+Cry_Sandyanmamon::
+	.incbin "sound/direct_sound_samples/cries/sandyanmamon.bin"
 
 	.align 2
 Cry_Hippowdon::
 	.incbin "sound/direct_sound_samples/cries/hippowdon.bin"
-.endif @ P_FAMILY_HIPPOPOTAS
+.endif @ P_FAMILY_SANDYANMAMON
 
 .if P_FAMILY_SKORUPI == TRUE
 	.align 2

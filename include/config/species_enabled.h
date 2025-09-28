@@ -283,7 +283,7 @@
 #define P_FAMILY_NISEDRIMOGEMON               P_GEN_4_POKEMON
 #define P_FAMILY_ORCAMON                   P_GEN_4_POKEMON
 #define P_FAMILY_REDVEGIEMON                   P_GEN_4_POKEMON
-#define P_FAMILY_HIPPOPOTAS              P_GEN_4_POKEMON
+#define P_FAMILY_SANDYANMAMON              P_GEN_4_POKEMON
 #define P_FAMILY_SKORUPI                 P_GEN_4_POKEMON
 #define P_FAMILY_CROAGUNK                P_GEN_4_POKEMON
 #define P_FAMILY_CARNIVINE               P_GEN_4_POKEMON

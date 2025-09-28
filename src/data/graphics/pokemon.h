@@ -15116,31 +15116,31 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_REDVEGIEMON
 
-#if P_FAMILY_HIPPOPOTAS
-    const u32 gMonFrontPic_Hippopotas[] = INCBIN_U32("graphics/pokemon/hippopotas/anim_front.4bpp.smol");
-    const u16 gMonPalette_Hippopotas[] = INCBIN_U16("graphics/pokemon/hippopotas/normal.gbapal");
-    const u32 gMonBackPic_Hippopotas[] = INCBIN_U32("graphics/pokemon/hippopotas/back.4bpp.smol");
-    const u16 gMonShinyPalette_Hippopotas[] = INCBIN_U16("graphics/pokemon/hippopotas/shiny.gbapal");
-    const u8 gMonIcon_Hippopotas[] = INCBIN_U8("graphics/pokemon/hippopotas/icon.4bpp");
+#if P_FAMILY_SANDYANMAMON
+    const u32 gMonFrontPic_Sandyanmamon[] = INCBIN_U32("graphics/pokemon/sandyanmamon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Sandyanmamon[] = INCBIN_U16("graphics/pokemon/sandyanmamon/normal.gbapal");
+    const u32 gMonBackPic_Sandyanmamon[] = INCBIN_U32("graphics/pokemon/sandyanmamon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Sandyanmamon[] = INCBIN_U16("graphics/pokemon/sandyanmamon/shiny.gbapal");
+    const u8 gMonIcon_Sandyanmamon[] = INCBIN_U8("graphics/pokemon/sandyanmamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Hippopotas[] = INCBIN_U8("graphics/pokemon/hippopotas/footprint.1bpp");
+    const u8 gMonFootprint_Sandyanmamon[] = INCBIN_U8("graphics/pokemon/sandyanmamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Hippopotas[] = INCBIN_COMP("graphics/pokemon/hippopotas/overworld.4bpp");
+    const u32 gObjectEventPic_Sandyanmamon[] = INCBIN_COMP("graphics/pokemon/sandyanmamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Hippopotas[] = INCBIN_U16("graphics/pokemon/hippopotas/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Hippopotas[] = INCBIN_U16("graphics/pokemon/hippopotas/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Sandyanmamon[] = INCBIN_U16("graphics/pokemon/sandyanmamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Sandyanmamon[] = INCBIN_U16("graphics/pokemon/sandyanmamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u16 gMonPalette_HippopotasF[] = INCBIN_U16("graphics/pokemon/hippopotas/normalf.gbapal");
-    const u16 gMonShinyPalette_HippopotasF[] = INCBIN_U16("graphics/pokemon/hippopotas/shinyf.gbapal");
+    const u16 gMonPalette_SandyanmamonF[] = INCBIN_U16("graphics/pokemon/sandyanmamon/normalf.gbapal");
+    const u16 gMonShinyPalette_SandyanmamonF[] = INCBIN_U16("graphics/pokemon/sandyanmamon/shinyf.gbapal");
 #if P_CUSTOM_GENDER_DIFF_ICONS
-    const u8 gMonIcon_HippopotasF[] = INCBIN_U8("graphics/pokemon/hippopotas/iconf.4bpp");
+    const u8 gMonIcon_SandyanmamonF[] = INCBIN_U8("graphics/pokemon/sandyanmamon/iconf.4bpp");
 #endif
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_HippopotasF[] = INCBIN_COMP("graphics/pokemon/hippopotas/overworldf.4bpp");
+    const u32 gObjectEventPic_SandyanmamonF[] = INCBIN_COMP("graphics/pokemon/sandyanmamon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
@@ -15173,7 +15173,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_HIPPOPOTAS
+#endif //P_FAMILY_SANDYANMAMON
 
 #if P_FAMILY_SKORUPI
     const u32 gMonFrontPic_Skorupi[] = INCBIN_U32("graphics/pokemon/skorupi/anim_front.4bpp.smol");
