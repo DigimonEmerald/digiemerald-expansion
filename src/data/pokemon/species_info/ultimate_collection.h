@@ -5698,42 +5698,43 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_ICELEOMON
 
-#if P_FAMILY_SIGILYPH
-    [SPECIES_SIGILYPH] =
+#if P_FAMILY_SKULLSATAMON
+    [SPECIES_SKULLSATAMON] =
     {
-        .baseHP        = 72,
-        .baseAttack    = 58,
+        .baseHP        = 90,
+        .baseAttack    = 75,
         .baseDefense   = 80,
-        .baseSpeed     = 97,
-        .baseSpAttack  = 103,
-        .baseSpDefense = 80,
-        .types = MON_TYPES(TYPE_PSYCHIC, TYPE_FLYING),
+        .baseSpeed     = 75,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_DARK),
+        .attribute = TYPE_VIRUS,
         .catchRate = 95,
-        .expYield = 172,
-        .evYield_SpAttack = 2,
+        .expYield = 200,
+        .evYield_SpAttack = 5,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
-        .abilities = { ABILITY_WONDER_SKIN, ABILITY_MAGIC_GUARD, ABILITY_TINTED_LENS },
+        .abilities = { ABILITY_PRESSURE, ABILITY_DARK_AURA, ABILITY_MAGIC_GUARD },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Sigilyph"),
-        .cryId = CRY_SIGILYPH,
-        .natDexNum = NATIONAL_DEX_SIGILYPH,
-        .categoryName = _("Avianoid"),
-        .height = 14,
-        .weight = 140,
+        .speciesName = _("SkullSatamon"),
+        .cryId = CRY_SKULLSATAMON,
+        .natDexNum = NATIONAL_DEX_SKULLSATAMON,
+        .categoryName = _("Satan"),
+        .height = 60,
+        .weight = 2079,
         .description = COMPOUND_STRING(
-            "The guardians of an ancient city, they\n"
-            "always fly the same route while keeping\n"
-            "watch for invaders. They use their\n"
-            "psychic power to attack enemies."),
+            "The wickedness that SkullSatamon\n"
+            "displays is so refined that its dark\n"
+            "powers are off the charts. Its Digicore\n"
+            "is saturated with dark power."),
         .pokemonScale = 265,
         .pokemonOffset = 2,
         .trainerScale = 262,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Sigilyph,
+        .frontPic = gMonFrontPic_Skullsatamon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -5748,31 +5749,31 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ),
         .frontAnimId = ANIM_FIGURE_8,
         .enemyMonElevation = 7,
-        .backPic = gMonBackPic_Sigilyph,
+        .backPic = gMonBackPic_Skullsatamon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 7,
         .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
-        .palette = gMonPalette_Sigilyph,
-        .shinyPalette = gMonShinyPalette_Sigilyph,
-        .iconSprite = gMonIcon_Sigilyph,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Skullsatamon,
+        .shinyPalette = gMonShinyPalette_Skullsatamon,
+        .iconSprite = gMonIcon_Skullsatamon,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(3, 18, SHADOW_SIZE_S)
-        FOOTPRINT(Sigilyph)
+        FOOTPRINT(Skullsatamon)
         OVERWORLD(
-            sPicTable_Sigilyph,
+            sPicTable_Skullsatamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Sigilyph,
-            gShinyOverworldPalette_Sigilyph
+            gOverworldPalette_Skullsatamon,
+            gShinyOverworldPalette_Skullsatamon
         )
-        .levelUpLearnset = sSigilyphLevelUpLearnset,
-        .teachableLearnset = sSigilyphTeachableLearnset,
-        .eggMoveLearnset = sSigilyphEggMoveLearnset,
+        .levelUpLearnset = sSkullsatamonLevelUpLearnset,
+        .teachableLearnset = sSkullsatamonTeachableLearnset,
+        .eggMoveLearnset = sSkullsatamonEggMoveLearnset,
     },
-#endif //P_FAMILY_SIGILYPH
+#endif //P_FAMILY_SKULLSATAMON
 
 #if P_FAMILY_YAMASK
     [SPECIES_YAMASK] =

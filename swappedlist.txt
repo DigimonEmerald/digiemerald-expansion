@@ -528,6 +528,7 @@ Mummymon - Dwebble
 Orochimon - Crustle
 IceLeomon - Scraggy
 Parrotmon - Scrafty
+SkullSatamon - Sigilyph
 
 Mega List
 

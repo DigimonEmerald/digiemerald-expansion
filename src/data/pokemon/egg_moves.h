@@ -4386,8 +4386,8 @@ static const u16 sIceleomonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_ICELEOMON
 
-#if P_FAMILY_SIGILYPH
-static const u16 sSigilyphEggMoveLearnset[] = {
+#if P_FAMILY_SKULLSATAMON
+static const u16 sSkullsatamonEggMoveLearnset[] = {
     MOVE_STORED_POWER,
     MOVE_PSYCHO_SHIFT,
     MOVE_ANCIENT_POWER,
@@ -4397,7 +4397,7 @@ static const u16 sSigilyphEggMoveLearnset[] = {
     MOVE_FUTURE_SIGHT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SIGILYPH
+#endif //P_FAMILY_SKULLSATAMON
 
 #if P_FAMILY_YAMASK
 static const u16 sYamaskEggMoveLearnset[] = {

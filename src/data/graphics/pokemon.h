@@ -17183,23 +17183,23 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_ICELEOMON
 
-#if P_FAMILY_SIGILYPH
-    const u32 gMonFrontPic_Sigilyph[] = INCBIN_U32("graphics/pokemon/sigilyph/anim_front.4bpp.smol");
-    const u16 gMonPalette_Sigilyph[] = INCBIN_U16("graphics/pokemon/sigilyph/normal.gbapal");
-    const u32 gMonBackPic_Sigilyph[] = INCBIN_U32("graphics/pokemon/sigilyph/back.4bpp.smol");
-    const u16 gMonShinyPalette_Sigilyph[] = INCBIN_U16("graphics/pokemon/sigilyph/shiny.gbapal");
-    const u8 gMonIcon_Sigilyph[] = INCBIN_U8("graphics/pokemon/sigilyph/icon.4bpp");
+#if P_FAMILY_SKULLSATAMON
+    const u32 gMonFrontPic_Skullsatamon[] = INCBIN_U32("graphics/pokemon/skullsatamon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Skullsatamon[] = INCBIN_U16("graphics/pokemon/skullsatamon/normal.gbapal");
+    const u32 gMonBackPic_Skullsatamon[] = INCBIN_U32("graphics/pokemon/skullsatamon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Skullsatamon[] = INCBIN_U16("graphics/pokemon/skullsatamon/shiny.gbapal");
+    const u8 gMonIcon_Skullsatamon[] = INCBIN_U8("graphics/pokemon/skullsatamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Sigilyph[] = INCBIN_U8("graphics/pokemon/sigilyph/footprint.1bpp");
+    const u8 gMonFootprint_Skullsatamon[] = INCBIN_U8("graphics/pokemon/skullsatamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Sigilyph[] = INCBIN_COMP("graphics/pokemon/sigilyph/overworld.4bpp");
+    const u32 gObjectEventPic_Skullsatamon[] = INCBIN_COMP("graphics/pokemon/skullsatamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Sigilyph[] = INCBIN_U16("graphics/pokemon/sigilyph/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Sigilyph[] = INCBIN_U16("graphics/pokemon/sigilyph/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Skullsatamon[] = INCBIN_U16("graphics/pokemon/skullsatamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Skullsatamon[] = INCBIN_U16("graphics/pokemon/skullsatamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_SIGILYPH
+#endif //P_FAMILY_SKULLSATAMON
 
 #if P_FAMILY_YAMASK
     const u32 gMonFrontPic_Yamask[] = INCBIN_U32("graphics/pokemon/yamask/anim_front.4bpp.smol");

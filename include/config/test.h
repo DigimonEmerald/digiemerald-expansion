@@ -596,8 +596,8 @@
 #define P_FAMILY_MUMMYMON                 TRUE
 #undef P_FAMILY_ICELEOMON
 #define P_FAMILY_ICELEOMON                 TRUE
-#undef P_FAMILY_SIGILYPH
-#define P_FAMILY_SIGILYPH                TRUE
+#undef P_FAMILY_SKULLSATAMON
+#define P_FAMILY_SKULLSATAMON                TRUE
 #undef P_FAMILY_YAMASK
 #define P_FAMILY_YAMASK                  TRUE
 #undef P_FAMILY_TIRTOUGA

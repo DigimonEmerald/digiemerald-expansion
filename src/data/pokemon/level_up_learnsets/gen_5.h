@@ -12459,8 +12459,8 @@ static const struct LevelUpMove sParrotmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_ICELEOMON
 
-#if P_FAMILY_SIGILYPH
-static const struct LevelUpMove sSigilyphLevelUpLearnset[] = {
+#if P_FAMILY_SKULLSATAMON
+static const struct LevelUpMove sSkullsatamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GUST),
     LEVEL_UP_MOVE( 1, MOVE_MIRACLE_EYE),
     LEVEL_UP_MOVE( 4, MOVE_HYPNOSIS),
@@ -12480,7 +12480,7 @@ static const struct LevelUpMove sSigilyphLevelUpLearnset[] = {
     LEVEL_UP_MOVE(51, MOVE_SKY_ATTACK),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SIGILYPH
+#endif //P_FAMILY_SKULLSATAMON
 
 #if P_FAMILY_YAMASK
 static const struct LevelUpMove sYamaskLevelUpLearnset[] = {

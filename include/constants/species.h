@@ -580,7 +580,7 @@
 #define SPECIES_OROCHIMON                                 558
 #define SPECIES_ICELEOMON                                 559
 #define SPECIES_PARROTMON                                 560
-#define SPECIES_SIGILYPH                                561
+#define SPECIES_SKULLSATAMON                                561
 #define SPECIES_YAMASK                                  562
 #define SPECIES_COFAGRIGUS                              563
 #define SPECIES_TIRTOUGA                                564

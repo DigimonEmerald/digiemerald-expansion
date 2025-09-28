@@ -23240,8 +23240,8 @@ static const u16 sParrotmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_ICELEOMON
 
-#if P_FAMILY_SIGILYPH
-static const u16 sSigilyphTeachableLearnset[] = {
+#if P_FAMILY_SKULLSATAMON
+static const u16 sSkullsatamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
@@ -23276,7 +23276,7 @@ static const u16 sSigilyphTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SIGILYPH
+#endif //P_FAMILY_SKULLSATAMON
 
 #if P_FAMILY_YAMASK
 static const u16 sYamaskTeachableLearnset[] = {

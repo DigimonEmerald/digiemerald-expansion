@@ -1394,9 +1394,9 @@ gCryTable::
 	cry Cry_Iceleomon
 	cry Cry_Parrotmon
 .endif @ P_FAMILY_ICELEOMON
-.if P_FAMILY_SIGILYPH == TRUE
-	cry Cry_Sigilyph
-.endif @ P_FAMILY_SIGILYPH
+.if P_FAMILY_SKULLSATAMON == TRUE
+	cry Cry_Skullsatamon
+.endif @ P_FAMILY_SKULLSATAMON
 .if P_FAMILY_YAMASK == TRUE
 	cry Cry_Yamask
 	cry Cry_Cofagrigus
@@ -3821,9 +3821,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Iceleomon
 	cry_reverse Cry_Parrotmon
 .endif @ P_FAMILY_ICELEOMON
-.if P_FAMILY_SIGILYPH == TRUE
-	cry_reverse Cry_Sigilyph
-.endif @ P_FAMILY_SIGILYPH
+.if P_FAMILY_SKULLSATAMON == TRUE
+	cry_reverse Cry_Skullsatamon
+.endif @ P_FAMILY_SKULLSATAMON
 .if P_FAMILY_YAMASK == TRUE
 	cry_reverse Cry_Yamask
 	cry_reverse Cry_Cofagrigus

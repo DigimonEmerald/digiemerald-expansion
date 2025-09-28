@@ -3665,11 +3665,11 @@ Cry_Parrotmon::
 	.incbin "sound/direct_sound_samples/cries/parrotmon.bin"
 .endif @ P_FAMILY_ICELEOMON
 
-.if P_FAMILY_SIGILYPH == TRUE
+.if P_FAMILY_SKULLSATAMON == TRUE
 	.align 2
-Cry_Sigilyph::
-	.incbin "sound/direct_sound_samples/cries/sigilyph.bin"
-.endif @ P_FAMILY_SIGILYPH
+Cry_Skullsatamon::
+	.incbin "sound/direct_sound_samples/cries/skullsatamon.bin"
+.endif @ P_FAMILY_SKULLSATAMON
 
 .if P_FAMILY_YAMASK == TRUE
 	.align 2
