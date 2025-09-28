@@ -1692,18 +1692,17 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 #if P_FAMILY_BAKEMON
     [SPECIES_BAKEMON] =
     {
-        .baseHP        = 62,
-        .baseAttack    = 69,
-        .baseDefense   = 91,
-        .baseSpeed     = 72,
-        .baseSpAttack  = 77,
-        .baseSpDefense = 70,
-        .types = MON_TYPES(TYPE_GHOST, TYPE_DARK),
+        .baseHP        = 60,
+        .baseAttack    = 70,
+        .baseDefense   = 60,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_GHOST),
         .attribute = TYPE_VIRUS,
         .catchRate = 115,
         .expYield = 150,
-        .evYield_Defense   = 3,
-        .evYield_SpAttack  = 1,
+        .evYield_SpDefense  = 4,
         .itemRare = ITEM_SOFT_SAND,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 15,
@@ -16210,45 +16209,47 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sSnimonLevelUpLearnset,
         .teachableLearnset = sSnimonTeachableLearnset,
         .eggMoveLearnset = sSnimonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_DRAPION}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SOULMON}),
     },
 
-    [SPECIES_DRAPION] =
+    [SPECIES_SOULMON] =
     {
-        .baseHP        = 70,
-        .baseAttack    = 90,
-        .baseDefense   = 110,
-        .baseSpeed     = 95,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_POISON, TYPE_DARK),
-        .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 175 : 204,
-        .evYield_Defense = 2,
+        .baseHP        = 50,
+        .baseAttack    = 55,
+        .baseDefense   = 60,
+        .baseSpeed     = 50,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_GHOST, TYPE_PSYCHIC),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_SpAttack = 3,
+        .evYield_SpDefense = 1,
         .itemRare = ITEM_POISON_BARB,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG, EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_BATTLE_ARMOR, ABILITY_SNIPER, ABILITY_KEEN_EYE },
-        .bodyColor = BODY_COLOR_PURPLE,
-        .speciesName = _("Drapion"),
-        .cryId = CRY_DRAPION,
-        .natDexNum = NATIONAL_DEX_DRAPION,
-        .categoryName = _("Ogre Scorp"),
-        .height = 13,
-        .weight = 615,
+        .abilities = { ABILITY_LEVITATE, ABILITY_MAGICIAN, ABILITY_MAGIC_BOUNCE },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Soulmon"),
+        .cryId = CRY_SOULMON,
+        .natDexNum = NATIONAL_DEX_SOULMON,
+        .categoryName = _("Magician"),
+        .height = 17,
+        .weight = 115,
         .description = COMPOUND_STRING(
-            "Possessing a sturdy build, it takes\n"
-            "pride in its strength. It has the power\n"
-            "in its clawed arms to make scrap\n"
-            "out of a car."),
+            "If a Bakemon takes in too much fantasy\n"
+            "mage data, they will end up becoming\n"
+            "Soulmon. Its magic power comes its\n"
+            "hat, letting it use curses and magic."),
         .pokemonScale = 272,
         .pokemonOffset = 5,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Drapion,
+        .frontPic = gMonFrontPic_Soulmon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
@@ -16263,28 +16264,28 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 1),
         ),
         .frontAnimId = ANIM_V_JUMPS_BIG,
-        .backPic = gMonBackPic_Drapion,
+        .backPic = gMonBackPic_Soulmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Drapion,
-        .shinyPalette = gMonShinyPalette_Drapion,
-        .iconSprite = gMonIcon_Drapion,
+        .palette = gMonPalette_Soulmon,
+        .shinyPalette = gMonShinyPalette_Soulmon,
+        .iconSprite = gMonIcon_Soulmon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-3, 6, SHADOW_SIZE_L)
-        FOOTPRINT(Drapion)
+        FOOTPRINT(Soulmon)
         OVERWORLD(
-            sPicTable_Drapion,
+            sPicTable_Soulmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Drapion,
-            gShinyOverworldPalette_Drapion
+            gOverworldPalette_Soulmon,
+            gShinyOverworldPalette_Soulmon
         )
-        .levelUpLearnset = sDrapionLevelUpLearnset,
-        .teachableLearnset = sDrapionTeachableLearnset,
+        .levelUpLearnset = sSoulmonLevelUpLearnset,
+        .teachableLearnset = sSoulmonTeachableLearnset,
     },
 #endif //P_FAMILY_SNIMON
 

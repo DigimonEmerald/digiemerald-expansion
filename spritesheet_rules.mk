@@ -2574,7 +2574,7 @@ $(POKEMONGFXDIR)/shimaunimon/overworldf.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/snimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/drapion/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/soulmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/croagunk/overworld.4bpp: %.4bpp: %.png

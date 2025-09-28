@@ -1195,7 +1195,7 @@ gCryTable::
 .endif @ P_FAMILY_SANDYANMAMON
 .if P_FAMILY_SNIMON == TRUE
 	cry Cry_Snimon
-	cry Cry_Drapion
+	cry Cry_Soulmon
 .endif @ P_FAMILY_SNIMON
 .if P_FAMILY_CROAGUNK == TRUE
 	cry Cry_Croagunk
@@ -3622,7 +3622,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_SANDYANMAMON
 .if P_FAMILY_SNIMON == TRUE
 	cry_reverse Cry_Snimon
-	cry_reverse Cry_Drapion
+	cry_reverse Cry_Soulmon
 .endif @ P_FAMILY_SNIMON
 .if P_FAMILY_CROAGUNK == TRUE
 	cry_reverse Cry_Croagunk

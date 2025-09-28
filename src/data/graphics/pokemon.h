@@ -15192,19 +15192,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Drapion[] = INCBIN_U32("graphics/pokemon/drapion/anim_front.4bpp.smol");
-    const u16 gMonPalette_Drapion[] = INCBIN_U16("graphics/pokemon/drapion/normal.gbapal");
-    const u32 gMonBackPic_Drapion[] = INCBIN_U32("graphics/pokemon/drapion/back.4bpp.smol");
-    const u16 gMonShinyPalette_Drapion[] = INCBIN_U16("graphics/pokemon/drapion/shiny.gbapal");
-    const u8 gMonIcon_Drapion[] = INCBIN_U8("graphics/pokemon/drapion/icon.4bpp");
+    const u32 gMonFrontPic_Soulmon[] = INCBIN_U32("graphics/pokemon/soulmon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Soulmon[] = INCBIN_U16("graphics/pokemon/soulmon/normal.gbapal");
+    const u32 gMonBackPic_Soulmon[] = INCBIN_U32("graphics/pokemon/soulmon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Soulmon[] = INCBIN_U16("graphics/pokemon/soulmon/shiny.gbapal");
+    const u8 gMonIcon_Soulmon[] = INCBIN_U8("graphics/pokemon/soulmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Drapion[] = INCBIN_U8("graphics/pokemon/drapion/footprint.1bpp");
+    const u8 gMonFootprint_Soulmon[] = INCBIN_U8("graphics/pokemon/soulmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Drapion[] = INCBIN_COMP("graphics/pokemon/drapion/overworld.4bpp");
+    const u32 gObjectEventPic_Soulmon[] = INCBIN_COMP("graphics/pokemon/soulmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Drapion[] = INCBIN_U16("graphics/pokemon/drapion/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Drapion[] = INCBIN_U16("graphics/pokemon/drapion/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Soulmon[] = INCBIN_U16("graphics/pokemon/soulmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Soulmon[] = INCBIN_U16("graphics/pokemon/soulmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_SNIMON

@@ -3184,8 +3184,8 @@ Cry_Snimon::
 	.incbin "sound/direct_sound_samples/cries/snimon.bin"
 
 	.align 2
-Cry_Drapion::
-	.incbin "sound/direct_sound_samples/cries/drapion.bin"
+Cry_Soulmon::
+	.incbin "sound/direct_sound_samples/cries/soulmon.bin"
 .endif @ P_FAMILY_SNIMON
 
 .if P_FAMILY_CROAGUNK == TRUE
