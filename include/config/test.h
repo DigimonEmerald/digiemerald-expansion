@@ -731,8 +731,8 @@
 #define P_FAMILY_MACHINEDRAMON                 TRUE
 #undef P_FAMILY_PUPPETMON
 #define P_FAMILY_PUPPETMON                   TRUE
-#undef P_FAMILY_BINACLE
-#define P_FAMILY_BINACLE                 TRUE
+#undef P_FAMILY_SKULLMAMMOTHMON
+#define P_FAMILY_SKULLMAMMOTHMON                 TRUE
 #undef P_FAMILY_SKRELP
 #define P_FAMILY_SKRELP                  TRUE
 #undef P_FAMILY_CLAUNCHER

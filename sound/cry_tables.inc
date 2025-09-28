@@ -1668,10 +1668,10 @@ gCryTable::
 	cry Cry_Puppetmon
 	cry Cry_Plesiomon
 .endif @ P_FAMILY_PUPPETMON
-.if P_FAMILY_BINACLE == TRUE
-	cry Cry_Binacle
+.if P_FAMILY_SKULLMAMMOTHMON == TRUE
+	cry Cry_Skullmammothmon
 	cry Cry_Barbaracle
-.endif @ P_FAMILY_BINACLE
+.endif @ P_FAMILY_SKULLMAMMOTHMON
 .if P_FAMILY_SKRELP == TRUE
 	cry Cry_Skrelp
 	cry Cry_Dragalge
@@ -4095,10 +4095,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Puppetmon
 	cry_reverse Cry_Plesiomon
 .endif @ P_FAMILY_PUPPETMON
-.if P_FAMILY_BINACLE == TRUE
-	cry_reverse Cry_Binacle
+.if P_FAMILY_SKULLMAMMOTHMON == TRUE
+	cry_reverse Cry_Skullmammothmon
 	cry_reverse Cry_Barbaracle
-.endif @ P_FAMILY_BINACLE
+.endif @ P_FAMILY_SKULLMAMMOTHMON
 .if P_FAMILY_SKRELP == TRUE
 	cry_reverse Cry_Skrelp
 	cry_reverse Cry_Dragalge

@@ -5088,15 +5088,15 @@ static const u16 sPuppetmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_PUPPETMON
 
-#if P_FAMILY_BINACLE
-static const u16 sBinacleEggMoveLearnset[] = {
+#if P_FAMILY_SKULLMAMMOTHMON
+static const u16 sSkullmammothmonEggMoveLearnset[] = {
     MOVE_TICKLE,
     MOVE_SWITCHEROO,
     MOVE_HELPING_HAND,
     MOVE_WATER_SPORT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BINACLE
+#endif //P_FAMILY_SKULLMAMMOTHMON
 
 #if P_FAMILY_SKRELP
 static const u16 sSkrelpEggMoveLearnset[] = {

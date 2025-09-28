@@ -3302,42 +3302,45 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
 #endif //P_FAMILY_PUPPETMON
 
-#if P_FAMILY_BINACLE
-    [SPECIES_BINACLE] =
+#if P_FAMILY_SKULLMAMMOTHMON
+    [SPECIES_SKULLMAMMOTHMON] =
     {
-        .baseHP        = 42,
-        .baseAttack    = 52,
-        .baseDefense   = 67,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 39,
-        .baseSpDefense = 56,
-        .types = MON_TYPES(TYPE_ROCK, TYPE_WATER),
-        .catchRate = 120,
-        .expYield = 61,
-        .evYield_Attack = 1,
+        .baseHP        = 55,
+        .baseAttack    = 200,
+        .baseDefense   = 95,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_ICE, TYPE_GHOST),
+        .attribute = TYPE_VACCINE,   
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_Attack = 3,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_SNIPER, ABILITY_PICKPOCKET },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Binacle"),
-        .cryId = CRY_BINACLE,
-        .natDexNum = NATIONAL_DEX_BINACLE,
-        .categoryName = _("Two-Handed"),
-        .height = 5,
-        .weight = 310,
+        .abilities = { ABILITY_NO_GUARD, ABILITY_CURSED_BODY, ABILITY_PERISH_BODY },
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("SkullMammon"),
+        .cryId = CRY_SKULLMAMMOTHMON,
+        .natDexNum = NATIONAL_DEX_SKULLMAMMOTHMON,
+        .categoryName = _("Undead"),
+        .height = 90,
+        .weight = 3366,
         .description = COMPOUND_STRING(
-            "They stretch and then contract, yanking\n"
-            "their rocks along with them in bold hops.\n"
-            "They eat seaweed that washes up on\n"
-            "the shoreline."),
+            "SkullMammothmons body is the result of\n"
+            "viruses eating away at its flesh. All\n"
+            "that it is left with is the strong urge\n"
+            "to fight Virus-type Digimon"),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Binacle,
+        .frontPic = gMonFrontPic_Skullmammothmon,
         .frontPicSize = MON_COORDS_SIZE(48, 56),
         .frontPicYOffset = 9,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3349,29 +3352,29 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 8),
         ),
         .frontAnimId = ANIM_H_SLIDE,
-        .backPic = gMonBackPic_Binacle,
+        .backPic = gMonBackPic_Skullmammothmon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Binacle,
-        .shinyPalette = gMonShinyPalette_Binacle,
-        .iconSprite = gMonIcon_Binacle,
+        .palette = gMonPalette_Skullmammothmon,
+        .shinyPalette = gMonShinyPalette_Skullmammothmon,
+        .iconSprite = gMonIcon_Skullmammothmon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(-3, 5, SHADOW_SIZE_M)
-        FOOTPRINT(Binacle)
+        FOOTPRINT(Skullmammothmon)
         OVERWORLD(
-            sPicTable_Binacle,
+            sPicTable_Skullmammothmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Binacle,
-            gShinyOverworldPalette_Binacle
+            gOverworldPalette_Skullmammothmon,
+            gShinyOverworldPalette_Skullmammothmon
         )
-        .levelUpLearnset = sBinacleLevelUpLearnset,
-        .teachableLearnset = sBinacleTeachableLearnset,
-        .eggMoveLearnset = sBinacleEggMoveLearnset,
+        .levelUpLearnset = sSkullmammothmonLevelUpLearnset,
+        .teachableLearnset = sSkullmammothmonTeachableLearnset,
+        .eggMoveLearnset = sSkullmammothmonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_BARBARACLE}),
     },
 
@@ -3441,7 +3444,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sBarbaracleLevelUpLearnset,
         .teachableLearnset = sBarbaracleTeachableLearnset,
     },
-#endif //P_FAMILY_BINACLE
+#endif //P_FAMILY_SKULLMAMMOTHMON
 
 #if P_FAMILY_SKRELP
     [SPECIES_SKRELP] =

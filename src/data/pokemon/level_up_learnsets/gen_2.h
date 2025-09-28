@@ -13329,8 +13329,8 @@ static const struct LevelUpMove sPlesiomonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_PUPPETMON
 
-#if P_FAMILY_BINACLE
-static const struct LevelUpMove sBinacleLevelUpLearnset[] = {
+#if P_FAMILY_SKULLMAMMOTHMON
+static const struct LevelUpMove sSkullmammothmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SHELL_SMASH),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
@@ -13373,7 +13373,7 @@ static const struct LevelUpMove sBarbaracleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(65, MOVE_SKULL_BASH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_BINACLE
+#endif //P_FAMILY_SKULLMAMMOTHMON
 
 #if P_FAMILY_SKRELP
 static const struct LevelUpMove sSkrelpLevelUpLearnset[] = {

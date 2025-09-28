@@ -565,5 +565,6 @@ Machinedramon - Swirlix
 Piedmon - Slurpuff
 Puppetmon - Inkay
 Plesiomon - Malamar
+SkullMammothmon - Binacle
 
 SPECIES NAME LENGTH MAX = 13

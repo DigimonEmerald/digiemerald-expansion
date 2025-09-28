@@ -27523,8 +27523,8 @@ static const u16 sPlesiomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_PUPPETMON
 
-#if P_FAMILY_BINACLE
-static const u16 sBinacleTeachableLearnset[] = {
+#if P_FAMILY_SKULLMAMMOTHMON
+static const u16 sSkullmammothmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -27603,7 +27603,7 @@ static const u16 sBarbaracleTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BINACLE
+#endif //P_FAMILY_SKULLMAMMOTHMON
 
 #if P_FAMILY_SKRELP
 static const u16 sSkrelpTeachableLearnset[] = {

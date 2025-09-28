@@ -4345,15 +4345,15 @@ Cry_Plesiomon::
 	.incbin "sound/direct_sound_samples/cries/plesiomon.bin"
 .endif @ P_FAMILY_PUPPETMON
 
-.if P_FAMILY_BINACLE == TRUE
+.if P_FAMILY_SKULLMAMMOTHMON == TRUE
 	.align 2
-Cry_Binacle::
-	.incbin "sound/direct_sound_samples/cries/binacle.bin"
+Cry_Skullmammothmon::
+	.incbin "sound/direct_sound_samples/cries/skullmammothmon.bin"
 
 	.align 2
 Cry_Barbaracle::
 	.incbin "sound/direct_sound_samples/cries/barbaracle.bin"
-.endif @ P_FAMILY_BINACLE
+.endif @ P_FAMILY_SKULLMAMMOTHMON
 
 .if P_FAMILY_SKRELP == TRUE
 	.align 2
