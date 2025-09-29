@@ -16289,43 +16289,45 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_SNIMON
 
-#if P_FAMILY_CROAGUNK
-    [SPECIES_CROAGUNK] =
+#if P_FAMILY_TANKMON
+    [SPECIES_TANKMON] =
     {
-        .baseHP        = 48,
-        .baseAttack    = 61,
-        .baseDefense   = 40,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 61,
-        .baseSpDefense = 40,
-        .types = MON_TYPES(TYPE_POISON, TYPE_FIGHTING),
-        .catchRate = 140,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 83,
-        .evYield_Attack = 1,
+        .baseHP        = 60,
+        .baseAttack    = 65,
+        .baseDefense   = 110,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 110,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_STEEL),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense = 2,
+        .evYield_SpAttack = 2,
         .itemRare = ITEM_BLACK_SLUDGE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 10,
         .friendship = 100,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_ANTICIPATION, ABILITY_DRY_SKIN, ABILITY_POISON_TOUCH },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Croagunk"),
-        .cryId = CRY_CROAGUNK,
-        .natDexNum = NATIONAL_DEX_CROAGUNK,
-        .categoryName = _("Toxic Mouth"),
-        .height = 7,
-        .weight = 230,
+        .abilities = { ABILITY_BULLETPROOF, ABILITY_DAUNTLESS_SHIELD, ABILITY_MOTOR_DRIVE },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Tankmon"),
+        .cryId = CRY_TANKMON,
+        .natDexNum = NATIONAL_DEX_TANKMON,
+        .categoryName = _("Mercenary"),
+        .height = 31,
+        .weight = 3639,
         .description = COMPOUND_STRING(
-            "Croagunk rarely fights fairly. Inflating\n"
-            "its poison sacs, it fills the area with\n"
-            "an odd sound and hits flinching\n"
-            "opponents with a poison jab."),
+            "Tankmon holds no allegiences except to\n"
+            "the highest bidder. It has overwhelming\n"
+            "firepower for a champion, often\n"
+            "dominating any battlefields."),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Croagunk,
+        .frontPic = gMonFrontPic_Tankmon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 9,
         .frontAnimFrames = ANIM_FRAMES(
@@ -16335,42 +16337,42 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 5),
         ),
         .frontAnimId = ANIM_RAPID_H_HOPS,
-        .backPic = gMonBackPic_Croagunk,
+        .backPic = gMonBackPic_Tankmon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_GROW,
-        .palette = gMonPalette_Croagunk,
-        .shinyPalette = gMonShinyPalette_Croagunk,
-        .iconSprite = gMonIcon_Croagunk,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Tankmon,
+        .shinyPalette = gMonShinyPalette_Tankmon,
+        .iconSprite = gMonIcon_Tankmon,
+        .iconPalIndex = 1,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_CroagunkF,
+        .frontPicFemale = gMonFrontPic_TankmonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(40, 48),
-        .backPicFemale = gMonBackPic_CroagunkF,
+        .backPicFemale = gMonBackPic_TankmonF,
         .backPicSizeFemale = MON_COORDS_SIZE(56, 56),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(2, 4, SHADOW_SIZE_S)
-        FOOTPRINT(Croagunk)
+        FOOTPRINT(Tankmon)
         OVERWORLD(
-            sPicTable_Croagunk,
+            sPicTable_Tankmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Croagunk,
-            gShinyOverworldPalette_Croagunk
+            gOverworldPalette_Tankmon,
+            gShinyOverworldPalette_Tankmon
         )
         OVERWORLD_FEMALE(
-            sPicTable_CroagunkF,
+            sPicTable_TankmonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sCroagunkLevelUpLearnset,
-        .teachableLearnset = sCroagunkTeachableLearnset,
-        .eggMoveLearnset = sCroagunkEggMoveLearnset,
+        .levelUpLearnset = sTankmonLevelUpLearnset,
+        .teachableLearnset = sTankmonTeachableLearnset,
+        .eggMoveLearnset = sTankmonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_TOXICROAK}),
     },
 
@@ -16456,7 +16458,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sToxicroakLevelUpLearnset,
         .teachableLearnset = sToxicroakTeachableLearnset,
     },
-#endif //P_FAMILY_CROAGUNK
+#endif //P_FAMILY_TANKMON
 
 #if P_FAMILY_CARNIVINE
     [SPECIES_CARNIVINE] =

@@ -15209,28 +15209,28 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_SNIMON
 
-#if P_FAMILY_CROAGUNK
-    const u32 gMonFrontPic_Croagunk[] = INCBIN_U32("graphics/pokemon/croagunk/anim_front.4bpp.smol");
-    const u16 gMonPalette_Croagunk[] = INCBIN_U16("graphics/pokemon/croagunk/normal.gbapal");
-    const u32 gMonBackPic_Croagunk[] = INCBIN_U32("graphics/pokemon/croagunk/back.4bpp.smol");
-    const u16 gMonShinyPalette_Croagunk[] = INCBIN_U16("graphics/pokemon/croagunk/shiny.gbapal");
-    const u8 gMonIcon_Croagunk[] = INCBIN_U8("graphics/pokemon/croagunk/icon.4bpp");
+#if P_FAMILY_TANKMON
+    const u32 gMonFrontPic_Tankmon[] = INCBIN_U32("graphics/pokemon/tankmon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Tankmon[] = INCBIN_U16("graphics/pokemon/tankmon/normal.gbapal");
+    const u32 gMonBackPic_Tankmon[] = INCBIN_U32("graphics/pokemon/tankmon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Tankmon[] = INCBIN_U16("graphics/pokemon/tankmon/shiny.gbapal");
+    const u8 gMonIcon_Tankmon[] = INCBIN_U8("graphics/pokemon/tankmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Croagunk[] = INCBIN_U8("graphics/pokemon/croagunk/footprint.1bpp");
+    const u8 gMonFootprint_Tankmon[] = INCBIN_U8("graphics/pokemon/tankmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Croagunk[] = INCBIN_COMP("graphics/pokemon/croagunk/overworld.4bpp");
+    const u32 gObjectEventPic_Tankmon[] = INCBIN_COMP("graphics/pokemon/tankmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Croagunk[] = INCBIN_U16("graphics/pokemon/croagunk/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Croagunk[] = INCBIN_U16("graphics/pokemon/croagunk/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Tankmon[] = INCBIN_U16("graphics/pokemon/tankmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Tankmon[] = INCBIN_U16("graphics/pokemon/tankmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_CroagunkF[] = INCBIN_U32("graphics/pokemon/croagunk/anim_frontf.4bpp.smol");
-    const u32 gMonBackPic_CroagunkF[] = INCBIN_U32("graphics/pokemon/croagunk/backf.4bpp.smol");
+    const u32 gMonFrontPic_TankmonF[] = INCBIN_U32("graphics/pokemon/tankmon/anim_frontf.4bpp.smol");
+    const u32 gMonBackPic_TankmonF[] = INCBIN_U32("graphics/pokemon/tankmon/backf.4bpp.smol");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_CroagunkF[] = INCBIN_COMP("graphics/pokemon/croagunk/overworldf.4bpp");
+    const u32 gObjectEventPic_TankmonF[] = INCBIN_COMP("graphics/pokemon/tankmon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
@@ -15257,7 +15257,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gObjectEventPic_ToxicroakF[] = INCBIN_COMP("graphics/pokemon/toxicroak/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_CROAGUNK
+#endif //P_FAMILY_TANKMON
 
 #if P_FAMILY_CARNIVINE
     const u32 gMonFrontPic_Carnivine[] = INCBIN_U32("graphics/pokemon/carnivine/anim_front.4bpp.smol");

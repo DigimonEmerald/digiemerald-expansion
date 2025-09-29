@@ -3831,8 +3831,8 @@ static const u16 sSnimonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_SNIMON
 
-#if P_FAMILY_CROAGUNK
-static const u16 sCroagunkEggMoveLearnset[] = {
+#if P_FAMILY_TANKMON
+static const u16 sTankmonEggMoveLearnset[] = {
     MOVE_ME_FIRST,
     MOVE_FEINT,
     MOVE_DYNAMIC_PUNCH,
@@ -3850,7 +3850,7 @@ static const u16 sCroagunkEggMoveLearnset[] = {
     MOVE_QUICK_GUARD,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CROAGUNK
+#endif //P_FAMILY_TANKMON
 
 #if P_FAMILY_CARNIVINE
 static const u16 sCarnivineEggMoveLearnset[] = {

@@ -2577,10 +2577,10 @@ $(POKEMONGFXDIR)/snimon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/soulmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/croagunk/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/tankmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/croagunk/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/tankmon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/toxicroak/overworld.4bpp: %.4bpp: %.png

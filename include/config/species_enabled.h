@@ -285,7 +285,7 @@
 #define P_FAMILY_REDVEGIEMON                   P_GEN_4_POKEMON
 #define P_FAMILY_SANDYANMAMON              P_GEN_4_POKEMON
 #define P_FAMILY_SNIMON                 P_GEN_4_POKEMON
-#define P_FAMILY_CROAGUNK                P_GEN_4_POKEMON
+#define P_FAMILY_TANKMON                P_GEN_4_POKEMON
 #define P_FAMILY_CARNIVINE               P_GEN_4_POKEMON
 #define P_FAMILY_FINNEON                 P_GEN_4_POKEMON
 #define P_FAMILY_SNOVER                  P_GEN_4_POKEMON

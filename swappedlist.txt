@@ -459,6 +459,7 @@ SandYanmamon - Hippopotas
 ShimaUnimon - Hippowdon
 Snimon - Skorupi
 Soulmon - Drapion
+Tankmon - Croagunk
 
 Ultimate List
 

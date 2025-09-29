@@ -498,8 +498,8 @@
 #define P_FAMILY_SANDYANMAMON              TRUE
 #undef P_FAMILY_SNIMON
 #define P_FAMILY_SNIMON                 TRUE
-#undef P_FAMILY_CROAGUNK
-#define P_FAMILY_CROAGUNK                TRUE
+#undef P_FAMILY_TANKMON
+#define P_FAMILY_TANKMON                TRUE
 #undef P_FAMILY_CARNIVINE
 #define P_FAMILY_CARNIVINE               TRUE
 #undef P_FAMILY_FINNEON

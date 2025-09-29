@@ -3451,13 +3451,13 @@ static const struct SpriteFrameImage sPicTable_Soulmon[] = {
 };
 #endif //P_FAMILY_SNIMON
 
-#if P_FAMILY_CROAGUNK
-static const struct SpriteFrameImage sPicTable_Croagunk[] = {
-    overworld_ascending_frames(gObjectEventPic_Croagunk, 4, 4),
+#if P_FAMILY_TANKMON
+static const struct SpriteFrameImage sPicTable_Tankmon[] = {
+    overworld_ascending_frames(gObjectEventPic_Tankmon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_CroagunkF[] = {
-    overworld_ascending_frames(gObjectEventPic_CroagunkF, 4, 4),
+static const struct SpriteFrameImage sPicTable_TankmonF[] = {
+    overworld_ascending_frames(gObjectEventPic_TankmonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 static const struct SpriteFrameImage sPicTable_Toxicroak[] = {
@@ -3468,7 +3468,7 @@ static const struct SpriteFrameImage sPicTable_ToxicroakF[] = {
     overworld_ascending_frames(gObjectEventPic_ToxicroakF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_CROAGUNK
+#endif //P_FAMILY_TANKMON
 
 #if P_FAMILY_CARNIVINE
 static const struct SpriteFrameImage sPicTable_Carnivine[] = {

@@ -20066,8 +20066,8 @@ static const u16 sSoulmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SNIMON
 
-#if P_FAMILY_CROAGUNK
-static const u16 sCroagunkTeachableLearnset[] = {
+#if P_FAMILY_TANKMON
+static const u16 sTankmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
@@ -20151,7 +20151,7 @@ static const u16 sToxicroakTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CROAGUNK
+#endif //P_FAMILY_TANKMON
 
 #if P_FAMILY_CARNIVINE
 static const u16 sCarnivineTeachableLearnset[] = {

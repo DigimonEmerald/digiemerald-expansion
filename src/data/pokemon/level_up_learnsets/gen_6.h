@@ -11063,8 +11063,8 @@ static const struct LevelUpMove sSoulmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_SNIMON
 
-#if P_FAMILY_CROAGUNK
-static const struct LevelUpMove sCroagunkLevelUpLearnset[] = {
+#if P_FAMILY_TANKMON
+static const struct LevelUpMove sTankmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 3, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE( 8, MOVE_POISON_STING),
@@ -11105,7 +11105,7 @@ static const struct LevelUpMove sToxicroakLevelUpLearnset[] = {
     LEVEL_UP_MOVE(62, MOVE_FLATTER),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_CROAGUNK
+#endif //P_FAMILY_TANKMON
 
 #if P_FAMILY_CARNIVINE
 static const struct LevelUpMove sCarnivineLevelUpLearnset[] = {

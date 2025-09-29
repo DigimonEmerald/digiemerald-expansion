@@ -1197,10 +1197,10 @@ gCryTable::
 	cry Cry_Snimon
 	cry Cry_Soulmon
 .endif @ P_FAMILY_SNIMON
-.if P_FAMILY_CROAGUNK == TRUE
-	cry Cry_Croagunk
+.if P_FAMILY_TANKMON == TRUE
+	cry Cry_Tankmon
 	cry Cry_Toxicroak
-.endif @ P_FAMILY_CROAGUNK
+.endif @ P_FAMILY_TANKMON
 .if P_FAMILY_CARNIVINE == TRUE
 	cry Cry_Carnivine
 .endif @ P_FAMILY_CARNIVINE
@@ -3624,10 +3624,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Snimon
 	cry_reverse Cry_Soulmon
 .endif @ P_FAMILY_SNIMON
-.if P_FAMILY_CROAGUNK == TRUE
-	cry_reverse Cry_Croagunk
+.if P_FAMILY_TANKMON == TRUE
+	cry_reverse Cry_Tankmon
 	cry_reverse Cry_Toxicroak
-.endif @ P_FAMILY_CROAGUNK
+.endif @ P_FAMILY_TANKMON
 .if P_FAMILY_CARNIVINE == TRUE
 	cry_reverse Cry_Carnivine
 .endif @ P_FAMILY_CARNIVINE
