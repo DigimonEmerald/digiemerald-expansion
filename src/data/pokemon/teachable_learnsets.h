@@ -23355,7 +23355,7 @@ static const u16 sTekkamonGalarTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sRunerigusTeachableLearnset[] = {
+static const u16 sVermilimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_EARTHQUAKE,

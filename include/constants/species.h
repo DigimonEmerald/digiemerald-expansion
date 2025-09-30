@@ -918,7 +918,7 @@
 #define SPECIES_CURSOLA                                 864
 #define SPECIES_SIRFETCHD                               865
 #define SPECIES_MR_RIME                                 866
-#define SPECIES_RUNERIGUS                               867
+#define SPECIES_VERMILIMON                               867
 #define SPECIES_MILCERY                                 868
 #define SPECIES_ALCREMIE                                SPECIES_ALCREMIE_STRAWBERRY
 #define SPECIES_ALCREMIE_STRAWBERRY                     SPECIES_ALCREMIE_STRAWBERRY_VANILLA_CREAM

@@ -13092,7 +13092,7 @@ static const struct LevelUpMove sTekkamonGalarLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sRunerigusLevelUpLearnset[] = {
+static const struct LevelUpMove sVermilimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SHADOW_CLAW),
     LEVEL_UP_MOVE( 1, MOVE_SHADOW_CLAW),
     LEVEL_UP_MOVE( 1, MOVE_SCARY_FACE),

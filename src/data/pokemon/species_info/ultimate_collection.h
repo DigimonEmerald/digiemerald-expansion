@@ -5991,70 +5991,73 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sTekkamonGalarTeachableLearnset,
         .eggMoveLearnset = sTekkamonGalarEggMoveLearnset,
         .formSpeciesIdTable = sTekkamonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_SCRIPT_TRIGGER, 0, SPECIES_RUNERIGUS, CONDITIONS({IF_CURRENT_DAMAGE_GE, 49})}),
+        .evolutions = EVOLUTION({EVO_SCRIPT_TRIGGER, 0, SPECIES_VERMILIMON, CONDITIONS({IF_CURRENT_DAMAGE_GE, 49})}),
     },
 
-    [SPECIES_RUNERIGUS] =
+    [SPECIES_VERMILIMON] =
     {
-        .baseHP        = 58,
-        .baseAttack    = 95,
-        .baseDefense   = 145,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 105,
-        .types = MON_TYPES(TYPE_GROUND, TYPE_GHOST),
-        .catchRate = 90,
-        .expYield = 169,
-        .evYield_Defense = 2,
+        .baseHP        = 110,
+        .baseAttack    = 90,
+        .baseDefense   = 120,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_GROUND, TYPE_FIRE),
+        .attribute = TYPE_DATA,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_HP = 2,
+        .evYield_Defense = 3,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_WANDERING_SPIRIT, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GRAY,
-        .speciesName = _("Runerigus"),
-        .cryId = CRY_RUNERIGUS,
-        .natDexNum = NATIONAL_DEX_RUNERIGUS,
-        .categoryName = _("Grudge"),
-        .height = 16,
-        .weight = 666,
+        .abilities = { ABILITY_FLAME_BODY, ABILITY_STURDY, ABILITY_BIG_PECKS }, // Big Horn
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Vermilimon"),
+        .cryId = CRY_VERMILIMON,
+        .natDexNum = NATIONAL_DEX_VERMILIMON,
+        .categoryName = _("Ankylosaur"),
+        .height = 78,
+        .weight = 7421,
         .description = COMPOUND_STRING(
-            "A powerful curse was woven into an ancient\n"
-            "painting. After absorbing the spirit of\n"
-            "a Tekkamon, the painting began to move."),
+            "Vermilimon is an evolved form of\n"
+            "Monochromon after living near\n"
+            "volcanoes. Its skin has developed to\n"
+            "a strength equal to that of a diamond."),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Runerigus,
+        .frontPic = gMonFrontPic_Vermilimon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 2,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 5,
-        .backPic = gMonBackPic_Runerigus,
+        .backPic = gMonBackPic_Vermilimon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 9,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_Runerigus,
-        .shinyPalette = gMonShinyPalette_Runerigus,
-        .iconSprite = gMonIcon_Runerigus,
+        .palette = gMonPalette_Vermilimon,
+        .shinyPalette = gMonShinyPalette_Vermilimon,
+        .iconSprite = gMonIcon_Vermilimon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(14, 14, SHADOW_SIZE_M)
-        FOOTPRINT(Runerigus)
+        FOOTPRINT(Vermilimon)
         OVERWORLD(
-            sPicTable_Runerigus,
+            sPicTable_Vermilimon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Runerigus,
-            gShinyOverworldPalette_Runerigus
+            gOverworldPalette_Vermilimon,
+            gShinyOverworldPalette_Vermilimon
         )
-        .levelUpLearnset = sRunerigusLevelUpLearnset,
-        .teachableLearnset = sRunerigusTeachableLearnset,
+        .levelUpLearnset = sVermilimonLevelUpLearnset,
+        .teachableLearnset = sVermilimonTeachableLearnset,
     },
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TEKKAMON

@@ -1401,7 +1401,7 @@ gCryTable::
 	cry Cry_Tekkamon
 	cry Cry_Myotismon
 .if P_GALARIAN_FORMS == TRUE
-	cry Cry_Runerigus
+	cry Cry_Vermilimon
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_TEKKAMON
 .if P_FAMILY_TIRTOUGA == TRUE
@@ -3828,7 +3828,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Tekkamon
 	cry_reverse Cry_Myotismon
 .if P_GALARIAN_FORMS == TRUE
-	cry_reverse Cry_Runerigus
+	cry_reverse Cry_Vermilimon
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_TEKKAMON
 .if P_FAMILY_TIRTOUGA == TRUE

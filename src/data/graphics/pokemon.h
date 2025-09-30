@@ -17248,19 +17248,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Runerigus[] = INCBIN_U32("graphics/pokemon/runerigus/front.4bpp.smol");
-    const u16 gMonPalette_Runerigus[] = INCBIN_U16("graphics/pokemon/runerigus/normal.gbapal");
-    const u32 gMonBackPic_Runerigus[] = INCBIN_U32("graphics/pokemon/runerigus/back.4bpp.smol");
-    const u16 gMonShinyPalette_Runerigus[] = INCBIN_U16("graphics/pokemon/runerigus/shiny.gbapal");
-    const u8 gMonIcon_Runerigus[] = INCBIN_U8("graphics/pokemon/runerigus/icon.4bpp");
+    const u32 gMonFrontPic_Vermilimon[] = INCBIN_U32("graphics/pokemon/vermilimon/front.4bpp.smol");
+    const u16 gMonPalette_Vermilimon[] = INCBIN_U16("graphics/pokemon/vermilimon/normal.gbapal");
+    const u32 gMonBackPic_Vermilimon[] = INCBIN_U32("graphics/pokemon/vermilimon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Vermilimon[] = INCBIN_U16("graphics/pokemon/vermilimon/shiny.gbapal");
+    const u8 gMonIcon_Vermilimon[] = INCBIN_U8("graphics/pokemon/vermilimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Runerigus[] = INCBIN_U8("graphics/pokemon/runerigus/footprint.1bpp");
+    const u8 gMonFootprint_Vermilimon[] = INCBIN_U8("graphics/pokemon/vermilimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Runerigus[] = INCBIN_COMP("graphics/pokemon/runerigus/overworld.4bpp");
+    const u32 gObjectEventPic_Vermilimon[] = INCBIN_COMP("graphics/pokemon/vermilimon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Runerigus[] = INCBIN_U16("graphics/pokemon/runerigus/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Runerigus[] = INCBIN_U16("graphics/pokemon/runerigus/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Vermilimon[] = INCBIN_U16("graphics/pokemon/vermilimon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Vermilimon[] = INCBIN_U16("graphics/pokemon/vermilimon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GALARIAN_FORMS

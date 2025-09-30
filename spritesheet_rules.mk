@@ -3900,7 +3900,7 @@ $(POKEMONGFXDIR)/sirfetchd/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/mr_rime/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/runerigus/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/vermilimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/milcery/overworld.4bpp: %.4bpp: %.png

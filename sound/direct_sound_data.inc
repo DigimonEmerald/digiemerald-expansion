@@ -3682,8 +3682,8 @@ Cry_Myotismon::
 
 .if P_GALARIAN_FORMS == TRUE
 	.align 2
-Cry_Runerigus::
-	.incbin "sound/direct_sound_samples/cries/runerigus.bin"
+Cry_Vermilimon::
+	.incbin "sound/direct_sound_samples/cries/vermilimon.bin"
 
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_TEKKAMON
