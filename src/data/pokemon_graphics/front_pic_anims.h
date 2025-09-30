@@ -7012,7 +7012,7 @@ static const union AnimCmd sAnim_Tekkamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Cofagrigus_1[] =
+static const union AnimCmd sAnim_Myotismon_1[] =
 {
     ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(1, 30),
@@ -11751,7 +11751,7 @@ SINGLE_ANIMATION(Skullsatamon);
 #endif //P_FAMILY_SKULLSATAMON
 #if P_FAMILY_TEKKAMON
 SINGLE_ANIMATION(Tekkamon);
-SINGLE_ANIMATION(Cofagrigus);
+SINGLE_ANIMATION(Myotismon);
 #if P_GALARIAN_FORMS
 SINGLE_ANIMATION(TekkamonGalar);
 SINGLE_ANIMATION(Runerigus);

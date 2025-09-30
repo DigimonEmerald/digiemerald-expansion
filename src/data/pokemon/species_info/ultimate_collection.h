@@ -5850,45 +5850,49 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sTekkamonTeachableLearnset,
         .eggMoveLearnset = sTekkamonEggMoveLearnset,
         .formSpeciesIdTable = sTekkamonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_COFAGRIGUS}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_MYOTISMON}),
     },
 
-    [SPECIES_COFAGRIGUS] =
+    [SPECIES_MYOTISMON] =
     {
-        .baseHP        = 58,
-        .baseAttack    = 50,
-        .baseDefense   = 145,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 105,
-        .types = MON_TYPES(TYPE_GHOST),
-        .catchRate = 90,
-        .expYield = 169,
-        .evYield_Defense = 2,
+        .baseHP        = 90,
+        .baseAttack    = 95,
+        .baseDefense   = 90,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_DARK, TYPE_GHOST),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 95,
+        .expYield = 200,
+        .evYield_HP = 1,
+        .evYield_Attack = 2,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 1,
         .itemRare = ITEM_SPELL_TAG,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_MUMMY, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Cofagrigus"),
-        .cryId = CRY_COFAGRIGUS,
-        .natDexNum = NATIONAL_DEX_COFAGRIGUS,
-        .categoryName = _("Coffin"),
-        .height = 17,
-        .weight = 765,
+        .abilities = { ABILITY_DAZZLING, ABILITY_BAD_DREAMS, ABILITY_MOLD_BREAKER },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Myotismon"),
+        .cryId = CRY_MYOTISMON,
+        .natDexNum = NATIONAL_DEX_MYOTISMON,
+        .categoryName = _("Night Lord"),
+        .height = 27,
+        .weight = 1463,
         .description = COMPOUND_STRING(
-            "Grave robbers who mistake them for\n"
-            "real coffins and get too close end up\n"
-            "trapped inside their bodies. Their bodies\n"
-            "are covered in pure gold."),
+            "It is exceedingly difficult to destroy\n"
+            "to destroy Myotismon in the night.\n"
+            "During the day however, it struggles to\n"
+            "demonstrate its power."),
         .pokemonScale = 259,
         .pokemonOffset = 0,
         .trainerScale = 290,
         .trainerOffset = 1,
-        .frontPic = gMonFrontPic_Cofagrigus,
+        .frontPic = gMonFrontPic_Myotismon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -5897,28 +5901,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_GLOW_BLACK,
-        .backPic = gMonBackPic_Cofagrigus,
+        .backPic = gMonBackPic_Myotismon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Cofagrigus,
-        .shinyPalette = gMonShinyPalette_Cofagrigus,
-        .iconSprite = gMonIcon_Cofagrigus,
+        .palette = gMonPalette_Myotismon,
+        .shinyPalette = gMonShinyPalette_Myotismon,
+        .iconSprite = gMonIcon_Myotismon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(6, 12, SHADOW_SIZE_M)
-        FOOTPRINT(Cofagrigus)
+        FOOTPRINT(Myotismon)
         OVERWORLD(
-            sPicTable_Cofagrigus,
+            sPicTable_Myotismon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Cofagrigus,
-            gShinyOverworldPalette_Cofagrigus
+            gOverworldPalette_Myotismon,
+            gShinyOverworldPalette_Myotismon
         )
-        .levelUpLearnset = sCofagrigusLevelUpLearnset,
-        .teachableLearnset = sCofagrigusTeachableLearnset,
+        .levelUpLearnset = sMyotismonLevelUpLearnset,
+        .teachableLearnset = sMyotismonTeachableLearnset,
     },
 
 #if P_GALARIAN_FORMS

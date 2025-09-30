@@ -3677,8 +3677,8 @@ Cry_Tekkamon::
 	.incbin "sound/direct_sound_samples/cries/tekkamon.bin"
 
 	.align 2
-Cry_Cofagrigus::
-	.incbin "sound/direct_sound_samples/cries/cofagrigus.bin"
+Cry_Myotismon::
+	.incbin "sound/direct_sound_samples/cries/myotismon.bin"
 
 .if P_GALARIAN_FORMS == TRUE
 	.align 2

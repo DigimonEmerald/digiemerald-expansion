@@ -23305,7 +23305,7 @@ static const u16 sTekkamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sCofagrigusTeachableLearnset[] = {
+static const u16 sMyotismonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,

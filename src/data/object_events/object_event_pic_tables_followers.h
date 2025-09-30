@@ -4042,8 +4042,8 @@ static const struct SpriteFrameImage sPicTable_Skullsatamon[] = {
 static const struct SpriteFrameImage sPicTable_Tekkamon[] = {
     overworld_ascending_frames(gObjectEventPic_Tekkamon, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_Cofagrigus[] = {
-    overworld_ascending_frames(gObjectEventPic_Cofagrigus, 4, 4),
+static const struct SpriteFrameImage sPicTable_Myotismon[] = {
+    overworld_ascending_frames(gObjectEventPic_Myotismon, 4, 4),
 };
 #if P_GALARIAN_FORMS
 static const struct SpriteFrameImage sPicTable_TekkamonGalar[] = {

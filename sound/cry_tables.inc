@@ -1399,7 +1399,7 @@ gCryTable::
 .endif @ P_FAMILY_SKULLSATAMON
 .if P_FAMILY_TEKKAMON == TRUE
 	cry Cry_Tekkamon
-	cry Cry_Cofagrigus
+	cry Cry_Myotismon
 .if P_GALARIAN_FORMS == TRUE
 	cry Cry_Runerigus
 .endif @ P_GALARIAN_FORMS
@@ -3826,7 +3826,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_SKULLSATAMON
 .if P_FAMILY_TEKKAMON == TRUE
 	cry_reverse Cry_Tekkamon
-	cry_reverse Cry_Cofagrigus
+	cry_reverse Cry_Myotismon
 .if P_GALARIAN_FORMS == TRUE
 	cry_reverse Cry_Runerigus
 .endif @ P_GALARIAN_FORMS

@@ -582,7 +582,7 @@
 #define SPECIES_PARROTMON                                 560
 #define SPECIES_SKULLSATAMON                                561
 #define SPECIES_TEKKAMON                                  562
-#define SPECIES_COFAGRIGUS                              563
+#define SPECIES_MYOTISMON                              563
 #define SPECIES_TIRTOUGA                                564
 #define SPECIES_CARRACOSTA                              565
 #define SPECIES_ARCHEN                                  566

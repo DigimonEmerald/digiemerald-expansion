@@ -17218,19 +17218,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Cofagrigus[] = INCBIN_U32("graphics/pokemon/cofagrigus/anim_front.4bpp.smol");
-    const u16 gMonPalette_Cofagrigus[] = INCBIN_U16("graphics/pokemon/cofagrigus/normal.gbapal");
-    const u32 gMonBackPic_Cofagrigus[] = INCBIN_U32("graphics/pokemon/cofagrigus/back.4bpp.smol");
-    const u16 gMonShinyPalette_Cofagrigus[] = INCBIN_U16("graphics/pokemon/cofagrigus/shiny.gbapal");
-    const u8 gMonIcon_Cofagrigus[] = INCBIN_U8("graphics/pokemon/cofagrigus/icon.4bpp");
+    const u32 gMonFrontPic_Myotismon[] = INCBIN_U32("graphics/pokemon/myotismon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Myotismon[] = INCBIN_U16("graphics/pokemon/myotismon/normal.gbapal");
+    const u32 gMonBackPic_Myotismon[] = INCBIN_U32("graphics/pokemon/myotismon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Myotismon[] = INCBIN_U16("graphics/pokemon/myotismon/shiny.gbapal");
+    const u8 gMonIcon_Myotismon[] = INCBIN_U8("graphics/pokemon/myotismon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Cofagrigus[] = INCBIN_U8("graphics/pokemon/cofagrigus/footprint.1bpp");
+    const u8 gMonFootprint_Myotismon[] = INCBIN_U8("graphics/pokemon/myotismon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Cofagrigus[] = INCBIN_COMP("graphics/pokemon/cofagrigus/overworld.4bpp");
+    const u32 gObjectEventPic_Myotismon[] = INCBIN_COMP("graphics/pokemon/myotismon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Cofagrigus[] = INCBIN_U16("graphics/pokemon/cofagrigus/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Cofagrigus[] = INCBIN_U16("graphics/pokemon/cofagrigus/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Myotismon[] = INCBIN_U16("graphics/pokemon/myotismon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Myotismon[] = INCBIN_U16("graphics/pokemon/myotismon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

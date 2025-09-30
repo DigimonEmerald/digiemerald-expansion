@@ -2949,7 +2949,7 @@ $(POKEMONGFXDIR)/skullsatamon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/tekkamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/cofagrigus/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/myotismon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/tirtouga/overworld.4bpp: %.4bpp: %.png
