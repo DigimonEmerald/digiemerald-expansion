@@ -20153,8 +20153,8 @@ static const u16 sThunderballmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_TANKMON
 
-#if P_FAMILY_CARNIVINE
-static const u16 sCarnivineTeachableLearnset[] = {
+#if P_FAMILY_MUDFRIGIMON
+static const u16 sMudfrigimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
     MOVE_CUT,
@@ -20179,7 +20179,7 @@ static const u16 sCarnivineTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CARNIVINE
+#endif //P_FAMILY_MUDFRIGIMON
 
 #if P_FAMILY_FINNEON
 static const u16 sFinneonTeachableLearnset[] = {

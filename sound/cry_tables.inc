@@ -1201,9 +1201,9 @@ gCryTable::
 	cry Cry_Tankmon
 	cry Cry_Thunderballmon
 .endif @ P_FAMILY_TANKMON
-.if P_FAMILY_CARNIVINE == TRUE
-	cry Cry_Carnivine
-.endif @ P_FAMILY_CARNIVINE
+.if P_FAMILY_MUDFRIGIMON == TRUE
+	cry Cry_Mudfrigimon
+.endif @ P_FAMILY_MUDFRIGIMON
 .if P_FAMILY_FINNEON == TRUE
 	cry Cry_Finneon
 	cry Cry_Lumineon
@@ -3628,9 +3628,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Tankmon
 	cry_reverse Cry_Thunderballmon
 .endif @ P_FAMILY_TANKMON
-.if P_FAMILY_CARNIVINE == TRUE
-	cry_reverse Cry_Carnivine
-.endif @ P_FAMILY_CARNIVINE
+.if P_FAMILY_MUDFRIGIMON == TRUE
+	cry_reverse Cry_Mudfrigimon
+.endif @ P_FAMILY_MUDFRIGIMON
 .if P_FAMILY_FINNEON == TRUE
 	cry_reverse Cry_Finneon
 	cry_reverse Cry_Lumineon

@@ -2589,7 +2589,7 @@ $(POKEMONGFXDIR)/thunderballmon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/thunderballmon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/carnivine/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/mudfrigimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/finneon/overworld.4bpp: %.4bpp: %.png

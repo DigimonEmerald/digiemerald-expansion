@@ -15259,23 +15259,23 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_TANKMON
 
-#if P_FAMILY_CARNIVINE
-    const u32 gMonFrontPic_Carnivine[] = INCBIN_U32("graphics/pokemon/carnivine/anim_front.4bpp.smol");
-    const u16 gMonPalette_Carnivine[] = INCBIN_U16("graphics/pokemon/carnivine/normal.gbapal");
-    const u32 gMonBackPic_Carnivine[] = INCBIN_U32("graphics/pokemon/carnivine/back.4bpp.smol");
-    const u16 gMonShinyPalette_Carnivine[] = INCBIN_U16("graphics/pokemon/carnivine/shiny.gbapal");
-    const u8 gMonIcon_Carnivine[] = INCBIN_U8("graphics/pokemon/carnivine/icon.4bpp");
+#if P_FAMILY_MUDFRIGIMON
+    const u32 gMonFrontPic_Mudfrigimon[] = INCBIN_U32("graphics/pokemon/mudfrigimon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Mudfrigimon[] = INCBIN_U16("graphics/pokemon/mudfrigimon/normal.gbapal");
+    const u32 gMonBackPic_Mudfrigimon[] = INCBIN_U32("graphics/pokemon/mudfrigimon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Mudfrigimon[] = INCBIN_U16("graphics/pokemon/mudfrigimon/shiny.gbapal");
+    const u8 gMonIcon_Mudfrigimon[] = INCBIN_U8("graphics/pokemon/mudfrigimon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Carnivine[] = INCBIN_U8("graphics/pokemon/carnivine/footprint.1bpp");
+    const u8 gMonFootprint_Mudfrigimon[] = INCBIN_U8("graphics/pokemon/mudfrigimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Carnivine[] = INCBIN_COMP("graphics/pokemon/carnivine/overworld.4bpp");
+    const u32 gObjectEventPic_Mudfrigimon[] = INCBIN_COMP("graphics/pokemon/mudfrigimon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Carnivine[] = INCBIN_U16("graphics/pokemon/carnivine/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Carnivine[] = INCBIN_U16("graphics/pokemon/carnivine/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Mudfrigimon[] = INCBIN_U16("graphics/pokemon/mudfrigimon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Mudfrigimon[] = INCBIN_U16("graphics/pokemon/mudfrigimon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_CARNIVINE
+#endif //P_FAMILY_MUDFRIGIMON
 
 #if P_FAMILY_FINNEON
     const u32 gMonFrontPic_Finneon[] = INCBIN_U32("graphics/pokemon/finneon/anim_front.4bpp.smol");

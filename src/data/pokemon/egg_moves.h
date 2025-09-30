@@ -3852,8 +3852,8 @@ static const u16 sTankmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_TANKMON
 
-#if P_FAMILY_CARNIVINE
-static const u16 sCarnivineEggMoveLearnset[] = {
+#if P_FAMILY_MUDFRIGIMON
+static const u16 sMudfrigimonEggMoveLearnset[] = {
     MOVE_SLEEP_POWDER,
     MOVE_STUN_SPORE,
     MOVE_RAZOR_LEAF,
@@ -3868,7 +3868,7 @@ static const u16 sCarnivineEggMoveLearnset[] = {
     MOVE_ACID_SPRAY,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CARNIVINE
+#endif //P_FAMILY_MUDFRIGIMON
 
 #if P_FAMILY_FINNEON
 static const u16 sFinneonEggMoveLearnset[] = {

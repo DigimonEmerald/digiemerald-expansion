@@ -5927,8 +5927,8 @@ static const union AnimCmd sAnim_Thunderballmon_1[] =
 };
 #endif //P_FAMILY_TANKMON
 
-#if P_FAMILY_CARNIVINE
-static const union AnimCmd sAnim_Carnivine_1[] =
+#if P_FAMILY_MUDFRIGIMON
+static const union AnimCmd sAnim_Mudfrigimon_1[] =
 {
     ANIMCMD_FRAME(1, 5),
     ANIMCMD_FRAME(0, 5),
@@ -5944,7 +5944,7 @@ static const union AnimCmd sAnim_Carnivine_1[] =
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_CARNIVINE
+#endif //P_FAMILY_MUDFRIGIMON
 
 #if P_FAMILY_FINNEON
 static const union AnimCmd sAnim_Finneon_1[] =
@@ -11533,9 +11533,9 @@ SINGLE_ANIMATION(Soulmon);
 SINGLE_ANIMATION(Tankmon);
 SINGLE_ANIMATION(Thunderballmon);
 #endif //P_FAMILY_TANKMON
-#if P_FAMILY_CARNIVINE
-SINGLE_ANIMATION(Carnivine);
-#endif //P_FAMILY_CARNIVINE
+#if P_FAMILY_MUDFRIGIMON
+SINGLE_ANIMATION(Mudfrigimon);
+#endif //P_FAMILY_MUDFRIGIMON
 #if P_FAMILY_FINNEON
 SINGLE_ANIMATION(Finneon);
 SINGLE_ANIMATION(Lumineon);

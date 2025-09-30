@@ -500,8 +500,8 @@
 #define P_FAMILY_SNIMON                 TRUE
 #undef P_FAMILY_TANKMON
 #define P_FAMILY_TANKMON                TRUE
-#undef P_FAMILY_CARNIVINE
-#define P_FAMILY_CARNIVINE               TRUE
+#undef P_FAMILY_MUDFRIGIMON
+#define P_FAMILY_MUDFRIGIMON               TRUE
 #undef P_FAMILY_FINNEON
 #define P_FAMILY_FINNEON                 TRUE
 #undef P_FAMILY_SNOVER

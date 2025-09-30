@@ -3470,11 +3470,11 @@ static const struct SpriteFrameImage sPicTable_ThunderballmonF[] = {
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_TANKMON
 
-#if P_FAMILY_CARNIVINE
-static const struct SpriteFrameImage sPicTable_Carnivine[] = {
-    overworld_ascending_frames(gObjectEventPic_Carnivine, 4, 4),
+#if P_FAMILY_MUDFRIGIMON
+static const struct SpriteFrameImage sPicTable_Mudfrigimon[] = {
+    overworld_ascending_frames(gObjectEventPic_Mudfrigimon, 4, 4),
 };
-#endif //P_FAMILY_CARNIVINE
+#endif //P_FAMILY_MUDFRIGIMON
 
 #if P_FAMILY_FINNEON
 static const struct SpriteFrameImage sPicTable_Finneon[] = {

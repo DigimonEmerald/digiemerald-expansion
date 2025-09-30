@@ -3198,11 +3198,11 @@ Cry_Thunderballmon::
 	.incbin "sound/direct_sound_samples/cries/thunderballmon.bin"
 .endif @ P_FAMILY_TANKMON
 
-.if P_FAMILY_CARNIVINE == TRUE
+.if P_FAMILY_MUDFRIGIMON == TRUE
 	.align 2
-Cry_Carnivine::
-	.incbin "sound/direct_sound_samples/cries/carnivine.bin"
-.endif @ P_FAMILY_CARNIVINE
+Cry_Mudfrigimon::
+	.incbin "sound/direct_sound_samples/cries/mudfrigimon.bin"
+.endif @ P_FAMILY_MUDFRIGIMON
 
 .if P_FAMILY_FINNEON == TRUE
 	.align 2

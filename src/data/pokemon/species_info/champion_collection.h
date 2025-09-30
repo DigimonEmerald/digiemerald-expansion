@@ -16462,42 +16462,43 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_TANKMON
 
-#if P_FAMILY_CARNIVINE
-    [SPECIES_CARNIVINE] =
+#if P_FAMILY_MUDFRIGIMON
+    [SPECIES_MUDFRIGIMON] =
     {
-        .baseHP        = 74,
-        .baseAttack    = 100,
-        .baseDefense   = 72,
-        .baseSpeed     = 46,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 72,
-        .types = MON_TYPES(TYPE_GRASS),
-        .catchRate = 200,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 159 : 164,
-        .evYield_Attack = 2,
+        .baseHP        = 75,
+        .baseAttack    = 60,
+        .baseDefense   = 65,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_GROUND),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_SpDefense = 4,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
-        .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_GREEN,
-        .speciesName = _("Carnivine"),
-        .cryId = CRY_CARNIVINE,
-        .natDexNum = NATIONAL_DEX_CARNIVINE,
-        .categoryName = _("Bug Catcher"),
-        .height = 14,
-        .weight = 270,
+        .abilities = { ABILITY_THICK_FAT, ABILITY_SOLID_ROCK, ABILITY_HYDRATION },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("MudFrigimon"),
+        .cryId = CRY_MUDFRIGIMON,
+        .natDexNum = NATIONAL_DEX_MUDFRIGIMON,
+        .categoryName = _("Earth"),
+        .height = 20,
+        .weight = 685,
         .description = COMPOUND_STRING(
-            "Hanging from branches using its\n"
-            "tentacles, it looks like a plant.\n"
-            "It attracts prey with its sweet-smelling\n"
-            "saliva, then chomps down."),
+            "A gentle digimon, MudFrigimon will try\n"
+            "befriending anyone it happens upon. It\n"
+            "will only exhibit its power when push\n"
+            "comes to shove."),
         .pokemonScale = 265,
         .pokemonOffset = 2,
         .trainerScale = 262,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Carnivine,
+        .frontPic = gMonFrontPic_Mudfrigimon,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 10,
         .frontAnimFrames = ANIM_FRAMES(
@@ -16516,31 +16517,31 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         ),
         .frontAnimId = ANIM_FIGURE_8,
         .enemyMonElevation = 8,
-        .backPic = gMonBackPic_Carnivine,
+        .backPic = gMonBackPic_Mudfrigimon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
-        .palette = gMonPalette_Carnivine,
-        .shinyPalette = gMonShinyPalette_Carnivine,
-        .iconSprite = gMonIcon_Carnivine,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Mudfrigimon,
+        .shinyPalette = gMonShinyPalette_Mudfrigimon,
+        .iconSprite = gMonIcon_Mudfrigimon,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 9, SHADOW_SIZE_XL_BATTLE_ONLY)
-        FOOTPRINT(Carnivine)
+        FOOTPRINT(Mudfrigimon)
         OVERWORLD(
-            sPicTable_Carnivine,
+            sPicTable_Mudfrigimon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Carnivine,
-            gShinyOverworldPalette_Carnivine
+            gOverworldPalette_Mudfrigimon,
+            gShinyOverworldPalette_Mudfrigimon
         )
-        .levelUpLearnset = sCarnivineLevelUpLearnset,
-        .teachableLearnset = sCarnivineTeachableLearnset,
-        .eggMoveLearnset = sCarnivineEggMoveLearnset,
+        .levelUpLearnset = sMudfrigimonLevelUpLearnset,
+        .teachableLearnset = sMudfrigimonTeachableLearnset,
+        .eggMoveLearnset = sMudfrigimonEggMoveLearnset,
     },
-#endif //P_FAMILY_CARNIVINE
+#endif //P_FAMILY_MUDFRIGIMON
 
 #if P_FAMILY_FINNEON
     [SPECIES_FINNEON] =
