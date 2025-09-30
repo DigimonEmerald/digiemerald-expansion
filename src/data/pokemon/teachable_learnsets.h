@@ -27562,7 +27562,7 @@ static const u16 sSkullmammothmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBarbaracleTeachableLearnset[] = {
+static const u16 sVenommyotismonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,

@@ -3375,45 +3375,47 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sSkullmammothmonLevelUpLearnset,
         .teachableLearnset = sSkullmammothmonTeachableLearnset,
         .eggMoveLearnset = sSkullmammothmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_BARBARACLE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_VENOMMYOTISMON}),
     },
 
-    [SPECIES_BARBARACLE] =
+    [SPECIES_VENOMMYOTISMON] =
     {
-        .baseHP        = 72,
-        .baseAttack    = 105,
-        .baseDefense   = 115,
-        .baseSpeed     = 68,
-        .baseSpAttack  = 54,
-        .baseSpDefense = 86,
-        .types = MON_TYPES(TYPE_ROCK, TYPE_WATER),
-        .catchRate = 45,
-        .expYield = 175,
-        .evYield_Attack = 2,
+        .baseHP        = 100,
+        .baseAttack    = 90,
+        .baseDefense   = 110,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 140,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_DARK, TYPE_GHOST),
+        .attribute = TYPE_VIRUS,   
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_Defense = 1,
+        .evYield_SpAttack = 5,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_SNIPER, ABILITY_PICKPOCKET },
-        .bodyColor = BODY_COLOR_BROWN,
+        .abilities = { ABILITY_BERSERK, ABILITY_ANGER_POINT, ABILITY_RECKLESS },
+        .bodyColor = BODY_COLOR_RED,
         .noFlip = TRUE,
-        .speciesName = _("Barbaracle"),
-        .cryId = CRY_BARBARACLE,
-        .natDexNum = NATIONAL_DEX_BARBARACLE,
-        .categoryName = _("Collective"),
-        .height = 13,
-        .weight = 960,
+        .speciesName = _("VenmMyotimon"),
+        .cryId = CRY_VENOMMYOTISMON,
+        .natDexNum = NATIONAL_DEX_VENOMMYOTISMON,
+        .categoryName = _("Night Lord"),
+        .height = 135,
+        .weight = 7451,
         .description = COMPOUND_STRING(
-            "Barbaracle's legs and hands have minds\n"
-            "of their own, and they will move\n"
-            "independently. But they usually follow\n"
-            "the head's orders."),
+            "After Myotismon abandons all its\n"
+            "sensibilities, VenomMyotismon is\n"
+            "formed. All it is left with is\n"
+            "its impulsive need for destruction."),
         .pokemonScale = 272,
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Barbaracle,
+        .frontPic = gMonFrontPic_Venommyotismon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3421,28 +3423,28 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Barbaracle,
+        .backPic = gMonBackPic_Venommyotismon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Barbaracle,
-        .shinyPalette = gMonShinyPalette_Barbaracle,
-        .iconSprite = gMonIcon_Barbaracle,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Venommyotismon,
+        .shinyPalette = gMonShinyPalette_Venommyotismon,
+        .iconSprite = gMonIcon_Venommyotismon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(4, 14, SHADOW_SIZE_L)
-        FOOTPRINT(Barbaracle)
+        FOOTPRINT(Venommyotismon)
         OVERWORLD(
-            sPicTable_Barbaracle,
+            sPicTable_Venommyotismon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Barbaracle,
-            gShinyOverworldPalette_Barbaracle
+            gOverworldPalette_Venommyotismon,
+            gShinyOverworldPalette_Venommyotismon
         )
-        .levelUpLearnset = sBarbaracleLevelUpLearnset,
-        .teachableLearnset = sBarbaracleTeachableLearnset,
+        .levelUpLearnset = sVenommyotismonLevelUpLearnset,
+        .teachableLearnset = sVenommyotismonTeachableLearnset,
     },
 #endif //P_FAMILY_SKULLMAMMOTHMON
 

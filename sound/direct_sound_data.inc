@@ -4351,8 +4351,8 @@ Cry_Skullmammothmon::
 	.incbin "sound/direct_sound_samples/cries/skullmammothmon.bin"
 
 	.align 2
-Cry_Barbaracle::
-	.incbin "sound/direct_sound_samples/cries/barbaracle.bin"
+Cry_Venommyotismon::
+	.incbin "sound/direct_sound_samples/cries/venommyotismon.bin"
 .endif @ P_FAMILY_SKULLMAMMOTHMON
 
 .if P_FAMILY_SKRELP == TRUE

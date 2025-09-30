@@ -1670,7 +1670,7 @@ gCryTable::
 .endif @ P_FAMILY_PUPPETMON
 .if P_FAMILY_SKULLMAMMOTHMON == TRUE
 	cry Cry_Skullmammothmon
-	cry Cry_Barbaracle
+	cry Cry_Venommyotismon
 .endif @ P_FAMILY_SKULLMAMMOTHMON
 .if P_FAMILY_SKRELP == TRUE
 	cry Cry_Skrelp
@@ -4097,7 +4097,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_PUPPETMON
 .if P_FAMILY_SKULLMAMMOTHMON == TRUE
 	cry_reverse Cry_Skullmammothmon
-	cry_reverse Cry_Barbaracle
+	cry_reverse Cry_Venommyotismon
 .endif @ P_FAMILY_SKULLMAMMOTHMON
 .if P_FAMILY_SKRELP == TRUE
 	cry_reverse Cry_Skrelp

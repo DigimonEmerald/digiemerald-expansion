@@ -20106,19 +20106,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Barbaracle[] = INCBIN_U32("graphics/pokemon/barbaracle/anim_front.4bpp.smol");
-    const u16 gMonPalette_Barbaracle[] = INCBIN_U16("graphics/pokemon/barbaracle/normal.gbapal");
-    const u32 gMonBackPic_Barbaracle[] = INCBIN_U32("graphics/pokemon/barbaracle/back.4bpp.smol");
-    const u16 gMonShinyPalette_Barbaracle[] = INCBIN_U16("graphics/pokemon/barbaracle/shiny.gbapal");
-    const u8 gMonIcon_Barbaracle[] = INCBIN_U8("graphics/pokemon/barbaracle/icon.4bpp");
+    const u32 gMonFrontPic_Venommyotismon[] = INCBIN_U32("graphics/pokemon/venommyotismon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Venommyotismon[] = INCBIN_U16("graphics/pokemon/venommyotismon/normal.gbapal");
+    const u32 gMonBackPic_Venommyotismon[] = INCBIN_U32("graphics/pokemon/venommyotismon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Venommyotismon[] = INCBIN_U16("graphics/pokemon/venommyotismon/shiny.gbapal");
+    const u8 gMonIcon_Venommyotismon[] = INCBIN_U8("graphics/pokemon/venommyotismon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Barbaracle[] = INCBIN_U8("graphics/pokemon/barbaracle/footprint.1bpp");
+    const u8 gMonFootprint_Venommyotismon[] = INCBIN_U8("graphics/pokemon/venommyotismon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Barbaracle[] = INCBIN_COMP("graphics/pokemon/barbaracle/overworld.4bpp");
+    const u32 gObjectEventPic_Venommyotismon[] = INCBIN_COMP("graphics/pokemon/venommyotismon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Barbaracle[] = INCBIN_U16("graphics/pokemon/barbaracle/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Barbaracle[] = INCBIN_U16("graphics/pokemon/barbaracle/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Venommyotismon[] = INCBIN_U16("graphics/pokemon/venommyotismon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Venommyotismon[] = INCBIN_U16("graphics/pokemon/venommyotismon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_SKULLMAMMOTHMON
