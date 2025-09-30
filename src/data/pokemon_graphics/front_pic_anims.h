@@ -5916,7 +5916,7 @@ static const union AnimCmd sAnim_Tankmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Toxicroak_1[] =
+static const union AnimCmd sAnim_Thunderballmon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 25),
@@ -11531,7 +11531,7 @@ SINGLE_ANIMATION(Soulmon);
 #endif //P_FAMILY_SNIMON
 #if P_FAMILY_TANKMON
 SINGLE_ANIMATION(Tankmon);
-SINGLE_ANIMATION(Toxicroak);
+SINGLE_ANIMATION(Thunderballmon);
 #endif //P_FAMILY_TANKMON
 #if P_FAMILY_CARNIVINE
 SINGLE_ANIMATION(Carnivine);

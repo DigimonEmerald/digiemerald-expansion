@@ -3460,12 +3460,12 @@ static const struct SpriteFrameImage sPicTable_TankmonF[] = {
     overworld_ascending_frames(gObjectEventPic_TankmonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_Toxicroak[] = {
-    overworld_ascending_frames(gObjectEventPic_Toxicroak, 4, 4),
+static const struct SpriteFrameImage sPicTable_Thunderballmon[] = {
+    overworld_ascending_frames(gObjectEventPic_Thunderballmon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_ToxicroakF[] = {
-    overworld_ascending_frames(gObjectEventPic_ToxicroakF, 4, 4),
+static const struct SpriteFrameImage sPicTable_ThunderballmonF[] = {
+    overworld_ascending_frames(gObjectEventPic_ThunderballmonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_TANKMON

@@ -11371,7 +11371,7 @@ static const struct LevelUpMove sTankmonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sToxicroakLevelUpLearnset[] = {
+static const struct LevelUpMove sThunderballmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),

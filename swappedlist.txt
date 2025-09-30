@@ -460,6 +460,7 @@ ShimaUnimon - Hippowdon
 Snimon - Skorupi
 Soulmon - Drapion
 Tankmon - Croagunk
+Thunderballmon - Toxicroak
 
 Ultimate List
 

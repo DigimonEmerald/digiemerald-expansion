@@ -3194,8 +3194,8 @@ Cry_Tankmon::
 	.incbin "sound/direct_sound_samples/cries/tankmon.bin"
 
 	.align 2
-Cry_Toxicroak::
-	.incbin "sound/direct_sound_samples/cries/toxicroak.bin"
+Cry_Thunderballmon::
+	.incbin "sound/direct_sound_samples/cries/thunderballmon.bin"
 .endif @ P_FAMILY_TANKMON
 
 .if P_FAMILY_CARNIVINE == TRUE

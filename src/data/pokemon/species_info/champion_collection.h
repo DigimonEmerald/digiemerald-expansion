@@ -16373,45 +16373,47 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sTankmonLevelUpLearnset,
         .teachableLearnset = sTankmonTeachableLearnset,
         .eggMoveLearnset = sTankmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_TOXICROAK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_THUNDERBALLMON}),
     },
 
-    [SPECIES_TOXICROAK] =
+    [SPECIES_THUNDERBALLMON] =
     {
-        .baseHP        = 83,
-        .baseAttack    = 106,
-        .baseDefense   = 65,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 86,
-        .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_POISON, TYPE_FIGHTING),
-        .catchRate = 75,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 172 : 181,
-        .evYield_Attack = 2,
+        .baseHP        = 50,
+        .baseAttack    = 55,
+        .baseDefense   = 60,
+        .baseSpeed     = 100,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_STEEL, TYPE_ELECTRIC),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Speed = 1,
+        .evYield_SpAttack = 3,
         .itemRare = ITEM_BLACK_SLUDGE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
-        .abilities = { ABILITY_ANTICIPATION, ABILITY_DRY_SKIN, ABILITY_POISON_TOUCH },
+        .abilities = { ABILITY_MAGNET_PULL, ABILITY_LIGHTNING_ROD, ABILITY_ELECTRIC_SURGE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Toxicroak"),
-        .cryId = CRY_TOXICROAK,
-        .natDexNum = NATIONAL_DEX_TOXICROAK,
-        .categoryName = _("Toxic Mouth"),
-        .height = 13,
-        .weight = 444,
+        .speciesName = _("ThnderBllmon"),
+        .cryId = CRY_THUNDERBALLMON,
+        .natDexNum = NATIONAL_DEX_THUNDERBALLMON,
+        .categoryName = _("Dynamo"),
+        .height = 2,
+        .weight = 43,
         .description = COMPOUND_STRING(
-            "Swaying and dodging the attacks\n"
-            "of its foes, it weaves its flexible body\n"
-            "in close, then lunges out with its\n"
-            "poisonous claws."),
+            "It is common belief that ThunderBallmon\n"
+            "is a mutatation of the Mamemon-species.\n"
+            "It is constantly clad in electricty and\n"
+            "randomly discharges lightning."),
         .pokemonScale = 272,
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Toxicroak,
+        .frontPic = gMonFrontPic_Thunderballmon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 5,
         .frontAnimFrames = ANIM_FRAMES(
@@ -16422,41 +16424,41 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Toxicroak,
+        .backPic = gMonBackPic_Thunderballmon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_SHAKE_H_SLIDE,
-        .palette = gMonPalette_Toxicroak,
-        .shinyPalette = gMonShinyPalette_Toxicroak,
-        .iconSprite = gMonIcon_Toxicroak,
+        .palette = gMonPalette_Thunderballmon,
+        .shinyPalette = gMonShinyPalette_Thunderballmon,
+        .iconSprite = gMonIcon_Thunderballmon,
         .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_ToxicroakF,
+        .frontPicFemale = gMonFrontPic_ThunderballmonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 56),
-        .backPicFemale = gMonBackPic_ToxicroakF,
+        .backPicFemale = gMonBackPic_ThunderballmonF,
         .backPicSizeFemale = MON_COORDS_SIZE(56, 56),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(3, 7, SHADOW_SIZE_M)
-        FOOTPRINT(Toxicroak)
+        FOOTPRINT(Thunderballmon)
         OVERWORLD(
-            sPicTable_Toxicroak,
+            sPicTable_Thunderballmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Toxicroak,
-            gShinyOverworldPalette_Toxicroak
+            gOverworldPalette_Thunderballmon,
+            gShinyOverworldPalette_Thunderballmon
         )
         OVERWORLD_FEMALE(
-            sPicTable_ToxicroakF,
+            sPicTable_ThunderballmonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sToxicroakLevelUpLearnset,
-        .teachableLearnset = sToxicroakTeachableLearnset,
+        .levelUpLearnset = sThunderballmonLevelUpLearnset,
+        .teachableLearnset = sThunderballmonTeachableLearnset,
     },
 #endif //P_FAMILY_TANKMON
 

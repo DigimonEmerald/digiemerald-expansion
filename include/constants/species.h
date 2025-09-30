@@ -468,7 +468,7 @@
 #define SPECIES_SNIMON                                 451
 #define SPECIES_SOULMON                                 452
 #define SPECIES_TANKMON                                453
-#define SPECIES_TOXICROAK                               454
+#define SPECIES_THUNDERBALLMON                               454
 #define SPECIES_CARNIVINE                               455
 #define SPECIES_FINNEON                                 456
 #define SPECIES_LUMINEON                                457

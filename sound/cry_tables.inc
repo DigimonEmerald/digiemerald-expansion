@@ -1199,7 +1199,7 @@ gCryTable::
 .endif @ P_FAMILY_SNIMON
 .if P_FAMILY_TANKMON == TRUE
 	cry Cry_Tankmon
-	cry Cry_Toxicroak
+	cry Cry_Thunderballmon
 .endif @ P_FAMILY_TANKMON
 .if P_FAMILY_CARNIVINE == TRUE
 	cry Cry_Carnivine
@@ -3626,7 +3626,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_SNIMON
 .if P_FAMILY_TANKMON == TRUE
 	cry_reverse Cry_Tankmon
-	cry_reverse Cry_Toxicroak
+	cry_reverse Cry_Thunderballmon
 .endif @ P_FAMILY_TANKMON
 .if P_FAMILY_CARNIVINE == TRUE
 	cry_reverse Cry_Carnivine

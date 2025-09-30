@@ -15234,27 +15234,27 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
-    const u32 gMonFrontPic_Toxicroak[] = INCBIN_U32("graphics/pokemon/toxicroak/anim_front.4bpp.smol");
-    const u16 gMonPalette_Toxicroak[] = INCBIN_U16("graphics/pokemon/toxicroak/normal.gbapal");
-    const u32 gMonBackPic_Toxicroak[] = INCBIN_U32("graphics/pokemon/toxicroak/back.4bpp.smol");
-    const u16 gMonShinyPalette_Toxicroak[] = INCBIN_U16("graphics/pokemon/toxicroak/shiny.gbapal");
-    const u8 gMonIcon_Toxicroak[] = INCBIN_U8("graphics/pokemon/toxicroak/icon.4bpp");
+    const u32 gMonFrontPic_Thunderballmon[] = INCBIN_U32("graphics/pokemon/thunderballmon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Thunderballmon[] = INCBIN_U16("graphics/pokemon/thunderballmon/normal.gbapal");
+    const u32 gMonBackPic_Thunderballmon[] = INCBIN_U32("graphics/pokemon/thunderballmon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Thunderballmon[] = INCBIN_U16("graphics/pokemon/thunderballmon/shiny.gbapal");
+    const u8 gMonIcon_Thunderballmon[] = INCBIN_U8("graphics/pokemon/thunderballmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Toxicroak[] = INCBIN_U8("graphics/pokemon/toxicroak/footprint.1bpp");
+    const u8 gMonFootprint_Thunderballmon[] = INCBIN_U8("graphics/pokemon/thunderballmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Toxicroak[] = INCBIN_COMP("graphics/pokemon/toxicroak/overworld.4bpp");
+    const u32 gObjectEventPic_Thunderballmon[] = INCBIN_COMP("graphics/pokemon/thunderballmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Toxicroak[] = INCBIN_U16("graphics/pokemon/toxicroak/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Toxicroak[] = INCBIN_U16("graphics/pokemon/toxicroak/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Thunderballmon[] = INCBIN_U16("graphics/pokemon/thunderballmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Thunderballmon[] = INCBIN_U16("graphics/pokemon/thunderballmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_ToxicroakF[] = INCBIN_U32("graphics/pokemon/toxicroak/anim_frontf.4bpp.smol");
-    const u32 gMonBackPic_ToxicroakF[] = INCBIN_U32("graphics/pokemon/toxicroak/backf.4bpp.smol");
+    const u32 gMonFrontPic_ThunderballmonF[] = INCBIN_U32("graphics/pokemon/thunderballmon/anim_frontf.4bpp.smol");
+    const u32 gMonBackPic_ThunderballmonF[] = INCBIN_U32("graphics/pokemon/thunderballmon/backf.4bpp.smol");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_ToxicroakF[] = INCBIN_COMP("graphics/pokemon/toxicroak/overworldf.4bpp");
+    const u32 gObjectEventPic_ThunderballmonF[] = INCBIN_COMP("graphics/pokemon/thunderballmon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_TANKMON

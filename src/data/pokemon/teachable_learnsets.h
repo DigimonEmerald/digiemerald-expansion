@@ -20108,7 +20108,7 @@ static const u16 sTankmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sToxicroakTeachableLearnset[] = {
+static const u16 sThunderballmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BRICK_BREAK,
