@@ -598,8 +598,8 @@
 #define P_FAMILY_ICELEOMON                 TRUE
 #undef P_FAMILY_SKULLSATAMON
 #define P_FAMILY_SKULLSATAMON                TRUE
-#undef P_FAMILY_YAMASK
-#define P_FAMILY_YAMASK                  TRUE
+#undef P_FAMILY_TEKKAMON
+#define P_FAMILY_TEKKAMON                  TRUE
 #undef P_FAMILY_TIRTOUGA
 #define P_FAMILY_TIRTOUGA                TRUE
 #undef P_FAMILY_ARCHEN

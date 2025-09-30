@@ -5775,43 +5775,46 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 #endif //P_FAMILY_SKULLSATAMON
 
-#if P_FAMILY_YAMASK
-    [SPECIES_YAMASK] =
+#if P_FAMILY_TEKKAMON
+    [SPECIES_TEKKAMON] =
     {
-        .baseHP        = 38,
-        .baseAttack    = 30,
-        .baseDefense   = 85,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_GHOST),
-        .catchRate = 190,
-        .expYield = 61,
+        .baseHP        = 75,
+        .baseAttack    = 80,
+        .baseDefense   = 100,
+        .baseSpeed     = 105,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 45,
+        .types = MON_TYPES(TYPE_STEEL),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 95,
+        .expYield = 200,
         .evYield_Defense = 1,
+        .evYield_Speed = 3,
+        .evYield_SpAttack = 1,
         .itemRare = ITEM_SPELL_TAG,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_MUMMY, ABILITY_NONE, ABILITY_NONE },
-        .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Yamask"),
-        .cryId = CRY_YAMASK,
-        .natDexNum = NATIONAL_DEX_YAMASK,
-        .categoryName = _("Spirit"),
-        .height = 5,
-        .weight = 15,
+        .abilities = { ABILITY_LEVITATE, ABILITY_MOXIE, ABILITY_TECHNICIAN },
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("Tekkamon"),
+        .cryId = CRY_TEKKAMON,
+        .natDexNum = NATIONAL_DEX_TEKKAMON,
+        .categoryName = _("Iron Mask"),
+        .height = 10,
+        .weight = 310,
         .description = COMPOUND_STRING(
-            "These Pokémon arose from the spirits\n"
-            "of people interred in graves in past ages.\n"
-            "Each of them carries a mask that used\n"
-            "to be its face when it was human."),
+            "Made in opposition to Giromon, Tekkamon\n"
+            "has only one desire, to destroy. Its a\n"
+            "fearsome opponent as it will glare down\n"
+            "anyone in its way."),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Yamask,
+        .frontPic = gMonFrontPic_Tekkamon,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 15,
         .frontAnimFrames = ANIM_FRAMES(
@@ -5823,30 +5826,30 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         ),
         .frontAnimId = ANIM_V_SLIDE_WOBBLE,
         .enemyMonElevation = 10,
-        .backPic = gMonBackPic_Yamask,
+        .backPic = gMonBackPic_Tekkamon,
         .backPicSize = MON_COORDS_SIZE(40, 40),
         .backPicYOffset = 14,
         .backAnimId = BACK_ANIM_V_SHAKE,
-        .palette = gMonPalette_Yamask,
-        .shinyPalette = gMonShinyPalette_Yamask,
-        .iconSprite = gMonIcon_Yamask,
+        .palette = gMonPalette_Tekkamon,
+        .shinyPalette = gMonShinyPalette_Tekkamon,
+        .iconSprite = gMonIcon_Tekkamon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 6, SHADOW_SIZE_S)
-        FOOTPRINT(Yamask)
+        FOOTPRINT(Tekkamon)
         OVERWORLD(
-            sPicTable_Yamask,
+            sPicTable_Tekkamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Yamask,
-            gShinyOverworldPalette_Yamask
+            gOverworldPalette_Tekkamon,
+            gShinyOverworldPalette_Tekkamon
         )
-        .levelUpLearnset = sYamaskLevelUpLearnset,
-        .teachableLearnset = sYamaskTeachableLearnset,
-        .eggMoveLearnset = sYamaskEggMoveLearnset,
-        .formSpeciesIdTable = sYamaskFormSpeciesIdTable,
+        .levelUpLearnset = sTekkamonLevelUpLearnset,
+        .teachableLearnset = sTekkamonTeachableLearnset,
+        .eggMoveLearnset = sTekkamonEggMoveLearnset,
+        .formSpeciesIdTable = sTekkamonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_COFAGRIGUS}),
     },
 
@@ -5919,7 +5922,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
     },
 
 #if P_GALARIAN_FORMS
-    [SPECIES_YAMASK_GALAR] =
+    [SPECIES_TEKKAMON_GALAR] =
     {
         .baseHP        = 38,
         .baseAttack    = 55,
@@ -5938,52 +5941,52 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL, EGG_GROUP_AMORPHOUS),
         .abilities = { ABILITY_WANDERING_SPIRIT, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Yamask"),
-        .cryId = CRY_YAMASK,
-        .natDexNum = NATIONAL_DEX_YAMASK,
+        .speciesName = _("Tekkamon"),
+        .cryId = CRY_TEKKAMON,
+        .natDexNum = NATIONAL_DEX_TEKKAMON,
         .categoryName = _("Spirit"),
         .height = 5,
         .weight = 15,
         .description = COMPOUND_STRING(
             "A clay slab with cursed engravings\n"
-            "took possession of a Yamask. The\n"
+            "took possession of a Tekkamon. The\n"
             "slab is said to be absorbing the\n"
-            "Yamask's dark power."),
+            "Tekkamon's dark power."),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_YamaskGalar,
+        .frontPic = gMonFrontPic_TekkamonGalar,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
         .frontPicYOffset = 13,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 4,
-        .backPic = gMonBackPic_YamaskGalar,
+        .backPic = gMonBackPic_TekkamonGalar,
         .backPicSize = MON_COORDS_SIZE(40, 40),
         .backPicYOffset = 13,
         //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_YamaskGalar,
-        .shinyPalette = gMonShinyPalette_YamaskGalar,
-        .iconSprite = gMonIcon_YamaskGalar,
+        .palette = gMonPalette_TekkamonGalar,
+        .shinyPalette = gMonShinyPalette_TekkamonGalar,
+        .iconSprite = gMonIcon_TekkamonGalar,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 2, SHADOW_SIZE_S)
-        FOOTPRINT(Yamask)
+        FOOTPRINT(Tekkamon)
         OVERWORLD(
-            sPicTable_YamaskGalar,
+            sPicTable_TekkamonGalar,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_YamaskGalar,
-            gShinyOverworldPalette_YamaskGalar
+            gOverworldPalette_TekkamonGalar,
+            gShinyOverworldPalette_TekkamonGalar
         )
         .isGalarianForm = TRUE,
-        .levelUpLearnset = sYamaskGalarLevelUpLearnset,
-        .teachableLearnset = sYamaskGalarTeachableLearnset,
-        .eggMoveLearnset = sYamaskGalarEggMoveLearnset,
-        .formSpeciesIdTable = sYamaskFormSpeciesIdTable,
+        .levelUpLearnset = sTekkamonGalarLevelUpLearnset,
+        .teachableLearnset = sTekkamonGalarTeachableLearnset,
+        .eggMoveLearnset = sTekkamonGalarEggMoveLearnset,
+        .formSpeciesIdTable = sTekkamonFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_SCRIPT_TRIGGER, 0, SPECIES_RUNERIGUS, CONDITIONS({IF_CURRENT_DAMAGE_GE, 49})}),
     },
 
@@ -6015,7 +6018,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .description = COMPOUND_STRING(
             "A powerful curse was woven into an ancient\n"
             "painting. After absorbing the spirit of\n"
-            "a Yamask, the painting began to move."),
+            "a Tekkamon, the painting began to move."),
         .pokemonScale = 259,
         .pokemonOffset = 1,
         .trainerScale = 296,
@@ -6050,7 +6053,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sRunerigusTeachableLearnset,
     },
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_YAMASK
+#endif //P_FAMILY_TEKKAMON
 
 #if P_FAMILY_TIRTOUGA
     [SPECIES_TIRTOUGA] =

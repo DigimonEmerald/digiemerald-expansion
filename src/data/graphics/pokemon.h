@@ -17201,20 +17201,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_SKULLSATAMON
 
-#if P_FAMILY_YAMASK
-    const u32 gMonFrontPic_Yamask[] = INCBIN_U32("graphics/pokemon/yamask/anim_front.4bpp.smol");
-    const u16 gMonPalette_Yamask[] = INCBIN_U16("graphics/pokemon/yamask/normal.gbapal");
-    const u32 gMonBackPic_Yamask[] = INCBIN_U32("graphics/pokemon/yamask/back.4bpp.smol");
-    const u16 gMonShinyPalette_Yamask[] = INCBIN_U16("graphics/pokemon/yamask/shiny.gbapal");
-    const u8 gMonIcon_Yamask[] = INCBIN_U8("graphics/pokemon/yamask/icon.4bpp");
+#if P_FAMILY_TEKKAMON
+    const u32 gMonFrontPic_Tekkamon[] = INCBIN_U32("graphics/pokemon/tekkamon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Tekkamon[] = INCBIN_U16("graphics/pokemon/tekkamon/normal.gbapal");
+    const u32 gMonBackPic_Tekkamon[] = INCBIN_U32("graphics/pokemon/tekkamon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Tekkamon[] = INCBIN_U16("graphics/pokemon/tekkamon/shiny.gbapal");
+    const u8 gMonIcon_Tekkamon[] = INCBIN_U8("graphics/pokemon/tekkamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Yamask[] = INCBIN_U8("graphics/pokemon/yamask/footprint.1bpp");
+    const u8 gMonFootprint_Tekkamon[] = INCBIN_U8("graphics/pokemon/tekkamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Yamask[] = INCBIN_COMP("graphics/pokemon/yamask/overworld.4bpp");
+    const u32 gObjectEventPic_Tekkamon[] = INCBIN_COMP("graphics/pokemon/tekkamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Yamask[] = INCBIN_U16("graphics/pokemon/yamask/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Yamask[] = INCBIN_U16("graphics/pokemon/yamask/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Tekkamon[] = INCBIN_U16("graphics/pokemon/tekkamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Tekkamon[] = INCBIN_U16("graphics/pokemon/tekkamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -17235,16 +17235,16 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GALARIAN_FORMS
-    const u32 gMonFrontPic_YamaskGalar[] = INCBIN_U32("graphics/pokemon/yamask/galar/front.4bpp.smol");
-    const u16 gMonPalette_YamaskGalar[] = INCBIN_U16("graphics/pokemon/yamask/galar/normal.gbapal");
-    const u32 gMonBackPic_YamaskGalar[] = INCBIN_U32("graphics/pokemon/yamask/galar/back.4bpp.smol");
-    const u16 gMonShinyPalette_YamaskGalar[] = INCBIN_U16("graphics/pokemon/yamask/galar/shiny.gbapal");
-    const u8 gMonIcon_YamaskGalar[] = INCBIN_U8("graphics/pokemon/yamask/galar/icon.4bpp");
+    const u32 gMonFrontPic_TekkamonGalar[] = INCBIN_U32("graphics/pokemon/tekkamon/galar/front.4bpp.smol");
+    const u16 gMonPalette_TekkamonGalar[] = INCBIN_U16("graphics/pokemon/tekkamon/galar/normal.gbapal");
+    const u32 gMonBackPic_TekkamonGalar[] = INCBIN_U32("graphics/pokemon/tekkamon/galar/back.4bpp.smol");
+    const u16 gMonShinyPalette_TekkamonGalar[] = INCBIN_U16("graphics/pokemon/tekkamon/galar/shiny.gbapal");
+    const u8 gMonIcon_TekkamonGalar[] = INCBIN_U8("graphics/pokemon/tekkamon/galar/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_YamaskGalar[] = INCBIN_COMP("graphics/pokemon/yamask/galar/overworld.4bpp");
+    const u32 gObjectEventPic_TekkamonGalar[] = INCBIN_COMP("graphics/pokemon/tekkamon/galar/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_YamaskGalar[] = INCBIN_U16("graphics/pokemon/yamask/galar/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_YamaskGalar[] = INCBIN_U16("graphics/pokemon/yamask/galar/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_TekkamonGalar[] = INCBIN_U16("graphics/pokemon/tekkamon/galar/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_TekkamonGalar[] = INCBIN_U16("graphics/pokemon/tekkamon/galar/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -17264,7 +17264,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_YAMASK
+#endif //P_FAMILY_TEKKAMON
 
 #if P_FAMILY_TIRTOUGA
     const u32 gMonFrontPic_Tirtouga[] = INCBIN_U32("graphics/pokemon/tirtouga/anim_front.4bpp.smol");

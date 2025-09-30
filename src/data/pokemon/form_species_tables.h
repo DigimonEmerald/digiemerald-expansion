@@ -1207,15 +1207,15 @@ static const u16 sDarmanitanFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_CHERRYMON
 
-#if P_FAMILY_YAMASK
-static const u16 sYamaskFormSpeciesIdTable[] = {
-    SPECIES_YAMASK,
+#if P_FAMILY_TEKKAMON
+static const u16 sTekkamonFormSpeciesIdTable[] = {
+    SPECIES_TEKKAMON,
 #if P_GALARIAN_FORMS
-    SPECIES_YAMASK_GALAR,
+    SPECIES_TEKKAMON_GALAR,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_YAMASK
+#endif //P_FAMILY_TEKKAMON
 
 #if P_FAMILY_TRUBBISH
 static const u16 sGarbodorFormSpeciesIdTable[] = {

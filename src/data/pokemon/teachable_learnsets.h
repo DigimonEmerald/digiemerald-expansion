@@ -23278,8 +23278,8 @@ static const u16 sSkullsatamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SKULLSATAMON
 
-#if P_FAMILY_YAMASK
-static const u16 sYamaskTeachableLearnset[] = {
+#if P_FAMILY_TEKKAMON
+static const u16 sTekkamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_DOUBLE_TEAM,
@@ -23333,7 +23333,7 @@ static const u16 sCofagrigusTeachableLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const u16 sYamaskGalarTeachableLearnset[] = {
+static const u16 sTekkamonGalarTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_CALM_MIND,
     MOVE_EARTHQUAKE,
@@ -23379,7 +23379,7 @@ static const u16 sRunerigusTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_YAMASK
+#endif //P_FAMILY_TEKKAMON
 
 #if P_FAMILY_TIRTOUGA
 static const u16 sTirtougaTeachableLearnset[] = {

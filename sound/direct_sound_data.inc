@@ -3671,10 +3671,10 @@ Cry_Skullsatamon::
 	.incbin "sound/direct_sound_samples/cries/skullsatamon.bin"
 .endif @ P_FAMILY_SKULLSATAMON
 
-.if P_FAMILY_YAMASK == TRUE
+.if P_FAMILY_TEKKAMON == TRUE
 	.align 2
-Cry_Yamask::
-	.incbin "sound/direct_sound_samples/cries/yamask.bin"
+Cry_Tekkamon::
+	.incbin "sound/direct_sound_samples/cries/tekkamon.bin"
 
 	.align 2
 Cry_Cofagrigus::
@@ -3686,7 +3686,7 @@ Cry_Runerigus::
 	.incbin "sound/direct_sound_samples/cries/runerigus.bin"
 
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_YAMASK
+.endif @ P_FAMILY_TEKKAMON
 
 .if P_FAMILY_TIRTOUGA == TRUE
 	.align 2

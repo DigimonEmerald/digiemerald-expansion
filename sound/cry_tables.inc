@@ -1397,13 +1397,13 @@ gCryTable::
 .if P_FAMILY_SKULLSATAMON == TRUE
 	cry Cry_Skullsatamon
 .endif @ P_FAMILY_SKULLSATAMON
-.if P_FAMILY_YAMASK == TRUE
-	cry Cry_Yamask
+.if P_FAMILY_TEKKAMON == TRUE
+	cry Cry_Tekkamon
 	cry Cry_Cofagrigus
 .if P_GALARIAN_FORMS == TRUE
 	cry Cry_Runerigus
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_YAMASK
+.endif @ P_FAMILY_TEKKAMON
 .if P_FAMILY_TIRTOUGA == TRUE
 	cry Cry_Tirtouga
 	cry Cry_Carracosta
@@ -3824,13 +3824,13 @@ gCryTable_Reverse::
 .if P_FAMILY_SKULLSATAMON == TRUE
 	cry_reverse Cry_Skullsatamon
 .endif @ P_FAMILY_SKULLSATAMON
-.if P_FAMILY_YAMASK == TRUE
-	cry_reverse Cry_Yamask
+.if P_FAMILY_TEKKAMON == TRUE
+	cry_reverse Cry_Tekkamon
 	cry_reverse Cry_Cofagrigus
 .if P_GALARIAN_FORMS == TRUE
 	cry_reverse Cry_Runerigus
 .endif @ P_GALARIAN_FORMS
-.endif @ P_FAMILY_YAMASK
+.endif @ P_FAMILY_TEKKAMON
 .if P_FAMILY_TIRTOUGA == TRUE
 	cry_reverse Cry_Tirtouga
 	cry_reverse Cry_Carracosta

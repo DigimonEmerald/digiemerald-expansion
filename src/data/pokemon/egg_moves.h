@@ -4399,8 +4399,8 @@ static const u16 sSkullsatamonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_SKULLSATAMON
 
-#if P_FAMILY_YAMASK
-static const u16 sYamaskEggMoveLearnset[] = {
+#if P_FAMILY_TEKKAMON
+static const u16 sTekkamonEggMoveLearnset[] = {
     MOVE_MEMENTO,
     MOVE_FAKE_TEARS,
     MOVE_NASTY_PLOT,
@@ -4415,12 +4415,12 @@ static const u16 sYamaskEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #if P_GALARIAN_FORMS
-static const u16 sYamaskGalarEggMoveLearnset[] = {
+static const u16 sTekkamonGalarEggMoveLearnset[] = {
     MOVE_MEMENTO,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_YAMASK
+#endif //P_FAMILY_TEKKAMON
 
 #if P_FAMILY_TIRTOUGA
 static const u16 sTirtougaEggMoveLearnset[] = {

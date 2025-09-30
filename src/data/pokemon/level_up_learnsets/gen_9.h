@@ -11347,24 +11347,26 @@ static const struct LevelUpMove sSkullsatamonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_SKULLSATAMON
 
-#if P_FAMILY_YAMASK
-static const struct LevelUpMove sYamaskLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
-    LEVEL_UP_MOVE( 1, MOVE_PROTECT),
-    LEVEL_UP_MOVE( 4, MOVE_HAZE),
-    LEVEL_UP_MOVE( 8, MOVE_NIGHT_SHADE),
-    LEVEL_UP_MOVE(12, MOVE_DISABLE),
-    LEVEL_UP_MOVE(16, MOVE_WILL_O_WISP),
-    LEVEL_UP_MOVE(20, MOVE_CRAFTY_SHIELD),
-    LEVEL_UP_MOVE(24, MOVE_HEX),
-    LEVEL_UP_MOVE(28, MOVE_MEAN_LOOK),
-    LEVEL_UP_MOVE(32, MOVE_GRUDGE),
-    LEVEL_UP_MOVE(36, MOVE_CURSE),
-    LEVEL_UP_MOVE(40, MOVE_SHADOW_BALL),
-    LEVEL_UP_MOVE(44, MOVE_DARK_PULSE),
-    LEVEL_UP_MOVE(48, MOVE_POWER_SPLIT),
-    LEVEL_UP_MOVE(48, MOVE_GUARD_SPLIT),
-    LEVEL_UP_MOVE(52, MOVE_DESTINY_BOND),
+#if P_FAMILY_TEKKAMON
+static const struct LevelUpMove sTekkamonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_LEER),
+    LEVEL_UP_MOVE(5, MOVE_ASTONISH),
+    LEVEL_UP_MOVE(9, MOVE_BITE),
+    LEVEL_UP_MOVE(13, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE(16, MOVE_SCREECH),
+    LEVEL_UP_MOVE(20, MOVE_CURSE),
+    LEVEL_UP_MOVE(23, MOVE_SCARY_FACE),
+    LEVEL_UP_MOVE(26, MOVE_SLASH),
+    LEVEL_UP_MOVE(30, MOVE_METAL_CLAW),
+    LEVEL_UP_MOVE(34, MOVE_PARABOLIC_CHARGE),
+    LEVEL_UP_MOVE(37, MOVE_IRON_DEFENSE),
+    LEVEL_UP_MOVE(41, MOVE_AGILITY),
+    LEVEL_UP_MOVE(44, MOVE_SKULL_BASH),
+    LEVEL_UP_MOVE(47, MOVE_HEX),
+    LEVEL_UP_MOVE(51, MOVE_IRON_HEAD),
+    LEVEL_UP_MOVE(54, MOVE_METAL_SOUND),
+    LEVEL_UP_MOVE(59, MOVE_EXPLOSION),
+    LEVEL_UP_MOVE(63, MOVE_BOLT_STRIKE),
     LEVEL_UP_END
 };
 
@@ -11392,7 +11394,7 @@ static const struct LevelUpMove sCofagrigusLevelUpLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const struct LevelUpMove sYamaskGalarLevelUpLearnset[] = {
+static const struct LevelUpMove sTekkamonGalarLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_PROTECT),
     LEVEL_UP_MOVE( 4, MOVE_HAZE),
@@ -11435,7 +11437,7 @@ static const struct LevelUpMove sRunerigusLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_YAMASK
+#endif //P_FAMILY_TEKKAMON
 
 #if P_FAMILY_TIRTOUGA
 static const struct LevelUpMove sTirtougaLevelUpLearnset[] = {

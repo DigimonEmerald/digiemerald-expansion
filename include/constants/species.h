@@ -581,7 +581,7 @@
 #define SPECIES_ICELEOMON                                 559
 #define SPECIES_PARROTMON                                 560
 #define SPECIES_SKULLSATAMON                                561
-#define SPECIES_YAMASK                                  562
+#define SPECIES_TEKKAMON                                  562
 #define SPECIES_COFAGRIGUS                              563
 #define SPECIES_TIRTOUGA                                564
 #define SPECIES_CARRACOSTA                              565
@@ -1054,7 +1054,7 @@
 #define SPECIES_CHERRYMON_GALAR                          989
 #define SPECIES_DARMANITAN_GALAR_STANDARD               990
 #define SPECIES_DARMANITAN_GALAR                        SPECIES_DARMANITAN_GALAR_STANDARD
-#define SPECIES_YAMASK_GALAR                            991
+#define SPECIES_TEKKAMON_GALAR                            991
 #define SPECIES_STUNFISK_GALAR                          992
 
 //Hisuian Forms

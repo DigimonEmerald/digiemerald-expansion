@@ -7001,8 +7001,8 @@ static const union AnimCmd sAnim_Skullsatamon_1[] =
 };
 #endif //P_FAMILY_SKULLSATAMON
 
-#if P_FAMILY_YAMASK
-static const union AnimCmd sAnim_Yamask_1[] =
+#if P_FAMILY_TEKKAMON
+static const union AnimCmd sAnim_Tekkamon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 20),
@@ -7021,10 +7021,10 @@ static const union AnimCmd sAnim_Cofagrigus_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(YamaskGalar);
+PLACEHOLDER_ANIM_SINGLE_FRAME(TekkamonGalar);
 PLACEHOLDER_ANIM_SINGLE_FRAME(Runerigus);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_YAMASK
+#endif //P_FAMILY_TEKKAMON
 
 #if P_FAMILY_TIRTOUGA
 static const union AnimCmd sAnim_Tirtouga_1[] =
@@ -11749,14 +11749,14 @@ SINGLE_ANIMATION(Parrotmon);
 #if P_FAMILY_SKULLSATAMON
 SINGLE_ANIMATION(Skullsatamon);
 #endif //P_FAMILY_SKULLSATAMON
-#if P_FAMILY_YAMASK
-SINGLE_ANIMATION(Yamask);
+#if P_FAMILY_TEKKAMON
+SINGLE_ANIMATION(Tekkamon);
 SINGLE_ANIMATION(Cofagrigus);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(YamaskGalar);
+SINGLE_ANIMATION(TekkamonGalar);
 SINGLE_ANIMATION(Runerigus);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_YAMASK
+#endif //P_FAMILY_TEKKAMON
 #if P_FAMILY_TIRTOUGA
 SINGLE_ANIMATION(Tirtouga);
 SINGLE_ANIMATION(Carracosta);
