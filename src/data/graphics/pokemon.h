@@ -17266,20 +17266,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TEKKAMON
 
-#if P_FAMILY_TIRTOUGA
-    const u32 gMonFrontPic_Tirtouga[] = INCBIN_U32("graphics/pokemon/tirtouga/anim_front.4bpp.smol");
-    const u16 gMonPalette_Tirtouga[] = INCBIN_U16("graphics/pokemon/tirtouga/normal.gbapal");
-    const u32 gMonBackPic_Tirtouga[] = INCBIN_U32("graphics/pokemon/tirtouga/back.4bpp.smol");
-    const u16 gMonShinyPalette_Tirtouga[] = INCBIN_U16("graphics/pokemon/tirtouga/shiny.gbapal");
-    const u8 gMonIcon_Tirtouga[] = INCBIN_U8("graphics/pokemon/tirtouga/icon.4bpp");
+#if P_FAMILY_WARUMONZAEMON
+    const u32 gMonFrontPic_Warumonzaemon[] = INCBIN_U32("graphics/pokemon/warumonzaemon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Warumonzaemon[] = INCBIN_U16("graphics/pokemon/warumonzaemon/normal.gbapal");
+    const u32 gMonBackPic_Warumonzaemon[] = INCBIN_U32("graphics/pokemon/warumonzaemon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Warumonzaemon[] = INCBIN_U16("graphics/pokemon/warumonzaemon/shiny.gbapal");
+    const u8 gMonIcon_Warumonzaemon[] = INCBIN_U8("graphics/pokemon/warumonzaemon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Tirtouga[] = INCBIN_U8("graphics/pokemon/tirtouga/footprint.1bpp");
+    const u8 gMonFootprint_Warumonzaemon[] = INCBIN_U8("graphics/pokemon/warumonzaemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Tirtouga[] = INCBIN_COMP("graphics/pokemon/tirtouga/overworld.4bpp");
+    const u32 gObjectEventPic_Warumonzaemon[] = INCBIN_COMP("graphics/pokemon/warumonzaemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Tirtouga[] = INCBIN_U16("graphics/pokemon/tirtouga/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Tirtouga[] = INCBIN_U16("graphics/pokemon/tirtouga/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Warumonzaemon[] = INCBIN_U16("graphics/pokemon/warumonzaemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Warumonzaemon[] = INCBIN_U16("graphics/pokemon/warumonzaemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -17298,7 +17298,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Carracosta[] = INCBIN_U16("graphics/pokemon/carracosta/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_TIRTOUGA
+#endif //P_FAMILY_WARUMONZAEMON
 
 #if P_FAMILY_ARCHEN
     const u32 gMonFrontPic_Archen[] = INCBIN_U32("graphics/pokemon/archen/anim_front.4bpp.smol");

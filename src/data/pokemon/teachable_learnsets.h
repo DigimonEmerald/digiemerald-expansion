@@ -23381,8 +23381,8 @@ static const u16 sVermilimonTeachableLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TEKKAMON
 
-#if P_FAMILY_TIRTOUGA
-static const u16 sTirtougaTeachableLearnset[] = {
+#if P_FAMILY_WARUMONZAEMON
+static const u16 sWarumonzaemonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
@@ -23446,7 +23446,7 @@ static const u16 sCarracostaTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TIRTOUGA
+#endif //P_FAMILY_WARUMONZAEMON
 
 #if P_FAMILY_ARCHEN
 static const u16 sArchenTeachableLearnset[] = {

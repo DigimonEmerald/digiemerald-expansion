@@ -6062,42 +6062,44 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TEKKAMON
 
-#if P_FAMILY_TIRTOUGA
-    [SPECIES_TIRTOUGA] =
+#if P_FAMILY_WARUMONZAEMON
+    [SPECIES_WARUMONZAEMON] =
     {
-        .baseHP        = 54,
-        .baseAttack    = 78,
-        .baseDefense   = 103,
-        .baseSpeed     = 22,
-        .baseSpAttack  = 53,
-        .baseSpDefense = 45,
-        .types = MON_TYPES(TYPE_WATER, TYPE_ROCK),
+        .baseHP        = 80,
+        .baseAttack    = 120,
+        .baseDefense   = 80,
+        .baseSpeed     = 80,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_DARK, TYPE_FAIRY),
+        .attribute = TYPE_VIRUS,
         .catchRate = 95,
-        .expYield = 71,
-        .evYield_Defense = 1,
+        .expYield = 200,
+        .evYield_Attack = 3,
+        .evYield_SpAttack = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_SOLID_ROCK, ABILITY_STURDY, ABILITY_SWIFT_SWIM },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Tirtouga"),
-        .cryId = CRY_TIRTOUGA,
-        .natDexNum = NATIONAL_DEX_TIRTOUGA,
-        .categoryName = _("Prototurtle"),
-        .height = 7,
-        .weight = 165,
+        .abilities = { ABILITY_MINDS_EYE, ABILITY_TOUGH_CLAWS, ABILITY_INNARDS_OUT },
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("WaruMonzamon"),
+        .cryId = CRY_WARUMONZAEMON,
+        .natDexNum = NATIONAL_DEX_WARUMONZAEMON,
+        .categoryName = _("Plush"),
+        .height = 27,
+        .weight = 485,
         .description = COMPOUND_STRING(
-            "Reputed to be the ancestor of most\n"
-            "turtle Pokémon, it lived in warm seas\n"
-            "about a hundred million years ago.\n"
-            "It was restored from a fossil."),
+            "Just like Monzaemon, the true form of\n"
+            "WaruMonzaemon is unknown. It has a\n"
+            "personality that can only be described\n"
+            "as the epitome of wickedness."),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Tirtouga,
+        .frontPic = gMonFrontPic_Warumonzaemon,
         .frontPicSize = MON_COORDS_SIZE(56, 40),
         .frontPicYOffset = 16,
         .frontAnimFrames = ANIM_FRAMES(
@@ -6107,29 +6109,29 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 30),
         ),
         .frontAnimId = ANIM_RISING_WOBBLE,
-        .backPic = gMonBackPic_Tirtouga,
+        .backPic = gMonBackPic_Warumonzaemon,
         .backPicSize = MON_COORDS_SIZE(64, 32),
         .backPicYOffset = 16,
         .backAnimId = BACK_ANIM_H_SLIDE,
-        .palette = gMonPalette_Tirtouga,
-        .shinyPalette = gMonShinyPalette_Tirtouga,
-        .iconSprite = gMonIcon_Tirtouga,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Warumonzaemon,
+        .shinyPalette = gMonShinyPalette_Warumonzaemon,
+        .iconSprite = gMonIcon_Warumonzaemon,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, -3, SHADOW_SIZE_M)
-        FOOTPRINT(Tirtouga)
+        FOOTPRINT(Warumonzaemon)
         OVERWORLD(
-            sPicTable_Tirtouga,
+            sPicTable_Warumonzaemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Tirtouga,
-            gShinyOverworldPalette_Tirtouga
+            gOverworldPalette_Warumonzaemon,
+            gShinyOverworldPalette_Warumonzaemon
         )
-        .levelUpLearnset = sTirtougaLevelUpLearnset,
-        .teachableLearnset = sTirtougaTeachableLearnset,
-        .eggMoveLearnset = sTirtougaEggMoveLearnset,
+        .levelUpLearnset = sWarumonzaemonLevelUpLearnset,
+        .teachableLearnset = sWarumonzaemonTeachableLearnset,
+        .eggMoveLearnset = sWarumonzaemonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_CARRACOSTA}),
     },
 
@@ -6206,7 +6208,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sCarracostaLevelUpLearnset,
         .teachableLearnset = sCarracostaTeachableLearnset,
     },
-#endif //P_FAMILY_TIRTOUGA
+#endif //P_FAMILY_WARUMONZAEMON
 
 #if P_FAMILY_ARCHEN
     [SPECIES_ARCHEN] =

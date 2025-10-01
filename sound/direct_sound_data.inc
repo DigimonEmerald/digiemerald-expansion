@@ -3688,15 +3688,15 @@ Cry_Vermilimon::
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_TEKKAMON
 
-.if P_FAMILY_TIRTOUGA == TRUE
+.if P_FAMILY_WARUMONZAEMON == TRUE
 	.align 2
-Cry_Tirtouga::
-	.incbin "sound/direct_sound_samples/cries/tirtouga.bin"
+Cry_Warumonzaemon::
+	.incbin "sound/direct_sound_samples/cries/warumonzaemon.bin"
 
 	.align 2
 Cry_Carracosta::
 	.incbin "sound/direct_sound_samples/cries/carracosta.bin"
-.endif @ P_FAMILY_TIRTOUGA
+.endif @ P_FAMILY_WARUMONZAEMON
 
 .if P_FAMILY_ARCHEN == TRUE
 	.align 2

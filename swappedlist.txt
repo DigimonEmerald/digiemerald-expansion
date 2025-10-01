@@ -537,6 +537,7 @@ SkullSatamon - Sigilyph
 Tekkamon - Yamask
 Myotismon - Cofagrigus
 Vermilimon - Runerigus
+WaruMonzaemon - Tirtouga
 
 Mega List
 

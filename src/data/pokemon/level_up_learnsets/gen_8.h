@@ -13329,8 +13329,8 @@ static const struct LevelUpMove sVermilimonLevelUpLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TEKKAMON
 
-#if P_FAMILY_TIRTOUGA
-static const struct LevelUpMove sTirtougaLevelUpLearnset[] = {
+#if P_FAMILY_WARUMONZAEMON
+static const struct LevelUpMove sWarumonzaemonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
     LEVEL_UP_MOVE( 1, MOVE_WITHDRAW),
     LEVEL_UP_MOVE( 3, MOVE_PROTECT),
@@ -13371,7 +13371,7 @@ static const struct LevelUpMove sCarracostaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(51, MOVE_SHELL_SMASH),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_TIRTOUGA
+#endif //P_FAMILY_WARUMONZAEMON
 
 #if P_FAMILY_ARCHEN
 static const struct LevelUpMove sArchenLevelUpLearnset[] = {

@@ -4422,8 +4422,8 @@ static const u16 sTekkamonGalarEggMoveLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TEKKAMON
 
-#if P_FAMILY_TIRTOUGA
-static const u16 sTirtougaEggMoveLearnset[] = {
+#if P_FAMILY_WARUMONZAEMON
+static const u16 sWarumonzaemonEggMoveLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_KNOCK_OFF,
     MOVE_ROCK_THROW,
@@ -4437,7 +4437,7 @@ static const u16 sTirtougaEggMoveLearnset[] = {
     MOVE_LIQUIDATION,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TIRTOUGA
+#endif //P_FAMILY_WARUMONZAEMON
 
 #if P_FAMILY_ARCHEN
 static const u16 sArchenEggMoveLearnset[] = {

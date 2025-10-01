@@ -4055,14 +4055,14 @@ static const struct SpriteFrameImage sPicTable_Vermilimon[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TEKKAMON
 
-#if P_FAMILY_TIRTOUGA
-static const struct SpriteFrameImage sPicTable_Tirtouga[] = {
-    overworld_ascending_frames(gObjectEventPic_Tirtouga, 4, 4),
+#if P_FAMILY_WARUMONZAEMON
+static const struct SpriteFrameImage sPicTable_Warumonzaemon[] = {
+    overworld_ascending_frames(gObjectEventPic_Warumonzaemon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Carracosta[] = {
     overworld_ascending_frames(gObjectEventPic_Carracosta, 4, 4),
 };
-#endif //P_FAMILY_TIRTOUGA
+#endif //P_FAMILY_WARUMONZAEMON
 
 #if P_FAMILY_ARCHEN
 static const struct SpriteFrameImage sPicTable_Archen[] = {

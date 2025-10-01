@@ -7026,8 +7026,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Vermilimon);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TEKKAMON
 
-#if P_FAMILY_TIRTOUGA
-static const union AnimCmd sAnim_Tirtouga_1[] =
+#if P_FAMILY_WARUMONZAEMON
+static const union AnimCmd sAnim_Warumonzaemon_1[] =
 {
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 30),
@@ -7050,7 +7050,7 @@ static const union AnimCmd sAnim_Carracosta_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_TIRTOUGA
+#endif //P_FAMILY_WARUMONZAEMON
 
 #if P_FAMILY_ARCHEN
 static const union AnimCmd sAnim_Archen_1[] =
@@ -11757,10 +11757,10 @@ SINGLE_ANIMATION(TekkamonGalar);
 SINGLE_ANIMATION(Vermilimon);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_TEKKAMON
-#if P_FAMILY_TIRTOUGA
-SINGLE_ANIMATION(Tirtouga);
+#if P_FAMILY_WARUMONZAEMON
+SINGLE_ANIMATION(Warumonzaemon);
 SINGLE_ANIMATION(Carracosta);
-#endif //P_FAMILY_TIRTOUGA
+#endif //P_FAMILY_WARUMONZAEMON
 #if P_FAMILY_ARCHEN
 SINGLE_ANIMATION(Archen);
 SINGLE_ANIMATION(Archeops);

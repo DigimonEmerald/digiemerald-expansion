@@ -600,8 +600,8 @@
 #define P_FAMILY_SKULLSATAMON                TRUE
 #undef P_FAMILY_TEKKAMON
 #define P_FAMILY_TEKKAMON                  TRUE
-#undef P_FAMILY_TIRTOUGA
-#define P_FAMILY_TIRTOUGA                TRUE
+#undef P_FAMILY_WARUMONZAEMON
+#define P_FAMILY_WARUMONZAEMON                TRUE
 #undef P_FAMILY_ARCHEN
 #define P_FAMILY_ARCHEN                  TRUE
 #undef P_FAMILY_TRUBBISH

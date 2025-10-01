@@ -1404,10 +1404,10 @@ gCryTable::
 	cry Cry_Vermilimon
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_TEKKAMON
-.if P_FAMILY_TIRTOUGA == TRUE
-	cry Cry_Tirtouga
+.if P_FAMILY_WARUMONZAEMON == TRUE
+	cry Cry_Warumonzaemon
 	cry Cry_Carracosta
-.endif @ P_FAMILY_TIRTOUGA
+.endif @ P_FAMILY_WARUMONZAEMON
 .if P_FAMILY_ARCHEN == TRUE
 	cry Cry_Archen
 	cry Cry_Archeops
@@ -3831,10 +3831,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Vermilimon
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_TEKKAMON
-.if P_FAMILY_TIRTOUGA == TRUE
-	cry_reverse Cry_Tirtouga
+.if P_FAMILY_WARUMONZAEMON == TRUE
+	cry_reverse Cry_Warumonzaemon
 	cry_reverse Cry_Carracosta
-.endif @ P_FAMILY_TIRTOUGA
+.endif @ P_FAMILY_WARUMONZAEMON
 .if P_FAMILY_ARCHEN == TRUE
 	cry_reverse Cry_Archen
 	cry_reverse Cry_Archeops

@@ -337,7 +337,7 @@
 #define P_FAMILY_ICELEOMON                 P_GEN_5_POKEMON
 #define P_FAMILY_SKULLSATAMON                P_GEN_5_POKEMON
 #define P_FAMILY_TEKKAMON                  P_GEN_5_POKEMON
-#define P_FAMILY_TIRTOUGA                P_GEN_5_POKEMON
+#define P_FAMILY_WARUMONZAEMON                P_GEN_5_POKEMON
 #define P_FAMILY_ARCHEN                  P_GEN_5_POKEMON
 #define P_FAMILY_TRUBBISH                P_GEN_5_POKEMON
 #define P_FAMILY_ZORUA                   P_GEN_5_POKEMON
