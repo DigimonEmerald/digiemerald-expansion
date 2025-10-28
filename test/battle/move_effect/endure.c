@@ -1,15 +1,19 @@
 #include "global.h"
 #include "test/battle.h"
 
+ASSUMPTIONS
+{
+    ASSUME(GetMoveEffect(MOVE_ENDURE) == EFFECT_ENDURE);
+}
+
 TO_DO_BATTLE_TEST("Endure allows the user to survive any attack with 1 HP left");
 
 SINGLE_BATTLE_TEST("Endure does not prevent multiple hits and stat changes occur at the end of the turn")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_SCALE_SHOT].effect == EFFECT_MULTI_HIT);
-        ASSUME(gMovesInfo[MOVE_ENDURE].effect == EFFECT_ENDURE);
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { HP(1); }
+        ASSUME(GetMoveEffect(MOVE_SCALE_SHOT) == EFFECT_MULTI_HIT);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_ENDURE); MOVE(player, MOVE_SCALE_SHOT); }
     } SCENE {
@@ -21,9 +25,9 @@ SINGLE_BATTLE_TEST("Endure does not prevent multiple hits and stat changes occur
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SCALE_SHOT, player);
         MESSAGE("The Pokémon was hit 5 time(s)!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Lopmonx's Defense fell!");
+        MESSAGE("Wobbuffet's Defense fell!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("Lopmonx's Speed rose!");
+        MESSAGE("Wobbuffet's Speed rose!");
     }
 }
 
@@ -51,6 +55,23 @@ DOUBLE_BATTLE_TEST("Endure is not transferred to a mon that is switched in due t
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponentRight);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_POUND, playerRight);
         NOT MESSAGE("The opposing Squirtle endured the hit!");
+    }
+}
+
+SINGLE_BATTLE_TEST("Endure only lasts for one turn")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_ENDURE); MOVE(player, MOVE_POUND); }
+        TURN { MOVE(player, MOVE_POUND); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ENDURE, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_POUND, player);
+        MESSAGE("The opposing Wobbuffet endured the hit!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_POUND, player);
+        NOT MESSAGE("The opposing Wobbuffet endured the hit!");
     }
 }
 

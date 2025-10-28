@@ -18,8 +18,8 @@ SINGLE_BATTLE_TEST("Tri Attack can inflict paralysis, burn or freeze")
     PARAMETRIZE { statusAnim = B_ANIM_STATUS_FRZ; }
     PASSES_RANDOMLY(1, 3, RNG_TRI_ATTACK);
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_TRI_ATTACK); }
         TURN {}
@@ -46,13 +46,12 @@ SINGLE_BATTLE_TEST("Tri Attack cannot paralyze/burn/freeze electric/fire/ice typ
     u8 statusAnim;
     u16 species;
     u32 rng;
-    #if B_PARALYZE_ELECTRIC >= GEN_6
-    PARAMETRIZE { statusAnim = B_ANIM_STATUS_PRZ; rng = MOVE_EFFECT_PARALYSIS; species = SPECIES_PICHIMON; }
-    #endif // B_PARALYZE_ELECTRIC
-    PARAMETRIZE { statusAnim = B_ANIM_STATUS_BRN; rng = MOVE_EFFECT_BURN; species = SPECIES_GIGIMON; }
-    PARAMETRIZE { statusAnim = B_ANIM_STATUS_FRZ; rng = MOVE_EFFECT_FREEZE_OR_FROSTBITE; species = SPECIES_EYESMON; }
+    PARAMETRIZE { statusAnim = B_ANIM_STATUS_PRZ; rng = MOVE_EFFECT_PARALYSIS; species = SPECIES_RAICHU; }
+    PARAMETRIZE { statusAnim = B_ANIM_STATUS_BRN; rng = MOVE_EFFECT_BURN; species = SPECIES_ARCANINE; }
+    PARAMETRIZE { statusAnim = B_ANIM_STATUS_FRZ; rng = MOVE_EFFECT_FREEZE_OR_FROSTBITE; species = SPECIES_GLALIE; }
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
+        WITH_CONFIG(GEN_CONFIG_PARALYZE_ELECTRIC, GEN_6);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(species);
     } WHEN {
         TURN { MOVE(player, MOVE_TRI_ATTACK, WITH_RNG(RNG_TRI_ATTACK, rng)); }
@@ -82,16 +81,16 @@ SINGLE_BATTLE_TEST("Tri Attack cannot paralyze/burn/freeze Pokémon with abiliti
     u8 statusAnim;
     u16 species, ability;
     u32 rng;
-    PARAMETRIZE { statusAnim = B_ANIM_STATUS_PRZ; rng = MOVE_EFFECT_PARALYSIS; species = SPECIES_CHAPMON; ability = ABILITY_LIMBER; }
+    PARAMETRIZE { statusAnim = B_ANIM_STATUS_PRZ; rng = MOVE_EFFECT_PARALYSIS; species = SPECIES_PERSIAN; ability = ABILITY_LIMBER; }
     PARAMETRIZE { statusAnim = B_ANIM_STATUS_PRZ; rng = MOVE_EFFECT_PARALYSIS; species = SPECIES_KOMALA; ability = ABILITY_COMATOSE; }
     PARAMETRIZE { statusAnim = B_ANIM_STATUS_BRN; rng = MOVE_EFFECT_BURN; species = SPECIES_DEWPIDER; ability = ABILITY_WATER_BUBBLE; }
-    PARAMETRIZE { statusAnim = B_ANIM_STATUS_BRN; rng = MOVE_EFFECT_BURN; species = SPECIES_BLKGABUMON; ability = ABILITY_WATER_VEIL; }
+    PARAMETRIZE { statusAnim = B_ANIM_STATUS_BRN; rng = MOVE_EFFECT_BURN; species = SPECIES_SEAKING; ability = ABILITY_WATER_VEIL; }
     PARAMETRIZE { statusAnim = B_ANIM_STATUS_BRN; rng = MOVE_EFFECT_BURN; species = SPECIES_KOMALA; ability = ABILITY_COMATOSE; }
-    PARAMETRIZE { statusAnim = B_ANIM_STATUS_FRZ; rng = MOVE_EFFECT_FREEZE_OR_FROSTBITE; species = SPECIES_CITRAMON; ability = ABILITY_MAGMA_ARMOR; }
+    PARAMETRIZE { statusAnim = B_ANIM_STATUS_FRZ; rng = MOVE_EFFECT_FREEZE_OR_FROSTBITE; species = SPECIES_CAMERUPT; ability = ABILITY_MAGMA_ARMOR; }
     PARAMETRIZE { statusAnim = B_ANIM_STATUS_FRZ; rng = MOVE_EFFECT_FREEZE_OR_FROSTBITE; species = SPECIES_KOMALA; ability = ABILITY_COMATOSE; }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(species) { Ability(ability); }
     } WHEN {
         TURN { MOVE(player, MOVE_TRI_ATTACK, WITH_RNG(RNG_TRI_ATTACK, rng)); }
@@ -124,8 +123,8 @@ SINGLE_BATTLE_TEST("Tri Attack cannot paralyze/burn/freeze a mon which is alread
     PARAMETRIZE { statusAnim = B_ANIM_STATUS_BRN; rng = MOVE_EFFECT_BURN; }
     PARAMETRIZE { statusAnim = B_ANIM_STATUS_FRZ; rng = MOVE_EFFECT_FREEZE_OR_FROSTBITE; }
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX) { Status1(STATUS1_SLEEP); }
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { Status1(STATUS1_SLEEP); }
     } WHEN {
         TURN { MOVE(player, MOVE_TRI_ATTACK, WITH_RNG(RNG_TRI_ATTACK, rng)); }
         TURN {}

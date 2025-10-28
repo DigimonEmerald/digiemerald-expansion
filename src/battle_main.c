@@ -3227,7 +3227,7 @@ void SwitchInClearSetData(u32 battler, struct Volatiles *volatilesCopy)
     gLastHitBy[battler] = 0xFF;
 
     gBattleStruct->lastTakenMove[battler] = 0;
-    gBattleStruct->sameMoveTurns[battler] = 0;
+    gBattleStruct->metronomeItemCounter[battler] = 0;
     gBattleStruct->lastTakenMoveFrom[battler][0] = 0;
     gBattleStruct->lastTakenMoveFrom[battler][1] = 0;
     gBattleStruct->lastTakenMoveFrom[battler][2] = 0;
@@ -3348,7 +3348,7 @@ const u8* FaintClearSetData(u32 battler)
     gLastHitBy[battler] = 0xFF;
 
     gBattleStruct->choicedMove[battler] = MOVE_NONE;
-    gBattleStruct->sameMoveTurns[battler] = 0;
+    gBattleStruct->metronomeItemCounter[battler] = 0;
     gBattleStruct->lastTakenMove[battler] = MOVE_NONE;
     gBattleStruct->lastTakenMoveFrom[battler][0] = 0;
     gBattleStruct->lastTakenMoveFrom[battler][1] = 0;
@@ -3871,6 +3871,8 @@ static void TryDoEventsBeforeFirstTurn(void)
             if (AbilityBattleEffects(ABILITYEFFECT_ON_SWITCHIN, i, 0, 0, 0) != 0)
                 return;
             if (TryClearIllusion(i, ABILITYEFFECT_ON_SWITCHIN))
+                return;
+            if (AbilityBattleEffects(ABILITYEFFECT_ON_SWITCHIN_IMMUNITIES, i, 0, 0, 0) != 0)
                 return;
         }
         gBattleStruct->switchInBattlerCounter = 0;
@@ -4770,7 +4772,7 @@ u32 GetBattlerTotalSpeedStatArgs(u32 battler, u32 ability, enum ItemHoldEffect h
         && ShouldGetStatBadgeBoost(B_FLAG_BADGE_BOOST_SPEED, battler)
         && IsOnPlayerSide(battler))
     {
-        speed = (speed * 110) / 100;
+        speed = uq4_12_multiply_by_int_half_down(GetBadgeBoostModifier(), speed);
     }
 
     // item effects
@@ -5143,6 +5145,7 @@ static void TurnValuesCleanUp(bool8 var0)
         gSpecialStatuses[i].parentalBondState = PARENTAL_BOND_OFF;
         gBattleStruct->battlerState[i].usedEjectItem = FALSE;
         gProtectStructs[i].lashOutAffected = FALSE;
+        gDisableStructs[i].endured = FALSE;
     }
 
     gSideTimers[B_SIDE_PLAYER].followmeTimer = 0;
@@ -5718,20 +5721,24 @@ static void TryEvolvePokemon(void)
         if (!(sTriedEvolving & (1u << i)))
         {
             bool32 canStopEvo = TRUE;
-            u32 species = GetEvolutionTargetSpecies(&gPlayerParty[i], EVO_MODE_BATTLE_SPECIAL, i, NULL, &canStopEvo, CHECK_EVO);
+            enum EvolutionMode mode = EVO_MODE_BATTLE_SPECIAL;
+            u32 evolutionItemArg = i;
+            u32 species = GetEvolutionTargetSpecies(&gPlayerParty[i], mode, evolutionItemArg, NULL, &canStopEvo, CHECK_EVO);
             sTriedEvolving |= 1u << i;
 
             if (species == SPECIES_NONE && (gLeveledUpInBattle & (1u << i)))
             {
                 gLeveledUpInBattle &= ~(1u << i);
-                species = GetEvolutionTargetSpecies(&gPlayerParty[i], EVO_MODE_BATTLE_ONLY, gLeveledUpInBattle, NULL, &canStopEvo, CHECK_EVO);
+                mode = EVO_MODE_BATTLE_ONLY;
+                evolutionItemArg = gLeveledUpInBattle;
+                species = GetEvolutionTargetSpecies(&gPlayerParty[i], mode, evolutionItemArg, NULL, &canStopEvo, CHECK_EVO);
             }
 
             if (species != SPECIES_NONE)
             {
                 FreeAllWindowBuffers();
                 gBattleMainFunc = WaitForEvoSceneToFinish;
-                GetEvolutionTargetSpecies(&gPlayerParty[i], EVO_MODE_BATTLE_ONLY, gLeveledUpInBattle, NULL, &canStopEvo, DO_EVO);
+                GetEvolutionTargetSpecies(&gPlayerParty[i], mode, evolutionItemArg, NULL, &canStopEvo, DO_EVO);
                 EvolutionScene(&gPlayerParty[i], species, canStopEvo, i);
                 return;
             }
@@ -5857,11 +5864,11 @@ u32 GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum MonState
     enum ItemHoldEffect holdEffect;
     enum Gimmick gimmick = GetActiveGimmick(battler);
 
-    if (move == MOVE_STRUGGLE)
-        return TYPE_NORMAL;
-
     if (state == MON_IN_BATTLE)
     {
+        if (moveEffect == EFFECT_STRUGGLE)
+            return TYPE_MYSTERY;
+
         species = gBattleMons[battler].species;
         heldItem = gBattleMons[battler].item;
         holdEffect = GetBattlerHoldEffect(battler, TRUE);
@@ -6114,8 +6121,7 @@ void SetTypeBeforeUsingMove(u32 move, u32 battler)
         && GetBattleMoveType(move) == GetItemSecondaryId(heldItem)
         && effect != EFFECT_PLEDGE
         && effect != EFFECT_OHKO
-        && effect != EFFECT_SHEER_COLD
-        && effect != EFFECT_STRUGGLE)
+        && effect != EFFECT_SHEER_COLD)
     {
         gSpecialStatuses[battler].gemParam = GetBattlerHoldEffectParam(battler);
         gSpecialStatuses[battler].gemBoost = TRUE;

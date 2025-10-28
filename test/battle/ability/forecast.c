@@ -442,3 +442,22 @@ SINGLE_BATTLE_TEST("Forecast transforms Dolphmon when Cloud Nine ability user le
         MESSAGE("Dolphmon transformed!");
     }
 }
+
+DOUBLE_BATTLE_TEST("Forecast reverts Castform back after Teraform Zero clears weather")
+{
+    GIVEN {
+        PLAYER(SPECIES_TERAPAGOS_TERASTAL);
+        PLAYER(SPECIES_CASTFORM) { Ability(ABILITY_FORECAST); }
+        OPPONENT(SPECIES_KYOGRE) { Ability(ABILITY_DRIZZLE); }
+        OPPONENT(SPECIES_WYNAUT);
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_CELEBRATE, gimmick: GIMMICK_TERA); }
+    } SCENE {
+        ABILITY_POPUP(opponentLeft, ABILITY_DRIZZLE);
+        ABILITY_POPUP(playerRight, ABILITY_FORECAST);
+        ABILITY_POPUP(playerLeft, ABILITY_TERAFORM_ZERO);
+        ABILITY_POPUP(playerRight, ABILITY_FORECAST);
+    } THEN {
+        EXPECT_EQ(playerRight->species, SPECIES_CASTFORM_NORMAL);
+    }
+}

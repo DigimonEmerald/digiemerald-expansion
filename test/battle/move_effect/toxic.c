@@ -10,8 +10,8 @@ ASSUMPTIONS
 SINGLE_BATTLE_TEST("Toxic inflicts bad poison")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC); }
         TURN {}
@@ -27,10 +27,10 @@ SINGLE_BATTLE_TEST("Toxic can't bad poison a poison or steel type")
     u32 species;
 
     PARAMETRIZE { species = SPECIES_BELDUM; }
-    PARAMETRIZE { species = SPECIES_ARGOMON; }
+    PARAMETRIZE { species = SPECIES_BULBASAUR; }
 
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(species);
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC); }
@@ -43,17 +43,19 @@ SINGLE_BATTLE_TEST("Toxic can't bad poison a poison or steel type")
     }
 }
 
-SINGLE_BATTLE_TEST("Toxic cannot miss if used by a Poison-type")
+SINGLE_BATTLE_TEST("Toxic cannot miss if used by a Poison-type (Gen6+)")
 {
-    u32 species;
+    u32 species, gen;
     bool32 hit;
-    PARAMETRIZE { species = SPECIES_LOPMONX; hit = FALSE; }
-    PARAMETRIZE { species = SPECIES_NIDORAN_M; hit = TRUE; }
+    PARAMETRIZE { species = SPECIES_WOBBUFFET; hit = FALSE; gen = GEN_5; }
+    PARAMETRIZE { species = SPECIES_NIDORAN_M; hit = FALSE; gen = GEN_5; }
+    PARAMETRIZE { species = SPECIES_WOBBUFFET; hit = FALSE; gen = GEN_6; }
+    PARAMETRIZE { species = SPECIES_NIDORAN_M; hit = TRUE;  gen = GEN_6; }
     GIVEN {
-        ASSUME(B_TOXIC_NEVER_MISS >= GEN_6);
+        WITH_CONFIG(GEN_CONFIG_TOXIC_NEVER_MISS, gen);
         ASSUME(GetSpeciesType(SPECIES_NIDORAN_M, 0) == TYPE_POISON);
         PLAYER(species);
-        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_TOXIC, hit: FALSE); }
     } SCENE {
@@ -78,12 +80,12 @@ AI_SINGLE_BATTLE_TEST("AI avoids toxic when it can not poison target")
     PARAMETRIZE { species = SPECIES_SNORLAX; ability = ABILITY_IMMUNITY; }
     PARAMETRIZE { species = SPECIES_KOMALA; ability = ABILITY_COMATOSE; }
     PARAMETRIZE { species = SPECIES_NACLI; ability = ABILITY_PURIFYING_SALT; }
-    PARAMETRIZE { species = SPECIES_ARGOMON; ability = ABILITY_OVERGROW; }
+    PARAMETRIZE { species = SPECIES_BULBASAUR; ability = ABILITY_OVERGROW; }
 
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
         PLAYER(species) { Ability(ability); }
-        OPPONENT(SPECIES_LOPMONX) { Moves(MOVE_CELEBRATE, MOVE_TOXIC); }
+        OPPONENT(SPECIES_WOBBUFFET) { Moves(MOVE_CELEBRATE, MOVE_TOXIC); }
     } WHEN {
         TURN { SCORE_EQ(opponent, MOVE_CELEBRATE, MOVE_TOXIC); } // Both get -10
     }

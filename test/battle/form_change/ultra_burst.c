@@ -5,7 +5,7 @@ SINGLE_BATTLE_TEST("Dusk Mane Necrozma can Ultra Burst holding Ultranecrozium Z"
 {
     GIVEN {
         PLAYER(SPECIES_NECROZMA_DUSK_MANE) { Item(ITEM_ULTRANECROZIUM_Z); }
-        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_ULTRA_BURST); }
     } SCENE {
@@ -21,9 +21,9 @@ DOUBLE_BATTLE_TEST("Ultra Burst's order is determined by Speed - opponent faster
 {
     GIVEN {
         PLAYER(SPECIES_NECROZMA_DUSK_MANE) { Item(ITEM_ULTRANECROZIUM_Z); Speed(1); }
-        PLAYER(SPECIES_LOPMONX) { Speed(3); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(3); }
         OPPONENT(SPECIES_NECROZMA_DAWN_WINGS) { Item(ITEM_ULTRANECROZIUM_Z); Speed(3); }
-        OPPONENT(SPECIES_LOPMONX) { Speed(4); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(4); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_CELEBRATE, gimmick: GIMMICK_ULTRA_BURST); MOVE(playerLeft, MOVE_CELEBRATE, gimmick: GIMMICK_ULTRA_BURST); }
     } SCENE {
@@ -40,9 +40,9 @@ DOUBLE_BATTLE_TEST("Ultra Burst's order is determined by Speed - player faster")
 {
     GIVEN {
         PLAYER(SPECIES_NECROZMA_DUSK_MANE) { Item(ITEM_ULTRANECROZIUM_Z); Speed(5); }
-        PLAYER(SPECIES_LOPMONX) { Speed(3); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(3); }
         OPPONENT(SPECIES_NECROZMA_DAWN_WINGS) { Item(ITEM_ULTRANECROZIUM_Z); Speed(2); }
-        OPPONENT(SPECIES_LOPMONX) { Speed(4); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(4); }
     } WHEN {
         TURN { MOVE(opponentLeft, MOVE_CELEBRATE, gimmick: GIMMICK_ULTRA_BURST); MOVE(playerLeft, MOVE_CELEBRATE, gimmick: GIMMICK_ULTRA_BURST); }
     } SCENE {
@@ -59,17 +59,13 @@ SINGLE_BATTLE_TEST("Ultra Burst affects turn order")
 {
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_MEGA_EVO_TURN_ORDER, GEN_7);
-        PLAYER(SPECIES_NECROZMA_DUSK_MANE) { Item(ITEM_ULTRANECROZIUM_Z); Speed(105); }
-        OPPONENT(SPECIES_LOPMONX) { Speed(106); }
+        PLAYER(SPECIES_NECROZMA_DUSK_MANE) { Item(ITEM_ULTRANECROZIUM_Z);}
+        OPPONENT(SPECIES_WOBBUFFET) {}
     } WHEN {
-        TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_ULTRA_BURST); }
+        TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_ULTRA_BURST); }
     } SCENE {
         MESSAGE("Necrozma used Celebrate!");
-<<<<<<< HEAD
-        MESSAGE("Foe Lopmonx used Celebrate!");
-=======
-        MESSAGE("The opposing Lopmonx used Celebrate!");
->>>>>>> upstream/master
+        MESSAGE("The opposing Wobbuffet used Celebrate!");
     } THEN {
         ASSUME(player->speed == 263);
     }
@@ -78,18 +74,18 @@ SINGLE_BATTLE_TEST("Ultra Burst affects turn order")
 DOUBLE_BATTLE_TEST("Ultra Burst happens after switching, but before Focus Punch-like Moves")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_FOCUS_PUNCH].effect == EFFECT_FOCUS_PUNCH);
-        PLAYER(SPECIES_LOPMONX);
+        ASSUME(GetMoveEffect(MOVE_FOCUS_PUNCH) == EFFECT_FOCUS_PUNCH);
+        PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_NECROZMA_DUSK_MANE) { Item(ITEM_ULTRANECROZIUM_Z); }
-        OPPONENT(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { SWITCH(opponentRight, 2); MOVE(playerRight, MOVE_FOCUS_PUNCH, gimmick: GIMMICK_ULTRA_BURST, target: opponentLeft); MOVE(playerLeft, MOVE_FOCUS_PUNCH, target: opponentLeft); }
         TURN {}
     } SCENE {
-        MESSAGE("2 withdrew Lopmonx!");
-        MESSAGE("2 sent out Lopmonx!");
+        MESSAGE("2 withdrew Wobbuffet!");
+        MESSAGE("2 sent out Wobbuffet!");
 
         MESSAGE("Bright light is about to burst out of Necrozma!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ULTRA_BURST, playerRight);
@@ -99,7 +95,7 @@ DOUBLE_BATTLE_TEST("Ultra Burst happens after switching, but before Focus Punch-
         MESSAGE("Necrozma is tightening its focus!");
 
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_FOCUS_PUNCH_SETUP, playerLeft);
-        MESSAGE("Lopmonx is tightening its focus!");
+        MESSAGE("Wobbuffet is tightening its focus!");
     }
 }
 
@@ -107,7 +103,7 @@ SINGLE_BATTLE_TEST("Ultra Burst and Mega Evolution can happen on the same turn")
 {
     GIVEN {
         PLAYER(SPECIES_NECROZMA_DUSK_MANE) { Item(ITEM_ULTRANECROZIUM_Z); Speed(3); }
-        OPPONENT(SPECIES_ARCADIAMON_CHAMPION) { Item(ITEM_ARCADIAMON_CHAMPIONITE); Speed(2); }
+        OPPONENT(SPECIES_GARDEVOIR) { Item(ITEM_GARDEVOIRITE); Speed(2); }
     } WHEN {
         TURN { MOVE(player, MOVE_CELEBRATE, gimmick: GIMMICK_ULTRA_BURST); MOVE(opponent, MOVE_CELEBRATE, gimmick: GIMMICK_MEGA); }
     } SCENE {
@@ -115,17 +111,11 @@ SINGLE_BATTLE_TEST("Ultra Burst and Mega Evolution can happen on the same turn")
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ULTRA_BURST, player);
         MESSAGE("Necrozma regained its true power through Ultra Burst!");
 
-<<<<<<< HEAD
-        MESSAGE("Foe Arcadiamon_champion's Arcadiamon_championite is reacting to 2's Mega Ring!");
+        MESSAGE("The opposing Gardevoir's Gardevoirite is reacting to 2's Mega Ring!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponent);
-        MESSAGE("Foe Arcadiamon_champion has Mega Evolved into Mega Arcadiamon_champion!");
-=======
-        MESSAGE("The opposing Arcadiamon_champion's Arcadiamon_championite is reacting to 2's Mega Ring!");
-        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_MEGA_EVOLUTION, opponent);
-        MESSAGE("The opposing Arcadiamon_champion has Mega Evolved into Mega Arcadiamon_champion!");
->>>>>>> upstream/master
+        MESSAGE("The opposing Gardevoir has Mega Evolved into Mega Gardevoir!");
     } THEN {
         EXPECT_EQ(player->species, SPECIES_NECROZMA_ULTRA);
-        EXPECT_EQ(opponent->species, SPECIES_ARCADIAMON_CHAMPION_MEGA);
+        EXPECT_EQ(opponent->species, SPECIES_GARDEVOIR_MEGA);
     }
 }

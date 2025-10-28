@@ -17,7 +17,7 @@ TEST("Nature independent from Hidden Nature")
             PARAMETRIZE { nature = i; hiddenNature = j; }
         }
     }
-    CreateMonWithNature(&mon, SPECIES_LOPMONX, 100, 0, nature);
+    CreateMonWithNature(&mon, SPECIES_WOBBUFFET, 100, 0, nature);
     SetMonData(&mon, MON_DATA_HIDDEN_NATURE, &hiddenNature);
     EXPECT_EQ(GetNature(&mon), nature);
     EXPECT_EQ(GetMonData(&mon, MON_DATA_HIDDEN_NATURE), hiddenNature);
@@ -42,7 +42,7 @@ TEST("Terastallization type can be set to any type except TYPE_NONE")
     {
         PARAMETRIZE { teraType = i; }
     }
-    CreateMon(&mon, SPECIES_LOPMONX, 100, 0, FALSE, 0, OT_ID_PRESET, 0);
+    CreateMon(&mon, SPECIES_WOBBUFFET, 100, 0, FALSE, 0, OT_ID_PRESET, 0);
     SetMonData(&mon, MON_DATA_TERA_TYPE, &teraType);
     EXPECT_EQ(teraType, GetMonData(&mon, MON_DATA_TERA_TYPE));
 }
@@ -72,7 +72,7 @@ TEST("Shininess independent from PID and OTID")
     bool32 isShiny;
     struct Pokemon mon;
     PARAMETRIZE { pid = 0; otId = 0; }
-    CreateMon(&mon, SPECIES_LOPMONX, 100, 0, TRUE, pid, OT_ID_PRESET, otId);
+    CreateMon(&mon, SPECIES_WOBBUFFET, 100, 0, TRUE, pid, OT_ID_PRESET, otId);
     isShiny = IsMonShiny(&mon);
     data = !isShiny;
     SetMonData(&mon, MON_DATA_IS_SHINY, &data);
@@ -85,7 +85,7 @@ TEST("Hyper Training increases stats without affecting IVs")
 {
     u32 data, hp, atk, def, speed, spatk, spdef, friendship = 0;
     struct Pokemon mon;
-    CreateMon(&mon, SPECIES_LOPMONX, 100, 3, TRUE, 0, OT_ID_PRESET, 0);
+    CreateMon(&mon, SPECIES_WOBBUFFET, 100, 3, TRUE, 0, OT_ID_PRESET, 0);
 
     // Consider B_FRIENDSHIP_BOOST.
     SetMonData(&mon, MON_DATA_FRIENDSHIP, &friendship);
@@ -139,7 +139,7 @@ TEST("Status1 round-trips through BoxPokemon")
     PARAMETRIZE { status1 = STATUS1_PARALYSIS; }
     PARAMETRIZE { status1 = STATUS1_TOXIC_POISON; }
     PARAMETRIZE { status1 = STATUS1_FROSTBITE; }
-    CreateMon(&mon1, SPECIES_LOPMONX, 100, 0, FALSE, 0, OT_ID_PRESET, 0);
+    CreateMon(&mon1, SPECIES_WOBBUFFET, 100, 0, FALSE, 0, OT_ID_PRESET, 0);
     SetMonData(&mon1, MON_DATA_STATUS, &status1);
     BoxMonToMon(&mon1.box, &mon2);
     EXPECT_EQ(GetMonData(&mon2, MON_DATA_STATUS), status1);
@@ -148,7 +148,7 @@ TEST("Status1 round-trips through BoxPokemon")
 TEST("canhypertrain/hypertrain affect MON_DATA_HYPER_TRAINED_* and recalculate stats")
 {
     u32 atk, friendship = 0;
-    CreateMon(&gPlayerParty[0], SPECIES_LOPMONX, 100, 0, FALSE, 0, OT_ID_PRESET, 0);
+    CreateMon(&gPlayerParty[0], SPECIES_WOBBUFFET, 100, 0, FALSE, 0, OT_ID_PRESET, 0);
 
     // Consider B_FRIENDSHIP_BOOST.
     SetMonData(&gPlayerParty[0], MON_DATA_FRIENDSHIP, &friendship);
@@ -172,7 +172,7 @@ TEST("canhypertrain/hypertrain affect MON_DATA_HYPER_TRAINED_* and recalculate s
 
 TEST("hasgigantamaxfactor/togglegigantamaxfactor affect MON_DATA_GIGANTAMAX_FACTOR")
 {
-    CreateMon(&gPlayerParty[0], SPECIES_LOPMONX, 100, 0, FALSE, 0, OT_ID_PRESET, 0);
+    CreateMon(&gPlayerParty[0], SPECIES_WOBBUFFET, 100, 0, FALSE, 0, OT_ID_PRESET, 0);
 
     RUN_OVERWORLD_SCRIPT(
         hasgigantamaxfactor 0;
@@ -215,10 +215,10 @@ TEST("givemon [simple]")
     ZeroPlayerPartyMons();
 
     RUN_OVERWORLD_SCRIPT(
-        givemon SPECIES_LOPMONX, 100;
+        givemon SPECIES_WOBBUFFET, 100;
     );
 
-    EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_LOPMONX);
+    EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_WOBBUFFET);
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_LEVEL), 100);
 }
 
@@ -288,10 +288,10 @@ TEST("givemon [moves]")
     ZeroPlayerPartyMons();
 
     RUN_OVERWORLD_SCRIPT(
-        givemon SPECIES_LOPMONX, 100, move1=MOVE_SCRATCH, move2=MOVE_SPLASH, move3=MOVE_NONE, move4=MOVE_NONE;
+        givemon SPECIES_WOBBUFFET, 100, move1=MOVE_SCRATCH, move2=MOVE_SPLASH, move3=MOVE_NONE;
     );
 
-    EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_LOPMONX);
+    EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_WOBBUFFET);
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_LEVEL), 100);
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_MOVE1), MOVE_SCRATCH);
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_MOVE2), MOVE_SPLASH);
@@ -304,15 +304,15 @@ TEST("givemon [all]")
     ZeroPlayerPartyMons();
 
     RUN_OVERWORLD_SCRIPT(
-        givemon SPECIES_LOPMONX, 100, item=ITEM_LEFTOVERS, ball=ITEM_MASTER_BALL, nature=NATURE_BOLD, abilityNum=2, gender=MON_MALE, hpEv=1, atkEv=2, defEv=3, speedEv=4, spAtkEv=5, spDefEv=6, hpIv=7, atkIv=8, defIv=9, speedIv=10, spAtkIv=11, spDefIv=12, move1=MOVE_SCRATCH, move2=MOVE_SPLASH, move3=MOVE_CELEBRATE, move4=MOVE_EXPLOSION, isShiny=TRUE, gmaxFactor=TRUE, teraType=TYPE_FIRE, dmaxLevel=7;
+        givemon SPECIES_WOBBUFFET, 100, item=ITEM_LEFTOVERS, ball=ITEM_MASTER_BALL, nature=NATURE_BOLD, abilityNum=2, gender=MON_MALE, hpEv=1, atkEv=2, defEv=3, speedEv=4, spAtkEv=5, spDefEv=6, hpIv=7, atkIv=8, defIv=9, speedIv=10, spAtkIv=11, spDefIv=12, move1=MOVE_SCRATCH, move2=MOVE_SPLASH, move3=MOVE_CELEBRATE, move4=MOVE_EXPLOSION, shinyMode=SHINY_MODE_ALWAYS, gmaxFactor=TRUE, teraType=TYPE_FIRE, dmaxLevel=7;
     );
 
-    EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_LOPMONX);
+    EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_WOBBUFFET);
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_LEVEL), 100);
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_HELD_ITEM), ITEM_LEFTOVERS);
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_POKEBALL), BALL_MASTER);
     EXPECT_EQ(GetNature(&gPlayerParty[0]), NATURE_BOLD);
-    EXPECT_EQ(GetMonAbility(&gPlayerParty[0]), GetSpeciesAbility(SPECIES_LOPMONX, 2));
+    EXPECT_EQ(GetMonAbility(&gPlayerParty[0]), GetSpeciesAbility(SPECIES_WOBBUFFET, 2));
     EXPECT_EQ(GetMonGender(&gPlayerParty[0]), MON_MALE);
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_HP_EV), 1);
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_ATK_EV), 2);
@@ -340,7 +340,7 @@ TEST("givemon [vars]")
 {
     ZeroPlayerPartyMons();
 
-    VarSet(VAR_TEMP_C, SPECIES_LOPMONX);
+    VarSet(VAR_TEMP_C, SPECIES_WOBBUFFET);
     VarSet(VAR_TEMP_D, 100);
     VarSet(VAR_0x8000, ITEM_LEFTOVERS);
     VarSet(VAR_0x8001, ITEM_MASTER_BALL);
@@ -363,21 +363,21 @@ TEST("givemon [vars]")
     VarSet(VAR_TEMP_6, MOVE_SPLASH);
     VarSet(VAR_TEMP_7, MOVE_CELEBRATE);
     VarSet(VAR_TEMP_8, MOVE_EXPLOSION);
-    VarSet(VAR_TEMP_9, TRUE);
+    VarSet(VAR_TEMP_9, SHINY_MODE_ALWAYS);
     VarSet(VAR_TEMP_A, TRUE);
     VarSet(VAR_TEMP_B, TYPE_FIRE);
     VarSet(VAR_TEMP_E, 7);
 
     RUN_OVERWORLD_SCRIPT(
-        givemon VAR_TEMP_C, VAR_TEMP_D, item=VAR_0x8000, ball=VAR_0x8001, nature=VAR_0x8002, abilityNum=VAR_0x8003, gender=VAR_0x8004, hpEv=VAR_0x8005, atkEv=VAR_0x8006, defEv=VAR_0x8007, speedEv=VAR_0x8008, spAtkEv=VAR_0x8009, spDefEv=VAR_0x800A, hpIv=VAR_0x800B, atkIv=VAR_TEMP_0, defIv=VAR_TEMP_1, speedIv=VAR_TEMP_2, spAtkIv=VAR_TEMP_3, spDefIv=VAR_TEMP_4, move1=VAR_TEMP_5, move2=VAR_TEMP_6, move3=VAR_TEMP_7, move4=VAR_TEMP_8, isShiny=VAR_TEMP_9, gmaxFactor=VAR_TEMP_A, teraType=VAR_TEMP_B, dmaxLevel=VAR_TEMP_E;
+        givemon VAR_TEMP_C, VAR_TEMP_D, item=VAR_0x8000, ball=VAR_0x8001, nature=VAR_0x8002, abilityNum=VAR_0x8003, gender=VAR_0x8004, hpEv=VAR_0x8005, atkEv=VAR_0x8006, defEv=VAR_0x8007, speedEv=VAR_0x8008, spAtkEv=VAR_0x8009, spDefEv=VAR_0x800A, hpIv=VAR_0x800B, atkIv=VAR_TEMP_0, defIv=VAR_TEMP_1, speedIv=VAR_TEMP_2, spAtkIv=VAR_TEMP_3, spDefIv=VAR_TEMP_4, move1=VAR_TEMP_5, move2=VAR_TEMP_6, move3=VAR_TEMP_7, move4=VAR_TEMP_8, shinyMode=VAR_TEMP_9, gmaxFactor=VAR_TEMP_A, teraType=VAR_TEMP_B, dmaxLevel=VAR_TEMP_E;
     );
 
-    EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_LOPMONX);
+    EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPECIES), SPECIES_WOBBUFFET);
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_LEVEL), 100);
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_HELD_ITEM), ITEM_LEFTOVERS);
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_POKEBALL), BALL_MASTER);
     EXPECT_EQ(GetNature(&gPlayerParty[0]), NATURE_BOLD);
-    EXPECT_EQ(GetMonAbility(&gPlayerParty[0]), GetSpeciesAbility(SPECIES_LOPMONX, 2));
+    EXPECT_EQ(GetMonAbility(&gPlayerParty[0]), GetSpeciesAbility(SPECIES_WOBBUFFET, 2));
     EXPECT_EQ(GetMonGender(&gPlayerParty[0]), MON_MALE);
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_HP_EV), 1);
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_ATK_EV), 2);
@@ -403,7 +403,7 @@ TEST("givemon [vars]")
 
 TEST("checkteratype/setteratype work")
 {
-    CreateMon(&gPlayerParty[0], SPECIES_LOPMONX, 100, 0, FALSE, 0, OT_ID_PRESET, 0);
+    CreateMon(&gPlayerParty[0], SPECIES_WOBBUFFET, 100, 0, FALSE, 0, OT_ID_PRESET, 0);
 
     RUN_OVERWORLD_SCRIPT(
         checkteratype 0;
@@ -422,11 +422,11 @@ TEST("createmon [simple]")
     ZeroPlayerPartyMons();
 
     RUN_OVERWORLD_SCRIPT(
-        createmon 1, 0, SPECIES_LOPMONX, 100;
+        createmon 1, 0, SPECIES_WOBBUFFET, 100;
         createmon 1, 1, SPECIES_WYNAUT, 10;
     );
 
-    EXPECT_EQ(GetMonData(&gEnemyParty[0], MON_DATA_SPECIES), SPECIES_LOPMONX);
+    EXPECT_EQ(GetMonData(&gEnemyParty[0], MON_DATA_SPECIES), SPECIES_WOBBUFFET);
     EXPECT_EQ(GetMonData(&gEnemyParty[0], MON_DATA_LEVEL), 100);
     EXPECT_EQ(GetMonData(&gEnemyParty[1], MON_DATA_SPECIES), SPECIES_WYNAUT);
     EXPECT_EQ(GetMonData(&gEnemyParty[1], MON_DATA_LEVEL), 10);
@@ -454,7 +454,7 @@ TEST("Pokémon level up learnsets fit within MAX_LEVEL_UP_MOVES and MAX_RELEARNE
 
 TEST("Optimised GetMonData")
 {
-    CreateMon(&gPlayerParty[0], SPECIES_LOPMONX, 5, 0, FALSE, 0, OT_ID_PRESET, 0x12345678);
+    CreateMon(&gPlayerParty[0], SPECIES_WOBBUFFET, 5, 0, FALSE, 0, OT_ID_PRESET, 0x12345678);
     u32 exp = 0x123456;
     SetMonData(&gPlayerParty[0], MON_DATA_EXP, &exp);
     struct Benchmark optimised,
@@ -467,7 +467,7 @@ TEST("Optimised GetMonData")
 
 TEST("Optimised SetMonData")
 {
-    CreateMon(&gPlayerParty[0], SPECIES_LOPMONX, 5, 0, FALSE, 0, OT_ID_PRESET, 0x12345678);
+    CreateMon(&gPlayerParty[0], SPECIES_WOBBUFFET, 5, 0, FALSE, 0, OT_ID_PRESET, 0x12345678);
     u32 exp = 0x123456;
     struct Benchmark optimised,
         vanilla = (struct Benchmark) { .ticks = 205 }; // From prior testing
@@ -475,6 +475,24 @@ TEST("Optimised SetMonData")
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_BAD_EGG), FALSE);
     EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_EXP), exp);
     EXPECT_FASTER(optimised, vanilla);
+}
+
+//Sanity check for a CalculateMonStats refactor (could be deleted or improved)
+TEST("CalculateMonStats")
+{
+    ZeroPlayerPartyMons();
+
+    RUN_OVERWORLD_SCRIPT(
+        givemon SPECIES_WOBBUFFET, 100, item=ITEM_LEFTOVERS, ball=ITEM_MASTER_BALL, nature=NATURE_BOLD, abilityNum=2, gender=MON_MALE, hpEv=1, atkEv=2, defEv=3, speedEv=4, spAtkEv=5, spDefEv=6, hpIv=7, atkIv=8, defIv=9, speedIv=10, spAtkIv=11, spDefIv=12, move1=MOVE_SCRATCH, move2=MOVE_SPLASH, move3=MOVE_CELEBRATE, move4=MOVE_EXPLOSION, shinyMode=SHINY_MODE_ALWAYS, gmaxFactor=TRUE, teraType=TYPE_FIRE, dmaxLevel=7;
+    );
+
+    EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_MAX_HP), 497);
+    EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_ATK), 71);
+    EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_DEF), 143);
+    EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPEED), 82);
+    EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPATK), 83);
+    EXPECT_EQ(GetMonData(&gPlayerParty[0], MON_DATA_SPDEF), 134);
+
 }
 
 TEST("BoxPokemon encryption works")

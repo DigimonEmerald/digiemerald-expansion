@@ -405,7 +405,7 @@ $(GEOGREYMONGFXDIR)/scene_2/bg.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 313 -Wnum_tiles
 
 $(GEOGREYMONGFXDIR)/scene_3/geogreymon.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 124 -Wnum_tiles
+	$(GFX) $< $@ -num_tiles 128 -Wnum_tiles
 
 $(GEOGREYMONGFXDIR)/scene_4/streaks.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 19 -Wnum_tiles
