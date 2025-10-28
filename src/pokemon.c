@@ -1740,40 +1740,6 @@ void CalculateMonStats(struct Pokemon *mon)
         return;
 #endif
 
-    bool32 hyperTrained[NUM_STATS]; //In a battle test, hyper training flag indicates a fixed stat
-    s32 iv[NUM_STATS];
-    s32 ev[NUM_STATS];
-    for (u32 i = 0; i < NUM_STATS; i++)
-    {
-        hyperTrained[i] = GetMonData(mon, MON_DATA_HYPER_TRAINED_HP + i);
-        iv[i] = GetMonData(mon, MON_DATA_HP_IV + i);
-        ev[i] = GetMonData(mon, MON_DATA_HP_EV + i);
-
-        if (hyperTrained[i])
-        {
-        #if TESTING
-            if (gMain.inBattle)
-                continue;
-        #endif
-            iv[i] = MAX_PER_STAT_IVS;
-        }
-
-        if (i == STAT_HP)
-            continue;
-
-        u8 baseStat = GetSpeciesBaseStat(species, i);
-        s32 n = (((2 * baseStat + iv[i] + ev[i] / 4) * level) / 100) + 5;
-        n = ModifyStatByNature(nature, n, i);
-        if (B_FRIENDSHIP_BOOST == TRUE)
-            n = n + ((n * 10 * friendship) / (MAX_FRIENDSHIP * 100));
-        SetMonData(mon, MON_DATA_MAX_HP + i, &n);
-    }
-
-#if TESTING
-    if (hyperTrained[STAT_HP] && gMain.inBattle)
-        return;
-#endif
-
     if (species == SPECIES_BALUCHIMON)
     {
         newMaxHP = 1;
