@@ -17283,19 +17283,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Carracosta[] = INCBIN_U32("graphics/pokemon/carracosta/anim_front.4bpp.smol");
-    const u16 gMonPalette_Carracosta[] = INCBIN_U16("graphics/pokemon/carracosta/normal.gbapal");
-    const u32 gMonBackPic_Carracosta[] = INCBIN_U32("graphics/pokemon/carracosta/back.4bpp.smol");
-    const u16 gMonShinyPalette_Carracosta[] = INCBIN_U16("graphics/pokemon/carracosta/shiny.gbapal");
-    const u8 gMonIcon_Carracosta[] = INCBIN_U8("graphics/pokemon/carracosta/icon.4bpp");
+    const u32 gMonFrontPic_Waruseadramon[] = INCBIN_U32("graphics/pokemon/waruseadramon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Waruseadramon[] = INCBIN_U16("graphics/pokemon/waruseadramon/normal.gbapal");
+    const u32 gMonBackPic_Waruseadramon[] = INCBIN_U32("graphics/pokemon/waruseadramon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Waruseadramon[] = INCBIN_U16("graphics/pokemon/waruseadramon/shiny.gbapal");
+    const u8 gMonIcon_Waruseadramon[] = INCBIN_U8("graphics/pokemon/waruseadramon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Carracosta[] = INCBIN_U8("graphics/pokemon/carracosta/footprint.1bpp");
+    const u8 gMonFootprint_Waruseadramon[] = INCBIN_U8("graphics/pokemon/waruseadramon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Carracosta[] = INCBIN_COMP("graphics/pokemon/carracosta/overworld.4bpp");
+    const u32 gObjectEventPic_Waruseadramon[] = INCBIN_COMP("graphics/pokemon/waruseadramon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Carracosta[] = INCBIN_U16("graphics/pokemon/carracosta/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Carracosta[] = INCBIN_U16("graphics/pokemon/carracosta/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Waruseadramon[] = INCBIN_U16("graphics/pokemon/waruseadramon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Waruseadramon[] = INCBIN_U16("graphics/pokemon/waruseadramon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_WARUMONZAEMON

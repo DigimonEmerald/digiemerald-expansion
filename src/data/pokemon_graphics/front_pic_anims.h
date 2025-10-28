@@ -7036,7 +7036,7 @@ static const union AnimCmd sAnim_Warumonzaemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Carracosta_1[] =
+static const union AnimCmd sAnim_Waruseadramon_1[] =
 {
     ANIMCMD_FRAME(1, 35),
     ANIMCMD_FRAME(0, 10),
@@ -11759,7 +11759,7 @@ SINGLE_ANIMATION(Vermilimon);
 #endif //P_FAMILY_TEKKAMON
 #if P_FAMILY_WARUMONZAEMON
 SINGLE_ANIMATION(Warumonzaemon);
-SINGLE_ANIMATION(Carracosta);
+SINGLE_ANIMATION(Waruseadramon);
 #endif //P_FAMILY_WARUMONZAEMON
 #if P_FAMILY_ARCHEN
 SINGLE_ANIMATION(Archen);

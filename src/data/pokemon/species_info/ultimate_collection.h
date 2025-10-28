@@ -6132,44 +6132,46 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sWarumonzaemonLevelUpLearnset,
         .teachableLearnset = sWarumonzaemonTeachableLearnset,
         .eggMoveLearnset = sWarumonzaemonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_CARRACOSTA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_WARUSEADRAMON}),
     },
 
-    [SPECIES_CARRACOSTA] =
+    [SPECIES_WARUSEADRAMON] =
     {
-        .baseHP        = 74,
-        .baseAttack    = 108,
-        .baseDefense   = 133,
-        .baseSpeed     = 32,
-        .baseSpAttack  = 83,
-        .baseSpDefense = 65,
-        .types = MON_TYPES(TYPE_WATER, TYPE_ROCK),
+        .baseHP        = 80,
+        .baseAttack    = 85,
+        .baseDefense   = 75,
+        .baseSpeed     = 115,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_DARK, TYPE_WATER),
+        .attribute = TYPE_VIRUS,
         .catchRate = 95,
-        .expYield = 173,
-        .evYield_Defense = 2,
+        .expYield = 200,
+        .evYield_Speed = 3,
+        .evYield_SpAttack = 2,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_SOLID_ROCK, ABILITY_STURDY, ABILITY_SWIFT_SWIM },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Carracosta"),
-        .cryId = CRY_CARRACOSTA,
-        .natDexNum = NATIONAL_DEX_CARRACOSTA,
-        .categoryName = _("Prototurtle"),
-        .height = 12,
-        .weight = 810,
+        .abilities = { ABILITY_LIMBER, ABILITY_STEADFAST, ABILITY_WATER_COMPACTION },
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("WaruSeadrmon"),
+        .cryId = CRY_WARUSEADRAMON,
+        .natDexNum = NATIONAL_DEX_WARUSEADRAMON,
+        .categoryName = _("Sea Dragon"),
+        .height = 150,
+        .weight = 3599,
         .description = COMPOUND_STRING(
-            "They can live both in the ocean and\n"
-            "on land. Incredible jaw strength enables\n"
-            "them to chew up steel beams and rocks\n"
-            "along with their prey."),
+            "The horn atop WaruSeadramons head\n"
+            "allows it to control darkness. It finds\n"
+            "a sick pleasure in chasing its prey due\n"
+            "its sly personality that it developed."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Carracosta,
+        .frontPic = gMonFrontPic_Waruseadramon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 4,
         .frontAnimFrames = ANIM_FRAMES(
@@ -6185,28 +6187,28 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_H_SHAKE_SLOW,
-        .backPic = gMonBackPic_Carracosta,
+        .backPic = gMonBackPic_Waruseadramon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
         .backPicYOffset = 13,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Carracosta,
-        .shinyPalette = gMonShinyPalette_Carracosta,
-        .iconSprite = gMonIcon_Carracosta,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Waruseadramon,
+        .shinyPalette = gMonShinyPalette_Waruseadramon,
+        .iconSprite = gMonIcon_Waruseadramon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(4, 8, SHADOW_SIZE_L)
-        FOOTPRINT(Carracosta)
+        FOOTPRINT(Waruseadramon)
         OVERWORLD(
-            sPicTable_Carracosta,
+            sPicTable_Waruseadramon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Carracosta,
-            gShinyOverworldPalette_Carracosta
+            gOverworldPalette_Waruseadramon,
+            gShinyOverworldPalette_Waruseadramon
         )
-        .levelUpLearnset = sCarracostaLevelUpLearnset,
-        .teachableLearnset = sCarracostaTeachableLearnset,
+        .levelUpLearnset = sWaruseadramonLevelUpLearnset,
+        .teachableLearnset = sWaruseadramonTeachableLearnset,
     },
 #endif //P_FAMILY_WARUMONZAEMON
 

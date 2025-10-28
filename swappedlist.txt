@@ -538,6 +538,7 @@ Tekkamon - Yamask
 Myotismon - Cofagrigus
 Vermilimon - Runerigus
 WaruMonzaemon - Tirtouga
+WaruSeadramon - Carracosta
 
 Mega List
 

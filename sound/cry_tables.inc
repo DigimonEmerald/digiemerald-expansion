@@ -1406,7 +1406,7 @@ gCryTable::
 .endif @ P_FAMILY_TEKKAMON
 .if P_FAMILY_WARUMONZAEMON == TRUE
 	cry Cry_Warumonzaemon
-	cry Cry_Carracosta
+	cry Cry_Waruseadramon
 .endif @ P_FAMILY_WARUMONZAEMON
 .if P_FAMILY_ARCHEN == TRUE
 	cry Cry_Archen
@@ -3833,7 +3833,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_TEKKAMON
 .if P_FAMILY_WARUMONZAEMON == TRUE
 	cry_reverse Cry_Warumonzaemon
-	cry_reverse Cry_Carracosta
+	cry_reverse Cry_Waruseadramon
 .endif @ P_FAMILY_WARUMONZAEMON
 .if P_FAMILY_ARCHEN == TRUE
 	cry_reverse Cry_Archen

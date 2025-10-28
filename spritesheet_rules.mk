@@ -2955,7 +2955,7 @@ $(POKEMONGFXDIR)/myotismon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/warumonzaemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/carracosta/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/waruseadramon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/archen/overworld.4bpp: %.4bpp: %.png

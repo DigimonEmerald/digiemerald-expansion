@@ -3694,8 +3694,8 @@ Cry_Warumonzaemon::
 	.incbin "sound/direct_sound_samples/cries/warumonzaemon.bin"
 
 	.align 2
-Cry_Carracosta::
-	.incbin "sound/direct_sound_samples/cries/carracosta.bin"
+Cry_Waruseadramon::
+	.incbin "sound/direct_sound_samples/cries/waruseadramon.bin"
 .endif @ P_FAMILY_WARUMONZAEMON
 
 .if P_FAMILY_ARCHEN == TRUE
