@@ -9213,21 +9213,19 @@ static const struct LevelUpMove sMudfrigimonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_MUDFRIGIMON
 
-#if P_FAMILY_FINNEON
-static const struct LevelUpMove sFinneonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_POUND),
-    LEVEL_UP_MOVE( 6, MOVE_WATER_GUN),
-    LEVEL_UP_MOVE(13, MOVE_RAIN_DANCE),
-    LEVEL_UP_MOVE(17, MOVE_GUST),
-    LEVEL_UP_MOVE(22, MOVE_WATER_PULSE),
-    LEVEL_UP_MOVE(26, MOVE_ATTRACT),
-    LEVEL_UP_MOVE(29, MOVE_SAFEGUARD),
-    LEVEL_UP_MOVE(33, MOVE_AQUA_RING),
-    LEVEL_UP_MOVE(38, MOVE_WHIRLPOOL),
-    LEVEL_UP_MOVE(42, MOVE_U_TURN),
-    LEVEL_UP_MOVE(45, MOVE_BOUNCE),
-    LEVEL_UP_MOVE(49, MOVE_TAILWIND),
-    LEVEL_UP_MOVE(54, MOVE_SOAK),
+#if P_FAMILY_WIZARDMON
+static const struct LevelUpMove sWizardmonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_THUNDER_SHOCK),
+    LEVEL_UP_MOVE( 1, MOVE_EMBER),
+    LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
+    LEVEL_UP_MOVE( 1, MOVE_GUST),
+    LEVEL_UP_MOVE(20, MOVE_SHOCK_WAVE),
+    LEVEL_UP_MOVE(24, MOVE_AMNESIA),
+    LEVEL_UP_MOVE(28, MOVE_PSYBEAM),
+    LEVEL_UP_MOVE(32, MOVE_DISABLE),
+    LEVEL_UP_MOVE(36, MOVE_MUD_BOMB),
+    LEVEL_UP_MOVE(40, MOVE_HEAL_PULSE),
+    LEVEL_UP_MOVE(44, MOVE_WILD_CHARGE), // Bolt Break
     LEVEL_UP_END
 };
 
@@ -9247,7 +9245,7 @@ static const struct LevelUpMove sLumineonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(59, MOVE_TAILWIND),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_FINNEON
+#endif //P_FAMILY_WIZARDMON
 
 #if P_FAMILY_SNOVER
 static const struct LevelUpMove sSnoverLevelUpLearnset[] = {

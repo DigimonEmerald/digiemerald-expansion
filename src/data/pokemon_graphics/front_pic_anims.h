@@ -5946,8 +5946,8 @@ static const union AnimCmd sAnim_Mudfrigimon_1[] =
 };
 #endif //P_FAMILY_MUDFRIGIMON
 
-#if P_FAMILY_FINNEON
-static const union AnimCmd sAnim_Finneon_1[] =
+#if P_FAMILY_WIZARDMON
+static const union AnimCmd sAnim_Wizardmon_1[] =
 {
     ANIMCMD_FRAME(1, 12),
     ANIMCMD_FRAME(0, 12),
@@ -5970,7 +5970,7 @@ static const union AnimCmd sAnim_Lumineon_1[] =
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_FINNEON
+#endif //P_FAMILY_WIZARDMON
 
 #if P_FAMILY_SNOVER
 static const union AnimCmd sAnim_Snover_1[] =
@@ -11536,10 +11536,10 @@ SINGLE_ANIMATION(Thunderballmon);
 #if P_FAMILY_MUDFRIGIMON
 SINGLE_ANIMATION(Mudfrigimon);
 #endif //P_FAMILY_MUDFRIGIMON
-#if P_FAMILY_FINNEON
-SINGLE_ANIMATION(Finneon);
+#if P_FAMILY_WIZARDMON
+SINGLE_ANIMATION(Wizardmon);
 SINGLE_ANIMATION(Lumineon);
-#endif //P_FAMILY_FINNEON
+#endif //P_FAMILY_WIZARDMON
 #if P_FAMILY_SNOVER
 SINGLE_ANIMATION(Snover);
 SINGLE_ANIMATION(Abomasnow);

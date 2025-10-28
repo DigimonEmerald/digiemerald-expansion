@@ -16543,42 +16543,44 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_MUDFRIGIMON
 
-#if P_FAMILY_FINNEON
-    [SPECIES_FINNEON] =
+#if P_FAMILY_WIZARDMON
+    [SPECIES_WIZARDMON] =
     {
-        .baseHP        = 49,
-        .baseAttack    = 49,
-        .baseDefense   = 56,
-        .baseSpeed     = 66,
-        .baseSpAttack  = 49,
-        .baseSpDefense = 61,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 190,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 66 : 90,
-        .evYield_Speed = 1,
+        .baseHP        = 70,
+        .baseAttack    = 45,
+        .baseDefense   = 50,
+        .baseSpeed     = 60,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_PSYCHIC),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_SpAttack = 3,
+        .evYield_SpDefense = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_STORM_DRAIN, ABILITY_WATER_VEIL },
+        .abilities = { ABILITY_BLAZE, ABILITY_FOREWARN, ABILITY_MAGIC_BOUNCE },
         .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Finneon"),
-        .cryId = CRY_FINNEON,
-        .natDexNum = NATIONAL_DEX_FINNEON,
-        .categoryName = _("Wing Fish"),
-        .height = 4,
-        .weight = 70,
+        .speciesName = _("Wizardmon"),
+        .cryId = CRY_WIZARDMON,
+        .natDexNum = NATIONAL_DEX_WIZARDMON,
+        .categoryName = _("Witchelny"),
+        .height = 17,
+        .weight = 462,
         .description = COMPOUND_STRING(
-            "Its double tail fins propel its energetic\n"
-            "jumps. When it breaks the surface of the\n"
-            "sea, Angemon swoop down to grab it on\n"
-            "the fly."),
+            "It originally comes from a different\n"
+            "Digital World called Witchelny. It is a\n"
+            "master of fire and earth sorcery which\n"
+            "it likes to show off with its pranks."),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Finneon,
+        .frontPic = gMonFrontPic_Wizardmon,
         .frontPicSize = MON_COORDS_SIZE(32, 40),
         .frontPicYOffset = 14,
         .frontAnimFrames = ANIM_FRAMES(
@@ -16592,42 +16594,42 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 15),
         ),
         .frontAnimId = ANIM_V_SLIDE_WOBBLE_SMALL,
-        .backPic = gMonBackPic_Finneon,
+        .backPic = gMonBackPic_Wizardmon,
         .backPicSize = MON_COORDS_SIZE(56, 40),
         .backPicYOffset = 12,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Finneon,
-        .shinyPalette = gMonShinyPalette_Finneon,
-        .iconSprite = gMonIcon_Finneon,
+        .palette = gMonPalette_Wizardmon,
+        .shinyPalette = gMonShinyPalette_Wizardmon,
+        .iconSprite = gMonIcon_Wizardmon,
         .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_FinneonF,
+        .frontPicFemale = gMonFrontPic_WizardmonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(32, 40),
-        .backPicFemale = gMonBackPic_FinneonF,
+        .backPicFemale = gMonBackPic_WizardmonF,
         .backPicSizeFemale = MON_COORDS_SIZE(56, 40),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 1, SHADOW_SIZE_S)
-        FOOTPRINT(Finneon)
+        FOOTPRINT(Wizardmon)
         OVERWORLD(
-            sPicTable_Finneon,
+            sPicTable_Wizardmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Finneon,
-            gShinyOverworldPalette_Finneon
+            gOverworldPalette_Wizardmon,
+            gShinyOverworldPalette_Wizardmon
         )
         OVERWORLD_FEMALE(
-            sPicTable_FinneonF,
+            sPicTable_WizardmonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sFinneonLevelUpLearnset,
-        .teachableLearnset = sFinneonTeachableLearnset,
-        .eggMoveLearnset = sFinneonEggMoveLearnset,
+        .levelUpLearnset = sWizardmonLevelUpLearnset,
+        .teachableLearnset = sWizardmonTeachableLearnset,
+        .eggMoveLearnset = sWizardmonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_LUMINEON}),
     },
 
@@ -16713,7 +16715,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sLumineonLevelUpLearnset,
         .teachableLearnset = sLumineonTeachableLearnset,
     },
-#endif //P_FAMILY_FINNEON
+#endif //P_FAMILY_WIZARDMON
 
 #if P_FAMILY_SNOVER
     [SPECIES_SNOVER] =

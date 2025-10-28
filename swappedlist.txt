@@ -462,6 +462,7 @@ Soulmon - Drapion
 Tankmon - Croagunk
 Thunderballmon - Toxicroak
 MudFrigimon - Carnivine
+Wizardmon - Finneon
 
 Ultimate List
 

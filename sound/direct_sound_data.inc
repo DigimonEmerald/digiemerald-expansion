@@ -3204,15 +3204,15 @@ Cry_Mudfrigimon::
 	.incbin "sound/direct_sound_samples/cries/mudfrigimon.bin"
 .endif @ P_FAMILY_MUDFRIGIMON
 
-.if P_FAMILY_FINNEON == TRUE
+.if P_FAMILY_WIZARDMON == TRUE
 	.align 2
-Cry_Finneon::
-	.incbin "sound/direct_sound_samples/cries/finneon.bin"
+Cry_Wizardmon::
+	.incbin "sound/direct_sound_samples/cries/wizardmon.bin"
 
 	.align 2
 Cry_Lumineon::
 	.incbin "sound/direct_sound_samples/cries/lumineon.bin"
-.endif @ P_FAMILY_FINNEON
+.endif @ P_FAMILY_WIZARDMON
 
 .if P_FAMILY_SNOVER == TRUE
 	.align 2

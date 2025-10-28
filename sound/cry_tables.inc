@@ -1204,10 +1204,10 @@ gCryTable::
 .if P_FAMILY_MUDFRIGIMON == TRUE
 	cry Cry_Mudfrigimon
 .endif @ P_FAMILY_MUDFRIGIMON
-.if P_FAMILY_FINNEON == TRUE
-	cry Cry_Finneon
+.if P_FAMILY_WIZARDMON == TRUE
+	cry Cry_Wizardmon
 	cry Cry_Lumineon
-.endif @ P_FAMILY_FINNEON
+.endif @ P_FAMILY_WIZARDMON
 .if P_FAMILY_SNOVER == TRUE
 	cry Cry_Snover
 	cry Cry_Abomasnow
@@ -3631,10 +3631,10 @@ gCryTable_Reverse::
 .if P_FAMILY_MUDFRIGIMON == TRUE
 	cry_reverse Cry_Mudfrigimon
 .endif @ P_FAMILY_MUDFRIGIMON
-.if P_FAMILY_FINNEON == TRUE
-	cry_reverse Cry_Finneon
+.if P_FAMILY_WIZARDMON == TRUE
+	cry_reverse Cry_Wizardmon
 	cry_reverse Cry_Lumineon
-.endif @ P_FAMILY_FINNEON
+.endif @ P_FAMILY_WIZARDMON
 .if P_FAMILY_SNOVER == TRUE
 	cry_reverse Cry_Snover
 	cry_reverse Cry_Abomasnow

@@ -3870,8 +3870,8 @@ static const u16 sMudfrigimonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_MUDFRIGIMON
 
-#if P_FAMILY_FINNEON
-static const u16 sFinneonEggMoveLearnset[] = {
+#if P_FAMILY_WIZARDMON
+static const u16 sWizardmonEggMoveLearnset[] = {
     MOVE_SWEET_KISS,
     MOVE_CHARM,
     MOVE_FLAIL,
@@ -3886,7 +3886,7 @@ static const u16 sFinneonEggMoveLearnset[] = {
     MOVE_CONFUSE_RAY,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_FINNEON
+#endif //P_FAMILY_WIZARDMON
 
 #if P_FAMILY_SNOVER
 static const u16 sSnoverEggMoveLearnset[] = {

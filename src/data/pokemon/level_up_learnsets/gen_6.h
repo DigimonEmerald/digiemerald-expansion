@@ -11127,8 +11127,8 @@ static const struct LevelUpMove sMudfrigimonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_MUDFRIGIMON
 
-#if P_FAMILY_FINNEON
-static const struct LevelUpMove sFinneonLevelUpLearnset[] = {
+#if P_FAMILY_WIZARDMON
+static const struct LevelUpMove sWizardmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 6, MOVE_WATER_GUN),
     LEVEL_UP_MOVE(10, MOVE_ATTRACT),
@@ -11167,7 +11167,7 @@ static const struct LevelUpMove sLumineonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(66, MOVE_SOAK),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_FINNEON
+#endif //P_FAMILY_WIZARDMON
 
 #if P_FAMILY_SNOVER
 static const struct LevelUpMove sSnoverLevelUpLearnset[] = {

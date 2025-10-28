@@ -20181,8 +20181,8 @@ static const u16 sMudfrigimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_MUDFRIGIMON
 
-#if P_FAMILY_FINNEON
-static const u16 sFinneonTeachableLearnset[] = {
+#if P_FAMILY_WIZARDMON
+static const u16 sWizardmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -20239,7 +20239,7 @@ static const u16 sLumineonTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_FINNEON
+#endif //P_FAMILY_WIZARDMON
 
 #if P_FAMILY_SNOVER
 static const u16 sSnoverTeachableLearnset[] = {

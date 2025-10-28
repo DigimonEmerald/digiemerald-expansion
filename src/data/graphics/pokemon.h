@@ -15277,28 +15277,28 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_MUDFRIGIMON
 
-#if P_FAMILY_FINNEON
-    const u32 gMonFrontPic_Finneon[] = INCBIN_U32("graphics/pokemon/finneon/anim_front.4bpp.smol");
-    const u16 gMonPalette_Finneon[] = INCBIN_U16("graphics/pokemon/finneon/normal.gbapal");
-    const u32 gMonBackPic_Finneon[] = INCBIN_U32("graphics/pokemon/finneon/back.4bpp.smol");
-    const u16 gMonShinyPalette_Finneon[] = INCBIN_U16("graphics/pokemon/finneon/shiny.gbapal");
-    const u8 gMonIcon_Finneon[] = INCBIN_U8("graphics/pokemon/finneon/icon.4bpp");
+#if P_FAMILY_WIZARDMON
+    const u32 gMonFrontPic_Wizardmon[] = INCBIN_U32("graphics/pokemon/wizardmon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Wizardmon[] = INCBIN_U16("graphics/pokemon/wizardmon/normal.gbapal");
+    const u32 gMonBackPic_Wizardmon[] = INCBIN_U32("graphics/pokemon/wizardmon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Wizardmon[] = INCBIN_U16("graphics/pokemon/wizardmon/shiny.gbapal");
+    const u8 gMonIcon_Wizardmon[] = INCBIN_U8("graphics/pokemon/wizardmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Finneon[] = INCBIN_U8("graphics/pokemon/finneon/footprint.1bpp");
+    const u8 gMonFootprint_Wizardmon[] = INCBIN_U8("graphics/pokemon/wizardmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Finneon[] = INCBIN_COMP("graphics/pokemon/finneon/overworld.4bpp");
+    const u32 gObjectEventPic_Wizardmon[] = INCBIN_COMP("graphics/pokemon/wizardmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Finneon[] = INCBIN_U16("graphics/pokemon/finneon/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Finneon[] = INCBIN_U16("graphics/pokemon/finneon/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Wizardmon[] = INCBIN_U16("graphics/pokemon/wizardmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Wizardmon[] = INCBIN_U16("graphics/pokemon/wizardmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_FinneonF[] = INCBIN_U32("graphics/pokemon/finneon/anim_frontf.4bpp.smol");
-    const u32 gMonBackPic_FinneonF[] = INCBIN_U32("graphics/pokemon/finneon/backf.4bpp.smol");
+    const u32 gMonFrontPic_WizardmonF[] = INCBIN_U32("graphics/pokemon/wizardmon/anim_frontf.4bpp.smol");
+    const u32 gMonBackPic_WizardmonF[] = INCBIN_U32("graphics/pokemon/wizardmon/backf.4bpp.smol");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_FinneonF[] = INCBIN_COMP("graphics/pokemon/finneon/overworldf.4bpp");
+    const u32 gObjectEventPic_WizardmonF[] = INCBIN_COMP("graphics/pokemon/wizardmon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
@@ -15325,7 +15325,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u32 gObjectEventPic_LumineonF[] = INCBIN_COMP("graphics/pokemon/lumineon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
-#endif //P_FAMILY_FINNEON
+#endif //P_FAMILY_WIZARDMON
 
 #if P_FAMILY_SNOVER
     const u32 gMonFrontPic_Snover[] = INCBIN_U32("graphics/pokemon/snover/anim_front.4bpp.smol");

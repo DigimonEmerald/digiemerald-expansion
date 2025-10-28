@@ -470,7 +470,7 @@
 #define SPECIES_TANKMON                                453
 #define SPECIES_THUNDERBALLMON                               454
 #define SPECIES_MUDFRIGIMON                               455
-#define SPECIES_FINNEON                                 456
+#define SPECIES_WIZARDMON                                 456
 #define SPECIES_LUMINEON                                457
 #define SPECIES_MANTYKE                                 458
 #define SPECIES_SNOVER                                  459
