@@ -2607,10 +2607,10 @@ $(POKEMONGFXDIR)/woodmon/overworldf.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/mantyke/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/snover/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/yanmamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/snover/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/yanmamon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/abomasnow/overworld.4bpp: %.4bpp: %.png

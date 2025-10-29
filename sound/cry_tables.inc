@@ -1208,13 +1208,13 @@ gCryTable::
 	cry Cry_Wizardmon
 	cry Cry_Woodmon
 .endif @ P_FAMILY_WIZARDMON
-.if P_FAMILY_SNOVER == TRUE
-	cry Cry_Snover
+.if P_FAMILY_YANMAMON == TRUE
+	cry Cry_Yanmamon
 	cry Cry_Abomasnow
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_AbomasnowMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SNOVER
+.endif @ P_FAMILY_YANMAMON
 .if P_FAMILY_ROTOM == TRUE
 	cry Cry_Rotom
 .endif @ P_FAMILY_ROTOM
@@ -3635,13 +3635,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Wizardmon
 	cry_reverse Cry_Woodmon
 .endif @ P_FAMILY_WIZARDMON
-.if P_FAMILY_SNOVER == TRUE
-	cry_reverse Cry_Snover
+.if P_FAMILY_YANMAMON == TRUE
+	cry_reverse Cry_Yanmamon
 	cry_reverse Cry_Abomasnow
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_AbomasnowMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SNOVER
+.endif @ P_FAMILY_YANMAMON
 .if P_FAMILY_ROTOM == TRUE
 	cry_reverse Cry_Rotom
 .endif @ P_FAMILY_ROTOM

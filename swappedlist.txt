@@ -464,6 +464,7 @@ Thunderballmon - Toxicroak
 MudFrigimon - Carnivine
 Wizardmon - Finneon
 Woodmon - Lumineon
+Yanmamon - Snover
 
 Ultimate List
 

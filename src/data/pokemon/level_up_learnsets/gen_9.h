@@ -9244,20 +9244,18 @@ static const struct LevelUpMove sWoodmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_WIZARDMON
 
-#if P_FAMILY_SNOVER
-static const struct LevelUpMove sSnoverLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_LEER),
-    LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
-    LEVEL_UP_MOVE( 5, MOVE_LEAFAGE),
-    LEVEL_UP_MOVE(10, MOVE_MIST),
-    LEVEL_UP_MOVE(15, MOVE_ICE_SHARD),
-    LEVEL_UP_MOVE(20, MOVE_RAZOR_LEAF),
-    LEVEL_UP_MOVE(25, MOVE_ICY_WIND),
-    LEVEL_UP_MOVE(30, MOVE_SWAGGER),
-    LEVEL_UP_MOVE(35, MOVE_INGRAIN),
-    LEVEL_UP_MOVE(41, MOVE_WOOD_HAMMER),
-    LEVEL_UP_MOVE(45, MOVE_BLIZZARD),
-    LEVEL_UP_MOVE(50, MOVE_SHEER_COLD),
+#if P_FAMILY_YANMAMON
+static const struct LevelUpMove sYanmamonLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_DETECT),
+    LEVEL_UP_MOVE( 1, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE( 1, MOVE_FURY_CUTTER),
+    LEVEL_UP_MOVE( 1, MOVE_GUST),
+    LEVEL_UP_MOVE(20, MOVE_SHOCK_WAVE),
+    LEVEL_UP_MOVE(24, MOVE_SUPERSONIC),
+    LEVEL_UP_MOVE(28, MOVE_AERIAL_ACE),
+    LEVEL_UP_MOVE(32, MOVE_BITE),
+    LEVEL_UP_MOVE(36, MOVE_ATTACK_ORDER),
+    LEVEL_UP_MOVE(40, MOVE_THUNDERBOLT),
     LEVEL_UP_END
 };
 
@@ -9278,7 +9276,7 @@ static const struct LevelUpMove sAbomasnowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(56, MOVE_SHEER_COLD),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SNOVER
+#endif //P_FAMILY_YANMAMON
 
 #if P_FAMILY_ROTOM
 static const struct LevelUpMove sRotomLevelUpLearnset[] = {

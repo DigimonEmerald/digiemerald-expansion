@@ -16718,43 +16718,45 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     },
 #endif //P_FAMILY_WIZARDMON
 
-#if P_FAMILY_SNOVER
-    [SPECIES_SNOVER] =
+#if P_FAMILY_YANMAMON
+    [SPECIES_YANMAMON] =
     {
-        .baseHP        = 60,
-        .baseAttack    = 62,
-        .baseDefense   = 50,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 62,
-        .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_GRASS, TYPE_ICE),
-        .catchRate = 120,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 67 : 131,
-        .evYield_Attack = 1,
+        .baseHP        = 55,
+        .baseAttack    = 65,
+        .baseDefense   = 75,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_BUG, TYPE_FLYING),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense = 1,
+        .evYield_Speed = 3,
         .itemRare = ITEM_NEVER_MELT_ICE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_SNOW_WARNING, ABILITY_NONE, ABILITY_SOUNDPROOF },
-        .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Snover"),
-        .cryId = CRY_SNOVER,
-        .natDexNum = NATIONAL_DEX_SNOVER,
-        .categoryName = _("Frost Tree"),
-        .height = 10,
-        .weight = 505,
+        .abilities = { ABILITY_TINTED_LENS, ABILITY_COMPOUND_EYES, ABILITY_SPEED_BOOST },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Yanmamon"),
+        .cryId = CRY_YANMAMON,
+        .natDexNum = NATIONAL_DEX_YANMAMON,
+        .categoryName = _("Dragonfly"),
+        .height = 13,
+        .weight = 491,
         .description = COMPOUND_STRING(
-            "During cold seasons, it migrates to the\n"
-            "mountain's lower reaches. Seemingly\n"
-            "curious about people, they gather around\n"
-            "footsteps they find on snowy mountains."),
+            "The body of Yanmamon is covered in a\n"
+            "tough carapace which is as hard as\n"
+            "Greymons head. When it is hunting, it\n"
+            "will strafe side to side rapidly."),
         .pokemonScale = 305,
         .pokemonOffset = 7,
         .trainerScale = 257,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Snover,
+        .frontPic = gMonFrontPic_Yanmamon,
         .frontPicSize = MON_COORDS_SIZE(64, 48),
         .frontPicYOffset = 10,
         .frontAnimFrames = ANIM_FRAMES(
@@ -16763,42 +16765,42 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_Snover,
+        .backPic = gMonBackPic_Yanmamon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 6,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Snover,
-        .shinyPalette = gMonShinyPalette_Snover,
-        .iconSprite = gMonIcon_Snover,
+        .palette = gMonPalette_Yanmamon,
+        .shinyPalette = gMonShinyPalette_Yanmamon,
+        .iconSprite = gMonIcon_Yanmamon,
         .iconPalIndex = 1,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_SnoverF,
+        .frontPicFemale = gMonFrontPic_YanmamonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 48),
-        .backPicFemale = gMonBackPic_SnoverF,
+        .backPicFemale = gMonBackPic_YanmamonF,
         .backPicSizeFemale = MON_COORDS_SIZE(64, 56),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 4, SHADOW_SIZE_M)
-        FOOTPRINT(Snover)
+        FOOTPRINT(Yanmamon)
         OVERWORLD(
-            sPicTable_Snover,
+            sPicTable_Yanmamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Snover,
-            gShinyOverworldPalette_Snover
+            gOverworldPalette_Yanmamon,
+            gShinyOverworldPalette_Yanmamon
         )
         OVERWORLD_FEMALE(
-            sPicTable_SnoverF,
+            sPicTable_YanmamonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sSnoverLevelUpLearnset,
-        .teachableLearnset = sSnoverTeachableLearnset,
-        .eggMoveLearnset = sSnoverEggMoveLearnset,
+        .levelUpLearnset = sYanmamonLevelUpLearnset,
+        .teachableLearnset = sYanmamonTeachableLearnset,
+        .eggMoveLearnset = sYanmamonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_ABOMASNOW}),
     },
 
@@ -16955,7 +16957,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .formChangeTable = sAbomasnowFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SNOVER
+#endif //P_FAMILY_YANMAMON
 
 #if P_FAMILY_ROTOM
     [SPECIES_ROTOM] =

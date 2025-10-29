@@ -3495,13 +3495,13 @@ static const struct SpriteFrameImage sPicTable_WoodmonF[] = {
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_WIZARDMON
 
-#if P_FAMILY_SNOVER
-static const struct SpriteFrameImage sPicTable_Snover[] = {
-    overworld_ascending_frames(gObjectEventPic_Snover, 4, 4),
+#if P_FAMILY_YANMAMON
+static const struct SpriteFrameImage sPicTable_Yanmamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Yanmamon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_SnoverF[] = {
-    overworld_ascending_frames(gObjectEventPic_SnoverF, 4, 4),
+static const struct SpriteFrameImage sPicTable_YanmamonF[] = {
+    overworld_ascending_frames(gObjectEventPic_YanmamonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 static const struct SpriteFrameImage sPicTable_Abomasnow[] = {
@@ -3519,7 +3519,7 @@ static const struct SpriteFrameImage sPicTable_AbomasnowMega[] = {
 };
 #endif // P_MEGA_EVOLUTIONS
 #endif // OW_BATTLE_ONLY_FORMS
-#endif //P_FAMILY_SNOVER
+#endif //P_FAMILY_YANMAMON
 
 #if P_FAMILY_ROTOM
 static const struct SpriteFrameImage sPicTable_Rotom[] = {

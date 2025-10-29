@@ -591,14 +591,14 @@ static const struct FormChange sSaberdramonFormChangeTable[] = {
 };
 #endif //P_FAMILY_REDVEGIEMON
 
-#if P_FAMILY_SNOVER
+#if P_FAMILY_YANMAMON
 static const struct FormChange sAbomasnowFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_ABOMASNOW_MEGA, ITEM_ABOMASITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_SNOVER
+#endif //P_FAMILY_YANMAMON
 
 #if P_FAMILY_ROTOM
 static const struct FormChange sRotomFormChangeTable[] = {

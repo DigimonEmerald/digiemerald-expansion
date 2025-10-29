@@ -3214,10 +3214,10 @@ Cry_Woodmon::
 	.incbin "sound/direct_sound_samples/cries/woodmon.bin"
 .endif @ P_FAMILY_WIZARDMON
 
-.if P_FAMILY_SNOVER == TRUE
+.if P_FAMILY_YANMAMON == TRUE
 	.align 2
-Cry_Snover::
-	.incbin "sound/direct_sound_samples/cries/snover.bin"
+Cry_Yanmamon::
+	.incbin "sound/direct_sound_samples/cries/yanmamon.bin"
 
 	.align 2
 Cry_Abomasnow::
@@ -3228,7 +3228,7 @@ Cry_Abomasnow::
 Cry_AbomasnowMega::
 	.incbin "sound/direct_sound_samples/cries/abomasnow_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SNOVER
+.endif @ P_FAMILY_YANMAMON
 
 .if P_FAMILY_ROTOM == TRUE
 	.align 2

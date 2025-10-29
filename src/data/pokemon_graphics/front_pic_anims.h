@@ -5972,8 +5972,8 @@ static const union AnimCmd sAnim_Woodmon_1[] =
 };
 #endif //P_FAMILY_WIZARDMON
 
-#if P_FAMILY_SNOVER
-static const union AnimCmd sAnim_Snover_1[] =
+#if P_FAMILY_YANMAMON
+static const union AnimCmd sAnim_Yanmamon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 25),
@@ -5992,7 +5992,7 @@ static const union AnimCmd sAnim_Abomasnow_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(AbomasnowMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SNOVER
+#endif //P_FAMILY_YANMAMON
 
 #if P_FAMILY_ROTOM
 static const union AnimCmd sAnim_Rotom_1[] =
@@ -11540,13 +11540,13 @@ SINGLE_ANIMATION(Mudfrigimon);
 SINGLE_ANIMATION(Wizardmon);
 SINGLE_ANIMATION(Woodmon);
 #endif //P_FAMILY_WIZARDMON
-#if P_FAMILY_SNOVER
-SINGLE_ANIMATION(Snover);
+#if P_FAMILY_YANMAMON
+SINGLE_ANIMATION(Yanmamon);
 SINGLE_ANIMATION(Abomasnow);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(AbomasnowMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SNOVER
+#endif //P_FAMILY_YANMAMON
 #if P_FAMILY_ROTOM
 SINGLE_ANIMATION(Rotom);
 SINGLE_ANIMATION(RotomHeat);

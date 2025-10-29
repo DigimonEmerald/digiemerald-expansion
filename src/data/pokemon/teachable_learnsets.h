@@ -20241,8 +20241,8 @@ static const u16 sWoodmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_WIZARDMON
 
-#if P_FAMILY_SNOVER
-static const u16 sSnoverTeachableLearnset[] = {
+#if P_FAMILY_YANMAMON
+static const u16 sYanmamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
@@ -20318,7 +20318,7 @@ static const u16 sAbomasnowTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SNOVER
+#endif //P_FAMILY_YANMAMON
 
 #if P_FAMILY_ROTOM
 static const u16 sRotomTeachableLearnset[] = {

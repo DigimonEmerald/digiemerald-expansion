@@ -288,7 +288,7 @@
 #define P_FAMILY_TANKMON                P_GEN_4_POKEMON
 #define P_FAMILY_MUDFRIGIMON               P_GEN_4_POKEMON
 #define P_FAMILY_WIZARDMON                 P_GEN_4_POKEMON
-#define P_FAMILY_SNOVER                  P_GEN_4_POKEMON
+#define P_FAMILY_YANMAMON                  P_GEN_4_POKEMON
 #define P_FAMILY_ROTOM                   P_GEN_4_POKEMON
 #define P_FAMILY_UXIE                    P_GEN_4_POKEMON
 #define P_FAMILY_MESPRIT                 P_GEN_4_POKEMON

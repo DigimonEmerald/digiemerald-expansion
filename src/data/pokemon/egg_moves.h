@@ -3888,8 +3888,8 @@ static const u16 sWizardmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_WIZARDMON
 
-#if P_FAMILY_SNOVER
-static const u16 sSnoverEggMoveLearnset[] = {
+#if P_FAMILY_YANMAMON
+static const u16 sYanmamonEggMoveLearnset[] = {
     MOVE_LEECH_SEED,
     MOVE_MAGICAL_LEAF,
     MOVE_SEED_BOMB,
@@ -3903,7 +3903,7 @@ static const u16 sSnoverEggMoveLearnset[] = {
     MOVE_BULLET_SEED,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SNOVER
+#endif //P_FAMILY_YANMAMON
 
 #if P_FAMILY_D_DEVIMON
 static const u16 sD_devimonEggMoveLearnset[] = {

@@ -15327,28 +15327,28 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_WIZARDMON
 
-#if P_FAMILY_SNOVER
-    const u32 gMonFrontPic_Snover[] = INCBIN_U32("graphics/pokemon/snover/anim_front.4bpp.smol");
-    const u16 gMonPalette_Snover[] = INCBIN_U16("graphics/pokemon/snover/normal.gbapal");
-    const u32 gMonBackPic_Snover[] = INCBIN_U32("graphics/pokemon/snover/back.4bpp.smol");
-    const u16 gMonShinyPalette_Snover[] = INCBIN_U16("graphics/pokemon/snover/shiny.gbapal");
-    const u8 gMonIcon_Snover[] = INCBIN_U8("graphics/pokemon/snover/icon.4bpp");
+#if P_FAMILY_YANMAMON
+    const u32 gMonFrontPic_Yanmamon[] = INCBIN_U32("graphics/pokemon/yanmamon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Yanmamon[] = INCBIN_U16("graphics/pokemon/yanmamon/normal.gbapal");
+    const u32 gMonBackPic_Yanmamon[] = INCBIN_U32("graphics/pokemon/yanmamon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Yanmamon[] = INCBIN_U16("graphics/pokemon/yanmamon/shiny.gbapal");
+    const u8 gMonIcon_Yanmamon[] = INCBIN_U8("graphics/pokemon/yanmamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Snover[] = INCBIN_U8("graphics/pokemon/snover/footprint.1bpp");
+    const u8 gMonFootprint_Yanmamon[] = INCBIN_U8("graphics/pokemon/yanmamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Snover[] = INCBIN_COMP("graphics/pokemon/snover/overworld.4bpp");
+    const u32 gObjectEventPic_Yanmamon[] = INCBIN_COMP("graphics/pokemon/yanmamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Snover[] = INCBIN_U16("graphics/pokemon/snover/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Snover[] = INCBIN_U16("graphics/pokemon/snover/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Yanmamon[] = INCBIN_U16("graphics/pokemon/yanmamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Yanmamon[] = INCBIN_U16("graphics/pokemon/yanmamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_SnoverF[] = INCBIN_U32("graphics/pokemon/snover/anim_frontf.4bpp.smol");
-    const u32 gMonBackPic_SnoverF[] = INCBIN_U32("graphics/pokemon/snover/backf.4bpp.smol");
+    const u32 gMonFrontPic_YanmamonF[] = INCBIN_U32("graphics/pokemon/yanmamon/anim_frontf.4bpp.smol");
+    const u32 gMonBackPic_YanmamonF[] = INCBIN_U32("graphics/pokemon/yanmamon/backf.4bpp.smol");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_SnoverF[] = INCBIN_COMP("graphics/pokemon/snover/overworldf.4bpp");
+    const u32 gObjectEventPic_YanmamonF[] = INCBIN_COMP("graphics/pokemon/yanmamon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
@@ -15389,7 +15389,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS && OW_BATTLE_ONLY_FORMS
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SNOVER
+#endif //P_FAMILY_YANMAMON
 
 #if P_FAMILY_ROTOM
     const u32 gMonFrontPic_Rotom[] = INCBIN_U32("graphics/pokemon/rotom/anim_front.4bpp.smol");

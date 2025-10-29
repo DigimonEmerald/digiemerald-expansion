@@ -11169,8 +11169,8 @@ static const struct LevelUpMove sWoodmonLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_WIZARDMON
 
-#if P_FAMILY_SNOVER
-static const struct LevelUpMove sSnoverLevelUpLearnset[] = {
+#if P_FAMILY_YANMAMON
+static const struct LevelUpMove sYanmamonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 5, MOVE_RAZOR_LEAF),
@@ -11204,7 +11204,7 @@ static const struct LevelUpMove sAbomasnowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(58, MOVE_SHEER_COLD),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_SNOVER
+#endif //P_FAMILY_YANMAMON
 
 #if P_FAMILY_ROTOM
 static const struct LevelUpMove sRotomLevelUpLearnset[] = {

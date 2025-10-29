@@ -1064,7 +1064,7 @@ static const u16 sSaberdramonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_REDVEGIEMON
 
-#if P_FAMILY_SNOVER
+#if P_FAMILY_YANMAMON
 static const u16 sAbomasnowFormSpeciesIdTable[] = {
     SPECIES_ABOMASNOW,
 #if P_MEGA_EVOLUTIONS
@@ -1072,7 +1072,7 @@ static const u16 sAbomasnowFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_SNOVER
+#endif //P_FAMILY_YANMAMON
 
 #if P_FAMILY_ROTOM
 static const u16 sRotomFormSpeciesIdTable[] = {

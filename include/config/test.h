@@ -504,8 +504,8 @@
 #define P_FAMILY_MUDFRIGIMON               TRUE
 #undef P_FAMILY_WIZARDMON
 #define P_FAMILY_WIZARDMON                 TRUE
-#undef P_FAMILY_SNOVER
-#define P_FAMILY_SNOVER                  TRUE
+#undef P_FAMILY_YANMAMON
+#define P_FAMILY_YANMAMON                  TRUE
 #undef P_FAMILY_ROTOM
 #define P_FAMILY_ROTOM                   TRUE
 #undef P_FAMILY_UXIE
