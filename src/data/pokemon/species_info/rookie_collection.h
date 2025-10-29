@@ -17613,6 +17613,327 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #endif //P_GEN_2_CROSS_EVOS
 
 #if P_GEN_2_CROSS_EVOS
+    [SPECIES_LIOLLMON] =
+    {
+        .baseHP        = 53,
+        .baseAttack    = 59,
+        .baseDefense   = 53,
+        .baseSpeed     = 62,
+        .baseSpAttack  = 47,
+        .baseSpDefense = 48,
+        .types = MON_TYPES(TYPE_NORMAL, TYPE_LIGHT),
+        .attribute = TYPE_VACCINE,
+        .catchRate = 155,
+        .expYield = 100,
+        .evYield_Attack    = 1,
+        .evYield_Speed     = 2,
+        .itemRare = ITEM_KINGS_ROCK,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_WATER_1),
+        .abilities = { ABILITY_OWN_TEMPO, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Liollmon"),
+        .cryId = CRY_LIOLLMON,
+        .natDexNum = NATIONAL_DEX_LIOLLMON,
+        .categoryName = _("Tiger"),
+        .height = 10,
+        .weight = 209,
+        .description = COMPOUND_STRING(
+            "Until recently, its existence had never\n"
+            "been confirmed as it has a very small.\n"
+            "population. It is a very territorial\n"
+            "Digimon making it hard to study."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 309,
+        .trainerOffset = 5,
+        .frontPic = gMonFrontPic_Liollmon,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 64) : MON_COORDS_SIZE(48, 64),
+        .frontPicYOffset = 1,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 20),
+            ANIMCMD_FRAME(0, 15),
+        ),
+        .frontAnimId = ANIM_SHRINK_GROW,
+        .backPic = gMonBackPic_Liollmon,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(56, 64),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 8 : 3,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_Liollmon,
+        .shinyPalette = gMonShinyPalette_Liollmon,
+        .iconSprite = gMonIcon_Liollmon,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-2, 11, SHADOW_SIZE_M)
+        FOOTPRINT(Liollmon)
+        OVERWORLD(
+            sPicTable_Liollmon,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Liollmon,
+            gShinyOverworldPalette_Liollmon
+        )
+        .levelUpLearnset = sLiollmonLevelUpLearnset,
+        .teachableLearnset = sLiollmonTeachableLearnset,
+        .formSpeciesIdTable = sLiollmonFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 56, SPECIES_EYESMON},
+                                {EVO_LEVEL, 36, SPECIES_BOARMON}),
+    },
+#endif //P_GEN_2_CROSS_EVOS
+
+    [SPECIES_TINPET] =
+    {
+        .baseHP        = 48,
+        .baseAttack    = 51,
+        .baseDefense   = 51,
+        .baseSpeed     = 48,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_STEEL),
+        .attribute = TYPE_FREE,
+        .catchRate = 200,
+        .expYield = 70,
+        .evYield_HP = 2,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_INTIMIDATE, ABILITY_QUICK_FEET, ABILITY_MOXIE },
+        .bodyColor = BODY_COLOR_WHITE,
+        .speciesName = _("Tinpet"),
+        .cryId = CRY_TINPET,
+        .natDexNum = NATIONAL_DEX_TINPET,
+        .categoryName = _("Medabot"),
+        .height = 10,
+        .weight = 348,
+        .description = COMPOUND_STRING(
+            "Tinpet is the basic frame of all other\n"
+            "Medabot Digimon. It has good\n"
+            "customisability making it a popular\n"
+            "choice for more competitive tamers."),
+        .pokemonScale = 362,
+        .pokemonOffset = 9,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Tinpet,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 3,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 27),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(0, 6),
+            ANIMCMD_FRAME(1, 6),
+            ANIMCMD_FRAME(0, 6),
+        ),
+        .frontAnimId = ANIM_V_SHAKE,
+        .backPic = gMonBackPic_Tinpet,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 4 : 3,
+        .backAnimId = BACK_ANIM_H_SHAKE,
+        .palette = gMonPalette_Tinpet,
+        .shinyPalette = gMonShinyPalette_Tinpet,
+        .iconSprite = gMonIcon_Tinpet,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-2, 6, SHADOW_SIZE_L)
+        FOOTPRINT(Tinpet)
+        OVERWORLD(
+            sPicTable_Tinpet,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Tinpet,
+            gShinyOverworldPalette_Tinpet
+        )
+        .levelUpLearnset = sTinpetLevelUpLearnset,
+        .teachableLearnset = sTinpetTeachableLearnset,
+    },
+
+#if P_GEN_2_CROSS_EVOS
+    [SPECIES_KAMEMON] =
+    {
+        .baseHP        = 53,
+        .baseAttack    = 54,
+        .baseDefense   = 63,
+        .baseSpeed     = 49,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 63,
+        .types = MON_TYPES(TYPE_WATER),
+        .attribute = TYPE_DATA,
+        .catchRate = 155,
+        .expYield = 100,
+        .evYield_Defense = 1,
+        .evYield_SpDefense = 2,
+        .itemRare = ITEM_KINGS_ROCK,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1),
+        .abilities = { ABILITY_SHELL_ARMOR, ABILITY_DAMP, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_GREEN,
+        .noFlip = TRUE,
+        .speciesName = _("Kamemon"),
+        .cryId = CRY_KAMEMON,
+        .natDexNum = NATIONAL_DEX_KAMEMON,
+        .categoryName = _("Kappa"),
+        .height = 11,
+        .weight = 231,
+        .description = COMPOUND_STRING(
+            "Kamemon are a very reliable Digimon but\n"
+            "aren't popular picks with Tamers as they\n"
+            "don't like to talk much. The shell on\n"
+            "its back resembles a computer mouse."),
+        .pokemonScale = 289,
+        .pokemonOffset = 6,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Kamemon,
+        .frontPicSize = MON_COORDS_SIZE(48, 56),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 6 : 4,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 10),
+            ANIMCMD_FRAME(0, 10),
+            ANIMCMD_FRAME(1, 35),
+            ANIMCMD_FRAME(0, 5),
+        ),
+        .frontAnimId = ANIM_H_JUMPS_V_STRETCH,
+        .frontAnimDelay = 40,
+        .backPic = gMonBackPic_Kamemon,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(48, 48) : MON_COORDS_SIZE(56, 56),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 9 : 5,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
+        .palette = gMonPalette_Kamemon,
+        .shinyPalette = gMonShinyPalette_Kamemon,
+        .iconSprite = gMonIcon_Kamemon,
+        .iconPalIndex = 1,
+#if P_GENDER_DIFFERENCES
+        .frontPicFemale = gMonFrontPic_KamemonF,
+        .frontPicSizeFemale = MON_COORDS_SIZE(48, 56),
+        .backPicFemale = gMonBackPic_KamemonF,
+        .backPicSizeFemale = MON_COORDS_SIZE(56, 56),
+#endif //P_GENDER_DIFFERENCES
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(1, 9, SHADOW_SIZE_M)
+        FOOTPRINT(Kamemon)
+        OVERWORLD(
+            sPicTable_Kamemon,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Kamemon,
+            gShinyOverworldPalette_Kamemon
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_KamemonF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following
+        )
+        .levelUpLearnset = sKamemonLevelUpLearnset,
+        .teachableLearnset = sKamemonTeachableLearnset,
+    },
+#endif //P_GEN_2_CROSS_EVOS
+
+#if P_GEN_2_CROSS_EVOS
+    [SPECIES_IMPMON_X] =
+    {
+        .baseHP        = 53,
+        .baseAttack    = 56,
+        .baseDefense   = 51,
+        .baseSpeed     = 52,
+        .baseSpAttack  = 67,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_DARK),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 155,
+        .expYield = 100,
+        .evYield_SpAttack = 2,
+        .evYield_SpDefense = 1,
+        .itemRare = ITEM_ABSORB_BULB,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
+        .abilities = { ABILITY_NATURAL_CURE, ABILITY_LEVITATE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("Impmon"),
+        .cryId = CRY_IMPMON_X,
+        .natDexNum = NATIONAL_DEX_IMPMON_X,
+        .categoryName = _("X Antibody"),
+        .height = 9,
+        .weight = 180,
+        .description = COMPOUND_STRING(
+            "Although not much changes physically with\n"
+            "Impmon X, it is still a stronger opponent\n"
+            "due to have more confidence in itself. The\n"
+            "eyepatch is because of its chuuni persona."),
+        .pokemonScale = 472,
+        .pokemonOffset = 21,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Impmon_x,
+        .frontPicSize = MON_COORDS_SIZE(32, 40),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 14 : 12,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 15),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+            ANIMCMD_FRAME(1, 5),
+            ANIMCMD_FRAME(0, 5),
+        ),
+        .frontAnimId = P_GBA_STYLE_SPECIES_GFX ? ANIM_SWING_CONCAVE : ANIM_H_SLIDE_SLOW,
+        .backPic = gMonBackPic_Impmon_x,
+        .backPicSize = MON_COORDS_SIZE(48, 48),
+        .backPicYOffset = 11,
+        .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
+        .palette = gMonPalette_Impmon_x,
+        .shinyPalette = gMonShinyPalette_Impmon_x,
+        .iconSprite = gMonIcon_Impmon_x,
+        .iconPalIndex = 1,
+        .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
+        SHADOW(0, 0, SHADOW_SIZE_S)
+        FOOTPRINT(Impmon_x)
+        OVERWORLD(
+            sPicTable_Impmon_x,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Impmon_x,
+            gShinyOverworldPalette_Impmon_x
+        )
+        .levelUpLearnset = sImpmon_xLevelUpLearnset,
+        .teachableLearnset = sImpmon_xTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_ALLOMON_X}),
+    },
+#endif //P_GEN_2_CROSS_EVOS
+
+#if P_GEN_2_CROSS_EVOS
     [SPECIES_HACKMON] =
     {
         .baseHP        = 56,
