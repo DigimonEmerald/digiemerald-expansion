@@ -465,6 +465,7 @@ MudFrigimon - Carnivine
 Wizardmon - Finneon
 Woodmon - Lumineon
 Yanmamon - Snover
+Weedmon - Abomasnow
 
 Ultimate List
 

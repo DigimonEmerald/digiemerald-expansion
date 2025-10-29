@@ -2613,13 +2613,13 @@ $(POKEMONGFXDIR)/yanmamon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/yanmamon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/abomasnow/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/weedmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/abomasnow/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/weedmon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/abomasnow/mega/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/weedmon/mega/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/weavile/overworld.4bpp: %.4bpp: %.png

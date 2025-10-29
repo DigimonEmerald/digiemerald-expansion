@@ -5981,7 +5981,7 @@ static const union AnimCmd sAnim_Yanmamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Abomasnow_1[] =
+static const union AnimCmd sAnim_Weedmon_1[] =
 {
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_FRAME(1, 44),
@@ -5990,7 +5990,7 @@ static const union AnimCmd sAnim_Abomasnow_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(AbomasnowMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(WeedmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_YANMAMON
 
@@ -11542,9 +11542,9 @@ SINGLE_ANIMATION(Woodmon);
 #endif //P_FAMILY_WIZARDMON
 #if P_FAMILY_YANMAMON
 SINGLE_ANIMATION(Yanmamon);
-SINGLE_ANIMATION(Abomasnow);
+SINGLE_ANIMATION(Weedmon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(AbomasnowMega);
+SINGLE_ANIMATION(WeedmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_YANMAMON
 #if P_FAMILY_ROTOM

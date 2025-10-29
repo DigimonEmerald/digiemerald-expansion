@@ -15352,40 +15352,40 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
-    const u32 gMonFrontPic_Abomasnow[] = INCBIN_U32("graphics/pokemon/abomasnow/anim_front.4bpp.smol");
-    const u16 gMonPalette_Abomasnow[] = INCBIN_U16("graphics/pokemon/abomasnow/normal.gbapal");
-    const u32 gMonBackPic_Abomasnow[] = INCBIN_U32("graphics/pokemon/abomasnow/back.4bpp.smol");
-    const u16 gMonShinyPalette_Abomasnow[] = INCBIN_U16("graphics/pokemon/abomasnow/shiny.gbapal");
-    const u8 gMonIcon_Abomasnow[] = INCBIN_U8("graphics/pokemon/abomasnow/icon.4bpp");
+    const u32 gMonFrontPic_Weedmon[] = INCBIN_U32("graphics/pokemon/weedmon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Weedmon[] = INCBIN_U16("graphics/pokemon/weedmon/normal.gbapal");
+    const u32 gMonBackPic_Weedmon[] = INCBIN_U32("graphics/pokemon/weedmon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Weedmon[] = INCBIN_U16("graphics/pokemon/weedmon/shiny.gbapal");
+    const u8 gMonIcon_Weedmon[] = INCBIN_U8("graphics/pokemon/weedmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Abomasnow[] = INCBIN_U8("graphics/pokemon/abomasnow/footprint.1bpp");
+    const u8 gMonFootprint_Weedmon[] = INCBIN_U8("graphics/pokemon/weedmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Abomasnow[] = INCBIN_COMP("graphics/pokemon/abomasnow/overworld.4bpp");
+    const u32 gObjectEventPic_Weedmon[] = INCBIN_COMP("graphics/pokemon/weedmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Abomasnow[] = INCBIN_U16("graphics/pokemon/abomasnow/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Abomasnow[] = INCBIN_U16("graphics/pokemon/abomasnow/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Weedmon[] = INCBIN_U16("graphics/pokemon/weedmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Weedmon[] = INCBIN_U16("graphics/pokemon/weedmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_AbomasnowF[] = INCBIN_U32("graphics/pokemon/abomasnow/anim_frontf.4bpp.smol");
+    const u32 gMonFrontPic_WeedmonF[] = INCBIN_U32("graphics/pokemon/weedmon/anim_frontf.4bpp.smol");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_AbomasnowF[] = INCBIN_COMP("graphics/pokemon/abomasnow/overworldf.4bpp");
+    const u32 gObjectEventPic_WeedmonF[] = INCBIN_COMP("graphics/pokemon/weedmon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
 #if P_MEGA_EVOLUTIONS
-    const u32 gMonFrontPic_AbomasnowMega[] = INCBIN_U32("graphics/pokemon/abomasnow/mega/front.4bpp.smol");
-    const u16 gMonPalette_AbomasnowMega[] = INCBIN_U16("graphics/pokemon/abomasnow/mega/normal.gbapal");
-    const u32 gMonBackPic_AbomasnowMega[] = INCBIN_U32("graphics/pokemon/abomasnow/mega/back.4bpp.smol");
-    const u16 gMonShinyPalette_AbomasnowMega[] = INCBIN_U16("graphics/pokemon/abomasnow/mega/shiny.gbapal");
-    const u8 gMonIcon_AbomasnowMega[] = INCBIN_U8("graphics/pokemon/abomasnow/mega/icon.4bpp");
+    const u32 gMonFrontPic_WeedmonMega[] = INCBIN_U32("graphics/pokemon/weedmon/mega/front.4bpp.smol");
+    const u16 gMonPalette_WeedmonMega[] = INCBIN_U16("graphics/pokemon/weedmon/mega/normal.gbapal");
+    const u32 gMonBackPic_WeedmonMega[] = INCBIN_U32("graphics/pokemon/weedmon/mega/back.4bpp.smol");
+    const u16 gMonShinyPalette_WeedmonMega[] = INCBIN_U16("graphics/pokemon/weedmon/mega/shiny.gbapal");
+    const u8 gMonIcon_WeedmonMega[] = INCBIN_U8("graphics/pokemon/weedmon/mega/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS && OW_BATTLE_ONLY_FORMS
-    const u32 gObjectEventPic_AbomasnowMega[] = INCBIN_COMP("graphics/pokemon/abomasnow/mega/overworld.4bpp");
+    const u32 gObjectEventPic_WeedmonMega[] = INCBIN_COMP("graphics/pokemon/weedmon/mega/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_AbomasnowMega[] = INCBIN_U16("graphics/pokemon/abomasnow/mega/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_AbomasnowMega[] = INCBIN_U16("graphics/pokemon/abomasnow/mega/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_WeedmonMega[] = INCBIN_U16("graphics/pokemon/weedmon/mega/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_WeedmonMega[] = INCBIN_U16("graphics/pokemon/weedmon/mega/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS && OW_BATTLE_ONLY_FORMS
 #endif //P_MEGA_EVOLUTIONS

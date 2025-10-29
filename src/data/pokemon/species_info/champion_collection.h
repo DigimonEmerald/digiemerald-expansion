@@ -16801,46 +16801,47 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sYanmamonLevelUpLearnset,
         .teachableLearnset = sYanmamonTeachableLearnset,
         .eggMoveLearnset = sYanmamonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_ABOMASNOW}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_WEEDMON}),
     },
 
-    [SPECIES_ABOMASNOW] =
+    [SPECIES_WEEDMON] =
     {
-        .baseHP        = 90,
-        .baseAttack    = 92,
-        .baseDefense   = 75,
-        .baseSpeed     = 60,
-        .baseSpAttack  = 92,
-        .baseSpDefense = 85,
-        .types = MON_TYPES(TYPE_GRASS, TYPE_ICE),
-        .catchRate = 60,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 173 : 214,
-        .evYield_Attack = 1,
-        .evYield_SpAttack = 1,
+        .baseHP        = 55,
+        .baseAttack    = 65,
+        .baseDefense   = 95,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_PSYCHIC),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense = 2,
+        .evYield_SpDefense = 2,
         .itemRare = ITEM_NEVER_MELT_ICE,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
-        .abilities = { ABILITY_SNOW_WARNING, ABILITY_NONE, ABILITY_SOUNDPROOF },
-        .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Abomasnow"),
-        .cryId = CRY_ABOMASNOW,
-        .natDexNum = NATIONAL_DEX_ABOMASNOW,
-        .categoryName = _("Frost Tree"),
-        .height = 22,
-        .weight = 1355,
+        .abilities = { ABILITY_SNOW_WARNING, ABILITY_POISON_HEAL, ABILITY_NATURAL_CURE }, // HIGH HAZE
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Weedmon"),
+        .cryId = CRY_WEEDMON,
+        .natDexNum = NATIONAL_DEX_WEEDMON,
+        .categoryName = _("Weed"),
+        .height = 9,
+        .weight = 242,
         .description = COMPOUND_STRING(
-            "It lives a quiet life on mountains that\n"
-            "are perpetually covered in snow. It hides\n"
-            "itself by whipping up blizzards.\n"
-            "It is also known as “The Ice Monster.”"),
+            "It is said that Weedmon has the\n"
+            "vitality of a weed allowing it persist\n"
+            "regardless of who tries to cut it down.\n"
+            "It is highly regarded by adult tamers"),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 348,
         .trainerOffset = 6,
-        .frontPic = gMonFrontPic_Abomasnow,
+        .frontPic = gMonFrontPic_Weedmon,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
@@ -16849,45 +16850,45 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 20),
         ),
         .frontAnimId = ANIM_H_SHAKE,
-        .backPic = gMonBackPic_Abomasnow,
+        .backPic = gMonBackPic_Weedmon,
         .backPicSize = MON_COORDS_SIZE(64, 56),
         .backPicYOffset = 4,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_Abomasnow,
-        .shinyPalette = gMonShinyPalette_Abomasnow,
-        .iconSprite = gMonIcon_Abomasnow,
-        .iconPalIndex = 1,
+        .palette = gMonPalette_Weedmon,
+        .shinyPalette = gMonShinyPalette_Weedmon,
+        .iconSprite = gMonIcon_Weedmon,
+        .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_AbomasnowF,
+        .frontPicFemale = gMonFrontPic_WeedmonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 11, SHADOW_SIZE_L)
-        FOOTPRINT(Abomasnow)
+        FOOTPRINT(Weedmon)
         OVERWORLD(
-            sPicTable_Abomasnow,
+            sPicTable_Weedmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Abomasnow,
-            gShinyOverworldPalette_Abomasnow
+            gOverworldPalette_Weedmon,
+            gShinyOverworldPalette_Weedmon
         )
         OVERWORLD_FEMALE(
-            sPicTable_AbomasnowF,
+            sPicTable_WeedmonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sAbomasnowLevelUpLearnset,
-        .teachableLearnset = sAbomasnowTeachableLearnset,
-        .formSpeciesIdTable = sAbomasnowFormSpeciesIdTable,
-        .formChangeTable = sAbomasnowFormChangeTable,
+        .levelUpLearnset = sWeedmonLevelUpLearnset,
+        .teachableLearnset = sWeedmonTeachableLearnset,
+        .formSpeciesIdTable = sWeedmonFormSpeciesIdTable,
+        .formChangeTable = sWeedmonFormChangeTable,
     },
 
 #if P_MEGA_EVOLUTIONS
-    [SPECIES_ABOMASNOW_MEGA] =
+    [SPECIES_WEEDMON_MEGA] =
     {
         .baseHP        = 90,
         .baseAttack    = 132,
@@ -16908,14 +16909,14 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_GRASS),
         .abilities = { ABILITY_SNOW_WARNING, ABILITY_SNOW_WARNING, ABILITY_SNOW_WARNING },
         .bodyColor = BODY_COLOR_WHITE,
-        .speciesName = _("Abomasnow"),
-        .cryId = CRY_ABOMASNOW_MEGA,
-        .natDexNum = NATIONAL_DEX_ABOMASNOW,
+        .speciesName = _("Weedmon"),
+        .cryId = CRY_WEEDMON_MEGA,
+        .natDexNum = NATIONAL_DEX_WEEDMON,
         .categoryName = _("Frost Tree"),
         .height = 27,
         .weight = 1850,
         .description = COMPOUND_STRING(
-            "The sprouts on Abomasnow's back grow into\n"
+            "The sprouts on Weedmon's back grow into\n"
             "great shafts of ice when it Mega Evolves.\n"
             "Dislikes associating with others and\n"
             "chooses to live quietly deep in mountains."),
@@ -16923,38 +16924,38 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .pokemonOffset = 0,
         .trainerScale = 348,
         .trainerOffset = 6,
-        .frontPic = gMonFrontPic_AbomasnowMega,
+        .frontPic = gMonFrontPic_WeedmonMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 1,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_AbomasnowMega,
+        .backPic = gMonBackPic_WeedmonMega,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_SHAKE_LOW,
-        .palette = gMonPalette_AbomasnowMega,
-        .shinyPalette = gMonShinyPalette_AbomasnowMega,
-        .iconSprite = gMonIcon_AbomasnowMega,
+        .palette = gMonPalette_WeedmonMega,
+        .shinyPalette = gMonShinyPalette_WeedmonMega,
+        .iconSprite = gMonIcon_WeedmonMega,
         .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 12, SHADOW_SIZE_XL_BATTLE_ONLY)
-        FOOTPRINT(Abomasnow)
+        FOOTPRINT(Weedmon)
     #if OW_BATTLE_ONLY_FORMS
         OVERWORLD(
-            sPicTable_AbomasnowMega,
+            sPicTable_WeedmonMega,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_AbomasnowMega,
-            gShinyOverworldPalette_AbomasnowMega
+            gOverworldPalette_WeedmonMega,
+            gShinyOverworldPalette_WeedmonMega
         )
     #endif //OW_BATTLE_ONLY_FORMS
         .isMegaEvolution = TRUE,
-        .levelUpLearnset = sAbomasnowLevelUpLearnset,
-        .teachableLearnset = sAbomasnowTeachableLearnset,
-        .formSpeciesIdTable = sAbomasnowFormSpeciesIdTable,
-        .formChangeTable = sAbomasnowFormChangeTable,
+        .levelUpLearnset = sWeedmonLevelUpLearnset,
+        .teachableLearnset = sWeedmonTeachableLearnset,
+        .formSpeciesIdTable = sWeedmonFormSpeciesIdTable,
+        .formChangeTable = sWeedmonFormChangeTable,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_YANMAMON

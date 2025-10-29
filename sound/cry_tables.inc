@@ -1210,9 +1210,9 @@ gCryTable::
 .endif @ P_FAMILY_WIZARDMON
 .if P_FAMILY_YANMAMON == TRUE
 	cry Cry_Yanmamon
-	cry Cry_Abomasnow
+	cry Cry_Weedmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_AbomasnowMega
+	cry Cry_WeedmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_YANMAMON
 .if P_FAMILY_ROTOM == TRUE
@@ -3637,9 +3637,9 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_WIZARDMON
 .if P_FAMILY_YANMAMON == TRUE
 	cry_reverse Cry_Yanmamon
-	cry_reverse Cry_Abomasnow
+	cry_reverse Cry_Weedmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_AbomasnowMega
+	cry_reverse Cry_WeedmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_YANMAMON
 .if P_FAMILY_ROTOM == TRUE

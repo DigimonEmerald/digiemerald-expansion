@@ -1065,10 +1065,10 @@ static const u16 sSaberdramonFormSpeciesIdTable[] = {
 #endif //P_FAMILY_REDVEGIEMON
 
 #if P_FAMILY_YANMAMON
-static const u16 sAbomasnowFormSpeciesIdTable[] = {
-    SPECIES_ABOMASNOW,
+static const u16 sWeedmonFormSpeciesIdTable[] = {
+    SPECIES_WEEDMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_ABOMASNOW_MEGA,
+    SPECIES_WEEDMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };

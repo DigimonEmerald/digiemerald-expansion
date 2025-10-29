@@ -474,7 +474,7 @@
 #define SPECIES_WOODMON                                457
 #define SPECIES_MANTYKE                                 458
 #define SPECIES_YANMAMON                                  459
-#define SPECIES_ABOMASNOW                               460
+#define SPECIES_WEEDMON                               460
 #define SPECIES_WEAVILE                                 461
 #define SPECIES_MAGNEZONE                               462
 #define SPECIES_LICKILICKY                              463
@@ -1011,7 +1011,7 @@
 #define SPECIES_ICEDEVIMON_MEGA                            946
 #define SPECIES_PLATINUMSUKAMON_MEGA                           947
 #define SPECIES_SABERDRAMON_MEGA                            948
-#define SPECIES_ABOMASNOW_MEGA                          949
+#define SPECIES_WEEDMON_MEGA                          949
 #define SPECIES_GALLADE_MEGA                            950
 #define SPECIES_OKUWAMON                             951
 #define SPECIES_DIANCIE_MEGA                            952

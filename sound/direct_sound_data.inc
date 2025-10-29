@@ -3220,13 +3220,13 @@ Cry_Yanmamon::
 	.incbin "sound/direct_sound_samples/cries/yanmamon.bin"
 
 	.align 2
-Cry_Abomasnow::
-	.incbin "sound/direct_sound_samples/cries/abomasnow.bin"
+Cry_Weedmon::
+	.incbin "sound/direct_sound_samples/cries/weedmon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_AbomasnowMega::
-	.incbin "sound/direct_sound_samples/cries/abomasnow_mega.bin"
+Cry_WeedmonMega::
+	.incbin "sound/direct_sound_samples/cries/weedmon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_YANMAMON
 
