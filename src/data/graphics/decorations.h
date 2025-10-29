@@ -115,8 +115,8 @@ const u16 gDecorIconPalette_CurimonDoll[] = INCBIN_U16("graphics/decorations/cur
 const u32 gDecorIcon_ChamblemonDoll[] = INCBIN_U32("graphics/decorations/chamblemon_doll.4bpp.smol");
 const u16 gDecorIconPalette_ChamblemonDoll[] = INCBIN_U16("graphics/decorations/chamblemon_doll.gbapal");
 
-const u32 gDecorIcon_GargoylmonDoll[] = INCBIN_U32("graphics/decorations/gargoylmon_doll.4bpp.smol");
-const u16 gDecorIconPalette_GargoylmonDoll[] = INCBIN_U16("graphics/decorations/gargoylmon_doll.gbapal");
+const u32 gDecorIcon_GargoylemonDoll[] = INCBIN_U32("graphics/decorations/gargoylemon_doll.4bpp.smol");
+const u16 gDecorIconPalette_GargoylemonDoll[] = INCBIN_U16("graphics/decorations/gargoylemon_doll.gbapal");
 
 const u32 gDecorIcon_GargomonDoll[] = INCBIN_U32("graphics/decorations/gargomon_doll.4bpp.smol");
 const u16 gDecorIconPalette_GargomonDoll[] = INCBIN_U16("graphics/decorations/gargomon_doll.gbapal");

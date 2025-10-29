@@ -48,25 +48,25 @@
 // IDs for grid selections when betting
 #define SELECTION_NONE      0
 #define COL_EXVEEMON          1
-#define COL_BIOSTEGMON         2
+#define COL_BIOSTEGOMON         2
 #define COL_BIRDRAMON          3
-#define COL_BETGAMAMON        4
-#define ROW_ORANGE          (COL_BETGAMAMON + 1)
+#define COL_BETELGAMMAMON        4
+#define ROW_ORANGE          (COL_BETELGAMMAMON + 1)
 #define SQU_ORANGE_EXVEEMON   (ROW_ORANGE + COL_EXVEEMON)
-#define SQU_ORANGE_BIOSTEGMON  (ROW_ORANGE + COL_BIOSTEGMON)
+#define SQU_ORANGE_BIOSTEGOMON  (ROW_ORANGE + COL_BIOSTEGOMON)
 #define SQU_ORANGE_BIRDRAMON   (ROW_ORANGE + COL_BIRDRAMON)
-#define SQU_ORANGE_BETGAMAMON (ROW_ORANGE + COL_BETGAMAMON)
-#define ROW_GREEN           (SQU_ORANGE_BETGAMAMON + 1)
+#define SQU_ORANGE_BETELGAMMAMON (ROW_ORANGE + COL_BETELGAMMAMON)
+#define ROW_GREEN           (SQU_ORANGE_BETELGAMMAMON + 1)
 #define SQU_GREEN_EXVEEMON    (ROW_GREEN + COL_EXVEEMON)
-#define SQU_GREEN_BIOSTEGMON   (ROW_GREEN + COL_BIOSTEGMON)
+#define SQU_GREEN_BIOSTEGOMON   (ROW_GREEN + COL_BIOSTEGOMON)
 #define SQU_GREEN_BIRDRAMON    (ROW_GREEN + COL_BIRDRAMON)
-#define SQU_GREEN_BETGAMAMON  (ROW_GREEN + COL_BETGAMAMON)
-#define ROW_PURPLE          (SQU_GREEN_BETGAMAMON + 1)
+#define SQU_GREEN_BETELGAMMAMON  (ROW_GREEN + COL_BETELGAMMAMON)
+#define ROW_PURPLE          (SQU_GREEN_BETELGAMMAMON + 1)
 #define SQU_PURPLE_EXVEEMON   (ROW_PURPLE + COL_EXVEEMON)
-#define SQU_PURPLE_BIOSTEGMON  (ROW_PURPLE + COL_BIOSTEGMON)
+#define SQU_PURPLE_BIOSTEGOMON  (ROW_PURPLE + COL_BIOSTEGOMON)
 #define SQU_PURPLE_BIRDRAMON   (ROW_PURPLE + COL_BIRDRAMON)
-#define SQU_PURPLE_BETGAMAMON (ROW_PURPLE + COL_BETGAMAMON)
-#define NUM_GRID_SELECTIONS SQU_PURPLE_BETGAMAMON
+#define SQU_PURPLE_BETELGAMMAMON (ROW_PURPLE + COL_BETELGAMMAMON)
+#define NUM_GRID_SELECTIONS SQU_PURPLE_BETELGAMMAMON
 
 // Get the id of the col/row from the selection ID
 // e.g. GET_ROW(SQU_PURPLE_BIRDRAMON) is ROW_PURPLE
@@ -80,38 +80,38 @@
 
 // Flags for the above selections, used to set which spaces have been hit or bet on
 #define F_EXVEEMON_COL      (1 << COL_EXVEEMON)
-#define F_BIOSTEGMON_COL     (1 << COL_BIOSTEGMON)
+#define F_BIOSTEGOMON_COL     (1 << COL_BIOSTEGOMON)
 #define F_BIRDRAMON_COL      (1 << COL_BIRDRAMON)
-#define F_BETGAMAMON_COL    (1 << COL_BETGAMAMON)
+#define F_BETELGAMMAMON_COL    (1 << COL_BETELGAMMAMON)
 #define F_ORANGE_ROW      (1 << ROW_ORANGE)
 #define F_ORANGE_EXVEEMON   (1 << SQU_ORANGE_EXVEEMON)
-#define F_ORANGE_BIOSTEGMON  (1 << SQU_ORANGE_BIOSTEGMON)
+#define F_ORANGE_BIOSTEGOMON  (1 << SQU_ORANGE_BIOSTEGOMON)
 #define F_ORANGE_BIRDRAMON   (1 << SQU_ORANGE_BIRDRAMON)
-#define F_ORANGE_BETGAMAMON (1 << SQU_ORANGE_BETGAMAMON)
+#define F_ORANGE_BETELGAMMAMON (1 << SQU_ORANGE_BETELGAMMAMON)
 #define F_GREEN_ROW       (1 << ROW_GREEN)
 #define F_GREEN_EXVEEMON    (1 << SQU_GREEN_EXVEEMON)
-#define F_GREEN_BIOSTEGMON   (1 << SQU_GREEN_BIOSTEGMON)
+#define F_GREEN_BIOSTEGOMON   (1 << SQU_GREEN_BIOSTEGOMON)
 #define F_GREEN_BIRDRAMON    (1 << SQU_GREEN_BIRDRAMON)
-#define F_GREEN_BETGAMAMON  (1 << SQU_GREEN_BETGAMAMON)
+#define F_GREEN_BETELGAMMAMON  (1 << SQU_GREEN_BETELGAMMAMON)
 #define F_PURPLE_ROW      (1 << ROW_PURPLE)
 #define F_PURPLE_EXVEEMON   (1 << SQU_PURPLE_EXVEEMON)
-#define F_PURPLE_BIOSTEGMON  (1 << SQU_PURPLE_BIOSTEGMON)
+#define F_PURPLE_BIOSTEGOMON  (1 << SQU_PURPLE_BIOSTEGOMON)
 #define F_PURPLE_BIRDRAMON   (1 << SQU_PURPLE_BIRDRAMON)
-#define F_PURPLE_BETGAMAMON (1 << SQU_PURPLE_BETGAMAMON)
+#define F_PURPLE_BETELGAMMAMON (1 << SQU_PURPLE_BETELGAMMAMON)
 
 // Flags for flashing selections on the roulette wheel
 #define F_FLASH_COLOR_O_EXVEEMON   (1 << 0)
-#define F_FLASH_COLOR_G_BIOSTEGMON  (1 << 1)
+#define F_FLASH_COLOR_G_BIOSTEGOMON  (1 << 1)
 #define F_FLASH_COLOR_P_BIRDRAMON   (1 << 2)
-#define F_FLASH_COLOR_O_BETGAMAMON (1 << 3)
+#define F_FLASH_COLOR_O_BETELGAMMAMON (1 << 3)
 #define F_FLASH_COLOR_G_EXVEEMON   (1 << 4)
-#define F_FLASH_COLOR_P_BIOSTEGMON  (1 << 5)
+#define F_FLASH_COLOR_P_BIOSTEGOMON  (1 << 5)
 #define F_FLASH_COLOR_O_BIRDRAMON   (1 << 6)
-#define F_FLASH_COLOR_G_BETGAMAMON (1 << 7)
+#define F_FLASH_COLOR_G_BETELGAMMAMON (1 << 7)
 #define F_FLASH_COLOR_P_EXVEEMON   (1 << 8)
-#define F_FLASH_COLOR_O_BIOSTEGMON  (1 << 9)
+#define F_FLASH_COLOR_O_BIOSTEGOMON  (1 << 9)
 #define F_FLASH_COLOR_G_BIRDRAMON   (1 << 10)
-#define F_FLASH_COLOR_P_BETGAMAMON (1 << 11)
+#define F_FLASH_COLOR_P_BETELGAMMAMON (1 << 11)
 #define F_FLASH_OUTER_EDGES      (1 << 12) // when the player wins
 #define FLASH_ICON               (NUM_ROULETTE_SLOTS + 1)
 #define FLASH_ICON_2             (FLASH_ICON + 1)
@@ -126,13 +126,13 @@
 #define PALTAG_BALL_COUNTER 3
 #define PALTAG_CURSOR 4
 #define PALTAG_INTERFACE 5
-#define PALTAG_ARESDRAMON 6
+#define PALTAG_ARRESTERDRAMON 6
 #define PALTAG_ALLOMON_X   7
 #define PALTAG_GRID_ICONS 8
 #define PALTAG_EXVEEMON    9
-#define PALTAG_BIOSTEGMON   10
+#define PALTAG_BIOSTEGOMON   10
 #define PALTAG_BIRDRAMON    11
-#define PALTAG_BETGAMAMON  12
+#define PALTAG_BETELGAMMAMON  12
 
 #define GFXTAG_WHEEL_ICONS 0
 #define GFXTAG_HEADERS 4
@@ -144,16 +144,16 @@
 #define GFXTAG_BALL_COUNTER 10
 #define GFXTAG_CURSOR 11
 #define GFXTAG_BALL 12
-#define GFXTAG_ARESDRAMON_ALLOMON_X 13
+#define GFXTAG_ARRESTERDRAMON_ALLOMON_X 13
 #define GFXTAG_SHADOW 14
 
 // 2 different Roulette tables with 2 different rates (normal vs service day special)
 // & 1 gets which table, >> 7 gets if ROULETTE_SPECIAL_RATE is set
 #define GET_MIN_BET_ID(var) (((var) & 1) + (((var) >> 7) * 2))
 
-// Having Aresdramon or Allomon_x in the party can make rolls more consistent in length
+// Having Arresterdramon or Allomon_x in the party can make rolls more consistent in length
 // It also increases the likelihood that, if they appear to unstick a ball, they'll move it to a slot the player bet on
-#define HAS_ARESDRAMON  (1 << 0)
+#define HAS_ARRESTERDRAMON  (1 << 0)
 #define HAS_ALLOMON_X    (1 << 1)
 
 #define NO_DELAY 0xFFFF
@@ -182,17 +182,17 @@ enum {
     SPR_WHEEL_BALL_6,
     SPR_WHEEL_CENTER,
     SPR_WHEEL_ICON_ORANGE_EXVEEMON,
-    SPR_WHEEL_ICON_GREEN_BIOSTEGMON,
+    SPR_WHEEL_ICON_GREEN_BIOSTEGOMON,
     SPR_WHEEL_ICON_PURPLE_BIRDRAMON,
-    SPR_WHEEL_ICON_ORANGE_BETGAMAMON,
+    SPR_WHEEL_ICON_ORANGE_BETELGAMMAMON,
     SPR_WHEEL_ICON_GREEN_EXVEEMON,
-    SPR_WHEEL_ICON_PURPLE_BIOSTEGMON,
+    SPR_WHEEL_ICON_PURPLE_BIOSTEGOMON,
     SPR_WHEEL_ICON_ORANGE_BIRDRAMON,
-    SPR_WHEEL_ICON_GREEN_BETGAMAMON,
+    SPR_WHEEL_ICON_GREEN_BETELGAMMAMON,
     SPR_WHEEL_ICON_PURPLE_EXVEEMON,
-    SPR_WHEEL_ICON_ORANGE_BIOSTEGMON,
+    SPR_WHEEL_ICON_ORANGE_BIOSTEGOMON,
     SPR_WHEEL_ICON_GREEN_BIRDRAMON,
-    SPR_WHEEL_ICON_PURPLE_BETGAMAMON,
+    SPR_WHEEL_ICON_PURPLE_BETELGAMMAMON,
     SPR_19, // Unused
     SPR_CREDIT,
     SPR_CREDIT_DIG_1,
@@ -204,17 +204,17 @@ enum {
     SPR_BALL_COUNTER_2,
     SPR_BALL_COUNTER_3,
     SPR_GRID_ICON_ORANGE_EXVEEMON,
-    SPR_GRID_ICON_GREEN_BIOSTEGMON,
+    SPR_GRID_ICON_GREEN_BIOSTEGOMON,
     SPR_GRID_ICON_PURPLE_BIRDRAMON,
-    SPR_GRID_ICON_ORANGE_BETGAMAMON,
+    SPR_GRID_ICON_ORANGE_BETELGAMMAMON,
     SPR_GRID_ICON_GREEN_EXVEEMON,
-    SPR_GRID_ICON_PURPLE_BIOSTEGMON,
+    SPR_GRID_ICON_PURPLE_BIOSTEGOMON,
     SPR_GRID_ICON_ORANGE_BIRDRAMON,
-    SPR_GRID_ICON_GREEN_BETGAMAMON,
+    SPR_GRID_ICON_GREEN_BETELGAMMAMON,
     SPR_GRID_ICON_PURPLE_EXVEEMON,
-    SPR_GRID_ICON_ORANGE_BIOSTEGMON,
+    SPR_GRID_ICON_ORANGE_BIOSTEGOMON,
     SPR_GRID_ICON_GREEN_BIRDRAMON,
-    SPR_GRID_ICON_PURPLE_BETGAMAMON,
+    SPR_GRID_ICON_PURPLE_BETELGAMMAMON,
     SPR_POKE_HEADER_1,
     SPR_POKE_HEADER_2,
     SPR_POKE_HEADER_3,
@@ -229,7 +229,7 @@ enum {
     SPR_GRID_BALL_4,
     SPR_GRID_BALL_5,
     SPR_GRID_BALL_6,
-    SPR_CLEAR_MON, // Aresdramon/Allomon_x
+    SPR_CLEAR_MON, // Arresterdramon/Allomon_x
     SPR_CLEAR_MON_SHADOW_1,
     SPR_CLEAR_MON_SHADOW_2,
     SPR_58, // Here below unused
@@ -250,7 +250,7 @@ enum {
 #define SPR_COLOR_HEADERS SPR_COLOR_HEADER_1
 #define SPR_GRID_BALLS SPR_GRID_BALL_1
 
-struct Aresdramon
+struct Arresterdramon
 {
     u16 startAngle;
     u16 dropAngle;
@@ -271,7 +271,7 @@ struct RouletteTable
     u8 randDistanceLow;
     u8 wheelSpeed;
     u8 wheelDelay;
-    struct Aresdramon aresdramon;
+    struct Arresterdramon arresterdramon;
     struct Allomon_x allomon_x;
     u16 ballSpeed;
     u16 baseTravelDist;
@@ -304,7 +304,7 @@ struct RouletteSlot
 static EWRAM_DATA struct Roulette
 {
     u8 unk0; // Never read
-    u8 aresdramonShadowTimer;
+    u8 arresterdramonShadowTimer;
     u8 partySpeciesFlags;
     bool8 useAllomon_x:5;
     bool8 ballStuck:1;
@@ -329,7 +329,7 @@ static EWRAM_DATA struct Roulette
     s16 selectionRectDrawState;
     s16 updateGridHighlight;
     struct OamMatrix wheelRotation;
-    u16 aresdramonShadowAlpha;
+    u16 arresterdramonShadowAlpha;
     struct Sprite *ball;
     u8 spriteIds[MAX_SPRITES];
     u8 curBallSpriteId;
@@ -410,10 +410,10 @@ static void SpriteCB_WheelCenter(struct Sprite *);
 static void CreateWheelBallSprites(void);
 static void HideWheelBalls(void);
 static void SpriteCB_RollBall_Start(struct Sprite *);
-static void CreateAresdramonSprite(struct Sprite *);
+static void CreateArresterdramonSprite(struct Sprite *);
 static void CreateAllomon_xSprite(struct Sprite *);
 static void SetBallStuck(struct Sprite *);
-static void SpriteCB_Aresdramon(struct Sprite *);
+static void SpriteCB_Arresterdramon(struct Sprite *);
 static void SpriteCB_Allomon_x(struct Sprite *);
 
 static const u16 sWheel_Pal[] = INCBIN_U16("graphics/roulette/wheel.gbapal"); // also palette for grid
@@ -496,7 +496,7 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .inSelectionFlags = F_EXVEEMON_COL | F_ORANGE_EXVEEMON | F_GREEN_EXVEEMON | F_PURPLE_EXVEEMON,
         .flashFlags = F_FLASH_COLUMN,
     },
-    [COL_BIOSTEGMON] = {
+    [COL_BIOSTEGOMON] = {
         .spriteIdOffset = 13,
         .baseMultiplier = NUM_BOARD_POKES,
         .column = 2,
@@ -505,8 +505,8 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .y = 7,
         .var05 = 0,
         .tilemapOffset = 0,
-        .flag = F_BIOSTEGMON_COL,
-        .inSelectionFlags = F_BIOSTEGMON_COL | F_ORANGE_BIOSTEGMON | F_GREEN_BIOSTEGMON | F_PURPLE_BIOSTEGMON,
+        .flag = F_BIOSTEGOMON_COL,
+        .inSelectionFlags = F_BIOSTEGOMON_COL | F_ORANGE_BIOSTEGOMON | F_GREEN_BIOSTEGOMON | F_PURPLE_BIOSTEGOMON,
         .flashFlags = F_FLASH_COLUMN,
     },
     [COL_BIRDRAMON] = {
@@ -522,7 +522,7 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .inSelectionFlags = F_BIRDRAMON_COL | F_ORANGE_BIRDRAMON | F_GREEN_BIRDRAMON | F_PURPLE_BIRDRAMON,
         .flashFlags = F_FLASH_COLUMN,
     },
-    [COL_BETGAMAMON] = {
+    [COL_BETELGAMMAMON] = {
         .spriteIdOffset = 15,
         .baseMultiplier = NUM_BOARD_POKES,
         .column = 4,
@@ -531,8 +531,8 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .y = 7,
         .var05 = 0,
         .tilemapOffset = 0,
-        .flag = F_BETGAMAMON_COL,
-        .inSelectionFlags = F_BETGAMAMON_COL | F_ORANGE_BETGAMAMON | F_GREEN_BETGAMAMON | F_PURPLE_BETGAMAMON,
+        .flag = F_BETELGAMMAMON_COL,
+        .inSelectionFlags = F_BETELGAMMAMON_COL | F_ORANGE_BETELGAMMAMON | F_GREEN_BETELGAMMAMON | F_PURPLE_BETELGAMMAMON,
         .flashFlags = F_FLASH_COLUMN,
     },
     [ROW_ORANGE] = {
@@ -545,8 +545,8 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .var05 = 0,
         .tilemapOffset = 12,
         .flag = F_ORANGE_ROW,
-        .inSelectionFlags = F_ORANGE_ROW | F_ORANGE_EXVEEMON | F_ORANGE_BIOSTEGMON | F_ORANGE_BIRDRAMON | F_ORANGE_BETGAMAMON,
-        .flashFlags = F_FLASH_COLOR_O_EXVEEMON | F_FLASH_COLOR_O_BIOSTEGMON | F_FLASH_COLOR_O_BIRDRAMON | F_FLASH_COLOR_O_BETGAMAMON,
+        .inSelectionFlags = F_ORANGE_ROW | F_ORANGE_EXVEEMON | F_ORANGE_BIOSTEGOMON | F_ORANGE_BIRDRAMON | F_ORANGE_BETELGAMMAMON,
+        .flashFlags = F_FLASH_COLOR_O_EXVEEMON | F_FLASH_COLOR_O_BIOSTEGOMON | F_FLASH_COLOR_O_BIRDRAMON | F_FLASH_COLOR_O_BETELGAMMAMON,
     },
     [SQU_ORANGE_EXVEEMON] = {
         .spriteIdOffset = 0,
@@ -561,7 +561,7 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .inSelectionFlags = F_ORANGE_EXVEEMON,
         .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_O_EXVEEMON,
     },
-    [SQU_ORANGE_BIOSTEGMON] = {
+    [SQU_ORANGE_BIOSTEGOMON] = {
         .spriteIdOffset = 9,
         .baseMultiplier = NUM_ROULETTE_SLOTS,
         .column = 2,
@@ -570,9 +570,9 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .y = 10,
         .var05 = 3,
         .tilemapOffset = 3,
-        .flag = F_ORANGE_BIOSTEGMON,
-        .inSelectionFlags = F_ORANGE_BIOSTEGMON,
-        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_O_BIOSTEGMON,
+        .flag = F_ORANGE_BIOSTEGOMON,
+        .inSelectionFlags = F_ORANGE_BIOSTEGOMON,
+        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_O_BIOSTEGOMON,
     },
     [SQU_ORANGE_BIRDRAMON] = {
         .spriteIdOffset = 6,
@@ -587,7 +587,7 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .inSelectionFlags = F_ORANGE_BIRDRAMON,
         .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_O_BIRDRAMON,
     },
-    [SQU_ORANGE_BETGAMAMON] = {
+    [SQU_ORANGE_BETELGAMMAMON] = {
         .spriteIdOffset = 3,
         .baseMultiplier = NUM_ROULETTE_SLOTS,
         .column = 4,
@@ -596,9 +596,9 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .y = 10,
         .var05 = 3,
         .tilemapOffset = 3,
-        .flag = F_ORANGE_BETGAMAMON,
-        .inSelectionFlags = F_ORANGE_BETGAMAMON,
-        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_O_BETGAMAMON,
+        .flag = F_ORANGE_BETELGAMMAMON,
+        .inSelectionFlags = F_ORANGE_BETELGAMMAMON,
+        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_O_BETELGAMMAMON,
     },
     [ROW_GREEN] = {
         .spriteIdOffset = 17,
@@ -610,8 +610,8 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .var05 = 3,
         .tilemapOffset = 15,
         .flag = F_GREEN_ROW,
-        .inSelectionFlags = F_GREEN_ROW | F_GREEN_EXVEEMON | F_GREEN_BIOSTEGMON | F_GREEN_BIRDRAMON | F_GREEN_BETGAMAMON,
-        .flashFlags = F_FLASH_COLOR_G_EXVEEMON | F_FLASH_COLOR_G_BIOSTEGMON | F_FLASH_COLOR_G_BIRDRAMON | F_FLASH_COLOR_G_BETGAMAMON,
+        .inSelectionFlags = F_GREEN_ROW | F_GREEN_EXVEEMON | F_GREEN_BIOSTEGOMON | F_GREEN_BIRDRAMON | F_GREEN_BETELGAMMAMON,
+        .flashFlags = F_FLASH_COLOR_G_EXVEEMON | F_FLASH_COLOR_G_BIOSTEGOMON | F_FLASH_COLOR_G_BIRDRAMON | F_FLASH_COLOR_G_BETELGAMMAMON,
     },
     [SQU_GREEN_EXVEEMON] = {
         .spriteIdOffset = 4,
@@ -626,7 +626,7 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .inSelectionFlags = F_GREEN_EXVEEMON,
         .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_G_EXVEEMON,
     },
-    [SQU_GREEN_BIOSTEGMON] = {
+    [SQU_GREEN_BIOSTEGOMON] = {
         .spriteIdOffset = 1,
         .baseMultiplier = NUM_ROULETTE_SLOTS,
         .column = 2,
@@ -635,9 +635,9 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .y = 13,
         .var05 = 6,
         .tilemapOffset = 6,
-        .flag = F_GREEN_BIOSTEGMON,
-        .inSelectionFlags = F_GREEN_BIOSTEGMON,
-        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_G_BIOSTEGMON,
+        .flag = F_GREEN_BIOSTEGOMON,
+        .inSelectionFlags = F_GREEN_BIOSTEGOMON,
+        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_G_BIOSTEGOMON,
     },
     [SQU_GREEN_BIRDRAMON] = {
         .spriteIdOffset = 10,
@@ -652,7 +652,7 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .inSelectionFlags = F_GREEN_BIRDRAMON,
         .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_G_BIRDRAMON,
     },
-    [SQU_GREEN_BETGAMAMON] = {
+    [SQU_GREEN_BETELGAMMAMON] = {
         .spriteIdOffset = 7,
         .baseMultiplier = NUM_ROULETTE_SLOTS,
         .column = 4,
@@ -661,9 +661,9 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .y = 13,
         .var05 = 6,
         .tilemapOffset = 6,
-        .flag = F_GREEN_BETGAMAMON,
-        .inSelectionFlags = F_GREEN_BETGAMAMON,
-        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_G_BETGAMAMON,
+        .flag = F_GREEN_BETELGAMMAMON,
+        .inSelectionFlags = F_GREEN_BETELGAMMAMON,
+        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_G_BETELGAMMAMON,
     },
     [ROW_PURPLE] = {
         .spriteIdOffset = 18,
@@ -675,8 +675,8 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .var05 = 6,
         .tilemapOffset = 18,
         .flag = F_PURPLE_ROW,
-        .inSelectionFlags = F_PURPLE_ROW | F_PURPLE_EXVEEMON | F_PURPLE_BIOSTEGMON | F_PURPLE_BIRDRAMON | F_PURPLE_BETGAMAMON,
-        .flashFlags = F_FLASH_COLOR_P_EXVEEMON | F_FLASH_COLOR_P_BIOSTEGMON | F_FLASH_COLOR_P_BIRDRAMON | F_FLASH_COLOR_P_BETGAMAMON,
+        .inSelectionFlags = F_PURPLE_ROW | F_PURPLE_EXVEEMON | F_PURPLE_BIOSTEGOMON | F_PURPLE_BIRDRAMON | F_PURPLE_BETELGAMMAMON,
+        .flashFlags = F_FLASH_COLOR_P_EXVEEMON | F_FLASH_COLOR_P_BIOSTEGOMON | F_FLASH_COLOR_P_BIRDRAMON | F_FLASH_COLOR_P_BETELGAMMAMON,
     },
     [SQU_PURPLE_EXVEEMON] = {
         .spriteIdOffset = 8,
@@ -691,7 +691,7 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .inSelectionFlags = F_PURPLE_EXVEEMON,
         .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_P_EXVEEMON,
     },
-    [SQU_PURPLE_BIOSTEGMON] = {
+    [SQU_PURPLE_BIOSTEGOMON] = {
         .spriteIdOffset = 5,
         .baseMultiplier = NUM_ROULETTE_SLOTS,
         .column = 2,
@@ -700,9 +700,9 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .y = 16,
         .var05 = 9,
         .tilemapOffset = 9,
-        .flag = F_PURPLE_BIOSTEGMON,
-        .inSelectionFlags = F_PURPLE_BIOSTEGMON,
-        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_P_BIOSTEGMON,
+        .flag = F_PURPLE_BIOSTEGOMON,
+        .inSelectionFlags = F_PURPLE_BIOSTEGOMON,
+        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_P_BIOSTEGOMON,
     },
     [SQU_PURPLE_BIRDRAMON] = {
         .spriteIdOffset = 2,
@@ -717,7 +717,7 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .inSelectionFlags = F_PURPLE_BIRDRAMON,
         .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_P_BIRDRAMON,
     },
-    [SQU_PURPLE_BETGAMAMON] = {
+    [SQU_PURPLE_BETELGAMMAMON] = {
         .spriteIdOffset = 11,
         .baseMultiplier = NUM_ROULETTE_SLOTS,
         .column = 4,
@@ -726,9 +726,9 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .y = 16,
         .var05 = 9,
         .tilemapOffset = 9,
-        .flag = F_PURPLE_BETGAMAMON,
-        .inSelectionFlags = F_PURPLE_BETGAMAMON,
-        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_P_BETGAMAMON,
+        .flag = F_PURPLE_BETELGAMMAMON,
+        .inSelectionFlags = F_PURPLE_BETELGAMMAMON,
+        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_P_BETELGAMMAMON,
     },
 };
 
@@ -743,8 +743,8 @@ static const struct RouletteSlot sRouletteSlots[] =
     {
         .id1 = 1,
         .id2 = 3,
-        .gridSquare = SQU_GREEN_BIOSTEGMON,
-        .flag = F_GREEN_BIOSTEGMON,
+        .gridSquare = SQU_GREEN_BIOSTEGOMON,
+        .flag = F_GREEN_BIOSTEGOMON,
     },
     {
         .id1 = 2,
@@ -755,8 +755,8 @@ static const struct RouletteSlot sRouletteSlots[] =
     {
         .id1 = 3,
         .id2 = 7,
-        .gridSquare = SQU_ORANGE_BETGAMAMON,
-        .flag = F_ORANGE_BETGAMAMON,
+        .gridSquare = SQU_ORANGE_BETELGAMMAMON,
+        .flag = F_ORANGE_BETELGAMMAMON,
     },
     {
         .id1 = 4,
@@ -767,8 +767,8 @@ static const struct RouletteSlot sRouletteSlots[] =
     {
         .id1 = 5,
         .id2 = 11,
-        .gridSquare = SQU_PURPLE_BIOSTEGMON,
-        .flag = F_PURPLE_BIOSTEGMON,
+        .gridSquare = SQU_PURPLE_BIOSTEGOMON,
+        .flag = F_PURPLE_BIOSTEGOMON,
     },
     {
         .id1 = 6,
@@ -779,8 +779,8 @@ static const struct RouletteSlot sRouletteSlots[] =
     {
         .id1 = 7,
         .id2 = 15,
-        .gridSquare = SQU_GREEN_BETGAMAMON,
-        .flag = F_GREEN_BETGAMAMON,
+        .gridSquare = SQU_GREEN_BETELGAMMAMON,
+        .flag = F_GREEN_BETELGAMMAMON,
     },
     {
         .id1 = 8,
@@ -791,8 +791,8 @@ static const struct RouletteSlot sRouletteSlots[] =
     {
         .id1 = 9,
         .id2 = 19,
-        .gridSquare = SQU_ORANGE_BIOSTEGMON,
-        .flag = F_ORANGE_BIOSTEGMON,
+        .gridSquare = SQU_ORANGE_BIOSTEGOMON,
+        .flag = F_ORANGE_BIOSTEGOMON,
     },
     {
         .id1 = 10,
@@ -803,8 +803,8 @@ static const struct RouletteSlot sRouletteSlots[] =
     {
         .id1 = 11,
         .id2 = 23,
-        .gridSquare = SQU_PURPLE_BETGAMAMON,
-        .flag = F_PURPLE_BETGAMAMON,
+        .gridSquare = SQU_PURPLE_BETELGAMMAMON,
+        .flag = F_PURPLE_BETELGAMMAMON,
     },
 };
 static const u8 sTableMinBets[] = {1, 3, 1, 6};
@@ -818,7 +818,7 @@ static const struct RouletteTable sRouletteTables[] =
         .randDistanceLow = DEGREES_PER_SLOT,
         .wheelSpeed = 1,
         .wheelDelay = 1,
-        .aresdramon = {
+        .arresterdramon = {
             .startAngle = 45,
             .dropAngle = 30,
             .fallSlowdown = 1,
@@ -839,7 +839,7 @@ static const struct RouletteTable sRouletteTables[] =
         .randDistanceLow = DEGREES_PER_SLOT / 2,
         .wheelSpeed = 1,
         .wheelDelay = 0,
-        .aresdramon = {
+        .arresterdramon = {
             .startAngle = 75,
             .dropAngle = 60,
             .fallSlowdown = 2,
@@ -868,7 +868,7 @@ static const struct RouletteFlashSettings sFlashData_Colors[NUM_ROULETTE_SLOTS +
         .unk7_5 = -2,
         .colorDeltaDir = 0,
     },
-    { // F_FLASH_COLOR_G_BIOSTEGMON
+    { // F_FLASH_COLOR_G_BIOSTEGOMON
         .color = FLASHUTIL_USE_EXISTING_COLOR,
         .paletteOffset = BG_PLTT_ID(0) + 10,
         .numColors = 1,
@@ -888,7 +888,7 @@ static const struct RouletteFlashSettings sFlashData_Colors[NUM_ROULETTE_SLOTS +
         .unk7_5 = -2,
         .colorDeltaDir = 0,
     },
-    { // F_FLASH_COLOR_O_BETGAMAMON
+    { // F_FLASH_COLOR_O_BETELGAMMAMON
         .color = FLASHUTIL_USE_EXISTING_COLOR,
         .paletteOffset = BG_PLTT_ID(5) + 5,
         .numColors = 1,
@@ -908,7 +908,7 @@ static const struct RouletteFlashSettings sFlashData_Colors[NUM_ROULETTE_SLOTS +
         .unk7_5 = -2,
         .colorDeltaDir = 0,
     },
-    { // F_FLASH_COLOR_P_BIOSTEGMON
+    { // F_FLASH_COLOR_P_BIOSTEGOMON
         .color = FLASHUTIL_USE_EXISTING_COLOR,
         .paletteOffset = BG_PLTT_ID(6) + 5,
         .numColors = 1,
@@ -928,7 +928,7 @@ static const struct RouletteFlashSettings sFlashData_Colors[NUM_ROULETTE_SLOTS +
         .unk7_5 = -2,
         .colorDeltaDir = 0,
     },
-    { // F_FLASH_COLOR_G_BETGAMAMON
+    { // F_FLASH_COLOR_G_BETELGAMMAMON
         .color = FLASHUTIL_USE_EXISTING_COLOR,
         .paletteOffset = BG_PLTT_ID(7) + 10,
         .numColors = 1,
@@ -948,7 +948,7 @@ static const struct RouletteFlashSettings sFlashData_Colors[NUM_ROULETTE_SLOTS +
         .unk7_5 = -2,
         .colorDeltaDir = 0,
     },
-    { // F_FLASH_COLOR_O_BIOSTEGMON
+    { // F_FLASH_COLOR_O_BIOSTEGOMON
         .color = FLASHUTIL_USE_EXISTING_COLOR,
         .paletteOffset = BG_PLTT_ID(9) + 5,
         .numColors = 1,
@@ -968,7 +968,7 @@ static const struct RouletteFlashSettings sFlashData_Colors[NUM_ROULETTE_SLOTS +
         .unk7_5 = -2,
         .colorDeltaDir = 0,
     },
-    { // F_FLASH_COLOR_P_BETGAMAMON
+    { // F_FLASH_COLOR_P_BETELGAMMAMON
         .color = FLASHUTIL_USE_EXISTING_COLOR,
         .paletteOffset = BG_PLTT_ID(10) + 5,
         .numColors = 1,
@@ -1055,8 +1055,8 @@ static void VBlankCB_Roulette(void)
     UpdateWheelPosition();
     SetGpuReg(REG_OFFSET_BG1HOFS, 0x200 - sRoulette->gridX);
 
-    if (sRoulette->aresdramonShadowTimer)
-        SetGpuReg(REG_OFFSET_BLDALPHA, sRoulette->aresdramonShadowAlpha);
+    if (sRoulette->arresterdramonShadowTimer)
+        SetGpuReg(REG_OFFSET_BLDALPHA, sRoulette->arresterdramonShadowAlpha);
 
     if (sRoulette->updateGridHighlight)
     {
@@ -1146,8 +1146,8 @@ static void InitRouletteTableData(void)
     {
         switch (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG))
         {
-        case SPECIES_ARESDRAMON:
-            sRoulette->partySpeciesFlags |= HAS_ARESDRAMON;
+        case SPECIES_ARRESTERDRAMON:
+            sRoulette->partySpeciesFlags |= HAS_ARRESTERDRAMON;
             break;
         case SPECIES_ALLOMON_X:
             sRoulette->partySpeciesFlags |= HAS_ALLOMON_X;
@@ -1320,9 +1320,9 @@ static void UpdateGridSelectionRect(u8 selectionId)
         FillTilemapRect(&sRoulette->tilemapBuffers[0][0], 0, 14, 7, 16, 13);
         break;
     case COL_EXVEEMON:
-    case COL_BIOSTEGMON:
+    case COL_BIOSTEGOMON:
     case COL_BIRDRAMON:
-    case COL_BETGAMAMON:
+    case COL_BETELGAMMAMON:
         temp0 = (selectionId * 3 + 14);
         FillTilemapRect(&sRoulette->tilemapBuffers[0][0], 0, 14, 7, 16, 13);
         SetTilemapRect(&sRoulette->tilemapBuffers[0][0], &sRoulette->gridTilemap[281], temp0, 7, 3, 13);
@@ -1366,7 +1366,7 @@ static void Task_SelectFirstEmptySquare(u8 taskId)
     if (sRoulette->hitFlags & F_ORANGE_ROW)
     {
         // If the whole orange row is filled, get first in green row
-        for (i = SQU_GREEN_EXVEEMON; i < SQU_GREEN_BETGAMAMON; i++)
+        for (i = SQU_GREEN_EXVEEMON; i < SQU_GREEN_BETELGAMMAMON; i++)
         {
             if (!(sRoulette->hitFlags & sGridSelections[i].flag))
                 break;
@@ -1376,7 +1376,7 @@ static void Task_SelectFirstEmptySquare(u8 taskId)
     {
         // Otherwise get first in orange row
         // With only 6 balls both rows can't be filled, no need to check purple row
-        for (i = SQU_ORANGE_EXVEEMON; i <= SQU_ORANGE_BETGAMAMON; i++) // <= is accidental, but it will never get that far
+        for (i = SQU_ORANGE_EXVEEMON; i <= SQU_ORANGE_BETELGAMMAMON; i++) // <= is accidental, but it will never get that far
         {
             if (!(sRoulette->hitFlags & sGridSelections[i].flag))
                 break;
@@ -1410,7 +1410,7 @@ static bool8 CanMoveSelectionInDir(s16 *selectionId, u8 dir)
     case 2: // LEFT
     case 3: // RIGHT
         temp1 = GET_ROW(*selectionId);
-        temp = temp1 + COL_BETGAMAMON;
+        temp = temp1 + COL_BETELGAMMAMON;
         if (temp1 == SELECTION_NONE)
             temp1 = 1;
         break;
@@ -1457,7 +1457,7 @@ static void ProcessBetGridInput(u8 taskId)
             + (*gSprites[sRoulette->spriteIds[i + SPR_POKE_HEADERS]].anims)->type;
         }
         // If the current selection is a column with at least 1 unhit space, fill in the header
-        if ((u16)(gTasks[taskId].tSelectionId - 1) < COL_BETGAMAMON && !(sRoulette->hitFlags & sGridSelections[gTasks[taskId].tSelectionId].flag))
+        if ((u16)(gTasks[taskId].tSelectionId - 1) < COL_BETELGAMMAMON && !(sRoulette->hitFlags & sGridSelections[gTasks[taskId].tSelectionId].flag))
         {
             headerOffset = gTasks[taskId].tSelectionId - 1;
             gSprites[sRoulette->spriteIds[headerOffset + SPR_POKE_HEADERS]].oam.tileNum =
@@ -1553,12 +1553,12 @@ static void Task_SlideGridOffscreen(u8 taskId)
 // Each roll a random value is generated to add onto this distance
 // Half the value returned by this function is the max distance that can be added on per roll
 // i.e. the lower this value is, the closer the roll will be to a consistent distance
-// Odds of a lower value increase as play continues, if the player has Aresdramon and/or Allomon_x in the party, and dependent on the time
+// Odds of a lower value increase as play continues, if the player has Arresterdramon and/or Allomon_x in the party, and dependent on the time
 static u8 GetRandomForBallTravelDistance(u16 ballNum, u16 rand)
 {
     switch (sRoulette->partySpeciesFlags)
     {
-    case HAS_ARESDRAMON:
+    case HAS_ARRESTERDRAMON:
     case HAS_ALLOMON_X:
         // one of the two is in party
         if (gLocalTime.hours > 3 && gLocalTime.hours < 10)
@@ -1577,7 +1577,7 @@ static u8 GetRandomForBallTravelDistance(u16 ballNum, u16 rand)
             return sRouletteTables[sRoulette->tableId].randDistanceLow;
         }
         break;
-    case HAS_ARESDRAMON | HAS_ALLOMON_X:
+    case HAS_ARRESTERDRAMON | HAS_ALLOMON_X:
         // both are in party
         if (gLocalTime.hours > 3 && gLocalTime.hours < 11)
         {
@@ -2061,14 +2061,14 @@ static u8 RecordHit(u8 taskId, u8 slotId)
     u8 i, j;
     u32 columnFlags[NUM_BOARD_POKES] = {
         F_EXVEEMON_COL | F_ORANGE_EXVEEMON | F_GREEN_EXVEEMON | F_PURPLE_EXVEEMON,
-        F_BIOSTEGMON_COL | F_ORANGE_BIOSTEGMON | F_GREEN_BIOSTEGMON | F_PURPLE_BIOSTEGMON,
+        F_BIOSTEGOMON_COL | F_ORANGE_BIOSTEGOMON | F_GREEN_BIOSTEGOMON | F_PURPLE_BIOSTEGOMON,
         F_BIRDRAMON_COL | F_ORANGE_BIRDRAMON | F_GREEN_BIRDRAMON | F_PURPLE_BIRDRAMON,
-        F_BETGAMAMON_COL | F_ORANGE_BETGAMAMON | F_GREEN_BETGAMAMON | F_PURPLE_BETGAMAMON
+        F_BETELGAMMAMON_COL | F_ORANGE_BETELGAMMAMON | F_GREEN_BETELGAMMAMON | F_PURPLE_BETELGAMMAMON
     };
     u32 rowFlags[NUM_BOARD_COLORS] = {
-        F_ORANGE_ROW | F_ORANGE_EXVEEMON | F_ORANGE_BIOSTEGMON | F_ORANGE_BIRDRAMON | F_ORANGE_BETGAMAMON,
-        F_GREEN_ROW | F_GREEN_EXVEEMON | F_GREEN_BIOSTEGMON | F_GREEN_BIRDRAMON | F_GREEN_BETGAMAMON,
-        F_PURPLE_ROW | F_PURPLE_EXVEEMON | F_PURPLE_BIOSTEGMON | F_PURPLE_BIRDRAMON | F_PURPLE_BETGAMAMON
+        F_ORANGE_ROW | F_ORANGE_EXVEEMON | F_ORANGE_BIOSTEGOMON | F_ORANGE_BIRDRAMON | F_ORANGE_BETELGAMMAMON,
+        F_GREEN_ROW | F_GREEN_EXVEEMON | F_GREEN_BIOSTEGOMON | F_GREEN_BIRDRAMON | F_GREEN_BETELGAMMAMON,
+        F_PURPLE_ROW | F_PURPLE_EXVEEMON | F_PURPLE_BIOSTEGOMON | F_PURPLE_BIRDRAMON | F_PURPLE_BETELGAMMAMON
     };
 
     if (slotId >= NUM_ROULETTE_SLOTS)
@@ -2106,9 +2106,9 @@ static bool8 IsHitInBetSelection(u8 gridSquare, u8 betSelection)
         case SELECTION_NONE:
             return 3; // should never happen, player must place bet
         case COL_EXVEEMON:
-        case COL_BIOSTEGMON:
+        case COL_BIOSTEGOMON:
         case COL_BIRDRAMON:
-        case COL_BETGAMAMON:
+        case COL_BETELGAMMAMON:
             if (hit == betSelection + ROW_ORANGE
              || hit == betSelection + ROW_GREEN
              || hit == betSelection + ROW_PURPLE)
@@ -2118,7 +2118,7 @@ static bool8 IsHitInBetSelection(u8 gridSquare, u8 betSelection)
         case ROW_GREEN:
         case ROW_PURPLE:
             if (hit >= (betSelection + COL_EXVEEMON)
-             && hit <= (betSelection + COL_BETGAMAMON))
+             && hit <= (betSelection + COL_BETELGAMMAMON))
                 return TRUE;
             break;
         // Individual square
@@ -2156,7 +2156,7 @@ static void FlashSelectionOnWheel(u8 selectionId)
         struct RouletteFlashSettings iconFlash[NUM_BOARD_COLORS];
         memcpy(iconFlash, sFlashData_PokeIcons, sizeof(iconFlash));
 
-        if (selectionId >= COL_EXVEEMON && selectionId <= COL_BETGAMAMON)
+        if (selectionId >= COL_EXVEEMON && selectionId <= COL_BETELGAMMAMON)
             numSelected = NUM_BOARD_COLORS; // Selection is full column
         else
             numSelected = 1;
@@ -2169,14 +2169,14 @@ static void FlashSelectionOnWheel(u8 selectionId)
         case COL_EXVEEMON:
             palOffset = PLTT_ID(gSprites[sRoulette->spriteIds[SPR_WHEEL_ICON_ORANGE_EXVEEMON]].oam.paletteNum);
             break;
-        case COL_BIOSTEGMON:
-            palOffset = PLTT_ID(gSprites[sRoulette->spriteIds[SPR_WHEEL_ICON_GREEN_BIOSTEGMON]].oam.paletteNum);
+        case COL_BIOSTEGOMON:
+            palOffset = PLTT_ID(gSprites[sRoulette->spriteIds[SPR_WHEEL_ICON_GREEN_BIOSTEGOMON]].oam.paletteNum);
             break;
         case COL_BIRDRAMON:
             palOffset = PLTT_ID(gSprites[sRoulette->spriteIds[SPR_WHEEL_ICON_PURPLE_BIRDRAMON]].oam.paletteNum);
             break;
-        case COL_BETGAMAMON:
-            palOffset = PLTT_ID(gSprites[sRoulette->spriteIds[SPR_WHEEL_ICON_ORANGE_BETGAMAMON]].oam.paletteNum);
+        case COL_BETELGAMMAMON:
+            palOffset = PLTT_ID(gSprites[sRoulette->spriteIds[SPR_WHEEL_ICON_ORANGE_BETELGAMMAMON]].oam.paletteNum);
             break;
         }
         if (numSelected == 1)
@@ -2238,9 +2238,9 @@ static void DrawGridBackground(u8 selectionId)
     case SELECTION_NONE:
         return;
     case COL_EXVEEMON:
-    case COL_BIOSTEGMON:
+    case COL_BIOSTEGOMON:
     case COL_BIRDRAMON:
-    case COL_BETGAMAMON:
+    case COL_BETELGAMMAMON:
         numSquares = NUM_BOARD_COLORS + 1; // For each poke column, 3 colors and a header
         for (i = 0; i < numSquares; i++)
             selectionIds[i] = i * ROW_ORANGE + selectionId;
@@ -2328,20 +2328,20 @@ static const u16 sBall_Pal[] = INCBIN_U16("graphics/roulette/ball.gbapal");
 static const u16 sBallCounter_Pal[] = INCBIN_U16("graphics/roulette/ball_counter.gbapal");
 static const u16 sCursor_Pal[] = INCBIN_U16("graphics/roulette/cursor.gbapal");
 static const u16 sCredit_Pal[] = INCBIN_U16("graphics/roulette/credit.gbapal");
-static const u16 sAresdramon_Pal[] = INCBIN_U16("graphics/roulette/aresdramon.gbapal");
+static const u16 sArresterdramon_Pal[] = INCBIN_U16("graphics/roulette/arresterdramon.gbapal");
 static const u16 sAllomon_x_Pal[] = INCBIN_U16("graphics/roulette/tailow.gbapal");
 static const u16 sGridIcons_Pal[] = INCBIN_U16("graphics/roulette/grid_icons.gbapal");
 static const u16 sExveemon_Pal[] = INCBIN_U16("graphics/roulette/exveemon.gbapal");
-static const u16 sBiostegmon_Pal[] = INCBIN_U16("graphics/roulette/biostegmon.gbapal");
+static const u16 sBiostegomon_Pal[] = INCBIN_U16("graphics/roulette/biostegomon.gbapal");
 static const u16 sBirdramon_Pal[] = INCBIN_U16("graphics/roulette/birdramon.gbapal");
-static const u16 sBetgamamon_Pal[] = INCBIN_U16("graphics/roulette/betgamamon.gbapal");
+static const u16 sBetelgammamon_Pal[] = INCBIN_U16("graphics/roulette/betelgammamon.gbapal");
 static const u16 sUnused1_Pal[] = INCBIN_U16("graphics/roulette/unused_1.gbapal");
 static const u16 sUnused2_Pal[] = INCBIN_U16("graphics/roulette/unused_2.gbapal");
 static const u16 sUnused3_Pal[] = INCBIN_U16("graphics/roulette/unused_3.gbapal");
 static const u16 sUnused4_Pal[] = INCBIN_U16("graphics/roulette/unused_4.gbapal");
 static const u32 sBall_Gfx[] = INCBIN_U32("graphics/roulette/ball.4bpp.smol");
 static const u32 sBallCounter_Gfx[] = INCBIN_U32("graphics/roulette/ball_counter.4bpp.smol");
-static const u32 sAresdramonAllomon_x_Gfx[] = INCBIN_U32("graphics/roulette/roulette_tilt.4bpp.smol");
+static const u32 sArresterdramonAllomon_x_Gfx[] = INCBIN_U32("graphics/roulette/roulette_tilt.4bpp.smol");
 static const u32 sGridIcons_Gfx[] = INCBIN_U32("graphics/roulette/grid_icons.4bpp.smol");
 static const u32 sWheelIcons_Gfx[] = INCBIN_U32("graphics/roulette/wheel_icons.4bpp.smol");
 static const u32 sShadow_Gfx[] = INCBIN_U32("graphics/roulette/shadow.4bpp.smol");
@@ -2354,13 +2354,13 @@ static const struct SpritePalette sSpritePalettes[] =
     { .data = sBallCounter_Pal, .tag = PALTAG_BALL_COUNTER },
     { .data = sCursor_Pal,      .tag = PALTAG_CURSOR },
     { .data = sCredit_Pal,      .tag = PALTAG_INTERFACE },
-    { .data = sAresdramon_Pal,   .tag = PALTAG_ARESDRAMON },
+    { .data = sArresterdramon_Pal,   .tag = PALTAG_ARRESTERDRAMON },
     { .data = sAllomon_x_Pal,     .tag = PALTAG_ALLOMON_X },
     { .data = sGridIcons_Pal,   .tag = PALTAG_GRID_ICONS },
     { .data = sExveemon_Pal,      .tag = PALTAG_EXVEEMON },
-    { .data = sBiostegmon_Pal,     .tag = PALTAG_BIOSTEGMON },
+    { .data = sBiostegomon_Pal,     .tag = PALTAG_BIOSTEGOMON },
     { .data = sBirdramon_Pal,      .tag = PALTAG_BIRDRAMON },
-    { .data = sBetgamamon_Pal,    .tag = PALTAG_BETGAMAMON },
+    { .data = sBetelgammamon_Pal,    .tag = PALTAG_BETELGAMMAMON },
     {}
 };
 
@@ -2442,7 +2442,7 @@ static const union AnimCmd *const sAnim_WheelIcon_OrangeExveemon[] =
     &sAnim_WheelIcons[0]
 };
 
-static const union AnimCmd *const sAnim_WheelIcon_GreenBiostegmon[] =
+static const union AnimCmd *const sAnim_WheelIcon_GreenBiostegomon[] =
 {
     &sAnim_WheelIcons[1]
 };
@@ -2452,7 +2452,7 @@ static const union AnimCmd *const sAnim_WheelIcon_PurpleBirdramon[] =
     &sAnim_WheelIcons[2]
 };
 
-static const union AnimCmd *const sAnim_WheelIcon_OrangeBetgamamon[] =
+static const union AnimCmd *const sAnim_WheelIcon_OrangeBetelgammamon[] =
 {
     &sAnim_WheelIcons[3]
 };
@@ -2462,7 +2462,7 @@ static const union AnimCmd *const sAnim_WheelIcon_GreenExveemon[] =
     &sAnim_WheelIcons[4]
 };
 
-static const union AnimCmd *const sAnim_WheelIcon_PurpleBiostegmon[] =
+static const union AnimCmd *const sAnim_WheelIcon_PurpleBiostegomon[] =
 {
     &sAnim_WheelIcons[5]
 };
@@ -2472,7 +2472,7 @@ static const union AnimCmd *const sAnim_WheelIcon_OrangeBirdramon[] =
     &sAnim_WheelIcons[6]
 };
 
-static const union AnimCmd *const sAnim_WheelIcon_GreenBetgamamon[] =
+static const union AnimCmd *const sAnim_WheelIcon_GreenBetelgammamon[] =
 {
     &sAnim_WheelIcons[7]
 };
@@ -2482,7 +2482,7 @@ static const union AnimCmd *const sAnim_WheelIcon_PurpleExveemon[] =
     &sAnim_WheelIcons[8]
 };
 
-static const union AnimCmd *const sAnim_WheelIcon_OrangeBiostegmon[] =
+static const union AnimCmd *const sAnim_WheelIcon_OrangeBiostegomon[] =
 {
     &sAnim_WheelIcons[9]
 };
@@ -2492,7 +2492,7 @@ static const union AnimCmd *const sAnim_WheelIcon_GreenBirdramon[] =
     &sAnim_WheelIcons[10]
 };
 
-static const union AnimCmd *const sAnim_WheelIcon_PurpleBetgamamon[] =
+static const union AnimCmd *const sAnim_WheelIcon_PurpleBetelgammamon[] =
 {
     &sAnim_WheelIcons[11]
 };
@@ -2541,7 +2541,7 @@ static const union AnimCmd *const sAnim_ExveemonHeader[] =
     &sAnim_Headers[0]
 };
 
-static const union AnimCmd *const sAnim_BiostegmonHeader[] =
+static const union AnimCmd *const sAnim_BiostegomonHeader[] =
 {
     &sAnim_Headers[2]
 };
@@ -2551,7 +2551,7 @@ static const union AnimCmd *const sAnim_BirdramonHeader[] =
     &sAnim_Headers[4]
 };
 
-static const union AnimCmd *const sAnim_BetgamamonHeader[] =
+static const union AnimCmd *const sAnim_BetelgammamonHeader[] =
 {
     &sAnim_Headers[6]
 };
@@ -2576,7 +2576,7 @@ static const union AnimCmd *const sAnim_GridIcon_Exveemon[] =
     &sAnim_GridIcons[0]
 };
 
-static const union AnimCmd *const sAnim_GridIcon_Biostegmon[] =
+static const union AnimCmd *const sAnim_GridIcon_Biostegomon[] =
 {
     &sAnim_GridIcons[1]
 };
@@ -2586,7 +2586,7 @@ static const union AnimCmd *const sAnim_GridIcon_Birdramon[] =
     &sAnim_GridIcons[2]
 };
 
-static const union AnimCmd *const sAnim_GridIcon_Betgamamon[] =
+static const union AnimCmd *const sAnim_GridIcon_Betelgammamon[] =
 {
     &sAnim_GridIcons[3]
 };
@@ -2606,7 +2606,7 @@ static const struct SpriteTemplate sSpriteTemplates_PokeHeaders[NUM_BOARD_POKES]
         .tileTag = GFXTAG_HEADERS,
         .paletteTag = PALTAG_GRID_ICONS,
         .oam = &sOam_GridHeader,
-        .anims = sAnim_BiostegmonHeader,
+        .anims = sAnim_BiostegomonHeader,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCB_GridSquare
@@ -2624,7 +2624,7 @@ static const struct SpriteTemplate sSpriteTemplates_PokeHeaders[NUM_BOARD_POKES]
         .tileTag = GFXTAG_HEADERS,
         .paletteTag = PALTAG_GRID_ICONS,
         .oam = &sOam_GridHeader,
-        .anims = sAnim_BetgamamonHeader,
+        .anims = sAnim_BetelgammamonHeader,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCB_GridSquare
@@ -2677,7 +2677,7 @@ static const struct SpriteTemplate sSpriteTemplates_GridIcons[NUM_BOARD_POKES] =
         .tileTag = GFXTAG_GRID_ICONS,
         .paletteTag = PALTAG_GRID_ICONS,
         .oam = &sOam_GridIcon,
-        .anims = sAnim_GridIcon_Biostegmon,
+        .anims = sAnim_GridIcon_Biostegomon,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCB_GridSquare
@@ -2695,7 +2695,7 @@ static const struct SpriteTemplate sSpriteTemplates_GridIcons[NUM_BOARD_POKES] =
         .tileTag = GFXTAG_GRID_ICONS,
         .paletteTag = PALTAG_GRID_ICONS,
         .oam = &sOam_GridIcon,
-        .anims = sAnim_GridIcon_Betgamamon,
+        .anims = sAnim_GridIcon_Betelgammamon,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCB_GridSquare
@@ -2703,7 +2703,7 @@ static const struct SpriteTemplate sSpriteTemplates_GridIcons[NUM_BOARD_POKES] =
 };
 
 // Wheel icons are listed clockwise starting from 1 oclock on the roulette wheel (with Poké Ball upside right)
-// They go Exveemon -> Biostegmon -> Birdramon -> Betgamamon, and Orange -> Green -> Purple
+// They go Exveemon -> Biostegomon -> Birdramon -> Betelgammamon, and Orange -> Green -> Purple
 static const struct SpriteTemplate sSpriteTemplates_WheelIcons[NUM_ROULETTE_SLOTS] =
 {
     {
@@ -2717,9 +2717,9 @@ static const struct SpriteTemplate sSpriteTemplates_WheelIcons[NUM_ROULETTE_SLOT
     },
     {
         .tileTag = GFXTAG_WHEEL_ICONS,
-        .paletteTag = PALTAG_BIOSTEGMON,
+        .paletteTag = PALTAG_BIOSTEGOMON,
         .oam = &sOam_WheelIcon,
-        .anims = sAnim_WheelIcon_GreenBiostegmon,
+        .anims = sAnim_WheelIcon_GreenBiostegomon,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCB_WheelIcon
@@ -2735,9 +2735,9 @@ static const struct SpriteTemplate sSpriteTemplates_WheelIcons[NUM_ROULETTE_SLOT
     },
     {
         .tileTag = GFXTAG_WHEEL_ICONS,
-        .paletteTag = PALTAG_BETGAMAMON,
+        .paletteTag = PALTAG_BETELGAMMAMON,
         .oam = &sOam_WheelIcon,
-        .anims = sAnim_WheelIcon_OrangeBetgamamon,
+        .anims = sAnim_WheelIcon_OrangeBetelgammamon,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCB_WheelIcon
@@ -2753,9 +2753,9 @@ static const struct SpriteTemplate sSpriteTemplates_WheelIcons[NUM_ROULETTE_SLOT
     },
     {
         .tileTag = GFXTAG_WHEEL_ICONS,
-        .paletteTag = PALTAG_BIOSTEGMON,
+        .paletteTag = PALTAG_BIOSTEGOMON,
         .oam = &sOam_WheelIcon,
-        .anims = sAnim_WheelIcon_PurpleBiostegmon,
+        .anims = sAnim_WheelIcon_PurpleBiostegomon,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCB_WheelIcon
@@ -2771,9 +2771,9 @@ static const struct SpriteTemplate sSpriteTemplates_WheelIcons[NUM_ROULETTE_SLOT
     },
     {
         .tileTag = GFXTAG_WHEEL_ICONS,
-        .paletteTag = PALTAG_BETGAMAMON,
+        .paletteTag = PALTAG_BETELGAMMAMON,
         .oam = &sOam_WheelIcon,
-        .anims = sAnim_WheelIcon_GreenBetgamamon,
+        .anims = sAnim_WheelIcon_GreenBetelgammamon,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCB_WheelIcon
@@ -2789,9 +2789,9 @@ static const struct SpriteTemplate sSpriteTemplates_WheelIcons[NUM_ROULETTE_SLOT
     },
     {
         .tileTag = GFXTAG_WHEEL_ICONS,
-        .paletteTag = PALTAG_BIOSTEGMON,
+        .paletteTag = PALTAG_BIOSTEGOMON,
         .oam = &sOam_WheelIcon,
-        .anims = sAnim_WheelIcon_OrangeBiostegmon,
+        .anims = sAnim_WheelIcon_OrangeBiostegomon,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCB_WheelIcon
@@ -2807,9 +2807,9 @@ static const struct SpriteTemplate sSpriteTemplates_WheelIcons[NUM_ROULETTE_SLOT
     },
     {
         .tileTag = GFXTAG_WHEEL_ICONS,
-        .paletteTag = PALTAG_BETGAMAMON,
+        .paletteTag = PALTAG_BETELGAMMAMON,
         .oam = &sOam_WheelIcon,
-        .anims = sAnim_WheelIcon_PurpleBetgamamon,
+        .anims = sAnim_WheelIcon_PurpleBetelgammamon,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCB_WheelIcon
@@ -3129,7 +3129,7 @@ static const struct SpriteTemplate sSpriteTemplate_WheelCenter =
     .callback = SpriteCB_WheelCenter
 };
 
-static const struct OamData sOam_Aresdramon =
+static const struct OamData sOam_Arresterdramon =
 {
     .affineMode = ST_OAM_AFFINE_OFF,
     .objMode = ST_OAM_OBJ_NORMAL,
@@ -3147,14 +3147,14 @@ static const struct OamData sOam_Allomon_x =
     .priority = 2,
 };
 
-static const struct CompressedSpriteSheet sSpriteSheet_AresdramonAllomon_x =
+static const struct CompressedSpriteSheet sSpriteSheet_ArresterdramonAllomon_x =
 {
-    .data = sAresdramonAllomon_x_Gfx,
+    .data = sArresterdramonAllomon_x_Gfx,
     .size = 0xE00,
-    .tag = GFXTAG_ARESDRAMON_ALLOMON_X
+    .tag = GFXTAG_ARRESTERDRAMON_ALLOMON_X
 };
 
-static const union AnimCmd sAnim_Aresdramon[] =
+static const union AnimCmd sAnim_Arresterdramon[] =
 {
     ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(16, 6),
@@ -3205,9 +3205,9 @@ static const union AnimCmd sAnim_Allomon_x_FlapFast_Right[] =
     ANIMCMD_JUMP(0)
 };
 
-static const union AnimCmd *const sAnims_Aresdramon[] =
+static const union AnimCmd *const sAnims_Arresterdramon[] =
 {
-    sAnim_Aresdramon
+    sAnim_Arresterdramon
 };
 
 static const union AnimCmd *const sAnims_Allomon_x[] =
@@ -3220,12 +3220,12 @@ static const union AnimCmd *const sAnims_Allomon_x[] =
     sAnim_Allomon_x_FlapFast_Right
 };
 
-static const struct SpriteTemplate sSpriteTemplate_Aresdramon =
+static const struct SpriteTemplate sSpriteTemplate_Arresterdramon =
 {
-    .tileTag = GFXTAG_ARESDRAMON_ALLOMON_X,
-    .paletteTag = PALTAG_ARESDRAMON,
-    .oam = &sOam_Aresdramon,
-    .anims = sAnims_Aresdramon,
+    .tileTag = GFXTAG_ARRESTERDRAMON_ALLOMON_X,
+    .paletteTag = PALTAG_ARRESTERDRAMON,
+    .oam = &sOam_Arresterdramon,
+    .anims = sAnims_Arresterdramon,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCallbackDummy
@@ -3233,7 +3233,7 @@ static const struct SpriteTemplate sSpriteTemplate_Aresdramon =
 
 static const struct SpriteTemplate sSpriteTemplate_Allomon_x =
 {
-    .tileTag = GFXTAG_ARESDRAMON_ALLOMON_X,
+    .tileTag = GFXTAG_ARRESTERDRAMON_ALLOMON_X,
     .paletteTag = PALTAG_ALLOMON_X,
     .oam = &sOam_Allomon_x,
     .anims = sAnims_Allomon_x,
@@ -3242,7 +3242,7 @@ static const struct SpriteTemplate sSpriteTemplate_Allomon_x =
     .callback = SpriteCB_Allomon_x
 };
 
-static const struct OamData sOam_AresdramonBallShadow =
+static const struct OamData sOam_ArresterdramonBallShadow =
 {
     .affineMode = ST_OAM_AFFINE_OFF,
     .objMode = ST_OAM_OBJ_NORMAL,
@@ -3251,7 +3251,7 @@ static const struct OamData sOam_AresdramonBallShadow =
     .priority = 2,
 };
 
-static const struct OamData sOam_AresdramonShadow =
+static const struct OamData sOam_ArresterdramonShadow =
 {
     .affineMode = ST_OAM_AFFINE_OFF,
     .objMode = ST_OAM_OBJ_NORMAL,
@@ -3313,7 +3313,7 @@ static const union AffineAnimCmd *const sAffineAnims_Unused4[] =
     sAffineAnim_Unused4
 };
 
-static const union AnimCmd sAnim_AresdramonBallShadow[] =
+static const union AnimCmd sAnim_ArresterdramonBallShadow[] =
 {
     ANIMCMD_FRAME(0, 0),
     ANIMCMD_END
@@ -3325,9 +3325,9 @@ static const union AnimCmd sAnim_UnstickMonShadow[] =
     ANIMCMD_END
 };
 
-static const union AnimCmd *const sAnims_AresdramonBallShadow[] =
+static const union AnimCmd *const sAnims_ArresterdramonBallShadow[] =
 {
-    sAnim_AresdramonBallShadow
+    sAnim_ArresterdramonBallShadow
 };
 
 static const union AnimCmd *const sAnims_UnstickMonShadow[] =
@@ -3335,27 +3335,27 @@ static const union AnimCmd *const sAnims_UnstickMonShadow[] =
     sAnim_UnstickMonShadow
 };
 
-static const struct SpriteTemplate sSpriteTemplate_AresdramonShadow[] =
+static const struct SpriteTemplate sSpriteTemplate_ArresterdramonShadow[] =
 {
     // Ball's shadow as it flies up
     {
         .tileTag = GFXTAG_SHADOW,
         .paletteTag = PALTAG_SHADOW,
-        .oam = &sOam_AresdramonBallShadow,
-        .anims = sAnims_AresdramonBallShadow,
+        .oam = &sOam_ArresterdramonBallShadow,
+        .anims = sAnims_ArresterdramonBallShadow,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCallbackDummy
     },
-    // Aresdramon's Shadow
+    // Arresterdramon's Shadow
     {
         .tileTag = GFXTAG_SHADOW,
         .paletteTag = PALTAG_SHADOW,
-        .oam = &sOam_AresdramonShadow,
+        .oam = &sOam_ArresterdramonShadow,
         .anims = sAnims_UnstickMonShadow,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
-        .callback = SpriteCB_Aresdramon
+        .callback = SpriteCB_Arresterdramon
     }
 };
 
@@ -3488,14 +3488,14 @@ static void LoadOrFreeMiscSpritePalettesAndSheets(bool8 free)
         FreeAllSpritePalettes();
         LoadSpritePalettes(sSpritePalettes);
         LoadCompressedSpriteSheet(&sSpriteSheet_Ball);
-        LoadCompressedSpriteSheet(&sSpriteSheet_AresdramonAllomon_x);
+        LoadCompressedSpriteSheet(&sSpriteSheet_ArresterdramonAllomon_x);
         LoadCompressedSpriteSheet(&sSpriteSheet_Shadow);
     }
     else
     {
         // Unused
         FreeSpriteTilesByTag(GFXTAG_SHADOW);
-        FreeSpriteTilesByTag(GFXTAG_ARESDRAMON_ALLOMON_X);
+        FreeSpriteTilesByTag(GFXTAG_ARRESTERDRAMON_ALLOMON_X);
         FreeSpriteTilesByTag(GFXTAG_BALL);
         FreeAllSpritePalettes();
     }
@@ -3995,7 +3995,7 @@ static void SpriteCB_BallLandInSlot(struct Sprite *sprite)
     sprite->y2 += gSpriteCoordOffsetY;
 }
 
-static void SpriteCB_UnstickBall_AresdramonBallFall(struct Sprite *sprite)
+static void SpriteCB_UnstickBall_ArresterdramonBallFall(struct Sprite *sprite)
 {
     UpdateBallPos(sprite);
     sprite->data[2]++;
@@ -4027,7 +4027,7 @@ static void SpriteCB_UnstickBall_AresdramonBallFall(struct Sprite *sprite)
     }
 }
 
-static void SpriteCB_UnstickBall_Aresdramon(struct Sprite *sprite)
+static void SpriteCB_UnstickBall_Arresterdramon(struct Sprite *sprite)
 {
     f32 slotOffset, ballFallDist, ballFallSpeed;
     UpdateBallPos(sprite);
@@ -4039,7 +4039,7 @@ static void SpriteCB_UnstickBall_Aresdramon(struct Sprite *sprite)
         {
             slotOffset = sprite->data[7];
             ballFallDist = (slotOffset * sRouletteTables[sRoulette->tableId].randDistanceHigh + (sRouletteTables[sRoulette->tableId].randDistanceLow - 1));
-            ballFallSpeed = (slotOffset / sRouletteTables[sRoulette->tableId].aresdramon.fallSlowdown);
+            ballFallSpeed = (slotOffset / sRouletteTables[sRoulette->tableId].arresterdramon.fallSlowdown);
         }
         else
         {
@@ -4051,7 +4051,7 @@ static void SpriteCB_UnstickBall_Aresdramon(struct Sprite *sprite)
         {
             slotOffset = sprite->data[7];
             ballFallDist = (slotOffset * sRouletteTables[sRoulette->tableId].randDistanceHigh + (sRouletteTables[sRoulette->tableId].randDistanceLow - 1));
-            ballFallSpeed = -(slotOffset / sRouletteTables[sRoulette->tableId].aresdramon.fallSlowdown);
+            ballFallSpeed = -(slotOffset / sRouletteTables[sRoulette->tableId].arresterdramon.fallSlowdown);
         }
         else
         {
@@ -4069,7 +4069,7 @@ static void SpriteCB_UnstickBall_Aresdramon(struct Sprite *sprite)
     sprite->animNum = 0;
     sprite->animBeginning = TRUE;
     sprite->animEnded = FALSE;
-    sprite->callback = SpriteCB_UnstickBall_AresdramonBallFall;
+    sprite->callback = SpriteCB_UnstickBall_ArresterdramonBallFall;
     sprite->data[2] = 0;
 }
 
@@ -4143,8 +4143,8 @@ static void SpriteCB_UnstickBall_Allomon_x(struct Sprite *sprite)
     }
 }
 
-// The below SpriteCB_UnstickBall_* callbacks handle the ball while its being cleared by Aresdramon/Allomon_x
-// For what Aresdramon/Allomon_x do during this sequence, see SpriteCB_Aresdramon / SpriteCB_Allomon_x
+// The below SpriteCB_UnstickBall_* callbacks handle the ball while its being cleared by Arresterdramon/Allomon_x
+// For what Arresterdramon/Allomon_x do during this sequence, see SpriteCB_Arresterdramon / SpriteCB_Allomon_x
 static void SpriteCB_UnstickBall(struct Sprite *sprite)
 {
     UpdateBallPos(sprite);
@@ -4152,8 +4152,8 @@ static void SpriteCB_UnstickBall(struct Sprite *sprite)
     {
     default:
     case FALSE:
-        CreateAresdramonSprite(sprite);
-        sprite->callback = SpriteCB_UnstickBall_Aresdramon;
+        CreateArresterdramonSprite(sprite);
+        sprite->callback = SpriteCB_UnstickBall_Arresterdramon;
         break;
     case TRUE:
         CreateAllomon_xSprite(sprite);
@@ -4180,7 +4180,7 @@ static void SpriteCB_RollBall_TryLandAdjacent(struct Sprite *sprite)
         }
         else
         {
-            // Ball is stuck, need Aresdramon/Allomon_x to clear ball
+            // Ball is stuck, need Arresterdramon/Allomon_x to clear ball
             sprite->animPaused = TRUE;
             m4aSongNumStart(SE_BALL_BOUNCE_1);
             SetBallStuck(sprite);
@@ -4317,12 +4317,12 @@ static void SpriteCB_RollBall_Start(struct Sprite *sprite)
     sprite->callback = SpriteCB_RollBall_Fast;
 }
 
-// Sprite data for Aresdramon / its shadows
+// Sprite data for Arresterdramon / its shadows
 #define sMonSpriteId        data[4]
 #define sBallShadowSpriteId data[5]
 #define sMonShadowSpriteId  data[6]
 
-static void CreateAresdramonSprite(struct Sprite *ball)
+static void CreateArresterdramonSprite(struct Sprite *ball)
 {
     u16 t;
     u8 i;
@@ -4334,9 +4334,9 @@ static void CreateAresdramonSprite(struct Sprite *ball)
 
     t = ball->data[7] - 2;
     roulette = sRoulette;  // Unnecessary, needed to match
-    sRoulette->spriteIds[SPR_CLEAR_MON] = CreateSprite(&sSpriteTemplate_Aresdramon, 36, -12, 50);
-    sRoulette->spriteIds[SPR_CLEAR_MON_SHADOW_1] = CreateSprite(&sSpriteTemplate_AresdramonShadow[0], coords[ball->sStuckOnWheelLeft][0], coords[ball->sStuckOnWheelLeft][1], 59);
-    sRoulette->spriteIds[SPR_CLEAR_MON_SHADOW_2] = CreateSprite(&sSpriteTemplate_AresdramonShadow[1], 36, 140, 51);
+    sRoulette->spriteIds[SPR_CLEAR_MON] = CreateSprite(&sSpriteTemplate_Arresterdramon, 36, -12, 50);
+    sRoulette->spriteIds[SPR_CLEAR_MON_SHADOW_1] = CreateSprite(&sSpriteTemplate_ArresterdramonShadow[0], coords[ball->sStuckOnWheelLeft][0], coords[ball->sStuckOnWheelLeft][1], 59);
+    sRoulette->spriteIds[SPR_CLEAR_MON_SHADOW_2] = CreateSprite(&sSpriteTemplate_ArresterdramonShadow[1], 36, 140, 51);
     gSprites[sRoulette->spriteIds[SPR_CLEAR_MON_SHADOW_2]].oam.objMode = ST_OAM_OBJ_BLEND;
     for (i = 0; i < 3; i++)
     {
@@ -4405,7 +4405,7 @@ static void SetBallStuck(struct Sprite *sprite)
     angle = (sRoulette->tableId * DEGREES_PER_SLOT + 33) + (1 - sRoulette->useAllomon_x) * 15;
 
     // Determine which quadrant the ball got stuck in
-    // Use either Aresdramon or Allomon_x to clear the ball depending on where it's stuck
+    // Use either Arresterdramon or Allomon_x to clear the ball depending on where it's stuck
     for (i = 0; i < 4; i++)
     {
         if (angle < sprite->sBallAngle && sprite->sBallAngle <= angle + 90)
@@ -4432,7 +4432,7 @@ static void SetBallStuck(struct Sprite *sprite)
     }
     else
     {
-        PlayCry_Normal(SPECIES_ARESDRAMON, -63);
+        PlayCry_Normal(SPECIES_ARRESTERDRAMON, -63);
     }
 
     slotsToSkip = 2;
@@ -4459,7 +4459,7 @@ static void SetBallStuck(struct Sprite *sprite)
     // The below slot ids are relative to the slot the ball got stuck on
     if ((sRoulette->useAllomon_x + 1) & sRoulette->partySpeciesFlags)
     {
-        // If the player has the corresponding Pokémon in their party (HAS_ARESDRAMON or HAS_ALLOMON_X),
+        // If the player has the corresponding Pokémon in their party (HAS_ARRESTERDRAMON or HAS_ALLOMON_X),
         // there's a 75% chance that the ball will be moved to a spot they bet on
         // assuming it was one of the slots identified as a candidate
         if (betSlotId && (rand % 256) < 192)
@@ -4475,7 +4475,7 @@ static void SetBallStuck(struct Sprite *sprite)
     sprite->callback = SpriteCB_UnstickBall;
 }
 
-static const u16 sAresdramonShadowAlphas[] = {
+static const u16 sArresterdramonShadowAlphas[] = {
     0x907,
     0x808,
     0x709,
@@ -4488,7 +4488,7 @@ static const u16 sAresdramonShadowAlphas[] = {
     0x010,
 };
 
-static void SpriteCB_AresdramonExit(struct Sprite *sprite)
+static void SpriteCB_ArresterdramonExit(struct Sprite *sprite)
 {
     // Delay for screen shaking, then exit left
     if (sprite->data[1]++ >= sprite->data[3])
@@ -4499,14 +4499,14 @@ static void SpriteCB_AresdramonExit(struct Sprite *sprite)
             if (!sRoulette->ballUnstuck)
                 sRoulette->ballUnstuck = TRUE;
             DestroySprite(sprite);
-            sRoulette->aresdramonShadowTimer = 0;
-            sRoulette->aresdramonShadowAlpha = sAresdramonShadowAlphas[0];
+            sRoulette->arresterdramonShadowTimer = 0;
+            sRoulette->arresterdramonShadowAlpha = sArresterdramonShadowAlphas[0];
         }
     }
 }
 
-// Handles both the screen shake and ball shadow effect for when Aresdramon unsticks the ball
-static void SpriteCB_AresdramonShakeScreen(struct Sprite *sprite)
+// Handles both the screen shake and ball shadow effect for when Arresterdramon unsticks the ball
+static void SpriteCB_ArresterdramonShakeScreen(struct Sprite *sprite)
 {
     int screenShakeIdx;
     u16 screenShakeOffsets[][4] = {
@@ -4535,71 +4535,71 @@ static void SpriteCB_AresdramonShakeScreen(struct Sprite *sprite)
     }
 }
 
-static void SpriteCB_AresdramonFall(struct Sprite *sprite)
+static void SpriteCB_ArresterdramonFall(struct Sprite *sprite)
 {
     f32 timer;
     sprite->data[1]++;
     timer = sprite->data[1];
     sprite->y2 = timer * 0.039f * timer;
-    sRoulette->aresdramonShadowAlpha = sAresdramonShadowAlphas[(sRoulette->aresdramonShadowTimer - 1) / 2];
-    if (sRoulette->aresdramonShadowTimer < ARRAY_COUNT(sAresdramonShadowAlphas) * 2 - 1)
-        sRoulette->aresdramonShadowTimer++;
+    sRoulette->arresterdramonShadowAlpha = sArresterdramonShadowAlphas[(sRoulette->arresterdramonShadowTimer - 1) / 2];
+    if (sRoulette->arresterdramonShadowTimer < ARRAY_COUNT(sArresterdramonShadowAlphas) * 2 - 1)
+        sRoulette->arresterdramonShadowTimer++;
     if (sprite->data[1] > 60)
     {
         sprite->data[1] = 0;
-        sprite->callback = SpriteCB_AresdramonExit;
-        gSprites[sprite->sMonShadowSpriteId].callback  = SpriteCB_AresdramonExit;
+        sprite->callback = SpriteCB_ArresterdramonExit;
+        gSprites[sprite->sMonShadowSpriteId].callback  = SpriteCB_ArresterdramonExit;
         gSprites[sprite->sMonShadowSpriteId].data[1] = -2;
         gSprites[sprite->sBallShadowSpriteId].invisible = FALSE;
-        gSprites[sprite->sBallShadowSpriteId].callback  = SpriteCB_AresdramonShakeScreen;
+        gSprites[sprite->sBallShadowSpriteId].callback  = SpriteCB_ArresterdramonShakeScreen;
         m4aSongNumStart(SE_M_STRENGTH);
     }
 }
 
-static void SpriteCB_Aresdramon(struct Sprite *sprite)
+static void SpriteCB_Arresterdramon(struct Sprite *sprite)
 {
     if (sprite->data[7] == 0)
     {
         // Wait for the ball to be a specific angle (or its 180 degree opposite) specified by the table
-        // Once it is, reveal the shadow for Aresdramon falling in
+        // Once it is, reveal the shadow for Arresterdramon falling in
         if (!sRoulette->ball->sStuckOnWheelLeft)
         {
-            if (sRoulette->ball->sBallAngle != sRouletteTables[sRoulette->tableId].aresdramon.startAngle)
+            if (sRoulette->ball->sBallAngle != sRouletteTables[sRoulette->tableId].arresterdramon.startAngle)
                 return;
         }
         else
         {
-            if (sRoulette->ball->sBallAngle != sRouletteTables[sRoulette->tableId].aresdramon.startAngle + 180)
+            if (sRoulette->ball->sBallAngle != sRouletteTables[sRoulette->tableId].arresterdramon.startAngle + 180)
                 return;
         }
 
         sprite->invisible = FALSE;
         sprite->data[7]++;
         m4aSongNumStart(SE_FALL);
-        sRoulette->aresdramonShadowTimer = 1;
-        sRoulette->aresdramonShadowAlpha = sAresdramonShadowAlphas[0];
+        sRoulette->arresterdramonShadowTimer = 1;
+        sRoulette->arresterdramonShadowAlpha = sArresterdramonShadowAlphas[0];
     }
     else
     {
-        sRoulette->aresdramonShadowAlpha = sAresdramonShadowAlphas[(sRoulette->aresdramonShadowTimer - 1) / 2];
-        if (sRoulette->aresdramonShadowTimer < 19)
-            sRoulette->aresdramonShadowTimer++;
+        sRoulette->arresterdramonShadowAlpha = sArresterdramonShadowAlphas[(sRoulette->arresterdramonShadowTimer - 1) / 2];
+        if (sRoulette->arresterdramonShadowTimer < 19)
+            sRoulette->arresterdramonShadowTimer++;
 
         // Wait for the ball to be a specific angle (or its 180 degree opposite) specified by the table
-        // Once it is, have Aresdramon begin to fall in
+        // Once it is, have Arresterdramon begin to fall in
         // On both tables this angle is 15 degrees off the "start" angle
         if (!sRoulette->ball->sStuckOnWheelLeft)
         {
-            if (sRoulette->ball->sBallAngle != sRouletteTables[sRoulette->tableId].aresdramon.dropAngle)
+            if (sRoulette->ball->sBallAngle != sRouletteTables[sRoulette->tableId].arresterdramon.dropAngle)
                 return;
         }
         else
         {
-            if (sRoulette->ball->sBallAngle != sRouletteTables[sRoulette->tableId].aresdramon.dropAngle + 180)
+            if (sRoulette->ball->sBallAngle != sRouletteTables[sRoulette->tableId].arresterdramon.dropAngle + 180)
                 return;
         }
 
-        gSprites[sprite->sMonSpriteId].callback  = SpriteCB_AresdramonFall;
+        gSprites[sprite->sMonSpriteId].callback  = SpriteCB_ArresterdramonFall;
         gSprites[sprite->sMonSpriteId].invisible = FALSE;
         sprite->callback  = &SpriteCallbackDummy;
         sprite->data[7] = 0;

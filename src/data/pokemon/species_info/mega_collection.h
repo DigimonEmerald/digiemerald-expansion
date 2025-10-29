@@ -4197,7 +4197,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             "With its wings, it controls its position in\n"
             "the air. Its proficient fighting skills\n"
             "enable it to keep up with big bruisers\n"
-            "like Kozenimon and Bioquetmon."),
+            "like Kozenimon and Bioquetzalmon."),
         .pokemonScale = 366,
         .pokemonOffset = 7,
         .trainerScale = 257,

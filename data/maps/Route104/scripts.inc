@@ -142,7 +142,7 @@ Route104_EventScript_MayAskToBattle::
 Route104_EventScript_BattleMay::
 	msgbox Route104_Text_MayIntro, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, Route104_EventScript_BattleMaySunarzamon
+	case 0, Route104_EventScript_BattleMaySunarizamon
 	case 1, Route104_EventScript_BattleMaySyakomon_x
 	case 2, Route104_EventScript_BattleMayTerriermon
 	end
@@ -158,8 +158,8 @@ Route104_EventScript_RestoreMusic::
 	fadedefaultbgm
 	return
 
-Route104_EventScript_BattleMaySunarzamon::
-	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_SUNARZAMON, Route104_Text_MayDefeat
+Route104_EventScript_BattleMaySunarizamon::
+	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_SUNARIZAMON, Route104_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
 	goto Route104_EventScript_MayDefeated
 	end
@@ -214,7 +214,7 @@ Route104_EventScript_BrendanAskToBattle::
 Route104_EventScript_BattleBrendan::
 	msgbox Route104_Text_BrendanIntro, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, Route104_EventScript_BattleBrendanSunarzamon
+	case 0, Route104_EventScript_BattleBrendanSunarizamon
 	case 1, Route104_EventScript_BattleBrendanSyakomon_x
 	case 2, Route104_EventScript_BattleBrendanTerriermon
 	end
@@ -225,8 +225,8 @@ Route104_EventScript_BrendanDefeated::
 	releaseall
 	end
 
-Route104_EventScript_BattleBrendanSunarzamon::
-	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_SUNARZAMON, Route104_Text_BrendanDefeat
+Route104_EventScript_BattleBrendanSunarizamon::
+	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_SUNARIZAMON, Route104_Text_BrendanDefeat
 	setflag FLAG_DEFEATED_RIVAL_ROUTE_104
 	goto Route104_EventScript_BrendanDefeated
 	end

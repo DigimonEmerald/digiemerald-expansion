@@ -416,14 +416,14 @@ $(GEOGREYMONGFXDIR)/scene_4/geogreymon.4bpp: %.4bpp: %.png
 graphics/picture_frame/lobby.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 86 -Wnum_tiles
 
-$(ROULETTEGFXDIR)/roulette_tilt.4bpp: $(ROULETTEGFXDIR)/aresdramon.4bpp \
+$(ROULETTEGFXDIR)/roulette_tilt.4bpp: $(ROULETTEGFXDIR)/arresterdramon.4bpp \
                                       $(ROULETTEGFXDIR)/tailow.4bpp
 	@cat $^ >$@
 
 $(ROULETTEGFXDIR)/wheel_icons.4bpp: $(ROULETTEGFXDIR)/exveemon.4bpp \
-                                    $(ROULETTEGFXDIR)/biostegmon.4bpp \
+                                    $(ROULETTEGFXDIR)/biostegomon.4bpp \
                                     $(ROULETTEGFXDIR)/birdramon.4bpp \
-                                    $(ROULETTEGFXDIR)/betgamamon.4bpp
+                                    $(ROULETTEGFXDIR)/betelgammamon.4bpp
 	@cat $^ >$@
 
 $(BATTRANSGFXDIR)/regis.4bpp: %.4bpp: %.png

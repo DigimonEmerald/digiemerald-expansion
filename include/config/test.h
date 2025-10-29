@@ -55,8 +55,8 @@
 #define P_FAMILY_FUFUMON                  TRUE
 #undef P_FAMILY_KETOMON
 #define P_FAMILY_KETOMON                  TRUE
-#undef P_FAMILY_CHOROMON
-#define P_FAMILY_CHOROMON                 TRUE
+#undef P_FAMILY_METALKOROMON
+#define P_FAMILY_METALKOROMON                 TRUE
 #undef P_FAMILY_NYOKIMON
 #define P_FAMILY_NYOKIMON                 TRUE
 #undef P_FAMILY_PAFUMON
@@ -73,8 +73,8 @@
 #define P_FAMILY_RELEMON                  TRUE
 #undef P_FAMILY_SANDMON
 #define P_FAMILY_SANDMON              TRUE
-#undef P_FAMILY_ICEBOTAMON
-#define P_FAMILY_ICEBOTAMON                   TRUE
+#undef P_FAMILY_SNOWBOTAMON
+#define P_FAMILY_SNOWBOTAMON                   TRUE
 #undef P_FAMILY_ZERIMON
 #define P_FAMILY_ZERIMON                  TRUE
 #undef P_FAMILY_ARGOMON_IT
@@ -149,26 +149,26 @@
 #define P_FAMILY_BETAMON_X            TRUE
 #undef P_FAMILY_BIYOMON
 #define P_FAMILY_BIYOMON                  TRUE
-#undef P_FAMILY_BLKAGUMON_X
-#define P_FAMILY_BLKAGUMON_X                 TRUE
-#undef P_FAMILY_BLKGUILMON
-#define P_FAMILY_BLKGUILMON                  TRUE
+#undef P_FAMILY_BLACKAGUMON_X
+#define P_FAMILY_BLACKAGUMON_X                 TRUE
+#undef P_FAMILY_BLACKGUILMON
+#define P_FAMILY_BLACKGUILMON                  TRUE
 #undef P_FAMILY_BULUCOMON
 #define P_FAMILY_BULUCOMON                 TRUE
 #undef P_FAMILY_BURGERMON
 #define P_FAMILY_BURGERMON                 TRUE
-#undef P_FAMILY_SAMUAGUMON
-#define P_FAMILY_SAMUAGUMON                    TRUE
+#undef P_FAMILY_BUSHIAGUMON
+#define P_FAMILY_BUSHIAGUMON                    TRUE
 #undef P_FAMILY_CANDLEMON
 #define P_FAMILY_CANDLEMON              TRUE
 #undef P_FAMILY_CHIKURIMON
 #define P_FAMILY_CHIKURIMON                  TRUE
-#undef P_FAMILY_TYUTYUMON
-#define P_FAMILY_TYUTYUMON                  TRUE
+#undef P_FAMILY_CHUUCHUUMON
+#define P_FAMILY_CHUUCHUUMON                  TRUE
 #undef P_FAMILY_CHUUMON
 #define P_FAMILY_CHUUMON                  TRUE
-#undef P_FAMILY_HAZYAGUMON
-#define P_FAMILY_HAZYAGUMON                TRUE
+#undef P_FAMILY_CLEARAGUMON
+#define P_FAMILY_CLEARAGUMON                TRUE
 #undef P_FAMILY_CORONAMON
 #define P_FAMILY_CORONAMON                  TRUE
 #undef P_FAMILY_CRABMON
@@ -187,8 +187,8 @@
 #define P_FAMILY_DRACOMON                 TRUE
 #undef P_FAMILY_DRACOMON_X
 #define P_FAMILY_DRACOMON_X                TRUE
-#undef P_FAMILY_EBIBURGMON
-#define P_FAMILY_EBIBURGMON                  TRUE
+#undef P_FAMILY_EBIBURGAMON
+#define P_FAMILY_EBIBURGAMON                  TRUE
 #undef P_FAMILY_EKAKIMON
 #define P_FAMILY_EKAKIMON                 TRUE
 #undef P_FAMILY_ELECMON
@@ -226,8 +226,8 @@
 #define P_FAMILY_JUNKMON               TRUE
 #undef P_FAMILY_KERAMON
 #define P_FAMILY_KERAMON                  TRUE
-#undef P_FAMILY_KOKABUIMON
-#define P_FAMILY_KOKABUIMON                   TRUE
+#undef P_FAMILY_KOKABUTERIMON
+#define P_FAMILY_KOKABUTERIMON                   TRUE
 #undef P_FAMILY_KOKUWAMON
 #define P_FAMILY_KOKUWAMON                 TRUE
 #undef P_FAMILY_KOTEMON
@@ -250,8 +250,8 @@
 #define P_FAMILY_LUXMON               TRUE
 #undef P_FAMILY_METABEE
 #define P_FAMILY_METABEE                  TRUE
-#undef P_FAMILY_MODBETAMON
-#define P_FAMILY_MODBETAMON                TRUE
+#undef P_FAMILY_MODOKIBETAMON
+#define P_FAMILY_MODOKIBETAMON                TRUE
 #undef P_FAMILY_MONMON
 #define P_FAMILY_MONMON                TRUE
 #undef P_FAMILY_MORPHOMON
@@ -268,8 +268,8 @@
 #define P_FAMILY_PALMON                  TRUE
 #undef P_FAMILY_PATAMON
 #define P_FAMILY_PATAMON                 TRUE
-#undef P_FAMILY_PAWNMON_BLACK
-#define P_FAMILY_PAWNMON_BLACK                TRUE
+#undef P_FAMILY_PAWNCHESSMON_BLACK
+#define P_FAMILY_PAWNCHESSMON_BLACK                TRUE
 #undef P_FAMILY_PENGUINMON
 #define P_FAMILY_PENGUINMON                TRUE
 #undef P_FAMILY_PETITMAMON
@@ -286,10 +286,10 @@
 #define P_FAMILY_RYUDAMON                TRUE
 #undef P_FAMILY_SHAMANMON
 #define P_FAMILY_SHAMANMON                 TRUE
-#undef P_FAMILY_YUKIAGUMON
-#define P_FAMILY_YUKIAGUMON                  TRUE
-#undef P_FAMILY_YUKIAGUMON_06
-#define P_FAMILY_YUKIAGUMON_06                   TRUE
+#undef P_FAMILY_SNOWAGUMON
+#define P_FAMILY_SNOWAGUMON                  TRUE
+#undef P_FAMILY_SNOWAGUMON_06
+#define P_FAMILY_SNOWAGUMON_06                   TRUE
 #undef P_FAMILY_ICEGOBIMON
 #define P_FAMILY_ICEGOBIMON                 TRUE
 #undef P_FAMILY_SOLARMON
@@ -301,8 +301,8 @@
 #undef P_FAMILY_STRABIMON
 #define P_FAMILY_STRABIMON                  TRUE
 
-#undef P_FAMILY_SUNARZAMON
-#define P_FAMILY_SUNARZAMON                 TRUE
+#undef P_FAMILY_SUNARIZAMON
+#define P_FAMILY_SUNARIZAMON                 TRUE
 #undef P_FAMILY_SYAKOMON_X
 #define P_FAMILY_SYAKOMON_X                 TRUE
 #undef P_FAMILY_TERRIERMON
@@ -325,28 +325,28 @@
 #define P_FAMILY_APEMON                   TRUE
 #undef P_FAMILY_ARCHELOMON
 #define P_FAMILY_ARCHELOMON                 TRUE
-#undef P_FAMILY_ARESDRAMON
-#define P_FAMILY_ARESDRAMON               TRUE
+#undef P_FAMILY_ARRESTERDRAMON
+#define P_FAMILY_ARRESTERDRAMON               TRUE
 #undef P_FAMILY_AURUMON
 #define P_FAMILY_AURUMON                 TRUE
 #undef P_FAMILY_BAKEMON
 #define P_FAMILY_BAKEMON                 TRUE
 #undef P_FAMILY_BAOHUCKMON
 #define P_FAMILY_BAOHUCKMON                 TRUE
-#undef P_FAMILY_BETGAMAMON
-#define P_FAMILY_BETGAMAMON                TRUE
-#undef P_FAMILY_BIOTHUNMON
-#define P_FAMILY_BIOTHUNMON                TRUE
+#undef P_FAMILY_BETELGAMMAMON
+#define P_FAMILY_BETELGAMMAMON                TRUE
+#undef P_FAMILY_BIOTHUNDERBIRDMON
+#define P_FAMILY_BIOTHUNDERBIRDMON                TRUE
 #undef P_FAMILY_BIRDRAMON
 #define P_FAMILY_BIRDRAMON                  TRUE
-#undef P_FAMILY_BLGARGOMON
-#define P_FAMILY_BLGARGOMON                 TRUE
-#undef P_FAMILY_BLGARURMON
-#define P_FAMILY_BLGARURMON                  TRUE
-#undef P_FAMILY_BLKGATOMON
-#define P_FAMILY_BLKGATOMON                    TRUE
-#undef P_FAMILY_SAWKUWAMON
-#define P_FAMILY_SAWKUWAMON                TRUE
+#undef P_FAMILY_BLACKGARGOMON
+#define P_FAMILY_BLACKGARGOMON                 TRUE
+#undef P_FAMILY_BLACKGARURUMON
+#define P_FAMILY_BLACKGARURUMON                  TRUE
+#undef P_FAMILY_BLACKGATOMON
+#define P_FAMILY_BLACKGATOMON                    TRUE
+#undef P_FAMILY_BLADEKUWAGAMON
+#define P_FAMILY_BLADEKUWAGAMON                TRUE
 #undef P_FAMILY_BOARMON
 #define P_FAMILY_BOARMON               TRUE
 #undef P_FAMILY_BOOGIEMON
@@ -359,12 +359,12 @@
 #define P_FAMILY_BULLMON                 TRUE
 #undef P_FAMILY_BURAIMON
 #define P_FAMILY_BURAIMON                  TRUE
-#undef P_FAMILY_CHOUMON
-#define P_FAMILY_CHOUMON                TRUE
+#undef P_FAMILY_BUTTERFLYMON
+#define P_FAMILY_BUTTERFLYMON                TRUE
 #undef P_FAMILY_CHAMBLEMON
 #define P_FAMILY_CHAMBLEMON                 TRUE
-#undef P_FAMILY_CHRYSALMON
-#define P_FAMILY_CHRYSALMON                   TRUE
+#undef P_FAMILY_CHRYSALIMON
+#define P_FAMILY_CHRYSALIMON                   TRUE
 #undef P_FAMILY_CLOCKMON
 #define P_FAMILY_CLOCKMON                 TRUE
 #undef P_FAMILY_CLOCKMON_FUSION
@@ -375,22 +375,22 @@
 #define P_FAMILY_COREDRAMON_GREEN                TRUE
 #undef P_FAMILY_DARCMON
 #define P_FAMILY_DARCMON                  TRUE
-#undef P_FAMILY_DARLIZAMON
-#define P_FAMILY_DARLIZAMON                  TRUE
-#undef P_FAMILY_DARKTYRMON
-#define P_FAMILY_DARKTYRMON                TRUE
-#undef P_FAMILY_DARKTYRMON_X
-#define P_FAMILY_DARKTYRMON_X                 TRUE
-#undef P_FAMILY_DECKDRAMON
-#define P_FAMILY_DECKDRAMON                TRUE
+#undef P_FAMILY_DARKLIZARDMON
+#define P_FAMILY_DARKLIZARDMON                  TRUE
+#undef P_FAMILY_DARKTYRANNOMON
+#define P_FAMILY_DARKTYRANNOMON                TRUE
+#undef P_FAMILY_DARKTYRANNOMON_X
+#define P_FAMILY_DARKTYRANNOMON_X                 TRUE
+#undef P_FAMILY_DECKERDRAMON
+#define P_FAMILY_DECKERDRAMON                TRUE
 #undef P_FAMILY_DELTAMON
 #define P_FAMILY_DELTAMON                 TRUE
 #undef P_FAMILY_DEPTHMON
 #define P_FAMILY_DEPTHMON                TRUE
 #undef P_FAMILY_DEVIDRAMON
 #define P_FAMILY_DEVIDRAMON                TRUE
-#undef P_FAMILY_DEXDORUMON
-#define P_FAMILY_DEXDORUMON                  TRUE
+#undef P_FAMILY_DEXDORUGAMON
+#define P_FAMILY_DEXDORUGAMON                  TRUE
 #undef P_FAMILY_DIGMON
 #define P_FAMILY_DIGMON                  TRUE
 #undef P_FAMILY_DOBERMON
@@ -399,14 +399,14 @@
 #define P_FAMILY_DOGGYMON                  TRUE
 #undef P_FAMILY_DOLPHMON
 #define P_FAMILY_DOLPHMON                TRUE
-#undef P_FAMILY_DONSHOUMON
-#define P_FAMILY_DONSHOUMON                 TRUE
+#undef P_FAMILY_DONSHOUTMON
+#define P_FAMILY_DONSHOUTMON                 TRUE
 #undef P_FAMILY_DORUGAMON
 #define P_FAMILY_DORUGAMON                 TRUE
 #undef P_FAMILY_DRIMOGEMON
 #define P_FAMILY_DRIMOGEMON                 TRUE
-#undef P_FAMILY_ELEPHANMON
-#define P_FAMILY_ELEPHANMON                 TRUE
+#undef P_FAMILY_ELEPHANTMON
+#define P_FAMILY_ELEPHANTMON                 TRUE
 #undef P_FAMILY_EOSMON_CHAMPION
 #define P_FAMILY_EOSMON_CHAMPION                TRUE
 #undef P_FAMILY_EXERMON
@@ -417,8 +417,8 @@
 #define P_FAMILY_EYESMON_SCATTERMODE                  TRUE
 #undef P_FAMILY_FIRAMON
 #define P_FAMILY_FIRAMON                TRUE
-#undef P_FAMILY_FLARIZAMON
-#define P_FAMILY_FLARIZAMON               TRUE
+#undef P_FAMILY_FLARERIZAMON
+#define P_FAMILY_FLARERIZAMON               TRUE
 #undef P_FAMILY_FLYBEEMON
 #define P_FAMILY_FLYBEEMON                 TRUE
 #undef P_FAMILY_FLYMON
@@ -427,8 +427,8 @@
 #define P_FAMILY_FUGAMON                  TRUE
 #undef P_FAMILY_GARGOMON
 #define P_FAMILY_GARGOMON                TRUE
-#undef P_FAMILY_GARGOYLMON
-#define P_FAMILY_GARGOYLMON                  TRUE
+#undef P_FAMILY_GARGOYLEMON
+#define P_FAMILY_GARGOYLEMON                  TRUE
 #undef P_FAMILY_GARURUMON
 #define P_FAMILY_GARURUMON               TRUE
 #undef P_FAMILY_GARURUMON_X

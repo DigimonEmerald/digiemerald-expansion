@@ -6,7 +6,7 @@ PetalburgWoods_EventScript_DevonResearcherLeft::
 	call PetalburgWoods_EventScript_DevonResearcherIntro
 	applymovement LOCALID_PETALBURG_WOODS_DEVON_EMPLOYEE, PetalburgWoods_Movement_DevonResearcherApproachPlayerLeft
 	waitmovement 0
-	msgbox PetalburgWoods_Text_HaveYouSeenAresdramon, MSGBOX_DEFAULT
+	msgbox PetalburgWoods_Text_HaveYouSeenArresterdramon, MSGBOX_DEFAULT
 	closemessage
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
 	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaEntrance
@@ -43,7 +43,7 @@ PetalburgWoods_EventScript_DevonResearcherRight::
 	waitmovement 0
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
-	msgbox PetalburgWoods_Text_HaveYouSeenAresdramon, MSGBOX_DEFAULT
+	msgbox PetalburgWoods_Text_HaveYouSeenArresterdramon, MSGBOX_DEFAULT
 	closemessage
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
 	applymovement LOCALID_PETALBURG_WOODS_GRUNT, PetalburgWoods_Movement_AquaEntrance
@@ -319,9 +319,9 @@ PetalburgWoods_Text_NotAOneToBeFound:
 	.string "Hmmm…\n"
 	.string "Not a one to be found…$"
 
-PetalburgWoods_Text_HaveYouSeenAresdramon:
+PetalburgWoods_Text_HaveYouSeenArresterdramon:
 	.string "Hello, have you seen any POKéMON\n"
-	.string "called ARESDRAMON around here?\p"
+	.string "called ARRESTERDRAMON around here?\p"
 	.string "I really love that POKéMON.$"
 
 PetalburgWoods_Text_IWasGoingToAmbushYou:

@@ -50,7 +50,7 @@
 #define VAR_RECYCLE_GOODS                                0x4020
 #define VAR_REPEL_STEP_COUNT                             0x4021
 #define VAR_ICE_STEP_COUNT                               0x4022
-#define VAR_STARTER_MON                                  0x4023 // 0=Sunarzamon, 1=Syakomon_x, 2=Terriermon
+#define VAR_STARTER_MON                                  0x4023 // 0=Sunarizamon, 1=Syakomon_x, 2=Terriermon
 #define VAR_MIRAGE_RND_H                                 0x4024
 #define VAR_MIRAGE_RND_L                                 0x4025
 #define VAR_SECRET_BASE_MAP                              0x4026
@@ -76,9 +76,9 @@
 #define VAR_ABNORMAL_WEATHER_STEP_COUNTER                0x4038
 #define VAR_SHOULD_END_ABNORMAL_WEATHER                  0x4039
 #define VAR_FARAWAY_ISLAND_STEP_COUNTER                  0x403A
-#define VAR_GARGOYLMON_STEPS_1                               0x403B
-#define VAR_GARGOYLMON_STEPS_2                               0x403C
-#define VAR_GARGOYLMON_STEPS_3                               0x403D
+#define VAR_GARGOYLEMON_STEPS_1                               0x403B
+#define VAR_GARGOYLEMON_STEPS_2                               0x403C
+#define VAR_GARGOYLEMON_STEPS_3                               0x403D
 #define VAR_ALTERING_CAVE_WILD_SET                       0x403E
 #define VAR_DISTRIBUTE_EON_TICKET                        0x403F // This var is read and written, but is always zero. The only way to obtain the Eon Ticket in Emerald is via Record Mixing
 #define VAR_DAYS                                         0x4040

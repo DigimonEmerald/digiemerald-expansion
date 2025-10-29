@@ -7,8 +7,8 @@ gTrickHouse_Mechadoll_Tinkermon::
 gTrickHouse_Mechadoll_Allomon_x::
 	.string "ALLOMON_X$"
 
-gTrickHouse_Mechadoll_Biostegmon::
-	.string "BIOSTEGMON$"
+gTrickHouse_Mechadoll_Biostegomon::
+	.string "BIOSTEGOMON$"
 
 gTrickHouse_Mechadoll_Zubamon::
 	.string "ZUBAMON$"
@@ -19,8 +19,8 @@ gTrickHouse_Mechadoll_Angemon::
 gTrickHouse_Mechadoll_Zenimon::
 	.string "ZENIMON$"
 
-gTrickHouse_Mechadoll_Icebotamon::
-	.string "ICEBOTAMON$"
+gTrickHouse_Mechadoll_Snowbotamon::
+	.string "SNOWBOTAMON$"
 
 gTrickHouse_Mechadoll_Bakemon::
 	.string "BAKEMON$"
@@ -37,8 +37,8 @@ gTrickHouse_Mechadoll_Aurumon::
 gTrickHouse_Mechadoll_Tinkermon2::
 	.string "TINKERMON$"
 
-gTrickHouse_Mechadoll_Aresdramon::
-	.string "ARESDRAMON$"
+gTrickHouse_Mechadoll_Arresterdramon::
+	.string "ARRESTERDRAMON$"
 
 gTrickHouse_Mechadoll_Toyagumon2::
 	.string "TOYAGUMON$"
@@ -46,11 +46,11 @@ gTrickHouse_Mechadoll_Toyagumon2::
 gTrickHouse_Mechadoll_Tinkermon3::
 	.string "TINKERMON$"
 
-gTrickHouse_Mechadoll_Icebotamon2::
-	.string "ICEBOTAMON$"
+gTrickHouse_Mechadoll_Snowbotamon2::
+	.string "SNOWBOTAMON$"
 
-gTrickHouse_Mechadoll_Choumon::
-	.string "CHOUMON$"
+gTrickHouse_Mechadoll_Butterflymon::
+	.string "BUTTERFLYMON$"
 
 gTrickHouse_Mechadoll_BurnHeal::
 	.string "BURN HEAL$"

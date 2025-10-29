@@ -3,12 +3,12 @@ const u16 gIntroPlayer_Pal[] = INCBIN_U16("graphics/intro/scene_2/player.gbapal"
 const u16 gIntro3Bg_Pal[16][16] = INCBIN_U16("graphics/intro/scene_3/bg.gbapal");
 const u16 gIntroBucchiemon_green_Pal[] = INCBIN_U16("graphics/intro/scene_2/bucchiemon_green.gbapal");
 const u16 gIntroSyakomon_x_Pal[] = INCBIN_U16("graphics/intro/scene_2/syakomon_x.gbapal");
-const u16 gIntroBomnanimon_Pal[] = INCBIN_U16("graphics/intro/scene_2/bomnanimon.gbapal");
+const u16 gIntroBombernanimon_Pal[] = INCBIN_U16("graphics/intro/scene_2/bombernanimon.gbapal");
 const u16 gIntroDamemon_fusion_Pal[] = INCBIN_U16("graphics/intro/scene_2/damemon_fusion.gbapal");
 
 const u32 gIntroBucchiemon_green_Gfx[] = INCBIN_U32("graphics/intro/scene_2/bucchiemon_green.4bpp.smol");
 const u32 gIntroSyakomon_x_Gfx[] = INCBIN_U32("graphics/intro/scene_2/syakomon_x.4bpp.smol");
-const u32 gIntroBomnanimon_Gfx[] = INCBIN_U32("graphics/intro/scene_2/bomnanimon.4bpp.smol");
+const u32 gIntroBombernanimon_Gfx[] = INCBIN_U32("graphics/intro/scene_2/bombernanimon.4bpp.smol");
 const u32 gIntroDamemon_fusion_Gfx[] = INCBIN_U32("graphics/intro/scene_2/damemon_fusion.4bpp.smol");
 const u32 gIntroBrendan_Gfx[] = INCBIN_U32("graphics/intro/scene_2/brendan.4bpp.smol");
 const u32 gIntroMay_Gfx[] = INCBIN_U32("graphics/intro/scene_2/may.4bpp.smol");

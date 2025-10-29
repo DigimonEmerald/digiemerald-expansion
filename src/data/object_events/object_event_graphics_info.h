@@ -2924,7 +2924,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SangomonDoll = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SunarzamonDoll = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SunarizamonDoll = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -2939,7 +2939,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SunarzamonDoll = {
     .oam = &gObjectEventBaseOam_16x16,
     .subspriteTables = sOamTables_16x16,
     .anims = sAnimTable_Inanimate,
-    .images = sPicTable_SunarzamonDoll,
+    .images = sPicTable_SunarizamonDoll,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
@@ -3019,7 +3019,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ExveemonDoll = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DexdorumonDoll = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DexdorugamonDoll = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -3034,11 +3034,11 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DexdorumonDoll = {
     .oam = &gObjectEventBaseOam_16x16,
     .subspriteTables = sOamTables_16x16,
     .anims = sAnimTable_Inanimate,
-    .images = sPicTable_DexdorumonDoll,
+    .images = sPicTable_DexdorugamonDoll,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DonshoumonDoll = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DonshoutmonDoll = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -3053,11 +3053,11 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DonshoumonDoll = {
     .oam = &gObjectEventBaseOam_16x16,
     .subspriteTables = sOamTables_16x16,
     .anims = sAnimTable_Inanimate,
-    .images = sPicTable_DonshoumonDoll,
+    .images = sPicTable_DonshoutmonDoll,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BiostegmonDoll = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BiostegomonDoll = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -3072,7 +3072,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BiostegmonDoll = {
     .oam = &gObjectEventBaseOam_16x16,
     .subspriteTables = sOamTables_16x16,
     .anims = sAnimTable_Inanimate,
-    .images = sPicTable_BiostegmonDoll,
+    .images = sPicTable_BiostegomonDoll,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
@@ -3095,7 +3095,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BirdramonDoll = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DarlizamonDoll = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DarklizardmonDoll = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -3110,7 +3110,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DarlizamonDoll = {
     .oam = &gObjectEventBaseOam_16x16,
     .subspriteTables = sOamTables_16x16,
     .anims = sAnimTable_Inanimate,
-    .images = sPicTable_DarlizamonDoll,
+    .images = sPicTable_DarklizardmonDoll,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
@@ -3513,7 +3513,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigGargomonDoll = 
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigGargoylmonDoll = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigGargoylemonDoll = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -3528,7 +3528,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigGargoylmonDoll 
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
     .anims = sAnimTable_Inanimate,
-    .images = sPicTable_BigGargoylmonDoll,
+    .images = sPicTable_BigGargoylemonDoll,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
@@ -3855,7 +3855,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gargomon = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gargoylmon = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gargoylemon = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -3912,7 +3912,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Birdramon = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Donshoumon = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Donshoutmon = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -3927,7 +3927,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Donshoumon = {
     .oam = &gObjectEventBaseOam_16x16,
     .subspriteTables = sOamTables_16x16,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_DonshoumonOld,
+    .images = sPicTable_DonshoutmonOld,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
@@ -4064,7 +4064,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Angemon = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DonshoumonBridgeShadow = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DonshoutmonBridgeShadow = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_BRIDGE_REFLECTION,
@@ -4079,7 +4079,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DonshoumonBridgeSh
     .oam = &gObjectEventBaseOam_16x16,
     .subspriteTables = sOamTables_16x16,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_DonshoumonOld,
+    .images = sPicTable_DonshoutmonOld,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
@@ -4102,7 +4102,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TuberMSwimming = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Biostegmon = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Biostegomon = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_1,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -4117,7 +4117,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Biostegmon = {
     .oam = &gObjectEventBaseOam_16x16,
     .subspriteTables = sOamTables_16x16,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_BiostegmonOld,
+    .images = sPicTable_BiostegomonOld,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 

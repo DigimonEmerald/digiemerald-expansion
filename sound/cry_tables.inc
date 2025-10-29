@@ -47,10 +47,10 @@ gCryTable::
 	cry Cry_LeafmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_KETOMON
-.if P_FAMILY_CHOROMON == TRUE
-	cry Cry_Choromon
+.if P_FAMILY_METALKOROMON == TRUE
+	cry Cry_Metalkoromon
 	cry Cry_Mokumon
-.endif @ P_FAMILY_CHOROMON
+.endif @ P_FAMILY_METALKOROMON
 .if P_FAMILY_NYOKIMON == TRUE
 	cry Cry_Nyokimon
 	cry Cry_Pabumon
@@ -96,13 +96,13 @@ gCryTable::
 	cry Cry_Sandmon
 	cry Cry_Tsubumon
 .endif @ P_FAMILY_SANDMON
-.if P_FAMILY_ICEBOTAMON == TRUE
-	cry Cry_Icebotamon
+.if P_FAMILY_SNOWBOTAMON == TRUE
+	cry Cry_Snowbotamon
 	cry Cry_Yuramon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Gotsumon
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_ICEBOTAMON
+.endif @ P_FAMILY_SNOWBOTAMON
 .if P_FAMILY_ZERIMON == TRUE
 	cry Cry_Zerimon
 	cry Cry_Zurumon
@@ -132,7 +132,7 @@ gCryTable::
 .endif @ P_FAMILY_CALUMON
 .if P_FAMILY_CHICCHIMON == TRUE
 	cry Cry_Chicchimon
-	cry Cry_Demmeramon
+	cry Cry_Demimeramon
 .endif @ P_FAMILY_CHICCHIMON
 .if P_FAMILY_DEMIVEEMON == TRUE
 	cry Cry_Demiveemon
@@ -228,7 +228,7 @@ gCryTable::
 .endif @ P_FAMILY_TANEMON
 .if P_FAMILY_TOKOMON_X == TRUE
 	cry Cry_Tokomon_x
-	cry Cry_Torballmon
+	cry Cry_Torikaraballmon
 	cry Cry_Tsumemon
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_TsumemonMega
@@ -237,9 +237,9 @@ gCryTable::
 .if P_FAMILY_TSUNOMON == TRUE
 	cry Cry_Tsunomon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry Cry_Kodekacmon
+	cry Cry_Minidekachimon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_KodekacmonMega
+	cry Cry_MinidekachimonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_TSUNOMON
@@ -281,7 +281,7 @@ gCryTable::
 .endif @ P_FAMILY_ARCADIAMON_ROOKIE
 .if P_FAMILY_ARGOMON_ROOKIE == TRUE
 	cry Cry_Argomon_rookie
-	cry Cry_Armadilmon
+	cry Cry_Armadillomon
 .endif @ P_FAMILY_ARGOMON_ROOKIE
 .if P_FAMILY_ARURAUMON == TRUE
 	cry Cry_Aruraumon
@@ -313,19 +313,19 @@ gCryTable::
 .endif @ P_FAMILY_BETAMON_X
 .if P_FAMILY_BIYOMON == TRUE
 	cry Cry_Biyomon
-	cry Cry_Blkagumon
+	cry Cry_Blackagumon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Psychemon
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_BIYOMON
-.if P_FAMILY_BLKAGUMON_X == TRUE
-	cry Cry_Blkagumon_x
-	cry Cry_Blkgabumon
-.endif @ P_FAMILY_BLKAGUMON_X
-.if P_FAMILY_BLKGUILMON == TRUE
-	cry Cry_Blkguilmon
+.if P_FAMILY_BLACKAGUMON_X == TRUE
+	cry Cry_Blackagumon_x
+	cry Cry_Blackgabumon
+.endif @ P_FAMILY_BLACKAGUMON_X
+.if P_FAMILY_BLACKGUILMON == TRUE
+	cry Cry_Blackguilmon
 	cry Cry_Bokomon
-.endif @ P_FAMILY_BLKGUILMON
+.endif @ P_FAMILY_BLACKGUILMON
 .if P_FAMILY_BULUCOMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_MimeJr
@@ -347,12 +347,12 @@ gCryTable::
 	cry Cry_Kleavor
 .endif @ P_GEN_8_CROSS_EVOS
 .endif @ P_FAMILY_BURGERMON
-.if P_FAMILY_SAMUAGUMON == TRUE
+.if P_FAMILY_BUSHIAGUMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Sangomon
 .endif @ P_GEN_2_CROSS_EVOS
-	cry Cry_Samuagumon
-.endif @ P_FAMILY_SAMUAGUMON
+	cry Cry_Bushiagumon
+.endif @ P_FAMILY_BUSHIAGUMON
 .if P_FAMILY_CANDLEMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Santaagumon
@@ -364,29 +364,29 @@ gCryTable::
 .endif @ P_FAMILY_CANDLEMON
 .if P_FAMILY_CHIKURIMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry Cry_Blktoyamon
+	cry Cry_Shadowtoyagumon
 .endif @ P_GEN_2_CROSS_EVOS
 	cry Cry_Chikurimon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Magmortar
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_CHIKURIMON
-.if P_FAMILY_TYUTYUMON == TRUE
-	cry Cry_Tyutyumon
+.if P_FAMILY_CHUUCHUUMON == TRUE
+	cry Cry_Chuuchuumon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_TyutyumonMega
+	cry Cry_ChuuchuumonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_TYUTYUMON
+.endif @ P_FAMILY_CHUUCHUUMON
 .if P_FAMILY_CHUUMON == TRUE
 	cry Cry_Chuumon
 .endif @ P_FAMILY_CHUUMON
-.if P_FAMILY_HAZYAGUMON == TRUE
-	cry Cry_Hazyagumon
-	cry Cry_Commdramon
+.if P_FAMILY_CLEARAGUMON == TRUE
+	cry Cry_Clearagumon
+	cry Cry_Commandramon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_CommdramonMega
+	cry Cry_CommandramonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_HAZYAGUMON
+.endif @ P_FAMILY_CLEARAGUMON
 .if P_FAMILY_CORONAMON == TRUE
 	cry Cry_Coronamon
 .endif @ P_FAMILY_CORONAMON
@@ -397,7 +397,7 @@ gCryTable::
 	cry Cry_Crabmon_x
 	cry Cry_Cutemon
 	cry Cry_Damemon
-	cry Cry_Demidevmon
+	cry Cry_Demidevimon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry Cry_Kunemon
 	cry Cry_Labramon
@@ -425,7 +425,7 @@ gCryTable::
 .endif @ P_FAMILY_DONDOKOMON
 .if P_FAMILY_DOTAGUMON == TRUE
 	cry Cry_Dotagumon
-	cry Cry_Dotfalcmon
+	cry Cry_Dotfalcomon
 .endif @ P_FAMILY_DOTAGUMON
 .if P_FAMILY_DRACMON == TRUE
 	cry Cry_Dracmon
@@ -442,9 +442,9 @@ gCryTable::
 .if P_FAMILY_DRACOMON_X == TRUE
 	cry Cry_Dracomon_x
 .endif @ P_FAMILY_DRACOMON_X
-.if P_FAMILY_EBIBURGMON == TRUE
-	cry Cry_Ebiburgmon
-.endif @ P_FAMILY_EBIBURGMON
+.if P_FAMILY_EBIBURGAMON == TRUE
+	cry Cry_Ebiburgamon
+.endif @ P_FAMILY_EBIBURGAMON
 .if P_FAMILY_EKAKIMON == TRUE
 	cry Cry_Ekakimon
 .endif @ P_FAMILY_EKAKIMON
@@ -519,7 +519,7 @@ gCryTable::
 .endif @ P_FAMILY_HYOKOMON
 .if P_FAMILY_JAZAMON == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
-	cry Cry_Biostegmon
+	cry Cry_Biostegomon
 .endif @ P_GEN_3_CROSS_EVOS
 	cry Cry_Jazamon
 	cry Cry_Jellymon
@@ -531,12 +531,12 @@ gCryTable::
 .if P_FAMILY_KERAMON == TRUE
 	cry Cry_Keramon
 	cry Cry_Keramon_x
-	cry Cry_Kodokgumon
+	cry Cry_Kodokugumon
 .endif @ P_FAMILY_KERAMON
-.if P_FAMILY_KOKABUIMON == TRUE
-	cry Cry_Kokabuimon
+.if P_FAMILY_KOKABUTERIMON == TRUE
+	cry Cry_Kokabuterimon
 	cry Cry_Ambipom
-.endif @ P_FAMILY_KOKABUIMON
+.endif @ P_FAMILY_KOKABUTERIMON
 .if P_FAMILY_KOKUWAMON == TRUE
 	cry Cry_Kokuwamon
 	cry Cry_Kokuwamon_x
@@ -593,10 +593,10 @@ gCryTable::
 	cry Cry_Gliscor
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_METABEE
-.if P_FAMILY_MODBETAMON == TRUE
-	cry Cry_Modbetamon
+.if P_FAMILY_MODOKIBETAMON == TRUE
+	cry Cry_Modokibetamon
 	cry Cry_Monitamon
-.endif @ P_FAMILY_MODBETAMON
+.endif @ P_FAMILY_MODOKIBETAMON
 .if P_FAMILY_MONMON == TRUE
 	cry Cry_Monmon
 .if P_HISUIAN_FORMS == TRUE
@@ -645,10 +645,10 @@ gCryTable::
 	cry Cry_Cursola
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_PATAMON
-.if P_FAMILY_PAWNMON_BLACK == TRUE
-	cry Cry_Pawnmon_black
-	cry Cry_Pawnmon_white
-.endif @ P_FAMILY_PAWNMON_BLACK
+.if P_FAMILY_PAWNCHESSMON_BLACK == TRUE
+	cry Cry_Pawnchessmon_black
+	cry Cry_Pawnchessmon_white
+.endif @ P_FAMILY_PAWNCHESSMON_BLACK
 .if P_FAMILY_PENGUINMON == TRUE
 	cry Cry_Penguinmon
 .endif @ P_FAMILY_PENGUINMON
@@ -684,18 +684,18 @@ gCryTable::
 .if P_FAMILY_SHAMANMON == TRUE
 	cry Cry_Shamanmon
 .endif @ P_FAMILY_SHAMANMON
-.if P_FAMILY_YUKIAGUMON == TRUE
-	cry Cry_Yukiagumon
-.endif @ P_FAMILY_YUKIAGUMON
-.if P_FAMILY_YUKIAGUMON_06 == TRUE
-	cry Cry_Yukiagumon_06
-.endif @ P_FAMILY_YUKIAGUMON_06
+.if P_FAMILY_SNOWAGUMON == TRUE
+	cry Cry_Snowagumon
+.endif @ P_FAMILY_SNOWAGUMON
+.if P_FAMILY_SNOWAGUMON_06 == TRUE
+	cry Cry_Snowagumon_06
+.endif @ P_FAMILY_SNOWAGUMON_06
 .if P_FAMILY_ICEGOBIMON == TRUE
 	cry Cry_Icegobimon
 .endif @ P_FAMILY_ICEGOBIMON
 .if P_FAMILY_SOLARMON == TRUE
 	cry Cry_Solarmon
-	cry Cry_Sounbrdmon
+	cry Cry_Soundbirdmon
 	cry Cry_Spadamon
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_SpadamonMega
@@ -710,14 +710,14 @@ gCryTable::
 .if P_FAMILY_STRABIMON == TRUE
 	cry Cry_Strabimon
 .endif @ P_FAMILY_STRABIMON
-.if P_FAMILY_SUNARZAMON == TRUE
-	cry Cry_Sunarzamon
+.if P_FAMILY_SUNARIZAMON == TRUE
+	cry Cry_Sunarizamon
 	cry Cry_Swimmon
 	cry Cry_Syakomon
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_SyakomonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SUNARZAMON
+.endif @ P_FAMILY_SUNARIZAMON
 .if P_FAMILY_SYAKOMON_X == TRUE
 	cry Cry_Syakomon_x
 	cry Cry_Tapirmon
@@ -788,18 +788,18 @@ gCryTable::
 	cry Cry_Archelomon
 	cry Cry_Argomon_champion
 .endif @ P_FAMILY_ARCHELOMON
-.if P_FAMILY_ARESDRAMON == TRUE
-	cry Cry_Aresdramon
-	cry Cry_Atamademon
-.endif @ P_FAMILY_ARESDRAMON
+.if P_FAMILY_ARRESTERDRAMON == TRUE
+	cry Cry_Arresterdramon
+	cry Cry_Atamadekachimon
+.endif @ P_FAMILY_ARRESTERDRAMON
 .if P_FAMILY_AURUMON == TRUE
 	cry Cry_Aurumon
 	cry Cry_Axemon
-	cry Cry_Baboonmon
+	cry Cry_Baboongamon
 .endif @ P_FAMILY_AURUMON
 .if P_FAMILY_BAKEMON == TRUE
 	cry Cry_Bakemon
-	cry Cry_Balistamon
+	cry Cry_Ballistamon
 	cry Cry_Baluchimon
 .endif @ P_FAMILY_BAKEMON
 .if P_FAMILY_BAOHUCKMON == TRUE
@@ -807,52 +807,52 @@ gCryTable::
 	cry Cry_Baromon
 	cry Cry_Trailmon_battle_armament
 .endif @ P_FAMILY_BAOHUCKMON
-.if P_FAMILY_BETGAMAMON == TRUE
-	cry Cry_Betgamamon
-	cry Cry_Bioquetmon
-.endif @ P_FAMILY_BETGAMAMON
-.if P_FAMILY_BIOTHUNMON == TRUE
-	cry Cry_Biothunmon
+.if P_FAMILY_BETELGAMMAMON == TRUE
+	cry Cry_Betelgammamon
+	cry Cry_Bioquetzalmon
+.endif @ P_FAMILY_BETELGAMMAMON
+.if P_FAMILY_BIOTHUNDERBIRDMON == TRUE
+	cry Cry_Biothunderbirdmon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Probopass
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_BIOTHUNMON
+.endif @ P_FAMILY_BIOTHUNDERBIRDMON
 .if P_FAMILY_BIRDRAMON == TRUE
 	cry Cry_Birdramon
-	cry Cry_Blgaogamon
+	cry Cry_Blackgaogamon
 .endif @ P_FAMILY_BIRDRAMON
-.if P_FAMILY_BLGARGOMON == TRUE
-	cry Cry_Blgargomon
+.if P_FAMILY_BLACKGARGOMON == TRUE
+	cry Cry_Blackgargomon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_BlgargomonMega
+	cry Cry_BlackgargomonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BLGARGOMON
-.if P_FAMILY_BLGARURMON == TRUE
-	cry Cry_Blgarurmon
+.endif @ P_FAMILY_BLACKGARGOMON
+.if P_FAMILY_BLACKGARURUMON == TRUE
+	cry Cry_Blackgarurumon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_BlgarurmonMega
+	cry Cry_BlackgarurumonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BLGARURMON
-.if P_FAMILY_BLKGATOMON == TRUE
-	cry Cry_Blkgatomon
-	cry Cry_Blkgatomon_uver
-	cry Cry_Blgrowlmon
+.endif @ P_FAMILY_BLACKGARURUMON
+.if P_FAMILY_BLACKGATOMON == TRUE
+	cry Cry_Blackgatomon
+	cry Cry_Blackgatomon_uver
+	cry Cry_Blackgrowlmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_BlgrowlmonMega
+	cry Cry_BlackgrowlmonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BLKGATOMON
-.if P_FAMILY_SAWKUWAMON == TRUE
-	cry Cry_Sawkuwamon
+.endif @ P_FAMILY_BLACKGATOMON
+.if P_FAMILY_BLADEKUWAGAMON == TRUE
+	cry Cry_Bladekuwagamon
 	cry Cry_Blimpmon
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_BlimpmonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SAWKUWAMON
+.endif @ P_FAMILY_BLADEKUWAGAMON
 .if P_FAMILY_BOARMON == TRUE
 	cry Cry_Boarmon
-	cry Cry_Bomnanimon
+	cry Cry_Bombernanimon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_BomnanimonMega
+	cry Cry_BombernanimonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BOARMON
 .if P_FAMILY_BOOGIEMON == TRUE
@@ -878,24 +878,24 @@ gCryTable::
 	cry Cry_Buraimon
 	cry Cry_Burgermon_champion
 .endif @ P_FAMILY_BURAIMON
-.if P_FAMILY_CHOUMON == TRUE
-	cry Cry_Choumon
+.if P_FAMILY_BUTTERFLYMON == TRUE
+	cry Cry_Butterflymon
 	cry Cry_Centarumon
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_CentarumonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_CHOUMON
+.endif @ P_FAMILY_BUTTERFLYMON
 .if P_FAMILY_CHAMBLEMON == TRUE
 	cry Cry_Chamblemon
 	cry Cry_Chamelemon
 .endif @ P_FAMILY_CHAMBLEMON
-.if P_FAMILY_CHRYSALMON == TRUE
-	cry Cry_Chrysalmon
+.if P_FAMILY_CHRYSALIMON == TRUE
+	cry Cry_Chrysalimon
 	cry Cry_Citramon
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry Cry_CitramonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_CHRYSALMON
+.endif @ P_FAMILY_CHRYSALIMON
 .if P_FAMILY_CLOCKMON == TRUE
 	cry Cry_Clockmon
 .endif @ P_FAMILY_CLOCKMON
@@ -915,22 +915,22 @@ gCryTable::
 	cry Cry_Darcmon
 	cry Cry_Trailmon_dark
 .endif @ P_FAMILY_DARCMON
-.if P_FAMILY_DARLIZAMON == TRUE
-	cry Cry_Darlizamon
-	cry Cry_Darmailmon
+.if P_FAMILY_DARKLIZARDMON == TRUE
+	cry Cry_Darklizardmon
+	cry Cry_Darkmaildramon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry Cry_DarmailmonMega
+	cry Cry_DarkmaildramonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_DARLIZAMON
-.if P_FAMILY_DARKTYRMON == TRUE
-	cry Cry_Darktyrmon
-.endif @ P_FAMILY_DARKTYRMON
-.if P_FAMILY_DARKTYRMON_X == TRUE
-	cry Cry_Darktyrmon_x
-.endif @ P_FAMILY_DARKTYRMON_X
-.if P_FAMILY_DECKDRAMON == TRUE
-	cry Cry_Deckdramon
-.endif @ P_FAMILY_DECKDRAMON
+.endif @ P_FAMILY_DARKLIZARDMON
+.if P_FAMILY_DARKTYRANNOMON == TRUE
+	cry Cry_Darktyrannomon
+.endif @ P_FAMILY_DARKTYRANNOMON
+.if P_FAMILY_DARKTYRANNOMON_X == TRUE
+	cry Cry_Darktyrannomon_x
+.endif @ P_FAMILY_DARKTYRANNOMON_X
+.if P_FAMILY_DECKERDRAMON == TRUE
+	cry Cry_Deckerdramon
+.endif @ P_FAMILY_DECKERDRAMON
 .if P_FAMILY_DELTAMON == TRUE
 	cry Cry_Deltamon
 .endif @ P_FAMILY_DELTAMON
@@ -942,10 +942,10 @@ gCryTable::
 	cry Cry_Devidramon
 	cry Cry_Devimon
 .endif @ P_FAMILY_DEVIDRAMON
-.if P_FAMILY_DEXDORUMON == TRUE
-	cry Cry_Dexdorumon
+.if P_FAMILY_DEXDORUGAMON == TRUE
+	cry Cry_Dexdorugamon
 	cry Cry_Diatrymon
-.endif @ P_FAMILY_DEXDORUMON
+.endif @ P_FAMILY_DEXDORUGAMON
 .if P_FAMILY_DIGMON == TRUE
 	cry Cry_Digmon
 	cry Cry_Dinohyumon
@@ -961,9 +961,9 @@ gCryTable::
 .if P_FAMILY_DOLPHMON == TRUE
 	cry Cry_Dolphmon
 .endif @ P_FAMILY_DOLPHMON
-.if P_FAMILY_DONSHOUMON == TRUE
-	cry Cry_Donshoumon
-.endif @ P_FAMILY_DONSHOUMON
+.if P_FAMILY_DONSHOUTMON == TRUE
+	cry Cry_Donshoutmon
+.endif @ P_FAMILY_DONSHOUTMON
 .if P_FAMILY_DORUGAMON == TRUE
 	cry Cry_Dorugamon
 	cry Cry_Dorulumon
@@ -978,9 +978,9 @@ gCryTable::
 	cry Cry_Dusknoir
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_DRIMOGEMON
-.if P_FAMILY_ELEPHANMON == TRUE
-	cry Cry_Elephanmon
-.endif @ P_FAMILY_ELEPHANMON
+.if P_FAMILY_ELEPHANTMON == TRUE
+	cry Cry_Elephantmon
+.endif @ P_FAMILY_ELEPHANTMON
 .if P_FAMILY_EOSMON_CHAMPION == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry Cry_Chingling
@@ -1010,12 +1010,12 @@ gCryTable::
 .endif @ P_FAMILY_EYESMON_SCATTERMODE
 .if P_FAMILY_FIRAMON == TRUE
 	cry Cry_Firamon
-	cry Cry_Fladramon
-	cry Cry_Flawizamon
+	cry Cry_Flamedramon
+	cry Cry_Flamewizardmon
 .endif @ P_FAMILY_FIRAMON
-.if P_FAMILY_FLARIZAMON == TRUE
-	cry Cry_Flarizamon
-.endif @ P_FAMILY_FLARIZAMON
+.if P_FAMILY_FLARERIZAMON == TRUE
+	cry Cry_Flarerizamon
+.endif @ P_FAMILY_FLARERIZAMON
 .if P_FAMILY_FLYBEEMON == TRUE
 	cry Cry_Flybeemon
 .endif @ P_FAMILY_FLYBEEMON
@@ -1038,9 +1038,9 @@ gCryTable::
 .if P_FAMILY_GARGOMON == TRUE
 	cry Cry_Gargomon
 .endif @ P_FAMILY_GARGOMON
-.if P_FAMILY_GARGOYLMON == TRUE
-	cry Cry_Gargoylmon
-.endif @ P_FAMILY_GARGOYLMON
+.if P_FAMILY_GARGOYLEMON == TRUE
+	cry Cry_Gargoylemon
+.endif @ P_FAMILY_GARGOYLEMON
 .if P_FAMILY_GARURUMON == TRUE
 	cry Cry_Garurumon
 .endif @ P_FAMILY_GARURUMON
@@ -2474,10 +2474,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_LeafmonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_KETOMON
-.if P_FAMILY_CHOROMON == TRUE
-	cry_reverse Cry_Choromon
+.if P_FAMILY_METALKOROMON == TRUE
+	cry_reverse Cry_Metalkoromon
 	cry_reverse Cry_Mokumon
-.endif @ P_FAMILY_CHOROMON
+.endif @ P_FAMILY_METALKOROMON
 .if P_FAMILY_NYOKIMON == TRUE
 	cry_reverse Cry_Nyokimon
 	cry_reverse Cry_Pabumon
@@ -2523,13 +2523,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Sandmon
 	cry_reverse Cry_Tsubumon
 .endif @ P_FAMILY_SANDMON
-.if P_FAMILY_ICEBOTAMON == TRUE
-	cry_reverse Cry_Icebotamon
+.if P_FAMILY_SNOWBOTAMON == TRUE
+	cry_reverse Cry_Snowbotamon
 	cry_reverse Cry_Yuramon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Gotsumon
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_ICEBOTAMON
+.endif @ P_FAMILY_SNOWBOTAMON
 .if P_FAMILY_ZERIMON == TRUE
 	cry_reverse Cry_Zerimon
 	cry_reverse Cry_Zurumon
@@ -2559,7 +2559,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_CALUMON
 .if P_FAMILY_CHICCHIMON == TRUE
 	cry_reverse Cry_Chicchimon
-	cry_reverse Cry_Demmeramon
+	cry_reverse Cry_Demimeramon
 .endif @ P_FAMILY_CHICCHIMON
 .if P_FAMILY_DEMIVEEMON == TRUE
 	cry_reverse Cry_Demiveemon
@@ -2655,7 +2655,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_TANEMON
 .if P_FAMILY_TOKOMON_X == TRUE
 	cry_reverse Cry_Tokomon_x
-	cry_reverse Cry_Torballmon
+	cry_reverse Cry_Torikaraballmon
 	cry_reverse Cry_Tsumemon
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_TsumemonMega
@@ -2664,9 +2664,9 @@ gCryTable_Reverse::
 .if P_FAMILY_TSUNOMON == TRUE
 	cry_reverse Cry_Tsunomon
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry_reverse Cry_Kodekacmon
+	cry_reverse Cry_Minidekachimon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_KodekacmonMega
+	cry_reverse Cry_MinidekachimonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_TSUNOMON
@@ -2708,7 +2708,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_ARCADIAMON_ROOKIE
 .if P_FAMILY_ARGOMON_ROOKIE == TRUE
 	cry_reverse Cry_Argomon_rookie
-	cry_reverse Cry_Armadilmon
+	cry_reverse Cry_Armadillomon
 .endif @ P_FAMILY_ARGOMON_ROOKIE
 .if P_FAMILY_ARURAUMON == TRUE
 	cry_reverse Cry_Aruraumon
@@ -2740,19 +2740,19 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_BETAMON_X
 .if P_FAMILY_BIYOMON == TRUE
 	cry_reverse Cry_Biyomon
-	cry_reverse Cry_Blkagumon
+	cry_reverse Cry_Blackagumon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Psychemon
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_BIYOMON
-.if P_FAMILY_BLKAGUMON_X == TRUE
-	cry_reverse Cry_Blkagumon_x
-	cry_reverse Cry_Blkgabumon
-.endif @ P_FAMILY_BLKAGUMON_X
-.if P_FAMILY_BLKGUILMON == TRUE
-	cry_reverse Cry_Blkguilmon
+.if P_FAMILY_BLACKAGUMON_X == TRUE
+	cry_reverse Cry_Blackagumon_x
+	cry_reverse Cry_Blackgabumon
+.endif @ P_FAMILY_BLACKAGUMON_X
+.if P_FAMILY_BLACKGUILMON == TRUE
+	cry_reverse Cry_Blackguilmon
 	cry_reverse Cry_Bokomon
-.endif @ P_FAMILY_BLKGUILMON
+.endif @ P_FAMILY_BLACKGUILMON
 .if P_FAMILY_BULUCOMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_MimeJr
@@ -2774,12 +2774,12 @@ gCryTable_Reverse::
 	cry_reverse Cry_Kleavor
 .endif @ P_GEN_8_CROSS_EVOS
 .endif @ P_FAMILY_BURGERMON
-.if P_FAMILY_SAMUAGUMON == TRUE
+.if P_FAMILY_BUSHIAGUMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Sangomon
 .endif @ P_GEN_2_CROSS_EVOS
-	cry_reverse Cry_Samuagumon
-.endif @ P_FAMILY_SAMUAGUMON
+	cry_reverse Cry_Bushiagumon
+.endif @ P_FAMILY_BUSHIAGUMON
 .if P_FAMILY_CANDLEMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Santaagumon
@@ -2791,29 +2791,29 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_CANDLEMON
 .if P_FAMILY_CHIKURIMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
-	cry_reverse Cry_Blktoyamon
+	cry_reverse Cry_Shadowtoyagumon
 .endif @ P_GEN_2_CROSS_EVOS
 	cry_reverse Cry_Chikurimon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Magmortar
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_CHIKURIMON
-.if P_FAMILY_TYUTYUMON == TRUE
-	cry_reverse Cry_Tyutyumon
+.if P_FAMILY_CHUUCHUUMON == TRUE
+	cry_reverse Cry_Chuuchuumon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_TyutyumonMega
+	cry_reverse Cry_ChuuchuumonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_TYUTYUMON
+.endif @ P_FAMILY_CHUUCHUUMON
 .if P_FAMILY_CHUUMON == TRUE
 	cry_reverse Cry_Chuumon
 .endif @ P_FAMILY_CHUUMON
-.if P_FAMILY_HAZYAGUMON == TRUE
-	cry_reverse Cry_Hazyagumon
-	cry_reverse Cry_Commdramon
+.if P_FAMILY_CLEARAGUMON == TRUE
+	cry_reverse Cry_Clearagumon
+	cry_reverse Cry_Commandramon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_CommdramonMega
+	cry_reverse Cry_CommandramonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_HAZYAGUMON
+.endif @ P_FAMILY_CLEARAGUMON
 .if P_FAMILY_CORONAMON == TRUE
 	cry_reverse Cry_Coronamon
 .endif @ P_FAMILY_CORONAMON
@@ -2824,7 +2824,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Crabmon_x
 	cry_reverse Cry_Cutemon
 	cry_reverse Cry_Damemon
-	cry_reverse Cry_Demidevmon
+	cry_reverse Cry_Demidevimon
 .if P_GEN_2_CROSS_EVOS == TRUE
 	cry_reverse Cry_Kunemon
 	cry_reverse Cry_Labramon
@@ -2852,7 +2852,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_DONDOKOMON
 .if P_FAMILY_DOTAGUMON == TRUE
 	cry_reverse Cry_Dotagumon
-	cry_reverse Cry_Dotfalcmon
+	cry_reverse Cry_Dotfalcomon
 .endif @ P_FAMILY_DOTAGUMON
 .if P_FAMILY_DRACMON == TRUE
 	cry_reverse Cry_Dracmon
@@ -2869,9 +2869,9 @@ gCryTable_Reverse::
 .if P_FAMILY_DRACOMON_X == TRUE
 	cry_reverse Cry_Dracomon_x
 .endif @ P_FAMILY_DRACOMON_X
-.if P_FAMILY_EBIBURGMON == TRUE
-	cry_reverse Cry_Ebiburgmon
-.endif @ P_FAMILY_EBIBURGMON
+.if P_FAMILY_EBIBURGAMON == TRUE
+	cry_reverse Cry_Ebiburgamon
+.endif @ P_FAMILY_EBIBURGAMON
 .if P_FAMILY_EKAKIMON == TRUE
 	cry_reverse Cry_Ekakimon
 .endif @ P_FAMILY_EKAKIMON
@@ -2946,7 +2946,7 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_HYOKOMON
 .if P_FAMILY_JAZAMON == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
-	cry_reverse Cry_Biostegmon
+	cry_reverse Cry_Biostegomon
 .endif @ P_GEN_3_CROSS_EVOS
 	cry_reverse Cry_Jazamon
 	cry_reverse Cry_Jellymon
@@ -2958,12 +2958,12 @@ gCryTable_Reverse::
 .if P_FAMILY_KERAMON == TRUE
 	cry_reverse Cry_Keramon
 	cry_reverse Cry_Keramon_x
-	cry_reverse Cry_Kodokgumon
+	cry_reverse Cry_Kodokugumon
 .endif @ P_FAMILY_KERAMON
-.if P_FAMILY_KOKABUIMON == TRUE
-	cry_reverse Cry_Kokabuimon
+.if P_FAMILY_KOKABUTERIMON == TRUE
+	cry_reverse Cry_Kokabuterimon
 	cry_reverse Cry_Ambipom
-.endif @ P_FAMILY_KOKABUIMON
+.endif @ P_FAMILY_KOKABUTERIMON
 .if P_FAMILY_KOKUWAMON == TRUE
 	cry_reverse Cry_Kokuwamon
 	cry_reverse Cry_Kokuwamon_x
@@ -3020,10 +3020,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Gliscor
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_METABEE
-.if P_FAMILY_MODBETAMON == TRUE
-	cry_reverse Cry_Modbetamon
+.if P_FAMILY_MODOKIBETAMON == TRUE
+	cry_reverse Cry_Modokibetamon
 	cry_reverse Cry_Monitamon
-.endif @ P_FAMILY_MODBETAMON
+.endif @ P_FAMILY_MODOKIBETAMON
 .if P_FAMILY_MONMON == TRUE
 	cry_reverse Cry_Monmon
 .if P_HISUIAN_FORMS == TRUE
@@ -3072,10 +3072,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Cursola
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_PATAMON
-.if P_FAMILY_PAWNMON_BLACK == TRUE
-	cry_reverse Cry_Pawnmon_black
-	cry_reverse Cry_Pawnmon_white
-.endif @ P_FAMILY_PAWNMON_BLACK
+.if P_FAMILY_PAWNCHESSMON_BLACK == TRUE
+	cry_reverse Cry_Pawnchessmon_black
+	cry_reverse Cry_Pawnchessmon_white
+.endif @ P_FAMILY_PAWNCHESSMON_BLACK
 .if P_FAMILY_PENGUINMON == TRUE
 	cry_reverse Cry_Penguinmon
 .endif @ P_FAMILY_PENGUINMON
@@ -3111,18 +3111,18 @@ gCryTable_Reverse::
 .if P_FAMILY_SHAMANMON == TRUE
 	cry_reverse Cry_Shamanmon
 .endif @ P_FAMILY_SHAMANMON
-.if P_FAMILY_YUKIAGUMON == TRUE
-	cry_reverse Cry_Yukiagumon
-.endif @ P_FAMILY_YUKIAGUMON
-.if P_FAMILY_YUKIAGUMON_06 == TRUE
-	cry_reverse Cry_Yukiagumon_06
-.endif @ P_FAMILY_YUKIAGUMON_06
+.if P_FAMILY_SNOWAGUMON == TRUE
+	cry_reverse Cry_Snowagumon
+.endif @ P_FAMILY_SNOWAGUMON
+.if P_FAMILY_SNOWAGUMON_06 == TRUE
+	cry_reverse Cry_Snowagumon_06
+.endif @ P_FAMILY_SNOWAGUMON_06
 .if P_FAMILY_ICEGOBIMON == TRUE
 	cry_reverse Cry_Icegobimon
 .endif @ P_FAMILY_ICEGOBIMON
 .if P_FAMILY_SOLARMON == TRUE
 	cry_reverse Cry_Solarmon
-	cry_reverse Cry_Sounbrdmon
+	cry_reverse Cry_Soundbirdmon
 	cry_reverse Cry_Spadamon
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_SpadamonMega
@@ -3137,14 +3137,14 @@ gCryTable_Reverse::
 .if P_FAMILY_STRABIMON == TRUE
 	cry_reverse Cry_Strabimon
 .endif @ P_FAMILY_STRABIMON
-.if P_FAMILY_SUNARZAMON == TRUE
-	cry_reverse Cry_Sunarzamon
+.if P_FAMILY_SUNARIZAMON == TRUE
+	cry_reverse Cry_Sunarizamon
 	cry_reverse Cry_Swimmon
 	cry_reverse Cry_Syakomon
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_SyakomonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SUNARZAMON
+.endif @ P_FAMILY_SUNARIZAMON
 .if P_FAMILY_SYAKOMON_X == TRUE
 	cry_reverse Cry_Syakomon_x
 	cry_reverse Cry_Tapirmon
@@ -3215,18 +3215,18 @@ gCryTable_Reverse::
 	cry_reverse Cry_Archelomon
 	cry_reverse Cry_Argomon_champion
 .endif @ P_FAMILY_ARCHELOMON
-.if P_FAMILY_ARESDRAMON == TRUE
-	cry_reverse Cry_Aresdramon
-	cry_reverse Cry_Atamademon
-.endif @ P_FAMILY_ARESDRAMON
+.if P_FAMILY_ARRESTERDRAMON == TRUE
+	cry_reverse Cry_Arresterdramon
+	cry_reverse Cry_Atamadekachimon
+.endif @ P_FAMILY_ARRESTERDRAMON
 .if P_FAMILY_AURUMON == TRUE
 	cry_reverse Cry_Aurumon
 	cry_reverse Cry_Axemon
-	cry_reverse Cry_Baboonmon
+	cry_reverse Cry_Baboongamon
 .endif @ P_FAMILY_AURUMON
 .if P_FAMILY_BAKEMON == TRUE
 	cry_reverse Cry_Bakemon
-	cry_reverse Cry_Balistamon
+	cry_reverse Cry_Ballistamon
 	cry_reverse Cry_Baluchimon
 .endif @ P_FAMILY_BAKEMON
 .if P_FAMILY_BAOHUCKMON == TRUE
@@ -3234,52 +3234,52 @@ gCryTable_Reverse::
 	cry_reverse Cry_Baromon
 	cry_reverse Cry_Trailmon_battle_armament
 .endif @ P_FAMILY_BAOHUCKMON
-.if P_FAMILY_BETGAMAMON == TRUE
-	cry_reverse Cry_Betgamamon
-	cry_reverse Cry_Bioquetmon
-.endif @ P_FAMILY_BETGAMAMON
-.if P_FAMILY_BIOTHUNMON == TRUE
-	cry_reverse Cry_Biothunmon
+.if P_FAMILY_BETELGAMMAMON == TRUE
+	cry_reverse Cry_Betelgammamon
+	cry_reverse Cry_Bioquetzalmon
+.endif @ P_FAMILY_BETELGAMMAMON
+.if P_FAMILY_BIOTHUNDERBIRDMON == TRUE
+	cry_reverse Cry_Biothunderbirdmon
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Probopass
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_BIOTHUNMON
+.endif @ P_FAMILY_BIOTHUNDERBIRDMON
 .if P_FAMILY_BIRDRAMON == TRUE
 	cry_reverse Cry_Birdramon
-	cry_reverse Cry_Blgaogamon
+	cry_reverse Cry_Blackgaogamon
 .endif @ P_FAMILY_BIRDRAMON
-.if P_FAMILY_BLGARGOMON == TRUE
-	cry_reverse Cry_Blgargomon
+.if P_FAMILY_BLACKGARGOMON == TRUE
+	cry_reverse Cry_Blackgargomon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_BlgargomonMega
+	cry_reverse Cry_BlackgargomonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BLGARGOMON
-.if P_FAMILY_BLGARURMON == TRUE
-	cry_reverse Cry_Blgarurmon
+.endif @ P_FAMILY_BLACKGARGOMON
+.if P_FAMILY_BLACKGARURUMON == TRUE
+	cry_reverse Cry_Blackgarurumon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_BlgarurmonMega
+	cry_reverse Cry_BlackgarurumonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BLGARURMON
-.if P_FAMILY_BLKGATOMON == TRUE
-	cry_reverse Cry_Blkgatomon
-	cry_reverse Cry_Blkgatomon_uver
-	cry_reverse Cry_Blgrowlmon
+.endif @ P_FAMILY_BLACKGARURUMON
+.if P_FAMILY_BLACKGATOMON == TRUE
+	cry_reverse Cry_Blackgatomon
+	cry_reverse Cry_Blackgatomon_uver
+	cry_reverse Cry_Blackgrowlmon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_BlgrowlmonMega
+	cry_reverse Cry_BlackgrowlmonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BLKGATOMON
-.if P_FAMILY_SAWKUWAMON == TRUE
-	cry_reverse Cry_Sawkuwamon
+.endif @ P_FAMILY_BLACKGATOMON
+.if P_FAMILY_BLADEKUWAGAMON == TRUE
+	cry_reverse Cry_Bladekuwagamon
 	cry_reverse Cry_Blimpmon
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_BlimpmonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SAWKUWAMON
+.endif @ P_FAMILY_BLADEKUWAGAMON
 .if P_FAMILY_BOARMON == TRUE
 	cry_reverse Cry_Boarmon
-	cry_reverse Cry_Bomnanimon
+	cry_reverse Cry_Bombernanimon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_BomnanimonMega
+	cry_reverse Cry_BombernanimonMega
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BOARMON
 .if P_FAMILY_BOOGIEMON == TRUE
@@ -3305,24 +3305,24 @@ gCryTable_Reverse::
 	cry_reverse Cry_Buraimon
 	cry_reverse Cry_Burgermon_champion
 .endif @ P_FAMILY_BURAIMON
-.if P_FAMILY_CHOUMON == TRUE
-	cry_reverse Cry_Choumon
+.if P_FAMILY_BUTTERFLYMON == TRUE
+	cry_reverse Cry_Butterflymon
 	cry_reverse Cry_Centarumon
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_CentarumonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_CHOUMON
+.endif @ P_FAMILY_BUTTERFLYMON
 .if P_FAMILY_CHAMBLEMON == TRUE
 	cry_reverse Cry_Chamblemon
 	cry_reverse Cry_Chamelemon
 .endif @ P_FAMILY_CHAMBLEMON
-.if P_FAMILY_CHRYSALMON == TRUE
-	cry_reverse Cry_Chrysalmon
+.if P_FAMILY_CHRYSALIMON == TRUE
+	cry_reverse Cry_Chrysalimon
 	cry_reverse Cry_Citramon
 .if P_MEGA_EVOLUTIONS == TRUE
 	cry_reverse Cry_CitramonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_CHRYSALMON
+.endif @ P_FAMILY_CHRYSALIMON
 .if P_FAMILY_CLOCKMON == TRUE
 	cry_reverse Cry_Clockmon
 .endif @ P_FAMILY_CLOCKMON
@@ -3342,22 +3342,22 @@ gCryTable_Reverse::
 	cry_reverse Cry_Darcmon
 	cry_reverse Cry_Trailmon_dark
 .endif @ P_FAMILY_DARCMON
-.if P_FAMILY_DARLIZAMON == TRUE
-	cry_reverse Cry_Darlizamon
-	cry_reverse Cry_Darmailmon
+.if P_FAMILY_DARKLIZARDMON == TRUE
+	cry_reverse Cry_Darklizardmon
+	cry_reverse Cry_Darkmaildramon
 .if P_MEGA_EVOLUTIONS == TRUE
-	cry_reverse Cry_DarmailmonMega
+	cry_reverse Cry_DarkmaildramonMega
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_DARLIZAMON
-.if P_FAMILY_DARKTYRMON == TRUE
-	cry_reverse Cry_Darktyrmon
-.endif @ P_FAMILY_DARKTYRMON
-.if P_FAMILY_DARKTYRMON_X == TRUE
-	cry_reverse Cry_Darktyrmon_x
-.endif @ P_FAMILY_DARKTYRMON_X
-.if P_FAMILY_DECKDRAMON == TRUE
-	cry_reverse Cry_Deckdramon
-.endif @ P_FAMILY_DECKDRAMON
+.endif @ P_FAMILY_DARKLIZARDMON
+.if P_FAMILY_DARKTYRANNOMON == TRUE
+	cry_reverse Cry_Darktyrannomon
+.endif @ P_FAMILY_DARKTYRANNOMON
+.if P_FAMILY_DARKTYRANNOMON_X == TRUE
+	cry_reverse Cry_Darktyrannomon_x
+.endif @ P_FAMILY_DARKTYRANNOMON_X
+.if P_FAMILY_DECKERDRAMON == TRUE
+	cry_reverse Cry_Deckerdramon
+.endif @ P_FAMILY_DECKERDRAMON
 .if P_FAMILY_DELTAMON == TRUE
 	cry_reverse Cry_Deltamon
 .endif @ P_FAMILY_DELTAMON
@@ -3369,10 +3369,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Devidramon
 	cry_reverse Cry_Devimon
 .endif @ P_FAMILY_DEVIDRAMON
-.if P_FAMILY_DEXDORUMON == TRUE
-	cry_reverse Cry_Dexdorumon
+.if P_FAMILY_DEXDORUGAMON == TRUE
+	cry_reverse Cry_Dexdorugamon
 	cry_reverse Cry_Diatrymon
-.endif @ P_FAMILY_DEXDORUMON
+.endif @ P_FAMILY_DEXDORUGAMON
 .if P_FAMILY_DIGMON == TRUE
 	cry_reverse Cry_Digmon
 	cry_reverse Cry_Dinohyumon
@@ -3388,9 +3388,9 @@ gCryTable_Reverse::
 .if P_FAMILY_DOLPHMON == TRUE
 	cry_reverse Cry_Dolphmon
 .endif @ P_FAMILY_DOLPHMON
-.if P_FAMILY_DONSHOUMON == TRUE
-	cry_reverse Cry_Donshoumon
-.endif @ P_FAMILY_DONSHOUMON
+.if P_FAMILY_DONSHOUTMON == TRUE
+	cry_reverse Cry_Donshoutmon
+.endif @ P_FAMILY_DONSHOUTMON
 .if P_FAMILY_DORUGAMON == TRUE
 	cry_reverse Cry_Dorugamon
 	cry_reverse Cry_Dorulumon
@@ -3405,9 +3405,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Dusknoir
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_DRIMOGEMON
-.if P_FAMILY_ELEPHANMON == TRUE
-	cry_reverse Cry_Elephanmon
-.endif @ P_FAMILY_ELEPHANMON
+.if P_FAMILY_ELEPHANTMON == TRUE
+	cry_reverse Cry_Elephantmon
+.endif @ P_FAMILY_ELEPHANTMON
 .if P_FAMILY_EOSMON_CHAMPION == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
 	cry_reverse Cry_Chingling
@@ -3437,12 +3437,12 @@ gCryTable_Reverse::
 .endif @ P_FAMILY_EYESMON_SCATTERMODE
 .if P_FAMILY_FIRAMON == TRUE
 	cry_reverse Cry_Firamon
-	cry_reverse Cry_Fladramon
-	cry_reverse Cry_Flawizamon
+	cry_reverse Cry_Flamedramon
+	cry_reverse Cry_Flamewizardmon
 .endif @ P_FAMILY_FIRAMON
-.if P_FAMILY_FLARIZAMON == TRUE
-	cry_reverse Cry_Flarizamon
-.endif @ P_FAMILY_FLARIZAMON
+.if P_FAMILY_FLARERIZAMON == TRUE
+	cry_reverse Cry_Flarerizamon
+.endif @ P_FAMILY_FLARERIZAMON
 .if P_FAMILY_FLYBEEMON == TRUE
 	cry_reverse Cry_Flybeemon
 .endif @ P_FAMILY_FLYBEEMON
@@ -3465,9 +3465,9 @@ gCryTable_Reverse::
 .if P_FAMILY_GARGOMON == TRUE
 	cry_reverse Cry_Gargomon
 .endif @ P_FAMILY_GARGOMON
-.if P_FAMILY_GARGOYLMON == TRUE
-	cry_reverse Cry_Gargoylmon
-.endif @ P_FAMILY_GARGOYLMON
+.if P_FAMILY_GARGOYLEMON == TRUE
+	cry_reverse Cry_Gargoylemon
+.endif @ P_FAMILY_GARGOYLEMON
 .if P_FAMILY_GARURUMON == TRUE
 	cry_reverse Cry_Garurumon
 .endif @ P_FAMILY_GARURUMON

@@ -250,8 +250,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(LeafmonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_KETOMON
 
-#if P_FAMILY_CHOROMON
-static const union AnimCmd sAnim_Choromon_1[] =
+#if P_FAMILY_METALKOROMON
+static const union AnimCmd sAnim_Metalkoromon_1[] =
 {
     ANIMCMD_FRAME(1, 11),
     ANIMCMD_FRAME(0, 11),
@@ -278,10 +278,10 @@ static const union AnimCmd sAnim_Mokumon_1[] =
 };
 
 #if P_ALOLAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(ChoromonAlola);
+PLACEHOLDER_ANIM_SINGLE_FRAME(MetalkoromonAlola);
 PLACEHOLDER_ANIM_SINGLE_FRAME(MokumonAlola);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_CHOROMON
+#endif //P_FAMILY_METALKOROMON
 
 #if P_FAMILY_NYOKIMON
 static const union AnimCmd sAnim_Nyokimon_1[] =
@@ -572,8 +572,8 @@ static const union AnimCmd sAnim_Tsubumon_1[] =
 };
 #endif //P_FAMILY_SANDMON
 
-#if P_FAMILY_ICEBOTAMON
-static const union AnimCmd sAnim_Icebotamon_1[] =
+#if P_FAMILY_SNOWBOTAMON
+static const union AnimCmd sAnim_Snowbotamon_1[] =
 {
     ANIMCMD_FRAME(0, 3),
     ANIMCMD_FRAME(1, 3),
@@ -638,7 +638,7 @@ static const union AnimCmd sAnim_Gotsumon_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ICEBOTAMON
+#endif //P_FAMILY_SNOWBOTAMON
 
 #if P_FAMILY_ZERIMON
 static const union AnimCmd sAnim_Zerimon_1[] =
@@ -842,7 +842,7 @@ static const union AnimCmd sAnim_Chicchimon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Demmeramon_1[] =
+static const union AnimCmd sAnim_Demimeramon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -1331,7 +1331,7 @@ static const union AnimCmd sAnim_Tokomon_x_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Torballmon_1[] =
+static const union AnimCmd sAnim_Torikaraballmon_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 15),
@@ -1367,7 +1367,7 @@ static const union AnimCmd sAnim_Tsunomon_1[] =
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Kodekacmon_1[] =
+static const union AnimCmd sAnim_Minidekachimon_1[] =
 {
     ANIMCMD_FRAME(0, 7),
     ANIMCMD_FRAME(1, 21),
@@ -1378,7 +1378,7 @@ static const union AnimCmd sAnim_Kodekacmon_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(KodekacmonMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(MinidekachimonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_TSUNOMON
@@ -1596,7 +1596,7 @@ static const union AnimCmd sAnim_Argomon_rookie_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Armadilmon_1[] =
+static const union AnimCmd sAnim_Armadillomon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -1607,7 +1607,7 @@ static const union AnimCmd sAnim_Armadilmon_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(ArmadilmonGalar);
+PLACEHOLDER_ANIM_SINGLE_FRAME(ArmadillomonGalar);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_ARGOMON_ROOKIE
 
@@ -1722,7 +1722,7 @@ static const union AnimCmd sAnim_Biyomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Blkagumon_1[] =
+static const union AnimCmd sAnim_Blackagumon_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 10),
@@ -1745,8 +1745,8 @@ static const union AnimCmd sAnim_Psychemon_1[] =
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BIYOMON
 
-#if P_FAMILY_BLKAGUMON_X
-static const union AnimCmd sAnim_Blkagumon_x_1[] =
+#if P_FAMILY_BLACKAGUMON_X
+static const union AnimCmd sAnim_Blackagumon_x_1[] =
 {
     ANIMCMD_FRAME(0, 16),
     ANIMCMD_FRAME(1, 16),
@@ -1760,7 +1760,7 @@ static const union AnimCmd sAnim_Blkagumon_x_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Blkgabumon_1[] =
+static const union AnimCmd sAnim_Blackgabumon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 20),
@@ -1769,10 +1769,10 @@ static const union AnimCmd sAnim_Blkgabumon_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_BLKAGUMON_X
+#endif //P_FAMILY_BLACKAGUMON_X
 
-#if P_FAMILY_BLKGUILMON
-static const union AnimCmd sAnim_Blkguilmon_1[] =
+#if P_FAMILY_BLACKGUILMON
+static const union AnimCmd sAnim_Blackguilmon_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 10),
@@ -1791,7 +1791,7 @@ static const union AnimCmd sAnim_Bokomon_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_BLKGUILMON
+#endif //P_FAMILY_BLACKGUILMON
 
 #if P_FAMILY_BULUCOMON
 #if P_GEN_4_CROSS_EVOS
@@ -1856,7 +1856,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Kleavor);
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_BURGERMON
 
-#if P_FAMILY_SAMUAGUMON
+#if P_FAMILY_BUSHIAGUMON
 #if P_GEN_2_CROSS_EVOS
 static const union AnimCmd sAnim_Sangomon_1[] =
 {
@@ -1866,7 +1866,7 @@ static const union AnimCmd sAnim_Sangomon_1[] =
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const union AnimCmd sAnim_Samuagumon_1[] =
+static const union AnimCmd sAnim_Bushiagumon_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 10),
@@ -1875,7 +1875,7 @@ static const union AnimCmd sAnim_Samuagumon_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SAMUAGUMON
+#endif //P_FAMILY_BUSHIAGUMON
 
 #if P_FAMILY_CANDLEMON
 #if P_GEN_2_CROSS_EVOS
@@ -1911,7 +1911,7 @@ static const union AnimCmd sAnim_Electivire_1[] =
 
 #if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
-static const union AnimCmd sAnim_Blktoyamon_1[] =
+static const union AnimCmd sAnim_Shadowtoyagumon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -1938,8 +1938,8 @@ static const union AnimCmd sAnim_Magmortar_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_CHIKURIMON
 
-#if P_FAMILY_TYUTYUMON
-static const union AnimCmd sAnim_Tyutyumon_1[] =
+#if P_FAMILY_CHUUCHUUMON
+static const union AnimCmd sAnim_Chuuchuumon_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 10),
@@ -1950,9 +1950,9 @@ static const union AnimCmd sAnim_Tyutyumon_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(TyutyumonMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(ChuuchuumonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_TYUTYUMON
+#endif //P_FAMILY_CHUUCHUUMON
 
 #if P_FAMILY_CHUUMON
 static const union AnimCmd sAnim_Chuumon_1[] =
@@ -1969,8 +1969,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(ChuumonPaldea);
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_CHUUMON
 
-#if P_FAMILY_HAZYAGUMON
-static const union AnimCmd sAnim_Hazyagumon_1[] =
+#if P_FAMILY_CLEARAGUMON
+static const union AnimCmd sAnim_Clearagumon_1[] =
 {
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_FRAME(1, 8),
@@ -1984,7 +1984,7 @@ static const union AnimCmd sAnim_Hazyagumon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Commdramon_1[] =
+static const union AnimCmd sAnim_Commandramon_1[] =
 {
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_FRAME(1, 32),
@@ -1993,9 +1993,9 @@ static const union AnimCmd sAnim_Commdramon_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(CommdramonMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(CommandramonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_HAZYAGUMON
+#endif //P_FAMILY_CLEARAGUMON
 
 #if P_FAMILY_CORONAMON
 static const union AnimCmd sAnim_Coronamon_1[] =
@@ -2047,7 +2047,7 @@ static const union AnimCmd sAnim_Damemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Demidevmon_1[] =
+static const union AnimCmd sAnim_Demidevimon_1[] =
 {
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 30),
@@ -2172,7 +2172,7 @@ static const union AnimCmd sAnim_Dotagumon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Dotfalcmon_1[] =
+static const union AnimCmd sAnim_Dotfalcomon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -2236,8 +2236,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Dracomon_xGalar);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_DRACOMON_X
 
-#if P_FAMILY_EBIBURGMON
-static const union AnimCmd sAnim_Ebiburgmon_1[] =
+#if P_FAMILY_EBIBURGAMON
+static const union AnimCmd sAnim_Ebiburgamon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -2247,9 +2247,9 @@ static const union AnimCmd sAnim_Ebiburgmon_1[] =
 };
 
 #if P_GALARIAN_FORMS
-PLACEHOLDER_ANIM_SINGLE_FRAME(EbiburgmonGalar);
+PLACEHOLDER_ANIM_SINGLE_FRAME(EbiburgamonGalar);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_EBIBURGMON
+#endif //P_FAMILY_EBIBURGAMON
 
 #if P_FAMILY_EKAKIMON
 static const union AnimCmd sAnim_Ekakimon_1[] =
@@ -2633,7 +2633,7 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(ImpmonMega);
 
 #if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
-static const union AnimCmd sAnim_Biostegmon_1[] =
+static const union AnimCmd sAnim_Biostegomon_1[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 12),
@@ -2713,7 +2713,7 @@ static const union AnimCmd sAnim_Keramon_x_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Kodokgumon_1[] =
+static const union AnimCmd sAnim_Kodokugumon_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 25),
@@ -2725,8 +2725,8 @@ static const union AnimCmd sAnim_Kodokgumon_1[] =
 };
 #endif //P_FAMILY_KERAMON
 
-#if P_FAMILY_KOKABUIMON
-static const union AnimCmd sAnim_Kokabuimon_1[] =
+#if P_FAMILY_KOKABUTERIMON
+static const union AnimCmd sAnim_Kokabuterimon_1[] =
 {
     ANIMCMD_FRAME(1, 35),
     ANIMCMD_FRAME(0, 5),
@@ -2742,7 +2742,7 @@ static const union AnimCmd sAnim_Ambipom_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_KOKABUIMON
+#endif //P_FAMILY_KOKABUTERIMON
 
 #if P_FAMILY_KOKUWAMON
 static const union AnimCmd sAnim_Kokuwamon_1[] =
@@ -3010,8 +3010,8 @@ static const union AnimCmd sAnim_Gliscor_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_METABEE
 
-#if P_FAMILY_MODBETAMON
-static const union AnimCmd sAnim_Modbetamon_1[] =
+#if P_FAMILY_MODOKIBETAMON
+static const union AnimCmd sAnim_Modokibetamon_1[] =
 {
     ANIMCMD_FRAME(1, 32),
     ANIMCMD_FRAME(0, 20),
@@ -3024,7 +3024,7 @@ static const union AnimCmd sAnim_Monitamon_1[] =
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_MODBETAMON
+#endif //P_FAMILY_MODOKIBETAMON
 
 #if P_FAMILY_MONMON
 static const union AnimCmd sAnim_Monmon_1[] =
@@ -3188,8 +3188,8 @@ PLACEHOLDER_ANIM_SINGLE_FRAME(Cursola);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PATAMON
 
-#if P_FAMILY_PAWNMON_BLACK
-static const union AnimCmd sAnim_Pawnmon_black_1[] =
+#if P_FAMILY_PAWNCHESSMON_BLACK
+static const union AnimCmd sAnim_Pawnchessmon_black_1[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_FRAME(1, 30),
@@ -3197,7 +3197,7 @@ static const union AnimCmd sAnim_Pawnmon_black_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Pawnmon_white_1[] =
+static const union AnimCmd sAnim_Pawnchessmon_white_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -3205,7 +3205,7 @@ static const union AnimCmd sAnim_Pawnmon_white_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_PAWNMON_BLACK
+#endif //P_FAMILY_PAWNCHESSMON_BLACK
 
 #if P_FAMILY_PENGUINMON
 static const union AnimCmd sAnim_Penguinmon_1[] =
@@ -3322,24 +3322,24 @@ static const union AnimCmd sAnim_Shamanmon_1[] =
 };
 #endif //P_FAMILY_SHAMANMON
 
-#if P_FAMILY_YUKIAGUMON
-static const union AnimCmd sAnim_Yukiagumon_1[] =
+#if P_FAMILY_SNOWAGUMON
+static const union AnimCmd sAnim_Snowagumon_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 36),
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_YUKIAGUMON
+#endif //P_FAMILY_SNOWAGUMON
 
-#if P_FAMILY_YUKIAGUMON_06
-static const union AnimCmd sAnim_Yukiagumon_06_1[] =
+#if P_FAMILY_SNOWAGUMON_06
+static const union AnimCmd sAnim_Snowagumon_06_1[] =
 {
     ANIMCMD_FRAME(1, 20),
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_YUKIAGUMON_06
+#endif //P_FAMILY_SNOWAGUMON_06
 
 #if P_FAMILY_ICEGOBIMON
 static const union AnimCmd sAnim_Icegobimon_1[] =
@@ -3360,7 +3360,7 @@ static const union AnimCmd sAnim_Solarmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Sounbrdmon_1[] =
+static const union AnimCmd sAnim_Soundbirdmon_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 10),
@@ -3419,8 +3419,8 @@ static const union AnimCmd sAnim_Strabimon_1[] =
 };
 #endif //P_FAMILY_STRABIMON
 
-#if P_FAMILY_SUNARZAMON
-static const union AnimCmd sAnim_Sunarzamon_1[] =
+#if P_FAMILY_SUNARIZAMON
+static const union AnimCmd sAnim_Sunarizamon_1[] =
 {
     ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(1, 15),
@@ -3451,7 +3451,7 @@ static const union AnimCmd sAnim_Syakomon_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(SyakomonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SUNARZAMON
+#endif //P_FAMILY_SUNARIZAMON
 
 #if P_FAMILY_SYAKOMON_X
 static const union AnimCmd sAnim_Syakomon_x_1[] =
@@ -3826,8 +3826,8 @@ static const union AnimCmd sAnim_Argomon_champion_1[] =
 };
 #endif //P_FAMILY_ARCHELOMON
 
-#if P_FAMILY_ARESDRAMON
-static const union AnimCmd sAnim_Aresdramon_1[] =
+#if P_FAMILY_ARRESTERDRAMON
+static const union AnimCmd sAnim_Arresterdramon_1[] =
 {
     ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(1, 6),
@@ -3843,7 +3843,7 @@ static const union AnimCmd sAnim_Aresdramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Atamademon_1[] =
+static const union AnimCmd sAnim_Atamadekachimon_1[] =
 {
     ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(1, 30),
@@ -3852,7 +3852,7 @@ static const union AnimCmd sAnim_Atamademon_1[] =
     ANIMCMD_FRAME(0, 7),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_ARESDRAMON
+#endif //P_FAMILY_ARRESTERDRAMON
 
 #if P_FAMILY_AURUMON
 static const union AnimCmd sAnim_Aurumon_1[] =
@@ -3878,7 +3878,7 @@ static const union AnimCmd sAnim_Axemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Baboonmon_1[] =
+static const union AnimCmd sAnim_Baboongamon_1[] =
 {
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_FRAME(1, 22),
@@ -3902,7 +3902,7 @@ static const union AnimCmd sAnim_Bakemon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Balistamon_1[] =
+static const union AnimCmd sAnim_Ballistamon_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 1),
@@ -3971,8 +3971,8 @@ static const union AnimCmd sAnim_Trailmon_battle_armament_1[] =
 };
 #endif //P_FAMILY_BAOHUCKMON
 
-#if P_FAMILY_BETGAMAMON
-static const union AnimCmd sAnim_Betgamamon_1[] =
+#if P_FAMILY_BETELGAMMAMON
+static const union AnimCmd sAnim_Betelgammamon_1[] =
 {
     ANIMCMD_FRAME(0, 7),
     ANIMCMD_FRAME(1, 10),
@@ -3986,7 +3986,7 @@ static const union AnimCmd sAnim_Betgamamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Bioquetmon_1[] =
+static const union AnimCmd sAnim_Bioquetzalmon_1[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_FRAME(1, 30),
@@ -3994,10 +3994,10 @@ static const union AnimCmd sAnim_Bioquetmon_1[] =
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_BETGAMAMON
+#endif //P_FAMILY_BETELGAMMAMON
 
-#if P_FAMILY_BIOTHUNMON
-static const union AnimCmd sAnim_Biothunmon_1[] =
+#if P_FAMILY_BIOTHUNDERBIRDMON
+static const union AnimCmd sAnim_Biothunderbirdmon_1[] =
 {
     ANIMCMD_FRAME(0, 27),
     ANIMCMD_FRAME(1, 27),
@@ -4020,7 +4020,7 @@ static const union AnimCmd sAnim_Probopass_1[] =
     ANIMCMD_END,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_BIOTHUNMON
+#endif //P_FAMILY_BIOTHUNDERBIRDMON
 
 #if P_FAMILY_BIRDRAMON
 static const union AnimCmd sAnim_Birdramon_1[] =
@@ -4031,7 +4031,7 @@ static const union AnimCmd sAnim_Birdramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Blgaogamon_1[] =
+static const union AnimCmd sAnim_Blackgaogamon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 46),
@@ -4040,8 +4040,8 @@ static const union AnimCmd sAnim_Blgaogamon_1[] =
 };
 #endif //P_FAMILY_BIRDRAMON
 
-#if P_FAMILY_BLGARGOMON
-static const union AnimCmd sAnim_Blgargomon_1[] =
+#if P_FAMILY_BLACKGARGOMON
+static const union AnimCmd sAnim_Blackgargomon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -4052,12 +4052,12 @@ static const union AnimCmd sAnim_Blgargomon_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(BlgargomonMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(BlackgargomonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BLGARGOMON
+#endif //P_FAMILY_BLACKGARGOMON
 
-#if P_FAMILY_BLGARURMON
-static const union AnimCmd sAnim_Blgarurmon_1[] =
+#if P_FAMILY_BLACKGARURUMON
+static const union AnimCmd sAnim_Blackgarurumon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -4070,12 +4070,12 @@ static const union AnimCmd sAnim_Blgarurmon_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(BlgarurmonMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(BlackgarurumonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BLGARURMON
+#endif //P_FAMILY_BLACKGARURUMON
 
-#if P_FAMILY_BLKGATOMON
-static const union AnimCmd sAnim_Blkgatomon_1[] =
+#if P_FAMILY_BLACKGATOMON
+static const union AnimCmd sAnim_Blackgatomon_1[] =
 {
     ANIMCMD_FRAME(0, 33),
     ANIMCMD_FRAME(1, 44),
@@ -4085,7 +4085,7 @@ static const union AnimCmd sAnim_Blkgatomon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Blkgatomon_uver_1[] =
+static const union AnimCmd sAnim_Blackgatomon_uver_1[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 29),
@@ -4095,7 +4095,7 @@ static const union AnimCmd sAnim_Blkgatomon_uver_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Blgrowlmon_1[] =
+static const union AnimCmd sAnim_Blackgrowlmon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 44),
@@ -4104,12 +4104,12 @@ static const union AnimCmd sAnim_Blgrowlmon_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(BlgrowlmonMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(BlackgrowlmonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BLKGATOMON
+#endif //P_FAMILY_BLACKGATOMON
 
-#if P_FAMILY_SAWKUWAMON
-static const union AnimCmd sAnim_Sawkuwamon_1[] =
+#if P_FAMILY_BLADEKUWAGAMON
+static const union AnimCmd sAnim_Bladekuwagamon_1[] =
 {
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_FRAME(1, 2),
@@ -4132,7 +4132,7 @@ static const union AnimCmd sAnim_Blimpmon_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(BlimpmonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SAWKUWAMON
+#endif //P_FAMILY_BLADEKUWAGAMON
 
 #if P_FAMILY_BOARMON
 static const union AnimCmd sAnim_Boarmon_1[] =
@@ -4145,7 +4145,7 @@ static const union AnimCmd sAnim_Boarmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Bomnanimon_1[] =
+static const union AnimCmd sAnim_Bombernanimon_1[] =
 {
     ANIMCMD_FRAME(0, 8),
     ANIMCMD_FRAME(1, 33),
@@ -4156,7 +4156,7 @@ static const union AnimCmd sAnim_Bomnanimon_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(BomnanimonMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(BombernanimonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BOARMON
 
@@ -4258,8 +4258,8 @@ static const union AnimCmd sAnim_Burgermon_champion_1[] =
 };
 #endif //P_FAMILY_BURAIMON
 
-#if P_FAMILY_CHOUMON
-static const union AnimCmd sAnim_Choumon_1[] =
+#if P_FAMILY_BUTTERFLYMON
+static const union AnimCmd sAnim_Butterflymon_1[] =
 {
     ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(1, 6),
@@ -4290,7 +4290,7 @@ static const union AnimCmd sAnim_Centarumon_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(CentarumonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_CHOUMON
+#endif //P_FAMILY_BUTTERFLYMON
 
 #if P_FAMILY_CHAMBLEMON
 static const union AnimCmd sAnim_Chamblemon_1[] =
@@ -4314,8 +4314,8 @@ static const union AnimCmd sAnim_Chamelemon_1[] =
 };
 #endif //P_FAMILY_CHAMBLEMON
 
-#if P_FAMILY_CHRYSALMON
-static const union AnimCmd sAnim_Chrysalmon_1[] =
+#if P_FAMILY_CHRYSALIMON
+static const union AnimCmd sAnim_Chrysalimon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4340,7 +4340,7 @@ static const union AnimCmd sAnim_Citramon_1[] =
 #if P_MEGA_EVOLUTIONS
 PLACEHOLDER_ANIM_SINGLE_FRAME(CitramonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_CHRYSALMON
+#endif //P_FAMILY_CHRYSALIMON
 
 #if P_FAMILY_CLOCKMON
 static const union AnimCmd sAnim_Clockmon_1[] =
@@ -4458,8 +4458,8 @@ static const union AnimCmd sAnim_Trailmon_dark_1[] =
 };
 #endif //P_FAMILY_DARCMON
 
-#if P_FAMILY_DARLIZAMON
-static const union AnimCmd sAnim_Darlizamon_1[] =
+#if P_FAMILY_DARKLIZARDMON
+static const union AnimCmd sAnim_Darklizardmon_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 10),
@@ -4471,7 +4471,7 @@ static const union AnimCmd sAnim_Darlizamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Darmailmon_1[] =
+static const union AnimCmd sAnim_Darkmaildramon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -4482,12 +4482,12 @@ static const union AnimCmd sAnim_Darmailmon_1[] =
 };
 
 #if P_MEGA_EVOLUTIONS
-PLACEHOLDER_ANIM_SINGLE_FRAME(DarmailmonMega);
+PLACEHOLDER_ANIM_SINGLE_FRAME(DarkmaildramonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_DARLIZAMON
+#endif //P_FAMILY_DARKLIZARDMON
 
-#if P_FAMILY_DARKTYRMON
-static const union AnimCmd sAnim_Darktyrmon_1[] =
+#if P_FAMILY_DARKTYRANNOMON
+static const union AnimCmd sAnim_Darktyrannomon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4498,10 +4498,10 @@ static const union AnimCmd sAnim_Darktyrmon_1[] =
     ANIMCMD_FRAME(0, 50),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_DARKTYRMON
+#endif //P_FAMILY_DARKTYRANNOMON
 
-#if P_FAMILY_DARKTYRMON_X
-static const union AnimCmd sAnim_Darktyrmon_x_1[] =
+#if P_FAMILY_DARKTYRANNOMON_X
+static const union AnimCmd sAnim_Darktyrannomon_x_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4512,10 +4512,10 @@ static const union AnimCmd sAnim_Darktyrmon_x_1[] =
     ANIMCMD_FRAME(0, 50),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_DARKTYRMON_X
+#endif //P_FAMILY_DARKTYRANNOMON_X
 
-#if P_FAMILY_DECKDRAMON
-static const union AnimCmd sAnim_Deckdramon_1[] =
+#if P_FAMILY_DECKERDRAMON
+static const union AnimCmd sAnim_Deckerdramon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 20),
@@ -4524,7 +4524,7 @@ static const union AnimCmd sAnim_Deckdramon_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_DECKDRAMON
+#endif //P_FAMILY_DECKERDRAMON
 
 #if P_FAMILY_DELTAMON
 static const union AnimCmd sAnim_Deltamon_1[] =
@@ -4600,8 +4600,8 @@ static const union AnimCmd sAnim_Devimon_1[] =
 };
 #endif //P_FAMILY_DEVIDRAMON
 
-#if P_FAMILY_DEXDORUMON
-static const union AnimCmd sAnim_Dexdorumon_1[] =
+#if P_FAMILY_DEXDORUGAMON
+static const union AnimCmd sAnim_Dexdorugamon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4624,7 +4624,7 @@ static const union AnimCmd sAnim_Diatrymon_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_DEXDORUMON
+#endif //P_FAMILY_DEXDORUGAMON
 
 #if P_FAMILY_DIGMON
 static const union AnimCmd sAnim_Digmon_1[] =
@@ -4744,8 +4744,8 @@ static const union AnimCmd sAnim_DolphmonSnowy_1[] =
 };
 #endif //P_FAMILY_DOLPHMON
 
-#if P_FAMILY_DONSHOUMON
-static const union AnimCmd sAnim_Donshoumon_1[] =
+#if P_FAMILY_DONSHOUTMON
+static const union AnimCmd sAnim_Donshoutmon_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 18),
@@ -4754,7 +4754,7 @@ static const union AnimCmd sAnim_Donshoumon_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_DONSHOUMON
+#endif //P_FAMILY_DONSHOUTMON
 
 #if P_FAMILY_DORUGAMON
 static const union AnimCmd sAnim_Dorugamon_1[] =
@@ -4825,8 +4825,8 @@ static const union AnimCmd sAnim_Dusknoir_1[] =
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_DRIMOGEMON
 
-#if P_FAMILY_ELEPHANMON
-static const union AnimCmd sAnim_Elephanmon_1[] =
+#if P_FAMILY_ELEPHANTMON
+static const union AnimCmd sAnim_Elephantmon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4835,7 +4835,7 @@ static const union AnimCmd sAnim_Elephanmon_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_ELEPHANMON
+#endif //P_FAMILY_ELEPHANTMON
 
 #if P_FAMILY_EOSMON_CHAMPION
 #if P_GEN_4_CROSS_EVOS
@@ -4966,7 +4966,7 @@ static const union AnimCmd sAnim_Firamon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Fladramon_1[] =
+static const union AnimCmd sAnim_Flamedramon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4976,7 +4976,7 @@ static const union AnimCmd sAnim_Fladramon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Flawizamon_1[] =
+static const union AnimCmd sAnim_Flamewizardmon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4987,8 +4987,8 @@ static const union AnimCmd sAnim_Flawizamon_1[] =
 };
 #endif //P_FAMILY_FIRAMON
 
-#if P_FAMILY_FLARIZAMON
-static const union AnimCmd sAnim_Flarizamon_1[] =
+#if P_FAMILY_FLARERIZAMON
+static const union AnimCmd sAnim_Flarerizamon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4997,7 +4997,7 @@ static const union AnimCmd sAnim_Flarizamon_1[] =
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_FLARIZAMON
+#endif //P_FAMILY_FLARERIZAMON
 
 #if P_FAMILY_FLYBEEMON
 static const union AnimCmd sAnim_Flybeemon_1[] =
@@ -5095,8 +5095,8 @@ static const union AnimCmd sAnim_Gargomon_1[] =
 };
 #endif //P_FAMILY_GARGOMON
 
-#if P_FAMILY_GARGOYLMON
-static const union AnimCmd sAnim_Gargoylmon_1[] =
+#if P_FAMILY_GARGOYLEMON
+static const union AnimCmd sAnim_Gargoylemon_1[] =
 {
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_FRAME(1, 15),
@@ -5105,7 +5105,7 @@ static const union AnimCmd sAnim_Gargoylmon_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_GARGOYLMON
+#endif //P_FAMILY_GARGOYLEMON
 
 #if P_FAMILY_GARURUMON
 static const union AnimCmd sAnim_Garurumon_1[] =
@@ -10239,14 +10239,14 @@ SINGLE_ANIMATION(Leafmon);
 SINGLE_ANIMATION(LeafmonMega);
 #endif
 #endif //P_FAMILY_KETOMON
-#if P_FAMILY_CHOROMON
-SINGLE_ANIMATION(Choromon);
+#if P_FAMILY_METALKOROMON
+SINGLE_ANIMATION(Metalkoromon);
 SINGLE_ANIMATION(Mokumon);
 #if P_ALOLAN_FORMS
-SINGLE_ANIMATION(ChoromonAlola);
+SINGLE_ANIMATION(MetalkoromonAlola);
 SINGLE_ANIMATION(MokumonAlola);
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_CHOROMON
+#endif //P_FAMILY_METALKOROMON
 #if P_FAMILY_NYOKIMON
 SINGLE_ANIMATION(Nyokimon);
 SINGLE_ANIMATION(Pabumon);
@@ -10325,13 +10325,13 @@ SINGLE_ANIMATION(Hackmon);
 SINGLE_ANIMATION(Sandmon);
 SINGLE_ANIMATION(Tsubumon);
 #endif //P_FAMILY_SANDMON
-#if P_FAMILY_ICEBOTAMON
-SINGLE_ANIMATION(Icebotamon);
+#if P_FAMILY_SNOWBOTAMON
+SINGLE_ANIMATION(Snowbotamon);
 SINGLE_ANIMATION(Yuramon);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Gotsumon);
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ICEBOTAMON
+#endif //P_FAMILY_SNOWBOTAMON
 #if P_FAMILY_ZERIMON
 SINGLE_ANIMATION(Zerimon);
 SINGLE_ANIMATION(Zurumon);
@@ -10373,7 +10373,7 @@ SINGLE_ANIMATION(CalumonGmax);
 #endif //P_FAMILY_CALUMON
 #if P_FAMILY_CHICCHIMON
 SINGLE_ANIMATION(Chicchimon);
-SINGLE_ANIMATION(Demmeramon);
+SINGLE_ANIMATION(Demimeramon);
 #endif //P_FAMILY_CHICCHIMON
 #if P_FAMILY_DEMIVEEMON
 SINGLE_ANIMATION(Demiveemon);
@@ -10494,7 +10494,7 @@ SINGLE_ANIMATION(Tokomon);
 #endif //P_FAMILY_TANEMON
 #if P_FAMILY_TOKOMON_X
 SINGLE_ANIMATION(Tokomon_x);
-SINGLE_ANIMATION(Torballmon);
+SINGLE_ANIMATION(Torikaraballmon);
 SINGLE_ANIMATION(Tsumemon);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(TsumemonMega);
@@ -10506,9 +10506,9 @@ SINGLE_ANIMATION(TsumemonGmax);
 #if P_FAMILY_TSUNOMON
 SINGLE_ANIMATION(Tsunomon);
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Kodekacmon);
+SINGLE_ANIMATION(Minidekachimon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(KodekacmonMega);
+SINGLE_ANIMATION(MinidekachimonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_TSUNOMON
@@ -10563,9 +10563,9 @@ SINGLE_ANIMATION(Lickilicky);
 #endif //P_FAMILY_ARCADIAMON_ROOKIE
 #if P_FAMILY_ARGOMON_ROOKIE
 SINGLE_ANIMATION(Argomon_rookie);
-SINGLE_ANIMATION(Armadilmon);
+SINGLE_ANIMATION(Armadillomon);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(ArmadilmonGalar);
+SINGLE_ANIMATION(ArmadillomonGalar);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_ARGOMON_ROOKIE
 #if P_FAMILY_ARURAUMON
@@ -10598,19 +10598,19 @@ SINGLE_ANIMATION(Betamon_xMega);
 #endif //P_FAMILY_BETAMON_X
 #if P_FAMILY_BIYOMON
 SINGLE_ANIMATION(Biyomon);
-SINGLE_ANIMATION(Blkagumon);
+SINGLE_ANIMATION(Blackagumon);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Psychemon);
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BIYOMON
-#if P_FAMILY_BLKAGUMON_X
-SINGLE_ANIMATION(Blkagumon_x);
-SINGLE_ANIMATION(Blkgabumon);
-#endif //P_FAMILY_BLKAGUMON_X
-#if P_FAMILY_BLKGUILMON
-SINGLE_ANIMATION(Blkguilmon);
+#if P_FAMILY_BLACKAGUMON_X
+SINGLE_ANIMATION(Blackagumon_x);
+SINGLE_ANIMATION(Blackgabumon);
+#endif //P_FAMILY_BLACKAGUMON_X
+#if P_FAMILY_BLACKGUILMON
+SINGLE_ANIMATION(Blackguilmon);
 SINGLE_ANIMATION(Bokomon);
-#endif //P_FAMILY_BLKGUILMON
+#endif //P_FAMILY_BLACKGUILMON
 #if P_FAMILY_BULUCOMON
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(MimeJr);
@@ -10633,12 +10633,12 @@ SINGLE_ANIMATION(MonodramonMega);
 SINGLE_ANIMATION(Kleavor);
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_BURGERMON
-#if P_FAMILY_SAMUAGUMON
+#if P_FAMILY_BUSHIAGUMON
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Sangomon);
 #endif //P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Samuagumon);
-#endif //P_FAMILY_SAMUAGUMON
+SINGLE_ANIMATION(Bushiagumon);
+#endif //P_FAMILY_BUSHIAGUMON
 #if P_FAMILY_CANDLEMON
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Santaagumon);
@@ -10650,32 +10650,32 @@ SINGLE_ANIMATION(Electivire);
 #endif //P_FAMILY_CANDLEMON
 #if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
-SINGLE_ANIMATION(Blktoyamon);
+SINGLE_ANIMATION(Shadowtoyagumon);
 #endif //P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Chikurimon);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Magmortar);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_CHIKURIMON
-#if P_FAMILY_TYUTYUMON
-SINGLE_ANIMATION(Tyutyumon);
+#if P_FAMILY_CHUUCHUUMON
+SINGLE_ANIMATION(Chuuchuumon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(TyutyumonMega);
+SINGLE_ANIMATION(ChuuchuumonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_TYUTYUMON
+#endif //P_FAMILY_CHUUCHUUMON
 #if P_FAMILY_CHUUMON
 SINGLE_ANIMATION(Chuumon);
 #if P_PALDEAN_FORMS
 SINGLE_ANIMATION(ChuumonPaldea);
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_CHUUMON
-#if P_FAMILY_HAZYAGUMON
-SINGLE_ANIMATION(Hazyagumon);
-SINGLE_ANIMATION(Commdramon);
+#if P_FAMILY_CLEARAGUMON
+SINGLE_ANIMATION(Clearagumon);
+SINGLE_ANIMATION(Commandramon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(CommdramonMega);
+SINGLE_ANIMATION(CommandramonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_HAZYAGUMON
+#endif //P_FAMILY_CLEARAGUMON
 #if P_FAMILY_CORONAMON
 SINGLE_ANIMATION(Coronamon);
 #if P_GIGANTAMAX_FORMS
@@ -10692,7 +10692,7 @@ SINGLE_ANIMATION(Crabmon_xGmax);
 #endif //P_GIGANTAMAX_FORMS
 SINGLE_ANIMATION(Cutemon);
 SINGLE_ANIMATION(Damemon);
-SINGLE_ANIMATION(Demidevmon);
+SINGLE_ANIMATION(Demidevimon);
 #if P_GEN_2_CROSS_EVOS
 SINGLE_ANIMATION(Kunemon);
 SINGLE_ANIMATION(Labramon);
@@ -10720,7 +10720,7 @@ SINGLE_ANIMATION(Dorumon);
 #endif //P_FAMILY_DONDOKOMON
 #if P_FAMILY_DOTAGUMON
 SINGLE_ANIMATION(Dotagumon);
-SINGLE_ANIMATION(Dotfalcmon);
+SINGLE_ANIMATION(Dotfalcomon);
 #endif //P_FAMILY_DOTAGUMON
 #if P_FAMILY_DRACMON
 SINGLE_ANIMATION(Dracmon);
@@ -10743,12 +10743,12 @@ SINGLE_ANIMATION(Dracomon_x);
 SINGLE_ANIMATION(Dracomon_xGalar);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_DRACOMON_X
-#if P_FAMILY_EBIBURGMON
-SINGLE_ANIMATION(Ebiburgmon);
+#if P_FAMILY_EBIBURGAMON
+SINGLE_ANIMATION(Ebiburgamon);
 #if P_GALARIAN_FORMS
-SINGLE_ANIMATION(EbiburgmonGalar);
+SINGLE_ANIMATION(EbiburgamonGalar);
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_EBIBURGMON
+#endif //P_FAMILY_EBIBURGAMON
 #if P_FAMILY_EKAKIMON
 SINGLE_ANIMATION(Ekakimon);
 #if P_GALARIAN_FORMS
@@ -10829,7 +10829,7 @@ SINGLE_ANIMATION(ImpmonMega);
 #endif //P_FAMILY_HYOKOMON
 #if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
-SINGLE_ANIMATION(Biostegmon);
+SINGLE_ANIMATION(Biostegomon);
 #endif //P_GEN_3_CROSS_EVOS
 SINGLE_ANIMATION(Jazamon);
 SINGLE_ANIMATION(Jellymon);
@@ -10843,14 +10843,14 @@ SINGLE_ANIMATION(Junkmon);
 #if P_FAMILY_KERAMON
 SINGLE_ANIMATION(Keramon);
 SINGLE_ANIMATION(Keramon_x);
-SINGLE_ANIMATION(Kodokgumon);
+SINGLE_ANIMATION(Kodokugumon);
 #endif //P_FAMILY_KERAMON
-#if P_FAMILY_KOKABUIMON
-SINGLE_ANIMATION(Kokabuimon);
+#if P_FAMILY_KOKABUTERIMON
+SINGLE_ANIMATION(Kokabuterimon);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Ambipom);
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_KOKABUIMON
+#endif //P_FAMILY_KOKABUTERIMON
 #if P_FAMILY_KOKUWAMON
 SINGLE_ANIMATION(Kokuwamon);
 SINGLE_ANIMATION(Kokuwamon_x);
@@ -10912,10 +10912,10 @@ SINGLE_ANIMATION(Metabee);
 SINGLE_ANIMATION(Gliscor);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_METABEE
-#if P_FAMILY_MODBETAMON
-SINGLE_ANIMATION(Modbetamon);
+#if P_FAMILY_MODOKIBETAMON
+SINGLE_ANIMATION(Modokibetamon);
 SINGLE_ANIMATION(Monitamon);
-#endif //P_FAMILY_MODBETAMON
+#endif //P_FAMILY_MODOKIBETAMON
 #if P_FAMILY_MONMON
 SINGLE_ANIMATION(Monmon);
 #if P_HISUIAN_FORMS
@@ -10968,10 +10968,10 @@ SINGLE_ANIMATION(PatamonGalar);
 SINGLE_ANIMATION(Cursola);
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PATAMON
-#if P_FAMILY_PAWNMON_BLACK
-SINGLE_ANIMATION(Pawnmon_black);
-SINGLE_ANIMATION(Pawnmon_white);
-#endif //P_FAMILY_PAWNMON_BLACK
+#if P_FAMILY_PAWNCHESSMON_BLACK
+SINGLE_ANIMATION(Pawnchessmon_black);
+SINGLE_ANIMATION(Pawnchessmon_white);
+#endif //P_FAMILY_PAWNCHESSMON_BLACK
 #if P_FAMILY_PENGUINMON
 SINGLE_ANIMATION(Penguinmon);
 #endif //P_FAMILY_PENGUINMON
@@ -11007,18 +11007,18 @@ SINGLE_ANIMATION(Ryudamon);
 #if P_FAMILY_SHAMANMON
 SINGLE_ANIMATION(Shamanmon);
 #endif //P_FAMILY_SHAMANMON
-#if P_FAMILY_YUKIAGUMON
-SINGLE_ANIMATION(Yukiagumon);
-#endif //P_FAMILY_YUKIAGUMON
-#if P_FAMILY_YUKIAGUMON_06
-SINGLE_ANIMATION(Yukiagumon_06);
-#endif //P_FAMILY_YUKIAGUMON_06
+#if P_FAMILY_SNOWAGUMON
+SINGLE_ANIMATION(Snowagumon);
+#endif //P_FAMILY_SNOWAGUMON
+#if P_FAMILY_SNOWAGUMON_06
+SINGLE_ANIMATION(Snowagumon_06);
+#endif //P_FAMILY_SNOWAGUMON_06
 #if P_FAMILY_ICEGOBIMON
 SINGLE_ANIMATION(Icegobimon);
 #endif //P_FAMILY_ICEGOBIMON
 #if P_FAMILY_SOLARMON
 SINGLE_ANIMATION(Solarmon);
-SINGLE_ANIMATION(Sounbrdmon);
+SINGLE_ANIMATION(Soundbirdmon);
 SINGLE_ANIMATION(Spadamon);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(SpadamonMega);
@@ -11033,14 +11033,14 @@ SINGLE_ANIMATION(Starmon_2010);
 #if P_FAMILY_STRABIMON
 SINGLE_ANIMATION(Strabimon);
 #endif //P_FAMILY_STRABIMON
-#if P_FAMILY_SUNARZAMON
-SINGLE_ANIMATION(Sunarzamon);
+#if P_FAMILY_SUNARIZAMON
+SINGLE_ANIMATION(Sunarizamon);
 SINGLE_ANIMATION(Swimmon);
 SINGLE_ANIMATION(Syakomon);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(SyakomonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SUNARZAMON
+#endif //P_FAMILY_SUNARIZAMON
 #if P_FAMILY_SYAKOMON_X
 SINGLE_ANIMATION(Syakomon_x);
 SINGLE_ANIMATION(Tapirmon);
@@ -11113,18 +11113,18 @@ SINGLE_ANIMATION(GalladeMega);
 SINGLE_ANIMATION(Archelomon);
 SINGLE_ANIMATION(Argomon_champion);
 #endif //P_FAMILY_ARCHELOMON
-#if P_FAMILY_ARESDRAMON
-SINGLE_ANIMATION(Aresdramon);
-SINGLE_ANIMATION(Atamademon);
-#endif //P_FAMILY_ARESDRAMON
+#if P_FAMILY_ARRESTERDRAMON
+SINGLE_ANIMATION(Arresterdramon);
+SINGLE_ANIMATION(Atamadekachimon);
+#endif //P_FAMILY_ARRESTERDRAMON
 #if P_FAMILY_AURUMON
 SINGLE_ANIMATION(Aurumon);
 SINGLE_ANIMATION(Axemon);
-SINGLE_ANIMATION(Baboonmon);
+SINGLE_ANIMATION(Baboongamon);
 #endif //P_FAMILY_AURUMON
 #if P_FAMILY_BAKEMON
 SINGLE_ANIMATION(Bakemon);
-SINGLE_ANIMATION(Balistamon);
+SINGLE_ANIMATION(Ballistamon);
 SINGLE_ANIMATION(Baluchimon);
 #endif //P_FAMILY_BAKEMON
 #if P_FAMILY_BAOHUCKMON
@@ -11132,52 +11132,52 @@ SINGLE_ANIMATION(Baohuckmon);
 SINGLE_ANIMATION(Baromon);
 SINGLE_ANIMATION(Trailmon_battle_armament);
 #endif //P_FAMILY_BAOHUCKMON
-#if P_FAMILY_BETGAMAMON
-SINGLE_ANIMATION(Betgamamon);
-SINGLE_ANIMATION(Bioquetmon);
-#endif //P_FAMILY_BETGAMAMON
-#if P_FAMILY_BIOTHUNMON
-SINGLE_ANIMATION(Biothunmon);
+#if P_FAMILY_BETELGAMMAMON
+SINGLE_ANIMATION(Betelgammamon);
+SINGLE_ANIMATION(Bioquetzalmon);
+#endif //P_FAMILY_BETELGAMMAMON
+#if P_FAMILY_BIOTHUNDERBIRDMON
+SINGLE_ANIMATION(Biothunderbirdmon);
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Probopass);
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_BIOTHUNMON
+#endif //P_FAMILY_BIOTHUNDERBIRDMON
 #if P_FAMILY_BIRDRAMON
 SINGLE_ANIMATION(Birdramon);
-SINGLE_ANIMATION(Blgaogamon);
+SINGLE_ANIMATION(Blackgaogamon);
 #endif //P_FAMILY_BIRDRAMON
-#if P_FAMILY_BLGARGOMON
-SINGLE_ANIMATION(Blgargomon);
+#if P_FAMILY_BLACKGARGOMON
+SINGLE_ANIMATION(Blackgargomon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(BlgargomonMega);
+SINGLE_ANIMATION(BlackgargomonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BLGARGOMON
-#if P_FAMILY_BLGARURMON
-SINGLE_ANIMATION(Blgarurmon);
+#endif //P_FAMILY_BLACKGARGOMON
+#if P_FAMILY_BLACKGARURUMON
+SINGLE_ANIMATION(Blackgarurumon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(BlgarurmonMega);
+SINGLE_ANIMATION(BlackgarurumonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BLGARURMON
-#if P_FAMILY_BLKGATOMON
-SINGLE_ANIMATION(Blkgatomon);
-SINGLE_ANIMATION(Blkgatomon_uver);
-SINGLE_ANIMATION(Blgrowlmon);
+#endif //P_FAMILY_BLACKGARURUMON
+#if P_FAMILY_BLACKGATOMON
+SINGLE_ANIMATION(Blackgatomon);
+SINGLE_ANIMATION(Blackgatomon_uver);
+SINGLE_ANIMATION(Blackgrowlmon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(BlgrowlmonMega);
+SINGLE_ANIMATION(BlackgrowlmonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_BLKGATOMON
-#if P_FAMILY_SAWKUWAMON
-SINGLE_ANIMATION(Sawkuwamon);
+#endif //P_FAMILY_BLACKGATOMON
+#if P_FAMILY_BLADEKUWAGAMON
+SINGLE_ANIMATION(Bladekuwagamon);
 SINGLE_ANIMATION(Blimpmon);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(BlimpmonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_SAWKUWAMON
+#endif //P_FAMILY_BLADEKUWAGAMON
 #if P_FAMILY_BOARMON
 SINGLE_ANIMATION(Boarmon);
-SINGLE_ANIMATION(Bomnanimon);
+SINGLE_ANIMATION(Bombernanimon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(BomnanimonMega);
+SINGLE_ANIMATION(BombernanimonMega);
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BOARMON
 #if P_FAMILY_BOOGIEMON
@@ -11203,24 +11203,24 @@ SINGLE_ANIMATION(Roserade);
 SINGLE_ANIMATION(Buraimon);
 SINGLE_ANIMATION(Burgermon_champion);
 #endif //P_FAMILY_BURAIMON
-#if P_FAMILY_CHOUMON
-SINGLE_ANIMATION(Choumon);
+#if P_FAMILY_BUTTERFLYMON
+SINGLE_ANIMATION(Butterflymon);
 SINGLE_ANIMATION(Centarumon);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(CentarumonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_CHOUMON
+#endif //P_FAMILY_BUTTERFLYMON
 #if P_FAMILY_CHAMBLEMON
 SINGLE_ANIMATION(Chamblemon);
 SINGLE_ANIMATION(Chamelemon);
 #endif //P_FAMILY_CHAMBLEMON
-#if P_FAMILY_CHRYSALMON
-SINGLE_ANIMATION(Chrysalmon);
+#if P_FAMILY_CHRYSALIMON
+SINGLE_ANIMATION(Chrysalimon);
 SINGLE_ANIMATION(Citramon);
 #if P_MEGA_EVOLUTIONS
 SINGLE_ANIMATION(CitramonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_CHRYSALMON
+#endif //P_FAMILY_CHRYSALIMON
 #if P_FAMILY_CLOCKMON
 SINGLE_ANIMATION(Clockmon);
 #endif //P_FAMILY_CLOCKMON
@@ -11240,22 +11240,22 @@ SINGLE_ANIMATION(Damemon_fusion);
 SINGLE_ANIMATION(Darcmon);
 SINGLE_ANIMATION(Trailmon_dark);
 #endif //P_FAMILY_DARCMON
-#if P_FAMILY_DARLIZAMON
-SINGLE_ANIMATION(Darlizamon);
-SINGLE_ANIMATION(Darmailmon);
+#if P_FAMILY_DARKLIZARDMON
+SINGLE_ANIMATION(Darklizardmon);
+SINGLE_ANIMATION(Darkmaildramon);
 #if P_MEGA_EVOLUTIONS
-SINGLE_ANIMATION(DarmailmonMega);
+SINGLE_ANIMATION(DarkmaildramonMega);
 #endif //P_MEGA_EVOLUTIONS
-#endif //P_FAMILY_DARLIZAMON
-#if P_FAMILY_DARKTYRMON
-SINGLE_ANIMATION(Darktyrmon);
-#endif //P_FAMILY_DARKTYRMON
-#if P_FAMILY_DARKTYRMON_X
-SINGLE_ANIMATION(Darktyrmon_x);
-#endif //P_FAMILY_DARKTYRMON_X
-#if P_FAMILY_DECKDRAMON
-SINGLE_ANIMATION(Deckdramon);
-#endif //P_FAMILY_DECKDRAMON
+#endif //P_FAMILY_DARKLIZARDMON
+#if P_FAMILY_DARKTYRANNOMON
+SINGLE_ANIMATION(Darktyrannomon);
+#endif //P_FAMILY_DARKTYRANNOMON
+#if P_FAMILY_DARKTYRANNOMON_X
+SINGLE_ANIMATION(Darktyrannomon_x);
+#endif //P_FAMILY_DARKTYRANNOMON_X
+#if P_FAMILY_DECKERDRAMON
+SINGLE_ANIMATION(Deckerdramon);
+#endif //P_FAMILY_DECKERDRAMON
 #if P_FAMILY_DELTAMON
 SINGLE_ANIMATION(Deltamon);
 #endif //P_FAMILY_DELTAMON
@@ -11267,10 +11267,10 @@ SINGLE_ANIMATION(Deputymon);
 SINGLE_ANIMATION(Devidramon);
 SINGLE_ANIMATION(Devimon);
 #endif //P_FAMILY_DEVIDRAMON
-#if P_FAMILY_DEXDORUMON
-SINGLE_ANIMATION(Dexdorumon);
+#if P_FAMILY_DEXDORUGAMON
+SINGLE_ANIMATION(Dexdorugamon);
 SINGLE_ANIMATION(Diatrymon);
-#endif //P_FAMILY_DEXDORUMON
+#endif //P_FAMILY_DEXDORUGAMON
 #if P_FAMILY_DIGMON
 SINGLE_ANIMATION(Digmon);
 SINGLE_ANIMATION(Dinohyumon);
@@ -11289,9 +11289,9 @@ SINGLE_ANIMATION(DolphmonSunny);
 SINGLE_ANIMATION(DolphmonRainy);
 SINGLE_ANIMATION(DolphmonSnowy);
 #endif //P_FAMILY_DOLPHMON
-#if P_FAMILY_DONSHOUMON
-SINGLE_ANIMATION(Donshoumon);
-#endif //P_FAMILY_DONSHOUMON
+#if P_FAMILY_DONSHOUTMON
+SINGLE_ANIMATION(Donshoutmon);
+#endif //P_FAMILY_DONSHOUTMON
 #if P_FAMILY_DORUGAMON
 SINGLE_ANIMATION(Dorugamon);
 SINGLE_ANIMATION(Dorulumon);
@@ -11306,9 +11306,9 @@ SINGLE_ANIMATION(Ebidramon);
 SINGLE_ANIMATION(Dusknoir);
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_DRIMOGEMON
-#if P_FAMILY_ELEPHANMON
-SINGLE_ANIMATION(Elephanmon);
-#endif //P_FAMILY_ELEPHANMON
+#if P_FAMILY_ELEPHANTMON
+SINGLE_ANIMATION(Elephantmon);
+#endif //P_FAMILY_ELEPHANTMON
 #if P_FAMILY_EOSMON_CHAMPION
 #if P_GEN_4_CROSS_EVOS
 SINGLE_ANIMATION(Chingling);
@@ -11338,12 +11338,12 @@ SINGLE_ANIMATION(Filmon);
 #endif //P_FAMILY_EYESMON_SCATTERMODE
 #if P_FAMILY_FIRAMON
 SINGLE_ANIMATION(Firamon);
-SINGLE_ANIMATION(Fladramon);
-SINGLE_ANIMATION(Flawizamon);
+SINGLE_ANIMATION(Flamedramon);
+SINGLE_ANIMATION(Flamewizardmon);
 #endif //P_FAMILY_FIRAMON
-#if P_FAMILY_FLARIZAMON
-SINGLE_ANIMATION(Flarizamon);
-#endif //P_FAMILY_FLARIZAMON
+#if P_FAMILY_FLARERIZAMON
+SINGLE_ANIMATION(Flarerizamon);
+#endif //P_FAMILY_FLARERIZAMON
 #if P_FAMILY_FLYBEEMON
 SINGLE_ANIMATION(Flybeemon);
 #endif //P_FAMILY_FLYBEEMON
@@ -11366,9 +11366,9 @@ SINGLE_ANIMATION(GaogamonMega);
 #if P_FAMILY_GARGOMON
 SINGLE_ANIMATION(Gargomon);
 #endif //P_FAMILY_GARGOMON
-#if P_FAMILY_GARGOYLMON
-SINGLE_ANIMATION(Gargoylmon);
-#endif //P_FAMILY_GARGOYLMON
+#if P_FAMILY_GARGOYLEMON
+SINGLE_ANIMATION(Gargoylemon);
+#endif //P_FAMILY_GARGOYLEMON
 #if P_FAMILY_GARURUMON
 SINGLE_ANIMATION(Garurumon);
 #endif //P_FAMILY_GARURUMON

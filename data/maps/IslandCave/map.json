@@ -15,7 +15,7 @@
   "connections": null,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_GARGOYLMON",
+      "graphics_id": "OBJ_EVENT_GFX_GARGOYLEMON",
       "x": 8,
       "y": 7,
       "elevation": 3,
@@ -24,8 +24,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "IslandCave_EventScript_Gargoylmon",
-      "flag": "FLAG_HIDE_GARGOYLMON"
+      "script": "IslandCave_EventScript_Gargoylemon",
+      "flag": "FLAG_HIDE_GARGOYLEMON"
     }
   ],
   "warp_events": [

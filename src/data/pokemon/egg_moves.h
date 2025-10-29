@@ -82,8 +82,8 @@ static const u16 sKetomonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_KETOMON
 
-#if P_FAMILY_CHOROMON
-static const u16 sChoromonEggMoveLearnset[] = {
+#if P_FAMILY_METALKOROMON
+static const u16 sMetalkoromonEggMoveLearnset[] = {
     MOVE_SCREECH,
     MOVE_FLAME_WHEEL,
     MOVE_FURY_SWIPES,
@@ -99,7 +99,7 @@ static const u16 sChoromonEggMoveLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sChoromonAlolaEggMoveLearnset[] = {
+static const u16 sMetalkoromonAlolaEggMoveLearnset[] = {
     MOVE_COUNTER,
     MOVE_FINAL_GAMBIT,
     MOVE_FURY_SWIPES,
@@ -114,7 +114,7 @@ static const u16 sChoromonAlolaEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_CHOROMON
+#endif //P_FAMILY_METALKOROMON
 
 #if P_FAMILY_NYOKIMON
 static const u16 sNyokimonEggMoveLearnset[] = {
@@ -330,8 +330,8 @@ static const u16 sHackmonEggMoveLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_SANDMON
 
-#if P_FAMILY_ICEBOTAMON
-static const u16 sIcebotamonEggMoveLearnset[] = {
+#if P_FAMILY_SNOWBOTAMON
+static const u16 sSnowbotamonEggMoveLearnset[] = {
     MOVE_QUICK_ATTACK,
     MOVE_PURSUIT,
     MOVE_FEINT_ATTACK,
@@ -348,7 +348,7 @@ static const u16 sIcebotamonEggMoveLearnset[] = {
     MOVE_VENOM_DRENCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ICEBOTAMON
+#endif //P_FAMILY_SNOWBOTAMON
 
 #if P_FAMILY_ZERIMON
 static const u16 sZerimonEggMoveLearnset[] = {
@@ -1146,8 +1146,8 @@ static const u16 sBiyomonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_BIYOMON
 
-#if P_FAMILY_BLKAGUMON_X
-static const u16 sBlkagumon_xEggMoveLearnset[] = {
+#if P_FAMILY_BLACKAGUMON_X
+static const u16 sBlackagumon_xEggMoveLearnset[] = {
     MOVE_PSYBEAM,
     MOVE_HAZE,
     MOVE_HYDRO_PUMP,
@@ -1161,7 +1161,7 @@ static const u16 sBlkagumon_xEggMoveLearnset[] = {
     MOVE_SIGNAL_BEAM,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BLKAGUMON_X
+#endif //P_FAMILY_BLACKAGUMON_X
 
 #if P_FAMILY_BULUCOMON
 #if P_GEN_4_CROSS_EVOS
@@ -1228,7 +1228,7 @@ static const u16 sBurgermonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_BURGERMON
 
-#if P_FAMILY_SAMUAGUMON
+#if P_FAMILY_BUSHIAGUMON
 #if P_GEN_2_CROSS_EVOS
 static const u16 sSangomonEggMoveLearnset[] = {
     MOVE_MEDITATE,
@@ -1242,7 +1242,7 @@ static const u16 sSangomonEggMoveLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_SAMUAGUMON
+#endif //P_FAMILY_BUSHIAGUMON
 
 #if P_FAMILY_CANDLEMON
 #if P_GEN_2_CROSS_EVOS
@@ -1265,7 +1265,7 @@ static const u16 sSantaagumonEggMoveLearnset[] = {
 
 #if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
-static const u16 sBlktoyamonEggMoveLearnset[] = {
+static const u16 sShadowtoyagumonEggMoveLearnset[] = {
     MOVE_KARATE_CHOP,
     MOVE_MEGA_PUNCH,
     MOVE_BARRIER,
@@ -1285,8 +1285,8 @@ static const u16 sBlktoyamonEggMoveLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_CHIKURIMON
 
-#if P_FAMILY_TYUTYUMON
-static const u16 sTyutyumonEggMoveLearnset[] = {
+#if P_FAMILY_CHUUCHUUMON
+static const u16 sChuuchuumonEggMoveLearnset[] = {
     MOVE_FURY_ATTACK,
     MOVE_FLAIL,
     MOVE_FEINT_ATTACK,
@@ -1298,7 +1298,7 @@ static const u16 sTyutyumonEggMoveLearnset[] = {
     MOVE_SUPERPOWER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TYUTYUMON
+#endif //P_FAMILY_CHUUCHUUMON
 
 #if P_FAMILY_CHUUMON
 #if P_PALDEAN_FORMS
@@ -1681,7 +1681,7 @@ static const u16 sHyokomonEggMoveLearnset[] = {
 
 #if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
-static const u16 sBiostegmonEggMoveLearnset[] = {
+static const u16 sBiostegomonEggMoveLearnset[] = {
     MOVE_ENCORE,
     MOVE_SING,
     MOVE_REFRESH,
@@ -1762,8 +1762,8 @@ static const u16 sKeramonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_KERAMON
 
-#if P_FAMILY_KOKABUIMON
-static const u16 sKokabuimonEggMoveLearnset[] = {
+#if P_FAMILY_KOKABUTERIMON
+static const u16 sKokabuterimonEggMoveLearnset[] = {
     MOVE_COUNTER,
     MOVE_SCREECH,
     MOVE_PURSUIT,
@@ -1781,7 +1781,7 @@ static const u16 sKokabuimonEggMoveLearnset[] = {
     MOVE_TAIL_SLAP,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_KOKABUIMON
+#endif //P_FAMILY_KOKABUTERIMON
 
 #if P_FAMILY_KOKUWAMON
 static const u16 sKokuwamonEggMoveLearnset[] = {
@@ -1976,8 +1976,8 @@ static const u16 sMetabeeEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_METABEE
 
-#if P_FAMILY_MODBETAMON
-static const u16 sModbetamonEggMoveLearnset[] = {
+#if P_FAMILY_MODOKIBETAMON
+static const u16 sModokibetamonEggMoveLearnset[] = {
     MOVE_METRONOME,
     MOVE_FEINT_ATTACK,
     MOVE_PRESENT,
@@ -1995,7 +1995,7 @@ static const u16 sModbetamonEggMoveLearnset[] = {
     MOVE_FAKE_TEARS,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MODBETAMON
+#endif //P_FAMILY_MODOKIBETAMON
 
 #if P_FAMILY_MONMON
 static const u16 sMonmonEggMoveLearnset[] = {
@@ -2157,8 +2157,8 @@ static const u16 sPatamonGalarEggMoveLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PATAMON
 
-#if P_FAMILY_PAWNMON_BLACK
-static const u16 sPawnmon_blackEggMoveLearnset[] = {
+#if P_FAMILY_PAWNCHESSMON_BLACK
+static const u16 sPawnchessmon_blackEggMoveLearnset[] = {
     MOVE_AURORA_BEAM,
     MOVE_OCTAZOOKA,
     MOVE_SUPERSONIC,
@@ -2175,7 +2175,7 @@ static const u16 sPawnmon_blackEggMoveLearnset[] = {
     MOVE_ENTRAINMENT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PAWNMON_BLACK
+#endif //P_FAMILY_PAWNCHESSMON_BLACK
 
 #if P_FAMILY_PENGUINMON
 static const u16 sPenguinmonEggMoveLearnset[] = {
@@ -2341,8 +2341,8 @@ static const u16 sSolarmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_SOLARMON
 
-#if P_FAMILY_SUNARZAMON
-static const u16 sSunarzamonEggMoveLearnset[] = {
+#if P_FAMILY_SUNARIZAMON
+static const u16 sSunarizamonEggMoveLearnset[] = {
     MOVE_CRUNCH,
     MOVE_MUD_SPORT,
     MOVE_ENDEAVOR,
@@ -2361,7 +2361,7 @@ static const u16 sSunarzamonEggMoveLearnset[] = {
     MOVE_GRASSY_TERRAIN,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SUNARZAMON
+#endif //P_FAMILY_SUNARIZAMON
 
 #if P_FAMILY_SYAKOMON_X
 static const u16 sSyakomon_xEggMoveLearnset[] = {
@@ -2556,8 +2556,8 @@ static const u16 sArchelomonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_ARCHELOMON
 
-#if P_FAMILY_ARESDRAMON
-static const u16 sAresdramonEggMoveLearnset[] = {
+#if P_FAMILY_ARRESTERDRAMON
+static const u16 sArresterdramonEggMoveLearnset[] = {
     MOVE_FAKE_TEARS,
     MOVE_CHARM,
     MOVE_HELPING_HAND,
@@ -2570,7 +2570,7 @@ static const u16 sAresdramonEggMoveLearnset[] = {
     MOVE_DRAIN_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ARESDRAMON
+#endif //P_FAMILY_ARRESTERDRAMON
 
 #if P_FAMILY_AURUMON
 static const u16 sAurumonEggMoveLearnset[] = {
@@ -2620,8 +2620,8 @@ static const u16 sBaohuckmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_BAOHUCKMON
 
-#if P_FAMILY_BETGAMAMON
-static const u16 sBetgamamonEggMoveLearnset[] = {
+#if P_FAMILY_BETELGAMMAMON
+static const u16 sBetelgammamonEggMoveLearnset[] = {
     MOVE_FEINT_ATTACK,
     MOVE_DETECT,
     MOVE_FORESIGHT,
@@ -2638,10 +2638,10 @@ static const u16 sBetgamamonEggMoveLearnset[] = {
     MOVE_CHIP_AWAY,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BETGAMAMON
+#endif //P_FAMILY_BETELGAMMAMON
 
-#if P_FAMILY_BIOTHUNMON
-static const u16 sBiothunmonEggMoveLearnset[] = {
+#if P_FAMILY_BIOTHUNDERBIRDMON
+static const u16 sBiothunderbirdmonEggMoveLearnset[] = {
     MOVE_MAGNITUDE,
     MOVE_ROLLOUT,
     MOVE_DOUBLE_EDGE,
@@ -2651,7 +2651,7 @@ static const u16 sBiothunmonEggMoveLearnset[] = {
     MOVE_WIDE_GUARD,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BIOTHUNMON
+#endif //P_FAMILY_BIOTHUNDERBIRDMON
 
 #if P_FAMILY_BIRDRAMON
 static const u16 sBirdramonEggMoveLearnset[] = {
@@ -2673,8 +2673,8 @@ static const u16 sBirdramonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_BIRDRAMON
 
-#if P_FAMILY_BLGARGOMON
-static const u16 sBlgargomonEggMoveLearnset[] = {
+#if P_FAMILY_BLACKGARGOMON
+static const u16 sBlackgargomonEggMoveLearnset[] = {
     MOVE_RECOVER,
     MOVE_MOONLIGHT,
     MOVE_NASTY_PLOT,
@@ -2688,10 +2688,10 @@ static const u16 sBlgargomonEggMoveLearnset[] = {
     MOVE_IMPRISON,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BLGARGOMON
+#endif //P_FAMILY_BLACKGARGOMON
 
-#if P_FAMILY_BLGARURMON
-static const u16 sBlgarurmonEggMoveLearnset[] = {
+#if P_FAMILY_BLACKGARURUMON
+static const u16 sBlackgarurumonEggMoveLearnset[] = {
     MOVE_POISON_FANG,
     MOVE_ANCIENT_POWER,
     MOVE_TICKLE,
@@ -2709,10 +2709,10 @@ static const u16 sBlgarurmonEggMoveLearnset[] = {
     MOVE_POWER_UP_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BLGARURMON
+#endif //P_FAMILY_BLACKGARURUMON
 
-#if P_FAMILY_BLKGATOMON
-static const u16 sBlkgatomonEggMoveLearnset[] = {
+#if P_FAMILY_BLACKGATOMON
+static const u16 sBlackgatomonEggMoveLearnset[] = {
     MOVE_ENDEAVOR,
     MOVE_BODY_SLAM,
     MOVE_STOMP,
@@ -2727,10 +2727,10 @@ static const u16 sBlkgatomonEggMoveLearnset[] = {
     MOVE_REVERSAL,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BLKGATOMON
+#endif //P_FAMILY_BLACKGATOMON
 
-#if P_FAMILY_SAWKUWAMON
-static const u16 sSawkuwamonEggMoveLearnset[] = {
+#if P_FAMILY_BLADEKUWAGAMON
+static const u16 sBladekuwagamonEggMoveLearnset[] = {
     MOVE_FIRE_PUNCH,
     MOVE_THUNDER_PUNCH,
     MOVE_ICE_PUNCH,
@@ -2747,7 +2747,7 @@ static const u16 sSawkuwamonEggMoveLearnset[] = {
     MOVE_QUICK_GUARD,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SAWKUWAMON
+#endif //P_FAMILY_BLADEKUWAGAMON
 
 #if P_FAMILY_BOARMON
 static const u16 sBoarmonEggMoveLearnset[] = {
@@ -2876,8 +2876,8 @@ static const u16 sBuraimonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_BURAIMON
 
-#if P_FAMILY_CHOUMON
-static const u16 sChoumonEggMoveLearnset[] = {
+#if P_FAMILY_BUTTERFLYMON
+static const u16 sButterflymonEggMoveLearnset[] = {
     MOVE_HYDRO_PUMP,
     MOVE_DOUBLE_EDGE,
     MOVE_THRASH,
@@ -2888,7 +2888,7 @@ static const u16 sChoumonEggMoveLearnset[] = {
     MOVE_PSYCHIC_FANGS,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CHOUMON
+#endif //P_FAMILY_BUTTERFLYMON
 
 #if P_FAMILY_CHAMBLEMON
 static const u16 sChamblemonEggMoveLearnset[] = {
@@ -2909,8 +2909,8 @@ static const u16 sChamblemonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_CHAMBLEMON
 
-#if P_FAMILY_CHRYSALMON
-static const u16 sChrysalmonEggMoveLearnset[] = {
+#if P_FAMILY_CHRYSALIMON
+static const u16 sChrysalimonEggMoveLearnset[] = {
     MOVE_HOWL,
     MOVE_SCARY_FACE,
     MOVE_BODY_SLAM,
@@ -2930,7 +2930,7 @@ static const u16 sChrysalmonEggMoveLearnset[] = {
     MOVE_HEAVY_SLAM,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CHRYSALMON
+#endif //P_FAMILY_CHRYSALIMON
 
 #if P_FAMILY_CLOCKMON
 static const u16 sClockmonEggMoveLearnset[] = {
@@ -3027,8 +3027,8 @@ static const u16 sDarcmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_DARCMON
 
-#if P_FAMILY_DARLIZAMON
-static const u16 sDarlizamonEggMoveLearnset[] = {
+#if P_FAMILY_DARKLIZARDMON
+static const u16 sDarklizardmonEggMoveLearnset[] = {
     MOVE_AGILITY,
     MOVE_HAZE,
     MOVE_PURSUIT,
@@ -3042,10 +3042,10 @@ static const u16 sDarlizamonEggMoveLearnset[] = {
     MOVE_PLAY_ROUGH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DARLIZAMON
+#endif //P_FAMILY_DARKLIZARDMON
 
-#if P_FAMILY_DARKTYRMON
-static const u16 sDarktyrmonEggMoveLearnset[] = {
+#if P_FAMILY_DARKTYRANNOMON
+static const u16 sDarktyrannomonEggMoveLearnset[] = {
     MOVE_FLAIL,
     MOVE_DOUBLE_KICK,
     MOVE_RAZOR_WIND,
@@ -3063,10 +3063,10 @@ static const u16 sDarktyrmonEggMoveLearnset[] = {
     MOVE_BELLY_DRUM,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DARKTYRMON
+#endif //P_FAMILY_DARKTYRANNOMON
 
-#if P_FAMILY_DARKTYRMON_X
-static const u16 sDarktyrmon_xEggMoveLearnset[] = {
+#if P_FAMILY_DARKTYRANNOMON_X
+static const u16 sDarktyrannomon_xEggMoveLearnset[] = {
     MOVE_STOCKPILE,
     MOVE_SWALLOW,
     MOVE_SPIT_UP,
@@ -3081,7 +3081,7 @@ static const u16 sDarktyrmon_xEggMoveLearnset[] = {
     MOVE_FINAL_GAMBIT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DARKTYRMON_X
+#endif //P_FAMILY_DARKTYRANNOMON_X
 
 #if P_FAMILY_DEPTHMON
 static const u16 sDepthmonEggMoveLearnset[] = {
@@ -3182,8 +3182,8 @@ static const u16 sDolphmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_DOLPHMON
 
-#if P_FAMILY_DONSHOUMON
-static const u16 sDonshoumonEggMoveLearnset[] = {
+#if P_FAMILY_DONSHOUTMON
+static const u16 sDonshoutmonEggMoveLearnset[] = {
     MOVE_DISABLE,
     MOVE_MAGIC_COAT,
     MOVE_TRICK,
@@ -3198,7 +3198,7 @@ static const u16 sDonshoumonEggMoveLearnset[] = {
     MOVE_POWER_UP_PUNCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DONSHOUMON
+#endif //P_FAMILY_DONSHOUTMON
 
 #if P_FAMILY_DORUGAMON
 static const u16 sDorugamonEggMoveLearnset[] = {
@@ -3233,8 +3233,8 @@ static const u16 sDrimogemonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_DRIMOGEMON
 
-#if P_FAMILY_ELEPHANMON
-static const u16 sElephanmonEggMoveLearnset[] = {
+#if P_FAMILY_ELEPHANTMON
+static const u16 sElephantmonEggMoveLearnset[] = {
     MOVE_HEADBUTT,
     MOVE_SLAM,
     MOVE_RAZOR_WIND,
@@ -3250,7 +3250,7 @@ static const u16 sElephanmonEggMoveLearnset[] = {
     MOVE_DRAGON_HAMMER,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ELEPHANMON
+#endif //P_FAMILY_ELEPHANTMON
 
 #if P_FAMILY_EOSMON_CHAMPION
 #if P_GEN_4_CROSS_EVOS
@@ -3356,8 +3356,8 @@ static const u16 sFiramonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_FIRAMON
 
-#if P_FAMILY_FLARIZAMON
-static const u16 sFlarizamonEggMoveLearnset[] = {
+#if P_FAMILY_FLARERIZAMON
+static const u16 sFlarerizamonEggMoveLearnset[] = {
     MOVE_MAGNITUDE,
     MOVE_SKULL_BASH,
     MOVE_WATER_SPORT,
@@ -3372,7 +3372,7 @@ static const u16 sFlarizamonEggMoveLearnset[] = {
     MOVE_ZEN_HEADBUTT,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_FLARIZAMON
+#endif //P_FAMILY_FLARERIZAMON
 
 #if P_FAMILY_FLYBEEMON
 static const u16 sFlybeemonEggMoveLearnset[] = {

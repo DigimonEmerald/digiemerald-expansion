@@ -69,7 +69,7 @@ static void Task_Scene2_End(u8);
 
 // Scene 2 supplemental functions
 static void SpriteCB_Syakomon_x(struct Sprite *sprite);
-static void SpriteCB_Bomnanimon(struct Sprite *sprite);
+static void SpriteCB_Bombernanimon(struct Sprite *sprite);
 static void SpriteCB_Bucchiemon_green(struct Sprite *sprite);
 static void SpriteCB_Damemon_fusion(struct Sprite *);
 static void SpriteCB_PlayerOnBicycle(struct Sprite *);
@@ -121,7 +121,7 @@ enum {
 
 #define TAG_BUCCHIEMON_GREEN   1500
 #define TAG_SYAKOMON_X   1501
-#define TAG_BOMNANIMON 1502
+#define TAG_BOMBERNANIMON 1502
 #define TAG_LIGHTNING 1503
 #define TAG_BUBBLES   1504
 #define TAG_SPARKLE   1505
@@ -158,9 +158,9 @@ enum {
 #define TIMER_END_PAN_UP                904
 #define TIMER_END_SCENE_1              1007
 #define TIMER_START_SCENE_2            1026
-#define TIMER_BOMNANIMON_ENTER          1088
+#define TIMER_BOMBERNANIMON_ENTER          1088
 #define TIMER_PLAYER_DRIFT_BACK        1109
-#define TIMER_BOMNANIMON_RUN_CIRCULAR   1168
+#define TIMER_BOMBERNANIMON_RUN_CIRCULAR   1168
 #define TIMER_PLAYER_MOVE_FORWARD      1214
 #define TIMER_SYAKOMON_X_ENTER            1224
 #define TIMER_DAMEMON_FUSION_ENTER             1394
@@ -275,14 +275,14 @@ static const struct CompressedSpriteSheet sSpriteSheet_RunningPokemon[] =
 {
     {gIntroBucchiemon_green_Gfx, 0x400, TAG_BUCCHIEMON_GREEN},
     {gIntroSyakomon_x_Gfx, 0xC00, TAG_SYAKOMON_X},
-    {gIntroBomnanimon_Gfx, 0x2000, TAG_BOMNANIMON},
+    {gIntroBombernanimon_Gfx, 0x2000, TAG_BOMBERNANIMON},
     {},
 };
 static const struct SpritePalette sSpritePalettes_RunningPokemon[] =
 {
     {gIntroBucchiemon_green_Pal, TAG_BUCCHIEMON_GREEN},
     {gIntroSyakomon_x_Pal, TAG_SYAKOMON_X},
-    {gIntroBomnanimon_Pal, TAG_BOMNANIMON},
+    {gIntroBombernanimon_Pal, TAG_BOMBERNANIMON},
     {},
 };
 static const struct OamData sOamData_Bucchiemon_green =
@@ -381,7 +381,7 @@ static const struct SpriteTemplate sSpriteTemplate_Syakomon_x =
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_Syakomon_x,
 };
-static const struct OamData sOamData_Bomnanimon =
+static const struct OamData sOamData_Bombernanimon =
 {
     .y = DISPLAY_HEIGHT,
     .affineMode = ST_OAM_AFFINE_OFF,
@@ -397,7 +397,7 @@ static const struct OamData sOamData_Bomnanimon =
     .paletteNum = 0,
     .affineParam = 0,
 };
-static const union AnimCmd sAnim_Bomnanimon[] =
+static const union AnimCmd sAnim_Bombernanimon[] =
 {
     ANIMCMD_FRAME(0, 4),
     ANIMCMD_FRAME(64, 4),
@@ -405,19 +405,19 @@ static const union AnimCmd sAnim_Bomnanimon[] =
     ANIMCMD_FRAME(192, 4),
     ANIMCMD_JUMP(0),
 };
-static const union AnimCmd *const sAnims_Bomnanimon[] =
+static const union AnimCmd *const sAnims_Bombernanimon[] =
 {
-    sAnim_Bomnanimon,
+    sAnim_Bombernanimon,
 };
-static const struct SpriteTemplate sSpriteTemplate_Bomnanimon =
+static const struct SpriteTemplate sSpriteTemplate_Bombernanimon =
 {
-    .tileTag = TAG_BOMNANIMON,
-    .paletteTag = TAG_BOMNANIMON,
-    .oam = &sOamData_Bomnanimon,
-    .anims = sAnims_Bomnanimon,
+    .tileTag = TAG_BOMBERNANIMON,
+    .paletteTag = TAG_BOMBERNANIMON,
+    .oam = &sOamData_Bombernanimon,
+    .anims = sAnims_Bombernanimon,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = SpriteCB_Bomnanimon,
+    .callback = SpriteCB_Bombernanimon,
 };
 static const struct CompressedSpriteSheet sSpriteSheet_Lightning[] =
 {
@@ -1402,7 +1402,7 @@ static void Task_Scene2_CreateSprites(u8 taskId)
     LoadSpritePalettes(sSpritePalettes_RunningPokemon);
 
     // Create Pokémon and player sprites
-    CreateSprite(&sSpriteTemplate_Bomnanimon, DISPLAY_WIDTH + 32, 128, 0);
+    CreateSprite(&sSpriteTemplate_Bombernanimon, DISPLAY_WIDTH + 32, 128, 0);
     CreateSprite(&sSpriteTemplate_Syakomon_x, DISPLAY_WIDTH + 48, 110, 1);
 
     if (sIntroCharacterGender == MALE)
@@ -1674,17 +1674,17 @@ static void SpriteCB_Syakomon_x(struct Sprite *sprite)
 #define sSinIdx data[1]
 #define sCosIdx data[2]
 
-static void SpriteCB_Bomnanimon(struct Sprite *sprite)
+static void SpriteCB_Bombernanimon(struct Sprite *sprite)
 {
     switch (sprite->sState)
     {
     case 0:
-        if (gIntroFrameCounter == TIMER_BOMNANIMON_ENTER)
+        if (gIntroFrameCounter == TIMER_BOMBERNANIMON_ENTER)
             sprite->sState++;
         break;
     case 1:
         sprite->x -= 2;
-        if (gIntroFrameCounter != TIMER_BOMNANIMON_RUN_CIRCULAR)
+        if (gIntroFrameCounter != TIMER_BOMBERNANIMON_RUN_CIRCULAR)
             break;
 
         // Initialize circular pattern running
@@ -1696,7 +1696,7 @@ static void SpriteCB_Bomnanimon(struct Sprite *sprite)
     case 2:
         if (sprite->x + sprite->x2 <= -32)
         {
-            // Bomnanimon is offscreen now, destroy it
+            // Bombernanimon is offscreen now, destroy it
             DestroySprite(sprite);
         }
         else

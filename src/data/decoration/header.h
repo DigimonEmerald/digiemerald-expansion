@@ -1056,16 +1056,16 @@ const struct Decoration gDecorations[] =
         .tiles = DecorGfx_SANGOMON_DOLL,
     },
 
-    [DECOR_SUNARZAMON_DOLL] =
+    [DECOR_SUNARIZAMON_DOLL] =
     {
-        .id = DECOR_SUNARZAMON_DOLL,
+        .id = DECOR_SUNARIZAMON_DOLL,
         .name = _("SUNARZAMON DOLL"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_SUNARZAMON_DOLL,
-        .tiles = DecorGfx_SUNARZAMON_DOLL,
+        .description = DecorDesc_SUNARIZAMON_DOLL,
+        .tiles = DecorGfx_SUNARIZAMON_DOLL,
     },
 
     [DECOR_SYAKOMON_X_DOLL] =
@@ -1116,40 +1116,40 @@ const struct Decoration gDecorations[] =
         .tiles = DecorGfx_EXVEEMON_DOLL,
     },
 
-    [DECOR_DEXDORUMON_DOLL] =
+    [DECOR_DEXDORUGAMON_DOLL] =
     {
-        .id = DECOR_DEXDORUMON_DOLL,
+        .id = DECOR_DEXDORUGAMON_DOLL,
         .name = _("DEXDORUMON DOLL"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_DEXDORUMON_DOLL,
-        .tiles = DecorGfx_DEXDORUMON_DOLL,
+        .description = DecorDesc_DEXDORUGAMON_DOLL,
+        .tiles = DecorGfx_DEXDORUGAMON_DOLL,
     },
 
-    [DECOR_DONSHOUMON_DOLL] =
+    [DECOR_DONSHOUTMON_DOLL] =
     {
-        .id = DECOR_DONSHOUMON_DOLL,
+        .id = DECOR_DONSHOUTMON_DOLL,
         .name = _("DONSHOUMON DOLL"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_DONSHOUMON_DOLL,
-        .tiles = DecorGfx_DONSHOUMON_DOLL,
+        .description = DecorDesc_DONSHOUTMON_DOLL,
+        .tiles = DecorGfx_DONSHOUTMON_DOLL,
     },
 
-    [DECOR_BIOSTEGMON_DOLL] =
+    [DECOR_BIOSTEGOMON_DOLL] =
     {
-        .id = DECOR_BIOSTEGMON_DOLL,
+        .id = DECOR_BIOSTEGOMON_DOLL,
         .name = _("BIOSTEGMON DOLL"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_BIOSTEGMON_DOLL,
-        .tiles = DecorGfx_BIOSTEGMON_DOLL,
+        .description = DecorDesc_BIOSTEGOMON_DOLL,
+        .tiles = DecorGfx_BIOSTEGOMON_DOLL,
     },
 
     [DECOR_BIRDRAMON_DOLL] =
@@ -1164,16 +1164,16 @@ const struct Decoration gDecorations[] =
         .tiles = DecorGfx_BIRDRAMON_DOLL,
     },
 
-    [DECOR_DARLIZAMON_DOLL] =
+    [DECOR_DARKLIZARDMON_DOLL] =
     {
-        .id = DECOR_DARLIZAMON_DOLL,
-        .name = _("DARLIZAMON DOLL"),
+        .id = DECOR_DARKLIZARDMON_DOLL,
+        .name = _("DRKLIZAMON DOLL"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_DARLIZAMON_DOLL,
-        .tiles = DecorGfx_DARLIZAMON_DOLL,
+        .description = DecorDesc_DARKLIZARDMON_DOLL,
+        .tiles = DecorGfx_DARKLIZARDMON_DOLL,
     },
 
     [DECOR_BURAIMON_DOLL] =
@@ -1428,16 +1428,16 @@ const struct Decoration gDecorations[] =
         .tiles = DecorGfx_GARGOMON_DOLL,
     },
 
-    [DECOR_GARGOYLMON_DOLL] =
+    [DECOR_GARGOYLEMON_DOLL] =
     {
-        .id = DECOR_GARGOYLMON_DOLL,
+        .id = DECOR_GARGOYLEMON_DOLL,
         .name = _("GARGOYLMON DOLL"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
         .price = 10000,
-        .description = DecorDesc_GARGOYLMON_DOLL,
-        .tiles = DecorGfx_GARGOYLMON_DOLL,
+        .description = DecorDesc_GARGOYLEMON_DOLL,
+        .tiles = DecorGfx_GARGOYLEMON_DOLL,
     },
 
     [DECOR_GARURUMON_DOLL] =

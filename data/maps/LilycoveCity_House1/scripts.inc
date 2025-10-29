@@ -5,12 +5,12 @@ LilycoveCity_House1_EventScript_ExpertM::
 	msgbox LilycoveCity_House1_Text_PokemonPartnersNotTools, MSGBOX_NPC
 	end
 
-LilycoveCity_House1_EventScript_Donshoumon::
+LilycoveCity_House1_EventScript_Donshoutmon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_DONSHOUMON, CRY_MODE_NORMAL
-	msgbox LilycoveCity_House1_Text_Donshoumon, MSGBOX_DEFAULT
+	playmoncry SPECIES_DONSHOUTMON, CRY_MODE_NORMAL
+	msgbox LilycoveCity_House1_Text_Donshoutmon, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
@@ -21,6 +21,6 @@ LilycoveCity_House1_Text_PokemonPartnersNotTools:
 	.string "Unfortunately, there are some people\n"
 	.string "who fail to understand that…$"
 
-LilycoveCity_House1_Text_Donshoumon:
-	.string "DONSHOUMON: Ruroro?$"
+LilycoveCity_House1_Text_Donshoutmon:
+	.string "DONSHOUTMON: Ruroro?$"
 

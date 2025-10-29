@@ -859,7 +859,7 @@ RustboroCity_EventScript_MayAskToBattle::
 RustboroCity_EventScript_BattleMay::
 	msgbox RustboroCity_Text_MayImNotGoingToLose, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, RustboroCity_EventScript_BattleMaySunarzamon
+	case 0, RustboroCity_EventScript_BattleMaySunarizamon
 	case 1, RustboroCity_EventScript_BattleMaySyakomon_x
 	case 2, RustboroCity_EventScript_BattleMayTerriermon
 	end
@@ -875,8 +875,8 @@ RustboroCity_EventScript_RestoreBgm::
 	fadedefaultbgm
 	return
 
-RustboroCity_EventScript_BattleMaySunarzamon::
-	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_SUNARZAMON, RustboroCity_Text_MayDefeat
+RustboroCity_EventScript_BattleMaySunarizamon::
+	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_SUNARIZAMON, RustboroCity_Text_MayDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
 	goto RustboroCity_EventScript_MayBrineyHint
 	end
@@ -925,7 +925,7 @@ RustboroCity_EventScript_BrendanAskToBattle::
 RustboroCity_EventScript_BattleBrendan::
 	msgbox RustboroCity_Text_BrendanIWontGoEasy, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, RustboroCity_EventScript_BattleBrendanSunarzamon
+	case 0, RustboroCity_EventScript_BattleBrendanSunarizamon
 	case 1, RustboroCity_EventScript_BattleBrendanSyakomon_x
 	case 2, RustboroCity_EventScript_BattleBrendanTerriermon
 	end
@@ -936,8 +936,8 @@ RustboroCity_EventScript_BrendanBrineyHint::
 	releaseall
 	end
 
-RustboroCity_EventScript_BattleBrendanSunarzamon::
-	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_SUNARZAMON, RustboroCity_Text_BrendanDefeat
+RustboroCity_EventScript_BattleBrendanSunarizamon::
+	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_SUNARIZAMON, RustboroCity_Text_BrendanDefeat
 	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
 	goto RustboroCity_EventScript_BrendanBrineyHint
 	end

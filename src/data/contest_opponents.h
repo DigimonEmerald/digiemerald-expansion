@@ -155,7 +155,7 @@ const struct ContestWinner gDefaultContestWinners[] =
     [CONTEST_WINNER_HALL_2 - 1] = {
         .personality = 0,
         .trainerId = CONTEST_AI_TRAINER_ID,
-        .species = SPECIES_ELEPHANMON,
+        .species = SPECIES_ELEPHANTMON,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .monName = _("TROPO"),
         .trainerName = _("ALLAN"),
@@ -191,7 +191,7 @@ const struct ContestWinner gDefaultContestWinners[] =
     [CONTEST_WINNER_HALL_6 - 1] = {
         .personality = 0,
         .trainerId = CONTEST_AI_TRAINER_ID,
-        .species = SPECIES_DARKTYRMON,
+        .species = SPECIES_DARKTYRANNOMON,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .monName = _("GOOZAN"),
         .trainerName = _("HANA"),
@@ -209,7 +209,7 @@ const struct ContestWinner gDefaultContestWinners[] =
     [CONTEST_WINNER_HALL_UNUSED_2 - 1] = {
         .personality = 0,
         .trainerId = CONTEST_AI_TRAINER_ID,
-        .species = SPECIES_BLGAOGAMON,
+        .species = SPECIES_BLACKGAOGAMON,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .monName = _("KITSY"),
         .trainerName = _("OMAR"),
@@ -395,7 +395,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_GRANT] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_ARESDRAMON,
+        .species = SPECIES_ARRESTERDRAMON,
         .nickname = _("SMISH"),
         .trainerName = _("GRANT"),
         .trainerGfxId = OBJ_EVENT_GFX_YOUNGSTER,
@@ -511,7 +511,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_MORRIS] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_BETGAMAMON,
+        .species = SPECIES_BETELGAMMAMON,
         .nickname = _("MAHITA"),
         .trainerName = _("MORRIS"),
         .trainerGfxId = OBJ_EVENT_GFX_SCHOOL_KID_M,
@@ -540,7 +540,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_MARIAH] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_BLKGATOMON,
+        .species = SPECIES_BLACKGATOMON,
         .nickname = _("RONAR"),
         .trainerName = _("MARIAH"),
         .trainerGfxId = OBJ_EVENT_GFX_GIRL_2,
@@ -627,7 +627,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_CHANCE] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_BOMNANIMON,
+        .species = SPECIES_BOMBERNANIMON,
         .nickname = _("RIKELEC"),
         .trainerName = _("CHANCE"),
         .trainerGfxId = OBJ_EVENT_GFX_RICH_BOY,
@@ -1062,7 +1062,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_MORGAN] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_DEXDORUMON,
+        .species = SPECIES_DEXDORUGAMON,
         .nickname = _("TOYBAL"),
         .trainerName = _("MORGAN"),
         .trainerGfxId = OBJ_EVENT_GFX_BLACK_BELT,
@@ -1149,7 +1149,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_AUDREY] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_DARLIZAMON,
+        .species = SPECIES_DARKLIZARDMON,
         .nickname = _("SWABY"),
         .trainerName = _("AUDREY"),
         .trainerGfxId = OBJ_EVENT_GFX_LASS,
@@ -1207,7 +1207,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_ARIANA] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_DONSHOUMON,
+        .species = SPECIES_DONSHOUTMON,
         .nickname = _("KECON"),
         .trainerName = _("ARIANA"),
         .trainerGfxId = OBJ_EVENT_GFX_GIRL_2,
@@ -1236,7 +1236,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_ASHTON] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_BLKAGUMON_X,
+        .species = SPECIES_BLACKAGUMON_X,
         .nickname = _("GOLDEN"),
         .trainerName = _("ASHTON"),
         .trainerGfxId = OBJ_EVENT_GFX_MAN_3,
@@ -1555,7 +1555,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_DEVIN] = {
         .filter = CONTEST_FILTER_ONLY_POSTGAME,
-        .species = SPECIES_MODBETAMON,
+        .species = SPECIES_MODOKIBETAMON,
         .nickname = _("SNUBBINS"),
         .trainerName = _("DEVIN"),
         .trainerGfxId = OBJ_EVENT_GFX_GENTLEMAN,
@@ -1613,7 +1613,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_RONNIE] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_BLKGATOMON_UVER,
+        .species = SPECIES_BLACKGATOMON_UVER,
         .nickname = _("LAIRN"),
         .trainerName = _("RONNIE"),
         .trainerGfxId = OBJ_EVENT_GFX_HIKER,
@@ -1671,7 +1671,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_ELIAS] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_BALISTAMON,
+        .species = SPECIES_BALLISTAMON,
         .nickname = _("NINAS"),
         .trainerName = _("ELIAS"),
         .trainerGfxId = OBJ_EVENT_GFX_LITTLE_BOY,
@@ -1787,7 +1787,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_SAUL] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_BLKGABUMON,
+        .species = SPECIES_BLACKGABUMON,
         .nickname = _("KINGSEA"),
         .trainerName = _("SAUL"),
         .trainerGfxId = OBJ_EVENT_GFX_CAMPER,
@@ -1903,7 +1903,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_DARRYL] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_DARKTYRMON_X,
+        .species = SPECIES_DARKTYRANNOMON_X,
         .nickname = _("VIPES"),
         .trainerName = _("DARRYL"),
         .trainerGfxId = OBJ_EVENT_GFX_MAN_3,
@@ -1961,7 +1961,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_NOEL] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_HAZYAGUMON,
+        .species = SPECIES_CLEARAGUMON,
         .nickname = _("KARPAG"),
         .trainerName = _("NOEL"),
         .trainerGfxId = OBJ_EVENT_GFX_YOUNGSTER,
@@ -1990,7 +1990,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_LACEY] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_DECKDRAMON,
+        .species = SPECIES_DECKERDRAMON,
         .nickname = _("LUNONE"),
         .trainerName = _("LACEY"),
         .trainerGfxId = OBJ_EVENT_GFX_WOMAN_1,
@@ -2309,7 +2309,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_JUSTINA] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_COMMDRAMON,
+        .species = SPECIES_COMMANDRAMON,
         .nickname = _("RADOS"),
         .trainerName = _("JUSTINA"),
         .trainerGfxId = OBJ_EVENT_GFX_PICNICKER,
@@ -2396,7 +2396,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_KEATON] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_BABOONMON,
+        .species = SPECIES_BABOONGAMON,
         .nickname = _("SLING"),
         .trainerName = _("KEATON"),
         .trainerGfxId = OBJ_EVENT_GFX_LITTLE_BOY,
@@ -2425,7 +2425,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_MAYRA] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_DARMAILMON,
+        .species = SPECIES_DARKMAILDRAMON,
         .nickname = _("TARIA"),
         .trainerName = _("MAYRA"),
         .trainerGfxId = OBJ_EVENT_GFX_POKEFAN_F,
@@ -2512,7 +2512,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_NIGEL] = {
         .filter = CONTEST_FILTER_NONE,
-        .species = SPECIES_BLGARGOMON,
+        .species = SPECIES_BLACKGARGOMON,
         .nickname = _("EYESAB"),
         .trainerName = _("NIGEL"),
         .trainerGfxId = OBJ_EVENT_GFX_CAMPER,
@@ -2860,7 +2860,7 @@ const struct ContestPokemon gContestOpponents[] =
     },
     [CONTEST_OPPONENT_PERLA] = {
         .filter = CONTEST_FILTER_ONLY_POSTGAME,
-        .species = SPECIES_SAMUAGUMON,
+        .species = SPECIES_BUSHIAGUMON,
         .nickname = _("NYX"),
         .trainerName = _("PERLA"),
         .trainerGfxId = OBJ_EVENT_GFX_BEAUTY,

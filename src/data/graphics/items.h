@@ -847,11 +847,11 @@ const u16 gItemIconPalette_Tsumemonite[] = INCBIN_U16("graphics/items/icon_palet
 const u32 gItemIcon_Betamon_xite[] = INCBIN_U32("graphics/items/icons/betamon_xite.4bpp.smol");
 const u16 gItemIconPalette_Betamon_xite[] = INCBIN_U16("graphics/items/icon_palettes/betamon_xite.gbapal");
 
-const u32 gItemIcon_Tyutyumonite[] = INCBIN_U32("graphics/items/icons/tyutyumonite.4bpp.smol");
-const u16 gItemIconPalette_Tyutyumonite[] = INCBIN_U16("graphics/items/icon_palettes/tyutyumonite.gbapal");
+const u32 gItemIcon_Chuuchuumonite[] = INCBIN_U32("graphics/items/icons/chuuchuumonite.4bpp.smol");
+const u16 gItemIconPalette_Chuuchuumonite[] = INCBIN_U16("graphics/items/icon_palettes/chuuchuumonite.gbapal");
 
-const u32 gItemIcon_Commdramonite[] = INCBIN_U32("graphics/items/icons/commdramonite.4bpp.smol");
-const u16 gItemIconPalette_Commdramonite[] = INCBIN_U16("graphics/items/icon_palettes/commdramonite.gbapal");
+const u32 gItemIcon_Commandramonite[] = INCBIN_U32("graphics/items/icons/commandramonite.4bpp.smol");
+const u16 gItemIconPalette_Commandramonite[] = INCBIN_U16("graphics/items/icon_palettes/commandramonite.gbapal");
 
 const u32 gItemIcon_Dracmonite[] = INCBIN_U32("graphics/items/icons/dracmonite.4bpp.smol");
 const u16 gItemIconPalette_Dracmonite[] = INCBIN_U16("graphics/items/icon_palettes/dracmonite.gbapal");
@@ -865,8 +865,8 @@ const u16 gItemIconPalette_Agumon_fake_expertniteY[] = INCBIN_U16("graphics/item
 const u32 gItemIcon_Impmonite[] = INCBIN_U32("graphics/items/icons/impmonite.4bpp.smol");
 const u16 gItemIconPalette_Impmonite[] = INCBIN_U16("graphics/items/icon_palettes/impmonite.gbapal");
 
-const u32 gItemIcon_Kodekacmonite[] = INCBIN_U32("graphics/items/icons/kodekacmonite.4bpp.smol");
-const u16 gItemIconPalette_Kodekacmonite[] = INCBIN_U16("graphics/items/icon_palettes/kodekacmonite.gbapal");
+const u32 gItemIcon_Minidekachimonite[] = INCBIN_U32("graphics/items/icons/minidekachimonite.4bpp.smol");
+const u16 gItemIconPalette_Minidekachimonite[] = INCBIN_U16("graphics/items/icon_palettes/minidekachimonite.gbapal");
 
 const u32 gItemIcon_Monodramonite[] = INCBIN_U32("graphics/items/icons/monodramonite.4bpp.smol");
 const u16 gItemIconPalette_Monodramonite[] = INCBIN_U16("graphics/items/icon_palettes/monodramonite.gbapal");
@@ -898,8 +898,8 @@ const u16 gItemIconPalette_Sablenite[] = INCBIN_U16("graphics/items/icon_palette
 const u32 gItemIcon_Mawilite[] = INCBIN_U32("graphics/items/icons/mawilite.4bpp.smol");
 const u16 gItemIconPalette_Mawilite[] = INCBIN_U16("graphics/items/icon_palettes/mawilite.gbapal");
 
-const u32 gItemIcon_Blgrowlmonite[] = INCBIN_U32("graphics/items/icons/blgrowlmonite.4bpp.smol");
-const u16 gItemIconPalette_Blgrowlmonite[] = INCBIN_U16("graphics/items/icon_palettes/blgrowlmonite.gbapal");
+const u32 gItemIcon_Blackgrowlmonite[] = INCBIN_U32("graphics/items/icons/blackgrowlmonite.4bpp.smol");
+const u16 gItemIconPalette_Blackgrowlmonite[] = INCBIN_U16("graphics/items/icon_palettes/blackgrowlmonite.gbapal");
 
 const u32 gItemIcon_Blimpmonite[] = INCBIN_U32("graphics/items/icons/blimpmonite.4bpp.smol");
 const u16 gItemIconPalette_Blimpmonite[] = INCBIN_U16("graphics/items/icon_palettes/blimpmonite.gbapal");
@@ -913,8 +913,8 @@ const u16 gItemIconPalette_Centarumonnite[] = INCBIN_U16("graphics/items/icon_pa
 const u32 gItemIcon_Citramonite[] = INCBIN_U32("graphics/items/icons/citramonite.4bpp.smol");
 const u16 gItemIconPalette_Citramonite[] = INCBIN_U16("graphics/items/icon_palettes/citramonite.gbapal");
 
-const u32 gItemIcon_Darmailmonnite[] = INCBIN_U32("graphics/items/icons/darmailmonnite.4bpp.smol");
-const u16 gItemIconPalette_Darmailmonnite[] = INCBIN_U16("graphics/items/icon_palettes/darmailmonnite.gbapal");
+const u32 gItemIcon_Darkmaildramonnite[] = INCBIN_U32("graphics/items/icons/darkmaildramonnite.4bpp.smol");
+const u16 gItemIconPalette_Darkmaildramonnite[] = INCBIN_U16("graphics/items/icon_palettes/darkmaildramonnite.gbapal");
 
 const u32 gItemIcon_Banettite[] = INCBIN_U32("graphics/items/icons/banettite.4bpp.smol");
 const u16 gItemIconPalette_Banettite[] = INCBIN_U16("graphics/items/icon_palettes/banettite.gbapal");

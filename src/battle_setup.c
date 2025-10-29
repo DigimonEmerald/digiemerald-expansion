@@ -545,8 +545,8 @@ void StartRegiBattle(void)
     case SPECIES_GARGOMON:
         transitionId = B_TRANSITION_GARGOMON;
         break;
-    case SPECIES_GARGOYLMON:
-        transitionId = B_TRANSITION_GARGOYLMON;
+    case SPECIES_GARGOYLEMON:
+        transitionId = B_TRANSITION_GARGOYLEMON;
         break;
     case SPECIES_GARURUMON:
         transitionId = B_TRANSITION_GARURUMON;

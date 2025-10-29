@@ -410,7 +410,7 @@ $(OBJEVENTGFXDIR)/people/youngster.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon_old/jellymon.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
-$(OBJEVENTGFXDIR)/pokemon_old/biostegmon.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon_old/biostegomon.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(OBJEVENTGFXDIR)/pokemon_old/gesomon.4bpp: %.4bpp: %.png
@@ -428,7 +428,7 @@ $(OBJEVENTGFXDIR)/pokemon_old/gekomon.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon_old/starmon_2010.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon_old/donshoumon.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon_old/donshoutmon.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(OBJEVENTGFXDIR)/pokemon_old/aquilamon.4bpp: %.4bpp: %.png
@@ -819,10 +819,10 @@ $(POKEMONGFXDIR)/leafmon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/leafmon/mega/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/choromon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/metalkoromon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/choromon/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/metalkoromon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/mokumon/overworld.4bpp: %.4bpp: %.png
@@ -897,10 +897,10 @@ $(POKEMONGFXDIR)/sandmon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/tsubumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/icebotamon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/snowbotamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/icebotamon/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/snowbotamon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/yuramon/overworld.4bpp: %.4bpp: %.png
@@ -951,7 +951,7 @@ $(POKEMONGFXDIR)/chapmon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/chicchimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/demmeramon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/demimeramon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/demiveemon/overworld.4bpp: %.4bpp: %.png
@@ -1083,7 +1083,7 @@ $(POKEMONGFXDIR)/tokomon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/tokomon_x/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/torballmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/torikaraballmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/tsumemon/overworld.4bpp: %.4bpp: %.png
@@ -1140,7 +1140,7 @@ $(POKEMONGFXDIR)/arcadiamon_rookie/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/argomon_rookie/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/armadilmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/armadillomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/aruraumon/overworld.4bpp: %.4bpp: %.png
@@ -1170,22 +1170,22 @@ $(POKEMONGFXDIR)/betamon_x/mega/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/biyomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blkagumon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/blackagumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blkagumon_x/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/blackagumon_x/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blkagumon_x/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/blackagumon_x/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blkgabumon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/blackgabumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blkgabumon/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/blackgabumon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blkguilmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/blackguilmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/bokomon/overworld.4bpp: %.4bpp: %.png
@@ -1200,7 +1200,7 @@ $(POKEMONGFXDIR)/burgermon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/burgermon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/samuagumon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/bushiagumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/candlemon/overworld.4bpp: %.4bpp: %.png
@@ -1209,28 +1209,28 @@ $(POKEMONGFXDIR)/candlemon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/chikurimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/tyutyumon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/chuuchuumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/tyutyumon/mega/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/chuuchuumon/mega/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/chuumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/hazyagumon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/clearagumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/hazyagumon/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/clearagumon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/commdramon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/commandramon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/commdramon/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/commandramon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/commdramon/mega/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/commandramon/mega/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/coronamon/overworld.4bpp: %.4bpp: %.png
@@ -1251,7 +1251,7 @@ $(POKEMONGFXDIR)/cutemon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/damemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/demidevmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/demidevimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/dokunemon/overworld.4bpp: %.4bpp: %.png
@@ -1266,7 +1266,7 @@ $(POKEMONGFXDIR)/dorumon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/dotagumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/dotfalcmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/dotfalcomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/dracmon/overworld.4bpp: %.4bpp: %.png
@@ -1281,7 +1281,7 @@ $(POKEMONGFXDIR)/dracomon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/dracomon_x/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/ebiburgmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/ebiburgamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/ekakimon/overworld.4bpp: %.4bpp: %.png
@@ -1440,13 +1440,13 @@ $(POKEMONGFXDIR)/keramon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/keramon_x/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/kodokgumon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/kodokugumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/kokabuimon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/kokabuterimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/kokabuimon/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/kokabuterimon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/kokuwamon/overworld.4bpp: %.4bpp: %.png
@@ -1599,16 +1599,16 @@ $(POKEMONGFXDIR)/metabee/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/metabee/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/kodekacmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/minidekachimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 8 -mheight 8
 
-$(POKEMONGFXDIR)/kodekacmon/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/minidekachimon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 8 -mheight 8
 
-$(POKEMONGFXDIR)/kodekacmon/mega/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/minidekachimon/mega/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 8 -mheight 8
 
-$(POKEMONGFXDIR)/modbetamon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/modokibetamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/monitamon/overworld.4bpp: %.4bpp: %.png
@@ -1671,13 +1671,13 @@ $(POKEMONGFXDIR)/palmon_x/overworldf.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/patamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/pawnmon_black/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/pawnchessmon_black/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/pawnmon_white/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/pawnchessmon_white/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/pawnmon_white/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/pawnchessmon_white/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/penguinmon/overworld.4bpp: %.4bpp: %.png
@@ -1734,7 +1734,7 @@ $(POKEMONGFXDIR)/sangomon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/santaagumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blktoyamon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/shadowtoyagumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/shamanmon/overworld.4bpp: %.4bpp: %.png
@@ -1743,10 +1743,10 @@ $(POKEMONGFXDIR)/shamanmon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/shoutmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/yukiagumon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/snowagumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/yukiagumon_06/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/snowagumon_06/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/icegobimon/overworld.4bpp: %.4bpp: %.png
@@ -1755,7 +1755,7 @@ $(POKEMONGFXDIR)/icegobimon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/solarmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/sounbrdmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/soundbirdmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/spadamon/overworld.4bpp: %.4bpp: %.png
@@ -1773,7 +1773,7 @@ $(POKEMONGFXDIR)/starmon_2010/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/strabimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/sunarzamon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/sunarizamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/swimmon/overworld.4bpp: %.4bpp: %.png
@@ -1908,10 +1908,10 @@ $(POKEMONGFXDIR)/archelomon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/argomon_champion/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/aresdramon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/arresterdramon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/atamademon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/atamadekachimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/aurumon/overworld.4bpp: %.4bpp: %.png
@@ -1920,13 +1920,13 @@ $(POKEMONGFXDIR)/aurumon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/axemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/baboonmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/baboongamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/bakemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/balistamon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/ballistamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/baluchimon/overworld.4bpp: %.4bpp: %.png
@@ -1941,52 +1941,52 @@ $(POKEMONGFXDIR)/baromon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/trailmon_battle_armament/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/betgamamon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/betelgammamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/bioquetmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/bioquetzalmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/biostegmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/biostegomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/biothunmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/biothunderbirdmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/birdramon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blgaogamon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/blackgaogamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blgargomon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/blackgargomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blgargomon/mega/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/blackgargomon/mega/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blgarurmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/blackgarurumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blgarurmon/mega/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/blackgarurumon/mega/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blkgatomon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/blackgatomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blkgatomon_uver/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/blackgatomon_uver/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blgrowlmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/blackgrowlmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/blgrowlmon/mega/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/blackgrowlmon/mega/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/sawkuwamon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/bladekuwagamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/sawkuwamon/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/bladekuwagamon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/blimpmon/overworld.4bpp: %.4bpp: %.png
@@ -2001,10 +2001,10 @@ $(POKEMONGFXDIR)/blimpmon/mega/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/boarmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/bomnanimon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/bombernanimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/bomnanimon/mega/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/bombernanimon/mega/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/boogiemon/overworld.4bpp: %.4bpp: %.png
@@ -2037,7 +2037,7 @@ $(POKEMONGFXDIR)/burgermon_champion/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/burgermon_champion/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/choumon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/butterflymon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/centarumon/overworld.4bpp: %.4bpp: %.png
@@ -2052,10 +2052,10 @@ $(POKEMONGFXDIR)/chamblemon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/chamelemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 8 -mheight 8
 
-$(POKEMONGFXDIR)/chrysalmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/chrysalimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/chrysalmon/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/chrysalimon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/citramon/overworld.4bpp: %.4bpp: %.png
@@ -2097,22 +2097,22 @@ $(POKEMONGFXDIR)/trailmon_dark/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/trailmon_dark/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/darlizamon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/darklizardmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/darmailmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/darkmaildramon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/darmailmon/mega/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/darkmaildramon/mega/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/darktyrmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/darktyrannomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/darktyrmon_x/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/darktyrannomon_x/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/deckdramon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/deckerdramon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/deltamon/overworld.4bpp: %.4bpp: %.png
@@ -2130,7 +2130,7 @@ $(POKEMONGFXDIR)/devidramon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/devimon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/dexdorumon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/dexdorugamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/diatrymon/overworld.4bpp: %.4bpp: %.png
@@ -2169,7 +2169,7 @@ $(POKEMONGFXDIR)/dolphmon/rainy/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/dolphmon/snowy/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/donshoumon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/donshoutmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/dorugamon/overworld.4bpp: %.4bpp: %.png
@@ -2187,7 +2187,7 @@ $(POKEMONGFXDIR)/drimogemon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/ebidramon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/elephanmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/elephantmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/eosmon_champion/overworld.4bpp: %.4bpp: %.png
@@ -2223,16 +2223,16 @@ $(POKEMONGFXDIR)/filmon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/firamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/fladramon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/flamedramon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/flawizamon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/flamewizardmon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/flarizamon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/flarerizamon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/flarizamon/overworldf.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/flarerizamon/overworldf.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/flybeemon/overworld.4bpp: %.4bpp: %.png
@@ -2265,7 +2265,7 @@ $(POKEMONGFXDIR)/gaogamon/mega/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/gargomon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/gargoylmon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/gargoylemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/garurumon/overworld.4bpp: %.4bpp: %.png
@@ -4011,7 +4011,7 @@ $(POKEMONGFXDIR)/calyrex/shadow/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/calyrex/ice/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/ebiburgmon/galar/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/ebiburgamon/galar/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/calumon/galar/overworld.4bpp: %.4bpp: %.png
@@ -4032,7 +4032,7 @@ $(POKEMONGFXDIR)/pickmon_silver/galar/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/pinamon/galar/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/armadilmon/galar/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/armadillomon/galar/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/bulucomon/galar/overworld.4bpp: %.4bpp: %.png
@@ -4404,7 +4404,7 @@ $(POKEMONGFXDIR)/furfrou/pharaoh/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/hoopa/unbound/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 8 -mheight 8
 
-$(POKEMONGFXDIR)/choromon/alola/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/metalkoromon/alola/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/mokumon/alola/overworld.4bpp: %.4bpp: %.png

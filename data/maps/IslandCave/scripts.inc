@@ -5,17 +5,17 @@ IslandCave_MapScripts::
 	.byte 0
 
 IslandCave_OnResume:
-	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, IslandCave_EventScript_TryRemoveGargoylmon
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, IslandCave_EventScript_TryRemoveGargoylemon
 	end
 
-IslandCave_EventScript_TryRemoveGargoylmon::
+IslandCave_EventScript_TryRemoveGargoylemon::
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
 	removeobject VAR_LAST_TALKED
 	return
 
 IslandCave_OnLoad:
-	call_if_unset FLAG_SYS_BRAILLE_GARGOYLMON_COMPLETED, IslandCave_EventScript_HideRegiEntrance
+	call_if_unset FLAG_SYS_BRAILLE_GARGOYLEMON_COMPLETED, IslandCave_EventScript_HideRegiEntrance
 	end
 
 IslandCave_EventScript_HideRegiEntrance::
@@ -30,11 +30,11 @@ IslandCave_EventScript_HideRegiEntrance::
 IslandCave_OnTransition:
 	setflag FLAG_LANDMARK_ISLAND_CAVE
 	call IslandCave_EventScript_ClearSteps
-	call_if_unset FLAG_DEFEATED_GARGOYLMON, IslandCave_EventScript_ShowGargoylmon
+	call_if_unset FLAG_DEFEATED_GARGOYLEMON, IslandCave_EventScript_ShowGargoylemon
 	end
 
-IslandCave_EventScript_ShowGargoylmon::
-	clearflag FLAG_HIDE_GARGOYLMON
+IslandCave_EventScript_ShowGargoylemon::
+	clearflag FLAG_HIDE_GARGOYLEMON
 	return
 
 IslandCave_EventScript_OpenRegiEntrance::
@@ -46,16 +46,16 @@ IslandCave_EventScript_OpenRegiEntrance::
 	setmetatile 9, 20, METATILE_Cave_SealedChamberEntrance_BottomRight, TRUE
 	special DrawWholeMapView
 	playse SE_BANG
-	setflag FLAG_SYS_BRAILLE_GARGOYLMON_COMPLETED
+	setflag FLAG_SYS_BRAILLE_GARGOYLEMON_COMPLETED
 	end
 
 IslandCave_EventScript_CaveEntranceMiddle::
 	lockall
-	call_if_set FLAG_TEMP_GARGOYLMON_PUZZLE_FAILED, IslandCave_EventScript_ClearSteps
-	goto_if_set FLAG_SYS_BRAILLE_GARGOYLMON_COMPLETED, IslandCave_EventScript_BigHoleInWall
+	call_if_set FLAG_TEMP_GARGOYLEMON_PUZZLE_FAILED, IslandCave_EventScript_ClearSteps
+	goto_if_set FLAG_SYS_BRAILLE_GARGOYLEMON_COMPLETED, IslandCave_EventScript_BigHoleInWall
 	braillemessage IslandCave_Braille_RunLapAroundWall
-	setflag FLAG_TEMP_GARGOYLMON_PUZZLE_STARTED
-	special ShouldDoBrailleGargoylmonPuzzle
+	setflag FLAG_TEMP_GARGOYLEMON_PUZZLE_STARTED
+	special ShouldDoBrailleGargoylemonPuzzle
 	goto IslandCave_EventScript_CloseBrailleMsg
 	end
 
@@ -66,11 +66,11 @@ IslandCave_EventScript_BigHoleInWall::
 
 IslandCave_EventScript_CaveEntranceSide::
 	lockall
-	call_if_set FLAG_TEMP_GARGOYLMON_PUZZLE_FAILED, IslandCave_EventScript_ClearSteps
+	call_if_set FLAG_TEMP_GARGOYLEMON_PUZZLE_FAILED, IslandCave_EventScript_ClearSteps
 	braillemessage IslandCave_Braille_RunLapAroundWall
-	goto_if_set FLAG_SYS_BRAILLE_GARGOYLMON_COMPLETED, IslandCave_EventScript_CloseBrailleMsg
-	setflag FLAG_TEMP_GARGOYLMON_PUZZLE_STARTED
-	special ShouldDoBrailleGargoylmonPuzzle
+	goto_if_set FLAG_SYS_BRAILLE_GARGOYLEMON_COMPLETED, IslandCave_EventScript_CloseBrailleMsg
+	setflag FLAG_TEMP_GARGOYLEMON_PUZZLE_STARTED
+	special ShouldDoBrailleGargoylemonPuzzle
 	goto IslandCave_EventScript_CloseBrailleMsg
 	end
 
@@ -81,38 +81,38 @@ IslandCave_EventScript_CloseBrailleMsg::
 	end
 
 IslandCave_EventScript_ClearSteps::
-	setvar VAR_GARGOYLMON_STEPS_1, 0
-	setvar VAR_GARGOYLMON_STEPS_2, 0
-	setvar VAR_GARGOYLMON_STEPS_3, 0
-	clearflag FLAG_TEMP_GARGOYLMON_PUZZLE_FAILED
+	setvar VAR_GARGOYLEMON_STEPS_1, 0
+	setvar VAR_GARGOYLEMON_STEPS_2, 0
+	setvar VAR_GARGOYLEMON_STEPS_3, 0
+	clearflag FLAG_TEMP_GARGOYLEMON_PUZZLE_FAILED
 	return
 
-IslandCave_EventScript_Gargoylmon::
+IslandCave_EventScript_Gargoylemon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_GARGOYLMON, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_GARGOYLEMON, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_GARGOYLMON, 40
+	setwildbattle SPECIES_GARGOYLEMON, 40
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	special StartRegiBattle
 	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_eq VAR_RESULT, B_OUTCOME_WON, IslandCave_EventScript_DefeatedGargoylmon
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, IslandCave_EventScript_RanFromGargoylmon
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, IslandCave_EventScript_RanFromGargoylmon
-	setflag FLAG_DEFEATED_GARGOYLMON
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, IslandCave_EventScript_DefeatedGargoylemon
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, IslandCave_EventScript_RanFromGargoylemon
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, IslandCave_EventScript_RanFromGargoylemon
+	setflag FLAG_DEFEATED_GARGOYLEMON
 	release
 	end
 
-IslandCave_EventScript_DefeatedGargoylmon::
-	setflag FLAG_DEFEATED_GARGOYLMON
+IslandCave_EventScript_DefeatedGargoylemon::
+	setflag FLAG_DEFEATED_GARGOYLEMON
 	goto Common_EventScript_RemoveStaticPokemon
 	end
 
-IslandCave_EventScript_RanFromGargoylmon::
-	setvar VAR_0x8004, SPECIES_GARGOYLMON
+IslandCave_EventScript_RanFromGargoylemon::
+	setvar VAR_0x8004, SPECIES_GARGOYLEMON
 	goto Common_EventScript_LegendaryFlewAway
 	end

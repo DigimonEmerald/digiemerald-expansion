@@ -116,11 +116,11 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Icebotamon
+Snowbotamon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Choumon
+Butterflymon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -133,7 +133,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Icebotamon
+Snowbotamon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -146,7 +146,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Choumon
+Butterflymon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -172,7 +172,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Choumon
+Butterflymon
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -185,7 +185,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Icebotamon
+Snowbotamon
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -245,7 +245,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Bomnanimon
+Bombernanimon
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -279,11 +279,11 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Darktyrmon
+Darktyrannomon
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Darktyrmon_x
+Darktyrannomon_x
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -296,7 +296,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Choumon
+Butterflymon
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -309,7 +309,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Commdramon
+Commandramon
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -335,7 +335,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Icebotamon
+Snowbotamon
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -356,7 +356,7 @@ Tinkermon
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Choumon
+Butterflymon
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -373,11 +373,11 @@ Tinkermon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Icebotamon
+Snowbotamon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Choumon
+Butterflymon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -390,7 +390,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Choumon
+Butterflymon
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -403,11 +403,11 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Icebotamon
+Snowbotamon
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Choumon
+Butterflymon
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -420,7 +420,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Chrysalmon
+Chrysalimon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -433,7 +433,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Icebotamon
+Snowbotamon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -446,7 +446,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Choumon
+Butterflymon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -463,7 +463,7 @@ Tinkermon
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Choumon
+Butterflymon
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -476,7 +476,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Choumon
+Butterflymon
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -489,7 +489,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Choumon
+Butterflymon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -502,7 +502,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Icebotamon
+Snowbotamon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -515,7 +515,7 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Betgamamon
+Betelgammamon
 Level: 30
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -550,7 +550,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Bioquetmon
+Bioquetzalmon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -563,7 +563,7 @@ Music: Aqua
 Double Battle: No
 AI: Basic Trainer
 
-Choumon
+Butterflymon
 Level: 28
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -632,7 +632,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Aresdramon
+Arresterdramon
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -653,7 +653,7 @@ Bullmon
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Aresdramon
+Arresterdramon
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -708,7 +708,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Aresdramon
+Arresterdramon
 Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -725,7 +725,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Aresdramon
+Arresterdramon
 Level: 28
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -746,7 +746,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Aresdramon
+Arresterdramon
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -767,7 +767,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Atamademon
+Atamadekachimon
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -805,7 +805,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Dexdorumon
+Dexdorugamon
 Level: 27
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Psybeam
@@ -1041,11 +1041,11 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Biostegmon
+Biostegomon
 Level: 12
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Biostegmon
+Biostegomon
 Level: 12
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -1169,7 +1169,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Biostegmon
+Biostegomon
 Level: 12
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -1385,7 +1385,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Blgargomon
+Blackgargomon
 Level: 44
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1407,7 +1407,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Blgarurmon
+Blackgarurumon
 Level: 46
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1433,7 +1433,7 @@ Chamblemon
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Betgamamon
+Betelgammamon
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1487,7 +1487,7 @@ Angelamon
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Blgarurmon
+Blackgarurumon
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1531,7 +1531,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Donshoumon
+Donshoutmon
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1561,7 +1561,7 @@ Chamblemon
 Level: 26
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Betgamamon
+Betelgammamon
 Level: 26
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
@@ -1575,7 +1575,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Bomnanimon
+Bombernanimon
 Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
@@ -1583,7 +1583,7 @@ Chamblemon
 Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Betgamamon
+Betelgammamon
 Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
@@ -1597,7 +1597,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Bomnanimon
+Bombernanimon
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -1605,7 +1605,7 @@ Chamblemon
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Betgamamon
+Betelgammamon
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -1619,7 +1619,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Bomnanimon
+Bombernanimon
 Level: 35
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
@@ -1627,7 +1627,7 @@ Chamblemon
 Level: 35
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-Bioquetmon
+Bioquetzalmon
 Level: 35
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
@@ -1659,7 +1659,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Blgaogamon
+Blackgaogamon
 Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Feint Attack
@@ -1692,7 +1692,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Darktyrmon
+Darktyrannomon
 Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Swords Dance
@@ -1708,7 +1708,7 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Blgarurmon
+Blackgarurumon
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Baton Pass
@@ -1742,11 +1742,11 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Blkgatomon_uver
+Blackgatomon_uver
 Level: 45
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Bomnanimon
+Bombernanimon
 Level: 45
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1764,7 +1764,7 @@ Angemon
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Chrysalmon
+Chrysalimon
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1782,7 +1782,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Blgargomon
+Blackgargomon
 Level: 30
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -1850,7 +1850,7 @@ Phascomon
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Blgargomon
+Blackgargomon
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1872,7 +1872,7 @@ Sakumon
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Elephanmon
+Elephantmon
 Level: 42
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -1890,7 +1890,7 @@ Angemon
 Level: 26
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Chrysalmon
+Chrysalimon
 Level: 26
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
@@ -1912,7 +1912,7 @@ Ankylomon
 Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Chrysalmon
+Chrysalimon
 Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
@@ -1934,7 +1934,7 @@ Ankylomon
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Chrysalmon
+Chrysalimon
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -1977,7 +1977,7 @@ Dorulumon
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Deckdramon
+Deckerdramon
 Level: 41
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2024,7 +2024,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Blgargomon
+Blackgargomon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2050,7 +2050,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Blgargomon
+Blackgargomon
 Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -2071,7 +2071,7 @@ Clockmon_fusion
 Level: 35
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Blgargomon
+Blackgargomon
 Level: 35
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -2088,7 +2088,7 @@ Clockmon_fusion
 Level: 40
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Blgargomon
+Blackgargomon
 Level: 40
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -2105,7 +2105,7 @@ Drimogemon
 Level: 42
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Blgargomon
+Blackgargomon
 Level: 42
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -2170,7 +2170,7 @@ Tinpet
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Chrysalmon
+Chrysalimon
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2200,7 +2200,7 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Blkgabumon @ Nugget
+Blackgabumon @ Nugget
 Level: 40
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -2300,7 +2300,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Aresdramon
+Arresterdramon
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2313,7 +2313,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Chrysalmon
+Chrysalimon
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2326,7 +2326,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Donshoumon
+Donshoutmon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bind
@@ -2334,7 +2334,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Fury Swipes
 - Feint Attack
 
-Darktyrmon_x
+Darktyrannomon_x
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Poison Tail
@@ -2351,7 +2351,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Blkagumon_x
+Blackagumon_x
 Level: 40
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -2409,7 +2409,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Choumon
+Butterflymon
 Level: 39
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -2426,7 +2426,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Donshoumon
+Donshoutmon
 Level: 35
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 - Bind
@@ -2434,7 +2434,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 - Fury Swipes
 - Feint Attack
 
-Darktyrmon_x
+Darktyrannomon_x
 Level: 35
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 - Poison Tail
@@ -2451,7 +2451,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Donshoumon
+Donshoutmon
 Level: 38
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 - Bind
@@ -2459,7 +2459,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 - Fury Swipes
 - Feint Attack
 
-Darktyrmon_x
+Darktyrannomon_x
 Level: 38
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 - Poison Tail
@@ -2476,7 +2476,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Donshoumon
+Donshoutmon
 Level: 41
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Bind
@@ -2484,7 +2484,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Fury Swipes
 - Feint Attack
 
-Darktyrmon_x
+Darktyrannomon_x
 Level: 41
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Poison Tail
@@ -2501,7 +2501,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Donshoumon
+Donshoutmon
 Level: 44
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Bind
@@ -2509,7 +2509,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Fury Swipes
 - Feint Attack
 
-Darktyrmon_x
+Darktyrannomon_x
 Level: 44
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Poison Tail
@@ -2544,7 +2544,7 @@ Deputymon
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Sawkuwamon
+Bladekuwagamon
 Level: 33
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -2631,7 +2631,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Blkgatomon
+Blackgatomon
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2674,7 +2674,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Chrysalmon
+Chrysalimon
 Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2687,7 +2687,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Blkgatomon_uver
+Blackgatomon_uver
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -2700,7 +2700,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Blkgatomon_uver
+Blackgatomon_uver
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -2717,7 +2717,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Blkgatomon_uver
+Blackgatomon_uver
 Level: 32
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -2734,7 +2734,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Blgrowlmon
+Blackgrowlmon
 Level: 35
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -2751,7 +2751,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Choumon
+Butterflymon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2815,7 +2815,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Choumon
+Butterflymon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2841,7 +2841,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Choumon
+Butterflymon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2858,7 +2858,7 @@ Minomon
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Choumon
+Butterflymon
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2888,7 +2888,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Choumon
+Butterflymon
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2927,7 +2927,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Commdramon
+Commandramon
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2940,7 +2940,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Choumon
+Butterflymon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2948,7 +2948,7 @@ Angemon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Choumon
+Butterflymon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2961,7 +2961,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Commdramon
+Commandramon
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3060,7 +3060,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Commdramon
+Commandramon
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3137,7 +3137,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkguilmon
+Blackguilmon
 Level: 34
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -3201,7 +3201,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Bioquetmon
+Bioquetzalmon
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -3320,7 +3320,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Betgamamon
+Betelgammamon
 Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -3350,7 +3350,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Bioquetmon
+Bioquetzalmon
 Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -3391,7 +3391,7 @@ Tinkermon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Icebotamon
+Snowbotamon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3404,7 +3404,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Choumon
+Butterflymon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3552,7 +3552,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Chrysalmon
+Chrysalimon
 Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -3582,7 +3582,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Chrysalmon
+Chrysalimon
 Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -3723,7 +3723,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Dexdorumon
+Dexdorugamon
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rapid Spin
@@ -3739,7 +3739,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Scratch
 - Dig
 
-Dexdorumon
+Dexdorugamon
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rapid Spin
@@ -3786,7 +3786,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Donshoumon
+Donshoutmon
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3816,7 +3816,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Aresdramon
+Arresterdramon
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4374,7 +4374,7 @@ Kakkinmon
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Deckdramon
+Deckerdramon
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4391,7 +4391,7 @@ Kakkinmon
 Level: 34
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Deckdramon
+Deckerdramon
 Level: 34
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -4408,7 +4408,7 @@ Kakkinmon
 Level: 37
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Deckdramon
+Deckerdramon
 Level: 37
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -4425,7 +4425,7 @@ Kakkinmon
 Level: 40
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Deckdramon
+Deckerdramon
 Level: 40
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -4438,7 +4438,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Deckdramon
+Deckerdramon
 Level: 43
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -4455,7 +4455,7 @@ Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Bomnanimon
+Bombernanimon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4468,11 +4468,11 @@ Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Bomnanimon
+Bombernanimon
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Bomnanimon
+Bombernanimon
 Level: 44
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4485,7 +4485,7 @@ Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Darktyrmon
+Darktyrannomon
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4498,7 +4498,7 @@ Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Bomnanimon
+Bombernanimon
 Level: 34
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -4519,7 +4519,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 - Odor Sleuth
 - Fury Swipes
 
-Bomnanimon
+Bombernanimon
 Level: 36
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 - Quick Attack
@@ -4544,7 +4544,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Odor Sleuth
 - Fury Swipes
 
-Bomnanimon
+Bombernanimon
 Level: 39
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Quick Attack
@@ -4568,7 +4568,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Odor Sleuth
 - Fury Swipes
 
-Demmeramon
+Demimeramon
 Level: 41
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Fury Swipes
@@ -4576,7 +4576,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Confusion
 - Psych Up
 
-Bomnanimon
+Bombernanimon
 Level: 41
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Quick Attack
@@ -4662,7 +4662,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Will O Wisp
 - Feint Attack
 
-Blgargomon
+Blackgargomon
 Level: 50
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Shadow Ball
@@ -4756,7 +4756,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Protect
 - Double Edge
 
-Darmailmon
+Darkmaildramon
 Level: 54
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Double Edge
@@ -4814,7 +4814,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Rock Throw
 - Rock Tomb
 
-Biothunmon @ Oran Berry
+Biothunderbirdmon @ Oran Berry
 Level: 15
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Block
@@ -4840,7 +4840,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Seismic Toss
 - Bulk Up
 
-Sawkuwamon
+Bladekuwagamon
 Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Focus Punch
@@ -4848,7 +4848,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Reflect
 - Bulk Up
 
-Betgamamon @ Sitrus Berry
+Betelgammamon @ Sitrus Berry
 Level: 19
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Arm Thrust
@@ -4890,7 +4890,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Thunder Wave
 - Sonic Boom
 
-Bomnanimon @ Sitrus Berry
+Bombernanimon @ Sitrus Berry
 Level: 24
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Quick Attack
@@ -4908,7 +4908,7 @@ Items: Hyper Potion / Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Chrysalmon
+Chrysalimon
 Level: 24
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Overheat
@@ -4974,7 +4974,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Facade
 - Headbutt
 
-Baboonmon @ Sitrus Berry
+Baboongamon @ Sitrus Berry
 Level: 31
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Counter
@@ -4992,7 +4992,7 @@ Items: Hyper Potion / Hyper Potion
 Double Battle: No
 AI: Basic Trainer / Risky
 
-Darlizamon
+Darklizardmon
 Level: 29
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Perish Song
@@ -5000,7 +5000,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Safeguard
 - Aerial Ace
 
-Elephanmon
+Elephantmon
 Level: 29
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Sunny Day
@@ -5024,7 +5024,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Steel Wing
 - Aerial Ace
 
-Darmailmon @ Oran Berry
+Darkmaildramon @ Oran Berry
 Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
@@ -5058,7 +5058,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Confuse Ray
 - Calm Mind
 
-Deckdramon @ Sitrus Berry
+Deckerdramon @ Sitrus Berry
 Level: 42
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Light Screen
@@ -5159,7 +5159,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Chrysalmon
+Chrysalimon
 Level: 15
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -5184,7 +5184,7 @@ Apemon
 Level: 26
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Sawkuwamon
+Bladekuwagamon
 Level: 26
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -5201,7 +5201,7 @@ Aquilamon
 Level: 29
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Sawkuwamon
+Bladekuwagamon
 Level: 29
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -5252,7 +5252,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Aresdramon
+Arresterdramon
 Level: 9
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -5265,7 +5265,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Aresdramon
+Arresterdramon
 Level: 16
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -5282,7 +5282,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Aresdramon
+Arresterdramon
 Level: 26
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -5299,7 +5299,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Aresdramon
+Arresterdramon
 Level: 29
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -5316,7 +5316,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Atamademon
+Atamadekachimon
 Level: 32
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -5333,7 +5333,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Atamademon
+Atamadekachimon
 Level: 35
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -5358,7 +5358,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Dizzy Punch
 - Teeter Dance
 
-Baboonmon
+Baboongamon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Focus Punch
@@ -5383,7 +5383,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Headbutt
 - Odor Sleuth
 
-Betgamamon
+Betelgammamon
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Tackle
@@ -5407,7 +5407,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 - Headbutt
 - Odor Sleuth
 
-Betgamamon
+Betelgammamon
 Level: 30
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 - Tackle
@@ -5431,7 +5431,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 - Headbutt
 - Odor Sleuth
 
-Betgamamon
+Betelgammamon
 Level: 33
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 - Tackle
@@ -5455,7 +5455,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Headbutt
 - Odor Sleuth
 
-Betgamamon
+Betelgammamon
 Level: 36
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Tackle
@@ -5479,7 +5479,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Headbutt
 - Odor Sleuth
 
-Bioquetmon
+Bioquetzalmon
 Level: 38
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Tackle
@@ -5565,7 +5565,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Feint Attack
 - Heal Bell
 
-Blgaogamon @ Oran Berry
+Blackgaogamon @ Oran Berry
 Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Assist
@@ -5608,7 +5608,7 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Blgaogamon @ Oran Berry
+Blackgaogamon @ Oran Berry
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -5621,7 +5621,7 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Blgaogamon @ Sitrus Berry
+Blackgaogamon @ Sitrus Berry
 Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -5660,7 +5660,7 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Biostegmon @ Oran Berry
+Biostegomon @ Oran Berry
 Level: 35
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -5766,7 +5766,7 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Bioquetmon
+Bioquetzalmon
 Level: 27
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -5779,7 +5779,7 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Bioquetmon
+Bioquetzalmon
 Level: 33
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Arm Thrust
@@ -5796,7 +5796,7 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Bioquetmon
+Bioquetzalmon
 Level: 36
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Arm Thrust
@@ -5813,7 +5813,7 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Bioquetmon
+Bioquetzalmon
 Level: 39
 IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Arm Thrust
@@ -5830,7 +5830,7 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Bioquetmon
+Bioquetzalmon
 Level: 42
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 - Arm Thrust
@@ -5847,7 +5847,7 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Sawkuwamon
+Bladekuwagamon
 Level: 18
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - High Jump Kick
@@ -5864,11 +5864,11 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Sawkuwamon
+Bladekuwagamon
 Level: 21
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-Betgamamon
+Betelgammamon
 Level: 21
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -5881,11 +5881,11 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-Sawkuwamon
+Bladekuwagamon
 Level: 30
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-Betgamamon
+Betelgammamon
 Level: 30
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -5902,7 +5902,7 @@ Blimpmon
 Level: 33
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 
-Bioquetmon
+Bioquetzalmon
 Level: 33
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 
@@ -5919,7 +5919,7 @@ Blimpmon
 Level: 36
 IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 
-Bioquetmon
+Bioquetzalmon
 Level: 36
 IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 
@@ -5936,7 +5936,7 @@ Blimpmon
 Level: 39
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 
-Bioquetmon
+Bioquetzalmon
 Level: 39
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 
@@ -6049,7 +6049,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Baboonmon
+Baboongamon
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Attract
@@ -6083,7 +6083,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Thunderbolt
 - Calm Mind
 
-Baboonmon
+Baboongamon
 Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Earthquake
@@ -6113,7 +6113,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Blkgatomon
+Blackgatomon
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6232,7 +6232,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Blkgatomon
+Blackgatomon
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6283,7 +6283,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Amnesia
 - Hyper Beam
 
-Commdramon
+Commandramon
 Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Dragon Dance
@@ -6308,7 +6308,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Hazyagumon
+Clearagumon
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6316,7 +6316,7 @@ Minomon
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Hazyagumon
+Clearagumon
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6329,15 +6329,15 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Hazyagumon
+Clearagumon
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Hazyagumon
+Clearagumon
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Hazyagumon
+Clearagumon
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6350,11 +6350,11 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Hazyagumon
+Clearagumon
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Blkagumon_x
+Blackagumon_x
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6371,7 +6371,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Hazyagumon
+Clearagumon
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6379,7 +6379,7 @@ Minomon
 Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Hazyagumon
+Clearagumon
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6447,7 +6447,7 @@ Minomon
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Choumon
+Butterflymon
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6494,11 +6494,11 @@ Minomon
 Level: 24
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Commdramon
+Commandramon
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Commdramon
+Commandramon
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -6511,11 +6511,11 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Commdramon
+Commandramon
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Choumon
+Butterflymon
 Level: 26
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -6523,7 +6523,7 @@ Minomon
 Level: 26
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Commdramon
+Commandramon
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -6536,11 +6536,11 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Commdramon
+Commandramon
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Choumon
+Butterflymon
 Level: 30
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -6548,7 +6548,7 @@ Missimon
 Level: 30
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Commdramon
+Commandramon
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -6561,7 +6561,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move / Try To Faint
 
-Commdramon
+Commandramon
 Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -6569,7 +6569,7 @@ Centarumon
 Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Commdramon
+Commandramon
 Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -6586,27 +6586,27 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Hazyagumon
+Clearagumon
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Commdramon
+Commandramon
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Commdramon
+Commandramon
 Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Commdramon
+Commandramon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Commdramon
+Commandramon
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Commdramon
+Commandramon
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6938,11 +6938,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkguilmon
+Blackguilmon
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Blkguilmon
+Blackguilmon
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6972,7 +6972,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkguilmon
+Blackguilmon
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -6985,11 +6985,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkguilmon
+Blackguilmon
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Blkguilmon
+Blackguilmon
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7006,7 +7006,7 @@ Angemon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Blkguilmon
+Blackguilmon
 Level: 34
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
@@ -7019,7 +7019,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkguilmon
+Blackguilmon
 Level: 39
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -7032,7 +7032,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkguilmon
+Blackguilmon
 Level: 42
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -7071,7 +7071,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkguilmon
+Blackguilmon
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7088,7 +7088,7 @@ Angemon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Blkguilmon
+Blackguilmon
 Level: 34
 IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
 
@@ -7101,7 +7101,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkguilmon
+Blackguilmon
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7114,7 +7114,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkguilmon
+Blackguilmon
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7131,7 +7131,7 @@ Angemon
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Blkguilmon
+Blackguilmon
 Level: 33
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 
@@ -7144,7 +7144,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkguilmon
+Blackguilmon
 Level: 39
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -7157,7 +7157,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkguilmon
+Blackguilmon
 Level: 42
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -7196,11 +7196,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Darmailmon
+Darkmaildramon
 Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Darmailmon
+Darkmaildramon
 Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -7213,11 +7213,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Darmailmon
+Darkmaildramon
 Level: 41
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Darmailmon
+Darkmaildramon
 Level: 41
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
@@ -7230,11 +7230,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Darmailmon
+Darkmaildramon
 Level: 44
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Darmailmon
+Darkmaildramon
 Level: 44
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
@@ -7251,11 +7251,11 @@ Flymon
 Level: 46
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Darmailmon
+Darkmaildramon
 Level: 46
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Darmailmon
+Darkmaildramon
 Level: 46
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -7268,11 +7268,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Darmailmon
+Darkmaildramon
 Level: 49
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-Darmailmon
+Darkmaildramon
 Level: 49
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
@@ -7323,7 +7323,7 @@ Angemon
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Elephanmon
+Elephantmon
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7357,7 +7357,7 @@ Phascomon
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Elephanmon
+Elephantmon
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -7383,7 +7383,7 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Elephanmon
+Elephantmon
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7434,7 +7434,7 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Darlizamon
+Darklizardmon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7489,7 +7489,7 @@ Hagurumon
 Level: 32
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Darlizamon
+Darklizardmon
 Level: 32
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -7506,7 +7506,7 @@ Hagurumon
 Level: 35
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Darmailmon
+Darkmaildramon
 Level: 35
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -7523,7 +7523,7 @@ Hagurumon
 Level: 38
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Darmailmon
+Darkmaildramon
 Level: 38
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -7536,7 +7536,7 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Darmailmon
+Darkmaildramon
 Level: 41
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -7570,7 +7570,7 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Elephanmon
+Elephantmon
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7583,7 +7583,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move / Try To Faint
 
-Balistamon
+Ballistamon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7596,7 +7596,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move / Try To Faint
 
-Balistamon
+Ballistamon
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7681,7 +7681,7 @@ Argomon_rookie
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Balistamon
+Ballistamon
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7825,7 +7825,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Sludge
 - Self Destruct
 
-Armadilmon @ Smoke Ball
+Armadillomon @ Smoke Ball
 Level: 35
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 - Tackle
@@ -7840,7 +7840,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Sawkuwamon
+Bladekuwagamon
 Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -7853,7 +7853,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Sawkuwamon
+Bladekuwagamon
 Level: 13
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -7866,11 +7866,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Sawkuwamon
+Bladekuwagamon
 Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Betgamamon
+Betelgammamon
 Level: 18
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -7883,7 +7883,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Sawkuwamon
+Bladekuwagamon
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -7896,7 +7896,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Atamademon
+Atamadekachimon
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -7909,11 +7909,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Sawkuwamon
+Bladekuwagamon
 Level: 26
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
-Betgamamon
+Betelgammamon
 Level: 26
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
@@ -7926,11 +7926,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Sawkuwamon
+Bladekuwagamon
 Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-Betgamamon
+Betelgammamon
 Level: 29
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
@@ -7947,7 +7947,7 @@ Blimpmon
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
-Bioquetmon
+Bioquetzalmon
 Level: 32
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
@@ -7964,7 +7964,7 @@ Blimpmon
 Level: 35
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-Bioquetmon
+Bioquetzalmon
 Level: 35
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
@@ -7977,7 +7977,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Chrysalmon
+Chrysalimon
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Ember
@@ -8028,7 +8028,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Chrysalmon
+Chrysalimon
 Level: 29
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 - Ember
@@ -8045,7 +8045,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Chrysalmon
+Chrysalimon
 Level: 32
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 - Ember
@@ -8070,7 +8070,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Grass Whistle
 - Sunny Day
 
-Chrysalmon
+Chrysalimon
 Level: 34
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Flamethrower
@@ -8159,7 +8159,7 @@ Angemon
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Blkagumon_x
+Blackagumon_x
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8172,7 +8172,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkagumon_x
+Blackagumon_x
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8202,7 +8202,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkagumon_x
+Blackagumon_x
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8215,7 +8215,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkagumon_x
+Blackagumon_x
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8223,7 +8223,7 @@ Angemon
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Blkagumon_x
+Blackagumon_x
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8275,7 +8275,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkgabumon
+Blackgabumon
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8305,7 +8305,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkagumon_x
+Blackagumon_x
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8318,7 +8318,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkagumon_x
+Blackagumon_x
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8348,7 +8348,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkgabumon
+Blackgabumon
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8391,7 +8391,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkgabumon
+Blackgabumon
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8408,7 +8408,7 @@ Biyomon
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Blkagumon
+Blackagumon
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8455,7 +8455,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkgabumon
+Blackgabumon
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8494,7 +8494,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkguilmon
+Blackguilmon
 Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8540,7 +8540,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Poison Sting
 - Slash
 
-Dexdorumon
+Dexdorugamon
 Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rapid Spin
@@ -8620,7 +8620,7 @@ Birdramon
 Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Darlizamon
+Darklizardmon
 Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8633,7 +8633,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Aresdramon
+Arresterdramon
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8641,7 +8641,7 @@ Zerimon
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Darlizamon
+Darklizardmon
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8671,7 +8671,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Aresdramon
+Arresterdramon
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -8688,7 +8688,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Aresdramon
+Arresterdramon
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -8696,7 +8696,7 @@ Zurumon
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Darlizamon
+Darklizardmon
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -8709,7 +8709,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Atamademon
+Atamadekachimon
 Level: 28
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -8717,7 +8717,7 @@ Zurumon
 Level: 28
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Darlizamon
+Darklizardmon
 Level: 28
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -8730,7 +8730,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Atamademon
+Atamadekachimon
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -8738,7 +8738,7 @@ Zurumon
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Darlizamon
+Darklizardmon
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -8751,7 +8751,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Atamademon
+Atamadekachimon
 Level: 40
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -8759,7 +8759,7 @@ Arcadiamon_it
 Level: 40
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Darmailmon
+Darkmaildramon
 Level: 40
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -8863,7 +8863,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Night Shade
 - Disable
 
-Aresdramon
+Arresterdramon
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Absorb
@@ -9152,7 +9152,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Chrysalmon
+Chrysalimon
 Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -9238,7 +9238,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Bomnanimon
+Bombernanimon
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9273,7 +9273,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Bomnanimon
+Bombernanimon
 Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bite
@@ -9290,11 +9290,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Sawkuwamon
+Bladekuwagamon
 Level: 33
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Bioquetmon
+Bioquetzalmon
 Level: 33
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -9324,7 +9324,7 @@ Gotsumon_x
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Bioquetmon
+Bioquetzalmon
 Level: 33
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -9354,11 +9354,11 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Darktyrmon
+Darktyrannomon
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Darktyrmon_x
+Darktyrannomon_x
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9461,7 +9461,7 @@ Items: Full Restore / Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Darmailmon
+Darkmaildramon
 Level: 44
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Aerial Ace
@@ -9469,7 +9469,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Dragon Breath
 - Dragon Dance
 
-Blgaogamon
+Blackgaogamon
 Level: 43
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Sing
@@ -9510,7 +9510,7 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Sunarzamon
+Sunarizamon
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9556,7 +9556,7 @@ Swimmon
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_BRENDAN_ROUTE_103_SUNARZAMON ===
+=== TRAINER_BRENDAN_ROUTE_103_SUNARIZAMON ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -9569,7 +9569,7 @@ Syakomon_x
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_ROUTE_110_SUNARZAMON ===
+=== TRAINER_BRENDAN_ROUTE_110_SUNARIZAMON ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -9590,7 +9590,7 @@ Tapirmon
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_BRENDAN_ROUTE_119_SUNARZAMON ===
+=== TRAINER_BRENDAN_ROUTE_119_SUNARIZAMON ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -9675,7 +9675,7 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Sunarzamon
+Sunarizamon
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9721,7 +9721,7 @@ Swimmon
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_MAY_ROUTE_103_SUNARZAMON ===
+=== TRAINER_MAY_ROUTE_103_SUNARIZAMON ===
 Name: MAY
 Class: Rival
 Pic: May
@@ -9734,7 +9734,7 @@ Syakomon_x
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_MAY_ROUTE_110_SUNARZAMON ===
+=== TRAINER_MAY_ROUTE_110_SUNARIZAMON ===
 Name: MAY
 Class: Rival
 Pic: May
@@ -9755,7 +9755,7 @@ Tapirmon
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MAY_ROUTE_119_SUNARZAMON ===
+=== TRAINER_MAY_ROUTE_119_SUNARIZAMON ===
 Name: MAY
 Class: Rival
 Pic: May
@@ -9848,7 +9848,7 @@ Toyagumon
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Blkgatomon
+Blackgatomon
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9860,7 +9860,7 @@ Allomon_x
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Betgamamon
+Betelgammamon
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9873,7 +9873,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Tyutyumon
+Chuuchuumon
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9886,7 +9886,7 @@ Music: Cool
 Double Battle: No
 AI: Basic Trainer
 
-Deckdramon
+Deckerdramon
 Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Explosion
@@ -9919,7 +9919,7 @@ Tsukaimon
 Level: 22
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Blkgatomon
+Blackgatomon
 Level: 22
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -9931,7 +9931,7 @@ Angelamon
 Level: 22
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Betgamamon
+Betelgammamon
 Level: 22
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -9952,7 +9952,7 @@ Tsukaimon
 Level: 25
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Blkgatomon
+Blackgatomon
 Level: 25
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -9964,7 +9964,7 @@ Angelamon
 Level: 25
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Bioquetmon
+Bioquetzalmon
 Level: 25
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -9985,7 +9985,7 @@ Tsukaimon
 Level: 28
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Blkgatomon
+Blackgatomon
 Level: 28
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -9997,7 +9997,7 @@ Angelamon
 Level: 28
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Bioquetmon
+Bioquetzalmon
 Level: 28
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -10018,7 +10018,7 @@ Tsukaimon
 Level: 31
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Blkgatomon_uver
+Blackgatomon_uver
 Level: 31
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -10030,7 +10030,7 @@ Angelamon
 Level: 31
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Bioquetmon
+Bioquetzalmon
 Level: 31
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -10047,7 +10047,7 @@ Angemon
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Aresdramon
+Arresterdramon
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10063,7 +10063,7 @@ Birdramon
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Blkagumon_x
+Blackagumon_x
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10077,7 +10077,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Blgargomon
+Blackgargomon
 Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10111,7 +10111,7 @@ Angemon
 Level: 22
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Aresdramon
+Arresterdramon
 Level: 22
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -10127,7 +10127,7 @@ Birdramon
 Level: 22
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Blkagumon_x
+Blackagumon_x
 Level: 22
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -10144,7 +10144,7 @@ Ankylomon
 Level: 25
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Atamademon
+Atamadekachimon
 Level: 25
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -10156,11 +10156,11 @@ Bullmon
 Level: 25
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Blgaogamon
+Blackgaogamon
 Level: 25
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Blkagumon_x
+Blackagumon_x
 Level: 25
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -10177,7 +10177,7 @@ Ankylomon
 Level: 28
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Atamademon
+Atamadekachimon
 Level: 28
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -10189,11 +10189,11 @@ Bullmon
 Level: 28
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Blgaogamon
+Blackgaogamon
 Level: 28
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Blkagumon_x
+Blackagumon_x
 Level: 28
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -10210,7 +10210,7 @@ Ankylomon
 Level: 31
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Atamademon
+Atamadekachimon
 Level: 31
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -10222,11 +10222,11 @@ Bullmon
 Level: 31
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Blgaogamon
+Blackgaogamon
 Level: 31
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Blkgabumon
+Blackgabumon
 Level: 31
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -10240,7 +10240,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Atamademon
+Atamadekachimon
 Level: 27
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -10290,7 +10290,7 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Atamademon
+Atamadekachimon
 Level: 31
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
@@ -10304,7 +10304,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Atamademon
+Atamadekachimon
 Level: 34
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
@@ -10318,7 +10318,7 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Atamademon
+Atamadekachimon
 Level: 37
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
@@ -10332,11 +10332,11 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Donshoumon
+Donshoutmon
 Level: 39
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Atamademon
+Atamadekachimon
 Level: 39
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
@@ -10390,7 +10390,7 @@ Items: Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Darlizamon
+Darklizardmon
 Level: 38
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -10513,7 +10513,7 @@ Chamblemon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Icebotamon
+Snowbotamon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10530,7 +10530,7 @@ Chamblemon
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Icebotamon
+Snowbotamon
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10547,7 +10547,7 @@ Tinkermon
 Level: 22
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Chrysalmon
+Chrysalimon
 Level: 22
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -10590,7 +10590,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Sawkuwamon
+Bladekuwagamon
 Level: 13
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -10603,7 +10603,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Betgamamon
+Betelgammamon
 Level: 13
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -10616,7 +10616,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Sawkuwamon
+Bladekuwagamon
 Level: 36
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -10629,7 +10629,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Choumon
+Butterflymon
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10643,7 +10643,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Bomnanimon
+Bombernanimon
 Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Thunder
@@ -10678,7 +10678,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Icebotamon
+Snowbotamon
 Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10769,7 +10769,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Icebotamon
+Snowbotamon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10786,7 +10786,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Dexdorumon
+Dexdorugamon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10799,7 +10799,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Icebotamon
+Snowbotamon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10825,7 +10825,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Dexdorumon
+Dexdorugamon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10842,7 +10842,7 @@ Hagurumon
 Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BRENDAN_RUSTBORO_SUNARZAMON ===
+=== TRAINER_BRENDAN_RUSTBORO_SUNARIZAMON ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -10872,7 +10872,7 @@ Angemon
 Level: 13
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Sunarzamon
+Sunarizamon
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -10889,7 +10889,7 @@ Angelamon
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Atamademon
+Atamadekachimon
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10902,7 +10902,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkguilmon
+Blackguilmon
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10915,7 +10915,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Icebotamon
+Snowbotamon
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10932,7 +10932,7 @@ Music: Magma
 Double Battle: No
 AI: Basic Trainer
 
-Chrysalmon
+Chrysalimon
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -10940,11 +10940,11 @@ Tinkermon
 Level: 20
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Chrysalmon
+Chrysalimon
 Level: 22
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Icebotamon
+Snowbotamon
 Level: 22
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -10958,7 +10958,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Donshoumon
+Donshoutmon
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10996,7 +10996,7 @@ Angemon
 Level: 13
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Sunarzamon
+Sunarizamon
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -11036,7 +11036,7 @@ Tinpet
 Level: 24
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-Icebotamon
+Snowbotamon
 Level: 24
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -11057,7 +11057,7 @@ Toyagumon
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Aresdramon
+Arresterdramon
 Level: 4
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11074,7 +11074,7 @@ Zubamon
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Aresdramon
+Arresterdramon
 Level: 6
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11104,11 +11104,11 @@ Jazamon
 Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Aresdramon
+Arresterdramon
 Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Chrysalmon
+Chrysalimon
 Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -11125,7 +11125,7 @@ Aegiomon
 Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Aresdramon
+Arresterdramon
 Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -11142,7 +11142,7 @@ Aegiomon
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Atamademon
+Atamadekachimon
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -11159,7 +11159,7 @@ Aegiomon
 Level: 32
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Atamademon
+Atamadekachimon
 Level: 32
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -11180,7 +11180,7 @@ Aegiomon
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Atamademon
+Atamadekachimon
 Level: 34
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -11210,7 +11210,7 @@ Birdramon
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Aresdramon
+Arresterdramon
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11240,7 +11240,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Blkagumon_x
+Blackagumon_x
 Level: 39
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -11320,7 +11320,7 @@ Bakemon
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Balistamon
+Ballistamon
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11350,7 +11350,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Balistamon
+Ballistamon
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11380,7 +11380,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Balistamon
+Ballistamon
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -11397,7 +11397,7 @@ Zenimon
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Balistamon
+Ballistamon
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -11418,7 +11418,7 @@ Zenimon
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Balistamon
+Ballistamon
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -11435,7 +11435,7 @@ Archelomon
 Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Balistamon
+Ballistamon
 Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -11443,7 +11443,7 @@ Zenimon
 Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Balistamon
+Ballistamon
 Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -11456,7 +11456,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Chrysalmon
+Chrysalimon
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11515,7 +11515,7 @@ Monimon
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Chrysalmon
+Chrysalimon
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11532,7 +11532,7 @@ Monimon
 Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Biothunmon
+Biothunderbirdmon
 Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11566,7 +11566,7 @@ Monimon
 Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Dexdorumon
+Dexdorugamon
 Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11736,11 +11736,11 @@ Music: Girl
 Double Battle: Yes
 AI: Check Bad Move
 
-Blgaogamon
+Blackgaogamon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Bomnanimon
+Bombernanimon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11855,7 +11855,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Blkagumon_x
+Blackagumon_x
 Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11869,7 +11869,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Donshoumon
+Donshoutmon
 Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Flamethrower
@@ -11886,7 +11886,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Sawkuwamon
+Bladekuwagamon
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Bide
@@ -11894,7 +11894,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Confusion
 - Thunder Punch
 
-Sawkuwamon
+Bladekuwagamon
 Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Thunder Punch
@@ -11911,7 +11911,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Sawkuwamon
+Bladekuwagamon
 Level: 23
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Bide
@@ -11961,7 +11961,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sludge
 - Smokescreen
 
-Balistamon
+Ballistamon
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sand Attack
@@ -12020,15 +12020,15 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Darlizamon
+Darklizardmon
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Darlizamon
+Darklizardmon
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Darlizamon
+Darklizardmon
 Level: 27
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -12055,7 +12055,7 @@ Items: Full Restore / Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Darmailmon
+Darkmaildramon
 Level: 47
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Aerial Ace
@@ -12063,7 +12063,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Dragon Breath
 - Dragon Dance
 
-Blgaogamon
+Blackgaogamon
 Level: 46
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Sing
@@ -12105,7 +12105,7 @@ Items: Full Restore / Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Darmailmon
+Darkmaildramon
 Level: 50
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Aerial Ace
@@ -12113,7 +12113,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Dragon Breath
 - Dragon Dance
 
-Blgaogamon
+Blackgaogamon
 Level: 49
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Sing
@@ -12155,7 +12155,7 @@ Items: Full Restore / Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Darmailmon
+Darkmaildramon
 Level: 53
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Aerial Ace
@@ -12163,7 +12163,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Dragon Breath
 - Dragon Dance
 
-Blgaogamon
+Blackgaogamon
 Level: 52
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Sing
@@ -12205,7 +12205,7 @@ Items: Full Restore / Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-Darmailmon
+Darkmaildramon
 Level: 56
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Aerial Ace
@@ -12213,7 +12213,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Dragon Breath
 - Dragon Dance
 
-Blgaogamon
+Blackgaogamon
 Level: 55
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 - Sing
@@ -12254,7 +12254,7 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Elephanmon
+Elephantmon
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -12270,7 +12270,7 @@ Swimmon
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_BRENDAN_LILYCOVE_SUNARZAMON ===
+=== TRAINER_BRENDAN_LILYCOVE_SUNARIZAMON ===
 Name: BRENDAN
 Class: Rival
 Pic: Brendan
@@ -12279,7 +12279,7 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Elephanmon
+Elephantmon
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -12304,7 +12304,7 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Elephanmon
+Elephantmon
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -12329,7 +12329,7 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Elephanmon
+Elephantmon
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -12345,7 +12345,7 @@ Swimmon
 Level: 34
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
-=== TRAINER_MAY_LILYCOVE_SUNARZAMON ===
+=== TRAINER_MAY_LILYCOVE_SUNARIZAMON ===
 Name: MAY
 Class: Rival
 Pic: May
@@ -12354,7 +12354,7 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Elephanmon
+Elephantmon
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -12379,7 +12379,7 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Elephanmon
+Elephantmon
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -12425,7 +12425,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Choumon
+Butterflymon
 Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -12442,15 +12442,15 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Hazyagumon
+Clearagumon
 Level: 15
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Hazyagumon
+Clearagumon
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Commdramon
+Commandramon
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -12486,7 +12486,7 @@ Allomon
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Biothunmon
+Biothunderbirdmon
 Level: 34
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -12597,7 +12597,7 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Darlizamon
+Darklizardmon
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sing
@@ -12605,7 +12605,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Safeguard
 - Aerial Ace
 
-Chrysalmon
+Chrysalimon
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flamethrower
@@ -12680,7 +12680,7 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Psych Up
 - Protect
 
-Bioquetmon
+Bioquetzalmon
 Level: 39
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Focus Punch
@@ -12705,7 +12705,7 @@ IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Psych Up
 - Protect
 
-Bioquetmon
+Bioquetzalmon
 Level: 43
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 - Focus Punch
@@ -12730,7 +12730,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Psych Up
 - Protect
 
-Bioquetmon
+Bioquetzalmon
 Level: 46
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Focus Punch
@@ -12755,7 +12755,7 @@ IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Psych Up
 - Protect
 
-Bioquetmon
+Bioquetzalmon
 Level: 49
 IVs: 27 HP / 27 Atk / 27 Def / 27 SpA / 27 SpD / 27 Spe
 - Focus Punch
@@ -12780,7 +12780,7 @@ IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 - Psych Up
 - Protect
 
-Bioquetmon
+Bioquetzalmon
 Level: 52
 IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
 - Focus Punch
@@ -12818,7 +12818,7 @@ Gotsumon_x
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Choumon
+Butterflymon
 Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -12835,7 +12835,7 @@ Gotsumon_x
 Level: 42
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Choumon
+Butterflymon
 Level: 40
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -12852,7 +12852,7 @@ Guilmon
 Level: 45
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Choumon
+Butterflymon
 Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -12899,7 +12899,7 @@ Music: Swimmer
 Double Battle: Yes
 AI: Check Bad Move
 
-Blkagumon_x
+Blackagumon_x
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -12916,7 +12916,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Hazyagumon
+Clearagumon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -12928,7 +12928,7 @@ Doggymon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Choumon
+Butterflymon
 Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -12976,7 +12976,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Hazyagumon
+Clearagumon
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13079,7 +13079,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Betgamamon
+Betelgammamon
 Level: 15
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
@@ -13118,7 +13118,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Aresdramon
+Arresterdramon
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13131,7 +13131,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Chrysalmon
+Chrysalimon
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13178,7 +13178,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Dexdorumon
+Dexdorugamon
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13195,11 +13195,11 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Blkgatomon
+Blackgatomon
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Blkgatomon
+Blackgatomon
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13259,7 +13259,7 @@ Toyagumon
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Blkgatomon
+Blackgatomon
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13276,7 +13276,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Icebotamon
+Snowbotamon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13302,7 +13302,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Chrysalmon
+Chrysalimon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13315,11 +13315,11 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Dexdorumon
+Dexdorugamon
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Icebotamon
+Snowbotamon
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13332,11 +13332,11 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Dexdorumon
+Dexdorugamon
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Chrysalmon
+Chrysalimon
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13362,7 +13362,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Icebotamon
+Snowbotamon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13388,7 +13388,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Icebotamon
+Snowbotamon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13414,7 +13414,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Dexdorumon
+Dexdorugamon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13427,7 +13427,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Chrysalmon
+Chrysalimon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13440,7 +13440,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Icebotamon
+Snowbotamon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13466,7 +13466,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Chrysalmon
+Chrysalimon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13479,7 +13479,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Dexdorumon
+Dexdorugamon
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13492,7 +13492,7 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Chrysalmon
+Chrysalimon
 Level: 26
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
@@ -13500,7 +13500,7 @@ Tinpet
 Level: 28
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
-Icebotamon
+Snowbotamon
 Level: 30
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
@@ -13616,7 +13616,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkguilmon
+Blackguilmon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13651,7 +13651,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Bomnanimon
+Bombernanimon
 Level: 24
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -13659,7 +13659,7 @@ Angelamon
 Level: 24
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
-Bomnanimon
+Bombernanimon
 Level: 24
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -13740,7 +13740,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Chrysalmon
+Chrysalimon
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13757,7 +13757,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Aresdramon
+Arresterdramon
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13791,7 +13791,7 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Balistamon
+Ballistamon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13825,11 +13825,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Sawkuwamon
+Bladekuwagamon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Betgamamon
+Betelgammamon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13842,7 +13842,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Sawkuwamon
+Bladekuwagamon
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13876,7 +13876,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Aresdramon
+Arresterdramon
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13919,7 +13919,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Sawkuwamon
+Bladekuwagamon
 Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13950,7 +13950,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Bomnanimon
+Bombernanimon
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13967,7 +13967,7 @@ Otamamon_red
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Chrysalmon
+Chrysalimon
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13980,7 +13980,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Blkagumon_x
+Blackagumon_x
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -13994,7 +13994,7 @@ Items: Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-Bomnanimon
+Bombernanimon
 Level: 30
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Thunder
@@ -14010,11 +14010,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Sawkuwamon
+Bladekuwagamon
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Betgamamon
+Betelgammamon
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -14044,7 +14044,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Betgamamon
+Betelgammamon
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -14052,7 +14052,7 @@ Angemon
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Elephanmon
+Elephantmon
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -14064,7 +14064,7 @@ Boarmon
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Chrysalmon
+Chrysalimon
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -14081,7 +14081,7 @@ Tinkermon
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Aresdramon
+Arresterdramon
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -14119,7 +14119,7 @@ Axemon
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-=== TRAINER_MAY_RUSTBORO_SUNARZAMON ===
+=== TRAINER_MAY_RUSTBORO_SUNARIZAMON ===
 Name: MAY
 Class: Rival
 Pic: May
@@ -14187,7 +14187,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Roar
 - Rock Slide
 
-Biothunmon @ Sitrus Berry
+Biothunderbirdmon @ Sitrus Berry
 Level: 37
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Double Team
@@ -14221,7 +14221,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Magnitude
 - Explosion
 
-Dotfalcmon @ Sitrus Berry
+Dotfalcomon @ Sitrus Berry
 Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Swords Dance
@@ -14237,7 +14237,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Roar
 - Rock Slide
 
-Biothunmon @ Sitrus Berry
+Biothunderbirdmon @ Sitrus Berry
 Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Double Team
@@ -14271,7 +14271,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 - Explosion
 
-Dotfalcmon @ Sitrus Berry
+Dotfalcomon @ Sitrus Berry
 Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Swords Dance
@@ -14287,7 +14287,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Roar
 - Rock Slide
 
-Biothunmon @ Sitrus Berry
+Biothunderbirdmon @ Sitrus Berry
 Level: 47
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Double Team
@@ -14329,7 +14329,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 - Surf
 
-Dotfalcmon @ Sitrus Berry
+Dotfalcomon @ Sitrus Berry
 Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Swords Dance
@@ -14337,7 +14337,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Surf
 - Rock Slide
 
-Kodekacmon
+Minidekachimon
 Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Iron Tail
@@ -14345,7 +14345,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Roar
 - Rock Slide
 
-Biothunmon @ Sitrus Berry
+Biothunderbirdmon @ Sitrus Berry
 Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Double Team
@@ -14371,7 +14371,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Focus Punch
 - Bulk Up
 
-Sawkuwamon
+Bladekuwagamon
 Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Psychic
@@ -14387,7 +14387,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Protect
 - Triple Kick
 
-Bioquetmon @ Sitrus Berry
+Bioquetzalmon @ Sitrus Berry
 Level: 37
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fake Out
@@ -14429,7 +14429,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Protect
 - Triple Kick
 
-Bioquetmon @ Sitrus Berry
+Bioquetzalmon @ Sitrus Berry
 Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fake Out
@@ -14479,7 +14479,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Protect
 - Triple Kick
 
-Bioquetmon @ Sitrus Berry
+Bioquetzalmon @ Sitrus Berry
 Level: 47
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fake Out
@@ -14537,7 +14537,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Protect
 - Triple Kick
 
-Bioquetmon @ Sitrus Berry
+Bioquetzalmon @ Sitrus Berry
 Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fake Out
@@ -14579,7 +14579,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
 - Rain Dance
 
-Bomnanimon @ Sitrus Berry
+Bombernanimon @ Sitrus Berry
 Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bite
@@ -14629,7 +14629,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
 - Rain Dance
 
-Bomnanimon @ Sitrus Berry
+Bombernanimon @ Sitrus Berry
 Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bite
@@ -14679,7 +14679,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
 - Rain Dance
 
-Bomnanimon @ Sitrus Berry
+Bombernanimon @ Sitrus Berry
 Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bite
@@ -14737,7 +14737,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
 - Rain Dance
 
-Bomnanimon @ Sitrus Berry
+Bombernanimon @ Sitrus Berry
 Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bite
@@ -14971,7 +14971,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Skill Swap
 - Focus Punch
 
-Baboonmon @ Sitrus Berry
+Baboongamon @ Sitrus Berry
 Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Blizzard
@@ -14987,7 +14987,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Facade
 - Hypnosis
 
-Baboonmon @ Sitrus Berry
+Baboongamon @ Sitrus Berry
 Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Hyper Beam
@@ -15005,7 +15005,7 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 
-Baboonmon @ Sitrus Berry
+Baboongamon @ Sitrus Berry
 Level: 47
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Blizzard
@@ -15037,7 +15037,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Facade
 - Hypnosis
 
-Baboonmon @ Sitrus Berry
+Baboongamon @ Sitrus Berry
 Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Hyper Beam
@@ -15055,7 +15055,7 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 
-Baboonmon @ Sitrus Berry
+Baboongamon @ Sitrus Berry
 Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Blizzard
@@ -15087,7 +15087,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Facade
 - Hypnosis
 
-Baboonmon @ Sitrus Berry
+Baboongamon @ Sitrus Berry
 Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Hyper Beam
@@ -15105,7 +15105,7 @@ Items: Full Restore / Full Restore / Full Restore
 Double Battle: Yes
 AI: Basic Trainer
 
-Baboonmon @ Sitrus Berry
+Baboongamon @ Sitrus Berry
 Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Blizzard
@@ -15145,7 +15145,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Facade
 - Hypnosis
 
-Baboonmon @ Sitrus Berry
+Baboongamon @ Sitrus Berry
 Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Hyper Beam
@@ -15171,7 +15171,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Protect
 - Ice Beam
 
-Elephanmon
+Elephantmon
 Level: 38
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sunny Day
@@ -15195,7 +15195,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Steel Wing
 - Aerial Ace
 
-Darmailmon @ Chesto Berry
+Darkmaildramon @ Chesto Berry
 Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Aerial Ace
@@ -15221,7 +15221,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Reflect
 - Dream Eater
 
-Elephanmon
+Elephantmon
 Level: 43
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sunny Day
@@ -15253,7 +15253,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Steel Wing
 - Aerial Ace
 
-Darmailmon @ Chesto Berry
+Darkmaildramon @ Chesto Berry
 Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Aerial Ace
@@ -15279,7 +15279,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Reflect
 - Dream Eater
 
-Elephanmon
+Elephantmon
 Level: 49
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sunny Day
@@ -15311,7 +15311,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Steel Wing
 - Aerial Ace
 
-Darmailmon @ Chesto Berry
+Darkmaildramon @ Chesto Berry
 Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Aerial Ace
@@ -15337,7 +15337,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Reflect
 - Dream Eater
 
-Elephanmon
+Elephantmon
 Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sunny Day
@@ -15369,7 +15369,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Steel Wing
 - Aerial Ace
 
-Darmailmon @ Chesto Berry
+Darkmaildramon @ Chesto Berry
 Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sky Attack
@@ -15411,7 +15411,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Confuse Ray
 - Calm Mind
 
-Deckdramon @ Chesto Berry
+Deckerdramon @ Chesto Berry
 Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
@@ -15469,7 +15469,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Confuse Ray
 - Calm Mind
 
-Deckdramon @ Chesto Berry
+Deckerdramon @ Chesto Berry
 Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
@@ -15527,7 +15527,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Confuse Ray
 - Calm Mind
 
-Deckdramon @ Chesto Berry
+Deckerdramon @ Chesto Berry
 Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
@@ -15585,7 +15585,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Confuse Ray
 - Calm Mind
 
-Deckdramon @ Chesto Berry
+Deckerdramon @ Chesto Berry
 Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
@@ -15849,7 +15849,7 @@ Music: Cool
 Double Battle: No
 AI: Basic Trainer
 
-Elephanmon
+Elephantmon
 Level: 30
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
@@ -15879,7 +15879,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Ancient Power
 - Earthquake
 
-Blgrowlmon
+Blackgrowlmon
 Level: 76
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
@@ -16028,7 +16028,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Biothunmon
+Biothunderbirdmon
 Level: 33
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -16049,7 +16049,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Biothunmon
+Biothunderbirdmon
 Level: 35
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -16070,7 +16070,7 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Biothunmon
+Biothunderbirdmon
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -16175,11 +16175,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Blkguilmon
+Blackguilmon
 Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Blkguilmon
+Blackguilmon
 Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -16196,11 +16196,11 @@ Angemon
 Level: 39
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Blkguilmon
+Blackguilmon
 Level: 39
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Blkguilmon
+Blackguilmon
 Level: 39
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -16217,11 +16217,11 @@ Ankylomon
 Level: 41
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Blkguilmon
+Blackguilmon
 Level: 41
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Blkguilmon
+Blackguilmon
 Level: 41
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -16272,7 +16272,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Betgamamon
+Betelgammamon
 Level: 39
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -16293,7 +16293,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Bioquetmon
+Bioquetzalmon
 Level: 41
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -16314,7 +16314,7 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Bioquetmon
+Bioquetzalmon
 Level: 43
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -16406,7 +16406,7 @@ Trailmon_battle_armament
 Level: 41
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
-Baboonmon
+Baboongamon
 Level: 41
 IVs: 17 HP / 17 Atk / 17 Def / 17 SpA / 17 SpD / 17 Spe
 
@@ -16444,7 +16444,7 @@ Boarmon
 Level: 37
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Bomnanimon
+Bombernanimon
 Level: 37
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -16461,11 +16461,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Bomnanimon
+Bombernanimon
 Level: 39
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Bomnanimon
+Bombernanimon
 Level: 39
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -16482,11 +16482,11 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Bomnanimon
+Bombernanimon
 Level: 41
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Bomnanimon
+Bombernanimon
 Level: 41
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -16507,7 +16507,7 @@ Monimon
 Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-Chrysalmon
+Chrysalimon
 Level: 26
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
@@ -16524,7 +16524,7 @@ Kokomon
 Level: 28
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Chrysalmon
+Chrysalimon
 Level: 28
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -16545,7 +16545,7 @@ Kokomon
 Level: 30
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Chrysalmon
+Chrysalimon
 Level: 30
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -16649,7 +16649,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Blgaogamon
+Blackgaogamon
 Level: 35
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
@@ -16682,7 +16682,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Blgaogamon
+Blackgaogamon
 Level: 37
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
@@ -16740,7 +16740,7 @@ Chamblemon
 Level: 36
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Blkagumon
+Blackagumon
 Level: 36
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -16761,7 +16761,7 @@ Chamblemon
 Level: 38
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Blkagumon
+Blackagumon
 Level: 38
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 

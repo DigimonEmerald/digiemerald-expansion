@@ -241,7 +241,7 @@ LilycoveCity_EventScript_May::
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_EventScript_DeclineMayBattle
 	msgbox LilycoveCity_Text_MayWontBeBeaten, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, LilycoveCity_EventScript_BattleMaySunarzamon
+	case 0, LilycoveCity_EventScript_BattleMaySunarizamon
 	case 1, LilycoveCity_EventScript_BattleMaySyakomon_x
 	case 2, LilycoveCity_EventScript_BattleMayTerriermon
 	end
@@ -269,7 +269,7 @@ LilycoveCity_EventScript_Brendan::
 	goto_if_eq VAR_RESULT, NO, LilycoveCity_EventScript_DeclineBrendanBattle
 	msgbox LilycoveCity_Text_BrendanWontBeBeaten, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, LilycoveCity_EventScript_BattleBrendanSunarzamon
+	case 0, LilycoveCity_EventScript_BattleBrendanSunarizamon
 	case 1, LilycoveCity_EventScript_BattleBrendanSyakomon_x
 	case 2, LilycoveCity_EventScript_BattleBrendanTerriermon
 	end
@@ -290,8 +290,8 @@ LilycoveCity_EventScript_DeclineBrendanBattle::
 	release
 	end
 
-LilycoveCity_EventScript_BattleMaySunarzamon::
-	trainerbattle_no_intro TRAINER_MAY_LILYCOVE_SUNARZAMON, LilycoveCity_Text_MayDefeat
+LilycoveCity_EventScript_BattleMaySunarizamon::
+	trainerbattle_no_intro TRAINER_MAY_LILYCOVE_SUNARIZAMON, LilycoveCity_Text_MayDefeat
 	goto LilycoveCity_EventScript_DefeatedMay
 	end
 
@@ -305,8 +305,8 @@ LilycoveCity_EventScript_BattleMayTerriermon::
 	goto LilycoveCity_EventScript_DefeatedMay
 	end
 
-LilycoveCity_EventScript_BattleBrendanSunarzamon::
-	trainerbattle_no_intro TRAINER_BRENDAN_LILYCOVE_SUNARZAMON, LilycoveCity_Text_BrendanDefeat
+LilycoveCity_EventScript_BattleBrendanSunarizamon::
+	trainerbattle_no_intro TRAINER_BRENDAN_LILYCOVE_SUNARIZAMON, LilycoveCity_Text_BrendanDefeat
 	goto LilycoveCity_EventScript_DefeatedBrendan
 	end
 
@@ -359,7 +359,7 @@ LilycoveCity_EventScript_DefeatedBrendan::
 	call_if_eq VAR_RESULT, FALSE, LilycoveCity_EventScript_BrendanCollectBadges
 	call_if_eq VAR_RESULT, TRUE, LilycoveCity_EventScript_BrendanPokemonLeague
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM
-	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_DARLIZAMON_DOLL
+	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_DARKLIZARDMON_DOLL
 	goto LilycoveCity_EventScript_RivalFlyAway
 	end
 

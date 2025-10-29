@@ -68,11 +68,11 @@ static const u16 sLeafmonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_KETOMON
 
-#if P_FAMILY_CHOROMON
-static const u16 sChoromonFormSpeciesIdTable[] = {
-    SPECIES_CHOROMON,
+#if P_FAMILY_METALKOROMON
+static const u16 sMetalkoromonFormSpeciesIdTable[] = {
+    SPECIES_METALKOROMON,
 #if P_ALOLAN_FORMS
-    SPECIES_CHOROMON_ALOLA,
+    SPECIES_METALKOROMON_ALOLA,
 #endif
     FORM_SPECIES_END,
 };
@@ -85,7 +85,7 @@ static const u16 sMokumonFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_CHOROMON
+#endif //P_FAMILY_METALKOROMON
 
 #if P_FAMILY_PETITMON
 #if P_GEN_2_CROSS_EVOS
@@ -366,10 +366,10 @@ static const u16 sTsumemonFormSpeciesIdTable[] = {
 
 #if P_FAMILY_TSUNOMON
 #if P_GEN_2_CROSS_EVOS
-static const u16 sKodekacmonFormSpeciesIdTable[] = {
-    SPECIES_KODEKACMON,
+static const u16 sMinidekachimonFormSpeciesIdTable[] = {
+    SPECIES_MINIDEKACHIMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_KODEKACMON_MEGA,
+    SPECIES_MINIDEKACHIMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
@@ -426,10 +426,10 @@ static const u16 sAgumon_expertFormSpeciesIdTable[] = {
 #endif //P_FAMILY_AGUMON_06
 
 #if P_FAMILY_ARGOMON_ROOKIE
-static const u16 sArmadilmonFormSpeciesIdTable[] = {
-    SPECIES_ARMADILMON,
+static const u16 sArmadillomonFormSpeciesIdTable[] = {
+    SPECIES_ARMADILLOMON,
 #if P_GALARIAN_FORMS
-    SPECIES_ARMADILMON_GALAR,
+    SPECIES_ARMADILLOMON_GALAR,
 #endif
     FORM_SPECIES_END,
 };
@@ -467,15 +467,15 @@ static const u16 sMonodramonFormSpeciesIdTable[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BURGERMON
 
-#if P_FAMILY_TYUTYUMON
-static const u16 sTyutyumonFormSpeciesIdTable[] = {
-    SPECIES_TYUTYUMON,
+#if P_FAMILY_CHUUCHUUMON
+static const u16 sChuuchuumonFormSpeciesIdTable[] = {
+    SPECIES_CHUUCHUUMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_TYUTYUMON_MEGA,
+    SPECIES_CHUUCHUUMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_TYUTYUMON
+#endif //P_FAMILY_CHUUCHUUMON
 
 #if P_FAMILY_CHUUMON
 static const u16 sChuumonFormSpeciesIdTable[] = {
@@ -489,15 +489,15 @@ static const u16 sChuumonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_CHUUMON
 
-#if P_FAMILY_HAZYAGUMON
-static const u16 sCommdramonFormSpeciesIdTable[] = {
-    SPECIES_COMMDRAMON,
+#if P_FAMILY_CLEARAGUMON
+static const u16 sCommandramonFormSpeciesIdTable[] = {
+    SPECIES_COMMANDRAMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_COMMDRAMON_MEGA,
+    SPECIES_COMMANDRAMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_HAZYAGUMON
+#endif //P_FAMILY_CLEARAGUMON
 
 #if P_FAMILY_CORONAMON
 static const u16 sCoronamonFormSpeciesIdTable[] = {
@@ -550,15 +550,15 @@ static const u16 sDracomon_xFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_DRACOMON_X
 
-#if P_FAMILY_EBIBURGMON
-static const u16 sEbiburgmonFormSpeciesIdTable[] = {
-    SPECIES_EBIBURGMON,
+#if P_FAMILY_EBIBURGAMON
+static const u16 sEbiburgamonFormSpeciesIdTable[] = {
+    SPECIES_EBIBURGAMON,
 #if P_GALARIAN_FORMS
-    SPECIES_EBIBURGMON_GALAR,
+    SPECIES_EBIBURGAMON_GALAR,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_EBIBURGMON
+#endif //P_FAMILY_EBIBURGAMON
 
 #if P_FAMILY_EKAKIMON
 static const u16 sEkakimonFormSpeciesIdTable[] = {
@@ -721,7 +721,7 @@ static const u16 sSpadamonFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_SOLARMON
 
-#if P_FAMILY_SUNARZAMON
+#if P_FAMILY_SUNARIZAMON
 static const u16 sSyakomonFormSpeciesIdTable[] = {
     SPECIES_SYAKOMON,
 #if P_MEGA_EVOLUTIONS
@@ -729,7 +729,7 @@ static const u16 sSyakomonFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_SUNARZAMON
+#endif //P_FAMILY_SUNARIZAMON
 
 #if P_FAMILY_SYAKOMON_X
 static const u16 sTentomonFormSpeciesIdTable[] = {
@@ -789,37 +789,37 @@ static const u16 sGalladeFormSpeciesIdTable[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_APEMON
 
-#if P_FAMILY_BLGARGOMON
-static const u16 sBlgargomonFormSpeciesIdTable[] = {
-    SPECIES_BLGARGOMON,
+#if P_FAMILY_BLACKGARGOMON
+static const u16 sBlackgargomonFormSpeciesIdTable[] = {
+    SPECIES_BLACKGARGOMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_BLGARGOMON_MEGA,
+    SPECIES_BLACKGARGOMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_BLGARGOMON
+#endif //P_FAMILY_BLACKGARGOMON
 
-#if P_FAMILY_BLGARURMON
-static const u16 sBlgarurmonFormSpeciesIdTable[] = {
-    SPECIES_BLGARURMON,
+#if P_FAMILY_BLACKGARURUMON
+static const u16 sBlackgarurumonFormSpeciesIdTable[] = {
+    SPECIES_BLACKGARURUMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_BLGARURMON_MEGA,
+    SPECIES_BLACKGARURUMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_BLGARURMON
+#endif //P_FAMILY_BLACKGARURUMON
 
-#if P_FAMILY_BLKGATOMON
-static const u16 sBlgrowlmonFormSpeciesIdTable[] = {
-    SPECIES_BLGROWLMON,
+#if P_FAMILY_BLACKGATOMON
+static const u16 sBlackgrowlmonFormSpeciesIdTable[] = {
+    SPECIES_BLACKGROWLMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_BLGROWLMON_MEGA,
+    SPECIES_BLACKGROWLMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_BLKGATOMON
+#endif //P_FAMILY_BLACKGATOMON
 
-#if P_FAMILY_SAWKUWAMON
+#if P_FAMILY_BLADEKUWAGAMON
 static const u16 sBlimpmonFormSpeciesIdTable[] = {
     SPECIES_BLIMPMON,
 #if P_MEGA_EVOLUTIONS
@@ -827,19 +827,19 @@ static const u16 sBlimpmonFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_SAWKUWAMON
+#endif //P_FAMILY_BLADEKUWAGAMON
 
 #if P_FAMILY_BOARMON
-static const u16 sBomnanimonFormSpeciesIdTable[] = {
-    SPECIES_BOMNANIMON,
+static const u16 sBombernanimonFormSpeciesIdTable[] = {
+    SPECIES_BOMBERNANIMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_BOMNANIMON_MEGA,
+    SPECIES_BOMBERNANIMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_BOARMON
 
-#if P_FAMILY_CHOUMON
+#if P_FAMILY_BUTTERFLYMON
 static const u16 sCentarumonFormSpeciesIdTable[] = {
     SPECIES_CENTARUMON,
 #if P_MEGA_EVOLUTIONS
@@ -847,9 +847,9 @@ static const u16 sCentarumonFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_CHOUMON
+#endif //P_FAMILY_BUTTERFLYMON
 
-#if P_FAMILY_CHRYSALMON
+#if P_FAMILY_CHRYSALIMON
 static const u16 sCitramonFormSpeciesIdTable[] = {
     SPECIES_CITRAMON,
 #if P_MEGA_EVOLUTIONS
@@ -857,17 +857,17 @@ static const u16 sCitramonFormSpeciesIdTable[] = {
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_CHRYSALMON
+#endif //P_FAMILY_CHRYSALIMON
 
-#if P_FAMILY_DARLIZAMON
-static const u16 sDarmailmonFormSpeciesIdTable[] = {
-    SPECIES_DARMAILMON,
+#if P_FAMILY_DARKLIZARDMON
+static const u16 sDarkmaildramonFormSpeciesIdTable[] = {
+    SPECIES_DARKMAILDRAMON,
 #if P_MEGA_EVOLUTIONS
-    SPECIES_DARMAILMON_MEGA,
+    SPECIES_DARKMAILDRAMON_MEGA,
 #endif
     FORM_SPECIES_END,
 };
-#endif //P_FAMILY_DARLIZAMON
+#endif //P_FAMILY_DARKLIZARDMON
 
 #if P_FAMILY_DOLPHMON
 static const u16 sDolphmonFormSpeciesIdTable[] = {

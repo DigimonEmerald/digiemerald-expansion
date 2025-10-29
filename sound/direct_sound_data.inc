@@ -505,15 +505,15 @@ Cry_LeafmonMega::
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_KETOMON
 
-.if P_FAMILY_CHOROMON == TRUE
+.if P_FAMILY_METALKOROMON == TRUE
 	.align 2
-Cry_Choromon::
-	.incbin "sound/direct_sound_samples/cries/choromon.bin"
+Cry_Metalkoromon::
+	.incbin "sound/direct_sound_samples/cries/metalkoromon.bin"
 
 	.align 2
 Cry_Mokumon::
 	.incbin "sound/direct_sound_samples/cries/mokumon.bin"
-.endif @ P_FAMILY_CHOROMON
+.endif @ P_FAMILY_METALKOROMON
 
 .if P_FAMILY_NYOKIMON == TRUE
 	.align 2
@@ -629,10 +629,10 @@ Cry_Tsubumon::
 	.incbin "sound/direct_sound_samples/cries/tsubumon.bin"
 .endif @ P_FAMILY_SANDMON
 
-.if P_FAMILY_ICEBOTAMON == TRUE
+.if P_FAMILY_SNOWBOTAMON == TRUE
 	.align 2
-Cry_Icebotamon::
-	.incbin "sound/direct_sound_samples/cries/icebotamon.bin"
+Cry_Snowbotamon::
+	.incbin "sound/direct_sound_samples/cries/snowbotamon.bin"
 
 	.align 2
 Cry_Yuramon::
@@ -643,7 +643,7 @@ Cry_Yuramon::
 Cry_Gotsumon::
 	.incbin "sound/direct_sound_samples/cries/gotsumon.bin"
 .endif @ P_GEN_2_CROSS_EVOS
-.endif @ P_FAMILY_ICEBOTAMON
+.endif @ P_FAMILY_SNOWBOTAMON
 
 .if P_FAMILY_ZERIMON == TRUE
 	.align 2
@@ -718,8 +718,8 @@ Cry_Chicchimon::
 	.incbin "sound/direct_sound_samples/cries/chicchimon.bin"
 
 	.align 2
-Cry_Demmeramon::
-	.incbin "sound/direct_sound_samples/cries/demmeramon.bin"
+Cry_Demimeramon::
+	.incbin "sound/direct_sound_samples/cries/demimeramon.bin"
 .endif @ P_FAMILY_CHICCHIMON
 
 .if P_FAMILY_DEMIVEEMON == TRUE
@@ -952,8 +952,8 @@ Cry_Tokomon_x::
 	.incbin "sound/direct_sound_samples/cries/tokomon_x.bin"
 
 	.align 2
-Cry_Torballmon::
-	.incbin "sound/direct_sound_samples/cries/torballmon.bin"
+Cry_Torikaraballmon::
+	.incbin "sound/direct_sound_samples/cries/torikaraballmon.bin"
 
 	.align 2
 Cry_Tsumemon::
@@ -973,13 +973,13 @@ Cry_Tsunomon::
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Kodekacmon::
-	.incbin "sound/direct_sound_samples/cries/kodekacmon.bin"
+Cry_Minidekachimon::
+	.incbin "sound/direct_sound_samples/cries/minidekachimon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_KodekacmonMega::
-	.incbin "sound/direct_sound_samples/cries/kodekacmon_mega.bin"
+Cry_MinidekachimonMega::
+	.incbin "sound/direct_sound_samples/cries/minidekachimon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_TSUNOMON
@@ -1074,8 +1074,8 @@ Cry_Argomon_rookie::
 	.incbin "sound/direct_sound_samples/cries/argomon_rookie.bin"
 
 	.align 2
-Cry_Armadilmon::
-	.incbin "sound/direct_sound_samples/cries/armadilmon.bin"
+Cry_Armadillomon::
+	.incbin "sound/direct_sound_samples/cries/armadillomon.bin"
 .endif @ P_FAMILY_ARGOMON_ROOKIE
 
 .if P_FAMILY_ARURAUMON == TRUE
@@ -1142,8 +1142,8 @@ Cry_Biyomon::
 	.incbin "sound/direct_sound_samples/cries/biyomon.bin"
 
 	.align 2
-Cry_Blkagumon::
-	.incbin "sound/direct_sound_samples/cries/blkagumon.bin"
+Cry_Blackagumon::
+	.incbin "sound/direct_sound_samples/cries/blackagumon.bin"
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
@@ -1152,25 +1152,25 @@ Cry_Psychemon::
 .endif @ P_GEN_2_CROSS_EVOS
 .endif @ P_FAMILY_BIYOMON
 
-.if P_FAMILY_BLKAGUMON_X == TRUE
+.if P_FAMILY_BLACKAGUMON_X == TRUE
 	.align 2
-Cry_Blkagumon_x::
-	.incbin "sound/direct_sound_samples/cries/blkagumon_x.bin"
+Cry_Blackagumon_x::
+	.incbin "sound/direct_sound_samples/cries/blackagumon_x.bin"
 
 	.align 2
-Cry_Blkgabumon::
-	.incbin "sound/direct_sound_samples/cries/blkgabumon.bin"
-.endif @ P_FAMILY_BLKAGUMON_X
+Cry_Blackgabumon::
+	.incbin "sound/direct_sound_samples/cries/blackgabumon.bin"
+.endif @ P_FAMILY_BLACKAGUMON_X
 
-.if P_FAMILY_BLKGUILMON == TRUE
+.if P_FAMILY_BLACKGUILMON == TRUE
 	.align 2
-Cry_Blkguilmon::
-	.incbin "sound/direct_sound_samples/cries/blkguilmon.bin"
+Cry_Blackguilmon::
+	.incbin "sound/direct_sound_samples/cries/blackguilmon.bin"
 
 	.align 2
 Cry_Bokomon::
 	.incbin "sound/direct_sound_samples/cries/bokomon.bin"
-.endif @ P_FAMILY_BLKGUILMON
+.endif @ P_FAMILY_BLACKGUILMON
 
 .if P_FAMILY_BULUCOMON == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
@@ -1214,7 +1214,7 @@ Cry_Kleavor::
 .endif @ P_GEN_8_CROSS_EVOS
 .endif @ P_FAMILY_BURGERMON
 
-.if P_FAMILY_SAMUAGUMON == TRUE
+.if P_FAMILY_BUSHIAGUMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
 Cry_Sangomon::
@@ -1222,9 +1222,9 @@ Cry_Sangomon::
 .endif @ P_GEN_2_CROSS_EVOS
 
 	.align 2
-Cry_Samuagumon::
-	.incbin "sound/direct_sound_samples/cries/samuagumon.bin"
-.endif @ P_FAMILY_SAMUAGUMON
+Cry_Bushiagumon::
+	.incbin "sound/direct_sound_samples/cries/bushiagumon.bin"
+.endif @ P_FAMILY_BUSHIAGUMON
 
 .if P_FAMILY_CANDLEMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
@@ -1247,8 +1247,8 @@ Cry_Electivire::
 .if P_FAMILY_CHIKURIMON == TRUE
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
-Cry_Blktoyamon::
-	.incbin "sound/direct_sound_samples/cries/blktoyamon.bin"
+Cry_Shadowtoyagumon::
+	.incbin "sound/direct_sound_samples/cries/shadowtoyagumon.bin"
 .endif @ P_GEN_2_CROSS_EVOS
 
 	.align 2
@@ -1262,17 +1262,17 @@ Cry_Magmortar::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_CHIKURIMON
 
-.if P_FAMILY_TYUTYUMON == TRUE
+.if P_FAMILY_CHUUCHUUMON == TRUE
 	.align 2
-Cry_Tyutyumon::
-	.incbin "sound/direct_sound_samples/cries/tyutyumon.bin"
+Cry_Chuuchuumon::
+	.incbin "sound/direct_sound_samples/cries/chuuchuumon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_TyutyumonMega::
-	.incbin "sound/direct_sound_samples/cries/tyutyumon_mega.bin"
+Cry_ChuuchuumonMega::
+	.incbin "sound/direct_sound_samples/cries/chuuchuumon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_TYUTYUMON
+.endif @ P_FAMILY_CHUUCHUUMON
 
 .if P_FAMILY_CHUUMON == TRUE
 	.align 2
@@ -1280,21 +1280,21 @@ Cry_Chuumon::
 	.incbin "sound/direct_sound_samples/cries/chuumon.bin"
 .endif @ P_FAMILY_CHUUMON
 
-.if P_FAMILY_HAZYAGUMON == TRUE
+.if P_FAMILY_CLEARAGUMON == TRUE
 	.align 2
-Cry_Hazyagumon::
-	.incbin "sound/direct_sound_samples/cries/hazyagumon.bin"
+Cry_Clearagumon::
+	.incbin "sound/direct_sound_samples/cries/clearagumon.bin"
 
 	.align 2
-Cry_Commdramon::
-	.incbin "sound/direct_sound_samples/cries/commdramon.bin"
+Cry_Commandramon::
+	.incbin "sound/direct_sound_samples/cries/commandramon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_CommdramonMega::
-	.incbin "sound/direct_sound_samples/cries/commdramon_mega.bin"
+Cry_CommandramonMega::
+	.incbin "sound/direct_sound_samples/cries/commandramon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_HAZYAGUMON
+.endif @ P_FAMILY_CLEARAGUMON
 
 .if P_FAMILY_CORONAMON == TRUE
 	.align 2
@@ -1322,8 +1322,8 @@ Cry_Damemon::
 	.incbin "sound/direct_sound_samples/cries/damemon.bin"
 
 	.align 2
-Cry_Demidevmon::
-	.incbin "sound/direct_sound_samples/cries/demidevmon.bin"
+Cry_Demidevimon::
+	.incbin "sound/direct_sound_samples/cries/demidevimon.bin"
 
 .if P_GEN_2_CROSS_EVOS == TRUE
 	.align 2
@@ -1384,8 +1384,8 @@ Cry_Dotagumon::
 	.incbin "sound/direct_sound_samples/cries/dotagumon.bin"
 
 	.align 2
-Cry_Dotfalcmon::
-	.incbin "sound/direct_sound_samples/cries/dotfalcmon.bin"
+Cry_Dotfalcomon::
+	.incbin "sound/direct_sound_samples/cries/dotfalcomon.bin"
 .endif @ P_FAMILY_DOTAGUMON
 
 .if P_FAMILY_DRACMON == TRUE
@@ -1418,11 +1418,11 @@ Cry_Dracomon_x::
 	.incbin "sound/direct_sound_samples/cries/dracomon_x.bin"
 .endif @ P_FAMILY_DRACOMON_X
 
-.if P_FAMILY_EBIBURGMON == TRUE
+.if P_FAMILY_EBIBURGAMON == TRUE
 	.align 2
-Cry_Ebiburgmon::
-	.incbin "sound/direct_sound_samples/cries/ebiburgmon.bin"
-.endif @ P_FAMILY_EBIBURGMON
+Cry_Ebiburgamon::
+	.incbin "sound/direct_sound_samples/cries/ebiburgamon.bin"
+.endif @ P_FAMILY_EBIBURGAMON
 
 .if P_FAMILY_EKAKIMON == TRUE
 	.align 2
@@ -1607,8 +1607,8 @@ Cry_ImpmonMega::
 .if P_FAMILY_JAZAMON == TRUE
 .if P_GEN_3_CROSS_EVOS == TRUE
 	.align 2
-Cry_Biostegmon::
-	.incbin "sound/direct_sound_samples/cries/biostegmon.bin"
+Cry_Biostegomon::
+	.incbin "sound/direct_sound_samples/cries/biostegomon.bin"
 .endif @ P_GEN_3_CROSS_EVOS
 
 	.align 2
@@ -1640,19 +1640,19 @@ Cry_Keramon_x::
 	.incbin "sound/direct_sound_samples/cries/keramon_x.bin"
 
 	.align 2
-Cry_Kodokgumon::
-	.incbin "sound/direct_sound_samples/cries/kodokgumon.bin"
+Cry_Kodokugumon::
+	.incbin "sound/direct_sound_samples/cries/kodokugumon.bin"
 .endif @ P_FAMILY_KERAMON
 
-.if P_FAMILY_KOKABUIMON == TRUE
+.if P_FAMILY_KOKABUTERIMON == TRUE
 	.align 2
-Cry_Kokabuimon::
-	.incbin "sound/direct_sound_samples/cries/kokabuimon.bin"
+Cry_Kokabuterimon::
+	.incbin "sound/direct_sound_samples/cries/kokabuterimon.bin"
 
 	.align 2
 Cry_Ambipom::
 	.incbin "sound/direct_sound_samples/cries/ambipom.bin"
-.endif @ P_FAMILY_KOKABUIMON
+.endif @ P_FAMILY_KOKABUTERIMON
 
 .if P_FAMILY_KOKUWAMON == TRUE
 	.align 2
@@ -1777,15 +1777,15 @@ Cry_Gliscor::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_METABEE
 
-.if P_FAMILY_MODBETAMON == TRUE
+.if P_FAMILY_MODOKIBETAMON == TRUE
 	.align 2
-Cry_Modbetamon::
-	.incbin "sound/direct_sound_samples/cries/modbetamon.bin"
+Cry_Modokibetamon::
+	.incbin "sound/direct_sound_samples/cries/modokibetamon.bin"
 
 	.align 2
 Cry_Monitamon::
 	.incbin "sound/direct_sound_samples/cries/monitamon.bin"
-.endif @ P_FAMILY_MODBETAMON
+.endif @ P_FAMILY_MODOKIBETAMON
 
 .if P_FAMILY_MONMON == TRUE
 	.align 2
@@ -1891,15 +1891,15 @@ Cry_Cursola::
 .endif @ P_GALARIAN_FORMS
 .endif @ P_FAMILY_PATAMON
 
-.if P_FAMILY_PAWNMON_BLACK == TRUE
+.if P_FAMILY_PAWNCHESSMON_BLACK == TRUE
 	.align 2
-Cry_Pawnmon_black::
-	.incbin "sound/direct_sound_samples/cries/pawnmon_black.bin"
+Cry_Pawnchessmon_black::
+	.incbin "sound/direct_sound_samples/cries/pawnchessmon_black.bin"
 
 	.align 2
-Cry_Pawnmon_white::
-	.incbin "sound/direct_sound_samples/cries/pawnmon_white.bin"
-.endif @ P_FAMILY_PAWNMON_BLACK
+Cry_Pawnchessmon_white::
+	.incbin "sound/direct_sound_samples/cries/pawnchessmon_white.bin"
+.endif @ P_FAMILY_PAWNCHESSMON_BLACK
 
 .if P_FAMILY_PENGUINMON == TRUE
 	.align 2
@@ -1975,17 +1975,17 @@ Cry_Shamanmon::
 	.incbin "sound/direct_sound_samples/cries/shamanmon.bin"
 .endif @ P_FAMILY_SHAMANMON
 
-.if P_FAMILY_YUKIAGUMON == TRUE
+.if P_FAMILY_SNOWAGUMON == TRUE
 	.align 2
-Cry_Yukiagumon::
-	.incbin "sound/direct_sound_samples/cries/yukiagumon.bin"
-.endif @ P_FAMILY_YUKIAGUMON
+Cry_Snowagumon::
+	.incbin "sound/direct_sound_samples/cries/snowagumon.bin"
+.endif @ P_FAMILY_SNOWAGUMON
 
-.if P_FAMILY_YUKIAGUMON_06 == TRUE
+.if P_FAMILY_SNOWAGUMON_06 == TRUE
 	.align 2
-Cry_Yukiagumon_06::
-	.incbin "sound/direct_sound_samples/cries/yukiagumon_06.bin"
-.endif @ P_FAMILY_YUKIAGUMON_06
+Cry_Snowagumon_06::
+	.incbin "sound/direct_sound_samples/cries/snowagumon_06.bin"
+.endif @ P_FAMILY_SNOWAGUMON_06
 
 .if P_FAMILY_ICEGOBIMON == TRUE
 	.align 2
@@ -1999,8 +1999,8 @@ Cry_Solarmon::
 	.incbin "sound/direct_sound_samples/cries/solarmon.bin"
 
 	.align 2
-Cry_Sounbrdmon::
-	.incbin "sound/direct_sound_samples/cries/sounbrdmon.bin"
+Cry_Soundbirdmon::
+	.incbin "sound/direct_sound_samples/cries/soundbirdmon.bin"
 
 	.align 2
 Cry_Spadamon::
@@ -2031,10 +2031,10 @@ Cry_Strabimon::
 	.incbin "sound/direct_sound_samples/cries/strabimon.bin"
 .endif @ P_FAMILY_STRABIMON
 
-.if P_FAMILY_SUNARZAMON == TRUE
+.if P_FAMILY_SUNARIZAMON == TRUE
 	.align 2
-Cry_Sunarzamon::
-	.incbin "sound/direct_sound_samples/cries/sunarzamon.bin"
+Cry_Sunarizamon::
+	.incbin "sound/direct_sound_samples/cries/sunarizamon.bin"
 
 	.align 2
 Cry_Swimmon::
@@ -2049,7 +2049,7 @@ Cry_Syakomon::
 Cry_SyakomonMega::
 	.incbin "sound/direct_sound_samples/cries/syakomon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SUNARZAMON
+.endif @ P_FAMILY_SUNARIZAMON
 
 .if P_FAMILY_SYAKOMON_X == TRUE
 	.align 2
@@ -2229,15 +2229,15 @@ Cry_Argomon_champion::
 	.incbin "sound/direct_sound_samples/cries/argomon_champion.bin"
 .endif @ P_FAMILY_ARCHELOMON
 
-.if P_FAMILY_ARESDRAMON == TRUE
+.if P_FAMILY_ARRESTERDRAMON == TRUE
 	.align 2
-Cry_Aresdramon::
-	.incbin "sound/direct_sound_samples/cries/aresdramon.bin"
+Cry_Arresterdramon::
+	.incbin "sound/direct_sound_samples/cries/arresterdramon.bin"
 
 	.align 2
-Cry_Atamademon::
-	.incbin "sound/direct_sound_samples/cries/atamademon.bin"
-.endif @ P_FAMILY_ARESDRAMON
+Cry_Atamadekachimon::
+	.incbin "sound/direct_sound_samples/cries/atamadekachimon.bin"
+.endif @ P_FAMILY_ARRESTERDRAMON
 
 .if P_FAMILY_AURUMON == TRUE
 	.align 2
@@ -2249,8 +2249,8 @@ Cry_Axemon::
 	.incbin "sound/direct_sound_samples/cries/axemon.bin"
 
 	.align 2
-Cry_Baboonmon::
-	.incbin "sound/direct_sound_samples/cries/baboonmon.bin"
+Cry_Baboongamon::
+	.incbin "sound/direct_sound_samples/cries/baboongamon.bin"
 .endif @ P_FAMILY_AURUMON
 
 .if P_FAMILY_BAKEMON == TRUE
@@ -2259,8 +2259,8 @@ Cry_Bakemon::
 	.incbin "sound/direct_sound_samples/cries/bakemon.bin"
 
 	.align 2
-Cry_Balistamon::
-	.incbin "sound/direct_sound_samples/cries/balistamon.bin"
+Cry_Ballistamon::
+	.incbin "sound/direct_sound_samples/cries/ballistamon.bin"
 
 	.align 2
 Cry_Baluchimon::
@@ -2281,27 +2281,27 @@ Cry_Trailmon_battle_armament::
 	.incbin "sound/direct_sound_samples/cries/trailmon_battle_armament.bin"
 .endif @ P_FAMILY_BAOHUCKMON
 
-.if P_FAMILY_BETGAMAMON == TRUE
+.if P_FAMILY_BETELGAMMAMON == TRUE
 	.align 2
-Cry_Betgamamon::
-	.incbin "sound/direct_sound_samples/cries/betgamamon.bin"
+Cry_Betelgammamon::
+	.incbin "sound/direct_sound_samples/cries/betelgammamon.bin"
 
 	.align 2
-Cry_Bioquetmon::
-	.incbin "sound/direct_sound_samples/cries/bioquetmon.bin"
-.endif @ P_FAMILY_BETGAMAMON
+Cry_Bioquetzalmon::
+	.incbin "sound/direct_sound_samples/cries/bioquetzalmon.bin"
+.endif @ P_FAMILY_BETELGAMMAMON
 
-.if P_FAMILY_BIOTHUNMON == TRUE
+.if P_FAMILY_BIOTHUNDERBIRDMON == TRUE
 	.align 2
-Cry_Biothunmon::
-	.incbin "sound/direct_sound_samples/cries/biothunmon.bin"
+Cry_Biothunderbirdmon::
+	.incbin "sound/direct_sound_samples/cries/biothunderbirdmon.bin"
 
 .if P_GEN_4_CROSS_EVOS == TRUE
 	.align 2
 Cry_Probopass::
 	.incbin "sound/direct_sound_samples/cries/probopass.bin"
 .endif @ P_GEN_4_CROSS_EVOS
-.endif @ P_FAMILY_BIOTHUNMON
+.endif @ P_FAMILY_BIOTHUNDERBIRDMON
 
 .if P_FAMILY_BIRDRAMON == TRUE
 	.align 2
@@ -2309,58 +2309,58 @@ Cry_Birdramon::
 	.incbin "sound/direct_sound_samples/cries/birdramon.bin"
 
 	.align 2
-Cry_Blgaogamon::
-	.incbin "sound/direct_sound_samples/cries/blgaogamon.bin"
+Cry_Blackgaogamon::
+	.incbin "sound/direct_sound_samples/cries/blackgaogamon.bin"
 .endif @ P_FAMILY_BIRDRAMON
 
-.if P_FAMILY_BLGARGOMON == TRUE
+.if P_FAMILY_BLACKGARGOMON == TRUE
 	.align 2
-Cry_Blgargomon::
-	.incbin "sound/direct_sound_samples/cries/blgargomon.bin"
+Cry_Blackgargomon::
+	.incbin "sound/direct_sound_samples/cries/blackgargomon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_BlgargomonMega::
-	.incbin "sound/direct_sound_samples/cries/blgargomon_mega.bin"
+Cry_BlackgargomonMega::
+	.incbin "sound/direct_sound_samples/cries/blackgargomon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BLGARGOMON
+.endif @ P_FAMILY_BLACKGARGOMON
 
-.if P_FAMILY_BLGARURMON == TRUE
+.if P_FAMILY_BLACKGARURUMON == TRUE
 	.align 2
-Cry_Blgarurmon::
-	.incbin "sound/direct_sound_samples/cries/blgarurmon.bin"
+Cry_Blackgarurumon::
+	.incbin "sound/direct_sound_samples/cries/blackgarurumon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_BlgarurmonMega::
-	.incbin "sound/direct_sound_samples/cries/blgarurmon_mega.bin"
+Cry_BlackgarurumonMega::
+	.incbin "sound/direct_sound_samples/cries/blackgarurumon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BLGARURMON
+.endif @ P_FAMILY_BLACKGARURUMON
 
-.if P_FAMILY_BLKGATOMON == TRUE
+.if P_FAMILY_BLACKGATOMON == TRUE
 	.align 2
-Cry_Blkgatomon::
-	.incbin "sound/direct_sound_samples/cries/blkgatomon.bin"
-
-	.align 2
-Cry_Blkgatomon_uver::
-	.incbin "sound/direct_sound_samples/cries/blkgatomon_uver.bin"
+Cry_Blackgatomon::
+	.incbin "sound/direct_sound_samples/cries/blackgatomon.bin"
 
 	.align 2
-Cry_Blgrowlmon::
-	.incbin "sound/direct_sound_samples/cries/blgrowlmon.bin"
+Cry_Blackgatomon_uver::
+	.incbin "sound/direct_sound_samples/cries/blackgatomon_uver.bin"
+
+	.align 2
+Cry_Blackgrowlmon::
+	.incbin "sound/direct_sound_samples/cries/blackgrowlmon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_BlgrowlmonMega::
-	.incbin "sound/direct_sound_samples/cries/blgrowlmon_mega.bin"
+Cry_BlackgrowlmonMega::
+	.incbin "sound/direct_sound_samples/cries/blackgrowlmon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_BLKGATOMON
+.endif @ P_FAMILY_BLACKGATOMON
 
-.if P_FAMILY_SAWKUWAMON == TRUE
+.if P_FAMILY_BLADEKUWAGAMON == TRUE
 	.align 2
-Cry_Sawkuwamon::
-	.incbin "sound/direct_sound_samples/cries/sawkuwamon.bin"
+Cry_Bladekuwagamon::
+	.incbin "sound/direct_sound_samples/cries/bladekuwagamon.bin"
 
 	.align 2
 Cry_Blimpmon::
@@ -2371,7 +2371,7 @@ Cry_Blimpmon::
 Cry_BlimpmonMega::
 	.incbin "sound/direct_sound_samples/cries/blimpmon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_SAWKUWAMON
+.endif @ P_FAMILY_BLADEKUWAGAMON
 
 .if P_FAMILY_BOARMON == TRUE
 	.align 2
@@ -2379,13 +2379,13 @@ Cry_Boarmon::
 	.incbin "sound/direct_sound_samples/cries/boarmon.bin"
 
 	.align 2
-Cry_Bomnanimon::
-	.incbin "sound/direct_sound_samples/cries/bomnanimon.bin"
+Cry_Bombernanimon::
+	.incbin "sound/direct_sound_samples/cries/bombernanimon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_BomnanimonMega::
-	.incbin "sound/direct_sound_samples/cries/bomnanimon_mega.bin"
+Cry_BombernanimonMega::
+	.incbin "sound/direct_sound_samples/cries/bombernanimon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
 .endif @ P_FAMILY_BOARMON
 
@@ -2439,10 +2439,10 @@ Cry_Burgermon_champion::
 	.incbin "sound/direct_sound_samples/cries/burgermon_champion.bin"
 .endif @ P_FAMILY_BURAIMON
 
-.if P_FAMILY_CHOUMON == TRUE
+.if P_FAMILY_BUTTERFLYMON == TRUE
 	.align 2
-Cry_Choumon::
-	.incbin "sound/direct_sound_samples/cries/choumon.bin"
+Cry_Butterflymon::
+	.incbin "sound/direct_sound_samples/cries/butterflymon.bin"
 
 	.align 2
 Cry_Centarumon::
@@ -2453,7 +2453,7 @@ Cry_Centarumon::
 Cry_CentarumonMega::
 	.incbin "sound/direct_sound_samples/cries/centarumon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_CHOUMON
+.endif @ P_FAMILY_BUTTERFLYMON
 
 .if P_FAMILY_CHAMBLEMON == TRUE
 	.align 2
@@ -2465,10 +2465,10 @@ Cry_Chamelemon::
 	.incbin "sound/direct_sound_samples/cries/chamelemon.bin"
 .endif @ P_FAMILY_CHAMBLEMON
 
-.if P_FAMILY_CHRYSALMON == TRUE
+.if P_FAMILY_CHRYSALIMON == TRUE
 	.align 2
-Cry_Chrysalmon::
-	.incbin "sound/direct_sound_samples/cries/chrysalmon.bin"
+Cry_Chrysalimon::
+	.incbin "sound/direct_sound_samples/cries/chrysalimon.bin"
 
 	.align 2
 Cry_Citramon::
@@ -2479,7 +2479,7 @@ Cry_Citramon::
 Cry_CitramonMega::
 	.incbin "sound/direct_sound_samples/cries/citramon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_CHRYSALMON
+.endif @ P_FAMILY_CHRYSALIMON
 
 .if P_FAMILY_CLOCKMON == TRUE
 	.align 2
@@ -2527,39 +2527,39 @@ Cry_Trailmon_dark::
 	.incbin "sound/direct_sound_samples/cries/trailmon_dark.bin"
 .endif @ P_FAMILY_DARCMON
 
-.if P_FAMILY_DARLIZAMON == TRUE
+.if P_FAMILY_DARKLIZARDMON == TRUE
 	.align 2
-Cry_Darlizamon::
-	.incbin "sound/direct_sound_samples/cries/darlizamon.bin"
+Cry_Darklizardmon::
+	.incbin "sound/direct_sound_samples/cries/darklizardmon.bin"
 
 	.align 2
-Cry_Darmailmon::
-	.incbin "sound/direct_sound_samples/cries/darmailmon.bin"
+Cry_Darkmaildramon::
+	.incbin "sound/direct_sound_samples/cries/darkmaildramon.bin"
 
 .if P_MEGA_EVOLUTIONS == TRUE
 	.align 2
-Cry_DarmailmonMega::
-	.incbin "sound/direct_sound_samples/cries/darmailmon_mega.bin"
+Cry_DarkmaildramonMega::
+	.incbin "sound/direct_sound_samples/cries/darkmaildramon_mega.bin"
 .endif @ P_MEGA_EVOLUTIONS
-.endif @ P_FAMILY_DARLIZAMON
+.endif @ P_FAMILY_DARKLIZARDMON
 
-.if P_FAMILY_DARKTYRMON == TRUE
+.if P_FAMILY_DARKTYRANNOMON == TRUE
 	.align 2
-Cry_Darktyrmon::
-	.incbin "sound/direct_sound_samples/cries/darktyrmon.bin"
-.endif @ P_FAMILY_DARKTYRMON
+Cry_Darktyrannomon::
+	.incbin "sound/direct_sound_samples/cries/darktyrannomon.bin"
+.endif @ P_FAMILY_DARKTYRANNOMON
 
-.if P_FAMILY_DARKTYRMON_X == TRUE
+.if P_FAMILY_DARKTYRANNOMON_X == TRUE
 	.align 2
-Cry_Darktyrmon_x::
-	.incbin "sound/direct_sound_samples/cries/darktyrmon_x.bin"
-.endif @ P_FAMILY_DARKTYRMON_X
+Cry_Darktyrannomon_x::
+	.incbin "sound/direct_sound_samples/cries/darktyrannomon_x.bin"
+.endif @ P_FAMILY_DARKTYRANNOMON_X
 
-.if P_FAMILY_DECKDRAMON == TRUE
+.if P_FAMILY_DECKERDRAMON == TRUE
 	.align 2
-Cry_Deckdramon::
-	.incbin "sound/direct_sound_samples/cries/deckdramon.bin"
-.endif @ P_FAMILY_DECKDRAMON
+Cry_Deckerdramon::
+	.incbin "sound/direct_sound_samples/cries/deckerdramon.bin"
+.endif @ P_FAMILY_DECKERDRAMON
 
 .if P_FAMILY_DELTAMON == TRUE
 	.align 2
@@ -2587,15 +2587,15 @@ Cry_Devimon::
 	.incbin "sound/direct_sound_samples/cries/devimon.bin"
 .endif @ P_FAMILY_DEVIDRAMON
 
-.if P_FAMILY_DEXDORUMON == TRUE
+.if P_FAMILY_DEXDORUGAMON == TRUE
 	.align 2
-Cry_Dexdorumon::
-	.incbin "sound/direct_sound_samples/cries/dexdorumon.bin"
+Cry_Dexdorugamon::
+	.incbin "sound/direct_sound_samples/cries/dexdorugamon.bin"
 
 	.align 2
 Cry_Diatrymon::
 	.incbin "sound/direct_sound_samples/cries/diatrymon.bin"
-.endif @ P_FAMILY_DEXDORUMON
+.endif @ P_FAMILY_DEXDORUGAMON
 
 .if P_FAMILY_DIGMON == TRUE
 	.align 2
@@ -2633,11 +2633,11 @@ Cry_Dolphmon::
 	.incbin "sound/direct_sound_samples/cries/dolphmon.bin"
 .endif @ P_FAMILY_DOLPHMON
 
-.if P_FAMILY_DONSHOUMON == TRUE
+.if P_FAMILY_DONSHOUTMON == TRUE
 	.align 2
-Cry_Donshoumon::
-	.incbin "sound/direct_sound_samples/cries/donshoumon.bin"
-.endif @ P_FAMILY_DONSHOUMON
+Cry_Donshoutmon::
+	.incbin "sound/direct_sound_samples/cries/donshoutmon.bin"
+.endif @ P_FAMILY_DONSHOUTMON
 
 .if P_FAMILY_DORUGAMON == TRUE
 	.align 2
@@ -2671,11 +2671,11 @@ Cry_Dusknoir::
 .endif @ P_GEN_4_CROSS_EVOS
 .endif @ P_FAMILY_DRIMOGEMON
 
-.if P_FAMILY_ELEPHANMON == TRUE
+.if P_FAMILY_ELEPHANTMON == TRUE
 	.align 2
-Cry_Elephanmon::
-	.incbin "sound/direct_sound_samples/cries/elephanmon.bin"
-.endif @ P_FAMILY_ELEPHANMON
+Cry_Elephantmon::
+	.incbin "sound/direct_sound_samples/cries/elephantmon.bin"
+.endif @ P_FAMILY_ELEPHANTMON
 
 .if P_FAMILY_EOSMON_CHAMPION == TRUE
 .if P_GEN_4_CROSS_EVOS == TRUE
@@ -2742,19 +2742,19 @@ Cry_Firamon::
 	.incbin "sound/direct_sound_samples/cries/firamon.bin"
 
 	.align 2
-Cry_Fladramon::
-	.incbin "sound/direct_sound_samples/cries/fladramon.bin"
+Cry_Flamedramon::
+	.incbin "sound/direct_sound_samples/cries/flamedramon.bin"
 
 	.align 2
-Cry_Flawizamon::
-	.incbin "sound/direct_sound_samples/cries/flawizamon.bin"
+Cry_Flamewizardmon::
+	.incbin "sound/direct_sound_samples/cries/flamewizardmon.bin"
 .endif @ P_FAMILY_FIRAMON
 
-.if P_FAMILY_FLARIZAMON == TRUE
+.if P_FAMILY_FLARERIZAMON == TRUE
 	.align 2
-Cry_Flarizamon::
-	.incbin "sound/direct_sound_samples/cries/flarizamon.bin"
-.endif @ P_FAMILY_FLARIZAMON
+Cry_Flarerizamon::
+	.incbin "sound/direct_sound_samples/cries/flarerizamon.bin"
+.endif @ P_FAMILY_FLARERIZAMON
 
 .if P_FAMILY_FLYBEEMON == TRUE
 	.align 2
@@ -2808,11 +2808,11 @@ Cry_Gargomon::
 	.incbin "sound/direct_sound_samples/cries/gargomon.bin"
 .endif @ P_FAMILY_GARGOMON
 
-.if P_FAMILY_GARGOYLMON == TRUE
+.if P_FAMILY_GARGOYLEMON == TRUE
 	.align 2
-Cry_Gargoylmon::
-	.incbin "sound/direct_sound_samples/cries/gargoylmon.bin"
-.endif @ P_FAMILY_GARGOYLMON
+Cry_Gargoylemon::
+	.incbin "sound/direct_sound_samples/cries/gargoylemon.bin"
+.endif @ P_FAMILY_GARGOYLEMON
 
 .if P_FAMILY_GARURUMON == TRUE
 	.align 2

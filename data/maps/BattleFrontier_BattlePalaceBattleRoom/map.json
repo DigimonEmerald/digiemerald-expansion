@@ -71,8 +71,8 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_PALACE_BIOSTEGMON",
-      "graphics_id": "OBJ_EVENT_GFX_BIOSTEGMON",
+      "local_id": "LOCALID_PALACE_BIOSTEGOMON",
+      "graphics_id": "OBJ_EVENT_GFX_BIOSTEGOMON",
       "x": 13,
       "y": 1,
       "elevation": 3,

@@ -53,7 +53,7 @@ def convert_methods(data):
             match = re.search(pattern, line)
             members = match.group(1).split(",")
             new_data = new_data + re.sub(pattern, "{EVO_LEVEL, " + f'{members[CONDTION].strip()}, {members[SPECIES].strip()}' + ", CONDITIONS({IF_PID_UPPER_MODULO_10_LT, 5})}", line)
-        elif "EVO_LEVEL_BALISTAMON," in line:
+        elif "EVO_LEVEL_BALLISTAMON," in line:
             match = re.search(pattern, line)
             members = match.group(1).split(",")
             new_data = new_data + re.sub(pattern, "{EVO_LEVEL, " + f'{members[CONDTION].strip()}, {members[SPECIES].strip()}', line)

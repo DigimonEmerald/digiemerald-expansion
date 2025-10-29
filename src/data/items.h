@@ -5704,40 +5704,40 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_Betamon_xite,
     },
 
-    [ITEM_TYUTYUMONITE] =
+    [ITEM_CHUUCHUUMONITE] =
     {
-        .name = ITEM_NAME("Tyutyumonite"),
+        .name = ITEM_NAME("Chuuchuumonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Tyutyumon to Mega\n"
+            "Chuuchuumon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Tyutyumonite,
-        .iconPalette = gItemIconPalette_Tyutyumonite,
+        .iconPic = gItemIcon_Chuuchuumonite,
+        .iconPalette = gItemIconPalette_Chuuchuumonite,
     },
 
-    [ITEM_COMMDRAMONITE] =
+    [ITEM_COMMANDRAMONITE] =
     {
-        .name = ITEM_NAME("Commdramonite"),
+        .name = ITEM_NAME("Commandramonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Commdramon to Mega\n"
+            "Commandramon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Commdramonite,
-        .iconPalette = gItemIconPalette_Commdramonite,
+        .iconPic = gItemIcon_Commandramonite,
+        .iconPalette = gItemIconPalette_Commandramonite,
     },
 
     [ITEM_DRACMONITE] =
@@ -5808,22 +5808,22 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_Impmonite,
     },
 
-    [ITEM_KODEKACMONITE] =
+    [ITEM_MINIDEKACHIMONITE] =
     {
-        .name = ITEM_NAME("Kodekacmonite"),
+        .name = ITEM_NAME("Minidekachimonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Kodekacmon to Mega\n"
+            "Minidekachimon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Kodekacmonite,
-        .iconPalette = gItemIconPalette_Kodekacmonite,
+        .iconPic = gItemIcon_Minidekachimonite,
+        .iconPalette = gItemIconPalette_Minidekachimonite,
     },
 
     [ITEM_MONODRAMONITE] =
@@ -5977,7 +5977,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Blgargomon to Mega\n"
+            "Blackgargomon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
@@ -5995,7 +5995,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Blgarurmon to Mega\n"
+            "Blackgarurumon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
@@ -6006,22 +6006,22 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_Mawilite,
     },
 
-    [ITEM_BLGROWLMONITE] =
+    [ITEM_BLACKGROWLMONITE] =
     {
-        .name = ITEM_NAME("Blgrowlmonite"),
+        .name = ITEM_NAME("Blackgrowlmonite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Blgrowlmon to Mega\n"
+            "Blackgrowlmon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Blgrowlmonite,
-        .iconPalette = gItemIconPalette_Blgrowlmonite,
+        .iconPic = gItemIcon_Blackgrowlmonite,
+        .iconPalette = gItemIconPalette_Blackgrowlmonite,
     },
 
     [ITEM_BLIMPMONITE] =
@@ -6049,7 +6049,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Bomnanimon to Mega\n"
+            "Bombernanimon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
@@ -6096,22 +6096,22 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_Citramonite,
     },
 
-    [ITEM_DARMAILMONNITE] =
+    [ITEM_DARKMAILDRAMONNITE] =
     {
         .name = ITEM_NAME("Darmailnite"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
             "This stone enables\n"
-            "Darmailmon to Mega\n"
+            "Darkmaildramon to Mega\n"
             "Evolve in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_Darmailmonnite,
-        .iconPalette = gItemIconPalette_Darmailmonnite,
+        .iconPic = gItemIcon_Darkmaildramonnite,
+        .iconPalette = gItemIconPalette_Darkmaildramonnite,
     },
 
     [ITEM_BANETTITE] =

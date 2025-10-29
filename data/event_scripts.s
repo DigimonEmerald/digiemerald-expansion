@@ -855,7 +855,7 @@ Common_EventScript_FerryDepartIsland::
 	return
 
 	.include "data/scripts/cave_of_origin.inc"
-	.include "data/scripts/donshoumon.inc"
+	.include "data/scripts/donshoutmon.inc"
 
 Common_EventScript_NameReceivedPartyMon::
 	fadescreen FADE_TO_BLACK

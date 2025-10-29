@@ -318,7 +318,7 @@
 #define FLAG_MET_RIVAL_LILYCOVE              0x124
 #define FLAG_MET_RIVAL_IN_HOUSE_AFTER_LILYCOVE 0x125
 #define FLAG_EXCHANGED_SCANNER               0x126
-#define FLAG_DONSHOUMON_FLED_FORTREE            0x127
+#define FLAG_DONSHOUTMON_FLED_FORTREE            0x127
 #define FLAG_PETALBURG_MART_EXPANDED_ITEMS   0x128
 #define FLAG_RECEIVED_MIRACLE_SEED           0x129
 #define FLAG_RECEIVED_FUGAMON                 0x12A
@@ -479,7 +479,7 @@
 #define FLAG_MOVE_TUTOR_TAUGHT_DOUBLE_EDGE   0x1B9
 #define FLAG_MOVE_TUTOR_TAUGHT_EXPLOSION     0x1BA
 #define FLAG_DEFEATED_GARGOMON               0x1BB
-#define FLAG_DEFEATED_GARGOYLMON                 0x1BC
+#define FLAG_DEFEATED_GARGOYLEMON                 0x1BC
 #define FLAG_DEFEATED_GARURUMON              0x1BD
 #define FLAG_DEFEATED_GATOMON_X                 0x1BE
 #define FLAG_DEFEATED_GEKOMON                0x1BF
@@ -863,7 +863,7 @@
 #define FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_POKEBALL_GAMMAMON      0x32C
 #define FLAG_HIDE_ROUTE_116_DROPPED_GLASSES_MAN                     0x32D
 #define FLAG_HIDE_RUSTBORO_CITY_RIVAL                               0x32E
-#define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_DARLIZAMON_DOLL     0x32F
+#define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_DARKLIZARDMON_DOLL     0x32F
 #define FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE                           0x330
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL       0x331
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL           0x332
@@ -955,7 +955,7 @@
 #define FLAG_HIDE_ROUTE_118_GABBY_AND_TY_3                          0x388
 #define FLAG_HIDE_SLATEPORT_CITY_HARBOR_PATRONS                     0x389
 #define FLAG_HIDE_ROUTE_104_WHITE_HERB_FLORIST                      0x38A
-#define FLAG_HIDE_FALLARBOR_BIOSTEGMON                                 0x38B
+#define FLAG_HIDE_FALLARBOR_BIOSTEGOMON                                 0x38B
 #define FLAG_HIDE_LILYCOVE_HARBOR_FERRY_ATTENDANT                   0x38C
 #define FLAG_HIDE_LILYCOVE_HARBOR_FERRY_SAILOR                      0x38D
 #define FLAG_HIDE_SOUTHERN_ISLAND_EON_STONE                         0x38E
@@ -984,7 +984,7 @@
 #define FLAG_HIDE_FORTREE_CITY_HOUSE_4_ANGEMON                      0x3A5
 #define FLAG_HIDE_MOSSDEEP_CITY_HOUSE_2_ANGEMON                     0x3A6
 #define FLAG_HIDE_GARGOMON                                          0x3A7
-#define FLAG_HIDE_GARGOYLMON                                            0x3A8
+#define FLAG_HIDE_GARGOYLEMON                                            0x3A8
 #define FLAG_HIDE_GARURUMON                                         0x3A9
 #define FLAG_HIDE_METEOR_FALLS_TEAM_AQUA                            0x3AA
 #define FLAG_HIDE_METEOR_FALLS_TEAM_MAGMA                           0x3AB
@@ -1017,8 +1017,8 @@
 #define FLAG_HIDE_ROUTE_118_STEVEN                                  0x3C6
 #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_STEVEN                0x3C7
 #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_FUGAMON_POKEBALL       0x3C8
-#define FLAG_HIDE_FORTREE_CITY_DONSHOUMON                              0x3C9
-#define FLAG_HIDE_ROUTE_120_DONSHOUMON_BRIDGE                          0x3CA
+#define FLAG_HIDE_FORTREE_CITY_DONSHOUTMON                              0x3C9
+#define FLAG_HIDE_ROUTE_120_DONSHOUTMON_BRIDGE                          0x3CA
 #define FLAG_HIDE_LILYCOVE_CITY_RIVAL                               0x3CB
 #define FLAG_HIDE_ROUTE_120_STEVEN                                  0x3CC
 #define FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN                            0x3CD
@@ -1029,16 +1029,16 @@
 #define FLAG_HIDE_AQUA_HIDEOUT_B1F_YAAMON_2                      0x3D2
 #define FLAG_HIDE_OLDALE_TOWN_RIVAL                                 0x3D3
 #define FLAG_HIDE_UNDERWATER_SEA_FLOOR_CAVERN_STOLEN_SUBMARINE      0x3D4
-#define FLAG_HIDE_ROUTE_120_DONSHOUMON_BRIDGE_SHADOW                   0x3D5
-#define FLAG_HIDE_ROUTE_120_DONSHOUMON_1                               0x3D6
+#define FLAG_HIDE_ROUTE_120_DONSHOUTMON_BRIDGE_SHADOW                   0x3D5
+#define FLAG_HIDE_ROUTE_120_DONSHOUTMON_1                               0x3D6
 #define FLAG_HIDE_RUSTURF_TUNNEL_WANDA                              0x3D7
 #define FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WANDA                0x3D8
-#define FLAG_HIDE_ROUTE_120_DONSHOUMON_2                               0x3D9
-#define FLAG_HIDE_ROUTE_120_DONSHOUMON_3                               0x3DA
-#define FLAG_HIDE_ROUTE_120_DONSHOUMON_4                               0x3DB
-#define FLAG_HIDE_ROUTE_120_DONSHOUMON_5                               0x3DC
-#define FLAG_HIDE_ROUTE_119_DONSHOUMON_1                               0x3DD
-#define FLAG_HIDE_ROUTE_119_DONSHOUMON_2                               0x3DE
+#define FLAG_HIDE_ROUTE_120_DONSHOUTMON_2                               0x3D9
+#define FLAG_HIDE_ROUTE_120_DONSHOUTMON_3                               0x3DA
+#define FLAG_HIDE_ROUTE_120_DONSHOUTMON_4                               0x3DB
+#define FLAG_HIDE_ROUTE_120_DONSHOUTMON_5                               0x3DC
+#define FLAG_HIDE_ROUTE_119_DONSHOUTMON_1                               0x3DD
+#define FLAG_HIDE_ROUTE_119_DONSHOUTMON_2                               0x3DE
 #define FLAG_HIDE_ROUTE_101_BOY                                     0x3DF
 #define FLAG_HIDE_WEATHER_INSTITUTE_2F_AQUA_GRUNT_M                 0x3E0
 #define FLAG_HIDE_LILYCOVE_POKEMON_CENTER_CONTEST_LADY_MON          0x3E1
@@ -1441,7 +1441,7 @@
 #define FLAG_SYS_ENC_DOWN_ITEM                      (SYSTEM_FLAGS + 0x4E)
 #define FLAG_SYS_BRAILLE_DIG                        (SYSTEM_FLAGS + 0x4F)
 #define FLAG_SYS_GARGOMON_PUZZLE_COMPLETED          (SYSTEM_FLAGS + 0x50)
-#define FLAG_SYS_BRAILLE_GARGOYLMON_COMPLETED           (SYSTEM_FLAGS + 0x51)
+#define FLAG_SYS_BRAILLE_GARGOYLEMON_COMPLETED           (SYSTEM_FLAGS + 0x51)
 #define FLAG_SYS_GARURUMON_PUZZLE_COMPLETED         (SYSTEM_FLAGS + 0x52)
 #define FLAG_ENABLE_SHIP_SOUTHERN_ISLAND            (SYSTEM_FLAGS + 0x53)
 
@@ -1656,8 +1656,8 @@
 
 // Temp flag aliases
 #define FLAG_TEMP_SKIP_GABBY_INTERVIEW          FLAG_TEMP_1
-#define FLAG_TEMP_GARGOYLMON_PUZZLE_STARTED         FLAG_TEMP_2
-#define FLAG_TEMP_GARGOYLMON_PUZZLE_FAILED          FLAG_TEMP_3
+#define FLAG_TEMP_GARGOYLEMON_PUZZLE_STARTED         FLAG_TEMP_2
+#define FLAG_TEMP_GARGOYLEMON_PUZZLE_FAILED          FLAG_TEMP_3
 #define FLAG_TEMP_HIDE_FOLLOWER                 FLAG_TEMP_E
 #define FLAG_TEMP_HIDE_MIRAGE_ISLAND_BERRY_TREE FLAG_TEMP_11
 

@@ -661,7 +661,7 @@ static const u16 sReflectionPaletteTags_Gekomon[] = {
     OBJ_EVENT_PAL_TAG_GEKOMON_REFLECTION,
 };
 
-static const u16 sReflectionPaletteTags_Npc3[] = { // Only used by the Route 120 bridge Donshoumon
+static const u16 sReflectionPaletteTags_Npc3[] = { // Only used by the Route 120 bridge Donshoutmon
     OBJ_EVENT_PAL_TAG_NPC_3_REFLECTION,
     OBJ_EVENT_PAL_TAG_NPC_3_REFLECTION,
     OBJ_EVENT_PAL_TAG_NPC_3_REFLECTION,

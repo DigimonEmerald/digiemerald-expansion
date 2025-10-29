@@ -228,7 +228,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestJudge::
 LilycoveCity_ContestHall_EventScript_CuteContestant1::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_MyBiostegmonWasDistracted, MSGBOX_DEFAULT
+	msgbox LilycoveCity_ContestHall_Text_MyBiostegomonWasDistracted, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_CUTE_CONTESTANT_1, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -370,7 +370,7 @@ LilycoveCity_ContestHall_Text_IfMonPullsSmartMoveNext:
 
 LilycoveCity_ContestHall_Text_DontAppreciateCuteLeechLife:
 	.string "Oh, dear, no!\p"
-	.string "My darling ICEBOTAMON's LEECH LIFE is so\n"
+	.string "My darling SNOWBOTAMON's LEECH LIFE is so\n"
 	.string "cute I kept using it over and over!\p"
 	.string "But these mean people don't appreciate\n"
 	.string "it at all!$"
@@ -460,8 +460,8 @@ LilycoveCity_ContestHall_Text_SuchCharmingCuteAppeals:
 	.string "Oh, my goodness! What a perfectly\n"
 	.string "adorable WATER SPORT appeal!$"
 
-LilycoveCity_ContestHall_Text_MyBiostegmonWasDistracted:
-	.string "Oh, no… My sweet BIOSTEGMON was\n"
+LilycoveCity_ContestHall_Text_MyBiostegomonWasDistracted:
+	.string "Oh, no… My sweet BIOSTEGOMON was\n"
 	.string "distracted by another POKéMON.$"
 
 LilycoveCity_ContestHall_Text_NeverWonBattleButContest:

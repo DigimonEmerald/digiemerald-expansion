@@ -263,7 +263,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .moves = {MOVE_THUNDER_PUNCH, MOVE_FIRE_PUNCH, MOVE_ICE_PUNCH, MOVE_DISABLE},
             },
             {
-                .species = SPECIES_YUKIAGUMON_06,
+                .species = SPECIES_SNOWAGUMON_06,
                 .heldItem = ITEM_LUM_BERRY,
                 .fixedIV = 24,
                 .nature = NATURE_LONELY,
@@ -282,7 +282,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
         // Gold Symbol.
         {
             {
-                .species = SPECIES_YUKIAGUMON,
+                .species = SPECIES_SNOWAGUMON,
                 .heldItem = ITEM_LUM_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_MODEST,
@@ -377,7 +377,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .moves = {MOVE_CONFUSE_RAY, MOVE_DOUBLE_TEAM, MOVE_TOXIC, MOVE_FLY},
             },
             {
-                .species = SPECIES_BABOONMON,
+                .species = SPECIES_BABOONGAMON,
                 .heldItem = ITEM_SCOPE_LENS,
                 .fixedIV = 16,
                 .nature = NATURE_HARDY,
@@ -404,7 +404,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .moves = {MOVE_OVERHEAT, MOVE_EXTREME_SPEED, MOVE_ROAR, MOVE_PROTECT},
             },
             {
-                .species = SPECIES_BABOONMON,
+                .species = SPECIES_BABOONGAMON,
                 .heldItem = ITEM_SCOPE_LENS,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_HARDY,
@@ -469,7 +469,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .moves = {MOVE_PSYCHIC, MOVE_HYPNOSIS, MOVE_DREAM_EATER, MOVE_DESTINY_BOND},
             },
             {
-                .species = SPECIES_ATAMADEMON,
+                .species = SPECIES_ATAMADEKACHIMON,
                 .heldItem = ITEM_LUM_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_JOLLY,
@@ -500,7 +500,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_PROTECT, MOVE_STEEL_WING},
             },
             {
-                .species = SPECIES_BLGROWLMON,
+                .species = SPECIES_BLACKGROWLMON,
                 .heldItem = ITEM_SITRUS_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
@@ -526,7 +526,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .moves = {MOVE_TOXIC, MOVE_AERIAL_ACE, MOVE_PROTECT, MOVE_STEEL_WING},
             },
             {
-                .species = SPECIES_BLGROWLMON,
+                .species = SPECIES_BLACKGROWLMON,
                 .heldItem = ITEM_SITRUS_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
@@ -540,7 +540,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
         // Silver Symbol.
         {
             {
-                .species = SPECIES_DARKTYRMON_X,
+                .species = SPECIES_DARKTYRANNOMON_X,
                 .heldItem = ITEM_QUICK_CLAW,
                 .fixedIV = 16,
                 .nature = NATURE_BRAVE,
@@ -567,7 +567,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
         // Gold Symbol.
         {
             {
-                .species = SPECIES_DARKTYRMON_X,
+                .species = SPECIES_DARKTYRANNOMON_X,
                 .heldItem = ITEM_FOCUS_BAND,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_BOLD,
@@ -575,7 +575,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .moves = {MOVE_SWAGGER, MOVE_CRUNCH, MOVE_SLUDGE_BOMB, MOVE_GIGA_DRAIN},
             },
             {
-                .species = SPECIES_KODEKACMON,
+                .species = SPECIES_MINIDEKACHIMON,
                 .heldItem = ITEM_BRIGHT_POWDER,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_BRAVE,
@@ -583,7 +583,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_EXPLOSION, MOVE_SCREECH},
             },
             {
-                .species = SPECIES_COMMDRAMON,
+                .species = SPECIES_COMMANDRAMON,
                 .heldItem = ITEM_CHESTO_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
@@ -613,7 +613,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .moves = {MOVE_EARTHQUAKE, MOVE_METAL_CLAW, MOVE_TOXIC, MOVE_IRON_DEFENSE},
             },
             {
-                .species = SPECIES_GARGOYLMON,
+                .species = SPECIES_GARGOYLEMON,
                 .heldItem = ITEM_CHESTO_BERRY,
                 .fixedIV = 16,
                 .nature = NATURE_MODEST,
@@ -632,7 +632,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .moves = {MOVE_BLIZZARD, MOVE_WATER_PULSE, MOVE_AERIAL_ACE, MOVE_REFLECT},
             },
             {
-                .species = SPECIES_EBIBURGMON,
+                .species = SPECIES_EBIBURGAMON,
                 .heldItem = ITEM_LUM_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_MILD,
@@ -2004,7 +2004,7 @@ static void CheckPartyIneligibility(void)
     s32 monIdLooper;
 
     // count is re-used, define for clarity
-    #define chrysalmonigibleMons count
+    #define chrysalimonigibleMons count
 
     switch (battleMode)
     {
@@ -2027,7 +2027,7 @@ static void CheckPartyIneligibility(void)
     do
     {
         monId = monIdLooper;
-        chrysalmonigibleMons = 0;
+        chrysalimonigibleMons = 0;
         do
         {
             u16 species = GetMonData(&gPlayerParty[monId], MON_DATA_SPECIES_OR_EGG);
@@ -2037,11 +2037,11 @@ static void CheckPartyIneligibility(void)
             if (VarGet(VAR_FRONTIER_FACILITY) == FRONTIER_FACILITY_PYRAMID)
             {
                 if (heldItem == ITEM_NONE)
-                    AppendIfValid(species, heldItem, hp, gSpecialVar_Result, level, speciesArray, itemArray, &chrysalmonigibleMons);
+                    AppendIfValid(species, heldItem, hp, gSpecialVar_Result, level, speciesArray, itemArray, &chrysalimonigibleMons);
             }
             else
             {
-                AppendIfValid(species, heldItem, hp, gSpecialVar_Result, level, speciesArray, itemArray, &chrysalmonigibleMons);
+                AppendIfValid(species, heldItem, hp, gSpecialVar_Result, level, speciesArray, itemArray, &chrysalimonigibleMons);
             }
             monId++;
             if (monId >= PARTY_SIZE)
@@ -2049,9 +2049,9 @@ static void CheckPartyIneligibility(void)
         } while (monId != monIdLooper);
 
         monIdLooper++;
-    } while (monIdLooper < PARTY_SIZE && chrysalmonigibleMons < toChoose);
+    } while (monIdLooper < PARTY_SIZE && chrysalimonigibleMons < toChoose);
 
-    if (chrysalmonigibleMons < toChoose)
+    if (chrysalimonigibleMons < toChoose)
     {
         u32 i;
         u32 baseSpecies = 0;
@@ -2099,7 +2099,7 @@ static void CheckPartyIneligibility(void)
         gSpecialVar_0x8004 = FALSE;
         gSaveBlock2Ptr->frontier.lvlMode = gSpecialVar_Result;
     }
-    #undef chrysalmonigibleMons
+    #undef chrysalimonigibleMons
 }
 
 #undef SPECIES_PER_LINE

@@ -589,7 +589,7 @@ static void CreateBaluchimon(u32 preEvoSpecies, u32 postEvoSpecies, struct Pokem
 
             if (GetMonData(baluchimon, MON_DATA_SPECIES) == SPECIES_BALUCHIMON
                 && GetMonData(baluchimon, MON_DATA_LANGUAGE) == LANGUAGE_JAPANESE
-                && GetMonData(mon, MON_DATA_SPECIES) == SPECIES_BALISTAMON)
+                && GetMonData(mon, MON_DATA_SPECIES) == SPECIES_BALLISTAMON)
                     SetMonData(baluchimon, MON_DATA_NICKNAME, sText_BaluchimonJapaneseName);
 
         }

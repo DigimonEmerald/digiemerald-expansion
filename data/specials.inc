@@ -297,7 +297,7 @@ gSpecials::
 	def_special RemoveCameraObject
 	def_special GetPokeblockNameByMonNature
 	def_special GetSecretBaseNearbyMapName
-	def_special CheckFlarizamonChamelemon
+	def_special CheckFlarerizamonChamelemon
 	def_special ShouldDoBrailleGargomonEffectOld
 	def_special DoOrbEffect
 	def_special FadeOutOrbEffect
@@ -512,7 +512,7 @@ gSpecials::
 	def_special Unused_SetWeatherSunny
 	def_special SetUnlockedPokedexFlags
 	def_special IsTrainerRegistered
-	def_special ShouldDoBrailleGargoylmonPuzzle
+	def_special ShouldDoBrailleGargoylemonPuzzle
 	def_special EnableNationalPokedex
 	def_special ScriptMenu_CreateLilycoveSSTidalMultichoice
 	def_special GetLilycoveSSTidalSelection

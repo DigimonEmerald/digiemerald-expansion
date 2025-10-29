@@ -22,19 +22,19 @@ FallarborTown_EventScript_ExpertMNormal::
 	end
 
 FallarborTown_EventScript_Girl::
-	msgbox FallarborTown_Text_MyPreciousBiostegmon, MSGBOX_NPC
+	msgbox FallarborTown_Text_MyPreciousBiostegomon, MSGBOX_NPC
 	end
 
 FallarborTown_EventScript_Gentleman::
 	msgbox FallarborTown_Text_HaveYouChallengedFlannery, MSGBOX_NPC
 	end
 
-FallarborTown_EventScript_Biostegmon::
+FallarborTown_EventScript_Biostegomon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_BIOSTEGMON, CRY_MODE_NORMAL
-	msgbox FallarborTown_Text_Biostegmon, MSGBOX_DEFAULT
+	playmoncry SPECIES_BIOSTEGOMON, CRY_MODE_NORMAL
+	msgbox FallarborTown_Text_Biostegomon, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
@@ -63,13 +63,13 @@ FallarborTown_Text_RegionKnownForMeteors:
 	.string "They say METEOR FALLS was gouged out\n"
 	.string "by a falling meteorite long ago.$"
 
-FallarborTown_Text_MyPreciousBiostegmon:
+FallarborTown_Text_MyPreciousBiostegomon:
 	.string "See! Take a look!\n"
-	.string "This is my precious BIOSTEGMON!\p"
+	.string "This is my precious BIOSTEGOMON!\p"
 	.string "It's slick and smooth and plushy, too!$"
 
-FallarborTown_Text_Biostegmon:
-	.string "BIOSTEGMON: Rooreelooo.$"
+FallarborTown_Text_Biostegomon:
+	.string "BIOSTEGOMON: Rooreelooo.$"
 
 FallarborTown_Text_HaveYouChallengedFlannery:
 	.string "Have you already challenged FLANNERY,\n"

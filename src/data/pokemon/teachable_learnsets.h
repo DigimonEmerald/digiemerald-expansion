@@ -648,8 +648,8 @@ static const u16 sLeafmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_KETOMON
 
-#if P_FAMILY_CHOROMON
-static const u16 sChoromonTeachableLearnset[] = {
+#if P_FAMILY_METALKOROMON
+static const u16 sMetalkoromonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
@@ -728,7 +728,7 @@ static const u16 sMokumonTeachableLearnset[] = {
 };
 
 #if P_ALOLAN_FORMS
-static const u16 sChoromonAlolaTeachableLearnset[] = {
+static const u16 sMetalkoromonAlolaTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_COUNTER,
@@ -790,7 +790,7 @@ static const u16 sMokumonAlolaTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_ALOLAN_FORMS
-#endif //P_FAMILY_CHOROMON
+#endif //P_FAMILY_METALKOROMON
 
 #if P_FAMILY_NYOKIMON
 static const u16 sNyokimonTeachableLearnset[] = {
@@ -1960,8 +1960,8 @@ static const u16 sTsubumonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SANDMON
 
-#if P_FAMILY_ICEBOTAMON
-static const u16 sIcebotamonTeachableLearnset[] = {
+#if P_FAMILY_SNOWBOTAMON
+static const u16 sSnowbotamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_DOUBLE_EDGE,
@@ -2048,7 +2048,7 @@ static const u16 sGotsumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_2_CROSS_EVOS
-#endif //P_FAMILY_ICEBOTAMON
+#endif //P_FAMILY_SNOWBOTAMON
 
 #if P_FAMILY_ZERIMON
 static const u16 sZerimonTeachableLearnset[] = {
@@ -2658,7 +2658,7 @@ static const u16 sChicchimonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDemmeramonTeachableLearnset[] = {
+static const u16 sDemimeramonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -4747,7 +4747,7 @@ static const u16 sTokomon_xTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sTorballmonTeachableLearnset[] = {
+static const u16 sTorikaraballmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DOUBLE_TEAM,
     MOVE_DREAM_EATER,
@@ -4866,7 +4866,7 @@ static const u16 sTsunomonTeachableLearnset[] = {
 };
 
 #if P_GEN_2_CROSS_EVOS
-static const u16 sKodekacmonTeachableLearnset[] = {
+static const u16 sMinidekachimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_CUT,
@@ -5722,7 +5722,7 @@ static const u16 sArgomon_rookieTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sArmadilmonTeachableLearnset[] = {
+static const u16 sArmadillomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_DOUBLE_TEAM,
@@ -5754,7 +5754,7 @@ static const u16 sArmadilmonTeachableLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const u16 sArmadilmonGalarTeachableLearnset[] = {
+static const u16 sArmadillomonGalarTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_DOUBLE_EDGE,
@@ -6263,7 +6263,7 @@ static const u16 sBiyomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBlkagumonTeachableLearnset[] = {
+static const u16 sBlackagumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -6319,8 +6319,8 @@ static const u16 sPsychemonTeachableLearnset[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BIYOMON
 
-#if P_FAMILY_BLKAGUMON_X
-static const u16 sBlkagumon_xTeachableLearnset[] = {
+#if P_FAMILY_BLACKAGUMON_X
+static const u16 sBlackagumon_xTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
@@ -6349,7 +6349,7 @@ static const u16 sBlkagumon_xTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBlkgabumonTeachableLearnset[] = {
+static const u16 sBlackgabumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
@@ -6378,10 +6378,10 @@ static const u16 sBlkgabumonTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BLKAGUMON_X
+#endif //P_FAMILY_BLACKAGUMON_X
 
-#if P_FAMILY_BLKGUILMON
-static const u16 sBlkguilmonTeachableLearnset[] = {
+#if P_FAMILY_BLACKGUILMON
+static const u16 sBlackguilmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -6451,7 +6451,7 @@ static const u16 sBokomonTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BLKGUILMON
+#endif //P_FAMILY_BLACKGUILMON
 
 #if P_FAMILY_BULUCOMON
 #if P_GEN_4_CROSS_EVOS
@@ -6721,7 +6721,7 @@ static const u16 sKleavorTeachableLearnset[] = {
 #endif //P_GEN_8_CROSS_EVOS
 #endif //P_FAMILY_BURGERMON
 
-#if P_FAMILY_SAMUAGUMON
+#if P_FAMILY_BUSHIAGUMON
 #if P_GEN_2_CROSS_EVOS
 static const u16 sSangomonTeachableLearnset[] = {
     MOVE_ATTRACT,
@@ -6764,7 +6764,7 @@ static const u16 sSangomonTeachableLearnset[] = {
 };
 #endif //P_GEN_2_CROSS_EVOS
 
-static const u16 sSamuagumonTeachableLearnset[] = {
+static const u16 sBushiagumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
@@ -6808,7 +6808,7 @@ static const u16 sSamuagumonTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SAMUAGUMON
+#endif //P_FAMILY_BUSHIAGUMON
 
 #if P_FAMILY_CANDLEMON
 #if P_GEN_2_CROSS_EVOS
@@ -6951,7 +6951,7 @@ static const u16 sElectivireTeachableLearnset[] = {
 
 #if P_FAMILY_CHIKURIMON
 #if P_GEN_2_CROSS_EVOS
-static const u16 sBlktoyamonTeachableLearnset[] = {
+static const u16 sShadowtoyagumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
@@ -7071,8 +7071,8 @@ static const u16 sMagmortarTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_CHIKURIMON
 
-#if P_FAMILY_TYUTYUMON
-static const u16 sTyutyumonTeachableLearnset[] = {
+#if P_FAMILY_CHUUCHUUMON
+static const u16 sChuuchuumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
@@ -7104,7 +7104,7 @@ static const u16 sTyutyumonTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_TYUTYUMON
+#endif //P_FAMILY_CHUUCHUUMON
 
 #if P_FAMILY_CHUUMON
 static const u16 sChuumonTeachableLearnset[] = {
@@ -7221,12 +7221,12 @@ static const u16 sChuumonPaldeaAquaTeachableLearnset[] = {
 #endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_CHUUMON
 
-#if P_FAMILY_HAZYAGUMON
-static const u16 sHazyagumonTeachableLearnset[] = {
+#if P_FAMILY_CLEARAGUMON
+static const u16 sClearagumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sCommdramonTeachableLearnset[] = {
+static const u16 sCommandramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
@@ -7266,7 +7266,7 @@ static const u16 sCommdramonTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_HAZYAGUMON
+#endif //P_FAMILY_CLEARAGUMON
 
 #if P_FAMILY_CORONAMON
 static const u16 sCoronamonTeachableLearnset[] = {
@@ -7414,7 +7414,7 @@ static const u16 sDamemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDemidevmonTeachableLearnset[] = {
+static const u16 sDemidevimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_CALM_MIND,
@@ -7847,7 +7847,7 @@ static const u16 sDotagumonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDotfalcmonTeachableLearnset[] = {
+static const u16 sDotfalcomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -8101,8 +8101,8 @@ static const u16 sDracomon_xGalarTeachableLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_DRACOMON_X
 
-#if P_FAMILY_EBIBURGMON
-static const u16 sEbiburgmonTeachableLearnset[] = {
+#if P_FAMILY_EBIBURGAMON
+static const u16 sEbiburgamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
@@ -8136,7 +8136,7 @@ static const u16 sEbiburgmonTeachableLearnset[] = {
 };
 
 #if P_GALARIAN_FORMS
-static const u16 sEbiburgmonGalarTeachableLearnset[] = {
+static const u16 sEbiburgamonGalarTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
@@ -8162,7 +8162,7 @@ static const u16 sEbiburgmonGalarTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
-#endif //P_FAMILY_EBIBURGMON
+#endif //P_FAMILY_EBIBURGAMON
 
 #if P_FAMILY_EKAKIMON
 static const u16 sEkakimonTeachableLearnset[] = {
@@ -9500,7 +9500,7 @@ static const u16 sImpmonTeachableLearnset[] = {
 
 #if P_FAMILY_JAZAMON
 #if P_GEN_3_CROSS_EVOS
-static const u16 sBiostegmonTeachableLearnset[] = {
+static const u16 sBiostegomonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
@@ -9753,7 +9753,7 @@ static const u16 sKeramon_xTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sKodokgumonTeachableLearnset[] = {
+static const u16 sKodokugumonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BULLET_SEED,
@@ -9783,8 +9783,8 @@ static const u16 sKodokgumonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_KERAMON
 
-#if P_FAMILY_KOKABUIMON
-static const u16 sKokabuimonTeachableLearnset[] = {
+#if P_FAMILY_KOKABUTERIMON
+static const u16 sKokabuterimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
@@ -9880,7 +9880,7 @@ static const u16 sAmbipomTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_KOKABUIMON
+#endif //P_FAMILY_KOKABUTERIMON
 
 #if P_FAMILY_KOKUWAMON
 static const u16 sKokuwamonTeachableLearnset[] = {
@@ -10621,8 +10621,8 @@ static const u16 sGliscorTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_METABEE
 
-#if P_FAMILY_MODBETAMON
-static const u16 sModbetamonTeachableLearnset[] = {
+#if P_FAMILY_MODOKIBETAMON
+static const u16 sModokibetamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
@@ -10729,7 +10729,7 @@ static const u16 sMonitamonTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_MODBETAMON
+#endif //P_FAMILY_MODOKIBETAMON
 
 #if P_FAMILY_MONMON
 static const u16 sMonmonTeachableLearnset[] = {
@@ -11501,8 +11501,8 @@ static const u16 sCursolaTeachableLearnset[] = {
 #endif //P_GALARIAN_FORMS
 #endif //P_FAMILY_PATAMON
 
-#if P_FAMILY_PAWNMON_BLACK
-static const u16 sPawnmon_blackTeachableLearnset[] = {
+#if P_FAMILY_PAWNCHESSMON_BLACK
+static const u16 sPawnchessmon_blackTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BULLET_SEED,
@@ -11536,7 +11536,7 @@ static const u16 sPawnmon_blackTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sPawnmon_whiteTeachableLearnset[] = {
+static const u16 sPawnchessmon_whiteTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BULLET_SEED,
@@ -11571,7 +11571,7 @@ static const u16 sPawnmon_whiteTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_PAWNMON_BLACK
+#endif //P_FAMILY_PAWNCHESSMON_BLACK
 
 #if P_FAMILY_PENGUINMON
 static const u16 sPenguinmonTeachableLearnset[] = {
@@ -11992,8 +11992,8 @@ static const u16 sShamanmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SHAMANMON
 
-#if P_FAMILY_YUKIAGUMON
-static const u16 sYukiagumonTeachableLearnset[] = {
+#if P_FAMILY_SNOWAGUMON
+static const u16 sSnowagumonTeachableLearnset[] = {
     MOVE_BODY_SLAM,
     MOVE_CALM_MIND,
     MOVE_CUT,
@@ -12029,10 +12029,10 @@ static const u16 sYukiagumonTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_YUKIAGUMON
+#endif //P_FAMILY_SNOWAGUMON
 
-#if P_FAMILY_YUKIAGUMON_06
-static const u16 sYukiagumon_06TeachableLearnset[] = {
+#if P_FAMILY_SNOWAGUMON_06
+static const u16 sSnowagumon_06TeachableLearnset[] = {
     MOVE_BODY_SLAM,
     MOVE_CALM_MIND,
     MOVE_CUT,
@@ -12067,7 +12067,7 @@ static const u16 sYukiagumon_06TeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_YUKIAGUMON_06
+#endif //P_FAMILY_SNOWAGUMON_06
 
 #if P_FAMILY_ICEGOBIMON
 static const u16 sIcegobimonTeachableLearnset[] = {
@@ -12140,7 +12140,7 @@ static const u16 sSolarmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sSounbrdmonTeachableLearnset[] = {
+static const u16 sSoundbirdmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
@@ -12372,8 +12372,8 @@ static const u16 sStrabimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_STRABIMON
 
-#if P_FAMILY_SUNARZAMON
-static const u16 sSunarzamonTeachableLearnset[] = {
+#if P_FAMILY_SUNARIZAMON
+static const u16 sSunarizamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
@@ -12505,7 +12505,7 @@ static const u16 sSyakomonTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SUNARZAMON
+#endif //P_FAMILY_SUNARIZAMON
 
 #if P_FAMILY_SYAKOMON_X
 static const u16 sSyakomon_xTeachableLearnset[] = {
@@ -13695,8 +13695,8 @@ static const u16 sArgomon_championTeachableLearnset[] = {
 };
 #endif //P_FAMILY_ARCHELOMON
 
-#if P_FAMILY_ARESDRAMON
-static const u16 sAresdramonTeachableLearnset[] = {
+#if P_FAMILY_ARRESTERDRAMON
+static const u16 sArresterdramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BULLET_SEED,
@@ -13724,7 +13724,7 @@ static const u16 sAresdramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sAtamademonTeachableLearnset[] = {
+static const u16 sAtamadekachimonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
@@ -13770,7 +13770,7 @@ static const u16 sAtamademonTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ARESDRAMON
+#endif //P_FAMILY_ARRESTERDRAMON
 
 #if P_FAMILY_AURUMON
 static const u16 sAurumonTeachableLearnset[] = {
@@ -13878,7 +13878,7 @@ static const u16 sAxemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBaboonmonTeachableLearnset[] = {
+static const u16 sBaboongamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -13961,7 +13961,7 @@ static const u16 sBakemonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBalistamonTeachableLearnset[] = {
+static const u16 sBallistamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_CUT,
@@ -14162,8 +14162,8 @@ static const u16 sTrailmon_battle_armamentTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BAOHUCKMON
 
-#if P_FAMILY_BETGAMAMON
-static const u16 sBetgamamonTeachableLearnset[] = {
+#if P_FAMILY_BETELGAMMAMON
+static const u16 sBetelgammamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
@@ -14204,7 +14204,7 @@ static const u16 sBetgamamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBioquetmonTeachableLearnset[] = {
+static const u16 sBioquetzalmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
@@ -14245,10 +14245,10 @@ static const u16 sBioquetmonTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BETGAMAMON
+#endif //P_FAMILY_BETELGAMMAMON
 
-#if P_FAMILY_BIOTHUNMON
-static const u16 sBiothunmonTeachableLearnset[] = {
+#if P_FAMILY_BIOTHUNDERBIRDMON
+static const u16 sBiothunderbirdmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_DEFENSE_CURL,
@@ -14322,7 +14322,7 @@ static const u16 sProbopassTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 #endif //P_GEN_4_CROSS_EVOS
-#endif //P_FAMILY_BIOTHUNMON
+#endif //P_FAMILY_BIOTHUNDERBIRDMON
 
 #if P_FAMILY_BIRDRAMON
 static const u16 sBirdramonTeachableLearnset[] = {
@@ -14364,7 +14364,7 @@ static const u16 sBirdramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBlgaogamonTeachableLearnset[] = {
+static const u16 sBlackgaogamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
@@ -14407,8 +14407,8 @@ static const u16 sBlgaogamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BIRDRAMON
 
-#if P_FAMILY_BLGARGOMON
-static const u16 sBlgargomonTeachableLearnset[] = {
+#if P_FAMILY_BLACKGARGOMON
+static const u16 sBlackgargomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
@@ -14463,10 +14463,10 @@ static const u16 sBlgargomonTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BLGARGOMON
+#endif //P_FAMILY_BLACKGARGOMON
 
-#if P_FAMILY_BLGARURMON
-static const u16 sBlgarurmonTeachableLearnset[] = {
+#if P_FAMILY_BLACKGARURUMON
+static const u16 sBlackgarurumonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
@@ -14511,10 +14511,10 @@ static const u16 sBlgarurmonTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BLGARURMON
+#endif //P_FAMILY_BLACKGARURUMON
 
-#if P_FAMILY_BLKGATOMON
-static const u16 sBlkgatomonTeachableLearnset[] = {
+#if P_FAMILY_BLACKGATOMON
+static const u16 sBlackgatomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
@@ -14549,7 +14549,7 @@ static const u16 sBlkgatomonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBlkgatomon_uverTeachableLearnset[] = {
+static const u16 sBlackgatomon_uverTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
@@ -14584,7 +14584,7 @@ static const u16 sBlkgatomon_uverTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBlgrowlmonTeachableLearnset[] = {
+static const u16 sBlackgrowlmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -14641,10 +14641,10 @@ static const u16 sBlgrowlmonTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_BLKGATOMON
+#endif //P_FAMILY_BLACKGATOMON
 
-#if P_FAMILY_SAWKUWAMON
-static const u16 sSawkuwamonTeachableLearnset[] = {
+#if P_FAMILY_BLADEKUWAGAMON
+static const u16 sBladekuwagamonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
@@ -14740,7 +14740,7 @@ static const u16 sBlimpmonTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SAWKUWAMON
+#endif //P_FAMILY_BLADEKUWAGAMON
 
 #if P_FAMILY_BOARMON
 static const u16 sBoarmonTeachableLearnset[] = {
@@ -14773,7 +14773,7 @@ static const u16 sBoarmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBomnanimonTeachableLearnset[] = {
+static const u16 sBombernanimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_DOUBLE_EDGE,
@@ -15153,8 +15153,8 @@ static const u16 sBurgermon_championTeachableLearnset[] = {
 };
 #endif //P_FAMILY_BURAIMON
 
-#if P_FAMILY_CHOUMON
-static const u16 sChoumonTeachableLearnset[] = {
+#if P_FAMILY_BUTTERFLYMON
+static const u16 sButterflymonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_DIVE,
@@ -15219,7 +15219,7 @@ static const u16 sCentarumonTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CHOUMON
+#endif //P_FAMILY_BUTTERFLYMON
 
 #if P_FAMILY_CHAMBLEMON
 static const u16 sChamblemonTeachableLearnset[] = {
@@ -15288,8 +15288,8 @@ static const u16 sChamelemonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_CHAMBLEMON
 
-#if P_FAMILY_CHRYSALMON
-static const u16 sChrysalmonTeachableLearnset[] = {
+#if P_FAMILY_CHRYSALIMON
+static const u16 sChrysalimonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_DEFENSE_CURL,
@@ -15355,7 +15355,7 @@ static const u16 sCitramonTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_CHRYSALMON
+#endif //P_FAMILY_CHRYSALIMON
 
 #if P_FAMILY_CLOCKMON
 static const u16 sClockmonTeachableLearnset[] = {
@@ -15720,8 +15720,8 @@ static const u16 sTrailmon_darkTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DARCMON
 
-#if P_FAMILY_DARLIZAMON
-static const u16 sDarlizamonTeachableLearnset[] = {
+#if P_FAMILY_DARKLIZARDMON
+static const u16 sDarklizardmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
@@ -15750,7 +15750,7 @@ static const u16 sDarlizamonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sDarmailmonTeachableLearnset[] = {
+static const u16 sDarkmaildramonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
@@ -15786,10 +15786,10 @@ static const u16 sDarmailmonTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DARLIZAMON
+#endif //P_FAMILY_DARKLIZARDMON
 
-#if P_FAMILY_DARKTYRMON
-static const u16 sDarktyrmonTeachableLearnset[] = {
+#if P_FAMILY_DARKTYRANNOMON
+static const u16 sDarktyrannomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -15847,10 +15847,10 @@ static const u16 sDarktyrmonTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DARKTYRMON
+#endif //P_FAMILY_DARKTYRANNOMON
 
-#if P_FAMILY_DARKTYRMON_X
-static const u16 sDarktyrmon_xTeachableLearnset[] = {
+#if P_FAMILY_DARKTYRANNOMON_X
+static const u16 sDarktyrannomon_xTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
@@ -15884,10 +15884,10 @@ static const u16 sDarktyrmon_xTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DARKTYRMON_X
+#endif //P_FAMILY_DARKTYRANNOMON_X
 
-#if P_FAMILY_DECKDRAMON
-static const u16 sDeckdramonTeachableLearnset[] = {
+#if P_FAMILY_DECKERDRAMON
+static const u16 sDeckerdramonTeachableLearnset[] = {
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
     MOVE_CALM_MIND,
@@ -15925,7 +15925,7 @@ static const u16 sDeckdramonTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DECKDRAMON
+#endif //P_FAMILY_DECKERDRAMON
 
 #if P_FAMILY_DELTAMON
 static const u16 sDeltamonTeachableLearnset[] = {
@@ -16122,8 +16122,8 @@ static const u16 sDevimonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DEVIDRAMON
 
-#if P_FAMILY_DEXDORUMON
-static const u16 sDexdorumonTeachableLearnset[] = {
+#if P_FAMILY_DEXDORUGAMON
+static const u16 sDexdorugamonTeachableLearnset[] = {
     MOVE_CALM_MIND,
     MOVE_DIG,
     MOVE_DOUBLE_EDGE,
@@ -16195,7 +16195,7 @@ static const u16 sDiatrymonTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DEXDORUMON
+#endif //P_FAMILY_DEXDORUGAMON
 
 #if P_FAMILY_DIGMON
 static const u16 sDigmonTeachableLearnset[] = {
@@ -16425,8 +16425,8 @@ static const u16 sDolphmonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_DOLPHMON
 
-#if P_FAMILY_DONSHOUMON
-static const u16 sDonshoumonTeachableLearnset[] = {
+#if P_FAMILY_DONSHOUTMON
+static const u16 sDonshoutmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
@@ -16484,7 +16484,7 @@ static const u16 sDonshoumonTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_DONSHOUMON
+#endif //P_FAMILY_DONSHOUTMON
 
 #if P_FAMILY_DORUGAMON
 static const u16 sDorugamonTeachableLearnset[] = {
@@ -16694,8 +16694,8 @@ static const u16 sDusknoirTeachableLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_DRIMOGEMON
 
-#if P_FAMILY_ELEPHANMON
-static const u16 sElephanmonTeachableLearnset[] = {
+#if P_FAMILY_ELEPHANTMON
+static const u16 sElephantmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BODY_SLAM,
@@ -16730,7 +16730,7 @@ static const u16 sElephanmonTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ELEPHANMON
+#endif //P_FAMILY_ELEPHANTMON
 
 #if P_FAMILY_EOSMON_CHAMPION
 #if P_GEN_4_CROSS_EVOS
@@ -17100,7 +17100,7 @@ static const u16 sFiramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFladramonTeachableLearnset[] = {
+static const u16 sFlamedramonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
@@ -17130,7 +17130,7 @@ static const u16 sFladramonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sFlawizamonTeachableLearnset[] = {
+static const u16 sFlamewizardmonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
@@ -17163,8 +17163,8 @@ static const u16 sFlawizamonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_FIRAMON
 
-#if P_FAMILY_FLARIZAMON
-static const u16 sFlarizamonTeachableLearnset[] = {
+#if P_FAMILY_FLARERIZAMON
+static const u16 sFlarerizamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
@@ -17198,7 +17198,7 @@ static const u16 sFlarizamonTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_FLARIZAMON
+#endif //P_FAMILY_FLARERIZAMON
 
 #if P_FAMILY_FLYBEEMON
 static const u16 sFlybeemonTeachableLearnset[] = {
@@ -17477,8 +17477,8 @@ static const u16 sGargomonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_GARGOMON
 
-#if P_FAMILY_GARGOYLMON
-static const u16 sGargoylmonTeachableLearnset[] = {
+#if P_FAMILY_GARGOYLEMON
+static const u16 sGargoylemonTeachableLearnset[] = {
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
@@ -17522,7 +17522,7 @@ static const u16 sGargoylmonTeachableLearnset[] = {
     MOVE_TOXIC,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_GARGOYLMON
+#endif //P_FAMILY_GARGOYLEMON
 
 #if P_FAMILY_GARURUMON
 static const u16 sGarurumonTeachableLearnset[] = {

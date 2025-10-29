@@ -1631,7 +1631,7 @@
     ],
     "TutorMoves": []
   },
-  "CHOROMON": {
+  "METALKOROMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4027,7 +4027,7 @@
     ],
     "TutorMoves": []
   },
-  "ICEBOTAMON": {
+  "SNOWBOTAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -5508,7 +5508,7 @@
     ],
     "TutorMoves": []
   },
-  "DEMMERAMON": {
+  "DEMIMERAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -9612,7 +9612,7 @@
     ],
     "TutorMoves": []
   },
-  "TORBALLMON": {
+  "TORIKARABALLMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -11600,7 +11600,7 @@
     ],
     "TutorMoves": []
   },
-  "ARMADILMON": {
+  "ARMADILLOMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -12434,7 +12434,7 @@
     ],
     "TutorMoves": []
   },
-  "BLKAGUMON": {
+  "BLACKAGUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -12540,7 +12540,7 @@
     ],
     "TutorMoves": []
   },
-  "BLKAGUMON_X": {
+  "BLACKAGUMON_X": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -12633,7 +12633,7 @@
     ],
     "TutorMoves": []
   },
-  "BLKGABUMON": {
+  "BLACKGABUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -12736,7 +12736,7 @@
     ],
     "TutorMoves": []
   },
-  "BLKGUILMON": {
+  "BLACKGUILMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -13185,7 +13185,7 @@
     ],
     "TutorMoves": []
   },
-  "SAMUAGUMON": {
+  "BUSHIAGUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -13532,7 +13532,7 @@
     ],
     "TutorMoves": []
   },
-  "TYUTYUMON": {
+  "CHUUCHUUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -13745,7 +13745,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "HAZYAGUMON": {
+  "CLEARAGUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -13765,7 +13765,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "COMMDRAMON": {
+  "COMMANDRAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -14299,7 +14299,7 @@
     ],
     "TutorMoves": []
   },
-  "DEMIDEVMON": {
+  "DEMIDEVIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -14831,7 +14831,7 @@
     ],
     "TutorMoves": []
   },
-  "DOTFALCMON": {
+  "DOTFALCOMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -15306,7 +15306,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "EBIBURGMON": {
+  "EBIBURGAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -20238,7 +20238,7 @@
     ],
     "TutorMoves": []
   },
-  "KODOKGUMON": {
+  "KODOKUGUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -20362,7 +20362,7 @@
     ],
     "TutorMoves": []
   },
-  "KOKABUIMON": {
+  "KOKABUTERIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -22231,7 +22231,7 @@
     ],
     "TutorMoves": []
   },
-  "KODEKACMON": {
+  "MINIDEKACHIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -22368,7 +22368,7 @@
     ],
     "TutorMoves": []
   },
-  "MODBETAMON": {
+  "MODOKIBETAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -23990,7 +23990,7 @@
     ],
     "TutorMoves": []
   },
-  "PAWNMON_BLACK": {
+  "PAWNCHESSMON_BLACK": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -24085,7 +24085,7 @@
     ],
     "TutorMoves": []
   },
-  "PAWNMON_WHITE": {
+  "PAWNCHESSMON_WHITE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -25711,7 +25711,7 @@
     ],
     "TutorMoves": []
   },
-  "BLKTOYAMON": {
+  "SHADOWTOYAGUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -26062,7 +26062,7 @@
     ],
     "TutorMoves": []
   },
-  "YUKIAGUMON": {
+  "SNOWAGUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -26160,7 +26160,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "YUKIAGUMON_06": {
+  "SNOWAGUMON_06": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -26461,7 +26461,7 @@
     ],
     "TutorMoves": []
   },
-  "SOUNBRDMON": {
+  "SOUNDBIRDMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -27074,7 +27074,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "SUNARZAMON": {
+  "SUNARIZAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -30375,7 +30375,7 @@
     ],
     "TutorMoves": []
   },
-  "ARESDRAMON": {
+  "ARRESTERDRAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -30468,7 +30468,7 @@
     ],
     "TutorMoves": []
   },
-  "ATAMADEMON": {
+  "ATAMADEKACHIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -30810,7 +30810,7 @@
     ],
     "TutorMoves": []
   },
-  "BABOONMON": {
+  "BABOONGAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -31025,7 +31025,7 @@
     ],
     "TutorMoves": []
   },
-  "BALISTAMON": {
+  "BALLISTAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -31594,7 +31594,7 @@
     ],
     "TutorMoves": []
   },
-  "BETGAMAMON": {
+  "BETELGAMMAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -31710,7 +31710,7 @@
     ],
     "TutorMoves": []
   },
-  "BIOQUETMON": {
+  "BIOQUETZALMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -31843,7 +31843,7 @@
     ],
     "TutorMoves": []
   },
-  "BIOSTEGMON": {
+  "BIOSTEGOMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -31907,7 +31907,7 @@
     ],
     "TutorMoves": []
   },
-  "BIOTHUNMON": {
+  "BIOTHUNDERBIRDMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -32130,7 +32130,7 @@
     ],
     "TutorMoves": []
   },
-  "BLGAOGAMON": {
+  "BLACKGAOGAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -32222,7 +32222,7 @@
     ],
     "TutorMoves": []
   },
-  "BLGARGOMON": {
+  "BLACKGARGOMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -32353,7 +32353,7 @@
     ],
     "TutorMoves": []
   },
-  "BLGARURMON": {
+  "BLACKGARURUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -32474,7 +32474,7 @@
     ],
     "TutorMoves": []
   },
-  "BLKGATOMON": {
+  "BLACKGATOMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -32582,7 +32582,7 @@
     ],
     "TutorMoves": []
   },
-  "BLKGATOMON_UVER": {
+  "BLACKGATOMON_UVER": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -32703,7 +32703,7 @@
     ],
     "TutorMoves": []
   },
-  "BLGROWLMON": {
+  "BLACKGROWLMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -32847,7 +32847,7 @@
     ],
     "TutorMoves": []
   },
-  "SAWKUWAMON": {
+  "BLADEKUWAGAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -33206,7 +33206,7 @@
     ],
     "TutorMoves": []
   },
-  "BOMNANIMON": {
+  "BOMBERNANIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -34082,7 +34082,7 @@
     ],
     "TutorMoves": []
   },
-  "CHOUMON": {
+  "BUTTERFLYMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -34537,7 +34537,7 @@
     ],
     "TutorMoves": []
   },
-  "CHRYSALMON": {
+  "CHRYSALIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -35787,7 +35787,7 @@
     ],
     "TutorMoves": []
   },
-  "DARLIZAMON": {
+  "DARKLIZARDMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -35885,7 +35885,7 @@
     ],
     "TutorMoves": []
   },
-  "DARMAILMON": {
+  "DARKMAILDRAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -36016,7 +36016,7 @@
       "MOVE_DRACO_METEOR"
     ]
   },
-  "DARKTYRMON": {
+  "DARKTYRANNOMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -36143,7 +36143,7 @@
     ],
     "TutorMoves": []
   },
-  "DARKTYRMON_X": {
+  "DARKTYRANNOMON_X": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -36245,7 +36245,7 @@
     ],
     "TutorMoves": []
   },
-  "DECKDRAMON": {
+  "DECKERDRAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -36908,7 +36908,7 @@
     ],
     "TutorMoves": []
   },
-  "DEXDORUMON": {
+  "DEXDORUGAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -37805,7 +37805,7 @@
     ],
     "TutorMoves": []
   },
-  "DONSHOUMON": {
+  "DONSHOUTMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -38432,7 +38432,7 @@
     ],
     "TutorMoves": []
   },
-  "ELEPHANMON": {
+  "ELEPHANTMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -39422,7 +39422,7 @@
     ],
     "TutorMoves": []
   },
-  "FLADRAMON": {
+  "FLAMEDRAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -39519,7 +39519,7 @@
     ],
     "TutorMoves": []
   },
-  "FLAWIZAMON": {
+  "FLAMEWIZARDMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -39618,7 +39618,7 @@
     ],
     "TutorMoves": []
   },
-  "FLARIZAMON": {
+  "FLARERIZAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -40501,7 +40501,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "GARGOYLMON": {
+  "GARGOYLEMON": {
     "LevelMoves": [
       {
         "Level": 1,

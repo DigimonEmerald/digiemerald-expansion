@@ -18,12 +18,12 @@ SootopolisCity_House1_EventScript_ReceivedBrickBreak::
 	release
 	end
 
-SootopolisCity_House1_EventScript_Donshoumon::
+SootopolisCity_House1_EventScript_Donshoutmon::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_DONSHOUMON, CRY_MODE_NORMAL
-	msgbox SootopolisCity_House1_Text_Donshoumon, MSGBOX_DEFAULT
+	playmoncry SPECIES_DONSHOUTMON, CRY_MODE_NORMAL
+	msgbox SootopolisCity_House1_Text_Donshoutmon, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
@@ -38,6 +38,6 @@ SootopolisCity_House1_Text_ExplainBrickBreak:
 	.string "TM31 contains BRICK BREAK! It's a move\n"
 	.string "so horrible that I can't describe it.$"
 
-SootopolisCity_House1_Text_Donshoumon:
-	.string "DONSHOUMON: Puu puhyaah.$"
+SootopolisCity_House1_Text_Donshoutmon:
+	.string "DONSHOUTMON: Puu puhyaah.$"
 

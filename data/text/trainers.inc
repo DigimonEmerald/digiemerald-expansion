@@ -424,7 +424,7 @@ Route104_Text_DarianDefeat:
 	.string "What the…$"
 
 Route104_Text_DarianPostBattle:
-	.string "Hey, HAZYAGUMON, you sure don't live up\n"
+	.string "Hey, CLEARAGUMON, you sure don't live up\n"
 	.string "to your name, do you?$"
 
 Route105_Text_FosterIntro:
@@ -1639,7 +1639,7 @@ Route113_Text_DillonPostBattle:
 Route113_Text_MadelineIntro:
 	.string "I use this parasol to ward off this\n"
 	.string "filthy, yucky volcanic ash from\l"
-	.string "my dear CHRYSALMON.$"
+	.string "my dear CHRYSALIMON.$"
 
 Route113_Text_MadelineDefeat:
 	.string "Huff, huff…\n"

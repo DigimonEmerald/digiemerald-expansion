@@ -125,9 +125,9 @@ static const struct FormChange sTsumemonFormChangeTable[] = {
 
 #if P_FAMILY_TSUNOMON
 #if P_GEN_2_CROSS_EVOS
-static const struct FormChange sKodekacmonFormChangeTable[] = {
+static const struct FormChange sMinidekachimonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_KODEKACMON_MEGA, ITEM_KODEKACMONITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MINIDEKACHIMON_MEGA, ITEM_MINIDEKACHIMONITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
@@ -164,23 +164,23 @@ static const struct FormChange sMonodramonFormChangeTable[] = {
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BURGERMON
 
-#if P_FAMILY_TYUTYUMON
-static const struct FormChange sTyutyumonFormChangeTable[] = {
+#if P_FAMILY_CHUUCHUUMON
+static const struct FormChange sChuuchuumonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_TYUTYUMON_MEGA, ITEM_TYUTYUMONITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_CHUUCHUUMON_MEGA, ITEM_CHUUCHUUMONITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_TYUTYUMON
+#endif //P_FAMILY_CHUUCHUUMON
 
-#if P_FAMILY_HAZYAGUMON
-static const struct FormChange sCommdramonFormChangeTable[] = {
+#if P_FAMILY_CLEARAGUMON
+static const struct FormChange sCommandramonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_COMMDRAMON_MEGA, ITEM_COMMDRAMONITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_COMMANDRAMON_MEGA, ITEM_COMMANDRAMONITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_HAZYAGUMON
+#endif //P_FAMILY_CLEARAGUMON
 
 #if P_FAMILY_CORONAMON
 static const struct FormChange sCoronamonFormChangeTable[] = {
@@ -264,14 +264,14 @@ static const struct FormChange sSpadamonFormChangeTable[] = {
 };
 #endif //P_FAMILY_SOLARMON
 
-#if P_FAMILY_SUNARZAMON
+#if P_FAMILY_SUNARIZAMON
 static const struct FormChange sSyakomonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_SYAKOMON_MEGA, ITEM_SCEPTILITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_SUNARZAMON
+#endif //P_FAMILY_SUNARIZAMON
 
 #if P_FAMILY_SYAKOMON_X
 static const struct FormChange sTentomonFormChangeTable[] = {
@@ -309,77 +309,77 @@ static const struct FormChange sGalladeFormChangeTable[] = {
 #endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_APEMON
 
-#if P_FAMILY_BLGARGOMON
-static const struct FormChange sBlgargomonFormChangeTable[] = {
+#if P_FAMILY_BLACKGARGOMON
+static const struct FormChange sBlackgargomonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BLGARGOMON_MEGA, ITEM_SABLENITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BLACKGARGOMON_MEGA, ITEM_SABLENITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_BLGARGOMON
+#endif //P_FAMILY_BLACKGARGOMON
 
-#if P_FAMILY_BLGARURMON
-static const struct FormChange sBlgarurmonFormChangeTable[] = {
+#if P_FAMILY_BLACKGARURUMON
+static const struct FormChange sBlackgarurumonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BLGARURMON_MEGA, ITEM_MAWILITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BLACKGARURUMON_MEGA, ITEM_MAWILITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_BLGARURMON
+#endif //P_FAMILY_BLACKGARURUMON
 
-#if P_FAMILY_BLKGATOMON
-static const struct FormChange sBlgrowlmonFormChangeTable[] = {
+#if P_FAMILY_BLACKGATOMON
+static const struct FormChange sBlackgrowlmonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BLGROWLMON_MEGA, ITEM_BLGROWLMONITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BLACKGROWLMON_MEGA, ITEM_BLACKGROWLMONITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_BLKGATOMON
+#endif //P_FAMILY_BLACKGATOMON
 
-#if P_FAMILY_SAWKUWAMON
+#if P_FAMILY_BLADEKUWAGAMON
 static const struct FormChange sBlimpmonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BLIMPMON_MEGA, ITEM_BLIMPMONITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_SAWKUWAMON
+#endif //P_FAMILY_BLADEKUWAGAMON
 
 #if P_FAMILY_BOARMON
-static const struct FormChange sBomnanimonFormChangeTable[] = {
+static const struct FormChange sBombernanimonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BOMNANIMON_MEGA, ITEM_MANECTITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_BOMBERNANIMON_MEGA, ITEM_MANECTITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_BOARMON
 
-#if P_FAMILY_CHOUMON
+#if P_FAMILY_BUTTERFLYMON
 static const struct FormChange sCentarumonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_CENTARUMON_MEGA, ITEM_CENTARUMONNITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_CHOUMON
+#endif //P_FAMILY_BUTTERFLYMON
 
-#if P_FAMILY_CHRYSALMON
+#if P_FAMILY_CHRYSALIMON
 static const struct FormChange sCitramonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
     {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_CITRAMON_MEGA, ITEM_CITRAMONITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_CHRYSALMON
+#endif //P_FAMILY_CHRYSALIMON
 
-#if P_FAMILY_DARLIZAMON
-static const struct FormChange sDarmailmonFormChangeTable[] = {
+#if P_FAMILY_DARKLIZARDMON
+static const struct FormChange sDarkmaildramonFormChangeTable[] = {
 #if P_MEGA_EVOLUTIONS
-    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_DARMAILMON_MEGA, ITEM_DARMAILMONNITE},
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_DARKMAILDRAMON_MEGA, ITEM_DARKMAILDRAMONNITE},
 #endif
     {FORM_CHANGE_TERMINATOR},
 };
-#endif //P_FAMILY_DARLIZAMON
+#endif //P_FAMILY_DARKLIZARDMON
 
 #if P_FAMILY_DORUGAMON
 static const struct FormChange sDorulumonFormChangeTable[] = {

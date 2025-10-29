@@ -1270,7 +1270,7 @@
     ],
     "TutorMoves": []
   },
-  "CHOROMON": {
+  "METALKOROMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -2994,7 +2994,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "ICEBOTAMON": {
+  "SNOWBOTAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -4033,7 +4033,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "DEMMERAMON": {
+  "DEMIMERAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -6999,7 +6999,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "TORBALLMON": {
+  "TORIKARABALLMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -8371,7 +8371,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "ARMADILMON": {
+  "ARMADILLOMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -8967,7 +8967,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "BLKAGUMON": {
+  "BLACKAGUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -9048,7 +9048,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "BLKAGUMON_X": {
+  "BLACKAGUMON_X": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -9118,7 +9118,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "BLKGABUMON": {
+  "BLACKGABUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -9189,7 +9189,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "BLKGUILMON": {
+  "BLACKGUILMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -9502,7 +9502,7 @@
     ],
     "TutorMoves": []
   },
-  "SAMUAGUMON": {
+  "BUSHIAGUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -9772,7 +9772,7 @@
       "MOVE_FLAMETHROWER"
     ]
   },
-  "TYUTYUMON": {
+  "CHUUCHUUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -9912,7 +9912,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "HAZYAGUMON": {
+  "CLEARAGUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -9932,7 +9932,7 @@
     "EggMoves": [],
     "TutorMoves": []
   },
-  "COMMDRAMON": {
+  "COMMANDRAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -10346,7 +10346,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "DEMIDEVMON": {
+  "DEMIDEVIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -10731,7 +10731,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "DOTFALCMON": {
+  "DOTFALCOMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -11050,7 +11050,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "EBIBURGMON": {
+  "EBIBURGAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -14555,7 +14555,7 @@
     ],
     "TutorMoves": []
   },
-  "KODOKGUMON": {
+  "KODOKUGUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -14645,7 +14645,7 @@
     ],
     "TutorMoves": []
   },
-  "KOKABUIMON": {
+  "KOKABUTERIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -15893,7 +15893,7 @@
     ],
     "TutorMoves": []
   },
-  "KODEKACMON": {
+  "MINIDEKACHIMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -15969,7 +15969,7 @@
     ],
     "TutorMoves": []
   },
-  "MODBETAMON": {
+  "MODOKIBETAMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -17074,7 +17074,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "PAWNMON_BLACK": {
+  "PAWNCHESSMON_BLACK": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -17145,7 +17145,7 @@
       "MOVE_ICE_BEAM"
     ]
   },
-  "PAWNMON_WHITE": {
+  "PAWNCHESSMON_WHITE": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -18252,7 +18252,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "BLKTOYAMON": {
+  "SHADOWTOYAGUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -18516,7 +18516,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "YUKIAGUMON": {
+  "SNOWAGUMON": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -18593,7 +18593,7 @@
       "MOVE_THUNDERBOLT"
     ]
   },
-  "YUKIAGUMON_06": {
+  "SNOWAGUMON_06": {
     "LevelMoves": [
       {
         "Level": 1,
@@ -18825,7 +18825,7 @@
     ],
     "TutorMoves": []
   },
-  "SOUNBRDMON": {
+  "SOUNDBIRDMON": {
     "LevelMoves": [
       {
         "Level": 1,

@@ -112,7 +112,7 @@ static const struct MenuAction MultichoiceList_Mechadoll1_Q1[] =
 
 static const struct MenuAction MultichoiceList_Mechadoll1_Q2[] =
 {
-    {COMPOUND_STRING("BIOSTEGMON")},
+    {COMPOUND_STRING("BIOSTEGOMON")},
     {COMPOUND_STRING("ZUBAMON")},
     {COMPOUND_STRING("ANGEMON")},
 };
@@ -120,7 +120,7 @@ static const struct MenuAction MultichoiceList_Mechadoll1_Q2[] =
 static const struct MenuAction MultichoiceList_Mechadoll1_Q3[] =
 {
     {COMPOUND_STRING("ZENIMON")},
-    {COMPOUND_STRING("ICEBOTAMON")},
+    {COMPOUND_STRING("SNOWBOTAMON")},
     {COMPOUND_STRING("BAKEMON")},
 };
 
@@ -134,15 +134,15 @@ static const struct MenuAction MultichoiceList_Mechadoll2_Q1[] =
 static const struct MenuAction MultichoiceList_Mechadoll2_Q2[] =
 {
     {COMPOUND_STRING("TINKERMON")},
-    {COMPOUND_STRING("ARESDRAMON")},
+    {COMPOUND_STRING("ARRESTERDRAMON")},
     {COMPOUND_STRING("TOYAGUMON")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll2_Q3[] =
 {
     {COMPOUND_STRING("TINKERMON")},
-    {COMPOUND_STRING("ICEBOTAMON")},
-    {COMPOUND_STRING("CHOUMON")},
+    {COMPOUND_STRING("SNOWBOTAMON")},
+    {COMPOUND_STRING("BUTTERFLYMON")},
 };
 
 static const struct MenuAction MultichoiceList_Mechadoll3_Q1[] =
@@ -259,7 +259,7 @@ static const struct MenuAction MultichoiceList_UnusedAshVendor[] =
 
 static const struct MenuAction MultichoiceList_GameCornerDolls[] =
 {
-    {COMPOUND_STRING("SUNARZAMON DOLL 1,000 COINS")},
+    {COMPOUND_STRING("SUNARIZAMON DOLL 1,000 COINS")},
     {COMPOUND_STRING("SYAKOMON_X DOLL 1,000 COINS")},
     {COMPOUND_STRING("TERRIERMON DOLL   1,000 COINS")},
     {gText_Exit},

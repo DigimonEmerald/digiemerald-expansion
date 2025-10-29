@@ -400,13 +400,13 @@ Route110_EventScript_PlayBrendanMusic::
 Route110_EventScript_MayBattle::
 	msgbox Route110_Text_MayLetsBattle, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, Route110_EventScript_MayBattleSunarzamon
+	case 0, Route110_EventScript_MayBattleSunarizamon
 	case 1, Route110_EventScript_MayBattleSyakomon_x
 	case 2, Route110_EventScript_MayBattleTerriermon
 	end
 
-Route110_EventScript_MayBattleSunarzamon::
-	trainerbattle_no_intro TRAINER_MAY_ROUTE_110_SUNARZAMON, Route110_Text_MayDefeated
+Route110_EventScript_MayBattleSunarizamon::
+	trainerbattle_no_intro TRAINER_MAY_ROUTE_110_SUNARIZAMON, Route110_Text_MayDefeated
 	goto Route110_EventScript_MayDefeated
 	end
 
@@ -430,13 +430,13 @@ Route110_EventScript_MayDefeated::
 Route110_EventScript_BrendanBattle::
 	msgbox Route110_Text_BrendanLetsBattle, MSGBOX_DEFAULT
 	switch VAR_STARTER_MON
-	case 0, Route110_EventScript_BrendanBattleSunarzamon
+	case 0, Route110_EventScript_BrendanBattleSunarizamon
 	case 1, Route110_EventScript_BrendanBattleSyakomon_x
 	case 2, Route110_EventScript_BrendanBattleTerriermon
 	end
 
-Route110_EventScript_BrendanBattleSunarzamon::
-	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_SUNARZAMON, Route110_Text_BrendanDefeated
+Route110_EventScript_BrendanBattleSunarizamon::
+	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_SUNARIZAMON, Route110_Text_BrendanDefeated
 	goto Route110_EventScript_BrendanDefeated
 	end
 

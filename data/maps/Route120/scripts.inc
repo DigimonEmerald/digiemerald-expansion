@@ -1,4 +1,4 @@
-@ LOCALID_BRIDGE_DONSHOUMON_SHADOW is a second object which is identical to LOCALID_BRIDGE_DONSHOUMON but has a reflection palette tag for the bridge shadow
+@ LOCALID_BRIDGE_DONSHOUTMON_SHADOW is a second object which is identical to LOCALID_BRIDGE_DONSHOUTMON but has a reflection palette tag for the bridge shadow
 Route120_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, Route120_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, Route120_OnTransition
@@ -6,26 +6,26 @@ Route120_MapScripts::
 	.byte 0
 
 Route120_OnResume:
-	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, Route120_EventScript_RemoveDonshoumonObject
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, Route120_EventScript_RemoveDonshoutmonObject
 	end
 
-Route120_EventScript_RemoveDonshoumonObject::
-	call_if_eq VAR_0x8009, 0, Route120_EventScript_RemoveBridgeDonshoumon
-	call_if_eq VAR_0x8009, 1, Route120_EventScript_RemoveDonshoumon
-	call_if_eq VAR_0x8009, 2, Route120_EventScript_RemoveDonshoumon
-	call_if_eq VAR_0x8009, 3, Route120_EventScript_RemoveDonshoumon
-	call_if_eq VAR_0x8009, 4, Route120_EventScript_RemoveDonshoumon
-	call_if_eq VAR_0x8009, 5, Route120_EventScript_RemoveDonshoumon
+Route120_EventScript_RemoveDonshoutmonObject::
+	call_if_eq VAR_0x8009, 0, Route120_EventScript_RemoveBridgeDonshoutmon
+	call_if_eq VAR_0x8009, 1, Route120_EventScript_RemoveDonshoutmon
+	call_if_eq VAR_0x8009, 2, Route120_EventScript_RemoveDonshoutmon
+	call_if_eq VAR_0x8009, 3, Route120_EventScript_RemoveDonshoutmon
+	call_if_eq VAR_0x8009, 4, Route120_EventScript_RemoveDonshoutmon
+	call_if_eq VAR_0x8009, 5, Route120_EventScript_RemoveDonshoutmon
 	return
 
-Route120_EventScript_RemoveBridgeDonshoumon::
+Route120_EventScript_RemoveBridgeDonshoutmon::
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
-	removeobject LOCALID_BRIDGE_DONSHOUMON
-	removeobject LOCALID_BRIDGE_DONSHOUMON_SHADOW
+	removeobject LOCALID_BRIDGE_DONSHOUTMON
+	removeobject LOCALID_BRIDGE_DONSHOUTMON_SHADOW
 	return
 
-Route120_EventScript_RemoveDonshoumon::
+Route120_EventScript_RemoveDonshoutmon::
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
 	removeobject VAR_LAST_TALKED
@@ -34,7 +34,7 @@ Route120_EventScript_RemoveDonshoumon::
 Route120_OnLoad:
 	call_if_unset FLAG_REGI_DOORS_OPENED, Route120_EventScript_CloseAncientTomb
 	call_if_set FLAG_RECEIVED_DEVON_SCOPE, Route120_EventScript_SetBridgeClearMetatiles
-	call_if_unset FLAG_RECEIVED_DEVON_SCOPE, Route120_EventScript_SetBridgeDonshoumonMovement
+	call_if_unset FLAG_RECEIVED_DEVON_SCOPE, Route120_EventScript_SetBridgeDonshoutmonMovement
 	end
 
 Route120_EventScript_CloseAncientTomb::
@@ -49,8 +49,8 @@ Route120_EventScript_SetBridgeClearMetatiles::
 	setmetatile 13, 17, METATILE_General_ReflectiveWater, FALSE
 	return
 
-Route120_EventScript_SetBridgeDonshoumonMovement::
-	setobjectmovementtype LOCALID_BRIDGE_DONSHOUMON_SHADOW, MOVEMENT_TYPE_FACE_RIGHT
+Route120_EventScript_SetBridgeDonshoutmonMovement::
+	setobjectmovementtype LOCALID_BRIDGE_DONSHOUTMON_SHADOW, MOVEMENT_TYPE_FACE_RIGHT
 	return
 
 Route120_OnTransition:
@@ -157,7 +157,7 @@ Route120_EventScript_Steven::
 	goto_if_set FLAG_NOT_READY_FOR_BATTLE_ROUTE_120, Route120_EventScript_StevenAskReadyForBattle
 	msgbox Route120_Text_StevenGreeting, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route120_EventScript_StevenNotReady
-	goto Route120_EventScript_StevenBattleDonshoumon
+	goto Route120_EventScript_StevenBattleDonshoutmon
 	end
 
 Route120_EventScript_StevenNotReady::
@@ -169,43 +169,43 @@ Route120_EventScript_StevenNotReady::
 Route120_EventScript_StevenAskReadyForBattle::
 	msgbox Route120_Text_StevenReadyForBattle, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route120_EventScript_StevenNotReady
-	goto Route120_EventScript_StevenBattleDonshoumon
+	goto Route120_EventScript_StevenBattleDonshoutmon
 	end
 
-Route120_EventScript_StevenBattleDonshoumon::
+Route120_EventScript_StevenBattleDonshoutmon::
 	msgbox Route120_Text_StevenShowMeYourPower, MSGBOX_DEFAULT
 	closemessage
-	call_if_eq VAR_FACING, DIR_NORTH, Route120_EventScript_PlayerApproachDonshoumonNorth
-	call_if_eq VAR_FACING, DIR_WEST, Route120_EventScript_PlayerApproachDonshoumonWest
+	call_if_eq VAR_FACING, DIR_NORTH, Route120_EventScript_PlayerApproachDonshoutmonNorth
+	call_if_eq VAR_FACING, DIR_WEST, Route120_EventScript_PlayerApproachDonshoutmonWest
 	applymovement LOCALID_ROUTE120_STEVEN, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	delay 20
 	msgbox Route120_Text_StevenUsedDevonScope, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_BRIDGE_DONSHOUMON, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_BRIDGE_DONSHOUTMON, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	applymovement LOCALID_BRIDGE_DONSHOUMON, Movement_DonshoumonAppears
+	applymovement LOCALID_BRIDGE_DONSHOUTMON, Movement_DonshoutmonAppears
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_DONSHOUMON, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_DONSHOUTMON, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_DONSHOUMON, 30
+	setwildbattle SPECIES_DONSHOUTMON, 30
 	setvar VAR_0x8009, 0
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	dowildbattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route120_EventScript_RemoveBridgeDonshoumonPostBattle
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route120_EventScript_RemoveBridgeDonshoumonPostBattle
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route120_EventScript_RemoveBridgeDonshoumonPostBattle
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route120_EventScript_RemoveBridgeDonshoutmonPostBattle
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route120_EventScript_RemoveBridgeDonshoutmonPostBattle
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route120_EventScript_RemoveBridgeDonshoutmonPostBattle
 	goto Route120_EventScript_StevenGiveDeconScope
 	end
 
-Route120_EventScript_RemoveBridgeDonshoumonPostBattle::
+Route120_EventScript_RemoveBridgeDonshoutmonPostBattle::
 	fadescreenswapbuffers FADE_TO_BLACK
-	removeobject LOCALID_BRIDGE_DONSHOUMON
-	removeobject LOCALID_BRIDGE_DONSHOUMON_SHADOW
+	removeobject LOCALID_BRIDGE_DONSHOUTMON
+	removeobject LOCALID_BRIDGE_DONSHOUTMON_SHADOW
 	fadescreenswapbuffers FADE_FROM_BLACK
 	goto Route120_EventScript_StevenGiveDeconScope
 	end
@@ -235,23 +235,23 @@ Route120_EventScript_StevenGiveDeconScope::
 	release
 	end
 
-Route120_EventScript_PlayerApproachDonshoumonNorth::
+Route120_EventScript_PlayerApproachDonshoutmonNorth::
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	return
 
-Route120_EventScript_PlayerApproachDonshoumonWest::
-	applymovement LOCALID_PLAYER, Route120_Movement_ApproachDonshoumonWest
+Route120_EventScript_PlayerApproachDonshoutmonWest::
+	applymovement LOCALID_PLAYER, Route120_Movement_ApproachDonshoutmonWest
 	waitmovement 0
 	return
 
-Route120_Movement_ApproachDonshoumonWest:
+Route120_Movement_ApproachDonshoutmonWest:
 	walk_down
 	walk_left
 	step_end
 
-Route120_EventScript_BridgeDonshoumon::
-	msgbox Donshoumon_Text_SomethingUnseeable, MSGBOX_NPC
+Route120_EventScript_BridgeDonshoutmon::
+	msgbox Donshoutmon_Text_SomethingUnseeable, MSGBOX_NPC
 	end
 
 Route120_EventScript_RouteSignFortree::
@@ -407,14 +407,14 @@ Route120_Text_StevenGoodbye:
 	.string "I think you're doing great.\p"
 	.string "Well, let's meet again sofalcomonhere.$"
 
-Donshoumon_Text_SomethingUnseeable:
+Donshoutmon_Text_SomethingUnseeable:
 	.string "Something unseeable is in the way.$"
 
-Donshoumon_Text_WantToUseDevonScope:
+Donshoutmon_Text_WantToUseDevonScope:
 	.string "Something unseeable is in the way.\p"
 	.string "Want to use the DEVON SCOPE?$"
 
-Donshoumon_Text_UseDevonScopeMonAttacked:
+Donshoutmon_Text_UseDevonScopeMonAttacked:
 	.string "{PLAYER} used the DEVON SCOPE.\p"
 	.string "An invisible POKéMON became completely\n"
 	.string "visible!\p"

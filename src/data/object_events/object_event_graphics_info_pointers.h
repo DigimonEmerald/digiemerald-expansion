@@ -151,16 +151,16 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CalumonDoll
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PuyomonDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CrabmonDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SangomonDoll;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SunarzamonDoll;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SunarizamonDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Syakomon_xDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TerriermonDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DrimogemonDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ExveemonDoll;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DexdorumonDoll;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DonshoumonDoll;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BiostegmonDoll;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DexdorugamonDoll;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DonshoutmonDoll;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BiostegomonDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BirdramonDoll;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DarlizamonDoll;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DarklizardmonDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BuraimonDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ZubamonDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AirdramonDoll;
@@ -182,7 +182,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigChibomon
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigCurimonDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigChamblemonDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigGargomonDoll;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigGargoylmonDoll;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigGargoylemonDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BigGarurumonDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Garurumon_x;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gatomon;
@@ -198,10 +198,10 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gatomon_xFr
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GekomonFront;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Fossil;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gargomon;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gargoylmon;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gargoylemon;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Garurumon;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Birdramon;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Donshoumon;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Donshoutmon;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Gatomon_xAsleep;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GekomonAsleep;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Geogreymon;
@@ -209,9 +209,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Toyagumon;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Petitmon;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Jellymon;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Angemon;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DonshoumonBridgeShadow;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DonshoutmonBridgeShadow;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TuberMSwimming;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Biostegmon;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Biostegomon;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mom;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LinkBrendan;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LinkMay;
@@ -404,16 +404,16 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PUYOMON_DOLL] =            &gObjectEventGraphicsInfo_PuyomonDoll,
     [OBJ_EVENT_GFX_CRABMON_DOLL] =               &gObjectEventGraphicsInfo_CrabmonDoll,
     [OBJ_EVENT_GFX_SANGOMON_DOLL] =            &gObjectEventGraphicsInfo_SangomonDoll,
-    [OBJ_EVENT_GFX_SUNARZAMON_DOLL] =             &gObjectEventGraphicsInfo_SunarzamonDoll,
+    [OBJ_EVENT_GFX_SUNARIZAMON_DOLL] =             &gObjectEventGraphicsInfo_SunarizamonDoll,
     [OBJ_EVENT_GFX_SYAKOMON_X_DOLL] =             &gObjectEventGraphicsInfo_Syakomon_xDoll,
     [OBJ_EVENT_GFX_TERRIERMON_DOLL] =              &gObjectEventGraphicsInfo_TerriermonDoll,
     [OBJ_EVENT_GFX_DRIMOGEMON_DOLL] =             &gObjectEventGraphicsInfo_DrimogemonDoll,
     [OBJ_EVENT_GFX_EXVEEMON_DOLL] =              &gObjectEventGraphicsInfo_ExveemonDoll,
-    [OBJ_EVENT_GFX_DEXDORUMON_DOLL] =              &gObjectEventGraphicsInfo_DexdorumonDoll,
-    [OBJ_EVENT_GFX_DONSHOUMON_DOLL] =             &gObjectEventGraphicsInfo_DonshoumonDoll,
-    [OBJ_EVENT_GFX_BIOSTEGMON_DOLL] =             &gObjectEventGraphicsInfo_BiostegmonDoll,
+    [OBJ_EVENT_GFX_DEXDORUGAMON_DOLL] =              &gObjectEventGraphicsInfo_DexdorugamonDoll,
+    [OBJ_EVENT_GFX_DONSHOUTMON_DOLL] =             &gObjectEventGraphicsInfo_DonshoutmonDoll,
+    [OBJ_EVENT_GFX_BIOSTEGOMON_DOLL] =             &gObjectEventGraphicsInfo_BiostegomonDoll,
     [OBJ_EVENT_GFX_BIRDRAMON_DOLL] =              &gObjectEventGraphicsInfo_BirdramonDoll,
-    [OBJ_EVENT_GFX_DARLIZAMON_DOLL] =              &gObjectEventGraphicsInfo_DarlizamonDoll,
+    [OBJ_EVENT_GFX_DARKLIZARDMON_DOLL] =              &gObjectEventGraphicsInfo_DarklizardmonDoll,
     [OBJ_EVENT_GFX_BURAIMON_DOLL] =              &gObjectEventGraphicsInfo_BuraimonDoll,
     [OBJ_EVENT_GFX_ZUBAMON_DOLL] =               &gObjectEventGraphicsInfo_ZubamonDoll,
     [OBJ_EVENT_GFX_AIRDRAMON_DOLL] =              &gObjectEventGraphicsInfo_AirdramonDoll,
@@ -435,7 +435,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_BIG_CURIMON_DOLL] =       &gObjectEventGraphicsInfo_BigCurimonDoll,
     [OBJ_EVENT_GFX_BIG_CHAMBLEMON_DOLL] =         &gObjectEventGraphicsInfo_BigChamblemonDoll,
     [OBJ_EVENT_GFX_BIG_GARGOMON_DOLL] =        &gObjectEventGraphicsInfo_BigGargomonDoll,
-    [OBJ_EVENT_GFX_BIG_GARGOYLMON_DOLL] =          &gObjectEventGraphicsInfo_BigGargoylmonDoll,
+    [OBJ_EVENT_GFX_BIG_GARGOYLEMON_DOLL] =          &gObjectEventGraphicsInfo_BigGargoylemonDoll,
     [OBJ_EVENT_GFX_BIG_GARURUMON_DOLL] =       &gObjectEventGraphicsInfo_BigGarurumonDoll,
     [OBJ_EVENT_GFX_GARURUMON_X] =                   &gObjectEventGraphicsInfo_Garurumon_x,
     [OBJ_EVENT_GFX_GATOMON] =                   &gObjectEventGraphicsInfo_Gatomon,
@@ -451,10 +451,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_GEKOMON_FRONT] =            &gObjectEventGraphicsInfo_GekomonFront,
     [OBJ_EVENT_GFX_FOSSIL] =                   &gObjectEventGraphicsInfo_Fossil,
     [OBJ_EVENT_GFX_GARGOMON] =                 &gObjectEventGraphicsInfo_Gargomon,
-    [OBJ_EVENT_GFX_GARGOYLMON] =                   &gObjectEventGraphicsInfo_Gargoylmon,
+    [OBJ_EVENT_GFX_GARGOYLEMON] =                   &gObjectEventGraphicsInfo_Gargoylemon,
     [OBJ_EVENT_GFX_GARURUMON] =                &gObjectEventGraphicsInfo_Garurumon,
     [OBJ_EVENT_GFX_BIRDRAMON] =                   &gObjectEventGraphicsInfo_Birdramon,
-    [OBJ_EVENT_GFX_DONSHOUMON] =                  &gObjectEventGraphicsInfo_Donshoumon,
+    [OBJ_EVENT_GFX_DONSHOUTMON] =                  &gObjectEventGraphicsInfo_Donshoutmon,
     [OBJ_EVENT_GFX_GATOMON_X_ASLEEP] =            &gObjectEventGraphicsInfo_Gatomon_xAsleep,
     [OBJ_EVENT_GFX_GEKOMON_ASLEEP] =           &gObjectEventGraphicsInfo_GekomonAsleep,
     [OBJ_EVENT_GFX_GEOGREYMON] =                 &gObjectEventGraphicsInfo_Geogreymon,
@@ -462,9 +462,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PETITMON] =                  &gObjectEventGraphicsInfo_Petitmon,
     [OBJ_EVENT_GFX_JELLYMON] =                &gObjectEventGraphicsInfo_Jellymon,
     [OBJ_EVENT_GFX_ANGEMON] =                  &gObjectEventGraphicsInfo_Angemon,
-    [OBJ_EVENT_GFX_DONSHOUMON_BRIDGE_SHADOW] =    &gObjectEventGraphicsInfo_DonshoumonBridgeShadow,
+    [OBJ_EVENT_GFX_DONSHOUTMON_BRIDGE_SHADOW] =    &gObjectEventGraphicsInfo_DonshoutmonBridgeShadow,
     [OBJ_EVENT_GFX_TUBER_M_SWIMMING] =         &gObjectEventGraphicsInfo_TuberMSwimming,
-    [OBJ_EVENT_GFX_BIOSTEGMON] =                  &gObjectEventGraphicsInfo_Biostegmon,
+    [OBJ_EVENT_GFX_BIOSTEGOMON] =                  &gObjectEventGraphicsInfo_Biostegomon,
     [OBJ_EVENT_GFX_MOM] =                      &gObjectEventGraphicsInfo_Mom,
     [OBJ_EVENT_GFX_LINK_BRENDAN] =             &gObjectEventGraphicsInfo_LinkBrendan,
     [OBJ_EVENT_GFX_LINK_MAY] =                 &gObjectEventGraphicsInfo_LinkMay,
