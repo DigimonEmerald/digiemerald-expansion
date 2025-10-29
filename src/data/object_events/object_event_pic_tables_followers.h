@@ -3485,12 +3485,12 @@ static const struct SpriteFrameImage sPicTable_WizardmonF[] = {
     overworld_ascending_frames(gObjectEventPic_WizardmonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_Lumineon[] = {
-    overworld_ascending_frames(gObjectEventPic_Lumineon, 4, 4),
+static const struct SpriteFrameImage sPicTable_Woodmon[] = {
+    overworld_ascending_frames(gObjectEventPic_Woodmon, 4, 4),
 };
 #if P_GENDER_DIFFERENCES
-static const struct SpriteFrameImage sPicTable_LumineonF[] = {
-    overworld_ascending_frames(gObjectEventPic_LumineonF, 4, 4),
+static const struct SpriteFrameImage sPicTable_WoodmonF[] = {
+    overworld_ascending_frames(gObjectEventPic_WoodmonF, 4, 4),
 };
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_WIZARDMON

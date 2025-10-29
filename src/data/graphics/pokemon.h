@@ -15302,27 +15302,27 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 
-    const u32 gMonFrontPic_Lumineon[] = INCBIN_U32("graphics/pokemon/lumineon/anim_front.4bpp.smol");
-    const u16 gMonPalette_Lumineon[] = INCBIN_U16("graphics/pokemon/lumineon/normal.gbapal");
-    const u32 gMonBackPic_Lumineon[] = INCBIN_U32("graphics/pokemon/lumineon/back.4bpp.smol");
-    const u16 gMonShinyPalette_Lumineon[] = INCBIN_U16("graphics/pokemon/lumineon/shiny.gbapal");
-    const u8 gMonIcon_Lumineon[] = INCBIN_U8("graphics/pokemon/lumineon/icon.4bpp");
+    const u32 gMonFrontPic_Woodmon[] = INCBIN_U32("graphics/pokemon/woodmon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Woodmon[] = INCBIN_U16("graphics/pokemon/woodmon/normal.gbapal");
+    const u32 gMonBackPic_Woodmon[] = INCBIN_U32("graphics/pokemon/woodmon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Woodmon[] = INCBIN_U16("graphics/pokemon/woodmon/shiny.gbapal");
+    const u8 gMonIcon_Woodmon[] = INCBIN_U8("graphics/pokemon/woodmon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Lumineon[] = INCBIN_U8("graphics/pokemon/lumineon/footprint.1bpp");
+    const u8 gMonFootprint_Woodmon[] = INCBIN_U8("graphics/pokemon/woodmon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Lumineon[] = INCBIN_COMP("graphics/pokemon/lumineon/overworld.4bpp");
+    const u32 gObjectEventPic_Woodmon[] = INCBIN_COMP("graphics/pokemon/woodmon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Lumineon[] = INCBIN_U16("graphics/pokemon/lumineon/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Lumineon[] = INCBIN_U16("graphics/pokemon/lumineon/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Woodmon[] = INCBIN_U16("graphics/pokemon/woodmon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Woodmon[] = INCBIN_U16("graphics/pokemon/woodmon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if P_GENDER_DIFFERENCES
-    const u32 gMonFrontPic_LumineonF[] = INCBIN_U32("graphics/pokemon/lumineon/anim_frontf.4bpp.smol");
-    const u32 gMonBackPic_LumineonF[] = INCBIN_U32("graphics/pokemon/lumineon/backf.4bpp.smol");
+    const u32 gMonFrontPic_WoodmonF[] = INCBIN_U32("graphics/pokemon/woodmon/anim_frontf.4bpp.smol");
+    const u32 gMonBackPic_WoodmonF[] = INCBIN_U32("graphics/pokemon/woodmon/backf.4bpp.smol");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_LumineonF[] = INCBIN_COMP("graphics/pokemon/lumineon/overworldf.4bpp");
+    const u32 gObjectEventPic_WoodmonF[] = INCBIN_COMP("graphics/pokemon/woodmon/overworldf.4bpp");
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GENDER_DIFFERENCES
 #endif //P_FAMILY_WIZARDMON

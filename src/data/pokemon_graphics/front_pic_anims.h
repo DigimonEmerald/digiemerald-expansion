@@ -5960,7 +5960,7 @@ static const union AnimCmd sAnim_Wizardmon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Lumineon_1[] =
+static const union AnimCmd sAnim_Woodmon_1[] =
 {
     ANIMCMD_FRAME(1, 8),
     ANIMCMD_FRAME(0, 8),
@@ -11538,7 +11538,7 @@ SINGLE_ANIMATION(Mudfrigimon);
 #endif //P_FAMILY_MUDFRIGIMON
 #if P_FAMILY_WIZARDMON
 SINGLE_ANIMATION(Wizardmon);
-SINGLE_ANIMATION(Lumineon);
+SINGLE_ANIMATION(Woodmon);
 #endif //P_FAMILY_WIZARDMON
 #if P_FAMILY_SNOVER
 SINGLE_ANIMATION(Snover);

@@ -3210,8 +3210,8 @@ Cry_Wizardmon::
 	.incbin "sound/direct_sound_samples/cries/wizardmon.bin"
 
 	.align 2
-Cry_Lumineon::
-	.incbin "sound/direct_sound_samples/cries/lumineon.bin"
+Cry_Woodmon::
+	.incbin "sound/direct_sound_samples/cries/woodmon.bin"
 .endif @ P_FAMILY_WIZARDMON
 
 .if P_FAMILY_SNOVER == TRUE

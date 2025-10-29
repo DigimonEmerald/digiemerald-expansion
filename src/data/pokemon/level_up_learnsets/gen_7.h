@@ -11414,7 +11414,7 @@ static const struct LevelUpMove sWizardmonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sLumineonLevelUpLearnset[] = {
+static const struct LevelUpMove sWoodmonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SOAK),
     LEVEL_UP_MOVE( 1, MOVE_GUST),
     LEVEL_UP_MOVE( 1, MOVE_POUND),

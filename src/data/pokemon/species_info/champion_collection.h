@@ -16630,44 +16630,45 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sWizardmonLevelUpLearnset,
         .teachableLearnset = sWizardmonTeachableLearnset,
         .eggMoveLearnset = sWizardmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_LUMINEON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_WOODMON}),
     },
 
-    [SPECIES_LUMINEON] =
+    [SPECIES_WOODMON] =
     {
-        .baseHP        = 69,
-        .baseAttack    = 69,
-        .baseDefense   = 76,
-        .baseSpeed     = 91,
-        .baseSpAttack  = 69,
-        .baseSpDefense = 86,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 75,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 161 : 156,
-        .evYield_Speed = 2,
+        .baseHP        = 75,
+        .baseAttack    = 45,
+        .baseDefense   = 110,
+        .baseSpeed     = 40,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_GRASS),
+        .attribute = TYPE_VIRUS,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_Defense = 4,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_SWIFT_SWIM, ABILITY_STORM_DRAIN, ABILITY_WATER_VEIL },
-        .bodyColor = BODY_COLOR_BLUE,
-        .speciesName = _("Lumineon"),
-        .cryId = CRY_LUMINEON,
-        .natDexNum = NATIONAL_DEX_LUMINEON,
-        .categoryName = _("Neon"),
-        .height = 12,
-        .weight = 240,
+        .abilities = { ABILITY_STURDY, ABILITY_PROTOSYNTHESIS, ABILITY_UNAWARE },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Woodmon"),
+        .cryId = CRY_WOODMON,
+        .natDexNum = NATIONAL_DEX_WOODMON,
+        .categoryName = _("Trunk"),
+        .height = 30,
+        .weight = 1053,
         .description = COMPOUND_STRING(
-            "Lumineon swimming in the darkness\n"
-            "of the deep sea look like stars shining\n"
-            "in the night sky. It competes for food\n"
-            "with Guilmon."),
+            "Woodmon disguise themselves as normal\n"
+            "trees so that when Digimon pass\n"
+            "them, they can grab them with ease\n"
+            "and drain all their life energy."),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Lumineon,
+        .frontPic = gMonFrontPic_Woodmon,
         .frontPicSize = MON_COORDS_SIZE(56, 56),
         .frontPicYOffset = 6,
         .frontAnimFrames = ANIM_FRAMES(
@@ -16679,41 +16680,41 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 8),
         ),
         .frontAnimId = ANIM_H_STRETCH,
-        .backPic = gMonBackPic_Lumineon,
+        .backPic = gMonBackPic_Woodmon,
         .backPicSize = MON_COORDS_SIZE(56, 64),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
-        .palette = gMonPalette_Lumineon,
-        .shinyPalette = gMonShinyPalette_Lumineon,
-        .iconSprite = gMonIcon_Lumineon,
-        .iconPalIndex = 0,
+        .palette = gMonPalette_Woodmon,
+        .shinyPalette = gMonShinyPalette_Woodmon,
+        .iconSprite = gMonIcon_Woodmon,
+        .iconPalIndex = 2,
 #if P_GENDER_DIFFERENCES
-        .frontPicFemale = gMonFrontPic_LumineonF,
+        .frontPicFemale = gMonFrontPic_WoodmonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(56, 56),
-        .backPicFemale = gMonBackPic_LumineonF,
+        .backPicFemale = gMonBackPic_WoodmonF,
         .backPicSizeFemale = MON_COORDS_SIZE(56, 64),
 #endif //P_GENDER_DIFFERENCES
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 8, SHADOW_SIZE_M)
-        FOOTPRINT(Lumineon)
+        FOOTPRINT(Woodmon)
         OVERWORLD(
-            sPicTable_Lumineon,
+            sPicTable_Woodmon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Lumineon,
-            gShinyOverworldPalette_Lumineon
+            gOverworldPalette_Woodmon,
+            gShinyOverworldPalette_Woodmon
         )
         OVERWORLD_FEMALE(
-            sPicTable_LumineonF,
+            sPicTable_WoodmonF,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sLumineonLevelUpLearnset,
-        .teachableLearnset = sLumineonTeachableLearnset,
+        .levelUpLearnset = sWoodmonLevelUpLearnset,
+        .teachableLearnset = sWoodmonTeachableLearnset,
     },
 #endif //P_FAMILY_WIZARDMON
 

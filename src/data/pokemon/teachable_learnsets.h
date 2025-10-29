@@ -20210,7 +20210,7 @@ static const u16 sWizardmonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sLumineonTeachableLearnset[] = {
+static const u16 sWoodmonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,
