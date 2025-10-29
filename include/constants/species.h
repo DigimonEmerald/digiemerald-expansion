@@ -725,7 +725,7 @@
 #define SPECIES_PLESIOMON                                 687
 #define SPECIES_SKULLMAMMOTHMON                                 688
 #define SPECIES_VENOMMYOTISMON                              689
-#define SPECIES_SKRELP                                  690
+#define SPECIES_ZANBAMON                                  690
 #define SPECIES_DRAGALGE                                691
 #define SPECIES_CLAUNCHER                               692
 #define SPECIES_CLAWITZER                               693

@@ -20123,20 +20123,20 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_SKULLMAMMOTHMON
 
-#if P_FAMILY_SKRELP
-    const u32 gMonFrontPic_Skrelp[] = INCBIN_U32("graphics/pokemon/skrelp/anim_front.4bpp.smol");
-    const u16 gMonPalette_Skrelp[] = INCBIN_U16("graphics/pokemon/skrelp/normal.gbapal");
-    const u32 gMonBackPic_Skrelp[] = INCBIN_U32("graphics/pokemon/skrelp/back.4bpp.smol");
-    const u16 gMonShinyPalette_Skrelp[] = INCBIN_U16("graphics/pokemon/skrelp/shiny.gbapal");
-    const u8 gMonIcon_Skrelp[] = INCBIN_U8("graphics/pokemon/skrelp/icon.4bpp");
+#if P_FAMILY_ZANBAMON
+    const u32 gMonFrontPic_Zanbamon[] = INCBIN_U32("graphics/pokemon/zanbamon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Zanbamon[] = INCBIN_U16("graphics/pokemon/zanbamon/normal.gbapal");
+    const u32 gMonBackPic_Zanbamon[] = INCBIN_U32("graphics/pokemon/zanbamon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Zanbamon[] = INCBIN_U16("graphics/pokemon/zanbamon/shiny.gbapal");
+    const u8 gMonIcon_Zanbamon[] = INCBIN_U8("graphics/pokemon/zanbamon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Skrelp[] = INCBIN_U8("graphics/pokemon/skrelp/footprint.1bpp");
+    const u8 gMonFootprint_Zanbamon[] = INCBIN_U8("graphics/pokemon/zanbamon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Skrelp[] = INCBIN_COMP("graphics/pokemon/skrelp/overworld.4bpp");
+    const u32 gObjectEventPic_Zanbamon[] = INCBIN_COMP("graphics/pokemon/zanbamon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Skrelp[] = INCBIN_U16("graphics/pokemon/skrelp/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Skrelp[] = INCBIN_U16("graphics/pokemon/skrelp/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Zanbamon[] = INCBIN_U16("graphics/pokemon/zanbamon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Zanbamon[] = INCBIN_U16("graphics/pokemon/zanbamon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -20155,7 +20155,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gShinyOverworldPalette_Dragalge[] = INCBIN_U16("graphics/pokemon/dragalge/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_SKRELP
+#endif //P_FAMILY_ZANBAMON
 
 #if P_FAMILY_CLAUNCHER
     const u32 gMonFrontPic_Clauncher[] = INCBIN_U32("graphics/pokemon/clauncher/anim_front.4bpp.smol");

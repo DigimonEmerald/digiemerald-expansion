@@ -3448,42 +3448,44 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     },
 #endif //P_FAMILY_SKULLMAMMOTHMON
 
-#if P_FAMILY_SKRELP
-    [SPECIES_SKRELP] =
+#if P_FAMILY_ZANBAMON
+    [SPECIES_ZANBAMON] =
     {
-        .baseHP        = 50,
-        .baseAttack    = 60,
-        .baseDefense   = 60,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 60,
-        .baseSpDefense = 60,
-        .types = MON_TYPES(TYPE_POISON, TYPE_WATER),
-        .catchRate = 225,
-        .expYield = 64,
-        .evYield_SpDefense = 1,
+        .baseHP        = 80,
+        .baseAttack    = 155,
+        .baseDefense   = 100,
+        .baseSpeed     = 120,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_FIGHTING),
+        .attribute = TYPE_VIRUS,   
+        .catchRate = 55,
+        .expYield = 250,
+        .evYield_Attack = 5,
+        .evYield_Speed = 1,
         .genderRatio = MON_GENDERLESS,
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_POISON_POINT, ABILITY_POISON_TOUCH, ABILITY_ADAPTABILITY },
-        .bodyColor = BODY_COLOR_BROWN,
-        .speciesName = _("Skrelp"),
-        .cryId = CRY_SKRELP,
-        .natDexNum = NATIONAL_DEX_SKRELP,
-        .categoryName = _("Mock Kelp"),
-        .height = 5,
-        .weight = 73,
+        .abilities = { ABILITY_BATTLE_ARMOR, ABILITY_SPEED_BOOST, ABILITY_INTREPID_SWORD },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Zanbamon"),
+        .cryId = CRY_ZANBAMON,
+        .natDexNum = NATIONAL_DEX_ZANBAMON,
+        .categoryName = _("Cavalry"),
+        .height = 128,
+        .weight = 7774,
         .description = COMPOUND_STRING(
-            "Camouflaged as rotten kelp, it hides\n"
-            "from foes while storing up power for its\n"
-            "evolution. They spray liquid poison on\n"
-            "prey that approach unawares."),
+            "Although Zanbamon is a general of the\n"
+            "Musyamon corps, it prefers to lead a\n"
+            "charge into battle. Its lower body has\n"
+            "fused with its horse for stability."),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Skrelp,
+        .frontPic = gMonFrontPic_Zanbamon,
         .frontPicSize = MON_COORDS_SIZE(40, 48),
         .frontPicYOffset = 8,
         .frontAnimFrames = ANIM_FRAMES(
@@ -3497,29 +3499,29 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             ANIMCMD_FRAME(0, 10),
         ),
         .frontAnimId = ANIM_V_SLIDE_WOBBLE_SMALL,
-        .backPic = gMonBackPic_Skrelp,
+        .backPic = gMonBackPic_Zanbamon,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 5,
         .backAnimId = BACK_ANIM_V_STRETCH,
-        .palette = gMonPalette_Skrelp,
-        .shinyPalette = gMonShinyPalette_Skrelp,
-        .iconSprite = gMonIcon_Skrelp,
-        .iconPalIndex = 2,
+        .palette = gMonPalette_Zanbamon,
+        .shinyPalette = gMonShinyPalette_Zanbamon,
+        .iconSprite = gMonIcon_Zanbamon,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(3, 5, SHADOW_SIZE_S)
-        FOOTPRINT(Skrelp)
+        FOOTPRINT(Zanbamon)
         OVERWORLD(
-            sPicTable_Skrelp,
+            sPicTable_Zanbamon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Skrelp,
-            gShinyOverworldPalette_Skrelp
+            gOverworldPalette_Zanbamon,
+            gShinyOverworldPalette_Zanbamon
         )
-        .levelUpLearnset = sSkrelpLevelUpLearnset,
-        .teachableLearnset = sSkrelpTeachableLearnset,
-        .eggMoveLearnset = sSkrelpEggMoveLearnset,
+        .levelUpLearnset = sZanbamonLevelUpLearnset,
+        .teachableLearnset = sZanbamonTeachableLearnset,
+        .eggMoveLearnset = sZanbamonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_DRAGALGE}),
     },
 
@@ -3590,7 +3592,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sDragalgeLevelUpLearnset,
         .teachableLearnset = sDragalgeTeachableLearnset,
     },
-#endif //P_FAMILY_SKRELP
+#endif //P_FAMILY_ZANBAMON
 
 #if P_FAMILY_CLAUNCHER
     [SPECIES_CLAUNCHER] =

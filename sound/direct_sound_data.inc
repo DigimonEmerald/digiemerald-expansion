@@ -4355,15 +4355,15 @@ Cry_Venommyotismon::
 	.incbin "sound/direct_sound_samples/cries/venommyotismon.bin"
 .endif @ P_FAMILY_SKULLMAMMOTHMON
 
-.if P_FAMILY_SKRELP == TRUE
+.if P_FAMILY_ZANBAMON == TRUE
 	.align 2
-Cry_Skrelp::
-	.incbin "sound/direct_sound_samples/cries/skrelp.bin"
+Cry_Zanbamon::
+	.incbin "sound/direct_sound_samples/cries/zanbamon.bin"
 
 	.align 2
 Cry_Dragalge::
 	.incbin "sound/direct_sound_samples/cries/dragalge.bin"
-.endif @ P_FAMILY_SKRELP
+.endif @ P_FAMILY_ZANBAMON
 
 .if P_FAMILY_CLAUNCHER == TRUE
 	.align 2

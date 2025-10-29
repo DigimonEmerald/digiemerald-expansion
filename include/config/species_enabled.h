@@ -404,7 +404,7 @@
 #define P_FAMILY_MACHINEDRAMON                 P_GEN_6_POKEMON
 #define P_FAMILY_PUPPETMON                   P_GEN_6_POKEMON
 #define P_FAMILY_SKULLMAMMOTHMON                 P_GEN_6_POKEMON
-#define P_FAMILY_SKRELP                  P_GEN_6_POKEMON
+#define P_FAMILY_ZANBAMON                  P_GEN_6_POKEMON
 #define P_FAMILY_CLAUNCHER               P_GEN_6_POKEMON
 #define P_FAMILY_HELIOPTILE              P_GEN_6_POKEMON
 #define P_FAMILY_TYRUNT                  P_GEN_6_POKEMON

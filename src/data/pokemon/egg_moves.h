@@ -5098,8 +5098,8 @@ static const u16 sSkullmammothmonEggMoveLearnset[] = {
 };
 #endif //P_FAMILY_SKULLMAMMOTHMON
 
-#if P_FAMILY_SKRELP
-static const u16 sSkrelpEggMoveLearnset[] = {
+#if P_FAMILY_ZANBAMON
+static const u16 sZanbamonEggMoveLearnset[] = {
     MOVE_TOXIC_SPIKES,
     MOVE_PLAY_ROUGH,
     MOVE_HAZE,
@@ -5107,7 +5107,7 @@ static const u16 sSkrelpEggMoveLearnset[] = {
     MOVE_VENOM_DRENCH,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SKRELP
+#endif //P_FAMILY_ZANBAMON
 
 #if P_FAMILY_CLAUNCHER
 static const u16 sClauncherEggMoveLearnset[] = {

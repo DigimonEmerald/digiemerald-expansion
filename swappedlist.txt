@@ -581,5 +581,6 @@ Puppetmon - Inkay
 Plesiomon - Malamar
 SkullMammothmon - Binacle
 VenomMyotismon - Barbaracle
+Zanbamon - Skrelp
 
 SPECIES NAME LENGTH MAX = 13

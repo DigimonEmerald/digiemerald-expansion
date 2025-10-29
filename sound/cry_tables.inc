@@ -1672,10 +1672,10 @@ gCryTable::
 	cry Cry_Skullmammothmon
 	cry Cry_Venommyotismon
 .endif @ P_FAMILY_SKULLMAMMOTHMON
-.if P_FAMILY_SKRELP == TRUE
-	cry Cry_Skrelp
+.if P_FAMILY_ZANBAMON == TRUE
+	cry Cry_Zanbamon
 	cry Cry_Dragalge
-.endif @ P_FAMILY_SKRELP
+.endif @ P_FAMILY_ZANBAMON
 .if P_FAMILY_CLAUNCHER == TRUE
 	cry Cry_Clauncher
 	cry Cry_Clawitzer
@@ -4099,10 +4099,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Skullmammothmon
 	cry_reverse Cry_Venommyotismon
 .endif @ P_FAMILY_SKULLMAMMOTHMON
-.if P_FAMILY_SKRELP == TRUE
-	cry_reverse Cry_Skrelp
+.if P_FAMILY_ZANBAMON == TRUE
+	cry_reverse Cry_Zanbamon
 	cry_reverse Cry_Dragalge
-.endif @ P_FAMILY_SKRELP
+.endif @ P_FAMILY_ZANBAMON
 .if P_FAMILY_CLAUNCHER == TRUE
 	cry_reverse Cry_Clauncher
 	cry_reverse Cry_Clawitzer

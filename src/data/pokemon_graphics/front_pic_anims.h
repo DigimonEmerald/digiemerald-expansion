@@ -8521,8 +8521,8 @@ static const union AnimCmd sAnim_Venommyotismon_1[] =
 };
 #endif //P_FAMILY_SKULLMAMMOTHMON
 
-#if P_FAMILY_SKRELP
-static const union AnimCmd sAnim_Skrelp_1[] =
+#if P_FAMILY_ZANBAMON
+static const union AnimCmd sAnim_Zanbamon_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 10),
@@ -8543,7 +8543,7 @@ static const union AnimCmd sAnim_Dragalge_1[] =
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_SKRELP
+#endif //P_FAMILY_ZANBAMON
 
 #if P_FAMILY_CLAUNCHER
 static const union AnimCmd sAnim_Clauncher_1[] =
@@ -12042,10 +12042,10 @@ SINGLE_ANIMATION(Plesiomon);
 SINGLE_ANIMATION(Skullmammothmon);
 SINGLE_ANIMATION(Venommyotismon);
 #endif //P_FAMILY_SKULLMAMMOTHMON
-#if P_FAMILY_SKRELP
-SINGLE_ANIMATION(Skrelp);
+#if P_FAMILY_ZANBAMON
+SINGLE_ANIMATION(Zanbamon);
 SINGLE_ANIMATION(Dragalge);
-#endif //P_FAMILY_SKRELP
+#endif //P_FAMILY_ZANBAMON
 #if P_FAMILY_CLAUNCHER
 SINGLE_ANIMATION(Clauncher);
 SINGLE_ANIMATION(Clawitzer);

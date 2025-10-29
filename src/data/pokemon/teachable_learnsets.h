@@ -27605,8 +27605,8 @@ static const u16 sVenommyotismonTeachableLearnset[] = {
 };
 #endif //P_FAMILY_SKULLMAMMOTHMON
 
-#if P_FAMILY_SKRELP
-static const u16 sSkrelpTeachableLearnset[] = {
+#if P_FAMILY_ZANBAMON
+static const u16 sZanbamonTeachableLearnset[] = {
     MOVE_ATTRACT,
     MOVE_DIVE,
     MOVE_DOUBLE_TEAM,
@@ -27663,7 +27663,7 @@ static const u16 sDragalgeTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_SKRELP
+#endif //P_FAMILY_ZANBAMON
 
 #if P_FAMILY_CLAUNCHER
 static const u16 sClauncherTeachableLearnset[] = {

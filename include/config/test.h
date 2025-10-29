@@ -733,8 +733,8 @@
 #define P_FAMILY_PUPPETMON                   TRUE
 #undef P_FAMILY_SKULLMAMMOTHMON
 #define P_FAMILY_SKULLMAMMOTHMON                 TRUE
-#undef P_FAMILY_SKRELP
-#define P_FAMILY_SKRELP                  TRUE
+#undef P_FAMILY_ZANBAMON
+#define P_FAMILY_ZANBAMON                  TRUE
 #undef P_FAMILY_CLAUNCHER
 #define P_FAMILY_CLAUNCHER               TRUE
 #undef P_FAMILY_HELIOPTILE

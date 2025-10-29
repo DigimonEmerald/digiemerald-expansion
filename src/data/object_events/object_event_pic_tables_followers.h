@@ -4868,14 +4868,14 @@ static const struct SpriteFrameImage sPicTable_Venommyotismon[] = {
 };
 #endif //P_FAMILY_SKULLMAMMOTHMON
 
-#if P_FAMILY_SKRELP
-static const struct SpriteFrameImage sPicTable_Skrelp[] = {
-    overworld_ascending_frames(gObjectEventPic_Skrelp, 4, 4),
+#if P_FAMILY_ZANBAMON
+static const struct SpriteFrameImage sPicTable_Zanbamon[] = {
+    overworld_ascending_frames(gObjectEventPic_Zanbamon, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_Dragalge[] = {
     overworld_ascending_frames(gObjectEventPic_Dragalge, 4, 4),
 };
-#endif //P_FAMILY_SKRELP
+#endif //P_FAMILY_ZANBAMON
 
 #if P_FAMILY_CLAUNCHER
 static const struct SpriteFrameImage sPicTable_Clauncher[] = {
