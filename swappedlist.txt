@@ -189,7 +189,7 @@ Hawkmon - Natu
 ClearAgumon - Magikarp
 Herissmon - Xatu
 Hyokomon - Mareep
-Icegobimon - Suicune
+SnowGoblimon- Suicune
 Ignitemon - Flaaffy
 Impmon (X) - Bellossom
 Impmon - Ampharos

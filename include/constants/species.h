@@ -251,7 +251,7 @@
 #define SPECIES_SHOUTMON                                 242
 #define SPECIES_SNOWAGUMON                                  243
 #define SPECIES_SNOWAGUMON_06                                   244
-#define SPECIES_ICEGOBIMON                                 245
+#define SPECIES_SNOWGOBLIMON                                 245
 #define SPECIES_SOLARMON                                246
 #define SPECIES_SOUNDBIRDMON                                 247
 #define SPECIES_SPADAMON                               248

@@ -180,7 +180,7 @@
 #define P_FAMILY_SHAMANMON                 P_GEN_2_POKEMON
 #define P_FAMILY_SNOWAGUMON                  P_GEN_2_POKEMON
 #define P_FAMILY_SNOWAGUMON_06                   P_GEN_2_POKEMON
-#define P_FAMILY_ICEGOBIMON                 P_GEN_2_POKEMON
+#define P_FAMILY_SNOWGOBLIMON                 P_GEN_2_POKEMON
 #define P_FAMILY_SOLARMON                P_GEN_2_POKEMON
 #define P_FAMILY_SPARROWMON                   P_GEN_2_POKEMON
 #define P_FAMILY_STARMON_2010                   P_GEN_2_POKEMON

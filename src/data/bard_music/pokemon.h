@@ -1964,7 +1964,7 @@ static const struct BardSoundTemplate sBardSoundTemplates_Pokemon[NUM_SPECIES][M
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_ICEGOBIMON] = {
+    [SPECIES_SNOWGOBLIMON] = {
         { .songId = PHONEME_ID(PH_FLEECE_BLEND) },
         { .songId = PHONEME_ID(PH_GOOSE_BLEND) },
         PREV_BARD_SOUND,

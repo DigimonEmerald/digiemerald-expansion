@@ -9334,34 +9334,34 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_SNOWAGUMON_06
 
-#if P_FAMILY_ICEGOBIMON
+#if P_FAMILY_SNOWGOBLIMON
 #if !P_GBA_STYLE_SPECIES_GFX
-    const u32 gMonFrontPic_Icegobimon[] = INCBIN_U32("graphics/pokemon/icegobimon/anim_front.4bpp.smol");
-    const u16 gMonPalette_Icegobimon[] = INCBIN_U16("graphics/pokemon/icegobimon/normal.gbapal");
-    const u32 gMonBackPic_Icegobimon[] = INCBIN_U32("graphics/pokemon/icegobimon/back.4bpp.smol");
-    const u16 gMonShinyPalette_Icegobimon[] = INCBIN_U16("graphics/pokemon/icegobimon/shiny.gbapal");
+    const u32 gMonFrontPic_Snowgoblimon[] = INCBIN_U32("graphics/pokemon/snowgoblimon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Snowgoblimon[] = INCBIN_U16("graphics/pokemon/snowgoblimon/normal.gbapal");
+    const u32 gMonBackPic_Snowgoblimon[] = INCBIN_U32("graphics/pokemon/snowgoblimon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Snowgoblimon[] = INCBIN_U16("graphics/pokemon/snowgoblimon/shiny.gbapal");
 #else
-    const u32 gMonFrontPic_Icegobimon[] = INCBIN_U32("graphics/pokemon/icegobimon/anim_front_gba.4bpp.smol");
-    const u16 gMonPalette_Icegobimon[] = INCBIN_U16("graphics/pokemon/icegobimon/normal_gba.gbapal");
-    const u32 gMonBackPic_Icegobimon[] = INCBIN_U32("graphics/pokemon/icegobimon/back_gba.4bpp.smol");
-    const u16 gMonShinyPalette_Icegobimon[] = INCBIN_U16("graphics/pokemon/icegobimon/shiny_gba.gbapal");
+    const u32 gMonFrontPic_Snowgoblimon[] = INCBIN_U32("graphics/pokemon/snowgoblimon/anim_front_gba.4bpp.smol");
+    const u16 gMonPalette_Snowgoblimon[] = INCBIN_U16("graphics/pokemon/snowgoblimon/normal_gba.gbapal");
+    const u32 gMonBackPic_Snowgoblimon[] = INCBIN_U32("graphics/pokemon/snowgoblimon/back_gba.4bpp.smol");
+    const u16 gMonShinyPalette_Snowgoblimon[] = INCBIN_U16("graphics/pokemon/snowgoblimon/shiny_gba.gbapal");
 #endif //P_GBA_STYLE_SPECIES_GFX
 #if !P_GBA_STYLE_SPECIES_ICONS
-    const u8 gMonIcon_Icegobimon[] = INCBIN_U8("graphics/pokemon/icegobimon/icon.4bpp");
+    const u8 gMonIcon_Snowgoblimon[] = INCBIN_U8("graphics/pokemon/snowgoblimon/icon.4bpp");
 #else
-    const u8 gMonIcon_Icegobimon[] = INCBIN_U8("graphics/pokemon/icegobimon/icon_gba.4bpp");
+    const u8 gMonIcon_Snowgoblimon[] = INCBIN_U8("graphics/pokemon/snowgoblimon/icon_gba.4bpp");
 #endif //P_GBA_STYLE_SPECIES_ICONS
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Icegobimon[] = INCBIN_U8("graphics/pokemon/icegobimon/footprint.1bpp");
+    const u8 gMonFootprint_Snowgoblimon[] = INCBIN_U8("graphics/pokemon/snowgoblimon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Icegobimon[] = INCBIN_COMP("graphics/pokemon/icegobimon/overworld.4bpp");
+    const u32 gObjectEventPic_Snowgoblimon[] = INCBIN_COMP("graphics/pokemon/snowgoblimon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Icegobimon[] = INCBIN_U16("graphics/pokemon/icegobimon/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Icegobimon[] = INCBIN_U16("graphics/pokemon/icegobimon/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Snowgoblimon[] = INCBIN_U16("graphics/pokemon/snowgoblimon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Snowgoblimon[] = INCBIN_U16("graphics/pokemon/snowgoblimon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_FAMILY_ICEGOBIMON
+#endif //P_FAMILY_SNOWGOBLIMON
 
 #if P_FAMILY_SOLARMON
 #if !P_GBA_STYLE_SPECIES_GFX

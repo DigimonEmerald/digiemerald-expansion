@@ -690,9 +690,9 @@ gCryTable::
 .if P_FAMILY_SNOWAGUMON_06 == TRUE
 	cry Cry_Snowagumon_06
 .endif @ P_FAMILY_SNOWAGUMON_06
-.if P_FAMILY_ICEGOBIMON == TRUE
-	cry Cry_Icegobimon
-.endif @ P_FAMILY_ICEGOBIMON
+.if P_FAMILY_SNOWGOBLIMON == TRUE
+	cry Cry_Snowgoblimon
+.endif @ P_FAMILY_SNOWGOBLIMON
 .if P_FAMILY_SOLARMON == TRUE
 	cry Cry_Solarmon
 	cry Cry_Soundbirdmon
@@ -3117,9 +3117,9 @@ gCryTable_Reverse::
 .if P_FAMILY_SNOWAGUMON_06 == TRUE
 	cry_reverse Cry_Snowagumon_06
 .endif @ P_FAMILY_SNOWAGUMON_06
-.if P_FAMILY_ICEGOBIMON == TRUE
-	cry_reverse Cry_Icegobimon
-.endif @ P_FAMILY_ICEGOBIMON
+.if P_FAMILY_SNOWGOBLIMON == TRUE
+	cry_reverse Cry_Snowgoblimon
+.endif @ P_FAMILY_SNOWGOBLIMON
 .if P_FAMILY_SOLARMON == TRUE
 	cry_reverse Cry_Solarmon
 	cry_reverse Cry_Soundbirdmon

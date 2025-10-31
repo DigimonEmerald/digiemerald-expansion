@@ -3341,14 +3341,14 @@ static const union AnimCmd sAnim_Snowagumon_06_1[] =
 };
 #endif //P_FAMILY_SNOWAGUMON_06
 
-#if P_FAMILY_ICEGOBIMON
-static const union AnimCmd sAnim_Icegobimon_1[] =
+#if P_FAMILY_SNOWGOBLIMON
+static const union AnimCmd sAnim_Snowgoblimon_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
-#endif //P_FAMILY_ICEGOBIMON
+#endif //P_FAMILY_SNOWGOBLIMON
 
 #if P_FAMILY_SOLARMON
 static const union AnimCmd sAnim_Solarmon_1[] =
@@ -11013,9 +11013,9 @@ SINGLE_ANIMATION(Snowagumon);
 #if P_FAMILY_SNOWAGUMON_06
 SINGLE_ANIMATION(Snowagumon_06);
 #endif //P_FAMILY_SNOWAGUMON_06
-#if P_FAMILY_ICEGOBIMON
-SINGLE_ANIMATION(Icegobimon);
-#endif //P_FAMILY_ICEGOBIMON
+#if P_FAMILY_SNOWGOBLIMON
+SINGLE_ANIMATION(Snowgoblimon);
+#endif //P_FAMILY_SNOWGOBLIMON
 #if P_FAMILY_SOLARMON
 SINGLE_ANIMATION(Solarmon);
 SINGLE_ANIMATION(Soundbirdmon);

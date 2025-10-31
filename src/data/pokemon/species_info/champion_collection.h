@@ -76,6 +76,233 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .teachableLearnset = sAegiomonTeachableLearnset,
     },
 
+    [SPECIES_ROKUSHO] = // REDO AS CHAMP
+    {
+        .baseHP        = 65,
+        .baseAttack    = 90,
+        .baseDefense   = 65,
+        .baseSpeed     = 70,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_BUG, TYPE_STEEL),
+        .attribute = TYPE_UKNOWN,
+        .catchRate = 155,
+        .expYield = 100,
+        .evYield_Attack = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Rokusho"),
+        .cryId = CRY_ROKUSHO,
+        .natDexNum = NATIONAL_DEX_ROKUSHO,
+        .categoryName = _("Medabot"),
+        .height = 10,
+        .weight = 648,
+        .description = COMPOUND_STRING(
+            "Rokusho specialises in a standard fighting\n"
+            "style. This style lacks any range but\n"
+            "gives it more than enough power for\n"
+            "attacking and defending."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Rokusho,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 64) : MON_COORDS_SIZE(48, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 15),
+            ANIMCMD_FRAME(0, 15),
+        ),
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Rokusho,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 64) : MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 3 : 1,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_Rokusho,
+        .shinyPalette = gMonShinyPalette_Rokusho,
+        .iconSprite = gMonIcon_Rokusho,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(3, 13, SHADOW_SIZE_M)
+        FOOTPRINT(Rokusho)
+        OVERWORLD(
+            sPicTable_Rokusho,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Rokusho,
+            gShinyOverworldPalette_Rokusho
+        )
+        .levelUpLearnset = sRokushoLevelUpLearnset,
+        .teachableLearnset = sRokushoTeachableLearnset,
+        .eggMoveLearnset = sRokushoEggMoveLearnset,
+    },
+
+    [SPECIES_METABEE] = // Completely redo as a Champion
+    {
+        .baseHP        = 75,
+        .baseAttack    = 75,
+        .baseDefense   = 75,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 75,
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_BUG, TYPE_STEEL),
+        .attribute = TYPE_UKNOWN,
+        .catchRate = 155,
+        .expYield = 100,
+        .evYield_Defense = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_MEGA_LAUNCHER, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Metabee"),
+        .cryId = CRY_METABEE,
+        .natDexNum = NATIONAL_DEX_METABEE,
+        .categoryName = _("Medabot"),
+        .height = 10,
+        .weight = 648,
+        .description = COMPOUND_STRING(
+            "Metabee is a very standard Digimon that\n"
+            "focuses on shooting. It does not have\n"
+            "outstanding strength but its balanced\n"
+            "strength makes it hard to fight against."),
+        .pokemonScale = 350,
+        .pokemonOffset = -1,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Metabee,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 64) : MON_COORDS_SIZE(56, 56),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 3 : 4,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(1, 17),
+            ANIMCMD_FRAME(0, 10),
+        ),
+        .frontAnimId = ANIM_SHRINK_GROW,
+        .enemyMonElevation = P_GBA_STYLE_SPECIES_GFX ? 6 : 8,
+        .backPic = gMonBackPic_Metabee,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 56) : MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 5 : 2,
+        .backAnimId = BACK_ANIM_SHRINK_GROW,
+        .palette = gMonPalette_Metabee,
+        .shinyPalette = gMonShinyPalette_Metabee,
+        .iconSprite = gMonIcon_Metabee,
+        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 2 : 0,
+#if P_GENDER_DIFFERENCES
+        .frontPicFemale = gMonFrontPic_MetabeeF,
+        .frontPicSizeFemale = MON_COORDS_SIZE(56, 56),
+        .backPicFemale = gMonBackPic_MetabeeF,
+        .backPicSizeFemale = MON_COORDS_SIZE(64, 64),
+#endif //P_GENDER_DIFFERENCES
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 15, SHADOW_SIZE_S)
+        FOOTPRINT(Metabee)
+        OVERWORLD(
+            sPicTable_Metabee,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following,
+            gOverworldPalette_Metabee,
+            gShinyOverworldPalette_Metabee
+        )
+        OVERWORLD_FEMALE(
+            sPicTable_MetabeeF,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_NONE,
+            sAnimTable_Following
+        )
+        .levelUpLearnset = sMetabeeLevelUpLearnset,
+        .teachableLearnset = sMetabeeTeachableLearnset,
+        .eggMoveLearnset = sMetabeeEggMoveLearnset,
+    },
+
+    #if P_GEN_3_CROSS_EVOS
+    [SPECIES_BIOSTEGOMON] =
+    {
+        .baseHP        = 82,
+        .baseAttack    = 97,
+        .baseDefense   = 80,
+        .baseSpeed     = 61,
+        .baseSpAttack  = 60,
+        .baseSpDefense = 69,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_STEEL),
+        .attribute = TYPE_DATA,
+        .catchRate = 115,
+        .expYield = 150,
+        .evYield_HP        = 1,
+        .evYield_Attack    = 2,
+        .evYield_Defense   = 1,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_THICK_FAT, ABILITY_NONE, ABILITY_NONE }, // BIO-HYBRID DNA
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Biostegomon"),
+        .cryId = CRY_BIOSTEGOMON,
+        .natDexNum = NATIONAL_DEX_BIOSTEGOMON,
+        .categoryName = _("Bio-Hybrid"),
+        .height = 57,
+        .weight = 1964,
+        .description = COMPOUND_STRING(
+            "Thought to just be a rare version of\n"
+            "Stegomon, BioStegomon is actually an \n"
+            "illegal experiment caused by the forceful\n"
+            "merging of Human data and Stegomon Data."),
+        .pokemonScale = 603,
+        .pokemonOffset = 23,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_Biostegomon,
+        .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(40, 40) : MON_COORDS_SIZE(48, 48),
+        .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 15 : 11,
+        .frontAnimFrames = ANIM_FRAMES(
+            ANIMCMD_FRAME(0, 12),
+            ANIMCMD_FRAME(1, 12),
+            ANIMCMD_FRAME(0, 12),
+            ANIMCMD_FRAME(1, 12),
+            ANIMCMD_FRAME(0, 12),
+            ANIMCMD_FRAME(1, 12),
+            ANIMCMD_FRAME(0, 12),
+        ),
+        .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_Biostegomon,
+        .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 48) : MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 10 : 6,
+        .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
+        .palette = gMonPalette_Biostegomon,
+        .shinyPalette = gMonShinyPalette_Biostegomon,
+        .iconSprite = gMonIcon_Biostegomon,
+        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 2 : 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
+        SHADOW(-4, 3, SHADOW_SIZE_S)
+        FOOTPRINT(Biostegomon)
+        OVERWORLD(
+            sPicTable_Biostegomon,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_Biostegomon,
+            gShinyOverworldPalette_Biostegomon
+        )
+        .levelUpLearnset = sBiostegomonLevelUpLearnset,
+        .teachableLearnset = sBiostegomonTeachableLearnset,
+        .eggMoveLearnset = sBiostegomonEggMoveLearnset,
+    },
+#endif //P_GEN_3_CROSS_EVOS
+
     [SPECIES_AGUNIMON] =
     {
         .baseHP        = 76,

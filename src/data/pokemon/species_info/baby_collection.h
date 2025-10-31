@@ -1667,7 +1667,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_KEEMON_MEGA] =
     {
         .baseHP        = 65,
-        .baseAttack    = KEEMON_ATTACK + 70,
+        .baseAttack    = 70,
         .baseDefense   = 40,
         .baseSpeed     = 145,
         .baseSpAttack  = 15,

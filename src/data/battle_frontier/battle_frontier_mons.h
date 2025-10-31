@@ -5327,8 +5327,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST
     },
-    [FRONTIER_MON_ICEGOBIMON_1] = {
-        .species = SPECIES_ICEGOBIMON,
+    [FRONTIER_MON_SNOWGOBLIMON_1] = {
+        .species = SPECIES_SNOWGOBLIMON,
         .moves = {MOVE_SURF, MOVE_DOUBLE_TEAM, MOVE_CALM_MIND, MOVE_REST},
         .heldItem = ITEM_CHESTO_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
@@ -5404,8 +5404,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST
     },
-    [FRONTIER_MON_ICEGOBIMON_2] = {
-        .species = SPECIES_ICEGOBIMON,
+    [FRONTIER_MON_SNOWGOBLIMON_2] = {
+        .species = SPECIES_SNOWGOBLIMON,
         .moves = {MOVE_TOXIC, MOVE_DIVE, MOVE_DOUBLE_TEAM, MOVE_PROTECT},
         .heldItem = ITEM_LEFTOVERS,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),
@@ -5481,8 +5481,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 252, 0, 0),
         .nature = NATURE_DOCILE
     },
-    [FRONTIER_MON_ICEGOBIMON_3] = {
-        .species = SPECIES_ICEGOBIMON,
+    [FRONTIER_MON_SNOWGOBLIMON_3] = {
+        .species = SPECIES_SNOWGOBLIMON,
         .moves = {MOVE_SURF, MOVE_ICE_BEAM, MOVE_RAIN_DANCE, MOVE_ROAR},
         .heldItem = ITEM_LUM_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
@@ -5558,8 +5558,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
         .nature = NATURE_MODEST
     },
-    [FRONTIER_MON_ICEGOBIMON_4] = {
-        .species = SPECIES_ICEGOBIMON,
+    [FRONTIER_MON_SNOWGOBLIMON_4] = {
+        .species = SPECIES_SNOWGOBLIMON,
         .moves = {MOVE_SURF, MOVE_ICE_BEAM, MOVE_BITE, MOVE_REFLECT},
         .heldItem = ITEM_BRIGHT_POWDER,
         .ev = TRAINER_PARTY_EVS(0, 0, 0, 252, 252, 0),
@@ -6160,15 +6160,15 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ev = TRAINER_PARTY_EVS(0, 0, 252, 0, 0, 252),
         .nature = NATURE_MODEST
     },
-    [FRONTIER_MON_ICEGOBIMON_5] = {
-        .species = SPECIES_ICEGOBIMON,
+    [FRONTIER_MON_SNOWGOBLIMON_5] = {
+        .species = SPECIES_SNOWGOBLIMON,
         .moves = {MOVE_SURF, MOVE_ICE_BEAM, MOVE_CALM_MIND, MOVE_ICY_WIND},
         .heldItem = ITEM_LUM_BERRY,
         .ev = TRAINER_PARTY_EVS(252, 0, 0, 0, 252, 0),
         .nature = NATURE_MODEST
     },
-    [FRONTIER_MON_ICEGOBIMON_6] = {
-        .species = SPECIES_ICEGOBIMON,
+    [FRONTIER_MON_SNOWGOBLIMON_6] = {
+        .species = SPECIES_SNOWGOBLIMON,
         .moves = {MOVE_SURF, MOVE_ICE_BEAM, MOVE_CALM_MIND, MOVE_REST},
         .heldItem = ITEM_CHESTO_BERRY,
         .ev = TRAINER_PARTY_EVS(170, 0, 170, 0, 0, 170),

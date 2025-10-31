@@ -4778,8 +4778,8 @@ static const struct LevelUpMove sSnowagumon_06LevelUpLearnset[] = {
 };
 #endif //P_FAMILY_SNOWAGUMON_06
 
-#if P_FAMILY_ICEGOBIMON
-static const struct LevelUpMove sIcegobimonLevelUpLearnset[] = {
+#if P_FAMILY_SNOWGOBLIMON
+static const struct LevelUpMove sSnowgoblimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE(11, MOVE_BUBBLE_BEAM),
@@ -4791,7 +4791,7 @@ static const struct LevelUpMove sIcegobimonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(71, MOVE_HYDRO_PUMP),
     LEVEL_UP_END
 };
-#endif //P_FAMILY_ICEGOBIMON
+#endif //P_FAMILY_SNOWGOBLIMON
 
 #if P_FAMILY_SOLARMON
 static const struct LevelUpMove sSolarmonLevelUpLearnset[] = {

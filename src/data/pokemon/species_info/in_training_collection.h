@@ -2089,7 +2089,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sHiyarimonTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_BEARMON, CONDITIONS({IF_DEF, 15})},
                                 {EVO_LEVEL, 0, SPECIES_BULUCOMON, CONDITIONS({IF_ATK, 15})},
-                                {EVO_LEVEL, 14, SPECIES_ICEGOBIMON}),
+                                {EVO_LEVEL, 14, SPECIES_SNOWGOBLIMON}),
     },
 
 

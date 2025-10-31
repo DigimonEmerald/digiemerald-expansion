@@ -1987,11 +1987,11 @@ Cry_Snowagumon_06::
 	.incbin "sound/direct_sound_samples/cries/snowagumon_06.bin"
 .endif @ P_FAMILY_SNOWAGUMON_06
 
-.if P_FAMILY_ICEGOBIMON == TRUE
+.if P_FAMILY_SNOWGOBLIMON == TRUE
 	.align 2
-Cry_Icegobimon::
-	.incbin "sound/direct_sound_samples/cries/icegobimon.bin"
-.endif @ P_FAMILY_ICEGOBIMON
+Cry_Snowgoblimon::
+	.incbin "sound/direct_sound_samples/cries/snowgoblimon.bin"
+.endif @ P_FAMILY_SNOWGOBLIMON
 
 .if P_FAMILY_SOLARMON == TRUE
 	.align 2

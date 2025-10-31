@@ -2093,11 +2093,11 @@ static const struct SpriteFrameImage sPicTable_Snowagumon_06[] = {
 };
 #endif //P_FAMILY_SNOWAGUMON_06
 
-#if P_FAMILY_ICEGOBIMON
-static const struct SpriteFrameImage sPicTable_Icegobimon[] = {
-    overworld_ascending_frames(gObjectEventPic_Icegobimon, 4, 4),
+#if P_FAMILY_SNOWGOBLIMON
+static const struct SpriteFrameImage sPicTable_Snowgoblimon[] = {
+    overworld_ascending_frames(gObjectEventPic_Snowgoblimon, 4, 4),
 };
-#endif //P_FAMILY_ICEGOBIMON
+#endif //P_FAMILY_SNOWGOBLIMON
 
 #if P_FAMILY_SOLARMON
 static const struct SpriteFrameImage sPicTable_Solarmon[] = {

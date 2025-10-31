@@ -12069,8 +12069,8 @@ static const u16 sSnowagumon_06TeachableLearnset[] = {
 };
 #endif //P_FAMILY_SNOWAGUMON_06
 
-#if P_FAMILY_ICEGOBIMON
-static const u16 sIcegobimonTeachableLearnset[] = {
+#if P_FAMILY_SNOWGOBLIMON
+static const u16 sSnowgoblimonTeachableLearnset[] = {
     MOVE_BLIZZARD,
     MOVE_BODY_SLAM,
     MOVE_CALM_MIND,
@@ -12107,7 +12107,7 @@ static const u16 sIcegobimonTeachableLearnset[] = {
     MOVE_WATER_PULSE,
     MOVE_UNAVAILABLE,
 };
-#endif //P_FAMILY_ICEGOBIMON
+#endif //P_FAMILY_SNOWGOBLIMON
 
 #if P_FAMILY_SOLARMON
 static const u16 sSolarmonTeachableLearnset[] = {

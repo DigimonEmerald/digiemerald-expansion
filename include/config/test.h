@@ -290,8 +290,8 @@
 #define P_FAMILY_SNOWAGUMON                  TRUE
 #undef P_FAMILY_SNOWAGUMON_06
 #define P_FAMILY_SNOWAGUMON_06                   TRUE
-#undef P_FAMILY_ICEGOBIMON
-#define P_FAMILY_ICEGOBIMON                 TRUE
+#undef P_FAMILY_SNOWGOBLIMON
+#define P_FAMILY_SNOWGOBLIMON                 TRUE
 #undef P_FAMILY_SOLARMON
 #define P_FAMILY_SOLARMON                TRUE
 #undef P_FAMILY_SPARROWMON
