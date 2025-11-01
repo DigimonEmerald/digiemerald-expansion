@@ -3,34 +3,30 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_U_TURN].effect == EFFECT_HIT_ESCAPE);
+    ASSUME(GetMoveEffect(MOVE_U_TURN) == EFFECT_HIT_ESCAPE);
 }
 
 SINGLE_BATTLE_TEST("Hit Escape: U-turn switches the user out")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(player, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
         HP_BAR(opponent);
-<<<<<<< HEAD
-        MESSAGE("Go! Exveemon!");
-=======
-        SEND_IN_MESSAGE("Exveemon");
->>>>>>> upstream/master
+        SEND_IN_MESSAGE("Wynaut");
     }
 }
 
 SINGLE_BATTLE_TEST("Hit Escape: U-turn does not switch the user out if the battle ends")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_LOPMONX) { HP(1); }
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); }
     } SCENE {
@@ -42,8 +38,8 @@ SINGLE_BATTLE_TEST("Hit Escape: U-turn does not switch the user out if the battl
 SINGLE_BATTLE_TEST("Hit Escape: U-turn does not switch the user out if no replacements")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); }
     } SCENE {
@@ -55,9 +51,9 @@ SINGLE_BATTLE_TEST("Hit Escape: U-turn does not switch the user out if no replac
 SINGLE_BATTLE_TEST("Hit Escape: U-turn does not switch the user out if replacements fainted")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_EXVEEMON) { HP(0); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT) { HP(0); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); }
     } SCENE {
@@ -69,25 +65,25 @@ SINGLE_BATTLE_TEST("Hit Escape: U-turn does not switch the user out if replaceme
 SINGLE_BATTLE_TEST("Hit Escape: U-turn does not switch the user out if Wimp Out activates")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_WIMPOD) { MaxHP(200); HP(101); Ability(ABILITY_WIMP_OUT); }
-        OPPONENT(SPECIES_LOPMONX);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(opponent, 1); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
         HP_BAR(opponent);
         ABILITY_POPUP(opponent, ABILITY_WIMP_OUT);
-        MESSAGE("2 sent out Lopmonx!");
+        MESSAGE("2 sent out Wobbuffet!");
     }
 }
 
 SINGLE_BATTLE_TEST("Hit Escape: U-turn switches the user out if Wimp Out fails to activate")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        PLAYER(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_WIMPOD) { MaxHP(200); HP(101); Ability(ABILITY_WIMP_OUT); }
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(player, 1); }
@@ -95,20 +91,16 @@ SINGLE_BATTLE_TEST("Hit Escape: U-turn switches the user out if Wimp Out fails t
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
         HP_BAR(opponent);
         NOT ABILITY_POPUP(opponent);
-<<<<<<< HEAD
-        MESSAGE("Go for it, Exveemon!");
-=======
-        SEND_IN_MESSAGE("Exveemon");
->>>>>>> upstream/master
+        SEND_IN_MESSAGE("Wynaut");
     }
 }
 
 SINGLE_BATTLE_TEST("Hit Escape: U-turn switches the user out after Ice Face activates")
 {
     GIVEN {
-        ASSUME(gMovesInfo[MOVE_U_TURN].category == DAMAGE_CATEGORY_PHYSICAL);
-        PLAYER(SPECIES_KEEMON);
-        PLAYER(SPECIES_EXVEEMON);
+        ASSUME(GetMoveCategory(MOVE_U_TURN) == DAMAGE_CATEGORY_PHYSICAL);
+        PLAYER(SPECIES_BEEDRILL);
+        PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_EISCUE) { Ability(ABILITY_ICE_FACE); }
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(player, 1); }
@@ -116,54 +108,47 @@ SINGLE_BATTLE_TEST("Hit Escape: U-turn switches the user out after Ice Face acti
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
         HP_BAR(opponent);
         ABILITY_POPUP(opponent, ABILITY_ICE_FACE);
-<<<<<<< HEAD
-        MESSAGE("Foe Eiscue transformed!");
-        MESSAGE("Go! Exveemon!");
-=======
         MESSAGE("The opposing Eiscue transformed!");
-        SEND_IN_MESSAGE("Exveemon");
->>>>>>> upstream/master
+        SEND_IN_MESSAGE("Wynaut");
     }
 }
 
-SINGLE_BATTLE_TEST("Hit Escape: Held items are consumed immediately after a mon switched in by U-turn and Intimidate activates after it: player side")
+SINGLE_BATTLE_TEST("Hit Escape: Held items are consumed immediately after a mon switched in by U-turn: player side")
 {
     GIVEN {
         PLAYER(SPECIES_TAPU_KOKO) { Ability(ABILITY_ELECTRIC_SURGE); };
-        PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); Item(ITEM_ELECTRIC_SEED); }
-        OPPONENT(SPECIES_EXVEEMON) { HP(1); }
-        OPPONENT(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE); Item(ITEM_ELECTRIC_SEED); }
+        OPPONENT(SPECIES_WYNAUT) { HP(1); }
+        OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_ELECTRIC_SURGE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
         HP_BAR(opponent);
-        ABILITY_POPUP(player, ABILITY_INTIMIDATE);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
-        MESSAGE("2 sent out Exveemon!");
+        MESSAGE("2 sent out Wynaut!");
         NOT ABILITY_POPUP(player, ABILITY_INTIMIDATE);
     } THEN {
         EXPECT_EQ(player->statStages[STAT_DEF], DEFAULT_STAT_STAGE + 1);
     }
 }
 
-SINGLE_BATTLE_TEST("Hit Escape: Held items are consumed immediately after a mon switched in by U-turn and Intimidate activates after it: opposing side")
+SINGLE_BATTLE_TEST("Hit Escape: Held items are consumed immediately after a mon switched in by U-turn: opposing side")
 {
     GIVEN {
         PLAYER(SPECIES_TAPU_KOKO) { Ability(ABILITY_ELECTRIC_SURGE); };
-        PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE);  }
-        OPPONENT(SPECIES_EXVEEMON) { HP(1); }
-        OPPONENT(SPECIES_EXVEEMON) { Item(ITEM_ELECTRIC_SEED); }
+        PLAYER(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE);  }
+        OPPONENT(SPECIES_WYNAUT) { HP(1); }
+        OPPONENT(SPECIES_WYNAUT) { Item(ITEM_ELECTRIC_SEED); }
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(player, 1); SEND_OUT(opponent, 1); }
     } SCENE {
         ABILITY_POPUP(player, ABILITY_ELECTRIC_SURGE);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
         HP_BAR(opponent);
-        NOT ABILITY_POPUP(player, ABILITY_INTIMIDATE);
-        MESSAGE("2 sent out Exveemon!");
+        MESSAGE("2 sent out Wynaut!");
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, opponent);
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, opponent);
         NOT ABILITY_POPUP(player, ABILITY_INTIMIDATE);
@@ -176,9 +161,9 @@ SINGLE_BATTLE_TEST("Hit Escape: Electric Seed boost is received by the right Pok
 {
     GIVEN {
         PLAYER(SPECIES_TAPU_KOKO) { Ability(ABILITY_ELECTRIC_SURGE); };
-        PLAYER(SPECIES_PAFUMON) { Ability(ABILITY_INTIMIDATE); Item(ITEM_ELECTRIC_SEED); }
-        OPPONENT(SPECIES_EXVEEMON);
-        OPPONENT(SPECIES_EXVEEMON);
+        PLAYER(SPECIES_EKANS) { Ability(ABILITY_INTIMIDATE); Item(ITEM_ELECTRIC_SEED); }
+        OPPONENT(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WYNAUT);
     } WHEN {
         TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(player, 1); }
     } SCENE {
@@ -190,5 +175,35 @@ SINGLE_BATTLE_TEST("Hit Escape: Electric Seed boost is received by the right Pok
         ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
     } THEN {
         EXPECT_EQ(player->statStages[STAT_DEF], DEFAULT_STAT_STAGE + 1);
+    }
+}
+
+SINGLE_BATTLE_TEST("Hit Escape: U-turn triggers before Eject Pack")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_EJECT_PACK); };
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_GOODRA_HISUI) { Ability(ABILITY_GOOEY); };
+    } WHEN {
+        TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(player, 1); }
+    } SCENE {
+        NOT ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_HELD_ITEM_EFFECT, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
+        HP_BAR(opponent);
+        SEND_IN_MESSAGE("Wynaut");
+    }
+}
+
+SINGLE_BATTLE_TEST("Hit Escape: U-turn will fail to switch if the user faints")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { HP(1); }
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_ROCKY_HELMET); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_U_TURN); SEND_OUT(player, 1); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
+        HP_BAR(opponent);
     }
 }
