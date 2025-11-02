@@ -400,6 +400,8 @@ extern const u8 gText_SpDef[];
 extern const u8 gText_Speed[];
 extern const u8 gText_Dash[];
 extern const u8 gText_Plus[];
+extern const u8 gText_Digivice[];
+extern const u8 gText_StatEditor[];
 
 //Pokédex text
 extern const u8 gText_CryOf[];

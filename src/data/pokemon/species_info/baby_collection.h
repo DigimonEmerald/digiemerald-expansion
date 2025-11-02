@@ -70,8 +70,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sArgomon_fLevelUpLearnset,
         .teachableLearnset = sArgomon_fTeachableLearnset,
+        .digivolutions = sArgomon_fDigivolveTable,
         .eggMoveLearnset = sArgomon_fEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 3, SPECIES_ARGOMON_IT}),
     },
 
     [SPECIES_BOMBMON] =
@@ -140,7 +140,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sBombmonLevelUpLearnset,
         .teachableLearnset = sBombmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 3, SPECIES_MISSIMON}),
+        .digivolutions = sBombmonDigivolveTable,
     },
 
     [SPECIES_BOMMON] =

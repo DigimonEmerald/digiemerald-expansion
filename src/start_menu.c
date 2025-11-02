@@ -49,6 +49,8 @@
 #include "constants/battle_frontier.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "ui_stat_editor.h"
+#include "ui_digivice.h"
 
 // Menu actions
 enum
@@ -66,6 +68,8 @@ enum
     MENU_ACTION_REST_FRONTIER,
     MENU_ACTION_RETIRE_FRONTIER,
     MENU_ACTION_PYRAMID_BAG,
+    MENU_ACTION_STAT_EDITOR,
+    MENU_ACTION_DIGIVICE,
     MENU_ACTION_DEBUG,
     MENU_ACTION_DEXNAV,
 };
@@ -108,6 +112,8 @@ static bool8 StartMenuSafariZoneRetireCallback(void);
 static bool8 StartMenuLinkModePlayerNameCallback(void);
 static bool8 StartMenuBattlePyramidRetireCallback(void);
 static bool8 StartMenuBattlePyramidBagCallback(void);
+static bool8 StartMenuStatEditorCallback(void);
+static bool8 StartMenuDigiviceCallback(void);
 static bool8 StartMenuDebugCallback(void);
 static bool8 StartMenuDexNavCallback(void);
 
@@ -203,6 +209,8 @@ static const struct MenuAction sStartMenuItems[] =
     [MENU_ACTION_REST_FRONTIER]   = {gText_MenuRest,    {.u8_void = StartMenuSaveCallback}},
     [MENU_ACTION_RETIRE_FRONTIER] = {gText_MenuRetire,  {.u8_void = StartMenuBattlePyramidRetireCallback}},
     [MENU_ACTION_PYRAMID_BAG]     = {gText_MenuBag,     {.u8_void = StartMenuBattlePyramidBagCallback}},
+    [MENU_ACTION_STAT_EDITOR]     = {gText_StatEditor,  {.u8_void = StartMenuStatEditorCallback}},
+    [MENU_ACTION_DIGIVICE   ]     = {gText_Digivice,    {.u8_void = StartMenuDigiviceCallback}},
     [MENU_ACTION_DEBUG]           = {sText_MenuDebug,   {.u8_void = StartMenuDebugCallback}},
     [MENU_ACTION_DEXNAV]          = {gText_MenuDexNav,  {.u8_void = StartMenuDexNavCallback}},
 };
@@ -385,6 +393,8 @@ static void BuildLinkModeStartMenu(void)
     {
         AddStartMenuAction(MENU_ACTION_POKENAV);
     }
+
+    //AddStartMenuAction(MENU_ACTION_STAT_EDITOR);
 
     AddStartMenuAction(MENU_ACTION_PLAYER_LINK);
     AddStartMenuAction(MENU_ACTION_OPTION);
@@ -1492,6 +1502,12 @@ void AppendToList(u8 *list, u8 *pos, u8 newEntry)
     (*pos)++;
 }
 
+static bool8 StartMenuStatEditorCallback(void)
+{
+    CreateTask(Task_OpenStatEditorFromStartMenu, 0);
+    return TRUE;
+}
+
 static bool8 StartMenuDexNavCallback(void)
 {
     CreateTask(Task_OpenDexNavFromStartMenu, 0);
@@ -1504,4 +1520,10 @@ void Script_ForceSaveGame(struct ScriptContext *ctx)
     ShowSaveInfoWindow();
     gMenuCallback = SaveCallback;
     sSaveDialogCallback = SaveSavingMessageCallback;
+}
+
+static bool8 StartMenuDigiviceCallback(void)
+{
+    CreateTask(Task_OpenDigiviceFromStartMenu, 0);
+    return TRUE;
 }
