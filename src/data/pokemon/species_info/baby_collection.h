@@ -55,7 +55,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_Argomon_f,
         .shinyPalette = gMonShinyPalette_Argomon_f,
         .iconSprite = gMonIcon_Argomon_f,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 4,
+        .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(1, -1, SHADOW_SIZE_S)
         FOOTPRINT(Argomon_f)
@@ -125,7 +125,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_Bombmon,
         .shinyPalette = gMonShinyPalette_Bombmon,
         .iconSprite = gMonIcon_Bombmon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 4,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 3, SHADOW_SIZE_L)
         FOOTPRINT(Bombmon)
@@ -194,7 +194,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_Bommon,
         .shinyPalette = gMonShinyPalette_Bommon,
         .iconSprite = gMonIcon_Bommon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 4,
+        .iconPalIndex = 0,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_BommonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 64),
@@ -485,7 +485,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_Chibickmon,
         .shinyPalette = gMonShinyPalette_Chibickmon,
         .iconSprite = gMonIcon_Chibickmon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 5, SHADOW_SIZE_M)
         FOOTPRINT(Chibickmon)
@@ -825,7 +825,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_Conomon,
         .shinyPalette = gMonShinyPalette_Conomon,
         .iconSprite = gMonIcon_Conomon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-3, 2, SHADOW_SIZE_S)
         FOOTPRINT(Conomon)
@@ -895,7 +895,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_Cotsucomon,
         .shinyPalette = gMonShinyPalette_Cotsucomon,
         .iconSprite = gMonIcon_Cotsucomon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 6, SHADOW_SIZE_M)
         FOOTPRINT(Cotsucomon)
@@ -966,7 +966,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_Curimon,
         .shinyPalette = gMonShinyPalette_Curimon,
         .iconSprite = gMonIcon_Curimon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 7, SHADOW_SIZE_L)
         FOOTPRINT(Curimon)
@@ -1245,7 +1245,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_Dodomon,
         .shinyPalette = gMonShinyPalette_Dodomon,
         .iconSprite = gMonIcon_Dodomon,
-        .iconPalIndex = 1,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(3, 0, SHADOW_SIZE_S)
         FOOTPRINT(Dodomon)
@@ -1337,7 +1337,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_Dokimon,
         .shinyPalette = gMonShinyPalette_Dokimon,
         .iconSprite = gMonIcon_Dokimon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 1,
 #if P_GENDER_DIFFERENCES
         .frontPicFemale = gMonFrontPic_DokimonF,
         .frontPicSizeFemale = MON_COORDS_SIZE(64, 56),
@@ -1489,7 +1489,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_Fufumon,
         .shinyPalette = gMonShinyPalette_Fufumon,
         .iconSprite = gMonIcon_Fufumon,
-        .iconPalIndex = P_GBA_STYLE_SPECIES_ICONS ? 1 : 2,
+        .iconPalIndex = 5,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(0, 0, SHADOW_SIZE_S)
         FOOTPRINT(Fufumon)
@@ -1568,7 +1568,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_Jyarimon,
         .shinyPalette = gMonShinyPalette_Jyarimon,
         .iconSprite = gMonIcon_Jyarimon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(0, 2, SHADOW_SIZE_S)
         FOOTPRINT(Jyarimon)
@@ -1643,7 +1643,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_Keemon,
         .shinyPalette = gMonShinyPalette_Keemon,
         .iconSprite = gMonIcon_Keemon,
-        .iconPalIndex = 2,
+        .iconPalIndex = 3,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(4, 15, SHADOW_SIZE_M)
         FOOTPRINT(Keemon)
@@ -1863,7 +1863,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .palette = gMonPalette_Kuramon,
         .shinyPalette = gMonShinyPalette_Kuramon,
         .iconSprite = gMonIcon_Kuramon,
-        .iconPalIndex = 0,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-4, 6, SHADOW_SIZE_M)
         FOOTPRINT(Kuramon)
