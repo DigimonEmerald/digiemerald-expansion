@@ -2039,7 +2039,7 @@ LittlerootTown_EventScript_Test::
 # 1023 "data/maps/LittlerootTown/scripts.pory"
 	givemon SPECIES_ARGOMON_F, 50
 # 1024 "data/maps/LittlerootTown/scripts.pory"
-	givemon SPECIES_ARGOMON_F, 1
+	givemon SPECIES_BOTAMON, 10
 # 1025 "data/maps/LittlerootTown/scripts.pory"
 	release
 	return
