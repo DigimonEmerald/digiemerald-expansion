@@ -285,3 +285,8 @@ static const struct Digivolution sTomorimonDigivolveTable[] = {
     {17, 6, 6, 8, 7, 7, SPECIES_ONIBIMON},
     DIGIVOLUTION_END,
 };
+
+static const struct Digivolution sArcadiamon_itDigivolveTable[] = {
+    {34, 13, 14, 15, 12, 17, SPECIES_ARCADIAMON_ROOKIE},
+    DIGIVOLUTION_END,
+};

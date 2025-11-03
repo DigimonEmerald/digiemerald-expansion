@@ -82,7 +82,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sArcadiamon_itLevelUpLearnset,
         .teachableLearnset = sArcadiamon_itTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 12, SPECIES_ARCADIAMON_ROOKIE}),
+        .digivolutions = sArcadiamon_itDigivolveTable,
     },
 
 
@@ -179,12 +179,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_BABYDMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 25,
-        .baseDefense   = 30,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 35,
+        .baseHP        = 35,
+        .baseAttack    = 30,
+        .baseDefense   = 35,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_FIRE, TYPE_DRAGON),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -258,12 +258,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_BIBIMON
     [SPECIES_BIBIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 20,
-        .baseDefense   = 30,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 35,
+        .baseHP        = 25,
+        .baseAttack    = 25,
+        .baseDefense   = 35,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -334,12 +334,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_BOSAMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 30,
-        .baseDefense   = 30,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 25,
+        .baseHP        = 35,
+        .baseAttack    = 35,
+        .baseDefense   = 35,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_NORMAL),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -512,12 +512,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_BUKAMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 25,
-        .baseDefense   = 25,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 30,
+        .baseHP        = 35,
+        .baseAttack    = 30,
+        .baseDefense   = 30,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_WATER),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -808,12 +808,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_CHAPMON] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 25,
-        .baseDefense   = 25,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 25,
+        .baseHP        = 30,
+        .baseAttack    = 30,
+        .baseDefense   = 30,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_WATER),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -1287,12 +1287,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_DEMIMERAMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 25,
-        .baseDefense   = 15,
-        .baseSpeed     = 50,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 20,
+        .baseHP        = 25,
+        .baseAttack    = 30,
+        .baseDefense   = 20,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 25,
         .types = MON_TYPES(TYPE_FIRE),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -1365,12 +1365,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_DEMIVEEMON
     [SPECIES_DEMIVEEMON] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 40,
-        .baseDefense   = 25,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 30,
+        .baseHP        = 30,
+        .baseAttack    = 45,
+        .baseDefense   = 30,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_FIGHTING),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -1440,12 +1440,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_DORIMON] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 40,
-        .baseDefense   = 25,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 30,
+        .baseHP        = 40,
+        .baseAttack    = 45,
+        .baseDefense   = 30,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_STEEL, TYPE_NORMAL),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -1584,12 +1584,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_FRIMON
     [SPECIES_FRIMON] =
     {
-        .baseHP        = 20,
-        .baseAttack    = 30,
-        .baseDefense   = 30,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 25,
+        .baseHP        = 25,
+        .baseAttack    = 35,
+        .baseDefense   = 35,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_ROCK),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -1663,12 +1663,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_GIGIMON] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 30,
-        .baseDefense   = 20,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 25,
+        .baseHP        = 30,
+        .baseAttack    = 35,
+        .baseDefense   = 25,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_FIRE, TYPE_DRAGON),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -1872,12 +1872,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_GUMMYMON
     [SPECIES_GUMMYMON] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 25,
-        .baseDefense   = 25,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 35,
+        .baseHP        = 45,
+        .baseAttack    = 30,
+        .baseDefense   = 30,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_NORMAL),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -1948,12 +1948,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_GURIMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 30,
-        .baseDefense   = 25,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 40,
-        .baseSpDefense = 25,
+        .baseHP        = 35,
+        .baseAttack    = 35,
+        .baseDefense   = 30,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_NORMAL),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -2098,12 +2098,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_HOPMON
     [SPECIES_HOPMON] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 30,
-        .baseDefense   = 30,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 25,
+        .baseHP        = 30,
+        .baseAttack    = 35,
+        .baseDefense   = 35,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_DRAGON),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -2260,12 +2260,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_KAPURIMON] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 40,
-        .baseDefense   = 60,
-        .baseSpeed     = 10,
-        .baseSpAttack  = 10,
-        .baseSpDefense = 10,
+        .baseHP        = 45,
+        .baseAttack    = 45,
+        .baseDefense   = 65,
+        .baseSpeed     = 15,
+        .baseSpAttack  = 15,
+        .baseSpDefense = 15,
         .types = MON_TYPES(TYPE_STEEL, TYPE_DARK),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -2420,12 +2420,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_KOKOMON
     [SPECIES_KOKOMON] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 40,
-        .baseDefense   = 35,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 25,
+        .baseHP        = 30,
+        .baseAttack    = 45,
+        .baseDefense   = 40,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_NORMAL),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -2948,12 +2948,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_MINOMON
     [SPECIES_MINOMON] =
     {
-        .baseHP        = 35,
-        .baseAttack    = 15,
-        .baseDefense   = 55,
-        .baseSpeed     = 10,
-        .baseSpAttack  = 15,
-        .baseSpDefense = 55,
+        .baseHP        = 40,
+        .baseAttack    = 20,
+        .baseDefense   = 60,
+        .baseSpeed     = 15,
+        .baseSpAttack  = 20,
+        .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_GRASS),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -3195,12 +3195,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_MOONMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 25,
-        .baseDefense   = 25,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 30,
+        .baseHP        = 35,
+        .baseAttack    = 30,
+        .baseDefense   = 30,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_DARK),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -3270,12 +3270,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_MOTIMON] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 25,
-        .baseDefense   = 30,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 25,
+        .baseHP        = 30,
+        .baseAttack    = 30,
+        .baseDefense   = 35,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_NORMAL),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -3550,12 +3550,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_NEGAMON
     [SPECIES_NEGAMON] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 25,
-        .baseDefense   = 25,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 30,
+        .baseHP        = 30,
+        .baseAttack    = 30,
+        .baseDefense   = 30,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_DARK),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -3622,12 +3622,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_NYAROMON] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 30,
-        .baseDefense   = 25,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 20,
+        .baseHP        = 30,
+        .baseAttack    = 35,
+        .baseDefense   = 30,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 25,
         .types = MON_TYPES(TYPE_NORMAL),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -3833,12 +3833,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_PAGUMON
     [SPECIES_PAGUMON] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 25,
-        .baseDefense   = 30,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 25,
+        .baseHP        = 30,
+        .baseAttack    = 30,
+        .baseDefense   = 35,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_DARK, TYPE_FLYING),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -4709,12 +4709,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_POROMON
     [SPECIES_POROMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 25,
-        .baseDefense   = 25,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 25,
+        .baseHP        = 35,
+        .baseAttack    = 30,
+        .baseDefense   = 30,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_FLYING),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -4888,12 +4888,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_PUSURIMON
     [SPECIES_PUSURIMON] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 30,
-        .baseDefense   = 30,
-        .baseSpeed     = 20,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 25,
+        .baseHP        = 30,
+        .baseAttack    = 35,
+        .baseDefense   = 35,
+        .baseSpeed     = 25,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_NORMAL),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -5032,12 +5032,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_SAKUTTOMON
     [SPECIES_SAKUTTOMON] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 35,
-        .baseDefense   = 30,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 20,
+        .baseHP        = 30,
+        .baseAttack    = 40,
+        .baseDefense   = 35,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 25,
         .types = MON_TYPES(TYPE_STEEL),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -5108,12 +5108,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_SUNMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 25,
-        .baseDefense   = 25,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 30,
+        .baseHP        = 35,
+        .baseAttack    = 30,
+        .baseDefense   = 30,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_FIRE),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -5323,12 +5323,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_TANEMON
     [SPECIES_TANEMON] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 25,
-        .baseDefense   = 30,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 25,
+        .baseHP        = 35,
+        .baseAttack    = 35,
+        .baseDefense   = 40,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_GRASS),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -5399,12 +5399,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_TOKOMON] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 30,
-        .baseDefense   = 25,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 25,
+        .baseHP        = 30,
+        .baseAttack    = 35,
+        .baseDefense   = 30,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_LIGHT, TYPE_NORMAL),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -5475,12 +5475,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_TOKOMON_X
     [SPECIES_TOKOMON_X] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 30,
-        .baseDefense   = 30,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 25,
+        .baseHP        = 30,
+        .baseAttack    = 35,
+        .baseDefense   = 35,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_LIGHT, TYPE_NORMAL),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -5554,12 +5554,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_TORIKARABALLMON] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 25,
-        .baseDefense   = 25,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 25,
+        .baseHP        = 30,
+        .baseAttack    = 30,
+        .baseDefense   = 30,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_FIRE, TYPE_NORMAL),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -5842,12 +5842,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_TSUNOMON
     [SPECIES_TSUNOMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 35,
-        .baseDefense   = 25,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 25,
+        .baseHP        = 35,
+        .baseAttack    = 40,
+        .baseDefense   = 35,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_NORMAL),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -5990,12 +5990,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_TUMBLEMON
     [SPECIES_TUMBLEMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 30,
-        .baseDefense   = 30,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 25,
-        .baseSpDefense = 25,
+        .baseHP        = 35,
+        .baseAttack    = 35,
+        .baseDefense   = 35,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 30,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_ROCK),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -6162,12 +6162,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_VIXIMON
     [SPECIES_VIXIMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 25,
-        .baseDefense   = 25,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 25,
+        .baseHP        = 35,
+        .baseAttack    = 30,
+        .baseDefense   = 30,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_NORMAL),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -6240,12 +6240,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_WANYAMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 30,
-        .baseDefense   = 25,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 35,
-        .baseSpDefense = 25,
+        .baseHP        = 35,
+        .baseAttack    = 35,
+        .baseDefense   = 30,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_NORMAL),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -6387,12 +6387,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_XIAOMON] =
     {
-        .baseHP        = 30,
-        .baseAttack    = 30,
-        .baseDefense   = 25,
-        .baseSpeed     = 25,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 25,
+        .baseHP        = 35,
+        .baseAttack    = 35,
+        .baseDefense   = 30,
+        .baseSpeed     = 30,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_NORMAL),
         .attribute = TYPE_FREE,
         .catchRate = 200,
@@ -6464,12 +6464,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 
     [SPECIES_YAAMON] =
     {
-        .baseHP        = 25,
-        .baseAttack    = 25,
-        .baseDefense   = 25,
-        .baseSpeed     = 30,
-        .baseSpAttack  = 30,
-        .baseSpDefense = 30,
+        .baseHP        = 30,
+        .baseAttack    = 30,
+        .baseDefense   = 30,
+        .baseSpeed     = 35,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_DARK),
         .attribute = TYPE_FREE,
         .catchRate = 200,
