@@ -290,3 +290,487 @@ static const struct Digivolution sArcadiamon_itDigivolveTable[] = {
     {34, 13, 14, 15, 12, 17, SPECIES_ARCADIAMON_ROOKIE},
     DIGIVOLUTION_END,
 };
+
+static const struct Digivolution sArgomon_itDigivolveTable[] = {
+    {28, 9, 8, 16, 9, 14, SPECIES_ARGOMON_ROOKIE},
+    {28, 12, 8, 19, 9, 14, SPECIES_AGUMON},
+    {31, 9, 8, 16, 12, 14, SPECIES_WORMMON},
+    {21, 9, 8, 16, 9, 16, SPECIES_LABRAMON},
+    {28, 9, 8, 19, 9, 14, SPECIES_GHOSTMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sBabydmonDigivolveTable[] = {
+    {27, 11, 12, 12, 13, 12, SPECIES_DRACOMON},
+    {27, 14, 12, 12, 13, 12, SPECIES_GUMDRAMON},
+    {28, 14, 13, 13, 13, 12, SPECIES_AGUMON_06},
+    {27, 11, 12, 15, 16, 12, SPECIES_AGUMON_EXPERT},
+    {27, 14, 12, 12, 13, 12, SPECIES_HACKMON},
+    {27, 11, 12, 12, 16, 12, SPECIES_OTAMAMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sBibimonDigivolveTable[] = {
+    {25, 10, 12, 13, 13, 14, SPECIES_PULSEMON},
+    {27, 10, 12, 15, 13, 14, SPECIES_SHOUTMON},
+    {25, 10, 14, 15, 13, 16, SPECIES_KUDAMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sBosamonDigivolveTable[] = {
+    {27, 12, 12, 11, 11, 11, SPECIES_ANGORAMON},
+    {27, 12, 12, 11, 11, 14, SPECIES_DRACMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sBudmonDigivolveTable[] = {
+    {25, 11, 16, 10, 16, 8, SPECIES_LALAMON},
+    {25, 13, 16, 12, 16, 8, SPECIES_AGUMON},
+    {25, 13, 16, 10, 18, 8, SPECIES_SNOWAGUMON},
+    {28, 11, 16, 10, 16, 8, SPECIES_GOMAMON},
+    {25, 11, 16, 10, 16, 8, SPECIES_LALAMON},
+    {25, 11, 16, 10, 18, 10, SPECIES_BETAMON},
+    {25, 11, 16, 10, 16, 11, SPECIES_CHUUMON},
+    {25, 11, 19, 10, 16, 8, SPECIES_PAWNCHESSMON_WHITE},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sBukamonDigivolveTable[] = {
+    {27, 11, 11, 12, 12, 11, SPECIES_GOMAMON},
+    {27, 11, 13, 12, 12, 13, SPECIES_SYAKOMON},
+    {27, 11, 14, 12, 12, 11, SPECIES_SNOWGOBLIMON},
+    {27, 14, 11, 12, 12, 11, SPECIES_MONMON},
+    {30, 11, 11, 12, 12, 11, SPECIES_CLEARAGUMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sCalumonDigivolveTable[] = {
+    {29, 11, 12, 10, 10, 14, SPECIES_SALAMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sChapmonDigivolveTable[] = {
+    {27, 11, 11, 12, 11, 12, SPECIES_BETAMON},
+    {27, 11, 11, 12, 11, 15, SPECIES_ELECMON},
+    {27, 11, 11, 15, 11, 12, SPECIES_FALCOMON_06},
+    {28, 13, 11, 12, 11, 12, SPECIES_GOBLIMON},
+    {27, 11, 11, 12, 14, 12, SPECIES_KAMEMON},
+    {27, 11, 11, 14, 11, 14, SPECIES_KUDAMON_06},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sChicchimonDigivolveTable[] = {
+    {30, 11, 12, 10, 13, 13, SPECIES_HYOKOMON},
+    {30, 11, 12, 13, 13, 13, SPECIES_PENGUINMON},
+    {30, 11, 12, 13, 13, 13, SPECIES_MUCHOMON},
+    {30, 11, 14, 12, 13, 13, SPECIES_FALCOMON_06},
+    {31, 12, 12, 12, 13, 13, SPECIES_DOTFALCOMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sDemimeramonDigivolveTable[] = {
+    {25, 11, 9, 14, 10, 16, SPECIES_CANDLEMON},
+    {25, 11, 9, 17, 10, 16, SPECIES_GHOSTMON},
+    {27, 11, 9, 14, 12, 16, SPECIES_VORVOMON},
+    {25, 11, 9, 16, 12, 16, SPECIES_LOOGAMON},
+    {25, 11, 9, 14, 13, 16, SPECIES_FLAMEMON},
+    {25, 11, 9, 14, 12, 18, SPECIES_TAPIRMON},
+    {25, 11, 9, 16, 11, 17, SPECIES_DEMIDEVIMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sDemiveemonDigivolveTable[] = {
+    {26, 14, 11, 12, 12, 12, SPECIES_VEEMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sDorimonDigivolveTable[] = {
+    {28, 14, 11, 12, 12, 11, SPECIES_DORUMON},
+    {29, 15, 12, 13, 13, 12, SPECIES_LOPMON},
+    {30, 14, 11, 12, 12, 13, SPECIES_ARURAUMON},
+    {30, 16, 11, 12, 12, 11, SPECIES_MONODRAMON},
+    {28, 14, 11, 12, 15, 11, SPECIES_SHAMANMON},
+    {28, 14, 11, 15, 12, 11, SPECIES_BLACKAGUMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sFrimonDigivolveTable[] = {
+    {25, 12, 12, 11, 11, 14, SPECIES_GAZIMON},
+    {25, 15, 12, 11, 11, 14, SPECIES_KOKABUTERIMON},
+    {25, 14, 12, 11, 11, 16, SPECIES_LIOLLMON},
+    {27, 14, 12, 11, 11, 14, SPECIES_BEARMON},
+    {25, 12, 12, 11, 11, 17, SPECIES_ELECMON},
+    {25, 14, 12, 11, 13, 14, SPECIES_OTAMAMON_RED},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sGigimonDigivolveTable[] = {
+    {26, 12, 10, 13, 11, 12, SPECIES_GUILMON},
+    {26, 12, 10, 13, 14, 12, SPECIES_SOLARMON},
+    {26, 12, 13, 13, 11, 12, SPECIES_HAGURUMON},
+    {28, 12, 10, 15, 11, 12, SPECIES_SHOUTMON},
+    {28, 14, 10, 13, 11, 12, SPECIES_GOBLIMON},
+    {27, 13, 10, 14, 13, 12, SPECIES_TENTOMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sGummymonDigivolveTable[] = {
+    {29, 11, 11, 11, 13, 12, SPECIES_TERRIERMON},
+    {29, 11, 11, 14, 13, 12, SPECIES_JAZAMON},
+    {29, 12, 11, 13, 14, 12, SPECIES_BULUCOMON},
+    {31, 13, 13, 11, 13, 12, SPECIES_TOYAGUMON},
+    {29, 13, 11, 13, 13, 12, SPECIES_RENAMON},
+    {29, 11, 11, 11, 15, 13, SPECIES_TAPIRMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sGurimonDigivolveTable[] = {
+    {27, 12, 11, 14, 11, 11, SPECIES_GAMMAMON},
+    {27, 15, 11, 14, 11, 11, SPECIES_MONMON},
+    {27, 12, 11, 16, 13, 11, SPECIES_BOKOMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sHiyarimonDigivolveTable[] = {
+    {24, 8, 11, 13, 18, 9, SPECIES_BULUCOMON},
+    {26, 10, 11, 13, 18, 9, SPECIES_BEARMON},
+    {24, 8, 11, 16, 18, 9, SPECIES_PENGUINMON},
+    {24, 8, 14, 13, 18, 9, SPECIES_SNOWGOBLIMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sHopmonDigivolveTable[] = {
+    {26, 12, 12, 12, 11, 12, SPECIES_MONODRAMON},
+    {26, 12, 12, 12, 14, 12, SPECIES_GABUMON},
+    {26, 12, 15, 12, 11, 12, SPECIES_JAZAMON},
+    {26, 12, 12, 12, 11, 15, SPECIES_JUNKMON},
+    {26, 15, 12, 12, 11, 12, SPECIES_VEEMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sKakkinmonDigivolveTable[] = {
+    {27, 8, 20, 9, 15, 7, SPECIES_LUDOMON},
+    {27, 11, 20, 9, 15, 7, SPECIES_SPADAMON},
+    {27, 10, 20, 9, 15, 8, SPECIES_ZUBAMON},
+    {27, 8, 20, 9, 15, 10, SPECIES_ESPIMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sKapurimonDigivolveTable[] = {
+    {29, 14, 18, 8, 8, 8, SPECIES_KOKUWAMON},
+    {29, 14, 21, 8, 8, 8, SPECIES_COMMANDRAMON},
+    {31, 14, 18, 8, 10, 8, SPECIES_PHASCOMON},
+    {30, 15, 20, 8, 8, 8, SPECIES_PAWNCHESSMON_BLACK},
+    {29, 14, 18, 8, 8, 11, SPECIES_ESPIMON},
+    {29, 17, 18, 8, 8, 8, SPECIES_KOKABUTERIMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sKokomonDigivolveTable[] = {
+    {26, 14, 13, 11, 11, 11, SPECIES_LOPMON},
+    {26, 14, 13, 14, 11, 11, SPECIES_RYUDAMON},
+    {26, 14, 15, 11, 13, 11, SPECIES_SHADOWTOYAGUMON},
+    {26, 14, 13, 13, 12, 12, SPECIES_DEMIDEVIMON},
+    {26, 14, 13, 11, 14, 11, SPECIES_SHAMANMON},
+    {28, 14, 13, 11, 13, 11, SPECIES_WORMMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sKoromonDigivolveTable[] = {
+    {26, 12, 11, 12, 10, 10, SPECIES_AGUMON},
+    {26, 15, 11, 12, 10, 10, SPECIES_AGUMON_06},
+    {26, 12, 11, 15, 10, 10, SPECIES_BLACKAGUMON},
+    {26, 12, 11, 14, 12, 10, SPECIES_AGUMON_EXPERT},
+    {26, 14, 11, 12, 12, 10, SPECIES_SNOWAGUMON},
+    {26, 14, 11, 13, 12, 10, SPECIES_SNOWAGUMON_06},
+    {26, 12, 11, 12, 12, 12, SPECIES_BETAMON},
+    {27, 14, 11, 13, 11, 10, SPECIES_BUSHIAGUMON},
+    {26, 12, 11, 12, 13, 10, SPECIES_DOTAGUMON},
+    {26, 12, 11, 14, 12, 9, SPECIES_KUNEMON},
+    {34, 17, 14, 15, 12, 11, SPECIES_LUCEMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sKozenimonDigivolveTable[] = {
+    {26, 13, 16, 10, 12, 10, SPECIES_ZENIMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sKyaromonDigivolveTable[] = {
+    {23, 12, 12, 11, 13, 9, SPECIES_KUDAMON_06},
+    {23, 12, 12, 11, 15, 12, SPECIES_PALMON},
+    {23, 12, 12, 12, 14, 11, SPECIES_IMPMON},
+    {23, 12, 12, 14, 13, 9, SPECIES_CANDLEMON},
+    {23, 12, 14, 11, 15, 9, SPECIES_KAMEMON},
+    //{23, 12, 12, 11, 13, 9, SPECIES_HANIMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sKyokyomonDigivolveTable[] = {
+    {28, 13, 7, 7, 13, 13, SPECIES_RYUDAMON},
+    {29, 14, 7, 8, 13, 13, SPECIES_GUILMON_X},
+    {28, 13, 10, 7, 13, 13, SPECIES_COMMANDRAMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sKyupimonDigivolveTable[] = {
+    {32, 6, 6, 11, 21, 9, SPECIES_SALAMON},
+    {33, 7, 7, 11, 22, 9, SPECIES_TERRIERMON},
+    {35, 6, 6, 11, 21, 9, SPECIES_PATAMON},
+    {43, 6, 6, 14, 29, 11, SPECIES_LUCEMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sMinomonDigivolveTable[] = {
+    {28, 9, 17, 9, 17, 8, SPECIES_WORMMON},
+    {28, 9, 17, 9, 20, 8, SPECIES_TENTOMON},
+    {28, 9, 17, 11, 19, 8, SPECIES_KUNEMON},
+    {28, 9, 20, 9, 17, 8, SPECIES_KOKUWAMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sMissimonDigivolveTable[] = {
+    {24, 11, 10, 13, 11, 17, SPECIES_COMMANDRAMON},
+    {24, 11, 10, 13, 11, 20, SPECIES_DRACMON},
+    {27, 11, 10, 13, 11, 17, SPECIES_GIZAMON},
+    {24, 11, 13, 13, 11, 17, SPECIES_HAGURUMON},
+    {24, 11, 10, 16, 11, 17, SPECIES_PENGUINMON},
+    {24, 11, 10, 13, 14, 17, SPECIES_TENTOMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sMonimonDigivolveTable[] = {
+    {28, 11, 18, 15, 9, 9, SPECIES_MONITAMON},
+    {28, 11, 21, 15, 9, 9, SPECIES_HAGURUMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sMoonmonDigivolveTable[] = {
+    {27, 11, 11, 11, 12, 12, SPECIES_LUNAMON},
+    {27, 11, 11, 13, 14, 12, SPECIES_LOPMON},
+    {27, 11, 11, 11, 12, 15, SPECIES_GAZIMON},
+    {27, 11, 11, 14, 12, 12, SPECIES_BLACKAGUMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sMotimonDigivolveTable[] = {
+    {26, 11, 12, 11, 11, 12, SPECIES_TENTOMON},
+    {26, 14, 12, 11, 11, 12, SPECIES_HACKMON},
+    {26, 11, 15, 11, 11, 12, SPECIES_CRABMON},
+    {26, 11, 12, 14, 11, 12, SPECIES_FANBEEMON},
+    {27, 11, 12, 12, 12, 12, SPECIES_MORPHOMON},
+    {28, 11, 12, 11, 13, 12, SPECIES_WORMMON},
+    {26, 11, 12, 13, 13, 12, SPECIES_DOKUNEMON},
+    DIGIVOLUTION_END,
+};
+
+// static const struct Digivolution sNegamonDigivolveTable[] = {
+//     {28, 11, 18, 15, 9, 9, SPECIES_NEGAMON_MEGA},
+//     DIGIVOLUTION_END,
+// };
+
+static const struct Digivolution sNyaromonDigivolveTable[] = {
+    {26, 12, 11, 13, 10, 11, SPECIES_SALAMON},
+    {26, 12, 14, 13, 10, 11, SPECIES_TINKERMON},
+    {26, 12, 11, 15, 12, 11, SPECIES_AGUMON_EXPERT},
+    {26, 12, 11, 13, 10, 14, SPECIES_HAWKMON},
+    {26, 12, 11, 14, 10, 13, SPECIES_BIYOMON},
+    {26, 14, 11, 14, 10, 11, SPECIES_RENAMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sPagumonDigivolveTable[] = {
+    {26, 11, 12, 12, 11, 12, SPECIES_GIZAMON},
+    {26, 11, 12, 12, 11, 15, SPECIES_GAZIMON},
+    {26, 11, 12, 13, 12, 13, SPECIES_IMPMON},
+    {26, 11, 12, 15, 11, 12, SPECIES_DEMIDEVIMON},
+    {27, 12, 13, 12, 11, 12, SPECIES_TSUKAIMON},
+    {26, 11, 15, 12, 11, 12, SPECIES_GOTSUMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sPickmon_silverDigivolveTable[] = {
+    {32, 12, 17, 8, 8, 8, SPECIES_STARMON_2010},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sPickmon_whiteDigivolveTable[] = {
+    {28, 9, 11, 15, 14, 15, SPECIES_STARMON_2010},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sPickmon_redDigivolveTable[] = {
+    {29, 13, 14, 10, 9, 10, SPECIES_STARMON_2010},
+    {31, 15, 14, 10, 9, 10, SPECIES_GUILMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sPinamonDigivolveTable[] = {
+    {27, 10, 11, 10, 10, 19, SPECIES_FALCOMON_06},
+    {27, 10, 11, 11, 11, 20, SPECIES_LALAMON},
+    {27, 10, 11, 10, 10, 22, SPECIES_ELECMON},
+    {27, 12, 11, 12, 10, 19, SPECIES_FALCOMON},
+    {27, 10, 11, 13, 10, 19, SPECIES_SWIMMON},
+    {27, 10, 11, 10, 13, 19, SPECIES_MUSHROOMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sPoromonDigivolveTable[] = {
+    {27, 11, 11, 12, 11, 11, SPECIES_HAWKMON},
+    {27, 11, 14, 12, 11, 11, SPECIES_TINKERMON},
+    {27, 11, 11, 12, 14, 11, SPECIES_GABUMON},
+    {27, 11, 11, 15, 11, 11, SPECIES_FALCOMON_06},
+    {27, 14, 11, 12, 11, 11, SPECIES_POMUMON},
+    //{27, 11, 11, 12, 11, 11, SPECIES_UKKOMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sPuroromonDigivolveTable[] = {
+    {28, 14, 8, 14, 8, 16, SPECIES_FANBEEMON},
+    {28, 16, 8, 14, 10, 16, SPECIES_DORUMON},
+    {28, 14, 8, 17, 8, 16, SPECIES_RYUDAMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sPusurimonDigivolveTable[] = {
+    {26, 12, 12, 12, 11, 10, SPECIES_HERISSMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sPuyoyomonDigivolveTable[] = {
+    {23, 8, 12, 12, 16, 16, SPECIES_JELLYMON},
+    {23, 8, 13, 13, 17, 16, SPECIES_KODOKUGUMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sSakuttomonDigivolveTable[] = {
+    {26, 13, 12, 11, 10, 11, SPECIES_ZUBAMON},
+    {26, 16, 12, 11, 10, 11, SPECIES_SPADAMON},
+    {26, 13, 12, 14, 10, 11, SPECIES_RYUDAMON},
+    {26, 13, 15, 11, 10, 11, SPECIES_LUDOMON},
+    {26, 15, 12, 11, 11, 12, SPECIES_HACKMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sSunmonDigivolveTable[] = {
+    {27, 11, 11, 11, 12, 12, SPECIES_CORONAMON},
+    {29, 13, 11, 11, 12, 12, SPECIES_GUILMON},
+    {28, 11, 11, 12, 12, 13, SPECIES_KUDAMON_06},
+    {27, 11, 11, 14, 12, 12, SPECIES_SALAMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sTanemonDigivolveTable[] = {
+    {27, 12, 13, 12, 12, 12, SPECIES_PALMON},
+    {27, 12, 13, 13, 13, 13, SPECIES_LALAMON},
+    {27, 12, 13, 12, 15, 12, SPECIES_FLORAMON},
+    {27, 15, 13, 12, 12, 12, SPECIES_POMUMON},
+    {27, 12, 13, 12, 14, 14, SPECIES_BETAMON},
+    {30, 12, 13, 12, 12, 12, SPECIES_GOBLIMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sTokomonDigivolveTable[] = {
+    {26, 12, 11, 12, 11, 11, SPECIES_PATAMON},
+    {26, 12, 14, 12, 11, 11, SPECIES_CRABMON},
+    {28, 12, 11, 14, 11, 11, SPECIES_SHOUTMON},
+    //{26, 12, 11, 12, 11, 11, SPECIES_SISTERMON_BLANC},
+    {34, 15, 14, 15, 14, 14, SPECIES_LUCEMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sTokomon_xDigivolveTable[] = {
+    {26, 12, 12, 12, 11, 11, SPECIES_RENAMON_X},
+    {26, 12, 12, 12, 14, 11, SPECIES_GABUMON_X},
+    {26, 12, 12, 15, 11, 11, SPECIES_AGUMON_X},
+    {26, 12, 15, 12, 11, 11, SPECIES_HERISSMON},
+    //{26, 12, 12, 12, 11, 11, SPECIES_SISTERMON_BLANC},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sTorikaraballmonDigivolveTable[] = {
+    {26, 11, 11, 12, 11, 12, SPECIES_BURGERMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sTsumemonDigivolveTable[] = {
+    {31, 17, 7, 13, 10, 12, SPECIES_KERAMON},
+    {31, 17, 7, 13, 13, 12, SPECIES_BLACKGABUMON},
+    {31, 17, 7, 16, 10, 12, SPECIES_BLACKAGUMON},
+    {31, 17, 9, 13, 12, 12, SPECIES_SHADOWTOYAGUMON},
+    {31, 20, 7, 13, 10, 12, SPECIES_KOTEMON},
+    {32, 18, 7, 14, 12, 12, SPECIES_SHAMANMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sTsunomonDigivolveTable[] = {
+    {27, 13, 12, 11, 11, 12, SPECIES_GABUMON},
+    {27, 13, 12, 11, 14, 12, SPECIES_BLACKGABUMON},
+    {27, 13, 12, 11, 11, 15, SPECIES_PSYCHEMON},
+    {27, 13, 14, 11, 11, 14, SPECIES_SYAKOMON},
+    {28, 14, 12, 11, 12, 13, SPECIES_DRACOMON},
+    {27, 13, 12, 14, 11, 12, SPECIES_ELECMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sTumblemonDigivolveTable[] = {
+    {27, 12, 12, 11, 11, 11, SPECIES_SUNARIZAMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sUpamonDigivolveTable[] = {
+    {30, 9, 13, 13, 11, 12, SPECIES_ARMADILLOMON},
+    {30, 9, 13, 16, 11, 12, SPECIES_AGUMON},
+    {33, 9, 13, 13, 11, 12, SPECIES_GIZAMON},
+    {32, 9, 13, 13, 11, 13, SPECIES_PATAMON},
+    {30, 9, 13, 13, 14, 12, SPECIES_SANGOMON},
+    {30, 9, 13, 16, 11, 12, SPECIES_SWIMMON},
+    {30, 12, 13, 13, 11, 12, SPECIES_VEEMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sViximonDigivolveTable[] = {
+    {27, 11, 11, 12, 11, 11, SPECIES_RENAMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sWanyamonDigivolveTable[] = {
+    {27, 12, 11, 13, 11, 11, SPECIES_GAOMON},
+    {27, 12, 11, 13, 11, 14, SPECIES_ELECMON},
+    {29, 14, 11, 13, 11, 11, SPECIES_BEARMON},
+    {27, 13, 12, 14, 11, 12, SPECIES_STRABIMON},
+    {27, 14, 11, 13, 13, 11, SPECIES_RENAMON},
+    {27, 12, 14, 13, 11, 11, SPECIES_PAWNCHESSMON_WHITE},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sXiaomonDigivolveTable[] = {
+    {27, 12, 11, 12, 11, 11, SPECIES_LABRAMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sYaamonDigivolveTable[] = {
+    {26, 11, 11, 12, 12, 12, SPECIES_IMPMON},
+    {26, 13, 11, 12, 14, 12, SPECIES_DORUMON},
+    {26, 11, 14, 12, 12, 12, SPECIES_HERISSMON},
+    {26, 11, 11, 12, 15, 12, SPECIES_KERAMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sYokomonDigivolveTable[] = {
+    {30, 9, 14, 15, 13, 7, SPECIES_BIYOMON},
+    {30, 9, 14, 18, 13, 7, SPECIES_CUTEMON},
+    {32, 9, 14, 15, 15, 7, SPECIES_PHASCOMON},
+    {30, 9, 14, 15, 13, 10, SPECIES_ELECMON_VIOLET},
+    {30, 9, 14, 17, 13, 9, SPECIES_LUXMON},
+    //{30, 9, 14, 15, 13, 7, SPECIES_PTEROMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sOnibimonDigivolveTable[] = {
+    //{26, 10, 9, 15, 13, 11, SPECIES_WANKOMON},
+    {26, 12, 9, 15, 15, 11, SPECIES_RENAMON},
+    //{26, 10, 9, 15, 13, 11, SPECIES_HANIMON},
+    //{26, 10, 9, 15, 13, 11, SPECIES_GASAMON},
+    DIGIVOLUTION_END,
+};

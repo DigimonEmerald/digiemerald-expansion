@@ -15255,12 +15255,12 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_FAMILY_STRABIMON
     [SPECIES_STRABIMON] =
     {
-        .baseHP        = 52,
-        .baseAttack    = 57,
-        .baseDefense   = 54,
-        .baseSpeed     = 56,
-        .baseSpAttack  = 52,
-        .baseSpDefense = 53,
+        .baseHP        = 50,
+        .baseAttack    = 55,
+        .baseDefense   = 55,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_DARK),
         .attribute = TYPE_FREE,
         .evYield_Attack    = 2,

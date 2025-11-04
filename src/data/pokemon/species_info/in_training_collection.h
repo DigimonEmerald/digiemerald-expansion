@@ -170,11 +170,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sArgomon_itLevelUpLearnset,
         .teachableLearnset = sArgomon_itTeachableLearnset,
         .eggMoveLearnset = sArgomon_itEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_AGUMON, CONDITIONS({IF_SPATK, 15})},
-                                {EVO_LEVEL, 0, SPECIES_LABRAMON, CONDITIONS({IF_SPD, 11})},
-                                {EVO_LEVEL, 0, SPECIES_GHOSTMON, CONDITIONS({IF_SPDEF, 10})},
-                                {EVO_LEVEL, 0, SPECIES_WORMMON, CONDITIONS({IF_HP, 25})},
-                                {EVO_LEVEL, 11, SPECIES_ARGOMON_ROOKIE}),
+        .digivolutions = sArgomon_itDigivolveTable,
     },
 
     [SPECIES_BABYDMON] =
@@ -247,11 +243,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sBabydmonLevelUpLearnset,
         .teachableLearnset = sBabydmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_AGUMON_EXPERT, CONDITIONS({IF_SPATK, 19})},
-                                {EVO_LEVEL, 0, SPECIES_HACKMON, CONDITIONS({IF_ATK, 15})},
-                                {EVO_LEVEL, 0, SPECIES_GUMDRAMON, CONDITIONS({IF_SPD, 16})},
-                                {EVO_LEVEL, 0, SPECIES_AGUMON_06, CONDITIONS({IF_HP, 33})},
-                                {EVO_LEVEL, 14, SPECIES_DRACOMON}),
+        .digivolutions = sBabydmonDigivolveTable,
     },
 #endif //P_FAMILY_ARGOMON_IT
 
@@ -327,9 +319,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sBibimonLevelUpLearnset,
         .teachableLearnset = sBibimonTeachableLearnset,
         .eggMoveLearnset = sBibimonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_KUDAMON, CONDITIONS({IF_SPDEF, 14})},
-                                {EVO_LEVEL, 0, SPECIES_SHOUTMON, CONDITIONS({IF_SPATK, 13})},
-                                {EVO_LEVEL, 12, SPECIES_PULSEMON}),
+        .digivolutions = sBibimonDigivolveTable,
     },
 
     [SPECIES_BOSAMON] =
@@ -418,8 +408,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sBosamonLevelUpLearnset,
         .teachableLearnset = sBosamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_DRACMON, CONDITIONS({IF_SPATK, 13})},
-                                {EVO_LEVEL, 12, SPECIES_ANGORAMON}),
+        .digivolutions = sBosamonDigivolveTable,
     },
 #endif //P_FAMILY_BIBIMON
 
@@ -503,11 +492,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sBudmonTeachableLearnset,
         .eggMoveLearnset = sBudmonEggMoveLearnset,
         .formSpeciesIdTable = sBudmonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_TOYAGUMON, CONDITIONS({IF_SPD, 14})},
-                                {EVO_LEVEL, 0, SPECIES_DOKUNEMON, CONDITIONS({IF_SPATK, 16})},
-                                {EVO_LEVEL, 0, SPECIES_PALMON, CONDITIONS({IF_ATK, 16})},
-                                {EVO_LEVEL, 0, SPECIES_MUSHROOMON, CONDITIONS({IF_HP, 32})},
-                                {EVO_LEVEL, 14, SPECIES_LALAMON}),
+        .digivolutions = sBudmonDigivolveTable,
     },
 
     [SPECIES_BUKAMON] =
@@ -586,11 +571,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sBukamonLevelUpLearnset,
         .teachableLearnset = sBukamonTeachableLearnset,
         .formSpeciesIdTable = sBukamonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SNOWAGUMON, CONDITIONS({IF_SPATK, 15})},
-                                {EVO_LEVEL, 0, SPECIES_CRABMON, CONDITIONS({IF_DEF, 14})},
-                                {EVO_LEVEL, 0, SPECIES_OTAMAMON, CONDITIONS({IF_SPDEF, 14})},
-                                {EVO_LEVEL, 0, SPECIES_BETAMON, CONDITIONS({IF_SPD, 15})},
-                                {EVO_LEVEL, 13, SPECIES_GOMAMON}),
+        .digivolutions = sBukamonDigivolveTable,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MOON_STONE, SPECIES_LUNAMON},
+                                {EVO_ITEM, ITEM_SUN_STONE, SPECIES_CORONAMON}),
     },
 
 #if P_ALOLAN_FORMS
@@ -803,7 +786,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .eggMoveLearnset = sCalumonEggMoveLearnset,
         .formSpeciesIdTable = sCalumonFormSpeciesIdTable,
         .formChangeTable = sCalumonFormChangeTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SALAMON, CONDITIONS({IF_SPATK, 11})}),
+        .digivolutions = sCalumonDigivolveTable,
     },
 
     [SPECIES_CHAPMON] =
@@ -874,11 +857,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sChapmonLevelUpLearnset,
         .teachableLearnset = sChapmonTeachableLearnset,
         .formSpeciesIdTable = sChapmonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_KUDAMON_06, CONDITIONS({IF_SPDEF, 17})},
-                                {EVO_LEVEL, 0, SPECIES_ELECMON, CONDITIONS({IF_ATK, 15})},
-                                {EVO_LEVEL, 0, SPECIES_FALCOMON_06, CONDITIONS({IF_SPD, 16})},
-                                {EVO_LEVEL, 0, SPECIES_BETAMON, CONDITIONS({IF_SPATK, 16})},
-                                {EVO_LEVEL, 15, SPECIES_KAMEMON}),
+        .digivolutions = sChapmonDigivolveTable,
     },
 
 #if P_ALOLAN_FORMS
@@ -1277,11 +1256,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sChicchimonLevelUpLearnset,
         .teachableLearnset = sChicchimonTeachableLearnset,
         .eggMoveLearnset = sChicchimonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_DOTFALCOMON, CONDITIONS({IF_HP, 30})},
-                                {EVO_LEVEL, 0, SPECIES_MUCHOMON, CONDITIONS({IF_SPATK, 14})},
-                                {EVO_LEVEL, 0, SPECIES_PENGUINMON, CONDITIONS({IF_ATK, 14})},
-                                {EVO_LEVEL, 0, SPECIES_FALCOMON, CONDITIONS({IF_SPD, 16})},
-                                {EVO_LEVEL, 13, SPECIES_HYOKOMON}),
+        .digivolutions = sChicchimonDigivolveTable,
     },
 
 
@@ -1354,11 +1329,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sDemimeramonLevelUpLearnset,
         .teachableLearnset = sDemimeramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_GOTSUMON, CONDITIONS({IF_DEF, 16})},
-                                {EVO_LEVEL, 0, SPECIES_CORONAMON, CONDITIONS({IF_SPATK, 19})},
-                                {EVO_LEVEL, 0, SPECIES_FLAMEMON, CONDITIONS({IF_ATK, 16})},
-                                {EVO_LEVEL, 0, SPECIES_VORVOMON, CONDITIONS({IF_SPD, 18})},
-                                {EVO_LEVEL, 16, SPECIES_CANDLEMON}),
+        .digivolutions = sDemimeramonDigivolveTable,
     },
 #endif //P_FAMILY_CHICCHIMON
 
@@ -1435,7 +1406,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sDemiveemonLevelUpLearnset,
         .teachableLearnset = sDemiveemonTeachableLearnset,
         .eggMoveLearnset = sDemiveemonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_VEEMON}),
+        .digivolutions = sDemiveemonDigivolveTable,
     },
 
     [SPECIES_DORIMON] =
@@ -1508,11 +1479,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sDorimonLevelUpLearnset,
         .teachableLearnset = sDorimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_BLACKAGUMON, CONDITIONS({IF_HP, 30})},
-                                {EVO_LEVEL, 0, SPECIES_SHAMANMON, CONDITIONS({IF_SPATK, 14})},
-                                {EVO_LEVEL, 0, SPECIES_MONODRAMON, CONDITIONS({IF_ATK, 15})},
-                                {EVO_LEVEL, 0, SPECIES_ARMADILLOMON, CONDITIONS({IF_DEF, 15})},
-                                {EVO_LEVEL, 0, SPECIES_DORUMON}),
+        .digivolutions = sDorimonDigivolveTable,
     },
 
 #if P_GEN_9_CROSS_EVOS
@@ -1654,11 +1621,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sFrimonTeachableLearnset,
         .eggMoveLearnset = sFrimonEggMoveLearnset,
         .formSpeciesIdTable = sFrimonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_KOKABUTERIMON, CONDITIONS({IF_SPATK, 13})},
-                                {EVO_LEVEL, 0, SPECIES_BEARMON, CONDITIONS({IF_DEF, 15})},
-                                {EVO_LEVEL, 0, SPECIES_GAZIMON, CONDITIONS({IF_SPD, 14})},
-                                {EVO_LEVEL, 0, SPECIES_ELECMON_VIOLET, CONDITIONS({IF_ATK, 14})},
-                                {EVO_LEVEL, 12, SPECIES_LIOLLMON}),
+        .digivolutions = sFrimonDigivolveTable,
     },
 
     [SPECIES_GIGIMON] =
@@ -1728,11 +1691,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sGigimonLevelUpLearnset,
         .teachableLearnset = sGigimonTeachableLearnset,
         .formSpeciesIdTable = sGigimonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SHOUTMON, CONDITIONS({IF_HP, 35})},
-                                {EVO_LEVEL, 0, SPECIES_HAGURUMON, CONDITIONS({IF_DEF, 16})},
-                                {EVO_LEVEL, 0, SPECIES_GOBLIMON, CONDITIONS({IF_ATK, 18})},
-                                {EVO_LEVEL, 0, SPECIES_SOLARMON, CONDITIONS({IF_SPATK, 17})},
-                                {EVO_LEVEL, 16, SPECIES_GUILMON}),
+        .digivolutions = sGigimonDigivolveTable,
     },
 
 #if P_HISUIAN_FORMS
@@ -1939,11 +1898,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sGummymonLevelUpLearnset,
         .teachableLearnset = sGummymonTeachableLearnset,
         .eggMoveLearnset = sGummymonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_CLEARAGUMON, CONDITIONS({IF_DEF, 14})},
-                                {EVO_LEVEL, 0, SPECIES_TAPIRMON, CONDITIONS({IF_SPATK, 15})},
-                                {EVO_LEVEL, 0, SPECIES_GAOMON, CONDITIONS({IF_ATK, 16})},
-                                {EVO_LEVEL, 0, SPECIES_JAZAMON, CONDITIONS({IF_SPD, 17})},
-                                {EVO_LEVEL, 14, SPECIES_TERRIERMON}),
+        .digivolutions = sGummymonDigivolveTable,
     },
 
     [SPECIES_GURIMON] =
@@ -2016,9 +1971,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sGurimonLevelUpLearnset,
         .teachableLearnset = sGurimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_BOKOMON, CONDITIONS({IF_SPATK, 13})},
-                                {EVO_LEVEL, 0, SPECIES_MONMON, CONDITIONS({IF_SPD, 13})},
-                                {EVO_LEVEL, 12, SPECIES_GAMMAMON}),
+        .digivolutions = sGurimonDigivolveTable,
     },
 
     [SPECIES_HIYARIMON] =
@@ -2087,9 +2040,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sHiyarimonLevelUpLearnset,
         .teachableLearnset = sHiyarimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_BEARMON, CONDITIONS({IF_DEF, 15})},
-                                {EVO_LEVEL, 0, SPECIES_BULUCOMON, CONDITIONS({IF_ATK, 15})},
-                                {EVO_LEVEL, 14, SPECIES_SNOWGOBLIMON}),
+        .digivolutions = sHiyarimonDigivolveTable,
     },
 
 
@@ -2166,11 +2117,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sHopmonLevelUpLearnset,
         .teachableLearnset = sHopmonTeachableLearnset,
         .eggMoveLearnset = sHopmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_VEEMON, CONDITIONS({IF_ATK, 16})},
-                                {EVO_LEVEL, 0, SPECIES_GABUMON, CONDITIONS({IF_ATK, 18})},
-                                {EVO_LEVEL, 0, SPECIES_JUNKMON, CONDITIONS({IF_ATK, 17})},
-                                {EVO_LEVEL, 0, SPECIES_JAZAMON, CONDITIONS({IF_ATK, 17})},
-                                {EVO_LEVEL, 16, SPECIES_MONODRAMON}),
+        .digivolutions = sHopmonDigivolveTable,
     },
 
     [SPECIES_KAKKINMON] =
@@ -2254,8 +2201,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sKakkinmonLevelUpLearnset,
         .teachableLearnset = sKakkinmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_ESPIMON, CONDITIONS({IF_SPATK, 14})},
-                                {EVO_LEVEL, 13, SPECIES_LUDOMON}),
+        .digivolutions = sKakkinmonDigivolveTable,
     },
 
     [SPECIES_KAPURIMON] =
@@ -2339,11 +2285,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sKapurimonTeachableLearnset,
         .formSpeciesIdTable = sKapurimonFormSpeciesIdTable,
         .formChangeTable = sKapurimonFormChangeTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_PHASCOMON, CONDITIONS({IF_SPATK, 16})},
-                                {EVO_LEVEL, 0, SPECIES_PAWNCHESSMON_WHITE, CONDITIONS({IF_HP, 34})},
-                                {EVO_LEVEL, 0, SPECIES_HAGURUMON, CONDITIONS({IF_DEF, 19})},
-                                {EVO_LEVEL, 0, SPECIES_KOTEMON, CONDITIONS({IF_ATK, 15})},
-                                {EVO_LEVEL, 15, SPECIES_KOKUWAMON}),
+        .digivolutions = sKapurimonDigivolveTable,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -2488,11 +2430,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sKokomonLevelUpLearnset,
         .teachableLearnset = sKokomonTeachableLearnset,
         .eggMoveLearnset = sKokomonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SHADOWTOYAGUMON, CONDITIONS({IF_ATK, 15})},
-                                {EVO_LEVEL, 0, SPECIES_WORMMON, CONDITIONS({IF_SPDEF, 16})},
-                                {EVO_LEVEL, 0, SPECIES_RYUDAMON, CONDITIONS({IF_DEF, 16})},
-                                {EVO_LEVEL, 0, SPECIES_DEMIDEVIMON, CONDITIONS({IF_SPATK, 15})},
-                                {EVO_LEVEL, 14, SPECIES_LOPMON}),
+        .digivolutions = sKokomonDigivolveTable,
     },
 
     [SPECIES_KOROMON] =
@@ -2562,11 +2500,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sKoromonLevelUpLearnset,
         .teachableLearnset = sKoromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SHOUTMON, CONDITIONS({IF_SPATK, 16})},
-                                {EVO_LEVEL, 0, SPECIES_BUSHIAGUMON, CONDITIONS({IF_HP, 36})},
-                                {EVO_LEVEL, 0, SPECIES_DOTAGUMON, CONDITIONS({IF_SPDEF, 16})},
-                                {EVO_LEVEL, 0, SPECIES_AGUMON_06, CONDITIONS({IF_ATK, 16})},
-                                {EVO_LEVEL, 16, SPECIES_AGUMON}),
+        .digivolutions = sKoromonDigivolveTable,
     },
 
 #if P_UPDATED_EXP_YIELDS >= GEN_8
@@ -2649,7 +2583,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sKozenimonTeachableLearnset,
         .formSpeciesIdTable = sKozenimonFormSpeciesIdTable,
         .formChangeTable = sKozenimonFormChangeTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_ZENIMON}),
+        .digivolutions = sKozenimonDigivolveTable,
     },
 
 #if P_GIGANTAMAX_FORMS
@@ -2785,11 +2719,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sKyaromonLevelUpLearnset,
         .teachableLearnset = sKyaromonTeachableLearnset,
         .eggMoveLearnset = sKyaromonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_KUDAMON_06, CONDITIONS({IF_SPDEF, 15})},
-                                {EVO_LEVEL, 0, SPECIES_IMPMON, CONDITIONS({IF_SPATK, 15})},
-                                {EVO_LEVEL, 0, SPECIES_ELECMON_VIOLET, CONDITIONS({IF_ATK, 18})},
-                                {EVO_LEVEL, 0, SPECIES_KAMEMON, CONDITIONS({IF_DEF, 17})},
-                                {EVO_LEVEL, 15, SPECIES_KUDAMON}),
+        .digivolutions = sKyaromonDigivolveTable,
     },
 
     [SPECIES_KYOKYOMON] =
@@ -2864,7 +2794,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sKyokyomonLevelUpLearnset,
         .teachableLearnset = sKyokyomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_KYUPIMON}),
+        .digivolutions = sKyokyomonDigivolveTable,
     },
 
     [SPECIES_KYUPIMON] =
@@ -2937,11 +2867,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sKyupimonLevelUpLearnset,
         .teachableLearnset = sKyupimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_IMPMON, CONDITIONS({IF_SPATK, 24})},
-                                {EVO_LEVEL, 0, SPECIES_TERRIERMON, CONDITIONS({IF_ATK, 19})},
-                                {EVO_LEVEL, 0, SPECIES_SALAMON, CONDITIONS({IF_SPDEF, 25})},
-                                {EVO_LEVEL, 0, SPECIES_PATAMON, CONDITIONS({IF_SPD, 25})},
-                                {EVO_LEVEL, 22, SPECIES_LUCEMON}),
+        .digivolutions = sKyupimonDigivolveTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_IMPMON, CONDITIONS({IF_NATURE, NATURE_IMPISH})}),
     },
 #endif //P_FAMILY_KYAROMON
 
@@ -3016,10 +2943,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sMinomonLevelUpLearnset,
         .teachableLearnset = sMinomonTeachableLearnset,
         .eggMoveLearnset = sMinomonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_KOKUWAMON, CONDITIONS({IF_DEF, 14})},
-                                {EVO_LEVEL, 0, SPECIES_KUNEMON, CONDITIONS({IF_HP, 32})},
-                                {EVO_LEVEL, 0, SPECIES_TENTOMON, CONDITIONS({IF_SPATK, 16})},
-                                {EVO_LEVEL, 14, SPECIES_WORMMON}),
+        .digivolutions = sMinomonDigivolveTable,
     },
 
     [SPECIES_MISSIMON] =
@@ -3090,11 +3014,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sMissimonLevelUpLearnset,
         .teachableLearnset = sMissimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_GIZAMON, CONDITIONS({IF_DEF, 17})},
-                                {EVO_LEVEL, 0, SPECIES_CHIKURIMON, CONDITIONS({IF_HP, 36})},
-                                {EVO_LEVEL, 0, SPECIES_DRACMON, CONDITIONS({IF_SPATK, 19})},
-                                {EVO_LEVEL, 0, SPECIES_HAGURUMON, CONDITIONS({IF_DEF, 17})},
-                                {EVO_LEVEL, 17, SPECIES_COMMANDRAMON}),
+        .digivolutions = sMissimonDigivolveTable,
     },
 #endif //P_FAMILY_MINOMON
 
@@ -3190,7 +3110,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sMonimonTeachableLearnset,
         .eggMoveLearnset = sMonimonEggMoveLearnset,
         .formSpeciesIdTable = sMonimonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_MONITAMON}),
+        .digivolutions = sMonimonDigivolveTable,
     },
 
     [SPECIES_MOONMON] =
@@ -3262,10 +3182,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sMoonmonLevelUpLearnset,
         .teachableLearnset = sMoonmonTeachableLearnset,
         .formSpeciesIdTable = sMoonmonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_BLACKAGUMON, CONDITIONS({IF_HP, 35})},
-                                {EVO_LEVEL, 0, SPECIES_GAZIMON, CONDITIONS({IF_ATK, 16})},
-                                {EVO_LEVEL, 0, SPECIES_LOPMON, CONDITIONS({IF_SPATK, 17})},
-                                {EVO_LEVEL, 15, SPECIES_LUNAMON}),
+        .digivolutions = sMoonmonDigivolveTable,
     },
 
     [SPECIES_MOTIMON] =
@@ -3338,10 +3255,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sMotimonLevelUpLearnset,
         .teachableLearnset = sMotimonTeachableLearnset,
         .formSpeciesIdTable = sMotimonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_BIYOMON, CONDITIONS({IF_SPD, 15})},
-                                {EVO_LEVEL, 0, SPECIES_FANBEEMON, CONDITIONS({IF_ATK, 15})},
-                                {EVO_LEVEL, 0, SPECIES_MORPHOMON, CONDITIONS({IF_SPATK, 16})},
-                                {EVO_LEVEL, 15, SPECIES_TENTOMON}),
+        .digivolutions = sMotimonDigivolveTable,
     },
 
 #if P_ALOLAN_FORMS
@@ -3617,7 +3531,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sNegamonTeachableLearnset,
         .eggMoveLearnset = sNegamonEggMoveLearnset,
         .formSpeciesIdTable = sNegamonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_NYAROMON}),
+        // .digivolutions = sNegamonDigivolveTable,
     },
 
     [SPECIES_NYAROMON] =
@@ -3688,11 +3602,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sNyaromonLevelUpLearnset,
         .teachableLearnset = sNyaromonTeachableLearnset,
         .formSpeciesIdTable = sNyaromonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_ARMADILLOMON, CONDITIONS({IF_DEF, 15})},
-                                {EVO_LEVEL, 0, SPECIES_TINKERMON, CONDITIONS({IF_SPATK, 14})},
-                                {EVO_LEVEL, 0, SPECIES_RENAMON, CONDITIONS({IF_ATK, 17})},
-                                {EVO_LEVEL, 0, SPECIES_HAWKMON, CONDITIONS({IF_SPD, 17})},
-                                {EVO_LEVEL, 14, SPECIES_SALAMON}),
+        .digivolutions = sNyaromonDigivolveTable,
     },
 
 #if P_GALARIAN_FORMS
@@ -3900,11 +3810,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sPagumonTeachableLearnset,
         .eggMoveLearnset = sPagumonEggMoveLearnset,
         .formSpeciesIdTable = sPagumonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_CHUUMON, CONDITIONS({IF_HP, 31})},
-                                {EVO_LEVEL, 0, SPECIES_TSUKAIMON, CONDITIONS({IF_SPD, 15})},
-                                {EVO_LEVEL, 0, SPECIES_GIZAMON, CONDITIONS({IF_ATK, 14})},
-                                {EVO_LEVEL, 0, SPECIES_IMPMON, CONDITIONS({IF_SPATK, 14})},
-                                {EVO_LEVEL, 13, SPECIES_DEMIDEVIMON}),
+        .digivolutions = sPagumonDigivolveTable,
     },
 
     [SPECIES_PICKMON_SILVER] =
@@ -3975,7 +3881,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sPickmon_silverTeachableLearnset,
         .formSpeciesIdTable = sPickmon_silverFormSpeciesIdTable,
         .formChangeTable = sPickmon_silverFormChangeTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_STARMON_2010}),
+        .digivolutions = sPickmon_silverDigivolveTable,
     },
 
 
@@ -4321,7 +4227,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sPickmon_whiteLevelUpLearnset,
         .teachableLearnset = sPickmon_whiteTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_STARMON_2010}),
+        .digivolutions = sPickmon_whiteDigivolveTable,
     },
 
     [SPECIES_PICKMON_RED] =
@@ -4396,7 +4302,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sPickmon_redLevelUpLearnset,
         .teachableLearnset = sPickmon_redTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_STARMON_2010}),
+        .digivolutions = sPickmon_redDigivolveTable,
     },
 
 #if P_GEN_4_CROSS_EVOS
@@ -4566,11 +4472,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sPinamonTeachableLearnset,
         .eggMoveLearnset = sPinamonEggMoveLearnset,
         .formSpeciesIdTable = sPinamonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_GOBLIMON, CONDITIONS({IF_ATK, 17})},
-                                {EVO_LEVEL, 0, SPECIES_KUDAMON_06, CONDITIONS({IF_SPATK, 16})},
-                                {EVO_LEVEL, 0, SPECIES_SWIMMON, CONDITIONS({IF_SPD, 18})},
-                                {EVO_LEVEL, 0, SPECIES_SNOWAGUMON_06, CONDITIONS({IF_SPDEF, 16})},
-                                {EVO_LEVEL, 15, SPECIES_FALCOMON}),
+        .digivolutions = sPinamonDigivolveTable,
     },
 
 #if P_GALARIAN_FORMS
@@ -4790,10 +4692,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sPoromonLevelUpLearnset,
         .teachableLearnset = sPoromonTeachableLearnset,
         .eggMoveLearnset = sPoromonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_POMUMON, CONDITIONS({IF_HP, 31})}, // Add Ukkomon
-                                {EVO_LEVEL, 0, SPECIES_TINKERMON, CONDITIONS({IF_SPATK, 15})},
-                                {EVO_LEVEL, 0, SPECIES_FALCOMON_06, CONDITIONS({IF_SPD, 15})},
-                                {EVO_LEVEL, 13, SPECIES_HAWKMON}),
+        .digivolutions = sPoromonDigivolveTable,
     },
 
     [SPECIES_PUROROMON] =
@@ -4879,9 +4778,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sPuroromonLevelUpLearnset,
         .teachableLearnset = sPuroromonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_RYUDAMON, CONDITIONS({IF_DEF, 12})},
-                                {EVO_LEVEL, 0, SPECIES_DORUMON, CONDITIONS({IF_ATK, 13})},
-                                {EVO_LEVEL, 11, SPECIES_FANBEEMON}),
+        .digivolutions = sPuroromonDigivolveTable,
     },
 #endif //P_FAMILY_POROMON
 
@@ -4955,7 +4852,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sPusurimonLevelUpLearnset,
         .teachableLearnset = sPusurimonTeachableLearnset,
         .eggMoveLearnset = sPusurimonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_HERISSMON}),
+        .digivolutions = sPusurimonDigivolveTable,
     },
 
     [SPECIES_PUYOYOMON] =
@@ -5024,8 +4921,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sPuyoyomonLevelUpLearnset,
         .teachableLearnset = sPuyoyomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_KODOKUGUMON, CONDITIONS({IF_SPD, 14})},
-                                {EVO_LEVEL, 13, SPECIES_JELLYMON}),
+        .digivolutions = sPuyoyomonDigivolveTable,
     },
 #endif //P_FAMILY_PUSURIMON
 
@@ -5101,9 +4997,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sSakuttomonTeachableLearnset,
         .eggMoveLearnset = sSakuttomonEggMoveLearnset,
         .formSpeciesIdTable = sSakuttomonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_RYUDAMON, CONDITIONS({IF_DEF, 19})},
-                                {EVO_LEVEL, 0, SPECIES_HACKMON, CONDITIONS({IF_ATK, 22})},
-                                {EVO_LEVEL, 17, SPECIES_ZUBAMON}),
+        .digivolutions = sSakuttomonDigivolveTable,
     },
 
     [SPECIES_SUNMON] =
@@ -5177,10 +5071,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sSunmonLevelUpLearnset,
         .teachableLearnset = sSunmonTeachableLearnset,
         .formSpeciesIdTable = sSunmonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SALAMON, CONDITIONS({IF_SPATK, 15})},
-                                {EVO_LEVEL, 0, SPECIES_KUDAMON_06, CONDITIONS({IF_HP, 34})},
-                                {EVO_LEVEL, 0, SPECIES_GUILMON, CONDITIONS({IF_ATK, 19})},
-                                {EVO_LEVEL, 15, SPECIES_CORONAMON}),
+        .digivolutions = sSunmonDigivolveTable,
     },
 
 #if P_ALOLAN_FORMS
@@ -5390,11 +5281,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sTanemonLevelUpLearnset,
         .teachableLearnset = sTanemonTeachableLearnset,
         .eggMoveLearnset = sTanemonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_MUSHROOMON, CONDITIONS({IF_HP, 32})},
-                                {EVO_LEVEL, 0, SPECIES_ARURAUMON, CONDITIONS({IF_SPDEF, 15})},
-                                {EVO_LEVEL, 0, SPECIES_LALAMON, CONDITIONS({IF_ATK, 15})},
-                                {EVO_LEVEL, 0, SPECIES_FLORAMON, CONDITIONS({IF_SPATK, 16})},
-                                {EVO_LEVEL, 14, SPECIES_PALMON}),
+        .digivolutions = sTanemonDigivolveTable,
     },
 
     [SPECIES_TOKOMON] =
@@ -5464,11 +5351,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sTokomonLevelUpLearnset,
         .teachableLearnset = sTokomonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_DEMIDEVIMON, CONDITIONS({IF_ATK, 17})},
-                                {EVO_LEVEL, 0, SPECIES_TSUKAIMON, CONDITIONS({IF_SPATK, 16})},
-                                {EVO_LEVEL, 0, SPECIES_DOTFALCOMON, CONDITIONS({IF_HP, 32})},
-                                {EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_TOKOMON_X},
-                                {EVO_LEVEL, 14, SPECIES_PATAMON}),
+        .digivolutions = sTokomonDigivolveTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_TSUKAIMON, CONDITIONS({IF_NATURE, NATURE_NAUGHTY})},
+                                {EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_TOKOMON_X}),
     },
 #endif //P_FAMILY_TANEMON
 
@@ -5545,11 +5430,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sTokomon_xLevelUpLearnset,
         .teachableLearnset = sTokomon_xTeachableLearnset,
         .eggMoveLearnset = sTokomon_xEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_HERISSMON, CONDITIONS({IF_DEF, 18})},
-                                {EVO_LEVEL, 0, SPECIES_GABUMON_X, CONDITIONS({IF_SPDEF, 17})},
-                                {EVO_LEVEL, 0, SPECIES_DRACOMON_X, CONDITIONS({IF_ATK, 19})},
-                                {EVO_LEVEL, 0, SPECIES_AGUMON_X, CONDITIONS({IF_SPATK, 18})},
-                                {EVO_LEVEL, 17, SPECIES_RENAMON_X}),
+        .digivolutions = sTokomon_xDigivolveTable,
     },
 
     [SPECIES_TORIKARABALLMON] =
@@ -5623,8 +5504,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sTorikaraballmonLevelUpLearnset,
         .teachableLearnset = sTorikaraballmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_EBIBURGAMON, CONDITIONS({IF_ATK, 15})},
-                                {EVO_LEVEL, 13, SPECIES_BURGERMON}),
+        .digivolutions = sTorikaraballmonDigivolveTable,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_EBIBURGAMON}),
     },
 
 #if P_UPDATED_ABILITIES >= GEN_7
@@ -5702,11 +5583,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sTsumemonTeachableLearnset,
         .formSpeciesIdTable = sTsumemonFormSpeciesIdTable,
         .formChangeTable = sTsumemonFormChangeTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_BLACKGUILMON, CONDITIONS({IF_ATK, 16})},
-                                {EVO_LEVEL, 0, SPECIES_DEMIDEVIMON, CONDITIONS({IF_SPD, 17})},
-                                {EVO_LEVEL, 0, SPECIES_BLACKGABUMON, CONDITIONS({IF_SPDEF, 14})},
-                                {EVO_LEVEL, 0, SPECIES_BLACKAGUMON, CONDITIONS({IF_SPATK, 15})},
-                                {EVO_LEVEL, 14, SPECIES_KERAMON}),
+        .digivolutions = sTsumemonDigivolveTable,
     },
 
 #if P_MEGA_EVOLUTIONS
@@ -5906,11 +5783,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sTsunomonLevelUpLearnset,
         .teachableLearnset = sTsunomonTeachableLearnset,
         .eggMoveLearnset = sTsunomonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_MONMON, CONDITIONS({IF_SPD, 17})},
-                                {EVO_LEVEL, 0, SPECIES_SYAKOMON, CONDITIONS({IF_DEF, 16})},
-                                {EVO_LEVEL, 0, SPECIES_PSYCHEMON, CONDITIONS({IF_HP, 36})},
-                                {EVO_LEVEL, 0, SPECIES_ELECMON, CONDITIONS({IF_ATK, 19})},
-                                {EVO_LEVEL, 16, SPECIES_GABUMON}),
+        .digivolutions = sTsunomonDigivolveTable,
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -6060,11 +5933,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sTumblemonLevelUpLearnset,
         .teachableLearnset = sTumblemonTeachableLearnset,
         .eggMoveLearnset = sTumblemonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_EKAKIMON, CONDITIONS({IF_SPATK, 15})},
-                                {EVO_LEVEL, 0, SPECIES_BAKOMON, CONDITIONS({IF_HP, 36})},
-                                {EVO_LEVEL, 0, SPECIES_GOTSUMON, CONDITIONS({IF_DEF, 17})},
-                                {EVO_LEVEL, 0, SPECIES_STRABIMON, CONDITIONS({IF_ATK, 17})},
-                                {EVO_LEVEL, 15, SPECIES_SUNARIZAMON}),
+        .digivolutions = sTumblemonDigivolveTable,
     },
 
     [SPECIES_UPAMON] =
@@ -6151,11 +6020,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sUpamonLevelUpLearnset,
         .teachableLearnset = sUpamonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_PILLOMON, CONDITIONS({IF_SPDEF, 15})},
-                                {EVO_LEVEL, 0, SPECIES_DAMEMON, CONDITIONS({IF_SPD, 16})},
-                                {EVO_LEVEL, 0, SPECIES_BOKOMON, CONDITIONS({IF_SPATK, 15})},
-                                {EVO_LEVEL, 0, SPECIES_SANGOMON, CONDITIONS({IF_HP, 34})},
-                                {EVO_LEVEL, 15, SPECIES_ARMADILLOMON}),
+        .digivolutions = sUpamonDigivolveTable,
     },
 #endif //P_FAMILY_TUMBLEMON
 
@@ -6231,11 +6096,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sViximonLevelUpLearnset,
         .teachableLearnset = sViximonTeachableLearnset,
         .eggMoveLearnset = sViximonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_NEEMON, CONDITIONS({IF_DEF, 17})},
-                                {EVO_LEVEL, 0, SPECIES_TERRIERMON_ASSISTANT, CONDITIONS({IF_SPDEF, 16})},
-                                {EVO_LEVEL, 0, SPECIES_CUTEMON, CONDITIONS({IF_HP, 39})},
-                                {EVO_LEVEL, 0, SPECIES_CHUUCHUUMON, CONDITIONS({IF_SPATK, 18})},
-                                {EVO_LEVEL, 18, SPECIES_RENAMON}),
+        .digivolutions = sViximonDigivolveTable,
     },
 
     [SPECIES_WANYAMON] =
@@ -6308,11 +6169,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .teachableLearnset = sWanyamonTeachableLearnset,
         .formSpeciesIdTable = sWanyamonFormSpeciesIdTable,
         .formChangeTable = sWanyamonFormChangeTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_PAWNCHESSMON_WHITE, CONDITIONS({IF_ATK, 17})},
-                                {EVO_LEVEL, 0, SPECIES_MINIDEKACHIMON, CONDITIONS({IF_DEF, 16})},
-                                {EVO_LEVEL, 0, SPECIES_LUXMON, CONDITIONS({IF_SPATK, 15})},
-                                {EVO_LEVEL, 0, SPECIES_DONDOKOMON, CONDITIONS({IF_SPD, 18})},
-                                {EVO_LEVEL, 15, SPECIES_GAOMON}),
+        .digivolutions = sWanyamonDigivolveTable,
     },
 
 #if P_GIGANTAMAX_FORMS
@@ -6456,10 +6313,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sXiaomonLevelUpLearnset,
         .teachableLearnset = sXiaomonTeachableLearnset,
         .formSpeciesIdTable = sXiaomonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_VEMMON, CONDITIONS({IF_SPDEF, 13})},
-                                {EVO_LEVEL, 0, SPECIES_IGNITEMON, CONDITIONS({IF_ATK, 14})},
-                                {EVO_LEVEL, 0, SPECIES_AGUMON_FAKE_EXPERT, CONDITIONS({IF_SPATK, 14})},
-                                {EVO_LEVEL, 12, SPECIES_LABRAMON}),
+        .digivolutions = sXiaomonDigivolveTable,
     },
 
     [SPECIES_YAAMON] =
@@ -6532,11 +6386,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sYaamonLevelUpLearnset,
         .teachableLearnset = sYaamonTeachableLearnset,
         .formSpeciesIdTable = sYaamonFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SOUNDBIRDMON, CONDITIONS({IF_SPD, 16})},
-                                {EVO_LEVEL, 0, SPECIES_PETITMAMON, CONDITIONS({IF_SPATK, 18})},
-                                {EVO_LEVEL, 0, SPECIES_GIZUMON, CONDITIONS({IF_DEF, 15})},
-                                {EVO_LEVEL, 0, SPECIES_GAOSSMON, CONDITIONS({IF_ATK, 15})},
-                                {EVO_LEVEL, 15, SPECIES_IMPMON}),
+        .digivolutions = sYaamonDigivolveTable,
     },
 
 #if P_HISUIAN_FORMS
@@ -6747,11 +6597,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sYokomonLevelUpLearnset,
         .teachableLearnset = sYokomonTeachableLearnset,
         .eggMoveLearnset = sYokomonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SANTAAGUMON, CONDITIONS({IF_SPD, 15})},
-                                {EVO_LEVEL, 0, SPECIES_OTAMAMON_RED, CONDITIONS({IF_SPATK, 15})},
-                                {EVO_LEVEL, 0, SPECIES_MODOKIBETAMON, CONDITIONS({IF_HP, 32})},
-                                {EVO_LEVEL, 0, SPECIES_SPARROWMON, CONDITIONS({IF_DEF, 15})},
-                                {EVO_LEVEL, 14, SPECIES_BIYOMON}),
+        .digivolutions = sYokomonDigivolveTable,
     },
 
     [SPECIES_ONIBIMON] =
@@ -6815,7 +6661,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sOnibimonLevelUpLearnset,
         .teachableLearnset = sOnibimonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_RILLABOOM}),
+        .digivolutions = sOnibimonDigivolveTable,
     },
 
 #ifdef __INTELLISENSE__
