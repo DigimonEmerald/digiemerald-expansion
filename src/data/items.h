@@ -14624,7 +14624,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_COURAGE_EGG] =
     {
-        .name = ITEM_NAME("Courage Egg"),
+        .name = ITEM_NAME("Egg of Courage"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14640,7 +14640,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_FRIEND_EGG] =
     {
-        .name = ITEM_NAME("Friend Egg"),
+        .name = ITEM_NAME("Egg of Friendship"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14656,7 +14656,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_LOVE_EGG] =
     {
-        .name = ITEM_NAME("Love Egg"),
+        .name = ITEM_NAME("Egg of Love"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14672,7 +14672,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_PURITY_EGG] =
     {
-        .name = ITEM_NAME("Purity Egg"),
+        .name = ITEM_NAME("Egg of Purity"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14688,7 +14688,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_KNOWLEDGE_EGG] =
     {
-        .name = ITEM_NAME("Knowledge Egg"),
+        .name = ITEM_NAME("Egg of Knowledge"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14704,7 +14704,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_SINCERITY_EGG] =
     {
-        .name = ITEM_NAME("Sincerity Egg"),
+        .name = ITEM_NAME("Egg of Sincerity"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14720,7 +14720,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_HOPE_EGG] =
     {
-        .name = ITEM_NAME("Hope Egg"),
+        .name = ITEM_NAME("Egg of Hope"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14736,7 +14736,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_LIGHT_EGG] =
     {
-        .name = ITEM_NAME("Light Egg"),
+        .name = ITEM_NAME("Egg of Light"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14752,7 +14752,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_KINDNESS_EGG] =
     {
-        .name = ITEM_NAME("Kindness Egg"),
+        .name = ITEM_NAME("Egg of Kindness"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
@@ -14768,7 +14768,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_MIRACLES_EGG] =
     {
-        .name = ITEM_NAME("Miracles Egg"),
+        .name = ITEM_NAME("Egg of Miracles"),
         .price = 2100,
         .description = COMPOUND_STRING(
             "Allows Digimon\n"
