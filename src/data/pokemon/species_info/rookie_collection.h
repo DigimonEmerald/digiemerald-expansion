@@ -1028,8 +1028,13 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_KINDNESS_EGG, SPECIES_CHAMELEMON},
                                 {EVO_ITEM, ITEM_MIRACLES_EGG, SPECIES_ELEPHANTMON},
                                 {EVO_ITEM, ITEM_KNOWLEDGE_EGG, SPECIES_DIGMON},
-                                {EVO_ITEM, ITEM_COURAGE_EGG, SPECIES_BOARMON},
-                                {EVO_LEVEL, 32, SPECIES_ANKYLOMON}),
+                                // {EVO_ITEM, ITEM_LOVE_EGG, SPECIES_PTERAMON},
+                                // {EVO_ITEM, ITEM_FRIENDSHIP_EGG, SPECIES_SEPIKMON},
+                                // {EVO_ITEM, ITEM_HOPE_EGG, SPECIES_SHEEPMON},
+                                // {EVO_ITEM, ITEM_LIGHT_EGG, SPECIES_SEAHOMON},
+                                // {EVO_ITEM, ITEM_SINCERITY_EGG, SPECIES_SUBMARIMON},
+                                {EVO_ITEM, ITEM_PURITY_EGG, SPECIES_FROGMON},
+                                {EVO_ITEM, ITEM_COURAGE_EGG, SPECIES_BOARMON}),
     },
 
 #if P_GALARIAN_FORMS
@@ -1187,7 +1192,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sAruraumonLevelUpLearnset,
         .teachableLearnset = sAruraumonTeachableLearnset,
         .eggMoveLearnset = sAruraumonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_GEREMON}),
+        .digivolutions = sAruraumonDigivolveTable,
     },
 
     [SPECIES_BAKOMON] =
@@ -1500,7 +1505,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sBearmonLevelUpLearnset,
         .teachableLearnset = sBearmonTeachableLearnset,
         .eggMoveLearnset = sBearmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_DOBERMON}),
+        .digivolutions = sBearmonDigivolveTable,
     },
 
 #if P_GEN_2_CROSS_EVOS
@@ -1571,7 +1576,6 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         )
         .levelUpLearnset = sShoutmonLevelUpLearnset,
         .teachableLearnset = sShoutmonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_DONSHOUTMON}),
     },
 #endif //P_GEN_2_CROSS_EVOS
 #endif //P_FAMILY_BEARMON
