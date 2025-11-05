@@ -7662,8 +7662,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sDonshoutmonLevelUpLearnset,
         .teachableLearnset = sDonshoutmonTeachableLearnset,
         .eggMoveLearnset = sDonshoutmonEggMoveLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 5, SPECIES_DORULUMON},
+                                {EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_AGUMON}),
     },
 #endif //P_FAMILY_DONSHOUTMON
+
 
 #if P_FAMILY_DORUGAMON
     [SPECIES_DORUGAMON] =

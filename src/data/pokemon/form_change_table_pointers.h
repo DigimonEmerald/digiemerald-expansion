@@ -33,6 +33,36 @@ const struct Fusion *const gFusionTablePointers[NUM_SPECIES] =
 #endif //P_FAMILY_GLASTRIER
 #endif //P_FAMILY_CALYREX
 #endif //P_FUSION_FORMS
+    [SPECIES_DONSHOUTMON] = sShoutmonFusionTable,
+    [SPECIES_DONDOKOMON] = sShoutmonFusionTable,
+    [SPECIES_SHOUTMON] = sShoutmonFusionTable,
+    [SPECIES_CUTEMON] = sShoutmonFusionTable,
+    // [SPECIES_JIJIMON] = sShoutmonFusionTable,
+    // [SPECIES_PAWNCHESSMON_WHITE] = sShoutmonFusionTable,
+    // [SPECIES_MONITAMON] = sShoutmonFusionTable,
+    // [SPECIES_DORULUMON] = sShoutmonFusionTable,
+    // [SPECIES_SPARROWMON] = sShoutmonFusionTable,
+    // [SPECIES_STARMON_2010] = sShoutmonFusionTable,
+    // [SPECIES_CUTESHOUTMON] = sShoutmonFusionTable,
+    // [SPECIES_JIJISHOUTMON] = sShoutmonFusionTable,
+    // [SPECIES_PAWNSHOUTMON] = sShoutmonFusionTable,
+    // [SPECIES_SHONITAMON] = sShoutmonFusionTable,
+    // [SPECIES_SHOUTMON_DORULU_CANNON] = sShoutmonFusionTable,
+    // [SPECIES_SHOUTMON_JET_SPARROW] = sShoutmonFusionTable,
+    // [SPECIES_SHOUTMON_SH] = sShoutmonFusionTable,
+    [SPECIES_KNIGHTMON] = sShoutmonFusionTable,
+    // [SPECIES_CANDLEMON] = sCandlemonFusionTable,
+    // [SPECIES_WEDDINMON] = sCandlemonFusionTable,
+    // [SPECIES_REVERSEWEDDINMON] = sCandlemonFusionTable,
+    // [SPECIES_OPOSSUMMMON] = sCandlemonFusionTable,
+    // [SPECIES_OPOSSUMMMON_XROS_UP] = sCandlemonFusionTable,
+    // [SPECIES_MADLEOMON] = sMadLeomonFusionTable,
+    // [SPECIES_CHIKURIMON] = sMadLeomonFusionTable,
+    // [SPECIES_MADLEOMON_ARMED_MODE] = sMadLeomonFusionTable,
+    // [SPECIES_MADLEOMON_FINAL_MODE] = sMadLeomonFusionTable,
+    // [SPECIES_MADLEOMON_OROCHI_MODE] = sMadLeomonFusionTable,
+    // [SPECIES_APEMON] = sMadLeomonFusionTable,
+    // [SPECIES_OROCHIMON] = sMadLeomonFusionTable,
 };
 
 #if P_FUSION_FORMS
