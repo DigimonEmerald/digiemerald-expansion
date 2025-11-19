@@ -2037,9 +2037,9 @@ LittlerootTown_EventScript_Test::
 # 1022 "data/maps/LittlerootTown/scripts.pory"
 	msgbox LittlerootTown_EventScript_Test_Text_0
 # 1023 "data/maps/LittlerootTown/scripts.pory"
-	givemon SPECIES_KNIGHTMON, 50
+	givemon SPECIES_STINGMON, 50
 # 1024 "data/maps/LittlerootTown/scripts.pory"
-	givemon SPECIES_CUTEMON, 50
+	givemon SPECIES_EXVEEMON, 50
 # 1025 "data/maps/LittlerootTown/scripts.pory"
 	giveitem ITEM_DNA_SPLICERS, 1
 # 1026 "data/maps/LittlerootTown/scripts.pory"
