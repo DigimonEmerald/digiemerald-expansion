@@ -393,7 +393,7 @@ void SetFalcomonAboveGrass(void)
 
         LoadSpritePalette(&gSpritePalette_GeneralFieldEffect1);
         UpdateSpritePaletteWithWeather(IndexOfSpritePaletteTag(gSpritePalette_GeneralFieldEffect1.tag), FALSE);
-        gSprites[mew->spriteId].subspriteTableNum = 1;
+        gSprites[falcomon->spriteId].subspriteTableNum = 1;
 
         x = falcomon->currentCoords.x;
         y = falcomon->currentCoords.y;
