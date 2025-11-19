@@ -2,7 +2,7 @@
 #include "malloc.h"
 #include "bg.h"
 #include "decompress.h"
-#include "dodrio_berry_picking.h"
+#include "puroromon_berry_picking.h"
 #include "dynamic_placeholder_text_util.h"
 #include "event_data.h"
 #include "gpu_regs.h"
@@ -397,7 +397,7 @@ static u32 RecvPacket_ReadyToStart(u32);
 static u32 IncrementWithLimit(u32, u32);
 static u32 Min(u32, u32);
 static u32 GetScore(u8);
-static void Task_ShowDodrioBerryPickingRecords(u8);
+static void Task_ShowPuroromonBerryPickingRecords(u8);
 static void Task_TryRunGfxFunc(u8);
 static void PrintRecordsText(u8, s32);
 static void SpriteCB_Status(struct Sprite *);
@@ -552,22 +552,22 @@ static const u8 sUnsharedColumns[MAX_RFU_PLAYERS][MAX_RFU_PLAYERS] =
 };
 
 // Duplicate and unused gfx. Feel free to remove.
-static const u32 sDuplicateGfx[] = INCBIN_U32("graphics/dodrio_berry_picking/tree_border.gbapal",
-                                     "graphics/dodrio_berry_picking/bg.gbapal",
-                                     "graphics/dodrio_berry_picking/dodrio.gbapal",
-                                     "graphics/dodrio_berry_picking/shiny.gbapal",
-                                     "graphics/dodrio_berry_picking/status.gbapal",
-                                     "graphics/dodrio_berry_picking/berries.gbapal",
-                                     "graphics/dodrio_berry_picking/berries.4bpp.smol",
-                                     "graphics/dodrio_berry_picking/cloud.gbapal",
-                                     "graphics/dodrio_berry_picking/bg.4bpp.smol",
-                                     "graphics/dodrio_berry_picking/tree_border.4bpp.smol",
-                                     "graphics/dodrio_berry_picking/status.4bpp.smol",
-                                     "graphics/dodrio_berry_picking/cloud.4bpp.smol",
-                                     "graphics/dodrio_berry_picking/dodrio.4bpp.smol",
-                                     "graphics/dodrio_berry_picking/bg.bin.smolTM",
-                                     "graphics/dodrio_berry_picking/tree_border_right.bin.smolTM",
-                                     "graphics/dodrio_berry_picking/tree_border_left.bin.smolTM");
+static const u32 sDuplicateGfx[] = INCBIN_U32("graphics/puroromon_berry_picking/tree_border.gbapal",
+                                     "graphics/puroromon_berry_picking/bg.gbapal",
+                                     "graphics/puroromon_berry_picking/puroromon.gbapal",
+                                     "graphics/puroromon_berry_picking/shiny.gbapal",
+                                     "graphics/puroromon_berry_picking/status.gbapal",
+                                     "graphics/puroromon_berry_picking/berries.gbapal",
+                                     "graphics/puroromon_berry_picking/berries.4bpp.smol",
+                                     "graphics/puroromon_berry_picking/cloud.gbapal",
+                                     "graphics/puroromon_berry_picking/bg.4bpp.smol",
+                                     "graphics/puroromon_berry_picking/tree_border.4bpp.smol",
+                                     "graphics/puroromon_berry_picking/status.4bpp.smol",
+                                     "graphics/puroromon_berry_picking/cloud.4bpp.smol",
+                                     "graphics/puroromon_berry_picking/puroromon.4bpp.smol",
+                                     "graphics/puroromon_berry_picking/bg.bin.smolTM",
+                                     "graphics/puroromon_berry_picking/tree_border_right.bin.smolTM",
+                                     "graphics/puroromon_berry_picking/tree_border_left.bin.smolTM");
 
 
 static const u8 sBerryFallDelays[][3] =
@@ -661,7 +661,7 @@ static void (*const sMemberFuncs[])(void) =
     [FUNC_WAIT_END_GAME]  = WaitEndGame_Member
 };
 
-void StartDodrioBerryPicking(u16 partyId, MainCallback exitCallback)
+void StartPuroromonBerryPicking(u16 partyId, MainCallback exitCallback)
 {
     sExitingGame = FALSE;
 
@@ -2906,13 +2906,13 @@ static u8 GetPlayerIdByPos(u8 id)
     return sGame->posToPlayerId[id];
 }
 
-void IsDodrioInParty(void)
+void IsPuroromonInParty(void)
 {
     int i;
     for (i = 0; i < PARTY_SIZE; i++)
     {
         if (GetMonData(&gPlayerParty[i], MON_DATA_SANITY_HAS_SPECIES)
-            && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG) == SPECIES_DODRIO)
+            && GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG) == SPECIES_PUROROMON)
         {
             gSpecialVar_Result = TRUE;
             return;
@@ -2924,10 +2924,10 @@ void IsDodrioInParty(void)
 
 #define NUM_RECORD_TYPES 3
 
-void ShowDodrioBerryPickingRecords(void)
+void ShowPuroromonBerryPickingRecords(void)
 {
-    u8 taskId = CreateTask(Task_ShowDodrioBerryPickingRecords, 0);
-    Task_ShowDodrioBerryPickingRecords(taskId);
+    u8 taskId = CreateTask(Task_ShowPuroromonBerryPickingRecords, 0);
+    Task_ShowPuroromonBerryPickingRecords(taskId);
 }
 
 static const struct WindowTemplate sWindowTemplates_Records =
@@ -2950,7 +2950,7 @@ static const u8 sRecordNumYCoords[NUM_RECORD_TYPES][2] = {{25}, {41}, {73}};
 #define tState data[0]
 #define tWindowId data[1]
 
-static void Task_ShowDodrioBerryPickingRecords(u8 taskId)
+static void Task_ShowPuroromonBerryPickingRecords(u8 taskId)
 {
     struct WindowTemplate window;
     s32 i, width, widthCurr;
@@ -3595,22 +3595,22 @@ static const u8 sUnsharedColumns_Duplicate[MAX_RFU_PLAYERS][MAX_RFU_PLAYERS] =
     {1, 3, 5, 6, 9},
 };
 
-static const u16 sBg_Pal[]                  = INCBIN_U16("graphics/dodrio_berry_picking/tree_border.gbapal",
-                                                         "graphics/dodrio_berry_picking/bg.gbapal");
-static const u16 sDodrioNormal_Pal[]        = INCBIN_U16("graphics/dodrio_berry_picking/dodrio.gbapal");
-static const u16 sDodrioShiny_Pal[]         = INCBIN_U16("graphics/dodrio_berry_picking/shiny.gbapal");
-static const u16 sStatus_Pal[]              = INCBIN_U16("graphics/dodrio_berry_picking/status.gbapal");
-static const u16 sBerries_Pal[]             = INCBIN_U16("graphics/dodrio_berry_picking/berries.gbapal");
-static const u32 sBerries_Gfx[]             = INCBIN_U32("graphics/dodrio_berry_picking/berries.4bpp.smol");
-static const u16 sCloud_Pal[]               = INCBIN_U16("graphics/dodrio_berry_picking/cloud.gbapal");
-static const u32 sBg_Gfx[]                  = INCBIN_U32("graphics/dodrio_berry_picking/bg.4bpp.smol");
-static const u32 sTreeBorder_Gfx[]          = INCBIN_U32("graphics/dodrio_berry_picking/tree_border.4bpp.smol");
-static const u32 sStatus_Gfx[]              = INCBIN_U32("graphics/dodrio_berry_picking/status.4bpp.smol");
-static const u32 sCloud_Gfx[]               = INCBIN_U32("graphics/dodrio_berry_picking/cloud.4bpp.smol");
-static const u32 sDodrio_Gfx[]              = INCBIN_U32("graphics/dodrio_berry_picking/dodrio.4bpp.smol");
-static const u32 sBg_Tilemap[]              = INCBIN_U32("graphics/dodrio_berry_picking/bg.bin.smolTM");
-static const u32 sTreeBorderRight_Tilemap[] = INCBIN_U32("graphics/dodrio_berry_picking/tree_border_right.bin.smolTM");
-static const u32 sTreeBorderLeft_Tilemap[]  = INCBIN_U32("graphics/dodrio_berry_picking/tree_border_left.bin.smolTM");
+static const u16 sBg_Pal[]                  = INCBIN_U16("graphics/puroromon_berry_picking/tree_border.gbapal",
+                                                         "graphics/puroromon_berry_picking/bg.gbapal");
+static const u16 sDodrioNormal_Pal[]        = INCBIN_U16("graphics/puroromon_berry_picking/puroromon.gbapal");
+static const u16 sDodrioShiny_Pal[]         = INCBIN_U16("graphics/puroromon_berry_picking/shiny.gbapal");
+static const u16 sStatus_Pal[]              = INCBIN_U16("graphics/puroromon_berry_picking/status.gbapal");
+static const u16 sBerries_Pal[]             = INCBIN_U16("graphics/puroromon_berry_picking/berries.gbapal");
+static const u32 sBerries_Gfx[]             = INCBIN_U32("graphics/puroromon_berry_picking/berries.4bpp.smol");
+static const u16 sCloud_Pal[]               = INCBIN_U16("graphics/puroromon_berry_picking/cloud.gbapal");
+static const u32 sBg_Gfx[]                  = INCBIN_U32("graphics/puroromon_berry_picking/bg.4bpp.smol");
+static const u32 sTreeBorder_Gfx[]          = INCBIN_U32("graphics/puroromon_berry_picking/tree_border.4bpp.smol");
+static const u32 sStatus_Gfx[]              = INCBIN_U32("graphics/puroromon_berry_picking/status.4bpp.smol");
+static const u32 sCloud_Gfx[]               = INCBIN_U32("graphics/puroromon_berry_picking/cloud.4bpp.smol");
+static const u32 sDodrio_Gfx[]              = INCBIN_U32("graphics/puroromon_berry_picking/puroromon.4bpp.smol");
+static const u32 sBg_Tilemap[]              = INCBIN_U32("graphics/puroromon_berry_picking/bg.bin.smolTM");
+static const u32 sTreeBorderRight_Tilemap[] = INCBIN_U32("graphics/puroromon_berry_picking/tree_border_right.bin.smolTM");
+static const u32 sTreeBorderLeft_Tilemap[]  = INCBIN_U32("graphics/puroromon_berry_picking/tree_border_left.bin.smolTM");
 
 static const struct OamData sOamData_Dodrio =
 {
