@@ -97,7 +97,7 @@ static const u8 sText_PlayedPokeFlute[] = _("Played the POKé FLUTE.");
 static const u8 sText_PokeFluteAwakenedMon[] = _("The POKé FLUTE awakened sleeping\nPOKéMON.{PAUSE_UNTIL_PRESS}");
 
 // EWRAM variables
-EWRAM_DATA static void(*sItemUseOnFieldCB)(u8 taskId) = NULL;
+EWRAM_DATA static TaskFunc sItemUseOnFieldCB = NULL;
 
 // Below is set TRUE by UseRegisteredKeyItemOnField
 #define tUsingRegisteredKeyItem  data[3]
@@ -1254,7 +1254,8 @@ bool32 CannotUseItemsInBattle(u16 itemId, struct Pokemon *mon)
     switch (battleUsage)
     {
     case EFFECT_ITEM_INCREASE_STAT:
-        if (gBattleMons[gBattlerInMenuId].statStages[GetItemEffect(itemId)[1]] == MAX_STAT_STAGE)
+        u32 ability = GetBattlerAbility(gBattlerInMenuId);
+        if (CompareStat(gBattlerInMenuId, GetItemEffect(itemId)[1], MAX_STAT_STAGE, CMP_EQUAL, ability))
             cannotUse = TRUE;
         break;
     case EFFECT_ITEM_SET_FOCUS_ENERGY:
@@ -1293,11 +1294,12 @@ bool32 CannotUseItemsInBattle(u16 itemId, struct Pokemon *mon)
     case EFFECT_ITEM_INCREASE_ALL_STATS:
     {
         u32 ability = GetBattlerAbility(gBattlerInMenuId);
+        cannotUse = TRUE;
         for (i = STAT_ATK; i < NUM_STATS; i++)
         {
-            if (CompareStat(gBattlerInMenuId, i, MAX_STAT_STAGE, CMP_EQUAL, ability))
+            if (!CompareStat(gBattlerInMenuId, i, MAX_STAT_STAGE, CMP_EQUAL, ability))
             {
-                cannotUse = TRUE;
+                cannotUse = FALSE;
                 break;
             }
         }

@@ -3,29 +3,31 @@
 
 ASSUMPTIONS
 {
-    ASSUME(gMovesInfo[MOVE_CURSE].effect == EFFECT_CURSE);
+    ASSUME(GetMoveEffect(MOVE_CURSE) == EFFECT_CURSE);
 }
 
 SINGLE_BATTLE_TEST("Curse lowers Speed, raises Attack, and raises Defense when used by non-Ghost-types")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_CURSE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CURSE, player);
-        MESSAGE("Lopmonx's Speed fell!");
-        MESSAGE("Lopmonx's Attack rose!");
-        MESSAGE("Lopmonx's Defense rose!");
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
+        MESSAGE("Wobbuffet's Speed fell!");
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_STATS_CHANGE, player);
+        MESSAGE("Wobbuffet's Attack rose!");
+        MESSAGE("Wobbuffet's Defense rose!");
     }
 }
 
 SINGLE_BATTLE_TEST("Curse cuts the user's HP in half when used by Ghost-types")
 {
     GIVEN {
-        PLAYER(SPECIES_LOOGAMON);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_MISDREAVUS);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_CURSE); }
     } SCENE {
@@ -35,16 +37,19 @@ SINGLE_BATTLE_TEST("Curse cuts the user's HP in half when used by Ghost-types")
     }
 }
 
-SINGLE_BATTLE_TEST("Curse applies to the user if used with Protean")
+SINGLE_BATTLE_TEST("Curse applies to the user if used with Protean/Libero")
 {
+    u32 ability, species;
+    PARAMETRIZE { ability = ABILITY_PROTEAN; species = SPECIES_KECLEON; }
+    PARAMETRIZE { ability = ABILITY_LIBERO;  species = SPECIES_RABOOT; }
     GIVEN {
-        PLAYER(SPECIES_DONSHOUMON) { Ability(ABILITY_PROTEAN); }
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(species) { Ability(ability); }
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(player, MOVE_CURSE, target: player); }
     } SCENE {
         s32 playerMaxHP = GetMonData(&PLAYER_PARTY[0], MON_DATA_MAX_HP);
-        ABILITY_POPUP(player, ABILITY_PROTEAN);
+        ABILITY_POPUP(player, ability);
         ANIMATION(ANIM_TYPE_MOVE, MOVE_CURSE, player);
         HP_BAR(player, damage: playerMaxHP / 2);
         HP_BAR(player, damage: playerMaxHP / 4);
@@ -54,8 +59,8 @@ SINGLE_BATTLE_TEST("Curse applies to the user if used with Protean")
 SINGLE_BATTLE_TEST("Curse applies to the opponent if user is afflicted by Trick-or-Treat in the same turn")
 {
     GIVEN {
-        PLAYER(SPECIES_LOPMONX);
-        OPPONENT(SPECIES_LOPMONX);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         TURN { MOVE(opponent, MOVE_TRICK_OR_TREAT); MOVE(player, MOVE_CURSE, target: player); }
     } SCENE {
