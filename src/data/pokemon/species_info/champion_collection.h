@@ -11790,7 +11790,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Meramon,
         .frontPicSize = MON_COORDS_SIZE(32, 48),
-        .frontPicYOffset = 10,
+        .frontPicYOffset = 0,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 8),
             ANIMCMD_FRAME(0, 8),
@@ -11802,14 +11802,14 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .frontAnimId = ANIM_V_JUMPS_BIG,
         .backPic = gMonBackPic_Meramon,
         .backPicSize = MON_COORDS_SIZE(56, 56),
-        .backPicYOffset = 6,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_CONVEX_DOUBLE_ARC,
         .palette = gMonPalette_Meramon,
         .shinyPalette = gMonShinyPalette_Meramon,
         .iconSprite = gMonIcon_Meramon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
-        SHADOW(4, 3, SHADOW_SIZE_S)
+        SHADOW(2, 10, SHADOW_SIZE_M)
         FOOTPRINT(Meramon)
         OVERWORLD(
             sPicTable_Meramon,
@@ -14372,7 +14372,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Unimon,
         .frontPicSize = MON_COORDS_SIZE(32, 48),
-        .frontPicYOffset = 8,
+        .frontPicYOffset = 1,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(0, 15),
             ANIMCMD_FRAME(1, 20),
@@ -14383,14 +14383,14 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .frontAnimId = ANIM_DEEP_V_SQUISH_AND_BOUNCE,
         .backPic = gMonBackPic_Unimon,
         .backPicSize = MON_COORDS_SIZE(40, 56),
-        .backPicYOffset = 9,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_V_STRETCH,
         .palette = gMonPalette_Unimon,
         .shinyPalette = gMonShinyPalette_Unimon,
         .iconSprite = gMonIcon_Unimon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
-        SHADOW(0, 6, SHADOW_SIZE_S)
+        SHADOW(5, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Cherrim)
         OVERWORLD(
             sPicTable_Unimon,

@@ -858,7 +858,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .trainerOffset = 0,
         .frontPic = gMonFrontPic_Andromon,
         .frontPicSize = MON_COORDS_SIZE(48, 40),
-        .frontPicYOffset = 12,
+        .frontPicYOffset = 1,
         .frontAnimFrames = ANIM_FRAMES(
             ANIMCMD_FRAME(1, 32),
             ANIMCMD_FRAME(0, 20),
@@ -866,14 +866,14 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .frontAnimId = ANIM_V_STRETCH,
         .backPic = gMonBackPic_Andromon,
         .backPicSize = MON_COORDS_SIZE(64, 40),
-        .backPicYOffset = 12,
+        .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Andromon,
         .shinyPalette = gMonShinyPalette_Andromon,
         .iconSprite = gMonIcon_Andromon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
-        SHADOW(1, 2, SHADOW_SIZE_S)
+        SHADOW(-3, 13, SHADOW_SIZE_M)
         FOOTPRINT(Andromon)
         OVERWORLD(
             sPicTable_Andromon,
