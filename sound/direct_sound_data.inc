@@ -4197,8 +4197,8 @@ Cry_Blitzgreymon::
 	.incbin "sound/direct_sound_samples/cries/blitzgreymon.bin"
 
 	.align 2
-Cry_Biosupinomon::
-	.incbin "sound/direct_sound_samples/cries/biosupinomon.bin"
+Cry_Biospinomon::
+	.incbin "sound/direct_sound_samples/cries/biospinomon.bin"
 .endif @ P_FAMILY_CRESGARURUMON
 
 .if P_FAMILY_ROSEMON == TRUE

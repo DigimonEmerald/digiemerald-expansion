@@ -7,7 +7,7 @@ ASSUMPTIONS
 }
 
 // Battle Bond transforms the Pokémon when fainting any battler(opposing or partner), unless it's the last Pokémon and the battle ends.
-SINGLE_BATTLE_TEST("Battle Bond transforms player's Biosupinomon - Singles")
+SINGLE_BATTLE_TEST("Battle Bond transforms player's Biospinomon - Singles")
 {
     u32 monsCountPlayer, monsCountOpponent;
 
@@ -18,7 +18,7 @@ SINGLE_BATTLE_TEST("Battle Bond transforms player's Biosupinomon - Singles")
 
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_BATTLE_BOND, GEN_8);
-        PLAYER(SPECIES_BIOSUPINOMON_BATTLE_BOND);
+        PLAYER(SPECIES_BIOSPINOMON_BATTLE_BOND);
         if (monsCountPlayer == 2) {
             PLAYER(SPECIES_LOPMONX);
         }
@@ -42,24 +42,24 @@ SINGLE_BATTLE_TEST("Battle Bond transforms player's Biosupinomon - Singles")
 >>>>>>> upstream/master
         if (monsCountOpponent != 1) {
             ABILITY_POPUP(player, ABILITY_BATTLE_BOND);
-            MESSAGE("Biosupinomon became fully charged due to its bond with its trainer!");
-            MESSAGE("Biosupinomon became Ash-Biosupinomon!");
+            MESSAGE("Biospinomon became fully charged due to its bond with its trainer!");
+            MESSAGE("Biospinomon became Ash-Biospinomon!");
         } else {
             NONE_OF {
                 ABILITY_POPUP(player, ABILITY_BATTLE_BOND);
-                MESSAGE("Biosupinomon became fully charged due to its bond with its trainer!");
+                MESSAGE("Biospinomon became fully charged due to its bond with its trainer!");
             }
         }
     } FINALLY {
         if (monsCountOpponent != 1) {
             EXPECT(player->species == SPECIES_ROSEMON_BURSTMODE);
         } else {
-            EXPECT(player->species == SPECIES_BIOSUPINOMON_BATTLE_BOND);
+            EXPECT(player->species == SPECIES_BIOSPINOMON_BATTLE_BOND);
         }
     }
 }
 
-SINGLE_BATTLE_TEST("Battle Bond transforms opponent's Biosupinomon - Singles")
+SINGLE_BATTLE_TEST("Battle Bond transforms opponent's Biospinomon - Singles")
 {
     u32 monsCountPlayer, monsCountOpponent;
 
@@ -70,7 +70,7 @@ SINGLE_BATTLE_TEST("Battle Bond transforms opponent's Biosupinomon - Singles")
 
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_BATTLE_BOND, GEN_8);
-        OPPONENT(SPECIES_BIOSUPINOMON_BATTLE_BOND);
+        OPPONENT(SPECIES_BIOSPINOMON_BATTLE_BOND);
         if (monsCountOpponent == 2) {
             OPPONENT(SPECIES_LOPMONX);
         }
@@ -90,24 +90,24 @@ SINGLE_BATTLE_TEST("Battle Bond transforms opponent's Biosupinomon - Singles")
         MESSAGE("Lopmonx fainted!");
         if (monsCountPlayer != 1) {
             ABILITY_POPUP(opponent, ABILITY_BATTLE_BOND);
-            MESSAGE("The opposing Biosupinomon became fully charged due to its bond with its trainer!");
-            MESSAGE("The opposing Biosupinomon became Ash-Biosupinomon!");
+            MESSAGE("The opposing Biospinomon became fully charged due to its bond with its trainer!");
+            MESSAGE("The opposing Biospinomon became Ash-Biospinomon!");
         } else {
             NONE_OF {
                 ABILITY_POPUP(opponent, ABILITY_BATTLE_BOND);
-                MESSAGE("The opposing Biosupinomon became fully charged due to its bond with its trainer!");
+                MESSAGE("The opposing Biospinomon became fully charged due to its bond with its trainer!");
             }
         }
     } FINALLY {
         if (monsCountPlayer != 1) {
             EXPECT(opponent->species == SPECIES_ROSEMON_BURSTMODE);
         } else {
-            EXPECT(opponent->species == SPECIES_BIOSUPINOMON_BATTLE_BOND);
+            EXPECT(opponent->species == SPECIES_BIOSPINOMON_BATTLE_BOND);
         }
     }
 }
 
-DOUBLE_BATTLE_TEST("Battle Bond transforms player's Biosupinomon when fainting its Ally")
+DOUBLE_BATTLE_TEST("Battle Bond transforms player's Biospinomon when fainting its Ally")
 {
     u32 monsCountPlayer, monsCountOpponent;
 
@@ -118,7 +118,7 @@ DOUBLE_BATTLE_TEST("Battle Bond transforms player's Biosupinomon when fainting i
 
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_BATTLE_BOND, GEN_8);
-        PLAYER(SPECIES_BIOSUPINOMON_BATTLE_BOND);
+        PLAYER(SPECIES_BIOSPINOMON_BATTLE_BOND);
         PLAYER(SPECIES_LOPMONX) { HP(1); }
         if (monsCountPlayer == 3) {
             PLAYER(SPECIES_LOPMONX);
@@ -139,8 +139,8 @@ DOUBLE_BATTLE_TEST("Battle Bond transforms player's Biosupinomon when fainting i
         HP_BAR(playerRight);
         MESSAGE("Lopmonx fainted!");
         ABILITY_POPUP(playerLeft, ABILITY_BATTLE_BOND);
-        MESSAGE("Biosupinomon became fully charged due to its bond with its trainer!");
-        MESSAGE("Biosupinomon became Ash-Biosupinomon!");
+        MESSAGE("Biospinomon became fully charged due to its bond with its trainer!");
+        MESSAGE("Biospinomon became Ash-Biospinomon!");
     } FINALLY {
         EXPECT(playerLeft->species == SPECIES_ROSEMON_BURSTMODE);
     }
@@ -150,7 +150,7 @@ SINGLE_BATTLE_TEST("Battle Bond increases Atk, SpAtk and Speed by 1 stage (Gen9+
 {
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_BATTLE_BOND, GEN_9);
-        PLAYER(SPECIES_BIOSUPINOMON_BATTLE_BOND) { Ability(ABILITY_BATTLE_BOND); }
+        PLAYER(SPECIES_BIOSPINOMON_BATTLE_BOND) { Ability(ABILITY_BATTLE_BOND); }
         OPPONENT(SPECIES_LOPMON_X) { HP(1); }
         OPPONENT(SPECIES_LOPMON_X);
     } WHEN {
@@ -171,7 +171,7 @@ SINGLE_BATTLE_TEST("Battle Bond increases a Stat even if only one can be increas
 {
     GIVEN {
         WITH_CONFIG(GEN_CONFIG_BATTLE_BOND, GEN_9);
-        PLAYER(SPECIES_BIOSUPINOMON_BATTLE_BOND) { Ability(ABILITY_BATTLE_BOND); }
+        PLAYER(SPECIES_BIOSPINOMON_BATTLE_BOND) { Ability(ABILITY_BATTLE_BOND); }
         OPPONENT(SPECIES_LOPMON_X) { HP(1); }
         OPPONENT(SPECIES_LOPMON_X);
     } WHEN {

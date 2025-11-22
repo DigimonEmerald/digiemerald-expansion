@@ -2248,7 +2248,7 @@ static const struct Digivolution sZubamonDigivolveTable[] = {
 // };
 
 static const struct Digivolution sBiostegomonDigivolveTable[] = {
-    {160, 95, 125, 77, 95, 83, SPECIES_BIOSUPINOMON},
+    {160, 95, 125, 77, 95, 83, SPECIES_BIOSPINOMON},
     DIGIVOLUTION_END,
 };
 

@@ -26556,7 +26556,7 @@ static const u16 sBlitzgreymonTeachableLearnset[] = {
     MOVE_UNAVAILABLE,
 };
 
-static const u16 sBiosupinomonTeachableLearnset[] = {
+static const u16 sBiospinomonTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_ATTRACT,
     MOVE_BLIZZARD,

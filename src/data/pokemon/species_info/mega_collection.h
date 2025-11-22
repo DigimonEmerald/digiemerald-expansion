@@ -592,7 +592,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .teachableLearnset = sBlitzgreymonTeachableLearnset,
     },
 
-    [SPECIES_BIOSUPINOMON] =
+    [SPECIES_BIOSPINOMON] =
     {
         .baseHP        = 115,
         .baseAttack    = 115,
@@ -613,14 +613,14 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .abilities = { ABILITY_TORRENT, ABILITY_NONE, ABILITY_NONE }, // Bio-Hybrid DNA
         .bodyColor = BODY_COLOR_RED,
         .noFlip = TRUE,
-        .speciesName = _("BioSupinomon"),
-        .cryId = CRY_BIOSUPINOMON,
-        .natDexNum = NATIONAL_DEX_BIOSUPINOMON,
+        .speciesName = _("Biospinomon"),
+        .cryId = CRY_BIOSPINOMON,
+        .natDexNum = NATIONAL_DEX_BIOSPINOMON,
         .categoryName = _("Bio-Hybrid"),
         .height = 180,
         .weight = 8644,
         .description = COMPOUND_STRING(
-            "A fiercely loyal Digimon, BioSupinomon\n"
+            "A fiercely loyal Digimon, Biospinomon\n"
             "have a tendency to become infatuated with\n"
             "someone or something. It is likely the\n"
             "fusion of Human and Supinomon data."),
@@ -628,37 +628,37 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .pokemonOffset = 2,
         .trainerScale = 271,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Biosupinomon,
+        .frontPic = gMonFrontPic_Biospinomon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 1,
-        .frontAnimFrames = sAnims_Biosupinomon,
+        .frontAnimFrames = sAnims_Biospinomon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Biosupinomon,
+        .backPic = gMonBackPic_Biospinomon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 0,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Biosupinomon,
-        .shinyPalette = gMonShinyPalette_Biosupinomon,
-        .iconSprite = gMonIcon_Biosupinomon,
+        .palette = gMonPalette_Biospinomon,
+        .shinyPalette = gMonShinyPalette_Biospinomon,
+        .iconSprite = gMonIcon_Biospinomon,
         .iconPalIndex = 4,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 13, SHADOW_SIZE_L)
-        FOOTPRINT(Biosupinomon)
+        FOOTPRINT(Biospinomon)
         OVERWORLD(
-            sPicTable_Biosupinomon,
+            sPicTable_Biospinomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Biosupinomon,
-            gShinyOverworldPalette_Biosupinomon
+            gOverworldPalette_Biospinomon,
+            gShinyOverworldPalette_Biospinomon
         )
-        .levelUpLearnset = sBiosupinomonLevelUpLearnset,
-        .teachableLearnset = sBiosupinomonTeachableLearnset,
-        .formSpeciesIdTable = sBiosupinomonFormSpeciesIdTable,
+        .levelUpLearnset = sBiospinomonLevelUpLearnset,
+        .teachableLearnset = sBiospinomonTeachableLearnset,
+        .formSpeciesIdTable = sBiospinomonFormSpeciesIdTable,
     },
 
-    [SPECIES_BIOSUPINOMON_BATTLE_BOND] =
+    [SPECIES_BIOSPINOMON_BATTLE_BOND] =
     {
         .baseHP        = 72,
         .baseAttack    = 95,
@@ -678,46 +678,46 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .abilities = { ABILITY_BATTLE_BOND, ABILITY_NONE, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLUE,
         .noFlip = TRUE,
-        .speciesName = _("Biosupinomon"),
-        .cryId = CRY_BIOSUPINOMON,
-        .natDexNum = NATIONAL_DEX_BIOSUPINOMON,
+        .speciesName = _("Biospinomon"),
+        .cryId = CRY_BIOSPINOMON,
+        .natDexNum = NATIONAL_DEX_BIOSPINOMON,
         .categoryName = _("Ninja"),
         .height = 15,
         .weight = 400,
-        .description = gBiosupinomonPokedexText,
+        .description = gBiospinomonPokedexText,
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Biosupinomon,
+        .frontPic = gMonFrontPic_Biospinomon,
         .frontPicSize = MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = 7,
-        .frontAnimFrames =sAnims_Biosupinomon,
+        .frontAnimFrames =sAnims_Biospinomon,
         .frontAnimId = ANIM_V_STRETCH,
-        .backPic = gMonBackPic_Biosupinomon,
+        .backPic = gMonBackPic_Biospinomon,
         .backPicSize = MON_COORDS_SIZE(64, 48),
         .backPicYOffset = 11,
         .backAnimId = BACK_ANIM_JOLT_RIGHT,
-        .palette = gMonPalette_Biosupinomon,
-        .shinyPalette = gMonShinyPalette_Biosupinomon,
-        .iconSprite = gMonIcon_Biosupinomon,
+        .palette = gMonPalette_Biospinomon,
+        .shinyPalette = gMonShinyPalette_Biospinomon,
+        .iconSprite = gMonIcon_Biospinomon,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(4, 6, SHADOW_SIZE_L)
-        FOOTPRINT(Biosupinomon)
+        FOOTPRINT(Biospinomon)
         OVERWORLD(
-            sPicTable_Biosupinomon,
+            sPicTable_Biospinomon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Biosupinomon,
-            gShinyOverworldPalette_Biosupinomon
+            gOverworldPalette_Biospinomon,
+            gShinyOverworldPalette_Biospinomon
         )
-        .levelUpLearnset = sBiosupinomonLevelUpLearnset,
-        .teachableLearnset = sBiosupinomonTeachableLearnset,
-        .formSpeciesIdTable = sBiosupinomonFormSpeciesIdTable,
-        .formChangeTable = sBiosupinomonBattleBondFormChangeTable,
+        .levelUpLearnset = sBiospinomonLevelUpLearnset,
+        .teachableLearnset = sBiospinomonTeachableLearnset,
+        .formSpeciesIdTable = sBiospinomonFormSpeciesIdTable,
+        .formChangeTable = sBiospinomonBattleBondFormChangeTable,
     },
 
     [SPECIES_ROSEMON_BURSTMODE] =
@@ -744,8 +744,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
         .speciesName = _("Rosemon"),
-        .cryId = CRY_BIOSUPINOMON,
-        .natDexNum = NATIONAL_DEX_BIOSUPINOMON,
+        .cryId = CRY_BIOSPINOMON,
+        .natDexNum = NATIONAL_DEX_BIOSPINOMON,
         .categoryName = _("Thorny"),
         .height = 21,
         .weight = 765,
@@ -779,11 +779,11 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 14, SHADOW_SIZE_L)
-        FOOTPRINT(Biosupinomon)
+        FOOTPRINT(Biospinomon)
         .levelUpLearnset = sRosemon_burstmodeLevelUpLearnset,
-        .teachableLearnset = sBiosupinomonTeachableLearnset,
-        .formSpeciesIdTable = sBiosupinomonFormSpeciesIdTable,
-        .formChangeTable = sBiosupinomonBattleBondFormChangeTable,
+        .teachableLearnset = sBiospinomonTeachableLearnset,
+        .formSpeciesIdTable = sBiospinomonFormSpeciesIdTable,
+        .formChangeTable = sBiospinomonBattleBondFormChangeTable,
     },
 #endif //P_FAMILY_CRESGARURUMON
 

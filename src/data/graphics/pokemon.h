@@ -19181,19 +19181,19 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-    const u32 gMonFrontPic_Biosupinomon[] = INCBIN_U32("graphics/pokemon/biosupinomon/anim_front.4bpp.smol");
-    const u16 gMonPalette_Biosupinomon[] = INCBIN_U16("graphics/pokemon/biosupinomon/normal.gbapal");
-    const u32 gMonBackPic_Biosupinomon[] = INCBIN_U32("graphics/pokemon/biosupinomon/back.4bpp.smol");
-    const u16 gMonShinyPalette_Biosupinomon[] = INCBIN_U16("graphics/pokemon/biosupinomon/shiny.gbapal");
-    const u8 gMonIcon_Biosupinomon[] = INCBIN_U8("graphics/pokemon/biosupinomon/icon.4bpp");
+    const u32 gMonFrontPic_Biospinomon[] = INCBIN_U32("graphics/pokemon/biospinomon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Biospinomon[] = INCBIN_U16("graphics/pokemon/biospinomon/normal.gbapal");
+    const u32 gMonBackPic_Biospinomon[] = INCBIN_U32("graphics/pokemon/biospinomon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Biospinomon[] = INCBIN_U16("graphics/pokemon/biospinomon/shiny.gbapal");
+    const u8 gMonIcon_Biospinomon[] = INCBIN_U8("graphics/pokemon/biospinomon/icon.4bpp");
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Biosupinomon[] = INCBIN_U8("graphics/pokemon/biosupinomon/footprint.1bpp");
+    const u8 gMonFootprint_Biospinomon[] = INCBIN_U8("graphics/pokemon/biospinomon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Biosupinomon[] = INCBIN_COMP("graphics/pokemon/biosupinomon/overworld.4bpp");
+    const u32 gObjectEventPic_Biospinomon[] = INCBIN_COMP("graphics/pokemon/biospinomon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Biosupinomon[] = INCBIN_U16("graphics/pokemon/biosupinomon/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Biosupinomon[] = INCBIN_U16("graphics/pokemon/biosupinomon/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Biospinomon[] = INCBIN_U16("graphics/pokemon/biospinomon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Biospinomon[] = INCBIN_U16("graphics/pokemon/biospinomon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
@@ -19203,10 +19203,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_Rosemon_burstmode[] = INCBIN_U16("graphics/pokemon/rosemon_burstmode/shiny.gbapal");
     const u8 gMonIcon_Rosemon_burstmode[] = INCBIN_U8("graphics/pokemon/rosemon_burstmode/icon.4bpp");
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Rosemon_burstmode[] = INCBIN_COMP("graphics/pokemon/biosupinomon/ash/overworld.4bpp");
+    const u32 gObjectEventPic_Rosemon_burstmode[] = INCBIN_COMP("graphics/pokemon/biospinomon/ash/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Rosemon_burstmode[] = INCBIN_U16("graphics/pokemon/biosupinomon/ash/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Rosemon_burstmode[] = INCBIN_U16("graphics/pokemon/biosupinomon/ash/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Rosemon_burstmode[] = INCBIN_U16("graphics/pokemon/biospinomon/ash/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Rosemon_burstmode[] = INCBIN_U16("graphics/pokemon/biospinomon/ash/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_CRESGARURUMON

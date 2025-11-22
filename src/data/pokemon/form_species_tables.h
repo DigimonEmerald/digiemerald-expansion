@@ -1344,9 +1344,9 @@ static const u16 sGenesectFormSpeciesIdTable[] = {
 #endif //P_FAMILY_GENESECT
 
 #if P_FAMILY_CRESGARURUMON
-static const u16 sBiosupinomonFormSpeciesIdTable[] = {
-    SPECIES_BIOSUPINOMON,
-    SPECIES_BIOSUPINOMON_BATTLE_BOND,
+static const u16 sBiospinomonFormSpeciesIdTable[] = {
+    SPECIES_BIOSPINOMON,
+    SPECIES_BIOSPINOMON_BATTLE_BOND,
     SPECIES_ROSEMON_BURSTMODE,
     FORM_SPECIES_END,
 };

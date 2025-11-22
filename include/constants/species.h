@@ -664,7 +664,7 @@
 #define SPECIES_OMNIMON                                 655
 #define SPECIES_CRESGARURUMON                                 656
 #define SPECIES_BLITZGREYMON                               657
-#define SPECIES_BIOSUPINOMON                                658
+#define SPECIES_BIOSPINOMON                                658
 #define SPECIES_ROSEMON                                659
 #define SPECIES_DINOREXMON                               660
 #define SPECIES_DINOMON                              661
@@ -1122,7 +1122,7 @@
 #define SPECIES_GENESECT_SHOCK                          1109
 #define SPECIES_GENESECT_BURN                           1110
 #define SPECIES_GENESECT_CHILL                          1111
-#define SPECIES_BIOSUPINOMON_BOND                           11
+#define SPECIES_BIOSPINOMON_BOND                           11
 #define SPECIES_ROSEMON_BURSTMODE                            1113
 #define SPECIES_SABERLEOMON_POLAR                          1114
 #define SPECIES_SABERLEOMON_TUNDRA                         1115
@@ -1559,7 +1559,7 @@
 #define SPECIES_BASCULEGION                             1539
 #define SPECIES_ENAMORUS                                1540
 #define SPECIES_DARMANITAN_GALAR                        1541
-#define SPECIES_BIOSUPINOMON_BATTLE_BOND                1542
+#define SPECIES_BIOSPINOMON_BATTLE_BOND                1542
 #define SPECIES_ZYGARDE_10                              1543
 #define SPECIES_MINIOR_ORANGE                           1544
 #define SPECIES_MINIOR_YELLOW                           1545

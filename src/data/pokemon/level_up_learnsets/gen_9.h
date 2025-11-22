@@ -13531,7 +13531,7 @@ static const struct LevelUpMove sBlitzgreymonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const struct LevelUpMove sBiosupinomonLevelUpLearnset[] = {
+static const struct LevelUpMove sBiospinomonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_TACKLE),
     LEVEL_UP_MOVE(6, MOVE_GROWL),
     LEVEL_UP_MOVE(11, MOVE_QUICK_ATTACK),
