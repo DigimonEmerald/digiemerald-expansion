@@ -505,7 +505,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_QuintyPlump,           OBJ_EVENT_PAL_TAG_QUINTY_PLUMP},
     {gObjectEventPal_QuintyPlumpReflection, OBJ_EVENT_PAL_TAG_QUINTY_PLUMP_REFLECTION},
     {gObjectEventPal_Truck,                 OBJ_EVENT_PAL_TAG_TRUCK},
-    {gObjectEventPal_Axemon,              OBJ_EVENT_PAL_TAG_AXEMON},
+    {gObjectEventPal_Deadlyaxemon,              OBJ_EVENT_PAL_TAG_DEADLYAXEMON},
     {gObjectEventPal_EnemyToyagumon,        OBJ_EVENT_PAL_TAG_TOYAGUMON},
     {gObjectEventPal_May,                   OBJ_EVENT_PAL_TAG_MAY},
     {gObjectEventPal_MayReflection,         OBJ_EVENT_PAL_TAG_MAY_REFLECTION},
@@ -612,11 +612,11 @@ static const u16 sReflectionPaletteTags_Truck[] = {
     OBJ_EVENT_PAL_TAG_TRUCK,
 };
 
-static const u16 sReflectionPaletteTags_AxemonMover[] = {
-    OBJ_EVENT_PAL_TAG_AXEMON,
-    OBJ_EVENT_PAL_TAG_AXEMON,
-    OBJ_EVENT_PAL_TAG_AXEMON,
-    OBJ_EVENT_PAL_TAG_AXEMON,
+static const u16 sReflectionPaletteTags_DeadlyaxemonMover[] = {
+    OBJ_EVENT_PAL_TAG_DEADLYAXEMON,
+    OBJ_EVENT_PAL_TAG_DEADLYAXEMON,
+    OBJ_EVENT_PAL_TAG_DEADLYAXEMON,
+    OBJ_EVENT_PAL_TAG_DEADLYAXEMON,
 };
 
 static const u16 sReflectionPaletteTags_MovingBox[] = {
@@ -680,7 +680,7 @@ static const struct PairedPalettes sSpecialObjectReflectionPaletteSets[] = {
     {OBJ_EVENT_PAL_TAG_MAY,              sReflectionPaletteTags_May},
     {OBJ_EVENT_PAL_TAG_QUINTY_PLUMP,     sReflectionPaletteTags_QuintyPlump},
     {OBJ_EVENT_PAL_TAG_TRUCK,            sReflectionPaletteTags_Truck},
-    {OBJ_EVENT_PAL_TAG_AXEMON,         sReflectionPaletteTags_AxemonMover},
+    {OBJ_EVENT_PAL_TAG_DEADLYAXEMON,         sReflectionPaletteTags_DeadlyaxemonMover},
     {OBJ_EVENT_PAL_TAG_MOVING_BOX,       sReflectionPaletteTags_MovingBox},
     {OBJ_EVENT_PAL_TAG_CABLE_CAR,        sReflectionPaletteTags_CableCar},
     {OBJ_EVENT_PAL_TAG_SSTIDAL,          sReflectionPaletteTags_SSTidal},

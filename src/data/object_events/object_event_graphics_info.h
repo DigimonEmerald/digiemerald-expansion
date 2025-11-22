@@ -1784,9 +1784,9 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Truck = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AxemonCarryingBox = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DeadlyaxemonCarryingBox = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_AXEMON,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DEADLYAXEMON,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 512,
     .width = 32,
@@ -1799,13 +1799,13 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AxemonCarryingBox 
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_AxemonCarryingBox,
+    .images = sPicTable_DeadlyaxemonCarryingBox,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AxemonFacingAway = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DeadlyaxemonFacingAway = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_AXEMON,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DEADLYAXEMON,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 512,
     .width = 32,
@@ -1818,7 +1818,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AxemonFacingAway =
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_AxemonFacingAway,
+    .images = sPicTable_DeadlyaxemonFacingAway,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 

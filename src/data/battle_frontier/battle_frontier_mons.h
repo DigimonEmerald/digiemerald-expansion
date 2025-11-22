@@ -1547,8 +1547,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ev = TRAINER_PARTY_EVS(170, 170, 170, 0, 0, 0),
         .nature = NATURE_NAIVE
     },
-    [FRONTIER_MON_AXEMON_1] = {
-        .species = SPECIES_AXEMON,
+    [FRONTIER_MON_DEADLYAXEMON_1] = {
+        .species = SPECIES_DEADLYAXEMON,
         .moves = {MOVE_SLASH, MOVE_COUNTER, MOVE_ENCORE, MOVE_UPROAR},
         .heldItem = ITEM_FOCUS_BAND,
         .ev = TRAINER_PARTY_EVS(252, 252, 0, 0, 0, 0),
@@ -2282,8 +2282,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ev = TRAINER_PARTY_EVS(252, 0, 252, 0, 0, 0),
         .nature = NATURE_DOCILE
     },
-    [FRONTIER_MON_AXEMON_2] = {
-        .species = SPECIES_AXEMON,
+    [FRONTIER_MON_DEADLYAXEMON_2] = {
+        .species = SPECIES_DEADLYAXEMON,
         .moves = {MOVE_CRUSH_CLAW, MOVE_REVERSAL, MOVE_ENDURE, MOVE_SHADOW_BALL},
         .heldItem = ITEM_SALAC_BERRY,
         .ev = TRAINER_PARTY_EVS(0, 252, 0, 0, 0, 252),

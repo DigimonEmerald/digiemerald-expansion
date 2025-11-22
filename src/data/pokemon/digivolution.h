@@ -1616,7 +1616,7 @@ static const struct Digivolution sKotemonDigivolveTable[] = {
     {52, 31, 29, 19, 29, 33, SPECIES_MUSYAMON},
     {52, 36, 29, 19, 29, 31, SPECIES_STARMON},
     // {52, 31, 29, 19, 29, 25, SPECIES_SKULLKNIGHTMON},
-    {52, 37, 34, 19, 29, 25, SPECIES_AXEMON},
+    {52, 37, 34, 19, 29, 25, SPECIES_DEADLYAXEMON},
     DIGIVOLUTION_END,
 };
 
@@ -1725,7 +1725,7 @@ static const struct Digivolution sModokibetamonDigivolveTable[] = {
 
 static const struct Digivolution sMonitamonDigivolveTable[] = {
     // {50, 25, 25, 27, 25, 25, SPECIES_HI_VISION_MONITAMON},
-    {50, 33, 25, 27, 25, 25, SPECIES_AXEMON},
+    {50, 33, 25, 27, 25, 25, SPECIES_DEADLYAXEMON},
     // {50, 25, 25, 27, 25, 25, SPECIES_SKULLKNIGHTMON},
     DIGIVOLUTION_END,
 };
@@ -2390,7 +2390,7 @@ static const struct Digivolution sAurumonDigivolveTable[] = {
     DIGIVOLUTION_END,
 };
 
-// static const struct Digivolution sAxemonDigivolveTable[] = {
+// static const struct Digivolution sDeadlyaxemonDigivolveTable[] = {
 //     {102, 89, 77, 49, 57, 61, SPECIES_DARKNIGHTMON},
 //     DIGIVOLUTION_END,
 // };

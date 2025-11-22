@@ -10756,29 +10756,29 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 
 #if !P_GBA_STYLE_SPECIES_GFX
-    const u32 gMonFrontPic_Axemon[] = INCBIN_U32("graphics/pokemon/axemon/anim_front.4bpp.smol");
-    const u16 gMonPalette_Axemon[] = INCBIN_U16("graphics/pokemon/axemon/normal.gbapal");
-    const u32 gMonBackPic_Axemon[] = INCBIN_U32("graphics/pokemon/axemon/back.4bpp.smol");
-    const u16 gMonShinyPalette_Axemon[] = INCBIN_U16("graphics/pokemon/axemon/shiny.gbapal");
+    const u32 gMonFrontPic_Deadlyaxemon[] = INCBIN_U32("graphics/pokemon/deadlyaxemon/anim_front.4bpp.smol");
+    const u16 gMonPalette_Deadlyaxemon[] = INCBIN_U16("graphics/pokemon/deadlyaxemon/normal.gbapal");
+    const u32 gMonBackPic_Deadlyaxemon[] = INCBIN_U32("graphics/pokemon/deadlyaxemon/back.4bpp.smol");
+    const u16 gMonShinyPalette_Deadlyaxemon[] = INCBIN_U16("graphics/pokemon/deadlyaxemon/shiny.gbapal");
 #else
-    const u32 gMonFrontPic_Axemon[] = INCBIN_U32("graphics/pokemon/axemon/anim_front_gba.4bpp.smol");
-    const u16 gMonPalette_Axemon[] = INCBIN_U16("graphics/pokemon/axemon/normal_gba.gbapal");
-    const u32 gMonBackPic_Axemon[] = INCBIN_U32("graphics/pokemon/axemon/back_gba.4bpp.smol");
-    const u16 gMonShinyPalette_Axemon[] = INCBIN_U16("graphics/pokemon/axemon/shiny_gba.gbapal");
+    const u32 gMonFrontPic_Deadlyaxemon[] = INCBIN_U32("graphics/pokemon/deadlyaxemon/anim_front_gba.4bpp.smol");
+    const u16 gMonPalette_Deadlyaxemon[] = INCBIN_U16("graphics/pokemon/deadlyaxemon/normal_gba.gbapal");
+    const u32 gMonBackPic_Deadlyaxemon[] = INCBIN_U32("graphics/pokemon/deadlyaxemon/back_gba.4bpp.smol");
+    const u16 gMonShinyPalette_Deadlyaxemon[] = INCBIN_U16("graphics/pokemon/deadlyaxemon/shiny_gba.gbapal");
 #endif //P_GBA_STYLE_SPECIES_GFX
 #if !P_GBA_STYLE_SPECIES_ICONS
-    const u8 gMonIcon_Axemon[] = INCBIN_U8("graphics/pokemon/axemon/icon.4bpp");
+    const u8 gMonIcon_Deadlyaxemon[] = INCBIN_U8("graphics/pokemon/deadlyaxemon/icon.4bpp");
 #else
-    const u8 gMonIcon_Axemon[] = INCBIN_U8("graphics/pokemon/axemon/icon_gba.4bpp");
+    const u8 gMonIcon_Deadlyaxemon[] = INCBIN_U8("graphics/pokemon/deadlyaxemon/icon_gba.4bpp");
 #endif //P_GBA_STYLE_SPECIES_ICONS
 #if P_FOOTPRINTS
-    const u8 gMonFootprint_Axemon[] = INCBIN_U8("graphics/pokemon/axemon/footprint.1bpp");
+    const u8 gMonFootprint_Deadlyaxemon[] = INCBIN_U8("graphics/pokemon/deadlyaxemon/footprint.1bpp");
 #endif //P_FOOTPRINTS
 #if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_Axemon[] = INCBIN_COMP("graphics/pokemon/axemon/overworld.4bpp");
+    const u32 gObjectEventPic_Deadlyaxemon[] = INCBIN_COMP("graphics/pokemon/deadlyaxemon/overworld.4bpp");
 #if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_Axemon[] = INCBIN_U16("graphics/pokemon/axemon/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_Axemon[] = INCBIN_U16("graphics/pokemon/axemon/overworld_shiny.gbapal");
+    const u16 gOverworldPalette_Deadlyaxemon[] = INCBIN_U16("graphics/pokemon/deadlyaxemon/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_Deadlyaxemon[] = INCBIN_U16("graphics/pokemon/deadlyaxemon/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 

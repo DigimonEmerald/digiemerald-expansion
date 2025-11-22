@@ -374,28 +374,28 @@ static const struct SpriteFrameImage sPicTable_Truck[] = {
     obj_frame_tiles(gObjectEventPic_Truck),
 };
 
-static const struct SpriteFrameImage sPicTable_AxemonCarryingBox[] = {
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 0),
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 0),
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 0),
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 1),
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 2),
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 1),
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 2),
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 1),
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 2),
+static const struct SpriteFrameImage sPicTable_DeadlyaxemonCarryingBox[] = {
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 0),
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 0),
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 0),
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 1),
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 2),
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 1),
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 2),
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 1),
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 2),
 };
 
-static const struct SpriteFrameImage sPicTable_AxemonFacingAway[] = {
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 3),
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 3),
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 3),
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 4),
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 4),
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 4),
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 4),
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 4),
-    overworld_frame(gObjectEventPic_AxemonMover, 4, 4, 4),
+static const struct SpriteFrameImage sPicTable_DeadlyaxemonFacingAway[] = {
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 3),
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 3),
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 3),
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 4),
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 4),
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 4),
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 4),
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 4),
+    overworld_frame(gObjectEventPic_DeadlyaxemonMover, 4, 4, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_BirchsBag[] = {

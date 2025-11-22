@@ -228,7 +228,7 @@ const u32 gObjectEventPic_SubmarineShadow[] = INCBIN_U32("graphics/object_events
 const u16 gObjectEventPal_SubmarineShadow[] = INCBIN_U16("graphics/object_events/palettes/submarine_shadow.gbapal");
 const u32 gObjectEventPic_Truck[] = INCBIN_U32("graphics/object_events/pics/misc/truck.4bpp");
 const u16 gObjectEventPal_Truck[] = INCBIN_U16("graphics/object_events/palettes/truck.gbapal");
-const u16 gObjectEventPal_Axemon[] = INCBIN_U16("graphics/object_events/palettes/axemon.gbapal");
+const u16 gObjectEventPal_Deadlyaxemon[] = INCBIN_U16("graphics/object_events/palettes/deadlyaxemon.gbapal");
 const u32 gObjectEventPic_BirchsBag[] = INCBIN_U32("graphics/object_events/pics/misc/birchs_bag.4bpp");
 const u32 gObjectEventPic_EnemyToyagumon[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/enemy_toyagumon.4bpp");
 const u16 gObjectEventPal_EnemyToyagumon[] = INCBIN_U16("graphics/object_events/palettes/enemy_toyagumon.gbapal");
@@ -378,7 +378,7 @@ const u32 gObjectEventPic_Starmon_2010Old[] = INCBIN_U32("graphics/object_events
 const u32 gObjectEventPic_GekomonOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/gekomon.4bpp");
 const u32 gObjectEventPic_Gatomon_xOld[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/gatomon_x.4bpp");
 
-const u32 gObjectEventPic_AxemonMover[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/axemon_mover.4bpp");
+const u32 gObjectEventPic_DeadlyaxemonMover[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/deadlyaxemon_mover.4bpp");
 const u32 gObjectEventPic_JunkmonTree[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/junkmon_tree.4bpp");
 const u32 gObjectEventPic_GeogreymonCutscene[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/geogreymon_cutscene.4bpp");
 

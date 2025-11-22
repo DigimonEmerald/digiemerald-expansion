@@ -462,7 +462,7 @@ $(OBJEVENTGFXDIR)/pokemon_old/birdramon.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon_old/junkmon_tree.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon_old/axemon_mover.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon_old/deadlyaxemon_mover.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon_old/angemon.4bpp: %.4bpp: %.png
@@ -1918,7 +1918,7 @@ $(POKEMONGFXDIR)/atamadekachimon/overworld.4bpp: %.4bpp: %.png
 $(POKEMONGFXDIR)/aurumon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(POKEMONGFXDIR)/axemon/overworld.4bpp: %.4bpp: %.png
+$(POKEMONGFXDIR)/deadlyaxemon/overworld.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(POKEMONGFXDIR)/baboongamon/overworld.4bpp: %.4bpp: %.png

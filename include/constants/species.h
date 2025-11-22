@@ -294,7 +294,7 @@
 #define SPECIES_ARRESTERDRAMON                               285
 #define SPECIES_ATAMADEKACHIMON                                 286
 #define SPECIES_AURUMON                                 287
-#define SPECIES_AXEMON                                288
+#define SPECIES_DEADLYAXEMON                                288
 #define SPECIES_BABOONGAMON                                 289
 #define SPECIES_BAKEMON                                 290
 #define SPECIES_BALLISTAMON                                 291

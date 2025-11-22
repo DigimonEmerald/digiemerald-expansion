@@ -298,7 +298,7 @@ Argomon - Masquerain
 Arresterdramon - Shroomish
 Atamadekachimon - Breloom
 Aurumon - Slakoth
-Axemon - Vigoroth
+Deadlyaxemon - Vigoroth
 Baboongamon - Slaking
 Bakemon - Nincada
 Ballistamon - Ninjask

@@ -2724,7 +2724,7 @@ static const struct BardSoundTemplate sBardSoundTemplates_Pokemon[NUM_SPECIES][M
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_AXEMON] = {
+    [SPECIES_DEADLYAXEMON] = {
         { .songId = PHONEME_ID(PH_KIT_SOLO) },
         { .songId = PHONEME_ID(PH_NURSE_BLEND) },
         { .songId = PHONEME_ID(PH_THOUGHT_BLEND) },

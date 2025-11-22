@@ -1767,7 +1767,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .digivolutions = sAurumonDigivolveTable,
     },
 
-    [SPECIES_AXEMON] =
+    [SPECIES_DEADLYAXEMON] =
     {
         .baseHP        = 65,
         .baseAttack    = 105,
@@ -1788,14 +1788,14 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
         .abilities = { ABILITY_HYPER_CUTTER, ABILITY_ROUGH_SKIN, ABILITY_NONE },
         .bodyColor = BODY_COLOR_BLACK,
-        .speciesName = _("Axemon"),
-        .cryId = CRY_AXEMON,
-        .natDexNum = NATIONAL_DEX_AXEMON,
+        .speciesName = _("Deadlyaxemon"),
+        .cryId = CRY_DEADLYAXEMON,
+        .natDexNum = NATIONAL_DEX_DEADLYAXEMON,
         .categoryName = _("Axe"),
         .height = 31,
         .weight = 885,
         .description = COMPOUND_STRING(
-            "Axemon uses it incredibly tough and fast\n"
+            "Deadlyaxemon uses it incredibly tough and fast\n"
             "body to rush opponents and ram into them.\n"
             "Its speed however doesn't let it be very\n"
             "nimble so it can only charge opponents."),
@@ -1803,7 +1803,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .pokemonOffset = 2,
         .trainerScale = 256,
         .trainerOffset = 0,
-        .frontPic = gMonFrontPic_Axemon,
+        .frontPic = gMonFrontPic_Deadlyaxemon,
         .frontPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(56, 64) : MON_COORDS_SIZE(64, 56),
         .frontPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 0 : 7,
         .frontAnimFrames = ANIM_FRAMES(
@@ -1816,29 +1816,29 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             ANIMCMD_FRAME(0, 11),
         ),
         .frontAnimId = ANIM_H_JUMPS,
-        .backPic = gMonBackPic_Axemon,
+        .backPic = gMonBackPic_Deadlyaxemon,
         .backPicSize = P_GBA_STYLE_SPECIES_GFX ? MON_COORDS_SIZE(64, 48) : MON_COORDS_SIZE(56, 64),
         .backPicYOffset = P_GBA_STYLE_SPECIES_GFX ? 10 : 0,
         .backAnimId = BACK_ANIM_CONCAVE_ARC_LARGE,
-        .palette = gMonPalette_Axemon,
-        .shinyPalette = gMonShinyPalette_Axemon,
-        .iconSprite = gMonIcon_Axemon,
+        .palette = gMonPalette_Deadlyaxemon,
+        .shinyPalette = gMonShinyPalette_Deadlyaxemon,
+        .iconSprite = gMonIcon_Deadlyaxemon,
         .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(4, 6, SHADOW_SIZE_M)
-        FOOTPRINT(Axemon)
+        FOOTPRINT(Deadlyaxemon)
         OVERWORLD(
-            sPicTable_Axemon,
+            sPicTable_Deadlyaxemon,
             SIZE_32x32,
             SHADOW_SIZE_M,
             TRACKS_FOOT,
             sAnimTable_Following,
-            gOverworldPalette_Axemon,
-            gShinyOverworldPalette_Axemon
+            gOverworldPalette_Deadlyaxemon,
+            gShinyOverworldPalette_Deadlyaxemon
         )
-        .levelUpLearnset = sAxemonLevelUpLearnset,
-        .teachableLearnset = sAxemonTeachableLearnset,
-        // .digivolutions = sAxemonDigivolveTable,
+        .levelUpLearnset = sDeadlyaxemonLevelUpLearnset,
+        .teachableLearnset = sDeadlyaxemonTeachableLearnset,
+        // .digivolutions = sDeadlyaxemonDigivolveTable,
     },
 
     [SPECIES_BABOONGAMON] =

@@ -99,8 +99,8 @@
 #define OBJ_EVENT_GFX_MAY_SURFING                 92
 #define OBJ_EVENT_GFX_MAY_FIELD_MOVE              93
 #define OBJ_EVENT_GFX_TRUCK                       94
-#define OBJ_EVENT_GFX_AXEMON_CARRYING_BOX       95
-#define OBJ_EVENT_GFX_AXEMON_FACING_AWAY        96
+#define OBJ_EVENT_GFX_DEADLYAXEMON_CARRYING_BOX       95
+#define OBJ_EVENT_GFX_DEADLYAXEMON_FACING_AWAY        96
 #define OBJ_EVENT_GFX_BIRCHS_BAG                  97
 #define OBJ_EVENT_GFX_TOYAGUMON_1                 98
 #define OBJ_EVENT_GFX_ARTIST                      99
@@ -357,7 +357,7 @@
 #define OBJ_EVENT_PAL_TAG_QUINTY_PLUMP            0x110B
 #define OBJ_EVENT_PAL_TAG_QUINTY_PLUMP_REFLECTION 0x110C
 #define OBJ_EVENT_PAL_TAG_TRUCK                   0x110D
-#define OBJ_EVENT_PAL_TAG_AXEMON                0x110E
+#define OBJ_EVENT_PAL_TAG_DEADLYAXEMON                0x110E
 #define OBJ_EVENT_PAL_TAG_TOYAGUMON               0x110F
 #define OBJ_EVENT_PAL_TAG_MAY                     0x1110
 #define OBJ_EVENT_PAL_TAG_MAY_REFLECTION          0x1111
