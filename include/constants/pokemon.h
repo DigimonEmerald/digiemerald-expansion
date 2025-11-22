@@ -314,6 +314,7 @@ enum EvolutionConditions {
     IF_SPDEF,
     IF_SPD,
     IF_HP,
+    IF_NO_FRIENDSHIP,                
     CONDITIONS_END
 };
 

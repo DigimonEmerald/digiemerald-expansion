@@ -1925,7 +1925,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sMetalgreymonTeachableLearnset,
         .digivolutions = sMetalgreymonDigivolveTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_METALGREYMON_VIRUS}),
-                                // {EVO_LEVEL, 50, SPECIES_METALGREYMON_VIRUS, CONDITIONS({IF_MIN_FRIENDSHIP, 255})}}),
+                                // {EVO_LEVEL, 50, SPECIES_METALGREYMON_ALTEROUS_MODE, CONDITIONS({IF_MIN_FRIENDSHIP, 255})}}),
                                 // {EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_METALGREYMON_X}),
     },
 #endif //P_FAMILY_MAMMOTHMON

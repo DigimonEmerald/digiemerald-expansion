@@ -4142,7 +4142,7 @@ static const struct Digivolution sArukenimonDigivolveTable[] = {
     {190, 107, 113, 113, 113, 77, SPECIES_BABAMON},
     // {190, 107, 113, 113, 113, 77, SPECIES_LILLITHMON},
     // {190, 107, 113, 113, 113, 77, SPECIES_GULFMON},
-    // {190, 107, 113, 113, 113, 77, SPECIES_RAFFLESIMON},
+    // {190, 107, 113, 113, 113, 77, SPECIES_LOTUSMON},
     // {190, 107, 113, 113, 113, 77, SPECIES_BOLTBOUTAMON},
     // {190, 107, 113, 113, 113, 77, SPECIES_MALOMYOTISMON},
     DIGIVOLUTION_END,
@@ -4548,3 +4548,35 @@ static const struct Digivolution sWaruseadramonDigivolveTable[] = {
     // {166, 107, 95, 125, 101, 143, SPECIES_MEGIDRAMON},
     DIGIVOLUTION_END,
 };
+
+static const struct Digivolution sMagnamonDigivolveTable[] = {
+    {94, 69, 73, 69, 73, 49, SPECIES_KNIGHTMON},
+    {94, 76, 73, 76, 80, 49, SPECIES_GARUDAMON},
+    // {94, 69, 73, 69, 73, 49, SPECIES_VOLCANOMON},
+    DIGIVOLUTION_END,
+};
+
+static const struct Digivolution sRosemonDigivolveTable[] = {
+    {242, 165, 165, 165, 165, 189, SPECIES_ROSEMON_BURSTMODE},
+    DIGIVOLUTION_END,
+};
+
+// static const struct Digivolution sMetalseadramonDigivolveTable[] = {
+//     {282, 157, 157, 173, 205, 141, SPECIES_GIGASEADRAMON},
+//     DIGIVOLUTION_END,
+// };
+
+// static const struct Digivolution sCreepymonDigivolveTable[] = {
+//     {250, 205, 165, 237, 125, 181, SPECIES_CREEPYMON_SUPER_ULTIMATE},
+//     DIGIVOLUTION_END,
+// };
+
+// static const struct Digivolution sDiaboromonDigivolveTable[] = {
+//     {242, 205, 149, 221, 133, 189, SPECIES_ARMAGEDDEMON},
+//     DIGIVOLUTION_END,
+// };
+
+// static const struct Digivolution sMachinedramonDigivolveTable[] = {
+//     {298, 197, 197, 165, 157, 133, SPECIES_CHAOSDRAMON},
+//     DIGIVOLUTION_END,
+// };

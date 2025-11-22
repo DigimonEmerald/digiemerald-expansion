@@ -74,7 +74,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sHerculeskabuterimonLevelUpLearnset,
         .teachableLearnset = sHerculeskabuterimonTeachableLearnset,
         .eggMoveLearnset = sHerculeskabuterimonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_MAGNADRAMON}),
+        // .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_HERCULESKABUTERMON_X}),
     },
 
     [SPECIES_MAGNADRAMON] =
@@ -147,17 +147,17 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sMagnadramonLevelUpLearnset,
         .teachableLearnset = sMagnadramonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_MAGNAMON}),
+        // .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_MAGNADRAMON_X}),
     },
 
     [SPECIES_MAGNAMON] =
     {
-        .baseHP        = 85,
-        .baseAttack    = 110,
-        .baseDefense   = 115,
-        .baseSpeed     = 85,
-        .baseSpAttack  = 110,
-        .baseSpDefense = 115,
+        .baseHP        = 55,
+        .baseAttack    = 80,
+        .baseDefense   = 85,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_LIGHT, TYPE_STEEL),
         .attribute = TYPE_FREE,
         .catchRate = 55,
@@ -217,6 +217,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sMagnamonLevelUpLearnset,
         .teachableLearnset = sMagnamonTeachableLearnset,
+        .digivolutions = sMagnamonDigivolveTable,
+        // .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_MAGNAMON_X}),
     },
 #endif //P_FAMILY_HERCULESKABUTERIMON
 
@@ -294,7 +296,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sWargreymonLevelUpLearnset,
         .teachableLearnset = sWargreymonTeachableLearnset,
         .eggMoveLearnset = sWargreymonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_METALGARURUMON}),
+        // .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_WARGREYMON_X}),
+                               //  {EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_BLACKWARGREYMON}),
     },
 
     [SPECIES_METALGARURUMON] =
@@ -365,7 +368,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sMetalgarurumonLevelUpLearnset,
         .teachableLearnset = sMetalgarurumonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_OMNIMON}),
+        // .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_METALGARURUMON_X}),
+                               //  {EVO_ITEM, ITEM_DARK_DIGITRON, SPECIES_METALGARURUMON_BLACK}),
     },
 
     [SPECIES_OMNIMON] =
@@ -440,6 +444,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sOmnimonLevelUpLearnset,
         .teachableLearnset = sOmnimonTeachableLearnset,
+        // .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_OMNIMON_X}),
     },
 #endif //P_FAMILY_WARGREYMON
 
@@ -516,7 +521,6 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sCresgarurumonLevelUpLearnset,
         .teachableLearnset = sCresgarurumonTeachableLearnset,
         .eggMoveLearnset = sCresgarurumonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_BLITZGREYMON}),
     },
 
     [SPECIES_BLITZGREYMON] =
@@ -586,7 +590,6 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sBlitzgreymonLevelUpLearnset,
         .teachableLearnset = sBlitzgreymonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_BIOSUPINOMON}),
     },
 
     [SPECIES_BIOSUPINOMON] =
@@ -853,7 +856,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sRosemonLevelUpLearnset,
         .teachableLearnset = sRosemonTeachableLearnset,
         .eggMoveLearnset = sRosemonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_DINOREXMON}),
+        .digivolutions = sRosemonDigivolveTable,
+        // .evolutions = EVOLUTION({EVO_ITEM, X_ANTIBODY, SPECIES_ROSEMON_X}),
     },
 
     [SPECIES_DINOREXMON] =
@@ -997,7 +1001,6 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sDinomonLevelUpLearnset,
         .teachableLearnset = sDinomonTeachableLearnset,
         .eggMoveLearnset = sDinomonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_MARINEANGEMON}),
     },
 
     [SPECIES_MARINEANGEMON] =
@@ -1072,7 +1075,6 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sMarineangemonLevelUpLearnset,
         .teachableLearnset = sMarineangemonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_METALETEMON}),
     },
 
     [SPECIES_METALETEMON] =
@@ -1146,339 +1148,197 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
 #endif //P_FAMILY_DINOMON
 
 #if P_FAMILY_METALSEADRAMON
-#define MTLSEADRAMON_SPECIES_INFO(evolution)                                                  \
-    {                                                                                       \
-        .baseHP        = 120,                                                                \
-        .baseAttack    = 95,                                                                \
-        .baseDefense   = 95,                                                                \
-        .baseSpeed     = 85,                                                                \
-        .baseSpAttack  = 105,                                                                \
-        .baseSpDefense = 125,                                                                \
-        .types = MON_TYPES(TYPE_STEEL, TYPE_WATER),                                                       \
-        .attribute = TYPE_DATA,                                                            \
-        .catchRate = 55,                                                                    \
-        .expYield = 250,                                                                    \
-        .evYield_HP = 2,                                                               \
-        .evYield_SpAttack = 1,                                                               \
-        .evYield_SpDefense = 3,                                                               \
-        .genderRatio = MON_GENDERLESS,                                                  \
-        .eggCycles = 15,                                                                    \
-        .friendship = STANDARD_FRIENDSHIP,                                                  \
-        .growthRate = GROWTH_SLOW,                                                   \
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),                                         \
-        .abilities = { ABILITY_FULL_METAL_BODY, ABILITY_WATER_VEIL, ABILITY_STEELWORKER },  \
-        .bodyColor = BODY_COLOR_YELLOW,                                                      \
-        .speciesName = _("MtlSeadramon"),                                                     \
-        .cryId = CRY_METALSEADRAMON,                                                            \
-        .natDexNum = NATIONAL_DEX_METALSEADRAMON,                                               \
-        .categoryName = _("Serpent"),                                                   \
-        .height = 175,                                                                        \
-        .weight = 4894,                                                                       \
-        .description = gMetalseadramonPokedexText,                                              \
-        .pokemonScale = 530,                                                                \
-        .pokemonOffset = 13,                                                                \
-        .trainerScale = 256,                                                                \
-        .trainerOffset = 0,                                                                 \
-        .frontPic = gMonFrontPic_Metalseadramon,                                                \
-        .frontPicSize = MON_COORDS_SIZE(32, 48),                                            \
-        .frontPicYOffset = 13,                                                              \
-        .frontAnimFrames = sAnims_Metalseadramon,                                               \
-        .frontAnimId = ANIM_V_STRETCH,                                                      \
-        .backPic = gMonBackPic_Metalseadramon,                                                  \
-        .backPicSize = MON_COORDS_SIZE(40, 56),                                             \
-        .backPicYOffset = 12,                                                               \
-        .backAnimId = BACK_ANIM_H_SLIDE,                                                    \
-        .palette = gMonPalette_Metalseadramon,                                                  \
-        .shinyPalette = gMonShinyPalette_Metalseadramon,                                        \
-        .iconSprite = gMonIcon_Metalseadramon,                                                  \
-        .iconPalIndex = 1,                                                                  \
-        .pokemonJumpType = PKMN_JUMP_TYPE_FAST,                                             \
-        SHADOW(1, 1, SHADOW_SIZE_S)                                                         \
-        FOOTPRINT(Metalseadramon)                                                               \
-        OVERWORLD(                                                                          \
-            sPicTable_Metalseadramon,                                                           \
-            SIZE_32x32,                                                                     \
-            SHADOW_SIZE_M,                                                                  \
-            TRACKS_FOOT,                                                                    \
-            sAnimTable_Following,                                                           \
-            gOverworldPalette_Metalseadramon,                                                   \
-            gShinyOverworldPalette_Metalseadramon                                               \
-        )                                                                                   \
-        .tmIlliterate = TRUE,                                                               \
-        .levelUpLearnset = sMetalseadramonLevelUpLearnset,                                      \
-        .teachableLearnset = sMetalseadramonTeachableLearnset,                                  \
-        .eggMoveLearnset = sMetalseadramonEggMoveLearnset,                                      \
-        .formSpeciesIdTable = sMetalseadramonFormSpeciesIdTable,                                \
-        .evolutions = EVOLUTION({EVO_LEVEL, 9, SPECIES_PUKUMON_##evolution}),                \
-    }                                                                                       \
+    [SPECIES_METALSEADRAMON] =                                              
+    {                                                                                       
+        .baseHP        = 120,
+        .baseAttack    = 95,
+        .baseDefense   = 95,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 105,
+        .baseSpDefense = 125,                                                                
+        .types = MON_TYPES(TYPE_STEEL, TYPE_WATER),                                                       
+        .attribute = TYPE_DATA,                                                            
+        .catchRate = 55,                                                                    
+        .expYield = 250,                                                                    
+        .evYield_HP = 2,                                                               
+        .evYield_SpAttack = 1,                                                               
+        .evYield_SpDefense = 3,                                                               
+        .genderRatio = MON_GENDERLESS,                                                  
+        .eggCycles = 15,                                                                    
+        .friendship = STANDARD_FRIENDSHIP,                                                  
+        .growthRate = GROWTH_SLOW,                                                   
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),                                         
+        .abilities = { ABILITY_FULL_METAL_BODY, ABILITY_WATER_VEIL, ABILITY_STEELWORKER },  
+        .bodyColor = BODY_COLOR_YELLOW,                                                      
+        .speciesName = _("MtlSeadramon"),                                                     
+        .cryId = CRY_METALSEADRAMON,                                                            
+        .natDexNum = NATIONAL_DEX_METALSEADRAMON,                                               
+        .categoryName = _("Serpent"),                                                   
+        .height = 175,                                                                        
+        .weight = 4894,                                                                      
+        .description = gMetalseadramonPokedexText,                                              
+        .pokemonScale = 530,                                                                
+        .pokemonOffset = 13,                                                                
+        .trainerScale = 256,                                                                
+        .trainerOffset = 0,                                                                 
+        .frontPic = gMonFrontPic_Metalseadramon,                                                
+        .frontPicSize = MON_COORDS_SIZE(32, 48),                                            
+        .frontPicYOffset = 13,                                                              
+        .frontAnimFrames = sAnims_Metalseadramon,                                               
+        .frontAnimId = ANIM_V_STRETCH,                                                      
+        .backPic = gMonBackPic_Metalseadramon,                                                  
+        .backPicSize = MON_COORDS_SIZE(40, 56),                                             
+        .backPicYOffset = 12,                                                               
+        .backAnimId = BACK_ANIM_H_SLIDE,                                                    
+        .palette = gMonPalette_Metalseadramon,                                                  
+        .shinyPalette = gMonShinyPalette_Metalseadramon,                                        
+        .iconSprite = gMonIcon_Metalseadramon,                                                  
+        .iconPalIndex = 1,                                                                  
+        .pokemonJumpType = PKMN_JUMP_TYPE_FAST,                                             
+        SHADOW(1, 1, SHADOW_SIZE_S)                                                         
+        FOOTPRINT(Metalseadramon)                                                               
+        OVERWORLD(                                                                          
+            sPicTable_Metalseadramon,                                                           
+            SIZE_32x32,                                                                     
+            SHADOW_SIZE_M,                                                                  
+            TRACKS_FOOT,                                                                    
+            sAnimTable_Following,                                                           
+            gOverworldPalette_Metalseadramon,                                                   
+            gShinyOverworldPalette_Metalseadramon                                               
+        )                                                                                  
+        .tmIlliterate = TRUE,                                                               
+        .levelUpLearnset = sMetalseadramonLevelUpLearnset,                                      
+        .teachableLearnset = sMetalseadramonTeachableLearnset,                                  
+        .eggMoveLearnset = sMetalseadramonEggMoveLearnset,                                      
+        .formSpeciesIdTable = sMetalseadramonFormSpeciesIdTable,                                
+        // .digivolutions = sMetalseadramonDigivolveTable,                                          
+    },                                                                                   
 
-    [SPECIES_METALSEADRAMON_ICY_SNOW]    = MTLSEADRAMON_SPECIES_INFO(ICY_SNOW),
-    [SPECIES_METALSEADRAMON_POLAR]       = MTLSEADRAMON_SPECIES_INFO(POLAR),
-    [SPECIES_METALSEADRAMON_TUNDRA]      = MTLSEADRAMON_SPECIES_INFO(TUNDRA),
-    [SPECIES_METALSEADRAMON_CONTINENTAL] = MTLSEADRAMON_SPECIES_INFO(CONTINENTAL),
-    [SPECIES_METALSEADRAMON_GARDEN]      = MTLSEADRAMON_SPECIES_INFO(GARDEN),
-    [SPECIES_METALSEADRAMON_ELEGANT]     = MTLSEADRAMON_SPECIES_INFO(ELEGANT),
-    [SPECIES_METALSEADRAMON_MEADOW]      = MTLSEADRAMON_SPECIES_INFO(MEADOW),
-    [SPECIES_METALSEADRAMON_MODERN]      = MTLSEADRAMON_SPECIES_INFO(MODERN),
-    [SPECIES_METALSEADRAMON_MARINE]      = MTLSEADRAMON_SPECIES_INFO(MARINE),
-    [SPECIES_METALSEADRAMON_ARCHIPELAGO] = MTLSEADRAMON_SPECIES_INFO(ARCHIPELAGO),
-    [SPECIES_METALSEADRAMON_HIGH_PLAINS] = MTLSEADRAMON_SPECIES_INFO(HIGH_PLAINS),
-    [SPECIES_METALSEADRAMON_SANDSTORM]   = MTLSEADRAMON_SPECIES_INFO(SANDSTORM),
-    [SPECIES_METALSEADRAMON_RIVER]       = MTLSEADRAMON_SPECIES_INFO(RIVER),
-    [SPECIES_METALSEADRAMON_MONSOON]     = MTLSEADRAMON_SPECIES_INFO(MONSOON),
-    [SPECIES_METALSEADRAMON_SAVANNA]     = MTLSEADRAMON_SPECIES_INFO(SAVANNA),
-    [SPECIES_METALSEADRAMON_SUN]         = MTLSEADRAMON_SPECIES_INFO(SUN),
-    [SPECIES_METALSEADRAMON_OCEAN]       = MTLSEADRAMON_SPECIES_INFO(OCEAN),
-    [SPECIES_METALSEADRAMON_JUNGLE]      = MTLSEADRAMON_SPECIES_INFO(JUNGLE),
-    [SPECIES_METALSEADRAMON_FANCY]       = MTLSEADRAMON_SPECIES_INFO(FANCY),
-    [SPECIES_METALSEADRAMON_POKEBALL]    = MTLSEADRAMON_SPECIES_INFO(POKEBALL),
+    [SPECIES_PUKUMON] =                                           
+    {                                                                           
+        .baseHP        = 110,                                                   
+        .baseAttack    = 150,                                                    
+        .baseDefense   = 130,                                                    
+        .baseSpeed     = 95,                                                    
+        .baseSpAttack  = 70,                                                    
+        .baseSpDefense = 70,                                                    
+        .types = MON_TYPES(TYPE_WATER, TYPE_FIGHTING),                                           
+        .attribute = TYPE_VIRUS,                                                            
+        .catchRate = 55,                                                                    
+        .expYield = 250,                                                                    
+        .evYield_HP = 1,                                                   
+        .evYield_Attack = 3,                                                   
+        .evYield_Defense = 2,                                                   
+        .genderRatio = MON_GENDERLESS,                                      
+        .eggCycles = 15,                                                        
+        .friendship = STANDARD_FRIENDSHIP,                                      
+        .growthRate = GROWTH_SLOW,                                       
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),                             
+        .abilities = { ABILITY_ROUGH_SKIN, ABILITY_SCRAPPY, ABILITY_PUNK_ROCK }, 
+        .bodyColor = BODY_COLOR_BLUE,                                          
+        .speciesName = _("Pukumon"),                                             
+        .cryId = CRY_PUKUMON,                                                    
+        .natDexNum = NATIONAL_DEX_PUKUMON,                                       
+        .categoryName = _("British Punk"),                                       
+        .height = 40,                                                            
+        .weight = 1463,                                                           
+        .description = gPukumonPokedexText,                                      
+        .pokemonScale = 530,                                                    
+        .pokemonOffset = 13,                                                    
+        .trainerScale = 256,                                                   
+        .trainerOffset = 0,                                                     
+        .frontPic = gMonFrontPic_Pukumon,                                        
+        .frontPicSize = MON_COORDS_SIZE(40, 48),                                
+        .frontPicYOffset = 11,                                                  
+        .frontAnimFrames = sAnims_Pukumon,                                       
+        .frontAnimId = ANIM_V_SHAKE,                                            
+        .backPic = gMonBackPic_Pukumon,                                         
+        .backPicSize = MON_COORDS_SIZE(48, 48),                                 
+        .backPicYOffset = 12,                                                   
+        .backAnimId = BACK_ANIM_H_VIBRATE,                                      
+        .palette = gMonPalette_Pukumon,                                          
+        .shinyPalette = gMonShinyPalette_Pukumon,                                
+        .iconSprite = gMonIcon_Pukumon,                                          
+        .iconPalIndex = 0,                                                      
+        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,                               
+        SHADOW(0, 2, SHADOW_SIZE_M)                                             
+        FOOTPRINT(Pukumon)                                                       
+        OVERWORLD(                                                              
+            sPicTable_Pukumon,                                                   
+            SIZE_32x32,                                                         
+            SHADOW_SIZE_M,                                                      
+            TRACKS_FOOT,                                                        
+            sAnimTable_Following,                                               
+            gOverworldPalette_Pukumon,                                           
+            gShinyOverworldPalette_Pukumon                                       
+        )                                                                       
+        .tmIlliterate = TRUE,                                                   
+        .levelUpLearnset = sPukumonLevelUpLearnset,                              
+        .teachableLearnset = sPukumonTeachableLearnset,                          
+        .formSpeciesIdTable = sPukumonFormSpeciesIdTable,                        
+    },
 
-#define PUKUMON_SPECIES_INFO(evolution)                                          \
-    {                                                                           \
-        .baseHP        = 110,                                                    \
-        .baseAttack    = 150,                                                    \
-        .baseDefense   = 130,                                                    \
-        .baseSpeed     = 95,                                                    \
-        .baseSpAttack  = 70,                                                    \
-        .baseSpDefense = 70,                                                    \
-        .types = MON_TYPES(TYPE_WATER, TYPE_FIGHTING),                                           \
-        .attribute = TYPE_VIRUS,                                                            \
-        .catchRate = 55,                                                                    \
-        .expYield = 250,                                                                    \
-        .evYield_HP = 1,                                                   \
-        .evYield_Attack = 3,                                                   \
-        .evYield_Defense = 2,                                                   \
-        .genderRatio = MON_GENDERLESS,                                      \
-        .eggCycles = 15,                                                        \
-        .friendship = STANDARD_FRIENDSHIP,                                      \
-        .growthRate = GROWTH_SLOW,                                       \
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),                             \
-        .abilities = { ABILITY_ROUGH_SKIN, ABILITY_SCRAPPY, ABILITY_PUNK_ROCK }, \
-        .bodyColor = BODY_COLOR_BLUE,                                          \
-        .speciesName = _("Pukumon"),                                             \
-        .cryId = CRY_PUKUMON,                                                    \
-        .natDexNum = NATIONAL_DEX_PUKUMON,                                       \
-        .categoryName = _("British Punk"),                                       \
-        .height = 40,                                                            \
-        .weight = 1463,                                                           \
-        .description = gPukumonPokedexText,                                      \
-        .pokemonScale = 530,                                                    \
-        .pokemonOffset = 13,                                                    \
-        .trainerScale = 256,                                                    \
-        .trainerOffset = 0,                                                     \
-        .frontPic = gMonFrontPic_Pukumon,                                        \
-        .frontPicSize = MON_COORDS_SIZE(40, 48),                                \
-        .frontPicYOffset = 11,                                                  \
-        .frontAnimFrames = sAnims_Pukumon,                                       \
-        .frontAnimId = ANIM_V_SHAKE,                                            \
-        .backPic = gMonBackPic_Pukumon,                                          \
-        .backPicSize = MON_COORDS_SIZE(48, 48),                                 \
-        .backPicYOffset = 12,                                                   \
-        .backAnimId = BACK_ANIM_H_VIBRATE,                                      \
-        .palette = gMonPalette_Pukumon,                                          \
-        .shinyPalette = gMonShinyPalette_Pukumon,                                \
-        .iconSprite = gMonIcon_Pukumon,                                          \
-        .iconPalIndex = 0,                                                      \
-        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,                               \
-        SHADOW(0, 2, SHADOW_SIZE_M)                                             \
-        FOOTPRINT(Pukumon)                                                       \
-        OVERWORLD(                                                              \
-            sPicTable_Pukumon,                                                   \
-            SIZE_32x32,                                                         \
-            SHADOW_SIZE_M,                                                      \
-            TRACKS_FOOT,                                                        \
-            sAnimTable_Following,                                               \
-            gOverworldPalette_Pukumon,                                           \
-            gShinyOverworldPalette_Pukumon                                       \
-        )                                                                       \
-        .tmIlliterate = TRUE,                                                   \
-        .levelUpLearnset = sPukumonLevelUpLearnset,                              \
-        .teachableLearnset = sPukumonTeachableLearnset,                          \
-        .formSpeciesIdTable = sPukumonFormSpeciesIdTable,                        \
-        .evolutions = EVOLUTION({EVO_LEVEL, 12, SPECIES_SABERLEOMON_##evolution}), \
-    }
-
-    [SPECIES_PUKUMON_ICY_SNOW]    = PUKUMON_SPECIES_INFO(ICY_SNOW),
-    [SPECIES_PUKUMON_POLAR]       = PUKUMON_SPECIES_INFO(POLAR),
-    [SPECIES_PUKUMON_TUNDRA]      = PUKUMON_SPECIES_INFO(TUNDRA),
-    [SPECIES_PUKUMON_CONTINENTAL] = PUKUMON_SPECIES_INFO(CONTINENTAL),
-    [SPECIES_PUKUMON_GARDEN]      = PUKUMON_SPECIES_INFO(GARDEN),
-    [SPECIES_PUKUMON_ELEGANT]     = PUKUMON_SPECIES_INFO(ELEGANT),
-    [SPECIES_PUKUMON_MEADOW]      = PUKUMON_SPECIES_INFO(MEADOW),
-    [SPECIES_PUKUMON_MODERN]      = PUKUMON_SPECIES_INFO(MODERN),
-    [SPECIES_PUKUMON_MARINE]      = PUKUMON_SPECIES_INFO(MARINE),
-    [SPECIES_PUKUMON_ARCHIPELAGO] = PUKUMON_SPECIES_INFO(ARCHIPELAGO),
-    [SPECIES_PUKUMON_HIGH_PLAINS] = PUKUMON_SPECIES_INFO(HIGH_PLAINS),
-    [SPECIES_PUKUMON_SANDSTORM]   = PUKUMON_SPECIES_INFO(SANDSTORM),
-    [SPECIES_PUKUMON_RIVER]       = PUKUMON_SPECIES_INFO(RIVER),
-    [SPECIES_PUKUMON_MONSOON]     = PUKUMON_SPECIES_INFO(MONSOON),
-    [SPECIES_PUKUMON_SAVANNA]     = PUKUMON_SPECIES_INFO(SAVANNA),
-    [SPECIES_PUKUMON_SUN]         = PUKUMON_SPECIES_INFO(SUN),
-    [SPECIES_PUKUMON_OCEAN]       = PUKUMON_SPECIES_INFO(OCEAN),
-    [SPECIES_PUKUMON_JUNGLE]      = PUKUMON_SPECIES_INFO(JUNGLE),
-    [SPECIES_PUKUMON_FANCY]       = PUKUMON_SPECIES_INFO(FANCY),
-    [SPECIES_PUKUMON_POKEBALL]   = PUKUMON_SPECIES_INFO(POKEBALL),
-
-#define SABERLEOMON_MISC_INFO(form, color, iconPal)                                            \
-        .baseHP        = 110,                                                                \
-        .baseAttack    = 140,                                                                \
-        .baseDefense   = 90,                                                                \
-        .baseSpeed     = 130,                                                                \
-        .baseSpAttack  = 70,                                                                \
-        .baseSpDefense = 90,                                                                \
-        .types = MON_TYPES(TYPE_NORMAL),                                          \
-        .attribute = TYPE_DATA,                                                            \
-        .catchRate = 55,                                                                    \
-        .expYield = 250,                                                                    \
-        .evYield_HP = 1,                                                                    \
-        .evYield_Attack = 3,                                                                 \
-        .evYield_Speed = 2,                                                              \
-        .genderRatio = MON_GENDERLESS,                                                  \
-        .eggCycles = 15,                                                                    \
-        .friendship = STANDARD_FRIENDSHIP,                                                  \
-        .growthRate = GROWTH_SLOW,                                                   \
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),                                         \
-        .abilities = { ABILITY_NORMALIZE, ABILITY_JUSTIFIED, ABILITY_STRONG_JAW },  \
-        .bodyColor = BODY_COLOR_YELLOW,                                                                 \
-        .speciesName = _("SaberLeomon"),                                                       \
-        .cryId = CRY_SABERLEOMON,                                                              \
-        .natDexNum = NATIONAL_DEX_SABERLEOMON,                                                 \
-        .categoryName = _("Sabertooth"),                                                         \
-        .height = 37,                                                                       \
-        .weight = 1796,                                                                      \
-        .pokemonScale = 282,                                                                \
-        .pokemonOffset = 4,                                                                 \
-        .trainerScale = 256,                                                                \
-        .trainerOffset = 0,                                                                 \
-        .frontPic = gMonFrontPic_Saberleomon ##form,                                           \
-        .frontPicSize = MON_COORDS_SIZE(64, 64),                                            \
-        .frontPicYOffset = 0,                                                               \
-        .frontAnimFrames = sAnims_Saberleomon,                                                 \
-        .frontAnimId = ANIM_ZIGZAG_SLOW,                                                    \
-        .enemyMonElevation = 9,                                                             \
-        .backPic = gMonBackPic_Saberleomon ##form,                                             \
-        .backPicSize = MON_COORDS_SIZE(64, 64),                                             \
-        .backPicYOffset = 0,                                                                \
-        .backAnimId = BACK_ANIM_CIRCLE_COUNTERCLOCKWISE,                                    \
-        .palette = gMonPalette_Saberleomon ##form,                                             \
-        .shinyPalette = gMonShinyPalette_Saberleomon ##form,                                   \
-        .iconSprite = gMonIcon_Saberleomon ##form,                                             \
-        .iconPalIndex = 2,                                                            \
-        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,                                             \
-        SHADOW(0, 20, SHADOW_SIZE_M)                                                        \
-        FOOTPRINT(Saberleomon)                                                                 \
-        OVERWORLD(                                                                          \
-            sPicTable_Saberleomon ##form,                                                      \
-            SIZE_32x32,                                                                     \
-            SHADOW_SIZE_M,                                                                  \
-            TRACKS_FOOT,                                                                    \
-            sAnimTable_Following,                                                           \
-            gOverworldPalette_Saberleomon ##form,                                              \
-            gShinyOverworldPalette_Saberleomon ##form                                          \
-        )                                                                                   \
-        .levelUpLearnset = sSaberleomonLevelUpLearnset,                                        \
-        .teachableLearnset = sSaberleomonTeachableLearnset,                                    \
-        .formSpeciesIdTable = sSaberleomonFormSpeciesIdTable
-
-    [SPECIES_SABERLEOMON_ICY_SNOW] =
-    {
-        SABERLEOMON_MISC_INFO(IcySnow, BODY_COLOR_WHITE, 0),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_POLAR] =
-    {
-        SABERLEOMON_MISC_INFO(Polar, BODY_COLOR_BLUE, 0),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_TUNDRA] =
-    {
-        SABERLEOMON_MISC_INFO(Tundra, BODY_COLOR_BLUE, 0),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_CONTINENTAL] =
-    {
-        SABERLEOMON_MISC_INFO(Continental, BODY_COLOR_YELLOW, 2),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_GARDEN] =
-    {
-        SABERLEOMON_MISC_INFO(Garden, BODY_COLOR_GREEN, 1),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_ELEGANT] =
-    {
-        SABERLEOMON_MISC_INFO(Elegant, BODY_COLOR_PURPLE, 0),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_MEADOW] =
-    {
-        SABERLEOMON_MISC_INFO(Meadow, BODY_COLOR_PINK, 0),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_MODERN] =
-    {
-        SABERLEOMON_MISC_INFO(Modern, BODY_COLOR_RED, 2),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_MARINE] =
-    {
-        SABERLEOMON_MISC_INFO(Marine, BODY_COLOR_BLUE, 0),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_ARCHIPELAGO] =
-    {
-        SABERLEOMON_MISC_INFO(Archipelago, BODY_COLOR_BROWN, 0),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_HIGH_PLAINS] =
-    {
-        SABERLEOMON_MISC_INFO(HighPlains, BODY_COLOR_BROWN, 0),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_SANDSTORM] =
-    {
-        SABERLEOMON_MISC_INFO(Sandstorm, BODY_COLOR_BROWN, 1),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_RIVER] =
-    {
-        SABERLEOMON_MISC_INFO(River, BODY_COLOR_BROWN, 2),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_MONSOON] =
-    {
-        SABERLEOMON_MISC_INFO(Monsoon, BODY_COLOR_GRAY, 0),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_SAVANNA] =
-    {
-        SABERLEOMON_MISC_INFO(Savanna, BODY_COLOR_GREEN, 0),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_SUN] =
-    {
-        SABERLEOMON_MISC_INFO(Sun, BODY_COLOR_RED, 0),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_OCEAN] =
-    {
-        SABERLEOMON_MISC_INFO(Ocean, BODY_COLOR_RED, 0),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_JUNGLE] =
-    {
-        SABERLEOMON_MISC_INFO(Jungle, BODY_COLOR_GREEN, 0),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_FANCY] =
-    {
-        SABERLEOMON_MISC_INFO(Fancy, BODY_COLOR_PINK, 1),
-        .description = gSaberLeomonPokedexText,
-    },
-    [SPECIES_SABERLEOMON_POKEBALL] =
-    {
-        SABERLEOMON_MISC_INFO(PokeBall, BODY_COLOR_RED, 2),
-        .description = gSaberLeomonPokedexText,
+        [SPECIES_SABERLEOMON] =                       
+        {                  
+        .baseHP        = 110,                                                                
+        .baseAttack    = 140,                                                                
+        .baseDefense   = 90,                                                                
+        .baseSpeed     = 130,                                                                
+        .baseSpAttack  = 70,                                                                
+        .baseSpDefense = 90,                                                                
+        .types = MON_TYPES(TYPE_NORMAL),                                          
+        .attribute = TYPE_DATA,                                                            
+        .catchRate = 55,                                                                    
+        .expYield = 250,                                                                    
+        .evYield_HP = 1,                                                                    
+        .evYield_Attack = 3,                                                                 
+        .evYield_Speed = 2,                                                              
+        .genderRatio = MON_GENDERLESS,                                                  
+        .eggCycles = 15,                                                                    
+        .friendship = STANDARD_FRIENDSHIP,                                                  
+        .growthRate = GROWTH_SLOW,                                                   
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),                                         
+        .abilities = { ABILITY_NORMALIZE, ABILITY_JUSTIFIED, ABILITY_STRONG_JAW },  
+        .bodyColor = BODY_COLOR_YELLOW,                                                                 
+        .speciesName = _("SaberLeomon"),                                                       
+        .cryId = CRY_SABERLEOMON,                                                              
+        .natDexNum = NATIONAL_DEX_SABERLEOMON,                                                 
+        .categoryName = _("Sabertooth"),                                                         
+        .height = 37,                                                                       
+        .weight = 1796,                                                                      
+        .pokemonScale = 282,                                                                
+        .pokemonOffset = 4,                                                                 
+        .trainerScale = 256,                                                                
+        .trainerOffset = 0,                                                                 
+        .frontPic = gMonFrontPic_SaberleomonIcySnow,                                           
+        .frontPicSize = MON_COORDS_SIZE(64, 64),                                            
+        .frontPicYOffset = 0,                                                               
+        .frontAnimFrames = sAnims_Saberleomon,                                                 
+        .frontAnimId = ANIM_ZIGZAG_SLOW,                                                    
+        .enemyMonElevation = 9,                                                             
+        .backPic = gMonBackPic_SaberleomonIcySnow,                                             
+        .backPicSize = MON_COORDS_SIZE(64, 64),                                             
+        .backPicYOffset = 0,                                                                
+        .backAnimId = BACK_ANIM_CIRCLE_COUNTERCLOCKWISE,                                    
+        .palette = gMonPalette_SaberleomonIcySnow,                                             
+        .shinyPalette = gMonShinyPalette_SaberleomonIcySnow,                                   
+        .iconSprite = gMonIcon_SaberleomonIcySnow,                                             
+        .iconPalIndex = 2,                                                            
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,                                             
+        SHADOW(0, 20, SHADOW_SIZE_M)                                                        
+        FOOTPRINT(Saberleomon)                                                                 
+        OVERWORLD(                                                                          
+            sPicTable_Pukumon,                                                   
+            SIZE_32x32,                                                         
+            SHADOW_SIZE_M,                                                      
+            TRACKS_FOOT,                                                        
+            sAnimTable_Following,                                               
+            gOverworldPalette_Pukumon,                                           
+            gShinyOverworldPalette_Pukumon                                
+        )                                                                                   
+        .levelUpLearnset = sSaberleomonLevelUpLearnset,                                        
+        .teachableLearnset = sSaberleomonTeachableLearnset,                                    
+        .formSpeciesIdTable = sSaberleomonFormSpeciesIdTable,
     },
 #endif //P_FAMILY_METALSEADRAMON
 
@@ -2124,6 +1984,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sCreepymonLevelUpLearnset,
         .teachableLearnset = sCreepymonTeachableLearnset,
+        // .digivolutions = sCreepymonDigivolveTable,
+        // .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_CREEPYMON_X}),
     },
 #endif //P_FAMILY_BOLTMON
 
@@ -2199,7 +2061,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sDevitamamonLevelUpLearnset,
         .teachableLearnset = sDevitamamonTeachableLearnset,
         .eggMoveLearnset = sDevitamamonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_DIABOROMON, CONDITIONS({IF_TYPE_IN_PARTY, TYPE_DARK})}),
+        // .evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_MOONMILLENIUMMON, CONDITIONS({IF_NO_FRIENDSHIP, 1})}},
     },
 
     [SPECIES_DIABOROMON] =
@@ -2273,6 +2135,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sDiaboromonLevelUpLearnset,
         .teachableLearnset = sDiaboromonTeachableLearnset,
+        // .digivolutions = sDiaboromonDigivolveTable,
+        // .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_DIABOROMON_X}},
     },
 #endif //P_FAMILY_DEVITAMAMON
 
@@ -2426,8 +2290,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sGoldramonLevelUpLearnset,
         .teachableLearnset = sGoldramonTeachableLearnset,
         .eggMoveLearnset = sGoldramonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_GRYPHONMON, CONDITIONS({IF_GENDER, MON_GENDERLESS})},
-                                {EVO_LEVEL, 25, SPECIES_MEOWSTIC_F, CONDITIONS({IF_GENDER, MON_FEMALE})}),
+        // .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_GOLDRAMON_X}},
     },
 
     [SPECIES_GRYPHONMON] =
@@ -2634,7 +2497,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sPhoenixmonLevelUpLearnset,
         .teachableLearnset = sPhoenixmonTeachableLearnset,
         .eggMoveLearnset = sPhoenixmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_JIJIMON}),
+        // .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_PHOENIX_X}},
     },
 
     [SPECIES_JIJIMON] =
@@ -2930,8 +2793,6 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sKingetemonLevelUpLearnset,
         .teachableLearnset = sKingetemonTeachableLearnset,
         .eggMoveLearnset = sKingetemonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_MILLENNIUMMON, CONDITIONS({IF_HOLD_ITEM, ITEM_SACHET})},
-                                {EVO_ITEM, ITEM_SACHET, SPECIES_MILLENNIUMMON}),
     },
 
     [SPECIES_MILLENNIUMMON] =
@@ -3001,6 +2862,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sMillenniummonLevelUpLearnset,
         .teachableLearnset = sMillenniummonTeachableLearnset,
+        // .evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_MOONMILLENIUMMON, CONDITIONS({IF_NO_FRIENDSHIP, 1})}},
     },
 #endif //P_FAMILY_KINGETEMON
 
@@ -3077,8 +2939,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sMachinedramonLevelUpLearnset,
         .teachableLearnset = sMachinedramonTeachableLearnset,
         .eggMoveLearnset = sMachinedramonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_PIEDMON, CONDITIONS({IF_HOLD_ITEM, ITEM_WHIPPED_DREAM})},
-                                {EVO_ITEM, ITEM_WHIPPED_DREAM, SPECIES_PIEDMON}),
+        // .digivolutions = sMachinedramonDigivolveTable,
     },
 
     [SPECIES_PIEDMON] =
@@ -3225,7 +3086,6 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sPuppetmonLevelUpLearnset,
         .teachableLearnset = sPuppetmonTeachableLearnset,
         .eggMoveLearnset = sPuppetmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_PLESIOMON}),
     },
 
     [SPECIES_PLESIOMON] =
@@ -3297,6 +3157,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sPlesiomonLevelUpLearnset,
         .teachableLearnset = sPlesiomonTeachableLearnset,
+        // .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_PLESIOMON_X}),
     },
 #endif //P_FAMILY_PUPPETMON
 
@@ -3373,7 +3234,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sSkullmammothmonLevelUpLearnset,
         .teachableLearnset = sSkullmammothmonTeachableLearnset,
         .eggMoveLearnset = sSkullmammothmonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 39, SPECIES_VENOMMYOTISMON}),
+        // .evolutions = EVOLUTION({EVO_ITEM, ITEM_X_ANTIBODY, SPECIES_SKULLMAMMOTHMON_X}),
     },
 
     [SPECIES_VENOMMYOTISMON] =
@@ -3520,7 +3381,6 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sZanbamonLevelUpLearnset,
         .teachableLearnset = sZanbamonTeachableLearnset,
         .eggMoveLearnset = sZanbamonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 48, SPECIES_DRAGALGE}),
     },
 
     [SPECIES_DRAGALGE] =

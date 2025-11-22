@@ -4793,6 +4793,10 @@ bool32 DoesMonMeetAdditionalConditions(struct Pokemon *mon, const struct Evoluti
             if (hp > params[i].arg1)
                 currentCondition = TRUE;
             break;
+        case IF_NO_FRIENDSHIP:
+            if (friendship < params[i].arg1)
+                currentCondition = TRUE;
+            break;
         case CONDITIONS_END:
             break;
         }
